@@ -1,0 +1,1609 @@
+{
+  "nom": "Yuqori darajali ko'phadli tenglamalar",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "x³ − 7x² + 12x = 0 tenglamaning barcha ildizlarini toping.",
+      "v": [
+        "3; 4",
+        "0; 3; 4",
+        "0; −3; −4",
+        "0; 1; 12"
+      ],
+      "t": 1,
+      "izoh": "Chap tomondagi har bir had x ga bo'linadi, shuning uchun x qavsdan chiqariladi: x(x² − 7x + 12) = 0. Qavsdagi uchhad ko'paytmasi 12, yig'indisi 7 bo'lgan sonlar orqali (x − 3)(x − 4) ko'rinishida yoyiladi. Ko'paytma nol bo'lishi uchun ko'paytuvchilardan biri nol bo'ladi: x = 0, x = 3, x = 4. x = 0 ildizini tashlab yuborish eng ko'p uchraydigan xato. Javob: 0; 3; 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-kopaytuvchi-ajratish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#e66d7017"
+    },
+    {
+      "q": "Anvar 2x³ = 18x tenglamani yechayotib ikkala tomonni x ga qisqartirdi. Tenglamaning haqiqiy ildizlari to'g'ri ko'rsatilgan qatorni toping.",
+      "v": [
+        "−3; 3",
+        "0; 3",
+        "−3; 0; 3",
+        "0; 9"
+      ],
+      "t": 2,
+      "izoh": "Avval tenglamani nolga keltiramiz: 2x³ − 18x = 0, ya'ni 2x(x² − 9) = 0. x ga qisqartirish mumkin emas, chunki x = 0 ham ildiz va qisqartirilganda u yo'qoladi — Anvarning xatosi shunda. x² − 9 = 0 dan x = 3 va x = −3 kelib chiqadi. Demak tenglama uchta ildizga ega. Javob: −3; 0; 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-kopaytuvchi-ajratish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#9d2ee12b"
+    },
+    {
+      "q": "x⁴ − 5x³ + 6x² = 0 tenglamaning bir-biridan farqli nechta haqiqiy ildizi bor?",
+      "v": [
+        "4 ta",
+        "3 ta",
+        "2 ta",
+        "1 ta"
+      ],
+      "t": 1,
+      "izoh": "Umumiy ko'paytuvchi x² ni qavsdan chiqaramiz: x²(x² − 5x + 6) = 0. Birinchi ko'paytuvchidan x = 0 (ikki karrali), ikkinchisidan (x − 2)(x − 3) = 0, ya'ni x = 2 va x = 3. Karralilikni hisobga olsak to'rtta ildiz sanaladi, lekin bir-biridan farqlilari faqat 0, 2 va 3. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-kopaytuvchi-ajratish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#0ea439ba"
+    },
+    {
+      "q": "x³ + 2x² − 3x − 6 = 0 tenglamaning chap tomoni guruhlash usuli bilan qaysi ko'rinishda ko'paytuvchilarga ajraladi?",
+      "v": [
+        "(x − 2)(x² + 3)",
+        "(x + 2)(x² + 3)",
+        "(x + 3)(x² − 2)",
+        "(x + 2)(x² − 3)"
+      ],
+      "t": 3,
+      "izoh": "Hadlarni ikkitadan guruhlaymiz: (x³ + 2x²) − (3x + 6). Birinchi guruhdan x², ikkinchisidan 3 chiqariladi va x²(x + 2) − 3(x + 2) hosil bo'ladi. Endi (x + 2) umumiy ko'paytuvchi sifatida qavsdan chiqadi: (x + 2)(x² − 3). Ikkinchi guruhda minus ishorasini qavsga to'g'ri kiritmaslik tipik xato. Javob: (x + 2)(x² − 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "guruhlash-usuli",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#e7264c53"
+    },
+    {
+      "q": "x³ − 4x² − 9x + 36 = 0 tenglamani guruhlab yeching va ildizlar yig'indisini toping.",
+      "v": [
+        "4",
+        "−4",
+        "7",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Guruhlaymiz: x²(x − 4) − 9(x − 4) = 0, ya'ni (x − 4)(x² − 9) = 0. Bundan x = 4, x = 3 va x = −3 ildizlari kelib chiqadi. Yig'indi 4 + 3 + (−3) = 4 bo'ladi. Xuddi shu natijani Viyet formulasi ham beradi: ildizlar yig'indisi −b/a = 4. Manfiy ildizni tushirib qoldirsa 7 chiqadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "guruhlash-usuli",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#533ad574"
+    },
+    {
+      "q": "2x³ + 3x² − 8x − 12 = 0 tenglama ildizlarining ko'paytmasi nechaga teng?",
+      "v": [
+        "−6",
+        "12",
+        "6",
+        "−12"
+      ],
+      "t": 2,
+      "izoh": "Guruhlash beradi: x²(2x + 3) − 4(2x + 3) = 0, ya'ni (2x + 3)(x² − 4) = 0. Ildizlar x = −3/2, x = 2 va x = −2. Ularning ko'paytmasi (−3/2)·2·(−2) = 6. Viyet bo'yicha ham uchinchi darajali tenglamada ildizlar ko'paytmasi −d/a = 12/2 = 6 ga teng. Ozod hadning o'zini javob deb olish tipik xato. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "guruhlash-usuli",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#50cafe34"
+    },
+    {
+      "q": "Nodira x³ − 5x² + 2x − 10 = 0 tenglamani guruhlab (x − 5)(x² + 2) = 0 ko'rinishga keltirdi. Tenglamaning nechta haqiqiy ildizi bor?",
+      "v": [
+        "Uchta haqiqiy ildiz",
+        "Ikkita haqiqiy ildiz",
+        "Bitta haqiqiy ildiz",
+        "Haqiqiy ildizi yo'q"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytma nol bo'lishi uchun ko'paytuvchilardan biri nol bo'lishi kerak. x − 5 = 0 dan x = 5 chiqadi. Ikkinchi ko'paytuvchi uchun x² + 2 = 0, ya'ni x² = −2 bo'lar edi; kvadrat hech qachon manfiy bo'lmaydi, demak bu yerdan haqiqiy ildiz yo'q. Uchinchi darajali tenglama doim uchta haqiqiy ildizga ega deb o'ylash tipik xato. Javob: bitta haqiqiy ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "guruhlash-usuli",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#45f4d205"
+    },
+    {
+      "q": "Bahodir 3x³ − x² − 27x + 9 = 0 tenglamani guruhlash bilan yechdi. Uning ildizlaridan qaysi biri butun son emas?",
+      "v": [
+        "3",
+        "−3",
+        "−1/3",
+        "1/3"
+      ],
+      "t": 3,
+      "izoh": "Guruhlaymiz: x²(3x − 1) − 9(3x − 1) = 0, ya'ni (3x − 1)(x² − 9) = 0. x² − 9 = 0 dan butun ildizlar x = 3 va x = −3 chiqadi. 3x − 1 = 0 dan esa x = 1/3 hosil bo'ladi va bu yagona butun bo'lmagan ildiz. Qavsdagi ishorani noto'g'ri o'qib −1/3 olish tipik xato. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "guruhlash-usuli",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#5d451001"
+    },
+    {
+      "q": "x³ − 4x² + x + 6 = 0 tenglamaning butun ildizlari qaysi sonlar to'plamidan izlanadi?",
+      "v": [
+        "±1, ±2, ±3, ±6",
+        "±1, ±2, ±4",
+        "1, 2, 3, 6",
+        "±1, ±6"
+      ],
+      "t": 0,
+      "izoh": "Bosh koeffitsienti 1 ga teng butun koeffitsientli tenglamaning butun ildizi ozod had 6 ning bo'luvchisi bo'lishi shart. 6 ning barcha bo'luvchilari: ±1, ±2, ±3, ±6. Manfiy bo'luvchilarni unutish yoki 4 koeffitsientining bo'luvchilarini olish tipik xato. Javob: ±1, ±2, ±3, ±6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-ildiz-nomzodlari",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#512e6322"
+    },
+    {
+      "q": "−1, 2, 3 va 4 sonlaridan qaysi biri x³ − 2x² − 5x + 6 = 0 tenglamaning ildizi bo'ladi?",
+      "v": [
+        "−1",
+        "2",
+        "3",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Har bir sonni tenglamaga navbat bilan qo'yamiz. x = −1 da −1 − 2 + 5 + 6 = 8, nol emas. x = 2 da 8 − 8 − 10 + 6 = −4, nol emas. x = 3 da 27 − 18 − 15 + 6 = 0, demak bu ildiz. x = 4 da 64 − 32 − 20 + 6 = 18, nol emas. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-ildiz-nomzodlari",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#f37ecf5d"
+    },
+    {
+      "q": "2x³ − 3x² − 11x + 6 = 0 tenglamaning ratsional ildizlari qanday sonlar orasidan izlanadi?",
+      "v": [
+        "faqat 6 ning bo'luvchilari",
+        "faqat 2 ning bo'luvchilari",
+        "2 ning bo'luvchilarining 6 ning bo'luvchilariga nisbati",
+        "6 ning bo'luvchilarining 2 ning bo'luvchilariga nisbati"
+      ],
+      "t": 3,
+      "izoh": "Butun koeffitsientli tenglamaning p/q ko'rinishidagi qisqarmas ratsional ildizida p ozod hadning, q esa bosh koeffitsientning bo'luvchisi bo'ladi. Bu yerda ozod had 6, bosh koeffitsient 2, demak nomzodlar ±1, ±2, ±3, ±6, ±1/2, ±3/2 ko'rinishida chiqadi. Surat bilan maxrajni almashtirib yuborish tipik xato. Javob: 6 ning bo'luvchilarining 2 ning bo'luvchilariga nisbati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-ildiz-nomzodlari",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#12fed0de"
+    },
+    {
+      "q": "Kamola x³ + 3x² − 6x − 8 = 0 tenglamaning butun ildizini 8 ning musbat bo'luvchilarini o'sish tartibida qo'yib izlamoqda. Qaysi sonda birinchi marta nol hosil bo'ladi?",
+      "v": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "8 ning musbat bo'luvchilari o'sish tartibida 1, 2, 4, 8 bo'ladi. x = 1 da 1 + 3 − 6 − 8 = −10, nol emas. x = 2 da 8 + 12 − 12 − 8 = 0, ildiz topildi. Demak Kamola ikkinchi urinishdayoq to'xtaydi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-ildiz-nomzodlari",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#7b93047f"
+    },
+    {
+      "q": "x³ − 6x² + 11x − 6 = 0 tenglamaning barcha ildizlarini o'sish tartibida ko'rsating.",
+      "v": [
+        "1; 2; 3",
+        "−3; −2; −1",
+        "1; 2; 6",
+        "1; 3; 6"
+      ],
+      "t": 0,
+      "izoh": "Ozod had 6 ning bo'luvchilaridan x = 1 ni sinaymiz: 1 − 6 + 11 − 6 = 0, demak (x − 1) ko'paytuvchi bo'ladi. Bo'lish natijasi x² − 5x + 6 uchhadi bo'lib, uning ildizlari 2 va 3. Shunday qilib ildizlar 1, 2 va 3. Ularning yig'indisi 6 ekani Viyet formulasi bilan ham mos keladi. Javob: 1; 2; 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizni-tanlab-topish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#76a57088"
+    },
+    {
+      "q": "Diyor x³ + 2x² − 5x − 6 = 0 tenglamaning bitta ildizi x = −1 ekanini aniqladi. Qolgan ikkita ildizni toping.",
+      "v": [
+        "3 va −2",
+        "−6 va 1",
+        "6 va −1",
+        "−3 va 2"
+      ],
+      "t": 3,
+      "izoh": "Ko'phadni (x + 1) ga bo'lamiz: x³ + 2x² − 5x − 6 = (x + 1)(x² + x − 6). Qavsdagi kvadrat uchhad (x + 3)(x − 2) ko'rinishida yoyiladi. Demak qolgan ildizlar x = −3 va x = 2 bo'ladi. Ko'paytuvchidagi ishorani ildiz ishorasi bilan chalkashtirish tipik xato. Javob: −3 va 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizni-tanlab-topish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#f02f5050"
+    },
+    {
+      "q": "2x³ − 5x² − 4x + 3 = 0 tenglamaning ildizlaridan biri butun son. Shu ildizni topib tenglamani oxirigacha yeching va kasr ko'rinishdagi ildizni ko'rsating.",
+      "v": [
+        "−1/2",
+        "1/2",
+        "3/2",
+        "−3/2"
+      ],
+      "t": 1,
+      "izoh": "Ozod had 3 ning bo'luvchilaridan x = 3 ni tekshiramiz: 54 − 45 − 12 + 3 = 0, demak (x − 3) ko'paytuvchi. Bo'lish natijasi 2x² + x − 1 bo'lib, uni (2x − 1)(x + 1) ko'rinishida yozamiz. Bundan x = 1/2 va x = −1 chiqadi, ya'ni yagona kasr ildiz 1/2. Bosh koeffitsient 2 ni maxrajga qo'ymaslik tipik xato. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizni-tanlab-topish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#759fc349"
+    },
+    {
+      "q": "Abituriyent x³ − 3x² − 10x + 24 = 0 tenglamaning eng katta ildizini topishi kerak. To'g'ri javobni belgilang.",
+      "v": [
+        "−3",
+        "2",
+        "4",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "x = 2 ni sinaymiz: 8 − 12 − 20 + 24 = 0, demak (x − 2) ko'paytuvchi. Bo'lish natijasi x² − x − 12 = (x − 4)(x + 3) bo'ladi, bundan x = 4 va x = −3. Uchta ildiz: −3, 2 va 4; ularning eng kattasi 4. 3 soni ildizlar yig'indisi bo'lib, ildizning o'zi emas. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizni-tanlab-topish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#79bee966"
+    },
+    {
+      "q": "x⁴ − x³ − 7x² + x + 6 = 0 tenglamaning barcha ildizlari butun sonlar. Eng katta ildiz bilan eng kichik ildizning ayirmasini toping.",
+      "v": [
+        "4",
+        "1",
+        "6",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Ozod had 6 ning bo'luvchilarini sinaymiz: x = 1 da 1 − 1 − 7 + 1 + 6 = 0, x = −1 da 1 + 1 − 7 − 1 + 6 = 0, x = 3 da 81 − 27 − 63 + 3 + 6 = 0, x = −2 da 16 + 8 − 28 − 2 + 6 = 0. Demak ildizlar −2, −1, 1 va 3. Ayirma 3 − (−2) = 5 bo'ladi. Ildizlar yig'indisi 1 va ko'paytmasi 6 — bular so'ralgan kattalik emas. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizni-tanlab-topish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#4600f4e3"
+    },
+    {
+      "q": "P(x) = x³ − 2x² + 5x − 12 ko'phadning (x − 2) ga bo'lgandagi qoldig'ini Bezu teoremasi yordamida toping.",
+      "v": [
+        "−2",
+        "2",
+        "−12",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Bezu teoremasiga ko'ra ko'phadning (x − a) ga bo'lgandagi qoldig'i P(a) ga teng. Bu yerda a = 2, demak P(2) = 8 − 8 + 10 − 12 = −2 bo'ladi. Ishorani almashtirib 2 deb yozish yoki qoldiq o'rniga ozod hadni ko'rsatish tipik xato. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bezu-teorema-qoldiq",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#8aa29fab"
+    },
+    {
+      "q": "P(x) = x³ − 4x² + a ko'phad (x − 2) ga qoldiqsiz bo'linishi ma'lum. a ning qiymatini toping.",
+      "v": [
+        "−8",
+        "8",
+        "16",
+        "24"
+      ],
+      "t": 1,
+      "izoh": "Qoldiqsiz bo'linish sharti P(2) = 0 ko'rinishida yoziladi. P(2) = 8 − 16 + a = a − 8, demak a − 8 = 0 va a = 8. Tenglikni noto'g'ri yechib −8 olish yoki faqat 4x² hadidan 16 ni javob deb yozish tipik xato. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bezu-teorema-qoldiq",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#06693fd2"
+    },
+    {
+      "q": "Malika x³ + 5x² − 2x + 8 ko'phadni (x + 1) ga bo'ldi. Bo'lishdagi qoldiq nechaga teng?",
+      "v": [
+        "14",
+        "10",
+        "16",
+        "−14"
+      ],
+      "t": 0,
+      "izoh": "(x + 1) ni (x − (−1)) ko'rinishida yozamiz, shuning uchun qoldiq P(−1) ga teng bo'ladi. P(−1) = −1 + 5 + 2 + 8 = 14. −2x hadining ishorasini e'tibordan chetda qoldirgan o'quvchi 10, (−1)³ ni 1 deb olgani esa 16 ni oladi. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bezu-teorema-qoldiq",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#8b534bfa"
+    },
+    {
+      "q": "x³ − 7x + 6 = 0 tenglamada x² li had qatnashmagan. Shu tenglamaning manfiy ildizini toping.",
+      "v": [
+        "−1",
+        "−2",
+        "−3",
+        "−6"
+      ],
+      "t": 2,
+      "izoh": "Butun ildizlar 6 ning bo'luvchilari orasidan izlanadi. x = 1 da 1 − 7 + 6 = 0, demak (x − 1) ko'paytuvchi bo'ladi va bo'lish natijasi x² + x − 6 = (x + 3)(x − 2). Shunday qilib ildizlar 1, 2 va −3; ulardan yagona manfiysi −3. Ozod had 6 ga qarab −6 ni tanlash tipik xato, chunki u tenglamani qanoatlantirmaydi. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytuvchiga-ajratib-yechish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#9a69dd8f"
+    },
+    {
+      "q": "Zilola x³ + 4x² + x − 6 = 0 tenglamani yechish uchun avval x = 1 ildizini topdi. Tenglamaning barcha ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "−4",
+        "4",
+        "−6",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Ko'phadni (x − 1) ga bo'lamiz va x² + 5x + 6 ni olamiz, u (x + 2)(x + 3) ko'rinishida yoyiladi. Demak ildizlar 1, −2 va −3 bo'lib, yig'indisi 1 − 2 − 3 = −4. Viyet formulasi ham xuddi shu natijani beradi: yig'indi −b/a = −4. Ishorani almashtirib 4 deb yozish tipik xato. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytuvchiga-ajratib-yechish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#a8677b7c"
+    },
+    {
+      "q": "x³ − x² − 8x + 12 = 0 tenglama ko'paytuvchilarga ajratilganda (x − 2)²(x + 3) ko'rinishga keladi. Tenglamaning har xil ildizlari yig'indisini toping.",
+      "v": [
+        "1",
+        "−1",
+        "5",
+        "−5"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytuvchilardan x = 2 (ikki karrali) va x = −3 ildizlari kelib chiqadi. Har xil ildizlar faqat 2 va −3, ularning yig'indisi 2 + (−3) = −1. Karrali ildizni ikki marta qo'shib yuborsa 1 chiqadi, bu esa Viyet yig'indisi bo'lib, so'ralgan kattalik emas. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytuvchiga-ajratib-yechish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#669b1f5b"
+    },
+    {
+      "q": "Ustoz taxtaga 2x³ − 9x² + 7x + 6 = 0 tenglamani yozdi va uning eng kichik ildizini topishni so'radi.",
+      "v": [
+        "1/2",
+        "−3",
+        "2",
+        "−1/2"
+      ],
+      "t": 3,
+      "izoh": "x = 2 ni sinaymiz: 16 − 36 + 14 + 6 = 0, demak (x − 2) ko'paytuvchi. Bo'lish natijasi 2x² − 5x − 3 = (2x + 1)(x − 3), bundan x = −1/2 va x = 3. Uchta ildiz: −1/2, 2 va 3; eng kichigi −1/2. Ko'paytuvchidagi ishorani ildiz ishorasi deb o'qib −3 ni tanlash tipik xato. Javob: −1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytuvchiga-ajratib-yechish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#a9ce99c7"
+    },
+    {
+      "q": "x³ − 12x + 16 = 0 tenglamaning ildizlaridan biri ikki karrali. Shu karrali ildizni aniqlang.",
+      "v": [
+        "−4",
+        "2",
+        "4",
+        "−2"
+      ],
+      "t": 1,
+      "izoh": "16 ning bo'luvchilaridan x = 2 ni sinaymiz: 8 − 24 + 16 = 0, demak (x − 2) ko'paytuvchi. Bo'lish natijasi x² + 2x − 8 = (x − 2)(x + 4), ya'ni tenglama (x − 2)²(x + 4) = 0 ko'rinishga keladi. Demak x = 2 ikki karrali, x = −4 esa oddiy ildiz. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytuvchiga-ajratib-yechish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#e3b6e699"
+    },
+    {
+      "q": "x⁴ − 13x² + 36 = 0 bikvadrat tenglamaning barcha haqiqiy ildizlarini toping.",
+      "v": [
+        "±2; ±3",
+        "±4; ±9",
+        "2; 3",
+        "±2; ±9"
+      ],
+      "t": 0,
+      "izoh": "x² = t almashtirish kiritamiz, shunda t² − 13t + 36 = 0 hosil bo'ladi. Uning ildizlari t = 4 va t = 9. Endi orqaga qaytamiz: x² = 4 dan x = ±2, x² = 9 dan x = ±3. t ning qiymatlarini javob deb yozib qo'yish yoki manfiy ildizlarni unutish tipik xato. Javob: ±2; ±3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bikvadrat-tenglama",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#81731117"
+    },
+    {
+      "q": "Sanjar x⁴ − 5x² + 4 = 0 tenglamada x² = t almashtirish qilib t² − 5t + 4 = 0 ni oldi. Dastlabki tenglamaning nechta haqiqiy ildizi bor?",
+      "v": [
+        "Ikkita",
+        "Uchta",
+        "To'rtta",
+        "Bitta"
+      ],
+      "t": 2,
+      "izoh": "Yordamchi tenglamaning ildizlari t = 1 va t = 4. Ikkalasi ham musbat, shuning uchun har biri x uchun ikkitadan ildiz beradi: x = ±1 va x = ±2. Jami to'rtta haqiqiy ildiz bo'ladi. t ning ikkita qiymatini javob deb hisoblab ikkita deyish tipik xato. Javob: to'rtta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-tenglama",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#2b7af7f0"
+    },
+    {
+      "q": "x⁴ + 3x² − 4 = 0 tenglamaning haqiqiy ildizlari soni qancha va bunga nima sabab bo'ladi?",
+      "v": [
+        "To'rtta, chunki t ning ikkala qiymati musbat",
+        "Ikkita, chunki t ning faqat bittasi musbat",
+        "Uchta, chunki bitta ildiz karrali",
+        "Haqiqiy ildizi yo'q, chunki t manfiy"
+      ],
+      "t": 1,
+      "izoh": "x² = t deb olsak t² + 3t − 4 = 0 va uning ildizlari t = 1 hamda t = −4. x² = −4 tenglamaning haqiqiy yechimi yo'q, chunki kvadrat manfiy bo'lmaydi. Faqat x² = 1 dan x = 1 va x = −1 chiqadi. Demak ikkita haqiqiy ildiz bor. Javob: ikkita, chunki t ning faqat bittasi musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-tenglama",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#a719c0e2"
+    },
+    {
+      "q": "x⁴ − 10x² + 9 = 0 tenglamaning barcha haqiqiy ildizlari ko'paytmasi nechaga teng?",
+      "v": [
+        "−9",
+        "0",
+        "10",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "x² = t almashtirishda t² − 10t + 9 = 0 bo'lib, t = 1 va t = 9 chiqadi. Demak ildizlar 1, −1, 3 va −3. Ko'paytma 1·(−1)·3·(−3) = 9 ga teng, chunki ikkita manfiy ko'paytuvchi musbat natija beradi. Ishoralarni noto'g'ri sanab −9 olish yoki yig'indi bilan chalkashtirib 0 deyish tipik xato. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-tenglama",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#8dea2eb2"
+    },
+    {
+      "q": "4x⁴ − 17x² + 4 = 0 tenglamaning musbat ildizlari yig'indisini toping.",
+      "v": [
+        "2",
+        "17/4",
+        "4",
+        "5/2"
+      ],
+      "t": 3,
+      "izoh": "x² = t deb olamiz: 4t² − 17t + 4 = 0, diskriminant 289 − 64 = 225 va t = (17 ± 15)/8. Demak t = 4 hamda t = 1/4. Bundan x = ±2 va x = ±1/2. Musbat ildizlar 2 va 1/2 bo'lib, yig'indisi 5/2. Kichik ildizni tushirib qoldirsa 2, t larning yig'indisini olsa 17/4 chiqadi. Javob: 5/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bikvadrat-tenglama",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#34a52852"
+    },
+    {
+      "q": "(x² − 3x)² − 2(x² − 3x) − 8 = 0 tenglamada t = x² − 3x almashtirish bajarildi. Tenglamaning barcha haqiqiy ildizlari yig'indisini toping.",
+      "v": [
+        "6",
+        "2",
+        "3",
+        "−2"
+      ],
+      "t": 0,
+      "izoh": "Almashtirishdan keyin t² − 2t − 8 = 0 bo'lib, t = 4 va t = −2 chiqadi. Birinchi holda x² − 3x − 4 = 0, ildizlari 4 va −1. Ikkinchi holda x² − 3x + 2 = 0, ildizlari 1 va 2. Barcha ildizlar yig'indisi 4 − 1 + 1 + 2 = 6. Faqat bitta holni hisoblab 3 deyish yoki t ning qiymatlarini javob deb olish tipik xato. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-usuli",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#1f3d4023"
+    },
+    {
+      "q": "(x² + x)² − 8(x² + x) + 12 = 0 tenglamaning nechta haqiqiy ildizi bor?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "6 ta"
+      ],
+      "t": 2,
+      "izoh": "t = x² + x deb olsak t² − 8t + 12 = 0 va t = 2 hamda t = 6 chiqadi. x² + x − 2 = 0 dan x = 1 va x = −2; x² + x − 6 = 0 dan x = 2 va x = −3. To'rtta ildizning hammasi har xil, demak jami 4 ta. t ning ikkita qiymatini javob deb olish tipik xato. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-usuli",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#41e3f8f5"
+    },
+    {
+      "q": "x(x + 1)(x + 2)(x + 3) = 24 tenglama t = x² + 3x almashtirish bilan yechiladi. Tenglamaning haqiqiy ildizlari yig'indisini toping.",
+      "v": [
+        "3",
+        "−6",
+        "1",
+        "−3"
+      ],
+      "t": 3,
+      "izoh": "Chekka va o'rtadagi qavslarni juftlaymiz: x(x + 3) = x² + 3x, (x + 1)(x + 2) = x² + 3x + 2. Almashtirishdan keyin t(t + 2) = 24, ya'ni t² + 2t − 24 = 0 va t = 4 hamda t = −6. x² + 3x − 4 = 0 dan x = 1 va x = −4; x² + 3x + 6 = 0 esa manfiy diskriminantga ega va haqiqiy ildiz bermaydi. Yig'indi 1 + (−4) = −3. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-usuli",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#699855d6"
+    },
+    {
+      "q": "x³ − 5x² + 2x + 8 = 0 tenglama ildizlarining yig'indisini Viyet formulasi yordamida toping.",
+      "v": [
+        "5",
+        "−5",
+        "8",
+        "−8"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi darajali ax³ + bx² + cx + d = 0 tenglamada ildizlar yig'indisi −b/a formulasi bilan topiladi. Bu yerda a = 1, b = −5, demak yig'indi 5 ga teng. Tekshirish uchun ildizlarni topamiz: −1, 2 va 4, ularning yig'indisi ham 5. Formuladagi minus ishorasini tushirib qoldirsa −5, ozod hadni yig'indi bilan chalkashtirsa 8 chiqadi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-yigindisi-viyet",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#069ec28a"
+    },
+    {
+      "q": "2x³ − 3x² − 8x + 12 = 0 tenglamaning uchta haqiqiy ildizi bor. Ularning yig'indisi nechaga teng?",
+      "v": [
+        "−3/2",
+        "3/2",
+        "3",
+        "−4"
+      ],
+      "t": 1,
+      "izoh": "Ildizlar yig'indisi −b/a ga teng, bu yerda a = 2 va b = −3, demak yig'indi 3/2. Tekshiramiz: guruhlash (2x − 3)(x² − 4) = 0 beradi, ildizlar 3/2, 2 va −2 bo'lib, yig'indisi 3/2. Bosh koeffitsientga bo'lishni unutgan o'quvchi 3 ni oladi. Javob: 3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-yigindisi-viyet",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#ce5d2eb1"
+    },
+    {
+      "q": "x⁴ − 6x³ + 7x² + 6x − 8 = 0 tenglamaning to'rtta ildizi ham haqiqiy. Ularning yig'indisini Viyet formulasi bilan toping.",
+      "v": [
+        "−6",
+        "7",
+        "6",
+        "−8"
+      ],
+      "t": 2,
+      "izoh": "To'rtinchi darajali tenglamada ham ildizlar yig'indisi −b/a formulasi bilan topiladi: a = 1, b = −6, demak yig'indi 6. Haqiqatan ham ildizlar −1, 1, 2 va 4 bo'lib, ularning yig'indisi 6. Ishorani almashtirib −6 olish yoki keyingi koeffitsientni yozib qo'yish tipik xato. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-yigindisi-viyet",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#7b60037d"
+    },
+    {
+      "q": "x³ + (k − 2)x² − 5x + 1 = 0 tenglama ildizlarining yig'indisi 3 ga teng bo'lsa, k ning qiymatini toping.",
+      "v": [
+        "5",
+        "1",
+        "−3",
+        "−1"
+      ],
+      "t": 3,
+      "izoh": "Ildizlar yig'indisi −b/a formulasi bo'yicha −(k − 2) ga teng. Shart bo'yicha −(k − 2) = 3, ya'ni k − 2 = −3 va k = −1. Minus ishorasini e'tibordan chetda qoldirgan o'quvchi k − 2 = 3 deb 5 ni, shoshib k = 3 − 2 deb hisoblagani 1 ni, k − 2 ifodaning qiymatini javob deb olgani esa −3 ni yozadi. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-yigindisi-viyet",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#22e629fb"
+    },
+    {
+      "q": "3x³ − 5x² + kx − 2 = 0 tenglamada k parametr. Ildizlar yig'indisi 5/3 bo'lishi uchun k qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "Faqat k = 5/3 bo'lganda",
+        "Faqat k = 0 bo'lganda",
+        "k ning istalgan qiymatida",
+        "Bunday k umuman mavjud emas"
+      ],
+      "t": 2,
+      "izoh": "Viyet formulasiga ko'ra ildizlar yig'indisi faqat bosh koeffitsient bilan x² oldidagi koeffitsientga bog'liq: −b/a = 5/3. Bu ifodada k umuman qatnashmaydi, demak k qanday bo'lishidan qat'i nazar yig'indi 5/3 bo'lib qolaveradi. k ni yig'indi qiymati bilan chalkashtirish tipik xato. Javob: k ning istalgan qiymatida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-yigindisi-viyet",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#40e4915c"
+    },
+    {
+      "q": "x³ + 4x² − 7x − 10 = 0 tenglama ildizlarining ko'paytmasi nechaga teng?",
+      "v": [
+        "10",
+        "−10",
+        "4",
+        "−4"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi darajali tenglamada ildizlar ko'paytmasi −d/a formulasi bilan hisoblanadi: −(−10)/1 = 10. Tekshirish uchun ildizlarni topamiz: x = 2 ildiz, bo'lishdan (x + 1)(x + 5) chiqadi, ya'ni ildizlar 2, −1 va −5, ko'paytmasi 10. Ozod hadning ishorasini o'zgartirmasdan −10 deb yozish tipik xato. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-kopaytmasi-viyet",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#caea9b32"
+    },
+    {
+      "q": "x⁴ + 2x³ − 13x² − 14x + 24 = 0 tenglamaning to'rtta haqiqiy ildizi bor. Ularning ko'paytmasi nechaga teng?",
+      "v": [
+        "−24",
+        "24",
+        "14",
+        "−2"
+      ],
+      "t": 1,
+      "izoh": "To'rtinchi darajali tenglamada ildizlar ko'paytmasi e/a ga teng, ya'ni minus ishorasisiz olinadi: 24/1 = 24. Uchinchi daraja qoidasini ko'chirib −24 deb yozish eng ko'p uchraydigan xato. Tekshiramiz: ildizlar 1, −2, 3 va −4 bo'lib, ko'paytma 1·(−2)·3·(−4) = 24. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-kopaytmasi-viyet",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#d6537875"
+    },
+    {
+      "q": "3x³ + 2x² − 12x − 8 = 0 tenglama ildizlarining ko'paytmasi qanday kasr bilan ifodalanadi?",
+      "v": [
+        "−8/3",
+        "8/3",
+        "3/8",
+        "2/3"
+      ],
+      "t": 1,
+      "izoh": "Ildizlar ko'paytmasi −d/a formulasi bo'yicha −(−8)/3 = 8/3 ga teng. Tekshiramiz: guruhlash (3x + 2)(x² − 4) = 0 beradi, ildizlar −2/3, 2 va −2, ko'paytmasi (−2/3)·2·(−2) = 8/3. Ozod had ishorasini o'zgartirmasdan −8/3 deb yozish yoki kasrni ag'darib 3/8 olish tipik xato. Javob: 8/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-kopaytmasi-viyet",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#fe95df1d"
+    },
+    {
+      "q": "x³ − 7x² + 36 = 0 tenglamaning uchta haqiqiy ildizi bor. Ildizlar ko'paytmasidan ularning yig'indisini ayiring.",
+      "v": [
+        "−29",
+        "43",
+        "−43",
+        "29"
+      ],
+      "t": 2,
+      "izoh": "Viyet bo'yicha ko'paytma −d/a = −36, yig'indi esa −b/a = 7. So'ralgan ayirma −36 − 7 = −43 bo'ladi. Tekshirish uchun ildizlarni topamiz: x = −2 ildiz, bo'lishdan (x − 3)(x − 6) chiqadi, ya'ni ildizlar −2, 3 va 6. Ko'paytma −36, yig'indi 7. Ayirish o'rniga qo'shib yuborsa −29 chiqadi. Javob: −43.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-kopaytmasi-viyet",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#c120d7f6"
+    },
+    {
+      "q": "x⁴ − 5x³ + 5x² + 5x − 6 = 0 tenglama ildizlari ko'paytmasining ularning yig'indisiga nisbatini toping.",
+      "v": [
+        "6/5",
+        "−5/6",
+        "5/6",
+        "−6/5"
+      ],
+      "t": 3,
+      "izoh": "To'rtinchi darajali tenglamada ildizlar ko'paytmasi e/a = −6, yig'indisi esa −b/a = 5 ga teng. Nisbat −6/5 bo'ladi. Tekshiramiz: ildizlar −1, 1, 2 va 3; ko'paytma −6, yig'indi 5. Ko'paytma ishorasini yo'qotish yoki nisbatni teskari yozish tipik xato. Javob: −6/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-kopaytmasi-viyet",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#9522b4e0"
+    },
+    {
+      "q": "x³ − 4x² + 5x − 2 = 0 tenglama ildizlarini ikkitadan olib ko'paytirsak, hosil bo'lgan uchta ko'paytma yig'indisi nechaga teng?",
+      "v": [
+        "5",
+        "−5",
+        "4",
+        "−2"
+      ],
+      "t": 0,
+      "izoh": "Viyet formulalariga ko'ra x₁x₂ + x₁x₃ + x₂x₃ = c/a bo'ladi, bu yerda c = 5 va a = 1, demak yig'indi 5. Tekshirish uchun ildizlarni topamiz: tenglama (x − 1)²(x − 2) ko'rinishga keladi, ildizlar 1, 1 va 2. Yig'indi 1·1 + 1·2 + 1·2 = 5. Formulaga ortiqcha minus qo'shib −5 olish, c o'rniga boshqa koeffitsient (4 yoki −2) ni yozib qo'yish tipik xato. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-kopaytmalar-yigindisi",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#2c720c8d"
+    },
+    {
+      "q": "2x³ − x² − 8x + 4 = 0 tenglamaning ildizlari ikkitadan ko'paytirilib natijalar qo'shildi. Hosil bo'lgan son nechaga teng?",
+      "v": [
+        "8",
+        "−4",
+        "−8",
+        "1/2"
+      ],
+      "t": 1,
+      "izoh": "Juft ko'paytmalar yig'indisi c/a formulasi bilan topiladi: −8/2 = −4. Tekshiramiz: guruhlash (2x − 1)(x² − 4) = 0 beradi, ildizlar 1/2, 2 va −2. Yig'indi (1/2)·2 + (1/2)·(−2) + 2·(−2) = 1 − 1 − 4 = −4. Bosh koeffitsientga bo'lishni unutgan o'quvchi −8 ni, c ning ishorasini almashtirgani esa 8 ni oladi. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-kopaytmalar-yigindisi",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#36780060"
+    },
+    {
+      "q": "x³ − 3x² − 4x + 12 = 0 tenglama ildizlari kvadratlarining yig'indisini Viyet formulalari yordamida toping.",
+      "v": [
+        "1",
+        "9",
+        "17",
+        "−17"
+      ],
+      "t": 2,
+      "izoh": "Viyet bo'yicha ildizlar yig'indisi 3, juft ko'paytmalar yig'indisi −4 ga teng. Ayniyatdan foydalanamiz: x₁² + x₂² + x₃² = (x₁ + x₂ + x₃)² − 2(x₁x₂ + x₁x₃ + x₂x₃) = 9 − 2·(−4) = 17. Tekshiramiz: ildizlar 3, 2 va −2, kvadratlar yig'indisi 9 + 4 + 4 = 17. Ayirish o'rniga qo'shib yuborsa 1 chiqadi. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-kopaytmalar-yigindisi",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#4a4d9747"
+    },
+    {
+      "q": "x³ − 2x² − 9x + 18 = 0 tenglamaning ildizlari x₁, x₂ va x₃ bo'lsa, 1/x₁ + 1/x₂ + 1/x₃ ifodaning qiymatini toping.",
+      "v": [
+        "−1/2",
+        "2",
+        "−2",
+        "1/2"
+      ],
+      "t": 3,
+      "izoh": "Kasrlarni umumiy maxrajga keltiramiz: 1/x₁ + 1/x₂ + 1/x₃ = (x₁x₂ + x₁x₃ + x₂x₃)/(x₁x₂x₃). Viyet bo'yicha surat c/a = −9, maxraj −d/a = −18. Demak ifoda −9/(−18) = 1/2. Tekshiramiz: ildizlar 2, 3 va −3, ya'ni 1/2 + 1/3 − 1/3 = 1/2. Ildizlar yig'indisi 2 ni javob deb olish tipik xato. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetrik-ifoda-viyet",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#e48edc54"
+    },
+    {
+      "q": "x³ + 3x² − 10x − 24 = 0 tenglamaning ildizlari x₁, x₂ va x₃. x₁x₂x₃ + x₁ + x₂ + x₃ ifodaning qiymatini hisoblang.",
+      "v": [
+        "21",
+        "27",
+        "−21",
+        "−27"
+      ],
+      "t": 0,
+      "izoh": "Viyet formulalari: ildizlar ko'paytmasi −d/a = 24, yig'indisi −b/a = −3. Demak ifoda 24 + (−3) = 21 ga teng. Tekshiramiz: ildizlar −2, −4 va 3; ko'paytma 24, yig'indi −3. Yig'indi ishorasini almashtirib 27 olish tipik xato. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetrik-ifoda-viyet",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#78086c36"
+    },
+    {
+      "q": "x³ − 6x² + 3x + 10 = 0 tenglamaning ildizlari x₁, x₂ va x₃ bo'lsa, (1 + x₁)(1 + x₂)(1 + x₃) ko'paytma nechaga teng?",
+      "v": [
+        "20",
+        "−20",
+        "0",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "Qavslarni ochamiz: 1 + (x₁ + x₂ + x₃) + (x₁x₂ + x₁x₃ + x₂x₃) + x₁x₂x₃. Viyet bo'yicha bu 1 + 6 + 3 + (−10) = 0 ga teng. Natija nol chiqishi tabiiy, chunki x = −1 tenglamaning ildizi va bitta qavs nolga aylanadi. Ko'paytma ishorasini o'zgartirmasdan 20 olish tipik xato. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetrik-ifoda-viyet",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#345fbf0e"
+    },
+    {
+      "q": "x³ + 8 = 0 tenglamaning nechta haqiqiy ildizi borligini aniqlang.",
+      "v": [
+        "Bitta",
+        "Ikkita",
+        "Uchta",
+        "Haqiqiy ildizi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Kublar yig'indisi formulasi bo'yicha x³ + 8 = (x + 2)(x² − 2x + 4). Birinchi ko'paytuvchidan x = −2 ildizi chiqadi. Ikkinchisi uchun diskriminant 4 − 16 = −12 manfiy, demak u haqiqiy ildiz bermaydi. Uchinchi darajali tenglama doim uchta haqiqiy ildizga ega deb o'ylash tipik xato. Javob: bitta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "haqiqiy-ildizlar-soni",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#02a4c4af"
+    },
+    {
+      "q": "x⁴ + 5x² + 4 = 0 tenglamaning haqiqiy ildizlari soni haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "To'rtta ildiz bor",
+        "Ikkita ildiz bor",
+        "Bitta ildiz bor",
+        "Haqiqiy ildiz yo'q"
+      ],
+      "t": 3,
+      "izoh": "x² = t almashtirishda t² + 5t + 4 = 0 bo'lib, t = −1 va t = −4 chiqadi. Ikkala qiymat ham manfiy, x² esa manfiy bo'la olmaydi. Demak tenglamaning haqiqiy ildizi yo'q. Buni boshqacha ham ko'rish mumkin: x⁴ ≥ 0 va 5x² ≥ 0 bo'lgani uchun chap tomon har doim 4 dan kichik emas. Javob: haqiqiy ildiz yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "haqiqiy-ildizlar-soni",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#5e5c46d0"
+    },
+    {
+      "q": "Shahnoza (x − 1)(x + 4)(x² + 9) = 0 tenglamani yechmoqda. Bu tenglamaning nechta haqiqiy ildizi bor?",
+      "v": [
+        "Uchta",
+        "Ikkita",
+        "To'rtta",
+        "Bitta"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma nol bo'lishi uchun ko'paytuvchilardan biri nol bo'lishi kerak. x − 1 = 0 dan x = 1, x + 4 = 0 dan x = −4 chiqadi. Uchinchi ko'paytuvchi uchun x² + 9 = 0, ya'ni x² = −9 bo'lar edi — bu haqiqiy sonlarda mumkin emas. Ko'phadning darajasi to'rt bo'lgani uchun to'rtta haqiqiy ildiz kutish tipik xato. Javob: ikkita.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "haqiqiy-ildizlar-soni",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#1e410b71"
+    },
+    {
+      "q": "x⁵ − 4x³ = 0 tenglamaning bir-biridan farqli haqiqiy ildizlari soni qancha?",
+      "v": [
+        "5 ta",
+        "2 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 2,
+      "izoh": "Umumiy ko'paytuvchi x³ ni chiqaramiz: x³(x² − 4) = 0. Birinchi ko'paytuvchidan x = 0 (uch karrali), ikkinchisidan x = 2 va x = −2 chiqadi. Har xil ildizlar 0, 2 va −2 bo'lib, ular 3 ta. Daraja beshga teng deb 5 ta deyish yoki x = 0 ni tashlab yuborish tipik xato. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "haqiqiy-ildizlar-soni",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#4dbe7b66"
+    },
+    {
+      "q": "(x² − 4)(x² + x − 6) = 0 tenglamaning bir-biridan farqli haqiqiy ildizlari nechta?",
+      "v": [
+        "To'rtta",
+        "Ikkita",
+        "Beshta",
+        "Uchta"
+      ],
+      "t": 3,
+      "izoh": "Birinchi ko'paytuvchidan x = 2 va x = −2 chiqadi. Ikkinchi ko'paytuvchi (x − 2)(x + 3) ko'rinishida yoyiladi va x = 2 hamda x = −3 beradi. x = 2 ikkala ko'paytuvchida ham uchraganligi uchun bir marta sanaladi. Demak har xil ildizlar 2, −2 va −3, ya'ni uchta. Takrorlanuvchi ildizni ikki marta sanab to'rtta deyish tipik xato. Javob: uchta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "haqiqiy-ildizlar-soni",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#b7e2404f"
+    },
+    {
+      "q": "(x − 3)²(x + 5) = 0 tenglamaning ildizlari va ularning karraliligi qanday bo'ladi?",
+      "v": [
+        "x = 3 ikki karrali, x = −5 oddiy",
+        "x = −3 ikki karrali, x = 5 oddiy",
+        "x = 3 oddiy, x = −5 ikki karrali",
+        "x = 3 va x = −5 ikki karrali"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytma nol bo'lishi uchun (x − 3)² = 0 yoki x + 5 = 0 bo'ladi. Birinchi shartdan x = 3, va u kvadrat ko'rinishda turgani uchun ikki karrali ildiz hisoblanadi. Ikkinchi shartdan x = −5 oddiy ildiz chiqadi. Qavs ichidagi ishorani ildiz ishorasi deb o'qish tipik xato. Javob: x = 3 ikki karrali, x = −5 oddiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "karrali-ildiz",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#e21ff9f7"
+    },
+    {
+      "q": "x³ − 3x² + 4 = 0 tenglamaning qaysi ildizi ikki karrali va bunga qanday dalil keltiriladi?",
+      "v": [
+        "x = −1, chunki u eng kichik ildiz",
+        "x = 2, chunki ko'phad (x + 1)(x − 2)² ko'rinishga keladi",
+        "x = 4, chunki ozod had 4 ga teng",
+        "Bu tenglamada karrali ildiz umuman yo'q"
+      ],
+      "t": 1,
+      "izoh": "x = −1 ni sinaymiz: −1 − 3 + 4 = 0, demak (x + 1) ko'paytuvchi. Ko'phadni (x + 1) ga bo'lsak x² − 4x + 4 hosil bo'ladi, u to'la kvadrat: (x − 2)². Shunday qilib tenglama (x + 1)(x − 2)² = 0 ko'rinishga keladi va x = 2 ikki karrali ildiz bo'ladi. Ozod hadni ildiz deb olish tipik xato. Javob: x = 2, chunki ko'phad (x + 1)(x − 2)² ko'rinishga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "karrali-ildiz",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#5f2d2a0b"
+    },
+    {
+      "q": "x⁴ − 2x³ + x² = 0 tenglamaning har xil ildizlari nechta va ularning har biri necha karrali?",
+      "v": [
+        "To'rtta har xil oddiy ildiz",
+        "Bitta ildiz, u to'rt karrali",
+        "Ikkita ildiz, biri uch karrali",
+        "Ikkita ildiz, har biri ikki karrali"
+      ],
+      "t": 3,
+      "izoh": "Umumiy ko'paytuvchi x² ni chiqaramiz: x²(x² − 2x + 1) = 0. Qavsdagi ifoda to'la kvadrat, ya'ni (x − 1)². Demak tenglama x²(x − 1)² = 0 ko'rinishida bo'ladi. Bundan x = 0 ikki karrali va x = 1 ikki karrali ildizlar chiqadi. Karraliliklar yig'indisi darajaga, ya'ni to'rtga teng. Javob: ikkita ildiz, har biri ikki karrali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "karrali-ildiz",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#71517aae"
+    },
+    {
+      "q": "Nigora x³ + x² − 5x + 3 = 0 tenglamani yechganda atigi ikkita har xil ildiz chiqdi. Karrali ildizni va uning karraliligini toping.",
+      "v": [
+        "x = −3, ikki karrali",
+        "x = 1, ikki karrali",
+        "x = 1, uch karrali",
+        "x = 3, ikki karrali"
+      ],
+      "t": 1,
+      "izoh": "x = 1 ni sinaymiz: 1 + 1 − 5 + 3 = 0, demak (x − 1) ko'paytuvchi. Bo'lish natijasi x² + 2x − 3 = (x − 1)(x + 3), ya'ni tenglama (x − 1)²(x + 3) = 0 ko'rinishga keladi. Shunday qilib x = 1 ikki karrali, x = −3 esa oddiy ildiz. Ozod had 3 ga qarab x = 3 ni tanlash tipik xato. Javob: x = 1, ikki karrali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "karrali-ildiz",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#3117d7e2"
+    },
+    {
+      "q": "Beshinchi darajali ko'phadli tenglama eng ko'pi bilan nechta haqiqiy ildizga ega bo'lishi mumkin?",
+      "v": [
+        "5 ta",
+        "4 ta",
+        "6 ta",
+        "10 ta"
+      ],
+      "t": 0,
+      "izoh": "n-darajali ko'phadli tenglama karralilik bilan hisoblaganda aynan n ta ildizga ega bo'ladi, ulardan haqiqiylari esa n tadan oshmaydi. Daraja beshga teng bo'lgani uchun haqiqiy ildizlar soni ko'pi bilan 5 ta. Ildizlar sonini darajadan katta deb o'ylash yoki uni doim juft deb hisoblash tipik xato. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-va-ildiz-soni",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#e891d147"
+    },
+    {
+      "q": "Oltinchi darajali ko'phadli tenglamaning to'rtta har xil haqiqiy ildizi topildi. Qolgan ildizlar haqida qanday xulosa qilish mumkin?",
+      "v": [
+        "Yana ikkita har xil haqiqiy ildiz bo'lishi shart",
+        "Har xil haqiqiy ildizlar soni doim daraja qiymatiga teng bo'ladi",
+        "Qolganlari karrali bo'lishi yoki haqiqiy bo'lmasligi mumkin",
+        "Tenglama shartida xatolik bor"
+      ],
+      "t": 2,
+      "izoh": "Oltinchi darajali tenglamada karralilik bilan olti ildiz bo'ladi, lekin ularning hammasi har xil va haqiqiy bo'lishi shart emas — shuning uchun har xil haqiqiy ildizlar soni darajaga teng bo'lishi shart emas. Topilgan to'rtta ildizdan biri ikki karrali bo'lishi mumkin, yoki qolgan ikkitasi haqiqiy sonlar orasida bo'lmasligi mumkin. Masalan (x² + 1)(x − 1)(x + 1)(x − 2)(x + 2) = 0 tenglamada aynan to'rtta haqiqiy ildiz bor. Javob: qolganlari karrali bo'lishi yoki haqiqiy bo'lmasligi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-va-ildiz-soni",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#e7299636"
+    },
+    {
+      "q": "Uchinchi darajali ko'phadli tenglama atigi ikkita har xil haqiqiy ildizga ega bo'lishi mumkinmi?",
+      "v": [
+        "Yo'q, uning har xil ildizlari doim uchta",
+        "Ha, agar ildizlardan biri ikki karrali bo'lsa",
+        "Ha, lekin faqat bosh koeffitsient manfiy bo'lganda",
+        "Yo'q, chunki toq darajali tenglamada ildizlar juft bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Karralilik bilan hisoblaganda uchinchi darajali tenglamada uchta ildiz bo'ladi, lekin ular har xil bo'lishi shart emas. Masalan (x − 2)²(x + 3) = 0 tenglamada faqat ikkita har xil ildiz bor: 2 va −3. Bosh koeffitsientning ishorasi ildizlar soniga ta'sir qilmaydi. Javob: ha, agar ildizlardan biri ikki karrali bo'lsa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-va-ildiz-soni",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#4013ac92"
+    },
+    {
+      "q": "(x + 2)(x − 7)(x − 4) = 0 tenglamaning ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "9",
+        "−9",
+        "13",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytma nol bo'lishi uchun ko'paytuvchilardan biri nol bo'ladi: x = −2, x = 7, x = 4. Ularning yig'indisi −2 + 7 + 4 = 9. Qavs ichidagi sonlarni ishorasini o'zgartirmasdan qo'shib yuborsa 13 chiqadi, hamma ishorani teskari olsa −9 hosil bo'ladi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tayyor-kopaytuvchili-tenglama",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#db96e8ef"
+    },
+    {
+      "q": "(x − 5)(x² − 8x + 15) = 0 tenglamaning har xil ildizlari yig'indisini toping.",
+      "v": [
+        "13",
+        "8",
+        "15",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat uchhadni yoyamiz: x² − 8x + 15 = (x − 3)(x − 5). Demak tenglama (x − 5)²(x − 3) = 0 ko'rinishida bo'ladi va ildizlari 5 (ikki karrali) hamda 3. Har xil ildizlar 5 va 3, ularning yig'indisi 8. Karrali ildizni ikki marta qo'shib yuborsa 13 chiqadi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tayyor-kopaytuvchili-tenglama",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#dc6bf469"
+    },
+    {
+      "q": "x(x − 3)(2x + 5) = 0 tenglama ildizlarining ko'paytmasi nechaga teng?",
+      "v": [
+        "−15/2",
+        "15/2",
+        "0",
+        "−5/2"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytuvchilarni nolga tenglaymiz: x = 0, x = 3 va 2x + 5 = 0 dan x = −5/2. Ildizlar ko'paytmasi 0·3·(−5/2) = 0 bo'ladi, chunki ko'paytuvchilardan biri nol. x = 0 ildizini e'tibordan chetda qoldirgan o'quvchi 3·(−5/2) = −15/2 ni oladi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tayyor-kopaytuvchili-tenglama",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#c4237096"
+    },
+    {
+      "q": "(x² − 9)(x² + 4x + 4) = 0 tenglamaning har xil ildizlari nechta va ularning yig'indisi qancha?",
+      "v": [
+        "To'rtta ildiz, yig'indisi −4",
+        "Uchta ildiz, yig'indisi 2",
+        "Ikkita ildiz, yig'indisi 0",
+        "Uchta ildiz, yig'indisi −2"
+      ],
+      "t": 3,
+      "izoh": "Birinchi ko'paytuvchidan x = 3 va x = −3 chiqadi. Ikkinchisi to'la kvadrat: x² + 4x + 4 = (x + 2)², bundan x = −2 ikki karrali ildiz sifatida topiladi. Har xil ildizlar 3, −3 va −2, ya'ni uchta; yig'indisi 3 − 3 − 2 = −2. Karrali ildizni ikki marta sanab to'rtta deyish tipik xato. Javob: uchta ildiz, yig'indisi −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tayyor-kopaytuvchili-tenglama",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#28563e3d"
+    },
+    {
+      "q": "2x³ + ax² − 5x + 6 = 0 tenglamaning ildizlaridan biri x = 3 bo'lsa, a ning qiymatini toping.",
+      "v": [
+        "−5",
+        "5",
+        "−45",
+        "45"
+      ],
+      "t": 0,
+      "izoh": "x = 3 ildiz bo'lgani uchun uni tenglamaga qo'yamiz: 2·27 + 9a − 15 + 6 = 0. Soddalashtirsak 45 + 9a = 0, bundan 9a = −45 va a = −5. Oxirgi bo'lishni bajarmasdan −45 ni javob deb yozish yoki ishorani almashtirish tipik xato. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsient-topish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#385d05f3"
+    },
+    {
+      "q": "Ustoz x³ + bx² − 4x − 12 = 0 tenglamani shunday tuzmoqchiki, uning ildizlaridan biri x = 2 bo'lsin. b qanday bo'lishi kerak?",
+      "v": [
+        "−3",
+        "3",
+        "12",
+        "−12"
+      ],
+      "t": 1,
+      "izoh": "x = 2 ni tenglamaga qo'yamiz: 8 + 4b − 8 − 12 = 0. Bu 4b − 12 = 0 ga keltiriladi, demak b = 3. Tenglamani tekshirsak x³ + 3x² − 4x − 12 = (x + 3)(x − 2)(x + 2) bo'lib, x = 2 haqiqatan ildiz. Ishorani almashtirib −3 olish tipik xato. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsient-topish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#88f237e1"
+    },
+    {
+      "q": "x³ + px² + 2x − 8 = 0 tenglama ildizlarining yig'indisi ularning ko'paytmasiga teng bo'lsa, p ning qiymatini toping.",
+      "v": [
+        "8",
+        "2",
+        "−8",
+        "−2"
+      ],
+      "t": 2,
+      "izoh": "Viyet formulalari bo'yicha ildizlar yig'indisi −p, ko'paytmasi esa −d/a = 8 ga teng. Shart bo'yicha −p = 8, demak p = −8. Ko'paytmani hisoblashda ozod hadning ishorasini o'zgartirmagan o'quvchi 8 ni oladi. Javob: −8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsient-topish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#b63e5361"
+    },
+    {
+      "q": "P(x) = x³ + 2x² + ax − 6 ko'phadning (x + 3) ga bo'lgandagi qoldig'i 12 ga teng. a ning qiymatini toping.",
+      "v": [
+        "9",
+        "−27",
+        "27",
+        "−9"
+      ],
+      "t": 3,
+      "izoh": "Bezu teoremasi bo'yicha qoldiq P(−3) ga teng. P(−3) = −27 + 18 − 3a − 6 = −15 − 3a. Shart bo'yicha −15 − 3a = 12, bundan −3a = 27 va a = −9. Oxirgi bo'lishni unutib −27 yoki 27 ni yozish tipik xato. Javob: −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsient-topish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#b5fc3790"
+    },
+    {
+      "q": "Ildizlari 1, 3 va 5 sonlaridan iborat x³ + px² + qx + r = 0 tenglamada p koeffitsient nechaga teng?",
+      "v": [
+        "−9",
+        "9",
+        "15",
+        "−15"
+      ],
+      "t": 0,
+      "izoh": "Viyet formulasiga ko'ra keltirilgan tenglamada ildizlar yig'indisi −p ga teng. Ildizlar yig'indisi 1 + 3 + 5 = 9, demak −p = 9 va p = −9. Minus ishorasini e'tibordan chetda qoldirib 9 deb yozish, yoki ildizlar ko'paytmasi 15 ni p deb olish tipik xato. Javob: −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophad-tuzish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#40b6e0b7"
+    },
+    {
+      "q": "Ildizlari −2, 1 va 4 bo'lgan keltirilgan uchinchi darajali tenglamaning ozod hadi nechaga teng?",
+      "v": [
+        "−8",
+        "8",
+        "3",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "Tenglamani ko'paytuvchilar orqali yozamiz: (x + 2)(x − 1)(x − 4) = 0. Qavslarni ochsak x³ − 3x² − 6x + 8 hosil bo'ladi, ya'ni ozod had 8. Uni tezroq topish uchun ildizlar ko'paytmasidan foydalanish mumkin: (−2)·1·4 = −8, ozod had esa uning qarama-qarshisi. Ishorani almashtirmasdan −8 yozish tipik xato. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kophad-tuzish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#14c310bd"
+    },
+    {
+      "q": "Uchta sonning yig'indisi 6 ga, ikkitadan olingan ko'paytmalari yig'indisi 11 ga, ko'paytmasi esa 6 ga teng. Bu sonlar qaysi tenglamaning ildizlari bo'ladi?",
+      "v": [
+        "x³ + 6x² + 11x + 6 = 0",
+        "x³ − 6x² − 11x + 6 = 0",
+        "x³ − 6x² + 11x − 6 = 0",
+        "x³ + 6x² − 11x − 6 = 0"
+      ],
+      "t": 2,
+      "izoh": "Keltirilgan uchinchi darajali tenglama x³ − (x₁ + x₂ + x₃)x² + (x₁x₂ + x₁x₃ + x₂x₃)x − x₁x₂x₃ = 0 ko'rinishida tuziladi. Berilganlarni qo'yamiz: x³ − 6x² + 11x − 6 = 0. Uning ildizlari 1, 2 va 3 bo'lib, shart bajarilishini tasdiqlaydi. Koeffitsientlarning ishorasini almashtirib qo'yish tipik xato. Javob: x³ − 6x² + 11x − 6 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kophad-tuzish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#83b7f515"
+    },
+    {
+      "q": "x³ = 3x + 2 tenglamani nolga keltirib yeching va uning har xil ildizlari yig'indisini toping.",
+      "v": [
+        "0",
+        "2",
+        "−1",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "Tenglamani standart ko'rinishga keltiramiz: x³ − 3x − 2 = 0. x = 2 ni sinaymiz: 8 − 6 − 2 = 0, demak (x − 2) ko'paytuvchi. Bo'lish natijasi x² + 2x + 1 = (x + 1)², ya'ni x = −1 ikki karrali ildiz. Har xil ildizlar 2 va −1, yig'indisi 1. Karrali ildizni ikki marta qo'shsa Viyet yig'indisi 0 chiqadi, lekin so'ralgani bu emas. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-kolipga-keltirish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#d769ed76"
+    },
+    {
+      "q": "(x − 1)³ = 8 tenglamaning haqiqiy ildizlari soni va qiymati qanday bo'ladi?",
+      "v": [
+        "Bitta ildiz, x = 3",
+        "Ikkita ildiz: x = 3 va x = −1",
+        "Bitta ildiz, x = 2",
+        "Uchta har xil haqiqiy ildiz"
+      ],
+      "t": 0,
+      "izoh": "Har bir haqiqiy sondan kub ildiz yagona qiymat beradi, shuning uchun x − 1 = 2 bo'ladi va x = 3 chiqadi. Buni yoyib ham tekshirish mumkin: x³ − 3x² + 3x − 9 = 0 tenglama (x − 3)(x² + 3) ko'rinishga keladi, ikkinchi ko'paytuvchi esa haqiqiy ildiz bermaydi. Kvadrat tenglamadagidek ikkita ishora qo'yish tipik xato. Javob: bitta ildiz, x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "standart-kolipga-keltirish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#8e21e31a"
+    },
+    {
+      "q": "x³ − x² = 12x − 12 tenglamani guruhlash usuli bilan yeching. Uning nechta haqiqiy ildizi bor?",
+      "v": [
+        "1 ta",
+        "3 ta",
+        "2 ta",
+        "Haqiqiy ildizi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Barcha hadlarni chapga o'tkazamiz: x³ − x² − 12x + 12 = 0. Guruhlaymiz: x²(x − 1) − 12(x − 1) = 0, ya'ni (x − 1)(x² − 12) = 0. Bundan x = 1, hamda x = 2√3 va x = −2√3 kelib chiqadi. Demak 3 ta haqiqiy ildiz bor. Ikkala tomonni (x − 1) ga qisqartirib bitta ildizni yo'qotish tipik xato. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "standart-kolipga-keltirish",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#80fb2e17"
+    },
+    {
+      "q": "x⁴ − 5x³ + 7x² − 5x + 6 = 0 tenglama (x² + 1)(x² − 5x + 6) = 0 ko'rinishga keladi. Faqat haqiqiy ildizlarning yig'indisini toping.",
+      "v": [
+        "3",
+        "6",
+        "5",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "x² + 1 = 0 tenglamaning haqiqiy yechimi yo'q, chunki x² manfiy bo'lmaydi. Haqiqiy ildizlar faqat x² − 5x + 6 = 0 dan chiqadi: (x − 2)(x − 3) = 0, ya'ni x = 2 va x = 3. Ularning yig'indisi 5. Ildizlar ko'paytmasi 6 ni javob deb olish yoki faqat kattasini yozib qo'yish tipik xato. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "faqat-haqiqiy-ildizlar-yigindisi",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#8f5b910d"
+    },
+    {
+      "q": "x⁴ + 4x³ − x² + 16x − 20 = 0 tenglamaning chap tomoni (x² + 4)(x² + 4x − 5) ko'rinishida yoyiladi. Haqiqiy ildizlar yig'indisi nechaga teng?",
+      "v": [
+        "4",
+        "−5",
+        "−20",
+        "−4"
+      ],
+      "t": 3,
+      "izoh": "Birinchi ko'paytuvchi x² + 4 hech qachon nolga aylanmaydi, demak undan haqiqiy ildiz chiqmaydi. Ikkinchisini yoyamiz: x² + 4x − 5 = (x + 5)(x − 1), bundan x = −5 va x = 1. Yig'indi −5 + 1 = −4. Faqat bitta ildizni yozib qo'yish yoki ishorani almashtirish tipik xato. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "faqat-haqiqiy-ildizlar-yigindisi",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#4a48b7d9"
+    },
+    {
+      "q": "x³ + 2x² + 4x + 8 = 0 tenglamaning haqiqiy ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "−2",
+        "2",
+        "0",
+        "−8"
+      ],
+      "t": 0,
+      "izoh": "Guruhlaymiz: x²(x + 2) + 4(x + 2) = 0, ya'ni (x + 2)(x² + 4) = 0. Ikkinchi ko'paytuvchi uchun x² = −4 bo'lar edi, bu esa haqiqiy sonlarda mumkin emas. Demak yagona haqiqiy ildiz x = −2 va yig'indi ham −2. x² + 4 = 0 dan x = ±2 deb olib javobni 0 deb yozish eng ko'p uchraydigan xato. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "faqat-haqiqiy-ildizlar-yigindisi",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#221b8de0"
+    },
+    {
+      "q": "Kichik do'konda oylik sotuvning rejadan chetlanishi V(x) = x³ − 9x² + 26x − 24 (ming dona) formula bilan hisoblanadi, bunda x — oy tartib raqami va kuzatuv dastlabki 4 oyda olib boriladi. Chetlanish V(x) = 0 bo'ladigan eng kichik oyni toping.",
+      "v": [
+        "3-oy",
+        "4-oy",
+        "2-oy",
+        "1-oy"
+      ],
+      "t": 2,
+      "izoh": "Chetlanish nolga aylanishi V(x) = 0 degani, ya'ni x³ − 9x² + 26x − 24 = 0 tenglamani yechish kerak. 24 ning bo'luvchilaridan x = 2 ni sinaymiz: 8 − 36 + 52 − 24 = 0, demak (x − 2) ko'paytuvchi. Bo'lish natijasi x² − 7x + 12 = (x − 3)(x − 4), ya'ni ildizlar 2, 3 va 4 — hammasi kuzatuv oralig'ida yotadi. Eng kichigi 2. 1-oyda V(1) = 1 − 9 + 26 − 24 = −6, ya'ni chetlanish nolga teng emas. Javob: 2-oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-statistika-olchov",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#0c2d5410"
+    },
+    {
+      "q": "Suv omborida sath chetlanishi h(t) = t³ − 7t² + 14t − 8 (santimetr) qonuniyat bilan o'zgaradi, bunda t — kuzatuv kuni va kuzatuv dastlabki 5 kun davomida olib boriladi. Chetlanish nolga aylanadigan kunlar raqamlari yig'indisini toping.",
+      "v": [
+        "8",
+        "14",
+        "6",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "h(t) = 0 tenglamani yechamiz: t³ − 7t² + 14t − 8 = 0. t = 1 ni sinaymiz: 1 − 7 + 14 − 8 = 0, demak (t − 1) ko'paytuvchi. Bo'lish natijasi t² − 6t + 8 = (t − 2)(t − 4), ya'ni kunlar 1, 2 va 4 — uchalasi ham dastlabki 5 kun ichida. Ularning yig'indisi 1 + 2 + 4 = 7. Viyet formulasi ham yig'indini −b/a = 7 deb beradi. Ozod hadni javob deb yozish tipik xato. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-statistika-olchov",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#b8446069"
+    },
+    {
+      "q": "Kunlik harorat chetlanishi ko'rsatkichi (o'lchovsiz kattalik) T(x) = x³ − 12x² + 41x − 30 formula bilan beriladi, bunda x — kuzatuv soati va kuzatuv dastlabki 6 soatda olib boriladi. Ko'rsatkich nolga teng bo'ladigan soatlar raqamlari yig'indisini toping.",
+      "v": [
+        "30",
+        "12",
+        "41",
+        "11"
+      ],
+      "t": 1,
+      "izoh": "T(x) = 0 tenglamani yechamiz: x³ − 12x² + 41x − 30 = 0. x = 1 ni sinaymiz: 1 − 12 + 41 − 30 = 0, demak (x − 1) ko'paytuvchi. Bo'lish natijasi x² − 11x + 30 = (x − 5)(x − 6), ya'ni soatlar 1, 5 va 6 — uchalasi ham dastlabki 6 soat ichida. Ularning yig'indisi 1 + 5 + 6 = 12, bu Viyet formulasi bergan −b/a qiymati bilan bir xil. Ozod hadni javob deb olish tipik xato. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-statistika-olchov",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#1e9c80ac"
+    },
+    {
+      "q": "To'g'ri burchakli parallelepiped shaklidagi qutining o'lchamlari x sm, (x + 1) sm va (x + 2) sm bo'lib, hajmi 60 sm³ ga teng. Qutining eng kichik o'lchamini toping.",
+      "v": [
+        "3 sm",
+        "4 sm",
+        "5 sm",
+        "2 sm"
+      ],
+      "t": 0,
+      "izoh": "Hajm formulasi bo'yicha x(x + 1)(x + 2) = 60 tenglamani tuzamiz, ya'ni x³ + 3x² + 2x − 60 = 0. 60 ning bo'luvchilaridan x = 3 ni sinaymiz: 27 + 27 + 6 − 60 = 0. Bo'lish natijasi x² + 6x + 20 bo'lib, uning diskriminanti manfiy, demak boshqa haqiqiy ildiz yo'q. O'lchamlar 3 sm, 4 sm va 5 sm; eng kichigi 3 sm. Javob: 3 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-hajm",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#ac7ee46a"
+    },
+    {
+      "q": "Kub shaklidagi qutining qirrasi 2 sm ga uzaytirilsa, uning hajmi 27 marta ortadi. Dastlabki qirra uzunligini toping.",
+      "v": [
+        "2 sm",
+        "3 sm",
+        "1 sm",
+        "4 sm"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki qirrani a deb olsak, shart (a + 2)³ = 27a³ ko'rinishida yoziladi. O'ng tomonni 27a³ = (3a)³ deb yozamiz, kublar teng bo'lgani uchun asoslar ham teng: a + 2 = 3a. Bundan 2a = 2 va a = 1 sm. Yangi qirra 3 sm bo'ladi, uni javob deb olish tipik xato. Javob: 1 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-hajm",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#770fd329"
+    },
+    {
+      "q": "Tomoni 12 sm bo'lgan kvadrat qog'ozning to'rt burchagidan tomoni x sm kvadratchalar qirqib olinib, qopqoqsiz quti yasaldi. Qutining hajmi 128 sm³ bo'lsa, x nechaga teng?",
+      "v": [
+        "8 sm",
+        "2 sm",
+        "4 sm",
+        "6 sm"
+      ],
+      "t": 1,
+      "izoh": "Qutining asosi tomoni (12 − 2x) sm bo'lgan kvadrat, balandligi x sm. Demak x(12 − 2x)² = 128, soddalashtirsak x(6 − x)² = 32, ya'ni x³ − 12x² + 36x − 32 = 0. x = 2 ildiz ekanini tekshiramiz: 8 − 48 + 72 − 32 = 0. Bo'lish natijasi x² − 10x + 16 = (x − 2)(x − 8), ya'ni x = 8 ham tenglamaning ildizi. Lekin 12 − 2·8 manfiy chiqadi, shuning uchun u shartga mos emas. Javob: 2 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-hajm",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#a411047c"
+    },
+    {
+      "q": "Akvariumning eni x dm, uzunligi undan 3 dm ortiq, balandligi esa enidan 2 dm kam. Akvarium hajmi 120 dm³ bo'lsa, uning uzunligini toping.",
+      "v": [
+        "5 dm",
+        "3 dm",
+        "10 dm",
+        "8 dm"
+      ],
+      "t": 3,
+      "izoh": "Hajm uchun x(x + 3)(x − 2) = 120 tenglama tuziladi, ya'ni x³ + x² − 6x − 120 = 0. x = 5 ni sinaymiz: 125 + 25 − 30 − 120 = 0. Bo'lish natijasi x² + 6x + 24 bo'lib, diskriminanti manfiy, demak boshqa haqiqiy ildiz yo'q. Eni 5 dm, uzunligi esa 5 + 3 = 8 dm. Enini javob deb yozib qo'yish eng ko'p uchraydigan xato. Javob: 8 dm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-hajm",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#23b0cf09"
+    },
+    {
+      "q": "Ikkita kub shaklidagi qutining qirralari 1 : 2 nisbatda bo'lib, hajmlari yig'indisi 72 sm³ ga teng. Kichik qutining qirrasini toping.",
+      "v": [
+        "2 sm",
+        "3 sm",
+        "4 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Kichik qirrani a deb olsak, kattasi 2a bo'ladi. Hajmlar yig'indisi a³ + (2a)³ = a³ + 8a³ = 9a³. Shart bo'yicha 9a³ = 72, bundan a³ = 8 va a = 2 sm. Katta kubning qirrasi 4 sm bo'lib, uni javob deb olish tipik xato. Javob: 2 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-hajm",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#36c2e690"
+    },
+    {
+      "q": "Kvadrat asosli to'g'ri prizmaning asos tomoni x sm, balandligi esa (x + 2) sm. Prizmaning hajmi 96 sm³ bo'lsa, asos tomonini toping.",
+      "v": [
+        "6 sm",
+        "16 sm",
+        "4 sm",
+        "8 sm"
+      ],
+      "t": 2,
+      "izoh": "Prizma hajmi asos yuzasini balandlikka ko'paytirish orqali topiladi: x²(x + 2) = 96, ya'ni x³ + 2x² − 96 = 0. x = 4 ni sinaymiz: 64 + 32 − 96 = 0. Qolgan ko'paytuvchi x² + 6x + 24 bo'lib, uning diskriminanti manfiy. Balandlik 6 sm, asos yuzasi 16 sm² — ularni asos tomoni deb yozib qo'yish tipik xato. Javob: 4 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-geometrik-olcham",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#89f34bef"
+    },
+    {
+      "q": "Kubning hajmi (sm³ da) uning to'liq sirt yuzasi (sm² da) bilan bir xil songa teng bo'ldi. Kubning qirrasini toping.",
+      "v": [
+        "4 sm",
+        "6 sm",
+        "3 sm",
+        "12 sm"
+      ],
+      "t": 1,
+      "izoh": "Qirrani a deb olsak, hajm a³, to'liq sirt yuzasi esa 6a² bo'ladi. Shart bo'yicha a³ = 6a², ya'ni a³ − 6a² = 0 va a²(a − 6) = 0. a = 0 qirra bo'la olmaydi, demak a = 6 sm. Sirt yuzasi formulasini 4a² deb noto'g'ri eslash 4 sm javobini beradi. Javob: 6 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-geometrik-olcham",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#0d55e5b8"
+    },
+    {
+      "q": "Kvadrat asosli qutining asos tomoni (x − 1) m, balandligi esa x m ga teng. Qutining hajmi 12 m³ bo'lsa, uning balandligini toping.",
+      "v": [
+        "2 m",
+        "4 m",
+        "6 m",
+        "3 m"
+      ],
+      "t": 3,
+      "izoh": "Hajm asos yuzasi bilan balandlik ko'paytmasi: x(x − 1)² = 12, ya'ni x³ − 2x² + x − 12 = 0. x = 3 ni sinaymiz: 27 − 18 + 3 − 12 = 0. Qolgan ko'paytuvchi x² + x + 4 ning diskriminanti manfiy, demak boshqa ildiz yo'q. Balandlik 3 m, asos tomoni esa 2 m. Asos tomonini javob deb yozish tipik xato. Javob: 3 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-geometrik-olcham",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#a51db6b0"
+    },
+    {
+      "q": "Ikkita kub shaklidagi quti bor: kattasining qirrasi kichiginikidan 3 sm uzun, hajmlari ayirmasi esa 279 sm³. Kichik kubning qirrasini toping.",
+      "v": [
+        "4 sm",
+        "7 sm",
+        "3 sm",
+        "5 sm"
+      ],
+      "t": 0,
+      "izoh": "Kichik qirrani a deb olamiz, katta qirra a + 3 bo'ladi. Shart: (a + 3)³ − a³ = 279. Chap tomonni yoyamiz: 9a² + 27a + 27 = 279, bundan 9a² + 27a − 252 = 0 va a² + 3a − 28 = 0. Diskriminant 9 + 112 = 121, ildizlar a = 4 va a = −7; uzunlik manfiy bo'lmaydi. Katta kub qirrasi 7 sm bo'lib, uni javob deb olish tipik xato. Javob: 4 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-geometrik-olcham",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#19bab90c"
+    },
+    {
+      "q": "Asosi kvadrat bo'lgan piramidaning asos tomoni x sm, balandligi (x + 3) sm ga teng. Piramida hajmi 18 sm³ bo'lsa, asos tomonini toping.",
+      "v": [
+        "6 sm",
+        "2 sm",
+        "3 sm",
+        "9 sm"
+      ],
+      "t": 2,
+      "izoh": "Piramida hajmi asos yuzasi bilan balandlik ko'paytmasining uchdan biriga teng: x²(x + 3)/3 = 18, ya'ni x²(x + 3) = 54 va x³ + 3x² − 54 = 0. x = 3 ni sinaymiz: 27 + 27 − 54 = 0. Qolgan ko'paytuvchi x² + 6x + 18 ning diskriminanti manfiy. Balandlik 6 sm, asos yuzasi 9 sm² — bular so'ralgan kattalik emas. Javob: 3 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-geometrik-olcham",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#ebe6fcc2"
+    },
+    {
+      "q": "Bitta qalamning narxi x ming so'm, sotilgan qalamlar soni esa x² ta. Jami tushum 1000 ming so'm bo'lsa, bitta qalam qanchadan sotilgan?",
+      "v": [
+        "100 ming so'm",
+        "10 ming so'm",
+        "5 ming so'm",
+        "20 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Tushum narx bilan miqdorning ko'paytmasi: x·x² = x³. Demak x³ = 1000 tenglamani yechamiz, bundan x = 10 chiqadi, chunki 10³ = 1000. Ya'ni qalam 10 ming so'mdan sotilgan va 100 ta qalam sotilgan. Sotilgan miqdorni narx deb olish tipik xato. Javob: 10 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ish-narx",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#17822a4f"
+    },
+    {
+      "q": "Firmaning oylik zarari Z(x) = x³ − 6x² + 5x + 12 (mln so'm) formula bilan ifodalanadi, bunda x — oy tartib raqami. Zarar nolga aylanadigan oylarni aniqlang.",
+      "v": [
+        "1-oy va 3-oy",
+        "4-oy va 6-oy",
+        "3-oy, 4-oy va 12-oy",
+        "3-oy va 4-oy"
+      ],
+      "t": 3,
+      "izoh": "Z(x) = 0 tenglamani yechamiz: x³ − 6x² + 5x + 12 = 0. x = 3 ni sinaymiz: 27 − 54 + 15 + 12 = 0, demak (x − 3) ko'paytuvchi. Bo'lish natijasi x² − 3x − 4 = (x − 4)(x + 1), ya'ni x = 4 va x = −1. Oy raqami manfiy bo'lmaydi, shuning uchun −1 chiqarib tashlanadi. Javob: 3-oy va 4-oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ish-narx",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#3841cbc1"
+    },
+    {
+      "q": "Ustaxonaning kunlik qo'shimcha xarajati X(n) = n³ − 20n² + 100n (ming so'm), bunda n — tayyorlangan buyumlar soni. Xarajat noldan farqli n da nolga aylanadigan qiymatni toping.",
+      "v": [
+        "10 ta",
+        "20 ta",
+        "5 ta",
+        "100 ta"
+      ],
+      "t": 0,
+      "izoh": "Tenglamani yechamiz: n³ − 20n² + 100n = 0. Umumiy ko'paytuvchi n ni chiqaramiz: n(n² − 20n + 100) = 0. Qavsdagi ifoda to'la kvadrat: (n − 10)². Demak n = 0 yoki n = 10; shart bo'yicha noldan farqli qiymat kerak. Koeffitsientlarni javob deb yozib qo'yish tipik xato. Javob: 10 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ish-narx",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#e5fc76a8"
+    },
+    {
+      "q": "Fermer x gektar maydonga kartoshka ekdi, har gektardan (x + 2) tonna hosil oldi va har tonnasini (x − 1) million so'mdan sotdi. Jami tushum 72 million so'm bo'lsa, maydon necha gektar edi?",
+      "v": [
+        "3 gektar",
+        "6 gektar",
+        "4 gektar",
+        "5 gektar"
+      ],
+      "t": 2,
+      "izoh": "Tushum uchta ko'paytuvchining ko'paytmasi: x(x + 2)(x − 1) = 72, ya'ni x³ + x² − 2x − 72 = 0. 72 ning bo'luvchilaridan x = 4 ni sinaymiz: 64 + 16 − 8 − 72 = 0. Qolgan ko'paytuvchi x² + 5x + 18 ning diskriminanti manfiy. Demak maydon 4 gektar, hosildorlik 6 tonna, narx 3 million so'm. Hosildorlik yoki narxni javob deb olish tipik xato. Javob: 4 gektar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ish-narx",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#56cbf35f"
+    },
+    {
+      "q": "Kitob do'koni bir kunda n ta kitob sotganda uning foydasi F(n) = n³ − 12n² + 44n − 48 ming so'mga teng bo'ladi. Foyda nolga aylanadigan eng katta n ni toping.",
+      "v": [
+        "4 ta",
+        "2 ta",
+        "12 ta",
+        "6 ta"
+      ],
+      "t": 3,
+      "izoh": "F(n) = 0 tenglamani yechamiz: n³ − 12n² + 44n − 48 = 0. n = 2 ni sinaymiz: 8 − 48 + 88 − 48 = 0, demak (n − 2) ko'paytuvchi. Bo'lish natijasi n² − 10n + 24 = (n − 4)(n − 6), ya'ni n = 4 va n = 6. Uchta yechimdan eng kattasi 6 ta. Birinchi topilgan ildizda to'xtab qolish tipik xato. Javob: 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ish-narx",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#8c357181"
+    },
+    {
+      "q": "Ketma-ket kelgan uchta butun sonning ko'paytmasi 336 ga teng. Shu sonlarning eng kattasi qaysi son bo'ladi?",
+      "v": [
+        "7",
+        "8",
+        "6",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Sonlarni n, n + 1 va n + 2 deb belgilaymiz, shunda n(n + 1)(n + 2) = 336 tenglama hosil bo'ladi. 336 ning kub ildizi 7 ga yaqin, shuning uchun 6, 7 va 8 ni tekshiramiz: 6·7·8 = 336. Demak sonlar 6, 7 va 8, ularning eng kattasi 8. O'rtadagi sonni javob deb yozish tipik xato. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-son-masala",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#49a9db0c"
+    },
+    {
+      "q": "Musbat butun sonning kubidan shu sonning o'zi ayirilganda natija 24 ga teng bo'ldi. Qidirilayotgan sonni toping.",
+      "v": [
+        "3",
+        "6",
+        "12",
+        "24"
+      ],
+      "t": 0,
+      "izoh": "Shartni tenglama ko'rinishida yozamiz: x³ − x = 24, ya'ni x³ − x − 24 = 0. 24 ning bo'luvchilaridan x = 3 ni sinaymiz: 27 − 3 − 24 = 0. Ko'phadni (x − 3) ga bo'lsak x² + 3x + 8 qoladi, uning diskriminanti 9 − 32 manfiy, demak boshqa haqiqiy ildiz yo'q. Kubni uch barobar deb tushungan o'quvchi 3x − x = 24 dan 12 ni oladi, tekshirmasdan 24 ning bo'luvchisini tanlagani esa 6 ni yozadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-son-masala",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#7667e710"
+    },
+    {
+      "q": "Ikkita sonning yig'indisi 5 ga, kublarining yig'indisi esa 35 ga teng. Shu sonlarning ko'paytmasini toping.",
+      "v": [
+        "5",
+        "10",
+        "6",
+        "15"
+      ],
+      "t": 2,
+      "izoh": "Yig'indini s = 5, ko'paytmani p deb belgilaymiz. Kublar yig'indisi uchun ayniyat: a³ + b³ = s³ − 3ps. Qiymatlarni qo'yamiz: 125 − 15p = 35, bundan 15p = 90 va p = 6. Tekshiramiz: sonlar 2 va 3 bo'lib, 2 + 3 = 5, 8 + 27 = 35, ko'paytma 6. Yig'indining o'zini javob deb yozish 5 ni, oxirgi bo'lishni bajarmaslik esa 15 ni beradi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-son-masala",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#796edda0"
+    },
+    {
+      "q": "Uchta sonning yig'indisi 10 ga, ikkitadan olingan ko'paytmalari yig'indisi 31 ga, ko'paytmasi esa 30 ga teng. Shu sonlarning eng kattasini toping.",
+      "v": [
+        "6",
+        "3",
+        "10",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Berilgan uchta shart Viyet formulalari orqali tenglama tuzishga imkon beradi: x³ − 10x² + 31x − 30 = 0. x = 2 ni sinaymiz: 8 − 40 + 62 − 30 = 0, demak (x − 2) ko'paytuvchi. Bo'lish natijasi x² − 8x + 15 = (x − 3)(x − 5), ya'ni sonlar 2, 3 va 5. Ularning eng kattasi 5. Ko'paytmani ildizga bo'lib 6 olish tipik xato. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-son-masala",
+      "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar#a0932443"
+    }
+  ]
+}

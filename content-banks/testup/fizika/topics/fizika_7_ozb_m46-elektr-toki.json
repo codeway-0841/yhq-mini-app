@@ -1,0 +1,486 @@
+{
+  "nom": "46-mavzu. Elektr Toki",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektr toki nima deb ataladi?",
+      "v": [
+        "Zaryadli zarralarning tartibli harakati (oqimi)",
+        "Zaryadli zarralarning tartibsiz harakati",
+        "Jismlarning issiqlik harakati",
+        "O‘tkazgichning magnitlanishi"
+      ],
+      "t": 0,
+      "izoh": "Zaryadli zarralarning tartibli harakati elektr toki deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#19999d5a"
+    },
+    {
+      "q": "“Tok” so‘zi qaysi so‘zdan olingan va qanday ma’noni bildiradi?",
+      "v": [
+        "Ruscha поток — “oqim”",
+        "Lotincha — “kuch”",
+        "Yunoncha — “yorug‘lik”",
+        "Nemischa — “zaryad”"
+      ],
+      "t": 0,
+      "izoh": "Tok ruscha поток so‘zidan olingan bo‘lib, “oqim” ma’nosini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#bc1b66ab"
+    },
+    {
+      "q": "Elektrometr sharchasiga yerga ulangan o‘tkazgich tekkizilganda elektrometr ko‘rsatkichi nima uchun nolga tushadi?",
+      "v": [
+        "Sharchadagi zaryad o‘tkazgich bo‘ylab yerga o‘tib ketadi",
+        "Sharcha zaryadi ko‘payadi",
+        "Elektrometr buziladi",
+        "O‘tkazgich isiydi"
+      ],
+      "t": 0,
+      "izoh": "Zaryadning hammasi o‘tkazgich bo‘ylab harakatlanib yerga o‘tib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#204f89d5"
+    },
+    {
+      "q": "Neon lampochka ulangan simning bir uchi yerga ulab, ikkinchi uchi zaryadlangan sharchaga tekkizilsa nima kuzatiladi?",
+      "v": [
+        "Lampochka bir zum yonib-o‘chadi",
+        "Lampochka uzluksiz yonadi",
+        "Lampochka umuman yonmaydi",
+        "Lampochka portlaydi"
+      ],
+      "t": 0,
+      "izoh": "Sharcha zaryadi yerga o‘tganda neon lampochka bir zum yonib-o‘chadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#26b9ba05"
+    },
+    {
+      "q": "Zaryadlangan jism atrofida qanday maydon mavjud?",
+      "v": [
+        "Elektr maydoni",
+        "Gravitatsiya maydoni",
+        "Magnetizm maydoni yo‘q",
+        "Hech qanday maydon yo‘q"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlangan jism atrofida elektr maydoni mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#e3903bc1"
+    },
+    {
+      "q": "O‘tkazgichda elektr toki vujudga kelishi uchun nima mavjud bo‘lishi kerak?",
+      "v": [
+        "Elektr maydon",
+        "Magnit maydoni",
+        "Issiqlik",
+        "Yorug‘lik"
+      ],
+      "t": 0,
+      "izoh": "O‘tkazgichda elektr toki vujudga kelishi uchun elektr maydon mavjud bo‘lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#89397e27"
+    },
+    {
+      "q": "Elektr zanjir nima deb ataladi?",
+      "v": [
+        "Elektr qurilmalarining simlar yordamida ulanishidan hosil bo‘lgan tizim",
+        "Faqat tok manbaidan iborat tizim",
+        "Ikkita dielektrikning ulanishi",
+        "Bitta o‘tkazgich"
+      ],
+      "t": 0,
+      "izoh": "Elektr qurilmalarining simlar yordamida ulanishi elektr zanjir deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#d940dc21"
+    },
+    {
+      "q": "Elektr toki hosil bo‘lishi uchun zanjir qanday bo‘lishi shart?",
+      "v": [
+        "Berk bo‘lishi",
+        "Ochiq bo‘lishi",
+        "Qisqa bo‘lishi",
+        "Uzun bo‘lishi"
+      ],
+      "t": 0,
+      "izoh": "Agar zanjir berk bo‘lmasa (biror joyi uzilgan bo‘lsa), undan elektr toki o‘tmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#e3d33cbf"
+    },
+    {
+      "q": "Elektrofor mashinasining disklari aylantirilganda sharlarning zaryadlanishi qanday bo‘ladi?",
+      "v": [
+        "Biri musbat, ikkinchisi manfiy zaryadlanadi",
+        "Ikkalasi ham musbat zaryadlanadi",
+        "Ikkalasi ham manfiy zaryadlanadi",
+        "Zaryadlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Disklar aylantirilganda sharlarning biri musbat, ikkinchisi manfiy zaryadlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#30880f8f"
+    },
+    {
+      "q": "Elektrofor mashinasida disklar to‘xtovsiz aylantirilsa, neon lampochka qanday yonadi?",
+      "v": [
+        "O‘chmasdan yonadi",
+        "Bir zum yonib o‘chadi",
+        "Umuman yonmaydi",
+        "Xira yonadi"
+      ],
+      "t": 0,
+      "izoh": "Sharlarning zaryadlanishi uzluksiz davom etib elektr maydon saqlanadi, lampochka o‘chmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#953b9d55"
+    },
+    {
+      "q": "O‘tkazgichda o‘tayotgan elektr tokini bevosita kuzatib bo‘ladimi?",
+      "v": [
+        "Yo‘q, uni u tufayli yuz beradigan ta’sirlar orqali bilish mumkin",
+        "Ha, ko‘z bilan ko‘riladi",
+        "Ha, mikroskop bilan",
+        "Ha, quloq bilan eshitiladi"
+      ],
+      "t": 0,
+      "izoh": "Tokni bevosita kuzatib bo‘lmaydi, u tufayli yuz beradigan ta’sirlarga qarab aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#5706ff3a"
+    },
+    {
+      "q": "Elektr tokining issiqlik ta’siri qanday namoyon bo‘ladi?",
+      "v": [
+        "O‘tkazgichdan tok o‘tganda o‘tkazgich qiziydi",
+        "O‘tkazgich soviydi",
+        "O‘tkazgich rangini o‘zgartiradi",
+        "O‘tkazgich cho‘ziladi"
+      ],
+      "t": 0,
+      "izoh": "O‘tkazgichdan elektr tok o‘tganda o‘tkazgich qiziydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#60922643"
+    },
+    {
+      "q": "Osh tuzi (NaCl) eritmasidan tok o‘tganda bir-ikki minutdan so‘ng nima kuzatiladi?",
+      "v": [
+        "Eritmaning temperaturasi sezilarli ko‘tariladi",
+        "Eritma muzlaydi",
+        "Eritma bug‘lanib yo‘qoladi",
+        "Hech narsa o‘zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Tokning issiqlik ta’siri suyuqliklarda ham ko‘rinadi — eritma temperaturasi ko‘tariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#7886a9fa"
+    },
+    {
+      "q": "Tokli o‘tkazgichga kompas yaqinlashtirilsa nima sodir bo‘ladi?",
+      "v": [
+        "Strelka muvozanat holatidan biror burchakka og‘adi",
+        "Strelka erishadi",
+        "Strelka tez aylanadi",
+        "Hech narsa bo‘lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Tokli o‘tkazgichning magnit maydoni ta’sirida kompas strelkasi og‘adi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#4a50eeef"
+    },
+    {
+      "q": "O‘tkazgichdan tok o‘tishi to‘xtatilsa, kompas strelkasi qanday bo‘ladi?",
+      "v": [
+        "Dastlabki vaziyatiga qaytadi",
+        "Og‘ishda davom etadi",
+        "Sindiriladi",
+        "Aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Tok to‘xtasa kompas strelkasi dastlabki vaziyatiga qaytadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#282b1875"
+    },
+    {
+      "q": "Elektr tokining magnit ta’siri nima bilan xarakterlanadi?",
+      "v": [
+        "O‘tkazgich atrofida magnit maydoni hosil bo‘lishi",
+        "O‘tkazgich qizishi",
+        "Eritmada modda ajralishi",
+        "O‘tkazgichning cho‘zilishi"
+      ],
+      "t": 0,
+      "izoh": "O‘tkazgichdan tok o‘tganda uning atrofida magnit maydoni hosil bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#ea9c3fc9"
+    },
+    {
+      "q": "Eritmadan uzoq vaqt tok o‘tganda ko‘mir sterjenning sirti qanday modda bilan qoplanadi?",
+      "v": [
+        "Och kumushsimon rangli modda (Na metalli) bilan",
+        "Mis bilan",
+        "Temir bilan",
+        "Kumush bilan"
+      ],
+      "t": 0,
+      "izoh": "Eritmada kimyoviy o‘zgarish natijasida Na metalli ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#f1a0fcd0"
+    },
+    {
+      "q": "Elektr tokining kimyoviy ta’siri qayerda namoyon bo‘ladi?",
+      "v": [
+        "Suyuqliklarda",
+        "Faqat metallarda",
+        "Faqat gazlarda",
+        "Vakuumda"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy ta’sir suyuqliklarda (eritmalarda) namoyon bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#a3d02def"
+    },
+    {
+      "q": "Elektr tokining issiqlik ta’siri qaysi muhitlarda kuzatiladi?",
+      "v": [
+        "Metall o‘tkazgichlarda va suyuqliklarda",
+        "Faqat vakuumda",
+        "Faqat gazlarda",
+        "Faqat dielektriklarda"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik ta’siri metall o‘tkazgichlarda va suyuqliklarda kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#5ffcaf49"
+    },
+    {
+      "q": "Elektr tokining magnit ta’siri qaysi muhitlarda kuzatiladi?",
+      "v": [
+        "Metallarda, suyuqliklarda, gazlarda va hatto vakuumda",
+        "Faqat metallarda",
+        "Faqat suyuqliklarda",
+        "Faqat gazlarda"
+      ],
+      "t": 0,
+      "izoh": "Magnit ta’sir metallarda, suyuqliklarda, gazlarda va vakuumda ham kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#2316e167"
+    },
+    {
+      "q": "Elektr toki hosil bo‘lishi uchun quyidagilardan qaysi biri shart emas?",
+      "v": [
+        "O‘tkazgichning qizishi",
+        "Erkin harakatlanadigan zaryadlangan zarralar",
+        "Zarralarni harakatga keltiruvchi elektr maydon",
+        "Zarralar harakatlanadigan muhit"
+      ],
+      "t": 0,
+      "izoh": "Qizish tokning ta’siri bo‘lib, hosil bo‘lish sharti emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#a1bb2a17"
+    },
+    {
+      "q": "Elektrofor mashinasi tajribasida tokni hosil qiluvchi nima?",
+      "v": [
+        "Zaryadlangan zarralarni harakatlanishga majbur etuvchi elektr maydon",
+        "Lampochka",
+        "Kompas",
+        "Yerning tortishishi"
+      ],
+      "t": 0,
+      "izoh": "Elektrofor mashinasi elektr maydonni hosil qilib, zarralarni harakatga majbur etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#81b6f346"
+    },
+    {
+      "q": "Sharcha yerga ulanganda yerning sim ulangan joyi nima hisobiga musbat zaryadlanadi?",
+      "v": [
+        "Shu joydan manfiy zaryadlarning kamayishi (“qochishi”)",
+        "Musbat zaryadlar ko‘chishi",
+        "Yer issiqligi",
+        "Yerning magnitlanishi"
+      ],
+      "t": 0,
+      "izoh": "Manfiy zaryadlarning kamayishi hisobiga o‘sha joy musbat zaryadlanib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#7a232489"
+    },
+    {
+      "q": "O‘tkazgich uchi sharchaga tekkizilmasdan avval yerning o‘tkazgich ulangan joyi qanday bo‘ladi?",
+      "v": [
+        "Elektr jihatidan neytral",
+        "Musbat zaryadlangan",
+        "Manfiy zaryadlangan",
+        "Magnitlangan"
+      ],
+      "t": 0,
+      "izoh": "Tajribadan avval yerning sim ulangan joyi elektr jihatidan neytral bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#c996c13c"
+    },
+    {
+      "q": "Sharcha va yer orasida hosil bo‘lgan elektr maydon ta’sirida qanday tok hosil bo‘ladi?",
+      "v": [
+        "Qisqa muddatli tok",
+        "Uzoq muddatli tok",
+        "O‘zgarmas tok",
+        "Tok hosil bo‘lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Sharcha zaryadi tugagach tok to‘xtaydi — qisqa muddatli tok hosil bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#c1ee639f"
+    },
+    {
+      "q": "Elektr isitkichning metall spiralidan tok o‘tganda tokning qaysi ta’siri namoyon bo‘ladi?",
+      "v": [
+        "Issiqlik ta’siri",
+        "Magnit ta’siri",
+        "Kimyoviy ta’siri",
+        "Mexanik ta’siri"
+      ],
+      "t": 0,
+      "izoh": "Spiralning qizishi tokning issiqlik ta’sirini ko‘rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#6d6463fb"
+    },
+    {
+      "q": "Elektr tokining mavjudligini qaysi ta’sirlariga qarab aniqlash mumkin?",
+      "v": [
+        "Issiqlik, magnit va kimyoviy ta’sirlar",
+        "Faqat issiqlik",
+        "Faqat magnit",
+        "Faqat mexanik"
+      ],
+      "t": 0,
+      "izoh": "Tokning issiqlik, magnit va kimyoviy ta’sirlari mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#0210550c"
+    },
+    {
+      "q": "O‘tkazgichda zaryadli zarralarning tartibli harakat qilishining sababi nimada?",
+      "v": [
+        "Elektr maydonning ta’sirida",
+        "O‘tkazgichning og‘irligida",
+        "O‘tkazgichning rangida",
+        "Atmosfera bosimida"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydon ta’sirida zarralar tartibli harakatga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#4c049a29"
+    },
+    {
+      "q": "Elektrofor mashinasining disklari aylantirilganda nima uchun sharlar orasida elektr maydon vujudga keladi?",
+      "v": [
+        "Sharlar qarama-qarshi ishorali zaryadlanganligi uchun",
+        "Sharlar bir xil ishorali zaryadlanganligi uchun",
+        "Sharlar issiqligi uchun",
+        "Sharlar magnitlangani uchun"
+      ],
+      "t": 0,
+      "izoh": "Qarama-qarshi ishorali zaryadlangan sharlar orasida elektr maydon vujudga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#3f74da3a"
+    },
+    {
+      "q": "Elektrometr sharchasini zaryadlashda darslikda qanday asbob ishlatilgan?",
+      "v": [
+        "Mo‘ynaga ishqalangan ebonit tayoqcha",
+        "Shisha tayoqcha",
+        "Mis sim",
+        "Magnit"
+      ],
+      "t": 0,
+      "izoh": "Elektrometr sharchasi mo‘ynaga ishqalangan ebonit tayoqcha yordamida zaryadlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#182b848c"
+    },
+    {
+      "q": "Elektr toki atrofida qanday maydonlar hosil bo‘ladi?",
+      "v": [
+        "Elektr va magnit maydonlari",
+        "Faqat elektr maydon",
+        "Faqat gravitatsiya",
+        "Hech qanday maydon"
+      ],
+      "t": 0,
+      "izoh": "Tok o‘tkazgich atrofida magnit maydoni hosil qiladi, zarralar harakatida elektr maydon ham mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#3d97fbd6"
+    },
+    {
+      "q": "Eritmadan tok o‘tganda sodir bo‘lgan o‘zgarish qanday o‘zgarishdir?",
+      "v": [
+        "Kimyoviy o‘zgarish",
+        "Fizik o‘zgarish",
+        "Mexanik o‘zgarish",
+        "Optik o‘zgarish"
+      ],
+      "t": 0,
+      "izoh": "Eritmadan tok o‘tishi natijasida kimyoviy o‘zgarish sodir bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m46-elektr-toki#5743ad51"
+    }
+  ]
+}

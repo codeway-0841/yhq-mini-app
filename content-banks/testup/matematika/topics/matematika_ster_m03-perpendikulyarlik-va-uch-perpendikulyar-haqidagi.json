@@ -1,0 +1,1609 @@
+{
+  "nom": "Perpendikulyarlik va uch perpendikulyar haqidagi teorema",
+  "bolim": "Stereometriya",
+  "blok": "ster",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Fazodagi l to'g'ri chiziq α tekislikda yotuvchi va o'zaro kesishuvchi a hamda b to'g'ri chiziqlarning ikkalasiga ham perpendikulyar. Bundan qanday xulosa kelib chiqadi?",
+      "v": [
+        "l ⊥ α",
+        "l ∥ α",
+        "l to'g'ri chiziq α tekislikda yotadi",
+        "l faqat a to'g'ri chiziqqa perpendikulyar qoladi"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri chiziq bilan tekislikning perpendikulyarlik alomati aynan shuni talab qiladi: to'g'ri chiziq tekislikdagi ikkita kesishuvchi to'g'ri chiziqqa perpendikulyar bo'lsa, u butun tekislikka perpendikulyar bo'ladi. Demak l ⊥ α.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='60.8' y1='191' x2='230.8' y2='221.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='179.5' y1='174.8' x2='112.9' y2='237' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='145.8' y1='86.3' x2='145.8' y2='206.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='145.8,193.3 158.5,195.6 158.5,208.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='145.8,193.3 135.4,203 135.4,216' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='145.8' y='78.3' font-size='13' fill='%23334155' text-anchor='middle'%3El%3C/text%3E%3Ctext x='244.8' y='227.6' font-size='13' fill='%23334155' text-anchor='start'%3Ea%3C/text%3E%3Ctext x='108.9' y='253.0' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='137.8' y='220.3' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "alomat-nazariy",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#d7257ca2"
+    },
+    {
+      "q": "Nodira l to'g'ri chiziq α tekislikdagi ikkita to'g'ri chiziqqa perpendikulyar ekanini tekshirdi, biroq bu ikki to'g'ri chiziq o'zaro parallel bo'lib chiqdi. Shu ma'lumot l ⊥ α xulosasi uchun yetarlimi?",
+      "v": [
+        "Yetarli: tekislikdagi ikkita to'g'ri chiziq har doim kifoya",
+        "Yetarli: parallel to'g'ri chiziqlar ham tekislikni belgilaydi",
+        "Yetarli emas: kamida uchta to'g'ri chiziq tekshirilishi kerak",
+        "Yetarli emas: alomat kesishuvchi to'g'ri chiziqlarni talab qiladi"
+      ],
+      "t": 3,
+      "izoh": "Parallel to'g'ri chiziqlarga perpendikulyarlik faqat bitta yo'nalishni qamrab oladi. Masalan, tekislikka og'ma joylashgan to'g'ri chiziq ham parallel chiziqlar oilasiga perpendikulyar bo'lishi mumkin. Alomat kuchga kirishi uchun ikki to'g'ri chiziq kesishishi shart.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "alomat-nazariy",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#84941faf"
+    },
+    {
+      "q": "l to'g'ri chiziq α tekislikka perpendikulyar. Shu tekislikda yotgan, lekin l bilan kesishmaydigan ixtiyoriy m to'g'ri chiziq bilan l qanday munosabatda bo'ladi?",
+      "v": [
+        "Kesishmagani uchun burchak aniqlanmaydi",
+        "Ular perpendikulyar ayqash to'g'ri chiziqlar",
+        "Ular parallel bo'ladi",
+        "Ular orasidagi burchak 45° bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Tekislikka perpendikulyar to'g'ri chiziq shu tekislikdagi barcha to'g'ri chiziqlarga perpendikulyar. Agar ular kesishmasa, ayqash to'g'ri chiziqlar bo'ladi va ayqash to'g'ri chiziqlar orasidagi burchak parallel ko'chirish orqali aniqlanadi — u yana 90° chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='60.8' y1='191' x2='230.8' y2='221.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='179.5' y1='174.8' x2='112.9' y2='237' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='35.1' y1='214.9' x2='205.1' y2='245.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='145.8' y1='86.3' x2='145.8' y2='206.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='145.8,193.3 158.5,195.6 158.5,208.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='145.8,193.3 135.4,203 135.4,216' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='145.8' y='78.3' font-size='13' fill='%23334155' text-anchor='middle'%3El%3C/text%3E%3Ctext x='244.8' y='227.6' font-size='13' fill='%23334155' text-anchor='start'%3Ea%3C/text%3E%3Ctext x='108.9' y='253.0' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='219.1' y='251.5' font-size='13' fill='%23334155' text-anchor='start'%3Em%3C/text%3E%3Ctext x='137.8' y='220.3' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "alomat-nazariy",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#36949c06"
+    },
+    {
+      "q": "ABC uchburchak tekisligidan tashqarida yotgan M nuqta uchun MA kesma AB va AC tomonlarning ikkalasiga ham perpendikulyar. MA kesma bilan BC tomon orasidagi burchak nechaga teng?",
+      "v": [
+        "45°",
+        "Uchburchak turi berilmagani uchun aniqlanmaydi",
+        "90°",
+        "60°"
+      ],
+      "t": 2,
+      "izoh": "AB va AC to'g'ri chiziqlari A nuqtada kesishadi va ABC tekisligida yotadi. Alomatga ko'ra MA ⊥ (ABC). Tekislikka perpendikulyar to'g'ri chiziq shu tekislikdagi har qanday to'g'ri chiziqqa, jumladan BC ga ham perpendikulyar. Demak burchak 90°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolygon points='80,212 196.8,225.5 170.5,183.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='97' x2='80' y2='212' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='80' y1='97' x2='196.8' y2='225.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='97' x2='170.5' y2='183.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='80,199 92.7,201.3 92.7,214.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='72.0' y='224.0' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='206.8' y='237.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='170.5' y='175.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='80.0' y='89.0' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "alomat-nazariy",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#0175271b"
+    },
+    {
+      "q": "Sardor ustunni yerga o'rnatdi. Ustun tagidan turli yo'nalishdagi ikki belgigacha 60 sm dan o'lchadi, ustunning 80 sm balandligidagi nuqtadan har bir belgigacha bo'lgan masofa esa 100 sm chiqdi. Ustun yer tekisligiga perpendikulyarmi?",
+      "v": [
+        "Yo'q: 60, 80 va 100 sonlari Pifagor uchligini bermaydi",
+        "Ha: ikkita kesishuvchi yo'nalish bo'yicha perpendikulyarlik tasdiqlandi",
+        "Yo'q: bunday xulosa uchun kamida uchta belgi kerak",
+        "Ha, lekin buning uchun bitta belgi ham yetarli edi"
+      ],
+      "t": 1,
+      "izoh": "Har bir o'lchov uchun 60² + 80² = 3600 + 6400 = 10000 = 100², ya'ni Pifagor teoremasiga teskari teorema bo'yicha ustun har bir belgi yo'nalishiga perpendikulyar. Ikki yo'nalish ustun tagida kesishadi, shuning uchun alomatga ko'ra ustun yer tekisligiga perpendikulyar.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eyer%3C/text%3E%3Cline x1='99' y1='86' x2='91.2' y2='206' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91.2' y1='206' x2='179.7' y2='221.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91.2' y1='206' x2='164.6' y2='178.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='99' y1='86' x2='179.7' y2='221.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='99' y1='86' x2='164.6' y2='178.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='99.0' y='78.0' font-size='13' fill='%23334155' text-anchor='middle'%3EU%3C/text%3E%3Ctext x='83.2' y='220.0' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='189.7' y='233.9' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='172.6' y='172.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='87.0' y='150.0' font-size='13' fill='%23334155' text-anchor='end'%3E80 sm%3C/text%3E%3Ctext x='135.0' y='231.0' font-size='13' fill='%23334155' text-anchor='middle'%3E60 sm%3C/text%3E%3Ctext x='120.0' y='184.0' font-size='13' fill='%23334155' text-anchor='middle'%3E60 sm%3C/text%3E%3Ctext x='168.0' y='196.0' font-size='13' fill='%23334155' text-anchor='start'%3E100 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "alomat-qollash",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#bbadd2da"
+    },
+    {
+      "q": "Sayyohlar chodir ustunini tikishdi. Ustun tagidan 90 sm narida qoqilgan qoziqqa ustunning 120 sm balandligidan tortilgan arqon 150 sm chiqdi, ikkinchi qoziq uchun ham xuddi shunday natija olindi. Ustun yerga perpendikulyar deyish uchun yana nima talab qilinadi?",
+      "v": [
+        "Ikki qoziq ustun tagi bilan bir to'g'ri chiziqda yotmasligi",
+        "Ikki qoziq orasidagi masofa aniq 180 sm bo'lishi",
+        "Arqonlar uzunliklari bir-biridan farq qilishi",
+        "Uchinchi qoziq qoqilib, uchinchi o'lchov olinishi"
+      ],
+      "t": 0,
+      "izoh": "90² + 120² = 8100 + 14400 = 22500 = 150², demak ustun har bir arqon yo'nalishiga perpendikulyar. Ammo agar ikki qoziq ustun tagi bilan bitta to'g'ri chiziqda yotsa, yo'nalish aslida bitta bo'lib qoladi va alomat ishlamaydi. Yo'nalishlar kesishuvchi bo'lishi shart.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "alomat-qollash",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#660c4886"
+    },
+    {
+      "q": "SA kesma ABCD kvadrat tekisligiga perpendikulyarligini tekshirish uchun SA = 12 sm, AB = 5 sm va SB = 13 sm o'lchandi. Bu ma'lumotlar SA ⊥ (ABCD) degan xulosa uchun yetarlimi?",
+      "v": [
+        "Yetarli: kvadratning barcha tomonlari teng bo'lgani uchun",
+        "Yetarli emas: kvadrat diagonali o'lchanmagan",
+        "Yetarli emas: faqat bitta to'g'ri chiziqqa perpendikulyarlik tekshirilgan",
+        "Yetarli: 5, 12 va 13 sonlari Pifagor uchligini beradi"
+      ],
+      "t": 2,
+      "izoh": "5² + 12² = 25 + 144 = 169 = 13² bo'lgani uchun faqat SA ⊥ AB ekani chiqadi. Tekislikka perpendikulyarlik uchun ikkinchi kesishuvchi yo'nalish, masalan AD tomon ham tekshirilishi kerak. Bir yo'nalish yetarli emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolygon points='121.3,182.4 169.2,191 147.7,211.1 99.7,202.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='121.3' y2='182.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='169.2' y2='191' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='147.7' y2='211.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='99.7' y2='202.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='121.3,172.4 131.1,174.2 131.1,184.2' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.3' y='176.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='179.2' y='187.0' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='157.7' y='225.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='91.7' y='216.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='121.3' y='59.4' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='145.3' y='180.7' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='113.3' y='128.9' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='152.0' y='128.0' font-size='13' fill='%23334155' text-anchor='start'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "alomat-qollash",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#0150646d"
+    },
+    {
+      "q": "Muhandis ustun tagidan turli yo'nalishda to'rtta belgi qo'ydi, ular ustun tagidan bir xil uzoqlikda. Ustun uchidan har bir belgigacha bo'lgan masofalar ham o'zaro teng chiqdi. Bu ustunning yerga perpendikulyarligini isbotlaydimi?",
+      "v": [
+        "Yo'q: teng masofalar perpendikulyarlik haqida hech narsa bermaydi",
+        "Ha, lekin xuddi shu xulosa uchun ikkita belgi ham yetarli",
+        "Yo'q: belgilar bitta aylanada yotmagani uchun tekshiruv noto'g'ri",
+        "Ha: shunday to'rtta belgi faqat perpendikulyar asosi ustun tagiga tushgandagina bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Ustun uchidan yergacha tushirilgan perpendikulyar asosi H bo'lsin. Uchdan belgilargacha masofalar teng bo'lsa, H dan belgilargacha proyeksiyalar ham teng, ya'ni belgilar H markazli aylanada. Shu bilan birga ular ustun tagi O markazli aylanada ham yotadi. Ikki har xil aylana ko'pi bilan ikkita umumiy nuqtaga ega, to'rtta nuqta bo'lgani uchun aylanalar ustma-ust tushadi va H = O. Demak ustun perpendikulyar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "alomat-qollash",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#5804ccb3"
+    },
+    {
+      "q": "P nuqtadan α tekislikka tushirilgan perpendikulyar 8 sm ga teng, shu nuqtadan chiqqan PA og'maning tekislikdagi proyeksiyasi esa 6 sm. PA og'ma uzunligini toping.",
+      "v": [
+        "10 sm",
+        "14 sm",
+        "√28 sm",
+        "48 sm"
+      ],
+      "t": 0,
+      "izoh": "PO ⊥ α bo'lgani uchun POA uchburchak O uchida to'g'ri burchakli. Pifagor teoremasiga ko'ra PA² = PO² + OA² = 8² + 6² = 64 + 36 = 100, demak PA = 10 sm. 14 sm — uzunliklarni shunchaki qo'shish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='74.5' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='74.5' x2='191.5' y2='222.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='191.5' y2='222.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='201.5' y='236.1' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='86.0' y='143.5' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='142.8' y='231.3' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='154.8' y='146.3' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ogma-topish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#876ac36d"
+    },
+    {
+      "q": "Nuqtadan tekislikkacha bo'lgan masofa 15 sm ga teng. Shu nuqtadan tekislikka chiqarilgan og'maning proyeksiyasi 20 sm bo'lsa, og'maning o'zi necha santimetr?",
+      "v": [
+        "300 sm",
+        "25 sm",
+        "35 sm",
+        "√175 sm"
+      ],
+      "t": 1,
+      "izoh": "Nuqtadan tekislikkacha masofa — bu perpendikulyar uzunligi, ya'ni 15 sm. Perpendikulyar, proyeksiya va og'ma to'g'ri burchakli uchburchak hosil qiladi: og'ma² = 15² + 20² = 225 + 400 = 625. Demak og'ma 25 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='107' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='107' x2='224' y2='227.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='224' y2='227.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='99.0' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='234.0' y='241.9' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='86.0' y='159.8' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3Ctext x='159.0' y='234.2' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='171.0' y='165.5' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ogma-topish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#1d03f2c2"
+    },
+    {
+      "q": "M nuqtadan α tekislikka MO = 12 sm perpendikulyar tushirilgan. Tekislikda O nuqtadan 5 sm va 16 sm uzoqlikda A va B nuqtalar belgilangan. MA va MB og'malar uzunliklarining yig'indisi nechaga teng?",
+      "v": [
+        "45 sm",
+        "29 sm",
+        "21 sm",
+        "33 sm"
+      ],
+      "t": 3,
+      "izoh": "MO perpendikulyar bo'lgani uchun MA² = 12² + 5² = 144 + 25 = 169, ya'ni MA = 13 sm. Xuddi shunday MB² = 12² + 16² = 144 + 256 = 400, ya'ni MB = 20 sm. Yig'indi 13 + 20 = 33 sm. 45 sm — kesmalarni to'g'ridan-to'g'ri qo'shish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='91.2' y1='117.5' x2='91.2' y2='206' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='206' x2='209.2' y2='227.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='206' x2='121.8' y2='194.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='117.5' x2='209.2' y2='227.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91.2' y1='117.5' x2='121.8' y2='194.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='91.2,193 103.9,195.3 103.9,208.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='91.2' y='109.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='83.2' y='220.0' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='219.2' y='239.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='129.8' y='188.7' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='83.2' y='165.8' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='150.2' y='233.6' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='100.5' y='194.3' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ogma-topish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#b733be98"
+    },
+    {
+      "q": "Bahodir tekis maydondagi ustunning uchidan yerdagi ikki qoziqqacha tortilgan arqonlarni o'lchamoqchi. Ustun balandligi 8 m, qoziqlar ustun tagidan 6 m va 15 m narida. Uzun arqon qisqasidan necha metrga ortiq bo'ladi?",
+      "v": [
+        "27 m",
+        "17 m",
+        "7 m",
+        "9 m"
+      ],
+      "t": 2,
+      "izoh": "Birinchi arqon √(8² + 6²) = √(64 + 36) = √100 = 10 m. Ikkinchisi √(8² + 15²) = √(64 + 225) = √289 = 17 m. Ayirma 17 − 10 = 7 m. 9 m — qoziqlar orasidagi 15 − 6 farqni javob deb olish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eyer%3C/text%3E%3Cline x1='91.2' y1='143.1' x2='91.2' y2='206' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='206' x2='209.2' y2='227.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='206' x2='130.4' y2='191.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='143.1' x2='209.2' y2='227.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91.2' y1='143.1' x2='130.4' y2='191.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='91.2,193 103.9,195.3 103.9,208.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='91.2' y='135.1' font-size='13' fill='%23334155' text-anchor='middle'%3EU%3C/text%3E%3Ctext x='83.2' y='220.0' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='219.2' y='239.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='138.4' y='185.5' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='83.2' y='178.5' font-size='13' fill='%23334155' text-anchor='end'%3E8 m%3C/text%3E%3Ctext x='150.2' y='233.6' font-size='13' fill='%23334155' text-anchor='middle'%3E15 m%3C/text%3E%3Ctext x='104.8' y='192.8' font-size='13' fill='%23334155' text-anchor='middle'%3E6 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ogma-topish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#f624d67b"
+    },
+    {
+      "q": "A nuqtadan α tekislikka uzunligi 17 sm bo'lgan og'ma chiqarilgan. Shu nuqtadan tekislikkacha bo'lgan masofa 8 sm ekani ma'lum bo'lsa, og'maning tekislikdagi proyeksiyasi necha santimetrga teng?",
+      "v": [
+        "9 sm",
+        "√353 sm",
+        "15 sm",
+        "25 sm"
+      ],
+      "t": 2,
+      "izoh": "Proyeksiya, perpendikulyar va og'ma to'g'ri burchakli uchburchakning tomonlari, og'ma esa gipotenuza. Shuning uchun proyeksiya² = 17² − 8² = 289 − 64 = 225, ya'ni proyeksiya 15 sm. 9 sm — uzunliklarni ayirish xatosi, √353 esa qo'shish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='135.2' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='135.2' x2='224' y2='227.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='224' y2='227.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='127.2' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='234.0' y='241.9' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='86.0' y='173.8' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='159.0' y='234.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='171.0' y='179.5' font-size='13' fill='%23334155' text-anchor='start'%3E17 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proyeksiya-topish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#cb5ac34c"
+    },
+    {
+      "q": "Dala chetiga tik o'rnatilgan simyog'ochning balandligi 9 m. Uning uchidan yerdagi bir nuqtagacha tortilgan sim 41 m ni tashkil qiladi. Shu nuqta simyog'och tagidan necha metr narida joylashgan?",
+      "v": [
+        "40 m",
+        "32 m",
+        "50 m",
+        "√1762 m"
+      ],
+      "t": 0,
+      "izoh": "Simyog'och yer tekisligiga perpendikulyar, sim esa og'ma. Izlanayotgan masofa — og'maning proyeksiyasi: proyeksiya² = 41² − 9² = 1681 − 81 = 1600, demak proyeksiya 40 m. 32 m — uzunliklarni ayirish, 50 m esa qo'shish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='175.3' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='175.3' x2='224' y2='227.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='224' y2='227.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='167.3' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='234.0' y='241.9' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='86.0' y='193.9' font-size='13' fill='%23334155' text-anchor='end'%3E9 m%3C/text%3E%3Ctext x='159.0' y='234.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='171.0' y='199.6' font-size='13' fill='%23334155' text-anchor='start'%3E41 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proyeksiya-topish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#0b3f21fc"
+    },
+    {
+      "q": "M nuqtadan tekislikka MH = 9 sm perpendikulyar tushirilgan va shu nuqtadan ikkita og'ma chiqarilgan: MA = 15 sm, MB = 41 sm. A hamda B nuqtalar H dan qarama-qarshi tomonlarda bir to'g'ri chiziqda yotsa, AB masofani toping.",
+      "v": [
+        "20 sm",
+        "52 sm",
+        "28 sm",
+        "56 sm"
+      ],
+      "t": 1,
+      "izoh": "Har bir og'ma uchun proyeksiyani topamiz: HA² = 15² − 9² = 225 − 81 = 144, ya'ni HA = 12 sm. HB² = 41² − 9² = 1681 − 81 = 1600, ya'ni HB = 40 sm. Nuqtalar H ning ikki tomonida bo'lgani uchun AB = 12 + 40 = 52 sm. 28 sm — bir tomonda deb hisoblab ayirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='103.7' y1='169.2' x2='103.7' y2='201.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='103.7' y1='201.2' x2='246' y2='226.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='103.7' y1='201.2' x2='61' y2='193.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='103.7' y1='169.2' x2='246' y2='226.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='103.7' y1='169.2' x2='61' y2='193.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='103.7,188.2 116.4,190.5 116.4,203.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='103.7' y='161.2' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='95.7' y='215.2' font-size='13' fill='%23334155' text-anchor='end'%3EH%3C/text%3E%3Ctext x='256.0' y='238.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='69.0' y='187.5' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='95.7' y='189.2' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='184.8' y='196.0' font-size='13' fill='%23334155' text-anchor='start'%3E41 sm%3C/text%3E%3Ctext x='90.3' y='177.4' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proyeksiya-topish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#2a3a1d7e"
+    },
+    {
+      "q": "P nuqtadan α tekislikkacha bo'lgan masofa 24 sm. Shu nuqtadan chiqarilgan og'ma o'zining proyeksiyasidan 18 sm ga uzun bo'lsa, proyeksiya uzunligi nechaga teng?",
+      "v": [
+        "25 sm",
+        "9 sm",
+        "12 sm",
+        "7 sm"
+      ],
+      "t": 3,
+      "izoh": "Proyeksiyani x deb belgilaymiz, u holda og'ma x + 18 bo'ladi. Pifagor teoremasiga ko'ra (x + 18)² = 24² + x², ya'ni x² + 36x + 324 = 576 + x². Bundan 36x = 252 va x = 7 sm. 25 sm — og'maning o'zi, ya'ni noto'g'ri kattalik.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='74.5' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='74.5' x2='131.9' y2='211.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='131.9' y2='211.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='141.9' y='225.3' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='86.0' y='143.5' font-size='13' fill='%23334155' text-anchor='end'%3E24 sm%3C/text%3E%3Ctext x='113.0' y='225.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "proyeksiya-topish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#aa5a8574"
+    },
+    {
+      "q": "Suv omborining tekis tubiga tik tushirilgan tayoq suv ostida 2,4 m ga cho'zilgan. Tayoq uchidan tubdagi belgigacha bo'lgan masofa 2,6 m bo'lsa, belgi tayoq tagidan necha metr narida?",
+      "v": [
+        "0,2 m",
+        "5 m",
+        "3,54 m",
+        "1 m"
+      ],
+      "t": 3,
+      "izoh": "Tayoq tubga perpendikulyar, tayoq uchidan belgigacha bo'lgan kesma esa og'ma. Proyeksiya² = 2,6² − 2,4² = 6,76 − 5,76 = 1, demak masofa 1 m. 0,2 m — sonlarni to'g'ridan-to'g'ri ayirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Etub%3C/text%3E%3Cline x1='94' y1='74.5' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='74.5' x2='148.2' y2='214.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='148.2' y2='214.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3ET%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='158.2' y='228.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='86.0' y='143.5' font-size='13' fill='%23334155' text-anchor='end'%3E2,4 m%3C/text%3E%3Ctext x='121.1' y='227.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='133.1' y='142.4' font-size='13' fill='%23334155' text-anchor='start'%3E2,6 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proyeksiya-topish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#3c3f5943"
+    },
+    {
+      "q": "Og'ma uzunligi 26 sm, uning tekislikdagi proyeksiyasi esa 24 sm ga teng. Og'ma chiqqan nuqtadan shu tekislikkacha bo'lgan masofani toping.",
+      "v": [
+        "10 sm",
+        "2 sm",
+        "50 sm",
+        "√1252 sm"
+      ],
+      "t": 0,
+      "izoh": "Nuqtadan tekislikkacha masofa — perpendikulyar uzunligi. Og'ma gipotenuza bo'lgani uchun perpendikulyar² = 26² − 24² = 676 − 576 = 100, ya'ni perpendikulyar 10 sm. 2 sm — sonlarni ayirish, 50 sm — qo'shish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='150.3' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='150.3' x2='224' y2='227.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='224' y2='227.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='142.3' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='234.0' y='241.9' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='86.0' y='181.4' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='159.0' y='234.2' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='171.0' y='187.1' font-size='13' fill='%23334155' text-anchor='start'%3E26 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perp-topish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#eb8c1611"
+    },
+    {
+      "q": "Zilola devor tokchasidagi guldon pol tekisligidan qanday balandlikda turganini bilmoqchi. Guldondan poldagi bir nuqtagacha 85 sm, o'sha nuqta esa guldon ostidagi pol nuqtasidan 51 sm narida. Guldon poldan necha santimetr balandda?",
+      "v": [
+        "99 sm",
+        "68 sm",
+        "34 sm",
+        "136 sm"
+      ],
+      "t": 1,
+      "izoh": "Guldondan poldagi nuqtagacha bo'lgan kesma og'ma, 51 sm esa uning proyeksiyasi. Balandlik² = 85² − 51² = 7225 − 2601 = 4624, demak balandlik 68 sm. 34 sm — sonlarni ayirish, 136 sm — qo'shish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Epol%3C/text%3E%3Cline x1='94' y1='74.5' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='74.5' x2='191.5' y2='222.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='191.5' y2='222.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EG%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='201.5' y='236.1' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='86.0' y='143.5' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='142.8' y='231.3' font-size='13' fill='%23334155' text-anchor='middle'%3E51 sm%3C/text%3E%3Ctext x='154.8' y='146.3' font-size='13' fill='%23334155' text-anchor='start'%3E85 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perp-topish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#e2aa8bfe"
+    },
+    {
+      "q": "M nuqtadan chiqarilgan og'ma α tekislikni A nuqtada kesib o'tadi va MA = 25 sm. Og'maning proyeksiyasi perpendikulyardan 5 sm ga uzun bo'lsa, perpendikulyar uzunligi nechaga teng?",
+      "v": [
+        "10 sm",
+        "5 sm",
+        "15 sm",
+        "20 sm"
+      ],
+      "t": 2,
+      "izoh": "Perpendikulyarni h deb olsak, proyeksiya h + 5 bo'ladi. Shartga ko'ra h² + (h + 5)² = 25², ya'ni 2h² + 10h + 25 = 625. Bundan h² + 5h − 300 = 0 va h = 15 sm. Tekshiramiz: 15² + 20² = 225 + 400 = 625. 20 sm — proyeksiya qiymati.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='107' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='107' x2='224' y2='227.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='224' y2='227.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='99.0' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='234.0' y='241.9' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='86.0' y='159.8' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='171.0' y='165.5' font-size='13' fill='%23334155' text-anchor='start'%3E25 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perp-topish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#3d1b4dd2"
+    },
+    {
+      "q": "Qurilish maydonchasida kran strelasining uchidan yerdagi yukgacha bo'lgan masofa 65 m. Yuk kran minorasi tagidan 25 m narida turgan bo'lsa, strela uchi yer sathidan qanday balandlikda?",
+      "v": [
+        "70 m",
+        "60 m",
+        "40 m",
+        "90 m"
+      ],
+      "t": 1,
+      "izoh": "Minora yer tekisligiga perpendikulyar, strela uchidan yukgacha bo'lgan masofa og'ma, 25 m esa uning proyeksiyasi. Balandlik² = 65² − 25² = 4225 − 625 = 3600, demak balandlik 60 m. 40 m — sonlarni ayirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='74.5' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='74.5' x2='148.2' y2='214.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='148.2' y2='214.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='158.2' y='228.3' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='86.0' y='143.5' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='121.1' y='227.4' font-size='13' fill='%23334155' text-anchor='middle'%3E25 m%3C/text%3E%3Ctext x='133.1' y='142.4' font-size='13' fill='%23334155' text-anchor='start'%3E65 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perp-topish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#313c799d"
+    },
+    {
+      "q": "Bitta nuqtadan α tekislikka ikkita og'ma chiqarilgan: ularning uzunliklari 13 sm va 20 sm, proyeksiyalari esa mos ravishda 5 sm va 16 sm. Berilgan ma'lumotlar o'zaro ziddiyatsizmi va nuqtadan tekislikkacha masofa nechaga teng?",
+      "v": [
+        "Ma'lumotlar o'zaro ziddiyatli",
+        "Ziddiyat yo'q, masofa 8 sm",
+        "Ziddiyat yo'q, masofa 12 sm",
+        "Ziddiyat yo'q, masofa 14 sm"
+      ],
+      "t": 2,
+      "izoh": "Perpendikulyar ikkala og'ma uchun ham bitta va o'sha kesma. Birinchisidan h² = 13² − 5² = 169 − 25 = 144. Ikkinchisidan h² = 20² − 16² = 400 − 256 = 144. Ikkala hisob ham bir xil natija berdi, demak ma'lumotlar mos va h = 12 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perp-topish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#6052fdc4"
+    },
+    {
+      "q": "α tekislikka chiqarilgan og'maning uzunligi 14 sm, uning shu tekislikdagi proyeksiyasi esa 7 sm. Og'ma bilan tekislik orasidagi burchakni toping.",
+      "v": [
+        "60°",
+        "30°",
+        "45°",
+        "90°"
+      ],
+      "t": 0,
+      "izoh": "Og'ma bilan tekislik orasidagi burchak — og'ma va uning proyeksiyasi orasidagi burchak. To'g'ri burchakli uchburchakda bu burchakning kosinusi proyeksiyaning og'maga nisbatiga teng: cos φ = 7/14 = 1/2, demak φ = 60°. 30° — sinus bilan kosinusni chalkashtirish natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='74.5' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='74.5' x2='169.1' y2='218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='169.1' y2='218' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='179.1' y='232.0' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='131.5' y='229.3' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='143.5' y='144.3' font-size='13' fill='%23334155' text-anchor='start'%3E14 sm%3C/text%3E%3Cpolyline points='139.1,212.6 139.1,210.7 139.3,208.7 139.7,206.6 140.2,204.5 141,202.4 141.9,200.3 143.1,198.3 144.4,196.5 145.9,194.8 147.4,193.3 149.1,192 150.8,190.9 152.4,190 154.1,189.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='135.1' y='212.0' font-size='13' fill='%23334155' text-anchor='end'%3Eφ%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ogma-burchak",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#37682d6a"
+    },
+    {
+      "q": "P nuqta α tekislikdan 6 sm balandlikda joylashgan. Shu nuqtadan chiqarilgan og'ma tekislik bilan 30° li burchak hosil qilsa, og'maning uzunligi nechaga teng?",
+      "v": [
+        "3 sm",
+        "6√3 sm",
+        "4√3 sm",
+        "12 sm"
+      ],
+      "t": 3,
+      "izoh": "Perpendikulyar og'maga qarama-qarshi yotgan katet, og'ma esa gipotenuza. Shuning uchun sin30° = 6/og'ma, ya'ni 1/2 = 6/og'ma va og'ma = 12 sm. 6√3 sm — bu og'maning proyeksiyasi, ya'ni boshqa kattalik.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='129.4' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='129.4' x2='224' y2='227.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='224' y2='227.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='121.4' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='234.0' y='241.9' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='86.0' y='171.0' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Ctext x='171.0' y='176.7' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cpolyline points='194,222.5 194,221.4 194.1,220.3 194.2,219.2 194.3,218.1 194.5,217.1 194.7,216 195,214.9 195.3,213.9 195.7,212.9 196.1,211.9 196.5,210.9 197,210 197.5,209.1 198,208.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='190.0' y='221.9' font-size='13' fill='%23334155' text-anchor='end'%3E30°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ogma-burchak",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#342c5882"
+    },
+    {
+      "q": "Uy tomiga tayangan uzunligi 6 m bo'lgan zinapoya yer tekisligi bilan 60° li burchak hosil qilmoqda. Zinapoyaning yuqori uchi yer sathidan qanday balandlikda joylashgan?",
+      "v": [
+        "3√3 m",
+        "3 m",
+        "6√3 m",
+        "2√3 m"
+      ],
+      "t": 0,
+      "izoh": "Zinapoya og'ma vazifasini bajaradi, izlanayotgan balandlik esa perpendikulyar. Balandlik = 6 · sin60° = 6 · (√3/2) = 3√3 m. 3 m — sinus o'rniga kosinusni olish natijasi, u aslida zinapoyaning proyeksiyasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eyer%3C/text%3E%3Cline x1='94' y1='74.5' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='74.5' x2='169.1' y2='218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='169.1' y2='218' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EU%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='179.1' y='232.0' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='86.0' y='143.5' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='143.5' y='144.3' font-size='13' fill='%23334155' text-anchor='start'%3E6 m%3C/text%3E%3Cpolyline points='139.1,212.6 139.1,210.7 139.3,208.7 139.7,206.6 140.2,204.5 141,202.4 141.9,200.3 143.1,198.3 144.4,196.5 145.9,194.8 147.4,193.3 149.1,192 150.8,190.9 152.4,190 154.1,189.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='135.1' y='212.0' font-size='13' fill='%23334155' text-anchor='end'%3E60°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ogma-burchak",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#d19e8c4b"
+    },
+    {
+      "q": "M nuqtadan α tekislikka ikkita og'ma chiqarilgan: biri tekislik bilan 45°, ikkinchisi 30° li burchak hosil qiladi. Nuqtadan tekislikkacha masofa 6 sm bo'lsa, ikki og'ma proyeksiyalarining yig'indisi nechaga teng?",
+      "v": [
+        "6√3 sm",
+        "6 + 6√3 sm",
+        "12 + 6√3 sm",
+        "12 + 6√2 sm"
+      ],
+      "t": 1,
+      "izoh": "Har bir og'ma uchun proyeksiya = balandlik · ctg φ. Birinchisi uchun 6 · ctg45° = 6 sm, ikkinchisi uchun 6 · ctg30° = 6√3 sm. Yig'indi 6 + 6√3 sm. 12 + 6√2 sm — proyeksiya o'rniga og'malarning o'zini qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ogma-burchak",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#976adaeb"
+    },
+    {
+      "q": "Bitta nuqtadan α tekislikka chiqarilgan bir necha og'maning uzunliklari o'zaro teng. Ularning tekislikdagi proyeksiyalari haqida nima deyish mumkin?",
+      "v": [
+        "Proyeksiyalari og'malardan uzun bo'ladi",
+        "Proyeksiyalar nolga aylanadi",
+        "Proyeksiyalari ham o'zaro teng bo'ladi",
+        "Proyeksiyalari albatta har xil bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Har bir og'ma uchun proyeksiya² = og'ma² − perpendikulyar². Perpendikulyar hamma og'ma uchun bitta va o'sha kesma, og'malar ham teng bo'lgani uchun ayirma bir xil chiqadi. Demak proyeksiyalar ham teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='91.2' y1='117.5' x2='91.2' y2='206' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='206' x2='209.2' y2='227.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='206' x2='189.1' y2='169.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='117.5' x2='209.2' y2='227.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91.2' y1='117.5' x2='189.1' y2='169.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='91.2,193 103.9,195.3 103.9,208.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='91.2' y='109.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='83.2' y='220.0' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='219.2' y='239.2' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='197.1' y='163.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='83.2' y='165.8' font-size='13' fill='%23334155' text-anchor='end'%3Eh%3C/text%3E%3Ctext x='160.2' y='170.4' font-size='13' fill='%23334155' text-anchor='start'%3El%3C/text%3E%3Ctext x='148.1' y='139.7' font-size='13' fill='%23334155' text-anchor='start'%3El%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-ogmalar",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#375404dd"
+    },
+    {
+      "q": "Aloqa antennasi tomga tik o'rnatilgan va uning uchidan tomga uchta bir xil uzunlikdagi tros tortilgan. Troslarning tomdagi mahkamlash nuqtalari qanday joylashadi?",
+      "v": [
+        "Bitta to'g'ri chiziqda",
+        "Faqat teng tomonli uchburchak uchlarida",
+        "Antennadan har xil uzoqlikda",
+        "Antenna tagi markazli bitta aylanada"
+      ],
+      "t": 3,
+      "izoh": "Antenna tomga perpendikulyar, troslar esa teng og'malar. Teng og'malarning proyeksiyalari teng, ya'ni har bir mahkamlash nuqtasi antenna tagidan bir xil uzoqlikda. Bir nuqtadan teng uzoqlikdagi nuqtalar to'plami — aylana.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Etom%3C/text%3E%3Cline x1='140' y1='88' x2='140' y2='206' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='140,193 152.7,195.3 152.7,208.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='140' y1='206' x2='210.5' y2='216.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='140' y1='206' x2='82.6' y2='225.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='140' y1='206' x2='127' y2='175.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='140' y1='88' x2='210.5' y2='216.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='140' y1='88' x2='82.6' y2='225.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='140' y1='88' x2='127' y2='175.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='140.0' y='80.0' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='140.0' y='222.0' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='219.0' y='220.0' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='74.0' y='224.0' font-size='13' fill='%23334155' text-anchor='end'%3EN%3C/text%3E%3Ctext x='118.0' y='180.0' font-size='13' fill='%23334155' text-anchor='end'%3EL%3C/text%3E%3Ctext x='147.0' y='145.0' font-size='13' fill='%23334155' text-anchor='start'%3Eh%3C/text%3E%3Ctext x='182.0' y='150.0' font-size='13' fill='%23334155' text-anchor='start'%3El%3C/text%3E%3Ctext x='104.0' y='146.0' font-size='13' fill='%23334155' text-anchor='end'%3El%3C/text%3E%3Ctext x='136.0' y='150.0' font-size='13' fill='%23334155' text-anchor='middle'%3El%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-ogmalar",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#f7f63700"
+    },
+    {
+      "q": "M nuqtadan α tekislikka MO = 8 sm perpendikulyar tushirilgan va MA hamda MB og'malar chiqarilgan, ularning har biri 17 sm. ∠AOB = 60° bo'lsa, AB kesmaning uzunligi nechaga teng?",
+      "v": [
+        "15 sm",
+        "17 sm",
+        "30 sm",
+        "15√3 sm"
+      ],
+      "t": 0,
+      "izoh": "Og'malar teng bo'lgani uchun proyeksiyalari ham teng: OA² = OB² = 17² − 8² = 289 − 64 = 225, ya'ni OA = OB = 15 sm. AOB uchburchakda ikki tomon teng va ular orasidagi burchak 60°, demak u teng tomonli. Shuning uchun AB = 15 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='91.2' y1='143.1' x2='91.2' y2='206' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='206' x2='209.2' y2='227.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='206' x2='189.1' y2='169.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='143.1' x2='209.2' y2='227.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91.2' y1='143.1' x2='189.1' y2='169.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='91.2,193 103.9,195.3 103.9,208.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='91.2' y='135.1' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='83.2' y='220.0' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='219.2' y='239.2' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='197.1' y='163.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='83.2' y='178.5' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='160.2' y='183.2' font-size='13' fill='%23334155' text-anchor='start'%3E17 sm%3C/text%3E%3Ctext x='148.1' y='152.4' font-size='13' fill='%23334155' text-anchor='start'%3E17 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-ogmalar",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#54074f92"
+    },
+    {
+      "q": "ABC uchburchak tekisligidan tashqarida yotgan M nuqta uchburchakning uchala uchidan bir xil uzoqlikda joylashgan. M nuqtaning uchburchak tekisligidagi proyeksiyasi qayerda bo'ladi?",
+      "v": [
+        "Eng uzun tomonning o'rtasida",
+        "Uchburchakka tashqi chizilgan aylana markazida",
+        "Uchburchak medianalari kesishgan nuqtada",
+        "Uchburchakka ichki chizilgan aylana markazida"
+      ],
+      "t": 1,
+      "izoh": "MA, MB va MC teng og'malar bo'lgani uchun ularning proyeksiyalari ham teng: HA = HB = HC. Uchburchakning uchala uchidan bir xil uzoqlikdagi yagona nuqta — tashqi chizilgan aylana markazi. Demak proyeksiya aynan shu nuqtada.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolygon points='75.8,213.7 204,224.3 177.8,182' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='140' y1='102' x2='140' y2='202' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='140,189 152.7,191.3 152.7,204.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='140' y1='202' x2='75.8' y2='213.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='140' y1='202' x2='204' y2='224.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='140' y1='202' x2='177.8' y2='182' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='140' y1='102' x2='75.8' y2='213.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='140' y1='102' x2='204' y2='224.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='140' y1='102' x2='177.8' y2='182' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='67.8' y='225.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='214.0' y='236.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='186.0' y='184.0' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='140.0' y='94.0' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='140.0' y='216.0' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-ogmalar",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#0950065a"
+    },
+    {
+      "q": "Uch perpendikulyar haqidagi teoremaga ko'ra, tekislikda yotuvchi to'g'ri chiziq og'maning proyeksiyasiga perpendikulyar bo'lsa, u og'maning o'zi bilan qanday munosabatda bo'ladi?",
+      "v": [
+        "Og'ma bilan parallel bo'ladi",
+        "Og'ma bilan 45° li burchak hosil qiladi",
+        "Og'ma bilan hech qanday aniq munosabatda bo'lmaydi",
+        "Og'maga ham perpendikulyar bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Teorema aynan shuni tasdiqlaydi: perpendikulyar asosidan o'tuvchi og'ma va uning proyeksiyasi berilgan bo'lsa, tekislikdagi to'g'ri chiziq proyeksiyaga perpendikulyar bo'lishi bilan og'maga ham perpendikulyar bo'ladi. Isbot alomatga tayanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='254.9' y1='182.4' x2='196.4' y2='237' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='196.4' y='253.0' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Cline x1='107' y1='96.8' x2='107' y2='186.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='107' y1='96.8' x2='227' y2='208.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107' y1='186.8' x2='227' y2='208.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='107,173.8 119.7,176.1 119.7,189.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='215.2,206.3 205.7,215.2 217.5,217.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='107.0' y='88.8' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='99.0' y='200.8' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='239.0' y='204.4' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tpt-nazariy",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#59b864e0"
+    },
+    {
+      "q": "Uch perpendikulyar haqidagi teoremani qo'llash uchun quyidagi shartlardan qaysi biri TALAB QILINMAYDI?",
+      "v": [
+        "To'g'ri chiziq shu tekislikda yotishi",
+        "To'g'ri chiziq proyeksiyaga perpendikulyar bo'lishi",
+        "To'g'ri chiziq og'ma asosidan o'tishi",
+        "Perpendikulyar tekislikka tushirilgan bo'lishi"
+      ],
+      "t": 2,
+      "izoh": "Teoremaning sharti uchta: perpendikulyar tekislikka tushirilgan, to'g'ri chiziq tekislikda yotadi va u proyeksiyaga perpendikulyar. To'g'ri chiziqning og'ma asosidan o'tishi shart emas — u proyeksiyani boshqa nuqtada kesishi yoki umuman kesishmasligi ham mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tpt-nazariy",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#400189a9"
+    },
+    {
+      "q": "Uch perpendikulyar haqidagi teorema nomidagi uchta perpendikulyarlik qaysi juftliklarga tegishli ekanini ko'rsating.",
+      "v": [
+        "Uchburchakning uchta balandligi",
+        "O'zaro perpendikulyar uchta tekislik",
+        "Kubning bitta uchida uchrashuvchi uchta qirra",
+        "Perpendikulyar bilan tekislik, to'g'ri chiziq bilan proyeksiya, to'g'ri chiziq bilan og'ma"
+      ],
+      "t": 3,
+      "izoh": "Teoremada uchta perpendikulyarlik ishtirok etadi: birinchisi berilgan (perpendikulyar tekislikka), ikkinchisi shart (to'g'ri chiziq proyeksiyaga), uchinchisi xulosa (to'g'ri chiziq og'maga). Teorema nomi shundan kelib chiqqan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tpt-nazariy",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#a78130a6"
+    },
+    {
+      "q": "SO kesma α tekislikka perpendikulyar, OB esa SB og'maning proyeksiyasi. α tekislikdagi a to'g'ri chiziq SB ga perpendikulyar ekani ma'lum bo'lsa, quyidagilardan qaysi biri albatta o'rinli?",
+      "v": [
+        "a ⊥ SO bo'lishi mumkin emas",
+        "a bilan OB orasidagi burchak 45°",
+        "a ⊥ OB",
+        "a ∥ OB"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda teskari teorema ishlaydi: tekislikdagi to'g'ri chiziq og'maga perpendikulyar bo'lsa, u og'maning proyeksiyasiga ham perpendikulyar. Demak a ⊥ OB. SO tekislikka perpendikulyar bo'lgani uchun a ⊥ SO munosabati esa o'z-o'zidan bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tpt-nazariy",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#5e7ff1b3"
+    },
+    {
+      "q": "SA kesma ABCD to'g'ri to'rtburchak tekisligiga perpendikulyar, SA = 12 sm va AB = 9 sm. S nuqtadan BC to'g'ri chizig'igacha bo'lgan masofani toping.",
+      "v": [
+        "21 sm",
+        "15 sm",
+        "9 sm",
+        "12 sm"
+      ],
+      "t": 1,
+      "izoh": "AB ⊥ BC bo'lgani uchun AB — S dan BC gacha bo'lgan og'maning proyeksiyasi. Uch perpendikulyar teoremasiga ko'ra SB ⊥ BC, ya'ni izlanayotgan masofa SB ga teng. SB² = 12² + 9² = 144 + 81 = 225, demak SB = 15 sm. 9 sm — proyeksiyaning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolygon points='121.3,182.4 207.6,197.9 177.4,226.1 91.1,210.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='121.3' y2='182.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='207.6' y2='197.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='177.4' y2='226.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='91.1' y2='210.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='121.3,169.4 134,171.7 134,184.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.3' y='176.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='217.6' y='193.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='187.4' y='240.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='83.1' y='224.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='121.3' y='59.4' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='164.4' y='184.1' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='113.3' y='128.9' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tpt-masofa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#a984781b"
+    },
+    {
+      "q": "MA kesma tomoni 6 sm bo'lgan ABC teng tomonli uchburchak tekisligiga perpendikulyar va MA = 4 sm. M nuqtadan BC tomonigacha bo'lgan masofa nechaga teng?",
+      "v": [
+        "√43 sm",
+        "√52 sm",
+        "7 sm",
+        "5 sm"
+      ],
+      "t": 0,
+      "izoh": "Avval A dan BC gacha masofani topamiz — bu teng tomonli uchburchak balandligi: 6 · √3/2 = 3√3 sm. U og'maning proyeksiyasi bo'ladi, uch perpendikulyar teoremasiga ko'ra og'ma BC ga perpendikulyar. Masofa² = 4² + (3√3)² = 16 + 27 = 43, ya'ni √43 sm. √52 — balandlik o'rniga tomonni olish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolygon points='90,213.8 180,230 170.1,189.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='152.6' y1='205.5' x2='90' y2='213.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='90' y1='153.8' x2='152.6' y2='205.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='164.4,203.9 155.2,196.3 143.3,197.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='90' y1='153.8' x2='90' y2='213.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='90' y1='153.8' x2='180' y2='230' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='90' y1='153.8' x2='170.1' y2='189.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='90,200.8 102.7,203.1 102.7,216.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='82.0' y='225.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='190.0' y='242.0' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='170.1' y='181.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='90.0' y='145.8' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='82.0' y='187.8' font-size='13' fill='%23334155' text-anchor='end'%3E4 sm%3C/text%3E%3Ctext x='135.0' y='237.9' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tpt-masofa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#fd4f9083"
+    },
+    {
+      "q": "Ustaxona poliga to'g'ri chiziq bo'ylab konveyer lentasi o'rnatilgan. Polga tik o'rnatilgan ustun tagidan lentagacha eng qisqa masofa 2,4 m, ustunda 0,7 m balandlikda datchik joylashgan. Datchikdan lentagacha eng qisqa masofa nechaga teng?",
+      "v": [
+        "2,5 m",
+        "3,1 m",
+        "1,7 m",
+        "2,4 m"
+      ],
+      "t": 0,
+      "izoh": "Ustun polga perpendikulyar, ustun tagidan lentagacha bo'lgan 2,4 m — proyeksiya va u lentaga perpendikulyar. Uch perpendikulyar teoremasiga ko'ra datchikdan lentagacha bo'lgan kesma ham lentaga perpendikulyar, demak u eng qisqa masofa. Uzunligi √(0,7² + 2,4²) = √(0,49 + 5,76) = √6,25 = 2,5 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='254.9' y1='182.4' x2='196.4' y2='237' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='196.4' y='253.0' font-size='13' fill='%23334155' text-anchor='middle'%3Elenta%3C/text%3E%3Cline x1='107' y1='151.8' x2='107' y2='186.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='107' y1='151.8' x2='227' y2='208.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107' y1='186.8' x2='227' y2='208.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='107,173.8 119.7,176.1 119.7,189.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='215.2,206.3 205.7,215.2 217.5,217.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='107.0' y='143.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='99.0' y='200.8' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='239.0' y='204.4' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='99.0' y='173.3' font-size='13' fill='%23334155' text-anchor='end'%3E0,7 m%3C/text%3E%3Ctext x='163.0' y='191.6' font-size='13' fill='%23334155' text-anchor='middle'%3E2,4 m%3C/text%3E%3Ctext x='177.0' y='178.1' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tpt-masofa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#92fa7cb2"
+    },
+    {
+      "q": "MO kesma α tekislikka perpendikulyar va MO = 15 sm. Tekislikdagi a to'g'ri chiziqdan O nuqtagacha bo'lgan masofa 20 sm. M nuqtadan a to'g'ri chiziqqacha bo'lgan masofa O nuqtadan a gacha bo'lgan masofadan necha marta katta?",
+      "v": [
+        "1,5 marta",
+        "1,25 marta",
+        "1,75 marta",
+        "2 marta"
+      ],
+      "t": 1,
+      "izoh": "O dan a gacha bo'lgan 20 sm li perpendikulyar — M dan a gacha bo'lgan og'maning proyeksiyasi. Uch perpendikulyar teoremasiga ko'ra M dan a gacha masofa √(15² + 20²) = √(225 + 400) = 25 sm. Nisbat 25 : 20 = 1,25. 1,75 — uzunliklarni qo'shib bo'lish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='254.9' y1='182.4' x2='196.4' y2='237' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='196.4' y='253.0' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Cline x1='107' y1='96.8' x2='107' y2='186.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='107' y1='96.8' x2='227' y2='208.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107' y1='186.8' x2='227' y2='208.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='107,173.8 119.7,176.1 119.7,189.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='215.2,206.3 205.7,215.2 217.5,217.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='107.0' y='88.8' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='99.0' y='200.8' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='239.0' y='204.4' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='99.0' y='145.8' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3Ctext x='163.0' y='191.6' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='177.0' y='150.6' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tpt-masofa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#6bf1ce99"
+    },
+    {
+      "q": "SA kesma ABC uchburchak tekisligiga perpendikulyar. Tekshiruv natijasida SB og'ma BC tomonga perpendikulyar ekani aniqlandi. ABC uchburchakning B uchidagi burchagi nechaga teng?",
+      "v": [
+        "60°",
+        "45°",
+        "Berilganlar yetarli emas",
+        "90°"
+      ],
+      "t": 3,
+      "izoh": "SA ⊥ tekislik bo'lgani uchun AB kesma SB og'maning proyeksiyasi. Uch perpendikulyar teoremasiga teskari teoremaga ko'ra, BC ⊥ SB bo'lsa, BC proyeksiyaga ham perpendikulyar, ya'ni BC ⊥ AB. Demak ∠ABC = 90°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolygon points='79.8,214.5 135.8,224.5 165.9,196.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='79.8' y1='144.5' x2='79.8' y2='214.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='79.8' y1='144.5' x2='135.8' y2='224.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='79.8' y1='144.5' x2='165.9' y2='196.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='79.8,201.5 92.5,203.8 92.5,216.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='71.8' y='226.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='145.8' y='236.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='165.9' y='188.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='79.8' y='136.5' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tpt-teskari",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#c2aa334e"
+    },
+    {
+      "q": "Omborda polga tik o'rnatilgan ustunning uchidan poldagi to'sinning bir nuqtasigacha tortilgan arqon to'singa perpendikulyar bo'lib chiqdi. Ustun tagidan o'sha nuqtagacha bo'lgan kesma haqida nima deyish mumkin?",
+      "v": [
+        "U to'sin bilan 45° li burchak hosil qiladi",
+        "Bu ma'lumotdan hech qanday xulosa chiqmaydi",
+        "U ham to'singa perpendikulyar bo'ladi",
+        "U to'singa parallel bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Ustun pol tekisligiga perpendikulyar, arqon esa og'ma. Ustun tagidan to'singacha bo'lgan kesma — shu og'maning proyeksiyasi. Teskari teoremaga ko'ra og'ma to'singa perpendikulyar bo'lsa, uning proyeksiyasi ham to'singa perpendikulyar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tpt-teskari",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#8a30cd90"
+    },
+    {
+      "q": "MO kesma α tekislikka perpendikulyar va MO = 5 sm. M nuqtadan tekislikdagi a to'g'ri chiziqqacha bo'lgan eng qisqa masofa 13 sm bo'lsa, O nuqtadan a gacha bo'lgan masofani toping.",
+      "v": [
+        "12 sm",
+        "8 sm",
+        "18 sm",
+        "√194 sm"
+      ],
+      "t": 0,
+      "izoh": "M dan a gacha bo'lgan 13 sm li kesma og'ma bo'lib, u a ga perpendikulyar. Teskari teoremaga ko'ra uning proyeksiyasi ham a ga perpendikulyar, ya'ni proyeksiya izlanayotgan masofani beradi. Proyeksiya² = 13² − 5² = 169 − 25 = 144, demak 12 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tpt-teskari",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#1c2959dd"
+    },
+    {
+      "q": "SA kesma ABCD parallelogramm tekisligiga perpendikulyar. SC og'ma BD diagonalga perpendikulyar ekani ma'lum bo'lsa, ABCD qanday to'rtburchak ekanini aniqlang.",
+      "v": [
+        "Trapetsiya",
+        "Ixtiyoriy parallelogramm bo'lishi mumkin",
+        "Romb",
+        "To'g'ri to'rtburchak"
+      ],
+      "t": 2,
+      "izoh": "SA ⊥ tekislik bo'lgani uchun AC kesma SC og'maning proyeksiyasi. BD ⊥ SC ekanidan teskari teorema bo'yicha BD ⊥ AC chiqadi. Diagonallari perpendikulyar bo'lgan parallelogramm esa romb bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolygon points='121.3,182.4 236.3,203.1 173,239.9 58,219.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='182.4' x2='173' y2='239.9' stroke='%23334155' stroke-width='1.5' fill='none'/%3E%3Cline x1='236.3' y1='203.1' x2='58' y2='219.2' stroke='%23334155' stroke-width='1.5' fill='none'/%3E%3Cpolyline points='154.5,219.3 165.5,218.3 158.1,210.2' stroke='%23334155' stroke-width='1.5' fill='none'/%3E%3Cline x1='121.3' y1='92.9' x2='121.3' y2='182.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='121.3,169.4 134,171.7 134,184.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='121.3' y1='92.9' x2='236.3' y2='203.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='92.9' x2='173' y2='239.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='92.9' x2='58' y2='219.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='115.3' y='176.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='246.3' y='199.1' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='188.0' y='246.0' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='54.0' y='222.0' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='121.3' y='84.9' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tpt-teskari",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#130ed748"
+    },
+    {
+      "q": "SA kesma tomoni 4 sm bo'lgan ABCD kvadrat tekisligiga perpendikulyar va SA = 3 sm. SC og'maning uzunligi nechaga teng?",
+      "v": [
+        "4√2 sm",
+        "√41 sm",
+        "5 sm",
+        "7 sm"
+      ],
+      "t": 1,
+      "izoh": "SC og'maning proyeksiyasi AC diagonal bo'lib, AC = 4√2 sm. Demak SC² = SA² + AC² = 3² + (4√2)² = 9 + 32 = 41, ya'ni SC = √41 sm. 5 sm — diagonal o'rniga tomonni olish xatosi, 4√2 sm esa diagonalning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolygon points='121.3,182.4 236.3,203.1 184.6,251.4 69.5,230.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='96.1' x2='121.3' y2='182.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='121.3' y1='96.1' x2='236.3' y2='203.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='96.1' x2='184.6' y2='251.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='96.1' x2='69.5' y2='230.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='121.3,169.4 134,171.7 134,184.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.3' y='176.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='246.3' y='199.1' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='194.6' y='265.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='61.5' y='244.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='121.3' y='88.1' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='178.8' y='186.7' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='113.3' y='143.2' font-size='13' fill='%23334155' text-anchor='end'%3E3 sm%3C/text%3E%3Ctext x='160.9' y='171.7' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#22b3d992"
+    },
+    {
+      "q": "ABCD kvadratning tomoni 7√2 sm, SA kesma esa uning tekisligiga perpendikulyar va SA = 14 sm. SC og'ma kvadrat tekisligi bilan qanday burchak hosil qiladi?",
+      "v": [
+        "30°",
+        "60°",
+        "90°",
+        "45°"
+      ],
+      "t": 3,
+      "izoh": "SC og'maning proyeksiyasi AC diagonal: AC = 7√2 · √2 = 14 sm. Og'ma bilan tekislik orasidagi burchak — og'ma va proyeksiya orasidagi burchak: tg φ = SA/AC = 14/14 = 1, demak φ = 45°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#32937a9a"
+    },
+    {
+      "q": "Tomi kvadrat shaklida bo'lgan qorovulxona tomining tomoni 8 m. Tomning bir burchagiga 6 m li antenna tik o'rnatilgan bo'lsa, antenna uchidan tomning qarama-qarshi burchagigacha bo'lgan masofa nechaga teng?",
+      "v": [
+        "14 m",
+        "8√2 m",
+        "2√41 m",
+        "10 m"
+      ],
+      "t": 2,
+      "izoh": "Antenna tom tekisligiga perpendikulyar, izlanayotgan kesma esa og'ma. Uning proyeksiyasi tomning diagonali: 8√2 m. Og'ma² = 6² + (8√2)² = 36 + 128 = 164, ya'ni og'ma = √164 = 2√41 m. 10 m — diagonal o'rniga tomonni olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#453f3b2e"
+    },
+    {
+      "q": "SA kesma ABCD kvadrat tekisligiga perpendikulyar qilib o'tkazilgan. SA bilan BD diagonal orasidagi burchak nechaga teng va bunga qanday asos bor?",
+      "v": [
+        "90°, chunki tekislikka perpendikulyar to'g'ri chiziq undagi barcha to'g'ri chiziqlarga perpendikulyar",
+        "45°, chunki BD kvadrat diagonali",
+        "60°, chunki kvadrat simmetrik shakl",
+        "Kesishmagani uchun burchak aniqlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Tekislikka perpendikulyar to'g'ri chiziqning asosiy xossasi: u shu tekislikda yotgan har qanday to'g'ri chiziqqa perpendikulyar. BD kvadrat tekisligida yotadi, shuning uchun SA ⊥ BD va burchak 90°. Kesishmasa ham, ayqash to'g'ri chiziqlar burchagi shu qoida bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#fc883c4d"
+    },
+    {
+      "q": "MB kesma ABC uchburchak tekisligiga perpendikulyar va MB = 15 sm. Uchburchakda AB = 20 sm hamda BC = 8 sm bo'lsa, MA va MC og'malar uzunliklarining ayirmasi nechaga teng?",
+      "v": [
+        "10 sm",
+        "8 sm",
+        "12 sm",
+        "42 sm"
+      ],
+      "t": 1,
+      "izoh": "MA² = 15² + 20² = 225 + 400 = 625, ya'ni MA = 25 sm. MC² = 15² + 8² = 225 + 64 = 289, ya'ni MC = 17 sm. Ayirma 25 − 17 = 8 sm. 12 sm — 20 va 8 tomonlarning ayirmasini javob deb olish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolygon points='67.8,212.3 167.8,230.3 185.8,213.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='167.8' y1='155.3' x2='167.8' y2='230.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='167.8' y1='155.3' x2='67.8' y2='212.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='167.8' y1='155.3' x2='185.8' y2='213.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='167.8,217.3 167.8,217.3 167.8,230.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='59.8' y='224.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='177.8' y='242.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='185.8' y='205.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='167.8' y='147.3' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='159.8' y='196.8' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3Ctext x='117.8' y='237.3' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='188.8' y='225.9' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#b34f933f"
+    },
+    {
+      "q": "MA kesma ABC uchburchak tekisligiga perpendikulyar, MA = 5 sm va AB = 5√3 sm. MB og'ma uchburchak tekisligi bilan qanday burchak hosil qiladi?",
+      "v": [
+        "60°",
+        "45°",
+        "15°",
+        "30°"
+      ],
+      "t": 3,
+      "izoh": "MB og'maning proyeksiyasi AB, izlanayotgan burchak esa MB va AB orasidagi burchak. tg φ = MA/AB = 5/(5√3) = 1/√3, demak φ = 30°. 60° — burchakni to'ldiruvchisi bilan chalkashtirish natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='129.4' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='129.4' x2='224' y2='227.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='224' y2='227.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='121.4' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='234.0' y='241.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='86.0' y='171.0' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3Ctext x='159.0' y='234.2' font-size='13' fill='%23334155' text-anchor='middle'%3E5√3 sm%3C/text%3E%3Cpolyline points='194,222.5 194,221.4 194.1,220.3 194.2,219.2 194.3,218.2 194.5,217.1 194.7,216 195,214.9 195.3,213.9 195.7,212.9 196.1,211.9 196.5,210.9 197,210 197.5,209.1 198,208.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='190.0' y='221.9' font-size='13' fill='%23334155' text-anchor='end'%3Eφ%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#ee345319"
+    },
+    {
+      "q": "MA kesma ABC uchburchak tekisligiga perpendikulyar, uchburchakda ∠A = 90°, AB = 3 sm, AC = 4 sm va MA = 3,2 sm. M nuqtadan BC tomonigacha bo'lgan masofani toping.",
+      "v": [
+        "4 sm",
+        "5 sm",
+        "2,4 sm",
+        "5,6 sm"
+      ],
+      "t": 0,
+      "izoh": "Avval A dan BC gacha masofani topamiz: BC = 5 sm, balandlik = 3 · 4 : 5 = 2,4 sm. Bu og'maning proyeksiyasi, uch perpendikulyar teoremasiga ko'ra og'ma BC ga perpendikulyar. Masofa² = 3,2² + 2,4² = 10,24 + 5,76 = 16, demak 4 sm. 2,4 sm — proyeksiyaning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolygon points='84,212.7 156,225.7 108.3,190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='84' y1='169.7' x2='84' y2='212.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='84' y1='169.7' x2='156' y2='225.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='84' y1='169.7' x2='108.3' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='84,199.7 96.7,202 96.7,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='76.0' y='224.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='166.0' y='237.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='108.3' y='182.0' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='84.0' y='161.7' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='120.0' y='235.2' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3Ctext x='86.2' y='203.4' font-size='13' fill='%23334155' text-anchor='end'%3E4 sm%3C/text%3E%3Ctext x='68.0' y='172.0' font-size='13' fill='%23334155' text-anchor='end'%3E3,2 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#9bd67dd3"
+    },
+    {
+      "q": "Uchburchak shaklidagi maydonchaning A uchiga balandligi 24 m bo'lgan minora tik o'rnatilgan. Maydonchada AB = 7 m va AC = 10 m bo'lsa, minora uchidan B hamda C nuqtalargacha bo'lgan masofalar yig'indisi nechaga teng?",
+      "v": [
+        "65 m",
+        "49 m",
+        "51 m",
+        "41 m"
+      ],
+      "t": 2,
+      "izoh": "Minora maydoncha tekisligiga perpendikulyar. Birinchi masofa √(24² + 7²) = √(576 + 49) = √625 = 25 m. Ikkinchisi √(24² + 10²) = √(576 + 100) = √676 = 26 m. Yig'indi 25 + 26 = 51 m. 41 m — o'lchamlarni shunchaki qo'shish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolygon points='79.8,214.5 118.3,221.4 132.6,201.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='79.8' y1='82.5' x2='79.8' y2='214.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='79.8' y1='82.5' x2='118.3' y2='221.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='79.8' y1='82.5' x2='132.6' y2='201.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='79.8,201.5 92.5,203.8 92.5,216.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='71.8' y='226.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='128.3' y='233.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='132.6' y='193.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='79.8' y='74.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='71.8' y='152.5' font-size='13' fill='%23334155' text-anchor='end'%3E24 m%3C/text%3E%3Ctext x='99.0' y='233.9' font-size='13' fill='%23334155' text-anchor='middle'%3E7 m%3C/text%3E%3Ctext x='96.2' y='210.2' font-size='13' fill='%23334155' text-anchor='end'%3E10 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#f3b301d0"
+    },
+    {
+      "q": "Radiusi 9 sm bo'lgan aylananing markazidan uning tekisligiga perpendikulyar ravishda 12 sm yuqoriga ko'tarilib M nuqta belgilandi. M nuqtadan aylananing ixtiyoriy nuqtasigacha bo'lgan masofa nechaga teng?",
+      "v": [
+        "Tanlangan nuqtaga qarab o'zgaradi",
+        "15 sm",
+        "21 sm",
+        "√63 sm"
+      ],
+      "t": 1,
+      "izoh": "Aylananing barcha nuqtalari markazdan 9 sm uzoqlikda, ya'ni M dan chiqqan og'malarning proyeksiyalari teng. Shuning uchun og'malar ham teng: √(12² + 9²) = √(144 + 81) = √225 = 15 sm. Bu masofa tanlangan nuqtaga bog'liq emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolyline points='208,215 203.3,218.7 197.5,222.2 190.6,225.3 182.9,228 174.4,230.3 165.2,232.1 155.6,233.4 145.7,234.2 135.7,234.4 125.7,234.1 115.9,233.2 106.5,231.8 97.6,229.9 89.5,227.5 82.1,224.7 75.7,221.6 70.4,218.1 66.2,214.3 63.3,210.3 61.6,206.2 61.3,202 62.2,197.8 64.5,193.7 68,189.8 72.7,186.1 78.5,182.6 85.4,179.5 93.1,176.8 101.6,174.5 110.8,172.7 120.4,171.4 130.3,170.6 140.3,170.4 150.3,170.7 160.1,171.6 169.5,173 178.4,174.9 186.5,177.3 193.9,180.1 200.3,183.2 205.6,186.7 209.8,190.5 212.7,194.5 214.4,198.6 214.7,202.8 213.8,207 211.5,211.1 208,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='138' y1='202.4' x2='156.8' y2='233.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='138' y1='109.1' x2='138' y2='202.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='138' y1='109.1' x2='156.8' y2='233.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='138,189.4 150.7,191.7 150.7,204.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='130.0' y='216.4' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='138.0' y='101.1' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='166.8' y='243.3' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='130.0' y='159.7' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='159.8' y='222.3' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#1a9359c0"
+    },
+    {
+      "q": "M nuqta radiusi 10 sm bo'lgan aylananing markazidan uning tekisligiga perpendikulyar ravishda 8 sm balandlikda joylashgan. Shu aylanada uzunligi 12 sm bo'lgan AB vatari o'tkazilgan. AB vataridan M nuqtagacha bo'lgan eng qisqa masofani toping.",
+      "v": [
+        "8 sm",
+        "10 sm",
+        "12 sm",
+        "8√2 sm"
+      ],
+      "t": 3,
+      "izoh": "Markazdan vatargacha masofa √(10² − 6²) = √(100 − 36) = 8 sm va u vatarga perpendikulyar. Bu kesma og'maning proyeksiyasi, uch perpendikulyar teoremasiga ko'ra og'ma ham vatarga perpendikulyar. Masofa = √(8² + 8²) = √128 = 8√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolyline points='208,215 203.3,218.7 197.5,222.2 190.6,225.3 182.9,228 174.4,230.3 165.2,232.1 155.6,233.4 145.7,234.2 135.7,234.4 125.7,234.1 115.9,233.2 106.5,231.8 97.6,229.9 89.5,227.5 82.1,224.7 75.7,221.6 70.4,218.1 66.2,214.3 63.3,210.3 61.6,206.2 61.3,202 62.2,197.8 64.5,193.7 68,189.8 72.7,186.1 78.5,182.6 85.4,179.5 93.1,176.8 101.6,174.5 110.8,172.7 120.4,171.4 130.3,170.6 140.3,170.4 150.3,170.7 160.1,171.6 169.5,173 178.4,174.9 186.5,177.3 193.9,180.1 200.3,183.2 205.6,186.7 209.8,190.5 212.7,194.5 214.4,198.6 214.7,202.8 213.8,207 211.5,211.1 208,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='175.1' y1='230.1' x2='212.9' y2='194.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='138' y1='202.4' x2='194' y2='212.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='138' y1='146.4' x2='194' y2='212.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='182.2,210.4 172.7,219.3 184.5,221.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='138' y1='146.4' x2='138' y2='202.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='138,189.4 150.7,191.7 150.7,204.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='130.0' y='216.4' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='138.0' y='138.4' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='185.1' y='240.1' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='222.9' y='190.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='130.0' y='178.4' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='176.0' y='179.4' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylana-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#759d6957"
+    },
+    {
+      "q": "Diametri 12 m bo'lgan dumaloq maydonchaning markazi ustiga balandligi 8 m bo'lgan ustunga chiroq o'rnatilgan. Chiroqdan maydoncha chetidagi istalgan nuqtagacha bo'lgan masofa nechaga teng?",
+      "v": [
+        "20 m",
+        "10 m",
+        "14 m",
+        "√28 m"
+      ],
+      "t": 1,
+      "izoh": "Maydoncha radiusi 12 : 2 = 6 m. Ustun maydoncha tekisligiga perpendikulyar, chiroqdan chetgacha bo'lgan kesma esa og'ma. Uning uzunligi √(8² + 6²) = √(64 + 36) = 10 m. 14 m — diametrni radius o'rniga ishlatib qo'shish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cellipse cx='150' cy='204.5' rx='85' ry='35' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cline x1='65' y1='204.5' x2='235' y2='204.5' stroke='%23334155' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/%3E%3Cline x1='150' y1='74.5' x2='150' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='150,191.5 137.3,193.8 137.3,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='74.5' x2='198.8' y2='233.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='140.0' y='218.0' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='57.0' y='208.0' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='243.0' y='208.0' font-size='13' fill='%23334155' text-anchor='start'%3EQ%3C/text%3E%3Ctext x='206.0' y='245.0' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='142.0' y='140.0' font-size='13' fill='%23334155' text-anchor='end'%3E8 m%3C/text%3E%3Ctext x='110.0' y='199.0' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='180.0' y='150.0' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#3d8a378b"
+    },
+    {
+      "q": "M nuqta radiusi 10 sm bo'lgan aylana markazidan tekislikka perpendikulyar 6 sm balandlikda. M nuqtadan bir vatargacha bo'lgan eng qisqa masofa 10 sm bo'lsa, shu vatarning uzunligi nechaga teng?",
+      "v": [
+        "16 sm",
+        "6 sm",
+        "8 sm",
+        "12 sm"
+      ],
+      "t": 3,
+      "izoh": "Uch perpendikulyar teoremasidan markazdan vatargacha masofa √(10² − 6²) = 8 sm. Vatarning yarmi √(10² − 8²) = √(100 − 64) = 6 sm, demak vatar 12 sm. 6 sm — yarim vatarni javob deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylana-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#56f06fd0"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidaning asos tomoni 12 sm, balandligi esa 8 sm. Piramida yon yog'ining apofemasi, ya'ni cho'qqidan asos qirrasiga tushirilgan perpendikulyar nechaga teng?",
+      "v": [
+        "14 sm",
+        "6 sm",
+        "10 sm",
+        "2√34 sm"
+      ],
+      "t": 2,
+      "izoh": "Balandlik asosining markaziga tushadi, markazdan asos qirrasining o'rtasigacha masofa 12 : 2 = 6 sm va u qirraga perpendikulyar. Uch perpendikulyar teoremasiga ko'ra apofema ham qirraga perpendikulyar. Apofema = √(8² + 6²) = √100 = 10 sm. 2√34 sm — bu yon qirra uzunligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='126.4,171.5 241.4,192.2 189.6,240.5 74.6,219.8' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='241.4,192.2 189.6,240.5 74.6,219.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158' y1='129.3' x2='126.4' y2='171.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='158' y1='129.3' x2='241.4' y2='192.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158' y1='129.3' x2='189.6' y2='240.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158' y1='129.3' x2='74.6' y2='219.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158' y1='129.3' x2='158' y2='206' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='158' y1='129.3' x2='215.5' y2='216.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='158' y1='206' x2='215.5' y2='216.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='203.7,214.2 194.2,223.1 206,225.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='158,194 169.8,196.1 169.8,208.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.4' y='175.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='243.4' y='208.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='199.6' y='252.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='66.6' y='231.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='158.0' y='121.3' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='227.5' y='224.3' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='152.0' y='220.0' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='132.1' y='246.2' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='150.0' y='171.7' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='196.8' y='172.8' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-apofema",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#9f64c190"
+    },
+    {
+      "q": "Muntazam uchburchakli piramidaning asos tomoni 6√3 sm, balandligi 4 sm. Yon yog'ining apofemasi necha santimetrga teng?",
+      "v": [
+        "5 sm",
+        "7 sm",
+        "√52 sm",
+        "3 sm"
+      ],
+      "t": 0,
+      "izoh": "Teng tomonli uchburchak markazidan tomonigacha masofa tomonning 1/(2√3) qismiga teng: 6√3 : (2√3) = 3 sm. Uch perpendikulyar teoremasiga ko'ra apofema asos tomoniga perpendikulyar. Apofema = √(4² + 3²) = √25 = 5 sm. √52 sm — markazdan uchgacha bo'lgan 6 sm ni ishlatish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-apofema",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#caeee6ba"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidaning yon yog'i asos tekisligi bilan 60° li burchak hosil qiladi, asosining tomoni esa 12 sm. Piramidaning balandligini toping.",
+      "v": [
+        "4√3 sm",
+        "6√3 sm",
+        "12√3 sm",
+        "6 sm"
+      ],
+      "t": 1,
+      "izoh": "Yon yoq bilan asos orasidagi burchak apofema va uning proyeksiyasi orasidagi burchakdir, chunki ikkalasi ham asos qirrasiga perpendikulyar. Proyeksiya asosning yarim tomoni, ya'ni 6 sm. Balandlik = 6 · tg60° = 6√3 sm. 6 sm — proyeksiyaning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='126.4,171.5 241.4,192.2 189.6,240.5 74.6,219.8' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='241.4,192.2 189.6,240.5 74.6,219.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158' y1='106.4' x2='126.4' y2='171.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='158' y1='106.4' x2='241.4' y2='192.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158' y1='106.4' x2='189.6' y2='240.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158' y1='106.4' x2='74.6' y2='219.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158' y1='106.4' x2='158' y2='206' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='158' y1='106.4' x2='215.5' y2='216.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='158' y1='206' x2='215.5' y2='216.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='203.7,214.2 194.2,223.1 206,225.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='158,194 169.8,196.1 169.8,208.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.4' y='175.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='243.4' y='208.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='199.6' y='252.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='66.6' y='231.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='158.0' y='98.4' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='227.5' y='224.3' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='152.0' y='220.0' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='132.1' y='246.2' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='150.0' y='160.2' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-apofema",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#ed10487c"
+    },
+    {
+      "q": "Chodir muntazam to'rtburchakli piramida shaklida tikilgan: asosining tomoni 4 m, cho'qqisining balandligi esa 1,5 m. Chodir cho'qqisidan asos qirrasining o'rtasigacha bo'lgan masofa nechaga teng?",
+      "v": [
+        "3,5 m",
+        "5,5 m",
+        "2 m",
+        "2,5 m"
+      ],
+      "t": 3,
+      "izoh": "Cho'qqidan asos markazigacha 1,5 m, markazdan qirra o'rtasigacha 4 : 2 = 2 m. Bu ikki kesma o'zaro perpendikulyar, chunki balandlik asos tekisligiga perpendikulyar. Masofa = √(1,5² + 2²) = √(2,25 + 4) = √6,25 = 2,5 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='126.4,171.5 241.4,192.2 189.6,240.5 74.6,219.8' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='241.4,192.2 189.6,240.5 74.6,219.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158' y1='162.9' x2='126.4' y2='171.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='158' y1='162.9' x2='241.4' y2='192.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158' y1='162.9' x2='189.6' y2='240.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158' y1='162.9' x2='74.6' y2='219.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158' y1='162.9' x2='158' y2='206' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='158' y1='162.9' x2='215.5' y2='216.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='158' y1='206' x2='215.5' y2='216.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='203.7,214.2 194.2,223.1 206,225.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='158,194 169.8,196.1 169.8,208.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.4' y='175.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='243.4' y='208.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='199.6' y='252.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='66.6' y='231.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='158.0' y='154.9' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='227.5' y='224.3' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='152.0' y='220.0' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='132.1' y='246.2' font-size='13' fill='%23334155' text-anchor='middle'%3E4 m%3C/text%3E%3Ctext x='150.0' y='188.4' font-size='13' fill='%23334155' text-anchor='end'%3E1,5 m%3C/text%3E%3Ctext x='196.8' y='189.6' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-apofema",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#26107985"
+    },
+    {
+      "q": "Ko'chadagi chiroq ustuni tik o'rnatilgan va balandligi 12 m. Ustun tagidan 9 m narida turgan Aziz yana 7 m uzoqlashsa, u turgan nuqtadan ustun uchigacha bo'lgan masofa necha metrga ortadi?",
+      "v": [
+        "5 m",
+        "7 m",
+        "35 m",
+        "4 m"
+      ],
+      "t": 0,
+      "izoh": "Boshida masofa √(12² + 9²) = √(144 + 81) = 15 m edi. Uzoqlashgandan keyin proyeksiya 9 + 7 = 16 m bo'ladi va masofa √(12² + 16²) = √(144 + 256) = 20 m. Ortish 20 − 15 = 5 m. 7 m — yerdagi siljishni javob deb olish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='74.5' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='74.5' x2='191.5' y2='222.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='191.5' y2='222.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='201.5' y='236.1' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='86.0' y='143.5' font-size='13' fill='%23334155' text-anchor='end'%3E12 m%3C/text%3E%3Ctext x='142.8' y='231.3' font-size='13' fill='%23334155' text-anchor='middle'%3E9 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ustun",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#f41e952c"
+    },
+    {
+      "q": "Maydonchada tik turgan ustunning uchidan ikki tomonga arqon tortilgan: qoziqlar ustun tagidan 9 m va 16 m narida, arqonlarning uzunliklari esa 15 m va 20 m. Ustunning balandligi necha metr?",
+      "v": [
+        "6 m",
+        "15 m",
+        "12 m",
+        "9 m"
+      ],
+      "t": 2,
+      "izoh": "Birinchi arqon uchun balandlik² = 15² − 9² = 225 − 81 = 144. Ikkinchisi uchun balandlik² = 20² − 16² = 400 − 256 = 144. Ikkala hisob ham bir xil qiymat berdi, demak ustun balandligi 12 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eyer%3C/text%3E%3Cline x1='127.6' y1='116.7' x2='127.6' y2='205.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='127.6' y1='205.5' x2='246' y2='226.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='127.6' y1='205.5' x2='61' y2='193.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='127.6' y1='116.7' x2='246' y2='226.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='127.6' y1='116.7' x2='61' y2='193.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='127.6,192.5 140.3,194.8 140.3,207.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='127.6' y='108.7' font-size='13' fill='%23334155' text-anchor='middle'%3EU%3C/text%3E%3Ctext x='119.6' y='219.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='256.0' y='238.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='69.0' y='187.5' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='119.6' y='165.1' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='196.8' y='169.8' font-size='13' fill='%23334155' text-anchor='start'%3E20 m%3C/text%3E%3Ctext x='102.3' y='151.1' font-size='13' fill='%23334155' text-anchor='start'%3E15 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ustun",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#5176cf31"
+    },
+    {
+      "q": "Tik o'rnatilgan ustunning uchidan yerdagi qoziqqacha tortilgan arqon ustun balandligidan 2 m ga uzun. Qoziq ustun tagidan 8 m narida joylashgan bo'lsa, ustunning balandligi nechaga teng?",
+      "v": [
+        "16 m",
+        "6 m",
+        "10 m",
+        "15 m"
+      ],
+      "t": 3,
+      "izoh": "Balandlikni h desak, arqon h + 2 bo'ladi. Pifagor teoremasidan h² + 8² = (h + 2)², ya'ni h² + 64 = h² + 4h + 4. Bundan 4h = 60 va h = 15 m. Arqon esa 17 m bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ustun",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#2ac364d6"
+    },
+    {
+      "q": "Ustunning yerdan 6 m balandligidagi nuqtasidan bitta qoziqqa 10 m li arqon tortilgan. Xuddi shu qoziqqa ustun uchidan tortilgan arqon 17 m bo'lsa, ustunning to'liq balandligi necha metr?",
+      "v": [
+        "12 m",
+        "15 m",
+        "9 m",
+        "21 m"
+      ],
+      "t": 1,
+      "izoh": "Pastki arqon uchun qoziqning ustun tagidan uzoqligi √(10² − 6²) = √(100 − 36) = 8 m. Yuqori arqon uchun ustun balandligi √(17² − 8²) = √(289 − 64) = √225 = 15 m. 9 m — 15 va 6 ning ayirmasini javob deb olish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='74.5' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='74.5' x2='195' y2='224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='152.5' x2='195' y2='224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='195' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='94' cy='152.5' r='2.5' fill='%23334155'/%3E%3Ctext x='94.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='205.0' y='238.0' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='86.0' y='156.0' font-size='13' fill='%23334155' text-anchor='end'%3ET%3C/text%3E%3Ctext x='86.0' y='115.0' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='90.0' y='199.0' font-size='13' fill='%23334155' text-anchor='end'%3E6 m%3C/text%3E%3Ctext x='124.0' y='199.0' font-size='13' fill='%23334155' text-anchor='middle'%3E10 m%3C/text%3E%3Ctext x='152.0' y='145.0' font-size='13' fill='%23334155' text-anchor='start'%3E17 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ustun",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#9c9ee243"
+    },
+    {
+      "q": "Radio machtaning uchidan yerga uchta bir xil tros tortilgan va ularning har biri yer tekisligi bilan 60° li burchak hosil qiladi. Machtaning balandligi 18 m bo'lsa, bitta trosning uzunligi nechaga teng?",
+      "v": [
+        "12√3 m",
+        "36 m",
+        "9√3 m",
+        "6√3 m"
+      ],
+      "t": 0,
+      "izoh": "Tros og'ma, machta esa perpendikulyar. Og'ma bilan tekislik orasidagi burchak 60° bo'lgani uchun sin60° = 18/tros. Demak tros = 18 : (√3/2) = 36/√3 = 12√3 m. 36 m — sinus o'rniga kosinus olish, 9√3 m — bo'lish o'rniga ko'paytirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='74.5' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='74.5' x2='169' y2='218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='169' y2='218' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='179.0' y='232.0' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='86.0' y='143.5' font-size='13' fill='%23334155' text-anchor='end'%3E18 m%3C/text%3E%3Ctext x='143.5' y='144.3' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cpolyline points='139,212.6 139.1,210.7 139.3,208.7 139.7,206.6 140.2,204.5 141,202.4 141.9,200.3 143.1,198.3 144.4,196.5 145.8,194.8 147.4,193.3 149.1,192 150.7,190.9 152.4,190 154,189.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='135.0' y='212.0' font-size='13' fill='%23334155' text-anchor='end'%3E60°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tros",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#1a755059"
+    },
+    {
+      "q": "Machta tagidan 8 m uzoqlikda aylana bo'ylab 6 ta qoziq qoqilgan va har biriga machtaning bir xil balandligidagi nuqtadan tros tortilgan. Troslarning umumiy uzunligi 102 m bo'lsa, mahkamlash nuqtasi yerdan qanday balandlikda?",
+      "v": [
+        "9 m",
+        "12 m",
+        "15 m",
+        "17 m"
+      ],
+      "t": 2,
+      "izoh": "Qoziqlar mahkamlash nuqtasidan teng uzoqlikda, demak troslar teng: 102 : 6 = 17 m. Har bir tros og'ma, uning proyeksiyasi 8 m. Balandlik² = 17² − 8² = 289 − 64 = 225, ya'ni 15 m. 17 m — bitta trosning uzunligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cellipse cx='140' cy='204.5' rx='70' ry='29' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cline x1='140' y1='74.5' x2='140' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='140,191.5 127.3,193.8 127.3,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='140' y1='74.5' x2='210' y2='204.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='140' y1='74.5' x2='105' y2='229.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='140' y1='74.5' x2='70' y2='204.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='140' y1='204.5' x2='210' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='210' cy='204.5' r='2.5' fill='%23334155'/%3E%3Ccircle cx='175' cy='229.6' r='2.5' fill='%23334155'/%3E%3Ccircle cx='105' cy='229.6' r='2.5' fill='%23334155'/%3E%3Ccircle cx='70' cy='204.5' r='2.5' fill='%23334155'/%3E%3Ccircle cx='105' cy='179.4' r='2.5' fill='%23334155'/%3E%3Ccircle cx='175' cy='179.4' r='2.5' fill='%23334155'/%3E%3Ctext x='140.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='140.0' y='222.0' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='218.0' y='202.0' font-size='13' fill='%23334155' text-anchor='start'%3EQ%3C/text%3E%3Ctext x='147.0' y='120.0' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='175.0' y='199.0' font-size='13' fill='%23334155' text-anchor='middle'%3E8 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tros",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#dc671237"
+    },
+    {
+      "q": "Machta uchidan yerga ikkita tros tortilgan: biri yer bilan 45°, ikkinchisi 30° li burchak hosil qiladi. Qoziqlar machta tagi bilan bir to'g'ri chiziqda, machtaning qarama-qarshi tomonlarida joylashgan. Machta balandligi 10 m bo'lsa, qoziqlar orasidagi masofa nechaga teng?",
+      "v": [
+        "10√3 − 10 m",
+        "10√2 + 20 m",
+        "20√3 m",
+        "10 + 10√3 m"
+      ],
+      "t": 3,
+      "izoh": "Har bir trosning proyeksiyasi balandlik · ctg burchak bo'ladi: 10 · ctg45° = 10 m va 10 · ctg30° = 10√3 m. Qoziqlar qarama-qarshi tomonlarda bo'lgani uchun masofa proyeksiyalar yig'indisi: 10 + 10√3 m. Ayirma bir tomonda joylashgan holatga to'g'ri kelardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tros",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#bb7ee7e3"
+    },
+    {
+      "q": "Chodirning markaziy ustuni 1,2 m balandlikda tik turadi va uning uchidan yerga uzunligi 1,3 m bo'lgan to'rtta bir xil tros tortilgan. Har bir qoziq ustun tagidan necha metr uzoqlikda joylashgan?",
+      "v": [
+        "0,5 m",
+        "0,1 m",
+        "2,5 m",
+        "1,25 m"
+      ],
+      "t": 0,
+      "izoh": "Troslar teng og'malar, shuning uchun proyeksiyalari ham teng. Proyeksiya² = 1,3² − 1,2² = 1,69 − 1,44 = 0,25, demak har bir qoziq 0,5 m uzoqlikda. 0,1 m — uzunliklarni to'g'ridan-to'g'ri ayirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='74.5' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='74.5' x2='148.2' y2='214.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='148.2' y2='214.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EU%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='158.2' y='228.3' font-size='13' fill='%23334155' text-anchor='start'%3EQ%3C/text%3E%3Ctext x='86.0' y='143.5' font-size='13' fill='%23334155' text-anchor='end'%3E1,2 m%3C/text%3E%3Ctext x='121.1' y='227.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='133.1' y='142.4' font-size='13' fill='%23334155' text-anchor='start'%3E1,3 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tros",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#aa31b362"
+    },
+    {
+      "q": "Stol yuzasidan 0,9 m balandlikda osilgan lampadan stolning to'g'ri chiziqli qirrasigacha eng qisqa masofa 1,5 m. Lampa ostidagi stol nuqtasidan shu qirragacha bo'lgan masofa nechaga teng?",
+      "v": [
+        "1,74 m",
+        "1,2 m",
+        "0,6 m",
+        "2,4 m"
+      ],
+      "t": 1,
+      "izoh": "Lampadan qirragacha bo'lgan eng qisqa kesma og'ma bo'lib, u qirraga perpendikulyar. Teskari teoremaga ko'ra uning proyeksiyasi ham qirraga perpendikulyar va aynan izlanayotgan masofani beradi. Proyeksiya² = 1,5² − 0,9² = 2,25 − 0,81 = 1,44, demak 1,2 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='254.9' y1='182.4' x2='196.4' y2='237' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='196.4' y='253.0' font-size='13' fill='%23334155' text-anchor='middle'%3Eqirra%3C/text%3E%3Cline x1='107' y1='96.8' x2='107' y2='186.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='107' y1='96.8' x2='227' y2='208.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107' y1='186.8' x2='227' y2='208.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='107,173.8 119.7,176.1 119.7,189.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='215.2,206.3 205.7,215.2 217.5,217.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='107.0' y='88.8' font-size='13' fill='%23334155' text-anchor='middle'%3EL%3C/text%3E%3Ctext x='99.0' y='200.8' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='239.0' y='204.4' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='99.0' y='145.8' font-size='13' fill='%23334155' text-anchor='end'%3E0,9 m%3C/text%3E%3Ctext x='163.0' y='191.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='177.0' y='150.6' font-size='13' fill='%23334155' text-anchor='start'%3E1,5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-lampa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#803d1db2"
+    },
+    {
+      "q": "Xona shiftining o'rtasiga osilgan chiroq pol sathidan 2,4 m balandda. Chiroq ostidagi pol nuqtasidan xonaning bir burchagigacha 3,2 m bo'lsa, chiroqdan o'sha burchakkacha bo'lgan masofa nechaga teng?",
+      "v": [
+        "0,8 m",
+        "2,8 m",
+        "4 m",
+        "5,6 m"
+      ],
+      "t": 2,
+      "izoh": "Chiroqdan pol nuqtasigacha bo'lgan kesma polga perpendikulyar, 3,2 m esa og'maning proyeksiyasi. Og'ma² = 2,4² + 3,2² = 5,76 + 10,24 = 16, demak masofa 4 m. 5,6 m — sonlarni qo'shish, 0,8 m — ayirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='107' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='107' x2='224' y2='227.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='224' y2='227.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='99.0' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='234.0' y='241.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='86.0' y='159.8' font-size='13' fill='%23334155' text-anchor='end'%3E2,4 m%3C/text%3E%3Ctext x='159.0' y='234.2' font-size='13' fill='%23334155' text-anchor='middle'%3E3,2 m%3C/text%3E%3Ctext x='171.0' y='165.5' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-lampa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#9b593208"
+    },
+    {
+      "q": "Shiftga tik o'rnatilgan kamera pol sathidan 3 m balandlikda. Kamera ostidagi pol nuqtasidan pol bo'ylab cho'zilgan to'g'ri chiziqli belgigacha 4 m. Kameradan belgigacha bo'lgan eng qisqa masofa uning ostidagi nuqtadan belgigacha bo'lgan masofadan necha foizga ko'p?",
+      "v": [
+        "30% ga",
+        "12,5% ga",
+        "25% ga",
+        "20% ga"
+      ],
+      "t": 2,
+      "izoh": "Poldagi 4 m li kesma belgiga perpendikulyar, uch perpendikulyar teoremasiga ko'ra kameradan belgigacha bo'lgan og'ma ham belgiga perpendikulyar. Og'ma = √(3² + 4²) = 5 m. Ortish (5 − 4) : 4 = 0,25, ya'ni 25%. 20% — ortishni 5 ga bo'lish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='254.9' y1='182.4' x2='196.4' y2='237' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='196.4' y='253.0' font-size='13' fill='%23334155' text-anchor='middle'%3Ebelgi%3C/text%3E%3Cline x1='107' y1='96.8' x2='107' y2='186.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='107' y1='96.8' x2='227' y2='208.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107' y1='186.8' x2='227' y2='208.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='107,173.8 119.7,176.1 119.7,189.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='215.2,206.3 205.7,215.2 217.5,217.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='107.0' y='88.8' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='99.0' y='200.8' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='239.0' y='204.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='99.0' y='145.8' font-size='13' fill='%23334155' text-anchor='end'%3E3 m%3C/text%3E%3Ctext x='163.0' y='191.6' font-size='13' fill='%23334155' text-anchor='middle'%3E4 m%3C/text%3E%3Ctext x='177.0' y='150.6' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-lampa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#e0132abe"
+    },
+    {
+      "q": "Devorga mahkamlangan kronshteyn uchidagi kamera stol tekisligidan 1,6 m balandda. Kameradan stolning to'g'ri chiziqli qirrasigacha eng qisqa masofa 3,4 m bo'lsa, kameraning stoldagi proyeksiyasidan shu qirragacha masofa nechaga teng?",
+      "v": [
+        "3,75 m",
+        "3 m",
+        "1,8 m",
+        "5 m"
+      ],
+      "t": 1,
+      "izoh": "Kameradan qirragacha bo'lgan eng qisqa kesma og'ma va u qirraga perpendikulyar. Teskari teoremaga ko'ra proyeksiya ham qirraga perpendikulyar. Proyeksiya² = 3,4² − 1,6² = 11,56 − 2,56 = 9, demak 3 m. 1,8 m — sonlarni ayirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='254.9' y1='182.4' x2='196.4' y2='237' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='196.4' y='253.0' font-size='13' fill='%23334155' text-anchor='middle'%3Eqirra%3C/text%3E%3Cline x1='107' y1='122.8' x2='107' y2='186.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='107' y1='122.8' x2='227' y2='208.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107' y1='186.8' x2='227' y2='208.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='107,173.8 119.7,176.1 119.7,189.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='215.2,206.3 205.7,215.2 217.5,217.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='107.0' y='114.8' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='99.0' y='200.8' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='239.0' y='204.4' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='99.0' y='158.8' font-size='13' fill='%23334155' text-anchor='end'%3E1,6 m%3C/text%3E%3Ctext x='163.0' y='191.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='177.0' y='163.6' font-size='13' fill='%23334155' text-anchor='start'%3E3,4 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-lampa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#f853c21e"
+    },
+    {
+      "q": "Qurilayotgan binoning tik ustuniga 20 m balandlikda kuzatuv nuqtasi o'rnatilgan. Ustun tagidan g'isht uyumigacha yer bo'ylab 21 m bo'lsa, kuzatuv nuqtasidan g'isht uyumigacha bo'lgan masofa nechaga teng?",
+      "v": [
+        "29 m",
+        "41 m",
+        "1 m",
+        "√41 m"
+      ],
+      "t": 0,
+      "izoh": "Ustun yer tekisligiga perpendikulyar, 21 m esa og'maning proyeksiyasi. Og'ma² = 20² + 21² = 400 + 441 = 841, demak masofa 29 m. 41 m — o'lchamlarni qo'shish, 1 m — ayirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='80.7' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='80.7' x2='224' y2='227.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='224' y2='227.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='72.7' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='234.0' y='241.9' font-size='13' fill='%23334155' text-anchor='start'%3EG%3C/text%3E%3Ctext x='86.0' y='146.6' font-size='13' fill='%23334155' text-anchor='end'%3E20 m%3C/text%3E%3Ctext x='159.0' y='234.2' font-size='13' fill='%23334155' text-anchor='middle'%3E21 m%3C/text%3E%3Ctext x='171.0' y='152.3' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-qurilish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#38558d67"
+    },
+    {
+      "q": "Qurilish maydonchasi bo'ylab to'g'ri chiziqli xavfsizlik chizig'i tortilgan. Balandligi 9 m bo'lgan tik ustunning tagidan bu chiziqqacha eng qisqa masofa 12 m. Ustun uchidagi chiroqdan chiziqqacha eng qisqa masofani toping.",
+      "v": [
+        "21 m",
+        "3 m",
+        "√63 m",
+        "15 m"
+      ],
+      "t": 3,
+      "izoh": "Ustun tagidan chiziqqacha bo'lgan 12 m li kesma chiziqqa perpendikulyar va u og'maning proyeksiyasi. Uch perpendikulyar teoremasiga ko'ra chiroqdan chiziqqacha bo'lgan kesma ham chiziqqa perpendikulyar, ya'ni eng qisqa. Uzunligi √(9² + 12²) = √(81 + 144) = 15 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='254.9' y1='182.4' x2='196.4' y2='237' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='196.4' y='253.0' font-size='13' fill='%23334155' text-anchor='middle'%3Echiziq%3C/text%3E%3Cline x1='107' y1='96.8' x2='107' y2='186.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='107' y1='96.8' x2='227' y2='208.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107' y1='186.8' x2='227' y2='208.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='107,173.8 119.7,176.1 119.7,189.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='215.2,206.3 205.7,215.2 217.5,217.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='107.0' y='88.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='99.0' y='200.8' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='239.0' y='204.4' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='99.0' y='145.8' font-size='13' fill='%23334155' text-anchor='end'%3E9 m%3C/text%3E%3Ctext x='163.0' y='191.6' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='177.0' y='150.6' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qurilish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#25c05945"
+    },
+    {
+      "q": "Tekis maydonda ikkita tik ustun turibdi: balandliklari 6 m va 11 m, ustunlar tagi orasidagi masofa esa 12 m. Baland ustunning uchidan past ustunning uchigacha bo'lgan masofani toping.",
+      "v": [
+        "12 m",
+        "√305 m",
+        "13 m",
+        "17 m"
+      ],
+      "t": 2,
+      "izoh": "Past ustun uchidan baland ustunga gorizontal kesma o'tkazamiz. Hosil bo'lgan uchburchakda katetlar 12 m va balandliklar farqi 11 − 6 = 5 m. Izlanayotgan masofa √(12² + 5²) = √(144 + 25) = 13 m. √305 — balandliklar farqi o'rniga yig'indisini olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-qurilish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#671490da"
+    },
+    {
+      "q": "Uy tomiga tik o'rnatilgan 2 m li trubaning uchidan tomning to'g'ri chiziqli chetigacha eng qisqa masofa 2,5 m. Truba tagidan tom chetigacha bo'lgan masofa necha metr?",
+      "v": [
+        "0,5 m",
+        "4,5 m",
+        "3,2 m",
+        "1,5 m"
+      ],
+      "t": 3,
+      "izoh": "Truba tom tekisligiga perpendikulyar, izlanayotgan kesma esa og'maning proyeksiyasi. Teskari teoremaga ko'ra u ham tom chetiga perpendikulyar. Proyeksiya² = 2,5² − 2² = 6,25 − 4 = 2,25, demak 1,5 m. 0,5 m — sonlarni ayirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='224.9' y1='177' x2='166.4' y2='231.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='166.4' y='247.6' font-size='13' fill='%23334155' text-anchor='middle'%3Etom cheti%3C/text%3E%3Cline x1='107' y1='66.8' x2='107' y2='186.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='107' y1='66.8' x2='197' y2='203' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107' y1='186.8' x2='197' y2='203' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='107,173.8 119.7,176.1 119.7,189.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='185.2,200.9 175.7,209.8 187.5,211.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='107.0' y='58.8' font-size='13' fill='%23334155' text-anchor='middle'%3ET%3C/text%3E%3Ctext x='99.0' y='200.8' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='209.0' y='199.0' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='99.0' y='130.8' font-size='13' fill='%23334155' text-anchor='end'%3E2 m%3C/text%3E%3Ctext x='148.0' y='188.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='162.0' y='132.9' font-size='13' fill='%23334155' text-anchor='start'%3E2,5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qurilish",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#9bfe0a00"
+    },
+    {
+      "q": "a to'g'ri chiziq α tekislikka perpendikulyar, b to'g'ri chiziq esa a ga parallel qilib o'tkazilgan. b to'g'ri chiziq bilan α tekislik orasidagi munosabat qanday bo'ladi?",
+      "v": [
+        "Berilganlardan xulosa chiqarib bo'lmaydi",
+        "b ham α tekislikka perpendikulyar",
+        "b to'g'ri chiziq α ga parallel",
+        "b to'g'ri chiziq α tekislikda yotadi"
+      ],
+      "t": 1,
+      "izoh": "Agar ikki to'g'ri chiziqdan biri tekislikka perpendikulyar bo'lsa, unga parallel to'g'ri chiziq ham shu tekislikka perpendikulyar bo'ladi. Sababi: parallel to'g'ri chiziqlar tekislikdagi bir xil yo'nalishlar bilan bir xil burchak hosil qiladi, demak b ham barcha yo'nalishlarga perpendikulyar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallel-perp-xossa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#f1876431"
+    },
+    {
+      "q": "Fazoda ikkita har xil to'g'ri chiziqning ikkalasi ham bitta α tekislikka perpendikulyar qilib o'tkazilgan. Bu to'g'ri chiziqlar o'zaro qanday joylashadi?",
+      "v": [
+        "O'zaro parallel bo'ladi",
+        "O'zaro perpendikulyar bo'ladi",
+        "Albatta kesishadi",
+        "Ayqash to'g'ri chiziqlar bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Bitta tekislikka perpendikulyar bo'lgan ikki to'g'ri chiziq har doim o'zaro parallel. Agar ular kesishganda edi, bitta nuqtadan tekislikka ikkita har xil perpendikulyar tushgan bo'lardi, bu esa mumkin emas. Ayqash bo'lishi ham mumkin emas, chunki ular bitta tekislikda yotadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='120' y1='90' x2='120' y2='210' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='120,197 132.7,199.3 132.7,212.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='215' y1='98' x2='215' y2='218' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='215,205 227.7,207.3 227.7,220.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='120.0' y='82.0' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='215.0' y='90.0' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='112.0' y='222.0' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='207.0' y='230.0' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallel-perp-xossa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#841f5162"
+    },
+    {
+      "q": "Ustaxonada ikkita ustun bir xil tekis polga tik o'rnatilgan. Poldan 3 m balandlikda ular orasidagi masofa 4 m ni tashkil qiladi. Poldan 7 m balandlikda ustunlar orasidagi masofa qanday bo'ladi?",
+      "v": [
+        "7 m",
+        "8 m",
+        "Balandlikka mutanosib ravishda ortadi",
+        "4 m"
+      ],
+      "t": 3,
+      "izoh": "Ikkala ustun ham pol tekisligiga perpendikulyar, demak ular o'zaro parallel. Parallel to'g'ri chiziqlar orasidagi masofa hamma joyda bir xil bo'ladi, shuning uchun 7 m balandlikda ham masofa 4 m qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-perp-xossa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#681d1a1a"
+    },
+    {
+      "q": "α tekislikka perpendikulyar a to'g'ri chiziq va unga parallel b to'g'ri chiziq tekislikni A va B nuqtalarda kesadi. a hamda b orqali o'tuvchi tekislik α bilan qaysi chiziq bo'ylab kesishadi va bu chiziq a ga qanday munosabatda bo'ladi?",
+      "v": [
+        "Faqat bitta A nuqtada kesishadi",
+        "AB to'g'ri chiziq bo'ylab, u a va b ga perpendikulyar",
+        "AB to'g'ri chiziq bo'ylab, u a ga parallel",
+        "Kesishmaydi, chunki tekisliklar parallel"
+      ],
+      "t": 1,
+      "izoh": "a va b parallel bo'lgani uchun ular yagona tekislik aniqlaydi, bu tekislik α ni A va B nuqtalarda kesib o'tadi. Ikki tekislikning kesishish chizig'i AB bo'ladi. AB tekislik α da yotgani uchun a ⊥ α dan a ⊥ AB, xuddi shunday b ⊥ AB kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallel-perp-xossa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#e7ca8f52"
+    },
+    {
+      "q": "Bitta nuqtadan α tekislikka ikkita og'ma chiqarilgan va birinchisining proyeksiyasi ikkinchisinikidan uzunroq. Og'malarning uzunliklari haqida nima deyish mumkin?",
+      "v": [
+        "Og'malar teng bo'ladi",
+        "Proyeksiyalarga qarab xulosa chiqarib bo'lmaydi",
+        "Birinchi og'ma ham uzunroq bo'ladi",
+        "Ikkinchi og'ma uzunroq bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Og'ma² = perpendikulyar² + proyeksiya² bo'lib, perpendikulyar ikkala og'ma uchun bir xil. Demak proyeksiya qancha katta bo'lsa, og'ma ham shuncha katta bo'ladi. Katta proyeksiyaga katta og'ma mos keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='91.2' y1='140.4' x2='91.2' y2='206' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='206' x2='209.2' y2='227.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='206' x2='134.7' y2='189.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91.2' y1='140.4' x2='209.2' y2='227.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91.2' y1='140.4' x2='134.7' y2='189.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='91.2,193 103.9,195.3 103.9,208.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='91.2' y='132.4' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='83.2' y='220.0' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='219.2' y='239.2' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='142.7' y='183.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='83.2' y='177.2' font-size='13' fill='%23334155' text-anchor='end'%3Eh%3C/text%3E%3Ctext x='150.2' y='233.6' font-size='13' fill='%23334155' text-anchor='middle'%3Ekatta%3C/text%3E%3Ctext x='107.0' y='192.0' font-size='13' fill='%23334155' text-anchor='middle'%3Ekichik%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ogma-taqqoslash",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#ea517979"
+    },
+    {
+      "q": "M nuqtadan α tekislikka MA = 15 sm va MB = 13 sm og'malar chiqarilgan, M nuqtadan tekislikkacha masofa esa 12 sm. MA og'maning proyeksiyasi MB ningkidan necha marta uzun?",
+      "v": [
+        "1,8 marta",
+        "1,15 marta",
+        "2 marta",
+        "1,5 marta"
+      ],
+      "t": 0,
+      "izoh": "MA ning proyeksiyasi √(15² − 12²) = √(225 − 144) = 9 sm. MB ning proyeksiyasi √(13² − 12²) = √(169 − 144) = 5 sm. Nisbat 9 : 5 = 1,8. 1,15 marta — og'malarning o'zini bo'lish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='74.5' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='74.5' x2='191.5' y2='222.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='191.5' y2='222.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='201.5' y='236.1' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='86.0' y='143.5' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='142.8' y='231.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='154.8' y='146.3' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ogma-taqqoslash",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#1c9e6eee"
+    },
+    {
+      "q": "Bitta nuqtadan tekislikka tushirilgan perpendikulyar, og'ma va og'maning proyeksiyasi haqida quyidagilardan qaysi biri HAR DOIM o'rinli bo'ladi?",
+      "v": [
+        "Og'ma perpendikulyar va proyeksiya yig'indisiga teng",
+        "Og'ma perpendikulyardan uzun",
+        "Og'ma proyeksiyadan qisqa",
+        "Perpendikulyar proyeksiyadan uzun"
+      ],
+      "t": 1,
+      "izoh": "Perpendikulyar, proyeksiya va og'ma to'g'ri burchakli uchburchak hosil qiladi, unda og'ma gipotenuza. Gipotenuza har doim har bir katetdan uzun, shuning uchun og'ma perpendikulyardan ham, proyeksiyadan ham uzun. Yig'indiga tenglik esa hech qachon bajarilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ogma-taqqoslash",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#3b8016f4"
+    },
+    {
+      "q": "M nuqtadan α tekislikka ikkita og'ma chiqarilgan: birinchisi tekislik bilan 30°, ikkinchisi esa 60° li burchak hosil qiladi. Qaysi og'ma uzunroq va u ikkinchisidan necha marta katta?",
+      "v": [
+        "60° li og'ma, √3 marta",
+        "30° li og'ma, 2 marta",
+        "Ular teng uzunlikda",
+        "30° li og'ma, √3 marta"
+      ],
+      "t": 3,
+      "izoh": "Og'ma = balandlik : sin φ. Balandlikni h desak, birinchi og'ma h : sin30° = 2h, ikkinchisi h : sin60° = 2h/√3. Nisbat 2h : (2h/√3) = √3. Burchak kichik bo'lsa og'ma uzunroq bo'ladi, demak 30° li og'ma √3 marta uzun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ogma-taqqoslash",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#a91cac66"
+    },
+    {
+      "q": "SA kesma ABCD kvadrat tekisligiga perpendikulyar va kvadratning tomoni AB = 5 sm. SB og'ma kvadrat tekisligi bilan 45° li burchak hosil qilsa, SA kesmaning uzunligi nechaga teng?",
+      "v": [
+        "5 sm",
+        "5√2 sm",
+        "10 sm",
+        "2,5 sm"
+      ],
+      "t": 0,
+      "izoh": "SB og'maning proyeksiyasi AB bo'lgani uchun burchak SB va AB orasida. tg45° = SA : AB, ya'ni 1 = SA : 5 va SA = 5 sm. 5√2 sm — bu SB og'maning o'zi, ya'ni boshqa kattalik.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolygon points='121.3,182.4 236.3,203.1 184.6,251.4 69.5,230.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='121.3' y2='182.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='236.3' y2='203.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='184.6' y2='251.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='69.5' y2='230.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='121.3,169.4 134,171.7 134,184.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.3' y='176.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='246.3' y='199.1' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='194.6' y='265.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='61.5' y='244.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='121.3' y='59.4' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='178.8' y='186.7' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='113.3' y='128.9' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-teskari",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#a4fc30e9"
+    },
+    {
+      "q": "Og'ma α tekislik bilan 30° li burchak hosil qiladi va uning tekislikdagi proyeksiyasi 12 sm. Og'ma chiqqan nuqtadan tekislikkacha bo'lgan masofani toping.",
+      "v": [
+        "6 sm",
+        "24 sm",
+        "4√3 sm",
+        "12√3 sm"
+      ],
+      "t": 2,
+      "izoh": "Balandlik proyeksiyaga qarama-qarshi emas, balki unga tegishli burchak orqali bog'langan: balandlik = proyeksiya · tg30° = 12 · (1/√3) = 12/√3 = 4√3 sm. 12√3 sm — tangensga ko'paytirish o'rniga bo'lish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='129.4' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='129.4' x2='224' y2='227.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='224' y2='227.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='121.4' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='234.0' y='241.9' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='86.0' y='171.0' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='159.0' y='234.2' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Cpolyline points='194,222.5 194,221.4 194.1,220.3 194.2,219.2 194.3,218.1 194.5,217.1 194.7,216 195,214.9 195.3,213.9 195.7,212.9 196.1,211.9 196.5,210.9 197,210 197.5,209.1 198,208.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='190.0' y='221.9' font-size='13' fill='%23334155' text-anchor='end'%3E30°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-teskari",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#eb10e768"
+    },
+    {
+      "q": "Og'ma bilan uning tekislikdagi proyeksiyasi orasidagi burchak 60° ga teng. Og'ma o'z proyeksiyasidan 9 sm ga uzun bo'lsa, og'maning uzunligi nechaga teng?",
+      "v": [
+        "27 sm",
+        "12 sm",
+        "18 sm",
+        "9 sm"
+      ],
+      "t": 2,
+      "izoh": "Og'mani l desak, proyeksiya l · cos60° = l/2 bo'ladi. Shartga ko'ra l − l/2 = 9, ya'ni l/2 = 9 va l = 18 sm. Tekshiramiz: proyeksiya 9 sm, farq esa 18 − 9 = 9 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-teskari",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#611f69c0"
+    },
+    {
+      "q": "Tepalikka tik o'rnatilgan antennaning balandligi 30 m. Uning uchidan tortilgan tros yer tekisligi bilan 30° li burchak hosil qilsa, trosning mahkamlash nuqtasi antenna tagidan necha metr narida?",
+      "v": [
+        "10√3 m",
+        "60 m",
+        "15√3 m",
+        "30√3 m"
+      ],
+      "t": 3,
+      "izoh": "Tros og'ma, uning proyeksiyasi izlanayotgan masofa. Proyeksiya = balandlik · ctg30° = 30 · √3 = 30√3 m. 10√3 m — ctg o'rniga tg ni qo'llash, 60 m esa trosning uzunligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='129.4' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='129.4' x2='224' y2='227.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='224' y2='227.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='121.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='234.0' y='241.9' font-size='13' fill='%23334155' text-anchor='start'%3EQ%3C/text%3E%3Ctext x='86.0' y='171.0' font-size='13' fill='%23334155' text-anchor='end'%3E30 m%3C/text%3E%3Ctext x='159.0' y='234.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='194,222.5 194,221.4 194.1,220.3 194.2,219.2 194.3,218.2 194.5,217.1 194.7,216 195,214.9 195.3,213.9 195.7,212.9 196.1,211.9 196.5,210.9 197,210 197.5,209.1 198,208.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='190.0' y='221.9' font-size='13' fill='%23334155' text-anchor='end'%3E30°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-teskari",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#c915803d"
+    },
+    {
+      "q": "Fazoviy to'g'ri burchakli koordinatalar sistemasida M(3; 4; 12) nuqta berilgan. M nuqtadan Oxy tekisligigacha bo'lgan masofa hamda uning proyeksiyasidan koordinata boshigacha bo'lgan masofa mos ravishda nechaga teng?",
+      "v": [
+        "12 va 7",
+        "12 va 5",
+        "5 va 12",
+        "13 va 12"
+      ],
+      "t": 1,
+      "izoh": "M nuqtaning Oxy tekisligidagi proyeksiyasi M₁(3; 4; 0) nuqta, MM₁ kesma esa tekislikka perpendikulyar va uning uzunligi applikataga teng, ya'ni 12. Proyeksiyadan koordinata boshigacha masofa √(3² + 4²) = √(9 + 16) = 5.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3EOxy%3C/text%3E%3Cline x1='94' y1='74.5' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='74.5' x2='148.2' y2='214.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='148.2' y2='214.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EM₁%3C/text%3E%3Ctext x='158.2' y='228.3' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='86.0' y='143.5' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='121.1' y='227.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#6abcc5f3"
+    },
+    {
+      "q": "Fazoda A(2; 0; 0), B(0; 6; 0) va S(0; 0; 8) nuqtalar hamda koordinata boshi O berilgan. SO kesma Oxy tekisligiga perpendikulyarmi va S nuqtadan B nuqtagacha bo'lgan masofa nechaga teng?",
+      "v": [
+        "Ha, perpendikulyar; SB = 10",
+        "Ha, perpendikulyar; SB = 14",
+        "Yo'q, perpendikulyar emas; SB = 10",
+        "Ha, perpendikulyar; SB = √28"
+      ],
+      "t": 0,
+      "izoh": "S nuqta Oz o'qida yotadi, Oz o'qi esa Oxy tekisligiga perpendikulyar, demak SO ⊥ Oxy. SB og'maning proyeksiyasi OB = 6 bo'lgani uchun SB = √(8² + 6²) = √(64 + 36) = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#bbd35a5d"
+    },
+    {
+      "q": "OS kesma Oxy tekisligiga perpendikulyar va S(0; 0; 6,4). Tekislikda P(6; 0; 0) hamda Q(0; 8; 0) nuqtalar olingan bo'lsa, S nuqtadan PQ to'g'ri chizig'igacha bo'lgan masofani toping.",
+      "v": [
+        "8",
+        "10",
+        "6,4",
+        "4,8"
+      ],
+      "t": 0,
+      "izoh": "OPQ to'g'ri burchakli uchburchakda PQ = √(6² + 8²) = 10, O dan PQ gacha masofa esa 6 · 8 : 10 = 4,8. Bu kesma PQ ga perpendikulyar va u og'maning proyeksiyasi, uch perpendikulyar teoremasiga ko'ra og'ma ham PQ ga perpendikulyar. Masofa = √(6,4² + 4,8²) = √(40,96 + 23,04) = √64 = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#6183e642"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ kubda AA₁ qirra asos tekisligiga perpendikulyar. AA₁ qirra bilan asosdagi BD diagonal orasidagi burchak nechaga teng?",
+      "v": [
+        "45°",
+        "60°",
+        "AA₁ va BD kesishmaydi, shuning uchun burchak aniqlanmaydi",
+        "90°"
+      ],
+      "t": 3,
+      "izoh": "AA₁ va BD ayqash to'g'ri chiziqlar — ular kesishmaydi, lekin ayqash to'g'ri chiziqlar orasidagi burchak baribir aniqlanadi. DD₁ ∥ AA₁ bo'lgani uchun izlangan burchak DD₁ bilan BD orasidagi burchakka teng. AA₁ (demak DD₁ ham) ABCD tekisligiga perpendikulyar, BD esa shu tekislikda yotadi, shuning uchun burchak 90°. 45° — kvadrat diagonali burchagi bilan chalkashtirish natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='123.3,177.2 243.3,198.8 189.3,249.2 69.3,227.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpolygon points='123.3,57.2 243.3,78.8 189.3,129.2 69.3,107.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123.3' y1='177.2' x2='123.3' y2='57.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='243.3' y1='198.8' x2='243.3' y2='78.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='189.3' y1='249.2' x2='189.3' y2='129.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='69.3' y1='227.6' x2='69.3' y2='107.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='243.3,198.8 189.3,249.2 69.3,227.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='243.3' y1='198.8' x2='123.3' y2='177.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='123.3' y1='177.2' x2='69.3' y2='227.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='243.3' y1='198.8' x2='69.3' y2='227.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.3' y='183.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='247.3' y='214.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='199.3' y='261.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='61.3' y='241.6' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='115.3' y='53.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='247.3' y='72.8' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='199.3' y='129.2' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='61.3' y='103.6' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#43cecc50"
+    },
+    {
+      "q": "Qirrasi 6 sm bo'lgan ABCDA₁B₁C₁D₁ kubda A₁ uchidan asosdagi BD diagonalgacha bo'lgan masofani toping.",
+      "v": [
+        "6√2 sm",
+        "√42 sm",
+        "3√6 sm",
+        "3√2 sm"
+      ],
+      "t": 2,
+      "izoh": "A nuqtadan BD gacha masofa kvadrat diagonalining yarmi: 6√2 : 2 = 3√2 sm, u BD ga perpendikulyar. AA₁ asosga perpendikulyar bo'lgani uchun bu kesma proyeksiya bo'ladi va uch perpendikulyar teoremasiga ko'ra A₁ dan BD gacha bo'lgan kesma ham BD ga perpendikulyar. Masofa = √(6² + (3√2)²) = √(36 + 18) = √54 = 3√6 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='123.3,177.2 243.3,198.8 189.3,249.2 69.3,227.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpolygon points='123.3,57.2 243.3,78.8 189.3,129.2 69.3,107.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123.3' y1='177.2' x2='123.3' y2='57.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='243.3' y1='198.8' x2='243.3' y2='78.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='189.3' y1='249.2' x2='189.3' y2='129.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='69.3' y1='227.6' x2='69.3' y2='107.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='243.3,198.8 189.3,249.2 69.3,227.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='243.3' y1='198.8' x2='123.3' y2='177.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='123.3' y1='177.2' x2='69.3' y2='227.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='243.3' y1='198.8' x2='69.3' y2='227.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.3' y='183.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='247.3' y='214.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='199.3' y='261.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='61.3' y='241.6' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='115.3' y='53.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='247.3' y='72.8' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='199.3' y='129.2' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='61.3' y='103.6' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3Ctext x='129.3' y='254.4' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#6f46aac7"
+    },
+    {
+      "q": "Qirrasi 4 sm bo'lgan kubning AC₁ diagonali ABCD asos tekisligi bilan burchak hosil qiladi. Shu burchakning tangensini toping.",
+      "v": [
+        "2√2",
+        "√2/2",
+        "√2",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "AC₁ diagonalning asosdagi proyeksiyasi AC bo'lib, AC = 4√2 sm. CC₁ qirra asosga perpendikulyar, shuning uchun tg φ = CC₁ : AC = 4 : (4√2) = 1/√2 = √2/2. √2 — nisbatni teskari olish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='123.3,177.2 243.3,198.8 189.3,249.2 69.3,227.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpolygon points='123.3,57.2 243.3,78.8 189.3,129.2 69.3,107.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123.3' y1='177.2' x2='123.3' y2='57.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='243.3' y1='198.8' x2='243.3' y2='78.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='189.3' y1='249.2' x2='189.3' y2='129.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='69.3' y1='227.6' x2='69.3' y2='107.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='243.3,198.8 189.3,249.2 69.3,227.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='243.3' y1='198.8' x2='123.3' y2='177.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='123.3' y1='177.2' x2='69.3' y2='227.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='123.3' y1='177.2' x2='189.3' y2='249.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='123.3' y1='177.2' x2='189.3' y2='129.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.3' y='183.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='247.3' y='214.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='199.3' y='261.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='61.3' y='241.6' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='115.3' y='53.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='247.3' y='72.8' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='199.3' y='129.2' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='61.3' y='103.6' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3Ctext x='129.3' y='254.4' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#dba95e52"
+    },
+    {
+      "q": "To'g'ri burchakli yashikning ichki o'lchamlari 3 dm, 4 dm va 12 dm. Yashik ichiga to'liq joylasha oladigan eng uzun to'g'ri tayoqning uzunligi necha detsimetr?",
+      "v": [
+        "12 dm",
+        "13 dm",
+        "19 dm",
+        "√137 dm"
+      ],
+      "t": 1,
+      "izoh": "Eng uzun tayoq yashik diagonali bo'ylab joylashadi. Asos diagonali √(3² + 4²) = 5 dm, u og'maning proyeksiyasi. Balandlik asosga perpendikulyar bo'lgani uchun diagonal = √(12² + 5²) = √(144 + 25) = 13 dm. 19 dm — uchala o'lchamni qo'shish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='123.3,177.2 163.3,184.4 149.8,197 109.8,189.8' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpolygon points='123.3,57.2 163.3,64.4 149.8,77 109.8,69.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123.3' y1='177.2' x2='123.3' y2='57.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='163.3' y1='184.4' x2='163.3' y2='64.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='149.8' y1='197' x2='149.8' y2='77' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='109.8' y1='189.8' x2='109.8' y2='69.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='163.3,184.4 149.8,197 109.8,189.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='163.3' y1='184.4' x2='123.3' y2='177.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='123.3' y1='177.2' x2='109.8' y2='189.8' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='123.3' y1='177.2' x2='149.8' y2='197' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='123.3' y1='177.2' x2='149.8' y2='77' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.3' y='183.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='167.3' y='200.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='159.8' y='209.0' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='101.8' y='203.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='115.3' y='53.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='167.3' y='58.4' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='159.8' y='77.0' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='101.8' y='65.8' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3Ctext x='129.8' y='209.4' font-size='13' fill='%23334155' text-anchor='middle'%3E4 dm%3C/text%3E%3Ctext x='159.8' y='141.0' font-size='13' fill='%23334155' text-anchor='start'%3E12 dm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-perp",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#de8f7cba"
+    },
+    {
+      "q": "SA kesma ABC uchburchak tekisligiga perpendikulyar, uchburchakda ∠B = 90°, AB = 6 sm, BC = 8 sm va SA = 6 sm. S nuqtadan uchburchak uchlarigacha bo'lgan masofalarning eng kattasini toping.",
+      "v": [
+        "2√34 sm",
+        "6√2 sm",
+        "10 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "SA = 6 sm, SB = √(6² + 6²) = 6√2 ≈ 8,5 sm. AC = √(6² + 8²) = 10 sm bo'lgani uchun SC = √(6² + 10²) = √136 = 2√34 ≈ 11,7 sm. Eng katta masofa proyeksiyasi eng uzun bo'lgan og'maga to'g'ri keladi, ya'ni SC.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolygon points='84,212.7 132,221.4 160.8,194.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='84' y1='164.7' x2='84' y2='212.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='84' y1='164.7' x2='132' y2='221.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='84' y1='164.7' x2='160.8' y2='194.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='84,199.7 96.7,202 96.7,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='76.0' y='224.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='142.0' y='233.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='160.8' y='186.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='84.0' y='156.7' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='76.0' y='192.7' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Ctext x='108.0' y='233.0' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='158.4' y='211.9' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tahlil-kombinatsiya",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#acd472a2"
+    },
+    {
+      "q": "SA kesma tomoni 6 sm bo'lgan ABCD kvadrat tekisligiga perpendikulyar va SA = 8 sm. S nuqtadan kvadratning markazigacha bo'lgan masofani toping.",
+      "v": [
+        "√136 sm",
+        "√73 sm",
+        "√82 sm",
+        "10 sm"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat markazi A uchidan diagonalning yarmi qadar uzoqda: 6√2 : 2 = 3√2 sm. Bu og'maning proyeksiyasi. Masofa = √(8² + (3√2)²) = √(64 + 18) = √82 sm. 10 sm — proyeksiya sifatida tomonni, √136 sm — butun diagonalni olish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpolygon points='121.3,182.4 207.6,197.9 168.7,234.1 82.5,218.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='121.3' y2='182.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='207.6' y2='197.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='168.7' y2='234.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.3' y1='67.4' x2='82.5' y2='218.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='121.3,169.4 134,171.7 134,184.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.3' y='176.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='217.6' y='193.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='178.7' y='248.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='74.5' y='232.6' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='121.3' y='59.4' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='164.4' y='184.1' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='113.3' y='128.9' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tahlil-kombinatsiya",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#6eba3de3"
+    },
+    {
+      "q": "M nuqtadan α tekislikka og'ma va perpendikulyar tushirilgan, og'ma tekislik bilan 45° li burchak hosil qiladi. Perpendikulyar 2 marta uzaytirilib, proyeksiya o'zgarmay qolsa, yangi og'ma bilan tekislik orasidagi burchakning tangensi nechaga teng?",
+      "v": [
+        "1/2",
+        "√2",
+        "4",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich holatda tg45° = perpendikulyar : proyeksiya = 1, demak perpendikulyar proyeksiyaga teng. Uni 2 marta uzaytirsak nisbat 2 marta ortadi: tg φ = 2 · proyeksiya : proyeksiya = 2. 1/2 — nisbatni teskari yozish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tahlil-kombinatsiya",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#1ccacb9c"
+    },
+    {
+      "q": "Bog'da balandligi 4 m bo'lgan ustun tik turibdi va uning uchidan yerdagi to'g'ri chiziqli ariq chetigacha eng qisqa masofa 5 m. Ustun yana 2 m ga uzaytirilsa, uning uchidan ariq chetigacha eng qisqa masofa qanday bo'ladi?",
+      "v": [
+        "√61 m",
+        "9 m",
+        "3√5 m",
+        "7 m"
+      ],
+      "t": 2,
+      "izoh": "Avval ustun tagidan ariqqacha masofani topamiz: √(5² − 4²) = √(25 − 16) = 3 m, u ariqqa perpendikulyar va uzaytirishdan keyin ham o'zgarmaydi. Yangi balandlik 6 m, demak yangi masofa √(6² + 3²) = √(36 + 9) = √45 = 3√5 m. 7 m — 5 ga 2 ni qo'shish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='74.5' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='74.5' x2='191.5' y2='222.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='191.5' y2='222.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EU%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='201.5' y='236.1' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='86.0' y='143.5' font-size='13' fill='%23334155' text-anchor='end'%3E4 m%3C/text%3E%3Ctext x='154.8' y='146.3' font-size='13' fill='%23334155' text-anchor='start'%3E5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tahlil-kombinatsiya",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#3339813d"
+    },
+    {
+      "q": "Fazodagi nuqtadan tekislikkacha bo'lgan masofa deb qaysi kesmaning uzunligiga aytiladi?",
+      "v": [
+        "Nuqtadan tekislikdagi ixtiyoriy nuqtagacha bo'lgan kesmaga",
+        "Nuqtadan tekislikka tushirilgan perpendikulyarga",
+        "Nuqtadan chiqarilgan eng uzun og'maga",
+        "Og'maning tekislikdagi proyeksiyasiga"
+      ],
+      "t": 1,
+      "izoh": "Perpendikulyar to'g'ri burchakli uchburchakda katet, har qanday og'ma esa gipotenuza bo'ladi. Gipotenuza katetdan uzun bo'lgani uchun perpendikulyar barcha kesmalar ichida eng qisqasi. Shuning uchun masofa aynan perpendikulyar uzunligi bilan o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perp-tekislik-masofa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#9652cf53"
+    },
+    {
+      "q": "M nuqtadan α tekislikka uzunliklari 10 sm, 12 sm va 15 sm bo'lgan uchta og'ma chiqarilgan. Shu ma'lumotga ko'ra M nuqtadan tekislikkacha bo'lgan masofa haqida nima deyish mumkin?",
+      "v": [
+        "U 10 sm dan kichik",
+        "U aynan 10 sm ga teng",
+        "U 12 sm ga teng",
+        "U 15 sm dan katta"
+      ],
+      "t": 0,
+      "izoh": "Perpendikulyar har qanday og'madan qisqa, chunki og'ma gipotenuza vazifasini bajaradi. Eng qisqa og'ma 10 sm bo'lgani uchun masofa undan ham kichik bo'lishi shart. Aniq qiymatni topish uchun proyeksiyalardan biri ma'lum bo'lishi kerak edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perp-tekislik-masofa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#fe634fc7"
+    },
+    {
+      "q": "Tekis polda turgan shkafning yuqori burchagidan polgacha bo'lgan masofa 2 m, o'sha burchakdan poldagi bir nuqtagacha esa 2,9 m. Poldagi nuqtadan shkaf burchagining polga proyeksiyasigacha bo'lgan masofani toping.",
+      "v": [
+        "0,9 m",
+        "4,9 m",
+        "3,52 m",
+        "2,1 m"
+      ],
+      "t": 3,
+      "izoh": "Shkaf burchagidan polgacha bo'lgan 2 m — perpendikulyar, 2,9 m esa og'ma. Izlanayotgan kesma og'maning proyeksiyasi: proyeksiya² = 2,9² − 2² = 8,41 − 4 = 4,41, demak 2,1 m. 0,9 m — sonlarni to'g'ridan-to'g'ri ayirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96.3,152.3 296.3,188.3 219.8,259.7 19.8,223.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='31.8' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cline x1='94' y1='80.7' x2='94' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='94' y1='80.7' x2='224' y2='227.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='204.5' x2='224' y2='227.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='94,191.5 106.7,193.8 106.7,206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.0' y='72.7' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='86.0' y='218.5' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='234.0' y='241.9' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='86.0' y='146.6' font-size='13' fill='%23334155' text-anchor='end'%3E2 m%3C/text%3E%3Ctext x='159.0' y='234.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='171.0' y='152.3' font-size='13' fill='%23334155' text-anchor='start'%3E2,9 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perp-tekislik-masofa",
+      "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi#805a480e"
+    }
+  ]
+}

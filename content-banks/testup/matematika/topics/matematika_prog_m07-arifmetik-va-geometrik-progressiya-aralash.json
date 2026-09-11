@@ -1,0 +1,1609 @@
+{
+  "nom": "Arifmetik va geometrik progressiya aralash masalalari",
+  "bolim": "Ketma-ketliklar va progressiyalar",
+  "blok": "prog",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Sardor daftariga uchta sonni ketma-ket yozdi: 7, x va 23. Bu uchta son arifmetik progressiyaning ketma-ket hadlari bo'lsa, x ning qiymatini toping.",
+      "v": [
+        "15",
+        "30",
+        "8",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Arifmetik progressiyada o'rta had chetki hadlarning yarim yig'indisiga teng, ya'ni 2x = 7 + 23. Bundan 2x = 30 va x = 15 kelib chiqadi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-son-ap-shart",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#876f8d10"
+    },
+    {
+      "q": "Malika uchta sonni tanladi: 12, 19 va y. Agar bu sonlar shu tartibda arifmetik progressiya tashkil etsa, uchinchi son y nimaga teng bo'ladi?",
+      "v": [
+        "31",
+        "26",
+        "14",
+        "38"
+      ],
+      "t": 1,
+      "izoh": "Shart bo'yicha 2·19 = 12 + y bo'lishi kerak. Chap tomon 38 ga teng, demak y = 38 − 12 = 26. Boshqacha aytganda ayirma d = 19 − 12 = 7 va y = 19 + 7 = 26. Javob: 26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-son-ap-shart",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#e9f99108"
+    },
+    {
+      "q": "Bir ketma-ketlikning ketma-ket uch hadi −5, k va 13 ko'rinishida berilgan bo'lib, ular arifmetik progressiya hosil qiladi. k ning qiymati qanday?",
+      "v": [
+        "8",
+        "9",
+        "4",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "Arifmetik progressiya sharti 2k = a + c ni qo'llaymiz: 2k = −5 + 13 = 8. Demak k = 4 bo'ladi. Tekshirish: −5, 4, 13 ketma-ketligida ayirma 9 ga teng. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-son-ap-shart",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#a578047b"
+    },
+    {
+      "q": "Uch do'kon bir kun ichida mos ravishda 24, m va 60 ta kitob sotdi. Bu sonlar arifmetik progressiya tashkil etsa, ikkinchi do'kon nechta kitob sotgan?",
+      "v": [
+        "84",
+        "18",
+        "36",
+        "42"
+      ],
+      "t": 3,
+      "izoh": "O'rta had shartidan 2m = 24 + 60 = 84 kelib chiqadi. Demak m = 84 : 2 = 42 ta kitob. Tekshiramiz: 24, 42, 60 da ayirma 18 ga teng. Javob: 42 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-son-ap-shart",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#417f6398"
+    },
+    {
+      "q": "Uchta musbat son 4, t va 25 tartibida yozilgan bo'lib, ular geometrik progressiyaning ketma-ket hadlari hisoblanadi. t ning qiymatini aniqlang.",
+      "v": [
+        "100",
+        "14,5",
+        "6,25",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Geometrik progressiyada o'rta hadning kvadrati chetki hadlar ko'paytmasiga teng: t² = 4·25 = 100. Sonlar musbat bo'lgani uchun t = 10. Tekshirish: 4, 10, 25 da maxraj 2,5 ga teng. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-son-gp-shart",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#97b9d59b"
+    },
+    {
+      "q": "3, n va 27 sonlari shu tartibda geometrik progressiya hosil qiladi. n ning barcha mumkin bo'lgan qiymatlari qaysi javobda to'g'ri ko'rsatilgan?",
+      "v": [
+        "Faqat 9",
+        "9 va −9",
+        "Faqat 15",
+        "Faqat 81"
+      ],
+      "t": 1,
+      "izoh": "Shartdan n² = 3·27 = 81 kelib chiqadi. Kvadrat ildizning ikkita qiymati bor: n = 9 va n = −9. Ikkinchi holda maxraj −3 bo'ladi va 3, −9, 27 ham geometrik progressiya. Javob: 9 va −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-son-gp-shart",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#24375090"
+    },
+    {
+      "q": "Bir zavodda uch oy davomida ishlab chiqarish hajmi 40, p va 90 dona bo'ldi va bu sonlar geometrik progressiya tashkil etdi. p nechaga teng?",
+      "v": [
+        "65",
+        "3600",
+        "60",
+        "50"
+      ],
+      "t": 2,
+      "izoh": "Shart bo'yicha p² = 40·90 = 3600 bo'ladi. Ishlab chiqarish hajmi musbat, shuning uchun p = 60. Maxraj esa 60 : 40 = 1,5 ga teng. Javob: 60 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-son-gp-shart",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#ed0a9264"
+    },
+    {
+      "q": "x, x + 3 va x + 9 ifodalari shu tartibda geometrik progressiyaning ketma-ket hadlari bo'ladigan x sonini toping.",
+      "v": [
+        "1",
+        "0",
+        "3",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "Shartdan (x + 3)² = x·(x + 9) tenglama chiqadi. Chap tomonni yoyamiz: x² + 6x + 9 = x² + 9x, bundan 9 = 3x va x = 3. Hadlar 3, 6, 12 bo'lib, maxraj 2 ga teng. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-son-gp-shart",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#0e1ad109"
+    },
+    {
+      "q": "Arifmetik progressiyaning ketma-ket uch hadi 2, 6 va 10 ga teng. Uchinchi hadga qaysi sonni qo'shsak, hosil bo'lgan uchlik geometrik progressiya hosil qiladi?",
+      "v": [
+        "36",
+        "8",
+        "26",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "Yangi uchinchi hadni c deb belgilaymiz, geometrik progressiya sharti 6² = 2·c. Bundan 36 = 2c va c = 18 chiqadi. Demak qo'shiladigan son 18 − 10 = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ap-dan-qoshib-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#6df056c1"
+    },
+    {
+      "q": "Arifmetik progressiyaning ketma-ket uch hadi 8, 12 va 16 dan iborat. Birinchi hadga qanday son qo'shilsa, hosil bo'lgan uch son geometrik progressiya bo'ladi?",
+      "v": [
+        "12",
+        "9",
+        "1",
+        "−1"
+      ],
+      "t": 2,
+      "izoh": "Yangi birinchi had a bo'lsin, u holda 12² = a·16 bo'lishi kerak. Bundan 144 = 16a va a = 9 chiqadi. Demak birinchi hadga 9 − 8 = 1 qo'shiladi va 9, 12, 16 geometrik progressiya bo'ladi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ap-dan-qoshib-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#acd1937d"
+    },
+    {
+      "q": "Arifmetik progressiyaning ketma-ket uch hadi 4, 10 va 16 ga teng. O'rta haddan qanday eng kichik musbat son ayrilsa, uchta son geometrik progressiya tashkil etadi?",
+      "v": [
+        "8",
+        "6",
+        "64",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Yangi o'rta had b bo'lsin, shart b² = 4·16 = 64 ko'rinishida. Bundan b = 8 yoki b = −8. Eng kichik musbat ayirish uchun b = 8 olamiz, ya'ni 10 − 8 = 2 ayriladi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ap-dan-qoshib-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#8bb5a165"
+    },
+    {
+      "q": "Anvar uch kunda mos ravishda 9, 15 va 21 ta masala yechdi. Uchinchi kungi natijaga nechta masala qo'shilsa, uch kunlik sonlar geometrik progressiya hosil qiladi?",
+      "v": [
+        "6",
+        "4",
+        "25",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Geometrik progressiya sharti 15² = 9·c ko'rinishida, bundan 225 = 9c va c = 25. Demak uchinchi kungi natijaga 25 − 21 = 4 ta masala qo'shiladi. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ap-dan-qoshib-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#f5916de6"
+    },
+    {
+      "q": "Geometrik progressiyaning ketma-ket uch hadi 5, 15 va 45 dan iborat. Uchinchi haddan qaysi son ayrilsa, uchta son arifmetik progressiya hosil qiladi?",
+      "v": [
+        "25",
+        "30",
+        "20",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "Yangi uchinchi had c bo'lsin, arifmetik progressiya sharti 2·15 = 5 + c. Bundan 30 = 5 + c va c = 25 chiqadi. Demak 45 − 25 = 20 ayriladi, natijada 5, 15, 25 hosil bo'ladi. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gp-dan-ayirib-ap",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#50850198"
+    },
+    {
+      "q": "Geometrik progressiyaning uchta ketma-ket hadi 4, 12 va 36 ga teng. Birinchi haddan qanday son ayrilsa, uchlik arifmetik progressiyaga aylanadi?",
+      "v": [
+        "8",
+        "16",
+        "−12",
+        "24"
+      ],
+      "t": 1,
+      "izoh": "Yangi birinchi had a bo'lsin, shart 2·12 = a + 36 ko'rinishida. Bundan 24 = a + 36 va a = −12 chiqadi. Demak 4 − (−12) = 16 ayriladi va −12, 12, 36 arifmetik progressiya bo'ladi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gp-dan-ayirib-ap",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#5779dc34"
+    },
+    {
+      "q": "Geometrik progressiyaning ketma-ket uch hadi 8, 16 va 32 ga teng. O'rta hadga qanday son qo'shilsa, uchta son arifmetik progressiya tashkil etadi?",
+      "v": [
+        "20",
+        "16",
+        "12",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Yangi o'rta had b bo'lsin, arifmetik progressiya sharti 2b = 8 + 32 = 40. Bundan b = 20 chiqadi, demak o'rta hadga 20 − 16 = 4 qo'shiladi. Natijada 8, 20, 32 hosil bo'lib, ayirma 12 ga teng. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gp-dan-ayirib-ap",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#6d0e7ca4"
+    },
+    {
+      "q": "Bir kompaniyaning uch yillik foydasi 6, 18 va 54 mln so'm bo'lib, geometrik progressiya hosil qildi. Uchinchi yil foydasidan qancha ayrilsa, uch yillik sonlar arifmetik progressiya bo'ladi?",
+      "v": [
+        "24 mln so'm",
+        "30 mln so'm",
+        "12 mln so'm",
+        "36 mln so'm"
+      ],
+      "t": 0,
+      "izoh": "Yangi uchinchi qiymat c bo'lsin, shart 2·18 = 6 + c ko'rinishida. Bundan 36 = 6 + c va c = 30 chiqadi. Demak 54 − 30 = 24 mln so'm ayriladi va 6, 18, 30 arifmetik progressiya bo'ladi. Javob: 24 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gp-dan-ayirib-ap",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#766b3064"
+    },
+    {
+      "q": "Uchta son o'suvchi arifmetik progressiya tashkil etadi va ularning yig'indisi 15 ga teng. Bu sonlarga mos ravishda 1, 1 va 4 qo'shilganda geometrik progressiya hosil bo'ladi. Progressiyaning birinchi hadini toping.",
+      "v": [
+        "2",
+        "5",
+        "8",
+        "−1"
+      ],
+      "t": 0,
+      "izoh": "Sonlarni 5 − d, 5 va 5 + d deb olamiz, chunki yig'indi 15 bo'lsa o'rta had 5 ga teng. Qo'shgandan keyin 6 − d, 6 va 9 + d hosil bo'ladi, geometrik shart 36 = (6 − d)(9 + d). Yoyib d² + 3d − 18 = 0 ni olamiz, ildizlar d = 3 va d = −6. O'suvchi progressiya uchun d = 3, sonlar 2, 5, 8. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-va-ozgartirish-sistemasi",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#62b0c7d2"
+    },
+    {
+      "q": "Uchta son o'suvchi arifmetik progressiya hosil qiladi va yig'indisi 21 ga teng. Ularga mos ravishda 0, 1 va 6 qo'shilsa, geometrik progressiya kelib chiqadi. Uchinchi sonni toping.",
+      "v": [
+        "16",
+        "7",
+        "3",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi 21 bo'lgani uchun o'rta had 7 ga teng, sonlar 7 − d, 7, 7 + d. Qo'shgandan keyin 7 − d, 8 va 13 + d bo'ladi, shart 64 = (7 − d)(13 + d). Yoyib d² + 6d − 27 = 0 ni olamiz, ildizlar d = 3 va d = −9. O'suvchi holda d = 3, sonlar 4, 7, 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-va-ozgartirish-sistemasi",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#df0432ed"
+    },
+    {
+      "q": "Uch nafar ishchi bir kunda yasagan detallar soni o'suvchi arifmetik progressiya tashkil etadi va jami 36 ta. Uchinchi ishchining natijasiga 16 ta detal qo'shilsa, uchala son geometrik progressiya hosil qiladi. Birinchi ishchi nechta detal yasagan?",
+      "v": [
+        "4",
+        "12",
+        "20",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Jami 36 bo'lgani uchun o'rta had 12, sonlar 12 − d, 12 va 12 + d. Qo'shgandan keyin shart 144 = (12 − d)(28 + d) ko'rinishida bo'ladi. Yoyib d² + 16d − 192 = 0 ni olamiz, ildizlar d = 8 va d = −24. O'suvchi holda d = 8, sonlar 4, 12, 20. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-va-ozgartirish-sistemasi",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#28de27b2"
+    },
+    {
+      "q": "Uchta son arifmetik progressiya tashkil etadi va ularning yig'indisi 12 ga teng. Uchinchi hadga 2 qo'shilganda geometrik progressiya hosil bo'ladi. Bu geometrik progressiyaning maxraji uchun barcha mumkin bo'lgan qiymatlarni ko'rsating.",
+      "v": [
+        "2 va 0,5",
+        "Faqat 2",
+        "Faqat 0,5",
+        "2 va −2"
+      ],
+      "t": 0,
+      "izoh": "O'rta had 4 ga teng, sonlar 4 − d, 4 va 4 + d. Uchinchi hadga 2 qo'shilgach shart 16 = (4 − d)(6 + d) bo'ladi, ya'ni d² + 2d − 8 = 0. Ildizlar d = 2 va d = −4. Birinchi holda 2, 4, 8 hosil bo'lib maxraj 2, ikkinchisida 8, 4, 2 bo'lib maxraj 0,5. Javob: 2 va 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-va-ozgartirish-sistemasi",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#470423ba"
+    },
+    {
+      "q": "Arifmetik progressiyada a₁, a₃ va a₉ hadlari shu tartibda geometrik progressiya tashkil etadi. Ayirma noldan farqli bo'lsa, hosil bo'lgan geometrik progressiyaning maxraji nechaga teng?",
+      "v": [
+        "2",
+        "3",
+        "5",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Hadlarni yozamiz: a₁, a₁ + 2d, a₁ + 8d. Geometrik shart (a₁ + 2d)² = a₁(a₁ + 8d) ko'rinishida, yoyganda 4a₁d + 4d² = 8a₁d bo'ladi. Bundan 4d² = 4a₁d va d ≠ 0 bo'lgani uchun d = a₁. U holda hadlar a₁, 3a₁, 9a₁ ko'rinishida, maxraj 3 ga teng. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ap-indeksli-hadlar-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#2edc1ed0"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi 5 ga teng. Uning a₁, a₂ va a₅ hadlari shu tartibda geometrik progressiya hosil qilsa, progressiyaning noldan farqli ayirmasini toping.",
+      "v": [
+        "5",
+        "15",
+        "45",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Hadlar 5, 5 + d va 5 + 4d ko'rinishida bo'ladi. Geometrik shart (5 + d)² = 5(5 + 4d), ya'ni 25 + 10d + d² = 25 + 20d. Bundan d² = 10d va d ≠ 0 bo'lgani uchun d = 10. Tekshirish: 5, 15, 45 haqiqatan geometrik progressiya. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ap-indeksli-hadlar-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#2a8a7820"
+    },
+    {
+      "q": "Arifmetik progressiyaning a₂, a₅ va a₁₁ hadlari shu tartibda geometrik progressiya hosil qiladi. Ayirma d ≠ 0 bo'lsa, birinchi had a₁ ning d orqali ifodasi qaysi javobda to'g'ri berilgan?",
+      "v": [
+        "a₁ = 2d",
+        "a₁ = 3d",
+        "a₁ = d",
+        "a₁ = 4d"
+      ],
+      "t": 0,
+      "izoh": "Hadlar a₁ + d, a₁ + 4d va a₁ + 10d ko'rinishida. Shart (a₁ + 4d)² = (a₁ + d)(a₁ + 10d), yoyganda 8a₁d + 16d² = 11a₁d + 10d². Bundan 6d² = 3a₁d va d ≠ 0 bo'lgani uchun a₁ = 2d. Javob: a₁ = 2d.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ap-indeksli-hadlar-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#d2bdef32"
+    },
+    {
+      "q": "Anvar har oyda o'z jamg'armasiga bir xil summa qo'shib boradi. Agar birinchi, uchinchi va to'qqizinchi oy oxiridagi jamg'arma miqdorlari geometrik progressiya tashkil etsa, to'qqizinchi oydagi summa birinchisidan necha marta ko'p bo'ladi?",
+      "v": [
+        "3",
+        "9",
+        "27",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Jamg'armalar a₁, a₁ + 2d va a₁ + 8d ko'rinishida arifmetik progressiya hosil qiladi. Geometrik shartdan (a₁ + 2d)² = a₁(a₁ + 8d), ya'ni 4d² = 4a₁d va d = a₁. Demak miqdorlar a₁, 3a₁ va 9a₁ bo'ladi. To'qqizinchi oydagi summa birinchisidan 9 marta ko'p. Javob: 9 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ap-indeksli-hadlar-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#e555820b"
+    },
+    {
+      "q": "Geometrik progressiyaning ketma-ket uch hadi 1, q va q² ko'rinishida berilgan. O'rta hadga 2 qo'shilganda arifmetik progressiya hosil bo'lsa, maxrajning musbat qiymatini toping.",
+      "v": [
+        "−3",
+        "−1",
+        "3",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "Arifmetik shart 2(q + 2) = 1 + q² ko'rinishida bo'ladi. Yoyib q² − 2q − 3 = 0 tenglamani olamiz, uning ildizlari q = 3 va q = −1. Musbat qiymat q = 3, u holda 1, 3, 9 hadlari 1, 5, 9 arifmetik progressiyaga aylanadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxrajni-ap-shartidan-topish",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#8ead3adf"
+    },
+    {
+      "q": "Geometrik progressiyaning ketma-ket uch hadi 2, 2q va 2q² ko'rinishida bo'lib, uchinchi haddan 18 ayrilganda arifmetik progressiya hosil bo'ladi. Maxrajning manfiy qiymatini toping.",
+      "v": [
+        "4",
+        "−2",
+        "−4",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Arifmetik shart 2·2q = 2 + 2q² − 18 ko'rinishida. Soddalashtirsak q² − 2q − 8 = 0 chiqadi, ildizlari q = 4 va q = −2. Manfiy qiymat q = −2, bunda hadlar 2, −4, 8 bo'lib, uchinchisidan 18 ayrilgach 2, −4, −10 arifmetik progressiya hosil bo'ladi. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maxrajni-ap-shartidan-topish",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#49ca22dd"
+    },
+    {
+      "q": "Fermer xo'jaligida hosil har yili bir xil marta ortib boradi va uch yillik hosil 20, 20q hamda 20q² tonnani tashkil etadi. Uchinchi yili 45 tonna kam olinganda sonlar arifmetik progressiya hosil qilsa, q ni toping (q > 1).",
+      "v": [
+        "1,5",
+        "2,25",
+        "3,25",
+        "2,5"
+      ],
+      "t": 3,
+      "izoh": "Arifmetik shart 2·20q = 20 + 20q² − 45 ko'rinishida bo'ladi. Uni soddalashtirsak 4q² − 8q − 5 = 0 chiqadi, ildizlari q = 2,5 va q = −0,5. Shart bo'yicha q > 1, demak q = 2,5. Tekshirish: 20, 50, 125 hosillari uchinchisi 80 ga tushganda 20, 50, 80 arifmetik progressiya bo'ladi. Javob: 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maxrajni-ap-shartidan-topish",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#066ab4bc"
+    },
+    {
+      "q": "Geometrik progressiyaning uchta ketma-ket hadi 3, 3q va 3q² ko'rinishida. Birinchi haddan 48 ayrilganda arifmetik progressiya hosil bo'lsa, maxrajning musbat qiymati nechaga teng?",
+      "v": [
+        "−3",
+        "4",
+        "16",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Arifmetik shart 2·3q = (3 − 48) + 3q² ko'rinishida. Soddalashtirsak q² − 2q − 15 = 0 chiqadi, ildizlari q = 5 va q = −3. Musbat qiymat q = 5, bunda 3, 15, 75 hadlari birinchisi −45 ga aylangach arifmetik progressiya beradi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maxrajni-ap-shartidan-topish",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#a07f4864"
+    },
+    {
+      "q": "Uchburchakning tomonlari arifmetik progressiya tashkil etadi va perimetri 24 sm ga teng. Eng kichik tomon 6 sm bo'lsa, eng katta tomon necha santimetr?",
+      "v": [
+        "10 sm",
+        "8 sm",
+        "12 sm",
+        "18 sm"
+      ],
+      "t": 0,
+      "izoh": "Tomonlarni b − d, b va b + d deb olamiz, ularning yig'indisi 3b = 24 ekanidan b = 8 sm chiqadi. Eng kichik tomon 6 sm bo'lgani uchun d = 2 sm. Demak eng katta tomon 8 + 2 = 10 sm. Javob: 10 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-olcham-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#ee5f5976"
+    },
+    {
+      "q": "Uchburchakning tomonlari uzunligi geometrik progressiya tashkil etadi. Eng kichik tomoni 4 sm, eng kattasi esa 9 sm bo'lsa, o'rtadagi tomon uzunligi qanchaga teng?",
+      "v": [
+        "6,5 sm",
+        "36 sm",
+        "6 sm",
+        "5 sm"
+      ],
+      "t": 2,
+      "izoh": "Geometrik progressiyada o'rta hadning kvadrati chetki hadlar ko'paytmasiga teng: b² = 4·9 = 36. Uzunlik musbat bo'lgani uchun b = 6 sm. Tomonlar 4, 6, 9 bo'lib, maxraj 1,5 ga teng. Javob: 6 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-olcham-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#a16e411d"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning tomonlari arifmetik progressiya tashkil etadi va eng kichik tomoni 9 sm ga teng. Uchburchakning gipotenuzasi necha santimetr bo'ladi?",
+      "v": [
+        "12 sm",
+        "13,5 sm",
+        "15 sm",
+        "18 sm"
+      ],
+      "t": 2,
+      "izoh": "Tomonlar a, a + d va a + 2d bo'lsin, Pifagor teoremasidan a² + (a + d)² = (a + 2d)². Yoyib a² − 2ad − 3d² = 0 ni olamiz, bundan a = 3d chiqadi va tomonlar 3d, 4d, 5d nisbatda bo'ladi. Eng kichik tomon 9 sm bo'lgani uchun d = 3 va gipotenuza 5·3 = 15 sm. Javob: 15 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "geometrik-olcham-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#958d1243"
+    },
+    {
+      "q": "Uchta kvadratning tomonlari 3 sm, x sm va 12 sm bo'lib, shu tartibda geometrik progressiya hosil qiladi. O'rtadagi kvadratning yuzasi necha kvadrat santimetr?",
+      "v": [
+        "6 sm²",
+        "56,25 sm²",
+        "144 sm²",
+        "36 sm²"
+      ],
+      "t": 3,
+      "izoh": "Geometrik shartdan x² = 3·12 = 36 kelib chiqadi, demak tomon x = 6 sm. Kvadratning yuzasi tomonining kvadratiga teng, ya'ni 6² = 36 sm². Javob: 36 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-olcham-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#cbe3ff06"
+    },
+    {
+      "q": "Uch xil daftarning narxi mos ravishda 4000, x va 9000 so'm bo'lib, bu narxlar geometrik progressiya tashkil etadi. O'rtadagi daftar necha so'm turadi?",
+      "v": [
+        "5000 so'm",
+        "6000 so'm",
+        "6500 so'm",
+        "13000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Geometrik shart x² = 4000·9000 = 36 000 000 ko'rinishida. Narx musbat bo'lgani uchun x = 6000 so'm. Maxraj 6000 : 4000 = 1,5 ga teng va 9000 : 6000 ham 1,5. Javob: 6000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "narx-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#df83fb00"
+    },
+    {
+      "q": "Uch turdagi mahsulotning narxi arifmetik progressiya tashkil etadi: 15000, y va 27000 so'm. Ikkinchi mahsulotning narxini toping.",
+      "v": [
+        "21000 so'm",
+        "42000 so'm",
+        "12000 so'm",
+        "6000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Arifmetik progressiya shartiga ko'ra 2y = 15000 + 27000 = 42000 bo'ladi. Bundan y = 21000 so'm chiqadi. Narxlar ayirmasi 6000 so'mga teng ekanini ham tekshirish mumkin. Javob: 21000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "narx-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#5c86d814"
+    },
+    {
+      "q": "Uch xil sumkaning narxi o'suvchi arifmetik progressiya tashkil etadi va jami 90 ming so'm. Eng qimmat sumka narxiga 5 ming so'm qo'shilsa, uchta narx geometrik progressiya hosil qiladi. Eng arzon sumka narxini toping.",
+      "v": [
+        "20 ming so'm",
+        "30 ming so'm",
+        "40 ming so'm",
+        "45 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi 90 bo'lgani uchun o'rta narx 30 ming so'm, narxlar 30 − d, 30 va 30 + d. Qo'shgandan keyin geometrik shart 900 = (30 − d)(35 + d) ko'rinishida bo'ladi. Yoyib d² + 5d − 150 = 0 ni olamiz, ildizlari d = 10 va d = −15. O'suvchi holda d = 10, narxlar 20, 30, 40 ming so'm. Javob: 20 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#6ae2e353"
+    },
+    {
+      "q": "Kitob narxi ketma-ket ikki marta bir xil foizga arzonlashdi va narxlar 50000, x hamda 32000 so'm bo'ldi. Bu uch narx geometrik progressiya tashkil etsa, x nechaga teng?",
+      "v": [
+        "4000 so'm",
+        "41000 so'm",
+        "18000 so'm",
+        "40000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Geometrik shart x² = 50000·32000 = 1 600 000 000 ko'rinishida bo'ladi. Ildiz olsak x = 40000 so'm chiqadi. Har safar narx 0,8 marta, ya'ni 20 foizga kamaygan. Javob: 40000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "narx-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#54ae1f5c"
+    },
+    {
+      "q": "Uchta son shu tartibda geometrik progressiya hosil qiladi: 2, x va 50. Qo'shimcha shart sifatida x < 0 berilgan bo'lsa, x nimaga teng?",
+      "v": [
+        "10",
+        "−10",
+        "−100",
+        "26"
+      ],
+      "t": 1,
+      "izoh": "Shartdan x² = 2·50 = 100 kelib chiqadi, demak x = 10 yoki x = −10. Masalada x < 0 talab qilingani uchun x = −10 tanlanadi. Bunda maxraj −5 ga teng va 2, −10, 50 haqiqatan geometrik progressiya. Javob: −10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-tanlash-shart-boyicha",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#ddd06ea6"
+    },
+    {
+      "q": "x − 1, x + 1 va 3x + 3 ifodalari shu tartibda geometrik progressiyaning hadlari bo'lishi kerak. Hosil bo'lgan tenglamaning ikkita ildizidan qaysi biri masala shartini qanoatlantiradi?",
+      "v": [
+        "x = 2",
+        "x = −1",
+        "x = 2 va x = −1",
+        "Ikkalasi ham to'g'ri kelmaydi"
+      ],
+      "t": 0,
+      "izoh": "Shart (x + 1)² = (x − 1)(3x + 3) ko'rinishida, o'ng tomonni 3(x − 1)(x + 1) deb yozamiz. Tenglama x² + 2x + 1 = 3x² − 3 ga aylanadi, ya'ni x² − x − 2 = 0 va ildizlar x = 2, x = −1. x = −1 bo'lganda hadlar −2, 0, 0 bo'lib qoladi, geometrik progressiyada esa nol had bo'lmaydi. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-tanlash-shart-boyicha",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#3c50ae6e"
+    },
+    {
+      "q": "Uchta son o'suvchi arifmetik progressiya tashkil etadi, ularning yig'indisi 18 ga, chetki ikki hadning ko'paytmasi esa 27 ga teng. Eng katta hadni toping.",
+      "v": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Sonlarni b − d, b va b + d deb olamiz, yig'indi 3b = 18 dan b = 6 chiqadi. Chetki hadlar ko'paytmasi (6 − d)(6 + d) = 36 − d² = 27, bundan d² = 9 va d = ±3. O'suvchi progressiya uchun d = 3, sonlar 3, 6, 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-tanlash-shart-boyicha",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#a0c655e6"
+    },
+    {
+      "q": "Uchta son geometrik progressiya tashkil etadi, ularning yig'indisi 26 ga va o'rta hadi 6 ga teng. Progressiyaning maxraji uchun mumkin bo'lgan qiymatlarni ko'rsating.",
+      "v": [
+        "Faqat 3",
+        "Faqat 1/3",
+        "3 va −3",
+        "3 va 1/3"
+      ],
+      "t": 3,
+      "izoh": "O'rta had 6 bo'lgani uchun chetki hadlar yig'indisi 26 − 6 = 20, ko'paytmasi esa 6² = 36. Ular t² − 20t + 36 = 0 tenglamaning ildizlari, ya'ni 2 va 18. Agar tartib 2, 6, 18 bo'lsa maxraj 3, agar 18, 6, 2 bo'lsa maxraj 1/3. Javob: 3 va 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-tanlash-shart-boyicha",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#0ca1bb70"
+    },
+    {
+      "q": "Sexda uch smenada ishlab chiqarilgan mahsulot soni o'suvchi arifmetik progressiya tashkil etdi va jami 45 ta bo'ldi. Uchinchi smena natijasiga 20 ta qo'shilganda sonlar geometrik progressiya hosil qiladi. Birinchi smenada nechta mahsulot tayyorlangan?",
+      "v": [
+        "5 ta",
+        "15 ta",
+        "25 ta",
+        "45 ta"
+      ],
+      "t": 0,
+      "izoh": "Jami 45 bo'lgani uchun o'rta had 15, sonlar 15 − d, 15 va 15 + d. Qo'shgandan keyin geometrik shart 225 = (15 − d)(35 + d) ko'rinishida bo'ladi. Yoyib d² + 20d − 300 = 0 ni olamiz, ildizlari d = 10 va d = −30. O'suvchi holda d = 10, sonlar 5, 15, 25 va yangi uchlik 5, 15, 45. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-unumi-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#3535f449"
+    },
+    {
+      "q": "Uch nafar duradgor bir haftada mos ravishda 8, n va 18 ta stul yasadi. Bu sonlar geometrik progressiya tashkil etsa, ikkinchi duradgor nechta stul yasagan?",
+      "v": [
+        "10 ta",
+        "12 ta",
+        "13 ta",
+        "26 ta"
+      ],
+      "t": 1,
+      "izoh": "Geometrik progressiya sharti n² = 8·18 = 144 ko'rinishida bo'ladi. Stullar soni musbat, demak n = 12 ta. Maxraj 12 : 8 = 1,5 ga teng va 18 : 12 ham 1,5. Javob: 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-unumi-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#e48a8cde"
+    },
+    {
+      "q": "Uch nafar tikuvchining kunlik unumi geometrik progressiya tashkil etadi: 12, 24 va 48 ta ko'ylak. Uchinchi tikuvchining unumidan nechta ayrilsa, uch son arifmetik progressiya hosil qiladi?",
+      "v": [
+        "24 ta",
+        "36 ta",
+        "48 ta",
+        "12 ta"
+      ],
+      "t": 3,
+      "izoh": "Yangi uchinchi qiymat c bo'lsin, arifmetik shart 2·24 = 12 + c ko'rinishida. Bundan 48 = 12 + c va c = 36 chiqadi. Demak 48 − 36 = 12 ta ayriladi va 12, 24, 36 arifmetik progressiya bo'ladi. Javob: 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-unumi-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#6d4708fe"
+    },
+    {
+      "q": "Bir brigada uch oyda mos ravishda 30, 30 + d va 30 + 2d tonna g'alla o'rdi. Uchinchi oy natijasiga 30 tonna qo'shilganda sonlar geometrik progressiya hosil qilsa, d ning musbat qiymatini toping.",
+      "v": [
+        "15",
+        "30",
+        "60",
+        "90"
+      ],
+      "t": 1,
+      "izoh": "Geometrik shart (30 + d)² = 30·(60 + 2d) ko'rinishida bo'ladi. Chap tomonni yoyamiz: 900 + 60d + d² = 1800 + 60d, bundan d² = 900 va d = 30. Oylik natijalar 30, 60, 90 tonna, o'zgartirilgan uchlik esa 30, 60, 120 bo'lib maxraji 2 ga teng. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ish-unumi-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#e471354a"
+    },
+    {
+      "q": "Sayohatchi uch kunda mos ravishda 18, m va 32 km yurdi va bu masofalar geometrik progressiya tashkil etdi. Ikkinchi kuni necha kilometr yurgan?",
+      "v": [
+        "14 km",
+        "25 km",
+        "50 km",
+        "24 km"
+      ],
+      "t": 3,
+      "izoh": "Geometrik shart m² = 18·32 = 576 ko'rinishida bo'ladi. Masofa musbat bo'lgani uchun m = 24 km. Maxraj 24 : 18 ni soddalashtirsak 4/3 chiqadi va 32 : 24 ham shunga teng. Javob: 24 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#d25cd388"
+    },
+    {
+      "q": "Velosipedchi uch bosqichda bosib o'tgan masofalar o'suvchi arifmetik progressiya tashkil etadi va jami 60 km. Uchinchi bosqich masofasiga 10 km qo'shilganda masofalar geometrik progressiya hosil qiladi. Birinchi bosqich masofasini toping.",
+      "v": [
+        "20 km",
+        "30 km",
+        "40 km",
+        "10 km"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi 60 bo'lgani uchun o'rta masofa 20 km, masofalar 20 − d, 20 va 20 + d. Qo'shgandan keyin shart 400 = (20 − d)(30 + d) bo'ladi, ya'ni d² + 10d − 200 = 0. Ildizlari d = 10 va d = −20, o'suvchi holda d = 10 va masofalar 10, 20, 30 km. Javob: 10 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masofa-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#d309e627"
+    },
+    {
+      "q": "Poyezd uch soatda mos ravishda 45, 60 va 75 km yo'l bosdi va bu sonlar arifmetik progressiya tashkil etadi. Uchinchi soatdagi masofaga necha kilometr qo'shilsa, uchta son geometrik progressiya hosil qiladi?",
+      "v": [
+        "5 km",
+        "15 km",
+        "20 km",
+        "80 km"
+      ],
+      "t": 0,
+      "izoh": "Yangi uchinchi masofa c bo'lsin, geometrik shart 60² = 45·c ko'rinishida. Bundan 3600 = 45c va c = 80 km chiqadi. Demak qo'shiladigan masofa 80 − 75 = 5 km, yangi uchlik 45, 60, 80. Javob: 5 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#ff8f7205"
+    },
+    {
+      "q": "Ikki shahar orasidagi yo'l uch qismga bo'lingan va qismlar uzunligi geometrik progressiya tashkil etadi. Birinchi qism 8 km, uchinchi qism 50 km bo'lsa, yo'lning to'liq uzunligi qancha?",
+      "v": [
+        "58 km",
+        "78 km",
+        "87 km",
+        "108 km"
+      ],
+      "t": 1,
+      "izoh": "O'rta qism uzunligi b bo'lsin, geometrik shart b² = 8·50 = 400 ko'rinishida. Uzunlik musbat, demak b = 20 km. Yo'lning to'liq uzunligi 8 + 20 + 50 = 78 km. Javob: 78 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masofa-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#5c3e5d76"
+    },
+    {
+      "q": "Uch bankdagi yillik foiz stavkalari arifmetik progressiya tashkil etadi: 12%, x% va 20%. Ikkinchi bankning yillik stavkasi necha foizga teng?",
+      "v": [
+        "15",
+        "32",
+        "16",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Arifmetik progressiya shartiga ko'ra 2x = 12 + 20 = 32 bo'ladi. Bundan x = 16 foiz chiqadi. Stavkalar orasidagi ayirma 4 foizga teng ekanini tekshirish mumkin. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "omonat-foiz-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#0577e19a"
+    },
+    {
+      "q": "Sarvinozning omonati uch yil davomida 5 mln, y mln va 20 mln so'm bo'lib, bu qiymatlar geometrik progressiya tashkil etdi. Ikkinchi yil oxirida omonat qancha bo'lgan?",
+      "v": [
+        "12,5 mln so'm",
+        "10 mln so'm",
+        "15 mln so'm",
+        "100 mln so'm"
+      ],
+      "t": 1,
+      "izoh": "Geometrik shart y² = 5·20 = 100 ko'rinishida bo'ladi. Omonat musbat, demak y = 10 mln so'm. Har yili omonat 2 marta ortgan, chunki maxraj 10 : 5 = 2 ga teng. Javob: 10 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "omonat-foiz-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#5f1774e5"
+    },
+    {
+      "q": "Uch turdagi telefonning narxi geometrik progressiya tashkil etadi: 3, 6 va 12 mln so'm. Eng qimmat telefonga qancha chegirma berilsa, uchta narx arifmetik progressiya hosil qiladi?",
+      "v": [
+        "9 mln so'm",
+        "4 mln so'm",
+        "3 mln so'm",
+        "6 mln so'm"
+      ],
+      "t": 2,
+      "izoh": "Chegirmadan keyingi narx c bo'lsin, arifmetik shart 2·6 = 3 + c ko'rinishida. Bundan 12 = 3 + c va c = 9 mln so'm chiqadi. Demak chegirma 12 − 9 = 3 mln so'm, yangi narxlar 3, 6, 9. Javob: 3 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "omonat-foiz-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#53b80f43"
+    },
+    {
+      "q": "Bir do'kon uch oyda mos ravishda 24, 36 va 54 mln so'mlik savdo qildi va bu sonlar geometrik progressiya hosil qildi. Uchinchi oy savdosi qanchaga kam bo'lganda uch oylik sonlar arifmetik progressiya bo'lardi?",
+      "v": [
+        "12 mln so'm",
+        "48 mln so'm",
+        "18 mln so'm",
+        "6 mln so'm"
+      ],
+      "t": 3,
+      "izoh": "Yangi uchinchi qiymat c bo'lsin, arifmetik shart 2·36 = 24 + c ko'rinishida. Bundan 72 = 24 + c va c = 48 mln so'm chiqadi. Demak savdo 54 − 48 = 6 mln so'mga kam bo'lishi kerak edi. Javob: 6 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "omonat-foiz-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#814ef800"
+    },
+    {
+      "q": "To'rtta sonning dastlabki uchtasi arifmetik progressiya, oxirgi uchtasi esa geometrik progressiya tashkil etadi. Birinchi son 4, ikkinchisi 8 ga teng bo'lsa, to'rtinchi son nechaga teng?",
+      "v": [
+        "12",
+        "16",
+        "18",
+        "20"
+      ],
+      "t": 2,
+      "izoh": "Arifmetik qism 4, 8 bo'lgani uchun ayirma 4 va uchinchi son 12 ga teng. Oxirgi uchtasi 8, 12 va x geometrik progressiya, demak 12² = 8x. Bundan 144 = 8x va x = 18 chiqadi. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tort-son-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#8cc1efa6"
+    },
+    {
+      "q": "To'rtta sonning birinchi uchtasi arifmetik progressiya, so'nggi uchtasi geometrik progressiya tashkil etadi. Ikkinchi son 6, uchinchi son 9 bo'lsa, birinchi va to'rtinchi sonlar yig'indisi qancha?",
+      "v": [
+        "15",
+        "18",
+        "16,5",
+        "19,5"
+      ],
+      "t": 2,
+      "izoh": "Arifmetik qismda 2·6 = a + 9 bo'lgani uchun birinchi son a = 3. Geometrik qismda 9² = 6·x, ya'ni 81 = 6x va to'rtinchi son x = 13,5. Ularning yig'indisi 3 + 13,5 = 16,5. Javob: 16,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tort-son-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#7e42a8e2"
+    },
+    {
+      "q": "Do'konda to'rt kun davomida sotilgan tortlar soni shunday: dastlabki uch kunniki arifmetik progressiya, oxirgi uch kunniki geometrik progressiya tashkil etadi. Birinchi kuni 10 ta, ikkinchi kuni 20 ta sotilgan bo'lsa, to'rtinchi kuni nechta sotilgan?",
+      "v": [
+        "30 ta",
+        "40 ta",
+        "45 ta",
+        "60 ta"
+      ],
+      "t": 2,
+      "izoh": "Arifmetik qismda ayirma 20 − 10 = 10, demak uchinchi kuni 30 ta sotilgan. Oxirgi uchlik 20, 30 va x geometrik progressiya bo'lgani uchun 30² = 20x. Bundan 900 = 20x va x = 45 ta chiqadi. Javob: 45 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tort-son-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#f0fc8046"
+    },
+    {
+      "q": "To'rtta sonning dastlabki uchtasi arifmetik progressiya, oxirgi uchtasi geometrik progressiya hosil qiladi. Uchinchi son 18, to'rtinchi son 27 ga teng bo'lsa, birinchi son qanday?",
+      "v": [
+        "6",
+        "8",
+        "9",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Geometrik qismda 18² = b·27, ya'ni 324 = 27b va ikkinchi son b = 12. Arifmetik qismda 2·12 = a + 18 bo'ladi, bundan a = 24 − 18 = 6. Sonlar ketma-ketligi 6, 12, 18, 27 ko'rinishida. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tort-son-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#fe353f4b"
+    },
+    {
+      "q": "To'rtta sonning dastlabki uchtasi geometrik progressiya, oxirgi uchtasi arifmetik progressiya tashkil etadi. Birinchi son 2, ikkinchisi 6 bo'lsa, to'rtinchi son nechaga teng?",
+      "v": [
+        "30",
+        "24",
+        "36",
+        "54"
+      ],
+      "t": 0,
+      "izoh": "Geometrik qismda maxraj 6 : 2 = 3, demak uchinchi son 18 ga teng. Oxirgi uchlik 6, 18 va x arifmetik progressiya, ya'ni 2·18 = 6 + x. Bundan 36 = 6 + x va x = 30 chiqadi. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tort-son-gp-ap",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#b6e629f1"
+    },
+    {
+      "q": "To'rtta sonning dastlabki uchtasi geometrik progressiya, oxirgi uchtasi arifmetik progressiya tashkil etadi. Ikkinchi son 12, uchinchi son 16 bo'lsa, birinchi va to'rtinchi sonlar yig'indisini toping.",
+      "v": [
+        "29",
+        "24",
+        "28",
+        "37"
+      ],
+      "t": 0,
+      "izoh": "Geometrik qismda 12² = a·16, ya'ni 144 = 16a va birinchi son a = 9. Arifmetik qismda ayirma 16 − 12 = 4, demak to'rtinchi son 16 + 4 = 20. Yig'indi 9 + 20 = 29. Javob: 29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tort-son-gp-ap",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#a2ab8834"
+    },
+    {
+      "q": "Bir kompaniyaning to'rt choraklik daromadi shunday: dastlabki uch chorak geometrik progressiya, oxirgi uch chorak arifmetik progressiya tashkil etadi. Birinchi chorakda 5 mln, ikkinchisida 15 mln so'm daromad bo'lsa, to'rtinchi chorakda qancha olingan?",
+      "v": [
+        "60 mln so'm",
+        "75 mln so'm",
+        "90 mln so'm",
+        "135 mln so'm"
+      ],
+      "t": 1,
+      "izoh": "Geometrik qismda maxraj 15 : 5 = 3, demak uchinchi chorak daromadi 45 mln so'm. Oxirgi uchlik 15, 45 va x arifmetik progressiya bo'lgani uchun 2·45 = 15 + x. Bundan 90 = 15 + x va x = 75 mln so'm. Javob: 75 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tort-son-gp-ap",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#bd5e456a"
+    },
+    {
+      "q": "To'rtta sonning dastlabki uchtasi maxraji 3 ga teng geometrik progressiya, oxirgi uchtasi esa arifmetik progressiya tashkil etadi. To'rtala sonning yig'indisi 56 bo'lsa, eng katta sonni toping.",
+      "v": [
+        "18",
+        "24",
+        "54",
+        "30"
+      ],
+      "t": 3,
+      "izoh": "Birinchi sonni a deb olsak, geometrik qism a, 3a, 9a ko'rinishida bo'ladi. Arifmetik qismda 2·9a = 3a + x, bundan to'rtinchi son x = 15a. Yig'indi a + 3a + 9a + 15a = 28a = 56, demak a = 2 va sonlar 2, 6, 18, 30. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tort-son-gp-ap",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#ce65c0bc"
+    },
+    {
+      "q": "a, b va c sonlari shu tartibda arifmetik progressiya tashkil etadi. U holda 2ᵃ, 2ᵇ va 2ᶜ sonlari qanday ketma-ketlik hosil qiladi?",
+      "v": [
+        "Arifmetik progressiya",
+        "Geometrik progressiya",
+        "Hech qanday progressiya emas",
+        "Doimiy ketma-ketlik"
+      ],
+      "t": 1,
+      "izoh": "Arifmetik shartdan 2b = a + c. Endi o'rta hadning kvadratini olamiz: (2ᵇ)² = 2^(2b) = 2^(a+c) = 2ᵃ·2ᶜ. Demak o'rta hadning kvadrati chetki hadlar ko'paytmasiga teng, bu esa geometrik progressiya sharti. Javob: geometrik progressiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daraja-ifodalari-progressiya",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#d47b64f3"
+    },
+    {
+      "q": "a, b va c musbat sonlari geometrik progressiya tashkil etadi va maxraji q ga teng. Ularning kvadratlari a², b² va c² qanday progressiya hosil qiladi?",
+      "v": [
+        "Geometrik progressiya, maxraji q²",
+        "Geometrik progressiya, maxraji q",
+        "Arifmetik progressiya",
+        "Geometrik progressiya, maxraji 2q"
+      ],
+      "t": 0,
+      "izoh": "Geometrik shartdan b² = ac. Kvadratlar uchun tekshiramiz: (b²)² = (ac)² = a²·c², demak ular ham geometrik progressiya. Maxraj esa b² : a² = (b : a)² = q² ga teng. Javob: geometrik progressiya, maxraji q².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-ifodalari-progressiya",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#8a5643e7"
+    },
+    {
+      "q": "Arifmetik progressiyaning ketma-ket uch hadi a, b va c bo'lsa, ularning kvadratlari a², b² va c² ham arifmetik progressiya bo'lishi uchun qanday shart bajarilishi kerak?",
+      "v": [
+        "Ha, har doim bo'ladi",
+        "Faqat ayirma nolga teng bo'lganda",
+        "Faqat hadlar musbat bo'lganda",
+        "Faqat b nolga teng bo'lganda"
+      ],
+      "t": 1,
+      "izoh": "Hadlarni b − d, b va b + d deb yozamiz. Kvadratlar yig'indisi a² + c² = (b − d)² + (b + d)² = 2b² + 2d². Arifmetik shart 2b² = a² + c² bo'lishi kerak, ya'ni 2b² = 2b² + 2d². Bundan 2d² = 0 va d = 0 chiqadi. Javob: faqat ayirma nolga teng bo'lganda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daraja-ifodalari-progressiya",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#bc96e0cf"
+    },
+    {
+      "q": "3, 7 va 11 sonlari arifmetik progressiya tashkil etadi. Ularning kvadratlari uchun a² + c² − 2b² ifodaning qiymatini hisoblang.",
+      "v": [
+        "0",
+        "16",
+        "32",
+        "64"
+      ],
+      "t": 2,
+      "izoh": "Kvadratlarni hisoblaymiz: a² = 9, b² = 49, c² = 121. Endi 9 + 121 − 2·49 = 130 − 98 = 32 chiqadi. Bu natija ayirmaning kvadratidan ikki barobar katta, chunki 2d² = 2·16 = 32. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-ifodalari-progressiya",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#b429fe91"
+    },
+    {
+      "q": "x, y va z musbat sonlari shu tartibda geometrik progressiya tashkil etadi. lg x, lg y va lg z sonlari haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Ular geometrik progressiya hosil qiladi",
+        "Ular hech qanday progressiya hosil qilmaydi",
+        "Ular o'zaro teng sonlar bo'ladi",
+        "Ular arifmetik progressiya hosil qiladi"
+      ],
+      "t": 3,
+      "izoh": "Geometrik shartdan y² = xz. Ikkala tomondan o'nli logarifm olamiz: lg y² = lg(xz), ya'ni 2lg y = lg x + lg z. Bu esa aynan arifmetik progressiya sharti. Javob: ular arifmetik progressiya hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifm-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#0f496abf"
+    },
+    {
+      "q": "Geometrik progressiyaning uchta hadi 2, 8 va 32 ga teng. log₂2, log₂8 va log₂32 sonlari qanday progressiya hosil qiladi va uning xarakteristikasi qanday?",
+      "v": [
+        "Arifmetik progressiya, ayirmasi 4",
+        "Geometrik progressiya, maxraji 2",
+        "Geometrik progressiya, maxraji 4",
+        "Arifmetik progressiya, ayirmasi 2"
+      ],
+      "t": 3,
+      "izoh": "Logarifmlarni hisoblaymiz: log₂2 = 1, log₂8 = 3, log₂32 = 5. Hosil bo'lgan 1, 3, 5 ketma-ketligida har safar 2 qo'shilyapti. Demak bu arifmetik progressiya bo'lib, ayirmasi 2 ga teng. Javob: arifmetik progressiya, ayirmasi 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifm-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#4383b04b"
+    },
+    {
+      "q": "lg a, lg b va lg c sonlari shu tartibda arifmetik progressiya tashkil etadi. U holda musbat a, b va c sonlari orasidagi to'g'ri munosabatni ko'rsating.",
+      "v": [
+        "b² = ac",
+        "2b = a + c",
+        "b = a + c",
+        "b² = a + c"
+      ],
+      "t": 0,
+      "izoh": "Arifmetik shartdan 2lg b = lg a + lg c. Chap tomonni lg b², o'ng tomonni lg(ac) ko'rinishida yozamiz. Logarifmlar teng bo'lsa, sonlar ham teng: b² = ac. Bu esa a, b, c ning geometrik progressiya ekanini bildiradi. Javob: b² = ac.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifm-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#c2bac74a"
+    },
+    {
+      "q": "5, x va 125 sonlari shu tartibda geometrik progressiya tashkil etadi va x musbat son. log₅x ifodaning qiymatini toping.",
+      "v": [
+        "1",
+        "2",
+        "3",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Geometrik shartdan x² = 5·125 = 625 kelib chiqadi. Musbat ildiz x = 25 bo'ladi. Endi log₅25 = log₅5² = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifm-ap-gp",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#6ba58153"
+    },
+    {
+      "q": "1/a, 1/b va 1/c sonlari shu tartibda arifmetik progressiya tashkil etadi. Bunda b sonini a va c orqali to'g'ri ifodalagan javobni tanlang.",
+      "v": [
+        "b = (a+c)/2",
+        "b = √(ac)",
+        "b = 2ac/(a+c)",
+        "b = ac/(a+c)"
+      ],
+      "t": 2,
+      "izoh": "Arifmetik shart 2/b = 1/a + 1/c ko'rinishida bo'ladi. O'ng tomonni umumiy maxrajga keltiramiz: 2/b = (a + c)/(ac). Kesishma ko'paytirsak 2ac = b(a + c) va b = 2ac/(a+c). Javob: b = 2ac/(a+c).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-hadlar-progressiya",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#85def4f8"
+    },
+    {
+      "q": "a, b va c sonlari maxraji q ga teng geometrik progressiya tashkil etadi. Ularning teskari sonlari 1/a, 1/b va 1/c haqida nima deyish mumkin?",
+      "v": [
+        "Geometrik progressiya, maxraji 1/q",
+        "Arifmetik progressiya",
+        "Geometrik progressiya, maxraji q",
+        "Progressiya hosil qilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Geometrik shartdan b² = ac. Teskari sonlar uchun tekshiramiz: (1/b)² = 1/b² = 1/(ac) = (1/a)·(1/c). Demak ular ham geometrik progressiya bo'ladi. Maxraj esa (1/b) : (1/a) = a/b = 1/q ga teng. Javob: geometrik progressiya, maxraji 1/q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-hadlar-progressiya",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#891da26b"
+    },
+    {
+      "q": "3, 6 va 12 sonlari geometrik progressiya tashkil etadi. Ularning teskari sonlari 1/3, 1/6 va 1/12 hosil qilgan progressiyaning maxrajini toping.",
+      "v": [
+        "2",
+        "−0,5",
+        "0,25",
+        "0,5"
+      ],
+      "t": 3,
+      "izoh": "Maxrajni topish uchun ikkinchi hadni birinchisiga bo'lamiz: (1/6) : (1/3) = 3/6 = 0,5. Tekshirish uchun uchinchi hadni ikkinchisiga bo'lamiz: (1/12) : (1/6) = 6/12 = 0,5. Dastlabki progressiyaning maxraji 2 edi, teskari sonlarniki esa uning teskarisi. Javob: 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-hadlar-progressiya",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#f1f4658e"
+    },
+    {
+      "q": "Uchta quvurdan hovuz mos ravishda 12, x va 4 soatda to'ladi. Bu quvurlarning bir soatlik unumlari arifmetik progressiya tashkil etsa, ikkinchi quvur hovuzni necha soatda to'ldiradi?",
+      "v": [
+        "3 soat",
+        "6 soat",
+        "8 soat",
+        "16 soat"
+      ],
+      "t": 1,
+      "izoh": "Bir soatlik unumlar 1/12, 1/x va 1/4 ga teng. Arifmetik shart 2/x = 1/12 + 1/4 ko'rinishida, o'ng tomon 1/12 + 3/12 = 4/12 = 1/3. Demak 2/x = 1/3 va x = 6 soat. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-hadlar-progressiya",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#985e81f0"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi 4 ga teng va ayirmasi d noldan farqli. Uning a₁, a₂ va a₄ hadlari geometrik progressiya tashkil etsa, ayirmani toping.",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Hadlar 4, 4 + d va 4 + 3d ko'rinishida bo'ladi. Geometrik shart (4 + d)² = 4(4 + 3d), ya'ni 16 + 8d + d² = 16 + 12d. Bundan d² = 4d va d ≠ 0 bo'lgani uchun d = 4. Tekshirish: 4, 8, 16 haqiqatan geometrik progressiya. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ap-ayirmasini-gp-shartidan-topish",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#1596bcc9"
+    },
+    {
+      "q": "Arifmetik progressiyaning ayirmasi 5 ga teng. Agar uning a₁, a₃ va a₇ hadlari shu tartibda geometrik progressiya hosil qilsa, birinchi had nechaga teng?",
+      "v": [
+        "5",
+        "15",
+        "20",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Hadlar a₁, a₁ + 10 va a₁ + 30 ko'rinishida bo'ladi. Geometrik shart (a₁ + 10)² = a₁(a₁ + 30), yoyganda 20a₁ + 100 = 30a₁. Bundan 10a₁ = 100 va a₁ = 10. Tekshirish: 10, 20, 40 geometrik progressiya. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ap-ayirmasini-gp-shartidan-topish",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#d4661253"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi 6 va ayirmasi d ≠ 0. Uning a₂, a₃ va a₆ hadlari shu tartibda geometrik progressiya tashkil etsa, ayirmani toping.",
+      "v": [
+        "−12",
+        "−6",
+        "6",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Hadlar 6 + d, 6 + 2d va 6 + 5d ko'rinishida. Shart (6 + 2d)² = (6 + d)(6 + 5d), chap tomon 36 + 24d + 4d², o'ng tomon 36 + 36d + 5d². Tenglikdan d² + 12d = 0 va d ≠ 0 bo'lgani uchun d = −12. Tekshirish: −6, −18, −54 geometrik progressiya. Javob: −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ap-ayirmasini-gp-shartidan-topish",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#317c4328"
+    },
+    {
+      "q": "Bog'da birinchi yili 12 tup daraxt ekildi. Keyingi har bir yilda bir xil miqdordagi daraxt qo'shib ekiladi. Birinchi, ikkinchi va to'rtinchi yil oxiridagi jami daraxtlar soni geometrik progressiya tashkil etsa, to'rtinchi yil oxirida bog'da nechta daraxt bo'ladi?",
+      "v": [
+        "36 tup",
+        "42 tup",
+        "48 tup",
+        "60 tup"
+      ],
+      "t": 2,
+      "izoh": "Keyingi yillarda har yili qo'shib ekiladigan daraxtlar sonini d deb olsak, yil oxiridagi jami daraxtlar 12, 12 + d, 12 + 2d va 12 + 3d bo'ladi. Shartga ko'ra 12, 12 + d va 12 + 3d geometrik progressiya, ya'ni (12 + d)² = 12(12 + 3d). Bundan 144 + 24d + d² = 144 + 36d, ya'ni d² = 12d. Har yili daraxt qo'shiladi, demak d ≠ 0 va d = 12. Jami daraxtlar 12, 24, 36, 48 bo'lib, tanlangan uchtasi 12, 24, 48 haqiqatan maxraji 2 bo'lgan geometrik progressiya. To'rtinchi yil oxirida 48 tup daraxt bo'ladi. Javob: 48 tup.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ap-ayirmasini-gp-shartidan-topish",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#79752113"
+    },
+    {
+      "q": "Uchta noldan farqli son bir vaqtning o'zida ham arifmetik, ham geometrik progressiya tashkil etadi. Bu sonlar haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Uchala son o'zaro teng",
+        "Sonlar 1, 2 va 4 ko'rinishida",
+        "Sonlarning yig'indisi nolga teng",
+        "Bunday sonlar mavjud emas"
+      ],
+      "t": 0,
+      "izoh": "Ikkala shartni birga yozamiz: 2b = a + c va b² = ac. Birinchisidan c = 2b − a ni ikkinchisiga qo'yamiz: b² = a(2b − a), ya'ni b² − 2ab + a² = 0. Bu (b − a)² = 0 degani, demak b = a va shundan c = a. Javob: uchala son o'zaro teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-vaqtda-ikkala-progressiya",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#3b7aa82b"
+    },
+    {
+      "q": "5, x va y sonlari shu tartibda bir vaqtda ham arifmetik, ham geometrik progressiya tashkil etsa, x + y yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "0",
+        "15",
+        "25",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Uchta son bir vaqtda ikkala progressiya bo'lishi uchun ular teng bo'lishi shart, chunki 2b = a + c va b² = ac dan (b − a)² = 0 kelib chiqadi. Demak x = 5 va y = 5 bo'ladi. Ularning yig'indisi 5 + 5 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-vaqtda-ikkala-progressiya",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#958d76cb"
+    },
+    {
+      "q": "Ketma-ketlikning barcha hadlari bir xil songa teng bo'lsa, masalan 7, 7, 7 va hokazo, bu ketma-ketlik qanday progressiya hisoblanadi?",
+      "v": [
+        "Faqat arifmetik progressiya",
+        "Faqat geometrik progressiya",
+        "Ham arifmetik, ham geometrik progressiya",
+        "Progressiya emas"
+      ],
+      "t": 2,
+      "izoh": "Qo'shni hadlar ayirmasi 7 − 7 = 0, demak bu ayirmasi nolga teng arifmetik progressiya. Qo'shni hadlar nisbati esa 7 : 7 = 1, demak bu maxraji birga teng geometrik progressiya ham. Hadlar noldan farqli bo'lgani uchun geometrik progressiya ta'rifi buzilmaydi. Javob: ham arifmetik, ham geometrik progressiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-vaqtda-ikkala-progressiya",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#41c4a6ac"
+    },
+    {
+      "q": "Uchta son bir vaqtda ham arifmetik, ham geometrik progressiya tashkil etishi uchun ayirma d va maxraj q qanday qiymatlarga ega bo'lishi shart?",
+      "v": [
+        "d = 1 va q = 0",
+        "d = 0 va q = 0",
+        "d = 0 va q = 1",
+        "d = 1 va q = 1"
+      ],
+      "t": 2,
+      "izoh": "Ikkala shartdan uchala had teng ekani kelib chiqadi, chunki (b − a)² = 0. Teng hadlarda ayirma d = b − a = 0 bo'ladi. Nisbat esa q = b : a = 1 ga teng. Maxraj nol bo'la olmaydi, chunki geometrik progressiyada q ≠ 0. Javob: d = 0 va q = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-vaqtda-ikkala-progressiya",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#bfb6d939"
+    },
+    {
+      "q": "Geometrik progressiyaning uchta ketma-ket hadi yig'indisi 42 ga, ko'paytmasi esa 512 ga teng. Progressiyaning eng kichik hadini toping.",
+      "v": [
+        "2",
+        "4",
+        "8",
+        "32"
+      ],
+      "t": 0,
+      "izoh": "Uch hadning ko'paytmasi o'rta hadning kubiga teng, chunki a·b·c = b³. Demak b³ = 512 va b = 8. Chetki hadlar yig'indisi 42 − 8 = 34, ko'paytmasi esa 8² = 64. Ular t² − 34t + 64 = 0 tenglamaning ildizlari, ya'ni 2 va 32. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-kopaytma-sistemasi",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#43a25761"
+    },
+    {
+      "q": "Uchta son arifmetik progressiya tashkil etadi, ularning yig'indisi 30 ga, kvadratlari yig'indisi esa 350 ga teng. Eng katta sonni toping.",
+      "v": [
+        "5",
+        "10",
+        "15",
+        "25"
+      ],
+      "t": 2,
+      "izoh": "Sonlarni b − d, b va b + d deb olamiz, yig'indi 3b = 30 dan b = 10. Kvadratlar yig'indisi (b − d)² + b² + (b + d)² = 3b² + 2d² = 300 + 2d² = 350. Bundan 2d² = 50, d² = 25 va d = 5. Sonlar 5, 10, 15, eng kattasi 15. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-kopaytma-sistemasi",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#e3f42f6a"
+    },
+    {
+      "q": "Uch aka-ukaning yoshlari geometrik progressiya tashkil etadi. Yoshlarning ko'paytmasi 1728 ga, yig'indisi esa 38 ga teng bo'lsa, eng kattasi nechada?",
+      "v": [
+        "8 yosh",
+        "12 yosh",
+        "24 yosh",
+        "18 yosh"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytma o'rta hadning kubiga teng: b³ = 1728, demak b = 12 yosh. Chetki yoshlar yig'indisi 38 − 12 = 26, ko'paytmasi esa 12² = 144. Ular t² − 26t + 144 = 0 tenglamaning ildizlari, ya'ni 8 va 18. Javob: 18 yosh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-kopaytma-sistemasi",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#7e4ea4c2"
+    },
+    {
+      "q": "Uchta sonning yig'indisi 30 ga teng va ular arifmetik progressiya tashkil etadi. Chetki hadlar ko'paytmasi 84 bo'lsa, progressiyaning musbat ayirmasi nechaga teng?",
+      "v": [
+        "4",
+        "6",
+        "14",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi 30 bo'lgani uchun o'rta had b = 10. Chetki hadlar (10 − d) va (10 + d), ularning ko'paytmasi 100 − d² = 84. Bundan d² = 16 va musbat ildiz d = 4. Sonlar 6, 10, 14 ko'rinishida. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-kopaytma-sistemasi",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#7a53db28"
+    },
+    {
+      "q": "Ikki musbat sonning o'rta arifmetigi 15 ga, o'rta geometrigi esa 9 ga teng. Bu sonlardan kattasini toping.",
+      "v": [
+        "3",
+        "9",
+        "21",
+        "27"
+      ],
+      "t": 3,
+      "izoh": "O'rta arifmetik shartidan sonlar yig'indisi 2·15 = 30 ga teng. O'rta geometrik shartidan ko'paytmasi 9² = 81 ga teng. Sonlar t² − 30t + 81 = 0 tenglamaning ildizlari, diskriminant 900 − 324 = 576. Ildizlar (30 ± 24) : 2, ya'ni 27 va 3. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-arifmetik-va-orta-geometrik",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#caaaa570"
+    },
+    {
+      "q": "Sardor uch oylik daromadini tahlil qildi: birinchi oyda 4 mln, ikkinchi oyda 9 mln so'm. Uchinchi oy daromadi dastlabki ikkitasining o'rta geometrigiga teng bo'lsa, u qancha?",
+      "v": [
+        "6,5 mln",
+        "13 mln",
+        "6 mln",
+        "36 mln"
+      ],
+      "t": 2,
+      "izoh": "Ikki sonning o'rta geometrigi ularning ko'paytmasidan olingan kvadrat ildizga teng. Ko'paytma 4·9 = 36 bo'ladi. Kvadrat ildiz olamiz: √36 = 6. Demak uchinchi oy daromadi 6 mln so'm. Javob: 6 mln.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-arifmetik-va-orta-geometrik",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#384f40b6"
+    },
+    {
+      "q": "Ikki musbat son berilgan bo'lsa, ularning o'rta arifmetigi bilan o'rta geometrigi orasidagi munosabat haqidagi to'g'ri tasdiqni tanlang.",
+      "v": [
+        "O'rta geometrik har doim kattaroq",
+        "O'rta arifmetik o'rta geometrikdan kichik emas",
+        "Ular har doim o'zaro teng",
+        "Ularni umuman solishtirib bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ayirmani tekshiramiz: (a + b)/2 − √(ab) ifodani umumiy ko'rinishga keltirsak (√a − √b)²/2 chiqadi. Kvadrat hech qachon manfiy bo'lmaydi, demak o'rta arifmetik o'rta geometrikdan kichik emas. Tenglik faqat a = b bo'lganda o'rinli. Javob: o'rta arifmetik o'rta geometrikdan kichik emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-arifmetik-va-orta-geometrik",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#723d92fd"
+    },
+    {
+      "q": "Dehqon ikki maydondan mos ravishda 25 va 49 tonna hosil oldi. Shu ikki sonning o'rta arifmetigi bilan o'rta geometrigi orasidagi farqni hisoblang.",
+      "v": [
+        "0",
+        "2",
+        "12",
+        "24"
+      ],
+      "t": 1,
+      "izoh": "O'rta arifmetik (25 + 49) : 2 = 74 : 2 = 37 tonna. O'rta geometrik √(25·49) = √1225 = 35 tonna. Ularning farqi 37 − 35 = 2 tonna. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-arifmetik-va-orta-geometrik",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#4e2fe899"
+    },
+    {
+      "q": "x + 2, 3x va 4x + 5 ifodalari shu tartibda arifmetik progressiyaning ketma-ket hadlari bo'lsa, x nechaga teng?",
+      "v": [
+        "−3,5",
+        "7",
+        "12",
+        "21"
+      ],
+      "t": 1,
+      "izoh": "Arifmetik shart 2·3x = (x + 2) + (4x + 5) ko'rinishida bo'ladi. Chap tomon 6x, o'ng tomon 5x + 7, demak 6x = 5x + 7 va x = 7. Tekshirish: hadlar 9, 21, 33 bo'lib, ayirma 12 ga teng. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodali-hadlar-tenglamasi",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#f50c3910"
+    },
+    {
+      "q": "x − 1, x + 3 va x² − 5 ifodalari shu tartibda arifmetik progressiya hosil qiladi. x ning mumkin bo'lgan qiymatlaridan kattasini toping.",
+      "v": [
+        "−3",
+        "1",
+        "4",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Arifmetik shart 2(x + 3) = (x − 1) + (x² − 5) ko'rinishida. Yoyib 2x + 6 = x² + x − 6 ni olamiz, ya'ni x² − x − 12 = 0. Ildizlar x = 4 va x = −3, ikkalasi ham progressiya beradi. Kattasi x = 4, unda hadlar 3, 7, 11 bo'ladi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifodali-hadlar-tenglamasi",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#c283b77e"
+    },
+    {
+      "q": "3ˣ, 3ˣ⁺¹ va 3ˣ⁺² ifodalari qanday progressiya tashkil qiladi va uning xarakteristikasi qanday bo'ladi?",
+      "v": [
+        "Arifmetik progressiya, ayirmasi 3",
+        "Geometrik progressiya, maxraji 3ˣ",
+        "Arifmetik progressiya, ayirmasi 1",
+        "Geometrik progressiya, maxraji 3"
+      ],
+      "t": 3,
+      "izoh": "Qo'shni hadlar nisbatini topamiz: 3ˣ⁺¹ : 3ˣ = 3 va 3ˣ⁺² : 3ˣ⁺¹ = 3. Nisbat doimiy bo'lgani uchun bu geometrik progressiya. Uning maxraji 3 ga teng, birinchi hadi esa 3ˣ. Javob: geometrik progressiya, maxraji 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodali-hadlar-tenglamasi",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#cb0f5778"
+    },
+    {
+      "q": "a − 2, a va 2a − 3 ifodalari shu tartibda o'suvchi geometrik progressiyaning hadlari bo'lsa, a nechaga teng?",
+      "v": [
+        "1",
+        "9",
+        "6",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Geometrik shart a² = (a − 2)(2a − 3) ko'rinishida. O'ng tomonni yoyamiz: 2a² − 7a + 6, demak a² − 7a + 6 = 0 va ildizlar a = 1, a = 6. a = 1 bo'lsa hadlar −1, 1, −1 bo'lib progressiya o'suvchi emas. a = 6 da hadlar 4, 6, 9 bo'lib maxraj 1,5. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifodali-hadlar-tenglamasi",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#d73864d9"
+    },
+    {
+      "q": "Uchta son a, b va c shu tartibda arifmetik progressiya tashkil etadi. b² − ac ifodaning qiymati progressiya ayirmasi d orqali qanday ifodalanadi?",
+      "v": [
+        "d²",
+        "2d",
+        "−d²",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Hadlarni b − d, b va b + d ko'rinishida yozamiz, ya'ni a = b − d va c = b + d. U holda ac = (b − d)(b + d) = b² − d². Demak b² − ac = b² − (b² − d²) = d². Shu sababli arifmetik progressiya bir vaqtda geometrik bo'lishi uchun d = 0 shart. Javob: d².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-bosqichli-tahlil",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#e1f44ae2"
+    },
+    {
+      "q": "Uchta son geometrik progressiya tashkil etadi. Ikkinchi hadga 8 qo'shilganda arifmetik progressiya, so'ng uchinchi hadga 64 qo'shilganda yana geometrik progressiya hosil bo'ladi. Butun qiymatli birinchi hadni toping.",
+      "v": [
+        "2",
+        "4",
+        "12",
+        "36"
+      ],
+      "t": 1,
+      "izoh": "Progressiyani a, aq, aq² deb olamiz. Birinchi shartdan 2(aq + 8) = a + aq², ya'ni a(q − 1)² = 16. Ikkinchi shartdan (aq + 8)² = a(aq² + 64), soddalashtirsak 16aq + 64 = 64a, ya'ni a(4 − q) = 4. Ikki tenglikdan 4(4 − q) = (q − 1)² chiqadi, bundan q² + 2q − 15 = 0 va uning ildizlari q = 3 hamda q = −5. Ikkala ildiz ham progressiya shartlarini qanoatlantiradi, shuning uchun ularni birinchi hadga qarab ajratamiz: q = −5 bo'lganda a(4 − q) = 4 dan a = 4/9 chiqadi, bu esa butun son emas. Masalada birinchi had butun qiymatli deb berilgani uchun q = 3 olinadi, u holda a = 16 : 4 = 4 va progressiya 4, 12, 36 bo'ladi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-bosqichli-tahlil",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#00028be7"
+    },
+    {
+      "q": "Uchta son o'suvchi geometrik progressiya tashkil etadi va ularning yig'indisi 26 ga teng. O'rta hadga 4 qo'shilganda arifmetik progressiya hosil bo'lsa, progressiyaning eng katta hadini toping.",
+      "v": [
+        "2",
+        "6",
+        "10",
+        "18"
+      ],
+      "t": 3,
+      "izoh": "Hadlar a, aq va aq² bo'lsin, birinchi shartdan a(1 + q + q²) = 26. Arifmetik shartdan 2(aq + 4) = a + aq², ya'ni a(q − 1)² = 8. Ikkinchisini birinchisidan ayirsak 3aq = 18 va aq = 6. Bundan a = 6/q ni qo'yib 3q² − 10q + 3 = 0 ni olamiz, o'suvchi holda q = 3 va a = 2. Hadlar 2, 6, 18. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-bosqichli-tahlil",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#c7bd0804"
+    },
+    {
+      "q": "To'rtta son o'suvchi geometrik progressiya tashkil etadi. Birinchi va to'rtinchi hadlar yig'indisi 27 ga, ikkinchi va uchinchi hadlar yig'indisi esa 18 ga teng. Birinchi hadni toping.",
+      "v": [
+        "3",
+        "6",
+        "9",
+        "24"
+      ],
+      "t": 0,
+      "izoh": "Shartlarni yozamiz: a(1 + q³) = 27 va aq(1 + q) = 18. Birinchisida 1 + q³ = (1 + q)(1 − q + q²) ko'paytuvchilarga ajratiladi. Ikkalasini bo'lsak (1 − q + q²) : q = 1,5 chiqadi, ya'ni 2q² − 5q + 2 = 0. Ildizlar q = 2 va q = 0,5, o'suvchi holda q = 2 va 6a = 18 dan a = 3. Progressiya 3, 6, 12, 24. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-bosqichli-tahlil",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#5c985de6"
+    },
+    {
+      "q": "Quyidagi uchliklardan qaysi biri geometrik progressiya tashkil etadi: 2; 5; 8 yoki 3; 6; 12 yoki 4; 7; 10 yoki 1; 4; 7?",
+      "v": [
+        "2; 5; 8",
+        "3; 6; 12",
+        "4; 7; 10",
+        "1; 4; 7"
+      ],
+      "t": 1,
+      "izoh": "Har bir uchlikda o'rta hadning kvadratini chetki hadlar ko'paytmasi bilan solishtiramiz. 3; 6; 12 uchun 6² = 36 va 3·12 = 36, teng. Qolgan uchtasi arifmetik progressiya: ularda ayirma mos ravishda 3, 3 va 3 ga teng. Javob: 3; 6; 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "progressiya-turini-aniqlash",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#6dd56a74"
+    },
+    {
+      "q": "16; 24; 36 va 9; 15; 21 hamda 5; 10; 20 uchliklaridan qaysilari geometrik progressiya bo'ladi?",
+      "v": [
+        "Faqat 16; 24; 36",
+        "Faqat 5; 10; 20",
+        "16; 24; 36 va 5; 10; 20",
+        "Uchalasi ham"
+      ],
+      "t": 2,
+      "izoh": "Birinchi uchlikda 24² = 576 va 16·36 = 576, demak geometrik progressiya, maxraji 1,5. Ikkinchisida 15² = 225 va 9·21 = 189, teng emas, u arifmetik progressiya. Uchinchisida 10² = 100 va 5·20 = 100, demak geometrik progressiya, maxraji 2. Javob: 16; 24; 36 va 5; 10; 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "progressiya-turini-aniqlash",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#041e13c8"
+    },
+    {
+      "q": "Bir sinfning uch guruhida mos ravishda 6, 12 va 18 nafar o'quvchi bor. Bu sonlar qanday progressiya tashkil etadi va uchinchi guruhga yana 6 nafar qo'shilsa, qanday progressiya hosil bo'ladi?",
+      "v": [
+        "Avval arifmetik, keyin geometrik",
+        "Avval geometrik, keyin arifmetik",
+        "Ikkala holda ham arifmetik",
+        "Ikkala holda ham geometrik"
+      ],
+      "t": 0,
+      "izoh": "Dastlab 2·12 = 6 + 18 tengligi bajariladi, demak bu arifmetik progressiya, ayirmasi 6. Qo'shgandan keyin sonlar 6, 12, 24 bo'ladi va 12² = 144 = 6·24 tengligi bajariladi. Demak yangi uchlik geometrik progressiya, maxraji 2. Javob: avval arifmetik, keyin geometrik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "progressiya-turini-aniqlash",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#b69906e3"
+    },
+    {
+      "q": "5; 10; 20; 30 ketma-ketligining dastlabki uch hadi va oxirgi uch hadi qanday progressiyalarni tashkil etishini aniqlang.",
+      "v": [
+        "Dastlabki uchtasi arifmetik, oxirgi uchtasi geometrik",
+        "Ikkalasi ham geometrik",
+        "Ikkalasi ham arifmetik",
+        "Dastlabki uchtasi geometrik, oxirgi uchtasi arifmetik"
+      ],
+      "t": 3,
+      "izoh": "Dastlabki uchlik 5; 10; 20 uchun 10² = 100 va 5·20 = 100, demak geometrik progressiya, maxraji 2. Oxirgi uchlik 10; 20; 30 uchun 2·20 = 40 va 10 + 30 = 40, demak arifmetik progressiya, ayirmasi 10. Javob: dastlabki uchtasi geometrik, oxirgi uchtasi arifmetik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "progressiya-turini-aniqlash",
+      "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash#0f20a6a2"
+    }
+  ]
+}

@@ -1,0 +1,1506 @@
+{
+  "nom": "Badiiy asar tili va muallif uslubi",
+  "bolim": "Tahlil",
+  "savollar": [
+    {
+      "q": "Quyidagi parcha qaysi asardan olingan? Go'ja olib chiqdim-u, birozgina mashoq tersin deb boshini qo'yib yubordim.",
+      "v": [
+        "«Sudxo'rning o'limi»",
+        "«To'nyuquq bitiktoshi»",
+        "«Bulbuldayinkim faryod etarman»",
+        "«Yetti zog'ora qissasi»"
+      ],
+      "t": 3,
+      "izoh": "Parcha «Yetti zog'ora qissasi» asaridan. Qariya tilidan aytilgan bayon tabiiy chiqqan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#244d97af"
+    },
+    {
+      "q": "Quyidagi parcha qaysi asardan olingan? O'zim g'aram soyasida, g'ir-g'ir shabadada mast bo'lib yotdim, nafas o'tmay uxlab qolibman.",
+      "v": [
+        "«Lola ko'ksidek bag'rim»",
+        "«Tuhmatchilar jazosi»",
+        "«Jaloliddin Manguberdi»",
+        "«Yetti zog'ora qissasi»"
+      ],
+      "t": 3,
+      "izoh": "Parcha «Yetti zog'ora qissasi» asaridan. Bu parchani adabiy til qoidasiga solsak, jozibasi yo'qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#87938b2f"
+    },
+    {
+      "q": "Badiiy asar tilining qatlamlari umumiydan xususiyga qarab to'g'ri tartibda qaysi javobda berilgan?",
+      "v": [
+        "umumxalq tili → adabiy til → badiiy til → yozuvchi uslubi",
+        "yozuvchi uslubi → badiiy til → umumxalq tili → adabiy til",
+        "badiiy til → umumxalq tili → adabiy til → yozuvchi uslubi",
+        "adabiy til → badiiy til → umumxalq tili → yozuvchi uslubi"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri tartib: umumxalq tili → adabiy til → badiiy til → yozuvchi uslubi. Har bir bosqich oldingisiga tayanib, o'z talabini qo'yadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#94c62af9"
+    },
+    {
+      "q": "Badiiy matn ustida ishlashda so'z tanlash tartibi to'g'ri tartibda qaysi javobda berilgan?",
+      "v": [
+        "ortiqchasini olib tashlash → fikrni aniqlash → jumlani sayqallash → ohangga mos so'z izlash",
+        "ortiqchasini olib tashlash → ohangga mos so'z izlash → fikrni aniqlash → jumlani sayqallash",
+        "ohangga mos so'z izlash → jumlani sayqallash → fikrni aniqlash → ortiqchasini olib tashlash",
+        "fikrni aniqlash → ohangga mos so'z izlash → ortiqchasini olib tashlash → jumlani sayqallash"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri tartib: fikrni aniqlash → ohangga mos so'z izlash → ortiqchasini olib tashlash → jumlani sayqallash. Sayqal berilmagan jumla o'quvchini ishontirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#77579033"
+    },
+    {
+      "q": "Yozuvchi uslubining shakllanish bosqichlari to'g'ri tartibda qaysi javobda berilgan?",
+      "v": [
+        "takrorlanmas uslubga aylanishi → unib-o'sgan muhit tili → o'qib-o'rganish → o'z ohangini topish",
+        "takrorlanmas uslubga aylanishi → o'z ohangini topish → o'qib-o'rganish → unib-o'sgan muhit tili",
+        "unib-o'sgan muhit tili → takrorlanmas uslubga aylanishi → o'qib-o'rganish → o'z ohangini topish",
+        "unib-o'sgan muhit tili → o'qib-o'rganish → o'z ohangini topish → takrorlanmas uslubga aylanishi"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri tartib: unib-o'sgan muhit tili → o'qib-o'rganish → o'z ohangini topish → takrorlanmas uslubga aylanishi. Tog'ay Murod uslubi Surxon vohasi tili bilan chambarchas bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#cc1d6b96"
+    },
+    {
+      "q": "Badiiy asarni tahlil qilishda til va uslub masalasi qachon ko'riladi?",
+      "v": [
+        "muqova ko'rilgandan keyin",
+        "sarlavha o'qilishi bilan",
+        "mazmun va g'oya aniqlangach",
+        "kitob sotib olingan zahoti"
+      ],
+      "t": 2,
+      "izoh": "Avval nima aytilgani, so'ng qanday aytilgani o'rganiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#0ea95b22"
+    },
+    {
+      "q": "Badiiy til adabiy til qoidalariga hamisha to'liq mos keladimi?",
+      "v": [
+        "yo'q, u umuman bog'liq emas",
+        "yo'q, mos tushmasligi mumkin",
+        "ha, bu qat'iy talab hisoblanadi",
+        "ha, har doim to'liq mos keladi"
+      ],
+      "t": 1,
+      "izoh": "Qahramon nutqi ko'pincha jonli so'zlashuv shaklida beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#ef451195"
+    },
+    {
+      "q": "Yozuvchi uslubining shakllanishiga birinchi navbatda nima ta'sir qiladi?",
+      "v": [
+        "unib-o'sgan muhit va xalq tili",
+        "chet el sayohatlari soni",
+        "kitob do'konidagi tanlov",
+        "nashriyot rahbarining fikri"
+      ],
+      "t": 0,
+      "izoh": "Adib bolalikda eshitgan so'z ohangi umrbod qolaveradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#0c63128b"
+    },
+    {
+      "q": "Badiiy asarda so'z tejamkorligi nimani anglatadi?",
+      "v": [
+        "asarni qisqartirib bosishni",
+        "lug'atdan kam foydalanishni",
+        "kam so'z bilan ko'p ma'no berishni",
+        "bo'limlarni birlashtirishni"
+      ],
+      "t": 2,
+      "izoh": "Ortiqcha so'z fikrni suyultirib yuboradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#528db854"
+    },
+    {
+      "q": "Tahrir jarayonida qaysi jihatlar e'tiborga olinadi?",
+      "v": [
+        "huquqiy va moliyaviy jihatlar",
+        "texnik va mexanik jihatlar",
+        "faktik, imloviy va uslubiy jihatlar",
+        "tijorat va reklama jihatlari"
+      ],
+      "t": 2,
+      "izoh": "Ishoraviy xatolar ham shu bosqichda tuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#6ef525a4"
+    },
+    {
+      "q": "Notanish so'z ma'nosini aniqlashning eng qulay yo'li qaysi?",
+      "v": [
+        "sahifani o'qimay o'tkazish",
+        "lug'at va matn atrofidan foydalanish",
+        "so'zni butunlay tashlab ketish",
+        "so'zni o'zicha o'zgartirib qo'yish"
+      ],
+      "t": 1,
+      "izoh": "Kontekst ko'pincha ma'noni o'zi ochib beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#a34b2b1f"
+    },
+    {
+      "q": "Yozuvchining o'z ohangini topishi qanday baholanadi?",
+      "v": [
+        "nashriyot talabi sifatida",
+        "til qoidasi sifatida",
+        "tasodifiy hodisa sifatida",
+        "ijodiy kamolotning belgisi sifatida"
+      ],
+      "t": 3,
+      "izoh": "Taqlid bosqichidan chiqqan adib o'z uslubini yaratadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#9cb2cdfe"
+    },
+    {
+      "q": "Xalq topishmoqlari qanday uslubda yaratiladi?",
+      "v": [
+        "ixcham, sodda va qofiyali",
+        "uzun, murakkab va og'ir",
+        "ilmiy va atamalarga boy",
+        "rasmiy va hujjatli"
+      ],
+      "t": 0,
+      "izoh": "Ular nasriy va she'riy shaklda bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#d50875a0"
+    },
+    {
+      "q": "Shavkat Rahmon «yetkazib» so'zini qanday shaklda ishlatgan?",
+      "v": [
+        "yetkazgach",
+        "yetkarib",
+        "yetgizib",
+        "yetkurib"
+      ],
+      "t": 1,
+      "izoh": "Bu o'zgarish qilinajak ishning zalvorini oshirgandek bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#34b378e4"
+    },
+    {
+      "q": "Navoiyning qaysi asarida eski o'zbek tilining badiiy uslubi ilmiy asoslangan?",
+      "v": [
+        "Mahbub ul-qulub",
+        "Majolis un-nafois",
+        "Mezon ul-avzon",
+        "Muhokamat ul-lug'atayn"
+      ],
+      "t": 3,
+      "izoh": "Asar 1498-yilda yaratilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#cc6962b3"
+    },
+    {
+      "q": "Pirimqul Qodirov nomzodlik ishida qaysi masalani tadqiq etgan?",
+      "v": [
+        "Oybek romanlarining syujeti",
+        "Hamza dramalarining sahna tarixi",
+        "G'afur G'ulom she'rlarining vazni",
+        "Abdulla Qahhor asarlarining tili"
+      ],
+      "t": 3,
+      "izoh": "Ish 1954-yilda yoqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#782ebd1d"
+    },
+    {
+      "q": "Abdulla Qodiriy asarlari qaysi jihati bilan ajralib turgan?",
+      "v": [
+        "go'zal ifoda uslubi bilan",
+        "sanalarga boyligi bilan",
+        "faqat she'rda yozilgani bilan",
+        "juda qisqaligi bilan"
+      ],
+      "t": 0,
+      "izoh": "Uning asarlari haqqoniyligi bilan ham e'tirof etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#2164bf0a"
+    },
+    {
+      "q": "«Do'nan» hikoyasi kimning tilidan hikoya qilinadi?",
+      "v": [
+        "Qo'chqor",
+        "Baxshilla maxsum",
+        "Shoikrom aka",
+        "Sariboy"
+      ],
+      "t": 1,
+      "izoh": "U ko'pni ko'rgan qariya sifatida tasvirlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#74074b69"
+    },
+    {
+      "q": "Xalq dostoni tili haqida darslikda qanday fikr bildirilgan?",
+      "v": [
+        "juda og'ir va murakkab ekani",
+        "nihoyatda yengil va ravon ekani",
+        "faqat nasrdan iborat ekani",
+        "chet so'zlarga to'lib ketgani"
+      ],
+      "t": 1,
+      "izoh": "Unda rang-barang tasvir vositalari unumli qo'llangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#10782cf3"
+    },
+    {
+      "q": "Atoyi g'azallari uslubi haqida darslikda qanday fikr aytilgan?",
+      "v": [
+        "sodda va ravon ekani",
+        "og'ir va murakkab ekani",
+        "chet so'zlarga to'lib ketgani",
+        "quruq va zerikarli ekani"
+      ],
+      "t": 0,
+      "izoh": "Shu bois uning she'rlari xalq qo'shiqlariga aylanib ketgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#0bfd5137"
+    },
+    {
+      "q": "Ko'r-ko'rona taqlid qilingan uslub asarga qanday ta'sir qiladi?",
+      "v": [
+        "asar tez tarjima qilinadi",
+        "asar yanada mashhur bo'ladi",
+        "asar o'ziga xoslikdan mahrum bo'ladi",
+        "asar hajmi kattalashadi"
+      ],
+      "t": 2,
+      "izoh": "O'zga ovoz bilan aytilgan gap ishonarli chiqmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#23b534de"
+    },
+    {
+      "q": "Yozuvchi personajga sheva so'zi qo'shganda nimaga erishadi?",
+      "v": [
+        "bo'limlarni qisqartiradi",
+        "janrni almashtiradi",
+        "obrazning kelib chiqishini sezdiradi",
+        "asar sanasini o'zgartiradi"
+      ],
+      "t": 2,
+      "izoh": "Nutq orqali qahramonning yurti va muhiti bilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#fb125e07"
+    },
+    {
+      "q": "Qahramon nutqi qanday xususiyatlardan kelib chiqib shakllantiriladi?",
+      "v": [
+        "zamoni, yoshi, bilimi va kasbidan",
+        "nashriyot talablaridan",
+        "kitob hajmi va bo'limlaridan",
+        "muqova rangi va shaklidan"
+      ],
+      "t": 0,
+      "izoh": "Uning dunyoqarashi va jinsi ham hisobga olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#b7047132"
+    },
+    {
+      "q": "Yozuvchi tilida ortiqcha bezak ko'payib ketsa, nima bo'ladi?",
+      "v": [
+        "asar ta'siri kuchayadi",
+        "til soddalashadi",
+        "matn ixchamlashadi",
+        "fikr tiniqligi yo'qoladi"
+      ],
+      "t": 3,
+      "izoh": "Sodda ifoda ko'pincha jimjimador jumladan kuchliroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#45732c2c"
+    },
+    {
+      "q": "«Maktab gulistoni» qaysi janrga mansub?",
+      "v": [
+        "detektiv qissa",
+        "tarixiy roman",
+        "o'quv kitobi",
+        "hajviy hikoya"
+      ],
+      "t": 2,
+      "izoh": "«Maktab gulistoni» — o'quv kitobi. Muallifi — Abdulla Avloniy. Yangi usul maktabi uchun yaratilgan kitoblardan biri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#316fe196"
+    },
+    {
+      "q": "«Oltiariq hangomalari» asarining asosiy g'oyasi qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "Jonivorga bo'lgan mehr insonning o'z insonligini saqlab qolish o'lchovi ekani ko'rsatilgan",
+        "Xalq hazil-mutoyibasi va so'z o'yini vositasida kundalik turmush lavhalari kulgili ochilgan",
+        "Yorga yetishish umidi bilan yashagan oshiq qalbining tinimsiz faryodi va sadoqati ifodalangan",
+        "Tabiat qonunlariga aralashuv oqibatida yolg'izlikka mahkum bo'lgan inson fojiasi ochilgan"
+      ],
+      "t": 1,
+      "izoh": "«Oltiariq hangomalari»da xalq hazil-mutoyibasi va so'z o'yini vositasida kundalik turmush lavhalari kulgili ochilgan. Kulgi muallif uslubining tayanch vositasi bo'lib xizmat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#f1271f9b"
+    },
+    {
+      "q": "«Maktab gulistoni» asarining asosiy g'oyasi qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "Yosh avlodni ilm va odobga o'rgatish vazifasi sodda, ravon til bilan bajarilgan",
+        "Barkamol yoshlarni Vatan kutayotgani va ular zimmasidagi mas'uliyat uqtirilgan",
+        "Chin muhabbat egasi mehnat va fidoyilik bilan sinovdan o'tishi ko'rsatilgan",
+        "O'zaro nizo va parokandalik yurt taqdiriga soya solishi tarixiy misolda ochilgan"
+      ],
+      "t": 0,
+      "izoh": "«Maktab gulistoni»da yosh avlodni ilm va odobga o'rgatish vazifasi sodda, ravon til bilan bajarilgan. Muallif xalqni ma'rifatga undashning amaliy yo'lini tanlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#87f3cd76"
+    },
+    {
+      "q": "«Xandon pista» asarining asosiy g'oyasi qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "Shonli bobolarga munosib bo'lolmagan avlodning illatlari ayovsiz fosh etilgan",
+        "Erk va ozodlikka erishgan xalqning quvonchi tantanavor ohangda kuylangan",
+        "Insonga ishonch va mehr uni jinoyat yo'lidan qaytarishi mumkinligi uqtirilgan",
+        "Turmushdagi kulgili holatlar ixcham hikoyalarda umumlashtirilgan"
+      ],
+      "t": 3,
+      "izoh": "«Xandon pista»da turmushdagi kulgili holatlar ixcham hikoyalarda umumlashtirilgan. Adibning hajviy asarlari xalq mulkiga aylangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#8824f3a2"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Yosh avlodni ilm va odobga o'rgatish vazifasi sodda, ravon til bilan bajarilgan",
+      "v": [
+        "«Maktab gulistoni»",
+        "«Chol va dengiz»",
+        "«Alvido, Gulsari»",
+        "«Qish bilan Bahor»"
+      ],
+      "t": 0,
+      "izoh": "Bu — «Maktab gulistoni» asarining bosh g'oyasi. Muallif xalqni ma'rifatga undashning amaliy yo'lini tanlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#97d12515"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Barkamol yoshlarni Vatan kutayotgani va ular zimmasidagi mas'uliyat uqtirilgan",
+      "v": [
+        "«Shirin qovunlar mamlakati»",
+        "«Bilib qo'yki, seni Vatan kutadi»",
+        "«Sariq devning o'limi»",
+        "«Bahor keldi seni so'roqlab»"
+      ],
+      "t": 1,
+      "izoh": "Bu — «Bilib qo'yki, seni Vatan kutadi» asarining bosh g'oyasi. She'r da'vat ohangida yozilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#94c2c7c7"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Shoirning so'zga va ijodga bo'lgan otashin sadoqati ochiq bildirilgan",
+      "v": [
+        "«Buzilgan o'lkaga»",
+        "«Farhod va Shirin»",
+        "«Yana she'rimga»",
+        "«Mirzo Ulug'bek»"
+      ],
+      "t": 2,
+      "izoh": "Bu — «Yana she'rimga» asarining bosh g'oyasi. Muallif ohangi uning ijodiy qiyofasini belgilaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#5ca009ed"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Oddiy kishilar taqdiri xalq tiliga yaqin, sodda va samimiy bayonda ochib berilgan",
+      "v": [
+        "«Yetti zog'ora qissasi»",
+        "«Ot kishnagan oqshom»",
+        "«Sherlok Xolms sarguzashtlari»",
+        "«Asrga tatigulik kun»"
+      ],
+      "t": 0,
+      "izoh": "Bu — «Yetti zog'ora qissasi» asarining bosh g'oyasi. Muallif qahramon yoshi va tajribasiga mos so'z tanlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#fb6c6819"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Xalq hazil-mutoyibasi va so'z o'yini vositasida kundalik turmush lavhalari kulgili ochilgan",
+      "v": [
+        "«Lola ko'ksidek bag'rim»",
+        "«Oltiariq hangomalari»",
+        "«G'aroyib us-sig'ar»",
+        "«Mehrobdan chayon»"
+      ],
+      "t": 1,
+      "izoh": "Bu — «Oltiariq hangomalari» asarining bosh g'oyasi. Kulgi muallif uslubining tayanch vositasi bo'lib xizmat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#a46e246a"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Turmushdagi kulgili holatlar ixcham hikoyalarda umumlashtirilgan",
+      "v": [
+        "«Uzum hikoyati»",
+        "«Hammomi xayol»",
+        "«Xandon pista»",
+        "«O'n ikki stul»"
+      ],
+      "t": 2,
+      "izoh": "Bu — «Xandon pista» asarining bosh g'oyasi. Adibning hajviy asarlari xalq mulkiga aylangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#681ff3ca"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Ota qalbidagi sog'inch tuyg'usi tiniq va jozibali so'zlarda ifodalangan",
+      "v": [
+        "«Sog'inish»",
+        "«O'zbekiston»",
+        "«Genetika»",
+        "«Dodhohim»"
+      ],
+      "t": 0,
+      "izoh": "Bu — «Sog'inish» asarining bosh g'oyasi. Lirik qahramon tabiatida milliy o'ziga xoslik bo'rtib turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#321a6e30"
+    },
+    {
+      "q": "Quyidagi parcha nimani anglatadi? Go'ja olib chiqdim-u, birozgina mashoq tersin deb boshini qo'yib yubordim.",
+      "v": [
+        "Jumla og'zaki nutq qoidalariga moslab tuzilgan.",
+        "G'olib sarkardaning mag'lub raqibi haqidagi o'yi.",
+        "Qahramon haqiqat izlab kurashga otlanadi.",
+        "Qariya tilidan aytilgan bayon tabiiy chiqqan."
+      ],
+      "t": 3,
+      "izoh": "«Yetti zog'ora qissasi» asaridagi bu parchada qariya tilidan aytilgan bayon tabiiy chiqqan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#6914b4b3"
+    },
+    {
+      "q": "Quyidagi parcha nimani anglatadi? O'zim g'aram soyasida, g'ir-g'ir shabadada mast bo'lib yotdim, nafas o'tmay uxlab qolibman.",
+      "v": [
+        "Har bandning to'rtinchi misrasi sifatida takrorlanuvchi naqarot.",
+        "Ona o'z mavqeyini bilgan holda o'g'lini himoya qiladi.",
+        "Bu parchani adabiy til qoidasiga solsak, jozibasi yo'qoladi.",
+        "Yengil tortgan ko'ngil holati tabiat tafsiloti orqali berilgan."
+      ],
+      "t": 2,
+      "izoh": "«Yetti zog'ora qissasi» asaridagi bu parchada bu parchani adabiy til qoidasiga solsak, jozibasi yo'qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#136aadd7"
+    },
+    {
+      "q": "Lug'aviy boylik qaysi javobda to'g'ri ta'riflangan?",
+      "v": [
+        "Ijodkor ishlatgan so'zlarning xilma-xilligi",
+        "Asarda hukmron bo'lgan umumiy hissiy holat",
+        "Jasorat va fidoyilikni ulug'lovchi hissiy ruh",
+        "Tuyg'uning sabab va oqibatini ochib berish"
+      ],
+      "t": 0,
+      "izoh": "Lug'aviy boylik — ijodkor ishlatgan so'zlarning xilma-xilligi. Uslub kengligini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#be7eb7e3"
+    },
+    {
+      "q": "So'z tanlash mahorati qaysi javobda to'g'ri ta'riflangan?",
+      "v": [
+        "Asardan ufurib turuvchi asosiy hissiy ruh va ko'tarinkilik",
+        "Ma'noga eng aniq mos keladigan so'zni topa bilish qobiliyati",
+        "Nasriy asarni sahnaga moslab dramatik shaklga solish",
+        "Filmga olish uchun sahna va suratlar bo'yicha yozilgan matn"
+      ],
+      "t": 1,
+      "izoh": "So'z tanlash mahorati — ma'noga eng aniq mos keladigan so'zni topa bilish qobiliyati. Yozuvchi mahoratining o'lchovi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#35418f6e"
+    },
+    {
+      "q": "Maqol qo'llash qaysi javobda to'g'ri ta'riflangan?",
+      "v": [
+        "Hayotga umidsiz nazar bilan qarash kayfiyati",
+        "Fikrni ko'chma ma'noli so'z bilan yetkazish",
+        "Xalq hikmatini matn ichida ishlatish usuli",
+        "Opera yoki balet uchun yozilgan so'z matni"
+      ],
+      "t": 2,
+      "izoh": "Maqol qo'llash — xalq hikmatini matn ichida ishlatish usuli. Qahramon nutqini xalqchil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#0c75ad9e"
+    },
+    {
+      "q": "Arxaizm qaysi javobda to'g'ri ta'riflangan?",
+      "v": [
+        "Jasorat va fidoyilikni ulug'lovchi hissiy ruh",
+        "Davrga xos kiyim, qurol yoki urf-odat tafsiloti",
+        "Jumlalarning uzun-qisqaligi va tuzilish tartibi",
+        "Hozirgi tilda ishlatilmay qolgan eskirgan so'z"
+      ],
+      "t": 3,
+      "izoh": "Arxaizm — hozirgi tilda ishlatilmay qolgan eskirgan so'z. Tarixiy asarlarda davr ruhini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#8d2d107c"
+    },
+    {
+      "q": "Badiiy til qaysi javobda to'g'ri ta'riflangan?",
+      "v": [
+        "Ijodkorning boshqalardan ajralib turadigan doimiy yozish yo'li",
+        "Obrazlilik va ta'sirchanlik uchun maxsus tanlangan til vositalari majmuasi",
+        "Qahramon xarakterini uning gapirish tarzi orqali ochish usuli",
+        "Filmga olish uchun sahna va suratlar bo'yicha yozilgan matn"
+      ],
+      "t": 1,
+      "izoh": "Badiiy til — obrazlilik va ta'sirchanlik uchun maxsus tanlangan til vositalari majmuasi. Har yozuvchida o'ziga xos bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#d0eb118e"
+    },
+    {
+      "q": "Gap qurilishi qaysi javobda to'g'ri ta'riflangan?",
+      "v": [
+        "Badiiy asar asosida kino yoki teleasar yaratish",
+        "Yozuvchining o'tmishni buzib ko'rsatmaslik burchi",
+        "Jumlalarning uzun-qisqaligi va tuzilish tartibi",
+        "Qahramonni qiyin tanlov oldiga qo'yadigan holat"
+      ],
+      "t": 2,
+      "izoh": "Gap qurilishi — jumlalarning uzun-qisqaligi va tuzilish tartibi. Bayon sur'atini belgilaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#c318a241"
+    },
+    {
+      "q": "Nutq tavsifi qaysi javobda to'g'ri ta'riflangan?",
+      "v": [
+        "Filmga olish uchun sahna va suratlar bo'yicha yozilgan matn",
+        "Qahramonning ichki dunyosi to'g'risidagi to'liq tasavvur",
+        "Ma'lum asarga zamonaviy nuqtayi nazardan berilgan talqin",
+        "Qahramon xarakterini uning gapirish tarzi orqali ochish usuli"
+      ],
+      "t": 3,
+      "izoh": "Nutq tavsifi — qahramon xarakterini uning gapirish tarzi orqali ochish usuli. Har personaj o'zicha gapiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#add90093"
+    },
+    {
+      "q": "Ibora qaysi javobda to'g'ri ta'riflangan?",
+      "v": [
+        "Haqiqatda yashagan kishi tilidan berilgan badiiy so'z",
+        "Ijodkorning boshqalardan ajralib turadigan doimiy yozish yo'li",
+        "Yovuzlik va illatga qarshi keskin munosabat ifodasi",
+        "Ma'nosi ayrim so'zlaridan chiqmaydigan barqaror birikma"
+      ],
+      "t": 3,
+      "izoh": "Ibora — ma'nosi ayrim so'zlaridan chiqmaydigan barqaror birikma. Nutqqa xalqona bo'yoq beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#6ffd97a0"
+    },
+    {
+      "q": "Obrazli ifoda qaysi javobda to'g'ri ta'riflangan?",
+      "v": [
+        "Hayotga yorug' nazar bilan qarash kayfiyati",
+        "Qahramon qalbida ikki xohishning to'qnashuvi",
+        "Fikrni ko'chma ma'noli so'z bilan yetkazish",
+        "Tuyg'uning sabab va oqibatini ochib berish"
+      ],
+      "t": 2,
+      "izoh": "Obrazli ifoda — fikrni ko'chma ma'noli so'z bilan yetkazish. Badiiy tilning asosiy belgisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#ea2ded2e"
+    },
+    {
+      "q": "Muallif uslubi qaysi javobda to'g'ri ta'riflangan?",
+      "v": [
+        "Qahramon xarakterining voqealar ta'sirida tubdan o'zgarishi",
+        "Filmga olish uchun sahna va suratlar bo'yicha yozilgan matn",
+        "Ijodkorning boshqalardan ajralib turadigan doimiy yozish yo'li",
+        "Qahramon xayolidan o'tgan fikrlarning tartibsiz oqimini berish usuli"
+      ],
+      "t": 2,
+      "izoh": "Muallif uslubi — ijodkorning boshqalardan ajralib turadigan doimiy yozish yo'li. So'z tanlashi va gap qurilishida ko'rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#2568661c"
+    },
+    {
+      "q": "Sheva unsuri qaysi javobda to'g'ri ta'riflangan?",
+      "v": [
+        "G'urur va ishonch bilan yo'g'rilgan bayon ohangi",
+        "Asar tilida ishlatilgan mahalliy so'z va ifodalar",
+        "Asarga asos bo'lgan, manbalarda tasdiqlangan voqelik",
+        "Qahramonni qiyin tanlov oldiga qo'yadigan holat"
+      ],
+      "t": 1,
+      "izoh": "Sheva unsuri — asar tilida ishlatilgan mahalliy so'z va ifodalar. Qahramon qaysi yurtdan ekanini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#71449604"
+    },
+    {
+      "q": "Quyidagi ta'rif qaysi adabiy tushunchaga tegishli? Ma'nosi ayrim so'zlaridan chiqmaydigan barqaror birikma",
+      "v": [
+        "xarakter",
+        "libretto",
+        "neologizm",
+        "ibora"
+      ],
+      "t": 3,
+      "izoh": "Bu — ibora. Nutqqa xalqona bo'yoq beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#5604fdaa"
+    },
+    {
+      "q": "Quyidagi ta'rif qaysi adabiy tushunchaga tegishli? Ijodkorning boshqalardan ajralib turadigan doimiy yozish yo'li",
+      "v": [
+        "ko'tarinki ruh",
+        "muallif uslubi",
+        "quvonch ohangi",
+        "romantik pafos"
+      ],
+      "t": 1,
+      "izoh": "Bu — muallif uslubi. So'z tanlashi va gap qurilishida ko'rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#72a160c5"
+    },
+    {
+      "q": "Quyidagi ta'rif qaysi adabiy tushunchaga tegishli? Xalq hikmatini matn ichida ishlatish usuli",
+      "v": [
+        "romantik pafos",
+        "ruhiy ziddiyat",
+        "maqol qo'llash",
+        "optimistik ruh"
+      ],
+      "t": 2,
+      "izoh": "Bu — maqol qo'llash. Qahramon nutqini xalqchil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#8040e5f6"
+    },
+    {
+      "q": "Quyidagi ta'rif qaysi adabiy tushunchaga tegishli? Jumlalarning uzun-qisqaligi va tuzilish tartibi",
+      "v": [
+        "obrazli ifoda",
+        "sahna talqini",
+        "radiospektakl",
+        "gap qurilishi"
+      ],
+      "t": 3,
+      "izoh": "Bu — gap qurilishi. Bayon sur'atini belgilaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#3ee66b2d"
+    },
+    {
+      "q": "Quyidagi ta'rif qaysi adabiy tushunchaga tegishli? Qahramon xarakterini uning gapirish tarzi orqali ochish usuli",
+      "v": [
+        "sheva unsuri",
+        "nutq tavsifi",
+        "obrazli ifoda",
+        "gap qurilishi"
+      ],
+      "t": 1,
+      "izoh": "Bu — nutq tavsifi. Har personaj o'zicha gapiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#dcf0ca45"
+    },
+    {
+      "q": "Quyidagi ta'rif qaysi adabiy tushunchaga tegishli? Obrazlilik va ta'sirchanlik uchun maxsus tanlangan til vositalari majmuasi",
+      "v": [
+        "umid ohangi",
+        "badiiy til",
+        "insenirovka",
+        "g'am ohangi"
+      ],
+      "t": 1,
+      "izoh": "Bu — badiiy til. Har yozuvchida o'ziga xos bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#aa5f8bc0"
+    },
+    {
+      "q": "Quyidagi ta'rif qaysi adabiy tushunchaga tegishli? Harakat va holatni tovush orqali ifodalovchi so'z",
+      "v": [
+        "sahna talqini",
+        "obrazli ifoda",
+        "tasviriy so'z",
+        "radiospektakl"
+      ],
+      "t": 2,
+      "izoh": "Bu — tasviriy so'z. Tasvirni jonli qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#93ee0569"
+    },
+    {
+      "q": "Quyidagi ta'rif qaysi adabiy tushunchaga tegishli? Ma'noga eng aniq mos keladigan so'zni topa bilish qobiliyati",
+      "v": [
+        "xronologik izchillik",
+        "teatr rejissyori",
+        "so'z tanlash mahorati",
+        "tarixiy haqiqat"
+      ],
+      "t": 2,
+      "izoh": "Bu — so'z tanlash mahorati. Yozuvchi mahoratining o'lchovi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#49337509"
+    },
+    {
+      "q": "Quyidagi ta'rif qaysi adabiy tushunchaga tegishli? Asar tilida ishlatilgan mahalliy so'z va ifodalar",
+      "v": [
+        "asar muxlisi",
+        "umid ohangi",
+        "nafrat ohangi",
+        "sheva unsuri"
+      ],
+      "t": 3,
+      "izoh": "Bu — sheva unsuri. Qahramon qaysi yurtdan ekanini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#d216d267"
+    },
+    {
+      "q": "Quyidagi ta'rif qaysi adabiy tushunchaga tegishli? Hozirgi tilda ishlatilmay qolgan eskirgan so'z",
+      "v": [
+        "radiospektakl",
+        "nutq tavsifi",
+        "arxaizm",
+        "hissiy zarba"
+      ],
+      "t": 2,
+      "izoh": "Bu — arxaizm. Tarixiy asarlarda davr ruhini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#3367a538"
+    },
+    {
+      "q": "Quyidagi ta'rif qaysi adabiy tushunchaga tegishli? Fikrni ko'chma ma'noli so'z bilan yetkazish",
+      "v": [
+        "ta'sirchanlik",
+        "radiospektakl",
+        "ruhiy ziddiyat",
+        "obrazli ifoda"
+      ],
+      "t": 3,
+      "izoh": "Bu — obrazli ifoda. Badiiy tilning asosiy belgisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#d91dc484"
+    },
+    {
+      "q": "Badiiy asar tili va muallif uslubi mavzusida atama va uning ta'rifi NOTO'G'RI juftlangan javobni aniqlang.",
+      "v": [
+        "Tarixiy shaxs nutqi — haqiqatda yashagan kishi tilidan berilgan badiiy so'z",
+        "Musiqiy talqin — asar mazmunining kuy va qo'shiq orqali ifodalanishi",
+        "Sheva unsuri — qahramonning ichki dunyosi to'g'risidagi to'liq tasavvur",
+        "Tarixiy shaxs obrazi — haqiqatda yashagan kishining badiiy asardagi talqini"
+      ],
+      "t": 2,
+      "izoh": "Sheva unsuri — asar tilida ishlatilgan mahalliy so'z va ifodalar. Berilgan ta'rif esa ruhiy portretga tegishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#1230de45"
+    },
+    {
+      "q": "Tog'ay Murod hikoya usuli o'quvchida nima uyg'otadi?",
+      "v": [
+        "jon qulog'ini berib eshitish istagini",
+        "lug'at izlash zaruratini",
+        "kitobni yopib qo'yish istagini",
+        "boshqa asar tanlash fikrini"
+      ],
+      "t": 0,
+      "izoh": "Anglashmovchilik yuzaga kelmasligi shundan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#388afba5"
+    },
+    {
+      "q": "Uslub bilan til o'rtasidagi bog'liqlik qanday?",
+      "v": [
+        "ular bir-biriga aloqador emas",
+        "uslub tilni tanlash va qo'llash yo'lidir",
+        "til uslubni butunlay inkor etadi",
+        "uslub tildan mustaqil turadi"
+      ],
+      "t": 1,
+      "izoh": "Bir tilda yozgan ijodkorlarning uslubi har xil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#e42d88f9"
+    },
+    {
+      "q": "Muallif nutqi bilan personaj nutqi o'rtasidagi farq nimada?",
+      "v": [
+        "biri boshda, ikkinchisi oxirda turadi",
+        "biri qisqa, ikkinchisi uzun bo'ladi",
+        "biri she'rda, ikkinchisi nasrda keladi",
+        "biri hikoyachiga, ikkinchisi obrazga tegishli"
+      ],
+      "t": 3,
+      "izoh": "Ularning ohangi va so'z tanlashi ham har xil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#52543f07"
+    },
+    {
+      "q": "Tog'ay Murod qanday gaplar tuzadi?",
+      "v": [
+        "faqat so'roq gaplar",
+        "juda uzun murakkab gaplar",
+        "qisqa-qisqa gaplar",
+        "faqat buyruq gaplari"
+      ],
+      "t": 2,
+      "izoh": "Uning tili tinglovchiga tushunarli va sodda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#bc63ab27"
+    },
+    {
+      "q": "Muallif uslubi deb nimaga aytiladi?",
+      "v": [
+        "nashriyotning talabiga",
+        "ijodkorning takrorlanmas yozish tarziga",
+        "asar bo'limlarining tartibiga",
+        "kitobning bosma o'lchamiga"
+      ],
+      "t": 1,
+      "izoh": "U so'z tanlash, ohang va tasvir yo'sinida namoyon bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#5f48935e"
+    },
+    {
+      "q": "Personaj nutqidagi takrorlanuvchi so'z obraz haqida nima deydi?",
+      "v": [
+        "uning yashash joyini beradi",
+        "uning odati va tabiatini bildiradi",
+        "uning kasbini nomlaydi",
+        "uning yoshini aniq ko'rsatadi"
+      ],
+      "t": 1,
+      "izoh": "Qo'chqor tilidagi «rakatopsin» so'zi shunga misol bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#976a1019"
+    },
+    {
+      "q": "Chingiz Aytmatov Oliy adabiyot kursida nima haqida tushunchaga ega bo'ldi?",
+      "v": [
+        "kitob savdosi va nashri haqida",
+        "kino texnikasi haqida",
+        "adabiy qahramon va yozuvchi uslubi haqida",
+        "teatr jihozlari haqida"
+      ],
+      "t": 2,
+      "izoh": "Keyinchalik u shu bilim qissalarini yozishga yordam berganini aytgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#8ebc98bc"
+    },
+    {
+      "q": "Eskirgan so'zlar tarixiy asarda qanday vazifani bajaradi?",
+      "v": [
+        "muallifni tanitib qo'yadi",
+        "asarni tushunarsiz qiladi",
+        "sahifalar sonini oshiradi",
+        "davr ruhini qayta tiklaydi"
+      ],
+      "t": 3,
+      "izoh": "«Ulug'bek xazinasi»dagi saroy nutqi shunga misol bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#a9595c5d"
+    },
+    {
+      "q": "O'zbek adabiy tilining hozirgi shaklini bunyod etishda kimning o'rni beqiyos sanaladi?",
+      "v": [
+        "G'afur G'ulomning",
+        "Abdulla Qodiriyning",
+        "Abdulla Qahhorning",
+        "Said Ahmadning"
+      ],
+      "t": 1,
+      "izoh": "Darslikda bu jihat alohida ta'kidlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#91f837fc"
+    },
+    {
+      "q": "Tarjimada asl asar uslubini saqlash nima uchun qiyin?",
+      "v": [
+        "tarjimonlar kam bo'lgani uchun",
+        "kitoblar qalin bo'lgani uchun",
+        "nashr qimmat bo'lgani uchun",
+        "har tilning o'z ohangi bo'lgani uchun"
+      ],
+      "t": 3,
+      "izoh": "So'z o'yini va sheva bo'yog'i ko'pincha yo'qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#e62f20e2"
+    },
+    {
+      "q": "Furqat g'azallarining xalqqa yaqin bo'lishini nima ta'minlagan?",
+      "v": [
+        "devon hajmining kattaligi",
+        "asarlar sonining ko'pligi",
+        "til jozibasi va ifoda soddaligi",
+        "nashr adadining yuqoriligi"
+      ],
+      "t": 2,
+      "izoh": "Uslubning ravonligi ham shunga xizmat qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#1d99140e"
+    },
+    {
+      "q": "Atoyi lirikasida nimalar ko'p uchraydi?",
+      "v": [
+        "harbiy buyruq va farmoyishlar",
+        "savdo hisob-kitoblari",
+        "xalq iboralari, maqol va matallar",
+        "ilmiy atamalar va formulalar"
+      ],
+      "t": 2,
+      "izoh": "Og'zaki nutqqa oid so'zlar ham ko'p qo'llangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#d313ac0b"
+    },
+    {
+      "q": "Tasviriy vositani qo'llashdan ko'zlangan maqsadni aniqlash nimani talab qiladi?",
+      "v": [
+        "kitobni tez varaqlashni",
+        "sahifalarni sanashni",
+        "sarlavhani yodlashni",
+        "matn mazmuniga chuqur kirishni"
+      ],
+      "t": 3,
+      "izoh": "Vositaning o'zi emas, vazifasi muhim sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#400fd73a"
+    },
+    {
+      "q": "Adabiy asar matni ustida ishlash nimadan boshlanadi?",
+      "v": [
+        "har bir so'z ma'nosini aniqlashdan",
+        "nashr yilini yozib olishdan",
+        "muqovani ko'rishdan",
+        "bo'limlarni sanashdan"
+      ],
+      "t": 0,
+      "izoh": "So'z ma'nosi anglanmasa, jumla mohiyati ham ochilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#ed2a182f"
+    },
+    {
+      "q": "Chet ellik tadqiqotchi Bobur uslubini qanday ta'riflagan?",
+      "v": [
+        "og'ir va murakkab, quruq va rasmiy",
+        "qisqa va tushunarsiz, chalkash",
+        "jimjimador va bezakli, sun'iy",
+        "oddiy va mardona, jonli va obrazli"
+      ],
+      "t": 3,
+      "izoh": "U zamondoshlar qiyofasini oynadek ravshan tasvirlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#b422e60c"
+    },
+    {
+      "q": "Ikki yozuvchi bir mavzuda yozganda ham nima ularni farqlab turadi?",
+      "v": [
+        "yil va oy",
+        "uslub va ohang",
+        "qog'oz va siyoh",
+        "nashriyot va shahar"
+      ],
+      "t": 1,
+      "izoh": "Har bir ijodkorning o'zigagina xos jihati bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#02a81885"
+    },
+    {
+      "q": "Kasb-hunarga oid so'zlar asarda nima uchun ishlatiladi?",
+      "v": [
+        "qahramon mashg'ulotini ishonarli ko'rsatish uchun",
+        "matnni chalkashtirib yuborish uchun",
+        "lug'at qo'shimchasi qilish uchun",
+        "sahifani to'ldirish uchun"
+      ],
+      "t": 0,
+      "izoh": "Ular obraz hayotini haqqoniy chizishga xizmat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#8a8364ac"
+    },
+    {
+      "q": "Monolog qanday nutq shakli hisoblanadi?",
+      "v": [
+        "ikki kishining suhbati",
+        "sahna ko'rsatmasi matni",
+        "muallif izohi va sharhi",
+        "bir kishining uzluksiz so'zi"
+      ],
+      "t": 3,
+      "izoh": "Sahna asarlarida u qahramon qarashini to'la ochib beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#213df67b"
+    },
+    {
+      "q": "Sharof Boshbekov ta'kidiga ko'ra, yozuvchilarning kuchli tomonlari nima bilan farqlanadi?",
+      "v": [
+        "kimdir uzun, kimdir qisqa yozadi",
+        "kimdir tez, kimdir sekin yozadi",
+        "kimdir syujetga, kimdir xarakterga usta",
+        "kimdir ko'p, kimdir kam bosiladi"
+      ],
+      "t": 2,
+      "izoh": "Ba'zilar voqealarni zargarona terishda tengsiz sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#6eecc4f7"
+    },
+    {
+      "q": "Dialogning badiiy asardagi vazifasi nima?",
+      "v": [
+        "asar sanasini aniqlashtirish",
+        "obraz xarakterini nutqi orqali ochish",
+        "bo'lim sonini belgilash",
+        "muqovani tayyorlash"
+      ],
+      "t": 1,
+      "izoh": "Aytilgan gap qahramon haqida ko'p narsani bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#5425b357"
+    },
+    {
+      "q": "Muqimiy uslubi keyinchalik qanday natijaga olib kelgan?",
+      "v": [
+        "zamondoshlari shu yo'lda asar yozgan",
+        "sayohatnomalar butunlay to'xtagan",
+        "she'riyat nasrga aylangan",
+        "hajviyot yo'qolib ketgan"
+      ],
+      "t": 0,
+      "izoh": "Zavqiy, Furqat va Tajalliy sayohatnomalari shunday yaratilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#fa8421e6"
+    },
+    {
+      "q": "Ma'nodosh so'zlardan noto'g'ri tanlash asarga qanday ta'sir qiladi?",
+      "v": [
+        "muqovani almashtiradi",
+        "asar hajmini kattalashtiradi",
+        "bo'limlar tartibini o'zgartiradi",
+        "ohang va ma'no nozikligini buzadi"
+      ],
+      "t": 3,
+      "izoh": "Bir so'z o'rniga boshqasi qo'yilsa, jumla jozibasini yo'qotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#a967efc0"
+    },
+    {
+      "q": "Tog'ay Murod asarlarining tili nima bilan chambarchas bog'liq?",
+      "v": [
+        "Surxon vohasi xalq tili bilan",
+        "Xorazm shevasi bilan",
+        "Buxoro shevasi bilan",
+        "Farg'ona shevasi bilan"
+      ],
+      "t": 0,
+      "izoh": "Adib unib-o'sgan muhit uning uslubini belgilagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#eaea879f"
+    },
+    {
+      "q": "Navoiy o'sha asarida nimani amaliy jihatdan isbotlab bergan?",
+      "v": [
+        "aruz vaznining murakkabligini",
+        "turkiy til imkoniyatlarining kengligini",
+        "xattotlik san'ati sirlarini",
+        "lug'at tuzish qoidalarini"
+      ],
+      "t": 1,
+      "izoh": "Alloma o'zini nazm gulistonining andalibi deb ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#04890dd7"
+    },
+    {
+      "q": "Maxtumquli uslubida qaysi manbaning ta'siri sezilib turadi?",
+      "v": [
+        "turkman og'zaki ijodi",
+        "hind ertaklari to'plami",
+        "arab tarixiy solnomalari",
+        "yunon falsafiy risolalari"
+      ],
+      "t": 0,
+      "izoh": "U xalq maqollarini adabiyotga olib kirishda katta xizmat qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#2788c793"
+    },
+    {
+      "q": "Yozuvchi so'z tanlashda nimaga ayniqsa e'tibor beradi?",
+      "v": [
+        "so'zning harflar soniga",
+        "so'zning ohangi va ma'no tovlanishiga",
+        "so'zning lug'atdagi o'rniga",
+        "so'zning yozilish shakliga"
+      ],
+      "t": 1,
+      "izoh": "Ma'nodosh so'zlar orasidan eng o'rinlisi saralanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#99d71994"
+    },
+    {
+      "q": "Nasriy asarda ham ohang bo'ladimi?",
+      "v": [
+        "ha, jumla maromi ohang hosil qiladi",
+        "yo'q, ohang faqat she'rda bo'ladi",
+        "yo'q, nasr ohangsiz yoziladi",
+        "ha, lekin faqat tarjimada"
+      ],
+      "t": 0,
+      "izoh": "Qisqa gaplar tez, uzun gaplar sokin maromni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#afb05631"
+    },
+    {
+      "q": "Badiiy asarda gap qurilishini o'zgartirish ko'pincha nimaga xizmat qiladi?",
+      "v": [
+        "kerakli so'zni bo'rttirib ko'rsatishga",
+        "gapni qisqartirib yuborishga",
+        "imloni soddalashtirishga",
+        "sahifani to'ldirishga"
+      ],
+      "t": 0,
+      "izoh": "Odatdagi tartibning buzilishi diqqatni tortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#53c910da"
+    },
+    {
+      "q": "Asar tilidagi eskirgan so'zlar bugungi o'quvchi uchun qanday qiyinchilik tug'diradi?",
+      "v": [
+        "ma'nosi izohsiz anglashilmaydi",
+        "ular sahifani to'ldiradi",
+        "ular umuman o'qilmaydi",
+        "ular qofiyani buzadi"
+      ],
+      "t": 0,
+      "izoh": "Shu bois darsliklarda izohli lug'at beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#91884a69"
+    },
+    {
+      "q": "Abdulla Avloniy «Vatan» she'rida qanday uslubdan foydalangan?",
+      "v": [
+        "rasmiy hujjat uslubidan",
+        "chalkash ramziy uslubdan",
+        "sodda va ta'sirchan uslubdan",
+        "og'ir ilmiy uslubdan"
+      ],
+      "t": 2,
+      "izoh": "U tug'ilib o'sgan zamin qadrini tushunarli qilib izohlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#da08c91a"
+    },
+    {
+      "q": "Shoir imlo qoidalariga o'zgartirish kiritishdan qanday maqsad ko'zlagan?",
+      "v": [
+        "she'rni qisqartirib yuborish",
+        "matn terishni tezlashtirish",
+        "lirik ifodaning ta'sir kuchini oshirish",
+        "qofiya topishni osonlashtirish"
+      ],
+      "t": 2,
+      "izoh": "Tovush almashuvi ham uslubiy vosita bo'la oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#10337781"
+    },
+    {
+      "q": "Sharof Boshbekov o'z uslubining tayanchi deb nimani ko'rsatgan?",
+      "v": [
+        "tasnifni",
+        "hujjatni",
+        "yumorni",
+        "ritorikani"
+      ],
+      "t": 2,
+      "izoh": "Uning aytishicha, bu asarni o'qishli va tomoshaviy qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#bbac671a"
+    },
+    {
+      "q": "Badiiy asar tilining boyligi nimaga bog'liq?",
+      "v": [
+        "yozuvchining so'z zaxirasiga",
+        "nashriyot imkoniga",
+        "kitobning sahifa soniga",
+        "muqova qalinligiga"
+      ],
+      "t": 0,
+      "izoh": "Adibning tili boy bo'lsa, ta'siri ham kuchli bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#8b12c372"
+    },
+    {
+      "q": "Izohli lug'atdan foydalanish o'quvchiga nima beradi?",
+      "v": [
+        "so'z boyligini oshirish imkonini",
+        "imtihon javoblarini",
+        "kitobni qisqartirish yo'lini",
+        "muqova tanlash didini"
+      ],
+      "t": 0,
+      "izoh": "Matndagi har bir so'z ustida ishlash tavsiya etiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#c116d03f"
+    },
+    {
+      "q": "Maxtumquli misralari keyinchalik qanday maqomga ko'tarilgan?",
+      "v": [
+        "harbiy shior darajasiga",
+        "xalq hikmatli so'zlari darajasiga",
+        "ilmiy qoida darajasiga",
+        "huquqiy hujjat darajasiga"
+      ],
+      "t": 1,
+      "izoh": "Uning purma'no satrlari aforizmlar qatoridan joy olgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#fc015f4a"
+    },
+    {
+      "q": "Badiiy asar tilida ortiqcha atama qo'llash nimaga olib keladi?",
+      "v": [
+        "ohangning kuchayishiga",
+        "tasvirning yorqinlashuviga",
+        "jonli tasvirning qurib qolishiga",
+        "obrazning jonlanishiga"
+      ],
+      "t": 2,
+      "izoh": "Ilmiy atama badiiy matnda o'lchov bilan ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#f712f9af"
+    },
+    {
+      "q": "Badiiy nutqning ta'sirchanligi eng avvalo nimaga bog'liq?",
+      "v": [
+        "so'zning o'z o'rnida qo'llanishiga",
+        "jumlaning uzunligiga",
+        "matnning yirik terilishiga",
+        "so'zlarning ko'pligiga"
+      ],
+      "t": 0,
+      "izoh": "O'rinsiz so'z eng go'zal jumlani ham buzib qo'yadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#79941e7f"
+    },
+    {
+      "q": "Yozuvchi har bir obrazning qaysi jihatida o'ziga xoslikni ta'minlaydi?",
+      "v": [
+        "ismi va familiyasida",
+        "tili va gapirish tarzida",
+        "kiyimi va poyafzalida",
+        "yoshi va bo'yida"
+      ],
+      "t": 1,
+      "izoh": "Tashqi ko'rinish bilan birga nutq ham xarakterni ochadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#37b86a7d"
+    },
+    {
+      "q": "Yozuvchining uslubi o'quvchi tomonidan tanib olinishi nimadan darak beradi?",
+      "v": [
+        "asarning qisqaligidan",
+        "uslubning o'ziga xosligidan",
+        "muqovaning yorqinligidan",
+        "nashr adadining ko'pligidan"
+      ],
+      "t": 1,
+      "izoh": "Ismi ko'rsatilmasa ham matn muallifni oshkor qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#d54b4e77"
+    },
+    {
+      "q": "Badiiy asar tilini o'rganish qaysi fan bilan yaqin aloqada?",
+      "v": [
+        "ona tili bilan",
+        "tarix bilan",
+        "geografiya bilan",
+        "matematika bilan"
+      ],
+      "t": 0,
+      "izoh": "Adabiyot va til darslari bir-birini to'ldiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_naz_m21-asar-tili-uslub#65fcfc58"
+    }
+  ]
+}

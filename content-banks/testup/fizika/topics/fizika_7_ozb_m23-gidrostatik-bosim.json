@@ -1,0 +1,456 @@
+{
+  "nom": "23-mavzu. Gidrostatik Bosim",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Idishga quyilgan suyuqlik idish tubini qanday kuch bilan bosadi?",
+      "v": [
+        "O'z og'irligiga teng kuch bilan",
+        "O'z massasiga teng kuch bilan",
+        "Atmosfera bosimiga teng kuch bilan",
+        "Ishqalanish kuchiga teng kuch bilan"
+      ],
+      "t": 0,
+      "izoh": "Suyuqlik o'z og'irligiga teng kuch bilan tubni bosadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#99545651"
+    },
+    {
+      "q": "Gidrostatik bosim nima?",
+      "v": [
+        "Suyuqlikning og'irligi tufayli idish tubiga ta'sir qiladigan bosim",
+        "Havoning og'irligi tufayli hosil bo'lgan bosim",
+        "Tashqi kuch tufayli hosil bo'lgan bosim",
+        "Gaz zarralarining bosimi"
+      ],
+      "t": 0,
+      "izoh": "Gidrostatik bosim darslikdagi ta'rifga mos.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#72e6dd5c"
+    },
+    {
+      "q": "Gidrostatik bosimning formulasi qaysi?",
+      "v": [
+        "p = ρ·g·h",
+        "p = F·S",
+        "p = m·g",
+        "p = ρ·V"
+      ],
+      "t": 0,
+      "izoh": "p = F/S = m·g/S = ρ·g·h.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#eab3bf6d"
+    },
+    {
+      "q": "Gidrostatik bosim qaysi kattaliklarga to'g'ri proporsional?",
+      "v": [
+        "Suyuqlikning zichligi va suyuqlik ustunining balandligiga",
+        "Idishning yuzasi va shakliga",
+        "Suyuqlikning hajmi va massasiga",
+        "Idishning materialiga"
+      ],
+      "t": 0,
+      "izoh": "p = ρ·g·h dan ko'rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#921e2ab2"
+    },
+    {
+      "q": "Idishdagi suyuqlik massasi qanday ifodalanadi?",
+      "v": [
+        "m = ρ·S·h",
+        "m = ρ·g·h",
+        "m = S/h",
+        "m = ρ/h"
+      ],
+      "t": 0,
+      "izoh": "m = ρ·V = ρ·S·h.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#0c36f103"
+    },
+    {
+      "q": "Paskal 1648-yilda qanday tajriba o'tkazdi?",
+      "v": [
+        "Yog'och bochkani suv bilan to'ldirib, ustiga ingichka uzun nay mahkamlab, nayni suv bilan to'ldirdi",
+        "Magdeburg yarim sharlarini ajratdi",
+        "Simobli nay tajribasini o'tkazdi",
+        "Shar shaklidagi idishda teshiklar ochdi"
+      ],
+      "t": 0,
+      "izoh": "Bu Paskalning bochka tajribasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#272b99af"
+    },
+    {
+      "q": "Paskalning bochka tajribasida nima kuzatildi?",
+      "v": [
+        "Bochka devorlari orasidan suv otilib chiqa boshladi",
+        "Suv muzlab qoldi",
+        "Nay sinib ketdi",
+        "Hech narsa bo'lmadi"
+      ],
+      "t": 0,
+      "izoh": "Katta gidrostatik bosim hosil bo'ldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#a404e43f"
+    },
+    {
+      "q": "Paskalning bochka tajribasi nimani tasdiqladi?",
+      "v": [
+        "Gidrostatik bosim suyuqlik ustunining balandligiga bog'liq ekanini",
+        "Bosim idish yuzasiga bog'liqligini",
+        "Suyuqlik siqilmaydigini",
+        "Atmosfera bosimi mavjudligini"
+      ],
+      "t": 0,
+      "izoh": "Tajribada bosim balandlikka bog'liq ekanligi tasdiqlandi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#dbb4b14b"
+    },
+    {
+      "q": "Chuqurligi 8 m bo'lgan hovuz tubidagi gidrostatik bosim taxminan qancha?",
+      "v": [
+        "78,48 kPa",
+        "7,85 kPa",
+        "784,8 kPa",
+        "0,785 kPa"
+      ],
+      "t": 0,
+      "izoh": "p = 1000·9,81·8 = 78480 Pa = 78,48 kPa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#3f72d542"
+    },
+    {
+      "q": "Suvning zichligi SI da qancha deb olinadi?",
+      "v": [
+        "1000 kg/m³",
+        "13600 kg/m³",
+        "800 kg/m³",
+        "2700 kg/m³"
+      ],
+      "t": 0,
+      "izoh": "Suv zichligi 1000 kg/m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#39577235"
+    },
+    {
+      "q": "Gidrostatik bosim SI da qaysi birlikda o'lchanadi?",
+      "v": [
+        "Paskal (Pa)",
+        "Nyuton (N)",
+        "Joul (J)",
+        "Vatt (W)"
+      ],
+      "t": 0,
+      "izoh": "Bosim birligi — paskal.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#40ab7a59"
+    },
+    {
+      "q": "1 Pa qanday ifodalanadi?",
+      "v": [
+        "1 N/m²",
+        "1 kg/m³",
+        "1 N·m",
+        "1 J/s"
+      ],
+      "t": 0,
+      "izoh": "[p] = N/m² = Pa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#eac918a7"
+    },
+    {
+      "q": "g erkin tushish tezlanishining darslikda qo'llaniladigan qiymati qancha?",
+      "v": [
+        "9,81 N/kg",
+        "10 m",
+        "9,81 m",
+        "1 N"
+      ],
+      "t": 0,
+      "izoh": "g = 9,81 N/kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#08731f12"
+    },
+    {
+      "q": "Suyuqlikning gidrostatik bosimini qanday orttirish mumkin?",
+      "v": [
+        "Suyuqlik ustunining balandligini oshirib",
+        "Idishning yuzasini kattalashtirib",
+        "Idish shaklini o'zgartirib",
+        "Suyuqlik miqdorini kamaytirib"
+      ],
+      "t": 0,
+      "izoh": "p = ρ·g·h da h ortsa, p ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#3e19c56d"
+    },
+    {
+      "q": "Bir xil balandlikda turli zichlikli suyuqliklar qanday bosim beradi?",
+      "v": [
+        "Zichligi katta suyuqlik katta bosim beradi",
+        "Hammasi bir xil bosim beradi",
+        "Zichligi kichik suyuqlik katta bosim beradi",
+        "Bosim nolga teng"
+      ],
+      "t": 0,
+      "izoh": "p = ρ·g·h da ρ ga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#17bc9df5"
+    },
+    {
+      "q": "Massalari teng bo'lgan har xil suyuqliklar bir xil idishlarga solinganda balandliklari nima uchun turlicha bo'ladi?",
+      "v": [
+        "Zichliklari har xil bo'lgani uchun",
+        "Haroratlari har xil bo'lgani uchun",
+        "Og'irliklari har xil bo'lgani uchun",
+        "Hajmlari bir xil bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "m bir xil, ρ har xil — h har xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#e8b32e83"
+    },
+    {
+      "q": "Balandligi 0,5 m bo'lgan kerosin qatlamining bosimini hisoblashda qaysi formula ishlatiladi?",
+      "v": [
+        "p = ρ·g·h",
+        "p = F/S",
+        "p = m·g·h",
+        "p = ρ·V·g"
+      ],
+      "t": 0,
+      "izoh": "Gidrostatik bosim formulasi p = ρ·g·h.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#b3df4265"
+    },
+    {
+      "q": "Gidrostatik bosim idishning qanday qismiga ta'sir qiladi?",
+      "v": [
+        "Idish tubiga",
+        "Faqat yuqori sirtga",
+        "Faqat havoga",
+        "Faqat porshenga"
+      ],
+      "t": 0,
+      "izoh": "Suyuqlik og'irligi tubga bosim beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#d34b2b2c"
+    },
+    {
+      "q": "Idish tubidagi teshikka ta'sir etuvchi gidrostatik bosim kuchi qanday topiladi?",
+      "v": [
+        "F = p·S",
+        "F = p/S",
+        "F = ρ·h",
+        "F = m/S"
+      ],
+      "t": 0,
+      "izoh": "p = F/S dan F = p·S.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#c6829fc0"
+    },
+    {
+      "q": "Suv bilan to'ldirilgan idish tubida suv sathidan 2 m pastdagi bosim taxminan qancha?",
+      "v": [
+        "19620 Pa",
+        "1962 Pa",
+        "196,2 kPa",
+        "9810 Pa"
+      ],
+      "t": 0,
+      "izoh": "p = 1000·9,81·2 = 19620 Pa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#33e01684"
+    },
+    {
+      "q": "Gidrostatik bosim suyuqlik ustuni balandligiga qanday bog'liq?",
+      "v": [
+        "To'g'ri proporsional",
+        "Teskari proporsional",
+        "Bog'liq emas",
+        "Kvadratik proporsional"
+      ],
+      "t": 0,
+      "izoh": "p = ρ·g·h da h ga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#f160b835"
+    },
+    {
+      "q": "Tinch holatdagi suyuqlik bosimi mavzusida asosiy o'rganiladigan kattalik qaysi?",
+      "v": [
+        "Gidrostatik bosim",
+        "Atmosfera bosimi",
+        "Mexanik ish",
+        "Quvvat"
+      ],
+      "t": 0,
+      "izoh": "Mavzu gidrostatik bosimga bag'ishlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#ec039a45"
+    },
+    {
+      "q": "Balandligi 10 cm bo'lgan suv ustuni stakan tubiga qanday bosim beradi (g = 9,81 N/kg)?",
+      "v": [
+        "981 Pa",
+        "98,1 Pa",
+        "9810 Pa",
+        "9,81 Pa"
+      ],
+      "t": 0,
+      "izoh": "p = 1000·9,81·0,1 = 981 Pa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#3e5e4b72"
+    },
+    {
+      "q": "O'simlik yog'i bir xil balandlikda suvga qaraganda qanday bosim beradi?",
+      "v": [
+        "Kamroq, chunki zichligi kichik",
+        "Ko'proq",
+        "Bir xil",
+        "Bosim bermaydi"
+      ],
+      "t": 0,
+      "izoh": "Zichlik kichik bo'lsa, bosim ham kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#3207aa4c"
+    },
+    {
+      "q": "Idish tubidagi gidrostatik bosim 78480 Pa bo'lsa, uni kPa da ifodalang.",
+      "v": [
+        "78,48 kPa",
+        "784,8 kPa",
+        "7,848 kPa",
+        "7848 kPa"
+      ],
+      "t": 0,
+      "izoh": "78480 Pa = 78,48 kPa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#0a0aeceb"
+    },
+    {
+      "q": "Paskal tajribasini uy sharoitida bajarishda qanday buyumlar ishlatiladi?",
+      "v": [
+        "Shpris, pufak va suv",
+        "Barometr va simob",
+        "Blok va ip",
+        "Menyurka va tarozi"
+      ],
+      "t": 0,
+      "izoh": "Amaliy topshiriqda shpris, pufak, suv ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#eea4e5ba"
+    },
+    {
+      "q": "Akvariumga yog'och brusok tashlansa, suvning idish tubiga beradigan bosimi qanday o'zgaradi?",
+      "v": [
+        "Ortadi, chunki suv sathi ko'tariladi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Suv sathi ko'tarilsa, h ortib, p ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#7c10ed7b"
+    },
+    {
+      "q": "Gidrostatik bosimning balandlikka bog'liqligini tajribada ko'rsatgan olim kim?",
+      "v": [
+        "Paskal",
+        "Torrichelli",
+        "Uatt",
+        "Joul"
+      ],
+      "t": 0,
+      "izoh": "Paskal bochka tajribasida ko'rsatgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#69694c48"
+    },
+    {
+      "q": "Dengizning qanday chuqurligida gidrostatik bosim 343350 Pa bo'lishini aniqlashda qaysi formula ishlatiladi?",
+      "v": [
+        "h = p/(ρ·g)",
+        "h = p·ρ·g",
+        "h = ρ·g/p",
+        "h = p·S"
+      ],
+      "t": 0,
+      "izoh": "p = ρ·g·h dan h = p/(ρ·g).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#dd3ef18f"
+    },
+    {
+      "q": "Suyuqlik ustunining balandligi ikki marta orttirilsa, gidrostatik bosim qanday o'zgaradi?",
+      "v": [
+        "Ikki marta ortadi",
+        "Ikki marta kamayadi",
+        "O'zgarmaydi",
+        "To'rt marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "p balandlikka to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m23-gidrostatik-bosim#44c89d13"
+    }
+  ]
+}

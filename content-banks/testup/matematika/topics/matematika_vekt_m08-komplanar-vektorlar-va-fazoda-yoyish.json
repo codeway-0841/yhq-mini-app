@@ -1,0 +1,1609 @@
+{
+  "nom": "Komplanar vektorlar va fazoda yoyish",
+  "bolim": "Koordinatalar va vektorlar",
+  "blok": "vekt",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "O'qituvchi Nodira opa darsda komplanar vektorlar mavzusini boshladi. Fazodagi uchta vektor qanday shartda komplanar deb ataladi?",
+      "v": [
+        "Bitta tekislikka parallel ko'chirila olsa",
+        "Uzunliklari o'zaro teng bo'lsa",
+        "Har biri qolgan ikkitasiga perpendikulyar bo'lsa",
+        "Uchalasi ham bitta nuqtadan chiqsa"
+      ],
+      "t": 0,
+      "izoh": "Komplanarlik ta'rifiga ko'ra vektorlarni umumiy boshlanish nuqtasiga ko'chirganda ular bitta tekislikda yotsa, vektorlar komplanar deyiladi. Vektor erkin ko'chiriladigan obyekt, shuning uchun umumiy nuqtadan chiqishi shart emas. Uzunlik tengligi ham, perpendikulyarlik ham komplanarlikka aloqasi yo'q. Javob: bitta tekislikka parallel ko'chirila olsa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "komplanarlik-tushunchasi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#b0b0d553"
+    },
+    {
+      "q": "Fazoda ixtiyoriy ravishda olingan ikkita nolmas vektor haqida quyidagi mulohazalardan qaysi biri har doim to'g'ri bo'ladi?",
+      "v": [
+        "Ular albatta kollinear bo'ladi",
+        "Ular albatta komplanar bo'ladi",
+        "Ular albatta perpendikulyar bo'ladi",
+        "Ular hech qachon bitta tekislikda yotmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ikkita vektorni umumiy nuqtaga ko'chirsak, ular orqali doimo tekislik o'tkazish mumkin. Agar vektorlar kollinear bo'lsa, ular orqali hatto cheksiz ko'p tekislik o'tadi. Demak fazodagi istalgan ikki vektor komplanar. Kollinearlik va perpendikulyarlik esa maxsus shart bo'lib, har doim bajarilmaydi. Javob: ular albatta komplanar bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "komplanarlik-tushunchasi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#3b260b76"
+    },
+    {
+      "q": "Uchta vektordan ikkitasi kollinear ekani ma'lum bo'lsa, bu uchlikning komplanarligi haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Uchlik hech qachon komplanar bo'lmaydi",
+        "Uchlik faqat uchinchi vektor nol bo'lsa komplanar",
+        "Bunday holda xulosa chiqarib bo'lmaydi",
+        "Uchlik har doim komplanar bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Kollinear ikki vektor bitta to'g'ri chiziqqa parallel. Shu to'g'ri chiziq va uchinchi vektor orqali doimo bitta tekislik o'tkazish mumkin, chunki to'g'ri chiziq bilan unga parallel bo'lmagan yo'nalish yagona tekislik aniqlaydi. Demak uchlik har doim komplanar. Javob: uchlik har doim komplanar bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "komplanarlik-tushunchasi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#2e16b763"
+    },
+    {
+      "q": "Ustoz Anvar aka o'quvchilarga fazoviy bazis tushunchasini tushuntirmoqda. Uchta vektor komplanar bo'lmasa, ular haqida nima deyish mumkin?",
+      "v": [
+        "Ular fazoda bazis tashkil qiladi",
+        "Ular bitta tekislikda yotadi",
+        "Ularning uzunliklari albatta teng bo'ladi",
+        "Ulardan ikkitasi albatta kollinear bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Fazoda yoyish teoremasiga ko'ra komplanar bo'lmagan uchta vektor bo'yicha ixtiyoriy vektorni yagona usulda yoyish mumkin. Ana shu xossa uchlikni bazis deb atashga asos beradi. Bitta tekislikda yotish esa komplanarlik belgisi, ya'ni teskari holat. Javob: ular fazoda bazis tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "komplanarlik-tushunchasi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#f6303b30"
+    },
+    {
+      "q": "a(1; 2; 3), b(2; −1; 1) va c(3; 1; 4) vektorlar berilgan. Ushbu uchlik komplanarmi yoki yo'qmi, aniqlang.",
+      "v": [
+        "Komplanar emas, determinant 5 ga teng",
+        "Komplanar, chunki c = a − b",
+        "Komplanar emas, determinant −5 ga teng",
+        "Komplanar, chunki c = a + b"
+      ],
+      "t": 3,
+      "izoh": "Koordinatalarni qo'shib ko'ramiz: a + b = (1 + 2; 2 − 1; 3 + 1) = (3; 1; 4), bu esa aynan c vektor. Demak c uchlikning qolgan ikkitasi orqali yoyildi, ya'ni uchalasi bitta tekislikka parallel. Determinant ham nolga teng bo'ladi. a − b = (−1; 3; 2) bo'lgani uchun ikkinchi variant noto'g'ri. Javob: komplanar, chunki c = a + b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "komplanarlik-determinant",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#f785cfa5"
+    },
+    {
+      "q": "Yig'ma javon karkasining uchta sterjeni a(2; 1; −1), b(1; 3; 2) va c(4; 7; 3) vektorlar bilan berilgan. Ular bitta tekislikka parallelmi?",
+      "v": [
+        "Yo'q, determinant 8 ga teng",
+        "Ha, chunki c = 2a + b",
+        "Ha, chunki c = a + 2b",
+        "Yo'q, determinant −8 ga teng"
+      ],
+      "t": 2,
+      "izoh": "a + 2b = (2 + 2; 1 + 6; −1 + 4) = (4; 7; 3) bo'lib, bu c vektorga teng. Demak c vektor a va b orqali yoyiladi va uchala sterjen bitta tekislikka parallel. Tekshirish uchun determinantni ochsak ham nol chiqadi. 2a + b = (5; 5; 0) bo'lgani uchun ikkinchi variant to'g'ri emas. Javob: ha, chunki c = a + 2b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "komplanarlik-determinant",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#5fa3422a"
+    },
+    {
+      "q": "a(1; 0; 2), b(0; 3; 1) va c(2; 1; 0) vektorlardan tuzilgan determinantni hisoblab, ularning komplanarligi haqida xulosa chiqaring.",
+      "v": [
+        "Determinant 0, vektorlar komplanar",
+        "Determinant −13, vektorlar komplanar emas",
+        "Determinant 13, vektorlar komplanar emas",
+        "Determinant −1, vektorlar komplanar emas"
+      ],
+      "t": 1,
+      "izoh": "Determinantni birinchi satr bo'yicha yoyamiz: 1·(3·0 − 1·1) − 0·(0·0 − 1·2) + 2·(0·1 − 3·2). Bu 1·(−1) − 0 + 2·(−6) = −1 − 12 = −13 ga teng. Determinant noldan farqli bo'lgani uchun vektorlar komplanar emas. Uchinchi variant ishorani yo'qotish, to'rtinchisi oxirgi hadni tashlab ketish natijasi. Javob: determinant −13, vektorlar komplanar emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "komplanarlik-determinant",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#421f160d"
+    },
+    {
+      "q": "Anvar chodir ustunlarining yo'nalishlarini a(3; −1; 2), b(1; 2; −1) va c(5; 0; 3) deb belgiladi. Uchala ustun bitta tekislikka parallelmi?",
+      "v": [
+        "Ha, determinant nolga teng",
+        "Yo'q, determinant 6 ga teng",
+        "Ha, chunki c = a + 2b",
+        "Yo'q, determinant −6 ga teng"
+      ],
+      "t": 1,
+      "izoh": "Determinantni yoyamiz: 3·(2·3 − (−1)·0) − (−1)·(1·3 − (−1)·5) + 2·(1·0 − 2·5) = 18 + 8 − 20 = 6. Natija noldan farqli, demak ustunlar bitta tekislikka parallel emas. a + 2b = (5; 3; 0) bo'lib, c(5; 0; 3) dan farq qiladi: bu yerda o'quvchi koordinatalar tartibini chalkashtiradi. Javob: yo'q, determinant 6 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "komplanarlik-determinant",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#45473975"
+    },
+    {
+      "q": "a(1; 2; −1), b(2; −1; 3) va c(4; 3; m) vektorlar komplanar bo'lishi uchun m parametr qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "m = 1",
+        "m = −1",
+        "m = 3",
+        "m = −3"
+      ],
+      "t": 0,
+      "izoh": "Komplanarlik sharti — determinant nolga teng. Uni yoyamiz: 1·((−1)·m − 3·3) − 2·(2·m − 3·4) + (−1)·(2·3 − (−1)·4) = (−m − 9) − (4m − 24) − 10 = −5m + 5. Bu ifodani nolga tenglab, m = 1 ni olamiz. Agar ikkita minus chalkashtirilsa m = −1, oxirgi had tushib qolsa m = 3 chiqadi. Javob: m = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "komplanarlik-parametr",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#edcc0cfa"
+    },
+    {
+      "q": "Ombor tokchasining uchta yo'nalishi a(2; 1; 0), b(1; −1; 2) va c(m; 5; −4) vektorlar bilan berilgan. Ular komplanar bo'ladigan m ni toping.",
+      "v": [
+        "m = 8",
+        "m = 4",
+        "m = −4",
+        "m = 1"
+      ],
+      "t": 1,
+      "izoh": "Determinantni birinchi satr bo'yicha ochamiz: 2·((−1)·(−4) − 2·5) − 1·(1·(−4) − 2·m) + 0·(1·5 − (−1)·m) = 2·(4 − 10) + 4 + 2m = 2m − 8. Nolga tenglaymiz: 2m − 8 = 0, demak m = 4. Ikkiga bo'lish unutilsa m = 8, ishora almashtirilsa m = −4 chiqadi. Javob: m = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "komplanarlik-parametr",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#f8c96bb2"
+    },
+    {
+      "q": "Uchta vektor a(3; −2; 1), b(1; 4; −2) va c(2; k; 3) komplanar ekani ma'lum. Noma'lum k koordinatani toping.",
+      "v": [
+        "k = 6",
+        "k = 42",
+        "k = −6",
+        "k = −42"
+      ],
+      "t": 2,
+      "izoh": "Determinantni yoyamiz: 3·(4·3 − (−2)·k) − (−2)·(1·3 − (−2)·2) + 1·(1·k − 4·2) = 3·(12 + 2k) + 2·7 + (k − 8) = 7k + 42. Komplanarlik sharti 7k + 42 = 0 bo'lgani uchun k = −6. Yettiga bo'lish unutilsa k = −42, ishora xato olinsa k = 6 chiqadi. Javob: k = −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "komplanarlik-parametr",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#edda5234"
+    },
+    {
+      "q": "Muhandis Kamola uchta trosning yo'nalishini a(2; −1; 3), b(1; 2; −2) va c(1; n; 12) deb yozdi. Troslar bitta tekislikka parallel bo'lishi uchun n nechaga teng?",
+      "v": [
+        "n = 8",
+        "n = 4",
+        "n = −4",
+        "n = −8"
+      ],
+      "t": 3,
+      "izoh": "Avval c ni a va b orqali yoyamiz. Birinchi koordinatalardan 2x + y = 1, uchinchilaridan 3x − 2y = 12 sistemasi chiqadi. Uni yechsak x = 2, y = −3, ya'ni c = 2a − 3b. Endi ikkinchi koordinatani hisoblaymiz: n = 2·(−1) − 3·2 = −2 − 6 = −8. Qo'shish bilan ayirish chalkashtirilsa n = 4 chiqadi. Javob: n = −8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "komplanarlik-parametr",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#c7dd81e9"
+    },
+    {
+      "q": "a(1; 2; 0), b(0; 1; 3) va c(2; 5; 3) vektorlar komplanar. c vektorni a va b vektorlar bo'yicha yoying.",
+      "v": [
+        "c = a + 2b",
+        "c = 2a − b",
+        "c = 2a + 3b",
+        "c = 2a + b"
+      ],
+      "t": 3,
+      "izoh": "c = xa + yb deb yozamiz. Birinchi koordinatadan x·1 + y·0 = 2, ya'ni x = 2. Uchinchi koordinatadan x·0 + y·3 = 3, ya'ni y = 1. Ikkinchi koordinata bilan tekshiramiz: 2·2 + 1·1 = 5, mos keldi. Demak yoyilma c = 2a + b. Javob: c = 2a + b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyish-koeffitsient-topish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#bd27dc18"
+    },
+    {
+      "q": "Berilgan a(3; 0; 1) va b(−1; 2; 4) vektorlar orqali c(5; −4; −7) vektorni yoyganda qanday ifoda hosil bo'ladi?",
+      "v": [
+        "c = 2a − b",
+        "c = a + 2b",
+        "c = a − 2b",
+        "c = −a + 2b"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi koordinata eng qulay: x·0 + y·2 = −4 dan y = −2. Birinchi koordinatadan 3x − y = 5, ya'ni 3x + 2 = 5 va x = 1. Uchinchi koordinata bilan tekshiramiz: 1·1 + (−2)·4 = 1 − 8 = −7, mos keldi. Javob: c = a − 2b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyish-koeffitsient-topish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#c0ce0b29"
+    },
+    {
+      "q": "a(2; 1; −1) va b(1; −3; 2) vektorlar berilgan. Agar c(13; −4; 1) = xa + yb tenglik o'rinli bo'lsa, x + y yig'indi nechaga teng?",
+      "v": [
+        "8",
+        "2",
+        "15",
+        "−2"
+      ],
+      "t": 0,
+      "izoh": "Koordinatalar bo'yicha sistema tuzamiz: 2x + y = 13, x − 3y = −4, −x + 2y = 1. Oxirgi tenglamadan x = 2y − 1 ni ikkinchisiga qo'ysak, 2y − 1 − 3y = −4, ya'ni y = 3 va x = 5. Birinchi tenglama tekshiruvni beradi: 10 + 3 = 13. Demak x + y = 5 + 3 = 8. Ayirma olinsa 2, ko'paytma olinsa 15 chiqadi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyish-koeffitsient-topish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#135f3f9c"
+    },
+    {
+      "q": "Muhandis Dilshod ikkita tayanch kuchning yo'nalishini a(1; 1; 2) va b(2; −1; 1) deb belgiladi. Natijaviy c(4; −5; −1) kuch vektorini ular orqali yoying.",
+      "v": [
+        "c = 3a − 2b",
+        "c = −2a + 3b",
+        "c = 2a − 3b",
+        "c = −3a + 2b"
+      ],
+      "t": 1,
+      "izoh": "c = xa + yb deb sistema tuzamiz: x + 2y = 4, x − y = −5, 2x + y = −1. Ikkinchi tenglamadan x = y − 5, uni uchinchisiga qo'ysak 2y − 10 + y = −1, ya'ni y = 3 va x = −2. Birinchi tenglama tekshiradi: −2 + 6 = 4. Demak c = −2a + 3b. Koeffitsientlar o'rni almashtirilsa 3a − 2b xato javobi chiqadi. Javob: c = −2a + 3b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyish-koeffitsient-topish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#f75832f9"
+    },
+    {
+      "q": "a(1; 0; 0), b(1; 1; 0) va c(1; 1; 1) vektorlar fazoda bazis bo'la oladimi? Javobingizni asoslang.",
+      "v": [
+        "Ha, determinant 1 ga teng, ular komplanar emas",
+        "Yo'q, determinant nolga teng",
+        "Ha, chunki uchala vektor ham birlik uzunlikka ega",
+        "Yo'q, chunki uchalasi bitta nuqtadan chiqadi"
+      ],
+      "t": 0,
+      "izoh": "Determinantni birinchi satr bo'yicha yoyamiz: 1·(1·1 − 0·1) − 0 + 0 = 1. Natija noldan farqli, demak vektorlar komplanar emas va fazoda bazis hosil qiladi. Uzunlik tengligi bazis sharti emas: b va c vektorlarning uzunligi birdan katta. Bitta nuqtadan chiqish ham hech narsani buzmaydi. Javob: ha, determinant 1 ga teng, ular komplanar emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bazis-tekshirish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#4d7e13db"
+    },
+    {
+      "q": "Talaba Zuhra a(1; 2; 3), b(2; 4; 6) va c(0; 1; 5) vektorlarni bazis sifatida olmoqchi. Uning tanlovi to'g'rimi?",
+      "v": [
+        "To'g'ri, chunki uchala vektor ham nolmas",
+        "Noto'g'ri, chunki b = 2a, ya'ni a va b kollinear",
+        "To'g'ri, chunki c vektor a ga kollinear emas",
+        "Noto'g'ri, chunki c vektorning birinchi koordinatasi nol"
+      ],
+      "t": 1,
+      "izoh": "b vektorning koordinatalarini tekshiramiz: (2; 4; 6) = 2·(1; 2; 3), demak b = 2a. Kollinear ikki vektor va ixtiyoriy uchinchi vektor har doim komplanar bo'ladi, shuning uchun bunday uchlik bazis bo'la olmaydi. Vektorning nolmasligi yoki koordinatasining nolligi bu yerda hal qiluvchi emas. Javob: noto'g'ri, chunki b = 2a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bazis-tekshirish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#b3449656"
+    },
+    {
+      "q": "a(2; 1; 1), b(1; 3; 2) va c(3; 4; 3) vektorlar to'plami fazo uchun bazis bo'la oladimi degan savolga javob bering.",
+      "v": [
+        "Ha, chunki determinant 3 ga teng",
+        "Ha, chunki hech ikkitasi kollinear emas",
+        "Yo'q, chunki c = a + b bo'lib, uchlik komplanar",
+        "Yo'q, chunki c vektor eng uzun"
+      ],
+      "t": 2,
+      "izoh": "a + b ni hisoblaymiz: (2 + 1; 1 + 3; 1 + 2) = (3; 4; 3), bu esa aynan c vektor. Demak c vektor qolgan ikkitasi orqali yoyiladi va uchlik komplanar bo'ladi, determinant esa nolga teng. Kollinear juftlik yo'qligi bazis uchun yetarli shart emas. Javob: yo'q, chunki c = a + b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bazis-tekshirish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#39b33ae9"
+    },
+    {
+      "q": "Fazoda bazis hosil qilish uchun vektorlar to'plamiga qanday talab qo'yiladi? To'g'ri javobni belgilang.",
+      "v": [
+        "Uchta komplanar vektor kerak",
+        "Ikkita kollinear bo'lmagan vektor kerak",
+        "To'rtta o'zaro perpendikulyar vektor kerak",
+        "Uchta komplanar bo'lmagan vektor kerak"
+      ],
+      "t": 3,
+      "izoh": "Fazo uch o'lchovli bo'lgani uchun bazis aynan uchta vektordan iborat bo'ladi va ular komplanar bo'lmasligi shart. Komplanar uchlik bo'yicha faqat o'sha tekislikka parallel vektorlarni yoyish mumkin. Ikkita vektor esa tekislik uchun bazis beradi, fazo uchun emas. Javob: uchta komplanar bo'lmagan vektor kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bazis-tekshirish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#8646c9ea"
+    },
+    {
+      "q": "Jasur simdan ABCDA₁B₁C₁D₁ parallelepiped karkasini yasadi. AB = a, AD = b, AA₁ = c bo'lsa, AC₁ diagonalni shu bazisda yoying.",
+      "v": [
+        "a + b + c",
+        "a + b − c",
+        "a − b + c",
+        "−a + b + c"
+      ],
+      "t": 0,
+      "izoh": "Diagonalni qirralar zanjiri sifatida yozamiz: AC₁ = AB + BC + CC₁. Bu yerda BC = AD = b va CC₁ = AA₁ = c, chunki parallelepipedning qarama-qarshi qirralari teng vektorlar. Demak AC₁ = a + b + c. Javob: a + b + c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelepiped-diagonal",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#f232b660"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ parallelepipedda AB = a, AD = b, AA₁ = c berilgan. A₁C diagonalni shu uchta vektor orqali ifodalang.",
+      "v": [
+        "a + c − b",
+        "a + b − c",
+        "a − b − c",
+        "c − a − b"
+      ],
+      "t": 1,
+      "izoh": "Zanjirni A₁ dan boshlaymiz: A₁C = A₁A + AB + BC. Bu yerda A₁A = −c, chunki u AA₁ ga qarama-qarshi yo'nalgan, AB = a va BC = b. Demak A₁C = −c + a + b = a + b − c. Ishora e'tiborsiz qoldirilsa c − a − b, ya'ni teskari vektor chiqadi. Javob: a + b − c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelepiped-diagonal",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#a093fe7f"
+    },
+    {
+      "q": "Xonaning burchagida turgan ABCDA₁B₁C₁D₁ shkaf uchun AB = a, AD = b, AA₁ = c deb olindi. BD₁ diagonal qanday yoyiladi?",
+      "v": [
+        "a + b + c",
+        "a − b + c",
+        "a + b − c",
+        "b + c − a"
+      ],
+      "t": 3,
+      "izoh": "Zanjirni B nuqtadan boshlaymiz: BD₁ = BA + AD + DD₁. Bu yerda BA = −a, AD = b va DD₁ = c. Demak BD₁ = −a + b + c = b + c − a. Boshlanish nuqtasi e'tibordan chetda qolsa a + b + c, ya'ni AC₁ diagonali chiqib qoladi. Javob: b + c − a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelepiped-diagonal",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#2a2bbf40"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ parallelepipedning DB₁ diagonalini AB = a, AD = b va AA₁ = c vektorlar yordamida ifodalang.",
+      "v": [
+        "b − a + c",
+        "b − a − c",
+        "a − b + c",
+        "a − b − c"
+      ],
+      "t": 2,
+      "izoh": "Zanjir D nuqtadan boshlanadi: DB₁ = DA + AB + BB₁. Bu yerda DA = −b, AB = a va BB₁ = c. Demak DB₁ = −b + a + c = a − b + c. Agar DA o'rniga AD olinsa b − a + c xato javobi chiqadi. Javob: a − b + c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelepiped-diagonal",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#b6822b12"
+    },
+    {
+      "q": "Parallelepiped ABCDA₁B₁C₁D₁ da AB = a, AD = b, AA₁ = c berilgan. B₁D vektorni shu bazis bo'yicha yoying.",
+      "v": [
+        "a − b − c",
+        "b + a − c",
+        "c − a − b",
+        "b − a − c"
+      ],
+      "t": 3,
+      "izoh": "Zanjirni B₁ dan boshlaymiz: B₁D = B₁B + BA + AD. Bu yerda B₁B = −c, BA = −a va AD = b. Demak B₁D = −c − a + b = b − a − c. Ikkita minusning biri tushib qolsa b + a − c chiqadi. Javob: b − a − c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelepiped-qirra-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#6e834262"
+    },
+    {
+      "q": "Yig'ma qutining karkasi ABCDA₁B₁C₁D₁ parallelepiped shaklida. AB = a, AD = b, AA₁ = c bo'lsa, CC₁ qirraning o'rtasi K uchun AK vektorni yoying.",
+      "v": [
+        "a + b + c",
+        "a + b + 1/2·c",
+        "1/2·(a + b) + c",
+        "1/2·(a + b + c)"
+      ],
+      "t": 1,
+      "izoh": "Avval C nuqtaga boramiz: AC = a + b. K nuqta CC₁ qirraning o'rtasi bo'lgani uchun CK = 1/2·CC₁ = 1/2·c. Demak AK = AC + CK = a + b + 1/2·c. Yarim koeffitsientni butun qirraga qo'yib yuborilsa a + b + c chiqadi. Javob: a + b + 1/2·c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelepiped-qirra-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#c4ed37d8"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ parallelepipedda AB = a, AD = b, AA₁ = c berilgan. DC₁ vektor qanday ko'rinishda yoyiladi?",
+      "v": [
+        "a + c",
+        "b + c",
+        "a − c",
+        "a + b + c"
+      ],
+      "t": 0,
+      "izoh": "Zanjirni D dan boshlaymiz: DC₁ = DC + CC₁. Parallelogramm ABCD da DC = AB = a, yon qirra esa CC₁ = c. Demak DC₁ = a + c. Bu yerda b vektor umuman qatnashmaydi, chunki D va C₁ nuqtalar AD yo'nalishi bo'yicha bir xil o'rinda turadi. Javob: a + c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelepiped-qirra-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#b33482e7"
+    },
+    {
+      "q": "Toshkentdagi ustaxonada ABCDA₁B₁C₁D₁ metall karkas yig'ildi. AB = a, AD = b, AA₁ = c bo'lganda A₁B vektorni yoying.",
+      "v": [
+        "a + c",
+        "c − a",
+        "a − c",
+        "a − b − c"
+      ],
+      "t": 2,
+      "izoh": "Zanjirni A₁ dan boshlaymiz: A₁B = A₁A + AB. Bu yerda A₁A = −c, chunki u AA₁ ga qarama-qarshi, AB esa a ga teng. Demak A₁B = a − c. Yo'nalish teskari olinsa c − a, ya'ni BA₁ vektori chiqadi. Javob: a − c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelepiped-qirra-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#546e5ce6"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ parallelepipedning diagonallari kesishgan nuqtasi O bo'lsin. AB = a, AD = b, AA₁ = c bo'lsa, AO vektorni yoying.",
+      "v": [
+        "1/3·(a + b + c)",
+        "a + b + c",
+        "1/2·(a + b) + c",
+        "1/2·(a + b + c)"
+      ],
+      "t": 3,
+      "izoh": "Parallelepipedning barcha diagonallari bitta nuqtada kesishadi va o'sha nuqtada teng ikkiga bo'linadi. Demak O nuqta AC₁ diagonalning o'rtasi. AC₁ = a + b + c bo'lgani uchun AO = 1/2·AC₁ = 1/2·(a + b + c). Uchdan bir koeffitsient tetraedr medianasiga tegishli, bu yerda emas. Javob: 1/2·(a + b + c).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelepiped-markaz",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#9e81f83f"
+    },
+    {
+      "q": "Parallelepiped ABCDA₁B₁C₁D₁ da BCC₁B₁ yog'ining markazi M nuqta. AB = a, AD = b, AA₁ = c bo'lsa, AM vektorni yoying.",
+      "v": [
+        "1/2·(a + b + c)",
+        "1/2·a + b + c",
+        "a + b + 1/2·c",
+        "a + 1/2·(b + c)"
+      ],
+      "t": 3,
+      "izoh": "M nuqta BCC₁B₁ yog'i diagonali BC₁ ning o'rtasi. Avval B ga boramiz: AB = a. So'ng BC₁ = BC + CC₁ = b + c bo'lgani uchun BM = 1/2·(b + c). Demak AM = a + 1/2·(b + c). Yarimni faqat bitta vektorga qo'llash a + b + 1/2·c xatosini beradi. Javob: a + 1/2·(b + c).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelepiped-markaz",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#2d901544"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ parallelepipedning markazi O nuqta. AB = a, AD = b, AA₁ = c bo'lganda OB vektorni ushbu bazisda ifodalang.",
+      "v": [
+        "1/2·(b + c − a)",
+        "1/2·(a + b − c)",
+        "1/2·(a − b − c)",
+        "a − b − c"
+      ],
+      "t": 2,
+      "izoh": "AO = 1/2·(a + b + c) ekanini bilamiz. Endi OB = AB − AO = a − 1/2·(a + b + c). Qavsni ochamiz: a − 1/2·a − 1/2·b − 1/2·c = 1/2·a − 1/2·b − 1/2·c. Umumiy ko'paytuvchini chiqarsak 1/2·(a − b − c) hosil bo'ladi. Ikkiga bo'lish unutilsa a − b − c chiqadi. Javob: 1/2·(a − b − c).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallelepiped-markaz",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#c87444a6"
+    },
+    {
+      "q": "ABCD yog'ining markazi N nuqta bo'lgan ABCDA₁B₁C₁D₁ parallelepipedda AB = a, AD = b, AA₁ = c. A₁N vektorni yoying.",
+      "v": [
+        "1/2·(a + b) + c",
+        "1/2·(a + b) − c",
+        "1/2·(a + b − c)",
+        "1/2·(a + b + c)"
+      ],
+      "t": 1,
+      "izoh": "N nuqta ABCD parallelogrammning diagonallari kesishgan nuqtasi, ya'ni AC ning o'rtasi: AN = 1/2·(a + b). Endi A₁N = AN − AA₁ = 1/2·(a + b) − c. Butun c ni ham yarimlab yuborish 1/2·(a + b − c) xatosini beradi. Javob: 1/2·(a + b) − c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelepiped-markaz",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#1903824d"
+    },
+    {
+      "q": "ABCD tetraedrda AB = a, AC = b, AD = c. BCD yog'ining medianalari kesishgan nuqtasi M bo'lsa, AM vektorni yoying.",
+      "v": [
+        "1/3·(a + b + c)",
+        "1/2·(a + b + c)",
+        "1/4·(a + b + c)",
+        "a + b + c"
+      ],
+      "t": 0,
+      "izoh": "Uchburchak medianalari kesishgan nuqta uning og'irlik markazi bo'ladi va uning radius vektori uchta uch radius vektorining o'rta arifmetigiga teng. B, C, D nuqtalarning A ga nisbatan radius vektorlari a, b, c bo'lgani uchun AM = 1/3·(a + b + c). Uchdan bir emas, to'rtdan bir koeffitsient butun tetraedr markaziga tegishli. Javob: 1/3·(a + b + c).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tetraedr-medianasi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#bfe40a12"
+    },
+    {
+      "q": "Tetraedr ABCD da AB = a, AC = b, AD = c. Tetraedr medianalari kesishgan nuqtasi G ni A bilan bog'lovchi AG vektorni yoying.",
+      "v": [
+        "1/3·(a + b + c)",
+        "1/4·(a + b + c)",
+        "3/4·(a + b + c)",
+        "1/2·(a + b + c)"
+      ],
+      "t": 1,
+      "izoh": "Tetraedr medianasi uchni qarama-qarshi yoq og'irlik markazi bilan tutashtiradi va medianalar bitta nuqtada 3 : 1 nisbatda kesishadi. AM = 1/3·(a + b + c) bo'lgani uchun AG = 3/4·AM = 3/4·1/3·(a + b + c) = 1/4·(a + b + c). Nisbatni teskari olsa 3/4 koeffitsient chiqadi. Javob: 1/4·(a + b + c).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tetraedr-medianasi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#97f0e08d"
+    },
+    {
+      "q": "Muhandis Bekzod ABCD tetraedr shaklidagi tayanchni loyihalayapti. AB = a, AC = b, AD = c bo'lsa, B uchidan ACD yog'i markaziga chiqarilgan BM vektorni yoying.",
+      "v": [
+        "1/3·(b + c − a)",
+        "1/3·(b + c) + a",
+        "1/3·(b + c) − a",
+        "1/3·(a + b + c) − a"
+      ],
+      "t": 2,
+      "izoh": "ACD yog'ining og'irlik markazi M uchun A ga nisbatan AM = 1/3·(0 + b + c) = 1/3·(b + c), chunki A uchining o'z radius vektori nol. Endi BM = AM − AB = 1/3·(b + c) − a. Uchdan birni a ga ham qo'llash 1/3·(b + c − a) xatosini beradi. Javob: 1/3·(b + c) − a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tetraedr-medianasi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#d9006d96"
+    },
+    {
+      "q": "Tetraedr ABCD da AB = a, AC = b, AD = c belgilangan. C uchidan ABD yog'ining medianalari kesishgan nuqtasiga chiqarilgan CN vektorni yoying.",
+      "v": [
+        "1/3·(a + c) − b",
+        "1/3·(a + c) + b",
+        "1/3·(a + b + c) − b",
+        "1/3·(a + c − b)"
+      ],
+      "t": 0,
+      "izoh": "ABD yog'ining og'irlik markazi N uchun AN = 1/3·(0 + a + c) = 1/3·(a + c), chunki A uchining radius vektori nol. Endi CN = AN − AC = 1/3·(a + c) − b. Uchdan bir koeffitsientni b ga ham tarqatib yuborish 1/3·(a + c − b) xatosini keltirib chiqaradi. Javob: 1/3·(a + c) − b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tetraedr-medianasi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#f82ca08e"
+    },
+    {
+      "q": "ABCD tetraedrda AB = a, AC = b, AD = c. AB va CD qirralarning o'rtalarini tutashtiruvchi PQ vektorni yoying.",
+      "v": [
+        "1/2·(b + c − a)",
+        "1/2·(a − b + c)",
+        "1/2·(a − b − c)",
+        "1/2·(b + c) − a"
+      ],
+      "t": 0,
+      "izoh": "P nuqta AB ning o'rtasi, demak AP = 1/2·a. Q nuqta CD ning o'rtasi, demak AQ = 1/2·(b + c). Endi PQ = AQ − AP = 1/2·(b + c) − 1/2·a = 1/2·(b + c − a). Agar a ni yarimlash unutilsa 1/2·(b + c) − a xatosi chiqadi. Javob: 1/2·(b + c − a).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tetraedr-orta-chiziq",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#6c2eaea6"
+    },
+    {
+      "q": "Tetraedr ABCD ning AC va BD qirralari o'rtalari tutashtirilgan. AB = a, AC = b, AD = c bo'lsa, hosil bo'lgan kesma vektorini AC tomondan boshlab yoying.",
+      "v": [
+        "1/2·(b − a − c)",
+        "1/2·(a + c − b)",
+        "1/2·(a + c) − b",
+        "1/2·(a + b − c)"
+      ],
+      "t": 1,
+      "izoh": "AC ning o'rtasi uchun radius vektor 1/2·b, BD ning o'rtasi uchun esa 1/2·(a + c). Izlanayotgan vektor birinchisidan ikkinchisiga yo'nalgan: 1/2·(a + c) − 1/2·b = 1/2·(a + c − b). b ni yarimlash unutilsa 1/2·(a + c) − b chiqadi, yo'nalish teskari olinsa esa 1/2·(b − a − c). Javob: 1/2·(a + c − b).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tetraedr-orta-chiziq",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#406a40d2"
+    },
+    {
+      "q": "ABCD tetraedrda AB = a, AC = b, AD = c. AD va BC qirralarning o'rtalarini birlashtirgan vektorni AD tomondan boshlab yoying.",
+      "v": [
+        "1/2·(c − a − b)",
+        "1/2·(a + b) − c",
+        "1/2·(a + b + c)",
+        "1/2·(a + b − c)"
+      ],
+      "t": 3,
+      "izoh": "AD ning o'rtasi uchun radius vektor 1/2·c, BC ning o'rtasi uchun esa 1/2·(a + b). Izlanayotgan vektor birinchisidan ikkinchisiga qarab yo'nalgan: 1/2·(a + b) − 1/2·c = 1/2·(a + b − c). c ni yarimlashni unutish 1/2·(a + b) − c xatosini beradi. Javob: 1/2·(a + b − c).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tetraedr-orta-chiziq",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#a444a91d"
+    },
+    {
+      "q": "Tetraedrning qarama-qarshi qirralari o'rtalarini tutashtiruvchi uchta kesma haqida qaysi tasdiq to'g'ri ekanini aniqlang.",
+      "v": [
+        "Ular hech qachon kesishmaydi",
+        "Faqat ikkitasi kesishadi, uchinchisi alohida turadi",
+        "Uchalasi bitta nuqtada kesishadi va o'sha nuqtada teng ikkiga bo'linadi",
+        "Uchalasi ham bitta tekislikda yotadi"
+      ],
+      "t": 2,
+      "izoh": "Har bir bunday kesma vektorini bazisda yozib, o'rtasining radius vektorini hisoblasak, uchalasida ham 1/4·(a + b + c) hosil bo'ladi. Bitta nuqta uch kesmaning ham o'rtasi ekan, demak uchalasi shu nuqtada kesishadi va teng ikkiga bo'linadi. Kesishuvchi kesmalar bitta tekislikda yotmaydi, chunki tetraedr fazoviy shakl. Javob: uchalasi bitta nuqtada kesishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tetraedr-orta-chiziq",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#b0fe2ac9"
+    },
+    {
+      "q": "ABCD tetraedrda AB = a, AC = b, AD = c deb belgilangan. Asosning BC tomonini shu vektorlar orqali ifodalang.",
+      "v": [
+        "b − a",
+        "a − b",
+        "a + b",
+        "b + c − a"
+      ],
+      "t": 0,
+      "izoh": "Uchburchak qoidasiga ko'ra BC = AC − AB, chunki ikkala vektor ham A nuqtadan chiqadi. Demak BC = b − a. Ayirmaning tartibi almashtirilsa a − b, ya'ni CB vektori chiqadi. Javob: b − a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tetraedr-qirra-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#95c9b332"
+    },
+    {
+      "q": "Tetraedr ABCD ning CD qirrasini AB = a, AC = b, AD = c bazisida yoying va to'g'ri javobni belgilang.",
+      "v": [
+        "b − c",
+        "c − b",
+        "c + b",
+        "c − a"
+      ],
+      "t": 1,
+      "izoh": "CD vektorni ikkita radius vektor ayirmasi sifatida yozamiz: CD = AD − AC = c − b. Ayirmani teskari yozish b − c, ya'ni DC vektorini beradi. Qo'shish bilan chalkashtirish esa c + b ni beradi, bu esa mutlaqo boshqa yo'nalish. Javob: c − b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tetraedr-qirra-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#1202b775"
+    },
+    {
+      "q": "Kristall modelining ABCD tetraedr karkasida AB = a, AC = b, AD = c. BD qirrani shu bazisda yoying.",
+      "v": [
+        "a − c",
+        "a + c",
+        "c − a",
+        "c − b"
+      ],
+      "t": 2,
+      "izoh": "BD vektor B dan D ga yo'nalgan, ikkalasi ham A dan chiquvchi radius vektorlar bilan berilgan: BD = AD − AB = c − a. Ayirmaning tartibi almashtirilsa a − c hosil bo'ladi, bu esa DB vektori. Javob: c − a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tetraedr-qirra-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#5a179ebd"
+    },
+    {
+      "q": "ABCD tetraedrda AB = a, AC = b, AD = c. B uchidan CD qirraning o'rtasiga chiqarilgan vektorni yoying.",
+      "v": [
+        "1/2·(b + c) + a",
+        "1/2·(b + c − a)",
+        "1/2·(b − c) − a",
+        "1/2·(b + c) − a"
+      ],
+      "t": 3,
+      "izoh": "CD qirraning o'rtasi E uchun AE = 1/2·(b + c), chunki u AC va AD radius vektorlarining o'rta arifmetigi. Endi BE = AE − AB = 1/2·(b + c) − a. Bu yerda a ni ham yarimlab yuborish 1/2·(b + c − a) xatosini beradi. Javob: 1/2·(b + c) − a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tetraedr-qirra-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#8c053a30"
+    },
+    {
+      "q": "Dronning uchish yo'nalishi v(3; −5; 2) vektor bilan berilgan. Uni koordinata birlik vektorlari i, j, k bo'yicha yoying.",
+      "v": [
+        "3i − 5j + 2k",
+        "3i + 5j + 2k",
+        "2i − 5j + 3k",
+        "3i − 5j − 2k"
+      ],
+      "t": 0,
+      "izoh": "Fazodagi har qanday vektor i, j, k birlik vektorlar bo'yicha yagona usulda yoyiladi va koeffitsientlar aynan uning koordinatalari bo'ladi. Berilgan vektorning koordinatalari 3, −5 va 2 bo'lgani uchun yoyilma 3i − 5j + 2k ko'rinishida yoziladi. Manfiy ishorani tushirib qoldirish yoki koordinatalar tartibini almashtirish tipik xato. Javob: 3i − 5j + 2k.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-bazis-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#3bec4b8b"
+    },
+    {
+      "q": "Fazoda e₁ = i + j, e₂ = j + k, e₃ = i + k bazis berilgan. d = 3i + 5j + 4k vektorning shu bazisdagi yoyilmasini toping.",
+      "v": [
+        "3e₁ + 5e₂ + 4e₃",
+        "2e₁ + 3e₂ + e₃",
+        "e₁ + 2e₂ + 3e₃",
+        "2e₁ + e₂ + 3e₃"
+      ],
+      "t": 1,
+      "izoh": "d = xe₁ + ye₂ + ze₃ deb yozamiz va koordinatalar bo'yicha sistema tuzamiz: x + z = 3, x + y = 5, y + z = 4. Uchala tenglamani qo'shsak 2(x + y + z) = 12, ya'ni x + y + z = 6. Bundan z = 6 − 5 = 1, y = 6 − 3 = 3, x = 6 − 4 = 2. Tekshiramiz: 2(i + j) + 3(j + k) + (i + k) = 3i + 5j + 4k. Javob: 2e₁ + 3e₂ + e₃.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-bazis-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#04ed3d35"
+    },
+    {
+      "q": "Bazis a, b, c komplanar emas. p = 2a − 3b + c va q = a + b − 2c bo'lsa, p + 2q vektorning yoyilmasini toping.",
+      "v": [
+        "3a − 2b − c",
+        "4a − b − 3c",
+        "−5b + 5c",
+        "4a − b + 3c"
+      ],
+      "t": 1,
+      "izoh": "Avval 2q ni hisoblaymiz: 2q = 2a + 2b − 4c. Endi qo'shamiz: p + 2q = (2 + 2)a + (−3 + 2)b + (1 − 4)c = 4a − b − 3c. Agar 2 koeffitsienti unutilsa p + q = 3a − 2b − c chiqadi, ayirma olinsa esa p − 2q = −5b + 5c hosil bo'ladi. Javob: 4a − b − 3c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-bazis-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#4f0c1beb"
+    },
+    {
+      "q": "Anvar fazoda uchta komplanar bo'lmagan yo'nalish oldi: a, b, c. m = 3a + 2b − c vektorni ikki marta cho'zib, hosil bo'lgan vektordan b ni ayirdi. Natijani yoying.",
+      "v": [
+        "6a + 4b − 2c",
+        "6a + 3b − c",
+        "6a + 3b − 2c",
+        "3a + 3b − 2c"
+      ],
+      "t": 2,
+      "izoh": "Avval vektorni ikkiga ko'paytiramiz: 2m = 6a + 4b − 2c. Endi undan b ni ayiramiz: 6a + 4b − 2c − b = 6a + 3b − 2c. Ayirishni unutish 6a + 4b − 2c ni, faqat b koeffitsientini ikkilamaslik esa 3a + 3b − 2c ni beradi. Javob: 6a + 3b − 2c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-bazis-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#bf4db384"
+    },
+    {
+      "q": "a(1; 1; 0), b(0; 1; 1), c(1; 0; 1) bazisda v(4; 6; 8) vektor xa + yb + zc ko'rinishda yoyilgan. x + y + z yig'indini toping.",
+      "v": [
+        "18",
+        "9",
+        "6",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Koordinatalar bo'yicha sistema tuzamiz: x + z = 4, x + y = 6, y + z = 8. Uchala tenglamani qo'shsak 2(x + y + z) = 18 bo'ladi. Demak x + y + z = 9. Ikkiga bo'lish unutilsa 18 chiqadi, alohida tenglamalarning o'zi esa 6 yoki 4 ni beradi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyilma-koeffitsientlar-yigindisi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#8dae5e1c"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ parallelepipedda AB = a, AD = b, AA₁ = c. AC₁ = xa + yb + zc yoyilmada x + y + z nechaga teng?",
+      "v": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "AC₁ diagonal uchta qirra vektorining yig'indisiga teng: AC₁ = a + b + c. Demak yoyilma koeffitsientlari x = 1, y = 1, z = 1 bo'ladi. Ularning yig'indisi 1 + 1 + 1 = 3. Agar diagonal o'rniga A₁C olinsa koeffitsientlar 1, 1, −1 bo'lib yig'indi 1 chiqadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilma-koeffitsientlar-yigindisi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#4a5a2604"
+    },
+    {
+      "q": "Tetraedr ABCD da AB = a, AC = b, AD = c. Medianalar kesishgan nuqta G uchun AG = xa + yb + zc bo'lsa, koeffitsientlar yig'indisi qanday bo'ladi?",
+      "v": [
+        "3/4",
+        "1",
+        "1/4",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Tetraedr medianalari kesishgan nuqta uchun AG = 1/4·(a + b + c) ekanini bilamiz. Demak har bir koeffitsient 1/4 ga teng, ularning yig'indisi esa 1/4 + 1/4 + 1/4 = 3/4. Bitta koeffitsientni javob deb olish 1/4 xatosini, maxrajni e'tibordan chetda qoldirish esa 3 ni beradi. Javob: 3/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilma-koeffitsientlar-yigindisi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#055a8313"
+    },
+    {
+      "q": "Chizmachilik to'garagida Malika v(6; 5; 2) vektorni a(1; 0; 0), b(1; 1; 0), c(1; 1; 1) bazisda yoydi. Yoyilmadagi eng katta koeffitsient nechaga teng?",
+      "v": [
+        "6",
+        "2",
+        "1",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Uchinchi koordinatadan darhol z = 2 chiqadi, chunki faqat c vektorda uchinchi koordinata noldan farqli. Ikkinchi koordinatadan y + z = 5, demak y = 3. Birinchi koordinatadan x + y + z = 6, demak x = 1. Koeffitsientlar 1, 3 va 2 bo'lib, eng kattasi 3 ga teng. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyilma-koeffitsientlar-yigindisi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#985fe0dd"
+    },
+    {
+      "q": "ABCD tetraedrda AB = a, AC = b, AD = c. BC qirrada K nuqta BK : KC = 1 : 2 nisbatda joylashgan bo'lsa, AK vektorni yoying.",
+      "v": [
+        "2/3·a + 1/3·b",
+        "1/3·a + 2/3·b",
+        "1/2·(a + b)",
+        "a + 1/3·b"
+      ],
+      "t": 0,
+      "izoh": "BK : KC = 1 : 2 bo'lgani uchun BK = 1/3·BC. BC = b − a bo'lgani uchun BK = 1/3·(b − a). Endi AK = AB + BK = a + 1/3·b − 1/3·a = 2/3·a + 1/3·b. Nisbatni teskari o'qish 1/3·a + 2/3·b xatosini beradi. Javob: 2/3·a + 1/3·b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-boluvchi-nisbat",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#a9e0bdc2"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ parallelepipedda AB = a, AD = b, AA₁ = c. CC₁ qirradagi P nuqta uchun CP : PC₁ = 3 : 1 bo'lsa, AP vektorni yoying.",
+      "v": [
+        "a + b + 1/4·c",
+        "a + b + 3/4·c",
+        "3/4·(a + b + c)",
+        "a + b + 1/3·c"
+      ],
+      "t": 1,
+      "izoh": "AC = a + b ekanini bilamiz. CP : PC₁ = 3 : 1 bo'lgani uchun P nuqta qirrani 3 : 1 kabi bo'ladi, ya'ni CP = 3/4·CC₁ = 3/4·c. Demak AP = a + b + 3/4·c. Nisbatni teskari o'qish 1/4·c ni, nisbatni kasrga noto'g'ri aylantirish esa 1/3·c ni beradi. Javob: a + b + 3/4·c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqta-boluvchi-nisbat",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#78570eb4"
+    },
+    {
+      "q": "Parallelepiped ABCDA₁B₁C₁D₁ da AB = a, AD = b, AA₁ = c. A₁B₁ qirradagi M nuqta uchun A₁M : MB₁ = 2 : 3 bo'lsa, AM vektorni yoying.",
+      "v": [
+        "3/5·a + c",
+        "2/3·a + c",
+        "2/5·a + c",
+        "2/5·(a + c)"
+      ],
+      "t": 2,
+      "izoh": "Avval A₁ ga chiqamiz: AA₁ = c. A₁B₁ qirra AB ga teng va parallel, ya'ni A₁B₁ = a. Nisbat 2 : 3 bo'lgani uchun A₁M = 2/5·a. Demak AM = c + 2/5·a. Nisbatni 2/3 deb olish yoki koeffitsientni c ga ham tarqatish tipik xato. Javob: 2/5·a + c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqta-boluvchi-nisbat",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#e643435c"
+    },
+    {
+      "q": "Omborda AC₁ diagonal bo'ylab tortilgan trosda Q nuqta AQ : QC₁ = 1 : 3 nisbatda belgilangan. AB = a, AD = b, AA₁ = c bo'lsa, AQ vektorni yoying.",
+      "v": [
+        "1/3·(a + b + c)",
+        "1/4·(a + b) + c",
+        "3/4·(a + b + c)",
+        "1/4·(a + b + c)"
+      ],
+      "t": 3,
+      "izoh": "AC₁ = a + b + c ekanini bilamiz. AQ : QC₁ = 1 : 3 bo'lgani uchun butun diagonal 4 ta teng bo'lakka bo'lingan va Q nuqta birinchi bo'lak oxirida turadi: AQ = 1/4·AC₁. Demak AQ = 1/4·(a + b + c). Nisbatni 1 : 3 dan 1/3 deb olish tipik xato. Javob: 1/4·(a + b + c).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-boluvchi-nisbat",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#371f9bbb"
+    },
+    {
+      "q": "A(1; 0; 2), B(2; 1; 3), C(0; 2; 1) va D(3; 3; 4) nuqtalar bitta tekislikda yotadimi degan savolni tekshiring.",
+      "v": [
+        "Ha, chunki AB, AC va AD vektorlarning determinanti nolga teng",
+        "Yo'q, determinant 7 ga teng",
+        "Yo'q, determinant −7 ga teng",
+        "Ha, chunki AD = AB + AC"
+      ],
+      "t": 0,
+      "izoh": "Avval vektorlarni topamiz: AB = (1; 1; 1), AC = (−1; 2; −1), AD = (2; 3; 2). Determinantni yoyamiz: 1·(2·2 − (−1)·3) − 1·((−1)·2 − (−1)·2) + 1·((−1)·3 − 2·2) = 7 − 0 − 7 = 0. Determinant nol, demak vektorlar komplanar va to'rt nuqta bitta tekislikda yotadi. AB + AC = (0; 3; 0) bo'lgani uchun oxirgi variant noto'g'ri. Javob: ha, determinant nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tort-nuqta-bir-tekislikda",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#3010c9c5"
+    },
+    {
+      "q": "Geodezist Sanjar to'rt ustunning cho'qqilarini K(0; 1; 1), L(2; 3; 2), M(1; 0; 3) va N(4; 4; 5) deb o'lchadi. Ular bitta tekislikda yotadimi?",
+      "v": [
+        "Ha, determinant nolga teng",
+        "Yo'q, determinant −5 ga teng",
+        "Ha, chunki KN = KL + KM",
+        "Yo'q, determinant 5 ga teng"
+      ],
+      "t": 1,
+      "izoh": "Vektorlarni hisoblaymiz: KL = (2; 2; 1), KM = (1; −1; 2), KN = (4; 3; 4). Determinantni yoyamiz: 2·((−1)·4 − 2·3) − 2·(1·4 − 2·4) + 1·(1·3 − (−1)·4) = −20 + 8 + 7 = −5. Natija noldan farqli, demak cho'qqilar bitta tekislikda yotmaydi. KL + KM = (3; 1; 3) bo'lib, KN dan farq qiladi. Javob: yo'q, determinant −5 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tort-nuqta-bir-tekislikda",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#e4217654"
+    },
+    {
+      "q": "P(1; 1; 0), Q(2; 0; 1), R(0; 2; 3) va S(3; h; 4) nuqtalar bitta tekislikda yotishi uchun h nechaga teng bo'lishi kerak?",
+      "v": [
+        "h = 1",
+        "h = 4",
+        "h = −1",
+        "h = −4"
+      ],
+      "t": 2,
+      "izoh": "Vektorlarni yozamiz: PQ = (1; −1; 1), PR = (−1; 1; 3), PS = (2; h − 1; 4). Determinantni yoyamiz: 1·(1·4 − 3·(h − 1)) + 1·((−1)·4 − 3·2) + 1·((−1)·(h − 1) − 1·2) = (7 − 3h) − 10 + (−h − 1) = −4h − 4. Nolga tenglaymiz: −4h − 4 = 0, demak h = −1. Ishora e'tiborsiz olinsa h = 1 chiqadi. Javob: h = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tort-nuqta-bir-tekislikda",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#b959419b"
+    },
+    {
+      "q": "Nima uchun to'rtta nuqtaning bitta tekislikda yotishini tekshirishda ulardan hosil qilingan uchta vektorning komplanarligi qaraladi?",
+      "v": [
+        "Chunki vektorlarning uzunliklari teng bo'lishi shart",
+        "Chunki to'rtta nuqta har doim bitta tekislikda yotadi",
+        "Chunki fazodagi ixtiyoriy uchta vektor komplanar bo'ladi",
+        "Chunki bitta nuqtadan chiquvchi uchta vektor komplanar bo'lsagina to'rt nuqta bir tekislikda yotadi"
+      ],
+      "t": 3,
+      "izoh": "To'rt nuqtadan bittasini boshlanish qilib olsak, qolgan uchtasiga uchta vektor hosil bo'ladi. Bu vektorlar bitta tekislikka parallel bo'lsa, ularning uchlari ham o'sha tekislikda yotadi. Demak masala uchta vektorning komplanarligini tekshirishga keltiriladi. Fazodagi ixtiyoriy uchta vektor esa umuman komplanar bo'lishi shart emas. Javob: uchta vektor komplanar bo'lsagina to'rt nuqta bir tekislikda yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tort-nuqta-bir-tekislikda",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#eec3684e"
+    },
+    {
+      "q": "Quyosh panelini ushlab turuvchi uchta tayanch sterjen a(1; 2; 1), b(2; 1; 3) va c(3; 3; 4) yo'nalishlarda o'rnatilgan. Bu uch vektor komplanarmi, ya'ni bitta tekislikka parallelmi?",
+      "v": [
+        "Ha, chunki c = a + b",
+        "Yo'q, ular fazoda bazis tashkil qiladi",
+        "Ha, chunki c = 2a + b",
+        "Yo'q, determinant 2 ga teng"
+      ],
+      "t": 0,
+      "izoh": "Birinchi ikkita vektorni qo'shamiz: a + b = (1 + 2; 2 + 1; 1 + 3) = (3; 3; 4), bu esa aynan c vektor. Demak c qolgan ikkitasi orqali yoyildi, uchlik komplanar va determinant nolga teng, ya'ni sterjenlarning yo'nalishlari bitta tekislikka parallel. 2a + b = (4; 5; 5) bo'lgani uchun uchinchi variant to'g'ri emas. Javob: ha, chunki c = a + b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-komplanarlik",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#04ebb194"
+    },
+    {
+      "q": "Chodir ustunlari p(2; 0; 1), q(0; 3; 1) va r(4; 6; 5) yo'nalishlarda tortilgan. Ustunlar bitta tekislikka parallelmi?",
+      "v": [
+        "Ha, chunki r = 2p + 2q",
+        "Yo'q, determinant 6 ga teng",
+        "Ha, chunki determinant nolga teng",
+        "Yo'q, determinant −6 ga teng"
+      ],
+      "t": 1,
+      "izoh": "Avval taxminni tekshiramiz: 2p + 2q = (4; 6; 4), bu esa r(4; 6; 5) dan uchinchi koordinatasi bilan farq qiladi. Endi determinantni yoyamiz: 2·(3·5 − 1·6) − 0·(0·5 − 1·4) + 1·(0·6 − 3·4) = 18 − 12 = 6. Natija noldan farqli, demak ustunlar bitta tekislikka parallel emas. Javob: yo'q, determinant 6 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-komplanarlik",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#45083914"
+    },
+    {
+      "q": "Uy tomining uch qirrasi u(1; −1; 2), v(3; 1; 0) va w(5; −1; 4) yo'nalishlarga ega. Usta Rustam ularning komplanarligi haqida qanday xulosa chiqaradi?",
+      "v": [
+        "Yo'q, determinant 4 ga teng",
+        "Ha, chunki w = u + 2v",
+        "Ha, chunki w = 2u + v",
+        "Yo'q, determinant −4 ga teng"
+      ],
+      "t": 2,
+      "izoh": "Yoyilmani izlaymiz: 2u + v = (2 + 3; −2 + 1; 4 + 0) = (5; −1; 4), bu esa aynan w vektor. Demak w qolgan ikkitasi orqali yoyildi va uch qirra bitta tekislikka parallel, determinant nolga teng. u + 2v = (7; 1; 2) bo'lgani uchun ikkinchi variant xato. Javob: ha, chunki w = 2u + v.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-komplanarlik",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#1b03fc60"
+    },
+    {
+      "q": "Kran strelasining uch bo'g'ini a(1; 3; −2), b(2; −1; 1) va c(1; 10; −7) vektorlar bilan yo'naltirilgan. Bo'g'inlar bitta tekislikda joylashganmi?",
+      "v": [
+        "Yo'q, determinant 10 ga teng",
+        "Ha, chunki c = a − b",
+        "Yo'q, determinant −10 ga teng",
+        "Ha, chunki c = 3a − b"
+      ],
+      "t": 3,
+      "izoh": "Yoyilmani izlaymiz: 3a − b = (3 − 2; 9 + 1; −6 − 1) = (1; 10; −7), bu esa aynan c vektor. Demak uchlik komplanar va bo'g'inlar bitta tekislikda joylashgan. a − b = (−1; 4; −3) bo'lgani uchun ikkinchi variant noto'g'ri. Javob: ha, chunki c = 3a − b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-komplanarlik",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#58c6e9d2"
+    },
+    {
+      "q": "ABCA₁B₁C₁ uchburchakli prizmada AB = p, AC = q, AA₁ = r. BC₁ vektorni shu uchta vektor orqali yoying.",
+      "v": [
+        "q + r − p",
+        "p + q + r",
+        "p + q − r",
+        "p − q + r"
+      ],
+      "t": 0,
+      "izoh": "Zanjirni B nuqtadan boshlaymiz: BC₁ = BA + AC + CC₁. Bu yerda BA = −p, AC = q va CC₁ = AA₁ = r, chunki prizmaning yon qirralari teng va parallel. Demak BC₁ = −p + q + r = q + r − p. Boshlanish nuqtasini e'tibordan chetda qoldirish p + q + r xatosini beradi. Javob: q + r − p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "prizma-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#e0ff2db7"
+    },
+    {
+      "q": "Uchburchakli prizma ABCA₁B₁C₁ da AB = p, AC = q, AA₁ = r berilgan. A₁B vektorni yoying.",
+      "v": [
+        "p + r",
+        "r − p",
+        "p − r",
+        "p − q − r"
+      ],
+      "t": 2,
+      "izoh": "Zanjirni A₁ dan boshlaymiz: A₁B = A₁A + AB. Bu yerda A₁A = −r, chunki u AA₁ ga qarama-qarshi yo'nalgan, AB esa p ga teng. Demak A₁B = p − r. Yo'nalish teskari olinsa r − p, ya'ni BA₁ vektori hosil bo'ladi. Javob: p − r.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "prizma-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#7c23f2e2"
+    },
+    {
+      "q": "Zavodda ABCA₁B₁C₁ prizma shaklidagi karkas yig'ildi. AB = p, AC = q, AA₁ = r bo'lsa, CB₁ vektorni yoying.",
+      "v": [
+        "p + q + r",
+        "p − q + r",
+        "q − p + r",
+        "p − q − r"
+      ],
+      "t": 1,
+      "izoh": "Zanjirni C nuqtadan boshlaymiz: CB₁ = CA + AB + BB₁. Bu yerda CA = −q, AB = p va BB₁ = r. Demak CB₁ = −q + p + r = p − q + r. Boshlanish uchi noto'g'ri olinsa q − p + r, ya'ni B₁C ga yaqin xato javob chiqadi. Javob: p − q + r.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "prizma-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#4d616d11"
+    },
+    {
+      "q": "ABCA₁B₁C₁ prizmada AB = p, AC = q, AA₁ = r. B₁C₁ qirraning o'rtasi M bo'lsa, AM vektorni yoying.",
+      "v": [
+        "1/2·(p + q + r)",
+        "1/2·(p + q) − r",
+        "p + q + r",
+        "1/2·(p + q) + r"
+      ],
+      "t": 3,
+      "izoh": "B₁ va C₁ nuqtalarning A ga nisbatan radius vektorlari p + r va q + r ga teng. O'rta nuqta ularning o'rta arifmetigi: AM = 1/2·((p + r) + (q + r)) = 1/2·(p + q) + r. Yon qirrani ham yarimlab yuborish 1/2·(p + q + r) xatosini beradi. Javob: 1/2·(p + q) + r.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "prizma-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#a4189ce1"
+    },
+    {
+      "q": "Asosi ABCD parallelogramm bo'lgan SABCD piramidada SA = m, SB = n, SD = k. SC vektorni shu bazisda yoying.",
+      "v": [
+        "m + n + k",
+        "n + k − m",
+        "m + n − k",
+        "m − n + k"
+      ],
+      "t": 1,
+      "izoh": "ABCD parallelogramm bo'lgani uchun AB = DC, ya'ni C nuqta B va D nuqtalar orqali ifodalanadi: SC = SB + SD − SA. Berilgan belgilashlarda bu n + k − m ko'rinishini oladi. Ayirishni unutish m + n + k xatosini beradi. Javob: n + k − m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#3142a271"
+    },
+    {
+      "q": "SABCD piramidada asos ABCD parallelogramm, SA = m, SB = n, SD = k. AB tomonni shu vektorlar orqali ifodalang.",
+      "v": [
+        "m − n",
+        "n + m",
+        "k − m",
+        "n − m"
+      ],
+      "t": 3,
+      "izoh": "AB vektor A dan B ga yo'nalgan, ikkalasi ham S uchidan chiquvchi radius vektorlar bilan berilgan. Uchburchak qoidasiga ko'ra AB = SB − SA = n − m. Ayirmaning tartibi almashtirilsa m − n, ya'ni BA vektori chiqadi. Javob: n − m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "piramida-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#e676bbf2"
+    },
+    {
+      "q": "Asosi ABCD parallelogramm bo'lgan SABCD piramidada SA = m, SB = n, SD = k. Asos diagonallari kesishgan nuqta O bo'lsa, SO vektorni yoying.",
+      "v": [
+        "1/2·(n + k)",
+        "1/2·(m + n + k)",
+        "1/2·(n + k − m)",
+        "1/2·(m + n)"
+      ],
+      "t": 0,
+      "izoh": "Parallelogramm diagonallari kesishgan nuqta AC ning o'rtasi bo'ladi, demak SO = 1/2·(SA + SC). SC = n + k − m ekanini bilamiz, shuning uchun SO = 1/2·(m + n + k − m) = 1/2·(n + k). m vektorni qisqartirishni unutish 1/2·(m + n + k) xatosini beradi. Javob: 1/2·(n + k).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#2c1eaa3e"
+    },
+    {
+      "q": "SABCD piramidada SA = m, SB = n, SD = k va ABCD parallelogramm. BC tomonning o'rtasi E bo'lsa, SE vektorni yoying.",
+      "v": [
+        "n + 1/2·(k + m)",
+        "1/2·(n + k − m)",
+        "n + 1/2·(k − m)",
+        "n − 1/2·(k − m)"
+      ],
+      "t": 2,
+      "izoh": "B nuqtaning radius vektori n, C nuqtaniki esa n + k − m. O'rta nuqta ularning o'rta arifmetigi: SE = 1/2·(n + n + k − m) = n + 1/2·(k − m). Ishorani almashtirish n + 1/2·(k + m) xatosini, B nuqtani ikki marta hisobga olmaslik esa 1/2·(n + k − m) ni beradi. Javob: n + 1/2·(k − m).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#e5ffd547"
+    },
+    {
+      "q": "ABCD fazoviy to'rtburchakning uchlari bitta tekislikda yotmasa ham, AB + BC + CD + DA yig'indi nimaga teng bo'ladi va nega?",
+      "v": [
+        "Nol vektorga",
+        "AC vektorga",
+        "AD vektorga",
+        "BD vektorga"
+      ],
+      "t": 0,
+      "izoh": "Ko'pburchak qoidasi fazoda ham amal qiladi: ketma-ket qo'yilgan vektorlar yig'indisi birinchisining boshidan oxirgisining uchiga yo'nalgan vektorga teng. Bu yerda zanjir A dan boshlanib yana A da tugaydi, ya'ni yopiq, shuning uchun uchlar komplanar bo'lishi shart emas. Boshi va oxiri ustma-ust tushgan vektor esa nol vektordir. Javob: nol vektorga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yopiq-zanjir-yigindi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#f8e866b3"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ parallelepipedda AB + AD + AA₁ yig'indi qaysi vektorga teng bo'lishini aniqlang.",
+      "v": [
+        "AC vektorga",
+        "AC₁ vektorga",
+        "AB₁ vektorga",
+        "AD₁ vektorga"
+      ],
+      "t": 1,
+      "izoh": "Parallelepiped qoidasiga ko'ra bitta uchdan chiquvchi uchta qirra vektorining yig'indisi shu uchdan chiquvchi diagonalga teng. A uchidan chiquvchi diagonal AC₁ bo'lgani uchun yig'indi aynan shunga teng. Faqat ikkita qo'shiluvchi olinsa AC yoki AB₁ chiqadi. Javob: AC₁ vektorga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yopiq-zanjir-yigindi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#a6e6c243"
+    },
+    {
+      "q": "Ombor ABCDA₁B₁C₁D₁ parallelepiped shaklida bo'lib, unda uchta yo'nalish AB, B₁C₁ va DD₁ vektorlar bilan berilgan. Shu uch vektorning yig'indisi qaysi vektorga teng?",
+      "v": [
+        "AB₁ vektorga",
+        "BD₁ vektorga",
+        "A₁C vektorga",
+        "AC₁ vektorga"
+      ],
+      "t": 3,
+      "izoh": "Belgilashlarni bazisga keltiramiz: AB = a, B₁C₁ = BC = AD = b, DD₁ = AA₁ = c, chunki parallelepipedda qarama-qarshi qirralar teng vektorlar. Vektorlar erkin ko'chirilgani uchun yig'indi a + b + c bo'lib, bu esa AC₁ diagonaliga teng. Javob: AC₁ vektorga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yopiq-zanjir-yigindi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#f2ec0c8a"
+    },
+    {
+      "q": "Dron A nuqtadan uchib, B, C va D nuqtalarga qo'nib, so'ng yana A ga qaytdi. Uning to'rtta ko'chish vektorining yig'indisi haqida nima deyish mumkin?",
+      "v": [
+        "Yig'indi AC vektorga teng bo'ladi",
+        "Yig'indini umuman aniqlab bo'lmaydi",
+        "Yig'indi nol vektorga teng, chunki zanjir yopiq",
+        "Yig'indi AD vektorga teng bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Ko'chishlar zanjiri A dan boshlanib yana A da tugagani uchun natijaviy ko'chish nolga teng. Dron qanday traektoriya bilan uchishidan qat'i nazar, boshlanish va tugash nuqtasi ustma-ust tushsa, vektorlar yig'indisi nol vektor bo'ladi. Nuqtalar bitta tekislikda yotishi ham shart emas. Javob: yig'indi nol vektorga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yopiq-zanjir-yigindi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#404ffc39"
+    },
+    {
+      "q": "Qirrasi 1 ga teng ABCDA₁B₁C₁D₁ kubda AB = i, AD = j, AA₁ = k. AC₁, AB₁ va AD₁ vektorlar komplanarmi?",
+      "v": [
+        "Komplanar, chunki AC₁ = AB₁ + AD₁",
+        "Komplanar emas, determinant −1 ga teng",
+        "Komplanar, chunki determinant nolga teng",
+        "Komplanar emas, determinant 2 ga teng"
+      ],
+      "t": 1,
+      "izoh": "Koordinatalarni yozamiz: AC₁ = (1; 1; 1), AB₁ = (1; 0; 1), AD₁ = (0; 1; 1). Determinantni yoyamiz: 1·(0·1 − 1·1) − 1·(1·1 − 1·0) + 1·(1·1 − 0·0) = −1 − 1 + 1 = −1. Natija noldan farqli, demak uchlik komplanar emas. AB₁ + AD₁ = (1; 1; 2) bo'lgani uchun birinchi variant xato. Javob: komplanar emas, determinant −1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-koordinata-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#34fcefcb"
+    },
+    {
+      "q": "Kub ABCDA₁B₁C₁D₁ da AB = i, AD = j, AA₁ = k. B₁D₁, A₁C₁ va AC vektorlar komplanar ekanini qaysi tenglik ko'rsatadi?",
+      "v": [
+        "AC = A₁C₁ tenglik",
+        "AC = B₁D₁ tenglik",
+        "AC = A₁C₁ + B₁D₁ tenglik",
+        "AC = A₁C₁ − B₁D₁ tenglik"
+      ],
+      "t": 0,
+      "izoh": "Koordinatalarni yozamiz: B₁D₁ = (−1; 1; 0), A₁C₁ = (1; 1; 0), AC = (1; 1; 0). Ko'rinib turibdiki AC va A₁C₁ teng vektorlar, chunki ABCD va A₁B₁C₁D₁ yoqlar teng va parallel. Uchlikda ikkita teng vektor bo'lsa, ular kollinear bo'lgani uchun uchlik albatta komplanar. Qolgan yig'indi va ayirma esa (0; 2; 0) va (2; 0; 0) ni beradi. Javob: AC = A₁C₁ tenglik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-koordinata-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#eef50f34"
+    },
+    {
+      "q": "Qirrasi 4 sm bo'lgan kubning A uchidan chiquvchi AB, AD va AA₁ vektorlari haqida qaysi tasdiq to'g'ri?",
+      "v": [
+        "Ular komplanar, chunki bitta uchdan chiqadi",
+        "Ular kollinear, chunki uzunliklari teng",
+        "Ular komplanar, chunki uzunliklari teng",
+        "Ular komplanar emas va fazoda bazis tashkil qiladi"
+      ],
+      "t": 3,
+      "izoh": "Kubning bitta uchidan chiquvchi uchta qirra o'zaro perpendikulyar bo'lib, bitta tekislikda yotmaydi. Demak ular komplanar emas va fazo uchun bazis hosil qiladi. Vektorlarning bitta nuqtadan chiqishi ham, uzunliklarining tengligi ham komplanarlikni bermaydi. Javob: ular komplanar emas va fazoda bazis tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-koordinata-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#5a2cf4b8"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ kubda AB = i, AD = j, AA₁ = k. C₁ uchidan A uchiga yo'nalgan C₁A vektorni yoying.",
+      "v": [
+        "i + j + k",
+        "−i + j + k",
+        "−i − j − k",
+        "i − j − k"
+      ],
+      "t": 2,
+      "izoh": "Avval AC₁ diagonalni yoyamiz: AC₁ = i + j + k. C₁A vektor unga qarama-qarshi yo'nalgan va uzunligi bir xil, demak C₁A = −AC₁ = −i − j − k. Faqat bitta hadning ishorasini almashtirish −i + j + k yoki i − j − k xatolarini beradi. Javob: −i − j − k.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-koordinata-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#b6d049ef"
+    },
+    {
+      "q": "a, b, c vektorlar komplanar emas. Agar (x − 2)a + 3b + (y + 1)c = 4a + 3b − 2c tenglik o'rinli bo'lsa, x va y ni toping.",
+      "v": [
+        "x = 6, y = −3",
+        "x = 2, y = −1",
+        "x = 6, y = −1",
+        "x = 4, y = −2"
+      ],
+      "t": 0,
+      "izoh": "Komplanar bo'lmagan bazisda yoyilma yagona bo'lgani uchun mos koeffitsientlarni tenglashtiramiz. a oldida: x − 2 = 4, demak x = 6. c oldida: y + 1 = −2, demak y = −3. b oldidagi koeffitsientlar allaqachon teng. Koeffitsientlarni ko'chirmasdan o'ng tomondagi sonlarni javob deb olish x = 4, y = −2 xatosini beradi. Javob: x = 6, y = −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglik-orqali-nomalum",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#9ff49057"
+    },
+    {
+      "q": "Komplanar bo'lmagan a, b, c uchun 2xa + (y − 1)b + 3zc = 6a − 4b + 9c tenglik bajarilsa, x + y + z yig'indini toping.",
+      "v": [
+        "9",
+        "3",
+        "6",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "Mos koeffitsientlarni tenglashtiramiz: 2x = 6 dan x = 3, y − 1 = −4 dan y = −3, 3z = 9 dan z = 3. Endi yig'indini hisoblaymiz: 3 + (−3) + 3 = 3. Ishorani chalkashtirib y = 3 deb olish 9 ni, faqat x va z ni qo'shish 6 ni, y ning qiymatini javob deb yozib yuborish esa −3 ni beradi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglik-orqali-nomalum",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#1bdb6496"
+    },
+    {
+      "q": "Agar a, b, c komplanar bo'lmasa, (2x + 1)a + (3 − y)b = 5a + 7b tenglikdan x va y qanday topiladi?",
+      "v": [
+        "x = 2, y = 4",
+        "x = 3, y = −4",
+        "x = 2, y = −4",
+        "x = 2, y = 10"
+      ],
+      "t": 2,
+      "izoh": "Bazis komplanar bo'lmagani uchun mos koeffitsientlar teng bo'lishi shart. a oldida: 2x + 1 = 5, bundan 2x = 4 va x = 2. b oldida: 3 − y = 7, bundan −y = 4 va y = −4. Ikkinchi tenglamada ishorani e'tibordan chetda qoldirish y = 4 xatosini, qo'shishni ayirish bilan almashtirish esa y = 10 ni beradi. Javob: x = 2, y = −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglik-orqali-nomalum",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#33ef2767"
+    },
+    {
+      "q": "Nima uchun komplanar bo'lmagan bazisda ikkita yoyilmaning koeffitsientlarini tenglashtirish mumkin? To'g'ri asosni tanlang.",
+      "v": [
+        "Chunki koeffitsientlar har doim butun son bo'ladi",
+        "Chunki bazis vektorlari o'zaro perpendikulyar",
+        "Chunki bazis vektorlarining uzunligi birga teng",
+        "Chunki komplanar bo'lmagan bazisda yoyilma yagona"
+      ],
+      "t": 3,
+      "izoh": "Fazoda yoyish teoremasi komplanar bo'lmagan uchta vektor bo'yicha har qanday vektorning yoyilmasi mavjud va yagona ekanini tasdiqlaydi. Yagonalik esa ikkita yoyilma ustma-ust tushsa, ularning mos koeffitsientlari ham teng bo'lishini bildiradi. Bazis vektorlarining uzunligi ham, o'zaro burchagi ham bunga ta'sir qilmaydi. Javob: komplanar bo'lmagan bazisda yoyilma yagona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglik-orqali-nomalum",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#6a008ecf"
+    },
+    {
+      "q": "Fazoda a, b va nol vektordan iborat uchlik berilgan. Bu uchlik bazis bo'la oladimi va nima uchun?",
+      "v": [
+        "Yo'q, chunki nol vektor qatnashgan uchlik har doim komplanar",
+        "Ha, agar a va b kollinear bo'lmasa",
+        "Ha, u har doim bazis bo'ladi",
+        "Yo'q, chunki a va b albatta kollinear bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Nol vektor ixtiyoriy vektorga kollinear deb qaraladi, chunki uni istalgan vektorning nolga ko'paytmasi sifatida yozish mumkin. Uchlikda kollinear juftlik bo'lsa, uchalasi ham bitta tekislikka parallel bo'ladi. Demak nol vektor qatnashgan uchlik hech qachon bazis bo'la olmaydi. Javob: yo'q, chunki bunday uchlik har doim komplanar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "komplanarlik-maxsus-holat",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#57a632c7"
+    },
+    {
+      "q": "Ikkita teng vektor va yana bitta ixtiyoriy vektordan iborat uchlik haqida qaysi tasdiq to'g'ri bo'ladi?",
+      "v": [
+        "Ular hech qachon komplanar bo'lmaydi",
+        "Ular har doim komplanar bo'ladi",
+        "Ular faqat uchinchisi nol bo'lganda komplanar",
+        "Ular fazoda bazis tashkil qiladi"
+      ],
+      "t": 1,
+      "izoh": "Teng vektorlar bir xil yo'nalishga ega, ya'ni ular kollinear. Uchlikda kollinear juftlik bo'lsa, shu to'g'ri chiziq va uchinchi yo'nalish orqali doimo bitta tekislik o'tkazish mumkin. Demak bunday uchlik har doim komplanar va bazis bo'la olmaydi. Javob: ular har doim komplanar bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "komplanarlik-maxsus-holat",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#3511831c"
+    },
+    {
+      "q": "Uchta vektor bitta nuqtadan chiqib, uchalasi ham bitta to'g'ri chiziqda yotibdi. Ular komplanarmi?",
+      "v": [
+        "Yo'q, chunki ular kollinear",
+        "Faqat uzunliklari teng bo'lganda komplanar bo'ladi",
+        "Ha, chunki kollinear vektorlar orqali cheksiz ko'p tekislik o'tkazish mumkin",
+        "Buni aniqlashning iloji yo'q"
+      ],
+      "t": 2,
+      "izoh": "Bitta to'g'ri chiziqda yotgan vektorlar kollinear deyiladi. To'g'ri chiziq orqali cheksiz ko'p tekislik o'tkazish mumkin, ularning har biri uchala vektorni ham o'z ichiga oladi. Demak kollinear uchlik albatta komplanar. Kollinearlik komplanarlikka zid emas, aksincha uning xususiy holi. Javob: ha, kollinear vektorlar orqali cheksiz ko'p tekislik o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "komplanarlik-maxsus-holat",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#fedef83c"
+    },
+    {
+      "q": "Komplanar bo'lmagan uchta vektor ichida nol vektor bo'lishi mumkinmi degan savolga javobingizni asoslang.",
+      "v": [
+        "Ha, bo'lishi mumkin",
+        "Ha, agar qolgan ikkitasi perpendikulyar bo'lsa",
+        "Faqat fazoviy masalalarda mumkin",
+        "Yo'q, nol vektor har qanday vektorga kollinear, shuning uchun uchlik komplanar bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Nol vektorning yo'nalishi aniqlanmagan va u har qanday vektorga kollinear deb qabul qilinadi. Kollinear juftlik mavjud bo'lgan uchlik esa har doim komplanar. Demak nol vektor qatnashgan uchlik komplanar bo'lmasligi mumkin emas, qolgan ikki vektor o'zaro perpendikulyar bo'lsa ham. Javob: yo'q, uchlik komplanar bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "komplanarlik-maxsus-holat",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#242ba48a"
+    },
+    {
+      "q": "Fazoda komplanar bo'lmagan a, b, c bazis berilgan. Ixtiyoriy d vektorni shu bazis bo'yicha necha xil usulda yoyish mumkin?",
+      "v": [
+        "Faqat bitta usulda",
+        "Ikki xil usulda",
+        "Cheksiz ko'p usulda",
+        "Uni umuman yoyib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Fazoda yoyish teoremasi shuni tasdiqlaydiki, komplanar bo'lmagan uchta vektor bo'yicha har qanday vektor yoyiladi va bu yoyilma yagona. Agar ikkita har xil yoyilma mavjud bo'lsa, ularni ayirib bazis vektorlarining nolga teng, koeffitsientlari barchasi nol bo'lmagan (notrivial) chiziqli kombinatsiyasini hosil qilgan bo'lardik, bu esa ularning komplanarligiga olib kelardi. Javob: faqat bitta usulda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilma-yagonaligi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#8d76f0d2"
+    },
+    {
+      "q": "Fazodagi vektorni yoyish teoremasi qanday shartda har qanday vektorga qo'llaniladi? To'g'ri javobni belgilang.",
+      "v": [
+        "Bazis vektorlari o'zaro kollinear bo'lsa",
+        "Bazis vektorlari komplanar bo'lsa",
+        "Bazis vektorlari komplanar bo'lmasa",
+        "Bazis vektorlarining uzunliklari teng bo'lsa"
+      ],
+      "t": 2,
+      "izoh": "Teoremaning sharti aynan bazis vektorlarining komplanar emasligi. Komplanar uchlik bo'yicha faqat o'sha tekislikka parallel vektorlarnigina yoyish mumkin, tekislikdan chiqib ketgan vektor esa yoyilmaydi. Uzunlik va o'zaro burchak teoremaning shartiga kirmaydi. Javob: bazis vektorlari komplanar bo'lmasa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilma-yagonaligi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#ad0e8cd3"
+    },
+    {
+      "q": "Uchta komplanar vektor bo'yicha fazodagi ixtiyoriy vektorni yoyish mumkinmi degan savolga to'g'ri javob bering.",
+      "v": [
+        "Ha, har qanday vektorni yoyish mumkin",
+        "Yo'q, faqat shu tekislikka parallel vektorlarni yoyish mumkin",
+        "Ha, lekin yoyilma yagona bo'lmaydi",
+        "Yo'q, umuman hech qanday vektorni yoyib bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Komplanar uchlikning chiziqli kombinatsiyasi doimo o'sha tekislikka parallel vektor beradi, chunki har bir qo'shiluvchi shu tekislikka parallel. Demak tekislikdan chiqib ketgan vektorni bunday uchlik bo'yicha yoyib bo'lmaydi. Tekislikka parallel vektorlar esa yoyiladi, lekin yoyilma yagona bo'lmasligi mumkin. Javob: faqat shu tekislikka parallel vektorlarni yoyish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilma-yagonaligi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#a5573f5d"
+    },
+    {
+      "q": "Talaba Aziza d vektorni komplanar bo'lmagan a, b, c bazisda ikki xil yoyilma bilan yozdi. Uning ishidan qanday xulosa chiqadi?",
+      "v": [
+        "Bazis noto'g'ri tanlangan bo'lishi kerak",
+        "d vektor albatta nol vektor ekan",
+        "a, b va c aslida komplanar bo'lib chiqadi",
+        "Ikkala yoyilmaning mos koeffitsientlari teng, ya'ni yoyilma aslida bitta"
+      ],
+      "t": 3,
+      "izoh": "Komplanar bo'lmagan bazisda yoyilma yagona bo'lgani uchun ikkita yozuv faqat tashqi ko'rinishi bilan farq qilishi mumkin. Ularni ayirsak, koeffitsientlar ayirmasi bilan olingan chiziqli kombinatsiya nolga teng bo'ladi, bu esa faqat barcha ayirmalar nol bo'lgandagina mumkin. Demak mos koeffitsientlar teng. Javob: yoyilma aslida bitta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilma-yagonaligi",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#169756cc"
+    },
+    {
+      "q": "Sardor omborda yuk aravasini avval 3 m sharqqa, so'ng 4 m shimolga surdi va nihoyat 2 m yuqoriga ko'tardi. Sharq, shimol va yuqori birlik vektorlari e₁, e₂, e₃ bo'lsa, umumiy ko'chishni yoying.",
+      "v": [
+        "3e₁ + 4e₂ + 2e₃",
+        "3e₁ + 2e₂ + 4e₃",
+        "4e₁ + 3e₂ + 2e₃",
+        "3e₁ + 4e₂ − 2e₃"
+      ],
+      "t": 0,
+      "izoh": "Uchala yo'nalish o'zaro perpendikulyar bo'lgani uchun ular komplanar emas va bazis hosil qiladi. Har bir ko'chish mos birlik vektorga o'z uzunligi bilan ko'paytiriladi: 3e₁, 4e₂ va 2e₃. Umumiy ko'chish ularning yig'indisi, ya'ni 3e₁ + 4e₂ + 2e₃. Ko'tarilish yuqoriga bo'lgani uchun uchinchi had musbat qoladi. Javob: 3e₁ + 4e₂ + 2e₃.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#d8f49731"
+    },
+    {
+      "q": "Quruvchi Zafar yukni o'zaro komplanar bo'lmagan u, v, w birlik vektorlari yo'nalishida ko'chirdi: avval u bo'ylab 6 m, so'ng v bo'ylab 8 m, keyin w bo'ylab 5 m yuqoriga. Yo'l vektori yoyilmasidagi koeffitsientlar yig'indisi nechaga teng?",
+      "v": [
+        "14",
+        "19",
+        "240",
+        "11"
+      ],
+      "t": 1,
+      "izoh": "u, v, w birlik vektorlar bo'lgani uchun har bir bosqichning vektori masofaga teng koeffitsient bilan yoziladi, uchala yo'nalish komplanar bo'lmagani uchun esa yoyilma yagona: 6u + 8v + 5w. Koeffitsientlar 6, 8 va 5 bo'lib, ularning yig'indisi 6 + 8 + 5 = 19. Oxirgi ko'tarilishni hisobga olmaslik 14 ni, koeffitsientlarni ko'paytirib yuborish esa 240 ni beradi. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#cab7c25e"
+    },
+    {
+      "q": "Dehqon Nodir suv quvurining uch bo'lagini ketma-ket ulab tortdi: birinchisi a yo'nalishda 2 birlik, ikkinchisi b yo'nalishda 3 birlik, uchinchisi c yo'nalishda 1 birlik. Bu yerda a, b, c — komplanar bo'lmagan birlik yo'nalish vektorlari. Quvurning boshidan oxirigacha bo'lgan vektorni yoying.",
+      "v": [
+        "2a + 3b − c",
+        "3a + 2b + c",
+        "2a + 3b + c",
+        "2a + b + 3c"
+      ],
+      "t": 2,
+      "izoh": "Bo'laklar ketma-ket ulangani uchun natijaviy vektor ularning yig'indisiga teng. a, b, c birlik vektorlar bo'lgani uchun har bir bo'lakning vektori uzunlik koeffitsienti bilan yoziladi: 2a, 3b va 1c. Yig'indi 2a + 3b + c ko'rinishini oladi. Koeffitsientlar o'rnini almashtirish yoki ishorani buzish tipik xato. Javob: 2a + 3b + c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#bc307bdf"
+    },
+    {
+      "q": "Sanoat robotining qo'li uchta komplanar bo'lmagan o'q bo'ylab harakatlanadi; a, b, c — shu o'qlarning birlik yo'nalish vektorlari. Qo'l a bo'ylab 4 birlik, b bo'ylab −2 birlik, c bo'ylab 3 birlik siljidi. Ko'chish vektorini yoying.",
+      "v": [
+        "4a + 2b + 3c",
+        "4a − 2b − 3c",
+        "2a − 4b + 3c",
+        "4a − 2b + 3c"
+      ],
+      "t": 3,
+      "izoh": "O'qlar komplanar bo'lmagani uchun a, b, c bazis vazifasini bajaradi va ko'chish shu bazisda yagona yoyiladi. Ular birlik vektorlar bo'lgani uchun koeffitsientlar aynan berilgan siljish qiymatlariga teng: 4, −2 va 3. Demak ko'chish vektori 4a − 2b + 3c. Manfiy siljishni musbat deb olish 4a + 2b + 3c xatosini beradi. Javob: 4a − 2b + 3c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-yoyish",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#da17426a"
+    },
+    {
+      "q": "ABCD tetraedrda AB = a, AC = b, AD = c. M nuqta uchun AM = 1/2·a + 1/4·b + 1/4·c bo'lsa, M nuqta BCD tekisligida yotadimi?",
+      "v": [
+        "Ha, chunki koeffitsientlar yig'indisi 1 ga teng",
+        "Yo'q, chunki koeffitsientlar bir xil emas",
+        "Ha, chunki barcha koeffitsientlar musbat",
+        "Yo'q, chunki koeffitsientlar yig'indisi birdan kichik"
+      ],
+      "t": 0,
+      "izoh": "A dan chiquvchi radius vektor xa + yb + zc bilan berilgan nuqta BCD tekisligida yotishi uchun x + y + z = 1 bo'lishi shart, chunki bu tekislik B, C, D nuqtalar orqali o'tadi. Yig'indini hisoblaymiz: 1/2 + 1/4 + 1/4 = 1. Shart bajarildi, demak M nuqta BCD tekisligida yotadi. Koeffitsientlarning musbatligi yoki har xilligi bunda hal qiluvchi emas. Javob: ha, yig'indi 1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekislikka-tegishlilik-tahlili",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#7f4747c7"
+    },
+    {
+      "q": "Tetraedr ABCD da AB = a, AC = b, AD = c va AN = 1/3·a + 1/3·b + 1/2·c. N nuqta BCD tekisligiga tegishlimi?",
+      "v": [
+        "Ha, tegishli bo'ladi",
+        "Yo'q, koeffitsientlar yig'indisi 7/6 ga teng",
+        "Yo'q, koeffitsientlar yig'indisi 5/6 ga teng",
+        "Buni aniqlashning imkoni yo'q"
+      ],
+      "t": 1,
+      "izoh": "Tekislikka tegishlilik sharti koeffitsientlar yig'indisining birga tengligidir. Kasrlarni umumiy maxrajga keltiramiz: 1/3 + 1/3 + 1/2 = 2/6 + 2/6 + 3/6 = 7/6. Bu son 1 dan katta, demak N nuqta BCD tekisligidan tashqarida, A dan uzoqroqda yotadi. Maxrajni noto'g'ri olish 5/6 xatosini beradi. Javob: yo'q, yig'indi 7/6 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekislikka-tegishlilik-tahlili",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#e01589b0"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ parallelepipedda AB = a, AD = b, AA₁ = c. AK = 1/4·a + 1/2·b + n·c vektor bilan aniqlangan K nuqta A₁BD tekisligida yotishi uchun n nechaga teng bo'lishi kerak?",
+      "v": [
+        "n = 1/2",
+        "n = 1",
+        "n = 1/4",
+        "n = 3/4"
+      ],
+      "t": 2,
+      "izoh": "A₁BD tekisligi B, D va A₁ nuqtalar orqali o'tadi, ularning A ga nisbatan radius vektorlari mos ravishda a, b va c. Shuning uchun bu tekislikdagi nuqta uchun koeffitsientlar yig'indisi birga teng bo'lishi shart. Tenglama tuzamiz: 1/4 + 1/2 + n = 1. Bundan n = 1 − 3/4 = 1/4. Javob: n = 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekislikka-tegishlilik-tahlili",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#d5796ea6"
+    },
+    {
+      "q": "Muhandis Gulnora tetraedr konstruksiyasida AB = a, AC = b, AD = c deb oldi. AP = x·a + 2/5·b + 1/5·c bo'lgan P nuqta BCD yog'i tekisligida yotsa, x nechaga teng?",
+      "v": [
+        "x = 1/5",
+        "x = 3/5",
+        "x = 1",
+        "x = 2/5"
+      ],
+      "t": 3,
+      "izoh": "BCD tekisligida yotish sharti koeffitsientlar yig'indisining birga tengligidir. Tenglama tuzamiz: x + 2/5 + 1/5 = 1. Berilgan kasrlarni qo'shamiz: 2/5 + 1/5 = 3/5. Demak x = 1 − 3/5 = 2/5. Ayirishni chalkashtirish x = 3/5 xatosini beradi. Javob: x = 2/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekislikka-tegishlilik-tahlili",
+      "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish#08ab6336"
+    }
+  ]
+}

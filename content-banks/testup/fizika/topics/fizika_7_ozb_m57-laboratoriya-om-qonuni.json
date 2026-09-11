@@ -1,0 +1,396 @@
+{
+  "nom": "57-mavzu. Laboratoriya Om Qonuni",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "57-laboratoriya ishining maqsadi nima?",
+      "v": [
+        "O'tkazgich uchlaridagi kuchlanish va undan o'tayotgan tok kuchini o'lchashni hamda Om qonuniga ko'ra o'tkazgich qarshiligini aniqlashni o'rganish",
+        "Reostat yordamida tok kuchini rostlash",
+        "Rezistor qarshiligini ranglar bo'yicha aniqlash",
+        "O'tkazgichning solishtirma qarshiligini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Ishning maqsadi darslikda shunday ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#b39113ad"
+    },
+    {
+      "q": "Laboratoriya ishi uchun kerakli jihozlar qaysilar?",
+      "v": [
+        "Tok manbai, milliampermetr, voltmetr, rezistor, kalit va ulovchi simlar",
+        "Tok manbai, reostat, ampermetr, rezistor, kalit",
+        "Ommetr, voltmetr, lampochka, kalit",
+        "Tok manbai, dinamometr, rezistor"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar ro'yxati darslikda keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#d6c1c4b1"
+    },
+    {
+      "q": "Laboratoriya ishida tok kuchi qaysi asbob bilan o'lchanadi?",
+      "v": [
+        "Milliampermetr bilan",
+        "Voltmetr bilan",
+        "Ommetr bilan",
+        "Ampermetr bilan"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi milliampermetr yordamida o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#5f39c8ea"
+    },
+    {
+      "q": "Laboratoriya ishida rezistor uchlaridagi kuchlanish qaysi asbob bilan o'lchanadi?",
+      "v": [
+        "Voltmetr bilan",
+        "Milliampermetr bilan",
+        "Ommetr bilan",
+        "Kalit bilan"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish voltmetr yordamida o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#8aba52ab"
+    },
+    {
+      "q": "Laboratoriya jadvalida qaysi kattaliklar yozib boriladi?",
+      "v": [
+        "U (V), I (A), R (Ω) va R_o'rt (Ω)",
+        "Faqat tok kuchi",
+        "Zaryad va vaqt",
+        "Uzunlik va kesim yuzi"
+      ],
+      "t": 0,
+      "izoh": "Jadval: №, U, I, R, R_o'rt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#e856acc0"
+    },
+    {
+      "q": "Zanjir yig'ilganda kalit qanday holatda qoldiriladi?",
+      "v": [
+        "Ochiq",
+        "Yopiq",
+        "Yarim ochiq",
+        "Muhim emas"
+      ],
+      "t": 0,
+      "izoh": "Kalitni ochiq qoldiring, deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#94fa8cda"
+    },
+    {
+      "q": "Birinchi tajribada tok manbaining murvati qanday kuchlanish holatiga qo'yiladi?",
+      "v": [
+        "4 V",
+        "6 V",
+        "8 V",
+        "10 V"
+      ],
+      "t": 0,
+      "izoh": "Dastlab murvat 4 V holatiga qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#816367d1"
+    },
+    {
+      "q": "Ikkinchi tajribada tok manbaining murvati qanday kuchlanish holatiga qo'yiladi?",
+      "v": [
+        "6 V",
+        "4 V",
+        "8 V",
+        "10 V"
+      ],
+      "t": 0,
+      "izoh": "Keyin murvat 6 V holatiga qo'yilib, tajriba takrorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#1518b8d3"
+    },
+    {
+      "q": "Uchinchi va to'rtinchi tajribalarda murvat qanday kuchlanish holatlariga qo'yiladi?",
+      "v": [
+        "8 V va 10 V",
+        "6 V va 12 V",
+        "2 V va 4 V",
+        "10 V va 12 V"
+      ],
+      "t": 0,
+      "izoh": "Murvat 8; 10 V holatiga qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#9bc2ca2f"
+    },
+    {
+      "q": "Har bir tajribada qanday kattaliklar o'lchanadi?",
+      "v": [
+        "Rezistordan o'tayotgan tok kuchi va uning uchlaridagi kuchlanish",
+        "Faqat kuchlanish",
+        "Faqat tok kuchi",
+        "Reostat qarshiligi"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi milliampermetr, kuchlanish voltmetr bilan o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#22e7033d"
+    },
+    {
+      "q": "O'lchovlar orasida kalit bilan nima qilinadi?",
+      "v": [
+        "Kalit uziladi, so'ng murvat o'zgartirilib yana ulanadi",
+        "Kalit doimo ulangan qoldiriladi",
+        "Kalit olib tashlanadi",
+        "Kalit almashtiriladi"
+      ],
+      "t": 0,
+      "izoh": "Har o'lchovdan so'ng kalit uziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#7ac75c5a"
+    },
+    {
+      "q": "O'tkazgichning elektr qarshiligi qanday hisoblanadi?",
+      "v": [
+        "Om qonuniga ko'ra (R = U/I)",
+        "R = I/U formula bilan",
+        "R = U∙I formula bilan",
+        "Ommetr bilan to'g'ridan-to'g'ri"
+      ],
+      "t": 0,
+      "izoh": "6-bosqich: qarshilik Om qonuniga ko'ra hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#14036685"
+    },
+    {
+      "q": "Qarshilikning o'rtacha qiymati qanday hisoblanadi?",
+      "v": [
+        "R_o'rt = (R₁ + R₂ + R₃ + R₄)/4",
+        "R_o'rt = R₁∙R₂∙R₃∙R₄",
+        "R_o'rt = R₁ + R₂ + R₃ + R₄",
+        "R_o'rt = (R₁ − R₄)/2"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi (7) formula.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#041c595f"
+    },
+    {
+      "q": "Laboratoriya ishida jami nechta o'lchov (tajriba) o'tkaziladi?",
+      "v": [
+        "4 ta",
+        "3 ta",
+        "2 ta",
+        "5 ta"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda 4 qator (1–4) bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#e89f4c70"
+    },
+    {
+      "q": "Laboratoriya ishining oxirgi bosqichida nima qilinadi?",
+      "v": [
+        "Natija jadvalga yozilib, xulosa chiqariladi",
+        "Rezistor almashtiriladi",
+        "Tok manbai kuchlanishi 12 V ga oshiriladi",
+        "Grafik chiziladi"
+      ],
+      "t": 0,
+      "izoh": "8-bosqich: natijani jadvalga yozing va xulosa chiqaring.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#54261f0e"
+    },
+    {
+      "q": "Laboratoriya ishida milliampermetr zanjirga qanday ulanadi?",
+      "v": [
+        "Rezistor bilan ketma-ket",
+        "Rezistor bilan parallel",
+        "Tok manbaiga parallel",
+        "Kalit bilan parallel"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchini o'lchovchi asbob ketma-ket ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#40d796dc"
+    },
+    {
+      "q": "Laboratoriya ishida voltmetr zanjirga qanday ulanadi?",
+      "v": [
+        "Rezistor uchlariga parallel",
+        "Ketma-ket",
+        "Kalit bilan ketma-ket",
+        "Tok manbaiga ketma-ket"
+      ],
+      "t": 0,
+      "izoh": "Voltmetr o'lchanadigan qismga parallel ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#7f265952"
+    },
+    {
+      "q": "Kuchlanish 4 V dan 10 V ga oshirilganda tok kuchi qanday o'zgarishi kuzatilishi kerak?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Om qonuniga ko'ra, tok kuchi kuchlanishga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#963e9828"
+    },
+    {
+      "q": "Turli kuchlanishlarda hisoblangan qarshilik qiymatlari qanday bo'lishi kutiladi?",
+      "v": [
+        "Bir-biriga yaqin, chunki berilgan o'tkazgich uchun qarshilik o'zgarmas",
+        "Kuchlanish ortishi bilan ortadi",
+        "Kuchlanish ortishi bilan kamayadi",
+        "Doimo nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Berilgan o'tkazgich uchun U/I nisbati o'zgarmas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#bc6a0c15"
+    },
+    {
+      "q": "Laboratoriya ishida nima uchun o'rtacha qarshilik hisoblanadi?",
+      "v": [
+        "O'lchov natijalarini aniqlashtirish uchun",
+        "Tok manbai kuchlanishini topish uchun",
+        "Sim uzunligini topish uchun",
+        "Kalit qarshiligini topish uchun"
+      ],
+      "t": 0,
+      "izoh": "Bir necha o'lchov o'rtachasi aniqlikni oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#f727047a"
+    },
+    {
+      "q": "Laboratoriya ishida tok kuchi qaysi birlikda o'lchanadi va jadvalga qaysi birlikda yoziladi?",
+      "v": [
+        "Milliampermetr bilan o'lchanadi, jadvalga amperda (A) yoziladi",
+        "Voltlar bilan o'lchanadi",
+        "Faqat milliamperda yoziladi, o'lchanmaydi",
+        "Kulonda yoziladi"
+      ],
+      "t": 0,
+      "izoh": "Tok milliampermetr bilan o'lchanib, jadvalda I, A ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#bc5b33b5"
+    },
+    {
+      "q": "Laboratoriya ishini bajarishdan oldin nima qilish kerak?",
+      "v": [
+        "Jadvalni daftarga chizib olish",
+        "Zanjirni darhol tarmoqqa ulash",
+        "Rezistorni sindirish",
+        "Voltmetrni ketma-ket ulash"
+      ],
+      "t": 0,
+      "izoh": "Oldin jadval daftarga chizib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#48e5f39b"
+    },
+    {
+      "q": "Laboratoriya ishida kuchlanishni o'zgartirish qanday amalga oshiriladi?",
+      "v": [
+        "Tok manbaining iste'molchilarga kuchlanish beruvchi murvatini o'zgartirish orqali",
+        "Reostat surgichini surish orqali",
+        "Rezistorni almashtirish orqali",
+        "Simlarni qisqartirish orqali"
+      ],
+      "t": 0,
+      "izoh": "Murvat 4; 6; 8; 10 V holatlariga qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#188ba280"
+    },
+    {
+      "q": "Laboratoriya ishida o'lchanadigan kattaliklar juftligi qaysi?",
+      "v": [
+        "Kuchlanish va tok kuchi",
+        "Qarshilik va zaryad",
+        "Zaryad va vaqt",
+        "Uzunlik va kesim yuzi"
+      ],
+      "t": 0,
+      "izoh": "U va I o'lchanadi, R hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#f793d218"
+    },
+    {
+      "q": "Ushbu laboratoriya ishi qaysi qonunni o'rganishga bag'ishlangan?",
+      "v": [
+        "Om qonunini",
+        "Kulon qonunini",
+        "Joule-Lents qonunini",
+        "Nyuton qonunini"
+      ],
+      "t": 0,
+      "izoh": "Laboratoriya ishi \"Om qonunini o'rganish\" deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#d31084e6"
+    },
+    {
+      "q": "Tajriba natijalariga ko'ra kuchlanish oshirilganda qarshilik qanday o'zgaradi?",
+      "v": [
+        "O'zgarmaydi, chunki u o'tkazgichning xossasi",
+        "Ortadi",
+        "Kamayadi",
+        "Avval ortib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik berilgan o'tkazgich uchun o'zgarmas kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni#3e2ee6a8"
+    }
+  ]
+}

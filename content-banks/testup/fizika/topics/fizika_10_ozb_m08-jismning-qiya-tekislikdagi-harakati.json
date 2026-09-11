@@ -1,0 +1,501 @@
+{
+  "nom": "08-mavzu. Jismning Qiya Tekislikdagi Harakati",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Qiya tekislik nima?",
+      "v": [
+        "Gorizontalga nisbatan ma'lum burchak ostida joylashgan tekislik",
+        "Faqat vertikal joylashgan tekislik",
+        "Har doim gorizontal joylashgan tekislik",
+        "Faqat silliq shisha sirt"
+      ],
+      "t": 0,
+      "izoh": "Gorizontalga nisbatan ma'lum burchak ostida joylashgan tekislik qiya tekislik deyiladi; darslikda qiyaliklar qiya tekisliklarga misol keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#d35efb02"
+    },
+    {
+      "q": "Qiya tekisliklardan foydalanish nimaga imkon beradi?",
+      "v": [
+        "Jismni vertikal ko'tarishda talab qilinadigan kuchning qiymatini kamaytirishga",
+        "Jism massasini kamaytirishga",
+        "Ishqalanish kuchini butunlay yo'q qilishga",
+        "Jismning og'irlik kuchini oshirishga"
+      ],
+      "t": 0,
+      "izoh": "Qiya tekisliklardan foydalanish vertikal ko'tarishda talab qilinadigan kuchni kamaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#7999b589"
+    },
+    {
+      "q": "Og'irlik kuchining qiya tekislik bo'ylab pastga yo'nalgan tashkil etuvchisi qanday formula bilan topiladi?",
+      "v": [
+        "Fx = mg sin α",
+        "Fx = mg cos α",
+        "Fx = mg tg α",
+        "Fx = mg / sin α"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi (1) formula: Fx = mgsinα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#8975c3ce"
+    },
+    {
+      "q": "Og'irlik kuchining qiya tekislikka tik yo'nalgan tashkil etuvchisi qanday formula bilan aniqlanadi?",
+      "v": [
+        "Fy = mg cos α",
+        "Fy = mg sin α",
+        "Fy = mg tg α",
+        "Fy = μmg"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi (2) formula: Fy = mgcosα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#5231da31"
+    },
+    {
+      "q": "Qiya tekislikdagi jismga sirt tomonidan ta'sir etuvchi normal reaksiya kuchi qanday ifodalanadi?",
+      "v": [
+        "N = mg cos α",
+        "N = mg sin α",
+        "N = μmg",
+        "N = mg tg α"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi (3) formula: N = mgcosα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#260c2b5e"
+    },
+    {
+      "q": "Nyutonning III qonuniga asosan, normal reaksiya kuchi Fy kuchga nisbatan qanday bo'ladi?",
+      "v": [
+        "Son jihatidan teng, yo'nalishi bo'yicha qarama-qarshi",
+        "Son jihatidan katta, yo'nalishi bir xil",
+        "Son jihatidan kichik, yo'nalishi bir xil",
+        "Son jihatidan teng, yo'nalishi bir xil"
+      ],
+      "t": 0,
+      "izoh": "Nyuton III qonuni bo'yicha N va Fy son jihatdan teng, yo'nalishi qarama-qarshi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#a68e7a6d"
+    },
+    {
+      "q": "Jism qiya tekislikda tinch turganda, og'irlik kuchining OX o'qi bo'yicha tashkil etuvchisini qaysi kuch muvozanatlaydi?",
+      "v": [
+        "Tinchlikdagi ishqalanish kuchi",
+        "Normal reaksiya kuchi",
+        "Tashqi kuch",
+        "Sirtning reaksiya kuchi"
+      ],
+      "t": 0,
+      "izoh": "Tinch turganda Ft.i = Fx = mgsinα bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#5b896de2"
+    },
+    {
+      "q": "Tinchlikdagi ishqalanish kuchi qiya tekislikda qanday yo'nalgan bo'ladi?",
+      "v": [
+        "Qiya tekislik bo'ylab yuqoriga",
+        "Qiya tekislik bo'ylab pastga",
+        "Qiya tekislikka tik yo'nalishda",
+        "Vertikal pastga"
+      ],
+      "t": 0,
+      "izoh": "Ft.i qiya tekislik bo'ylab yuqoriga yo'nalgan va Fx ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#bf5575f2"
+    },
+    {
+      "q": "Tinchlikdagi ishqalanish kuchining qiymati qanday formula bilan aniqlanadi?",
+      "v": [
+        "Ft.i = mg sin α",
+        "Ft.i = μmg cos α",
+        "Ft.i = mg cos α",
+        "Ft.i = mg tg α"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi (4) formula: Ft.i = Fx = mgsinα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#15855370"
+    },
+    {
+      "q": "Jism qiya tekislik bo'ylab sirpanayotganda unga ta'sir etuvchi sirpanish ishqalanish kuchi qanday ifodalanadi?",
+      "v": [
+        "Fs.i = μmg cos α",
+        "Fs.i = mg sin α",
+        "Fs.i = μmg sin α",
+        "Fs.i = mg tg α"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi (5) formula: Fs.i = μN = μmgcosα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#41994fee"
+    },
+    {
+      "q": "Qiya tekislikda pastga harakatlanayotgan jismga ta'sir etuvchi kuchlarning teng ta'sir etuvchisi qanday topiladi?",
+      "v": [
+        "F = mg sin α − μmg cos α",
+        "F = mg cos α − μmg sin α",
+        "F = mg sin α + μmg cos α",
+        "F = μmg cos α − mg sin α"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi (6) formula: F = Fx − Fishq = mgsinα − μmgcosα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#b7f661a2"
+    },
+    {
+      "q": "Qiya tekislikda Fx < Ft.i bo'lganda jism qanday holatda bo'ladi?",
+      "v": [
+        "Qiyalikda tinch turadi",
+        "Tezlanish bilan pastga harakatlanadi",
+        "O'zgarmas tezlik bilan pastga harakatlanadi",
+        "Yuqoriga ko'tariladi"
+      ],
+      "t": 0,
+      "izoh": "Fx < Ft.i bo'lganda jism tinch turadi, bunda μ > tgα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#2824d025"
+    },
+    {
+      "q": "Jismning qiya tekislikda tinch turishi uchun μ va tgα orasida qanday munosabat bo'lishi kerak?",
+      "v": [
+        "μ > tg α",
+        "μ < tg α",
+        "μ = 1",
+        "μ = 0"
+      ],
+      "t": 0,
+      "izoh": "Fx < Ft.i holatda μ > tgα bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#8812124a"
+    },
+    {
+      "q": "Fx = Fishq bo'lganda jism qanday harakatlanadi?",
+      "v": [
+        "Tinch turadi yoki o'zgarmas tezlik bilan pastga harakatga keladi",
+        "Tezlanish bilan pastga harakatlanadi",
+        "Tezlanish bilan yuqoriga ko'tariladi",
+        "Aylanma harakat qiladi"
+      ],
+      "t": 0,
+      "izoh": "Fx = Fishq bo'lganda jism tinch turadi yoki tekis harakatlanadi, bunda μ = tgα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#f6095f5c"
+    },
+    {
+      "q": "Jism qiya tekislik bo'ylab o'zgarmas tezlik bilan pastga harakatlanganda μ qanday bo'ladi?",
+      "v": [
+        "μ = tg α",
+        "μ > tg α",
+        "μ < tg α",
+        "μ = 0"
+      ],
+      "t": 0,
+      "izoh": "Fx = Fishq holatda μ = tgα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#6e34adaa"
+    },
+    {
+      "q": "Fx > Fs.i bo'lganda jism qiya tekislikda qanday harakatlanadi?",
+      "v": [
+        "Tezlanish bilan pastga harakatlanadi",
+        "Tinch turadi",
+        "O'zgarmas tezlik bilan pastga harakatlanadi",
+        "Yuqoriga sirpanadi"
+      ],
+      "t": 0,
+      "izoh": "Fx > Fs.i bo'lganda μ < tgα va jism tezlanish bilan pastga harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#e6a67ac9"
+    },
+    {
+      "q": "Jism qiya tekislik bo'ylab tezlanish bilan pastga harakatlanganda uning tezlanishi qanday formula bilan topiladi?",
+      "v": [
+        "a = g(sin α − μ cos α)",
+        "a = g(sin α + μ cos α)",
+        "a = g(cos α − μ sin α)",
+        "a = g tg α"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi (7) formula: a = g(sinα − μcosα).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#cce3dfc1"
+    },
+    {
+      "q": "Jismni qiya tekislik bo'ylab yuqoriga ko'tarish uchun unga qanday kuch qo'yish kerak?",
+      "v": [
+        "Tekislik bo'ylab yuqoriga yo'nalgan tashqi kuch",
+        "Tekislik bo'ylab pastga yo'nalgan kuch",
+        "Vertikal pastga yo'nalgan kuch",
+        "Tekislikka tik yo'nalgan kuch"
+      ],
+      "t": 0,
+      "izoh": "Yuqoriga ko'tarish uchun tekislik bo'ylab yuqoriga yo'nalgan tashqi kuch (Ftash) qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#829a7e65"
+    },
+    {
+      "q": "Jismni qiya tekislik bo'ylab yuqoriga ko'tarayotganda sirpanish ishqalanish kuchi qanday yo'naladi?",
+      "v": [
+        "Jism harakatiga qarama-qarshi, tekislik bo'ylab pastga",
+        "Jism harakati yo'nalishida",
+        "Tekislikka tik yo'nalishda",
+        "Vertikal pastga"
+      ],
+      "t": 0,
+      "izoh": "Yuqoriga ko'tarishda Fs.i harakatga qarama-qarshi yo'naladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#3d52f767"
+    },
+    {
+      "q": "Jism qiya tekislik bo'ylab yuqoriga tinch turishi yoki o'zgarmas tezlik bilan ko'tarilishi uchun tashqi kuch qanday bo'lishi kerak?",
+      "v": [
+        "Ftash = mg(sin α + μ cos α)",
+        "Ftash = mg(sin α − μ cos α)",
+        "Ftash = μmg cos α",
+        "Ftash = mg cos α"
+      ],
+      "t": 0,
+      "izoh": "Teng ta'sir etuvchi kuch nolga teng bo'lsa, Ftash = mg(sinα + μcosα).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#ea6e8398"
+    },
+    {
+      "q": "Ftash > Fx + Fishq bo'lganda jism qiya tekislikda qanday harakatlanadi?",
+      "v": [
+        "Yuqoriga tezlanish bilan ko'tariladi",
+        "Tinch turadi",
+        "Pastga sirpanadi",
+        "O'zgarmas tezlik bilan yuqoriga ko'tariladi"
+      ],
+      "t": 0,
+      "izoh": "Ftash > Fx + Fishq bo'lsa, jism yuqoriga tezlanish bilan ko'tariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#df862232"
+    },
+    {
+      "q": "Qiyalik burchagi α ortsa, og'irlik kuchining qiya tekislik bo'ylab pastga yo'nalgan tashkil etuvchisi qanday o'zgaradi?",
+      "v": [
+        "Ortadi, chunki sin α ortadi",
+        "Kamayadi, chunki sin α kamayadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Fx = mgsinα da α ortishi bilan sinα ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#23459ce6"
+    },
+    {
+      "q": "Qiyalik burchagi α ortsa, og'irlik kuchining tekislikka tik tashkil etuvchisi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi, chunki cos α kamayadi",
+        "Ortadi, chunki cos α ortadi",
+        "O'zgarmaydi",
+        "Ikki baravar ortadi"
+      ],
+      "t": 0,
+      "izoh": "Fy = mgcosα da α ortishi bilan cosα kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#3bdee287"
+    },
+    {
+      "q": "Qiyalik burchagi ortganda sirpanish ishqalanish kuchi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi, chunki normal reaksiya kuchi kamayadi",
+        "Ortadi, chunki ishqalanish koeffitsiyenti ortadi",
+        "O'zgarmaydi",
+        "Avval ortadi, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Fs.i = μmgcosα da α ortishi bilan cosα kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#1b588490"
+    },
+    {
+      "q": "Qiya tekislikka misol keltirilmagan holatni toping.",
+      "v": [
+        "Gorizontal tekis pol",
+        "Xiyobondagi sirpanish uchun yo'lak",
+        "Qiya shosse",
+        "Yuk avtomobilining yuk ortuvchi estakadasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikda yo'lak, qiya shosse va estakada qiya tekislikka misol qilib keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#6196de93"
+    },
+    {
+      "q": "Qiya tekislikda turgan jismga boshqa jismlar ta'sir etmasa, unga qaysi kuchlar ta'sir etadi?",
+      "v": [
+        "Og'irlik kuchi, ishqalanish kuchi va sirtning normal reaksiya kuchi",
+        "Faqat og'irlik kuchi",
+        "Og'irlik kuchi va tashqi tortish kuchi",
+        "Faqat normal reaksiya kuchi"
+      ],
+      "t": 0,
+      "izoh": "Jismga og'irlik, ishqalanish va normal reaksiya kuchlari ta'sir etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#cb52858d"
+    },
+    {
+      "q": "Jismning qiya tekislikdagi tezlanishi uning massasiga qanday bog'liq?",
+      "v": [
+        "Massaga bog'liq emas, chunki a = g(sin α − μ cos α) da massa qisqarib ketadi",
+        "Massaga to'g'ri proporsional",
+        "Massaga teskari proporsional",
+        "Massaning kvadratiga proporsional"
+      ],
+      "t": 0,
+      "izoh": "a = g(sinα − μcosα) formulada m yo'q — tezlanish massaga bog'liq emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#68dbb626"
+    },
+    {
+      "q": "Darslikdagi masalada bola qorli qiya tekislikdan chang'ida tushganda qaysi formula qo'llanilgan?",
+      "v": [
+        "a = g(sin α − μ cos α)",
+        "a = g sin α",
+        "a = μg cos α",
+        "a = g tg α"
+      ],
+      "t": 0,
+      "izoh": "Masala yechish namunasida a = g(sinα − μcosα) ishlatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#0d3995c3"
+    },
+    {
+      "q": "Tinchlikdagi ishqalanish kuchi qanday hollarda jismga ta'sir etadi?",
+      "v": [
+        "Jism qiya tekislikda tinch turgan hollarda",
+        "Jism sirpanayotgan hollarda",
+        "Faqat jism yuqoriga ko'tarilganda",
+        "Faqat tekislik gorizontal bo'lganda"
+      ],
+      "t": 0,
+      "izoh": "Jism tinch turganda Ft.i ta'sir etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#ba5a85c7"
+    },
+    {
+      "q": "Qiya tekislik bo'ylab pastga harakatlanayotgan jismning teng ta'sir etuvchi kuchi nolga teng bo'lsa, jism qanday harakatlanadi?",
+      "v": [
+        "O'zgarmas tezlik bilan",
+        "Tezlanish bilan ortib boruvchi",
+        "Sekinlashuvchi",
+        "Tinch qoladi"
+      ],
+      "t": 0,
+      "izoh": "F = 0 bo'lsa, Fx = Fishq va jism tekis harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#8732e9b3"
+    },
+    {
+      "q": "Jismni qiya tekislik bo'ylab yuqoriga ko'tarishda teng ta'sir etuvchi kuch qanday aniqlanadi?",
+      "v": [
+        "F = Ftash − (Fx + Fishq)",
+        "F = Fx − Fishq",
+        "F = Ftash + Fx + Fishq",
+        "F = Fishq − Fx"
+      ],
+      "t": 0,
+      "izoh": "Yuqoriga harakatda F = Ftash − (Fx + Fishq).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#3af386ae"
+    },
+    {
+      "q": "Qiyalik burchagi 0° ga yaqinlashganda (tekislik gorizontalga) sirpanish ishqalanish kuchi qanday qiymatga yaqinlashadi?",
+      "v": [
+        "μmg ga, chunki cos α → 1",
+        "Nolga, chunki sin α → 0",
+        "mg ga",
+        "Cheksiz katta qiymatga"
+      ],
+      "t": 0,
+      "izoh": "Fs.i = μmgcosα da α = 0° bo'lsa, cosα = 1 va Fs.i = μmg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#5a50a617"
+    },
+    {
+      "q": "Sirpanish ishqalanish koeffitsiyenti μ qanday kattalik?",
+      "v": [
+        "Birliksiz kattalik",
+        "N bilan o'lchanadigan kattalik",
+        "N/m bilan o'lchanadigan kattalik",
+        "kg bilan o'lchanadigan kattalik"
+      ],
+      "t": 0,
+      "izoh": "μ = Fs.i/N nisbat bo'lgani uchun birliksiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati#42df1c20"
+    }
+  ]
+}

@@ -1,0 +1,531 @@
+{
+  "nom": "33-mavzu. Aminlar va aromatik aminlar. Olinishi va xossalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Aminlar deb qanday birikmalarga aytiladi?",
+      "v": [
+        "Ammiakning vodorodlari uglevodorod radikallariga almashinishidan hosil bo'lgan birikmalarga",
+        "Benzol halqasidagi vodorod atomi o'rniga gidroksil guruhi o'rin almashgan birikmalarga",
+        "Karbon kislotalar radikalidagi vodorod aminoguruhga almashgan birikmalarga",
+        "Spirtlardagi gidroksil guruhi galogenga almashgan birikmalarga"
+      ],
+      "t": 0,
+      "izoh": "Aminlar — ammiak vodorodlarining uglevodorod radikallariga almashinishi mahsuli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#4ecf6f89"
+    },
+    {
+      "q": "Ammiak molekulasidagi bitta vodorod atomi radikalga o'rin almashsa qanday amin hosil bo'ladi?",
+      "v": [
+        "Birlamchi amin",
+        "Ikkilamchi amin",
+        "Uchlamchi amin",
+        "Aromatik amin"
+      ],
+      "t": 0,
+      "izoh": "Bitta vodorod almashinsa — birlamchi, ikkita — ikkilamchi, uchta — uchlamchi amin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#196be7fe"
+    },
+    {
+      "q": "CH3-NH2 formulali moddaning nomi nima?",
+      "v": [
+        "Metilamin",
+        "Etilamin",
+        "Dimetilamin",
+        "Anilin"
+      ],
+      "t": 0,
+      "izoh": "CH3-NH2 — metilamin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#1de2c57c"
+    },
+    {
+      "q": "Ratsional nomenklatura bo'yicha aminlarning nomi qanday hosil qilinadi?",
+      "v": [
+        "Radikallar nomiga \"amin\" so'zini qo'shib o'qishdan",
+        "Uglevodorod nomiga \"ol\" qo'shimchasini qo'shib",
+        "Kislota nomiga \"at\" qo'shimchasini qo'shib",
+        "Radikal nomiga \"il\" qo'shimchasini qo'shib"
+      ],
+      "t": 0,
+      "izoh": "Ratsional nomenklaturada radikallar nomiga \"amin\" so'zi qo'shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#203c3fed"
+    },
+    {
+      "q": "Sistematik nomenklatura bo'yicha aminlarni nomlaganda raqamlash qayerdan boshlanadi?",
+      "v": [
+        "Aminoguruh (-NH2) yaqin joylashgan uglerod atomi tomonidan",
+        "Zanjirning istalgan uchidan",
+        "Eng uzun zanjirning o'rtasidan",
+        "Metil guruhi joylashgan uglerod atomi tomonidan"
+      ],
+      "t": 0,
+      "izoh": "Raqamlash aminoguruhga yaqin uglerod atomi tomonidan boshlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#2d686dd7"
+    },
+    {
+      "q": "(CH3)3N moddaning nomi nima?",
+      "v": [
+        "Trimetilamin",
+        "Dimetilamin",
+        "Metiletilamin",
+        "Trietilamin"
+      ],
+      "t": 0,
+      "izoh": "Uchta metil radikali tutgan uchlamchi amin — trimetilamin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#dc42645a"
+    },
+    {
+      "q": "Bir xil radikalli simmetrik ikkilamchi va uchlamchi aminlarni nomlaganda qanday prefikslar qo'shiladi?",
+      "v": [
+        "di-, tri-",
+        "bi-, ter-",
+        "mono-, di-",
+        "izo-, neo-"
+      ],
+      "t": 0,
+      "izoh": "Masalan, HN(C2H5)2-dietilamin, (CH3)3N-trimetilamin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#5f734a5b"
+    },
+    {
+      "q": "Aminlarda qanday izomeriya turlari kuzatiladi?",
+      "v": [
+        "Uglevodorod zanjirining struktur izomeriyasi va aminoguruhning holat izomeriyasi",
+        "Geometrik izomeriya va optik izomeriya",
+        "Faqat funktsional guruhlararo izomeriya",
+        "Faqat holat izomeriyasi"
+      ],
+      "t": 0,
+      "izoh": "Aminlarda zanjir struktur izomeriyasi va aminoguruh holat izomeriyasi uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m33-aminlar#c3cc2f73"
+    },
+    {
+      "q": "C4H9NH2 ning nechta birlamchi amin izomeri mavjud?",
+      "v": [
+        "4 ta",
+        "2 ta",
+        "3 ta",
+        "5 ta"
+      ],
+      "t": 0,
+      "izoh": "1-aminobutan, 2-aminobutan, 1-amino-2-metilpropan, 2-amino-2-metilpropan — 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m33-aminlar#c2cd5058"
+    },
+    {
+      "q": "CH3-CH(NH2)-CH2-CH3 moddaning nomi nima?",
+      "v": [
+        "2-aminobutan",
+        "1-aminobutan",
+        "2-amino-2-metilpropan",
+        "1-amino-2-metilpropan"
+      ],
+      "t": 0,
+      "izoh": "Aminoguruh ikkinchi uglerodda — 2-aminobutan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m33-aminlar#61835a53"
+    },
+    {
+      "q": "Nitrobirikmalarni qaytarish orqali aminlarni olishda reaksiya qanday sharoitda olib boriladi?",
+      "v": [
+        "Vodorod atomlari bilan katalizator ishtirokida",
+        "Kislorod bilan qizdirilganda",
+        "Xlor bilan yorug'likda",
+        "Ishqor bilan suvli eritmada"
+      ],
+      "t": 0,
+      "izoh": "C2H5NO2 + 3H2 -> C2H5NH2 + 2H2O (katalizator ishtirokida).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m33-aminlar#ebef7245"
+    },
+    {
+      "q": "C2H5NO2 + 3H2 -> C2H5NH2 + 2H2O reaksiyasida nitroetandan qanday modda hosil bo'ladi?",
+      "v": [
+        "Etilamin",
+        "Metilamin",
+        "Anilin",
+        "Dimetilamin"
+      ],
+      "t": 0,
+      "izoh": "Nitroetan qaytarilganda etilamin hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#69c92912"
+    },
+    {
+      "q": "Aminlarning dastlabki vakillari — metilamin, dimetilamin va trimetilamin qanday agregat holatda bo'ladi?",
+      "v": [
+        "Gaz",
+        "Suyuqlik",
+        "Qattiq",
+        "Plazma"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki vakillar gaz, qolganlari suyuqlik, yuqori molekulalilar qattiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#e36125af"
+    },
+    {
+      "q": "Aminlarga kislotalar ta'sir ettirilganda nima hosil bo'ladi?",
+      "v": [
+        "Tuzlar",
+        "Efirlar",
+        "Aldegidlar",
+        "Alkenlar"
+      ],
+      "t": 0,
+      "izoh": "Aminlar kislotalar bilan tuzlar hosil qiladi (ammoniy tuzlari).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#5754596c"
+    },
+    {
+      "q": "CH3NH2 + HCl reaksiyasida hosil bo'lgan tuzning nomi nima?",
+      "v": [
+        "Metilammoniy xlorid",
+        "Metilamin xlorid",
+        "Ammoniy xlorid",
+        "Etilammoniy xlorid"
+      ],
+      "t": 0,
+      "izoh": "CH3NH2•HCl — metilammoniy xlorid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#e882b918"
+    },
+    {
+      "q": "Aminlar kislota bilan reaksiyada musbat zaryadli ammoniy ionini qanday hosil qiladi?",
+      "v": [
+        "Vodorod ioni azot atomidagi bir juft erkin elektronlarga birikadi",
+        "Azot atomi elektronini vodorod ioniga beradi",
+        "Kislota qoldig'i azotga kovalent bog'lanadi",
+        "Amin suv bilan gidrolizlanadi"
+      ],
+      "t": 0,
+      "izoh": "H+ azotning bo'lmagan elektron juftiga birikib ammoniy ionini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m33-aminlar#975ca1f4"
+    },
+    {
+      "q": "4CH3NH2 + 9O2 -> 4CO2 + 10H2O + 2N2 reaksiyasi aminlarning qaysi xossasini ko'rsatadi?",
+      "v": [
+        "Havoda yonishini",
+        "Kislota bilan reaksiyasini",
+        "Suv bilan gidrolizini",
+        "Gologenlanishini"
+      ],
+      "t": 0,
+      "izoh": "Aminlar havoda yonib CO2, H2O va N2 hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#7f883cb1"
+    },
+    {
+      "q": "Aminlar yonganda CO2 va H2O dan tashqari qanday molekula hosil bo'ladi?",
+      "v": [
+        "N2",
+        "NO2",
+        "NH3",
+        "O2"
+      ],
+      "t": 0,
+      "izoh": "Yonish mahsulotlari: CO2, H2O va N2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#5697dca2"
+    },
+    {
+      "q": "Aromatik aminlar deb qanday moddalarga aytiladi?",
+      "v": [
+        "Benzol halqasidagi vodorod atomi o'rniga aminoguruh yoki ammiakdagi vodorod atomlari o'rniga fenil (C6H5) o'rin almashgan moddalarga",
+        "Benzol halqasiga gidroksil guruhi birikkan moddalarga",
+        "Benzol halqasiga karboksil guruhi birikkan moddalarga",
+        "Faqat alifatik zanjirli aminlarga"
+      ],
+      "t": 0,
+      "izoh": "Aromatik aminlar — benzol halqasiga aminoguruh yoki fenil radikali birikkan moddalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#4a80b7f2"
+    },
+    {
+      "q": "Fenilaminning boshqa nomi nima?",
+      "v": [
+        "Anilin",
+        "Fenol",
+        "Toluol",
+        "Glitsin"
+      ],
+      "t": 0,
+      "izoh": "Fenilamin (C6H5NH2) anilin deb ham ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#f2ef9cff"
+    },
+    {
+      "q": "Ammiak molekulasidagi vodorod atomlari fenil radikallarga o'rin almashganda hosil bo'ladigan birlamchi aromatik amin qaysi?",
+      "v": [
+        "Fenilamin (anilin)",
+        "Difenilamin",
+        "Trifenilamin",
+        "Metilfenilamin"
+      ],
+      "t": 0,
+      "izoh": "Bitta fenil biriksa — fenilamin, ikkita — difenilamin, uchta — trifenilamin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#1c385ea4"
+    },
+    {
+      "q": "Nitrobirikmalarni qaytarish bilan aromatik aminlarni olish usulini birinchi bo'lib amalga oshirgan olim kim?",
+      "v": [
+        "N.N.Zinin",
+        "A.M.Butlerov",
+        "D.I.Mendeleyev",
+        "S.V.Lebedev"
+      ],
+      "t": 0,
+      "izoh": "Bu usulni rus olimi N.N.Zinin amalga oshirgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#1d00a367"
+    },
+    {
+      "q": "Nitrobenzolni qaytarish reaksiyasida qanday mahsulot hosil bo'ladi?",
+      "v": [
+        "Anilin",
+        "Fenol",
+        "Benzol",
+        "Toluol"
+      ],
+      "t": 0,
+      "izoh": "Nitrobenzol + 3H2 -> anilin + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#16c1f4b9"
+    },
+    {
+      "q": "Nitrobenzolni anilinga qaytarishda 1 mol nitrobenzolga necha mol vodorod sarflanadi?",
+      "v": [
+        "3 mol",
+        "1 mol",
+        "2 mol",
+        "4 mol"
+      ],
+      "t": 0,
+      "izoh": "Reaksiya tenglamasida nitrobenzolga 3H2 ta'sir etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m33-aminlar#e13ab985"
+    },
+    {
+      "q": "Kichik molekulali aromatik aminlarning agregat holati qanday?",
+      "v": [
+        "Suyuq",
+        "Gaz",
+        "Qattiq",
+        "Kolloid"
+      ],
+      "t": 0,
+      "izoh": "Kichik molekulali aromatik aminlar suyuq, yuqori molekulalilar qattiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#2691fca2"
+    },
+    {
+      "q": "Aromatik aminlarning ko'pchiligi suvda qanday eriydi?",
+      "v": [
+        "Yomon eriydi",
+        "Juda yaxshi eriydi",
+        "Suv bilan kimyoviy reaksiyaga kirishadi",
+        "Suvda cheksiz aralashadi"
+      ],
+      "t": 0,
+      "izoh": "Aromatik aminlar qo'lansa hidga ega va suvda yomon eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#c6dd6a58"
+    },
+    {
+      "q": "Aromatik aminlarning kimyoviy xossalari nimani o'z ichiga oladi?",
+      "v": [
+        "Molekuladagi aminoguruh bilan benzol halqasining xossalarini",
+        "Faqat aminoguruh xossalarini",
+        "Faqat benzol halqasi xossalarini",
+        "Karbon kislotalar xossalarini"
+      ],
+      "t": 0,
+      "izoh": "Aromatik aminlar aminoguruh va benzol halqasi xossalarini birlashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#78626640"
+    },
+    {
+      "q": "Anilinga bromli suv ta'sir ettirilganda qanday cho'kma hosil bo'ladi?",
+      "v": [
+        "Tribromanilin",
+        "Monobromanilin",
+        "Dibromanilin",
+        "Brombenzol"
+      ],
+      "t": 0,
+      "izoh": "Anilin + 3Br2 -> tribromanilin cho'kmasi + 3HBr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m33-aminlar#625da208"
+    },
+    {
+      "q": "Anilinni to'liq bromlashda 1 mol anilinga necha mol brom sarflanadi?",
+      "v": [
+        "3 mol",
+        "1 mol",
+        "2 mol",
+        "4 mol"
+      ],
+      "t": 0,
+      "izoh": "Anilin 3Br2 bilan reaksiyaga kirishib tribromanilin hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m33-aminlar#06f4aa90"
+    },
+    {
+      "q": "Anilning bromli suv bilan reaksiyasi benzolnikidan nimasi bilan farq qiladi?",
+      "v": [
+        "Anilin bromli suv bilan reaksiyaga kirishadi, benzol esa ta'sirlashmaydi",
+        "Benzol tezroq reaksiyaga kirishadi",
+        "Ikkalasi ham bir xil tezlikda reaksiyaga kirishadi",
+        "Anilin faqat katalizator bilan reaksiyaga kirishadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikda benzol bromli suv bilan ta'sirlashmaydi, anilin esa cho'kma beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m33-aminlar#9b394a91"
+    },
+    {
+      "q": "Anilinga xlorid kislota ta'sir ettirilganda qanday modda hosil bo'ladi?",
+      "v": [
+        "Fenil ammoniy xlorid tuzi",
+        "Xlorbenzol",
+        "Nitrobenzol",
+        "Difenilamin"
+      ],
+      "t": 0,
+      "izoh": "Anilin + HCl -> fenil ammoniy xlorid tuzi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#71c2903a"
+    },
+    {
+      "q": "Anilin asosan qaysi sohada ishlatiladi?",
+      "v": [
+        "Bo'yoq sanoatida",
+        "Oziq-ovqat sanoatida",
+        "Metallurgiyada",
+        "Qog'oz sanoatida"
+      ],
+      "t": 0,
+      "izoh": "Anilin asosan bo'yoq sanoatida ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#7e1efc06"
+    },
+    {
+      "q": "Anilinga oksidlovchilar ta'sir etganda qanday rangli anilin hosil bo'ladi?",
+      "v": [
+        "Qora anilin",
+        "Qizil anilin",
+        "Ko'k anilin",
+        "Sariq anilin"
+      ],
+      "t": 0,
+      "izoh": "Oksidlovchilar ta'sirida turli rangdagi moddalar, masalan, qora anilin hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#0efe1dff"
+    },
+    {
+      "q": "Anilin ko'pchilik dori moddalarni sintez qilish uchun nima hisoblanadi?",
+      "v": [
+        "Dastlabki xomashyo",
+        "Katalizator",
+        "Erituvchi",
+        "Indikator"
+      ],
+      "t": 0,
+      "izoh": "Anilin ko'pchilik dori moddalar sintezi uchun dastlabki xomashyo.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m33-aminlar#4d5eee94"
+    },
+    {
+      "q": "NH guruhi tutgan modda qanday amin deb ataladi?",
+      "v": [
+        "Ikkilamchi amin",
+        "Birlamchi amin",
+        "Uchlamchi amin",
+        "Aromatik amin"
+      ],
+      "t": 0,
+      "izoh": "Azotga ikkita radikal birikkan (NH guruhli) amin — ikkilamchi amin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m33-aminlar#88324bd5"
+    }
+  ]
+}

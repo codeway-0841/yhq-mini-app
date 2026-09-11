@@ -1,0 +1,1609 @@
+{
+  "nom": "Arifmetik progressiya",
+  "bolim": "Ketma-ketliklar va progressiyalar",
+  "blok": "prog",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Arifmetik progressiyada a₁ = 7 va ayirma d = 4 ga teng. Shu progressiyaning 15-hadini hisoblang.",
+      "v": [
+        "67",
+        "63",
+        "56",
+        "59"
+      ],
+      "t": 1,
+      "izoh": "Umumiy had formulasi: aₙ = a₁ + (n − 1)d. Bu yerda n = 15, demak a₁₅ = 7 + 14·4. Avval 14·4 = 56, so'ng 7 + 56 = 63. Agar (n − 1) o'rniga n olinsa, xato 67 chiqadi. Javob: 63.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "n-hadni-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#2f282e67"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi −12, ayirmasi esa 5 ga teng bo'lsa, uning 20-hadi qanday songa teng bo'ladi?",
+      "v": [
+        "88",
+        "95",
+        "83",
+        "−107"
+      ],
+      "t": 2,
+      "izoh": "aₙ = a₁ + (n − 1)d formulasiga n = 20 ni qo'yamiz: a₂₀ = −12 + 19·5. Avval 19·5 = 95, keyin −12 + 95 = 83. 95 varianti birinchi hadni qo'shishni unutgan o'quvchining javobi, 88 esa 19 o'rniga 20 ni olganning natijasi. Javob: 83.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "n-hadni-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#5495ac6d"
+    },
+    {
+      "q": "Kamayuvchi arifmetik progressiyada a₁ = 45 va d = −6. Progressiyaning 12-hadini toping va javobni belgilang.",
+      "v": [
+        "−27",
+        "21",
+        "−21",
+        "111"
+      ],
+      "t": 2,
+      "izoh": "a₁₂ = a₁ + 11d bo'ladi, ya'ni 45 + 11·(−6). Ko'paytmani hisoblaymiz: 11·6 = 66, demak a₁₂ = 45 − 66 = −21. Ishorani e'tiborsiz qoldirgan o'quvchi 111 ni, qadamlar sonini 12 deb olgan esa −27 ni oladi. Javob: −21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "n-hadni-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#a4ee7bda"
+    },
+    {
+      "q": "Toshkentdagi ustaxona birinchi kuni 120 ta stul yig'di va har kuni ishlab chiqarishni 15 taga oshirib bordi. To'qqizinchi kuni nechta stul yig'iladi?",
+      "v": [
+        "240 ta",
+        "225 ta",
+        "255 ta",
+        "135 ta"
+      ],
+      "t": 0,
+      "izoh": "Kunlik ishlab chiqarish arifmetik progressiya hosil qiladi: a₁ = 120, d = 15. To'qqizinchi kun uchun a₉ = 120 + 8·15 = 120 + 120 = 240 ta. 8 o'rniga 9 ta qadam olgan o'quvchi 255 ta, bitta kam qadam olgan esa 225 ta oladi. Javob: 240 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-hadni-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#90070e5d"
+    },
+    {
+      "q": "Arifmetik progressiyaning boshlang'ich hadi 3 ga, ayirmasi 7 ga teng. Uning o'ttizinchi hadi nechaga teng bo'ladi?",
+      "v": [
+        "213",
+        "203",
+        "199",
+        "206"
+      ],
+      "t": 3,
+      "izoh": "a₃₀ = a₁ + 29d ekanini yodda tutamiz. Demak a₃₀ = 3 + 29·7 = 3 + 203 = 206. 203 varianti birinchi hadni qo'shmagan o'quvchining natijasi, 213 esa 29 o'rniga 30 ta qadam olganning javobi. Javob: 206.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "n-hadni-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#1950cc63"
+    },
+    {
+      "q": "Arifmetik progressiyaning beshinchi hadi 23 ga, to'qqizinchi hadi esa 43 ga teng. Progressiyaning ayirmasini toping.",
+      "v": [
+        "4",
+        "5",
+        "20",
+        "2,5"
+      ],
+      "t": 1,
+      "izoh": "Ikki had orasida 9 − 5 = 4 ta qadam bor, shuning uchun a₉ − a₅ = 4d. Demak 43 − 23 = 4d, ya'ni 20 = 4d va d = 5. 20 varianti bo'lishni bajarmagan, 4 varianti esa 20 ni 5 ga bo'lgan o'quvchining javobi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirmani-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#492f70e0"
+    },
+    {
+      "q": "Bir arifmetik progressiyada uchinchi had 17 ga, o'n birinchi had 65 ga teng ekani ma'lum. Ayirma d nechaga teng?",
+      "v": [
+        "8",
+        "48",
+        "4",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Indekslar farqi 11 − 3 = 8 ta qadamni bildiradi. Shunga ko'ra 65 − 17 = 8d, ya'ni 48 = 8d va d = 6. 48 varianti bo'lishni tashlab ketgan, 8 varianti esa 48 ni 6 ga bo'lgan o'quvchining xatosi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirmani-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#94483c0d"
+    },
+    {
+      "q": "Anvar har hafta yechgan masalalari sonini bir xil miqdorga oshirib boradi. Ikkinchi haftada 9 ta, oltinchi haftada 25 ta masala yechgan bo'lsa, haftalik o'sish qancha?",
+      "v": [
+        "16 ta",
+        "8 ta",
+        "4 ta",
+        "2 ta"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi haftadan oltinchi haftagacha 6 − 2 = 4 ta qadam o'tadi. Yechilgan masalalar farqi esa 25 − 9 = 16 ta. Demak 4d = 16 va d = 4 ta. 16 ta varianti qadamlar soniga bo'lishni unutgan, 8 ta varianti esa 16 ni 2 ga bo'lgan javob. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirmani-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#ec482c74"
+    },
+    {
+      "q": "Arifmetik progressiyada birinchi had 8 ga, o'ninchi had esa −19 ga teng. Shu progressiyaning ayirmasi qanday son bo'ladi?",
+      "v": [
+        "3",
+        "−2,7",
+        "−3",
+        "−27"
+      ],
+      "t": 2,
+      "izoh": "a₁₀ = a₁ + 9d formulasidan −19 = 8 + 9d kelib chiqadi. Bundan 9d = −27 va d = −3. Progressiya kamayuvchi bo'lgani uchun ayirma manfiy bo'lishi shart. −27 varianti 9 ga bo'lishni unutgan, −2,7 esa 9 o'rniga 10 ga bo'lgan javob. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirmani-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#0cea6359"
+    },
+    {
+      "q": "Arifmetik progressiyaning to'rtinchi hadi 19 ga, o'n ikkinchi hadi 75 ga teng bo'lsa, uning ayirmasini aniqlang.",
+      "v": [
+        "8",
+        "7",
+        "56",
+        "14"
+      ],
+      "t": 1,
+      "izoh": "12 − 4 = 8 ta qadam mavjud, hadlar farqi esa 75 − 19 = 56. Demak 8d = 56 va d = 7. 14 varianti 56 ni 4 ga bo'lgan, 56 varianti esa umuman bo'lmagan o'quvchining natijasi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirmani-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#f9d0075c"
+    },
+    {
+      "q": "Arifmetik progressiyaning o'ninchi hadi 48 ga, ayirmasi 5 ga teng. Shu progressiyaning birinchi hadini toping.",
+      "v": [
+        "−2",
+        "3",
+        "8",
+        "93"
+      ],
+      "t": 1,
+      "izoh": "a₁₀ = a₁ + 9d tenglikdan a₁ = 48 − 9·5 = 48 − 45 = 3 kelib chiqadi. 9 o'rniga 10 ta qadam olgan o'quvchi 48 − 50 = −2 ni oladi. 93 varianti esa ayirish o'rniga qo'shish xatosidan chiqadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birinchi-hadni-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#9757f2bd"
+    },
+    {
+      "q": "Kamayuvchi arifmetik progressiyada yettinchi had −4 ga, ayirma −3 ga teng bo'lsa, birinchi had qanday bo'ladi?",
+      "v": [
+        "14",
+        "17",
+        "−22",
+        "11"
+      ],
+      "t": 0,
+      "izoh": "a₇ = a₁ + 6d bo'lgani uchun −4 = a₁ + 6·(−3), ya'ni −4 = a₁ − 18. Bundan a₁ = −4 + 18 = 14. 17 varianti 6 o'rniga 7 ta qadam olganning javobi, −22 esa 18 ni qo'shish o'rniga ayirgan javob. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birinchi-hadni-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#e69d279c"
+    },
+    {
+      "q": "Sardor har oy bir xil miqdorda ko'proq pul jamg'aradi. Oltinchi oyda u 380 000 so'm, har oylik o'sish esa 40 000 so'm bo'lsa, birinchi oyda qancha jamg'argan?",
+      "v": [
+        "220 000 so'm",
+        "140 000 so'm",
+        "180 000 so'm",
+        "580 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Oylik jamg'armalar arifmetik progressiya bo'lib, a₆ = a₁ + 5d munosabat o'rinli. Demak a₁ = 380 000 − 5·40 000 = 380 000 − 200 000 = 180 000 so'm. 5 o'rniga 6 ta qadam olgan o'quvchi 140 000 so'mni, 4 ta qadam olgan esa 220 000 so'mni oladi. Javob: 180 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birinchi-hadni-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#e8d14ca5"
+    },
+    {
+      "q": "Bir arifmetik progressiyada o'n beshinchi had aynan 100 ga teng, ayirmasi esa 7 ga teng. Birinchi hadni aniqlang.",
+      "v": [
+        "9",
+        "−5",
+        "198",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "a₁₅ = a₁ + 14d formulasiga qiymatlarni qo'yamiz: 100 = a₁ + 14·7 = a₁ + 98. Demak a₁ = 100 − 98 = 2. 14 o'rniga 13 ta qadam olgan o'quvchi 9 ni, 15 ta qadam olgan esa −5 ni oladi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birinchi-hadni-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#60c340d2"
+    },
+    {
+      "q": "Arifmetik progressiyaning yigirmanchi hadi 3 ga, ayirmasi −4 ga teng. Progressiyaning birinchi hadi nechaga teng bo'ladi?",
+      "v": [
+        "83",
+        "79",
+        "75",
+        "−73"
+      ],
+      "t": 1,
+      "izoh": "a₂₀ = a₁ + 19d dan 3 = a₁ + 19·(−4), ya'ni 3 = a₁ − 76 kelib chiqadi. Demak a₁ = 3 + 76 = 79. 19 o'rniga 20 ta qadam olgan o'quvchi 83 ni, ishorani chalkashtirgan esa −73 ni oladi. Javob: 79.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birinchi-hadni-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#a2f51803"
+    },
+    {
+      "q": "Arifmetik progressiyada birinchi had 4 ga, ayirma 7 ga teng. 116 soni shu progressiyaning nechanchi hadi bo'ladi?",
+      "v": [
+        "16",
+        "17",
+        "18",
+        "112"
+      ],
+      "t": 1,
+      "izoh": "116 = 4 + (n − 1)·7 tenglamani tuzamiz. Undan (n − 1)·7 = 112, ya'ni n − 1 = 16 va n = 17. 16 varianti oxirida bittani qo'shishni unutgan javob, 112 esa ayirmaga bo'lishni bajarmagan javob. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "had-nomerini-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#70766562"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi −8, ayirmasi 3 ga teng bo'lsa, 61 soni bu progressiyada nechanchi o'rinda turadi?",
+      "v": [
+        "23",
+        "25",
+        "24",
+        "69"
+      ],
+      "t": 2,
+      "izoh": "61 = −8 + (n − 1)·3 tenglikni yozamiz. Chap tomonni ko'chirsak (n − 1)·3 = 69, ya'ni n − 1 = 23 va n = 24. 23 varianti n − 1 ni javob deb olgan, 69 esa 3 ga bo'lmagan o'quvchining xatosi. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "had-nomerini-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#b9a50b38"
+    },
+    {
+      "q": "Stadionning birinchi qatorida 24 ta o'rindiq bor va har bir keyingi qatorda oldingisiga qaraganda 6 tadan ortiq o'rindiq joylashgan. 90 ta o'rindiqli qator nechanchi bo'ladi?",
+      "v": [
+        "11",
+        "15",
+        "12",
+        "13"
+      ],
+      "t": 2,
+      "izoh": "Qatorlardagi o'rindiqlar soni arifmetik progressiya: a₁ = 24, d = 6. 90 = 24 + (n − 1)·6 dan (n − 1)·6 = 66, ya'ni n − 1 = 11 va n = 12. 15 varianti 90 ni 6 ga bo'lgan, 11 varianti esa qadamlar sonini qator raqami deb olgan javob. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "had-nomerini-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#894c843b"
+    },
+    {
+      "q": "Kamayuvchi arifmetik progressiyaning birinchi hadi 95 ga, ayirmasi −4 ga teng. 15 soni shu progressiyaning nechanchi hadi ekanini aniqlang.",
+      "v": [
+        "21",
+        "20",
+        "22",
+        "80"
+      ],
+      "t": 0,
+      "izoh": "15 = 95 + (n − 1)·(−4) tenglamani yozamiz. Bundan (n − 1)·4 = 80, ya'ni n − 1 = 20 va n = 21. 20 varianti bittani qo'shmagan javob, 80 esa 4 ga bo'lishni tashlab ketgan javob. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "had-nomerini-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#4e9369a7"
+    },
+    {
+      "q": "Arifmetik progressiyaning uchinchi hadi 11 ga, yettinchi hadi 27 ga teng. 91 soni shu progressiyaning nechanchi hadi bo'ladi?",
+      "v": [
+        "22",
+        "24",
+        "21",
+        "23"
+      ],
+      "t": 3,
+      "izoh": "Avval ayirmani topamiz: 27 − 11 = 4d, demak d = 4. Keyin a₁ = 11 − 2·4 = 3 bo'ladi. Endi 91 = 3 + (n − 1)·4 dan n − 1 = 22 va n = 23. 21 varianti uchinchi hadni birinchi had deb olganning xatosi. Javob: 23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "had-nomerini-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#48079e60"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi 5 ga, ayirmasi 3 ga teng. Uning umumiy had formulasini to'g'ri ifodalagan variantni tanlang.",
+      "v": [
+        "aₙ = 3n + 5",
+        "aₙ = 3n + 2",
+        "aₙ = 5n + 3",
+        "aₙ = 3n − 2"
+      ],
+      "t": 1,
+      "izoh": "aₙ = a₁ + (n − 1)d formulasiga qo'yamiz: aₙ = 5 + (n − 1)·3 = 5 + 3n − 3 = 3n + 2. Tekshiramiz: n = 1 da 3 + 2 = 5, ya'ni birinchi had to'g'ri chiqdi. 3n + 5 varianti qavs ochilganda hosil bo'ladigan −3 ni yo'qotgan javob. Javob: aₙ = 3n + 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-had-formulasini-tuzish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#525bc334"
+    },
+    {
+      "q": "Birinchi hadi −2, ayirmasi 6 ga teng bo'lgan arifmetik progressiyaning n-hadi qaysi formula bilan hisoblanadi?",
+      "v": [
+        "aₙ = 6n − 2",
+        "aₙ = 6n + 8",
+        "aₙ = 6n − 8",
+        "aₙ = −2n + 6"
+      ],
+      "t": 2,
+      "izoh": "aₙ = a₁ + (n − 1)d ni qo'llaymiz: aₙ = −2 + (n − 1)·6 = −2 + 6n − 6 = 6n − 8. Formulani tekshirish uchun n = 1 ni qo'yamiz: 6 − 8 = −2, ya'ni birinchi had mos keldi. 6n − 2 varianti qavsdagi −6 ni hisobga olmagan javob. Javob: aₙ = 6n − 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-had-formulasini-tuzish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#06bfbc9d"
+    },
+    {
+      "q": "Har qadamda 4 birlikka kamayadigan arifmetik progressiyaning birinchi hadi 20 ga teng. Umumiy had formulasi qanday ko'rinishga ega bo'ladi?",
+      "v": [
+        "aₙ = 20 − 4n",
+        "aₙ = 4n − 24",
+        "aₙ = 16 − 4n",
+        "aₙ = 24 − 4n"
+      ],
+      "t": 3,
+      "izoh": "Kamayish ayirmaning manfiy ekanini bildiradi, ya'ni d = −4. U holda aₙ = 20 + (n − 1)·(−4) = 20 − 4n + 4 = 24 − 4n. n = 1 uchun 24 − 4 = 20 chiqadi. 20 − 4n varianti qavs ochilganda paydo bo'ladigan +4 ni tushirib qoldirgan javob. Javob: aₙ = 24 − 4n.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-had-formulasini-tuzish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#8acee242"
+    },
+    {
+      "q": "Kutubxonachi Nilufar birinchi javonga 18 ta kitob qo'ydi va har keyingi javonga oldingisidan 5 tadan ortiq qo'ydi. n-javondagi kitoblar soni qanday topiladi?",
+      "v": [
+        "aₙ = 5n + 13",
+        "aₙ = 5n + 18",
+        "aₙ = 18n + 5",
+        "aₙ = 5n − 13"
+      ],
+      "t": 0,
+      "izoh": "Javonlardagi kitoblar soni arifmetik progressiya hosil qiladi: a₁ = 18, d = 5. Demak aₙ = 18 + (n − 1)·5 = 18 + 5n − 5 = 5n + 13. n = 1 da 5 + 13 = 18 chiqishi javobni tasdiqlaydi. 5n + 18 varianti birinchi javonni ham qadam deb hisoblaydi. Javob: aₙ = 5n + 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-had-formulasini-tuzish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#d4d52cad"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi ham, ayirmasi ham 9 ga teng. Bunday progressiyaning umumiy had formulasi qaysi biri bo'ladi?",
+      "v": [
+        "aₙ = 9n − 9",
+        "aₙ = 9n",
+        "aₙ = 9n + 9",
+        "aₙ = 9n − 1"
+      ],
+      "t": 1,
+      "izoh": "aₙ = 9 + (n − 1)·9 = 9 + 9n − 9 = 9n. Ya'ni progressiya 9 ning karralilaridan iborat: 9, 18, 27, 36 va hokazo. 9n − 9 varianti birinchi hadni qo'shishni unutgan javob, 9n + 9 esa bitta ortiqcha qadam qo'shgan javob. Javob: aₙ = 9n.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-had-formulasini-tuzish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#cd2caedc"
+    },
+    {
+      "q": "Ketma-ketlik aₙ = 7n − 3 formula bilan berilgan. Bu arifmetik progressiyaning ayirmasi nechaga teng bo'ladi?",
+      "v": [
+        "4",
+        "−3",
+        "7",
+        "11"
+      ],
+      "t": 2,
+      "izoh": "Ayirma d = aₙ₊₁ − aₙ ga teng. Hisoblaymiz: (7(n + 1) − 3) − (7n − 3) = 7n + 7 − 3 − 7n + 3 = 7. Umuman, aₙ = dn + b ko'rinishida n oldidagi koeffitsient ayirmani beradi. 4 varianti birinchi had qiymati, −3 esa ozod had. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formuladan-progressiyani-oqish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#5f9081bf"
+    },
+    {
+      "q": "aₙ = 6n + 5 formula bilan berilgan arifmetik progressiyaning birinchi hadi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "5",
+        "6",
+        "17",
+        "11"
+      ],
+      "t": 3,
+      "izoh": "Birinchi hadni topish uchun formulaga n = 1 ni qo'yamiz: a₁ = 6·1 + 5 = 11. 5 varianti ozod hadni birinchi had deb olgan xato, 6 varianti esa ayirmani ko'rsatadi. 17 esa ikkinchi had qiymati, chunki a₂ = 12 + 5. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formuladan-progressiyani-oqish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#4ca9ead1"
+    },
+    {
+      "q": "Arifmetik progressiya aₙ = 42 − 6n formula bilan berilgan. Progressiya haqida quyidagi qaysi tasdiq to'g'ri bo'ladi?",
+      "v": [
+        "Progressiya o'suvchi, ayirmasi 6 ga teng",
+        "Progressiya kamayuvchi, ayirmasi −6 ga teng",
+        "Progressiya kamayuvchi, ayirmasi −42 ga teng",
+        "Progressiya o'zgarmas, ayirmasi 0 ga teng"
+      ],
+      "t": 1,
+      "izoh": "Formulani aₙ = −6n + 42 ko'rinishida yozsak, n oldidagi koeffitsient ayirmani beradi: d = −6. Ayirma manfiy bo'lgani uchun har bir keyingi had oldingisidan kichik, demak progressiya kamayuvchi. Tekshirish: a₁ = 36, a₂ = 30. Javob: kamayuvchi, ayirmasi −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formuladan-progressiyani-oqish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#6551ae88"
+    },
+    {
+      "q": "Arifmetik progressiya aₙ = 4n + 9 formula bilan berilgan bo'lsa, a₁₀ − a₆ ayirmasi nechaga teng bo'ladi?",
+      "v": [
+        "16",
+        "4",
+        "64",
+        "20"
+      ],
+      "t": 0,
+      "izoh": "Bu progressiyada d = 4, chunki n oldidagi koeffitsient ayirmaga teng. Shunga ko'ra a₁₀ − a₆ = (10 − 6)d = 4·4 = 16. Buni bevosita ham tekshirish mumkin: a₁₀ = 49, a₆ = 33 va 49 − 33 = 16. 4 varianti faqat bitta qadamni hisobga olgan, 20 varianti 5 ta qadam olgan, 64 esa indekslar yig'indisini ayirmaga ko'paytirgan javob. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formuladan-progressiyani-oqish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#ea0b3bc1"
+    },
+    {
+      "q": "Suv omboridagi suv sathi santimetrda hₙ = 180 − 7n formula bilan berilgan, bunda n — kunlar soni. Beshinchi kuni sath qanday bo'ladi?",
+      "v": [
+        "173 sm",
+        "152 sm",
+        "145 sm",
+        "215 sm"
+      ],
+      "t": 2,
+      "izoh": "Formulaga n = 5 ni qo'yamiz: h₅ = 180 − 7·5 = 180 − 35 = 145 sm. Bu ayirmasi −7 ga teng arifmetik progressiya, ya'ni sath har kuni 7 sm dan pasayadi. 173 sm varianti faqat bitta kunni hisoblagan, 215 sm esa ishorani almashtirgan javob. Javob: 145 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formuladan-progressiyani-oqish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#a4ca6238"
+    },
+    {
+      "q": "Arifmetik progressiyaning uchinchi hadi 14 ga, sakkizinchi hadi 39 ga teng. Shu progressiyaning o'n ikkinchi hadini toping.",
+      "v": [
+        "69",
+        "59",
+        "64",
+        "55"
+      ],
+      "t": 1,
+      "izoh": "Avval ayirmani topamiz: a₈ − a₃ = 5d, ya'ni 39 − 14 = 25 va d = 5. Endi birinchi had a₁ = 14 − 2·5 = 4 bo'ladi. Nihoyat a₁₂ = 4 + 11·5 = 4 + 55 = 59. 69 varianti uchinchi hadni birinchi had deb olgan xato. Javob: 59.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-had-orqali-progressiya-tuzish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#34f02b2a"
+    },
+    {
+      "q": "Arifmetik progressiyaning ikkinchi hadi −5 ga, oltinchi hadi 11 ga teng bo'lsa, uning birinchi hadi nechaga teng?",
+      "v": [
+        "−1",
+        "−13",
+        "−9",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Ikki had orasida 6 − 2 = 4 ta qadam bor: 11 − (−5) = 4d, ya'ni 16 = 4d va d = 4. Birinchi hadga bitta qadam orqaga qaytamiz: a₁ = a₂ − d = −5 − 4 = −9. −1 varianti ayirish o'rniga qo'shgan, −13 esa ikki qadam qaytgan javob. Javob: −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-had-orqali-progressiya-tuzish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#02d20ef7"
+    },
+    {
+      "q": "Bir arifmetik progressiyada to'rtinchi had 30 ga, to'qqizinchi had 65 ga teng. Uning yigirmanchi hadini hisoblang.",
+      "v": [
+        "142",
+        "149",
+        "163",
+        "133"
+      ],
+      "t": 0,
+      "izoh": "a₉ − a₄ = 5d dan 65 − 30 = 35 kelib chiqadi, demak d = 7. Birinchi had a₁ = 30 − 3·7 = 30 − 21 = 9. Endi a₂₀ = 9 + 19·7 = 9 + 133 = 142. 163 varianti to'rtinchi hadni birinchi had deb olgan, 133 esa birinchi hadni qo'shmagan javob. Javob: 142.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-had-orqali-progressiya-tuzish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#c4e8e454"
+    },
+    {
+      "q": "Zilola sport zalida uchinchi mashg'ulotda 26 marta, sakkizinchi mashg'ulotda 41 marta cho'kkalab turdi. Takrorlar soni har safar bir xil miqdorda ortsa, birinchi mashg'ulotda necha marta cho'kkalagan?",
+      "v": [
+        "23 marta",
+        "17 marta",
+        "29 marta",
+        "20 marta"
+      ],
+      "t": 3,
+      "izoh": "Uchinchidan sakkizinchi mashg'ulotgacha 8 − 3 = 5 ta qadam bor: 41 − 26 = 15, demak d = 3. Birinchi mashg'ulotga ikki qadam orqaga qaytamiz: a₁ = 26 − 2·3 = 20 marta. 23 marta varianti faqat bitta qadam qaytgan, 29 marta esa orqaga emas oldinga yurgan javob. Javob: 20 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-had-orqali-progressiya-tuzish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#dd86f4df"
+    },
+    {
+      "q": "Arifmetik progressiyada a₅ + a₉ = 40 va a₃ = 8 ekani ma'lum. Shu progressiyaning o'ninchi hadini toping.",
+      "v": [
+        "26",
+        "32",
+        "29",
+        "20"
+      ],
+      "t": 2,
+      "izoh": "a₅ va a₉ hadlari a₇ dan teng uzoqlikda turadi, shuning uchun a₅ + a₉ = 2a₇ = 40 va a₇ = 20. Endi a₇ − a₃ = 4d dan 20 − 8 = 12, demak d = 3. Nihoyat a₁₀ = a₇ + 3d = 20 + 9 = 29. 20 varianti oraliq natijani javob deb olgan xato. Javob: 29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-had-orqali-progressiya-tuzish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#b18914a2"
+    },
+    {
+      "q": "12, x va 30 sonlari shu tartibda arifmetik progressiyaning ketma-ket uchta hadi bo'lsa, x nechaga teng?",
+      "v": [
+        "18",
+        "21",
+        "9",
+        "42"
+      ],
+      "t": 1,
+      "izoh": "Xarakteristik xossaga ko'ra o'rtadagi had qo'shnilarining o'rta arifmetigiga teng: x = (12 + 30)/2 = 42/2 = 21. Tekshiramiz: 21 − 12 = 9 va 30 − 21 = 9, ayirmalar teng chiqdi. 42 varianti ikkiga bo'lishni unutgan, 18 esa chetki hadlar farqini javob deb olgan xato. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xarakteristik-xossa",
+      "id": "matematika_prog_m02-arifmetik-progressiya#c632b2e1"
+    },
+    {
+      "q": "Ketma-ket keladigan uchta had −7, x va 23 ko'rinishida berilgan. Ularning arifmetik progressiya bo'lishi uchun x qanday bo'lishi kerak?",
+      "v": [
+        "16",
+        "30",
+        "8",
+        "15"
+      ],
+      "t": 2,
+      "izoh": "Xarakteristik xossaga ko'ra 2x = (−7) + 23, ya'ni 2x = 16 va x = 8. Tekshirish: 8 − (−7) = 15 hamda 23 − 8 = 15, ikkala ayirma bir xil chiqdi. 16 varianti ikkiga bo'lishni tashlab ketgan, 15 esa ayirmani javob deb olgan xato. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xarakteristik-xossa",
+      "id": "matematika_prog_m02-arifmetik-progressiya#3d33b1cc"
+    },
+    {
+      "q": "Quyidagi uchliklardan qaysi biri arifmetik progressiyaning ketma-ket keladigan uchta hadi bo'la oladi?",
+      "v": [
+        "3; 8; 13",
+        "4; 9; 16",
+        "2; 6; 18",
+        "5; 10; 20"
+      ],
+      "t": 0,
+      "izoh": "Uchta son arifmetik progressiya bo'lishi uchun o'rtadagi had chetkilarining o'rta arifmetigiga teng bo'lishi shart. 3; 8; 13 uchun (3 + 13)/2 = 8, ya'ni shart bajariladi. Qolganlarida ayirmalar teng emas: 9 − 4 = 5 lekin 16 − 9 = 7. Javob: 3; 8; 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xarakteristik-xossa",
+      "id": "matematika_prog_m02-arifmetik-progressiya#d4dc2c13"
+    },
+    {
+      "q": "Uch aka-ukaning yoshlari arifmetik progressiyani tashkil qiladi. Kichigi 9 yoshda, kattasi esa 21 yoshda bo'lsa, o'rtanchasi necha yoshda ekanini toping.",
+      "v": [
+        "12 yoshda",
+        "30 yoshda",
+        "6 yoshda",
+        "15 yoshda"
+      ],
+      "t": 3,
+      "izoh": "Yoshlar arifmetik progressiya bo'lgani uchun o'rtanchasining yoshi chetkilarining o'rta arifmetigiga teng: (9 + 21)/2 = 30/2 = 15 yosh. Tekshiramiz: 15 − 9 = 6 va 21 − 15 = 6, ayirmalar bir xil. 30 yoshda varianti ikkiga bo'lishni unutgan, 12 yoshda esa yoshlar farqini olgan javob. Javob: 15 yoshda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xarakteristik-xossa",
+      "id": "matematika_prog_m02-arifmetik-progressiya#1711a594"
+    },
+    {
+      "q": "Arifmetik progressiyaning yettinchi hadi 28 ga, to'qqizinchi hadi 40 ga teng. Sakkizinchi had nechaga teng bo'ladi?",
+      "v": [
+        "68",
+        "34",
+        "12",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "a₈ hadi a₇ va a₉ orasida turgani uchun xarakteristik xossa o'rinli: a₈ = (a₇ + a₉)/2 = (28 + 40)/2 = 68/2 = 34. Bundan progressiyaning ayirmasi d = (40 − 28)/2 = 6 ekani ham kelib chiqadi. 68 varianti ikkiga bo'lishni unutgan javob. Javob: 34.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xarakteristik-xossa",
+      "id": "matematika_prog_m02-arifmetik-progressiya#79aa80cf"
+    },
+    {
+      "q": "x + 2, 3x − 1 va 4x + 5 ifodalari shu tartibda arifmetik progressiyaning ketma-ket uchta hadi bo'lsa, x ni toping.",
+      "v": [
+        "−4",
+        "9",
+        "8",
+        "−5"
+      ],
+      "t": 1,
+      "izoh": "Xarakteristik xossaga ko'ra 2(3x − 1) = (x + 2) + (4x + 5). Chap tomon 6x − 2, o'ng tomon esa 5x + 7 bo'ladi. Demak 6x − 5x = 7 + 2 va x = 9. Tekshiramiz: hadlar 11, 26, 41 bo'lib, ayirma 15 ga teng. −4 varianti o'rtadagi hadni ikkilantirishni unutgan javob. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchta-had-nomalum-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#19c39f06"
+    },
+    {
+      "q": "2x − 1, x + 6 va 3x − 2 ifodalari arifmetik progressiyaning ketma-ket hadlari bo'lishi uchun x qanday qiymatga ega bo'lishi kerak?",
+      "v": [
+        "3",
+        "15",
+        "5",
+        "11"
+      ],
+      "t": 2,
+      "izoh": "Xarakteristik xossadan 2(x + 6) = (2x − 1) + (3x − 2) tenglama chiqadi. Chap tomon 2x + 12, o'ng tomon 5x − 3. Demak 3x = 15 va x = 5. Tekshirish: hadlar 9, 11, 13 bo'lib, ayirma 2 ga teng. 11 varianti x emas, o'rtadagi hadning qiymati. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchta-had-nomalum-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#d44f27cc"
+    },
+    {
+      "q": "5, x, y va 26 sonlari shu tartibda arifmetik progressiya tashkil qiladi. y − x ayirmasi nechaga teng bo'ladi?",
+      "v": [
+        "21",
+        "10,5",
+        "5,25",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Birinchi haddan to'rtinchi hadgacha 3 ta qadam bor, ya'ni 26 = 5 + 3d. Bundan 3d = 21 va d = 7. Qo'shni hadlar farqi ayirmaga teng bo'lgani uchun y − x = 7. Haqiqatan ham x = 12, y = 19 chiqadi. 21 varianti qadamlar soniga bo'lishni unutgan javob. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchta-had-nomalum-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#18bfc6c0"
+    },
+    {
+      "q": "Arifmetik progressiyaning ketma-ket uchta hadi yig'indisi 51 ga, birinchi hadi esa 13 ga teng. Uchinchi had nechaga teng?",
+      "v": [
+        "21",
+        "17",
+        "38",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket uchta hadning yig'indisi o'rtanchasining uch barobariga teng: 3a₂ = 51, demak a₂ = 17. Ayirma d = 17 − 13 = 4 bo'ladi. Uchinchi had a₃ = 17 + 4 = 21. 17 varianti o'rtadagi hadni javob deb olgan, 25 esa o'rtaga bitta ortiqcha qadam qo'shgan xato. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchta-had-nomalum-topish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#c6f7b295"
+    },
+    {
+      "q": "Birinchi hadi 5, ayirmasi 7 ga teng arifmetik progressiya berilgan. 152 soni shu progressiyaning hadi bo'la oladimi?",
+      "v": [
+        "Ha, 22-had",
+        "Ha, 21-had",
+        "Yo'q, hadi bo'la olmaydi",
+        "Ha, 23-had"
+      ],
+      "t": 0,
+      "izoh": "152 = 5 + (n − 1)·7 tenglamani yechamiz: (n − 1)·7 = 147, ya'ni n − 1 = 21 va n = 22. n butun hamda musbat chiqqani uchun 152 progressiyaning hadi bo'ladi. 21-had varianti oxirida bittani qo'shishni unutgan javob. Javob: ha, 22-had.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-progressiya-hadimi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#c8048e84"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi 3 ga, ayirmasi 8 ga teng. 100 soni bu progressiyaning hadi bo'la oladimi?",
+      "v": [
+        "Ha, 13-had",
+        "Ha, 12-had",
+        "Yo'q, chunki 97 soni 8 ga bo'linmaydi",
+        "Ha, 14-had"
+      ],
+      "t": 2,
+      "izoh": "Agar 100 had bo'lsa, 100 = 3 + (n − 1)·8 tenglama butun yechimga ega bo'lishi kerak edi. Bundan (n − 1)·8 = 97 chiqadi, lekin 97 soni 8 ga qoldiqsiz bo'linmaydi. Demak butun n mavjud emas va 100 progressiyaning hadi emas. Javob: yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-progressiya-hadimi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#00afecdf"
+    },
+    {
+      "q": "Avtobus birinchi bekatdan 14 ta yo'lovchi bilan jo'nadi va har bekatda unga 6 tadan yo'lovchi qo'shildi. Avtobusda 74 ta yo'lovchi bo'lgan bekat bormi?",
+      "v": [
+        "Ha, 10-bekat",
+        "Ha, 12-bekat",
+        "Yo'q, bunday bekat yo'q",
+        "Ha, 11-bekat"
+      ],
+      "t": 3,
+      "izoh": "Yo'lovchilar soni arifmetik progressiya hosil qiladi: a₁ = 14, d = 6. 74 = 14 + (n − 1)·6 dan (n − 1)·6 = 60, ya'ni n − 1 = 10 va n = 11. Demak o'n birinchi bekatda avtobusda 74 ta yo'lovchi bo'ladi. 10-bekat varianti qadamlar sonini bekat raqami deb olgan javob. Javob: ha, 11-bekat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-progressiya-hadimi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#2d837945"
+    },
+    {
+      "q": "4, 11, 18, 25, ... arifmetik progressiya berilgan. Quyidagi sonlardan qaysi biri bu progressiyaning hadi emas?",
+      "v": [
+        "46",
+        "60",
+        "75",
+        "88"
+      ],
+      "t": 2,
+      "izoh": "Progressiyaning ayirmasi d = 7, umumiy hadi esa aₙ = 7n − 3. Demak har bir had 4 dan 7 ning karralisiga farq qiladi. 46 − 4 = 42, 60 − 4 = 56, 88 − 4 = 84 — uchalasi ham 7 ga bo'linadi. 75 − 4 = 71 esa 7 ga bo'linmaydi. Javob: 75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "son-progressiya-hadimi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#5047adae"
+    },
+    {
+      "q": "Do'konda daftar narxi har oy 800 so'mga oshib boradi. Yanvarda daftar 6 400 so'm turgan bo'lsa, iyun oyida qancha turadi?",
+      "v": [
+        "11 200 so'm",
+        "10 400 so'm",
+        "9 600 so'm",
+        "4 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Narxlar arifmetik progressiya hosil qiladi: a₁ = 6 400, d = 800. Yanvardan iyungacha 6 − 1 = 5 ta qadam bor, demak a₆ = 6 400 + 5·800 = 6 400 + 4 000 = 10 400 so'm. 11 200 so'm varianti olti qadam olgan, 4 000 so'm esa boshlang'ich narxni qo'shmagan javob. Javob: 10 400 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-oshishi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#3e30e33a"
+    },
+    {
+      "q": "Kitob narxi har chorakda 12 000 so'mga oshadi va hozir u 96 000 so'm turadi. Necha chorakdan keyin narx 180 000 so'mga yetadi?",
+      "v": [
+        "8 chorak",
+        "6 chorak",
+        "15 chorak",
+        "7 chorak"
+      ],
+      "t": 3,
+      "izoh": "Narxning umumiy o'sishi 180 000 − 96 000 = 84 000 so'm. Har chorakda narx 12 000 so'mga ortadi, demak 84 000 : 12 000 = 7 chorak kerak bo'ladi. 8 chorak varianti had raqami bilan qadamlar sonini chalkashtiradi, 15 chorak esa 180 000 ni 12 000 ga bo'lgan javob. Javob: 7 chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-oshishi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#9278d14d"
+    },
+    {
+      "q": "Kvartira ijarasi har yili bir xil miqdorda qimmatlashadi. Uchinchi yili oylik ijara 2 400 000 so'm, yettinchi yili 3 200 000 so'm bo'lgan bo'lsa, beshinchi yili qancha bo'lgan?",
+      "v": [
+        "2 600 000 so'm",
+        "3 000 000 so'm",
+        "2 800 000 so'm",
+        "5 600 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Uchinchi va yettinchi yil orasida 7 − 3 = 4 ta qadam bor: 3 200 000 − 2 400 000 = 800 000, demak d = 200 000 so'm. Beshinchi yil uchinchidan ikki qadam narida: a₅ = 2 400 000 + 2·200 000 = 2 800 000 so'm. Buni xarakteristik xossa ham tasdiqlaydi, chunki a₅ berilgan ikki hadning o'rtasida. Javob: 2 800 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-oshishi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#ecdee1d8"
+    },
+    {
+      "q": "Elektr energiyasi tarifi har yili 90 so'mga oshadi. 2020-yilda bir kilovatt·soat 295 so'm turgan bo'lsa, qaysi yili tarif 925 so'mga yetadi?",
+      "v": [
+        "2027-yil",
+        "2026-yil",
+        "2028-yil",
+        "2030-yil"
+      ],
+      "t": 0,
+      "izoh": "Tariflar arifmetik progressiya bo'lib, a₁ = 295 va d = 90. 925 = 295 + (n − 1)·90 dan (n − 1)·90 = 630, ya'ni n − 1 = 7 va n = 8. Demak 2020-yildan 7 yil o'tadi va bu 2027-yilga to'g'ri keladi. 2030-yil varianti 925 ni 90 ga bo'lib, boshlang'ich tarifni ayirmagan javob. Javob: 2027-yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-narx-oshishi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#f964e26d"
+    },
+    {
+      "q": "Jasur birinchi kuni 1 200 metr yugurdi va har kuni masofani 250 metrga oshirib bordi. O'n ikkinchi kuni u qancha masofa yuguradi?",
+      "v": [
+        "3 950 m",
+        "4 200 m",
+        "3 700 m",
+        "2 750 m"
+      ],
+      "t": 0,
+      "izoh": "Kunlik masofalar arifmetik progressiya: a₁ = 1 200 m, d = 250 m. O'n ikkinchi kun uchun a₁₂ = 1 200 + 11·250 = 1 200 + 2 750 = 3 950 m. 4 200 m varianti 11 o'rniga 12 ta qadam olgan, 2 750 m esa birinchi kungi masofani qo'shmagan javob. Javob: 3 950 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-mashq-rejasi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#63c80aa7"
+    },
+    {
+      "q": "Malika suzish mashg'ulotini 300 metrdan boshladi va har hafta masofaga 150 metr qo'shib bordi. Nechanchi haftada u 1 800 metr suzadi?",
+      "v": [
+        "10-hafta",
+        "11-hafta",
+        "12-hafta",
+        "6-hafta"
+      ],
+      "t": 1,
+      "izoh": "1 800 = 300 + (n − 1)·150 tenglamani tuzamiz. Bundan (n − 1)·150 = 1 500, ya'ni n − 1 = 10 va n = 11. Demak o'n birinchi haftada Malika 1 800 metr suzadi. 10-hafta varianti qadamlar sonini hafta raqami deb olgan, 6-hafta esa 1 800 ni 300 ga bo'lgan javob. Javob: 11-hafta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-mashq-rejasi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#616295b0"
+    },
+    {
+      "q": "Bekzod har kuni bir xil miqdorda ko'proq qadam bosadi. Beshinchi kuni 7 400 qadam, o'ninchi kuni esa 10 900 qadam bosgan bo'lsa, kunlik o'sish qancha?",
+      "v": [
+        "500 qadam",
+        "3 500 qadam",
+        "350 qadam",
+        "700 qadam"
+      ],
+      "t": 3,
+      "izoh": "Beshinchi va o'ninchi kun orasida 10 − 5 = 5 ta qadam bor. Qadamlar farqi 10 900 − 7 400 = 3 500 ta. Demak 5d = 3 500 va d = 700 qadam. 3 500 qadam varianti bo'lishni bajarmagan, 350 qadam esa 3 500 ni 10 ga bo'lgan javob. Javob: 700 qadam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-mashq-rejasi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#a66215b3"
+    },
+    {
+      "q": "Nilufar birinchi mashg'ulotda 8 daqiqa yugurdi va har mashg'ulotda yugurish vaqtiga 3 daqiqa qo'shdi. Yigirmanchi mashg'ulotda necha daqiqa yuguradi?",
+      "v": [
+        "68 daqiqa",
+        "65 daqiqa",
+        "62 daqiqa",
+        "57 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Mashg'ulot davomiyligi arifmetik progressiya: a₁ = 8 daqiqa, d = 3 daqiqa. Yigirmanchi mashg'ulot uchun a₂₀ = 8 + 19·3 = 8 + 57 = 65 daqiqa. 68 daqiqa varianti 19 o'rniga 20 ta qadam olgan, 57 daqiqa esa birinchi mashg'ulot vaqtini qo'shmagan javob. Javob: 65 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-mashq-rejasi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#f39ba74a"
+    },
+    {
+      "q": "Fermer birinchi haftada 240 kg pomidor yig'di, keyingi har haftada hosil 25 kg ga kamayib bordi. Sakkizinchi haftada qancha hosil yig'iladi?",
+      "v": [
+        "65 kg",
+        "40 kg",
+        "90 kg",
+        "215 kg"
+      ],
+      "t": 0,
+      "izoh": "Haftalik hosil arifmetik progressiya: a₁ = 240 kg, d = −25 kg. Sakkizinchi hafta uchun a₈ = 240 + 7·(−25) = 240 − 175 = 65 kg. 40 kg varianti 7 o'rniga 8 ta qadam olgan, 215 kg esa faqat bitta haftani hisobga olgan javob. Javob: 65 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ishlab-chiqarish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#5790d17a"
+    },
+    {
+      "q": "Tikuvchilik sexi birinchi oyda 180 ta ko'ylak tikdi va har oy 45 tadan ko'proq tika boshladi. Qaysi oyda 585 ta ko'ylak tikiladi?",
+      "v": [
+        "9-oy",
+        "10-oy",
+        "11-oy",
+        "13-oy"
+      ],
+      "t": 1,
+      "izoh": "585 = 180 + (n − 1)·45 tenglamani tuzamiz. Bundan (n − 1)·45 = 405, ya'ni n − 1 = 9 va n = 10. Demak o'ninchi oyda sex 585 ta ko'ylak tikadi. 9-oy varianti qadamlar sonini oy raqami deb olgan, 13-oy esa 585 ni 45 ga bo'lgan javob. Javob: 10-oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ishlab-chiqarish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#a989c132"
+    },
+    {
+      "q": "Non zavodi ish boshlaganda kuniga 900 ta non yopardi. Ishlab chiqarish har kuni bir xil miqdorda oshib, o'ninchi kuni 1 620 tani tashkil qildi. Kunlik o'sish qancha?",
+      "v": [
+        "72 ta",
+        "720 ta",
+        "80 ta",
+        "90 ta"
+      ],
+      "t": 2,
+      "izoh": "Birinchi va o'ninchi kun orasida 10 − 1 = 9 ta qadam bor. Ishlab chiqarish farqi 1 620 − 900 = 720 ta non. Demak 9d = 720 va d = 80 ta. 72 ta varianti 720 ni 10 ga bo'lgan, 90 ta esa 8 ta qadam deb hisoblagan javob. Javob: 80 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ishlab-chiqarish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#52df27e2"
+    },
+    {
+      "q": "Konda birinchi oyda 1 250 tonna ruda qazib olindi. Hajm har oy bir xil miqdorda kamayib, oltinchi oyda 950 tonnani tashkil qildi. To'qqizinchi oyda qancha bo'ladi?",
+      "v": [
+        "830 tonna",
+        "770 tonna",
+        "710 tonna",
+        "890 tonna"
+      ],
+      "t": 1,
+      "izoh": "Birinchi va oltinchi oy orasida 5 ta qadam bor: 950 − 1 250 = −300, demak d = −60 tonna. To'qqizinchi oy uchun a₉ = 1 250 + 8·(−60) = 1 250 − 480 = 770 tonna. 830 tonna varianti 8 o'rniga 7 ta qadam olgan, 710 tonna esa 9 ta qadam olgan javob. Javob: 770 tonna.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ishlab-chiqarish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#cf85a47e"
+    },
+    {
+      "q": "Amfiteatrning birinchi qatorida 22 ta o'rindiq bor va har bir keyingi qatorda 3 tadan ortiq o'rindiq joylashgan. O'n to'rtinchi qatorda nechta o'rindiq bor?",
+      "v": [
+        "61 ta",
+        "64 ta",
+        "58 ta",
+        "39 ta"
+      ],
+      "t": 0,
+      "izoh": "Qatorlardagi o'rindiqlar soni arifmetik progressiya: a₁ = 22, d = 3. O'n to'rtinchi qator uchun a₁₄ = 22 + 13·3 = 22 + 39 = 61 ta. 64 ta varianti 13 o'rniga 14 ta qadam olgan, 39 ta esa birinchi qatordagi o'rindiqlarni qo'shmagan javob. Javob: 61 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-qurilish-qatorlari",
+      "id": "matematika_prog_m02-arifmetik-progressiya#9488b153"
+    },
+    {
+      "q": "G'isht taxlamining eng yuqori qatorida 8 ta g'isht bor, pastga tushgan sari har qatorda 5 tadan ortadi. Eng pastki qatorda 63 ta g'isht bo'lsa, taxlamda nechta qator bor?",
+      "v": [
+        "10 qator",
+        "11 qator",
+        "12 qator",
+        "13 qator"
+      ],
+      "t": 2,
+      "izoh": "Yuqoridan pastga qarab g'ishtlar soni arifmetik progressiya hosil qiladi: a₁ = 8, d = 5. 63 = 8 + (n − 1)·5 dan (n − 1)·5 = 55, ya'ni n − 1 = 11 va n = 12. Demak taxlamda 12 ta qator bor. 11 qator varianti qadamlar sonini qatorlar soni deb olgan, 13 qator esa bitta ortiqcha qator qo'shgan javob. Javob: 12 qator.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qurilish-qatorlari",
+      "id": "matematika_prog_m02-arifmetik-progressiya#d462244e"
+    },
+    {
+      "q": "Piramida shaklidagi taxlamning eng pastki qatorida 45 ta quti bor va har bir yuqori qatorda 4 tadan kam. Taxlam 10 qatordan iborat bo'lsa, eng yuqori qatorda nechta quti bor?",
+      "v": [
+        "5 ta",
+        "13 ta",
+        "9 ta",
+        "17 ta"
+      ],
+      "t": 2,
+      "izoh": "Pastdan yuqoriga qarab qutilar soni ayirmasi −4 bo'lgan arifmetik progressiya hosil qiladi, bunda a₁ = 45. O'ninchi qator uchun a₁₀ = 45 + 9·(−4) = 45 − 36 = 9 ta. 5 ta varianti 9 o'rniga 10 ta qadam olgan, 13 ta esa 8 ta, 17 ta esa 7 ta qadam olgan javob. Javob: 9 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qurilish-qatorlari",
+      "id": "matematika_prog_m02-arifmetik-progressiya#4dd458f8"
+    },
+    {
+      "q": "Zinapoyaning birinchi pog'onasi yerdan 17 sm, oltinchi pog'onasi esa 92 sm balandlikda joylashgan. Yerdan 227 sm balandlikdagi pog'ona nechanchi bo'ladi?",
+      "v": [
+        "14-pog'ona",
+        "15-pog'ona",
+        "16-pog'ona",
+        "13-pog'ona"
+      ],
+      "t": 1,
+      "izoh": "Pog'onalar balandligi arifmetik progressiya: a₆ − a₁ = 5d dan 92 − 17 = 75, demak d = 15 sm. Endi 227 = 17 + (n − 1)·15 tenglamadan (n − 1)·15 = 210, ya'ni n − 1 = 14 va n = 15. Demak bu o'n beshinchi pog'ona. 14-pog'ona varianti qadamlar sonini javob deb olgan xato. Javob: 15-pog'ona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-qurilish-qatorlari",
+      "id": "matematika_prog_m02-arifmetik-progressiya#a4b8d080"
+    },
+    {
+      "q": "Dilnoza birinchi kuni cho'ntak puliga 2 000 so'm ajratdi va har kuni bu summani 500 so'mga oshirib bordi. O'n beshinchi kuni qancha ajratadi?",
+      "v": [
+        "9 500 so'm",
+        "8 500 so'm",
+        "7 000 so'm",
+        "9 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Kunlik summalar arifmetik progressiya: a₁ = 2 000 so'm, d = 500 so'm. O'n beshinchi kun uchun a₁₅ = 2 000 + 14·500 = 2 000 + 7 000 = 9 000 so'm. 9 500 so'm varianti 15 ta qadam olgan, 7 000 so'm esa birinchi kungi summani qo'shmagan javob. Javob: 9 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-jamgarma",
+      "id": "matematika_prog_m02-arifmetik-progressiya#a2a524d1"
+    },
+    {
+      "q": "Oila jamg'armaga qo'yadigan oylik summani bir xil miqdorda oshirib boradi. To'rtinchi oyda 620 000 so'm, o'ninchi oyda 980 000 so'm qo'ygan bo'lsa, yettinchi oyda qancha qo'ygan?",
+      "v": [
+        "740 000 so'm",
+        "800 000 so'm",
+        "860 000 so'm",
+        "1 600 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "To'rtinchi va o'ninchi oy orasida 6 ta qadam bor: 980 000 − 620 000 = 360 000, demak d = 60 000 so'm. Yettinchi oy ular orasidagi o'rtada joylashgan, shuning uchun a₇ = (620 000 + 980 000)/2 = 800 000 so'm. 1 600 000 so'm varianti ikkiga bo'lishni unutgan, 740 000 so'm esa uch qadam o'rniga ikkitasini olgan javob. Javob: 800 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-jamgarma",
+      "id": "matematika_prog_m02-arifmetik-progressiya#d51c6e7e"
+    },
+    {
+      "q": "Anvar haftalik badalni 45 000 so'mdan boshlab har hafta 15 000 so'mga oshiradi. Nechanchi haftada badal birinchi marta 200 000 so'mdan oshadi?",
+      "v": [
+        "11-hafta",
+        "13-hafta",
+        "14-hafta",
+        "12-hafta"
+      ],
+      "t": 3,
+      "izoh": "Haftalik badal aₙ = 45 000 + (n − 1)·15 000 ko'rinishida. Shart aₙ > 200 000, ya'ni (n − 1)·15 000 > 155 000 va n − 1 > 10,3. Butun son sifatida n − 1 = 11, demak n = 12. Tekshiramiz: a₁₁ = 195 000, a₁₂ = 210 000 so'm. Javob: 12-hafta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-jamgarma",
+      "id": "matematika_prog_m02-arifmetik-progressiya#4d55bfd9"
+    },
+    {
+      "q": "Jamg'armaga har oy qo'yiladigan summa arifmetik progressiya bo'yicha ortadi. Beshinchi oydagi summa uchinchi oydagidan 90 000 so'mga ko'p bo'lsa, o'ninchi oyda to'rtinchi oydagidan qanchaga ko'p qo'yiladi?",
+      "v": [
+        "270 000 so'm",
+        "180 000 so'm",
+        "540 000 so'm",
+        "135 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "a₅ − a₃ = 2d bo'lgani uchun 2d = 90 000 va d = 45 000 so'm. Endi a₁₀ − a₄ = (10 − 4)d = 6d = 6·45 000 = 270 000 so'm. 540 000 so'm varianti 90 000 ni to'g'ridan-to'g'ri 6 ga ko'paytirgan, 135 000 so'm esa 3 ta qadam olgan javob. Javob: 270 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-jamgarma",
+      "id": "matematika_prog_m02-arifmetik-progressiya#9b827913"
+    },
+    {
+      "q": "Muzlatgichga solingan sut harorati har 10 daqiqada 2 darajaga pasayadi. Boshida harorat 18°C bo'lgan bo'lsa, 60 daqiqadan keyin necha daraja bo'ladi?",
+      "v": [
+        "4°C",
+        "8°C",
+        "12°C",
+        "6°C"
+      ],
+      "t": 3,
+      "izoh": "60 daqiqada 60 : 10 = 6 ta qadam o'tadi. Har qadamda harorat 2 darajaga pasaygani uchun umumiy pasayish 6·2 = 12 daraja bo'ladi. Demak harorat 18 − 12 = 6°C ga tushadi. 4°C varianti 7 ta qadam olgan, 8°C esa 5 ta qadam olgan javob. Javob: 6°C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-olchov-harorat",
+      "id": "matematika_prog_m02-arifmetik-progressiya#0c77c722"
+    },
+    {
+      "q": "Tog'ga ko'tarilganda har 100 metr balandlikda havo harorati 0,6 darajaga pasayadi. Etakda harorat 24°C bo'lsa, 1 500 metr balandlikda qancha bo'ladi?",
+      "v": [
+        "9°C",
+        "15°C",
+        "18°C",
+        "21°C"
+      ],
+      "t": 1,
+      "izoh": "1 500 metrda 1 500 : 100 = 15 ta qadam bor. Har qadamda harorat 0,6 darajaga pasayadi, demak umumiy pasayish 15·0,6 = 9 daraja. Shunga ko'ra harorat 24 − 9 = 15°C bo'ladi. 9°C varianti faqat pasayish miqdorini javob deb olgan, 18°C esa 10 ta qadam olgan xato. Javob: 15°C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-olchov-harorat",
+      "id": "matematika_prog_m02-arifmetik-progressiya#81bd836b"
+    },
+    {
+      "q": "Quduq qazishda birinchi metr uchun 40 000 so'm, har keyingi metr uchun oldingisidan 6 000 so'm ko'p to'lanadi. Sakkizinchi metr uchun qancha to'lanadi?",
+      "v": [
+        "88 000 so'm",
+        "76 000 so'm",
+        "82 000 so'm",
+        "48 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Metrlar uchun to'lov arifmetik progressiya: a₁ = 40 000 so'm, d = 6 000 so'm. Sakkizinchi metr uchun a₈ = 40 000 + 7·6 000 = 40 000 + 42 000 = 82 000 so'm. 88 000 so'm varianti 7 o'rniga 8 ta qadam olgan, 48 000 so'm esa faqat qo'shimchani hisoblagan javob. Javob: 82 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-olchov-harorat",
+      "id": "matematika_prog_m02-arifmetik-progressiya#5f447aec"
+    },
+    {
+      "q": "Sovutish kamerasida harorat har soatda bir xil miqdorda pasayadi. Uchinchi soat oxirida 5°C, yettinchi soat oxirida −11°C bo'lgan. Harorat qaysi soat oxirida birinchi marta noldan pastga tushadi?",
+      "v": [
+        "4-soat",
+        "5-soat",
+        "6-soat",
+        "3-soat"
+      ],
+      "t": 1,
+      "izoh": "Uchinchi va yettinchi soat orasida 4 ta qadam bor: −11 − 5 = −16, demak d = −4 daraja. Uchinchi soatdan boshlab hisoblaymiz: a₄ = 1, a₅ = −3. Demak harorat beshinchi soat oxirida birinchi marta noldan pastga tushadi. 4-soat varianti a₄ = 1 hali musbat ekanini e'tiborsiz qoldiradi. Javob: 5-soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-olchov-harorat",
+      "id": "matematika_prog_m02-arifmetik-progressiya#4922f713"
+    },
+    {
+      "q": "7 va 43 sonlari orasiga shunday 5 ta son qo'yildiki, ular birgalikda arifmetik progressiya hosil qildi. Progressiyaning ayirmasi nechaga teng?",
+      "v": [
+        "7,2",
+        "9",
+        "6",
+        "36"
+      ],
+      "t": 2,
+      "izoh": "7 va 43 orasiga 5 ta son qo'yilsa, jami 7 ta had bo'ladi va qadamlar soni 7 − 1 = 6 ga teng. Demak 43 = 7 + 6d, ya'ni 6d = 36 va d = 6. 7,2 varianti 36 ni qo'yilgan sonlar soni 5 ga bo'lgan, 36 esa bo'lishni umuman bajarmagan javob. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadlar-orasiga-had-qoyish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#c0c8193e"
+    },
+    {
+      "q": "12 va 39 sonlari orasiga 8 ta son qo'yilib arifmetik progressiya hosil qilindi. Qo'yilgan sonlarning birinchisi nechaga teng bo'ladi?",
+      "v": [
+        "14,7",
+        "15",
+        "3",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "12 va 39 orasiga 8 ta son qo'yilsa, jami 10 ta had va 9 ta qadam hosil bo'ladi. Demak 39 = 12 + 9d, ya'ni 9d = 27 va d = 3. Qo'yilgan sonlarning birinchisi a₂ = 12 + 3 = 15. 3 varianti ayirmani javob deb olgan, 14,7 esa 27 ni 10 ga bo'lgan, 18 esa ikkita qadam qo'shib yuborgan javob. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadlar-orasiga-had-qoyish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#7c2094df"
+    },
+    {
+      "q": "Ikki ustun orasidagi masofa 24 metr. Ular orasiga bir xil oraliqlar bilan 5 ta chiroq o'rnatilsa, qo'shni chiroqlar orasidagi masofa qancha bo'ladi?",
+      "v": [
+        "4,8 m",
+        "6 m",
+        "3 m",
+        "4 m"
+      ],
+      "t": 3,
+      "izoh": "Ustunlar bilan birga qatorda 7 ta nuqta bo'ladi: 2 ta ustun va 5 ta chiroq. Ular orasidagi oraliqlar soni 7 − 1 = 6 ta. Demak har bir oraliq 24 : 6 = 4 metrga teng. 4,8 m varianti faqat chiroqlar sonini oraliq deb olgan, 3 m esa oraliqlarni 8 ta deb hisoblagan javob. Javob: 4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadlar-orasiga-had-qoyish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#2bf935ef"
+    },
+    {
+      "q": "−5 va 31 sonlari orasiga nechta son qo'yilsa, hosil bo'lgan arifmetik progressiyaning ayirmasi 4 ga teng bo'ladi?",
+      "v": [
+        "8 ta",
+        "9 ta",
+        "10 ta",
+        "7 ta"
+      ],
+      "t": 0,
+      "izoh": "Chetki hadlar orasidagi qadamlar soni (31 − (−5)) : 4 = 36 : 4 = 9 ta bo'ladi. 9 ta qadam esa 10 ta hadni beradi, ulardan 2 tasi berilgan chetki sonlar. Demak orasiga 10 − 2 = 8 ta son qo'yilgan. 9 ta varianti qadamlar sonini javob deb olgan xato. Javob: 8 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hadlar-orasiga-had-qoyish",
+      "id": "matematika_prog_m02-arifmetik-progressiya#ce2478d1"
+    },
+    {
+      "q": "1 dan 100 gacha bo'lgan natural sonlar orasida 7 ga qoldiqsiz bo'linadiganlari nechta ekanini aniqlang.",
+      "v": [
+        "14 ta",
+        "13 ta",
+        "15 ta",
+        "16 ta"
+      ],
+      "t": 0,
+      "izoh": "7 ga bo'linadigan sonlar arifmetik progressiya hosil qiladi: 7, 14, 21, ..., 98. Bunda a₁ = 7, d = 7 va oxirgi had 98. 98 = 7 + (n − 1)·7 dan n − 1 = 13, ya'ni n = 14. Demak bunday sonlar 14 ta. 13 ta varianti oxirida bittani qo'shmagan javob. Javob: 14 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-hadlar-soni",
+      "id": "matematika_prog_m02-arifmetik-progressiya#4a0a71e9"
+    },
+    {
+      "q": "100 va 300 ni ham qo'shib hisoblaganda, 100 dan 300 gacha bo'lgan sonlar orasida 6 ga qoldiqsiz bo'linadiganlari nechta bo'lishini toping.",
+      "v": [
+        "33 ta",
+        "35 ta",
+        "34 ta",
+        "32 ta"
+      ],
+      "t": 2,
+      "izoh": "Oraliqdagi 6 ga bo'linadigan birinchi son 102, oxirgisi esa 300 (300 chegara sifatida hisobga olinadi). Ular arifmetik progressiya tashkil qiladi: a₁ = 102, d = 6. 300 = 102 + (n − 1)·6 dan (n − 1)·6 = 198, ya'ni n − 1 = 33 va n = 34. 33 ta varianti oxirgi had 300 ni sanamagan javob. Javob: 34 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-hadlar-soni",
+      "id": "matematika_prog_m02-arifmetik-progressiya#3ea01f80"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi 8 ga, ayirmasi 5 ga teng. Uning nechta hadi 100 dan kichik bo'ladi?",
+      "v": [
+        "20 ta",
+        "19 ta",
+        "18 ta",
+        "21 ta"
+      ],
+      "t": 1,
+      "izoh": "Umumiy had aₙ = 8 + (n − 1)·5 = 5n + 3 ko'rinishida. Shart 5n + 3 < 100 dan 5n < 97, ya'ni n < 19,4 kelib chiqadi. n butun bo'lgani uchun uning eng katta qiymati 19. Tekshiramiz: a₁₉ = 98, a₂₀ = 103. Javob: 19 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-hadlar-soni",
+      "id": "matematika_prog_m02-arifmetik-progressiya#86ce5fc1"
+    },
+    {
+      "q": "Ombor javonlariga qutilar qo'yilmoqda: birinchi javonda 12 ta, har keyingisida 7 tadan ortiq. Nechta javonda qutilar soni 90 tadan kam bo'ladi?",
+      "v": [
+        "13 ta",
+        "11 ta",
+        "14 ta",
+        "12 ta"
+      ],
+      "t": 3,
+      "izoh": "Javonlardagi qutilar soni aₙ = 12 + (n − 1)·7 = 7n + 5 formula bilan beriladi. Shart 7n + 5 < 90 dan 7n < 85 va n < 12,1 kelib chiqadi. Butun n ning eng kattasi 12, chunki a₁₂ = 89 va a₁₃ = 96. Javob: 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-hadlar-soni",
+      "id": "matematika_prog_m02-arifmetik-progressiya#87b27581"
+    },
+    {
+      "q": "Arifmetik progressiyada a₁₈ − a₆ ayirmasi 96 ga teng ekani ma'lum. Shu progressiyaning ayirmasi d nechaga teng bo'ladi?",
+      "v": [
+        "8",
+        "12",
+        "96",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Indekslar farqi 18 − 6 = 12 ta qadamni bildiradi, ya'ni a₁₈ − a₆ = 12d. Demak 12d = 96 va d = 8. 12 varianti qadamlar sonini javob deb olgan, 96 varianti bo'lishni bajarmagan, 16 esa 96 ni 6 ga bo'lgan javob. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-had-munosabati",
+      "id": "matematika_prog_m02-arifmetik-progressiya#0451f91f"
+    },
+    {
+      "q": "Arifmetik progressiyada a₉ va a₄ hadlarining ayirmasi 35 ga teng. Shunda a₂₀ − a₁₂ ayirmasi nechaga teng bo'ladi?",
+      "v": [
+        "35",
+        "70",
+        "49",
+        "56"
+      ],
+      "t": 3,
+      "izoh": "a₉ − a₄ = 5d bo'lgani uchun 5d = 35 va d = 7. Endi a₂₀ − a₁₂ = (20 − 12)d = 8d = 8·7 = 56. 35 varianti hadlar ayirmasi o'zgarmaydi deb o'ylagan, 49 esa 7 ta qadam olgan javob. Javob: 56.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-had-munosabati",
+      "id": "matematika_prog_m02-arifmetik-progressiya#e553f754"
+    },
+    {
+      "q": "Arifmetik progressiyada a₄ + a₁₀ = 58 va ayirma 3 ga teng bo'lsa, birinchi had nechaga teng bo'ladi?",
+      "v": [
+        "11",
+        "14",
+        "29",
+        "22"
+      ],
+      "t": 0,
+      "izoh": "a₄ = a₁ + 3d va a₁₀ = a₁ + 9d, demak a₄ + a₁₀ = 2a₁ + 12d. Shartga ko'ra 2a₁ + 12·3 = 58, ya'ni 2a₁ = 58 − 36 = 22 va a₁ = 11. 22 varianti ikkiga bo'lishni unutgan, 29 esa ayirmani umuman hisobga olmagan javob. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-had-munosabati",
+      "id": "matematika_prog_m02-arifmetik-progressiya#e0c3ef32"
+    },
+    {
+      "q": "Sexda oylik mahsulot arifmetik progressiya bo'yicha ortadi. Yettinchi oydagi mahsulot ikkinchi oydagidan 150 taga ko'p bo'lsa, o'n uchinchi oy sakkizinchi oydan qanchaga ko'p bo'ladi?",
+      "v": [
+        "180 ta",
+        "300 ta",
+        "150 ta",
+        "120 ta"
+      ],
+      "t": 2,
+      "izoh": "a₇ − a₂ = (7 − 2)d = 5d bo'lgani uchun 5d = 150 va d = 30 ta. Endi a₁₃ − a₈ = (13 − 8)d = 5d, ya'ni yana 150 ta. Arifmetik progressiyada indekslari farqi bir xil bo'lgan hadlarning ayirmasi doimo teng bo'ladi. 300 ta varianti farqni ikkilantirgan javob. Javob: 150 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-had-munosabati",
+      "id": "matematika_prog_m02-arifmetik-progressiya#0c2b5758"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi 58 ga, ayirmasi −7 ga teng. Uning nechanchi hadidan boshlab hadlar manfiy bo'lib qoladi?",
+      "v": [
+        "9-had",
+        "10-had",
+        "11-had",
+        "8-had"
+      ],
+      "t": 1,
+      "izoh": "Umumiy had aₙ = 58 + (n − 1)·(−7) = 65 − 7n ko'rinishida. Manfiylik sharti 65 − 7n < 0 dan n > 9,28 kelib chiqadi. Butun n ning eng kichigi 10, chunki a₉ = 2 hali musbat, a₁₀ = −5 esa manfiy. Javob: 10-had.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birinchi-manfiy-had",
+      "id": "matematika_prog_m02-arifmetik-progressiya#6d922581"
+    },
+    {
+      "q": "Birinchi hadi −40 ga, ayirmasi 6 ga teng arifmetik progressiyaning nechanchi hadidan boshlab hadlar musbat bo'ladi?",
+      "v": [
+        "7-had",
+        "9-had",
+        "6-had",
+        "8-had"
+      ],
+      "t": 3,
+      "izoh": "Umumiy had aₙ = −40 + (n − 1)·6 = 6n − 46 bo'ladi. Musbatlik sharti 6n − 46 > 0 dan n > 7,66 chiqadi. Demak eng kichik butun n = 8, chunki a₇ = −4 hali manfiy, a₈ = 2 esa musbat. 7-had varianti tengsizlikni butunlashtirishda xato qiladi. Javob: 8-had.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birinchi-manfiy-had",
+      "id": "matematika_prog_m02-arifmetik-progressiya#8d9edd55"
+    },
+    {
+      "q": "Do'kon zaxirasida 340 ta quti bor va har kuni undan 45 ta quti sotiladi. Nechanchi kunning boshida zaxira 100 tadan kam bo'lib qoladi?",
+      "v": [
+        "6-kun",
+        "7-kun",
+        "8-kun",
+        "5-kun"
+      ],
+      "t": 1,
+      "izoh": "Kun boshidagi zaxira aₙ = 340 − (n − 1)·45 ko'rinishidagi arifmetik progressiya. Shart aₙ < 100 dan (n − 1)·45 > 240, ya'ni n − 1 > 5,3 kelib chiqadi. Demak n − 1 = 6 va n = 7. Tekshiramiz: a₆ = 115, a₇ = 70 ta. Javob: 7-kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birinchi-manfiy-had",
+      "id": "matematika_prog_m02-arifmetik-progressiya#5b52c081"
+    },
+    {
+      "q": "Ketma-ketlik aₙ = 84 − 9n formula bilan berilgan. Shu arifmetik progressiyaning eng katta manfiy hadi qaysi songa teng?",
+      "v": [
+        "−6",
+        "3",
+        "−15",
+        "−24"
+      ],
+      "t": 0,
+      "izoh": "Had manfiy bo'lishi uchun 84 − 9n < 0, ya'ni n > 9,33 bo'lishi kerak. Eng kichik butun n = 10 va a₁₀ = 84 − 90 = −6. Bu manfiy hadlarning eng kattasi, chunki keyingi hadlar kichrayadi: a₁₁ = −15, a₁₂ = −24. 3 varianti eng kichik musbat had a₉ ni ko'rsatadi. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birinchi-manfiy-had",
+      "id": "matematika_prog_m02-arifmetik-progressiya#78a3138c"
+    },
+    {
+      "q": "Aziz birinchi oyda 300 000 so'm jamg'aradi va har oy 60 000 so'mga oshiradi, Bobur esa 540 000 so'mdan boshlab har oy 20 000 so'mga oshiradi. Nechanchi oyda ularning jamg'armasi tenglashadi?",
+      "v": [
+        "6-oy",
+        "8-oy",
+        "12-oy",
+        "7-oy"
+      ],
+      "t": 3,
+      "izoh": "Aziz uchun aₙ = 300 000 + (n − 1)·60 000, Bobur uchun bₙ = 540 000 + (n − 1)·20 000. Tenglashtirsak 40 000(n − 1) = 240 000, demak n − 1 = 6 va n = 7. Tekshiramiz: yettinchi oyda ikkalasi ham 660 000 so'm jamg'aradi. 6-oy varianti qadamlar sonini oy raqami deb olgan javob. Javob: 7-oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-progressiya-taqqoslash",
+      "id": "matematika_prog_m02-arifmetik-progressiya#332eac99"
+    },
+    {
+      "q": "Ikki arifmetik progressiya berilgan: birinchisida a₁ = 5 va d = 4, ikkinchisida b₁ = 61 va ayirma −3. Nechanchi hadda ularning qiymatlari tenglashadi?",
+      "v": [
+        "8-had",
+        "9-had",
+        "10-had",
+        "7-had"
+      ],
+      "t": 1,
+      "izoh": "Birinchi progressiya aₙ = 5 + (n − 1)·4, ikkinchisi bₙ = 61 − (n − 1)·3 ko'rinishida. Tenglikdan 4(n − 1) + 3(n − 1) = 56, ya'ni 7(n − 1) = 56 va n − 1 = 8, demak n = 9. Tekshiramiz: a₉ = 37 va b₉ = 37. Javob: 9-had.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-progressiya-taqqoslash",
+      "id": "matematika_prog_m02-arifmetik-progressiya#e17cb96d"
+    },
+    {
+      "q": "Bir progressiyaning hadlari 3, 10, 17, ... ko'rinishda, ikkinchisiniki esa 5, 9, 13, ... ko'rinishda. Ikkala progressiyada ham uchraydigan eng kichik son qaysi?",
+      "v": [
+        "17",
+        "24",
+        "31",
+        "45"
+      ],
+      "t": 0,
+      "izoh": "Birinchi progressiya 3 dan boshlanib 7 ga ortadi: 3, 10, 17, 24, 31, 38, 45. Ikkinchisi 5 dan boshlanib 4 ga ortadi: 5, 9, 13, 17, 21, 25. Ikkala ro'yxatda ham birinchi bo'lib 17 uchraydi. 45 ham ikkalasida bor, lekin u eng kichigi emas. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-progressiya-taqqoslash",
+      "id": "matematika_prog_m02-arifmetik-progressiya#4bc95c24"
+    },
+    {
+      "q": "Birinchi idishda 84 litr suv bor va har daqiqada 6 litr kamayadi, ikkinchisida 12 litr bo'lib har daqiqada 3 litr ortadi. Necha daqiqadan keyin suv miqdori tenglashadi?",
+      "v": [
+        "6 daqiqa",
+        "12 daqiqa",
+        "24 daqiqa",
+        "8 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Birinchi idishdagi suv 84 − 6t, ikkinchisidagi 12 + 3t litrga teng, bunda t — daqiqalar soni. Tenglikdan 84 − 12 = 6t + 3t, ya'ni 72 = 9t va t = 8 daqiqa. Tekshiramiz: ikkala idishda ham 36 litr qoladi. 12 daqiqa varianti 72 ni faqat 6 ga bo'lgan javob. Javob: 8 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-progressiya-taqqoslash",
+      "id": "matematika_prog_m02-arifmetik-progressiya#baff2ace"
+    },
+    {
+      "q": "Arifmetik progressiyada a₃ + a₉ yig'indisi 48 ga teng bo'lsa, oltinchi had nechaga teng bo'ladi?",
+      "v": [
+        "24",
+        "48",
+        "12",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "a₃ va a₉ hadlari a₆ dan teng uzoqlikda joylashgan, chunki 6 − 3 = 9 − 6 = 3. Shuning uchun a₃ + a₉ = 2a₆ = 48 va a₆ = 24. 48 varianti ikkiga bo'lishni unutgan, 16 esa uchga bo'lgan javob. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetrik-hadlar-xossasi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#f7ad37ea"
+    },
+    {
+      "q": "a₄ + a₁₂ = 70 shartni qanoatlantiruvchi arifmetik progressiyada sakkizinchi had qanday qiymatga ega bo'ladi?",
+      "v": [
+        "70",
+        "30",
+        "35",
+        "17,5"
+      ],
+      "t": 2,
+      "izoh": "8 − 4 = 12 − 8 = 4 bo'lgani uchun a₄ va a₁₂ hadlari a₈ dan teng uzoqlikda turadi. Demak a₄ + a₁₂ = 2a₈ = 70 va a₈ = 35. 70 varianti ikkiga bo'lishni unutgan, 17,5 esa to'rtga bo'lgan javob. Javob: 35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-hadlar-xossasi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#ec2b8b5d"
+    },
+    {
+      "q": "Marafonchining kunlik masofasi arifmetik progressiya bo'yicha ortadi. To'rtinchi kuni 9 km, o'n ikkinchi kuni 25 km yugurgan bo'lsa, sakkizinchi kuni qancha yugurgan?",
+      "v": [
+        "34 km",
+        "16 km",
+        "21 km",
+        "17 km"
+      ],
+      "t": 3,
+      "izoh": "Sakkizinchi kun to'rtinchi va o'n ikkinchi kunlarning aynan o'rtasida turadi, chunki 8 − 4 = 12 − 8 = 4. Ayirma d = (25 − 9)/8 = 2 km, demak a₈ = (9 + 25)/2 = 34/2 = 17 km. 34 km varianti ikkiga bo'lishni unutgan, 16 km masofalar farqini olgan, 21 km esa to'rtinchi kundan olti qadam sanagan javob. Javob: 17 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-hadlar-xossasi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#bd5f42d4"
+    },
+    {
+      "q": "Arifmetik progressiyada a₂ + a₅ + a₈ yig'indisi 42 ga teng bo'lsa, beshinchi had nechaga teng?",
+      "v": [
+        "21",
+        "42",
+        "14",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "a₂ va a₈ hadlari a₅ dan teng uzoqlikda turadi, ya'ni a₂ + a₈ = 2a₅. Shunda a₂ + a₅ + a₈ = 3a₅ = 42 va a₅ = 14. 21 varianti yig'indini ikkiga bo'lgan, 7 esa oltiga bo'lgan javob. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-hadlar-xossasi",
+      "id": "matematika_prog_m02-arifmetik-progressiya#af35f2bb"
+    },
+    {
+      "q": "Arifmetik progressiyada yettinchi had 12 ga, o'n ikkinchi had esa 7 ga teng. Shu progressiyaning o'n to'qqizinchi hadi nechaga teng bo'ladi?",
+      "v": [
+        "0",
+        "−2",
+        "2",
+        "19"
+      ],
+      "t": 0,
+      "izoh": "a₁₂ − a₇ = 5d dan 7 − 12 = −5 chiqadi, demak d = −1. Endi a₁₉ = a₁₂ + 7d = 7 − 7 = 0. Umuman, bunday progressiyada aₙ = 19 − n bo'lib, n = 19 da had nolga aylanadi. 19 varianti umumiy had formulasidagi ozod hadni javob deb olgan xato. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "progressiya-parametrli-tahlil",
+      "id": "matematika_prog_m02-arifmetik-progressiya#f2c14b4a"
+    },
+    {
+      "q": "Arifmetik progressiyaning to'qqizinchi hadi uchinchi hadidan uch barobar katta, ayirmasi esa 4 ga teng. Progressiyaning birinchi hadini toping.",
+      "v": [
+        "6",
+        "8",
+        "12",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "a₃ = a₁ + 2·4 = a₁ + 8 va a₉ = a₁ + 8·4 = a₁ + 32. Shartga ko'ra a₁ + 32 = 3(a₁ + 8) = 3a₁ + 24. Bundan 2a₁ = 8 va a₁ = 4. Tekshiramiz: a₃ = 12, a₉ = 36 va haqiqatan 36 = 3·12. 8 varianti oxirida ikkiga bo'lishni unutgan, 12 esa uchinchi hadni javob deb olgan xato. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "progressiya-parametrli-tahlil",
+      "id": "matematika_prog_m02-arifmetik-progressiya#624635ea"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi 3 ga teng va a₂ : a₅ nisbat 2 : 5 kabi. Progressiyaning ayirmasi nechaga teng bo'ladi?",
+      "v": [
+        "3",
+        "2",
+        "5",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "a₂ = 3 + d va a₅ = 3 + 4d bo'ladi. Nisbatdan 5(3 + d) = 2(3 + 4d), ya'ni 15 + 5d = 6 + 8d. Bundan 3d = 9 va d = 3. Tekshiramiz: a₂ = 6, a₅ = 15 va 6 : 15 nisbat 2 : 5 ga teng. 9 varianti oxirgi bo'lishni bajarmagan javob. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hadlar-nisbati-shart",
+      "id": "matematika_prog_m02-arifmetik-progressiya#79ea2313"
+    },
+    {
+      "q": "Uchta sonning yig'indisi 36 ga teng va ular arifmetik progressiya tashkil qiladi. Kichigi kattasidan 12 ga kam bo'lsa, kattasi nechaga teng?",
+      "v": [
+        "24",
+        "12",
+        "6",
+        "18"
+      ],
+      "t": 3,
+      "izoh": "Ketma-ket uchta hadning yig'indisi o'rtanchasining uch barobariga teng: 3a₂ = 36, demak a₂ = 12. Chetki hadlar farqi a₃ − a₁ = 2d = 12, ya'ni d = 6. Shunga ko'ra a₃ = 12 + 6 = 18. 24 varianti o'rtanchaga butun farqni qo'shgan, 12 esa o'rtanchani, 6 esa eng kichik sonni javob deb olgan xato. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hadlar-nisbati-shart",
+      "id": "matematika_prog_m02-arifmetik-progressiya#cd66c86c"
+    }
+  ]
+}

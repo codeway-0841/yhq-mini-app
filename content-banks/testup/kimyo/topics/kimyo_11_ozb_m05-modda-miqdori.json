@@ -1,0 +1,531 @@
+{
+  "nom": "05-mavzu. Modda miqdori",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Bir xil element atomlaridan tashkil topgan moddalar qanday ataladi?",
+      "v": [
+        "Oddiy moddalar",
+        "Murakkab moddalar",
+        "Gazsimon moddalar",
+        "Suyuq moddalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikda bir xil element atomlaridan tashkil topgan moddalar oddiy moddalar deb atalishi yozilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#f02f15ba"
+    },
+    {
+      "q": "Turli xil element atomlaridan iborat moddalar qanday ataladi?",
+      "v": [
+        "Murakkab moddalar",
+        "Oddiy moddalar",
+        "Toza moddalar",
+        "Aralashmalar"
+      ],
+      "t": 0,
+      "izoh": "Turli xil element atomlaridan iborat moddalar murakkab moddalar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#cfdc22ad"
+    },
+    {
+      "q": "Modda miqdorining o'lchov birligi nima?",
+      "v": [
+        "Mol",
+        "Gramm",
+        "Kilogramm",
+        "Litrlar"
+      ],
+      "t": 0,
+      "izoh": "Modda miqdorining o'lchov birligi mol hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#cda6de64"
+    },
+    {
+      "q": "Mol deb nimaga aytiladi?",
+      "v": [
+        "Moddaning 12C izotopining 6,02·10^23 ta C-atomlari soniga teng zarracha (molekula, atom, ion) saqlagan miqdoriga",
+        "Moddaning 1 gramm massasiga teng miqdoriga",
+        "Moddaning normal sharoitdagi 1 litr hajmiga",
+        "Moddaning 22,4 l hajmiga teng miqdoriga"
+      ],
+      "t": 0,
+      "izoh": "Darslikda molning ta'rifi 12C izotopining 6,02·10^23 ta atomi soniga teng zarracha saqlagan miqdor deb berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#de4c1932"
+    },
+    {
+      "q": "Moddaning massasi qaysi birliklarda o'lchanadi?",
+      "v": [
+        "Gramm va kilogrammlarda",
+        "Mollarda",
+        "Litrlarda",
+        "Atmosfera bosimlarida"
+      ],
+      "t": 0,
+      "izoh": "Massa gramm va kilogrammlarda, modda miqdori esa mollarda hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#ff47f92d"
+    },
+    {
+      "q": "Suvning molekulyar massasi 18 u.b. ga teng. Suvning 1 moli necha grammga teng?",
+      "v": [
+        "18 gramm",
+        "8 gramm",
+        "22,4 gramm",
+        "36 gramm"
+      ],
+      "t": 0,
+      "izoh": "Darslikda suvning 1 moli 18 grammga teng bo'ladi deb keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#6e186555"
+    },
+    {
+      "q": "1 kilomol (kmol) necha molga teng?",
+      "v": [
+        "1000 molga",
+        "100 molga",
+        "10 molga",
+        "0,001 molga"
+      ],
+      "t": 0,
+      "izoh": "1 kmol = 1000 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#e980449a"
+    },
+    {
+      "q": "1 mmol necha molga teng?",
+      "v": [
+        "0,001 molga",
+        "1000 molga",
+        "0,01 molga",
+        "100 molga"
+      ],
+      "t": 0,
+      "izoh": "1 mmol 0,001 molga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#a215a4ae"
+    },
+    {
+      "q": "Modda miqdorini (n) hisoblash formulasi qanday?",
+      "v": [
+        "n = m/M",
+        "n = m·M",
+        "n = M/m",
+        "n = m + M"
+      ],
+      "t": 0,
+      "izoh": "n(mol) = m(gramm)/M(gramm/mol) formula bilan topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#a65b65a9"
+    },
+    {
+      "q": "28 gramm KOH da necha mol modda bor? M(KOH) = 56 g/mol.",
+      "v": [
+        "0,5 mol",
+        "1 mol",
+        "2 mol",
+        "0,25 mol"
+      ],
+      "t": 0,
+      "izoh": "n = 28/56 = 0,5 mol (darslikdagi misol).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#e4696dc1"
+    },
+    {
+      "q": "Moddaning molyar massasi deb nimaga aytiladi?",
+      "v": [
+        "Uning bir molining massasiga",
+        "Uning bir grammiga",
+        "Uning bir litriga",
+        "Uning bir atomining massasiga"
+      ],
+      "t": 0,
+      "izoh": "Molyar massa — moddaning bir molining massasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#d670cfe4"
+    },
+    {
+      "q": "Moddaning molyar massasi qaysi birlik bilan ifodalanadi?",
+      "v": [
+        "g/mol bilan",
+        "mol/g bilan",
+        "kg bilan",
+        "l/mol bilan"
+      ],
+      "t": 0,
+      "izoh": "Molyar massa bir molga to'g'ri keladigan grammlar (g/mol) bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#e414f14c"
+    },
+    {
+      "q": "Darslikda keltirilgan molyar massalarga ko'ra M(H2) nechaga teng?",
+      "v": [
+        "2 g/mol",
+        "1 g/mol",
+        "4 g/mol",
+        "22,4 g/mol"
+      ],
+      "t": 0,
+      "izoh": "Darslikda M(H2) = 2 g/mol deb berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#4276be21"
+    },
+    {
+      "q": "Darslikda keltirilgan molyar massalarga ko'ra M(FeS) nechaga teng?",
+      "v": [
+        "88 g/mol",
+        "56 g/mol",
+        "32 g/mol",
+        "72 g/mol"
+      ],
+      "t": 0,
+      "izoh": "Darslikda M(FeS) = 88 g/mol deb berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#c7e5fa90"
+    },
+    {
+      "q": "Darslikda keltirilgan molyar massalarga ko'ra M(Fe) va M(S) nechaga teng?",
+      "v": [
+        "56 g/mol va 32 g/mol",
+        "32 g/mol va 56 g/mol",
+        "88 g/mol va 32 g/mol",
+        "56 g/mol va 16 g/mol"
+      ],
+      "t": 0,
+      "izoh": "M(Fe) = 56 g/mol, M(S) = 32 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#3842a203"
+    },
+    {
+      "q": "Molyar massa nimalar bilan son jihatdan mos keladi?",
+      "v": [
+        "Atom va molekulalarning massalari (m.a.b.da) hamda nisbiy atom va molekulyar massalar bilan",
+        "Faqt moddaning hajmi bilan",
+        "Faqt moddaning zichligi bilan",
+        "Gazning bosimi bilan"
+      ],
+      "t": 0,
+      "izoh": "Molyar massa atom va molekulalarning massalari hamda nisbiy atom va molekulyar massalar bilan son jihatdan mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#51371788"
+    },
+    {
+      "q": "Fe + S = FeS reaksiyasida moddalar qanday molyar nisbatda ta'sirlashadi?",
+      "v": [
+        "1 mol : 1 mol : 1 mol",
+        "1 mol : 2 mol : 1 mol",
+        "2 mol : 1 mol : 2 mol",
+        "1 mol : 1 mol : 2 mol"
+      ],
+      "t": 0,
+      "izoh": "Reaksiya tenglamasida Fe, S va FeS har biri 1 moldan qatnashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#4241357e"
+    },
+    {
+      "q": "Massaning saqlanish qonuni qanday ifodalanadi?",
+      "v": [
+        "Reaksiyaga kirishayotgan moddalar massasining yig'indisi reaksiya natijasida hosil bo'lgan moddalar massalari yig'indisiga tengdir",
+        "Reaksiya mahsulotlarining massasi boshlang'ich moddalar massasidan har doim katta bo'ladi",
+        "Reaksiyada massaning bir qismi energiyaga aylanib yo'qoladi",
+        "Faqat gazlarning massasi saqlanib qoladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikda massaning saqlanish qonuni shunday ifodalangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#a99ae06a"
+    },
+    {
+      "q": "Atom molekulyar ta'limot nuqtayi nazaridan massaning saqlanish qonuni qanday tushuntiriladi?",
+      "v": [
+        "Kimyoviy reaksiya natijasida atomlar yo'qolmaydi va yo'qdan paydo ham bo'lmaydi, balki qayta gruppalanadi",
+        "Atomlar reaksiyada yangi elementlarga aylanadi",
+        "Atomlarning bir qismi energiyaga aylanadi",
+        "Reaksiyada atomlar soni kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Atomlar reaksiyadan oldin ham, keyin ham o'zgarmaganligi sababli ularning umumiy massasi ham o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#0deb6bcf"
+    },
+    {
+      "q": "CO2 da uglerodning miqdoriy ulushi necha foizga teng?",
+      "v": [
+        "27,27 %",
+        "22,27 %",
+        "72,73 %",
+        "50 %"
+      ],
+      "t": 0,
+      "izoh": "M(CO2) = 44 g/mol; uglerod ulushi 12/44·100 = 27,27 % (darslikdagi 22,27 % yozuvi bosma xato, chunki 27,27 % + 72,73 % = 100 %).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#807f1939"
+    },
+    {
+      "q": "CO2 da kislorodning miqdoriy ulushi necha foizga teng (darslik bo'yicha)?",
+      "v": [
+        "72,73 %",
+        "22,27 %",
+        "77,23 %",
+        "66,67 %"
+      ],
+      "t": 0,
+      "izoh": "CO2 da kislorodniki 72,73 % (miqdoriy tarkib).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#f58f55dc"
+    },
+    {
+      "q": "Har qanday kimyoviy toza birikma qanday tarkibga ega?",
+      "v": [
+        "Olinish usulidan qat'i nazar, o'zgarmas miqdoriy tarkibga",
+        "Olinish usuliga qarab o'zgaruvchan tarkibga",
+        "Faqat sifat jihatdan o'zgarmas tarkibga",
+        "Tasodifiy tarkibga"
+      ],
+      "t": 0,
+      "izoh": "Har qanday kimyoviy toza birikma, olinish usulidan qat'i nazar, o'zgarmas miqdoriy tarkibga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#46ee81b7"
+    },
+    {
+      "q": "CO2 uglerod bilan kisloroddan qanday tarkib topgan?",
+      "v": [
+        "Sifat tarkibi",
+        "Miqdoriy tarkibi",
+        "Fizik tarkib",
+        "Mexanik tarkib"
+      ],
+      "t": 0,
+      "izoh": "CO2 uglerod bilan kisloroddan sifat tarkibi bo'yicha tashkil topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#9e1f27c9"
+    },
+    {
+      "q": "Atomlarning massasi o'zgarmas bo'lganligi sababli moddaning qanday tarkibi o'zgarmas bo'ladi?",
+      "v": [
+        "Massa tarkibi",
+        "Hajmiy tarkibi",
+        "Agregat holati",
+        "Fizik xossalari"
+      ],
+      "t": 0,
+      "izoh": "Atomlarning massasi o'zgarmas bo'lganligi sababli moddaning massa tarkibi ham umuman o'zgarmas bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#b775d93d"
+    },
+    {
+      "q": "1-masalada: oltingugurt bilan reaksiyada 0,5 mol temir ishtirok etsa, temirning massasi necha gramm?",
+      "v": [
+        "28 g",
+        "56 g",
+        "14 g",
+        "112 g"
+      ],
+      "t": 0,
+      "izoh": "m = M·n = 56 g/mol · 0,5 mol = 28 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#8815204e"
+    },
+    {
+      "q": "1-masalada massani hisoblash uchun qaysi formula ishlatilgan?",
+      "v": [
+        "m = M · n",
+        "m = M / n",
+        "m = n / M",
+        "m = M + n"
+      ],
+      "t": 0,
+      "izoh": "M = m/n formuladan m = M·n keltirib chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#284985de"
+    },
+    {
+      "q": "2-masalada: reaksiya natijasida 22 g temir (II) sulfid olindi. Bu massaga qancha modda miqdori to'g'ri keladi? M(FeS) = 88 g/mol.",
+      "v": [
+        "0,25 mol",
+        "0,5 mol",
+        "1 mol",
+        "2 mol"
+      ],
+      "t": 0,
+      "izoh": "88 g : 22 g = 1 mol : x mol; x = 0,25 mol FeS.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#e9443cc6"
+    },
+    {
+      "q": "3-masalada: 264 g massali oltingugurtda atom holidagi oltingugurt moddasidan qancha miqdorda bor?",
+      "v": [
+        "8,25 mol",
+        "8 mol",
+        "6,6 mol",
+        "0,82 mol"
+      ],
+      "t": 0,
+      "izoh": "264/32 = 8,25 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#6a43cdaa"
+    },
+    {
+      "q": "4-masalada: 14,2 g Na2SO4 da necha mol natriy sulfat bor?",
+      "v": [
+        "0,1 mol",
+        "1 mol",
+        "0,2 mol",
+        "0,01 mol"
+      ],
+      "t": 0,
+      "izoh": "Mr(Na2SO4) = 142; 14,2/142 = 0,1 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#938ca2c2"
+    },
+    {
+      "q": "Na2SO4 ning nisbiy molekulyar massasi qanday hisoblanadi (darslik bo'yicha)?",
+      "v": [
+        "23·2 + 32 + 16·4 = 142",
+        "23 + 32 + 16·4 = 119",
+        "23·2 + 32 + 16 = 94",
+        "23·2 + 16·4 = 110"
+      ],
+      "t": 0,
+      "izoh": "Mr(Na2SO4) = 23·2+32+16·4 = 142.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#bdaaf73a"
+    },
+    {
+      "q": "5-masalada: kumushning nisbiy atom massasi 108 ga teng. Bir atom kumushning grammlar hisobidagi massasi nechaga teng?",
+      "v": [
+        "1,79·10^-22 g",
+        "1,79·10^-23 g",
+        "108 g",
+        "6,02·10^23 g"
+      ],
+      "t": 0,
+      "izoh": "108/(6,02·10^23) = 1,79·10^-22 g (darslikdagi 10^-24 daraja ko'rsatkichi bosma xato).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#de8fc2dd"
+    },
+    {
+      "q": "Bir mol moddada nechta zarracha (molekula, atom, ion) bo'ladi?",
+      "v": [
+        "6,02·10^23 ta",
+        "6,02·10^22 ta",
+        "3,01·10^23 ta",
+        "12,04·10^23 ta"
+      ],
+      "t": 0,
+      "izoh": "Modda tarkibidagi zarrachalar soni 6,02·10^23 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#5b02b4b7"
+    },
+    {
+      "q": "Moddaning massasi va miqdori qanday tushunchalar?",
+      "v": [
+        "Har xil tushunchalar",
+        "Bir xil tushunchalar",
+        "Faqat gazlar uchun bir xil tushunchalar",
+        "Sinonim atamalar"
+      ],
+      "t": 0,
+      "izoh": "Moddaning massasi va miqdori har xil tushunchalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#83c0e7b1"
+    },
+    {
+      "q": "Kimyoviy hisoblarda 1 kilomol qanday belgilanadi?",
+      "v": [
+        "kmol",
+        "mmol",
+        "mol/l",
+        "g/mol"
+      ],
+      "t": 0,
+      "izoh": "1 kilomol (kmol) 1000 molga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#e0ad8b7a"
+    },
+    {
+      "q": "Kumush atomlarining molyar massasi nimaga teng deb olingan (5-masala)?",
+      "v": [
+        "108 g/molga",
+        "96 g/molga",
+        "64 g/molga",
+        "23 g/molga"
+      ],
+      "t": 0,
+      "izoh": "Kumush atomlarining molyar massasi son jihatdan nisbiy atom massasiga teng — 108 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m05-modda-miqdori#de2643e3"
+    }
+  ]
+}

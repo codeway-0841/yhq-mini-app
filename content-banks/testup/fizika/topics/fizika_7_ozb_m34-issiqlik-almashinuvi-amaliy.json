@@ -1,0 +1,381 @@
+{
+  "nom": "34-mavzu. Issiqlik Almashinuvi Amaliy",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "34-amaliy mashg'ulotning maqsadi nima?",
+      "v": [
+        "Issiq va sovuq suvlarning issiqlik miqdorini aniqlash va aralashmaning issiqlik miqdorlarini taqqoslash",
+        "Suvning zichligini aniqlash",
+        "Suvning qaynash temperaturasini aniqlash",
+        "Metallning solishtirma issiqlik sig'imini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Mashg'ulot maqsadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#f972681a"
+    },
+    {
+      "q": "Amaliy mashg'ulot uchun qanday jihozlar kerak?",
+      "v": [
+        "0,5 l sig'imli ikkita plastik idish, termometr, menzurka, isitkich, suv",
+        "Tarozi, shkalali chizg'ich, sekundomer",
+        "Barometr, termos, stakan",
+        "Dinamometr, blok, sim"
+      ],
+      "t": 0,
+      "izoh": "Jihozlar ro'yxati",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#2094699b"
+    },
+    {
+      "q": "Issiq suvning massasi (m₁) qanday aniqlanadi?",
+      "v": [
+        "Menzurka darajasiga ko'ra",
+        "Tarozi yordamida",
+        "Termometr yordamida",
+        "Dinamometr yordamida"
+      ],
+      "t": 0,
+      "izoh": "Menzurka orqali",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#a9e244ab"
+    },
+    {
+      "q": "Issiq suvning temperaturasi (t₁) qanday o'lchanadi?",
+      "v": [
+        "Termometr yordamida",
+        "Menzurka yordamida",
+        "Barometr yordamida",
+        "Sekundomer yordamida"
+      ],
+      "t": 0,
+      "izoh": "Termometr bilan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#c7569f3e"
+    },
+    {
+      "q": "Sovuq suv qaysi idishga quyiladi?",
+      "v": [
+        "Ikkinchi plastik idishga",
+        "Birinchi plastik idishga",
+        "Isitkichga",
+        "Termosga"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi idishga",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#6333b576"
+    },
+    {
+      "q": "Sovuq suv issiq suvga quyilgach qancha vaqt kutiladi?",
+      "v": [
+        "1 minut",
+        "10 minut",
+        "1 soat",
+        "5 sekund"
+      ],
+      "t": 0,
+      "izoh": "1 minut kutish",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#a90f93de"
+    },
+    {
+      "q": "Aralashma temperaturasi qanday harf bilan belgilanadi?",
+      "v": [
+        "t",
+        "t₁",
+        "t₂",
+        "T"
+      ],
+      "t": 0,
+      "izoh": "t bilan belgilanadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#b0f38c97"
+    },
+    {
+      "q": "Aralashmada issiq suv bergan issiqlik miqdori qanday formula bilan hisoblanadi?",
+      "v": [
+        "Q₁ = c·m₁·(t₁ − t)",
+        "Q₁ = c·m₁·(t − t₁)",
+        "Q₁ = q·m₁",
+        "Q₁ = λ·m₁"
+      ],
+      "t": 0,
+      "izoh": "Q₁ = cm₁(t₁−t)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#7228c041"
+    },
+    {
+      "q": "Aralashmada sovuq suv olgan issiqlik miqdori qanday formula bilan hisoblanadi?",
+      "v": [
+        "Q₂ = c·m₂·(t − t₂)",
+        "Q₂ = c·m₂·(t₂ − t)",
+        "Q₂ = q·m₂",
+        "Q₂ = r·m₂"
+      ],
+      "t": 0,
+      "izoh": "Q₂ = cm₂(t−t₂)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#279d9e33"
+    },
+    {
+      "q": "Q₁ va Q₂ formulalaridagi c nimani anglatadi?",
+      "v": [
+        "Suvning solishtirma issiqlik sig'imini",
+        "Suvning zichligini",
+        "Suvning massasini",
+        "Suvning hajmini"
+      ],
+      "t": 0,
+      "izoh": "c — solishtirma issiqlik sig'imi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#21168eda"
+    },
+    {
+      "q": "Suvning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "4200 J/(kg·°C)",
+        "2100 J/(kg·°C)",
+        "880 J/(kg·°C)",
+        "460 J/(kg·°C)"
+      ],
+      "t": 0,
+      "izoh": "Suv — 4200",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#b9606b99"
+    },
+    {
+      "q": "Tajriba oxirida Q₁ va Q₂ ning son qiymatlari qanday bo'lishi kutiladi?",
+      "v": [
+        "Taxminan teng (yaqin) bo'lishi",
+        "Q₁ har doim Q₂ dan ancha katta bo'lishi",
+        "Q₂ har doim Q₁ dan ancha katta bo'lishi",
+        "Ikkalasi ham nolga teng bo'lishi"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik balansi bo'yicha",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#11cb2737"
+    },
+    {
+      "q": "Q₁ va Q₂ qiymatlari biroz farq qilishi mumkinligining sababi nima?",
+      "v": [
+        "Issiqlikning bir qismi atrof-muhitga uzatiladi",
+        "Suvning massasi o'zgaradi",
+        "Termometr suvni isitadi",
+        "Menzurka xato ko'rsatadi"
+      ],
+      "t": 0,
+      "izoh": "Atrofga issiqlik yo'qotiladi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#c5c419e0"
+    },
+    {
+      "q": "Amaliy mashg'ulotda suv massasi menzurka orqali aniqlanganda suvning qanday kattaligidan foydalaniladi?",
+      "v": [
+        "Zichligidan",
+        "Temperaturasidan",
+        "Solishtirma issiqlik sig'imidan",
+        "Qaynash temperaturasidan"
+      ],
+      "t": 0,
+      "izoh": "m = ρ·V orqali",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#e25b2f2a"
+    },
+    {
+      "q": "Suvning zichligi qancha deb olinadi?",
+      "v": [
+        "1000 kg/m³",
+        "4200 kg/m³",
+        "100 kg/m³",
+        "2100 kg/m³"
+      ],
+      "t": 0,
+      "izoh": "ρ = 1000 kg/m³",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#e0af9980"
+    },
+    {
+      "q": "0,5 l suvning massasi qancha?",
+      "v": [
+        "0,5 kg",
+        "5 kg",
+        "0,05 kg",
+        "50 kg"
+      ],
+      "t": 0,
+      "izoh": "1 l suv = 1 kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#6dd7b474"
+    },
+    {
+      "q": "Issiq suv birinchi idishga quyilgach, dastlab uning temperaturasi o'lchanadimi yoki massasimi?",
+      "v": [
+        "Avval massasi menzurkada, keyin temperaturasi idishda o'lchanadi",
+        "Faqat temperaturasi o'lchanadi",
+        "Faqat massasi o'lchanadi",
+        "Ikkalasi bir vaqtda o'lchanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Bajarish tartibi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#4a0a5928"
+    },
+    {
+      "q": "Issiq suv temperaturasi t₁ bilan, sovuq suv temperaturasi t₂ bilan belgilanganda qaysi katta?",
+      "v": [
+        "t₁ > t₂",
+        "t₁ < t₂",
+        "t₁ = t₂",
+        "t₁ = 0"
+      ],
+      "t": 0,
+      "izoh": "Issiq suv temperaturasi yuqori",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#260ff556"
+    },
+    {
+      "q": "Aralashmaning temperaturasi t qanday qiymat oralig'ida bo'ladi?",
+      "v": [
+        "t₂ < t < t₁",
+        "t > t₁",
+        "t < t₂",
+        "t = t₁"
+      ],
+      "t": 0,
+      "izoh": "Oraliq temperatura",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#2712c928"
+    },
+    {
+      "q": "Issiq suv issiqlik berayotganda uning temperaturasi qanday o'zgaradi?",
+      "v": [
+        "t₁ dan t gacha pasayadi",
+        "t₁ dan t₂ gacha oshadi",
+        "O'zgarmaydi",
+        "Nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Issiq suv soviydi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#f1d887c6"
+    },
+    {
+      "q": "Sovuq suv issiqlik olayotganda uning temperaturasi qanday o'zgaradi?",
+      "v": [
+        "t₂ dan t gacha ko'tariladi",
+        "t₂ dan t₁ gacha pasayadi",
+        "O'zgarmaydi",
+        "100 °C ga yetadi"
+      ],
+      "t": 0,
+      "izoh": "Sovuq suv isiydi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#58d2a693"
+    },
+    {
+      "q": "Issiqlik almashinuv jarayoni qachon to'xtaydi?",
+      "v": [
+        "Aralashma temperaturasi tekislanganda",
+        "Suv qaynaganda",
+        "Suv muzlaganda",
+        "Suv bug'langanda"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik muvozanati",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#f8d1801f"
+    },
+    {
+      "q": "Amaliy mashg'ulotda natijalar qayerga yoziladi?",
+      "v": [
+        "Dastlab chizilgan jadvalga",
+        "Doskaga",
+        "Termometr shkalasiga",
+        "Yozilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga yoziladi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#b1b7f2bf"
+    },
+    {
+      "q": "Issiq suv bergan issiqlik miqdori Q₁ manfiy yoki musbat hisoblanadimi (bu tajribada)?",
+      "v": [
+        "Musbat qiymat hisoblanadi (berilgan issiqlik miqdori)",
+        "Har doim manfiy",
+        "Nolga teng",
+        "Hisoblanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Modul bo'yicha solishtiriladi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#d2746748"
+    },
+    {
+      "q": "Bu amaliy mashg'ulot qaysi fizik kattalikni tajribada tasdiqlashga xizmat qiladi?",
+      "v": [
+        "Issiqlik miqdorini va issiqlik balansini",
+        "Atmosfera bosimini",
+        "Elektr zaryadini",
+        "Yorug'lik tezligini"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik almashinuvi qonuni",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy#71997969"
+    }
+  ]
+}

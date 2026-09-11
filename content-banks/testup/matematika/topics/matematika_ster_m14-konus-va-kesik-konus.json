@@ -1,0 +1,1609 @@
+{
+  "nom": "Konus va kesik konus",
+  "bolim": "Stereometriya",
+  "blok": "ster",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Sirk chodiri konus shaklida qurilgan: asos radiusi 9 m, balandligi 12 m. Chodir uchidan asos chetigacha tortilgan arqonning uzunligi necha metr?",
+      "v": [
+        "21 m",
+        "108 m",
+        "15 m",
+        "3 m"
+      ],
+      "t": 2,
+      "izoh": "Balandlik, radius va yasovchi to'g'ri burchakli uchburchak hosil qiladi. Pifagor teoremasiga ko'ra l² = 9² + 12² = 81 + 144 = 225, demak l = √225 = 15 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='109.3' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='101.3' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='166.7' font-size='13' fill='%23334155' text-anchor='end'%3E12 m%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E9 m%3C/text%3E%3Ctext x='205' y='166.7' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yasovchi-topish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#98a16c93"
+    },
+    {
+      "q": "Bog'dagi qum uyumi konus shaklida bo'lib, asos diametri 16 m, balandligi esa 6 m. Uyum cho'qqisidan asos chekkasigacha bo'lgan masofa qancha?",
+      "v": [
+        "10 m",
+        "14 m",
+        "17,1 m",
+        "48 m"
+      ],
+      "t": 0,
+      "izoh": "Avval radiusni topamiz: r = 16 : 2 = 8 m. Endi l² = 8² + 6² = 64 + 36 = 100 bo'lgani uchun l = 10 m. Diametrni radius deb olish keng tarqalgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='159.5' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='159.5' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='159.5' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='64' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='151.5' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='191.8' font-size='13' fill='%23334155' text-anchor='end'%3E6 m%3C/text%3E%3Ctext x='150' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E16 m%3C/text%3E%3Ctext x='205' y='191.8' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yasovchi-topish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#a767e4bd"
+    },
+    {
+      "q": "Konusning asos radiusi 5 sm, balandligi esa 5√3 sm ga teng. Shu konusning yasovchisi necha santimetrga teng bo'ladi?",
+      "v": [
+        "5√3 sm",
+        "5 + 5√3 sm",
+        "100 sm",
+        "10 sm"
+      ],
+      "t": 3,
+      "izoh": "l² = 5² + (5√3)² hisoblanadi. Ildizli kattalikni kvadratga ko'targanda (5√3)² = 25·3 = 75 bo'ladi. Demak l² = 25 + 75 = 100 va l = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='75' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='75' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='75' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='149.5' font-size='13' fill='%23334155' text-anchor='end'%3E5√3 sm%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='205' y='149.5' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yasovchi-topish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#755223a0"
+    },
+    {
+      "q": "Qog'ozdan yasalgan konus shaklidagi bayram qalpog'ining balandligi 24 sm, asos aylanasining uzunligi esa 20π sm. Qalpoqning yasovchisi necha santimetr?",
+      "v": [
+        "34 sm",
+        "26 sm",
+        "676 sm",
+        "26π sm"
+      ],
+      "t": 1,
+      "izoh": "Aylana uzunligidan radiusni topamiz: 2πr = 20π, demak r = 10 sm. So'ng l² = 10² + 24² = 100 + 576 = 676 va l = √676 = 26 sm. Ildiz olishni unutmaslik kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 86.7 224 A 63.3 19 0 0 1 213.3 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 86.7 224 A 63.3 19 0 0 0 213.3 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='86.7' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='213.3' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='213.3' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='221.3' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='148' font-size='13' fill='%23334155' text-anchor='end'%3E24 sm%3C/text%3E%3Ctext x='181.7' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='193.7' y='148' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='150' y='280' font-size='13' fill='%23334155' text-anchor='middle'%3Easos aylanasi 20π sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yasovchi-topish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#0a759824"
+    },
+    {
+      "q": "Anvarning omborida bug'doy konus shaklida uyilgan: uyum asosining radiusi 3 m, cho'qqidan asos chetigacha bo'lgan yasovchi esa 5 m. Uyum balandligi necha metr?",
+      "v": [
+        "8 m",
+        "4 m",
+        "2 m",
+        "5,8 m"
+      ],
+      "t": 1,
+      "izoh": "Yasovchi gipotenuza, radius va balandlik katetlar bo'ladi. Shuning uchun h² = 5² − 3² = 25 − 9 = 16 va h = 4 m. Bu yerda ayirish kerak, qo'shish emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='109.3' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='101.3' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='166.7' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E3 m%3C/text%3E%3Ctext x='205' y='166.7' font-size='13' fill='%23334155' text-anchor='start'%3E5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-topish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#6df255c8"
+    },
+    {
+      "q": "Konusning yasovchisi 13 sm, asos diametri esa 10 sm ga teng. Shu konusning balandligi necha santimetrga teng bo'ladi?",
+      "v": [
+        "8,3 sm",
+        "18 sm",
+        "3 sm",
+        "12 sm"
+      ],
+      "t": 3,
+      "izoh": "Diametrdan radius topiladi: r = 10 : 2 = 5 sm. Endi h² = 13² − 5² = 169 − 25 = 144 bo'ladi, bundan h = 12 sm. Diametrni to'g'ridan-to'g'ri qo'ysak natija noto'g'ri chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 86.7 224 A 63.3 19 0 0 1 213.3 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 86.7 224 A 63.3 19 0 0 0 213.3 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='86.7' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='213.3' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='86.7' y1='224' x2='213.3' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='221.3' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='148' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='150' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='193.7' y='148' font-size='13' fill='%23334155' text-anchor='start'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-topish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#0950c5be"
+    },
+    {
+      "q": "Konusning yasovchisi asos radiusidan 4 sm uzun. Asos radiusi 6 sm bo'lsa, konus balandligi necha santimetrga teng?",
+      "v": [
+        "8 sm",
+        "4 sm",
+        "6 sm",
+        "16 sm"
+      ],
+      "t": 0,
+      "izoh": "Yasovchi l = 6 + 4 = 10 sm ga teng. Endi h² = 10² − 6² = 100 − 36 = 64 va h = 8 sm. Ayirmadagi 4 sm balandlik emas, yasovchi bilan radius farqi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='109.3' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='101.3' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='166.7' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='205' y='166.7' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-topish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#05faa811"
+    },
+    {
+      "q": "Konus shaklidagi voronkaning yasovchisi 25 sm, yon sirtining yuzasi esa 375π sm². Shu voronkaning balandligi necha santimetr?",
+      "v": [
+        "15 sm",
+        "10 sm",
+        "20 sm",
+        "40 sm"
+      ],
+      "t": 2,
+      "izoh": "Yon sirt formulasidan radiusni topamiz: πrl = 375π, ya'ni 25r = 375 va r = 15 sm. So'ngra h² = 25² − 15² = 625 − 225 = 400 bo'lib, h = 20 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='109.3' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='101.3' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='166.7' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='205' y='166.7' font-size='13' fill='%23334155' text-anchor='start'%3E25 sm%3C/text%3E%3Ctext x='150' y='280' font-size='13' fill='%23334155' text-anchor='middle'%3Eyon sirt 375π sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-topish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#966ff621"
+    },
+    {
+      "q": "Novvoyxonada un konus shaklida uyilgan bo'lib, uyum balandligi 1,2 m, yasovchisi esa 2 m. Uyum asosining radiusi necha metr?",
+      "v": [
+        "1,6 m",
+        "0,8 m",
+        "3,2 m",
+        "2,33 m"
+      ],
+      "t": 0,
+      "izoh": "Radius kateti sifatida topiladi: r² = 2² − 1,2² = 4 − 1,44 = 2,56. Bundan r = √2,56 = 1,6 m. Yasovchi va balandlikni ayirish esa noto'g'ri usul.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='159.5' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='159.5' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='159.5' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='151.5' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='191.8' font-size='13' fill='%23334155' text-anchor='end'%3E1,2 m%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='205' y='191.8' font-size='13' fill='%23334155' text-anchor='start'%3E2 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radius-topish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#d6461e01"
+    },
+    {
+      "q": "Konusning balandligi 8 sm, yasovchisi esa 17 sm ga teng bo'lsa, uning asos aylanasining uzunligi necha santimetr bo'ladi?",
+      "v": [
+        "15π sm",
+        "50π sm",
+        "30π sm",
+        "225π sm"
+      ],
+      "t": 2,
+      "izoh": "Avval radius: r² = 17² − 8² = 289 − 64 = 225, demak r = 15 sm. Aylana uzunligi C = 2πr = 2π·15 = 30π sm. Radiusni to'g'ridan-to'g'ri javob deb olmaslik kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='178.1' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='178.1' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='178.1' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='170.1' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='201.1' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='205' y='201.1' font-size='13' fill='%23334155' text-anchor='start'%3E17 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-topish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#51171ded"
+    },
+    {
+      "q": "Konusning balandligi yasovchisining yarmiga teng va yasovchi 12 sm ga teng. Shu konus asosining radiusi qancha?",
+      "v": [
+        "6 sm",
+        "6√3 sm",
+        "6√2 sm",
+        "12√3 sm"
+      ],
+      "t": 1,
+      "izoh": "Balandlik h = 12 : 2 = 6 sm. Endi r² = 12² − 6² = 144 − 36 = 108 bo'ladi. 108 = 36·3 bo'lgani uchun r = 6√3 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='174.3' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='174.3' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='174.3' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='166.3' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='199.2' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='205' y='199.2' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-topish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#9f630261"
+    },
+    {
+      "q": "Konusning o'q kesimi yuzasi 96 sm², balandligi esa 12 sm ga teng. Shu konus asosining radiusi necha santimetr?",
+      "v": [
+        "16 sm",
+        "4 sm",
+        "12 sm",
+        "8 sm"
+      ],
+      "t": 3,
+      "izoh": "O'q kesimi asosi 2r va balandligi h bo'lgan uchburchak, uning yuzasi S = r·h. Demak 12r = 96 va r = 8 sm. Bu yerda 2r = 16 sm — diametr, radius emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,88.5 57,228 243,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='88.5' x2='150' y2='228' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,228 141,219 150,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='80.5' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='49' y='233' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='233' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E2r%3C/text%3E%3Ctext x='143' y='158.3' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzasi 96 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-topish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#21d94ed6"
+    },
+    {
+      "q": "Bolalar bayrami uchun konus shaklidagi qalpoqcha tayyorlanmoqda: asos radiusi 7 sm, yasovchisi 25 sm. Bitta qalpoqchaga necha kvadrat santimetr qog'oz ketadi?",
+      "v": [
+        "350π sm²",
+        "87,5π sm²",
+        "224π sm²",
+        "175π sm²"
+      ],
+      "t": 3,
+      "izoh": "Qalpoqchaning asosi yopilmaydi, shuning uchun faqat yon sirt kerak: S = πrl. Qiymatlarni qo'yamiz: S = π·7·25 = 175π sm². Ikkilantirish yoki yarimga bo'lish shart emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 105.7 224 A 44.3 13.3 0 0 1 194.3 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 105.7 224 A 44.3 13.3 0 0 0 194.3 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='105.7' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='194.3' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='194.3' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='202.3' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='172.2' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='184.2' y='148' font-size='13' fill='%23334155' text-anchor='start'%3E25 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yon-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#dd929b59"
+    },
+    {
+      "q": "Asos diametri 12 sm va yasovchisi 10 sm bo'lgan konusning yon sirti yuzasi necha kvadrat santimetrga teng bo'ladi?",
+      "v": [
+        "120π sm²",
+        "60π sm²",
+        "96π sm²",
+        "48π sm²"
+      ],
+      "t": 1,
+      "izoh": "Diametrdan radius: r = 12 : 2 = 6 sm. Yon sirt S = πrl = π·6·10 = 60π sm². Agar asos yuzasi ham qo'shilsa 96π chiqadi, lekin savolda faqat yon sirt so'ralgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='109.3' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='64' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='101.3' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='150' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='205' y='166.7' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yon-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#1867880e"
+    },
+    {
+      "q": "Konusning balandligi 15 sm, asos radiusi esa 8 sm. Shu konusning yon sirti yuzasini toping.",
+      "v": [
+        "120π sm²",
+        "272π sm²",
+        "136π sm²",
+        "200π sm²"
+      ],
+      "t": 2,
+      "izoh": "Avval yasovchi: l² = 8² + 15² = 64 + 225 = 289, demak l = 17 sm. Endi S = πrl = π·8·17 = 136π sm². Formulaga balandlikni qo'yish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 68.9 224 A 81.1 24.3 0 0 1 231.1 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 68.9 224 A 81.1 24.3 0 0 0 231.1 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='68.9' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='231.1' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='231.1' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='239.1' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='148' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3Ctext x='190.5' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='202.5' y='148' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yon-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#03cbe9ac"
+    },
+    {
+      "q": "Konus shaklidagi tom qoplanmoqda: tom asosining aylanasi 44 m, yasovchisi 25 m. Bir kvadrat metr qoplama 15 000 so'm bo'lsa, jami xarajat qancha? (π ≈ 22/7)",
+      "v": [
+        "8 250 000 so'm",
+        "16 500 000 so'm",
+        "4 125 000 so'm",
+        "10 560 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Aylana uzunligidan radius: 2πr = 44, ya'ni r = 44·7 : 44 = 7 m. Yon sirt S = πrl = (22/7)·7·25 = 550 m². Xarajat 550·15 000 = 8 250 000 so'm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 105.7 224 A 44.3 13.3 0 0 1 194.3 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 105.7 224 A 44.3 13.3 0 0 0 194.3 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='105.7' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='194.3' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='194.3' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='202.3' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='172.2' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='184.2' y='148' font-size='13' fill='%23334155' text-anchor='start'%3E25 m%3C/text%3E%3Ctext x='150' y='280' font-size='13' fill='%23334155' text-anchor='middle'%3Easos aylanasi 44 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yon-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#d9cbbc99"
+    },
+    {
+      "q": "Asos radiusi 6 sm va yasovchisi 10 sm bo'lgan konusning to'la sirti yuzasi necha kvadrat santimetrga teng?",
+      "v": [
+        "60π sm²",
+        "96π sm²",
+        "36π sm²",
+        "132π sm²"
+      ],
+      "t": 1,
+      "izoh": "To'la sirt yon sirt bilan asos yuzasidan iborat: S = πrl + πr² = πr(l + r). Demak S = π·6·(10 + 6) = π·6·16 = 96π sm². Silindrdagidek ikkita asos qoshilsa 132π chiqib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='109.3' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='101.3' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='205' y='166.7' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#8fc02a45"
+    },
+    {
+      "q": "Konus shaklidagi choynak qopqog'ining asos radiusi 5 sm, balandligi 12 sm. Qopqoqning to'la sirti yuzasi necha kvadrat santimetr?",
+      "v": [
+        "90π sm²",
+        "65π sm²",
+        "25π sm²",
+        "85π sm²"
+      ],
+      "t": 0,
+      "izoh": "Yasovchi l² = 5² + 12² = 169 bo'lgani uchun l = 13 sm. To'la sirt S = πr(l + r) = π·5·(13 + 5) = 90π sm². Formulaga yasovchi o'rniga balandlikni qo'yish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 86.7 224 A 63.3 19 0 0 1 213.3 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 86.7 224 A 63.3 19 0 0 0 213.3 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='86.7' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='213.3' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='213.3' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='221.3' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='148' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='181.7' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='193.7' y='148' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#6853357b"
+    },
+    {
+      "q": "Konusning to'la sirti yuzasi 48π sm², asos radiusi esa 3 sm ga teng. Shu konusning yasovchisi necha santimetr?",
+      "v": [
+        "13 sm",
+        "16 sm",
+        "45 sm",
+        "19 sm"
+      ],
+      "t": 0,
+      "izoh": "To'la sirt S = πr(l + r) bo'lgani uchun 3π(l + 3) = 48π. Ikkala tomonni 3π ga bo'lamiz: l + 3 = 16, demak l = 13 sm. Radiusga bo'lishni unutsak 45 sm, faqat yon sirtdan chiqsak 16 sm, yig'indini javob desak 19 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 119 224 A 31 9.3 0 0 1 181 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 119 224 A 31 9.3 0 0 0 181 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='119' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='181' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='181' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='189' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='165.5' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3Ctext x='177.5' y='148' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='150' y='280' font-size='13' fill='%23334155' text-anchor='middle'%3Eto'la sirt 48π sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#dea31d50"
+    },
+    {
+      "q": "Sotuvchi konus shaklidagi qog'oz paketlar yasaydi: har birining asos diametri 14 sm, balandligi 24 sm. Bitta paketga asosi bilan birga necha kvadrat santimetr qog'oz ketadi? (π ≈ 22/7)",
+      "v": [
+        "550 sm²",
+        "154 sm²",
+        "1408 sm²",
+        "704 sm²"
+      ],
+      "t": 3,
+      "izoh": "Radius r = 7 sm, yasovchi l² = 7² + 24² = 625 dan l = 25 sm. To'la sirt S = πr(l + r) = (22/7)·7·32 = 704 sm². Faqat yon sirt olinsa 550 sm² chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 105.7 224 A 44.3 13.3 0 0 1 194.3 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 105.7 224 A 44.3 13.3 0 0 0 194.3 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='105.7' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='194.3' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='105.7' y1='224' x2='194.3' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='202.3' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='148' font-size='13' fill='%23334155' text-anchor='end'%3E24 sm%3C/text%3E%3Ctext x='150' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='184.2' y='148' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#db547651"
+    },
+    {
+      "q": "Asos radiusi 3 sm va balandligi 7 sm bo'lgan konusning hajmi necha kub santimetrga teng bo'ladi?",
+      "v": [
+        "63π sm³",
+        "7π sm³",
+        "21π sm³",
+        "49π sm³"
+      ],
+      "t": 2,
+      "izoh": "Konus hajmi V = (1/3)·π·r²·h formulasi bilan topiladi. Qiymatlarni qo'yamiz: V = (1/3)·π·9·7 = 21π sm³. Uchdan bir koeffitsientini tushirib qoldirsak 63π, radius bilan balandlikni almashtirsak 49π chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 84.9 224 A 65.1 19.5 0 0 1 215.1 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 84.9 224 A 65.1 19.5 0 0 0 215.1 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='84.9' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='215.1' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='215.1' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='223.1' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='148' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3Ctext x='182.6' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-hisoblash",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#f5338b5a"
+    },
+    {
+      "q": "Konus shaklidagi muzqaymoq stakanchasining ichki diametri 6 sm, chuqurligi 10 sm. Stakancha to'la to'ldirilsa, necha kub santimetr muzqaymoq sig'adi? (π ≈ 3,14)",
+      "v": [
+        "376,8 sm³",
+        "282,6 sm³",
+        "31,4 sm³",
+        "94,2 sm³"
+      ],
+      "t": 3,
+      "izoh": "Radius r = 6 : 2 = 3 sm. Hajm V = (1/3)·3,14·9·10 = 94,2 sm³. Diametrni radius deb olsak 376,8 chiqadi, uchdan birni unutsak 282,6 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 104.4 224 A 45.6 13.7 0 0 1 195.6 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 104.4 224 A 45.6 13.7 0 0 0 195.6 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='104.4' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='195.6' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='104.4' y1='224' x2='195.6' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='203.6' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='148' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Ctext x='150' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-hisoblash",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#cc625a8b"
+    },
+    {
+      "q": "Konusning balandligi 9 sm, asos aylanasining uzunligi esa 12π sm. Shu konusning hajmini toping.",
+      "v": [
+        "324π sm³",
+        "108π sm³",
+        "18π sm³",
+        "432π sm³"
+      ],
+      "t": 1,
+      "izoh": "Aylana uzunligidan 2πr = 12π, demak r = 6 sm. Endi V = (1/3)·π·36·9 = 108π sm³. Aylana uzunligidagi 12 sonini radius deb olsak 432π chiqib ketadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='95' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='95' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='95' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='87' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='159.5' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='280' font-size='13' fill='%23334155' text-anchor='middle'%3Easos aylanasi 12π sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-hisoblash",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#38700535"
+    },
+    {
+      "q": "Qumsoatning konus shaklidagi qismi balandligi 12 sm, asos radiusi 5 sm. Qum har daqiqada 25π sm³ tezlik bilan oqsa, to'la konus necha daqiqada bo'shaydi?",
+      "v": [
+        "4 daqiqa",
+        "12 daqiqa",
+        "16 daqiqa",
+        "9,6 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Konus hajmi V = (1/3)·π·25·12 = 100π sm³. Bo'shash vaqti hajmni tezlikka bo'lish orqali topiladi: 100π : 25π = 4 daqiqa. Uchdan birni unutsak 12, radius bilan balandlikni almashtirsak 9,6 daqiqa chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 86.7 224 A 63.3 19 0 0 1 213.3 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 86.7 224 A 63.3 19 0 0 0 213.3 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='86.7' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='213.3' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='213.3' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='221.3' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='148' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='181.7' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajm-hisoblash",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#e3fa09f8"
+    },
+    {
+      "q": "Konusning hajmi 48π sm³, asos radiusi esa 4 sm ga teng. Shu konusning balandligi necha santimetr?",
+      "v": [
+        "9 sm",
+        "3 sm",
+        "12 sm",
+        "36 sm"
+      ],
+      "t": 0,
+      "izoh": "Hajm formulasidan h = 3V : (πr²) kelib chiqadi. Demak h = 3·48π : (16π) = 144 : 16 = 9 sm. Uchga ko'paytirishni unutsak 3 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 82.4 224 A 67.6 20.3 0 0 1 217.6 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 82.4 224 A 67.6 20.3 0 0 0 217.6 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='82.4' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='217.6' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='217.6' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='225.6' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='148' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='183.8' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='150' y='280' font-size='13' fill='%23334155' text-anchor='middle'%3Ehajmi 48π sm³%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajmdan-olcham",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#f67a33b9"
+    },
+    {
+      "q": "Konusning hajmi 12π sm³, balandligi esa 4 sm. Shu konus asosining radiusi necha santimetrga teng bo'ladi?",
+      "v": [
+        "9 sm",
+        "1,7 sm",
+        "6 sm",
+        "3 sm"
+      ],
+      "t": 3,
+      "izoh": "Formuladan r² = 3V : (πh) = 3·12π : (4π) = 9 kelib chiqadi. Endi kvadrat ildiz olamiz: r = 3 sm. Ildiz olishni unutib 9 deb javob berish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='109.3' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='101.3' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='166.7' font-size='13' fill='%23334155' text-anchor='end'%3E4 sm%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='280' font-size='13' fill='%23334155' text-anchor='middle'%3Ehajmi 12π sm³%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajmdan-olcham",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#bf44f0e6"
+    },
+    {
+      "q": "Ustaxonada konus shaklidagi metall detal quyiladi. Detal hajmi 400π sm³, asos diametri esa 20 sm bo'lsa, uning balandligi necha santimetr?",
+      "v": [
+        "4 sm",
+        "3 sm",
+        "12 sm",
+        "48 sm"
+      ],
+      "t": 2,
+      "izoh": "Radius r = 20 : 2 = 10 sm. Balandlik h = 3V : (πr²) = 1200π : (100π) = 12 sm. Diametrni radius deb olsak yoki uchga ko'paytirmasak natija kichrayib ketadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='120.8' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='120.8' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='120.8' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='112.8' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='172.4' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='280' font-size='13' fill='%23334155' text-anchor='middle'%3Ehajmi 400π sm³, diametri 20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajmdan-olcham",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#db2c95db"
+    },
+    {
+      "q": "Konusning hajmi 243π sm³ va balandligi asos radiusiga teng. Shu konusning radiusi necha santimetr?",
+      "v": [
+        "6,2 sm",
+        "729 sm",
+        "18 sm",
+        "9 sm"
+      ],
+      "t": 3,
+      "izoh": "Shart bo'yicha h = r, shuning uchun V = (1/3)·π·r³ bo'ladi. Demak (1/3)r³ = 243, ya'ni r³ = 729 va r = 9 sm. Kub ildiz olishni unutsak 729, uchdan birni tashlasak 6,2 sm, diametrni javob desak 18 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='138' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='138' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='138' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='130' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='181' font-size='13' fill='%23334155' text-anchor='end'%3Er%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3Er%3C/text%3E%3Ctext x='150' y='280' font-size='13' fill='%23334155' text-anchor='middle'%3Ehajmi 243π sm³%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajmdan-olcham",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#a3a84dec"
+    },
+    {
+      "q": "Konusning asos radiusi 5 sm, balandligi esa 8 sm. Shu konusning o'q kesimi yuzasi necha kvadrat santimetr?",
+      "v": [
+        "80 sm²",
+        "20 sm²",
+        "40π sm²",
+        "40 sm²"
+      ],
+      "t": 3,
+      "izoh": "O'q kesimi asosi 2r = 10 sm va balandligi 8 sm bo'lgan teng yonli uchburchak. Yuzasi S = (1/2)·10·8 = 40 sm². Uchburchak yuzasida yarim koeffitsienti bor.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,79.2 57,228 243,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='79.2' x2='150' y2='228' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,228 141,219 150,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='71.2' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='49' y='233' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='233' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E2r%3C/text%3E%3Ctext x='143' y='153.6' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oq-kesim-yuza",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#0a6bc4a4"
+    },
+    {
+      "q": "Konusning o'q kesimi yuzasi 91 sm², balandligi esa 13 sm ga teng bo'lsa, uning asos diametri necha santimetr?",
+      "v": [
+        "7 sm",
+        "26 sm",
+        "14 sm",
+        "78 sm"
+      ],
+      "t": 2,
+      "izoh": "O'q kesimi yuzasi S = (1/2)·d·h ko'rinishida yoziladi, bu yerda d — asos diametri. Demak (1/2)·d·13 = 91, ya'ni 6,5d = 91 va d = 14 sm. Formuladagi yarimni tashlab yuborsak 7 sm, balandlikni ikkilantirsak 26 sm, ko'paytirish o'rniga ayirsak 78 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,78 60,228 240,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='78' x2='150' y2='228' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,228 141,219 150,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='70' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='52' y='233' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='248' y='233' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='143' y='153' font-size='13' fill='%23334155' text-anchor='end'%3E13 sm%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzasi 91 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oq-kesim-yuza",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#654a976a"
+    },
+    {
+      "q": "Do'kondagi konus shaklidagi shakar qolipi o'q orqali tekis ikkiga kesildi. Kesim uchburchagining tomonlari 10 sm, 10 sm va 12 sm bo'lsa, qolip balandligi qancha?",
+      "v": [
+        "8 sm",
+        "6 sm",
+        "10 sm",
+        "11,7 sm"
+      ],
+      "t": 0,
+      "izoh": "Kesim teng yonli uchburchak, uning asosi 12 sm — bu asos diametri. Demak radius 6 sm, yon tomon esa yasovchi 10 sm. Balandlik h² = 100 − 36 = 64 dan h = 8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,104 57,228 243,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='104' x2='150' y2='228' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,228 141,219 150,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='96' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='49' y='233' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='233' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='143' y='166' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='206.5' y='166' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oq-kesim-yuza",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#c339f7bb"
+    },
+    {
+      "q": "Konusning o'q kesimi yuzasi 35 sm² va balandligi asos radiusidan 2 sm ortiq. Shu konusning balandligi necha santimetr?",
+      "v": [
+        "5 sm",
+        "7 sm",
+        "10 sm",
+        "35 sm"
+      ],
+      "t": 1,
+      "izoh": "O'q kesimi yuzasi S = r·h ga teng. Balandlikni h = r + 2 deb qo'yamiz: r(r + 2) = 35. Musbat yechim r = 5, demak h = 5 + 2 = 7 sm. Radius 5, diametr 10 va yuza 35 — bularning hech biri javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,104 57,228 243,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='104' x2='150' y2='228' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,228 141,219 150,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='96' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='49' y='233' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='233' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E2r%3C/text%3E%3Ctext x='143' y='166' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzasi 35 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oq-kesim-yuza",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#646b7d74"
+    },
+    {
+      "q": "Konusning o'q kesimi teng tomonli uchburchak bo'lib, uning tomoni 6 sm ga teng. Shu konusning balandligi necha santimetr?",
+      "v": [
+        "3 sm",
+        "3√3 sm",
+        "6 sm",
+        "6√3 sm"
+      ],
+      "t": 1,
+      "izoh": "Teng tomonli uchburchakning asosi 2r = 6 sm, demak radius 3 sm. Balandlik tomoni 6 bo'lgan teng tomonli uchburchak balandligiga teng: h = 6·√3 : 2 = 3√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,78 63.4,228 236.6,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='78' x2='150' y2='228' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,228 141,219 150,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='70' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='55.4' y='233' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='244.6' y='233' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='143' y='153' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='203.3' y='153' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oq-kesim-tengtomonli",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#593876ee"
+    },
+    {
+      "q": "O'q kesimi teng tomonli uchburchak bo'lgan konusning asos radiusi 4 sm. Shu konusning yon sirti yuzasi necha kvadrat santimetr?",
+      "v": [
+        "16π sm²",
+        "48π sm²",
+        "32π sm²",
+        "64π sm²"
+      ],
+      "t": 2,
+      "izoh": "Teng tomonli kesimda yasovchi asos diametriga teng: l = 2r = 8 sm. Yon sirt S = πrl = π·4·8 = 32π sm². Bu yerda yasovchini radiusga tenglashtirish xato bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,78 63.4,228 236.6,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='78' x2='150' y2='228' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,228 141,219 150,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='70' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='55.4' y='233' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='244.6' y='233' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E2r%3C/text%3E%3Ctext x='203.3' y='153' font-size='13' fill='%23334155' text-anchor='start'%3El%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oq-kesim-tengtomonli",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#a6dc6393"
+    },
+    {
+      "q": "Konus shaklidagi bezakning o'q kesimi teng tomonli uchburchak bo'lib, uning perimetri 66 sm. Bezak asosining diametri necha santimetr?",
+      "v": [
+        "33 sm",
+        "11 sm",
+        "66 sm",
+        "22 sm"
+      ],
+      "t": 3,
+      "izoh": "Teng tomonli uchburchakning tomoni 66 : 3 = 22 sm. Kesimning asosi konus diametriga teng, shuning uchun d = 22 sm. Uchga emas ikkiga bo'lsak 33 sm, radiusni javob desak 11 sm, perimetrning o'zini yozsak 66 sm chiqib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,78 63.4,228 236.6,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='78' x2='150' y2='228' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,228 141,219 150,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='70' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='55.4' y='233' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='244.6' y='233' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim perimetri 66 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oq-kesim-tengtomonli",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#96e92216"
+    },
+    {
+      "q": "O'q kesimi teng tomonli uchburchak bo'lgan konusning balandligi 6√3 sm ga teng. Shu konusning hajmini toping.",
+      "v": [
+        "72√3π sm³",
+        "216√3π sm³",
+        "24√3π sm³",
+        "72π sm³"
+      ],
+      "t": 0,
+      "izoh": "Teng tomonli kesimda h = r√3 munosabati o'rinli, demak r√3 = 6√3 va r = 6 sm. Hajm V = (1/3)·π·36·6√3 = 72√3π sm³ ga teng bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,78 63.4,228 236.6,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='78' x2='150' y2='228' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,228 141,219 150,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='70' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='55.4' y='233' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='244.6' y='233' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E2r%3C/text%3E%3Ctext x='143' y='153' font-size='13' fill='%23334155' text-anchor='end'%3E6√3 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oq-kesim-tengtomonli",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#a7ca0221"
+    },
+    {
+      "q": "Konusning o'q kesimi teng yonli to'g'ri burchakli uchburchak. Asos radiusi 5 sm bo'lsa, konusning yasovchisi necha santimetr?",
+      "v": [
+        "5√2 sm",
+        "10 sm",
+        "5 sm",
+        "5√3 sm"
+      ],
+      "t": 0,
+      "izoh": "Bunday kesimda uchidagi burchak to'g'ri, yasovchilar esa katetlar bo'ladi. Gipotenuza 2r = 10 sm, demak har bir katet l = 10 : √2 = 5√2 sm ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,135 57,228 243,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='135' x2='150' y2='228' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,228 141,219 150,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='127' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='49' y='233' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='233' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E2r%3C/text%3E%3Ctext x='206.5' y='181.5' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oq-kesim-togriburchakli",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#d054dcf3"
+    },
+    {
+      "q": "O'q kesimi teng yonli to'g'ri burchakli uchburchak bo'lgan konusning balandligi 7 sm bo'lsa, uning asos radiusi necha santimetr?",
+      "v": [
+        "7√2 sm",
+        "7 sm",
+        "3,5 sm",
+        "14 sm"
+      ],
+      "t": 1,
+      "izoh": "Teng yonli to'g'ri burchakli uchburchakda gipotenuzaga tushgan balandlik gipotenuzaning yarmiga teng. Gipotenuza 2r, balandlik esa r ga teng bo'ladi, demak r = 7 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,135 57,228 243,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='135' x2='150' y2='228' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,228 141,219 150,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='127' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='49' y='233' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='233' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E2r%3C/text%3E%3Ctext x='143' y='181.5' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oq-kesim-togriburchakli",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#bbc5845e"
+    },
+    {
+      "q": "O'q kesimi teng yonli to'g'ri burchakli uchburchak bo'lgan konusning yasovchisi 6√2 sm. Shu konusning hajmini toping.",
+      "v": [
+        "216π sm³",
+        "144π sm³",
+        "72√2π sm³",
+        "72π sm³"
+      ],
+      "t": 3,
+      "izoh": "Bu kesimda l = r√2 munosabati bor, demak r√2 = 6√2 va r = 6 sm. Balandlik ham radiusga teng: h = 6 sm. Hajm V = (1/3)·π·36·6 = 72π sm³. Yasovchini radius deb olsak 144π chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,135 57,228 243,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='135' x2='150' y2='228' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,228 141,219 150,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='127' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='49' y='233' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='233' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E2r%3C/text%3E%3Ctext x='206.5' y='181.5' font-size='13' fill='%23334155' text-anchor='start'%3E6√2 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oq-kesim-togriburchakli",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#c36950c9"
+    },
+    {
+      "q": "Konusning o'q kesimi teng yonli to'g'ri burchakli uchburchak bo'lib, uning gipotenuzasi 8 sm. Konusning to'la sirti yuzasi qanday bo'ladi?",
+      "v": [
+        "16√2π sm²",
+        "32π sm²",
+        "16π(√2 + 1) sm²",
+        "16π(√2 + 2) sm²"
+      ],
+      "t": 2,
+      "izoh": "Gipotenuza asos diametri, demak 2r = 8 va r = 4 sm. Yasovchi l = 8 : √2 = 4√2 sm. To'la sirt S = πr(l + r) = 4π(4√2 + 4) = 16π(√2 + 1) sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,135 57,228 243,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='135' x2='150' y2='228' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,228 141,219 150,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='127' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='49' y='233' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='233' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='206.5' y='181.5' font-size='13' fill='%23334155' text-anchor='start'%3El%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oq-kesim-togriburchakli",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#64658113"
+    },
+    {
+      "q": "Konusning asos radiusi 4 sm, yasovchisi esa 12 sm. Shu konus yon sirti yoyilmasining markaziy burchagi necha gradus?",
+      "v": [
+        "30°",
+        "60°",
+        "120°",
+        "240°"
+      ],
+      "t": 2,
+      "izoh": "Yoyilma sektorining yoyi asos aylanasiga teng bo'lgani uchun α = 360°·r : l. Demak α = 360°·4 : 12 = 120°. Nisbatni teskari olsak 30° chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 96.2 224 A 53.8 16.1 0 0 1 203.8 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 96.2 224 A 53.8 16.1 0 0 0 203.8 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='96.2' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='203.8' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='203.8' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='211.8' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='176.9' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='188.9' y='148' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilma-burchak",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#231df951"
+    },
+    {
+      "q": "Usta konus shaklidagi tunuka qalpoq yasamoqchi: qalpoqning asos radiusi 5 sm, yasovchisi 20 sm. U tunukadan qanday markaziy burchakli sektor qirqib olishi kerak?",
+      "v": [
+        "90°",
+        "45°",
+        "72°",
+        "270°"
+      ],
+      "t": 0,
+      "izoh": "Sektorning yoyi qalpoq asosining aylanasiga teng bo'lishi shart. Shuning uchun α = 360°·r : l = 360°·5 : 20 = 90°. Qolgan qismi 270° — bu kerakmas bo'lak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 110.7 224 A 39.3 11.8 0 0 1 189.3 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 110.7 224 A 39.3 11.8 0 0 0 189.3 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='110.7' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='189.3' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='189.3' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='197.3' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='169.6' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='181.6' y='148' font-size='13' fill='%23334155' text-anchor='start'%3E20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilma-burchak",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#7351426c"
+    },
+    {
+      "q": "Konusning yasovchisi asos radiusidan 6 marta uzun bo'lsa, uning yon sirti yoyilmasidagi markaziy burchak necha gradusga teng?",
+      "v": [
+        "30°",
+        "120°",
+        "300°",
+        "60°"
+      ],
+      "t": 3,
+      "izoh": "Yasovchi l = 6r bo'lgani uchun α = 360°·r : l = 360°·r : (6r) = 60°. Radius qisqarib ketadi, shuning uchun aniq son berilishi shart emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 124.3 224 A 25.7 9 0 0 1 175.7 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 124.3 224 A 25.7 9 0 0 0 175.7 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='124.3' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='175.7' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='175.7' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='183.7' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='162.8' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3Er%3C/text%3E%3Ctext x='174.8' y='148' font-size='13' fill='%23334155' text-anchor='start'%3E6r%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilma-burchak",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#8fb8edc1"
+    },
+    {
+      "q": "Konusning yon sirti yoyilmasi aynan yarim doira bo'lsa, yasovchining asos radiusiga nisbati qanday bo'ladi?",
+      "v": [
+        "1 : 2",
+        "2 : 1",
+        "4 : 1",
+        "3 : 1"
+      ],
+      "t": 1,
+      "izoh": "Yarim doira uchun α = 180°. Formulaga qo'yamiz: 180 = 360·r : l, bundan r : l = 1 : 2. Demak yasovchi radiusdan ikki marta uzun, ya'ni l : r = 2 : 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyilma-burchak",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#e0f55e9d"
+    },
+    {
+      "q": "Radiusi 9 sm va markaziy burchagi 120° bo'lgan sektordan konus yasaldi. Hosil bo'lgan konusning asos radiusi necha santimetr?",
+      "v": [
+        "9 sm",
+        "3 sm",
+        "6 sm",
+        "1,5 sm"
+      ],
+      "t": 1,
+      "izoh": "Sektorning radiusi konusning yasovchisi bo'ladi: l = 9 sm. Asos radiusi r = l·α : 360° = 9·120 : 360 = 3 sm. Sektor radiusini javob deb olish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 150 168 L 59.9 116 A 104 104 0 0 1 240.1 116 Z' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 124 153 A 30 30 0 0 1 176 153' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='93' y='142' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='150' y='286' font-size='13' fill='%23334155' text-anchor='middle'%3Emarkaziy burchak 120°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilma-dan-konus",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#46b08e0e"
+    },
+    {
+      "q": "Radiusi 10 sm va markaziy burchagi 216° bo'lgan sektordan konus yasalsa, uning asos radiusi necha santimetrga teng bo'ladi?",
+      "v": [
+        "10 sm",
+        "5 sm",
+        "3 sm",
+        "6 sm"
+      ],
+      "t": 3,
+      "izoh": "Yoy uzunligi asos aylanasiga aylanadi, shuning uchun r = l·α : 360° = 10·216 : 360 = 6 sm. Bu yerda 10 sm — yasovchi, asos radiusi emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 150 168 L 51.1 200.1 A 104 104 0 1 1 248.9 200.1 Z' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 121.5 177.3 A 30 30 0 1 1 178.5 177.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='88.5' y='184.1' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Ctext x='150' y='286' font-size='13' fill='%23334155' text-anchor='middle'%3Emarkaziy burchak 216°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilma-dan-konus",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#7b8d995d"
+    },
+    {
+      "q": "Radiusi 5 sm va markaziy burchagi 288° bo'lgan sektordan yasalgan konusning balandligi necha santimetrga teng?",
+      "v": [
+        "3 sm",
+        "4 sm",
+        "5 sm",
+        "6,4 sm"
+      ],
+      "t": 0,
+      "izoh": "Asos radiusi r = 5·288 : 360 = 4 sm, yasovchi esa l = 5 sm. Balandlik h² = 5² − 4² = 25 − 16 = 9 dan h = 3 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 150 168 L 88.9 252.1 A 104 104 0 1 1 211.1 252.1 Z' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 132.4 192.3 A 30 30 0 1 1 167.6 192.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='107.4' y='210.1' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3Ctext x='150' y='286' font-size='13' fill='%23334155' text-anchor='middle'%3Emarkaziy burchak 288°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyilma-dan-konus",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#66ea3778"
+    },
+    {
+      "q": "Ustaxonada radiusi 14 sm bo'lgan yarim doira shaklidagi tunuka bo'lagidan konus yasaldi. Hosil bo'lgan konusning balandligi necha santimetr?",
+      "v": [
+        "7 sm",
+        "14 sm",
+        "7√3 sm",
+        "7√2 sm"
+      ],
+      "t": 2,
+      "izoh": "Yarim doira uchun α = 180°, demak r = 14·180 : 360 = 7 sm va yasovchi l = 14 sm. Balandlik h² = 196 − 49 = 147 dan h = 7√3 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 150 168 L 46 168 A 104 104 0 0 1 254 168 Z' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 120 168 A 30 30 0 0 1 180 168' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='86' y='168' font-size='13' fill='%23334155' text-anchor='end'%3E14 sm%3C/text%3E%3Ctext x='150' y='286' font-size='13' fill='%23334155' text-anchor='middle'%3Eyarim doira, radiusi 14 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyilma-dan-konus",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#3849a97a"
+    },
+    {
+      "q": "Konusning yon sirti yoyilmasi radiusi 15 sm va markaziy burchagi 120° bo'lgan sektor. Shu yon sirtning yuzasi necha kvadrat santimetr?",
+      "v": [
+        "75π sm²",
+        "225π sm²",
+        "150π sm²",
+        "25π sm²"
+      ],
+      "t": 0,
+      "izoh": "Sektor yuzasi butun doiraning α : 360 qismiga teng. Demak S = (120 : 360)·π·15² = (1/3)·225π = 75π sm². Butun doira yuzasi 225π sm² bo'lardi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 150 168 L 59.9 116 A 104 104 0 0 1 240.1 116 Z' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 124 153 A 30 30 0 0 1 176 153' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='93' y='142' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3Ctext x='150' y='286' font-size='13' fill='%23334155' text-anchor='middle'%3Emarkaziy burchak 120°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilma-yuza",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#bec074d0"
+    },
+    {
+      "q": "Konus yon sirti yoyilmasining yuzasi 48π sm², yasovchisi esa 12 sm. Shu konus asosining radiusi necha santimetr?",
+      "v": [
+        "8 sm",
+        "12 sm",
+        "4 sm",
+        "2 sm"
+      ],
+      "t": 2,
+      "izoh": "Yon sirtning yoyilmasi — radiusi yasovchiga teng sektor, uning yuzasi πrl formulasi bilan topiladi. Demak 12r = 48 va r = 4 sm. Yasovchi bilan asos radiusini chalkashtirmaslik kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilma-yuza",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#83de4bed"
+    },
+    {
+      "q": "Dizayner konus shaklidagi abajur yasash uchun radiusi 20 sm va markaziy burchagi 144° bo'lgan sektorni qirqib oldi. Abajur yon sirtining yuzasi qancha?",
+      "v": [
+        "400π sm²",
+        "160π sm²",
+        "80π sm²",
+        "320π sm²"
+      ],
+      "t": 1,
+      "izoh": "Sektor yuzasi S = (α : 360)·π·l² formulasi bilan topiladi. Demak S = (144 : 360)·π·400 = 0,4·400π = 160π sm² ga teng bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 150 168 L 51.1 135.9 A 104 104 0 0 1 248.9 135.9 Z' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 121.5 158.7 A 30 30 0 0 1 178.5 158.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='88.5' y='151.9' font-size='13' fill='%23334155' text-anchor='end'%3E20 sm%3C/text%3E%3Ctext x='150' y='286' font-size='13' fill='%23334155' text-anchor='middle'%3Emarkaziy burchak 144°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilma-yuza",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#62133c8b"
+    },
+    {
+      "q": "Konus yon sirti yoyilmasining yuzasi 135π sm², markaziy burchagi esa 216°. Shu konusning asos radiusi necha santimetr?",
+      "v": [
+        "15 sm",
+        "25 sm",
+        "9 sm",
+        "18 sm"
+      ],
+      "t": 2,
+      "izoh": "Sektor yuzasidan (216 : 360)·π·l² = 135π, ya'ni 0,6·l² = 135 va l = 15 sm. Yoy uzunligi asos aylanasiga teng bo'lgani uchun r = l·216 : 360 = 9 sm bo'ladi. Yasovchini javob desak 15 sm, nisbatni teskari olsak 25 sm, diametrni yozsak 18 sm chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyilma-yuza",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#e088c2fb"
+    },
+    {
+      "q": "Konusning asos radiusi 6 sm, yasovchisi esa 12 sm. Yasovchi bilan asos tekisligi orasidagi burchak necha gradus?",
+      "v": [
+        "30°",
+        "45°",
+        "75°",
+        "60°"
+      ],
+      "t": 3,
+      "izoh": "Yasovchi, radius va balandlik to'g'ri burchakli uchburchak beradi. Izlanayotgan burchak uchun cosα = r : l = 6 : 12 = 0,5, demak α = 60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-burchagi",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#a483fc23"
+    },
+    {
+      "q": "Konusning yasovchisi asos tekisligi bilan 45° burchak tashkil qiladi. Asos radiusi 7 sm bo'lsa, konusning balandligi necha santimetr?",
+      "v": [
+        "7√2 sm",
+        "7 sm",
+        "3,5√2 sm",
+        "14 sm"
+      ],
+      "t": 1,
+      "izoh": "Balandlik va radius katetlar bo'lgani uchun tg45° = h : r. tg45° = 1 bo'lgani sababli h = r = 7 sm. Bu holda yasovchi 7√2 sm ga teng bo'ladi. Radiusni yasovchi deb chalkashtirgan o'quvchi h = 7·sin45° = 3,5√2 sm deb xato javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-burchagi",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#08a6d5dc"
+    },
+    {
+      "q": "Konus shaklidagi tomning qiyaligi asos tekisligi bilan 30° burchak hosil qiladi. Tom asosining radiusi 9 m bo'lsa, tom balandligi necha metr?",
+      "v": [
+        "4,5 m",
+        "9√3 m",
+        "3√3 m",
+        "18 m"
+      ],
+      "t": 2,
+      "izoh": "Balandlik h = r·tg30° formulasidan topiladi. tg30° = 1 : √3 bo'lgani uchun h = 9 : √3 = 3√3 m. Sinusdan foydalanish esa noto'g'ri natija beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-burchagi",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#61179ffd"
+    },
+    {
+      "q": "Konusning balandligi 5 sm, yasovchisi esa asos tekisligi bilan 30° burchak tashkil qiladi. Shu konusning hajmini toping.",
+      "v": [
+        "125π sm³",
+        "375π sm³",
+        "25π sm³",
+        "125√3π sm³"
+      ],
+      "t": 0,
+      "izoh": "tg30° = h : r munosabatidan r = h : tg30° = 5√3 sm. Demak r² = 75. Hajm V = (1/3)·π·75·5 = 125π sm³ ga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asos-burchagi",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#206c3c8b"
+    },
+    {
+      "q": "Katetlari 6 sm va 8 sm bo'lgan to'g'ri burchakli uchburchak 8 sm li kateti atrofida aylantirildi. Hosil bo'lgan konusning hajmi qancha?",
+      "v": [
+        "128π sm³",
+        "96π sm³",
+        "288π sm³",
+        "48π sm³"
+      ],
+      "t": 1,
+      "izoh": "Aylanish o'qi bo'lgan katet konusning balandligi, ikkinchi katet esa asos radiusi bo'ladi. Demak r = 6, h = 8 va V = (1/3)·π·36·8 = 96π sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='83.3' x2='150' y2='254' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolygon points='150,109.3 150,232 242,232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='159,232 159,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='105.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='142' y='248' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='250' y='237' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='143' y='170.7' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='196' y='250' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Eaylanish o'qi — AC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylantirish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#4fc69907"
+    },
+    {
+      "q": "Katetlari 3 sm va 4 sm bo'lgan to'g'ri burchakli uchburchak kichik kateti atrofida aylantirilsa, hosil bo'lgan konusning yon sirti yuzasi qancha?",
+      "v": [
+        "20π sm²",
+        "15π sm²",
+        "36π sm²",
+        "12π sm²"
+      ],
+      "t": 0,
+      "izoh": "Kichik katet 3 sm — balandlik, katta katet 4 sm — asos radiusi. Yasovchi gipotenuzaga teng: l = 5 sm. Yon sirt S = πrl = π·4·5 = 20π sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='137' x2='150' y2='254' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolygon points='150,163 150,232 242,232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='159,232 159,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='159' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='142' y='248' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='250' y='237' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='143' y='197.5' font-size='13' fill='%23334155' text-anchor='end'%3E3 sm%3C/text%3E%3Ctext x='196' y='250' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='206' y='197.5' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Eaylanish o'qi — AC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylantirish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#5bc50e30"
+    },
+    {
+      "q": "Katetlari 5 sm va 12 sm bo'lgan to'g'ri burchakli uchburchak o'zining gipotenuzasi atrofida aylantirildi. Hosil bo'lgan jismning hajmi qancha?",
+      "v": [
+        "600π/13 sm³",
+        "100π sm³",
+        "1200π/13 sm³",
+        "3600π/13 sm³"
+      ],
+      "t": 2,
+      "izoh": "Gipotenuza 13 sm. Unga tushirilgan balandlik r = 5·12 : 13 = 60/13 sm — bu ikkala konusning umumiy radiusi. Ikki konus balandliklari yig'indisi 13, demak V = (1/3)·π·r²·13 = 1200π/13 sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylantirish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#a0d75f6d"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning bir kateti 9 sm, gipotenuzasi esa 15 sm. Uchburchak 9 sm li kateti atrofida aylantirilsa, konusning balandligi va yasovchisi qanday bo'ladi?",
+      "v": [
+        "balandligi 12 sm, yasovchisi 15 sm",
+        "balandligi 9 sm, yasovchisi 12 sm",
+        "balandligi 15 sm, yasovchisi 9 sm",
+        "balandligi 9 sm, yasovchisi 15 sm"
+      ],
+      "t": 3,
+      "izoh": "Aylanish o'qi bo'lgan katet balandlikka aylanadi, demak h = 9 sm. Gipotenuza esa yasovchi bo'ladi: l = 15 sm. Ikkinchi katet 12 sm — asos radiusi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='137' x2='150' y2='254' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolygon points='150,163 150,232 242,232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='159,232 159,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='159' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='142' y='248' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='250' y='237' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='143' y='197.5' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='196' y='250' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='206' y='197.5' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Eaylanish o'qi — AC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylantirish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#8d058808"
+    },
+    {
+      "q": "Konus balandligining o'rtasidan asosga parallel tekislik o'tkazildi. Hosil bo'lgan kesim yuzasining asos yuzasiga nisbati qanday bo'ladi?",
+      "v": [
+        "1 : 2",
+        "1 : 8",
+        "1 : 4",
+        "1 : 3"
+      ],
+      "t": 2,
+      "izoh": "Kesim doirasi asos doirasiga o'xshash, chiziqli nisbat 1 : 2 ga teng. Yuzalar nisbati chiziqli nisbatning kvadratiga teng, demak 1 : 4 bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 74 224 A 76 22.8 0 0 1 226 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 74 224 A 76 22.8 0 0 0 226 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='74' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='226' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='150' cy='148' rx='38' ry='11.4' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='148' font-size='13' fill='%23334155' text-anchor='end'%3Eh%3C/text%3E%3Ctext x='188' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3Er%3C/text%3E%3Ctext x='198' y='152' font-size='13' fill='%23334155' text-anchor='start'%3Ekesim%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-kesim",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#9926a391"
+    },
+    {
+      "q": "Balandligi 12 sm bo'lgan konus asosdan 8 sm balandlikda asosga parallel tekislik bilan kesildi. Kesim radiusining asos radiusiga nisbati qancha?",
+      "v": [
+        "2 : 3",
+        "1 : 2",
+        "1 : 9",
+        "1 : 3"
+      ],
+      "t": 3,
+      "izoh": "Kesim tekisligining uchdan uzoqligi 12 − 8 = 4 sm. O'xshashlik koeffitsienti bu masofani butun balandlikka bo'lish orqali topiladi: 4 : 12 = 1 : 3.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 74 224 A 76 22.8 0 0 1 226 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 74 224 A 76 22.8 0 0 0 226 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='74' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='226' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='150' cy='122.7' rx='25.3' ry='7.6' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='148' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='188' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3Er%3C/text%3E%3Ctext x='185.3' y='126.7' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-kesim",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#428708a8"
+    },
+    {
+      "q": "Uchi pastga qaratilgan konus shaklidagi idishga suv quyildi va suv balandligi idish balandligining uchdan biriga teng bo'ldi. Suv hajmi idish hajmining necha foizini tashkil qiladi?",
+      "v": [
+        "33,3%",
+        "3,7%",
+        "11,1%",
+        "27%"
+      ],
+      "t": 1,
+      "izoh": "Suv ham konus shaklida bo'lib, u idishga o'xshash va koeffitsienti 1/3. Hajmlar nisbati koeffitsientning kubiga teng: (1/3)³ = 1/27 ≈ 0,037, ya'ni 3,7%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallel-kesim",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#ea07aefd"
+    },
+    {
+      "q": "Konus asosga parallel tekislik bilan kesilganda hosil bo'lgan kichik konusning hajmi butun konus hajmining sakkizdan bir qismini tashkil qildi. Balandliklarning nisbati qanday?",
+      "v": [
+        "1 : 2",
+        "1 : 8",
+        "1 : 4",
+        "1 : 3"
+      ],
+      "t": 0,
+      "izoh": "Hajmlar nisbati o'xshashlik koeffitsientining kubiga teng, demak k³ = 1/8. Bundan k = 1/2 kelib chiqadi, ya'ni balandliklar nisbati 1 : 2 ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 74 224 A 76 22.8 0 0 1 226 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 74 224 A 76 22.8 0 0 0 226 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='72' x2='74' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='72' x2='226' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='150' cy='168' rx='48' ry='14.4' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='72' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='46' y1='72' x2='46' y2='168' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='40' y1='72' x2='52' y2='72' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='40' y1='168' x2='52' y2='168' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='254' y1='72' x2='254' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='248' y1='72' x2='260' y2='72' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='248' y1='224' x2='260' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='36' y='124' font-size='13' fill='%23334155' text-anchor='end'%3Ex%3C/text%3E%3Ctext x='266' y='152' font-size='13' fill='%23334155' text-anchor='start'%3EH%3C/text%3E%3Ctext x='208' y='178' font-size='13' fill='%23334155' text-anchor='start'%3Ekesim%3C/text%3E%3Ctext x='150' y='276' font-size='12' fill='%23334155' text-anchor='middle'%3Echizma masshtabsiz%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallel-kesim",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#65b1a2ea"
+    },
+    {
+      "q": "Ikki konusning balandliklari o'zaro teng, birinchisining asos radiusi esa ikkinchisinikidan 3 marta katta. Birinchi konusning hajmi ikkinchisinikidan necha marta katta?",
+      "v": [
+        "9 marta",
+        "3 marta",
+        "27 marta",
+        "6 marta"
+      ],
+      "t": 0,
+      "izoh": "Hajm formulasida radius kvadrat ko'rinishida qatnashadi. Balandliklar teng bo'lgani uchun hajmlar nisbati radiuslar nisbatining kvadratiga teng: 3² = 9 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-nisbat",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#e7e7789b"
+    },
+    {
+      "q": "Konusning asos radiusi 2 marta oshirilib, balandligi esa 2 marta kamaytirildi. Konusning hajmi qanday o'zgaradi?",
+      "v": [
+        "2 marta kamayadi",
+        "o'zgarmaydi",
+        "4 marta ortadi",
+        "2 marta ortadi"
+      ],
+      "t": 3,
+      "izoh": "Radius 2 marta ortsa, r² to'rt marta ortadi. Balandlik 2 marta kamaysa hajm shuncha marta kamayadi. Natijada hajm 4 : 2 = 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-nisbat",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#b40c3922"
+    },
+    {
+      "q": "Balandliklari bir xil bo'lgan ikki konus shaklidagi qum uyumining asos aylanalari uzunliklari 12 m va 18 m. Ikkinchi uyumdagi qum birinchisidan necha marta ko'p?",
+      "v": [
+        "1,5 marta",
+        "3,375 marta",
+        "2,25 marta",
+        "0,44 marta"
+      ],
+      "t": 2,
+      "izoh": "Aylana uzunliklari nisbati radiuslar nisbatiga teng: 12 : 18 = 2 : 3. Balandliklar teng bo'lgani uchun hajmlar nisbati 2² : 3² = 4 : 9, ya'ni 9 : 4 = 2,25 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajm-nisbat",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#c0966bd3"
+    },
+    {
+      "q": "Konusning hajmi 54π sm³ ga teng. Uning barcha chiziqli o'lchamlari 3 marta kichraytirilsa, yangi konusning hajmi necha kub santimetr bo'ladi?",
+      "v": [
+        "18π sm³",
+        "2π sm³",
+        "6π sm³",
+        "2 sm³"
+      ],
+      "t": 1,
+      "izoh": "Barcha chiziqli o'lchamlar 3 marta kichraysa, hajm 3³ = 27 marta kamayadi. Demak yangi hajm 54π : 27 = 2π sm³ ga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajm-nisbat",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#e69a4c36"
+    },
+    {
+      "q": "Konus shaklidagi voronkaning ichki radiusi 6 sm, chuqurligi esa 10 sm. Voronka to'la to'ldirilganda undagi suyuqlik hajmi necha millilitr bo'ladi? (π ≈ 3,14)",
+      "v": [
+        "1130,4 ml",
+        "565,2 ml",
+        "94,2 ml",
+        "376,8 ml"
+      ],
+      "t": 3,
+      "izoh": "Bir kub santimetr bir millilitrga teng. Hajm V = (1/3)·3,14·36·10 = 376,8 ml. Uchdan bir o'rniga yarim olinsa 565,2 ml chiqib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='80.7' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='80.7' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='80.7' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='72.7' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='152.3' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suyuqlik-quyish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#80fb596c"
+    },
+    {
+      "q": "Uchi pastga qaragan konus shaklidagi stakanchaning diametri 8 sm, chuqurligi 12 sm. Unga balandligining yarmigacha muzqaymoq solindi. Muzqaymoq hajmi qancha? (π ≈ 3,14)",
+      "v": [
+        "100,48 sm³",
+        "50,24 sm³",
+        "25,12 sm³",
+        "200,96 sm³"
+      ],
+      "t": 2,
+      "izoh": "Stakanchaning to'la hajmi (1/3)·3,14·16·12 = 200,96 sm³. Muzqaymoq ham konus bo'lib, koeffitsienti 1/2. Hajm koeffitsientning kubiga kamayadi: 200,96 : 8 = 25,12 sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 124.7 164 L 150 240 L 175.3 164 A 25.3 7.6 0 0 1 124.7 164 Z' fill='%23ded9f6'/%3E%3Cellipse cx='150' cy='164' rx='25.3' ry='7.6' fill='%23ded9f6'/%3E%3Cellipse cx='150' cy='88' rx='50.7' ry='15.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='99.3' y1='88' x2='150' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='200.7' y1='88' x2='150' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='88' x2='150' y2='240' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cellipse cx='150' cy='164' rx='25.3' ry='7.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='62' y1='88' x2='62' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='56' y1='88' x2='68' y2='88' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='56' y1='164' x2='68' y2='164' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='56' y1='240' x2='68' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='52' y='168' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='158' y='247' font-size='13' fill='%23334155' text-anchor='start'%3ES%3C/text%3E%3Ctext x='143' y='84' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='208' y='84' font-size='13' fill='%23334155' text-anchor='start'%3Ed = 8 sm%3C/text%3E%3Ctext x='181' y='159' font-size='13' fill='%23334155' text-anchor='start'%3Eyarmi%3C/text%3E%3Ctext x='150' y='276' font-size='12' fill='%23334155' text-anchor='middle'%3Emuzqaymoq solingan qism%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "suyuqlik-quyish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#3aa8f1e3"
+    },
+    {
+      "q": "Konus shaklidagi idish suvga to'la edi va undagi suv butunlay silindrsimon idishga quyildi. Idishlarning asos radiuslari teng, suv silindrda 5 sm balandlikda turibdi. Konus idishning balandligi qancha edi?",
+      "v": [
+        "15 sm",
+        "5 sm",
+        "1,7 sm",
+        "10 sm"
+      ],
+      "t": 0,
+      "izoh": "Idish to'la bo'lgani uchun suv hajmi konus hajmiga teng: (1/3)·π·r²·H. Silindrdagi hajm π·r²·5 ga teng. Ularni tenglashtirsak (1/3)·H = 5, demak H = 15 sm. Konusdagi ustun silindrdagidan uch marta baland bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "suyuqlik-quyish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#dabae2ab"
+    },
+    {
+      "q": "Bassein voronkasi har soniyada 20π sm³ suv o'tkazadi. Radiusi 15 sm va balandligi 20 sm bo'lgan konus shaklidagi idishni to'ldirish uchun necha soniya kerak?",
+      "v": [
+        "225 soniya",
+        "75 soniya",
+        "300 soniya",
+        "20 soniya"
+      ],
+      "t": 1,
+      "izoh": "Idish hajmi V = (1/3)·π·225·20 = 1500π sm³. Vaqt hajmni sarfga bo'lish bilan topiladi: 1500π : 20π = 75 soniya. Uchdan birni unutsak 225, diametrni radius deb olsak 300 soniya chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='109.3' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109.3' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='224' x2='236' y2='224' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='101.3' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='244' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='143' y='166.7' font-size='13' fill='%23334155' text-anchor='end'%3E20 sm%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suyuqlik-quyish",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#ebab570e"
+    },
+    {
+      "q": "Konus va silindrning asoslari hamda balandliklari o'zaro teng bo'lsa, konus hajmi silindr hajmining qanday qismini tashkil qiladi?",
+      "v": [
+        "1/2",
+        "1/3",
+        "2/3",
+        "1/6"
+      ],
+      "t": 1,
+      "izoh": "Silindr hajmi πr²h, konusniki esa (1/3)πr²h ga teng. Ikkalasini taqqoslasak konus hajmi silindr hajmining uchdan bir qismini tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konus-silindr-taqqos",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#deebb4da"
+    },
+    {
+      "q": "Silindrga ichki chizilgan konusning asosi silindr asosi bilan ustma-ust tushadi. Silindrning hajmi 60 sm³ bo'lsa, konusdan tashqaridagi bo'shliq hajmi qancha?",
+      "v": [
+        "20 sm³",
+        "30 sm³",
+        "40 sm³",
+        "45 sm³"
+      ],
+      "t": 2,
+      "izoh": "Konus hajmi silindr hajmining uchdan biri: 60 : 3 = 20 sm³. Bo'shliq esa qolgan qism: 60 − 20 = 40 sm³. Ya'ni bo'shliq konusdan ikki marta katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konus-silindr-taqqos",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#77ed5aec"
+    },
+    {
+      "q": "Konus shaklidagi qum uyumi silindrsimon idishga solindi. Idishning asos radiusi uyum radiusiga teng, uyum balandligi esa 24 sm. Qum idishda necha santimetr balandlikda turadi?",
+      "v": [
+        "24 sm",
+        "12 sm",
+        "72 sm",
+        "8 sm"
+      ],
+      "t": 3,
+      "izoh": "Hajmlar teng bo'lgani uchun (1/3)·π·r²·24 = π·r²·h tenglama tuziladi. Radiuslar qisqaradi va h = 24 : 3 = 8 sm chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konus-silindr-taqqos",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#f41e68a8"
+    },
+    {
+      "q": "Radiusi 3 sm va balandligi 4 sm bo'lgan konusning yon sirti xuddi shu o'lchamli silindrning yon sirtidan necha kvadrat santimetr kichik?",
+      "v": [
+        "9π sm²",
+        "24π sm²",
+        "15π sm²",
+        "12π sm²"
+      ],
+      "t": 0,
+      "izoh": "Konus yasovchisi l = √(9 + 16) = 5 sm, yon sirti πrl = 15π sm². Silindr yon sirti 2πrh = 2π·3·4 = 24π sm². Farq 24π − 15π = 9π sm². Yasovchi ornida balandlik olinsa farq 12π chiqib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konus-silindr-taqqos",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#e1c87161"
+    },
+    {
+      "q": "Chelak kesik konus shaklida: pastki asos radiusi 10 sm, yuqori asos radiusi 18 sm, balandligi esa 15 sm. Chelakning yasovchisi necha santimetr?",
+      "v": [
+        "17 sm",
+        "8 sm",
+        "23 sm",
+        "22,7 sm"
+      ],
+      "t": 0,
+      "izoh": "Yasovchi, balandlik va radiuslar ayirmasi to'g'ri burchakli uchburchak beradi. l² = 15² + (18 − 10)² = 225 + 64 = 289, demak l = 17 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 104.4 232 A 45.6 13.7 0 0 1 195.6 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 104.4 232 A 45.6 13.7 0 0 0 195.6 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='163.7' rx='82' ry='24.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='104.4' y1='232' x2='68' y2='163.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='195.6' y1='232' x2='232' y2='163.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='163.7' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='195.6' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='163.7' x2='232' y2='163.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='155.7' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='143' y='197.8' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3Ctext x='172.8' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='191' y='154.7' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='225.8' y='197.8' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesik-yasovchi",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#aeb247fe"
+    },
+    {
+      "q": "Kesik konusning asos radiuslari 5 sm va 12 sm, balandligi esa 24 sm ga teng. Uning yasovchisi necha santimetr bo'ladi?",
+      "v": [
+        "7 sm",
+        "25 sm",
+        "31 sm",
+        "29,4 sm"
+      ],
+      "t": 1,
+      "izoh": "Radiuslar ayirmasi 12 − 5 = 7 sm. Endi l² = 24² + 7² = 576 + 49 = 625 bo'lib, l = 25 sm. Ayirma o'rniga yig'indi olinsa 29,4 chiqib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 80 232 A 70 21 0 0 1 220 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 80 232 A 70 21 0 0 0 220 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='92' rx='29.2' ry='8.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='232' x2='120.8' y2='92' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='220' y1='232' x2='179.2' y2='92' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='92' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='220' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='92' x2='179.2' y2='92' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='84' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='143' y='162' font-size='13' fill='%23334155' text-anchor='end'%3E24 sm%3C/text%3E%3Ctext x='185' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='164.6' y='83' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='211.6' y='162' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesik-yasovchi",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#48986514"
+    },
+    {
+      "q": "Kesik konusning yasovchisi 13 sm, balandligi esa 12 sm. Uning asos radiuslarining ayirmasi necha santimetrga teng?",
+      "v": [
+        "1 sm",
+        "25 sm",
+        "17,7 sm",
+        "5 sm"
+      ],
+      "t": 3,
+      "izoh": "Yasovchi gipotenuza, balandlik va radiuslar ayirmasi katetlar bo'ladi. Demak ayirma² = 13² − 12² = 169 − 144 = 25 va ayirma 5 sm ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 1 232 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 0 232 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='122.7' rx='36.4' ry='10.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68' y1='232' x2='113.6' y2='122.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='232' y1='232' x2='186.4' y2='122.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='122.7' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='232' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='122.7' x2='186.4' y2='122.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='114.7' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='143' y='177.3' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='191' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Ctext x='168.2' y='113.7' font-size='13' fill='%23334155' text-anchor='middle'%3Er%3C/text%3E%3Ctext x='221.2' y='177.3' font-size='13' fill='%23334155' text-anchor='start'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesik-yasovchi",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#cba63eb8"
+    },
+    {
+      "q": "Abajur kesik konus shaklida: yuqori asos aylanasining uzunligi 12π sm, pastki asosniki 20π sm, yasovchisi esa 5 sm. Abajurning balandligi necha santimetr?",
+      "v": [
+        "4 sm",
+        "5 sm",
+        "3 sm",
+        "1 sm"
+      ],
+      "t": 2,
+      "izoh": "Aylana uzunliklaridan radiuslar topiladi: 6 sm va 10 sm. Ularning ayirmasi 4 sm. Balandlik h² = 5² − 4² = 9 dan h = 3 sm chiqadi. Pifagor teoremasi o'rniga oddiy ayirish qilgan o'quvchi 5 − 4 = 1 sm deb xato javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 1 232 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 0 232 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='207.4' rx='49.2' ry='14.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68' y1='232' x2='100.8' y2='207.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='232' y1='232' x2='199.2' y2='207.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='207.4' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='232' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='207.4' x2='199.2' y2='207.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='199.4' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='143' y='219.7' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='191' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='174.6' y='198.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='227.6' y='219.7' font-size='13' fill='%23334155' text-anchor='start'%3E5 sm%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Eaylanalar 20π sm va 12π sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesik-yasovchi",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#3b00e48b"
+    },
+    {
+      "q": "Kesik konusning asos radiuslari 3 sm va 6 sm, balandligi esa 4 sm ga teng. Shu kesik konusning hajmini toping.",
+      "v": [
+        "252π sm³",
+        "60π sm³",
+        "84π sm³",
+        "48π sm³"
+      ],
+      "t": 2,
+      "izoh": "Formula V = (1/3)·π·h·(R² + R·r + r²). Qavs ichi 36 + 18 + 9 = 63 ga teng. Demak V = (1/3)·π·4·63 = 84π sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 1 232 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 0 232 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='177.3' rx='41' ry='12.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68' y1='232' x2='109' y2='177.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='232' y1='232' x2='191' y2='177.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='177.3' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='232' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='177.3' x2='191' y2='177.3' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='169.3' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='143' y='204.7' font-size='13' fill='%23334155' text-anchor='end'%3E4 sm%3C/text%3E%3Ctext x='191' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='170.5' y='168.3' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesik-hajm",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#3bcd63a6"
+    },
+    {
+      "q": "Guldon kesik konus shaklida bo'lib, pastki radiusi 5 sm, yuqori radiusi 10 sm, balandligi esa 12 sm. Guldonga necha kub santimetr suv sig'adi?",
+      "v": [
+        "700π sm³",
+        "2100π sm³",
+        "500π sm³",
+        "400π sm³"
+      ],
+      "t": 0,
+      "izoh": "Qavs ichini hisoblaymiz: 100 + 50 + 25 = 175. Endi V = (1/3)·π·12·175 = 4π·175 = 700π sm³. Uchdan birni unutsak 2100π chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 109 232 A 41 12.3 0 0 1 191 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 109 232 A 41 12.3 0 0 0 191 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='133.6' rx='82' ry='24.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='109' y1='232' x2='68' y2='133.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='191' y1='232' x2='232' y2='133.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='133.6' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='191' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='133.6' x2='232' y2='133.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='125.6' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='143' y='182.8' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='170.5' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='191' y='124.6' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesik-hajm",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#261a6686"
+    },
+    {
+      "q": "Kesik konusning hajmi 273π sm³, balandligi 7 sm va kichik asos radiusi 3 sm. Katta asos radiusi necha santimetrga teng?",
+      "v": [
+        "21 sm",
+        "9 sm",
+        "13 sm",
+        "18 sm"
+      ],
+      "t": 1,
+      "izoh": "Formuladan (1/3)·7·(R² + 3R + 9) = 273, ya'ni R² + 3R + 9 = 117. Kvadrat tenglama R² + 3R − 108 = 0 ning diskriminanti 441, ildizlari 9 va −12, shart bo'yicha javob R = 9 sm. Diskriminant ildizi 21 ni yoki 117 : 9 = 13 ni javob deb olmaslik kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 1 232 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 0 232 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='109' rx='27.3' ry='8.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68' y1='232' x2='122.7' y2='109' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='232' y1='232' x2='177.3' y2='109' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='232' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='109' x2='177.3' y2='109' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='101' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='143' y='170.5' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3Ctext x='191' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='163.7' y='100' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Ehajmi 273π sm³%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesik-hajm",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#d9c77ee2"
+    },
+    {
+      "q": "Qurilishda kesik konus shaklidagi beton poydevor quyiladi: pastki diametri 4 m, yuqori diametri 2 m, balandligi 3 m. Bir kub metr beton 600 000 so'm bo'lsa, xarajat qancha? (π ≈ 3,14)",
+      "v": [
+        "52 752 000 so'm",
+        "13 188 000 so'm",
+        "39 564 000 so'm",
+        "9 420 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Radiuslar 2 m va 1 m. Hajm V = (1/3)·3,14·3·(4 + 2 + 1) = 7·3,14 = 21,98 m³. Xarajat 21,98·600 000 = 13 188 000 so'm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 1 232 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 0 232 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='109' rx='41' ry='12.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68' y1='232' x2='109' y2='109' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='232' y1='232' x2='191' y2='109' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='109' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='232' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='109' x2='191' y2='109' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='101' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='143' y='170.5' font-size='13' fill='%23334155' text-anchor='end'%3E3 m%3C/text%3E%3Ctext x='191' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Ctext x='170.5' y='100' font-size='13' fill='%23334155' text-anchor='middle'%3Er%3C/text%3E%3Ctext x='150' y='272' font-size='12' fill='%23334155' text-anchor='middle'%3Epastki diametr 4 m, yuqori diametr 2 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesik-hajm",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#fa323ee7"
+    },
+    {
+      "q": "Kesik konusning asos radiuslari 3 sm va 7 sm, yasovchisi esa 5 sm. Uning yon sirti yuzasi necha kvadrat santimetr?",
+      "v": [
+        "25π sm²",
+        "50π sm²",
+        "100π sm²",
+        "20π sm²"
+      ],
+      "t": 1,
+      "izoh": "Kesik konus yon sirti S = π·(R + r)·l formulasi bilan topiladi. Demak S = π·(7 + 3)·5 = 50π sm². Radiuslar ayirmasini olish xato bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 1 232 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 0 232 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='196.9' rx='35.1' ry='10.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68' y1='232' x2='114.9' y2='196.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='232' y1='232' x2='185.1' y2='196.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='196.9' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='232' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='196.9' x2='185.1' y2='196.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='188.9' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='191' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='167.6' y='187.9' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3Ctext x='220.6' y='214.4' font-size='13' fill='%23334155' text-anchor='start'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesik-yon-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#f991bc35"
+    },
+    {
+      "q": "Chelakning tashqi yon yuzasi bo'yalmoqda. Chelak kesik konus shaklida bo'lib, radiuslari 12 sm va 18 sm, yasovchisi 25 sm. Bo'yaladigan yuza qancha? (π ≈ 3,14)",
+      "v": [
+        "1177,5 sm²",
+        "4710 sm²",
+        "471 sm²",
+        "2355 sm²"
+      ],
+      "t": 3,
+      "izoh": "Yon sirt S = π·(R + r)·l = 3,14·30·25 = 2355 sm². Chelakning asosi bo'yalmaydi, shuning uchun to'la sirt formulasi kerak emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 95.3 232 A 54.7 16.4 0 0 1 204.7 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 95.3 232 A 54.7 16.4 0 0 0 204.7 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='122.7' rx='82' ry='24.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='95.3' y1='232' x2='68' y2='122.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='204.7' y1='232' x2='232' y2='122.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='122.7' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='204.7' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='122.7' x2='232' y2='122.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='114.7' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='177.3' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='191' y='113.7' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='230.3' y='177.3' font-size='13' fill='%23334155' text-anchor='start'%3E25 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesik-yon-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#c3ac427e"
+    },
+    {
+      "q": "Kesik konusning yon sirti 112π sm², asos radiuslari esa 5 sm va 11 sm. Uning yasovchisi necha santimetrga teng?",
+      "v": [
+        "7 sm",
+        "14 sm",
+        "16 sm",
+        "3,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Yon sirt formulasidan π·(11 + 5)·l = 112π, ya'ni 16l = 112 va l = 7 sm. Radiuslar yig'indisi 16 ni javob deb yozmaslik kerak; yarim yig'indi bilan ishlasak 14 sm, silindrning 2π(R + r)l formulasini qo'llasak 3,5 sm chiqib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 1 232 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 0 232 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='209.6' rx='37.3' ry='11.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68' y1='232' x2='112.7' y2='209.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='232' y1='232' x2='187.3' y2='209.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='209.6' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='232' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='209.6' x2='187.3' y2='209.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='201.6' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='191' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E11 sm%3C/text%3E%3Ctext x='168.6' y='200.6' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='221.6' y='220.8' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Eyon sirt 112π sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesik-yon-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#ad3da620"
+    },
+    {
+      "q": "Kesik konusning asos radiuslari 6 sm va 12 sm, balandligi esa 8 sm. Shu kesik konusning yon sirti yuzasi qancha?",
+      "v": [
+        "144π sm²",
+        "360π sm²",
+        "180π sm²",
+        "60π sm²"
+      ],
+      "t": 2,
+      "izoh": "Avval yasovchi: l² = 8² + (12 − 6)² = 64 + 36 = 100, demak l = 10 sm. Endi S = π·(12 + 6)·10 = 180π sm². Balandlikni yasovchi o'rniga qo'yish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 1 232 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 0 232 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='177.3' rx='41' ry='12.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68' y1='232' x2='109' y2='177.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='232' y1='232' x2='191' y2='177.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='177.3' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='232' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='177.3' x2='191' y2='177.3' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='169.3' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='143' y='204.7' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='191' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='170.5' y='168.3' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='223.5' y='204.7' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesik-yon-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#c3af0de3"
+    },
+    {
+      "q": "Kesik konusning asos radiuslari 2 sm va 5 sm, yasovchisi esa 4 sm. Shu jismning to'la sirti yuzasi necha kvadrat santimetr?",
+      "v": [
+        "57π sm²",
+        "28π sm²",
+        "29π sm²",
+        "53π sm²"
+      ],
+      "t": 0,
+      "izoh": "Yon sirt π·(5 + 2)·4 = 28π sm². Asoslar yuzasi 25π + 4π = 29π sm². To'la sirt ularning yig'indisi: 28π + 29π = 57π sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 1 232 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 0 232 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='171.3' rx='32.8' ry='9.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68' y1='232' x2='117.2' y2='171.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='232' y1='232' x2='182.8' y2='171.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='171.3' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='232' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='171.3' x2='182.8' y2='171.3' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='163.3' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='191' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='166.4' y='162.3' font-size='13' fill='%23334155' text-anchor='middle'%3E2 sm%3C/text%3E%3Ctext x='219.4' y='201.7' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesik-tola-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#96850572"
+    },
+    {
+      "q": "Kesik konus shaklidagi qopqoqli idishning radiuslari 3 sm va 6 sm, balandligi esa 4 sm. Idishning to'la sirti yuzasi qancha?",
+      "v": [
+        "45π sm²",
+        "81π sm²",
+        "90π sm²",
+        "135π sm²"
+      ],
+      "t": 2,
+      "izoh": "Yasovchi l² = 4² + 3² = 25 dan l = 5 sm. Yon sirt π·9·5 = 45π sm², asoslar 36π + 9π = 45π sm². Jami to'la sirt 90π sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 1 232 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 0 232 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='177.3' rx='41' ry='12.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68' y1='232' x2='109' y2='177.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='232' y1='232' x2='191' y2='177.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='177.3' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='232' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='177.3' x2='191' y2='177.3' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='169.3' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='143' y='204.7' font-size='13' fill='%23334155' text-anchor='end'%3E4 sm%3C/text%3E%3Ctext x='191' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='170.5' y='168.3' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3Ctext x='223.5' y='204.7' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesik-tola-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#042cd89a"
+    },
+    {
+      "q": "Kesik konusning to'la sirti 50π sm², yasovchisi 5 sm va kichik asos radiusi 2 sm. Katta asos radiusi necha santimetr?",
+      "v": [
+        "9 sm",
+        "4 sm",
+        "5 sm",
+        "6 sm"
+      ],
+      "t": 1,
+      "izoh": "Tenglama tuzamiz: 5(R + 2) + R² + 4 = 50. Soddalashtirsak R² + 5R − 36 = 0 bo'ladi. Ildizlari 4 va −9 bolgani uchun javob R = 4 sm, radiuslar yigindisi 6 sm esa javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 1 232 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 0 232 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='137.7' rx='41' ry='12.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68' y1='232' x2='109' y2='137.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='232' y1='232' x2='191' y2='137.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='137.7' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='232' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='137.7' x2='191' y2='137.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='129.7' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='191' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='170.5' y='128.7' font-size='13' fill='%23334155' text-anchor='middle'%3E2 sm%3C/text%3E%3Ctext x='223.5' y='184.9' font-size='13' fill='%23334155' text-anchor='start'%3E5 sm%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Eto'la sirt 50π sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesik-tola-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#e89763d2"
+    },
+    {
+      "q": "Chiroq qalpog'i kesik konus shaklida: radiuslari 10 sm va 20 sm, balandligi 24 sm. Qalpoqning yon sirti bilan katta asos yuzasi yig'indisi qancha? (π ≈ 3,14)",
+      "v": [
+        "2449,2 sm²",
+        "3516,8 sm²",
+        "4019,2 sm²",
+        "3705,2 sm²"
+      ],
+      "t": 3,
+      "izoh": "Yasovchi l² = 24² + 10² = 676 dan l = 26 sm. Yon sirt 3,14·30·26 = 2449,2 sm², katta asos 3,14·400 = 1256 sm². Yig'indi 3705,2 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 1 232 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 68 232 A 82 24.6 0 0 0 232 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='133.6' rx='41' ry='12.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68' y1='232' x2='109' y2='133.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='232' y1='232' x2='191' y2='133.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='133.6' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='232' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='133.6' x2='191' y2='133.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='125.6' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='143' y='182.8' font-size='13' fill='%23334155' text-anchor='end'%3E24 sm%3C/text%3E%3Ctext x='191' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='170.5' y='124.6' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='223.5' y='182.8' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesik-tola-sirt",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#adc302ef"
+    },
+    {
+      "q": "Kesik konusning o'q kesimi asoslari 12 sm va 20 sm, balandligi esa 6 sm bo'lgan trapetsiya. Shu kesimning yuzasi necha kvadrat santimetr?",
+      "v": [
+        "192 sm²",
+        "48 sm²",
+        "32 sm²",
+        "96 sm²"
+      ],
+      "t": 3,
+      "izoh": "Trapetsiya yuzasi asoslar yarim yig'indisini balandlikka ko'paytirish bilan topiladi. S = ((12 + 20) : 2)·6 = 16·6 = 96 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='60,226 240,226 204,172 96,172' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='172' x2='150' y2='226' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,226 141,217 150,217' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='52' y='231' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='248' y='231' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='212' y='168' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='88' y='168' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='246' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='150' y='164' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='143' y='199' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesik-oq-kesim",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#9d997126"
+    },
+    {
+      "q": "Kesik konusning asos radiuslari 4 sm va 9 sm, balandligi esa 10 sm. Uning o'q kesimi yuzasi necha kvadrat santimetrga teng?",
+      "v": [
+        "65 sm²",
+        "130 sm²",
+        "260 sm²",
+        "180 sm²"
+      ],
+      "t": 1,
+      "izoh": "O'q kesimi asoslari diametrlarga teng: 18 sm va 8 sm. Yuza S = ((18 + 8) : 2)·10 = 13·10 = 130 sm². Radiuslarni to'g'ridan-to'g'ri qo'yish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='60,226 240,226 190,126 110,126' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='126' x2='150' y2='226' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,226 141,217 150,217' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='52' y='231' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='248' y='231' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='198' y='122' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='102' y='122' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='246' font-size='13' fill='%23334155' text-anchor='middle'%3E2R%3C/text%3E%3Ctext x='150' y='118' font-size='13' fill='%23334155' text-anchor='middle'%3E2r%3C/text%3E%3Ctext x='143' y='176' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesik-oq-kesim",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#e345d085"
+    },
+    {
+      "q": "Kesik konusning o'q kesimi teng yonli trapetsiya bo'lib, uning yon tomoni 25 sm, asoslari esa 9 sm va 23 sm. Kesik konusning balandligi qancha?",
+      "v": [
+        "7 sm",
+        "25 sm",
+        "24 sm",
+        "14 sm"
+      ],
+      "t": 2,
+      "izoh": "Teng yonli trapetsiyada balandlik tushirilganda gorizontal katet (23 − 9) : 2 = 7 sm bo'ladi. Endi h² = 25² − 7² = 625 − 49 = 576 va h = 24 sm. Gorizontal katetni javob desak 7 sm, asoslar ayirmasini olsak 14 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='60,226 240,226 186,154 114,154' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='154' x2='150' y2='226' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,226 141,217 150,217' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='52' y='231' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='248' y='231' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='194' y='150' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='106' y='150' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='246' font-size='13' fill='%23334155' text-anchor='middle'%3E23 sm%3C/text%3E%3Ctext x='150' y='146' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='143' y='190' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='223' y='190' font-size='13' fill='%23334155' text-anchor='start'%3E25 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesik-oq-kesim",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#6ee0ad26"
+    },
+    {
+      "q": "Kesik konusning o'q kesimi yuzasi 209 sm², balandligi 11 sm va kichik asos radiusi 4 sm. Katta asos radiusi necha santimetr?",
+      "v": [
+        "19 sm",
+        "34 sm",
+        "30 sm",
+        "15 sm"
+      ],
+      "t": 3,
+      "izoh": "O'q kesimi yuzasi S = (R + r)·h ko'rinishida yoziladi. Demak 11(R + 4) = 209, ya'ni R + 4 = 19 va R = 15 sm. Yig'indini javob deb yozsak 19 sm, formulaga ortiqcha yarim qo'shsak 34 sm, diametrni yozsak 30 sm chiqib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='60,226 240,226 180,156 120,156' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='156' x2='150' y2='226' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,226 141,217 150,217' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='52' y='231' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='248' y='231' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='188' y='152' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='112' y='152' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='246' font-size='13' fill='%23334155' text-anchor='middle'%3E2R%3C/text%3E%3Ctext x='150' y='148' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='143' y='191' font-size='13' fill='%23334155' text-anchor='end'%3E11 sm%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzasi 209 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesik-oq-kesim",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#830b19d9"
+    },
+    {
+      "q": "Idish kesik konus shaklida: yuqori radiusi 8 sm, pastki radiusi 4 sm, balandligi esa 9 sm. Idish suvga to'ldirilsa, necha kub santimetr suv sig'adi? (π ≈ 3,14)",
+      "v": [
+        "3165,12 sm³",
+        "1055,04 sm³",
+        "753,6 sm³",
+        "1356,48 sm³"
+      ],
+      "t": 1,
+      "izoh": "Qavs ichi 64 + 32 + 16 = 112 ga teng. Hajm V = (1/3)·3,14·9·112 = 3·3,14·112 = 1055,04 sm³. Uchdan birni unutsak uch marta katta natija chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 109 232 A 41 12.3 0 0 1 191 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 109 232 A 41 12.3 0 0 0 191 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='139.8' rx='82' ry='24.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='109' y1='232' x2='68' y2='139.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='191' y1='232' x2='232' y2='139.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='139.8' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='191' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='139.8' x2='232' y2='139.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='131.8' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='143' y='185.9' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='170.5' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='191' y='130.8' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesik-amaliy",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#8627f4a3"
+    },
+    {
+      "q": "Bog'bon kesik konus shaklidagi gulton yasadi: pastki diametri 30 sm, yuqori diametri 40 sm, balandligi 12 sm. Gultonning yon sirtini bo'yash uchun qancha yuza kerak? (π ≈ 3,14)",
+      "v": [
+        "1428,7 sm²",
+        "1318,8 sm²",
+        "2857,4 sm²",
+        "714,35 sm²"
+      ],
+      "t": 0,
+      "izoh": "Radiuslar 15 sm va 20 sm, ularning ayirmasi 5 sm. Yasovchi l² = 12² + 5² = 169 dan l = 13 sm. Yon sirt 3,14·35·13 = 1428,7 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 88.5 232 A 61.5 18.4 0 0 1 211.5 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 88.5 232 A 61.5 18.4 0 0 0 211.5 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='182.8' rx='82' ry='24.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='88.5' y1='232' x2='68' y2='182.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='211.5' y1='232' x2='232' y2='182.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='182.8' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='211.5' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='182.8' x2='232' y2='182.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='174.8' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='143' y='207.4' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='180.8' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Er%3C/text%3E%3Ctext x='191' y='173.8' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Ctext x='233.8' y='207.4' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='150' y='272' font-size='12' fill='%23334155' text-anchor='middle'%3Epastki diametr 30 sm, yuqori diametr 40 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesik-amaliy",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#a8286693"
+    },
+    {
+      "q": "Paqir to'la konusning uchki qismi kesib olinishidan hosil bo'lgan. Butun konusning balandligi 18 sm, asos radiusi 12 sm, kesib olingan konusning balandligi esa 6 sm. Paqir hajmi qancha?",
+      "v": [
+        "864π sm³",
+        "288π sm³",
+        "832π sm³",
+        "576π sm³"
+      ],
+      "t": 2,
+      "izoh": "Butun konus hajmi (1/3)·π·144·18 = 864π sm³. Kichik konus o'xshash, koeffitsienti 6 : 18 = 1/3, radiusi 4 sm va hajmi (1/3)·π·16·6 = 32π sm³. Paqir hajmi 864π − 32π = 832π sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 1 236 224' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 64 224 A 86 25.8 0 0 0 236 224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='95' x2='64' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='95' x2='236' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='150' cy='138' rx='28.7' ry='8.6' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='95' x2='150' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,224 141,215 150,215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='87' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='142' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='159.5' font-size='13' fill='%23334155' text-anchor='end'%3E18 sm%3C/text%3E%3Ctext x='193' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='188.7' y='142' font-size='13' fill='%23334155' text-anchor='start'%3Ekesim%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesik-amaliy",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#c91429aa"
+    },
+    {
+      "q": "Fermer kesik konus shaklidagi silos idishini to'ldirmoqda: pastki diametri 6 m, yuqori diametri 10 m, balandligi 3 m. Bir kub metr don 2 000 000 so'm bo'lsa, don qiymati qancha? (π ≈ 3,14)",
+      "v": [
+        "1 230 880 000 so'm",
+        "923 160 000 so'm",
+        "213 520 000 so'm",
+        "307 720 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Radiuslar 3 m va 5 m. Qavs ichi 25 + 15 + 9 = 49. Hajm V = (1/3)·3,14·3·49 = 153,86 m³. Qiymat 153,86·2 000 000 = 307 720 000 so'm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 100.8 232 A 49.2 14.8 0 0 1 199.2 232' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 100.8 232 A 49.2 14.8 0 0 0 199.2 232' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='182.8' rx='82' ry='24.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='100.8' y1='232' x2='68' y2='182.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='199.2' y1='232' x2='232' y2='182.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='182.8' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='232' x2='199.2' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='182.8' x2='232' y2='182.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='141,232 141,223 150,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142' y='249' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='142' y='174.8' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='143' y='207.4' font-size='13' fill='%23334155' text-anchor='end'%3E3 m%3C/text%3E%3Ctext x='174.6' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Er%3C/text%3E%3Ctext x='191' y='173.8' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Ctext x='150' y='272' font-size='12' fill='%23334155' text-anchor='middle'%3Epastki diametr 6 m, yuqori diametr 10 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesik-amaliy",
+      "id": "matematika_ster_m14-konus-va-kesik-konus#6d51dc28"
+    }
+  ]
+}

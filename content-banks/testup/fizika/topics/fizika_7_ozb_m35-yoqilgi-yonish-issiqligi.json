@@ -1,0 +1,456 @@
+{
+  "nom": "35-mavzu. Yoqilgi Yonish Issiqligi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Yoqilg'ining solishtirma yonish issiqligi nima?",
+      "v": [
+        "1 kg yoqilg'i butunlay yonib bo'lganda ajralib chiqadigan issiqlik miqdoriga son jihatdan teng bo'lgan kattalik",
+        "1 kg moddani 1 °C ga isitish uchun kerak bo'lgan issiqlik miqdori",
+        "1 kg moddani eritish uchun kerak bo'lgan issiqlik miqdori",
+        "1 kg suyuqlikni bug'ga aylantirish uchun kerak bo'lgan issiqlik miqdori"
+      ],
+      "t": 0,
+      "izoh": "Solishtirma yonish issiqligi ta'rifi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#9a223103"
+    },
+    {
+      "q": "Solishtirma yonish issiqligi qanday harf bilan belgilanadi?",
+      "v": [
+        "q",
+        "Q",
+        "c",
+        "λ"
+      ],
+      "t": 0,
+      "izoh": "q harfi bilan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#354b7212"
+    },
+    {
+      "q": "Yoqilg'i yonganda ajraladigan issiqlik miqdorining formulasi qaysi?",
+      "v": [
+        "Q = q·m",
+        "Q = c·m·(t₂−t₁)",
+        "Q = λ·m",
+        "Q = r·m"
+      ],
+      "t": 0,
+      "izoh": "Q = q·m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#471ae948"
+    },
+    {
+      "q": "Solishtirma yonish issiqligining SI dagi birligi nima?",
+      "v": [
+        "J/kg",
+        "J/(kg·°C)",
+        "J",
+        "kJ"
+      ],
+      "t": 0,
+      "izoh": "J/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#eb14b54e"
+    },
+    {
+      "q": "Benzinning solishtirma yonish issiqligi qancha?",
+      "v": [
+        "46 MJ/kg",
+        "44 MJ/kg",
+        "29 MJ/kg",
+        "10 MJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Benzin — 46 MJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#2781ddc7"
+    },
+    {
+      "q": "Kerosinning solishtirma yonish issiqligi qancha?",
+      "v": [
+        "46 MJ/kg",
+        "42 MJ/kg",
+        "29 MJ/kg",
+        "3,8 MJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Kerosin — 46 MJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#5267ee8b"
+    },
+    {
+      "q": "Tabiiy gazning solishtirma yonish issiqligi qancha?",
+      "v": [
+        "44 MJ/kg",
+        "46 MJ/kg",
+        "42 MJ/kg",
+        "29 MJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy gaz — 44 MJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#8a000c6b"
+    },
+    {
+      "q": "Dizel yonilg'isining solishtirma yonish issiqligi qancha?",
+      "v": [
+        "42 MJ/kg",
+        "44 MJ/kg",
+        "46 MJ/kg",
+        "29 MJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Dizel — 42 MJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#6aef48ef"
+    },
+    {
+      "q": "Toshko'mirning solishtirma yonish issiqligi qancha?",
+      "v": [
+        "29 MJ/kg",
+        "46 MJ/kg",
+        "44 MJ/kg",
+        "10 MJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Toshko'mir — 29 MJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#18936acd"
+    },
+    {
+      "q": "Spirtning solishtirma yonish issiqligi qancha?",
+      "v": [
+        "29 MJ/kg",
+        "46 MJ/kg",
+        "42 MJ/kg",
+        "3,8 MJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Spirt — 29 MJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#b5138f42"
+    },
+    {
+      "q": "Quruq o'tinning solishtirma yonish issiqligi qancha?",
+      "v": [
+        "10 MJ/kg",
+        "29 MJ/kg",
+        "44 MJ/kg",
+        "46 MJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Quruq o'tin — 10 MJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#f543fef1"
+    },
+    {
+      "q": "Poroxning solishtirma yonish issiqligi qancha?",
+      "v": [
+        "3,8 MJ/kg",
+        "10 MJ/kg",
+        "29 MJ/kg",
+        "46 MJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Porox — 3,8 MJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#b357640d"
+    },
+    {
+      "q": "Jadvaldagi yoqilg'ilar ichida solishtirma yonish issiqligi eng katta bo'lganlar qaysi?",
+      "v": [
+        "Benzin va kerosin",
+        "Toshko'mir va spirt",
+        "Quruq o'tin va porox",
+        "Dizel va tabiiy gaz"
+      ],
+      "t": 0,
+      "izoh": "46 MJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#ecda52c1"
+    },
+    {
+      "q": "Solishtirma yonish issiqligi eng kichik yoqilg'i qaysi?",
+      "v": [
+        "Porox",
+        "Quruq o'tin",
+        "Toshko'mir",
+        "Spirt"
+      ],
+      "t": 0,
+      "izoh": "3,8 MJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#e3817126"
+    },
+    {
+      "q": "1 kg quruq o'tin yonganda 1 kg toshko'mirga nisbatan necha marta kam issiqlik ajraladi?",
+      "v": [
+        "3 marta",
+        "2 marta",
+        "4 marta",
+        "10 marta"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi misol",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#6233cf6f"
+    },
+    {
+      "q": "1 kg quruq o'tin yonganda 1 kg tabiiy gazga nisbatan necha marta kam issiqlik ajraladi?",
+      "v": [
+        "4 marta",
+        "3 marta",
+        "2 marta",
+        "5 marta"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi misol",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#20df1203"
+    },
+    {
+      "q": "Ko'mirning solishtirma yonish issiqligi q = 29 000 000 J/kg bo'lishining fizik ma'nosi nima?",
+      "v": [
+        "1 kg ko'mir to'la yonganda 29 000 000 J issiqlik ajraladi",
+        "1 kg ko'mir 29 °C ga isiydi",
+        "1 g ko'mir 29 J issiqlik beradi",
+        "1 kg ko'mir 29 kg suvni qaynatadi"
+      ],
+      "t": 0,
+      "izoh": "Fizik ma'no",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#bba55c46"
+    },
+    {
+      "q": "Yoqilg'ilar tarkibida qanday atomlar bo'ladi?",
+      "v": [
+        "Uglerod atomlari",
+        "Kislorod atomlari",
+        "Vodorod atomlari",
+        "Azot atomlari"
+      ],
+      "t": 0,
+      "izoh": "Uglerod atomlari",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#261deb2e"
+    },
+    {
+      "q": "Yonish vaqtida uglerod atomi kislorod bilan birikib qanday molekula hosil qiladi?",
+      "v": [
+        "Karbonat angidrid (CO₂)",
+        "Suv (H₂O)",
+        "Uglerod oksid (CO)",
+        "Metan (CH₄)"
+      ],
+      "t": 0,
+      "izoh": "CO₂ hosil bo'ladi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#2920c754"
+    },
+    {
+      "q": "Karbonat angidrid hosil bo'lish jarayonida nima ajralib chiqadi?",
+      "v": [
+        "Issiqlik",
+        "Sovuq",
+        "Yorug'lik faqat",
+        "Elektr toki"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik ajraladi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#c3f1616e"
+    },
+    {
+      "q": "Har yili yoqilg'i sifatida qancha ko'mir va neft mahsulotlari ishlatiladi?",
+      "v": [
+        "O'rtacha milliardlab tonna",
+        "O'rtacha minglab tonna",
+        "O'rtacha yuzlab tonna",
+        "Bir necha tonna"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi ma'lumot",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#b95db74d"
+    },
+    {
+      "q": "Atmosferaga katta miqdordagi karbonat angidrid chiqishi nimaga olib keladi?",
+      "v": [
+        "Havoning ifloslanishi va tabiatni muhofaza qilishdagi muammolarga",
+        "Havoning tozalanishiga",
+        "Yomg'ir ko'payishiga",
+        "Haroratning pasayishiga"
+      ],
+      "t": 0,
+      "izoh": "Ekologik muammolar",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#7ce964a1"
+    },
+    {
+      "q": "Issiqlik elektr stansiyalari uchun qaysi yoqilg'idan foydalanish samaraliroq?",
+      "v": [
+        "Toshko'mir yoki gazdan",
+        "Quruq o'tindan",
+        "Poroxdan",
+        "Spirtdan"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi xulosa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#1f6e7fce"
+    },
+    {
+      "q": "Yoqilg'i yonganda ajraladigan issiqlik miqdori nimaga to'g'ri proporsional?",
+      "v": [
+        "Yoqilg'ining massasiga",
+        "Yoqilg'ining hajmiga",
+        "Yoqilg'ining rangiga",
+        "Yoqilg'ining shakliga"
+      ],
+      "t": 0,
+      "izoh": "Q = q·m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#5d53ac9e"
+    },
+    {
+      "q": "Q = q·m formulasidan q ni topish formulasi qanday?",
+      "v": [
+        "q = Q/m",
+        "q = Q·m",
+        "q = m/Q",
+        "q = Q + m"
+      ],
+      "t": 0,
+      "izoh": "q = Q/m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#711962b4"
+    },
+    {
+      "q": "Q = q·m formulasidan m ni topish formulasi qanday?",
+      "v": [
+        "m = Q/q",
+        "m = Q·q",
+        "m = q/Q",
+        "m = Q − q"
+      ],
+      "t": 0,
+      "izoh": "m = Q/q",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#6e5886b0"
+    },
+    {
+      "q": "Qancha miqdorda tabiiy gaz (q = 44 MJ/kg) to'liq yonganda 66 MJ issiqlik ajralib chiqadi?",
+      "v": [
+        "1,5 kg",
+        "15 kg",
+        "0,66 kg",
+        "29 kg"
+      ],
+      "t": 0,
+      "izoh": "m = Q/q = 66/44 = 1,5 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#432800c5"
+    },
+    {
+      "q": "20 kg toshko'mir yonganda beradigan issiqlikni olish uchun necha kg quruq o'tin kerak (darslikdagi masala bo'yicha)?",
+      "v": [
+        "58 kg",
+        "29 kg",
+        "20 kg",
+        "10 kg"
+      ],
+      "t": 0,
+      "izoh": "m₁q₁ = m₂q₂ dan 58 kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#7351af72"
+    },
+    {
+      "q": "Har bir turdagi yoqilg'i uchun solishtirma yonish issiqligi qanday qiymatga ega?",
+      "v": [
+        "O'zgarmas qiymatga",
+        "Har safar o'zgaruvchan qiymatga",
+        "Nolga teng qiymatga",
+        "Manfiy qiymatga"
+      ],
+      "t": 0,
+      "izoh": "Modda uchun o'zgarmas",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#f3e2d864"
+    },
+    {
+      "q": "Nima uchun ho'l o'tin chirsillab yonadi?",
+      "v": [
+        "Tarkibidagi suv qaynab bug'ga aylanib yorilishi tufayli",
+        "Uglerod ko'p bo'lgani uchun",
+        "Kislorod yetishmagani uchun",
+        "O'tin qattiq bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Ho'llik sababli",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi#8493b8ae"
+    }
+  ]
+}

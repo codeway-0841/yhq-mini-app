@@ -1,0 +1,531 @@
+{
+  "nom": "20-mavzu. Oksidlanish-qaytarilish reaksiyalari tenglamalarini tuzish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Oksidlanish-qaytarilish reaksiyalarida oksidlovchilarning olgan elektronlari soni nimaga teng bo'lishi kerak?",
+      "v": [
+        "Qaytaruvchilarning bergan elektronlari soniga",
+        "Oksidlovchilarning bergan elektronlari soniga",
+        "Reaksiyadagi jami atomlar soniga",
+        "Suv molekulalari soniga"
+      ],
+      "t": 0,
+      "izoh": "Oksidlovchi (atom, ion)larning olgan elektronlari soni qaytaruvchilarning bergan elektronlari soniga teng bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#c4cd944e"
+    },
+    {
+      "q": "Al + HCl reaksiyasida aluminiy qanday oksidlanish darajasiga o'tadi?",
+      "v": [
+        "+3",
+        "+2",
+        "0",
+        "-3"
+      ],
+      "t": 0,
+      "izoh": "Al0 - 3e- -> Al+3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#e57e3fae"
+    },
+    {
+      "q": "2Al + 6HCl = 2AlCl3 + 3H2 reaksiyasida qaytaruvchi qaysi?",
+      "v": [
+        "Aluminiy",
+        "Vodorod ioni",
+        "Xlor ioni",
+        "Vodorod molekulasi"
+      ],
+      "t": 0,
+      "izoh": "Al0 - 3e- -> Al+3 (qaytaruvchi - oksidlanadi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#73346396"
+    },
+    {
+      "q": "2Al + 6HCl = 2AlCl3 + 3H2 reaksiyasida oksidlovchi qaysi?",
+      "v": [
+        "Vodorod ioni (H+)",
+        "Aluminiy",
+        "Xlor ioni",
+        "AlCl3"
+      ],
+      "t": 0,
+      "izoh": "2H+ + 2e- -> H2 (oksidlovchi - qaytariladi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#e5ebec92"
+    },
+    {
+      "q": "Aluminiy xlorid kislota bilan reaksiyasining to'g'ri tenglangan tenglamasi qaysi?",
+      "v": [
+        "2Al + 6HCl = 2AlCl3 + 3H2",
+        "Al + 3HCl = AlCl3 + 3H2",
+        "2Al + 2HCl = 2AlCl3 + H2",
+        "Al + HCl = AlCl3 + H2"
+      ],
+      "t": 0,
+      "izoh": "Kitobda: 2Al + 6HCl = 2AlCl3 + 3H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#3c3d77e0"
+    },
+    {
+      "q": "Aluminiy suyultirilgan nitrat kislota bilan reaksiyasida azot +5 dan qanday darajaga o'tadi?",
+      "v": [
+        "+1",
+        "+4",
+        "+2",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Azot +5 oksidlanish darajasidan +1 oksidlanish darajasiga o'tadi (N2O hosil bo'ladi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#6d8bade8"
+    },
+    {
+      "q": "8Al + 30HNO3 = 8Al(NO3)3 + 3N2O + 15H2O reaksiyasida har bir azot atomi nechtadan elektron oladi?",
+      "v": [
+        "4 tadan",
+        "3 tadan",
+        "2 tadan",
+        "1 tadan"
+      ],
+      "t": 0,
+      "izoh": "Har bir azot atomi 4 tadan, ya'ni (ikkitasi) 8 ta elektron oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#ba991580"
+    },
+    {
+      "q": "8Al + 30HNO3 = 8Al(NO3)3 + 3N2O + 15H2O reaksiyasida HNO3 oldidagi koeffitsiyent necha?",
+      "v": [
+        "30",
+        "8",
+        "3",
+        "15"
+      ],
+      "t": 0,
+      "izoh": "Tenglamada: 8Al + 30HNO3 -> 8Al(NO3)3 + 3N2O + 15H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#20517e93"
+    },
+    {
+      "q": "8Al + 30HNO3 = 8Al(NO3)3 + 3N2O + 15H2O reaksiyasida qaytaruvchi qaysi?",
+      "v": [
+        "Aluminiy",
+        "Azot",
+        "Kislorod",
+        "Vodorod"
+      ],
+      "t": 0,
+      "izoh": "Al0 - 3e- -> Al+3 (qaytaruvchi - oksidlanadi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#e5b6ad92"
+    },
+    {
+      "q": "Kaliy permanganat qizdirilganda qaysi moddalar hosil bo'ladi?",
+      "v": [
+        "Kaliy manganat, marganes (IV)-oksid va kislorod",
+        "Kaliy xlorid va kislorod",
+        "Marganes (II)-oksid va suv",
+        "Kaliy oksid va vodorod"
+      ],
+      "t": 0,
+      "izoh": "KMnO4 qizdirilsa K2MnO4, MnO2 va O2 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#a907b036"
+    },
+    {
+      "q": "2KMnO4 = K2MnO4 + MnO2 + O2 reaksiyasida jami koeffitsiyentlar yig'indisi nechaga teng?",
+      "v": [
+        "5",
+        "4",
+        "6",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "Javob: koeffitsiyentlar yig'indisi 5 ga teng (2+1+1+1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#fe928937"
+    },
+    {
+      "q": "2KMnO4 = K2MnO4 + MnO2 + O2 reaksiyasida oksidlovchi qaysi element?",
+      "v": [
+        "Marganes (+7)",
+        "Kislorod (-2)",
+        "Kaliy",
+        "Vodorod"
+      ],
+      "t": 0,
+      "izoh": "Oksidlanish darajasi +7 bo'lgan marganes atomlari oksidlovchi, -2 bo'lgan kislorod esa qaytaruvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#78294e43"
+    },
+    {
+      "q": "2KMnO4 = K2MnO4 + MnO2 + O2 reaksiyasida qaytaruvchi qaysi element?",
+      "v": [
+        "Kislorod (-2)",
+        "Marganes (+7)",
+        "Kaliy",
+        "Vodorod"
+      ],
+      "t": 0,
+      "izoh": "Kislorod (-2) qaytaruvchi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#bfc0b9be"
+    },
+    {
+      "q": "Vodorod peroksidning parchalanishida katalizator sifatida qaysi modda ishlatiladi?",
+      "v": [
+        "MnO2",
+        "KMnO4",
+        "H2SO4",
+        "NaCl"
+      ],
+      "t": 0,
+      "izoh": "Vodorod peroksid katalizator (MnO2) ishtirokida parchalanib suv va kislorod hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#93205db4"
+    },
+    {
+      "q": "Vodorod peroksid parchalanishining to'g'ri tenglamasi qaysi?",
+      "v": [
+        "2H2O2 = 2H2O + O2",
+        "H2O2 = H2O + O2",
+        "2H2O2 = 2H2 + 2O2",
+        "H2O2 = H2 + O2"
+      ],
+      "t": 0,
+      "izoh": "Kitobda: 2H2O2 -> 2H2O + O2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#04386c30"
+    },
+    {
+      "q": "H2O2 parchalanishida kislorodning oksidlanish darajasi qanday o'zgaradi?",
+      "v": [
+        "Bir qismi -2 ga, bir qismi 0 ga o'tadi",
+        "Hammasi -2 ga o'tadi",
+        "Hammasi 0 ga o'tadi",
+        "-1 dan +2 ga o'tadi"
+      ],
+      "t": 0,
+      "izoh": "-1 darajadagi kislorod atomlarining bir qismi -2, bir qismi nol oksidlanish darajasiga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#b4b7bc9e"
+    },
+    {
+      "q": "KMnO4 da marganesning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "+7",
+        "+6",
+        "+4",
+        "+2"
+      ],
+      "t": 0,
+      "izoh": "+1 + x - 8 = 0 dan x = +7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#bb62ae93"
+    },
+    {
+      "q": "K2Cr2O7 da xromning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "+6",
+        "+7",
+        "+3",
+        "+2"
+      ],
+      "t": 0,
+      "izoh": "+2 + 2x - 14 = 0 dan x = +6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#77bc1e69"
+    },
+    {
+      "q": "2Hg + O2 = 2HgO reaksiyasida qaysi element oksidlanadi?",
+      "v": [
+        "Simob",
+        "Kislorod",
+        "Vodorod",
+        "Ikkalasi ham"
+      ],
+      "t": 0,
+      "izoh": "Simob oksidlanadi, kislorod qaytariladi. Kislorod oksidlovchi, simob qaytaruvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#04f433a9"
+    },
+    {
+      "q": "N2 + 3H2 = 2NH3 reaksiyasida qaysi element qaytariladi?",
+      "v": [
+        "Azot",
+        "Vodorod",
+        "Ikkalasi ham",
+        "Hech qaysisi"
+      ],
+      "t": 0,
+      "izoh": "Azot elektron qabul qilib qaytariladi, vodorod elektron berib oksidlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#0067a694"
+    },
+    {
+      "q": "Ca + Cl2 = CaCl2 reaksiyasida qaysi element oksidlanadi?",
+      "v": [
+        "Kalsiy",
+        "Xlor",
+        "Ikkalasi ham",
+        "Hech qaysisi"
+      ],
+      "t": 0,
+      "izoh": "Kalsiy elektron berib oksidlanadi, xlor elektron olib qaytariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#58fad751"
+    },
+    {
+      "q": "Cl2 + H2 = 2HCl reaksiyasida qaysi element qaytariladi?",
+      "v": [
+        "Xlor",
+        "Vodorod",
+        "Ikkalasi ham",
+        "Hech qaysisi"
+      ],
+      "t": 0,
+      "izoh": "Xlor elektron olib qaytariladi, vodorod elektron berib oksidlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#b287314b"
+    },
+    {
+      "q": "Konsentrlangan nitrat kislota rux bilan reaksiyasining to'g'ri tenglangan tenglamasi qaysi?",
+      "v": [
+        "Zn + 4HNO3 = Zn(NO3)2 + 2NO2 + 2H2O",
+        "Zn + 2HNO3 = Zn(NO3)2 + NO2 + H2O",
+        "Zn + HNO3 = Zn(NO3)2 + NO2 + H2O",
+        "Zn + 6HNO3 = Zn(NO3)2 + 4NO2 + 3H2O"
+      ],
+      "t": 0,
+      "izoh": "Konsentrlangan nitrat kislota metallar bilan NO2 hosil qiladi: Zn0 - 2e- = Zn+2 va N+5 + 1e- = N+4; elektron balansdan Zn + 4HNO3 = Zn(NO3)2 + 2NO2 + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#085fc3ba"
+    },
+    {
+      "q": "Zn + HNO3 reaksiyasida rux nechta elektron beradi?",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 0,
+      "izoh": "Zn0 - 2e- = Zn+2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#5de1bae8"
+    },
+    {
+      "q": "Zn + HNO3 reaksiyasida azot +5 dan qanday darajaga o'tadi?",
+      "v": [
+        "+4",
+        "+3",
+        "+2",
+        "+1"
+      ],
+      "t": 0,
+      "izoh": "N+5 + 1e- = N+4 (NO2 hosil bo'ladi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#e5cef0e4"
+    },
+    {
+      "q": "Konsentrlangan nitrat kislota qanday xossaga ega deb keltirilgan?",
+      "v": [
+        "Kuchli oksidlovchi",
+        "Kuchli qaytaruvchi",
+        "Inert modda",
+        "Kuchsiz kislota"
+      ],
+      "t": 0,
+      "izoh": "Konsentrlangan nitrat kislota kuchli oksidlovchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#d0335b3a"
+    },
+    {
+      "q": "Oksidlovchi olgan elektronlar soni tenglamada nimaning koeffitsiyenti bo'ladi?",
+      "v": [
+        "Qaytaruvchining koeffitsiyenti",
+        "Oksidlovchining o'z koeffitsiyenti",
+        "Suvning koeffitsiyenti",
+        "Hech narsaning"
+      ],
+      "t": 0,
+      "izoh": "Oksidlovchi olgan elektronlar soni qaytaruvchining koeffitsiyenti, qaytaruvchi bergan elektronlar soni qaytarilgan moddaning koeffitsiyenti bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#d88393c5"
+    },
+    {
+      "q": "Elektron-balans usulida birinchi qadam nima?",
+      "v": [
+        "Oksidlanish darajasi o'zgargan elementlarni aniqlash",
+        "Koeffitsiyentlarni qo'yish",
+        "Suv molekulalarini sanash",
+        "Reaksiyani qizdirish"
+      ],
+      "t": 0,
+      "izoh": "Avval oksidlanish darajasi o'zgargan elementlar aniqlanib, oksidlanish darajasi element belgisi ustiga yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#b7c8c915"
+    },
+    {
+      "q": "Kaliyning oksidlanish darajasi birikmalarda doimo nechaga teng?",
+      "v": [
+        "+1",
+        "-1",
+        "+2",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Kaliyning oksidlanish darajasi doimo +1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#ea4e39e0"
+    },
+    {
+      "q": "KMnO4 va K2Cr2O7 da kislorodning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "-2",
+        "-1",
+        "+2",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Kislorodning oksidlanish darajasi bu birikmalarda -2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#4ef7a4b0"
+    },
+    {
+      "q": "FeSO4 + KMnO4 + H2SO4 reaksiyasida oksidlovchi qaysi modda?",
+      "v": [
+        "KMnO4",
+        "FeSO4",
+        "H2SO4",
+        "H2O"
+      ],
+      "t": 0,
+      "izoh": "KMnO4 tarkibidagi Mn+7 elektron oladi, demak KMnO4 oksidlovchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#387cc1bd"
+    },
+    {
+      "q": "Tenglash kerak bo'lgan mustaqil mashqdagi reaksiya qaysi?",
+      "v": [
+        "KClO3 -> KCl + O2",
+        "NaCl + AgNO3 -> AgCl + NaNO3",
+        "CuO + H2SO4 -> CuSO4 + H2O",
+        "CaCO3 -> CaO + CO2"
+      ],
+      "t": 0,
+      "izoh": "Mustaqil bajaring: 1) KClO3 -> KCl + O2; 2) H2SO3 + K2Cr2O7 + H2SO4 -> ...",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#c84c8557"
+    },
+    {
+      "q": "Cr2O3 da xromning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "+3",
+        "+2",
+        "+6",
+        "+4"
+      ],
+      "t": 0,
+      "izoh": "2x + 3(-2) = 0 dan x = +3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#26d1cb56"
+    },
+    {
+      "q": "CrO3 da xromning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "+6",
+        "+3",
+        "+2",
+        "+4"
+      ],
+      "t": 0,
+      "izoh": "x + 3(-2) = 0 dan x = +6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#c67955c3"
+    },
+    {
+      "q": "NaH da vodorodning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "-1",
+        "+1",
+        "0",
+        "-2"
+      ],
+      "t": 0,
+      "izoh": "Gidridlarda vodorod -1 oksidlanish darajasiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m20-oksidlanish-qaytarilish-tenglamalarini-tuzish#6e2259c0"
+    }
+  ]
+}

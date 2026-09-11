@@ -1,0 +1,1609 @@
+{
+  "nom": "Takroriy sinovlar: Bernulli formulasi, binomial va normal taqsimot",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Mergan Anvarning bitta otishda nishonga tekkizish ehtimoli 0,8 ga teng. U ketma-ket 3 marta otsa, aynan 2 marta nishonga tegishi ehtimolini toping.",
+      "v": [
+        "0,128",
+        "0,64",
+        "0,384",
+        "0,512"
+      ],
+      "t": 2,
+      "izoh": "Bernulli formulasi bo'yicha P₃(2) = C(3,2)·p²·q. Bu yerda p = 0,8, q = 0,2 va C(3,2) = 3. Demak P = 3·0,64·0,2 = 0,384. Distraktorlar: 0,128 — C(3,2) ko'paytuvchisini tashlab ketish, 0,512 — uchala otishda tegish, 0,64 — faqat p² ni olish. Javob: 0,384.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bernulli-aynan-k",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#d03fc21c"
+    },
+    {
+      "q": "Bir tiyinli tanga 5 marta tashlanadi. Aynan 3 marta gerb tomoni tushishi ehtimoli qanchaga teng?",
+      "v": [
+        "1/32",
+        "5/16",
+        "5/8",
+        "3/5"
+      ],
+      "t": 1,
+      "izoh": "Har tashlashda p = q = 1/2, shuning uchun P₅(3) = C(5,3)/2⁵. C(5,3) = 10 va 2⁵ = 32, demak P = 10/32 = 5/16. Distraktorlar: 1/32 — kombinatsiyalar sonini unutish, 5/8 — maxrajni 2⁴ deb olish, 3/5 — k ni n ga bo'lib qo'yish. Javob: 5/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bernulli-aynan-k",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#c549f214"
+    },
+    {
+      "q": "Zavodda tayyorlangan mahsulotlarning 10 foizi brak chiqadi. Nazoratchi tasodifiy 4 ta mahsulot olsa, ular orasida aynan bittasi brak bo'lish ehtimolini hisoblang.",
+      "v": [
+        "0,0729",
+        "0,25",
+        "0,729",
+        "0,2916"
+      ],
+      "t": 3,
+      "izoh": "Bu yerda n = 4, k = 1, p = 0,1, q = 0,9. P₄(1) = C(4,1)·0,1·0,9³ = 4·0,1·0,729 = 0,2916. Distraktorlar: 0,0729 — C(4,1) ni tashlab ketish, 0,729 — 0,9³ ni javob deb olish, ya'ni bitta mahsulotni hisobdan chiqarib yuborish (4 ta mahsulotdan hech biri brak bo'lmasligi esa 0,9⁴ = 0,6561), 0,25 — bittasi to'rtdan biri degan noto'g'ri fikr. Javob: 0,2916.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bernulli-aynan-k",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#11b10fd4"
+    },
+    {
+      "q": "O'yin kubigi 5 marta tashlandi. Tushgan ochkolarning aynan 2 tasi 3 ga karrali bo'lishi ehtimolini toping.",
+      "v": [
+        "80/243",
+        "8/243",
+        "10/243",
+        "40/81"
+      ],
+      "t": 0,
+      "izoh": "Kubikda 3 ga karrali ochkolar — 3 va 6, shuning uchun p = 2/6 = 1/3 va q = 2/3. P₅(2) = C(5,2)·(1/3)²·(2/3)³ = 10·(1/9)·(8/27) = 80/243. Distraktorlar: 8/243 — C(5,2) ni unutish, 10/243 — faqat kombinatsiyani qoldirish, 40/81 — maxrajni noto'g'ri qisqartirish. Javob: 80/243.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bernulli-aynan-k",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#91ad6819"
+    },
+    {
+      "q": "Bir yil davomida lampochkaning kuymasdan ishlash ehtimoli 0,9. Xonaga o'rnatilgan 3 ta lampochkaning uchalasi ham yil oxirigacha ishlab turishi ehtimoli qancha?",
+      "v": [
+        "0,9",
+        "0,729",
+        "0,81",
+        "0,271"
+      ],
+      "t": 1,
+      "izoh": "Bu Bernulli formulasining k = n holi: P₃(3) = C(3,3)·0,9³ = 0,9³ = 0,729. Distraktorlar: 0,81 — faqat ikkita lampochkani hisobga olish, 0,271 — teskari hodisa ehtimoli, 0,9 — bitta lampochka ehtimolini javob deb olish. Javob: 0,729.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bernulli-hech-yoki-hammasi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#f2020cf2"
+    },
+    {
+      "q": "Do'konga kirgan har bir xaridor 0,2 ehtimol bilan sug'urta xizmatini rasmiylashtiradi. Kun davomida kirgan 5 ta xaridordan hech biri bu xizmatni olmasligi ehtimolini hisoblang.",
+      "v": [
+        "0,00032",
+        "0,4096",
+        "0,32768",
+        "0,67232"
+      ],
+      "t": 2,
+      "izoh": "Hech biri olmasligi — bu k = 0 hol: P₅(0) = q⁵ = 0,8⁵. 0,8² = 0,64, 0,8⁴ = 0,4096 va 0,8⁵ = 0,32768. Distraktorlar: 0,4096 — beshinchi ko'paytuvchini tushirib qoldirish, 0,67232 — teskari hodisa, 0,00032 — q o'rniga p ni darajaga ko'tarish. Javob: 0,32768.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bernulli-hech-yoki-hammasi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#5baeda6e"
+    },
+    {
+      "q": "O'yin kubigi 4 marta tashlanadi. Birorta ham tashlashda 6 ochko tushmasligi ehtimolini toping.",
+      "v": [
+        "625/1296",
+        "1/1296",
+        "125/216",
+        "671/1296"
+      ],
+      "t": 0,
+      "izoh": "Bitta tashlashda 6 tushmaslik ehtimoli q = 5/6. To'rtta mustaqil tashlash uchun P₄(0) = (5/6)⁴ = 625/1296. Distraktorlar: 125/216 — uchta tashlash uchun javob, 671/1296 — kamida bir marta 6 tushishi, 1/1296 — hamma marta 6 tushishi. Javob: 625/1296.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bernulli-hech-yoki-hammasi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#0d188a75"
+    },
+    {
+      "q": "Tanga 6 marta tashlanadi. Barcha tashlashlarda bir xil tomon, ya'ni yo hammasida gerb, yo hammasida raqam tushishi ehtimolini toping.",
+      "v": [
+        "1/64",
+        "1/16",
+        "1/2",
+        "1/32"
+      ],
+      "t": 3,
+      "izoh": "Hammasi gerb bo'lishi P₆(6) = 1/2⁶ = 1/64, hammasi raqam bo'lishi ham 1/64. Bu ikki hodisa birgalikda emas, shuning uchun ehtimollar qo'shiladi: 1/64 + 1/64 = 2/64 = 1/32. Distraktorlar: 1/64 — faqat bitta holni sanash, 1/16 — maxrajni 2⁵ deb olish, 1/2 — tomonlar sonidan kelib chiqqan xato. Javob: 1/32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bernulli-hech-yoki-hammasi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#8f12b8fe"
+    },
+    {
+      "q": "Kamola 4 ta lotereya bileti sotib oldi, har bir biletning yutish ehtimoli 0,1. Kamida bitta bilet yutib chiqishi ehtimolini toping.",
+      "v": [
+        "0,3439",
+        "0,4",
+        "0,6561",
+        "0,0001"
+      ],
+      "t": 0,
+      "izoh": "Kamida bitta yutuq hodisasi hech qaysi bilet yutmasligiga teskari. P(hech biri) = 0,9⁴ = 0,6561, demak izlanayotgan ehtimol 1 − 0,6561 = 0,3439. Distraktorlar: 0,6561 — teskari hodisani javob deb olish, 0,4 — ehtimollarni qo'shib yuborish, 0,0001 — hamma bilet yutishi. Javob: 0,3439.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bernulli-kamida-bir",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#ba96e3ec"
+    },
+    {
+      "q": "O'yin kubigi 3 marta tashlanadi. Kamida bir marta 6 ochko tushishi ehtimoli qanchaga teng?",
+      "v": [
+        "125/216",
+        "1/2",
+        "1/216",
+        "91/216"
+      ],
+      "t": 3,
+      "izoh": "Teskari hodisa — hech marta 6 tushmasligi, uning ehtimoli (5/6)³ = 125/216. Demak kerakli ehtimol 1 − 125/216 = 91/216. Distraktorlar: 125/216 — teskari hodisa, 1/2 — uchta 1/6 ni qo'shish, 1/216 — uchala tashlashda 6 tushishi. Javob: 91/216.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bernulli-kamida-bir",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#97979954"
+    },
+    {
+      "q": "Bir qurilma 5 ta mustaqil detaldan yig'ilgan, har bir detalning smena davomida buzilish ehtimoli 0,02. Kamida bitta detal buzilishi ehtimolini toping.",
+      "v": [
+        "0,02",
+        "0,0961",
+        "0,1",
+        "0,9039"
+      ],
+      "t": 1,
+      "izoh": "Hech bir detal buzilmasligi ehtimoli 0,98⁵ ≈ 0,9039. Kamida bittasi buzilishi esa 1 − 0,9039 = 0,0961. Distraktorlar: 0,1 — 5·0,02 deb ehtimollarni qo'shish, 0,9039 — teskari hodisa, 0,02 — bitta detal ehtimolini javob deb olish. Javob: 0,0961.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bernulli-kamida-bir",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#58a512e9"
+    },
+    {
+      "q": "Inkubatorga qo'yilgan har bir tuxumdan jo'ja chiqish ehtimoli 0,85 ga teng. Uchta tuxumdan kamida bittasi ochilmay qolishi ehtimolini hisoblang.",
+      "v": [
+        "0,15",
+        "0,45",
+        "0,3859",
+        "0,6141"
+      ],
+      "t": 2,
+      "izoh": "Kamida bittasi ochilmasligiga teskari hodisa — uchalasi ham ochilishi, uning ehtimoli 0,85³ = 0,614125. Demak javob 1 − 0,614125 = 0,385875 ≈ 0,3859. Distraktorlar: 0,6141 — teskari hodisa, 0,45 — 3·0,15 deb qo'shish, 0,15 — bitta tuxum uchun ehtimol. Javob: 0,3859.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bernulli-kamida-bir",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#e22a51dc"
+    },
+    {
+      "q": "Basketbolchi jarima to'pini 0,5 ehtimol bilan kiritadi va 5 marta uradi. Kamida 4 ta to'pni kiritishi ehtimolini toping.",
+      "v": [
+        "5/32",
+        "1/32",
+        "1/16",
+        "3/16"
+      ],
+      "t": 3,
+      "izoh": "Kamida 4 ta degani k = 4 yoki k = 5. P₅(4) = C(5,4)/2⁵ = 5/32 va P₅(5) = 1/32. Ularni qo'shamiz: 5/32 + 1/32 = 6/32 = 3/16. Distraktorlar: 5/32 — faqat aynan 4 ta holi, 1/32 — faqat hammasi, 1/16 — maxrajni noto'g'ri qisqartirish. Javob: 3/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bernulli-kamida-k",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#816590c1"
+    },
+    {
+      "q": "Bir tajribada hodisaning ro'y berish ehtimoli 0,2 ga teng va tajriba 3 marta takrorlanadi. Hodisa kamida 2 marta ro'y berishi ehtimolini toping.",
+      "v": [
+        "0,104",
+        "0,096",
+        "0,008",
+        "0,896"
+      ],
+      "t": 0,
+      "izoh": "Kamida 2 marta degani k = 2 va k = 3 hollarining yig'indisi. P₃(2) = C(3,2)·0,04·0,8 = 3·0,032 = 0,096, P₃(3) = 0,008. Yig'indi 0,096 + 0,008 = 0,104. Distraktorlar: 0,096 — oxirgi qo'shiluvchini unutish, 0,008 — faqat uchalasi, 0,896 — teskari hodisa. Javob: 0,104.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bernulli-kamida-k",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#85b01d4e"
+    },
+    {
+      "q": "Dilnoza bir kunda 4 ta mijozga qo'ng'iroq qiladi, har bir qo'ng'iroq 0,6 ehtimol bilan shartnoma bilan tugaydi. Kamida 3 ta shartnoma tuzilishi ehtimolini hisoblang.",
+      "v": [
+        "0,3456",
+        "0,1296",
+        "0,4752",
+        "0,5248"
+      ],
+      "t": 2,
+      "izoh": "P₄(3) = C(4,3)·0,6³·0,4 = 4·0,216·0,4 = 0,3456, P₄(4) = 0,6⁴ = 0,1296. Kamida 3 ta uchun ularni qo'shamiz: 0,3456 + 0,1296 = 0,4752. Distraktorlar: 0,3456 — aynan 3 ta holi, 0,1296 — aynan 4 ta holi, 0,5248 — teskari hodisa. Javob: 0,4752.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bernulli-kamida-k",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#d9e05740"
+    },
+    {
+      "q": "Bir sinovda hodisaning ro'y berish ehtimoli 1/3 ga teng. Sinov 3 marta o'tkazilganda hodisa kamida ikki marta ro'y berishi ehtimolini toping.",
+      "v": [
+        "1/27",
+        "7/27",
+        "2/9",
+        "20/27"
+      ],
+      "t": 1,
+      "izoh": "p = 1/3, q = 2/3. P₃(2) = C(3,2)·(1/9)·(2/3) = 6/27, P₃(3) = 1/27. Kamida ikki marta uchun 6/27 + 1/27 = 7/27. Distraktorlar: 2/9 — faqat aynan ikki marta (6/27), 1/27 — faqat uch marta, 20/27 — teskari hodisa. Javob: 7/27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bernulli-kamida-k",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#113539cd"
+    },
+    {
+      "q": "Omborga kelgan mahsulotning brak bo'lish ehtimoli 0,1. Tekshirish uchun 3 ta mahsulot olindi, ular orasida ko'pi bilan bitta brak chiqishi ehtimoli qancha?",
+      "v": [
+        "0,729",
+        "0,243",
+        "0,972",
+        "0,028"
+      ],
+      "t": 2,
+      "izoh": "Ko'pi bilan bitta degani k = 0 yoki k = 1. P₃(0) = 0,9³ = 0,729, P₃(1) = C(3,1)·0,1·0,81 = 0,243. Yig'indi 0,729 + 0,243 = 0,972. Distraktorlar: 0,729 — birinchi qo'shiluvchining o'zi, 0,243 — ikkinchisining o'zi, 0,028 — teskari hodisa. Javob: 0,972.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bernulli-kopi-bilan-k",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#c1932f2b"
+    },
+    {
+      "q": "Tanga 6 marta tashlanganda gerb ko'pi bilan bir marta tushishi ehtimolini toping.",
+      "v": [
+        "1/64",
+        "3/32",
+        "57/64",
+        "7/64"
+      ],
+      "t": 3,
+      "izoh": "p = 1/2 bo'lgani uchun barcha ehtimollarning maxraji 2⁶ = 64. P₆(0) = 1/64, P₆(1) = C(6,1)/64 = 6/64. Yig'indi (1 + 6)/64 = 7/64. Distraktorlar: 1/64 — faqat gerbsiz hol, 3/32 — faqat bir marta gerb (6/64), 57/64 — teskari hodisa. Javob: 7/64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bernulli-kopi-bilan-k",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#4cb00f07"
+    },
+    {
+      "q": "Talaba 4 ta test savoliga tasodifiy javob belgilaydi, har savolda 4 ta variantdan bittasi to'g'ri. Ko'pi bilan 2 ta savolga to'g'ri javob berilishi ehtimolini hisoblang.",
+      "v": [
+        "0,9492",
+        "0,7383",
+        "0,0508",
+        "0,2109"
+      ],
+      "t": 0,
+      "izoh": "p = 0,25, q = 0,75. P₄(0) = 0,75⁴ ≈ 0,3164, P₄(1) = 4·0,25·0,75³ ≈ 0,4219, P₄(2) = 6·0,0625·0,5625 ≈ 0,2109. Uchtasining yig'indisi ≈ 0,9492. Distraktorlar: 0,7383 — uchinchi qo'shiluvchini tushirib qoldirish, 0,0508 — teskari hodisa, 0,2109 — faqat aynan 2 ta holi. Javob: 0,9492.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bernulli-kopi-bilan-k",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#086ecbb0"
+    },
+    {
+      "q": "Bir dorixonada har bir mijozning vitamin sotib olish ehtimoli 0,3. Ketma-ket kelgan 3 ta mijozdan ko'pi bilan bittasi vitamin olishi ehtimolini toping.",
+      "v": [
+        "0,343",
+        "0,784",
+        "0,441",
+        "0,216"
+      ],
+      "t": 1,
+      "izoh": "q = 0,7 bo'lgani uchun P₃(0) = 0,7³ = 0,343 va P₃(1) = C(3,1)·0,3·0,49 = 0,441. Ko'pi bilan bitta uchun ularni qo'shamiz: 0,343 + 0,441 = 0,784. Distraktorlar: 0,343 — faqat hech kim olmasligi, 0,441 — faqat aynan bittasi, 0,216 — q ni 0,6 deb xato olib 0,6³ ni hisoblash (uchalasi ham olishi esa 0,3³ = 0,027 ga teng). Javob: 0,784.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bernulli-kopi-bilan-k",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#88be39bf"
+    },
+    {
+      "q": "Bir sinov 7 marta takrorlanadi va har bir sinovda hodisaning ro'y berish ehtimoli 0,4 ga teng. Hodisaning aynan 3 marta ro'y berish ehtimoli qaysi ifoda bilan hisoblanadi?",
+      "v": [
+        "C(7,3)·0,4³·0,6⁴",
+        "C(7,3)·0,4⁴·0,6³",
+        "0,4³·0,6⁴",
+        "C(7,3)·0,4³·0,6³"
+      ],
+      "t": 0,
+      "izoh": "Bernulli formulasi Pₙ(k) = C(n,k)·p^k·q^(n−k) ko'rinishida yoziladi. Bu yerda n = 7, k = 3, p = 0,4, q = 0,6, demak daraja ko'rsatkichlari 3 va 7 − 3 = 4 bo'ladi. Distraktorlarda p bilan q ning darajalari almashtirilgan, kombinatsiya tashlab ketilgan yoki n − k noto'g'ri hisoblangan. Javob: C(7,3)·0,4³·0,6⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bernulli-formula-tanlash",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#86766a67"
+    },
+    {
+      "q": "Bir stanokda bajarilgan har bir urinishning muvaffaqiyatsiz tugash ehtimoli 0,25. Beshta mustaqil urinishdan aynan 4 tasi muvaffaqiyatli chiqish ehtimoli qanday yoziladi?",
+      "v": [
+        "C(5,4)·0,25⁴·0,75",
+        "C(5,4)·0,75⁵",
+        "0,75⁴·0,25",
+        "C(5,4)·0,75⁴·0,25"
+      ],
+      "t": 3,
+      "izoh": "Muvaffaqiyat ehtimoli p = 1 − 0,25 = 0,75, muvaffaqiyatsizlik esa q = 0,25. n = 5, k = 4 bo'lgani uchun P₅(4) = C(5,4)·0,75⁴·0,25. Distraktorlarda p va q o'rni almashtirilgan, k = 5 deb olingan yoki C(5,4) yozilmagan. Javob: C(5,4)·0,75⁴·0,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bernulli-formula-tanlash",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#66596535"
+    },
+    {
+      "q": "Har birida hodisaning ro'y berish ehtimoli p bo'lgan 6 ta mustaqil sinov o'tkazildi. Hodisaning kamida bir marta ro'y berish ehtimoli qaysi ifoda bilan topiladi?",
+      "v": [
+        "1 − p⁶",
+        "1 − (1 − p)⁶",
+        "6p(1 − p)⁵",
+        "p⁶"
+      ],
+      "t": 1,
+      "izoh": "Kamida bir marta ro'y berish hodisasiga teskari hodisa — hech marta ro'y bermaslik, uning ehtimoli q⁶ = (1 − p)⁶. Shuning uchun izlanayotgan ehtimol 1 − (1 − p)⁶ ga teng. Distraktorlar: 1 − p⁶ — hamma sinovda ro'y berishga teskari hodisa, 6p(1 − p)⁵ — aynan bir marta ro'y berish, p⁶ — hamma sinovda ro'y berish. Javob: 1 − (1 − p)⁶.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bernulli-formula-tanlash",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#178087f7"
+    },
+    {
+      "q": "Takroriy sinovlar uchun yozilgan C(n,k)·p^k·q^(n−k) formulasida q harfi va n − k ko'rsatkichi qanday ma'noga ega ekanini ko'rsating.",
+      "v": [
+        "q — sinovlar soni, n − k — muvaffaqiyatsizliklar ehtimoli",
+        "q — hodisaning ro'y berish ehtimoli, n − k — muvaffaqiyatli sinovlar soni",
+        "q — hodisaning ro'y bermaslik ehtimoli, n − k — hodisa ro'y bermagan sinovlar soni",
+        "q — o'rtacha qiymat, n − k — sinovlar sonining yarmi"
+      ],
+      "t": 2,
+      "izoh": "Bernulli sxemasida har bir sinov faqat ikki natijaga ega: hodisa ro'y beradi (ehtimoli p) yoki ro'y bermaydi (ehtimoli q = 1 − p). Agar n ta sinovdan k tasida hodisa ro'y bergan bo'lsa, qolgan n − k tasida ro'y bermagan bo'ladi, shuning uchun q aynan shu darajaga ko'tariladi. Javob: q — ro'y bermaslik ehtimoli, n − k — ro'y bermagan sinovlar soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bernulli-formula-tanlash",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#a3f9c12b"
+    },
+    {
+      "q": "Tanga 40 marta tashlanadi va gerb tushishlar soni X bilan belgilanadi. X ning matematik kutilishi, ya'ni o'rtacha qiymati nechaga teng bo'ladi?",
+      "v": [
+        "10",
+        "40",
+        "0,5",
+        "20"
+      ],
+      "t": 3,
+      "izoh": "Binomial taqsimotda matematik kutilish M(X) = n·p formula bilan topiladi. Bu yerda n = 40 va p = 0,5, demak M(X) = 40·0,5 = 20. Distraktorlar: 40 — sinovlar sonini javob deb olish, 0,5 — bitta sinov ehtimolini yozish, 10 — n ni 4 ga bo'lish. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "binomial-ortacha",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#62e37448"
+    },
+    {
+      "q": "Merganning bitta otishda nishonga tekkizish ehtimoli 0,7. U mashg'ulot davomida 30 marta otsa, o'rtacha nechta tekkizish kutiladi?",
+      "v": [
+        "21",
+        "9",
+        "30",
+        "0,7"
+      ],
+      "t": 0,
+      "izoh": "Tekkizishlar soni binomial taqsimlangan, shuning uchun o'rtacha qiymat M = n·p = 30·0,7 = 21. Distraktorlar: 9 — n·q hisoblab, tegmagan otishlar sonini yozish, 30 — otishlar sonining o'zi, 0,7 — bitta otish ehtimoli. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "binomial-ortacha",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#f750b6e6"
+    },
+    {
+      "q": "Zavodda ishlab chiqarilgan mahsulotning 4 foizi brak chiqadi. Nazorat uchun 250 ta mahsulot olinsa, ular orasidagi braklarning o'rtacha soni qancha bo'ladi?",
+      "v": [
+        "4",
+        "25",
+        "10",
+        "240"
+      ],
+      "t": 2,
+      "izoh": "Foizni ehtimolga aylantiramiz: p = 0,04. O'rtacha son M = n·p = 250·0,04 = 10 ta. Distraktorlar: 4 — foiz sonini javob deb olish, 25 — p ni 0,1 deb olish, 240 — yaroqli mahsulotlar soni. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "binomial-ortacha",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#178bf62b"
+    },
+    {
+      "q": "Testda 60 ta savol bor, har birida 4 tadan variant berilgan va o'quvchi barcha javoblarni tavakkaliga belgilaydi. Kutilayotgan to'g'ri javoblar soni bilan noto'g'ri javoblar soni orasidagi farqni toping.",
+      "v": [
+        "15",
+        "30",
+        "45",
+        "60"
+      ],
+      "t": 1,
+      "izoh": "Bitta savolga tavakkaliga to'g'ri javob berish ehtimoli p = 0,25. To'g'ri javoblarning o'rtacha soni 60·0,25 = 15, noto'g'rilariniki esa 60 − 15 = 45. Farq 45 − 15 = 30. Distraktorlar: 15 va 45 — oxirgi ayirish qadamini tashlab ketish, 60 — savollar soni. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "binomial-ortacha",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#052efbd0"
+    },
+    {
+      "q": "Tanga 100 marta tashlanganda tushgan gerblar sonining dispersiyasi nechaga teng bo'ladi?",
+      "v": [
+        "50",
+        "25",
+        "5",
+        "100"
+      ],
+      "t": 1,
+      "izoh": "Binomial taqsimotning dispersiyasi D = n·p·q formula bilan topiladi. n = 100, p = 0,5, q = 0,5, demak D = 100·0,5·0,5 = 25. Distraktorlar: 50 — o'rtacha qiymat n·p, 5 — o'rtacha kvadratik chetlanish √25, 100 — sinovlar soni. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "binomial-dispersiya",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#e37489f2"
+    },
+    {
+      "q": "Bir tajriba 50 marta takrorlanadi, har bir tajribada hodisaning ro'y berish ehtimoli 0,2. Hodisa ro'y bergan tajribalar sonining o'rtacha kvadratik chetlanishini toping.",
+      "v": [
+        "8",
+        "4",
+        "2√2",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "Avval dispersiya topiladi: D = n·p·q = 50·0,2·0,8 = 8. O'rtacha kvadratik chetlanish σ = √D = √8 = 2√2 ≈ 2,83. Distraktorlar: 8 — dispersiyani javob deb olish, 10 — matematik kutilish n·p, 4 — D ni 2 ga bo'lish. Javob: 2√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binomial-dispersiya",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#07ace01b"
+    },
+    {
+      "q": "Bir dorining bemorga yordam berish ehtimoli 0,9 ga teng va dori 400 ta bemorga tavsiya etildi. Yordam olgan bemorlar sonining o'rtacha kvadratik chetlanishini hisoblang.",
+      "v": [
+        "36",
+        "360",
+        "60",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "D = n·p·q = 400·0,9·0,1 = 36, demak σ = √36 = 6 ta bemor. Distraktorlar: 36 — dispersiyada to'xtab qolish, 360 — matematik kutilish n·p, 60 — √3600 deb noto'g'ri ildiz olish. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binomial-dispersiya",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#efba35b6"
+    },
+    {
+      "q": "Binomial qonun bo'yicha taqsimlangan tasodifiy miqdorning matematik kutilishi 8 ga, dispersiyasi esa 4,8 ga teng. Sinovlar soni n va bitta sinovdagi ehtimol p ni toping.",
+      "v": [
+        "n = 20, p = 0,4",
+        "n = 20, p = 0,6",
+        "n = 10, p = 0,8",
+        "n = 16, p = 0,5"
+      ],
+      "t": 0,
+      "izoh": "M = n·p = 8 va D = n·p·q = 4,8. Ikkinchisini birinchisiga bo'lsak, q = 4,8 : 8 = 0,6, demak p = 1 − 0,6 = 0,4. Endi n = 8 : 0,4 = 20. Distraktorlarda p va q almashtirilgan yoki bo'lish tartibi buzilgan. Javob: n = 20, p = 0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "binomial-dispersiya",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#3741c025"
+    },
+    {
+      "q": "Bir sinov 10 marta takrorlanadi, har safar hodisaning ro'y berish ehtimoli 0,3. Hodisaning eng ehtimolli ro'y berishlar sonini aniqlang.",
+      "v": [
+        "2",
+        "4",
+        "3",
+        "3,3"
+      ],
+      "t": 2,
+      "izoh": "Eng ehtimolli son k₀ uchun np − q ≤ k₀ ≤ np + p shart bajariladi. np = 3, shuning uchun 3 − 0,7 = 2,3 ≤ k₀ ≤ 3 + 0,3 = 3,3. Bu oraliqdagi yagona butun son 3. Distraktorlar: 3,3 — chegarani javob deb olish, 2 va 4 — oraliqdan tashqaridagi butun sonlar. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-ehtimolli-son",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#6033daee"
+    },
+    {
+      "q": "Bir partiyadagi mahsulotning yaroqsiz bo'lish ehtimoli 0,2. Tekshiruvga 25 ta mahsulot olinsa, eng ehtimolli yaroqsizlar soni nechta bo'ladi?",
+      "v": [
+        "4",
+        "5",
+        "6",
+        "20"
+      ],
+      "t": 1,
+      "izoh": "np = 25·0,2 = 5 va q = 0,8. Shart bo'yicha 5 − 0,8 = 4,2 ≤ k₀ ≤ 5 + 0,2 = 5,2, demak k₀ = 5. Distraktorlar: 4 va 6 — chegaralarni noto'g'ri yaxlitlash, 20 — yaroqli mahsulotlar soni. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-ehtimolli-son",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#b8a73e90"
+    },
+    {
+      "q": "Tanga 9 marta tashlanadi. Gerblar sonining eng ehtimolli qiymati yoki qiymatlarini aniqlang.",
+      "v": [
+        "4 va 5",
+        "4",
+        "5",
+        "4,5"
+      ],
+      "t": 0,
+      "izoh": "np = 9·0,5 = 4,5, p = q = 0,5. Shart bo'yicha 4,5 − 0,5 = 4 ≤ k₀ ≤ 4,5 + 0,5 = 5. Oraliqning ikkala chetida ham butun son turibdi, shuning uchun eng ehtimolli qiymatlar ikkita: 4 va 5, ularning ehtimollari o'zaro teng. Distraktorlar: faqat bittasini tanlash yoki np ning o'zini yozish. Javob: 4 va 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-ehtimolli-son",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#4a68574e"
+    },
+    {
+      "q": "Volan o'yinchisi 12 ta podachadan har birini 0,7 ehtimol bilan muvaffaqiyatli bajaradi. Muvaffaqiyatli podachalarning eng ehtimolli sonini toping.",
+      "v": [
+        "8",
+        "10",
+        "8,4",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "np = 12·0,7 = 8,4 va q = 0,3. Shart bo'yicha 8,4 − 0,3 = 8,1 ≤ k₀ ≤ 8,4 + 0,7 = 9,1, bu oraliqda yagona butun son 9. Distraktorlar: 8,4 — o'rtacha qiymatni javob deb olish, 8 — pastga yaxlitlash, 10 — yuqoriga ortiqcha yaxlitlash. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-ehtimolli-son",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#d9ae25d8"
+    },
+    {
+      "q": "Tanga 3 marta tashlanadi va X gerblar soni bo'lsin. X ning taqsimot qatori, ya'ni P(X = 0), P(X = 1), P(X = 2), P(X = 3) qiymatlari qaysi qatorda to'g'ri berilgan?",
+      "v": [
+        "1/8; 3/8; 3/8; 1/8",
+        "1/8; 1/8; 1/8; 1/8",
+        "1/4; 1/4; 1/4; 1/4",
+        "1/6; 2/6; 2/6; 1/6"
+      ],
+      "t": 0,
+      "izoh": "Har bir ehtimol C(3,k)/2³ formula bilan topiladi. Kombinatsiyalar 1, 3, 3, 1 bo'lgani uchun ehtimollar 1/8, 3/8, 3/8, 1/8 chiqadi va ularning yig'indisi 1 ga teng. Distraktorlarda kombinatsiyalar hisobga olinmagan yoki maxraj noto'g'ri tanlangan. Javob: 1/8; 3/8; 3/8; 1/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "binomial-taqsimot-qatori",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#aba2a22b"
+    },
+    {
+      "q": "X tasodifiy miqdor n = 4 va p = 0,5 parametrli binomial qonun bo'yicha taqsimlangan. P(X = 0) + P(X = 1) + P(X = 2) yig'indisini toping.",
+      "v": [
+        "5/16",
+        "3/8",
+        "1/2",
+        "11/16"
+      ],
+      "t": 3,
+      "izoh": "Barcha ehtimollarning maxraji 2⁴ = 16, suratlar esa C(4,0) = 1, C(4,1) = 4, C(4,2) = 6. Yig'indi (1 + 4 + 6)/16 = 11/16. Distraktorlar: 5/16 — faqat dastlabki ikki qo'shiluvchi, 3/8 — faqat P(X = 2), 1/2 — simmetriyani noto'g'ri qo'llash. Javob: 11/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binomial-taqsimot-qatori",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#151fbfd8"
+    },
+    {
+      "q": "Har bir sinovda hodisaning ro'y berish ehtimoli 0,4 bo'lgan 5 ta sinov o'tkazildi. Hodisa umuman ro'y bermasligi ehtimolini foizda ifodalang.",
+      "v": [
+        "6%",
+        "24%",
+        "7,8%",
+        "40%"
+      ],
+      "t": 2,
+      "izoh": "k = 0 bo'lgani uchun P₅(0) = q⁵ = 0,6⁵ = 0,07776, ya'ni taxminan 7,8 foiz. Distraktorlar: 40% — p ni javob deb olish, 6% — 0,6 ni foizga noto'g'ri o'tkazish, 24% — p·q ni hisoblash. Javob: 7,8%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binomial-taqsimot-qatori",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#b424bd6f"
+    },
+    {
+      "q": "Sakkiz marta o'tkazilgan sinovlar turkumida hodisaning kamida ikki marta ro'y berish ehtimoli 0,74 ga teng ekani aniqlandi. Shu turkumda hodisa ko'pi bilan bir marta ro'y berish ehtimolini toping.",
+      "v": [
+        "0,74",
+        "0,26",
+        "0,5",
+        "0,13"
+      ],
+      "t": 1,
+      "izoh": "«Kamida ikki marta» va «ko'pi bilan bir marta» hodisalari o'zaro teskari, chunki ular barcha hollarni qoplaydi va kesishmaydi. Shuning uchun P = 1 − 0,74 = 0,26. Distraktorlar: 0,74 — berilgan qiymatni takrorlash, 0,13 — ikkiga bo'lish, 0,5 — teng ehtimollik haqidagi noto'g'ri fikr. Javob: 0,26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tuldiruvchi-hodisa",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#7c20f08e"
+    },
+    {
+      "q": "Kamonchi har bir otishda nishonga 0,2 ehtimol bilan tegizadi. O'rtacha hisobda 6 marta tegizish uchun u necha marta otishi kerak?",
+      "v": [
+        "1,2",
+        "30",
+        "4,8",
+        "7,5"
+      ],
+      "t": 1,
+      "izoh": "Tekkizishlar soni binomial taqsimlangan, shuning uchun M = n·p tenglikdan n = M : p kelib chiqadi. Demak n = 6 : 0,2 = 30 marta. Distraktorlar: 1,2 — bo'lish o'rniga ko'paytirish, 4,8 — 6·0,8 hisoblash, 7,5 — p o'rniga q ga bo'lish. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinovlar-sonini-topish",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#4ae31763"
+    },
+    {
+      "q": "Tanga necha marta tashlansa, tushgan gerblar sonining dispersiyasi 16 ga teng bo'ladi?",
+      "v": [
+        "16",
+        "32",
+        "64",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Tanga uchun p = q = 0,5, demak D = n·0,5·0,5 = 0,25n. Shartga ko'ra 0,25n = 16, bundan n = 16 : 0,25 = 64. Distraktorlar: 32 — 16 ni 0,5 ga bo'lish, 16 — dispersiyani sinovlar soni deb olish, 4 — √16 ni javob deb olish. Javob: 64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinovlar-sonini-topish",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#faf68b36"
+    },
+    {
+      "q": "Bir dorining bemorga ta'sir qilish ehtimoli 0,75. Ta'sir olgan bemorlar sonining dispersiyasi 15 ga teng bo'lishi uchun dori necha bemorga tavsiya qilinishi kerak?",
+      "v": [
+        "80",
+        "20",
+        "60",
+        "240"
+      ],
+      "t": 0,
+      "izoh": "D = n·p·q bo'lgani uchun n·0,75·0,25 = 0,1875n = 15. Bundan n = 15 : 0,1875 = 80 bemor. Distraktorlar: 20 — faqat p ga bo'lish, 60 — faqat q ga bo'lish, 240 — p·q o'rniga q² = 0,0625 ni ishlatish. Javob: 80.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sinovlar-sonini-topish",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#e5a93f2b"
+    },
+    {
+      "q": "Binomial qonun bo'yicha taqsimlangan miqdorning matematik kutilishi 30 ga, dispersiyasi esa 21 ga teng bo'lsa, o'tkazilgan sinovlar sonini aniqlang.",
+      "v": [
+        "43",
+        "51",
+        "210",
+        "100"
+      ],
+      "t": 3,
+      "izoh": "D : M = q bo'lgani uchun q = 21 : 30 = 0,7, demak p = 0,3. Endi n = M : p = 30 : 0,3 = 100. Distraktorlar: 43 — p va q ni almashtirib 30 : 0,7 hisoblash, 51 — M va D ni qo'shish, 210 — q = 0,7 ni butun 7 deb olib 30·7 ni hisoblash (30·0,7 esa 21 ga teng). Javob: 100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sinovlar-sonini-topish",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#624b8b79"
+    },
+    {
+      "q": "Yigirma marta takrorlangan sinovlar turkumida hodisaning ro'y berishlar soni o'rtacha 12 ta bo'lgan. Bitta sinovda hodisaning ro'y berish ehtimolini toping.",
+      "v": [
+        "0,4",
+        "0,12",
+        "0,6",
+        "1,67"
+      ],
+      "t": 2,
+      "izoh": "M = n·p tenglikdan p = M : n = 12 : 20 = 0,6. Distraktorlar: 0,4 — q ni javob deb olish, 0,12 — 12 ni 100 ga bo'lish, 1,67 — bo'lishni teskari tartibda 20 : 12 qilish. Javob: 0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ehtimolni-topish",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#a912dbc3"
+    },
+    {
+      "q": "Zavodda tekshirilgan 500 ta mahsulotdan o'rtacha 35 tasi brak chiqmoqda. Bitta mahsulotning brak bo'lish ehtimoli qanchaga teng?",
+      "v": [
+        "0,007",
+        "0,07",
+        "0,7",
+        "0,93"
+      ],
+      "t": 1,
+      "izoh": "Binomial taqsimotda p = M : n, demak p = 35 : 500 = 0,07. Distraktorlar: 0,7 — o'nlik xonani surib yuborish, 0,007 — 35 ni 5000 ga bo'lish, 0,93 — yaroqli mahsulot ehtimoli. Javob: 0,07.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ehtimolni-topish",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#7ecfd962"
+    },
+    {
+      "q": "Qirq marta takrorlangan sinovda ro'y berishlar sonining dispersiyasi 9,6 ga teng. Bitta sinovdagi ro'y berish ehtimolining 0,5 dan kichik qiymatini toping.",
+      "v": [
+        "0,2",
+        "0,24",
+        "0,6",
+        "0,4"
+      ],
+      "t": 3,
+      "izoh": "D = n·p·q dan 40·p·(1 − p) = 9,6, ya'ni p·(1 − p) = 0,24. Bu p² − p + 0,24 = 0 kvadrat tenglamaga olib keladi, uning ildizlari 0,4 va 0,6. Shartga ko'ra p < 0,5, demak p = 0,4. Distraktorlar: 0,6 — ikkinchi ildizni tanlash, 0,24 — 9,6 : 40 = p·q ko'paytmani javob deb olish, 0,2 — o'sha 0,24 ni qo'pol yaxlitlab, kvadrat tenglamani yechmasdan javob deb olish. Javob: 0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ehtimolni-topish",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#79907359"
+    },
+    {
+      "q": "Uchta mustaqil sinovda hodisa birorta ham marta ro'y bermasligi ehtimoli 0,027 ga teng ekani ma'lum. Bitta sinovda hodisaning ro'y berish ehtimolini toping.",
+      "v": [
+        "0,7",
+        "0,3",
+        "0,027",
+        "0,973"
+      ],
+      "t": 0,
+      "izoh": "Hech marta ro'y bermaslik ehtimoli q³ ga teng, demak q³ = 0,027 va q = ∛0,027 = 0,3. Shundan p = 1 − 0,3 = 0,7. Distraktorlar: 0,3 — q ni javob deb qoldirish, 0,027 — berilgan sonni takrorlash, 0,973 — teskari hodisani hisoblash. Javob: 0,7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ehtimolni-topish",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#99b479c1"
+    },
+    {
+      "q": "Tanga 6 marta tashlanadi. Aynan 2 marta gerb tushishi ehtimolining aynan 3 marta gerb tushishi ehtimoliga nisbatini toping.",
+      "v": [
+        "3 : 4",
+        "2 : 3",
+        "4 : 3",
+        "15 : 6"
+      ],
+      "t": 0,
+      "izoh": "p = q = 0,5 bo'lgani uchun ikkala ehtimolning maxraji ham 2⁶ = 64 va nisbat faqat kombinatsiyalarga bog'liq. C(6,2) = 15, C(6,3) = 20, demak nisbat 15 : 20 = 3 : 4. Distraktorlar: 4 : 3 — nisbatni teskari yozish, 2 : 3 — k larning o'zini solishtirish, 15 : 6 — kombinatsiyani n ga nisbatlash. Javob: 3 : 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ehtimol-nisbati",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#b57ff67b"
+    },
+    {
+      "q": "Beshta sinov o'tkazildi va har birida hodisaning ro'y berish ehtimoli 0,5 ga teng. P(X = 1) ning P(X = 4) ga nisbati qanday bo'ladi?",
+      "v": [
+        "1 : 4",
+        "4 : 1",
+        "5 : 4",
+        "1 : 1"
+      ],
+      "t": 3,
+      "izoh": "p = q = 0,5 bo'lganda P(X = k) = C(5,k)/32. C(5,1) = 5 va C(5,4) = 5, ya'ni kombinatsiyalar teng, shuning uchun nisbat 1 : 1. Distraktorlar: 1 : 4 — k qiymatlarini bevosita solishtirish, 4 : 1 — teskari nisbat, 5 : 4 — kombinatsiya bilan k ni chalkashtirish. Javob: 1 : 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-ehtimol-nisbati",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#ac2a6a50"
+    },
+    {
+      "q": "Har bir sinovda hodisaning ro'y berish ehtimoli 0,2 bo'lgan 5 ta sinov o'tkazildi. Hodisa aynan bir marta ro'y berish ehtimolining umuman ro'y bermaslik ehtimoliga nisbatini toping.",
+      "v": [
+        "1 : 4",
+        "5 : 4",
+        "4 : 5",
+        "5 : 1"
+      ],
+      "t": 1,
+      "izoh": "P(X = 1) = C(5,1)·0,2·0,8⁴ va P(X = 0) = 0,8⁵. Nisbatda 0,8⁴ qisqaradi va 5·0,2 : 0,8 = 1 : 0,8 = 5 : 4 qoladi. Distraktorlar: 4 : 5 — teskari nisbat, 1 : 4 — p va q ni bevosita nisbatlash, 5 : 1 — maxrajni unutish. Javob: 5 : 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ehtimol-nisbati",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#63ba61d3"
+    },
+    {
+      "q": "Mergan 4 marta otadi va har bir otishda tekkizish ehtimoli 0,75 ga teng. Aynan 3 marta tegish ehtimolining to'rtala otishda ham tegish ehtimoliga nisbatini toping.",
+      "v": [
+        "3 : 4",
+        "1 : 4",
+        "4 : 3",
+        "4 : 1"
+      ],
+      "t": 2,
+      "izoh": "P(X = 3) = C(4,3)·0,75³·0,25 va P(X = 4) = 0,75⁴. Nisbatda 0,75³ qisqaradi: 4·0,25 : 0,75 = 1 : 0,75 = 4 : 3. Distraktorlar: 3 : 4 — teskari nisbat, 4 : 1 — maxrajdagi 0,75 ni tushirib qoldirish, 1 : 4 — nisbatni C(4,3) = 4 ga teskari yozib yuborish (kombinatsiya umuman hisobga olinmasa 0,25 : 0,75, ya'ni 1 : 3 chiqar edi). Javob: 4 : 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ehtimol-nisbati",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#a728117c"
+    },
+    {
+      "q": "Tanga 6 marta tashlanganda gerb aynan 2 marta tushishi va aynan 4 marta tushishi ehtimollarini o'zaro taqqoslang.",
+      "v": [
+        "P(X = 2) katta",
+        "P(X = 4) katta",
+        "Ma'lumot yetarli emas",
+        "Teng, chunki C(6,2) = C(6,4)"
+      ],
+      "t": 3,
+      "izoh": "p = q = 0,5 bo'lganda taqsimot n : 2 nuqtaga nisbatan simmetrik bo'ladi. C(6,2) = 15 va C(6,4) = 15, maxrajlar ham bir xil 2⁶, demak ehtimollar teng. Distraktorlar kichikroq k har doim ehtimolliroq degan noto'g'ri fikrdan kelib chiqqan. Javob: teng, chunki C(6,2) = C(6,4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-p-yarim",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#33383206"
+    },
+    {
+      "q": "Tanga 10 marta tashlanadi. Gerblar soni 3 ta bo'lish hodisasining ehtimoli quyidagi qaysi hodisaning ehtimoli bilan bir xil bo'ladi?",
+      "v": [
+        "Gerblar soni 7 ta bo'lishi",
+        "Gerblar soni 5 ta bo'lishi",
+        "Gerblar soni 4 ta bo'lishi",
+        "Gerblar soni 10 ta bo'lishi"
+      ],
+      "t": 0,
+      "izoh": "p = 0,5 bo'lganda P(X = k) = C(10,k)/2¹⁰ va C(10,k) = C(10,10 − k). Demak k = 3 uchun juftlik k = 10 − 3 = 7 bo'ladi va ikkala ehtimol ham 120/1024 ga teng. Distraktorlar simmetriya markazini yoki ayirmani noto'g'ri topishdan chiqadi. Javob: gerblar soni 7 ta bo'lishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-p-yarim",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#8ca64bd9"
+    },
+    {
+      "q": "Beshta mustaqil sinovning har birida hodisaning ro'y berish ehtimoli 0,5 ga teng. Hodisa ko'pi bilan ikki marta ro'y berishi ehtimolini toping.",
+      "v": [
+        "0,3125",
+        "0,1875",
+        "0,5",
+        "0,6875"
+      ],
+      "t": 2,
+      "izoh": "Suratlar C(5,0) + C(5,1) + C(5,2) = 1 + 5 + 10 = 16, maxraj esa 2⁵ = 32. Demak ehtimol 16 : 32 = 0,5. Buni simmetriyadan ham ko'rish mumkin: k ≤ 2 va k ≥ 3 hollari teng ehtimolli. Distraktorlar: 0,3125 — faqat aynan 2 marta, 0,1875 — faqat dastlabki ikki qo'shiluvchi, 0,6875 — ortiqcha hadni qo'shish. Javob: 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-p-yarim",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#5000a7a9"
+    },
+    {
+      "q": "Agar har bir sinovda hodisaning ro'y berish ehtimoli 0,5 bo'lsa, n ta sinovda hodisaning aynan k marta ro'y berish ehtimoli qaysi ifodaga teng bo'ladi?",
+      "v": [
+        "k/n",
+        "C(n,k)/2ⁿ",
+        "2ⁿ/C(n,k)",
+        "C(n,k)/n²"
+      ],
+      "t": 1,
+      "izoh": "Bernulli formulasiga p = q = 0,5 ni qo'ysak, C(n,k)·0,5^k·0,5^(n−k) = C(n,k)·0,5ⁿ hosil bo'ladi. 0,5ⁿ = 1/2ⁿ bo'lgani uchun natija C(n,k)/2ⁿ ko'rinishini oladi. Distraktorlarda maxraj noto'g'ri tanlangan yoki kasr teskari yozilgan. Javob: C(n,k)/2ⁿ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriya-p-yarim",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#732cd01b"
+    },
+    {
+      "q": "Normal taqsimotning zichlik egri chizig'i qaysi to'g'ri chiziqqa nisbatan simmetrik joylashadi?",
+      "v": [
+        "x = 0 to'g'ri chiziqqa",
+        "x = a to'g'ri chiziqqa, bunda a — matematik kutilish",
+        "y = a to'g'ri chiziqqa",
+        "x = σ to'g'ri chiziqqa"
+      ],
+      "t": 1,
+      "izoh": "Normal taqsimot egri chizig'i qo'ng'iroqsimon shaklda bo'lib, uning cho'qqisi matematik kutilish a nuqtasida joylashadi. Egri chiziq shu vertikal x = a chiziqqa nisbatan aynan simmetrik, ya'ni a dan chapdagi va o'ngdagi yuzalar teng. Distraktorlar simmetriya o'qini koordinata boshiga yoki σ ga bog'lash xatosidan chiqqan. Javob: x = a to'g'ri chiziqqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "normal-simmetriya",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#c852d2ed"
+    },
+    {
+      "q": "Bir zavodda tayyorlanadigan mixlarning uzunligi normal taqsimlangan va o'rtacha uzunlik 40 mm ga teng. Uzunligi 40 mm dan katta bo'lgan mixlar butun partiyaning necha foizini tashkil qiladi?",
+      "v": [
+        "25%",
+        "68%",
+        "50%",
+        "95%"
+      ],
+      "t": 2,
+      "izoh": "Normal taqsimot o'rtacha qiymatga nisbatan simmetrik bo'lgani uchun egri chiziq ostidagi butun yuza a nuqta bilan teng ikkiga bo'linadi. Demak o'rtachadan katta qiymatlarning ulushi 50 foizga teng. Distraktorlar uch sigma qoidasidagi 68 va 95 foizlarni o'rinsiz qo'llashdan kelib chiqqan. Javob: 50%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "normal-simmetriya",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#cf57a280"
+    },
+    {
+      "q": "Talabalarning bo'yi normal taqsimlangan bo'lib, o'rtacha bo'y 170 sm ni tashkil qiladi. Bo'yi 165 sm dan past bo'lganlar 20 foiz bo'lsa, bo'yi 175 sm dan baland bo'lganlar ulushi qancha?",
+      "v": [
+        "30%",
+        "40%",
+        "80%",
+        "20%"
+      ],
+      "t": 3,
+      "izoh": "165 sm va 175 sm nuqtalari o'rtacha 170 sm dan bir xil masofada, ya'ni 5 sm da yotadi. Simmetriya tufayli chap dumdagi va o'ng dumdagi ulushlar teng, demak javob ham 20 foiz. Distraktorlar: 80% — teskari hodisani olish, 30% va 40% — 50 dan ayirish yoki ikkilantirish xatosi. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "normal-simmetriya",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#9381ade5"
+    },
+    {
+      "q": "Non zavodida pishirilgan nonning og'irligi normal taqsimlangan va o'rtacha og'irlik 500 g. Og'irligi 490 g bilan 510 g orasida bo'lgan nonlar 64 foizni tashkil qilsa, og'irligi 510 g dan ortiq non uchrash ehtimolini toping.",
+      "v": [
+        "0,18",
+        "0,36",
+        "0,32",
+        "0,64"
+      ],
+      "t": 0,
+      "izoh": "Berilgan oraliqdan tashqarida qolgan ulush 1 − 0,64 = 0,36 ga teng. Oraliq o'rtacha 500 g ga nisbatan simmetrik bo'lgani uchun bu 0,36 ikkala dumga teng bo'linadi: 0,36 : 2 = 0,18. Distraktorlar: 0,36 — ikkiga bo'lishni unutish, 0,64 — berilgan qiymatni takrorlash, 0,32 — 0,64 ni ikkiga bo'lish. Javob: 0,18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "normal-simmetriya",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#71d38bed"
+    },
+    {
+      "q": "Sport maktabidagi bolalarning vazni normal taqsimlangan: o'rtacha vazn 60 kg, o'rtacha kvadratik chetlanish 5 kg. Vazni 55 kg dan 65 kg gacha bo'lgan bolalar ulushi taxminan qancha?",
+      "v": [
+        "34%",
+        "95%",
+        "68%",
+        "99,7%"
+      ],
+      "t": 2,
+      "izoh": "55 kg va 65 kg chegaralari o'rtachadan aynan bitta σ masofada yotadi, chunki 60 − 5 = 55 va 60 + 5 = 65. Uch sigma qoidasiga ko'ra bir sigmalik oraliqqa qiymatlarning taxminan 68 foizi tushadi. Distraktorlar: 34% — yarim oraliqni olish, 95% — ikki sigma, 99,7% — uch sigma. Javob: 68%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "normal-uch-sigma",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#193f4f97"
+    },
+    {
+      "q": "Stanokda tayyorlanadigan detal uzunligi normal taqsimlangan: a = 120 mm, σ = 2 mm. Uzunligi 116 mm bilan 124 mm orasida bo'lgan detallar ulushini toping.",
+      "v": [
+        "95%",
+        "68%",
+        "99,7%",
+        "50%"
+      ],
+      "t": 0,
+      "izoh": "Chegaralar o'rtachadan 4 mm uzoqlikda, bu esa 2σ ga teng, chunki σ = 2 mm. Uch sigma qoidasiga ko'ra ikki sigmalik oraliqqa qiymatlarning taxminan 95 foizi tushadi. Distraktorlar: 68% — bir sigma, 99,7% — uch sigma, 50% — simmetriyani noo'rin qo'llash. Javob: 95%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "normal-uch-sigma",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#e1dc248a"
+    },
+    {
+      "q": "Qadoqlash mashinasi solayotgan shakar miqdori normal taqsimlangan: a = 200 g, σ = 10 g. Bitta qadoqdagi shakar 170 g bilan 230 g orasida bo'lish ehtimoli qanchaga teng?",
+      "v": [
+        "0,954",
+        "0,683",
+        "0,5",
+        "0,997"
+      ],
+      "t": 3,
+      "izoh": "Chegaralar o'rtachadan 30 g uzoqlikda, ya'ni 3σ masofada. Uch sigma qoidasiga ko'ra bunday oraliqqa tushish ehtimoli taxminan 0,997 ga teng. Distraktorlar: 0,683 — bir sigma, 0,954 — ikki sigma, 0,5 — yarmi degan xato. Javob: 0,997.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "normal-uch-sigma",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#76ec947f"
+    },
+    {
+      "q": "Laboratoriyada 1000 marta harorat o'lchandi, natijalar normal taqsimlangan: o'rtacha 25 °C, σ = 1,5 °C. Harorat 22 °C dan past yoki 28 °C dan yuqori chiqqan o'lchovlar taxminan nechta bo'ladi?",
+      "v": [
+        "5",
+        "46",
+        "320",
+        "954"
+      ],
+      "t": 1,
+      "izoh": "Chegaralar o'rtachadan 3 °C uzoqlikda, bu 2σ ga teng, chunki 2·1,5 = 3. Ikki sigma ichida 95,4 foiz yotadi, demak tashqarida 4,6 foiz qoladi: 1000·0,046 ≈ 46 ta o'lchov. Distraktorlar: 954 — ichkaridagi o'lchovlar, 5 — uch sigma bo'yicha hisoblash, 320 — bir sigma tashqarisi. Javob: 46.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "normal-uch-sigma",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#580c5f6b"
+    },
+    {
+      "q": "Normal taqsimotning zichlik egri chizig'i bilan abssissa o'qi orasida joylashgan yuza nechaga teng bo'ladi?",
+      "v": [
+        "1",
+        "0,5",
+        "σ",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Har qanday uzluksiz tasodifiy miqdorning zichlik egri chizig'i ostidagi to'la yuza barcha mumkin bo'lgan hodisalar ehtimolini ifodalaydi, u esa doim 1 ga teng. Normal taqsimot ham bundan mustasno emas. Distraktorlar: 0,5 — faqat yarim yuza, σ va a — taqsimot parametrlarini yuza bilan chalkashtirish. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "normal-egri-xossasi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#2eb81480"
+    },
+    {
+      "q": "Matematik kutilish o'zgarmagan holda o'rtacha kvadratik chetlanish σ ortsa, normal taqsimot egri chizig'i qanday o'zgaradi?",
+      "v": [
+        "Egri chiziq balandlashadi va torayadi",
+        "Egri chiziq o'ngga suriladi",
+        "Egri chiziq pasayadi va yoyilib kengayadi",
+        "Egri chiziq shakli umuman o'zgarmaydi"
+      ],
+      "t": 2,
+      "izoh": "σ tarqoqlik o'lchovi bo'lgani uchun u ortganda qiymatlar o'rtachadan uzoqroqqa yoyiladi. Egri chiziq ostidagi yuza doim 1 bo'lib qolgani uchun kengayish balandlikning pasayishi hisobiga sodir bo'ladi. Egri chiziqni o'ngga surish esa a ning ortishiga mos keladi. Javob: egri chiziq pasayadi va yoyilib kengayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "normal-egri-xossasi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#21864dcd"
+    },
+    {
+      "q": "Normal taqsimlangan tasodifiy miqdorda moda, mediana va matematik kutilish o'zaro qanday bog'langan bo'ladi?",
+      "v": [
+        "Moda medianadan katta",
+        "Uchalasi ham o'zaro teng",
+        "Mediana kutilishdan kichik",
+        "Faqat moda bilan mediana teng"
+      ],
+      "t": 1,
+      "izoh": "Normal egri chiziq a nuqtaga nisbatan simmetrik va cho'qqisi ham aynan shu nuqtada joylashgan. Cho'qqi modani, simmetriya markazi medianani, taqsimot markazi esa matematik kutilishni beradi, shuning uchun uchala tavsif ham a ga teng. Distraktorlar assimmetrik taqsimotlarga xos munosabatlarni noo'rin ko'chirishdan chiqqan. Javob: uchalasi ham o'zaro teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "normal-egri-xossasi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#72023f1b"
+    },
+    {
+      "q": "Ikki stanok bir xil detal tayyorlaydi: birinchisida a = 50 mm va σ = 0,4 mm, ikkinchisida a = 50 mm va σ = 1,2 mm. Qaysi stanokning taqsimot egri chizig'i balandroq hamda torroq bo'ladi?",
+      "v": [
+        "Ikkinchisi, chunki σ katta bo'lsa tarqoqlik kam",
+        "Ikkalasi bir xil, chunki a qiymatlari teng",
+        "Birinchisi, chunki a qiymati kichik",
+        "Birinchisi, chunki σ kichik va tarqoqlik kam"
+      ],
+      "t": 3,
+      "izoh": "Egri chiziqning kengligini faqat σ belgilaydi: σ qancha kichik bo'lsa, qiymatlar o'rtacha atrofida shuncha zich to'planadi. Birinchi stanokda σ = 0,4 mm bo'lgani uchun uning egri chizig'i tor va baland, ikkinchisiniki esa yoyiq va past bo'ladi. a qiymatlari teng bo'lgani uchun ikkala egri chiziq bir xil nuqtada markazlashgan. Javob: birinchisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "normal-egri-xossasi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#bcf90efc"
+    },
+    {
+      "q": "Tasodifiy miqdor normal taqsimlangan: a = 70 va σ = 8. x = 86 qiymatga mos keluvchi standartlashtirilgan z qiymatini toping.",
+      "v": [
+        "1,6",
+        "16",
+        "0,5",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Standartlashtirish formulasi z = (x − a) : σ ko'rinishida yoziladi. Bu yerda x − a = 86 − 70 = 16, uni σ = 8 ga bo'lamiz: z = 16 : 8 = 2. Distraktorlar: 16 — bo'lishni unutish, 0,5 — bo'lishni teskari tartibda bajarish, 1,6 — 16 ni 10 ga bo'lish. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "normal-standartlash",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#ad16e6e8"
+    },
+    {
+      "q": "Imtihon ballari normal taqsimlangan: o'rtacha ball 65, o'rtacha kvadratik chetlanish 12. Nodira 47 ball to'plagan bo'lsa, uning natijasiga mos z qiymatini hisoblang.",
+      "v": [
+        "1,5",
+        "−1,5",
+        "−18",
+        "−0,67"
+      ],
+      "t": 1,
+      "izoh": "z = (x − a) : σ formuladan foydalanamiz: x − a = 47 − 65 = −18, so'ng −18 : 12 = −1,5. Manfiy ishora natija o'rtachadan past ekanini bildiradi. Distraktorlar: −18 — bo'lish qadamini tashlab ketish, 1,5 — ishorani yo'qotish, −0,67 — bo'lishni teskari bajarish. Javob: −1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "normal-standartlash",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#f1c7123e"
+    },
+    {
+      "q": "Maktab o'quvchilarining bo'yi normal taqsimlangan: a = 150 sm, σ = 6 sm. Standartlashtirilgan qiymati z = −2 bo'lgan o'quvchining bo'yi qancha?",
+      "v": [
+        "138",
+        "162",
+        "144",
+        "148"
+      ],
+      "t": 0,
+      "izoh": "z = (x − a) : σ tenglikdan x = a + z·σ kelib chiqadi. Demak x = 150 + (−2)·6 = 150 − 12 = 138 sm. Distraktorlar: 162 — ishorani almashtirib qo'shish, 144 — faqat bitta σ ni ayirish, 148 — z ni to'g'ridan-to'g'ri ayirish. Javob: 138.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "normal-standartlash",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#d377c190"
+    },
+    {
+      "q": "Matematikada sinf o'rtachasi 60 ball va σ = 10, fizikada esa o'rtacha 50 ball va σ = 8. Anvar matematikadan 75, fizikadan 66 ball oldi. Qaysi fandagi natijasi sinfga nisbatan kuchliroq?",
+      "v": [
+        "Matematikada, chunki z = 1,5",
+        "Ikkalasida ham bir xil",
+        "Fizikada, chunki z = 2",
+        "Matematikada, chunki ball soni ko'p"
+      ],
+      "t": 2,
+      "izoh": "Har bir fan uchun standart qiymat hisoblanadi. Matematikada z = (75 − 60) : 10 = 1,5, fizikada esa z = (66 − 50) : 8 = 2. z qancha katta bo'lsa, natija o'rtachadan shuncha uzoq va kuchli hisoblanadi, demak fizikadagi natija ustun. Xom ballarni bevosita solishtirish esa noto'g'ri xulosaga olib keladi. Javob: fizikada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "normal-standartlash",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#2e32bdc1"
+    },
+    {
+      "q": "Universitetdagi 500 ta talabaning bo'yi normal taqsimlangan: o'rtacha 172 sm, σ = 7 sm. Bo'yi 165 sm dan 179 sm gacha bo'lgan talabalar soni taxminan nechta?",
+      "v": [
+        "250",
+        "340",
+        "475",
+        "170"
+      ],
+      "t": 1,
+      "izoh": "Chegaralar o'rtachadan 7 sm, ya'ni bir σ masofada. Uch sigma qoidasiga ko'ra bunday oraliqqa 68 foiz tushadi, demak 500·0,68 = 340 ta talaba. Distraktorlar: 475 — 95 foizni qo'llash, 250 — yarmini olish, 170 — 68 foiz o'rniga uning yarmini, 34 foizni olish (500·0,34). Javob: 340.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "normal-ulush-hisobi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#ef8a0eca"
+    },
+    {
+      "q": "Fermada yig'ilgan tuxumlarning og'irligi normal taqsimlangan: a = 60 g, σ = 4 g. Bir kunda yig'ilgan 2000 ta tuxumdan og'irligi 52 g bilan 68 g orasida bo'lganlari nechta bo'ladi?",
+      "v": [
+        "1366",
+        "1000",
+        "1994",
+        "1908"
+      ],
+      "t": 3,
+      "izoh": "Chegaralar o'rtachadan 8 g, ya'ni 2σ uzoqlikda. Ikki sigmalik oraliqqa 95,4 foiz tushadi, demak 2000·0,954 = 1908 ta tuxum. Distraktorlar: 1366 — bir sigma bo'yicha hisoblash, 1994 — uch sigma, 1000 — yarmi. Javob: 1908.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "normal-ulush-hisobi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#271f007e"
+    },
+    {
+      "q": "Ishga borish vaqti normal taqsimlangan: o'rtacha 25 daqiqa, σ = 3 daqiqa. Yo'lda 31 daqiqadan ko'proq vaqt sarflanishi ehtimolini baholang.",
+      "v": [
+        "0,046",
+        "0,159",
+        "0,023",
+        "0,05"
+      ],
+      "t": 2,
+      "izoh": "31 daqiqa o'rtachadan 6 daqiqa, ya'ni 2σ uzoqlikda. Ikki sigma oralig'idan tashqarida 1 − 0,954 = 0,046 qoladi va bu ulush ikkala dumga teng bo'linadi: 0,046 : 2 = 0,023. Distraktorlar: 0,046 — ikkiga bo'lishni unutish, 0,159 — bir sigma dumi, 0,05 — qo'pol yaxlitlash. Javob: 0,023.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "normal-ulush-hisobi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#8b3ffa60"
+    },
+    {
+      "q": "Bir partiyadagi 1200 ta detalning uzunligi normal taqsimlangan. Uzunligi o'rtacha qiymatdan bir sigmadan ko'proq farq qiladigan detallar soni taxminan nechta?",
+      "v": [
+        "380",
+        "818",
+        "600",
+        "190"
+      ],
+      "t": 0,
+      "izoh": "Bir sigmalik oraliq ichida qiymatlarning 68,3 foizi yotadi, demak undan tashqarida 100 − 68,3 = 31,7 foiz qoladi. Shundan 1200·0,317 ≈ 380 ta detal. Distraktorlar: 818 — ichkaridagi detallar soni, 600 — yarmini olish, 190 — faqat bitta dumni hisoblash. Javob: 380.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "normal-ulush-hisobi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#2fbfbf41"
+    },
+    {
+      "q": "Binomial taqsimotni normal taqsimot bilan almashtirib, taqribiy hisoblash qaysi shartlarda o'rinli bo'ladi?",
+      "v": [
+        "n kichik va p juda kichik bo'lganda",
+        "p qiymati 1 ga teng bo'lganda",
+        "n katta va n·p·q ko'paytma yetarlicha katta bo'lganda",
+        "sinovlar soni bittaga teng bo'lganda"
+      ],
+      "t": 2,
+      "izoh": "Sinovlar soni ortgan sari binomial taqsimotning ustunlari qo'ng'iroqsimon egri chiziqqa yaqinlashadi. Yaqinlashish sifatli bo'lishi uchun n katta va dispersiya n·p·q yetarlicha katta bo'lishi kerak, aks holda taqsimot juda assimmetrik qoladi. p ning 0 yoki 1 ga yaqin qiymatlarida bu shart buziladi. Javob: n katta va n·p·q yetarlicha katta bo'lganda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binomial-normal-yaqinlashish",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#da4b6c29"
+    },
+    {
+      "q": "Tanga 400 marta tashlanadi va gerblar soni taqribiy normal taqsimlangan deb qaraladi. Bu taqsimotning markazi hamda o'rtacha kvadratik chetlanishi qanday bo'ladi?",
+      "v": [
+        "a = 200, σ = 10",
+        "a = 200, σ = 100",
+        "a = 400, σ = 10",
+        "a = 100, σ = 10"
+      ],
+      "t": 0,
+      "izoh": "Markaz binomial taqsimotning matematik kutilishiga teng: a = n·p = 400·0,5 = 200. Dispersiya D = n·p·q = 400·0,25 = 100, demak σ = √100 = 10. Distraktorlar dispersiyani σ deb olish yoki markazni n bilan almashtirishdan chiqqan. Javob: a = 200, σ = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binomial-normal-yaqinlashish",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#409ee3ba"
+    },
+    {
+      "q": "To'qqiz yuz marta tashlangan tangada gerblar soni 435 tadan 465 tagacha bo'lish ehtimolini normal yaqinlashish yordamida baholang.",
+      "v": [
+        "0,954",
+        "0,683",
+        "0,997",
+        "0,5"
+      ],
+      "t": 1,
+      "izoh": "Avval parametrlar topiladi: a = 900·0,5 = 450 va σ = √(900·0,25) = √225 = 15. Chegaralar 435 va 465 markazdan aynan 15 ta, ya'ni bir σ uzoqlikda. Uch sigma qoidasiga ko'ra bir sigmalik oraliqqa tushish ehtimoli taxminan 0,683. Javob: 0,683.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "binomial-normal-yaqinlashish",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#1df74157"
+    },
+    {
+      "q": "O'nta sinovdan iborat turkumda hodisaning ko'pi bilan uch marta ro'y berish ehtimoli 0,65 ga teng bo'lsa, hodisa kamida to'rt marta ro'y berish ehtimoli qanday bo'ladi?",
+      "v": [
+        "0,65",
+        "0,3",
+        "0,45",
+        "0,35"
+      ],
+      "t": 3,
+      "izoh": "Hodisalar to'plami k ≤ 3 va k ≥ 4 qismlarga to'liq ajraladi, ular kesishmaydi va birgalikda barcha hollarni qoplaydi. Shuning uchun ehtimollar yig'indisi 1 ga teng va izlanayotgan qiymat 1 − 0,65 = 0,35. Distraktorlar: 0,65 — berilganni takrorlash, 0,45 va 0,3 — noto'g'ri ayirish. Javob: 0,35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tuldiruvchi-hodisa",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#847d473e"
+    },
+    {
+      "q": "Tanga 4 marta tashlanadi. Natijalar aynan «gerb, raqam, gerb, gerb» tartibida chiqish ehtimolini toping.",
+      "v": [
+        "1/4",
+        "3/8",
+        "1/8",
+        "1/16"
+      ],
+      "t": 3,
+      "izoh": "Bu yerda tartib qat'iy belgilangan, shuning uchun kombinatsiyalar soni qatnashmaydi va ehtimol shunchaki (1/2)⁴ = 1/16 ga teng. Distraktorlar: 1/4 — istalgan tartibda 3 ta gerb tushishi, ya'ni C(4,3)/16, 3/8 — noto'g'ri kombinatsiya, 1/8 — uchta tashlash uchun javob. Javob: 1/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniq-ketma-ketlik",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#35979677"
+    },
+    {
+      "q": "Merganning har bir otishda nishonga tegizish ehtimoli 0,6. U 3 marta otganda natijalar aynan «tegdi, tegmadi, tegdi» tartibida bo'lishi ehtimolini hisoblang.",
+      "v": [
+        "0,432",
+        "0,144",
+        "0,216",
+        "0,096"
+      ],
+      "t": 1,
+      "izoh": "Tartib belgilangani uchun ehtimollar shunchaki ko'paytiriladi: 0,6·0,4·0,6 = 0,144. Distraktorlar: 0,432 — istalgan tartibda aynan 2 marta tegishi, ya'ni 3·0,144, 0,216 — uchala otishda tegishi, 0,096 — faqat bir marta tegishi holi. Javob: 0,144.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniq-ketma-ketlik",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#573293f3"
+    },
+    {
+      "q": "O'yin kubigi 5 marta tashlanadi. Dastlabki ikki tashlashda 6 ochko tushib, qolgan uchtasida tushmasligi ehtimoli 6 ochko aynan ikki marta tushishi ehtimolidan necha marta kichik?",
+      "v": [
+        "5 marta",
+        "2 marta",
+        "10 marta",
+        "20 marta"
+      ],
+      "t": 2,
+      "izoh": "Belgilangan tartibdagi ehtimol (1/6)²·(5/6)³ ga teng. Aynan ikki marta tushishi esa shu ifodaning C(5,2) ga ko'paytirilgani. Demak nisbat aynan kombinatsiyalar soniga teng: C(5,2) = 10. Distraktorlar: 5 va 2 — n bilan k ni javob deb olish, 20 — o'rin almashtirishlar sonini hisoblash. Javob: 10 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniq-ketma-ketlik",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#2b99d475"
+    },
+    {
+      "q": "Konveyerdan olingan mahsulotning brak bo'lish ehtimoli 0,1. Ketma-ket olingan 4 ta mahsulotdan faqat oxirgisi brak chiqishi ehtimolini toping.",
+      "v": [
+        "0,0729",
+        "0,2916",
+        "0,1",
+        "0,001"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki uchta mahsulot yaroqli, oxirgisi brak bo'lishi kerak, ya'ni tartib qat'iy: 0,9³·0,1 = 0,729·0,1 = 0,0729. Distraktorlar: 0,2916 — brak qaysi o'rinda ekani muhim emas deb C(4,1) ga ko'paytirish, 0,1 — faqat oxirgi mahsulotni hisobga olish, 0,001 — uchtasi brak bo'lishi. Javob: 0,0729.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniq-ketma-ketlik",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#429dd9f4"
+    },
+    {
+      "q": "Bir tajriba ikki turkumga bo'lingan: birinchi turkumda 2 ta, ikkinchisida 3 ta sinov o'tkaziladi va har bir sinovda hodisaning ro'y berish ehtimoli 0,5. Birinchi turkumda aynan bir marta, ikkinchisida aynan ikki marta ro'y berish ehtimolini toping.",
+      "v": [
+        "3/32",
+        "3/16",
+        "5/16",
+        "1/4"
+      ],
+      "t": 1,
+      "izoh": "Birinchi turkum uchun P₂(1) = C(2,1)/2² = 2/4 = 1/2, ikkinchisi uchun P₃(2) = C(3,2)/2³ = 3/8. Turkumlar mustaqil bo'lgani uchun ehtimollar ko'paytiriladi: (1/2)·(3/8) = 3/16. Distraktorlar: 3/32 — birinchi turkumda C(2,1) ni unutib (1/2)² = 1/4 ni olish va 3/8 ga ko'paytirish, 1/4 — ikkinchi turkumni hisobga olmay, birinchisini ham C(2,1) siz olish, 5/16 — kombinatsiyalar sonini noto'g'ri sanash (ehtimollar qo'shilganda esa 1/2 + 3/8 = 7/8 chiqar edi). Javob: 3/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-turkum-birgalikda",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#4e55b972"
+    },
+    {
+      "q": "Birinchi mergan 3 marta otadi va har otishda 0,8 ehtimol bilan tegizadi, ikkinchi mergan 2 marta otadi va 0,5 ehtimol bilan tegizadi. Birinchisi hamma marta tegizib, ikkinchisi umuman tegiza olmasligi ehtimolini toping.",
+      "v": [
+        "0,256",
+        "0,512",
+        "0,064",
+        "0,128"
+      ],
+      "t": 3,
+      "izoh": "Birinchi mergan uchun P = 0,8³ = 0,512, ikkinchisi uchun P = 0,5² = 0,25. Otishlar mustaqil bo'lgani uchun natijalar ko'paytiriladi: 0,512·0,25 = 0,128. Distraktorlar: 0,512 — ikkinchi merganni hisobga olmaslik, 0,256 — 0,512 ni ikkiga bo'lish, 0,064 — 0,8 o'rniga 0,4 ni darajaga ko'tarish. Javob: 0,128.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-turkum-birgalikda",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#05189a28"
+    },
+    {
+      "q": "Savdo nuqtasiga ertalab 3 ta, kechqurun 2 ta mijoz keladi va ularning har biri 0,4 ehtimol bilan xarid qiladi. Ertalab hech kim xarid qilmasligi va kechqurun ikkala mijoz ham xarid qilishi ehtimolini hisoblang.",
+      "v": [
+        "0,03456",
+        "0,0864",
+        "0,216",
+        "0,16"
+      ],
+      "t": 0,
+      "izoh": "Ertalabki qism uchun P = 0,6³ = 0,216, kechqurungisi uchun P = 0,4² = 0,16. Ikki qism mustaqil, shuning uchun 0,216·0,16 = 0,03456. Distraktorlar: 0,216 va 0,16 — faqat bitta qismni hisoblash, 0,0864 — 0,6³ ni 0,4 ga ko'paytirish. Javob: 0,03456.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-turkum-birgalikda",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#76118d15"
+    },
+    {
+      "q": "Talaba 2 ta matematika va 3 ta fizika masalasini yechmoqda, har bir masalani yechish ehtimoli 0,5 ga teng. Har ikkala fandan ham kamida bittadan masala yechilishi ehtimolini toping.",
+      "v": [
+        "7/32",
+        "3/4",
+        "21/32",
+        "25/32"
+      ],
+      "t": 2,
+      "izoh": "Matematikadan kamida bittasi yechilishi 1 − (1/2)² = 3/4, fizikadan esa 1 − (1/2)³ = 7/8. Shartlar bir vaqtda bajarilishi kerak va fanlar mustaqil, demak (3/4)·(7/8) = 21/32. Distraktorlar: 3/4 — faqat matematika shartini javob deb olish (faqat fizika olinsa 7/8 chiqar edi), 7/32 — matematikadan kamida bittasi o'rniga hech biri yechilmasligini olish, ya'ni (1/4)·(7/8), 25/32 — to'ldiruvchi hodisani noto'g'ri tuzib 1 − (1/4)·(7/8) ni hisoblash. Javob: 21/32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-turkum-birgalikda",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#f9b993dd"
+    },
+    {
+      "q": "Kamol har birining yutish ehtimoli 0,05 bo'lgan 60 ta lotereya bileti sotib oldi, har bir yutuq esa 200 000 so'mni tashkil qiladi. Kutilayotgan yutuqli biletlar soni va umumiy yutuq summasini toping.",
+      "v": [
+        "5 ta va 1 000 000 so'm",
+        "3 ta va 200 000 so'm",
+        "3 ta va 600 000 so'm",
+        "12 ta va 2 400 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Yutuqli biletlar soni binomial taqsimlangan, uning o'rtachasi M = n·p = 60·0,05 = 3 ta. Umumiy summa 3·200 000 = 600 000 so'm. Distraktorlar: 3 ta va 200 000 so'm — ko'paytirishni unutish, 5 ta va 1 000 000 so'm — foizni noto'g'ri o'qish, 12 ta — 60 ni 5 ga bo'lish. Javob: 3 ta va 600 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kutilgan-natija-hisobi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#7a047185"
+    },
+    {
+      "q": "Sotuvchi kuniga 80 ta mijozga taklif bildiradi va ularning har biri 0,15 ehtimol bilan xarid qiladi. Har bir xariddan 25 000 so'm foyda tushsa, kunlik kutilayotgan foydani hisoblang.",
+      "v": [
+        "300 000 so'm",
+        "200 000 so'm",
+        "2 000 000 so'm",
+        "120 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Xaridlarning o'rtacha soni M = 80·0,15 = 12 ta. Kunlik foyda esa 12·25 000 = 300 000 so'm. Distraktorlar: 2 000 000 so'm — 80 ta mijozning hammasi xarid qiladi deb hisoblash, 200 000 so'm — 8 ta xarid deb olish, 120 000 so'm — foydani 10 000 so'm deb olish. Javob: 300 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kutilgan-natija-hisobi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#8ce77aa8"
+    },
+    {
+      "q": "Testda 40 ta savol bor va har birida 4 tadan variant berilgan. To'g'ri javob 2 ball qo'shadi, noto'g'ri javob esa 1 ball ayiradi. Barcha savollarga tavakkaliga javob belgilanganda kutilayotgan umumiy ballni toping.",
+      "v": [
+        "10",
+        "20",
+        "−30",
+        "−10"
+      ],
+      "t": 3,
+      "izoh": "Tavakkal javobning to'g'ri chiqish ehtimoli 0,25, demak to'g'ri javoblarning o'rtacha soni 40·0,25 = 10 ta va ular 10·2 = 20 ball beradi. Noto'g'ri javoblar soni 40 − 10 = 30 ta, ular 30 ball ayiradi. Yakuniy ball 20 − 30 = −10. Distraktorlar: 20 va −30 — faqat bitta qismni hisoblash, 10 — to'g'ri javoblar sonini javob deb olish. Javob: −10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kutilgan-natija-hisobi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#da35e4b2"
+    },
+    {
+      "q": "Fermer 500 ta ko'chat ekdi va har bir ko'chatning tutib ketish ehtimoli 0,92 ga teng. Tutmay qolgan ko'chatlar sonining o'rtacha qiymati va dispersiyasini toping.",
+      "v": [
+        "460 va 36,8",
+        "40 va 36,8",
+        "40 va 460",
+        "46 va 36,8"
+      ],
+      "t": 1,
+      "izoh": "Tutmaslik ehtimoli p = 1 − 0,92 = 0,08, demak M = 500·0,08 = 40 ta. Dispersiya D = n·p·q = 500·0,08·0,92 = 36,8. Distraktorlar: 460 — tutgan ko'chatlar soni, 46 — foizni noto'g'ri hisoblash, 40 va 460 — dispersiya o'rniga qolgan sonni yozish. Javob: 40 va 36,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kutilgan-natija-hisobi",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#aa2b8369"
+    },
+    {
+      "q": "Qaysi hodisaning ehtimoli katta: tanga 4 marta tashlanganda aynan 2 marta gerb tushishimi yoki 6 marta tashlanganda aynan 3 marta gerb tushishimi?",
+      "v": [
+        "Birinchisi kattaroq: 6/16 katta",
+        "Ikkinchisi kattaroq: 20/64 katta",
+        "Ikkala hodisaning ehtimoli teng",
+        "Berilganlar yetarli emas"
+      ],
+      "t": 0,
+      "izoh": "Birinchi holda P = C(4,2)/2⁴ = 6/16 = 0,375, ikkinchisida P = C(6,3)/2⁶ = 20/64 = 0,3125. Demak birinchi hodisa ehtimolliroq. Sinovlar soni ortgan sari taqsimot yoyiladi va markazdagi ehtimol kamayadi, garchi u eng katta bo'lib qolaveradi. Javob: birinchisi kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ehtimollarni-taqqoslash",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#fcab2877"
+    },
+    {
+      "q": "Mergan A 5 marta otadi va har otishda 0,6 ehtimol bilan tegizadi, mergan B esa 3 marta otib, har otishda 0,8 ehtimol bilan tegizadi. Kimning o'rtacha tekkizishlar soni ko'proq bo'ladi?",
+      "v": [
+        "Mergan B, 2,4 ta",
+        "Ikkalasida ham 2,4 ta",
+        "Mergan A, 3 ta",
+        "Ikkalasida ham 3 ta"
+      ],
+      "t": 2,
+      "izoh": "Har biri uchun M = n·p hisoblanadi. Mergan A uchun M = 5·0,6 = 3 ta, mergan B uchun M = 3·0,8 = 2,4 ta. Demak mergan A ning o'rtacha natijasi yuqori, garchi uning bitta otishdagi aniqligi pastroq bo'lsa ham. Javob: mergan A, 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ehtimollarni-taqqoslash",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#5a45ab5b"
+    },
+    {
+      "q": "O'yin kubigi 3 marta tashlanadi. Qaysi hodisa ehtimolliroq: birorta ham marta 6 ochko tushmasligimi yoki kamida bir marta tushishimi?",
+      "v": [
+        "Kamida bir marta 6 tushishi",
+        "Hech marta 6 tushmasligi",
+        "Ikkala hodisa ham teng ehtimolli",
+        "Buni aniqlashning imkoni yo'q"
+      ],
+      "t": 1,
+      "izoh": "Hech marta 6 tushmasligi ehtimoli (5/6)³ = 125/216 ≈ 0,58, kamida bir marta tushishi esa 91/216 ≈ 0,42. Ikkala son yig'indisi 1 ga teng, chunki hodisalar o'zaro teskari. 125/216 kattaroq bo'lgani uchun birinchi hodisa ehtimolliroq. Javob: hech marta 6 tushmasligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ehtimollarni-taqqoslash",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#ce1f8637"
+    },
+    {
+      "q": "Dorining bemorga yordam berish ehtimoli 0,5. Uch bemordan kamida ikkitasiga yordam berishi bilan to'rt bemordan kamida uchtasiga yordam berishi ehtimollarini taqqoslang.",
+      "v": [
+        "Ikkinchisi katta: 5/16 ustun",
+        "Ikkalasi teng: har biri 1/2",
+        "Ikkalasi teng: har biri 5/16",
+        "Birinchisi katta: 1/2 ustun"
+      ],
+      "t": 3,
+      "izoh": "Uch bemor uchun (C(3,2) + C(3,3)) : 2³ = 4/8 = 1/2. To'rt bemor uchun (C(4,3) + C(4,4)) : 2⁴ = 5/16. 1/2 = 8/16 bo'lgani uchun birinchi ehtimol kattaroq. Sinovlar soni ortganda talab ham qattiqlashgani uchun ehtimol pasaygan. Javob: birinchisi katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ehtimollarni-taqqoslash",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#d67669a7"
+    },
+    {
+      "q": "Har bir sinovda muvaffaqiyat ehtimoli 0,5 ga teng. Kamida bir marta muvaffaqiyat qozonish ehtimoli 0,96 dan katta bo'lishi uchun eng kamida nechta sinov o'tkazish kerak?",
+      "v": [
+        "4",
+        "6",
+        "32",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Shart 1 − 0,5ⁿ > 0,96 ko'rinishida yoziladi, bundan 0,5ⁿ < 0,04 kelib chiqadi. n = 4 da 0,5⁴ = 0,0625 bo'lib shart bajarilmaydi, n = 5 da esa 0,5⁵ = 0,03125 < 0,04 bo'ladi. Demak eng kichik n = 5. Distraktorlar: 4 — tengsizlikni tekshirmasdan yaxlitlash, 6 — ortiqcha zaxira olish, 32 — maxrajni javob deb olish. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "minimal-sinov-soni",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#cfd4c64d"
+    },
+    {
+      "q": "Bir o'yinda yutish ehtimoli 1/3 ga teng. Kamida bir marta yutish ehtimoli 0,7 dan katta bo'lishi uchun o'yinni kamida necha marta o'ynash kerak?",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Yutqazish ehtimoli q = 2/3, shart esa 1 − (2/3)ⁿ > 0,7, ya'ni (2/3)ⁿ < 0,3. n = 2 da (2/3)² = 4/9 ≈ 0,44 bo'lib shart bajarilmaydi, n = 3 da (2/3)³ = 8/27 ≈ 0,30 dan kichik. Demak kamida 3 marta o'ynash kerak. Distraktorlar: 2 — tekshirishni yarim yo'lda to'xtatish, 4 va 9 — ortiqcha yaxlitlash. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "minimal-sinov-soni",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#6c0c811c"
+    },
+    {
+      "q": "Omborga kelgan detalning yaroqsiz chiqish ehtimoli 0,2. Tekshiruvda kamida bitta yaroqsiz detal uchrash ehtimoli 0,5 dan katta bo'lishi uchun eng kamida nechta detal olinishi kerak?",
+      "v": [
+        "4",
+        "3",
+        "5",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Shart 1 − 0,8ⁿ > 0,5, ya'ni 0,8ⁿ < 0,5. n = 3 da 0,8³ = 0,512 bo'lib shart bajarilmaydi, n = 4 da esa 0,8⁴ = 0,4096 < 0,5. Demak eng kamida 4 ta detal olinishi kerak. Distraktorlar: 3 — 0,512 ni 0,5 dan kichik deb hisoblash, 5 — ortiqcha olish, 2 — tekshirmasdan taxmin qilish. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "minimal-sinov-soni",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#121f408a"
+    },
+    {
+      "q": "Sinovlar turkumida hodisaning birorta ham marta ro'y bermaslik ehtimoli 0,08, barcha sinovlarda ro'y berish ehtimoli esa 0,17 ga teng. Hodisa kamida bir marta, lekin hamma sinovda emas ro'y berish ehtimolini toping.",
+      "v": [
+        "0,92",
+        "0,25",
+        "0,75",
+        "0,83"
+      ],
+      "t": 2,
+      "izoh": "Uchala hol barcha imkoniyatlarni qoplaydi: hech marta, hamma marta va oraliq hollar. Shuning uchun izlanayotgan ehtimol 1 − 0,08 − 0,17 = 0,75. Distraktorlar: 0,92 va 0,83 — faqat bitta chetki holni ayirish, 0,25 — ikkala chetki holning yig'indisi. Javob: 0,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tuldiruvchi-hodisa",
+      "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial#7a1e08b5"
+    }
+  ]
+}

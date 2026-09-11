@@ -1,0 +1,656 @@
+{
+  "nom": "Ilk so'zlar",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "🍎 is a(n) ___.",
+      "v": [
+        "apple",
+        "banana",
+        "car",
+        "dog"
+      ],
+      "t": 0,
+      "izoh": "🍎 = apple (olma).",
+      "qiy": "oson",
+      "id": "ing_kids_m5#f24895b8"
+    },
+    {
+      "q": "🐶 is a ___.",
+      "v": [
+        "cat",
+        "dog",
+        "fish",
+        "bird"
+      ],
+      "t": 1,
+      "izoh": "🐶 = dog (it).",
+      "qiy": "oson",
+      "id": "ing_kids_m5#f7858532"
+    },
+    {
+      "q": "What colour is this? 🔴",
+      "v": [
+        "red",
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "t": 0,
+      "izoh": "🔴 = red (qizil).",
+      "qiy": "oson",
+      "id": "ing_kids_m5#cb7fe34d"
+    },
+    {
+      "q": "How many fingers? ✋",
+      "v": [
+        "three",
+        "four",
+        "five",
+        "six"
+      ],
+      "t": 2,
+      "izoh": "✋ = five (besh).",
+      "qiy": "oson",
+      "id": "ing_kids_m5#d6ac1a51"
+    },
+    {
+      "q": "☀️ is the ___.",
+      "v": [
+        "moon",
+        "sun",
+        "star",
+        "rain"
+      ],
+      "t": 1,
+      "izoh": "☀️ = sun (quyosh).",
+      "qiy": "oson",
+      "id": "ing_kids_m5#f96a6c03"
+    },
+    {
+      "q": "🐱 says ___.",
+      "v": [
+        "moo",
+        "meow",
+        "woof",
+        "quack"
+      ],
+      "t": 1,
+      "izoh": "Mushuk \"meow\" deydi.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#2817fcdf"
+    },
+    {
+      "q": "🍌 is ___ (colour).",
+      "v": [
+        "red",
+        "yellow",
+        "blue",
+        "green"
+      ],
+      "t": 1,
+      "izoh": "🍌 = yellow (sariq).",
+      "qiy": "oson",
+      "id": "ing_kids_m5#5bf6720c"
+    },
+    {
+      "q": "🚗 is a ___.",
+      "v": [
+        "car",
+        "bus",
+        "bike",
+        "train"
+      ],
+      "t": 0,
+      "izoh": "🚗 = car (mashina).",
+      "qiy": "oson",
+      "id": "ing_kids_m5#a9f640f3"
+    },
+    {
+      "q": "🐟 lives in ___.",
+      "v": [
+        "water",
+        "a tree",
+        "the sky",
+        "a house"
+      ],
+      "t": 0,
+      "izoh": "Baliq suvda yashaydi.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#b1854913"
+    },
+    {
+      "q": "👋 means ___.",
+      "v": [
+        "\"hello\"",
+        "\"run\"",
+        "\"eat\"",
+        "\"sleep\""
+      ],
+      "t": 0,
+      "izoh": "👋 = hello (salom).",
+      "qiy": "oson",
+      "id": "ing_kids_m5#ebe9e968"
+    },
+    {
+      "q": "What is 🍎?",
+      "v": [
+        "apple",
+        "dog",
+        "sun",
+        "key"
+      ],
+      "t": 0,
+      "izoh": "🍎 — olma.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#05ecb7ba"
+    },
+    {
+      "q": "What shines in the day? ☀️",
+      "v": [
+        "moon",
+        "sun",
+        "star",
+        "tree"
+      ],
+      "t": 1,
+      "izoh": "☀️ — quyosh.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#682c9827"
+    },
+    {
+      "q": "What do you see at night in the sky? 🌙",
+      "v": [
+        "sun",
+        "moon",
+        "apple",
+        "dog"
+      ],
+      "t": 1,
+      "izoh": "🌙 — oy.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#f318de7c"
+    },
+    {
+      "q": "What is tall and green with leaves? 🌳",
+      "v": [
+        "tree",
+        "key",
+        "banana",
+        "cat"
+      ],
+      "t": 0,
+      "izoh": "🌳 — daraxt.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#92c5d927"
+    },
+    {
+      "q": "What opens a lock? 🔑",
+      "v": [
+        "key",
+        "apple",
+        "star",
+        "fish"
+      ],
+      "t": 0,
+      "izoh": "🔑 — kalit.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#897fdcef"
+    },
+    {
+      "q": "What do you open to go inside? 🚪",
+      "v": [
+        "door",
+        "tree",
+        "star",
+        "fish"
+      ],
+      "t": 0,
+      "izoh": "🚪 — eshik.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#11fcd631"
+    },
+    {
+      "q": "What swims in water? 🐟",
+      "v": [
+        "cat",
+        "dog",
+        "fish",
+        "tree"
+      ],
+      "t": 2,
+      "izoh": "🐟 — baliq.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#8706f11a"
+    },
+    {
+      "q": "What is 🍌? A long yellow fruit.",
+      "v": [
+        "apple",
+        "banana",
+        "flower",
+        "star"
+      ],
+      "t": 1,
+      "izoh": "🍌 — banan.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#13963f07"
+    },
+    {
+      "q": "What do you live in? 🏠",
+      "v": [
+        "house",
+        "car",
+        "tree",
+        "dog"
+      ],
+      "t": 0,
+      "izoh": "🏠 — uy.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#48eef99e"
+    },
+    {
+      "q": "What tells the time? 🕐",
+      "v": [
+        "clock",
+        "door",
+        "key",
+        "star"
+      ],
+      "t": 0,
+      "izoh": "🕐 — soat.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#a1642af8"
+    },
+    {
+      "q": "Which one is an animal?",
+      "v": [
+        "dog",
+        "apple",
+        "key",
+        "house"
+      ],
+      "t": 0,
+      "izoh": "Dog — it, hayvon.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#1341138a"
+    },
+    {
+      "q": "Which one is a fruit?",
+      "v": [
+        "car",
+        "banana",
+        "star",
+        "door"
+      ],
+      "t": 1,
+      "izoh": "Banana — meva.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#af895086"
+    },
+    {
+      "q": "Which one can you eat?",
+      "v": [
+        "apple",
+        "key",
+        "sun",
+        "house"
+      ],
+      "t": 0,
+      "izoh": "Apple — yeyish mumkin.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#179bbd15"
+    },
+    {
+      "q": "Which one gives light at night? 🌙",
+      "v": [
+        "tree",
+        "moon",
+        "car",
+        "fish"
+      ],
+      "t": 1,
+      "izoh": "Moon — oy.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#9d3fead8"
+    },
+    {
+      "q": "Which one is a colour?",
+      "v": [
+        "red",
+        "dog",
+        "key",
+        "tree"
+      ],
+      "t": 0,
+      "izoh": "Red — qizil rang.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#d767b8f8"
+    },
+    {
+      "q": "Which one is a number?",
+      "v": [
+        "apple",
+        "three",
+        "dog",
+        "star"
+      ],
+      "t": 1,
+      "izoh": "Three — uch (son).",
+      "qiy": "oson",
+      "id": "ing_kids_m5#9048a1dc"
+    },
+    {
+      "q": "What do you wave to say hello? 👋",
+      "v": [
+        "hand",
+        "foot",
+        "ear",
+        "nose"
+      ],
+      "t": 0,
+      "izoh": "Hand — qo'l.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#3751b833"
+    },
+    {
+      "q": "Which animal says 'meow'?",
+      "v": [
+        "dog",
+        "cat",
+        "fish",
+        "cow"
+      ],
+      "t": 1,
+      "izoh": "Cat — mushuk 'meow' deydi.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#74374093"
+    },
+    {
+      "q": "Which animal says 'woof'?",
+      "v": [
+        "cat",
+        "dog",
+        "fish",
+        "bird"
+      ],
+      "t": 1,
+      "izoh": "Dog — it 'woof' deydi.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#30c35fd6"
+    },
+    {
+      "q": "What is round and red and you eat it?",
+      "v": [
+        "apple",
+        "key",
+        "car",
+        "door"
+      ],
+      "t": 0,
+      "izoh": "Apple — olma.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#34ce2f4c"
+    },
+    {
+      "q": "Which one gives light in the day?",
+      "v": [
+        "moon",
+        "star",
+        "sun",
+        "door"
+      ],
+      "t": 2,
+      "izoh": "Sun — quyosh.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#c0c6557e"
+    },
+    {
+      "q": "Which one grows in a garden and smells nice?",
+      "v": [
+        "car",
+        "flower",
+        "key",
+        "clock"
+      ],
+      "t": 1,
+      "izoh": "Flower — gul.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#eb96508e"
+    },
+    {
+      "q": "Which one has four wheels and drives on the road?",
+      "v": [
+        "fish",
+        "car",
+        "tree",
+        "star"
+      ],
+      "t": 1,
+      "izoh": "Car — mashina.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#b807eb29"
+    },
+    {
+      "q": "Which one is a big plant?",
+      "v": [
+        "tree",
+        "apple",
+        "key",
+        "fish"
+      ],
+      "t": 0,
+      "izoh": "Tree — daraxt.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#eeb33b50"
+    },
+    {
+      "q": "Which one do you use to open a lock?",
+      "v": [
+        "door",
+        "key",
+        "clock",
+        "star"
+      ],
+      "t": 1,
+      "izoh": "Key — kalit.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#ee81fdb4"
+    },
+    {
+      "q": "What is yellow and monkeys love it?",
+      "v": [
+        "apple",
+        "banana",
+        "flower",
+        "fish"
+      ],
+      "t": 1,
+      "izoh": "Banana — banan.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#c0bc7849"
+    },
+    {
+      "q": "Which one twinkles at night?",
+      "v": [
+        "sun",
+        "star",
+        "house",
+        "car"
+      ],
+      "t": 1,
+      "izoh": "Star — yulduz.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#6486861f"
+    },
+    {
+      "q": "Which one can fly with air inside? 🎈",
+      "v": [
+        "balloon",
+        "tree",
+        "key",
+        "fish"
+      ],
+      "t": 0,
+      "izoh": "Balloon — sharcha.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#5bdb7bf7"
+    },
+    {
+      "q": "Which pet swims in water?",
+      "v": [
+        "cat",
+        "dog",
+        "fish",
+        "cow"
+      ],
+      "t": 2,
+      "izoh": "Fish — baliq.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#76afbb2d"
+    },
+    {
+      "q": "What colour is grass?",
+      "v": [
+        "green",
+        "red",
+        "blue",
+        "black"
+      ],
+      "t": 0,
+      "izoh": "Grass — yashil (green).",
+      "qiy": "oson",
+      "id": "ing_kids_m5#cd37c086"
+    },
+    {
+      "q": "What colour is the sky on a sunny day?",
+      "v": [
+        "blue",
+        "green",
+        "brown",
+        "black"
+      ],
+      "t": 0,
+      "izoh": "Sky — ko'k (blue).",
+      "qiy": "oson",
+      "id": "ing_kids_m5#ef0854cc"
+    },
+    {
+      "q": "How many legs does a dog have?",
+      "v": [
+        "four",
+        "two",
+        "six",
+        "ten"
+      ],
+      "t": 0,
+      "izoh": "It — to'rt oyoq (four).",
+      "qiy": "oson",
+      "id": "ing_kids_m5#b4dabf12"
+    },
+    {
+      "q": "Which one do you drink?",
+      "v": [
+        "water",
+        "key",
+        "car",
+        "tree"
+      ],
+      "t": 0,
+      "izoh": "Water — suv, ichiladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#fa6f6519"
+    },
+    {
+      "q": "What is 🐶?",
+      "v": [
+        "cat",
+        "dog",
+        "fish",
+        "tree"
+      ],
+      "t": 1,
+      "izoh": "🐶 — it.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#98654d23"
+    },
+    {
+      "q": "What is ⭐?",
+      "v": [
+        "star",
+        "flower",
+        "key",
+        "fish"
+      ],
+      "t": 0,
+      "izoh": "⭐ — yulduz.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#4ecb2430"
+    },
+    {
+      "q": "What is 🌸?",
+      "v": [
+        "tree",
+        "flower",
+        "house",
+        "car"
+      ],
+      "t": 1,
+      "izoh": "🌸 — gul.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#0424f275"
+    },
+    {
+      "q": "What is 🎈?",
+      "v": [
+        "balloon",
+        "house",
+        "dog",
+        "sun"
+      ],
+      "t": 0,
+      "izoh": "🎈 — sharcha.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#75a5da50"
+    },
+    {
+      "q": "What is 🐱?",
+      "v": [
+        "dog",
+        "cat",
+        "fish",
+        "banana"
+      ],
+      "t": 1,
+      "izoh": "🐱 — mushuk.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#58d8b27b"
+    },
+    {
+      "q": "What is 🚗?",
+      "v": [
+        "car",
+        "house",
+        "key",
+        "apple"
+      ],
+      "t": 0,
+      "izoh": "🚗 — mashina.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#45012ea7"
+    },
+    {
+      "q": "What is 🐟?",
+      "v": [
+        "fish",
+        "cat",
+        "dog",
+        "tree"
+      ],
+      "t": 0,
+      "izoh": "🐟 — baliq.",
+      "qiy": "oson",
+      "id": "ing_kids_m5#8963dc9b"
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "nom": "16-mavzu. Termodinamik Ish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Biror sistemaning ichki energiyasining o'zgarishiga nima sabab bo'ladi?",
+      "v": [
+        "Ish bajarish va issiqlik almashinish jarayonlari",
+        "Faqat jismning harakat tezligi",
+        "Faqat jismning rangi o'zgarishi",
+        "Faqat jismning shakli o'zgarishi"
+      ],
+      "t": 0,
+      "izoh": "Biror sistemaning ichki energiyasini o'zgarishiga ish bajarish va issiqlik almashinish jarayonlari sabab bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#9a1623bc"
+    },
+    {
+      "q": "Termodinamik ish deganda nima tushuniladi?",
+      "v": [
+        "Gaz hajmi o'zgarganda u tashqi bosim kuchiga qarshi bajaradigan ish",
+        "Jismni ko'tarishda bajariladigan ish",
+        "Jismni ishqalashda bajariladigan ish",
+        "Elektr tokining bajaradigan ishi"
+      ],
+      "t": 0,
+      "izoh": "Gazning hajmi o'zgarganda, u tashqi bosim kuchiga qarshi ish bajaradi. Bu ishga termodinamik ish deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#00123eb9"
+    },
+    {
+      "q": "Gaz qizdirilganda porshenni siljitishiga nima sabab bo'ladi?",
+      "v": [
+        "Gaz molekulalarining porshenga borib urilishi",
+        "Porshenning o'z og'irligi",
+        "Idishning devorlari",
+        "Tashqi magnit maydon"
+      ],
+      "t": 0,
+      "izoh": "Gaz qizdirilganda, gaz molekulalari porshenga borib urilishi natijasida porshenni biror Δh masofaga siljitadi va ish bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#c67ab140"
+    },
+    {
+      "q": "Gazning tashqi kuchga qarshi bajargan ishi mexanik ish formulasiga ko'ra qanday ifodalanadi?",
+      "v": [
+        "A = F·Δh",
+        "A = F/Δh",
+        "A = F + Δh",
+        "A = F·Δh²"
+      ],
+      "t": 0,
+      "izoh": "Mexanik ish formulasiga ko'ra gazning tashqi kuchga qarshi bajargan ishi A = F·Δh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#1ed50a9e"
+    },
+    {
+      "q": "Bosim ta'rifidan gazning porshenga ta'sir kuchi qanday ifodalanadi?",
+      "v": [
+        "F = p·S",
+        "F = p/S",
+        "F = S/p",
+        "F = p·S²"
+      ],
+      "t": 0,
+      "izoh": "Bosim ta'rifidan F = p·S ekanligi e'tiborga olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#ea00c3d4"
+    },
+    {
+      "q": "Gazning izobarik kengayishida bajargan ishining formulasi qaysi?",
+      "v": [
+        "A = p·ΔV",
+        "A = p/ΔV",
+        "A = ΔV/p",
+        "A = p·V₁"
+      ],
+      "t": 0,
+      "izoh": "A = p·S·Δh = p·ΔV. Gazning izobarik kengayishida bajargan ishi uning bosimi bilan hajmi o'zgarishining ko'paytmasiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#a4e735d1"
+    },
+    {
+      "q": "A = p·ΔV formulasidagi ΔV nimani bildiradi?",
+      "v": [
+        "Gaz hajmining o'zgarishini, ΔV = V₂ − V₁",
+        "Gazning dastlabki hajmini",
+        "Gaz bosimining o'zgarishini",
+        "Porshenning yuzasini"
+      ],
+      "t": 0,
+      "izoh": "ΔV = V₂ − V₁ — gaz hajmining o'zgarishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#ef75100c"
+    },
+    {
+      "q": "Izobarik kengayishda gaz bajargan ishining ishorasi qanday bo'ladi?",
+      "v": [
+        "Musbat, chunki kuch yo'nalishi bilan porshenning ko'chish yo'nalishi bir xil",
+        "Manfiy, chunki gaz siqiladi",
+        "Nolga teng",
+        "Avval manfiy, keyin musbat"
+      ],
+      "t": 0,
+      "izoh": "Bu jarayonda gaz kengayib tashqi kuchlarga qarshi musbat ish bajaradi, chunki kuch yo'nalishi bilan porshenning ko'chish yo'nalishi bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#db71a50c"
+    },
+    {
+      "q": "Gaz siqilganda ishni kim bajaradi?",
+      "v": [
+        "Tashqi kuchlar gaz ustidan ish bajaradi",
+        "Gaz tashqi kuchlar ustidan ish bajaradi",
+        "Hech kim ish bajarmaydi",
+        "Porshen o'z-o'zidan ish bajaradi"
+      ],
+      "t": 0,
+      "izoh": "Gaz siqilganda gaz ustidan tashqi kuchlar ish bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#6fde340a"
+    },
+    {
+      "q": "pΔV = (m/M)RΔT tenglamasi qanday hosil qilingan?",
+      "v": [
+        "Izobarik kengayishning ikki holati uchun yozilgan Mendeleev–Klapeyron tenglamalarini bir-biridan ayirish bilan",
+        "Boyle–Mariott qonunidan",
+        "Arximed qonunidan",
+        "Nyutonning ikkinchi qonunidan"
+      ],
+      "t": 0,
+      "izoh": "pV₁ = (m/M)RT₁ va pV₂ = (m/M)RT₂ tenglamalarni bir-biridan ayirsak, p(V₂ − V₁) = (m/M)R(T₂ − T₁) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#50c4eb97"
+    },
+    {
+      "q": "Gaz izobarik ΔT temperaturada qizdirilganda tashqi kuchlar ustidan bajarilgan ish qanday aniqlanadi?",
+      "v": [
+        "A = pΔV = (m/M)RΔT",
+        "A = pV = (m/M)RT",
+        "A = (m/M)R/ΔT",
+        "A = pΔV·ΔT"
+      ],
+      "t": 0,
+      "izoh": "A = pΔV = (m/M)RΔT.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#5758ce58"
+    },
+    {
+      "q": "1 mol miqdordagi gaz izobarik qizdirilganda bajarilgan ish qanday ifodalanadi?",
+      "v": [
+        "A = RΔT",
+        "A = R/ΔT",
+        "A = ΔT/R",
+        "A = 2RΔT"
+      ],
+      "t": 0,
+      "izoh": "Bu ifodani 1 mol miqdordagi gaz uchun yozsak, A = RΔT ko'rinishga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#4f651f07"
+    },
+    {
+      "q": "Universal gaz doimiysining fizik ma'nosi nimada?",
+      "v": [
+        "Bir mol gazni bir gradusga izobarik qizdirilganda shu gaz tomonidan bajarilgan ishga son jihatdan teng",
+        "Istalgan gazning bir sekunddagi ishiga teng",
+        "Gazning zichligiga teng",
+        "1 kg gazni isitish uchun kerakli issiqlikka teng"
+      ],
+      "t": 0,
+      "izoh": "Universal gaz doimiysi son jihatdan bir mol gazni bir gradusga izobarik qizdirilganda shu gaz tomonidan bajarilgan ishga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#e4b5f95f"
+    },
+    {
+      "q": "Universal gaz doimiysi uchun qanday munosabat kelib chiqadi?",
+      "v": [
+        "R = A/ΔT",
+        "R = A·ΔT",
+        "R = ΔT/A",
+        "R = A + ΔT"
+      ],
+      "t": 0,
+      "izoh": "A = RΔT ifodadan universal gaz doimiysi uchun R = A/ΔT munosabati kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#445f745e"
+    },
+    {
+      "q": "Gaz bajargan ishning geometrik talqini nimadan iborat?",
+      "v": [
+        "Jarayonda bajarilgan ishni geometrik yo'l bilan izohlash — bosimning hajmga bog'lanish grafigi ostidagi yuza orqali",
+        "Ishni faqat formula bilan hisoblash",
+        "Gaz harakatining geometrik trajektoriyasini chizish",
+        "Porshenning geometrik shaklini topish"
+      ],
+      "t": 0,
+      "izoh": "Ishning geometrik talqini bu jarayonda bajarilgan ishni geometrik yo'l bilan izohlashdir. Bunda gaz bosimining hajmiga bog'lanish grafigi chiziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#c282d843"
+    },
+    {
+      "q": "O'zgarmas bosimda gaz hajmi V₁ dan V₂ ga kengayganda bajarilgan ish grafikda qanday shakl yuzasiga son jihatdan teng?",
+      "v": [
+        "To'g'ri to'rtburchak yuzasiga",
+        "Uchburchak yuzasiga",
+        "Doira yuzasiga",
+        "Trapetsiya yuzasiga"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas p bosimga ega bo'lgan gazning hajmi V₁ dan V₂ ga kengayganda bajarilgan ish abcd to'g'ri to'rtburchakning yuziga son jihatdan teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#2b5e11c8"
+    },
+    {
+      "q": "Izobarik jarayon grafikidagi to'g'ri to'rtburchak yuzasi qanday ifodalanadi?",
+      "v": [
+        "A = p₁(V₂ − V₁) = |ab|·|ac|",
+        "A = p₁(V₁ + V₂)",
+        "A = (p₁/2)(V₂ − V₁)",
+        "A = p₁V₁"
+      ],
+      "t": 0,
+      "izoh": "A = p₁(V₂ − V₁) = |ab|·|ac|.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#8468a114"
+    },
+    {
+      "q": "Izotermik jarayonda gaz bosimi hajmiga qanday bog'lanadi?",
+      "v": [
+        "Teskari proporsional ravishda o'zgaradi",
+        "To'g'ri proporsional ravishda o'zgaradi",
+        "O'zgarmaydi",
+        "Kvadratik bog'lanadi"
+      ],
+      "t": 0,
+      "izoh": "Izotermik jarayonda bosim hajmga teskari proporsional ravishda o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#9588502d"
+    },
+    {
+      "q": "Izotermik jarayonda gazning bajargan ishi grafikda nimaga son jihatdan teng?",
+      "v": [
+        "Izoterma grafigi ostidagi shtrixlangan yuzaga",
+        "To'g'ri to'rtburchak yuzasiga",
+        "Koordinata boshidan chizilgan to'g'ri chiziq ostidagi yuzaga",
+        "Izobar grafigi ostidagi yuzaga"
+      ],
+      "t": 0,
+      "izoh": "Bu holda gazning bajargan ishi son jihatdan izoterma grafigi ostidagi shtrixlangan yuzaga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#389a15ea"
+    },
+    {
+      "q": "Gaz hajmi o'zgarmasa (izoxorik jarayon), gaz bajargan ish qancha bo'ladi?",
+      "v": [
+        "Nolga teng",
+        "p·V ga teng",
+        "R·T ga teng",
+        "Cheksiz katta"
+      ],
+      "t": 0,
+      "izoh": "ΔV = 0 bo'lgani uchun A = p·ΔV = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#a00b2750"
+    },
+    {
+      "q": "Izobarik jarayonda gaz bosimi qanday bo'ladi?",
+      "v": [
+        "O'zgarmas, p₁ = p₂",
+        "Doimiy oshib boradi",
+        "Doimiy kamayib boradi",
+        "Hajmga teskari proporsional"
+      ],
+      "t": 0,
+      "izoh": "Porshen erkin siljiy olganligi uchun gaz bosimini o'zgarmas deb qaraladi, ya'ni p₁ = p₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#ee7ea358"
+    },
+    {
+      "q": "Gaz izobarik qizdirilganda uning hajmi qanday o'zgaradi?",
+      "v": [
+        "Ortadi (izobarik kengayadi)",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Avval kamayadi, keyin ortadi"
+      ],
+      "t": 0,
+      "izoh": "Gazni T₂ temperaturagacha qizdirsak, gaz izobarik kengayib V₂ hajmni egallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#ffaeed11"
+    },
+    {
+      "q": "Darslikdagi masala yechish namunasida kislorod gazi qanday qizdirilgan?",
+      "v": [
+        "Izobarik ravishda",
+        "Izotermik ravishda",
+        "Izoxorik ravishda",
+        "Adiabatik ravishda"
+      ],
+      "t": 0,
+      "izoh": "Masala yechish namunasida porshen ostidagi kislorod gazi 64 K ga izobarik qizdirilgan (p = const).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#1ae05d39"
+    },
+    {
+      "q": "Mexanik ish bilan termodinamik ish orasidagi farq nimada?",
+      "v": [
+        "Termodinamik ish gaz hajmining o'zgarishi bilan bog'liq",
+        "Mexanik ish faqat gazlarda bajariladi",
+        "Termodinamik ish faqat suyuqliklarda bajariladi",
+        "Ular orasida hech qanday farq yo'q"
+      ],
+      "t": 0,
+      "izoh": "Termodinamik ish — gaz hajmi o'zgarganda tashqi bosim kuchiga qarshi bajariladigan ish, mexanik ish esa har qanday kuchning masofada bajaradigan ishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#201f11c5"
+    },
+    {
+      "q": "A = p·ΔV formulasidan foydalanish uchun bosim qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "O'zgarmas bo'lishi kerak",
+        "Oshib borishi kerak",
+        "Kamayib borishi kerak",
+        "Nolga teng bo'lishi kerak"
+      ],
+      "t": 0,
+      "izoh": "A = p·ΔV formulasi izobarik jarayon, ya'ni o'zgarmas bosim uchun keltirib chiqarilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#d28308c3"
+    },
+    {
+      "q": "Termodinamik ishning o'lchov birligi nima?",
+      "v": [
+        "Joul",
+        "Paskal",
+        "Nyuton",
+        "Kelvin"
+      ],
+      "t": 0,
+      "izoh": "Ish Joul bilan o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#87f8be7b"
+    },
+    {
+      "q": "Gaz bajaradigan ishning hajm o'zgarishiga bog'liqligi qanday?",
+      "v": [
+        "To'g'ri proporsional (bosim o'zgarmasa)",
+        "Teskari proporsional",
+        "Bog'liq emas",
+        "Kvadratik proporsional"
+      ],
+      "t": 0,
+      "izoh": "A = p·ΔV formulasidan ko'rinadiki, ish hajm o'zgarishiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#43ec810b"
+    },
+    {
+      "q": "Porshen ostidagi gaz qizdirilganda porshen qanday harakatlanadi?",
+      "v": [
+        "Yuqoriga ko'tariladi",
+        "Pastga tushadi",
+        "Joyida qoladi",
+        "Tebranma harakat qiladi"
+      ],
+      "t": 0,
+      "izoh": "Gaz qizdirilganda molekulalar porshenga urilib uni Δh masofaga yuqoriga siljitadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#75bc9b64"
+    },
+    {
+      "q": "p(V₂ − V₁) = (m/M)R(T₂ − T₁) tenglamasidagi T₂ − T₁ nimani bildiradi?",
+      "v": [
+        "Gaz temperaturasining o'zgarishini ΔT",
+        "Gazning dastlabki temperaturasini",
+        "Qaynash temperaturasini",
+        "Xona temperaturasini"
+      ],
+      "t": 0,
+      "izoh": "T₂ − T₁ = ΔT — gaz temperaturasining o'zgarishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#6259dd3a"
+    },
+    {
+      "q": "Darslikdagi masala yechish namunasida kislorod gazi tashqi kuchlar ustidan 16,6 kJ ish bajargan bo'lsa, uning massasi qanday topilgan?",
+      "v": [
+        "m = A·M/(R·ΔT) formulasidan",
+        "m = p·V formulasidan",
+        "m = F·h formulasidan",
+        "m = Q/c formulasidan"
+      ],
+      "t": 0,
+      "izoh": "A = (m/M)R·ΔT formulasidan m = A·M/(R·ΔT) keltirib chiqariladi va m = 1 kg ekanligi topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m16-termodinamik-ish#246a0d62"
+    }
+  ]
+}

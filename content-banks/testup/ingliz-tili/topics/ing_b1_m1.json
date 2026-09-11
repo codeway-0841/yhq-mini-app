@@ -1,0 +1,1306 @@
+{
+  "nom": "Present Perfect",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "I ___ never been to Japan.",
+      "v": [
+        "have",
+        "has",
+        "am",
+        "did"
+      ],
+      "t": 0,
+      "izoh": "I/you/we/they → have + been.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#c048361e"
+    },
+    {
+      "q": "She ___ just finished her homework.",
+      "v": [
+        "have",
+        "has",
+        "is",
+        "did"
+      ],
+      "t": 1,
+      "izoh": "she → has.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#ed711ad9"
+    },
+    {
+      "q": "___ you ever eaten sushi?",
+      "v": [
+        "Have",
+        "Has",
+        "Did",
+        "Do"
+      ],
+      "t": 0,
+      "izoh": "you → Have (ever bilan).",
+      "qiy": "orta",
+      "id": "ing_b1_m1#a5c088b0"
+    },
+    {
+      "q": "We ___ lived here since 2019.",
+      "v": [
+        "have",
+        "has",
+        "are",
+        "did"
+      ],
+      "t": 0,
+      "izoh": "since → present perfect: have lived.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#b3218e3b"
+    },
+    {
+      "q": "He ___ already seen this film.",
+      "v": [
+        "have",
+        "has",
+        "did",
+        "was"
+      ],
+      "t": 1,
+      "izoh": "he → has (already bilan).",
+      "qiy": "orta",
+      "id": "ing_b1_m1#c106b1df"
+    },
+    {
+      "q": "They haven't ___ their grandparents this year.",
+      "v": [
+        "visit",
+        "visited",
+        "visiting",
+        "visits"
+      ],
+      "t": 1,
+      "izoh": "have/haven't + 3-shakl → visited.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#e70affde"
+    },
+    {
+      "q": "I've known her ___ ten years.",
+      "v": [
+        "since",
+        "for",
+        "from",
+        "ago"
+      ],
+      "t": 1,
+      "izoh": "davomiylik (10 yil) → for.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#22ad0f75"
+    },
+    {
+      "q": "___ he arrived yet?",
+      "v": [
+        "Has",
+        "Have",
+        "Did",
+        "Is"
+      ],
+      "t": 0,
+      "izoh": "he → Has (yet bilan).",
+      "qiy": "orta",
+      "id": "ing_b1_m1#4a1c1e3a"
+    },
+    {
+      "q": "She has worked here ___ 2020.",
+      "v": [
+        "for",
+        "since",
+        "from",
+        "ago"
+      ],
+      "t": 1,
+      "izoh": "aniq nuqta (2020) → since.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#c879aa8c"
+    },
+    {
+      "q": "I ___ lost my phone. I can't find it.",
+      "v": [
+        "have",
+        "has",
+        "am",
+        "did"
+      ],
+      "t": 0,
+      "izoh": "I → have lost (natija hozir muhim).",
+      "qiy": "orta",
+      "id": "ing_b1_m1#a3849681"
+    },
+    {
+      "q": "I ___ my homework, so I can watch TV now.",
+      "v": [
+        "have finished",
+        "has finished",
+        "am finished",
+        "finishing"
+      ],
+      "t": 0,
+      "izoh": "'I' bilan 'have' ishlatiladi va past participle: have finished.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#210cf181"
+    },
+    {
+      "q": "She ___ a new car this month.",
+      "v": [
+        "have bought",
+        "has bought",
+        "buy",
+        "has buyed"
+      ],
+      "t": 1,
+      "izoh": "'She' uchun 'has' + past participle: has bought.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#3aa3ded7"
+    },
+    {
+      "q": "They ___ their grandparents in the village.",
+      "v": [
+        "has visited",
+        "have visited",
+        "visits",
+        "visiting"
+      ],
+      "t": 1,
+      "izoh": "'They' bilan 'have' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#3c7417df"
+    },
+    {
+      "q": "He ___ the door. Please knock.",
+      "v": [
+        "have closed",
+        "closing",
+        "has closed",
+        "close"
+      ],
+      "t": 2,
+      "izoh": "'He' uchun 'has' + closed.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#f65283fd"
+    },
+    {
+      "q": "We ___ this film before.",
+      "v": [
+        "have seen",
+        "has seen",
+        "seen",
+        "see"
+      ],
+      "t": 0,
+      "izoh": "'We' bilan 'have' va 'see' fe'lining 3-shakli 'seen'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#591543f2"
+    },
+    {
+      "q": "My brother ___ his keys again.",
+      "v": [
+        "have lost",
+        "lose",
+        "has lost",
+        "losing"
+      ],
+      "t": 2,
+      "izoh": "'My brother' = he, shuning uchun 'has lost'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#0d6f70c1"
+    },
+    {
+      "q": "The children ___ their room.",
+      "v": [
+        "has cleaned",
+        "have cleaned",
+        "cleans",
+        "cleaning"
+      ],
+      "t": 1,
+      "izoh": "'Children' ko'plik, 'have cleaned'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#e44c57cb"
+    },
+    {
+      "q": "You ___ a lot of progress this year.",
+      "v": [
+        "has made",
+        "have make",
+        "have made",
+        "making"
+      ],
+      "t": 2,
+      "izoh": "'You' bilan doim 'have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#90ccf9d3"
+    },
+    {
+      "q": "It ___ raining, so we can go out.",
+      "v": [
+        "have stopped",
+        "has stopped",
+        "stop",
+        "stopping"
+      ],
+      "t": 1,
+      "izoh": "'It' uchun 'has' + stopped.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#4d004249"
+    },
+    {
+      "q": "Choose the correct sentence about finishing a letter.",
+      "v": [
+        "He have written a letter.",
+        "He has wrote a letter.",
+        "He has written a letter.",
+        "He written a letter."
+      ],
+      "t": 2,
+      "izoh": "'He has' + past participle 'written'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#25371573"
+    },
+    {
+      "q": "Choose the correct sentence about eating lunch.",
+      "v": [
+        "We has eaten lunch.",
+        "We have eaten lunch.",
+        "We have ate lunch.",
+        "We eaten lunch."
+      ],
+      "t": 1,
+      "izoh": "'We have' + 'eaten' (eat ning 3-shakli).",
+      "qiy": "orta",
+      "id": "ing_b1_m1#8d2b2238"
+    },
+    {
+      "q": "Find the mistake: 'She have taken my pen.'",
+      "v": [
+        "She",
+        "have",
+        "taken",
+        "my pen"
+      ],
+      "t": 1,
+      "izoh": "'She' uchun 'has' bo'lishi kerak, 'have' xato.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#911bd97f"
+    },
+    {
+      "q": "Find the mistake: 'They has arrived early.'",
+      "v": [
+        "They",
+        "has",
+        "arrived",
+        "early"
+      ],
+      "t": 1,
+      "izoh": "'They' ko'plik, 'have' kerak, 'has' xato.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#e0d493e3"
+    },
+    {
+      "q": "Put the words in order: given / has / he / the money",
+      "v": [
+        "He has given the money.",
+        "He given has the money.",
+        "Has he given the money down.",
+        "He the money has given."
+      ],
+      "t": 0,
+      "izoh": "Tartib: subject + has + given + object.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#aacbcbd6"
+    },
+    {
+      "q": "Put the words in order: have / read / I / the book",
+      "v": [
+        "I read have the book.",
+        "I have read the book.",
+        "Have read I the book.",
+        "I the book have read."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri tartib: I have read the book.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#851865da"
+    },
+    {
+      "q": "Transform to Present Perfect: 'I write the report.'",
+      "v": [
+        "I have written the report.",
+        "I has written the report.",
+        "I have wrote the report.",
+        "I written the report."
+      ],
+      "t": 0,
+      "izoh": "Present Perfect: have + written.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#d702fcad"
+    },
+    {
+      "q": "Transform to Present Perfect: 'She breaks the glass.'",
+      "v": [
+        "She has broke the glass.",
+        "She have broken the glass.",
+        "She has broken the glass.",
+        "She breaking the glass."
+      ],
+      "t": 2,
+      "izoh": "break-broke-broken; 'has broken'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#406c12a5"
+    },
+    {
+      "q": "___ you ever done this before?",
+      "v": [
+        "Has",
+        "Have",
+        "Are",
+        "Did"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'you' bilan 'Have' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#930ccf40"
+    },
+    {
+      "q": "___ she called you yet?",
+      "v": [
+        "Have",
+        "Has",
+        "Is",
+        "Does"
+      ],
+      "t": 1,
+      "izoh": "'She' uchun savolda 'Has'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#fcfdf1df"
+    },
+    {
+      "q": "We ___ not decided anything yet.",
+      "v": [
+        "has",
+        "have",
+        "are",
+        "did"
+      ],
+      "t": 1,
+      "izoh": "'We have not' inkor shakli.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#57900570"
+    },
+    {
+      "q": "I have lived here ___ 2015.",
+      "v": [
+        "for",
+        "since",
+        "from",
+        "during"
+      ],
+      "t": 1,
+      "izoh": "Aniq boshlanish nuqtasi (2015) bilan 'since'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#57a0979e"
+    },
+    {
+      "q": "She has worked here ___ five years.",
+      "v": [
+        "since",
+        "for",
+        "from",
+        "in"
+      ],
+      "t": 1,
+      "izoh": "Davomiylik (five years) bilan 'for'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#80f980d8"
+    },
+    {
+      "q": "We have known each other ___ childhood.",
+      "v": [
+        "for",
+        "since",
+        "during",
+        "at"
+      ],
+      "t": 1,
+      "izoh": "Boshlanish nuqtasi (childhood) bilan 'since'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#d8b88e45"
+    },
+    {
+      "q": "They have been friends ___ a long time.",
+      "v": [
+        "since",
+        "for",
+        "from",
+        "by"
+      ],
+      "t": 1,
+      "izoh": "'a long time' davomiylik, 'for' kerak.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#428c1d98"
+    },
+    {
+      "q": "He hasn't eaten anything ___ this morning.",
+      "v": [
+        "for",
+        "since",
+        "during",
+        "by"
+      ],
+      "t": 1,
+      "izoh": "'this morning' aniq vaqt nuqtasi, 'since'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#a2c4e006"
+    },
+    {
+      "q": "I have studied English ___ three months.",
+      "v": [
+        "since",
+        "for",
+        "from",
+        "at"
+      ],
+      "t": 1,
+      "izoh": "'three months' davomiylik, 'for'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#40ca18cc"
+    },
+    {
+      "q": "Choose the correct sentence about being busy.",
+      "v": [
+        "I have been busy since two weeks.",
+        "I have been busy for two weeks.",
+        "I have been busy from two weeks.",
+        "I am busy for two weeks ago."
+      ],
+      "t": 1,
+      "izoh": "'two weeks' davr, shuning uchun 'for'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#fc5c1a91"
+    },
+    {
+      "q": "Choose the correct sentence about waiting.",
+      "v": [
+        "We have waited for Monday only.",
+        "We have waited since last Monday.",
+        "We have waited from last Monday.",
+        "We waited since last Monday hard."
+      ],
+      "t": 1,
+      "izoh": "'last Monday' nuqta, 'since' bilan Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#376e52dc"
+    },
+    {
+      "q": "Find the mistake: 'She has taught here since ten years.'",
+      "v": [
+        "has",
+        "taught",
+        "since",
+        "here"
+      ],
+      "t": 2,
+      "izoh": "'ten years' davr, 'for' kerak, 'since' xato.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#e67a1377"
+    },
+    {
+      "q": "Find the mistake: 'They have known us for we were kids.'",
+      "v": [
+        "have",
+        "known",
+        "for",
+        "us"
+      ],
+      "t": 2,
+      "izoh": "'we were kids' nuqta, 'since' kerak.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#39fd12d1"
+    },
+    {
+      "q": "How long ___ you had this phone?",
+      "v": [
+        "has",
+        "have",
+        "are",
+        "did"
+      ],
+      "t": 1,
+      "izoh": "'you' bilan 'have', davomiylik savoli.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#0917a53f"
+    },
+    {
+      "q": "My parents have been married ___ 1990.",
+      "v": [
+        "for",
+        "since",
+        "during",
+        "in"
+      ],
+      "t": 1,
+      "izoh": "Yil (1990) bilan 'since'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#e3a5c97c"
+    },
+    {
+      "q": "I haven't seen him ___ ages.",
+      "v": [
+        "since",
+        "for",
+        "from",
+        "at"
+      ],
+      "t": 1,
+      "izoh": "'ages' davr ma'nosida, 'for'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#7fa6cfa1"
+    },
+    {
+      "q": "Transform using 'for': 'I started this job in January and I still do it.' (Now July)",
+      "v": [
+        "I have done this job since January well.",
+        "I have done this job for six months.",
+        "I did this job for six months.",
+        "I do this job for six months now."
+      ],
+      "t": 1,
+      "izoh": "Davomiylik uchun 'for six months' + Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#81c31ba9"
+    },
+    {
+      "q": "Put the words in order: since / have / here / we / lived / Monday",
+      "v": [
+        "We have lived here since Monday.",
+        "We lived here since Monday have.",
+        "Since Monday we lived here have all.",
+        "We have here lived Monday since now."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri tartib va 'since Monday'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#f1eef5e1"
+    },
+    {
+      "q": "Have you ___ been to London?",
+      "v": [
+        "never",
+        "ever",
+        "yet",
+        "just"
+      ],
+      "t": 1,
+      "izoh": "Savolda tajriba so'ralganda 'ever' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#94e03289"
+    },
+    {
+      "q": "I have ___ eaten sushi in my life.",
+      "v": [
+        "ever",
+        "yet",
+        "never",
+        "already"
+      ],
+      "t": 2,
+      "izoh": "Inkor tajriba uchun 'never' (hech qachon).",
+      "qiy": "orta",
+      "id": "ing_b1_m1#2440d062"
+    },
+    {
+      "q": "She has ___ finished her exam. She is very happy.",
+      "v": [
+        "yet",
+        "just",
+        "ever",
+        "never"
+      ],
+      "t": 1,
+      "izoh": "'just' - hozirgina tugatdi.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#409bef9e"
+    },
+    {
+      "q": "We have ___ seen this movie, so let us choose another.",
+      "v": [
+        "yet",
+        "just",
+        "already",
+        "ever"
+      ],
+      "t": 2,
+      "izoh": "'already' - kutilganidan oldin yoki allaqachon.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#021be9e8"
+    },
+    {
+      "q": "Have they arrived ___?",
+      "v": [
+        "already",
+        "just",
+        "ever",
+        "yet"
+      ],
+      "t": 3,
+      "izoh": "Savol oxirida 'yet' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#d687e31b"
+    },
+    {
+      "q": "I haven't finished my work ___.",
+      "v": [
+        "just",
+        "yet",
+        "already",
+        "ever"
+      ],
+      "t": 1,
+      "izoh": "Inkorda 'yet' - hali emas.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#7edb42bf"
+    },
+    {
+      "q": "He has ___ left the office. You missed him.",
+      "v": [
+        "yet",
+        "ever",
+        "just",
+        "never"
+      ],
+      "t": 2,
+      "izoh": "'just' - hozirgina ketdi.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#557dcf91"
+    },
+    {
+      "q": "This is the best book I have ___ read.",
+      "v": [
+        "never",
+        "yet",
+        "just",
+        "ever"
+      ],
+      "t": 3,
+      "izoh": "Superlativdan keyin 'ever' - hozirgacha o'qiganim ichida eng yaxshisi.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#bff6cdd5"
+    },
+    {
+      "q": "Choose the correct sentence with 'already'.",
+      "v": [
+        "I have already did it.",
+        "I have already done it.",
+        "I already have done it none.",
+        "I have did already it now."
+      ],
+      "t": 1,
+      "izoh": "'already' + past participle 'done'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#3a9e8e9c"
+    },
+    {
+      "q": "Choose the correct sentence with 'yet'.",
+      "v": [
+        "Have you ate lunch yet?",
+        "Have you eaten lunch yet?",
+        "Have you eaten lunch just here?",
+        "You have eaten lunch yet done?"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'yet' oxirida, 'eaten' 3-shakl.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#48005ec2"
+    },
+    {
+      "q": "Find the mistake: 'She has never don her homework.'",
+      "v": [
+        "has",
+        "never",
+        "don",
+        "homework"
+      ],
+      "t": 2,
+      "izoh": "'don' xato; 'done' bo'lishi kerak.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#c75acbef"
+    },
+    {
+      "q": "Find the mistake: 'Have you finished already yet?'",
+      "v": [
+        "Have",
+        "you",
+        "finished",
+        "already yet"
+      ],
+      "t": 3,
+      "izoh": "'already' va 'yet' birga ishlatilmaydi.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#47f89afa"
+    },
+    {
+      "q": "Where do we usually put 'just' in Present Perfect?",
+      "v": [
+        "At the start of the sentence",
+        "After the subject, before have",
+        "Between have/has and the past participle",
+        "At the very end"
+      ],
+      "t": 2,
+      "izoh": "'just' have/has bilan participle orasida keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#8305e87d"
+    },
+    {
+      "q": "Where does 'yet' usually go in a sentence?",
+      "v": [
+        "Between have and participle",
+        "Right after the subject",
+        "At the end of questions and negatives",
+        "Just before the subject"
+      ],
+      "t": 2,
+      "izoh": "'yet' gap oxirida (savol va inkorda).",
+      "qiy": "orta",
+      "id": "ing_b1_m1#fbc4fc48"
+    },
+    {
+      "q": "Transform to negative with 'yet': 'They have called.'",
+      "v": [
+        "They haven't called yet.",
+        "They have called yet none.",
+        "They haven't yet call now.",
+        "They not have called yet."
+      ],
+      "t": 0,
+      "izoh": "Inkor: haven't + participle + yet.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#31d426a6"
+    },
+    {
+      "q": "Choose the correct sentence with 'never'.",
+      "v": [
+        "I never have been abroad.",
+        "I have never been abroad.",
+        "I have been never abroad far.",
+        "I have been abroad never once."
+      ],
+      "t": 1,
+      "izoh": "'never' have + participle orasida.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#de46aa36"
+    },
+    {
+      "q": "Tom isn't here. He has ___ to the shop.",
+      "v": [
+        "been",
+        "gone",
+        "went",
+        "being"
+      ],
+      "t": 1,
+      "izoh": "Hali qaytmagan, hozir u yerda: 'gone'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#eb678afd"
+    },
+    {
+      "q": "I have ___ to Paris twice. I loved it.",
+      "v": [
+        "gone",
+        "went",
+        "been",
+        "being"
+      ],
+      "t": 2,
+      "izoh": "Borib qaytgan tajriba: 'been'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#044d340f"
+    },
+    {
+      "q": "Where is Mum? She has ___ to the bank.",
+      "v": [
+        "been",
+        "gone",
+        "goes",
+        "going"
+      ],
+      "t": 1,
+      "izoh": "Hozir bankda, qaytmagan: 'gone'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#da1648f8"
+    },
+    {
+      "q": "Have you ever ___ to Japan?",
+      "v": [
+        "gone",
+        "been",
+        "went",
+        "being"
+      ],
+      "t": 1,
+      "izoh": "Tajriba haqida: 'been'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#ce136244"
+    },
+    {
+      "q": "The manager has ___ to a meeting and will return at 5.",
+      "v": [
+        "been",
+        "gone",
+        "goes",
+        "go"
+      ],
+      "t": 1,
+      "izoh": "Hozir yig'ilishda, qaytmagan: 'gone'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#4ea92b30"
+    },
+    {
+      "q": "We have ___ to that restaurant many times.",
+      "v": [
+        "gone",
+        "went",
+        "been",
+        "being"
+      ],
+      "t": 2,
+      "izoh": "Ko'p marta borib qaytganmiz: 'been'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#43362702"
+    },
+    {
+      "q": "Choose the correct sentence about school.",
+      "v": [
+        "She has been to school; she is here now.",
+        "She has gone to school; she is here now.",
+        "She has gone to school; she'll be back later.",
+        "She has went to school today."
+      ],
+      "t": 2,
+      "izoh": "'gone' - ketgan va hali qaytmagan.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#d0d69fd1"
+    },
+    {
+      "q": "Find the mistake: 'My friends have been to the cinema and they are still there.'",
+      "v": [
+        "have",
+        "been",
+        "cinema",
+        "still there"
+      ],
+      "t": 1,
+      "izoh": "Hali u yerda bo'lsa 'gone' kerak, 'been' xato.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#153f6ef0"
+    },
+    {
+      "q": "Has your sister ever ___ abroad?",
+      "v": [
+        "gone",
+        "been",
+        "went",
+        "being"
+      ],
+      "t": 1,
+      "izoh": "Tajriba savoli: 'been'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#ce01efcb"
+    },
+    {
+      "q": "He has ___ home; that is why the office is empty.",
+      "v": [
+        "been",
+        "gone",
+        "goes",
+        "go"
+      ],
+      "t": 1,
+      "izoh": "Uyga ketgan, u yerda emas: 'gone'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#cb09d000"
+    },
+    {
+      "q": "They have ___ to the airport to catch a flight and they are there now.",
+      "v": [
+        "been",
+        "gone",
+        "went",
+        "being"
+      ],
+      "t": 1,
+      "izoh": "Hozir aeroportda: 'gone'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#45f1c42a"
+    },
+    {
+      "q": "I have ___ to the doctor, so I feel better now (already returned).",
+      "v": [
+        "gone",
+        "been",
+        "went",
+        "being"
+      ],
+      "t": 1,
+      "izoh": "Borib qaytdim: 'been'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#0c6bd985"
+    },
+    {
+      "q": "I have drunk three cups of coffee ___.",
+      "v": [
+        "yesterday",
+        "today",
+        "last night",
+        "two days ago"
+      ],
+      "t": 1,
+      "izoh": "'today' hali tugamagan vaqt, Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#6a39afa0"
+    },
+    {
+      "q": "She has written two emails ___ (it is still morning).",
+      "v": [
+        "this morning",
+        "yesterday",
+        "last week",
+        "an hour ago exactly"
+      ],
+      "t": 0,
+      "izoh": "Tugamagan davr uchun Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#9d045581"
+    },
+    {
+      "q": "We have had a lot of meetings ___.",
+      "v": [
+        "last month",
+        "this week",
+        "yesterday",
+        "in 2019"
+      ],
+      "t": 1,
+      "izoh": "'this week' davom etayotgan davr.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#6712f143"
+    },
+    {
+      "q": "Choose the correct sentence with 'this year'.",
+      "v": [
+        "He has phoned me twice this year.",
+        "He phoned me twice this year over.",
+        "He has phoned me yesterday twice.",
+        "He phoned me twice this year none."
+      ],
+      "t": 0,
+      "izoh": "'this year' tugamagan, Present Perfect to'g'ri.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#d653942f"
+    },
+    {
+      "q": "Which time word fits Present Perfect: 'I have travelled a lot ___.'",
+      "v": [
+        "last summer",
+        "recently",
+        "two years ago",
+        "in 2010"
+      ],
+      "t": 1,
+      "izoh": "'recently' Present Perfect bilan ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#38ac89b1"
+    },
+    {
+      "q": "Choose the correct sentence with 'this month'.",
+      "v": [
+        "It has rained a lot this month.",
+        "It has rained a lot last month.",
+        "It rained a lot this month none.",
+        "It has rain a lot this month."
+      ],
+      "t": 0,
+      "izoh": "'this month' hali tugamagan davr.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#6cedc6c7"
+    },
+    {
+      "q": "Find the mistake: 'I have called her three times last week.'",
+      "v": [
+        "have",
+        "called",
+        "three times",
+        "last week"
+      ],
+      "t": 3,
+      "izoh": "'last week' tugagan vaqt, Past Simple kerak.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#4637b57c"
+    },
+    {
+      "q": "How many books have you read ___?",
+      "v": [
+        "this year",
+        "last year",
+        "yesterday",
+        "in 2020"
+      ],
+      "t": 0,
+      "izoh": "Tugamagan davr 'this year' Present Perfect bilan.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#03ab5d56"
+    },
+    {
+      "q": "She has been very busy ___.",
+      "v": [
+        "last week",
+        "today",
+        "yesterday",
+        "an hour ago"
+      ],
+      "t": 1,
+      "izoh": "'today' davom etayotgan vaqt.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#a53f64a1"
+    },
+    {
+      "q": "We haven't seen him ___.",
+      "v": [
+        "yesterday",
+        "this week",
+        "last month",
+        "in 2015"
+      ],
+      "t": 1,
+      "izoh": "Tugamagan davr 'this week'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#b6bb55c9"
+    },
+    {
+      "q": "I have ___ my leg while playing football.",
+      "v": [
+        "breaked",
+        "broke",
+        "broken",
+        "breaking"
+      ],
+      "t": 2,
+      "izoh": "break-broke-broken; participle 'broken'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#823372f8"
+    },
+    {
+      "q": "She has ___ a beautiful song.",
+      "v": [
+        "sang",
+        "sung",
+        "singed",
+        "sing"
+      ],
+      "t": 1,
+      "izoh": "sing-sang-sung; participle 'sung'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#4f31c3f3"
+    },
+    {
+      "q": "They have ___ all the water.",
+      "v": [
+        "drank",
+        "drunk",
+        "drinked",
+        "drink"
+      ],
+      "t": 1,
+      "izoh": "drink-drank-drunk; participle 'drunk'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#3f85a8db"
+    },
+    {
+      "q": "He has ___ to the top of the mountain.",
+      "v": [
+        "gone",
+        "goed",
+        "went",
+        "going"
+      ],
+      "t": 0,
+      "izoh": "go-went-gone; participle 'gone'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#22681b1f"
+    },
+    {
+      "q": "We have ___ a lot of money on food.",
+      "v": [
+        "spended",
+        "spent",
+        "spend",
+        "spending"
+      ],
+      "t": 1,
+      "izoh": "spend-spent-spent; participle 'spent'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#715f1972"
+    },
+    {
+      "q": "I have ___ my keys somewhere.",
+      "v": [
+        "putted",
+        "put",
+        "puted",
+        "putting"
+      ],
+      "t": 1,
+      "izoh": "put-put-put; participle 'put'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#a755d0b9"
+    },
+    {
+      "q": "She has ___ me the truth.",
+      "v": [
+        "telled",
+        "told",
+        "tolt",
+        "telling"
+      ],
+      "t": 1,
+      "izoh": "tell-told-told; participle 'told'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#deffc954"
+    },
+    {
+      "q": "They have ___ a new house.",
+      "v": [
+        "builded",
+        "built",
+        "build",
+        "building"
+      ],
+      "t": 1,
+      "izoh": "build-built-built; participle 'built'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#3d41a55d"
+    },
+    {
+      "q": "He has ___ his homework carefully.",
+      "v": [
+        "doed",
+        "did",
+        "done",
+        "doing"
+      ],
+      "t": 2,
+      "izoh": "do-did-done; participle 'done'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#a0b76a06"
+    },
+    {
+      "q": "We have ___ the letter already.",
+      "v": [
+        "writed",
+        "wrote",
+        "written",
+        "writing"
+      ],
+      "t": 2,
+      "izoh": "write-wrote-written; participle 'written'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#c7249868"
+    },
+    {
+      "q": "The dog has ___ the ball.",
+      "v": [
+        "catched",
+        "caught",
+        "catch",
+        "catching"
+      ],
+      "t": 1,
+      "izoh": "catch-caught-caught; participle 'caught'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#f46463b1"
+    },
+    {
+      "q": "I have ___ this word before.",
+      "v": [
+        "knowed",
+        "knew",
+        "known",
+        "knowing"
+      ],
+      "t": 2,
+      "izoh": "know-knew-known; participle 'known'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#4864bd75"
+    },
+    {
+      "q": "Choose the correct participle: 'I have ___ a lot about it today.'",
+      "v": [
+        "thinked",
+        "thought",
+        "thinket",
+        "thinking"
+      ],
+      "t": 1,
+      "izoh": "think-thought-thought; participle 'thought'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#4f4f2f4c"
+    },
+    {
+      "q": "Find the mistake: 'He has gaven me his book.'",
+      "v": [
+        "He",
+        "has",
+        "gaven",
+        "his book"
+      ],
+      "t": 2,
+      "izoh": "give-gave-given; 'given' to'g'ri, 'gaven' xato.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#08017924"
+    },
+    {
+      "q": "Find the mistake: 'We have swimmed in the sea.'",
+      "v": [
+        "We",
+        "have",
+        "swimmed",
+        "the sea"
+      ],
+      "t": 2,
+      "izoh": "swim-swam-swum; 'swum' kerak, 'swimmed' xato.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#cf07ea3f"
+    },
+    {
+      "q": "Transform to Present Perfect: 'I take a photo.'",
+      "v": [
+        "I have took a photo.",
+        "I have taken a photo.",
+        "I have take a photo.",
+        "I has taken a photo."
+      ],
+      "t": 1,
+      "izoh": "take ning participle shakli 'taken'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#e3393bf6"
+    },
+    {
+      "q": "Transform to Present Perfect: 'She reads the news.'",
+      "v": [
+        "She has readed the news.",
+        "She has read the news.",
+        "She have read the news.",
+        "She has reading the news."
+      ],
+      "t": 1,
+      "izoh": "read-read-read; participle 'read'.",
+      "qiy": "orta",
+      "id": "ing_b1_m1#ae7726b4"
+    }
+  ]
+}

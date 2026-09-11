@@ -1,0 +1,1609 @@
+{
+  "nom": "Xarid, narx va byudjetga oid amaliy masalalar",
+  "bolim": "Nisbat, foiz va matnli masalalar",
+  "blok": "foiz",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Do'kondor bir juft poyabzalni omborxonadan 240 000 so'mga olib keldi va uning ustiga 25% foyda qo'shib sotdi. Poyabzalning sotuv narxi qancha bo'ldi?",
+      "v": [
+        "300 000 so'm",
+        "320 000 so'm",
+        "180 000 so'm",
+        "60 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Foyda tannarxdan olinadi, demak sotuv narxi tannarxning 125% i bo'ladi. 240 000 · 1,25 = 300 000. 320 000 — foizni sotuv narxidan olish xatosi, 180 000 — foydani chegirma deb ayirish, 60 000 — faqat foyda summasi. Javob: 300 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tannarxdan-sotuv-narxi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#cc191bd5"
+    },
+    {
+      "q": "Sotuvchi bir qop unni 310 000 so'mga sotib olgan va undan 18% foyda ko'rmoqchi. U qopni qanday narxda sotishi kerak?",
+      "v": [
+        "254 200 so'm",
+        "328 000 so'm",
+        "55 800 so'm",
+        "365 800 so'm"
+      ],
+      "t": 3,
+      "izoh": "Foyda summasi 310 000 · 0,18 = 55 800 so'm. Sotuv narxi tannarx bilan foydaning yig'indisi: 310 000 + 55 800 = 365 800. Qisqa yo'li 310 000 · 1,18. 328 000 — foizni 18 000 so'm deb tushunish, 254 200 — foydani ayirib yuborish. Javob: 365 800 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tannarxdan-sotuv-narxi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#35dbaf68"
+    },
+    {
+      "q": "Nodira opa tikuvchilik ustaxonasida bitta ko'ylak tayyorlashga 85 000 so'm sarflaydi. Har bir ko'ylakni 40% foyda bilan sotsa, bitta ko'ylak necha so'mga sotiladi?",
+      "v": [
+        "34 000 so'm",
+        "88 400 so'm",
+        "119 000 so'm",
+        "51 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Sarflangan pul tannarx bo'ladi, u 100% deb olinadi. Sotuv narxi 140% ga to'g'ri keladi: 85 000 · 1,4 = 119 000. 51 000 — 40% ni chegirma deb ayirish, 34 000 — faqat foyda, 88 400 — 40% o'rniga 4% olish. Javob: 119 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tannarxdan-sotuv-narxi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#e71fcd9e"
+    },
+    {
+      "q": "Fermer 1 kg pomidor yetishtirishga 4 500 so'm sarflaydi va bozorda uni 60% foyda bilan sotadi. 12 kg pomidor sotgan fermer necha so'm pul oladi?",
+      "v": [
+        "54 000 so'm",
+        "86 400 so'm",
+        "32 400 so'm",
+        "43 200 so'm"
+      ],
+      "t": 1,
+      "izoh": "Avval bir kilogrammning sotuv narxi topiladi: 4 500 · 1,6 = 7 200 so'm. So'ng 12 kg uchun 7 200 · 12 = 86 400 so'm. 54 000 — faqat tannarx, 32 400 — faqat foyda, 43 200 — foizni ayirish xatosi. Javob: 86 400 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tannarxdan-sotuv-narxi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#71bda529"
+    },
+    {
+      "q": "Do'kon muzlatgichni 25% foyda bilan 4 500 000 so'mga sotdi. Do'kon bu muzlatgichni ombordan qanday narxda olgan edi?",
+      "v": [
+        "3 375 000 so'm",
+        "3 600 000 so'm",
+        "5 625 000 so'm",
+        "1 125 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda noma'lum — tannarx. Sotuv narxi tannarxning 125% i, ya'ni x · 1,25 = 4 500 000. Demak x = 4 500 000 : 1,25 = 3 600 000. 3 375 000 — foizni sotuv narxidan ayirish, 1 125 000 — 25% ni tannarx o'rniga sotuv narxidan olish xatosi; haqiqiy foyda esa 900 000 so'm. Javob: 3 600 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sotuv-narxidan-tannarx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#23b23895"
+    },
+    {
+      "q": "Kitob do'koni lug'atni 30% foyda bilan 78 000 so'mga sotmoqda. Lug'atning nashriyotdan olingan narxi necha so'm bo'lgan?",
+      "v": [
+        "54 600 so'm",
+        "23 400 so'm",
+        "101 400 so'm",
+        "60 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Nashriyot narxi x bo'lsin, u holda x · 1,3 = 78 000. Bundan x = 78 000 : 1,3 = 60 000 so'm. Foyda esa 18 000 so'm. 54 600 — 78 000 dan 30% ayirish, 101 400 — 30% qo'shish xatosi. Javob: 60 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sotuv-narxidan-tannarx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#08336f99"
+    },
+    {
+      "q": "Anvar velosipedni 15% foyda bilan 2 070 000 so'mga sotdi. U bu velosiped uchun boshida necha so'm to'lagan edi?",
+      "v": [
+        "1 759 500 so'm",
+        "2 380 500 so'm",
+        "1 800 000 so'm",
+        "310 500 so'm"
+      ],
+      "t": 2,
+      "izoh": "Sotuv narxi tannarxning 115% i: x · 1,15 = 2 070 000. Demak x = 2 070 000 : 1,15 = 1 800 000 so'm. Tekshiruv: 1 800 000 · 0,15 = 270 000 foyda, 1 800 000 + 270 000 = 2 070 000. 310 500 — 15% ni sotuv narxidan olish. Javob: 1 800 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sotuv-narxidan-tannarx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#588843fb"
+    },
+    {
+      "q": "Ulgurji bazadan olingan choynak do'konda 60% foyda bilan 128 000 so'mga sotildi. Choynakning ulgurji narxi qancha bo'lgan?",
+      "v": [
+        "80 000 so'm",
+        "76 800 so'm",
+        "51 200 so'm",
+        "204 800 so'm"
+      ],
+      "t": 0,
+      "izoh": "Ulgurji narx x bo'lsa, x · 1,6 = 128 000, ya'ni x = 128 000 : 1,6 = 80 000 so'm. 76 800 — sotuv narxining 60% ini tannarx deb olish, 51 200 — sotuv narxidan 60% ni ayirish, 204 800 — teskari amal. Javob: 80 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sotuv-narxidan-tannarx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#3b501d77"
+    },
+    {
+      "q": "Do'kondor sumkani 150 000 so'mga olib, uni 189 000 so'mga sotdi. Sarflangan pulga nisbatan u necha foiz foyda ko'rdi?",
+      "v": [
+        "20,6%",
+        "26%",
+        "39%",
+        "126%"
+      ],
+      "t": 1,
+      "izoh": "Foyda summasi 189 000 − 150 000 = 39 000 so'm. Foyda foizi tannarxga nisbatan olinadi: 39 000 : 150 000 = 0,26, ya'ni 26%. 20,6% — sotuv narxiga bo'lish xatosi, 126% — nisbatning o'zini foiz deb olish. Javob: 26%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foyda-foizini-topish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#f7ff3f28"
+    },
+    {
+      "q": "Usta bitta stol tayyorlashga 420 000 so'm sarfladi va uni 546 000 so'mga sotdi. Ustaning foyda foizi qanchani tashkil qiladi?",
+      "v": [
+        "30%",
+        "23,1%",
+        "130%",
+        "12,6%"
+      ],
+      "t": 0,
+      "izoh": "Foyda 546 000 − 420 000 = 126 000 so'm. Uni tannarxga bo'lamiz: 126 000 : 420 000 = 0,3, ya'ni 30%. 23,1% — sotuv narxiga bo'lish, 130% — sotuv va tannarx nisbati, 12,6% — foyda raqamini foiz deb yozish. Javob: 30%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foyda-foizini-topish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#7b4b2d7a"
+    },
+    {
+      "q": "Bahodir 8 dona futbolka uchun jami 320 000 so'm to'ladi, keyin har birini 56 000 so'mdan sotdi. Uning foyda foizi qancha bo'ldi?",
+      "v": [
+        "28,6%",
+        "140%",
+        "40%",
+        "16%"
+      ],
+      "t": 2,
+      "izoh": "Sotuvdan tushgan pul 8 · 56 000 = 448 000 so'm. Foyda 448 000 − 320 000 = 128 000. Foyda foizi 128 000 : 320 000 = 0,4, ya'ni 40%. 28,6% — sotuvga bo'lish, 16% — foydani futbolkalar soniga bo'lib yuborish. Javob: 40%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foyda-foizini-topish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#7d575319"
+    },
+    {
+      "q": "Tadbirkor 25 kg asalni kilogrammiga 90 000 so'mdan sotib olib, hammasini 2 700 000 so'mga sotdi. Uning foyda foizi necha bo'ldi?",
+      "v": [
+        "20%",
+        "16,7%",
+        "83,3%",
+        "120%"
+      ],
+      "t": 0,
+      "izoh": "Tannarx 25 · 90 000 = 2 250 000 so'm. Foyda 2 700 000 − 2 250 000 = 450 000 so'm. Foyda foizi 450 000 : 2 250 000 = 0,2, ya'ni 20%. 16,7% — sotuv narxiga bo'lish, 83,3% — tannarxni sotuvga bo'lish. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foyda-foizini-topish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#d07fb116"
+    },
+    {
+      "q": "Do'kon eskirgan printerni 1 200 000 so'mga olgan edi, ammo uni 960 000 so'mga sotishga majbur bo'ldi. Zarar foizi qancha?",
+      "v": [
+        "20%",
+        "25%",
+        "80%",
+        "24%"
+      ],
+      "t": 0,
+      "izoh": "Zarar summasi 1 200 000 − 960 000 = 240 000 so'm. Zarar foizi ham tannarxga nisbatan olinadi: 240 000 : 1 200 000 = 0,2, ya'ni 20%. 25% — sotuv narxiga bo'lish, 80% — sotuv va tannarx nisbati. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zarar-hisobi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#71c08061"
+    },
+    {
+      "q": "Sabzavot bazasi 500 kg kartoshkani kilogrammiga 3 800 so'mdan sotib oldi, biroq 40 kg chirib qoldi. Qolganini kilogrammiga 4 000 so'mdan sotdi. Baza qanday natija oldi?",
+      "v": [
+        "100 000 so'm foyda",
+        "160 000 so'm zarar",
+        "60 000 so'm zarar",
+        "60 000 so'm foyda"
+      ],
+      "t": 2,
+      "izoh": "Tannarx 500 · 3 800 = 1 900 000 so'm. Sotilgani 500 − 40 = 460 kg, tushum 460 · 4 000 = 1 840 000 so'm. 1 840 000 < 1 900 000, demak 60 000 so'm zarar. 100 000 so'm foyda — chirigan qismni hisobga olmaslik natijasi. Javob: 60 000 so'm zarar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zarar-hisobi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#ae881cb8"
+    },
+    {
+      "q": "Savdogar noutbukni 15% zarar bilan 6 800 000 so'mga sotishga majbur bo'ldi. Noutbukning tannarxi qancha edi?",
+      "v": [
+        "7 820 000 so'm",
+        "8 000 000 so'm",
+        "5 780 000 so'm",
+        "1 020 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Zarar bilan sotilganda sotuv narxi tannarxning 85% iga teng: x · 0,85 = 6 800 000. Demak x = 6 800 000 : 0,85 = 8 000 000 so'm. 7 820 000 — 15% ni sotuv narxiga qo'shish, 1 020 000 — 15% ni tannarx o'rniga sotuv narxidan olish xatosi; haqiqiy zarar 1 200 000 so'm. Javob: 8 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zarar-hisobi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#8d2297f7"
+    },
+    {
+      "q": "Bir dona kostyum 720 000 so'mga olingan. Do'kon uni avval 30% foyda bilan sotmoqchi edi, lekin oxirida 10% zarar bilan sotdi. Sotuv narxi necha so'm bo'ldi?",
+      "v": [
+        "648 000 so'm",
+        "936 000 so'm",
+        "842 400 so'm",
+        "792 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Rejadagi 30% foyda amalga oshmadi, shuning uchun hisob faqat tannarxdan yuritiladi. 10% zarar sotuv narxi tannarxning 90% i ekanini bildiradi: 720 000 · 0,9 = 648 000 so'm. 936 000 — rejadagi narx, 792 000 — zarar o'rniga qo'shish. Javob: 648 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zarar-hisobi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#e1fea299"
+    },
+    {
+      "q": "«Bahor» do'konida 380 000 so'mlik palto uchun 15% chegirma e'lon qilindi. Xaridor kassada necha so'm to'laydi?",
+      "v": [
+        "323 000 so'm",
+        "57 000 so'm",
+        "437 000 so'm",
+        "365 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Chegirmadan keyin narxning 85% i qoladi: 380 000 · 0,85 = 323 000 so'm. Tekshiruv: chegirma 380 000 · 0,15 = 57 000, 380 000 − 57 000 = 323 000. 365 000 — foizni 15 000 so'm deb ayirish xatosi. Javob: 323 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chegirmadan-keyingi-narx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#5ff0b0db"
+    },
+    {
+      "q": "Kitobning narxi 96 000 so'm edi. Kitob yarmarkasida barcha kitoblarga 25% chegirma berildi. Bu kitob yarmarkada necha so'mga sotiladi?",
+      "v": [
+        "24 000 so'm",
+        "72 000 so'm",
+        "120 000 so'm",
+        "71 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "25% chegirma narxning to'rtdan birini olib tashlaydi, ya'ni 75% qoladi. 96 000 · 0,75 = 72 000 so'm. 24 000 — chegirmaning o'zi, 120 000 — foizni qo'shib yuborish, 71 000 — 25% ni 25 000 so'm deb ayirish. Javob: 72 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chegirmadan-keyingi-narx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#7b42f886"
+    },
+    {
+      "q": "Teatr chiptasi 145 000 so'm turadi, talabalarga esa 20% chegirma beriladi. Talaba Zilola chipta uchun necha so'm to'laydi?",
+      "v": [
+        "174 000 so'm",
+        "29 000 so'm",
+        "125 000 so'm",
+        "116 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Chegirmadan keyin narxning 80% i qoladi: 145 000 · 0,8 = 116 000 so'm. 29 000 — chegirma summasi, 174 000 — foizni qo'shish, 125 000 — 20% ni 20 000 so'm deb ayirish. Javob: 116 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chegirmadan-keyingi-narx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#4ee352a2"
+    },
+    {
+      "q": "Mebel salonida divan 5 400 000 so'm turadi. Naqd to'lovda salon 12% chegirma qiladi. Naqd to'lagan xaridor qancha to'laydi?",
+      "v": [
+        "648 000 so'm",
+        "6 048 000 so'm",
+        "4 752 000 so'm",
+        "5 388 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Naqd to'lovda narxning 88% i to'lanadi: 5 400 000 · 0,88 = 4 752 000 so'm. 648 000 — chegirmaning o'zi (5 400 000 · 0,12), to'lov summasi emas. 5 388 000 — 12% ni 12 000 so'm deb ayirish. Javob: 4 752 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chegirmadan-keyingi-narx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#3faac0da"
+    },
+    {
+      "q": "Supermarketda 2 kg guruch 34 000 so'm, 1 litr yog' esa 28 000 so'm turadi. Aksiya kuni butun chekka 10% chegirma beriladi. 2 kg guruch va 2 litr yog' olgan xaridor necha so'm to'laydi?",
+      "v": [
+        "90 000 so'm",
+        "81 000 so'm",
+        "55 800 so'm",
+        "9 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Chegirmasiz summa 34 000 + 2 · 28 000 = 90 000 so'm. Chek bo'yicha 10% chegirma qo'llanadi: 90 000 · 0,9 = 81 000 so'm. 55 800 — bir litr yog' olgan deb hisoblash, 9 000 — chegirmaning o'zi. Javob: 81 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegirmadan-keyingi-narx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#b2e47a57"
+    },
+    {
+      "q": "Konditsionerning narxi 4 200 000 so'mdan 3 570 000 so'mga tushirildi. Do'kon necha foiz chegirma qilgan?",
+      "v": [
+        "17,6%",
+        "85%",
+        "63%",
+        "15%"
+      ],
+      "t": 3,
+      "izoh": "Narx farqi 4 200 000 − 3 570 000 = 630 000 so'm. Chegirma foizi eski narxga nisbatan olinadi: 630 000 : 4 200 000 = 0,15, ya'ni 15%. 17,6% — yangi narxga bo'lish, 85% — qolgan ulush, 63% — farq raqamini foiz deb yozish. Javob: 15%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chegirma-foizini-topish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#f18a8dc2"
+    },
+    {
+      "q": "Sport do'konida futbol to'pi 240 000 so'm edi, mavsum oxirida esa 168 000 so'mga sotila boshladi. Chegirma foizi qancha?",
+      "v": [
+        "42,9%",
+        "70%",
+        "7,2%",
+        "30%"
+      ],
+      "t": 3,
+      "izoh": "Narx 240 000 − 168 000 = 72 000 so'mga tushdi. Chegirma foizi 72 000 : 240 000 = 0,3, ya'ni 30%. 42,9% — yangi narxga bo'lish, 70% — yangi narxning eski narxdagi ulushi, 7,2% — farq raqamini foizga aylantirish. Javob: 30%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chegirma-foizini-topish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#a1c97d81"
+    },
+    {
+      "q": "Aviachipta 1 850 000 so'm turardi, erta bron qilganlar uchun uning narxi 1 517 000 so'mga tushirildi. Chegirma necha foizni tashkil qiladi?",
+      "v": [
+        "18%",
+        "22%",
+        "82%",
+        "33,3%"
+      ],
+      "t": 0,
+      "izoh": "Chegirma summasi 1 850 000 − 1 517 000 = 333 000 so'm. Uni dastlabki narxga bo'lamiz: 333 000 : 1 850 000 = 0,18, ya'ni 18%. 22% — yangi narxga bo'lish natijasi, 82% — qolgan ulush. Javob: 18%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegirma-foizini-topish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#8f899530"
+    },
+    {
+      "q": "Bir do'konda chelak 80 000 so'mdan 60 000 so'mga, boshqasida esa 150 000 so'mlik chelak 126 000 so'mga tushirildi. Qaysi do'konda chegirma foizi katta?",
+      "v": [
+        "Birinchi do'konda, 25%",
+        "Ikkinchi do'konda, 16%",
+        "Ikkinchi do'konda, 24%",
+        "Ikkala do'konda ham 20%"
+      ],
+      "t": 0,
+      "izoh": "Birinchida chegirma 20 000 so'm: 20 000 : 80 000 = 25%. Ikkinchida 24 000 so'm: 24 000 : 150 000 = 16%. Chegirma summasi ikkinchida katta bo'lsa ham, foiz birinchida yuqori. Javob: birinchi do'konda, 25%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegirma-foizini-taqqoslash",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#39caf8d9"
+    },
+    {
+      "q": "Kurtka narxiga avval 20%, so'ngra qolgan summadan yana 10% chegirma qilindi. Boshlang'ich narx 500 000 so'm bo'lsa, xaridor necha so'm to'laydi?",
+      "v": [
+        "350 000 so'm",
+        "400 000 so'm",
+        "360 000 so'm",
+        "450 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi chegirmadan keyin 500 000 · 0,8 = 400 000 so'm. Ikkinchi chegirma shu yangi summadan olinadi: 400 000 · 0,9 = 360 000 so'm. 350 000 — foizlarni qo'shib 30% qilish xatosi, 450 000 — faqat ikkinchi chegirmani qo'llash. Javob: 360 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-ikki-chegirma",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#31eec5e7"
+    },
+    {
+      "q": "Do'kon avval barcha narxlarni 25% ga tushirdi, keyin bayram munosabati bilan yangi narxdan yana 20% chegirma berdi. 240 000 so'mlik sochiq to'plami necha so'mga tushdi?",
+      "v": [
+        "132 000 so'm",
+        "144 000 so'm",
+        "180 000 so'm",
+        "192 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Birinchi bosqich: 240 000 · 0,75 = 180 000 so'm. Ikkinchi bosqich shu summadan: 180 000 · 0,8 = 144 000 so'm. 132 000 — foizlarni qo'shib 45% qilish, 180 000 va 192 000 — chegirmalardan faqat bittasini qo'llash. Javob: 144 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-ikki-chegirma",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#a20b253b"
+    },
+    {
+      "q": "Do'kon e'lonida «avval 10%, so'ngra yangi narxdan yana 30% chegirma» deb yozilgan. Bu ikki chegirma birgalikda necha foizlik yagona chegirmaga teng bo'ladi?",
+      "v": [
+        "40%",
+        "63%",
+        "20%",
+        "37%"
+      ],
+      "t": 3,
+      "izoh": "Har bir chegirmadan keyin qoladigan ulushlarni ko'paytiramiz: 0,9 · 0,7 = 0,63. Demak narxning 63% i qoladi, chegirma esa 100% − 63% = 37%. 40% — foizlarni qo'shish xatosi, 63% — qolgan ulushni chegirma deb olish. Javob: 37%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ketma-ket-ikki-chegirma",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#d3fe18e1"
+    },
+    {
+      "q": "Muzlatgichga 15% chegirma berilgach uning narxi 2 550 000 so'm bo'ldi. Shu yangi narxdan yana 8% chegirma qilinsa, xaridor necha so'm to'laydi?",
+      "v": [
+        "2 346 000 so'm",
+        "2 310 000 so'm",
+        "2 167 500 so'm",
+        "204 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi chegirma 2 550 000 so'mdan olinadi: 2 550 000 · 0,92 = 2 346 000 so'm. 2 310 000 — dastlabki 3 000 000 so'mdan 23% ayirish xatosi, 2 167 500 — 8% o'rniga yana 15% qo'llash, 204 000 — chegirma summasi. Javob: 2 346 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ketma-ket-ikki-chegirma",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#7b1021af"
+    },
+    {
+      "q": "Chang yutgich 20% chegirma bilan 1 480 000 so'mga sotildi. Uning chegirmagacha bo'lgan narxi qancha edi?",
+      "v": [
+        "1 776 000 so'm",
+        "1 850 000 so'm",
+        "1 184 000 so'm",
+        "296 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Sotuv narxi asl narxning 80% i: x · 0,8 = 1 480 000, bundan x = 1 480 000 : 0,8 = 1 850 000 so'm. Tekshiruv: 1 850 000 · 0,2 = 370 000 chegirma. 1 776 000 — 20% ni qo'shish xatosi. Javob: 1 850 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegirmadan-asl-narx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#d4a86dc5"
+    },
+    {
+      "q": "Talaba kitobni 35% chegirma bilan 91 000 so'mga sotib oldi. Kitobning dastlabki narxi necha so'm edi?",
+      "v": [
+        "122 850 so'm",
+        "260 000 so'm",
+        "140 000 so'm",
+        "59 150 so'm"
+      ],
+      "t": 2,
+      "izoh": "Chegirmadan keyin narxning 65% i qolgan: x · 0,65 = 91 000, demak x = 91 000 : 0,65 = 140 000 so'm. 260 000 — 0,65 o'rniga 0,35 ga bo'lish, 122 850 — 35% ni qo'shish, 59 150 — yana 35% ayirish. Javob: 140 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegirmadan-asl-narx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#52844433"
+    },
+    {
+      "q": "Sovutgich sumkasi 40% chegirmadan keyin 174 000 so'mga sotilmoqda va bu narx dastlabkisidan 116 000 so'm arzon. Sumkaning dastlabki narxi qancha bo'lgan?",
+      "v": [
+        "243 600 so'm",
+        "435 000 so'm",
+        "104 400 so'm",
+        "290 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Chegirmali narx asl narxning 60% i: x · 0,6 = 174 000, bundan x = 290 000 so'm. Shartdagi ikkinchi ma'lumot tekshiradi: 290 000 − 174 000 = 116 000, mos keldi. 435 000 — 0,4 ga bo'lish xatosi. Javob: 290 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegirmadan-asl-narx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#b7f45844"
+    },
+    {
+      "q": "Kompaniya ko'rsatgan xizmat narxini 1 500 000 so'm deb belgiladi, bu summaga 12% qo'shilgan qiymat solig'i qo'shiladi. Mijoz jami necha so'm to'laydi?",
+      "v": [
+        "1 680 000 so'm",
+        "180 000 so'm",
+        "1 320 000 so'm",
+        "1 512 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Soliq narxning ustiga qo'shiladi, ya'ni to'lov 112% ga teng bo'ladi: 1 500 000 · 1,12 = 1 680 000 so'm. 180 000 — faqat soliq summasi, 1 320 000 — soliqni ayirish, 1 512 000 — 12% ni 12 000 so'm deb olish. Javob: 1 680 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "narxga-soliq-qoshish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#3b037a00"
+    },
+    {
+      "q": "Do'kon monitorga 3 250 000 so'm narx qo'ydi va chekda ustiga 12% QQS ko'rsatiladi. QQS bilan birga chekdagi summa qancha bo'ladi?",
+      "v": [
+        "390 000 so'm",
+        "3 640 000 so'm",
+        "2 860 000 so'm",
+        "3 262 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "QQS summasi 3 250 000 · 0,12 = 390 000 so'm. Chekdagi jami to'lov 3 250 000 + 390 000 = 3 640 000 so'm. 2 860 000 — soliqni ayirish, 3 262 000 — foizni so'mga aylantirib yuborish. Javob: 3 640 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "narxga-soliq-qoshish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#f09c376d"
+    },
+    {
+      "q": "Kafe hisobiga avval 10% xizmat haqi, so'ngra olingan summaga 12% soliq qo'shiladi. Taomlarning narxi 250 000 so'm bo'lsa, mehmon necha so'm to'laydi?",
+      "v": [
+        "305 000 so'm",
+        "275 000 so'm",
+        "280 000 so'm",
+        "308 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Xizmat haqi bilan: 250 000 · 1,1 = 275 000 so'm. Soliq shu summaga qo'shiladi: 275 000 · 1,12 = 308 000 so'm. 305 000 — ikki foizni qo'shib 22% qilish, 280 000 — xizmat haqini tashlab ketish. Javob: 308 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narxga-soliq-qoshish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#5f6219dd"
+    },
+    {
+      "q": "Chekda ko'rsatilgan yakuniy summa 2 240 000 so'm bo'lib, unga 12% QQS allaqachon kiritilgan. Chekdagi QQS summasi necha so'm?",
+      "v": [
+        "240 000 so'm",
+        "268 800 so'm",
+        "2 000 000 so'm",
+        "1 971 200 so'm"
+      ],
+      "t": 0,
+      "izoh": "Yakuniy summa soliqsiz narxning 112% i. Soliqsiz narx 2 240 000 : 1,12 = 2 000 000 so'm. Demak QQS 2 240 000 − 2 000 000 = 240 000 so'm. 268 800 — foizni yakuniy summadan olish xatosi. Javob: 240 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-ichidan-soliqni-ajratish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#bee06a5f"
+    },
+    {
+      "q": "Xizmat uchun to'langan 896 000 so'mning ichida 12% soliq bor. Soliqsiz sof xizmat narxi qanchani tashkil qiladi?",
+      "v": [
+        "788 480 so'm",
+        "800 000 so'm",
+        "1 003 520 so'm",
+        "96 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Soliqli summa sof narxning 1,12 baravari: x · 1,12 = 896 000, bundan x = 800 000 so'm. Soliq esa 96 000 so'm. 788 480 — 12% ni umumiy summadan ayirish, 1 003 520 — teskari amal. Javob: 800 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-ichidan-soliqni-ajratish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#a4b0b039"
+    },
+    {
+      "q": "Restoran chekida 15% xizmat haqi hisobga olingan holda 1 495 000 so'm yozilgan. Taomlarning o'zi necha so'm turgan?",
+      "v": [
+        "1 270 750 so'm",
+        "195 000 so'm",
+        "1 300 000 so'm",
+        "1 719 250 so'm"
+      ],
+      "t": 2,
+      "izoh": "Chek summasi taomlar narxining 115% i: x · 1,15 = 1 495 000, demak x = 1 300 000 so'm. Xizmat haqi 195 000 so'm bo'ladi. 1 270 750 — 15% ni chek summasidan ayirish natijasi. Javob: 1 300 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-ichidan-soliqni-ajratish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#5d9b23cc"
+    },
+    {
+      "q": "Narx yorlig'ida «QQS bilan 5 600 000 so'm» deb yozilgan, QQS stavkasi esa 12%. Do'kon soliqsiz narxni necha so'm deb hisoblagan?",
+      "v": [
+        "4 928 000 so'm",
+        "6 272 000 so'm",
+        "5 000 000 so'm",
+        "672 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Yorliqdagi narx soliqsiz narxning 112% i. Soliqsiz narx 5 600 000 : 1,12 = 5 000 000 so'm. Tekshiruv: 5 000 000 · 0,12 = 600 000 soliq, jami 5 600 000. 672 000 — yorliq narxidan 12% olish xatosi. Javob: 5 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "narx-ichidan-soliqni-ajratish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#979451b6"
+    },
+    {
+      "q": "Tovar narxi 1 200 000 so'm. Avval unga 10% chegirma qilinadi, keyin qolgan summaga 12% soliq qo'shiladi. Xaridor necha so'm to'laydi?",
+      "v": [
+        "1 209 600 so'm",
+        "1 224 000 so'm",
+        "1 080 000 so'm",
+        "1 344 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Chegirmadan keyin 1 200 000 · 0,9 = 1 080 000 so'm. Soliq shu summaga qo'shiladi: 1 080 000 · 1,12 = 1 209 600 so'm. 1 224 000 — ikkala foizni ham dastlabki narxdan olish, 1 344 000 — chegirmani unutish. Javob: 1 209 600 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegirma-va-soliq-birga",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#8654ab04"
+    },
+    {
+      "q": "Kompyuterning narxi 8 500 000 so'm. Unga 12% soliq qo'shilgach, doimiy mijozga 5% chegirma beriladi. Mijoz necha so'm to'laydi?",
+      "v": [
+        "9 095 000 so'm",
+        "9 044 000 so'm",
+        "9 520 000 so'm",
+        "8 075 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Soliq bilan narx 8 500 000 · 1,12 = 9 520 000 so'm. Chegirma shu summadan olinadi: 9 520 000 · 0,95 = 9 044 000 so'm. 9 095 000 — foizlarni ayirib 7% qilish, 8 075 000 — soliqni hisobga olmaslik. Javob: 9 044 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegirma-va-soliq-birga",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#f6fd5525"
+    },
+    {
+      "q": "Mebel do'konida stol 2 800 000 so'm turadi. Aksiya bo'yicha 25% chegirma bor, lekin yetkazib berish uchun chegirmali narxning 5% i qo'shiladi. Xaridor jami qancha to'laydi?",
+      "v": [
+        "2 240 000 so'm",
+        "2 100 000 so'm",
+        "2 205 000 so'm",
+        "2 940 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Chegirmali narx 2 800 000 · 0,75 = 2 100 000 so'm. Yetkazish haqi shu narxdan olinadi: 2 100 000 · 1,05 = 2 205 000 so'm. 2 240 000 — foizlarni ayirib 20% qilish, 2 940 000 — chegirmani unutish. Javob: 2 205 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegirma-va-soliq-birga",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#1e6fd2c7"
+    },
+    {
+      "q": "Ikki do'kon bir xil printerni 4 000 000 so'mdan taklif qiladi. Birinchisi 15% chegirma berib ustiga 12% soliq qo'shadi, ikkinchisi soliqsiz 8% chegirma beradi. Qaysi taklif arzon va farq qancha?",
+      "v": [
+        "Ikkinchisi, 128 000 so'mga arzon",
+        "Birinchisi, 280 000 so'mga arzon",
+        "Birinchisi, 128 000 so'mga arzon",
+        "Ikkala taklif ham teng"
+      ],
+      "t": 0,
+      "izoh": "Birinchi do'kon: 4 000 000 · 0,85 = 3 400 000, so'ng 3 400 000 · 1,12 = 3 808 000 so'm. Ikkinchi do'kon: 4 000 000 · 0,92 = 3 680 000 so'm. Farq 3 808 000 − 3 680 000 = 128 000 so'm. Soliq unutilsa noto'g'ri xulosa chiqadi. Javob: ikkinchisi, 128 000 so'mga arzon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegirma-va-soliq-birga",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#cb995fae"
+    },
+    {
+      "q": "Oilaning elektr hisoblagichi oy boshida 4 820 kVt·soat, oy oxirida 5 145 kVt·soat ko'rsatdi. Bir kVt·soat 450 so'm bo'lsa, oylik to'lov qancha?",
+      "v": [
+        "146 250 so'm",
+        "150 750 so'm",
+        "2 315 250 so'm",
+        "2 169 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Sarflangan energiya ikki ko'rsatkich ayirmasiga teng: 5 145 − 4 820 = 325 kVt·soat. To'lov 325 · 450 = 146 250 so'm. 2 315 250 va 2 169 000 — ko'rsatkichning o'zini tarifga ko'paytirish xatosi. Javob: 146 250 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "elektr-hisoblagich-tarifi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#e9e9345f"
+    },
+    {
+      "q": "Kvartirada 5 ta lampa bor, har biri 60 Vt quvvatga ega va kuniga 6 soatdan yonadi. Bir kVt·soat 450 so'm bo'lsa, 30 kunlik yoritish uchun qancha to'lanadi?",
+      "v": [
+        "4 860 so'm",
+        "810 so'm",
+        "24 300 so'm",
+        "24 300 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Beshta lampaning umumiy quvvati 5 · 60 = 300 Vt, ya'ni 0,3 kVt. Kuniga 0,3 · 6 = 1,8 kVt·soat, 30 kunda 54 kVt·soat. To'lov 54 · 450 = 24 300 so'm. 810 — bir kunlik to'lov, 24 300 000 — vattni kilovatt deb olish. Javob: 24 300 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quvvatdan-elektr-tolovi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#d63c5750"
+    },
+    {
+      "q": "Elektr tarifi bir kVt·soat uchun 450 so'm. Ovqat pishirgichning quvvati 2 kVt bo'lib, u kuniga 1,5 soatdan 20 kun ishlatildi. Sarflangan pul qancha?",
+      "v": [
+        "13 500 so'm",
+        "1 350 so'm",
+        "18 000 so'm",
+        "27 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Bir kunda 2 · 1,5 = 3 kVt·soat sarflanadi. Yigirma kunda 3 · 20 = 60 kVt·soat bo'ladi. To'lov 60 · 450 = 27 000 so'm. 13 500 — quvvatni hisobga olmaslik, 1 350 — bir kunlik summa, 18 000 — soatlarni tashlab ketish. Javob: 27 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvvatdan-elektr-tolovi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#e4861b5b"
+    },
+    {
+      "q": "Xonadonda oyiga 320 kVt·soat elektr sarflanadi. Tarif 450 so'mdan 495 so'mga oshdi. Oylik to'lov necha so'mga ko'payadi?",
+      "v": [
+        "158 400 so'm",
+        "14 400 so'm",
+        "144 000 so'm",
+        "302 400 so'm"
+      ],
+      "t": 1,
+      "izoh": "Tarif farqi 495 − 450 = 45 so'm. To'lovning o'sishi 320 · 45 = 14 400 so'm. 144 000 — eski to'lov, 158 400 — yangi to'lov, 302 400 — ikkalasining yig'indisi. Javob: 14 400 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-oshishi-tolov-farqi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#aa1942c0"
+    },
+    {
+      "q": "Suv tarifi: oyiga 10 m³ gacha har bir m³ uchun 2 400 so'm, undan ortig'i uchun 3 600 so'm. Oila 18 m³ suv sarflasa, to'lov qancha bo'ladi?",
+      "v": [
+        "43 200 so'm",
+        "64 800 so'm",
+        "52 800 so'm",
+        "54 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi 10 m³ uchun 10 · 2 400 = 24 000 so'm. Qolgan 8 m³ uchun 8 · 3 600 = 28 800 so'm. Jami 24 000 + 28 800 = 52 800 so'm. 43 200 va 64 800 — butun sarfni bitta tarifga ko'paytirish xatosi. Javob: 52 800 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "pogonali-tarif-tolovi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#d2129efe"
+    },
+    {
+      "q": "Elektr uchun 200 kVt·soatgacha har bir kVt·soat 450 so'm, undan yuqorisi uchun 600 so'm to'lanadi. Xonadon 275 kVt·soat sarfladi. To'lov summasi qancha?",
+      "v": [
+        "123 750 so'm",
+        "135 000 so'm",
+        "165 000 so'm",
+        "144 375 so'm"
+      ],
+      "t": 1,
+      "izoh": "Birinchi pog'ona: 200 · 450 = 90 000 so'm. Ikkinchi pog'ona: 75 · 600 = 45 000 so'm. Jami 135 000 so'm. 123 750 — hammasini arzon tarifda, 165 000 — hammasini qimmat tarifda hisoblash, 144 375 — o'rtacha tarifni qo'llash. Javob: 135 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "pogonali-tarif-tolovi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#71aa0ad7"
+    },
+    {
+      "q": "Gaz tarifi: 50 m³ gacha har bir m³ 1 200 so'm, ortiqchasi uchun 1 800 so'm. Oila oyiga 92 400 so'm to'lagan bo'lsa, necha m³ gaz sarflangan?",
+      "v": [
+        "68 m³",
+        "77 m³",
+        "51 m³",
+        "50 m³"
+      ],
+      "t": 0,
+      "izoh": "Birinchi pog'onaning to'liq narxi 50 · 1 200 = 60 000 so'm, demak chegaradan oshgan. Qolgan pul 92 400 − 60 000 = 32 400 so'm, u qimmat tarifga to'g'ri keladi: 32 400 : 1 800 = 18 m³. Jami 50 + 18 = 68 m³. Javob: 68 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "pogonali-tariftan-sarfni-topish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#d4729e85"
+    },
+    {
+      "q": "Suv uchun 8 m³ gacha har bir m³ 2 500 so'm, undan keyingi har bir m³ esa 4 000 so'm. Bir xonadon 12 m³, ikkinchisi 20 m³ sarfladi. Ularning to'lovlari farqi qancha?",
+      "v": [
+        "20 000 so'm",
+        "104 000 so'm",
+        "68 000 so'm",
+        "32 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Birinchi xonadon: 8 · 2 500 + 4 · 4 000 = 20 000 + 16 000 = 36 000 so'm. Ikkinchisi: 20 000 + 12 · 4 000 = 68 000 so'm. Farq 68 000 − 36 000 = 32 000 so'm. 104 000 — ikki to'lovning yig'indisi. Javob: 32 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "pogonali-tarif-tolovi-taqqoslash",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#c26ab39a"
+    },
+    {
+      "q": "Taksi tarifi: birinchi 3 km uchun 12 000 so'm, keyingi har bir km uchun 3 500 so'm. 11 km yo'l uchun qancha to'lanadi?",
+      "v": [
+        "50 500 so'm",
+        "40 000 so'm",
+        "38 500 so'm",
+        "28 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Qo'shimcha masofa 11 − 3 = 8 km. Uning haqi 8 · 3 500 = 28 000 so'm. Jami to'lov 12 000 + 28 000 = 40 000 so'm. 50 500 — dastlabki 3 km ni ikki marta hisoblash, 28 000 — boshlang'ich haqni unutish. Javob: 40 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taksi-tarifi-hisobi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#71fbf7a9"
+    },
+    {
+      "q": "Taksi haydovchisi o'tirish uchun 10 000 so'm, har km uchun 2 800 so'm va kutish uchun har daqiqada 500 so'm oladi. Yo'lovchi 9 km yurdi va 6 daqiqa kutdi. To'lov qancha?",
+      "v": [
+        "35 200 so'm",
+        "28 200 so'm",
+        "38 200 so'm",
+        "25 200 so'm"
+      ],
+      "t": 2,
+      "izoh": "Masofa haqi 9 · 2 800 = 25 200 so'm, kutish haqi 6 · 500 = 3 000 so'm. Jami 10 000 + 25 200 + 3 000 = 38 200 so'm. 35 200 — kutishni unutish, 28 200 — o'tirish haqini tashlab ketish. Javob: 38 200 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taksi-tarifi-hisobi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#e64c39b6"
+    },
+    {
+      "q": "Bir taksi xizmati 15 000 so'm boshlang'ich haq va har km uchun 2 500 so'm oladi, ikkinchisi boshlang'ich haqsiz har km uchun 4 000 so'm oladi. Qaysi masofada ikkalasining narxi tenglashadi?",
+      "v": [
+        "10 km",
+        "6 km",
+        "3,75 km",
+        "15 km"
+      ],
+      "t": 0,
+      "izoh": "Masofani x deb olamiz va tenglama tuzamiz: 15 000 + 2 500x = 4 000x. Bundan 1 500x = 15 000, ya'ni x = 10 km. 6 km — boshlang'ich haqni birinchi tarifga bo'lish, 3,75 km — ikkinchi tarifga bo'lish xatosi. Javob: 10 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-tarif-tenglashish-nuqtasi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#2f2194ca"
+    },
+    {
+      "q": "Nodir aeroportga taksi chaqirdi: chaqiruv uchun 8 000 so'm, har bir to'liq km uchun 3 200 so'm olinadi (to'lov faqat butun kilometrlar uchun hisoblanadi). Uning cho'ntagida 22 000 so'm bor. Eng ko'pi bilan necha km yura oladi?",
+      "v": [
+        "6 km",
+        "5 km",
+        "4,375 km",
+        "4 km"
+      ],
+      "t": 3,
+      "izoh": "Masofaga qoladigan pul 22 000 − 8 000 = 14 000 so'm. 14 000 : 3 200 = 4,375, lekin shartga ko'ra to'lov faqat to'liq kilometrlar uchun olinadi, shuning uchun 4 km. 4,375 km — butunlash shartini e'tiborsiz qoldirish. Beshinchi kilometrga 16 000 so'm kerak, bu esa yetmaydi. Javob: 4 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "byudjet-cheklovi-tarifda",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#ef2913bd"
+    },
+    {
+      "q": "Gaz hisoblagichi 1-fevralda 3 486 m³, 1-martda esa 3 604 m³ ko'rsatdi. Bir m³ gaz 1 250 so'm bo'lsa, fevral oyi uchun to'lov qancha?",
+      "v": [
+        "147 500 so'm",
+        "137 500 so'm",
+        "4 505 000 so'm",
+        "4 357 500 so'm"
+      ],
+      "t": 0,
+      "izoh": "Oylik sarf ikki ko'rsatkich ayirmasi: 3 604 − 3 486 = 118 m³. To'lov 118 · 1 250 = 147 500 so'm. 137 500 — ayirishda xatoga yo'l qo'yib 110 m³ olish, qolgan ikkitasi — ko'rsatkichni to'g'ridan-to'g'ri tarifga ko'paytirish. Javob: 147 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hisoblagich-korsatkichi-farqi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#c8c93062"
+    },
+    {
+      "q": "Suv hisoblagichi mart oyida 26 m³, aprel oyida 31 m³ sarfni ko'rsatdi. Bir m³ suv 3 200 so'm, kanalizatsiya uchun qo'shimcha 1 800 so'm olinadi. Ikki oy uchun jami to'lov qancha?",
+      "v": [
+        "182 400 so'm",
+        "285 000 so'm",
+        "102 600 so'm",
+        "155 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Ikki oylik sarf 26 + 31 = 57 m³. Har bir m³ uchun jami 3 200 + 1 800 = 5 000 so'm to'lanadi. Demak 57 · 5 000 = 285 000 so'm. 182 400 — kanalizatsiyani unutish, 155 000 — faqat aprel oyini hisoblash. Javob: 285 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hisoblagich-korsatkichi-farqi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#e52fe409"
+    },
+    {
+      "q": "Xonadonda 4 kishi yashaydi va har biri kuniga o'rtacha 120 litr suv sarflaydi. Bir m³ suv 3 200 so'm bo'lsa, 30 kunlik to'lov qancha?",
+      "v": [
+        "46 080 000 so'm",
+        "11 520 so'm",
+        "46 080 so'm",
+        "1 536 so'm"
+      ],
+      "t": 2,
+      "izoh": "Kunlik sarf 4 · 120 = 480 litr, 30 kunda 14 400 litr. 1 m³ = 1 000 litr, demak 14,4 m³. To'lov 14,4 · 3 200 = 46 080 so'm. 46 080 000 — litrni m³ deb olish, 11 520 — bir kishining sarfi, 1 536 — bir kunlik to'lov. Javob: 46 080 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-aylantirib-tarif-hisobi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#0e359cfd"
+    },
+    {
+      "q": "Oila avval oyiga 24 m³ suv sarflar edi. Tejamkor jo'mrak o'rnatilgach sarf 25% ga kamaydi. Bir m³ suv 3 200 so'm bo'lsa, yangi oylik to'lov qancha?",
+      "v": [
+        "76 800 so'm",
+        "57 600 so'm",
+        "19 200 so'm",
+        "96 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Yangi sarf 24 · 0,75 = 18 m³. To'lov 18 · 3 200 = 57 600 so'm. 76 800 — eski to'lov, 19 200 — tejalgan summa, 96 000 — sarfni kamaytirish o'rniga oshirish xatosi. Javob: 57 600 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sarf-kamayishi-va-tolov",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#ffc1c7e7"
+    },
+    {
+      "q": "Bir xil noutbuk uch do'konda sotiladi: A da 9 200 000 so'm, B da 10 000 000 so'mdan 10% chegirma bilan, C da 9 800 000 so'mdan 5% chegirma bilan. Eng arzoni qaysi va necha so'm?",
+      "v": [
+        "B do'koni — 9 000 000 so'm",
+        "A do'koni — 9 200 000 so'm",
+        "C do'koni — 9 310 000 so'm",
+        "B do'koni — 9 900 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "B do'konida 10 000 000 · 0,9 = 9 000 000 so'm. C do'konida 9 800 000 · 0,95 = 9 310 000 so'm. A da narx 9 200 000 so'm. Eng kichigi 9 000 000, ya'ni B do'koni. 9 900 000 — 10% ni 100 000 so'm deb olish xatosi. Javob: B do'koni — 9 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-arzon-dokonni-tanlash",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#bb12e86b"
+    },
+    {
+      "q": "Bir kg go'sht bozorda 95 000 so'm, do'konda 88 000 so'm turadi, ammo do'konga borish uchun 12 000 so'm yo'l puli ketadi. 3 kg go'sht olmoqchi xaridor qayerdan olgani foydali?",
+      "v": [
+        "Bozordan — 9 000 so'm tejaydi",
+        "Do'kondan — 21 000 so'm tejaydi",
+        "Do'kondan — 9 000 so'm tejaydi",
+        "Ikkalasida ham xarajat teng"
+      ],
+      "t": 2,
+      "izoh": "Bozorda 3 · 95 000 = 285 000 so'm. Do'konda 3 · 88 000 + 12 000 = 264 000 + 12 000 = 276 000 so'm. Farq 285 000 − 276 000 = 9 000 so'm. 21 000 — yo'l pulini hisobga olmaslik natijasi. Javob: do'kondan — 9 000 so'm tejaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshimcha-xarajat-bilan-tanlash",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#9c8d653f"
+    },
+    {
+      "q": "Guruch 5 kg lik qopda 92 000 so'm, 2 kg lik qopda 39 000 so'm sotiladi. Kamida 10 kg guruch olish uchun eng arzon yo'lni tanlang.",
+      "v": [
+        "Beshta 2 kg lik qop — 195 000 so'm",
+        "Ikkita 5 kg lik qop — 184 000 so'm",
+        "Bitta 5 kg va uchta 2 kg — 209 000 so'm",
+        "Ikkita 2 kg va bitta 5 kg — 170 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Oxirgi variantda jami 9 kg chiqadi, u shartni bajarmaydi. Ikkita katta qop 2 · 92 000 = 184 000 so'm va aynan 10 kg beradi. Beshta kichik qop 5 · 39 000 = 195 000 so'm, aralash variant esa 11 kg uchun 209 000 so'm. Javob: ikkita 5 kg lik qop — 184 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qadoq-kombinatsiyasini-tanlash",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#7cd97795"
+    },
+    {
+      "q": "Uch xil internet tarifi bor: A — oyiga 90 000 so'm cheksiz; B — 60 000 so'm va 50 GB, ortiqcha har GB 1 500 so'm; C — 40 000 so'm va 30 GB, ortiqcha har GB 2 000 so'm. Oyiga 60 GB sarflaydigan mijozga qaysi tarif arzon?",
+      "v": [
+        "C tarifi — 100 000 so'm",
+        "A tarifi — 90 000 so'm",
+        "B tarifi — 60 000 so'm",
+        "B tarifi — 75 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "B tarifida ortiqcha 10 GB bo'ladi: 60 000 + 10 · 1 500 = 75 000 so'm. C tarifida ortiqcha 30 GB: 40 000 + 30 · 2 000 = 100 000 so'm. A tarifi 90 000 so'm. Eng kichigi 75 000 so'm. Javob: B tarifi — 75 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tariflardan-eng-arzonini-tanlash",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#acd29aff"
+    },
+    {
+      "q": "Bir do'konda daftar 6 500 so'm va 10 tadan olganda 8% chegirma bor, boshqasida esa daftar 6 200 so'm, chegirmasiz. 10 ta daftar olish uchun qayerdan olish foydali?",
+      "v": [
+        "Ikkinchi do'kon — 3 000 so'm tejaladi",
+        "Birinchi do'kon — 5 200 so'm tejaladi",
+        "Birinchi do'kon — 2 200 so'm tejaladi",
+        "Ikkala do'konda ham bir xil"
+      ],
+      "t": 2,
+      "izoh": "Birinchi do'konda 10 · 6 500 = 65 000, chegirma bilan 65 000 · 0,92 = 59 800 so'm. Ikkinchisida 10 · 6 200 = 62 000 so'm. Farq 62 000 − 59 800 = 2 200 so'm. 3 000 — chegirmani hisobga olmaslik, 5 200 — chegirma summasini tejash deb olish. Javob: birinchi do'kon — 2 200 so'm tejaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegirmali-va-arzon-narxni-taqqoslash",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#b52deefa"
+    },
+    {
+      "q": "Yog' 0,9 litrlik shishada 27 000 so'm, 5 litrlik idishda esa 142 500 so'm. Bir litr yog' qayerda arzon va qanchaga?",
+      "v": [
+        "5 litrlik idishda — 1 500 so'm arzon",
+        "0,9 litrlik shishada — 1 500 so'm arzon",
+        "5 litrlik idishda — 115 500 so'm arzon",
+        "Ikkalasida bir litr narxi teng"
+      ],
+      "t": 0,
+      "izoh": "Shishada bir litr 27 000 : 0,9 = 30 000 so'm. Katta idishda 142 500 : 5 = 28 500 so'm. Farq 30 000 − 28 500 = 1 500 so'm. 115 500 — qadoqlarning narx farqi, u bir litrga tegishli emas. Javob: 5 litrlik idishda — 1 500 so'm arzon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-narxni-solishtirish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#c4470d23"
+    },
+    {
+      "q": "Kir yuvish kukuni 2,4 kg lik qutida 96 000 so'm, 400 g lik paketda esa 18 000 so'm turadi. Bir kg uchun narx farqi qancha?",
+      "v": [
+        "78 000 so'm",
+        "5 000 so'm",
+        "4 500 so'm",
+        "500 so'm"
+      ],
+      "t": 1,
+      "izoh": "Qutida bir kg 96 000 : 2,4 = 40 000 so'm. Paketda 400 g = 0,4 kg, demak 18 000 : 0,4 = 45 000 so'm. Farq 45 000 − 40 000 = 5 000 so'm. 78 000 — qadoq narxlarining ayirmasi, 4 500 — grammni noto'g'ri aylantirish. Javob: 5 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-narxni-solishtirish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#724674a9"
+    },
+    {
+      "q": "Shakar chakana savdoda bir kg uchun 14 000 so'm, 25 kg lik qopda esa 330 000 so'm. Qopda olish bir kg uchun necha so'm tejaydi?",
+      "v": [
+        "20 000 so'm",
+        "13 200 so'm",
+        "800 so'm",
+        "350 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Chakana narxda 25 kg 25 · 14 000 = 350 000 so'm bo'lardi. Qopda 330 000 so'm, demak jami tejash 20 000 so'm. Bir kg uchun 20 000 : 25 = 800 so'm. 13 200 — qopdagi bir kg narxi, 20 000 — butun qop bo'yicha tejash. Javob: 800 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-narxni-solishtirish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#31e97ebb"
+    },
+    {
+      "q": "Sut bir litrlik paketda 13 500 so'm turadi va do'konda «uchtasini olsang, to'rtinchisi bepul» aksiyasi bor. Aksiya bo'yicha 4 litr olgan xaridor uchun bir litr sutning haqiqiy narxi qancha?",
+      "v": [
+        "13 500 so'm",
+        "9 000 so'm",
+        "10 800 so'm",
+        "10 125 so'm"
+      ],
+      "t": 3,
+      "izoh": "Xaridor faqat uchta paket uchun to'laydi: 3 · 13 500 = 40 500 so'm. Bu pul 4 litrga taqsimlanadi: 40 500 : 4 = 10 125 so'm. 9 000 — chegirmani uchdan bir deb olish, 10 800 — 20% chegirma deb hisoblash. Javob: 10 125 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aksiyadagi-haqiqiy-birlik-narx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#41205c71"
+    },
+    {
+      "q": "Do'kon ikki aksiyani taklif qiladi: «ikkitasini olsang, uchinchisi bepul» yoki «hamma tovarga 30% chegirma». Narxi 60 000 so'mlik uchta mahsulot olmoqchi xaridor uchun qaysi biri foydali?",
+      "v": [
+        "Birinchi aksiya — 6 000 so'm arzon",
+        "Ikkinchi aksiya — 6 000 so'm arzon",
+        "Birinchi aksiya — 60 000 so'm arzon",
+        "Ikkalasi ham bir xil summa"
+      ],
+      "t": 0,
+      "izoh": "Birinchi aksiyada faqat ikkita mahsulot uchun to'lanadi: 2 · 60 000 = 120 000 so'm. Ikkinchi aksiyada 3 · 60 000 = 180 000, chegirma bilan 180 000 · 0,7 = 126 000 so'm. Farq 126 000 − 120 000 = 6 000 so'm. Javob: birinchi aksiya — 6 000 so'm arzon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-aksiyani-taqqoslash",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#aeca145e"
+    },
+    {
+      "q": "Bir do'kon «ikkinchi ko'ylakka 50% chegirma», boshqasi «har ikkalasiga 30% chegirma» deb e'lon qildi. Bitta ko'ylak 180 000 so'm bo'lsa va xaridor ikkita olsa, qaysi taklif arzon?",
+      "v": [
+        "Birinchi taklif — 18 000 so'm arzon",
+        "Ikkinchi taklif — 18 000 so'm arzon",
+        "Ikkinchi taklif — 108 000 so'm arzon",
+        "Ikkala taklifda ham summa teng"
+      ],
+      "t": 1,
+      "izoh": "Birinchi taklifda 180 000 + 90 000 = 270 000 so'm. Ikkinchi taklifda 2 · 180 000 = 360 000, chegirma bilan 360 000 · 0,7 = 252 000 so'm. Farq 270 000 − 252 000 = 18 000 so'm. 108 000 — chegirma summasining o'zi. Javob: ikkinchi taklif — 18 000 so'm arzon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-aksiyani-taqqoslash",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#40290ee5"
+    },
+    {
+      "q": "Dilnoza bozorga 250 000 so'm bilan bordi. U kilogrammi 18 000 so'mdan 3 kg olma va kilogrammi 26 000 so'mdan 4 kg uzum oldi. Unda necha so'm qoldi?",
+      "v": [
+        "158 000 so'm",
+        "206 000 so'm",
+        "118 000 so'm",
+        "92 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Olmaga 3 · 18 000 = 54 000 so'm, uzumga 4 · 26 000 = 104 000 so'm ketdi. Jami xarajat 158 000 so'm. Qolgan pul 250 000 − 158 000 = 92 000 so'm. 158 000 — sarflangan summaning o'zi. Javob: 92 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "byudjetdan-qolgan-pul",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#aa8174cf"
+    },
+    {
+      "q": "Bitta daftar 7 500 so'm turadi. O'quvchining qo'lida 100 000 so'm bor. U eng ko'pi bilan nechta daftar sotib ola oladi?",
+      "v": [
+        "14 ta",
+        "13,3 ta",
+        "13 ta",
+        "12 ta"
+      ],
+      "t": 2,
+      "izoh": "100 000 : 7 500 = 13,33 chiqadi, lekin daftar butun sonda sotiladi. Demak 13 ta olish mumkin: 13 · 7 500 = 97 500 so'm. O'n to'rttasi uchun 105 000 so'm kerak, bu esa yetmaydi. Javob: 13 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "byudjetga-nechta-sigadi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#bd276f67"
+    },
+    {
+      "q": "Oilaning oylik byudjeti 4 800 000 so'm. Uning 35% i oziq-ovqatga, 20% i kommunal to'lovlarga, 15% i transportga ketadi. Boshqa ehtiyojlarga qancha pul qoladi?",
+      "v": [
+        "1 440 000 so'm",
+        "3 360 000 so'm",
+        "1 680 000 so'm",
+        "960 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Sarflanadigan ulush 35% + 20% + 15% = 70%. Qoladigan ulush 100% − 70% = 30%. Demak 4 800 000 · 0,3 = 1 440 000 so'm. 3 360 000 — sarflanadigan summa, 1 680 000 — faqat oziq-ovqat ulushi. Javob: 1 440 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "byudjet-ulushlari",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#5325f7e5"
+    },
+    {
+      "q": "Sinf jamg'armasida 640 000 so'm bor. Bitta sovg'a 58 000 so'm turadi va 12 ta sovg'a olish kerak. Yana necha so'm yig'ish lozim?",
+      "v": [
+        "696 000 so'm",
+        "56 000 so'm",
+        "58 000 so'm",
+        "1 336 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Kerakli summa 12 · 58 000 = 696 000 so'm. Jamg'armada 640 000 so'm bor, demak yetishmayotgani 696 000 − 640 000 = 56 000 so'm. 1 336 000 — ayirish o'rniga qo'shish xatosi. Javob: 56 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yetishmayotgan-summani-topish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#c5d7b4ec"
+    },
+    {
+      "q": "Kamola 900 000 so'mga kitob olmoqchi. Bir kitob 65 000 so'm, ammo beshtadan ko'p olsa har biriga 10% chegirma beriladi. Chegirma bilan u eng ko'pi bilan nechta kitob ola oladi?",
+      "v": [
+        "13 ta",
+        "16 ta",
+        "14 ta",
+        "15 ta"
+      ],
+      "t": 3,
+      "izoh": "Chegirmali narx 65 000 · 0,9 = 58 500 so'm. 900 000 : 58 500 = 15,38, demak 15 ta. Tekshiruv: 15 · 58 500 = 877 500 ≤ 900 000, 16 tasi esa 936 000 so'm bo'lib, byudjetdan oshadi. 13 ta — chegirmani hisobga olmaslik. Javob: 15 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegirmali-narxda-byudjet-sigimi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#dba1f91e"
+    },
+    {
+      "q": "Ulgurji bazada bir quti sok 96 000 so'm bo'lib, qutida 12 dona bor. Chakana do'konda bir dona sok 9 500 so'm. 12 dona olishda ulgurji necha so'm arzon?",
+      "v": [
+        "18 000 so'm",
+        "8 000 so'm",
+        "1 500 so'm",
+        "114 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Chakana savdoda 12 dona 12 · 9 500 = 114 000 so'm bo'ladi. Ulgurjida esa 96 000 so'm. Farq 114 000 − 96 000 = 18 000 so'm. 8 000 — ulgurjidagi bir dona narxi, 1 500 — bir donadagi farq. Javob: 18 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ulgurji-va-chakana-farqi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#1fdcd6e0"
+    },
+    {
+      "q": "Tadbirkor 30 dona choynakni ulgurji bazadan 45 000 so'mdan oldi va o'z do'konida 62 000 so'mdan sotdi. Sotuvdan olgan foydasi qancha?",
+      "v": [
+        "17 000 so'm",
+        "510 000 so'm",
+        "1 860 000 so'm",
+        "1 350 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Bir dona choynakdan foyda 62 000 − 45 000 = 17 000 so'm. O'ttizta choynakdan 30 · 17 000 = 510 000 so'm. 1 860 000 — butun tushum, 1 350 000 — butun tannarx, ular foyda emas. Javob: 510 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ulgurji-va-chakana-farqi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#1a27dd08"
+    },
+    {
+      "q": "Bir mahsulotning ulgurji narxi 24 000 so'm, chakana narxi esa 30 000 so'm. Chakana narx ulgurjidan necha foiz yuqori?",
+      "v": [
+        "20%",
+        "6%",
+        "125%",
+        "25%"
+      ],
+      "t": 3,
+      "izoh": "Narx farqi 30 000 − 24 000 = 6 000 so'm. Taqqoslash ulgurji narxga nisbatan olinadi: 6 000 : 24 000 = 0,25, ya'ni 25%. 20% — chakana narxga bo'lish, 125% — narxlar nisbatining o'zi. Javob: 25%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ulgurji-chakana-foiz-farqi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#a44b655f"
+    },
+    {
+      "q": "Do'kon 200 dona qalamni donasi 3 200 so'mdan sotib oldi. Ulardan 150 tasini 5 000 so'mdan sotdi, qolganini esa 2 500 so'mdan arzonlashtirib sotdi. Natija qanday bo'ldi?",
+      "v": [
+        "235 000 so'm foyda",
+        "110 000 so'm foyda",
+        "235 000 so'm zarar",
+        "360 000 so'm foyda"
+      ],
+      "t": 0,
+      "izoh": "Tannarx 200 · 3 200 = 640 000 so'm. Tushum 150 · 5 000 + 50 · 2 500 = 750 000 + 125 000 = 875 000 so'm. Foyda 875 000 − 640 000 = 235 000 so'm. 110 000 — arzon sotilgan qismni unutish, 360 000 — hammasini qimmat narxda hisoblash. Javob: 235 000 so'm foyda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qisman-arzonlashtirib-sotish",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#b3312205"
+    },
+    {
+      "q": "Telefonning naqd narxi 4 200 000 so'm. Bo'lib to'lashda 12 oy davomida oyiga 400 000 so'm to'lanadi. Ortiqcha to'lov qancha bo'ladi?",
+      "v": [
+        "4 800 000 so'm",
+        "600 000 so'm",
+        "50 000 so'm",
+        "350 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Bo'lib to'lashdagi umumiy summa 12 · 400 000 = 4 800 000 so'm. Ortiqcha to'lov 4 800 000 − 4 200 000 = 600 000 so'm. 350 000 — naqd narxning oylik ulushi, 50 000 — bir oydagi farq. Javob: 600 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolib-tolashdagi-ortiqcha-tolov",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#bbd849ea"
+    },
+    {
+      "q": "Muzlatgichning naqd narxi 6 500 000 so'm. Bo'lib to'lashda boshlang'ich to'lov 1 500 000 so'm va 10 oy davomida oyiga 580 000 so'm to'lanadi. Ortiqcha to'lov qancha?",
+      "v": [
+        "5 800 000 so'm",
+        "7 300 000 so'm",
+        "800 000 so'm",
+        "80 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Oylik to'lovlar 10 · 580 000 = 5 800 000 so'm. Boshlang'ich to'lov bilan jami 1 500 000 + 5 800 000 = 7 300 000 so'm. Ortiqcha to'lov 7 300 000 − 6 500 000 = 800 000 so'm. 7 300 000 — umumiy to'lov, ortiqchasi emas. Javob: 800 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolib-tolashdagi-ortiqcha-tolov",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#4ded1bdc"
+    },
+    {
+      "q": "Kompyuterning narxi 9 000 000 so'm. Do'kon uni olti oyga bo'lib to'lashni taklif qiladi, bunda umumiy narx 8% ga oshadi. Oylik to'lov qancha bo'ladi?",
+      "v": [
+        "1 500 000 so'm",
+        "1 620 000 so'm",
+        "1 380 000 so'm",
+        "120 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Bo'lib to'lashdagi umumiy narx 9 000 000 · 1,08 = 9 720 000 so'm. Uni oylarga bo'lamiz: 9 720 000 : 6 = 1 620 000 so'm. 1 500 000 — foizni unutish, 120 000 — faqat ortiqcha to'lovning oylik qismi. Javob: 1 620 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolib-tolashda-oylik-tolov",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#3db6b78f"
+    },
+    {
+      "q": "Kir yuvish mashinasining naqd narxi 5 000 000 so'm. Boshqa do'kon boshlang'ich to'lovsiz sakkiz oy davomida oyiga 700 000 so'm taklif qiladi. Bo'lib to'lash taklifi naqd narxdan necha foiz qimmat?",
+      "v": [
+        "10,7%",
+        "112%",
+        "12%",
+        "8%"
+      ],
+      "t": 2,
+      "izoh": "Bo'lib to'lash summasi 8 · 700 000 = 5 600 000 so'm. Ortiqcha to'lov 5 600 000 − 5 000 000 = 600 000 so'm. Foiz naqd narxga nisbatan olinadi: 600 000 : 5 000 000 = 0,12, ya'ni 12%. 10,7% — umumiy summaga bo'lish. Javob: 12%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolib-tolash-ustama-foizi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#a599d488"
+    },
+    {
+      "q": "Do'konda tovar narxi 45 dollar deb ko'rsatilgan, bank kursi esa bir dollar uchun 12 600 so'm. Tovarning so'mdagi narxi qancha bo'ladi?",
+      "v": [
+        "12 645 so'm",
+        "567 000 so'm",
+        "280 so'm",
+        "5 670 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "So'mdagi narxni topish uchun dollar miqdorini kursga ko'paytiramiz: 45 · 12 600 = 567 000 so'm. 12 645 — ko'paytirish o'rniga qo'shish, 280 — kursni miqdorga bo'lish, 5 670 000 — nollarni ortiqcha yozish. Javob: 567 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "valyuta-kursida-narx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#c5f26a34"
+    },
+    {
+      "q": "Sayyoh 250 dollarni bir dollar uchun 12 800 so'mdan sotdi, so'ng 1 700 000 so'mlik xarid qildi. Qolgan pulini bir dollar uchun 12 500 so'mdan qaytarib dollarga aylantirdi. U necha dollar oldi?",
+      "v": [
+        "117 dollar",
+        "133 dollar",
+        "120 dollar",
+        "250 dollar"
+      ],
+      "t": 2,
+      "izoh": "Sotuvdan tushgan pul 250 · 12 800 = 3 200 000 so'm. Xariddan keyin 3 200 000 − 1 700 000 = 1 500 000 so'm qoldi. Yangi kursda 1 500 000 : 12 500 = 120 dollar. 117 — eski kursda hisoblash, 133 — xarid summasini aylantirish. Javob: 120 dollar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "valyuta-almashtirib-xarid",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#b877ee3c"
+    },
+    {
+      "q": "Xorijiy onlayn do'konda kitob 28 dollar, yetkazib berish esa 15 dollar turadi. Kurs bir dollar uchun 12 750 so'm bo'lsa, xaridor jami necha so'm to'laydi?",
+      "v": [
+        "357 000 so'm",
+        "191 250 so'm",
+        "12 793 so'm",
+        "548 250 so'm"
+      ],
+      "t": 3,
+      "izoh": "Umumiy xarajat 28 + 15 = 43 dollar. So'mda 43 · 12 750 = 548 250 so'm. 357 000 — faqat kitob narxi, yetkazib berishni qo'shishni unutish, 191 250 — faqat yetkazish haqi, 12 793 — kursga dollar sonini qo'shish xatosi. Javob: 548 250 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "valyuta-kursida-narx",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#967e37c3"
+    },
+    {
+      "q": "Tovarning narxi avval 20% ga oshdi, keyin yangi narxdan 20% ga tushdi. Dastlabki narxga nisbatan tovar qanday o'zgardi?",
+      "v": [
+        "4% ga arzonlashdi",
+        "Narx o'zgarmadi",
+        "4% ga qimmatlashdi",
+        "40% ga qimmatlashdi"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytuvchilarni ketma-ket qo'llaymiz: 1,2 · 0,8 = 0,96. Demak yangi narx dastlabkisining 96% i, ya'ni 4% ga arzon. Foizlar bir xil bo'lsa ham ular har xil asosdan olingani uchun narx tiklanmaydi. Javob: 4% ga arzonlashdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-oshib-keyin-tushishi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#40c9bb99"
+    },
+    {
+      "q": "Nonning narxi 5 000 so'm edi. U avval 10% ga, keyin yana 20% ga qimmatlashdi. Nonning yangi narxi qancha bo'ldi?",
+      "v": [
+        "6 500 so'm",
+        "6 000 so'm",
+        "5 500 so'm",
+        "6 600 so'm"
+      ],
+      "t": 3,
+      "izoh": "Birinchi qimmatlashishdan keyin 5 000 · 1,1 = 5 500 so'm. Ikkinchi oshish shu narxdan hisoblanadi: 5 500 · 1,2 = 6 600 so'm. 6 500 — foizlarni qo'shib 30% qilish, 6 000 va 5 500 — bosqichlardan faqat bittasini qo'llash. Javob: 6 600 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ketma-ket-narx-oshishi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#0e368b6f"
+    },
+    {
+      "q": "Tovarning narxi 25% ga oshdi. Uni dastlabki darajaga qaytarish uchun yangi narxni necha foizga tushirish kerak?",
+      "v": [
+        "25%",
+        "30%",
+        "20%",
+        "15%"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki narx 100 so'm bo'lsin, oshgandan keyin 125 so'm bo'ladi. Qaytish uchun 25 so'm tushirish kerak, lekin bu safar asos 125: 25 : 125 = 0,2, ya'ni 20%. 25% — asosni almashtirmaslik xatosi. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "narxni-tiklash-foizi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#e3c8edb9"
+    },
+    {
+      "q": "Kitobning narxi 84 000 so'mdan 105 000 so'mga oshdi, so'ngra 96 600 so'mga tushdi. Oxirgi narx dastlabkisidan necha foiz yuqori?",
+      "v": [
+        "8%",
+        "15%",
+        "25%",
+        "12,6%"
+      ],
+      "t": 1,
+      "izoh": "Oxirgi va dastlabki narx farqi 96 600 − 84 000 = 12 600 so'm. Uni dastlabki narxga bo'lamiz: 12 600 : 84 000 = 0,15, ya'ni 15%. 8% — oxirgi tushish foizi, 25% — birinchi oshish foizi, ular savolga javob emas. Javob: 15%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-ozgarishlarining-yakuniy-foizi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#6ff1248e"
+    },
+    {
+      "q": "Onlayn do'konda buyurtma 250 000 so'mdan oshsa yetkazib berish bepul, aks holda 25 000 so'm olinadi. Xaridor 78 000 so'mdan uchta mahsulot oldi. U jami necha so'm to'laydi?",
+      "v": [
+        "234 000 so'm",
+        "259 000 so'm",
+        "275 000 so'm",
+        "103 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Mahsulotlar summasi 3 · 78 000 = 234 000 so'm. Bu 250 000 dan kam, demak yetkazish bepul emas. Jami 234 000 + 25 000 = 259 000 so'm. 234 000 — yetkazishni unutish, 103 000 — bitta mahsulot bo'yicha hisoblash. Javob: 259 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bepul-yetkazish-chegarasi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#c6078a02"
+    },
+    {
+      "q": "Savatda 218 000 so'mlik mahsulot bor. Yetkazib berish 250 000 so'mdan boshlab bepul, aks holda 25 000 so'm. Savatga yana 32 000 so'mlik mahsulot qo'shilsa, to'lov qanday o'zgaradi?",
+      "v": [
+        "32 000 so'mga ko'payadi",
+        "25 000 so'mga kamayadi",
+        "57 000 so'mga ko'payadi",
+        "7 000 so'mga ko'payadi"
+      ],
+      "t": 3,
+      "izoh": "Hozirgi to'lov 218 000 + 25 000 = 243 000 so'm. Qo'shimchadan keyin savat 250 000 so'm bo'ladi va yetkazish bepul, ya'ni to'lov 250 000 so'm. Farq 250 000 − 243 000 = 7 000 so'm. 57 000 — yetkazish haqini ham qo'shib yuborish. Javob: 7 000 so'mga ko'payadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bepul-yetkazish-chegarasi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#b92b0d88"
+    },
+    {
+      "q": "Mahsulotning narxi 145 000 so'm, yetkazib berish esa narxning 6% ini tashkil qiladi. Xaridor jami necha so'm to'laydi?",
+      "v": [
+        "8 700 so'm",
+        "136 300 so'm",
+        "153 700 so'm",
+        "151 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Yetkazish haqi 145 000 · 0,06 = 8 700 so'm. Jami to'lov 145 000 + 8 700 = 153 700 so'm. 136 300 — qo'shish o'rniga ayirish, 151 000 — 6% ni 6 000 so'm deb olish xatosi. Javob: 153 700 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yetkazish-haqi-foizda",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#fa703c5b"
+    },
+    {
+      "q": "Chekda quyidagilar bor: kilogrammi 92 000 so'mdan 2 kg go'sht, donasi 5 500 so'mdan 3 ta non va 28 000 so'mlik bir litr yog'. Chekdagi umumiy summa qancha?",
+      "v": [
+        "125 500 so'm",
+        "200 500 so'm",
+        "212 000 so'm",
+        "228 500 so'm"
+      ],
+      "t": 3,
+      "izoh": "Go'sht uchun 2 · 92 000 = 184 000 so'm, non uchun 3 · 5 500 = 16 500 so'm, yog' uchun 28 000 so'm. Jami 184 000 + 16 500 + 28 000 = 228 500 so'm. 125 500 — miqdorlarni hisobga olmaslik natijasi. Javob: 228 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chek-summasini-hisoblash",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#1db190bf"
+    },
+    {
+      "q": "Xarid summasi 186 000 so'm bo'ldi, do'kon esa 5% chegirma qildi. Xaridor kassaga 200 000 so'm berdi. Unga qancha qaytim beriladi?",
+      "v": [
+        "14 000 so'm",
+        "9 300 so'm",
+        "32 600 so'm",
+        "23 300 so'm"
+      ],
+      "t": 3,
+      "izoh": "Chegirmadan keyin to'lov 186 000 · 0,95 = 176 700 so'm. Qaytim 200 000 − 176 700 = 23 300 so'm. 14 000 — chegirmasiz qaytim, 9 300 — chegirmaning o'zi, 32 600 — 10% chegirma deb hisoblash. Javob: 23 300 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chegirma-bilan-qaytim",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#fbda3a19"
+    },
+    {
+      "q": "Chekdagi mahsulotlarning bir qismi soliqsiz va ular 145 000 so'm turadi, qolgan mahsulotning soliqsiz narxi esa 250 000 so'm bo'lib, unga 12% soliq qo'shiladi. Chekdagi yakuniy summa qancha?",
+      "v": [
+        "395 000 so'm",
+        "442 400 so'm",
+        "425 000 so'm",
+        "30 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Soliq faqat ikkinchi qismga tegishli: 250 000 · 1,12 = 280 000 so'm. Yakuniy summa 145 000 + 280 000 = 425 000 so'm. 442 400 — butun chekka soliq qo'llash, 395 000 — soliqni umuman hisoblamaslik. Javob: 425 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-solikli-chek",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#9c6341a8"
+    },
+    {
+      "q": "Do'konda chek summasi 100 000 so'mdan oshsa 8% chegirma beriladi. Xaridorning savatida 94 000 so'mlik mahsulot bor. U yana 9 000 so'mlik mahsulot qo'shsa, to'lovi qanday o'zgaradi?",
+      "v": [
+        "760 so'mga ko'payadi",
+        "9 000 so'mga ko'payadi",
+        "8 240 so'mga kamayadi",
+        "760 so'mga kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Hozir chegirma yo'q, to'lov 94 000 so'm. Qo'shimchadan keyin savat 103 000 so'm bo'ladi va chegirma ishlaydi: 103 000 · 0,92 = 94 760 so'm. Farq 94 760 − 94 000 = 760 so'm, ya'ni to'lov biroz ko'payadi. Javob: 760 so'mga ko'payadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegirma-chegarasi-tahlili",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#e0868a76"
+    },
+    {
+      "q": "Xonadon oyiga elektr uchun 148 000 so'm, gaz uchun 96 000 so'm, suv uchun 62 000 so'm to'laydi. Oilaning oylik daromadi 6 120 000 so'm. Kommunal to'lovlar daromadning necha foizini tashkil qiladi?",
+      "v": [
+        "6%",
+        "20%",
+        "3,06%",
+        "5%"
+      ],
+      "t": 3,
+      "izoh": "Kommunal xarajat 148 000 + 96 000 + 62 000 = 306 000 so'm. Uning daromaddagi ulushi 306 000 : 6 120 000 = 0,05, ya'ni 5%. 3,06% — summani to'g'ridan-to'g'ri foiz deb yozish xatosi. Javob: 5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kommunal-xarajat-ulushi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#c7b66b77"
+    },
+    {
+      "q": "Oila bir oyda elektr uchun 172 000 so'm, gaz uchun 88 000 so'm, suv uchun 54 000 so'm to'ladi, chiqindi uchun esa 36 000 so'm olinadi. Oylik kommunal xarajat jami qancha?",
+      "v": [
+        "314 000 so'm",
+        "350 000 so'm",
+        "296 000 so'm",
+        "262 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Barcha to'lovlarni qo'shamiz: 172 000 + 88 000 = 260 000, unga 54 000 qo'shilsa 314 000, chiqindi bilan esa 314 000 + 36 000 = 350 000 so'm. 314 000 — chiqindini unutish, 296 000 — suvni tashlab ketish. Javob: 350 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kommunal-tolovlar-yigindisi",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#9d4c2c42"
+    },
+    {
+      "q": "Oila kommunal to'lovlarga oyiga o'rtacha 380 000 so'm sarflaydi. Tejamkor uskunalar o'rnatilgach bu xarajat 15% ga kamaydi, lekin o'rnatishga bir marta 850 000 so'm ketdi. Sarflangan pul necha oyda qoplanadi?",
+      "v": [
+        "14 oy",
+        "22 oy",
+        "15 oy",
+        "3 oy"
+      ],
+      "t": 2,
+      "izoh": "Oylik tejash 380 000 · 0,15 = 57 000 so'm. 850 000 : 57 000 = 14,9 chiqadi, ya'ni 14 oyda hali 850 000 yig'ilmaydi. Demak to'liq qoplanish 15 oyda bo'ladi. 22 oy — tejashni 10% deb olish, 3 oy — butun to'lovni tejash deb hisoblash. Javob: 15 oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tejashning-qoplanish-muddati",
+      "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid#9591c848"
+    }
+  ]
+}

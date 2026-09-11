@@ -1,0 +1,396 @@
+{
+  "nom": "26-mavzu. Lab Difraksion Panjara Tolqin Uzunligi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Ushbu laboratoriya ishining maqsadi nima?",
+      "v": [
+        "Yorug‘likning to‘lqin uzunligini difraksion panjara yordamida aniqlash",
+        "Panjara doimiysini aniqlash",
+        "Yorug‘lik tezligini o‘lchash",
+        "Spektr turlarini o‘rganish"
+      ],
+      "t": 0,
+      "izoh": "Ishning maqsadi — difraksion panjara yordamida yorug‘likning to‘lqin uzunligini aniqlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#a95c201a"
+    },
+    {
+      "q": "Laboratoriya ishida ishlatiladigan difraksion panjaraning doimiysi qanday qiymatda olinadi?",
+      "v": [
+        "1/100 mm yoki 1/50 mm",
+        "1 mm yoki 2 mm",
+        "1 sm yoki 2 sm",
+        "0,005 nm yoki 100 nm"
+      ],
+      "t": 0,
+      "izoh": "Panjara doimiysi 1/100 mm yoki 1/50 mm bo‘lgan panjara ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#d8705973"
+    },
+    {
+      "q": "Laboratoriya ishida quyidagi jihozlardan qaysi biri kerak EMAS?",
+      "v": [
+        "Elektr o‘lchagich (ampermetr)",
+        "Millimetrli masshtabli uzun chizg‘ich",
+        "O‘rtasida tirqishi bo‘lgan qora ekran",
+        "Yorug‘lik manbayi"
+      ],
+      "t": 0,
+      "izoh": "Ishda panjara, yorug‘lik manbayi, tirqishli qora ekran va masshtabli chizg‘ichlar ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#d9aeb05e"
+    },
+    {
+      "q": "Qurilmada qora ekran qanday o‘rnatiladi?",
+      "v": [
+        "Uzun chizg‘ich bo‘ylab siljiy oladigan holda",
+        "Difraksion panjaraga mahkam qotirilgan holda",
+        "Yorug‘lik manbayining orqasida",
+        "Chizg‘ichdan tashqarida, alohida shtativda"
+      ],
+      "t": 0,
+      "izoh": "Qora ekran uzun chizg‘ich bo‘ylab siljiy oladigan holatda o‘rnatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#f1bfd141"
+    },
+    {
+      "q": "Difraksion panjara qurilmaning qayeriga o‘rnatiladi?",
+      "v": [
+        "Uzun chizg‘ichning ikkinchi uchidagi tutqichga",
+        "Qora ekranning ortiga",
+        "Yorug‘lik manbayining ichiga",
+        "Qisqa chizg‘ichning ustiga"
+      ],
+      "t": 0,
+      "izoh": "Panjara uzun chizg‘ichning ikkinchi uchidagi tutqichga o‘rnatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#a9981563"
+    },
+    {
+      "q": "Panjara va tirqish orqali yorug‘lik manbayiga qaralganda nima ko‘rinadi?",
+      "v": [
+        "Tirqishning ikkala tomonida difraksion spektrlar",
+        "Bitta yorug‘ nuqta",
+        "Manbaning teskari tasviri",
+        "Qorong‘i halqalar"
+      ],
+      "t": 0,
+      "izoh": "Tirqishning ikkala tomonida birinchi, ikkinchi va h.k. tartibdagi difraksion spektrlar ko‘rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#fa6fb249"
+    },
+    {
+      "q": "Tajribada birinchi tartibdagi qizil nur qanday tanlanadi?",
+      "v": [
+        "Shkaladagi butun son ro‘parasiga keltiriladi",
+        "Eng yorqin spektr tanlanadi",
+        "Markaziy oq polosa tanlanadi",
+        "Eng chetki binafsha nur tanlanadi"
+      ],
+      "t": 0,
+      "izoh": "Tirqishli chizg‘ich yoki panjara surilib, qizil nur shkaladagi butun son ro‘parasiga keltiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#fada63b4"
+    },
+    {
+      "q": "Tajribada y harfi nimani anglatadi?",
+      "v": [
+        "Tirqishdan tanlangan nurgacha bo‘lgan masofani",
+        "Panjaradan chizg‘ichgacha bo‘lgan masofani",
+        "Panjara doimiysini",
+        "To‘lqin uzunligini"
+      ],
+      "t": 0,
+      "izoh": "y — tirqishdan tanlangan nurgacha bo‘lgan masofa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#f24080ed"
+    },
+    {
+      "q": "Tajribada x harfi nimani anglatadi?",
+      "v": [
+        "Difraksion panjaradan tirqishli chizg‘ichgacha bo‘lgan masofani",
+        "Tirqishdan nurgacha bo‘lgan masofani",
+        "Panjara enini",
+        "Spektr kengligini"
+      ],
+      "t": 0,
+      "izoh": "x — panjaradan tirqishli chizg‘ichgacha bo‘lgan masofa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#08c7c929"
+    },
+    {
+      "q": "Tajribada y << x ekanligi qanday yaqinlashishga imkon beradi?",
+      "v": [
+        "sinφ ≈ tgφ",
+        "sinφ ≈ cosφ",
+        "tgφ ≈ 1",
+        "sinφ ≈ 1"
+      ],
+      "t": 0,
+      "izoh": "y << x bo‘lgani uchun sinφ ≈ tgφ deb olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#a95a36c6"
+    },
+    {
+      "q": "Yorug‘likning to‘lqin uzunligi bu tajribada qaysi formula bilan hisoblanadi?",
+      "v": [
+        "λ = d·y/(n·x)",
+        "λ = n·x/(d·y)",
+        "λ = d·x/(n·y)",
+        "λ = x·y/(n·d)"
+      ],
+      "t": 0,
+      "izoh": "λ = (d/n)·sinφ ≈ (d/n)·tgφ = d·y/(n·x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#a036d147"
+    },
+    {
+      "q": "λ = d·y/(n·x) formulasidagi d nimani bildiradi?",
+      "v": [
+        "Panjara doimiysini",
+        "Panjara tirqishlari sonini",
+        "Burilish burchagini",
+        "Spektr tartib raqamini"
+      ],
+      "t": 0,
+      "izoh": "d — panjara doimiysi (davri).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#5bfc328f"
+    },
+    {
+      "q": "tgφ ifoda tajribada qanday topiladi?",
+      "v": [
+        "tgφ = y/x",
+        "tgφ = x/y",
+        "tgφ = y·x",
+        "tgφ = λ/d"
+      ],
+      "t": 0,
+      "izoh": "tgφ = y/x; bu (4–8) formulaga qo‘yilib λ hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#0b128e1d"
+    },
+    {
+      "q": "Tajriba qaysi tartibdagi spektrlar uchun o‘tkaziladi?",
+      "v": [
+        "Birinchi, ikkinchi va uchinchi tartibdagi qizil nur uchun",
+        "Faqat markaziy polosa uchun",
+        "Faqat binafsha nur uchun",
+        "Faqat o‘ninchi tartib uchun"
+      ],
+      "t": 0,
+      "izoh": "Tajriba birinchi, ikkinchi va uchinchi tartibdagi qizil nur uchun, shuningdek chap tomondagi spektrlar uchun bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#19fd5466"
+    },
+    {
+      "q": "O‘lchash natijalari jadvalidagi ∆λ ustunida nima hisoblanadi?",
+      "v": [
+        "Absolyut xatolik: |λ_o‘rt – λ|",
+        "Nisbiy xatolik",
+        "To‘lqin uzunligining o‘zgarishi",
+        "Panjara doimiysi xatosi"
+      ],
+      "t": 0,
+      "izoh": "∆λ = |λ_o‘rt – λ| — absolyut xatolik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#a29aa358"
+    },
+    {
+      "q": "Nisbiy xatolik qanday hisoblanadi?",
+      "v": [
+        "ε_nis = ∆λ_o‘rt / λ_o‘rt",
+        "ε_nis = λ_o‘rt / ∆λ_o‘rt",
+        "ε_nis = ∆λ·λ",
+        "ε_nis = λ/∆λ_o‘rt"
+      ],
+      "t": 0,
+      "izoh": "Nisbiy xatolik — o‘rtacha absolyut xatolikning o‘rtacha qiymatga nisbati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#cf22a8f0"
+    },
+    {
+      "q": "Tajriba oxirida o‘ng va chap tomonlar natijalari nima uchun solishtiriladi?",
+      "v": [
+        "O‘lchashlarning aniqligini tekshirish uchun",
+        "Spektr ranglarini solishtirish uchun",
+        "Panjara narxini aniqlash uchun",
+        "Manba quvvatini baholash uchun"
+      ],
+      "t": 0,
+      "izoh": "Natijalar o‘ng va chap tomonlar uchun solishtirilib, o‘lchash aniqligi baholanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#374b8246"
+    },
+    {
+      "q": "Tajribalarning aniqligi spektrning tartib raqami ortib borishi bilan qanday o‘zgaradi?",
+      "v": [
+        "Aniqlik oshadi, chunki spektrlar bir-biridan uzoqlashadi",
+        "Aniqlik kamayadi",
+        "Aniqlik o‘zgarmaydi",
+        "Avval kamayib, keyin oshadi"
+      ],
+      "t": 0,
+      "izoh": "Tartib raqami ortishi bilan polosalar orasidagi masofa kattalashib, o‘lchash aniqligi oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#38c2ee1f"
+    },
+    {
+      "q": "Tajribani monoxromatik lazer nuri bilan o‘tkazilsa qanday manzara ko‘rinadi?",
+      "v": [
+        "Tirqish ikkala tomonida bir xil rangli yorug‘ polosalar (nuqtalar) qatori",
+        "Rangli spektr chiziqlari",
+        "Faqat bitta oq polosa",
+        "Qorong‘i halqalar"
+      ],
+      "t": 0,
+      "izoh": "Monoxromatik nur bitta to‘lqin uzunligiga ega bo‘lgani uchun spektr emas, yorug‘ maksimumlar qatori ko‘rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#d2a2f1bb"
+    },
+    {
+      "q": "Oq nur bilan tajriba o‘tkazilsa, difraksion manzara markazida nima sababdan oq polosa hosil bo‘ladi?",
+      "v": [
+        "Markaziy maksimumda barcha to‘lqin uzunliklari uchun yo‘l farqi nolga teng bo‘lib, barcha ranglar kuchayadi",
+        "Chunki oq nur eng kuchli nur",
+        "Chunki markazda difraksiya kuzatilmaydi",
+        "Chunki panjara markazda yorug‘likni o‘tkazmaydi"
+      ],
+      "t": 0,
+      "izoh": "Nolinchi tartib maksimumda barcha ranglar bir nuqtada yig‘ilib oq rang beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#72af4f12"
+    },
+    {
+      "q": "Panjara davri (doimiysi) kichraytirilsa, bir xil tartibdagi spektrning burilish burchagi qanday o‘zgaradi?",
+      "v": [
+        "Burilish burchagi ortadi",
+        "Burilish burchagi kamayadi",
+        "O‘zgarmaydi",
+        "Nolga teng bo‘ladi"
+      ],
+      "t": 0,
+      "izoh": "sinφ = nλ/d dan d kichraysa sinφ oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#5ff017a4"
+    },
+    {
+      "q": "Laboratoriya ishida to‘lqin uzunligi qaysi birlikda ifodalanadi?",
+      "v": [
+        "nanometrda (nm)",
+        "millimetrda (mm)",
+        "santimetrda (sm)",
+        "metrda (m)"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda λ nm birlikda yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#a8421ae4"
+    },
+    {
+      "q": "Qora ekranga mahkamlangan qisqa chizg‘ich qanday masshtabga ega?",
+      "v": [
+        "Millimetrli masshtabga",
+        "Santimetrli masshtabga",
+        "Gradusli masshtabga",
+        "Masshtabsiz"
+      ],
+      "t": 0,
+      "izoh": "Qora ekranda millimetrli masshtabli qisqa chizg‘ich mahkamlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#5e57ed8d"
+    },
+    {
+      "q": "Tajribada λ ning o‘rtacha qiymati qanday topiladi?",
+      "v": [
+        "Turli tartib va tomonlarda olingan λ qiymatlarining arifmetik o‘rtachasi sifatida",
+        "Eng katta va eng kichik qiymatning yig‘indisi sifatida",
+        "Faqat birinchi tartibdagi qiymat bo‘yicha",
+        "Faqat qizil nur qiymati bo‘yicha"
+      ],
+      "t": 0,
+      "izoh": "Bir necha o‘lchashlardan λ_o‘rt hisoblanib, absolyut va nisbiy xatoliklar topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#36b990a7"
+    },
+    {
+      "q": "Agar d = 1/100 mm, n = 1, x = 400 mm, y = 2 mm bo‘lsa, λ taxminan qanchaga teng?",
+      "v": [
+        "500 nm",
+        "250 nm",
+        "1000 nm",
+        "50 nm"
+      ],
+      "t": 0,
+      "izoh": "λ = d·y/(n·x) = (10⁻⁵ m·2·10⁻³ m)/(1·0,4 m) = 5·10⁻⁷ m = 500 nm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#23237fb9"
+    },
+    {
+      "q": "Laboratoriya ishida xatolikni kamaytirish uchun qanday choralardan biri to‘g‘ri?",
+      "v": [
+        "O‘lchashlarni bir necha tartib va ikkala tomonda takrorlash",
+        "Faqat bitta o‘lchash bilan cheklanish",
+        "Panjarani tez-tez almashtirib turish",
+        "Xonani to‘liq yoritish"
+      ],
+      "t": 0,
+      "izoh": "Bir necha o‘lchash va o‘rtacha qiymat olish tasodifiy xatolikni kamaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi#64097cdd"
+    }
+  ]
+}

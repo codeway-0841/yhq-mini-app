@@ -1,0 +1,936 @@
+{
+  "nom": "Biologiya-11, 4-§. Ekosistemalarning tarkibiy qismlari",
+  "bolim": "II BOB. Hayotning ekosistema darajasidagi umumbiologik qonuniyatlari",
+  "savollar": [
+    {
+      "q": "Ekosistema nechta tarkibiy qismdan tashkil topgan?",
+      "v": [
+        "Ikkita",
+        "Uchta",
+        "Beshta",
+        "Bitta"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekosistema ikkita tarkibiy qism — muhit sharoitlari (biotop) va tirik organizmlar (biotsenoz)dan tashkil topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m4#3704222a"
+    },
+    {
+      "q": "Ekosistemaning ikki asosiy tarkibiy qismi qaysilar?",
+      "v": [
+        "Biotop va biotsenoz",
+        "Ekotop va klimatop",
+        "Fitosenoz va zoosenoz",
+        "Produtsent va konsument"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekosistema muhit sharoitlari (biotop) va tirik organizmlar (biotsenoz)dan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m4#0ac34146"
+    },
+    {
+      "q": "Biogeotsenoz ekosistemadan qaysi jihati bilan farq qiladi?",
+      "v": [
+        "Aniq hudud bilan chegaralangan",
+        "Faqat suvda joylashadi",
+        "Tirik organizmlarga ega emas",
+        "Energiya oqimiga muhtoj emas"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra har qanday oʻlchamdagi ekosistemadan farqli ravishda biogeotsenozlar aniq hudud bilan chegaralangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#098e018c"
+    },
+    {
+      "q": "«Biotsenoz» va «jamoa», «biogeotsenoz» va «ekosistema» tushunchalari hayotning qaysi tuzilish darajasidagi biologik sistemalar hisoblanadi?",
+      "v": [
+        "Turdan yuqori tuzilish darajasi",
+        "Hujayra darajasi",
+        "Molekulyar daraja",
+        "Toʻqima darajasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bu tushunchalar bitta tabiiy hodisa — hayotning turdan yuqori tuzilish darajasidagi biologik sistemalar hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m4#79c7e449"
+    },
+    {
+      "q": "«Biotop» atamasi yunoncha qaysi soʻzlardan tashkil topgan?",
+      "v": [
+        "«bios» (hayot) va «topos» (joy)",
+        "«bios» (hayot) va «genos» (kelib chiqish)",
+        "«biblion» (kitob) va «topos» (joy)",
+        "«bios» (hayot) va «logos» (fan)"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra biotop yunoncha «bios» — hayot va «topos» — joy yoki yashash joyi soʻzlaridan olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#e26e0b18"
+    },
+    {
+      "q": "Yunoncha «bios» soʻzi qanday maʼnoni bildiradi?",
+      "v": [
+        "Hayot",
+        "Joy",
+        "Tuproq",
+        "Suv"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra «bios» — hayot degan maʼnoni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m4#edd708f5"
+    },
+    {
+      "q": "Yunoncha «topos» soʻzi qanday maʼnoni bildiradi?",
+      "v": [
+        "Joy yoki yashash joyi",
+        "Hayot",
+        "Havo",
+        "Yorugʻlik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra «topos» — joy yoki yashash joyi degan maʼnoni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m4#79bd3966"
+    },
+    {
+      "q": "Biotop nima?",
+      "v": [
+        "Jamoaning egallagan joyi va uning hayotini belgilovchi muhit omillari kompleksi",
+        "Faqat tirik organizmlar yigʻindisi",
+        "Faqat quyosh energiyasi manbai",
+        "Organik moddalarni parchalovchi organizmlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra biotop nafaqat jamoaning egallagan joyi, balki jamoa hayotini belgilovchi muhit omillarining oʻzaro bogʻliq kompleksidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#b4c00cd5"
+    },
+    {
+      "q": "Tirik organizmlar muhitning abiotik shart-sharoitlari (ekotop)ga taʼsir oʻtkazib, uni nimaga aylantiradi?",
+      "v": [
+        "Biotopga",
+        "Klimatopga",
+        "Fitosenozga",
+        "Zoosenozga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tirik organizmlar oʻz faoliyati davomida ekotopga taʼsir oʻtkazib, uni biotopga aylantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#51a32bb4"
+    },
+    {
+      "q": "Ekosistemaning abiotik muhiti qanday ataladi?",
+      "v": [
+        "Ekotop",
+        "Biotsenoz",
+        "Fitosenoz",
+        "Konsument"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekosistemaning abiotik muhiti ekotop deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#ac3670ad"
+    },
+    {
+      "q": "Ekotopni tashkil etuvchi, iqlim omillarini (yorugʻlik, harorat, namlik, havo) oʻz ichiga oluvchi notirik tarkibiy qism qanday ataladi?",
+      "v": [
+        "Klimatop",
+        "Edafotop",
+        "Biotop",
+        "Zoosenoz"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekotopni klimatop (yorugʻlik, harorat, namlik, havo) tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#07e8b56d"
+    },
+    {
+      "q": "Klimatop nimalarni oʻz ichiga oladi?",
+      "v": [
+        "Yorugʻlik, harorat, namlik, havo",
+        "Tuproq va mineral tuzlar",
+        "Tirik organizmlar yigʻindisi",
+        "Organik qoldiqlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra klimatopga yorugʻlik, harorat, namlik, havo va boshqalar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#0d744022"
+    },
+    {
+      "q": "Ekotopning tirik organizmlar faoliyati natijasi hisoblangan, tuproqdan iborat tarkibiy qismi qanday ataladi?",
+      "v": [
+        "Edafotop",
+        "Klimatop",
+        "Fitosenoz",
+        "Ekotop"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tirik organizmlar faoliyati natijasi hisoblangan tarkibiy qism — edafotop (tuproq).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#520a4ed4"
+    },
+    {
+      "q": "Edafotop nimani anglatadi?",
+      "v": [
+        "Tuproq",
+        "Havo",
+        "Yorugʻlik",
+        "Namlik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra edafotop — tuproq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m4#bc412db2"
+    },
+    {
+      "q": "Ekotop qanday hudud hisoblanadi?",
+      "v": [
+        "Tirik organizmlar tomonidan hali oʻzgarmagan, oʻz tuprogʻi va iqlimiga ega hudud",
+        "Faqat hayvonlar yashaydigan hudud",
+        "Antropogen taʼsir ostidagi hudud",
+        "Tuprogʻi butunlay yoʻqolgan hudud"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekotop tirik organizmlar tomonidan hali oʻzgarmagan, oʻz tuprogʻi va iqlimiga ega maʼlum hudud hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#cd6ec75f"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri ekotopga misol boʻla oladi?",
+      "v": [
+        "Vulqon otilishi natijasida yangi paydo boʻlgan hudud",
+        "Qadimiy ignabargli oʻrmon",
+        "Oʻzlashtirilgan ekin dalasi",
+        "Chirigan toʻnka"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekotopga vulqon otilishidan yangi paydo boʻlgan hududlar yoki yangi korall orollari misol boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m4#284302a1"
+    },
+    {
+      "q": "Tirik organizmlar tomonidan oʻzgartirilgan ekotop yoki maʼlum turdagi oʻsimlik va hayvon yashaydigan hudud qanday ataladi?",
+      "v": [
+        "Biotop",
+        "Ekotop",
+        "Klimatop",
+        "Biosfera"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tirik organizmlar tomonidan oʻzgartirilgan ekotop yoki maʼlum turlar yashaydigan hudud biotop deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#cc3ee398"
+    },
+    {
+      "q": "Biotsenoz nima?",
+      "v": [
+        "Biotopda yashovchi tirik organizmlar yigʻindisi",
+        "Ekosistemaning notirik qismi",
+        "Tuproq va iqlim omillari",
+        "Faqat oʻsimliklar jamoasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra biotsenoz — biotopda yashovchi tirik organizmlar yigʻindisidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#254ef349"
+    },
+    {
+      "q": "Biogeotsenozning yashil oʻsimliklari jamoasi qanday ataladi?",
+      "v": [
+        "Fitosenoz",
+        "Zoosenoz",
+        "Mikosenoz",
+        "Mikrobiotsenoz"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra biogeotsenozning yashil oʻsimliklari fitosenoz deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#046ec572"
+    },
+    {
+      "q": "Biogeotsenozdagi hayvonlar jamoasi qanday ataladi?",
+      "v": [
+        "Zoosenoz",
+        "Fitosenoz",
+        "Mikosenoz",
+        "Mikrobiotsenoz"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra hayvonlar jamoasi zoosenoz deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#c9754630"
+    },
+    {
+      "q": "Zamburugʻlar jamoasi qanday ataladi?",
+      "v": [
+        "Mikosenoz",
+        "Zoosenoz",
+        "Fitosenoz",
+        "Mikrobiotsenoz"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra zamburugʻlar jamoasi mikosenoz deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#8d1cd3de"
+    },
+    {
+      "q": "Mikroorganizmlar jamoasi qanday ataladi?",
+      "v": [
+        "Mikrobiotsenoz",
+        "Mikosenoz",
+        "Fitosenoz",
+        "Zoosenoz"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mikroorganizmlar jamoasi mikrobiotsenoz deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#e40967cb"
+    },
+    {
+      "q": "Fitosenoz organik birikmalarni qanday jarayonda hosil qiladi?",
+      "v": [
+        "Quyosh energiyasi hisobiga fotosintez jarayonida",
+        "Nafas olish jarayonida",
+        "Bijgʻish jarayonida",
+        "Chirish jarayonida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yashil oʻsimliklar (fitosenoz) quyosh energiyasi hisobiga fotosintez jarayonida organik birikmalar hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#8f6252f5"
+    },
+    {
+      "q": "Zamburugʻlar (mikosenoz) va mikroorganizmlar (mikrobiotsenoz) qanday vazifani bajaradi?",
+      "v": [
+        "Organik qoldiqlarni mineral moddalargacha parchalaydi",
+        "Fotosintez orqali organik modda hosil qiladi",
+        "Quyosh energiyasini toʻplaydi",
+        "Kislorod ishlab chiqaradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra zamburugʻlar va mikroorganizmlar organik qoldiqlarni mineral moddalargacha parchalab, tashqi muhitga qaytaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#86da1d22"
+    },
+    {
+      "q": "Biotsenoz tarkibidagi barcha tirik organizmlar necha funksional guruhga boʻlinadi?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "4 ta",
+        "5 ta"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra biotsenoz tarkibidagi tirik organizmlar 3 ta funksional guruhga boʻlinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m4#18cb172f"
+    },
+    {
+      "q": "Biotsenozning uchta funksional guruhi qaysilar?",
+      "v": [
+        "Produtsentlar, konsumentlar, redutsentlar",
+        "Fitosenoz, zoosenoz, mikosenoz",
+        "Biotop, ekotop, klimatop",
+        "Avtotrof, aerob, anaerob"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra funksional guruhlar — produtsentlar, konsumentlar va redutsentlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m4#3f91c943"
+    },
+    {
+      "q": "Produtsentlar oziqlanish turiga koʻra qanday organizmlar hisoblanadi?",
+      "v": [
+        "Avtotroflar",
+        "Geterotroflar",
+        "Saprotroflar",
+        "Parazitlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra produtsentlar avtotrof organizmlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#74ef1419"
+    },
+    {
+      "q": "Konsumentlar va redutsentlar oziqlanish turiga koʻra qanday organizmlar hisoblanadi?",
+      "v": [
+        "Geterotroflar",
+        "Avtotroflar",
+        "Xemosintezlovchilar",
+        "Fotosintezlovchilar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra konsumentlar ham, redutsentlar ham geterotrof organizmlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#d1a57e6b"
+    },
+    {
+      "q": "«Produtsent» soʻzi lotincha «producens» qanday maʼnoni bildiradi?",
+      "v": [
+        "Yaratuvchi",
+        "Iste'mol qiluvchi",
+        "Parchalovchi",
+        "Qaytaruvchi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra produtsent lotincha «producens» — yaratuvchi degan maʼnoni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#34d3910a"
+    },
+    {
+      "q": "Produtsentlar qanday vazifani bajaradi?",
+      "v": [
+        "Anorganik moddalardan organik birikmalarni sintezlaydi",
+        "Tayyor organik moddalar bilan oziqlanadi",
+        "Organik moddalarni anorganikkacha parchalaydi",
+        "Faqat energiyani uzatadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra produtsentlar anorganik moddalardan organik birikmalarni sintezlaydigan avtotrof organizmlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#a68df95a"
+    },
+    {
+      "q": "Quyidagilardan qaysilari produtsentlar guruhiga kiradi?",
+      "v": [
+        "Yashil oʻsimliklar, fotosintezlovchi va xemosintezlovchi bakteriyalar",
+        "Barcha hayvonlar va parazit oʻsimliklar",
+        "Saprotrof bakteriyalar va zamburugʻlar",
+        "Faqat parazit organizmlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra produtsentlarga yashil oʻsimliklar, fotosintezlovchi va xemosintezlovchi bakteriyalar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#77a99351"
+    },
+    {
+      "q": "«Konsument» soʻzi lotincha «consume» qanday maʼnoni bildiradi?",
+      "v": [
+        "Iste'mol qilaman",
+        "Yarataman",
+        "Parchalayman",
+        "Qaytaraman"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra konsument lotincha «consume» — iste'mol qilaman degan maʼnoni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#21c5a7b1"
+    },
+    {
+      "q": "Konsumentlar nima bilan oziqlanadi?",
+      "v": [
+        "Tayyor organik birikmalar bilan",
+        "Anorganik moddalar bilan",
+        "Faqat quyosh energiyasi bilan",
+        "Mineral tuzlar bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra konsumentlar tayyor organik birikmalar bilan oziqlanadigan geterotrof organizmlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#1fa9a193"
+    },
+    {
+      "q": "Oziq (trofik) zanjiri nima?",
+      "v": [
+        "Hosil qiluvchilardan iste'mol qiluvchilarga bosqichma-bosqich modda va energiya uzatuvchi organizmlar ketma-ketligi",
+        "Faqat oʻsimliklardan iborat guruh",
+        "Anorganik moddalar aylanishi",
+        "Bir xil turdagi organizmlar toʻplami"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oziq zanjiri organik birikmalarni hosil qiluvchilardan iste'mol qiluvchilarga bosqichma-bosqich modda va energiyani uzatuvchi organizmlar ketma-ketligidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m4#784958a4"
+    },
+    {
+      "q": "Quyidagilardan qaysilari konsumentlar guruhiga kiradi?",
+      "v": [
+        "Barcha hayvonlar va parazit oʻsimliklar",
+        "Yashil oʻsimliklar va bakteriyalar",
+        "Saprotrof bakteriyalar",
+        "Zamburugʻlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra konsumentlarga barcha hayvonlar va parazit oʻsimliklar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#2a0db50d"
+    },
+    {
+      "q": "«Redutsent» soʻzi lotincha «reduco» qanday maʼnoni bildiradi?",
+      "v": [
+        "Qaytaraman, tiklayman",
+        "Yarataman",
+        "Iste'mol qilaman",
+        "Toʻplayman"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra redutsent lotincha «reduco» — qaytaraman, tiklayman degan maʼnoni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#52904138"
+    },
+    {
+      "q": "Redutsentlarning yana bir nomi qanday?",
+      "v": [
+        "Destruktorlar",
+        "Produtsentlar",
+        "Konsumentlar",
+        "Avtotroflar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra redutsentlar destruktorlar deb ham ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#ca714e35"
+    },
+    {
+      "q": "«Destruktor» atamasi asosidagi lotincha «destruo» qanday maʼnoni bildiradi?",
+      "v": [
+        "Parchalayman",
+        "Qaytaraman",
+        "Yarataman",
+        "Uzataman"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra destruktor lotincha «destruo» — parchalayman degan maʼnoni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m4#75fd7341"
+    },
+    {
+      "q": "Redutsentlar qanday vazifani bajaradi?",
+      "v": [
+        "Organik birikmalarni anorganik moddalargacha parchalaydi",
+        "Anorganik moddalardan organik modda sintezlaydi",
+        "Quyosh energiyasini toʻplaydi",
+        "Faqat tayyor oziq bilan oziqlanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra redutsentlar organik birikmalarni anorganik moddalargacha parchalovchi geterotrof organizmlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#c6360013"
+    },
+    {
+      "q": "Quyidagilardan qaysilari redutsentlar guruhiga kiradi?",
+      "v": [
+        "Saprotrof (saprofit) bakteriyalar va zamburugʻlar",
+        "Yashil oʻsimliklar",
+        "Barcha hayvonlar",
+        "Xemosintezlovchi bakteriyalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra redutsentlarga saprotrof (saprofit) bakteriyalar va zamburugʻlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#db861d19"
+    },
+    {
+      "q": "Saprotroflar nima bilan oziqlanadi?",
+      "v": [
+        "Qoldiq organik birikmalar bilan",
+        "Tirik hayvonlar bilan",
+        "Anorganik gazlar bilan",
+        "Quyosh energiyasi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra saprotroflar qoldiq organik birikmalar bilan oziqlanib, ularni mineral moddalarga parchalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#0cff49ef"
+    },
+    {
+      "q": "Saprotroflar hosil qilgan mineral moddalar tuproqda toʻplanib, kim tomonidan oʻzlashtiriladi?",
+      "v": [
+        "Produtsentlar",
+        "Konsumentlar",
+        "Yirtqichlar",
+        "Parazitlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra hosil boʻlgan mineral moddalar tuproqda toʻplanib, produtsentlar tomonidan oʻzlashtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#49428147"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri biogeotsenozlarga xos xususiyat emas?",
+      "v": [
+        "Fotosintezni toʻxtatishi",
+        "Oʻz-oʻzini yaratishi (tiklashi)",
+        "Barqarorligi",
+        "Ekologik suksessiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra biogeotsenozlarga oʻz-oʻzini yaratishi, barqarorligi, oʻz-oʻzini boshqarishi, rivojlanishi va ekologik suksessiya xos; «fotosintezni toʻxtatishi» bunday xususiyat emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m4#8ad2a384"
+    },
+    {
+      "q": "Biogeotsenozlarning barqarorligi nima bilan taʼminlanadi?",
+      "v": [
+        "Turlar xilma-xilligi bilan",
+        "Faqat bitta tur bilan",
+        "Anorganik moddalar bilan",
+        "Antropogen taʼsir bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra biogeotsenozlarning barqarorligi turlar xilma-xilligi bilan taʼminlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#5a8f429a"
+    },
+    {
+      "q": "Biogeotsenozlarning barqarorligi qanday xususiyat?",
+      "v": [
+        "Oʻz tuzilishi va koʻrsatkichlarini nisbatan doimiy holatda saqlash",
+        "Doimiy ravishda oʻzgarib turish",
+        "Butunlay yangi turga aylanish",
+        "Tirik qismini yoʻqotish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra barqarorlik — oʻz tuzilishini, aloqalar xarakteri va boshqa koʻrsatkichlarini nisbatan doimiy holatda saqlash xususiyatidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#651d297b"
+    },
+    {
+      "q": "Biogeotsenozlarning oʻz-oʻzini boshqarishi qanday xususiyat?",
+      "v": [
+        "Muvozanatni tabiiy yoki antropogen taʼsirlardan soʻng tiklay olish",
+        "Butunlay yangi ekosistemaga aylanish",
+        "Faqat quyosh energiyasini toʻplash",
+        "Turlar sonini cheksiz koʻpaytirish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻz-oʻzini boshqarish — tarkibiy qismlar oʻrtasidagi muvozanatni tabiiy yoki antropogen taʼsirlardan soʻng tiklay olish xususiyatidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#416e3984"
+    },
+    {
+      "q": "Oʻz-oʻzini boshqarishga oid misolda yirtqich hayvonlar qaysi organizmlar sonini nazorat qiladi?",
+      "v": [
+        "Oʻtxoʻr hayvonlar sonini",
+        "Oʻsimliklar sonini",
+        "Bakteriyalar sonini",
+        "Zamburugʻlar sonini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yirtqich hayvonlar oʻtxoʻr hayvonlarning, oʻtxoʻr hayvonlar esa oʻsimliklar sonini nazorat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#dee0c341"
+    },
+    {
+      "q": "Oʻz-oʻzini boshqarish misolida oʻtxoʻr hayvonlar qaysi organizmlar sonini nazorat qiladi?",
+      "v": [
+        "Oʻsimliklar sonini",
+        "Yirtqichlar sonini",
+        "Redutsentlar sonini",
+        "Parazitlar sonini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻtxoʻr hayvonlar oʻsimliklar sonini nazorat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#11099bbf"
+    },
+    {
+      "q": "Biogeotsenozlardagi oʻzgarishlar qanday turlarga boʻlinadi?",
+      "v": [
+        "Davriy (siklik) va tadrijiy (izchil)",
+        "Katta va kichik",
+        "Abiotik va biotik",
+        "Tez va sekin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra biogeotsenozlardagi oʻzgarishlar davriy (siklik) va tadrijiy (izchil) boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#cb8b4fed"
+    },
+    {
+      "q": "Davriy (siklik) oʻzgarishlar nima bilan belgilanadi?",
+      "v": [
+        "Muhit omillarining sutkalik, mavsumiy oʻzgarishlari va bioritmlar bilan",
+        "Faqat antropogen taʼsir bilan",
+        "Vulqon otilishi bilan",
+        "Turlar butunlay yoʻqolishi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra davriy oʻzgarishlar muhit omillarining sutkalik, mavsumiy oʻzgarishlari va bioritmlar bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#4663ef24"
+    },
+    {
+      "q": "Davriy oʻzgarishlar natijasida biotsenozlar bilan nima sodir boʻladi?",
+      "v": [
+        "Dastlabki holatiga qaytadi",
+        "Butunlay yoʻqoladi",
+        "Boshqa biotsenozga aylanadi",
+        "Ikki baravar kengayadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra davriy oʻzgarishlar natijasida biotsenozlar dastlabki holatiga qaytadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#53f9fa87"
+    },
+    {
+      "q": "Tadrijiy (izchil) oʻzgarishlar nimaga olib keladi?",
+      "v": [
+        "Bir biotsenozning asta-sekin boshqasi bilan almashinuviga",
+        "Biotsenozning dastlabki holatiga qaytishiga",
+        "Faqat sutkalik oʻzgarishlarga",
+        "Turlar sonining ozgarmasligiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tadrijiy oʻzgarishlar bir biotsenozning asta-sekin boshqasi bilan almashinuviga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#ad9dea69"
+    },
+    {
+      "q": "Bir biotsenoz oʻrnini boshqa biotsenoz egallashi qanday ataladi?",
+      "v": [
+        "Ekologik suksessiya",
+        "Davriy oʻzgarish",
+        "Fotosintez",
+        "Minerallashish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bir biotsenoz oʻrnini boshqa biotsenoz egallashi ekologik suksessiya deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#c0628605"
+    },
+    {
+      "q": "«Suksessiya» soʻzi lotincha «successio» qanday maʼnoni bildiradi?",
+      "v": [
+        "Izchillik, ketma-ketlik",
+        "Parchalanish",
+        "Yaratilish",
+        "Muvozanat"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra suksessiya lotincha «successio» — izchillik, ketma-ketlik degan maʼnoni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m4#8520dcb3"
+    },
+    {
+      "q": "Biogeotsenoz oʻz tarkibiga koʻra nima hisoblanadi?",
+      "v": [
+        "Biotsenoz va biotopning majmuasi",
+        "Faqat tirik organizmlar yigʻindisi",
+        "Faqat abiotik omillar",
+        "Bitta turdagi populatsiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra biogeotsenoz biotsenoz va biotopning majmuasi boʻlib, unda moddalar va energiyaning davriy aylanishi amalga oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#5fe3f1b0"
+    },
+    {
+      "q": "Ekosistemalarning funksional tarkibiy qismlari qaysilar?",
+      "v": [
+        "Produtsentlar, konsumentlar va redutsentlar",
+        "Biotop, ekotop va klimatop",
+        "Fitosenoz, zoosenoz va edafotop",
+        "Suv, havo va tuproq"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra produtsentlar, konsumentlar va redutsentlar ekosistemalarning funksional tarkibiy qismlari hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#09ce892b"
+    },
+    {
+      "q": "Nafas olish jarayonida ajraladigan karbonat angidrid gazi produtsentlar tomonidan qaysi jarayonda foydalaniladi?",
+      "v": [
+        "Fotosintez jarayonida",
+        "Nafas olish jarayonida",
+        "Chirish jarayonida",
+        "Bijgʻish jarayonida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra nafas olishda ajraladigan karbonat angidrid gazi produtsentlar tomonidan fotosintez jarayonida foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#9e38d420"
+    },
+    {
+      "q": "Fotosintez natijasida hosil boʻladigan, aerob organizmlarning nafas olishi uchun zarur gaz qaysi?",
+      "v": [
+        "Kislorod",
+        "Karbonat angidrid",
+        "Azot",
+        "Vodorod"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fotosintez jarayonida aerob organizmlarning nafas olishi uchun zarur kislorod hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#bb9ee051"
+    },
+    {
+      "q": "Oʻsimlik va hayvon organizmlarida hosil boʻladigan qoldiqlar kim tomonidan minerallashtiriladi?",
+      "v": [
+        "Redutsentlar",
+        "Produtsentlar",
+        "Yirtqichlar",
+        "Oʻtxoʻrlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tashqi muhitga ajratiladigan qoldiqlar redutsentlar tomonidan minerallashtirilib, qaytadan moddalar aylanishiga qaytariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#ce9a850b"
+    },
+    {
+      "q": "Biogeotsenozlarning oʻz-oʻzini yaratish (tiklash) xususiyati nimani taʼminlaydi?",
+      "v": [
+        "Tirik organizmlar va anorganik tabiat oʻrtasidagi moddalar va energiyaning biologik aylanishini",
+        "Faqat turlar sonining koʻpayishini",
+        "Antropogen taʼsirni",
+        "Vulqon otilishini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻz-oʻzini yaratish xususiyati energiya oqimining yoʻnaltirilishi orqali tirik organizmlar va anorganik tabiat oʻrtasidagi moddalar va energiyaning biologik aylanishini taʼminlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m4#58389206"
+    },
+    {
+      "q": "Har bir biogeotsenozdagi moddalar va energiya aylanishlari birlashib qaysi darajadagi global aylanishni taʼminlaydi?",
+      "v": [
+        "Biosfera darajasidagi",
+        "Hujayra darajasidagi",
+        "Toʻqima darajasidagi",
+        "Organ darajasidagi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra har bir biogeotsenozdagi moddalar va energiya aylanishlari birlashib biosfera darajasidagi global aylanishni taʼminlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m4#1b32e52a"
+    },
+    {
+      "q": "Produtsentlar quyosh energiyasi, suv va anorganik moddalarni qanday shaklda toʻplaydi?",
+      "v": [
+        "Organik birikmalar shaklida",
+        "Mineral tuzlar shaklida",
+        "Gaz shaklida",
+        "Karbonat angidrid shaklida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra produtsentlar oʻzlashtirgan quyosh energiyasi, suv va anorganik moddalar organik birikmalar shaklida toʻplanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m4#f20797e0"
+    }
+  ]
+}

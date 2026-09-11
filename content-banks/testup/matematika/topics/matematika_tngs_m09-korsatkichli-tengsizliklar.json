@@ -1,0 +1,1609 @@
+{
+  "nom": "Ko'rsatkichli tengsizliklar",
+  "bolim": "Tengsizliklar",
+  "blok": "tngs",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Nodira 3^(2x−1) > 3^(x+4) tengsizlikni yechmoqda. Asos 3 birdan katta bo'lgani uchun ko'rsatkichlar orasidagi ishora saqlanadi. Yechimni toping.",
+      "v": [
+        "x > 5",
+        "x < 5",
+        "x > 3",
+        "x < 3"
+      ],
+      "t": 0,
+      "izoh": "Asos 3 birdan katta, shuning uchun ko'rsatkichli funksiya o'suvchi va ishora o'zgarmaydi: 2x − 1 > x + 4. Noma'lumlarni chapga, sonlarni o'ngga yig'amiz: 2x − x > 4 + 1, ya'ni x > 5. Javob: x > 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-katta-1-chiziqli",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#6090ccf3"
+    },
+    {
+      "q": "5^(3x+2) ≤ 5^(x+10) tengsizlikning yechimlar to'plamini aniqlang; asos 5 birdan katta ekanini hisobga oling.",
+      "v": [
+        "x ≥ 4",
+        "x ≤ 4",
+        "x ≤ 6",
+        "x ≥ 6"
+      ],
+      "t": 1,
+      "izoh": "Asos 5 birdan katta bo'lgani uchun ishora saqlanib qoladi: 3x + 2 ≤ x + 10. Bundan 3x − x ≤ 10 − 2, ya'ni 2x ≤ 8 va x ≤ 4. Ozod hadni ko'chirmasdan 3x ≤ x + 12 deb yozgan o'quvchi x ≤ 6 degan xato javob oladi. Javob: x ≤ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-katta-1-chiziqli",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#05ed1304"
+    },
+    {
+      "q": "Aziz 2^(4x−3) ≥ 2^(x+9) tengsizlikni yechib, javobni x ≥ 4 deb yozdi. Uning yechimi to'g'rimi yoki qanday tuzatish kerak?",
+      "v": [
+        "Noto'g'ri, yechim x ≤ 4",
+        "Noto'g'ri, yechim x ≥ 12",
+        "To'g'ri, yechim x ≥ 4",
+        "Noto'g'ri, yechim x ≤ 12"
+      ],
+      "t": 2,
+      "izoh": "Asos 2 birdan katta, ishora saqlanadi: 4x − 3 ≥ x + 9. Bundan 3x ≥ 12 va x ≥ 4. Demak Azizning javobi to'g'ri. Oxirgi qadamda 3 ga bo'lishni unutgan o'quvchi x ≥ 12 deb xato qiladi. Javob: to'g'ri, yechim x ≥ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-katta-1-chiziqli",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#1e7115b1"
+    },
+    {
+      "q": "6^(5−2x) < 6^(x+8) tengsizlikda ikkala ko'rsatkich ham chiziqli ifoda. Asos birdan katta ekanini hisobga olib yechimni toping.",
+      "v": [
+        "x < −1",
+        "x > 1",
+        "x < 1",
+        "x > −1"
+      ],
+      "t": 3,
+      "izoh": "Asos 6 birdan katta, shuning uchun ishora o'zgarmaydi: 5 − 2x < x + 8. Noma'lumlarni o'ngga o'tkazamiz: 5 − 8 < x + 2x, ya'ni −3 < 3x. Ikkala tomonni 3 ga bo'lsak x > −1 hosil bo'ladi. Javob: x > −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-katta-1-chiziqli",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#e0c37b4b"
+    },
+    {
+      "q": "(1/2)^(3x+1) < (1/2)^(x+7) tengsizlikda asos birdan kichik. Ko'rsatkichlar orasidagi ishora qanday bo'lishini aniqlab, yechimni yozing.",
+      "v": [
+        "x > 3",
+        "x < 3",
+        "x > 4",
+        "x < 4"
+      ],
+      "t": 0,
+      "izoh": "Asos 1/2 nol bilan bir orasida bo'lgani uchun funksiya kamayuvchi va ishora teskarisiga o'zgaradi: 3x + 1 > x + 7. Bundan 2x > 6 va x > 3. Ishorani o'zgartirmagan o'quvchi x < 3 deb xato javob beradi. Javob: x > 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-kichik-1-ishora-ozgarishi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#bcdaa41b"
+    },
+    {
+      "q": "(0,3)^(2x−5) ≥ (0,3)^(x+1) tengsizlikni yeching. Asos 0,3 birdan kichik bo'lgani uchun ko'rsatkichlar taqqoslanganda ishora teskarisiga aylanadi.",
+      "v": [
+        "x ≥ 6",
+        "x ≤ 6",
+        "x ≤ 2",
+        "x ≥ 2"
+      ],
+      "t": 1,
+      "izoh": "Asos birdan kichik, shuning uchun ishorani almashtiramiz: 2x − 5 ≤ x + 1. Noma'lumni bir tomonga yig'amiz: 2x − x ≤ 1 + 5, ya'ni x ≤ 6. Ishorani saqlab qolgan o'quvchi x ≥ 6 deb xato qiladi. Javob: x ≤ 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-kichik-1-ishora-ozgarishi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#83c098cd"
+    },
+    {
+      "q": "Malika (2/3)^(4x) ≤ (2/3)^(x+9) tengsizlikni yechayotib asos birdan kichik ekanini payqadi. To'g'ri yechimni ko'rsating.",
+      "v": [
+        "x ≤ 3",
+        "x ≥ 9",
+        "x ≥ 3",
+        "x ≤ 9"
+      ],
+      "t": 2,
+      "izoh": "Asos 2/3 birdan kichik bo'lgani uchun ishora teskarisiga o'zgaradi: 4x ≥ x + 9. Bundan 3x ≥ 9 va x ≥ 3. Chap tomonda 4x − x ni x deb hisoblagan o'quvchi x ≥ 9 degan xato javobga keladi. Javob: x ≥ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-kichik-1-ishora-ozgarishi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#f36de153"
+    },
+    {
+      "q": "(0,7)^(6−x) > (0,7)^(2x+3) tengsizlikning yechimini toping va asos birdan kichik bo'lganda ishora nega o'zgarishini izohlang.",
+      "v": [
+        "x < 1",
+        "x > 3",
+        "x < 3",
+        "x > 1"
+      ],
+      "t": 3,
+      "izoh": "Asos 0,7 birdan kichik, shuning uchun ko'rsatkichlar orasidagi ishora teskarisiga aylanadi: 6 − x < 2x + 3. Bundan 6 − 3 < 2x + x, ya'ni 3 < 3x va x > 1. Bo'lish qadamini tashlab ketgan o'quvchi x > 3 deb xato qiladi. Javob: x > 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-kichik-1-ishora-ozgarishi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#05dcc821"
+    },
+    {
+      "q": "9^(x−2) > 27^(x−4) tengsizlikda ikkala asosni 3 ning darajasi ko'rinishida yozib, yechimlar to'plamini aniqlang.",
+      "v": [
+        "x < 8",
+        "x > 8",
+        "x < 10",
+        "x > 10"
+      ],
+      "t": 0,
+      "izoh": "9 = 3² va 27 = 3³ bo'lgani uchun 3^(2x−4) > 3^(3x−12) hosil bo'ladi. Asos 3 birdan katta, ishora saqlanadi: 2x − 4 > 3x − 12. Bundan 12 − 4 > 3x − 2x, ya'ni x < 8. Ko'rsatkichni butunlay ko'paytirmagan o'quvchi x < 10 deb xato qiladi. Javob: x < 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-asosga-keltirish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#d8bc02d4"
+    },
+    {
+      "q": "25^(x+1) ≤ 125^(x−1) tengsizlikni yechish uchun ikkala tomonni 5 asosiga keltiring va yechimlar to'plamini yozing.",
+      "v": [
+        "x ≤ 5",
+        "x ≥ 5",
+        "x ≥ 2",
+        "x ≤ 2"
+      ],
+      "t": 1,
+      "izoh": "25 = 5² va 125 = 5³, demak 5^(2x+2) ≤ 5^(3x−3). Asos 5 birdan katta bo'lgani uchun 2x + 2 ≤ 3x − 3. Bundan 2 + 3 ≤ 3x − 2x, ya'ni x ≥ 5. Qavsni ochishda faqat bitta hadni ko'paytirgan o'quvchi x ≥ 2 deb xato qiladi. Javob: x ≥ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-asosga-keltirish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#b11ec430"
+    },
+    {
+      "q": "(1/8)^x > 32^(x+2) tengsizlikni 2 asosiga keltirib yeching; chap tomondagi asos manfiy ko'rsatkichga aylanishiga alohida e'tibor bering.",
+      "v": [
+        "x > −1,25",
+        "x < −0,8",
+        "x < −1,25",
+        "x > −0,8"
+      ],
+      "t": 2,
+      "izoh": "1/8 = 2^(−3) va 32 = 2⁵, demak 2^(−3x) > 2^(5x+10). Asos 2 birdan katta: −3x > 5x + 10, bundan −10 > 8x va x < −1,25. Kasrni ag'darib yuborgan o'quvchi x < −0,8 degan xato javobga keladi. Javob: x < −1,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-xil-asosga-keltirish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#fe09785f"
+    },
+    {
+      "q": "Bekzod 16^(x−1) < 2^(x+5) tengsizlikni yechmoqchi. 16 sonini 2 ning darajasi sifatida yozib, to'g'ri yechimni tanlang.",
+      "v": [
+        "x > 3",
+        "x < 9",
+        "x > 9",
+        "x < 3"
+      ],
+      "t": 3,
+      "izoh": "16 = 2⁴ bo'lgani uchun chap tomon 2^(4x−4) ko'rinishga keladi. Asos 2 birdan katta, ishora saqlanadi: 4x − 4 < x + 5. Bundan 3x < 9 va x < 3. Oxirgi bo'lishni bajarmagan o'quvchi x < 9 deb xato qiladi. Javob: x < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-asosga-keltirish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#d1690ee9"
+    },
+    {
+      "q": "(√2)^x > 8 tengsizlikni yeching. Ildizni kasr ko'rsatkichli daraja ko'rinishida yozish kerakligini unutmang.",
+      "v": [
+        "x > 6",
+        "x > 3",
+        "x > 1,5",
+        "x < 6"
+      ],
+      "t": 0,
+      "izoh": "√2 = 2^(1/2), demak chap tomon 2^(x/2) ga teng, o'ng tomon esa 8 = 2³. Asos 2 birdan katta: x/2 > 3, bundan x > 6. Ildizni e'tiborsiz qoldirgan o'quvchi x > 3 deb, ko'paytirish o'rniga bo'lgan o'quvchi x > 1,5 deb xato qiladi. Javob: x > 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-va-kasr-asosni-keltirish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#f8cb8a16"
+    },
+    {
+      "q": "(∛3)^(2x) ≤ 9 tengsizlikda kubik ildizni kasr ko'rsatkichga aylantirib, yechimlar to'plamini aniqlang.",
+      "v": [
+        "x ≥ 3",
+        "x ≤ 3",
+        "x ≤ 1",
+        "x ≤ 9"
+      ],
+      "t": 1,
+      "izoh": "∛3 = 3^(1/3) bo'lgani uchun chap tomon 3^(2x/3) ko'rinishida yoziladi, o'ng tomon esa 9 = 3². Asos 3 birdan katta: 2x/3 ≤ 2, bundan 2x ≤ 6 va x ≤ 3. Uchga ko'paytirishni unutgan o'quvchi x ≤ 1 deb xato qiladi. Javob: x ≤ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-va-kasr-asosni-keltirish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#eba97fdd"
+    },
+    {
+      "q": "(0,04)^x < 0,2 tengsizlikni yeching; 0,04 sonini 0,2 ning kvadrati sifatida yozish yechimni sezilarli soddalashtiradi.",
+      "v": [
+        "x < 0,5",
+        "x > 2",
+        "x > 0,5",
+        "x < 2"
+      ],
+      "t": 2,
+      "izoh": "0,04 = (0,2)² bo'lgani uchun tengsizlik (0,2)^(2x) < (0,2)¹ ko'rinishga keladi. Asos 0,2 birdan kichik, shuning uchun ishora o'zgaradi: 2x > 1 va x > 0,5. Ishorani saqlab qolgan o'quvchi x < 0,5 deb xato javob beradi. Javob: x > 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-va-kasr-asosni-keltirish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#9ae80f1e"
+    },
+    {
+      "q": "(1/√5)^(x−1) ≥ 25 tengsizlikni yeching. Chap tomonni 5 asosiga keltirganda ko'rsatkich manfiy bo'lib qolishiga diqqat qiling.",
+      "v": [
+        "x ≥ 5",
+        "x ≤ −1",
+        "x ≥ −3",
+        "x ≤ −3"
+      ],
+      "t": 3,
+      "izoh": "1/√5 = 5^(−1/2), demak chap tomon 5^(−(x−1)/2) va o'ng tomon 5². Asos 5 birdan katta: −(x−1)/2 ≥ 2, bundan x − 1 ≤ −4 va x ≤ −3. Manfiy ishorani tushirib qoldirgan o'quvchi x ≥ 5 deb xato qiladi. Javob: x ≤ −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-va-kasr-asosni-keltirish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#0d4f8142"
+    },
+    {
+      "q": "(0,6)^(4x−10) > 1 tengsizlikni yeching. O'ng tomondagi birni asosning nol darajasi sifatida yozish qulay usul hisoblanadi.",
+      "v": [
+        "x < 2,5",
+        "x > 2,5",
+        "x < 2,75",
+        "x > 2,75"
+      ],
+      "t": 0,
+      "izoh": "1 = (0,6)⁰ deb yozamiz, shunda (0,6)^(4x−10) > (0,6)⁰ hosil bo'ladi. Asos birdan kichik, ishora o'zgaradi: 4x − 10 < 0, bundan x < 2,5. Birni asosning birinchi darajasi deb olgan o'quvchi x < 2,75 degan xato javobga keladi. Javob: x < 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birga-nolga-taqqoslash",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#1b64d68c"
+    },
+    {
+      "q": "7^(x+4) ≥ 1 tengsizlikning yechimlar to'plamini toping; birni 7 ning nol darajasi deb qarash kifoya qiladi.",
+      "v": [
+        "x ≤ −4",
+        "x ≥ −4",
+        "x ≥ 4",
+        "x ≤ 4"
+      ],
+      "t": 1,
+      "izoh": "1 = 7⁰ bo'lgani uchun tengsizlik 7^(x+4) ≥ 7⁰ ko'rinishga keladi. Asos 7 birdan katta, ishora saqlanadi: x + 4 ≥ 0, bundan x ≥ −4. Sonni ko'chirishda ishorani almashtirmagan o'quvchi x ≥ 4 deb xato qiladi. Javob: x ≥ −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birga-nolga-taqqoslash",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#0e518341"
+    },
+    {
+      "q": "5^(2x−7) < 0 tengsizlikning yechimlar to'plami qanday bo'ladi? Ko'rsatkichli funksiyaning qiymatlar sohasini eslang.",
+      "v": [
+        "x < 3,5",
+        "x > 3,5",
+        "Yechimi yo'q",
+        "Barcha haqiqiy sonlar"
+      ],
+      "t": 2,
+      "izoh": "Musbat asosli ko'rsatkichli funksiya har qanday ko'rsatkichda faqat musbat qiymat qabul qiladi. Demak 5^(2x−7) ifodasi hech qachon noldan kichik bo'la olmaydi. Ko'rsatkichni nol bilan taqqoslab x < 3,5 deb yozish tipik xato. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birga-nolga-taqqoslash",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#d45b6280"
+    },
+    {
+      "q": "2^x > 1, (0,5)^x > 1, 3^x < 1, (0,2)^x ≥ 1 tengsizliklardan qaysi birining yechimi aynan x > 0 oralig'i bo'ladi?",
+      "v": [
+        "(0,5)^x > 1",
+        "3^x < 1",
+        "(0,2)^x ≥ 1",
+        "2^x > 1"
+      ],
+      "t": 3,
+      "izoh": "Birni asosning nol darajasi deb olamiz. Asos birdan katta bo'lsa ishora saqlanadi: 2^x > 2⁰ dan x > 0 kelib chiqadi. Birdan kichik asosli (0,5)^x > 1 va (0,2)^x ≥ 1 tengsizliklarda ishora o'zgarib x < 0 va x ≤ 0 chiqadi, 3^x < 1 esa x < 0 beradi. Javob: 2^x > 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birga-nolga-taqqoslash",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#bbfcb1cc"
+    },
+    {
+      "q": "7^(x²) < 7^(5x−6) tengsizlikda ko'rsatkichlardan biri kvadrat uchhad. Asos birdan katta ekanini hisobga olib yechimni toping.",
+      "v": [
+        "2 < x < 3",
+        "x < 2 yoki x > 3",
+        "−3 < x < −2",
+        "x ≤ 2 yoki x ≥ 3"
+      ],
+      "t": 0,
+      "izoh": "Asos 7 birdan katta, ishora saqlanadi: x² < 5x − 6. Hamma hadni chapga o'tkazamiz: x² − 5x + 6 < 0. Kvadrat uchhadning ildizlari 2 va 3, tarmoqlari yuqoriga qaragani uchun ifoda ildizlar orasida manfiy bo'ladi. Javob: 2 < x < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-korsatkichli-tengsizlik",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#39a0a939"
+    },
+    {
+      "q": "2^(x²−3x) ≤ 16 tengsizlikni yeching. O'ng tomonni 2 ning darajasi ko'rinishida yozgach kvadrat tengsizlik hosil bo'ladi.",
+      "v": [
+        "x ≤ −1 yoki x ≥ 4",
+        "−1 ≤ x ≤ 4",
+        "−4 ≤ x ≤ 1",
+        "1 ≤ x ≤ 4"
+      ],
+      "t": 1,
+      "izoh": "16 = 2⁴ bo'lgani uchun 2^(x²−3x) ≤ 2⁴ hosil bo'ladi. Asos 2 birdan katta: x² − 3x ≤ 4, ya'ni x² − 3x − 4 ≤ 0. Ildizlari −1 va 4, parabola tarmoqlari yuqoriga qaragani uchun ifoda ildizlar orasida manfiy. Javob: −1 ≤ x ≤ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-korsatkichli-tengsizlik",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#cd9fc8fb"
+    },
+    {
+      "q": "(1/3)^(x²−2x) > 1/27 tengsizlikni yeching; asos birdan kichik bo'lgani uchun kvadrat tengsizlikka o'tishda ishora o'zgaradi.",
+      "v": [
+        "x < −1 yoki x > 3",
+        "−3 < x < 1",
+        "−1 < x < 3",
+        "1 < x < 3"
+      ],
+      "t": 2,
+      "izoh": "1/27 = (1/3)³ deb yozamiz. Asos 1/3 birdan kichik, shuning uchun ishora teskarisiga aylanadi: x² − 2x < 3, ya'ni x² − 2x − 3 < 0. Ildizlari −1 va 3, ifoda shu ildizlar orasida manfiy bo'ladi. Ishorani almashtirmagan o'quvchi tashqi oraliqni tanlaydi. Javob: −1 < x < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-korsatkichli-tengsizlik",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#42debad3"
+    },
+    {
+      "q": "5^(x²+2x) ≥ 125 tengsizlikning yechimlar to'plamini toping va javobni ikkita cheksiz oraliq birlashmasi ko'rinishida yozing.",
+      "v": [
+        "−3 ≤ x ≤ 1",
+        "x ≤ −1 yoki x ≥ 3",
+        "−1 ≤ x ≤ 3",
+        "x ≤ −3 yoki x ≥ 1"
+      ],
+      "t": 3,
+      "izoh": "125 = 5³, demak 5^(x²+2x) ≥ 5³. Asos 5 birdan katta: x² + 2x ≥ 3, ya'ni x² + 2x − 3 ≥ 0. Ildizlari −3 va 1. Parabola tarmoqlari yuqoriga qaragani uchun ifoda ildizlardan tashqarida musbat bo'ladi. Javob: x ≤ −3 yoki x ≥ 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-korsatkichli-tengsizlik",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#73fabd47"
+    },
+    {
+      "q": "4^x − 5·2^x + 4 < 0 tengsizlikni t = 2^x almashtirishni kiritib yeching va x uchun oraliqni toping.",
+      "v": [
+        "0 < x < 2",
+        "x < 0 yoki x > 2",
+        "1 < x < 4",
+        "0 ≤ x ≤ 2"
+      ],
+      "t": 0,
+      "izoh": "4^x = (2^x)² bo'lgani uchun t = 2^x belgilaymiz: t² − 5t + 4 < 0. Ildizlari 1 va 4, demak 1 < t < 4. Endi 2⁰ < 2^x < 2², asos birdan katta bo'lgani uchun 0 < x < 2. Almashtirishdan qaytishni unutgan o'quvchi 1 < x < 4 deb xato qiladi. Javob: 0 < x < 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-kvadrat-uchhad",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#8253208d"
+    },
+    {
+      "q": "9^x − 10·3^x + 9 ≥ 0 tengsizlikni almashtirish kiritib yeching; javob ikkita cheksiz oraliq birlashmasi bo'ladi.",
+      "v": [
+        "0 ≤ x ≤ 2",
+        "x ≤ 0 yoki x ≥ 2",
+        "x ≤ 1 yoki x ≥ 9",
+        "x ≤ 0 yoki x ≥ 3"
+      ],
+      "t": 1,
+      "izoh": "t = 3^x deb olamiz, chunki 9^x = (3^x)². Hosil bo'ladi: t² − 10t + 9 ≥ 0, ildizlari 1 va 9, demak t ≤ 1 yoki t ≥ 9. Bundan 3^x ≤ 3⁰ dan x ≤ 0, 3^x ≥ 3² dan x ≥ 2. Javob: x ≤ 0 yoki x ≥ 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-kvadrat-uchhad",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#9a95f247"
+    },
+    {
+      "q": "4^x − 6·2^x + 8 ≤ 0 tengsizlikning yechimini toping va uni kesma ko'rinishida yozing.",
+      "v": [
+        "2 ≤ x ≤ 4",
+        "x ≤ 1 yoki x ≥ 2",
+        "1 ≤ x ≤ 2",
+        "0 ≤ x ≤ 3"
+      ],
+      "t": 2,
+      "izoh": "t = 2^x almashtirish bilan t² − 6t + 8 ≤ 0 hosil bo'ladi. Ildizlari 2 va 4, demak 2 ≤ t ≤ 4. Endi 2¹ ≤ 2^x ≤ 2², asos birdan katta bo'lgani uchun 1 ≤ x ≤ 2. t uchun topilgan oraliqni javob deb yozish tipik xato. Javob: 1 ≤ x ≤ 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-kvadrat-uchhad",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#57f57354"
+    },
+    {
+      "q": "25^x − 6·5^x + 5 > 0 tengsizlikni yeching. Almashtirishdan keyin hosil bo'lgan kvadrat tengsizlik tashqi oraliqlar beradi.",
+      "v": [
+        "0 < x < 1",
+        "x < 1 yoki x > 5",
+        "x < 0 yoki x > 5",
+        "x < 0 yoki x > 1"
+      ],
+      "t": 3,
+      "izoh": "t = 5^x belgilaymiz: t² − 6t + 5 > 0. Ildizlari 1 va 5, demak t < 1 yoki t > 5. Bundan 5^x < 5⁰ dan x < 0, 5^x > 5¹ dan x > 1 kelib chiqadi. t ning qiymatlarini bevosita x deb yozgan o'quvchi xato qiladi. Javob: x < 0 yoki x > 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-kvadrat-uchhad",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#d2ffb064"
+    },
+    {
+      "q": "3^(x+2) + 3^x < 90 tengsizlikni yeching; chap tomondagi umumiy ko'paytuvchini qavsdan tashqariga chiqarish kifoya.",
+      "v": [
+        "x < 2",
+        "x > 2",
+        "x < 3",
+        "x < 1"
+      ],
+      "t": 0,
+      "izoh": "3^(x+2) = 3^x·9 bo'lgani uchun chap tomon 3^x·(9 + 1) = 10·3^x ko'rinishga keladi. Tengsizlik 10·3^x < 90, ya'ni 3^x < 9. 9 = 3² va asos birdan katta, demak x < 2. Ikkala tomonni 10 o'rniga 3 ga bo'lgan o'quvchi x < 3 deb xato qiladi. Javob: x < 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birxil-asosli-hadlar-yigindisi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#9ddb5794"
+    },
+    {
+      "q": "5^(x+1) − 5^x > 2500 tengsizlikni umumiy ko'paytuvchini qavsdan chiqarish usuli bilan yeching.",
+      "v": [
+        "x < 4",
+        "x > 4",
+        "x > 5",
+        "x > 3"
+      ],
+      "t": 1,
+      "izoh": "5^(x+1) = 5^x·5, shuning uchun chap tomon 5^x·(5 − 1) = 4·5^x ga teng. Tengsizlik 4·5^x > 2500, ya'ni 5^x > 625. 625 = 5⁴ va asos birdan katta, demak x > 4. To'rtga bo'lishni unutgan o'quvchi 5^x > 2500 dan x > 5 deb xato qiladi. Javob: x > 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birxil-asosli-hadlar-yigindisi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#3bbba849"
+    },
+    {
+      "q": "2^(x+3) − 2^(x+1) ≤ 192 tengsizlikda ikkala hadning umumiy ko'paytuvchisini ajratib, yechimlar to'plamini aniqlang.",
+      "v": [
+        "x ≥ 5",
+        "x ≤ 6",
+        "x ≤ 5",
+        "x ≤ 4"
+      ],
+      "t": 2,
+      "izoh": "2^(x+3) = 2^x·8 va 2^(x+1) = 2^x·2, demak chap tomon 2^x·(8 − 2) = 6·2^x. Tengsizlik 6·2^x ≤ 192, ya'ni 2^x ≤ 32. 32 = 2⁵ va asos birdan katta, shuning uchun x ≤ 5. Javob: x ≤ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birxil-asosli-hadlar-yigindisi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#cbe263b5"
+    },
+    {
+      "q": "4^(x+1) + 4^x ≥ 1280 tengsizlikni yeching va javobni cheksiz nur ko'rinishida yozing.",
+      "v": [
+        "x ≤ 4",
+        "x ≥ 5",
+        "x ≥ 3",
+        "x ≥ 4"
+      ],
+      "t": 3,
+      "izoh": "4^(x+1) = 4^x·4 bo'lgani uchun chap tomon 4^x·(4 + 1) = 5·4^x ga teng. Tengsizlik 5·4^x ≥ 1280, ya'ni 4^x ≥ 256. 256 = 4⁴ va asos birdan katta, demak x ≥ 4. Javob: x ≥ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birxil-asosli-hadlar-yigindisi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#b8d8f009"
+    },
+    {
+      "q": "2^x > 8 va (1/3)^x > 1/81 tengsizliklar sistemasini yeching hamda umumiy yechim oralig'ini ko'rsating.",
+      "v": [
+        "3 < x < 4",
+        "x > 4",
+        "x < 3",
+        "3 ≤ x ≤ 4"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tengsizlikda 8 = 2³, asos birdan katta, demak x > 3. Ikkinchisida 1/81 = (1/3)⁴, asos birdan kichik bo'lgani uchun ishora o'zgaradi va x < 4 chiqadi. Ikkala shartning kesishmasi 3 < x < 4. Javob: 3 < x < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-tengsizliklar-sistemasi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#0210b08a"
+    },
+    {
+      "q": "3^(x−1) ≤ 9 va 5^(x+2) > 5 tengsizliklardan iborat sistemaning yechimini yarim ochiq oraliq ko'rinishida yozing.",
+      "v": [
+        "x ≤ 3",
+        "−1 < x ≤ 3",
+        "−1 ≤ x < 3",
+        "x > −1"
+      ],
+      "t": 1,
+      "izoh": "Birinchi shartda 9 = 3², demak x − 1 ≤ 2 va x ≤ 3. Ikkinchi shartda 5 = 5¹, demak x + 2 > 1 va x > −1. Ikkala shart bir vaqtda bajarilishi uchun −1 < x ≤ 3 bo'lishi kerak. Chegaralarni almashtirib yozish tipik xato. Javob: −1 < x ≤ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-tengsizliklar-sistemasi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#dddc94a1"
+    },
+    {
+      "q": "(0,5)^x < 0,25 va 4^x ≤ 64 sistemasini yeching; birinchi tengsizlikda asos birdan kichik ekaniga e'tibor bering.",
+      "v": [
+        "2 ≤ x < 3",
+        "x > 2",
+        "2 < x ≤ 3",
+        "x ≤ 3"
+      ],
+      "t": 2,
+      "izoh": "0,25 = (0,5)², asos birdan kichik bo'lgani uchun ishora o'zgaradi va x > 2 chiqadi. Ikkinchi tengsizlikda 64 = 4³, asos birdan katta, demak x ≤ 3. Ikkala shartning kesishmasi 2 < x ≤ 3. Chegaralarning ochiq-yopiqligini almashtirish tipik xato. Javob: 2 < x ≤ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-tengsizliklar-sistemasi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#ee68cd5e"
+    },
+    {
+      "q": "5^x > 125 va (1/2)^x > 1/4 tengsizliklar sistemasi qanday yechimga ega bo'lishini aniqlang.",
+      "v": [
+        "2 < x < 3",
+        "x > 3",
+        "x < 2",
+        "Yechimi yo'q"
+      ],
+      "t": 3,
+      "izoh": "Birinchi shartda 125 = 5³ va asos birdan katta, demak x > 3. Ikkinchi shartda 1/4 = (1/2)², asos birdan kichik bo'lgani uchun x < 2 chiqadi. x bir vaqtda uchdan katta va ikkidan kichik bo'la olmaydi, oraliqlar kesishmaydi. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-tengsizliklar-sistemasi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#a3923024"
+    },
+    {
+      "q": "10^(x+1) > 10^(3x−7) tengsizlik nechta natural yechimga ega ekanini aniqlang va sanog'ini ko'rsating.",
+      "v": [
+        "3 ta",
+        "4 ta",
+        "2 ta",
+        "Cheksiz ko'p"
+      ],
+      "t": 0,
+      "izoh": "Asos 10 birdan katta, ishora saqlanadi: x + 1 > 3x − 7. Bundan 8 > 2x va x < 4. Natural sonlar birdan boshlanadi, demak yechimlar 1, 2 va 3. Nolni ham natural son deb sanagan o'quvchi 4 ta deb xato qiladi. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#44dc807b"
+    },
+    {
+      "q": "4^x − 9·2^x + 8 < 0 tengsizlikni qanoatlantiruvchi butun sonlar nechta ekanini toping.",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "1 ta",
+        "4 ta"
+      ],
+      "t": 1,
+      "izoh": "t = 2^x almashtirish bilan t² − 9t + 8 < 0 hosil bo'ladi, ildizlari 1 va 8, demak 1 < t < 8. Bundan 2⁰ < 2^x < 2³, ya'ni 0 < x < 3. Bu oraliqdagi butun sonlar faqat 1 va 2. Chegaralarni ham qo'shib yuborgan o'quvchi 4 ta deb xato qiladi. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#d768d2e2"
+    },
+    {
+      "q": "3^(x²−4x) < 243 tengsizlikni qanoatlantiruvchi butun sonlar nechta ekanini hisoblang.",
+      "v": [
+        "6 ta",
+        "4 ta",
+        "5 ta",
+        "7 ta"
+      ],
+      "t": 2,
+      "izoh": "243 = 3⁵, asos birdan katta bo'lgani uchun x² − 4x < 5, ya'ni x² − 4x − 5 < 0. Ildizlari −1 va 5, demak −1 < x < 5. Bu oraliqdagi butun sonlar 0, 1, 2, 3 va 4. Chegaralarni qo'shib yuborsa 7 ta chiqib qoladi. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#8dddef61"
+    },
+    {
+      "q": "2^(x−3) < 16 tengsizlikni qanoatlantiruvchi barcha natural sonlar yig'indisini hisoblang.",
+      "v": [
+        "28",
+        "15",
+        "6",
+        "21"
+      ],
+      "t": 3,
+      "izoh": "16 = 2⁴ va asos birdan katta, demak x − 3 < 4 va x < 7. Natural yechimlar 1, 2, 3, 4, 5 va 6. Ularning yig'indisi 1 + 2 + 3 + 4 + 5 + 6 = 21. Yettini ham qo'shgan o'quvchi 28 deb, yechimlar sonini yozgan o'quvchi 6 deb xato qiladi. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#4f545c3b"
+    },
+    {
+      "q": "3^(2x−1) ≥ 27 tengsizlikni qanoatlantiruvchi eng kichik butun sonni toping va uni javob sifatida ko'rsating.",
+      "v": [
+        "2",
+        "3",
+        "1",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "27 = 3³ va asos birdan katta, shuning uchun 2x − 1 ≥ 3. Bundan 2x ≥ 4 va x ≥ 2. Shartni qanoatlantiruvchi eng kichik butun son chegaraning o'zi, ya'ni 2. Chegara qo'shilmaydi deb o'ylagan o'quvchi 3 deb xato qiladi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-kichik-yoki-eng-katta-butun-yechim",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#8c9711fd"
+    },
+    {
+      "q": "(1/2)^(x+4) > 1/64 tengsizlikning eng katta butun yechimini aniqlang; asos birdan kichik ekaniga e'tibor bering.",
+      "v": [
+        "2",
+        "1",
+        "−1",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "1/64 = (1/2)⁶ deb yozamiz. Asos birdan kichik bo'lgani uchun ishora o'zgaradi: x + 4 < 6, bundan x < 2. Qat'iy tengsizlik bo'lgani uchun ikki o'zi kirmaydi, eng katta butun yechim 1 bo'ladi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-yoki-eng-katta-butun-yechim",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#0f4a1939"
+    },
+    {
+      "q": "5^(3−x) ≤ 1/25 tengsizlikni qanoatlantiruvchi eng kichik butun son qaysi ekanini toping.",
+      "v": [
+        "6",
+        "4",
+        "5",
+        "−5"
+      ],
+      "t": 2,
+      "izoh": "1/25 = 5^(−2), asos 5 birdan katta bo'lgani uchun 3 − x ≤ −2. Bundan −x ≤ −5 va ikkala tomonni −1 ga ko'paytirsak x ≥ 5. Chegara kiradi, demak eng kichik butun yechim 5. Manfiy songa ko'paytirganda ishorani o'zgartirmaslik tipik xato. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-yoki-eng-katta-butun-yechim",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#0801982f"
+    },
+    {
+      "q": "4^(x²−x) ≤ 4096 tengsizlikning eng katta va eng kichik butun yechimlari yig'indisini hisoblang.",
+      "v": [
+        "5",
+        "−1",
+        "6",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "4096 = 4⁶, asos birdan katta bo'lgani uchun x² − x ≤ 6, ya'ni x² − x − 6 ≤ 0. Ildizlari −2 va 3, demak −2 ≤ x ≤ 3. Eng kichik butun yechim −2, eng kattasi 3, ularning yig'indisi 1. Ayirmani hisoblab yuborgan o'quvchi 5 deb xato qiladi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-kichik-yoki-eng-katta-butun-yechim",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#7ecd5abc"
+    },
+    {
+      "q": "2^(x²−6x) < 128 tengsizlikning yechimlar oralig'i uzunligini toping va javobni son ko'rinishida yozing.",
+      "v": [
+        "8",
+        "6",
+        "7",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "128 = 2⁷ va asos birdan katta, shuning uchun x² − 6x < 7, ya'ni x² − 6x − 7 < 0. Ildizlari −1 va 7, demak yechim −1 < x < 7. Oraliq uzunligi 7 − (−1) = 8 ga teng. Chegaralarni ayirmasdan o'ng chetni yozgan o'quvchi 7 deb xato qiladi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-oraligi-uzunligi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#5ae8b5e3"
+    },
+    {
+      "q": "9^x − 28·3^x + 27 < 0 tengsizlikning yechimlar oralig'i qanchaga teng uzunlikka ega ekanini aniqlang.",
+      "v": [
+        "27",
+        "3",
+        "2",
+        "26"
+      ],
+      "t": 1,
+      "izoh": "t = 3^x almashtirish bilan t² − 28t + 27 < 0 hosil bo'ladi, ildizlari 1 va 27, demak 1 < t < 27. Bundan 3⁰ < 3^x < 3³, ya'ni 0 < x < 3. Oraliq uzunligi 3 − 0 = 3. t uchun topilgan oraliq uzunligini yozgan o'quvchi 26 deb xato qiladi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechim-oraligi-uzunligi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#3d209f5f"
+    },
+    {
+      "q": "(1/7)^(x²−9) ≥ 1 tengsizlikning yechimlar to'plami qaysi kesma bilan ustma-ust tushishini aniqlang.",
+      "v": [
+        "[−3; 3]",
+        "(−3; 3)",
+        "(−∞; −3] ∪ [3; +∞)",
+        "[0; 3]"
+      ],
+      "t": 0,
+      "izoh": "1 = (1/7)⁰ deb yozamiz. Asos birdan kichik bo'lgani uchun ishora o'zgaradi: x² − 9 ≤ 0, ya'ni x² ≤ 9. Bundan −3 ≤ x ≤ 3 kelib chiqadi va chegaralar kiradi. Ishorani o'zgartirmagan o'quvchi tashqi oraliqlar birlashmasini tanlaydi. Javob: [−3; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-oraligi-uzunligi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#77916074"
+    },
+    {
+      "q": "6^(2x−5) > 6^(x−1) va 2^x < 256 shartlarini bir vaqtda qanoatlantiruvchi x lar oralig'ining uzunligini toping.",
+      "v": [
+        "3",
+        "12",
+        "8",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Birinchi shartda asos birdan katta: 2x − 5 > x − 1, bundan x > 4. Ikkinchi shartda 256 = 2⁸, demak x < 8. Umumiy yechim 4 < x < 8 va uning uzunligi 8 − 4 = 4. Chegaralarni qo'shib yuborgan o'quvchi 12 deb xato qiladi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechim-oraligi-uzunligi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#111eb783"
+    },
+    {
+      "q": "(2^x − 8)/(2^x − 2) < 0 tengsizlikni t = 2^x almashtirishni kiritib, oraliqlar usuli yordamida yeching.",
+      "v": [
+        "1 < x < 3",
+        "x < 1 yoki x > 3",
+        "2 < x < 8",
+        "1 ≤ x ≤ 3"
+      ],
+      "t": 0,
+      "izoh": "t = 2^x deb olsak, t har doim musbat va (t − 8)/(t − 2) < 0 hosil bo'ladi. Kasr faqat 2 < t < 8 oralig'ida manfiy. Bundan 2¹ < 2^x < 2³, ya'ni 1 < x < 3. t uchun topilgan oraliqni javob deb yozish tipik xato. Javob: 1 < x < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ratsional-korsatkichli-oraliqlar-usuli",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#81d91037"
+    },
+    {
+      "q": "(3^x − 9)/(3^x − 81) ≥ 0 tengsizlikni yeching va maxrajni nolga aylantiruvchi qiymatni javobdan chiqarib tashlang.",
+      "v": [
+        "2 ≤ x < 4",
+        "x ≤ 2 yoki x > 4",
+        "x < 2 yoki x ≥ 4",
+        "x ≤ 2 yoki x ≥ 4"
+      ],
+      "t": 1,
+      "izoh": "t = 3^x belgilaymiz: (t − 9)/(t − 81) ≥ 0. Kasr t ≤ 9 va t > 81 da nomanfiy bo'ladi, t = 81 esa maxrajni nolga aylantirgani uchun kiritilmaydi. Bundan 3^x ≤ 3² dan x ≤ 2, 3^x > 3⁴ dan x > 4. Maxraj chegarasini qo'shib yuborish tipik xato. Javob: x ≤ 2 yoki x > 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ratsional-korsatkichli-oraliqlar-usuli",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#4ee2cdb7"
+    },
+    {
+      "q": "(7^x − 49)·(7^x − 343) ≤ 0 tengsizlikni almashtirish kiritib yeching va javobni kesma ko'rinishida yozing.",
+      "v": [
+        "2 < x < 3",
+        "49 ≤ x ≤ 343",
+        "2 ≤ x ≤ 3",
+        "x ≤ 2 yoki x ≥ 3"
+      ],
+      "t": 2,
+      "izoh": "t = 7^x deb olamiz: (t − 49)(t − 343) ≤ 0. Ko'paytma faqat 49 ≤ t ≤ 343 oralig'ida nomusbat. 49 = 7² va 343 = 7³ bo'lgani uchun 7² ≤ 7^x ≤ 7³, demak 2 ≤ x ≤ 3. Chegaralar tengsizlik qat'iy emasligi sababli kiradi. Javob: 2 ≤ x ≤ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ratsional-korsatkichli-oraliqlar-usuli",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#65dc75fa"
+    },
+    {
+      "q": "(4^x − 16)/(2^x − 1) ≤ 0 tengsizlikni yeching; surat va maxrajni bitta t = 2^x almashtirish orqali bog'lang.",
+      "v": [
+        "0 ≤ x ≤ 2",
+        "x ≤ 2",
+        "1 < x ≤ 4",
+        "0 < x ≤ 2"
+      ],
+      "t": 3,
+      "izoh": "4^x = (2^x)² bo'lgani uchun t = 2^x da tengsizlik (t − 4)(t + 4)/(t − 1) ≤ 0 ko'rinishga keladi. t musbat bo'lgani uchun t + 4 doim musbat va uni qisqartirish mumkin: (t − 4)/(t − 1) ≤ 0, ya'ni 1 < t ≤ 4. Bundan 2⁰ < 2^x ≤ 2², demak 0 < x ≤ 2. Chap chegara maxraj nolga aylangani uchun kiritilmaydi. Javob: 0 < x ≤ 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ratsional-korsatkichli-oraliqlar-usuli",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#a001cc69"
+    },
+    {
+      "q": "a = (0,4)^(1,5) va b = (0,4)^(2,3) sonlarini ko'rsatkichli funksiyaning monotonligiga tayanib taqqoslang.",
+      "v": [
+        "a > b",
+        "a < b",
+        "a = b",
+        "Taqqoslab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Asos 0,4 nol bilan bir orasida, demak ko'rsatkichli funksiya kamayuvchi. Kamayuvchi funksiyada kattaroq ko'rsatkichga kichikroq qiymat mos keladi. 1,5 < 2,3 bo'lgani uchun a soni b dan katta bo'ladi. Asos birdan katta deb o'ylash tipik xato. Javob: a > b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlik-bilan-taqqoslash",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#2eca77be"
+    },
+    {
+      "q": "m = 5^(√2) va n = 5^(1,4) sonlaridan qaysi biri katta ekanini ildizni taqribiy baholab aniqlang.",
+      "v": [
+        "m < n",
+        "m > n",
+        "m = n",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Asos 5 birdan katta, shuning uchun ko'rsatkichli funksiya o'suvchi va kattaroq ko'rsatkich kattaroq qiymat beradi. √2 ≈ 1,414 bo'lib, u 1,4 dan katta. Demak 5^(√2) soni 5^(1,4) dan katta. Ildizni 1,4 ga teng deb olish tipik xato. Javob: m > n.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monotonlik-bilan-taqqoslash",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#64b5abf2"
+    },
+    {
+      "q": "Ko'rsatkichli funksiyaning o'suvchiligiga asoslanib 2^(3,2) soni bilan 8 sonini taqqoslang va to'g'ri munosabatni tanlang.",
+      "v": [
+        "2^(3,2) < 8",
+        "2^(3,2) = 8",
+        "2^(3,2) > 8",
+        "Taqqoslash mumkin emas"
+      ],
+      "t": 2,
+      "izoh": "8 sonini 2³ ko'rinishida yozamiz, shunda ikkala son bir xil asosga ega bo'ladi. Asos 2 birdan katta, demak funksiya o'suvchi va kattaroq ko'rsatkich kattaroq qiymat beradi. 3,2 > 3 bo'lgani uchun 2^(3,2) soni 8 dan katta. Javob: 2^(3,2) > 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-bilan-taqqoslash",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#c8152d77"
+    },
+    {
+      "q": "(0,5)^(−2), (0,5)^(0), (0,5)^(1) va (0,5)^(3) sonlaridan eng kattasini monotonlikka tayanib aniqlang.",
+      "v": [
+        "(0,5)^(0)",
+        "(0,5)^(1)",
+        "(0,5)^(3)",
+        "(0,5)^(−2)"
+      ],
+      "t": 3,
+      "izoh": "Asos 0,5 birdan kichik bo'lgani uchun funksiya kamayuvchi: ko'rsatkich qanchalik kichik bo'lsa, qiymat shunchalik katta bo'ladi. Berilgan ko'rsatkichlarning eng kichigi −2, demak eng katta son (0,5)^(−2) bo'ladi va u 4 ga teng. Eng katta ko'rsatkichni tanlash tipik xato. Javob: (0,5)^(−2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlik-bilan-taqqoslash",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#d193cd90"
+    },
+    {
+      "q": "x = 2, x = 3, x = 4 va x = 5 qiymatlaridan qaysi biri 3^(x−1) > 27 tengsizlikni qanoatlantiradi?",
+      "v": [
+        "x = 5",
+        "x = 4",
+        "x = 3",
+        "x = 2"
+      ],
+      "t": 0,
+      "izoh": "27 = 3³ va asos birdan katta, demak x − 1 > 3, ya'ni x > 4. Berilgan qiymatlardan faqat 5 shu shartni qanoatlantiradi. x = 4 da chap tomon aynan 27 ga teng bo'ladi va qat'iy tengsizlik bajarilmaydi. Javob: x = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimni-tekshirish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#ca2d5a37"
+    },
+    {
+      "q": "Qaysi qiymat (1/2)^(x+1) < 1/16 tengsizlikning yechimi bo'ladi: x = 1, x = 2, x = 3 yoki x = 4?",
+      "v": [
+        "x = 3",
+        "x = 4",
+        "x = 2",
+        "x = 1"
+      ],
+      "t": 1,
+      "izoh": "1/16 = (1/2)⁴ deb yozamiz. Asos birdan kichik bo'lgani uchun ishora o'zgaradi: x + 1 > 4, ya'ni x > 3. Berilganlardan faqat 4 shu shartni qanoatlantiradi. x = 3 da ikkala tomon teng bo'lib qoladi. Javob: x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimni-tekshirish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#fdd733ed"
+    },
+    {
+      "q": "Sanjar (1/3)^(2x) ≤ (1/3)^(x+5) tengsizlikni yechib, javobni x ≤ 5 deb yozdi. To'g'ri yechimni ko'rsating.",
+      "v": [
+        "x ≤ 5",
+        "x > 5",
+        "x ≥ 5",
+        "x < 5"
+      ],
+      "t": 2,
+      "izoh": "Asos 1/3 birdan kichik, shuning uchun ko'rsatkichlar taqqoslanganda ishora teskarisiga o'zgaradi: 2x ≥ x + 5. Bundan x ≥ 5 kelib chiqadi. Sanjar ishorani o'zgartirmagani uchun x ≤ 5 deb xato qilgan. Tenglik holati ham yechimga kiradi. Javob: x ≥ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimni-tekshirish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#f4860b5d"
+    },
+    {
+      "q": "0, 1, 2 va 3 sonlaridan nechtasi 2^(2x) − 5·2^x + 4 ≤ 0 tengsizlikni qanoatlantirishini aniqlang.",
+      "v": [
+        "2 ta",
+        "4 ta",
+        "1 ta",
+        "3 ta"
+      ],
+      "t": 3,
+      "izoh": "t = 2^x almashtirish bilan t² − 5t + 4 ≤ 0 hosil bo'ladi, ildizlari 1 va 4, demak 1 ≤ t ≤ 4. Bundan 2⁰ ≤ 2^x ≤ 2², ya'ni 0 ≤ x ≤ 2. Berilgan sonlardan 0, 1 va 2 shartni qanoatlantiradi, 3 esa yo'q. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechimni-tekshirish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#5fdbded3"
+    },
+    {
+      "q": "a^(3x+2) > a^(x−4) tengsizlik 0 < a < 1 shartida berilgan. Ko'rsatkichlar orasidagi to'g'ri munosabatni tuzib, yechimni toping.",
+      "v": [
+        "x < −3",
+        "x > −3",
+        "x < 3",
+        "x > 3"
+      ],
+      "t": 0,
+      "izoh": "Asos nol bilan bir orasida bo'lgani uchun ko'rsatkichli funksiya kamayuvchi va ishora teskarisiga aylanadi: 3x + 2 < x − 4. Bundan 2x < −6 va x < −3. Asos birdan katta deb qarab ishorani saqlab qolish tipik xato. Javob: x < −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-shartiga-kora-tahlil",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#8fe0e61f"
+    },
+    {
+      "q": "a > 1 shartida berilgan a^(x²) ≥ a^(2x+3) tengsizlikning yechimlar to'plami qanday bo'lishini aniqlang.",
+      "v": [
+        "−1 ≤ x ≤ 3",
+        "x ≤ −1 yoki x ≥ 3",
+        "x ≤ −3 yoki x ≥ 1",
+        "x < −1 yoki x > 3"
+      ],
+      "t": 1,
+      "izoh": "Asos birdan katta bo'lgani uchun ishora saqlanadi: x² ≥ 2x + 3, ya'ni x² − 2x − 3 ≥ 0. Kvadrat uchhadning ildizlari −1 va 3, tarmoqlari yuqoriga qaragani uchun ifoda ildizlardan tashqarida nomanfiy. Tenglik holati ham kiradi. Javob: x ≤ −1 yoki x ≥ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asos-shartiga-kora-tahlil",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#df0e62e9"
+    },
+    {
+      "q": "(a²+2)^(2x−1) < (a²+2)^(x+5) tengsizlik ixtiyoriy haqiqiy a uchun berilgan. Yechimning a ga bog'liqmi yoki yo'qligini aniqlab, javobni yozing.",
+      "v": [
+        "x < 4",
+        "x > 6",
+        "x < 6",
+        "a ning qiymatiga bog'liq"
+      ],
+      "t": 2,
+      "izoh": "a² nomanfiy bo'lgani uchun a² + 2 ifodasi har doim 2 dan kichik emas, ya'ni asos har doim birdan katta. Demak ishora saqlanadi va a ning qiymati javobga ta'sir qilmaydi: 2x − 1 < x + 5. Bundan x < 6. Javob: x < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asos-shartiga-kora-tahlil",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#ef3ff2cb"
+    },
+    {
+      "q": "Ko'rsatkichli tengsizlikni yechishda ko'rsatkichlar orasidagi ishora qaysi holatda teskarisiga o'zgaradi degan savolga eng to'g'ri javobni tanlang.",
+      "v": [
+        "Asos birdan katta bo'lganda",
+        "Ko'rsatkich manfiy bo'lganda",
+        "Har qanday holatda o'zgaradi",
+        "Asos nol bilan bir orasida bo'lganda"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkichli funksiya asos birdan katta bo'lganda o'suvchi, asos nol bilan bir orasida bo'lganda esa kamayuvchi bo'ladi. Kamayuvchi funksiyada kattaroq qiymatga kichikroq ko'rsatkich mos keladi, shuning uchun ko'rsatkichlarga o'tishda ishora almashadi. Ko'rsatkichning ishorasi bunga ta'sir qilmaydi. Javob: asos nol bilan bir orasida bo'lganda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-shartiga-kora-tahlil",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#bcf1e61f"
+    },
+    {
+      "q": "2^x · 8^(x−1) ≥ 16 tengsizlikni yeching; ikkala ko'paytuvchini bitta asosga keltirib, darajalarni qo'shish qoidasini qo'llang.",
+      "v": [
+        "x ≥ 1,75",
+        "x ≤ 1,75",
+        "x ≥ 7",
+        "x ≥ 0,25"
+      ],
+      "t": 0,
+      "izoh": "8 = 2³ bo'lgani uchun 8^(x−1) = 2^(3x−3). Ko'paytmada darajalar qo'shiladi: 2^(4x−3) ≥ 2⁴. Asos birdan katta, demak 4x − 3 ≥ 4, bundan 4x ≥ 7 va x ≥ 1,75. To'rtga bo'lishni unutgan o'quvchi x ≥ 7 deb xato qiladi. Javob: x ≥ 1,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-va-bolinma-korsatkichli",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#20cd43c6"
+    },
+    {
+      "q": "27^x : 9^(x+2) < 3 tengsizlikni yeching; bo'linmada darajalar ayrilishini hisobga oling.",
+      "v": [
+        "x > 5",
+        "x < 5",
+        "x < 1",
+        "x < 9"
+      ],
+      "t": 1,
+      "izoh": "27 = 3³ va 9 = 3², demak chap tomon 3^(3x) : 3^(2x+4) = 3^(x−4) ga teng. O'ng tomon 3¹. Asos 3 birdan katta, shuning uchun x − 4 < 1 va x < 5. Darajalarni ayirmasdan qo'shib yuborgan o'quvchi boshqa javob oladi. Javob: x < 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-va-bolinma-korsatkichli",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#d10e8eac"
+    },
+    {
+      "q": "5^(2x) : 25^(x−3) ≥ 125 tengsizlikning yechimlar to'plamini aniqlang; bo'linmani soddalashtirganda x qisqarib ketishiga e'tibor bering.",
+      "v": [
+        "x ≥ 3",
+        "Yechimi yo'q",
+        "Barcha haqiqiy sonlar",
+        "x ≤ 3"
+      ],
+      "t": 2,
+      "izoh": "25 = 5², demak 25^(x−3) = 5^(2x−6). Bo'linmada darajalar ayriladi: 5^(2x) : 5^(2x−6) = 5⁶. Noma'lum qisqarib ketdi va chap tomon doimiy 15 625 soniga teng, u 125 dan katta. Tengsizlik x ning har qanday qiymatida bajariladi. Javob: barcha haqiqiy sonlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytma-va-bolinma-korsatkichli",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#54da9c5d"
+    },
+    {
+      "q": "(1/2)^x · 8^(x+1) > 4 tengsizlikni yeching; birinchi ko'paytuvchi manfiy ko'rsatkichli daraja sifatida yozilishini unutmang.",
+      "v": [
+        "x < −0,5",
+        "x > −2,5",
+        "x > 0,5",
+        "x > −0,5"
+      ],
+      "t": 3,
+      "izoh": "(1/2)^x = 2^(−x) va 8^(x+1) = 2^(3x+3). Ko'paytmada darajalar qo'shiladi: 2^(2x+3) > 2². Asos birdan katta, demak 2x + 3 > 2, bundan 2x > −1 va x > −0,5. Birinchi ko'paytuvchining manfiy ko'rsatkichini hisobga olmagan o'quvchi boshqa oraliq oladi. Javob: x > −0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-va-bolinma-korsatkichli",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#c55ecf7d"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni har 2 soatda ikki barobar ortadi. Tajriba boshida idishda 500 ta bakteriya bor edi. Necha soatdan keyin ularning soni 8000 tadan ko'p bo'ladi?",
+      "v": [
+        "8 soatdan keyin",
+        "4 soatdan keyin",
+        "16 soatdan keyin",
+        "6 soatdan keyin"
+      ],
+      "t": 0,
+      "izoh": "t soatdan keyingi son 500·2^(t/2) ga teng. Shart: 500·2^(t/2) > 8000, ya'ni 2^(t/2) > 16. 16 = 2⁴ va asos birdan katta, demak t/2 > 4 va t > 8. Ikkilanish davrini hisobga olmagan o'quvchi 4 soat deb xato qiladi. Javob: 8 soatdan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-osish-va-kopayish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#23ff9c60"
+    },
+    {
+      "q": "Anvarning kanalidagi obunachilar soni har oyda uch barobar ortmoqda va hozir 200 ta obunachi bor. Nechanchi oydan boshlab obunachilar soni 16 000 tadan oshadi?",
+      "v": [
+        "5-oydan boshlab",
+        "4-oydan boshlab",
+        "3-oydan boshlab",
+        "6-oydan boshlab"
+      ],
+      "t": 1,
+      "izoh": "n oydan keyingi son 200·3ⁿ ga teng. Shart: 200·3ⁿ > 16 000, ya'ni 3ⁿ > 80. 3³ = 27 bu shartni bajarmaydi, 3⁴ = 81 esa bajaradi. Demak eng kichik butun n to'rtga teng. Javob: 4-oydan boshlab.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-osish-va-kopayish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#02408afc"
+    },
+    {
+      "q": "Hovuz yuzasini suvo'tlar bosmoqda va qoplangan yuza har hafta ikki barobar kengaymoqda. Hozir u 3 m². Suvo'tlar 96 m² yuzani to'liq qoplashi uchun kamida necha hafta kerak?",
+      "v": [
+        "4 hafta",
+        "6 hafta",
+        "5 hafta",
+        "32 hafta"
+      ],
+      "t": 2,
+      "izoh": "n haftadan keyingi yuza 3·2ⁿ m² ga teng. Shart: 3·2ⁿ ≥ 96, ya'ni 2ⁿ ≥ 32. 32 = 2⁵ va asos birdan katta, demak n ≥ 5. Nisbatning o'zini (96 : 3 = 32) javob deb olgan o'quvchi 32 hafta deb xato qiladi. Javob: 5 hafta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-osish-va-kopayish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#df040178"
+    },
+    {
+      "q": "Kompyuter virusi zararlagan qurilmalar soni har kuni to'rt barobar ortmoqda. Birinchi kuni 5 ta qurilma zararlangan edi. Zararlangan qurilmalar 1280 tadan ko'p bo'ladigan eng erta kunni toping.",
+      "v": [
+        "4-kun",
+        "6-kun",
+        "3-kun",
+        "5-kun"
+      ],
+      "t": 1,
+      "izoh": "Birinchi kuni 5 ta bo'lgani uchun k-kunda zararlangan qurilmalar soni 5·4^(k−1) ga teng. Shart: 5·4^(k−1) > 1280, ya'ni 4^(k−1) > 256. 256 = 4⁴ va asos birdan katta, demak k − 1 > 4, ya'ni k > 5 va eng kichik butun qiymat k = 6. 5-kunda son aynan 1280 ga teng bo'ladi — «ko'p» sharti bajarilmaydi, shuning uchun tenglik holatini yechim deb olgan o'quvchi 5-kun deb xato qiladi. Javob: 6-kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-osish-va-kopayish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#32eb324b"
+    },
+    {
+      "q": "Radioaktiv moddaning yarim yemirilish davri 6 kun. Namunada boshida 320 g modda bor edi. Massa 20 g dan kam bo'lishi uchun kamida necha kun o'tishi kerak?",
+      "v": [
+        "24 kundan keyin",
+        "18 kundan keyin",
+        "30 kundan keyin",
+        "16 kundan keyin"
+      ],
+      "t": 0,
+      "izoh": "t kundan keyingi massa 320·(1/2)^(t/6) g ga teng. Shart: 320·(1/2)^(t/6) < 20, ya'ni (1/2)^(t/6) < 1/16. Asos birdan kichik, shuning uchun ishora o'zgaradi: t/6 > 4 va t > 24. Yarim yemirilish davriga ko'paytirishni unutgan o'quvchi kichikroq javob oladi. Javob: 24 kundan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-parchalanish-va-kamayish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#4178da9d"
+    },
+    {
+      "q": "Tibbiyot markaziga 64 g yod izotopi keltirildi va u har 8 kunda massasining yarmini yo'qotadi. Izotop massasi 4 g dan kam bo'ladigan davr qachondan boshlanadi?",
+      "v": [
+        "24 kundan keyin",
+        "32 kundan keyin",
+        "40 kundan keyin",
+        "16 kundan keyin"
+      ],
+      "t": 1,
+      "izoh": "t kundan keyingi massa 64·(1/2)^(t/8) g. Shart: 64·(1/2)^(t/8) < 4, ya'ni (1/2)^(t/8) < 1/16. Asos birdan kichik bo'lgani uchun ishora o'zgaradi: t/8 > 4, bundan t > 32. Yarim yemirilish davrini 6 kun deb chalkashtirgan o'quvchi 24 kun deb xato qiladi. Javob: 32 kundan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-parchalanish-va-kamayish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#bc648e51"
+    },
+    {
+      "q": "Filtr ishlaganda xonadagi chang zarralari soni har 10 daqiqada uch marta kamayadi. Boshida bir kub metr havoda 2430 ta zarra bor edi. Zarralar soni 30 tadan kam bo'lishi uchun filtr kamida qancha vaqt ishlashi kerak?",
+      "v": [
+        "30 daqiqa",
+        "50 daqiqa",
+        "40 daqiqa",
+        "81 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "t daqiqadan keyingi zarralar soni 2430·(1/3)^(t/10) ga teng. Shart: 2430·(1/3)^(t/10) < 30, ya'ni (1/3)^(t/10) < 1/81. Asos birdan kichik, ishora o'zgaradi: t/10 > 4 va t > 40. Nisbat 81 ekanidan darrov 81 daqiqa deb xulosa chiqarish tipik xato. Javob: 40 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-parchalanish-va-kamayish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#641bd10d"
+    },
+    {
+      "q": "Suv omborida ifloslantiruvchi modda konsentratsiyasi tozalash tufayli har oyda to'rt marta kamaymoqda va hozir u 1024 mg/l. Konsentratsiya 4 mg/l dan past bo'lishi uchun kamida necha oy kerak?",
+      "v": [
+        "4 oy",
+        "6 oy",
+        "256 oy",
+        "5 oy"
+      ],
+      "t": 3,
+      "izoh": "n oydan keyingi konsentratsiya 1024·(1/4)ⁿ mg/l ga teng. Shart: 1024·(1/4)ⁿ < 4, ya'ni (1/4)ⁿ < 1/256. Asos birdan kichik, ishora o'zgaradi: n > 4. Butun oylar bilan o'lchanadi, demak kamida 5 oy kerak. Tenglik chiqadigan 4 oyni javob deb olish tipik xato. Javob: 5 oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-parchalanish-va-kamayish",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#b0ff3fdd"
+    },
+    {
+      "q": "Farhodning jamg'armasi har 3 yilda ikki barobar ortmoqda va hozir unda 1 500 000 so'm bor. Jamg'arma 12 000 000 so'mdan oshishi uchun kamida necha yil kerak bo'ladi?",
+      "v": [
+        "9 yil",
+        "6 yil",
+        "12 yil",
+        "8 yil"
+      ],
+      "t": 0,
+      "izoh": "t yildan keyingi mablag' 1 500 000·2^(t/3) so'm. Shart: 2^(t/3) > 8, chunki 12 000 000 ni 1 500 000 ga bo'lsak 8 chiqadi. 8 = 2³ va asos birdan katta, demak t/3 > 3 va t > 9. 12 000 000 : 1 500 000 nisbatini 16 deb xato hisoblagan o'quvchi 2^(t/3) > 16 dan, 16 = 2⁴ bo'lgani uchun t > 12 deb, 12 yil javobini beradi. Javob: 9 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-va-jamgarma",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#a337fc5e"
+    },
+    {
+      "q": "Bir tumanda kvartira narxi har 4 yilda uch barobar oshmoqda va bugun u 240 million so'm. Narx 6480 million so'mdan oshadigan eng qisqa muddatni toping.",
+      "v": [
+        "9 yildan keyin",
+        "12 yildan keyin",
+        "16 yildan keyin",
+        "27 yildan keyin"
+      ],
+      "t": 1,
+      "izoh": "t yildan keyingi narx 240·3^(t/4) million so'm. Shart: 240·3^(t/4) > 6480, ya'ni 3^(t/4) > 27. 27 = 3³ va asos birdan katta, demak t/4 > 3 va t > 12. Nisbat 27 ekanidan 27 yil deb xulosa chiqarish tipik xato. Javob: 12 yildan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-va-jamgarma",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#4f5687eb"
+    },
+    {
+      "q": "Sut mahsulotining narxi har 5 oyda ikki barobar oshmoqda va hozir u 12 000 so'm. Narx 96 000 so'mdan oshishi uchun qancha vaqt o'tishi kerak?",
+      "v": [
+        "10 oydan keyin",
+        "20 oydan keyin",
+        "15 oydan keyin",
+        "8 oydan keyin"
+      ],
+      "t": 2,
+      "izoh": "n oydan keyingi narx 12 000·2^(n/5) so'm. Shart: 2^(n/5) > 8, chunki 96 000 ni 12 000 ga bo'lsak 8 chiqadi. 8 = 2³, asos birdan katta, demak n/5 > 3 va n > 15. 96 000 : 12 000 nisbatini 16 deb xato olgan o'quvchi 2^(n/5) > 16 dan, 16 = 2⁴ bo'lgani uchun n > 20 deb, 20 oydan keyin javobini tanlaydi. Javob: 15 oydan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-va-jamgarma",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#89899e8e"
+    },
+    {
+      "q": "Fermer xo'jaligida asalarilar oilalari soni har mavsumda uch barobar ko'payadi va hozir 7 ta oila bor. Oilalar soni 500 tadan oshishi uchun kamida nechta mavsum kerak?",
+      "v": [
+        "5 mavsum",
+        "3 mavsum",
+        "6 mavsum",
+        "4 mavsum"
+      ],
+      "t": 3,
+      "izoh": "n mavsumdan keyingi oilalar soni 7·3ⁿ ga teng. Shart: 7·3ⁿ > 500, ya'ni 3ⁿ > 71,4. 3³ = 27 bo'lib yetarli emas, 3⁴ = 81 esa yetarli, chunki 7·81 = 567 va bu 500 dan katta. Javob: 4 mavsum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-narx-va-jamgarma",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#ee65c7d9"
+    },
+    {
+      "q": "Yangi olingan noutbukning bozor qiymati har yili ikki marta kamaymoqda va bugun u 8 000 000 so'm. Qiymat 500 000 so'mdan pasayishi uchun kamida necha yil o'tadi?",
+      "v": [
+        "5 yil",
+        "4 yil",
+        "6 yil",
+        "16 yil"
+      ],
+      "t": 0,
+      "izoh": "n yildan keyingi qiymat 8 000 000·(1/2)ⁿ so'm. Shart: (1/2)ⁿ < 1/16, chunki 8 000 000 ni 500 000 ga bo'lsak 16 chiqadi. Asos birdan kichik bo'lgani uchun ishora o'zgaradi: n > 4. Butun yillar bilan o'lchansa kamida 5 yil kerak. Javob: 5 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-qiymat-kamayishi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#753f0b47"
+    },
+    {
+      "q": "Ishlab chiqarish stanogining qiymati har 2 yilda uch marta kamayadi va boshlang'ich qiymati 486 million so'm edi. Qiymat 6 million so'mdan past bo'ladigan davrni aniqlang.",
+      "v": [
+        "6 yildan keyin",
+        "8 yildan keyin",
+        "10 yildan keyin",
+        "4 yildan keyin"
+      ],
+      "t": 1,
+      "izoh": "t yildan keyingi qiymat 486·(1/3)^(t/2) million so'm. Shart: (1/3)^(t/2) < 1/81, chunki 486 ni 6 ga bo'lsak 81 chiqadi. Asos birdan kichik, ishora o'zgaradi: t/2 > 4 va t > 8. Ikki yillik davrga ko'paytirishni unutgan o'quvchi 4 yil deb xato qiladi. Javob: 8 yildan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-qiymat-kamayishi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#e49b5258"
+    },
+    {
+      "q": "Avtomobilning qiymati har 3 yilda yarmiga tushadi. Rustam 128 million so'mga mashina sotib oldi. Qiymat 16 million so'mdan kam bo'lishi uchun necha yil kutish kerak?",
+      "v": [
+        "6 yildan keyin",
+        "12 yildan keyin",
+        "9 yildan keyin",
+        "3 yildan keyin"
+      ],
+      "t": 2,
+      "izoh": "t yildan keyingi qiymat 128·(1/2)^(t/3) million so'm. Shart: (1/2)^(t/3) < 1/8, chunki 128 ni 16 ga bo'lsak 8 chiqadi. Asos birdan kichik, ishora o'zgaradi: t/3 > 3 va t > 9. Uch yillik davrga ko'paytirmagan o'quvchi 3 yil deb xato qiladi. Javob: 9 yildan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-qiymat-kamayishi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#e8ead980"
+    },
+    {
+      "q": "Namunadagi mikroblar soni antiseptik ta'sirida har 15 daqiqada besh marta kamayadi va boshida 15 625 ta mikrob bor edi. Mikroblar soni 25 tadan kam bo'lishi uchun kamida qancha vaqt kerak?",
+      "v": [
+        "45 daqiqa",
+        "75 daqiqa",
+        "30 daqiqa",
+        "60 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "t daqiqadan keyingi son 15 625·(1/5)^(t/15) ga teng. Shart: (1/5)^(t/15) < 1/625, chunki 15 625 ni 25 ga bo'lsak 625 chiqadi. Asos birdan kichik, ishora o'zgaradi: t/15 > 4 va t > 60. O'n besh daqiqalik davrga ko'paytirmagan o'quvchi kichikroq javob oladi. Javob: 60 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qiymat-kamayishi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#8046cea5"
+    },
+    {
+      "q": "Bemorga yuborilgan dorining qondagi miqdori har 4 soatda ikki marta kamayadi va boshida u 320 mg edi. Miqdor 10 mg dan kam bo'lgach dorini qayta qabul qilish kerak. Bu qachon sodir bo'ladi?",
+      "v": [
+        "20 soatdan keyin",
+        "16 soatdan keyin",
+        "24 soatdan keyin",
+        "32 soatdan keyin"
+      ],
+      "t": 0,
+      "izoh": "t soatdan keyingi miqdor 320·(1/2)^(t/4) mg. Shart: (1/2)^(t/4) < 1/32, chunki 320 ni 10 ga bo'lsak 32 chiqadi. Asos birdan kichik, ishora o'zgaradi: t/4 > 5 va t > 20. Nisbat 32 ekanidan darrov 32 soat deb xulosa chiqarish tipik xato. Javob: 20 soatdan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-dori-konsentratsiyasi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#aff94baf"
+    },
+    {
+      "q": "Vaksinadan keyin qondagi antitelolar miqdori har 3 oyda uch marta kamayadi va boshida u 810 birlik edi. Miqdor 10 birlikdan past tushganda revaksinatsiya kerak bo'ladi. Bu qachon yuz beradi?",
+      "v": [
+        "9 oydan keyin",
+        "12 oydan keyin",
+        "15 oydan keyin",
+        "4 oydan keyin"
+      ],
+      "t": 1,
+      "izoh": "t oydan keyingi miqdor 810·(1/3)^(t/3) birlik. Shart: (1/3)^(t/3) < 1/81, chunki 810 ni 10 ga bo'lsak 81 chiqadi. Asos birdan kichik, ishora o'zgaradi: t/3 > 4 va t > 12. Uch oylik davrga ko'paytirmagan o'quvchi 4 oy deb xato qiladi. Javob: 12 oydan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-dori-konsentratsiyasi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#4077f207"
+    },
+    {
+      "q": "Og'riq qoldiruvchi vositaning organizmdagi ta'sir kuchi har soatda ikki marta susayadi va dastlab u 64 birlik edi. Ta'sir 4 birlikdan past bo'lganda dori ishlamaydi hisoblanadi. Necha soatdan keyin shunday bo'ladi?",
+      "v": [
+        "3 soatdan keyin",
+        "5 soatdan keyin",
+        "4 soatdan keyin",
+        "16 soatdan keyin"
+      ],
+      "t": 2,
+      "izoh": "t soatdan keyingi ta'sir kuchi 64·(1/2)^t birlik. Shart: (1/2)^t < 1/16, chunki 64 ni 4 ga bo'lsak 16 chiqadi. Asos birdan kichik, ishora o'zgaradi: t > 4. Nisbatning o'zini javob deb olgan o'quvchi 16 soat deb xato qiladi. Javob: 4 soatdan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-dori-konsentratsiyasi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#5b5f1a88"
+    },
+    {
+      "q": "Dori qondagi konsentratsiyasi 12,8 mg/l dan yuqori bo'lgandagina samarali hisoblanadi. Boshlang'ich konsentratsiya 204,8 mg/l bo'lib, u har 2 soatda ikki marta kamayadi. Dori qancha vaqt samarali bo'ladi?",
+      "v": [
+        "4 soat",
+        "16 soat",
+        "6 soat",
+        "8 soat"
+      ],
+      "t": 3,
+      "izoh": "t soatdan keyingi konsentratsiya 204,8·(1/2)^(t/2) mg/l. Shart: (1/2)^(t/2) > 1/16, chunki 204,8 ni 12,8 ga bo'lsak 16 chiqadi. Asos birdan kichik, ishora o'zgaradi: t/2 < 4 va t < 8. Demak dori sakkiz soat davomida samarali bo'ladi. Javob: 8 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-dori-konsentratsiyasi",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#47c5f817"
+    },
+    {
+      "q": "Bir tumandagi elektromobillar soni har yili ikki barobar ortmoqda va 2020-yilda ular 150 ta edi. Qaysi yildan boshlab elektromobillar soni 2400 tadan oshadi?",
+      "v": [
+        "2025-yildan",
+        "2024-yildan",
+        "2026-yildan",
+        "2028-yildan"
+      ],
+      "t": 0,
+      "izoh": "n yildan keyingi son 150·2ⁿ ga teng. Shart: 2ⁿ > 16, chunki 2400 ni 150 ga bo'lsak 16 chiqadi. Asos birdan katta, demak n > 4 va eng kichik butun qiymat n = 5. 2020 ga beshni qo'shsak 2025-yil chiqadi. Tenglik yilini javob deb olish tipik xato. Javob: 2025-yildan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-aholi-va-statistika",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#c602bc7c"
+    },
+    {
+      "q": "Bir maktabda ingliz tili to'garagiga qatnashuvchilar soni har yarim yilda uch marta ortmoqda va hozir 8 ta o'quvchi bor. Qatnashuvchilar soni 600 tadan oshishi uchun kamida qancha vaqt kerak?",
+      "v": [
+        "1,5 yil",
+        "2 yil",
+        "2,5 yil",
+        "3 yil"
+      ],
+      "t": 1,
+      "izoh": "n ta yarim yildan keyingi son 8·3ⁿ ga teng. Shart: 8·3ⁿ > 600, ya'ni 3ⁿ > 75. 3³ = 27 bo'lib yetarli emas, 3⁴ = 81 esa yetarli, chunki 8·81 = 648. Demak to'rtta yarim yil, ya'ni 2 yil kerak. Yarim yillik davrni yillik deb olish tipik xato. Javob: 2 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-aholi-va-statistika",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#e09ec564"
+    },
+    {
+      "q": "Ijtimoiy tarmoqqa joylangan videoni ko'rganlar soni har 6 soatda to'rt barobar ortmoqda. Joylashtirilganda 25 ta ko'rish bor edi. Ko'rishlar 6400 tadan oshishi uchun necha soat kerak?",
+      "v": [
+        "18 soat",
+        "30 soat",
+        "24 soat",
+        "12 soat"
+      ],
+      "t": 2,
+      "izoh": "t soatdan keyingi ko'rishlar soni 25·4^(t/6) ga teng. Shart: 4^(t/6) > 256, chunki 6400 ni 25 ga bo'lsak 256 chiqadi. 256 = 4⁴ va asos birdan katta, demak t/6 > 4 va t > 24. Olti soatlik davrga ko'paytirmagan o'quvchi kichikroq javob oladi. Javob: 24 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-aholi-va-statistika",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#0d9e91ae"
+    },
+    {
+      "q": "Chumolilar uyasidagi aholi har oyda ikki barobar ortadi, uya esa ko'pi bilan 4800 ta chumoliga mo'ljallangan. Hozir uyada 300 ta chumoli bor. Uya necha oy davomida yetarli bo'ladi?",
+      "v": [
+        "5 oy",
+        "3 oy",
+        "16 oy",
+        "4 oy"
+      ],
+      "t": 3,
+      "izoh": "n oydan keyingi son 300·2ⁿ ga teng va u 4800 dan oshmasligi kerak. Shart: 2ⁿ ≤ 16, chunki 4800 ni 300 ga bo'lsak 16 chiqadi. 16 = 2⁴ va asos birdan katta, demak n ≤ 4. Nisbatning o'zini javob deb olgan o'quvchi 16 oy deb xato qiladi. Javob: 4 oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-aholi-va-statistika",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#de422b82"
+    },
+    {
+      "q": "Choy stakanining xona haroratidan ortiqcha harorati har 10 daqiqada ikki marta kamayadi va dastlab bu ortiqcha 64° edi. Ortiqcha harorat 2° dan kam bo'lishi uchun kamida necha daqiqa kerak?",
+      "v": [
+        "50 daqiqa",
+        "40 daqiqa",
+        "60 daqiqa",
+        "32 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "t daqiqadan keyingi ortiqcha harorat 64·(1/2)^(t/10) gradusga teng. Shart: (1/2)^(t/10) < 1/32, chunki 64 ni 2 ga bo'lsak 32 chiqadi. Asos birdan kichik, ishora o'zgaradi: t/10 > 5 va t > 50. Nisbatning o'zini vaqt deb olish tipik xato. Javob: 50 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-fizik-jarayon",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#b5bfd147"
+    },
+    {
+      "q": "Suv yuzasidan chuqurlashgan sari yorug'lik oqimi har 3 metrda ikki marta kamayadi va yuzada u 640 lyuksni tashkil etadi. Yorug'lik 20 lyuksdan kam bo'ladigan chuqurlikni aniqlang.",
+      "v": [
+        "12 m dan chuqurda",
+        "15 m dan chuqurda",
+        "18 m dan chuqurda",
+        "5 m dan chuqurda"
+      ],
+      "t": 1,
+      "izoh": "h metr chuqurlikdagi yorug'lik 640·(1/2)^(h/3) lyuks. Shart: (1/2)^(h/3) < 1/32, chunki 640 ni 20 ga bo'lsak 32 chiqadi. Asos birdan kichik, ishora o'zgaradi: h/3 > 5 va h > 15. Ikkilanish qadamini metrga aylantirmagan o'quvchi 5 m deb xato qiladi. Javob: 15 m dan chuqurda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-fizik-jarayon",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#12ac1899"
+    },
+    {
+      "q": "Ovoz izolyatsiyasi devorining har 5 sm qalinligi shovqin kuchini uch marta pasaytiradi. Ko'chadan kelayotgan shovqin kuchi 729 shartli birlik. Xonadagi shovqin 9 birlikdan past bo'lishi uchun devor qanday qalinlikda bo'lishi kerak?",
+      "v": [
+        "15 sm dan qalin",
+        "25 sm dan qalin",
+        "20 sm dan qalin",
+        "81 sm dan qalin"
+      ],
+      "t": 2,
+      "izoh": "d sm qalinlikdagi devor ortidagi shovqin 729·(1/3)^(d/5) birlik. Shart: (1/3)^(d/5) < 1/81, chunki 729 ni 9 ga bo'lsak 81 chiqadi. Asos birdan kichik, ishora o'zgaradi: d/5 > 4 va d > 20. Nisbat 81 ekanidan 81 sm deb xulosa chiqarish tipik xato. Javob: 20 sm dan qalin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-fizik-jarayon",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#6570e05c"
+    },
+    {
+      "q": "Balandlikka ko'tarilganda atmosfera bosimi har 5 km da ikki marta kamayadi. Yer yuzasida bosim 800 mm bo'lsa, u 50 mm dan past bo'ladigan balandlikni toping.",
+      "v": [
+        "15 km dan yuqorida",
+        "25 km dan yuqorida",
+        "16 km dan yuqorida",
+        "20 km dan yuqorida"
+      ],
+      "t": 3,
+      "izoh": "h km balandlikdagi bosim 800·(1/2)^(h/5) mm ga teng. Shart: (1/2)^(h/5) < 1/16, chunki 800 ni 50 ga bo'lsak 16 chiqadi. Asos birdan kichik, ishora o'zgaradi: h/5 > 4 va h > 20. Nisbatning o'zini balandlik deb olgan o'quvchi 16 km deb xato qiladi. Javob: 20 km dan yuqorida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-fizik-jarayon",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#7f89e6e2"
+    },
+    {
+      "q": "Zavodda mahsulot tannarxi yangi texnologiya tufayli har chorakda ikki marta arzonlashmoqda va hozir bir dona 96 000 so'm. Tannarx 6000 so'mdan past bo'lishi uchun kamida nechta chorak kerak?",
+      "v": [
+        "5 chorak",
+        "4 chorak",
+        "6 chorak",
+        "16 chorak"
+      ],
+      "t": 0,
+      "izoh": "n chorakdan keyingi tannarx 96 000·(1/2)ⁿ so'm. Shart: (1/2)ⁿ < 1/16, chunki 96 000 ni 6000 ga bo'lsak 16 chiqadi. Asos birdan kichik, ishora o'zgaradi: n > 4. Choraklar butun sanaladi, demak kamida 5 chorak kerak. Tenglik chiqadigan 4 ni javob deb olish tipik xato. Javob: 5 chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ishlab-chiqarish-va-chegirma",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#55cfa64c"
+    },
+    {
+      "q": "Fermer paxta ekiladigan maydonni har yili ikki barobar kengaytirmoqda va hozir u 3 gektarni tashkil etadi. Maydon 40 gektardan oshishi uchun kamida necha yil kerak?",
+      "v": [
+        "3 yil",
+        "4 yil",
+        "5 yil",
+        "6 yil"
+      ],
+      "t": 1,
+      "izoh": "n yildan keyingi maydon 3·2ⁿ gektar. Shart: 3·2ⁿ > 40, ya'ni 2ⁿ > 13,3. 2³ = 8 bo'lib yetarli emas, 2⁴ = 16 esa yetarli, chunki 3·16 = 48 va bu 40 dan katta. Javob: 4 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ishlab-chiqarish-va-chegirma",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#2a586b0c"
+    },
+    {
+      "q": "Do'kondagi aksiya har hafta tovar narxini ikki marta tushirmoqda va boshlang'ich narx 2 560 000 so'm edi. Narx 40 000 so'mdan past bo'lishi uchun necha hafta o'tishi kerak?",
+      "v": [
+        "6 hafta",
+        "8 hafta",
+        "7 hafta",
+        "64 hafta"
+      ],
+      "t": 2,
+      "izoh": "n haftadan keyingi narx 2 560 000·(1/2)ⁿ so'm. Shart: (1/2)ⁿ < 1/64, chunki 2 560 000 ni 40 000 ga bo'lsak 64 chiqadi. Asos birdan kichik, ishora o'zgaradi: n > 6. Haftalar butun sanaladi, demak kamida 7 hafta kerak. Javob: 7 hafta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ishlab-chiqarish-va-chegirma",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#0475992c"
+    },
+    {
+      "q": "Bir korxonada elektr energiyasi sarfi har yili uch marta kamaymoqda va bu yil 972 000 kVt·soat sarflandi. Sarf 12 000 kVt·soatdan kam bo'lishi uchun kamida necha yil kerak?",
+      "v": [
+        "4 yil",
+        "6 yil",
+        "81 yil",
+        "5 yil"
+      ],
+      "t": 3,
+      "izoh": "n yildan keyingi sarf 972 000·(1/3)ⁿ kVt·soat. Shart: (1/3)ⁿ < 1/81, chunki 972 000 ni 12 000 ga bo'lsak 81 chiqadi. Asos birdan kichik, ishora o'zgaradi: n > 4. Yillar butun sanaladi, demak kamida 5 yil kerak. Nisbatning o'zini javob deb olish tipik xato. Javob: 5 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ishlab-chiqarish-va-chegirma",
+      "id": "matematika_tngs_m09-korsatkichli-tengsizliklar#428515c7"
+    }
+  ]
+}

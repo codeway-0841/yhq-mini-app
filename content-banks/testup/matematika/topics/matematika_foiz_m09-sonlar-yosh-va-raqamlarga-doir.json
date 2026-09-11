@@ -1,0 +1,1609 @@
+{
+  "nom": "Sonlar, yosh va raqamlarga doir matnli masalalar",
+  "bolim": "Nisbat, foiz va matnli masalalar",
+  "blok": "foiz",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Ikki xonali sonning raqamlari yig'indisi 12 ga teng. Raqamlar o'rni almashtirilsa, hosil bo'lgan son dastlabkisidan 18 ga katta bo'ladi. Shu sonni toping.",
+      "v": [
+        "39",
+        "48",
+        "57",
+        "75"
+      ],
+      "t": 2,
+      "izoh": "O'nlar raqamini a, birlar raqamini b deb olamiz, son 10a + b bo'ladi. Shart bo'yicha a + b = 12. Almashtirilgan son 10b + a, ularning ayirmasi (10b + a) − (10a + b) = 9(b − a) = 18, demak b − a = 2. a + b = 12 va b − a = 2 dan a = 5, b = 7. Son 57, tekshiramiz: 75 − 57 = 18. Javob: 57.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-farqi-va-raqamlar-yigindisi",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#fca29a7e"
+    },
+    {
+      "q": "Sardorning daftariga ikki xonali son yozilgan: uning raqamlari yig'indisi 11, raqamlar o'rni almashtirilganda esa son 27 ga kichrayadi. Sardor qanday sonni yozgan?",
+      "v": [
+        "74",
+        "47",
+        "65",
+        "92"
+      ],
+      "t": 0,
+      "izoh": "Son 10a + b ko'rinishida bo'lsin, shart bo'yicha a + b = 11. Kamayish sharti: (10a + b) − (10b + a) = 9(a − b) = 27, ya'ni a − b = 3. Ikki tenglikdan a = 7, b = 4 chiqadi. Son 74, tekshiramiz: 74 − 47 = 27. Javob: 74.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-farqi-va-raqamlar-yigindisi",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#80c04f07"
+    },
+    {
+      "q": "Ikki xonali sonning raqamlari yig'indisi 14 ga teng bo'lib, raqamlar o'rni almashtirilganda son 36 ga ortadi. Dastlabki sonni aniqlang.",
+      "v": [
+        "68",
+        "59",
+        "77",
+        "95"
+      ],
+      "t": 1,
+      "izoh": "Ortish sharti 9(b − a) = 36 ni beradi, bundan b − a = 4. a + b = 14 bilan birga yechsak, a = 5 va b = 9 bo'ladi. Dastlabki son 59, tekshirish: 95 − 59 = 36. Javob: 59.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-farqi-va-raqamlar-yigindisi",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#1172f315"
+    },
+    {
+      "q": "Ikki xonali sonning raqamlari yig'indisi 8, raqamlar teskari tartibda yozilganda hosil bo'lgan son dastlabkisidan 54 ga kichik. Bu son qaysi?",
+      "v": [
+        "17",
+        "53",
+        "62",
+        "71"
+      ],
+      "t": 3,
+      "izoh": "Kamayish sharti 9(a − b) = 54 ko'rinishga keladi, demak a − b = 6. a + b = 8 bilan birga a = 7, b = 1 topiladi. Son 71, tekshiramiz: 71 − 17 = 54. Javob: 71.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-farqi-va-raqamlar-yigindisi",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#7c0fcc5d"
+    },
+    {
+      "q": "Anvar avtobus chiptasidagi ikki xonali sonni ko'rdi: uning raqamlari yig'indisi 10, raqamlar o'rni almashtirilsa son 36 ga ortadi. Chiptadagi son nechaga teng?",
+      "v": [
+        "28",
+        "37",
+        "46",
+        "73"
+      ],
+      "t": 1,
+      "izoh": "Almashtirilganda ortish 9(b − a) = 36 ni beradi, ya'ni b − a = 4. a + b = 10 shartini qo'shsak, a = 3 va b = 7 chiqadi. Chiptadagi son 37, tekshirish: 73 − 37 = 36. Javob: 37.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-farqi-va-raqamlar-yigindisi",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#99a4e328"
+    },
+    {
+      "q": "Ikki xonali sonning o'nlar raqami birlar raqamidan 4 ta ortiq. Raqamlar o'rni almashtirilganda son 36 ga kichrayadi. Shu shartlarni qanoatlantiruvchi sonlarning eng kattasini toping.",
+      "v": [
+        "62",
+        "73",
+        "84",
+        "95"
+      ],
+      "t": 3,
+      "izoh": "a = b + 4 bo'lgani uchun (10a + b) − (10b + a) = 9(a − b) = 9·4 = 36 tenglik o'z-o'zidan bajariladi va yangi ma'lumot bermaydi. Demak faqat a = b + 4 shartini tekshiramiz: 40, 51, 62, 73, 84, 95. Ular ichida eng kattasi 95. Javob: 95.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-shartini-tahlil",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#50915e25"
+    },
+    {
+      "q": "Ikki xonali sonning raqamlari yig'indisi 13 ga teng. Bu son bilan raqamlari o'rni almashtirilgan sonning yig'indisi 143 chiqdi. Shu shartga mos ikki xonali sonlar nechta?",
+      "v": [
+        "3 ta",
+        "5 ta",
+        "6 ta",
+        "7 ta"
+      ],
+      "t": 2,
+      "izoh": "(10a + b) + (10b + a) = 11(a + b) = 11·13 = 143 — ikkinchi shart raqamlar yig'indisi 13 bo'lgan har qanday sonda bajariladi. Shuning uchun faqat yig'indisi 13 bo'lgan sonlarni sanaymiz: 49, 58, 67, 76, 85, 94. Ular 6 ta. Javob: 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-shartini-tahlil",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#55b8f9d7"
+    },
+    {
+      "q": "Raqamlari o'rni almashtirilganda qiymati o'zgarmaydigan ikki xonali sonlar nechta ekanligini aniqlang.",
+      "v": [
+        "8 ta",
+        "9 ta",
+        "10 ta",
+        "11 ta"
+      ],
+      "t": 1,
+      "izoh": "10a + b = 10b + a tenglikdan 9a = 9b, ya'ni a = b kelib chiqadi. Ikki xonali sonda o'nlar raqami noldan farqli, shuning uchun a = b = 1, 2, …, 9. Bunday sonlar: 11, 22, 33, 44, 55, 66, 77, 88, 99 — jami 9 ta. Javob: 9 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "almashtirish-shartini-tahlil",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#da467373"
+    },
+    {
+      "q": "Ikki xonali son bilan uning raqamlari teskari tartibda yozilgan sonining ayirmasi doimo eng katta qaysi natural songa bo'linadi?",
+      "v": [
+        "9",
+        "11",
+        "18",
+        "99"
+      ],
+      "t": 0,
+      "izoh": "(10a + b) − (10b + a) = 10a + b − 10b − a = 9(a − b). Bu ifoda har qanday a va b uchun 9 ga karrali. a ≠ b bo'lganda ayirma 11 ga ham, 18 ga ham, 99 ga ham har doim bo'linavermaydi: masalan 31 − 13 = 18 soni 11 ga ham, 99 ga ham bo'linmaydi, 52 − 25 = 27 esa 18 ga bo'linmaydi. a = b bo'lgan yagona holda ayirma 0 ga teng va nol har qanday natural songa qoldiqsiz bo'linadi. Shuning uchun barcha holatlar uchun kafolatlangan eng katta bo'luvchi — 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-shartini-tahlil",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#1b24b5cc"
+    },
+    {
+      "q": "Ikki xonali sonning raqamlari o'rni almashtirilganda son 45 ga ortadi, raqamlarining ko'paytmasi esa 14 ga teng. Dastlabki sonni toping.",
+      "v": [
+        "16",
+        "27",
+        "38",
+        "72"
+      ],
+      "t": 1,
+      "izoh": "Ortish sharti 9(b − a) = 45 dan b − a = 5 ni beradi. Ko'paytma a·b = 14 ga b = a + 5 ni qo'yamiz: a(a + 5) = 14, ya'ni a² + 5a − 14 = 0, bundan a = 2, b = 7. Son 27, tekshirish: 72 − 27 = 45 va 2·7 = 14. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-va-raqamlar-koPaytmasi",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#ffeb2200"
+    },
+    {
+      "q": "Ikki xonali sonda raqamlar o'rni almashtirilsa, son 18 ga kamayadi. Raqamlarining ko'paytmasi 24 ga teng bo'lsa, dastlabki son nechaga teng?",
+      "v": [
+        "42",
+        "46",
+        "64",
+        "86"
+      ],
+      "t": 2,
+      "izoh": "Kamayish sharti 9(a − b) = 18 dan a − b = 2. Ko'paytmaga b = a − 2 ni qo'yamiz: a(a − 2) = 24, ya'ni a² − 2a − 24 = 0, bundan a = 6, b = 4. Son 64, tekshirish: 64 − 46 = 18 va 6·4 = 24. Javob: 64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-va-raqamlar-koPaytmasi",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#61c61a51"
+    },
+    {
+      "q": "Ikki xonali sonning raqamlari ko'paytmasi 18 ga teng. Raqamlar o'rni almashtirilganda son 27 ga ortadi. Shu sonni aniqlang.",
+      "v": [
+        "25",
+        "47",
+        "63",
+        "36"
+      ],
+      "t": 3,
+      "izoh": "Ortish sharti 9(b − a) = 27 dan b − a = 3 kelib chiqadi. Ko'paytmaga b = a + 3 ni qo'yamiz: a(a + 3) = 18, ya'ni a² + 3a − 18 = 0, bundan a = 3, b = 6. Son 36, tekshirish: 63 − 36 = 27 va 3·6 = 18. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-va-raqamlar-koPaytmasi",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#d73787c6"
+    },
+    {
+      "q": "Dilnoza tug'ilgan kuniga ikki xonali son yozilgan shar sotib oldi. Shardagi raqamlar o'rni almashtirilsa son 36 ga kamayadi, raqamlar ko'paytmasi esa 12 ga teng. Shardagi son qaysi?",
+      "v": [
+        "26",
+        "51",
+        "62",
+        "73"
+      ],
+      "t": 2,
+      "izoh": "Kamayish sharti 9(a − b) = 36 dan a − b = 4. Ko'paytmaga b = a − 4 ni qo'yamiz: a(a − 4) = 12, ya'ni a² − 4a − 12 = 0, bundan a = 6, b = 2. Son 62, tekshirish: 62 − 26 = 36 va 6·2 = 12. Javob: 62.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-va-raqamlar-koPaytmasi",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#afe605cf"
+    },
+    {
+      "q": "Ikki xonali son o'z raqamlari yig'indisidan 4 marta katta. Shunday sonlar ichida eng kichigini toping.",
+      "v": [
+        "12",
+        "21",
+        "24",
+        "48"
+      ],
+      "t": 0,
+      "izoh": "Shartni yozamiz: 10a + b = 4(a + b), ya'ni 10a + b = 4a + 4b. Soddalashtiramiz: 6a = 3b, bundan b = 2a. a = 1, 2, 3, 4 uchun sonlar 12, 24, 36, 48 bo'ladi. Eng kichigi 12, chunki 12 = 4·(1 + 2). Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-va-raqamlar-yigindisi-nisbati",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#373a18f8"
+    },
+    {
+      "q": "Ikki xonali son o'z raqamlari yig'indisining 7 barobariga teng va raqamlari yig'indisi 9 ni tashkil qiladi. Bu son qaysi?",
+      "v": [
+        "36",
+        "54",
+        "63",
+        "72"
+      ],
+      "t": 2,
+      "izoh": "Raqamlar yig'indisi 9 bo'lgani uchun son 7·9 = 63 ga teng bo'lishi kerak. Tekshiramiz: 63 ning raqamlari yig'indisi 6 + 3 = 9, demak shart bajariladi. Javob: 63.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-va-raqamlar-yigindisi-nisbati",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#2f0b1326"
+    },
+    {
+      "q": "Ikki xonali son o'z raqamlari yig'indisidan 6 marta katta bo'lsa, u qaysi son ekanligini aniqlang.",
+      "v": [
+        "45",
+        "54",
+        "63",
+        "81"
+      ],
+      "t": 1,
+      "izoh": "Shartni yozamiz: 10a + b = 6(a + b), ya'ni 10a + b = 6a + 6b. Soddalashtiramiz: 4a = 5b. a va b raqam bo'lgani uchun a = 5, b = 4 yagona yechim. Son 54, tekshirish: 5 + 4 = 9 va 6·9 = 54. Javob: 54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-va-raqamlar-yigindisi-nisbati",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#e27b25d7"
+    },
+    {
+      "q": "Ikki xonali son o'z raqamlari yig'indisidan 9 marta katta. Shu sonni toping.",
+      "v": [
+        "18",
+        "72",
+        "81",
+        "90"
+      ],
+      "t": 2,
+      "izoh": "Shart 10a + b = 9(a + b) ko'rinishida yoziladi, bundan 10a + b = 9a + 9b va a = 8b. b = 1 bo'lganda a = 8, katta b da a raqam bo'lmay qoladi. Son 81, tekshirish: 8 + 1 = 9 va 9·9 = 81. Javob: 81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-va-raqamlar-yigindisi-nisbati",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#b997cf5d"
+    },
+    {
+      "q": "Ikki xonali son bilan uning raqamlari yig'indisi orasidagi ayirma 45 ga teng. Shu shartni qanoatlantiruvchi ikki xonali sonlar nechta?",
+      "v": [
+        "1 ta",
+        "5 ta",
+        "9 ta",
+        "10 ta"
+      ],
+      "t": 3,
+      "izoh": "Ayirmani yozamiz: (10a + b) − (a + b) = 9a. Demak 9a = 45, bundan a = 5. Birlar raqami b esa hech qanday cheklovga uchramaydi va 0 dan 9 gacha qiymat oladi. Shunday sonlar: 50, 51, …, 59 — jami 10 ta. Javob: 10 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "son-va-raqamlar-yigindisi-nisbati",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#f7ddc3ad"
+    },
+    {
+      "q": "Ikki xonali sonning o'ng tomoniga 5 raqami yozildi va hosil bo'lgan uch xonali son dastlabki sondan 293 ga katta chiqdi. Dastlabki son nechaga teng?",
+      "v": [
+        "23",
+        "32",
+        "33",
+        "35"
+      ],
+      "t": 1,
+      "izoh": "Dastlabki son N bo'lsin. O'ng tomonga 5 yozilganda son 10N + 5 ga aylanadi. Shart: (10N + 5) − N = 293, ya'ni 9N = 288, bundan N = 32. Tekshiramiz: 325 − 32 = 293. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "songa-raqam-qoshish",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#f13d4c79"
+    },
+    {
+      "q": "Ikki xonali sonning chap tomoniga 3 raqami yozilganda hosil bo'lgan uch xonali son dastlabki sondan 5 marta katta bo'ldi. Dastlabki sonni toping.",
+      "v": [
+        "50",
+        "60",
+        "75",
+        "375"
+      ],
+      "t": 2,
+      "izoh": "Chap tomonga 3 yozilsa son 300 + N ko'rinishga keladi. Shart: 300 + N = 5N, ya'ni 4N = 300, bundan N = 75. Tekshirish: 375 = 5·75. 375 — hosil bo'lgan yangi son, so'ralgani esa dastlabkisi. Javob: 75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "songa-raqam-qoshish",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#7867877c"
+    },
+    {
+      "q": "Ikki xonali sonning o'ng tomoniga 0 raqami qo'shilganda son 621 ga ortdi. Dastlabki son qaysi?",
+      "v": [
+        "59",
+        "62",
+        "69",
+        "96"
+      ],
+      "t": 2,
+      "izoh": "O'ng tomonga 0 qo'shilishi sonni 10 marta orttiradi, yangi son 10N bo'ladi. Shart: 10N − N = 621, ya'ni 9N = 621, bundan N = 69. Tekshirish: 690 − 69 = 621. Javob: 69.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "songa-raqam-qoshish",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#7129f137"
+    },
+    {
+      "q": "Uch xonali sonning oxiridagi 7 raqami o'chirilsa, hosil bo'lgan ikki xonali son dastlabki sondan 322 ga kichik bo'ladi. Dastlabki uch xonali son qaysi?",
+      "v": [
+        "347",
+        "352",
+        "357",
+        "375"
+      ],
+      "t": 2,
+      "izoh": "Qolgan ikki xonali sonni N deb belgilaymiz, dastlabki son 10N + 7 bo'ladi. Shart: (10N + 7) − N = 322, ya'ni 9N = 315 va N = 35. Dastlabki son 10·35 + 7 = 357, tekshirish: 357 − 35 = 322. Javob: 357.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "songa-raqam-qoshish",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#0c00001e"
+    },
+    {
+      "q": "Uch xonali sonning raqamlari yig'indisi 15 ga teng, o'nlar raqami 4, yuzlar raqami esa birlar raqamidan 3 ta katta. Shu sonni toping.",
+      "v": [
+        "447",
+        "645",
+        "744",
+        "843"
+      ],
+      "t": 2,
+      "izoh": "Raqamlarni a, b, c deb olamiz, shart bo'yicha b = 4. Yig'indi a + 4 + c = 15, demak a + c = 11. a = c + 3 ni qo'yamiz: 2c + 3 = 11, bundan c = 4 va a = 7. Son 744, raqamlari yig'indisi 7 + 4 + 4 = 15. Javob: 744.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-xonali-son-raqamlari",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#1fd482b8"
+    },
+    {
+      "q": "Uch xonali sonning yuzlar raqami 5 ga, o'nlar raqami birlar raqamining ikki barobariga teng. Raqamlar yig'indisi 14 bo'lsa, son qaysi?",
+      "v": [
+        "563",
+        "536",
+        "542",
+        "581"
+      ],
+      "t": 0,
+      "izoh": "Yuzlar raqami a = 5, o'nlar raqami b = 2c. Yig'indi shartidan 5 + 2c + c = 14, ya'ni 3c = 9 va c = 3, demak b = 6. Son 563, tekshirish: 5 + 6 + 3 = 14 va 6 = 2·3. Javob: 563.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-xonali-son-raqamlari",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#7a8cb820"
+    },
+    {
+      "q": "Uch xonali sonning raqamlari yig'indisi 6 ga teng, yuzlar raqami 2 ga teng va sonning o'zi 5 ga qoldiqsiz bo'linadi. Bunday sonlar nechta?",
+      "v": [
+        "0 ta",
+        "1 ta",
+        "2 ta",
+        "3 ta"
+      ],
+      "t": 1,
+      "izoh": "5 ga bo'linish uchun birlar raqami 0 yoki 5 bo'lishi kerak. Yuzlar raqami 2 bo'lgani uchun qolgan ikki raqam yig'indisi 4 ga teng. Agar birlar raqami 0 bo'lsa, o'nlar raqami 4 chiqadi — bu 240 soni. Agar birlar raqami 5 bo'lsa, o'nlar raqami manfiy bo'lib qoladi, demak yechim yo'q. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-xonali-son-raqamlari",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#0a7d12cc"
+    },
+    {
+      "q": "Kutubxona javonidagi kitobning inventar raqami uch xonali son bo'lib, uning raqamlari ketma-ket keladigan natural sonlar va yig'indisi 18 ga teng. Bunday sonlarning eng kattasi qaysi?",
+      "v": [
+        "567",
+        "675",
+        "756",
+        "765"
+      ],
+      "t": 3,
+      "izoh": "Ketma-ket uchta natural sonni n − 1, n, n + 1 deb olamiz, ularning yig'indisi 3n = 18, bundan n = 6. Demak raqamlar 5, 6 va 7. Bu uchta raqamdan tuzilgan eng katta son raqamlarni kamayish tartibida yozganda hosil bo'ladi: 765. Javob: 765.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-xonali-son-raqamlari",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#f619fdbd"
+    },
+    {
+      "q": "Uch xonali sonning raqamlari teskari tartibda yozilganda hosil bo'lgan son dastlabkisidan 297 ga kichik bo'ldi. Yuzlar raqami bilan birlar raqami orasidagi farq nechaga teng?",
+      "v": [
+        "3",
+        "9",
+        "27",
+        "33"
+      ],
+      "t": 0,
+      "izoh": "Son 100a + 10b + c, teskarisi 100c + 10b + a. Ayirma (100a + 10b + c) − (100c + 10b + a) = 99(a − c) ga teng. Demak 99(a − c) = 297 va a − c = 3. O'nlar raqami natijaga umuman ta'sir qilmaydi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-xonali-teskari-almashtirish",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#9fb4a19a"
+    },
+    {
+      "q": "Uch xonali son bilan uning raqamlari teskari tartibda yozilgan sonining ayirmasi 495 ga teng bo'lsa, yuzlar va birlar raqamlari ayirmasi qanday?",
+      "v": [
+        "45",
+        "5",
+        "55",
+        "99"
+      ],
+      "t": 1,
+      "izoh": "Yuqoridagidek ayirma 99(a − c) ko'rinishida bo'ladi. Shartdan 99(a − c) = 495, bundan a − c = 495 : 99 = 5. Bu yerda 45 javobi 495 ni 11 ga, 55 esa 9 ga bo'lish xatosidan chiqadi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-xonali-teskari-almashtirish",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#63f845e0"
+    },
+    {
+      "q": "Uch xonali sonning yuzlar raqami 8, birlar raqami 2 ga teng. Raqamlar teskari tartibda yozilsa, son qanchaga kamayadi?",
+      "v": [
+        "540",
+        "594",
+        "606",
+        "693"
+      ],
+      "t": 1,
+      "izoh": "Kamayish miqdori 99(a − c) formulasi bilan topiladi, bu yerda a = 8 va c = 2. Demak 99·(8 − 2) = 99·6 = 594. Tekshirish uchun 812 va 218 ni olamiz: 812 − 218 = 594. Javob: 594.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-xonali-teskari-almashtirish",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#95d4460f"
+    },
+    {
+      "q": "Raqamlari teskari tartibda yozilganda qiymati o'zgarmaydigan uch xonali sonlar 100 bilan 200 orasida nechta bor?",
+      "v": [
+        "9 ta",
+        "10 ta",
+        "11 ta",
+        "19 ta"
+      ],
+      "t": 1,
+      "izoh": "Qiymat o'zgarmasligi uchun yuzlar va birlar raqamlari teng bo'lishi kerak. 100 bilan 200 orasida yuzlar raqami 1, demak birlar raqami ham 1 bo'ladi. O'nlar raqami esa 0 dan 9 gacha erkin: 101, 111, 121, …, 191. Jami 10 ta son. Javob: 10 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-xonali-teskari-almashtirish",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#a7cc539b"
+    },
+    {
+      "q": "47a ko'rinishidagi uch xonali son 3 ga qoldiqsiz bo'linadi. a raqamining eng katta qiymati nechaga teng?",
+      "v": [
+        "1",
+        "4",
+        "7",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "3 ga bo'linish alomatiga ko'ra raqamlar yig'indisi 3 ga karrali bo'lishi kerak: 4 + 7 + a = 11 + a. Bu yig'indi a = 1 da 12, a = 4 da 15, a = 7 da 18 bo'ladi. a = 9 da yig'indi 20 chiqadi va 3 ga bo'linmaydi. Eng katta mos qiymat 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "raqam-va-bolinish-sharti",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#a7093497"
+    },
+    {
+      "q": "5b7 ko'rinishidagi uch xonali son 9 ga qoldiqsiz bo'linsa, b raqami nechaga teng bo'ladi?",
+      "v": [
+        "6",
+        "0",
+        "3",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "9 ga bo'linish alomati raqamlar yig'indisining 9 ga karrali bo'lishini talab qiladi: 5 + b + 7 = 12 + b. Bir xonali b uchun 12 + b ni 9 ga karrali qiladigan yagona qiymat b = 6, chunki 12 + 6 = 18. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "raqam-va-bolinish-sharti",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#dfc64fd9"
+    },
+    {
+      "q": "Ikki xonali sonning raqamlari yig'indisi 10 ga teng va sonning o'zi 4 ga qoldiqsiz bo'linadi. Bunday sonlarning eng kattasini toping.",
+      "v": [
+        "28",
+        "46",
+        "64",
+        "82"
+      ],
+      "t": 2,
+      "izoh": "Avval raqamlari yig'indisi 10 bo'lgan sonlarni yozamiz: 19, 28, 37, 46, 55, 64, 73, 82, 91. Endi ular ichidan 4 ga bo'linadiganlarini ajratamiz: 28 va 64. 46 va 82 juft bo'lsa ham 4 ga bo'linmaydi. Eng kattasi 64. Javob: 64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "raqam-va-bolinish-sharti",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#4cfe3911"
+    },
+    {
+      "q": "O'nlar raqami a, birlar raqami b bo'lgan ikki xonali sonni to'g'ri ifodalagan yozuvni tanlang.",
+      "v": [
+        "a + b",
+        "10a + b",
+        "10b + a",
+        "ab"
+      ],
+      "t": 1,
+      "izoh": "O'nlar raqami sondagi o'nliklar sonini bildiradi, shuning uchun u 10 ga ko'paytiriladi va birlar raqami qo'shiladi. Demak son 10a + b ko'rinishida yoziladi. 10b + a — raqamlar o'rni almashtirilgan son, a + b — raqamlar yig'indisi, ab esa ularning ko'paytmasi. Javob: 10a + b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonni-raqamlar-orqali-ifodalash",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#59416fdd"
+    },
+    {
+      "q": "Yuzlar raqami x, o'nlar raqami y, birlar raqami z bo'lgan uch xonali sonni qaysi ifoda to'g'ri tasvirlaydi?",
+      "v": [
+        "100x + 10y + z",
+        "100z + 10y + x",
+        "100x + y + z",
+        "x + y + z"
+      ],
+      "t": 0,
+      "izoh": "Uch xonali sonda yuzlar raqami 100 ga, o'nlar raqami 10 ga ko'paytiriladi, birlar raqami esa o'zgarishsiz qo'shiladi. Shuning uchun to'g'ri yozuv 100x + 10y + z bo'ladi. 100z + 10y + x — raqamlari teskari yozilgan son, qolgan ikkitasi esa xona qiymatini hisobga olmaydi. Javob: 100x + 10y + z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonni-raqamlar-orqali-ifodalash",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#ea7fa2d8"
+    },
+    {
+      "q": "Ikki xonali sonning o'nlar raqami birlar raqamidan 2 marta katta bo'lsa, bunday sonlar nechta bo'ladi?",
+      "v": [
+        "3 ta",
+        "4 ta",
+        "5 ta",
+        "9 ta"
+      ],
+      "t": 1,
+      "izoh": "Shart a = 2b ko'rinishida yoziladi, bu yerda a — o'nlar, b — birlar raqami. b = 0 bo'lsa a = 0 chiqadi va son ikki xonali bo'lmay qoladi. b = 1, 2, 3, 4 uchun sonlar 21, 42, 63, 84 bo'ladi, b = 5 dan boshlab a raqam bo'lmay qoladi. Jami 4 ta son. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "raqamlar-orasidagi-munosabat",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#e22f187e"
+    },
+    {
+      "q": "Ikki xonali sonning birlar raqami o'nlar raqamidan 3 marta katta va raqamlari yig'indisi 8 ga teng. Bu son qaysi?",
+      "v": [
+        "13",
+        "39",
+        "26",
+        "62"
+      ],
+      "t": 2,
+      "izoh": "Shartga ko'ra b = 3a. Raqamlar yig'indisi a + 3a = 8, ya'ni 4a = 8 va a = 2, demak b = 6. Son 26, tekshiramiz: 6 = 3·2 va 2 + 6 = 8. Javob: 26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "raqamlar-orasidagi-munosabat",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#5c56cba4"
+    },
+    {
+      "q": "Uch xonali sonning o'nlar raqami yuzlar va birlar raqamlari yig'indisiga teng. Yuzlar raqami 3, birlar raqami 4 bo'lsa, sonni toping.",
+      "v": [
+        "374",
+        "304",
+        "347",
+        "734"
+      ],
+      "t": 0,
+      "izoh": "O'nlar raqami b = a + c formulasi bilan topiladi, bu yerda a = 3 va c = 4. Demak b = 3 + 4 = 7. Son yuzlar, o'nlar, birlar tartibida yoziladi: 374. Javob: 374.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "raqamlar-orasidagi-munosabat",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#2b5d8f25"
+    },
+    {
+      "q": "Bekzod uyi eshigidagi ikki xonali sonni shunday ta'rifladi: birlar raqami o'nlar raqamidan 5 ta ortiq, raqamlar ko'paytmasi esa 24 ga teng. Eshikdagi son qaysi?",
+      "v": [
+        "27",
+        "49",
+        "83",
+        "38"
+      ],
+      "t": 3,
+      "izoh": "Shartga ko'ra b = a + 5. Ko'paytmani yozamiz: a(a + 5) = 24, ya'ni a² + 5a − 24 = 0, bundan a = 3 va b = 8. Son 38, tekshiramiz: 8 − 3 = 5 va 3·8 = 24. 27 va 49 da raqamlar farqi 5 bo'lsa ham ko'paytma mos kelmaydi. Javob: 38.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "raqamlar-orasidagi-munosabat",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#3a667d72"
+    },
+    {
+      "q": "Ikki qutida jami 84 ta olma bor. Birinchi qutidagi olmalar ikkinchisidagidan 12 ta ko'p. Birinchi qutida nechta olma bor?",
+      "v": [
+        "36",
+        "42",
+        "48",
+        "54"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi qutidagi olmalar sonini x deb olsak, birinchisida x + 12 ta bo'ladi. Tenglama: x + (x + 12) = 84, ya'ni 2x = 72 va x = 36. Birinchi qutida 36 + 12 = 48 ta olma bor. 42 — farqni hisobga olmasdan yarmini olish natijasi. Javob: 48.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-son-yigindi-va-farq",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#e4fe8c55"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 110 ga, ayirmasi esa 24 ga teng. Ularning kattasini toping.",
+      "v": [
+        "67",
+        "43",
+        "55",
+        "86"
+      ],
+      "t": 0,
+      "izoh": "Katta son yig'indi bilan ayirmaning yarim yig'indisiga teng: (110 + 24) : 2 = 134 : 2 = 67. Kichik son esa 110 − 67 = 43. Tekshiramiz: 67 + 43 = 110 va 67 − 43 = 24. Javob: 67.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-son-yigindi-va-farq",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#13b0ca64"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 72 ga teng va kattasi kichigidan 3 marta katta. Kichik son nechaga teng?",
+      "v": [
+        "24",
+        "18",
+        "36",
+        "54"
+      ],
+      "t": 1,
+      "izoh": "Kichik sonni x deb olsak, kattasi 3x bo'ladi. Tenglama: x + 3x = 72, ya'ni 4x = 72 va x = 18. Katta son 54 ga teng. 24 — yig'indini 3 ga bo'lish xatosidan, 36 esa teng bo'lish xatosidan chiqadi. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-son-yigindi-va-farq",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#37a37846"
+    },
+    {
+      "q": "Otabek va Jasur birgalikda 156 000 so'm to'plashdi. Otabekning puli Jasurnikidan 24 000 so'm ko'p bo'lsa, Jasurda qancha pul bor?",
+      "v": [
+        "66 000 so'm",
+        "78 000 so'm",
+        "90 000 so'm",
+        "132 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Jasurdagi pulni x deb olsak, Otabekda x + 24 000 so'm bor. Tenglama: x + (x + 24 000) = 156 000, ya'ni 2x = 132 000 va x = 66 000. Otabekda esa 90 000 so'm bor. 78 000 — farqni hisobga olmasdan teng bo'lish natijasi. Javob: 66 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-son-yigindi-va-farq",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#152ce58c"
+    },
+    {
+      "q": "Uchta ketma-ket natural sonning yig'indisi 96 ga teng bo'lsa, ularning eng kattasini toping.",
+      "v": [
+        "31",
+        "32",
+        "33",
+        "34"
+      ],
+      "t": 2,
+      "izoh": "Sonlarni n − 1, n, n + 1 deb belgilaymiz, ularning yig'indisi 3n ga teng. Demak 3n = 96 va n = 32, ya'ni sonlar 31, 32, 33. Eng kattasi 33. Javob: 33.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ketma-ket-sonlar",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#50c8c9b4"
+    },
+    {
+      "q": "Ketma-ket keladigan uchta juft sonning yig'indisi 138 ga teng. Ular ichida eng kichigini toping.",
+      "v": [
+        "42",
+        "46",
+        "48",
+        "44"
+      ],
+      "t": 3,
+      "izoh": "Ketma-ket juft sonlar 2 taga farq qiladi, ularni n − 2, n, n + 2 deb olamiz. Yig'indi 3n = 138, bundan n = 46. Sonlar 44, 46, 48 bo'lib, eng kichigi 44. Javob: 44.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ketma-ket-sonlar",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#a09dc33c"
+    },
+    {
+      "q": "Kitobning ochilgan ikki qarama-qarshi sahifasi raqamlari yig'indisi 145 ga teng. Chap tomondagi sahifa raqami nechaga teng?",
+      "v": [
+        "71",
+        "73",
+        "74",
+        "72"
+      ],
+      "t": 3,
+      "izoh": "Ochilgan kitobda chap sahifa juft, o'ng sahifa esa undan bitta katta bo'ladi. Ularni n va n + 1 deb olamiz: n + (n + 1) = 145, ya'ni 2n = 144 va n = 72. 72 juft son, demak u chap sahifa, o'ngi esa 73. Javob: 72.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ketma-ket-sonlar",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#0ec9839c"
+    },
+    {
+      "q": "To'rtta ketma-ket toq sonning yig'indisi 80 ga teng. Ular ichida eng kattasi qaysi?",
+      "v": [
+        "17",
+        "19",
+        "21",
+        "23"
+      ],
+      "t": 3,
+      "izoh": "Toq sonlar 2 taga farq qiladi, ularni n, n + 2, n + 4, n + 6 deb yozamiz. Yig'indi 4n + 12 = 80, bundan 4n = 68 va n = 17. Sonlar 17, 19, 21, 23 bo'lib, eng kattasi 23. Javob: 23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-sonlar",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#b8c2e2bc"
+    },
+    {
+      "q": "Beshta ketma-ket natural sonning yig'indisi 215 ga teng bo'lsa, o'rtadagi son nechaga teng?",
+      "v": [
+        "41",
+        "42",
+        "43",
+        "45"
+      ],
+      "t": 2,
+      "izoh": "Beshta ketma-ket sonni n − 2, n − 1, n, n + 1, n + 2 deb olamiz. Ularning yig'indisi 5n ga teng, chunki qolgan qo'shiluvchilar bir-birini yo'qotadi. Demak 5n = 215 va n = 43. Javob: 43.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ketma-ket-sonlar",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#b700f5e9"
+    },
+    {
+      "q": "O'ylangan songa 12 ni qo'shib, natijani 4 ga ko'paytirsak, 92 hosil bo'ladi. O'ylangan son qaysi?",
+      "v": [
+        "11",
+        "20",
+        "35",
+        "80"
+      ],
+      "t": 0,
+      "izoh": "Amallarni teskari tartibda bekor qilamiz. Avval 4 ga ko'paytirishni bekor qilamiz: 92 : 4 = 23. So'ng 12 ni qo'shishni bekor qilamiz: 23 − 12 = 11. Tekshiramiz: (11 + 12)·4 = 92. 20 — amallar tartibini buzish, 80 esa ko'paytirishni bekor qilmaslik natijasi. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oylangan-son",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#91a34bb9"
+    },
+    {
+      "q": "Aziz bir sonni o'yladi, uni 2 ga bo'ldi, natijaga 17 ni qo'shdi va 41 hosil qildi. Aziz qanday sonni o'ylagan?",
+      "v": [
+        "24",
+        "29",
+        "48",
+        "116"
+      ],
+      "t": 2,
+      "izoh": "Oxirgi amaldan boshlaymiz: 41 − 17 = 24, bu o'ylangan sonning yarmi. Demak sonning o'zi 24·2 = 48. Tekshiramiz: 48 : 2 + 17 = 24 + 17 = 41. 24 — oxirgi qadamni tashlab ketish, 116 esa ayirish o'rniga qo'shish xatosi. Javob: 48.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oylangan-son",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#6b957c27"
+    },
+    {
+      "q": "Sonning uchdan bir qismiga 9 ni qo'shsak, o'sha sonning yarmi hosil bo'ladi. Shu sonni toping.",
+      "v": [
+        "18",
+        "27",
+        "36",
+        "54"
+      ],
+      "t": 3,
+      "izoh": "Izlanayotgan sonni x deb olamiz: x/3 + 9 = x/2. Ikkala tomondan x/3 ni ayiramiz: 9 = x/2 − x/3 = x/6. Demak x = 54. Tekshiramiz: 54 : 3 + 9 = 18 + 9 = 27 va 54 : 2 = 27. Javob: 54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oylangan-son",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#3b05ab39"
+    },
+    {
+      "q": "Sonning beshdan uch qismi 48 ga teng bo'lsa, shu sonning to'rtdan uch qismi nechaga teng?",
+      "v": [
+        "45",
+        "60",
+        "64",
+        "80"
+      ],
+      "t": 1,
+      "izoh": "Avval sonning o'zini topamiz: agar 3/5 qismi 48 bo'lsa, son 48 : 3·5 = 80 ga teng. Endi 80 ning 3/4 qismini hisoblaymiz: 80 : 4·3 = 60. 80 — oraliq natijani javob deb olish xatosi. Javob: 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonning-qismi-shart",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#ef15740f"
+    },
+    {
+      "q": "Sinfdagi o'quvchilarning sakkizdan uch qismi 12 nafarni tashkil qiladi. Sinfda jami nechta o'quvchi bor?",
+      "v": [
+        "20",
+        "24",
+        "36",
+        "32"
+      ],
+      "t": 3,
+      "izoh": "3/8 qismi 12 nafar bo'lsa, bitta qism 12 : 3 = 4 nafarga to'g'ri keladi. Jami 8 ta qism bor, demak sinfda 4·8 = 32 o'quvchi bor. 36 — 12 ni uch marta olish xatosi. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonning-qismi-shart",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#5a8299b8"
+    },
+    {
+      "q": "Sonning 40 foizi uning 25 foizidan 27 ta ko'p bo'lsa, shu sonni toping.",
+      "v": [
+        "45",
+        "90",
+        "135",
+        "180"
+      ],
+      "t": 3,
+      "izoh": "Farqni foizda hisoblaymiz: 40 foiz − 25 foiz = 15 foiz. Demak sonning 15 foizi 27 ga teng, ya'ni 0,15x = 27. Bundan x = 27 : 0,15 = 180. Tekshiramiz: 180 ning 40 foizi 72, 25 foizi 45 va 72 − 45 = 27. Javob: 180.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sonning-qismi-shart",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#fb8aba3f"
+    },
+    {
+      "q": "Otasi o'g'lidan 26 yosh katta. 4 yildan keyin otasining yoshi o'g'lining yoshidan necha yosh ko'p bo'ladi?",
+      "v": [
+        "22",
+        "26",
+        "30",
+        "52"
+      ],
+      "t": 1,
+      "izoh": "Vaqt o'tganda ikkala odamning yoshi bir xil miqdorga ortadi, shuning uchun ular orasidagi farq o'zgarmaydi. 4 yildan keyin ham farq 26 yosh bo'lib qoladi. 30 — farqqa 4 ni qo'shish, 22 esa 4 ni ayirish xatosi. Javob: 26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yosh-farqi-ozgarmasligi",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#f9f29cbd"
+    },
+    {
+      "q": "Hozir Zuhra 11 yoshda, onasi esa 37 yoshda. Necha yildan keyin onasining yoshi Zuhraning yoshidan 2 marta katta bo'ladi?",
+      "v": [
+        "15",
+        "13",
+        "22",
+        "26"
+      ],
+      "t": 0,
+      "izoh": "Yoshlar farqi 37 − 11 = 26 va u hech qachon o'zgarmaydi. Ona yoshi qizinikidan 2 marta katta bo'lgan paytda qizning yoshi aynan shu farqqa, ya'ni 26 ga teng bo'ladi. Zuhra 26 yoshga to'lishi uchun 26 − 11 = 15 yil kerak. Tekshiramiz: 26 va 52. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yosh-farqi-ozgarmasligi",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#f1ec7e57"
+    },
+    {
+      "q": "Aka ukasidan 7 yosh katta. Hozir ularning yoshlari yig'indisi 33 bo'lsa, aka necha yoshda?",
+      "v": [
+        "13",
+        "16",
+        "26",
+        "20"
+      ],
+      "t": 3,
+      "izoh": "Ukaning yoshini x deb olsak, akaniki x + 7 bo'ladi. Tenglama: x + (x + 7) = 33, ya'ni 2x = 26 va x = 13. Demak aka 13 + 7 = 20 yoshda. 13 — ukaning yoshi, so'ralgani esa akaning yoshi. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yosh-farqi-ozgarmasligi",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#34bb8368"
+    },
+    {
+      "q": "Nodira bilan singlisining yoshlari orasidagi farq 6 yil. Nodira 15 yoshga to'lganda singlisi necha yoshda bo'ladi?",
+      "v": [
+        "6",
+        "9",
+        "15",
+        "21"
+      ],
+      "t": 1,
+      "izoh": "Yoshlar farqi vaqt o'tishi bilan o'zgarmaydi, u har doim 6 yil bo'lib qoladi. Nodira katta bo'lgani uchun singlisining yoshi undan 6 ta kam: 15 − 6 = 9. 21 — farqni ayirish o'rniga qo'shish xatosi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yosh-farqi-ozgarmasligi",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#8d9c5a87"
+    },
+    {
+      "q": "Ikki opa-singilning yoshlari yig'indisi 28, yoshlari farqi esa 4 ga teng. Kichigining yoshi nechada?",
+      "v": [
+        "12",
+        "14",
+        "16",
+        "24"
+      ],
+      "t": 0,
+      "izoh": "Kichik yoshni topish uchun yig'indidan farqni ayirib, ikkiga bo'lamiz: (28 − 4) : 2 = 24 : 2 = 12. Kattasi esa 12 + 4 = 16 yoshda. Tekshiramiz: 12 + 16 = 28 va 16 − 12 = 4. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yosh-farqi-ozgarmasligi",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#ac6199fb"
+    },
+    {
+      "q": "Hozir otaning yoshi o'g'lining yoshidan 4 marta katta. 6 yildan keyin ota o'g'lidan 3 marta katta bo'ladi. Hozir o'g'il necha yoshda?",
+      "v": [
+        "9",
+        "12",
+        "18",
+        "48"
+      ],
+      "t": 1,
+      "izoh": "O'g'ilning hozirgi yoshini x deb olsak, otaniki 4x bo'ladi. 6 yildan keyin: 4x + 6 = 3(x + 6). Qavsni ochamiz: 4x + 6 = 3x + 18, bundan x = 12. Demak ota 48 yoshda. 48 — otaning yoshi, so'ralgani esa o'g'ilniki. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yosh-nisbati-kelajakda",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#16a10851"
+    },
+    {
+      "q": "Hozir Sarvar 8 yoshda, akasi 20 yoshda. Necha yildan so'ng akasining yoshi Sarvarnikidan 1,5 marta katta bo'ladi?",
+      "v": [
+        "4",
+        "12",
+        "24",
+        "16"
+      ],
+      "t": 3,
+      "izoh": "Izlanayotgan yillar sonini t deb olamiz: 20 + t = 1,5·(8 + t). O'ng tomonni ochamiz: 20 + t = 12 + 1,5t, bundan 8 = 0,5t va t = 16. Tekshiramiz: 8 + 16 = 24, 20 + 16 = 36 va 36 : 24 = 1,5. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yosh-nisbati-kelajakda",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#c2418c2a"
+    },
+    {
+      "q": "Onasining yoshi qizining yoshidan 3 marta katta. 10 yildan keyin onasi qizidan 2 marta katta bo'ladi. Hozir onasi necha yoshda?",
+      "v": [
+        "30",
+        "10",
+        "20",
+        "40"
+      ],
+      "t": 0,
+      "izoh": "Qizning yoshini x deb olsak, onaniki 3x bo'ladi. 10 yildan keyin: 3x + 10 = 2(x + 10), ya'ni 3x + 10 = 2x + 20 va x = 10. Demak ona hozir 3·10 = 30 yoshda. 10 — qizning yoshi, so'ralgani onaning yoshi. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yosh-nisbati-kelajakda",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#ca5796ca"
+    },
+    {
+      "q": "Hozir Kamola 9 yoshda, bobosi 63 yoshda. Bobosining yoshi Kamolanikidan 4 marta katta bo'lishi uchun necha yil o'tishi kerak?",
+      "v": [
+        "7",
+        "9",
+        "12",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "Yillar sonini t deb olamiz: 63 + t = 4(9 + t). Qavsni ochamiz: 63 + t = 36 + 4t, bundan 27 = 3t va t = 9. Tekshiramiz: 9 + 9 = 18, 63 + 9 = 72 va 72 = 4·18. 7 — hozirgi nisbat 63 : 9 dan chiqadigan xato. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yosh-nisbati-kelajakda",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#52660148"
+    },
+    {
+      "q": "Ikki aka-ukaning hozirgi yoshlari 5 va 15 ga teng. Necha yildan keyin kattasining yoshi kichigining yoshidan 1,5 marta ko'p bo'ladi?",
+      "v": [
+        "5",
+        "10",
+        "15",
+        "20"
+      ],
+      "t": 2,
+      "izoh": "Yillar sonini t deb belgilaymiz: 15 + t = 1,5·(5 + t). O'ng tomon 7,5 + 1,5t ga teng, demak 15 + t = 7,5 + 1,5t va 7,5 = 0,5t. Bundan t = 15. Tekshiramiz: 5 + 15 = 20, 15 + 15 = 30 va 30 : 20 = 1,5. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yosh-nisbati-kelajakda",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#47715b43"
+    },
+    {
+      "q": "Raqamlari yig'indisi 12 ga teng bo'lgan ikki xonali sonlar nechta ekanligini aniqlang.",
+      "v": [
+        "6 ta",
+        "7 ta",
+        "8 ta",
+        "9 ta"
+      ],
+      "t": 1,
+      "izoh": "O'nlar raqami 3 dan kichik bo'lsa, birlar raqami 9 dan oshib ketadi. Shuning uchun mos sonlarni yozamiz: 39, 48, 57, 66, 75, 84, 93. Boshqa variant yo'q, chunki o'nlar raqami 9 dan katta bo'lolmaydi. Jami 7 ta son. Javob: 7 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-xonali-sonlar-sanash",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#a5a64478"
+    },
+    {
+      "q": "Ikki xonali sonlardan nechtasining o'nlar raqami birlar raqamidan katta ekanligini aniqlang.",
+      "v": [
+        "36 ta",
+        "44 ta",
+        "54 ta",
+        "45 ta"
+      ],
+      "t": 3,
+      "izoh": "O'nlar raqami a bo'lganda birlar raqami 0 dan a − 1 gacha qiymat oladi, ya'ni a ta variant bor. a = 1 uchun 1 ta, a = 2 uchun 2 ta va hokazo, a = 9 uchun 9 ta. Jami 1 + 2 + … + 9 = 45 ta son. Javob: 45 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-xonali-sonlar-sanash",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#e1ee8cf4"
+    },
+    {
+      "q": "Raqamlari yig'indisi 2 ga teng bo'lgan uch xonali sonlar nechta ekanligini toping.",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "6 ta"
+      ],
+      "t": 1,
+      "izoh": "Yuzlar raqami noldan farqli bo'lishi shart, shuning uchun u 1 yoki 2 ga teng. Yuzlar raqami 2 bo'lsa qolgan ikkitasi nol: 200. Yuzlar raqami 1 bo'lsa qolgan raqamlar yig'indisi 1 ga teng: 110 va 101. Jami 3 ta son. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-xonali-sonlar-sanash",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#4d9ffeac"
+    },
+    {
+      "q": "Ikki xonali sonning birlar raqami b, o'nlar raqami esa undan 3 ta katta. Shu son qanday ifodalanadi?",
+      "v": [
+        "10b + 3",
+        "11b + 3",
+        "11b − 30",
+        "11b + 30"
+      ],
+      "t": 3,
+      "izoh": "O'nlar raqami b + 3 ga teng, shuning uchun son 10(b + 3) + b ko'rinishida yoziladi. Qavsni ochamiz: 10b + 30 + b = 11b + 30. 11b + 3 — o'nlar raqamini 10 ga ko'paytirishni unutish natijasi. Javob: 11b + 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonni-raqamlar-orqali-ifodalash",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#26996aaf"
+    },
+    {
+      "q": "Raqamlari a va b bo'lgan ikki xonali son bilan raqamlari o'rni almashtirilgan sonning yig'indisi qanday ko'rinishga ega bo'ladi?",
+      "v": [
+        "9(a + b)",
+        "10(a + b)",
+        "11(a + b)",
+        "11(a − b)"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki son 10a + b, almashtirilgani esa 10b + a. Ularni qo'shamiz: 10a + b + 10b + a = 11a + 11b = 11(a + b). 9(a + b) — ayirma bilan chalkashtirish natijasi, chunki ayirmada 9 ko'paytuvchi chiqadi. Javob: 11(a + b).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonni-raqamlar-orqali-ifodalash",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#28a737cd"
+    },
+    {
+      "q": "Bobomning yoshi ikki xonali son bo'lib, raqamlari yig'indisi 12 ga teng. Raqamlar o'rni almashtirilsa, hosil bo'lgan son bobomning yoshidan 36 ga kichik bo'ladi. Bobom necha yoshda?",
+      "v": [
+        "48",
+        "75",
+        "84",
+        "93"
+      ],
+      "t": 2,
+      "izoh": "Yoshni 10a + b deb yozamiz, shart bo'yicha a + b = 12. Kamayish sharti: 9(a − b) = 36, ya'ni a − b = 4. Ikki tenglikdan a = 8 va b = 4 chiqadi. Bobo 84 yoshda, tekshirish: 84 − 48 = 36 va 8 + 4 = 12. Javob: 84.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yosh-raqamlari-shart",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#4b6a8a1a"
+    },
+    {
+      "q": "5 yil oldin otaning yoshi o'g'lining yoshidan 6 marta katta edi. Hozir ota 41 yoshda bo'lsa, o'g'il hozir necha yoshda?",
+      "v": [
+        "11",
+        "6",
+        "7",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "5 yil oldin ota 41 − 5 = 36 yoshda bo'lgan. O'sha paytda o'g'ilning yoshi 36 : 6 = 6 ga teng edi. Hozirgi yoshini topish uchun o'sha yoshga 5 yilni qo'shamiz: 6 + 5 = 11. 6 — o'tmishdagi yosh, so'ralgani esa hozirgisi. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yosh-nisbati-otmishda",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#80a9647e"
+    },
+    {
+      "q": "Hozir onasi 34 yoshda, qizi esa 10 yoshda. Necha yil oldin onasining yoshi qizinikidan 4 marta katta bo'lgan edi?",
+      "v": [
+        "4",
+        "6",
+        "8",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Izlanayotgan yillar sonini t deb olamiz: 34 − t = 4(10 − t). Qavsni ochamiz: 34 − t = 40 − 4t, bundan 3t = 6 va t = 2. Tekshiramiz: 2 yil oldin ona 32, qizi 8 yoshda bo'lgan va 32 = 4·8. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yosh-nisbati-otmishda",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#8a6a76a5"
+    },
+    {
+      "q": "3 yil oldin aka bilan ukaning yoshlari yig'indisi 19 ga teng edi. Hozir ularning yoshlari yig'indisi nechaga teng?",
+      "v": [
+        "25",
+        "19",
+        "22",
+        "28"
+      ],
+      "t": 0,
+      "izoh": "Har bir odamning yoshi 3 yilda 3 ga ortadi, ikki kishida esa yig'indi 2·3 = 6 ga ortadi. Demak hozirgi yig'indi 19 + 6 = 25 ga teng. 22 — faqat bitta kishining yoshini orttirish xatosidan chiqadi. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yosh-nisbati-otmishda",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#2ffe91cf"
+    },
+    {
+      "q": "Hozir Ozoda 24 yoshda. 8 yil oldin uning yoshi singlisining hozirgi yoshiga teng edi. Singlisi necha yoshda?",
+      "v": [
+        "8",
+        "16",
+        "12",
+        "32"
+      ],
+      "t": 1,
+      "izoh": "8 yil oldin Ozoda 24 − 8 = 16 yoshda bo'lgan. Shart bo'yicha aynan shu son singlisining hozirgi yoshiga teng. Demak singlisi 16 yoshda. 32 — ayirish o'rniga qo'shish xatosi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yosh-nisbati-otmishda",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#b5f3e2a7"
+    },
+    {
+      "q": "6 yil oldin Rustamning yoshi uning hozirgi yoshining yarmiga teng edi. Rustam hozir necha yoshda?",
+      "v": [
+        "12",
+        "6",
+        "18",
+        "24"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi yoshni x deb olamiz: x − 6 = x/2. Ikkala tomondan x/2 ni ayiramiz: x/2 − 6 = 0, ya'ni x/2 = 6 va x = 12. Tekshiramiz: 6 yil oldin Rustam 6 yoshda bo'lgan, bu esa 12 ning yarmi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yosh-nisbati-otmishda",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#5733518d"
+    },
+    {
+      "q": "2 yil oldin otaning yoshi o'g'lining yoshidan 5 marta katta edi, 6 yildan keyin esa 3 marta katta bo'ladi. Hozir o'g'il necha yoshda?",
+      "v": [
+        "8",
+        "16",
+        "42",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "O'g'ilning hozirgi yoshi x, otaniki y bo'lsin. Birinchi shart: y − 2 = 5(x − 2), bundan y = 5x − 8. Ikkinchi shart: y + 6 = 3(x + 6). Birinchisini ikkinchisiga qo'yamiz: 5x − 8 + 6 = 3x + 18, ya'ni 2x = 20 va x = 10, y = 42. Tekshiramiz: 2 yil oldin 40 = 5·8, 6 yildan keyin 48 = 3·16. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-vaqt-sharti",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#ccddffbf"
+    },
+    {
+      "q": "3 yil oldin onasining yoshi qizining yoshidan 4 marta katta edi. 9 yildan keyin esa u qizidan 2 marta katta bo'ladi. Hozir ona necha yoshda?",
+      "v": [
+        "27",
+        "9",
+        "33",
+        "36"
+      ],
+      "t": 0,
+      "izoh": "Qizning hozirgi yoshi d, onaniki m bo'lsin. Birinchi shart: m − 3 = 4(d − 3), bundan m = 4d − 9. Ikkinchi shart: m + 9 = 2(d + 9). Qo'yib yechamiz: 4d − 9 + 9 = 2d + 18, ya'ni 2d = 18 va d = 9, m = 27. Tekshiramiz: 3 yil oldin 24 = 4·6, 9 yildan keyin 36 = 2·18. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-vaqt-sharti",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#5b1068f3"
+    },
+    {
+      "q": "Hozir aka ukasidan 2 marta katta, 4 yil oldin esa 3 marta katta edi. 5 yildan keyin ularning yoshlari yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "24",
+        "29",
+        "34",
+        "44"
+      ],
+      "t": 2,
+      "izoh": "Ukaning hozirgi yoshi x bo'lsa, akaniki 2x. Shart: 2x − 4 = 3(x − 4), ya'ni 2x − 4 = 3x − 12 va x = 8, aka esa 16 yoshda. 5 yildan keyin ular 13 va 21 yoshda bo'ladi, yig'indi 13 + 21 = 34. 24 — hozirgi yig'indi (unga har ikkalasi uchun 5 dan qo'shilishi kerak edi), 29 esa 5 yilni faqat bitta kishiga qo'shish xatosi. Javob: 34.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-vaqt-sharti",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#e989d01f"
+    },
+    {
+      "q": "8 yildan keyin Diloromning yoshi uning 8 yil oldingi yoshidan 3 marta katta bo'ladi. Dilorom hozir necha yoshda?",
+      "v": [
+        "8",
+        "12",
+        "24",
+        "16"
+      ],
+      "t": 3,
+      "izoh": "Hozirgi yoshni x deb olamiz: x + 8 = 3(x − 8). Qavsni ochamiz: x + 8 = 3x − 24, bundan 2x = 32 va x = 16. Tekshiramiz: 8 yildan keyin 24, 8 yil oldin 8 va 24 = 3·8. 24 — kelajakdagi yosh, so'ralgani esa hozirgisi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-vaqt-sharti",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#410c817c"
+    },
+    {
+      "q": "Ota, ona va o'g'ilning yoshlari yig'indisi 86 ga teng. Ota onadan 3 yosh katta, o'g'il esa onadan 22 yosh kichik. Ona necha yoshda?",
+      "v": [
+        "35",
+        "32",
+        "38",
+        "13"
+      ],
+      "t": 0,
+      "izoh": "Onaning yoshini m deb olamiz: ota m + 3, o'g'il esa m − 22 yoshda. Yig'indini yozamiz: m + (m + 3) + (m − 22) = 3m − 19 = 86, bundan 3m = 105 va m = 35. Tekshiramiz: 35 + 38 + 13 = 86. 38 — otaning, 13 esa o'g'ilning yoshi. Javob: 35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoshlar-yigindisi-va-nisbat",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#6d6aeab6"
+    },
+    {
+      "q": "Uch aka-ukaning yoshlari 2 : 3 : 5 nisbatda. Ularning yoshlari yig'indisi 40 ga teng bo'lsa, eng kattasining yoshi nechada?",
+      "v": [
+        "8",
+        "20",
+        "12",
+        "25"
+      ],
+      "t": 1,
+      "izoh": "Nisbat hadlarining yig'indisi 2 + 3 + 5 = 10 ta qismni beradi. Bitta qism 40 : 10 = 4 yoshga to'g'ri keladi. Eng kattasiga 5 qism tegadi: 5·4 = 20. Tekshiramiz: 8 + 12 + 20 = 40. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoshlar-yigindisi-va-nisbat",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#7ce6d42b"
+    },
+    {
+      "q": "Guruhdagi 4 nafar bolaning o'rtacha yoshi 12 ga teng. Ularga 17 yoshli bola qo'shilsa, guruhning o'rtacha yoshi qanday bo'ladi?",
+      "v": [
+        "14",
+        "16",
+        "29",
+        "13"
+      ],
+      "t": 3,
+      "izoh": "4 nafar bolaning yoshlari yig'indisi 4·12 = 48 ga teng. Yangi bola qo'shilgach yig'indi 48 + 17 = 65, bolalar soni esa 5 ta bo'ladi. O'rtacha yosh 65 : 5 = 13. 16 — bolalar sonini yangilamay, 65 ni eski 4 ga bo'lish xatosi: bunda 16,25 chiqadi va o'quvchi uni 16 ga yaxlitlab yuboradi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoshlar-yigindisi-va-nisbat",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#16721a5b"
+    },
+    {
+      "q": "Onasi bilan ikki qizining yoshlari yig'indisi 62 ga teng. Ona katta qizidan 20 yosh, kichik qizidan esa 26 yosh katta. Onaning yoshi nechada?",
+      "v": [
+        "36",
+        "42",
+        "16",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "Onaning yoshini m deb olamiz: qizlari m − 20 va m − 26 yoshda. Yig'indi m + (m − 20) + (m − 26) = 3m − 46 = 62, bundan 3m = 108 va m = 36. Tekshiramiz: 36 + 16 + 10 = 62. 16 va 10 — qizlarning yoshlari. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoshlar-yigindisi-va-nisbat",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#001ad019"
+    },
+    {
+      "q": "Zilola 2026-yilda 14 yoshga to'ldi. Uning ukasi undan 5 yosh kichik bo'lsa, uka qaysi yilda tug'ilgan?",
+      "v": [
+        "2007",
+        "2012",
+        "2017",
+        "2021"
+      ],
+      "t": 2,
+      "izoh": "Zilola 2026 − 14 = 2012-yilda tug'ilgan. Ukasi undan 5 yosh kichik, ya'ni 5 yil keyin dunyoga kelgan: 2012 + 5 = 2017. 2007 — 5 ni qo'shish o'rniga ayirish xatosi. Javob: 2017.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yosh-va-tugilgan-yil",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#e48bafec"
+    },
+    {
+      "q": "Nodirbek 2026-yilda 22 yoshga to'ldi. U qaysi yilda tug'ilgan?",
+      "v": [
+        "2003",
+        "2005",
+        "2048",
+        "2004"
+      ],
+      "t": 3,
+      "izoh": "Tug'ilgan yilni topish uchun joriy yildan yoshni ayiramiz: 2026 − 22 = 2004. Tekshiramiz: 2004 dan 2026 gacha aynan 22 yil o'tadi. 2048 — ayirish o'rniga qo'shish xatosi. Javob: 2004.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yosh-va-tugilgan-yil",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#09e7bafe"
+    },
+    {
+      "q": "Bobosi 1958-yilda, nabirasi esa 2011-yilda tug'ilgan. Bobosi nabirasidan necha yosh katta?",
+      "v": [
+        "53",
+        "43",
+        "51",
+        "63"
+      ],
+      "t": 0,
+      "izoh": "Yoshlar farqi tug'ilgan yillar ayirmasiga teng: 2011 − 1958 = 53. Bu farq yillar o'tishi bilan o'zgarmaydi. 43 va 63 — o'nliklarni ayirishdagi xatolardan chiqadi. Javob: 53.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yosh-va-tugilgan-yil",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#81447ef2"
+    },
+    {
+      "q": "Hozir ota va o'g'ilning yoshlari yig'indisi 46 ga teng. 7 yildan keyin bu yig'indi nechaga teng bo'ladi?",
+      "v": [
+        "53",
+        "60",
+        "46",
+        "67"
+      ],
+      "t": 1,
+      "izoh": "Ikki kishining har biri 7 yilga kattaradi, demak yig'indi 2·7 = 14 ga ortadi. Yangi yig'indi 46 + 14 = 60 bo'ladi. 53 — faqat bitta odamga 7 yil qo'shish xatosi. Javob: 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoshlar-yigindisi-vaqt-bilan",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#b034ae51"
+    },
+    {
+      "q": "Uch kishilik oilaning yoshlari yig'indisi hozir 78 ga teng. 5 yildan keyin bu yig'indi qanday bo'ladi?",
+      "v": [
+        "83",
+        "88",
+        "90",
+        "93"
+      ],
+      "t": 3,
+      "izoh": "Uch kishining har biri 5 yilga kattaradi, shuning uchun yig'indi 3·5 = 15 ga ortadi. Yangi yig'indi 78 + 15 = 93 ga teng. 83 — bir kishiga, 88 esa ikki kishiga 5 yil qo'shish xatosi. Javob: 93.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoshlar-yigindisi-vaqt-bilan",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#3b245a4a"
+    },
+    {
+      "q": "Sinfdagi 25 o'quvchining yoshlari yig'indisi hozir 350 ga teng. Ikki yildan keyin bu yig'indi qanchaga ortadi?",
+      "v": [
+        "50",
+        "2",
+        "25",
+        "400"
+      ],
+      "t": 0,
+      "izoh": "Har bir o'quvchining yoshi 2 ga ortadi, o'quvchilar esa 25 nafar. Demak yig'indi 25·2 = 50 ga ortadi. 400 — yangi yig'indining o'zi, savolda esa ortish miqdori so'ralgan. Javob: 50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoshlar-yigindisi-vaqt-bilan",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#b374343e"
+    },
+    {
+      "q": "Ikki opa-singilning hozirgi yoshlari nisbati 3 : 5 ga teng. 4 yildan keyin bu nisbat 5 : 7 bo'ladi. Kichigining hozirgi yoshi nechada?",
+      "v": [
+        "8",
+        "10",
+        "6",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Yoshlarni 3k va 5k deb olamiz. 4 yildan keyin nisbat (3k + 4) : (5k + 4) = 5 : 7 bo'ladi. Krest usulida ko'paytiramiz: 7(3k + 4) = 5(5k + 4), ya'ni 21k + 28 = 25k + 20, bundan 4k = 8 va k = 2. Kichigi 3·2 = 6 yoshda. Tekshiramiz: 6 va 10, 4 yildan keyin 10 va 14, nisbat 5 : 7. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yosh-nisbatlari",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#865ccf48"
+    },
+    {
+      "q": "Ota va o'g'ilning yoshlari nisbati 7 : 2 ga teng. 3 yildan keyin bu nisbat 3 : 1 bo'ladi. Ota hozir necha yoshda?",
+      "v": [
+        "12",
+        "35",
+        "45",
+        "42"
+      ],
+      "t": 3,
+      "izoh": "Yoshlarni 7k va 2k deb belgilaymiz. 3 yildan keyin: 7k + 3 = 3(2k + 3), ya'ni 7k + 3 = 6k + 9 va k = 6. Ota 7·6 = 42, o'g'il esa 12 yoshda. Tekshiramiz: 3 yildan keyin 45 va 15, ularning nisbati 3 : 1. 45 — otaning kelajakdagi yoshi. Javob: 42.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yosh-nisbatlari",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#046f1ea1"
+    },
+    {
+      "q": "Ikki aka-ukaning yoshlari nisbati 4 : 7, yoshlari farqi esa 9 ga teng. Kattasining yoshi nechada?",
+      "v": [
+        "21",
+        "12",
+        "28",
+        "33"
+      ],
+      "t": 0,
+      "izoh": "Nisbat hadlari farqi 7 − 4 = 3 ta qismni beradi, bu esa 9 yoshga to'g'ri keladi. Demak bitta qism 9 : 3 = 3 yosh. Kattasiga 7 qism tegadi: 7·3 = 21. Tekshiramiz: kichigi 12, farq 21 − 12 = 9. 12 — kichigining yoshi. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yosh-nisbatlari",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#fcd9ca68"
+    },
+    {
+      "q": "Amaki bilan jiyanning yoshlari nisbati 5 : 2 ga teng, yoshlari yig'indisi esa 49. Jiyan necha yoshda?",
+      "v": [
+        "7",
+        "14",
+        "21",
+        "35"
+      ],
+      "t": 1,
+      "izoh": "Nisbat hadlari yig'indisi 5 + 2 = 7 ta qismni beradi. Bitta qism 49 : 7 = 7 yoshga teng. Jiyanga 2 qism tegadi: 2·7 = 14. Tekshiramiz: amaki 35, jiyan 14 va 35 + 14 = 49. 35 — amakining yoshi. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yosh-nisbatlari",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#44ec2330"
+    },
+    {
+      "q": "Otamning yoshi ikki xonali son bo'lib, u o'z raqamlari yig'indisidan 5 marta katta. Otam necha yoshda?",
+      "v": [
+        "27",
+        "36",
+        "54",
+        "45"
+      ],
+      "t": 3,
+      "izoh": "Yoshni 10a + b deb yozamiz: 10a + b = 5(a + b), ya'ni 10a + b = 5a + 5b. Soddalashtiramiz: 5a = 4b, bundan raqamlar uchun yagona yechim a = 4, b = 5. Yosh 45, tekshirish: 4 + 5 = 9 va 5·9 = 45. Javob: 45.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yosh-raqamlari-shart",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#014a8f09"
+    },
+    {
+      "q": "Onaning yoshi o'g'lining yoshidagi raqamlar o'rni almashtirilganda hosil bo'ladi. Ularning yoshlari yig'indisi 77, farqi esa 27 bo'lsa, ona necha yoshda?",
+      "v": [
+        "52",
+        "25",
+        "41",
+        "63"
+      ],
+      "t": 0,
+      "izoh": "Onaning yoshini 10a + b, o'g'ilnikini 10b + a deb olamiz. Yig'indi (10a + b) + (10b + a) = 11(a + b) = 77, demak a + b = 7. Farq 9(a − b) = 27, demak a − b = 3. Bundan a = 5 va b = 2. Ona 52, o'g'il 25 yoshda, tekshirish: 52 + 25 = 77 va 52 − 25 = 27. Javob: 52.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yosh-raqamlari-shart",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#d4227cb1"
+    },
+    {
+      "q": "Xolamning yoshi ikki xonali son bo'lib, uning raqamlari ko'paytmasi 12, raqamlari yig'indisi esa 7 ga teng. O'nlar raqami kattaroq bo'lsa, xolam necha yoshda?",
+      "v": [
+        "34",
+        "26",
+        "43",
+        "62"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytmasi 12 bo'lgan raqam juftlarini yozamiz: 2 va 6, 3 va 4. Ular ichida yig'indisi 7 bo'lgani 3 bilan 4. O'nlar raqami kattaroq bo'lgani uchun yosh 43 ga teng. Tekshiramiz: 4·3 = 12 va 4 + 3 = 7. 34 — raqamlar o'rni almashtirilgan variant. Javob: 43.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yosh-raqamlari-shart",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#52f2e73a"
+    },
+    {
+      "q": "Hozir Shahnozaning yoshi singlisining yoshidan 4 marta katta, 3 yil oldin esa 7 marta katta edi. Shahnoza hozir necha yoshda?",
+      "v": [
+        "6",
+        "18",
+        "21",
+        "24"
+      ],
+      "t": 3,
+      "izoh": "Singlisining hozirgi yoshi x bo'lsa, Shahnozaniki 4x. Shart: 4x − 3 = 7(x − 3), ya'ni 4x − 3 = 7x − 21, bundan 3x = 18 va x = 6. Shahnoza 4·6 = 24 yoshda. Tekshiramiz: 3 yil oldin 21 va 3, 21 = 7·3. 6 — singlisining yoshi. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yosh-murakkab-shart",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#3ea50658"
+    },
+    {
+      "q": "Otaning yoshi 50, ikki farzandining yoshlari esa 14 va 10 ga teng. Necha yildan keyin farzandlarning yoshlari yig'indisi otaning yoshiga teng bo'ladi?",
+      "v": [
+        "26",
+        "13",
+        "24",
+        "52"
+      ],
+      "t": 0,
+      "izoh": "Hozir farzandlar yoshlari yig'indisi 14 + 10 = 24. Har yili bu yig'indi 2 ga, otaning yoshi esa 1 ga ortadi. t yildan keyin: 24 + 2t = 50 + t, bundan t = 26. Tekshiramiz: farzandlar 40 va 36 yoshda, yig'indi 76; ota ham 76 yoshda. 13 — farqni ikkiga bo'lish xatosi. Javob: 26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yosh-murakkab-shart",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#8ebfb9f9"
+    },
+    {
+      "q": "Bir necha yil oldin Zebo 12 yoshda edi, hozir esa uning yoshi o'sha paytdagidan 1,5 marta katta. Zebo hozir necha yoshda?",
+      "v": [
+        "16",
+        "18",
+        "24",
+        "30"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi yosh o'sha paytdagi yoshning 1,5 barobariga teng. Demak 12·1,5 = 18. Tekshiramiz: 18 : 12 = 1,5, ya'ni shart bajariladi. 24 — 1,5 o'rniga 2 marta olish xatosi. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yosh-murakkab-shart",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#3fb8265f"
+    },
+    {
+      "q": "Hozir o'g'ilning yoshi otasining yoshining beshdan bir qismiga teng. 10 yildan keyin u otasining yoshining uchdan bir qismiga teng bo'ladi. Ota hozir necha yoshda?",
+      "v": [
+        "10",
+        "40",
+        "50",
+        "60"
+      ],
+      "t": 2,
+      "izoh": "Otaning yoshini f, o'g'ilnikini x deb olamiz: x = f/5. 10 yildan keyin x + 10 = (f + 10)/3. Birinchisini qo'yamiz: f/5 + 10 = (f + 10)/3. Ikkala tomonni 15 ga ko'paytiramiz: 3f + 150 = 5f + 50, bundan 2f = 100 va f = 50. Tekshiramiz: o'g'il 10 yoshda, 10 yildan keyin 20 va 60 : 3 = 20. 10 — o'g'ilning yoshi. Javob: 50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yosh-murakkab-shart",
+      "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir#90680a79"
+    }
+  ]
+}

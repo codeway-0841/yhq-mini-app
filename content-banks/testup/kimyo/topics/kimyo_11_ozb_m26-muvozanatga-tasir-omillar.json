@@ -1,0 +1,546 @@
+{
+  "nom": "26-mavzu. Kimyoviy muvozanat va unga ta'sir etuvchi omillar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kimyoviy muvozanat holatiga qaysi omillar ta'sir ko'rsatadi?",
+      "v": [
+        "Moddalarning konsentratsiyasi, harorat va gazsimon moddalar uchun bosim",
+        "Faqat katalizator",
+        "Faqat idishning shakli",
+        "Faqat moddalarning rangi"
+      ],
+      "t": 0,
+      "izoh": "Muvozanatga konsentratsiya, harorat va gazlar uchun bosim ta'sir ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#c2e9cdf7"
+    },
+    {
+      "q": "Reaksiya sistemasining bir muvozanat holatidan boshqasiga o'tishi nima deyiladi?",
+      "v": [
+        "Kimyoviy muvozanatning siljishi (yoki surilishi)",
+        "Kimyoviy muvozanatning to'xtashi",
+        "Reaksiyaning qaytmas bo'lishi",
+        "Katalizning boshlanishi"
+      ],
+      "t": 0,
+      "izoh": "Bir muvozanat holatidan boshqasiga o'tish kimyoviy muvozanatning siljishi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#73320677"
+    },
+    {
+      "q": "Muvozanatning siljishi qachon va kim tomonidan kashf etilgan prinsipga bo'ysunadi?",
+      "v": [
+        "1884-yilda Le-Shatelye prinsipiga",
+        "1808-yilda Dalton qonuniga",
+        "1869-yilda Mendeleyev qonuniga",
+        "1774-yilda Pristli qonuniga"
+      ],
+      "t": 0,
+      "izoh": "Muvozanatning siljishi 1884-yilda kashf etilgan Le-Shatelye prinsipiga bo'ysunadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#1e289dcc"
+    },
+    {
+      "q": "Le-Shatelye prinsipi qanday ta'riflanadi?",
+      "v": [
+        "Kimyoviy muvozanat holatida turgan sistemada tashqi sharoitlardan biri (harorat, bosim yoki konsentratsiya) o'zgartirilsa, muvozanat tashqi ta'sirni kamaytiruvchi reaksiya tomoniga siljiydi",
+        "Harorat oshganda har qanday reaksiya tezlashadi",
+        "Katalizator muvozanatni o'ngga siljitadi",
+        "Bosim har qanday sistemada muvozanatni o'zgartiradi"
+      ],
+      "t": 0,
+      "izoh": "Le-Shatelye prinsipi: tashqi ta'sir o'zgarganda muvozanat uni kamaytiruvchi tomon siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#2fc51be6"
+    },
+    {
+      "q": "Muvozanatda turgan sistemada biror moddaning miqdorini oshirsak, muvozanat qayoqqa siljiydi?",
+      "v": [
+        "O'sha moddaning miqdorini kamaytiruvchi tomonga",
+        "O'sha moddani ko'paytiruvchi tomonga",
+        "Muvozanat o'zgarmaydi",
+        "Avval chapga, keyin o'ngga"
+      ],
+      "t": 0,
+      "izoh": "Modda miqdori oshirilsa, muvozanat uni kamaytiruvchi tomonga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#804d4ab3"
+    },
+    {
+      "q": "Muvozanatda turgan sistemaga A va B moddalarni qo'shsak, muvozanat qayoqqa siljiydi va nima uchun?",
+      "v": [
+        "O'ng tomonga, chunki to'g'ri reaksiya tezligi ortadi, teskari reaksiya tezligi o'zgarmaydi",
+        "Chap tomonga, chunki teskari reaksiya tezlashadi",
+        "Siljimaydi, chunki muvozanat konstantasi o'zgarmaydi",
+        "Avval o'ngga, keyin qaytadi"
+      ],
+      "t": 0,
+      "izoh": "A va B qo'shilsa konsentratsiyalari ortadi, to'g'ri reaksiya tezligi ortib, muvozanat o'ngga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#053c419c"
+    },
+    {
+      "q": "Muvozanat sistemasidan A va B moddalar tashqariga chiqarilsa nima sodir bo'ladi?",
+      "v": [
+        "To'g'ri reaksiya tezligi kamayadi, teskari reaksiya o'z tezligini saqlab, muvozanatni chapga siljitadi",
+        "Muvozanat o'ngga siljiydi",
+        "Muvozanat o'zgarmaydi",
+        "Ikkala reaksiya ham to'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "A va B chiqarilsa to'g'ri reaksiya tezligi kamayib, muvozanat chapga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#30f0111a"
+    },
+    {
+      "q": "CO2 + H2 = CO + H2O muvozanat sistemasiga qo'shimcha CO2 berilsa, muvozanat qayoqqa siljiydi?",
+      "v": [
+        "O'ngga, ya'ni to'g'ri reaksiya tomoniga",
+        "Chapga, ya'ni teskari reaksiya tomoniga",
+        "Siljimaydi",
+        "Avval chapga, so'ng o'ngga"
+      ],
+      "t": 0,
+      "izoh": "Sistema CO2 konsentratsiyasini kamaytirishga intiladi, muvozanat o'ngga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#bab2ee5d"
+    },
+    {
+      "q": "CO2 + H2 = CO + H2O reaksiyasining o'ng tomonidagi biror moddaning (H2O yoki CO) miqdori kamaytirilsa, muvozanat qayoqqa siljiydi?",
+      "v": [
+        "To'g'ri reaksiya tomoniga (o'ngga)",
+        "Teskari reaksiya tomoniga (chapga)",
+        "Siljimaydi",
+        "Muvozanat buzilib, reaksiya to'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "O'ng tomondagi modda kamaytirilsa ham muvozanat to'g'ri reaksiya tomoniga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#898f15be"
+    },
+    {
+      "q": "CO2 + H2 = CO + H2O sistemasida CO ning konsentratsiyasi oshirilsa, muvozanat qayoqqa siljiydi?",
+      "v": [
+        "Chap tomonga",
+        "O'ng tomonga",
+        "Siljimaydi",
+        "Avval o'ngga, keyin chapga"
+      ],
+      "t": 0,
+      "izoh": "CO konsentratsiyasi oshsa, sistema uni kamaytirishga intilib, muvozanat chap tomonga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#81a79fd8"
+    },
+    {
+      "q": "Bitta modda konsentratsiyasining o'zgarishi bilan muvozanat konstantasi qanday o'zgaradi?",
+      "v": [
+        "O'zgarmaydi",
+        "Oshadi",
+        "Kamayadi",
+        "Nolga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Bitta modda konsentratsiyasi o'zgarishi bilan barcha moddalar konsentratsiyasi o'zgaradi, lekin muvozanat konstantasi o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#0400b3ef"
+    },
+    {
+      "q": "Bosimning muvozanatga ta'sirini aniqlash uchun nima qilish kerak?",
+      "v": [
+        "Tenglamaning chap va o'ng qismlaridagi gaz holidagi moddalarning molekulalar sonini hisoblab chiqish kerak",
+        "Moddalarning massalarini hisoblash kerak",
+        "Katalizator miqdorini aniqlash kerak",
+        "Moddalarning rangini solishtirish kerak"
+      ],
+      "t": 0,
+      "izoh": "Bosim ta'sirini aniqlash uchun chap va o'ng qismdagi gaz moddalar molekulalari soni hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#4b7ac988"
+    },
+    {
+      "q": "Muvozanatda turgan sistemaning bosimi oshirilsa, kimyoviy muvozanat qayoqqa siljiydi?",
+      "v": [
+        "Oz sondagi molekulalar hosil bo'ladigan, ya'ni hajm kamayishiga olib keladigan reaksiya tomonga",
+        "Ko'p sondagi molekulalar hosil bo'ladigan tomonga",
+        "Har doim o'ng tomonga",
+        "Siljimaydi"
+      ],
+      "t": 0,
+      "izoh": "Bosim oshirilsa muvozanat oz sondagi molekula hosil bo'ladigan tomonga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#a4bdacaf"
+    },
+    {
+      "q": "Bosim pasayganda muvozanat qayoqqa siljiydi?",
+      "v": [
+        "Ko'p sondagi molekulalar hosil bo'ladigan reaksiya tomonga",
+        "Oz sondagi molekulalar tomonga",
+        "Har doim chap tomonga",
+        "Siljimaydi"
+      ],
+      "t": 0,
+      "izoh": "Bosim pasayganda muvozanat ko'p sondagi molekulalar hosil bo'ladigan tomonga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#73d03994"
+    },
+    {
+      "q": "2SO2 + O2 = 2SO3 + Q reaksiyasida to'g'ri reaksiya sodir bo'lganda hajm qanday o'zgaradi?",
+      "v": [
+        "67,2 litrdan 44,8 litrgacha kamayadi",
+        "44,8 litrdan 67,2 litrgacha ortadi",
+        "O'zgarmaydi",
+        "22,4 litrga kamayadi"
+      ],
+      "t": 0,
+      "izoh": "2 mol SO2 (44,8 l) va 1 mol O2 (22,4 l) — jami 67,2 l dan 44,8 l gacha kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#4c857d64"
+    },
+    {
+      "q": "2SO2 + O2 = 2SO3 + Q muvozanatida bosim oshirilsa, muvozanat qayoqqa siljiydi?",
+      "v": [
+        "O'ng tomonga, SO3 hosil bo'lish tomoniga",
+        "Chap tomonga, SO2 va O2 hosil bo'lish tomoniga",
+        "Siljimaydi",
+        "Avval chapga, keyin o'ngga"
+      ],
+      "t": 0,
+      "izoh": "Bosim oshirilishi hajm kamayishiga olib kelib, to'g'ri reaksiyani tezlashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#24222ed9"
+    },
+    {
+      "q": "3H2 + N2 = 2NH3 reaksiyasining chap va o'ng tomonida nechtadan molekula bor?",
+      "v": [
+        "Chapda to'rt molekula, o'ngda ikki molekula",
+        "Chapda ikki, o'ngda to'rt molekula",
+        "Ikkala tomonda teng sonda",
+        "Chapda besh, o'ngda ikki molekula"
+      ],
+      "t": 0,
+      "izoh": "Chap tomonda 3+1=4 molekula, o'ng tomonda 2 molekula.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#e8fe933a"
+    },
+    {
+      "q": "3H2 + N2 = 2NH3 muvozanatida bosim oshirilsa, muvozanat qayoqqa siljiydi?",
+      "v": [
+        "O'ng tomonga, ammiak hosil bo'lishi tomoniga",
+        "Chap tomonga, ammiak parchalanishi tomoniga",
+        "Siljimaydi",
+        "Avval o'ngga, so'ng qaytadi"
+      ],
+      "t": 0,
+      "izoh": "Bosim oshsa muvozanat molekula kam tomonga, ya'ni o'ngga — ammiak hosil bo'lish tomoniga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#1386bbb3"
+    },
+    {
+      "q": "3H2 + N2 = 2NH3 muvozanatida bosim kamaytirilsa, muvozanat qayoqqa siljiydi?",
+      "v": [
+        "Molekula ko'p tomonga, ya'ni ammiak parchalanishi tomoniga",
+        "Ammiak hosil bo'lish tomoniga",
+        "Siljimaydi",
+        "Har doim o'ngga"
+      ],
+      "t": 0,
+      "izoh": "Bosim kamaytirilganda muvozanat molekula ko'p tomonga, ya'ni ammiak parchalanishi tomoniga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#c7ddd494"
+    },
+    {
+      "q": "Cl2 + H2 = 2HCl reaksiyasining muvozanatiga bosim o'zgarishi ta'sir ko'rsatmaydi, chunki...",
+      "v": [
+        "reaksiyaning o'ng va chap tomonida ikkitadan (teng sondagi) molekula mavjud",
+        "reaksiya qaytmas reaksiya",
+        "xlor qattiq modda",
+        "reaksiya faqat katalizator bilan boradi"
+      ],
+      "t": 0,
+      "izoh": "Chap va o'ngda molekulalar soni teng bo'lsa, bosim o'zgarishi muvozanatga ta'sir qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#9a3f7d63"
+    },
+    {
+      "q": "Fe3O4(q) + 4CO(g) = 3Fe(q) + 4CO2(g) reaksiyasiga bosim nima uchun ta'sir etmaydi?",
+      "v": [
+        "Faqat gaz moddalar (CO va CO2) koeffitsiyentlari yig'indilari teng — 4 va 4",
+        "Reaksiya qaytmas",
+        "Temir katalizator vazifasini bajaradi",
+        "Reaksiya endotermik"
+      ],
+      "t": 0,
+      "izoh": "Qattiq moddalarga bosim ta'sir etmaydi; gaz moddalar koeffitsiyentlari 4 va 4 — teng, shuning uchun bosim ta'sir etmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#f5e94882"
+    },
+    {
+      "q": "Fe3O4 + 4CO = 3Fe + 4CO2 reaksiyasi uchun to'g'ri va teskari reaksiya tezliklari formulasi qaysi?",
+      "v": [
+        "v(to'g'ri) = k1·[CO]^4; v(teskari) = k2·[CO2]^4",
+        "v(to'g'ri) = k1·[Fe3O4]·[CO]^4; v(teskari) = k2·[Fe]^3·[CO2]^4",
+        "v(to'g'ri) = k1·[CO]; v(teskari) = k2·[CO2]",
+        "v(to'g'ri) = k1·[CO2]^4; v(teskari) = k2·[CO]^4"
+      ],
+      "t": 0,
+      "izoh": "Qattiq moddalar hisobga olinmaydi: v(to'g'ri) = k1·[CO]^4, v(teskari) = k2·[CO2]^4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#273be9fe"
+    },
+    {
+      "q": "Eterifikatsiya reaksiyasida muvozanatni metilatsetat hosil bo'lish tomoniga siljitish uchun sistemaga nima kiritiladi?",
+      "v": [
+        "Suvni yutadigan sulfat kislota",
+        "Natriy gidroksid",
+        "Tuz kislota",
+        "Ammiak"
+      ],
+      "t": 0,
+      "izoh": "CH3COOH + CH3OH = CH3COOCH3 + H2O reaksiyasida suvni yutadigan sulfat kislota kiritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#f92555ef"
+    },
+    {
+      "q": "Eterifikatsiya reaksiyasining tenglamasi qaysi?",
+      "v": [
+        "CH3COOH + CH3OH = CH3COOCH3 + H2O",
+        "CH3COOH + C2H5OH = CH3COOC2H5 + H2O",
+        "CH3OH + H2O = CH3COOH + H2",
+        "CH3COOH + NaOH = CH3COONa + H2O"
+      ],
+      "t": 0,
+      "izoh": "Darslikda CH3COOH + CH3OH = CH3COOCH3 + H2O keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#73a6fede"
+    },
+    {
+      "q": "Azot (IV) oksid NO2 va uning dimeri N2O4 haqida qaysi fikr to'g'ri?",
+      "v": [
+        "NO2 qo'ng'ir (jigarrang) rangli gaz, N2O4 esa rangsiz modda",
+        "NO2 rangsiz, N2O4 jigarrang",
+        "Ikkalasi ham rangsiz",
+        "Ikkalasi ham ko'k rangli"
+      ],
+      "t": 0,
+      "izoh": "NO2 — qo'ng'ir rangli gaz, dimeri N2O4 — rangsiz modda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#c308da1e"
+    },
+    {
+      "q": "2NO2 = N2O4 sistemasining bosimini oshirsak, qanday hodisa kuzatiladi?",
+      "v": [
+        "Muvozanat o'ngga siljiydi va sistemaning rangsizlanishi kuzatiladi",
+        "Sistema rangi jigar rangga o'tadi",
+        "Hech qanday o'zgarish bo'lmaydi",
+        "Gaz hajmi ortadi"
+      ],
+      "t": 0,
+      "izoh": "Bosim oshsa muvozanat N2O4 hosil bo'lish tomoniga siljiydi, sistema rangsizlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#19076351"
+    },
+    {
+      "q": "2NO2 = N2O4 sistemasida bosim kamaysa nima sodir bo'ladi?",
+      "v": [
+        "Sistemaning rangi jigarrangga o'tadi, muvozanat chapga siljiydi",
+        "Sistema rangsizlanadi",
+        "N2O4 miqdori ortadi",
+        "Muvozanat o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Bosim kamaysa muvozanat chapga siljiydi, sistema rangi jigarrangga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#5f40fc8a"
+    },
+    {
+      "q": "Muvozanatdagi sistemaning temperaturasi kamaytirilsa, Le-Shatelye prinsipiga ko'ra muvozanat qayoqqa siljiydi?",
+      "v": [
+        "Ekzotermik reaksiya tomonga (issiqlik chiqishi bilan boradigan reaksiya kuchayadi)",
+        "Endotermik reaksiya tomonga",
+        "Muvozanat siljimaydi",
+        "Har doim chap tomonga"
+      ],
+      "t": 0,
+      "izoh": "Temperatura kamaytirilsa, issiqlik chiqishi bilan boradigan reaksiya kuchayadi — muvozanat ekzotermik reaksiya tomonga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#0a77885f"
+    },
+    {
+      "q": "Muvozanatdagi sistemaning harorati ko'tarilsa, muvozanat qayoqqa siljiydi?",
+      "v": [
+        "Endotermik reaksiya tomonga (issiqlik yutilishi bilan boradigan reaksiya kuchayadi)",
+        "Ekzotermik reaksiya tomonga",
+        "Siljimaydi",
+        "Har doim o'ng tomonga"
+      ],
+      "t": 0,
+      "izoh": "Harorat ko'tarilsa, issiqlik yutilishi bilan boradigan reaksiya kuchayadi — muvozanat endotermik reaksiya tomonga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#8e89947a"
+    },
+    {
+      "q": "NO2 va N2O4 o'rtasidagi muvozanat qanday harorat oralig'ida saqlanadi?",
+      "v": [
+        "-9,3°C bilan +144°C orasida",
+        "0°C bilan 100°C orasida",
+        "-50°C bilan +50°C orasida",
+        "+144°C dan yuqorida"
+      ],
+      "t": 0,
+      "izoh": "Ular -9,3°C bilan +144°C harorat orasida muvozanatda turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#7c01a6fa"
+    },
+    {
+      "q": "2NO2 = N2O4 sistemasi -9,3°C gacha sovitilsa va +144°C gacha qizdirilsa nima bo'ladi?",
+      "v": [
+        "Sovitilsa faqat N2O4 qoladi, qizdirilsa NO2 sistemadagi yagona gazga aylanadi",
+        "Sovitilsa faqat NO2 qoladi, qizdirilsa faqat N2O4",
+        "Har ikkala holda ham sistema o'zgarmaydi",
+        "Ikkala holda ham gaz yo'qoladi"
+      ],
+      "t": 0,
+      "izoh": "-9,3°C gacha sovitilsa NO2 yo'qolib faqat N2O4 qoladi; +144°C gacha qizdirilsa N2O4 yo'qolib, NO2 yagona gazga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#a8147d96"
+    },
+    {
+      "q": "Oltingugurt (VI) oksid hosil bo'lish unumini oshirish, ya'ni 2SO2(g) + O2(g) = 2SO3(g) + Q muvozanatini o'ng tomonga siljitish uchun haroratni qanday o'zgartirish kerak?",
+      "v": [
+        "Temperaturani pasaytirish kerak, chunki to'g'ri reaksiya ekzotermik",
+        "Temperaturani ko'tarish kerak",
+        "Haroratni o'zgartirish ta'sir qilmaydi",
+        "Avval ko'tarib, keyin pasaytirish kerak"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri reaksiya ekzotermik bo'lgani uchun muvozanatni o'ngga siljitishda temperaturani pasaytirish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#f69e0c56"
+    },
+    {
+      "q": "Katalizatorlar kimyoviy muvozanatga qanday ta'sir ko'rsatadi?",
+      "v": [
+        "To'g'ri va teskari reaksiya tezligini bir xilda oshiradi, muvozanatning siljishiga ta'sir etmaydi, faqat muvozanatning tezroq qaror topishiga yordam beradi",
+        "Muvozanatni o'ngga siljitadi",
+        "Muvozanatni chapga siljitadi",
+        "Muvozanat konstantasini oshiradi"
+      ],
+      "t": 0,
+      "izoh": "Katalizator ikkala yo'nalish tezligini bir xil oshiradi, muvozanatni siljitmaydi, faqat tezroq qaror topishiga yordam beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#1e2719a3"
+    },
+    {
+      "q": "Mavzuga oid testdan: 2NO(g) + O2(g) = 2NO2(g) qaytar sistemada bosimning oshirilishi kimyoviy muvozanatga qanday ta'sir ko'rsatadi?",
+      "v": [
+        "O'ngga siljitadi",
+        "Chapga siljitadi",
+        "Siljitmaydi",
+        "Dastlab o'zgarmaydi, so'ngra chapga siljitadi"
+      ],
+      "t": 0,
+      "izoh": "Chapda 3 mol gaz, o'ngda 2 mol gaz — bosim oshsa muvozanat o'ngga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#8cd8e08f"
+    },
+    {
+      "q": "Mavzuga oid testdan: qaysi reaksiyaning muvozanati bosim oshirilganda o'zgarmay qolaveradi?",
+      "v": [
+        "CO(g) + NO2(g) = CO2(g) + NO(g)",
+        "COCl2 = CO + Cl2",
+        "NH3 = N2 + H2 - Q",
+        "2NO + O2 = 2NO2"
+      ],
+      "t": 0,
+      "izoh": "CO + NO2 = CO2 + NO reaksiyasida ikkala tomonda gaz molekulalari soni teng (2 va 2), bosim ta'sir qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#6f577ec0"
+    },
+    {
+      "q": "Kimyoviy muvozanatni istalgan yo'nalishda siljitish nimaga asoslanadi va bu kimyoda qanday rol o'ynaydi?",
+      "v": [
+        "Le-Shatelye prinsipiga asoslanadi va kimyoda katta rol o'ynaydi, masalan ammiak sintezida mahsulot unumdorligini oshiradi",
+        "Faqat katalizator qo'shishga asoslanadi",
+        "Faqat haroratni oshirishga asoslanadi",
+        "Tasodifiy jarayonlarga asoslanadi"
+      ],
+      "t": 0,
+      "izoh": "Muvozanatni siljitish Le-Shatelye prinsipiga asoslanib, ammiak sintezi kabi jarayonlarda mahsulot unumdorligini oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m26-muvozanatga-tasir-omillar#3e4e125f"
+    }
+  ]
+}

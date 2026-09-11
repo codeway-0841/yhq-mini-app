@@ -1,0 +1,1609 @@
+{
+  "nom": "Qo'shish formulalari (yig'indi va ayirma)",
+  "bolim": "Trigonometriya",
+  "blok": "trig",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Quyidagi tengliklardan qaysi biri sin(α + β) ifodasining yoyilmasini to'g'ri ko'rsatadi?",
+      "v": [
+        "sinα·cosβ + cosα·sinβ",
+        "sinα·cosβ − cosα·sinβ",
+        "cosα·cosβ − sinα·sinβ",
+        "sinα·sinβ + cosα·cosβ"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi sinusi formulasi: sin(α + β) = sinα·cosβ + cosα·sinβ. Ikkinchi variant ayirma sinusi, uchinchisi yig'indi kosinusi, to'rtinchisi ayirma kosinusi bo'lgani uchun ular mos kelmaydi. Javob: sinα·cosβ + cosα·sinβ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-tanish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#7bedce61"
+    },
+    {
+      "q": "Sinfda o'quvchi cos(α − β) ni yoymoqchi va ishorada adashmaslik uchun to'g'ri tenglikni izlamoqda. U qaysi yozuvni tanlashi kerak?",
+      "v": [
+        "cosα·cosβ − sinα·sinβ",
+        "cosα·sinβ + sinα·cosβ",
+        "cosα·cosβ + sinα·sinβ",
+        "sinα·sinβ − cosα·cosβ"
+      ],
+      "t": 2,
+      "izoh": "Kosinus formulalarida ishora almashadi: cos(α + β) da minus, cos(α − β) da plyus turadi. Demak cos(α − β) = cosα·cosβ + sinα·sinβ. Birinchi variant yig'indi kosinusi, ikkinchisi sinus formulasi. Javob: cosα·cosβ + sinα·sinβ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-tanish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#d7b0dc15"
+    },
+    {
+      "q": "Ikki burchak yig'indisining tangensini faqat tgα va tgβ orqali ifodalovchi to'g'ri formulani ko'rsating.",
+      "v": [
+        "(tgα + tgβ)/(1 + tgα·tgβ)",
+        "(tgα + tgβ)/(1 − tgα·tgβ)",
+        "(tgα − tgβ)/(1 − tgα·tgβ)",
+        "(1 − tgα·tgβ)/(tgα + tgβ)"
+      ],
+      "t": 1,
+      "izoh": "tg(α + β) = (tgα + tgβ)/(1 − tgα·tgβ). Suratda burchaklar ishorasi qanday bo'lsa, maxrajda ishora teskarisiga aylanadi. Birinchi variantda maxraj ishorasi almashib ketgan, uchinchisi ayirma formulasining surati bilan aralashgan. Javob: (tgα + tgβ)/(1 − tgα·tgβ).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-tanish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#7d90815d"
+    },
+    {
+      "q": "sin(x + 30°) ifodasini qo'shish formulasi bilan yoyib yozsak, quyidagilardan qaysi natija hosil bo'ladi?",
+      "v": [
+        "(sinx + √3·cosx)/2",
+        "(√3·sinx − cosx)/2",
+        "(√3·cosx − sinx)/2",
+        "(√3·sinx + cosx)/2"
+      ],
+      "t": 3,
+      "izoh": "sin(x + 30°) = sinx·cos30° + cosx·sin30°. Bu yerda cos30° = √3/2 va sin30° = 1/2. Demak ifoda (√3/2)·sinx + (1/2)·cosx, ya'ni (√3·sinx + cosx)/2 ko'rinishini oladi. Birinchi variantda sin30° bilan cos30° o'rni almashib ketgan. Javob: (√3·sinx + cosx)/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-tanish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#65c0f9fd"
+    },
+    {
+      "q": "cos(x − 60°) ifodasini yoyganda hosil bo'ladigan to'g'ri natijani tanlang.",
+      "v": [
+        "(cosx + √3·sinx)/2",
+        "(cosx − √3·sinx)/2",
+        "(√3·cosx + sinx)/2",
+        "(√3·sinx − cosx)/2"
+      ],
+      "t": 0,
+      "izoh": "cos(x − 60°) = cosx·cos60° + sinx·sin60° bo'ladi, chunki ayirma kosinusida qo'shish ishorasi turadi. cos60° = 1/2, sin60° = √3/2 ni qo'ysak (1/2)·cosx + (√3/2)·sinx, ya'ni (cosx + √3·sinx)/2 chiqadi. Javob: (cosx + √3·sinx)/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-tanish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#b2f4c741"
+    },
+    {
+      "q": "α va β o'tkir burchaklar bo'lib, sinα = 3/5 va cosβ = 5/13 ekani ma'lum. sin(α + β) ning qiymatini toping.",
+      "v": [
+        "−33/65",
+        "48/65",
+        "63/65",
+        "−16/65"
+      ],
+      "t": 2,
+      "izoh": "Avval yetishmayotgan qiymatlarni topamiz: cosα = √(1 − 9/25) = 4/5, sinβ = √(1 − 25/169) = 12/13. Endi sin(α + β) = sinα·cosβ + cosα·sinβ = (3/5)·(5/13) + (4/5)·(12/13) = 15/65 + 48/65 = 63/65. Javob: 63/65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sin-yigindi-chorak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#b676fa9f"
+    },
+    {
+      "q": "Geodezist ikki qo'shni burchakni o'lchadi: birinchisi uchun sinα = 8/17, ikkinchisi uchun sinβ = 7/25 chiqdi va har ikkalasi ham o'tkir burchak. sin(α + β) nechaga teng?",
+      "v": [
+        "87/425",
+        "297/425",
+        "304/425",
+        "416/425"
+      ],
+      "t": 1,
+      "izoh": "O'tkir burchaklar uchun cosα = √(1 − 64/289) = 15/17 va cosβ = √(1 − 49/625) = 24/25. Endi sin(α + β) = (8/17)·(24/25) + (15/17)·(7/25) = 192/425 + 105/425 = 297/425. Javob: 297/425.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin-yigindi-chorak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#738184f3"
+    },
+    {
+      "q": "α burchak ikkinchi chorakda yotadi va sinα = 12/13, β esa o'tkir burchak bo'lib cosβ = 3/5. sin(α + β) qiymatini hisoblang.",
+      "v": [
+        "56/65",
+        "−63/65",
+        "−16/65",
+        "16/65"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi chorakda kosinus manfiy, shuning uchun cosα = −5/13. β o'tkir bo'lgani uchun sinβ = 4/5. sin(α + β) = (12/13)·(3/5) + (−5/13)·(4/5) = 36/65 − 20/65 = 16/65. Chorak e'tiborga olinmasa 56/65 kabi noto'g'ri natija chiqadi. Javob: 16/65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin-yigindi-chorak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#7d592031"
+    },
+    {
+      "q": "Anvar dronni ko'targanda kamera ufqqa nisbatan α burchak, quyosh nurlari esa β burchak ostida tushmoqda. sinα = 20/29 va cosβ = 4/5, ikkala burchak ham o'tkir bo'lsa, sin(α + β) qanchaga teng?",
+      "v": [
+        "143/145",
+        "17/145",
+        "24/145",
+        "144/145"
+      ],
+      "t": 0,
+      "izoh": "cosα = √(1 − 400/841) = 21/29 va sinβ = √(1 − 16/25) = 3/5 bo'ladi. sin(α + β) = (20/29)·(4/5) + (21/29)·(3/5) = 80/145 + 63/145 = 143/145. Javob: 143/145.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin-yigindi-chorak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#e005273a"
+    },
+    {
+      "q": "Ikki o'tkir burchak uchun sinα = 9/41 va sinβ = 5/13 qiymatlari berilgan bo'lsa, ularning yig'indisi sinusini toping.",
+      "v": [
+        "435/533",
+        "−92/533",
+        "308/533",
+        "525/533"
+      ],
+      "t": 2,
+      "izoh": "cosα = √(1 − 81/1681) = 40/41, cosβ = √(1 − 25/169) = 12/13. sin(α + β) = (9/41)·(12/13) + (40/41)·(5/13) = 108/533 + 200/533 = 308/533. Kosinus formulasi qo'llanilsa 435/533 chiqib qoladi. Javob: 308/533.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin-yigindi-chorak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#e94dc332"
+    },
+    {
+      "q": "α va β o'tkir burchaklar uchun sinα = 3/5 va cosβ = 12/13 berilgan. cos(α + β) qiymatini aniqlang.",
+      "v": [
+        "63/65",
+        "33/65",
+        "56/65",
+        "16/65"
+      ],
+      "t": 1,
+      "izoh": "cosα = 4/5 va sinβ = 5/13 ekanini asosiy ayniyatdan topamiz. cos(α + β) = cosα·cosβ − sinα·sinβ = (4/5)·(12/13) − (3/5)·(5/13) = 48/65 − 15/65 = 33/65. Ishora plyus olinsa 63/65 xato javob chiqadi. Javob: 33/65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cos-yigindi-chorak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#ce1b77c9"
+    },
+    {
+      "q": "O'tkir burchaklar uchun cosα = 5/13 va sinβ = 3/5 bo'lsa, bu burchaklar yig'indisining kosinusi qanday qiymat oladi?",
+      "v": [
+        "56/65",
+        "63/65",
+        "−56/65",
+        "−16/65"
+      ],
+      "t": 3,
+      "izoh": "sinα = 12/13 va cosβ = 4/5 topiladi. cos(α + β) = (5/13)·(4/5) − (12/13)·(3/5) = 20/65 − 36/65 = −16/65. Ikki o'tkir burchak yig'indisi 90° dan katta bo'lsa kosinus manfiy chiqishi tabiiy. Javob: −16/65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cos-yigindi-chorak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#0de3d046"
+    },
+    {
+      "q": "α burchak o'tmas bo'lib sinα = 24/25, β esa o'tkir burchak bo'lib cosβ = 4/5 ga teng. cos(α + β) ni hisoblang.",
+      "v": [
+        "−4/5",
+        "3/5",
+        "−44/125",
+        "4/5"
+      ],
+      "t": 0,
+      "izoh": "O'tmas burchak uchun cosα = −7/25, o'tkir burchak uchun sinβ = 3/5. cos(α + β) = (−7/25)·(4/5) − (24/25)·(3/5) = −28/125 − 72/125 = −100/125 = −4/5. Javob: −4/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cos-yigindi-chorak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#6dc75bec"
+    },
+    {
+      "q": "Qurilishchi ikki qiyalikning burchagini o'lchab, birinchisi uchun sinα = 20/29, ikkinchisi uchun cosβ = 12/13 qiymatlarini oldi. Ikkala burchak o'tkir bo'lsa, cos(α + β) nechaga teng?",
+      "v": [
+        "352/377",
+        "345/377",
+        "152/377",
+        "135/377"
+      ],
+      "t": 2,
+      "izoh": "cosα = 21/29 va sinβ = 5/13 bo'ladi. cos(α + β) = (21/29)·(12/13) − (20/29)·(5/13) = 252/377 − 100/377 = 152/377. Ayirma kosinusi bilan chalkashtirilsa 352/377 chiqadi. Javob: 152/377.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cos-yigindi-chorak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#15cedc14"
+    },
+    {
+      "q": "Do'kon peshtoqidagi ikki nur ufq bilan α va β o'tkir burchaklar hosil qiladi, bunda cosα = 40/41 va sinβ = 3/5. Nurlar burchaklari yig'indisining kosinusini toping.",
+      "v": [
+        "156/205",
+        "133/205",
+        "187/205",
+        "−84/205"
+      ],
+      "t": 1,
+      "izoh": "sinα = 9/41 va cosβ = 4/5 bo'ladi. cos(α + β) = (40/41)·(4/5) − (9/41)·(3/5) = 160/205 − 27/205 = 133/205. Sinus formulasi qo'llansa 156/205 xato javob beradi. Javob: 133/205.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cos-yigindi-chorak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#43e7adb0"
+    },
+    {
+      "q": "O'tkir α va β burchaklar uchun sinα = 24/25 va cosβ = 21/29 berilgan bo'lsa, sin(α − β) qiymatini toping.",
+      "v": [
+        "644/725",
+        "627/725",
+        "−333/725",
+        "364/725"
+      ],
+      "t": 3,
+      "izoh": "cosα = 7/25 va sinβ = 20/29 topiladi. sin(α − β) = sinα·cosβ − cosα·sinβ = (24/25)·(21/29) − (7/25)·(20/29) = 504/725 − 140/725 = 364/725. Qo'shish formulasi ishlatilsa 644/725 chiqadi. Javob: 364/725.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin-ayirma-hisob",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#3556800a"
+    },
+    {
+      "q": "Samarqanddagi ikki minoraning tepasiga qaragan nigoh burchaklari o'tkir bo'lib, sinα = 15/17 va sinβ = 3/5. Bu burchaklar ayirmasining sinusi qanchaga teng?",
+      "v": [
+        "36/85",
+        "84/85",
+        "77/85",
+        "−13/85"
+      ],
+      "t": 0,
+      "izoh": "cosα = 8/17 va cosβ = 4/5 bo'ladi. sin(α − β) = (15/17)·(4/5) − (8/17)·(3/5) = 60/85 − 24/85 = 36/85. Ikki hadni qo'shib yuborish 84/85 xatosini beradi. Javob: 36/85.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sin-ayirma-hisob",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#0b31234f"
+    },
+    {
+      "q": "α burchak ikkinchi chorakda bo'lib sinα = 3/5, β o'tkir burchak bo'lib cosβ = 12/13 ga teng. sin(α − β) ni hisoblang.",
+      "v": [
+        "16/65",
+        "−56/65",
+        "56/65",
+        "−33/65"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi chorakda cosα = −4/5, β uchun sinβ = 5/13. sin(α − β) = (3/5)·(12/13) − (−4/5)·(5/13) = 36/65 + 20/65 = 56/65. Ikkinchi hadda ikki minus qo'shishga aylanadi, buni unutgan o'quvchi 16/65 deb xato qiladi. Javob: 56/65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin-ayirma-hisob",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#06c0fa15"
+    },
+    {
+      "q": "O'tkir burchaklar uchun sinα = 15/17 va cosβ = 7/25 berilgan bo'lsa, ayirma sinusining qiymatini aniqlang.",
+      "v": [
+        "87/425",
+        "−87/425",
+        "297/425",
+        "416/425"
+      ],
+      "t": 1,
+      "izoh": "cosα = 8/17 va sinβ = 24/25 topiladi. sin(α − β) = (15/17)·(7/25) − (8/17)·(24/25) = 105/425 − 192/425 = −87/425. Bu yerda β burchak α dan katta, shuning uchun natija manfiy. Javob: −87/425.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin-ayirma-hisob",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#dd0821d4"
+    },
+    {
+      "q": "Chizmachi o'tkir α burchak uchun tgα = 3/4 ekanini aniqladi va endi sin(α − 45°) ni hisoblamoqchi. Natija nechaga teng?",
+      "v": [
+        "7√2/10",
+        "√2/10",
+        "−7√2/10",
+        "−√2/10"
+      ],
+      "t": 3,
+      "izoh": "tgα = 3/4 va α o'tkir bo'lgani uchun sinα = 3/5, cosα = 4/5. sin(α − 45°) = sinα·cos45° − cosα·sin45° = (√2/2)·(3/5 − 4/5) = (√2/2)·(−1/5) = −√2/10. Ishorani e'tiborsiz qoldirgan o'quvchi √2/10 deb yozadi. Javob: −√2/10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin-ayirma-hisob",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#7172de12"
+    },
+    {
+      "q": "O'tkir α va β burchaklar uchun cosα = 8/17 va sinβ = 4/5 berilgan bo'lsa, cos(α − β) qiymatini toping.",
+      "v": [
+        "84/85",
+        "−36/85",
+        "13/85",
+        "77/85"
+      ],
+      "t": 0,
+      "izoh": "sinα = √(1 − 64/289) = 15/17 va cosβ = 3/5 topiladi. cos(α − β) = cosα·cosβ + sinα·sinβ = (8/17)·(3/5) + (15/17)·(4/5) = 24/85 + 60/85 = 84/85. Ishora minus olinsa −36/85 xato javob chiqadi. Javob: 84/85.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cos-ayirma-hisob",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#2653756d"
+    },
+    {
+      "q": "α burchak uchinchi chorakda joylashgan va cosα = −4/5, β esa o'tkir burchak bo'lib cosβ = 5/13. cos(α − β) ni hisoblang.",
+      "v": [
+        "56/65",
+        "−56/65",
+        "16/65",
+        "33/65"
+      ],
+      "t": 1,
+      "izoh": "Uchinchi chorakda sinus ham manfiy: sinα = −3/5. β o'tkir bo'lgani uchun sinβ = 12/13. cos(α − β) = (−4/5)·(5/13) + (−3/5)·(12/13) = −20/65 − 36/65 = −56/65. Chorak hisobga olinmasa 56/65 chiqib qoladi. Javob: −56/65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cos-ayirma-hisob",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#a22c213b"
+    },
+    {
+      "q": "Uyali aloqa minorasidan ikki uyga qaralganda hosil bo'lgan o'tkir burchaklar uchun cosα = 40/41 va sinβ = 7/25 o'lchandi. cos(α − β) nechaga teng?",
+      "v": [
+        "897/1025",
+        "496/1025",
+        "1023/1025",
+        "−64/1025"
+      ],
+      "t": 2,
+      "izoh": "sinα = 9/41 va cosβ = 24/25 bo'ladi. cos(α − β) = (40/41)·(24/25) + (9/41)·(7/25) = 960/1025 + 63/1025 = 1023/1025. Natija birga juda yaqin, chunki burchaklar ayirmasi kichik. Javob: 1023/1025.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cos-ayirma-hisob",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#3ad4541d"
+    },
+    {
+      "q": "Ikki o'tkir burchak uchun tgα = 4/3 va tgβ = 24/7 ekani aniqlangan. Shu burchaklar ayirmasining kosinusini toping.",
+      "v": [
+        "−3/5",
+        "−44/125",
+        "4/5",
+        "117/125"
+      ],
+      "t": 3,
+      "izoh": "tgα = 4/3 dan sinα = 4/5, cosα = 3/5; tgβ = 24/7 dan sinβ = 24/25, cosβ = 7/25. cos(α − β) = (3/5)·(7/25) + (4/5)·(24/25) = 21/125 + 96/125 = 117/125. Javob: 117/125.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cos-ayirma-hisob",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#12deaa73"
+    },
+    {
+      "q": "Nazorat ishida α o'tkir burchak uchun sinα = 5/13 berilgan va cos(α − 30°) ni topish talab qilinmoqda. To'g'ri natijani tanlang.",
+      "v": [
+        "(12√3 + 5)/26",
+        "(12√3 − 5)/26",
+        "(5√3 + 12)/26",
+        "(5 − 12√3)/26"
+      ],
+      "t": 0,
+      "izoh": "cosα = 12/13 bo'ladi. cos(α − 30°) = cosα·cos30° + sinα·sin30° = (12/13)·(√3/2) + (5/13)·(1/2) = 12√3/26 + 5/26 = (12√3 + 5)/26. Ayirma kosinusida ishora plyus bo'lishini unutgan o'quvchi (12√3 − 5)/26 deb yozadi. Javob: (12√3 + 5)/26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cos-ayirma-hisob",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#e458c9cb"
+    },
+    {
+      "q": "Burchakni 45° va 30° ning ayirmasi ko'rinishida yozib, sin15° ning aniq qiymatini hisoblang.",
+      "v": [
+        "(√6 + √2)/4",
+        "(√6 − √2)/4",
+        "(√2 − √6)/4",
+        "(√6 − √2)/2"
+      ],
+      "t": 1,
+      "izoh": "sin15° = sin(45° − 30°) = sin45°·cos30° − cos45°·sin30° = (√2/2)·(√3/2) − (√2/2)·(1/2) = √6/4 − √2/4 = (√6 − √2)/4. Qo'shish formulasi qo'llansa (√6 + √2)/4, ya'ni cos15° chiqib qoladi. Javob: (√6 − √2)/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nostandart-burchak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#4e846c16"
+    },
+    {
+      "q": "105° burchakni 60° va 45° yig'indisi deb qarab, cos105° ning aniq qiymatini toping.",
+      "v": [
+        "(√6 − √2)/4",
+        "(√6 + √2)/4",
+        "(√2 − √6)/4",
+        "(√6 + √2)/2"
+      ],
+      "t": 2,
+      "izoh": "cos105° = cos(60° + 45°) = cos60°·cos45° − sin60°·sin45° = (1/2)·(√2/2) − (√3/2)·(√2/2) = √2/4 − √6/4 = (√2 − √6)/4. 105° ikkinchi chorakda yotgani uchun natija manfiy bo'lishi kerak. Javob: (√2 − √6)/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nostandart-burchak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#563e1cea"
+    },
+    {
+      "q": "Konditsioner panjarasi ufqqa nisbatan 105° ga burilgan va muhandisga sin105° ning aniq qiymati kerak. U qaysi javobni olishi kerak?",
+      "v": [
+        "(√6 − √2)/4",
+        "(√2 − √6)/4",
+        "(√3 + √2)/2",
+        "(√6 + √2)/4"
+      ],
+      "t": 3,
+      "izoh": "sin105° = sin(60° + 45°) = sin60°·cos45° + cos60°·sin45° = (√3/2)·(√2/2) + (1/2)·(√2/2) = √6/4 + √2/4 = (√6 + √2)/4. Sinusni burchaklar bo'yicha ajratib sin60° + sin45° deb qo'shish (√3 + √2)/2 kabi qo'pol xatoga olib keladi. Javob: (√6 + √2)/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nostandart-burchak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#7978385c"
+    },
+    {
+      "q": "165° burchakni 120° va 45° yig'indisi ko'rinishida yozib, cos165° ning aniq qiymatini hisoblang.",
+      "v": [
+        "−(√6 + √2)/4",
+        "(√6 + √2)/4",
+        "(√6 − √2)/4",
+        "(√2 − √6)/4"
+      ],
+      "t": 0,
+      "izoh": "cos165° = cos(120° + 45°) = cos120°·cos45° − sin120°·sin45°. Bu yerda cos120° = −1/2 va sin120° = √3/2. Demak natija (−1/2)·(√2/2) − (√3/2)·(√2/2) = −√2/4 − √6/4 = −(√6 + √2)/4. Javob: −(√6 + √2)/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nostandart-burchak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#feca7eac"
+    },
+    {
+      "q": "π/12 burchakni π/3 va π/4 ning ayirmasi deb olib, cos(π/12) ning aniq qiymatini toping.",
+      "v": [
+        "(√2 − √6)/4",
+        "(√6 + √2)/4",
+        "(√6 − √2)/4",
+        "√2/4"
+      ],
+      "t": 1,
+      "izoh": "cos(π/12) = cos(π/3 − π/4) = cos(π/3)·cos(π/4) + sin(π/3)·sin(π/4) = (1/2)·(√2/2) + (√3/2)·(√2/2) = √2/4 + √6/4 = (√6 + √2)/4. Ikkinchi hadni tashlab ketgan o'quvchi faqat √2/4 ni yozadi. Javob: (√6 + √2)/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nostandart-burchak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#19613554"
+    },
+    {
+      "q": "sin40°·cos20° + cos40°·sin20° ifodasi bitta funksiyaga yig'ilgandan keyin qanday son qiymatini beradi?",
+      "v": [
+        "1/2",
+        "−√3/2",
+        "√3/2",
+        "√2/2"
+      ],
+      "t": 2,
+      "izoh": "Ifoda sin(α + β) formulasining o'ng tomoni, bunda α = 40°, β = 20°. Demak u sin(40° + 20°) = sin60° = √3/2 ga teng. Kosinus formulasi deb o'ylagan o'quvchi cos60° = 1/2 javobini beradi. Javob: √3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-yigish-sin",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#318d61c1"
+    },
+    {
+      "q": "sin50°·cos20° − cos50°·sin20° ifodasini bitta trigonometrik funksiyaga keltirib, uning qiymatini hisoblang.",
+      "v": [
+        "√3/2",
+        "√2/2",
+        "−1/2",
+        "1/2"
+      ],
+      "t": 3,
+      "izoh": "Bu ayirma sinusi formulasining o'ng tomoni: sin(50° − 20°) = sin30° = 1/2. Burchaklarni qo'shib yuborish sin70° ga, funksiyani chalkashtirish esa cos30° = √3/2 ga olib keladi. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-yigish-sin",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#175a54a8"
+    },
+    {
+      "q": "Radiotexnikada sin73°·cos13° − cos73°·sin13° ifodasi bitta funksiya bilan almashtiriladi. Bu qaysi funksiya?",
+      "v": [
+        "sin60°",
+        "cos60°",
+        "sin86°",
+        "cos86°"
+      ],
+      "t": 0,
+      "izoh": "Ifoda sin(α − β) = sinα·cosβ − cosα·sinβ formulasiga to'liq mos keladi. Demak u sin(73° − 13°) = sin60° = √3/2 ga teng. Burchaklarni qo'shib yuborgan o'quvchi sin86°, funksiyani almashtirgan esa cos60° = 1/2 xato javobini oladi. Javob: sin60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-yigish-sin",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#63f3d5d0"
+    },
+    {
+      "q": "sinx·cos2x + cosx·sin2x ifodasini bitta sinus ko'rinishiga keltirganda nima hosil bo'ladi?",
+      "v": [
+        "cos3x",
+        "sin3x",
+        "sinx",
+        "3sinx"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda α = x va β = 2x deb olamiz, chunki ifoda sinα·cosβ + cosα·sinβ ko'rinishida. Demak natija sin(x + 2x) = sin3x. Burchaklarni ayirgan o'quvchi sinx, ko'paytmani noto'g'ri sodda qilgani esa 3sinx deb yozadi. Javob: sin3x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-yigish-sin",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#6a53a9f1"
+    },
+    {
+      "q": "Ikki datchik ko'rsatkichi P = 60·(sin80°·cos35° − cos80°·sin35°) formula bo'yicha hisoblanadi. P qiymatini toping.",
+      "v": [
+        "30√3",
+        "60√2",
+        "30√2",
+        "30"
+      ],
+      "t": 2,
+      "izoh": "Qavs ichi ayirma sinusi: sin(80° − 35°) = sin45° = √2/2. Demak P = 60·(√2/2) = 30√2. Qavs ichini soddalashtirmasdan 60 ga ko'paytirib yuborgan o'quvchi 60√2 deb xato qiladi. Javob: 30√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-yigish-sin",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#47dc582a"
+    },
+    {
+      "q": "cos70°·cos10° + sin70°·sin10° ifodasi quyidagi funksiyalardan aynan qaysi biriga teng bo'ladi?",
+      "v": [
+        "cos80°",
+        "sin60°",
+        "sin80°",
+        "cos60°"
+      ],
+      "t": 3,
+      "izoh": "Kosinus ayirmasi formulasi: cosα·cosβ + sinα·sinβ = cos(α − β). Demak ifoda cos(70° − 10°) = cos60° ga teng. Plyus ishorasini ko'rib burchaklarni qo'shib yuborgan o'quvchi cos80° javobini tanlaydi. Javob: cos60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-yigish-cos",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#b0a94fcf"
+    },
+    {
+      "q": "cos35°·cos25° − sin35°·sin25° ifodasini soddalashtirib, uning aniq son qiymatini yozing.",
+      "v": [
+        "1/2",
+        "√3/2",
+        "√2/2",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Minus ishorasi yig'indi kosinusiga ishora qiladi: cos(35° + 25°) = cos60° = 1/2. Burchaklarni ayirib yuborgan o'quvchi cos10° ga yaqin qiymat izlaydi va adashadi. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-yigish-cos",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#0b5bd3bf"
+    },
+    {
+      "q": "Optik tajribada cos80°·cos35° + sin80°·sin35° ifodasining son qiymati kerak bo'ldi. U nechaga teng?",
+      "v": [
+        "1/2",
+        "√2/2",
+        "√3/2",
+        "−√2/2"
+      ],
+      "t": 1,
+      "izoh": "Plyus ishorasi ayirma kosinusini bildiradi: cos(80° − 35°) = cos45° = √2/2. Burchaklar yig'indisi olinsa cos115° manfiy qiymat berib, −√2/2 kabi xato javobga olib keladi. Javob: √2/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-yigish-cos",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#e3be87d8"
+    },
+    {
+      "q": "cos5x·cos2x − sin5x·sin2x ifodasi bitta kosinus ko'rinishida qanday yoziladi?",
+      "v": [
+        "cos3x",
+        "sin7x",
+        "cos7x",
+        "cos10x"
+      ],
+      "t": 2,
+      "izoh": "Ifoda cosα·cosβ − sinα·sinβ = cos(α + β) formulasining o'ng tomoni. α = 5x va β = 2x bo'lgani uchun natija cos(5x + 2x) = cos7x. Burchaklarni ayirgan cos3x, ko'paytirgan esa cos10x deb xato yozadi. Javob: cos7x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-yigish-cos",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#76260561"
+    },
+    {
+      "q": "Ko'targich chig'iri arqonidagi kuch F = 80·(cos65°·cos20° + sin65°·sin20°) kilonyuton bilan berilgan. F nechaga teng?",
+      "v": [
+        "40√3",
+        "80√2",
+        "40",
+        "40√2"
+      ],
+      "t": 3,
+      "izoh": "Qavs ichi ayirma kosinusi: cos(65° − 20°) = cos45° = √2/2. Demak F = 80·(√2/2) = 40√2 kilonyuton, ya'ni taxminan 56,6 kN. Qavs ichini birga teng deb olgan o'quvchi 80, cos60° deb olgani esa 40 javobini beradi. Javob: 40√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-yigish-cos",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#6350bea5"
+    },
+    {
+      "q": "tgα = 2 va tgβ = 3 bo'lsa, tg(α + β) ifodasining qiymati nechaga teng bo'ladi?",
+      "v": [
+        "−1",
+        "5/7",
+        "−1/7",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "tg(α + β) = (tgα + tgβ)/(1 − tgα·tgβ) = (2 + 3)/(1 − 2·3) = 5/(1 − 6) = 5/(−5) = −1. Maxrajdagi ishorani plyus deb olgan o'quvchi 5/7, maxrajni butunlay unutgani esa 5 deb javob beradi. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg-yigindi-qiymat",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#4a5b4bb5"
+    },
+    {
+      "q": "Ikki o'tkir burchak uchun tgα = 1/2 va tgβ = 1/3 berilgan bo'lsa, ularning yig'indisi tangensini toping.",
+      "v": [
+        "5/6",
+        "1",
+        "5/7",
+        "1/6"
+      ],
+      "t": 1,
+      "izoh": "tg(α + β) = (1/2 + 1/3)/(1 − (1/2)·(1/3)) = (5/6)/(1 − 1/6) = (5/6)/(5/6) = 1. Maxrajni hisobga olmaslik 5/6, maxrajda ishorani almashtirish esa 5/7 xatosini beradi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg-yigindi-qiymat",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#7ac4b4c9"
+    },
+    {
+      "q": "Elektr ustunidan ikki simyog'och ko'rinadi: birinchisiga qarash burchagi tangensi 3 ga, ikkinchisiniki 1/2 ga teng. Bu ikki burchak yig'indisining tangensi qanday?",
+      "v": [
+        "7/5",
+        "7/2",
+        "−7",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "tg(α + β) = (3 + 1/2)/(1 − 3·(1/2)) = (7/2)/(1 − 3/2) = (7/2)/(−1/2) = −7. Manfiy natija burchaklar yig'indisi 90° dan katta ekanini bildiradi. Maxrajda plyus olinsa 7/5 chiqadi. Javob: −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-yigindi-qiymat",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#7d19d67d"
+    },
+    {
+      "q": "tgα = 5 va tgβ = 2 qiymatlari ma'lum bo'lganda, tg(α + β) ni hisoblab, to'g'ri javobni belgilang.",
+      "v": [
+        "7/11",
+        "3/11",
+        "7",
+        "−7/9"
+      ],
+      "t": 3,
+      "izoh": "tg(α + β) = (5 + 2)/(1 − 5·2) = 7/(1 − 10) = 7/(−9) = −7/9. Maxrajda ishorani plyus qilib 7/11, ayirma formulasini qo'llab 3/11 xato javoblari olinadi. Javob: −7/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-yigindi-qiymat",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#8c1eae80"
+    },
+    {
+      "q": "Yer o'lchovchi ikki nishablikni o'lchadi: birinchi qiyalik burchagi uchun tgα = 4, ikkinchisi uchun tgβ = 1/3 chiqdi. tg(α + β) nechaga teng?",
+      "v": [
+        "−13",
+        "13/7",
+        "11/7",
+        "13/3"
+      ],
+      "t": 0,
+      "izoh": "tg(α + β) = (4 + 1/3)/(1 − 4·(1/3)) = (13/3)/(1 − 4/3) = (13/3)/(−1/3) = −13. Maxrajda ishorani almashtirgan o'quvchi 13/7, maxrajni tashlab ketgani 13/3 deb yozadi. Javob: −13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-yigindi-qiymat",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#009a2d11"
+    },
+    {
+      "q": "tgα = 5 va tgβ = 3 bo'lganda, bu burchaklar ayirmasining tangensini toping.",
+      "v": [
+        "−1/7",
+        "1/8",
+        "2",
+        "−4/7"
+      ],
+      "t": 1,
+      "izoh": "tg(α − β) = (tgα − tgβ)/(1 + tgα·tgβ) = (5 − 3)/(1 + 15) = 2/16 = 1/8. Ayirma formulasida maxrajda plyus turishini unutgan o'quvchi 2/(1 − 15) = −1/7 deb xato qiladi. Javob: 1/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg-ayirma-qiymat",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#265950fa"
+    },
+    {
+      "q": "Ikki burchak uchun tgα = 7 va tgβ = 4 berilgan bo'lsa, tg(α − β) qanday qiymatga ega bo'ladi?",
+      "v": [
+        "−1/9",
+        "−11/27",
+        "3/29",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "tg(α − β) = (7 − 4)/(1 + 7·4) = 3/(1 + 28) = 3/29. Maxrajda minus olinsa 3/(1 − 28) = −1/9, qo'shish formulasi qo'llansa 11/(1 − 28) = −11/27 chiqadi. Javob: 3/29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg-ayirma-qiymat",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#367a0048"
+    },
+    {
+      "q": "Ikki yo'lning nishabligi tgα = 3/4 va tgβ = 1/7 bilan berilgan. Bu yo'llar orasidagi burchak tangensi qanday bo'ladi?",
+      "v": [
+        "17/25",
+        "25/31",
+        "17/28",
+        "17/31"
+      ],
+      "t": 3,
+      "izoh": "tg(α − β) = (3/4 − 1/7)/(1 + (3/4)·(1/7)) = (17/28)/(1 + 3/28) = (17/28)/(31/28) = 17/31. Maxrajda ishorani minus qilgan o'quvchi 17/25, maxrajni unutgani 17/28 deb yozadi. Javob: 17/31.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-ayirma-qiymat",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#54023c89"
+    },
+    {
+      "q": "α va β o'tkir burchaklar bo'lib tgα = 2 va tgβ = 1/3 ekani berilgan. α − β burchak necha gradusga teng?",
+      "v": [
+        "45°",
+        "30°",
+        "60°",
+        "135°"
+      ],
+      "t": 0,
+      "izoh": "tg(α − β) = (2 − 1/3)/(1 + 2·(1/3)) = (5/3)/(5/3) = 1. Tangensi birga teng bo'lgan burchak 45° ga teng, chunki α − β ayirmasi o'tkir burchaklar farqi sifatida 90° dan kichik. Javob: 45°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-ayirma-qiymat",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#e10c0faf"
+    },
+    {
+      "q": "Televizor antennasi ikki yo'nalishga qaratilgan: birinchisining nishabligi tgα = 3/2, ikkinchisiniki tgβ = 2/5. Yo'nalishlar orasidagi burchak tangensini toping.",
+      "v": [
+        "11/4",
+        "11/16",
+        "19/16",
+        "11/10"
+      ],
+      "t": 1,
+      "izoh": "tg(α − β) = (3/2 − 2/5)/(1 + (3/2)·(2/5)) = (11/10)/(1 + 3/5) = (11/10)/(8/5) = 11/16. Maxrajda minus olinsa 11/4, qo'shish formulasi qo'llansa 19/16 xato javobi chiqadi. Javob: 11/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-ayirma-qiymat",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#4b164646"
+    },
+    {
+      "q": "(tg25° + tg20°)/(1 − tg25°·tg20°) ifodasining son qiymatini hisoblang.",
+      "v": [
+        "√3",
+        "√3/3",
+        "1",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "Ifoda tg(α + β) formulasining o'ng tomoni, bunda α = 25° va β = 20°. Demak u tg(25° + 20°) = tg45° = 1 ga teng. Burchaklarni 60° deb chalkashtirgan o'quvchi √3 javobini tanlaydi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg-teskari-yigish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#b378fd6c"
+    },
+    {
+      "q": "(tg80° − tg20°)/(1 + tg80°·tg20°) ifodasi bitta tangensga yig'ilgach, uning qiymati qanday bo'ladi?",
+      "v": [
+        "√3/3",
+        "1",
+        "−√3",
+        "√3"
+      ],
+      "t": 3,
+      "izoh": "Maxrajdagi plyus ayirma formulasiga ishora qiladi: tg(80° − 20°) = tg60° = √3. Burchaklarni qo'shib yuborgan o'quvchi tg100° manfiy qiymatini kutib −√3 ni tanlaydi. Javob: √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg-teskari-yigish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#bc2d2b6d"
+    },
+    {
+      "q": "(tg3x + tgx)/(1 − tg3x·tgx) ifodasi soddalashtirilganda qaysi funksiyaga aylanadi?",
+      "v": [
+        "tg4x",
+        "tg2x",
+        "ctg4x",
+        "tg3x·tgx"
+      ],
+      "t": 0,
+      "izoh": "Bu qo'shish formulasining o'ng tomoni: α = 3x va β = x. Demak ifoda tg(3x + x) = tg4x ga teng. Burchaklarni ayirgan o'quvchi tg2x, maxrajdagi ko'paytmani javob deb olgani esa tg3x·tgx ni tanlaydi. Javob: tg4x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg-teskari-yigish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#7c2660f8"
+    },
+    {
+      "q": "Fizika masalasida (tg50° + tg10°)/(1 − tg50°·tg10°) ifodasi uchraydi. U quyidagilardan qaysi biriga aynan teng?",
+      "v": [
+        "tg40°",
+        "tg60°",
+        "ctg60°",
+        "tg80°"
+      ],
+      "t": 1,
+      "izoh": "Ifoda tg(α + β) ko'rinishida bo'lgani uchun burchaklar qo'shiladi: tg(50° + 10°) = tg60° = √3. Maxrajdagi minusni ayirma deb o'ylagan o'quvchi tg40° javobini belgilaydi. Javob: tg60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg-teskari-yigish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#7ae63c78"
+    },
+    {
+      "q": "Nishablikni baholashda N = 12·(tg75° − tg15°)/(1 + tg75°·tg15°) ifodasi ishlatiladi. N nechaga teng?",
+      "v": [
+        "12",
+        "4√3",
+        "12√3",
+        "√3"
+      ],
+      "t": 2,
+      "izoh": "Kasr qismi ayirma tangensi: tg(75° − 15°) = tg60° = √3. Demak N = 12·√3 = 12√3. Kasrni birga teng deb olgan o'quvchi 12 javobini beradi. Javob: 12√3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-teskari-yigish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#a8811401"
+    },
+    {
+      "q": "15° burchakni 45° va 30° ning ayirmasi deb yozib, tg15° ning aniq qiymatini toping.",
+      "v": [
+        "2 + √3",
+        "√3 − 2",
+        "1 − √3",
+        "2 − √3"
+      ],
+      "t": 3,
+      "izoh": "tg15° = (tg45° − tg30°)/(1 + tg45°·tg30°) = (1 − √3/3)/(1 + √3/3). Surat va maxrajni 3 ga ko'paytiramiz: (3 − √3)/(3 + √3). Maxrajni irratsionallikdan qutqarib (3 − √3)²/6 = (12 − 6√3)/6 = 2 − √3 hosil bo'ladi. Javob: 2 − √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tg-nostandart",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#42e81699"
+    },
+    {
+      "q": "Tomning qiyaligi 75° bo'lgan me'moriy chizmada tg75° ning aniq qiymati kerak bo'ldi. U nechaga teng?",
+      "v": [
+        "2 + √3",
+        "2 − √3",
+        "1 + √3/3",
+        "−2 − √3"
+      ],
+      "t": 0,
+      "izoh": "tg75° = tg(45° + 30°) = (1 + √3/3)/(1 − √3/3) = (3 + √3)/(3 − √3). Maxrajni ratsionallashtirsak (3 + √3)²/6 = (12 + 6√3)/6 = 2 + √3. Tangenslarni shunchaki qo'shgan o'quvchi 1 + √3/3 deb xato qiladi. Javob: 2 + √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-nostandart",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#afe846a4"
+    },
+    {
+      "q": "105° burchakni 60° va 45° yig'indisi ko'rinishida olib, tg105° ning aniq qiymatini hisoblang.",
+      "v": [
+        "2 + √3",
+        "−2 − √3",
+        "2 − √3",
+        "−2 + √3"
+      ],
+      "t": 1,
+      "izoh": "tg105° = (tg60° + tg45°)/(1 − tg60°·tg45°) = (√3 + 1)/(1 − √3). Surat va maxrajni (1 + √3) ga ko'paytiramiz: (√3 + 1)(1 + √3)/(1 − 3) = (4 + 2√3)/(−2) = −2 − √3. 105° ikkinchi chorakda bo'lgani uchun tangens manfiy. Javob: −2 − √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tg-nostandart",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#de1d687d"
+    },
+    {
+      "q": "Zinapoya qiyaligi uchun tgα = 1/3 o'lchandi va endi tg(α + 45°) qiymati talab qilinmoqda. Natija nechaga teng?",
+      "v": [
+        "−1/2",
+        "4/3",
+        "2",
+        "1/2"
+      ],
+      "t": 2,
+      "izoh": "tg(α + 45°) = (tgα + 1)/(1 − tgα) = (1/3 + 1)/(1 − 1/3) = (4/3)/(2/3) = 2. Maxrajni e'tiborsiz qoldirgan o'quvchi 4/3, ayirma formulasini qo'llagani esa −1/2 javobini oladi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-nostandart",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#0a257590"
+    },
+    {
+      "q": "165° burchakni 120° va 45° yig'indisi deb qarab, tg165° ning aniq qiymatini toping.",
+      "v": [
+        "2 − √3",
+        "−2 − √3",
+        "2 + √3",
+        "√3 − 2"
+      ],
+      "t": 3,
+      "izoh": "tg120° = −√3 bo'lgani uchun tg165° = (−√3 + 1)/(1 + √3) = (1 − √3)/(1 + √3). Surat va maxrajni (1 − √3) ga ko'paytiramiz: (1 − √3)²/(1 − 3) = (4 − 2√3)/(−2) = √3 − 2. Javob: √3 − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tg-nostandart",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#16f16a23"
+    },
+    {
+      "q": "3·sinx + 4·cosx ifodasi qo'shish formulasi yordamida R·sin(x + φ) ko'rinishiga keltirildi. R koeffitsient nechaga teng?",
+      "v": [
+        "5",
+        "7",
+        "√7",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "R·sin(x + φ) = R·cosφ·sinx + R·sinφ·cosx bo'lgani uchun R·cosφ = 3 va R·sinφ = 4. Ikkala tenglikni kvadratga ko'tarib qo'shsak R² = 9 + 16 = 25, demak R = 5. Koeffitsientlarni shunchaki qo'shgan o'quvchi 7 deb xato qiladi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amplituda-yigish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#6d0f3a52"
+    },
+    {
+      "q": "5·sinx + 12·cosx ifodasini bitta sinusga yig'ganda oldida turadigan koeffitsientni toping.",
+      "v": [
+        "17",
+        "13",
+        "√17",
+        "169"
+      ],
+      "t": 1,
+      "izoh": "Ifoda R·sin(x + φ) ko'rinishida yozilsa R = √(5² + 12²) = √169 = 13 bo'ladi. Ildiz olishni unutgan o'quvchi 169, koeffitsientlarni qo'shgani esa 17 javobini beradi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amplituda-yigish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#884aac15"
+    },
+    {
+      "q": "Prujinali tarozining tebranishi y = 8·sinx + 15·cosx tenglama bilan tasvirlanadi. Bu ifodani R·sin(x + φ) ko'rinishida yozganda R nechaga teng bo'ladi?",
+      "v": [
+        "23",
+        "√23",
+        "17",
+        "289"
+      ],
+      "t": 2,
+      "izoh": "Qo'shish formulasiga ko'ra R·cosφ = 8 va R·sinφ = 15. Kvadratlarni qo'shsak R² = 64 + 225 = 289, demak R = 17. Ildizni koeffitsientlar yig'indisidan olish √23 kabi xato javobga olib keladi. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amplituda-yigish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#ee1e877a"
+    },
+    {
+      "q": "sinx + √3·cosx ifodasi 2·sin(x + φ) ko'rinishida yozildi. Bu yerda φ burchak necha gradusga teng?",
+      "v": [
+        "30°",
+        "45°",
+        "90°",
+        "60°"
+      ],
+      "t": 3,
+      "izoh": "Ifodani 2 ga chiqaramiz: 2·((1/2)·sinx + (√3/2)·cosx). Qavs ichi sinx·cos60° + cosx·sin60° ko'rinishida, ya'ni sin(x + 60°). Demak φ = 60°. Koeffitsientlarni almashtirib qo'ygan o'quvchi 30° deb xato qiladi. Javob: 60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amplituda-yigish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#fec5c89c"
+    },
+    {
+      "q": "Generator chiqishidagi kuchlanish u = 7·sint + 24·cost volt formula bilan o'zgaradi. u ning eng katta qiymati qancha bo'ladi?",
+      "v": [
+        "25",
+        "31",
+        "√31",
+        "625"
+      ],
+      "t": 0,
+      "izoh": "Ifodani R·sin(t + φ) ko'rinishiga keltiramiz: R = √(7² + 24²) = √625 = 25. Sinusning eng katta qiymati 1 bo'lgani uchun u eng ko'pi bilan 25 volt bo'ladi. Koeffitsientlarni qo'shgan o'quvchi 31 deb xato qiladi. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "max-min-model",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#1708fd0f"
+    },
+    {
+      "q": "y = 3·sinx − 4·cosx funksiyasi qabul qila oladigan eng kichik qiymatni aniqlang.",
+      "v": [
+        "−1",
+        "−5",
+        "−7",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Ifodani R·sin(x − φ) ko'rinishida yozamiz, bunda R = √(9 + 16) = 5. Sinus eng kichik qiymati −1 bo'lgani uchun funksiyaning eng kichik qiymati −5. Koeffitsientlarni ayirgan o'quvchi −1 javobini beradi. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "max-min-model",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#ddda72ab"
+    },
+    {
+      "q": "Ko'ldagi suv sathi h = 20 + 8·sint + 6·cost santimetr qonuniyat bilan o'zgaradi. Sath eng balandida necha santimetr bo'ladi?",
+      "v": [
+        "34",
+        "28",
+        "30",
+        "20"
+      ],
+      "t": 2,
+      "izoh": "O'zgaruvchi qism 8·sint + 6·cost ni bitta sinusga yig'amiz: R = √(64 + 36) = 10. Demak h ning eng katta qiymati 20 + 10 = 30 sm. Koeffitsientlarni to'g'ridan-to'g'ri qo'shgan o'quvchi 34 sm deb xato qiladi. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "max-min-model",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#c6ad13e1"
+    },
+    {
+      "q": "Issiqxonadagi harorat T = 18 + 9·sinx + 12·cosx gradus bilan ifodalanadi. Eng past harorat necha gradus bo'ladi?",
+      "v": [
+        "33",
+        "6",
+        "−15",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "9·sinx + 12·cosx ni R·sin(x + φ) ko'rinishiga keltiramiz: R = √(81 + 144) = 15. Bu qism eng kami bilan −15 qiymat oladi, demak T eng past qiymati 18 − 15 = 3 gradus. O'zgarmas hadni unutgan o'quvchi −15 deb yozadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "max-min-model",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#1c2b5dd8"
+    },
+    {
+      "q": "α va β burchaklar yig'indisi 45° ga teng bo'lsa, (1 + tgα)·(1 + tgβ) ko'paytma nechaga teng bo'ladi?",
+      "v": [
+        "2",
+        "1",
+        "√2",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Qavslarni ochamiz: 1 + tgα + tgβ + tgα·tgβ. Qo'shish formulasidan tg45° = (tgα + tgβ)/(1 − tgα·tgβ) = 1, demak tgα + tgβ = 1 − tgα·tgβ. Buni qo'ysak 1 + 1 − tgα·tgβ + tgα·tgβ = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-yigindisi-45",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#acee9981"
+    },
+    {
+      "q": "α + β = 45° shart bajarilganda tgα + tgβ + tgα·tgβ ifodasi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "0",
+        "1",
+        "2",
+        "−1"
+      ],
+      "t": 1,
+      "izoh": "tg(α + β) = (tgα + tgβ)/(1 − tgα·tgβ) = tg45° = 1 bo'lgani uchun tgα + tgβ = 1 − tgα·tgβ. Bu tenglikni ifodaga qo'ysak 1 − tgα·tgβ + tgα·tgβ = 1 hosil bo'ladi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-yigindisi-45",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#21fd9258"
+    },
+    {
+      "q": "Uchburchakli tomorqaning ikki burchagi yig'indisi 45° ni tashkil qiladi va birinchisi uchun tgα = 1/4. Ikkinchi burchak tangensini toping.",
+      "v": [
+        "5/3",
+        "3/4",
+        "3/5",
+        "−3/5"
+      ],
+      "t": 2,
+      "izoh": "β = 45° − α bo'lgani uchun tgβ = (tg45° − tgα)/(1 + tg45°·tgα) = (1 − 1/4)/(1 + 1/4) = (3/4)/(5/4) = 3/5. Maxrajni tashlab ketgan o'quvchi 3/4, formulani teskari qo'llagani −3/5 deb yozadi. Javob: 3/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-yigindisi-45",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#d9daae31"
+    },
+    {
+      "q": "tg20° + tg25° + tg20°·tg25° ifodasining aniq son qiymatini hisoblang.",
+      "v": [
+        "2",
+        "0",
+        "√3",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "Bu yerda 20° + 25° = 45° ekaniga e'tibor beramiz. tg45° = (tg20° + tg25°)/(1 − tg20°·tg25°) = 1 dan tg20° + tg25° = 1 − tg20°·tg25° kelib chiqadi. Ifodaga qo'ysak 1 − tg20°·tg25° + tg20°·tg25° = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-yigindisi-45",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#aa2f4a73"
+    },
+    {
+      "q": "ABC uchburchakda A, B va C burchaklar berilgan bo'lsa, sin(A + B) ifodasi quyidagilardan qaysi biriga teng?",
+      "v": [
+        "sinC",
+        "−sinC",
+        "cosC",
+        "−cosC"
+      ],
+      "t": 0,
+      "izoh": "Uchburchak burchaklari yig'indisi 180° bo'lgani uchun A + B = 180° − C. Demak sin(A + B) = sin(180° − C) = sin180°·cosC − cos180°·sinC = 0 + sinC = sinC. Javob: sinC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-burchak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#36e938f6"
+    },
+    {
+      "q": "Uchburchakning ikki o'tkir burchagi uchun sinA = 8/17 va sinB = 3/5 o'lchandi. Uchinchi burchak sinusi nechaga teng?",
+      "v": [
+        "36/85",
+        "77/85",
+        "−13/85",
+        "84/85"
+      ],
+      "t": 1,
+      "izoh": "C = 180° − (A + B) bo'lgani uchun sinC = sin(A + B). cosA = 15/17 va cosB = 4/5 topiladi. sin(A + B) = (8/17)·(4/5) + (15/17)·(3/5) = 32/85 + 45/85 = 77/85. Kosinus formulasi qo'llansa 36/85 chiqib qoladi. Javob: 77/85.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-burchak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#ce906536"
+    },
+    {
+      "q": "Uchburchakning ikki burchagi uchun tgA = 2 va tgB = 3 ekani ma'lum. Uchinchi burchak necha gradus bo'ladi?",
+      "v": [
+        "135°",
+        "90°",
+        "45°",
+        "60°"
+      ],
+      "t": 2,
+      "izoh": "tg(A + B) = (2 + 3)/(1 − 6) = −1, demak A + B = 135°. Uchburchak burchaklari yig'indisi 180° bo'lgani uchun C = 180° − 135° = 45°. A va B ning yig'indisini javob deb olgan o'quvchi 135° ni tanlaydi. Javob: 45°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-burchak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#06778c4a"
+    },
+    {
+      "q": "Uchburchakning A va B burchaklari uchun cos(A + B) = −1/2 ekani aniqlandi. C burchak necha gradusga teng?",
+      "v": [
+        "120°",
+        "30°",
+        "150°",
+        "60°"
+      ],
+      "t": 3,
+      "izoh": "A + B = 180° − C bo'lgani uchun cos(A + B) = cos(180° − C) = −cosC. Demak −cosC = −1/2, ya'ni cosC = 1/2 va C = 60°. A + B burchagini javob deb yozgan o'quvchi 120° ni tanlaydi. Javob: 60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-burchak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#394a204f"
+    },
+    {
+      "q": "Toshkentdagi ikki ko'chaning nishabligi tgα = 1/2 va tgβ = 1/5 ga teng. Ular orasidagi burchak tangensini toping.",
+      "v": [
+        "3/11",
+        "7/9",
+        "3/10",
+        "11/3"
+      ],
+      "t": 0,
+      "izoh": "Burchaklar ayirmasi izlanadi: tg(α − β) = (1/2 − 1/5)/(1 + (1/2)·(1/5)) = (3/10)/(11/10) = 3/11. Maxrajni hisobga olmagan o'quvchi 3/10, qo'shish formulasini qo'llagani 7/9 deb xato qiladi. Javob: 3/11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nishab-burchak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#5661d910"
+    },
+    {
+      "q": "Koordinata tekisligida ikki to'g'ri chiziqning burchak koeffitsienti tgα = 7/4 va tgβ = 1/3 ga teng. Ular orasidagi o'tkir burchak tangensi qanday?",
+      "v": [
+        "5",
+        "17/19",
+        "17/12",
+        "19/17"
+      ],
+      "t": 1,
+      "izoh": "Chiziqlar orasidagi burchak uchun tg(α − β) = (7/4 − 1/3)/(1 + (7/4)·(1/3)) = (17/12)/(19/12) = 17/19. Qo'shish formulasi ishlatilsa (25/12)/(5/12) = 5 xato javobi chiqadi. Maxrajni unutgan esa 17/12 deb yozadi. Javob: 17/19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nishab-burchak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#20424d3b"
+    },
+    {
+      "q": "Ikki qo'shni uyning tom qiyaligi tgα = 2/3 va tgβ = 1/4 ga teng. Tomlar tekisliklari orasidagi burchak tangensini hisoblang.",
+      "v": [
+        "11/10",
+        "5/12",
+        "5/14",
+        "14/5"
+      ],
+      "t": 2,
+      "izoh": "tg(α − β) = (2/3 − 1/4)/(1 + (2/3)·(1/4)) = (5/12)/(7/6) = (5/12)·(6/7) = 5/14. Qo'shish formulasi qo'llansa 11/10, maxraj tashlab ketilsa 5/12 chiqadi. Javob: 5/14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nishab-burchak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#1811e5c0"
+    },
+    {
+      "q": "Omborga olib boruvchi konveyer ufq bilan 45° burchak, ikkinchi lenta esa nishabligi 1/3 bo'lgan burchak hosil qiladi. Lentalar orasidagi burchak tangensi nechaga teng?",
+      "v": [
+        "2",
+        "2/3",
+        "4/3",
+        "1/2"
+      ],
+      "t": 3,
+      "izoh": "Birinchi burchak uchun tgα = tg45° = 1. tg(α − β) = (1 − 1/3)/(1 + (1/3)) = (2/3)/(4/3) = 1/2. Qo'shish formulasi bilan hisoblagan o'quvchi (4/3)/(2/3) = 2 javobini oladi. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nishab-burchak",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#a4193e6c"
+    },
+    {
+      "q": "sin(α + β) + sin(α − β) yig'indisini ikkala qavsni yoyib soddalashtirgandan keyin qanday ifoda qoladi?",
+      "v": [
+        "2sinα·cosβ",
+        "2cosα·sinβ",
+        "2sinα·sinβ",
+        "sinα·cosβ"
+      ],
+      "t": 0,
+      "izoh": "Birinchi qavs sinα·cosβ + cosα·sinβ, ikkinchisi sinα·cosβ − cosα·sinβ ga yoyiladi. Ularni qo'shsak cosα·sinβ hadlari o'zaro yo'qoladi va 2sinα·cosβ qoladi. Ikkiga ko'paytirishni unutgan o'quvchi sinα·cosβ deb yozadi. Javob: 2sinα·cosβ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifodani-soddalashtirish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#2ca34541"
+    },
+    {
+      "q": "cos(α + β) + cos(α − β) ifodasi yoyilib soddalashtirilganda hosil bo'ladigan natijani ko'rsating.",
+      "v": [
+        "−2sinα·sinβ",
+        "2cosα·cosβ",
+        "2sinα·sinβ",
+        "2cosα·sinβ"
+      ],
+      "t": 1,
+      "izoh": "cos(α + β) = cosα·cosβ − sinα·sinβ va cos(α − β) = cosα·cosβ + sinα·sinβ. Qo'shganda sinα·sinβ hadlari qarama-qarshi ishorada bo'lgani uchun yo'qoladi, natijada 2cosα·cosβ qoladi. Javob: 2cosα·cosβ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifodani-soddalashtirish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#54ddf909"
+    },
+    {
+      "q": "sin(α + β) − sin(α − β) ayirmasini soddalashtirganda qanday ko'paytma hosil bo'ladi?",
+      "v": [
+        "2sinα·cosβ",
+        "−2sinα·sinβ",
+        "2cosα·sinβ",
+        "2sinβ"
+      ],
+      "t": 2,
+      "izoh": "Qavslarni yoyamiz: (sinα·cosβ + cosα·sinβ) − (sinα·cosβ − cosα·sinβ). Bu yerda sinα·cosβ hadlari qisqaradi va 2cosα·sinβ qoladi. Qaysi had qisqarishini adashtirgan o'quvchi 2sinα·cosβ deb yozadi. Javob: 2cosα·sinβ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodani-soddalashtirish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#71d80607"
+    },
+    {
+      "q": "cos(α − β) − cos(α + β) ayirmasi soddalashtirilgandan keyin qaysi ko'rinishga keladi?",
+      "v": [
+        "2cosα·cosβ",
+        "−2sinα·sinβ",
+        "2sinα·cosβ",
+        "2sinα·sinβ"
+      ],
+      "t": 3,
+      "izoh": "cos(α − β) = cosα·cosβ + sinα·sinβ dan cos(α + β) = cosα·cosβ − sinα·sinβ ni ayiramiz. cosα·cosβ hadlari qisqaradi, sinα·sinβ esa ikki marta qoladi: 2sinα·sinβ. Ayirish tartibini almashtirgan o'quvchi −2sinα·sinβ ni tanlaydi. Javob: 2sinα·sinβ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodani-soddalashtirish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#f45ec05b"
+    },
+    {
+      "q": "sinx·cos20° + cosx·sin20° = 1/2 tenglamaning [0°; 90°] oraliqdagi yechimini toping.",
+      "v": [
+        "10°",
+        "30°",
+        "50°",
+        "130°"
+      ],
+      "t": 0,
+      "izoh": "Chap tomon qo'shish formulasi bo'yicha sin(x + 20°) ga teng. sin(x + 20°) = 1/2 dan x + 20° = 30°, ya'ni x = 10° kelib chiqadi. Ikkinchi ildiz x + 20° = 150° bo'lib, x = 130° berilgan oraliqqa kirmaydi. Javob: 10°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglama-qoshish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#2566c9bc"
+    },
+    {
+      "q": "cosx·cos40° − sinx·sin40° = √2/2 tenglamaning [0°; 90°] oralig'ida yotgan ildizini aniqlang.",
+      "v": [
+        "45°",
+        "5°",
+        "85°",
+        "35°"
+      ],
+      "t": 1,
+      "izoh": "Chap tomon cos(x + 40°) ga teng, chunki minus ishorasi yig'indi kosinusiga mos. cos(x + 40°) = √2/2 dan x + 40° = 45°, ya'ni x = 5°. Qo'shish formulasini e'tiborsiz qoldirgan o'quvchi to'g'ridan-to'g'ri 45° deb javob beradi. Javob: 5°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglama-qoshish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#6bd50c12"
+    },
+    {
+      "q": "sin(x + 30°) = cosx tenglamasining eng kichik musbat ildizi necha gradusga teng?",
+      "v": [
+        "60°",
+        "45°",
+        "30°",
+        "15°"
+      ],
+      "t": 2,
+      "izoh": "Chap tomonni yoyamiz: sinx·cos30° + cosx·sin30° = (√3/2)·sinx + (1/2)·cosx. Tenglama (√3/2)·sinx = (1/2)·cosx ko'rinishiga keladi, bundan tgx = 1/√3 va x = 30°. Javob: 30°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglama-qoshish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#23aa96fb"
+    },
+    {
+      "q": "√3·sinx + cosx = 1 tenglama [0°; 360°) oraliqda nechta yechimga ega ekanini aniqlang.",
+      "v": [
+        "1 ta",
+        "3 ta",
+        "4 ta",
+        "2 ta"
+      ],
+      "t": 3,
+      "izoh": "Chap tomonni 2 ga chiqaramiz: 2·((√3/2)·sinx + (1/2)·cosx) = 2·sin(x + 30°). Tenglama sin(x + 30°) = 1/2 ko'rinishiga keladi. x + 30° qiymati 30° va 150° bo'lishi mumkin, ya'ni x = 0° yoki x = 120°. Ikkalasi ham oraliqqa kiradi. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglama-qoshish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#eb8ea157"
+    },
+    {
+      "q": "sin(α + β) = 3/5 va sin(α − β) = 1/5 ekani ma'lum bo'lsa, sinα·cosβ ko'paytma nechaga teng?",
+      "v": [
+        "2/5",
+        "4/5",
+        "1/5",
+        "3/5"
+      ],
+      "t": 0,
+      "izoh": "Ikkala formulani qo'shamiz: sin(α + β) + sin(α − β) = 2sinα·cosβ. Demak 2sinα·cosβ = 3/5 + 1/5 = 4/5, bundan sinα·cosβ = 2/5. Ikkiga bo'lishni unutgan o'quvchi 4/5 deb javob beradi. Javob: 2/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-berilgan-topish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#193148cc"
+    },
+    {
+      "q": "cos(α + β) = 1/3 va cos(α − β) = 3/4 bo'lsa, sinα·sinβ ko'paytmaning qiymatini toping.",
+      "v": [
+        "5/12",
+        "5/24",
+        "13/24",
+        "13/12"
+      ],
+      "t": 1,
+      "izoh": "cos(α − β) − cos(α + β) = 2sinα·sinβ ayniyatidan foydalanamiz. 3/4 − 1/3 = 9/12 − 4/12 = 5/12, demak 2sinα·sinβ = 5/12 va sinα·sinβ = 5/24. Ikkiga bo'lish qadamini tashlab ketgan o'quvchi 5/12 ni tanlaydi. Javob: 5/24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-berilgan-topish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#68efc4f2"
+    },
+    {
+      "q": "Laboratoriya o'lchovida sin(α + β) = 0,6 va cosα·sinβ = 0,2 qiymatlari qayd etilgan. sinα·cosβ nechaga teng?",
+      "v": [
+        "0,8",
+        "0,12",
+        "0,4",
+        "0,3"
+      ],
+      "t": 2,
+      "izoh": "Qo'shish formulasiga ko'ra sin(α + β) = sinα·cosβ + cosα·sinβ. Demak sinα·cosβ = 0,6 − 0,2 = 0,4. Ikki qiymatni qo'shib yuborgan o'quvchi 0,8, ko'paytirgani esa 0,12 javobini beradi. Javob: 0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-berilgan-topish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#cb38a1c2"
+    },
+    {
+      "q": "Tajribada cos(α − β) = 0,8 va cosα·cosβ = 0,5 ekani aniqlandi. sinα·sinβ ko'paytma qanday qiymatga ega?",
+      "v": [
+        "1,3",
+        "0,4",
+        "0,25",
+        "0,3"
+      ],
+      "t": 3,
+      "izoh": "cos(α − β) = cosα·cosβ + sinα·sinβ formulasidan foydalanamiz. Demak sinα·sinβ = 0,8 − 0,5 = 0,3. Qiymatlarni qo'shgan o'quvchi 1,3, ko'paytirgani esa 0,4 deb xato qiladi. Javob: 0,3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-berilgan-topish",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#d99adb69"
+    },
+    {
+      "q": "Ikki tebranish y₁ = 6·sinx·cos25° va y₂ = 6·cosx·sin25° tenglamalar bilan berilgan. Ularning yig'indisi qanday ko'rinishga keladi?",
+      "v": [
+        "6·sin(x + 25°)",
+        "6·sin(x − 25°)",
+        "6·cos(x + 25°)",
+        "12·sin(x + 25°)"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi 6·(sinx·cos25° + cosx·sin25°) ko'rinishida yoziladi. Qavs ichi qo'shish formulasi bo'yicha sin(x + 25°) ga teng. Demak natija 6·sin(x + 25°). Amplitudalarni qo'shib yuborgan o'quvchi 12·sin(x + 25°) deb xato qiladi. Javob: 6·sin(x + 25°).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davriy-model",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#d5ff7408"
+    },
+    {
+      "q": "Generator kuchlanishi u = 20·(sin50°·cost + cos50°·sint) volt formulasi bilan o'zgaradi. Uni bitta sinus ko'rinishida yozing.",
+      "v": [
+        "20·sin(50° − t)",
+        "20·sin(t + 50°)",
+        "20·cos(t + 50°)",
+        "20·sin(t − 50°)"
+      ],
+      "t": 1,
+      "izoh": "Qavs ichidagi ifoda sinα·cosβ + cosα·sinβ ko'rinishida, bunda α = 50° va β = t. Demak u = 20·sin(50° + t) = 20·sin(t + 50°). Ishorani noto'g'ri o'qigan o'quvchi 20·sin(t − 50°) ni tanlaydi. Javob: 20·sin(t + 50°).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-model",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#6d638c6d"
+    },
+    {
+      "q": "Aylanma g'ildirakdagi kabina balandligi h = 4·sint·cos60° + 4·cost·sin60° + 5 metr bilan hisoblanadi. Eng katta balandlik necha metr?",
+      "v": [
+        "5",
+        "4",
+        "9",
+        "13"
+      ],
+      "t": 2,
+      "izoh": "O'zgaruvchi qism 4·(sint·cos60° + cost·sin60°) = 4·sin(t + 60°). Sinusning eng katta qiymati 1 bo'lgani uchun bu qism eng ko'pi 4 bo'ladi. Demak h eng katta qiymati 4 + 5 = 9 metr. Hadlarni qo'shib yuborgan o'quvchi 13 deb xato qiladi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-model",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#d8ed8bff"
+    },
+    {
+      "q": "Bandargohda suv sathi h = 3·sin(t + 20°) + 3·sin(t − 20°) desimetr bilan o'zgaradi. Bu ifoda qaysi ko'rinishga keladi?",
+      "v": [
+        "6·cost·sin20°",
+        "6·sint·sin20°",
+        "3·sint·cos20°",
+        "6·sint·cos20°"
+      ],
+      "t": 3,
+      "izoh": "Ikki qavsni yoyamiz: 3·(sint·cos20° + cost·sin20°) va 3·(sint·cos20° − cost·sin20°). Qo'shganda cost·sin20° hadlari yo'qoladi va 6·sint·cos20° qoladi. Ikkiga ko'paytirishni unutgan o'quvchi 3·sint·cos20° deb yozadi. Javob: 6·sint·cos20°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-model",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#798f7755"
+    },
+    {
+      "q": "cos15° − sin15° ayirmasining aniq son qiymatini qo'shish formulalari yordamida hisoblang.",
+      "v": [
+        "√2/2",
+        "√6/2",
+        "(√6 − √2)/2",
+        "√2"
+      ],
+      "t": 0,
+      "izoh": "cos15° = (√6 + √2)/4 va sin15° = (√6 − √2)/4 ekanini bilamiz. Ularni ayirsak (√6 + √2 − √6 + √2)/4 = 2√2/4 = √2/2. Ikki qiymatni qo'shib yuborgan o'quvchi √6/2 javobini beradi. Javob: √2/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kombinatsiya-tahlil",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#72c3b6cb"
+    },
+    {
+      "q": "α + β = 60° va cosα·cosβ = 5/8 shartlari bajarilsa, sinα·sinβ ko'paytma nechaga teng bo'ladi?",
+      "v": [
+        "−1/8",
+        "1/8",
+        "9/8",
+        "5/16"
+      ],
+      "t": 1,
+      "izoh": "cos(α + β) = cosα·cosβ − sinα·sinβ formulasiga cos60° = 1/2 ni qo'yamiz: 1/2 = 5/8 − sinα·sinβ. Bundan sinα·sinβ = 5/8 − 1/2 = 1/8. Ayirish tartibini almashtirgan o'quvchi −1/8 deb xato qiladi. Javob: 1/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kombinatsiya-tahlil",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#55492b19"
+    },
+    {
+      "q": "tg(α + β) = 5 va tgβ = 1/2 ekani berilgan bo'lsa, tgα ning qiymatini toping.",
+      "v": [
+        "11/7",
+        "9/2",
+        "9/7",
+        "7/9"
+      ],
+      "t": 2,
+      "izoh": "α = (α + β) − β deb yozamiz va ayirma formulasini qo'llaymiz: tgα = (5 − 1/2)/(1 + 5·(1/2)) = (9/2)/(7/2) = 9/7. Ayirma o'rniga yig'indi formulasini olgan o'quvchi 11/7, maxrajni unutgani 9/2 deb javob beradi. Javob: 9/7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kombinatsiya-tahlil",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#e0357c9b"
+    },
+    {
+      "q": "Uchta o'tkir burchak uchun tgα = 1/2, tgβ = 1/5 va tgγ = 1/8 berilgan. Ularning yig'indisi necha gradusga teng?",
+      "v": [
+        "30°",
+        "60°",
+        "90°",
+        "45°"
+      ],
+      "t": 3,
+      "izoh": "Avval tg(α + β) = (1/2 + 1/5)/(1 − 1/10) = (7/10)/(9/10) = 7/9 ni topamiz. So'ng uchinchi burchakni qo'shamiz: (7/9 + 1/8)/(1 − (7/9)·(1/8)) = (65/72)/(65/72) = 1. Tangensi birga teng va uch o'tkir burchakning yig'indisi 180° dan kichik bo'lgani uchun natija 45°. Javob: 45°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kombinatsiya-tahlil",
+      "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma#a361e1bf"
+    }
+  ]
+}

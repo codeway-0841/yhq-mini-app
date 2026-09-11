@@ -1,0 +1,576 @@
+{
+  "nom": "25-mavzu. Yoruglik Interferensiyasi Va Difraksiyasi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Yomg‘irdan keyin asfaltdagi yog‘ jilolari va sovun pufagidagi rangli naqshlar qaysi hodisa bilan tushuntiriladi?",
+      "v": [
+        "Yorug‘lik interferensiyasi",
+        "Yorug‘likning qaytishi",
+        "Yorug‘likning sinishi",
+        "Yorug‘lik dispersiyasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikda bu manzaralarning sababi yorug‘lik interferensiyasi deb ko‘rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#1afb283a"
+    },
+    {
+      "q": "Muhitda tarqalayotgan to‘lqinlarning har biri boshqa to‘lqinlar yo‘qdek mustaqil tarqalishi qanday prinsip deyiladi?",
+      "v": [
+        "Superpozitsiya (mustaqillik) prinsipi",
+        "Gyuygens prinsipi",
+        "Saqlanish prinsipi",
+        "Dopler prinsipi"
+      ],
+      "t": 0,
+      "izoh": "Bu to‘lqinlar tarqalishining superpozitsiya (mustaqillik) prinsipidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#ede3db9d"
+    },
+    {
+      "q": "Kogerent to‘lqinlar deb qanday to‘lqinlarga aytiladi?",
+      "v": [
+        "Chastotalari teng va fazalar farqi o‘zgarmas bo‘lgan to‘lqinlar",
+        "Amplitudalari teng bo‘lgan istalgan to‘lqinlar",
+        "Bir xil muhitda tarqaladigan to‘lqinlar",
+        "Tezliklari teng bo‘lgan to‘lqinlar"
+      ],
+      "t": 0,
+      "izoh": "Kogerentlik sharti — chastotalarning tengligi va fazalar farqining o‘zgarmasligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#8b9c6998"
+    },
+    {
+      "q": "To‘lqinlar interferensiyasi deganda nima tushuniladi?",
+      "v": [
+        "Kogerent to‘lqinlarning uchrashganda bir-birini kuchaytirishi yoki susaytirishi",
+        "To‘lqinlarning to‘siqni aylanib o‘tishi",
+        "To‘lqinlarning muhit chegarasidan qaytishi",
+        "To‘lqin tezligining muhitda o‘zgarishi"
+      ],
+      "t": 0,
+      "izoh": "Interferensiya — kogerent to‘lqinlarning ustma-ust tushish natijasida kuchayishi yoki susayishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#86641193"
+    },
+    {
+      "q": "∆d = d₂ – d₁ kattalik interferensiya masalalarida nima deb ataladi?",
+      "v": [
+        "To‘lqinlarning yo‘l farqi",
+        "To‘lqin uzunligi",
+        "Faza farqi",
+        "Panjara doimiysi"
+      ],
+      "t": 0,
+      "izoh": "Ikki manbadan nuqtagacha bo‘lgan masofalar ayirmasi yo‘l farqi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#06942ada"
+    },
+    {
+      "q": "Interferensiyaning maksimum (kuchayish) sharti qanday yoziladi?",
+      "v": [
+        "∆d = 2k·λ/2 (k = 0, 1, 2, ...)",
+        "∆d = (2k+1)·λ/2",
+        "∆d = k·λ/4",
+        "∆d = λ/2"
+      ],
+      "t": 0,
+      "izoh": "Yo‘l farqi yarim to‘lqin uzunligining juft soniga karrali bo‘lsa kuchayish kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#a373755b"
+    },
+    {
+      "q": "Interferensiyaning minimum (susayish) sharti qanday yoziladi?",
+      "v": [
+        "∆d = (2k+1)·λ/2 (k = 0, 1, 2, ...)",
+        "∆d = 2k·λ/2",
+        "∆d = k·λ",
+        "∆d = 4k·λ/2"
+      ],
+      "t": 0,
+      "izoh": "Yo‘l farqi yarim to‘lqin uzunligining toq soniga karrali bo‘lsa susayish kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#dff5e63b"
+    },
+    {
+      "q": "Interferensiya kuzatilganda yo‘l farqi 3,5λ ga teng bo‘lsa, nuqtada nima kuzatiladi?",
+      "v": [
+        "Tebranishlarning susayishi",
+        "Tebranishlarning kuchayishi",
+        "Hech qanday o‘zgarish bo‘lmaydi",
+        "To‘lqin to‘liq so‘nadi, so‘ngra qayta paydo bo‘ladi"
+      ],
+      "t": 0,
+      "izoh": "3,5λ = (2·3+1)·λ/2 — yarim to‘lqin uzunligining toq karralisi, demak minimum kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#d9de5e1a"
+    },
+    {
+      "q": "Interferensiya kuzatilganda yo‘l farqi 4λ ga teng bo‘lsa, nuqtada nima kuzatiladi?",
+      "v": [
+        "Tebranishlarning kuchayishi",
+        "Tebranishlarning susayishi",
+        "Qisman kuchayish",
+        "Qisman susayish"
+      ],
+      "t": 0,
+      "izoh": "4λ = 2k·λ/2 (k=4) — yarim to‘lqin uzunligining juft karralisi, demak maksimum kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#84160dd4"
+    },
+    {
+      "q": "Nima sababdan bir korxonada ishlab chiqarilgan ikkita bir xil lampochkadan chiqqan yorug‘lik interferensiya hosil qilmaydi?",
+      "v": [
+        "Ulardan chiqqan yorug‘lik nurlari kogerent bo‘lmaydi",
+        "Ularning quvvatlari bir xil bo‘lgani uchun",
+        "Yorug‘lik juda tez tarqalgani uchun",
+        "Lampochkalar shishasi yorug‘likni yutgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Ikki alohida manbadan chiqqan nurlarning fazalar farqi o‘zgarmas bo‘lmaydi, demak kogerent emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#ae51eaa8"
+    },
+    {
+      "q": "Yorug‘likda kogerent to‘lqinlar qanday usulda hosil qilinadi?",
+      "v": [
+        "Bir manbadan chiqqan nur sun’iy ravishda ikkiga bo‘linadi",
+        "Ikkita bir xil manba parallel yoqiladi",
+        "Yorug‘lik maxsus linzadan o‘tkaziladi",
+        "Ikki manba bir-biriga juda yaqin qo‘yiladi"
+      ],
+      "t": 0,
+      "izoh": "Kogerent to‘lqinlar asosan bir manba nurini ikkiga bo‘lish yo‘li bilan olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#7ca49b48"
+    },
+    {
+      "q": "Yung tajribasi qaysi yilda o‘tkazilgan?",
+      "v": [
+        "1801-yilda",
+        "1666-yilda",
+        "1873-yilda",
+        "1895-yilda"
+      ],
+      "t": 0,
+      "izoh": "Yung metodi 1801-yilga tegishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#ddb5e74b"
+    },
+    {
+      "q": "Yung tajribasida Quyosh nuri qorong‘i xonaga avval qanday kiradi?",
+      "v": [
+        "Kichik S tirqishdan",
+        "Katta teshikdan",
+        "Prizmadan",
+        "Linzadan"
+      ],
+      "t": 0,
+      "izoh": "Nur avval kichik S tirqishdan, so‘ng S₁ va S₂ tirqishlardan o‘tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#cc357b8b"
+    },
+    {
+      "q": "Yung tajribasida ekranning markaziy qismida qanday polosa hosil bo‘ladi?",
+      "v": [
+        "Oq polosa",
+        "Qizil polosa",
+        "Binafsha polosa",
+        "Qora polosa"
+      ],
+      "t": 0,
+      "izoh": "Markaziy qismda oq polosa, chetki qismlarda rangli polosalar hosil bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#2027bea4"
+    },
+    {
+      "q": "Yung o‘z tajribalarida spektrning chetki binafsha qismi uchun to‘lqin uzunligini qancha deb topgan?",
+      "v": [
+        "0,42 μm",
+        "0,7 μm",
+        "0,55 μm",
+        "0,38 μm"
+      ],
+      "t": 0,
+      "izoh": "Binafsha uchun 0,42 μm, qizil uchun 0,7 μm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#3ac537b9"
+    },
+    {
+      "q": "Yung tajribalarida qizil yorug‘lik uchun to‘lqin uzunligi qancha olingan?",
+      "v": [
+        "0,7 μm",
+        "0,42 μm",
+        "0,6 μm",
+        "0,76 μm"
+      ],
+      "t": 0,
+      "izoh": "Qizil yorug‘lik uchun 0,7 μm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#5cffe8d1"
+    },
+    {
+      "q": "Yupqa plyonkada rangli interferension manzara qanday hosil bo‘ladi?",
+      "v": [
+        "Nurning bir qismi plyonkaning ustki sirtidan, bir qismi pastki sirtidan qaytib, ular uchrashganda interferensiya kuzatiladi",
+        "Nur plyonka ichida to‘liq yutiladi",
+        "Nur plyonkadan bir marta qaytadi",
+        "Nur plyonkani aylanib o‘tadi"
+      ],
+      "t": 0,
+      "izoh": "Ustki va pastki sirtlardan qaytgan ikki to‘lqinning uchrashuvi interferensiya manzarasini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#f5a657ad"
+    },
+    {
+      "q": "Oq yorug‘lik qaysi to‘lqin uzunliklari oraliqidagi nurlardan iborat?",
+      "v": [
+        "380 nm dan 760 nm gacha",
+        "100 nm dan 380 nm gacha",
+        "760 nm dan 1 mm gacha",
+        "0,005 nm dan 100 nm gacha"
+      ],
+      "t": 0,
+      "izoh": "Ko‘zga ko‘rinadigan oq yorug‘lik 380–760 nm oraliqdagi to‘lqinlardan tashkil topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#710758e7"
+    },
+    {
+      "q": "Nyuton halqalarini kuzatish uchun qanday qurilma ishlatiladi?",
+      "v": [
+        "Yupqa plastina ustiga qavariq sirtli linza qo‘yiladi",
+        "Ikki qirrali prizma ishlatiladi",
+        "Ikki parallel tirqishli ekran ishlatiladi",
+        "Difraksion panjara ishlatiladi"
+      ],
+      "t": 0,
+      "izoh": "Plastina va unga O nuqtada tegadigan linza sirti orasida havo qatlami hosil bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#22d4f265"
+    },
+    {
+      "q": "Nyuton halqalari qurilmasida interferensiya qayerdan qaytgan nurlar orasida yuzaga keladi?",
+      "v": [
+        "Havo qatlamining ustki va ostki sirtlaridan qaytgan nurlar orasida",
+        "Linzaning ichki qatlamlaridan qaytgan nurlar orasida",
+        "Plastinaning tashqi yuzalaridan qaytgan nurlar orasida",
+        "Ikki linza sirtidan qaytgan nurlar orasida"
+      ],
+      "t": 0,
+      "izoh": "Nurlar havo qatlamining ustki va ostki sirtidan qaytadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#d5dd659a"
+    },
+    {
+      "q": "Nyuton halqalari qurilmasi oq yorug‘lik bilan yoritilsa, linzaning tegish nuqtasida nima ko‘rinadi?",
+      "v": [
+        "Qorong‘i dog‘ va uning atrofida rangli halqalar",
+        "Yorug‘ oq dog‘",
+        "Faqat qizil halqalar",
+        "Bir xil yoritilgan maydon"
+      ],
+      "t": 0,
+      "izoh": "Tegish nuqtasida qorong‘i dog‘, atrofida rangli halqalar joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#cd1dd946"
+    },
+    {
+      "q": "Nyuton halqalari yordamida nimani aniqlash mumkin?",
+      "v": [
+        "Yorug‘likning to‘lqin uzunligini yoki linzaning egrilik radiusini",
+        "Yorug‘likning tezligini",
+        "Muhitning zichligini",
+        "Linzanning massasini"
+      ],
+      "t": 0,
+      "izoh": "Halqa diametrini o‘lchab to‘lqin uzunligi yoki egrilik radiusi aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#9a601587"
+    },
+    {
+      "q": "Nyuton halqalarida qorong‘i halqalarning radiusi qaysi formula bilan ifodalanadi?",
+      "v": [
+        "r_qor = √(mRλ)",
+        "r_qor = √(mR/λ)",
+        "r_qor = mRλ",
+        "r_qor = √(λ/(mR))"
+      ],
+      "t": 0,
+      "izoh": "Qorong‘i halqalar radiusi r_qor = √(mRλ).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#3107d88d"
+    },
+    {
+      "q": "Yorug‘lik difraksiyasi hodisasining ilmiy izohini birinchi bo‘lib kim bergan?",
+      "v": [
+        "F. Grimaldi",
+        "I. Nyuton",
+        "T. Yung",
+        "J. Maksvell"
+      ],
+      "t": 0,
+      "izoh": "Grimaldi narsalar ortidagi soyaning xiraroq chiqishini tushuntirib, hodisani difraksiya deb atagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#19ea18be"
+    },
+    {
+      "q": "To‘lqinlar difraksiyasi deb nimaga aytiladi?",
+      "v": [
+        "To‘lqinning o‘z yo‘lida uchragan to‘siqni aylanib o‘tishiga",
+        "To‘lqinlarning bir-birini kuchaytirishiga",
+        "To‘lqinning muhit chegarasidan qaytishiga",
+        "To‘lqinning ranglarga ajralishiga"
+      ],
+      "t": 0,
+      "izoh": "Difraksiya — to‘lqinning to‘siqni aylanib o‘tishi; bunda to‘g‘ri chiziq bo‘ylab tarqalish qonuni bajarilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#302a19c0"
+    },
+    {
+      "q": "Difraksiya hodisasi kuzatilishi uchun to‘siqning o‘lchami qanday bo‘lishi kerak?",
+      "v": [
+        "Tushayotgan to‘lqin uzunligidan kichik bo‘lishi kerak",
+        "To‘lqin uzunligidan ancha katta bo‘lishi kerak",
+        "To‘lqin uzunligining million karralisi bo‘lishi kerak",
+        "To‘siq o‘lchamining ahamiyati yo‘q"
+      ],
+      "t": 0,
+      "izoh": "To‘siq (yoki tirqish) o‘lchami to‘lqin uzunligidan kichik bo‘lishi zarur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#f5c5486d"
+    },
+    {
+      "q": "Difraksion panjara deb nimaga aytiladi?",
+      "v": [
+        "Yorug‘lik difraksiyasi kuzatiladigan ko‘p sonli to‘siq va tirqishlar yig‘indisiga",
+        "Yorug‘likni ranglarga ajratuvchi shisha uchburchakka",
+        "Bitta keng tirqishli ekranga",
+        "Qutblangan yorug‘lik hosil qiluvchi kristallga"
+      ],
+      "t": 0,
+      "izoh": "Difraksion panjara — ko‘p sonli to‘siq va tirqishlar yig‘indisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#4e3bc91a"
+    },
+    {
+      "q": "Difraksion panjaralar tirqishlarning joylashishiga qarab qanday turlarga bo‘linadi?",
+      "v": [
+        "Tartibli (muntazam) va tartibsiz",
+        "Yassi va qavariq",
+        "Katta va kichik",
+        "Tabiiy va sun’iy"
+      ],
+      "t": 0,
+      "izoh": "Tirqishlar qat’iy tartibda joylashgan bo‘lsa — tartibli, aks holda — tartibsiz panjara.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#a9232f5c"
+    },
+    {
+      "q": "Yassi tartibli difraksion panjara qanday tayyorlanadi?",
+      "v": [
+        "Olmos yordamida shaffof plastinaga parallel va bir-biriga juda yaqin chiziqlar tortiladi",
+        "Shishani maxsus kislota bilan eritiladi",
+        "Metall plastinka teshib chiqiladi",
+        "Qog‘ozga siyoh bilan chiziqlar tortiladi"
+      ],
+      "t": 0,
+      "izoh": "Tortilgan chiziqlar to‘siq, ularning orasi tirqish vazifasini o‘taydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#75ec7205"
+    },
+    {
+      "q": "Tirqish eni a, to‘siq eni b bo‘lsa, difraksion panjaraning doimiysi (davri) d qanday aniqlanadi?",
+      "v": [
+        "d = a + b",
+        "d = a – b",
+        "d = a·b",
+        "d = a / b"
+      ],
+      "t": 0,
+      "izoh": "Panjara davri tirqish va to‘siq enlarining yig‘indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#59aeb8ce"
+    },
+    {
+      "q": "Difraksion panjara uchun asosiy formula qanday yoziladi?",
+      "v": [
+        "d·sinφ = nλ",
+        "d·cosφ = nλ",
+        "d·tgφ = nλ",
+        "d·φ = nλ"
+      ],
+      "t": 0,
+      "izoh": "d sinφ = nλ; bu yerda n — difraksion maksimumlarning tartib raqami.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#78ecc575"
+    },
+    {
+      "q": "d·sinφ = nλ formulasidagi n harfi nimani anglatadi?",
+      "v": [
+        "Difraksion maksimumlarning tartib raqamini",
+        "Panjara tirqishlari sonini",
+        "Nur sinish ko‘rsatkichini",
+        "To‘lqin chastotasini"
+      ],
+      "t": 0,
+      "izoh": "n — maksimumning tartib raqami (n = 0, 1, 2, ...).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#e45714da"
+    },
+    {
+      "q": "Difraksion panjaraga to‘lqin uzunligi 500 nm bo‘lgan monoxromatik yorug‘lik tushib, ikkinchi tartibli spektr 30° burchak ostida ko‘rinsa, panjara doimiysi qanday topiladi?",
+      "v": [
+        "d = nλ/sinφ = 2·10⁻⁶ m",
+        "d = λ/(n·sinφ) = 5·10⁻⁷ m",
+        "d = nλ·sinφ = 5·10⁻⁷ m",
+        "d = λ·sinφ/n = 1,25·10⁻⁷ m"
+      ],
+      "t": 0,
+      "izoh": "d = nλ/sin30° = 2·500·10⁻⁹/0,5 = 2·10⁻⁶ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#d238c69c"
+    },
+    {
+      "q": "Panjara doimiysi d oshirilsa, bir xil tartibdagi spektrning burilish burchagi φ qanday o‘zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Oshadi",
+        "O‘zgarmaydi",
+        "Avval oshib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "sinφ = nλ/d dan d oshsa, sinφ (demak φ) kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#69227b56"
+    },
+    {
+      "q": "Difraksion panjarada kuzatiladigan spektrning tartib raqami cheklanganmi?",
+      "v": [
+        "Ha, chunki sinφ ≤ 1 shart bajarilishi kerak",
+        "Yo‘q, cheksiz",
+        "Faqat ikkita tartib mumkin",
+        "Faqat birinchi tartib mavjud"
+      ],
+      "t": 0,
+      "izoh": "sinφ = nλ/d ≤ 1 bo‘lishi kerakligi sababli tartib raqami cheklangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#7554ede4"
+    },
+    {
+      "q": "Interferensiya va difraksiya hodisalari yorug‘likning qanday tabiatga ega ekanligini tasdiqlaydi?",
+      "v": [
+        "To‘lqin xususiyatiga ega ekanligini",
+        "Zarra xususiyatiga ega ekanligini",
+        "Faqat to‘g‘ri chiziq bo‘ylab tarqalishini",
+        "Rangga ega emasligini"
+      ],
+      "t": 0,
+      "izoh": "Interferensiya va difraksiya faqat to‘lqinlar uchun xos hodisalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#a85e4592"
+    },
+    {
+      "q": "Interferometr asbobi yordamida quyidagilardan qaysi birini aniqlash MUMKIN EMAS?",
+      "v": [
+        "Yorug‘lik manbasining quvvatini",
+        "Juda kichik burchaklarni aniqlash",
+        "Yorug‘likning to‘lqin uzunligini aniqlash",
+        "Moddalarning nur sindirish ko‘rsatkichini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Interferometr burchak, to‘lqin uzunligi, kesma uzunligi, sindirish ko‘rsatkichi va sirt sifatini o‘lchaydi; manba quvvatini emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#876873c7"
+    },
+    {
+      "q": "Difraksion panjaradan o‘tgan nurlar ekranda qanday manzara hosil qiladi?",
+      "v": [
+        "Qoramtir oraliqlar bilan ajratilgan yorug‘ polosalar qatori",
+        "Bitta bir xil yoritilgan maydon",
+        "Faqat bitta qora chiziq",
+        "Doiraviy rangli dog‘"
+      ],
+      "t": 0,
+      "izoh": "Ekranda difraksion manzara — qoramtir oraliqlar bilan ajralgan yorug‘ polosalar qatori ko‘rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi#d6ce1a53"
+    }
+  ]
+}

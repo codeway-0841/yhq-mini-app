@@ -51,14 +51,17 @@ describe('shared/subjects — data integrity', () => {
 
   it("kontenti bor fanlar available:true, qolgan fanlar locked", () => {
     const byId = Object.fromEntries(SUBJECT_BASES.map((s) => [s.id, s.available]))
-    expect(byId['yhq']).toBe(true)       // 300 savol
-    expect(byId['rustili']).toBe(true)   // 1000 savol
-    expect(byId['fizika']).toBe(true)    // Fizika Test Print banki
-    expect(byId['matematika']).toBe(true)  // Matematika Test Print banki (11,040 savol)
-    expect(byId['kimyo']).toBe(false)
-    expect(byId['ingliz']).toBe(false)
-    expect(byId['tarix']).toBe(false)
-    expect(byId['biologiya']).toBe(false)
+    expect(byId['yhq']).toBe(true)          // YHQ banki
+    expect(byId['rustili']).toBe(true)      // Rus tili banki
+    expect(byId['fizika']).toBe(true)       // Fizika Test Print banki
+    expect(byId['matematika']).toBe(true)   // Matematika Test Print banki
+    expect(byId['kimyo']).toBe(true)        // Kimyo banki
+    expect(byId['ingliz']).toBe(false)      // Ingliz tili (hali tayyorlanmoqda)
+    expect(byId['tarix']).toBe(true)        // Tarix banki
+    expect(byId['biologiya']).toBe(true)    // Biologiya banki
+    expect(byId['geografiya']).toBe(true)   // Geografiya banki
+    expect(byId['onatili']).toBe(true)      // Ona tili banki
+    expect(byId['adabiyot']).toBe(true)     // Adabiyot banki
   })
 })
 

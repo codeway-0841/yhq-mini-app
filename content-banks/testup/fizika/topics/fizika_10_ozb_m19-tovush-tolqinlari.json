@@ -1,0 +1,681 @@
+{
+  "nom": "19-mavzu. Tovush Tolqinlari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Tovush to'lqinlari deb nimaga aytiladi?",
+      "v": [
+        "Inson eshita oladigan mexanik to'lqinlarga",
+        "Har qanday elastik to'lqinlarga",
+        "Faqat musiqa to'lqinlariga",
+        "Elektromagnit to'lqinlarga"
+      ],
+      "t": 0,
+      "izoh": "Inson eshita oladigan mexanik to'lqinlar tovush to'lqinlari deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#75632995"
+    },
+    {
+      "q": "Tovush nima?",
+      "v": [
+        "Gaz, suyuq yoki qattiq muhitda tarqaladigan elastik muhit zarralarining tebranma harakati",
+        "Yorug'likning tarqalishi",
+        "Elektr tokining oqishi",
+        "Muhitning qizishi"
+      ],
+      "t": 0,
+      "izoh": "Tovush — elastik muhit zarralarining tebranma harakati bo'lib, gaz, suyuq yoki qattiq muhitda tarqaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#52f5c994"
+    },
+    {
+      "q": "Tovush qanday muhitda tarqala olmaydi?",
+      "v": [
+        "Vakuumda",
+        "Havoda",
+        "Suvda",
+        "Qattiq jismda"
+      ],
+      "t": 0,
+      "izoh": "Tovush elastik muhitda tarqaladi, vakuumda tarqala olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#2993b610"
+    },
+    {
+      "q": "Inson qulog'i sezadigan tovush to'lqinlarining chastotasi qanday oraliqda bo'ladi?",
+      "v": [
+        "17–20000 Hz",
+        "1–17 Hz",
+        "20000–50000 Hz",
+        "0–1000000 Hz"
+      ],
+      "t": 0,
+      "izoh": "Inson qulog'i 17–20000 Hz oralig'idagi tovush to'lqinlarini sezadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#9335133a"
+    },
+    {
+      "q": "Odam tovushni qanday eshitadi?",
+      "v": [
+        "Tovush to'lqinlari quloq pardasini majburiy tebrantiradi",
+        "Quloq pardasi o'z-o'zidan tebranadi",
+        "Tovush miyani issiq qiladi",
+        "Quloq suyagi yorug'likni qabul qiladi"
+      ],
+      "t": 0,
+      "izoh": "Tovush to'lqinlari quloqqa yetib borganda quloq pardasini majburiy tebrantiradi va odam tovushni eshitadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#953961a5"
+    },
+    {
+      "q": "Chaqmoq chaqnaganda avval chaqnashni, keyin momaqaldiroq ovozini eshitishimiz nima bilan izohlanadi?",
+      "v": [
+        "Havoda tovushning tarqalish tezligi yorug'liknikidan ancha kichik",
+        "Tovush yorug'likdan tezroq tarqaladi",
+        "Chaqmoq masofasi juda yaqin",
+        "Quloq yorug'likni sezmaydi"
+      ],
+      "t": 0,
+      "izoh": "Havoda tovushning tezligi yorug'lik tezligidan ancha kichik, shuning uchun ovoz keyin yetib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#91e6b05b"
+    },
+    {
+      "q": "Havo temperaturasi 0 °C bo'lganda tovushning tarqalish tezligi taxminan qancha?",
+      "v": [
+        "330 m/s",
+        "343 m/s",
+        "1440 m/s",
+        "5850 m/s"
+      ],
+      "t": 0,
+      "izoh": "0 °C da tovushning havodagi tezligi taxminan 330 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#57ea19bd"
+    },
+    {
+      "q": "Havo temperaturasi 20 °C bo'lganda tovushning tarqalish tezligi qancha?",
+      "v": [
+        "343 m/s",
+        "330 m/s",
+        "1500 m/s",
+        "300 m/s"
+      ],
+      "t": 0,
+      "izoh": "20 °C da tovushning havodagi tezligi 343 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#309bb667"
+    },
+    {
+      "q": "Havo temperaturasi ko'tarilsa, tovushning tarqalish tezligi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Tovushning tezligi havo temperaturasi ko'tarilishi bilan ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#a56a6cf3"
+    },
+    {
+      "q": "Tovushning havodagi tarqalish tezligini birinchi bo'lib kim va qachon o'lchagan?",
+      "v": [
+        "Fransuz olimi M. Mersen, 1636-yilda",
+        "J. Kolladon, 1826-yilda",
+        "G. Bell, 1876-yilda",
+        "Henri Hers, 1887-yilda"
+      ],
+      "t": 0,
+      "izoh": "Havoda tovush tezligini birinchi bo'lib 1636-yilda fransuz olimi M. Mersen o'lchagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#e54f2fa1"
+    },
+    {
+      "q": "Tovushning suvdagi tezligini birinchi marta kimlar o'lchagan?",
+      "v": [
+        "J.D. Kolladon va Sh. Shturm, 1826-yilda Jeneva ko'lida",
+        "M. Mersen Parijdagi minorada",
+        "G. Bell telefonda",
+        "V. Veter va G. Fexner laboratoriyada"
+      ],
+      "t": 0,
+      "izoh": "1826-yilda Kolladon va Shturm Shveytsariyadagi Jeneva ko'lida suvda tovush tezligini o'lchagan (8 °C da 1440 m/s).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#6443324b"
+    },
+    {
+      "q": "Suv temperaturasi 8 °C bo'lganda o'lchangan tovush tezligi qancha edi?",
+      "v": [
+        "1440 m/s",
+        "330 m/s",
+        "343 m/s",
+        "5850 m/s"
+      ],
+      "t": 0,
+      "izoh": "Kolladon va Shturm o'lchovi: suv 8 °C da tovush tezligi 1440 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#cc933212"
+    },
+    {
+      "q": "Temirda 20 °C temperaturada tovushning tarqalish tezligi qancha?",
+      "v": [
+        "5850 m/s",
+        "343 m/s",
+        "1440 m/s",
+        "1500 m/s"
+      ],
+      "t": 0,
+      "izoh": "Temirda 20 °C da tovush tezligi 5850 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#e98cec35"
+    },
+    {
+      "q": "Tovush suyuqliklarda gazlarga qaraganda tezroq tarqalishining sababi nima?",
+      "v": [
+        "Suyuqliklar zichligi gazlarnikidan katta",
+        "Suyuqliklar sovuqroq",
+        "Suyuqliklar oqadi",
+        "Gazlar yengil"
+      ],
+      "t": 0,
+      "izoh": "Muhit zarralari zichroq joylashgani uchun suyuqliklarda tovush kattaroq tezlikda tarqaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#63409f1f"
+    },
+    {
+      "q": "Tovushning tarqalish tezligi nimaga bog'liq?",
+      "v": [
+        "Muhit turiga, muhitning holatiga va temperaturasiga",
+        "Tovushning balandligiga",
+        "Tovushning tembriga",
+        "Tinglovchining yoshiga"
+      ],
+      "t": 0,
+      "izoh": "Tovush tezligi muhit turi, holati va temperaturasiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#eb827fe8"
+    },
+    {
+      "q": "Qattiq jismlarda tovushning bo'ylama to'lqin tezligi qanday formula bilan hisoblanadi?",
+      "v": [
+        "υ_b = √(E/ρ)",
+        "υ_b = √(G/ρ)",
+        "υ_b = E·ρ",
+        "υ_b = ρ/E"
+      ],
+      "t": 0,
+      "izoh": "Bo'ylama to'lqin tezligi υ_b = √(E/ρ); E — Yung moduli, ρ — zichlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#f790c2ab"
+    },
+    {
+      "q": "Qattiq jismlarda ko'ndalang to'lqinning tarqalish tezligi qanday formula bilan hisoblanadi?",
+      "v": [
+        "υ_k = √(G/ρ)",
+        "υ_k = √(E/ρ)",
+        "υ_k = G·ρ",
+        "υ_k = ρ/G"
+      ],
+      "t": 0,
+      "izoh": "Ko'ndalang to'lqin tezligi υ_k = √(G/ρ); G — siljish moduli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#3e627ad5"
+    },
+    {
+      "q": "Qattiq jismlarda bo'ylama to'lqinning tezligi ko'ndalangnikidan necha marta katta va nega?",
+      "v": [
+        "Deyarli ikki marta katta, chunki E > G",
+        "Ikki marta kichik, chunki E < G",
+        "Bir xil, chunki E = G",
+        "Uch marta katta, chunki ρ katta"
+      ],
+      "t": 0,
+      "izoh": "Qattiq jismlarda E > G bo'lgani uchun bo'ylama to'lqin tezligi ko'ndalangnikidan deyarli ikki marta katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#56601caa"
+    },
+    {
+      "q": "Tovush to'lqinlari qanday muhitda tarqalishidan qat'i nazar, qanday to'lqin hisoblanadi?",
+      "v": [
+        "Bo'ylama to'lqin",
+        "Ko'ndalang to'lqin",
+        "Elektromagnit to'lqin",
+        "Sirt to'lqini"
+      ],
+      "t": 0,
+      "izoh": "Tovush to'lqinlari qanday muhitda tarqalishidan qat'i nazar, bo'ylama to'lqin hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#7319e98e"
+    },
+    {
+      "q": "Aniq bir chastotali tovush chiqaradigan asbob nima deyiladi?",
+      "v": [
+        "Kamerton",
+        "Rezonator",
+        "Exolot",
+        "Dinamometr"
+      ],
+      "t": 0,
+      "izoh": "Aniq bir chastotali tovush chiqaradigan asbob kamerton deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#e3cbba6b"
+    },
+    {
+      "q": "Kamerton kim tomonidan va qachon ixtiro qilingan?",
+      "v": [
+        "1711-yilda ingliz musiqachisi J. Shor tomonidan",
+        "1636-yilda M. Mersen tomonidan",
+        "1876-yilda G. Bell tomonidan",
+        "1826-yilda J. Kolladon tomonidan"
+      ],
+      "t": 0,
+      "izoh": "Kamertonni 1711-yilda ingliz musiqachisi J. Shor ixtiro qilgan va musiqa asboblarini sozlashda foydalangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#7b3286f9"
+    },
+    {
+      "q": "Kamerton o'rnatilgan yog'och qutining vazifasi nima?",
+      "v": [
+        "Rezonator — ovoz kuchaytirgich",
+        "Kamertonni himoya qilish",
+        "Tovushni so'ndirish",
+        "Chastotani o'zgartirish"
+      ],
+      "t": 0,
+      "izoh": "Yog'och quti rezonator, ya'ni ovoz kuchaytirgich vazifasini bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#64d1b58e"
+    },
+    {
+      "q": "Odam nutqida kamertonga o'xshash qismlar qaysilar?",
+      "v": [
+        "Til tebranuvchi jism, og'iz bo'shlig'i va tomoq rezonator",
+        "Quloq pardasi rezonator, tishlar tebranuvchi",
+        "Burun tebranuvchi, til rezonator",
+        "Jag' suyagi rezonator, lab tebranuvchi"
+      ],
+      "t": 0,
+      "izoh": "Til tebranuvchi jism bo'lsa, og'iz bo'shlig'i va tomoq rezonator vazifasini bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#1c94e5fd"
+    },
+    {
+      "q": "Tovush qattiqligi nima bilan o'lchanadi?",
+      "v": [
+        "Amplituda bilan",
+        "Chastota bilan",
+        "Tembr bilan",
+        "Tezlik bilan"
+      ],
+      "t": 0,
+      "izoh": "Tovush qattiqligi amplituda bilan o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#a6b965b4"
+    },
+    {
+      "q": "Tovush qattiqligi qanday birlikda o'lchanadi va bu birlik kim sharafiga nomlangan?",
+      "v": [
+        "Bell (detsibell) da, telefon ixtirochisi G. Bell sharafiga",
+        "Gers da, G. Hers sharafiga",
+        "Nyutonda, I. Nyuton sharafiga",
+        "Vatt da, J. Uatt sharafiga"
+      ],
+      "t": 0,
+      "izoh": "Tovush qattiqligi Bell, detsibell (dB) larda o'lchanadi; birlik G. Bell sharafiga nomlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#68578361"
+    },
+    {
+      "q": "1 dB necha Bell ga teng?",
+      "v": [
+        "0,1 B",
+        "10 B",
+        "1 B",
+        "100 B"
+      ],
+      "t": 0,
+      "izoh": "1 dB = 0,1 B.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#7ffac397"
+    },
+    {
+      "q": "Inson qulog'ining og'riq sezish chegarasi necha dB deb qabul qilingan?",
+      "v": [
+        "130 dB",
+        "80 dB",
+        "40 dB",
+        "100 dB"
+      ],
+      "t": 0,
+      "izoh": "Og'riq sezish chegarasi 130 dB deb qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#81045e06"
+    },
+    {
+      "q": "Sekin suhbat, shovqin va samolyot tovushlarining qattiqligi mos ravishda qanday?",
+      "v": [
+        "40 dB, 80 dB, 110–120 dB",
+        "10 dB, 40 dB, 60 dB",
+        "80 dB, 40 dB, 130 dB",
+        "20 dB, 100 dB, 200 dB"
+      ],
+      "t": 0,
+      "izoh": "Sekin suhbat — 40 dB, shovqin — 80 dB, samolyot — 110–120 dB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#333bc895"
+    },
+    {
+      "q": "Tovush balandligi nima bilan tavsiflanadi?",
+      "v": [
+        "Tovush chastotasi bilan",
+        "Tovush amplitudasi bilan",
+        "Tovush tezligi bilan",
+        "Tovush tembri bilan"
+      ],
+      "t": 0,
+      "izoh": "Tovush balandligi tovush chastotasi bilan tavsiflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#01aa5158"
+    },
+    {
+      "q": "Tovush tembri deb nimaga aytiladi?",
+      "v": [
+        "Tebranishlarning chastotalar bo'yicha taqsimlanish sofligini tavsiflovchi kattalikka",
+        "Tovushning qattiqligiga",
+        "Tovushning tezligiga",
+        "Tovushning yo'nalishiga"
+      ],
+      "t": 0,
+      "izoh": "Tembr — tebranishlarning chastotalar bo'yicha taqsimlanish sofligini tavsiflaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#66403a59"
+    },
+    {
+      "q": "Erkak kishi tovushidan ayol tovushining chastotasi qanday farq qiladi?",
+      "v": [
+        "Ayol tovushining chastotasi ancha katta bo'ladi",
+        "Ayol tovushining chastotasi kichik",
+        "Bir xil bo'ladi",
+        "Ayol tovushi chastotaga ega emas"
+      ],
+      "t": 0,
+      "izoh": "Erkak tovushidan ayol tovushining chastotasi ancha katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#f98275b6"
+    },
+    {
+      "q": "Ultratovushlar deb qanday to'lqinlarga aytiladi?",
+      "v": [
+        "Chastotasi 20000 Hz dan katta bo'lgan tovush to'lqinlariga",
+        "Chastotasi 17 Hz dan kichik to'lqinlarga",
+        "17–20000 Hz dagi to'lqinlarga",
+        "Har qanday qattiq tovushlarga"
+      ],
+      "t": 0,
+      "izoh": "Chastotasi 20000 Hz dan katta bo'lgan tovush to'lqinlari ultratovushlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#aeeafe43"
+    },
+    {
+      "q": "Qaysi hayvonlar ultratovushdan foydalanadi?",
+      "v": [
+        "Ari, delfin, ko'rshapalak",
+        "It, mushuk, ot",
+        "Qush, baliq, qurbaqa",
+        "Sigir, qo'y, echki"
+      ],
+      "t": 0,
+      "izoh": "Ari, delfin, ko'rshapalak kabi hayvonlar to'siqlarni aniqlashda yoki o'ljasini topishda ultratovushdan foydalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#4112374d"
+    },
+    {
+      "q": "Exolokatsiya nima?",
+      "v": [
+        "Manbadan yuborilib, jismdan qaytib kelgan ultratovush yordamida jismlarning vaziyati yoki masofasini aniqlash usuli",
+        "Tovushni kuchaytirish usuli",
+        "Tovushni yozib olish usuli",
+        "Infratovushni o'lchash usuli"
+      ],
+      "t": 0,
+      "izoh": "Exolokatsiyada jismdan qaytib kelgan ultratovush qabul qilinib, masofa aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#6406b6e5"
+    },
+    {
+      "q": "Ultratovushning jismga borib-kelish vaqti t bo'lsa, jismgacha bo'lgan masofa qanday aniqlanadi?",
+      "v": [
+        "s = υt/2",
+        "s = υt",
+        "s = 2υt",
+        "s = υ/t"
+      ],
+      "t": 0,
+      "izoh": "Signal borib-keladi, shuning uchun s = υt/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#8925ac92"
+    },
+    {
+      "q": "Infratovush deb qanday to'lqinlarga aytiladi?",
+      "v": [
+        "Chastotasi 17 Hz dan kichik bo'lgan elastik to'lqinlarga",
+        "Chastotasi 20000 Hz dan katta to'lqinlarga",
+        "17–20000 Hz dagi to'lqinlarga",
+        "Faqat suvdagi to'lqinlarga"
+      ],
+      "t": 0,
+      "izoh": "Chastotasi 17 Hz dan kichik bo'lgan elastik to'lqinlar infratovush deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#0f04e5ac"
+    },
+    {
+      "q": "Infratovush nima uchun juda uzoq masofalarga tarqaladi?",
+      "v": [
+        "Muhitda juda kam yutiladi",
+        "Tezligi juda katta",
+        "Amplitudasi kichik",
+        "Chastotasi katta"
+      ],
+      "t": 0,
+      "izoh": "Infratovush muhitda juda kam yutiladi, shuning uchun havo, suv va yer yuzida juda uzoq masofalarga tarqaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#6649e88b"
+    },
+    {
+      "q": "Infratovushning xususiyatlaridan qayerlarda foydalaniladi?",
+      "v": [
+        "Atmosfera yuqori qatlamlarini, Yer qobig'ini tadqiq qilishda, kuchli portlash uzoqligini va dengiz to'lqinlari uzoqligini aniqlashda",
+        "Faqat tibbiyotda",
+        "Faqat musiqada",
+        "Faqat telefoniyada"
+      ],
+      "t": 0,
+      "izoh": "Infratovushdan atmosfera, Yer qobig'i tadqiqotida, portlash va dengiz to'lqinlari uzoqligini aniqlashda foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#c50c3447"
+    },
+    {
+      "q": "Qoya ro'parasida turgan bola ovozining aks sadosini 2 s dan keyin eshitdi. Boladan qoyagacha masofa qancha? (υ = 340 m/s)",
+      "v": [
+        "340 m",
+        "680 m",
+        "170 m",
+        "1020 m"
+      ],
+      "t": 0,
+      "izoh": "s = υt/2 = 340·2/2 = 340 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#e69b4736"
+    },
+    {
+      "q": "Tovush havodan suvga o'tganda uning chastotasi qanday o'zgaradi?",
+      "v": [
+        "O'zgarmaydi",
+        "Ortadi",
+        "Kamayadi",
+        "Nolga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Tovush bir muhitdan ikkinchisiga o'tganda chastotasi o'zgarmaydi, tezligi va to'lqin uzunligi o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#c2853c9b"
+    },
+    {
+      "q": "Shisha idish ichidagi havoni so'rib olganda elektr qo'ng'iroq tovushi nima uchun eshitilmay qoladi?",
+      "v": [
+        "Tovush elastik muhitda tarqaladi, vakuumda esa tarqala olmaydi",
+        "Qo'ng'iroq buziladi",
+        "Tovush juda past bo'lib qoladi",
+        "Idish tovushni so'ndiradi, lekin tarqatadi"
+      ],
+      "t": 0,
+      "izoh": "Havo so'rib olinganda muhit qolmaydi, tovush esa vakuumda tarqalmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#5be2f7bf"
+    },
+    {
+      "q": "Exolotdan yuborilgan signal 1,6 s dan keyin qabul qilindi. Dengiz chuqurligi qancha? (suvda υ = 1500 m/s)",
+      "v": [
+        "1,2 km",
+        "2,4 km",
+        "0,6 km",
+        "4,8 km"
+      ],
+      "t": 0,
+      "izoh": "s = υt/2 = 1500·1,6/2 = 1200 m = 1,2 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#c29edc9c"
+    },
+    {
+      "q": "Tomoshabinlarsiz zalda tovush nima uchun to'la zaldagiga qaraganda balandroq eshitiladi?",
+      "v": [
+        "Tomoshabinlar (kiyimlari, tanalari) tovush energiyasining bir qismini yutadi, bo'sh zalda esa aks sado kuchliroq",
+        "Bo'sh zalda tovush tezligi ortadi",
+        "To'la zalda tovush vakuumga aylanadi",
+        "Bo'sh zalda tovush chastotasi oshadi"
+      ],
+      "t": 0,
+      "izoh": "To'la zalda tomoshabinlar tovushni yutadi; bo'sh zalda devorlardan qaytgan aks sado tovushni balandroq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#d266bc3b"
+    },
+    {
+      "q": "Ikki temir yo'l stansiyasi orasidagi masofa 8,3 km. Tovush rels (po'lat) orqali qancha vaqtda yetib keladi? (po'latda υ = 5100 m/s)",
+      "v": [
+        "Taxminan 1,6 s",
+        "Taxminan 24 s",
+        "Taxminan 0,16 s",
+        "Taxminan 16 s"
+      ],
+      "t": 0,
+      "izoh": "t = s/υ = 8300/5100 ≈ 1,63 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#4741c731"
+    },
+    {
+      "q": "Ultratovush texnikada qaysi sohalarda qo'llanadi?",
+      "v": [
+        "Moddalarning fizik xossalarini o'rganishda, mexanik ishlov berishda, exolokatsiyada, tibbiyotda",
+        "Faqat musiqa yozishda",
+        "Faqat radioaloqada",
+        "Faqat yoritishda"
+      ],
+      "t": 0,
+      "izoh": "Ultratovush moddalarni o'rganish, ishlov berish, exolokatsiya, tibbiyot va boshqa sohalarda qo'llanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m19-tovush-tolqinlari#b6d9a589"
+    }
+  ]
+}

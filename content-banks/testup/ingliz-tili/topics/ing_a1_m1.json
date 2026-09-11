@@ -1,0 +1,1306 @@
+{
+  "nom": "To be (am / is / are)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "She ___ a teacher.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "3-shaxs birlik (she) → is.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#0e897907"
+    },
+    {
+      "q": "I ___ from Uzbekistan.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "I → am.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#a23f6672"
+    },
+    {
+      "q": "They ___ my friends.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "Ko'plik (they) → are.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#356da01a"
+    },
+    {
+      "q": "___ you a student?",
+      "v": [
+        "Is",
+        "Am",
+        "Are",
+        "Be"
+      ],
+      "t": 2,
+      "izoh": "you → are (savolda Are).",
+      "qiy": "oson",
+      "id": "ing_a1_m1#4170dde4"
+    },
+    {
+      "q": "He ___ not at home.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "he → is.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#ffcb24b3"
+    },
+    {
+      "q": "We ___ happy today.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "we → are.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#b4bc45e2"
+    },
+    {
+      "q": "It ___ a big dog.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "it → is.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#ebd50625"
+    },
+    {
+      "q": "My parents ___ doctors.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "Ko'plik → are.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#7c09aa36"
+    },
+    {
+      "q": "___ she your sister?",
+      "v": [
+        "Is",
+        "Are",
+        "Am",
+        "Be"
+      ],
+      "t": 0,
+      "izoh": "she → Is.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#3aa67627"
+    },
+    {
+      "q": "I'm tired, but you ___ not.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "you → are.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#acd206a8"
+    },
+    {
+      "q": "I ___ a student.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'I' bilan doim 'am'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#818170ca"
+    },
+    {
+      "q": "She ___ my sister.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "'She' bilan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#9cf12a7c"
+    },
+    {
+      "q": "They ___ at school now.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "'They' bilan 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#3df86fbb"
+    },
+    {
+      "q": "He ___ very tall.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "do"
+      ],
+      "t": 0,
+      "izoh": "'He' bilan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#595610da"
+    },
+    {
+      "q": "We ___ good friends.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "'We' bilan 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#721c5d6b"
+    },
+    {
+      "q": "You ___ late today.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "'You' bilan 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#4c92b5c9"
+    },
+    {
+      "q": "It ___ a black cat.",
+      "v": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "'It' bilan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#a634cba9"
+    },
+    {
+      "q": "I ___ not hungry now.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "'I am not' — 'am'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#4c1e6def"
+    },
+    {
+      "q": "She ___ here today.",
+      "v": [
+        "isn't",
+        "aren't",
+        "amn't",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "'She is not' = 'isn't'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#70edc25a"
+    },
+    {
+      "q": "They ___ ready yet.",
+      "v": [
+        "isn't",
+        "aren't",
+        "am not",
+        "doesn't"
+      ],
+      "t": 1,
+      "izoh": "'They are not' = 'aren't'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#1d363520"
+    },
+    {
+      "q": "___ she a teacher?",
+      "v": [
+        "Are",
+        "Am",
+        "Is",
+        "Do"
+      ],
+      "t": 2,
+      "izoh": "Savolda 'she' bilan 'Is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#3c7a84ec"
+    },
+    {
+      "q": "___ you happy?",
+      "v": [
+        "Is",
+        "Am",
+        "Are",
+        "Do"
+      ],
+      "t": 2,
+      "izoh": "'you' bilan 'Are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#13638fad"
+    },
+    {
+      "q": "___ they from Uzbekistan?",
+      "v": [
+        "Is",
+        "Are",
+        "Am",
+        "Does"
+      ],
+      "t": 1,
+      "izoh": "'they' bilan 'Are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#352f3e33"
+    },
+    {
+      "q": "He ___ from Tashkent.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "'He' bilan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#3f5469d4"
+    },
+    {
+      "q": "My name ___ Ali.",
+      "v": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "'name' (it) bilan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#f1be45da"
+    },
+    {
+      "q": "The books ___ on the table.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "Ko'plik bilan 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#f6cbd6bb"
+    },
+    {
+      "q": "This ___ my new pen.",
+      "v": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "'This' bilan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#7189352b"
+    },
+    {
+      "q": "Those ___ my shoes.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "'Those' (ko'plik) 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#c8fbaa4e"
+    },
+    {
+      "q": "___ it cold today?",
+      "v": [
+        "Are",
+        "Is",
+        "Am",
+        "Do"
+      ],
+      "t": 1,
+      "izoh": "'it' bilan 'Is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#fa9bbee6"
+    },
+    {
+      "q": "We ___ in the park now.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "'We' bilan 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#4029741d"
+    },
+    {
+      "q": "The baby ___ asleep.",
+      "v": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "'baby' (it) bilan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#eb8cd2a5"
+    },
+    {
+      "q": "That ___ a big house.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "'That' bilan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#75eae7d0"
+    },
+    {
+      "q": "___ he your father?",
+      "v": [
+        "Are",
+        "Am",
+        "Is",
+        "Do"
+      ],
+      "t": 2,
+      "izoh": "'he' bilan 'Is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#bc6b2a86"
+    },
+    {
+      "q": "The weather ___ nice today.",
+      "v": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "'weather' (it) 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#aa891b95"
+    },
+    {
+      "q": "You and I ___ ready.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "'You and I' = we, 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#6ac59a2e"
+    },
+    {
+      "q": "My parents ___ at home.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "'parents' 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#26f33ee9"
+    },
+    {
+      "q": "___ I right?",
+      "v": [
+        "Is",
+        "Are",
+        "Am",
+        "Do"
+      ],
+      "t": 2,
+      "izoh": "'I' bilan savolda 'Am'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#0c299484"
+    },
+    {
+      "q": "The dog ___ very hungry.",
+      "v": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "'dog' (it) 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#d67db8e8"
+    },
+    {
+      "q": "She ___ ten years old.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "'She' bilan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#715920a7"
+    },
+    {
+      "q": "She ___ from Tashkent.",
+      "v": [
+        "am",
+        "are",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "she/he/it bilan 'is' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#5fb7f199"
+    },
+    {
+      "q": "He ___ a good teacher.",
+      "v": [
+        "are",
+        "is",
+        "am",
+        "do"
+      ],
+      "t": 1,
+      "izoh": "he bilan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#f1d30618"
+    },
+    {
+      "q": "We ___ in the classroom.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "we bilan 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#98cbb975"
+    },
+    {
+      "q": "Ali ___ very happy today.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "Ali = he, shuning uchun 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#49ce732d"
+    },
+    {
+      "q": "The cat ___ black and small.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "birlik ot bilan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#cb57f649"
+    },
+    {
+      "q": "You ___ my best friend.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "you doim 'are' bilan keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#980bbc3a"
+    },
+    {
+      "q": "Nodira ___ a nurse.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "Nodira = she, 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#e51ad569"
+    },
+    {
+      "q": "My parents ___ at work.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "was"
+      ],
+      "t": 2,
+      "izoh": "parents ko'plik, 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#0af359b6"
+    },
+    {
+      "q": "It ___ a new pen.",
+      "v": [
+        "am",
+        "are",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "it bilan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#acd2104f"
+    },
+    {
+      "q": "The children ___ in the garden.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "children ko'plik, 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#aaf40e93"
+    },
+    {
+      "q": "She ___ not a doctor.",
+      "v": [
+        "am",
+        "are",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "she bilan 'is not'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#d6e82012"
+    },
+    {
+      "q": "The boys ___ not here.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "boys ko'plik, 'are not'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#6d4df453"
+    },
+    {
+      "q": "\"I'm\" means:",
+      "v": [
+        "I are",
+        "I am",
+        "I is",
+        "I be"
+      ],
+      "t": 1,
+      "izoh": "I'm = I am qisqartmasi.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#e08cd337"
+    },
+    {
+      "q": "\"isn't\" means:",
+      "v": [
+        "is not",
+        "are not",
+        "am not",
+        "was not"
+      ],
+      "t": 0,
+      "izoh": "isn't = is not.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#72b6dcb9"
+    },
+    {
+      "q": "\"aren't\" means:",
+      "v": [
+        "is not",
+        "am not",
+        "are not",
+        "was not"
+      ],
+      "t": 2,
+      "izoh": "aren't = are not.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#6a5d23f8"
+    },
+    {
+      "q": "___ you a teacher?",
+      "v": [
+        "Am",
+        "Is",
+        "Are",
+        "Do"
+      ],
+      "t": 2,
+      "izoh": "you bilan savol 'Are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#41f0f888"
+    },
+    {
+      "q": "___ she at home?",
+      "v": [
+        "Are",
+        "Am",
+        "Is",
+        "Do"
+      ],
+      "t": 2,
+      "izoh": "she bilan savol 'Is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#f9a1f80d"
+    },
+    {
+      "q": "___ they ready?",
+      "v": [
+        "Is",
+        "Am",
+        "Are",
+        "Does"
+      ],
+      "t": 2,
+      "izoh": "they bilan savol 'Are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#a97fea6d"
+    },
+    {
+      "q": "___ I late?",
+      "v": [
+        "Is",
+        "Are",
+        "Am",
+        "Do"
+      ],
+      "t": 2,
+      "izoh": "I bilan savol 'Am'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#a7999ef3"
+    },
+    {
+      "q": "Are you a student? Yes, I ___.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "do"
+      ],
+      "t": 1,
+      "izoh": "qisqa javob: Yes, I am.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#e33f3570"
+    },
+    {
+      "q": "Is he your brother? Yes, he ___.",
+      "v": [
+        "am",
+        "are",
+        "is",
+        "does"
+      ],
+      "t": 2,
+      "izoh": "qisqa javob: Yes, he is.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#65538dae"
+    },
+    {
+      "q": "Are they friends? No, they ___ not.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "they bilan 'are not'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#57d28df2"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I is happy.",
+        "I am happy.",
+        "I are happy.",
+        "I be happy."
+      ],
+      "t": 1,
+      "izoh": "I + am to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#9a16dc9c"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She are nice.",
+        "She am nice.",
+        "She is nice.",
+        "She be nice."
+      ],
+      "t": 2,
+      "izoh": "she + is to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#9a16dc9c~2"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "They is tall.",
+        "They are tall.",
+        "They am tall.",
+        "They be tall."
+      ],
+      "t": 1,
+      "izoh": "they + are to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#9a16dc9c~3"
+    },
+    {
+      "q": "Which word is wrong? \"He are happy.\"",
+      "v": [
+        "He",
+        "are",
+        "happy",
+        "nothing"
+      ],
+      "t": 1,
+      "izoh": "he bilan 'is' kerak, 'are' xato.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#04bc9f9b"
+    },
+    {
+      "q": "Choose the correct negative sentence.",
+      "v": [
+        "She not is here.",
+        "She is not here.",
+        "She is no here.",
+        "She isn't not here."
+      ],
+      "t": 1,
+      "izoh": "is + not tartibi to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#50089471"
+    },
+    {
+      "q": "The weather ___ cold today.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "weather birlik, 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#659c8832"
+    },
+    {
+      "q": "My name ___ Sardor.",
+      "v": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "name birlik, 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#9e05c642"
+    },
+    {
+      "q": "These apples ___ fresh.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "apples ko'plik, 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#c07be350"
+    },
+    {
+      "q": "That ___ my bag.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "that birlik, 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#6047e007"
+    },
+    {
+      "q": "You and I ___ classmates.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "you and I = we, 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#a9624f28"
+    },
+    {
+      "q": "The dog ___ in the yard.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "dog birlik, 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#ac0d278c"
+    },
+    {
+      "q": "Where ___ you from?",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "you bilan 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#a10d3659"
+    },
+    {
+      "q": "What ___ your name?",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "name birlik, 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#7190a58e"
+    },
+    {
+      "q": "How old ___ he?",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "he bilan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#ee5e3de9"
+    },
+    {
+      "q": "Who ___ they?",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "does"
+      ],
+      "t": 2,
+      "izoh": "they bilan 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#ec0589c4"
+    },
+    {
+      "q": "___ we late?",
+      "v": [
+        "Is",
+        "Am",
+        "Are",
+        "Do"
+      ],
+      "t": 2,
+      "izoh": "we bilan savol 'Are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#d57c6370"
+    },
+    {
+      "q": "The milk ___ in the fridge.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "milk sanalmaydigan, 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#f581b870"
+    },
+    {
+      "q": "Contraction of \"she is\" is:",
+      "v": [
+        "she's",
+        "shes",
+        "she're",
+        "she am"
+      ],
+      "t": 0,
+      "izoh": "she is = she's.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#dd38324f"
+    },
+    {
+      "q": "Contraction of \"they are\" is:",
+      "v": [
+        "they're",
+        "theyre",
+        "their",
+        "they's"
+      ],
+      "t": 0,
+      "izoh": "they are = they're.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#698126b0"
+    },
+    {
+      "q": "Contraction of \"we are\" is:",
+      "v": [
+        "we're",
+        "were",
+        "we's",
+        "wer"
+      ],
+      "t": 0,
+      "izoh": "we are = we're.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#86eae1eb"
+    },
+    {
+      "q": "Short form of \"he is not\" is:",
+      "v": [
+        "he isn't",
+        "he aren't",
+        "he amn't",
+        "he don't"
+      ],
+      "t": 0,
+      "izoh": "is not = isn't.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#57942613"
+    },
+    {
+      "q": "Short form of \"they are not\" is:",
+      "v": [
+        "they isn't",
+        "they aren't",
+        "they amn't",
+        "they not"
+      ],
+      "t": 1,
+      "izoh": "are not = aren't.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#84fe3499"
+    },
+    {
+      "q": "Contraction of \"I am not\" is:",
+      "v": [
+        "I amn't",
+        "I'm not",
+        "I isn't",
+        "I aren't"
+      ],
+      "t": 1,
+      "izoh": "to'g'risi: I'm not.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#c1879bab"
+    },
+    {
+      "q": "Put in order: a / is / teacher / She",
+      "v": [
+        "She is a teacher.",
+        "She a teacher is.",
+        "Is she a teacher.",
+        "A teacher she is."
+      ],
+      "t": 0,
+      "izoh": "ega + is + a + ot tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#a5500686"
+    },
+    {
+      "q": "Put in order: are / We / friends",
+      "v": [
+        "Are we friends.",
+        "We friends are.",
+        "We are friends.",
+        "Friends we are."
+      ],
+      "t": 2,
+      "izoh": "ega + are + so'z tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#8bcea130"
+    },
+    {
+      "q": "The students ___ in the library.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "students ko'plik, 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#24d32c23"
+    },
+    {
+      "q": "My phone ___ new.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "phone birlik, 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#cf2533f4"
+    },
+    {
+      "q": "Her eyes ___ blue.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "eyes ko'plik, 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#2482f84d"
+    },
+    {
+      "q": "This ___ an easy question.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "this birlik, 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#7f1b7ab0"
+    },
+    {
+      "q": "Tom and Jerry ___ funny.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "ikki nom = they, 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#4231ef38"
+    },
+    {
+      "q": "___ your parents at home?",
+      "v": [
+        "Is",
+        "Am",
+        "Are",
+        "Does"
+      ],
+      "t": 2,
+      "izoh": "parents ko'plik, 'Are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#eb46d111"
+    },
+    {
+      "q": "___ it a good film?",
+      "v": [
+        "Are",
+        "Am",
+        "Is",
+        "Do"
+      ],
+      "t": 2,
+      "izoh": "it bilan 'Is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#ed58398d"
+    },
+    {
+      "q": "Is the food good? Yes, it ___.",
+      "v": [
+        "am",
+        "are",
+        "is",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "it bilan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#91bebcf2"
+    },
+    {
+      "q": "Are you tired? No, I ___ not.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "do"
+      ],
+      "t": 1,
+      "izoh": "I bilan 'am not'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#e60f8a9f"
+    },
+    {
+      "q": "We ___ not from London.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "we bilan 'are not'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#bbdf793f"
+    },
+    {
+      "q": "Choose the correct question.",
+      "v": [
+        "Is you happy?",
+        "Are you happy?",
+        "Am you happy?",
+        "Be you happy?"
+      ],
+      "t": 1,
+      "izoh": "you bilan 'Are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#0f8a31bb"
+    },
+    {
+      "q": "Choose the correct question.",
+      "v": [
+        "Is she nurse?",
+        "She is a nurse?",
+        "Is she a nurse?",
+        "She a nurse is?"
+      ],
+      "t": 2,
+      "izoh": "Is + she + a + ot to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#0f8a31bb~2"
+    },
+    {
+      "q": "The shoes ___ under the bed.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "shoes ko'plik, 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#893e20c3"
+    },
+    {
+      "q": "Music ___ my hobby.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "music birlik, 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m1#76f9e733"
+    }
+  ]
+}

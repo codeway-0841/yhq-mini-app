@@ -1,0 +1,1306 @@
+{
+  "nom": "Nature & environment (Tabiat)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "\"Daraxt\" inglizcha qanday?",
+      "v": [
+        "tree",
+        "river",
+        "flower",
+        "stone"
+      ],
+      "t": 0,
+      "izoh": "Tree = daraxt.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#553f1451"
+    },
+    {
+      "q": "\"Daryo\" inglizcha qanday?",
+      "v": [
+        "lake",
+        "river",
+        "sea",
+        "hill"
+      ],
+      "t": 1,
+      "izoh": "River = daryo, oqar suv.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#66a0b468"
+    },
+    {
+      "q": "\"Tog'\" inglizcha qanday?",
+      "v": [
+        "field",
+        "valley",
+        "mountain",
+        "forest"
+      ],
+      "t": 2,
+      "izoh": "Mountain = tog'.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#385f9995"
+    },
+    {
+      "q": "\"Dengiz\" inglizcha qanday?",
+      "v": [
+        "desert",
+        "forest",
+        "hill",
+        "sea"
+      ],
+      "t": 3,
+      "izoh": "Sea = dengiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#5b03571e"
+    },
+    {
+      "q": "\"Okean\" inglizcha qanday?",
+      "v": [
+        "ocean",
+        "river",
+        "pond",
+        "sky"
+      ],
+      "t": 0,
+      "izoh": "Ocean = okean, eng katta suv havzasi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#3fcb67a2"
+    },
+    {
+      "q": "\"O'rmon\" inglizcha qanday?",
+      "v": [
+        "field",
+        "forest",
+        "garden",
+        "beach"
+      ],
+      "t": 1,
+      "izoh": "Forest = o'rmon.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#8fc1bb00"
+    },
+    {
+      "q": "\"Ko'l\" inglizcha qanday?",
+      "v": [
+        "sea",
+        "ocean",
+        "lake",
+        "river"
+      ],
+      "t": 2,
+      "izoh": "Lake = ko'l, turg'un suv.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#c7559960"
+    },
+    {
+      "q": "\"Tepalik\" inglizcha qanday?",
+      "v": [
+        "mountain",
+        "valley",
+        "cliff",
+        "hill"
+      ],
+      "t": 3,
+      "izoh": "Hill = tepalik, kichik tog'.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#da911363"
+    },
+    {
+      "q": "\"Dala\" inglizcha qanday?",
+      "v": [
+        "field",
+        "forest",
+        "desert",
+        "lake"
+      ],
+      "t": 0,
+      "izoh": "Field = dala, ekin maydoni.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#95213811"
+    },
+    {
+      "q": "\"Osmon\" inglizcha qanday?",
+      "v": [
+        "ground",
+        "sky",
+        "cloud",
+        "star"
+      ],
+      "t": 1,
+      "izoh": "Sky = osmon.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#4836e1b4"
+    },
+    {
+      "q": "\"O't-maysa\" inglizcha qanday?",
+      "v": [
+        "tree",
+        "leaf",
+        "grass",
+        "branch"
+      ],
+      "t": 2,
+      "izoh": "Grass = ko'k o't, maysa.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#75c53721"
+    },
+    {
+      "q": "\"Gul\" inglizcha qanday?",
+      "v": [
+        "root",
+        "seed",
+        "stem",
+        "flower"
+      ],
+      "t": 3,
+      "izoh": "Flower = gul.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#6bb8575e"
+    },
+    {
+      "q": "\"O'simlik\" inglizcha qanday?",
+      "v": [
+        "plant",
+        "animal",
+        "stone",
+        "water"
+      ],
+      "t": 0,
+      "izoh": "Plant = o'simlik.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#42a1037f"
+    },
+    {
+      "q": "\"Hayvon\" inglizcha qanday?",
+      "v": [
+        "plant",
+        "animal",
+        "insect",
+        "fish"
+      ],
+      "t": 1,
+      "izoh": "Animal = hayvon.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#0833c858"
+    },
+    {
+      "q": "\"Ob-havo\" inglizcha qanday?",
+      "v": [
+        "climate",
+        "season",
+        "weather",
+        "time"
+      ],
+      "t": 2,
+      "izoh": "Weather = ob-havo, bugungi holat.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#e5bdba4b"
+    },
+    {
+      "q": "\"Ifloslanish\" inglizcha qanday?",
+      "v": [
+        "cleaning",
+        "recycling",
+        "saving",
+        "pollution"
+      ],
+      "t": 3,
+      "izoh": "Pollution = ifloslanish.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#c6c040ae"
+    },
+    {
+      "q": "\"Axlat-chiqindi\" inglizcha qanday?",
+      "v": [
+        "rubbish",
+        "food",
+        "glass",
+        "paper"
+      ],
+      "t": 0,
+      "izoh": "Rubbish = axlat, chiqindi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#1d74eb68"
+    },
+    {
+      "q": "\"Atrof-muhit\" inglizcha qanday?",
+      "v": [
+        "country",
+        "environment",
+        "city",
+        "street"
+      ],
+      "t": 1,
+      "izoh": "Environment = atrof-muhit.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#2f03b424"
+    },
+    {
+      "q": "\"Toza\" inglizcha qanday?",
+      "v": [
+        "dirty",
+        "old",
+        "clean",
+        "wet"
+      ],
+      "t": 2,
+      "izoh": "Clean = toza.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#eddd95c3"
+    },
+    {
+      "q": "\"Iflos\" inglizcha qanday?",
+      "v": [
+        "fresh",
+        "new",
+        "clean",
+        "dirty"
+      ],
+      "t": 3,
+      "izoh": "Dirty = iflos, kir.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#5eba0a52"
+    },
+    {
+      "q": "\"Plastik\" inglizcha qanday?",
+      "v": [
+        "plastic",
+        "paper",
+        "metal",
+        "wood"
+      ],
+      "t": 0,
+      "izoh": "Plastic = plastik.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#9cd6c585"
+    },
+    {
+      "q": "\"Iqlim\" inglizcha qanday?",
+      "v": [
+        "weather",
+        "climate",
+        "wind",
+        "rain"
+      ],
+      "t": 1,
+      "izoh": "Climate = iqlim, uzoq muddatli.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#2c6d169c"
+    },
+    {
+      "q": "\"Sayyora\" inglizcha qanday?",
+      "v": [
+        "moon",
+        "sun",
+        "planet",
+        "comet"
+      ],
+      "t": 2,
+      "izoh": "Planet = sayyora.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#1dc1ea1d"
+    },
+    {
+      "q": "\"Yer\" (bizning sayyoramiz) inglizcha qanday?",
+      "v": [
+        "Mars",
+        "Moon",
+        "Sun",
+        "Earth"
+      ],
+      "t": 3,
+      "izoh": "Earth = Yer sayyorasi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#f80127aa"
+    },
+    {
+      "q": "\"Qayta ishlash\" (chiqindini) inglizcha qanday?",
+      "v": [
+        "recycle",
+        "throw",
+        "burn",
+        "buy"
+      ],
+      "t": 0,
+      "izoh": "Recycle = qayta ishlash.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#34ee0e84"
+    },
+    {
+      "q": "\"Suvni tejash\" inglizcha qanday?",
+      "v": [
+        "waste water",
+        "save water",
+        "drink water",
+        "boil water"
+      ],
+      "t": 1,
+      "izoh": "Save water = suvni tejash.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#2f06379d"
+    },
+    {
+      "q": "Which word means a very large area of salt water bigger than a sea?",
+      "v": [
+        "lake",
+        "river",
+        "ocean",
+        "pond"
+      ],
+      "t": 2,
+      "izoh": "Ocean = dengizdan kattaroq, sho'r suv.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#8353919e"
+    },
+    {
+      "q": "Which word means a place with many trees growing together?",
+      "v": [
+        "field",
+        "desert",
+        "beach",
+        "forest"
+      ],
+      "t": 3,
+      "izoh": "Forest = ko'p daraxtli joy.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#acb79e06"
+    },
+    {
+      "q": "A ___ is water that flows and moves to the sea.",
+      "v": [
+        "river",
+        "lake",
+        "mountain",
+        "hill"
+      ],
+      "t": 0,
+      "izoh": "River = oqar suv, dengizga boradi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#f3d04cb8"
+    },
+    {
+      "q": "Birds fly high in the ___.",
+      "v": [
+        "ground",
+        "sky",
+        "sea",
+        "cave"
+      ],
+      "t": 1,
+      "izoh": "Sky = osmon, qushlar uchadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#398abc21"
+    },
+    {
+      "q": "We should not throw ___ in the river.",
+      "v": [
+        "water",
+        "air",
+        "rubbish",
+        "light"
+      ],
+      "t": 2,
+      "izoh": "Rubbish = axlat, daryoga tashlamaymiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#92652181"
+    },
+    {
+      "q": "Please put the plastic bottle in the ___ bin.",
+      "v": [
+        "water",
+        "food",
+        "fire",
+        "recycling"
+      ],
+      "t": 3,
+      "izoh": "Recycling bin = qayta ishlash quti.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#d455c97c"
+    },
+    {
+      "q": "Cows and sheep eat ___ in the field.",
+      "v": [
+        "grass",
+        "stone",
+        "metal",
+        "paper"
+      ],
+      "t": 0,
+      "izoh": "Grass = maysa, mollar yeydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#b46fe004"
+    },
+    {
+      "q": "The ___ is very high; we climbed it for six hours.",
+      "v": [
+        "hill",
+        "mountain",
+        "field",
+        "lake"
+      ],
+      "t": 1,
+      "izoh": "Mountain = baland tog'.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#276c25d4"
+    },
+    {
+      "q": "In autumn the ___ falls from the trees.",
+      "v": [
+        "root",
+        "flower",
+        "leaf",
+        "seed"
+      ],
+      "t": 2,
+      "izoh": "Leaf = barg, kuzda to'kiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#fb365457"
+    },
+    {
+      "q": "We turn off the tap to ___.",
+      "v": [
+        "waste water",
+        "dirty water",
+        "spill water",
+        "save water"
+      ],
+      "t": 3,
+      "izoh": "Jo'mrakni yopib suv tejaymiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#84837605"
+    },
+    {
+      "q": "Fish live in the ___.",
+      "v": [
+        "sea",
+        "sky",
+        "desert",
+        "cave"
+      ],
+      "t": 0,
+      "izoh": "Sea = dengiz, baliqlar yashaydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#5654dcc0"
+    },
+    {
+      "q": "Today the ___ is sunny and warm.",
+      "v": [
+        "climate",
+        "weather",
+        "country",
+        "planet"
+      ],
+      "t": 1,
+      "izoh": "Weather = bugungi ob-havo.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#54ecf4b0"
+    },
+    {
+      "q": "A small mountain is called a ___.",
+      "v": [
+        "valley",
+        "river",
+        "hill",
+        "field"
+      ],
+      "t": 2,
+      "izoh": "Hill = kichik tog', tepalik.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#abfc76f4"
+    },
+    {
+      "q": "We plant a ___ to make the air cleaner.",
+      "v": [
+        "car",
+        "road",
+        "house",
+        "tree"
+      ],
+      "t": 3,
+      "izoh": "Tree = daraxt, havoni tozalaydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#40f1b4b2"
+    },
+    {
+      "q": "Dirty smoke from cars causes air ___.",
+      "v": [
+        "pollution",
+        "cleaning",
+        "flower",
+        "water"
+      ],
+      "t": 0,
+      "izoh": "Air pollution = havo ifloslanishi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#0c24cce1"
+    },
+    {
+      "q": "The opposite of \"clean\" is ___.",
+      "v": [
+        "fresh",
+        "dirty",
+        "new",
+        "dry"
+      ],
+      "t": 1,
+      "izoh": "Clean qarshi so'zi = dirty.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#0850b69c"
+    },
+    {
+      "q": "The opposite of \"dirty\" is ___.",
+      "v": [
+        "old",
+        "wet",
+        "clean",
+        "dark"
+      ],
+      "t": 2,
+      "izoh": "Dirty qarshi so'zi = clean.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#021423b5"
+    },
+    {
+      "q": "We drink water from the ___ in the mountains.",
+      "v": [
+        "desert",
+        "ocean",
+        "road",
+        "river"
+      ],
+      "t": 3,
+      "izoh": "River = tog'dagi daryo suvi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#d8cd06d4"
+    },
+    {
+      "q": "A ___ is a big area of trees, plants and wild animals.",
+      "v": [
+        "forest",
+        "street",
+        "market",
+        "school"
+      ],
+      "t": 0,
+      "izoh": "Forest = o'rmon.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#6cead216"
+    },
+    {
+      "q": "The Sun, the Moon and the stars are in the ___ at night.",
+      "v": [
+        "sea",
+        "sky",
+        "field",
+        "cave"
+      ],
+      "t": 1,
+      "izoh": "Sky = tungi osmon.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#1f208c97"
+    },
+    {
+      "q": "A place where farmers grow wheat is a ___.",
+      "v": [
+        "forest",
+        "beach",
+        "field",
+        "hill"
+      ],
+      "t": 2,
+      "izoh": "Field = bug'doy ekiladigan dala.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#c7280702"
+    },
+    {
+      "q": "We recycle paper, glass and ___.",
+      "v": [
+        "water",
+        "air",
+        "food",
+        "plastic"
+      ],
+      "t": 3,
+      "izoh": "Plastic ham qayta ishlanadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#14a2ea91"
+    },
+    {
+      "q": "\"Barg\" inglizcha qanday?",
+      "v": [
+        "leaf",
+        "branch",
+        "root",
+        "seed"
+      ],
+      "t": 0,
+      "izoh": "Leaf = barg.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#c78bd528"
+    },
+    {
+      "q": "\"Ildiz\" inglizcha qanday?",
+      "v": [
+        "stem",
+        "root",
+        "flower",
+        "leaf"
+      ],
+      "t": 1,
+      "izoh": "Root = ildiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#7142e29e"
+    },
+    {
+      "q": "\"Urug'\" inglizcha qanday?",
+      "v": [
+        "leaf",
+        "stem",
+        "seed",
+        "branch"
+      ],
+      "t": 2,
+      "izoh": "Seed = urug'.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#92fb3a35"
+    },
+    {
+      "q": "\"Bulut\" inglizcha qanday?",
+      "v": [
+        "rain",
+        "wind",
+        "storm",
+        "cloud"
+      ],
+      "t": 3,
+      "izoh": "Cloud = bulut.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#7983a1d5"
+    },
+    {
+      "q": "\"Yomg'ir\" inglizcha qanday?",
+      "v": [
+        "rain",
+        "snow",
+        "sun",
+        "fog"
+      ],
+      "t": 0,
+      "izoh": "Rain = yomg'ir.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#b1250036"
+    },
+    {
+      "q": "\"Qor\" inglizcha qanday?",
+      "v": [
+        "rain",
+        "snow",
+        "wind",
+        "cloud"
+      ],
+      "t": 1,
+      "izoh": "Snow = qor.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#849d564a"
+    },
+    {
+      "q": "\"Shamol\" inglizcha qanday?",
+      "v": [
+        "rain",
+        "snow",
+        "wind",
+        "fog"
+      ],
+      "t": 2,
+      "izoh": "Wind = shamol.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#1f13f874"
+    },
+    {
+      "q": "\"Cho'l\" inglizcha qanday?",
+      "v": [
+        "forest",
+        "field",
+        "lake",
+        "desert"
+      ],
+      "t": 3,
+      "izoh": "Desert = cho'l, quruq joy.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#e6bbd745"
+    },
+    {
+      "q": "When it is very hot and there is no rain for months, we say the ___ is dry.",
+      "v": [
+        "weather",
+        "food",
+        "car",
+        "book"
+      ],
+      "t": 0,
+      "izoh": "Weather = ob-havo quruq.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#e6ab5d48"
+    },
+    {
+      "q": "Plastic bags are bad for the ___.",
+      "v": [
+        "market",
+        "environment",
+        "music",
+        "phone"
+      ],
+      "t": 1,
+      "izoh": "Plastik atrof-muhitga zararli.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#aed217fd"
+    },
+    {
+      "q": "We should keep our city ___ and green.",
+      "v": [
+        "dirty",
+        "noisy",
+        "clean",
+        "dark"
+      ],
+      "t": 2,
+      "izoh": "Clean = shaharni toza tutish.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#df1a52e5"
+    },
+    {
+      "q": "Elephants, lions and tigers are wild ___.",
+      "v": [
+        "plants",
+        "stones",
+        "cars",
+        "animals"
+      ],
+      "t": 3,
+      "izoh": "Animals = yovvoyi hayvonlar.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#da568fc6"
+    },
+    {
+      "q": "A ___ is a large area of water with land all around it.",
+      "v": [
+        "lake",
+        "ocean",
+        "river",
+        "sky"
+      ],
+      "t": 0,
+      "izoh": "Lake = quruqlik o'ragan ko'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#5ee2fd1d"
+    },
+    {
+      "q": "The ___ changes slowly over many years, but weather changes every day.",
+      "v": [
+        "street",
+        "climate",
+        "school",
+        "market"
+      ],
+      "t": 1,
+      "izoh": "Climate = uzoq muddatli iqlim.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#ac80383f"
+    },
+    {
+      "q": "Roses and tulips are types of ___.",
+      "v": [
+        "trees",
+        "animals",
+        "flowers",
+        "stones"
+      ],
+      "t": 2,
+      "izoh": "Flowers = gullar.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#1504606d"
+    },
+    {
+      "q": "We should not ___ water; keep the tap closed.",
+      "v": [
+        "save",
+        "clean",
+        "drink",
+        "waste"
+      ],
+      "t": 3,
+      "izoh": "Waste = isrof qilmaslik kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#bc49a123"
+    },
+    {
+      "q": "Which one is NOT a body of water?",
+      "v": [
+        "mountain",
+        "sea",
+        "lake",
+        "river"
+      ],
+      "t": 0,
+      "izoh": "Mountain = tog', suv emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#bcc89284"
+    },
+    {
+      "q": "Which one is a weather word?",
+      "v": [
+        "forest",
+        "rainy",
+        "plastic",
+        "recycle"
+      ],
+      "t": 1,
+      "izoh": "Rainy = yomg'irli ob-havo.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#a52fb13c"
+    },
+    {
+      "q": "Which one can you recycle?",
+      "v": [
+        "smoke",
+        "air",
+        "glass",
+        "cloud"
+      ],
+      "t": 2,
+      "izoh": "Glass = shishani qayta ishlash mumkin.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#662ba401"
+    },
+    {
+      "q": "Which word means \"to make used things new again\"?",
+      "v": [
+        "pollute",
+        "waste",
+        "throw",
+        "recycle"
+      ],
+      "t": 3,
+      "izoh": "Recycle = qayta ishlash.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#5b45fe3d"
+    },
+    {
+      "q": "The green part on the ground in a park is the ___.",
+      "v": [
+        "grass",
+        "sky",
+        "rock",
+        "cloud"
+      ],
+      "t": 0,
+      "izoh": "Grass = maysazor.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#6c9f534f"
+    },
+    {
+      "q": "Water in the ocean is ___ (you cannot drink it).",
+      "v": [
+        "sweet",
+        "salty",
+        "clean",
+        "cold"
+      ],
+      "t": 1,
+      "izoh": "Salty = okean suvi sho'r.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#9950bbd6"
+    },
+    {
+      "q": "A ___ has a top called a peak or summit.",
+      "v": [
+        "lake",
+        "river",
+        "mountain",
+        "field"
+      ],
+      "t": 2,
+      "izoh": "Mountain cho'qqisi = peak.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#e59129d1"
+    },
+    {
+      "q": "Cutting many trees is bad because it destroys the ___.",
+      "v": [
+        "market",
+        "city",
+        "road",
+        "forest"
+      ],
+      "t": 3,
+      "izoh": "Forest = o'rmonni kesish zararli.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#6494fb20"
+    },
+    {
+      "q": "\"Toza havo\" inglizcha qanday?",
+      "v": [
+        "clean air",
+        "dirty air",
+        "cold air",
+        "hot air"
+      ],
+      "t": 0,
+      "izoh": "Clean air = toza havo.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#4f19a93d"
+    },
+    {
+      "q": "\"Iflos suv\" inglizcha qanday?",
+      "v": [
+        "clean water",
+        "dirty water",
+        "cold water",
+        "hot water"
+      ],
+      "t": 1,
+      "izoh": "Dirty water = iflos suv.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#68ee0e4e"
+    },
+    {
+      "q": "A person who protects nature is ___ to the environment.",
+      "v": [
+        "bad",
+        "cruel",
+        "friendly",
+        "angry"
+      ],
+      "t": 2,
+      "izoh": "Friendly = tabiatga do'st.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#bdd59c76"
+    },
+    {
+      "q": "The Earth is our ___; we must protect it.",
+      "v": [
+        "city",
+        "country",
+        "school",
+        "planet"
+      ],
+      "t": 3,
+      "izoh": "Planet = Yer bizning sayyoramiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#1ea8e7a7"
+    },
+    {
+      "q": "Bees fly from ___ to ___ to collect nectar.",
+      "v": [
+        "flower",
+        "stone",
+        "car",
+        "road"
+      ],
+      "t": 0,
+      "izoh": "Flower = gul, asalarilar uchadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#05f2bb1a"
+    },
+    {
+      "q": "Ships travel across the ___.",
+      "v": [
+        "hill",
+        "ocean",
+        "field",
+        "forest"
+      ],
+      "t": 1,
+      "izoh": "Ocean = kemalar suzadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#a8dfa376"
+    },
+    {
+      "q": "When we burn coal and gas, we add ___ to the air.",
+      "v": [
+        "water",
+        "flowers",
+        "pollution",
+        "grass"
+      ],
+      "t": 2,
+      "izoh": "Pollution = havoga ifloslanish qo'shiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#df95c1a7"
+    },
+    {
+      "q": "A small river is called a ___.",
+      "v": [
+        "sea",
+        "ocean",
+        "lake",
+        "stream"
+      ],
+      "t": 3,
+      "izoh": "Stream = kichik daryo, jilg'a.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#00c3d082"
+    },
+    {
+      "q": "\"Tabiat\" inglizcha qanday?",
+      "v": [
+        "nature",
+        "building",
+        "machine",
+        "money"
+      ],
+      "t": 0,
+      "izoh": "Nature = tabiat.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#9c4ec099"
+    },
+    {
+      "q": "We put rubbish in the ___.",
+      "v": [
+        "bag",
+        "bin",
+        "box",
+        "cup"
+      ],
+      "t": 1,
+      "izoh": "Bin = axlat quti.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#555a12ad"
+    },
+    {
+      "q": "Trees give us fresh ___ to breathe.",
+      "v": [
+        "water",
+        "food",
+        "air",
+        "light"
+      ],
+      "t": 2,
+      "izoh": "Air = daraxtlar toza havo beradi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#41496de9"
+    },
+    {
+      "q": "Snow falls when the weather is very ___.",
+      "v": [
+        "hot",
+        "dry",
+        "sunny",
+        "cold"
+      ],
+      "t": 3,
+      "izoh": "Cold = sovuqda qor yog'adi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#896e9676"
+    },
+    {
+      "q": "Which word describes land that is flat and open for farming?",
+      "v": [
+        "field",
+        "mountain",
+        "cliff",
+        "cave"
+      ],
+      "t": 0,
+      "izoh": "Field = tekis dala.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#f9adbb4e"
+    },
+    {
+      "q": "Which of these lives in a forest?",
+      "v": [
+        "fish",
+        "bear",
+        "whale",
+        "shark"
+      ],
+      "t": 1,
+      "izoh": "Bear = ayiq o'rmonda yashaydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#ec99830f"
+    },
+    {
+      "q": "Which action helps the environment?",
+      "v": [
+        "burning plastic",
+        "dropping rubbish",
+        "recycling paper",
+        "wasting water"
+      ],
+      "t": 2,
+      "izoh": "Recycling = qog'ozni qayta ishlash foydali.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#054b13ea"
+    },
+    {
+      "q": "Which word means the natural conditions like rain, sun and wind?",
+      "v": [
+        "nature",
+        "country",
+        "planet",
+        "weather"
+      ],
+      "t": 3,
+      "izoh": "Weather = ob-havo sharoiti.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#82ecc783"
+    },
+    {
+      "q": "After the rain, the ___ was clear and blue.",
+      "v": [
+        "sky",
+        "ground",
+        "sea",
+        "cave"
+      ],
+      "t": 0,
+      "izoh": "Sky = yomg'irdan keyin osmon ochildi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#3ad7a8d9"
+    },
+    {
+      "q": "We should turn off lights and taps to save the ___.",
+      "v": [
+        "car",
+        "planet",
+        "phone",
+        "radio"
+      ],
+      "t": 1,
+      "izoh": "Planet = sayyorani asraymiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#e439b846"
+    },
+    {
+      "q": "Plastic takes many years to disappear, so it is bad for ___.",
+      "v": [
+        "music",
+        "sport",
+        "nature",
+        "school"
+      ],
+      "t": 2,
+      "izoh": "Nature = plastik tabiatga zararli.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#511d5e63"
+    },
+    {
+      "q": "A tall ___ can be hundreds of years old.",
+      "v": [
+        "flower",
+        "grass",
+        "river",
+        "tree"
+      ],
+      "t": 3,
+      "izoh": "Tree = daraxt asrlar yashaydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#a59f9dc0"
+    },
+    {
+      "q": "When water in a lake becomes ___, fish can die.",
+      "v": [
+        "dirty",
+        "clean",
+        "fresh",
+        "cold"
+      ],
+      "t": 0,
+      "izoh": "Dirty = iflos suvda baliq nobud bo'ladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#11c05c1d"
+    },
+    {
+      "q": "The weather report says it will be ___ and windy tomorrow.",
+      "v": [
+        "quiet",
+        "cloudy",
+        "happy",
+        "busy"
+      ],
+      "t": 1,
+      "izoh": "Cloudy = bulutli ob-havo.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#c394addb"
+    },
+    {
+      "q": "We use less ___ when we carry a cloth bag to the shop.",
+      "v": [
+        "water",
+        "food",
+        "plastic",
+        "paper"
+      ],
+      "t": 2,
+      "izoh": "Plastic = mato sumka plastikni kamaytiradi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#8ff1d901"
+    },
+    {
+      "q": "A ___ is a small plant that grows quickly and dies in one season.",
+      "v": [
+        "mountain",
+        "river",
+        "forest",
+        "weed"
+      ],
+      "t": 3,
+      "izoh": "Weed = begona o't.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#e30dfe77"
+    },
+    {
+      "q": "Camels can live in the hot, dry ___.",
+      "v": [
+        "desert",
+        "forest",
+        "lake",
+        "sea"
+      ],
+      "t": 0,
+      "izoh": "Desert = tuya cho'lda yashaydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#7e72c98d"
+    },
+    {
+      "q": "Green ___ cover the mountains in spring.",
+      "v": [
+        "cars",
+        "plants",
+        "stones",
+        "roads"
+      ],
+      "t": 1,
+      "izoh": "Plants = bahorda o'simliklar o'sadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#e2ed8948"
+    },
+    {
+      "q": "Please ___ the light when you leave the room.",
+      "v": [
+        "open",
+        "buy",
+        "turn off",
+        "break"
+      ],
+      "t": 2,
+      "izoh": "Turn off = chiroqni o'chiring, tejaymiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#ae32e802"
+    },
+    {
+      "q": "The ___ around us includes air, water, land and living things.",
+      "v": [
+        "market",
+        "kitchen",
+        "garage",
+        "environment"
+      ],
+      "t": 3,
+      "izoh": "Environment = atrofimizdagi muhit.",
+      "qiy": "orta",
+      "id": "ing_a2_m27#afb2eab8"
+    }
+  ]
+}

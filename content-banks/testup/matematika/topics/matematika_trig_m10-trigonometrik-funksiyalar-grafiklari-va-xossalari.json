@@ -1,0 +1,1609 @@
+{
+  "nom": "Trigonometrik funksiyalar grafiklari va xossalari",
+  "bolim": "Trigonometriya",
+  "blok": "trig",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "y = sinx funksiyasining eng kichik musbat davri quyidagi qiymatlardan qaysi biriga teng?",
+      "v": [
+        "2π",
+        "π",
+        "π/2",
+        "4π"
+      ],
+      "t": 0,
+      "izoh": "Sinus uchun sin(x + 2π) = sinx tenglik barcha x larda bajariladi. Undan kichik musbat son bunday xossaga ega emas: masalan π da sin(x + π) = −sinx bo'ladi. Demak asosiy davr 2π. Javob: 2π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-asosiy-funksiya",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#8112f55c"
+    },
+    {
+      "q": "y = tgx funksiyasi grafigi qanday oraliqda o'zini takrorlaydi, ya'ni uning asosiy davri nechaga teng?",
+      "v": [
+        "2π",
+        "π/2",
+        "π",
+        "3π"
+      ],
+      "t": 2,
+      "izoh": "Tangens grafigi har bir π uzunlikdagi oraliqda bir xil takrorlanadi, chunki tg(x + π) = tgx. Sinus va kosinusdan farqli o'laroq uning davri 2π emas, balki π. Javob: π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-asosiy-funksiya",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#60b821b7"
+    },
+    {
+      "q": "Quyidagi funksiyalardan qaysi birining asosiy davri π ga teng: y = sinx, y = ctgx, y = cosx, y = sin(x/2)?",
+      "v": [
+        "y = sinx",
+        "y = ctgx",
+        "y = cosx",
+        "y = sin(x/2)"
+      ],
+      "t": 1,
+      "izoh": "Sinus va kosinusning davri 2π ga teng, sin(x/2) niki esa 2π : (1/2) = 4π. Kotangens uchun ctg(x + π) = ctgx, ya'ni davri π. Javob: y = ctgx.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-asosiy-funksiya",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#1ebba7c3"
+    },
+    {
+      "q": "y = ctgx funksiyasining davri y = cosx funksiyasining davridan necha marta kichik?",
+      "v": [
+        "4 marta",
+        "1,5 marta",
+        "Ular teng",
+        "2 marta"
+      ],
+      "t": 3,
+      "izoh": "Kotangensning asosiy davri π, kosinusniki esa 2π ga teng. Ularning nisbati 2π : π = 2 ni beradi. Demak ctgx ning davri cosx nikidan 2 marta kichik. Javob: 2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-asosiy-funksiya",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#b75a1d85"
+    },
+    {
+      "q": "y = sin3x funksiyasining eng kichik musbat davrini toping.",
+      "v": [
+        "2π",
+        "6π",
+        "2π/3",
+        "π/3"
+      ],
+      "t": 2,
+      "izoh": "y = sin(kx) uchun davr T = 2π : |k| formula bilan topiladi. Bu yerda k = 3, demak T = 2π : 3 = 2π/3. Agar 2π ni 3 ga ko'paytirsak 6π chiqadi, bu keng tarqalgan xato. Javob: 2π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-kx-koeffitsient",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#509dadbb"
+    },
+    {
+      "q": "y = cos(x/4) funksiyasi grafigi to'liq bir tebranishni necha uzunlikdagi oraliqda bajaradi?",
+      "v": [
+        "8π",
+        "π/2",
+        "2π",
+        "4π"
+      ],
+      "t": 0,
+      "izoh": "Bu yerda argument koeffitsienti k = 1/4, shuning uchun T = 2π : (1/4) = 8π. Koeffitsient birdan kichik bo'lganda grafik gorizontal cho'ziladi va davr ortadi. Javob: 8π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davr-kx-koeffitsient",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#7b6fc5d3"
+    },
+    {
+      "q": "y = tg5x funksiyasining asosiy davri qanday bo'ladi?",
+      "v": [
+        "2π/5",
+        "5π",
+        "π",
+        "π/5"
+      ],
+      "t": 3,
+      "izoh": "Tangens uchun davr formulasi T = π : |k| ko'rinishida bo'ladi, sinusdagidek 2π : |k| emas. k = 5 bo'lgani uchun T = π : 5 = π/5. Javob: π/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davr-kx-koeffitsient",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#3d6e0484"
+    },
+    {
+      "q": "y = ctg(2x − π/3) funksiyaning davri argument ichidagi π/3 ga bog'liqmi va u nechaga teng?",
+      "v": [
+        "Bog'liq emas, T = 2π",
+        "Bog'liq emas, T = π/2",
+        "Bog'liq, T = π/3",
+        "Bog'liq emas, T = π"
+      ],
+      "t": 1,
+      "izoh": "Argumentga qo'shilgan o'zgarmas son grafikni faqat gorizontal siljitadi, davrni o'zgartirmaydi. Kotangens uchun T = π : |k| = π : 2 = π/2. Javob: bog'liq emas, T = π/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davr-kx-koeffitsient",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#b155b7cd"
+    },
+    {
+      "q": "y = |sinx| funksiyasining eng kichik musbat davri y = sinx funksiyasinikidan farq qiladimi?",
+      "v": [
+        "Farq qilmaydi, T = 2π",
+        "Farq qiladi, T = π",
+        "Farq qiladi, T = π/2",
+        "Farq qiladi, T = 4π"
+      ],
+      "t": 1,
+      "izoh": "Modul olinganda grafikning Ox o'qidan pastdagi qismi yuqoriga qaytariladi. Natijada [0; π] dagi tepalik [π; 2π] dan qaytarilgan tepalik bilan aynan bir xil bo'lib qoladi. Shuning uchun davr π ga qisqaradi. Javob: farq qiladi, T = π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davr-murakkab-ifoda",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#20628fed"
+    },
+    {
+      "q": "y = sin²x funksiyasining asosiy davrini aniqlang.",
+      "v": [
+        "2π",
+        "π/2",
+        "3π/2",
+        "π"
+      ],
+      "t": 3,
+      "izoh": "Darajani tushirish formulasidan sin²x = (1 − cos2x)/2 hosil bo'ladi. O'ng tomonda cos2x turibdi, uning davri esa 2π : 2 = π. O'zgarmas qo'shiluvchi va bo'luvchi davrni o'zgartirmaydi. Javob: π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davr-murakkab-ifoda",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#a5964bc8"
+    },
+    {
+      "q": "y = sin2x + cos3x funksiyasining eng kichik musbat davri nechaga teng?",
+      "v": [
+        "2π",
+        "π",
+        "6π",
+        "2π/3"
+      ],
+      "t": 0,
+      "izoh": "sin2x ning davri π, cos3x niki esa 2π : 3 = 2π/3 ga teng. Yig'indining davri shu ikkalasining eng kichik umumiy karralisi bo'ladi: π·2 = 2π va (2π/3)·3 = 2π. Demak T = 2π. Javob: 2π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davr-murakkab-ifoda",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#83aa498b"
+    },
+    {
+      "q": "y = cos²x − sin²x funksiyasining eng kichik musbat davrini toping.",
+      "v": [
+        "2π",
+        "π/4",
+        "π",
+        "π/2"
+      ],
+      "t": 2,
+      "izoh": "Ikkilangan burchak formulasiga ko'ra cos²x − sin²x = cos2x. Demak funksiya aslida cos2x dan iborat, uning davri T = 2π : 2 = π. Javob: π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davr-murakkab-ifoda",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#d172d023"
+    },
+    {
+      "q": "y = 4sin(3x + π/6) − 2 funksiyaning amplitudasi qanday songa teng?",
+      "v": [
+        "3",
+        "2",
+        "12",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "y = A·sin(kx + b) + c ko'rinishdagi funksiyada amplituda |A| ga teng bo'ladi. Bu yerda A = 4, k = 3, c = −2. Demak amplituda 4, 3 esa davrni belgilaydi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amplituda-aniqlash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#043e847e"
+    },
+    {
+      "q": "Amplitudasi 7 ga teng bo'lgan tebranishni quyidagi funksiyalardan qaysi biri ifodalaydi?",
+      "v": [
+        "y = sin(7x)",
+        "y = 7sin(2x) + 1",
+        "y = 2sinx + 7",
+        "y = sinx + 7"
+      ],
+      "t": 1,
+      "izoh": "Amplituda sinus oldidagi koeffitsientning moduli bilan aniqlanadi. sin(7x) da 7 argument ichida turibdi va faqat davrga ta'sir qiladi. 2sinx + 7 da amplituda 2, 7 esa vertikal siljish. Javob: y = 7sin(2x) + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amplituda-aniqlash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#47c0f8e5"
+    },
+    {
+      "q": "y = −5cos(4x) + 3 funksiyaning amplitudasi nechaga teng?",
+      "v": [
+        "−5",
+        "3",
+        "5",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Amplituda koeffitsientning moduliga teng: |−5| = 5. Minus ishorasi grafikni Ox o'qiga nisbatan aks ettiradi, lekin tebranish kengligini o'zgartirmaydi. 3 esa vertikal siljish, 8 — eng katta qiymat. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amplituda-aniqlash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#c456985e"
+    },
+    {
+      "q": "Bir tebranishning eng katta qiymati 13, eng kichik qiymati esa −5 ga teng. Uning amplitudasi nechaga teng?",
+      "v": [
+        "9",
+        "18",
+        "4",
+        "13"
+      ],
+      "t": 0,
+      "izoh": "Amplituda formulasi A = (ymax − ymin) : 2 ko'rinishida. Bu yerda A = (13 − (−5)) : 2 = 18 : 2 = 9. Ikkiga bo'lish unutilsa 18 chiqadi, o'rta chiziq esa (13 + (−5)) : 2 = 4 ga teng. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amplituda-aniqlash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#470877b1"
+    },
+    {
+      "q": "y = 3sinx + 2 funksiyaning qiymatlar to'plamini ko'rsating.",
+      "v": [
+        "[−1; 5]",
+        "[−3; 3]",
+        "[2; 5]",
+        "[−5; 5]"
+      ],
+      "t": 0,
+      "izoh": "sinx ning qiymatlari [−1; 1] oralig'ida yotadi. Uni 3 ga ko'paytirsak [−3; 3] hosil bo'ladi, so'ng 2 qo'shsak chegaralar 2 ga suriladi va [−1; 5] chiqadi. Javob: [−1; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlar-toplami",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#a46cf8c0"
+    },
+    {
+      "q": "y = 6cos(2x) − 4 funksiya qanday oraliqdagi qiymatlarni qabul qiladi?",
+      "v": [
+        "[−6; 6]",
+        "[−4; 6]",
+        "[−10; 2]",
+        "[−10; 10]"
+      ],
+      "t": 2,
+      "izoh": "cos(2x) ifodasi [−1; 1] oralig'ida o'zgaradi, argumentdagi 2 faqat davrga ta'sir qiladi. 6 ga ko'paytirilganda [−6; 6], keyin 4 ayrilganda [−10; 2] hosil bo'ladi. Javob: [−10; 2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-toplami",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#0c053c55"
+    },
+    {
+      "q": "y = 2 − 5sin(3x) funksiyaning eng katta va eng kichik qiymatlari mos ravishda qanday bo'ladi?",
+      "v": [
+        "5 va −5",
+        "7 va −3",
+        "3 va −7",
+        "2 va −5"
+      ],
+      "t": 1,
+      "izoh": "5sin(3x) ifodasi [−5; 5] oralig'ida o'zgaradi. Sinus oldida minus turgani uchun eng katta qiymat sin = −1 da hosil bo'ladi: 2 + 5 = 7. Eng kichigi esa sin = 1 da: 2 − 5 = −3. Javob: 7 va −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-toplami",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#d933035c"
+    },
+    {
+      "q": "y = 4sin²x − 1 funksiyaning qiymatlar to'plamini toping.",
+      "v": [
+        "[−5; 3]",
+        "[−4; 4]",
+        "[0; 3]",
+        "[−1; 3]"
+      ],
+      "t": 3,
+      "izoh": "sin²x har doim manfiy emas va uning qiymatlari [0; 1] oralig'ida yotadi. 4 ga ko'paytirilsa [0; 4], 1 ayrilsa [−1; 3] chiqadi. sin²x ni [−1; 1] deb olish tipik xato bo'lib, [−5; 3] javobini beradi. Javob: [−1; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatlar-toplami",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#02feb8a9"
+    },
+    {
+      "q": "y = tgx funksiyaning aniqlanish sohasiga quyidagi qiymatlardan qaysi biri kirmaydi?",
+      "v": [
+        "x = π/3",
+        "x = π/4",
+        "x = π/2",
+        "x = 0"
+      ],
+      "t": 2,
+      "izoh": "Tangens tgx = sinx : cosx nisbat bilan aniqlanadi va cosx = 0 bo'lgan nuqtalarda mavjud emas. cos(π/2) = 0, qolgan berilgan qiymatlarda esa kosinus noldan farqli. Javob: x = π/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#0f6d60e7"
+    },
+    {
+      "q": "y = ctgx funksiya qaysi nuqtalarda aniqlanmagan bo'ladi?",
+      "v": [
+        "x = πn, n ∈ Z",
+        "x = π/2 + πn, n ∈ Z",
+        "x = 2πn, n ∈ Z",
+        "x = π/2 + 2πn, n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "Kotangens ctgx = cosx : sinx ko'rinishida yoziladi, demak sinx = 0 bo'lgan nuqtalarda aniqlanmaydi. sinx = 0 tenglamaning yechimi esa x = πn. Tangens bilan chalkashtirilsa π/2 + πn javobi olinadi. Javob: x = πn, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#71dae13b"
+    },
+    {
+      "q": "y = tg(x − π/4) funksiyaning aniqlanish sohasidan chiqarib tashlanadigan nuqtalarni ko'rsating.",
+      "v": [
+        "x = π/4 + πn, n ∈ Z",
+        "x = π/2 + πn, n ∈ Z",
+        "x = 3π/4 + 2πn, n ∈ Z",
+        "x = 3π/4 + πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Tangens argumenti π/2 + πn ga teng bo'lganda funksiya aniqlanmaydi. Shuning uchun x − π/4 = π/2 + πn deb yozamiz, bundan x = 3π/4 + πn. Tangens davri π bo'lgani uchun 2πn emas, πn yoziladi. Javob: x = 3π/4 + πn.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#a46f9577"
+    },
+    {
+      "q": "y = ctg(3x) funksiyaning aniqlanish sohasida bo'lmagan nuqtalar to'plamini toping.",
+      "v": [
+        "x = πn, n ∈ Z",
+        "x = πn/3, n ∈ Z",
+        "x = π/6 + πn/3, n ∈ Z",
+        "x = 3πn, n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "Kotangens argumenti πn ga teng bo'lganda aniqlanmaydi, ya'ni 3x = πn. Bundan x = πn/3 kelib chiqadi. Argument koeffitsientiga bo'lish unutilsa x = πn javobi olinadi. Javob: x = πn/3, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#e80ef4bb"
+    },
+    {
+      "q": "Quyidagi funksiyalardan qaysi biri juft funksiya hisoblanadi: y = sinx, y = cosx, y = tgx, y = ctgx?",
+      "v": [
+        "y = sinx",
+        "y = cosx",
+        "y = tgx",
+        "y = ctgx"
+      ],
+      "t": 1,
+      "izoh": "Juftlik sharti f(−x) = f(x) ko'rinishida yoziladi. Kosinus uchun cos(−x) = cosx, ya'ni grafigi Oy o'qiga nisbatan simmetrik. Sinus, tangens va kotangens esa toq funksiyalardir. Javob: y = cosx.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-toq-aniqlash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#78b7629a"
+    },
+    {
+      "q": "y = sinx · cosx funksiyasi juft yoki toqlik bo'yicha qanday xususiyatga ega?",
+      "v": [
+        "Juft funksiya, chunki f(−x) = f(x)",
+        "Na juft, na toq",
+        "Ham juft, ham toq",
+        "Toq funksiya, chunki f(−x) = −f(x)"
+      ],
+      "t": 3,
+      "izoh": "Hisoblaymiz: f(−x) = sin(−x)·cos(−x) = (−sinx)·cosx = −sinx·cosx. Bu esa aynan −f(x) ga teng. Toq va juft funksiyalarning ko'paytmasi har doim toq chiqadi. Javob: toq funksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-toq-aniqlash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#694cc408"
+    },
+    {
+      "q": "y = sinx + tgx funksiyasi uchun f(−x) ifodasi f(x) bilan qanday bog'langan?",
+      "v": [
+        "f(−x) = −f(x)",
+        "f(−x) = f(x)",
+        "f(−x) = 1/f(x)",
+        "f(−x) = f(x) + 1"
+      ],
+      "t": 0,
+      "izoh": "sin(−x) = −sinx va tg(−x) = −tgx, chunki ikkala funksiya ham toq. Demak f(−x) = −sinx − tgx = −(sinx + tgx) = −f(x). Toq funksiyalar yig'indisi ham toq bo'ladi. Javob: f(−x) = −f(x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-toq-aniqlash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#f981fc68"
+    },
+    {
+      "q": "Quyidagi funksiyalardan qaysi birining grafigi Oy o'qiga nisbatan simmetrik: y = sin2x, y = tgx, y = cos3x, y = x + sinx?",
+      "v": [
+        "y = sin2x",
+        "y = tgx",
+        "y = cos3x",
+        "y = x + sinx"
+      ],
+      "t": 2,
+      "izoh": "Oy o'qiga nisbatan simmetriya juft funksiyalarga xos xususiyatdir. cos(−3x) = cos3x bo'lgani uchun bu funksiya juft. sin2x va tgx toq, x + sinx esa ikki toq funksiyaning yig'indisi, ya'ni toq. Javob: y = cos3x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-toq-aniqlash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#3cfe15d8"
+    },
+    {
+      "q": "y = sin(x − π/3) funksiyaning grafigi y = sinx grafigidan qanday hosil qilinadi?",
+      "v": [
+        "Ox o'qi bo'ylab chapga π/3 ga siljitib",
+        "Oy o'qi bo'ylab yuqoriga π/3 ga siljitib",
+        "Oy o'qi bo'ylab pastga π/3 ga siljitib",
+        "Ox o'qi bo'ylab o'ngga π/3 ga siljitib"
+      ],
+      "t": 3,
+      "izoh": "Argumentdan son ayrilganda grafik o'ng tomonga siljiydi. y = sin(x − a) grafigi y = sinx dan a birlik o'ngga suriladi. Bu yerda a = π/3 ga teng. Javob: o'ngga π/3 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-siljish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#cb25ec96"
+    },
+    {
+      "q": "y = cos(x + π/6) grafigi y = cosx grafigiga nisbatan qaysi tomonga va qanchaga siljigan?",
+      "v": [
+        "O'ngga π/6 ga",
+        "Chapga π/6 ga",
+        "Chapga π/3 ga",
+        "O'ngga π/3 ga"
+      ],
+      "t": 1,
+      "izoh": "Argumentga son qo'shilganda grafik chap tomonga siljiydi: y = cos(x + a) grafigi a birlik chapga suriladi. Bu yerda a = π/6, demak siljish chapga π/6 ga teng. Javob: chapga π/6 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-siljish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#c684397f"
+    },
+    {
+      "q": "y = sin(2x − π/2) funksiyaning grafigi y = sin2x grafigidan qancha o'ngga siljigan?",
+      "v": [
+        "π/2",
+        "π",
+        "π/4",
+        "π/8"
+      ],
+      "t": 2,
+      "izoh": "Avval argumentdan koeffitsient qavsga chiqariladi: 2x − π/2 = 2(x − π/4). Demak siljish π/4 ga teng, π/2 ga emas. Koeffitsientga bo'lishni unutish eng ko'p uchraydigan xato. Javob: π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorizontal-siljish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#6162de6b"
+    },
+    {
+      "q": "y = 3cos(4x + π) + 1 funksiyada gorizontal siljish qaysi tomonga va qanchaga bo'ladi?",
+      "v": [
+        "Chapga π/4 ga",
+        "Chapga π ga",
+        "O'ngga π/4 ga",
+        "Chapga 4π ga"
+      ],
+      "t": 0,
+      "izoh": "Argumentni ko'rinishga keltiramiz: 4x + π = 4(x + π/4). Qo'shuv ishorasi chapga siljishni bildiradi, siljish miqdori esa π : 4 = π/4. Javob: chapga π/4 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorizontal-siljish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#f2f3c21d"
+    },
+    {
+      "q": "y = cosx + 5 funksiyaning grafigi y = cosx grafigidan qanday farq qiladi?",
+      "v": [
+        "5 birlik yuqoriga siljigan",
+        "5 birlik pastga siljigan",
+        "5 birlik o'ngga siljigan",
+        "Oy o'qi bo'ylab 5 marta cho'zilgan"
+      ],
+      "t": 0,
+      "izoh": "Funksiya qiymatiga o'zgarmas son qo'shilsa, grafik Oy o'qi bo'ylab yuqoriga suriladi. Bu yerda qo'shiluvchi 5 ga teng, shuning uchun butun kosinusoida 5 birlik tepaga ko'chadi. Javob: 5 birlik yuqoriga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-siljish-orta-chiziq",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#71473bf4"
+    },
+    {
+      "q": "y = 2sin(3x) − 7 funksiya grafigi qaysi to'g'ri chiziq atrofida tebranadi?",
+      "v": [
+        "y = 7",
+        "y = 2",
+        "y = −7",
+        "y = −5"
+      ],
+      "t": 2,
+      "izoh": "Tebranish o'rta chizig'i y = c to'g'ri chiziq bo'ladi, bu yerda c — erkin had. Funksiyada c = −7, amplituda esa 2 ga teng. Demak grafik y = −7 chizig'i atrofida tebranadi. Javob: y = −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-siljish-orta-chiziq",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#6cf6e738"
+    },
+    {
+      "q": "Grafigi y = 4 to'g'ri chizig'i atrofida tebranadigan va amplitudasi 3 ga teng funksiyani ko'rsating.",
+      "v": [
+        "y = 4sin(3x) + 3",
+        "y = 3sin(2x) + 4",
+        "y = 3sin(2x) − 4",
+        "y = 4sin(2x) − 3"
+      ],
+      "t": 1,
+      "izoh": "O'rta chiziq y = 4 bo'lishi uchun erkin had 4 ga teng bo'lishi kerak. Amplituda 3 bo'lishi uchun sinus oldidagi koeffitsient 3 bo'ladi. Shu ikki shartni faqat bitta variant qanoatlantiradi. Javob: y = 3sin(2x) + 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-siljish-orta-chiziq",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#5fbd5914"
+    },
+    {
+      "q": "y = A·cos(kx) + c funksiyaning eng katta qiymati 10, eng kichigi 2 ga teng bo'lsa, c nechaga teng?",
+      "v": [
+        "4",
+        "8",
+        "12",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Vertikal siljish o'rta chiziqqa teng: c = (ymax + ymin) : 2 = (10 + 2) : 2 = 6. Amplituda esa (10 − 2) : 2 = 4 ni beradi, uni c bilan chalkashtirmaslik kerak. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-siljish-orta-chiziq",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#51e62d4b"
+    },
+    {
+      "q": "y = 5sinx − 2 funksiya eng katta qiymatiga x ning qaysi qiymatlarida erishadi?",
+      "v": [
+        "x = πn, n ∈ Z",
+        "x = 2πn, n ∈ Z",
+        "x = π/2 + 2πn, n ∈ Z",
+        "x = −π/2 + 2πn, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "Funksiya eng katta qiymatga sinx = 1 bo'lganda erishadi, chunki koeffitsient musbat. sinx = 1 tenglamaning yechimi x = π/2 + 2πn. Manfiy π/2 esa eng kichik qiymatga mos keladi. Javob: x = π/2 + 2πn.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-qiymat-nuqtasi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#413c25f8"
+    },
+    {
+      "q": "y = 3 − 4cos(2x) funksiyaning eng katta qiymatini toping.",
+      "v": [
+        "7",
+        "3",
+        "−1",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "cos(2x) ning eng kichik qiymati −1 ga teng. Oldida minus turgani uchun aynan shu holatda funksiya maksimumga chiqadi: y = 3 − 4·(−1) = 3 + 4 = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-qiymat-nuqtasi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#1176b51c"
+    },
+    {
+      "q": "y = 2sinx · cosx + 1 funksiyaning eng katta qiymati nechaga teng?",
+      "v": [
+        "3",
+        "1",
+        "0",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Ikkilangan burchak formulasidan 2sinx·cosx = sin2x. Demak funksiya y = sin2x + 1 ko'rinishga keladi. sin2x ning eng kattasi 1 bo'lgani uchun maksimum 1 + 1 = 2 ga teng. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-qiymat-nuqtasi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#6281ae7d"
+    },
+    {
+      "q": "y = 6cos(x/2) + 1 funksiya [0; 2π] kesmada eng kichik qiymatiga erishadimi va u nechaga teng?",
+      "v": [
+        "Yo'q, erishmaydi",
+        "Ha, −5 ga teng",
+        "Ha, 1 ga teng",
+        "Ha, −6 ga teng"
+      ],
+      "t": 1,
+      "izoh": "x ∈ [0; 2π] bo'lganda argument x/2 ∈ [0; π] bo'ladi va bu oraliqda kosinus −1 gacha tushadi. cos(x/2) = −1 holat x = 2π da yuz beradi. U holda y = 6·(−1) + 1 = −5. Javob: ha, −5 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-qiymat-nuqtasi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#4fc5bf22"
+    },
+    {
+      "q": "Amplitudasi 2, davri π va o'rta chizig'i y = 0 bo'lgan sinusoidani ifodalovchi funksiyani tanlang.",
+      "v": [
+        "y = 2sin(x/2)",
+        "y = 2sin(2x)",
+        "y = π·sin(2x)",
+        "y = 2sinx + π"
+      ],
+      "t": 1,
+      "izoh": "Davr π bo'lishi uchun 2π : k = π shartdan k = 2 kelib chiqadi. Amplituda 2 bo'lgani uchun sinus oldida 2 turadi, o'rta chiziq nolda bo'lgani uchun erkin had yo'q. Javob: y = 2sin(2x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xossalardan-formula-tiklash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#009acb95"
+    },
+    {
+      "q": "Davri 6π va amplitudasi 5 ga teng bo'lgan kosinusoida qaysi formula bilan beriladi?",
+      "v": [
+        "y = 5cos(3x)",
+        "y = 3cos(5x)",
+        "y = 5cos(6πx)",
+        "y = 5cos(x/3)"
+      ],
+      "t": 3,
+      "izoh": "Davr formulasidan 2π : k = 6π, bundan k = 1/3 kelib chiqadi. Amplituda 5 bo'lgani uchun kosinus oldidagi koeffitsient 5 ga teng. Demak funksiya y = 5cos(x/3) ko'rinishida. Javob: y = 5cos(x/3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xossalardan-formula-tiklash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#1bca119a"
+    },
+    {
+      "q": "Grafigi eng yuqorida 8 ga, eng pastda −2 ga yetadigan va davri 4π bo'lgan funksiya formulasini aniqlang.",
+      "v": [
+        "y = 5sin(x/2) + 3",
+        "y = 5sin(2x) + 3",
+        "y = 3sin(x/2) + 5",
+        "y = 10sin(x/2) + 3"
+      ],
+      "t": 0,
+      "izoh": "Amplituda A = (8 − (−2)) : 2 = 5, o'rta chiziq esa c = (8 + (−2)) : 2 = 3. Davr 4π bo'lgani uchun 2π : k = 4π, ya'ni k = 1/2. Shundan y = 5sin(x/2) + 3 kelib chiqadi. Javob: y = 5sin(x/2) + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xossalardan-formula-tiklash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#7b0f10a9"
+    },
+    {
+      "q": "Amplitudasi 1 va davri 2π bo'lgan sinusoida x = π/6 nuqtada birinchi marta maksimumga chiqadi. Uning formulasi qanday?",
+      "v": [
+        "y = sin(x − π/3)",
+        "y = sin(x + π/6)",
+        "y = sin(x + π/3)",
+        "y = sin(x − π/6)"
+      ],
+      "t": 2,
+      "izoh": "Sinus maksimumga argumenti π/2 ga teng bo'lganda chiqadi. x = π/6 da argument π/2 bo'lishi uchun qo'shiluvchi π/2 − π/6 = π/3 bo'lishi kerak. Tekshiramiz: sin(π/6 + π/3) = sin(π/2) = 1. Javob: y = sin(x + π/3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xossalardan-formula-tiklash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#422c6c15"
+    },
+    {
+      "q": "y = cosx funksiya grafigi Ox o'qini qaysi nuqtalarda kesib o'tadi?",
+      "v": [
+        "x = πn, n ∈ Z",
+        "x = π + 2πn, n ∈ Z",
+        "x = π/2 + 2πn, n ∈ Z",
+        "x = π/2 + πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Grafik Ox o'qini kesgan nuqtalarda y = 0, ya'ni cosx = 0 bo'lishi kerak. Bu tenglamaning yechimi x = π/2 + πn. Sinusning nollari bilan chalkashtirilsa x = πn javobi olinadi. Javob: x = π/2 + πn.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nollar-va-kesishish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#acf95431"
+    },
+    {
+      "q": "y = sin(2x) funksiyaning [0; 2π] kesmadagi nollari soni nechta?",
+      "v": [
+        "4 ta",
+        "5 ta",
+        "2 ta",
+        "3 ta"
+      ],
+      "t": 1,
+      "izoh": "sin(2x) = 0 tenglamadan 2x = πn, ya'ni x = πn/2 kelib chiqadi. [0; 2π] kesmaga 0, π/2, π, 3π/2 va 2π nuqtalari tushadi. Jami 5 ta nol bor. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nollar-va-kesishish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#48fed663"
+    },
+    {
+      "q": "y = cos(3x) funksiyaning [0; 2π] oraliqdagi nollari sonini aniqlang.",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "6 ta",
+        "12 ta"
+      ],
+      "t": 2,
+      "izoh": "cos(3x) = 0 dan 3x = π/2 + πn, bundan x = π/6 + πn/3. [0; 2π] oralig'iga π/6, π/2, 5π/6, 7π/6, 3π/2 va 11π/6 nuqtalari tushadi. Jami 6 ta nol bor. Javob: 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nollar-va-kesishish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#1387f303"
+    },
+    {
+      "q": "y = 2sinx − 1 funksiya grafigi Ox o'qini [0; 2π] kesmada qaysi nuqtalarda kesadi?",
+      "v": [
+        "x = π/6 va x = 5π/6",
+        "x = π/6 va x = 7π/6",
+        "x = π/3 va x = 2π/3",
+        "x = π/6 va x = 11π/6"
+      ],
+      "t": 0,
+      "izoh": "Kesishish sharti 2sinx − 1 = 0, ya'ni sinx = 1/2. [0; 2π] oralig'ida bu tenglamaning yechimlari x = π/6 va x = π − π/6 = 5π/6. Ikkinchi ildizni π + π/6 deb olish tipik xato. Javob: π/6 va 5π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nollar-va-kesishish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#8cf047fa"
+    },
+    {
+      "q": "y = sinx funksiya quyidagi oraliqlarning qaysi birida o'suvchi bo'ladi?",
+      "v": [
+        "[−π/2; π/2]",
+        "[π/2; 3π/2]",
+        "[0; π]",
+        "[π; 2π]"
+      ],
+      "t": 0,
+      "izoh": "Sinus grafigi eng past nuqtadan eng yuqori nuqtaga ko'tarilayotgan joyda o'sadi. Bu −π/2 dan π/2 gacha bo'lgan kesma, chunki sin(−π/2) = −1 va sin(π/2) = 1. Javob: [−π/2; π/2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-oraliqlari",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#f02a8157"
+    },
+    {
+      "q": "y = cosx funksiya [0; 2π] kesmaning qaysi qismida kamayadi?",
+      "v": [
+        "[π; 2π]",
+        "[3π/2; 2π]",
+        "[0; π]",
+        "[π/2; 3π/2]"
+      ],
+      "t": 2,
+      "izoh": "cos0 = 1 va cosπ = −1, ya'ni [0; π] oralig'ida funksiya 1 dan −1 gacha uzluksiz kamayadi. [π; 2π] da, jumladan uning [3π/2; 2π] qismida esa aksincha, funksiya o'sadi. Javob: [0; π].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-oraliqlari",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#3b103698"
+    },
+    {
+      "q": "y = tgx funksiyaning o'sish xarakteri haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Butun sonlar o'qida o'suvchi",
+        "Aniqlanish sohasining har bir oralig'ida o'suvchi",
+        "Aniqlanish sohasining har bir oralig'ida kamayuvchi",
+        "Avval o'sib, keyin kamayadi"
+      ],
+      "t": 1,
+      "izoh": "Tangens grafigi π/2 + πn nuqtalarda uzilishga ega, shuning uchun uni butun o'qda o'suvchi deyish noto'g'ri. Uzilishlar orasidagi har bir oraliqda esa funksiya cheksiz pastdan cheksiz yuqoriga qarab o'sadi. Javob: har bir oralig'ida o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlik-oraliqlari",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#456004c1"
+    },
+    {
+      "q": "y = 3sin(2x) funksiya [0; π/4] kesmada o'sadimi yoki kamayadimi va nima uchun?",
+      "v": [
+        "Kamayadi, chunki bu yerda sinus kamayadi",
+        "Avval o'sadi, keyin kamayadi",
+        "O'zgarmaydi, chunki davri π ga teng",
+        "O'sadi, chunki 2x ∈ [0; π/2] da sinus o'sadi"
+      ],
+      "t": 3,
+      "izoh": "x kesmaning chetlarida 0 dan π/4 gacha o'zgarsa, argument 2x nol dan π/2 gacha o'zgaradi. Bu oraliqda sinus o'suvchi, 3 ko'paytuvchisi esa musbat bo'lgani uchun o'sish saqlanadi. Javob: o'sadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monotonlik-oraliqlari",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#6eb87b88"
+    },
+    {
+      "q": "y = sinx funksiya grafigi qaysi nuqtaga nisbatan markaziy simmetriyaga ega?",
+      "v": [
+        "M(π/2; 1) nuqtaga",
+        "Oy o'qiga",
+        "Koordinata boshi O(0; 0) ga",
+        "N(π; 1) nuqtaga"
+      ],
+      "t": 2,
+      "izoh": "Sinus toq funksiya, ya'ni sin(−x) = −sinx tenglik o'rinli. Toq funksiyaning grafigi koordinata boshiga nisbatan markaziy simmetrik bo'ladi. Oy o'qiga nisbatan simmetriya esa juft funksiyalarga xos. Javob: O(0; 0) nuqtaga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-oq-markaz",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#80c5b1fe"
+    },
+    {
+      "q": "y = cosx grafigi uchun simmetriya o'qi bo'la oladigan to'g'ri chiziqni ko'rsating.",
+      "v": [
+        "x = 0",
+        "x = π/2",
+        "y = 1",
+        "y = 0"
+      ],
+      "t": 0,
+      "izoh": "Kosinus juft funksiya, shuning uchun grafigi Oy o'qiga, ya'ni x = 0 to'g'ri chizig'iga nisbatan simmetrik. x = π/2 simmetriya o'qi emas, u markaziy simmetriya nuqtasidan o'tadi. Javob: x = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriya-oq-markaz",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#4adb204d"
+    },
+    {
+      "q": "y = tgx funksiyaning grafigi qanday simmetriyaga ega ekanligini ko'rsating.",
+      "v": [
+        "Oy o'qiga nisbatan o'q simmetrik",
+        "Ox o'qiga nisbatan o'q simmetrik",
+        "Hech qanday simmetriyaga ega emas",
+        "Koordinata boshiga nisbatan markaziy simmetrik"
+      ],
+      "t": 3,
+      "izoh": "tg(−x) = −tgx bo'lgani uchun tangens toq funksiya hisoblanadi. Toq funksiyaning grafigi koordinata boshi atrofida yarim burilishda o'ziga o'tadi. Demak simmetriya markaziy. Javob: koordinata boshiga nisbatan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-oq-markaz",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#57be0ae3"
+    },
+    {
+      "q": "y = 2cos(x − π/4) funksiya grafigining simmetriya o'qlaridan biri qaysi to'g'ri chiziq bo'ladi?",
+      "v": [
+        "x = −π/4",
+        "x = π/4",
+        "x = π/2",
+        "y = π/4"
+      ],
+      "t": 1,
+      "izoh": "Kosinusoidaning simmetriya o'qlari maksimum va minimum nuqtalaridan o'tadi. Maksimum argument nolga teng bo'lganda hosil bo'ladi: x − π/4 = 0, ya'ni x = π/4. Javob: x = π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetriya-oq-markaz",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#172bb058"
+    },
+    {
+      "q": "sinx = 0,4 tenglama [0; 2π] kesmada nechta ildizga ega ekanligini grafik yordamida aniqlang.",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "4 ta",
+        "3 ta"
+      ],
+      "t": 1,
+      "izoh": "y = 0,4 gorizontal chiziqni sinusoida bilan kesishtiramiz. Bitta davr ichida bunday chiziq grafikni ikki marta kesadi: biri ko'tarilishda, ikkinchisi tushishda. [0; 2π] esa aynan bitta davr. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-soni-grafik",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#5f5ba3dd"
+    },
+    {
+      "q": "cosx = 1,3 tenglamaning ildizlari soni haqida grafik asosida qanday xulosa chiqariladi?",
+      "v": [
+        "Bitta ildiz",
+        "Ikkita ildiz",
+        "Cheksiz ko'p ildiz",
+        "Ildizi yo'q"
+      ],
+      "t": 3,
+      "izoh": "Kosinus grafigi butunlay y = −1 va y = 1 chiziqlari orasida joylashgan. y = 1,3 to'g'ri chizig'i bu polosadan yuqorida yotadi va grafik bilan umuman kesishmaydi. Javob: ildizi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-soni-grafik",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#50a03ef2"
+    },
+    {
+      "q": "sin(2x) = 0,5 tenglama [0; 2π] kesmada nechta ildizga ega?",
+      "v": [
+        "4 ta",
+        "2 ta",
+        "8 ta",
+        "6 ta"
+      ],
+      "t": 0,
+      "izoh": "x ∈ [0; 2π] bo'lganda argument 2x ∈ [0; 4π] bo'ladi, ya'ni ikkita to'liq davr hosil bo'ladi. Har bir davrda sin t = 0,5 tenglama ikkita yechimga ega. Demak jami 2·2 = 4 ta ildiz. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-soni-grafik",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#dbdd54ca"
+    },
+    {
+      "q": "tgx = 3 tenglamaning [0; 3π] oraliqdagi ildizlari soni nechta?",
+      "v": [
+        "1 ta",
+        "6 ta",
+        "3 ta",
+        "2 ta"
+      ],
+      "t": 2,
+      "izoh": "Tangensning davri π ga teng va har bir davrda tgx = 3 tenglama roppa-rosa bitta ildizga ega. [0; 3π] oralig'i uchta davrdan iborat. Demak ildizlar soni 3 ta. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-soni-grafik",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#d82ceda4"
+    },
+    {
+      "q": "M(π/6; 0,5) nuqta y = sinx funksiya grafigiga tegishlimi?",
+      "v": [
+        "Yo'q, tegishli emas",
+        "Faqat manfiy x larda tegishli",
+        "Aniqlab bo'lmaydi",
+        "Ha, tegishli"
+      ],
+      "t": 3,
+      "izoh": "Nuqtaning abssissasini funksiyaga qo'yamiz: sin(π/6) = 0,5. Hosil bo'lgan qiymat nuqtaning ordinatasi bilan aynan bir xil. Demak nuqta grafikda yotadi. Javob: ha, tegishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-grafikka-tegishlimi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#e7b95000"
+    },
+    {
+      "q": "y = 2cos(3x) funksiya grafigi (π/3; −2) nuqtadan o'tadimi? Tekshirib javob bering.",
+      "v": [
+        "Yo'q, chunki y = 2 chiqadi",
+        "Ha, chunki 2cos(π) = −2",
+        "Yo'q, chunki y = 0 chiqadi",
+        "Ha, chunki 2cos(π/3) = 1"
+      ],
+      "t": 1,
+      "izoh": "x = π/3 ni qo'yamiz: argument 3·(π/3) = π bo'ladi. cosπ = −1, demak y = 2·(−1) = −2. Bu qiymat nuqtaning ordinatasi bilan mos keladi. Javob: ha, o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-grafikka-tegishlimi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#360f0b4b"
+    },
+    {
+      "q": "y = tgx funksiya grafigida yotgan nuqtani belgilang.",
+      "v": [
+        "(π/2; 0)",
+        "(π/3; 1)",
+        "(π/4; 1)",
+        "(0; 1)"
+      ],
+      "t": 2,
+      "izoh": "tg(π/4) = 1 bo'lgani uchun (π/4; 1) nuqta grafikda yotadi. tg(π/2) umuman aniqlanmagan, tg(π/3) = √3 ga, tg0 esa nolga teng. Javob: (π/4; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-grafikka-tegishlimi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#6316d010"
+    },
+    {
+      "q": "y = 3sin(2x) + 1 funksiya grafigi quyidagi nuqtalarning qaysi biridan o'tadi?",
+      "v": [
+        "(π/4; 4)",
+        "(π/4; 1)",
+        "(π/2; 4)",
+        "(0; 3)"
+      ],
+      "t": 0,
+      "izoh": "x = π/4 da argument 2x = π/2, ya'ni sin(π/2) = 1 va y = 3·1 + 1 = 4. Qolganlarini tekshiramiz: x = π/2 da y = 3sinπ + 1 = 1, x = 0 da esa y = 1. Javob: (π/4; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqta-grafikka-tegishlimi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#938438ad"
+    },
+    {
+      "q": "Sinus grafigining simmetriyasiga asoslanib sin(2π/5) va sin(3π/5) qiymatlarini taqqoslang.",
+      "v": [
+        "Ular teng",
+        "sin(2π/5) katta",
+        "sin(3π/5) katta",
+        "Taqqoslab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Sinusoida x = π/2 to'g'ri chizig'iga nisbatan simmetrik, shuning uchun sin(π − a) = sina. Bu yerda 3π/5 = π − 2π/5, demak sin(3π/5) = sin(2π/5). Javob: ular teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlarni-taqqoslash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#00b135d8"
+    },
+    {
+      "q": "cos(π/7) va cos(2π/7) sonlaridan qaysi biri katta ekanligini kosinus grafigi yordamida aniqlang.",
+      "v": [
+        "cos(2π/7)",
+        "Ular teng",
+        "cos(π/7)",
+        "Solishtirib bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Kosinus [0; π] kesmada kamayuvchi funksiya. π/7 < 2π/7 bo'lgani uchun kichikroq argumentga kattaroq qiymat mos keladi. Demak cos(π/7) > cos(2π/7). Javob: cos(π/7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlarni-taqqoslash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#1667afbe"
+    },
+    {
+      "q": "sin1 va cos1 (argument radianda) sonlaridan qaysi biri katta? Grafik tasavvur yordamida javob bering.",
+      "v": [
+        "cos1",
+        "sin1",
+        "Ular bir xil",
+        "sin1 manfiy, cos1 musbat"
+      ],
+      "t": 1,
+      "izoh": "Sinus va kosinus grafiklari x = π/4 ≈ 0,79 nuqtada kesishadi. Undan o'ngda sinus kosinusdan yuqorida yotadi. 1 radian π/4 dan katta bo'lgani uchun sin1 > cos1. Javob: sin1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatlarni-taqqoslash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#a95a42e6"
+    },
+    {
+      "q": "tg(2π/5) va tg(π/5) qiymatlarini taqqoslang va to'g'ri munosabatni tanlang.",
+      "v": [
+        "tg(2π/5) < tg(π/5)",
+        "tg(2π/5) = tg(π/5)",
+        "tg(2π/5) < 0",
+        "tg(2π/5) > tg(π/5)"
+      ],
+      "t": 3,
+      "izoh": "Ikkala argument ham (0; π/2) oralig'ida yotadi, chunki 2π/5 burchagi 72° ga teng. Bu oraliqda tangens o'suvchi, demak kattaroq argumentga kattaroq qiymat mos keladi. Javob: tg(2π/5) > tg(π/5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatlarni-taqqoslash",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#5f12ce31"
+    },
+    {
+      "q": "Chorvoq suv omborida suv sathi h(n) = 12 + 3sin(2πn/365) metr formula bilan beriladi, bu yerda n — yil boshidan hisoblangan kun. Sathning eng yuqori qiymati qancha bo'ladi?",
+      "v": [
+        "12 m",
+        "3 m",
+        "15 m",
+        "18 m"
+      ],
+      "t": 2,
+      "izoh": "sin(2πn/365) ifodasining eng katta qiymati 1 ga teng. Uni qo'yganda h = 12 + 3·1 = 15 metr chiqadi. Bu yerda 3 — amplituda, ya'ni o'rtacha sathdan chetlanish miqdori. Javob: 15 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-suv-sathi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#589e8ecd"
+    },
+    {
+      "q": "Sohilda suv sathi h(t) = 8 + 2,5cos(πt/6) metr qonun bilan o'zgaradi, bu yerda t soatlarda o'lchanadi. Bir to'liq tebranish necha soatda tugaydi?",
+      "v": [
+        "12 soat",
+        "6 soat",
+        "24 soat",
+        "2,5 soat"
+      ],
+      "t": 0,
+      "izoh": "Davr formulasi T = 2π : k ko'rinishida, bu yerda k = π/6. Demak T = 2π : (π/6) = 12 soat. Argumentdagi 6 ni to'g'ridan-to'g'ri davr deb olish xato bo'ladi. Javob: 12 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-suv-sathi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#9523855d"
+    },
+    {
+      "q": "Dengiz sathi h(t) = 5 + 1,8sin(πt/6) metr qonuniyat bilan o'zgaradi (t — soat). Sathning eng past va eng baland holatlari orasidagi farq qancha?",
+      "v": [
+        "1,8 m",
+        "6,8 m",
+        "5 m",
+        "3,6 m"
+      ],
+      "t": 3,
+      "izoh": "Eng baland sath 5 + 1,8 = 6,8 metr, eng past sath esa 5 − 1,8 = 3,2 metrga teng. Ularning farqi 6,8 − 3,2 = 3,6 metr, ya'ni amplitudaning ikkilanganini beradi. Javob: 3,6 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-suv-sathi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#b2bac343"
+    },
+    {
+      "q": "Kanalda suv sathi h(t) = 4 + 1,5sin(πt/4) metr bo'lib, t soatlarda o'lchanadi. Sath birinchi marta 5,5 metrga qachon yetadi?",
+      "v": [
+        "4 soatdan keyin",
+        "2 soatdan keyin",
+        "1 soatdan keyin",
+        "8 soatdan keyin"
+      ],
+      "t": 1,
+      "izoh": "5,5 = 4 + 1,5sin(πt/4) tenglamadan sin(πt/4) = 1 kelib chiqadi. Sinus birinchi marta πt/4 = π/2 bo'lganda 1 ga teng bo'ladi, bundan t = 2. Demak sath ikki soatdan keyin eng yuqori nuqtaga yetadi. Javob: 2 soatdan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-suv-sathi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#dd124079"
+    },
+    {
+      "q": "Charxpalak kabinasining balandligi h(t) = 25 − 20cos(πt/3) metr formula bilan beriladi (t — daqiqa). Kabinaning yerdan eng past balandligi qancha?",
+      "v": [
+        "25 m",
+        "5 m",
+        "20 m",
+        "45 m"
+      ],
+      "t": 1,
+      "izoh": "Balandlik eng kichik bo'lishi uchun cos(πt/3) = 1 bo'lishi kerak, chunki kosinus oldida minus turibdi. U holda h = 25 − 20·1 = 5 metr. Bu yerda 25 — markaz balandligi, 45 esa eng yuqori nuqta. Javob: 5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-charxpalak",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#f00d9936"
+    },
+    {
+      "q": "Charxpalak kabinasining balandligi h(t) = 30 + 28sin(πt/5) metr bo'lsa (t — daqiqa), u bir to'liq aylanishni necha daqiqada bajaradi?",
+      "v": [
+        "5 daqiqa",
+        "20 daqiqa",
+        "28 daqiqa",
+        "10 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Bir to'liq aylanish davrga teng: T = 2π : (π/5) = 10 daqiqa. Maxrajdagi 5 ni to'g'ridan-to'g'ri davr deb olish tipik xato, chunki bo'lish 2π ga nisbatan bajariladi. Javob: 10 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-charxpalak",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#283c049c"
+    },
+    {
+      "q": "Charxpalak radiusi 18 m, markazi yerdan 21 m balandlikda va bir aylanish 8 daqiqa davom etadi. Kabina eng past nuqtadan boshlansa, balandlik funksiyasi qanday ko'rinishga ega?",
+      "v": [
+        "h = 21 − 18cos(πt/4)",
+        "h = 18 − 21cos(πt/4)",
+        "h = 21 − 18cos(8πt)",
+        "h = 21 − 18cos(πt/8)"
+      ],
+      "t": 0,
+      "izoh": "Markaz balandligi o'rta chiziq bo'ladi, ya'ni c = 21, amplituda esa radiusga teng: A = 18. Davr 8 daqiqa bo'lgani uchun k = 2π : 8 = π/4. Eng past nuqtadan boshlanish minus kosinus bilan ifodalanadi. Javob: h = 21 − 18cos(πt/4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-charxpalak",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#ec75ed83"
+    },
+    {
+      "q": "Charxpalak kabinasi h(t) = 16 + 14sin(πt/6) metr qonun bilan harakatlanadi (t — daqiqa). Kabina eng yuqori nuqtaga birinchi marta necha daqiqadan keyin chiqadi?",
+      "v": [
+        "6 daqiqa",
+        "12 daqiqa",
+        "3 daqiqa",
+        "1,5 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Eng yuqori nuqta sin(πt/6) = 1 bo'lganda hosil bo'ladi. Bundan πt/6 = π/2, ya'ni t = 3 kelib chiqadi. To'liq aylanish 12 daqiqa, uning to'rtdan biri esa aynan 3 daqiqa. Javob: 3 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-charxpalak",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#bcd36b82"
+    },
+    {
+      "q": "Samarqandda bir kunlik havo harorati T(t) = 22 + 9sin(π(t − 8)/12) daraja bo'yicha o'zgaradi (t — soat). Harorat tebranishining amplitudasi nechaga teng?",
+      "v": [
+        "22°",
+        "31°",
+        "12°",
+        "9°"
+      ],
+      "t": 3,
+      "izoh": "Amplituda sinus oldidagi koeffitsientning moduliga teng. Bu yerda u 9 ga teng, ya'ni harorat o'rtacha 22 darajadan 9 gradusgacha chetlanadi. 31 — eng issiq paytdagi harorat, 12 esa davrga tegishli son. Javob: 9°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-harorat",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#761d6bff"
+    },
+    {
+      "q": "Buxoroda harorat T(t) = 18 − 7cos(πt/12) daraja formulasi bilan beriladi (t — soatlarda). Eng issiq paytdagi harorat necha darajaga teng?",
+      "v": [
+        "11°",
+        "25°",
+        "18°",
+        "7°"
+      ],
+      "t": 1,
+      "izoh": "Kosinus oldida minus turgani uchun maksimum cos(πt/12) = −1 bo'lganda hosil bo'ladi. U holda T = 18 − 7·(−1) = 18 + 7 = 25 daraja. Eng salqin payt esa 18 − 7 = 11 daraja. Javob: 25°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harorat",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#4bb7259c"
+    },
+    {
+      "q": "Bir shaharda o'rtacha oylik harorat T(n) = 14 + 16sin(π(n − 4)/6) daraja bilan beriladi (n — oy raqami). Harorat o'zgarishining davri nechaga teng?",
+      "v": [
+        "6 oy",
+        "24 oy",
+        "12 oy",
+        "16 oy"
+      ],
+      "t": 2,
+      "izoh": "Argument koeffitsienti k = π/6 ga teng, shuning uchun T = 2π : (π/6) = 12. Argument oylarda o'lchangani uchun davr 12 oy, ya'ni to'liq bir yil. Javob: 12 oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-harorat",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#31ad83f0"
+    },
+    {
+      "q": "Bir kunda harorat T(t) = 20 + 8sin(π(t − 8)/12) daraja qonuni bilan o'zgaradi (t — soat). Eng yuqori harorat kunning qaysi soatida kuzatiladi?",
+      "v": [
+        "Soat 14 da",
+        "Soat 8 da",
+        "Soat 12 da",
+        "Soat 20 da"
+      ],
+      "t": 0,
+      "izoh": "Maksimum sinus argumenti π/2 ga teng bo'lganda kuzatiladi: π(t − 8)/12 = π/2. Bundan t − 8 = 6, ya'ni t = 14 kelib chiqadi. Demak eng issiq payt kunduzi soat 14 da bo'ladi. Javob: soat 14 da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-harorat",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#f6076a5f"
+    },
+    {
+      "q": "Uy elektr tarmog'idagi kuchlanish U(t) = 311sin(100πt) volt formula bilan beriladi (t — sekund). Kuchlanish tebranishining amplitudasi nechaga teng?",
+      "v": [
+        "311 V",
+        "220 V",
+        "100 V",
+        "622 V"
+      ],
+      "t": 0,
+      "izoh": "Amplituda sinus oldidagi koeffitsientga teng, ya'ni 311 volt. 220 volt — bu tarmoqning ta'sirchan kuchlanishi, amplitudaning o'zi emas. 100 esa argument koeffitsientiga kiradi va davrni belgilaydi. Javob: 311 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-kuchlanish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#36f32496"
+    },
+    {
+      "q": "Uy tarmog'idagi kuchlanish U(t) = 220sin(100πt) volt qonun bilan o'zgaradi, bu yerda t sekundlarda o'lchanadi. Tebranish davri necha sekundga teng?",
+      "v": [
+        "0,01 s",
+        "50 s",
+        "0,02 s",
+        "0,2 s"
+      ],
+      "t": 2,
+      "izoh": "Davr T = 2π : k formula bilan topiladi, bu yerda k = 100π. Demak T = 2π : 100π = 1/50 = 0,02 sekund. Javob: 0,02 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-kuchlanish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#179ed89a"
+    },
+    {
+      "q": "Generator hosil qilgan tok I(t) = 5sin(120πt) amper bilan ifodalanadi (t — sekund). Bu tokning bir sekunddagi to'liq tebranishlar soni nechaga teng?",
+      "v": [
+        "120 Gs",
+        "60 Gs",
+        "50 Gs",
+        "30 Gs"
+      ],
+      "t": 1,
+      "izoh": "Avval davrni topamiz: T = 2π : 120π = 1/60 sekund. Chastota davrning teskarisiga teng, demak bir sekundda 60 ta to'liq tebranish bo'ladi. Javob: 60 Gs.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-kuchlanish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#9de92922"
+    },
+    {
+      "q": "Ikki generatorning kuchlanishlari U₁ = 180sin(100πt) va U₂ = 180sin(100πt + π/2) volt. Ular orasidagi vaqt bo'yicha siljish necha sekundga teng?",
+      "v": [
+        "0,02 s",
+        "0,01 s",
+        "0,5 s",
+        "0,005 s"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tebranishning burchak koeffitsienti bir xil: k = 100π. Fazalar farqi π/2 bo'lgani uchun vaqt bo'yicha siljish (π/2) : 100π = 1/200 = 0,005 sekundga teng. Javob: 0,005 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-kuchlanish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#6020089a"
+    },
+    {
+      "q": "Toshkentda kunduz uzunligi L(n) = 12 + 3,2sin(2πn/365) soat formula bilan beriladi (n — yil boshidan hisoblangan kun). Eng uzun kunduz necha soat davom etadi?",
+      "v": [
+        "12 soat",
+        "3,2 soat",
+        "15,2 soat",
+        "8,8 soat"
+      ],
+      "t": 2,
+      "izoh": "Kunduz eng uzun bo'lganda sin(2πn/365) = 1 bo'ladi. U holda L = 12 + 3,2·1 = 15,2 soat chiqadi. Eng qisqa kunduz esa 12 − 3,2 = 8,8 soatga teng. Javob: 15,2 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-kun-uzunligi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#92c1a3a6"
+    },
+    {
+      "q": "Bir shaharda kunduz uzunligi L(n) = 12 + 4sin(2πn/365) soat bilan ifodalanadi. Eng uzun va eng qisqa kunduz orasidagi farq qancha bo'ladi?",
+      "v": [
+        "8 soat",
+        "4 soat",
+        "16 soat",
+        "12 soat"
+      ],
+      "t": 0,
+      "izoh": "Eng uzun kunduz 12 + 4 = 16 soat, eng qisqasi esa 12 − 4 = 8 soatga teng. Ularning farqi 16 − 8 = 8 soat, ya'ni amplitudaning ikki barobari. Javob: 8 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-kun-uzunligi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#f09b8765"
+    },
+    {
+      "q": "Kunduz uzunligi L(n) = 12 + 2,5sin(2πn/365) soat funksiyasi bilan beriladi. Bu funksiyaning davri nechaga teng va u nimani anglatadi?",
+      "v": [
+        "182 kun, ya'ni yarim yil",
+        "30 kun, ya'ni bir oy",
+        "12 kun, ya'ni ikki hafta",
+        "365 kun, ya'ni bir yil"
+      ],
+      "t": 3,
+      "izoh": "Argument koeffitsienti k = 2π/365 ga teng. Davr T = 2π : (2π/365) = 365 kun. Bu tabiiy natija, chunki kunduz uzunligi har yili takrorlanadi. Javob: 365 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-kun-uzunligi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#dca4a7fc"
+    },
+    {
+      "q": "Kunduz uzunligi L(n) = 12 + 3sin(2π(n − 80)/365) soat. Kunduz aynan 12 soat bo'ladigan birinchi kun raqamini toping.",
+      "v": [
+        "12-kun",
+        "80-kun",
+        "173-kun",
+        "365-kun"
+      ],
+      "t": 1,
+      "izoh": "Kunduz 12 soat bo'lishi uchun sin(2π(n − 80)/365) = 0 bo'lishi kerak. Eng kichik mos yechim n − 80 = 0, ya'ni n = 80. Bu bahorgi tengkunlik kuniga to'g'ri keladi. Javob: 80-kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-kun-uzunligi",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#809bc4ee"
+    },
+    {
+      "q": "Prujinaga osilgan yuk x(t) = 6cos(4t) santimetr qonuni bilan tebranadi (t — sekund). Tebranish amplitudasi va davri mos ravishda qanday?",
+      "v": [
+        "6 sm va 4 s",
+        "6 sm va π/2 s",
+        "4 sm va π/2 s",
+        "6 sm va 2π s"
+      ],
+      "t": 1,
+      "izoh": "Amplituda kosinus oldidagi koeffitsientga teng: A = 6 sm. Davr esa T = 2π : 4 = π/2 sekund. Argumentdagi 4 ni to'g'ridan-to'g'ri davr deb olish xato. Javob: 6 sm va π/2 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-mayatnik-prujina",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#c55a0f92"
+    },
+    {
+      "q": "Mayatnikning og'ish burchagi α(t) = 15cos(2πt/3) daraja bilan beriladi (t — sekund). Mayatnik bir to'liq tebranishni necha sekundda bajaradi?",
+      "v": [
+        "2 s",
+        "6 s",
+        "15 s",
+        "3 s"
+      ],
+      "t": 3,
+      "izoh": "Argument koeffitsienti k = 2π/3, shuning uchun T = 2π : (2π/3) = 3 sekund. Bu yerda 15 — maksimal og'ish burchagi, davrga umuman aloqasi yo'q. Javob: 3 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-mayatnik-prujina",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#7ecb4aff"
+    },
+    {
+      "q": "Yuk x(t) = 10sin(πt/2) sm qonuni bo'yicha tebranadi. Yuk muvozanat holatidan birinchi marta 10 sm chetga chiqqan paytni toping.",
+      "v": [
+        "1 s",
+        "2 s",
+        "4 s",
+        "0,5 s"
+      ],
+      "t": 0,
+      "izoh": "Eng katta chetlanish sin(πt/2) = 1 bo'lganda yuz beradi. Bundan πt/2 = π/2, ya'ni t = 1 sekund. To'liq davr 4 sekund, uning choragi aynan 1 sekundga teng. Javob: 1 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-mayatnik-prujina",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#6f5965fe"
+    },
+    {
+      "q": "Mayatnikning davri 0,8 sekund, maksimal og'ishi 12 sm. Boshlang'ich paytda yuk muvozanat holatida bo'lsa, harakat qonuni qanday yoziladi?",
+      "v": [
+        "x = 12cos(2,5πt)",
+        "x = 0,8sin(12πt)",
+        "x = 12sin(2,5πt)",
+        "x = 12sin(0,8πt)"
+      ],
+      "t": 2,
+      "izoh": "Amplituda maksimal og'ishga teng: A = 12 sm. Argument koeffitsienti k = 2π : 0,8 = 2,5π. Boshlang'ich paytda yuk muvozanatda bo'lgani uchun sinus olinadi, kosinus emas. Javob: x = 12sin(2,5πt).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-mayatnik-prujina",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#73f5f3eb"
+    },
+    {
+      "q": "Nafas olishda o'pkadagi havo hajmi V(t) = 2,5 + 0,6sin(πt/2) litr bilan ifodalanadi (t — sekund). Bir nafas olib-chiqarish sikli necha sekund davom etadi?",
+      "v": [
+        "2 s",
+        "8 s",
+        "0,6 s",
+        "4 s"
+      ],
+      "t": 3,
+      "izoh": "Bir sikl davrga teng: T = 2π : (π/2) = 4 sekund. Bu yerda 0,6 — hajm tebranishining amplitudasi, 2,5 litr esa o'rtacha hajm. Javob: 4 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-nafas-yurak",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#c29f9ae8"
+    },
+    {
+      "q": "Yurak urishida qon bosimi P(t) = 100 + 20sin(8πt/3) birlikda o'zgaradi (t — sekund). Bosimning eng katta va eng kichik qiymatlari qanday bo'ladi?",
+      "v": [
+        "100 va 20",
+        "120 va 80",
+        "120 va 100",
+        "80 va 20"
+      ],
+      "t": 1,
+      "izoh": "O'rta chiziq 100 ga, amplituda esa 20 ga teng. Demak eng katta qiymat 100 + 20 = 120, eng kichigi 100 − 20 = 80 bo'ladi. Bu odatdagi qon bosimi ko'rsatkichlariga mos keladi. Javob: 120 va 80.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-nafas-yurak",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#589ebb2d"
+    },
+    {
+      "q": "Nafas olish hajmi V(t) = 3 + 0,8cos(πt/5) litr bilan beriladi (t — sekund). Havo hajmi birinchi marta eng kichik qiymatga necha sekunddan keyin tushadi?",
+      "v": [
+        "10 s",
+        "2,5 s",
+        "5 s",
+        "0,8 s"
+      ],
+      "t": 2,
+      "izoh": "Hajm eng kichik bo'lishi uchun cos(πt/5) = −1 bo'lishi kerak. Bundan πt/5 = π, ya'ni t = 5 sekund kelib chiqadi. To'liq sikl 10 sekund, uning yarmi esa 5 sekundga teng. Javob: 5 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-nafas-yurak",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#d148e764"
+    },
+    {
+      "q": "Yurak bir daqiqada 72 marta uradi. Bu tebranishni A·sin(kt) ko'rinishida yozganda k koeffitsienti nechaga teng bo'ladi (t — sekund)?",
+      "v": [
+        "2,4π",
+        "72π",
+        "1,2π",
+        "144π"
+      ],
+      "t": 0,
+      "izoh": "Bir daqiqada 72 ta urish bo'lsa, bir sekundda 72 : 60 = 1,2 ta urish bo'ladi, ya'ni chastota 1,2 ga teng. Argument koeffitsienti esa k = 2π·1,2 = 2,4π. 2π ga ko'paytirishni unutish tipik xato. Javob: 2,4π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-nafas-yurak",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#7bf25450"
+    },
+    {
+      "q": "Kamerton hosil qilgan tovush to'lqini y(t) = 0,004sin(880πt) metr bilan tasvirlanadi (t — sekund). Bu tovushning chastotasi necha gerts?",
+      "v": [
+        "440 Gs",
+        "880 Gs",
+        "220 Gs",
+        "1760 Gs"
+      ],
+      "t": 0,
+      "izoh": "Davr T = 2π : 880π = 1/440 sekundga teng. Chastota davrning teskarisi bo'lgani uchun 440 gerts chiqadi. Argumentdagi 880 ni to'g'ridan-to'g'ri chastota deb olish xato. Javob: 440 Gs.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-tovush-tebranish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#96c3c41c"
+    },
+    {
+      "q": "Velosiped g'ildiragidagi yorug'lik nuqtasining balandligi h(t) = 40 + 32sin(6πt) sm bilan beriladi (t — sekund). G'ildirak bir sekundda necha marta to'liq aylanadi?",
+      "v": [
+        "6 marta",
+        "12 marta",
+        "3 marta",
+        "1 marta"
+      ],
+      "t": 2,
+      "izoh": "Aylanish davri T = 2π : 6π = 1/3 sekund. Bir sekundda g'ildirak 1 : (1/3) = 3 marta to'liq aylanadi. Argumentdagi 6 ni to'g'ridan-to'g'ri aylanishlar soni deb olish xato. Javob: 3 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-tovush-tebranish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#bcc18d08"
+    },
+    {
+      "q": "Musiqa asbobi torining tebranishi y(t) = 0,5sin(600πt) sm bilan beriladi. Chastotani ikki barobar oshirish uchun formulada nima o'zgartiriladi?",
+      "v": [
+        "0,5 ni 1 ga almashtiriladi",
+        "600π ni 1200π ga almashtiriladi",
+        "600π ni 300π ga almashtiriladi",
+        "0,5 ni 0,25 ga almashtiriladi"
+      ],
+      "t": 1,
+      "izoh": "Chastota argument koeffitsientiga to'g'ri proporsional, chunki f = k : 2π. Uni ikki barobar oshirish uchun k ni ikkilantirish kerak, ya'ni 600π o'rniga 1200π yoziladi. Amplituda 0,5 esa tovush balandligiga emas, kuchiga ta'sir qiladi. Javob: 1200π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-tovush-tebranish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#4605e250"
+    },
+    {
+      "q": "Sanoat mashinasining pistoni x(t) = 15sin(20πt) sm qonuni bilan harakatlanadi (t — sekund). Piston bir daqiqada necha marta to'liq sikl bajaradi?",
+      "v": [
+        "10 marta",
+        "1200 marta",
+        "20 marta",
+        "600 marta"
+      ],
+      "t": 3,
+      "izoh": "Bir sekunddagi sikllar soni f = 20π : 2π = 10 ta. Bir daqiqada 60 sekund bor, demak 10·60 = 600 ta sikl bajariladi. Faqat 10 deb javob berish daqiqaga o'tkazishni unutish xatosidir. Javob: 600 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-tovush-tebranish",
+      "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari#a5b2176a"
+    }
+  ]
+}

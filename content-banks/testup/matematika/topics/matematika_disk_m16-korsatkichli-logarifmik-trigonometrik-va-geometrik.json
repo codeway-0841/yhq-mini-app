@@ -1,0 +1,1609 @@
+{
+  "nom": "Ko'rsatkichli, logarifmik, trigonometrik va geometrik modellashtirish",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Toshkentdagi bir startapning ro'yxatdan o'tgan foydalanuvchilari soni har oyda 25% ga ortib bormoqda, hozir esa 8000 ta foydalanuvchi bor. t oydan keyingi foydalanuvchilar sonini to'g'ri ifodalovchi modelni tanlang.",
+      "v": [
+        "N(t) = 8000 · 1,25^t",
+        "N(t) = 8000 · 0,25^t",
+        "N(t) = 8000 + 2000t",
+        "N(t) = 8000 · 25^t"
+      ],
+      "t": 0,
+      "izoh": "Har oyda 25% ga ortish har oyda 1,25 koeffitsientiga ko'paytirish demakdir. Bir oydan keyin 8000 · 1,25, ikki oydan keyin 8000 · 1,25 · 1,25 bo'ladi. Demak t oydan keyin N(t) = 8000 · 1,25^t. 8000 + 2000t chiziqli model bo'lib, har oyda bir xil son qo'shadi va ko'rsatkichli o'sishni ifodalamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-model-qurish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#ece4b711"
+    },
+    {
+      "q": "Shifokor bergan dorining qondagi miqdori har 6 soatda yarmiga kamayadi, boshlang'ich doza esa 120 mg. Bemor dori ichgandan t soat o'tgach qondagi miqdorni ifodalovchi modelni ko'rsating.",
+      "v": [
+        "M(t) = 120 · (1/2)^(6t)",
+        "M(t) = 120 · (1/2)^(t/6)",
+        "M(t) = 120 · (1/2)^t",
+        "M(t) = 120 − 20t"
+      ],
+      "t": 1,
+      "izoh": "Har 6 soatda miqdor 1/2 ga ko'paytiriladi, ya'ni t soat ichidagi yarimlanishlar soni t/6 ga teng. Shuning uchun M(t) = 120 · (1/2)^(t/6). Agar ko'rsatkich 6t bo'lganda, 6 soatda miqdor 2⁻³⁶ marta kamayib ketardi va bu shartga zid. Chiziqli 120 − 20t esa 6 soatdan keyin 0 beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-model-qurish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#4c25abe8"
+    },
+    {
+      "q": "Yangi avtomobil bozor narxi har yili 12% ga arzonlashadi, hozirgi narxi esa 240 mln so'm. Sotib olingandan t yil o'tgach narxni ifodalovchi ko'rsatkichli modelni tanlang.",
+      "v": [
+        "P(t) = 240 · 1,12^t",
+        "P(t) = 240 · 0,12^t",
+        "P(t) = 240 · 0,88^t",
+        "P(t) = 240 − 12t"
+      ],
+      "t": 2,
+      "izoh": "Har yili 12% ga arzonlashganda narxning qolgan qismi 100% − 12% = 88%, ya'ni koeffitsient 0,88 bo'ladi. Demak P(t) = 240 · 0,88^t mln so'm. 1,12 koeffitsienti qimmatlashishni bildiradi, 0,12 esa narxning atigi 12 foizi qolishini anglatadi. 240 − 12t esa har yili 12 mln so'm kamayishini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-model-qurish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#43f757d7"
+    },
+    {
+      "q": "Laboratoriya sharoitida bakteriyalar soni har 40 daqiqada 3 baravar ortadi va tajriba boshida 500 ta bakteriya bo'lgan. Tajriba boshlangandan t daqiqa keyingi bakteriyalar sonining modelini toping.",
+      "v": [
+        "N(t) = 500 · 3^(40t)",
+        "N(t) = 500 · 40^(t/3)",
+        "N(t) = 500 · 3^t",
+        "N(t) = 500 · 3^(t/40)"
+      ],
+      "t": 3,
+      "izoh": "Har 40 daqiqada uch baravarlanish bo'lsa, t daqiqadagi uch baravarlanishlar soni t/40 ga teng. Demak N(t) = 500 · 3^(t/40). Tekshiramiz: t = 40 da N = 500 · 3¹ = 1500, ya'ni haqiqatan uch baravar. 3^(40t) yozilsa atigi bir daqiqada son 3⁴⁰ marta ortib ketardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-model-qurish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#ae9d8e5d"
+    },
+    {
+      "q": "Nilufar bankka 5 000 000 so'm depozit qo'ydi, bank esa yiliga 20% murakkab foiz to'laydi. Uch yildan keyin hisobdagi summa qancha bo'ladi?",
+      "v": [
+        "8 640 000 so'm",
+        "6 000 000 so'm",
+        "7 200 000 so'm",
+        "8 000 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Murakkab foizda har yili summa 1,2 koeffitsientiga ko'paytiriladi, ya'ni S = 5 000 000 · 1,2³. Bu yerda 1,2³ = 1,728, demak S = 5 000 000 · 1,728 = 8 640 000 so'm. 8 000 000 javobi oddiy foizga (har yili 1 000 000 so'm) mos, 7 200 000 esa atigi ikki yilga tegishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-qiymat-hisoblash",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#36d95dec"
+    },
+    {
+      "q": "Kolbadagi bakteriyalar soni N(t) = 800 · 2^(t/3) modeli bilan o'sadi, bu yerda t soatlarda o'lchanadi. Tajriba boshlangandan 12 soat keyin kolbada nechta bakteriya bo'ladi?",
+      "v": [
+        "6400 ta",
+        "12 800 ta",
+        "9600 ta",
+        "25 600 ta"
+      ],
+      "t": 1,
+      "izoh": "Modelga t = 12 ni qo'yamiz, darajaning ko'rsatkichi 12/3 = 4 bo'ladi. Demak N = 800 · 2⁴ = 800 · 16 = 12 800 ta bakteriya. 6400 javobi ko'rsatkichni 3 deb olishdan, 9600 esa 800 ni 12 ga ko'paytirgan chiziqli xatodan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-qiymat-hisoblash",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#078291aa"
+    },
+    {
+      "q": "Bir tog' qishlog'ida aholi soni har yili 4% ga kamaymoqda, hozir u yerda 12 500 kishi yashaydi. Ikki yildan keyin qishloqda taxminan necha kishi qoladi?",
+      "v": [
+        "11 500 kishi",
+        "12 000 kishi",
+        "11 520 kishi",
+        "13 520 kishi"
+      ],
+      "t": 2,
+      "izoh": "Har yili aholi soni 0,96 koeffitsientiga ko'paytiriladi, chunki 100% − 4% = 96%. Ikki yildan keyin 12 500 · 0,96² = 12 500 · 0,9216 = 11 520 kishi qoladi. 12 000 faqat bir yilga mos, 11 500 esa har yili 500 kishi kamayadi degan chiziqli mulohazadan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-qiymat-hisoblash",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#31d7d103"
+    },
+    {
+      "q": "Radioaktiv preparatning massasi M(t) = 64 · (1/2)^(t/5) formulasi bo'yicha kamayadi, bu yerda t kunlarda, M esa milligrammda o'lchanadi. Preparat tayyorlangandan 15 kun keyin uning massasi qanday bo'ladi?",
+      "v": [
+        "4 mg",
+        "16 mg",
+        "32 mg",
+        "8 mg"
+      ],
+      "t": 3,
+      "izoh": "15 kun ichidagi yarimlanishlar soni 15/5 = 3 ga teng. Demak M = 64 · (1/2)³ = 64 : 8 = 8 mg qoladi. 16 mg javobi ikki marta, 4 mg esa to'rt marta yarimlanishga to'g'ri keladi, 32 mg esa bitta yarimlanishning natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-qiymat-hisoblash",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#afd87342"
+    },
+    {
+      "q": "Suv omborida yosun massasi N(t) = 300 · 2^(t/8) modeli bo'yicha o'sadi, t soatlarda beriladi. Yosun massasi 1200 birlikka yetishi uchun necha soat kerak bo'ladi?",
+      "v": [
+        "16 soat",
+        "8 soat",
+        "24 soat",
+        "32 soat"
+      ],
+      "t": 0,
+      "izoh": "Avval nisbatni topamiz: 1200 : 300 = 4, ya'ni massa to'rt marta ortishi kerak. 4 = 2², shuning uchun t/8 = 2 va bundan t = 16 soat. 32 soat javobi nisbatni davrga ko'paytirishdan, 8 soat esa faqat bitta ikkilanishni hisobga olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilanish-vaqti",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#696d5594"
+    },
+    {
+      "q": "Shahar aholisi N(t) = 250 000 · 1,04^t modeli bo'yicha o'smoqda. lg2 ≈ 0,3010 va lg1,04 ≈ 0,0170 deb olib, aholi taxminan necha yildan keyin ikki barobar bo'lishini aniqlang.",
+      "v": [
+        "25 yil",
+        "18 yil",
+        "35 yil",
+        "50 yil"
+      ],
+      "t": 1,
+      "izoh": "Ikki barobar bo'lish sharti 1,04^t = 2 tenglamasini beradi. Ikkala tomondan o'nli logarifm olamiz: t · lg1,04 = lg2, demak t = 0,3010 : 0,0170 ≈ 17,7. Bu taxminan 18 yil. 25 yil javobi 100 : 4 chiziqli mulohazadan, 35 yil esa to'rt barobarga oshish vaqtidan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkilanish-vaqti",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#f6ba106a"
+    },
+    {
+      "q": "Hovuz yuzasidagi suv o'ti qoplagan maydon har 6 kunda ikki barobar ortadi, hozir u 12 m² ni tashkil qiladi. Hovuzning butun yuzasi 384 m² bo'lsa, suv o'ti uni necha kunda to'liq qoplaydi?",
+      "v": [
+        "24 kun",
+        "32 kun",
+        "30 kun",
+        "36 kun"
+      ],
+      "t": 2,
+      "izoh": "Maydon 384 : 12 = 32 marta ortishi kerak. 32 = 2⁵, ya'ni beshta ikkilanish zarur bo'ladi. Har bir ikkilanish 6 kun davom etgani uchun jami 5 · 6 = 30 kun kerak. 32 kun javobi nisbatni to'g'ridan-to'g'ri kun deb olishdan, 24 kun esa to'rtta ikkilanishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilanish-vaqti",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#e6bf08c5"
+    },
+    {
+      "q": "Kichik korxonaning yillik daromadi har yili 1,3 barobarga ortmoqda. Daromad birinchi marta boshlang'ich qiymatidan uch barobardan ko'p bo'ladigan yilni aniqlang.",
+      "v": [
+        "3 yil",
+        "4 yil",
+        "6 yil",
+        "5 yil"
+      ],
+      "t": 3,
+      "izoh": "Har yili koeffitsient 1,3 ga ko'payadi: 1,3² = 1,69, 1,3³ = 2,197, 1,3⁴ = 2,8561, 1,3⁵ = 3,713. To'rtinchi yilda daromad hali uch barobarga yetmaydi, beshinchi yilda esa undan oshib ketadi. Demak javob 5 yil. 4 yil javobi 2,8561 ni uchga yaxlitlash xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkilanish-vaqti",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#5adac370"
+    },
+    {
+      "q": "Tibbiy tekshiruvda ishlatiladigan yod-131 izotopining yarim yemirilish davri 8 kun. Boshida 40 g izotop bo'lgan bo'lsa, 24 kundan keyin undan necha gramm qoladi?",
+      "v": [
+        "5 g",
+        "2,5 g",
+        "10 g",
+        "13,3 g"
+      ],
+      "t": 0,
+      "izoh": "24 kun ichida 24 : 8 = 3 marta yarimlanish sodir bo'ladi. Har yarimlanishda massa ikkiga bo'linadi: 40 → 20 → 10 → 5. Demak 5 g qoladi. 10 g javobi ikkita, 2,5 g esa to'rtta yarimlanishga mos, 13,3 g esa 40 ni 3 ga bo'lish xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-yemirilish-davri",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#819221a8"
+    },
+    {
+      "q": "Laboratoriyada modda massasi 6 soat ichida 200 g dan 25 g gacha kamaydi. Bu moddaning yarim yemirilish davri qanchaga teng?",
+      "v": [
+        "1,5 soat",
+        "2 soat",
+        "3 soat",
+        "6 soat"
+      ],
+      "t": 1,
+      "izoh": "Massa 200 : 25 = 8 marta kamaygan, 8 = 2³ bo'lgani uchun uchta yarimlanish yuz bergan. Uchta yarimlanish 6 soat davom etgani uchun bitta davr 6 : 3 = 2 soat. 3 soat javobi 6 ni 2 ga bo'lishdan, 6 soat esa butun kuzatuv vaqtini davr deb olishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yarim-yemirilish-davri",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#0a3de15b"
+    },
+    {
+      "q": "Qadimiy yog'och namunasida uglerod izotopining boshlang'ich miqdorining atigi 1/8 qismi saqlanib qolgan. Bu izotopning yarim yemirilish davri 5730 yil bo'lsa, namunaning yoshi qancha?",
+      "v": [
+        "11 460 yil",
+        "22 920 yil",
+        "17 190 yil",
+        "45 840 yil"
+      ],
+      "t": 2,
+      "izoh": "1/8 kasrini daraja ko'rinishida yozamiz: 1/8 = (1/2)³. Demak uchta yarim yemirilish davri o'tgan, har biri 5730 yil. Namuna yoshi 3 · 5730 = 17 190 yil. 11 460 yil ikkita davrga, ya'ni 1/4 qolishiga, 22 920 yil esa to'rtta davrga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yarim-yemirilish-davri",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#74dec76c"
+    },
+    {
+      "q": "Bemorga yuborilgan preparatning yarim yemirilish davri 3 soat, boshlang'ich miqdori esa 640 mg. Preparat miqdori 40 mg gacha tushishi uchun kamida qancha vaqt o'tishi kerak?",
+      "v": [
+        "6 soat",
+        "9 soat",
+        "18 soat",
+        "12 soat"
+      ],
+      "t": 3,
+      "izoh": "Miqdor 640 : 40 = 16 marta kamayishi kerak, 16 = 2⁴ bo'lgani uchun to'rtta yarimlanish zarur. To'rt davr 4 · 3 = 12 soatni tashkil qiladi. 9 soat uchta davrga mos bo'lib, unda 80 mg qoladi, 18 soat esa oltita davrni beradi va miqdor 10 mg gacha tushib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yarim-yemirilish-davri",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#212f1423"
+    },
+    {
+      "q": "Anvar bankka 4 000 000 so'm qo'ydi, bank yiliga 15% murakkab foiz hisoblaydi va foiz har yil oxirida asosiy summaga qo'shiladi. Ikki yildan keyin hisobda qancha pul bo'ladi?",
+      "v": [
+        "5 290 000 so'm",
+        "4 600 000 so'm",
+        "5 200 000 so'm",
+        "6 084 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Murakkab foizda summa har yili 1,15 koeffitsientiga ko'paytiriladi. Ikki yildan keyin 4 000 000 · 1,15² = 4 000 000 · 1,3225 = 5 290 000 so'm. 5 200 000 javobi oddiy foizga, 4 600 000 esa faqat bir yilga tegishli, 6 084 000 esa uch yilning natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "murakkab-foiz-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#63d15c19"
+    },
+    {
+      "q": "Do'kondagi mahsulot narxi avval 10% ga, oradan bir oy o'tib yana 20% ga qimmatlashdi. Ikki qimmatlashish natijasida narx boshlang'ich qiymatiga nisbatan necha foizga oshgan?",
+      "v": [
+        "20%",
+        "30%",
+        "32%",
+        "132%"
+      ],
+      "t": 2,
+      "izoh": "Ketma-ket o'sishlarda koeffitsientlar ko'paytiriladi: 1,1 · 1,2 = 1,32. Bu boshlang'ich narxning 132% i, demak o'sish 132% − 100% = 32% ni tashkil qiladi. 30% javobi foizlarni to'g'ridan-to'g'ri qo'shishdan, 132% esa umumiy koeffitsientni o'sish foizi deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-foiz-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#130eed01"
+    },
+    {
+      "q": "Kitob narxi avval 25% ga arzonlashtirildi, keyin esa yangi narxdan 25% ga qimmatlashtirildi. Boshlang'ich narx 48 000 so'm bo'lgan bo'lsa, oxirgi narx qancha bo'ldi?",
+      "v": [
+        "36 000 so'm",
+        "48 000 so'm",
+        "60 000 so'm",
+        "45 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Avval narx 0,75 koeffitsientiga, so'ng 1,25 koeffitsientiga ko'paytiriladi: 0,75 · 1,25 = 0,9375. Demak oxirgi narx 48 000 · 0,9375 = 45 000 so'm, ya'ni boshlang'ichdan past. 48 000 javobi teng foizlar bir-birini yo'qotadi degan noto'g'ri fikrdan, 36 000 esa faqat arzonlashishni hisoblashdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-foiz-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#47206e30"
+    },
+    {
+      "q": "Bankdagi omonatga yiliga 20% foiz hisoblanadi, ammo foiz har yarim yilda bir marta kapitallashtiriladi. Boshlang'ich summa 3 000 000 so'm bo'lsa, bir yildan keyin hisobda qancha pul to'planadi?",
+      "v": [
+        "3 300 000 so'm",
+        "3 630 000 so'm",
+        "3 600 000 so'm",
+        "3 993 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Yarim yillik davrga 20% : 2 = 10% foiz to'g'ri keladi, bir yilda esa shunday ikkita davr bor. Demak S = 3 000 000 · 1,1² = 3 000 000 · 1,21 = 3 630 000 so'm. 3 600 000 javobi kapitallashuvsiz oddiy 20% dan, 3 300 000 esa atigi bitta yarim yildan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-foiz-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#3b410fd5"
+    },
+    {
+      "q": "Do'konning oylik savdosi ko'rsatkichli model bo'yicha o'smoqda: yanvarda 20 mln so'm, aprelda esa 67,5 mln so'm bo'lgan. Savdo har oyda necha foizga o'sgan?",
+      "v": [
+        "79%",
+        "112,5%",
+        "50%",
+        "237,5%"
+      ],
+      "t": 2,
+      "izoh": "Yanvardan aprelgacha 3 oy o'tgan, demak q³ = 67,5 : 20 = 3,375. 3,375 = 1,5³ bo'lgani uchun q = 1,5, ya'ni oylik o'sish 50%. 237,5% javobi butun uch oydagi umumiy o'sish, 79% esa shu umumiy o'sishni 3 ga bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "osish-koeffitsientini-topish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#aa233552"
+    },
+    {
+      "q": "Aholi soni N(t) = N₀ · q^t modeli bilan o'sadi va ikki yil ichida 5000 kishidan 7200 kishiga yetgan. Modeldagi yillik o'sish koeffitsienti q ning qiymatini toping.",
+      "v": [
+        "1,2",
+        "1,22",
+        "1,44",
+        "0,72"
+      ],
+      "t": 0,
+      "izoh": "Shartga ko'ra q² = 7200 : 5000 = 1,44. Bundan q = √1,44 = 1,2, ya'ni aholi har yili 20% ga ortadi. 1,44 javobi ikki yillik koeffitsientni yillik deb olishdan, 0,72 esa uni ikkiga bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "osish-koeffitsientini-topish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#b3819e1e"
+    },
+    {
+      "q": "Onlayn kursga yozilgan tinglovchilar soni N(t) = 1500 · a^t modeli bilan ortadi va 4 oydan keyin ularning soni 24 000 taga yetdi. Modeldagi a asosining qiymati qanday?",
+      "v": [
+        "4",
+        "8",
+        "16",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Shartdan 1500 · a⁴ = 24 000, demak a⁴ = 16. 16 = 2⁴ bo'lgani uchun a = 2, ya'ni tinglovchilar soni har oyda ikki barobar ortadi. 16 javobi nisbatning o'zini asos deb olishdan, 4 esa 16 dan bir marta kvadrat ildiz chiqarishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "osish-koeffitsientini-topish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#24da1ae3"
+    },
+    {
+      "q": "Yuk mashinasining bozor qiymati uch yil ichida 200 mln so'mdan 102,4 mln so'mgacha tushdi va arzonlashish ko'rsatkichli model bilan boradi. Mashina har yili necha foizga arzonlashgan?",
+      "v": [
+        "16,3%",
+        "20%",
+        "48,8%",
+        "51,2%"
+      ],
+      "t": 1,
+      "izoh": "Uch yillik koeffitsient 102,4 : 200 = 0,512 ga teng, 0,512 = 0,8³ bo'lgani uchun yillik koeffitsient 0,8. Demak har yili narx 100% − 80% = 20% ga arzonlaydi. 48,8% javobi uch yildagi umumiy pasayish, 16,3% esa shu pasayishni 3 ga bo'lish, 51,2% esa qolgan ulush.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "osish-koeffitsientini-topish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#20f18d3b"
+    },
+    {
+      "q": "Stol ustida qoldirilgan choy harorati T(t) = 20 + 60 · (1/2)^(t/10) modeli bilan pasayadi, bu yerda t daqiqada beriladi. Choy quyilgandan 20 daqiqa o'tgach uning harorati qanday bo'ladi?",
+      "v": [
+        "35°C",
+        "15°C",
+        "50°C",
+        "80°C"
+      ],
+      "t": 0,
+      "izoh": "20 daqiqada ko'rsatkich 20/10 = 2 bo'ladi, demak T = 20 + 60 · (1/2)² = 20 + 15 = 35°C. 15°C javobi xona haroratini qo'shishni unutgan o'quvchida chiqadi, 50°C atigi bitta yarimlanishga, 80°C esa boshlang'ich haroratga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nyuton-sovish-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#cca716ad"
+    },
+    {
+      "q": "Xona harorati 22°C, unga qo'yilgan choyning harorati esa 92°C. Kuzatuvga ko'ra choy bilan xona harorati orasidagi farq har 5 daqiqada ikki marta kamayadi. Choy haroratining to'g'ri modelini tanlang.",
+      "v": [
+        "T(t) = 92 · (1/2)^(t/5)",
+        "T(t) = 70 + 22 · (1/2)^(t/5)",
+        "T(t) = 22 + 70 · (1/2)^(t/5)",
+        "T(t) = 22 + 70 · (1/2)^(5t)"
+      ],
+      "t": 2,
+      "izoh": "Kamayadigan kattalik haroratning o'zi emas, balki farq: 92 − 22 = 70 gradus. Shu farq (1/2)^(t/5) koeffitsientiga ko'payadi, ustiga xona harorati qo'shiladi: T(t) = 22 + 70 · (1/2)^(t/5). Tekshiruv: t = 0 da T = 92, t = 5 da T = 57. 92 · (1/2)^(t/5) da xona harorati umuman hisobga olinmagan va harorat nolgacha tushib ketadi. 70 + 22 · (1/2)^(t/5) da 70 bilan 22 o'rin almashgan, shuning uchun harorat 70 gradusdan pastga tushmaydi. 22 + 70 · (1/2)^(5t) da esa ko'rsatkich teskari olingan: farq har 5 daqiqada emas, har 0,2 daqiqada yarimlanib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nyuton-sovish-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#b7c3ec02"
+    },
+    {
+      "q": "Sovutgichdan chiqarilgan ichimlik harorati T(t) = 24 − 18 · 0,85^t modeli bilan o'zgaradi, t soatlarda o'lchanadi. Juda uzoq vaqt o'tgach ichimlik harorati qanday qiymatga intiladi?",
+      "v": [
+        "6°C",
+        "24°C",
+        "18°C",
+        "42°C"
+      ],
+      "t": 1,
+      "izoh": "t cheksiz ortganda 0,85^t nolga intiladi, chunki asos birdan kichik. Shunda 18 · 0,85^t hadi yo'qoladi va T qiymati 24°C ga yaqinlashadi, bu xona harorati. 6°C javobi boshlang'ich harorat, 42°C esa ikkala sonni qo'shish xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nyuton-sovish-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#5b9fdcf3"
+    },
+    {
+      "q": "Xonada harorat 20°C, qaynagan suvning harorati 100°C edi va 10 daqiqadan keyin suv 60°C gacha soviydi. Nyuton qonuniga ko'ra yana 10 daqiqadan keyin suvning harorati qanday bo'ladi?",
+      "v": [
+        "20°C",
+        "30°C",
+        "80°C",
+        "40°C"
+      ],
+      "t": 3,
+      "izoh": "Nyuton modelida xona bilan haroratlar farqi teng vaqtlarda bir xil koeffitsientga ko'payadi. Dastlabki farq 100 − 20 = 80, o'n daqiqadan keyin 60 − 20 = 40, ya'ni farq ikki marta kamaygan. Keyingi o'n daqiqada farq 40 : 2 = 20 bo'ladi, demak T = 20 + 20 = 40°C. 30°C javobi haroratning o'zini yarimlashdan, 80°C esa boshlang'ich farqni javob deb yozishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nyuton-sovish-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#dd477998"
+    },
+    {
+      "q": "Fermer xo'jaligidagi tovuqlar soni har yili 20% ga ortadi va hozir u yerda 5000 ta tovuq bor. Tovuqlar soni 10 368 taga yetishi uchun necha yil kerak bo'ladi?",
+      "v": [
+        "2 yil",
+        "3 yil",
+        "4 yil",
+        "5 yil"
+      ],
+      "t": 2,
+      "izoh": "Model N(t) = 5000 · 1,2^t ko'rinishida, demak 1,2^t = 10 368 : 5000 = 2,0736. Darajalarni ketma-ket hisoblaymiz: 1,2² = 1,44, 1,2³ = 1,728, 1,2⁴ = 2,0736. Demak t = 4 yil. 3 yilda son atigi 8640 taga, 5 yilda esa 12 441 taga yetadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifm-bilan-vaqt-topish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#da437e33"
+    },
+    {
+      "q": "Kompaniya aktivlari A(t) = 12 · 1,15^t mlrd so'm modeli bilan o'smoqda. lg4 ≈ 0,6021 va lg1,15 ≈ 0,0607 deb olib, aktivlar 48 mlrd so'mga yetadigan vaqtni taxminan aniqlang.",
+      "v": [
+        "5 yil",
+        "10 yil",
+        "20 yil",
+        "26,7 yil"
+      ],
+      "t": 1,
+      "izoh": "Shartdan 1,15^t = 48 : 12 = 4 kelib chiqadi. Ikkala tomondan o'nli logarifm olamiz: t · lg1,15 = lg4, demak t = 0,6021 : 0,0607 ≈ 9,9 yil, ya'ni taxminan 10 yil. 5 yil javobi ikki barobarga oshish vaqti, 20 yil esa shu vaqtni to'rtga ko'paytirish, 26,7 yil esa 400 : 15 chiziqli mulohaza natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifm-bilan-vaqt-topish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#2c0c3265"
+    },
+    {
+      "q": "Suv havzasidagi ifloslanish darajasi har kuni 15% ga kamayadi, boshlang'ich daraja esa 400 birlik. lg0,5 ≈ −0,3010 va lg0,85 ≈ −0,0706 deb olib, daraja qaysi kuni birinchi marta 200 birlikdan pastga tushishini aniqlang.",
+      "v": [
+        "5-kun",
+        "3-kun",
+        "4-kun",
+        "7-kun"
+      ],
+      "t": 0,
+      "izoh": "Shart 400 · 0,85^t < 200, ya'ni 0,85^t < 0,5 ko'rinishiga keladi. Logarifm olamiz: t · lg0,85 < lg0,5, ikkala son manfiy bo'lgani uchun t > 0,3010 : 0,0706 ≈ 4,26. Butun kunlar ichida bu shart birinchi marta 5-kuni bajariladi. 4-kun javobi 4,26 ni pastga yaxlitlashdan, 7-kun esa 100 : 15 chiziqli baholashdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifm-bilan-vaqt-topish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#82419df7"
+    },
+    {
+      "q": "Daryo suvidagi zararli modda konsentratsiyasi C(t) = 810 · (1/3)^(t/3) mg/l modeli bilan kamayadi, t soatlarda beriladi. Konsentratsiya 30 mg/l gacha tushishi uchun necha soat kerak?",
+      "v": [
+        "3 soat",
+        "6 soat",
+        "27 soat",
+        "9 soat"
+      ],
+      "t": 3,
+      "izoh": "Tenglama 810 · (1/3)^(t/3) = 30 ko'rinishida, bundan (1/3)^(t/3) = 30 : 810 = 1/27. 1/27 = (1/3)³ bo'lgani uchun t/3 = 3 va t = 9 soat. 27 soat javobi nisbatning o'zini vaqt deb olishdan, 6 soat esa atigi ikkita bosqichni hisoblashdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifm-bilan-vaqt-topish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#06e99f38"
+    },
+    {
+      "q": "Kimyo laboratoriyasida eritmaning kislotalilik ko'rsatkichi pH = −lg C formulasi bilan topiladi, bu yerda C — vodorod ionlari konsentratsiyasi. Eritmada C = 10⁻⁵ mol/l bo'lsa, pH nechaga teng?",
+      "v": [
+        "−5",
+        "5",
+        "9",
+        "10"
+      ],
+      "t": 1,
+      "izoh": "Formulaga qo'yamiz: pH = −lg(10⁻⁵). lg(10⁻⁵) = −5 bo'lgani uchun pH = −(−5) = 5. Demak eritma kuchsiz kislotali. −5 javobi formuladagi minus ishorasini qo'llashni unutgan o'quvchida chiqadi, 10 esa logarifm asosini javob deb olishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-shkala",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#4b786eb7"
+    },
+    {
+      "q": "Ikki zilzila qayd etildi: birinchisining Rixter shkalasidagi magnitudasi 7, ikkinchisiniki esa 5. Rixter shkalasi o'nli logarifmga asoslangan bo'lsa, birinchi zilzila tebranishlari amplitudasi ikkinchisinikidan necha marta katta?",
+      "v": [
+        "2 marta",
+        "10 marta",
+        "1000 marta",
+        "100 marta"
+      ],
+      "t": 3,
+      "izoh": "Magnitudalar farqi 7 − 5 = 2 birlik. Rixter shkalasida magnituda amplitudaning o'nli logarifmiga proporsional, demak amplitudalar nisbati 10² = 100 marta. 2 marta javobi magnitudalar ayirmasini nisbat deb olishdan, 10 marta bir birlik farqqa, 1000 marta esa uch birlik farqqa to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-shkala",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#be488097"
+    },
+    {
+      "q": "Ovoz balandligi L = 10 · lg(I/I₀) dB formulasi bilan o'lchanadi, bu yerda I₀ = 10⁻¹² W/m². Zavod sexidagi ovoz intensivligi I = 10⁻⁴ W/m² bo'lsa, ovoz balandligi necha detsibel?",
+      "v": [
+        "−80 dB",
+        "8 dB",
+        "80 dB",
+        "120 dB"
+      ],
+      "t": 2,
+      "izoh": "Avval nisbatni topamiz: I/I₀ = 10⁻⁴ : 10⁻¹² = 10⁸. Endi L = 10 · lg(10⁸) = 10 · 8 = 80 dB. 8 dB javobi 10 ga ko'paytirishni unutishdan, 120 dB esa I₀ ning darajasini javob deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-shkala",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#62f36645"
+    },
+    {
+      "q": "Kontsert maydonchasida ovoz intensivligi ikki barobar oshirildi. lg2 ≈ 0,3010 va L = 10 · lg(I/I₀) formulasidan foydalanib, ovoz balandligi necha detsibelga ortishini aniqlang.",
+      "v": [
+        "3 dB",
+        "0,3 dB",
+        "2 dB",
+        "20 dB"
+      ],
+      "t": 0,
+      "izoh": "Yangi balandlik L₂ = 10 · lg(2I/I₀) = 10 · lg2 + 10 · lg(I/I₀). Demak orttirma L₂ − L₁ = 10 · lg2 = 10 · 0,3010 ≈ 3 dB. 0,3 dB javobi 10 ga ko'paytirishni tashlab ketishdan, 2 dB esa intensivlik nisbatini javob deb yozishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-shkala",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#666c351a"
+    },
+    {
+      "q": "Yangi mobil ilovaning kunlik o'rnatilishlari soni N(t) = 40 + 25 · lg(t + 1) modeli bilan tavsiflanadi, bu yerda t — ilova chiqqandan keyingi kunlar soni. To'qqizinchi kuni nechta o'rnatilish kutiladi?",
+      "v": [
+        "40 ta",
+        "90 ta",
+        "250 ta",
+        "65 ta"
+      ],
+      "t": 3,
+      "izoh": "t = 9 ni qo'yamiz: lg(9 + 1) = lg10 = 1. Demak N = 40 + 25 · 1 = 65 ta o'rnatilish. 40 ta javobi logarifm hadini nolga teng deb olishdan, 90 ta lg10 ni 2 deb hisoblashdan, 250 ta esa 25 ni 10 ga ko'paytirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-model-talqin",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#908c6fee"
+    },
+    {
+      "q": "Psixologik tajribada talabaning eslab qolgan so'zlari soni S(t) = 90 − 18 · lg(t + 1) modeli bo'yicha kamayadi, t kunlarda o'lchanadi. To'qqiz kundan keyin talaba nechta so'zni eslab qoladi?",
+      "v": [
+        "54 so'z",
+        "72 so'z",
+        "81 so'z",
+        "90 so'z"
+      ],
+      "t": 1,
+      "izoh": "t = 9 bo'lganda lg(9 + 1) = 1, demak S = 90 − 18 · 1 = 72 so'z. 90 so'z javobi kamayishni umuman hisobga olmaslikdan, 54 so'z logarifmni 2 deb olishdan, 81 so'z esa 18 ni ikkiga bo'lib ayirishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-model-talqin",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#7118b1ce"
+    },
+    {
+      "q": "Yangi mahsulotning kunlik sotuvi S(t) = 100 + 60 · lg t mln so'm modeli bilan o'sadi, bu yerda t ≥ 1 kun. Kunlik sotuv 220 mln so'mga yetishi uchun necha kun kerak bo'ladi?",
+      "v": [
+        "100 kun",
+        "2 kun",
+        "20 kun",
+        "120 kun"
+      ],
+      "t": 0,
+      "izoh": "Tenglama 100 + 60 · lg t = 220 ko'rinishida, bundan 60 · lg t = 120 va lg t = 2. O'nli logarifm ta'rifiga ko'ra t = 10² = 100 kun. 2 kun javobi lg t qiymatini javob deb yozishdan, 120 kun esa ayirmani to'g'ridan-to'g'ri kun deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-model-talqin",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#b421da23"
+    },
+    {
+      "q": "Tajribada o'simlik balandligi quyidagicha o'lchandi: 1-kuni 10 sm, 10-kuni 20 sm, 100-kuni 30 sm. Shu uchala o'lchovga to'liq mos keladigan modelni tanlang.",
+      "v": [
+        "h = 10 · 1,1^t",
+        "h = 10 + 0,2t",
+        "h = 10 + 10 · lg t",
+        "h = 10 · t"
+      ],
+      "t": 2,
+      "izoh": "Balandlik teng qadamda emas, vaqt o'n marta ortganda 10 sm ga ortmoqda — bu logarifmik o'sish belgisi. h = 10 + 10 · lg t modelini tekshiramiz: lg1 = 0, lg10 = 1, lg100 = 2, natijada 10, 20 va 30 sm chiqadi. Ko'rsatkichli model 100-kuni juda katta son beradi, chiziqli model esa 10-kuni 12 sm beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifmik-model-talqin",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#09724cb1"
+    },
+    {
+      "q": "Tadqiqotchi to'rt oy davomida quyidagi qiymatlarni qayd etdi: 100, 130, 169 va 219,7. Shu ketma-ketlikka qaysi model mos kelishini va nima uchun ekanligini ko'rsating.",
+      "v": [
+        "Chiziqli model, chunki har oyda bir xil son qo'shiladi",
+        "Ko'rsatkichli model, chunki har oyda bir xil songa ko'paytiriladi",
+        "Logarifmik model, chunki o'sish tobora sekinlashadi",
+        "Trigonometrik model, chunki qiymatlar takrorlanadi"
+      ],
+      "t": 1,
+      "izoh": "Qo'shni hadlar ayirmasi 30, 39 va 50,7 — bir xil emas, demak model chiziqli emas. Endi nisbatlarni tekshiramiz: 130 : 100 = 1,3, 169 : 130 = 1,3, 219,7 : 169 = 1,3. Nisbat doimiy bo'lgani uchun bu ko'rsatkichli o'sish va model N(t) = 100 · 1,3^t ko'rinishida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-turini-tanlash",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#998eefb9"
+    },
+    {
+      "q": "Ikki korxonaning boshlang'ich yillik foydasi bir xil — 50 mln so'm. A korxona foydasi har yili 5 mln so'mga ortadi, B korxonaniki esa har yili 10% ga ortadi. O'n yildan keyin qaysi korxona ustun bo'ladi va farq taxminan qancha?",
+      "v": [
+        "A korxona, farq ≈ 30 mln so'm",
+        "B korxona, farq ≈ 80 mln so'm",
+        "Ikkala korxona foydasi teng bo'ladi",
+        "B korxona, farq ≈ 30 mln so'm"
+      ],
+      "t": 3,
+      "izoh": "A korxona chiziqli model bo'yicha ishlaydi: 50 + 5 · 10 = 100 mln so'm. B korxona ko'rsatkichli model bo'yicha: 50 · 1,1¹⁰ ≈ 50 · 2,594 ≈ 130 mln so'm. Demak B ustun va farq 130 − 100 = 30 mln so'm. Ko'rsatkichli o'sish dastlab sekin, keyin chiziqli o'sishni ortda qoldiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "model-turini-tanlash",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#8a8153b3"
+    },
+    {
+      "q": "Quyida keltirilgan hodisalardan qaysi biri uchun trigonometrik model eng mos keladi va nima uchun shunday deb hisoblaysiz?",
+      "v": [
+        "Kun davomida dengiz suvi sathining ko'tarilib-pasayishi, chunki hodisa bir xil oraliqda takrorlanadi",
+        "Bankdagi omonatga murakkab foiz hisoblanishi, chunki summa vaqt o'tishi bilan o'zgarib boradi",
+        "Radioaktiv moddaning yemirilishi, chunki modda miqdori doim kamayib boradi",
+        "Aholi sonining doimiy foizda o'sishi, chunki o'sish uzoq yillar davom etadi"
+      ],
+      "t": 0,
+      "izoh": "Trigonometrik model takrorlanuvchi, ya'ni davriy hodisalar uchun ishlatiladi, shuning uchun asos ham aynan davriylik bo'lishi kerak. Dengiz suvi sathi sutka davomida ko'tarilib-pasayadi va bir xil oraliqda takrorlanadi. Qolgan uchta variantda keltirilgan sabablar yetarli emas: kattalikning o'zgarishi, kamayishi yoki uzoq davom etishi hali davriylikni anglatmaydi. O'sha hodisalar bir tomonga o'sadi yoki kamayadi va ular uchun ko'rsatkichli model olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "model-turini-tanlash",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#861051d6"
+    },
+    {
+      "q": "Bir shaharda o'rtacha oylik harorat yildan yilga takrorlanadi: eng issiq iyulda 30°C, eng sovuq yanvarda 2°C. Bu hodisani tavsiflash uchun qaysi model va qanday davr tanlanadi?",
+      "v": [
+        "Ko'rsatkichli model, davri 6 oy",
+        "Trigonometrik model, davri 6 oy",
+        "Trigonometrik model, davri 12 oy",
+        "Chiziqli model, davri 12 oy"
+      ],
+      "t": 2,
+      "izoh": "Harorat ortib, keyin kamayib, bir yildan keyin o'sha qiymatga qaytadi — bu davriy hodisa, demak trigonometrik model kerak. To'liq bir takrorlanish 12 oyda sodir bo'lgani uchun davr 12 oy. Iyul bilan yanvar orasidagi 6 oy — davrning yarmi, ya'ni maksimumdan minimumgacha bo'lgan masofa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "model-turini-tanlash",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#0483a9c6"
+    },
+    {
+      "q": "Qirg'oqdagi suv sathi eng baland bo'lganda 5 m, eng past bo'lganda 1 m ni tashkil qiladi, to'liq bir tsikl esa 12 soat davom etadi. Kuzatuv boshlanganda sath eng baland bo'lgan bo'lsa, to'g'ri modelni tanlang.",
+      "v": [
+        "h(t) = 2 + 3 · cos(πt/6)",
+        "h(t) = 3 + 2 · cos(πt/12)",
+        "h(t) = 5 + 2 · cos(πt/6)",
+        "h(t) = 3 + 2 · cos(πt/6)"
+      ],
+      "t": 3,
+      "izoh": "O'rtacha sath (5 + 1) : 2 = 3 m, amplituda esa (5 − 1) : 2 = 2 m. Davr 12 soat bo'lgani uchun 2π/ω = 12, bundan ω = π/6. t = 0 da sath eng baland bo'lgani uchun kosinus olinadi: h(t) = 3 + 2 · cos(πt/6). πt/12 yozilsa davr 24 soat chiqib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-model-qurish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#f40ab2ae"
+    },
+    {
+      "q": "Diametri 40 m bo'lgan aylanma gildirakning eng past nuqtasi yerdan 2 m balandlikda joylashgan va u to'liq bir aylanishni 4 daqiqada bajaradi. Kabina eng past nuqtadan harakatni boshlagan bo'lsa, balandlik modelini tanlang.",
+      "v": [
+        "h(t) = 22 − 20 · cos(πt/2)",
+        "h(t) = 20 − 22 · cos(πt/2)",
+        "h(t) = 22 − 40 · cos(πt/2)",
+        "h(t) = 22 − 20 · cos(πt/4)"
+      ],
+      "t": 0,
+      "izoh": "Gildirak radiusi 40 : 2 = 20 m, markazi esa yerdan 2 + 20 = 22 m balandlikda. Davr 4 daqiqa bo'lgani uchun ω = 2π/4 = π/2. Kabina t = 0 da eng past nuqtada bo'lgani uchun minus kosinus olinadi: h(t) = 22 − 20 · cos(πt/2). Tekshiruv: t = 0 da h = 2 m, t = 2 da h = 42 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trigonometrik-model-qurish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#475cbea4"
+    },
+    {
+      "q": "Elektr tarmog'idagi kuchlanish U(t) = U₀ · sin(2πft) modeli bilan tavsiflanadi. Amplituda 310 V va chastota 50 Gs bo'lsa, shu tarmoq uchun modelni to'g'ri yozing.",
+      "v": [
+        "U(t) = 310 · sin(50πt)",
+        "U(t) = 50 · sin(310πt)",
+        "U(t) = 310 · sin(100πt)",
+        "U(t) = 310 · sin(2πt/50)"
+      ],
+      "t": 2,
+      "izoh": "Formulaga ko'ra amplituda U₀ = 310 V, burchak chastotasi esa ω = 2πf = 2π · 50 = 100π. Demak U(t) = 310 · sin(100πt). 50πt yozilsa chastota 25 Gs bo'lib qoladi, 2πt/50 esa davri 50 s bo'lgan juda sekin tebranishni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-model-qurish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#af31870c"
+    },
+    {
+      "q": "Mayatnik muvozanat holatidan eng ko'pi 8 sm chetga chiqadi, to'liq bir tebranish esa 3 sekundda tugaydi. Vaqt hisobi boshlanganda mayatnik aynan muvozanat holatida bo'lsa, chetlanish modelini tanlang.",
+      "v": [
+        "x(t) = 3 · sin(2πt/8)",
+        "x(t) = 8 · sin(2πt/3)",
+        "x(t) = 8 · cos(2πt/3)",
+        "x(t) = 8 · sin(3πt/2)"
+      ],
+      "t": 1,
+      "izoh": "Amplituda 8 sm, davr esa 3 s, demak ω = 2π/3 va model x(t) = 8 · sin(2πt/3). t = 0 da mayatnik muvozanatda, ya'ni x = 0 bo'lishi kerak; sinus buni beradi, kosinus esa 8 sm beradi va shartga zid. 2πt/8 yozilsa davr 8 s bo'lib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-model-qurish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#a82ba856"
+    },
+    {
+      "q": "Suv omboridagi sath h(t) = 6 + 4 · sin(πt/8) metr modeli bilan o'zgaradi, bu yerda t soatlarda beriladi. Sathning eng katta qiymatini va tebranish davrini toping.",
+      "v": [
+        "10 m va 16 soat",
+        "10 m va 8 soat",
+        "4 m va 16 soat",
+        "6 m va 16 soat"
+      ],
+      "t": 0,
+      "izoh": "Sinusning eng katta qiymati 1 ga teng, shuning uchun h ning maksimumi 6 + 4 = 10 m. Davr T = 2π : ω formulasi bilan topiladi, bu yerda ω = π/8, demak T = 2π : (π/8) = 16 soat. 8 soat javobi ω maxrajini davr deb olishdan, 6 m esa o'rtacha sathni maksimum deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-amplituda-va-davr",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#35d32d7e"
+    },
+    {
+      "q": "Shahar uchun kunduz uzunligi L(t) = 12 + 3 · sin(2π(t − 80)/365) soat modeli bilan tavsiflanadi, t — yil boshidan hisoblangan kunlar soni. Yildagi eng uzun va eng qisqa kunduz uzunliklari orasidagi farq qancha?",
+      "v": [
+        "3 soat",
+        "12 soat",
+        "6 soat",
+        "15 soat"
+      ],
+      "t": 2,
+      "izoh": "Sinus −1 dan 1 gacha o'zgaradi, shuning uchun L eng kami 12 − 3 = 9 soat, eng ko'pi esa 12 + 3 = 15 soat bo'ladi. Farq 15 − 9 = 6 soat, ya'ni amplitudaning ikkilangani. 3 soat javobi amplitudani farq deb olishdan, 15 soat esa faqat maksimumni yozishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-amplituda-va-davr",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#43adba23"
+    },
+    {
+      "q": "Bir hududda o'rtacha oylik harorat T(t) = 18 − 9 · cos(πt/6) °C modeli bilan beriladi, bu yerda t = 0 yanvarga mos keladi. Eng yuqori harorat qaysi oyda kuzatiladi va u qanchani tashkil qiladi?",
+      "v": [
+        "Iyulda, 18°C",
+        "Yanvarda, 9°C",
+        "Yanvarda, 27°C",
+        "Iyulda, 27°C"
+      ],
+      "t": 3,
+      "izoh": "T eng katta bo'lishi uchun cos(πt/6) eng kichik, ya'ni −1 bo'lishi kerak. Bu πt/6 = π bo'lganda, ya'ni t = 6 da sodir bo'ladi; t = 0 yanvar bo'lgani uchun t = 6 iyulga to'g'ri keladi. O'sha paytda T = 18 + 9 = 27°C. Yanvarda esa cos0 = 1 bo'lib, T = 9°C bilan eng past qiymat chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-amplituda-va-davr",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#4c48884c"
+    },
+    {
+      "q": "Generatorning chiqish kuchlanishi U(t) = 220 · sin(120πt) volt modeli bilan o'zgaradi, vaqt sekundlarda o'lchanadi. Bu tebranishning chastotasi necha gerts?",
+      "v": [
+        "30 Gs",
+        "60 Gs",
+        "120 Gs",
+        "220 Gs"
+      ],
+      "t": 1,
+      "izoh": "Burchak chastotasi ω = 120π, chastota esa f = ω : (2π) formulasi bilan topiladi. Demak f = 120π : (2π) = 60 Gs, ya'ni sekundiga 60 ta to'liq tebranish. 120 Gs javobi burchak chastotasining koeffitsientini chastota deb olishdan, 220 Gs esa amplitudani javob deb yozishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-amplituda-va-davr",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#48eb09d7"
+    },
+    {
+      "q": "Qirg'oqdagi suv sathi h(t) = 3 + 2 · cos(πt/6) metr modeli bilan o'zgaradi, t soatlarda hisoblanadi. Kuzatuv boshlangandan 4 soat keyin sath qanday bo'ladi?",
+      "v": [
+        "1 m",
+        "3 m",
+        "2 m",
+        "4 m"
+      ],
+      "t": 2,
+      "izoh": "Modelga t = 4 ni qo'yamiz: burchak 4π/6 = 2π/3 bo'ladi. cos(2π/3) = −1/2, demak h = 3 + 2 · (−1/2) = 3 − 1 = 2 m. 4 m javobi kosinus ishorasini musbat olishdan, 3 m esa kosinusni nolga teng deb olishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-model-qiymati",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#f129e6f7"
+    },
+    {
+      "q": "Aylanma gildirak kabinasining balandligi h(t) = 22 − 20 · cos(πt/2) metr, t daqiqalarda beriladi. Harakat boshlangandan 2/3 daqiqa keyin kabina yerdan qanday balandlikda bo'ladi?",
+      "v": [
+        "2 m",
+        "12 m",
+        "22 m",
+        "32 m"
+      ],
+      "t": 1,
+      "izoh": "t = 2/3 bo'lganda burchak π · (2/3) : 2 = π/3 ga teng. cos(π/3) = 1/2, demak h = 22 − 20 · (1/2) = 22 − 10 = 12 m. 32 m javobi kosinus ishorasini teskari olishdan, 22 m esa kosinusni nol deb hisoblashdan, 2 m esa boshlang'ich balandlikni yozishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trigonometrik-model-qiymati",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#31ca5633"
+    },
+    {
+      "q": "Hududdagi o'rtacha oylik harorat T(t) = 18 − 9 · cos(πt/6) °C modeli bilan beriladi va t = 0 yanvarga to'g'ri keladi. Mart oyidagi o'rtacha harorat qanday bo'ladi?",
+      "v": [
+        "9°C",
+        "18°C",
+        "22,5°C",
+        "13,5°C"
+      ],
+      "t": 3,
+      "izoh": "Mart yanvardan ikki oy keyin, demak t = 2 olinadi va burchak 2π/6 = π/3 bo'ladi. cos(π/3) = 1/2, shuning uchun T = 18 − 9 · (1/2) = 18 − 4,5 = 13,5°C. 22,5°C javobi ishorani almashtirishdan, 18°C esa kosinusni nol deb olishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-model-qiymati",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#b965b911"
+    },
+    {
+      "q": "Uy tarmog'idagi kuchlanish U(t) = 310 · sin(100πt) volt modeli bilan o'zgaradi, vaqt sekundlarda beriladi. Vaqt 1/600 sekundga teng bo'lgan paytda kuchlanish qanchani tashkil qiladi?",
+      "v": [
+        "155 V",
+        "0,5 V",
+        "268,5 V",
+        "310 V"
+      ],
+      "t": 0,
+      "izoh": "Burchakni hisoblaymiz: 100π · (1/600) = π/6. sin(π/6) = 1/2, demak U = 310 · (1/2) = 155 V. 0,5 V javobi sinus qiymatini javob deb yozishdan, 310 V amplitudani olishdan, 268,5 V esa burchakni π/3 deb chalkashtirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trigonometrik-model-qiymati",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#0f33c54c"
+    },
+    {
+      "q": "Qirg'oqda suv sathi h(t) = 3 + 2 · cos(πt/6) metr modeli bilan o'zgaradi. Kuzatuv boshlangandan keyin sath birinchi marta eng past nuqtaga qachon tushadi?",
+      "v": [
+        "3 soat",
+        "6 soat",
+        "9 soat",
+        "12 soat"
+      ],
+      "t": 1,
+      "izoh": "Sath eng past bo'lishi uchun cos(πt/6) = −1 bo'lishi kerak. Kosinus birinchi marta −1 qiymatini burchagi π bo'lganda oladi, demak πt/6 = π va bundan t = 6 soat. 12 soat javobi to'liq davrni ko'rsatadi va o'sha paytda sath yana eng baland bo'ladi, 3 soat esa o'rtacha sathga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-ekstremum-payti",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#c33b998f"
+    },
+    {
+      "q": "Aylanma gildirak kabinasi balandligi h(t) = 22 − 20 · cos(πt/2) metr modeli bilan o'zgaradi, t daqiqalarda beriladi. Kabina birinchi marta eng yuqori nuqtaga qaysi paytda chiqadi?",
+      "v": [
+        "2 daqiqa",
+        "1 daqiqa",
+        "3 daqiqa",
+        "4 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Balandlik eng katta bo'lishi uchun cos(πt/2) = −1 bo'lishi shart. Bu πt/2 = π bo'lganda, ya'ni t = 2 daqiqada birinchi marta bajariladi. 4 daqiqa javobi to'liq aylanish vaqti bo'lib, o'shanda kabina yana eng pastga qaytadi, 1 daqiqa esa markaz balandligiga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-ekstremum-payti",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#4fbc0326"
+    },
+    {
+      "q": "Kun davomida havo harorati T(t) = 20 + 7 · sin(π(t − 9)/12) °C modeli bilan o'zgaradi, bu yerda t — sutkaning soati. Havo qaysi paytda eng issiq bo'ladi?",
+      "v": [
+        "Soat 9 da",
+        "Soat 12 da",
+        "Soat 15 da",
+        "Soat 21 da"
+      ],
+      "t": 2,
+      "izoh": "Harorat eng yuqori bo'lishi uchun sinus qiymati 1 ga teng bo'lishi kerak, ya'ni π(t − 9)/12 = π/2. Bundan (t − 9)/12 = 1/2 va t − 9 = 6, demak t = 15. Soat 9 da sinus nolga teng bo'lib, harorat o'rtacha 20°C ni beradi, soat 21 da esa harorat yana o'rtacha qiymatga qaytadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trigonometrik-ekstremum-payti",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#01755f18"
+    },
+    {
+      "q": "Dengiz sathi h(t) = 4 + 1,5 · sin(πt/6) metr modeli bilan o'zgaradi va t soatlarda hisoblanadi. Bir sutka davomida sath necha marta eng yuqori qiymatga chiqadi?",
+      "v": [
+        "1 marta",
+        "4 marta",
+        "12 marta",
+        "2 marta"
+      ],
+      "t": 3,
+      "izoh": "Avval davrni topamiz: T = 2π : (π/6) = 12 soat. Har bir davrda sath eng yuqori qiymatga aynan bir marta chiqadi. Bir sutkada 24 : 12 = 2 ta to'liq davr bor, demak sath 2 marta eng yuqoriga chiqadi. 12 marta javobi davr sonini javob deb olishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-ekstremum-payti",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#7276c3d7"
+    },
+    {
+      "q": "Qirg'oqdagi suv sathi h(t) = 3 + 2 · cos(πt/6) metr modeli bilan o'zgaradi, t soatlarda beriladi. Sath birinchi marta 4 m ga tushadigan paytni aniqlang.",
+      "v": [
+        "1 soat",
+        "3 soat",
+        "4 soat",
+        "2 soat"
+      ],
+      "t": 3,
+      "izoh": "Tenglama 3 + 2 · cos(πt/6) = 4 ko'rinishida, bundan cos(πt/6) = 1/2. Eng kichik musbat yechimda πt/6 = π/3, demak t = 2 soat. 3 soat javobi kosinusni nolga tenglashtirishdan, ya'ni o'rtacha sath paytidan, 4 soat esa kosinusni −1/2 deb olishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-tenglama-vaqti",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#0a93e7b5"
+    },
+    {
+      "q": "Aylanma gildirak kabinasining balandligi h(t) = 22 − 20 · cos(πt/2) metr modeli bilan beriladi, t daqiqalarda o'lchanadi. Kabina birinchi marta 32 m balandlikka qachon ko'tariladi?",
+      "v": [
+        "2/3 daqiqa",
+        "4/3 daqiqa",
+        "1 daqiqa",
+        "5/3 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Shartdan 22 − 20 · cos(πt/2) = 32, ya'ni cos(πt/2) = −1/2. Eng kichik musbat yechimda πt/2 = 2π/3, bundan t = 4/3 daqiqa. 2/3 daqiqa javobi kosinus ishorasini musbat olishdan chiqadi va unda balandlik atigi 12 m bo'ladi, 1 daqiqada esa kabina markaz balandligida turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trigonometrik-tenglama-vaqti",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#2b5e40a7"
+    },
+    {
+      "q": "Sutka davomida havo harorati T(t) = 20 + 7 · sin(π(t − 9)/12) °C modeli bilan o'zgaradi, t — soat. Harorat birinchi marta 23,5°C ga yetadigan paytni toping.",
+      "v": [
+        "Soat 10 da",
+        "Soat 13 da",
+        "Soat 11 da",
+        "Soat 15 da"
+      ],
+      "t": 2,
+      "izoh": "Tenglama 20 + 7 · sin(π(t − 9)/12) = 23,5 dan sin(π(t − 9)/12) = 1/2 kelib chiqadi. Eng kichik yechimda π(t − 9)/12 = π/6, demak t − 9 = 2 va t = 11. Soat 15 da harorat eng yuqori 27°C ga chiqadi, soat 13 da esa sinus burchagi π/3 deb noto'g'ri olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-tenglama-vaqti",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#17ae759a"
+    },
+    {
+      "q": "Portdagi suv sathi h(t) = 4 + 1,5 · sin(πt/6) metr modeli bilan o'zgaradi. Kema portga kirishi uchun sath kamida 4,75 m bo'lishi kerak. Kema birinchi marta qaysi paytda kira oladi?",
+      "v": [
+        "1 soat",
+        "2 soat",
+        "3 soat",
+        "5 soat"
+      ],
+      "t": 0,
+      "izoh": "Shart 4 + 1,5 · sin(πt/6) = 4,75 dan sin(πt/6) = 0,5 ni beradi. Eng kichik yechimda πt/6 = π/6, demak t = 1 soat. 5 soat ham tenglamaning yechimi, lekin u ikkinchi paytga to'g'ri keladi va savolda birinchi payt so'ralgan. 3 soat esa sath eng baland bo'ladigan payt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trigonometrik-tenglama-vaqti",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#5df77779"
+    },
+    {
+      "q": "Fermer xo'jaligida silindr shaklidagi suv baki o'rnatilgan, uning ichki diametri 2 m, balandligi esa 3 m. π ≈ 3,14 deb olib, bakka necha litr suv sig'ishini aniqlang.",
+      "v": [
+        "3140 litr",
+        "9420 litr",
+        "18 840 litr",
+        "37 680 litr"
+      ],
+      "t": 1,
+      "izoh": "Silindr radiusi 2 : 2 = 1 m, hajmi esa V = πr²h = 3,14 · 1 · 3 = 9,42 m³. Bir kub metr 1000 litrga teng, demak bakka 9420 litr suv sig'adi. 37 680 litr javobi radius o'rniga diametrni qo'yishdan, 3140 litr esa konus formulasidagi 1/3 koeffitsientini qo'llashdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-hajm-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#7115cc78"
+    },
+    {
+      "q": "Qurilish maydonchasidagi qum uyumi konus shaklida bo'lib, asosining diametri 6 m, balandligi esa 2 m. π ≈ 3,14 deb olib, uyumdagi qum hajmini toping.",
+      "v": [
+        "9,42 m³",
+        "75,36 m³",
+        "18,84 m³",
+        "56,52 m³"
+      ],
+      "t": 2,
+      "izoh": "Konus radiusi 6 : 2 = 3 m, hajmi esa V = (1/3)πr²h = (1/3) · 3,14 · 9 · 2 = 18,84 m³. 56,52 m³ javobi 1/3 koeffitsientini tushirib qoldirib, silindr formulasini qo'llashdan chiqadi. 75,36 m³ esa radius o'rniga diametrni qo'yish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-hajm-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#d0031078"
+    },
+    {
+      "q": "Masjid gumbazi yarim shar shaklida qurilgan va uning ichki radiusi 5 m. π ≈ 3,14 deb olib, gumbaz ostidagi bo'shliq hajmini hisoblang.",
+      "v": [
+        "261,7 m³",
+        "130,8 m³",
+        "392,5 m³",
+        "523,3 m³"
+      ],
+      "t": 0,
+      "izoh": "To'liq shar hajmi V = (4/3)πR³ = (4/3) · 3,14 · 125 ≈ 523,3 m³. Yarim shar uchun bu qiymat ikkiga bo'linadi: 523,3 : 2 ≈ 261,7 m³. 523,3 m³ javobi butun sharni olishdan, 392,5 m³ silindr formulasini qo'llashdan, 130,8 m³ esa (4/3)πR³ formulasidagi 4 koeffitsientini tushirib qoldirib, (1/3)πR³ = 130,8 deb hisoblashdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-hajm-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#033a29f8"
+    },
+    {
+      "q": "Xonaning uzunligi 6 m, eni 4 m, balandligi esa 3 m. Ustaga to'rtta devor va shiftni bo'yash buyurildi, deraza va eshiklar hisobga olinmaydi. Bo'yaladigan umumiy yuza qancha?",
+      "v": [
+        "60 m²",
+        "108 m²",
+        "132 m²",
+        "84 m²"
+      ],
+      "t": 3,
+      "izoh": "To'rt devor yuzasi yon sirt sifatida topiladi: 2 · (6 + 4) · 3 = 60 m². Shift yuzasi 6 · 4 = 24 m². Umumiy yuza 60 + 24 = 84 m². 60 m² javobi shiftni qo'shishni unutishdan, 108 m² esa polni ham qo'shib to'liq sirtni hisoblashdan, 132 m² esa to'liq sirtni (108 m²) hisoblab, ustiga yana bir marta shiftni qo'shib yuborishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-hajm-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#e4ecd1a7"
+    },
+    {
+      "q": "Bo'yi 1,7 m bo'lgan Jasurning soyasi 2 m uzunlikda, o'sha paytda hovlidagi daraxtning soyasi esa 14 m. Quyosh nurlari parallel deb hisoblab, daraxt balandligini toping.",
+      "v": [
+        "7 m",
+        "12,3 m",
+        "23,8 m",
+        "11,9 m"
+      ],
+      "t": 3,
+      "izoh": "Odam va daraxt soyalari bilan birga o'xshash uchburchaklar hosil qiladi, demak balandlik va soya nisbati bir xil. Bundan h : 14 = 1,7 : 2, ya'ni h = 1,7 · 14 : 2 = 11,9 m. 23,8 m javobi soya uzunligiga bo'lishni unutishdan, 7 m esa faqat soyalar nisbatini yozishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshashlik-orqali-olchash",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#78872ccc"
+    },
+    {
+      "q": "Balandligi 1,5 m bo'lgan ustunning soyasi 0,9 m, o'sha vaqtda suv minorasining soyasi 27 m ni tashkil qildi. Minoraning balandligi qancha?",
+      "v": [
+        "45 m",
+        "16,2 m",
+        "30 m",
+        "40,5 m"
+      ],
+      "t": 0,
+      "izoh": "O'xshashlikdan H : 27 = 1,5 : 0,9 kelib chiqadi, demak H = 1,5 · 27 : 0,9 = 45 m. 40,5 m javobi ustun soyasiga bo'lishni tushirib qoldirishdan, 30 m faqat soyalar nisbatini olishdan, 16,2 m esa nisbatni teskari qo'llashdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshashlik-orqali-olchash",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#5f1861f5"
+    },
+    {
+      "q": "Daryo enini o'lchash uchun qirg'oqda o'xshash ikkita uchburchak qurildi. Kichik uchburchakning tomonlari 3 m va 4 m, katta uchburchakda 3 m ga mos tomon esa 21 m. Daryo enini bildiruvchi ikkinchi tomon qancha?",
+      "v": [
+        "15,75 m",
+        "28 m",
+        "63 m",
+        "84 m"
+      ],
+      "t": 1,
+      "izoh": "O'xshashlik koeffitsienti 21 : 3 = 7 ga teng. Demak izlanayotgan tomon 4 · 7 = 28 m. 84 m javobi koeffitsientni topmasdan 4 ni 21 ga ko'paytirishdan, 15,75 m esa nisbatni teskari yozishdan, 63 m esa 3 ni 21 ga ko'paytirishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxshashlik-orqali-olchash",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#d025e616"
+    },
+    {
+      "q": "Xaritada masshtab 1 : 250 000 deb ko'rsatilgan. Ikki shahar orasidagi masofa xaritada 7,2 sm bo'lsa, ular orasidagi haqiqiy masofa necha kilometr?",
+      "v": [
+        "1,8 km",
+        "180 km",
+        "18 km",
+        "1800 km"
+      ],
+      "t": 2,
+      "izoh": "Haqiqiy masofa 7,2 · 250 000 = 1 800 000 sm ga teng. Endi santimetrni kilometrga aylantiramiz: 1 km = 100 000 sm, demak 1 800 000 : 100 000 = 18 km. 180 km va 1,8 km javoblari birlik aylantirishda o'nlik xonani adashtirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshashlik-orqali-olchash",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#8c2d77f8"
+    },
+    {
+      "q": "Kuzatuvchi minoradan 30 m masofada turibdi va cho'qqini gorizontga nisbatan 40° burchak ostida ko'radi, uning ko'zi yerdan 1,6 m balandlikda. tg40° ≈ 0,839 deb olib, minora balandligini toping.",
+      "v": [
+        "26,8 m",
+        "25,2 m",
+        "35,8 m",
+        "37,4 m"
+      ],
+      "t": 0,
+      "izoh": "Ko'z sathidan yuqoridagi qism h = 30 · tg40° = 30 · 0,839 ≈ 25,2 m ni tashkil qiladi. Minoraning to'liq balandligi uchun ko'z balandligi qo'shiladi: 25,2 + 1,6 ≈ 26,8 m. 25,2 m javobi ko'z balandligini qo'shishni unutishdan, 35,8 m esa tangens o'rniga uning teskarisini olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-orqali-balandlik-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#110c71f6"
+    },
+    {
+      "q": "Uzunligi 12 m bo'lgan narvon devorga tirab qo'yilgan va u yer bilan 65° burchak hosil qiladi. sin65° ≈ 0,906 deb olib, narvonning yuqori uchi yerdan qanday balandlikda turishini aniqlang.",
+      "v": [
+        "5,1 m",
+        "13,2 m",
+        "25,7 m",
+        "10,9 m"
+      ],
+      "t": 3,
+      "izoh": "Narvon gipotenuza, izlanayotgan balandlik esa burchak qarshisidagi katet. Demak h = 12 · sin65° = 12 · 0,906 ≈ 10,9 m. 5,1 m javobi sinus o'rniga kosinusni olishdan, 25,7 m tangensni qo'llashdan, 13,2 m esa ko'paytirish o'rniga bo'lishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-orqali-balandlik-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#31bdb452"
+    },
+    {
+      "q": "Samolyot 2400 m balandlikda uchmoqda, uchuvchi esa aeroportni gorizontga nisbatan 20° pastga qarash burchagi ostida ko'rmoqda. tg20° ≈ 0,364 deb olib, aeroportgacha bo'lgan gorizontal masofani toping.",
+      "v": [
+        "0,9 km",
+        "2,4 km",
+        "6,6 km",
+        "7 km"
+      ],
+      "t": 2,
+      "izoh": "Balandlik burchak qarshisidagi katet, gorizontal masofa esa yondosh katet, demak tg20° = 2400 : d. Bundan d = 2400 : 0,364 ≈ 6593 m, ya'ni taxminan 6,6 km. 0,9 km javobi bo'lish o'rniga ko'paytirishdan, 7 km esa gipotenuzani, ya'ni ko'rish chizig'ini hisoblashdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-orqali-balandlik-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#c021718d"
+    },
+    {
+      "q": "Tog' yo'lining qiyalik burchagi 15°, yo'lning qiya uzunligi esa 800 m. sin15° ≈ 0,259 deb olib, yo'l qancha balandlikka ko'tarilishini hisoblang.",
+      "v": [
+        "214 m",
+        "207 m",
+        "773 m",
+        "3089 m"
+      ],
+      "t": 1,
+      "izoh": "Qiya yo'l gipotenuza vazifasini bajaradi, ko'tarilish balandligi esa burchak qarshisidagi katet. Demak h = 800 · sin15° = 800 · 0,259 ≈ 207 m. 214 m javobi sinus o'rniga tangensni olishdan, 773 m kosinusni qo'llashdan, 3089 m esa ko'paytirish o'rniga bo'lishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-orqali-balandlik-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#b68614d3"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi tomorqaning uzunligi 45 m, eni esa 28 m. Uni ikki qator sim bilan to'liq o'rab chiqish uchun necha metr sim kerak bo'ladi?",
+      "v": [
+        "73 m",
+        "146 m",
+        "292 m",
+        "1260 m"
+      ],
+      "t": 2,
+      "izoh": "Avval perimetrni topamiz: P = 2 · (45 + 28) = 146 m. Sim ikki qator tortilgani uchun uzunlik ikkilanadi: 146 · 2 = 292 m. 146 m javobi bitta qatorni hisoblashdan, 1260 m tomorqa yuzasini yozishdan, 73 m esa yarim perimetrni olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-olcham-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#cd857585"
+    },
+    {
+      "q": "Devorga yopishtiriladigan kafelning o'lchami 25 sm ga 20 sm. Uzunligi 3 m, balandligi 2,4 m bo'lgan devorni to'liq qoplash uchun nechta kafel kerak bo'ladi?",
+      "v": [
+        "144 ta",
+        "72 ta",
+        "288 ta",
+        "1440 ta"
+      ],
+      "t": 0,
+      "izoh": "Devor yuzasi 3 · 2,4 = 7,2 m², ya'ni 72 000 sm². Bitta kafel yuzasi 25 · 20 = 500 sm². Kafellar soni 72 000 : 500 = 144 ta. 1440 ta javobi kvadrat metrni santimetrga aylantirishda o'nlik xonani adashtirishdan, 288 ta esa kafel yuzasini 250 sm² deb hisoblashdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "geometrik-olcham-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#3048b9fe"
+    },
+    {
+      "q": "Dumaloq stolning diametri 1,4 m. Unga stol chetidan har tomonga 15 sm osilib turadigan dumaloq dasturxon tikilmoqda. Dasturxonning diametri qancha bo'lishi kerak?",
+      "v": [
+        "1,25 m",
+        "1,55 m",
+        "2,8 m",
+        "1,7 m"
+      ],
+      "t": 3,
+      "izoh": "Dasturxon stol chetidan ikkala tomonga osiladi, shuning uchun diametrga 15 sm ikki marta qo'shiladi. 15 sm = 0,15 m, demak D = 1,4 + 2 · 0,15 = 1,7 m. 1,55 m javobi osilishni faqat bir tomondan hisoblashdan, 1,25 m esa qo'shish o'rniga ayirishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-olcham-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#b5b69965"
+    },
+    {
+      "q": "Basseynning uzunligi 25 m, eni 12 m, o'rtacha chuqurligi esa 1,8 m. Nasos soatiga 60 m³ suv quyadi. Basseynni to'ldirish uchun qancha suv kerak va bu necha soat davom etadi?",
+      "v": [
+        "270 m³ va 4,5 soat",
+        "540 m³ va 9 soat",
+        "540 m³ va 6 soat",
+        "1080 m³ va 18 soat"
+      ],
+      "t": 1,
+      "izoh": "Basseyn hajmi V = 25 · 12 · 1,8 = 540 m³ ga teng. Nasos soatiga 60 m³ quygani uchun vaqt 540 : 60 = 9 soat bo'ladi. 270 m³ javobi hajmni ikkiga bo'lishdan, 1080 m³ esa ikkilantirishdan chiqadi, 6 soat esa bo'linmani noto'g'ri hisoblash natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-olcham-modeli",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#a4920303"
+    },
+    {
+      "q": "Fermer 200 m to'r yordamida bir tomoni ombor devoriga tegib turgan to'g'ri to'rtburchak maydonchani o'ramoqchi, devor tomoni o'ralmaydi. Maydon yuzasi eng katta bo'lganda u qanchani tashkil qiladi?",
+      "v": [
+        "2500 m²",
+        "5000 m²",
+        "7500 m²",
+        "10 000 m²"
+      ],
+      "t": 1,
+      "izoh": "Devorga parallel tomon x, unga perpendikulyar tomonlar y bo'lsin, u holda x + 2y = 200. Yuza S = xy = (200 − 2y)y = 200y − 2y², hosilasi S' = 200 − 4y. S' = 0 dan y = 50, x = 100 va S = 5000 m². 2500 m² javobi to'rni to'rt teng tomonga bo'lishdan (50 va 50), 10 000 m² javobi devor tomoni ham o'raladi deb x + y = 200 olishdan (kvadrat 100 va 100), 7500 m² esa x ni 200 − y = 150 deb topib, y = 50 ni saqlab qolgan aralash xatodan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "optimal-olcham-hosila",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#4f7ad51e"
+    },
+    {
+      "q": "Tomoni 24 sm bo'lgan kvadrat kartonning burchaklaridan bir xil kvadratchalar kesib olinadi va chetlari bukilib qopqoqsiz quti yasaladi. Quti hajmi eng katta bo'lishi uchun kesilgan kvadratchaning tomoni qancha bo'lishi kerak?",
+      "v": [
+        "4 sm",
+        "3 sm",
+        "6 sm",
+        "12 sm"
+      ],
+      "t": 0,
+      "izoh": "Kesilgan kvadratcha tomoni x bo'lsa, hajm V = x(24 − 2x)² bo'ladi. Hosilani ko'paytuvchilarga ajratamiz: V' = (24 − 2x)(24 − 6x). Ildizlar x = 12 va x = 4; x = 12 da asos tomoni nolga aylanadi va quti yo'qoladi, shuning uchun maksimum x = 4 sm da bo'ladi. O'shanda V = 4 · 16² = 1024 sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "optimal-olcham-hosila",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#24091ec9"
+    },
+    {
+      "q": "Fermer 300 m to'r bilan to'g'ri to'rtburchak yerni o'rab, uni yana bitta to'siq bilan ikki teng qismga ajratmoqchi, to'siq to'rning bir qismidan qilinadi. Umumiy yuza eng katta bo'lganda u qanchaga teng bo'ladi?",
+      "v": [
+        "2500 m²",
+        "5625 m²",
+        "7500 m²",
+        "3750 m²"
+      ],
+      "t": 3,
+      "izoh": "To'siqqa parallel tomonlar y bo'lsa, ular uchta bo'ladi, ikkinchi juft tomon esa x. Shartdan 2x + 3y = 300, yuza S = xy = y(300 − 3y)/2 bo'ladi. Hosila S' = (300 − 6y)/2, nolga tenglashtirsak y = 50, x = 75 va S = 3750 m². 5625 m² javobi bo'luvchi to'siqni unutib kvadrat olishdan, 7500 m² esa yuzani ikkilantirishdan, 2500 m² esa to'rni oltita teng bo'lakka bo'lishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "optimal-olcham-hosila",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#dd407cd5"
+    },
+    {
+      "q": "Ustaxonada hajmi 32 dm³ bo'lgan, asosi kvadrat shaklidagi qopqoqsiz idish yasalmoqda. Sarflanadigan material eng kam bo'lishi uchun idish asosining tomoni qancha bo'lishi kerak?",
+      "v": [
+        "2 dm",
+        "3,2 dm",
+        "4 dm",
+        "8 dm"
+      ],
+      "t": 2,
+      "izoh": "Asos tomoni x, balandligi h bo'lsa, hajmdan h = 32/x² kelib chiqadi. Sirt S = x² + 4xh = x² + 128/x, hosilasi S' = 2x − 128/x². S' = 0 dan x³ = 64, ya'ni x = 4 dm. 2 dm javobi idish balandligini asos tomoni deb yozishdan, 3,2 dm esa hajmni o'nga bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "optimal-olcham-hosila",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#3bef47f1"
+    },
+    {
+      "q": "Konserva zavodida berilgan hajmga ega silindr shaklidagi banka yasalmoqda va sarflanadigan tunuka eng kam bo'lishi talab qilinadi. Bunda banka balandligi bilan radiusi orasida qanday munosabat bo'lishi kerak?",
+      "v": [
+        "h = r",
+        "h = r/2",
+        "h = 2r",
+        "h = 3r"
+      ],
+      "t": 2,
+      "izoh": "Hajm V = πr²h dan h = V/(πr²), to'liq sirt esa S = 2πr² + 2πrh = 2πr² + 2V/r. Hosila S' = 4πr − 2V/r², uni nolga tenglashtirsak V = 2πr³ chiqadi. Bu qiymatni h formulasiga qo'ysak h = 2r, ya'ni balandlik asos diametriga teng bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kam-material-hosila",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#1f62f142"
+    },
+    {
+      "q": "Ustaga 48 m² tunukadan asosi kvadrat bo'lgan qopqoqsiz idish yasash buyurildi va material to'liq ishlatiladi. Idish hajmi eng katta bo'lganda u necha kub metrni tashkil qiladi?",
+      "v": [
+        "16 m³",
+        "32 m³",
+        "48 m³",
+        "64 m³"
+      ],
+      "t": 1,
+      "izoh": "Asos tomoni x, balandligi h bo'lsin: x² + 4xh = 48, bundan h = (48 − x²)/(4x). Hajm V = x²h = (48x − x³)/4, hosilasi V' = (48 − 3x²)/4. V' = 0 dan x² = 16, x = 4 va h = 2, demak V = 16 · 2 = 32 m³. 48 m³ javobi material yuzasini hajm deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-kam-material-hosila",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#bf68c4cd"
+    },
+    {
+      "q": "Bog'bon perimetri 36 sm bo'lgan to'g'ri to'rtburchak shaklidagi ko'chat qutisining tubini loyihalamoqda. Yuza eng katta bo'lishi uchun tomonlar qanday bo'lishi va yuza qancha bo'lishi kerak?",
+      "v": [
+        "9 sm va 9 sm, yuza 81 sm²",
+        "6 sm va 12 sm, yuza 72 sm²",
+        "8 sm va 10 sm, yuza 80 sm²",
+        "4 sm va 14 sm, yuza 56 sm²"
+      ],
+      "t": 0,
+      "izoh": "Perimetrdan tomonlar yig'indisi x + y = 18, demak y = 18 − x va yuza S = x(18 − x) = 18x − x². Hosila S' = 18 − 2x, uni nolga tenglashtirsak x = 9, ya'ni y = 9. Shakl kvadratga aylanadi va yuza 81 sm² bo'ladi. Qolgan variantlar ham perimetri 36 sm, lekin yuzasi kichikroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kam-material-hosila",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#43d52c42"
+    },
+    {
+      "q": "Fermer yuzasi 1800 m² bo'lgan to'g'ri to'rtburchak maydonni o'rab olmoqchi, maydonning bir tomoni daryoga tegib turgani uchun o'ralmaydi. Eng kam to'r uzunligi qancha bo'ladi?",
+      "v": [
+        "150 m",
+        "180 m",
+        "240 m",
+        "120 m"
+      ],
+      "t": 3,
+      "izoh": "Daryoga parallel tomon x, unga perpendikulyar tomonlar y bo'lsin: xy = 1800 va to'r uzunligi L = x + 2y. x = 1800/y ni qo'yamiz: L = 1800/y + 2y, hosilasi L' = 2 − 1800/y². L' = 0 dan y² = 900, y = 30, x = 60 va L = 120 m. 180 m javobi daryo tomonini ham o'rashdan, 150 m esa qaysi tomon ikkilanishini almashtirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-kam-material-hosila",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#7055e459"
+    },
+    {
+      "q": "Teatr chiptasi 30 000 so'm bo'lganda 200 ta chipta sotiladi. Har 1000 so'm arzonlashtirilganda sotuv 20 taga ortadi. Kunlik daromad eng katta bo'lishi uchun chipta narxi qancha bo'lishi kerak?",
+      "v": [
+        "20 000 so'm",
+        "22 000 so'm",
+        "25 000 so'm",
+        "30 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Arzonlashtirishlar soni x bo'lsa, narx 30 − x ming so'm, sotuv esa 200 + 20x ta. Daromad D = (30 − x)(200 + 20x) = 6000 + 400x − 20x², hosilasi D' = 400 − 40x. D' = 0 dan x = 10, demak narx 20 000 so'm, sotuv 400 ta va daromad 8 mln so'm. 30 000 so'm javobi narxni umuman o'zgartirmaslikka to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daromad-maksimumi-hosila",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#4b5fc747"
+    },
+    {
+      "q": "Do'kon mahsulot narxini x ming so'm qilib belgilaganda kunlik talab q(x) = 400 · e^(−0,05x) dona bo'ladi. Kunlik daromad R(x) = x · q(x) eng katta bo'ladigan narxni hosila yordamida toping.",
+      "v": [
+        "400 ming so'm",
+        "20 ming so'm",
+        "5 ming so'm",
+        "40 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Daromad modeli R(x) = 400x · e^(−0,05x). Ko'paytma hosilasi: R'(x) = 400 · e^(−0,05x) · (1 − 0,05x). Ko'rsatkichli ko'paytuvchi hech qachon nolga aylanmaydi, shuning uchun 1 − 0,05x = 0 bo'ladi va bundan x = 20 ming so'm chiqadi. Narx 20 dan kichik bo'lganda hosila musbat, katta bo'lganda manfiy, demak bu haqiqatan maksimum nuqtasi. 400 ming so'm javobi talab formulasidagi koeffitsientni javob deb olishdan, 5 ming so'm esa 0,05 o'rniga 0,2 ni bo'luvchi qilib olishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daromad-maksimumi-hosila",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#52f10a98"
+    },
+    {
+      "q": "Reklamaga x mln so'm sarflanganda korxona foydasi P(x) = 60 · ln(x + 1) − 5x mln so'm bo'ladi. Foyda eng katta bo'ladigan reklama xarajatini hosila yordamida aniqlang.",
+      "v": [
+        "60 mln so'm",
+        "13 mln so'm",
+        "11 mln so'm",
+        "12 mln so'm"
+      ],
+      "t": 2,
+      "izoh": "Logarifmik hadning hosilasi 60/(x + 1) ga teng, demak P'(x) = 60/(x + 1) − 5. Uni nolga tenglashtiramiz: 60/(x + 1) = 5, bundan x + 1 = 12 va x = 11 mln so'm. Xarajat 11 dan kichik bo'lganda hosila musbat, katta bo'lganda manfiy, ya'ni bu maksimum nuqtasi. 12 mln so'm javobi x + 1 = 12 tenglikdan x ni ajratmay qolishdan, 13 mln so'm birni ayirish o'rniga qo'shishdan, 60 mln so'm esa logarifm oldidagi koeffitsientni javob deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daromad-maksimumi-hosila",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#a0806685"
+    },
+    {
+      "q": "Tog' kurortining oylik daromadi D(t) = 90 + 40 · cos(πt/6) mln so'm modeli bilan o'zgaradi, bu yerda t = 0 yanvarga mos keladi. Hosila yordamida daromad eng katta bo'ladigan oyni va o'sha daromadni aniqlang.",
+      "v": [
+        "Iyulda, 130 mln so'm",
+        "Yanvarda, 90 mln so'm",
+        "Iyulda, 50 mln so'm",
+        "Yanvarda, 130 mln so'm"
+      ],
+      "t": 3,
+      "izoh": "Hosila D'(t) = −40 · (π/6) · sin(πt/6) bo'lib, u t = 0 va t = 6 da nolga aylanadi. Yanvardan keyin sin(πt/6) musbat, demak hosila manfiy va daromad kamayib boradi; iyuldan keyin esa aksincha ortadi. Shuning uchun t = 0, ya'ni yanvar maksimum nuqtasi: D(0) = 90 + 40 = 130 mln so'm. Iyulda kosinus −1 ga teng bo'lib, D(6) = 50 mln so'm — bu eng kichik qiymat. 90 mln so'm esa tebranishning o'rtacha darajasi, maksimum emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daromad-maksimumi-hosila",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#dccc1b65"
+    },
+    {
+      "q": "Yangi ilovaning umumiy yuklab olishlari soni N(t) = 5000 · ln(t + 1) ta modeli bilan o'sadi, bu yerda t — kunlar soni va ln10 ≈ 2,303 deb olinadi. To'qqizinchi kun oxirida yuklab olish tezligi qanday bo'ladi?",
+      "v": [
+        "kuniga 5000 ta",
+        "kuniga 11 515 ta",
+        "kuniga 556 ta",
+        "kuniga 500 ta"
+      ],
+      "t": 3,
+      "izoh": "Tezlik funksiyaning hosilasiga teng: N'(t) = 5000/(t + 1). t = 9 ni qo'yamiz: N'(9) = 5000 : 10 = 500, ya'ni o'sha kuni ilova kuniga taxminan 500 marta yuklab olinadi. 11 515 ta javobi hosila o'rniga N(9) = 5000 · ln10 umumiy sonini yozishdan, 556 ta maxrajda t + 1 o'rniga t ni olishdan, 5000 ta esa logarifm oldidagi koeffitsientni javob deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-ozgarish-tezligi",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#7ce7bebf"
+    },
+    {
+      "q": "Prujinaga osilgan yukning muvozanat holatidan chetlanishi x(t) = 6 · sin(πt/4) sm modeli bilan o'zgaradi, t sekundlarda beriladi va π ≈ 3,14 deb olinadi. Harakat boshlangan paytda, ya'ni t = 0 da yukning tezligi qanchani tashkil qiladi?",
+      "v": [
+        "0 sm/s",
+        "6 sm/s",
+        "4,71 sm/s",
+        "18,84 sm/s"
+      ],
+      "t": 2,
+      "izoh": "Tezlik chetlanishning hosilasi: murakkab funksiya qoidasiga ko'ra x'(t) = 6 · (π/4) · cos(πt/4) = 1,5π · cos(πt/4). t = 0 da kosinus birga teng, demak tezlik 1,5 · 3,14 = 4,71 sm/s. 0 sm/s javobi tezlik o'rniga chetlanish qiymatini olishdan, 6 sm/s amplitudani tezlik deb hisoblashdan, 18,84 sm/s esa murakkab funksiya hosilasida ichki koeffitsientni π/4 emas, π deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-ozgarish-tezligi",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#47a6a126"
+    },
+    {
+      "q": "Shahar aholisi N(t) = 120 · 1,05^t ming kishi modeli bilan o'smoqda, t — kuzatuv boshlangandan keyingi yillar soni. ln1,05 ≈ 0,0488 va 1,05⁵ ≈ 1,276 deb olib, beshinchi yil oxiridagi o'sish tezligini toping.",
+      "v": [
+        "yiliga 153,1 ming kishi",
+        "yiliga 7,5 ming kishi",
+        "yiliga 5,9 ming kishi",
+        "yiliga 6,6 ming kishi"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichli funksiyaning hosilasi N'(t) = 120 · 1,05^t · ln1,05 ko'rinishida bo'ladi. t = 5 uchun 120 · 1,276 = 153,1 va uni ln1,05 ga ko'paytiramiz: 153,1 · 0,0488 ≈ 7,5 ming kishi, ya'ni o'sha paytda aholi yiliga taxminan 7,5 ming kishiga ortadi. 153,1 javobi tezlik o'rniga aholining o'sha yildagi sonini yozishdan, 5,9 esa 1,05⁵ ko'paytuvchisini tushirib qoldirishdan, 6,6 esa besh yillik o'rtacha o'sishni hisoblashdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-ozgarish-tezligi",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#1f912c24"
+    },
+    {
+      "q": "Bakteriyalar soni N(t) = 200 · 3^t modeli bilan o'sadi, t soatlarda beriladi va ln3 ≈ 1,1 deb olinadi. Ikkinchi soatda bakteriyalar sonining o'sish tezligi qanchani tashkil qiladi?",
+      "v": [
+        "soatiga 1980 ta",
+        "soatiga 600 ta",
+        "soatiga 1800 ta",
+        "soatiga 3960 ta"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichli funksiyaning hosilasi N'(t) = 200 · 3^t · ln3 ko'rinishida bo'ladi. t = 2 uchun 3² = 9, demak N'(2) = 200 · 9 · 1,1 = 1980. Ya'ni o'sha paytda son soatiga taxminan 1980 taga ortadi. 1800 javobi hosila o'rniga N(2) qiymatini yozishdan, ya'ni ln3 ko'paytuvchisini unutishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-ozgarish-tezligi",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#c215ac71"
+    },
+    {
+      "q": "Dori qonga yuborilgandan keyin uning konsentratsiyasi C(t) = 20t · e^(−0,5t) mg/l modeli bilan o'zgaradi, t soatlarda beriladi. Konsentratsiya qaysi vaqt oralig'ida ortib boradi?",
+      "v": [
+        "0 < t < 0,5",
+        "0 < t < 2",
+        "t > 2",
+        "0 < t < 20"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma hosilasini topamiz: C'(t) = 20 · e^(−0,5t) + 20t · (−0,5) · e^(−0,5t) = 20 · e^(−0,5t) · (1 − 0,5t). Ko'rsatkichli ko'paytuvchi doim musbat, shuning uchun hosilaning ishorasini 1 − 0,5t belgilaydi. U musbat bo'lishi uchun t < 2 kerak, vaqt esa manfiy bo'lmaydi, demak javob 0 < t < 2. Ikkinchi soatdan keyin hosila manfiy bo'lib, dori miqdori qonda kamaya boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "model-monotonligini-tekshirish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#4b901197"
+    },
+    {
+      "q": "Sutka davomida havo harorati T(t) = 18 + 6 · sin(πt/12) °C modeli bilan o'zgaradi, bu yerda t — sutkaning soati. Hosila yordamida harorat qaysi oraliqda pasayib borishini aniqlang.",
+      "v": [
+        "0 < t < 6",
+        "0 < t < 12",
+        "12 < t < 24",
+        "6 < t < 18"
+      ],
+      "t": 3,
+      "izoh": "Hosila T'(t) = 6 · (π/12) · cos(πt/12) = (π/2) · cos(πt/12). Harorat pasayishi uchun hosila manfiy, ya'ni kosinus manfiy bo'lishi kerak. Kosinus πt/12 burchagi π/2 bilan 3π/2 orasida bo'lganda manfiy bo'ladi, bundan 6 < t < 18 kelib chiqadi. Demak harorat soat 6 da eng yuqori nuqtaga chiqadi va soat 18 gacha pasayadi, keyin yana ko'tarila boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-monotonligini-tekshirish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#2f895f45"
+    },
+    {
+      "q": "Ombordagi zaxira N(t) = 50 · 0,9^t tonna modeli bilan o'zgaradi, t — kunlar soni. Modelning hosilasi va o'zgarish xarakteri haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Hosila doim manfiy, zaxira butun sohada kamayib boradi",
+        "Hosila doim musbat, zaxira uzluksiz ortadi",
+        "Hosila avval musbat, keyin manfiy bo'ladi",
+        "Hosila nolga teng, zaxira o'zgarmay qoladi"
+      ],
+      "t": 0,
+      "izoh": "Hosila N'(t) = 50 · 0,9^t · ln0,9 ko'rinishida bo'ladi. Bu yerda 50 va 0,9^t hamisha musbat, ln0,9 esa manfiy, chunki 0,9 birdan kichik. Demak ko'paytma har doim manfiy va zaxira butun sohada kamayadi, hech qayerda ortmaydi va nolga aylanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "model-monotonligini-tekshirish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#630e0750"
+    },
+    {
+      "q": "Suv havzasidagi sath h(t) = 5 + 3 · sin(πt/6) metr modeli bilan o'zgaradi, t soatlarda beriladi. Hosila yordamida t = 3 paytda sath ortayotganini yoki kamayayotganini aniqlang.",
+      "v": [
+        "Sath ortib bormoqda",
+        "Sath kamayib bormoqda",
+        "Hosila nolga teng, sath eng yuqori nuqtada",
+        "Bu nuqtada hosila mavjud emas"
+      ],
+      "t": 2,
+      "izoh": "Murakkab funksiya hosilasi h'(t) = 3 · (π/6) · cos(πt/6) = (π/2) · cos(πt/6). t = 3 uchun burchak π/2 bo'ladi va cos(π/2) = 0, demak h'(3) = 0. Hosila bu nuqtada ishorasini musbatdan manfiyga o'zgartiradi, ya'ni sath eng yuqori qiymatga chiqqan: h(3) = 5 + 3 = 8 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "model-monotonligini-tekshirish",
+      "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik#f0faf839"
+    }
+  ]
+}

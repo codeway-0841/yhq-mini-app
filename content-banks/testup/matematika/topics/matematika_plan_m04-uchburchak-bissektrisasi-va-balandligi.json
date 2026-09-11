@@ -1,0 +1,1609 @@
+{
+  "nom": "Uchburchak bissektrisasi va balandligi",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "ABC uchburchakda AB = 12 sm, AC = 18 sm va BC = 20 sm. A uchidan chiqqan bissektrisa BC tomonni D nuqtada kesib o'tadi. BD kesmaning uzunligi necha santimetr?",
+      "v": [
+        "8 sm",
+        "12 sm",
+        "10 sm",
+        "7,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Bissektrisa qarshi tomonni yon tomonlarga proporsional bo'laklarga ajratadi: BD:DC = AB:AC = 12:18 = 2:3. Demak BC ning 5 ulushidan BD ga 2 tasi tegadi: BD = 20·2/5 = 8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='113.2,94.5 56,205.5 264,205.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='113.2' y1='94.5' x2='139.2' y2='205.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 103.1,114.1 A 22 22 0 0 0 118.2,116' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 119.4,120.8 A 27 27 0 0 0 134.9,110.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='137.1' y='224.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='85.8' y='218.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='70.3' y='149.6' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='202.4' y='148.2' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='106.6' y='82.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.3' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.2' y='214.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bissektrisa-nisbat-kesma",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#c5ca76e7"
+    },
+    {
+      "q": "KLM uchburchakda KL = 15 sm, KM = 21 sm va LM = 24 sm. K burchakning bissektrisasi LM tomonni N nuqtada kesadi. NM kesma necha santimetrga teng?",
+      "v": [
+        "10 sm",
+        "12 sm",
+        "14 sm",
+        "6 sm"
+      ],
+      "t": 2,
+      "izoh": "Bissektrisa xossasiga ko'ra LN:NM = KL:KM = 15:21 = 5:7. LM tomon 12 ta teng ulushga bo'linadi, bitta ulush 24:12 = 2 sm. NM ga 7 ulush tegadi: NM = 7·2 = 14 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='121,93.7 56,206.3 264,206.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121' y1='93.7' x2='142.7' y2='206.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 110,112.8 A 22 22 0 0 0 125.2,115.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 126.1,120.2 A 27 27 0 0 0 142.2,110.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='140.9' y='225.2' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='74.2' y='149.4' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='206.4' y='148.3' font-size='13' fill='%23334155' text-anchor='middle'%3E21 sm%3C/text%3E%3Ctext x='164.9' y='224.5' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='115.4' y='81.6' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='40.3' y='216.8' font-size='13' fill='%23334155' text-anchor='middle'%3EL%3C/text%3E%3Ctext x='280.2' y='215.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bissektrisa-nisbat-kesma",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#4695e6aa"
+    },
+    {
+      "q": "ABC uchburchakda AB = 8 sm va AC = 12 sm. A burchak bissektrisasi BC tomonni D nuqtada kesadi hamda DC = 9 sm ekani ma'lum. BD kesma necha santimetr?",
+      "v": [
+        "13,5 sm",
+        "6 sm",
+        "4,5 sm",
+        "9 sm"
+      ],
+      "t": 1,
+      "izoh": "BD:DC = AB:AC bo'lgani uchun BD = DC·AB:AC = 9·8/12 = 6 sm. Nisbatni teskari qo'ysak 13,5 sm chiqadi, bu esa xato. AB ≠ AC bo'lgani uchun bissektrisa BC ni teng ikkiga bo'lmaydi, shuning uchun 9 sm ham javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='123,105.8 56,194.2 264,194.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123' y1='105.8' x2='139.2' y2='194.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 109.7,123.3 A 22 22 0 0 0 127,127.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 127.9,132.4 A 27 27 0 0 0 145.9,120.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='135.1' y='212.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='84.7' y='205.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='214.8' y='205.4' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='75' y='150.3' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='207.8' y='149.4' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='116.5' y='94.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.8' y='203.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.5' y='202.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bissektrisa-nisbat-kesma",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#216aa9c6"
+    },
+    {
+      "q": "ABC uchburchakning BC tomoni 35 sm, AB = 20 sm va AC = 30 sm. A uchidan o'tkazilgan bissektrisa BC ni D nuqtada kesadi. DC va BD kesmalarning ayirmasi necha santimetr?",
+      "v": [
+        "10 sm",
+        "14 sm",
+        "21 sm",
+        "7 sm"
+      ],
+      "t": 3,
+      "izoh": "BD:DC = 20:30 = 2:3, ulush 35:5 = 7 sm. Demak BD = 2·7 = 14 sm, DC = 3·7 = 21 sm. Ayirma DC − BD = 21 − 14 = 7 sm. Tomonlar ayirmasi 10 sm bilan chalkashtirmaslik kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='117.6,99.2 56,200.8 264,200.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='117.6' y1='99.2' x2='139.2' y2='200.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 106.2,118 A 22 22 0 0 0 122.1,120.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 123.2,125.6 A 27 27 0 0 0 139.7,114.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='136.3' y='219.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='72.4' y='149.9' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='204.8' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Ctext x='165.8' y='218.7' font-size='13' fill='%23334155' text-anchor='middle'%3E35 sm%3C/text%3E%3Ctext x='111' y='87.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.1' y='210.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.3' y='209.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-nisbat-kesma",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#a05ad756"
+    },
+    {
+      "q": "MNK uchburchakda MN = 24 sm, NK = 16 sm va MK = 30 sm. N uchidan chiqqan bissektrisa MK tomonni P nuqtada kesib o'tadi. MP kesma uzunligi qancha?",
+      "v": [
+        "12 sm",
+        "18 sm",
+        "15 sm",
+        "20 sm"
+      ],
+      "t": 1,
+      "izoh": "MP:PK = MN:NK = 24:16 = 3:2. MK tomon 5 ulushga bo'linadi, bitta ulush 30:5 = 6 sm. MP ga 3 ulush to'g'ri keladi: MP = 3·6 = 18 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='197,105.8 56,194.2 264,194.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='197' y1='105.8' x2='180.8' y2='194.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 178.3,117.5 A 22 22 0 0 0 193,127.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 192.1,132.4 A 27 27 0 0 0 213.3,127.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='184.9' y='212.6' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='112.2' y='149.4' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='245' y='150.3' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='154.2' y='212' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Ctext x='203.5' y='94.1' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='39.5' y='202.4' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='280.2' y='203.4' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bissektrisa-nisbat-kesma",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#c001f701"
+    },
+    {
+      "q": "AD kesma ABC uchburchakning A burchagidan chiqqan bissektrisasi. U BC tomonni BD = 9 sm va DC = 12 sm bo'laklarga ajratdi. AB = 12 sm bo'lsa, AC tomon necha santimetr?",
+      "v": [
+        "16 sm",
+        "9 sm",
+        "15 sm",
+        "21 sm"
+      ],
+      "t": 0,
+      "izoh": "AB:AC = BD:DC munosabatidan AC = AB·DC:BD = 12·12/9 = 16 sm. Nisbatni teskari yozgan o'quvchi 9 sm oladi, bu esa xato. BD va DC ni qo'shib olingan 21 sm — bu BC tomon.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='133.6,105 56,195 264,195' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='133.6' y1='105' x2='145.1' y2='195' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 119.2,121.6 A 22 22 0 0 0 136.4,126.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 137,131.8 A 27 27 0 0 0 155.8,120.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142.2' y='213.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='87.7' y='206.7' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='217.6' y='206.4' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='80.3' y='150.1' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='128.8' y='92.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.8' y='204.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.4' y='203.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bissektrisa-nisbat-teskari",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#e7ee7d06"
+    },
+    {
+      "q": "ABC uchburchakda A burchak bissektrisasi qarshi tomonni 12 sm va 18 sm bo'laklarga ajratdi. Katta bo'lakka tegib turgan AC tomon 24 sm bo'lsa, AB tomon necha santimetr?",
+      "v": [
+        "36 sm",
+        "12 sm",
+        "18 sm",
+        "16 sm"
+      ],
+      "t": 3,
+      "izoh": "12 sm lik bo'lak AB ga, 18 sm lik bo'lak AC ga mos keladi: AB:AC = 12:18 = 2:3. Bundan AB = 24·2/3 = 16 sm. Nisbat teskari qo'yilsa 36 sm chiqadi, lekin unda katta bo'lak (18 sm) qisqa tomonga to'g'ri kelib qolardi — bu bissektrisa xossasiga zid.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='123,105.8 56,194.2 264,194.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123' y1='105.8' x2='139.2' y2='194.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 109.7,123.3 A 22 22 0 0 0 127,127.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 127.9,132.4 A 27 27 0 0 0 145.9,120.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='135.1' y='212.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='84.7' y='205.8' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='214.8' y='205.4' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='207.8' y='149.4' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='116.5' y='94.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.8' y='203.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.5' y='202.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-nisbat-teskari",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#ace5592e"
+    },
+    {
+      "q": "ABC uchburchakda AB = 14 sm va AC = 21 sm. A burchak bissektrisasi BC ni D nuqtada kesadi va BD = 10 sm. BC tomonning to'liq uzunligi necha santimetr?",
+      "v": [
+        "20 sm",
+        "15 sm",
+        "25 sm",
+        "35 sm"
+      ],
+      "t": 2,
+      "izoh": "BD:DC = 14:21 = 2:3. BD = 10 sm ikki ulushga teng, demak bitta ulush 5 sm va DC = 3·5 = 15 sm. BC = BD + DC = 10 + 15 = 25 sm. 35 sm esa yon tomonlar yig'indisi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='119.2,101.1 56,198.9 264,198.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119.2' y1='101.1' x2='139.2' y2='198.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 107.3,119.6 A 22 22 0 0 0 123.6,122.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 124.6,127.5 A 27 27 0 0 0 141.6,116.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='136' y='217.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='85.1' y='211.2' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='73.2' y='150' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='205.7' y='148.9' font-size='13' fill='%23334155' text-anchor='middle'%3E21 sm%3C/text%3E%3Ctext x='112.7' y='89.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40' y='208.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.4' y='207.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-nisbat-teskari",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#c55d7d5e"
+    },
+    {
+      "q": "ABC uchburchakning perimetri 90 sm, AB = 24 sm va AC = 36 sm. A uchidan chiqqan bissektrisa BC ni D nuqtada kesadi. DC kesma necha santimetr?",
+      "v": [
+        "15 sm",
+        "20 sm",
+        "18 sm",
+        "30 sm"
+      ],
+      "t": 2,
+      "izoh": "Avval uchinchi tomonni topamiz: BC = 90 − 24 − 36 = 30 sm. So'ng BD:DC = 24:36 = 2:3, ulush 30:5 = 6 sm. Demak DC = 3·6 = 18 sm. Tomonlar teng bo'lmagani uchun BC ning yarmi 15 sm javob bo'la olmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'320'%20height%3D'300'%20viewBox%3D'0%200%20320%20300'%3E%3Crect%20width%3D'320'%20height%3D'300'%20fill%3D'%23ffffff'%2F%3E%3Cpolygon%20points%3D'76.8%2C67.5%2056%2C232.5%20264%2C232.5'%20stroke%3D'%23334155'%20stroke-width%3D'2'%20fill%3D'none'%2F%3E%3Cline%20x1%3D'76.8'%20y1%3D'67.5'%20x2%3D'139.2'%20y2%3D'232.5'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20fill%3D'none'%2F%3E%3Cpath%20d%3D'M%2074%2C89.3%20A%2022%2022%200%200%200%2084.6%2C88'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20fill%3D'none'%2F%3E%3Cpath%20d%3D'M%2086.3%2C92.7%20A%2027%2027%200%200%200%2097%2C85.3'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20fill%3D'none'%2F%3E%3Ctext%20x%3D'141.1'%20y%3D'251.4'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3ED%3C%2Ftext%3E%3Ctext%20x%3D'213.3'%20y%3D'245.9'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E%3F%3C%2Ftext%3E%3Ctext%20x%3D'52.6'%20y%3D'148.2'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E24%20sm%3C%2Ftext%3E%3Ctext%20x%3D'182.6'%20y%3D'145.2'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E36%20sm%3C%2Ftext%3E%3Ctext%20x%3D'69.1'%20y%3D'56.3'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EA%3C%2Ftext%3E%3Ctext%20x%3D'42.2'%20y%3D'246.5'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EB%3C%2Ftext%3E%3Ctext%20x%3D'279.7'%20y%3D'243.1'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EC%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-nisbat-teskari",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#c77da7c9"
+    },
+    {
+      "q": "ABC uchburchakda AB:AC nisbat 3:5 ga teng va BC tomon 56 sm. A burchak bissektrisasi BC ni ikki bo'lakka ajratadi. Bo'laklardan kichigi necha santimetr?",
+      "v": [
+        "28 sm",
+        "35 sm",
+        "16,8 sm",
+        "21 sm"
+      ],
+      "t": 3,
+      "izoh": "Bo'laklar ham 3:5 nisbatda bo'ladi, jami 8 ulush. Bitta ulush 56:8 = 7 sm. Kichik bo'lak 3 ulush: 3·7 = 21 sm, kattasi esa 5·7 = 35 sm. AB:AC = 3:5 bo'lgani uchun tomonlar teng emas, shuning uchun bissektrisa BC ni teng ikkiga bo'lmaydi va 28 sm javob bo'la olmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'320'%20height%3D'300'%20viewBox%3D'0%200%20320%20300'%3E%3Crect%20width%3D'320'%20height%3D'300'%20fill%3D'%23ffffff'%2F%3E%3Cpolygon%20points%3D'119.4%2C113%2056%2C187%20264%2C187'%20stroke%3D'%23334155'%20stroke-width%3D'2'%20fill%3D'none'%2F%3E%3Cline%20x1%3D'119.4'%20y1%3D'113'%20x2%3D'134'%20y2%3D'187'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20fill%3D'none'%2F%3E%3Cpath%20d%3D'M%20105.1%2C129.7%20A%2022%2022%200%200%200%20123.6%2C134.5'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20fill%3D'none'%2F%3E%3Cpath%20d%3D'M%20124.6%2C139.4%20A%2027%2027%200%200%200%20143.4%2C125.3'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20fill%3D'none'%2F%3E%3Ctext%20x%3D'127.2'%20y%3D'204.4'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3ED%3C%2Ftext%3E%3Ctext%20x%3D'167.2'%20y%3D'204.2'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E56%20sm%3C%2Ftext%3E%3Ctext%20x%3D'111.2'%20y%3D'102'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EA%3C%2Ftext%3E%3Ctext%20x%3D'39.6'%20y%3D'195.5'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EB%3C%2Ftext%3E%3Ctext%20x%3D'280.6'%20y%3D'194.5'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EC%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bissektrisa-nisbat-teskari",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#27a4d85a"
+    },
+    {
+      "q": "Nodira uchburchak shaklidagi tomorqasining bir burchagidan qarshi tomondagi ariqqacha to'g'ri so'qmoq soldi va bu so'qmoq shu burchakni teng ikkiga bo'ladi. Burchakdan chiquvchi tomonlar 24 m va 36 m, ariq bo'ylab yotgan tomon esa 45 m. So'qmoq ariqni ajratgan bo'laklardan kichigi necha metr?",
+      "v": [
+        "18 m",
+        "27 m",
+        "22,5 m",
+        "20 m"
+      ],
+      "t": 0,
+      "izoh": "So'qmoq — bissektrisa, shuning uchun ariqning bo'laklari 24:36 = 2:3 nisbatda. Jami 5 ulush, bitta ulush 45:5 = 9 m. Kichik bo'lak 2 ulush: 2·9 = 18 m, kattasi 27 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='123,105.8 56,194.2 264,194.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123' y1='105.8' x2='139.2' y2='194.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 109.7,123.3 A 22 22 0 0 0 127,127.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 127.9,132.4 A 27 27 0 0 0 145.9,120.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='135.1' y='212.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='75' y='150.3' font-size='13' fill='%23334155' text-anchor='middle'%3E24 m%3C/text%3E%3Ctext x='207.8' y='149.4' font-size='13' fill='%23334155' text-anchor='middle'%3E36 m%3C/text%3E%3Ctext x='165.8' y='212' font-size='13' fill='%23334155' text-anchor='middle'%3E45 m%3C/text%3E%3Ctext x='116.5' y='94.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.8' y='203.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.5' y='202.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-nisbat-kontekst",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#1484c953"
+    },
+    {
+      "q": "Uchburchak shaklidagi maydonchaning bir burchagidan chiqqan yorug'lik chizig'i shu burchakni teng ikkiga bo'lib, qarshi tomonni 21 m va 28 m bo'laklarga ajratdi. Burchakdan chiquvchi qisqa tomon 33 m bo'lsa, uzun tomon necha metr?",
+      "v": [
+        "24,75 m",
+        "44 m",
+        "40 m",
+        "49 m"
+      ],
+      "t": 1,
+      "izoh": "Qisqa tomon 21 m lik bo'lakka, uzun tomon 28 m lik bo'lakka mos keladi. Demak uzun tomon = 33·28/21 = 44 m. Nisbat teskari olinsa 24,75 m chiqadi, 49 m esa qarshi tomonning to'liq uzunligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='123.3,88.6 56,211.4 264,211.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123.3' y1='88.6' x2='145.1' y2='211.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 112.7,107.9 A 22 22 0 0 0 127.2,110.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 128,115.2 A 27 27 0 0 0 143.6,106.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='144.2' y='230.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='89.2' y='225.3' font-size='13' fill='%23334155' text-anchor='middle'%3E21 m%3C/text%3E%3Ctext x='216.7' y='224.2' font-size='13' fill='%23334155' text-anchor='middle'%3E28 m%3C/text%3E%3Ctext x='75.5' y='149' font-size='13' fill='%23334155' text-anchor='middle'%3E33 m%3C/text%3E%3Ctext x='118.4' y='76.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.5' y='222.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280' y='221.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-nisbat-kontekst",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#b9954116"
+    },
+    {
+      "q": "Bekzod uchburchak shaklidagi yerini ikki o'g'liga bo'lib berdi: bir burchakdan qarshi tomongacha shu burchakni teng ikkiga bo'luvchi chegara chizdi. Burchakdan chiquvchi tomonlar 45 m va 75 m, qarshi tomon 96 m. Chegara qarshi tomonni ajratgan katta bo'lak necha metr?",
+      "v": [
+        "36 m",
+        "48 m",
+        "75 m",
+        "60 m"
+      ],
+      "t": 3,
+      "izoh": "Bo'laklar 45:75 = 3:5 nisbatda bo'ladi. Jami 8 ulush, bitta ulush 96:8 = 12 m. Katta bo'lak 5 ulush: 5·12 = 60 m, kichigi esa 3·12 = 36 m. Yer teng bo'linmagani uchun 48 m javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='119.4,113 56,187 264,187' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119.4' y1='113' x2='134' y2='187' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 105.1,129.7 A 22 22 0 0 0 123.6,134.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 124.6,139.4 A 27 27 0 0 0 143.4,125.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='127.2' y='204.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='73' y='150.9' font-size='13' fill='%23334155' text-anchor='middle'%3E45 m%3C/text%3E%3Ctext x='206.2' y='150' font-size='13' fill='%23334155' text-anchor='middle'%3E75 m%3C/text%3E%3Ctext x='167.2' y='204.2' font-size='13' fill='%23334155' text-anchor='middle'%3E96 m%3C/text%3E%3Ctext x='111.2' y='102' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.6' y='195.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.6' y='194.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-nisbat-kontekst",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#0ec9c3a6"
+    },
+    {
+      "q": "Uchburchak shaklidagi hovlining bir burchagidan bissektrisa o'tkazilib, qarshi tomondagi devor ikki bo'lakka ajratildi. Burchakdan chiquvchi tomonlar 18 m va 30 m, qarshi devor 32 m. Har metrini ta'mirlash 40 000 so'm turadi. Uzun bo'lakni ta'mirlashga qancha pul ketadi?",
+      "v": [
+        "480 000 so'm",
+        "800 000 so'm",
+        "640 000 so'm",
+        "1 280 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Devor bo'laklari 18:30 = 3:5 nisbatda, jami 8 ulush. Bitta ulush 32:8 = 4 m, uzun bo'lak 5·4 = 20 m. Ta'mirlash narxi 20·40 000 = 800 000 so'm. Butun devor uchun 1 280 000 so'm bo'lardi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='101.5,96.1 56,203.9 264,203.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='101.5' y1='96.1' x2='134' y2='203.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 92.9,116.4 A 22 22 0 0 0 107.9,117.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 109.3,122 A 27 27 0 0 0 124,111' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='131.3' y='222.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='64.3' y='149.8' font-size='13' fill='%23334155' text-anchor='middle'%3E18 m%3C/text%3E%3Ctext x='196.6' y='148.1' font-size='13' fill='%23334155' text-anchor='middle'%3E30 m%3C/text%3E%3Ctext x='167.2' y='221.1' font-size='13' fill='%23334155' text-anchor='middle'%3E32 m%3C/text%3E%3Ctext x='93.4' y='85.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.4' y='214.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.3' y='212.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-nisbat-kontekst",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#f09d92a8"
+    },
+    {
+      "q": "Uchta qishloq uchburchak hosil qiladi. A qishloqdan chiqqan yo'l A dagi burchakni teng ikkiga bo'lib, B va C qishloqlarni tutashtiruvchi 42 km lik yo'lni D nuqtada kesadi. AB = 30 km va AC = 40 km bo'lsa, D nuqta B qishloqdan necha kilometr uzoqda?",
+      "v": [
+        "24 km",
+        "21 km",
+        "18 km",
+        "31,5 km"
+      ],
+      "t": 2,
+      "izoh": "BD:DC = AB:AC = 30:40 = 3:4. Jami 7 ulush, bitta ulush 42:7 = 6 km. BD = 3·6 = 18 km, DC = 4·6 = 24 km. Yo'lning o'rtasi 21 km bo'lardi, lekin bissektrisa o'rtadan o'tmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='118.7,82.7 56,217.3 264,217.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='118.7' y1='82.7' x2='145.1' y2='217.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 109.4,102.6 A 22 22 0 0 0 123,104.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 123.9,109.2 A 27 27 0 0 0 138.5,101' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='144.8' y='236.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='73.3' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3E30 km%3C/text%3E%3Ctext x='204.8' y='147.3' font-size='13' fill='%23334155' text-anchor='middle'%3E40 km%3C/text%3E%3Ctext x='164.4' y='249.7' font-size='13' fill='%23334155' text-anchor='middle'%3E42 km%3C/text%3E%3Ctext x='113.7' y='70.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.8' y='228.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.9' y='227.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-nisbat-kontekst",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#c3ee4cb4"
+    },
+    {
+      "q": "ABC uchburchakda ∠A = 120°, AB = 12 sm va AC = 6 sm. Shu burchakdan chiqqan bissektrisaning uzunligi necha santimetr?",
+      "v": [
+        "4 sm",
+        "9 sm",
+        "8 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Bissektrisa uzunligi l = 2·AB·AC·cos(A/2):(AB + AC) formulasi bilan topiladi. Bu yerda cos60° = 1/2, shuning uchun l = 2·12·6·(1/2):18 = 72:18 = 4 sm. Kosinus ko'paytuvchisi unutilsa 8 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='204.6,124.3 56,175.7 264,175.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='204.6' y1='124.3' x2='194.7' y2='175.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 183.8,131.5 A 22 22 0 0 0 200.4,145.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 199.5,150.8 A 27 27 0 0 0 225,141.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='206' y='189.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='115.6' y='151.2' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='249.1' y='151.9' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='183.6' y='148.5' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='215.7' y='115.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.2' y='182.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.7' y='182.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-uzunlik",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#7c8e66c5"
+    },
+    {
+      "q": "Uchburchakning A burchagi 60° ga teng, undan chiquvchi tomonlar esa 5 sm va 20 sm. A burchak bissektrisasining uzunligini toping.",
+      "v": [
+        "4√3 sm",
+        "8√3 sm",
+        "4 sm",
+        "12,5 sm"
+      ],
+      "t": 0,
+      "izoh": "l = 2·5·20·cos30°:(5 + 20) formulasidan foydalanamiz. cos30° = √3/2, demak l = 200·(√3/2):25 = 100√3:25 = 4√3 sm. Yarim burchak o'rniga to'liq burchak olinsa xato javob chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='264,124.3 56,175.7 249.1,175.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='264' y1='124.3' x2='210.5' y2='175.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 242.6,129.6 A 22 22 0 0 0 248.1,139.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 244.5,143 A 27 27 0 0 0 256.5,150.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='222.1' y='189.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='145.6' y='149.8' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='271.4' y='152.1' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='234.9' y='137.7' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='279.4' y='121.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.1' y='181.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='265.5' y='184.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-uzunlik",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#5a156d6f"
+    },
+    {
+      "q": "ABC uchburchakda AD bissektrisa. U BC tomonni BD = 4 sm va DC = 9 sm bo'laklarga ajratadi hamda AB·AC ko'paytma 72 sm² ga teng. AD bissektrisaning uzunligi necha santimetr?",
+      "v": [
+        "6√3 sm",
+        "6√2 sm",
+        "6 sm",
+        "36 sm"
+      ],
+      "t": 2,
+      "izoh": "Bissektrisa uzunligi uchun l² = AB·AC − BD·DC munosabati o'rinli. Demak l² = 72 − 4·9 = 72 − 36 = 36 va l = 6 sm. Ayirish o'rniga qo'shilsa √108, ya'ni 6√3 sm degan xato javob chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='80,106.4 56,193.6 264,193.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='106.4' x2='120' y2='193.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 74.2,127.6 A 22 22 0 0 0 89.2,126.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 91.2,130.9 A 27 27 0 0 0 104.4,117.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='113.8' y='211.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='86.4' y='160.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='75.4' y='205.7' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='205.4' y='204.3' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='68.5' y='97.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.1' y='203.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.6' y='201.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-uzunlik",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#0e3d4d71"
+    },
+    {
+      "q": "AD kesma ABC uchburchakning bissektrisasi bo'lib, BC tomonni 6 sm va 8 sm bo'laklarga ajratadi. AB·AC ko'paytma 96 sm² bo'lsa, AD necha santimetr?",
+      "v": [
+        "12 sm",
+        "4√3 sm",
+        "4√6 sm",
+        "48 sm"
+      ],
+      "t": 1,
+      "izoh": "l² = AB·AC − BD·DC formulasiga qiymatlarni qo'yamiz: l² = 96 − 6·8 = 96 − 48 = 48. Bundan l = √48 = 4√3 sm. Kvadrat ildiz olish unutilsa 48 sm, bo'laklar ko'paytmasi hisobga olinmasa 4√6 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='130.3,99.1 56,200.9 264,200.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='130.3' y1='99.1' x2='145.1' y2='200.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 117.3,116.8 A 22 22 0 0 0 133.5,120.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 134.2,125.8 A 27 27 0 0 0 151.8,115.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='143' y='219.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='122.9' y='156.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='88.2' y='213.4' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='217.3' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='125.5' y='86.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40' y='210.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.3' y='209.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-uzunlik",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#f84b79fa"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning to'g'ri burchagi A uchida joylashgan, katetlari esa AB = 12 sm va AC = 4 sm. To'g'ri burchakdan chiqqan bissektrisaning uzunligi necha santimetr?",
+      "v": [
+        "6√2 sm",
+        "3 sm",
+        "6 sm",
+        "3√2 sm"
+      ],
+      "t": 3,
+      "izoh": "l = 2·AB·AC·cos45°:(AB + AC) bo'lib, cos45° = √2/2. Demak l = 2·12·4·(√2/2):16 = 48√2:16 = 3√2 sm. Yarim burchakning kosinusi tashlab ketilsa 6 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='243.2,118.8 56,181.2 264,181.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='243.2' y1='118.8' x2='212' y2='181.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 222.3,125.8 A 22 22 0 0 0 233.4,138.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 231.1,142.9 A 27 27 0 0 0 251.7,144.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='223.4' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='135.1' y='150.1' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='268.4' y='151.7' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='217.6' y='138' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Ctext x='256.8' y='112.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.2' y='187.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.4' y='189.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-uzunlik",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#fe17bebb"
+    },
+    {
+      "q": "ABC uchburchakda ∠B = 54° va ∠C = 76°. A uchidan bissektrisa AD o'tkazilgan bo'lsa, ∠ADB burchak necha gradusga teng?",
+      "v": [
+        "79°",
+        "101°",
+        "103°",
+        "130°"
+      ],
+      "t": 1,
+      "izoh": "Avval ∠A = 180° − 54° − 76° = 50°, demak ∠BAD = 25°. ABD uchburchakdan ∠ADB = 180° − 54° − 25° = 101°. Qo'shni burchak ∠ADC = 79° bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='204.9,56 68.3,244 251.7,244' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='204.9' y1='56' x2='168.3' y2='244' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 191.9,73.8 A 22 22 0 0 0 200.7,77.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 199.7,82.5 A 27 27 0 0 0 211.4,82.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='166.7' y='262.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='95.9' y='227.8' font-size='13' fill='%23334155' text-anchor='middle'%3E54°%3C/text%3E%3Ctext x='226.9' y='223.8' font-size='13' fill='%23334155' text-anchor='middle'%3E76°%3C/text%3E%3Ctext x='208.8' y='43.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='53.6' y='256.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='264.9' y='258.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-burchak-hosil",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#bf9bbb10"
+    },
+    {
+      "q": "Uchburchakning bir burchagi 80°, ikkinchisi esa 40°. Uchinchi burchakdan chiqqan bissektrisa qarshi tomon bilan hosil qilgan o'tkir burchak necha gradus?",
+      "v": [
+        "70°",
+        "110°",
+        "80°",
+        "50°"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi burchak 180° − 80° − 40° = 60°, uning yarmi 30°. Bissektrisa asosi bilan 80° li burchak yonida hosil bo'lgan burchak 180° − 80° − 30° = 70°. Ikkinchi tomonda esa 110° li o'tmas burchak hosil bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='82.8,74 56,226 264,226' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='82.8' y1='74' x2='138.1' y2='226' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 79,95.6 A 22 22 0 0 0 90.3,94.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 92,99.4 A 27 27 0 0 0 103.5,91.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='139.3' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='82.9' y='208.6' font-size='13' fill='%23334155' text-anchor='middle'%3E80°%3C/text%3E%3Ctext x='234.2' y='214.4' font-size='13' fill='%23334155' text-anchor='middle'%3E40°%3C/text%3E%3Ctext x='75.1' y='62.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='41.7' y='239.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.8' y='236.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-burchak-hosil",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#33f50a3c"
+    },
+    {
+      "q": "ABC uchburchakning A burchagidan chiqqan bissektrisa AD qarshi tomon bilan ∠ADB = 100° va ∠ADC = 80° li burchaklar hosil qildi. ∠B = 65° bo'lsa, ∠A necha gradusga teng?",
+      "v": [
+        "15°",
+        "50°",
+        "20°",
+        "30°"
+      ],
+      "t": 3,
+      "izoh": "Shartga ko'ra ∠ADB = 100°, ya'ni 100° li burchak B tomonda yotadi. ABD uchburchakdan ∠BAD = 180° − 65° − 100° = 15°. AD bissektrisa bo'lgani uchun ∠A = 2·15° = 30°. Ikkilantirish unutilsa 15° chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='195.6,56 107.9,244 212.1,244' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='195.6' y1='56' x2='162.5' y2='244' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 186.3,75.9 A 22 22 0 0 0 191.8,77.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 190.9,82.6 A 27 27 0 0 0 198,82.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='135' y='240' font-size='13' fill='%23334155' text-anchor='middle'%3E100°%3C/text%3E%3Ctext x='185' y='240' font-size='13' fill='%23334155' text-anchor='middle'%3E80°%3C/text%3E%3Ctext x='160.2' y='262.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='130.8' y='221.6' font-size='13' fill='%23334155' text-anchor='middle'%3E65°%3C/text%3E%3Ctext x='198.8' y='43.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='95.8' y='259.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='221.2' y='262.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-burchak-hosil",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#b52f2d55"
+    },
+    {
+      "q": "ABC uchburchakda ∠A = 90° va ∠B = 20°. A uchidan chiqqan bissektrisa BC tomonni D nuqtada kesadi. ∠ADC burchak necha gradus?",
+      "v": [
+        "115°",
+        "70°",
+        "65°",
+        "45°"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri burchakning yarmi ∠BAD = 45°. ABD uchburchakdan ∠ADB = 180° − 20° − 45° = 115°, demak qo'shni burchak ∠ADC = 180° − 115° = 65°. 70° esa ∠C burchagi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='239.7,116.6 56,183.4 264,183.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='239.7' y1='116.6' x2='208.5' y2='183.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 219,124.1 A 22 22 0 0 0 230.4,136.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 228.3,141 A 27 27 0 0 0 248.9,141.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='219' y='198.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='215.2' y='137.1' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Ctext x='87.5' y='178' font-size='13' fill='%23334155' text-anchor='middle'%3E20°%3C/text%3E%3Ctext x='252.7' y='109.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.2' y='190.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.3' y='192.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bissektrisa-burchak-hosil",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#da0dc6ca"
+    },
+    {
+      "q": "ABC uchburchakning barcha bissektrisalari I nuqtada kesishadi. Uchburchakning ∠A burchagi 64° ga teng bo'lsa, ∠BIC burchak necha gradus?",
+      "v": [
+        "116°",
+        "148°",
+        "122°",
+        "58°"
+      ],
+      "t": 2,
+      "izoh": "∠IBC + ∠ICB = (∠B + ∠C):2 = (180° − 64°):2 = 58°. Demak ∠BIC = 180° − 58° = 122°. Buni 90° + ∠A/2 formulasi bilan ham tekshirish mumkin: 90° + 32° = 122°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='143.9,67.3 56,232.7 264,232.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='232.7' x2='151.4' y2='175.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='264' y1='232.7' x2='151.4' y2='175.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='151.4' cy='175.3' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='140' y='171.2' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='147' y='99.2' font-size='13' fill='%23334155' text-anchor='middle'%3E64°%3C/text%3E%3Ctext x='142.2' y='54.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='41.2' y='244.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.2' y='244.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-markaz-burchak",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#63bd1869"
+    },
+    {
+      "q": "Uchburchakning ichki bissektrisalari kesishgan I nuqtadan B va C uchlariga kesmalar o'tkazilganda ∠BIC = 130° hosil bo'ldi. Uchburchakning A burchagi necha gradusga teng?",
+      "v": [
+        "40°",
+        "50°",
+        "20°",
+        "80°"
+      ],
+      "t": 3,
+      "izoh": "∠BIC = 90° + ∠A/2 munosabatidan 130° = 90° + ∠A/2, demak ∠A/2 = 40° va ∠A = 80°. Ikkilantirish unutilsa 40° chiqadi, 50° esa 180° − 130° ayirmasidir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='141.7,88.8 56,211.2 264,211.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='211.2' x2='148.2' y2='163.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='264' y1='211.2' x2='148.2' y2='163.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='148.2' cy='163.2' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='139.5' y='156.2' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='139.1' y='76' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.3' y='221.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.9' y='221.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-markaz-burchak",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#736cc7c5"
+    },
+    {
+      "q": "ABC uchburchakda ∠B = 48° va ∠C = 56°. Bissektrisalar kesishish nuqtasi I bilan B va C uchlari qo'shilgan. ∠BIC burchak necha gradus?",
+      "v": [
+        "128°",
+        "104°",
+        "76°",
+        "142°"
+      ],
+      "t": 0,
+      "izoh": "I nuqta bissektrisalarda yotgani uchun ∠IBC = 24° va ∠ICB = 28°. Demak ∠BIC = 180° − 24° − 28° = 128°. Bu yerda 104° — berilgan ikki burchak yig'indisi, 76° esa ∠A burchagi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='174.9,84 56,216 264,216' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='216' x2='169.2' y2='165.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='264' y1='216' x2='169.2' y2='165.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='169.2' cy='165.6' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='176.9' y='158' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='85.7' y='204' font-size='13' fill='%23334155' text-anchor='middle'%3E48°%3C/text%3E%3Ctext x='234.8' y='203' font-size='13' fill='%23334155' text-anchor='middle'%3E56°%3C/text%3E%3Ctext x='176.8' y='71.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.2' y='226.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.5' y='226.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-markaz-burchak",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#8cdc9bd5"
+    },
+    {
+      "q": "Uchburchakka ichki chizilgan aylananing markazi I nuqta bo'lib, ∠BIC = 110°. ∠IBC va ∠ICB burchaklarning yig'indisi necha gradusga teng?",
+      "v": [
+        "55°",
+        "70°",
+        "40°",
+        "20°"
+      ],
+      "t": 1,
+      "izoh": "IBC uchburchakning uchta burchagi yig'indisi 180° ga teng. Demak ∠IBC + ∠ICB = 180° − ∠BIC = 180° − 110° = 70°. Bu yig'indi uchburchakning B va C burchaklari yig'indisining yarmiga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='141.4,56 91,244 229,244' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='244' x2='153.6' y2='196' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='229' y1='244' x2='153.6' y2='196' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='153.6' cy='196' r='48' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='153.6' cy='196' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='153.4' y='213.9' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='139.7' y='43.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='78.9' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='242.1' y='258.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-markaz-burchak",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#fdcb2163"
+    },
+    {
+      "q": "ABC uchburchakda AB = 8 sm, AC = 10 sm va BC = 6 sm. A burchak bissektrisasi AD chizilgan va bissektrisalar kesishish nuqtasi I. AI kesmaning ID kesmaga nisbati qanday?",
+      "v": [
+        "1:3",
+        "2:1",
+        "5:3",
+        "3:1"
+      ],
+      "t": 3,
+      "izoh": "Ichki markaz bissektrisani uchdan boshlab (AB + AC):BC nisbatda bo'ladi. Bu yerda (8 + 10):6 = 18:6 = 3:1. Medianalar uchun o'rinli bo'lgan 2:1 nisbatni bissektrisaga ko'chirish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='89.5,56 89.5,244 230.5,244' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='89.5' y1='56' x2='152.2' y2='244' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 89.5,78 A 22 22 0 0 0 96.5,76.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 98,81.6 A 27 27 0 0 0 105.7,77.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='136.5' cy='197' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='155.8' y='262.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='136.5' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='77' y='145.7' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='169' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='165.3' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='83.5' y='44.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='79.3' y='261.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='244.6' y='257.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-markaz-nisbat",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#9ecf4466"
+    },
+    {
+      "q": "ABC uchburchakda bissektrisalar kesishish nuqtasi I bissektrisa AD ni A uchidan boshlab 5:2 nisbatda bo'ladi. BC tomon 8 sm bo'lsa, uchburchakning perimetri necha santimetr?",
+      "v": [
+        "20 sm",
+        "28 sm",
+        "24 sm",
+        "11,2 sm"
+      ],
+      "t": 1,
+      "izoh": "AI:ID = (AB + AC):BC bo'lgani uchun (AB + AC):8 = 5:2, bundan AB + AC = 8·5/2 = 20 sm. Perimetr esa 20 + 8 = 28 sm. Faqat yon tomonlar yig'indisini yozib qo'yish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-markaz-nisbat",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#13fffbbf"
+    },
+    {
+      "q": "ABC uchburchakda AB = 17 sm, AC = 25 sm va BC = 14 sm. Uchburchakka ichki chizilgan aylana markazi I, A dan chiqqan bissektrisa esa AD. AI kesma AD ning qanday qismini tashkil qiladi?",
+      "v": [
+        "1/4 qismini",
+        "2/3 qismini",
+        "3/4 qismini",
+        "1/3 qismini"
+      ],
+      "t": 2,
+      "izoh": "AI:ID = (17 + 25):14 = 42:14 = 3:1. Demak AD kesma 4 ta teng ulushga bo'linadi va AI ga ulardan 3 tasi tegadi, ya'ni 3/4 qismi. Mediana uchun o'rinli 2/3 qismi bu yerda ishlamaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='56,61.1 110.7,238.9 264,238.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='61.1' x2='172.8' y2='238.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 62.5,82.1 A 22 22 0 0 0 68.1,79.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 70.8,83.6 A 27 27 0 0 0 76.5,78.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='143.6' cy='194.5' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='179.4' y='256.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='143.6' y='212.5' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='69.9' y='147.4' font-size='13' fill='%23334155' text-anchor='middle'%3E17 sm%3C/text%3E%3Ctext x='167.3' y='140.9' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Ctext x='196.3' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='45.9' y='51.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='102.5' y='257.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.3' y='250.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-markaz-nisbat",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#31d7f5b3"
+    },
+    {
+      "q": "Bissektrisalar kesishish nuqtasi uchburchakning bir uchidan chiqqan bissektrisani 4:1 nisbatda bo'ladi. Uchburchakning perimetri 45 sm bo'lsa, shu uchga qarshi yotgan tomon necha santimetr?",
+      "v": [
+        "9 sm",
+        "11,25 sm",
+        "36 sm",
+        "15 sm"
+      ],
+      "t": 0,
+      "izoh": "Nisbat (qolgan ikki tomon yig'indisi):(qarshi tomon) = 4:1 ekanini bildiradi. Demak perimetr 4 + 1 = 5 ulushdan iborat, bitta ulush 45:5 = 9 sm. Qarshi tomon 1 ulush, ya'ni 9 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-markaz-nisbat",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#f09e42de"
+    },
+    {
+      "q": "Tomonlari 13 sm, 14 sm va 15 sm bo'lgan uchburchakka ichki chizilgan aylananing radiusi necha santimetrga teng?",
+      "v": [
+        "4 sm",
+        "2 sm",
+        "8 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Yarim perimetr p = (13 + 14 + 15):2 = 21 sm. Geron formulasi bo'yicha S = √(21·8·7·6) = √7056 = 84 sm². Ichki aylana radiusi r = S:p = 84:21 = 4 sm. Perimetrga bo'lish 2 sm degan xato javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='130.3,60.9 56,239.1 264,239.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='145.1' cy='179.7' r='59.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='145.1' cy='179.7' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='131.1' y='183.7' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='79.8' y='147.1' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3Ctext x='162.5' y='257.9' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='209.8' y='146' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='127.5' y='48.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='41.6' y='252.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.1' y='251' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-aylana-radius",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#558bc693"
+    },
+    {
+      "q": "Katetlari 9 sm va 12 sm bo'lgan to'g'ri burchakli uchburchakka ichki chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "6 sm",
+        "4,5 sm",
+        "3 sm",
+        "7,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Gipotenuza √(81 + 144) = 15 sm. Yuzi S = 9·12:2 = 54 sm², yarim perimetr p = (9 + 12 + 15):2 = 18 sm. Demak r = 54:18 = 3 sm. 7,5 sm esa tashqi chizilgan aylana radiusi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='56,72 56,228 264,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='108' cy='176' r='52' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='108' cy='176' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='94' y='180' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='42' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='168.3' y='244.5' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='46.6' y='61.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='42.4' y='242.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.9' y='238' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-aylana-radius",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#22c9c28a"
+    },
+    {
+      "q": "Uchburchak shaklidagi maydonchaning tomonlari 30 m, 40 m va 50 m. Maydonchaga uchala devordan ham bir xil masofada turadigan ustun o'rnatilmoqchi. Ustun har bir devordan necha metr uzoqda bo'ladi?",
+      "v": [
+        "20 m",
+        "10 m",
+        "25 m",
+        "12 m"
+      ],
+      "t": 1,
+      "izoh": "Uchala tomondan teng uzoqlikdagi nuqta — bissektrisalar kesishish nuqtasi, masofa esa ichki aylana radiusi. Uchburchak to'g'ri burchakli, S = 30·40:2 = 600 m², p = 60 m, demak r = 600:60 = 10 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='56,72 56,228 264,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='108' cy='176' r='52' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='108' cy='176' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='94' y='180' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='42' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3E30 m%3C/text%3E%3Ctext x='168.3' y='244.5' font-size='13' fill='%23334155' text-anchor='middle'%3E40 m%3C/text%3E%3Ctext x='172' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E50 m%3C/text%3E%3Ctext x='46.6' y='61.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='42.4' y='242.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.9' y='238' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-aylana-radius",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#0f6d8cea"
+    },
+    {
+      "q": "Perimetri 36 sm bo'lgan uchburchakka radiusi 3 sm bo'lgan aylana ichki chizilgan. Shu uchburchakning yuzi necha kvadrat santimetrga teng?",
+      "v": [
+        "108 sm²",
+        "36 sm²",
+        "18 sm²",
+        "54 sm²"
+      ],
+      "t": 3,
+      "izoh": "r = S:p munosabatidan S = r·p. Yarim perimetr p = 36:2 = 18 sm, demak S = 3·18 = 54 sm². Masalan tomonlari 9 sm, 12 sm va 15 sm bo'lgan uchburchak shu shartga to'liq mos keladi. Yarim perimetr o'rniga to'liq perimetr olinsa 108 sm² degan xato javob chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-aylana-radius",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#5e905d8f"
+    },
+    {
+      "q": "Uchburchak shaklidagi bayroqchaning yuzi 119 sm² ga teng va uning eng uzun tomoni 17 sm. Shu tomonga tushirilgan balandlik necha santimetr?",
+      "v": [
+        "7 sm",
+        "14 sm",
+        "28 sm",
+        "8,5 sm"
+      ],
+      "t": 1,
+      "izoh": "Uchburchak yuzi S = a·h:2 formulasi bilan hisoblanadi, bundan h = 2S:a. Demak h = 2·119:17 = 238:17 = 14 sm. Ikkiga ko'paytirish unutilsa 7 sm degan xato javob chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'320'%20height%3D'300'%20viewBox%3D'0%200%20320%20300'%3E%3Crect%20width%3D'320'%20height%3D'300'%20fill%3D'%23ffffff'%2F%3E%3Cpolygon%20points%3D'160%2C64.4%2056%2C235.7%20264%2C235.7'%20stroke%3D'%23334155'%20stroke-width%3D'2'%20fill%3D'none'%2F%3E%3Cline%20x1%3D'160'%20y1%3D'64.4'%20x2%3D'160'%20y2%3D'235.7'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20stroke-dasharray%3D'5%204'%20fill%3D'none'%2F%3E%3Cpolyline%20points%3D'160%2C223.7%20148%2C223.7%20148%2C235.7'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20fill%3D'none'%2F%3E%3Ctext%20x%3D'160'%20y%3D'254.7'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EH%3C%2Ftext%3E%3Ctext%20x%3D'145'%20y%3D'154'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E%3F%3C%2Ftext%3E%3Ctext%20x%3D'160'%20y%3D'268.7'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E17%20sm%3C%2Ftext%3E%3Ctext%20x%3D'160'%20y%3D'51.4'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EA%3C%2Ftext%3E%3Ctext%20x%3D'41.2'%20y%3D'248.1'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EB%3C%2Ftext%3E%3Ctext%20x%3D'278.8'%20y%3D'248.1'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EC%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-yuza",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#9f6fb2e2"
+    },
+    {
+      "q": "Uchburchakning yuzi 120 sm² ga teng. Uning ikki tomoni 20 sm va 30 sm bo'lsa, 30 sm lik tomonga tushirilgan balandlik 20 sm lik tomonga tushirilgan balandlikdan necha santimetr kichik?",
+      "v": [
+        "4 sm",
+        "10 sm",
+        "2 sm",
+        "8 sm"
+      ],
+      "t": 0,
+      "izoh": "Har bir balandlik h = 2S:a formulasi bilan topiladi. 30 sm lik tomonga h = 240:30 = 8 sm, 20 sm lik tomonga h = 240:20 = 12 sm. Ayirma 12 − 8 = 4 sm. Tomonlar ayirmasi 10 sm bilan chalkashtirmaslik kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-yuza",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#babb292c"
+    },
+    {
+      "q": "Devorga uchburchak shaklidagi reklama taxtasi osilgan. Taxtaning yuzi 2,4 m² va asosi 3 m. Shu asosga tushirilgan balandlik necha santimetr?",
+      "v": [
+        "80 sm",
+        "16 sm",
+        "320 sm",
+        "160 sm"
+      ],
+      "t": 3,
+      "izoh": "Avval metrda hisoblaymiz: h = 2S:a = 2·2,4:3 = 4,8:3 = 1,6 m. Endi santimetrga o'tkazamiz: 1,6 m = 160 sm. Ikkiga ko'paytirmaslik 80 sm, birlikni almashtirmaslik esa 16 sm xatosiga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='181.3,99 56,209.9 264,209.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='181.3' y1='99' x2='181.3' y2='209.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='181.3,197.9 169.3,197.9 169.3,209.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='186.3' y='228' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='166.3' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='157.4' y='228.7' font-size='13' fill='%23334155' text-anchor='middle'%3E3 m%3C/text%3E%3Ctext x='184.2' y='86.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40' y='219.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.7' y='220.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-yuza",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#0dd9ee48"
+    },
+    {
+      "q": "Uchburchakning bir tomoni 25 sm bo'lib, unga tushirilgan balandlik 12 sm. Xuddi shu uchburchakning boshqa bir tomoni 20 sm bo'lsa, unga tushirilgan balandlik necha santimetr?",
+      "v": [
+        "9,6 sm",
+        "30 sm",
+        "15 sm",
+        "12 sm"
+      ],
+      "t": 2,
+      "izoh": "Avval yuzani topamiz: S = 25·12:2 = 150 sm². Ikkinchi tomonga tushirilgan balandlik h = 2·150:20 = 15 sm. Balandlik tomonga to'g'ri proporsional deb 12·20:25 = 9,6 sm deyish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-yuza",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#528e77aa"
+    },
+    {
+      "q": "Tomonlari 39 sm, 42 sm va 45 sm bo'lgan uchburchakda 42 sm lik tomonga tushirilgan balandlikning uzunligi necha santimetr?",
+      "v": [
+        "18 sm",
+        "33,6 sm",
+        "36 sm",
+        "45 sm"
+      ],
+      "t": 2,
+      "izoh": "Yarim perimetr p = 63 sm. Geron formulasi: S = √(63·24·21·18) = √571536 = 756 sm². Balandlik h = 2S:a = 1512:42 = 36 sm. 33,6 sm — 45 sm lik tomonga tushirilgan balandlik, 18 sm esa ikkiga ko'paytirish unutilgan hol.",
+      "rasm": "data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'320'%20height%3D'300'%20viewBox%3D'0%200%20320%20300'%3E%3Crect%20width%3D'320'%20height%3D'300'%20fill%3D'%23ffffff'%2F%3E%3Cpolygon%20points%3D'130.3%2C60.9%2056%2C239.1%20264%2C239.1'%20stroke%3D'%23334155'%20stroke-width%3D'2'%20fill%3D'none'%2F%3E%3Cline%20x1%3D'130.3'%20y1%3D'60.9'%20x2%3D'130.3'%20y2%3D'239.1'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20stroke-dasharray%3D'5%204'%20fill%3D'none'%2F%3E%3Cpolyline%20points%3D'130.3%2C227.1%20118.3%2C227.1%20118.3%2C239.1'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20fill%3D'none'%2F%3E%3Ctext%20x%3D'125.5'%20y%3D'257.4'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EH%3C%2Ftext%3E%3Ctext%20x%3D'79.8'%20y%3D'147.1'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E39%20sm%3C%2Ftext%3E%3Ctext%20x%3D'162.5'%20y%3D'257.9'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E42%20sm%3C%2Ftext%3E%3Ctext%20x%3D'209.8'%20y%3D'146'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E45%20sm%3C%2Ftext%3E%3Ctext%20x%3D'127.5'%20y%3D'48.1'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EA%3C%2Ftext%3E%3Ctext%20x%3D'41.6'%20y%3D'252.2'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EB%3C%2Ftext%3E%3Ctext%20x%3D'279.1'%20y%3D'251'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EC%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-geron",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#5b7f4eb6"
+    },
+    {
+      "q": "Tomonlari 10 sm, 17 sm va 21 sm bo'lgan uchburchakning eng katta tomoniga tushirilgan balandligi necha santimetr?",
+      "v": [
+        "4 sm",
+        "16 sm",
+        "10 sm",
+        "8 sm"
+      ],
+      "t": 3,
+      "izoh": "Yarim perimetr p = (10 + 17 + 21):2 = 24 sm. Geron formulasi bo'yicha S = √(24·14·7·3) = √7056 = 84 sm². Eng katta tomon 21 sm, demak h = 2·84:21 = 8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='115.4,110.4 56,189.6 264,189.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='115.4' y1='110.4' x2='115.4' y2='189.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='115.4,177.6 103.4,177.6 103.4,189.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='104.2' y='203.6' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='71.1' y='150.7' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='204.1' y='149.7' font-size='13' fill='%23334155' text-anchor='middle'%3E17 sm%3C/text%3E%3Ctext x='167.4' y='206.7' font-size='13' fill='%23334155' text-anchor='middle'%3E21 sm%3C/text%3E%3Ctext x='107.1' y='99.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.7' y='198.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.6' y='197.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-geron",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#432392fe"
+    },
+    {
+      "q": "Uchburchak shaklidagi tomorqaning tomonlari 25 m, 39 m va 56 m. Egasi 56 m lik tomonni asos qilib olib, unga perpendikulyar suv trubasini qarshi burchakkacha yotqizmoqchi. Truba uzunligi necha metr bo'ladi?",
+      "v": [
+        "15 m",
+        "7,5 m",
+        "21,5 m",
+        "30 m"
+      ],
+      "t": 0,
+      "izoh": "Yarim perimetr p = (25 + 39 + 56):2 = 60 m. Geron formulasi: S = √(60·35·21·4) = √176400 = 420 m². Truba — asosga tushirilgan balandlik: h = 2·420:56 = 840:56 = 15 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='130.3,122.1 56,177.9 264,177.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='130.3' y1='122.1' x2='130.3' y2='177.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='130.3,165.9 118.3,165.9 118.3,177.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='119.3' y='192.1' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='115.3' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='78.3' y='151.6' font-size='13' fill='%23334155' text-anchor='middle'%3E25 m%3C/text%3E%3Ctext x='211.9' y='151.1' font-size='13' fill='%23334155' text-anchor='middle'%3E39 m%3C/text%3E%3Ctext x='167.1' y='195.1' font-size='13' fill='%23334155' text-anchor='middle'%3E56 m%3C/text%3E%3Ctext x='122.3' y='111.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.3' y='185.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.8' y='184.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-geron",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#01043adb"
+    },
+    {
+      "q": "Tomonlari 16 sm, 52 sm va 60 sm bo'lgan uchburchakning eng kichik tomoniga tushirilgan balandligi necha santimetrga teng?",
+      "v": [
+        "24 sm",
+        "48 sm",
+        "12,8 sm",
+        "60 sm"
+      ],
+      "t": 1,
+      "izoh": "Yarim perimetr p = 64 sm, Geron formulasi bo'yicha S = √(64·48·12·4) = √147456 = 384 sm². Eng kichik tomon 16 sm, demak h = 2·384:16 = 48 sm. 12,8 sm — eng uzun tomonga tushirilgan balandlik.",
+      "rasm": "data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'320'%20height%3D'300'%20viewBox%3D'0%200%20320%20300'%3E%3Crect%20width%3D'320'%20height%3D'300'%20fill%3D'%23ffffff'%2F%3E%3Cpolygon%20points%3D'89.5%2C56%20167.8%2C244%20230.5%2C244'%20stroke%3D'%23334155'%20stroke-width%3D'2'%20fill%3D'none'%2F%3E%3Cline%20x1%3D'89.5'%20y1%3D'244'%20x2%3D'167.8'%20y2%3D'244'%20stroke%3D'%23334155'%20stroke-width%3D'1.2'%20stroke-dasharray%3D'4%204'%20fill%3D'none'%2F%3E%3Cline%20x1%3D'89.5'%20y1%3D'56'%20x2%3D'89.5'%20y2%3D'244'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20stroke-dasharray%3D'5%204'%20fill%3D'none'%2F%3E%3Cpolyline%20points%3D'89.5%2C232%20101.5%2C232%20101.5%2C244'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20fill%3D'none'%2F%3E%3Ctext%20x%3D'78.1'%20y%3D'257.8'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EH%3C%2Ftext%3E%3Ctext%20x%3D'206.7'%20y%3D'261'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E16%20sm%3C%2Ftext%3E%3Ctext%20x%3D'117.6'%20y%3D'143.8'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E52%20sm%3C%2Ftext%3E%3Ctext%20x%3D'158.8'%20y%3D'139.1'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E60%20sm%3C%2Ftext%3E%3Ctext%20x%3D'80.9'%20y%3D'45.3'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EA%3C%2Ftext%3E%3Ctext%20x%3D'169.2'%20y%3D'264.9'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EB%3C%2Ftext%3E%3Ctext%20x%3D'243'%20y%3D'259.5'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EC%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-geron",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#ab5edee5"
+    },
+    {
+      "q": "Uchburchakning tomonlari 17 sm, 25 sm va 26 sm. Shu uchburchakda 17 sm lik tomonga tushirilgan balandlik necha santimetr?",
+      "v": [
+        "12 sm",
+        "16,32 sm",
+        "34 sm",
+        "24 sm"
+      ],
+      "t": 3,
+      "izoh": "Yarim perimetr p = (17 + 25 + 26):2 = 34 sm. Geron formulasi: S = √(34·17·9·8) = √41616 = 204 sm². Balandlik h = 2·204:17 = 408:17 = 24 sm. Ikkilantirish unutilsa 12 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='148.3,56 93.4,244 226.6,244' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='148.3' y1='56' x2='148.3' y2='244' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='148.3,232 136.3,232 136.3,244' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='146.4' y='262.9' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='160.9' y='277' font-size='13' fill='%23334155' text-anchor='middle'%3E17 sm%3C/text%3E%3Ctext x='109.6' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Ctext x='198' y='143.4' font-size='13' fill='%23334155' text-anchor='middle'%3E26 sm%3C/text%3E%3Ctext x='147.2' y='43' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='81.4' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='239.3' y='259.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-geron",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#a8d1691b"
+    },
+    {
+      "q": "Uchburchakning tomonlari 6 sm, 8 sm va 12 sm ga teng. Shu tomonlarga tushirilgan balandliklarning nisbati qanday bo'ladi?",
+      "v": [
+        "3:4:6",
+        "4:3:2",
+        "2:3:4",
+        "1:2:3"
+      ],
+      "t": 1,
+      "izoh": "Yuza barcha tomonlar uchun bir xil, shuning uchun balandlik tomonga teskari proporsional. Nisbat 1/6 : 1/8 : 1/12 ko'rinishida, uni 24 ga ko'paytiramiz va 4:3:2 hosil bo'ladi. Tomonlar nisbati 3:4:6 esa javob emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-nisbat",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#8b7f2479"
+    },
+    {
+      "q": "Uchburchakning ikki tomoni 22 sm va 33 sm. Agar 22 sm lik tomonga tushirilgan balandlik 21 sm bo'lsa, 33 sm lik tomonga tushirilgan balandlik necha santimetr?",
+      "v": [
+        "31,5 sm",
+        "7 sm",
+        "14 sm",
+        "10,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Yuza S = 22·21:2 = 231 sm². Ikkinchi balandlik h = 2·231:33 = 462:33 = 14 sm. Balandlikni tomonga to'g'ri proporsional deb 21·33:22 = 31,5 sm deyish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-nisbat",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#25ac5844"
+    },
+    {
+      "q": "Uchburchakning balandliklari 12 sm, 15 sm va 20 sm ga teng. Shu uchburchak tomonlarining nisbati qanday bo'ladi?",
+      "v": [
+        "5:4:3",
+        "3:4:5",
+        "12:15:20",
+        "4:5:3"
+      ],
+      "t": 0,
+      "izoh": "Tomon balandlikka teskari proporsional: 1/12 : 1/15 : 1/20. Har bir hadni 60 ga ko'paytiramiz va 5:4:3 hosil bo'ladi. Balandliklar tartibiga mos yozish shart, shuning uchun 3:4:5 noto'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-nisbat",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#8b36b2b6"
+    },
+    {
+      "q": "Uchburchakning bir tomoni 18 sm va unga tushirilgan balandlik 10 sm. Boshqa bir tomoniga tushirilgan balandlik 12 sm bo'lsa, o'sha tomon necha santimetr?",
+      "v": [
+        "15 sm",
+        "21,6 sm",
+        "20 sm",
+        "12 sm"
+      ],
+      "t": 0,
+      "izoh": "Yuza S = 18·10:2 = 90 sm². Izlanayotgan tomon a = 2S:h = 180:12 = 15 sm. To'g'ri proporsiya deb 18·12:10 = 21,6 sm olish xato, chunki tomon balandlikka teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-nisbat",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#cd9ab4dd"
+    },
+    {
+      "q": "Teng yonli uchburchakning yon tomoni 26 sm va asosi 20 sm ga teng. Asosga tushirilgan balandlik necha santimetr?",
+      "v": [
+        "2√69 sm",
+        "13 sm",
+        "24 sm",
+        "10 sm"
+      ],
+      "t": 2,
+      "izoh": "Teng yonli uchburchakda asosga tushirilgan balandlik asosni teng ikkiga bo'ladi, ya'ni 10 sm ga. Pifagor teoremasidan h = √(26² − 10²) = √(676 − 100) = √576 = 24 sm. Asosning yarmi o'rniga to'lig'i olinsa √(676 − 400) = √276 = 2√69 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'320'%20height%3D'300'%20viewBox%3D'0%200%20320%20300'%3E%3Crect%20width%3D'320'%20height%3D'300'%20fill%3D'%23ffffff'%2F%3E%3Cpolygon%20points%3D'160%2C56%2081.7%2C244%20238.3%2C244'%20stroke%3D'%23334155'%20stroke-width%3D'2'%20fill%3D'none'%2F%3E%3Cline%20x1%3D'160'%20y1%3D'56'%20x2%3D'160'%20y2%3D'244'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20stroke-dasharray%3D'5%204'%20fill%3D'none'%2F%3E%3Cpolyline%20points%3D'160%2C232%20148%2C232%20148%2C244'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20fill%3D'none'%2F%3E%3Ctext%20x%3D'160'%20y%3D'263'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EH%3C%2Ftext%3E%3Ctext%20x%3D'145'%20y%3D'154'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E%3F%3C%2Ftext%3E%3Ctext%20x%3D'160'%20y%3D'277'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E20%20sm%3C%2Ftext%3E%3Ctext%20x%3D'109.1'%20y%3D'144.6'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E26%20sm%3C%2Ftext%3E%3Ctext%20x%3D'210.9'%20y%3D'144.6'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E26%20sm%3C%2Ftext%3E%3Ctext%20x%3D'160'%20y%3D'43'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EA%3C%2Ftext%3E%3Ctext%20x%3D'68.4'%20y%3D'258.6'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EB%3C%2Ftext%3E%3Ctext%20x%3D'251.6'%20y%3D'258.6'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EC%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-tengyonli",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#4e6dd1aa"
+    },
+    {
+      "q": "Teng yonli uchburchakning asosi 16 sm, asosga tushirilgan balandligi esa 6 sm. Uchburchakning yon tomoni necha santimetrga teng?",
+      "v": [
+        "2√73 sm",
+        "10 sm",
+        "14 sm",
+        "22 sm"
+      ],
+      "t": 1,
+      "izoh": "Balandlik asosni 8 sm dan ikki bo'lakka ajratadi va to'g'ri burchakli uchburchak hosil qiladi. Yon tomon = √(8² + 6²) = √(64 + 36) = √100 = 10 sm. Asosning to'liq uzunligi olinsa 2√73 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='160,111 56,189 264,189' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='111' x2='160' y2='189' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='160,177 148,177 148,189' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160' y='208' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='145' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='160' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='160' y='98' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.5' y='197.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.5' y='197.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-tengyonli",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#46f6021a"
+    },
+    {
+      "q": "Uchburchak shaklidagi tom yopmasining asosi 12 m, ikki yon qirrasi esa 10 m dan. Tomning eng baland nuqtasi asos sathidan necha metr yuqorida joylashgan?",
+      "v": [
+        "6 m",
+        "5√3 m",
+        "4 m",
+        "8 m"
+      ],
+      "t": 3,
+      "izoh": "Yopma teng yonli uchburchak, balandlik asosni 6 m dan ikkiga bo'ladi. Pifagor teoremasidan h = √(10² − 6²) = √(100 − 36) = √64 = 8 m. Yon qirraning yarmini katet deb olish 5√3 xatosiga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='160,80.7 56,219.3 264,219.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='80.7' x2='160' y2='219.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='160,207.3 148,207.3 148,219.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160' y='238.3' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='145' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='160' y='252.3' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='94.3' y='147.9' font-size='13' fill='%23334155' text-anchor='middle'%3E10 m%3C/text%3E%3Ctext x='225.7' y='147.9' font-size='13' fill='%23334155' text-anchor='middle'%3E10 m%3C/text%3E%3Ctext x='160' y='67.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.5' y='230.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.5' y='230.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-tengyonli",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#f62aaf39"
+    },
+    {
+      "q": "Teng yonli uchburchakning asosi 10 sm, yuzi esa 60 sm² ga teng. Uchburchakning yon tomoni necha santimetr?",
+      "v": [
+        "12 sm",
+        "13 sm",
+        "6 sm",
+        "17 sm"
+      ],
+      "t": 1,
+      "izoh": "Avval balandlikni topamiz: h = 2S:a = 120:10 = 12 sm. Balandlik asosni 5 sm dan bo'ladi, demak yon tomon = √(5² + 12²) = √169 = 13 sm. 12 sm — bu balandlikning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='160,56 81.7,244 238.3,244' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='56' x2='160' y2='244' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='160,232 148,232 148,244' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160' y='263' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='160' y='277' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='160' y='43' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='68.4' y='258.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='251.6' y='258.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-tengyonli",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#8078442e"
+    },
+    {
+      "q": "Teng tomonli uchburchakning tomoni 12 sm ga teng bo'lsa, uning balandligi necha santimetr?",
+      "v": [
+        "6√3 sm",
+        "12√3 sm",
+        "6 sm",
+        "3√3 sm"
+      ],
+      "t": 0,
+      "izoh": "Teng tomonli uchburchakda balandlik h = a√3:2 formulasi bilan topiladi. Demak h = 12√3:2 = 6√3 sm. Ikkiga bo'lish unutilsa 12√3 sm, balandlik o'rniga tomonning yarmi olinsa 6 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='160,59.9 56,240.1 264,240.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='59.9' x2='160' y2='240.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='160,228.1 148,228.1 148,240.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160' y='259.1' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='145' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='160' y='273.1' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='95' y='146.5' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='225' y='146.5' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='160' y='46.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='41.3' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-tengtomonli",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#252951a4"
+    },
+    {
+      "q": "Teng tomonli uchburchakning balandligi 9√3 sm ga teng. Shu uchburchakning tomoni necha santimetr?",
+      "v": [
+        "9 sm",
+        "4,5√3 sm",
+        "27 sm",
+        "18 sm"
+      ],
+      "t": 3,
+      "izoh": "h = a√3:2 formulasidan a = 2h:√3 = 18√3:√3 = 18 sm. Tekshiramiz: 18√3:2 = 9√3, ya'ni shart bajarildi. Balandlikni tomonning yarmi deb hisoblash 9 sm xatosiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-tengtomonli",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#5518295f"
+    },
+    {
+      "q": "Teng tomonli uchburchak shaklidagi yo'l belgisining tomoni 60 sm. Belgining balandligi taxminan necha santimetrga teng? Hisobda √3 ≈ 1,73 deb oling.",
+      "v": [
+        "103,8 sm",
+        "30 sm",
+        "51,9 sm",
+        "34,6 sm"
+      ],
+      "t": 2,
+      "izoh": "Balandlik h = a√3:2 = 60·1,73:2 = 103,8:2 = 51,9 sm. Ikkiga bo'lish unutilsa 103,8 sm, ildiz hisobga olinmasa 30 sm degan xato javob chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='160,59.9 56,240.1 264,240.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='59.9' x2='160' y2='240.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='160,228.1 148,228.1 148,240.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160' y='259.1' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='145' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='160' y='273.1' font-size='13' fill='%23334155' text-anchor='middle'%3E60 sm%3C/text%3E%3Ctext x='160' y='46.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='41.3' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-tengtomonli",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#143b2357"
+    },
+    {
+      "q": "Teng tomonli uchburchakning balandligi 12 sm bo'lsa, uning yuzi necha kvadrat santimetrga teng?",
+      "v": [
+        "144√3 sm²",
+        "24√3 sm²",
+        "48√3 sm²",
+        "96 sm²"
+      ],
+      "t": 2,
+      "izoh": "h = a√3:2 dan a = 2·12:√3 = 24:√3 = 8√3 sm. Yuza S = a·h:2 = 8√3·12:2 = 48√3 sm². Tomonni topmasdan to'g'ridan-to'g'ri kvadratga ko'tarish xato natija beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-tengtomonli",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#760aa2ac"
+    },
+    {
+      "q": "Katetlari 6 sm va 8 sm bo'lgan to'g'ri burchakli uchburchakda gipotenuzaga tushirilgan balandlik necha santimetrga teng?",
+      "v": [
+        "5 sm",
+        "7 sm",
+        "2,4 sm",
+        "4,8 sm"
+      ],
+      "t": 3,
+      "izoh": "Gipotenuza c = √(36 + 64) = 10 sm. Yuza ikki xil hisoblanadi: 6·8:2 = c·h:2, demak h = 6·8:10 = 4,8 sm. 5 sm — gipotenuzaning yarmi, ya'ni medianasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='56,72 56,228 264,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='228' x2='130.9' y2='128.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='123.7,137.8 133.3,145 140.5,135.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='132.6' y='117.3' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='105.4' y='191.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='42' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='168.3' y='244.5' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='46.6' y='61.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='42.4' y='242.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.9' y='238' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-togri-burchakli",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#0a22ba82"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning gipotenuzasi 50 sm, bir kateti esa 30 sm. Gipotenuzaga tushirilgan balandlik necha santimetr?",
+      "v": [
+        "24 sm",
+        "18 sm",
+        "32 sm",
+        "25 sm"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi katet √(2500 − 900) = √1600 = 40 sm. Balandlik h = 30·40:50 = 1200:50 = 24 sm. 18 sm va 32 sm — katetlarning gipotenuzadagi proyeksiyalari, 25 sm esa gipotenuzaning yarmi.",
+      "rasm": "data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'320'%20height%3D'300'%20viewBox%3D'0%200%20320%20300'%3E%3Crect%20width%3D'320'%20height%3D'300'%20fill%3D'%23ffffff'%2F%3E%3Cpolygon%20points%3D'56%2C72%2056%2C228%20264%2C228'%20stroke%3D'%23334155'%20stroke-width%3D'2'%20fill%3D'none'%2F%3E%3Cline%20x1%3D'56'%20y1%3D'228'%20x2%3D'130.9'%20y2%3D'128.2'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20stroke-dasharray%3D'5%204'%20fill%3D'none'%2F%3E%3Cpolyline%20points%3D'123.7%2C137.8%20133.3%2C145%20140.5%2C135.4'%20stroke%3D'%235b4bc4'%20stroke-width%3D'1.6'%20fill%3D'none'%2F%3E%3Ctext%20x%3D'132.6'%20y%3D'117.3'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EH%3C%2Ftext%3E%3Ctext%20x%3D'105.4'%20y%3D'191.1'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E%3F%3C%2Ftext%3E%3Ctext%20x%3D'42'%20y%3D'148.7'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E30%20sm%3C%2Ftext%3E%3Ctext%20x%3D'172'%20y%3D'145'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3E50%20sm%3C%2Ftext%3E%3Ctext%20x%3D'46.6'%20y%3D'61.9'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EA%3C%2Ftext%3E%3Ctext%20x%3D'42.4'%20y%3D'242.2'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EB%3C%2Ftext%3E%3Ctext%20x%3D'279.9'%20y%3D'238'%20font-size%3D'13'%20fill%3D'%23334155'%20text-anchor%3D'middle'%3EC%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-togri-burchakli",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#0cd8afdc"
+    },
+    {
+      "q": "Narvon devorga suyalgan: uning pastki uchi devordan 3 m uzoqda, yuqori uchi esa yerdan 4 m balandlikda turibdi. Devor bilan yer kesishgan burchakdan narvongacha bo'lgan eng qisqa masofa necha metr?",
+      "v": [
+        "3,5 m",
+        "2,4 m",
+        "2,5 m",
+        "5 m"
+      ],
+      "t": 1,
+      "izoh": "Devor, yer va narvon katetlari 3 m va 4 m bo'lgan to'g'ri burchakli uchburchak hosil qiladi, narvon esa gipotenuza: √(9 + 16) = 5 m. Eng qisqa masofa — to'g'ri burchakdan gipotenuzaga tushirilgan balandlik: h = 3·4:5 = 2,4 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='56,72 56,228 264,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='228' x2='130.9' y2='128.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='123.7,137.8 133.3,145 140.5,135.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='132.6' y='117.3' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='105.4' y='191.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='42' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3E3 m%3C/text%3E%3Ctext x='168.3' y='244.5' font-size='13' fill='%23334155' text-anchor='middle'%3E4 m%3C/text%3E%3Ctext x='46.6' y='61.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='42.4' y='242.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.9' y='238' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-togri-burchakli",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#3016491c"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda gipotenuzaga tushirilgan balandlik uni 9 sm va 16 sm bo'laklarga ajratdi. Shu balandlikning uzunligi necha santimetr?",
+      "v": [
+        "12,5 sm",
+        "25 sm",
+        "7 sm",
+        "12 sm"
+      ],
+      "t": 3,
+      "izoh": "Gipotenuzaga tushirilgan balandlik proyeksiyalarning o'rta proporsionali bo'ladi: h = √(9·16) = √144 = 12 sm. 12,5 sm — gipotenuzaning yarmi, 25 sm esa gipotenuzaning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='56,72 56,228 264,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='228' x2='130.9' y2='128.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='123.7,137.8 133.3,145 140.5,135.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='132.6' y='117.3' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='212.4' y='182.5' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='87.6' y='90.3' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='46.6' y='61.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='42.4' y='242.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.9' y='238' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-togri-burchakli",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#f304c9ea"
+    },
+    {
+      "q": "O'tmas burchakli uchburchakda ∠A = 120°, AB = 6 sm va AC = 8 sm. B uchidan AC to'g'ri chizig'iga tushirilgan balandlikning uzunligi necha santimetr?",
+      "v": [
+        "3 sm",
+        "3√3 sm",
+        "6√3 sm",
+        "4√3 sm"
+      ],
+      "t": 1,
+      "izoh": "∠A o'tmas bo'lgani uchun balandlik asosi CA tomonning A dan tashqaridagi davomiga tushadi. Hosil bo'lgan to'g'ri burchakli uchburchakda o'tkir burchak 180° − 120° = 60°. Demak h = 6·sin60° = 6·(√3/2) = 3√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='140.3,131.7 56,190.2 264,190.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='140.3' y1='131.7' x2='93.9' y2='109.8' stroke='%23334155' stroke-width='1.2' stroke-dasharray='4 4' fill='none'/%3E%3Cline x1='56' y1='190.2' x2='93.9' y2='109.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='88.8,120.7 99.7,125.8 104.8,115' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='83.5' y='103.1' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='83.4' y='162.4' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='216.9' y='162' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='150.5' y='162.1' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='134.9' y='119.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.3' y='197.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.7' y='197.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-otmas",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#9afbd091"
+    },
+    {
+      "q": "Uchburchakda ∠B = 150°, BA = 10 sm va BC = 14 sm. A uchidan BC to'g'ri chizig'iga tushirilgan balandlik necha santimetrga teng?",
+      "v": [
+        "5√3 sm",
+        "7 sm",
+        "5 sm",
+        "10 sm"
+      ],
+      "t": 2,
+      "izoh": "B burchagi o'tmas, shuning uchun balandlik asosi BC ning B dan tashqaridagi davomida yotadi. Yordamchi to'g'ri burchakli uchburchakning o'tkir burchagi 180° − 150° = 30°. Demak h = 10·sin30° = 10·(1/2) = 5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='56,127.1 135.5,172.9 264,172.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='172.9' x2='135.5' y2='172.9' stroke='%23334155' stroke-width='1.2' stroke-dasharray='4 4' fill='none'/%3E%3Cline x1='56' y1='127.1' x2='56' y2='172.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='56,160.9 68,160.9 68,172.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='41.2' y='179.3' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='80.9' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='214' y='181.5' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='158.9' y='151.1' font-size='13' fill='%23334155' text-anchor='middle'%3E150°%3C/text%3E%3Ctext x='39.8' y='125.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='123.1' y='188.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.8' y='179.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-otmas",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#b8000852"
+    },
+    {
+      "q": "O'tmas burchakli uchburchakning 12 sm lik tomoniga tushirilgan balandligi uchburchakdan tashqarida yotadi va uzunligi 5 sm ga teng. Shu uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "30 sm²",
+        "60 sm²",
+        "15 sm²",
+        "17 sm²"
+      ],
+      "t": 0,
+      "izoh": "Balandlik uchburchakdan tashqarida yotsa ham yuza formulasi o'zgarmaydi: S = a·h:2 = 12·5:2 = 30 sm². Ikkiga bo'lish unutilsa 60 sm² chiqadi, tomon bilan balandlikni qo'shish esa umuman yuza bermaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='56,115.3 97.6,184.7 264,184.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='184.7' x2='97.6' y2='184.7' stroke='%23334155' stroke-width='1.2' stroke-dasharray='4 4' fill='none'/%3E%3Cline x1='56' y1='115.3' x2='56' y2='184.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='56,172.7 68,172.7 68,184.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='41.5' y='192.7' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='41' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='193.9' y='196' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='41.1' y='111.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='82.7' y='196.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.7' y='191.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-otmas",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#663442c3"
+    },
+    {
+      "q": "O'tmas burchakli uchburchak chizilgan. Uning uchta balandligidan nechtasining asosi uchburchak tomonining o'zida emas, balki shu tomonning davomida yotadi?",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "3 ta",
+        "hech qaysisi"
+      ],
+      "t": 0,
+      "izoh": "O'tmas burchakka qarshi yotgan tomonga tushirilgan balandlik tomonning ichiga tushadi. Qolgan ikki balandlik esa o'tmas burchak uchidan tashqariga chiqadi, chunki ularning asoslari tomonlar davomida yotadi. Demak javob 2 ta.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='59.3,56 99.6,123.2 260.7,123.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='59.3' y1='56' x2='59.3' y2='123.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='59.3' y1='123.2' x2='99.6' y2='123.2' stroke='%23334155' stroke-width='1.2' stroke-dasharray='4 4' fill='none'/%3E%3Cline x1='99.6' y1='123.2' x2='115.7' y2='74.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='260.7' y1='123.2' x2='142.2' y2='194.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='99.6' y1='123.2' x2='142.2' y2='194.3' stroke='%23334155' stroke-width='1.2' stroke-dasharray='4 4' fill='none'/%3E%3Ccircle cx='59.3' cy='244' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='52.4' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='44.4' y='51.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='84.7' y='135.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277.4' y='130.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-otmas",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#43dfedd4"
+    },
+    {
+      "q": "Uchburchakning burchaklari 90°, 55° va 35° ga teng. Shu uchburchakning balandliklari kesishish nuqtasi qayerda joylashgan bo'ladi?",
+      "v": [
+        "uchburchak ichida",
+        "gipotenuza o'rtasida",
+        "to'g'ri burchak uchida",
+        "uchburchakdan tashqarida"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri burchakli uchburchakda ikkita katetning o'zi balandlik bo'lib xizmat qiladi va ular to'g'ri burchak uchida kesishadi. Uchinchi balandlik ham shu nuqtadan o'tadi, demak ortomarkaz to'g'ri burchak uchida yotadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='124.4,101.1 56,198.9 264,198.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='124.4' y1='101.1' x2='124.4' y2='198.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='56' y1='198.9' x2='124.4' y2='101.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='264' y1='198.9' x2='124.4' y2='101.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='124.4' cy='101.1' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='135.4' y='131.2' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Ctext x='86.2' y='188.2' font-size='13' fill='%23334155' text-anchor='middle'%3E55°%3C/text%3E%3Ctext x='124.4' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EA = H%3C/text%3E%3Ctext x='40' y='208.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.4' y='207.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortomarkaz-joylashuv",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#60fb6ced"
+    },
+    {
+      "q": "Burchaklari 118°, 40° va 22° bo'lgan uchburchakning balandliklari yoki ularning davomlari kesishish nuqtasi qayerda yotadi?",
+      "v": [
+        "uchburchak ichida",
+        "uchburchakdan tashqarida",
+        "eng katta burchak uchida",
+        "eng uzun tomonning o'rtasida"
+      ],
+      "t": 1,
+      "izoh": "Uchburchak o'tmas burchakli, chunki 118° burchak 90° dan katta. Bunday uchburchakda ikkita balandlikning asosi tomonlar davomida yotadi va balandliklar faqat davom ettirilganda kesishadi. Kesishish nuqtasi uchburchakdan tashqarida bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='123.6,176.9 56,233.7 264,233.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123.6' y1='176.9' x2='123.6' y2='233.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='56' y1='233.7' x2='85.2' y2='161.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='123.6' y1='176.9' x2='85.2' y2='161.4' stroke='%23334155' stroke-width='1.2' stroke-dasharray='4 4' fill='none'/%3E%3Cline x1='264' y1='233.7' x2='178.1' y2='131.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='178.1' y1='131.2' x2='123.6' y2='176.9' stroke='%23334155' stroke-width='1.2' stroke-dasharray='4 4' fill='none'/%3E%3Ccircle cx='123.6' cy='66.3' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='121.3' y='56.5' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='140.9' y='203.9' font-size='13' fill='%23334155' text-anchor='middle'%3E118°%3C/text%3E%3Ctext x='114.4' y='166.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.3' y='241.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.8' y='240.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortomarkaz-joylashuv",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#bbd17049"
+    },
+    {
+      "q": "Teng tomonli uchburchakda balandliklar kesishish nuqtasi bilan bissektrisalar kesishish nuqtasi haqida qaysi tasdiq to'g'ri?",
+      "v": [
+        "ular har doim har xil nuqtalar bo'ladi",
+        "balandliklar nuqtasi uchburchakdan tashqarida yotadi",
+        "bissektrisalar nuqtasi tomonda yotadi",
+        "ikkala nuqta bitta joyda ustma-ust tushadi"
+      ],
+      "t": 3,
+      "izoh": "Teng tomonli uchburchakda har bir uchdan chiqqan bissektrisa ayni paytda balandlik va mediana hamdir. Shu sababli uchala ajoyib nuqta — ortomarkaz, ichki markaz va og'irlik markazi — bitta nuqtada ustma-ust tushadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='160,59.9 56,240.1 264,240.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='59.9' x2='160' y2='240.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='56' y1='240.1' x2='212' y2='150' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='264' y1='240.1' x2='108' y2='150' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='160' cy='180' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='160' y='170' font-size='13' fill='%23334155' text-anchor='middle'%3EH = I%3C/text%3E%3Ctext x='160' y='46.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='41.3' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortomarkaz-joylashuv",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#8ae27b69"
+    },
+    {
+      "q": "Uchburchakning balandliklari kesishish nuqtasi uning uchlaridan biri bilan ustma-ust tushdi. Bunday uchburchak qanday uchburchak bo'ladi?",
+      "v": [
+        "teng tomonli",
+        "to'g'ri burchakli",
+        "o'tmas burchakli",
+        "teng yonli"
+      ],
+      "t": 1,
+      "izoh": "Ortomarkaz uchda yotishi uchun shu uchdan chiqqan ikki tomon o'zaro perpendikulyar bo'lishi kerak, ya'ni ular balandlik vazifasini bajaradi. Bu esa faqat to'g'ri burchakli uchburchakda ro'y beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortomarkaz-joylashuv",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#59990722"
+    },
+    {
+      "q": "O'tkir burchakli ABC uchburchakning balandliklari H nuqtada kesishadi. Uchburchakning ∠A burchagi 62° ga teng bo'lsa, ∠BHC burchak necha gradus?",
+      "v": [
+        "118°",
+        "124°",
+        "28°",
+        "62°"
+      ],
+      "t": 0,
+      "izoh": "Balandliklar kesishish nuqtasi uchun ∠BHC = 180° − ∠A munosabati o'rinli. Demak ∠BHC = 180° − 62° = 118°. Burchakni ikkilantirish 124°, to'ldiruvchi burchak esa 28° degan xato javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='155.9,63.5 56,236.5 264,236.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='155.9' y1='63.5' x2='155.9' y2='236.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='56' y1='236.5' x2='205.6' y2='143' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='264' y1='236.5' x2='108' y2='146.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='155.9' cy='174.1' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='148.9' y='166' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='156.6' y='95.5' font-size='13' fill='%23334155' text-anchor='middle'%3E62°%3C/text%3E%3Ctext x='155.5' y='50.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='41.2' y='248.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.9' y='248.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortomarkaz-burchak",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#a387f65b"
+    },
+    {
+      "q": "ABC uchburchakda balandliklar kesishish nuqtasi H bo'lib, ∠BHC = 145° ekani ma'lum. Uchburchakning ∠BAC burchagi necha gradusga teng?",
+      "v": [
+        "55°",
+        "72,5°",
+        "145°",
+        "35°"
+      ],
+      "t": 3,
+      "izoh": "∠BHC = 180° − ∠BAC formulasidan ∠BAC = 180° − 145° = 35°. To'g'ri burchakdan ayirish 55°, yarmini olish esa 72,5° degan noto'g'ri natija beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortomarkaz-burchak",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#b8deed05"
+    },
+    {
+      "q": "ABC uchburchakda ∠B = 40° va ∠C = 76°. Uchala balandlik H nuqtada kesishsa, ∠BHC burchak necha gradusga teng bo'ladi?",
+      "v": [
+        "104°",
+        "64°",
+        "116°",
+        "140°"
+      ],
+      "t": 2,
+      "izoh": "Avval ∠A = 180° − 40° − 76° = 64°. Endi ∠BHC = 180° − ∠A = 180° − 64° = 116°. Bu yerda 104° — berilgan ikki burchak yig'indisi, 64° esa ∠A ning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='228,77.8 56,222.2 264,222.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='228' y1='77.8' x2='228' y2='222.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='56' y1='222.2' x2='251.8' y2='173.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='264' y1='222.2' x2='178.1' y2='119.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='228' cy='179.3' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='241.9' y='184.9' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='85.9' y='210.8' font-size='13' fill='%23334155' text-anchor='middle'%3E40°%3C/text%3E%3Ctext x='236.5' y='205.9' font-size='13' fill='%23334155' text-anchor='middle'%3E76°%3C/text%3E%3Ctext x='235.3' y='66.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.1' y='232.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.6' y='234.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortomarkaz-burchak",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#6e93e45f"
+    },
+    {
+      "q": "ABC uchburchakda balandliklar H nuqtada kesishadi va ∠BHC burchak ∠BAC burchakdan uch marta katta. ∠BAC necha gradus?",
+      "v": [
+        "60°",
+        "36°",
+        "45°",
+        "90°"
+      ],
+      "t": 2,
+      "izoh": "∠BHC = 180° − ∠BAC va shart bo'yicha ∠BHC = 3·∠BAC. Demak 180° − ∠BAC = 3·∠BAC, bundan 4·∠BAC = 180° va ∠BAC = 45°. To'g'ridan-to'g'ri 180° ni 3 ga bo'lish 60° degan xatoga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortomarkaz-burchak",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#cd1fb478"
+    },
+    {
+      "q": "ABC uchburchakda A uchidan chiqqan bissektrisa ayni paytda shu uchdan tushirilgan balandlik ham bo'lib chiqdi. Bu uchburchak haqida nima deyish mumkin?",
+      "v": [
+        "BC = AC bo'lgan teng yonli uchburchak",
+        "albatta to'g'ri burchakli uchburchak",
+        "har qanday uchburchak bo'lishi mumkin",
+        "AB = AC bo'lgan teng yonli uchburchak"
+      ],
+      "t": 3,
+      "izoh": "Bissektrisa BC ni perpendikulyar kesib o'tsa, hosil bo'lgan ikki uchburchak ikki burchagi va umumiy tomoni bo'yicha teng bo'ladi. Bundan AB = AC kelib chiqadi, ya'ni uchburchak A uchida teng yonli.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='160,70.1 56,229.9 264,229.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='70.1' x2='160' y2='229.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='160,217.9 148,217.9 148,229.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 148,88.5 A 22 22 0 0 0 160,92.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 160,97.1 A 27 27 0 0 0 174.7,92.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160' y='248.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='160' y='57.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.9' y='241.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.1' y='241.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bissektrisa-balandlik-ustma",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#ea997074"
+    },
+    {
+      "q": "Teng yonli uchburchakning asosi 24 sm va yon tomoni 20 sm ga teng. Uchburchakning uchidan chiqqan bissektrisaning uzunligi necha santimetr?",
+      "v": [
+        "16 sm",
+        "12 sm",
+        "4√34 sm",
+        "10 sm"
+      ],
+      "t": 0,
+      "izoh": "Teng yonli uchburchakda uchdan chiqqan bissektrisa balandlik bilan ustma-ust tushadi va asosni 12 sm dan bo'ladi. Pifagor teoremasidan uzunlik = √(20² − 12²) = √(400 − 144) = √256 = 16 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='160,80.7 56,219.3 264,219.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='80.7' x2='160' y2='219.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='160,207.3 148,207.3 148,219.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 146.8,98.3 A 22 22 0 0 0 160,102.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 160,107.7 A 27 27 0 0 0 176.2,102.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160' y='238.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='145' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='160' y='252.3' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='94.3' y='147.9' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='225.7' y='147.9' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='160' y='67.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.5' y='230.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.5' y='230.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-balandlik-ustma",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#38fc48f2"
+    },
+    {
+      "q": "Teng tomonli uchburchakning tomoni 10 sm ga teng. Shu uchburchakning bissektrisasi va balandligi haqidagi qaysi tasdiq to'g'ri?",
+      "v": [
+        "bissektrisa balandlikdan uzunroq bo'ladi",
+        "har bir uchdan chiqqan bissektrisa, balandlik va mediana ustma-ust tushadi",
+        "balandlik bissektrisadan uzunroq bo'ladi",
+        "ular faqat bitta uchda ustma-ust tushadi"
+      ],
+      "t": 1,
+      "izoh": "Teng tomonli uchburchak har bir uchga nisbatan teng yonli, shuning uchun uchala uchda ham bissektrisa, balandlik va mediana bitta kesma bo'ladi. Ularning uzunligi bir xil, ya'ni 5√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='160,59.9 56,240.1 264,240.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='59.9' x2='160' y2='240.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='160,228.1 148,228.1 148,240.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 149,79 A 22 22 0 0 0 160,81.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 160,86.9 A 27 27 0 0 0 173.5,83.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160' y='259.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='160' y='273.1' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='160' y='46.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='41.3' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bissektrisa-balandlik-ustma",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#fd7d2a71"
+    },
+    {
+      "q": "ABC uchburchakda A uchidan chiqqan bissektrisa va balandlik ustma-ust tushdi. BC = 18 sm va AB = 15 sm bo'lsa, uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "135 sm²",
+        "216 sm²",
+        "54 sm²",
+        "108 sm²"
+      ],
+      "t": 3,
+      "izoh": "Bissektrisa balandlik bilan ustma-ust tushgani uchun AB = AC = 15 sm va uchburchak teng yonli. Balandlik asosni 9 sm dan bo'ladi: h = √(225 − 81) = 12 sm. Yuza S = 18·12:2 = 108 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='160,80.7 56,219.3 264,219.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='80.7' x2='160' y2='219.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='160,207.3 148,207.3 148,219.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 146.8,98.3 A 22 22 0 0 0 160,102.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 160,107.7 A 27 27 0 0 0 176.2,102.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160' y='238.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='160' y='252.3' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='94.3' y='147.9' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='160' y='67.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.5' y='230.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.5' y='230.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-balandlik-ustma",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#304b8b3c"
+    },
+    {
+      "q": "ABC uchburchakda ∠B = 80° va ∠C = 30°. A uchidan chiqqan balandlik bilan shu uchdan chiqqan bissektrisa orasidagi burchak necha gradusga teng?",
+      "v": [
+        "50°",
+        "25°",
+        "35°",
+        "55°"
+      ],
+      "t": 1,
+      "izoh": "Bir uchdan chiqqan balandlik va bissektrisa orasidagi burchak qolgan ikki burchak ayirmasining yarmiga teng. Demak burchak = (80° − 30°):2 = 25°. Ikkiga bo'lish unutilsa 50° chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='75.2,95.5 56,204.5 264,204.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='75.2' y1='95.5' x2='126' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='75.2' y1='95.5' x2='75.2' y2='204.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='75.2,192.5 63.2,192.5 63.2,204.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 71.4,117.2 A 22 22 0 0 0 84.5,115.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 86.6,120 A 27 27 0 0 0 98.6,109' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='123.7' y='223.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='62.6' y='216.6' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='84.9' y='190.7' font-size='13' fill='%23334155' text-anchor='middle'%3E80°%3C/text%3E%3Ctext x='233.1' y='196' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='64.8' y='86.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.7' y='215.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.4' y='213' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-balandlik-burchak",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#435df47d"
+    },
+    {
+      "q": "ABC uchburchakda A uchidan chiqqan balandlik va bissektrisa orasidagi burchak 12° ga teng. ∠B = 74° va ∠B burchak ∠C dan katta bo'lsa, ∠C necha gradus?",
+      "v": [
+        "62°",
+        "98°",
+        "50°",
+        "56°"
+      ],
+      "t": 2,
+      "izoh": "Balandlik bilan bissektrisa orasidagi burchak (∠B − ∠C):2 ga teng. Demak (74° − ∠C):2 = 12°, bundan 74° − ∠C = 24° va ∠C = 50°. Ikkilantirish unutilsa 62° degan xato javob chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-balandlik-burchak",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#5107f06e"
+    },
+    {
+      "q": "Uchburchakning ∠A burchagi 40°, ∠B burchagi esa 96° ga teng. A uchidan tushirilgan balandlik bilan A burchak bissektrisasi orasidagi burchakni toping.",
+      "v": [
+        "26°",
+        "52°",
+        "20°",
+        "28°"
+      ],
+      "t": 0,
+      "izoh": "Avval ∠C = 180° − 40° − 96° = 44°. Balandlik va bissektrisa orasidagi burchak (∠B − ∠C):2 = (96° − 44°):2 = 26°. Bu yerda 20° — ∠A ning yarmi, 52° esa yarimlash unutilgan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='62.7,56 82.4,244 257.3,244' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='62.7' y1='56' x2='154.4' y2='244' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='62.7' y1='244' x2='82.4' y2='244' stroke='%23334155' stroke-width='1.2' stroke-dasharray='4 4' fill='none'/%3E%3Cline x1='62.7' y1='56' x2='62.7' y2='244' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='62.7,232 74.7,232 74.7,244' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 65,77.9 A 22 22 0 0 0 72.3,75.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 74.5,80.3 A 27 27 0 0 0 82.1,74.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='159' y='262.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='51.4' y='257.9' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='78.5' y='83.8' font-size='13' fill='%23334155' text-anchor='middle'%3E40°%3C/text%3E%3Ctext x='102.8' y='219.3' font-size='13' fill='%23334155' text-anchor='middle'%3E96°%3C/text%3E%3Ctext x='54.2' y='45.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='71.6' y='261.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='272.5' y='255.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-balandlik-burchak",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#a93d8f93"
+    },
+    {
+      "q": "Uchburchakning bir uchidan chiqqan balandlik bilan bissektrisa orasidagi burchak nolga teng bo'lib qoldi. Bu holat nimadan darak beradi?",
+      "v": [
+        "qolgan ikki burchak teng, uchburchak teng yonli",
+        "uchburchak albatta to'g'ri burchakli",
+        "uchburchak albatta o'tmas burchakli",
+        "bunday holat umuman bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Burchak (∠B − ∠C):2 ga teng bo'lgani uchun u nolga aylanishi ∠B = ∠C ekanini bildiradi. Teng burchaklarga teng tomonlar qarshi yotadi, demak uchburchak teng yonli va ikki chiziq ustma-ust tushgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-balandlik-burchak",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#74e73f32"
+    },
+    {
+      "q": "Uchburchak shaklidagi gulzorning asosi 14 m va yuzi 63 m² ga teng. Gulzorning asosidan qarama-qarshi uchigacha bo'lgan eng qisqa masofa necha metr?",
+      "v": [
+        "4,5 m",
+        "18 m",
+        "9 m",
+        "7 m"
+      ],
+      "t": 2,
+      "izoh": "Uchdan asosgacha bo'lgan eng qisqa masofa — balandlik. Yuza formulasidan h = 2S:a = 2·63:14 = 126:14 = 9 m. Ikkiga ko'paytirish unutilsa 4,5 m degan xato javob chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='178.7,86 56,219.7 264,219.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='178.7' y1='86' x2='178.7' y2='219.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='178.7,207.7 166.7,207.7 166.7,219.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='182.6' y='238.2' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='163.7' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='158' y='238.6' font-size='13' fill='%23334155' text-anchor='middle'%3E14 m%3C/text%3E%3Ctext x='181' y='73.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.3' y='230.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.4' y='231' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-kontekst",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#c97fd64e"
+    },
+    {
+      "q": "Uchburchak shaklidagi bayroqning asosi 90 sm, balandligi esa 40 sm. Bir kvadrat metr mato 25 000 so'm turadi. Bitta bayroq uchun qancha pul sarflanadi?",
+      "v": [
+        "9000 so'm",
+        "4500 so'm",
+        "45 000 so'm",
+        "450 so'm"
+      ],
+      "t": 1,
+      "izoh": "Bayroq yuzi S = 90·40:2 = 1800 sm². 1 m² = 10 000 sm² bo'lgani uchun 1800 sm² = 0,18 m². Narxi 0,18·25 000 = 4500 so'm. Yuzani ikkiga bo'lish unutilsa 9000 so'm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='184.1,107 56,199.4 264,199.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='184.1' y1='107' x2='184.1' y2='199.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='184.1,187.4 172.1,187.4 172.1,199.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='190.6' y='216.9' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='169.1' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3Ctext x='156.5' y='218' font-size='13' fill='%23334155' text-anchor='middle'%3E90 sm%3C/text%3E%3Ctext x='188.1' y='94.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.7' y='208.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.1' y='208.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-kontekst",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#5f5d8a30"
+    },
+    {
+      "q": "Omborning uchburchak shaklidagi peshtoqi ikki yon qirrasi 17 m dan va asosi 16 m bo'lgan yopmadan iborat. Peshtoqning eng yuqori nuqtasi asos sathidan necha metr balandda turadi?",
+      "v": [
+        "8 m",
+        "9 m",
+        "33 m",
+        "15 m"
+      ],
+      "t": 3,
+      "izoh": "Yopma teng yonli uchburchak bo'lgani uchun balandlik asosni 8 m dan ikkiga bo'ladi. Pifagor teoremasidan h = √(17² − 8²) = √(289 − 64) = √225 = 15 m. Asosning yarmi 8 m bilan chalkashtirmaslik kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='160,56 59.7,244 260.3,244' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='56' x2='160' y2='244' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='160,232 148,232 148,244' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160' y='263' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='145' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='160' y='277' font-size='13' fill='%23334155' text-anchor='middle'%3E16 m%3C/text%3E%3Ctext x='97.1' y='146.1' font-size='13' fill='%23334155' text-anchor='middle'%3E17 m%3C/text%3E%3Ctext x='222.9' y='146.1' font-size='13' fill='%23334155' text-anchor='middle'%3E17 m%3C/text%3E%3Ctext x='160' y='43' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='45.3' y='257' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='274.7' y='257' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-kontekst",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#2856df76"
+    },
+    {
+      "q": "Ikki bino orasidagi uchburchak shaklidagi maydonchaning tomonlari 15 m, 20 m va 25 m. Eng uzun tomonga tushirilgan balandlik bo'ylab yorug'lik simi tortiladi. Sim uzunligi necha metr?",
+      "v": [
+        "10 m",
+        "12 m",
+        "12,5 m",
+        "9 m"
+      ],
+      "t": 1,
+      "izoh": "15² + 20² = 225 + 400 = 625 = 25², demak uchburchak to'g'ri burchakli va katetlari 15 m bilan 20 m. Yuza S = 15·20:2 = 150 m², balandlik esa h = 2·150:25 = 12 m. 12,5 m — gipotenuzaning yarmi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='56,72 56,228 264,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='228' x2='130.9' y2='128.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='123.7,137.8 133.3,145 140.5,135.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='132.6' y='117.3' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='105.4' y='191.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='42' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3E15 m%3C/text%3E%3Ctext x='168.3' y='244.5' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3Ctext x='172' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E25 m%3C/text%3E%3Ctext x='46.6' y='61.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='42.4' y='242.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.9' y='238' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-kontekst",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#a5cfa009"
+    },
+    {
+      "q": "Uchburchakning bir tomoni 22 sm bo'lib, unga tushirilgan balandlik shu tomondan 8 sm qisqa. Uchburchakning yuzi necha kvadrat santimetrga teng?",
+      "v": [
+        "154 sm²",
+        "308 sm²",
+        "88 sm²",
+        "77 sm²"
+      ],
+      "t": 0,
+      "izoh": "Balandlik h = 22 − 8 = 14 sm. Yuza S = a·h:2 = 22·14:2 = 308:2 = 154 sm². Ikkiga bo'lish unutilsa 308 sm², balandlik o'rniga 8 sm olinsa 22·8:2 = 88 sm² chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='182.6,81.3 56,213.7 264,213.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='182.6' y1='81.3' x2='182.6' y2='213.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='182.6,201.7 170.6,201.7 170.6,213.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='187.6' y='231.9' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='157.4' y='232.5' font-size='13' fill='%23334155' text-anchor='middle'%3E22 sm%3C/text%3E%3Ctext x='185.5' y='68.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.1' y='223.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.6' y='224.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-balandlik-orqali",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#0dfa883c"
+    },
+    {
+      "q": "Uchburchakning balandligi asosidan uch marta kichik, yuzi esa 96 sm² ga teng. Shu uchburchakning asosi necha santimetr?",
+      "v": [
+        "17 sm",
+        "8 sm",
+        "48 sm",
+        "24 sm"
+      ],
+      "t": 3,
+      "izoh": "Asosni a deb belgilaymiz, u holda balandlik a:3 bo'ladi. Yuza S = a·(a:3):2 = a²:6 = 96, bundan a² = 576 va a = 24 sm. Balandlik esa 8 sm ga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-balandlik-orqali",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#d59f3194"
+    },
+    {
+      "q": "ABC uchburchakda AH balandlik BC tomonni 5 sm va 9 sm bo'laklarga ajratdi hamda AH = 6 sm. Uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "84 sm²",
+        "15 sm²",
+        "42 sm²",
+        "27 sm²"
+      ],
+      "t": 2,
+      "izoh": "Asos BC = 5 + 9 = 14 sm. Yuza S = BC·AH:2 = 14·6:2 = 42 sm². Faqat bitta bo'lakni asos deb olish 15 sm² yoki 27 sm² degan xato natijalarni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='130.4,105.6 56,194.4 264,194.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='130.4' y1='105.6' x2='130.4' y2='194.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='130.4,182.4 118.4,182.4 118.4,194.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='122.1' y='210.9' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='115.4' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='79.9' y='205.4' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='209.9' y='206.4' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='125' y='93.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.8' y='203.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.5' y='202.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-balandlik-orqali",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#e09974c0"
+    },
+    {
+      "q": "Uchburchak shaklidagi qog'oz bo'lagining yuzi 210 sm², eng uzun tomoni esa 28 sm. Shu tomon bilan unga tushirilgan balandlik uzunliklarining yig'indisi necha santimetr?",
+      "v": [
+        "35,5 sm",
+        "53 sm",
+        "43 sm",
+        "30 sm"
+      ],
+      "t": 2,
+      "izoh": "Balandlik h = 2S:a = 420:28 = 15 sm. Yig'indi 28 + 15 = 43 sm. Ikkiga ko'paytirish unutilsa h = 7,5 sm va yig'indi 35,5 sm degan xato javob chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='174.7,83.3 56,194.7 264,194.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='174.7' y1='83.3' x2='174.7' y2='194.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='174.7,182.7 162.7,182.7 162.7,194.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.4' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='157.6' y='227.5' font-size='13' fill='%23334155' text-anchor='middle'%3E28 sm%3C/text%3E%3Ctext x='177.5' y='70.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.6' y='203.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.3' y='203.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-balandlik-orqali",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#499ad0c8"
+    },
+    {
+      "q": "Uchburchakning bir uchidan ichki bissektrisa va shu uchdagi tashqi burchak bissektrisasi o'tkazildi. Ular orasidagi burchak necha gradusga teng?",
+      "v": [
+        "45°",
+        "180°",
+        "uchburchak burchagiga bog'liq",
+        "90°"
+      ],
+      "t": 3,
+      "izoh": "Ichki burchak va unga qo'shni tashqi burchak yig'indisi 180° ga teng. Har biridan yarmi olinganda 90° hosil bo'ladi, ya'ni ichki va tashqi bissektrisalar doim o'zaro perpendikulyar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-tashqi",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#125bdfde"
+    },
+    {
+      "q": "ABC uchburchakda AB = 6 sm, AC = 9 sm va BC = 5 sm. A burchakning tashqi bissektrisasi BC to'g'ri chizig'ini D nuqtada kesadi. BD kesma necha santimetr?",
+      "v": [
+        "10 sm",
+        "15 sm",
+        "2 sm",
+        "3 sm"
+      ],
+      "t": 0,
+      "izoh": "Tashqi bissektrisa uchun DB:DC = AB:AC = 6:9 = 2:3 va D nuqta qisqa tomon tarafida, BC dan tashqarida yotadi. DC = DB + 5 bo'lgani uchun 3·DB = 2·(DB + 5), bundan DB = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cline x1='185' y1='215' x2='45' y2='215' stroke='%23334155' stroke-width='1.2' stroke-dasharray='4 4' fill='none'/%3E%3Cline x1='157' y1='135.8' x2='122' y2='107.5' stroke='%23334155' stroke-width='1.2' stroke-dasharray='4 4' fill='none'/%3E%3Cpolygon points='157,135.8 185,215 255,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='157' y1='135.8' x2='45' y2='215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 164.3,156.5 A 22 22 0 0 1 139,148.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 135,151.4 A 27 27 0 0 1 136,118.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='45' cy='215' r='3' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='168' y='128' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='216' y='163' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='138' y='180' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='45' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='115' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='188' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='220' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='262' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-tashqi",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#3a6ed023"
+    },
+    {
+      "q": "Uchburchakning bir uchidan chiqqan tashqi burchak bissektrisasi qarshi tomonga parallel bo'lib qoldi. Bu qanday hollarda ro'y beradi?",
+      "v": [
+        "uchburchak to'g'ri burchakli bo'lganda",
+        "shu uchdan chiquvchi ikki tomon teng bo'lganda",
+        "hech qachon ro'y bermaydi",
+        "har qanday uchburchakda ro'y beradi"
+      ],
+      "t": 1,
+      "izoh": "Tashqi bissektrisa qarshi tomonni DB:DC = AB:AC nisbatda bo'ladi. AB = AC bo'lsa nisbat 1 ga teng bo'lib qoladi va kesishish nuqtasi cheksizlikka ketadi, ya'ni chiziqlar parallel bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-tashqi",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#ebab673c"
+    },
+    {
+      "q": "Uchburchakning tomonlari 7 sm, 24 sm va 25 sm ga teng. Shu uchburchakning eng qisqa balandligi necha santimetr?",
+      "v": [
+        "7 sm",
+        "24 sm",
+        "3,36 sm",
+        "6,72 sm"
+      ],
+      "t": 3,
+      "izoh": "7² + 24² = 49 + 576 = 625 = 25², demak uchburchak to'g'ri burchakli va S = 7·24:2 = 84 sm². Eng qisqa balandlik eng uzun tomonga tushadi: h = 2·84:25 = 168:25 = 6,72 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='56,119.7 56,180.3 264,180.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='180.3' x2='72.3' y2='124.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='68.9,135.9 80.5,139.3 83.8,127.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='84' y='117' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='41.2' y='151.8' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='173' y='191.9' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='174.4' y='149.8' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Ctext x='41.3' y='115.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.7' y='189.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.8' y='186.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-taqqoslash",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#178b63e1"
+    },
+    {
+      "q": "Uchburchakning tomonlari 8 sm, 15 sm va 17 sm. Eng katta balandlik qaysi tomonga tushiriladi va u necha santimetrga teng?",
+      "v": [
+        "17 sm lik tomonga, 15 sm",
+        "8 sm lik tomonga, 15 sm",
+        "8 sm lik tomonga, 7,06 sm",
+        "15 sm lik tomonga, 8 sm"
+      ],
+      "t": 1,
+      "izoh": "Uchburchak to'g'ri burchakli, chunki 64 + 225 = 289. Yuza S = 8·15:2 = 60 sm². Balandlik tomonga teskari proporsional, shuning uchun eng kattasi eng qisqa tomonga tushadi: h = 120:8 = 15 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-taqqoslash",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#5112d0b7"
+    },
+    {
+      "q": "Uchburchakning tomonlari 9 sm, 12 sm va 18 sm ga teng. Balandliklarning eng kattasi qaysi tomonga tushiriladi?",
+      "v": [
+        "18 sm lik tomonga",
+        "12 sm lik tomonga",
+        "9 sm lik tomonga",
+        "uchala balandlik ham teng bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Yuza uchala holda ham bir xil, chunki S = a·h:2. Demak ko'paytma a·h o'zgarmas va balandlik tomonga teskari proporsional. Eng katta balandlik eng qisqa tomonga, ya'ni 9 sm lik tomonga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-taqqoslash",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#ead3587a"
+    },
+    {
+      "q": "Ikki uchburchakning yuzlari o'zaro teng. Birinchisining asosi 30 sm va balandligi 12 sm, ikkinchisining balandligi esa 20 sm. Ikkinchi uchburchakning asosi necha santimetr?",
+      "v": [
+        "18 sm",
+        "50 sm",
+        "9 sm",
+        "36 sm"
+      ],
+      "t": 0,
+      "izoh": "Birinchi uchburchakning yuzi S = 30·12:2 = 180 sm². Ikkinchisining asosi a = 2S:h = 360:20 = 18 sm. To'g'ri proporsiya deb 30·20:12 = 50 sm olish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-taqqoslash",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#eff299e7"
+    },
+    {
+      "q": "ABC uchburchakning perimetri 72 sm va BC = 24 sm. A burchak bissektrisasi BC ni 3:5 nisbatda bo'lsa, AB tomon necha santimetr?",
+      "v": [
+        "18 sm",
+        "30 sm",
+        "9 sm",
+        "27 sm"
+      ],
+      "t": 0,
+      "izoh": "Bo'laklar nisbati yon tomonlar nisbatiga teng: AB:AC = 3:5. Yon tomonlar yig'indisi 72 − 24 = 48 sm, jami 8 ulush, bitta ulush 6 sm. Demak AB = 3·6 = 18 sm, AC = 30 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='56,72 56,228 264,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='72' x2='134' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 56,94 A 22 22 0 0 0 65.8,91.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 68.1,96.1 A 27 27 0 0 0 77.6,88.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='136.5' y='246.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='168.3' y='244.5' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='46.6' y='61.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='42.4' y='242.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.9' y='238' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-perimetr",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#3b0d8ac4"
+    },
+    {
+      "q": "ABC uchburchakda AD bissektrisa bo'lib, BD = 12 sm va DC = 20 sm. Uchburchakning perimetri 96 sm bo'lsa, AC tomon necha santimetr?",
+      "v": [
+        "24 sm",
+        "60 sm",
+        "40 sm",
+        "32 sm"
+      ],
+      "t": 2,
+      "izoh": "BC = 12 + 20 = 32 sm, demak AB + AC = 96 − 32 = 64 sm. AB:AC = 12:20 = 3:5, jami 8 ulush va bitta ulush 8 sm. Shundan AC = 5·8 = 40 sm, AB esa 24 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='56,72 56,228 264,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='72' x2='134' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 56,94 A 22 22 0 0 0 65.8,91.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 68.1,96.1 A 27 27 0 0 0 77.6,88.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='136.5' y='246.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='87.4' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='211.3' y='240.7' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='46.6' y='61.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='42.4' y='242.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.9' y='238' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-perimetr",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#51771eb6"
+    },
+    {
+      "q": "Uchburchak shaklidagi bog'ning perimetri 90 m. Bir burchakdan chiqqan so'qmoq shu burchakni teng ikkiga bo'lib, qarshi tomonni 8 m va 12 m bo'laklarga ajratdi. Bog'ning eng uzun tomoni necha metr?",
+      "v": [
+        "28 m",
+        "42 m",
+        "45 m",
+        "36 m"
+      ],
+      "t": 1,
+      "izoh": "Qarshi tomon 8 + 12 = 20 m, qolgan ikki tomon yig'indisi 90 − 20 = 70 m. Ular 8:12 = 2:3 nisbatda, jami 5 ulush, bitta ulush 14 m. Tomonlar 28 m va 42 m, eng uzuni 42 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='56,77.8 143.4,222.2 264,222.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='77.8' x2='191.7' y2='222.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 67.4,96.6 A 22 22 0 0 0 71.1,93.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 74.5,97.5 A 27 27 0 0 0 78.2,93.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='200.8' y='238.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='171.5' y='240.7' font-size='13' fill='%23334155' text-anchor='middle'%3E8 m%3C/text%3E%3Ctext x='240.4' y='234.4' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='43.8' y='69.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='139.6' y='242.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.6' y='233' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-perimetr",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#d5417023"
+    },
+    {
+      "q": "Uchburchakning perimetri 60 sm. Bir burchakdan chiqqan bissektrisa qarshi tomonni 6 sm va 10 sm bo'laklarga ajratgan bo'lsa, 6 sm lik bo'lakka tegib turgan tomon necha santimetr?",
+      "v": [
+        "27,5 sm",
+        "22,5 sm",
+        "18 sm",
+        "16,5 sm"
+      ],
+      "t": 3,
+      "izoh": "Qarshi tomon 6 + 10 = 16 sm, qolgan ikki tomon yig'indisi 60 − 16 = 44 sm. Ular 6:10 = 3:5 nisbatda, jami 8 ulush va bitta ulush 5,5 sm. Izlanayotgan tomon 3·5,5 = 16,5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Cpolygon points='56,83.1 120.1,216.9 264,216.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='83.1' x2='174.1' y2='216.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 65.5,102.9 A 22 22 0 0 0 70.6,99.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 73.9,103.3 A 27 27 0 0 0 78.7,97.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='181.9' y='233.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='147.2' y='235.9' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='231.8' y='228.8' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='43.9' y='75.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='111.4' y='235.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.9' y='227' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-perimetr",
+      "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi#96c71ddf"
+    }
+  ]
+}

@@ -1,0 +1,891 @@
+{
+  "nom": "Biologiya-10, 6.5. Ekosistemaning trofik strukturasi",
+  "bolim": "VI BOB. Ekosistema",
+  "savollar": [
+    {
+      "q": "Ekotizim (ekosistema)ga tabiatning qanday birligi sifatida qaraladi?",
+      "v": [
+        "Asosiy tuzilish birligi",
+        "Asosiy energetik birligi",
+        "Ikkilamchi funksional birligi",
+        "Kimyoviy almashinuv birligi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekosistema (ekotizim)ga tabiatning asosiy tuzilish birligi sifatida qaraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m6_5#af78e847"
+    },
+    {
+      "q": "Ekotizim nima?",
+      "v": [
+        "Tirik organizmlar jamoasi, ularning yashash muhitlari, moddalar va energiya almashinuvi majmuyi",
+        "Faqat tirik organizmlar jamoasi",
+        "Faqat moddalar va energiya almashinuvi jarayoni",
+        "Bir turga mansub organizmlar toʻplami"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekotizim — tirik organizmlar jamoasi, ularning yashash muhitlari, moddalar va energiya almashinuvi majmuyi sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#dd789a4c"
+    },
+    {
+      "q": "Moddalarning davriy aylanishida bajaradigan vazifasiga koʻra turlar qaysi funksional guruhlarga boʻlinadi?",
+      "v": [
+        "Produtsentlar, konsumentlar, redutsentlar",
+        "Avtotroflar, fitofaglar, zoofaglar",
+        "Produtsentlar, detritofaglar, parazitlar",
+        "Fototroflar, xemotroflar, geterotroflar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra turlar funksional guruhlarga boʻlinadi: produtsentlar, konsumentlar yoki redutsentlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#6adc87bc"
+    },
+    {
+      "q": "Produtsentlar qanday jarayonni amalga oshiradi?",
+      "v": [
+        "Yorugʻlik va kimyoviy energiyadan foydalanib, anorganik moddalardan organik birikma sintezlaydi",
+        "Organik moddalarni anorganik moddalarga parchalaydi",
+        "Tayyor organik modda hisobiga oziqlanadi",
+        "Organik qoldiqlarni chiritadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra produtsentlar yorugʻlik va kimyoviy energiyadan foydalanib, anorganik moddalardan organik birikmalarini sintezlaydilar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#0f848a86"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri produtsentlar funksional guruhiga kiradi?",
+      "v": [
+        "Yashil oʻsimliklar, fotosintezlovchi va xemosintezlovchi bakteriyalar",
+        "Barcha hayvonlar va parazit oʻsimliklar",
+        "Tuproq bakteriyalari va zamburugʻlar",
+        "Eshakqurt va oʻlimtikxoʻr qoʻngʻizlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra produtsentlar guruhiga yashil oʻsimliklar, fotosintezlovchi va xemosintezlovchi bakteriyalar kiritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#4d81c948"
+    },
+    {
+      "q": "Avtotrof organizmlar geterotrof organizmlar uchun nima boʻlib xizmat qiladi?",
+      "v": [
+        "Oziqa va energiya manbayi",
+        "Faqat kislorod manbayi",
+        "Yashash muhiti",
+        "Redutsent guruh"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra avtotrof organizmlar geterotrof organizmlar yashashini taʼminlaydigan oziqa va energiya manbayi boʻlib xizmat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m6_5#9272ca43"
+    },
+    {
+      "q": "Konsumentlar qanday oziqlanadi?",
+      "v": [
+        "Tirik organizm tarkibidagi organik modda hisobiga oziqlanadi va energiyani oziq zanjiri orqali uzatadi",
+        "Anorganik moddalardan organik birikma sintezlaydi",
+        "Organik qoldiqlarni anorganik moddalarga aylantiradi",
+        "Faqat quyosh energiyasidan foydalanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra konsumentlar tirik organizm tarkibidagi organik modda hisobiga oziqlanadi va undagi energiyani oziq zanjiri orqali uzatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#1b5dffe1"
+    },
+    {
+      "q": "Konsumentlar funksional guruhiga kimlar kiradi?",
+      "v": [
+        "Barcha hayvonlar va parazit oʻsimliklar",
+        "Yashil oʻsimliklar va bakteriyalar",
+        "Tuproq zamburugʻlari",
+        "Fotosintezlovchi bakteriyalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra konsumentlarga barcha hayvonlar va parazit oʻsimliklar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#79b74eeb"
+    },
+    {
+      "q": "Produtsentlarni iste'mol qiluvchi organizmlar qaysi tartib konsumentlar deyiladi?",
+      "v": [
+        "Birinchi tartib konsumentlar",
+        "Ikkinchi tartib konsumentlar",
+        "Uchinchi tartib konsumentlar",
+        "Redutsentlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra produtsentlarni iste'mol qiluvchi organizmlar birinchi tartib konsumentlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m6_5#e6c099bd"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri birinchi tartib konsumentlarga misol boʻladi?",
+      "v": [
+        "Chigirtka, bargxoʻr qoʻngʻiz, tuyoqli hayvonlar va parazit oʻsimliklar",
+        "Boʻrilar va yirtqich baliqlar",
+        "Tuproq bakteriyalari va zamburugʻlar",
+        "Eshakqurt va chuvalchanglar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra birinchi tartib konsumentlarga chigirtka, bargxoʻr qoʻngʻiz, tuyoqli hayvonlar va parazit oʻsimliklar misol boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#8b6b7021"
+    },
+    {
+      "q": "Birinchi tartib konsumentlarini iste'mol qiladigan organizmlar kimlar?",
+      "v": [
+        "Ikkinchi tartib konsumentlar — goʻshtxoʻr (yirtqich) hayvonlar",
+        "Uchinchi tartib konsumentlar — hammaxoʻrlar",
+        "Produtsentlar — yashil oʻsimliklar",
+        "Redutsentlar — tuproq zamburugʻlari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra birinchi tartib konsumentlarini ikkinchi tartib konsumentlar iste'mol qiladi, ularga goʻshtxoʻr (yirtqich) hayvonlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#c43d193d"
+    },
+    {
+      "q": "Uchinchi va undan keyingi tartib konsumentlariga qanday organizmlar kiradi?",
+      "v": [
+        "Ikkinchi va undan keyingi tartib konsumentlarni iste'mol qiladigan yirtqichlar",
+        "Produtsentlarni iste'mol qiladigan oʻsimlikxoʻrlar",
+        "Anorganik moddalarni sintezlovchi avtotroflar",
+        "Organik qoldiqlarni parchalovchi redutsentlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra uchinchi va undan keyingi tartib konsumentlariga ikkinchi va undan keyingi tartib konsumentlarni iste'mol qiladigan yirtqichlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#bca0bf16"
+    },
+    {
+      "q": "Toʻngʻizlar hammaxoʻr konsumentlar sifatida qaysi tartib konsumentlari boʻlishi mumkin?",
+      "v": [
+        "Birinchi va ikkinchi tartib",
+        "Ikkinchi va uchinchi tartib",
+        "Faqat birinchi tartib",
+        "Faqat uchinchi tartib"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra hammaxoʻr konsumentlar, masalan, toʻngʻizlar birinchi va ikkinchi tartib konsumentlari boʻlishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#ad074b4c"
+    },
+    {
+      "q": "Yirtqichlar, masalan boʻrilar qaysi tartib konsumentlari boʻlishi mumkin?",
+      "v": [
+        "Ikkinchi va uchinchi tartib",
+        "Birinchi va ikkinchi tartib",
+        "Faqat birinchi tartib",
+        "Uchinchi va toʻrtinchi tartib"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yirtqichlar, masalan, boʻrilar ikkinchi va uchinchi tartib konsumentlari boʻlishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#5e68debb"
+    },
+    {
+      "q": "Oʻsimlik va goʻsht mahsulotlarini birday iste'mol qiladigan hayvon turlari qanday nomlanadi?",
+      "v": [
+        "Hammaxoʻrlar",
+        "Fitofaglar",
+        "Detritofaglar",
+        "Redutsentlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻsimlik va goʻsht mahsulotlarini birday iste'mol qiladigan hayvon turlarini hammaxoʻrlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m6_5#7912ba3e"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri hammaxoʻrlarga misol boʻladi?",
+      "v": [
+        "Suvaraklar, tuyaqushlar, kalamushlar, choʻchqalar, qoʻngʻir ayiq",
+        "Chigirtka, bargxoʻr qoʻngʻiz, tuyoqli hayvonlar",
+        "Tuproq bakteriyalari va zamburugʻlar",
+        "Suvoʻtlari va yashil oʻsimliklar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra hammaxoʻrlarga suvaraklar, tuyaqushlar, kalamushlar, choʻchqalar, qoʻngʻir ayiq misol boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#90f2be73"
+    },
+    {
+      "q": "Ekosistemada konsumentlar tartibi soni nimaga bogʻliq holda cheklangan boʻladi?",
+      "v": [
+        "Produtsentlar hosil qiladigan biomassa hajmiga",
+        "Redutsentlar soniga",
+        "Detritofaglar xilma-xilligiga",
+        "Yashash muhitining haroratiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekosistemada konsumentlar tartibi soni produtsentlar hosil qiladigan biomassa hajmiga bogʻliq holda cheklangan boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#0f5a4874"
+    },
+    {
+      "q": "Redutsentlar (destruktorlar) qanday organizmlar?",
+      "v": [
+        "Organik qoldiqlarni anorganik moddalarga aylantiradigan organizmlar",
+        "Anorganik moddalardan organik birikma sintezlovchi organizmlar",
+        "Tirik organizmlar hisobiga oziqlanadigan yirtqichlar",
+        "Quyosh energiyasidan foydalanuvchi avtotroflar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra redutsentlar (destruktorlar) — hayot faoliyati davomida organik qoldiqlarni anorganik moddalarga aylantiradigan, elementlarni moddalar davriy aylanishiga qaytaradigan organizmlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#89de45ec"
+    },
+    {
+      "q": "Redutsentlarga qanday organizmlar misol boʻladi?",
+      "v": [
+        "Tuproq bakteriyalari va zamburugʻlar",
+        "Yashil oʻsimliklar va suvoʻtlari",
+        "Yirtqich hayvonlar va parazitlar",
+        "Tuyoqli hayvonlar va chigirtkalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra redutsentlarga tuproq bakteriyalari va zamburugʻlar misol boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m6_5#eefe9ace"
+    },
+    {
+      "q": "Redutsentlar parchalanishning qaysi bosqichida qatnashadi?",
+      "v": [
+        "Oxirgi bosqichi — organik birikmalarning anorganik moddalargacha minerallashuvida",
+        "Birinchi bosqichi — organik birikmalar sintezida",
+        "Oʻrta bosqichi — energiya uzatishda",
+        "Fotosintez bosqichida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra redutsentlar parchalanishning oxirgi bosqichi — organik birikmalarning anorganik moddalargacha minerallashuvida qatnashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#a83171a9"
+    },
+    {
+      "q": "Redutsentlar moddalarni qaysi shaklda davriy aylanishga qaytaradi?",
+      "v": [
+        "Produtsentlar oʻzlashtira oladigan shaklda",
+        "Faqat konsumentlar oʻzlashtiradigan shaklda",
+        "Detritofaglar oʻzlashtiradigan shaklda",
+        "Organik birikma shaklida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra redutsentlar moddalarni produtsentlar oʻzlashtira oladigan shaklda davriy aylanishga qaytaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#34518943"
+    },
+    {
+      "q": "Chiriyotgan oʻsimlik, zamburugʻ va hayvon qoldiqlari nima deyiladi?",
+      "v": [
+        "Detrit",
+        "Biomassa",
+        "Gumus",
+        "Plankton"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra chiriyotgan oʻsimlik, zamburugʻ va hayvon qoldiqlari detrit deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m6_5#3ab337ed"
+    },
+    {
+      "q": "Detritning parchalanishida qaysi organizmlar qatnashadi?",
+      "v": [
+        "Detritofaglar va redutsentlar",
+        "Faqat produtsentlar",
+        "Fototroflar va xemotroflar",
+        "Yirtqich baliqlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra detritning parchalanishida detritofaglar va redutsentlar qatnashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#2d5cdc5e"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri detritofaglarga misol boʻladi?",
+      "v": [
+        "Eshakqurt, kanalar, koʻpoyoqlilar, oʻlimtikxoʻr qoʻngʻizlar, chuvalchanglar",
+        "Yashil oʻsimliklar va suvoʻtlari",
+        "Tuyoqli hayvonlar va chigirtkalar",
+        "Yirtqich baliqlar va boʻrilar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra detritofaglarga eshakqurt, ayrim kanalar, koʻpoyoqlilar, oʻlimtikxoʻr qoʻngʻizlar, ayrim hasharotlar va ularning lichinkalari, chuvalchanglar misol boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#9914baf6"
+    },
+    {
+      "q": "Detritofaglar qaysi funksional guruhga mansub hisoblanadi?",
+      "v": [
+        "Konsumentlar",
+        "Produtsentlar",
+        "Redutsentlar",
+        "Avtotroflar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra detritofaglar konsumentlar hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#a7d94a9e"
+    },
+    {
+      "q": "Ekosistema barqarorligining eng muhim sharti nima?",
+      "v": [
+        "Moddalar va energiya aylanishini taʼminlash",
+        "Faqat produtsentlar sonining koʻpligi",
+        "Yirtqichlar sonining kamayishi",
+        "Faqat quyosh nurining yetarli boʻlishi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekosistema barqarorligining eng muhim sharti moddalar va energiya aylanishini taʼminlashdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#b10d804e"
+    },
+    {
+      "q": "Redutsentlarning hayot faoliyati natijasida qanday anorganik moddalar hosil boʻladi?",
+      "v": [
+        "CO2, NH3, H2S, H2O",
+        "Faqat O2 va glyukoza",
+        "Faqat organik birikmalar",
+        "Kraxmal va oqsillar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra redutsentlarning hayot faoliyati natijasida biogen elementlar organik birikmalardan anorganik moddalar (CO2, NH3, H2S, H2O) hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#02b81b85"
+    },
+    {
+      "q": "Ekosistemada moddalar aylanishi toʻliq amalga oshishi uchun nima zarur?",
+      "v": [
+        "Har uchta funksional guruh organizmlari boʻlishi",
+        "Faqat produtsentlar boʻlishi",
+        "Faqat konsumentlar va produtsentlar boʻlishi",
+        "Faqat redutsentlar boʻlishi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekosistemada moddalar aylanishi toʻliq amalga oshishi uchun har uchta funksional guruh organizmlari boʻlishi zarur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#48ac9452"
+    },
+    {
+      "q": "Oziq zanjiri nima?",
+      "v": [
+        "Bir boʻgʻindan ikkinchi boʻgʻinga moddalar va energiya oʻtadigan organizmlarning tizimli ketma-ketligi",
+        "Bir necha oziq zanjirlaridan iborat murakkab toʻr",
+        "Faqat produtsentlar toʻplami",
+        "Organizmning oziq zanjiridagi oʻrni"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oziq zanjiri — bir boʻgʻin (manba)dan ikkinchi boʻgʻin (iste'molchi)ga moddalar va energiya oʻtadigan organizmlarning tizimli ketma-ketligidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#77e7a4d5"
+    },
+    {
+      "q": "«Oziq zanjiri» atamasini kim taklif etgan?",
+      "v": [
+        "Ingliz olimi — zoolog va ekolog Ch. Elton",
+        "Rus olimi V. Vernadskiy",
+        "Ingliz olimi Ch. Darvin",
+        "Nemis olimi E. Gekkel"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra «oziq zanjiri» atamasi ingliz olimi — zoolog va ekolog Ch. Elton tomonidan taklif etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#abe51067"
+    },
+    {
+      "q": "«Oziq zanjiri» atamasi qaysi yilda taklif etilgan?",
+      "v": [
+        "1934-yilda",
+        "1859-yilda",
+        "1901-yilda",
+        "1953-yilda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra «oziq zanjiri» atamasi Ch. Elton tomonidan 1934-yilda taklif etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#1c9f89f3"
+    },
+    {
+      "q": "Oziq zanjirining birinchi boʻgʻini asosan nimadan iborat boʻladi?",
+      "v": [
+        "Yashil oʻsimliklardan",
+        "Yirtqich hayvonlardan",
+        "Redutsentlardan",
+        "Parazit oʻsimliklardan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oziq zanjirining birinchi boʻgʻini asosan yashil oʻsimliklardan iborat boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m6_5#c79ee3e3"
+    },
+    {
+      "q": "Yashil oʻsimliklardan boshlangan oziq zanjiri qanday nomlanadi?",
+      "v": [
+        "Oʻtloq tipidagi (produtsent) oziq zanjiri",
+        "Detrit tipidagi oziq zanjiri",
+        "Suv oziq zanjiri",
+        "Parazit oziq zanjiri"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yashil oʻsimliklardan boshlangan oziq zanjiri oʻtloq tipidagi (produtsent zanjir) oziq zanjir deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#268f2936"
+    },
+    {
+      "q": "Oʻlik organik modda — detritdan boshlanadigan zanjir qanday deyiladi?",
+      "v": [
+        "Detrit tipidagi oziq zanjir",
+        "Oʻtloq tipidagi oziq zanjir",
+        "Produtsent zanjir",
+        "Fototrof zanjir"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻlik organik modda — detritdan boshlanadigan zanjir detrit tipidagi oziq zanjir deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#aafbb7db"
+    },
+    {
+      "q": "Detrit tipidagi oziq zanjirlar necha boʻgʻinli boʻladi?",
+      "v": [
+        "Ikki yoki ayrim hollarda uch boʻgʻinli",
+        "Toʻrt-olti boʻgʻinli",
+        "Doimo besh boʻgʻinli",
+        "Etti-sakkiz boʻgʻinli"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra detrit tipidagi oziq zanjirlar asosan ikki yoki ayrim hollardagina uch boʻgʻinli boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#76698c6d"
+    },
+    {
+      "q": "Oʻtloq tipidagi oziq zanjirlari necha boʻgʻinli boʻladi?",
+      "v": [
+        "Toʻrt-olti boʻgʻinli",
+        "Ikki-uch boʻgʻinli",
+        "Bir boʻgʻinli",
+        "Etti-oʻn boʻgʻinli"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻtloq tipidagi oziq zanjirlari toʻrt-olti boʻgʻinli boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#bebebc05"
+    },
+    {
+      "q": "Detrit tipidagi oziq zanjirlardan inson qanday maqsadda foydalanadi?",
+      "v": [
+        "Organik chiqindilarni qayta ishlashda, baliq va qushlarni boqish uchun chuvalchang va pashsha lichinkalarini koʻpaytirishda",
+        "Faqat sanoat mahsulotlari ishlab chiqarishda",
+        "Faqat quyosh energiyasini toʻplashda",
+        "Faqat mineral oʻgʻitlar tayyorlashda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra detrit tipidagi oziq zanjirlar inson tomonidan organik chiqindilarni qayta ishlashda hamda baliq yoki qushlarni boqish uchun yomgʻir chuvalchangi va pashshalarning lichinkalarini koʻpaytirishda foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#0d91f234"
+    },
+    {
+      "q": "Suv sistemalarda energiyaning birlamchi manbayi nima boʻlib xizmat qiladi?",
+      "v": [
+        "Quyosh nuri",
+        "Detrit",
+        "Yirtqich baliqlar",
+        "Bir hujayrali hayvonlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra suv sistemalarda ham energiyaning birlamchi manbayi quyosh nuri boʻlib xizmat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#7e77b7c4"
+    },
+    {
+      "q": "Suv havzalari oziq zanjirida zooplanktonga qaysi organizmlar misol boʻladi?",
+      "v": [
+        "Dafniya, sikloplar",
+        "Choʻrtan, olabugʻa",
+        "Qizilkoʻz baliq",
+        "Suvoʻtlari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra suv havzalari oziq zanjirida zooplanktonga dafniya va sikloplar misol boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#8286922d"
+    },
+    {
+      "q": "Suv havzalari oziq zanjirida yirtqich baliqqa qaysi turlar misol boʻladi?",
+      "v": [
+        "Choʻrtan, olabugʻa",
+        "Dafniya, sikloplar",
+        "Qizilkoʻz baliq",
+        "Fitoplankton"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra suv havzalari oziq zanjirida yirtqich baliqqa choʻrtan va olabugʻa misol boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#cbd35bac"
+    },
+    {
+      "q": "Suv havzalari oziq zanjirida fitoplanktonga qaysi organizmlar misol boʻladi?",
+      "v": [
+        "Suvoʻtlari",
+        "Dafniya, sikloplar",
+        "Choʻrtan, olabugʻa",
+        "Qizilkoʻz baliq"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra suv havzalari oziq zanjirida fitoplankton suvoʻtlaridan iborat boʻladi (fitoplankton — suvoʻtlari).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#0a8afdc0"
+    },
+    {
+      "q": "Oziq zanjirining oxirida qaysi organizmlar joylashadi?",
+      "v": [
+        "Oʻlik organik moddalarni anorganik moddalarga aylantiruvchi redutsentlar",
+        "Yashil oʻsimliklar — produtsentlar",
+        "Birinchi tartib konsumentlar",
+        "Fitoplankton"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oziq zanjirining oxirida oʻlik organik moddalarni anorganik moddalarga aylantirib beradigan redutsentlar joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#66b8ebf1"
+    },
+    {
+      "q": "Tabiiy jamoalar turlar tarkibi jihatdan farq qilsa-da, troik strukturasi boʻyicha qaysi komponentlardan tashkil topadi?",
+      "v": [
+        "Produtsentlar, turli tartib konsumentlari va redutsentlar",
+        "Faqat produtsentlar va konsumentlar",
+        "Faqat avtotroflar",
+        "Faqat geterotroflar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tabiiy jamoalar troik strukturasi boʻyicha oʻxshash boʻladi: ular produtsentlar (avtotroflar), turli tartib konsumentlari va redutsentlar (geterotroflar)dan tashkil topadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#8915a2f3"
+    },
+    {
+      "q": "Troik daraja nima?",
+      "v": [
+        "Organizmning oziq zanjiridagi oʻrni yoki bitta boʻgʻiniga tegishli organizmlar yigʻindisi",
+        "Bir necha oziq zanjirlaridan iborat toʻr",
+        "Faqat produtsentlar toʻplami",
+        "Moddalar va energiya oʻtadigan kanal"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra organizmning oziq zanjiridagi oʻrni yoki oziq zanjirining bitta boʻgʻiniga tegishli boʻlgan organizmlar yigʻindisi troik daraja deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#9e78fc68"
+    },
+    {
+      "q": "Troik darajalar soni nimaga teng boʻladi?",
+      "v": [
+        "Oziq zanjiri boʻgʻinlari soniga",
+        "Produtsentlar soniga",
+        "Redutsentlar biomassasiga",
+        "Konsumentlar tartibiga ikki barobar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra troik darajalar soni oziq zanjiri boʻgʻinlari soniga teng boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#151c2e7e"
+    },
+    {
+      "q": "Birinchi troik darajani qaysi organizmlar tashkil etadi?",
+      "v": [
+        "Avtotrof organizmlar — produtsentlar",
+        "Fitofaglar — oʻsimlikxoʻrlar",
+        "Goʻshtxoʻr yirtqichlar",
+        "Redutsentlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra avtotrof organizmlar — produtsentlar birinchi troik darajani tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#341edbc6"
+    },
+    {
+      "q": "Ikkinchi troik darajaga (birinchi tartib konsumentlar) qaysi organizmlar kiradi?",
+      "v": [
+        "Fitofaglar — oʻsimlikxoʻr organizmlar",
+        "Avtotrof produtsentlar",
+        "Ikkilamchi yirtqichlar",
+        "Redutsentlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ikkinchi troik daraja (birinchi tartib konsumentlar)ga fitofaglar — oʻsimlikxoʻr organizmlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#1195d804"
+    },
+    {
+      "q": "Uchinchi troik darajaga (ikkinchi tartib konsumentlar) qaysi organizmlar mansub?",
+      "v": [
+        "Fitofaglar hisobiga yashaydigan goʻshtxoʻrlar",
+        "Oʻsimlikxoʻr fitofaglar",
+        "Yashil oʻsimliklar",
+        "Tuproq bakteriyalari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fitofaglar hisobiga yashaydigan goʻshtxoʻrlar uchinchi troik daraja (ikkinchi tartib konsumentlar)ga mansubdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#d46c5c20"
+    },
+    {
+      "q": "Toʻrtinchi troik darajaga (uchinchi darajali konsumentlar) qaysi organizmlar mansub?",
+      "v": [
+        "Boshqa goʻshtxoʻrlarni iste'mol qiladigan hayvonlar",
+        "Oʻsimlikxoʻr fitofaglar",
+        "Produtsentlar",
+        "Detritofaglar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra boshqa goʻshtxoʻrlarni iste'mol qiladigan hayvonlar toʻrtinchi troik daraja (uchinchi darajali konsumentlar)ga mansubdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#3edf783c"
+    },
+    {
+      "q": "Yirik yirtqichlar (ikkilamchi yirtqichlar) qaysi tartib konsumentlarga mansub boʻladi?",
+      "v": [
+        "Uchinchi tartib konsumentlar",
+        "Birinchi tartib konsumentlar",
+        "Redutsentlar",
+        "Produtsentlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra goʻshtxoʻr hayvonlar uchinchi tartib konsumentlar yoki yirik yirtqichlar (ikkilamchi yirtqichlar) tomonidan iste'mol qilinadi, yaʼni yirik yirtqichlar uchinchi tartib konsumentlarga mansub.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#75400a57"
+    },
+    {
+      "q": "Har bir trofik darajaga nechta tur kiradi?",
+      "v": [
+        "Bir necha tur",
+        "Faqat bitta tur",
+        "Faqat ikkita tur",
+        "Hech qanday tur"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra har bir trofik darajaga bir necha tur kiradi; masalan, birinchi trofik darajani koʻpgina oʻsimlik turlari tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#a220cad5"
+    },
+    {
+      "q": "Biogeotsenozning turgʻunligi nimaga bogʻliq?",
+      "v": [
+        "Trofik darajalar turlarining xilma-xilligiga",
+        "Faqat produtsentlar biomassasiga",
+        "Faqat yirtqichlar soniga",
+        "Faqat quyosh nuri miqdoriga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra biogeotsenozning turgʻunligi trofik darajalar turlarining xilma-xilligiga bogʻliqdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#ac8cbe85"
+    },
+    {
+      "q": "Nima uchun har qaysi tur bitta oziq zanjirining turli trofik darajalarini egallashi mumkin?",
+      "v": [
+        "Chunki koʻpgina turlar bir turdagi oziq bilan emas, turli xil oziq manbalaridan foydalanadi",
+        "Chunki har bir tur faqat bitta oziqdan foydalanadi",
+        "Chunki barcha turlar produtsentlardir",
+        "Chunki trofik darajalar oʻzgarmasdir"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tabiatda koʻpgina turlar turli xil oziq manbalaridan foydalanadi, shu bois har qaysi tur bitta oziq zanjirining turli troik darajalarini egallashi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#cedad904"
+    },
+    {
+      "q": "Qirgʻiy sichqonlarni tutib yeyishi bilan qaysi trofik darajani egallaydi?",
+      "v": [
+        "Uchinchi troik darajani",
+        "Birinchi troik darajani",
+        "Ikkinchi troik darajani",
+        "Beshinchi troik darajani"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra qirgʻiy sichqonlarni tutib yeyishi bilan uchinchi troik darajani egallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#68c45de9"
+    },
+    {
+      "q": "Qirgʻiy ilonlarni tutib yeyishi bilan qaysi trofik darajani egallaydi?",
+      "v": [
+        "Toʻrtinchi troik darajani",
+        "Ikkinchi troik darajani",
+        "Birinchi troik darajani",
+        "Uchinchi troik darajani"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra qirgʻiy ilonlarni tutib yeyishi bilan toʻrtinchi troik darajani egallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#2216874d"
+    },
+    {
+      "q": "Oziq (troik) toʻri nima?",
+      "v": [
+        "Bir necha oziq zanjirlaridan iborat boʻlgan murakkab toʻr",
+        "Bitta oziq zanjiri boʻgʻini",
+        "Organizmning trofik darajasi",
+        "Faqat produtsentlar toʻplami"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra troik zanjirlar bir-biri bilan chalkashib, ekosistemada oziq toʻri — bir necha oziq zanjirlaridan iborat boʻlgan murakkab toʻrni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#af9381e7"
+    },
+    {
+      "q": "Oziq toʻrida har qaysi oziq zanjiri nima vazifasini bajaradi?",
+      "v": [
+        "Moddalar va energiya oʻtadigan alohida kanal",
+        "Faqat energiya saqlash omili",
+        "Trofik daraja belgisi",
+        "Faqat redutsentlar joyi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oziq toʻrida har qaysi oziq zanjiri moddalar va energiya oʻtadigan alohida kanaldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#77101e32"
+    },
+    {
+      "q": "Biogeotsenozning biror aʼzosi yoʻqolsa tizim nima uchun buzilmaydi?",
+      "v": [
+        "Chunki organizmlar boshqa oziq manbalaridan foydalanadi",
+        "Chunki produtsentlar sonini oshiradi",
+        "Chunki redutsentlar yoʻqolgan turni tiklaydi",
+        "Chunki energiya aylanishi toʻxtaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra agar biogeotsenozning biror aʼzosi yoʻqolsa tizim buzilmaydi, chunki organizmlar boshqa oziq manbalaridan foydalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m6_5#abf61292"
+    },
+    {
+      "q": "Turlarning xilma-xilligi ekosistema barqarorligiga qanday taʼsir qiladi?",
+      "v": [
+        "Turlar qanchalik xilma-xil boʻlsa, tizim shunchalik barqaror boʻladi",
+        "Turlar xilma-xilligi tizimni beqaror qiladi",
+        "Turlar xilma-xilligi barqarorlikka taʼsir qilmaydi",
+        "Kam turli tizim eng barqaror boʻladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra turlar qanchalik xilma-xil boʻlsa, tizim shunchalik barqaror boʻladi degan umumiy xulosa kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m6_5#cf7a98c7"
+    }
+  ]
+}

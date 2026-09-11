@@ -1,0 +1,576 @@
+{
+  "nom": "42-mavzu. Gazlarda Elektr Toki Vakuumda Elektr Toki",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Gaz orqali elektr tokining o'tish jarayoni nima deb ataladi?",
+      "v": [
+        "Gaz razryadi",
+        "Elektroliz",
+        "Dissotsiatsiya",
+        "Rekombinatsiya"
+      ],
+      "t": 0,
+      "izoh": "Gaz orqali elektr tokining o'tish jarayoni gaz razryadi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#88993c84"
+    },
+    {
+      "q": "Oddiy sharoitda gaz elektr tokini qanday o'tkazadi?",
+      "v": [
+        "Gaz elektr tokini o'tkazmaydi, ya'ni dielektrik hisoblanadi",
+        "Gaz elektr tokini juda yaxshi o'tkazadi",
+        "Gaz faqat elektron tokni o'tkazadi",
+        "Gaz faqat ion tokni o'tkazadi"
+      ],
+      "t": 0,
+      "izoh": "Oddiy sharoitda gaz elektr tokini o'tkazmaydi, ya'ni dielektrik hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#752abb60"
+    },
+    {
+      "q": "Qanday sharoitlarda gaz elektr tokini o'tkazuvchi muhitga aylanadi?",
+      "v": [
+        "Qizdirish, kuchli nurlanish, elektr maydoni ta'sirida",
+        "Sovutish va qorong'ulikda",
+        "Bosimni oshirganda",
+        "Gazni suyultirganda"
+      ],
+      "t": 0,
+      "izoh": "Qizdirish, kuchli nurlanish, elektr maydoni ta'sirida gaz elektr tokini o'tkazuvchi muhitga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#f8de1954"
+    },
+    {
+      "q": "Zaryadlangan kondensator qoplamalari orasidagi havo qizdirilganda elektrometr strelkasi qanday o'zgaradi?",
+      "v": [
+        "Ko'rsatishi kamaya boshlaydi, ya'ni kondensator zaryadsizlanadi",
+        "Ko'rsatishi ortadi",
+        "Ko'rsatishi o'zgarmaydi",
+        "Strelka qarama-qarshi tomonga buriladi"
+      ],
+      "t": 0,
+      "izoh": "Havo qizdirilganda elektrometr strelkasining ko'rsatishi kamaya boshlaydi, chunki qizdirilgan havodan tok o'tib, kondensator zaryadsizlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#e515c2a0"
+    },
+    {
+      "q": "Xona temperaturasida quruq havo qanday muhit hisoblanadi?",
+      "v": [
+        "Dielektrik",
+        "O'tkazgich",
+        "Yarimo'tkazgich",
+        "Elektrolit"
+      ],
+      "t": 0,
+      "izoh": "Quruq havoni xona temperaturasida dielektrik deb hisoblash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#d09de7af"
+    },
+    {
+      "q": "Atmosferaning quyi qatlamidagi havo tarkibida hajm bo'yicha eng ko'p qaysi gaz mavjud?",
+      "v": [
+        "Azot (N2) ~ 78,08%",
+        "Kislorod (O2) ~ 20,94%",
+        "Argon (Ar) ~ 0,93%",
+        "Is gazi (CO2)"
+      ],
+      "t": 0,
+      "izoh": "Havoning tarkibida hajm bo'yicha azot (N2) ~ 78,08%, kislorod (O2) ~ 20,94%, argon (Ar) ~ 0,93% va boshqa gazlar mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#41738a6d"
+    },
+    {
+      "q": "Havo tarkibida kislorodning hajmiy ulushi taxminan qancha?",
+      "v": [
+        "20,94%",
+        "78,08%",
+        "0,93%",
+        "0,03%"
+      ],
+      "t": 0,
+      "izoh": "Havo tarkibida kislorod (O2) hajm bo'yicha ~ 20,94% ni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#e3789e38"
+    },
+    {
+      "q": "Argon atomining tashqi elektron qobig'ida nechta elektron bo'ladi?",
+      "v": [
+        "8 ta",
+        "2 ta",
+        "18 ta",
+        "7 ta"
+      ],
+      "t": 0,
+      "izoh": "Argon atomlarining tashqi elektron qobig'ida 8 tadan elektron bo'lib, ular tugallangan (to'yingan) qobiq hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#b0e29ec7"
+    },
+    {
+      "q": "Qizdirilganda argon atomi elektronini yo'qotganda qanday reaksiya yuz beradi?",
+      "v": [
+        "Ar° → Ar+ + e−",
+        "Ar° + e− → Ar−",
+        "Ar+ → Ar° + e−",
+        "Ar° → Ar2+ + 2e−"
+      ],
+      "t": 0,
+      "izoh": "Qizdirilganda Ar atomining tashqi qobig'idagi elektronlardan biri atomni tark etadi: Ar° → Ar+ + e−.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#8b961ecd"
+    },
+    {
+      "q": "Gazlarda elektr zaryadini tashuvchi zarrachalar qaysilar?",
+      "v": [
+        "Musbat va manfiy ionlar hamda erkin elektronlar",
+        "Faqat erkin elektronlar",
+        "Faqat musbat ionlar",
+        "Neytral atom va molekulalar"
+      ],
+      "t": 0,
+      "izoh": "Qizdirish, kuchli nurlanish, elektr maydoni ta'sirida gazda musbat va manfiy ionlar hamda erkin elektronlar hosil bo'ladi. Bular gazlarda elektr zaryadini tashuvchi zarrachalar hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#b90483a1"
+    },
+    {
+      "q": "Gazlarda elektr toki hosil qilish uchun nima kerak?",
+      "v": [
+        "Gaz atom yoki molekulalarini ionlashtirish va tashqi elektr maydoni qo'yish",
+        "Gazni kuchli sovutish",
+        "Gaz bosimini juda oshirish",
+        "Gazga faqat yorug'lik tushirish"
+      ],
+      "t": 0,
+      "izoh": "Gazlarda elektr tokini hosil qilish uchun atom yoki molekulalarni ionlashtirish va hosil bo'lgan zaryadlarni tartibli harakatga keltirish uchun gazga tashqi elektr maydonini qo'yish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#38e4414d"
+    },
+    {
+      "q": "Gazlarning elektr o'tkazuvchanligi nimadan iborat?",
+      "v": [
+        "Musbat va manfiy ionlar hamda erkin elektronlarning tartibli harakatidan",
+        "Faqat elektronlarning tartibli harakatidan",
+        "Faqat musbat ionlarning tartibli harakatidan",
+        "Neytral molekulalarning tartibli harakatidan"
+      ],
+      "t": 0,
+      "izoh": "Gazlarning elektr o'tkazuvchanligi musbat va manfiy ionlar hamda erkin elektronlarning tartibli harakatidan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#741b52b7"
+    },
+    {
+      "q": "Gazlarda zaryadlarning rekombinatsiyasi qanday jarayon?",
+      "v": [
+        "Elektron va musbat zaryadli ionlarning qo'shilishi natijasida neytral atomlarning hosil bo'lishi jarayoni",
+        "Neytral atomlarning ionlarga ajralishi jarayoni",
+        "Elektronlarning katodga harakati jarayoni",
+        "Gazning qizdirilishi jarayoni"
+      ],
+      "t": 0,
+      "izoh": "Elektron va musbat zaryadli ionlarning qo'shilishi natijasida neytral atomlarning hosil bo'lishi jarayoni gazlarda zaryadlarning rekombinatsiyasi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#a7770948"
+    },
+    {
+      "q": "Gazni ionlashtiruvchi tashqi ta'sir to'xtatilganda gaz qanday holatga keladi?",
+      "v": [
+        "Rekombinatsiya tufayli ionlar neytral zarraga aylanib, gaz yana dielektrik bo'ladi",
+        "Gazning o'tkazuvchanligi yanada ortadi",
+        "Gaz metall kabi o'tkazgichga aylanadi",
+        "Hech narsa o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Gazni ionlashtiruvchi tashqi ta'sir to'xtatilganda rekombinatsiya tufayli ionlar neytral zarraga aylanadi va gaz yana dielektrik bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#34aab6ff"
+    },
+    {
+      "q": "Tashqi ionizator qanday ta'riflanadi?",
+      "v": [
+        "Elektr maydonisiz gazning atom yoki molekulalarini ionlashtiruvchi tashqi manba",
+        "Elektr maydoni hosil qiluvchi kondensator",
+        "Gazni sovutuvchi qurilma",
+        "Elektrodlarga ulangan tok manbai"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydonisiz gazning atom yoki molekulalarini ionlashtiruvchi tashqi manba tashqi ionizator deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#0a68d59d"
+    },
+    {
+      "q": "Gazning elektr o'tkazuvchanligi qaysi o'tkazuvchanliklarga o'xshaydi?",
+      "v": [
+        "Ionlar ishtiroki elektrolitlarga, elektronlar ishtiroki metallarga o'xshaydi",
+        "Faqat metallarning o'tkazuvchanligiga o'xshaydi",
+        "Faqat elektrolitlarning o'tkazuvchanligiga o'xshaydi",
+        "Hech qanday o'tkazuvchanlikka o'xshamaydi"
+      ],
+      "t": 0,
+      "izoh": "Gazlarning elektr o'tkazuvchanligida ionlar ishtirok etishi elektrolitlarga, elektronlarning ishtirok etishi metallarning elektr o'tkazuvchanligiga o'xshaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#853efefb"
+    },
+    {
+      "q": "Gaz razryadi tabiatiga ko'ra qanday turlarga ajratiladi?",
+      "v": [
+        "Nomustaqil va mustaqil razryadlarga",
+        "Kuchli va kuchsiz razryadlarga",
+        "Qisqa va uzun razryadlarga",
+        "Issiq va sovuq razryadlarga"
+      ],
+      "t": 0,
+      "izoh": "Gaz razryadi tabiatiga ko'ra nomustaqil va mustaqil razryadlarga ajratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#67c1fb50"
+    },
+    {
+      "q": "Nomustaqil razryad qanday razryad?",
+      "v": [
+        "Faqat tashqi ionizator ta'sirida mavjud bo'lib, ionizator to'xtatilganda so'nadigan razryad",
+        "Tashqi ionizator ta'siri bo'lmasa ham mavjud bo'ladigan razryad",
+        "Faqat vakuumda yuz beradigan razryad",
+        "Faqat yuqori bosimda yuz beradigan razryad"
+      ],
+      "t": 0,
+      "izoh": "Faqat tashqi ionizator ta'sirida mavjud bo'lib, tashqi ionizator ta'siri to'xtatilganda so'nadigan gaz razryadi nomustaqil razryad deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#ba687da5"
+    },
+    {
+      "q": "Mustaqil razryad qanday razryad?",
+      "v": [
+        "Tashqi ionizator ta'siri bo'lmaganda ham mavjud bo'ladigan razryad",
+        "Faqat tashqi ionizator ta'sirida mavjud bo'lgan razryad",
+        "Ionizator to'xtatilganda so'nadigan razryad",
+        "Faqat past kuchlanishda yuz beradigan razryad"
+      ],
+      "t": 0,
+      "izoh": "Tashqi ionizator ta'siri bo'lmaganda ham mavjud bo'ladigan gaz razryadi mustaqil razryad deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#1dc17bf5"
+    },
+    {
+      "q": "Mustaqil razryadlar qanday shakllarda namoyon bo'ladi?",
+      "v": [
+        "Miltillama, uchqun, toj, yoy razryadlari",
+        "Faqat uchqun va yoy razryadlari",
+        "Faqat miltillama razryad",
+        "Faqat toj razryad"
+      ],
+      "t": 0,
+      "izoh": "Mustaqil razryad bir necha shaklda namoyon bo'ladi: miltillama razryad, uchqun razryad, toj razryad, yoy razryad.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#dc8f3ca9"
+    },
+    {
+      "q": "Miltillama razryad qanday sharoitda yuzaga keladi?",
+      "v": [
+        "Gaz bosimi 250–350 marta kamaytirilganda (~ 300–400 Pa) nayning butun hajmini miltillagan yorug'lik qoplaydi",
+        "Atmosfera bosimida (~ 105 Pa)",
+        "Gaz bosimi oshirilganda",
+        "Faqat juda yuqori temperaturada"
+      ],
+      "t": 0,
+      "izoh": "Bosim 250–350 marta kamayganda (~ 300–400 Pa) elektrodlar oralig'idagi nayning butun hajmini miltillagan yorug'lik qoplaydi. Shuning uchun bunday razryad miltillama razryad deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#b1636887"
+    },
+    {
+      "q": "Miltillama razryaddan qayerda foydalaniladi?",
+      "v": [
+        "Tungi reklama chiroqlarida",
+        "Metallarni payvandlashda",
+        "Projektorlarda",
+        "Mayoqlarda"
+      ],
+      "t": 0,
+      "izoh": "Miltillama razryaddan tungi reklama chiroqlarida foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#35aadb27"
+    },
+    {
+      "q": "Odatdagi sharoitda havoda elektrodlar oralig'ida elektr maydon kuchlanganligi qanchaga yetganda uchqun razryad hosil bo'ladi?",
+      "v": [
+        "30 000 V/cm",
+        "300 V/cm",
+        "3 000 000 V/cm",
+        "3000 V/cm"
+      ],
+      "t": 0,
+      "izoh": "Odatdagi sharoitda havoda elektrodlar oralig'ida elektr maydon kuchlanganligi 30 000 V/cm ga yetganda uchqun razryad hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#359ebc2a"
+    },
+    {
+      "q": "Uchqun razryad tabiatda qanday hodisa tarzida yuz beradi?",
+      "v": [
+        "Bulutlar orasida yoki bulut bilan yer sirti orasida chaqmoq tarzida",
+        "Tungi reklama chiroqlarida",
+        "Projektor lampalarida",
+        "Payvandlash apparatlarida"
+      ],
+      "t": 0,
+      "izoh": "Uchqun razryad tabiatda bulutlar orasida yoki bulut bilan yer sirti orasida chaqmoq tarzida yuz beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#4572c709"
+    },
+    {
+      "q": "Bulutlar orasidagi kuchlanish qanchadan oshishi mumkin?",
+      "v": [
+        "100 000 000 V dan",
+        "10 000 V dan",
+        "1000 V dan",
+        "1 000 000 000 V dan"
+      ],
+      "t": 0,
+      "izoh": "Bulutlar orasidagi kuchlanish 100 000 000 V dan oshishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#ccb36e39"
+    },
+    {
+      "q": "Chaqmoq paytida bulutlar orasida havo orqali o'tgan tok kuchi qanchaga boradi?",
+      "v": [
+        "10 000 A ga",
+        "100 A ga",
+        "1 A ga",
+        "1 000 000 A ga"
+      ],
+      "t": 0,
+      "izoh": "Chaqmoq paytida bulutlar orasida havo orqali o'tgan tok kuchi 10 000 A ga boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#dc7c8a62"
+    },
+    {
+      "q": "Uchqun razryadning davomiyligi qanday oralikda bo'ladi?",
+      "v": [
+        "1–20 ms oralig'ida",
+        "1–20 s oralig'ida",
+        "1–20 min oralig'ida",
+        "1–20 mks oralig'ida"
+      ],
+      "t": 0,
+      "izoh": "Uchqun razryadning davomiyligi 1–20 ms oralig'ida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#81db2fe6"
+    },
+    {
+      "q": "Toj razryad qayerda hosil bo'ladi?",
+      "v": [
+        "Elektr maydon kuchlanganligi keskin o'zgaruvchi o'tkir uchli elektrodlar atrofida",
+        "Yassi kondensator qoplamalari orasida",
+        "Faqat vakuum nay ichida",
+        "Faqat siyraklashgan gazda"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydon kuchlanganligi keskin o'zgaruvchi o'tkir uchli elektrodlar atrofida toj razryadi hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#b1235229"
+    },
+    {
+      "q": "Toj razryadining yuzaga kelish sharti nima?",
+      "v": [
+        "Elektrodning o'tkir uchi atrofidagi maydon kuchlanganligi muhitning boshqa qismiga nisbatan ancha katta bo'lishi kerak",
+        "Elektrodlar orasidagi masofa juda katta bo'lishi kerak",
+        "Gaz bosimi atmosfera bosimidan past bo'lishi kerak",
+        "Elektrodlar bir xil shaklda bo'lishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Toj razryadi yuzaga kelishining asosiy sharti: elektrodning o'tkir uchi atrofida hosil bo'lgan elektr maydon kuchlanganligi elektrodlar atrofidagi muhitning boshqa qismiga nisbatan ancha katta qiymatga ega bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#fa815261"
+    },
+    {
+      "q": "Toj razryadda ionlanish jarayoni qayerda sodir bo'ladi?",
+      "v": [
+        "Faqat toj elektrodi yaqinida",
+        "Ikkala elektrod yaqinida bir xil darajada",
+        "Faqat ikkinchi elektrodda",
+        "Butun gaz hajmida"
+      ],
+      "t": 0,
+      "izoh": "Bunday razryadda ionlanish jarayoni faqat toj elektrodi yaqinida sodir bo'lishi bilan xarakterlanadi, ikkinchi elektrodda esa toj razryadi hosil bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#e03a4d70"
+    },
+    {
+      "q": "Toj razryadini tabiatda qayerlarda kuzatish mumkin?",
+      "v": [
+        "Baland binolar tepasidagi o'tkir uchli metall jismlar, kema machtasi va samolyotning o'tkir uchli qismlari atrofida",
+        "Faqat yerga yaqin tekis sirtlarda",
+        "Faqat suv ostida",
+        "Faqat yopiq xonalarda"
+      ],
+      "t": 0,
+      "izoh": "Toj razryadini bo'ronli kunda baland binolar tepasidagi o'tkir uchli metall jismlar, kema machtasining va samolyotning o'tkir uchli qismlari atrofida kuzatish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#8c2c0015"
+    },
+    {
+      "q": "Yoy razryad qanday hosil qilinadi?",
+      "v": [
+        "Ikkita ko'mir elektrodga 40–50 V kuchlanish berilib, ularning uchlari tekkizilib, so'ng biroz uzoqlashtiriladi",
+        "Ikkita elektrodga 100 000 V kuchlanish beriladi",
+        "Gaz bosimi 250 marta kamaytiriladi",
+        "Elektrodlarga faqat 1 V kuchlanish beriladi"
+      ],
+      "t": 0,
+      "izoh": "Ikkita ko'mir elektrodga 40–50 V kuchlanish berilib, ularning uchlari bir-biriga tekkizilib, so'ng biroz uzoqlashtirilganda elektr yoy razryadi hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#7fbab25a"
+    },
+    {
+      "q": "Elektr yoy razryadidan qayerlarda foydalaniladi?",
+      "v": [
+        "Projektorlarda, mayoqlarda, proyeksion apparatlarda, metallarni eritish va payvandlashda",
+        "Faqat tungi reklama chiroqlarida",
+        "Faqat radiolarda",
+        "Faqat akkumulyatorlarda"
+      ],
+      "t": 0,
+      "izoh": "Elektr yoy razryadi quvvatli yorug'lik manbai bo'lib, projektorlarda, mayoqlarda, proyeksion apparatlarda hamda metallarni eritish va payvandlashda foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#771ccf74"
+    },
+    {
+      "q": "Yoy razryadining temperaturasi juda yuqori bo'lganligi sababli u qanday maqsadda qo'llaniladi?",
+      "v": [
+        "Metallarni eritish va payvandlashda, yuqori navli po'lat olishda",
+        "Gazlarni sovutishda",
+        "Reklama chiroqlarida",
+        "Elektr o'lchash asboblarida"
+      ],
+      "t": 0,
+      "izoh": "Yoy razryadining temperaturasi juda yuqori bo'lganligi uchun metallarni eritish va payvandlashda hamda yuqori navli po'lat olishda qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#8eed00a0"
+    },
+    {
+      "q": "Chaqmoq odatda ko'p qavatli binolarning yuqori qismiga nima uchun tushadi?",
+      "v": [
+        "Baland va o'tkir uchli jismlar atrofida elektr maydon kuchlanganligi katta bo'lgani uchun",
+        "Binolarning yuqori qismi har doim issiq bo'lgani uchun",
+        "Bulutlar faqat baland binolarga yaqin yig'ilgani uchun",
+        "Binolar yerdan uzoq bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "O'tkir uchli jismlar atrofida elektr maydon kuchlanganligi ancha katta bo'ladi, shuning uchun chaqmoq odatda baland binolarning yuqori qismiga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#afccd56a"
+    },
+    {
+      "q": "Yassi kondensator 6 kV kuchlanishli manbaga ulangan bo'lsa va havoning ionlashuvi E = 3 MV/m da boshlansa, plastinkalar orasidagi masofa qanday bo'lganda havoning teshilishi yuz beradi?",
+      "v": [
+        "2 mm",
+        "2 cm",
+        "20 mm",
+        "0,2 mm"
+      ],
+      "t": 0,
+      "izoh": "d = U/E = 6∙10³ V / 3∙10⁶ V/m = 2∙10⁻³ m = 2 mm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#79606d80"
+    },
+    {
+      "q": "Gaz atom yoki molekulalarini qanday yo'llar bilan ionlashtirish mumkin?",
+      "v": [
+        "Qizdirish, nur ta'sir etkazish yoki kuchli elektr maydoni ta'sir etkazish yo'li bilan",
+        "Faqat qizdirish yo'li bilan",
+        "Faqat bosimni oshirish yo'li bilan",
+        "Faqat gazni suyultirish yo'li bilan"
+      ],
+      "t": 0,
+      "izoh": "Gaz atomlarini nafaqat qizdirish yo'li bilan, balki unga nur ta'sir etib yoki kuchli elektr maydoni ta'sir etib ham ionlash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#fcac11d3"
+    },
+    {
+      "q": "Miltillama razryadda gaz orqali o'tayotgan tok zichligi qanday oralikda bo'ladi?",
+      "v": [
+        "1–5 mA/cm2 atrofida",
+        "1–5 A/cm2 atrofida",
+        "10 000 A/cm2 atrofida",
+        "100–500 mA/cm2 atrofida"
+      ],
+      "t": 0,
+      "izoh": "Miltillama razryadda gaz orqali o'tayotgan tok zichligi 1–5 mA/cm2 atrofida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki#32396543"
+    }
+  ]
+}

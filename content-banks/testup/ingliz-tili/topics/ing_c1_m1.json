@@ -1,0 +1,1306 @@
+{
+  "nom": "Inversion (Never have I...)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "Never in my life ___ such an extraordinary performance.",
+      "v": [
+        "have I witnessed",
+        "I have witnessed",
+        "did I witnessed",
+        "I witnessed"
+      ],
+      "t": 0,
+      "izoh": "Never bosh gapda kelsa inversiya: have I witnessed.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#378ca181"
+    },
+    {
+      "q": "Not only ___ the exam, but she also earned the highest score.",
+      "v": [
+        "she passed",
+        "did she pass",
+        "she did pass",
+        "passed she"
+      ],
+      "t": 1,
+      "izoh": "Not only'dan keyin inversiya: did she pass.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#66a7254a"
+    },
+    {
+      "q": "Hardly ___ down when the doorbell rang.",
+      "v": [
+        "I had sat",
+        "did I sit",
+        "had I sat",
+        "I sat"
+      ],
+      "t": 2,
+      "izoh": "Hardly had I ... when konstruksiyasi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#21b527b6"
+    },
+    {
+      "q": "No sooner ___ the plane than a storm broke out.",
+      "v": [
+        "had we boarded",
+        "we had boarded",
+        "did we board",
+        "we boarded"
+      ],
+      "t": 0,
+      "izoh": "No sooner had ... than.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#9d1d41d6"
+    },
+    {
+      "q": "Little ___ how difficult the journey would become.",
+      "v": [
+        "they suspected",
+        "they did suspect",
+        "suspected they",
+        "did they suspect"
+      ],
+      "t": 3,
+      "izoh": "Little did they suspect — kutilmagan holat.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#49304034"
+    },
+    {
+      "q": "Rarely ___ a novel that captivates me from the very first page.",
+      "v": [
+        "do I encounter",
+        "I encounter",
+        "I do encounter",
+        "encounter I"
+      ],
+      "t": 0,
+      "izoh": "Rarely bilan inversiya.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#57312899"
+    },
+    {
+      "q": "Seldom ___ such generosity from a complete stranger.",
+      "v": [
+        "we have experienced",
+        "we experienced",
+        "have we experienced",
+        "did we experienced"
+      ],
+      "t": 2,
+      "izoh": "Seldom + present perfect inversiya.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#962564ac"
+    },
+    {
+      "q": "Under no circumstances ___ the building during a fire drill.",
+      "v": [
+        "should you enter",
+        "you should enter",
+        "you enter",
+        "enter you"
+      ],
+      "t": 0,
+      "izoh": "Under no circumstances + inversiya.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#a72f6db3"
+    },
+    {
+      "q": "Only after reading the contract twice ___ the hidden clause.",
+      "v": [
+        "I noticed",
+        "did I notice",
+        "I did notice",
+        "noticed I"
+      ],
+      "t": 1,
+      "izoh": "Only after ... did I notice.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#94872cb6"
+    },
+    {
+      "q": "Only then ___ the gravity of the situation.",
+      "v": [
+        "she understood",
+        "she did understand",
+        "did she understand",
+        "understood she"
+      ],
+      "t": 2,
+      "izoh": "Only then + inversiya.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#748bd709"
+    },
+    {
+      "q": "Not until the results were published ___ the truth.",
+      "v": [
+        "did we learn",
+        "we learned",
+        "we did learn",
+        "learned we"
+      ],
+      "t": 0,
+      "izoh": "Not until ... did we learn.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#e3cc0c22"
+    },
+    {
+      "q": "Only by working together ___ overcome this crisis.",
+      "v": [
+        "we can",
+        "we could",
+        "can we",
+        "could we can"
+      ],
+      "t": 2,
+      "izoh": "Only by ... can we.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#f46d1f8d"
+    },
+    {
+      "q": "Only when the sun set ___ how late it was.",
+      "v": [
+        "they realized",
+        "did they realize",
+        "they did realize",
+        "realized they"
+      ],
+      "t": 1,
+      "izoh": "Only when ... did they realize.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#2f24c7f9"
+    },
+    {
+      "q": "On no account ___ leave the premises without permission.",
+      "v": [
+        "may you",
+        "you may",
+        "you can",
+        "can you may"
+      ],
+      "t": 0,
+      "izoh": "On no account + inversiya.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#858b3845"
+    },
+    {
+      "q": "At no time ___ aware of the danger they were in.",
+      "v": [
+        "they were",
+        "were they",
+        "did they",
+        "they did"
+      ],
+      "t": 1,
+      "izoh": "At no time + inversiya (were they).",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#7e591523"
+    },
+    {
+      "q": "Nowhere ___ find a more loyal friend than him.",
+      "v": [
+        "you will",
+        "will you",
+        "you shall",
+        "shall you will"
+      ],
+      "t": 1,
+      "izoh": "Nowhere + inversiya.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#74ce4b08"
+    },
+    {
+      "q": "Not once ___ to help without being asked.",
+      "v": [
+        "did he offer",
+        "he offered",
+        "he did offer",
+        "offered he"
+      ],
+      "t": 0,
+      "izoh": "Not once + did he offer.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#c9821b98"
+    },
+    {
+      "q": "In no way ___ responsible for the damage caused.",
+      "v": [
+        "we are",
+        "do we",
+        "are we",
+        "we do"
+      ],
+      "t": 2,
+      "izoh": "In no way are we responsible.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#611d6889"
+    },
+    {
+      "q": "Scarcely ___ the letter when she burst into tears.",
+      "v": [
+        "had she read",
+        "she had read",
+        "did she read",
+        "she read"
+      ],
+      "t": 0,
+      "izoh": "Scarcely had ... when.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#d0faf287"
+    },
+    {
+      "q": "Barely ___ the finish line when he collapsed from exhaustion.",
+      "v": [
+        "he had crossed",
+        "did he cross",
+        "had he crossed",
+        "he crossed"
+      ],
+      "t": 2,
+      "izoh": "Barely had ... when.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#1b2d33d4"
+    },
+    {
+      "q": "___ I known you were coming, I would have prepared dinner.",
+      "v": [
+        "Had",
+        "If",
+        "Should",
+        "Were"
+      ],
+      "t": 0,
+      "izoh": "Had I known = If I had known.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#2e5476fc"
+    },
+    {
+      "q": "___ we had more resources, the outcome might have been different.",
+      "v": [
+        "Did",
+        "Had",
+        "If",
+        "Have"
+      ],
+      "t": 1,
+      "izoh": "Had we had — shartli inversiya.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#5409bc47"
+    },
+    {
+      "q": "___ I to accept the offer, I would relocate immediately.",
+      "v": [
+        "Were",
+        "Was",
+        "If",
+        "Had"
+      ],
+      "t": 0,
+      "izoh": "Were I to accept = If I were to accept.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#3ed4961f"
+    },
+    {
+      "q": "___ she more experienced, she would handle the pressure better.",
+      "v": [
+        "Was",
+        "Had",
+        "Were",
+        "Did"
+      ],
+      "t": 2,
+      "izoh": "Were she more experienced = If she were.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#a06f9d88"
+    },
+    {
+      "q": "___ you require further assistance, do not hesitate to ask.",
+      "v": [
+        "Should",
+        "Would",
+        "Had",
+        "Were"
+      ],
+      "t": 0,
+      "izoh": "Should you require = If you should require.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#24b4d454"
+    },
+    {
+      "q": "___ it not been for your support, we would have failed.",
+      "v": [
+        "Were",
+        "Had",
+        "Should",
+        "If"
+      ],
+      "t": 1,
+      "izoh": "Had it not been for = If it had not been for.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#768ee459"
+    },
+    {
+      "q": "___ it not for the rain, the match would continue.",
+      "v": [
+        "Were",
+        "Had",
+        "Should",
+        "Was"
+      ],
+      "t": 0,
+      "izoh": "Were it not for = If it were not for.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#828d4b6d"
+    },
+    {
+      "q": "___ there be any objections, please raise them now.",
+      "v": [
+        "Would",
+        "Should",
+        "Had",
+        "Were"
+      ],
+      "t": 1,
+      "izoh": "Should there be = If there should be.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#e9bb2b12"
+    },
+    {
+      "q": "Choose the grammatically correct sentence.",
+      "v": [
+        "Not only did he lie, but he also stole.",
+        "Not only he lied, but he also stole.",
+        "Not only lied he, but he also stole.",
+        "Not only he did lie, but he also stole."
+      ],
+      "t": 0,
+      "izoh": "Not only'dan keyin: did he lie.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#e1c84c58"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "No sooner I arrived than it started to rain.",
+        "No sooner arrived I than it started to rain.",
+        "No sooner had I arrived than it started to rain.",
+        "No sooner I had arrived than it started to rain."
+      ],
+      "t": 2,
+      "izoh": "No sooner had I ... than.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#9a16dc9c"
+    },
+    {
+      "q": "Rewrite with inversion: 'She had rarely felt so nervous.'",
+      "v": [
+        "Rarely had she felt so nervous.",
+        "Rarely she had felt so nervous.",
+        "Rarely did she feel so nervous.",
+        "Rarely felt she so nervous."
+      ],
+      "t": 0,
+      "izoh": "Past perfect saqlanadi: Rarely had she felt.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#186acd28"
+    },
+    {
+      "q": "Rewrite with inversion: 'I have never eaten such delicious food.'",
+      "v": [
+        "Never I have eaten such delicious food.",
+        "Never have I eaten such delicious food.",
+        "Never did I eat such delicious food.",
+        "Never ate I such delicious food."
+      ],
+      "t": 1,
+      "izoh": "Present perfect: Never have I eaten.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#6b59f94c"
+    },
+    {
+      "q": "Rewrite with inversion: 'If you had asked, I would have helped.'",
+      "v": [
+        "Had you ask, I would have helped.",
+        "Did you ask, I would have helped.",
+        "Had you asked, I would have helped.",
+        "Were you asked, I would have helped."
+      ],
+      "t": 2,
+      "izoh": "If you had asked = Had you asked.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#8687df21"
+    },
+    {
+      "q": "Not only ___ the funding cut, but the staff were also dismissed.",
+      "v": [
+        "was",
+        "it was",
+        "did",
+        "had"
+      ],
+      "t": 0,
+      "izoh": "Not only was the funding cut — passiv bilan inversiya.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#e0dbe7ef"
+    },
+    {
+      "q": "So ___ was the lecture that half the audience fell asleep.",
+      "v": [
+        "boring",
+        "bored",
+        "boringly",
+        "to bore"
+      ],
+      "t": 0,
+      "izoh": "So + sifat + inversiya: So boring was.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#a288aa76"
+    },
+    {
+      "q": "So ___ did she run that no one could catch her.",
+      "v": [
+        "fast",
+        "faster",
+        "fastly",
+        "fastest"
+      ],
+      "t": 0,
+      "izoh": "So fast did she run — inversiya.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#d5776166"
+    },
+    {
+      "q": "Such ___ his anger that he could barely speak.",
+      "v": [
+        "it was",
+        "was",
+        "did",
+        "had"
+      ],
+      "t": 1,
+      "izoh": "Such was his anger — inversiya.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#6c19b06e"
+    },
+    {
+      "q": "Only after much deliberation ___ to resign.",
+      "v": [
+        "she decided",
+        "did she decide",
+        "she did decide",
+        "decided she"
+      ],
+      "t": 1,
+      "izoh": "Only after ... did she decide.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#35c76122"
+    },
+    {
+      "q": "Never before ___ the city so crowded as during the festival.",
+      "v": [
+        "had we seen",
+        "we had seen",
+        "did we see",
+        "we saw"
+      ],
+      "t": 0,
+      "izoh": "Never before had we seen.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#95db311b"
+    },
+    {
+      "q": "Not a single word ___ during the entire meeting.",
+      "v": [
+        "he uttered",
+        "he did utter",
+        "did he utter",
+        "uttered he"
+      ],
+      "t": 2,
+      "izoh": "Not a single word did he utter.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#593e093e"
+    },
+    {
+      "q": "Only in retrospect ___ the wisdom of her advice.",
+      "v": [
+        "did I appreciate",
+        "I appreciated",
+        "I did appreciate",
+        "appreciated I"
+      ],
+      "t": 0,
+      "izoh": "Only in retrospect did I appreciate.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#3871efb5"
+    },
+    {
+      "q": "Never again ___ to take his freedom for granted.",
+      "v": [
+        "he would",
+        "did he",
+        "would he",
+        "he did"
+      ],
+      "t": 2,
+      "izoh": "Never again would he.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#09071cbb"
+    },
+    {
+      "q": "Hardly ever ___ to visit his elderly parents.",
+      "v": [
+        "does he manage",
+        "he manages",
+        "he does manage",
+        "manages he"
+      ],
+      "t": 0,
+      "izoh": "Hardly ever + inversiya.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#b5320240"
+    },
+    {
+      "q": "Not since childhood ___ so carefree and happy.",
+      "v": [
+        "I had felt",
+        "did I feel",
+        "had I felt",
+        "I felt"
+      ],
+      "t": 2,
+      "izoh": "Not since childhood had I felt.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#eb992008"
+    },
+    {
+      "q": "Should you ___ your mind, the offer still stands.",
+      "v": [
+        "change",
+        "changing",
+        "changed",
+        "to change"
+      ],
+      "t": 0,
+      "izoh": "Should you change = If you change.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#eb188295"
+    },
+    {
+      "q": "Were the negotiations ___, both sides would benefit.",
+      "v": [
+        "to succeed",
+        "succeeding",
+        "succeeded",
+        "succeed"
+      ],
+      "t": 0,
+      "izoh": "Were ... to succeed = If they were to succeed.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#f86b9b36"
+    },
+    {
+      "q": "Had the doctor arrived sooner, the patient ___.",
+      "v": [
+        "might survive",
+        "might have survived",
+        "had survived",
+        "would survive"
+      ],
+      "t": 1,
+      "izoh": "Had ... arrived, might have survived.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#b6833118"
+    },
+    {
+      "q": "Only through hard work ___ achieve your dreams.",
+      "v": [
+        "you can",
+        "can you",
+        "could you",
+        "you could"
+      ],
+      "t": 1,
+      "izoh": "Only through hard work can you.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#32ecafb3"
+    },
+    {
+      "q": "Not until he lost everything ___ what truly mattered.",
+      "v": [
+        "did he understand",
+        "he understood",
+        "he did understand",
+        "understood he"
+      ],
+      "t": 0,
+      "izoh": "Not until ... did he understand.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#6d26123e"
+    },
+    {
+      "q": "So ___ were the conditions that the expedition was cancelled.",
+      "v": [
+        "severe",
+        "severely",
+        "severest",
+        "severeness"
+      ],
+      "t": 0,
+      "izoh": "So severe were the conditions — sifat.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#1dd5c15a"
+    },
+    {
+      "q": "Which sentence uses inversion correctly?",
+      "v": [
+        "Little we did know what awaited us.",
+        "Little knew we what awaited us.",
+        "Little did we know what awaited us.",
+        "Little we knew what awaited us."
+      ],
+      "t": 2,
+      "izoh": "Little did we know.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#d5cb06f7"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "Seldom does she complain about anything.",
+        "Seldom she complains about anything.",
+        "Seldom complains she about anything.",
+        "Seldom she does complain about anything."
+      ],
+      "t": 0,
+      "izoh": "Seldom does she complain.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#21ac92a9"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "Under no circumstances I will lie for you.",
+        "Under no circumstances will I lie for you.",
+        "Under no circumstances lie I will for you.",
+        "Under no circumstances I lie will for you."
+      ],
+      "t": 1,
+      "izoh": "Under no circumstances will I.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#21ac92a9~2"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "Not only the food was cold, but it was also stale.",
+        "Not only cold was the food, but it was also stale.",
+        "Not only the food cold was, but it was also stale.",
+        "Not only was the food cold, but it was also stale."
+      ],
+      "t": 3,
+      "izoh": "Not only was the food cold.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#21ac92a9~3"
+    },
+    {
+      "q": "Rewrite: 'The moment I closed my eyes, I fell asleep.' (No sooner)",
+      "v": [
+        "No sooner had I closed my eyes than I fell asleep.",
+        "No sooner I closed my eyes than I fell asleep.",
+        "No sooner did I close my eyes when I fell asleep.",
+        "No sooner had I closed my eyes when I fell asleep."
+      ],
+      "t": 0,
+      "izoh": "No sooner had ... than (when emas).",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#aa73f6d9"
+    },
+    {
+      "q": "Rewrite: 'As soon as she left, the phone rang.' (Hardly)",
+      "v": [
+        "Hardly she had left when the phone rang.",
+        "Hardly had she left when the phone rang.",
+        "Hardly had she left than the phone rang.",
+        "Hardly did she leave when the phone rang."
+      ],
+      "t": 1,
+      "izoh": "Hardly had ... when (than emas).",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#aadc5d58"
+    },
+    {
+      "q": "Only if you sign the form ___ your request.",
+      "v": [
+        "can we process",
+        "we can process",
+        "we could process",
+        "process we can"
+      ],
+      "t": 0,
+      "izoh": "Only if ... can we process.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#d1974902"
+    },
+    {
+      "q": "Nowhere in the world ___ a beach as pristine as this one.",
+      "v": [
+        "you will find",
+        "will you find",
+        "you find",
+        "find you"
+      ],
+      "t": 1,
+      "izoh": "Nowhere ... will you find.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#c05e082f"
+    },
+    {
+      "q": "Little ___ that the decision would haunt her for years.",
+      "v": [
+        "she imagined",
+        "she did imagine",
+        "did she imagine",
+        "imagined she"
+      ],
+      "t": 2,
+      "izoh": "Little did she imagine.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#48dbbc4d"
+    },
+    {
+      "q": "Not for a moment ___ that he would betray us.",
+      "v": [
+        "did we believe",
+        "we believed",
+        "we did believe",
+        "believed we"
+      ],
+      "t": 0,
+      "izoh": "Not for a moment did we believe.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#b72ea762"
+    },
+    {
+      "q": "Rarely ___ a scientist so willing to admit uncertainty.",
+      "v": [
+        "you meet",
+        "do you meet",
+        "you do meet",
+        "meet you"
+      ],
+      "t": 1,
+      "izoh": "Rarely do you meet.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#e3566f63"
+    },
+    {
+      "q": "Only recently ___ the true value of that painting.",
+      "v": [
+        "experts have recognized",
+        "have experts recognized",
+        "experts recognized",
+        "did experts recognized"
+      ],
+      "t": 1,
+      "izoh": "Only recently have experts recognized.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#7021e7a0"
+    },
+    {
+      "q": "Were I ___ to advise you, I would recommend patience.",
+      "v": [
+        "asked",
+        "asking",
+        "ask",
+        "to asked"
+      ],
+      "t": 0,
+      "izoh": "Were I asked = If I were asked.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#2b5c69e4"
+    },
+    {
+      "q": "Should anyone ___ about the incident, refer them to me.",
+      "v": [
+        "inquire",
+        "inquires",
+        "inquired",
+        "inquiring"
+      ],
+      "t": 0,
+      "izoh": "Should anyone inquire = If anyone inquires.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#b9a6960e"
+    },
+    {
+      "q": "Had they ___ the warning signs, the accident could have been avoided.",
+      "v": [
+        "heed",
+        "heeded",
+        "heeding",
+        "to heed"
+      ],
+      "t": 1,
+      "izoh": "Had they heeded — past participle.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#ea83529d"
+    },
+    {
+      "q": "So ___ was her argument that no one could refute it.",
+      "v": [
+        "compelling",
+        "compellingly",
+        "compelled",
+        "compel"
+      ],
+      "t": 0,
+      "izoh": "So compelling was — sifat.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#2bb27756"
+    },
+    {
+      "q": "Such ___ the demand that tickets sold out in minutes.",
+      "v": [
+        "were",
+        "was",
+        "did",
+        "had"
+      ],
+      "t": 1,
+      "izoh": "Such was the demand.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#d5468877"
+    },
+    {
+      "q": "Only after the storm passed ___ to assess the damage.",
+      "v": [
+        "we were able",
+        "were we able",
+        "did we able",
+        "we able"
+      ],
+      "t": 1,
+      "izoh": "Only after ... were we able.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#890c00c2"
+    },
+    {
+      "q": "At no point ___ they consider surrendering.",
+      "v": [
+        "did",
+        "they did",
+        "do",
+        "had"
+      ],
+      "t": 0,
+      "izoh": "At no point did they consider.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#aca1f6e2"
+    },
+    {
+      "q": "In no other country ___ such hospitality.",
+      "v": [
+        "I have found",
+        "have I found",
+        "I found",
+        "did I found"
+      ],
+      "t": 1,
+      "izoh": "In no other country have I found.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#75f8d086"
+    },
+    {
+      "q": "Only with great effort ___ to lift the fallen tree.",
+      "v": [
+        "did they manage",
+        "they managed",
+        "they did manage",
+        "managed they"
+      ],
+      "t": 0,
+      "izoh": "Only with great effort did they manage.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#c5f850bd"
+    },
+    {
+      "q": "Never ___ I imagined that success would feel so hollow.",
+      "v": [
+        "had",
+        "have",
+        "did",
+        "would"
+      ],
+      "t": 0,
+      "izoh": "Never had I imagined — past perfect.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#cca0f1a0"
+    },
+    {
+      "q": "Not until midnight ___ the guests finally leave.",
+      "v": [
+        "had",
+        "did",
+        "were",
+        "do"
+      ],
+      "t": 1,
+      "izoh": "Not until midnight did the guests leave.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#999249ad"
+    },
+    {
+      "q": "Rarely ___ we witnessed such courage under fire.",
+      "v": [
+        "have",
+        "had",
+        "did",
+        "do"
+      ],
+      "t": 0,
+      "izoh": "Rarely have we witnessed.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#4455d93c"
+    },
+    {
+      "q": "Should the situation ___, we will evacuate immediately.",
+      "v": [
+        "deteriorate",
+        "deteriorates",
+        "deteriorated",
+        "deteriorating"
+      ],
+      "t": 0,
+      "izoh": "Should ... deteriorate = If it should deteriorate.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#a2aa6759"
+    },
+    {
+      "q": "Little ___ we appreciate how fortunate we were.",
+      "v": [
+        "do",
+        "did",
+        "had",
+        "were"
+      ],
+      "t": 1,
+      "izoh": "Little did we appreciate.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#020d1963"
+    },
+    {
+      "q": "Seldom ___ a leader shown such humility.",
+      "v": [
+        "has",
+        "have",
+        "did",
+        "does"
+      ],
+      "t": 0,
+      "izoh": "Seldom has a leader shown.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#8d1e1f74"
+    },
+    {
+      "q": "No sooner ___ the results announced than protests erupted.",
+      "v": [
+        "were",
+        "had",
+        "did",
+        "was"
+      ],
+      "t": 0,
+      "izoh": "No sooner were the results announced than.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#26aebbac"
+    },
+    {
+      "q": "Hardly ___ the ink dried when he regretted signing.",
+      "v": [
+        "did",
+        "was",
+        "had",
+        "has"
+      ],
+      "t": 2,
+      "izoh": "Hardly had the ink dried when.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#9d5d8d05"
+    },
+    {
+      "q": "Under no circumstances ___ passengers permitted beyond this point.",
+      "v": [
+        "are",
+        "do",
+        "have",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "Under no circumstances are passengers permitted.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#cb3acbb4"
+    },
+    {
+      "q": "Which is correct?",
+      "v": [
+        "Were it not for his help, we would be lost.",
+        "Was it not for his help, we would be lost.",
+        "Were not it for his help, we would be lost.",
+        "If were it not for his help, we would be lost."
+      ],
+      "t": 0,
+      "izoh": "Were it not for = If it were not for.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#bc249275"
+    },
+    {
+      "q": "Which is correct?",
+      "v": [
+        "Had not it been for the delay, we'd have made it.",
+        "Had it not been for the delay, we'd have made it.",
+        "Has it not been for the delay, we'd have made it.",
+        "Have it not been for the delay, we'd have made it."
+      ],
+      "t": 1,
+      "izoh": "Had it not been for.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#bc249275~2"
+    },
+    {
+      "q": "Rewrite: 'If she should call, tell her I'm out.'",
+      "v": [
+        "Should she call, tell her I'm out.",
+        "Should she calls, tell her I'm out.",
+        "Would she call, tell her I'm out.",
+        "Were she call, tell her I'm out."
+      ],
+      "t": 0,
+      "izoh": "Should she call — inversiya.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#41dd478e"
+    },
+    {
+      "q": "Rewrite: 'It was such a loud noise that everyone jumped.'",
+      "v": [
+        "So was the noise that everyone jumped.",
+        "Such the noise was that everyone jumped.",
+        "Such was the noise that everyone jumped.",
+        "Such loud was the noise that everyone jumped."
+      ],
+      "t": 2,
+      "izoh": "Such was the noise.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#ab055e5d"
+    },
+    {
+      "q": "Only by remaining calm ___ the crisis.",
+      "v": [
+        "did she survive",
+        "she survived",
+        "she did survive",
+        "survived she"
+      ],
+      "t": 0,
+      "izoh": "Only by ... did she survive.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#c40327ef"
+    },
+    {
+      "q": "Not since the war ___ the nation faced such hardship.",
+      "v": [
+        "has",
+        "had",
+        "have",
+        "did"
+      ],
+      "t": 0,
+      "izoh": "Not since the war has the nation faced.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#230ce781"
+    },
+    {
+      "q": "So ___ did the hours pass that we lost track of time.",
+      "v": [
+        "quickly",
+        "quick",
+        "quicker",
+        "quickest"
+      ],
+      "t": 0,
+      "izoh": "So quickly did the hours pass — ravish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#e8388fdb"
+    },
+    {
+      "q": "Were you ___ reconsider, we would welcome you back.",
+      "v": [
+        "to",
+        "for",
+        "in",
+        "at"
+      ],
+      "t": 0,
+      "izoh": "Were you to reconsider = If you were to.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#9ff06659"
+    },
+    {
+      "q": "Only when all else fails ___ to drastic measures.",
+      "v": [
+        "we should resort",
+        "should we resort",
+        "we resort",
+        "resort we"
+      ],
+      "t": 1,
+      "izoh": "Only when ... should we resort.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#2d01829d"
+    },
+    {
+      "q": "Never ___ a truer word been spoken.",
+      "v": [
+        "has",
+        "had",
+        "have",
+        "did"
+      ],
+      "t": 0,
+      "izoh": "Never has a truer word been spoken.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#ccd5d7c2"
+    },
+    {
+      "q": "Rarely ___ such enthusiasm been shown by the students.",
+      "v": [
+        "had",
+        "has",
+        "have",
+        "did"
+      ],
+      "t": 1,
+      "izoh": "Rarely has such enthusiasm been shown.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#cc61f9f4"
+    },
+    {
+      "q": "Little ___ the audience know the show was improvised.",
+      "v": [
+        "do",
+        "did",
+        "had",
+        "was"
+      ],
+      "t": 1,
+      "izoh": "Little did the audience know.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#db3ec31d"
+    },
+    {
+      "q": "Only after years of practice ___ to master the instrument.",
+      "v": [
+        "did he begin",
+        "he began",
+        "he did begin",
+        "began he"
+      ],
+      "t": 0,
+      "izoh": "Only after ... did he begin.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#66b2300c"
+    },
+    {
+      "q": "No sooner ___ we sat down than the waiter appeared.",
+      "v": [
+        "had",
+        "did",
+        "have",
+        "were"
+      ],
+      "t": 0,
+      "izoh": "No sooner had we sat down than.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#fdbc9fa4"
+    },
+    {
+      "q": "Scarcely ___ the meeting begun when the alarm sounded.",
+      "v": [
+        "did",
+        "had",
+        "was",
+        "has"
+      ],
+      "t": 1,
+      "izoh": "Scarcely had the meeting begun when.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#6b55caec"
+    },
+    {
+      "q": "Under no circumstances ___ you disclose confidential data.",
+      "v": [
+        "must",
+        "you must",
+        "do must",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "Under no circumstances must you disclose.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#6264f394"
+    },
+    {
+      "q": "Only then ___ it dawn on me that I had been deceived.",
+      "v": [
+        "had",
+        "did",
+        "was",
+        "does"
+      ],
+      "t": 1,
+      "izoh": "Only then did it dawn on me.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#ebecafd5"
+    },
+    {
+      "q": "Not until she spoke ___ recognize her voice.",
+      "v": [
+        "did I",
+        "I did",
+        "had I",
+        "I had"
+      ],
+      "t": 0,
+      "izoh": "Not until she spoke did I recognize.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#6bb5984f"
+    },
+    {
+      "q": "Were I ___ choose again, I would follow the same path.",
+      "v": [
+        "to",
+        "for",
+        "in",
+        "would"
+      ],
+      "t": 0,
+      "izoh": "Were I to choose = If I were to.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#1248bbea"
+    },
+    {
+      "q": "Should any problems ___, our team will resolve them promptly.",
+      "v": [
+        "arise",
+        "arises",
+        "arose",
+        "arising"
+      ],
+      "t": 0,
+      "izoh": "Should any problems arise = If any should arise.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m1#fa462c80"
+    }
+  ]
+}

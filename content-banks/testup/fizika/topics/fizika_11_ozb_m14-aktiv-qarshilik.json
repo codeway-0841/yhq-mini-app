@@ -1,0 +1,486 @@
+{
+  "nom": "14-mavzu. Aktiv Qarshilik",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Aktiv qarshilik deb nimaga aytiladi?",
+      "v": [
+        "Undan tok o'tganda elektr energiyasi boshqa turdagi (issiqlik, yorug'lik va boshqa) energiyaga to'liq aylanadigan qarshilikka",
+        "Faqat induktivlikka ega qarshilikka",
+        "Faqat sig'imga ega qarshilikka",
+        "Nolga teng qarshilikka"
+      ],
+      "t": 0,
+      "izoh": "Aktiv qarshilik deb atalishiga sabab undan tok o'tganda elektr energiyasi boshqa turdagi (issiqlik, yorug'lik va boshqa) energiyaga to'liq aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#5b02591e"
+    },
+    {
+      "q": "Quyidagi qurilmalardan qaysi biri o'zgaruvchan tok zanjirida aktiv qarshilik hisoblanadi?",
+      "v": [
+        "Elektr lampochkasi, dazmol, elektr plita",
+        "Ideal kondensator",
+        "Ideal g'altak",
+        "Transformator ikkilamchi o'rami"
+      ],
+      "t": 0,
+      "izoh": "Dazmol, elektr lampochkasi kabi iste'molchilarda elektr energiyasi issiqlik, yorug'lik kabi energiyalarga aylanadi — ular aktiv qarshilik hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#76a50e09"
+    },
+    {
+      "q": "Aktiv qarshilikdagi kuchlanish va tok kuchi tebranishlari qanday fazada bo'ladi?",
+      "v": [
+        "Bir xil fazada",
+        "π/2 fazada farq bilan",
+        "π fazada farq bilan",
+        "Tasodifiy fazalarda"
+      ],
+      "t": 0,
+      "izoh": "Aktiv qarshilikdagi kuchlanish va tok kuchining tebranishlari bir xil fazada bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#8e7ca348"
+    },
+    {
+      "q": "Faqat aktiv qarshilikdan iborat zanjirda tok kuchining o'zgarish tenglamasi qanday?",
+      "v": [
+        "i = Im·cosωt",
+        "i = Im·sin(ωt + π/2)",
+        "i = Im·cos(ωt + π/2)",
+        "i = Im/ω"
+      ],
+      "t": 0,
+      "izoh": "Faqat aktiv qarshilikdan iborat zanjirdagi tok kuchining o'zgarishi i = Im·cosωt ko'rinishda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#125c00c9"
+    },
+    {
+      "q": "Aktiv qarshilikda tok kuchining amplituda qiymati qanday aniqlanadi?",
+      "v": [
+        "Im = Um/R",
+        "Im = Um·R",
+        "Im = Um/(ωR)",
+        "Im = R/Um"
+      ],
+      "t": 0,
+      "izoh": "Zanjirning bir qismi uchun Om qonunidan Im = Um/R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#204d4370"
+    },
+    {
+      "q": "Aktiv qarshilikning vektor diagrammasida kuchlanish va tok kuchi vektorlari qanday tasvirlanadi?",
+      "v": [
+        "Parallel vektorlar ko'rinishida, ular orasidagi burchak nolga teng",
+        "O'zaro perpendikulyar vektorlar ko'rinishida",
+        "Qarama-qarshi yo'nalgan vektorlar ko'rinishida",
+        "180° burchak ostida"
+      ],
+      "t": 0,
+      "izoh": "Diagrammada o'zgaruvchan tok kuchi amplitudasi bilan kuchlanish amplitudasi parallel vektorlar ko'rinishida tasvirlanadi, ular orasidagi burchak nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#d0b93be8"
+    },
+    {
+      "q": "Kundalik turmushda iste'mol qilinadigan elektr kuchlanishining chastotasi qanchaga teng?",
+      "v": [
+        "50 Gz",
+        "60 Gz",
+        "100 Gz",
+        "220 Gz"
+      ],
+      "t": 0,
+      "izoh": "Kundalik turmushda iste'mol qilinadigan elektr kuchlanishining chastotasi 50 Gz ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#ae9d401a"
+    },
+    {
+      "q": "50 Gz chastotali o'zgaruvchan tokda cho'g'lama tolali lampochka bir sekundda necha marta o'chib-yonadi?",
+      "v": [
+        "100 marta",
+        "50 marta",
+        "25 marta",
+        "200 marta"
+      ],
+      "t": 0,
+      "izoh": "Chastota 50 Gz bo'lgani uchun lampochka bir sekundda 100 marta o'chib-yonadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#2268e655"
+    },
+    {
+      "q": "Biz lampochkaning o'chib-yonganligini nega sezmaymiz?",
+      "v": [
+        "Ko'zimiz bir sekundda o'rtacha 16–20 marta o'zgargan jarayonni ilg'amaydi",
+        "Lampochka umuman o'chib-yonmaydi",
+        "Chastota juda past",
+        "Kuchlanish juda kichik"
+      ],
+      "t": 0,
+      "izoh": "Ko'zimiz bir sekundda o'rtacha 16–20 marta o'zgargan jarayonni ilg'amaganligi sababli lampochkaning o'chib-yonganligini sezmaymiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#c60ac7f6"
+    },
+    {
+      "q": "O'zgaruvchan tokning oniy quvvati qanday aniqlanadi?",
+      "v": [
+        "P = i·u",
+        "P = i/u",
+        "P = i²/u",
+        "P = u/i"
+      ],
+      "t": 0,
+      "izoh": "O'zgaruvchan tokning oniy quvvati P = i·u bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#d9538ef5"
+    },
+    {
+      "q": "Aktiv qarshilikli zanjirda oniy quvvatning ifodasi qanday?",
+      "v": [
+        "P = Pm·cos²ωt",
+        "P = Pm·sin²ωt",
+        "P = Pm·cos2ωt",
+        "P = Pm/2"
+      ],
+      "t": 0,
+      "izoh": "Aktiv qarshilikli zanjirda oniy quvvat P = Pm·cos²ωt, bunda Pm = Im·Um.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#99237f59"
+    },
+    {
+      "q": "O'zgaruvchan tok quvvatining oniy qiymati qanday ishorali bo'ladi?",
+      "v": [
+        "Har doim musbat",
+        "Har doim manfiy",
+        "Davriy ravishda ishora o'zgartiradi",
+        "Har doim nol"
+      ],
+      "t": 0,
+      "izoh": "cos²ωt ifoda har doim musbat bo'lganligidan o'zgaruvchan tok quvvatining oniy qiymati ham musbat ishorali bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#6229e6d4"
+    },
+    {
+      "q": "O'zgaruvchan tokning effektiv qiymati deb nimaga aytiladi?",
+      "v": [
+        "Bir xil vaqt ichida aktiv qarshilikdan o'zgaruvchan tok o'tganda ajralib chiqadigan issiqlikka teng issiqlik miqdorini ajratib chiqaradigan o'zgarmas tok kuchiga teng kattalikka",
+        "O'zgaruvchan tokning maksimal qiymatiga",
+        "O'zgaruvchan tokning o'rtacha qiymatiga",
+        "O'zgaruvchan tokning amplitudasining yarmiga"
+      ],
+      "t": 0,
+      "izoh": "O'zgaruvchan tokning Ief effektiv qiymati deb bir xil vaqt ichida aktiv qarshilikdan o'zgaruvchan tok o'tganda ajralib chiqadigan issiqlikka teng issiqlik miqdorini ajratib chiqaradigan o'zgarmas tok kuchiga teng kattalikka aytiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#2a87212e"
+    },
+    {
+      "q": "Tok kuchining effektiv qiymati uning maksimal qiymati bilan qanday bog'langan?",
+      "v": [
+        "Ief = Im/√2",
+        "Ief = Im·√2",
+        "Ief = Im/2",
+        "Ief = 2Im"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchining effektiv qiymati Ief = Im/√2 bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#0cb27c27"
+    },
+    {
+      "q": "O'zgaruvchan kuchlanishning effektiv qiymati qanday aniqlanadi?",
+      "v": [
+        "Uef = Um/√2",
+        "Uef = Um·√2",
+        "Uef = Um/2",
+        "Uef = 2Um"
+      ],
+      "t": 0,
+      "izoh": "O'zgaruvchan kuchlanishning effektiv qiymati Uef = Um/√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#9c70d92e"
+    },
+    {
+      "q": "Amplituda qiymati 30 V bo'lgan zanjirga ulangan rezistordan 2 A tok o'tganda ajralgan o'rtacha quvvat qanchaga teng?",
+      "v": [
+        "30 W",
+        "60 W",
+        "15 W",
+        "120 W"
+      ],
+      "t": 0,
+      "izoh": "P = Im·Um/2 = (2 A · 30 V)/2 = 30 W.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#4f7fd333"
+    },
+    {
+      "q": "Aktiv qarshilikda ajralib chiqadigan o'rtacha (effektiv) quvvatni aniqlash formulasi qanday?",
+      "v": [
+        "P = Im·Um/2",
+        "P = Im·Um",
+        "P = Im²·Um",
+        "P = Im·Um/4"
+      ],
+      "t": 0,
+      "izoh": "Aktiv qarshilikdagi o'rtacha quvvat P = Im·Um/2 bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#eefa50a4"
+    },
+    {
+      "q": "Vektor diagrammada aylanuvchi vektorning vertikal o'qdagi proyeksiyasi nimaga teng?",
+      "v": [
+        "Kattalikning oniy qiymatiga",
+        "Kattalikning amplitudasiga",
+        "Kattalikning o'rtacha qiymatiga",
+        "Nolga"
+      ],
+      "t": 0,
+      "izoh": "Im vektorning vertikal o'qdagi proyeksiyasi i kattalikning oniy qiymatiga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#b306ea6c"
+    },
+    {
+      "q": "Vektor diagramma usulida vektor qanday yo'nalishda aylanadi?",
+      "v": [
+        "Soat strelkasiga teskari yo'nalishda",
+        "Soat strelkasi yo'nalishida",
+        "Gorizontal yo'nalishda",
+        "Aylanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Vektor soat strelkasiga teskari yo'nalishda aylanma harakatga keltiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#4897e0d0"
+    },
+    {
+      "q": "Tok kuchi i = 8,5·sin(628t + 0,325) qonuni bo'yicha o'zgarsa, uning effektiv qiymati taxminan qancha?",
+      "v": [
+        "6 A",
+        "8,5 A",
+        "12 A",
+        "4,25 A"
+      ],
+      "t": 0,
+      "izoh": "Ief = Im/√2 = 8,5/1,41 ≈ 6 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#9c841c70"
+    },
+    {
+      "q": "Tok kuchi i = 8,5·sin(628t + 0,325) qonuni bo'yicha o'zgarsa, uning chastotasi qancha (ω = 628 rad/s)?",
+      "v": [
+        "100 Gz",
+        "50 Gz",
+        "628 Gz",
+        "314 Gz"
+      ],
+      "t": 0,
+      "izoh": "v = ω/(2π) = 628/(2·3,14) = 100 Gz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#5af853ae"
+    },
+    {
+      "q": "Amplituda qiymati 311 V bo'lgan tarmoq kuchlanishining effektiv qiymati taxminan qancha?",
+      "v": [
+        "220 V",
+        "311 V",
+        "440 V",
+        "155 V"
+      ],
+      "t": 0,
+      "izoh": "Uef = Um/√2 = 311/1,41 ≈ 220 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#135977eb"
+    },
+    {
+      "q": "O'zgaruvchan tok zanjirida quvvat nimaga e'tibor berilishi katta ahamiyatga ega?",
+      "v": [
+        "Chunki oniy quvvat davriy ravishda o'zgarib turadi, o'rtacha quvvatni bilish zarur",
+        "Chunki quvvat har doim nolga teng",
+        "Chunki quvvat o'lchanmaydi",
+        "Chunki quvvat doimiy"
+      ],
+      "t": 0,
+      "izoh": "O'zgaruvchan tokning oniy quvvati davriy ravishda o'zgarib turadi, shuning uchun o'zgaruvchan tokning (o'rtacha) quvvatini bilish katta ahamiyatga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#d19fe378"
+    },
+    {
+      "q": "Kundalik turmushdagi o'zgaruvchan tok zanjirlariga ulanadigan iste'molchilarga misollar:",
+      "v": [
+        "Dazmol, elektr lampochkasi, ventilator",
+        "Kondensator va g'altak",
+        "Diod va tranzistor",
+        "Faqat akkumulyator"
+      ],
+      "t": 0,
+      "izoh": "Kundalik turmushda va texnikada o'zgaruvchan tok zanjirlariga dazmol, elektr lampochkasi, ventilator va h.k. iste'molchilar ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#6eeb215c"
+    },
+    {
+      "q": "Kuchlanish u = Um·cosωt qonuni bo'yicha o'zgarsa, Um nima deb ataladi?",
+      "v": [
+        "Kuchlanishning amplituda qiymati",
+        "Kuchlanishning effektiv qiymati",
+        "Kuchlanishning o'rtacha qiymati",
+        "Kuchlanishning oniy qiymati"
+      ],
+      "t": 0,
+      "izoh": "Um — kuchlanishning amplituda (maksimal) qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#1f689abc"
+    },
+    {
+      "q": "Aktiv qarshilikdagi tok kuchi kuchlanishdan qancha fazaga siljiydi?",
+      "v": [
+        "Siljimaydi (faza farqi nol)",
+        "π/2 ga oldinga",
+        "π/2 ga orqada",
+        "π ga oldinga"
+      ],
+      "t": 0,
+      "izoh": "Aktiv qarshilikda kuchlanish va tok kuchi tebranishlari bir xil fazada bo'ladi — faza siljishi nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#cc77c5d6"
+    },
+    {
+      "q": "Effektiv tok kuchi 10 A bo'lsa, tok kuchining amplituda qiymati taxminan qancha?",
+      "v": [
+        "14,1 A",
+        "7,07 A",
+        "10 A",
+        "20 A"
+      ],
+      "t": 0,
+      "izoh": "Im = Ief·√2 = 10·1,41 ≈ 14,1 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#414b4a09"
+    },
+    {
+      "q": "O'zgaruvchan tokning oniy quvvati grafigida quvvat qanday o'zgaradi?",
+      "v": [
+        "Davriy ravishda o'zgarib turadi, har doim musbat",
+        "Doimiy o'zgarmas",
+        "Davriy ravishda ishora almashinadi",
+        "Monoton o'sib boradi"
+      ],
+      "t": 0,
+      "izoh": "O'zgaruvchan tokning oniy quvvati davriy ravishda o'zgarib turadi va cos²ωt tufayli har doim musbat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#0896889c"
+    },
+    {
+      "q": "Aktiv qarshilikdagi o'rtacha quvvat P = Ief²·R bilan ham yozilishi mumkinmi?",
+      "v": [
+        "Ha, chunki Ief = Im/√2 bo'lgani uchun P = Im²R/2 = Ief²R",
+        "Yo'q, bunday yozib bo'lmaydi",
+        "Faqat induktiv qarshilik uchun to'g'ri",
+        "Faqat sig'im qarshilik uchun to'g'ri"
+      ],
+      "t": 0,
+      "izoh": "Ief = Im/√2 bo'lgani uchun P = Im·Um/2 = Im²R/2 = Ief²·R — xuddi o'zgarmas tokdagi kabi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#240b3c7c"
+    },
+    {
+      "q": "Tok kuchi amplitudasi 2 marta oshsa, aktiv qarshilikdagi o'rtacha quvvat qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "P = Im²R/2 bo'lgani uchun tok amplitudasi 2 marta oshsa quvvat 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#bcb1bccb"
+    },
+    {
+      "q": "Aktiv qarshilik 2 marta ortsa (Um o'zgarmasa), o'rtacha quvvat qanday o'zgaradi?",
+      "v": [
+        "2 marta kamayadi",
+        "2 marta ortadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "P = Um²/(2R) bo'lgani uchun R 2 marta ortsa quvvat 2 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#9ef6d34e"
+    },
+    {
+      "q": "Elektr energiyasi aktiv qarshilikda qanday energiyalarga aylanadi?",
+      "v": [
+        "Issiqlik, yorug'lik, mexanik va boshqa energiyalarga",
+        "Faqat magnit maydon energiyasiga",
+        "Faqat elektr maydon energiyasiga",
+        "Hech qanday energiyaga aylanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Aktiv qarshilikli iste'molchilarda elektr energiyasi issiqlik, yorug'lik, mexanik va boshqa energiyalarga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m14-aktiv-qarshilik#f9d033b1"
+    }
+  ]
+}

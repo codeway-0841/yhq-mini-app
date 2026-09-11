@@ -1,0 +1,531 @@
+{
+  "nom": "24-mavzu. Teleko Rsatuvlar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Teleko‘rsatuvlarda tasvir elektr signallariga qaysi qurilmada aylantiriladi?",
+      "v": [
+        "Videokamerada",
+        "Mikrofonda",
+        "Modulyatorda",
+        "Kirish konturida"
+      ],
+      "t": 0,
+      "izoh": "Tasvir dastlab elektr signallariga aylantiriladi; bu jarayon videokamera deb ataluvchi qurilmada amalga oshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#78ae8064"
+    },
+    {
+      "q": "Videokamerada hosil qilingan signallar qayerda kuchaytiriladi?",
+      "v": [
+        "Maxsus elektron qurilmada (videokuchaytirgichda)",
+        "Kirish konturida",
+        "Demodulyatorda",
+        "Televizor ekranida"
+      ],
+      "t": 0,
+      "izoh": "Videokamerada hosil qilingan signallar maxsus elektron qurilmada kuchaytiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#d83c0113"
+    },
+    {
+      "q": "Teleuzatuv qurilmasida modulyatorda nima sodir bo‘ladi?",
+      "v": [
+        "Generatorda ishlab chiqilgan yuqori chastotali tebranishlarga tasvir signallari qo‘shiladi",
+        "Tasvir signali tovushga aylantiriladi",
+        "Yuqori chastotali signal ajratib olinadi",
+        "Signallar ekranga beriladi"
+      ],
+      "t": 0,
+      "izoh": "Modulyatorda generatorda ishlab chiqilgan yuqori chastotali elektromagnit tebranishlarga tasvir signallari qo‘shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#efca21f6"
+    },
+    {
+      "q": "Teleuzatuv qurilmasining oxirgi blokida modulyatsiyalangan ovoz va tasvir signallari qayerga beriladi?",
+      "v": [
+        "Tarqatuvchi antennaga",
+        "Qabul qiluvchi antennaga",
+        "Kirish konturiga",
+        "Detektorga"
+      ],
+      "t": 0,
+      "izoh": "Oxirgi blokda modulyatsiyalangan ovoz va tasvir signallari yaxlit holda tarqatuvchi antennaga beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#f1e859b3"
+    },
+    {
+      "q": "Telepriyomnikda kerakli dastur qaysi qurilma vositasida tanlab olinadi?",
+      "v": [
+        "Kirish konturi vositasida",
+        "Detektor vositasida",
+        "Radiokarnay vositasida",
+        "Ekran vositasida"
+      ],
+      "t": 0,
+      "izoh": "Telepriyomnikda kirish konturi vositasida kerakli dastur tanlab olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#3f9f1f82"
+    },
+    {
+      "q": "Telepriyomnikdagi detektor qanday vazifani bajaradi?",
+      "v": [
+        "Yuqori chastotali signaldan tasvir va ovoz signallarini ajratib beradi",
+        "Signallarni kuchaytiradi",
+        "Kerakli dasturni tanlaydi",
+        "Elektr signalini tovushga aylantiradi"
+      ],
+      "t": 0,
+      "izoh": "Detektor yuqori chastotali signaldan tasvir va ovoz signallarini ajratib beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#70ed863f"
+    },
+    {
+      "q": "Telepriyomnikda tasvir signali va ovoz signali qayerlarga beriladi?",
+      "v": [
+        "Tasvir signali televizor ekraniga, ovoz signali radiokarnayga",
+        "Ikkalasi ham ekranga",
+        "Ikkalasi ham radiokarnayga",
+        "Tasvir radiokarnayga, ovoz ekranga"
+      ],
+      "t": 0,
+      "izoh": "Tasvir signali televizor ekraniga, ovoz signali radiokarnayga beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#9be281a8"
+    },
+    {
+      "q": "Telexabarlar qaysi chastota diapazonida tarqatiladi?",
+      "v": [
+        "50 MHz va 230 MHz oralig‘ida",
+        "50 kHz va 230 kHz oralig‘ida",
+        "500 MHz va 1000 MHz oralig‘ida",
+        "5 MHz va 23 MHz oralig‘ida"
+      ],
+      "t": 0,
+      "izoh": "Telexabarlar chastotalari 50 MHz va 230 MHz oralig‘ida bo‘lgan diapazonda tarqatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#4d6a345c"
+    },
+    {
+      "q": "Telexabar to‘lqinlari faqat qayerda tarqaladi?",
+      "v": [
+        "Antennaning ko‘rinish chegarasidagina",
+        "Butun Yer sharida",
+        "Faqat shimoliy yarim sharda",
+        "Ionosferadan qaytgach hamma yerda"
+      ],
+      "t": 0,
+      "izoh": "Bunday to‘lqinlar faqat antennaning ko‘rinish chegarasidagina tarqaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#f0ab9293"
+    },
+    {
+      "q": "Katta hududni telexabar bilan qamrab olish uchun nima qilish kerak?",
+      "v": [
+        "Tarqatuvchilarning balandligini oshirish va ularni zichroq joylashtirish",
+        "Chastotani pasaytirish",
+        "Antennalarni kamaytirish",
+        "Kuchaytirgichlarni o‘chirish"
+      ],
+      "t": 0,
+      "izoh": "Katta hududni qamrab olish uchun telexabar tarqatuvchilar balandligini oshirish va ularni zichroq joylashtirish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#fd48a65c"
+    },
+    {
+      "q": "Teleko‘rsatuvlarni yanada uzoqqa yuborish uchun qaysi tizimdan foydalanish mumkin?",
+      "v": [
+        "Yo‘ldosh aloqa tizimidan",
+        "Radiolokatsiya tizimidan",
+        "Elektr tarmog‘idan",
+        "Telegraf liniyasidan"
+      ],
+      "t": 0,
+      "izoh": "Teleko‘rsatuvlarni yanada uzoqqa yuborish uchun yo‘ldosh aloqa tizimidan foydalanish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#d23e436e"
+    },
+    {
+      "q": "B. L. Rozing panjaraning qo‘zg‘almas tasvirini elektron nurli trubka ekranida qachon hosil qilgan?",
+      "v": [
+        "1911-yil 9-mayda",
+        "1895-yil 7-mayda",
+        "1928-yil 26-iyulda",
+        "1925-yil 9-noyabrda"
+      ],
+      "t": 0,
+      "izoh": "1911-yil 9-mayda Sankt-Peterburg texnologiya institutida B. L. Rozing bu tasvirni hosil qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#fb560eb2"
+    },
+    {
+      "q": "“Radiotelefot” apparatining konstruksiyasini ishlab chiqqan o‘zbekistonlik olim kim?",
+      "v": [
+        "Boris Pavlovich Grabovskiy",
+        "B. L. Rozing",
+        "V. I. Popov va N. G. Piskunov bilan birga A. S. Popov",
+        "I. F. Belyanskiy yolg‘iz"
+      ],
+      "t": 0,
+      "izoh": "O‘rta Osiyo davlat universiteti laboranti B. P. Grabovskiy muhandislar V. I. Popov va N. G. Piskunovlar bilan hamkorlikda “radiotelefot” apparatini ishlab chiqqan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#d5062066"
+    },
+    {
+      "q": "“Radiotelefot” apparatiga qabul qilish raqami № 4899 bo‘lgan guvohnoma qachon berilgan?",
+      "v": [
+        "1925-yil 9-noyabrda",
+        "1928-yil 26-iyulda",
+        "1911-yil 9-mayda",
+        "1956-yil 4-avgustda"
+      ],
+      "t": 0,
+      "izoh": "“Radiotelefot” apparatiga 1925-yil 9-noyabrda qabul qilish raqami № 4899 bo‘lgan guvohnoma berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#8729cbc8"
+    },
+    {
+      "q": "“Telefot”ning rasmiy sinovi qachon bo‘lib o‘tgan?",
+      "v": [
+        "1928-yil 26-iyulda",
+        "1925-yil 9-noyabrda",
+        "1956-yil 1-yanvarda",
+        "1967-yil 4-avgustda"
+      ],
+      "t": 0,
+      "izoh": "“Telefot”ning rasmiy ravishdagi sinovi 1928-yil 26-iyul kuni bo‘lib o‘tgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#729b3d3c"
+    },
+    {
+      "q": "“Telefot” sinovida birinchi marta nima ko‘rsatilgan?",
+      "v": [
+        "Harakatlanayotgan odamning tasviri",
+        "Qo‘zg‘almas panjara tasviri",
+        "Rangli tasvir",
+        "Oy sirtining tasviri"
+      ],
+      "t": 0,
+      "izoh": "Sinovda birinchi marta harakatlanayotgan odamning tasviri ko‘ringan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#bd0c2b09"
+    },
+    {
+      "q": "1928-yil 4-avgust kuni “telefot” orqali Toshkentning Alisher Navoiy ko‘chasida nima tasviri ko‘rsatilgan?",
+      "v": [
+        "Harakatlanayotgan tramvayning tasviri",
+        "Harakatlanayotgan avtomobilning tasviri",
+        "Odamlar olomonining tasviri",
+        "Binolar tasviri"
+      ],
+      "t": 0,
+      "izoh": "4-avgust kuni Alisher Navoiy ko‘chasida harakatlanayotgan tramvayning tasviri “telefot” orqali ko‘rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#49c3edb9"
+    },
+    {
+      "q": "Toshkent nima uchun “Televideniye vatani” deyiladi?",
+      "v": [
+        "Hozirgi zamon televizion sistemasining barcha elementlarini o‘z ichiga olgan loyiha Toshkentda yaratilgani uchun",
+        "Dunyodagi birinchi teleminora Toshkentda qurilgani uchun",
+        "Eng baland teleminora Toshkentda joylashgani uchun",
+        "Birinchi televizor Toshkentda sotilgani uchun"
+      ],
+      "t": 0,
+      "izoh": "“Radiotelefot” loyihasi hozirgi zamon televizion sistemasining barcha elementlarini o‘z ichiga olgani va Toshkentda yaratilgani uchun “Televideniye vatani — Toshkent” deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#9791aece"
+    },
+    {
+      "q": "Oq-qora rangli televizion markaz Toshkentda qachon ishga tushgan?",
+      "v": [
+        "1956-yilda",
+        "1967-yilda",
+        "1978-yilda",
+        "1990-yilda"
+      ],
+      "t": 0,
+      "izoh": "1956-yilda sobiq O‘rta Osiyo respublikalari orasida birinchilardan bo‘lib oq-qora rangli televizion markaz Toshkentda ishga tushgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#e03f6d4b"
+    },
+    {
+      "q": "1956-yilda Toshkentda qurilgan teleminoraning balandligi qancha bo‘lgan?",
+      "v": [
+        "180 m",
+        "375 m",
+        "100 m",
+        "250 m"
+      ],
+      "t": 0,
+      "izoh": "1956-yilda Toshkentda balandligi 180 m bo‘lgan teleminora qurilib, muntazam teleko‘rsatuvlar berilib borgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#92178a01"
+    },
+    {
+      "q": "SEKAM nomli rangli teleko‘rsatuv sistemasi qachon ishga tushgan?",
+      "v": [
+        "1967-yilda",
+        "1956-yilda",
+        "1978-yilda",
+        "1998-yilda"
+      ],
+      "t": 0,
+      "izoh": "1967-yilda SEKAM nomli rangli teleko‘rsatuv sistemasi ishga tushgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#6bd89bf2"
+    },
+    {
+      "q": "1978–85-yillarda Toshkentda qurilgan teleminoraning balandligi qancha?",
+      "v": [
+        "375 m",
+        "180 m",
+        "540 m",
+        "290 m"
+      ],
+      "t": 0,
+      "izoh": "1978–85-yillarda Bo‘zsuv kanalining o‘ng sohilida 375 m balandlikda teleminora qurilib, ishga tushirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#173d4514"
+    },
+    {
+      "q": "Toshkent teleminorasining umumiy og‘irligi qanchadan ko‘proq?",
+      "v": [
+        "6000 tonnadan",
+        "3000 tonnadan",
+        "1000 tonnadan",
+        "10 000 tonnadan"
+      ],
+      "t": 0,
+      "izoh": "Teleminoraning umumiy og‘irligi 6000 tonnadan ko‘proq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#f6547402"
+    },
+    {
+      "q": "Toshkent teleminorasi jahonda balandligi bo‘yicha qaysi o‘rinda bo‘lgan?",
+      "v": [
+        "Ostankino, Toronto, Tokiodan so‘ng 9-o‘rinda",
+        "1-o‘rinda",
+        "3-o‘rinda",
+        "5-o‘rinda"
+      ],
+      "t": 0,
+      "izoh": "Teleminora jahonda Ostankino (Moskva), Toronto (Kanada), Tokio (Yaponiya)dan so‘ng 9-o‘rinda bo‘lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#6529919b"
+    },
+    {
+      "q": "Teleminora balandligining ortishi teleko‘rsatuv uzatish uzoqligiga qanday ta’sir qiladi?",
+      "v": [
+        "Ko‘rinish chegarasi kengayib, uzatish uzoqligi ortadi",
+        "Uzatish uzoqligi kamayadi",
+        "Hech qanday ta’sir qilmaydi",
+        "Faqat ovoz sifati yaxshilanadi"
+      ],
+      "t": 0,
+      "izoh": "Telexabar to‘lqinlari faqat antennaning ko‘rinish chegarasida tarqalgani uchun minora balandligi ortishi bilan qamrov hududi kengayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#1c153233"
+    },
+    {
+      "q": "O‘zbekistonda 1998-yilda ishga tushgan birinchi xususiy telekanal qanday atalgan?",
+      "v": [
+        "“30-kanal”",
+        "“O‘zbekiston 24”",
+        "“Sof TS”",
+        "“O‘zTV–1”"
+      ],
+      "t": 0,
+      "izoh": "1998-yilda “30-kanal” deb ataluvchi birinchi xususiy telekanal ishga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#db7a9fad"
+    },
+    {
+      "q": "Butun sutka davomida ishlaydigan “O‘zbekiston 24” kanali qachon ish boshlagan?",
+      "v": [
+        "2017-yilda",
+        "2008-yilda",
+        "1998-yilda",
+        "1990-yilda"
+      ],
+      "t": 0,
+      "izoh": "2017-yilda butun sutka davomida ishlaydigan “O‘zbekiston 24” kanali o‘z ishini boshladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#01e928fc"
+    },
+    {
+      "q": "Teleuzatuv qurilmasining blok-chizmasida generator qanday vazifani bajaradi?",
+      "v": [
+        "Yuqori chastotali elektromagnit tebranishlarni ishlab chiqaradi",
+        "Tasvirni elektr signaliga aylantiradi",
+        "Kerakli dasturni tanlaydi",
+        "Signalni ekranga beradi"
+      ],
+      "t": 0,
+      "izoh": "Generatorda yuqori chastotali elektromagnit tebranishlar ishlab chiqiladi, ularga modulyatorda tasvir signallari qo‘shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#a4c4beb5"
+    },
+    {
+      "q": "Kosmik kemaga o‘rnatilgan telekameralar yordamida Oy va sayyoralar sirtilarini kuzatish nimaning yutug‘i hisoblanadi?",
+      "v": [
+        "Televideniyening",
+        "Radiolokatsiyaning",
+        "Radiosiyoning",
+        "Elektr xabarnomasining"
+      ],
+      "t": 0,
+      "izoh": "Sayyoralar sirtini kosmik kemaga o‘rnatilgan telekameralar yordamida kuzatish televideniyening yutug‘i tufayli mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#56224c0d"
+    },
+    {
+      "q": "Hozirgi zamon televizorlarida ko‘rsatilgan asosiy bloklardan tashqari yana qanday bloklar bo‘lishi mumkin?",
+      "v": [
+        "Rangli tasvir, turli ovoz ohanglari va masofadan boshqarish bloklari",
+        "Kogerer bloki",
+        "Uchqunli vibrator bloki",
+        "Temir kukunli qabul qilgich"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi televizorlar rangli, turli ovoz ohangida, masofadan boshqariladigan qilib ishlanganligi uchun qo‘shimcha bloklarga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#56e12bb0"
+    },
+    {
+      "q": "Telexabar to‘lqinlari 50–230 MHz diapazonida bo‘lgani uchun ular ionosferadan qaytmaydi. Shu sababli qamrov hududini kengaytirishning asosiy usuli nima?",
+      "v": [
+        "Teleminoralar balandligini oshirish va yo‘ldosh aloqa tizimidan foydalanish",
+        "Uzatkich chastotasini pasaytirish",
+        "Antenna sig‘imini kattalashtirish",
+        "To‘lqin uzunligini oshirish"
+      ],
+      "t": 0,
+      "izoh": "Bunday to‘lqinlar faqat ko‘rinish chegarasida tarqalgani uchun minoralar balandligini oshirish va yo‘ldosh aloqasi qamrovni kengaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#40c3394a"
+    },
+    {
+      "q": "Telexabarning chastotasi 100 MHz bo‘lsa, uning to‘lqin uzunligi taxminan qancha? (c = 3·10⁸ m/s)",
+      "v": [
+        "3 m",
+        "30 m",
+        "0,3 m",
+        "300 m"
+      ],
+      "t": 0,
+      "izoh": "λ = c/v = 3·10⁸/10⁸ = 3 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#9cfb73ac"
+    },
+    {
+      "q": "Telexabar to‘lqinlari chastotasi jihatidan radioto‘lqinlarning qaysi turkumiga kirishi mumkin?",
+      "v": [
+        "Metr to‘lqinlar (ultraqisqa to‘lqinlar)",
+        "Uzun to‘lqinlar",
+        "O‘rta to‘lqinlar",
+        "Infratovush to‘lqinlari"
+      ],
+      "t": 0,
+      "izoh": "50–230 MHz chastotalarga to‘lqin uzunligi taxminan 1,3–6 m bo‘lib, bular metr (ultraqisqa) to‘lqinlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#b8af0c15"
+    },
+    {
+      "q": "Teleuzatuv va radiouzatuv qurilmalarining ishlashidagi asosiy farq nima?",
+      "v": [
+        "Teleuzatuvda tasvir signali ham modulyatsiyalanadi va alohida videokuchaytirgich, videokamera bloklari bo‘ladi",
+        "Teleuzatuvda modulyator umuman bo‘lmaydi",
+        "Radiouzatuvda antenna ishlatilmaydi",
+        "Teleuzatuvda generator bo‘lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Teleuzatuv qurilmasida tasvir ham elektr signaliga aylantirilib modulyatsiyalanadi; radiouzatuv qismi oldingi mavzudagi qurilmadan farq qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#fa99fd6a"
+    },
+    {
+      "q": "Telepriyomnikda detektor oldida kuchaytirgichning vazifasi nima?",
+      "v": [
+        "Kirish konturidan ajratib olingan kuchsiz signalni kuchaytirish",
+        "Tasvirni elektr signaliga aylantirish",
+        "Yuqori chastotali tebranishlar hosil qilish",
+        "Ovozni tovush tebranishlariga aylantirish"
+      ],
+      "t": 0,
+      "izoh": "Ajratib olingan kuchsiz signal maxsus elektron blokda kuchaytirilib, detektorga beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m24-teleko-rsatuvlar#8aaa5a5f"
+    }
+  ]
+}

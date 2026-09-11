@@ -1,0 +1,486 @@
+{
+  "nom": "03-mavzu. Tokli Otkazgich Halqa Galtak Maydoni",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "To'g'ri tokli o'tkazgich atrofidagi magnit maydon kuch chiziqlari qanday shaklga ega?",
+      "v": [
+        "Markazi o'tkazgich o'qida joylashgan aylanalardan",
+        "To'g'ri parallel chiziqlardan",
+        "Spirallardan",
+        "Ellipslardan"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri tok magnit maydonining kuch chiziqlari markazi o'tkazgich o'qida bo'lgan aylanalardan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#78afcc27"
+    },
+    {
+      "q": "To'g'ri tok kuch chiziqlari aylanalari qanday tekislikda yotadi?",
+      "v": [
+        "O'tkazgich o'qiga tik tekislikda",
+        "O'tkazgich o'qiga parallel tekislikda",
+        "Istalgan tekislikda",
+        "Gorizontal tekislikda"
+      ],
+      "t": 0,
+      "izoh": "Bu aylanalar o'tkazgich o'qiga tik tekislikda yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#9a03468e"
+    },
+    {
+      "q": "To'g'ri tokning magnit maydon kuch chiziqlari yo'nalishi qaysi qoida bilan aniqlanadi?",
+      "v": [
+        "O'ng parma qoidasi bilan",
+        "Chap qo'l qoidasi bilan",
+        "Lenz qoidasi bilan",
+        "Kirxgof qoidasi bilan"
+      ],
+      "t": 0,
+      "izoh": "Yo'nalish o'ng parma qoidasidan foydalanib aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#6c5f1158"
+    },
+    {
+      "q": "O'ng parma qoidasining mazmuni qanday?",
+      "v": [
+        "Parmaning ilgarilanma harakati tok yo'nalishi bilan bir xil bo'lsa, dasta aylanish yo'nalishi induksiya chiziqlari yo'nalishini ko'rsatadi",
+        "Parma tokka teskari burilsa, induksiya yo'nalishi chiqadi",
+        "Parma harakati induksiyaga teskari bo'ladi",
+        "Parma dastasi tok yo'nalishini ko'rsatadi"
+      ],
+      "t": 0,
+      "izoh": "Agar parmaning ilgarilanma harakati tok yo'nalishi bilan bir xil bo'lsa, parma dastasining aylanish yo'nalishi magnit induksiya chiziqlarining yo'nalishini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#2b65513a"
+    },
+    {
+      "q": "Magnit maydon induksiya vektori kuch chiziqlariga nisbatan qanday yo'nalgan?",
+      "v": [
+        "Urinma bo'ylab",
+        "Perpendikulyar",
+        "Parallel emas, burchak ostida",
+        "Radius bo'ylab"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydon induksiya vektori kuch chiziqlariga urinma bo'ylab yo'nalgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#3d6c2204"
+    },
+    {
+      "q": "Fazoning biror nuqtasidagi natijaviy maydon induksiyasi qanday aniqlanadi (superpozitsiya prinsipi)?",
+      "v": [
+        "Har bir tokli o'tkazgichning shu nuqtada hosil qilgan induksiyalarining vektor yig'indisi sifatida",
+        "Induksiyalarning arifmetik o'rtachasi sifatida",
+        "Eng katta induksiya sifatida",
+        "Induksiyalarning ayirmasi sifatida"
+      ],
+      "t": 0,
+      "izoh": "B = B1 + B2 + B3 + ... + Bn — vektor yig'indi; bu magnit maydoni uchun superpozitsiya prinsipi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#89afb200"
+    },
+    {
+      "q": "Ixtiyoriy shakldagi tokli o'tkazgichlar atrofidagi induksiyani hisoblashga imkon beruvchi qonun kimlar tomonidan aniqlangan?",
+      "v": [
+        "Bio, Savar va Laplas",
+        "Amper va Volta",
+        "Ersted va Faradey",
+        "Kulon va Om"
+      ],
+      "t": 0,
+      "izoh": "Fransuz olimlari J. Bio, F. Savar va P. Laplas umumiy qonunni aniqladilar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#9b08e05f"
+    },
+    {
+      "q": "Bio–Savar–Laplas qonunida o'tkazgichning Δl elementi hosil qilgan induksiya qanday ifodalanadi?",
+      "v": [
+        "ΔB = (μ0/4π)·(I·Δl·sinα)/r²",
+        "ΔB = (μ0/4π)·(I·Δl)/r",
+        "ΔB = μ0·I·Δl·r²",
+        "ΔB = (μ0/4π)·(I·Δl·cosα)/r²"
+      ],
+      "t": 0,
+      "izoh": "ΔB = μ0/4π · I·Δl·sinα/r².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#afed47d9"
+    },
+    {
+      "q": "Cheksiz uzun to'g'ri tokdan d masofadagi nuqtada magnit induksiyasi qanday hisoblanadi?",
+      "v": [
+        "B = μ0·I/(2π·d)",
+        "B = μ0·I·d/(2π)",
+        "B = μ0·I/(2·d)",
+        "B = μ0·I/(4π·d²)"
+      ],
+      "t": 0,
+      "izoh": "B = μ0·I/(2π·d).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#98e13d77"
+    },
+    {
+      "q": "To'g'ri tokli o'tkazgichning biror nuqtada hosil qilgan induksiyasi tok kuchiga qanday bog'liq?",
+      "v": [
+        "To'g'ri proporsional",
+        "Teskari proporsional",
+        "Kvadratik bog'liq",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Induksiya o'tkazgichdan o'tayotgan tok kuchiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#e63a2cc5"
+    },
+    {
+      "q": "To'g'ri tokli o'tkazgichning induksiyasi nuqtagacha bo'lgan masofaga qanday bog'liq?",
+      "v": [
+        "Teskari proporsional",
+        "To'g'ri proporsional",
+        "Kvadratga teskari proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Induksiya o'tkazgich bilan nuqta orasidagi eng qisqa masofaga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#48e85e6a"
+    },
+    {
+      "q": "Radiusi R bo'lgan aylanadan I tok o'tganda, aylana markazidagi induksiya qanday hisoblanadi?",
+      "v": [
+        "B = μ0·I/(2R)",
+        "B = μ0·I/(2πR)",
+        "B = μ0·I·R/2",
+        "B = μ0·I/(4R)"
+      ],
+      "t": 0,
+      "izoh": "Aylanma tok markazidagi induksiya B = μ0·I/(2R).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#0e962500"
+    },
+    {
+      "q": "Vakuumning magnit doimiysi μ0 ning son qiymati qanday?",
+      "v": [
+        "4π·10⁻⁷ N/A²",
+        "9·10⁹ N·m²/C²",
+        "8,85·10⁻¹² F/m",
+        "1,6·10⁻¹⁹ C"
+      ],
+      "t": 0,
+      "izoh": "μ0 = 4π·10⁻⁷ N/A².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#27f962da"
+    },
+    {
+      "q": "Aylanma tok markazidagi induksiya aylana radiusiga qanday bog'liq?",
+      "v": [
+        "Teskari proporsional",
+        "To'g'ri proporsional",
+        "Kvadratiga teskari proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "B = μ0·I/(2R) — radiusga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#9b2a32d8"
+    },
+    {
+      "q": "n ta o'ramga ega tokli g'altak markazidagi induksiya qanday ifodalanadi?",
+      "v": [
+        "B = μ0·n·I/(2R)",
+        "B = μ0·I/(2nR)",
+        "B = μ0·n·I·R/2",
+        "B = μ0·I/(2R·n²)"
+      ],
+      "t": 0,
+      "izoh": "n o'ramli g'altak markazida B = μ0·n·I/(2R).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#4e60ce37"
+    },
+    {
+      "q": "Tokli g'altak ichidagi induksiya o'ramlar soniga qanday bog'liq?",
+      "v": [
+        "To'g'ri proporsional",
+        "Teskari proporsional",
+        "Kvadratiga to'g'ri proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Induksiya o'ramlar soniga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#b5762876"
+    },
+    {
+      "q": "Temir kukunlari tokning magnit maydoni ta'sirida qanday holatga keladi?",
+      "v": [
+        "Magnitlanib, kichik magnit strelkalari kabi induksiya chiziqlari bo'ylab joylashadi",
+        "Eriy boshlaydi",
+        "Qotib qoladi",
+        "Harakatsiz qoladi"
+      ],
+      "t": 0,
+      "izoh": "Temir kukunlari magnitlanib, o'zini kichik magnit strelkalari kabi tutadi va induksiya chiziqlari bo'ylab joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#b97ed256"
+    },
+    {
+      "q": "To'g'ri tokdan o'tayotgan tok ikki marta oshirilsa, d masofadagi induksiya qanday o'zgaradi?",
+      "v": [
+        "Ikki marta ortadi",
+        "Ikki marta kamayadi",
+        "O'zgarmaydi",
+        "To'rt marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "B = μ0·I/(2π·d) da B toqqa to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#83366e01"
+    },
+    {
+      "q": "To'g'ri tokli o'tkazgichdan bo'lgan masofa ikki marta oshirilsa, induksiya qanday o'zgaradi?",
+      "v": [
+        "Ikki marta kamayadi",
+        "Ikki marta ortadi",
+        "O'zgarmaydi",
+        "To'rt marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "B masofaga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#fa1f8d55"
+    },
+    {
+      "q": "Aylanma tokning radiusi ikki marta kichraytirilsa, markazdagi induksiya qanday o'zgaradi?",
+      "v": [
+        "Ikki marta ortadi",
+        "Ikki marta kamayadi",
+        "O'zgarmaydi",
+        "To'rt marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "B = μ0·I/(2R) da B radiusga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#232b053a"
+    },
+    {
+      "q": "G'altakning o'ramlar soni ikki marta oshirilsa, markaziy induksiya qanday o'zgaradi?",
+      "v": [
+        "Ikki marta ortadi",
+        "Ikki marta kamayadi",
+        "O'zgarmaydi",
+        "Yarim marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "B o'ramlar soniga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#202d3333"
+    },
+    {
+      "q": "Superpozitsiya prinsipida induksiyalar qanday qo'shiladi?",
+      "v": [
+        "Vektor qo'shish qoidasi bo'yicha",
+        "Algebraik qo'shish bilan",
+        "Faqat modullari qo'shiladi",
+        "Ayirish yo'li bilan"
+      ],
+      "t": 0,
+      "izoh": "Induksiya vektor kattalik bo'lgani uchun vektor yig'indi olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#0dfe8909"
+    },
+    {
+      "q": "Induksiyasi 3 mT va 4 mT bo'lgan o'zaro tik yo'nalgan ikki bir jinsli maydon qo'shilganda natijaviy induksiya qanday bo'ladi?",
+      "v": [
+        "5 mT",
+        "7 mT",
+        "1 mT",
+        "12 mT"
+      ],
+      "t": 0,
+      "izoh": "Pifagor teoremasi bo'yicha: √(3²+4²) = 5 mT (1-mashq 7-savol).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#4dcedb22"
+    },
+    {
+      "q": "Ikki parallel o'tkazgichning bir nuqtada hosil qilgan maydonlari bir xil yo'nalgan bo'lsa, natijaviy induksiya qanday topiladi?",
+      "v": [
+        "Modullarining yig'indisiga teng",
+        "Modullarining ayirmasiga teng",
+        "Nolga teng",
+        "Ko'paytmasiga teng"
+      ],
+      "t": 0,
+      "izoh": "Bir xil yo'nalishda vektor yig'indi modullar yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#298e3b3b"
+    },
+    {
+      "q": "Ikki parallel o'tkazgichdan bir xil yo'nalishda teng tok o'tganda, ular orasidagi o'rta nuqtada induksiya nimaga teng?",
+      "v": [
+        "Nolga",
+        "Ikkilangan induksiyaga",
+        "Bitta o'tkazgich induksiyasiga",
+        "Maksimal qiymatga"
+      ],
+      "t": 0,
+      "izoh": "O'rta nuqtada maydonlar qarama-qarshi yo'nalgan va teng bo'lgani uchun B = 0 (1-mashq 17-savol).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#67eccc5a"
+    },
+    {
+      "q": "Bio–Savar–Laplas qonunidagi α burchak nimani anglatadi?",
+      "v": [
+        "Δl elementdan nuqtaga o'tkazilgan vektor bilan Δl element orasidagi burchak",
+        "Tok bilan maydon orasidagi burchak",
+        "Ikki o'tkazgich orasidagi burchak",
+        "Normal bilan maydon orasidagi burchak"
+      ],
+      "t": 0,
+      "izoh": "α — Δl elementdan A nuqtaga o'tkazilgan vektor bilan Δl element orasidagi burchak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#09b99aba"
+    },
+    {
+      "q": "To'g'ri cheksiz o'tkazgichdan 250 mA tok o'tganda undan 4 sm uzoqlikdagi induksiya qaysi formula bilan topiladi?",
+      "v": [
+        "B = μ0·I/(2π·d)",
+        "B = μ0·I/(2R)",
+        "B = μ0·n·I/(2R)",
+        "B = μ0·I·d/2π"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri tok uchun B = μ0·I/(2π·d) (kitob namunasida 1,25·10⁻⁶ T).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#c40e6483"
+    },
+    {
+      "q": "To'g'ri tokli o'tkazgichdan 5 A tok o'tganda undan 2 sm uzoqlikdagi nuqtada induksiya taxminan qancha? (1-mashq)",
+      "v": [
+        "50 μT",
+        "5 μT",
+        "500 μT",
+        "0,5 μT"
+      ],
+      "t": 0,
+      "izoh": "B = μ0·I/(2π·d) = 2·10⁻⁷·5/0,02 = 50 μT.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#389fd97d"
+    },
+    {
+      "q": "Radiusi 5 sm bo'lgan sim halqadan 3 A tok o'qanda halqa markazidagi induksiya taxminan qancha? (1-mashq)",
+      "v": [
+        "37,7 μT",
+        "3,77 μT",
+        "377 μT",
+        "7,5 μT"
+      ],
+      "t": 0,
+      "izoh": "B = μ0·I/(2R) = 4π·10⁻⁷·3/0,1 ≈ 37,7 μT.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#99dc4bbc"
+    },
+    {
+      "q": "G'altak markazidagi induksiya g'altak aylanasi radiusiga qanday bog'liq?",
+      "v": [
+        "Teskari proporsional",
+        "To'g'ri proporsional",
+        "Kvadratiga to'g'ri proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "B = μ0·n·I/(2R) — radiusga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#b6b1ca95"
+    },
+    {
+      "q": "Aylanma tok markazidagi induksiya aylana uzunligining bo'lakchalaridan hosil bo'lgan induksiyalarning qanday yig'indisiga teng?",
+      "v": [
+        "Vektor yig'indisiga",
+        "Arifmetik o'rtachasiga",
+        "Ayirmasiga",
+        "Kvadratik yig'indisiga"
+      ],
+      "t": 0,
+      "izoh": "Aylana markazidagi induksiya aylana uzunligi Δl bo'lakchalarining markazda hosil qilgan induksiyalarining vektor yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#ea9a227e"
+    },
+    {
+      "q": "To'g'ri tokning magnit maydonini kuzatish tajribasida karton qanday joylashtiriladi?",
+      "v": [
+        "O'rtasidan teshib to'g'ri o'tkazgich o'tkaziladi",
+        "O'tkazgich yoniga qo'yiladi",
+        "O'tkazgich ostiga yotqiziladi",
+        "O'tkazgichga parallel osiladi"
+      ],
+      "t": 0,
+      "izoh": "Qalin karton o'rtasidan teshib to'g'ri o'tkazgich o'tkazilib, ustiga temir kukunlari sepiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni#0891d07d"
+    }
+  ]
+}

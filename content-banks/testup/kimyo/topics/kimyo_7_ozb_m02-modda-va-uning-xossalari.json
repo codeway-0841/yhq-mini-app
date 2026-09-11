@@ -1,0 +1,456 @@
+{
+  "nom": "02-mavzu. Modda va uning xossalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Quyidagilardan qaysi biri jism hisoblanadi?",
+      "v": [
+        "Qoshiq",
+        "Aluminiy",
+        "Kislorod",
+        "Shakar"
+      ],
+      "t": 0,
+      "izoh": "Jismlar moddalardan tashkil topgan: qoshiq, kitob, avtomobil — jism; aluminiy, shakar — modda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#5e59f4b0"
+    },
+    {
+      "q": "Jismlar nimadan tashkil topgan?",
+      "v": [
+        "Moddalardan",
+        "Zarrachalardan",
+        "Element belgilardan",
+        "Eritmalardan"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#d4ff539e"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri modda hisoblanadi?",
+      "v": [
+        "Kumush",
+        "Kitob",
+        "Stakan",
+        "Avtomobil"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#d05d6bef"
+    },
+    {
+      "q": "Moddalarning mavjudligi nimaga bog'liq emas?",
+      "v": [
+        "Insonga",
+        "Haroratga",
+        "Agregat holatga",
+        "Bosimga"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#6ed1fc5e"
+    },
+    {
+      "q": "Shakar, osh tuzi va bo'r moddalarini bir-biridan farqlash uchun qaysi xossadan foydalanish mumkin?",
+      "v": [
+        "Suvda erishidan",
+        "Rangidan",
+        "Hididan",
+        "Qaynash haroratidan"
+      ],
+      "t": 0,
+      "izoh": "Uchala modda oq rangli, lekin bo'r suvda erimaydi, shakar va osh tuzi esa eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#5dac3a8b"
+    },
+    {
+      "q": "Shakar va osh tuzini bir-biridan qaysi xossa bilan farqlash mumkin?",
+      "v": [
+        "Ta'mi bilan",
+        "Suvda erishi bilan",
+        "Rangi bilan",
+        "Agregat holati bilan"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#68351bfa"
+    },
+    {
+      "q": "Suv, spirt va sulfat kislotasini qaysi xossa yordamida farqlash mumkin?",
+      "v": [
+        "Hidi bilan",
+        "Rangi bilan",
+        "Qattiqligi bilan",
+        "Ta'mi bilan"
+      ],
+      "t": 0,
+      "izoh": "Spirt o'tkir hidga ega, suv va sulfat kislota hidga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#1eee63fc"
+    },
+    {
+      "q": "Suv va sulfat kislotasi bir-biridan qaysi xossa bilan farq qiladi?",
+      "v": [
+        "Zichligi",
+        "Rangi",
+        "Hidi",
+        "Agregat holati"
+      ],
+      "t": 0,
+      "izoh": "Suvning zichligi 1000 kg/m3, sulfat kislotaniki 1840 kg/m3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#543fe1c9"
+    },
+    {
+      "q": "Suvning zichligi qanchaga teng?",
+      "v": [
+        "1000 kg/m3 (1 g/ml)",
+        "790 kg/m3 (0,79 g/ml)",
+        "1840 kg/m3 (1,84 g/ml)",
+        "13600 kg/m3 (13,6 g/ml)"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#06359bc8"
+    },
+    {
+      "q": "Sulfat kislotasining zichligi qanchaga teng?",
+      "v": [
+        "1840 kg/m3",
+        "1000 kg/m3",
+        "780 kg/m3",
+        "890 kg/m3"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#16ffcac7"
+    },
+    {
+      "q": "Suvning qaynash harorati qancha?",
+      "v": [
+        "100°C",
+        "78,3°C",
+        "338°C",
+        "0°C"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#704116ef"
+    },
+    {
+      "q": "Etil spirtining qaynash harorati qancha?",
+      "v": [
+        "78,3°C",
+        "100°C",
+        "338°C",
+        "65°C"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#ddc80b0f"
+    },
+    {
+      "q": "Sulfat kislotasining qaynash harorati qancha?",
+      "v": [
+        "338°C",
+        "100°C",
+        "78,3°C",
+        "256°C"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#53ff7500"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri moddaning xossasiga kirmaydi?",
+      "v": [
+        "Narxi",
+        "Hid",
+        "Zichlik",
+        "Rang"
+      ],
+      "t": 0,
+      "izoh": "Rang, hid, zichlik, ta'm, qattiq, suyuq, gaz holati — moddalarning xossalari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#0747ade1"
+    },
+    {
+      "q": "Oltingugurt moddasini shakar, osh tuzi va bo'rdan farqlash qaysi xossa orqali amalga oshiriladi?",
+      "v": [
+        "Rangi orqali — u sariq rangli",
+        "Ta'mi orqali — u shirin",
+        "Suvda erishi orqali — u eriydi",
+        "Hidi orqali — u o'tkir hidli"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#aaeba3f5"
+    },
+    {
+      "q": "«Tovarlarni kimyoviy tarkibi asosida sinflash va sertifikatlash» nomli yangi ixtisoslik kimlar tomonidan va qachon asoslab berilgan?",
+      "v": [
+        "I.R.Asqarov va T.T.Risqiyev, 1997-yilda",
+        "O.S.Sodiqov va S.Y.Yunusov, 1969-yilda",
+        "H.U.Usmonov, 1951-yilda",
+        "A.A.Abduvahobov, 1985-yilda"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#195c5be8"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri jismga misol bo'la olmaydi?",
+      "v": [
+        "Shisha",
+        "Uy",
+        "Kitob",
+        "Kimyoviy stakan"
+      ],
+      "t": 0,
+      "izoh": "Shisha — modda; uy, kitob, stakan — jismlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#1dd326ce"
+    },
+    {
+      "q": "Kimyoviy stakan, kolba va probirka qanday moddadan tashkil topgan?",
+      "v": [
+        "Shishadan",
+        "Aluminiydan",
+        "Kumushdan",
+        "Temirdan"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#d510f614"
+    },
+    {
+      "q": "Shakar, bo'r va osh tuzi moddalarining umumiy xossasi nima?",
+      "v": [
+        "Barchasi oq rangli qattiq moddalar",
+        "Barchasi suyuq moddalar",
+        "Barchasi o'tkir hidga ega",
+        "Barchasi sariq rangli"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#b5390c60"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri suyuq moddalar qatoriga kiradi?",
+      "v": [
+        "Suv, spirt, sulfat kislota",
+        "Shakar, bo'r, osh tuzi",
+        "Temir, aluminiy, kumush",
+        "Kislorod, azot, vodorod"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#c320b79e"
+    },
+    {
+      "q": "Spirtni suv va sulfat kislotasidan qanday farqlash mumkin?",
+      "v": [
+        "O'tkir hidi bilan",
+        "Rangi bilan",
+        "Qattiqligi bilan",
+        "Agregat holati bilan"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#e6349d71"
+    },
+    {
+      "q": "Nima uchun moddalar jismga bog'liq bo'lmagan ravishda mavjud deyiladi?",
+      "v": [
+        "Ularning mavjudligi insonga bog'liq emas",
+        "Ular faqat laboratoriyada mavjud",
+        "Ular faqat idishda saqlanadi",
+        "Ular faqat issiq holatda mavjud"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#9d67fd6d"
+    },
+    {
+      "q": "Biz havodagi suv va kislorodni ko'rmasak-da, ular mavjud. Bu nimani isbotlaydi?",
+      "v": [
+        "Moddalarning mavjudligi bizning sezgi organlarimizga bevosita ta'siriga bog'liq emasligini",
+        "Suv va kislorod aslida modda emasligini",
+        "Havo hech qanday moddadan iborat emasligini",
+        "Moddalar faqat qattiq holatda mavjudligini"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#11ecc04b"
+    },
+    {
+      "q": "Moddalarning xossalarini sezishda inson nimadan foydalanadi?",
+      "v": [
+        "Sezgi organlaridan — rangni ko'radi, ta'm va hidni sezadi",
+        "Faqat o'lchov asboblaridan",
+        "Faqat mikroskopdan",
+        "Faqat termometrdan"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#cae9d66e"
+    },
+    {
+      "q": "Suvning zichligini g/ml birligida yozing.",
+      "v": [
+        "1 g/ml",
+        "1,84 g/ml",
+        "0,79 g/ml",
+        "13,6 g/ml"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#605dd540"
+    },
+    {
+      "q": "Sulfat kislotasining zichligini g/ml birligida yozing.",
+      "v": [
+        "1,84 g/ml",
+        "1 g/ml",
+        "0,5 g/ml",
+        "2,5 g/ml"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#3274bfc1"
+    },
+    {
+      "q": "Quyidagi moddalarning qaysi birining qaynash harorati eng yuqori?",
+      "v": [
+        "Sulfat kislota",
+        "Suv",
+        "Etil spirt",
+        "Uchchasi bir xil"
+      ],
+      "t": 0,
+      "izoh": "tq: suv 100°C, etil spirt 78,3°C, sulfat kislota 338°C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#718f14bb"
+    },
+    {
+      "q": "Quyidagi moddalarning qaysi birining qaynash harorati eng past?",
+      "v": [
+        "Etil spirt",
+        "Suv",
+        "Sulfat kislota",
+        "Uchchasi bir xil"
+      ],
+      "t": 0,
+      "izoh": "tq: etil spirt 78,3°C, suv 100°C, sulfat kislota 338°C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#f097f717"
+    },
+    {
+      "q": "1-rasmda tasvirlangan moddalar qaysilar?",
+      "v": [
+        "Yod, brom va xlor",
+        "Suv, spirt va kislota",
+        "Temir, mis va kumush",
+        "Shakar, tuz va bo'r"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#cc0ffef9"
+    },
+    {
+      "q": "«Tovarlarni kimyoviy tarkibi asosida sinflash va sertifikatlash» ixtisosligi qaysi fanlar tizimiga kiradi?",
+      "v": [
+        "Kimyo fanlari tizimiga",
+        "Fizika fanlari tizimiga",
+        "Biologiya fanlari tizimiga",
+        "Geografiya fanlari tizimiga"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m02-modda-va-uning-xossalari#3b332739"
+    }
+  ]
+}

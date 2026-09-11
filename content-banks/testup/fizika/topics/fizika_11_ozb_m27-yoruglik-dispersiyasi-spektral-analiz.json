@@ -1,0 +1,531 @@
+{
+  "nom": "27-mavzu. Yoruglik Dispersiyasi Spektral Analiz",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Nyuton oq yorug‘likni spektrga ajratuvchi tajribasini qaysi yilda o‘tkazgan?",
+      "v": [
+        "1666-yilda",
+        "1801-yilda",
+        "1873-yilda",
+        "1895-yilda"
+      ],
+      "t": 0,
+      "izoh": "1666-yilda Nyuton uchburchak shisha prizma yordamida spektrni kuzatgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#90c6ee66"
+    },
+    {
+      "q": "Yorug‘lik prizma orqali o‘tganda paydo bo‘lgan har xil ranglar to‘plami Nyuton tomonidan nima deb atalgan?",
+      "v": [
+        "Spektr",
+        "Difraksiya",
+        "Interferensiya",
+        "Dispersiya"
+      ],
+      "t": 0,
+      "izoh": "Spektr lotincha spektrum — ko‘rish degan ma’noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#dfce4e86"
+    },
+    {
+      "q": "Prizmada qaysi rang eng kam sinadi?",
+      "v": [
+        "Qizil",
+        "Binafsha",
+        "Yashil",
+        "Zangori"
+      ],
+      "t": 0,
+      "izoh": "Qizil rang boshqalariga nisbatan kam, binafsha esa eng kuchli sinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#6c56ae8e"
+    },
+    {
+      "q": "Prizmada qaysi rang eng kuchli sinadi?",
+      "v": [
+        "Binafsha",
+        "Qizil",
+        "Sariq",
+        "Yashil"
+      ],
+      "t": 0,
+      "izoh": "Binafsha rang hammasidan kuchli sinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#0ffcd5e9"
+    },
+    {
+      "q": "Oq rang asosiy nechta rangdan tashkil topgan?",
+      "v": [
+        "Yettita",
+        "Beshta",
+        "Uchta",
+        "O‘n ikkita"
+      ],
+      "t": 0,
+      "izoh": "Qizil, zarg‘aldoq, sariq, yashil, zangori, ko‘k va binafsha — yettita rang.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#95b9a59c"
+    },
+    {
+      "q": "Yettita asosiy rangga bo‘yalgan doira tez aylantirilsa, qanday rangda ko‘rinadi?",
+      "v": [
+        "Oq rangda",
+        "Qora rangda",
+        "Qizil rangda",
+        "Binafsha rangda"
+      ],
+      "t": 0,
+      "izoh": "Aylanishning ma’lum tezligida rangli doira oq bo‘lib ko‘rinadi — bu oq rangning murakkabligini isbotlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#4a37e104"
+    },
+    {
+      "q": "Birinchi prizmadan o‘tib ranglarga ajralgan yorug‘lik yo‘liga 180° ga burilgan ikkinchi prizma qo‘yilsa, nima kuzatiladi?",
+      "v": [
+        "Nurlar yana yig‘ilib oq rang hosil qiladi",
+        "Ranglar yanada keng tarqaladi",
+        "Yorug‘lik to‘liq so‘nadi",
+        "Faqat binafsha rang qoladi"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi prizma yig‘uvchi linza vazifasini bajarib, dasta to‘plangan nuqtasida oq rang hosil bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#d53cf29f"
+    },
+    {
+      "q": "Yorug‘lik dispersiyasi so‘zi lotincha qaysi so‘zdan olingan va nima degan ma’noni bildiradi?",
+      "v": [
+        "Disperge — sochib tashlash",
+        "Spektrum — ko‘rish",
+        "Lyuks — yorug‘lik",
+        "Radius — nur"
+      ],
+      "t": 0,
+      "izoh": "Dispersiya lotincha disperge — sochib tashlash degan so‘zdan olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#f4e00ae4"
+    },
+    {
+      "q": "Quyosh nurlari ostida jismlarning turli rangda ko‘rinishiga nima sabab bo‘ladi?",
+      "v": [
+        "Jismlar ayrim ranglarni yutib, ayrimlarini qaytarishi",
+        "Jismlarning harorati",
+        "Yorug‘likning tezligi",
+        "Havoning harakati"
+      ],
+      "t": 0,
+      "izoh": "Absolyut qora jism barcha nurlarni yutadi, oq jism esa qaytaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#719984e5"
+    },
+    {
+      "q": "Yorug‘likning rangi nimaga bog‘liq?",
+      "v": [
+        "Chastotasiga",
+        "Amplitudasiga",
+        "Manbaning quvvatiga",
+        "Tarqalish yo‘nalishiga"
+      ],
+      "t": 0,
+      "izoh": "To‘lqin nazariyasiga ko‘ra yorug‘likning rangi chastotasiga bog‘liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#d95c3ee5"
+    },
+    {
+      "q": "Ko‘rinadigan nurlar ichida eng katta to‘lqin uzunligi qaysi ranggа tegishli va qanchaga teng?",
+      "v": [
+        "Qizil nurga, λ = 7,6·10⁻⁷ m",
+        "Binafsha nurga, λ = 3,8·10⁻⁷ m",
+        "Yashil nurga, λ = 5·10⁻⁷ m",
+        "Sariq nurga, λ = 6·10⁻⁷ m"
+      ],
+      "t": 0,
+      "izoh": "Qizil nur to‘lqin uzunligi eng katta — 7,6·10⁻⁷ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#bdad3230"
+    },
+    {
+      "q": "Ko‘rinadigan nurlar ichida eng kichik to‘lqin uzunligi qaysi ranggа tegishli?",
+      "v": [
+        "Binafsha nurga (3,8·10⁻⁷ m)",
+        "Qizil nurga",
+        "Zarg‘aldoq nurga",
+        "Ko‘k nurga"
+      ],
+      "t": 0,
+      "izoh": "Eng kichik to‘lqin uzunligi binafsha nurga tegishli — 3,8·10⁻⁷ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#8746d433"
+    },
+    {
+      "q": "Yorug‘likning elektromagnit to‘lqinlar ekanligini nazariy jihatdan kim isbotlagan?",
+      "v": [
+        "J. Maksvell (1873-yil)",
+        "H. Hertz",
+        "T. Yung",
+        "I. Nyuton"
+      ],
+      "t": 0,
+      "izoh": "1873-yilda Maksvell nazariy isbotlagan, Hertz tajribada tasdiqlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#56dd2d34"
+    },
+    {
+      "q": "Yorug‘lik bir muhitdan ikkinchi muhitga o‘tganda qaysi kattaligi o‘zgarmaydi?",
+      "v": [
+        "Chastotasi",
+        "To‘lqin uzunligi",
+        "Tarqalish tezligi",
+        "Sinish burchagi"
+      ],
+      "t": 0,
+      "izoh": "Muhit o‘zgarganda to‘lqin uzunligi o‘zgaradi, lekin chastota o‘zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#40b059d2"
+    },
+    {
+      "q": "Dispersiyaga berilgan ikkinchi ta’rif qanday?",
+      "v": [
+        "Nur sindirish ko‘rsatkichining yorug‘lik to‘lqin uzunligiga bog‘liqligi",
+        "Yorug‘likning to‘siqni aylanib o‘tishi",
+        "Nurlarning bir-birini kuchaytirishi",
+        "Yorug‘likning qutblanishi"
+      ],
+      "t": 0,
+      "izoh": "Dispersiya — nur sindirish ko‘rsatkichining to‘lqin uzunligiga bog‘liqligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#9d649764"
+    },
+    {
+      "q": "Qizil va binafsha nurlarning bir xil muhitdagi tezliklari qanday taqqoslanadi?",
+      "v": [
+        "Qizil nurning tezligi binafsha nurnikidan katta",
+        "Binafsha nurning tezligi katta",
+        "Tezliklari har doim teng",
+        "Muhitga qarab almashinib turadi"
+      ],
+      "t": 0,
+      "izoh": "Har qanday muhitda qizil nur tezligi binafsha nurnikidan katta (masalan, suvda 228 000 km/s ga nisbatan 227 000 km/s).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#cf4e4697"
+    },
+    {
+      "q": "Nima sababdan vakuumda yorug‘lik dispersiyasi kuzatilmaydi?",
+      "v": [
+        "Vakuumda barcha yorug‘lik to‘lqinlari bir xil tezlik bilan tarqaladi",
+        "Vakuumda yorug‘lik tarqalmaydi",
+        "Vakuumda nurlar yutiladi",
+        "Vakuumda to‘lqin uzunligi nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Vakuumda hamma to‘lqinlar c = 3·10⁸ m/s tezlikda tarqaladi, shuning uchun dispersiya bo‘lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#8bcf694b"
+    },
+    {
+      "q": "Tomas Yung birlamchi nurlar deb qaysi ranglarni atagan?",
+      "v": [
+        "Qizil, yashil va zangori",
+        "Qizil, sariq va ko‘k",
+        "Oq, qora va kulrang",
+        "Sariq, yashil va binafsha"
+      ],
+      "t": 0,
+      "izoh": "1807-yilda Yung qizil, yashil va zangori ranglarni kombinatsiyalab oq rangni olish mumkinligini isbotlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#8ad32699"
+    },
+    {
+      "q": "Ekranga qizil, yashil va zangori yorug‘lik birga tushirilsa, qanday rang hosil bo‘ladi?",
+      "v": [
+        "Oq rang",
+        "Qora rang",
+        "Sariq rang",
+        "Qoramtir rang"
+      ],
+      "t": 0,
+      "izoh": "Barcha uchta birlamchi rang qo‘shilgan joyda oq rang hosil bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#4454c43b"
+    },
+    {
+      "q": "Televizor va kompyuter ekranlarida rangli tasvir qanday hosil qilinadi?",
+      "v": [
+        "Qizil, yashil va zangori ranglarning qo‘shilishidan",
+        "Prizma yordamida spektr ajratishdan",
+        "Difraksion panjara orqali",
+        "Qutblangan yorug‘likdan"
+      ],
+      "t": 0,
+      "izoh": "Rangli tasvir uchta birlamchi rangning qo‘shilishidan hosil qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#c5ad9aaf"
+    },
+    {
+      "q": "Monoxromatik yorug‘lik deb qanday yorug‘likka aytiladi?",
+      "v": [
+        "Aynan bitta chastotaga ega bo‘lgan nurga",
+        "Yettita rangdan iborat nurga",
+        "Juda yorqin nurga",
+        "Qutblangan nurga"
+      ],
+      "t": 0,
+      "izoh": "Monoxromatik — bitta chastotali nur; lazer bunday nur chiqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#f5697134"
+    },
+    {
+      "q": "Tutash spektr qanday manbalar tomonidan chiqariladi?",
+      "v": [
+        "Qattiq yoki suyuq holatdagi qizdirilgan moddalar va kuchli siqilgan gazlar",
+        "Bir-biri bilan bog‘lanmagan atomlar",
+        "Faqat lazerlar",
+        "Nurlanmayotgan sovuq gazlar"
+      ],
+      "t": 0,
+      "izoh": "Quyosh spektri, cho‘g‘lanish tolali lampochka — tutash spektrga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#369bfc72"
+    },
+    {
+      "q": "Polosali spektrni qanday moddalar chiqaradi?",
+      "v": [
+        "Bir-biri bilan bog‘lanmagan yoki kuchsiz bog‘langan molekulalar",
+        "Qizdirilgan qattiq jismlar",
+        "Yakka atomlar",
+        "Absolyut qora jismlar"
+      ],
+      "t": 0,
+      "izoh": "Polosali spektrda polosalar qorong‘i yo‘lkalar bilan ajralgan bo‘ladi; uni molekulalar chiqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#4159171e"
+    },
+    {
+      "q": "Chiziqli spektrni kimlar chiqaradi?",
+      "v": [
+        "Bir-biri bilan bog‘lanmagan atomlar",
+        "Molekulalar",
+        "Qattiq jismlar",
+        "Suyuqliklar"
+      ],
+      "t": 0,
+      "izoh": "Bir-biridan ajralgan atomlar bitta to‘lqin uzunligidagi nurni chiqaradi — chiziqli spektr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#e30c5641"
+    },
+    {
+      "q": "Yutilish spektri qanday hosil bo‘ladi?",
+      "v": [
+        "Oq nur nurlanmayotgan gaz orqali o‘tkazilganda, uzluksiz spektr fonida qora chiziqlar paydo bo‘ladi",
+        "Qizdirilgan gaz nur chiqarganda",
+        "Oq nur prizmadan o‘tkazilganda",
+        "Yorug‘lik qutblanganda"
+      ],
+      "t": 0,
+      "izoh": "Gaz ma’lum chastotali nurlarni yutib qoladi va spektrda qora chiziqlar hosil bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#1ee15786"
+    },
+    {
+      "q": "Gaz qanday chastotali nurlarni yutadi?",
+      "v": [
+        "Qizganda o‘zi chiqaradigan chastotali nurlarni",
+        "Faqat qizil nurlarni",
+        "Faqat binafsha nurlarni",
+        "Barcha chastotali nurlarni bir xil"
+      ],
+      "t": 0,
+      "izoh": "Gaz qizigan paytida qanday chastotali nurlarni chiqarsa, shunday chastotalilarni yutadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#3ea12bde"
+    },
+    {
+      "q": "Spektral analiz deb nimaga aytiladi?",
+      "v": [
+        "Moddaning kimyoviy tarkibini uning o‘ziga xos spektri bo‘yicha aniqlash usuliga",
+        "Yorug‘lik to‘lqin uzunligini o‘lchash usuliga",
+        "Ranglarni ajratish usuliga",
+        "Nur sindirish ko‘rsatkichini topish usuliga"
+      ],
+      "t": 0,
+      "izoh": "Istalgan kimyoviy element o‘ziga xos spektrga ega; shu asosda tarkib aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#53960bab"
+    },
+    {
+      "q": "Spektral analiz usulining sezgirligi qanday darajada?",
+      "v": [
+        "10⁻¹⁰ g dan ortmaydigan modda massasi yetarli",
+        "Kamida 1 kg modda kerak",
+        "Faqat suyuqliklarda ishlaydi",
+        "Faqat gazlarda ishlaydi"
+      ],
+      "t": 0,
+      "izoh": "Spektral analiz juda sezgir bo‘lib, 10⁻¹⁰ g dan ortmaydigan massa yetarli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#a89004a3"
+    },
+    {
+      "q": "Spektral analizning asosiy cheklovi nimada?",
+      "v": [
+        "Element miqdorini aniqlash qiyin, u asosan sifat xarakteriga ega",
+        "Faqat qattiq jismlarni tahlil qila oladi",
+        "Juda qimmat uskuna talab etiladi",
+        "Katta massadagi namuna talab qilinadi"
+      ],
+      "t": 0,
+      "izoh": "Modda temperaturasi past bo‘lganda ko‘pgina spektral chiziqlar namoyon bo‘lmaydi, shuning uchun miqdoriy aniqlash qiyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#9148d9ce"
+    },
+    {
+      "q": "Spektral analiz usuli bilan ochilgan elementlarga misol qaysi?",
+      "v": [
+        "Rubidiy va seziy",
+        "Kislorod va vodorod",
+        "Temir va mis",
+        "Oltin va kumush"
+      ],
+      "t": 0,
+      "izoh": "Spektral analiz bilan rubidiy, seziy va boshqa elementlar ochilgan; seziy — “samoviy-havorang” degan ma’noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#396caf69"
+    },
+    {
+      "q": "Geliy elementi dastlab qayerda kashf etilgan?",
+      "v": [
+        "Quyoshda, keyinchalik Yer atmosferasida",
+        "Yer atmosferasida",
+        "Oy tuprog‘ida",
+        "Laboratoriyada sun’iy ravishda"
+      ],
+      "t": 0,
+      "izoh": "Geliy dastlab Quyoshda topilgan; nomi “quyoshli” degan ma’noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#6f5f44c2"
+    },
+    {
+      "q": "Quyosh va yulduzlarning kimyoviy tarkibi qaysi usul bilan aniqlangan?",
+      "v": [
+        "Spektral analiz yordamida",
+        "Kimyoviy reaksiyalar yordamida",
+        "To‘g‘ridan-to‘g‘ri namuna olib",
+        "Difraksion o‘lchashlar bilan"
+      ],
+      "t": 0,
+      "izoh": "Boshqa usullar bilan aniqlab bo‘lmaydigan bu tarkib faqat spektral analiz bilan topilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#fc5e075c"
+    },
+    {
+      "q": "Deraza oynasi orqali o‘tgan Quyosh nuri nima sababdan spektrga ajralmaydi?",
+      "v": [
+        "Oynaning parallel yuzalaridan chiqqan nurlar parallel qoladi va ranglar bir-biri bilan qoplanadi",
+        "Oyina yorug‘likni to‘liq o‘tkazmaydi",
+        "Oyina juda yupqa bo‘lgani uchun",
+        "Oyina faqat oq nurni o‘tkazadi"
+      ],
+      "t": 0,
+      "izoh": "Parallel yuzali oynada har bir rang bir xil siljiydi va natijada yana oq nur hosil bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#36f49c99"
+    },
+    {
+      "q": "Nur sindirish ko‘rsatkichi n, yorug‘likning vakuumdagi c va muhitdagi v tezliklari bilan qanday bog‘langan?",
+      "v": [
+        "n = c/v",
+        "n = v/c",
+        "n = c·v",
+        "n = c + v"
+      ],
+      "t": 0,
+      "izoh": "Muhitning nur sindirish ko‘rsatkichi n = c/v.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#83a3cda4"
+    },
+    {
+      "q": "Prizmadan o‘tgan nurlarning turli burchakka og‘ishining sababi nimada?",
+      "v": [
+        "Muhitning nur sindirish ko‘rsatkichi turli nurlar (to‘lqin uzunliklari) uchun turlicha",
+        "Nurlarning massasi turlicha",
+        "Prizma sirtining notekisligi",
+        "Yorug‘likning qutblanishi"
+      ],
+      "t": 0,
+      "izoh": "Sindirish ko‘rsatkichining to‘lqin uzunligiga bog‘liqligi — dispersiya — turli burchaklarda og‘ishga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz#bddaff08"
+    }
+  ]
+}

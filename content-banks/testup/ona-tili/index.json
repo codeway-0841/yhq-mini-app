@@ -1,0 +1,1965 @@
+{
+  "fan": "ona-tili",
+  "nom": "Ona tili",
+  "emoji": "📖",
+  "tur": "daraja",
+  "birlikNomi": "Bo'lim",
+  "quyiIzoh": "FONETIKADAN MATNGACHA · MILLIY SERTIFIKAT DASTURIGA MOS",
+  "jamiSavol": 16400,
+  "jamiMavzu": 164,
+  "qiy": {
+    "oson": 6128,
+    "orta": 6532,
+    "qiyin": 3740
+  },
+  "sinflar": [
+    {
+      "sinf": "fon",
+      "badge": "FONETIKA",
+      "daraja": "Tovush, harf, bo'g'in",
+      "mavzu": 12,
+      "savol": 1200,
+      "kitoblar": [
+        {
+          "nom": "Fonetika va grafika",
+          "mavzu": 12,
+          "savol": 1200,
+          "mavzular": [
+            {
+              "id": "onatili_fon_m01-yozuvlar-tarixi",
+              "nom": "Yozuvlar tarixi va o'zbek yozuvining bosqichlari",
+              "bolim": "Yozuv va alifbo",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 38,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_fon_m02-ozbek-alifbosi",
+              "nom": "Lotin yozuviga asoslangan o'zbek alifbosi",
+              "bolim": "Yozuv va alifbo",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 38,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_fon_m03-tovush-va-harf",
+              "nom": "Nutq tovushi va harf. Fonetik yozuv",
+              "bolim": "Yozuv va alifbo",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 38,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_fon_m04-unli-tovushlar",
+              "nom": "Unli tovushlar va ularning tasnifi",
+              "bolim": "Tovushlar tizimi",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 38,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_fon_m05-undosh-tovushlar",
+              "nom": "Undosh tovushlar va ularning tasnifi",
+              "bolim": "Tovushlar tizimi",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 38,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_fon_m06-jarangli-jarangsiz",
+              "nom": "Jarangli va jarangsiz undoshlar",
+              "bolim": "Tovushlar tizimi",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 38,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_fon_m07-mano-farqlash",
+              "nom": "Nutq tovushlarining ma'no farqlash vazifasi",
+              "bolim": "Tovushlar tizimi",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 38,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_fon_m08-tovush-ortishi",
+              "nom": "So'zlarda tovush ortishi",
+              "bolim": "Fonetik hodisalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 38,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_fon_m09-tovush-tushishi",
+              "nom": "So'zlarda tovush tushishi",
+              "bolim": "Fonetik hodisalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 38,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_fon_m10-tovush-almashishi",
+              "nom": "So'zlarda tovush almashishi",
+              "bolim": "Fonetik hodisalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 38,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_fon_m11-bogin",
+              "nom": "Bo'g'in va uning turlari",
+              "bolim": "Bo'g'in va urg'u",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 38,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_fon_m12-urgu",
+              "nom": "Urg'u va uning ahamiyati",
+              "bolim": "Bo'g'in va urg'u",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 38,
+                "qiyin": 30
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "orf",
+      "badge": "TALAFFUZ",
+      "daraja": "Orfoepiya me'yorlari",
+      "mavzu": 10,
+      "savol": 1000,
+      "kitoblar": [
+        {
+          "nom": "Orfoepiya — talaffuz me'yorlari",
+          "mavzu": 10,
+          "savol": 1000,
+          "mavzular": [
+            {
+              "id": "onatili_orf_m01-orfoepiya-tushunchasi",
+              "nom": "Orfoepiya va adabiy talaffuz me'yori",
+              "bolim": "Talaffuz me'yori",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_orf_m02-adabiy-sheva-talaffuz",
+              "nom": "Adabiy talaffuz va shevaga xos talaffuz",
+              "bolim": "Talaffuz me'yori",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_orf_m03-orfoepik-lugat",
+              "nom": "Orfoepik lug'atdan foydalanish",
+              "bolim": "Talaffuz me'yori",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_orf_m04-unlilar-talaffuzi",
+              "nom": "Unlilar talaffuzi. Nutqda o'zgaruvchi unlilar",
+              "bolim": "Unlilar talaffuzi",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_orf_m05-ozlashma-unlilar-talaffuzi",
+              "nom": "O'zlashma so'zlarda unlilar talaffuzi",
+              "bolim": "Unlilar talaffuzi",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_orf_m06-undoshlar-talaffuzi",
+              "nom": "Undoshlar talaffuzi. Nutqda o'zgaruvchi undoshlar",
+              "bolim": "Undoshlar talaffuzi",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_orf_m07-qosh-undoshlar-talaffuzi",
+              "nom": "Qo'sh undoshlar talaffuzi",
+              "bolim": "Undoshlar talaffuzi",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_orf_m08-qator-undoshlar-talaffuzi",
+              "nom": "Qator undoshlarning talaffuzi",
+              "bolim": "Undoshlar talaffuzi",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 28,
+                "qiyin": 42
+              }
+            },
+            {
+              "id": "onatili_orf_m09-talaffuz-imlo-farqi",
+              "nom": "Talaffuz va imlo nomuvofiqligi",
+              "bolim": "Talaffuz va yozuv nomuvofiqligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_orf_m10-orfoepik-xatolar",
+              "nom": "Orfoepik xatolar va ularni tuzatish",
+              "bolim": "Talaffuz va yozuv nomuvofiqligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "iml",
+      "badge": "IMLO",
+      "daraja": "Orfografiya qoidalari",
+      "mavzu": 22,
+      "savol": 2200,
+      "kitoblar": [
+        {
+          "nom": "Imlo (orfografiya) qoidalari",
+          "mavzu": 22,
+          "savol": 2200,
+          "mavzular": [
+            {
+              "id": "onatili_iml_m01-imlo-tamoyillari",
+              "nom": "O'zbek imlosining asosiy tamoyillari",
+              "bolim": "Imlo asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m02-imlo-lugati",
+              "nom": "Imlo lug'atidan foydalanish",
+              "bolim": "Imlo asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m03-unlilar-imlosi",
+              "nom": "Ayrim unlilar imlosi",
+              "bolim": "Harflar imlosi",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m04-ozgaruvchi-unlilar",
+              "nom": "Nutqda o'zgaruvchi unlilar imlosi",
+              "bolim": "Harflar imlosi",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m05-undoshlar-imlosi",
+              "nom": "Ayrim undoshlar imlosi",
+              "bolim": "Harflar imlosi",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m06-qosh-undoshlar-imlosi",
+              "nom": "Qo'sh undoshlar imlosi",
+              "bolim": "Harflar imlosi",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m07-qator-undoshlar-imlosi",
+              "nom": "Qator undoshlar imlosi",
+              "bolim": "Harflar imlosi",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m08-ozgaruvchi-undoshlar",
+              "nom": "Nutqda o'zgaruvchi undoshlar imlosi",
+              "bolim": "Harflar imlosi",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m09-asos-qoshimcha-imlosi",
+              "nom": "Asos va qo'shimchalar imlosi",
+              "bolim": "Asos va qo'shimchalar imlosi",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m10-ot-sifat-qoshimchalari",
+              "nom": "Ot va sifat qo'shimchalari imlosi",
+              "bolim": "Asos va qo'shimchalar imlosi",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m11-fel-qoshimchalari",
+              "nom": "Fe'l qo'shimchalari imlosi",
+              "bolim": "Asos va qo'shimchalar imlosi",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m12-son-ravish-olmosh-imlosi",
+              "nom": "Son, ravish va olmosh imlosi",
+              "bolim": "Asos va qo'shimchalar imlosi",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m13-qoshib-yozish",
+              "nom": "Qo'shib yozish imlosi",
+              "bolim": "Qo'shib, ajratib va chiziqcha bilan yozish",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m14-ajratib-yozish",
+              "nom": "Ajratib yozish imlosi",
+              "bolim": "Qo'shib, ajratib va chiziqcha bilan yozish",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m15-chiziqcha-bilan-yozish",
+              "nom": "Chiziqcha bilan yozish imlosi",
+              "bolim": "Qo'shib, ajratib va chiziqcha bilan yozish",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m16-yordamchilar-imlosi",
+              "nom": "Ko'makchi, bog'lovchi va yuklamalar imlosi",
+              "bolim": "Qo'shib, ajratib va chiziqcha bilan yozish",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m17-juft-takroriy-sozlar",
+              "nom": "Juft va takroriy so'zlar imlosi",
+              "bolim": "Qo'shib, ajratib va chiziqcha bilan yozish",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m18-bosh-harflar",
+              "nom": "Bosh harflar imlosi",
+              "bolim": "Bosh harflar va boshqa qoidalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m19-atoqli-otlar-imlosi",
+              "nom": "Atoqli otlar va nomlar imlosi",
+              "bolim": "Bosh harflar va boshqa qoidalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m20-qisqartmalar-imlosi",
+              "nom": "Qisqartma so'zlar imlosi",
+              "bolim": "Bosh harflar va boshqa qoidalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m21-ozlashma-sozlar-imlosi",
+              "nom": "O'zlashma so'zlar imlosi",
+              "bolim": "Bosh harflar va boshqa qoidalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            },
+            {
+              "id": "onatili_iml_m22-kochirish-qoidalari",
+              "nom": "So'zlarni ko'chirish qoidalari",
+              "bolim": "Bosh harflar va boshqa qoidalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 40,
+                "qiyin": 20
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "lek",
+      "badge": "LEKSIKA",
+      "daraja": "So'z boyligi va iboralar",
+      "mavzu": 24,
+      "savol": 2400,
+      "kitoblar": [
+        {
+          "nom": "Leksikologiya va frazeologiya",
+          "mavzu": 24,
+          "savol": 2400,
+          "mavzular": [
+            {
+              "id": "onatili_lek_m01-lugat-boyligi",
+              "nom": "O'zbek tilining lug'at boyligi",
+              "bolim": "Leksikologiya asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m02-atash-manosi",
+              "nom": "So'zning atash (leksik) ma'nosi",
+              "bolim": "Leksikologiya asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m03-bir-kop-manoli",
+              "nom": "Bir ma'noli va ko'p ma'noli so'zlar",
+              "bolim": "Leksikologiya asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m04-oz-kochma-mano",
+              "nom": "So'zning o'z va ko'chma ma'nolari",
+              "bolim": "Leksikologiya asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m05-sinonimlar",
+              "nom": "Sinonimlar (ma'nodosh so'zlar)",
+              "bolim": "Shakl va ma'no munosabati",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m06-antonimlar",
+              "nom": "Antonimlar (zid ma'noli so'zlar)",
+              "bolim": "Shakl va ma'no munosabati",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m07-omonimlar",
+              "nom": "Omonimlar (shakldosh so'zlar)",
+              "bolim": "Shakl va ma'no munosabati",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m08-paronimlar",
+              "nom": "Paronimlar",
+              "bolim": "Shakl va ma'no munosabati",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m09-uyadosh-sozlar",
+              "nom": "Uyadosh so'zlar",
+              "bolim": "Shakl va ma'no munosabati",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m10-kochimlar",
+              "nom": "Ko'chimlar haqida umumiy ma'lumot",
+              "bolim": "Ko'chimlar va tasvir vositalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m11-metafora",
+              "nom": "Metafora",
+              "bolim": "Ko'chimlar va tasvir vositalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m12-metonimiya-sinekdoxa",
+              "nom": "Metonimiya va sinekdoxa",
+              "bolim": "Ko'chimlar va tasvir vositalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m13-epitet-oxshatish",
+              "nom": "Epitet va o'xshatish",
+              "bolim": "Ko'chimlar va tasvir vositalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m14-mubolaga-kinoya",
+              "nom": "Mubolag'a, kichraytirish va kinoya",
+              "bolim": "Ko'chimlar va tasvir vositalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m15-iboralar",
+              "nom": "Iboralar (frazeologizmlar)",
+              "bolim": "Frazeologiya va turg'un birikmalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m16-ibora-farqi",
+              "nom": "Iboraning qo'shma so'z va so'z birikmasidan farqi",
+              "bolim": "Frazeologiya va turg'un birikmalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m17-maqollar-hikmatlar",
+              "nom": "Maqollar va hikmatli so'zlar",
+              "bolim": "Frazeologiya va turg'un birikmalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m18-tasviriy-ifoda",
+              "nom": "Tasviriy ifoda",
+              "bolim": "Frazeologiya va turg'un birikmalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m19-shevaga-xos-sozlar",
+              "nom": "Shevaga xos so'zlar",
+              "bolim": "Lug'at tarkibi qatlamlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m20-eskirgan-sozlar",
+              "nom": "Eskirgan so'zlar: tarixiy va arxaik so'zlar",
+              "bolim": "Lug'at tarkibi qatlamlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m21-yangi-sozlar",
+              "nom": "Yangi paydo bo'lgan so'zlar",
+              "bolim": "Lug'at tarkibi qatlamlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m22-olinma-sozlar",
+              "nom": "Olinma (o'zlashma) so'zlar",
+              "bolim": "Lug'at tarkibi qatlamlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m23-atamalar",
+              "nom": "Atamalar: ilmiy va kasbiy terminlar",
+              "bolim": "Lug'at tarkibi qatlamlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_lek_m24-lugatshunoslik",
+              "nom": "Lug'atlar va lug'atshunoslik. Ismlar ma'nosi",
+              "bolim": "Lug'at tarkibi qatlamlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "mor",
+      "badge": "MORFOLOGIYA",
+      "daraja": "So'z turkumlari",
+      "mavzu": 38,
+      "savol": 3800,
+      "kitoblar": [
+        {
+          "nom": "Morfologiya",
+          "mavzu": 38,
+          "savol": 3800,
+          "mavzular": [
+            {
+              "id": "onatili_mor_m01-soz-tarkibi",
+              "nom": "So'z tarkibi. Asos va qo'shimchalar",
+              "bolim": "So'z tarkibi va so'z yasalishi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m02-qoshimchalar-tasnifi",
+              "nom": "Qo'shimchalar tasnifi",
+              "bolim": "So'z tarkibi va so'z yasalishi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m03-tub-yasama",
+              "nom": "Tub va yasama so'zlar. Asosdosh so'zlar",
+              "bolim": "So'z tarkibi va so'z yasalishi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m04-soz-yasalishi",
+              "nom": "So'z yasalishi va uning usullari",
+              "bolim": "So'z tarkibi va so'z yasalishi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m05-qoshimchalar-tartibi",
+              "nom": "So'z tarkibida qo'shimchalar tartibi",
+              "bolim": "So'z tarkibi va so'z yasalishi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m06-tuzilishiga-kora-turlari",
+              "nom": "So'zlarning tuzilishiga ko'ra turlari",
+              "bolim": "So'z tarkibi va so'z yasalishi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m07-soz-turkumlari",
+              "nom": "So'z turkumlari va ularning tasnifi",
+              "bolim": "So'z turkumlari haqida umumiy ma'lumot",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m08-turkumlar-guruhi",
+              "nom": "Mustaqil, yordamchi va alohida olingan so'z turkumlari",
+              "bolim": "So'z turkumlari haqida umumiy ma'lumot",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m09-ot-turkumi",
+              "nom": "Ot so'z turkumi va uning ma'no turlari",
+              "bolim": "Ot",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m10-atoqli-turdosh-otlar",
+              "nom": "Atoqli va turdosh otlar",
+              "bolim": "Ot",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m11-aniq-mavhum-otlar",
+              "nom": "Aniq va mavhum otlar",
+              "bolim": "Ot",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m12-ot-son-egalik",
+              "nom": "Otlarning lug'aviy shakllari: son va egalik",
+              "bolim": "Ot",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m13-kelishiklar",
+              "nom": "Kelishik shakllari",
+              "bolim": "Ot",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m14-otlarning-yasalishi",
+              "nom": "Otlarning yasalishi va tuzilishi",
+              "bolim": "Ot",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m15-sifat-turkumi",
+              "nom": "Sifat so'z turkumi va ma'no guruhlari",
+              "bolim": "Sifat",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m16-sifat-darajalari",
+              "nom": "Sifat darajalari",
+              "bolim": "Sifat",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m17-sifatlarning-yasalishi",
+              "nom": "Sifatlarning yasalishi, tuzilishi va otlashishi",
+              "bolim": "Sifat",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m18-son-turkumi",
+              "nom": "Son so'z turkumi va ma'no guruhlari",
+              "bolim": "Son",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m19-hisob-sozlari",
+              "nom": "Hisob so'zlari. Sonlarning otlashishi",
+              "bolim": "Son",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m20-olmosh-turkumi",
+              "nom": "Olmosh so'z turkumi va ma'no turlari",
+              "bolim": "Olmosh",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m21-olmoshlarning-tuzilishi",
+              "nom": "Olmoshlarning tuzilishi va qo'llanishi",
+              "bolim": "Olmosh",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m22-ravish-turkumi",
+              "nom": "Ravish so'z turkumi va ma'no turlari",
+              "bolim": "Ravish",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m23-ravishlarning-yasalishi",
+              "nom": "Ravishlarning yasalishi va tuzilishi",
+              "bolim": "Ravish",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m24-fel-turkumi",
+              "nom": "Fe'l so'z turkumi va ma'noviy guruhlari",
+              "bolim": "Fe'l",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m25-harakat-holat-fellari",
+              "nom": "Harakat va holat fe'llari",
+              "bolim": "Fe'l",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m26-otimli-otimsiz",
+              "nom": "O'timli va o'timsiz fe'llar",
+              "bolim": "Fe'l",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m27-fel-nisbatlari",
+              "nom": "Fe'l nisbatlari",
+              "bolim": "Fe'l",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m28-bolishli-bolishsiz",
+              "nom": "Bo'lishli va bo'lishsiz fe'llar",
+              "bolim": "Fe'l",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m29-fel-zamonlari",
+              "nom": "Fe'lning zamon shakllari",
+              "bolim": "Fe'l",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m30-fel-mayllari",
+              "nom": "Fe'lning mayl shakllari",
+              "bolim": "Fe'l",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m31-shaxs-son-shakllari",
+              "nom": "Fe'lning shaxs-son shakllari",
+              "bolim": "Fe'l",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m32-fel-vazifa-shakllari",
+              "nom": "Fe'lning vazifa shakllari: sifatdosh, ravishdosh, harakat nomi",
+              "bolim": "Fe'l",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m33-komakchi-fellar",
+              "nom": "Ko'makchi fe'llar. Fe'llarning yasalishi va tuzilishi",
+              "bolim": "Fe'l",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m34-komakchilar",
+              "nom": "Ko'makchilar",
+              "bolim": "Yordamchi so'z turkumlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m35-boglovchilar",
+              "nom": "Bog'lovchilar",
+              "bolim": "Yordamchi so'z turkumlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m36-yuklamalar",
+              "nom": "Yuklamalar",
+              "bolim": "Yordamchi so'z turkumlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m37-undov-taqlid",
+              "nom": "Undov va taqlid so'zlar",
+              "bolim": "Alohida olingan so'z turkumlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_mor_m38-modal-sozlar",
+              "nom": "Modal so'zlar",
+              "bolim": "Alohida olingan so'z turkumlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "sin",
+      "badge": "SINTAKSIS",
+      "daraja": "So'z birikmasi va gap",
+      "mavzu": 24,
+      "savol": 2400,
+      "kitoblar": [
+        {
+          "nom": "Sintaksis",
+          "mavzu": 24,
+          "savol": 2400,
+          "mavzular": [
+            {
+              "id": "onatili_sin_m01-sozlarning-boglanishi",
+              "nom": "Gapda so'zlarning bog'lanishi. Teng va tobe bog'lanish",
+              "bolim": "So'z birikmasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m02-soz-birikmasi",
+              "nom": "So'z birikmasi va uning turlari",
+              "bolim": "So'z birikmasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m03-birikma-qoshilma-farqi",
+              "nom": "So'z birikmasi va so'zlar qo'shilmasi",
+              "bolim": "So'z birikmasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 55,
+                "orta": 20,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m04-birikma-qoshma-ibora",
+              "nom": "So'z birikmasining qo'shma so'z va iboradan farqi",
+              "bolim": "So'z birikmasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m05-ifoda-maqsadiga-kora",
+              "nom": "Gapning ifoda maqsadiga ko'ra turlari",
+              "bolim": "Gap va uning turlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m06-his-hayajonga-kora",
+              "nom": "His-hayajon ishtirokiga ko'ra gap turlari",
+              "bolim": "Gap va uning turlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 18,
+                "orta": 57,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m07-tuzilishiga-kora-gaplar",
+              "nom": "Gapning tuzilishiga ko'ra turlari",
+              "bolim": "Gap va uning turlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m08-kesim",
+              "nom": "Kesim va uning turlari",
+              "bolim": "Gap bo'laklari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m09-ega",
+              "nom": "Ega. Egali va egasiz gaplar",
+              "bolim": "Gap bo'laklari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m10-toldiruvchi",
+              "nom": "To'ldiruvchi",
+              "bolim": "Gap bo'laklari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m11-aniqlovchi",
+              "nom": "Aniqlovchi",
+              "bolim": "Gap bo'laklari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m12-hol",
+              "nom": "Hol va uning turlari",
+              "bolim": "Gap bo'laklari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m13-bolaklar-tartibi",
+              "nom": "Gap bo'laklari tartibi",
+              "bolim": "Gap bo'laklari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m14-toliq-toliqsiz",
+              "nom": "To'liq va to'liqsiz gaplar",
+              "bolim": "Gap bo'laklari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m15-uyushiq-bolaklar",
+              "nom": "Gapning uyushiq bo'laklari",
+              "bolim": "Uyushiq va ajratilgan bo'laklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 18,
+                "orta": 57,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m16-umumlashtiruvchi-soz",
+              "nom": "Uyushiq bo'lakli gaplarda umumlashtiruvchi so'z",
+              "bolim": "Uyushiq va ajratilgan bo'laklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 18,
+                "orta": 57,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m17-ajratilgan-bolaklar",
+              "nom": "Ajratilgan bo'lakli gaplar",
+              "bolim": "Uyushiq va ajratilgan bo'laklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 28,
+                "qiyin": 37
+              }
+            },
+            {
+              "id": "onatili_sin_m18-undalma-kiritma",
+              "nom": "Undalma va kiritmalar (kirish so'z)",
+              "bolim": "Uyushiq va ajratilgan bo'laklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 47,
+                "orta": 28,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m19-qoshma-gap",
+              "nom": "Qo'shma gap haqida ma'lumot. Kesimlik belgilari",
+              "bolim": "Qo'shma gap",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m20-boglangan-qoshma-gap",
+              "nom": "Bog'langan qo'shma gap va uning turlari",
+              "bolim": "Qo'shma gap",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m21-ergash-gapli-qoshma-gap",
+              "nom": "Ergash gapli qo'shma gap. Bosh gap va ergash gap",
+              "bolim": "Qo'shma gap",
+              "savol": 100,
+              "qiy": {
+                "oson": 47,
+                "orta": 40,
+                "qiyin": 13
+              }
+            },
+            {
+              "id": "onatili_sin_m22-ergash-gap-turlari",
+              "nom": "Ergash gap turlari va bog'lovchi vositalar",
+              "bolim": "Qo'shma gap",
+              "savol": 100,
+              "qiy": {
+                "oson": 47,
+                "orta": 28,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m23-boglovchisiz-qoshma-gap",
+              "nom": "Bog'lovchisiz qo'shma gap",
+              "bolim": "Qo'shma gap",
+              "savol": 100,
+              "qiy": {
+                "oson": 47,
+                "orta": 28,
+                "qiyin": 25
+              }
+            },
+            {
+              "id": "onatili_sin_m24-kochirma-ozlashtirma-gap",
+              "nom": "Ko'chirma va o'zlashtirma gaplar",
+              "bolim": "Qo'shma gap",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "pun",
+      "badge": "TINISH BELGILARI",
+      "daraja": "Punktuatsiya",
+      "mavzu": 12,
+      "savol": 1200,
+      "kitoblar": [
+        {
+          "nom": "Punktuatsiya (tinish belgilari)",
+          "mavzu": 12,
+          "savol": 1200,
+          "mavzular": [
+            {
+              "id": "onatili_pun_m01-tinish-belgilari-vazifasi",
+              "nom": "Yozma nutqda tinish belgilarining vazifasi",
+              "bolim": "Tinish belgilari haqida ma'lumot",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 42,
+                "qiyin": 22
+              }
+            },
+            {
+              "id": "onatili_pun_m02-gap-oxiri-belgilari",
+              "nom": "Gap oxirida qo'yiladigan tinish belgilari",
+              "bolim": "Tinish belgilari haqida ma'lumot",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 42,
+                "qiyin": 22
+              }
+            },
+            {
+              "id": "onatili_pun_m03-ega-kesim-tire",
+              "nom": "Ega va ot-kesim orasida tire",
+              "bolim": "Sodda gapda tinish belgilari",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 42,
+                "qiyin": 22
+              }
+            },
+            {
+              "id": "onatili_pun_m04-uyushiq-bolaklar-punktuatsiya",
+              "nom": "Uyushiq bo'laklarda tinish belgilari",
+              "bolim": "Sodda gapda tinish belgilari",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 42,
+                "qiyin": 22
+              }
+            },
+            {
+              "id": "onatili_pun_m05-umumlashtiruvchi-ikki-nuqta",
+              "nom": "Umumlashtiruvchi so'z va ikki nuqta",
+              "bolim": "Sodda gapda tinish belgilari",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 42,
+                "qiyin": 22
+              }
+            },
+            {
+              "id": "onatili_pun_m06-ajratilgan-punktuatsiya",
+              "nom": "Ajratilgan bo'laklarda tinish belgilari",
+              "bolim": "Sodda gapda tinish belgilari",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 42,
+                "qiyin": 22
+              }
+            },
+            {
+              "id": "onatili_pun_m07-undalma-kiritma-punktuatsiya",
+              "nom": "Undalma va kiritmalarda tinish belgilari",
+              "bolim": "Sodda gapda tinish belgilari",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 42,
+                "qiyin": 22
+              }
+            },
+            {
+              "id": "onatili_pun_m08-boglangan-punktuatsiya",
+              "nom": "Bog'langan qo'shma gapda tinish belgilari",
+              "bolim": "Qo'shma gapda tinish belgilari",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 42,
+                "qiyin": 22
+              }
+            },
+            {
+              "id": "onatili_pun_m09-ergash-punktuatsiya",
+              "nom": "Ergash gapli qo'shma gapda tinish belgilari",
+              "bolim": "Qo'shma gapda tinish belgilari",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 42,
+                "qiyin": 22
+              }
+            },
+            {
+              "id": "onatili_pun_m10-boglovchisiz-punktuatsiya",
+              "nom": "Bog'lovchisiz qo'shma gapda tinish belgilari",
+              "bolim": "Qo'shma gapda tinish belgilari",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 42,
+                "qiyin": 22
+              }
+            },
+            {
+              "id": "onatili_pun_m11-kochirma-gap-punktuatsiya",
+              "nom": "Ko'chirma gapli qo'shma gapda tinish belgilari",
+              "bolim": "Ko'chirma gap va qo'shimcha belgilar",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 42,
+                "qiyin": 22
+              }
+            },
+            {
+              "id": "onatili_pun_m12-qoshtirnoq-qavs",
+              "nom": "Qo'shtirnoq, qavs va ko'p nuqtaning qo'llanishi",
+              "bolim": "Ko'chirma gap va qo'shimcha belgilar",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 42,
+                "qiyin": 22
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "usl",
+      "badge": "USLUBIYAT",
+      "daraja": "Nutq uslublari",
+      "mavzu": 13,
+      "savol": 1300,
+      "kitoblar": [
+        {
+          "nom": "Uslubiyat",
+          "mavzu": 13,
+          "savol": 1300,
+          "mavzular": [
+            {
+              "id": "onatili_usl_m01-nutq-uslublari",
+              "nom": "Nutq uslublari haqida umumiy ma'lumot",
+              "bolim": "Nutq uslublari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_usl_m02-sozlashuv-uslubi",
+              "nom": "So'zlashuv uslubi",
+              "bolim": "Nutq uslublari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_usl_m03-rasmiy-uslub",
+              "nom": "Rasmiy uslub",
+              "bolim": "Nutq uslublari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_usl_m04-ilmiy-uslub",
+              "nom": "Ilmiy uslub",
+              "bolim": "Nutq uslublari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_usl_m05-publitsistik-badiiy-uslub",
+              "nom": "Publitsistik va badiiy uslub",
+              "bolim": "Nutq uslublari",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_usl_m06-uslubiy-boyoq",
+              "nom": "Uslubiy bo'yoq va til vositalari",
+              "bolim": "Leksik vositalar uslubiyati",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_usl_m07-sinonim-uslubiyati",
+              "nom": "Sinonim, omonim, antonim va paronimlar uslubiyati",
+              "bolim": "Leksik vositalar uslubiyati",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_usl_m08-orinli-noorin-sozlar",
+              "nom": "Nutqda o'rinli va noo'rin so'zlar. Nutqiy taqiqlar",
+              "bolim": "Leksik vositalar uslubiyati",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_usl_m09-evfemizm-disfemizm",
+              "nom": "Evfemizm va disfemizmlar",
+              "bolim": "Leksik vositalar uslubiyati",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_usl_m10-ot-shakllari-uslubiyati",
+              "nom": "Ko'plik, egalik va kelishik qo'shimchalari uslubiyati",
+              "bolim": "Morfologik vositalar uslubiyati",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_usl_m11-fel-olmosh-uslubiyati",
+              "nom": "Zamon, shaxs-son va inkor shakllari. Olmoshlar uslubiyati",
+              "bolim": "Morfologik vositalar uslubiyati",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_usl_m12-gap-uslubiyati",
+              "nom": "Gapda so'z tartibi va gap turlari uslubiyati",
+              "bolim": "Sintaktik vositalar uslubiyati",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            },
+            {
+              "id": "onatili_usl_m13-undalma-qoshma-uslubiyati",
+              "nom": "Undalma, kiritma va qo'shma gaplar uslubiyati",
+              "bolim": "Sintaktik vositalar uslubiyati",
+              "savol": 100,
+              "qiy": {
+                "oson": 45,
+                "orta": 40,
+                "qiyin": 15
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "mat",
+      "badge": "MATN",
+      "daraja": "Nutq madaniyati",
+      "mavzu": 9,
+      "savol": 900,
+      "kitoblar": [
+        {
+          "nom": "Matn ustida ishlash va nutq madaniyati",
+          "mavzu": 9,
+          "savol": 900,
+          "mavzular": [
+            {
+              "id": "onatili_mat_m01-matn-tuzilishi",
+              "nom": "Matn va uning qismlari. Matn kompozitsiyasi",
+              "bolim": "Matn",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_mat_m02-matn-boglanish",
+              "nom": "Matnda mantiqiy izchillik va bog'lovchi vositalar",
+              "bolim": "Matn",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_mat_m03-matn-goyasi",
+              "nom": "Matn mavzusi, asosiy g'oyasi va xulosasi",
+              "bolim": "Matn",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_mat_m04-nutq-togriligi",
+              "nom": "Nutqning to'g'riligi va aniqligi",
+              "bolim": "Nutq madaniyati sifatlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_mat_m05-nutq-mantiqiyligi",
+              "nom": "Nutqning mantiqiyligi va sofligi",
+              "bolim": "Nutq madaniyati sifatlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_mat_m06-nutq-boyligi",
+              "nom": "Nutqning boyligi va jo'yaliligi",
+              "bolim": "Nutq madaniyati sifatlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_mat_m07-nutq-ifodaliligi",
+              "nom": "Nutqning ifodaliligi",
+              "bolim": "Nutq madaniyati sifatlari",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 40,
+                "qiyin": 30
+              }
+            },
+            {
+              "id": "onatili_mat_m08-nutq-texnikasi",
+              "nom": "Nutq texnikasi: urg'u va to'xtam (pauza)",
+              "bolim": "Amaliy nutq",
+              "savol": 100,
+              "qiy": {
+                "oson": 40,
+                "orta": 38,
+                "qiyin": 22
+              }
+            },
+            {
+              "id": "onatili_mat_m09-ish-qogozlari",
+              "nom": "Ish qog'ozlari va ular bilan ishlash",
+              "bolim": "Amaliy nutq",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 43,
+                "qiyin": 27
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

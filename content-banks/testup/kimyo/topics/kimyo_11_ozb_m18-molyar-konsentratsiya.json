@@ -1,0 +1,486 @@
+{
+  "nom": "18-mavzu. Molyar konsentratsiya",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Eritmaning molyar konsentratsiyasi deganda nima tushuniladi?",
+      "v": [
+        "1 l eritmaning tarkibida erigan moddani miqdoriga yoki mollar soniga aytiladi",
+        "100 g eritmada erigan modda massasiga aytiladi",
+        "1 l eritmada erigan moddani ekvivalent miqdoriga aytiladi",
+        "1 kg suvda erigan modda massasiga aytiladi"
+      ],
+      "t": 0,
+      "izoh": "1 l eritmaning tarkibida erigan moddani miqdoriga yoki mollar soniga shu eritmani molyar konsentratsiyasi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#93d39ce6"
+    },
+    {
+      "q": "Molyar konsentratsiya qanday belgi bilan ifodalanadi?",
+      "v": [
+        "C_M",
+        "C%",
+        "C_N",
+        "n_ekv"
+      ],
+      "t": 0,
+      "izoh": "Molyar konsentratsiya C_M belgisi bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#199f80b8"
+    },
+    {
+      "q": "Molyar konsentratsiyani aniqlash formulasini ko'rsating.",
+      "v": [
+        "C_M = n/V",
+        "C_M = V/n",
+        "C_M = n · V",
+        "C_M = m/V"
+      ],
+      "t": 0,
+      "izoh": "Erigan modda miqdorini (n) eritmaning hajmiga (V) bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#6a6a2908"
+    },
+    {
+      "q": "Molyar konsentratsiyaning o'lchov birligi nima?",
+      "v": [
+        "mol/l yoki M (molyar)",
+        "g/ml",
+        "N (normal)",
+        "g/ekv"
+      ],
+      "t": 0,
+      "izoh": "Molyar konsentratsiyani o'lchov birligi mol/l yoki M (molyar)dir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#58bcc626"
+    },
+    {
+      "q": "C_M = n/V formulasida n nimani bildiradi?",
+      "v": [
+        "Erigan moddaning miqdorini (mol)",
+        "Eritma hajmini (l)",
+        "Eritma massasini (g)",
+        "Eritma zichligini"
+      ],
+      "t": 0,
+      "izoh": "n — erigan moddaning miqdori (mol).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#3ded5079"
+    },
+    {
+      "q": "C_M = n/V formulasida V nimani bildiradi?",
+      "v": [
+        "Eritma hajmini (l)",
+        "Erigan modda miqdorini",
+        "Eritma massasini",
+        "Erigan modda molyar massasini"
+      ],
+      "t": 0,
+      "izoh": "V — eritma hajmi (l).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#4718dab9"
+    },
+    {
+      "q": "Erigan modda miqdorini (n) aniqlash formulasini ko'rsating.",
+      "v": [
+        "n = C_M · V",
+        "n = C_M / V",
+        "n = V / C_M",
+        "n = M · V"
+      ],
+      "t": 0,
+      "izoh": "Molyar konsentratsiyani eritma hajmiga ko'paytirish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#1359c25e"
+    },
+    {
+      "q": "Eritma hajmini (V) aniqlash formulasini ko'rsating.",
+      "v": [
+        "V = n / C_M",
+        "V = n · C_M",
+        "V = C_M / n",
+        "V = m / C_M"
+      ],
+      "t": 0,
+      "izoh": "Erigan modda miqdorini molyar konsentratsiyaga bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#2a244aff"
+    },
+    {
+      "q": "Masala shartida erigan moddaning massasi berilgan bo'lsa, uning miqdori qanday aniqlanadi?",
+      "v": [
+        "n = m/M",
+        "n = m · M",
+        "n = M/m",
+        "n = m · V"
+      ],
+      "t": 0,
+      "izoh": "Erigan moddaning massasini ushbu moddaning molyar massasiga bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#6be00ecb"
+    },
+    {
+      "q": "Molyar konsentratsiyada eritma hajmi qaysi birlikda o'lchanadi?",
+      "v": [
+        "l da",
+        "ml da",
+        "g da",
+        "kg da"
+      ],
+      "t": 0,
+      "izoh": "Molyar konsentratsiyada eritma hajmini l da o'chaymiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#76696b44"
+    },
+    {
+      "q": "0,75 mol NaNO3 suvda eritilib, 250 ml eritma tayyorlandi. Hosil bo'lgan eritmaning molyar konsentratsiyasi qancha?",
+      "v": [
+        "3 mol/l",
+        "0,3 mol/l",
+        "1,5 mol/l",
+        "7,5 mol/l"
+      ],
+      "t": 0,
+      "izoh": "C_M = 0,75/0,25 = 3 mol/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#599d2d9e"
+    },
+    {
+      "q": "250 ml eritma litrlarda qanchaga teng?",
+      "v": [
+        "0,25 l",
+        "2,5 l",
+        "0,025 l",
+        "25 l"
+      ],
+      "t": 0,
+      "izoh": "250 ml = 0,25 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#a61fef79"
+    },
+    {
+      "q": "1-masalada erigan modda miqdori qancha berilgan?",
+      "v": [
+        "0,75 mol NaNO3",
+        "0,25 mol NaNO3",
+        "3 mol NaNO3",
+        "7,5 mol NaNO3"
+      ],
+      "t": 0,
+      "izoh": "1-masala shartida 0,75 mol NaNO3 berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#57d86d5d"
+    },
+    {
+      "q": "7,3 g HCl ning modda miqdori qancha? (M(HCl)=36,5 g/mol)",
+      "v": [
+        "0,2 mol",
+        "0,1 mol",
+        "2 mol",
+        "0,02 mol"
+      ],
+      "t": 0,
+      "izoh": "n(HCl) = 7,3/36,5 = 0,2 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#96607182"
+    },
+    {
+      "q": "Tarkibida 7,3 g HCl bor bo'lgan 0,1 M li HCl eritmasining hajmi qancha?",
+      "v": [
+        "2 l",
+        "0,2 l",
+        "1 l",
+        "0,73 l"
+      ],
+      "t": 0,
+      "izoh": "V = n/C_M = 0,2/0,1 = 2 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#0743c098"
+    },
+    {
+      "q": "300 ml 2 M li BaCl2 eritmasi tarkibidagi modda miqdori qancha?",
+      "v": [
+        "0,6 mol",
+        "0,3 mol",
+        "6 mol",
+        "0,06 mol"
+      ],
+      "t": 0,
+      "izoh": "n(BaCl2) = 2·0,3 = 0,6 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#6401ff20"
+    },
+    {
+      "q": "Darslikdagi masalada BaCl2 ning molyar massasi qancha deb olingan?",
+      "v": [
+        "208 g/mol",
+        "137 g/mol",
+        "171 g/mol",
+        "106 g/mol"
+      ],
+      "t": 0,
+      "izoh": "M(BaCl2) = 208 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#cefb22ea"
+    },
+    {
+      "q": "Distillangan suvga BaCl2 qo'shib 300 ml 2 M li eritma tayyorlash uchun qo'shilgan BaCl2 massasi qancha?",
+      "v": [
+        "124,8 g",
+        "208 g",
+        "62,4 g",
+        "12,48 g"
+      ],
+      "t": 0,
+      "izoh": "m(BaCl2) = 0,6·208 = 124,8 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#0ac9c8a4"
+    },
+    {
+      "q": "Masala shartida eritma hajmi berilmay, eritma massasi va zichligi berilgan bo'lsa, eritma hajmi qanday aniqlanadi?",
+      "v": [
+        "V = m2/ρ",
+        "V = m2 · ρ",
+        "V = ρ/m2",
+        "V = n/C_M"
+      ],
+      "t": 0,
+      "izoh": "Eritma massasini eritma zichligiga bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#75d62485"
+    },
+    {
+      "q": "Eritma zichligi g/ml da va eritma massasi grammda berilgan bo'lsa, V = m2/ρ formula orqali hajm qaysi birlikda aniqlanadi?",
+      "v": [
+        "ml da aniqlanib, 1000 ga bo'lish orqali litrda ifodalanadi",
+        "Darhol litrda aniqlanadi",
+        "kg da aniqlanadi",
+        "mol da aniqlanadi"
+      ],
+      "t": 0,
+      "izoh": "Hajm ml da aniqlanadi va 1000 ga bo'lish orqali litrda ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#f9860979"
+    },
+    {
+      "q": "Eritma zichligi kg/l da va eritma massasi kg da berilgan bo'lsa, V = m2/ρ formula orqali hajm qaysi birlikda aniqlanadi?",
+      "v": [
+        "Litrda",
+        "Millilitrda",
+        "Grammda",
+        "Molda"
+      ],
+      "t": 0,
+      "izoh": "Zichlik kg/l va massa kg da bo'lsa, hajm litrda aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#2b399198"
+    },
+    {
+      "q": "36,5 g HCl ning modda miqdori qancha? (M(HCl)=36,5 g/mol)",
+      "v": [
+        "1 mol",
+        "0,1 mol",
+        "0,5 mol",
+        "2 mol"
+      ],
+      "t": 0,
+      "izoh": "n(HCl) = 36,5/36,5 = 1 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#3ff0eed0"
+    },
+    {
+      "q": "300 g suvga 36,5 g HCl qo'shilganda hosil bo'lgan eritmaning massasi qancha?",
+      "v": [
+        "336,5 g",
+        "300 g",
+        "36,5 g",
+        "263,5 g"
+      ],
+      "t": 0,
+      "izoh": "300 + 36,5 = 336,5 g eritma hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#0918cac4"
+    },
+    {
+      "q": "336,5 g massali va 1,12 g/ml zichlikli eritmaning hajmi qancha?",
+      "v": [
+        "300 ml (0,3 l)",
+        "336,5 ml",
+        "377 ml",
+        "112 ml"
+      ],
+      "t": 0,
+      "izoh": "V = 336,5/1,12 = 300 ml = 0,3 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#841236ee"
+    },
+    {
+      "q": "300 g suvga 36,5 g HCl qo'shilishidan hosil bo'lgan eritmaning (ρ=1,12 g/ml) molyar konsentratsiyasi qancha?",
+      "v": [
+        "3,33 mol/l",
+        "1 mol/l",
+        "0,3 mol/l",
+        "33,3 mol/l"
+      ],
+      "t": 0,
+      "izoh": "C_M = 1/0,3 = 3,33 mol/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#30031a93"
+    },
+    {
+      "q": "Darslikda \"Javob: 3 M\" yozuvi qanday o'qiladi?",
+      "v": [
+        "Eritmaning molyar konsentratsiyasi 3 mol/l (molyarli)",
+        "Eritmada 3 mol suv bor",
+        "Eritma 3 litr",
+        "Eritmaning massasi 3 gramm"
+      ],
+      "t": 0,
+      "izoh": "3 M — eritmaning molyar konsentratsiyasi 3 mol/l (molyarli) degani.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#fd26bd66"
+    },
+    {
+      "q": "Mavzuga doir 1-masalada qanday shart berilgan?",
+      "v": [
+        "1,25 mol CaCl2 suvda eritilib, 500 ml eritma tayyorlangan",
+        "0,75 mol NH4Cl eritilib, 750 ml eritma tayyorlangan",
+        "NaCl qo'shib, 400 ml 3 M li eritma tayyorlangan",
+        "Na2SO4 qo'shib, 200 ml 1,5 M li eritma tayyorlangan"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 1-masala: 1,25 mol CaCl2, 500 ml eritma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#07da83db"
+    },
+    {
+      "q": "Mavzuga doir 3-masalada distillangan suvga NaCl qo'shib qanday eritma tayyorlangan?",
+      "v": [
+        "400 ml 3 M li eritma",
+        "200 ml 1,5 M li eritma",
+        "500 ml 2 M li eritma",
+        "750 ml 1 M li eritma"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 3-masala: 400 ml 3 M li NaCl eritmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#e29284a7"
+    },
+    {
+      "q": "Mavzuga doir 7-masalada qanday shart berilgan?",
+      "v": [
+        "Tarkibida 11,7 g NaCl bor bo'lgan 0,5 M li eritmaning hajmini aniqlash",
+        "Tarkibida 16,4 g H2SO3 bor bo'lgan 0,25 M li eritmaning hajmini aniqlash",
+        "Tarkibida 7,3 g HCl bor bo'lgan 0,1 M li eritmaning hajmini aniqlash",
+        "Tarkibida 44,8 g KOH bor bo'lgan eritmaning foiz konsentratsiyasini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 7-masala: 11,7 g NaCl, 0,5 M li eritma hajmi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#08a8e518"
+    },
+    {
+      "q": "1 mol/l (1 M) eritma deganda nimani tushunamiz?",
+      "v": [
+        "1 l eritma tarkibida 1 mol erigan modda borligini",
+        "100 g eritmada 1 mol modda borligini",
+        "1 l suvda 1 g modda borligini",
+        "1 l eritmada 1 g/ekv modda borligini"
+      ],
+      "t": 0,
+      "izoh": "Molyar konsentratsiya ta'rifiga ko'ra 1 l eritmada 1 mol erigan modda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#0a82fdda"
+    },
+    {
+      "q": "2-masalada HCl ning molyar massasi qancha deb olingan?",
+      "v": [
+        "36,5 g/mol",
+        "35,5 g/mol",
+        "73 g/mol",
+        "18 g/mol"
+      ],
+      "t": 0,
+      "izoh": "M(HCl) = 36,5 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#d3b5ce3f"
+    },
+    {
+      "q": "3-masalada 300 ml eritma litrlarda qanchaga teng?",
+      "v": [
+        "0,3 l",
+        "3 l",
+        "0,03 l",
+        "30 l"
+      ],
+      "t": 0,
+      "izoh": "300 ml = 0,3 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m18-molyar-konsentratsiya#c210b6e4"
+    }
+  ]
+}

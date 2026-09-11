@@ -1,0 +1,1609 @@
+{
+  "nom": "Ko'phadni ko'phadga bo'lish, Bezu teoremasi va ildizlar bilan bog'lanish",
+  "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+  "blok": "ayn",
+  "rasmiyBolim": 2,
+  "sertifikat": false,
+  "savollar": [
+    {
+      "q": "P(x) = x³ − 4x² + 7x − 5 ko'phad x − 2 ikkihadga bo'lingandagi qoldiqni Bezu teoremasidan foydalanib toping.",
+      "v": [
+        "−43",
+        "1",
+        "−5",
+        "33"
+      ],
+      "t": 1,
+      "izoh": "Bezu teoremasiga ko'ra x − a ga bo'lgandagi qoldiq P(a) ga teng. Bu yerda a = 2, demak qoldiq P(2). P(2) = 8 − 16 + 14 − 5 = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bezu-qoldiq-hisoblash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#69a0a87c"
+    },
+    {
+      "q": "Q(x) = 2x³ + 3x² − 5x + 4 ko'phad x + 1 ikkihadga bo'linganda qanday qoldiq hosil bo'ladi?",
+      "v": [
+        "4",
+        "0",
+        "10",
+        "14"
+      ],
+      "t": 2,
+      "izoh": "x + 1 = x − (−1) bo'lgani uchun qoldiq P(−1) ga teng. P(−1) = 2·(−1)³ + 3·(−1)² − 5·(−1) + 4 = −2 + 3 + 5 + 4 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bezu-qoldiq-hisoblash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#688625de"
+    },
+    {
+      "q": "P(x) = 4x³ − 8x² + x + 3 ko'phadni 2x − 1 ikkihadga bo'lganda qoldiq nechaga teng bo'ladi?",
+      "v": [
+        "3",
+        "0",
+        "5",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "2x − 1 = 0 tenglamadan x = 1/2. Qoldiq P(1/2) ga teng: 4·(1/8) − 8·(1/4) + 1/2 + 3 = 0,5 − 2 + 0,5 + 3 = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bezu-qoldiq-hisoblash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#52c2916d"
+    },
+    {
+      "q": "Bezu teoremasidan foydalanib, x⁴ − 3x³ + 2x − 7 ko'phadning x − 3 ga bo'lingandagi qoldig'ini aniqlang.",
+      "v": [
+        "−1",
+        "149",
+        "−7",
+        "161"
+      ],
+      "t": 0,
+      "izoh": "Qoldiq P(3) ga teng. P(3) = 81 − 3·27 + 2·3 − 7 = 81 − 81 + 6 − 7 = −1. Darajali hadlar o'zaro yo'qoladi va qoldiq manfiy chiqadi. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bezu-qoldiq-hisoblash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#5da30683"
+    },
+    {
+      "q": "x³ + 5x² − 2x + 8 ko'phad x + 4 ga bo'lingandagi qoldiq quyidagilardan qaysi biriga teng?",
+      "v": [
+        "144",
+        "8",
+        "32",
+        "−32"
+      ],
+      "t": 2,
+      "izoh": "x + 4 uchun tekshiriladigan nuqta x = −4. P(−4) = −64 + 5·16 + 8 + 8 = −64 + 80 + 16 = 32. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bezu-qoldiq-hisoblash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#df98218a"
+    },
+    {
+      "q": "x³ − 2x² + ax − 6 ko'phad x − 3 ikkihadga qoldiqsiz bo'linsa, a parametrning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "−17",
+        "−1",
+        "1",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "Qoldiqsiz bo'linish sharti P(3) = 0. P(3) = 27 − 18 + 3a − 6 = 3 + 3a. 3 + 3a = 0 tenglamadan a = −1. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bezu-parametrni-bolinishdan-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#622f919a"
+    },
+    {
+      "q": "2x³ + mx² − 7x + 3 ko'phad x + 1 ga qoldiqsiz bo'linadigan bo'lsa, m koeffitsient qanday qiymatga ega?",
+      "v": [
+        "8",
+        "2",
+        "−8",
+        "−2"
+      ],
+      "t": 2,
+      "izoh": "Shart: P(−1) = 0. P(−1) = −2 + m + 7 + 3 = m + 8. m + 8 = 0 tenglamadan m = −8. Javob: −8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bezu-parametrni-bolinishdan-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#46baf9d4"
+    },
+    {
+      "q": "x³ + ax² + bx + 6 ko'phad ham x − 1 ga, ham x − 2 ga qoldiqsiz bo'linadi. a va b koeffitsientlarni toping.",
+      "v": [
+        "a = −7, b = 0",
+        "a = 1, b = −8",
+        "a = 0, b = −7",
+        "a = −3, b = −4"
+      ],
+      "t": 2,
+      "izoh": "Ikki shart yoziladi: P(1) = 1 + a + b + 6 = 0, ya'ni a + b = −7; P(2) = 8 + 4a + 2b + 6 = 0, ya'ni 2a + b = −7. Ikkinchisidan birinchisini ayirsak a = 0, bundan b = −7. Javob: a = 0, b = −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-bolinish-shartidan-sistema",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#36f07691"
+    },
+    {
+      "q": "x³ + kx² + 2x − 5 ko'phad x − 1 ga bo'lganda qoldiq 3 ga teng bo'ldi. k ning qiymatini toping.",
+      "v": [
+        "1",
+        "2",
+        "5",
+        "11"
+      ],
+      "t": 2,
+      "izoh": "Bezu bo'yicha P(1) = 3. P(1) = 1 + k + 2 − 5 = k − 2. k − 2 = 3 tenglamadan k = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-berilganda-koeffitsient",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#cf819ba2"
+    },
+    {
+      "q": "x³ + ax + b ko'phad x − 1 ga bo'lganda qoldiq 4, x + 2 ga bo'lganda esa qoldiq −5 bo'ldi. a va b ni aniqlang.",
+      "v": [
+        "a = 3, b = 0",
+        "a = 0, b = 3",
+        "a = 1, b = 2",
+        "a = −1, b = 4"
+      ],
+      "t": 1,
+      "izoh": "P(1) = 1 + a + b = 4, demak a + b = 3. P(−2) = −8 − 2a + b = −5, demak −2a + b = 3. Ikki tenglamani ayirsak 3a = 0, ya'ni a = 0 va b = 3. Javob: a = 0, b = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-qoldiq-shartidan-sistema",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#96c18824"
+    },
+    {
+      "q": "x³ − 3x² + 5x − 2 ko'phadni x − 1 ga burchakli usulda bo'lganda hosil bo'ladigan bo'linmani ko'rsating.",
+      "v": [
+        "x² + 2x + 3",
+        "x² − 4x + 1",
+        "x² − 2x + 3",
+        "x² − 2x − 3"
+      ],
+      "t": 2,
+      "izoh": "Bo'lishni bosqichma-bosqich bajaramiz: x³ : x = x², (x − 1)·x² = x³ − x², qoldiq −2x² + 5x − 2. Keyin −2x² : x = −2x, qoldiq 3x − 2, so'ng 3x : x = 3. Bo'linma x² − 2x + 3, qoldiq 1. Javob: x² − 2x + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchakli-bolish-bolinmani-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#7f818d49"
+    },
+    {
+      "q": "2x³ + x² − 8x + 5 ko'phadni x + 2 ga bo'lganda bo'linma va qoldiq qanday bo'ladi?",
+      "v": [
+        "2x² − 3x − 2, qoldiq 9",
+        "2x² + 5x + 2, qoldiq 9",
+        "2x² − 3x − 2, qoldiq −9",
+        "2x² − 3x + 2, qoldiq 1"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishni bajaramiz: 2x³ : x = 2x², (x + 2)·2x² = 2x³ + 4x², qolgani −3x² − 8x + 5. So'ng −3x² : x = −3x va qolgani −2x + 5, oxirida −2x : x = −2, qoldiq 9. Bo'linma 2x² − 3x − 2, qoldiq 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchakli-bolish-bolinma-va-qoldiq",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#4acdee13"
+    },
+    {
+      "q": "5-darajali ko'phad 2-darajali ko'phadga bo'linganda hosil bo'lgan qoldiqning darajasi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Har doim 0 ga teng",
+        "1 dan katta emas",
+        "2 ga teng bo'ladi",
+        "3 ga teng bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Bo'lish ayniyatida qoldiqning darajasi bo'luvchining darajasidan kichik bo'lishi shart. Bo'luvchi 2-darajali bo'lgani uchun qoldiq 1-darajali yoki o'zgarmas bo'ladi, ya'ni darajasi 1 dan katta emas. Javob: 1 dan katta emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-darajasi-nazariy",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#7d4d91bd"
+    },
+    {
+      "q": "7-darajali ko'phad 3-darajali ko'phadga qoldiqsiz bo'lindi. Bo'linmaning darajasi nechaga teng bo'ladi?",
+      "v": [
+        "7",
+        "10",
+        "4",
+        "21"
+      ],
+      "t": 2,
+      "izoh": "Qoldiqsiz bo'linishda P(x) = Q(x)·B(x) bo'ladi va darajalar qo'shiladi. 7 = 3 + bo'linma darajasi, demak bo'linma darajasi 7 − 3 = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolinma-darajasi-nazariy",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#4bffaacf"
+    },
+    {
+      "q": "Ma'lumki, P(x) = (x − 3)·Q(x) + 7 tenglik barcha x lar uchun o'rinli. P(3) ning qiymati nechaga teng?",
+      "v": [
+        "−7",
+        "0",
+        "10",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Tenglikka x = 3 ni qo'yamiz: P(3) = (3 − 3)·Q(3) + 7. Birinchi ko'paytuvchi nolga aylanadi, shuning uchun P(3) = 7. Bu Bezu teoremasining mohiyati. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolish-ayniyatidan-qiymat",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#6860786a"
+    },
+    {
+      "q": "Gorner sxemasidan foydalanib, P(x) = 3x⁴ − 2x³ + x − 5 ko'phadning x = 2 nuqtadagi qiymatini hisoblang.",
+      "v": [
+        "13",
+        "29",
+        "57",
+        "25"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsientlarni to'liq yozamiz: 3, −2, 0, 1, −5 (x² hadi yo'q, o'rniga 0 qo'yiladi). Gorner: 3; 3·2 − 2 = 4; 4·2 + 0 = 8; 8·2 + 1 = 17; 17·2 − 5 = 29. Javob: 29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorner-qiymat-hisoblash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#6927b10a"
+    },
+    {
+      "q": "P(x) = x³ − 5x² + 6x − 2 ko'phad uchun Gorner sxemasi x = 4 da 1, −1, 2, 6 qatorini berdi. Bundan qanday xulosa chiqadi?",
+      "v": [
+        "Bo'linma x³ − x² + 2x, qoldiq 6",
+        "Bo'linma x² − x + 2, qoldiq 6",
+        "Bo'linma x² − x + 2, qoldiq 0",
+        "P(4) = 2 bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Gorner qatoridagi oxirgi son qoldiq, undan oldingilari esa bo'linma koeffitsientlari bo'ladi. Demak bo'linma x² − x + 2, qoldiq 6, ya'ni P(4) = 6. Javob: bo'linma x² − x + 2, qoldiq 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorner-qatorini-oqish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#c962a13c"
+    },
+    {
+      "q": "x³ + 2x² − 11x − 12 ko'phadni x + 1 ga bo'lgandagi bo'linmani Gorner sxemasi yordamida toping.",
+      "v": [
+        "x² + 3x − 8",
+        "x² + x + 12",
+        "x² + x − 12",
+        "x² − x − 12"
+      ],
+      "t": 2,
+      "izoh": "Gorner uchun x = −1 olinadi. Koeffitsientlar 1, 2, −11, −12: 1; 1·(−1) + 2 = 1; 1·(−1) − 11 = −12; (−12)·(−1) − 12 = 0. Qoldiq 0, bo'linma x² + x − 12. Javob: x² + x − 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorner-bolinma-koeffitsientlari",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#5fe4fa65"
+    },
+    {
+      "q": "Muhandis Dilshod suv nasosining t soatdagi unumini N(t) = 2t³ − 5t² + 3t + 40 formula bilan hisoblaydi. Oltinchi soatdagi unum qancha bo'ladi?",
+      "v": [
+        "270",
+        "292",
+        "670",
+        "310"
+      ],
+      "t": 3,
+      "izoh": "Gorner sxemasini t = 6 uchun qo'llaymiz: 2; 2·6 − 5 = 7; 7·6 + 3 = 45; 45·6 + 40 = 310. Bevosita hisoblasak ham 432 − 180 + 18 + 40 = 310 chiqadi. Javob: 310.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-gorner-unum-hisoblash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#2a972332"
+    },
+    {
+      "q": "Ko'phad koeffitsientlariga Gorner sxemasi x = 3 uchun qo'llanganda oxirgi katakda 0 hosil bo'ldi. Bu natija nimani anglatadi?",
+      "v": [
+        "Ko'phadning bosh koeffitsienti 3 ga teng",
+        "x = 3 ildiz, ko'phad x − 3 ga qoldiqsiz bo'linadi",
+        "Ko'phad x + 3 ga qoldiqsiz bo'linadi",
+        "Ko'phadning erkin hadi nolga teng"
+      ],
+      "t": 1,
+      "izoh": "Gorner sxemasidagi oxirgi katak qoldiqni, ya'ni P(3) ni beradi. P(3) = 0 bo'lsa, Bezu natijasiga ko'ra x = 3 ko'phadning ildizi va ko'phad x − 3 ga qoldiqsiz bo'linadi. Javob: x = 3 ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorner-nol-qoldiq-xulosa",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#7ead45ce"
+    },
+    {
+      "q": "P(x) = x³ − 4x² + x + 6 ko'phad berilgan. Quyidagi sonlardan qaysi biri uning ildizi bo'la olmaydi?",
+      "v": [
+        "−1",
+        "2",
+        "3",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Har birini qo'yib tekshiramiz: P(−1) = −1 − 4 − 1 + 6 = 0, P(2) = 8 − 16 + 2 + 6 = 0, P(3) = 27 − 36 + 3 + 6 = 0. P(6) = 216 − 144 + 6 + 6 = 84 ≠ 0. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-ildizni-tekshirish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#b9d12bc3"
+    },
+    {
+      "q": "x³ + 2x² − 5x − 6 ko'phadning butun ildizini izlaganda qaysi sonlarni tekshirish yetarli bo'ladi?",
+      "v": [
+        "±1 va ±5, ya'ni o'rta koeffitsient bo'luvchilari",
+        "Faqat musbat sonlar: 1, 2, 3, 6",
+        "±1, ±2, ±3, ±6, ya'ni erkin had bo'luvchilari",
+        "±1 va ±2, ya'ni bosh koeffitsient bo'luvchilari"
+      ],
+      "t": 2,
+      "izoh": "Bosh koeffitsienti 1 ga teng ko'phadning butun ildizi erkin hadning bo'luvchisi bo'lishi shart. Erkin had −6, uning bo'luvchilari ±1, ±2, ±3, ±6. Faqat shu sonlarni tekshirish kifoya. Javob: ±1, ±2, ±3, ±6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-ildiz-nomzodlarini-tanlash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#51cd196b"
+    },
+    {
+      "q": "x³ − 3x² − 10x + 24 ko'phadning barcha ildizlari butun sonlardan iborat. Ularning eng kattasini toping.",
+      "v": [
+        "−3",
+        "3",
+        "24",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Erkin had 24 ning bo'luvchilarini sinaymiz. P(2) = 8 − 12 − 20 + 24 = 0, P(4) = 64 − 48 − 40 + 24 = 0, P(−3) = −27 − 27 + 30 + 24 = 0. Ildizlar −3, 2 va 4, ulardan kattasi 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-ildizlarni-topib-tanlash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#70df9bc7"
+    },
+    {
+      "q": "2x³ − 3x² − 3x + 2 ko'phadning butun bo'lmagan ratsional ildizi quyidagilardan qaysi biri?",
+      "v": [
+        "1/2",
+        "−1/2",
+        "2/3",
+        "1/3"
+      ],
+      "t": 0,
+      "izoh": "Bosh koeffitsient 2 bo'lgani uchun ratsional ildiz erkin had bo'luvchisining bosh koeffitsient bo'luvchisiga nisbati ko'rinishida izlanadi. x = 1/2 da: 2·(1/8) − 3·(1/4) − 3/2 + 2 = 0,25 − 0,75 − 1,5 + 2 = 0. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ratsional-ildiz-nomzodi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#47b7eaf2"
+    },
+    {
+      "q": "Do'kon foydasi F(x) = x³ − 7x² + 36 mln so'm bilan berilgan, bunda x — ochilganidan keyin o'tgan oylar soni. Foyda birinchi marta nolga aylanadigan oyni toping.",
+      "v": [
+        "2",
+        "3",
+        "6",
+        "36"
+      ],
+      "t": 1,
+      "izoh": "Erkin had 36 ning bo'luvchilarini sinaymiz: F(3) = 27 − 63 + 36 = 0, F(6) = 216 − 252 + 36 = 0. Manfiy ildiz vaqt uchun mos emas. Musbat ildizlardan kichigi 3, demak foyda birinchi marta 3-oyda nolga aylanadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-nol-nuqtani-ildizdan-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#628ffa9d"
+    },
+    {
+      "q": "x³ − 7x + 6 ko'phadni chiziqli ko'paytuvchilarga ajratganda qaysi yoyilma hosil bo'ladi?",
+      "v": [
+        "(x − 1)(x + 2)(x − 3)",
+        "(x + 1)(x − 2)(x − 3)",
+        "(x − 1)(x − 2)(x + 3)",
+        "(x − 1)(x − 2)(x − 3)"
+      ],
+      "t": 2,
+      "izoh": "Erkin had 6 ning bo'luvchilarini sinaymiz: P(1) = 1 − 7 + 6 = 0, P(2) = 8 − 14 + 6 = 0, P(−3) = −27 + 21 + 6 = 0. Ildizlar 1, 2 va −3 bo'lgani uchun yoyilma (x − 1)(x − 2)(x + 3) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytuvchilarga-ajratish-yoyilma",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#46413ac8"
+    },
+    {
+      "q": "x³ + 4x² + x − 6 ko'phad x − 1 ga bo'lindi. Hosil bo'lgan bo'linmani ko'paytuvchilarga ajrating.",
+      "v": [
+        "(x − 2)(x − 3)",
+        "(x + 1)(x + 6)",
+        "(x + 2)(x − 3)",
+        "(x + 2)(x + 3)"
+      ],
+      "t": 3,
+      "izoh": "Gorner bilan x = 1 uchun: 1; 1 + 4 = 5; 5 + 1 = 6; 6 − 6 = 0. Bo'linma x² + 5x + 6. Uning ildizlari −2 va −3, demak x² + 5x + 6 = (x + 2)(x + 3). Javob: (x + 2)(x + 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolinmani-kopaytuvchilarga-ajratish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#f29f2b04"
+    },
+    {
+      "q": "Kartondan yasalgan to'g'ri burchakli qutining hajmi V(x) = x³ + 9x² + 26x + 24 sm³, balandligi esa (x + 2) sm. Asosining yuzi qanday ifoda bilan beriladi?",
+      "v": [
+        "x² + 7x + 12",
+        "x² + 11x + 48",
+        "x² + 7x − 12",
+        "x² + 9x + 12"
+      ],
+      "t": 0,
+      "izoh": "Asos yuzi hajmni balandlikka bo'lish orqali topiladi. Gorner bilan x = −2 uchun: 1; −2 + 9 = 7; −14 + 26 = 12; −24 + 24 = 0. Bo'linma x² + 7x + 12, qoldiq 0. Javob: x² + 7x + 12 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-hajmni-olchamga-bolish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#b66bfd1f"
+    },
+    {
+      "q": "Suv havzasining hajmi V(x) = 2x³ + 7x² − 2x − 12 m³, chuqurligi esa (2x + 3) m. Havza tubining yuzini ifodalovchi ko'phadni toping.",
+      "v": [
+        "x² + 2x + 4",
+        "x² + 2x − 4",
+        "2x² + 2x − 4",
+        "x² + 5x − 4"
+      ],
+      "t": 1,
+      "izoh": "Tub yuzi = hajm : chuqurlik. 2x³ + 7x² − 2x − 12 ni 2x + 3 ga bo'lamiz: 2x³ : 2x = x², qolgani 4x² − 2x − 12; 4x² : 2x = 2x, qolgani −8x − 12; −8x : 2x = −4, qoldiq 0. Javob: x² + 2x − 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-kophadni-ikkihadga-bolish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#b1c92cad"
+    },
+    {
+      "q": "x³ − 6x² + 11x − 6 = 0 tenglamaning barcha ildizlari yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "−6",
+        "11",
+        "6",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "Umumlashgan Viyet formulasiga ko'ra uchinchi darajali ax³ + bx² + cx + d = 0 tenglamada ildizlar yig'indisi −b/a ga teng. Bu yerda a = 1, b = −6, demak yig'indi 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kubik-viyet-ildizlar-yigindisi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#22d947b7"
+    },
+    {
+      "q": "2x³ + 5x² − 4x − 3 = 0 tenglama uchta haqiqiy ildizga ega. Ildizlarning ko'paytmasini toping.",
+      "v": [
+        "−3/2",
+        "−3",
+        "3",
+        "3/2"
+      ],
+      "t": 3,
+      "izoh": "Umumlashgan Viyet bo'yicha ildizlar ko'paytmasi −d/a ga teng. Bu yerda d = −3, a = 2, demak ko'paytma −(−3)/2 = 3/2. Javob: 3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kubik-viyet-ildizlar-kopaytmasi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#c0ca7004"
+    },
+    {
+      "q": "x³ − 2x² − 5x + 6 = 0 tenglama ildizlarining juft-juft ko'paytmalari yig'indisi nechaga teng?",
+      "v": [
+        "−5",
+        "5",
+        "2",
+        "−6"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi darajali tenglama uchun x₁x₂ + x₁x₃ + x₂x₃ = c/a. Bu yerda c = −5 va a = 1, demak yig'indi −5. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kubik-viyet-juft-kopaytmalar",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#349e74ea"
+    },
+    {
+      "q": "x³ − 5x² + 2x + 8 = 0 tenglama ildizlari kvadratlarining yig'indisi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "29",
+        "21",
+        "25",
+        "23"
+      ],
+      "t": 1,
+      "izoh": "Viyet bo'yicha yig'indi 5, juft ko'paytmalar yig'indisi 2. Ayniyat: x₁² + x₂² + x₃² = (x₁ + x₂ + x₃)² − 2(x₁x₂ + x₁x₃ + x₂x₃) = 25 − 2·2 = 21. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kubik-ildizlar-kvadratlari-yigindisi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#c8d1808d"
+    },
+    {
+      "q": "x³ − 7x² + 14x − 8 = 0 tenglama ildizlari uchun 1/x₁ + 1/x₂ + 1/x₃ ifodaning qiymatini hisoblang.",
+      "v": [
+        "4/7",
+        "7/8",
+        "7/4",
+        "14/7"
+      ],
+      "t": 2,
+      "izoh": "Kasrlarni umumiy maxrajga keltiramiz: (x₂x₃ + x₁x₃ + x₁x₂)/(x₁x₂x₃). Viyet bo'yicha surat 14, maxraj 8. Demak qiymat 14/8 = 7/4. Javob: 7/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kubik-teskarilar-yigindisi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#d010ff01"
+    },
+    {
+      "q": "x⁴ − 5x³ + 5x² + 5x − 6 = 0 tenglamaning to'rtta haqiqiy ildizi bor. Ularning yig'indisi va ko'paytmasini ko'rsating.",
+      "v": [
+        "−5 va −6",
+        "5 va −6",
+        "5 va 6",
+        "−5 va 6"
+      ],
+      "t": 1,
+      "izoh": "To'rtinchi darajali ax⁴ + bx³ + cx² + dx + e = 0 uchun ildizlar yig'indisi −b/a = 5, ko'paytmasi esa e/a = −6 bo'ladi, chunki daraja juft. Tekshirish: ko'phad (x + 1)(x − 1)(x − 2)(x − 3) ga yoyiladi, ildizlari −1; 1; 2; 3, yig'indisi 5, ko'paytmasi −6. Javob: 5 va −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortinchi-daraja-viyet-yigindi-kopaytma",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#6ab894fc"
+    },
+    {
+      "q": "Ildizlari −2, 1 va 5 bo'lgan, bosh koeffitsienti birga teng uchinchi darajali ko'phadni yoyilgan ko'rinishda yozing.",
+      "v": [
+        "x³ + 4x² − 7x − 10",
+        "x³ − 4x² − 7x + 10",
+        "x³ − 4x² + 7x − 10",
+        "x³ − 6x² − 7x + 10"
+      ],
+      "t": 1,
+      "izoh": "Ko'phad (x + 2)(x − 1)(x − 5) ko'rinishida tuziladi. Dastlab (x + 2)(x − 1) = x² + x − 2, so'ng uni (x − 5) ga ko'paytiramiz: x³ + x² − 2x − 5x² − 5x + 10 = x³ − 4x² − 7x + 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlardan-kophad-tuzish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#09aa4e65"
+    },
+    {
+      "q": "Uchinchi darajali tenglama ildizlarining yig'indisi 7, juft ko'paytmalari yig'indisi 6, ko'paytmasi esa −8 ga teng. Shu tenglamani tuzing.",
+      "v": [
+        "x³ + 7x² + 6x − 8 = 0",
+        "x³ − 7x² − 6x + 8 = 0",
+        "x³ − 7x² + 6x + 8 = 0",
+        "x³ − 7x² + 6x − 8 = 0"
+      ],
+      "t": 2,
+      "izoh": "Normallashgan kubik tenglama x³ − (yig'indi)x² + (juft ko'paytmalar)x − (ko'paytma) = 0 ko'rinishida yoziladi. Qiymatlarni qo'yamiz: x³ − 7x² + 6x − (−8) = 0, ya'ni x³ − 7x² + 6x + 8 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "viyetdan-tenglama-tuzish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#f82dcb75"
+    },
+    {
+      "q": "x³ − 6x² + 3x + 10 = 0 tenglamaning ildizlaridan biri 2 ga teng ekani ma'lum. Qolgan ikkita ildizni toping.",
+      "v": [
+        "−5 va 1",
+        "5 va 1",
+        "5 va −1",
+        "−5 va −1"
+      ],
+      "t": 2,
+      "izoh": "Ko'phadni x − 2 ga bo'lamiz. Gorner: 1; 1·2 − 6 = −4; −4·2 + 3 = −5; −5·2 + 10 = 0. Bo'linma x² − 4x − 5, uning ildizlari 5 va −1. Javob: 5 va −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bitta-ildiz-berilgan-qolganini-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#fbc62701"
+    },
+    {
+      "q": "Uchinchi darajali tenglamada ildizlar yig'indisi 4 ga teng, ildizlardan ikkitasi esa 1 va −3. Uchinchi ildizni toping.",
+      "v": [
+        "2",
+        "6",
+        "−6",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Uchala ildiz yig'indisi 4 bo'lishi kerak. Ma'lum ikkitasining yig'indisi 1 + (−3) = −2. Demak uchinchi ildiz 4 − (−2) = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchinchi-ildizni-viyetdan-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#af71b9fa"
+    },
+    {
+      "q": "P(x) = 3x⁴ − 2x³ + 5x² − x + 4 ko'phad koeffitsientlarining yig'indisi qanday qiymatga teng bo'ladi?",
+      "v": [
+        "15",
+        "9",
+        "3",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsientlar yig'indisi P(1) ga teng, chunki x = 1 da har bir daraja birga aylanadi. P(1) = 3 − 2 + 5 − 1 + 4 = 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsientlar-yigindisi-P1",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#4ff62567"
+    },
+    {
+      "q": "P(x) = 2x⁵ + 3x⁴ − x³ + 4x² − 6x + 1 ko'phad uchun P(1) + P(−1) yig'indisini hisoblang.",
+      "v": [
+        "10",
+        "3",
+        "16",
+        "−10"
+      ],
+      "t": 2,
+      "izoh": "P(1) = 2 + 3 − 1 + 4 − 6 + 1 = 3. P(−1) = −2 + 3 + 1 + 4 + 6 + 1 = 13. Yig'indi 3 + 13 = 16. Bu qiymat juft darajali hadlar yig'indisining ikkilanganiga teng: 2·(3 + 4 + 1) = 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "P1-va-Pminus1-birgalikda",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#41034f66"
+    },
+    {
+      "q": "P(x) = x⁴ + 2x³ − x + 5 ko'phadni x² − 1 ikkihadga bo'lgandagi qoldiqni toping.",
+      "v": [
+        "x + 6",
+        "−x + 6",
+        "x − 6",
+        "6x + 1"
+      ],
+      "t": 0,
+      "izoh": "Bo'luvchi 2-darajali bo'lgani uchun qoldiq ax + b ko'rinishida. x² − 1 = (x − 1)(x + 1) bo'lgani uchun P(1) = a + b va P(−1) = −a + b. P(1) = 1 + 2 − 1 + 5 = 7, P(−1) = 1 − 2 + 1 + 5 = 5. Sistemadan a = 1, b = 6, qoldiq x + 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkinchi-darajali-bolish-qoldigi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#1a2bf497"
+    },
+    {
+      "q": "P(x) ko'phad x − 1 ga bo'lganda qoldiq 3, x − 2 ga bo'lganda esa qoldiq 5 bo'ladi. Uni (x − 1)(x − 2) ko'paytmaga bo'lgandagi qoldiqni aniqlang.",
+      "v": [
+        "2x − 1",
+        "x + 2",
+        "2x + 1",
+        "−2x + 5"
+      ],
+      "t": 2,
+      "izoh": "Qoldiq ax + b ko'rinishida bo'ladi. P(1) = a + b = 3 va P(2) = 2a + b = 5. Ikkinchisidan birinchisini ayirsak a = 2, bundan b = 1. Demak qoldiq 2x + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-qoldiqdan-chiziqli-qoldiq",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#67167d64"
+    },
+    {
+      "q": "x⁵ − 32 ko'phad quyidagi ikkihadlardan qaysi biriga qoldiqsiz bo'linadi?",
+      "v": [
+        "x + 2",
+        "x − 2",
+        "x − 32",
+        "x + 32"
+      ],
+      "t": 1,
+      "izoh": "Bezu bo'yicha tekshiramiz. x = 2 da 2⁵ − 32 = 0, demak x − 2 ga qoldiqsiz bo'linadi. x = −2 da esa −32 − 32 = −64 ≠ 0. Javob: x − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajalar-ayirmasining-bolinishi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#3fe2b17c"
+    },
+    {
+      "q": "n natural son qanday bo'lganda xⁿ + 1 ko'phad x + 1 ikkihadga qoldiqsiz bo'linadi?",
+      "v": [
+        "n juft bo'lganda",
+        "n toq bo'lganda",
+        "har qanday n da bo'linadi",
+        "hech qanday n da bo'linmaydi"
+      ],
+      "t": 1,
+      "izoh": "Bezu bo'yicha qoldiq P(−1) = (−1)ⁿ + 1 ga teng. n juft bo'lsa (−1)ⁿ = 1 va qoldiq 2 chiqadi. n toq bo'lsa (−1)ⁿ = −1 va qoldiq nolga aylanadi. Javob: n toq bo'lganda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "n-jufttoqligi-va-bolinish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#9765a14f"
+    },
+    {
+      "q": "Fermer Anvar qulupnayni t hafta davomida yig'adi va hosil Q(t) = t³ − 8t² + 20t + 15 kg formula bilan o'lchanadi. Beshinchi haftadagi hosilni toping.",
+      "v": [
+        "25",
+        "40",
+        "200",
+        "440"
+      ],
+      "t": 1,
+      "izoh": "Gorner sxemasini t = 5 uchun qo'llaymiz: 1; 5 − 8 = −3; −15 + 20 = 5; 25 + 15 = 40. Bevosita tekshirsak 125 − 200 + 100 + 15 = 40 kg. Javob: 40 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-gorner-unum-hisoblash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#0ed60587"
+    },
+    {
+      "q": "Zavod x oyda D(x) = x³ − 3x² + 4x + 20 mln so'm daromad oladi. Bezu teoremasidan foydalanib to'rtinchi oydagi daromadni hisoblang.",
+      "v": [
+        "36",
+        "148",
+        "52",
+        "−108"
+      ],
+      "t": 2,
+      "izoh": "D(x) ni x − 4 ga bo'lgandagi qoldiq D(4) ga teng va aynan shu qiymat izlanmoqda. D(4) = 64 − 48 + 16 + 20 = 52 mln so'm. Javob: 52 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-bezu-qoldiq-manosi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#d1df2ee1"
+    },
+    {
+      "q": "Kichik korxonaning foydasi F(x) = x³ + ax² − 15x + 18 mln so'm modeli bilan hisoblanadi. Ikkinchi oyda foyda nolga teng bo'lgan bo'lsa, a ni toping.",
+      "v": [
+        "1",
+        "−1",
+        "4",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Shart F(2) = 0 ni beradi. F(2) = 8 + 4a − 30 + 18 = 4a − 4. Tenglamani yechamiz: 4a − 4 = 0, demak a = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-parametrni-shartdan-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#81a5e8f2"
+    },
+    {
+      "q": "Beton blokning hajmi V(x) = x³ + 4x² − 11x − 30 sm³, uzunligi (x + 5) sm, kengligi esa (x − 3) sm. Blok balandligini ifodalovchi ikkihadni toping.",
+      "v": [
+        "x − 2",
+        "x + 6",
+        "x + 2",
+        "x + 3"
+      ],
+      "t": 2,
+      "izoh": "Avval hajmni uzunlikka bo'lamiz. Gorner x = −5 uchun: 1; −5 + 4 = −1; 5 − 11 = −6; 30 − 30 = 0. Bo'linma x² − x − 6 = (x − 3)(x + 2). Kenglik (x − 3) bo'lgani uchun balandlik (x + 2) sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-hajmni-olchamga-bolish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#fbf81163"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi gilamning yuzi S(x) = 2x³ + x² − 13x + 6 m², bo'yi esa (x + 3) m. Gilam enini ifodalovchi ko'phadni ko'rsating.",
+      "v": [
+        "2x² + 7x + 8",
+        "2x² − 5x + 2",
+        "2x² − 5x − 2",
+        "2x² − 7x + 2"
+      ],
+      "t": 1,
+      "izoh": "Eni yuzani bo'yga bo'lish orqali topiladi. Gorner x = −3 uchun: 2; −6 + 1 = −5; 15 − 13 = 2; −6 + 6 = 0. Qoldiq nol, bo'linma 2x² − 5x + 2. Javob: 2x² − 5x + 2 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kophadni-ikkihadga-bolish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#2dadadd2"
+    },
+    {
+      "q": "Uchta metall detalning uzunliklari (sm) x³ − 24x² + 179x − 396 = 0 tenglamaning ildizlari. Detallarning umumiy uzunligini tenglamani yechmasdan toping.",
+      "v": [
+        "179",
+        "396",
+        "24",
+        "−24"
+      ],
+      "t": 2,
+      "izoh": "Ildizlarni topish shart emas: umumlashgan Viyetga ko'ra yig'indi −b/a ga teng. Bu yerda b = −24, a = 1, demak yig'indi 24 sm. Javob: 24 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-viyet-yigindi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#1c0c79f9"
+    },
+    {
+      "q": "Uchta idishdagi suv hajmlari (litr) x³ − 30x² + 275x − 750 = 0 tenglamaning ildizlariga teng. Shu uch hajmning ko'paytmasini hisoblang.",
+      "v": [
+        "275",
+        "750",
+        "−750",
+        "30"
+      ],
+      "t": 1,
+      "izoh": "Kubik tenglamada ildizlar ko'paytmasi −d/a ga teng. Bu yerda d = −750 va a = 1, demak ko'paytma 750. Javob: 750.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-viyet-kopaytma",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#2ed5e7bb"
+    },
+    {
+      "q": "Suv omboridagi sath H(t) = −t³ + 12t² − 41t + 30 metr qonuniyat bilan o'zgaradi (t — soatlar soni, model sath nolga tushguncha amal qiladi). Sath birinchi marta nolga tushadigan paytni toping.",
+      "v": [
+        "1 soatdan keyin",
+        "5 soatdan keyin",
+        "6 soatdan keyin",
+        "30 soatdan keyin"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich sath H(0) = 30 metr. Erkin had 30 ning bo'luvchilarini sinaymiz: H(1) = −1 + 12 − 41 + 30 = 0. Demak t = 1 ildiz, qolgan ildizlar 5 va 6, ular kattaroq. Sath birinchi marta 1 soatdan keyin nolga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-nol-nuqtani-ildizdan-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#1822ddb2"
+    },
+    {
+      "q": "Onlayn kursning obunachilari soni A(t) = t³ + 3t² − 10t + 500 formula bo'yicha o'zgaradi, bunda t — oylar soni. Yettinchi oyda obunachilar nechta bo'ladi?",
+      "v": [
+        "420",
+        "920",
+        "980",
+        "1060"
+      ],
+      "t": 1,
+      "izoh": "Gorner sxemasi t = 7 uchun: 1; 7 + 3 = 10; 70 − 10 = 60; 420 + 500 = 920. Tekshirish: 343 + 147 − 70 + 500 = 920. Javob: 920 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-gorner-unum-hisoblash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#bcadbbd8"
+    },
+    {
+      "q": "Tomoni 20 sm kvadrat kartonning burchaklaridan tomoni x sm kvadratchalar kesib olinib quti yasaladi, hajm V(x) = 4x³ − 80x² + 400x sm³. x = 3 sm da hajmni toping.",
+      "v": [
+        "196",
+        "588",
+        "867",
+        "294"
+      ],
+      "t": 1,
+      "izoh": "Gorner sxemasini x = 3 uchun qo'llaymiz: 4; 12 − 80 = −68; −204 + 400 = 196; 588 + 0 = 588. Bevosita: 108 − 720 + 1200 = 588 sm³. Javob: 588 sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-hajm-modeli-qiymati",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#6aed614c"
+    },
+    {
+      "q": "Tadbirkorning oylik foyda modeli C(x) = 2x³ − 5x² + kx − 12 mln so'm ko'rinishida. Uchinchi oyda foyda nolga aylansa, k ning qiymatini toping.",
+      "v": [
+        "1",
+        "−1",
+        "3",
+        "−3"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi oyda foyda nol bo'lishi C(3) = 0 degani, ya'ni Bezu teoremasiga ko'ra C(x) ko'phad x − 3 ga qoldiqsiz bo'linadi. C(3) = 54 − 45 + 3k − 12 = 3k − 3. Tenglamadan 3k = 3 va k = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-parametrni-shartdan-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#0aaf6213"
+    },
+    {
+      "q": "x⁴ − 1 ko'phadni x − 1 ikkihadga bo'lganda qanday bo'linma hosil bo'ladi?",
+      "v": [
+        "x³ + x² + x + 1",
+        "x³ − x² + x − 1",
+        "x³ + x² + x − 1",
+        "x³ + 1"
+      ],
+      "t": 0,
+      "izoh": "Gorner x = 1 uchun, koeffitsientlar 1, 0, 0, 0, −1: 1; 1; 1; 1; 0. Qoldiq nol, bo'linma koeffitsientlari 1, 1, 1, 1. Demak bo'linma x³ + x² + x + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchakli-bolish-bolinmani-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#af2eea3f"
+    },
+    {
+      "q": "3x³ − 2x² + 4 ko'phadni x − 2 ga bo'lganda bo'linma va qoldiq qanday bo'ladi?",
+      "v": [
+        "3x² + 4x + 8, qoldiq 4",
+        "3x² − 8x + 16, qoldiq 4",
+        "3x² + 4x + 8, qoldiq 20",
+        "3x² + 4x, qoldiq 20"
+      ],
+      "t": 2,
+      "izoh": "x hadi yo'q, shuning uchun koeffitsientlar 3, −2, 0, 4 deb yoziladi. Gorner x = 2 uchun: 3; 6 − 2 = 4; 8 + 0 = 8; 16 + 4 = 20. Bo'linma 3x² + 4x + 8, qoldiq 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchakli-bolish-bolinma-va-qoldiq",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#7223a06b"
+    },
+    {
+      "q": "x³ + 3x² − 4x − 12 ko'phadni x² − 4 ikkihadga bo'lganda hosil bo'ladigan bo'linmani toping.",
+      "v": [
+        "x − 3",
+        "x + 4",
+        "x + 3",
+        "x² + 3"
+      ],
+      "t": 2,
+      "izoh": "Guruhlaymiz: x³ + 3x² − 4x − 12 = x²(x + 3) − 4(x + 3) = (x² − 4)(x + 3). Demak x² − 4 ga bo'lganda bo'linma x + 3, qoldiq esa nol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkinchi-darajali-bolish-bolinmasi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#85eccba0"
+    },
+    {
+      "q": "x³ − 2x + 5 ko'phadni x² + 1 ga bo'lganda qoldiq qanday ko'rinishga ega bo'ladi?",
+      "v": [
+        "−x + 5",
+        "−3x + 5",
+        "3x + 5",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Bo'lishni bajaramiz: x³ : x² = x, (x² + 1)·x = x³ + x, ayirsak −3x + 5 qoladi. Uning darajasi bo'luvchi darajasidan kichik, demak qoldiq −3x + 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadratga-bolish-qoldigi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#8fdf2efe"
+    },
+    {
+      "q": "Bezu teoremasining mazmunini to'g'ri ifodalagan javobni tanlang.",
+      "v": [
+        "P(x) ni x − a ga bo'lgandagi bo'linma P(a) ga teng",
+        "P(x) ni x − a ga bo'lgandagi qoldiq P(a) ga teng",
+        "P(a) = 0 bo'lsa, a ko'phadning bosh koeffitsienti bo'ladi",
+        "Har qanday ko'phad chiziqli ko'paytuvchilarga ajraladi"
+      ],
+      "t": 1,
+      "izoh": "Bo'lish ayniyati P(x) = (x − a)·Q(x) + r ko'rinishida. Unga x = a ni qo'ysak birinchi qo'shiluvchi nolga aylanadi va P(a) = r hosil bo'ladi. Demak qoldiq P(a) ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bezu-teoremasi-tarifi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#67d757b3"
+    },
+    {
+      "q": "Gorner sxemasidan foydalanib P(x) = x⁵ − 3x⁴ + 2x² − 7 ko'phadning x = 2 dagi qiymatini hisoblang.",
+      "v": [
+        "−7",
+        "−15",
+        "−79",
+        "−1"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsientlar to'liq yoziladi: 1, −3, 0, 2, 0, −7. Gorner: 1; 2 − 3 = −1; −2 + 0 = −2; −4 + 2 = −2; −4 + 0 = −4; −8 − 7 = −15. Javob: −15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gorner-qiymat-hisoblash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#d5d15f6f"
+    },
+    {
+      "q": "3x³ − 4x² − 5x + 2 ko'phadni x − 2 ga bo'lgandagi bo'linma koeffitsientlarini Gorner sxemasi bilan aniqlang.",
+      "v": [
+        "3x² + 2x − 1",
+        "3x² − 2x − 1",
+        "3x² + 2x + 1",
+        "3x² − 10x + 15"
+      ],
+      "t": 0,
+      "izoh": "Gorner x = 2 uchun: 3; 6 − 4 = 2; 4 − 5 = −1; −2 + 2 = 0. Qoldiq nol, bo'linma koeffitsientlari 3, 2, −1. Demak bo'linma 3x² + 2x − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorner-bolinma-koeffitsientlari",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#4c495aec"
+    },
+    {
+      "q": "x³ + x² − 17x + 15 ko'phadning ildizi bo'lgan sonni quyidagilardan tanlang.",
+      "v": [
+        "5",
+        "−3",
+        "3",
+        "15"
+      ],
+      "t": 2,
+      "izoh": "Erkin had 15 ning bo'luvchilarini sinaymiz. P(3) = 27 + 9 − 51 + 15 = 0, demak 3 — ildiz. Tekshirish uchun: P(5) = 125 + 25 − 85 + 15 = 80 ≠ 0. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-ildizni-tekshirish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#a9ad7a35"
+    },
+    {
+      "q": "2x³ − 5x² − 4x + 3 ko'phadning to'g'ri yoyilmasini quyidagi variantlar orasidan tanlang.",
+      "v": [
+        "(x + 3)(x − 1)(2x − 1)",
+        "(x − 3)(x + 1)(2x + 1)",
+        "(x − 3)(x − 1)(2x − 1)",
+        "(x − 3)(x + 1)(2x − 1)"
+      ],
+      "t": 3,
+      "izoh": "Sinash orqali P(3) = 54 − 45 − 12 + 3 = 0 va P(−1) = −2 − 5 + 4 + 3 = 0. Uchinchi ildiz Viyet bo'yicha ko'paytmadan topiladi: 3·(−1)·x₃ = −3/2, ya'ni x₃ = 1/2. Demak yoyilma (x − 3)(x + 1)(2x − 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytuvchilarga-ajratish-yoyilma",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#fe028a26"
+    },
+    {
+      "q": "x³ − 3x² − 6x + 8 = 0 tenglamaning barcha ildizlarini butun ildizlarni izlash usuli bilan toping.",
+      "v": [
+        "2; −1; −4",
+        "−2; 1; 4",
+        "−2; −1; 4",
+        "1; 2; 4"
+      ],
+      "t": 1,
+      "izoh": "Erkin had 8 ning bo'luvchilarini sinaymiz: P(1) = 1 − 3 − 6 + 8 = 0. Gorner bilan bo'linma x² − 2x − 8 topiladi, uning ildizlari 4 va −2. Demak ildizlar −2, 1 va 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kubik-tenglamani-ildiz-topib-yechish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#f11c1ada"
+    },
+    {
+      "q": "3x³ − 12x² + 3x + 18 = 0 tenglama ildizlarining yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "−4",
+        "12",
+        "4",
+        "5/3"
+      ],
+      "t": 2,
+      "izoh": "Umumlashgan Viyetga ko'ra yig'indi −b/a ga teng. Bu yerda b = −12 va a = 3, demak yig'indi 12/3 = 4. Tekshirish: ko'phad 3(x + 1)(x − 2)(x − 3) ga yoyiladi, ildizlari −1; 2; 3, yig'indisi 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kubik-viyet-ildizlar-yigindisi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#55a8ecd5"
+    },
+    {
+      "q": "x³ + 4x² − 9x − 36 = 0 tenglama ildizlarining ko'paytmasi qanday qiymatga ega?",
+      "v": [
+        "−36",
+        "36",
+        "−4",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Kubik tenglamada ildizlar ko'paytmasi −d/a formuladan topiladi. Bu yerda d = −36, a = 1, demak ko'paytma −(−36) = 36. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kubik-viyet-ildizlar-kopaytmasi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#4c58f70a"
+    },
+    {
+      "q": "2x⁴ − 8x³ + 6x² + 8x − 8 = 0 tenglamaning to'rtta haqiqiy ildizi ko'paytmasini toping.",
+      "v": [
+        "4",
+        "−8",
+        "−4",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "To'rtinchi darajali tenglamada ildizlar ko'paytmasi e/a ga teng, chunki daraja juft. Bu yerda e = −8 va a = 2, demak ko'paytma −8/2 = −4. Tekshirish: ko'phad 2(x − 1)(x + 1)(x − 2)² ga yoyiladi, ildizlari −1; 1; 2; 2. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortinchi-daraja-viyet-yigindi-kopaytma",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#7b43a491"
+    },
+    {
+      "q": "x³ + 2x² − 8x − 5 = 0 tenglama ildizlari uchun teskari sonlar yig'indisi 1/x₁ + 1/x₂ + 1/x₃ ni hisoblang.",
+      "v": [
+        "8/5",
+        "−5/8",
+        "−8/5",
+        "−8"
+      ],
+      "t": 2,
+      "izoh": "Teskarilar yig'indisi (x₁x₂ + x₁x₃ + x₂x₃)/(x₁x₂x₃) ga teng. Viyet bo'yicha surat c/a = −8, maxraj −d/a = 5. Demak qiymat −8/5. Javob: −8/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kubik-teskarilar-yigindisi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#6c3b8c9f"
+    },
+    {
+      "q": "Sut kombinati x haftada M(x) = x³ + x² + 6x + 40 tonna sut qayta ishlaydi. Uchinchi haftadagi hajmni Bezu teoremasi yordamida toping.",
+      "v": [
+        "76",
+        "4",
+        "40",
+        "94"
+      ],
+      "t": 3,
+      "izoh": "M(x) ni x − 3 ga bo'lgandagi qoldiq M(3) ga teng. M(3) = 27 + 9 + 18 + 40 = 94 tonna. Javob: 94 tonna.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-bezu-qoldiq-manosi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#4b3547fe"
+    },
+    {
+      "q": "Kafening kunlik tushumi R(x) = 2x³ + x² − 4x + 300 ming so'm formula bilan berilgan. To'rtinchi kundagi tushumni Gorner sxemasi bilan hisoblang.",
+      "v": [
+        "428",
+        "460",
+        "300",
+        "812"
+      ],
+      "t": 0,
+      "izoh": "Gorner sxemasi x = 4 uchun: 2; 8 + 1 = 9; 36 − 4 = 32; 128 + 300 = 428. Tekshirish: 128 + 16 − 16 + 300 = 428 ming so'm. Javob: 428 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-gorner-unum-hisoblash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#2808b5d0"
+    },
+    {
+      "q": "To'g'ri burchakli akvariumning hajmi V(x) = x³ + 2x² − 15x − 36 litr, uning bir qirrasi esa (x + 3) dm. Qolgan ikki qirra ko'paytmasini toping.",
+      "v": [
+        "x² + 5x − 12",
+        "x² − x + 12",
+        "x² − 5x − 12",
+        "x² − x − 12"
+      ],
+      "t": 3,
+      "izoh": "Hajmni ma'lum qirraga bo'lamiz. Gorner x = −3 uchun: 1; −3 + 2 = −1; 3 − 15 = −12; 36 − 36 = 0. Qoldiq nol, bo'linma x² − x − 12. Javob: x² − x − 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-hajmni-olchamga-bolish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#8a8497ba"
+    },
+    {
+      "q": "Yer uchastkasining yuzi S(x) = 3x³ + 2x² − 7x + 2 m², bo'yi esa (3x − 1) m. Uchastka enini ifodalovchi ko'phadni toping.",
+      "v": [
+        "x² + x − 2",
+        "x² − x − 2",
+        "x² + x + 2",
+        "3x² + x − 2"
+      ],
+      "t": 0,
+      "izoh": "3x − 1 = 0 dan x = 1/3, bu nuqtada yuza nolga aylanadi, demak bo'linish qoldiqsiz. Bo'lishni bajaramiz: 3x³ : 3x = x², qolgani 3x² − 7x + 2; keyin 3x² : 3x = x, qolgani −6x + 2; oxirida −6x : 3x = −2. Bo'linma x² + x − 2, ya'ni en (x² + x − 2) m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-kophadni-ikkihadga-bolish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#39a55e50"
+    },
+    {
+      "q": "Uch do'stning to'plagan mablag'lari (mln so'm) x³ − 18x² + 95x − 150 = 0 tenglamaning ildizlari. Ularning umumiy mablag'ini toping.",
+      "v": [
+        "95",
+        "150",
+        "−18",
+        "18"
+      ],
+      "t": 3,
+      "izoh": "Tenglamani yechish shart emas. Umumlashgan Viyetga ko'ra ildizlar yig'indisi −b/a ga teng, ya'ni 18. Javob: 18 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-viyet-yigindi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#961acbbd"
+    },
+    {
+      "q": "Uchta yuk qutisining massalari (kg) 2x³ − 21x² + 61x − 42 = 0 tenglamaning ildizlariga teng. Shu massalar ko'paytmasini hisoblang.",
+      "v": [
+        "21",
+        "−21",
+        "42",
+        "10,5"
+      ],
+      "t": 0,
+      "izoh": "Kubik tenglamada ildizlar ko'paytmasi −d/a ga teng. Bu yerda d = −42 va a = 2, demak ko'paytma 42/2 = 21. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-viyet-kopaytma",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#0edcc203"
+    },
+    {
+      "q": "Omborda mahsulot zaxirasi Z(t) = −t³ + 15t² − 66t + 80 dona qonuniyat bilan o'zgaradi va model zaxira tugaguncha amal qiladi. Zaxira birinchi marta tugaydigan kunni toping.",
+      "v": [
+        "5-kuni",
+        "8-kuni",
+        "80-kuni",
+        "2-kuni"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich zaxira Z(0) = 80 dona, u kundan kunga kamayib boradi. Erkin had 80 ning bo'luvchilarini sinaymiz: Z(2) = −8 + 60 − 132 + 80 = 0. Qolgan ildizlar 5 va 8, ular kattaroq. Demak zaxira birinchi marta 2-kuni tugaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-nol-nuqtani-ildizdan-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#45e96818"
+    },
+    {
+      "q": "Uydagi suv iste'moli modeli W(x) = x³ − 6x² + mx + 16 kub metr, bunda x — oy raqami. To'rtinchi oyda iste'mol nolga teng bo'lsa, m ni toping.",
+      "v": [
+        "−4",
+        "4",
+        "16",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Shart W(4) = 0 ni beradi. W(4) = 64 − 96 + 4m + 16 = 4m − 16. Tenglamani yechamiz: 4m = 16, demak m = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-parametrni-shartdan-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#4345b817"
+    },
+    {
+      "q": "Basseyn hajmi V(x) = x³ + 7x² + 10x m³ ko'phad bilan beriladi. x = 4 bo'lganda basseyn hajmi qanchaga teng bo'ladi?",
+      "v": [
+        "176",
+        "216",
+        "132",
+        "120"
+      ],
+      "t": 1,
+      "izoh": "Gorner x = 4 uchun: 1; 4 + 7 = 11; 44 + 10 = 54; 216 + 0 = 216. Tekshirish: 64 + 112 + 40 = 216 m³. Javob: 216 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-hajm-modeli-qiymati",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#e6265d41"
+    },
+    {
+      "q": "Ombordagi bug'doy zaxirasi Z(t) = 2t³ − 9t² + 4t + 500 tonna. Z(t) ni t − 5 ga bo'lgandagi qoldiq nimani anglatadi va u nechaga teng?",
+      "v": [
+        "5-kundagi zaxirani, u 500 tonna",
+        "besh kun ichidagi o'rtacha zaxirani, u 545 tonna",
+        "zaxira 5-kunda tugaganini",
+        "5-kundagi zaxirani, u 545 tonna"
+      ],
+      "t": 3,
+      "izoh": "Bezu teoremasiga ko'ra t − 5 ga bo'lgandagi qoldiq Z(5) ga, ya'ni beshinchi kundagi zaxiraga teng. Z(5) = 250 − 225 + 20 + 500 = 545 tonna. Javob: 5-kundagi zaxira, 545 tonna.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-bezu-qoldiq-manosi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#3544287b"
+    },
+    {
+      "q": "Non zavodidagi qutining hajmi V(x) = 2x³ + 9x² + 7x − 6 sm³, balandligi esa (x + 2) sm. Qutining asos yuzini ifodalovchi ko'phadni toping.",
+      "v": [
+        "2x² + 5x − 3",
+        "2x² + 13x + 33",
+        "2x² + 5x + 3",
+        "2x² − 5x − 3"
+      ],
+      "t": 0,
+      "izoh": "Asos yuzi hajmni balandlikka bo'lish orqali topiladi. Gorner x = −2 uchun: 2; −4 + 9 = 5; −10 + 7 = −3; 6 − 6 = 0. Bo'linma 2x² + 5x − 3, qoldiq nol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-hajmni-olchamga-bolish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#db24454c"
+    },
+    {
+      "q": "Kutubxonaga t oyda kelgan o'quvchilar soni K(t) = t³ − 4t² + 9t + 120 formula bilan hisoblanadi. Oltinchi oydagi o'quvchilar sonini toping.",
+      "v": [
+        "192",
+        "246",
+        "534",
+        "120"
+      ],
+      "t": 1,
+      "izoh": "Gorner sxemasi t = 6 uchun: 1; 6 − 4 = 2; 12 + 9 = 21; 126 + 120 = 246. Tekshirish: 216 − 144 + 54 + 120 = 246. Javob: 246 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-gorner-unum-hisoblash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#1584735d"
+    },
+    {
+      "q": "x³ − 2x² − 11x + 12 ko'phad berilgan. Quyidagi sonlardan qaysi biri uning ildizi emas?",
+      "v": [
+        "1",
+        "4",
+        "−3",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Sinab ko'ramiz: P(1) = 1 − 2 − 11 + 12 = 0, P(4) = 64 − 32 − 44 + 12 = 0, P(−3) = −27 − 18 + 33 + 12 = 0. P(12) = 1728 − 288 − 132 + 12 = 1320 ≠ 0. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-ildizni-tekshirish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#2cb47234"
+    },
+    {
+      "q": "2x³ − 7x² + 6x − 1 = 0 tenglama ildizlarining juft-juft ko'paytmalari yig'indisi nechaga teng?",
+      "v": [
+        "3",
+        "−3",
+        "6",
+        "7/2"
+      ],
+      "t": 0,
+      "izoh": "Umumlashgan Viyet bo'yicha x₁x₂ + x₁x₃ + x₂x₃ = c/a. Bu yerda c = 6 va a = 2, demak yig'indi 6/2 = 3. Tekshirish: x = 1 ildiz, qolgan (2x² − 5x + 1) ko'paytuvchining diskriminanti 17 musbat, ya'ni uchala ildiz ham haqiqiy. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kubik-viyet-juft-kopaytmalar",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#4f69f165"
+    },
+    {
+      "q": "x³ − 6x² + 7x + 2 = 0 tenglamaning ildizlari kvadratlari yig'indisini Viyet formulalari yordamida hisoblang.",
+      "v": [
+        "50",
+        "36",
+        "13",
+        "22"
+      ],
+      "t": 3,
+      "izoh": "Viyet bo'yicha ildizlar yig'indisi 6, juft ko'paytmalar yig'indisi 7. Ayniyatdan: x₁² + x₂² + x₃² = 6² − 2·7 = 36 − 14 = 22. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kubik-ildizlar-kvadratlari-yigindisi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#2143dd7c"
+    },
+    {
+      "q": "5x³ + 15x² − 5x − 15 = 0 tenglamaning barcha ildizlari yig'indisi qanday qiymatga teng?",
+      "v": [
+        "3",
+        "15",
+        "−3",
+        "−15"
+      ],
+      "t": 2,
+      "izoh": "Ildizlar yig'indisi −b/a formuladan topiladi. Bu yerda b = 15 va a = 5, demak yig'indi −15/5 = −3. Tekshirish: ko'phad 5(x + 3)(x − 1)(x + 1) ga yoyiladi, ildizlari −3; 1; −1, yig'indisi −3. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kubik-viyet-ildizlar-yigindisi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#b71e39e5"
+    },
+    {
+      "q": "3x³ − 3x² − 18x + 18 = 0 tenglama ildizlarining ko'paytmasini umumlashgan Viyet formulasi bilan toping.",
+      "v": [
+        "−6",
+        "6",
+        "18",
+        "−18"
+      ],
+      "t": 0,
+      "izoh": "Kubik tenglamada ildizlar ko'paytmasi −d/a ga teng. Bu yerda d = 18 va a = 3, demak ko'paytma −18/3 = −6. Tekshirish: ko'phad 3(x − 1)(x² − 6) ga yoyiladi, ildizlari 1; √6; −√6, ko'paytmasi −6. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kubik-viyet-ildizlar-kopaytmasi",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#206ab9f4"
+    },
+    {
+      "q": "x⁴ + 2x³ − 7x² − 8x + 12 = 0 tenglamaning to'rtta haqiqiy ildizi yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "2",
+        "−3",
+        "−2",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "To'rtinchi darajali tenglamada ildizlar yig'indisi −b/a ga teng. Bu yerda b = 2 va a = 1, demak yig'indi −2. Tekshirish: ko'phad (x − 1)(x + 2)(x − 2)(x + 3) ga yoyiladi, ildizlari 1; −2; 2; −3, yig'indisi −2. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tortinchi-daraja-viyet-yigindi-kopaytma",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#3ba37be5"
+    },
+    {
+      "q": "Ildizlari −1, 3 va 4 bo'lgan, bosh koeffitsienti birga teng kubik ko'phadni yoyilgan ko'rinishda yozing.",
+      "v": [
+        "x³ + 6x² + 5x − 12",
+        "x³ − 6x² − 5x + 12",
+        "x³ − 6x² + 5x − 12",
+        "x³ − 6x² + 5x + 12"
+      ],
+      "t": 3,
+      "izoh": "Ko'phad (x + 1)(x − 3)(x − 4) ko'rinishida. Avval (x − 3)(x − 4) = x² − 7x + 12, so'ng (x + 1) ga ko'paytiramiz: x³ − 7x² + 12x + x² − 7x + 12 = x³ − 6x² + 5x + 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlardan-kophad-tuzish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#e836fd4e"
+    },
+    {
+      "q": "x³ + px² + 4x − 15 ko'phad x − 1 ikkihadga qoldiqsiz bo'linsa, p koeffitsientning qiymati qanday bo'ladi?",
+      "v": [
+        "−10",
+        "15",
+        "10",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Qoldiqsiz bo'linish sharti P(1) = 0. P(1) = 1 + p + 4 − 15 = p − 10. Tenglamadan p = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bezu-parametrni-bolinishdan-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#41ceb03d"
+    },
+    {
+      "q": "2x³ − x² + cx + 5 ko'phad x + 2 ga bo'lganda qoldiq −7 ga teng bo'ldi. c koeffitsientni aniqlang.",
+      "v": [
+        "−4",
+        "4",
+        "−11",
+        "11"
+      ],
+      "t": 0,
+      "izoh": "Bezu bo'yicha P(−2) = −7. P(−2) = −16 − 4 − 2c + 5 = −15 − 2c. Tenglamani yechamiz: −15 − 2c = −7, bundan −2c = 8 va c = −4. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-berilganda-koeffitsient",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#01f6fbcc"
+    },
+    {
+      "q": "6x³ + x² − 5x − 2 ko'phadni 3x + 2 ikkihadga bo'lganda hosil bo'ladigan bo'linmani toping.",
+      "v": [
+        "2x² + x − 1",
+        "2x² − x + 1",
+        "3x² − x − 1",
+        "2x² − x − 1"
+      ],
+      "t": 3,
+      "izoh": "Bo'lamiz: 6x³ : 3x = 2x², (3x + 2)·2x² = 6x³ + 4x², qolgani −3x² − 5x − 2. So'ng −3x² : 3x = −x, qolgani −3x − 2, oxirida −3x : 3x = −1 va qoldiq nol. Bo'linma 2x² − x − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchakli-bolish-bolinmani-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#a1a9f88c"
+    },
+    {
+      "q": "x⁴ − 2x² + 3 ko'phadni x + 1 ikkihadga bo'lganda bo'linma va qoldiq qanday bo'ladi?",
+      "v": [
+        "x³ + x² − x + 1, qoldiq 2",
+        "x³ − x² − x + 1, qoldiq 2",
+        "x³ − x² − x + 1, qoldiq 0",
+        "x³ − x² + x − 1, qoldiq 4"
+      ],
+      "t": 1,
+      "izoh": "Yetishmayotgan hadlar o'rniga nol yoziladi: 1, 0, −2, 0, 3. Gorner x = −1 uchun: 1; −1; −1; 1; 2. Bo'linma x³ − x² − x + 1, qoldiq 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchakli-bolish-bolinma-va-qoldiq",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#61344229"
+    },
+    {
+      "q": "P(x) = 4x³ + 3x² − 2x + 1 ko'phadning x = −3 nuqtadagi qiymatini Gorner sxemasi bilan hisoblang.",
+      "v": [
+        "130",
+        "−75",
+        "−74",
+        "−82"
+      ],
+      "t": 2,
+      "izoh": "Gorner x = −3 uchun: 4; −12 + 3 = −9; 27 − 2 = 25; −75 + 1 = −74. Tekshirish: −108 + 27 + 6 + 1 = −74. Javob: −74.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorner-qiymat-hisoblash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#7242dd16"
+    },
+    {
+      "q": "Gorner sxemasi x = −2 uchun 2, −1, 3, 0 qatorini berdi. Dastlabki uchinchi darajali ko'phad qanday ko'rinishga ega edi?",
+      "v": [
+        "2x³ + 3x² + x + 6",
+        "2x³ − 3x² + x + 6",
+        "2x³ + 3x² + x − 6",
+        "2x³ + 5x² + x + 6"
+      ],
+      "t": 0,
+      "izoh": "Qatordagi oxirgi son qoldiq (0), qolganlari bo'linma koeffitsientlari: 2x² − x + 3. Demak P(x) = (x + 2)(2x² − x + 3) = 2x³ − x² + 3x + 4x² − 2x + 6 = 2x³ + 3x² + x + 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gorner-qatorini-oqish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#815d07c2"
+    },
+    {
+      "q": "P(x) = (x + 4)·Q(x) − 9 tenglik barcha x qiymatlarda o'rinli bo'lsa, P(−4) nechaga teng bo'ladi?",
+      "v": [
+        "9",
+        "4",
+        "−4",
+        "−9"
+      ],
+      "t": 3,
+      "izoh": "Tenglikka x = −4 ni qo'yamiz: birinchi ko'paytuvchi (−4 + 4) nolga aylanadi. Shuning uchun P(−4) = −9. Javob: −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolish-ayniyatidan-qiymat",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#df4e646d"
+    },
+    {
+      "q": "Ixtiyoriy ko'phadni x − 5 ikkihadga bo'lganda qoldiq qanday ko'rinishda bo'ladi?",
+      "v": [
+        "Birinchi darajali ko'phad",
+        "O'zgarmas son",
+        "Ikkinchi darajali ko'phad",
+        "Har doim nolga teng"
+      ],
+      "t": 1,
+      "izoh": "Qoldiqning darajasi bo'luvchi darajasidan kichik bo'lishi shart. Bo'luvchi birinchi darajali bo'lgani uchun qoldiq nol darajali, ya'ni o'zgarmas son bo'ladi va u Bezu bo'yicha P(5) ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoldiq-darajasi-nazariy",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#b03c9930"
+    },
+    {
+      "q": "2x³ + 3x² − 8x + 3 ko'phadning ratsional ildizlari qaysi sonlar orasidan izlanishi kerak?",
+      "v": [
+        "±1, ±2, ±3, ±6",
+        "faqat ±1 va ±3",
+        "±1, ±3, ±1/2, ±3/2",
+        "±2, ±3, ±1/3"
+      ],
+      "t": 2,
+      "izoh": "Ratsional ildiz erkin had bo'luvchisining bosh koeffitsient bo'luvchisiga nisbati ko'rinishida bo'ladi. Erkin had 3 ning bo'luvchilari ±1, ±3; bosh koeffitsient 2 niki ±1, ±2. Nomzodlar: ±1, ±3, ±1/2, ±3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-ildiz-nomzodlarini-tanlash",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#f102809a"
+    },
+    {
+      "q": "Kompaniyaning qarzi Q(t) = t³ − 11t² + 34t − 24 mln so'm bilan o'lchanadi. Qarz nolga aylanadigan barcha oylarni toping.",
+      "v": [
+        "1-, 2- va 12-oylarda",
+        "2-, 3- va 4-oylarda",
+        "4-, 6- va 24-oylarda",
+        "1-, 4- va 6-oylarda"
+      ],
+      "t": 3,
+      "izoh": "Erkin had 24 ning bo'luvchilarini sinaymiz: Q(1) = 1 − 11 + 34 − 24 = 0. Gorner bilan bo'linma t² − 10t + 24 topiladi, uning ildizlari 4 va 6. Demak qarz 1-, 4- va 6-oylarda nolga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-barcha-ildizlarni-topish",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#c9167d93"
+    },
+    {
+      "q": "x⁴ + ax³ + bx² − 4x − 4 ko'phad ham x − 1 ga, ham x + 2 ga qoldiqsiz bo'linadi. a va b koeffitsientlarni toping.",
+      "v": [
+        "a = 3, b = 4",
+        "a = 4, b = 3",
+        "a = −4, b = 11",
+        "a = 1, b = 6"
+      ],
+      "t": 1,
+      "izoh": "P(1) = 1 + a + b − 4 − 4 = 0 dan a + b = 7. P(−2) = 16 − 8a + 4b + 8 − 4 = 0 dan −8a + 4b = −20, ya'ni −2a + b = −5. Ikki tenglamani ayirsak 3a = 12, demak a = 4 va b = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-bolinish-shartidan-sistema",
+      "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi#7062dec8"
+    }
+  ]
+}

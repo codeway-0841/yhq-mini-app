@@ -1,0 +1,531 @@
+{
+  "nom": "51-mavzu. Lorens Kuchi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Magnit maydonda harakatlanayotgan zaryadli zarraga maydon tomonidan ta'sir etuvchi kuch qanday ataladi?",
+      "v": [
+        "Lorens kuchi",
+        "Amper kuchi",
+        "Kulon kuchi",
+        "Arximed kuchi"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydonda harakatlanayotgan zaryadli zarraga ta'sir etuvchi kuch Lorens kuchi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#8ec7b9aa"
+    },
+    {
+      "q": "Lorens kuchining formulasi qanday?",
+      "v": [
+        "F = qυBsinα",
+        "F = IBl sinα",
+        "F = qυBcosα",
+        "F = qυB/sinα"
+      ],
+      "t": 0,
+      "izoh": "FL = qυBsinα, bunda q — zaryad, υ — tezlik, B — induksiya, α — tezlik bilan induksiya vektorlari orasidagi burchak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#d507801a"
+    },
+    {
+      "q": "Lorens kuchining yo'nalishi qaysi qoida yordamida aniqlanadi?",
+      "v": [
+        "Chap qo'l qoidasi",
+        "O'ng qo'l qoidasi",
+        "Burma qoidasi",
+        "Lens qoidasi"
+      ],
+      "t": 0,
+      "izoh": "Lorens kuchining yo'nalishi chap qo'l qoidasi yordamida aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#32826c45"
+    },
+    {
+      "q": "Chap qo'l qoidasida to'rt barmoq nima yo'nalishini ko'rsatadi?",
+      "v": [
+        "Musbat zaryadning harakat yo'nalishini",
+        "Magnit induksiya vektori yo'nalishini",
+        "Lorens kuchi yo'nalishini",
+        "Manfiy zaryadning harakat yo'nalishini"
+      ],
+      "t": 0,
+      "izoh": "Yoyilgan ko'rsatkich barmoqlar musbat zaryad harakatining yo'nalishini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#e6b270e6"
+    },
+    {
+      "q": "Chap qo'l qoidasida 90° ga ochilgan bosh barmoq nimani ko'rsatadi?",
+      "v": [
+        "Lorens kuchining yo'nalishini",
+        "Zaryadning tezlik yo'nalishini",
+        "Magnit induksiyasining yo'nalishini",
+        "Tokning yo'nalishini"
+      ],
+      "t": 0,
+      "izoh": "90° ga ochilgan bosh barmoq Lorens kuchining yo'nalishini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#2569136b"
+    },
+    {
+      "q": "Chap qo'l qoidasida kaftga nima tik tushishi kerak?",
+      "v": [
+        "Magnit induksiyasi vektori",
+        "Tezlik vektori",
+        "Lorens kuchi vektori",
+        "Zaryadning tezlanish vektori"
+      ],
+      "t": 0,
+      "izoh": "Chap qo'lning kaftiga magnit induksiyasi vektori tik tushishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#259b1040"
+    },
+    {
+      "q": "Manfiy zaryadga (masalan, elektronga) chap qo'l qoidasini qo'llaganda to'rt barmoq qanday joylashtiriladi?",
+      "v": [
+        "Elektron harakatining yo'nalishiga qarama-qarshi",
+        "Elektron harakatining yo'nalishi bo'ylab",
+        "Induksiya vektoriga parallel",
+        "Lorens kuchiga teskari"
+      ],
+      "t": 0,
+      "izoh": "Maydondagi elektronning harakatini aniqlashda to'rt barmoq elektronning harakat yo'nalishiga qarama-qarshi holatda joylashtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#fc9f0d00"
+    },
+    {
+      "q": "Zaryadli zarra magnit induksiya chiziqlari bo'ylab harakatlansa (α = 0), unga ta'sir qiluvchi kuch qanday bo'ladi?",
+      "v": [
+        "Nolga teng",
+        "Maksimal",
+        "Tezlikka teskari yo'nalgan",
+        "Induksiya chiziqlariga tik yo'nalgan"
+      ],
+      "t": 0,
+      "izoh": "sin 0° = 0 bo'lgani uchun α = 0 da Lorens kuchi ta'sir qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#e7680194"
+    },
+    {
+      "q": "Lorens kuchi qanday burchakda maksimal qiymatga erishadi?",
+      "v": [
+        "α = 90° bo'lganda",
+        "α = 0° bo'lganda",
+        "α = 180° bo'lganda",
+        "α = 45° bo'lganda"
+      ],
+      "t": 0,
+      "izoh": "sin 90° = 1 bo'lgani uchun kuch α = 90° da maksimal: FL = qυB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#5ed8c45b"
+    },
+    {
+      "q": "Zaryadli zarra bir jinsli magnit maydonga induksiya chiziqlariga tik yo'nalishda uchib kirsa, uning trayektoriyasi qanday bo'ladi?",
+      "v": [
+        "Aylana",
+        "To'g'ri chiziq",
+        "Parabola",
+        "Giperbola"
+      ],
+      "t": 0,
+      "izoh": "Lorens kuchi markazga intilma kuch vazifasini bajaradi va trayektoriya aylanadan iborat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#11804008"
+    },
+    {
+      "q": "Magnit maydonda zaryadli zarraga ta'sir etuvchi Lorens kuchi nima uchun markazga intilma kuch vazifasini bajaradi?",
+      "v": [
+        "U har doim zarraning harakat yo'nalishiga perpendikulyar yo'naladi",
+        "U zarra tezligini oshiradi",
+        "U zarra massasiga proporsional",
+        "U induksiya chiziqlariga parallel yo'naladi"
+      ],
+      "t": 0,
+      "izoh": "Lorens kuchi zarraning harakat yo'nalishiga perpendikulyar bo'lgani uchun markazga intilma kuch vazifasini bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#89a86651"
+    },
+    {
+      "q": "Lorens kuchi zaryadli zarra ustida ish bajaradimi?",
+      "v": [
+        "Yo'q, chunki kuch harakatga perpendikulyar",
+        "Ha, chunki kuch tezlikni oshiradi",
+        "Ha, chunki u ishni markazga intilma kuch orqali bajaradi",
+        "Faqat musbat zaryadlarda bajaradi"
+      ],
+      "t": 0,
+      "izoh": "Lorens kuchi harakatga perpendikulyar bo'lgani uchun ish bajarmaydi; u tezlikning faqat yo'nalishini o'zgartiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#82a28f12"
+    },
+    {
+      "q": "Magnit maydonda aylana bo'ylab harakatlanayotgan zaryadli zarraning trayektoriya radiusi formulasi qanday?",
+      "v": [
+        "R = mυ/(qB)",
+        "R = qB/(mυ)",
+        "R = mB/(qυ)",
+        "R = qυ/(mB)"
+      ],
+      "t": 0,
+      "izoh": "qυB = mυ²/R tenglikdan R = mυ/(qB) kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#35a13a52"
+    },
+    {
+      "q": "Zaryadli zarraning magnit maydondagi aylanish davri formulasi qanday?",
+      "v": [
+        "T = 2πm/(qB)",
+        "T = 2πqB/m",
+        "T = 2πmB/q",
+        "T = 2πR/(qB)"
+      ],
+      "t": 0,
+      "izoh": "T = 2πR/υ va R = mυ/(qB) dan T = 2πm/(qB) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#de8626d6"
+    },
+    {
+      "q": "Zaryadli zarraning magnit maydondagi aylanish davri uning tezligiga qanday bog'liq?",
+      "v": [
+        "Bog'liq emas",
+        "To'g'ri proporsional",
+        "Teskari proporsional",
+        "Kvadratik bog'liq"
+      ],
+      "t": 0,
+      "izoh": "T = 2πm/(qB) formulada tezlik ishtirok etmaydi, ya'ni davr zarra tezligiga bog'liq emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#a7f3bbbc"
+    },
+    {
+      "q": "Mass-spektrometr nima?",
+      "v": [
+        "Zaryadli zarralarni massalari bo'yicha tarkibiy qismlarga ajratuvchi asbob",
+        "Tok kuchini o'lchovchi asbob",
+        "Magnit induksiyasini o'lchovchi asbob",
+        "Zaryadni o'lchovchi asbob"
+      ],
+      "t": 0,
+      "izoh": "Vakuumda magnit va elektr maydon ta'sirida harakatlanayotgan zaryadli zarralarni massalari bo'yicha ajratuvchi asbob mass-spektrometr deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#9cf94d6c"
+    },
+    {
+      "q": "Mass-spektrometrlar qaysi sohada qo'llanadi?",
+      "v": [
+        "Kimyoviy elementlarning izotoplarini aniqlashda",
+        "Kuchlanishni o'lchashda",
+        "Tok yo'nalishini o'zgartirishda",
+        "Elektr energiyasini yig'ishda"
+      ],
+      "t": 0,
+      "izoh": "Mass-spektrometrlar kimyoviy elementlarning izotoplarini aniqlashda va moddalarni kimyoviy tahlil qilishda qo'llanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#ce040b2b"
+    },
+    {
+      "q": "Zaryadning tezligi 2 marta ortsa, bir jinsli magnit maydondagi Lorens kuchi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "O'zgarmaydi",
+        "2 marta kamayadi",
+        "4 marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "FL = qυBsinα bo'lgani uchun kuch tezlikka to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#4dcfa55c"
+    },
+    {
+      "q": "Magnit maydon induksiyasi 3 marta oshsa, Lorens kuchi qanday o'zgaradi?",
+      "v": [
+        "3 marta ortadi",
+        "3 marta kamayadi",
+        "9 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "FL = qυBsinα formulada kuch induksiyaga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#1f1ac104"
+    },
+    {
+      "q": "Zaryadli zarraning zaryadi 2 marta, tezligi esa 2 marta kamaysa, Lorens kuchi qanday o'zgaradi?",
+      "v": [
+        "O'zgarmaydi",
+        "2 marta ortadi",
+        "4 marta kamayadi",
+        "2 marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "FL = qυBsinα: q 2 marta ortib, υ 2 marta kamaygani uchun ko'paytma o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#208268ca"
+    },
+    {
+      "q": "Magnit maydonda aylana bo'ylab harakatlanayotgan zarra tezligi 2 marta ortsa, trayektoriya radiusi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "R = mυ/(qB) formulada radius tezlikka to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#1946485e"
+    },
+    {
+      "q": "Magnit maydonda aylana bo'ylab harakatlanayotgan zarraning zaryadi 2 marta ortsa, aylana radiusi qanday o'zgaradi?",
+      "v": [
+        "2 marta kamayadi",
+        "2 marta ortadi",
+        "O'zgarmaydi",
+        "4 marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "R = mυ/(qB) formulada radius zaryadga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#341d68fb"
+    },
+    {
+      "q": "Magnit maydon induksiyasi 2 marta oshsa, zaryadli zarraning aylanish davri qanday o'zgaradi?",
+      "v": [
+        "2 marta kamayadi",
+        "2 marta ortadi",
+        "O'zgarmaydi",
+        "4 marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "T = 2πm/(qB) formulada davr induksiyaga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#190633c0"
+    },
+    {
+      "q": "Elektron va proton bir xil tezlik bilan bir xil magnit maydonga tik uchib kirsa, qaysi biri kattaroq radiusli aylana chizadi?",
+      "v": [
+        "Proton, chunki uning massasi kattaroq",
+        "Elektron, chunki uning zaryadi kichik",
+        "Ikkalasi bir xil radiusli aylana chizadi",
+        "Buni aytib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "R = mυ/(qB): zaryadlar moduli bir xil, lekin proton massasi ancha katta, shuning uchun uning radiusi kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#90407999"
+    },
+    {
+      "q": "Amper kuchi bilan Lorens kuchi o'rtasidagi bog'liqlik nimada?",
+      "v": [
+        "Amper kuchi har bir zaryadli zarraga ta'sir etuvchi kuchlarning yig'indisidan iborat",
+        "Ikkalasi bir xil fizik tabiatga ega emas",
+        "Lorens kuchi Amper kuchining kvadratiga teng",
+        "Amper kuchi faqat yolg'iz zarraga ta'sir qiladi"
+      ],
+      "t": 0,
+      "izoh": "Tokli o'tkazgichga ta'sir etuvchi Amper kuchini har bir zaryadli zarraga ta'sir etuvchi kuchlarning yig'indisi deb qarash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#e2c026d2"
+    },
+    {
+      "q": "O'tkazgichdan o'tayotgan tok kuchi I = e∙n∙υ∙S formulada υ nimani bildiradi?",
+      "v": [
+        "Elektronlarning tartibli harakat tezligini",
+        "Elektronning aylanish davrini",
+        "O'tkazgich uzunligini",
+        "Magnit induksiyasini"
+      ],
+      "t": 0,
+      "izoh": "Bu formulada υ — elektronlarning tartibli harakat tezligi, n — erkin elektronlar konsentrasiyasi, S — kesim yuzi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#67c3e1da"
+    },
+    {
+      "q": "Lorens kuchining o'lchov birligi nima?",
+      "v": [
+        "Nyuton",
+        "Tesla",
+        "Veber",
+        "Genri"
+      ],
+      "t": 0,
+      "izoh": "Lorens kuchi kuch bo'lgani uchun XBSda nyuton (N) da o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#8658a55d"
+    },
+    {
+      "q": "Zaryadli zarra magnit maydonga o'tkir burchak ostida uchib kirsa, uning trayektoriyasi qanday bo'ladi?",
+      "v": [
+        "Vint (spiral) simon egri chiziq",
+        "Sof aylana",
+        "To'g'ri chiziq",
+        "Parabola"
+      ],
+      "t": 0,
+      "izoh": "Maydonga o'tkir burchak ostida kirganda tezlikning induksiya bo'ylab tarkibiy qismi saqlanib, trayektoriya vint simon bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#e47ee479"
+    },
+    {
+      "q": "Lorens kuchi formuladagi α burchak nimani bildiradi?",
+      "v": [
+        "Tezlik vektori bilan induksiya vektori orasidagi burchakni",
+        "Zarraning harakat burchagini",
+        "Aylana radiusining burchagini",
+        "Induksiya bilan Amper kuchi orasidagi burchakni"
+      ],
+      "t": 0,
+      "izoh": "α — tezlik vektori bilan magnit maydon induksiya vektori orasidagi burchak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#b150e3b8"
+    },
+    {
+      "q": "7.24-rasmdagi holatda magnit maydonga uchib kirayotgan protonga ta'sir etuvchi Lorens kuchi qanday yo'nalgan?",
+      "v": [
+        "O'ng tomonga",
+        "Chap tomonga",
+        "Yuqoriga",
+        "Pastga"
+      ],
+      "t": 0,
+      "izoh": "Chap qo'l qoidasiga ko'ra, maydonga kirayotgan protonga ta'sir qiluvchi Lorens kuchi o'ng tomonga yo'nalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#c7a419fe"
+    },
+    {
+      "q": "Xuddi shu maydonga uchib kirayotgan elektronga ta'sir etuvchi Lorens kuchi protonnikiga nisbatan qanday yo'nalgan?",
+      "v": [
+        "Teskari yo'nalishda",
+        "Bir xil yo'nalishda",
+        "Perpendikulyar yo'nalishda",
+        "Uncha yo'nalishga ega emas"
+      ],
+      "t": 0,
+      "izoh": "Elektron manfiy zaryadli bo'lgani uchun unga ta'sir etuvchi Lorens kuchi protonnikiga teskari yo'naladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#0fa5ffe1"
+    },
+    {
+      "q": "Aylana bo'ylab harakatlanayotgan zarraning markazdan qochma kuchi qaysi kuchga teng?",
+      "v": [
+        "Lorens kuchiga",
+        "Og'irlik kuchiga",
+        "Kulon kuchiga",
+        "Ishqalanish kuchiga"
+      ],
+      "t": 0,
+      "izoh": "Lorens kuchi ish bajarmaganligi uchun markazdan qochma kuchning son qiymati Lorens kuchiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#f1f219f2"
+    },
+    {
+      "q": "Zarra aylanani to'liq bir marta aylanishi uchun ketgan vaqt qanday ataladi?",
+      "v": [
+        "Aylanish davri",
+        "Chastota",
+        "Impuls",
+        "Tezlanish"
+      ],
+      "t": 0,
+      "izoh": "Zarraning aylanani to'liq bir marta aylanishi uchun ketgan vaqti aylanish davri deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#18cb27b8"
+    },
+    {
+      "q": "Zarra massasi 2 marta ortsa, magnit maydondagi aylanish davri qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi",
+        "4 marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "T = 2πm/(qB) formulada davr massaga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#75d915aa"
+    },
+    {
+      "q": "Lorens kuchi zaryadli zarraning kinetik energiyasini o'zgartiradimi?",
+      "v": [
+        "Yo'q, u faqat harakat yo'nalishini o'zgartiradi",
+        "Ha, uni doimo oshiradi",
+        "Ha, uni doimo kamaytiradi",
+        "Faqat manfiy zaryadlarda o'zgartiradi"
+      ],
+      "t": 0,
+      "izoh": "Lorens kuchi ish bajarmaydi, shuning uchun tezlik moduli va kinetik energiya o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m51-lorens-kuchi#586011ad"
+    }
+  ]
+}

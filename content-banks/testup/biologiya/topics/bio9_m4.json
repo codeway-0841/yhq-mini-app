@@ -1,0 +1,981 @@
+{
+  "nom": "Biologiya-9, 4-§. Prokariot hujayralar, 13-bet",
+  "bolim": "II BOB. Organizmlarning xilma-xilligi",
+  "savollar": [
+    {
+      "q": "Organik olam qaysi ikkita katta dunyoga boʻlinadi?",
+      "v": [
+        "Prokariotlar va eukariotlar",
+        "Avtotroflar va geterotroflar",
+        "Aeroblar va anaeroblar",
+        "Parazitlar va saprofitlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra organik olam ikkita katta dunyoga — prokariotlar va eukariotlarga boʻlinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m4#7d1500e8"
+    },
+    {
+      "q": "Prokariotlar deb qanday organizmlarga aytiladi?",
+      "v": [
+        "Yadrosi toʻliq shakllanmagan, haqiqiy yadroga ega boʻlmagan organizmlarga",
+        "Yadrosi toʻliq shakllangan organizmlarga",
+        "Faqat koʻp hujayrali organizmlarga",
+        "Faqat fotosintez qiluvchi organizmlarga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra prokariotlar — yadrosi toʻliq shakllanmagan, yaʼni haqiqiy yadroga ega boʻlmagan organizmlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m4#99088a4c"
+    },
+    {
+      "q": "Prokariotlarda irsiy belgilar qayerda joylashgan?",
+      "v": [
+        "Nukleotidlarda",
+        "Yadro qobigʻida",
+        "Mitoxondriyada",
+        "Ribosomada"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra prokariotlarda irsiy belgilar nukleotidlarda joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#15994b39"
+    },
+    {
+      "q": "Prokariotlarda DNK — dezoksiribonuklein kislota qanday shaklda boʻladi?",
+      "v": [
+        "Halqasimon",
+        "Ikki qavat spiralsimon toʻgʻri chiziqli",
+        "Tarmoqlangan",
+        "Yulduzsimon"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra prokariotlarda DNK — dezoksiribonuklein kislota halqasimon shaklda boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#ce9cfd9b"
+    },
+    {
+      "q": "Prokariotlarda jinsiy koʻpayish qanday kechadi?",
+      "v": [
+        "Kuzatilmaydi",
+        "Faqat suvda kechadi",
+        "Sporalar orqali kechadi",
+        "Mitoz orqali kechadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra prokariotlarda jinsiy koʻpayish kuzatilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m4#489038d0"
+    },
+    {
+      "q": "Prokariot hujayrada quyidagilardan qaysi biri boʻlmaydi?",
+      "v": [
+        "Hujayra markazi va mitotik ip",
+        "Hujayra qobigʻi",
+        "Sitoplazma",
+        "DNK"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra prokariot hujayrada hujayra markazi va mitotik ip boʻlmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#4406f535"
+    },
+    {
+      "q": "Prokariot hujayra qanday yoʻl bilan boʻlinadi?",
+      "v": [
+        "Amitoz yoʻl bilan",
+        "Mitoz yoʻl bilan",
+        "Meyoz yoʻl bilan",
+        "Kurtaklanish yoʻli bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra prokariot hujayra amitoz yoʻl bilan boʻlinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#8bd9e708"
+    },
+    {
+      "q": "Prokariot hujayrada qaysi asosiy organoidlar uchramaydi?",
+      "v": [
+        "Plastida va mitoxondriya",
+        "Ribosoma va sitoplazma",
+        "Hujayra qobigʻi va DNK",
+        "Xivchin va nukleotid"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra prokariot hujayrada plastida va mitoxondriya kabi asosiy organoidlar uchramaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#d9154bb2"
+    },
+    {
+      "q": "Prokariotlarda hujayra qobigʻi qanday moddadan tashkil topgan?",
+      "v": [
+        "Murein yoki pektin moddasidan",
+        "Faqat sellyulozadan",
+        "Faqat xitindan",
+        "Faqat oqsildan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra prokariotlarda hujayra qobigʻi murein yoki pektin moddasidan tashkil topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#86dda70c"
+    },
+    {
+      "q": "Xivchinli prokariotlarning baʼzi vakillaridagi xivchin qanday tuzilgan?",
+      "v": [
+        "Oddiy tuzilgan",
+        "Murakkab koʻp qavatli tuzilgan",
+        "Kiprikchalar toʻplamidan iborat",
+        "Muskul toladan iborat"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra xivchinli prokariotlarning baʼzi vakillaridagi xivchin oddiy tuzilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#80ad1c36"
+    },
+    {
+      "q": "Prokariotlarning koʻpchiligi qanday xususiyatga ega?",
+      "v": [
+        "Erkin azotni oʻzlashtirish",
+        "Faqat suvda oʻsish",
+        "Faqat parazitlik qilish",
+        "Nur bilan ovqatlanmaslik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra prokariotlarning koʻpchiligi erkin azotni oʻzlashtirish xususiyatiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#b0b8490d"
+    },
+    {
+      "q": "Prokariotlarning oziqlanishi qanday kechadi?",
+      "v": [
+        "Oziq moddalarning hujayra qobigʻi orqali shimib olinishi bilan",
+        "Ogʻiz teshigi orqali yutish bilan",
+        "Hazm qiluvchi vakuolalar yordamida",
+        "Fagotsitoz yoʻli bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra prokariotlarning oziqlanishi oziq moddalarning hujayra qobigʻi orqali shimib olinishi bilan kechadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#3938dc0d"
+    },
+    {
+      "q": "Prokariot hujayrada baʼzan qanday vakuolalar uchraydi?",
+      "v": [
+        "Gazli vakuolalar",
+        "Hazm qiluvchi vakuolalar",
+        "Qisqaruvchi vakuolalar",
+        "Yigʻuvchi vakuolalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra prokariotlarda hazm qiluvchi vakuolalar boʻlmaydi, baʼzan gazli vakuolalar uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#4ae5093d"
+    },
+    {
+      "q": "Prokariotlarga qaysi organizmlar kiradi?",
+      "v": [
+        "Bakteriyalar va koʻkyashil suvoʻtlari",
+        "Zamburugʻlar va lishayniklar",
+        "Sodda hayvonlar va suvoʻtlar",
+        "Yuksak oʻsimliklar va bakteriyalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra prokariotlarga bakteriyalar va koʻkyashil suvoʻtlari kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m4#5f73d226"
+    },
+    {
+      "q": "Bakteriyalar qanday organizmlar hisoblanadi?",
+      "v": [
+        "Yer sharidagi sodda tuzilgan eng qadimgi va koʻz bilan koʻrib boʻlmaydigan organizmlar",
+        "Eng murakkab tuzilgan koʻp hujayrali organizmlar",
+        "Faqat suvda yashovchi yirik organizmlar",
+        "Yadrosi toʻliq shakllangan sodda organizmlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bakteriyalar yer sharidagi sodda tuzilgan eng qadimgi va koʻz bilan koʻrib boʻlmaydigan sodda organizmlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#e556d5f2"
+    },
+    {
+      "q": "Bakteriyalar asosan qanday yoʻl bilan koʻpayadi?",
+      "v": [
+        "Oddiy boʻlinish yoʻli bilan",
+        "Jinsiy koʻpayish yoʻli bilan",
+        "Meyoz yoʻli bilan",
+        "Urugʻ orqali"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bakteriyalar oddiy koʻpayishi (boʻlinish yoʻli) bilan xarakterlanadi, jinsiy koʻpayish uchramaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#8a09981f"
+    },
+    {
+      "q": "Baʼzi avtotrof bakteriyalarni hisobga olmaganda, bakteriyalar qanday oziqlanadi?",
+      "v": [
+        "Geterotrof",
+        "Avtotrof",
+        "Mikst (aralash)",
+        "Xemosintez orqali"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra baʼzi avtotrof bakteriyalarni hisobga olmaganda, bakteriyalar geterotrof oziqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#0668b13f"
+    },
+    {
+      "q": "Bakteriyalarning hujayra poʻsti qanday moddadan iborat?",
+      "v": [
+        "Murein moddasidan",
+        "Pektin moddasidan",
+        "Sellyuloza moddasidan",
+        "Xitin moddasidan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bakteriyalarning hujayra poʻsti murein moddasidan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#36a36138"
+    },
+    {
+      "q": "Bakteriyalar tuzilishi jihatidan qanday organizmlar hisoblanadi?",
+      "v": [
+        "Bir hujayrali, baʼzan ipsimon yoki shoxlangan, koloniyali",
+        "Faqat koʻp hujayrali va toʻqimali",
+        "Faqat yirik koloniyali va yadroli",
+        "Faqat ipsimon va shoxlanmagan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bakteriyalar bir hujayrali, baʼzan ipsimon yoki shoxlangan, koloniyali organizmlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#191dba9b"
+    },
+    {
+      "q": "Bakteriyalar shakl jihatidan nechta guruhga ajratilgan?",
+      "v": [
+        "Uch guruhga",
+        "Ikki guruhga",
+        "Toʻrt guruhga",
+        "Besh guruhga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bakteriyalar shakl jihatidan uch guruhga ajratilgan: kokklar, batsillalar, vibrionlar va spirillalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#38aa73c6"
+    },
+    {
+      "q": "Sharsimon shakldagi bakteriyalar qanday nomlanadi?",
+      "v": [
+        "Kokklar",
+        "Batsillalar",
+        "Vibrionlar",
+        "Spirillalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sharsimon shakldagi bakteriyalar kokklar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#2164553b"
+    },
+    {
+      "q": "Tayoqsimon shakldagi bakteriyalar qanday nomlanadi?",
+      "v": [
+        "Batsillalar",
+        "Kokklar",
+        "Spirillalar",
+        "Vibrionlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tayoqsimon shakldagi bakteriyalar batsillalar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#f8bf20bf"
+    },
+    {
+      "q": "Buralgan (spiralsimon) shakldagi bakteriyalar qanday nomlanadi?",
+      "v": [
+        "Vibrionlar va spirillalar",
+        "Kokklar va batsillalar",
+        "Faqat kokklar",
+        "Faqat batsillalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra buralgan shakldagi bakteriyalar vibrionlar va spirillalar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#3679df29"
+    },
+    {
+      "q": "Bakteriyalar noqulay sharoitda nima hosil qilish xususiyatiga ega?",
+      "v": [
+        "Spora",
+        "Kista",
+        "Vakuola",
+        "Koloniya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bakteriyalar noqulay sharoitda spora hosil qilish xususiyatiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#652e3848"
+    },
+    {
+      "q": "Spora holatida bakteriyalar oʻz hayotchanligini qancha vaqtgacha saqlab qoladi?",
+      "v": [
+        "Bir necha yilgacha",
+        "Bir necha soatgacha",
+        "Bir necha kungacha",
+        "Bir necha oygacha"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sporalar tashqi omillar taʼsiriga chidamli boʻlib, bakteriyalar spora holatida bir necha yilgacha hayotchanligini saqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#8d28b496"
+    },
+    {
+      "q": "Bakteriyalar asosan nima yordamida tarqaladi?",
+      "v": [
+        "Shamol va suv yordamida",
+        "Faqat hayvonlar yordamida",
+        "Faqat inson yordamida",
+        "Faqat hasharotlar yordamida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bakteriyalar (sporalar) asosan shamol va suv yordamida tarqaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#8d748f20"
+    },
+    {
+      "q": "Erkin kislorodli muhitda yashovchi bakteriyalar qanday nomlanadi?",
+      "v": [
+        "Aerob",
+        "Anaerob",
+        "Saprofit",
+        "Parazit"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra erkin kislorodli muhitda yashovchi bakteriyalar aerob deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#58a618f2"
+    },
+    {
+      "q": "Kislorodsiz muhitda yashovchi bakteriyalar qanday nomlanadi?",
+      "v": [
+        "Anaerob",
+        "Aerob",
+        "Avtotrof",
+        "Saprofit"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra kislorodsiz muhitda yashovchi bakteriyalar anaerob deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#c2a957a6"
+    },
+    {
+      "q": "Oʻpka sili kasalligini qanday bakteriya qoʻzgʻatadi?",
+      "v": [
+        "Tayoqchasimon bakteriya",
+        "Sharsimon bakteriya",
+        "Spiralsimon bakteriya",
+        "Vibrion bakteriya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻpka sili kasalligini tayoqchasimon bakteriya qoʻzgʻatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#c321bcd0"
+    },
+    {
+      "q": "Sil kasalligi qanday xususiyatga ega kasallik hisoblanadi?",
+      "v": [
+        "Sekin rivojlanadigan",
+        "Tez rivojlanadigan",
+        "Umuman rivojlanmaydigan",
+        "Bir kunda oʻtib ketadigan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sil kasalligi sekin rivojlanadigan kasallik hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#c46f085d"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri bakteriyalar orqali tez tarqaladigan xavfli kasallik hisoblanadi?",
+      "v": [
+        "Oʻlat, vabo, kuydirgi",
+        "Gripp, angina, gaymorit",
+        "Ichburugʻ, boʻgʻma, qoqshol",
+        "Rak, diabet, gepatit"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bakteriyalar orqali tez tarqaladigan xavfli kasalliklarga oʻlat, vabo, kuydirgi kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#7a267daf"
+    },
+    {
+      "q": "Oʻlat kasalligini keltirib chiqaradigan bakteriyalar qanday tarqaladi?",
+      "v": [
+        "Sichqon va kalamushlarda yashaydigan burgalar orqali",
+        "Havo-tomchi yoʻli orqali",
+        "Ifloslangan suv orqali",
+        "Chivinlar chaqishi orqali"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻlat kasalligini keltirib chiqaradigan bakteriyalar sichqon va kalamushlarda yashaydigan burgalar orqali tarqaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#45279525"
+    },
+    {
+      "q": "Kasallik qoʻzgʻatuvchi bakteriyalarga qarshi kurash chora-tadbirlaridan biri nima?",
+      "v": [
+        "Oldindan emlash",
+        "Faqat dam olish",
+        "Suvni koʻp ichish",
+        "Ochlik dietasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra kasallik qoʻzgʻatuvchi bakteriyalarga qarshi kurash chora-tadbirlaridan biri oldindan emlash hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#50ad94e4"
+    },
+    {
+      "q": "Emlash orqali qaysi xavfli kasalliklarning oldi olinadi?",
+      "v": [
+        "Ichburugʻ, boʻgʻma, qoqshol",
+        "Oʻlat, vabo, kuydirgi",
+        "Sil, gripp, angina",
+        "Rak, diabet, astma"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra emlash orqali ichburugʻ, boʻgʻma, qoqshol kabi xavfli kasalliklarning oldi olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#5e9ab0ca"
+    },
+    {
+      "q": "Bakteriyalarning foydali jihatlaridan biri qaysi?",
+      "v": [
+        "Organik moddalarning parchalanishi, chirishi va achishini amalga oshirish",
+        "Havoni tozalash",
+        "Suvni bugʻlantirish",
+        "Toshlarni yemirish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bakteriyalarning foydali jihatlari — organik moddalarning parchalanishi, chirishi va achishini amalga oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#57747841"
+    },
+    {
+      "q": "Achish jarayonidan foydalanib nima tayyorlanadi?",
+      "v": [
+        "Sut mahsulotlari",
+        "Metall buyumlar",
+        "Plastmassa",
+        "Shisha idishlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra turli achish jarayonlaridan sut mahsulotlarini tayyorlashda, konservalashda va silos bostirishda foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#6e11c08c"
+    },
+    {
+      "q": "Bakteriyalar faoliyatidan yem-xashak oʻsimliklarini saqlashda qaysi jarayonda foydalaniladi?",
+      "v": [
+        "Silos bostirishda",
+        "Muzlatishda",
+        "Quritishda",
+        "Tuzlashda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bakteriyalar faoliyatidan yem-xashak oʻsimliklaridan silos bostirishda foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#ce0da275"
+    },
+    {
+      "q": "Bakteriyalar faoliyatidan yana qaysi mahsulotlarni olishda foydalaniladi?",
+      "v": [
+        "Spirt va sirkalar olishda, tolalarni ajratishda",
+        "Metall va shisha olishda",
+        "Plastmassa ishlab chiqarishda",
+        "Neft qazib olishda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra spirt va sirkalar olishda, tolalarni ajratishda ham bakteriyalarning faoliyatidan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#e653677e"
+    },
+    {
+      "q": "Avtotrof bakteriyalar organik moddalar toʻplash uchun qaysi energiyadan foydalanadi?",
+      "v": [
+        "Quyosh energiyasi yoki kimyoviy energiya",
+        "Faqat mexanik energiya",
+        "Faqat issiqlik energiyasi",
+        "Faqat elektr energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra avtotrof bakteriyalar organik moddalar toʻplash uchun quyosh energiyasi yoki kimyoviy energiyadan foydalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#6a05a2a3"
+    },
+    {
+      "q": "Tugunak bakteriyalar yiliga bir gektar maydonda qancha azot toʻplaydi?",
+      "v": [
+        "200 kg gacha",
+        "20 kg gacha",
+        "2000 kg gacha",
+        "50 kg gacha"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tugunak bakteriyalar yiliga bir gektar maydonda 200 kg gacha azot toʻplaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#051913e5"
+    },
+    {
+      "q": "Bakteriyalar faoliyati natijasida tabiatda nimaning davriy aylanishi amalga oshiriladi?",
+      "v": [
+        "Azotning",
+        "Fosforning",
+        "Uglerodning",
+        "Oltingugurtning"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bakteriyalar faoliyati natijasida tabiatda azotning davriy aylanishi amalga oshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#20de4629"
+    },
+    {
+      "q": "Odamlar, oʻsimlik va hayvonlarda xavfli kasalliklarni keltirib chiqaruvchi bakteriyalar qanday nomlanadi?",
+      "v": [
+        "Parazit bakteriyalar",
+        "Saprofit bakteriyalar",
+        "Avtotrof bakteriyalar",
+        "Tugunak bakteriyalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra turli xil xavfli kasalliklarni keltirib chiqaruvchi bakteriyalar parazit bakteriyalar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#3f9b9dec"
+    },
+    {
+      "q": "Ozuqa mahsulotlarining buzilishiga sababchi boʻluvchi bakteriyalar qanday nomlanadi?",
+      "v": [
+        "Saprofit bakteriyalar",
+        "Parazit bakteriyalar",
+        "Avtotrof bakteriyalar",
+        "Aerob bakteriyalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ozuqa mahsulotlarining buzilishiga sababchi boʻluvchi bakteriyalar saprofit bakteriyalar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#48899965"
+    },
+    {
+      "q": "Koʻk-yashil suvoʻtlar oʻsimliklar dunyosining qanday vakillari hisoblanadi?",
+      "v": [
+        "Eng qadimgi vakillari",
+        "Eng yosh vakillari",
+        "Eng murakkab vakillari",
+        "Eng yirik vakillari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻk-yashil suvoʻtlar oʻsimliklar dunyosining eng qadimgi vakillari boʻlib, juda sodda tuzilishi bilan farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#294b6147"
+    },
+    {
+      "q": "Koʻk-yashil suvoʻtlar hujayrasida qaysi pigmentlar koʻproq boʻladi?",
+      "v": [
+        "Koʻk fikotsian va yashil xlorofill",
+        "Qizil karotin va sariq ksantofill",
+        "Faqat qora melanin",
+        "Faqat qizil antotsian"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻk-yashil suvoʻtlar hujayrasida koʻk fikotsian va yashil xlorofill pigmentlari koʻproq boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#6f212ec1"
+    },
+    {
+      "q": "Koʻk-yashil suvoʻtlar hujayrasining tiriklik qismi haqida qaysi tavsif toʻgʻri?",
+      "v": [
+        "Yadro va boshqa hujayra organoidlariga ajralmagan",
+        "Yadro va barcha organoidlarga aniq ajralgan",
+        "Faqat yadrosi ajralgan",
+        "Faqat mitoxondriyaga ega"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻk-yashil suvoʻtlar bakteriyalarga oʻxshab hujayrasining tiriklik qismi yadro va boshqa organoidlarga ajralmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#5c30d17e"
+    },
+    {
+      "q": "Koʻk-yashil suvoʻtlarning hujayra poʻsti qaysi moddadan iborat?",
+      "v": [
+        "Pektindan",
+        "Mureindan",
+        "Sellyulozadan",
+        "Xitindan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻk-yashil suvoʻtlarning hujayra poʻsti pektindan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#4fb7678b"
+    },
+    {
+      "q": "Koʻk-yashil suvoʻtlar hujayrasida fotosintez mahsuli sifatida nima zaxira boʻlib toʻplanadi?",
+      "v": [
+        "Oqsil donachalari",
+        "Kraxmal donachalari",
+        "Yogʻ tomchilari",
+        "Glikogen"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻk-yashil suvoʻtlar hujayrasida fotosintez mahsuli sifatida oqsil donachalari zaxira modda boʻlib toʻplanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#097fbe33"
+    },
+    {
+      "q": "Koʻk-yashil suvoʻtlar odatda qanday yoʻl bilan koʻpayadi?",
+      "v": [
+        "Ikkiga boʻlinish yoʻli bilan",
+        "Jinsiy koʻpayish yoʻli bilan",
+        "Urugʻ orqali",
+        "Kurtaklanish yoʻli bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻk-yashil suvoʻtlar hujayrasi odatda ikkiga boʻlinish yoʻli bilan koʻpayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#fd8d6554"
+    },
+    {
+      "q": "Koʻk-yashil suvoʻtlarning ipsimon vakillari nima yordamida koʻpayadi?",
+      "v": [
+        "Gormogoniylar yordamida",
+        "Sporalar yordamida",
+        "Gametalar yordamida",
+        "Kurtaklar yordamida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ipsimon vakillari iplarining bir necha qismlarga ajralishi, yaʼni gormogoniylar yordamida koʻpayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#17a26733"
+    },
+    {
+      "q": "Koʻk-yashil suvoʻtlarning bir hujayrali vakiliga qaysi organizm misol boʻladi?",
+      "v": [
+        "Xrokokk (Chroccoccus)",
+        "Ossillatoriya (Ossillatoria)",
+        "Nostok (Nostoc)",
+        "Spirogira"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻk-yashil suvoʻtlarning bir hujayrali vakiliga xrokokk (Chroccoccus) misol boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#35878892"
+    },
+    {
+      "q": "Koʻk-yashil suvoʻtlarning ipsimon vakiliga qaysi organizm misol boʻladi?",
+      "v": [
+        "Ossillatoriya (Ossillatoria)",
+        "Xrokokk (Chroccoccus)",
+        "Nostok (Nostoc)",
+        "Xlorella"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻk-yashil suvoʻtlarning ipsimon vakiliga ossillatoriya (Ossillatoria) misol boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#406c430e"
+    },
+    {
+      "q": "Koʻk-yashil suvoʻtlarning koloniyali vakiliga qaysi organizm misol boʻladi?",
+      "v": [
+        "Nostok (Nostoc)",
+        "Xrokokk (Chroccoccus)",
+        "Ossillatoriya (Ossillatoria)",
+        "Ulotriks"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻk-yashil suvoʻtlarning koloniyali vakiliga nostok (Nostoc) misol boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#eecab7d8"
+    },
+    {
+      "q": "Ossillatoriya hujayrasining oʻlchami haqida qaysi tavsif toʻgʻri?",
+      "v": [
+        "Hujayrasining eni boʻyidan bir necha marta katta",
+        "Hujayrasining boʻyi enidan bir necha marta katta",
+        "Hujayrasi mutlaqo dumaloq",
+        "Hujayrasi juda uzun ipsimon"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ossillatoriya hujayrasining eni boʻyidan bir necha marta katta boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#805e6305"
+    },
+    {
+      "q": "Ossillatoriya sitoplazmasida qaysi ikki qism ajratiladi?",
+      "v": [
+        "Rangsiz sentroplazma va rangli xromatoplazma",
+        "Rangli sentroplazma va rangsiz xromatoplazma",
+        "Yadro va sitoplazma",
+        "Ektoplazma va endoplazma"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ossillatoriya sitoplazmasida rangsiz sentroplazma va uni oʻrab olgan rangli xromatoplazma ajratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#be30e311"
+    },
+    {
+      "q": "Ossillatoriya ipi qanday yoʻl bilan koʻpayadi?",
+      "v": [
+        "Alohida gormogoniylarga ajralib ketish yoʻli bilan",
+        "Jinsiy koʻpayish yoʻli bilan",
+        "Spora hosil qilish yoʻli bilan",
+        "Kurtaklanish yoʻli bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ossillatoriya ipi alohida gormogoniylarga ajralib ketish yoʻli bilan koʻpayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#611014d7"
+    },
+    {
+      "q": "Ossillatoriyani tabiatda asosan qayerda uchratish mumkin?",
+      "v": [
+        "Sholipoyalar, koʻlmak suvlar, hovuz va koʻllarda",
+        "Faqat shoʻr dengizlarda",
+        "Faqat qaynar buloqlarda",
+        "Faqat togʻ tumanlarida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ossillatoriyani sholipoyalar, koʻlmak suvlar, hovuz va koʻllarda koʻplab uchratish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#39602ae3"
+    },
+    {
+      "q": "Nostok koloniyasi qanday kattalikda boʻladi?",
+      "v": [
+        "Yongʻoq yoki olxoʻri donasidek",
+        "Tovuq tuxumidek",
+        "Nuqta kabi juda mayda",
+        "Bir metrgacha uzun"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra nostok koloniya holda yashovchi suvoʻti boʻlib, koloniyasi yongʻoq yoki olxoʻri donasidek kattalikda boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#e742ec9d"
+    },
+    {
+      "q": "Nostok koloniyasi nima bilan qoplangan?",
+      "v": [
+        "Shilimshiq poʻst bilan",
+        "Qattiq ohak qobiq bilan",
+        "Xitin qatlami bilan",
+        "Mumsimon parda bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra nostok koloniyasi shilimshiq poʻst bilan qoplangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#474732fb"
+    },
+    {
+      "q": "Nostok koloniyasi tabiatda asosan qayerda tarqalgan?",
+      "v": [
+        "Togʻli tumanlarda buloq, soy va ariqlarda",
+        "Faqat okean tubida",
+        "Faqat choʻl qumlarida",
+        "Faqat sholipoyalarda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra nostok koloniyasi koʻpincha togʻli tumanlarda buloq, soy va ariqlarda keng tarqalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#56970505"
+    },
+    {
+      "q": "Koʻk-yashil suvoʻtlar tashqi muhitning noqulay sharoitlariga qanday munosabatda?",
+      "v": [
+        "Ancha moslashuvchan",
+        "Umuman moslashmaydigan",
+        "Faqat issiqda yashaydigan",
+        "Faqat sovuqda yashaydigan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻk-yashil suvoʻtlar tashqi muhitning noqulay sharoitlariga ancha moslashuvchan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#b624e41b"
+    },
+    {
+      "q": "Koʻk-yashil suvoʻtlarni moslashuvchanligi tufayli yana qayerlarda uchratish mumkin?",
+      "v": [
+        "Chuchuk va shoʻr suvlarda, tuproqda, hatto qaynar buloqlarda",
+        "Faqat toza chuchuk suvlarda",
+        "Faqat muzliklar ustida",
+        "Faqat quruq choʻl qumlarida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻk-yashil suvoʻtlarni chuchuk va shoʻr suvlarda, tuproq va uning yuzasida, hattoki qaynar buloqlarda ham uchratish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#b47a8892"
+    },
+    {
+      "q": "Markaziy Osiyo choʻllarida koʻk-yashil suvoʻtlar qaysi jarayonda qatnashadi?",
+      "v": [
+        "Tuproq hosil boʻlishi jarayonida",
+        "Toshlarning yemirilishi jarayonida",
+        "Suv bugʻlanishi jarayonida",
+        "Havo tozalanishi jarayonida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Markaziy Osiyo choʻllarida koʻk-yashil suvoʻtlar tuproq hosil boʻlishi jarayonlarida qatnashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#9d4019c4"
+    },
+    {
+      "q": "Koʻk-yashil suvoʻtlar tuproqni nima bilan boyitadi?",
+      "v": [
+        "Azot bilan",
+        "Fosfor bilan",
+        "Kaliy bilan",
+        "Temir bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻk-yashil suvoʻtlar atmosferadagi erkin azotni oʻzlashtiradi va tuproqni azotga boyitadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m4#f8e39ec1"
+    },
+    {
+      "q": "Nostokning baʼzi turlari qaysi mamlakatlarda ozuqa sifatida ishlatiladi?",
+      "v": [
+        "Yaponiya va Xitoyda",
+        "Rossiya va Germaniyada",
+        "Braziliya va Meksikada",
+        "Misr va Hindistonda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Yaponiya va Xitoyda nostokning baʼzi turlari ozuqa sifatida ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m4#89a2a8dc"
+    }
+  ]
+}

@@ -1,0 +1,801 @@
+{
+  "nom": "Biologiya-9, 61-§. Mutatsion (genotipik) oʻzgaruvchanlik, 163-bet",
+  "bolim": "VII BOB. Genetika asoslari",
+  "savollar": [
+    {
+      "q": "Organizm genotipining oʻzgarishi bilan boradigan va bir nechta avlodlarda saqlanadigan oʻzgaruvchanlik qanday nomlanadi?",
+      "v": [
+        "Irsiy (mutatsion) oʻzgaruvchanlik",
+        "Modifikatsion oʻzgaruvchanlik",
+        "Fenotipik oʻzgaruvchanlik",
+        "Kombinativ oʻzgaruvchanlik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra organizm genotipining oʻzgarishi bilan boradigan va bir nechta avlodlarda saqlanadigan oʻzgaruvchanlik irsiy (mutatsion) oʻzgaruvchanlik deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m61#bd866dc2"
+    },
+    {
+      "q": "Irsiy (mutatsion) oʻzgaruvchanlikda hosil boʻlgan oʻzgarishlar necha avlodda saqlanadi?",
+      "v": [
+        "Bir nechta avlodlarda",
+        "Faqat bitta avlodda",
+        "Faqat somatik hujayralarda",
+        "Faqat tashqi muhitda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsion oʻzgaruvchanlikdagi oʻzgarishlar bir nechta avlodlarda saqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m61#a73c0836"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri irsiy (mutatsion) oʻzgaruvchanlikka aniq koʻzga tashlanadigan misol boʻla oladi?",
+      "v": [
+        "Kalta oyoqli qoʻylarning paydo boʻlishi",
+        "Barg uzunligining oʻlchamiga qarab oʻzgarishi",
+        "Yorugʻlikda oʻsimlik bargining yashillashuvi",
+        "Ovqatlanishga qarab hayvon vaznining ortishi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra kalta oyoqli qoʻylarning paydo boʻlishi mutatsion oʻzgaruvchanlikka aniq koʻzga tashlanadigan misoldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#9bf06380"
+    },
+    {
+      "q": "Mushukda barmoqlarning ayri boʻlishi qanday oʻzgaruvchanlik turiga misol boʻladi?",
+      "v": [
+        "Irsiy (mutatsion) oʻzgaruvchanlik",
+        "Modifikatsion oʻzgaruvchanlik",
+        "Reaksiya normasi",
+        "Fenotipik oʻzgaruvchanlik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mushuk barmoqlarining ayri boʻlishi aniq koʻzga tashlanadigan irsiy (mutatsion) oʻzgaruvchanlikka misol qilib keltiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#044be85a"
+    },
+    {
+      "q": "Odamlarda barmoqlarning kalta boʻlishi qanday oʻzgaruvchanlik turiga misol boʻladi?",
+      "v": [
+        "Irsiy (mutatsion) oʻzgaruvchanlik",
+        "Modifikatsion oʻzgaruvchanlik",
+        "Reaksiya normasi",
+        "Fenotipik oʻzgaruvchanlik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra odamlarda barmoqlarning kalta boʻlishi mutatsion oʻzgaruvchanlikka misol qilib koʻrsatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#e1542533"
+    },
+    {
+      "q": "Odamlarda koʻp barmoqlilik hodisasi ilmiy tilda qanday ataladi?",
+      "v": [
+        "Polidaktiliya",
+        "Albinizm",
+        "Poliploidiya",
+        "Geterozigota"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra odamlarda koʻp barmoqlilik polidaktiliya deb ataladi va u mutatsion oʻzgaruvchanlikka misoldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#a4e80861"
+    },
+    {
+      "q": "Pigmentlarning boʻlmasligi hodisasi qanday nomlanadi?",
+      "v": [
+        "Albinizm",
+        "Polidaktiliya",
+        "Poliploidiya",
+        "Mutagenez"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra pigmentlarning boʻlmasligi albinizm deb ataladi va bu mutatsion oʻzgaruvchanlikka misoldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#1aa0b86f"
+    },
+    {
+      "q": "Genetik materialning irsiy oʻzgarishi qanday nomlanadi?",
+      "v": [
+        "Mutatsiya",
+        "Modifikatsiya",
+        "Reaksiya normasi",
+        "Konvergensiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genetik materialning irsiy oʻzgarishiga mutatsiyalar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m61#3d109ac4"
+    },
+    {
+      "q": "Xushboʻy noʻxatning kalta poyali navlari va qat-qat tojibarg hosil qiladigan oʻsimliklar qanday oʻzgarishlar natijasida paydo boʻlgan?",
+      "v": [
+        "Toʻsatdan vujudga keladigan va nasldan-naslga oʻtadigan oʻzgarishlar",
+        "Tashqi muhit taʼsiridagi vaqtinchalik oʻzgarishlar",
+        "Reaksiya normasi doirasidagi oʻzgarishlar",
+        "Faqat somatik oʻzgarishlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bu navlar toʻsatdan vujudga keladigan va qatʼiy ravishda nasldan-naslga oʻtadigan oʻzgarishlar natijasida paydo boʻlgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#0c916f38"
+    },
+    {
+      "q": "Mutatsiyalar nima tufayli hosil boʻladi?",
+      "v": [
+        "Gen yoki xromosomaning tuzilmasi oʻzgarishi tufayli",
+        "Faqat tashqi muhit harorati tufayli",
+        "Faqat ovqatlanish rejimi tufayli",
+        "Reaksiya normasining kengayishi tufayli"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsiyalar gen yoki xromosomaning tuzilmasini oʻzgarishi tufayli hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#007399f4"
+    },
+    {
+      "q": "Mutatsiyalar tur ichida qanday ahamiyatga ega?",
+      "v": [
+        "Tur ichidagi xilma-xillikning birdan-bir manbayi",
+        "Tur ichidagi oʻzgarishlarni butunlay toʻxtatuvchi omil",
+        "Faqat modifikatsion oʻzgarishlar manbayi",
+        "Reaksiya normasini belgilovchi asosiy omil"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsiyalar tur ichidagi xilma-xillikning birdan-bir manbayi boʻlib xizmat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#eacd89cf"
+    },
+    {
+      "q": "Mutatsiyalar namoyon boʻlish xarakteriga qarab qaysi ikki xilga ajratiladi?",
+      "v": [
+        "Dominant va retsessiv",
+        "Generativ va somatik",
+        "Gen va xromosoma",
+        "Foydali va neytral"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsiyalar namoyon boʻlish xarakteriga qarab dominant va retsessiv boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#8f67cef6"
+    },
+    {
+      "q": "Mutatsiyalarning koʻpchiligi qanday xarakterda boʻladi?",
+      "v": [
+        "Retsessiv",
+        "Dominant",
+        "Neytral",
+        "Foydali"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsiyalarning koʻpchiligi retsessiv boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m61#9a4aec6f"
+    },
+    {
+      "q": "Retsessiv mutatsiyalar qanday holatdagi organizmlarda yashirin holda uchraydi?",
+      "v": [
+        "Geterozigota holdagi organizmlarda",
+        "Faqat gomozigota holdagi organizmlarda",
+        "Faqat somatik hujayralarda",
+        "Faqat jinssiz koʻpayuvchi organizmlarda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra retsessiv mutatsiyalar geterozigota holdagi organizmlarda yashirin holda uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#8f7704de"
+    },
+    {
+      "q": "Retsessiv mutatsiyalarning geterozigota holatda yashirin uchrashi nima uchun muhim?",
+      "v": [
+        "Turning yashashi uchun muhim ahamiyatga ega",
+        "Modifikatsiyalarni kuchaytirish uchun muhim",
+        "Reaksiya normasini toraytirish uchun muhim",
+        "Poliploidiyani oldini olish uchun muhim"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra retsessiv mutatsiyalarning yashirin holda uchrashi turning yashashi uchun muhim ahamiyatga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#77e4bed0"
+    },
+    {
+      "q": "Odatda mutatsiyalar organizmga qanday taʼsir koʻrsatadi?",
+      "v": [
+        "Zararli boʻlib, biokimyoviy jarayonlar tuzilishiga oʻzgartirish kiritadi",
+        "Doimo foydali boʻlib, hosildorlikni oshiradi",
+        "Hech qanday taʼsir koʻrsatmaydi",
+        "Faqat tashqi muhitni oʻzgartiradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra odatda mutatsiyalar zararli boʻlib, organizmning nozik muvozanatdagi biokimyoviy jarayonlar tuzilishiga oʻzgartirishlar kiritadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#88e0799a"
+    },
+    {
+      "q": "Dominant mutatsiyaga ega organizmlar gomo va geterozigota holatlarda koʻpincha qanday boʻladi?",
+      "v": [
+        "Yashovchan boʻlmaydi va rivojlanishning dastlabki bosqichlaridayoq nobud boʻladi",
+        "Doimo yashovchan va serhosil boʻladi",
+        "Faqat somatik hujayralarda saqlanadi",
+        "Neytral xarakter kasb etadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra dominant mutatsiyaga ega organizmlar gomo va geterozigota holatlarda koʻpincha yashovchan boʻlmaydi va individual rivojlanishning dastlabki bosqichlaridayoq nobud boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#81efc9f0"
+    },
+    {
+      "q": "Tashqi muhit oʻzgarishi natijasida ilgari zararli boʻlgan mutatsiyalar bilan nima yuz berishi mumkin?",
+      "v": [
+        "Organizmga foydali taʼsir koʻrsatishi mumkin",
+        "Butunlay yoʻqolib ketishi shart",
+        "Doimo zararli boʻlib qolishi shart",
+        "Modifikatsiyaga aylanib ketishi shart"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tashqi muhit oʻzgarishi natijasida ilgari zararli boʻlgan mutatsiyalar organizmga foydali taʼsir koʻrsatishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#689124a1"
+    },
+    {
+      "q": "Foydali boʻlib qolgan mutatsiyalarni tashuvchi organizmlar qaysi jarayon natijasida saralanib boradi?",
+      "v": [
+        "Tabiiy tanlanish",
+        "Sunʼiy urugʻlanish",
+        "Modifikatsion oʻzgaruvchanlik",
+        "Poliploidiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra foydali mutatsiyalarni tashuvchi organizmlar tabiiy tanlanish natijasida saralanib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#9b7e66a7"
+    },
+    {
+      "q": "Mutatsiyalar paydo boʻladigan joyiga qarab qaysi ikki xilga boʻlinadi?",
+      "v": [
+        "Generativ va somatik",
+        "Dominant va retsessiv",
+        "Gen va xromosoma",
+        "Foydali va zararli"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsiyalar paydo boʻladigan joyiga qarab generativ va somatik boʻlishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#90eed8dd"
+    },
+    {
+      "q": "Jinsiy hujayralarda paydo boʻlgan mutatsiyalar qanday nomlanadi?",
+      "v": [
+        "Generativ mutatsiyalar",
+        "Somatik mutatsiyalar",
+        "Gen mutatsiyalari",
+        "Xromosoma mutatsiyalari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra jinsiy hujayralarda paydo boʻlgan mutatsiyalar generativ mutatsiyalar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#e0c07540"
+    },
+    {
+      "q": "Generativ mutatsiyalar qachon namoyon boʻladi?",
+      "v": [
+        "Faqat keyingi boʻgʻinlarda",
+        "Faqat shu organizmning oʻzida",
+        "Faqat jinssiz koʻpayishda",
+        "Umuman namoyon boʻlmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra generativ mutatsiyalar shu organizmning belgilariga taʼsir qilmaydi, u faqat keyingi boʻgʻinlarda namoyon boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#ef8238eb"
+    },
+    {
+      "q": "Somatik hujayralarning genlari oʻzgarganda hosil boʻlgan mutatsiya qayerda namoyon boʻladi?",
+      "v": [
+        "Shu organizmning oʻzida namoyon boʻladi",
+        "Faqat keyingi avlodda namoyon boʻladi",
+        "Faqat jinsiy hujayralarda namoyon boʻladi",
+        "Umuman namoyon boʻlmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra somatik hujayralarning genlari oʻzgarsa, bunday mutatsiyalar shu organizmning oʻzida namoyon boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#8f15a3bf"
+    },
+    {
+      "q": "Somatik hujayralar genlaridagi oʻzgarish jinsiy koʻpayishda keyingi avlodga oʻtadimi?",
+      "v": [
+        "Yoʻq, jinsiy koʻpayishda keyingi avlodga oʻtmaydi",
+        "Ha, doimo keyingi avlodga oʻtadi",
+        "Faqat generativ boʻlsa oʻtadi",
+        "Faqat dominant boʻlsa oʻtadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra somatik hujayralar genlaridagi oʻzgarish jinsiy koʻpayishda keyingi avlodga oʻtmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#29bb1f42"
+    },
+    {
+      "q": "Jinssiz koʻpayishda mutatsiyaga uchragan gen boʻlsa, hosil boʻladigan mutatsiya qanday nomlanadi?",
+      "v": [
+        "Somatik mutatsiyalar",
+        "Generativ mutatsiyalar",
+        "Gen mutatsiyalari",
+        "Neytral mutatsiyalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra jinssiz koʻpayishda organizm mutatsiyaga uchragan hujayradan koʻpaysa, bunday mutatsiyalar somatik mutatsiyalar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#2d0fa2a2"
+    },
+    {
+      "q": "Jinssiz koʻpayishdagi somatik mutatsiyalar keyingi avlodlarga oʻtadimi?",
+      "v": [
+        "Ha, keyingi avlodlarga oʻtishi mumkin",
+        "Yoʻq, hech qachon oʻtmaydi",
+        "Faqat generativ boʻlsa oʻtadi",
+        "Faqat tabiiy tanlanish orqali oʻtadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra jinssiz koʻpayishdagi somatik mutatsiyalar keyingi avlodlarga oʻtishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#9324d566"
+    },
+    {
+      "q": "Somatik mutatsiyalardan oʻsimlikshunoslikda qanday maqsadda foydalaniladi?",
+      "v": [
+        "Madaniy oʻsimliklarning yangi navlarini yaratishda",
+        "Faqat tuproq unumdorligini oshirishda",
+        "Faqat zararkunandalarga qarshi kurashishda",
+        "Faqat urugʻlarni saqlashda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻsimlikshunoslikda somatik mutatsiyalardan madaniy oʻsimliklarning yangi navlarini yaratishda keng foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#d5ff7d74"
+    },
+    {
+      "q": "Mutatsiyalar paydo boʻlish darajalariga qarab qaysi ikki xilga ajratiladi?",
+      "v": [
+        "Gen va xromosoma mutatsiyalari",
+        "Dominant va retsessiv mutatsiyalari",
+        "Generativ va somatik mutatsiyalari",
+        "Foydali va zararli mutatsiyalari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsiyalar paydo boʻlish darajalariga qarab gen va xromosoma mutatsiyalariga ajratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#2970d2d2"
+    },
+    {
+      "q": "Bir gen doirasidagi bitta yoki bir nechta nukleotidlarning oʻzgarishi bilan bogʻliq mutatsiya qanday nomlanadi?",
+      "v": [
+        "Gen yoki nuqtali mutatsiyalar",
+        "Xromosoma mutatsiyalari",
+        "Somatik mutatsiyalar",
+        "Poliploidiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bir gen doirasidagi bitta yoki bir nechta nukleotidlarning oʻzgarishi yoki almashinishi bilan bogʻliq mutatsiyalar gen yoki nuqtali mutatsiyalar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#0a35d9d4"
+    },
+    {
+      "q": "Gen mutatsiyalari oqsil molekulasiga qanday taʼsir koʻrsatadi?",
+      "v": [
+        "Polipeptid zanjirdagi aminokislotalar ketma-ketligini yangilab, funksional faollikni oʻzgartiradi",
+        "Oqsil miqdorini oʻzgarmasdan qoldiradi",
+        "Faqat oqsil rangini oʻzgartiradi",
+        "Oqsilni butunlay yoʻqotmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra gen mutatsiyalari polipeptid zanjirdagi aminokislotalar ketma-ketligini yangilaydi va oqsil molekulasining funksional faolligini oʻzgartiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#dd93d061"
+    },
+    {
+      "q": "Xromosoma tuzilmasining oʻzgarishi qanday nomlanadi?",
+      "v": [
+        "Xromosoma mutatsiyasi",
+        "Gen mutatsiyasi",
+        "Nuqtali mutatsiya",
+        "Somatik mutatsiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra xromosoma tuzilmasining oʻzgarishi xromosoma mutatsiyasi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#2722f053"
+    },
+    {
+      "q": "Xromosoma mutatsiyalari koʻpincha nima tufayli vujudga keladi?",
+      "v": [
+        "Xromosomaning maʼlum bir qismining yoʻqolishi tufayli",
+        "Bitta nukleotidning almashinishi tufayli",
+        "Tashqi muhit haroratining oʻzgarishi tufayli",
+        "Reaksiya normasining kengayishi tufayli"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra xromosoma mutatsiyalari xromosomaning maʼlum bir qismining yoʻqolishi tufayli vujudga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#d28af19f"
+    },
+    {
+      "q": "Xromosomadan ajralgan qism gomologik boʻlmagan xromosoma bilan birikkanida nima yuz beradi?",
+      "v": [
+        "Genlarning yangi kombinatsiyasi paydo boʻladi va ularning oʻzaro taʼsir xarakteri oʻzgaradi",
+        "Xromosomalar soni oʻzgarmaydi",
+        "Faqat modifikatsiya yuz beradi",
+        "Poliploidiya butunlay yoʻqoladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra xromosomadan ajralgan qism gomologik boʻlmagan xromosoma bilan birikib, genlarning yangi kombinatsiyasini paydo qiladi va ularning oʻzaro taʼsir xarakterini oʻzgartiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#8480f8ab"
+    },
+    {
+      "q": "Xromosoma soni oʻzgargan gametaning normal gaploid gameta bilan qoʻshilishidan hosil boʻlgan zigotada nima kuzatiladi?",
+      "v": [
+        "Diploid toʻplamga nisbatan xromosomalar soni bittaga koʻp yoki kam boʻladi",
+        "Xromosomalar soni doim oʻzgarmaydi",
+        "Xromosomalar butunlay yoʻqoladi",
+        "Faqat gaploid holat saqlanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bunday gametaning normal gaploid gameta bilan qoʻshilishidan hosil boʻlgan zigotada diploidli toʻplamga nisbatan xromosomalar soni bittaga koʻp yoki kam boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#77be6b1c"
+    },
+    {
+      "q": "Zigotada genlar muvozanatining buzilishi nimaga olib keladi?",
+      "v": [
+        "Organizm rivojlanishining buzilishiga",
+        "Organizm hosildorligining ortishiga",
+        "Reaksiya normasining kengayishiga",
+        "Genetik barqarorlikning ortishiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genlar muvozanatining buzilishi organizm rivojlanishining buzilishiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#6e64af26"
+    },
+    {
+      "q": "Xromosomalar toʻplamining gaploid toʻplamga nisbatan karra ortishi qanday nomlanadi?",
+      "v": [
+        "Poliploidiya",
+        "Polidaktiliya",
+        "Albinizm",
+        "Nuqtali mutatsiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra xromosomalar toʻplamining karra ortishi poliploidiya deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#1fc9b597"
+    },
+    {
+      "q": "Xromosomalarning gaploid toʻplamga nisbatan karra ortishi koʻpincha qaysi organizmlarda kuzatiladi?",
+      "v": [
+        "Sodda hayvon va oʻsimliklarda",
+        "Faqat yuksak hayvonlarda",
+        "Faqat odamlarda",
+        "Faqat viruslarda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sodda hayvon va oʻsimliklarda koʻpincha xromosomalarning gaploid toʻplamga nisbatan karra ortishi kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#a18ddbcf"
+    },
+    {
+      "q": "Sodda hayvonlarda xromosomalar soni qay darajada koʻpayishi mumkin?",
+      "v": [
+        "Bir necha yuz barobarga",
+        "Faqat ikki barobarga",
+        "Faqat bittaga",
+        "Umuman koʻpaymaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sodda hayvonlarda xromosomalar soni bir necha yuz barobarga koʻpayishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#eea88dad"
+    },
+    {
+      "q": "Poliploidiya hodisasi qaysi organizmlarda keng tarqalgan?",
+      "v": [
+        "Yuksak oʻsimliklarda",
+        "Faqat sodda hayvonlarda",
+        "Faqat sutemizuvchilarda",
+        "Faqat bakteriyalarda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra poliploidiya hodisasi yuksak oʻsimliklarda keng tarqalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#e228a7b6"
+    },
+    {
+      "q": "Kariotipda xromosomalar sonining koʻpayishi organizmga qanday taʼsir qiladi?",
+      "v": [
+        "Genetik barqarorligi ortadi, hayotchanlik pasayishi xavfi kamayadi",
+        "Genetik barqarorligi doim pasayadi",
+        "Hayotchanlik xavfi doim ortadi",
+        "Xromosomalar butunlay yoʻqoladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra kariotipda xromosomalar sonining koʻpayishi bilan organizmning genetik barqarorligi ortadi va mutatsiya jarayonida hayotchanlikning pasayishi xavfi kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#726d4410"
+    },
+    {
+      "q": "Poliploidiya organizmlarning qaysi xususiyatlarini oshiradi?",
+      "v": [
+        "Hayotchanligi, mahsuldorligi va boshqa xususiyatlarini",
+        "Faqat rangini",
+        "Faqat modifikatsion oʻzgaruvchanligini",
+        "Faqat reaksiya normasini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra poliploidiya organizmlarning hayotchanligi, mahsuldorligi va boshqa xususiyatlarini oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#1e720c92"
+    },
+    {
+      "q": "Madaniy oʻsimliklarning sunʼiy olingan poliploid navlari nima bilan farqlanadi?",
+      "v": [
+        "Yuqori hosildorligi bilan",
+        "Past hosildorligi bilan",
+        "Faqat kichik oʻlchami bilan",
+        "Faqat rangining boʻlmasligi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra madaniy oʻsimliklarning sunʼiy olingan poliploid navlari yuqori hosildorligi bilan farqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#8584f80f"
+    },
+    {
+      "q": "Mutatsiyalar irsiyat bilan bogʻliqligi nimani anglatadi?",
+      "v": [
+        "Ular nasldan-naslga oʻtadi",
+        "Ular hech qachon oʻtmaydi",
+        "Ular faqat tashqi muhitga bogʻliq",
+        "Ular faqat modifikatsiya hisoblanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsiyalar irsiyat bilan bogʻliq, yaʼni ular nasldan-naslga oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m61#ec22dbdc"
+    },
+    {
+      "q": "Bitta mutatsiyaning oʻzi haqida quyidagilardan qaysi biri toʻgʻri?",
+      "v": [
+        "Bir turga mansub har xil organizmlarda paydo boʻlishi mumkin",
+        "Faqat bitta organizmda paydo boʻladi",
+        "Hech qachon takrorlanmaydi",
+        "Faqat sunʼiy sharoitda paydo boʻladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bitta mutatsiyaning oʻzi bir turga mansub boʻlgan har xil organizmlarda paydo boʻlishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#573f10cd"
+    },
+    {
+      "q": "Mutatsiyalar taʼsir doirasiga qarab qanday xillarga boʻlinadi?",
+      "v": [
+        "Foydali va zararli, neytral, dominant hamda retsessiv",
+        "Faqat gen va xromosoma",
+        "Faqat generativ va somatik",
+        "Faqat gaploid va diploid"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsiyalar taʼsir doirasiga qarab foydali va zararli, neytral, dominant hamda retsessiv boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#20808d19"
+    },
+    {
+      "q": "Genlarning muhim xususiyatlaridan biri nima hisoblanadi?",
+      "v": [
+        "Mutatsiyalar hosil qilishi",
+        "Reaksiya normasini toʻxtatishi",
+        "Modifikatsiyani irsiylashtirishi",
+        "Xromosomalarni yoʻqotishi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genlarning muhim xususiyatlaridan biri mutatsiyalar hosil qilishidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#3d487144"
+    },
+    {
+      "q": "Rentgen nurlari taʼsirida mutatsiyalar paydo boʻlishini necha marta oshirishga erishildi?",
+      "v": [
+        "150 marta",
+        "15 marta",
+        "1500 marta",
+        "50 marta"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra rentgen nurlari taʼsirida mutatsiyalar paydo boʻlishini 150 marta oshirishga erishildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#280275e5"
+    },
+    {
+      "q": "Rentgen va ionlantiruvchi radiatsiya nurlaridan tashqari mutatsiyalar yana nima taʼsirida hosil boʻlishi mumkin?",
+      "v": [
+        "Kimyoviy moddalar taʼsirida",
+        "Faqat harorat taʼsirida",
+        "Faqat yorugʻlik taʼsirida",
+        "Faqat namlik taʼsirida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsiyalar rentgen va ionlantiruvchi radiatsiya nurlaridan tashqari kimyoviy moddalar taʼsirida ham hosil boʻlishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#8a2018e5"
+    },
+    {
+      "q": "Qaysi omillar mutatsion jarayonga ham taʼsir qiladi?",
+      "v": [
+        "Moddalar almashinuviga, ayniqsa DNK sinteziga taʼsir qiluvchi omillar",
+        "Faqat tashqi harorat omillari",
+        "Faqat oziqlanish miqdori omillari",
+        "Faqat yorugʻlik omillari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra moddalar almashinuvi jarayoniga, ayniqsa DNK sinteziga taʼsir qiluvchi omillar mutatsion jarayonga ham taʼsir qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#b121dfc2"
+    },
+    {
+      "q": "Sunʼiy yoʻl bilan hosil qilinadigan mutatsiyalar nima uchun amaliy ahamiyatga ega?",
+      "v": [
+        "Tur yoki populyatsiya ichidagi genetik xilma-xillikni oshirib, seleksionerga yordamchi material beradi",
+        "Faqat organizmni nobud qilgani uchun",
+        "Faqat modifikatsiyani kuchaytirgani uchun",
+        "Faqat reaksiya normasini toraytirgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sunʼiy mutatsiyalar tur yoki populyatsiya ichidagi genetik xilma-xillikni oshiradi va seleksionerga yordamchi material beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#59267488"
+    },
+    {
+      "q": "Xoʻrozning boʻyin qismida patning boʻlmasligi qanday mutatsiyaga misol boʻladi?",
+      "v": [
+        "Dominant mutatsiya",
+        "Retsessiv mutatsiya",
+        "Somatik mutatsiya",
+        "Neytral mutatsiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, xoʻrozning boʻyin qismida patning boʻlmasligi dominant mutatsiyaga misoldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#2b8f6850"
+    },
+    {
+      "q": "Karam gullarida poliploidiya qatorining eng yuqori darajasi sifatida qaysi holat keltirilgan?",
+      "v": [
+        "Oktaploid",
+        "Diploid",
+        "Tetraploid",
+        "Gaploid"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, karam gullarida poliploidiya qatori diploid, tetraploid va oktaploid koʻrinishida keltirilgan, oktaploid eng yuqori darajadir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m61#db6871f3"
+    },
+    {
+      "q": "Mutatsion (genotipik) oʻzgaruvchanlikning modifikatsion oʻzgaruvchanlikdan asosiy farqi nimada?",
+      "v": [
+        "Genotip oʻzgarib, nasldan-naslga oʻtishida",
+        "Faqat tashqi muhit taʼsirida boʻlishida",
+        "Nasldan-naslga oʻtmasligida",
+        "Reaksiya normasi doirasida boʻlishida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsion oʻzgaruvchanlik genotipning oʻzgarishi bilan boradi va nasldan-naslga oʻtadi, bu esa uni modifikatsion oʻzgaruvchanlikdan farqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m61#2f73ef7b"
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "nom": "05-mavzu. Elektr Maydon",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Zaryadlangan jismlarning bir-biriga bevosita tegmasdan ta'sirlashishi elektr maydon orqali sodir bo'lishini tushuntirib bergan olim kim?",
+      "v": [
+        "Maykl Faradey",
+        "Sharl Kulon",
+        "Ernest Rezerford",
+        "Jeyms Uimshurst"
+      ],
+      "t": 0,
+      "izoh": "Maykl Faradey bunday ta'sir elektr maydon orqali sodir bo'lishini tushuntirib bergan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#7ddd9272"
+    },
+    {
+      "q": "Maykl Faradey qaysi yillarda yashagan va qaysi mamlakat olimi?",
+      "v": [
+        "1791–1867, ingliz fizik-eksperimentatori",
+        "1736–1806, fransuz fizigi",
+        "1832–1903, ingliz olimi",
+        "973–1048, xorazmlik olim"
+      ],
+      "t": 0,
+      "izoh": "Maykl Faradey (1791–1867) — ingliz fizik-eksperimentatori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#c0453f6a"
+    },
+    {
+      "q": "Olimlar Faradeyga qanday nom berishgan?",
+      "v": [
+        "«Eksperimentlar qiroli»",
+        "«Elektr otasi»",
+        "«Fizika shohi»",
+        "«Maydon ustasi»"
+      ],
+      "t": 0,
+      "izoh": "Unga olimlar «eksperimentlar qiroli» deb nom berishgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#3a0eae67"
+    },
+    {
+      "q": "Maykl Faradeyning eng ulkan kashfiyotlaridan biri qaysi?",
+      "v": [
+        "Elektromagnit induksiya hodisasi",
+        "Kulon qonuni",
+        "Atom modeli",
+        "Elektrofor mashina"
+      ],
+      "t": 0,
+      "izoh": "Uning eng ulkan kashfiyotlaridan biri elektromagnit induksiya hodisasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#16da8718"
+    },
+    {
+      "q": "Elektr zaryadlar bir-biriga bevosita tegmasdan ham ta'sirlashishi nimani bildiradi?",
+      "v": [
+        "Ular atrofida elektr maydon hosil bo'lishini",
+        "Ular orasida havo oqimi borligini",
+        "Zaryadlarning yo'qolib ketishini",
+        "Jismlarning magnitlanishini"
+      ],
+      "t": 0,
+      "izoh": "Elektr zaryadlar bir-biriga bevosita tegmasdan ham ta'sirlashishi, ular atrofida elektr maydon hosil bo'lishini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#4b8c5250"
+    },
+    {
+      "q": "Elektrostatik maydon deb nimaga ataladi?",
+      "v": [
+        "Qo'zg'almas zaryadning yoki zaryadlangan jismning maydoniga",
+        "Harakatlanuvchi zaryadlarning maydoniga",
+        "Magnitning maydoniga",
+        "Yerning tortishish maydoniga"
+      ],
+      "t": 0,
+      "izoh": "Qo'zg'almas zaryadning yoki zaryadlangan jismning maydoni elektrostatik maydon deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#df161400"
+    },
+    {
+      "q": "Zaryaddan uzoqlashgan sari elektr maydon qanday o'zgaradi?",
+      "v": [
+        "Zaiflasha boradi",
+        "Kuchaya boradi",
+        "O'zgarmaydi",
+        "Avval kuchayib, keyin zaiflashadi"
+      ],
+      "t": 0,
+      "izoh": "Zaryaddan uzoqlashgan sari elektr maydon zaiflasha boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#e14ee7c1"
+    },
+    {
+      "q": "Elektr maydonning mavjudligini qanday bilish mumkin?",
+      "v": [
+        "Zaryadlangan jismlarning o'zaro ta'sirlashishiga qarab",
+        "Uni bevosita ko'rib",
+        "Uni sezgi organlari bilan his qilib",
+        "Uning rangiga qarab"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydonni bevosita tajribalarsiz ko'ra olmaymiz, sezmaymiz ham; uning mavjudligini zaryadlangan jismlarning o'zaro ta'sirlashishiga qarab bilishimiz mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#059593d9"
+    },
+    {
+      "q": "Ikki zaryadning o'zaro ta'siri elektr maydon orqali qanday sodir bo'ladi?",
+      "v": [
+        "Birinchi zaryadning maydoni ikkinchi zaryadga, ikkinchisiniki birinchi zaryadga ta'sir qiladi",
+        "Faqat kattaroq zaryadning maydoni ta'sir qiladi",
+        "Maydonlar bir-birini yo'q qiladi",
+        "Zaryadlar maydonsiz bevosita ta'sirlashadi"
+      ],
+      "t": 0,
+      "izoh": "Birinchi zaryadning elektr maydoni ikkinchi zaryadga, ikkinchisining maydoni birinchi zaryadga ta'sir qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#3845bccc"
+    },
+    {
+      "q": "Soch tolalarini zaryadlangan plastinka atrofiga sepib oyna chertsak nima kuzatiladi?",
+      "v": [
+        "Tolalar ma'lum tartibda joylashib qoladi",
+        "Tolalar tasodifiy tarqalib qoladi",
+        "Tolalar yonib ketadi",
+        "Tolalar bir-biriga yopishadi"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlangan metall plastinka atrofiga sepilgan mayda soch tolalari ma'lum tartibda joylashib qoladi — bu elektr maydon kuch chiziqlarini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#6ab1c263"
+    },
+    {
+      "q": "Elektr maydon kuch chiziqlari qayerdan boshlanadi va qayerda tugaydi?",
+      "v": [
+        "Musbat zaryaddan boshlanib, manfiy zaryadda tugaydi yoki cheksizlikda tugaydi",
+        "Manfiy zaryaddan boshlanib, musbat zaryadda tugaydi",
+        "Har qanday nuqtadan boshlanishi mumkin",
+        "Doim yopiq aylana hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydon kuch chiziqlari musbat zaryaddan boshlanib, manfiy zaryadda tugaydi yoki cheksizlikda tugaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#4933b5de"
+    },
+    {
+      "q": "Yolg'iz turgan musbat zaryadlangan sharchaning kuch chiziqlari qanday yo'nalgan?",
+      "v": [
+        "Sharchadan tashqariga (cheksizlikka) yo'nalgan",
+        "Sharchaga ichkariga yo'nalgan",
+        "Sharcha atrofida aylana bo'ylab",
+        "Yo'nalishga ega emas"
+      ],
+      "t": 0,
+      "izoh": "Kuch chiziqlari musbat zaryaddan boshlanib cheksizlikda tugagani uchun musbat sharchadan tashqariga yo'nalgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m05-elektr-maydon#2549f807"
+    },
+    {
+      "q": "Yolg'iz turgan manfiy zaryadlangan sharchaning kuch chiziqlari qanday yo'nalgan?",
+      "v": [
+        "Sharchaga ichkariga yo'nalgan",
+        "Sharchadan tashqariga yo'nalgan",
+        "Gorizontal yo'nalgan",
+        "Aylana bo'ylab yo'nalgan"
+      ],
+      "t": 0,
+      "izoh": "Kuch chiziqlari manfiy zaryadda tugagani uchun manfiy sharchaga ichkariga yo'nalgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m05-elektr-maydon#06df6fb9"
+    },
+    {
+      "q": "Elektr maydon kuchlanganligi deb nimaga aytiladi?",
+      "v": [
+        "Nuqtaviy zaryadga maydon tomonidan ta'sir qiladigan kuchning shu zaryadga nisbatiga",
+        "Zaryadning massasiga nisbatiga",
+        "Kuchning masofaga nisbatiga",
+        "Zaryadning hajmiga nisbatiga"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydon kuchlanganligi nuqtaviy zaryadga maydon tomonidan ta'sir qiladigan kuchning shu zaryadga nisbatiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#fe16a289"
+    },
+    {
+      "q": "Elektr maydon kuchlanganligi qanday harf bilan belgilanadi va formulasi qanday?",
+      "v": [
+        "E harfi bilan; E = F/q₀",
+        "q harfi bilan; q = F·E",
+        "F harfi bilan; F = E/q₀",
+        "k harfi bilan; k = E·r²"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydon kuchlanganligi E harfi bilan belgilanadi va E = F/q₀ ko'rinishida ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m05-elektr-maydon#233eb85c"
+    },
+    {
+      "q": "Elektr maydon kuchlanganligining birligi nima?",
+      "v": [
+        "N/C (nyuton/kulon)",
+        "C/N (kulon/nyuton)",
+        "N·m²/C²",
+        "J/C"
+      ],
+      "t": 0,
+      "izoh": "Maydon kuchlanganligining birligi N/C da ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#8d1c7daf"
+    },
+    {
+      "q": "Elektr maydon kuchlanganligi qanday kattalik?",
+      "v": [
+        "Vektor kattalik",
+        "Skalyar kattalik",
+        "O'lchamsiz kattalik",
+        "Birliksiz kattalik"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydon kuchlanganligi vektor kattalikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#30762a33"
+    },
+    {
+      "q": "Elektr maydon kuchlanganligining yo'nalishi qanday aniqlanadi?",
+      "v": [
+        "Musbat zaryadga ta'sir etadigan kuch yo'nalishi bilan bir xil bo'ladi",
+        "Manfiy zaryadga ta'sir etadigan kuch yo'nalishi bilan bir xil",
+        "Har doim yuqoriga yo'nalgan",
+        "Zaryadning harakat yo'nalishiga teskari"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydon kuchlanganligining yo'nalishi musbat zaryadga ta'sir etadigan kuch F ning yo'nalishi bilan bir xil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#1114c1a7"
+    },
+    {
+      "q": "Ixtiyoriy nuqtaviy zaryaddan r masofadagi elektr maydon kuchlanganligi qanday formula orqali topiladi?",
+      "v": [
+        "E = k·|q|/r²",
+        "E = k·|q|·r²",
+        "E = k·|q|/r",
+        "E = F·q₀"
+      ],
+      "t": 0,
+      "izoh": "Ixtiyoriy nuqtaviy zaryaddan r masofadagi elektr maydon kuchlanganligi E = k·|q|/r² formula orqali topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m05-elektr-maydon#1b7284b7"
+    },
+    {
+      "q": "Nuqtaviy zaryad atrofida hosil bo'lgan elektr maydon kuchlanganligi yana nimaga bog'liq?",
+      "v": [
+        "Zaryad joylashgan muhitning xossalariga",
+        "Zaryadning rangiga",
+        "Kuzatuvchining holatiga",
+        "Sutka vaqtiga"
+      ],
+      "t": 0,
+      "izoh": "Nuqtaviy zaryad atrofida hosil qilingan elektr maydon kuchlanganligi zaryad joylashgan muhitning xossalariga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#7a91e008"
+    },
+    {
+      "q": "Nuqtaviy zaryad atrofi dielektrik bilan to'ldirilganda maydon kuchlanganligi qanday o'zgaradi va nima uchun?",
+      "v": [
+        "Kamayadi, chunki dielektrik elektr maydonni zaiflashtiradi",
+        "Oshadi, chunki dielektrik maydonni kuchaytiradi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Zaryad atrofi dielektrik bilan to'ldirilganda hosil bo'lgan maydon kuchlanganligi kamayadi, chunki dielektrik elektr maydonni zaiflashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m05-elektr-maydon#9dac333a"
+    },
+    {
+      "q": "Dielektrikning dielektrik singdiruvchanligi deb nimaga aytiladi va qanday belgilanadi?",
+      "v": [
+        "Vakuumdagi maydon kuchlanganligi moduli E₀ ning dielektrik ichidagi kuchlanganlik moduli E ga nisbatiga; ε harfi bilan",
+        "Dielektrik zichligiga; ρ harfi bilan",
+        "Dielektrik qalinligiga; d harfi bilan",
+        "Zaryad miqdoriga; q harfi bilan"
+      ],
+      "t": 0,
+      "izoh": "E₀/E nisbatga dielektrikning dielektrik singdiruvchanligi deyiladi va u ε (epsilon) harfi bilan belgilanadi: ε = E₀/E.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m05-elektr-maydon#51b038f0"
+    },
+    {
+      "q": "Dielektrik singdiruvchanlikning formulasi qanday?",
+      "v": [
+        "ε = E₀/E",
+        "ε = E/E₀",
+        "ε = E₀·E",
+        "ε = E₀ + E"
+      ],
+      "t": 0,
+      "izoh": "Ta'rifga ko'ra: ε = E₀/E.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m05-elektr-maydon#4204d675"
+    },
+    {
+      "q": "Dielektrik singdiruvchanlik qanday kattalik?",
+      "v": [
+        "O'lchamsiz kattalik",
+        "Birligi N/C bo'lgan kattalik",
+        "Vektor kattalik",
+        "Birligi kulon bo'lgan kattalik"
+      ],
+      "t": 0,
+      "izoh": "Dielektrik singdiruvchanlik o'lchamsiz kattalikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#1cd31949"
+    },
+    {
+      "q": "Muhitning dielektrik singdiruvchanligi nimani ko'rsatadi?",
+      "v": [
+        "Zaryadning muhitdagi elektr maydon kuchlanganligining vakuumdagiga nisbatan necha marta kichik ekanligini",
+        "Muhitning zichligini",
+        "Muhitning haroratini",
+        "Muhitdagi zaryadlar sonini"
+      ],
+      "t": 0,
+      "izoh": "Muhitning dielektrik singdiruvchanligi — zaryadning muhitdagi elektr maydon kuchlanganligining vakuumdagi elektr maydon kuchlanganligiga nisbatan necha marta kichik ekanligini ko'rsatuvchi kattalikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#b83b05d1"
+    },
+    {
+      "q": "Dielektrik ichida joylashtirilgan nuqtaviy q zaryaddan r masofadagi maydon kuchlanganligi qanday hisoblanadi?",
+      "v": [
+        "E = k·|q|/(ε·r²)",
+        "E = k·|q|·ε/r²",
+        "E = k·|q|/r²",
+        "E = ε·k·|q|·r²"
+      ],
+      "t": 0,
+      "izoh": "Dielektrik ichida joylashtirilgan nuqtaviy q zaryaddan r masofada turgan nuqtadagi maydon kuchlanganligi E = k·|q|/(ε·r²) ko'rinishida hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m05-elektr-maydon#4db3f0e2"
+    },
+    {
+      "q": "Bir jinsli dielektrik ichida joylashgan ikki nuqtaviy zaryadlar orasidagi o'zaro ta'sir kuchi vakuumdagidan qanday farq qiladi?",
+      "v": [
+        "ε marta kichik bo'ladi: F = k·|q₁|·|q₂|/(ε·r²)",
+        "ε marta katta bo'ladi",
+        "O'zgarishsiz qoladi",
+        "2 marta kichik bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Bir jinsli dielektrik ichida joylashgan ikki nuqtaviy zaryadlar orasidagi o'zaro ta'sir kuchi ularning vakuumdagi ta'sir kuchidan ε marta kichik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m05-elektr-maydon#34acab16"
+    },
+    {
+      "q": "Elektr maydonning A nuqtasiga musbat q₀ nuqtaviy zaryad kiritilsa, sharchaning maydoni unga qanday ta'sir ko'rsatadi?",
+      "v": [
+        "Ma'lum F kuch bilan ta'sir ko'rsatadi",
+        "Hech qanday ta'sir ko'rsatmaydi",
+        "Zaryadni yo'q qiladi",
+        "Faqat issiqlik ajratadi"
+      ],
+      "t": 0,
+      "izoh": "Musbat q zaryadli sharcha hosil qilgan elektr maydonning A nuqtasiga musbat q₀ nuqtaviy zaryad kiritilsa, sharchaning maydoni nuqtaviy zaryadga ma'lum F kuch bilan ta'sir ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#681b56d5"
+    },
+    {
+      "q": "Elektr maydon kuchlanganligining yo'nalishi musbat zaryadli sharcha uchun qanday bo'ladi?",
+      "v": [
+        "Sharchadan tashqariga yo'nalgan",
+        "Sharchaga ichkariga yo'nalgan",
+        "Gorizontal yo'nalgan",
+        "Aylanasimon"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanganlik yo'nalishi musbat zaryadga ta'sir etadigan kuch yo'nalishi bilan bir xil; musbat sharcha maydonining kuch chiziqlari tashqariga yo'nalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m05-elektr-maydon#08df25cf"
+    },
+    {
+      "q": "Soch tolalari bilan o'tkazilgan tajriba nimani ko'rsatadi?",
+      "v": [
+        "Elektr maydon mavjudligini va u kuch chiziqlariga ega ekanligini",
+        "Sochning elektr o'tkazishini",
+        "Plastinkaning magnitlanishini",
+        "Havoning dielektrik ekanligini"
+      ],
+      "t": 0,
+      "izoh": "O'tkazilgan bu tajribalar, birinchidan, elektr maydon mavjudligini, ikkinchidan, elektr maydon kuch chiziqlariga ega ekanligini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#ef25f05a"
+    },
+    {
+      "q": "Ikkita musbat zaryadlangan plastinkalar ustiga sepilgan soch tolalari qanday manzara hosil qiladi?",
+      "v": [
+        "Plastinkalar orasida chiziqlar bir-biridan qochadigan manzara",
+        "Chiziqlar bir plastinkadan ikkinchisiga uzluksiz o'tadi",
+        "Tolalar har ikkala plastinkaga ichkariga yo'naladi",
+        "Hech qanday tartib kuzatilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ikkita musbat zaryadlangan plastinkalar qo'yilganda bir xil ishorali zaryadlar itarilishi sababli chiziqlar bir-biridan qochadigan manzara kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m05-elektr-maydon#d839a424"
+    },
+    {
+      "q": "Biri musbat, ikkinchisi manfiy zaryadlangan plastinkalar ustidagi soch tolalari qanday joylashadi?",
+      "v": [
+        "Kuch chiziqlari musbat plastinkadan boshlanib manfiy plastinkada tugaydigan qilib joylashadi",
+        "Chiziqlar ikkala plastinkadan tashqariga yo'naladi",
+        "Chiziqlar ikkala plastinkaga ichkariga yo'naladi",
+        "Tolalar tartibsiz joylashadi"
+      ],
+      "t": 0,
+      "izoh": "Kuch chiziqlari musbat zaryaddan boshlanib manfiy zaryadda tugagani uchun chiziqlar musbat plastinkadan manfiy plastinkaga yo'nalgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m05-elektr-maydon#07c5c2cf"
+    },
+    {
+      "q": "Maydon kuchlanganligi E = F/q₀ formulasida q₀ nimani anglatadi?",
+      "v": [
+        "Maydonga kiritilgan sinov (nuqtaviy) zaryadni",
+        "Maydonni hosil qiluvchi sharcha radiusini",
+        "Muhitning singdiruvchanligini",
+        "Zaryadlar orasidagi masofani"
+      ],
+      "t": 0,
+      "izoh": "Formulada q₀ — maydon ta'sirini o'lchash uchun kiritilgan nuqtaviy (sinov) zaryad; F — maydonning unga ta'sir kuchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#dff11f19"
+    },
+    {
+      "q": "Nuqtaviy zaryaddan bo'lgan masofa 3 marta oshirilsa, u hosil qilgan maydon kuchlanganligi qanday o'zgaradi?",
+      "v": [
+        "9 marta kamayadi",
+        "3 marta kamayadi",
+        "3 marta ortadi",
+        "9 marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "E = k·|q|/r² ga ko'ra, masofa 3 marta oshsa, kuchlanganlik 3² = 9 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m05-elektr-maydon#d6747abc"
+    },
+    {
+      "q": "Maydonni hosil qiluvchi nuqtaviy zaryad miqdori 2 marta oshirilsa, berilgan nuqtadagi maydon kuchlanganligi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "4 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "E = k·|q|/r² ga ko'ra, kuchlanganlik zaryad miqdoriga to'g'ri proporsional: 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m05-elektr-maydon#475a9133"
+    },
+    {
+      "q": "Musbat va manfiy zaryadlangan sharchalar o'zaro ta'sirlashganda kuch chiziqlari qanday bo'ladi?",
+      "v": [
+        "Musbat sharchadan chiqib manfiy sharchaga kiradi",
+        "Ikkala sharchadan ham tashqariga yo'naladi",
+        "Ikkala sharchaga ham ichkariga yo'naladi",
+        "Kuch chiziqlari hosil bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Kuch chiziqlari musbat zaryaddan boshlanib manfiy zaryadda tugaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m05-elektr-maydon#929aebf6"
+    },
+    {
+      "q": "Faradeyning elektr maydon haqidagi ta'limotining mohiyati nimada?",
+      "v": [
+        "Zaryadlangan jismlarning o'zaro ta'siri ular atrofidagi elektr maydon orqali sodir bo'ladi",
+        "Zaryadlar faqat tegishgandagina ta'sirlashadi",
+        "Maydon mavjud emas, ta'sir bevosita uzatiladi",
+        "Ta'sir havo orqali uzatiladi"
+      ],
+      "t": 0,
+      "izoh": "Maykl Faradey zaryadlangan jismlarning o'z atrofidagi jismlarga ta'siri elektr maydon orqali sodir bo'lishini tushuntirib bergan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m05-elektr-maydon#8f40d90d"
+    }
+  ]
+}

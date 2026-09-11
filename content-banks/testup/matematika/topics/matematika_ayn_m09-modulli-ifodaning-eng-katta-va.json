@@ -1,0 +1,1609 @@
+{
+  "nom": "Modulli ifodaning eng katta va eng kichik qiymati",
+  "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+  "blok": "ayn",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Sonlar o'qidagi x nuqtadan 3 va 11 nuqtalargacha bo'lgan masofalar yig'indisi |x − 3| + |x − 11| ko'rinishida yoziladi. Shu yig'indi eng kichik bo'lganda u nechaga teng bo'ladi?",
+      "v": [
+        "8",
+        "14",
+        "7",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Ifoda x nuqtadan 3 va 11 gacha masofalar yig'indisi. Agar x shu ikki nuqta orasida yotsa, masofalar kesmani bo'lakka ajratadi va yig'indi kesma uzunligiga teng bo'ladi. Kesmadan tashqarida yig'indi undan katta chiqadi. Demak eng kichik qiymat 11 − 3 = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-modul-eng-kichik-qiymat",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#93292726"
+    },
+    {
+      "q": "f(x) = |x + 5| + |x − 9| funksiyaning eng kichik qiymatini toping va uni to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "2",
+        "4",
+        "14",
+        "28"
+      ],
+      "t": 2,
+      "izoh": "Avval |x + 5| ni |x − (−5)| ko'rinishida yozamiz. Endi ifoda x nuqtadan −5 va 9 gacha masofalar yig'indisi ekani ko'rinadi. Eng kichik qiymat shu ikki nuqta orasidagi masofaga teng: 9 − (−5) = 14. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-modul-eng-kichik-qiymat",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#527d60ab"
+    },
+    {
+      "q": "Avtomobil yo'lining 26-km va 74-km belgilarida ikkita nazorat posti bor. Patrul mashinasi yo'lning x-km belgisida turibdi. Uning ikkala postgacha bo'lgan masofalari yig'indisi eng kamida necha kilometr bo'ladi?",
+      "v": [
+        "24",
+        "48",
+        "50",
+        "100"
+      ],
+      "t": 1,
+      "izoh": "Masofalar yig'indisi |x − 26| + |x − 74| ga teng. Mashina ikkita post orasida turganda yig'indi postlar orasidagi masofaga teng bo'ladi, tashqarida esa undan ortadi. Shuning uchun eng kichik qiymat 74 − 26 = 48 km. Javob: 48 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-modul-eng-kichik-qiymat",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#c808565c"
+    },
+    {
+      "q": "Termometrda kuzatilgan ikki qiymat 2,5 va 8,5 gradus edi. |x − 2,5| + |x − 8,5| ifodaning eng kichik qiymati qanday songa teng bo'ladi?",
+      "v": [
+        "3",
+        "5,5",
+        "11",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Ifoda x nuqtadan 2,5 va 8,5 gacha masofalar yig'indisi. Eng kichik qiymat ikki nuqta orasidagi masofaga teng: 8,5 − 2,5 = 6. x ning [2,5; 8,5] oraliqdagi har bir qiymatida aynan shu natija chiqadi, o'rtasi shart emas. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-modul-eng-kichik-qiymat",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#1102ce21"
+    },
+    {
+      "q": "|x + 6| + |x − 6| ifodaning eng kichik qiymati k ga teng bo'lsa, k sonining yarmi nechaga teng bo'ladi?",
+      "v": [
+        "0",
+        "3",
+        "6",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Ifoda x nuqtadan −6 va 6 gacha masofalar yig'indisi. Uning eng kichik qiymati 6 − (−6) = 12, ya'ni k = 12. Savolda k ning yarmi so'ralgan, shuning uchun 12 : 2 = 6 deb hisoblaymiz. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-modul-eng-kichik-qiymat",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#3d7ca153"
+    },
+    {
+      "q": "|x − 4| + |x − 15| ifoda o'zining eng kichik qiymatiga erishadigan barcha x larning to'plamini oraliq ko'rinishida ko'rsating.",
+      "v": [
+        "{9,5}",
+        "[4; 15]",
+        "(−∞; 4]",
+        "[15; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Ifoda x nuqtadan 4 va 15 gacha masofalar yig'indisi. x ikki nuqta orasida yotganda yig'indi 11 ga teng va shu eng kichik qiymatdir. Kesmadan chetga chiqilganda har birlikka yig'indi 2 birlikka ortadi. Demak izlanayotgan to'plam [4; 15] kesma. Javob: [4; 15].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "minimum-erishiladigan-oraliq",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#c55d0a31"
+    },
+    {
+      "q": "f(x) = |x + 3| + |x − 8| funksiya o'zining eng kichik qiymatini nechta butun x qiymatida qabul qiladi?",
+      "v": [
+        "10",
+        "11",
+        "12",
+        "cheksiz ko'p"
+      ],
+      "t": 2,
+      "izoh": "Nuqtalar −3 va 8, demak eng kichik qiymat x ∈ [−3; 8] kesmada erishiladi. Bu kesmadagi butun sonlar −3 dan 8 gacha, ularning soni 8 − (−3) + 1 = 12 ta. Chetki nuqtalar ham hisobga olinadi, chunki ular kesmaga tegishli. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "minimum-erishiladigan-oraliq",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#3e6bbc6b"
+    },
+    {
+      "q": "Anvar |x − 7| + |x − 20| ifoda eng kichik qiymatga erishadigan x larni daftariga yozib chiqdi. Quyidagi qiymatlardan qaysi biri NOTO'G'RI yozilgan?",
+      "v": [
+        "x = 7",
+        "x = 13",
+        "x = 20",
+        "x = 23"
+      ],
+      "t": 3,
+      "izoh": "Eng kichik qiymat x ∈ [7; 20] kesmada erishiladi va u 20 − 7 = 13 ga teng. 7, 13 va 20 shu kesmaga tegishli, demak ular to'g'ri. 23 esa kesmadan tashqarida: u yerda yig'indi 16 + 3 = 19 bo'lib, 13 dan katta. Javob: x = 23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "minimum-erishiladigan-oraliq",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#87d68e94"
+    },
+    {
+      "q": "|x − 8| + |x − 26| ifodaning eng kichik qiymati erishiladigan oraliqning o'rta nuqtasi qaysi songa teng bo'ladi?",
+      "v": [
+        "17",
+        "13",
+        "18",
+        "34"
+      ],
+      "t": 0,
+      "izoh": "Eng kichik qiymat x ∈ [8; 26] kesmada erishiladi, chunki nuqtalar 8 va 26. Kesmaning o'rta nuqtasi uchlarining o'rta arifmetigiga teng: (8 + 26) : 2 = 34 : 2 = 17. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "minimum-erishiladigan-oraliq",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#e4f4968e"
+    },
+    {
+      "q": "|x − 1| + |x − 5| + |x − 9| yig'indining eng kichik qiymatini toping. Yechimda nuqtalarni tartiblab olish qulaylik tug'diradi.",
+      "v": [
+        "5",
+        "8",
+        "12",
+        "15"
+      ],
+      "t": 1,
+      "izoh": "Uchta nuqta bor: 1, 5 va 9. Toq sondagi nuqtalarda masofalar yig'indisi mediana nuqtada, ya'ni o'rtadagi 5 da eng kichik bo'ladi. Unda |5 − 1| + |5 − 5| + |5 − 9| = 4 + 0 + 4 = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-modul-eng-kichik-qiymat",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#4fcb9489"
+    },
+    {
+      "q": "Yo'l bo'yidagi 12-km, 20-km va 45-km belgilarida uchta qishloq joylashgan. Quduq shu yo'lning bir nuqtasiga quriladi. Uchala qishloqqacha bo'lgan masofalar yig'indisi eng kamida necha kilometr bo'ladi?",
+      "v": [
+        "25",
+        "41",
+        "77",
+        "33"
+      ],
+      "t": 3,
+      "izoh": "Masofalar yig'indisi |x − 12| + |x − 20| + |x − 45| ko'rinishida. Uchta nuqta uchun eng kichik qiymat o'rtadagi nuqtada, ya'ni 20-km belgida bo'ladi: 8 + 0 + 25 = 33 km. Chetki 12-km da esa 0 + 8 + 33 = 41 km chiqadi. Javob: 33 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-modul-eng-kichik-qiymat",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#c0ff43ab"
+    },
+    {
+      "q": "f(x) = |x + 4| + |x − 2| + |x − 7| funksiyaning eng kichik qiymati nechaga teng bo'ladi?",
+      "v": [
+        "11",
+        "2",
+        "16",
+        "17"
+      ],
+      "t": 0,
+      "izoh": "Nuqtalar −4, 2 va 7, ular tartiblangan, o'rtadagisi 2. Minimum shu medianada erishiladi: |2 + 4| + |2 − 2| + |2 − 7| = 6 + 0 + 5 = 11. Chetki −4 da 0 + 6 + 11 = 17, chetki 7 da esa 11 + 5 + 0 = 16 chiqadi. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-modul-eng-kichik-qiymat",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#60fe9fb8"
+    },
+    {
+      "q": "|x − 6| + |x − 13| + |x − 21| ifodaning eng kichik qiymatini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "8",
+        "22",
+        "15",
+        "40"
+      ],
+      "t": 2,
+      "izoh": "Nuqtalar 6, 13 va 21. Uchta nuqtada minimum o'rtadagi 13 da bo'ladi: |13 − 6| + 0 + |13 − 21| = 7 + 8 = 15. Chetki 6 nuqtada esa 0 + 7 + 15 = 22 chiqib, katta bo'ladi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-modul-eng-kichik-qiymat",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#0f4401f5"
+    },
+    {
+      "q": "Uchta o'quvchi bitta to'g'ri ko'chada yashaydi: ko'cha boshidan bir tomonga piyoda yurilganda ularning uylariga mos ravishda 3, 14 va 24 minutda yetiladi. Ular shu ko'chaning bir nuqtasida uchrashsa, uchalasi yurgan vaqtning yig'indisi eng kamida necha minut bo'ladi?",
+      "v": [
+        "10",
+        "21",
+        "32",
+        "41"
+      ],
+      "t": 1,
+      "izoh": "Uylar ko'cha boshidan bir tomonda, ya'ni 3, 14 va 24 belgilarida joylashgan. Uchrashuv nuqtasi x bo'lsa, yig'indi vaqt |x − 3| + |x − 14| + |x − 24| ko'rinishida yoziladi. Uchta nuqta uchun eng kichik qiymat medianada, ya'ni x = 14 da: 11 + 0 + 10 = 21 minut. Chetki 3 nuqtada 0 + 11 + 21 = 32 minut chiqadi. Javob: 21 minut.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-modul-eng-kichik-qiymat",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#81eedbc0"
+    },
+    {
+      "q": "|x − 2| + |x − 11| + |x − 30| yig'indi eng kichik bo'ladigan x ning qiymatini aniqlang.",
+      "v": [
+        "11",
+        "14,3",
+        "16",
+        "20,5"
+      ],
+      "t": 0,
+      "izoh": "Uchta nuqta 2, 11 va 30 tartiblangan. Toq sondagi nuqtalarda yig'indi mediana nuqtada eng kichik bo'ladi, ya'ni x = 11 da. O'rta arifmetik (2 + 11 + 30) : 3 ≈ 14,3 bu yerda javob bermaydi, chunki minimumni mediana beradi. Javob: x = 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-nuqtasini-topish",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#16daebb6"
+    },
+    {
+      "q": "Beshta do'kon ko'chaning 5, 9, 16, 22 va 43-uylari yonida joylashgan. Ombor qaysi uy yonida qurilsa, do'konlargacha bo'lgan masofalar yig'indisi eng kichik bo'ladi?",
+      "v": [
+        "9-uy",
+        "22-uy",
+        "16-uy",
+        "19-uy"
+      ],
+      "t": 2,
+      "izoh": "Nuqtalar tartiblangan: 5, 9, 16, 22, 43. Ularning soni toq bo'lgani uchun masofalar yig'indisi mediana nuqtada eng kichik bo'ladi. Mediana — uchinchi o'rindagi son, ya'ni 16. O'rta arifmetik (5 + 9 + 16 + 22 + 43) : 5 = 19 bo'lsa ham u minimum bermaydi. Javob: 16-uy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-nuqtasini-topish",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#8e18f10e"
+    },
+    {
+      "q": "|x + 7| + |x − 1| + |x − 12| + |x − 12| + |x − 25| ifoda eng kichik bo'ladigan x ni aniqlang.",
+      "v": [
+        "1",
+        "8,6",
+        "9",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Nuqtalarni tartiblaymiz: −7, 1, 12, 12, 25. Beshta nuqta bor, mediana uchinchi o'rindagi son — 12. Bir xil nuqta ikki marta yozilgan bo'lsa, u ikkita alohida nuqta sifatida sanaladi. O'rta arifmetik 8,6 bu yerda minimum bermaydi. Javob: x = 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-nuqtasini-topish",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#446eec73"
+    },
+    {
+      "q": "Yo'lovchilar temir yo'lning 5, 13, 13, 13 va 34-belgilarida yashaydi. Bekat qaysi belgiga qurilsa, yo'lovchilarning umumiy yurishi eng kam bo'ladi?",
+      "v": [
+        "13",
+        "15,6",
+        "17,3",
+        "19,5"
+      ],
+      "t": 0,
+      "izoh": "Yo'lovchi nuqtalari tartibda: 5, 13, 13, 13, 34. Beshta nuqta uchun mediana uchinchi o'rindagi son, ya'ni 13. Ko'p yo'lovchi to'plangan nuqta yig'indini o'ziga tortadi. O'rta arifmetik (5 + 13 + 13 + 13 + 34) : 5 = 15,6 bo'lsa ham u minimum bermaydi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-nuqtasini-topish",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#166766a2"
+    },
+    {
+      "q": "|x − 1| + |x − 4| + |x − 9| + |x − 16| yig'indining eng kichik qiymati nechaga teng bo'ladi?",
+      "v": [
+        "10",
+        "15",
+        "20",
+        "30"
+      ],
+      "t": 2,
+      "izoh": "To'rtta nuqta: 1, 4, 9, 16. Ularni chetdan boshlab juftlaymiz: (1; 16) va (4; 9). Har juftning hissasi juftdagi nuqtalar orasidagi masofaga teng, ya'ni 15 va 5. Eng kichik yig'indi 15 + 5 = 20 bo'lib, u x ∈ [4; 9] da erishiladi. Qo'shni juftlash (1; 4) va (9; 16) esa xato natija 10 ni beradi. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-sonli-modullar-minimumi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#7dfa11a3"
+    },
+    {
+      "q": "|x − 2| + |x − 7| + |x − 13| + |x − 20| ifoda o'zining eng kichik qiymatiga qaysi oraliqda erishadi?",
+      "v": [
+        "[2; 20]",
+        "[7; 13]",
+        "[2; 7]",
+        "[13; 20]"
+      ],
+      "t": 1,
+      "izoh": "To'rtta nuqta bor: 2, 7, 13, 20. Juft sondagi nuqtalarda minimum ikkita o'rta nuqta orasidagi kesmada erishiladi. Bu yerda o'rta nuqtalar 7 va 13, demak izlanayotgan oraliq [7; 13]. Javob: [7; 13].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-sonli-modullar-minimumi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#34d428af"
+    },
+    {
+      "q": "Bir zavodda to'rtta stanok konveyer chizig'ining 3, 8, 18 va 27-metr belgilarida turadi. Usta ish stolini qayerga qo'ysa ham, stanoklargacha eng kamida necha metr yurishiga to'g'ri keladi?",
+      "v": [
+        "24",
+        "34",
+        "44",
+        "56"
+      ],
+      "t": 1,
+      "izoh": "Masofalar yig'indisi |x − 3| + |x − 8| + |x − 18| + |x − 27| ko'rinishida. Chetki juft (3; 27) hissasi 24, ichki juft (8; 18) hissasi 10 metr. Eng kichik yig'indi 24 + 10 = 34 metr bo'lib, u x ∈ [8; 18] da erishiladi. Javob: 34 metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-sonli-modullar-minimumi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#3db40a3b"
+    },
+    {
+      "q": "Oltita nuqta 1, 3, 6, 10, 14 va 21 berilgan. Shu nuqtalargacha masofalar yig'indisining eng kichik qiymatini toping.",
+      "v": [
+        "20",
+        "31",
+        "35",
+        "55"
+      ],
+      "t": 2,
+      "izoh": "Nuqtalarni chetdan boshlab juftlaymiz: (1; 21), (3; 14) va (6; 10). Har juftning hissasi juft ichidagi masofaga teng: 20, 11 va 4. Eng kichik yig'indi 20 + 11 + 4 = 35 bo'lib, u x ∈ [6; 10] oraliqda erishiladi. Javob: 35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-sonli-modullar-minimumi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#0fb55f86"
+    },
+    {
+      "q": "f(x) = |x − 5| + |x − 12| + |x − 19| funksiyaning qiymati to'rtta nuqtada hisoblandi. Qaysi nuqtada natija eng katta chiqadi?",
+      "v": [
+        "x = 5",
+        "x = 12",
+        "x = 19",
+        "x = 24"
+      ],
+      "t": 3,
+      "izoh": "Har bir nuqtada hisoblaymiz: f(5) = 0 + 7 + 14 = 21, f(12) = 7 + 0 + 7 = 14, f(19) = 14 + 7 + 0 = 21 va f(24) = 19 + 12 + 5 = 36. Nuqtalar to'plamidan uzoqlashgan sari yig'indi o'sadi, shuning uchun eng kattasi 24 da. Javob: x = 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqtalarda-qiymatlarni-solishtirish",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#4ce62f21"
+    },
+    {
+      "q": "|x − 4| + |x − 15| ifoda x = 0, x = 6, x = 18 va x = 20 qiymatlarda hisoblandi. Qaysi qiymatda natija eng kichik bo'ladi?",
+      "v": [
+        "x = 0",
+        "x = 6",
+        "x = 18",
+        "x = 20"
+      ],
+      "t": 1,
+      "izoh": "Qiymatlarni birma-bir qo'yamiz: 4 + 15 = 19, keyin 2 + 9 = 11, so'ng 14 + 3 = 17 va 16 + 5 = 21. Eng kichigi 11 bo'lib, u x = 6 da chiqadi, chunki 6 soni [4; 15] kesmaga tegishli. Javob: x = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtalarda-qiymatlarni-solishtirish",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#b9b54df5"
+    },
+    {
+      "q": "Malika |x + 2| + |x − 6| ifodaning qiymatini x = −5 da 15 deb hisobladi. Uning natijasi haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Aslida qiymat 14 ga teng",
+        "Aslida qiymat 8 ga teng",
+        "Aslida qiymat 16 ga teng",
+        "Xato yo'q, qiymat 15 ga teng"
+      ],
+      "t": 0,
+      "izoh": "x = −5 ni qo'yamiz: |−5 + 2| = |−3| = 3 va |−5 − 6| = |−11| = 11. Yig'indi 3 + 11 = 14 bo'ladi, Malika esa 11 o'rniga 12 olgan. Ifodaning eng kichik qiymati 8 ga teng va u [−2; 6] kesmada erishiladi, lekin x = −5 shu kesmada emas. Javob: aslida qiymat 14 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtalarda-qiymatlarni-solishtirish",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#4aa198c0"
+    },
+    {
+      "q": "Sonlar o'qida A(−3) va B(9) nuqtalar berilgan. M nuqta B dan 4 birlik o'ngda joylashgan. MA va MB masofalar yig'indisi mumkin bo'lgan minimumdan necha birlikka ko'p?",
+      "v": [
+        "4",
+        "12",
+        "20",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "M nuqtaning koordinatasi 9 + 4 = 13 ga teng. Unda MA = |13 − (−3)| = 16 va MB = |13 − 9| = 4, yig'indi 20. Eng kichik yig'indi esa AB = 9 − (−3) = 12. Farq 20 − 12 = 8, ya'ni kesmadan chiqilgan masofaning ikkilangani. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqtalarda-qiymatlarni-solishtirish",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#7ccf5ecb"
+    },
+    {
+      "q": "|x − 3| − |x − 11| ifoda qabul qiladigan barcha qiymatlar to'plamini ko'rsating.",
+      "v": [
+        "[−8; 8]",
+        "[0; 8]",
+        "[−8; 0]",
+        "(−∞; 8]"
+      ],
+      "t": 0,
+      "izoh": "Ifoda x nuqtadan 3 gacha va 11 gacha masofalarning ayirmasi. Bu ayirma modul bo'yicha nuqtalar orasidagi masofa 11 − 3 = 8 dan oshmaydi. x ≤ 3 da ifoda −8 ga, x ≥ 11 da esa 8 ga teng, oraliqda uzluksiz o'zgaradi. Javob: [−8; 8].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-qiymatlar-toplami",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#a9992229"
+    },
+    {
+      "q": "f(x) = |x + 4| − |x − 6| funksiyaning qiymatlar sohasi qanday oraliqdan iborat bo'ladi?",
+      "v": [
+        "[−2; 10]",
+        "[0; 10]",
+        "[−6; 4]",
+        "[−10; 10]"
+      ],
+      "t": 3,
+      "izoh": "Nuqtalar −4 va 6, ular orasidagi masofa 6 − (−4) = 10. Ayirma shu masofadan modul bo'yicha oshmaydi. x ≤ −4 da qiymat −10, x ≥ 6 da 10 bo'ladi, oralig'ida esa funksiya chiziqli o'sib barcha oraliq qiymatlarni oladi. Javob: [−10; 10].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayirma-qiymatlar-toplami",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#73137947"
+    },
+    {
+      "q": "|x − 7| − |x − 2| ifodaning eng kichik qiymati nechaga teng ekanini aniqlang.",
+      "v": [
+        "−5",
+        "0",
+        "5",
+        "−9"
+      ],
+      "t": 0,
+      "izoh": "Nuqtalar 7 va 2, ular orasidagi masofa 5. Ayirma −5 dan 5 gacha qiymatlarni oladi. x ≥ 7 bo'lganda |x − 7| − |x − 2| = (x − 7) − (x − 2) = −5 chiqadi, bu eng kichik qiymat. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-qiymatlar-toplami",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#33606eda"
+    },
+    {
+      "q": "Sardor |x − 1| − |x − 9| ifoda 10 ga teng bo'la oladimi degan savolga javob qidirmoqda. To'g'ri xulosani tanlang.",
+      "v": [
+        "Ha, x = 10 da",
+        "Yo'q, chunki ifoda 8 dan katta bo'la olmaydi",
+        "Ha, x = 12 da",
+        "Yo'q, chunki ifoda faqat manfiy qiymat oladi"
+      ],
+      "t": 1,
+      "izoh": "Ifoda x nuqtadan 1 va 9 gacha masofalar ayirmasi. Uning moduli nuqtalar orasidagi masofa 9 − 1 = 8 dan katta bo'la olmaydi. Eng katta qiymat 8 bo'lib, u x ≥ 9 nurda erishiladi. 10 soni 8 dan katta, demak bunday x mavjud emas. Javob: yo'q, chunki ifoda 8 dan katta bo'la olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-qiymatlar-toplami",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#6bbf68b5"
+    },
+    {
+      "q": "|x + 5| − |x − 5| ifodaning eng katta va eng kichik qiymatlari yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "10",
+        "20",
+        "0",
+        "−10"
+      ],
+      "t": 2,
+      "izoh": "Nuqtalar −5 va 5, ular orasidagi masofa 10. Eng katta qiymat 10 bo'lib, u x ≥ 5 da erishiladi, eng kichigi esa −10 bo'lib, u x ≤ −5 da erishiladi. Ularning yig'indisi 10 + (−10) = 0. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-qiymatlar-toplami",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#f1594bcf"
+    },
+    {
+      "q": "Yugurish yo'lining 6 va 26-metr belgilarida ikkita bayroqcha turibdi. Yuguruvchi turgan nuqtadan birinchi bayroqchagacha va ikkinchisigacha bo'lgan masofalar ayirmasi eng ko'pi bilan necha metr bo'lishi mumkin?",
+      "v": [
+        "10",
+        "32",
+        "20",
+        "40"
+      ],
+      "t": 2,
+      "izoh": "Ayirma |x − 6| − |x − 26| ko'rinishida yoziladi. Bu ayirma bayroqchalar orasidagi masofadan katta bo'la olmaydi: 26 − 6 = 20 metr. Yuguruvchi 26-metrdan o'ngda turganda ayirma aynan 20 ga teng bo'ladi. Javob: 20 metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-eng-katta-qiymati",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#c4611678"
+    },
+    {
+      "q": "f(x) = |x − 14| − |x + 6| funksiyaning eng katta qiymatini toping va uni to'g'ri ko'rsatgan javobni belgilang.",
+      "v": [
+        "8",
+        "28",
+        "−20",
+        "20"
+      ],
+      "t": 3,
+      "izoh": "Nuqtalar 14 va −6, ular orasidagi masofa 14 − (−6) = 20. x ≤ −6 bo'lganda |x − 14| = 14 − x va |x + 6| = −x − 6, demak f(x) = (14 − x) − (−x − 6) = 20. Bundan katta qiymat bo'lmaydi, chunki ayirma masofadan oshmaydi. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayirma-eng-katta-qiymati",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#48ea8c93"
+    },
+    {
+      "q": "|x − 9| − |x − 4| ifodaning eng katta qiymati M, eng kichik qiymati m bo'lsa, M − m ayirmani hisoblang.",
+      "v": [
+        "5",
+        "10",
+        "13",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "Nuqtalar 9 va 4, ular orasidagi masofa 5. Demak eng katta qiymat M = 5 bo'lib, u x ≤ 4 da erishiladi, eng kichigi esa m = −5 bo'lib, u x ≥ 9 da erishiladi. M − m = 5 − (−5) = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-eng-katta-qiymati",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#c9351880"
+    },
+    {
+      "q": "|x − 30| − |x − 12| ifoda o'zining eng katta qiymatiga erishadigan x lar to'plami qaysi?",
+      "v": [
+        "(−∞; 12]",
+        "[30; +∞)",
+        "[12; 30]",
+        "{21}"
+      ],
+      "t": 0,
+      "izoh": "Nuqtalar 30 va 12. Ayirma eng katta bo'lishi uchun x birinchi nuqtadan uzoq, ikkinchisiga esa yaqin bo'lishi kerak, ya'ni x 12 dan chapda yotishi shart. Bunda ayirma (30 − x) − (12 − x) = 18 ga teng bo'ladi. Javob: (−∞; 12].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayirma-eng-katta-qiymati",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#8bed748e"
+    },
+    {
+      "q": "|x − 25| − |x − 13| ifodaning qiymati manfiy bo'ladigan barcha x larni ko'rsating.",
+      "v": [
+        "x > 19",
+        "x < 19",
+        "x > 25",
+        "13 < x < 25"
+      ],
+      "t": 0,
+      "izoh": "Ifoda manfiy bo'lishi uchun x dan 25 gacha masofa x dan 13 gacha masofadan kichik bo'lishi kerak, ya'ni x nuqta 25 ga yaqinroq turishi shart. Ikki nuqtaning o'rtasi (13 + 25) : 2 = 19. Demak shart x > 19 da bajariladi. Javob: x > 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-ishorasi-va-nur",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#aec25539"
+    },
+    {
+      "q": "Sonlar o'qidagi P nuqta uchun |x − 40| − |x − 16| ayirma eng kichik qiymatga ega. P qaysi nurda yotishi kerak?",
+      "v": [
+        "x ≤ 16",
+        "x ≥ 40",
+        "16 ≤ x ≤ 40",
+        "x ≥ 28"
+      ],
+      "t": 1,
+      "izoh": "Ayirma eng kichik bo'lishi uchun birinchi masofa kichik, ikkinchisi esa katta bo'lishi kerak, ya'ni x nuqta 40 dan o'ngda yotishi shart. U holda ayirma (x − 40) − (x − 16) = −24 ga teng bo'ladi. Javob: x ≥ 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-ishorasi-va-nur",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#b653fa86"
+    },
+    {
+      "q": "Dilnoza |x + 9| − |x − 3| ifoda qaysi x larda 12 ga teng bo'lishini aniqlamoqchi. To'g'ri javobni tanlang.",
+      "v": [
+        "Faqat x = 3 da",
+        "x ≥ 3 bo'lgan barcha x larda",
+        "x ≤ −9 bo'lgan barcha x larda",
+        "Hech qanday x da"
+      ],
+      "t": 1,
+      "izoh": "Nuqtalar −9 va 3, ular orasidagi masofa 3 − (−9) = 12. Demak 12 — ayirmaning eng katta qiymati. U x nuqta 3 dan o'ngda bo'lganda erishiladi: (x + 9) − (x − 3) = 12. Shuning uchun barcha x ≥ 3 to'g'ri keladi. Javob: x ≥ 3 bo'lgan barcha x larda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-ishorasi-va-nur",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#b006dd91"
+    },
+    {
+      "q": "|x − 7| − |x − 31| ifoda nolga aylanadigan x ning qiymatini toping.",
+      "v": [
+        "24",
+        "38",
+        "19",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Ayirma nolga teng bo'lishi uchun x nuqta 7 va 31 dan bir xil uzoqlikda turishi kerak. Bunday nuqta ikkisining o'rtasidir: (7 + 31) : 2 = 38 : 2 = 19. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-ishorasi-va-nur",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#03dca781"
+    },
+    {
+      "q": "Bir ko'chada Akmalning uyi 14-raqamli, Bekzodniki 27-raqamli, Davronniki esa 58-raqamli. Ular bitta uyda uchrashadi. Qaysi uyda uchrashsa, umumiy bosib o'tiladigan yo'l eng qisqa bo'ladi?",
+      "v": [
+        "14-raqamli uyda",
+        "27-raqamli uyda",
+        "33-raqamli uyda",
+        "58-raqamli uyda"
+      ],
+      "t": 1,
+      "izoh": "Umumiy yo'l |x − 14| + |x − 27| + |x − 58| ga teng. Uchta nuqta uchun bu yig'indi mediana nuqtada eng kichik bo'ladi, ya'ni 27 da: 13 + 0 + 31 = 44. Solishtirish uchun 14-uyda 0 + 13 + 44 = 57 chiqadi. Javob: 27-raqamli uyda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-optimal-joylashuv",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#b1a3ad59"
+    },
+    {
+      "q": "Fermer suv nasosini ariq bo'yiga o'rnatmoqchi. Uning uchta dalasi ariqning 5, 23 va 46-metr belgilariga to'g'ri keladi. Quvurlarning eng qisqa umumiy uzunligi necha metr bo'ladi?",
+      "v": [
+        "23",
+        "59",
+        "74",
+        "41"
+      ],
+      "t": 3,
+      "izoh": "Umumiy uzunlik |x − 5| + |x − 23| + |x − 46| ko'rinishida. Minimum o'rtadagi nuqtada, ya'ni x = 23 da bo'ladi: 18 + 0 + 23 = 41 metr. Chetki 5-metrda esa 0 + 18 + 41 = 59 metr chiqadi. Javob: 41 metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-optimal-joylashuv",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#deac7ce0"
+    },
+    {
+      "q": "To'rtta paxta qabul punkti trassaning 9, 21, 38 va 62-km belgilarida joylashgan. Yangi shoxobcha qayerga qurilsa ham, punktlargacha masofalar yig'indisi eng kamida necha kilometr bo'ladi?",
+      "v": [
+        "53",
+        "94",
+        "70",
+        "130"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi |x − 9| + |x − 21| + |x − 38| + |x − 62| ko'rinishida. Chetki juft (9; 62) hissasi 53, ichki juft (21; 38) hissasi 17 km. Eng kichik yig'indi 53 + 17 = 70 km bo'lib, u x ∈ [21; 38] oraliqda erishiladi. Javob: 70 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-optimal-joylashuv",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#643750b5"
+    },
+    {
+      "q": "Beshta ishchi tasmaning 4, 11, 17, 29 va 33-metr belgilarida ishlaydi. Asboblar qutisi qaysi belgiga qo'yilsa, ishchilarning umumiy yurishi eng kam bo'ladi va u qanchaga teng?",
+      "v": [
+        "17-metr, 47 m",
+        "17-metr, 94 m",
+        "18,8-metr, 47 m",
+        "19-metr, 52 m"
+      ],
+      "t": 0,
+      "izoh": "Nuqtalar tartibda: 4, 11, 17, 29, 33. Beshta nuqta uchun mediana uchinchi o'rindagi son, ya'ni 17. Unda yig'indi 13 + 6 + 0 + 12 + 16 = 47 metr. O'rta arifmetik 18,8 bo'lsa ham u minimum bermaydi. Javob: 17-metr belgida, 47 metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-optimal-joylashuv",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#7b2a0af7"
+    },
+    {
+      "q": "To'g'ri yo'lning 6-km belgisida ikkita korxona, 34-km belgisida esa yana bitta korxona joylashgan. Ombor qaysi belgiga qurilsa, uchala korxonagacha yig'indi masofa eng kichik bo'ladi?",
+      "v": [
+        "15,3-km",
+        "20-km",
+        "34-km",
+        "6-km"
+      ],
+      "t": 3,
+      "izoh": "Ombor belgisi x bo'lsa, yig'indi masofa |x − 6| + |x − 6| + |x − 34| bo'ladi. Nuqtalar tartibda: 6, 6, 34. Uchta nuqta uchun mediana ikkinchi o'rindagi son, ya'ni 6. Unda yig'indi 0 + 0 + 28 = 28 km bo'ladi. O'rta arifmetik (6 + 6 + 34) : 3 ≈ 15,3 minimumni bermaydi, chunki ikkita korxona 6 da to'plangan. Javob: 6-km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-optimal-joylashuv",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#9828b63f"
+    },
+    {
+      "q": "Ikki qishloq daryo bo'yida 18 va 47-km belgilarida joylashgan. Qayiq to'xtash joyi ular orasida bo'lsa, ikkala qishloqqacha masofalar yig'indisi haqida nima deyish mumkin?",
+      "v": [
+        "Har doim 65 km",
+        "To'xtash joyiga qarab 29 km dan kichik",
+        "Har doim 29 km",
+        "To'xtash joyi o'rtada bo'lsagina 29 km"
+      ],
+      "t": 2,
+      "izoh": "To'xtash joyi [18; 47] kesmada bo'lsa, ikkita masofa kesmani ikki bo'lakka ajratadi va ularning yig'indisi kesma uzunligiga teng bo'ladi: 47 − 18 = 29 km. Bu natija to'xtash joyining aniq o'rniga bog'liq emas. Javob: har doim 29 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ikki-nuqta-oraliq",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#aa43f5a9"
+    },
+    {
+      "q": "Zilolaning uyi 8-km, do'stining uyi esa 35-km belgisida. Zilola turgan nuqtadan ikkala uygacha masofalar yig'indisi 27 km bo'lishi uchun u qayerda turishi kerak?",
+      "v": [
+        "Faqat 21,5-km belgisida",
+        "[8; 35] oralig'idagi istalgan nuqtada",
+        "Faqat 8 yoki 35-km belgisida",
+        "Bunday nuqta yo'q"
+      ],
+      "t": 1,
+      "izoh": "Ikki uy orasidagi masofa 35 − 8 = 27 km. Yig'indi shu qiymatga teng bo'lishi uchun nuqta ikki uy orasida yotishi kerak, ya'ni x ∈ [8; 35]. Kesmadan tashqarida yig'indi 27 dan katta chiqadi. Javob: [8; 35] oralig'idagi istalgan nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ikki-nuqta-oraliq",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#6ac8e9ce"
+    },
+    {
+      "q": "Ikkita avtobus bekati 13 va 41-km belgilarida. Yo'lovchi hozir 55-km belgisida turibdi va bekatlargacha masofalar yig'indisini eng kichik qilmoqchi. U kamida necha kilometr yurishi kerak?",
+      "v": [
+        "28 km",
+        "42 km",
+        "Yurmasa ham bo'ladi",
+        "14 km"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi eng kichik bo'lishi uchun yo'lovchi [13; 41] kesmada turishi kerak. U hozir 55 da, kesmaning eng yaqin cheti esa 41. Demak 55 − 41 = 14 km yurishi yetarli. Javob: 14 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ikki-nuqta-oraliq",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#5afefaf1"
+    },
+    {
+      "q": "Ombor va do'kon ko'chaning 24 va 52-belgilarida. Kuryer turgan nuqtadan ikkala manzilgacha masofalar yig'indisi 40 birlikka teng ekan. Kuryer qayerda turishi mumkin?",
+      "v": [
+        "x = 12 yoki x = 64",
+        "x = 20 yoki x = 56",
+        "x = 18 yoki x = 58",
+        "Bunday x yo'q"
+      ],
+      "t": 2,
+      "izoh": "Eng kichik yig'indi 52 − 24 = 28, demak 40 qiymati kesmadan tashqarida erishiladi. x < 24 da (24 − x) + (52 − x) = 40, bundan 76 − 2x = 40 va x = 18. x > 52 da (x − 24) + (x − 52) = 40, bundan 2x = 116 va x = 58. Javob: x = 18 yoki x = 58.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ikki-nuqta-oraliq",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#a9c585e1"
+    },
+    {
+      "q": "2|x − 7| + |x − 26| ifodaning eng kichik qiymatini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "9,5",
+        "19",
+        "33",
+        "38"
+      ],
+      "t": 1,
+      "izoh": "Ifodani |x − 7| + |x − 7| + |x − 26| deb yozamiz, ya'ni 7 nuqta ikki marta olingan. Uchta nuqta 7, 7, 26 ning medianasi 7. x = 7 da qiymat 2·0 + 19 = 19 chiqadi. Chetki 26 da esa 2·19 + 0 = 38 bo'ladi. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsientli-modul-minimumi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#cf121779"
+    },
+    {
+      "q": "3|x − 4| + |x − 20| yig'indining eng kichik qiymati nechaga teng bo'ladi?",
+      "v": [
+        "48",
+        "64",
+        "20",
+        "16"
+      ],
+      "t": 3,
+      "izoh": "Ifodani |x − 4| uch marta va |x − 20| bir marta olingan yig'indi deb qaraymiz, ya'ni nuqtalar 4, 4, 4 va 20. To'rtta nuqta uchun minimum ikki o'rta nuqta orasida, bu yerda ikkalasi ham 4. x = 4 da qiymat 3·0 + 16 = 16. Chetki 20 da esa 3·16 = 48 chiqadi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koeffitsientli-modul-minimumi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#bfba38b5"
+    },
+    {
+      "q": "Ikki qishloqda 3 ta va 1 ta oila yashaydi: birinchisi yo'lning 6-km, ikkinchisi 30-km belgisida. Do'kon qayerga qurilsa, barcha oilalarning umumiy yo'li eng qisqa bo'ladi?",
+      "v": [
+        "12-km",
+        "18-km",
+        "6-km",
+        "30-km"
+      ],
+      "t": 2,
+      "izoh": "Umumiy yo'l 3|x − 6| + |x − 30| ga teng. Buni nuqtalar to'plami 6, 6, 6 va 30 deb qarash mumkin, chunki birinchi qishloqda uch oila bor. Ko'pchilik to'plangan 6 nuqta mediana bo'ladi, demak do'kon 6-km da qurilishi kerak. Og'irlikli o'rtacha (3·6 + 30) : 4 = 12 bo'lsa ham u minimum bermaydi. Javob: 6-km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsientli-modul-minimumi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#0ffc33f3"
+    },
+    {
+      "q": "|x − 9| + 2|x − 9| + |x − 40| ifodaning eng kichik qiymati qanday songa teng?",
+      "v": [
+        "62",
+        "31",
+        "93",
+        "49"
+      ],
+      "t": 1,
+      "izoh": "Avval o'xshash hadlarni birlashtiramiz: |x − 9| + 2|x − 9| = 3|x − 9|. Demak ifoda 3|x − 9| + |x − 40| ko'rinishida. Nuqtalar 9, 9, 9 va 40 bo'lgani uchun minimum x = 9 da: 0 + 31 = 31. Javob: 31.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koeffitsientli-modul-minimumi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#ae550b22"
+    },
+    {
+      "q": "f(x) = 50 − |x − 11| − |x − 23| funksiyaning eng katta qiymatini toping.",
+      "v": [
+        "50",
+        "26",
+        "38",
+        "62"
+      ],
+      "t": 2,
+      "izoh": "Ayiriluvchi |x − 11| + |x − 23| eng kichik bo'lganda butun funksiya eng katta bo'ladi. Bu yig'indining eng kichik qiymati 23 − 11 = 12 bo'lib, u [11; 23] kesmada erishiladi. Demak eng katta qiymat 50 − 12 = 38. Javob: 38.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirilgan-ifodaning-maksimumi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#ba3bb998"
+    },
+    {
+      "q": "Bir do'konning t-soatdagi soatlik foydasi F = 90 − |t − 6| − |t − 19| ming so'mga teng, bu yerda t — sutkaning soati. Foydaning eng katta qiymati necha ming so'm bo'ladi?",
+      "v": [
+        "90",
+        "64",
+        "84",
+        "77"
+      ],
+      "t": 3,
+      "izoh": "Foyda eng katta bo'lishi uchun |t − 6| + |t − 19| eng kichik bo'lishi kerak. Bu yig'indining eng kichik qiymati 19 − 6 = 13 bo'lib, u t ∈ [6; 19] da erishiladi. Demak F ning eng kattasi 90 − 13 = 77 ming so'm. Javob: 77 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirilgan-ifodaning-maksimumi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#33061205"
+    },
+    {
+      "q": "g(x) = 100 − |x + 8| − |x − 14| − |x − 30| ifoda eng katta qiymatga qaysi x da erishadi?",
+      "v": [
+        "x = −8",
+        "x = 11",
+        "x = 14",
+        "x = 30"
+      ],
+      "t": 2,
+      "izoh": "Ayiriluvchi uchta modulning yig'indisi, u eng kichik bo'lganda g eng katta bo'ladi. Nuqtalar −8, 14 va 30 ning medianasi 14. x = 14 da yig'indi 22 + 0 + 16 = 38, demak g(14) = 100 − 38 = 62. Javob: x = 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirilgan-ifodaning-maksimumi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#efccb339"
+    },
+    {
+      "q": "Sinovda o'lchangan aniqlik E = 46 − |x − 15| − |x − 27| formula bilan berilgan. E ning eng katta qiymatini va u erishiladigan oraliqni ko'rsating.",
+      "v": [
+        "34, faqat x = 21 da",
+        "34, [15; 27] da",
+        "46, [15; 27] da",
+        "22, [15; 27] da"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi |x − 15| + |x − 27| ning eng kichik qiymati 27 − 15 = 12 bo'lib, u butun [15; 27] kesmada erishiladi, faqat o'rtasida emas. Demak E ning eng kattasi 46 − 12 = 34 va u shu kesmaning har bir nuqtasida chiqadi. Javob: 34, [15; 27] da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirilgan-ifodaning-maksimumi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#9c4e4420"
+    },
+    {
+      "q": "h(x) = 25 − |x − 4| − |x − 4| ifodaning eng katta qiymati nechaga teng bo'ladi?",
+      "v": [
+        "21",
+        "17",
+        "0",
+        "25"
+      ],
+      "t": 3,
+      "izoh": "Ikkita bir xil modulni birlashtiramiz: |x − 4| + |x − 4| = 2|x − 4|. Bu ayiriluvchi nomanfiy bo'lib, x = 4 da nolga aylanadi. Demak eng katta qiymat 25 − 0 = 25. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirilgan-ifodaning-maksimumi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#8df12533"
+    },
+    {
+      "q": "|x − 5| + |x − 21| = 16 tenglama nechta yechimga ega ekanini aniqlang.",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "16 ta",
+        "Cheksiz ko'p"
+      ],
+      "t": 3,
+      "izoh": "Chap tomonning eng kichik qiymati 21 − 5 = 16 ga teng. Tenglamaning o'ng tomoni aynan shu minimumga teng. Ikkita nuqtada minimum butun [5; 21] kesmada erishilgani uchun kesmaning har bir nuqtasi yechim bo'ladi. Javob: cheksiz ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-tenglama-yechimlar-soni",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#2d6ab1cf"
+    },
+    {
+      "q": "|x − 2| + |x − 9| = 5 tenglamaning yechimlari soni qanchaga teng?",
+      "v": [
+        "Yechimi yo'q",
+        "1 ta",
+        "2 ta",
+        "Cheksiz ko'p"
+      ],
+      "t": 0,
+      "izoh": "Chap tomonning eng kichik qiymati 9 − 2 = 7 ga teng. O'ng tomondagi 5 soni 7 dan kichik, demak chap tomon hech qachon 5 ga aylana olmaydi. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modulli-tenglama-yechimlar-soni",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#f52e7a28"
+    },
+    {
+      "q": "|x − 6| + |x − 18| = 20 tenglamani yeching va uning ildizlari yig'indisini toping.",
+      "v": [
+        "20",
+        "24",
+        "44",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "Eng kichik qiymat 18 − 6 = 12, o'ng tomon undan katta, demak ildizlar kesmadan tashqarida. x < 6 da 24 − 2x = 20 dan x = 2. x > 18 da 2x − 24 = 20 dan x = 22. Ildizlar yig'indisi 2 + 22 = 24. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-tenglama-yechimlar-soni",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#af991a41"
+    },
+    {
+      "q": "Rustam |x + 3| + |x − 13| = 20 tenglamani yechib, ikkita ildiz topdi. Shu ildizlarning ko'paytmasi nechaga teng?",
+      "v": [
+        "75",
+        "10",
+        "−75",
+        "−45"
+      ],
+      "t": 2,
+      "izoh": "Nuqtalar −3 va 13, eng kichik yig'indi 16. O'ng tomon 20 undan katta, demak ikkita ildiz bor. x < −3 da 10 − 2x = 20 dan x = −5. x > 13 da 2x − 10 = 20 dan x = 15. Ko'paytma (−5)·15 = −75. Javob: −75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modulli-tenglama-yechimlar-soni",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#74b4da1a"
+    },
+    {
+      "q": "|x − 1| + |x − 7| + |x − 13| = 12 tenglama nechta yechimga ega bo'ladi?",
+      "v": [
+        "Yechimi yo'q",
+        "1 ta",
+        "2 ta",
+        "3 ta"
+      ],
+      "t": 1,
+      "izoh": "Chap tomonning eng kichik qiymati mediana nuqtada, ya'ni x = 7 da: 6 + 0 + 6 = 12. O'ng tomon aynan shu minimumga teng. Toq sondagi nuqtalarda minimum yagona nuqtada erishilgani uchun yechim ham yagona: x = 7. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modulli-tenglama-yechimlar-soni",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#ec474dcf"
+    },
+    {
+      "q": "|x − 4| + |x − 22| < 15 tengsizlikning yechimi bormi degan savolga to'g'ri javobni tanlang.",
+      "v": [
+        "Yo'q, chunki chap tomon 18 dan kichik bo'lmaydi",
+        "Ha, x ∈ (4; 22)",
+        "Ha, faqat x = 13 da",
+        "Ha, x ∈ (7; 19)"
+      ],
+      "t": 0,
+      "izoh": "Chap tomon x nuqtadan 4 va 22 gacha masofalar yig'indisi. Uning eng kichik qiymati 22 − 4 = 18 ga teng. 15 soni 18 dan kichik bo'lgani uchun tengsizlik hech qanday x da bajarilmaydi. Javob: yo'q, chunki chap tomon 18 dan kichik bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-yechimga-egaligi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#66991b6d"
+    },
+    {
+      "q": "a ning qanday eng kichik butun qiymatida |x − 9| + |x − 29| ≤ a tengsizlik yechimga ega bo'ladi?",
+      "v": [
+        "19",
+        "20",
+        "21",
+        "38"
+      ],
+      "t": 1,
+      "izoh": "Chap tomonning eng kichik qiymati 29 − 9 = 20 ga teng. Tengsizlik yechimga ega bo'lishi uchun a shu minimumdan kichik bo'lmasligi kerak, ya'ni a ≥ 20 shart. Eng kichik butun qiymat 20 bo'ladi. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizlik-yechimga-egaligi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#5fcd6aee"
+    },
+    {
+      "q": "|x + 11| − |x − 5| ≥ 16 tengsizlik x ning qanday qiymatlarida bajariladi?",
+      "v": [
+        "x ≤ −11",
+        "−11 ≤ x ≤ 5",
+        "Yechimi yo'q",
+        "x ≥ 5"
+      ],
+      "t": 3,
+      "izoh": "Ayirmaning eng katta qiymati nuqtalar orasidagi masofaga teng: 5 − (−11) = 16. Demak shart faqat maksimum erishilganda bajariladi. Maksimum x ≥ 5 nurda chiqadi: (x + 11) − (x − 5) = 16. Javob: x ≥ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tengsizlik-yechimga-egaligi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#87e826b1"
+    },
+    {
+      "q": "Trassaning 16- va 40-km belgilarida ikkita ombor bor. Yetkazib berish narxi har ikkala ombordan manzilgacha bo'lgan masofalar yig'indisiga qarab, har bir km uchun 1 ming so'mdan hisoblanadi: manzilning km belgisi x bo'lsa, N = |x − 16| + |x − 40| ming so'm. Narx 30 ming so'mdan oshmasligi uchun x qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "[16; 40]",
+        "[11; 45]",
+        "[13; 43]",
+        "[10; 46]"
+      ],
+      "t": 2,
+      "izoh": "Eng kichik narx 40 − 16 = 24 ming so'm. x < 16 da (16 − x) + (40 − x) = 56 − 2x ≤ 30 dan x ≥ 13. x > 40 da 2x − 56 ≤ 30 dan x ≤ 43. Kesma ichida narx 24 bo'lib, shart o'z-o'zidan bajariladi. Javob: [13; 43].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-yechimga-egaligi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#d45612f5"
+    },
+    {
+      "q": "|x − 7| + |x − 23| ≤ 24 tengsizlik yechimlari oralig'ining uzunligini hisoblang.",
+      "v": [
+        "24",
+        "16",
+        "27",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Eng kichik yig'indi 23 − 7 = 16. Chapda 30 − 2x ≤ 24 dan x ≥ 3, o'ngda 2x − 30 ≤ 24 dan x ≤ 27. Demak yechim [3; 27] kesma, uning uzunligi 27 − 3 = 24. Kesmaning o'ng chetini uzunlik deb olish 27 degan xato javobga olib keladi. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-yechim-oraligi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#0765d747"
+    },
+    {
+      "q": "|x + 5| + |x − 9| ≤ 20 tengsizlikni qanoatlantiruvchi butun sonlar nechta bo'ladi?",
+      "v": [
+        "19",
+        "20",
+        "21",
+        "22"
+      ],
+      "t": 2,
+      "izoh": "Chap tomonning eng kichik qiymati 9 − (−5) = 14 bo'lib, u 20 dan kichik. x < −5 da 4 − 2x ≤ 20 dan x ≥ −8. x > 9 da 2x − 4 ≤ 20 dan x ≤ 12. Yechim [−8; 12], undagi butun sonlar soni 12 − (−8) + 1 = 21 ta. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tengsizlik-yechim-oraligi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#ae549695"
+    },
+    {
+      "q": "Dorixona zaxirasi |t − 10| + |t − 26| ≤ 30 shartni qanoatlantiruvchi t kunlarda to'ldiriladi. Bunday kunlar oralig'ini toping.",
+      "v": [
+        "[3; 33]",
+        "[10; 26]",
+        "[−2; 38]",
+        "[6; 30]"
+      ],
+      "t": 0,
+      "izoh": "Eng kichik yig'indi 26 − 10 = 16. t < 10 da (10 − t) + (26 − t) = 36 − 2t ≤ 30 dan t ≥ 3. t > 26 da 2t − 36 ≤ 30 dan t ≤ 33. Kesma ichida shart bajariladi. Demak oraliq [3; 33]. Javob: [3; 33].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-yechim-oraligi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#2deca5f8"
+    },
+    {
+      "q": "|x − 12| + |x − 28| ≤ c tengsizlikning yechimi uzunligi 36 ga teng bo'lsa, c nechaga teng?",
+      "v": [
+        "36",
+        "16",
+        "52",
+        "18"
+      ],
+      "t": 0,
+      "izoh": "Umumiy holda bunday tengsizlikning yechimi [(a + b − c) : 2; (a + b + c) : 2] kesma bo'lib, uning uzunligi aynan c ga teng chiqadi. Demak c = 36. Tekshiramiz: kesma [2; 38], uzunligi 38 − 2 = 36. Chap tomonning eng kichik qiymati 28 − 12 = 16 bo'lsa ham, u uzunlikni bermaydi. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tengsizlik-yechim-oraligi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#0e0adbf8"
+    },
+    {
+      "q": "f(x) = |x − 8| + |x − 27| funksiyaning qiymatlar sohasini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "[19; +∞)",
+        "(19; +∞)",
+        "[0; +∞)",
+        "[8; 27]"
+      ],
+      "t": 0,
+      "izoh": "Funksiya x nuqtadan 8 va 27 gacha masofalar yig'indisi. Uning eng kichik qiymati 27 − 8 = 19 bo'lib, bu qiymat haqiqatan erishiladi, shuning uchun chegara kiritiladi. x kesmadan uzoqlashganda yig'indi cheksiz o'sadi va oraliqdagi barcha qiymatlarni oladi. Javob: [19; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlar-sohasini-topish",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#6bb8b7b9"
+    },
+    {
+      "q": "|x − 3| + |x − 3| + |x − 3| ifodaning qiymatlar to'plami qaysi oraliqdan iborat bo'ladi?",
+      "v": [
+        "[3; +∞)",
+        "(0; +∞)",
+        "[9; +∞)",
+        "[0; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Uchala had bir xil, demak ifodani 3|x − 3| ko'rinishida yozish mumkin. Modul nomanfiy bo'lgani uchun eng kichik qiymat x = 3 da nolga teng va u erishiladi. x uzoqlashganda ifoda cheksiz o'sadi. Javob: [0; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlar-sohasini-topish",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#f623ec2c"
+    },
+    {
+      "q": "y = |x + 15| + |x − 6| funksiya 21 dan kichik qiymat qabul qila oladimi degan savolga to'g'ri javobni tanlang.",
+      "v": [
+        "Ha, x = 0 da",
+        "Ha, oraliqning o'rtasida",
+        "Yo'q, eng kichik qiymat 21 ga teng",
+        "Yo'q, eng kichik qiymat 9 ga teng"
+      ],
+      "t": 2,
+      "izoh": "Nuqtalar −15 va 6, ular orasidagi masofa 6 − (−15) = 21. Yig'indi shu masofadan kichik bo'la olmaydi. Tekshirish uchun x = 0 ni qo'yamiz: 15 + 6 = 21, ya'ni yana o'sha minimum chiqadi. Javob: yo'q, eng kichik qiymat 21 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-sohasini-topish",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#a6ccd510"
+    },
+    {
+      "q": "Mashinaning yoqilg'i sarfi S = |v − 45| + |v − 72| shartli birlikda baholanadi. S ning eng kichik qiymati va unga mos v oralig'i qanday bo'ladi?",
+      "v": [
+        "27, faqat v = 58,5",
+        "117, v ∈ [45; 72]",
+        "13,5, v ∈ [45; 72]",
+        "27, v ∈ [45; 72]"
+      ],
+      "t": 3,
+      "izoh": "S — v nuqtadan 45 va 72 gacha masofalar yig'indisi. Uning eng kichik qiymati 72 − 45 = 27 birlikka teng. Bu minimum faqat o'rtada emas, balki [45; 72] oraliqning har bir nuqtasida erishiladi. Javob: 27, v ∈ [45; 72].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatlar-sohasini-topish",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#7dc6c88e"
+    },
+    {
+      "q": "|x − 5| + |x − a| ifodaning eng kichik qiymati 17 ga teng va a > 5 ekani ma'lum. a nechaga teng?",
+      "v": [
+        "12",
+        "22",
+        "17",
+        "85"
+      ],
+      "t": 1,
+      "izoh": "Ifodaning eng kichik qiymati ikki nuqta orasidagi masofaga, ya'ni |a − 5| ga teng. Shart bo'yicha a > 5, shuning uchun a − 5 = 17 tenglama hosil bo'ladi. Bundan a = 22. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrli-minimum",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#da4eaf20"
+    },
+    {
+      "q": "|x + 7| + |x − a| ifodaning eng kichik qiymati 31 ga teng bo'lsa, a ning manfiy qiymatini toping.",
+      "v": [
+        "−24",
+        "−31",
+        "−38",
+        "−45"
+      ],
+      "t": 2,
+      "izoh": "Nuqtalar −7 va a, eng kichik qiymat ular orasidagi masofa |a − (−7)| = |a + 7| ga teng, ya'ni |a + 7| = 31. Bundan a + 7 = 31 yoki a + 7 = −31 kelib chiqadi. Birinchisidan a = 24 (musbat), ikkinchisidan a = −38. Javob: −38.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrli-minimum",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#e57f0ef2"
+    },
+    {
+      "q": "|x − 13| + |x − b| ifodaning eng kichik qiymati nolga teng bo'lishi uchun b qanday bo'lishi kerak?",
+      "v": [
+        "b = 0",
+        "b = 13",
+        "b = −13",
+        "Bunday b yo'q"
+      ],
+      "t": 1,
+      "izoh": "Eng kichik qiymat ikki nuqta orasidagi masofaga teng. Masofa nolga aylanishi uchun nuqtalar ustma-ust tushishi kerak, ya'ni b = 13 bo'lishi shart. Unda ifoda 2|x − 13| ko'rinishga keladi va x = 13 da nolga aylanadi. Javob: b = 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrli-minimum",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#0d0654a8"
+    },
+    {
+      "q": "|x − 4| + |x − 16| + |x − m| ifodaning eng kichik qiymati 12 ga teng bo'lishi uchun m qaysi oraliqda yotishi kerak?",
+      "v": [
+        "m ∈ [4; 16]",
+        "m = 10",
+        "m ∈ (−∞; 4]",
+        "m ∈ [16; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Uchta nuqta 4, 16 va m. Agar m ikkisining orasida yotsa, mediana aynan m bo'ladi va yig'indi (m − 4) + (16 − m) + 0 = 12 chiqadi. Agar m kesmadan tashqarida bo'lsa, mediana 4 yoki 16 bo'lib, yig'indi 12 dan katta bo'ladi. Javob: m ∈ [4; 16].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrli-minimum",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#232b6719"
+    },
+    {
+      "q": "||x − 9| − |x − 35|| ifodaning eng katta qiymati nechaga teng bo'ladi?",
+      "v": [
+        "13",
+        "44",
+        "52",
+        "26"
+      ],
+      "t": 3,
+      "izoh": "Ichki ayirma |x − 9| − |x − 35| ning qiymatlari [−26; 26] oraliqda yotadi, chunki nuqtalar orasidagi masofa 35 − 9 = 26. Tashqi modul olingandan keyin eng katta qiymat 26 bo'ladi va u kesmadan tashqarida erishiladi. Javob: 26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshaloq-modul-ayirmasi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#5aebfb25"
+    },
+    {
+      "q": "||x + 6| − |x − 18|| ifodaning eng kichik qiymati nechaga teng va u qaysi x da erishiladi?",
+      "v": [
+        "24, x = 18 da",
+        "0, x = 6 da",
+        "0, x = −6 da",
+        "12, x = 6 da"
+      ],
+      "t": 1,
+      "izoh": "Ichki ayirma x nuqtadan −6 va 18 gacha masofalar farqi. U nolga aylanishi uchun x ikki nuqtadan bir xil uzoqlikda, ya'ni ularning o'rtasida bo'lishi kerak: (−6 + 18) : 2 = 6. Tashqi modul nomanfiy bo'lgani uchun eng kichik qiymat 0. Javob: 0, x = 6 da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshaloq-modul-ayirmasi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#1e9fc392"
+    },
+    {
+      "q": "Ikki radiostansiya yo'lning 20 va 56-km belgilarida. Qabul nuqtasidan ikkala stansiyagacha masofalar farqining moduli eng ko'pi bilan qanchaga teng bo'ladi?",
+      "v": [
+        "18",
+        "36",
+        "72",
+        "76"
+      ],
+      "t": 1,
+      "izoh": "Farq ||x − 20| − |x − 56|| ko'rinishida yoziladi. Uchburchak tengsizligiga ko'ra bu farq stansiyalar orasidagi masofadan oshmaydi: 56 − 20 = 36 km. Qabul nuqtasi stansiyalar orasidan tashqarida turganda farq aynan 36 ga teng bo'ladi. Javob: 36 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshaloq-modul-ayirmasi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#4c4d6f2a"
+    },
+    {
+      "q": "||x − 11| − |x − 27|| ifoda 16 ga teng bo'ladigan barcha x larni ko'rsating.",
+      "v": [
+        "x ≤ 11 yoki x ≥ 27",
+        "11 ≤ x ≤ 27",
+        "Faqat x = 19",
+        "Barcha x larda"
+      ],
+      "t": 0,
+      "izoh": "Nuqtalar orasidagi masofa 27 − 11 = 16, ya'ni 16 — ifodaning eng katta qiymati. U x kesmadan tashqarida bo'lganda erishiladi: x ≤ 11 da farq 16, x ≥ 27 da ham 16 chiqadi. Kesma ichida esa qiymat 16 dan kichik bo'ladi. Javob: x ≤ 11 yoki x ≥ 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshaloq-modul-ayirmasi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#a47f65c8"
+    },
+    {
+      "q": "|x − 14| + |x − 14| + |x − 41| ifoda o'zining eng kichik qiymatini nechta butun x da qabul qiladi?",
+      "v": [
+        "2 ta",
+        "28 ta",
+        "Cheksiz ko'p",
+        "1 ta"
+      ],
+      "t": 3,
+      "izoh": "Nuqtalar 14, 14 va 41, ya'ni jami uchta nuqta. Toq sondagi nuqtalarda minimum mediana nuqtada, bu yerda ikkinchi o'rindagi 14 da erishiladi va u yagona. Qiymati 0 + 0 + 27 = 27. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "minimumdagi-butun-sonlar",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#81362b40"
+    },
+    {
+      "q": "|x − 6| + |x − 9| + |x − 21| + |x − 34| ifoda eng kichik qiymatini nechta butun x da qabul qiladi?",
+      "v": [
+        "11 ta",
+        "12 ta",
+        "13 ta",
+        "Cheksiz ko'p"
+      ],
+      "t": 2,
+      "izoh": "To'rtta nuqta bor: 6, 9, 21, 34. Juft sondagi nuqtalarda minimum ikkita o'rta nuqta orasidagi [9; 21] kesmada erishiladi. Bu kesmadagi butun sonlar soni 21 − 9 + 1 = 13 ta. Javob: 13 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "minimumdagi-butun-sonlar",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#b6127122"
+    },
+    {
+      "q": "|x − 2| + |x − 45| yig'indi eng kichik bo'ladigan butun x lardan eng kattasi bilan eng kichigining ayirmasi nechaga teng?",
+      "v": [
+        "23,5",
+        "43",
+        "44",
+        "47"
+      ],
+      "t": 1,
+      "izoh": "Eng kichik yig'indi x ∈ [2; 45] kesmada erishiladi. Bu oraliqdagi eng kichik butun son 2, eng kattasi esa 45. Ularning ayirmasi 45 − 2 = 43. Butun sonlar soni esa 44 ta, lekin savolda ayirma so'ralgan. Javob: 43.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "minimumdagi-butun-sonlar",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#06e5434f"
+    },
+    {
+      "q": "Beshta nuqta 7, 12, 19, 19 va 40 berilgan. Ularga masofalar yig'indisi eng kichik bo'ladigan butun x lar nechta?",
+      "v": [
+        "2 ta",
+        "5 ta",
+        "8 ta",
+        "1 ta"
+      ],
+      "t": 3,
+      "izoh": "Nuqtalar tartibda: 7, 12, 19, 19, 40. Beshta nuqta uchun minimum uchinchi o'rindagi mediana nuqtada, ya'ni x = 19 da erishiladi va bu nuqta yagona. Yig'indi qiymati 12 + 7 + 0 + 0 + 21 = 40 chiqadi. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "minimumdagi-butun-sonlar",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#f058d28e"
+    },
+    {
+      "q": "Quyidagi ifodalardan qaysi biri x nuqtadan 13 va 29 gacha bo'lgan masofalar yig'indisini to'g'ri ifodalaydi?",
+      "v": [
+        "|x − 13| + |x − 29|",
+        "|x − 13| − |x − 29|",
+        "|13 − 29| + x",
+        "|x + 13| + |x + 29|"
+      ],
+      "t": 0,
+      "izoh": "Sonlar o'qida x nuqtadan a nuqtagacha masofa |x − a| ko'rinishida yoziladi. Demak 13 gacha masofa |x − 13|, 29 gacha masofa esa |x − 29| bo'ladi. Ularning yig'indisi izlanayotgan ifodani beradi. Javob: |x − 13| + |x − 29|.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-talqini",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#a96a736b"
+    },
+    {
+      "q": "M nuqtaning 24 gacha bo'lgan masofasi uning 60 gacha bo'lgan masofasidan 36 birlik kichik ekan. M qaysi nurda yotadi?",
+      "v": [
+        "x ≥ 60",
+        "24 ≤ x ≤ 60",
+        "x = 42",
+        "x ≤ 24"
+      ],
+      "t": 3,
+      "izoh": "Shart |x − 24| − |x − 60| = −36 ko'rinishida yoziladi. Nuqtalar orasidagi masofa 60 − 24 = 36, demak −36 ayirmaning eng kichik qiymati. U x nuqta 24 dan chapda bo'lganda erishiladi: (24 − x) − (60 − x) = −36. Javob: x ≤ 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masofa-talqini",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#8028617c"
+    },
+    {
+      "q": "Sonlar o'qida A(3) va B(31) nuqtalar berilgan. C nuqta uchun CA + CB = 28 shart bajariladi. C ning joylashuvi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "C — AB kesmaning istalgan nuqtasi",
+        "C — faqat AB ning o'rtasi",
+        "Bunday C nuqta yo'q",
+        "C — AB dan tashqarida"
+      ],
+      "t": 0,
+      "izoh": "Avval AB = 31 − 3 = 28 ni topamiz. CA + CB yig'indisi AB dan kichik bo'la olmaydi, u aynan AB ga teng bo'lishi uchun esa C nuqta AB kesmada yotishi shart. Kesmadan tashqarida yig'indi 28 dan katta chiqadi. Javob: C — AB kesmaning istalgan nuqtasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masofa-talqini",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#409d658c"
+    },
+    {
+      "q": "Sonlar o'qidagi K nuqtadan 5 va 38 gacha masofalar yig'indisi 45 ga teng. K uchun mumkin bo'lgan koordinatalar yig'indisini toping.",
+      "v": [
+        "45",
+        "33",
+        "43",
+        "86"
+      ],
+      "t": 2,
+      "izoh": "Eng kichik yig'indi 38 − 5 = 33 bo'lgani uchun 45 qiymati kesmadan tashqarida erishiladi. x < 5 da (5 − x) + (38 − x) = 45, ya'ni 43 − 2x = 45 va x = −1. x > 38 da 2x − 43 = 45, bundan x = 44. Koordinatalar yig'indisi −1 + 44 = 43. Javob: 43.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masofa-talqini",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#30ba04af"
+    },
+    {
+      "q": "y = |x − 10| + |x − 26| funksiyaning grafigi qanday ko'rinishga ega bo'ladi?",
+      "v": [
+        "Uchta bo'lakdan iborat siniq chiziq, o'rta bo'lagi gorizontal",
+        "Uchi yuqoriga qaragan parabola",
+        "Ikki bo'lakli siniq chiziq, uchi x = 18 da",
+        "Butun sonlar o'qida yotuvchi to'g'ri chiziq"
+      ],
+      "t": 0,
+      "izoh": "Modul ostidagi ifodalar 10 va 26 nuqtalarda ishorasini o'zgartiradi, shuning uchun grafik uchta bo'lakka bo'linadi. Chap bo'lakda funksiya kamayadi, 10 bilan 26 orasida o'zgarmas va 16 ga teng, o'ng bo'lakda esa o'sadi. Demak o'rta bo'lak gorizontal kesma bo'ladi. Javob: uchta bo'lakdan iborat siniq chiziq, o'rta bo'lagi gorizontal.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-siniq-chiziq",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#6a411f4a"
+    },
+    {
+      "q": "y = |x − 4| + |x − 4| + |x − 21| funksiya grafigining eng past nuqtasi qanday koordinatalarga ega?",
+      "v": [
+        "(21; 34)",
+        "(12,5; 17)",
+        "(4; 25)",
+        "(4; 17)"
+      ],
+      "t": 3,
+      "izoh": "Ifodani 2|x − 4| + |x − 21| ko'rinishida yozamiz, ya'ni 4 nuqta ikki marta olingan. Uchta nuqta 4, 4 va 21 ning medianasi 4. x = 4 da y = 0 + 0 + 17 = 17 chiqadi. Demak eng past nuqta (4; 17). Javob: (4; 17).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-siniq-chiziq",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#e0202cac"
+    },
+    {
+      "q": "y = |x + 2| + |x − 16| funksiya grafigining gorizontal bo'lagi qaysi balandlikda yotadi?",
+      "v": [
+        "14",
+        "16",
+        "18",
+        "36"
+      ],
+      "t": 2,
+      "izoh": "Modul ostidagi ifodalar −2 va 16 nuqtalarda ishorasini o'zgartiradi. Shu ikki nuqta orasida funksiya o'zgarmas bo'lib, qiymati 16 − (−2) = 18 ga teng. Demak gorizontal bo'lak y = 18 balandlikda yotadi. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-siniq-chiziq",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#8725d858"
+    },
+    {
+      "q": "y = |x − 7| − |x − 25| funksiya grafigi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Grafik y = −18 va y = 18 gorizontal chiziqlari orasida yotadi",
+        "Grafik x ortganda cheksiz o'sadi",
+        "Grafik faqat musbat qiymatlar oladi",
+        "Grafik y = 32 chizig'idan yuqori chiqadi"
+      ],
+      "t": 0,
+      "izoh": "x ≤ 7 da y = (7 − x) − (25 − x) = −18, x ≥ 25 da esa y = (x − 7) − (x − 25) = 18 bo'ladi. Oraliqda funksiya chiziqli o'sadi. Demak grafik ikkita gorizontal nur va ularni tutashtiruvchi qiya kesmadan iborat, barcha qiymatlar −18 bilan 18 orasida yotadi. Javob: grafik y = −18 va y = 18 orasida yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-siniq-chiziq",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#6621aa8b"
+    },
+    {
+      "q": "Beshta o'quvchining testdan olgan ballari 42, 55, 61, 68 va 90. Ballardan x gacha bo'lgan og'ishlar modullari yig'indisi eng kichik bo'lishi uchun x nechaga teng bo'lsin?",
+      "v": [
+        "61",
+        "63,2",
+        "66",
+        "68"
+      ],
+      "t": 0,
+      "izoh": "Og'ishlar yig'indisi |x − 42| + |x − 55| + |x − 61| + |x − 68| + |x − 90| ko'rinishida. Beshta son uchun bu yig'indi mediana, ya'ni uchinchi o'rindagi 61 da eng kichik bo'ladi. O'rta arifmetik 63,2 bo'lsa ham u minimumni bermaydi. Javob: 61.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "statistik-ogish-yigindisi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#524dd1e3"
+    },
+    {
+      "q": "To'rtta o'lchov natijasi 18, 23, 31 va 44 gramm chiqdi. Og'ishlar modullari yig'indisining eng kichik qiymati necha gramm bo'ladi?",
+      "v": [
+        "26",
+        "34",
+        "44",
+        "116"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi |x − 18| + |x − 23| + |x − 31| + |x − 44| ko'rinishida. Chetki juft (18; 44) hissasi 26, ichki juft (23; 31) hissasi 8 gramm. Eng kichik qiymat 26 + 8 = 34 gramm bo'lib, u x ∈ [23; 31] da erishiladi. Javob: 34 gramm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "statistik-ogish-yigindisi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#64a99cbf"
+    },
+    {
+      "q": "Uchta xodimning ish staji 3, 11 va 28 yil. Yangi xodim staji x bo'lsa, uning uchalasidan farqlari modullari yig'indisi eng kamida qanchaga teng bo'ladi?",
+      "v": [
+        "17",
+        "33",
+        "25",
+        "42"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi |x − 3| + |x − 11| + |x − 28| ko'rinishida. Uchta nuqta uchun minimum medianada, ya'ni x = 11 da: 8 + 0 + 17 = 25 yil. Chetki 3 da esa 0 + 8 + 25 = 33 chiqadi. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "statistik-ogish-yigindisi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#9e33cc7d"
+    },
+    {
+      "q": "|x − 9| + |x − 33| ifodaning eng kichik qiymati m, |x − 9| − |x − 33| ifodaning eng katta qiymati M bo'lsa, m + M ni toping.",
+      "v": [
+        "24",
+        "0",
+        "42",
+        "48"
+      ],
+      "t": 3,
+      "izoh": "Ikkala ifodada ham nuqtalar 9 va 33, ular orasidagi masofa 33 − 9 = 24. Yig'indining eng kichik qiymati m = 24, ayirmaning eng katta qiymati esa M = 24 bo'ladi. Demak m + M = 48. Javob: 48.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-va-ayirma-birikmasi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#5090c1f1"
+    },
+    {
+      "q": "f(x) = |x − 6| + |x − 20| va g(x) = |x − 6| − |x − 20| berilgan. f ning eng kichik qiymatidan g ning eng katta qiymatini ayiring.",
+      "v": [
+        "0",
+        "14",
+        "28",
+        "−14"
+      ],
+      "t": 0,
+      "izoh": "Ikkala ifodada ham nuqtalar 6 va 20, ular orasidagi masofa 20 − 6 = 14. Yig'indi f ning eng kichik qiymati m = 14 bo'lib, u [6; 20] kesmada erishiladi. Ayirma g ning eng katta qiymati esa M = 14 bo'lib, u x ≥ 20 nurda erishiladi. Demak m − M = 14 − 14 = 0. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-va-ayirma-birikmasi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#07672033"
+    },
+    {
+      "q": "Loyihada xarajat X = |t − 8| + |t − 29| va tejam T = |t − 8| − |t − 29| bilan berilgan. Xarajatning eng kichik qiymati bilan tejamning eng katta qiymati teng chiqishini qanday izohlash mumkin?",
+      "v": [
+        "Ikkalasi ham 8 va 29 orasidagi masofaga teng",
+        "Bu tasodif, umumiy holda ular teng emas",
+        "Ikkalasi ham nolga teng bo'lgani uchun",
+        "Xarajat har doim tejamdan katta bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Yig'indining eng kichik qiymati nuqtalar orasidagi masofaga teng: 29 − 8 = 21, u [8; 29] kesmada erishiladi. Ayirmaning eng katta qiymati ham xuddi shu masofa 21 bo'lib, u t ≥ 29 nurda erishiladi. Ikkala natija ham bitta kattalikdan, ya'ni nuqtalar orasidagi masofadan kelib chiqadi. Javob: ikkalasi ham 8 va 29 orasidagi masofaga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-va-ayirma-birikmasi",
+      "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va#a8a824bf"
+    }
+  ]
+}

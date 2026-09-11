@@ -1,0 +1,1609 @@
+{
+  "nom": "Kompleks sonlar va ular ustida amallar",
+  "bolim": "Sonlar va ular ustida amallar",
+  "blok": "arif",
+  "rasmiyBolim": 1,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Dilnoza daftariga √(−36) ifodasini yozdi va uni mavhum birlik orqali ifodalashi kerak. Bu ifoda nimaga teng?",
+      "v": [
+        "6i",
+        "−6i",
+        "36i",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Manfiy sondan ildiz chiqarishda √(−a) = i·√a ta'rifi ishlatiladi. Demak √(−36) = i·√36 = 6i. Bu yerda 36i deb yozish ildiz amalini tashlab ketish, 6 deb yozish esa mavhum birlikni unutish xatosi. Javob: 6i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-son-ildizi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#bd5778d9"
+    },
+    {
+      "q": "√(−50) ifodasini soddalashtirib, a√b·i ko'rinishida yozing, bunda a va b — natural sonlar va b eng kichik bo'lsin.",
+      "v": [
+        "5√2·i",
+        "5√2",
+        "2√5·i",
+        "25√2·i"
+      ],
+      "t": 0,
+      "izoh": "Avval √(−50) = i·√50 deb yoziladi. So'ng 50 = 25·2 bo'lgani uchun √50 = √25·√2 = 5√2, ya'ni ildiz ostida eng kichik son 2 qoladi. Demak natija 5√2·i. 5√2 javobi mavhum birlikni yozishni unutish, 25√2·i javobi 25 dan ildiz chiqarmasdan qoldirish, 2√5·i esa 50 ni ko'paytuvchilarga noto'g'ri ajratish xatosi. Javob: 5√2·i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-son-ildizi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#95a60109"
+    },
+    {
+      "q": "Jasur fizika masalasini yechayotib √(−9) · √(−16) ko'paytmani hisoblashi kerak bo'lib qoldi. Ushbu ko'paytmaning to'g'ri qiymatini ko'rsating.",
+      "v": [
+        "12",
+        "12i",
+        "−12i",
+        "−12"
+      ],
+      "t": 3,
+      "izoh": "Har bir ildiz alohida yoziladi: √(−9) = 3i va √(−16) = 4i. Ko'paytma 3i · 4i = 12i² bo'ladi. i² = −1 bo'lgani uchun 12i² = −12. Bu yerda √(−9)·√(−16) = √144 = 12 deb yozish tipik xato, chunki ildizni ko'paytirish qoidasi manfiy sonlarda ishlamaydi. Javob: −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-son-ildizi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#fc1a82ba"
+    },
+    {
+      "q": "x² + 64 = 0 tenglamaning ildizlarini mavhum birlik orqali yozing va to'g'ri juftlikni tanlang.",
+      "v": [
+        "x = ±8",
+        "x = ±8i",
+        "x = 8i",
+        "x = ±64i"
+      ],
+      "t": 1,
+      "izoh": "Tenglamadan x² = −64 kelib chiqadi. Manfiy songa teng kvadratning haqiqiy ildizi yo'q, shuning uchun x = ±√(−64) = ±8i. Ikkala ishora ham olinadi, chunki (8i)² va (−8i)² ikkalasi ham −64 beradi. Faqat 8i deb yozish ikkinchi ildizni yo'qotish xatosi. Javob: x = ±8i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-son-ildizi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#062a5107"
+    },
+    {
+      "q": "z = 7 − 5i kompleks sonning haqiqiy va mavhum qismlari mos ravishda qanday bo'ladi?",
+      "v": [
+        "7 va −5",
+        "7 va −5i",
+        "7 va 5",
+        "−5 va 7"
+      ],
+      "t": 0,
+      "izoh": "Kompleks son z = a + bi ko'rinishida yoziladi, bunda a — haqiqiy qism, b — mavhum qism. Berilgan sonni 7 + (−5)i deb yozamiz. Demak a = 7, b = −5. Mavhum qism i bilan birga emas, faqat koeffitsient sifatida aytiladi, shuning uchun −5i javobi noto'g'ri. Javob: 7 va −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "haqiqiy-mavhum-qism",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#621faac5"
+    },
+    {
+      "q": "Bobur elektr zanjirining to'la qarshiligini Z = 12 + 9i shaklida yozdi, bunda haqiqiy qism aktiv, mavhum qism esa reaktiv qarshilikni bildiradi. Zanjirning reaktiv qarshiligi necha om?",
+      "v": [
+        "12 om",
+        "9i om",
+        "21 om",
+        "9 om"
+      ],
+      "t": 3,
+      "izoh": "Z = a + bi yozuvida a aktiv, b reaktiv qarshilikka mos keladi. Bu yerda a = 12, b = 9. Demak reaktiv qarshilik 9 om. 12 om javobi aktiv qarshilik, 21 om esa ikkala qismni qo'shib yuborish xatosi. Javob: 9 om.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "haqiqiy-mavhum-qism",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#c8ddcd8c"
+    },
+    {
+      "q": "z = (4 − 3i) + (−6 + 8i) ifodaning mavhum qismini toping.",
+      "v": [
+        "−2",
+        "5",
+        "5i",
+        "11"
+      ],
+      "t": 1,
+      "izoh": "Kompleks sonlar qo'shilganda haqiqiy qismlar alohida, mavhum qismlar alohida qo'shiladi. Haqiqiy qism: 4 + (−6) = −2. Mavhum qism: −3 + 8 = 5. Savolda mavhum qism so'ralgani uchun javob 5. −2 javobi haqiqiy qism bilan chalkashtirish natijasi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "haqiqiy-mavhum-qism",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#2743881f"
+    },
+    {
+      "q": "Malika ma'lumotlar tahlilida z = (3 + i)(2 − 5i) ko'paytmani hisoblab, uning haqiqiy qismi mavhum qismidan necha birlik katta ekanini aniqlamoqchi. Bu farq qanchaga teng?",
+      "v": [
+        "24",
+        "−2",
+        "2",
+        "−24"
+      ],
+      "t": 0,
+      "izoh": "Avval ko'paytma yoyiladi: (3 + i)(2 − 5i) = 6 − 15i + 2i − 5i². i² = −1 bo'lgani uchun −5i² = 5. Demak z = 6 + 5 − 13i = 11 − 13i. Haqiqiy qism 11, mavhum qism −13. Farq 11 − (−13) = 24. −2 javobi qismlarni ayirish o'rniga qo'shish xatosi. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "haqiqiy-mavhum-qism",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#93899d80"
+    },
+    {
+      "q": "(5 + 2i) + (3 − 7i) yig'indini algebraik shaklda yozing va to'g'ri variantni belgilang.",
+      "v": [
+        "8 − 5i",
+        "8 + 5i",
+        "2 + 9i",
+        "8 − 9i"
+      ],
+      "t": 0,
+      "izoh": "Qo'shishda mos qismlar qo'shiladi: haqiqiy qism 5 + 3 = 8, mavhum qism 2 + (−7) = −5. Demak yig'indi 8 − 5i. 2 + 9i javobi qo'shish o'rniga ayirish, 8 + 5i esa ishorani noto'g'ri olish natijasi. Javob: 8 − 5i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshish-ayirish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#c03a1b95"
+    },
+    {
+      "q": "Nodira ikki o'lchov natijasini kompleks son ko'rinishida yozdi: birinchisi 14 − 6i, ikkinchisi 9 + 11i. Birinchi natijadan ikkinchisini ayirsak, qanday kompleks son hosil bo'ladi?",
+      "v": [
+        "5 + 5i",
+        "23 + 5i",
+        "−5 + 17i",
+        "5 − 17i"
+      ],
+      "t": 3,
+      "izoh": "Ayirishda qavs oldidagi minus ikkala qismga tarqaladi: (14 − 6i) − (9 + 11i) = 14 − 9 + (−6 − 11)i. Haqiqiy qism 5, mavhum qism −17. Demak natija 5 − 17i. 23 + 5i javobi ayirish o'rniga qo'shish, 5 + 5i esa minusni faqat haqiqiy qismga tarqatish xatosi. Javob: 5 − 17i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshish-ayirish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#b38be170"
+    },
+    {
+      "q": "Agar z₁ = −8 + 3i va z₂ = 5 − 12i bo'lsa, 2z₁ + z₂ ifodaning qiymatini hisoblang.",
+      "v": [
+        "−3 − 9i",
+        "−11 − 6i",
+        "−6 − 18i",
+        "−11 + 6i"
+      ],
+      "t": 1,
+      "izoh": "Avval z₁ ikkilantiriladi: 2z₁ = 2·(−8 + 3i) = −16 + 6i. So'ng z₂ qo'shiladi: (−16 + 5) + (6 − 12)i = −11 − 6i. −3 − 9i javobi ikkilantirishni unutish, −6 − 18i esa ikkala sonni ham ikkilantirish xatosi. Javob: −11 − 6i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshish-ayirish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#243a3aa6"
+    },
+    {
+      "q": "Farrux navigatsiya masalasida kemaning ikki ketma-ket ko'chishini 7 + 24i va −15 + 8i kompleks sonlari bilan belgiladi. Ikki ko'chishning yig'indisi qaysi kompleks songa teng?",
+      "v": [
+        "22 + 16i",
+        "−8 + 16i",
+        "8 + 32i",
+        "−8 + 32i"
+      ],
+      "t": 3,
+      "izoh": "Ko'chishlar qo'shilganda haqiqiy qismlar va mavhum qismlar alohida qo'shiladi. Haqiqiy qism: 7 + (−15) = −8. Mavhum qism: 24 + 8 = 32. Demak yig'indi −8 + 32i. 22 + 16i javobi ayirish, −8 + 16i esa mavhum qismlarni ayirish natijasi. Javob: −8 + 32i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshish-ayirish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#5baebbf5"
+    },
+    {
+      "q": "z + (3 − 4i) = (10 + i) − (2 − 6i) tenglikni qanoatlantiruvchi z kompleks sonni toping.",
+      "v": [
+        "5 + 3i",
+        "11 + 3i",
+        "5 + 11i",
+        "5 − 11i"
+      ],
+      "t": 2,
+      "izoh": "Avval o'ng tomon soddalashtiriladi: (10 + i) − (2 − 6i) = 8 + 7i. Endi z = (8 + 7i) − (3 − 4i) bo'ladi. Haqiqiy qism 8 − 3 = 5, mavhum qism 7 − (−4) = 11. Demak z = 5 + 11i. 5 + 3i javobi ayirishda ishorani almashtirmaslik xatosi. Javob: 5 + 11i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshish-ayirish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#10aa0e96"
+    },
+    {
+      "q": "(2 + 3i)(4 + 5i) ko'paytmani algebraik shaklga keltiring.",
+      "v": [
+        "23 + 22i",
+        "8 + 15i",
+        "−7 + 22i",
+        "−7 − 22i"
+      ],
+      "t": 2,
+      "izoh": "Qavslar ko'paytiriladi: 2·4 + 2·5i + 3i·4 + 3i·5i = 8 + 10i + 12i + 15i². i² = −1 bo'lgani uchun 15i² = −15. Demak 8 − 15 + 22i = −7 + 22i. 23 + 22i javobi i² ni +1 deb olish, 8 + 15i esa qismlarni alohida ko'paytirish xatosi. Javob: −7 + 22i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytirish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#b22a9723"
+    },
+    {
+      "q": "(6 − i)(3 + 2i) ifodani hisoblab, natijani a + bi ko'rinishida yozing.",
+      "v": [
+        "16 + 9i",
+        "20 + 9i",
+        "20 − 9i",
+        "18 − 2i"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytmani yoyamiz: 6·3 + 6·2i − i·3 − i·2i = 18 + 12i − 3i − 2i². i² = −1 bo'lgani uchun −2i² = +2. Demak 18 + 2 + 9i = 20 + 9i. 16 + 9i javobi i² ni +1 deb olish, 18 − 2i esa qismlarni juftlab ko'paytirish natijasi. Javob: 20 + 9i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytirish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#ebcc0254"
+    },
+    {
+      "q": "Ulug'bek o'zgaruvchan tok zanjirida kuchlanishni topish uchun I = 3 + 4i tok kuchini Z = 2 − 5i qarshilikka ko'paytiradi. U qanday kompleks son olishi kerak?",
+      "v": [
+        "−14 − 7i",
+        "26 + 7i",
+        "6 − 20i",
+        "26 − 7i"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytmani yoyamiz: (3 + 4i)(2 − 5i) = 6 − 15i + 8i − 20i². i² = −1 bo'lgani uchun −20i² = +20. Demak 6 + 20 − 7i = 26 − 7i. −14 − 7i javobi i² ni +1 deb olish, 6 − 20i esa qismlarni alohida ko'paytirish xatosi. Javob: 26 − 7i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytirish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#8879f4b1"
+    },
+    {
+      "q": "(1 + i)(1 − i)(2 + i) ko'paytmaning qiymatini toping.",
+      "v": [
+        "2 + i",
+        "4 + 2i",
+        "0",
+        "4 − 2i"
+      ],
+      "t": 1,
+      "izoh": "Avval birinchi ikki qavs ko'paytiriladi: (1 + i)(1 − i) = 1 − i² = 1 + 1 = 2. Endi 2·(2 + i) = 4 + 2i. Bu yerda 0 javobi (1 + i)(1 − i) ni nolga teng deb hisoblash, 2 + i javobi esa uni birga teng deb olish xatosi. Javob: 4 + 2i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytirish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#bd7474e5"
+    },
+    {
+      "q": "Zilola dasturlash mashg'ulotida (2 − i)² · (2 + i) ifodani hisoblovchi funksiya yozdi. Funksiya to'g'ri ishlasa, u qanday natija chiqarishi kerak?",
+      "v": [
+        "10 + 5i",
+        "10 − 5i",
+        "5 − 10i",
+        "15 − 20i"
+      ],
+      "t": 1,
+      "izoh": "Avval kvadrat ochiladi: (2 − i)² = 4 − 4i + i² = 4 − 4i − 1 = 3 − 4i. So'ng (3 − 4i)(2 + i) = 6 + 3i − 8i − 4i² = 6 + 4 − 5i = 10 − 5i. 15 − 20i javobi (2 + i) o'rniga uning moduli kvadratini ko'paytirish xatosi. Javob: 10 − 5i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytirish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#b1b6733f"
+    },
+    {
+      "q": "(3 + 5i)² ifodani yoyib, algebraik shaklda yozing.",
+      "v": [
+        "34 + 30i",
+        "9 + 25i",
+        "−16 + 30i",
+        "−16 − 30i"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi kvadrati formulasi qo'llanadi: (3 + 5i)² = 9 + 2·3·5i + 25i². i² = −1 bo'lgani uchun 25i² = −25. Demak 9 − 25 + 30i = −16 + 30i. 34 + 30i javobi i² ni +1 deb olish, 9 + 25i esa hadlarni alohida kvadratga oshirish xatosi. Javob: −16 + 30i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratga-oshirish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#e9094fdd"
+    },
+    {
+      "q": "z = 4 − 7i bo'lsa, z² kompleks sonning haqiqiy qismi qanchaga teng?",
+      "v": [
+        "65",
+        "16",
+        "−33",
+        "−56"
+      ],
+      "t": 2,
+      "izoh": "Kvadratni ochamiz: (4 − 7i)² = 16 − 2·4·7i + 49i² = 16 − 56i − 49. Demak z² = −33 − 56i va uning haqiqiy qismi −33. 65 javobi i² ni +1 deb olish, −56 esa mavhum qismni haqiqiy qism deb ko'rsatish xatosi. Javob: −33.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratga-oshirish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#1284541c"
+    },
+    {
+      "q": "Behzod (5 − 2i)² va (5 + 2i)² ifodalarni hisoblab, ularning yig'indisini topmoqchi. Bu yig'indi qanday songa teng bo'ladi?",
+      "v": [
+        "42",
+        "58",
+        "42 + 40i",
+        "50"
+      ],
+      "t": 0,
+      "izoh": "Birinchi kvadrat: (5 − 2i)² = 25 − 20i + 4i² = 25 − 4 − 20i = 21 − 20i. Ikkinchisi: (5 + 2i)² = 21 + 20i. Ularni qo'shganda mavhum qismlar o'zaro yo'qoladi va 21 + 21 = 42 qoladi. 58 javobi i² ni +1 deb olish, 42 + 40i esa mavhum qismlarni qisqartirmaslik xatosi. Javob: 42.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratga-oshirish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#cd0fa50a"
+    },
+    {
+      "q": "(1 − i)² ifodaning qiymatini hisoblab, uni eng sodda ko'rinishda yozing.",
+      "v": [
+        "2 − 2i",
+        "−2i",
+        "2i",
+        "−2"
+      ],
+      "t": 1,
+      "izoh": "Ayirma kvadrati formulasini qo'llaymiz: (1 − i)² = 1 − 2i + i². i² = −1 bo'lgani uchun 1 − 1 = 0 va faqat −2i qoladi. Demak natija −2i. 2 − 2i javobi i² ni +1 deb olish, −2 esa mavhum birlikni tushirib qoldirish xatosi. Javob: −2i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratga-oshirish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#26a5381c"
+    },
+    {
+      "q": "z = −9 + 4i kompleks sonning qo'shmasi qanday yoziladi?",
+      "v": [
+        "9 − 4i",
+        "9 + 4i",
+        "−9 − 4i",
+        "4 − 9i"
+      ],
+      "t": 2,
+      "izoh": "Qo'shma son olishda faqat mavhum qismning ishorasi almashadi, haqiqiy qism o'zgarmaydi. Demak −9 + 4i sonining qo'shmasi −9 − 4i bo'ladi. 9 − 4i javobi ikkala ishorani ham almashtirish, 4 − 9i esa qismlarni o'rin almashtirish xatosi. Javob: −9 − 4i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshma-son-topish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#7891882e"
+    },
+    {
+      "q": "Agar z = 6 − 11i bo'lsa, bu sonning o'zi bilan qo'shmasining yig'indisi qanchaga teng bo'ladi?",
+      "v": [
+        "−22i",
+        "12 − 22i",
+        "12",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Sonning qo'shmasi 6 + 11i bo'ladi. Yig'indini topamiz: (6 − 11i) + (6 + 11i) = 12 + 0i = 12. Mavhum qismlar qarama-qarshi bo'lgani uchun yo'qoladi va natija har doim haqiqiy son chiqadi. 12 − 22i javobi sonni ikki marta qo'shish, 6 esa faqat bitta qo'shiluvchining haqiqiy qismini yozib qo'yish xatosi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshma-son-topish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#7d03f6d4"
+    },
+    {
+      "q": "Anvar signal nazariyasi masalasida z = 5 + 8i sonidan uning qo'shmasini ayirdi. Ayirma natijasida qaysi kompleks son hosil bo'ladi?",
+      "v": [
+        "10",
+        "16i",
+        "−16i",
+        "8i"
+      ],
+      "t": 1,
+      "izoh": "Qo'shma son 5 − 8i ga teng. Ayirmani hisoblaymiz: (5 + 8i) − (5 − 8i) = 0 + (8 + 8)i = 16i. Haqiqiy qismlar bir xil bo'lgani uchun yo'qoladi, mavhum qism esa ikkilanadi. 8i javobi mavhum qismni ikkilantirishni unutish, −16i esa ayirish tartibini teskari olish xatosi. Javob: 16i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshma-son-topish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#1e67540d"
+    },
+    {
+      "q": "z = 2 − 7i bo'lsa, uning qo'shmasining kvadrati qanday kompleks songa teng?",
+      "v": [
+        "−45 − 28i",
+        "53 + 28i",
+        "4 + 49i",
+        "−45 + 28i"
+      ],
+      "t": 3,
+      "izoh": "Avval qo'shma topiladi: 2 + 7i. So'ng kvadratga oshiriladi: (2 + 7i)² = 4 + 28i + 49i² = 4 − 49 + 28i = −45 + 28i. −45 − 28i javobi qo'shmani olishni unutib, z ning o'zini kvadratga oshirish xatosi. 53 + 28i esa i² ni +1 deb olish natijasi. Javob: −45 + 28i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshma-son-topish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#e3bd458f"
+    },
+    {
+      "q": "z = 8 + 15i kompleks sonning modulini hisoblang.",
+      "v": [
+        "23",
+        "17",
+        "√23",
+        "289"
+      ],
+      "t": 1,
+      "izoh": "Modul |z| = √(a² + b²) formulasi bilan topiladi. Bu yerda a = 8, b = 15, demak |z| = √(64 + 225) = √289 = 17. 23 javobi qismlarni shunchaki qo'shish, 289 esa ildiz chiqarishni unutish xatosi. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-hisoblash",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#1665c33c"
+    },
+    {
+      "q": "Sardor kompleks tekislikda koordinata boshidan z = −12 + 5i nuqtaga qadar bo'lgan masofani o'lchamoqchi. Bu masofa qanchaga teng?",
+      "v": [
+        "17",
+        "7",
+        "13",
+        "169"
+      ],
+      "t": 2,
+      "izoh": "Koordinata boshidan nuqtagacha bo'lgan masofa sonning moduliga teng. |z| = √((−12)² + 5²) = √(144 + 25) = √169 = 13. Manfiy son kvadratga oshirilganda musbat bo'ladi, shuning uchun ishora natijaga ta'sir qilmaydi. 17 javobi qismlarni qo'shish, 169 esa ildizni unutish xatosi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-hisoblash",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#bb7c08f3"
+    },
+    {
+      "q": "z = (3 + 4i)(5 − 12i) ko'paytmaning modulini toping.",
+      "v": [
+        "79",
+        "47",
+        "65",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "Avval ko'paytmani hisoblaymiz: (3 + 4i)(5 − 12i) = 15 − 36i + 20i − 48i² = 15 + 48 − 16i = 63 − 16i. Endi modul: √(63² + 16²) = √(3969 + 256) = √4225 = 65. Xuddi shu natijani |z₁|·|z₂| = 5·13 = 65 orqali ham olish mumkin. 79 javobi qismlarni qo'shish natijasi. Javob: 65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-hisoblash",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#8d8b9add"
+    },
+    {
+      "q": "Gulnora o'zgaruvchan tok zanjirining to'la qarshiligini Z = 9 − 40i deb yozdi. Zanjir to'la qarshiligining moduli necha om?",
+      "v": [
+        "49",
+        "31",
+        "1681",
+        "41"
+      ],
+      "t": 3,
+      "izoh": "Modul formulasi |Z| = √(a² + b²) ni qo'llaymiz: √(9² + 40²) = √(81 + 1600) = √1681 = 41. Demak to'la qarshilik moduli 41 om. 49 javobi qismlarni qo'shish, 1681 esa ildiz chiqarishni unutish xatosi. Javob: 41 om.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-hisoblash",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#9d6e49f1"
+    },
+    {
+      "q": "|z| = 5 va z ning haqiqiy qismi mavhum qismidan 1 ga katta bo'lgan, ikkala qismi ham musbat kompleks sonni toping.",
+      "v": [
+        "4 + 3i",
+        "3 + 4i",
+        "5 + 4i",
+        "4 − 3i"
+      ],
+      "t": 0,
+      "izoh": "z = a + bi deb olamiz. Shartga ko'ra a = b + 1 va a² + b² = 25. Almashtiramiz: (b + 1)² + b² = 25, ya'ni 2b² + 2b − 24 = 0 yoki b² + b − 12 = 0. Ildizlari b = 3 va b = −4. Musbat qism talab qilingani uchun b = 3, a = 4. Demak z = 4 + 3i. 3 + 4i javobi qismlarni o'rin almashtirish xatosi. Javob: 4 + 3i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-hisoblash",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#de7fb5b8"
+    },
+    {
+      "q": "|z₁| = 6 va |z₂| = 9 bo'lsa, z₁·z₂ ko'paytmaning moduli qanchaga teng?",
+      "v": [
+        "15",
+        "54",
+        "3",
+        "1,5"
+      ],
+      "t": 1,
+      "izoh": "Modulning asosiy xossasi: ko'paytmaning moduli modullar ko'paytmasiga teng, ya'ni |z₁·z₂| = |z₁|·|z₂|. Demak 6·9 = 54. 15 javobi modullarni qo'shish, 3 ularni ayirish, 1,5 esa bo'lish xatosi. Javob: 54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-xossasi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#ada71493"
+    },
+    {
+      "q": "z = (2 + i)⁴ bo'lsa, |z| ning qiymatini toping.",
+      "v": [
+        "25",
+        "5",
+        "20",
+        "√20"
+      ],
+      "t": 0,
+      "izoh": "Darajaning moduli xossasi: |zⁿ| = |z|ⁿ. Avval asos moduli topiladi: |2 + i| = √(4 + 1) = √5. Endi (√5)⁴ = 5² = 25. 5 javobi modulda ildiz chiqarishni unutish (4 + 1 = 5), 20 esa shu xato modulni daraja ko'rsatkichi 4 ga ko'paytirish, √20 esa ildiz ostidagi sonni daraja ko'rsatkichiga ko'paytirish (√(5·4)) xatosi. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-xossasi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#64fdcfca"
+    },
+    {
+      "q": "Shahnoza (7 − 24i) sonini (3 + 4i) ga bo'lish natijasining modulini bo'lishni bajarmasdan topmoqchi. U qanday qiymat olishi kerak?",
+      "v": [
+        "125",
+        "20",
+        "5",
+        "0,2"
+      ],
+      "t": 2,
+      "izoh": "Bo'linmaning moduli modullar nisbatiga teng: |z₁ : z₂| = |z₁| : |z₂|. Bu yerda |7 − 24i| = √(49 + 576) = √625 = 25, |3 + 4i| = √(9 + 16) = 5. Demak natija 25 : 5 = 5. 125 javobi bo'lish o'rniga ko'paytirish, 0,2 esa nisbatni teskari olish xatosi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-xossasi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#5a81e665"
+    },
+    {
+      "q": "Kompleks son z uchun |z| = 10 ekani ma'lum. Shu sonning qo'shmasi moduli va z² moduli yig'indisi qanchaga teng?",
+      "v": [
+        "110",
+        "30",
+        "200",
+        "20"
+      ],
+      "t": 0,
+      "izoh": "Qo'shma sonning moduli asl son moduliga teng, ya'ni 10. Daraja xossasiga ko'ra |z²| = |z|² = 100. Yig'indi 10 + 100 = 110. 30 javobi |z²| ni 2|z| deb olish, 20 esa ikkala modulni ham 10 deb hisoblash xatosi. Javob: 110.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-xossasi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#654b59c0"
+    },
+    {
+      "q": "z = 3 + 7i bo'lsa, z ni o'z qo'shmasiga ko'paytirish natijasi qanday son bo'ladi?",
+      "v": [
+        "−40",
+        "58",
+        "9 + 49i",
+        "58i"
+      ],
+      "t": 1,
+      "izoh": "Qo'shma son 3 − 7i. Ko'paytiramiz: (3 + 7i)(3 − 7i) = 9 − 49i² = 9 + 49 = 58. Bu ayirmalar ko'paytmasi formulasi bo'lib, natija har doim |z|² ga teng haqiqiy son chiqadi. −40 javobi i² ni +1 deb olish, 58i esa haqiqiy natijaga mavhum birlik qo'shib yuborish xatosi. Javob: 58.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "z-qoshma-kopaytma",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#ffd6694b"
+    },
+    {
+      "q": "Kompleks son bilan uning qo'shmasi ko'paytmasi 169 ga teng va shu sonning haqiqiy qismi 12 ga teng. Sonning musbat mavhum qismi nechaga teng?",
+      "v": [
+        "13",
+        "25",
+        "5",
+        "157"
+      ],
+      "t": 2,
+      "izoh": "z = a + bi bo'lsa, z ni qo'shmasiga ko'paytirganda a² + b² hosil bo'ladi. Shartga ko'ra a² + b² = 169 va a = 12. Demak b² = 169 − 144 = 25, ya'ni b = 5. 13 javobi 169 dan ildiz chiqarib to'xtab qolish, 157 esa kvadratga oshirmasdan 169 − 12 ni hisoblash xatosi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "z-qoshma-kopaytma",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#ef040671"
+    },
+    {
+      "q": "Doston hisob-kitobida z = 6 − 8i sonini uning qo'shmasiga ko'paytirdi va natijaning kvadrat ildizini oldi. U qanday son oladi?",
+      "v": [
+        "100",
+        "14",
+        "2",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytma (6 − 8i)(6 + 8i) = 36 + 64 = 100 ga teng. Undan kvadrat ildiz chiqarsak √100 = 10 bo'ladi. Bu son aslida z ning moduli, chunki z ni qo'shmasiga ko'paytirish |z|² ni beradi. 100 javobi ildizni unutish, 14 esa qismlarni qo'shish xatosi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "z-qoshma-kopaytma",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#e664b319"
+    },
+    {
+      "q": "Ikkita kompleks son o'zaro qo'shma bo'lib, ularning yig'indisi 14 ga, ko'paytmasi esa 74 ga teng. Bu sonlarning mavhum qismlari nechaga teng?",
+      "v": [
+        "±5",
+        "±7",
+        "±25",
+        "±√74"
+      ],
+      "t": 0,
+      "izoh": "Sonlarni a + bi va a − bi deb olamiz. Yig'indi 2a = 14 bo'lgani uchun a = 7. Ko'paytma a² + b² = 74 bo'lgani uchun 49 + b² = 74, ya'ni b² = 25 va b = ±5. ±7 javobi haqiqiy qismni mavhum qism deb ko'rsatish, ±25 esa b² dan ildiz chiqarmaslik xatosi. Javob: ±5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "z-qoshma-kopaytma",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#b1630abf"
+    },
+    {
+      "q": "(10 + 5i) : (1 − 2i) bo'linmani algebraik shaklda yozing.",
+      "v": [
+        "5i",
+        "2 + 5i",
+        "5",
+        "−5i"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishda surat va maxraj maxrajning qo'shmasiga ko'paytiriladi. Maxraj: (1 − 2i)(1 + 2i) = 1 + 4 = 5. Surat: (10 + 5i)(1 + 2i) = 10 + 20i + 5i + 10i² = 10 − 10 + 25i = 25i. Demak bo'linma 25i : 5 = 5i. 2 + 5i javobi (10 + 5i) da faqat haqiqiy qismni 5 ga bo'lib, mavhum qismni bo'lmasdan qoldirish xatosi. Javob: 5i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#9c7dac07"
+    },
+    {
+      "q": "(4 + 3i) : (2 − i) bo'linmani algebraik shaklda yozing.",
+      "v": [
+        "2 − 3i",
+        "1 − 2i",
+        "5 + 10i",
+        "1 + 2i"
+      ],
+      "t": 3,
+      "izoh": "Surat va maxrajni maxrajning qo'shmasi (2 + i) ga ko'paytiramiz. Maxraj: (2 − i)(2 + i) = 4 + 1 = 5. Surat: (4 + 3i)(2 + i) = 8 + 4i + 6i + 3i² = 8 − 3 + 10i = 5 + 10i. Bo'linma (5 + 10i) : 5 = 1 + 2i. 5 + 10i javobi oxirgi bo'lishni tashlab ketish xatosi. Javob: 1 + 2i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#75189291"
+    },
+    {
+      "q": "Nigora dasturda 1 : i amalining natijasini tekshirmoqchi. Bu bo'linma qaysi songa teng bo'lishini ko'rsating.",
+      "v": [
+        "i",
+        "−i",
+        "−1",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Surat va maxrajni i ga ko'paytiramiz: (1·i) : (i·i) = i : i². i² = −1 bo'lgani uchun i : (−1) = −i. Demak 1 : i = −i. i javobi ishorani hisobga olmaslik, −1 esa maxrajning o'zini javob deb olish xatosi. Javob: −i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#f7ccec22"
+    },
+    {
+      "q": "(5 − i) : (3 + 2i) bo'linmaning haqiqiy qismini toping.",
+      "v": [
+        "−1",
+        "13",
+        "5/3",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "Maxrajning qo'shmasiga ko'paytiramiz. Maxraj: (3 + 2i)(3 − 2i) = 9 + 4 = 13. Surat: (5 − i)(3 − 2i) = 15 − 10i − 3i + 2i² = 13 − 13i. Bo'linma (13 − 13i) : 13 = 1 − i, uning haqiqiy qismi 1. −1 javobi mavhum qismni ko'rsatish, 13 esa bo'lishni bajarmaslik xatosi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#f363e7c0"
+    },
+    {
+      "q": "Feruza laboratoriya hisobida U = 26 + 7i kuchlanishni Z = 4 + 3i qarshilikka bo'lib, zanjirdagi tok kuchini topmoqchi. Tok kuchi qanday kompleks songa teng?",
+      "v": [
+        "5 + 2i",
+        "5 − 2i",
+        "2 − 5i",
+        "125 − 50i"
+      ],
+      "t": 1,
+      "izoh": "Maxrajning qo'shmasi (4 − 3i) ga ko'paytiramiz. Maxraj: (4 + 3i)(4 − 3i) = 16 + 9 = 25. Surat: (26 + 7i)(4 − 3i) = 104 − 78i + 28i − 21i² = 104 + 21 − 50i = 125 − 50i. Bo'linma (125 − 50i) : 25 = 5 − 2i. 125 − 50i javobi 25 ga bo'lishni unutish, 5 + 2i esa qo'shma olishda ishorani almashtirmaslik xatosi. Javob: 5 − 2i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#289cca4a"
+    },
+    {
+      "q": "z = 2 + 3i bo'lsa, unga teskari son 1 : z qanday algebraik shaklda yoziladi?",
+      "v": [
+        "(2 + 3i)/13",
+        "(2 − 3i)/5",
+        "2 − 3i",
+        "(2 − 3i)/13"
+      ],
+      "t": 3,
+      "izoh": "Teskari sonni topish uchun 1 : (2 + 3i) kasrni maxrajning qo'shmasiga ko'paytiramiz. Maxraj: (2 + 3i)(2 − 3i) = 4 + 9 = 13, ya'ni |z|². Surat: 2 − 3i. Demak 1 : z = (2 − 3i)/13. (2 − 3i)/5 javobi |z|² o'rniga |z| ni qo'yish, 2 − 3i esa maxrajga bo'lishni unutish xatosi. Javob: (2 − 3i)/13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-son",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#2f8cf82e"
+    },
+    {
+      "q": "1 : (1 + i) ifodani soddalashtirib, natijaning mavhum qismini ko'rsating.",
+      "v": [
+        "0,5",
+        "−1",
+        "2",
+        "−0,5"
+      ],
+      "t": 3,
+      "izoh": "Surat va maxrajni (1 − i) ga ko'paytiramiz. Maxraj: (1 + i)(1 − i) = 1 + 1 = 2. Surat: 1 − i. Demak ifoda (1 − i)/2 = 0,5 − 0,5i ga teng va uning mavhum qismi −0,5. 0,5 javobi haqiqiy qismni ko'rsatish, −1 esa maxrajga bo'lishni unutish, 2 esa maxrajning o'zini javob deb olish xatosi. Javob: −0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-son",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#0e3cf57c"
+    },
+    {
+      "q": "Otabek z = 5i kompleks son uchun unga teskari sonni topishi kerak. Natija qanday sodda ko'rinishga ega bo'ladi?",
+      "v": [
+        "0,2i",
+        "−0,2i",
+        "5i",
+        "−5i"
+      ],
+      "t": 1,
+      "izoh": "1 : (5i) kasrning surat va maxrajini i ga ko'paytiramiz: i : (5i²) = i : (−5) = −0,2i. Sof mavhum sonning teskarisi ham sof mavhum bo'ladi, lekin ishorasi qarama-qarshi. 0,2i javobi ishorani hisobga olmaslik, 5i esa sonning o'zini javob deb olish xatosi. Javob: −0,2i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-son",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#1a83e9d9"
+    },
+    {
+      "q": "Kompleks son z uchun z + (1 : z) yig'indisi haqiqiy son bo'lishi uchun |z| qanday qiymat qabul qilishi kerak (z haqiqiy emas)?",
+      "v": [
+        "0",
+        "2",
+        "√2",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "z = a + bi deb olamiz, bunda b ≠ 0. Teskari son 1 : z = (a − bi) : (a² + b²) bo'ladi. Yig'indining mavhum qismi b − b : (a² + b²) ga teng. Yig'indi haqiqiy bo'lishi uchun bu ifoda nolga aylanishi kerak, ya'ni a² + b² = 1. Bundan |z| = 1. 0 javobi z nolga teng bo'la olmasligini e'tiborsiz qoldiradi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-son",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#d801d742"
+    },
+    {
+      "q": "(x + 2) + (y − 3)i = 5 + 4i tenglik o'rinli bo'lsa, x va y haqiqiy sonlarning qiymatlarini toping.",
+      "v": [
+        "x = 3, y = 7",
+        "x = 7, y = 3",
+        "x = 3, y = 1",
+        "x = 5, y = 4"
+      ],
+      "t": 0,
+      "izoh": "Ikki kompleks son teng bo'lishi uchun haqiqiy qismlari ham, mavhum qismlari ham teng bo'lishi shart. Demak x + 2 = 5 va y − 3 = 4. Birinchisidan x = 3, ikkinchisidan y = 7. x = 3, y = 1 javobi ikkinchi tenglamada ayirish o'rniga qo'shish xatosi. Javob: x = 3, y = 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kompleks-tenglik-sistema",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#3ac41e3f"
+    },
+    {
+      "q": "2x + 5i = 14 − yi tenglikda x va y haqiqiy sonlar bo'lsa, x + y yig'indi nechaga teng?",
+      "v": [
+        "12",
+        "2",
+        "−2",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "Haqiqiy qismlarni tenglashtiramiz: 2x = 14, demak x = 7. Mavhum qismlarni tenglashtiramiz: 5 = −y, demak y = −5. Yig'indi x + y = 7 + (−5) = 2. 12 javobi y ning ishorasini hisobga olmaslik, 7 esa faqat x ni javob deb ko'rsatish xatosi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompleks-tenglik-sistema",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#85d6c0cc"
+    },
+    {
+      "q": "Kamola ikki o'lchov natijasining tengligini tekshirmoqda: (3a − 1) + 8i = 11 + 2bi, bunda a va b haqiqiy sonlar. a·b ko'paytma nechaga teng?",
+      "v": [
+        "48",
+        "32",
+        "16",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Haqiqiy qismlar tengligidan 3a − 1 = 11, ya'ni 3a = 12 va a = 4. Mavhum qismlar tengligidan 2b = 8, ya'ni b = 4. Ko'paytma a·b = 16. 48 javobi 3a = 12 dan a = 12 deb olish, 32 javobi 2b = 8 dan b = 8 deb olish, 8 esa ko'paytirish o'rniga qo'shish xatosi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompleks-tenglik-sistema",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#59e78a6b"
+    },
+    {
+      "q": "(x + yi)(2 − i) = 7 + 4i tenglikda x va y haqiqiy sonlar. Ularning qiymatlarini toping.",
+      "v": [
+        "x = 2, y = 3",
+        "x = 3, y = 2",
+        "x = 2, y = −3",
+        "x = 7, y = 4"
+      ],
+      "t": 0,
+      "izoh": "Chap tomonni yoyamiz: (x + yi)(2 − i) = 2x − xi + 2yi − yi² = (2x + y) + (2y − x)i. Tenglikdan sistema hosil bo'ladi: 2x + y = 7 va 2y − x = 4. Birinchisidan y = 7 − 2x, uni ikkinchisiga qo'yamiz: 14 − 4x − x = 4, ya'ni 5x = 10 va x = 2, y = 3. x = 7, y = 4 javobi ko'paytirishni umuman bajarmaslik xatosi. Javob: x = 2, y = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kompleks-tenglik-sistema",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#83d0d71e"
+    },
+    {
+      "q": "Mavhum birlikning i⁴⁵ darajasi qanday qiymatga ega bo'lishini aniqlang.",
+      "v": [
+        "1",
+        "−1",
+        "−i",
+        "i"
+      ],
+      "t": 3,
+      "izoh": "Mavhum birlik darajalari to'rt qadamda takrorlanadi: i¹ = i, i² = −1, i³ = −i, i⁴ = 1. Darajani 4 ga bo'lib qoldiqni topamiz: 45 = 4·11 + 1, qoldiq 1. Demak i⁴⁵ = i¹ = i. 1 javobi qoldiqni 0 deb olish, −i esa qoldiqni 3 deb olish xatosi. Javob: i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "i-darajasi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#22613cbf"
+    },
+    {
+      "q": "Javohir dasturida i²⁰²⁶ + i²⁰²⁷ yig'indini hisoblovchi kod yozdi. Kod to'g'ri ishlasa, natijada qaysi kompleks son chiqadi?",
+      "v": [
+        "−1 − i",
+        "1 + i",
+        "−1 + i",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Darajalarni 4 ga bo'lib qoldiq aniqlanadi. 2026 = 4·506 + 2 bo'lgani uchun i²⁰²⁶ = i² = −1. 2027 = 4·506 + 3 bo'lgani uchun i²⁰²⁷ = i³ = −i. Yig'indi −1 + (−i) = −1 − i. 0 javobi ikki qo'shni daraja doim qisqaradi deb o'ylash xatosi. Javob: −1 − i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "i-darajasi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#0f85491a"
+    },
+    {
+      "q": "i¹⁰⁰ · i⁷ ko'paytmani hisoblab, uni 3 soniga qo'shing. Hosil bo'lgan kompleks sonni ko'rsating.",
+      "v": [
+        "3 + i",
+        "2",
+        "3 − i",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Darajalar ko'paytirilganda ko'rsatkichlar qo'shiladi: i¹⁰⁰ · i⁷ = i¹⁰⁷. 107 = 4·26 + 3, qoldiq 3, demak i¹⁰⁷ = i³ = −i. Endi 3 + (−i) = 3 − i. 4 javobi i¹⁰⁷ ni 1 deb olish, 2 esa uni −1 deb olish xatosi. Javob: 3 − i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "i-darajasi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#f413b224"
+    },
+    {
+      "q": "Mavhum birlik uchun i¹⁰ + i⁻¹⁰ yig'indining qiymatini hisoblang.",
+      "v": [
+        "−2",
+        "0",
+        "2",
+        "−2i"
+      ],
+      "t": 0,
+      "izoh": "Avval musbat darajani topamiz: 10 = 4·2 + 2, demak i¹⁰ = i² = −1. Manfiy daraja teskari son orqali hisoblanadi: i⁻¹⁰ = 1 : i¹⁰ = 1 : (−1) = −1. Yig'indi −1 + (−1) = −2. 0 javobi manfiy daraja qarama-qarshi qiymat beradi deb o'ylash xatosi. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "i-darajasi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#003f4728"
+    },
+    {
+      "q": "n natural son bo'lganda i⁴ⁿ⁺³ + i⁴ⁿ⁺¹ ifodaning qiymati qanday bo'ladi?",
+      "v": [
+        "2i",
+        "0",
+        "−2i",
+        "−1"
+      ],
+      "t": 1,
+      "izoh": "i⁴ⁿ = (i⁴)ⁿ = 1ⁿ = 1 bo'lgani uchun i⁴ⁿ⁺³ = i³ = −i va i⁴ⁿ⁺¹ = i¹ = i. Yig'indi −i + i = 0. Demak ifoda n ning har qanday qiymatida nolga teng. 2i javobi ikkala hadni ham i deb olish, −2i esa ikkalasini −i deb olish xatosi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "i-darajasi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#18425aea"
+    },
+    {
+      "q": "i + i² + i³ + i⁴ + … + i²⁰ yig'indini hisoblang.",
+      "v": [
+        "i",
+        "1 + i",
+        "0",
+        "−1"
+      ],
+      "t": 2,
+      "izoh": "Ketma-ket to'rtta daraja yig'indisi doim nolga teng: i + i² + i³ + i⁴ = i − 1 − i + 1 = 0. Yig'indida 20 ta had bor, ya'ni 20 : 4 = 5 ta to'liq guruh. Har bir guruh nol bergani uchun umumiy yig'indi 0. i javobi ortiqcha bitta had qolgan deb o'ylash xatosi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "i-darajalar-yigindisi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#1f64885c"
+    },
+    {
+      "q": "Rustam mashg'ulotda 1 + i + i² + i³ + … + i⁵⁰ yig'indini hisoblashi kerak. To'g'ri natija qaysi variantda berilgan?",
+      "v": [
+        "i",
+        "1 + i",
+        "0",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi i⁰ dan i⁵⁰ gacha, ya'ni jami 51 ta haddan iborat. Ketma-ket to'rttalik guruhlar nol beradi: 51 = 4·12 + 3, demak dastlabki 48 had yo'qoladi. Qolgan uchta had i⁴⁸ + i⁴⁹ + i⁵⁰ = 1 + i − 1 = i. 0 javobi hadlar sonini 4 ga karrali deb hisoblash xatosi. Javob: i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "i-darajalar-yigindisi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#68bb4a2f"
+    },
+    {
+      "q": "i¹ + i² + i³ + … + i⁹⁹ yig'indining qiymatini toping.",
+      "v": [
+        "0",
+        "i",
+        "−1",
+        "1 − i"
+      ],
+      "t": 2,
+      "izoh": "Yig'indida i¹ dan i⁹⁹ gacha 99 ta had bor. Har to'rtta ketma-ket had nol beradi va 99 = 4·24 + 3, demak dastlabki 96 had yo'qoladi. Qolgan uchta had i⁹⁷ + i⁹⁸ + i⁹⁹ = i − 1 − i = −1. 0 javobi qoldiqni hisobga olmaslik, i esa qolgan hadlarni noto'g'ri qisqartirish xatosi. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "i-darajalar-yigindisi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#b482a5e5"
+    },
+    {
+      "q": "x² − 4x + 13 = 0 tenglamaning ildizlarini kompleks sonlar to'plamida toping.",
+      "v": [
+        "2 ± 6i",
+        "4 ± 3i",
+        "2 ± 3i",
+        "−2 ± 3i"
+      ],
+      "t": 2,
+      "izoh": "Diskriminantni hisoblaymiz: D = 16 − 4·13 = −36. Manfiy diskriminantdan ildiz √(−36) = 6i bo'ladi. Endi x = (4 ± 6i) : 2 = 2 ± 3i. 2 ± 6i javobi mavhum qismni 2 ga bo'lishni unutish, 4 ± 3i esa haqiqiy qismni bo'lmaslik xatosi. Javob: 2 ± 3i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-tenglama-kompleks-ildiz",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#ad326fad"
+    },
+    {
+      "q": "x² + 6x + 25 = 0 tenglamaning kompleks ildizlarini ko'rsating.",
+      "v": [
+        "3 ± 4i",
+        "−3 ± 4i",
+        "−3 ± 8i",
+        "−6 ± 4i"
+      ],
+      "t": 1,
+      "izoh": "Diskriminant D = 36 − 100 = −64, demak √D = 8i. Ildizlar x = (−6 ± 8i) : 2 = −3 ± 4i. 3 ± 4i javobi formuladagi −b ning ishorasini yo'qotish, −3 ± 8i esa mavhum qismni 2 ga bo'lmaslik xatosi. Javob: −3 ± 4i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-tenglama-kompleks-ildiz",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#a2311e9d"
+    },
+    {
+      "q": "Aziz ishlab chiqarish modelida x² − 10x + 41 = 0 tenglamani yechganda haqiqiy yechim topa olmadi. Tenglamaning kompleks ildizlari qanday bo'ladi?",
+      "v": [
+        "5 ± 8i",
+        "10 ± 4i",
+        "−5 ± 4i",
+        "5 ± 4i"
+      ],
+      "t": 3,
+      "izoh": "Diskriminant D = 100 − 4·41 = 100 − 164 = −64. U manfiy bo'lgani uchun haqiqiy ildiz yo'q. √(−64) = 8i, demak x = (10 ± 8i) : 2 = 5 ± 4i. 5 ± 8i javobi mavhum qismni bo'lishni unutish, −5 ± 4i esa ishorani almashtirish xatosi. Javob: 5 ± 4i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-tenglama-kompleks-ildiz",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#93e6567e"
+    },
+    {
+      "q": "2x² + 2x + 5 = 0 tenglamaning ildizlarini toping.",
+      "v": [
+        "−2 ± 6i",
+        "−0,5 ± 1,5i",
+        "−0,5 ± 6i",
+        "0,5 ± 1,5i"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda a = 2, b = 2, c = 5. Diskriminant D = 4 − 40 = −36 va √D = 6i. Ildizlar x = (−2 ± 6i) : (2·2) = (−2 ± 6i) : 4 = −0,5 ± 1,5i. −2 ± 6i javobi 2a ga bo'lishni unutish, 0,5 ± 1,5i esa −b ning ishorasini yo'qotish xatosi. Javob: −0,5 ± 1,5i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-tenglama-kompleks-ildiz",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#5844059e"
+    },
+    {
+      "q": "Kompleks ildizlaridan biri 3 − 2i bo'lgan, koeffitsientlari haqiqiy va bosh koeffitsienti 1 ga teng kvadrat tenglamani tuzing.",
+      "v": [
+        "x² + 6x + 13 = 0",
+        "x² − 6x + 5 = 0",
+        "x² − 3x + 13 = 0",
+        "x² − 6x + 13 = 0"
+      ],
+      "t": 3,
+      "izoh": "Koeffitsientlari haqiqiy bo'lsa, kompleks ildizlar juft-juft qo'shma bo'ladi, demak ikkinchi ildiz 3 + 2i. Viyet teoremasiga ko'ra ildizlar yig'indisi (3 − 2i) + (3 + 2i) = 6, ko'paytmasi (3 − 2i)(3 + 2i) = 9 + 4 = 13. Tenglama x² − 6x + 13 = 0. x² − 6x + 5 = 0 javobi ko'paytmada 9 − 4 deb hisoblash xatosi. Javob: x² − 6x + 13 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-tenglama-kompleks-ildiz",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#8c14784d"
+    },
+    {
+      "q": "x² − 8x + 20 = 0 tenglama ildizlarining yig'indisi va ko'paytmasi mos ravishda qanday bo'ladi?",
+      "v": [
+        "−8 va 20",
+        "8 va 20",
+        "8 va −20",
+        "4 va 10"
+      ],
+      "t": 1,
+      "izoh": "Viyet teoremasi kompleks ildizlar uchun ham o'rinli: ildizlar yig'indisi −b : a, ko'paytmasi c : a ga teng. Bu yerda a = 1, b = −8, c = 20, demak yig'indi 8, ko'paytma 20. −8 va 20 javobi yig'indi ishorasini almashtirish, 4 va 10 esa koeffitsientlarni 2 ga bo'lish xatosi. Javob: 8 va 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "viyet-kompleks",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#4a91d1eb"
+    },
+    {
+      "q": "Kvadrat tenglamaning ildizlari 4 + i va 4 − i bo'lsa, ildizlar ko'paytmasi nechaga teng?",
+      "v": [
+        "15",
+        "8",
+        "17",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "Qo'shma sonlar ko'paytmasi (4 + i)(4 − i) = 16 − i² ko'rinishida hisoblanadi. i² = −1 bo'lgani uchun 16 + 1 = 17. 15 javobi i² ni +1 deb olish, 8 esa ko'paytma o'rniga yig'indini hisoblash xatosi. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-kompleks",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#fc94884c"
+    },
+    {
+      "q": "Sevara x² + px + q = 0 tenglamani tuzmoqchi va uning ildizlari −2 + 5i hamda −2 − 5i bo'lishi kerak. p va q koeffitsientlar qanday bo'ladi?",
+      "v": [
+        "p = −4, q = 29",
+        "p = 4, q = −21",
+        "p = 4, q = 29",
+        "p = 4, q = 21"
+      ],
+      "t": 2,
+      "izoh": "Ildizlar yig'indisi (−2 + 5i) + (−2 − 5i) = −4. Viyet teoremasiga ko'ra yig'indi −p ga teng, demak p = 4. Ko'paytma (−2)² + 5² = 4 + 25 = 29, u q ga teng. p = −4 javobi ishorani almashtirish, q = −21 esa ko'paytmada 4 − 25 deb hisoblash xatosi. Javob: p = 4, q = 29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-kompleks",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#7f068b42"
+    },
+    {
+      "q": "x² − 6x + 34 = 0 tenglamaning ildizlari x₁ va x₂ bo'lsa, x₁² + x₂² yig'indi nechaga teng?",
+      "v": [
+        "104",
+        "36",
+        "−32",
+        "−68"
+      ],
+      "t": 2,
+      "izoh": "Viyet teoremasidan x₁ + x₂ = 6 va x₁·x₂ = 34. Ayniyatni qo'llaymiz: x₁² + x₂² = (x₁ + x₂)² − 2x₁x₂ = 36 − 68 = −32. Natija manfiy chiqishi kompleks ildizlar uchun tabiiy. 104 javobi ayirish o'rniga qo'shish, 36 esa ikkinchi hadni tashlab ketish xatosi. Javob: −32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "viyet-kompleks",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#d0a19c0c"
+    },
+    {
+      "q": "(2 + i)z = 10 tenglamadan z kompleks sonni toping.",
+      "v": [
+        "4 + 2i",
+        "2 − i",
+        "20 − 10i",
+        "4 − 2i"
+      ],
+      "t": 3,
+      "izoh": "Tenglamadan z = 10 : (2 + i). Kasrni maxrajning qo'shmasiga ko'paytiramiz: maxraj (2 + i)(2 − i) = 5, surat 10·(2 − i) = 20 − 10i. Demak z = (20 − 10i) : 5 = 4 − 2i. 20 − 10i javobi 5 ga bo'lishni unutish, 4 + 2i esa qo'shmada ishorani almashtirmaslik xatosi. Javob: 4 − 2i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kompleks-tenglama-yechish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#411e7729"
+    },
+    {
+      "q": "iz + 3 = 5 − 2i tenglamani z ga nisbatan yeching.",
+      "v": [
+        "2 − 2i",
+        "−2 + 2i",
+        "2 + 2i",
+        "−2 − 2i"
+      ],
+      "t": 3,
+      "izoh": "Avval z li hadni ajratamiz: iz = (5 − 2i) − 3 = 2 − 2i. Endi ikkala tomonni i ga bo'lamiz yoki (−i) ga ko'paytiramiz: z = (2 − 2i)·(−i) = −2i + 2i² = −2 − 2i. Tekshirish: i·(−2 − 2i) = −2i + 2 = 2 − 2i, unga 3 qo'shsak 5 − 2i chiqadi. Javob: −2 − 2i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompleks-tenglama-yechish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#ae3ee76b"
+    },
+    {
+      "q": "Muattar boshqaruv tizimi masalasida (3 − i)z = 20 + 10i tenglamani yechishi kerak. z qaysi kompleks songa teng?",
+      "v": [
+        "7 + 5i",
+        "5 + 5i",
+        "5 − 5i",
+        "50 + 50i"
+      ],
+      "t": 1,
+      "izoh": "z = (20 + 10i) : (3 − i) kasrni maxrajning qo'shmasi (3 + i) ga ko'paytiramiz. Maxraj: 9 + 1 = 10. Surat: (20 + 10i)(3 + i) = 60 + 20i + 30i + 10i² = 60 − 10 + 50i = 50 + 50i. Demak z = (50 + 50i) : 10 = 5 + 5i. 7 + 5i javobi i² ni +1 deb olish, 50 + 50i esa bo'lishni unutish xatosi. Javob: 5 + 5i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompleks-tenglama-yechish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#045af81d"
+    },
+    {
+      "q": "z + 2·(z ning qo'shmasi) = 9 − 4i tenglikni qanoatlantiruvchi z kompleks sonni toping.",
+      "v": [
+        "3 + 4i",
+        "3 − 4i",
+        "9 + 4i",
+        "3 + 12i"
+      ],
+      "t": 0,
+      "izoh": "z = a + bi deb olamiz, u holda qo'shmasi a − bi bo'ladi. Chap tomon: (a + bi) + 2(a − bi) = 3a − bi. Tenglikdan 3a = 9 va −b = −4, ya'ni a = 3, b = 4. Demak z = 3 + 4i. 3 − 4i javobi mavhum qism ishorasini almashtirish, 9 + 4i esa 3a = 9 dan a = 9 deb olish xatosi. Javob: 3 + 4i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kompleks-tenglama-yechish",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#9c51e5fe"
+    },
+    {
+      "q": "(1 + i)² ifodadan foydalanib, (1 + i)⁸ darajaning qiymatini toping.",
+      "v": [
+        "16",
+        "−16",
+        "16i",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Avval kichik darajani hisoblaymiz: (1 + i)² = 1 + 2i + i² = 2i. Endi (1 + i)⁸ = ((1 + i)²)⁴ = (2i)⁴ = 16·i⁴. i⁴ = 1 bo'lgani uchun natija 16. −16 javobi i⁴ ni −1 deb olish, 8 esa 2 ni 4 ga ko'paytirish xatosi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuqori-daraja",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#437eeb6e"
+    },
+    {
+      "q": "Mavhum birlik ishtirokidagi (1 − i)⁶ darajaning qiymatini hisoblang.",
+      "v": [
+        "8i",
+        "−8i",
+        "8",
+        "−8"
+      ],
+      "t": 0,
+      "izoh": "Avval (1 − i)² = 1 − 2i + i² = −2i ekanini topamiz. So'ng (1 − i)⁶ = ((1 − i)²)³ = (−2i)³ = −8i³. i³ = −i bo'lgani uchun −8·(−i) = 8i. −8i javobi i³ ni i deb olish, −8 esa mavhum birlikni tushirib qoldirish xatosi. Javob: 8i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuqori-daraja",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#9c075e5c"
+    },
+    {
+      "q": "Dilshod hisoblash mashg'ulotida (2i)⁵ darajani hisoblab, natijani algebraik shaklda yozdi. U qanday natija olgan?",
+      "v": [
+        "−32i",
+        "32",
+        "32i",
+        "10i"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytmaning darajasi har bir ko'paytuvchiga tarqaladi: (2i)⁵ = 2⁵·i⁵ = 32·i⁵. Endi i⁵ ni topamiz: 5 = 4·1 + 1, qoldiq 1, demak i⁵ = i. Natija 32i. −32i javobi i⁵ ni −i deb olish, 10i esa asosni ko'rsatkichga ko'paytirish xatosi. Javob: 32i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuqori-daraja",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#a52aeec4"
+    },
+    {
+      "q": "(1 + i) : (1 − i) nisbatning 2027-darajasi qanday qiymatga ega?",
+      "v": [
+        "i",
+        "−i",
+        "1 + i",
+        "−1"
+      ],
+      "t": 1,
+      "izoh": "Avval nisbatni soddalashtiramiz: (1 + i) : (1 − i) kasrni (1 + i) ga ko'paytirsak, surat (1 + i)² = 2i, maxraj (1 − i)(1 + i) = 2 bo'ladi, ya'ni nisbat i ga teng. Endi i²⁰²⁷ ni topamiz: 2027 = 4·506 + 3, qoldiq 3, demak natija i³ = −i. i javobi darajani hisobga olmaslik xatosi. Javob: −i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuqori-daraja",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#0f1a3bea"
+    },
+    {
+      "q": "z² = −5 + 12i va z ning haqiqiy qismi musbat bo'lsa, z kompleks sonni toping.",
+      "v": [
+        "2 + 3i",
+        "3 + 2i",
+        "2 − 3i",
+        "−2 − 3i"
+      ],
+      "t": 0,
+      "izoh": "z = a + bi deb olamiz, u holda z² = a² − b² + 2abi. Tenglikdan a² − b² = −5 va 2ab = 12, ya'ni ab = 6. Ikkinchisidan b = 6 : a, uni birinchisiga qo'ysak a⁴ + 5a² − 36 = 0, bundan a² = 4 va a = ±2. Haqiqiy qism musbat bo'lgani uchun a = 2, b = 3. Tekshirish: (2 + 3i)² = 4 + 12i − 9 = −5 + 12i. Javob: 2 + 3i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ildiz-kompleksdan",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#d3ed3030"
+    },
+    {
+      "q": "Nafisa z² = 2i tenglamani yechmoqda va ikkala ildizni ham topishi kerak. To'g'ri javoblar juftligini ko'rsating.",
+      "v": [
+        "±(1 + i)",
+        "±(1 − i)",
+        "±i√2",
+        "±2i"
+      ],
+      "t": 0,
+      "izoh": "z = a + bi bo'lsa, z² = a² − b² + 2abi. Tenglikdan a² − b² = 0 va 2ab = 2. Birinchisidan a = ±b, ikkinchisidan ab = 1, demak a = b = 1 yoki a = b = −1. Ildizlar ±(1 + i). Tekshirish: (1 + i)² = 2i. ±i√2 javobi 2i dan ildizni haqiqiy sondek chiqarish xatosi. Javob: ±(1 + i).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-ildiz-kompleksdan",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#8947eab6"
+    },
+    {
+      "q": "z² = −16 tenglamaning barcha ildizlari yig'indisi va ko'paytmasi mos ravishda nechaga teng?",
+      "v": [
+        "0 va −16",
+        "0 va 16",
+        "8i va −16",
+        "0 va 4"
+      ],
+      "t": 1,
+      "izoh": "Tenglamadan z = ±√(−16) = ±4i, ya'ni ildizlar 4i va −4i. Yig'indi 4i + (−4i) = 0. Ko'paytma 4i·(−4i) = −16i² = 16, chunki i² = −1. 0 va −16 javobi ko'paytma o'rniga tenglamaning o'ng tomonini yozib qo'yish xatosi. Javob: 0 va 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-ildiz-kompleksdan",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#7ae3a225"
+    },
+    {
+      "q": "Zarina kompleks tekislikda z = −4 + 7i sonini nuqta sifatida belgiladi. Bu nuqta qaysi chorakda joylashadi?",
+      "v": [
+        "II chorak",
+        "I chorak",
+        "III chorak",
+        "IV chorak"
+      ],
+      "t": 0,
+      "izoh": "Kompleks tekislikda haqiqiy qism abssissa, mavhum qism ordinata bo'ladi. Bu yerda abssissa −4 manfiy, ordinata 7 musbat. Abssissasi manfiy, ordinatasi musbat nuqtalar ikkinchi chorakda yotadi. III chorak javobi ikkala koordinatani ham manfiy deb o'ylash xatosi. Javob: II chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kompleks-tekislik",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#5d29e484"
+    },
+    {
+      "q": "Kompleks tekislikda z = 6 − 8i soniga mos nuqtaning koordinatalari qanday yoziladi?",
+      "v": [
+        "(−8; 6)",
+        "(6; 8)",
+        "(6; −8i)",
+        "(6; −8)"
+      ],
+      "t": 3,
+      "izoh": "z = a + bi soniga tekislikda (a; b) nuqta mos keladi. Bu yerda a = 6, b = −8, demak nuqta (6; −8). Ordinata mavhum qismning koeffitsienti bo'lib, i bilan yozilmaydi. (−8; 6) javobi koordinatalarni o'rin almashtirish, (6; 8) esa ishorani yo'qotish xatosi. Javob: (6; −8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kompleks-tekislik",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#36a87039"
+    },
+    {
+      "q": "Temur kompleks tekislikda z₁ = 1 + 2i va z₂ = 9 + 8i nuqtalar orasidagi masofani hisoblamoqchi. Bu masofa qanchaga teng?",
+      "v": [
+        "14",
+        "√14",
+        "10",
+        "100"
+      ],
+      "t": 2,
+      "izoh": "Ikki nuqta orasidagi masofa ularning ayirmasi moduliga teng. Ayirma z₂ − z₁ = (9 − 1) + (8 − 2)i = 8 + 6i. Endi |8 + 6i| = √(64 + 36) = √100 = 10. 14 javobi qismlarni shunchaki qo'shish, 100 esa ildiz chiqarishni unutish xatosi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompleks-tekislik",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#93d3d76a"
+    },
+    {
+      "q": "Kompleks tekislikda |z − 3i| = 5 tenglama qanday shaklni ifodalaydi?",
+      "v": [
+        "markazi (3; 0) nuqtada, radiusi 5 bo'lgan aylana",
+        "markazi (0; −3) nuqtada, radiusi 5 bo'lgan aylana",
+        "markazi koordinata boshida, radiusi 5 bo'lgan aylana",
+        "markazi (0; 3) nuqtada, radiusi 5 bo'lgan aylana"
+      ],
+      "t": 3,
+      "izoh": "|z − z₀| ifodasi z nuqtadan z₀ nuqtagacha bo'lgan masofani bildiradi. Bu yerda z₀ = 3i, unga tekislikda (0; 3) nuqta mos keladi. Demak tenglik shu nuqtadan 5 birlik uzoqlikdagi barcha nuqtalarni, ya'ni aylanani beradi. (3; 0) javobi 3i ni haqiqiy son deb qabul qilish xatosi. Javob: markazi (0; 3) nuqtada, radiusi 5 bo'lgan aylana.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kompleks-tekislik",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#a7596cd3"
+    },
+    {
+      "q": "z = (m − 4) + (m + 2)i kompleks son sof mavhum bo'lishi uchun haqiqiy m parametr qanday qiymatga ega bo'lishi kerak?",
+      "v": [
+        "−2",
+        "4",
+        "2",
+        "−4"
+      ],
+      "t": 1,
+      "izoh": "Son sof mavhum bo'lishi uchun haqiqiy qism nolga teng, mavhum qism esa noldan farqli bo'lishi kerak. Haqiqiy qism m − 4 = 0 dan m = 4 kelib chiqadi. Bu qiymatda mavhum qism m + 2 = 6, ya'ni noldan farqli, demak shart bajariladi. −2 javobi mavhum qismni nolga tenglashtirish, ya'ni sof haqiqiy son sharti bilan chalkashtirish xatosi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-shart",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#5ce83114"
+    },
+    {
+      "q": "Kamron fizika masalasida z = (2k + 6) + (k − 5)i son haqiqiy bo'lishini talab qilmoqda. k parametrning qiymati nechaga teng?",
+      "v": [
+        "−3",
+        "−5",
+        "5",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Kompleks son haqiqiy bo'lishi uchun uning mavhum qismi nolga teng bo'lishi kerak. Demak k − 5 = 0 va k = 5. Bu qiymatda son 16 ga teng bo'lib, haqiqiy chiqadi. −3 javobi haqiqiy qismni nolga tenglashtirish, −5 esa ishorani almashtirish xatosi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-shart",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#82fb6505"
+    },
+    {
+      "q": "a haqiqiy son bo'lsin. (a + 3i)(2 − i) ko'paytma sof mavhum bo'lishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "1,5",
+        "−1,5",
+        "6",
+        "−6"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytmani yoyamiz: (a + 3i)(2 − i) = 2a − ai + 6i − 3i² = (2a + 3) + (6 − a)i. Sof mavhum bo'lishi uchun haqiqiy qism nolga teng bo'lsin: 2a + 3 = 0, bundan a = −1,5. Bu qiymatda mavhum qism 7,5 bo'lib, noldan farqli. 1,5 javobi ishorani almashtirish, 6 esa mavhum qismni nolga tenglashtirish xatosi. Javob: −1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-shart",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#766425bc"
+    },
+    {
+      "q": "(t + 2i) : (1 − i) bo'linma haqiqiy son bo'lishi uchun haqiqiy t parametrning qiymatini toping.",
+      "v": [
+        "2",
+        "0",
+        "−1",
+        "−2"
+      ],
+      "t": 3,
+      "izoh": "Kasrni maxrajning qo'shmasi (1 + i) ga ko'paytiramiz. Maxraj 2 ga teng, surat esa (t + 2i)(1 + i) = t + ti + 2i + 2i² = (t − 2) + (t + 2)i. Bo'linma haqiqiy bo'lishi uchun mavhum qism nolga teng bo'lsin: t + 2 = 0, demak t = −2. 2 javobi ishorani almashtirish, 0 esa suratning haqiqiy qismini nolga tenglashtirish xatosi. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-shart",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#b1432bb9"
+    },
+    {
+      "q": "Ketma-ket ulangan ikki elementning qarshiliklari Z₁ = 5 + 12i va Z₂ = 3 − 4i om. Zanjirning umumiy qarshiligi qanday kompleks songa teng?",
+      "v": [
+        "8 + 8i",
+        "2 + 16i",
+        "8 + 16i",
+        "15 + 48i"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanishda qarshiliklar qo'shiladi. Haqiqiy qismlar: 5 + 3 = 8. Mavhum qismlar: 12 + (−4) = 8. Demak umumiy qarshilik 8 + 8i om. 2 + 16i javobi qo'shish o'rniga ayirish, 8 + 16i esa mavhum qismlarda ishorani hisobga olmaslik xatosi. Javob: 8 + 8i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "elektr-zanjir-qarshiligi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#615c40dd"
+    },
+    {
+      "q": "Jamshid zanjirdagi ikki bo'lakning qarshiliklarini Z₁ = 10 + 10i va Z₂ = 2 + 2i om deb o'lchadi. Z₁ ning Z₂ ga nisbati nechaga teng?",
+      "v": [
+        "5 + 5i",
+        "0,2",
+        "5",
+        "8 + 8i"
+      ],
+      "t": 2,
+      "izoh": "Nisbatni topamiz: (10 + 10i) : (2 + 2i). Suratni ko'paytuvchiga ajratamiz: 10 + 10i = 5·(2 + 2i). Demak nisbat 5·(2 + 2i) : (2 + 2i) = 5 ga teng, ya'ni sof haqiqiy son chiqadi. 5 + 5i javobi qismlarni alohida bo'lib, i ni saqlab qolish, 0,2 esa nisbatni teskari olish xatosi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "elektr-zanjir-qarshiligi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#dd8a0f80"
+    },
+    {
+      "q": "Ketma-ket ulangan elementlarning qarshiliklari Z₁ = 4 + 3i va Z₂ = 5 + 9i om bo'lsa, zanjir to'la qarshiligining moduli necha om?",
+      "v": [
+        "21",
+        "12",
+        "225",
+        "15"
+      ],
+      "t": 3,
+      "izoh": "Avval qarshiliklarni qo'shamiz: (4 + 5) + (3 + 9)i = 9 + 12i. Endi modulni topamiz: √(81 + 144) = √225 = 15 om. 21 javobi qismlarni shunchaki qo'shish, 225 esa ildiz chiqarishni unutish, 12 esa faqat mavhum qismni olish xatosi. Javob: 15 om.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "elektr-zanjir-qarshiligi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#361149fe"
+    },
+    {
+      "q": "Zanjirning to'la qarshiligi Z = 14 + 2i om bo'lib, uning birinchi bo'lagi Z₁ = 6 − 5i om ni tashkil qiladi. Ikkinchi bo'lakning qarshiligi qanday?",
+      "v": [
+        "20 − 3i",
+        "8 − 3i",
+        "8 + 7i",
+        "8 + 3i"
+      ],
+      "t": 2,
+      "izoh": "Ketma-ket ulanishda Z = Z₁ + Z₂ bo'lgani uchun Z₂ = Z − Z₁. Haqiqiy qism: 14 − 6 = 8. Mavhum qism: 2 − (−5) = 7. Demak Z₂ = 8 + 7i om. 20 − 3i javobi ayirish o'rniga qo'shish, 8 − 3i esa mavhum qismda qo'sh minusni hisobga olmaslik xatosi. Javob: 8 + 7i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "elektr-zanjir-qarshiligi",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#fb218368"
+    },
+    {
+      "q": "(3 + 2i)(3 − 2i) + i⁶ ifodaning qiymatini hisoblang.",
+      "v": [
+        "14",
+        "13",
+        "6",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Birinchi had qo'shma sonlar ko'paytmasi: (3 + 2i)(3 − 2i) = 9 + 4 = 13. Ikkinchi had uchun 6 = 4 + 2, demak i⁶ = i² = −1. Yig'indi 13 + (−1) = 12. 14 javobi i⁶ ni +1 deb olish, 13 esa ikkinchi hadni umuman hisobga olmaslik xatosi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralash-ifoda",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#b1a8bf49"
+    },
+    {
+      "q": "(2 + i)² − (2 − i)² ayirmaning qiymatini toping.",
+      "v": [
+        "0",
+        "8",
+        "8i",
+        "−8i"
+      ],
+      "t": 2,
+      "izoh": "Birinchi kvadrat: (2 + i)² = 4 + 4i + i² = 3 + 4i. Ikkinchisi: (2 − i)² = 3 − 4i. Ayirma (3 + 4i) − (3 − 4i) = 8i. Haqiqiy qismlar bir xil bo'lgani uchun qisqaradi, mavhum qism esa ikkilanadi. 0 javobi ikkala kvadratni teng deb o'ylash, 8 esa mavhum birlikni tushirib qoldirish xatosi. Javob: 8i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralash-ifoda",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#b669302a"
+    },
+    {
+      "q": "Oybek imtihonga tayyorlanayotib (1 + i)² + (1 : i) ifodani hisoblashi kerak bo'ldi. Ifodaning qiymati qanday?",
+      "v": [
+        "3i",
+        "i",
+        "−i",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Birinchi hadni yoyamiz: (1 + i)² = 1 + 2i + i² = 2i. Ikkinchi had uchun 1 : i kasrni i ga ko'paytiramiz: i : i² = i : (−1) = −i. Yig'indi 2i + (−i) = i. 3i javobi 1 : i ni i deb olish, 2 esa (1 + i)² = 2i natijasida mavhum birlikni tushirib qoldirib 2 deb olish va 1 : i hadini umuman hisobga olmaslik xatosi. Javob: i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-ifoda",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#a5375d8c"
+    },
+    {
+      "q": "z = 2 − i bo'lsa, z² − 4z + 5 ifodaning qiymatini hisoblang.",
+      "v": [
+        "10",
+        "−4i",
+        "1",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "Avval kvadratni topamiz: (2 − i)² = 4 − 4i + i² = 3 − 4i. So'ng −4z = −4(2 − i) = −8 + 4i. Endi hammasini qo'shamiz: (3 − 4i) + (−8 + 4i) + 5 = 0. Demak z berilgan kvadrat uch hadning ildizi ekan. 10 javobi z² o'rniga z·z̄ = 4 + 1 = 5 ni olib, −4z hadini tashlab yuborish (5 + 5 = 10), −4i esa mavhum qismlarni qisqartirmaslik xatosi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-ifoda",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#6e66515b"
+    },
+    {
+      "q": "(1 + i)³ darajani yoyib, algebraik shaklda yozing.",
+      "v": [
+        "2 + 2i",
+        "−2 − 2i",
+        "1 − i",
+        "−2 + 2i"
+      ],
+      "t": 3,
+      "izoh": "Avval kvadratni topamiz: (1 + i)² = 2i. Endi (1 + i)³ = 2i·(1 + i) = 2i + 2i² = −2 + 2i. 1 − i javobi hadlarni alohida kubga oshirish, ya'ni 1³ + i³ deb hisoblash xatosi. 2 + 2i javobi kub o'rniga kvadratni hisoblab, bunda i² ni +1 deb olish natijasi. −2 − 2i esa 2i·(1 + i) ko'paytmada ishorani noto'g'ri olish xatosi. Javob: −2 + 2i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-daraja-ayniyat",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#02749a5b"
+    },
+    {
+      "q": "Kompleks son (2 − i) ning kubini hisoblab, algebraik shaklda yozing.",
+      "v": [
+        "2 + 11i",
+        "8 + i",
+        "2 − 11i",
+        "14 − 13i"
+      ],
+      "t": 2,
+      "izoh": "Avval kvadratga oshiramiz: (2 − i)² = 4 − 4i + i² = 3 − 4i. So'ng yana (2 − i) ga ko'paytiramiz: (3 − 4i)(2 − i) = 6 − 3i − 8i + 4i² = 6 − 4 − 11i = 2 − 11i. 8 + i javobi hadlarni alohida kubga oshirish, 14 − 13i esa i² ni +1 deb olish xatosi. Javob: 2 − 11i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-daraja-ayniyat",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#02426e75"
+    },
+    {
+      "q": "z³ = 8 tenglamaning haqiqiy bo'lmagan ildizlaridan biri quyidagilardan qaysi biri?",
+      "v": [
+        "−1 + i√3",
+        "−2 + 2i",
+        "1 + i√3",
+        "2i"
+      ],
+      "t": 0,
+      "izoh": "Tenglamani z³ − 8 = 0 ko'rinishida yozib, kublar ayirmasi formulasi bilan yoyamiz: (z − 2)(z² + 2z + 4) = 0. Birinchi ko'paytuvchi haqiqiy ildiz z = 2 ni beradi. Ikkinchisi uchun D = 4 − 16 = −12 va √D = 2i√3, demak z = (−2 ± 2i√3) : 2 = −1 ± i√3. 1 + i√3 javobi −b ning ishorasini yo'qotish xatosi. Javob: −1 + i√3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-daraja-ayniyat",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#5bfabe13"
+    },
+    {
+      "q": "z² + z + 1 = 0 tenglamaning ildizi bo'lgan z uchun z³ ning qiymati nechaga teng?",
+      "v": [
+        "1",
+        "−1",
+        "0",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Tenglamaning ikkala tomonini (z − 1) ga ko'paytiramiz: (z − 1)(z² + z + 1) = z³ − 1. Chap tomondagi ikkinchi qavs nolga teng bo'lgani uchun ko'paytma ham nol. Demak z³ − 1 = 0, ya'ni z³ = 1. Bu natija ildizni oshkor topmasdan olindi. 0 javobi tenglamaning o'ng tomonini javob deb olish xatosi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-daraja-ayniyat",
+      "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida#561967b9"
+    }
+  ]
+}

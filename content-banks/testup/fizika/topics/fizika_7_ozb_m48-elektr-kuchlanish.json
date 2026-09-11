@@ -1,0 +1,486 @@
+{
+  "nom": "48-mavzu. Elektr Kuchlanish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kuchlanish nima deb aytiladi?",
+      "v": [
+        "Zanjirning biror qismida birlik musbat zaryadni ko‘chirishda elektr maydon bajargan ishga miqdor jihatidan teng fizik kattalik",
+        "O‘tkazgichdan o‘tgan tokning tezligi",
+        "O‘tkazgichning qarshiligi",
+        "Zanjirdagi zaryad miqdori"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish birlik musbat zaryadni ko‘chirishdagi ishga teng fizik kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#8c864a09"
+    },
+    {
+      "q": "Kuchlanish qanday harf bilan belgilanadi?",
+      "v": [
+        "U",
+        "I",
+        "R",
+        "q"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish U harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#8cdd1afc"
+    },
+    {
+      "q": "Kuchlanish qanday kattalik?",
+      "v": [
+        "Skalyar kattalik",
+        "Vektor kattalik",
+        "O‘lchovsiz kattalik",
+        "Periodik kattalik"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish skalyar kattalikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#8a678d29"
+    },
+    {
+      "q": "Kuchlanishni aniqlash formulasi qaysi?",
+      "v": [
+        "U = A/q",
+        "U = q/t",
+        "U = I·t",
+        "U = R·S"
+      ],
+      "t": 0,
+      "izoh": "U = A/q, bunda A — q zaryad o‘tganda bajarilgan ish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#c77a01b2"
+    },
+    {
+      "q": "SI sistemasida kuchlanish birligi nima?",
+      "v": [
+        "Volt",
+        "Amper",
+        "Kulon",
+        "Om"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish birligi — volt (V).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#8ac42eca"
+    },
+    {
+      "q": "Volt birligi kim sharafiga qabul qilingan?",
+      "v": [
+        "Alessandro Volta",
+        "Andre Mari Amper",
+        "Georg Simon Om",
+        "Charlz Kulon"
+      ],
+      "t": 0,
+      "izoh": "Galvanik elementni yaratgan A. Volta sharafiga volt qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#60560276"
+    },
+    {
+      "q": "1 V kuchlanish qanday ta’riflanadi?",
+      "v": [
+        "Zanjir qismidan 1 kulon zaryad o‘tganda 1 joul ish bajariladigan kuchlanish",
+        "1 s da 1 C zaryad o‘tgandagi tok",
+        "1 m uzunlikdagi qarshilik",
+        "1 A tok hosil qiluvchi kuch"
+      ],
+      "t": 0,
+      "izoh": "1 V = 1 J / 1 C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#8a486a7a"
+    },
+    {
+      "q": "Elektr maydonning bajargan ishini aniqlash formulasi qaysi?",
+      "v": [
+        "A = q·U",
+        "A = U/q",
+        "A = I·R",
+        "A = q/t"
+      ],
+      "t": 0,
+      "izoh": "A = qU.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#09eb5fdd"
+    },
+    {
+      "q": "Zanjir qismida kuchlanish 3 V bo‘lsa, 0,5 C zaryad o‘tganda qancha ish bajariladi?",
+      "v": [
+        "1,5 J",
+        "6 J",
+        "3,5 J",
+        "0,17 J"
+      ],
+      "t": 0,
+      "izoh": "A = qU = 0,5·3 = 1,5 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#b18a179c"
+    },
+    {
+      "q": "1 millivolt nechaga teng?",
+      "v": [
+        "0,001 V",
+        "1000 V",
+        "0,1 V",
+        "100 V"
+      ],
+      "t": 0,
+      "izoh": "1 mV = 0,001 V = 10⁻³ V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#86e50371"
+    },
+    {
+      "q": "1 kilovolt nechaga teng?",
+      "v": [
+        "1000 V",
+        "100 V",
+        "0,001 V",
+        "1 000 000 V"
+      ],
+      "t": 0,
+      "izoh": "1 kV = 1000 V = 10³ V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#9e95081e"
+    },
+    {
+      "q": "1 megavolt (MV) necha voltga teng?",
+      "v": [
+        "1 000 000 V",
+        "1000 V",
+        "100 000 V",
+        "10 V"
+      ],
+      "t": 0,
+      "izoh": "1 MV = 1 000 000 V = 10⁶ V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#891402b2"
+    },
+    {
+      "q": "Quruq galvanik elementning kuchlanishi qancha?",
+      "v": [
+        "1,5 V",
+        "12 V",
+        "220 V",
+        "4,5 V"
+      ],
+      "t": 0,
+      "izoh": "Quruq galvanik element kuchlanishi 1,5 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#e0e1a326"
+    },
+    {
+      "q": "Avtomobil akkumulyatorining kuchlanishi qancha?",
+      "v": [
+        "12 V",
+        "1,5 V",
+        "220 V",
+        "500 kV"
+      ],
+      "t": 0,
+      "izoh": "Avtomobil akkumulyatori 12 V da ishlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#75814842"
+    },
+    {
+      "q": "Xonadonlardagi elektr tarmog‘i kuchlanishi qancha?",
+      "v": [
+        "220 V",
+        "12 V",
+        "1,5 V",
+        "500 kV"
+      ],
+      "t": 0,
+      "izoh": "Xonadon elektr tarmog‘i 220 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#b965f979"
+    },
+    {
+      "q": "Katta tok uzatish liniyasidagi kuchlanish qanday oraliqda bo‘ladi?",
+      "v": [
+        "5–500 kV",
+        "1,5–12 V",
+        "220–380 V",
+        "1–10 mV"
+      ],
+      "t": 0,
+      "izoh": "Katta tok uzatish liniyasi 5–500 kV.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#e455567f"
+    },
+    {
+      "q": "Kuchlanish qanday asbob bilan o‘lchanadi?",
+      "v": [
+        "Voltmetr",
+        "Ampermetr",
+        "Ommetr",
+        "Elektrometr"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish voltmetr yordamida o‘lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#68922d37"
+    },
+    {
+      "q": "Voltmetr zanjirga qanday ulanadi?",
+      "v": [
+        "Parallel",
+        "Ketma-ket",
+        "Aralash",
+        "Ulanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Voltmetr kuchlanishi o‘lchanadigan iste’molchiga parallel ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#cdb3e796"
+    },
+    {
+      "q": "Voltmetrning “+” qisqichi tok manbaining qaysi qutbiga ulanadi?",
+      "v": [
+        "Musbat qutbiga",
+        "Manfiy qutbiga",
+        "Istalgan qutbiga",
+        "Yerga"
+      ],
+      "t": 0,
+      "izoh": "“+” qisqich tok manbaining musbat qutbiga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#d87f5d5d"
+    },
+    {
+      "q": "Kuchlanish o‘tkazgichning qaralayotgan qismida nimani tavsiflaydi?",
+      "v": [
+        "Elektr maydonning ish bajarish qobiliyatini",
+        "Tokning tezligini",
+        "O‘tkazgichning uzunligini",
+        "Zaryadning massasini"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish elektr maydonning ish bajarish qobiliyatini tavsiflaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#07c00808"
+    },
+    {
+      "q": "Elektronlar zanjirda qanday yo‘nalishda harakat qiladi?",
+      "v": [
+        "Manfiy qutbdan musbat qutbga (tok yo‘nalishiga qarama-qarshi)",
+        "Musbat qutbdan manfiy qutbga",
+        "Yo‘nalishsiz",
+        "Doiraviy"
+      ],
+      "t": 0,
+      "izoh": "Elektronlar manfiy qutbdan musbat qutbga — tok yo‘nalishiga qarama-qarshi harakat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#865e2494"
+    },
+    {
+      "q": "Elektr maydon yo‘nalishi uchun nima qabul qilingan?",
+      "v": [
+        "Musbat zaryadning harakat yo‘nalishi",
+        "Elektronlarning harakat yo‘nalishi",
+        "Magnit strelkasi yo‘nalishi",
+        "O‘tkazgichning uzunligi"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydon yo‘nalishi uchun musbat zaryadning harakat yo‘nalishi qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#0ce84879"
+    },
+    {
+      "q": "3 V kuchlanish olish uchun 1,5 V li nechta galvanik elementni ketma-ket ulash kerak?",
+      "v": [
+        "Ikkita",
+        "Bitta",
+        "Uchta",
+        "Oltita"
+      ],
+      "t": 0,
+      "izoh": "Ikkita 1,5 V element ketma-ket ulansa 3 V hosil bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#b6bb86c8"
+    },
+    {
+      "q": "9 V da ishlaydigan magnitofon uchun 1,5 V li nechta galvanik element kerak?",
+      "v": [
+        "Oltita",
+        "Uchta",
+        "To‘rtta",
+        "To‘qqizta"
+      ],
+      "t": 0,
+      "izoh": "9 V uchun 1,5 V dan oltita element ketma-ket ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#a0ad619b"
+    },
+    {
+      "q": "Kuchlanishni oshirish uchun tok manbalarini qanday ulash kerak?",
+      "v": [
+        "Ketma-ket",
+        "Parallel",
+        "Aralash",
+        "Kalit orqali uzish"
+      ],
+      "t": 0,
+      "izoh": "Galvanik elementlar ketma-ket ulanganda kuchlanish ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#dd2a2c9d"
+    },
+    {
+      "q": "Lampochkaga parallel ulangan voltmetr 1,5 V ni ko‘rsatmoqda. Lampochkadan 3,2 C zaryad o‘tganda qancha ish bajariladi?",
+      "v": [
+        "4,8 J",
+        "2,1 J",
+        "1,5 J",
+        "3,2 J"
+      ],
+      "t": 0,
+      "izoh": "A = qU = 3,2·1,5 = 4,8 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#4b7161f1"
+    },
+    {
+      "q": "Elektron zaryadining moduli qanchaga teng?",
+      "v": [
+        "1,6·10⁻¹⁹ C",
+        "9,1·10⁻³¹ C",
+        "1 C",
+        "6,02·10²³ C"
+      ],
+      "t": 0,
+      "izoh": "|e| = 1,6·10⁻¹⁹ C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#bf3cd5a2"
+    },
+    {
+      "q": "U = A/q formulasidagi A nima?",
+      "v": [
+        "Zanjirning q zaryad o‘tganda bajarilgan ishi",
+        "Tok kuchi",
+        "Qarshilik",
+        "Vaqt"
+      ],
+      "t": 0,
+      "izoh": "A — zanjirda q zaryad o‘tganda bajarilgan ish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#49245c74"
+    },
+    {
+      "q": "Kichik kuchlanishda qanday birlik qo‘llanadi?",
+      "v": [
+        "Millivolt",
+        "Kilovolt",
+        "Megavolt",
+        "Amper"
+      ],
+      "t": 0,
+      "izoh": "Kichik kuchlanishda millivolt (mV) qo‘llanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#fe4338f2"
+    },
+    {
+      "q": "Yuqori kuchlanishda qanday karrali birlik qo‘llanadi?",
+      "v": [
+        "Kilovolt",
+        "Millivolt",
+        "Amper",
+        "Kulon"
+      ],
+      "t": 0,
+      "izoh": "Yuqori kuchlanishda kilovolt (kV) qo‘llanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#b51feedf"
+    },
+    {
+      "q": "Elektr tokining ish bajara olish qobiliyatini tavsiflash uchun qanday kattalik kiritiladi?",
+      "v": [
+        "Elektr kuchlanish",
+        "Tok kuchi",
+        "Qarshilik",
+        "Zaryad"
+      ],
+      "t": 0,
+      "izoh": "Tokning ish bajara olish qobiliyatini tavsiflash uchun kuchlanish kiritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#d8b83e04"
+    },
+    {
+      "q": "Elektr zanjirdagi lampochkadan 9 C zaryad o‘tib, 36 J ish bajarildi. Lampochkadagi kuchlanish qancha?",
+      "v": [
+        "4 V",
+        "324 V",
+        "0,25 V",
+        "45 V"
+      ],
+      "t": 0,
+      "izoh": "U = A/q = 36/9 = 4 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m48-elektr-kuchlanish#dc1a812d"
+    }
+  ]
+}

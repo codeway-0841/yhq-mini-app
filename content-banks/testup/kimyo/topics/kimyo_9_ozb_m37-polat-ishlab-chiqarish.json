@@ -1,0 +1,576 @@
+{
+  "nom": "37-mavzu. Po'lat ishlab chiqarish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Po'lat olish jarayonining asosiy mohiyati nimadan iborat?",
+      "v": [
+        "Cho'yan tarkibidagi uglerodni kamaytirish hamda oltingugurt, fosfor, kremniy, marganeslarni iloji boricha yo'qotish",
+        "Cho'yan tarkibiga uglerod qo'shish",
+        "Temirni to'liq kislorodda yoqib yuborish",
+        "Cho'yanni suv bilan sovutish"
+      ],
+      "t": 0,
+      "izoh": "Po'lat olishning mohiyati uglerodni kamaytirish va zararli qo'shimchalarni yo'qotishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#d97ee8e6"
+    },
+    {
+      "q": "Po'lat olishda temirning ma'lum qismi havo kislorodi yordamida nimaga oksidlanadi?",
+      "v": [
+        "Temir (II)-oksidiga",
+        "Temir (III)-oksidiga",
+        "Temir karbidga",
+        "Temir sulfidga"
+      ],
+      "t": 0,
+      "izoh": "2Fe + O2 = 2FeO + Q — temir (II)-oksidi hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#6bb408a7"
+    },
+    {
+      "q": "Po'lat olishda 2Fe + O2 = 2FeO + Q reaksiyasidan keyingi jarayon qanday davom etadi?",
+      "v": [
+        "Hosil bo'lgan FeO cho'yan tarkibidagi qo'shimchalarni oksidlaydi",
+        "FeO darhol cho'yan bilan aralashib qotadi",
+        "FeO suv bilan ta'sirlashib gidroksidga aylanadi",
+        "FeO to'liq bug'lanib uchib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Hosil bo'lgan temir (II)-oksidi yordamida cho'yan tarkibidagi qo'shimchalar oksidlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#5d6e9bc9"
+    },
+    {
+      "q": "Cho'yan tarkibidagi fosforni oksidlaydigan reaksiya tenglamasi qaysi?",
+      "v": [
+        "5FeO + 2P = 5Fe + P2O5 + Q",
+        "FeO + C = Fe + CO + Q",
+        "2Fe + O2 = 2FeO + Q",
+        "FeS + CaO = CaS + FeO"
+      ],
+      "t": 0,
+      "izoh": "Fosfor 5FeO + 2P = 5Fe + P2O5 + Q reaksiyasida oksidlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#6f45f31d"
+    },
+    {
+      "q": "Po'lat olishda uglerod qanday ko'rinishda chiqarib yuboriladi?",
+      "v": [
+        "CO va CO2 gazlari ko'rinishida",
+        "Grafit changi ko'rinishida",
+        "Koks qoldig'i ko'rinishida",
+        "Ohaktosh cho'kmasi ko'rinishida"
+      ],
+      "t": 0,
+      "izoh": "Uglerod CO va CO2 gazlari ko'rinishida chiqarib yuboriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#11ed2865"
+    },
+    {
+      "q": "Po'lat olishda kremniy, marganes va boshqa metallarning oksidlari qayerga o'tadi?",
+      "v": [
+        "Shlak tarkibiga",
+        "Po'lat tarkibiga",
+        "Atmosferaga",
+        "Suvga"
+      ],
+      "t": 0,
+      "izoh": "Kremniy, marganes va boshqa metallarning oksidlari shlak tarkibiga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#914fd075"
+    },
+    {
+      "q": "Cho'yan tarkibidagi oltingugurt qanday ko'rinishda bo'ladi va qanday modda yordamida yo'qotiladi?",
+      "v": [
+        "FeS ko'rinishda bo'ladi, CaO yordamida CaS shakliga o'tadi",
+        "SO2 ko'rinishda bo'ladi, suv yordamida yuviladi",
+        "S ko'rinishda bo'ladi, kislorodda yoqiladi",
+        "H2S ko'rinishda bo'ladi, ohak suvi bilan cho'ktiriladi"
+      ],
+      "t": 0,
+      "izoh": "Oltingugurt FeS ko'rinishda bo'lib, CaO yordamida CaS ga aylanadi: FeS + CaO = CaS + FeO.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#fa90ff26"
+    },
+    {
+      "q": "Cho'yan tarkibidagi fosfor qanday birikma shaklida shlak tarkibiga o'tadi?",
+      "v": [
+        "Ca3(PO4)2 shaklida",
+        "P2O5 shaklida",
+        "Fe3P shaklida",
+        "H3PO4 shaklida"
+      ],
+      "t": 0,
+      "izoh": "3CaO + P2O5 = Ca3(PO4)2 reaksiyasida hosil bo'lgan kalsiy fosfat shaklida shlakka o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#1c7cad70"
+    },
+    {
+      "q": "To'yingan cho'yandan po'lat olish qanday pechlarda amalga oshiriladi?",
+      "v": [
+        "Kislorod konvertori, marten pechi yoki elektr yoyi pechlarida",
+        "Faqat domna pechlarida",
+        "Faqat muff pechlarida",
+        "Faqat elektr oqimli quvurlarda"
+      ],
+      "t": 0,
+      "izoh": "Po'lat olish kislorod konvertori, marten pechi yoki elektr yoyi pechlarida amalga oshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#7c9ba54d"
+    },
+    {
+      "q": "Bekobod metallurgiya zavodida po'lat olish uchun qanday usuldan foydalaniladi?",
+      "v": [
+        "Marten usulidan",
+        "Kislorod konvertori usulidan",
+        "Elektr yoyi usulidan",
+        "Domna usulidan"
+      ],
+      "t": 0,
+      "izoh": "Bekobod metallurgiya zavodida marten usulidan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#c67eccd5"
+    },
+    {
+      "q": "Po'lat — tarkibida qanchagacha uglerod bo'lgan temir qotishmasi?",
+      "v": [
+        "2 % gacha",
+        "2,14 % dan ko'p",
+        "4,5 % gacha",
+        "6 % gacha"
+      ],
+      "t": 0,
+      "izoh": "Po'lat — tarkibida 2 % gacha uglerod bo'lgan temir qotishmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#f5c5d01e"
+    },
+    {
+      "q": "Uglerodli po'lat tarkibida qanday miqdorlarda qo'shimchalar bo'ladi?",
+      "v": [
+        "2 % gacha C, 0,1—1 % gacha Mn, 0,4 % gacha Si, S va P",
+        "5 % gacha C, 5 % gacha Mn, 5 % gacha Si",
+        "0,01 % gacha C, 10 % gacha Mn, 10 % gacha Si",
+        "2,5 % gacha C, 2 % gacha Mn, 2 % gacha Si"
+      ],
+      "t": 0,
+      "izoh": "Uglerodli po'lat tarkibida 2 % gacha C, 0,1—1 % gacha Mn, 0,4 % gacha Si, S va P bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#b707926d"
+    },
+    {
+      "q": "Legirlangan po'lat qanday maqsadda tayyorlanadi?",
+      "v": [
+        "Po'latga alohida xossalar (mexanik puxtalik, korroziyaga bardoshlilik, elektr, magnit xossalari) berish uchun",
+        "Po'latning narxini arzonlashtirish uchun",
+        "Po'latni suvga eritish uchun",
+        "Po'lat rangini o'zgartirish uchun"
+      ],
+      "t": 0,
+      "izoh": "Legirlangan po'latga Cr, Ni, Mo, Al kabi qo'shimchalar alohida xossalar berish uchun qo'shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#75eac27f"
+    },
+    {
+      "q": "Legirlangan po'latlar tayyorlashda qanday legirlovchi qo'shimchalar qo'shiladi?",
+      "v": [
+        "Xrom, nikel, titan, molibden, vanadiy, volfram va boshqalar",
+        "Oltin, kumush, platina",
+        "Natriy, kaliy, litiy",
+        "Qo'rg'oshin, simob, kadmiy"
+      ],
+      "t": 0,
+      "izoh": "Legirlovchi qo'shimchalar: xrom, nikel, titan, molibden, vanadiy, volfram va boshqalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#cf165487"
+    },
+    {
+      "q": "Hamma po'latlarga umumiy bo'lgan xususiyatlar qaysi?",
+      "v": [
+        "Mustahkamlik va plastiklik",
+        "Mo'rtlilik va yengillik",
+        "Yumshoqlik va mo'rtlilik",
+        "Magnitlik va suyuqlik"
+      ],
+      "t": 0,
+      "izoh": "Hamma po'latlar mustahkamlik va plastiklik xususiyatlariga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#85d34656"
+    },
+    {
+      "q": "Po'latlarga qanday mexanik ishlovlar berish mumkin?",
+      "v": [
+        "Bolg'alash, yoyish, shtamplash, sim qilib cho'zish",
+        "Faqat eritish va quyish",
+        "Faqat kesish va sindirish",
+        "Faqat yoqish va bug'lash"
+      ],
+      "t": 0,
+      "izoh": "Po'latlarni bolg'alash, yoyish, shtamplash, sim qilib cho'zish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#d51fc720"
+    },
+    {
+      "q": "Po'latlar texnikada ishlatilish sohalariga qarab qanday turlarga bo'linadi?",
+      "v": [
+        "Konstruksion va asbob-uskunabop turlarga",
+        "Quyma va to'yingan turlarga",
+        "Oq va kulrang turlarga",
+        "Yumshoq va qattiq turlarga"
+      ],
+      "t": 0,
+      "izoh": "Po'latlar ishlatilish sohalariga qarab konstruksion, asbob-uskunabop turlarga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#1233a601"
+    },
+    {
+      "q": "Marten pechlarining xomashyosi nimadan iborat?",
+      "v": [
+        "Cho'yan va po'lat hamda cho'yan buyumlarining chiqindilari",
+        "Faqat temir rudasi va koks",
+        "Faqat ohaktosh va qum",
+        "Faqat tabiiy gaz va kislorod"
+      ],
+      "t": 0,
+      "izoh": "Marten pechlarining xomashyosi cho'yan va po'lat hamda cho'yan buyumlarining chiqindilaridir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#3ee2d40a"
+    },
+    {
+      "q": "Qadimiy mahalliy hunarmandlar po'lat xossalarini qanday yo'llar bilan o'zgartirishni bilishgan?",
+      "v": [
+        "Toblash, qizdirish, sementlash, azotlash, bolg'alash yo'llari bilan",
+        "Faqat suvga solib sovutish yo'li bilan",
+        "Faqat quyoshda qizdirish yo'li bilan",
+        "Faqat kislotalarga botirish yo'li bilan"
+      ],
+      "t": 0,
+      "izoh": "Po'latni toblash, qizdirish, sementlash, azotlash, bolg'alash yo'llari bilan xossalari o'zgarishi qadimdan ma'lum bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#2c748e6e"
+    },
+    {
+      "q": "Konstruksion po'latlar qanday xossalarga ega va qayerlarda ishlatiladi?",
+      "v": [
+        "Yuqori mustahkamlik va plastiklikka ega, mashina qismlari, konstruksion buyumlar va binolar qurishda ishlatiladi",
+        "Yuqori mo'rtlilikka ega, faqat quyma buyumlar uchun ishlatiladi",
+        "Past mustahkamlikka ega, faqat qadoqlash uchun ishlatiladi",
+        "Faqat magnit xossaga ega, elektr jihozlarida ishlatiladi"
+      ],
+      "t": 0,
+      "izoh": "Konstruksion po'latlar yuqori mustahkamlik va plastiklikka ega bo'lib, qurilish va mashinasozlikda ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#5f11e6bf"
+    },
+    {
+      "q": "Asbob-uskunabop po'latlar qanday xossalarga ega va qayerda ishlatiladi?",
+      "v": [
+        "Yuqori mustahkamlik va qattiqlikka ega, yemirilishga chidamli, kesuvchi va o'lchov asboblari, shtamplar tayyorlashda ishlatiladi",
+        "Yumshoq va egiluvchan, simlar tayyorlashda ishlatiladi",
+        "Yengil va g'ovak, qurilishda ishlatiladi",
+        "Past qattiqlikka ega, qadoqlashda ishlatiladi"
+      ],
+      "t": 0,
+      "izoh": "Asbob-uskunabop po'latlar yuqori mustahkamlik va qattiqlikka ega, kesuvchi va o'lchov asboblari tayyorlashda ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#b98ab1ee"
+    },
+    {
+      "q": "Tez kesuvchi po'latlar qanday sharoitda ham kesish xususiyatlarini saqlab qoladi?",
+      "v": [
+        "Katta tezlikda kesish jarayonida (600—700 °C) ham",
+        "Faqat xona haroratida",
+        "Faqat minus haroratlarda",
+        "Faqat suv ostida"
+      ],
+      "t": 0,
+      "izoh": "Tez kesuvchi po'latlar 600—700 °C da ham kesish xususiyatlarini saqlab qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#be38f828"
+    },
+    {
+      "q": "Alohida xossali po'latlar qanday muhitlarda korroziyaga chidamli bo'ladi?",
+      "v": [
+        "Yuqori haroratlarda nam atmosferada, kislotalar eritmalarida va boshqa korrozion muhitlarda",
+        "Faqat quruq havoda",
+        "Faqat distillangan suvda",
+        "Faqat vakuum muhitida"
+      ],
+      "t": 0,
+      "izoh": "Alohida xossali po'latlar yuqori haroratlarda nam atmosferada, kislotalar eritmalarida korroziyaga chidamli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#1bef2e6c"
+    },
+    {
+      "q": "Alohida xossali po'latlardan qanday buyumlar tayyorlanadi?",
+      "v": [
+        "Gaz quvurlari, reaktiv dvigatellar, raketa qurilmalari, magnit qurilmalari",
+        "Oshxona idishlari va mebellar",
+        "Qog'oz mahsulotlari va matolar",
+        "Dori vositalari va o'g'itlar"
+      ],
+      "t": 0,
+      "izoh": "Alohida xossali po'latlardan gaz quvurlari, reaktiv dvigatellar, raketa va magnit qurilmalari tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#f7f40120"
+    },
+    {
+      "q": "Cho'yan va po'lat ishlab chiqarish atrof-muhitni qanday ifloslantiradi?",
+      "v": [
+        "Chang, qurum, zaharli gazlar, shlaklar, oqova suvlar bilan",
+        "Faqat shovqin bilan",
+        "Faqat issiqlik bilan",
+        "Umuman ifloslantirmaydi"
+      ],
+      "t": 0,
+      "izoh": "Cho'yan-po'lat ishlab chiqarish atrof-muhitning chang, qurum, zaharli gazlar, shlaklar, oqova suvlar bilan ifloslanishiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#8ea0ca5a"
+    },
+    {
+      "q": "Rudalardan temir va po'latni to'g'ridan-to'g'ri olish usullarida qaytaruvchi sifatida nima ishlatiladi?",
+      "v": [
+        "Vodorod va tabiiy gaz",
+        "Koks va ko'mir",
+        "Ohaktosh va qum",
+        "Azot va argon"
+      ],
+      "t": 0,
+      "izoh": "Bu jarayonlarda koks o'rniga vodorod va tabiiy gaz kabi qaytaruvchilar ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#9662e866"
+    },
+    {
+      "q": "Rudalardan olinadigan g'ovak temir qanday xususiyatga ega?",
+      "v": [
+        "Juda toza bo'lib, uglerod va boshqa qo'shimchalar tutmaydi",
+        "Tarkibida 4,5 % uglerod bo'ladi",
+        "Juda mo'rt va qattiq bo'ladi",
+        "Faqat shlakdan iborat bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "G'ovak temir juda toza bo'lib, marten va elektr pechlarida po'lat olishda keng qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#9a2cfdca"
+    },
+    {
+      "q": "Namunaviy 1-misolda yuqori oksidi E2O5 bo'lgan elementning vodorodli birikmasi qanday formulaga ega?",
+      "v": [
+        "EH3",
+        "EH4",
+        "H2E",
+        "HE"
+      ],
+      "t": 0,
+      "izoh": "Yuqori oksidi E2O5 bo'lgan elementning vodorodli birikmasi EH3 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#a009cba1"
+    },
+    {
+      "q": "Namunaviy 1-misolda vodorodli birikmasi tarkibida 8,8 % vodorod bo'lgan element qaysi?",
+      "v": [
+        "Fosfor",
+        "Azot",
+        "Mishyak",
+        "Surma"
+      ],
+      "t": 0,
+      "izoh": "A(E) = 31 bo'lib, bu fosfor; P2O5 va PH3 (fosfin).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#40390e23"
+    },
+    {
+      "q": "Namunaviy 2-misolda 12,5 g mis kuporosi qizdirilganda massasi 4,5 g ga kamaydi. Mis kuporosining formulasi qanday?",
+      "v": [
+        "CuSO4.5H2O",
+        "CuSO4.3H2O",
+        "CuSO4.7H2O",
+        "CuSO4.H2O"
+      ],
+      "t": 0,
+      "izoh": "Hisoblash natijasida mis kuporosi formulasi CuSO4.5H2O ekanligi aniqlandi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#59e1eb97"
+    },
+    {
+      "q": "Namunaviy 3-misolda 2 g ikki valentli metall oksidini eritish uchun 18,25 g 20 % li xlorid kislota sarflangan. Bu qaysi element oksidi?",
+      "v": [
+        "Magniy oksidi",
+        "Kalsiy oksidi",
+        "Rux oksidi",
+        "Temir oksidi"
+      ],
+      "t": 0,
+      "izoh": "Hisoblashda A = 24 bo'lib, bu magniy — Mg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#f3ca3599"
+    },
+    {
+      "q": "Namunaviy 4-misolda noma'lum metall oksidi sulfat kislotada eritilganda 3,92 g metall sulfat va 0,54 g suv hosil bo'lgan. Metall oksidning formulasi qanday?",
+      "v": [
+        "Cr2O3 — xrom (III)-oksid",
+        "Fe2O3 — temir (III)-oksid",
+        "Al2O3 — alyuminiy oksid",
+        "Mn2O3 — marganes (III)-oksid"
+      ],
+      "t": 0,
+      "izoh": "Hisoblashda A = 51,9 bo'lib, bu 24 tartib raqamli xrom; javob Cr2O3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#68d1d97e"
+    },
+    {
+      "q": "Namunaviy 5-misolda berill minerali tarkibida 10,1 % aluminiy, 5 % berilliy, 31,3 % kremniy va kislorod bo'ladi. Mineralning formulasi qanday?",
+      "v": [
+        "Al2O3.3BeO.6SiO2",
+        "Al2O3.BeO.SiO2",
+        "Al2O3.2BeO.3SiO2",
+        "3Al2O3.BeO.2SiO2"
+      ],
+      "t": 0,
+      "izoh": "Atomlar nisbati 2:3:6:18 bo'lib, formula Al2O3.3BeO.6SiO2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#344fa587"
+    },
+    {
+      "q": "Namunaviy 6-misolda 10,8 g alyuminiydan alyuminiy oksid olish uchun qancha kislorod (modda miqdori) kerak?",
+      "v": [
+        "0,6 mol",
+        "0,3 mol",
+        "1,2 mol",
+        "0,15 mol"
+      ],
+      "t": 0,
+      "izoh": "2Al + 3O2 = 2Al2O3 bo'yicha 10,8/54 = 0,2 mol Al ga 0,3.2 = 0,6 mol O2 kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#51e3d56e"
+    },
+    {
+      "q": "Namunaviy 6-misolda 10,8 g alyuminiy bilan reaksiyaga kirishadigan kislorodning n.sh.dagi hajmi qancha?",
+      "v": [
+        "13,44 l",
+        "6,72 l",
+        "22,4 l",
+        "26,88 l"
+      ],
+      "t": 0,
+      "izoh": "V(O2) = 22,4 . 0,6 = 13,44 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#71904a79"
+    },
+    {
+      "q": "Namunaviy 7-misolda Na2CO3 va NaHCO3 ning 60 g aralashmasi qizdirilganda 2,7 g suv ajraldi. Aralashmadagi NaHCO3 massasi qancha?",
+      "v": [
+        "25,2 g",
+        "34,8 g",
+        "12,6 g",
+        "42 g"
+      ],
+      "t": 0,
+      "izoh": "2NaHCO3 = Na2CO3 + CO2 + H2O bo'yicha 2,7 g suv 25,2 g NaHCO3 dan hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#e2a1fdec"
+    },
+    {
+      "q": "Namunaviy 8-misolda 40 g 20 % li mis (II)-sulfat eritmasi temir bilan to'liq reaksiyaga kirishganda necha gramm mis hosil bo'ladi?",
+      "v": [
+        "3,2 g",
+        "6,4 g",
+        "1,6 g",
+        "8 g"
+      ],
+      "t": 0,
+      "izoh": "CuSO4 + Fe = FeSO4 + Cu bo'yicha 8 g CuSO4 dan 3,2 g Cu hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#cd9f68d7"
+    },
+    {
+      "q": "Namunaviy 9-misolda 2,8 g azot bilan reaksiyaga kirishib 14,8 g nitrid hosil qiladigan ikki valentli metall qaysi?",
+      "v": [
+        "Kalsiy",
+        "Magniy",
+        "Bariy",
+        "Rux"
+      ],
+      "t": 0,
+      "izoh": "Hisoblashda A = 40 bo'lib, bu metall kalsiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m37-polat-ishlab-chiqarish#d892884f"
+    }
+  ]
+}

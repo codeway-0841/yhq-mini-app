@@ -1,0 +1,1241 @@
+{
+  "nom": "Food & drink (Ovqat-ichimlik)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "\"Choy\" inglizcha qanday?",
+      "v": [
+        "coffee",
+        "tea",
+        "juice",
+        "milk"
+      ],
+      "t": 1,
+      "izoh": "Choy = tea.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#ec29a13b"
+    },
+    {
+      "q": "\"Qahva\" inglizcha qanday?",
+      "v": [
+        "tea",
+        "juice",
+        "coffee",
+        "water"
+      ],
+      "t": 2,
+      "izoh": "Qahva = coffee.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#ecc5bf93"
+    },
+    {
+      "q": "\"Tuxum\" inglizcha qanday?",
+      "v": [
+        "egg",
+        "cheese",
+        "meat",
+        "fish"
+      ],
+      "t": 0,
+      "izoh": "Tuxum = egg.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#883c6635"
+    },
+    {
+      "q": "\"Guruch\" inglizcha qanday?",
+      "v": [
+        "bread",
+        "rice",
+        "salt",
+        "sugar"
+      ],
+      "t": 1,
+      "izoh": "Guruch = rice.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#b8ab4b3d"
+    },
+    {
+      "q": "\"Go'sht\" inglizcha qanday?",
+      "v": [
+        "fish",
+        "chicken",
+        "meat",
+        "egg"
+      ],
+      "t": 2,
+      "izoh": "Go'sht = meat.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#5de925c4"
+    },
+    {
+      "q": "\"Baliq\" inglizcha qanday?",
+      "v": [
+        "fish",
+        "meat",
+        "chicken",
+        "cheese"
+      ],
+      "t": 0,
+      "izoh": "Baliq = fish.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#b0c12434"
+    },
+    {
+      "q": "\"Pishloq\" inglizcha qanday?",
+      "v": [
+        "butter",
+        "cheese",
+        "milk",
+        "egg"
+      ],
+      "t": 1,
+      "izoh": "Pishloq = cheese.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#2ef5f1d6"
+    },
+    {
+      "q": "\"Tovuq go'shti\" inglizcha qanday?",
+      "v": [
+        "fish",
+        "meat",
+        "chicken",
+        "soup"
+      ],
+      "t": 2,
+      "izoh": "Tovuq = chicken.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#ae82ec96"
+    },
+    {
+      "q": "\"Sharbat\" inglizcha qanday?",
+      "v": [
+        "juice",
+        "water",
+        "tea",
+        "milk"
+      ],
+      "t": 0,
+      "izoh": "Sharbat = juice.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#2c03d149"
+    },
+    {
+      "q": "\"Sho'rva\" inglizcha qanday?",
+      "v": [
+        "cake",
+        "soup",
+        "rice",
+        "bread"
+      ],
+      "t": 1,
+      "izoh": "Sho'rva = soup.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#0cfcd5e1"
+    },
+    {
+      "q": "\"Tort\" inglizcha qanday?",
+      "v": [
+        "bread",
+        "soup",
+        "cake",
+        "cheese"
+      ],
+      "t": 2,
+      "izoh": "Tort = cake.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#555c162f"
+    },
+    {
+      "q": "\"Shakar / qand\" inglizcha qanday?",
+      "v": [
+        "sugar",
+        "salt",
+        "rice",
+        "milk"
+      ],
+      "t": 0,
+      "izoh": "Shakar = sugar.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#508c96e4"
+    },
+    {
+      "q": "\"Tuz\" inglizcha qanday?",
+      "v": [
+        "sugar",
+        "salt",
+        "water",
+        "egg"
+      ],
+      "t": 1,
+      "izoh": "Tuz = salt.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#72ac515c"
+    },
+    {
+      "q": "Choose: I drink ___ in the morning.",
+      "v": [
+        "tea",
+        "bread",
+        "rice",
+        "meat"
+      ],
+      "t": 0,
+      "izoh": "Choy ichiladi – 'drink tea'. Non/guruch/go'sht ichilmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#de3e0c2c"
+    },
+    {
+      "q": "Choose: I eat ___ for breakfast.",
+      "v": [
+        "water",
+        "bread",
+        "juice",
+        "milk"
+      ],
+      "t": 1,
+      "izoh": "Non yeyiladi – 'eat bread'.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#406fca67"
+    },
+    {
+      "q": "Which is a drink?",
+      "v": [
+        "apple",
+        "juice",
+        "bread",
+        "cheese"
+      ],
+      "t": 1,
+      "izoh": "Juice – ichimlik (sharbat).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#7f4d9a70"
+    },
+    {
+      "q": "Which is a drink?",
+      "v": [
+        "rice",
+        "meat",
+        "water",
+        "egg"
+      ],
+      "t": 2,
+      "izoh": "Water – ichimlik (suv).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#7f4d9a70~2"
+    },
+    {
+      "q": "Which is a fruit?",
+      "v": [
+        "apple",
+        "bread",
+        "fish",
+        "soup"
+      ],
+      "t": 0,
+      "izoh": "Apple – meva (olma).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#4355bd2f"
+    },
+    {
+      "q": "Which do we drink?",
+      "v": [
+        "coffee",
+        "cake",
+        "salt",
+        "rice"
+      ],
+      "t": 0,
+      "izoh": "Coffee ichiladi (qahva).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#9120b0b9"
+    },
+    {
+      "q": "Find the odd one (not a drink):",
+      "v": [
+        "tea",
+        "milk",
+        "bread",
+        "juice"
+      ],
+      "t": 2,
+      "izoh": "Bread ichimlik emas, u ovqat (non).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#3a9bf3d0"
+    },
+    {
+      "q": "Find the odd one (not food):",
+      "v": [
+        "water",
+        "rice",
+        "meat",
+        "cheese"
+      ],
+      "t": 0,
+      "izoh": "Water – ichimlik, qolganlari ovqat.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#752a6e1c"
+    },
+    {
+      "q": "We put ___ on food to make it salty.",
+      "v": [
+        "sugar",
+        "salt",
+        "juice",
+        "milk"
+      ],
+      "t": 1,
+      "izoh": "Sho'r qilish uchun 'salt' (tuz) qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#8e67328c"
+    },
+    {
+      "q": "We put ___ in tea to make it sweet.",
+      "v": [
+        "salt",
+        "sugar",
+        "water",
+        "fish"
+      ],
+      "t": 1,
+      "izoh": "Shirin qilish uchun 'sugar' (shakar) qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#bbc200e2"
+    },
+    {
+      "q": "A cow gives us ___.",
+      "v": [
+        "milk",
+        "juice",
+        "tea",
+        "coffee"
+      ],
+      "t": 0,
+      "izoh": "Sigir 'milk' (sut) beradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#82c65735"
+    },
+    {
+      "q": "A hen gives us ___.",
+      "v": [
+        "cheese",
+        "egg",
+        "bread",
+        "rice"
+      ],
+      "t": 1,
+      "izoh": "Tovuq 'egg' (tuxum) beradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#cbaf23a3"
+    },
+    {
+      "q": "Find the error: 'I drink bread.'",
+      "v": [
+        "drink should be eat",
+        "bread should be water",
+        "I should be we",
+        "the sentence is correct"
+      ],
+      "t": 0,
+      "izoh": "Non yeyiladi: 'I eat bread'.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#f1f54488"
+    },
+    {
+      "q": "Find the error: 'I eat water.'",
+      "v": [
+        "eat should be drink",
+        "water should be rice",
+        "I should be he",
+        "the sentence is correct"
+      ],
+      "t": 0,
+      "izoh": "Suv ichiladi: 'I drink water'.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#37ab9258"
+    },
+    {
+      "q": "Which is correct?",
+      "v": [
+        "a glass of water",
+        "a glass of bread",
+        "a glass of rice",
+        "a glass of meat"
+      ],
+      "t": 0,
+      "izoh": "Stakanda suv bo'ladi: a glass of water.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#bc249275"
+    },
+    {
+      "q": "Which is correct?",
+      "v": [
+        "a cup of tea",
+        "a cup of fish",
+        "a cup of egg",
+        "a cup of meat"
+      ],
+      "t": 0,
+      "izoh": "Piyolada choy: a cup of tea.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#bc249275~2"
+    },
+    {
+      "q": "Which one is white and we drink it?",
+      "v": [
+        "milk",
+        "tea",
+        "coffee",
+        "juice"
+      ],
+      "t": 0,
+      "izoh": "Sut oq rangda va ichiladi – milk.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#f11647eb"
+    },
+    {
+      "q": "Which one swims in water and we eat it?",
+      "v": [
+        "chicken",
+        "fish",
+        "apple",
+        "bread"
+      ],
+      "t": 1,
+      "izoh": "Baliq suvda suzadi va yeyiladi – fish.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#aa656b95"
+    },
+    {
+      "q": "Which is sweet?",
+      "v": [
+        "salt",
+        "cake",
+        "fish",
+        "egg"
+      ],
+      "t": 1,
+      "izoh": "Tort shirin – cake. Salt sho'r.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#df86d054"
+    },
+    {
+      "q": "Choose: I like green ___ (a fruit).",
+      "v": [
+        "apple",
+        "water",
+        "meat",
+        "tea"
+      ],
+      "t": 0,
+      "izoh": "Yashil olma – green apple.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#cce8b05b"
+    },
+    {
+      "q": "Which word means \"choy\"?",
+      "v": [
+        "coffee",
+        "tea",
+        "milk",
+        "juice"
+      ],
+      "t": 1,
+      "izoh": "Choy = tea.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#8ea96755"
+    },
+    {
+      "q": "Which word means \"sho'rva\"?",
+      "v": [
+        "cake",
+        "soup",
+        "rice",
+        "cheese"
+      ],
+      "t": 1,
+      "izoh": "Sho'rva = soup.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#2514b368"
+    },
+    {
+      "q": "\"Non va sut\" inglizcha ___.",
+      "v": [
+        "bread and milk",
+        "rice and tea",
+        "egg and fish",
+        "meat and salt"
+      ],
+      "t": 0,
+      "izoh": "Non = bread, sut = milk.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#6af0f313"
+    },
+    {
+      "q": "We ___ water.",
+      "v": [
+        "drink",
+        "eat",
+        "walk",
+        "read"
+      ],
+      "t": 0,
+      "izoh": "Suvni 'drink' qilamiz (ichamiz), suyuqlik.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#b7ade34e"
+    },
+    {
+      "q": "We ___ bread.",
+      "v": [
+        "sleep",
+        "drink",
+        "drive",
+        "eat"
+      ],
+      "t": 3,
+      "izoh": "Nonni 'eat' qilamiz (yeymiz).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#9e3e0b9a"
+    },
+    {
+      "q": "She ___ rice for lunch.",
+      "v": [
+        "eat",
+        "jump",
+        "drink",
+        "sing"
+      ],
+      "t": 0,
+      "izoh": "Guruch - qattiq ovqat, 'eat' (yeymiz).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#6f9ee48c"
+    },
+    {
+      "q": "They ___ milk.",
+      "v": [
+        "read",
+        "play",
+        "drink",
+        "eat"
+      ],
+      "t": 2,
+      "izoh": "Sut - suyuqlik, 'drink'.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#b71e49e8"
+    },
+    {
+      "q": "He ___ an apple.",
+      "v": [
+        "drink",
+        "eat",
+        "write",
+        "swim"
+      ],
+      "t": 1,
+      "izoh": "Olma - meva, 'eat' (yeymiz).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#dca16011"
+    },
+    {
+      "q": "We ___ juice.",
+      "v": [
+        "walk",
+        "drink",
+        "eat",
+        "cook"
+      ],
+      "t": 1,
+      "izoh": "Sharbat - suyuqlik, 'drink'.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#187afebc"
+    },
+    {
+      "q": "I ___ soup with a spoon.",
+      "v": [
+        "run",
+        "eat",
+        "drink",
+        "draw"
+      ],
+      "t": 1,
+      "izoh": "Sho'rvani qoshiq bilan 'eat' qilamiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#2a54ed5f"
+    },
+    {
+      "q": "You ___ coffee.",
+      "v": [
+        "drink",
+        "eat",
+        "cut",
+        "read"
+      ],
+      "t": 0,
+      "izoh": "Qahva - suyuqlik, 'drink'.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#91546fdb"
+    },
+    {
+      "q": "We ___ meat.",
+      "v": [
+        "eat",
+        "sing",
+        "drink",
+        "fly"
+      ],
+      "t": 0,
+      "izoh": "Go'sht - 'eat' (yeymiz).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#f2297c80"
+    },
+    {
+      "q": "An apple is a ___.",
+      "v": [
+        "fruit",
+        "meat",
+        "vegetable",
+        "drink"
+      ],
+      "t": 0,
+      "izoh": "Olma - meva (fruit).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#2a9ebdb6"
+    },
+    {
+      "q": "A banana is a ___.",
+      "v": [
+        "meat",
+        "fruit",
+        "vegetable",
+        "drink"
+      ],
+      "t": 1,
+      "izoh": "Banan - meva (fruit).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#1276d414"
+    },
+    {
+      "q": "An orange is a ___.",
+      "v": [
+        "fruit",
+        "drink",
+        "meat",
+        "vegetable"
+      ],
+      "t": 0,
+      "izoh": "Apelsin - meva (fruit).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#2fe5d0f3"
+    },
+    {
+      "q": "Milk is a ___.",
+      "v": [
+        "vegetable",
+        "fruit",
+        "meat",
+        "drink"
+      ],
+      "t": 3,
+      "izoh": "Sut - ichimlik (drink).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#397f3b10"
+    },
+    {
+      "q": "Water is a ___.",
+      "v": [
+        "meat",
+        "vegetable",
+        "drink",
+        "fruit"
+      ],
+      "t": 2,
+      "izoh": "Suv - ichimlik (drink).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#9328eb1d"
+    },
+    {
+      "q": "Tea is a ___.",
+      "v": [
+        "fruit",
+        "vegetable",
+        "meat",
+        "drink"
+      ],
+      "t": 3,
+      "izoh": "Choy - ichimlik (drink).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#aaf63cf5"
+    },
+    {
+      "q": "A potato is a ___.",
+      "v": [
+        "fruit",
+        "vegetable",
+        "drink",
+        "meat"
+      ],
+      "t": 1,
+      "izoh": "Kartoshka - sabzavot (vegetable).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#c8901d23"
+    },
+    {
+      "q": "A tomato is ___ (color).",
+      "v": [
+        "black",
+        "red",
+        "blue",
+        "purple"
+      ],
+      "t": 1,
+      "izoh": "Pomidor odatda qizil (red).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#495cdfa1"
+    },
+    {
+      "q": "A banana is ___ (color).",
+      "v": [
+        "yellow",
+        "blue",
+        "red",
+        "green"
+      ],
+      "t": 0,
+      "izoh": "Banan sariq (yellow).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#3ec7f49c"
+    },
+    {
+      "q": "Milk is ___ (color).",
+      "v": [
+        "green",
+        "red",
+        "white",
+        "black"
+      ],
+      "t": 2,
+      "izoh": "Sut oq (white).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#e55bfea8"
+    },
+    {
+      "q": "'Non' in English is ___.",
+      "v": [
+        "rice",
+        "egg",
+        "milk",
+        "bread"
+      ],
+      "t": 3,
+      "izoh": "Non - bread.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#a0284a0a"
+    },
+    {
+      "q": "'Suv' in English is ___.",
+      "v": [
+        "water",
+        "juice",
+        "tea",
+        "milk"
+      ],
+      "t": 0,
+      "izoh": "Suv - water.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#f780ee15"
+    },
+    {
+      "q": "'Sut' in English is ___.",
+      "v": [
+        "water",
+        "coffee",
+        "tea",
+        "milk"
+      ],
+      "t": 3,
+      "izoh": "Sut - milk.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#c1db3dd6"
+    },
+    {
+      "q": "'Choy' in English is ___.",
+      "v": [
+        "milk",
+        "juice",
+        "coffee",
+        "tea"
+      ],
+      "t": 3,
+      "izoh": "Choy - tea.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#172d7fa4"
+    },
+    {
+      "q": "'Qahva' in English is ___.",
+      "v": [
+        "coffee",
+        "tea",
+        "milk",
+        "water"
+      ],
+      "t": 0,
+      "izoh": "Qahva - coffee.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#8b10a920"
+    },
+    {
+      "q": "'Tuxum' in English is ___.",
+      "v": [
+        "egg",
+        "bread",
+        "rice",
+        "meat"
+      ],
+      "t": 0,
+      "izoh": "Tuxum - egg.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#b4bcbd62"
+    },
+    {
+      "q": "'Guruch' in English is ___.",
+      "v": [
+        "meat",
+        "bread",
+        "rice",
+        "fish"
+      ],
+      "t": 2,
+      "izoh": "Guruch - rice.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#f6c09fc3"
+    },
+    {
+      "q": "'Go'sht' in English is ___.",
+      "v": [
+        "rice",
+        "meat",
+        "fish",
+        "bread"
+      ],
+      "t": 1,
+      "izoh": "Go'sht - meat.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#9256eb86"
+    },
+    {
+      "q": "'Baliq' in English is ___.",
+      "v": [
+        "fish",
+        "meat",
+        "egg",
+        "chicken"
+      ],
+      "t": 0,
+      "izoh": "Baliq - fish.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#074e39fc"
+    },
+    {
+      "q": "'Pishloq' in English is ___.",
+      "v": [
+        "cheese",
+        "milk",
+        "bread",
+        "butter"
+      ],
+      "t": 0,
+      "izoh": "Pishloq - cheese.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#0a4efbd6"
+    },
+    {
+      "q": "'Tovuq' in English is ___.",
+      "v": [
+        "egg",
+        "fish",
+        "meat",
+        "chicken"
+      ],
+      "t": 3,
+      "izoh": "Tovuq - chicken.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#ac51f324"
+    },
+    {
+      "q": "'Sharbat' in English is ___.",
+      "v": [
+        "juice",
+        "tea",
+        "milk",
+        "water"
+      ],
+      "t": 0,
+      "izoh": "Sharbat - juice.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#67fd0531"
+    },
+    {
+      "q": "'Sho'rva' in English is ___.",
+      "v": [
+        "rice",
+        "soup",
+        "meat",
+        "bread"
+      ],
+      "t": 1,
+      "izoh": "Sho'rva - soup.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#a3b8ecc0"
+    },
+    {
+      "q": "'Tort' in English is ___.",
+      "v": [
+        "cheese",
+        "sugar",
+        "cake",
+        "bread"
+      ],
+      "t": 2,
+      "izoh": "Tort - cake.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#d4cf1aa0"
+    },
+    {
+      "q": "'Shakar' in English is ___.",
+      "v": [
+        "salt",
+        "sugar",
+        "butter",
+        "cheese"
+      ],
+      "t": 1,
+      "izoh": "Shakar - sugar.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#99fdbf88"
+    },
+    {
+      "q": "'Tuz' in English is ___.",
+      "v": [
+        "butter",
+        "cheese",
+        "salt",
+        "sugar"
+      ],
+      "t": 2,
+      "izoh": "Tuz - salt.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#e60095c8"
+    },
+    {
+      "q": "'Olma' in English is ___.",
+      "v": [
+        "apple",
+        "orange",
+        "banana",
+        "potato"
+      ],
+      "t": 0,
+      "izoh": "Olma - apple.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#0a47b5fa"
+    },
+    {
+      "q": "'Banan' in English is ___.",
+      "v": [
+        "apple",
+        "orange",
+        "banana",
+        "tomato"
+      ],
+      "t": 2,
+      "izoh": "Banan - banana.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#019d9063"
+    },
+    {
+      "q": "'Apelsin' in English is ___.",
+      "v": [
+        "banana",
+        "orange",
+        "apple",
+        "potato"
+      ],
+      "t": 1,
+      "izoh": "Apelsin - orange.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#bee82faf"
+    },
+    {
+      "q": "'Kartoshka' in English is ___.",
+      "v": [
+        "apple",
+        "potato",
+        "tomato",
+        "banana"
+      ],
+      "t": 1,
+      "izoh": "Kartoshka - potato.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#f0056319"
+    },
+    {
+      "q": "'Pomidor' in English is ___.",
+      "v": [
+        "tomato",
+        "orange",
+        "potato",
+        "apple"
+      ],
+      "t": 0,
+      "izoh": "Pomidor - tomato.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#871bd995"
+    },
+    {
+      "q": "'Sariyog'' in English is ___.",
+      "v": [
+        "cheese",
+        "butter",
+        "milk",
+        "sugar"
+      ],
+      "t": 1,
+      "izoh": "Sariyog' - butter.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#b7406776"
+    },
+    {
+      "q": "Which one is a fruit? ___",
+      "v": [
+        "egg",
+        "potato",
+        "banana",
+        "salt"
+      ],
+      "t": 2,
+      "izoh": "Banan - meva (fruit).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#c4953b89"
+    },
+    {
+      "q": "Which one is a drink? ___",
+      "v": [
+        "rice",
+        "juice",
+        "bread",
+        "meat"
+      ],
+      "t": 1,
+      "izoh": "Sharbat - ichimlik (drink).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#b6687ec0"
+    },
+    {
+      "q": "Which one do we drink? ___",
+      "v": [
+        "coffee",
+        "cake",
+        "cheese",
+        "fish"
+      ],
+      "t": 0,
+      "izoh": "Qahvani ichamiz (drink).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#30273465"
+    },
+    {
+      "q": "Which one is sweet? ___",
+      "v": [
+        "meat",
+        "cake",
+        "soup",
+        "salt"
+      ],
+      "t": 1,
+      "izoh": "Tort shirin (sweet).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#7b6dc803"
+    },
+    {
+      "q": "A hen gives us an ___.",
+      "v": [
+        "orange",
+        "egg",
+        "banana",
+        "apple"
+      ],
+      "t": 1,
+      "izoh": "Tovuq bizga tuxum (egg) beradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#76bbac4f"
+    },
+    {
+      "q": "We put ___ on bread in the morning.",
+      "v": [
+        "fish",
+        "juice",
+        "butter",
+        "tea"
+      ],
+      "t": 2,
+      "izoh": "Nonga sariyog' (butter) suramiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#c33735ec"
+    },
+    {
+      "q": "A ___ swims in water and we eat it.",
+      "v": [
+        "fish",
+        "rice",
+        "bread",
+        "cake"
+      ],
+      "t": 0,
+      "izoh": "Baliq (fish) suvda suzadi.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#e1873f5d"
+    },
+    {
+      "q": "A ___ is a farm bird we eat.",
+      "v": [
+        "chicken",
+        "sugar",
+        "apple",
+        "milk"
+      ],
+      "t": 0,
+      "izoh": "Tovuq (chicken) - biz yeydigan qush.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#ba7f47e7"
+    },
+    {
+      "q": "For breakfast I eat an ___.",
+      "v": [
+        "tea",
+        "juice",
+        "water",
+        "egg"
+      ],
+      "t": 3,
+      "izoh": "Nonushtada tuxum (egg) yeyman.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#5a176820"
+    },
+    {
+      "q": "I am thirsty. I want some ___.",
+      "v": [
+        "rice",
+        "meat",
+        "bread",
+        "water"
+      ],
+      "t": 3,
+      "izoh": "Chanqadim - suv (water) kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#435f0434"
+    },
+    {
+      "q": "I am hungry. I want some ___.",
+      "v": [
+        "water",
+        "tea",
+        "juice",
+        "bread"
+      ],
+      "t": 3,
+      "izoh": "Ochman - non (bread) kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#210f53d1"
+    },
+    {
+      "q": "___ is white and we drink it.",
+      "v": [
+        "Meat",
+        "Rice",
+        "Cake",
+        "Milk"
+      ],
+      "t": 3,
+      "izoh": "Sut (milk) oq va ichiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#352e0db8"
+    },
+    {
+      "q": "We eat ___ with a fork and knife.",
+      "v": [
+        "water",
+        "juice",
+        "milk",
+        "meat"
+      ],
+      "t": 3,
+      "izoh": "Go'shtni (meat) vilka-pichoq bilan yeymiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#d39fb98f"
+    },
+    {
+      "q": "Rice is usually ___ (color).",
+      "v": [
+        "blue",
+        "black",
+        "white",
+        "red"
+      ],
+      "t": 2,
+      "izoh": "Guruch odatda oq (white).",
+      "qiy": "oson",
+      "id": "ing_a1_m28#65c797fd"
+    },
+    {
+      "q": "___ is a hot drink.",
+      "v": [
+        "Apple",
+        "Fish",
+        "Bread",
+        "Tea"
+      ],
+      "t": 3,
+      "izoh": "Choy (tea) - issiq ichimlik.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#6fa2261a"
+    },
+    {
+      "q": "A ___ is a yellow fruit; monkeys like it.",
+      "v": [
+        "banana",
+        "potato",
+        "egg",
+        "salt"
+      ],
+      "t": 0,
+      "izoh": "Banan (banana) - sariq meva.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#a9a88461"
+    },
+    {
+      "q": "We make cheese from ___.",
+      "v": [
+        "water",
+        "juice",
+        "milk",
+        "tea"
+      ],
+      "t": 2,
+      "izoh": "Pishloqni sutdan (milk) tayyorlaymiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#b11fd84d"
+    },
+    {
+      "q": "Which one is NOT a drink? ___",
+      "v": [
+        "milk",
+        "bread",
+        "tea",
+        "water"
+      ],
+      "t": 1,
+      "izoh": "Non (bread) - ichimlik emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m28#a76e2648"
+    }
+  ]
+}

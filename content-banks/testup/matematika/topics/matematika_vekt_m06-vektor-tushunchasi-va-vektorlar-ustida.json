@@ -1,0 +1,1609 @@
+{
+  "nom": "Vektor tushunchasi va vektorlar ustida amallar",
+  "bolim": "Koordinatalar va vektorlar",
+  "blok": "vekt",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Koordinata tekisligida a(6; −8) vektor berilgan. Ushbu vektorning uzunligini, ya'ni modulini hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "100",
+        "14",
+        "10",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "Vektor moduli |a| = √(x² + y²) formulasi bilan topiladi. Bu yerda x = 6, y = −8. Demak |a| = √(36 + 64) = √100 = 10. Koordinatalarni shunchaki qo'shib 14 deb olish keng tarqalgan xato, ildizni unutib 100 deb qoldirish ham xato. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-koordinatadan",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#2cb65a1c"
+    },
+    {
+      "q": "Fazoda b(2; −3; 6) vektor berilgan. Uning modulini hisoblab, natijani to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "11",
+        "7",
+        "49",
+        "√31"
+      ],
+      "t": 1,
+      "izoh": "Fazoviy vektorning moduli |b| = √(x² + y² + z²) ko'rinishida topiladi. Koordinatalarni qo'yamiz: |b| = √(2² + (−3)² + 6²) = √(4 + 9 + 36) = √49 = 7. Manfiy koordinata kvadratga ko'tarilganda musbat bo'lishini unutmaslik kerak. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-koordinatadan",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#0329468c"
+    },
+    {
+      "q": "Agar c vektorning koordinatalari c(−5; 12) bo'lsa, |c| ning qiymati nechaga teng bo'ladi? Hisoblab, javobni tanlang.",
+      "v": [
+        "7",
+        "17",
+        "169",
+        "13"
+      ],
+      "t": 3,
+      "izoh": "Modul formulasiga ko'ra |c| = √((−5)² + 12²) = √(25 + 144) = √169 = 13. Koordinatalarning ayirmasini olish (12 − 5 = 7) yoki yig'indisini olish (5 + 12 = 17) noto'g'ri, chunki modul Pifagor teoremasidan kelib chiqadi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-koordinatadan",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#29884496"
+    },
+    {
+      "q": "Fazoviy d(−1; 2; −2) vektorning uzunligini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "3",
+        "9",
+        "5",
+        "√7"
+      ],
+      "t": 0,
+      "izoh": "Har bir koordinatani kvadratga ko'taramiz: (−1)² = 1, 2² = 4, (−2)² = 4. Ularning yig'indisi 1 + 4 + 4 = 9 bo'ladi. Modul esa √9 = 3 ga teng. Ildizni unutsak 9 chiqadi; oxirgi koordinatani kvadratga ko'tarish o'rniga uning modulini olib yuborsak, 1 + 4 + 2 = 7 bo'lib √7 chiqadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-koordinatadan",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#7a81bbfe"
+    },
+    {
+      "q": "Ikkita vektor berilgan: a(7; −24) va b(−15; 8). Qaysi vektorning moduli kattaroq va ularning modullari farqi nechaga teng?",
+      "v": [
+        "a vektorning moduli katta, farq 8 ga teng",
+        "b vektorning moduli katta, farq 8 ga teng",
+        "a vektorning moduli katta, farq 6 ga teng",
+        "Ikkala vektorning modullari o'zaro teng"
+      ],
+      "t": 0,
+      "izoh": "Avval har bir modulni alohida hisoblaymiz: |a| = √(49 + 576) = √625 = 25. So'ng |b| = √(225 + 64) = √289 = 17. Demak a vektorning moduli kattaroq, farq esa 25 − 17 = 8 ga teng. Koordinatalardagi manfiy ishoralar modulga ta'sir qilmaydi. Javob: a vektorniki katta, farq 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-koordinatadan",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#982f2c66"
+    },
+    {
+      "q": "A(2; 3) va B(7; 15) nuqtalar berilgan. AB vektorning koordinatalarini toping va uning uzunligini hisoblab, javobni belgilang.",
+      "v": [
+        "17",
+        "169",
+        "13",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Vektor koordinatalari oxirgi nuqtadan boshlang'ich nuqta ayrilib topiladi: AB(7 − 2; 15 − 3) = AB(5; 12). Endi moduli |AB| = √(25 + 144) = √169 = 13. Faqat abssissalar farqini olib 5 deb javob berish yoki ildizni unutish tipik xatolardir. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-uchlar-orqali",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#57695b10"
+    },
+    {
+      "q": "Xaritada Samarqand shartli S(−3; 4) nuqtada, Buxoro esa B(3; −4) nuqtada belgilangan. SB vektorning uzunligi nechaga teng?",
+      "v": [
+        "14",
+        "10",
+        "0",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "SB vektorning koordinatalari: (3 − (−3); −4 − 4) = (6; −8). Uning moduli |SB| = √(36 + 64) = √100 = 10 ga teng. Nuqtalarning koordinatalarini ayirish o'rniga qo'shib yuborsak nol vektor chiqib qoladi, bu esa eng ko'p uchraydigan xato. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-uchlar-orqali",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#f7990d46"
+    },
+    {
+      "q": "Fazodagi M(1; −2; 3) va N(4; 2; 3) nuqtalar orasidagi MN vektorning uzunligini aniqlab, to'g'ri javobni ko'rsating.",
+      "v": [
+        "7",
+        "25",
+        "5",
+        "√34"
+      ],
+      "t": 2,
+      "izoh": "MN vektor koordinatalari: (4 − 1; 2 − (−2); 3 − 3) = (3; 4; 0). Uchinchi koordinata nolga teng, chunki ikkala nuqta bir xil balandlikda yotadi. Moduli |MN| = √(9 + 16 + 0) = √25 = 5. Applikatalar farqi o'rniga applikataning o'zini qo'yish √34 kabi xato natija beradi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-uchlar-orqali",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#2350f6a6"
+    },
+    {
+      "q": "Anvar futbol maydonining A(0; 0) burchagidan B(60; 80) burchagiga to'g'ri chiziq bo'ylab yugurdi, koordinatalar metrda berilgan. U necha metr yugurdi?",
+      "v": [
+        "140",
+        "20",
+        "10000",
+        "100"
+      ],
+      "t": 3,
+      "izoh": "Yugurish yo'li AB vektorning moduliga teng bo'ladi. AB(60; 80) bo'lgani uchun |AB| = √(3600 + 6400) = √10000 = 100 metr. Koordinatalarni qo'shib 140 deyish yoki ildizni unutib 10000 deb qoldirish tipik xatolar. Javob: 100 metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-uchlar-orqali",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#4c580f34"
+    },
+    {
+      "q": "Uchburchakning uchlari A(1; 1), B(5; 4) va C(1; 4) nuqtalarda joylashgan. Uning eng uzun tomoniga mos vektorning uzunligi nechaga teng?",
+      "v": [
+        "5",
+        "4",
+        "3",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Uchala tomonni alohida tekshiramiz. AB(4; 3) bo'lgani uchun |AB| = √(16 + 9) = 5. BC(−4; 0) bo'lgani uchun |BC| = 4. CA(0; −3) bo'lgani uchun |CA| = 3. Eng kattasi 5 ga teng. Perimetrni hisoblab 12 deb javob berish savol shartiga mos kelmaydi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-uchlar-orqali",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#a9b3225b"
+    },
+    {
+      "q": "Quyidagi vektorlardan qaysi biri a(4; −6) vektorga teng: b(−4; 6), c(6; −4), d(4; −6) yoki e(2; −3)?",
+      "v": [
+        "b(−4; 6)",
+        "c(6; −4)",
+        "d(4; −6)",
+        "e(2; −3)"
+      ],
+      "t": 2,
+      "izoh": "Ikki vektor teng bo'lishi uchun mos koordinatalari aynan teng bo'lishi shart. b vektorda ikkala ishora ham teskari, c vektorda koordinatalar o'rin almashgan, e vektor esa ikki marta qisqa. Faqat d(4; −6) berilgan vektor bilan aynan bir xil. Javob: d(4; −6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-vektorlar-aniqlash",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#84836a96"
+    },
+    {
+      "q": "ABCD parallelogrammda AB vektorga teng bo'lgan vektor qaysi biri ekanligini aniqlang va to'g'ri javobni belgilang.",
+      "v": [
+        "DC",
+        "CD",
+        "BC",
+        "AD"
+      ],
+      "t": 0,
+      "izoh": "Parallelogrammda qarama-qarshi tomonlar teng va parallel. AB tomon DC tomonga parallel hamda uzunligi teng, yo'nalishlari ham bir xil, chunki A dan B ga va D dan C ga bir tomonga qaraladi. CD esa qarama-qarshi yo'nalgan, ya'ni u AB ga emas, balki −AB ga teng. Javob: DC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-vektorlar-aniqlash",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#cfed9982"
+    },
+    {
+      "q": "Ikki vektorning teng deb hisoblanishi uchun qanday shartlar bir vaqtda bajarilishi kerakligini eng to'liq ifodalagan javobni tanlang.",
+      "v": [
+        "Uzunliklari teng bo'lsa yetarli",
+        "Yo'nalishlari bir xil bo'lsa yetarli",
+        "Ikkalasi bitta to'g'ri chiziqda yotishi kerak",
+        "Uzunliklari teng va yo'nalishlari bir xil bo'lishi kerak"
+      ],
+      "t": 3,
+      "izoh": "Vektor faqat uzunlik bilan emas, yo'nalish bilan ham aniqlanadi. Faqat uzunliklari teng bo'lgan vektorlar har xil tomonga qaragan bo'lishi mumkin, faqat yo'nalishlari mos vektorlar esa har xil uzunlikda bo'lishi mumkin. Shuning uchun ikkala shart birga talab qilinadi. Javob: uzunliklari teng va yo'nalishlari bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-vektorlar-aniqlash",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#4105b0d3"
+    },
+    {
+      "q": "Uchlari A(0; 0), B(3; 1), C(5; 4) va D(2; 3) bo'lgan to'rtburchakda AB va DC vektorlarni solishtiring. Qaysi xulosa to'g'ri?",
+      "v": [
+        "AB = DC, shuning uchun ABCD parallelogramm",
+        "AB va DC qarama-qarshi yo'nalgan vektorlar",
+        "AB ≠ DC, chunki ularning uzunliklari har xil",
+        "AB = 2·DC, chunki DC ikki marta qisqa"
+      ],
+      "t": 0,
+      "izoh": "AB vektor koordinatalari (3 − 0; 1 − 0) = (3; 1) ga teng. DC vektor koordinatalari (5 − 2; 4 − 3) = (3; 1) ga teng. Mos koordinatalar aynan bir xil, demak AB = DC. Qarama-qarshi tomonlari teng vektorlar bilan ifodalangan to'rtburchak parallelogramm bo'ladi. Javob: AB = DC, ABCD parallelogramm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-vektorlar-aniqlash",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#06f7cc5e"
+    },
+    {
+      "q": "A(1; 2), B(5; 7) va C(−3; 0) nuqtalar berilgan. AB vektorga teng bo'lgan CD vektorning D uchi qaysi koordinatalarga ega bo'ladi?",
+      "v": [
+        "D(1; 5)",
+        "D(−7; −5)",
+        "D(2; 7)",
+        "D(4; 5)"
+      ],
+      "t": 0,
+      "izoh": "Avval AB(5 − 1; 7 − 2) = AB(4; 5) topiladi. CD vektor unga teng bo'lishi uchun D nuqta C nuqtadan xuddi shu koordinatalarga siljitiladi: D(−3 + 4; 0 + 5) = D(1; 5). Qo'shish o'rniga ayirsak D(−7; −5) chiqadi, bu esa eng ko'p uchraydigan ishora xatosi. Javob: D(1; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-vektor-uchini-topish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#b6de9679"
+    },
+    {
+      "q": "AB vektor A(−2; 5) nuqtadan boshlanib B(4; 1) nuqtada tugaydi. Unga teng vektor C(0; −3) nuqtadan boshlansa, uning oxiri qayerda bo'ladi?",
+      "v": [
+        "D(−6; 1)",
+        "D(6; −7)",
+        "D(6; −4)",
+        "D(4; 1)"
+      ],
+      "t": 1,
+      "izoh": "AB vektorning koordinatalari (4 − (−2); 1 − 5) = (6; −4) ga teng. Teng vektorlarning koordinatalari bir xil bo'lgani uchun D nuqta C dan shu qadar siljiydi: D(0 + 6; −3 + (−4)) = D(6; −7). Faqat vektor koordinatalarini yozib qo'yish D(6; −4) kabi xatoga olib keladi. Javob: D(6; −7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-vektor-uchini-topish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#7fae5c1f"
+    },
+    {
+      "q": "MN vektorning koordinatalari (−5; 4) ga teng va u N(3; −1) nuqtada tugaydi. M nuqtaning koordinatalarini toping.",
+      "v": [
+        "M(−2; 3)",
+        "M(−8; 5)",
+        "M(8; −5)",
+        "M(5; −4)"
+      ],
+      "t": 2,
+      "izoh": "MN vektor N nuqta minus M nuqta sifatida hisoblanadi, demak M = N − MN. Abssissa uchun 3 − (−5) = 8, ordinata uchun −1 − 4 = −5. Shunday qilib M(8; −5). Ayirish o'rniga qo'shib yuborilsa M(−2; 3) chiqadi, bu esa yo'nalishni teskari tushunishdan kelib chiqadi. Javob: M(8; −5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-vektor-uchini-topish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#de3fe060"
+    },
+    {
+      "q": "Dizayner ekranda P(120; 60) nuqtadan Q(200; 150) nuqtaga siljish yaratdi. Xuddi shu siljish R(50; 40) nuqtaga qo'llanilsa, yangi nuqta qayerda bo'ladi?",
+      "v": [
+        "(250; 190)",
+        "(80; 90)",
+        "(−30; −50)",
+        "(130; 130)"
+      ],
+      "t": 3,
+      "izoh": "Siljish vektori PQ(200 − 120; 150 − 60) = PQ(80; 90) ga teng. Xuddi shu vektor R nuqtaga qo'llanilsa, yangi nuqta (50 + 80; 40 + 90) = (130; 130) bo'ladi. R va Q ni qo'shib yuborish (250; 190) natijani beradi, bu esa shartga mos kelmaydi. Javob: (130; 130).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-vektor-uchini-topish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#0f4bfe6a"
+    },
+    {
+      "q": "a(3; −5) va b(−7; 2) vektorlar berilgan. Ularning a + b yig'indisi qanday koordinatalarga ega bo'lishini aniqlang.",
+      "v": [
+        "(−4; −3)",
+        "(10; −7)",
+        "(−4; 3)",
+        "(−21; −10)"
+      ],
+      "t": 0,
+      "izoh": "Vektorlar qo'shilganda mos koordinatalar qo'shiladi. Abssissa uchun 3 + (−7) = −4, ordinata uchun −5 + 2 = −3. Demak a + b = (−4; −3). Ayirish natijasi (10; −7) bo'ladi, koordinatalarni ko'paytirish esa umuman qo'llanmaydigan amal. Javob: (−4; −3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinatada-qoshish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#0b9e2cdf"
+    },
+    {
+      "q": "Uchta vektor berilgan: p(2; 1), q(−3; 4) va r(5; −6). Ularning p + q + r yig'indisining koordinatalarini hisoblang.",
+      "v": [
+        "(10; 11)",
+        "(0; 3)",
+        "(4; −1)",
+        "(4; 11)"
+      ],
+      "t": 2,
+      "izoh": "Abssissalarni qo'shamiz: 2 + (−3) + 5 = 4. Ordinatalarni qo'shamiz: 1 + 4 + (−6) = −1. Demak yig'indi (4; −1) ga teng. Manfiy ishoralarni e'tiborsiz qoldirib hammasini musbat deb qo'shsak (10; 11) chiqadi, faqat oxirgi ordinatani musbat deb olsak (4; 11) chiqadi. Javob: (4; −1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinatada-qoshish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#ee590a75"
+    },
+    {
+      "q": "Koordinata tekisligida a(−6; 9) va b(6; −9) vektorlar berilgan. Ularning yig'indisi qanday vektor bo'ladi va uning moduli nechaga teng?",
+      "v": [
+        "Nol vektor, uning moduli 0 ga teng",
+        "(12; −18), moduli 6√13",
+        "(0; 18), moduli 18",
+        "(−12; 18), moduli 30"
+      ],
+      "t": 0,
+      "izoh": "Koordinatalarni qo'shamiz: −6 + 6 = 0 va 9 + (−9) = 0. Demak yig'indi (0; 0), ya'ni nol vektor bo'ladi va uning moduli 0 ga teng. Bu vektorlar qarama-qarshi, chunki biri ikkinchisining ishorasi teskari qilingani. Ayirish natijasini yozib qo'yish (−12; 18) kabi xatoga olib keladi. Javob: nol vektor, moduli 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinatada-qoshish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#a83eab09"
+    },
+    {
+      "q": "a(x; 4) va b(5; y) vektorlarning yig'indisi nol vektorga aylanishi uchun x va y qanday bo'lishi hamda x va y sonlarining yig'indisi nechaga teng bo'lishi kerak?",
+      "v": [
+        "x = 5, y = 4 va yig'indisi 9",
+        "x = −5, y = −4 va yig'indisi −9",
+        "x = −5, y = 4 va yig'indisi −1",
+        "x = 2, y = −1 va yig'indisi 1"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi nol vektor bo'lishi uchun har bir koordinata alohida nolga teng bo'lishi shart. Abssissadan x + 5 = 0, demak x = −5. Ordinatadan 4 + y = 0, demak y = −4. Ularning son sifatidagi yig'indisi −5 + (−4) = −9 ga teng. Ishorani unutib x = 5 va y = 4 deb olish tipik xato. Javob: x = −5, y = −4, yig'indisi −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinatada-qoshish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#44279596"
+    },
+    {
+      "q": "a(8; −3) va b(5; 6) vektorlar berilgan. a − b ayirmaning koordinatalarini toping va uning modulini hisoblang.",
+      "v": [
+        "(13; 3), moduli √178",
+        "(3; −9), moduli 3√10",
+        "(3; −9), moduli 12",
+        "(−3; 9), moduli 3√10"
+      ],
+      "t": 1,
+      "izoh": "Ayirishda mos koordinatalar ayriladi: 8 − 5 = 3 va −3 − 6 = −9. Demak a − b = (3; −9). Moduli |a − b| = √(9 + 81) = √90 = 3√10 bo'ladi. Ayirish o'rniga qo'shish (13; 3) natijani beradi, koordinatalarni oddiy qo'shish esa moduli 12 degan xato javobga olib keladi. Javob: (3; −9), moduli 3√10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinatada-ayirish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#f71aa77d"
+    },
+    {
+      "q": "b(−2; 7) va a(4; 1) vektorlar uchun b − a ayirmani hisoblang va uni to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "(6; −6)",
+        "(2; 8)",
+        "(−6; 6)",
+        "(−6; 8)"
+      ],
+      "t": 2,
+      "izoh": "Ayirmani topishda birinchi vektorning koordinatalaridan ikkinchisiniki ayriladi: −2 − 4 = −6 va 7 − 1 = 6. Demak b − a = (−6; 6). Ayirmani teskari tartibda olsak (6; −6) chiqadi, qo'shib yuborsak (2; 8) chiqadi. Javob: (−6; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinatada-ayirish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#fd8bf191"
+    },
+    {
+      "q": "Ikki samolyotning tezlik vektorlari v₁(220; 300) va v₂(100; 140) km/soat. Birinchi samolyotning ikkinchisiga nisbatan tezlik vektori moduli qancha?",
+      "v": [
+        "280",
+        "40",
+        "40000",
+        "200"
+      ],
+      "t": 3,
+      "izoh": "Nisbiy tezlik v₁ − v₂ ayirma bilan topiladi: (220 − 100; 300 − 140) = (120; 160). Uning moduli √(14400 + 25600) = √40000 = 200 km/soat. Koordinatalarni qo'shib 280 deb javob berish yoki ildizni unutib 40000 deb qoldirish tipik xatolardir. Javob: 200 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinatada-ayirish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#d064cf55"
+    },
+    {
+      "q": "Ikki vektor uchun a − b = (5; −5) va a + b = (13; 1) ekani ma'lum. a vektorning koordinatalarini aniqlang.",
+      "v": [
+        "(18; −4)",
+        "(9; −2)",
+        "(4; 3)",
+        "(8; 6)"
+      ],
+      "t": 1,
+      "izoh": "Ikki tenglikni qo'shsak, b vektor yo'qoladi: (a − b) + (a + b) = 2a. Demak 2a = (5 + 13; −5 + 1) = (18; −4). Ikkiga bo'lsak a = (9; −2) bo'ladi. Ikkiga bo'lishni unutib (18; −4) deb qoldirish eng ko'p uchraydigan xato, (4; 3) esa b vektorning javobi. Javob: (9; −2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinatada-ayirish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#800f65da"
+    },
+    {
+      "q": "a(−4; 7) vektor 3 soniga ko'paytirilganda hosil bo'ladigan vektorning koordinatalarini toping va javobni belgilang.",
+      "v": [
+        "(−12; 21)",
+        "(−1; 10)",
+        "(−12; 7)",
+        "(12; 21)"
+      ],
+      "t": 0,
+      "izoh": "Vektorni songa ko'paytirishda har bir koordinata o'sha songa ko'paytiriladi. Demak 3·(−4) = −12 va 3·7 = 21, ya'ni natija (−12; 21). Songa ko'paytirish o'rniga son qo'shib yuborilsa (−1; 10) chiqadi, faqat bitta koordinatani ko'paytirish esa (−12; 7) kabi xatoga olib keladi. Javob: (−12; 21).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "songa-kopaytirish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#6e583a92"
+    },
+    {
+      "q": "b(6; −9) vektor −2/3 soniga ko'paytirildi. Hosil bo'lgan yangi vektorning moduli nechaga teng bo'ladi?",
+      "v": [
+        "3√13",
+        "2√13",
+        "√13",
+        "78"
+      ],
+      "t": 1,
+      "izoh": "Avval berilgan vektor modulini topamiz: |b| = √(36 + 81) = √117 = 3√13. Vektorni k soniga ko'paytirganda modul |k| marta o'zgaradi, ya'ni 2/3 marta. Demak yangi modul (2/3)·3√13 = 2√13 ga teng. Ishora modulga ta'sir qilmaydi, chunki modul manfiy bo'lolmaydi. Javob: 2√13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "songa-kopaytirish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#fc0a83a8"
+    },
+    {
+      "q": "Do'kon egasi Dilnoza oyiga x(120; 200) dona ikki xil mahsulot sotadi. Kelasi yildan sotuvni 1,5 barobar oshirsa, yangi oylik sotuv vektori qanday bo'ladi?",
+      "v": [
+        "(121,5; 201,5)",
+        "(180; 200)",
+        "(180; 300)",
+        "(240; 400)"
+      ],
+      "t": 2,
+      "izoh": "Sotuvni 1,5 barobar oshirish vektorni 1,5 soniga ko'paytirish demakdir. Birinchi koordinata 1,5·120 = 180, ikkinchisi 1,5·200 = 300 bo'ladi. Demak yangi vektor (180; 300). Songa ko'paytirish o'rniga 1,5 ni qo'shib qo'yish yoki faqat bitta mahsulotni oshirish tipik xatolardir. Javob: (180; 300).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "songa-kopaytirish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#55f31509"
+    },
+    {
+      "q": "k soni uchun k·a vektor (−6; 15) ga teng bo'ladi, bunda a(2; −5). k sonining qiymatini toping.",
+      "v": [
+        "3",
+        "−1/3",
+        "−8",
+        "−3"
+      ],
+      "t": 3,
+      "izoh": "Har bir koordinatani solishtiramiz: 2k = −6 dan k = −3 kelib chiqadi. Tekshiramiz, ikkinchi koordinata uchun −5·(−3) = 15, ya'ni mos keladi. Ishorani hisobga olmasdan k = 3 deb olish natijani (6; −15) qiladi va shartga zid bo'ladi. Javob: k = −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "songa-kopaytirish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#1ad567b1"
+    },
+    {
+      "q": "a(3; −1) va b(−2; 4) vektorlar berilgan. 2a + 3b chiziqli kombinatsiyaning koordinatalarini hisoblab, to'g'ri javobni tanlang.",
+      "v": [
+        "(1; 3)",
+        "(0; 10)",
+        "(5; 5)",
+        "(12; −14)"
+      ],
+      "t": 1,
+      "izoh": "Avval har bir vektorni koeffitsientga ko'paytiramiz: 2a = (6; −2) va 3b = (−6; 12). So'ng ularni qo'shamiz: (6 + (−6); −2 + 12) = (0; 10). Koeffitsientlarni umuman hisobga olmaslik (1; 3) natijasini beradi, koeffitsientlarni almashtirib yuborish esa (5; 5) ni beradi. Javob: (0; 10).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-kombinatsiya",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#f835b61e"
+    },
+    {
+      "q": "Fazoda p(1; −2; 3) va q(4; 0; −1) vektorlar berilgan. 3p − 2q ifodaning koordinatalarini hisoblang va javobni belgilang.",
+      "v": [
+        "(11; −6; 7)",
+        "(−5; −6; 7)",
+        "(−5; −6; 11)",
+        "(5; 6; −11)"
+      ],
+      "t": 2,
+      "izoh": "Avval 3p = (3; −6; 9) va 2q = (8; 0; −2) topiladi. So'ng ayirma olinadi: (3 − 8; −6 − 0; 9 − (−2)) = (−5; −6; 11). Oxirgi koordinatada ikki minus qo'shishga aylanishini unutsak 7 chiqib qoladi, ayirish o'rniga qo'shsak (11; −6; 7) chiqadi. Javob: (−5; −6; 11).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-kombinatsiya",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#c8902ea6"
+    },
+    {
+      "q": "Jasur birinchi haftada t(4; 6) miqdorda koptok va forma sotdi, ikkinchi haftada esa uch barobar ko'p sotdi. Ikki haftalik jami sotuv vektori qanday?",
+      "v": [
+        "(16; 24)",
+        "(12; 18)",
+        "(8; 12)",
+        "(7; 9)"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi hafta sotuvi 3t = (12; 18) ga teng bo'ladi. Jami sotuv esa t + 3t = 4t, ya'ni (16; 24). Faqat ikkinchi haftani hisoblab (12; 18) deb javob berish yoki ikki barobar deb qabul qilib (8; 12) deyish tipik xatolardir. Javob: (16; 24).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-kombinatsiya",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#5c533e08"
+    },
+    {
+      "q": "a(2; 5) va b(−1; 3) vektorlar berilgan. m·a + b vektor Oy o'qiga parallel bo'lishi, ya'ni birinchi koordinatasi nolga aylanishi uchun m nechaga teng?",
+      "v": [
+        "2",
+        "−2",
+        "−0,5",
+        "0,5"
+      ],
+      "t": 3,
+      "izoh": "m·a + b vektorning birinchi koordinatasi 2m + (−1) = 2m − 1 ko'rinishida bo'ladi. Oy o'qiga parallel bo'lishi uchun bu ifoda nolga teng bo'lishi shart: 2m − 1 = 0. Bundan 2m = 1 va m = 0,5 kelib chiqadi. Ishorani chalkashtirib m = −0,5 deb olish keng tarqalgan xato. Javob: m = 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-kombinatsiya",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#f7ed4972"
+    },
+    {
+      "q": "Uchburchak qoidasidan foydalanib AB + BC yig'indi qaysi vektorga teng bo'lishini aniqlang va to'g'ri javobni tanlang.",
+      "v": [
+        "AC",
+        "CA",
+        "AB",
+        "BA"
+      ],
+      "t": 0,
+      "izoh": "Uchburchak qoidasiga ko'ra ikkinchi vektorning boshi birinchisining oxiriga qo'yiladi, yig'indi esa birinchi vektorning boshidan ikkinchisining oxirigacha yo'naladi. Bu yerda boshlanish A nuqtada, tugash esa C nuqtada, demak yig'indi AC ga teng. CA teskari yo'nalgan vektor bo'lgani uchun javob bo'la olmaydi. Javob: AC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-qoidasi",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#8b64c7da"
+    },
+    {
+      "q": "Ketma-ket qo'yilgan MN, NP va PQ vektorlarning yig'indisini bitta vektor ko'rinishida ifodalang va to'g'ri javobni tanlang.",
+      "v": [
+        "QM",
+        "MP",
+        "MQ",
+        "NQ"
+      ],
+      "t": 2,
+      "izoh": "Uchburchak qoidasi ketma-ket vektorlarga ham qo'llanadi: har bir vektorning oxiri keyingisining boshiga tutashadi. MN + NP = MP, so'ng MP + PQ = MQ hosil bo'ladi. Demak yig'indi boshlang'ich M nuqtadan oxirgi Q nuqtaga yo'nalgan MQ vektorga teng. Javob: MQ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-qoidasi",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#8da34e63"
+    },
+    {
+      "q": "Turist L lageridan A nuqtaga, so'ngra A dan B nuqtaga yurdi. Uning boshlang'ich va oxirgi holati orasidagi ko'chish vektori qaysi vektorga teng bo'ladi?",
+      "v": [
+        "LB",
+        "BL",
+        "AB",
+        "LA"
+      ],
+      "t": 0,
+      "izoh": "Ko'chish vektori bosib o'tilgan yo'lga emas, boshlang'ich va oxirgi nuqtalarga bog'liq. Ikki bosqichni vektor sifatida qo'shsak LA + AB hosil bo'ladi. Uchburchak qoidasiga ko'ra bu yig'indi LB ga teng. BL esa qaytish yo'nalishini bildirgani uchun javob bo'la olmaydi. Javob: LB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-qoidasi",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#e9d082f8"
+    },
+    {
+      "q": "Boshlari va oxirlari tutashmagan AB va CD vektorlarni uchburchak qoidasi bilan qo'shish uchun qanday yo'l tutiladi? To'g'ri tavsifni belgilang.",
+      "v": [
+        "CD ga teng bo'lgan va B nuqtadan boshlanuvchi vektor chizilib, so'ng uchburchak qoidasi qo'llanadi",
+        "AB va CD ni bevosita qo'shib, AD vektor hosil qilinadi",
+        "Yig'indi har doim AC vektorga teng bo'ladi",
+        "Bunday joylashgan vektorlarni umuman qo'shib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Vektorni o'ziga teng holda istalgan nuqtaga ko'chirish mumkin, chunki teng vektorlar uzunligi va yo'nalishi bilan aniqlanadi. Shuning uchun CD ga teng vektorni B nuqtadan chizamiz, uning oxirini E deb belgilaymiz. Endi AB + BE = AE bo'ladi va uchburchak qoidasi to'g'ridan-to'g'ri ishlaydi. Javob: CD ni B nuqtaga ko'chirib qo'shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-qoidasi",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#9a60b2fb"
+    },
+    {
+      "q": "ABCD parallelogrammda umumiy A uchidan chiquvchi AB va AD vektorlarning yig'indisi qaysi vektorni beradi? Parallelogramm qoidasidan foydalaning.",
+      "v": [
+        "AC",
+        "BD",
+        "DB",
+        "CA"
+      ],
+      "t": 0,
+      "izoh": "Parallelogramm qoidasiga ko'ra umumiy boshdan chiqqan ikki vektorning yig'indisi shu ikki vektor yasagan parallelogrammning umumiy uchdan chiquvchi diagonaliga teng. Bu yerda umumiy uch A, unga qarama-qarshi uch esa C. Demak AB + AD = AC. BD ikkinchi diagonal bo'lib, u ayirmaga mos keladi. Javob: AC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelogramm-qoidasi",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#db128dc3"
+    },
+    {
+      "q": "Vektorlarni qo'shishning parallelogramm qoidasi bilan uchburchak qoidasi orasidagi asosiy farqni to'g'ri ko'rsatgan javobni belgilang.",
+      "v": [
+        "Ikkalasida ham vektorlar ketma-ket qo'yiladi",
+        "Parallelogramm qoidasida vektorlar umumiy boshdan chiziladi, uchburchak qoidasida esa ketma-ket qo'yiladi",
+        "Parallelogramm qoidasi faqat teng vektorlar uchun ishlaydi",
+        "Uchburchak qoidasi faqat perpendikulyar vektorlar uchun ishlaydi"
+      ],
+      "t": 1,
+      "izoh": "Uchburchak qoidasida ikkinchi vektorning boshi birinchisining oxiriga qo'yiladi va yig'indi uchinchi tomon bo'ladi. Parallelogramm qoidasida esa ikkala vektor bitta nuqtadan chiziladi va yig'indi ular yasagan parallelogrammning diagonali bo'ladi. Ikkala usul bir xil natija beradi, farq faqat chizish tartibida. Javob: biri umumiy boshdan, ikkinchisi ketma-ket.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelogramm-qoidasi",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#3dd27534"
+    },
+    {
+      "q": "Qayiqqa ikki tomondan arqon bilan 30 N va 40 N kuchlar qo'yilgan bo'lib, ular o'zaro perpendikulyar. Natijaviy kuch necha nyutonga teng?",
+      "v": [
+        "70",
+        "10",
+        "50",
+        "2500"
+      ],
+      "t": 2,
+      "izoh": "Perpendikulyar kuchlar parallelogramm qoidasi bo'yicha qo'shilganda to'g'ri to'rtburchak hosil bo'ladi va uning diagonali natijaviy kuchni beradi. Pifagor teoremasiga ko'ra F = √(30² + 40²) = √(900 + 1600) = √2500 = 50 N. Kuchlarni oddiy qo'shib 70 N deb javob berish faqat bir xil yo'nalishdagi kuchlar uchun to'g'ri bo'ladi. Javob: 50 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelogramm-qoidasi",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#f258b30f"
+    },
+    {
+      "q": "ABCD parallelogrammning diagonallari O nuqtada kesishadi. AB va AD vektorlarning yig'indisi AO vektor orqali qanday ifodalanadi?",
+      "v": [
+        "AO",
+        "0,5·AO",
+        "4·AO",
+        "2·AO"
+      ],
+      "t": 3,
+      "izoh": "Parallelogramm qoidasiga ko'ra AB + AD = AC bo'ladi. Parallelogrammning diagonallari kesishish nuqtasida teng ikkiga bo'linadi, ya'ni O nuqta AC diagonalning o'rtasi. Demak AC = 2·AO. Shunday qilib AB + AD = 2·AO. Yig'indini AO ning o'ziga tenglashtirish diagonalning yarmini olib qo'yish xatosidir. Javob: 2·AO.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallelogramm-qoidasi",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#2d17ff43"
+    },
+    {
+      "q": "O nuqtadan chiquvchi OA va OB vektorlar berilgan. Ularning OA − OB ayirmasi qaysi vektorga teng bo'lishini aniqlang.",
+      "v": [
+        "AB",
+        "BA",
+        "OA",
+        "AO"
+      ],
+      "t": 1,
+      "izoh": "Bir nuqtadan chiquvchi ikki vektorning ayirmasi ayriluvchining oxiridan kamayuvchining oxiriga yo'nalgan vektorga teng. Bu yerda ayriluvchi OB, uning oxiri B, kamayuvchi OA ning oxiri esa A. Demak OA − OB = BA. Yo'nalishni teskari olib AB deb javob berish eng ko'p uchraydigan xato. Javob: BA.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirish-geometrik",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#41228a7c"
+    },
+    {
+      "q": "Uchburchakning A uchidan chiquvchi AB va AC vektorlari ma'lum bo'lsa, BC vektorni shu ikki vektor orqali qanday ifodalash mumkin?",
+      "v": [
+        "AB − AC",
+        "AB + AC",
+        "AC − AB",
+        "−AB − AC"
+      ],
+      "t": 2,
+      "izoh": "BC vektorni B dan C ga o'tish deb qaraymiz: BC = BA + AC. BA esa AB ga qarama-qarshi, ya'ni BA = −AB. Demak BC = −AB + AC = AC − AB. Ayirmani teskari tartibda yozib AB − AC deb olish CB vektorni beradi, bu esa boshqa vektor. Javob: AC − AB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirish-geometrik",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#55be6d10"
+    },
+    {
+      "q": "Dron A nuqtadan B nuqtaga uchdi. K kuzatuv markazi KA va KB vektorlarni o'lchaydi. Dronning AB ko'chish vektori ular orqali qanday ifodalanadi?",
+      "v": [
+        "KA − KB",
+        "KA + KB",
+        "−KA − KB",
+        "KB − KA"
+      ],
+      "t": 3,
+      "izoh": "AB vektorni K nuqta orqali yozamiz: AB = AK + KB. AK esa KA ga qarama-qarshi bo'lgani uchun AK = −KA. Demak AB = KB − KA. Bu bir nuqtadan chiquvchi vektorlar ayirmasining umumiy qoidasi bo'lib, unda oxirgi nuqta vektoridan boshlang'ich nuqta vektori ayriladi. Javob: KB − KA.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirish-geometrik",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#a665dd46"
+    },
+    {
+      "q": "AB − CB + CD ifodani soddalashtiring va uni bitta vektor ko'rinishida to'g'ri ifodalagan variantni belgilang.",
+      "v": [
+        "AD",
+        "DA",
+        "AC",
+        "BD"
+      ],
+      "t": 0,
+      "izoh": "Avval −CB ni BC ko'rinishida yozamiz, chunki qarama-qarshi vektorning ishorasi teskari. Shunda ifoda AB + BC + CD ko'rinishiga keladi. Ketma-ket vektorlarni qo'shsak AB + BC = AC, so'ng AC + CD = AD hosil bo'ladi. Demak butun ifoda AD ga teng. Javob: AD.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayirish-geometrik",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#84922838"
+    },
+    {
+      "q": "ABC uchburchakda AB, BC va CA vektorlarning yig'indisi nimaga teng bo'lishini aniqlang va javobingizni asoslang.",
+      "v": [
+        "Nol vektor",
+        "AC vektor",
+        "2·AB vektor",
+        "CA vektor"
+      ],
+      "t": 0,
+      "izoh": "Vektorlarni ketma-ket qo'shamiz: AB + BC = AC. So'ng AC + CA yig'indisini olamiz, bu esa A nuqtadan chiqib yana A nuqtaga qaytishni bildiradi. Boshlanish va tugash nuqtasi ustma-ust tushganda nol vektor hosil bo'ladi. Yopiq konturda vektorlar yig'indisi doim nolga teng. Javob: nol vektor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yopiq-kontur",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#e22561b4"
+    },
+    {
+      "q": "ABCD to'rtburchakda tomonlar bo'ylab ketma-ket olingan AB, BC, CD va DA vektorlar yig'indisining moduli nechaga teng bo'ladi?",
+      "v": [
+        "To'rtburchak perimetriga teng",
+        "0",
+        "AC diagonal uzunligiga teng",
+        "AB va CD uzunliklari yig'indisiga teng"
+      ],
+      "t": 1,
+      "izoh": "Vektorlarni ketma-ket qo'shsak A dan chiqib B, C, D orqali yana A ga qaytamiz. Yopiq kontur bo'ylab yurilganda yig'indi nol vektorga teng bo'ladi, uning moduli esa 0. Perimetr bosib o'tilgan yo'l uzunligi bo'lib, u vektorlar yig'indisining moduli emas, modullar yig'indisidir. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yopiq-kontur",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#16e94e50"
+    },
+    {
+      "q": "Muntazam ABCDEF olti burchakda AB, BC, CD, DE va EF vektorlarning yig'indisi qaysi vektorga teng bo'lishini toping.",
+      "v": [
+        "FA",
+        "0",
+        "AF",
+        "AE"
+      ],
+      "t": 2,
+      "izoh": "Vektorlar ketma-ket joylashgan, shuning uchun ular bosqichma-bosqich birlashtiriladi: AB + BC = AC, AC + CD = AD, AD + DE = AE, nihoyat AE + EF = AF. Yig'indi A boshlang'ich nuqtadan F oxirgi nuqtaga yo'nalgan. Agar FA vektor ham qo'shilganda edi, yig'indi nol bo'lardi. Javob: AF.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yopiq-kontur",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#17064867"
+    },
+    {
+      "q": "Yugurish yo'lakchasi to'rtburchak shaklida. Sportchi A dan B ga, B dan C ga, C dan D ga va D dan A ga yugurdi. Uning yo'li va ko'chishi haqida qaysi fikr to'g'ri?",
+      "v": [
+        "Yo'li ham, ko'chish vektori ham nolga teng",
+        "Yo'li nolga teng, ko'chish vektori esa perimetrga teng",
+        "Ikkalasi ham perimetrga teng",
+        "Yo'li perimetrga teng, ko'chish vektori esa nol vektor"
+      ],
+      "t": 3,
+      "izoh": "Bosib o'tilgan yo'l skalyar kattalik bo'lib, u barcha tomonlar uzunliklari yig'indisiga, ya'ni perimetrga teng. Ko'chish esa vektor kattalik va u faqat boshlang'ich hamda oxirgi nuqtaga bog'liq. Sportchi qaerdan chiqqan bo'lsa, o'sha yerga qaytgani uchun ko'chish nol vektorga teng. Javob: yo'li perimetrga, ko'chishi nol vektorga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yopiq-kontur",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#3fdff984"
+    },
+    {
+      "q": "Tekislikda a(1; 7) va b(5; −2) vektorlar berilgan. Ularning yig'indisi bo'lgan vektorning modulini hisoblang va javobni tanlang.",
+      "v": [
+        "11",
+        "√61",
+        "61",
+        "√11"
+      ],
+      "t": 1,
+      "izoh": "Avval yig'indini topamiz: a + b = (1 + 5; 7 + (−2)) = (6; 5). So'ng moduli hisoblanadi: √(36 + 25) = √61. Bu son to'liq kvadrat emas, shuning uchun ildiz ostida qoldiriladi. Koordinatalarni ildizsiz qo'shib 11 deyish yoki ildizni unutib 61 deb qoldirish tipik xatolardir. Javob: √61.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-yigindi-koordinatada",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#0e304c15"
+    },
+    {
+      "q": "a(4; −3) va b(−1; 4) vektorlar uchun |a| + |b| yig'indini hamda |a + b| qiymatini solishtiring. Qaysi munosabat o'rinli?",
+      "v": [
+        "|a| + |b| > |a + b|",
+        "|a| + |b| = |a + b|",
+        "|a| + |b| < |a + b|",
+        "Solishtirish uchun ma'lumot yetarli emas"
+      ],
+      "t": 0,
+      "izoh": "Modullarni hisoblaymiz: |a| = √(16 + 9) = 5 va |b| = √(1 + 16) = √17, ya'ni taxminan 4,12. Ularning yig'indisi taxminan 9,12 bo'ladi. Endi a + b = (3; 1) va |a + b| = √10, ya'ni taxminan 3,16. Demak modullar yig'indisi kattaroq, bu uchburchak tengsizligiga mos keladi. Javob: |a| + |b| > |a + b|.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-yigindi-koordinatada",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#ba992a8f"
+    },
+    {
+      "q": "a(−2; 6) va b(8; −1) vektorlar berilgan. Ularning ayirmasi bo'lgan vektorning modulini hisoblab, to'g'ri javobni belgilang.",
+      "v": [
+        "√61",
+        "149",
+        "√149",
+        "17"
+      ],
+      "t": 2,
+      "izoh": "Avval ayirmani topamiz: a − b = (−2 − 8; 6 − (−1)) = (−10; 7). So'ng modulni hisoblaymiz: √(100 + 49) = √149. Ayirish o'rniga qo'shib yuborilsa (6; 5) chiqadi va moduli √61 bo'lib qoladi. Javob: √149.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-yigindi-koordinatada",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#bd690b4f"
+    },
+    {
+      "q": "Bir jismga ikkita kuch qo'yilgan: F₁(10; 3) N va F₂(6; 9) N. Natijaviy kuch vektorining moduli necha nyutonga teng bo'ladi?",
+      "v": [
+        "28",
+        "400",
+        "4",
+        "20"
+      ],
+      "t": 3,
+      "izoh": "Kuchlar vektor sifatida koordinatalar bo'yicha qo'shiladi: (10 + 6; 3 + 9) = (16; 12). Natijaviy kuch moduli √(256 + 144) = √400 = 20 N ga teng. Koordinatalarni ildizsiz qo'shib 28 deyish yoki ildiz olishni unutib 400 deb qoldirish keng tarqalgan xatolardir. Javob: 20 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-yigindi-koordinatada",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#e260ee49"
+    },
+    {
+      "q": "a(3; 4) vektor bilan bir xil yo'nalgan birlik vektorning koordinatalarini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "(0,6; 0,8)",
+        "(0,8; 0,6)",
+        "(3; 4)",
+        "(0,3; 0,4)"
+      ],
+      "t": 0,
+      "izoh": "Birlik vektorni topish uchun berilgan vektor o'z moduliga bo'linadi. Avval |a| = √(9 + 16) = 5 hisoblanadi. So'ng har bir koordinata beshga bo'linadi: (3/5; 4/5) = (0,6; 0,8). Koordinatalarni o'nga bo'lish yoki o'rinlarini almashtirish tipik xatolardir. Javob: (0,6; 0,8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-vektor",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#9cc8435f"
+    },
+    {
+      "q": "b(−6; 8) vektorga qarama-qarshi yo'nalgan birlik vektorning koordinatalari qanday bo'ladi? Hisoblab, to'g'ri variantni tanlang.",
+      "v": [
+        "(−0,6; 0,8)",
+        "(0,6; −0,8)",
+        "(6; −8)",
+        "(−0,8; 0,6)"
+      ],
+      "t": 1,
+      "izoh": "Avval modulni topamiz: |b| = √(36 + 64) = √100 = 10. Bir xil yo'nalgan birlik vektor (−0,6; 0,8) bo'ladi. Qarama-qarshi yo'nalgani uchun ikkala koordinataning ishorasi teskari qilinadi va (0,6; −0,8) hosil bo'ladi. Faqat ishorani o'zgartirib, modulga bo'lishni unutish (6; −8) kabi xatoga olib keladi. Javob: (0,6; −0,8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-vektor",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#648d3746"
+    },
+    {
+      "q": "Birlik vektor deb qanday vektorga aytiladi va uni berilgan vektordan qanday amal bilan hosil qilish mumkin? To'g'ri ta'rifni tanlang.",
+      "v": [
+        "Koordinatalari birga teng vektor; koordinatalarni bir bilan almashtirish orqali topiladi",
+        "Uzunligi eng kichik vektor; koordinatalarni ikkiga bo'lish orqali topiladi",
+        "Moduli birga teng vektor; berilgan vektorni o'z moduliga bo'lish orqali topiladi",
+        "Boshi koordinata boshida yotgan vektor; parallel ko'chirish orqali topiladi"
+      ],
+      "t": 2,
+      "izoh": "Birlik vektorning ta'rifi uning uzunligiga bog'liq, koordinatalarining qiymatiga emas. Moduli 1 ga teng bo'lgan vektor birlik vektor deyiladi. Uni hosil qilish uchun berilgan vektor o'z moduliga bo'linadi, natijada yo'nalish saqlanadi, uzunlik esa birga aylanadi. Javob: moduli birga teng vektor, modulga bo'lish orqali topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-vektor",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#f86e0c3d"
+    },
+    {
+      "q": "Navigator qurilma harakat yo'nalishini v(−9; 12) vektor bilan ko'rsatmoqda. Ekranda faqat yo'nalishni bildiruvchi birlik vektor chizilsa, uning koordinatalari qanday bo'ladi?",
+      "v": [
+        "(−0,75; 1)",
+        "(0,6; −0,8)",
+        "(−1,2; 1,6)",
+        "(−0,6; 0,8)"
+      ],
+      "t": 3,
+      "izoh": "Modulni topamiz: |v| = √(81 + 144) = √225 = 15. Har bir koordinatani shu songa bo'lamiz: −9 : 15 = −0,6 va 12 : 15 = 0,8. Demak birlik vektor (−0,6; 0,8). Katta koordinataga bo'lish (−0,75; 1) natijasini beradi, modulni yarmiga olish esa (−1,2; 1,6) ga olib keladi. Javob: (−0,6; 0,8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-vektor",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#fc95e6c4"
+    },
+    {
+      "q": "M nuqta AB kesmaning o'rtasi bo'lsa, ixtiyoriy O nuqta uchun OM vektor OA va OB vektorlar orqali qanday ifodalanadi?",
+      "v": [
+        "1/2·(OA + OB)",
+        "OA + OB",
+        "1/2·(OB − OA)",
+        "2·(OA + OB)"
+      ],
+      "t": 0,
+      "izoh": "M nuqta o'rta bo'lgani uchun AM = MB bo'ladi. OM = OA + AM va OM = OB + BM tengliklarini qo'shsak, AM bilan BM qarama-qarshi bo'lgani uchun ular yo'qoladi va 2·OM = OA + OB hosil bo'ladi. Ikkiga bo'lsak OM = 1/2·(OA + OB). Ayirma varianti esa 1/2·(OB − OA) = 1/2·AB bo'lib, u AM vektorni beradi, OM vektorni emas. Javob: 1/2·(OA + OB).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-nuqta-vektor",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#74ebdb46"
+    },
+    {
+      "q": "A(−2; 6) va B(8; −2) nuqtalar berilgan. AB kesmaning o'rtasi C nuqta bo'lsa, OC vektorning koordinatalarini toping, bunda O koordinata boshi.",
+      "v": [
+        "(6; 4)",
+        "(3; 2)",
+        "(5; −4)",
+        "(10; −8)"
+      ],
+      "t": 1,
+      "izoh": "Kesma o'rtasining koordinatalari uchlar koordinatalarining o'rta arifmetigi sifatida topiladi. Abssissa uchun (−2 + 8) : 2 = 3, ordinata uchun (6 + (−2)) : 2 = 2. Demak C(3; 2) va OC(3; 2). Ikkiga bo'lishni unutish (6; 4) natijasini beradi, AB vektorning yarmini olish esa (5; −4) ni beradi. Javob: (3; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-nuqta-vektor",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#4f0426e2"
+    },
+    {
+      "q": "ABC uchburchakda AM mediana o'tkazilgan, ya'ni M nuqta BC tomonning o'rtasi. AM vektorni AB va AC vektorlar orqali ifodalang.",
+      "v": [
+        "AB + AC",
+        "1/2·(AC − AB)",
+        "1/2·(AB + AC)",
+        "1/3·(AB + AC)"
+      ],
+      "t": 2,
+      "izoh": "A nuqtani boshlang'ich deb olamiz. M nuqta BC ning o'rtasi bo'lgani uchun o'rta nuqta qoidasiga ko'ra AM = 1/2·(AB + AC) bo'ladi. Buni boshqacha ham ko'rsatish mumkin: AM = AB + BM va BM = 1/2·BC = 1/2·(AC − AB), bu ham xuddi shu natijani beradi. Uchdan bir koeffitsient og'irlik markazi uchun ishlatiladi, mediana uchun emas. Javob: 1/2·(AB + AC).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-nuqta-vektor",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#7a618014"
+    },
+    {
+      "q": "Aziz A(1; 3), Bekzod esa B(9; 11) nuqtada turibdi, koordinatalar yuz metr birligida. Ikkalasi teng masofa yurib uchrashsa, uchrashuv nuqtasi qayerda bo'ladi?",
+      "v": [
+        "(10; 14)",
+        "(4; 4)",
+        "(8; 8)",
+        "(5; 7)"
+      ],
+      "t": 3,
+      "izoh": "Teng masofa yurib uchrashish AB kesmaning o'rtasida bo'lishni anglatadi. Abssissa uchun (1 + 9) : 2 = 5, ordinata uchun (3 + 11) : 2 = 7. Demak uchrashuv nuqtasi (5; 7). Koordinatalarni ikkiga bo'lmasdan qo'shib qo'yish (10; 14) natijasini beradi, AB vektorning o'zi esa (8; 8) ga teng. Javob: (5; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-nuqta-vektor",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#8dc84d82"
+    },
+    {
+      "q": "Qayiq turg'un suvda 8 km/soat tezlik bilan daryo oqimiga tik yo'nalishda suzmoqda, oqim tezligi esa 6 km/soat. Qayiqning qirg'oqqa nisbatan tezligi qancha?",
+      "v": [
+        "10",
+        "14",
+        "2",
+        "√14"
+      ],
+      "t": 0,
+      "izoh": "Qayiqning o'z tezligi va oqim tezligi o'zaro perpendikulyar vektorlardir. Ular parallelogramm qoidasi bo'yicha qo'shiladi va to'g'ri burchakli uchburchak hosil bo'ladi. Natijaviy tezlik √(8² + 6²) = √(64 + 36) = √100 = 10 km/soat. Tezliklarni oddiy qo'shib 14 deyish faqat bir xil yo'nalishda to'g'ri bo'ladi. Javob: 10 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlik-kontekst",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#dce54c02"
+    },
+    {
+      "q": "Samolyot shimolga 240 km/soat tezlik bilan uchmoqda, g'arbdan sharqqa esa 70 km/soat tezlik bilan shamol esmoqda. Samolyotning yerga nisbatan tezligi qancha?",
+      "v": [
+        "310",
+        "250",
+        "170",
+        "√310"
+      ],
+      "t": 1,
+      "izoh": "Shimol va sharq yo'nalishlari o'zaro perpendikulyar, shuning uchun tezlik vektorlari to'g'ri burchak ostida qo'shiladi. Natijaviy tezlik √(240² + 70²) = √(57600 + 4900) = √62500 = 250 km/soat. Tezliklarni oddiy qo'shish 310 ni, ayirish esa 170 ni beradi va ikkalasi ham noto'g'ri. Javob: 250 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlik-kontekst",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#f3dac986"
+    },
+    {
+      "q": "Suzuvchi Kamola daryoni kesib o'tmoqchi, uning suvga nisbatan tezligi 3 km/soat, oqim tezligi esa 4 km/soat. Natijaviy tezlik moduli va yo'nalishi qanday bo'ladi?",
+      "v": [
+        "7 km/soat, oqim bo'ylab",
+        "1 km/soat, oqimga qarshi",
+        "5 km/soat, oqim tomon og'gan yo'nalishda",
+        "5 km/soat, qarshi qirg'oqqa aniq tik"
+      ],
+      "t": 2,
+      "izoh": "Kamola qarshi qirg'oqqa tik yo'naladi, oqim esa unga perpendikulyar ta'sir qiladi. Ikki perpendikulyar vektor yig'indisi moduli √(9 + 16) = √25 = 5 km/soat. Yo'nalish esa faqat tik bo'lib qolmaydi, chunki oqim uni quyi oqim tomon og'diradi. Shuning uchun natijaviy vektor tik yo'nalishdan oqim tomonga burilgan bo'ladi. Javob: 5 km/soat, oqim tomon og'gan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlik-kontekst",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#1e2bd303"
+    },
+    {
+      "q": "Velosipedchi sharqqa 12 km/soat tezlik bilan harakatlanmoqda, shamol esa shimoldan janubga 5 km/soat tezlik bilan esmoqda. Ikki tezlik vektori yig'indisining moduli qancha?",
+      "v": [
+        "17",
+        "12",
+        "169",
+        "13"
+      ],
+      "t": 3,
+      "izoh": "Sharq va janub yo'nalishlari o'zaro perpendikulyar bo'lgani uchun vektorlar to'g'ri burchak ostida qo'shiladi. Yig'indi moduli √(12² + 5²) = √(144 + 25) = √169 = 13 km/soat. Tezliklarni oddiy qo'shib 17 deyish, shamolni umuman hisobga olmay faqat velosiped tezligi 12 ni javob deb olish yoki ildizni unutib 169 deb qoldirish tipik xatolardir. Javob: 13 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-kontekst",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#45041253"
+    },
+    {
+      "q": "2x + a = b vektor tenglamada a(4; −2) va b(10; 6) berilgan. Noma'lum x vektorning koordinatalarini toping va javobni belgilang.",
+      "v": [
+        "(3; 4)",
+        "(6; 8)",
+        "(7; 2)",
+        "(−3; −4)"
+      ],
+      "t": 0,
+      "izoh": "Tenglamadan 2x = b − a kelib chiqadi. Ayirmani hisoblaymiz: (10 − 4; 6 − (−2)) = (6; 8). Endi ikkiga bo'lamiz: x = (3; 4). Oxirgi qadamni tashlab ketib (6; 8) deb javob berish eng ko'p uchraydigan xato, yig'indini ikkiga bo'lish esa (7; 2) natijani beradi. Javob: (3; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vektor-tenglama",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#c338cf20"
+    },
+    {
+      "q": "3x − 2a = 0 vektor tenglamasidan noma'lum x vektorni a vektor orqali ifodalang va to'g'ri javobni tanlang.",
+      "v": [
+        "3/2·a",
+        "2/3·a",
+        "−2/3·a",
+        "6·a"
+      ],
+      "t": 1,
+      "izoh": "Tenglamaning ikkala tomoniga 2a qo'shsak 3x = 2a hosil bo'ladi. Endi ikkala tomonni 3 ga bo'lamiz va x = 2/3·a kelib chiqadi. Koeffitsientni teskari yozib 3/2·a deb olish eng ko'p uchraydigan xato, ishorani noto'g'ri ko'chirish esa manfiy javob beradi. Javob: x = 2/3·a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vektor-tenglama",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#5234fd5e"
+    },
+    {
+      "q": "Noma'lum x va y vektorlar uchun x + y = c va x − y = d tengliklari o'rinli. x vektorni c va d vektorlar orqali ifodalang.",
+      "v": [
+        "c + d",
+        "c − d",
+        "1/2·(c + d)",
+        "1/2·(c − d)"
+      ],
+      "t": 2,
+      "izoh": "Ikki tenglikni hadma-had qo'shamiz: chap tomonda y vektorlar bir-birini yo'qotadi va 2x qoladi. O'ng tomonda esa c + d hosil bo'ladi, ya'ni 2x = c + d. Ikkala tomonni ikkiga bo'lsak x = 1/2·(c + d). Ikkiga bo'lishni unutish eng ko'p uchraydigan xato, ayirma esa y vektor uchun ishlatiladi. Javob: 1/2·(c + d).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vektor-tenglama",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#7386e1b9"
+    },
+    {
+      "q": "Loyihachi ikki bosqichli siljish rejalashtirdi: birinchi siljish s(7; −4), ikki bosqichdan keyingi umumiy siljish esa u(2; 9) bo'lishi kerak. Ikkinchi siljish vektori qanday?",
+      "v": [
+        "(9; 5)",
+        "(5; −13)",
+        "(−5; 5)",
+        "(−5; 13)"
+      ],
+      "t": 3,
+      "izoh": "Umumiy siljish ikki bosqich vektorlarining yig'indisiga teng, ya'ni s + w = u. Bundan w = u − s kelib chiqadi. Ayirmani hisoblaymiz: (2 − 7; 9 − (−4)) = (−5; 13). Ayirish o'rniga qo'shib yuborilsa (9; 5) chiqadi, ayirma tartibi almashtirilsa (5; −13) chiqadi. Javob: (−5; 13).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vektor-tenglama",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#5da25b28"
+    },
+    {
+      "q": "Ombordan chiqqan yuk mashinasi avval sharqqa 9 km, so'ngra shimolga 12 km yurdi. Uning ko'chish vektorining uzunligi necha kilometrga teng?",
+      "v": [
+        "21",
+        "15",
+        "3",
+        "√21"
+      ],
+      "t": 1,
+      "izoh": "Sharq va shimol yo'nalishlari o'zaro perpendikulyar, shuning uchun ko'chish vektorining koordinatalari (9; 12) bo'ladi. Uning moduli √(81 + 144) = √225 = 15 km. Bosib o'tilgan yo'l 21 km bo'lsa ham, ko'chish undan kichik, chunki ko'chish faqat boshlang'ich va oxirgi nuqtaga bog'liq. Javob: 15 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kochish-navigatsiya",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#7c886716"
+    },
+    {
+      "q": "Piyoda Nodira avval shimolga 300 m, so'ng g'arbga 400 m, keyin esa janubga 300 m yurdi. Uning ko'chish vektorining moduli necha metr?",
+      "v": [
+        "400",
+        "1000",
+        "500",
+        "700"
+      ],
+      "t": 0,
+      "izoh": "Shimolga 300 m va janubga 300 m harakat bir-birini butunlay yo'qotadi, chunki ular qarama-qarshi vektorlardir. Faqat g'arbga qilingan 400 metrlik siljish qoladi. Demak ko'chish vektorining moduli 400 metrga teng. Bosib o'tilgan 1000 metrlik yo'lni ko'chish deb olish yoki Pifagor teoremasini o'rinsiz qo'llab 500 deyish tipik xatolardir. Javob: 400 metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kochish-navigatsiya",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#fcabd86b"
+    },
+    {
+      "q": "Kema A portidan sharqqa 24 mil, so'ng shimolga 7 mil suzdi. Portga to'g'ri chiziq bo'ylab qaytish uchun u qancha masofani va qaysi yo'nalishda bosib o'tadi?",
+      "v": [
+        "31 mil, ko'chish vektori bo'ylab",
+        "17 mil, shimoli-g'arb tomonga",
+        "25 mil, ko'chish vektoriga qarama-qarshi yo'nalishda",
+        "25 mil, ko'chish vektori bilan bir xil yo'nalishda"
+      ],
+      "t": 2,
+      "izoh": "Ko'chish vektori (24; 7) bo'lib, uning moduli √(576 + 49) = √625 = 25 mil. Portga qaytish uchun kema xuddi shu uzunlikdagi, lekin qarama-qarshi yo'nalgan vektor bo'ylab suzishi kerak. Ya'ni qaytish vektori (−24; −7) ga teng, uzunligi esa yana 25 mil. Javob: 25 mil, qarama-qarshi yo'nalishda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kochish-navigatsiya",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#a83c225b"
+    },
+    {
+      "q": "Qidiruv guruhi bazadan chiqib ketma-ket (3; 4), (−1; 2) va (6; −9) ko'chishlarni bajardi, birliklar kilometrda. Ular bazadan qanday uzoqlikda bo'ladi?",
+      "v": [
+        "11",
+        "73",
+        "5",
+        "√73"
+      ],
+      "t": 3,
+      "izoh": "Avval barcha ko'chishlarni qo'shamiz: abssissalar 3 + (−1) + 6 = 8, ordinatalar 4 + 2 + (−9) = −3. Demak umumiy ko'chish (8; −3) ga teng. Uning moduli √(64 + 9) = √73 kilometr. Koordinatalarni ildizsiz qo'shib 11 deyish yoki ildizni unutib 73 deb qoldirish tipik xatolardir. Javob: √73 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kochish-navigatsiya",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#dac1ac10"
+    },
+    {
+      "q": "a(x; −8) vektorning moduli 17 ga teng ekani ma'lum. Noma'lum x ning musbat qiymatini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "15",
+        "9",
+        "25",
+        "√353"
+      ],
+      "t": 0,
+      "izoh": "Modul formulasidan x² + (−8)² = 17² tenglama tuziladi, ya'ni x² + 64 = 289. Bundan x² = 225 va x = 15 kelib chiqadi, chunki musbat qiymat so'ralgan. Modul bilan koordinatani oddiy ayirib 9 deb javob berish yoki kvadratlarni qo'shib yuborib √353 olish tipik xatolardir. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "noman-koordinata-modul",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#7ec17bea"
+    },
+    {
+      "q": "b(6; y) vektorning uzunligi 10 ga teng bo'lsa, y ning mumkin bo'lgan barcha qiymatlarini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "Faqat 8",
+        "8 va −8",
+        "4 va −4",
+        "8 va 6"
+      ],
+      "t": 1,
+      "izoh": "Modul shartidan 6² + y² = 10², ya'ni 36 + y² = 100 tenglama hosil bo'ladi. Bundan y² = 64 va y = 8 yoki y = −8 kelib chiqadi. Kvadrat tenglamada ikkinchi ildizni yo'qotib faqat musbat qiymatni yozib qo'yish eng ko'p uchraydigan xato, chunki vektor pastga ham yo'nalgan bo'lishi mumkin. Javob: 8 va −8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "noman-koordinata-modul",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#da8ba7a9"
+    },
+    {
+      "q": "Fazodagi c(2; k; 4) vektorning moduli √29 ga teng bo'lsa, noma'lum k ning kvadrati nechaga teng bo'ladi?",
+      "v": [
+        "49",
+        "5",
+        "9",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Fazoviy modul formulasidan 2² + k² + 4² = 29 tenglama tuziladi. Ya'ni 4 + k² + 16 = 29 va bundan k² = 29 − 20 = 9 kelib chiqadi. Savol k ning emas, uning kvadratining qiymatini so'ragani uchun javob 9 bo'ladi. Shoshib k = 3 deb javob berish savol shartini noto'g'ri o'qishdan kelib chiqadi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "noman-koordinata-modul",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#607495df"
+    },
+    {
+      "q": "Muhandis chizmada uzunligi 26 birlik bo'lgan vektor yasamoqchi va uning gorizontal koordinatasi 24 birlikka teng. Vertikal koordinataning musbat qiymati qanday?",
+      "v": [
+        "2",
+        "50",
+        "√1252",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Modul shartidan 24² + y² = 26², ya'ni 576 + y² = 676 tenglama tuziladi. Bundan y² = 100 va musbat qiymat uchun y = 10 kelib chiqadi. Modul bilan koordinatani oddiy ayirib 2 deyish yoki kvadratlarni ayirish o'rniga qo'shib √1252 olish tipik xatolardir. Javob: 10 birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "noman-koordinata-modul",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#fb406221"
+    },
+    {
+      "q": "a(4; −3) vektor bilan bir xil yo'nalgan va uzunligi 15 birlikka teng bo'lgan vektorning koordinatalarini toping.",
+      "v": [
+        "(12; −9)",
+        "(19; 12)",
+        "(60; −45)",
+        "(−12; 9)"
+      ],
+      "t": 0,
+      "izoh": "Avval berilgan vektor modulini topamiz: |a| = √(16 + 9) = 5. Uzunlikni 15 ga yetkazish uchun vektorni 15 : 5 = 3 soniga ko'paytirish kerak. Demak yangi vektor (12; −9). Vektorni to'g'ridan-to'g'ri 15 ga ko'paytirish (60; −45) natijasini beradi, bu esa uzunligi 75 bo'lgan vektor. Javob: (12; −9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-uzunlikdagi-vektor",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#6caa3855"
+    },
+    {
+      "q": "b(−8; 6) vektorga qarama-qarshi yo'nalgan va uzunligi 5 birlik bo'lgan vektorning koordinatalarini aniqlang.",
+      "v": [
+        "(−4; 3)",
+        "(4; −3)",
+        "(−40; 30)",
+        "(0,8; −0,6)"
+      ],
+      "t": 1,
+      "izoh": "Avval modul hisoblanadi: |b| = √(64 + 36) = 10. Qarama-qarshi yo'nalgan birlik vektor (0,8; −0,6) bo'ladi, chunki ishoralar teskari qilinadi. Uni 5 ga ko'paytirsak (4; −3) hosil bo'ladi. Ishorani o'zgartirishni unutish (−4; 3) ga, birlik vektorga ko'paytirishni unutish esa (0,8; −0,6) ga olib keladi. Javob: (4; −3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "berilgan-uzunlikdagi-vektor",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#f9c821b2"
+    },
+    {
+      "q": "Kran trosining yo'nalishi t(3; −4) vektor bilan berilgan. Tros bo'ylab 40 kN kuch qo'yilsa, kuch vektorining koordinatalari qanday bo'ladi?",
+      "v": [
+        "(120; −160)",
+        "(43; 36)",
+        "(24; −32)",
+        "(8; −8)"
+      ],
+      "t": 2,
+      "izoh": "Yo'nalish vektorining moduli |t| = √(9 + 16) = 5 ga teng. Birlik vektor (0,6; −0,8) bo'ladi. Uni kuch kattaligi 40 ga ko'paytiramiz va (24; −32) hosil bo'ladi. Tekshirish uchun: √(576 + 1024) = √1600 = 40 kN. Yo'nalish vektorini to'g'ridan-to'g'ri 40 ga ko'paytirish (120; −160) beradi, uning moduli esa 200 bo'lib qoladi. Javob: (24; −32).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-uzunlikdagi-vektor",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#fe9da929"
+    },
+    {
+      "q": "Uzunligi 12 birlikka teng va Ox o'qining musbat yo'nalishi bo'ylab yo'nalgan vektorning koordinatalarini ko'rsating.",
+      "v": [
+        "(0; 12)",
+        "(12; 12)",
+        "(6; 6)",
+        "(12; 0)"
+      ],
+      "t": 3,
+      "izoh": "Ox o'qi bo'ylab yo'nalgan vektorning ordinatasi nolga teng bo'ladi, chunki u vertikal bo'yicha siljimaydi. Musbat yo'nalish uchun abssissa musbat bo'lishi kerak. Uzunlik 12 bo'lgani uchun vektor (12; 0) ko'rinishida yoziladi. Oy o'qi bilan chalkashtirib (0; 12) deb javob berish keng tarqalgan xato. Javob: (12; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilgan-uzunlikdagi-vektor",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#79626430"
+    },
+    {
+      "q": "Fazoda a(1; −2; 2) va b(3; 0; −4) vektorlar berilgan. Ularning yig'indisi bo'lgan vektorning modulini hisoblang.",
+      "v": [
+        "2√6",
+        "24",
+        "8",
+        "√6"
+      ],
+      "t": 0,
+      "izoh": "Avval koordinatalar bo'yicha qo'shamiz: (1 + 3; −2 + 0; 2 + (−4)) = (4; −2; −2). So'ng modul hisoblanadi: √(16 + 4 + 4) = √24. Ildiz ostidan to'la kvadratni chiqarsak √24 = 2√6 bo'ladi. Ildiz olishni unutib 24 deb qoldirish yoki koordinatalarni oddiy qo'shib 8 deyish tipik xatolardir. Javob: 2√6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "fazoviy-amal",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#afce7693"
+    },
+    {
+      "q": "Fazodagi A(2; −1; 5) va B(6; 2; −7) nuqtalar berilgan. AB vektorning koordinatalarini va uzunligini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "(4; 3; −12), uzunligi 19",
+        "(4; 3; −12), uzunligi 13",
+        "(−4; −3; 12), uzunligi 169",
+        "(8; 1; −2), uzunligi √69"
+      ],
+      "t": 1,
+      "izoh": "Vektor koordinatalari oxirgi nuqtadan boshlang'ich nuqtani ayirish bilan topiladi: (6 − 2; 2 − (−1); −7 − 5) = (4; 3; −12). Uzunligi esa √(16 + 9 + 144) = √169 = 13 ga teng. Koordinatalarni ildizsiz qo'shib 19 deyish yoki nuqtalarni qo'shib yuborish tipik xatolardir. Javob: (4; 3; −12), uzunligi 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "fazoviy-amal",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#c30b11cf"
+    },
+    {
+      "q": "Fazoviy p(2; −3; 1) vektor −4 soniga ko'paytirilsa, hosil bo'lgan vektorning uchinchi koordinatasi nechaga teng bo'ladi?",
+      "v": [
+        "4",
+        "1",
+        "−4",
+        "−3"
+      ],
+      "t": 2,
+      "izoh": "Vektorni songa ko'paytirishda har bir koordinata shu songa ko'paytiriladi. Uchinchi koordinata 1 ga teng bo'lgani uchun −4·1 = −4 hosil bo'ladi. Ishorani hisobga olmasdan 4 deb javob berish yoki koordinatani o'zgarishsiz qoldirish tipik xatolardir. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "fazoviy-amal",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#2cc60533"
+    },
+    {
+      "q": "Uch o'lchamli modelda kamera K(4; 1; 9) nuqtada, qaralayotgan nuqta esa M(−2; 5; 1) da joylashgan. Kameradan nuqtaga yo'nalgan vektorning uzunligi qancha?",
+      "v": [
+        "18",
+        "116",
+        "√29",
+        "2√29"
+      ],
+      "t": 3,
+      "izoh": "KM vektorning koordinatalari (−2 − 4; 5 − 1; 1 − 9) = (−6; 4; −8) ga teng. Uning moduli √(36 + 16 + 64) = √116. Ildiz ostidan to'la kvadratni chiqaramiz: √116 = √(4·29) = 2√29. Koordinatalar modullarini qo'shib 18 deyish yoki ildizni umuman olmaslik tipik xatolardir. Javob: 2√29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "fazoviy-amal",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#748edea5"
+    },
+    {
+      "q": "ABC uchburchakda AB vektor c bilan, AC vektor esa b bilan belgilangan. BC vektorni shu belgilashlar orqali ifodalang.",
+      "v": [
+        "b − c",
+        "c − b",
+        "b + c",
+        "−b − c"
+      ],
+      "t": 0,
+      "izoh": "BC vektorni B nuqtadan A orqali C ga o'tish deb yozamiz: BC = BA + AC. BA vektor AB ga qarama-qarshi bo'lgani uchun BA = −c. Demak BC = −c + b = b − c. Ayirmani teskari tartibda yozish CB vektorni beradi, bu esa boshqa yo'nalishdagi vektor. Javob: b − c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchakda-yoyish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#93e2c128"
+    },
+    {
+      "q": "ABCD parallelogrammda AB vektor a bilan, AD vektor esa b bilan belgilangan. BD diagonal vektori qanday ifodalanadi?",
+      "v": [
+        "a − b",
+        "b − a",
+        "a + b",
+        "−a − b"
+      ],
+      "t": 1,
+      "izoh": "BD vektorni B nuqtadan A orqali D ga o'tish deb yozamiz: BD = BA + AD. BA = −a bo'lgani uchun BD = −a + b = b − a. Ikkinchi diagonal AC esa a + b ga teng, shuning uchun yig'indi varianti bu savolga mos kelmaydi. Javob: b − a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchakda-yoyish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#a3939a3c"
+    },
+    {
+      "q": "ABCD parallelogrammda AB vektor a, AD vektor b va O nuqta diagonallar kesishish nuqtasi. AO vektorni a va b orqali ifodalang.",
+      "v": [
+        "a + b",
+        "2·(a + b)",
+        "1/2·(a + b)",
+        "1/2·(b − a)"
+      ],
+      "t": 2,
+      "izoh": "Parallelogramm qoidasiga ko'ra AC = a + b bo'ladi. Diagonallar kesishish nuqtasida teng ikkiga bo'linadi, ya'ni O nuqta AC ning o'rtasi. Demak AO = 1/2·AC = 1/2·(a + b). Ikkiga bo'lishni unutib a + b deb qoldirish eng ko'p uchraydigan xato. Javob: 1/2·(a + b).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchakda-yoyish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#980e625c"
+    },
+    {
+      "q": "ABC uchburchakning AB tomonida M nuqta shunday olinganki, u tomonni A uchidan boshlab 2 : 1 nisbatda bo'ladi. AM vektorni AB orqali ifodalang.",
+      "v": [
+        "1/3·AB",
+        "3/2·AB",
+        "2·AB",
+        "2/3·AB"
+      ],
+      "t": 3,
+      "izoh": "M nuqta AB tomonni 2 : 1 nisbatda bo'lgani uchun butun tomon 2 + 1 = 3 ta teng bo'lakka bo'linadi. A uchidan boshlab olingan qism shu bo'laklarning ikkitasini tashkil qiladi. Demak AM = 2/3·AB bo'ladi, MB esa 1/3·AB ga teng. Nisbatning birinchi hadini maxrajga qo'yib 1/3 deb olish tipik xato. Javob: 2/3·AB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchakda-yoyish",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#8a8da13a"
+    },
+    {
+      "q": "ABCD trapetsiyada BC va AD asoslar bo'lib, BC asos AD asosdan ikki marta qisqa. Quyidagi vektor tengliklaridan qaysi biri to'g'ri?",
+      "v": [
+        "AD = 2·BC",
+        "BC = 2·AD",
+        "AD = −2·BC",
+        "AD = BC"
+      ],
+      "t": 0,
+      "izoh": "Trapetsiyada BC va AD asoslar parallel, uchlar tartibiga ko'ra bu vektorlar bir xil tomonga yo'nalgan. Uzunliklar bo'yicha AD ikki marta uzun, demak AD = 2·BC. Ishorani manfiy olish vektorlarni qarama-qarshi yo'nalgan deb hisoblash bo'ladi, bu esa shartga zid. Javob: AD = 2·BC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-vektorlar-figurada",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#eb67dfd3"
+    },
+    {
+      "q": "Muntazam ABCDEF olti burchakda AB vektorga aynan teng bo'lgan vektorni uning tomonlari orasidan toping va javobni belgilang.",
+      "v": [
+        "DE",
+        "ED",
+        "FC",
+        "CB"
+      ],
+      "t": 1,
+      "izoh": "Muntazam olti burchakda qarama-qarshi tomonlar parallel va teng uzunlikda. AB tomonga DE tomoni parallel, lekin uchlar tartibiga ko'ra DE vektor AB ga qarama-qarshi yo'nalgan. E dan D ga qaralganda esa yo'nalish AB bilan bir xil bo'ladi. Shuning uchun AB = ED. Javob: ED.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-vektorlar-figurada",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#aac010fd"
+    },
+    {
+      "q": "Yon qirralari AA₁, BB₁, CC₁ va DD₁ bo'lgan to'g'ri prizma shaklidagi kubda AA₁ vektorga teng bo'lgan boshqa qirra vektorlari nechta?",
+      "v": [
+        "1",
+        "4",
+        "3",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Kubning yon qirralari o'zaro parallel va teng uzunlikda, bundan tashqari hammasi pastdan yuqoriga bir xil yo'nalgan. Shuning uchun BB₁, CC₁ va DD₁ vektorlarning uchalasi ham AA₁ ga teng bo'ladi. AA₁ ning o'zi hisobga olinmagani uchun javob 3 ta. Barcha to'rttasini sanab 4 deyish savol shartiga mos kelmaydi. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-vektorlar-figurada",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#870a97c5"
+    },
+    {
+      "q": "Do'kon vitrinasidagi to'rtta bir xil qutini bir xil masofaga va bir xil tomonga surish kerak. Bu qutilarning ko'chish vektorlari haqida nima deyish mumkin?",
+      "v": [
+        "Ular qarama-qarshi yo'nalgan vektorlar",
+        "Ular faqat kollinear, lekin teng emas",
+        "Ular nol vektorga teng",
+        "Ular teng vektorlar, chunki uzunliklari ham, yo'nalishlari ham bir xil"
+      ],
+      "t": 3,
+      "izoh": "Vektor tenglik uchun ikki shart talab qilinadi: uzunliklar teng va yo'nalishlar bir xil bo'lishi. Bu yerda barcha qutilar bir xil masofaga, ya'ni bir xil uzunlikda va bir xil tomonga suriladi. Vektorlarning boshlang'ich nuqtalari har xil bo'lishi tenglikka to'sqinlik qilmaydi, chunki vektor erkin ko'chiriladi. Javob: ular teng vektorlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-vektorlar-figurada",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#cf572d63"
+    },
+    {
+      "q": "Nol vektorning ta'rifi va asosiy xossasini eng to'g'ri ifodalagan javobni quyidagilardan tanlang.",
+      "v": [
+        "Uzunligi 0 ga teng, yo'nalishi aniqlanmagan va istalgan vektorga qo'shilganda uni o'zgartirmaydi",
+        "Uzunligi 1 ga teng va Ox o'qi bo'ylab yo'nalgan vektor",
+        "Koordinatalari manfiy bo'lgan har qanday vektor",
+        "Faqat fazoda mavjud bo'ladigan maxsus vektor"
+      ],
+      "t": 0,
+      "izoh": "Nol vektorning boshi va oxiri ustma-ust tushadi, shuning uchun uning uzunligi nolga teng va yo'nalishi aniqlanmaydi. Koordinatalarda u (0; 0) ko'rinishida yoziladi. Istalgan a vektorga qo'shilganda a + 0 = a bo'ladi, ya'ni u qo'shishda neytral element vazifasini bajaradi. Javob: uzunligi nol, qo'shishda vektorni o'zgartirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vektor-tushuncha",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#55e1d2af"
+    },
+    {
+      "q": "a vektor va unga qarama-qarshi bo'lgan vektor o'rtasidagi munosabatni to'g'ri ifodalagan javobni belgilang.",
+      "v": [
+        "Modullari har xil, yo'nalishlari esa bir xil",
+        "Modullari teng, yo'nalishlari qarama-qarshi va yig'indisi nol vektorga teng",
+        "Modullari teng va yig'indisi 2a ga teng",
+        "Ular teng vektorlar deb hisoblanadi"
+      ],
+      "t": 1,
+      "izoh": "Qarama-qarshi vektor a vektorni −1 soniga ko'paytirish natijasida hosil bo'ladi. Manfiy songa ko'paytirishda yo'nalish teskari bo'ladi, modul esa |−1| = 1 marta, ya'ni o'zgarishsiz qoladi. Ularni qo'shsak har bir koordinata nolga aylanadi va nol vektor hosil bo'ladi. Javob: modullari teng, yo'nalishlari qarama-qarshi, yig'indisi nol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vektor-tushuncha",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#3bc75b2c"
+    },
+    {
+      "q": "Vektorning moduli haqidagi quyidagi tasdiqlardan qaysi biri noto'g'ri? Har bir variantni diqqat bilan tekshirib chiqing.",
+      "v": [
+        "Nol vektorning moduli nolga teng",
+        "Teng vektorlarning modullari ham o'zaro teng",
+        "Vektor moduli manfiy son bo'lishi mumkin",
+        "Vektor moduli manfiy bo'lmagan son bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Modul kesma uzunligi sifatida aniqlanadi, uzunlik esa hech qachon manfiy bo'lolmaydi. Formulada ham ildiz ostidagi kvadratlar yig'indisi manfiy bo'lmaydi va arifmetik ildiz musbat qiymat beradi. Nol vektorning moduli nolga teng, teng vektorlarniki esa albatta teng. Demak noto'g'ri tasdiq modul manfiy bo'lishi haqidagi variant. Javob: modul manfiy bo'lishi mumkin degan tasdiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vektor-tushuncha",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#0fbc7108"
+    },
+    {
+      "q": "Ikki vektor uchun |a| = 5 va |b| = 12 ekani ma'lum, lekin ular orasidagi burchak berilmagan. |a + b| qanday chegaralar orasida yotishi mumkin?",
+      "v": [
+        "5 dan 12 gacha",
+        "0 dan 60 gacha",
+        "13 dan 17 gacha",
+        "7 dan 17 gacha"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi moduli vektorlar bir xil yo'nalganda eng katta bo'ladi va 5 + 12 = 17 ga teng bo'ladi. Qarama-qarshi yo'nalganda esa eng kichik qiymat olinadi va u 12 − 5 = 7 bo'ladi. Qolgan barcha holatlarda qiymat shu ikkisi orasida yotadi. Perpendikulyar holatdagi 13 faqat bitta xususiy qiymat, chegara emas. Javob: 7 dan 17 gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-baholash",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#05b889ad"
+    },
+    {
+      "q": "|a| = 9 va |b| = 4 bo'lgan ikki vektorning yig'indisi nol vektorga teng bo'lishi mumkinmi? Javobingizni asoslab tanlang.",
+      "v": [
+        "Yo'q, chunki yig'indi nol bo'lishi uchun modullar teng bo'lishi shart",
+        "Ha, agar ular o'zaro perpendikulyar bo'lsa",
+        "Ha, bu har doim mumkin",
+        "Yo'q, chunki vektorlar kollinear emas"
+      ],
+      "t": 0,
+      "izoh": "Agar a + b nol vektor bo'lsa, u holda b = −a bo'ladi. Qarama-qarshi vektorlarning modullari esa doim teng, ya'ni |b| = |a| bo'lishi kerak edi. Bu yerda 9 va 4 teng emas, shuning uchun yig'indi hech qachon nol vektorga aylana olmaydi. Perpendikulyarlik holati bunga umuman yordam bermaydi. Javob: yo'q, chunki modullar teng emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-baholash",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#010b92e7"
+    },
+    {
+      "q": "Ikki vektor uchun |a| = 7, |b| = 7 va |a + b| = 14 ekani ma'lum. Bu ma'lumotlardan a va b haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Ular qarama-qarshi yo'nalgan",
+        "Ular teng vektorlar, ya'ni yo'nalishlari bir xil",
+        "Ular o'zaro perpendikulyar",
+        "Ular orasidagi burchak 60° ga teng"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi moduli modullar yig'indisidan katta bo'lolmaydi, ya'ni |a + b| ≤ |a| + |b| = 14. Bu yerda tenglik holati yuz bergan, u esa faqat vektorlar bir xil yo'nalganda o'rinli bo'ladi. Modullari ham teng bo'lgani uchun a va b teng vektorlardir. Perpendikulyar holatda yig'indi moduli 7√2, ya'ni taxminan 9,9 bo'lardi. Javob: ular teng vektorlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-baholash",
+      "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida#42bacded"
+    }
+  ]
+}

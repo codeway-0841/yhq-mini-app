@@ -1,0 +1,531 @@
+{
+  "nom": "16-mavzu. Rezistorlar Reostatlar Potensiometrlar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Rezistor nima?",
+      "v": [
+        "Elektr zanjirda tokni va kuchlanishni rostlash uchun qo'llaniladigan ma'lum qarshilikli elektr asbob",
+        "Elektr zanjirda faqat tok kuchini o'lchaydigan asbob",
+        "Elektr zanjirga faqat kuchlanish beruvchi asbob",
+        "Elektr zaryadini saqlovchi asbob"
+      ],
+      "t": 0,
+      "izoh": "Rezistor — elektr zanjirda tokni va kuchlanishni rostlash uchun qo'llaniladigan ma'lum qarshilikli elektr asbob.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#70726f68"
+    },
+    {
+      "q": "«Rezistor» so'zi qaysi tilning qaysi so'zidan olingan?",
+      "v": [
+        "Lotincha «resisto» — «qarshilik»",
+        "Yunoncha «reos» — «oqim»",
+        "Lotincha «stato» — «qo'zg'almas»",
+        "Nemischa «vider» — «qarshilik»"
+      ],
+      "t": 0,
+      "izoh": "«Rezistor» so'zi lotincha «resisto» — «qarshilik» degan ma'noni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#992ebcc1"
+    },
+    {
+      "q": "Eng sodda rezistor (53-a rasm) qaysi qismlardan iborat?",
+      "v": [
+        "Karkas, sim va qoplamadan",
+        "Sterjen, surgich va qisqichlardan",
+        "Korpus, spirallar va o'ramlardan",
+        "Plastinka, kontakt va murvatdan"
+      ],
+      "t": 0,
+      "izoh": "Eng sodda rezistor karkas, sim va qoplamadan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#8957f15b"
+    },
+    {
+      "q": "Sodda rezistorning karkasi va qoplamasi qanday materialdan tayyorlanadi?",
+      "v": [
+        "Yonmaydigan va tok o'tkazmaydigan materialdan, masalan, chinnidan",
+        "Solishtirma qarshiligi katta bo'lgan metall simdan",
+        "Yumshoq mis simdan",
+        "Magnitli po'latdan"
+      ],
+      "t": 0,
+      "izoh": "Karkas va qoplama yonmaydigan va tok o'tkazmaydigan materialdan, masalan, chinnidan tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#9abf09ed"
+    },
+    {
+      "q": "Rezistordagi sim qanday materialdan tayyorlanadi?",
+      "v": [
+        "Solishtirma qarshiligi katta materialdan",
+        "Solishtirma qarshiligi juda kichik materialdan",
+        "Har qanday yaxshi o'tkazgich metallidan",
+        "Yarimo'tkazgich materialdan"
+      ],
+      "t": 0,
+      "izoh": "Sim solishtirma qarshiligi katta materialdan tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#1b70410f"
+    },
+    {
+      "q": "Rezistor simining ikki uchi zanjirga qanday ulanadi?",
+      "v": [
+        "Zanjirning tegishli qismiga ulanadi",
+        "Faqat tok manbaiga parallel ulanadi",
+        "Voltmetr bilan ketma-ket ulanadi",
+        "Yerga ulanadi"
+      ],
+      "t": 0,
+      "izoh": "Simning ikki uchi zanjirning tegishli qismiga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#9413c7c5"
+    },
+    {
+      "q": "53-b rasmda tasvirlangan rezistorda sim o'rniga nima qo'llaniladi?",
+      "v": [
+        "Katta qarshilikka ega materialdan tayyorlangan qatlam",
+        "Sopol silindrga o'ralgan spiral",
+        "Yupqa mis plastinka",
+        "Izolyatsiyalangan kabel"
+      ],
+      "t": 0,
+      "izoh": "Ko'p hollarda rezistordagi sim o'rniga katta qarshilikka ega materialdan tayyorlangan qatlam qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#1091b7b2"
+    },
+    {
+      "q": "53-b rasmdagi rezistorda qatlamning ikkala chekkasi nimaga mahkamlangan?",
+      "v": [
+        "O'tkazgich simlarga",
+        "Sopol karkasga",
+        "Metall sterjenga",
+        "Himoya qobig'iga"
+      ],
+      "t": 0,
+      "izoh": "Qatlamning ikkala chekkasi o'tkazgich simlarga mahkamlangan bo'lib, bu simlar orqali zanjirga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#36c4616c"
+    },
+    {
+      "q": "53-d rasmdagi rezistor qanday tuzilgan?",
+      "v": [
+        "Kichik qarshilikli bo'lib, tok o'tkazmaydigan va yonmaydigan sopol ichiga kichik qarshilikli sim spiral shaklda joylashtirilgan",
+        "Katta qarshilikli qatlam simlarga mahkamlangan",
+        "Metall sterjen bo'ylab surgich harakatlanadi",
+        "Aylana shaklidagi o'ram murvat bilan buriladi"
+      ],
+      "t": 0,
+      "izoh": "53-d rasmdagi rezistor kichik qarshilikli, tok o'tkazmaydigan va yonmaydigan sopol ichiga kichik qarshilikli sim spiral shaklida joylashtirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#2987f90c"
+    },
+    {
+      "q": "Rezistorlarning elektr zanjir sxemasidagi shartli belgisi qaysi rasmda keltirilgan?",
+      "v": [
+        "53-e rasmda",
+        "53-a rasmda",
+        "54-rasmda",
+        "56-rasmda"
+      ],
+      "t": 0,
+      "izoh": "Rezistorlarning elektr zanjir sxemasidagi shartli belgisi 53-e rasmda aks ettirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#32ac2bbb"
+    },
+    {
+      "q": "54-rasmda qaysi rezistorlar keltirilgan?",
+      "v": [
+        "Radiotexnikada qo'llaniladigan rezistorlarning namunalari",
+        "Maktab reostatlari",
+        "Potensiometrlar",
+        "Laboratoriya spiral o'tkazgichlari"
+      ],
+      "t": 0,
+      "izoh": "54-rasmda radiotexnikada qo'llaniladigan rezistorlarning namunalari keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#8402b1d8"
+    },
+    {
+      "q": "Nima uchun rezistordan foydalanish zanjirdagi tokni bir me'yorda o'zgartirish uchun yetarli emas?",
+      "v": [
+        "Chunki rezistor ma'lum qarshilikka ega bo'lib, undagi qarshilikni o'zgartirib bo'lmaydi",
+        "Chunki rezistor zanjirni uzoq vaqt ushlab turmaydi",
+        "Chunki rezistor faqat katta tokda ishlaydi",
+        "Chunki rezistor faqat o'zgaruvchan tokda ishlaydi"
+      ],
+      "t": 0,
+      "izoh": "Rezistor ma'lum qarshilikka ega bo'lib, undagi qarshilikni o'zgartirib bo'lmaydi, shuning uchun reostatdan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#35bead3a"
+    },
+    {
+      "q": "Reostat nima?",
+      "v": [
+        "Elektr zanjirdagi tok kuchi va kuchlanishni rostlash, ya'ni o'zgartirish uchun qo'llaniladigan elektr asbob",
+        "Ma'lum qarshilikli o'zgarmas elektr asbob",
+        "Elektr zaryadini o'lchaydigan asbob",
+        "Tok manbai kuchlanishini ko'taruvchi asbob"
+      ],
+      "t": 0,
+      "izoh": "Reostat — elektr zanjirdagi tok kuchi va kuchlanishni rostlash, ya'ni o'zgartirish uchun qo'llaniladigan elektr asbob.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#a4e3e9ac"
+    },
+    {
+      "q": "«Reostat» so'zi qaysi so'zlardan tuzilgan va qanday ma'no bildiradi?",
+      "v": [
+        "Yunoncha «reos» — «oqim» va «statos» — «qo'zg'almas»",
+        "Lotincha «resisto» — «qarshilik» va «tato» — «turish»",
+        "Yunoncha «elektron» — «sut» va «statos» — «turish»",
+        "Lotincha «reos» — «harakat» va «stat» — «holat»"
+      ],
+      "t": 0,
+      "izoh": "«Reostat» yunoncha so'z bo'lib, «reos» — «oqim» va «statos» — «qo'zg'almas» degan ma'nolarni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#8f5f81b4"
+    },
+    {
+      "q": "Eng oddiy reostatni qaysi simlardan yasash mumkin?",
+      "v": [
+        "Solishtirma qarshiligi katta bo'lgan materialdan, masalan, nikelin yoki nixrom simdan",
+        "Solishtirma qarshiligi kichik mis simdan",
+        "Alyuminiy simdan",
+        "Po'lat simdan"
+      ],
+      "t": 0,
+      "izoh": "Solishtirma qarshiligi katta bo'lgan materialdan, masalan, nikelin yoki nixrom simdan eng oddiy reostat yasash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#08b17a46"
+    },
+    {
+      "q": "55-rasmdagi oddiy reostatda suriluvchi D kontaktni surish orqali nima o'zgaradi?",
+      "v": [
+        "Simning zanjirga ulangan AD qismining uzunligi",
+        "Tok manbaining kuchlanishi",
+        "Ampermetrning qarshiligi",
+        "Simning solishtirma qarshiligi"
+      ],
+      "t": 0,
+      "izoh": "Suriluvchi D kontaktni u yoq-bu yoqqa surib, simning zanjirga ulangan AD qismini uzunroq yoki qisqaroq qilish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#30143657"
+    },
+    {
+      "q": "Oddiy reostatda AD qismining uzunligini o'zgartirish natijasida nima sodir bo'ladi?",
+      "v": [
+        "O'tkazgichning qarshiligi, binobarin, zanjirdan o'tayotgan tok kuchi o'zgaradi",
+        "Faqat simning harorati o'zgaradi",
+        "Voltmetrning ko'rsatishi o'zgarmaydi",
+        "Simning solishtirma qarshiligi o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Bunda o'tkazgichning qarshiligi, binobarin, zanjirdan o'tayotgan tok kuchi o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#9a067aa5"
+    },
+    {
+      "q": "56-rasmda tasvirlangan maktab reostatida nikelin sim nimaga o'ralgan bo'ladi?",
+      "v": [
+        "Sopol silindrga",
+        "Metall sterjenga",
+        "Chinni karkasga",
+        "Mis o'ramga"
+      ],
+      "t": 0,
+      "izoh": "Bunday reostatda nikelin sim sopol silindrga o'ralgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#206f194d"
+    },
+    {
+      "q": "Maktab reostatida sopol silindrga o'ralgan sim qanday qoplangan?",
+      "v": [
+        "Yupqa izolyatsiya qatlami bilan",
+        "Emal qatlami bilan",
+        "Qalin qoplam bilan",
+        "Qog'oz qatlam bilan"
+      ],
+      "t": 0,
+      "izoh": "Sim yupqa izolyatsiya qatlami bilan qoplangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#b511aafc"
+    },
+    {
+      "q": "Maktab reostatida simning uchlari qaysi qisqichlarga ulangan?",
+      "v": [
+        "1 va 1' qisqichlarga",
+        "2 va 2' qisqichlarga",
+        "3-surgichga",
+        "4-surgichga"
+      ],
+      "t": 0,
+      "izoh": "Simning uchlari 1 va 1' qisqichlarga ulangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#89c73817"
+    },
+    {
+      "q": "Maktab reostatida metall sterjen qaysi qisqichlarga mahkamlangan?",
+      "v": [
+        "2 va 2' qisqichlarga",
+        "1 va 1' qisqichlarga",
+        "Sim o'ramlariga",
+        "Sopol silindrga"
+      ],
+      "t": 0,
+      "izoh": "Metall sterjen 2 va 2' qisqichlarga mahkamlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#53b078c6"
+    },
+    {
+      "q": "Maktab reostatidagi 3-surgichning vazifasi nima?",
+      "v": [
+        "Sim o'ramlari bilan sterjenni bir-biriga kontaktga keltirish",
+        "Simni sopol silindrga mahkamlash",
+        "Zanjirni tok manbaiga ulash",
+        "Reostatni himoya qilish"
+      ],
+      "t": 0,
+      "izoh": "Sterjendagi 3-surgich sim o'ramlari bilan sterjenni bir-biriga kontaktga keltiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#06e90fcf"
+    },
+    {
+      "q": "Surgichning o'ramlarga ishqalanishi natijasida nima sodir bo'ladi?",
+      "v": [
+        "Uning kontakti ostidagi izolyatsiyalangan qatlam yediriladi",
+        "Simning solishtirma qarshiligi oshadi",
+        "Sopol silindr eriydi",
+        "Sterjen qizib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Surgichning o'ramlarga ishqalanishi natijasida uning kontakti ostidagi izolyatsiyalangan qatlam yediriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#0aecf4f9"
+    },
+    {
+      "q": "57-rasmdagi zanjirda 1-qisqichga kelgan tok qanday yo'l bosib o'tadi?",
+      "v": [
+        "O'ram va surgich kontakti orqali sterjenga o'tib, sterjen uchidagi 2-qisqich orqali zanjir bo'ylab davom etadi",
+        "To'g'ridan-to'g'ri 2-qisqichga o'tadi",
+        "Sopol silindr orqali o'tadi",
+        "Voltmetr orqali o'tadi"
+      ],
+      "t": 0,
+      "izoh": "Tok o'ram va surgich kontakti orqali sterjenga o'tadi, sterjen uchidagi 2-qisqich orqali zanjir bo'ylab o'z oqimini davom ettiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#3b04ac0b"
+    },
+    {
+      "q": "Reostat surgichini sterjen bo'ylab surish bilan nima o'zgaradi?",
+      "v": [
+        "Uning qarshiligi, binobarin, zanjirdagi tok kuchi bir me'yorda o'zgaradi",
+        "Faqat kuchlanish o'zgaradi",
+        "Tok manbai EYuK o'zgaradi",
+        "Ampermetrning qarshiligi o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Reostat surgichini sterjen bo'ylab surish bilan uning qarshiligini, binobarin, zanjirdagi tok kuchini bir me'yorda o'zgartirish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#eacf500a"
+    },
+    {
+      "q": "Potensiometr yordamida zanjirda nima rostlanadi?",
+      "v": [
+        "Elektr zanjirdagi kuchlanish",
+        "Elektr zaryadi miqdori",
+        "Tok manbaining quvvati",
+        "O'tkazgichning harorati"
+      ],
+      "t": 0,
+      "izoh": "Reostatdan potensiometr sifatida foydalanish, ya'ni uning yordamida elektr zanjirdagi kuchlanishni rostlash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#f12d1ee6"
+    },
+    {
+      "q": "Reostatdan potensiometr sifatida foydalanish uchun u zanjirga qanday ulanadi?",
+      "v": [
+        "58-a rasmda ko'rsatilgandek ulanadi",
+        "55-rasmdagi oddiy reostatdek faqat ikki qisqich orqali",
+        "Ampermetr bilan parallel",
+        "Faqat bitta sim uchi orqali"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanishni rostlash uchun reostatni elektr zanjirga 58-a rasmda ko'rsatilgandek ulash lozim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#e33506f4"
+    },
+    {
+      "q": "Amalda qo'llaniladigan potensiometrlar ko'proq qanday shaklda bo'ladi?",
+      "v": [
+        "58-b rasmda ko'rsatilganidek aylana shaklida",
+        "To'g'ri chiziqli sterjen shaklida",
+        "Spiral shaklida",
+        "Silindr shaklida"
+      ],
+      "t": 0,
+      "izoh": "Amalda qo'llaniladigan potensiometrlar ko'proq 58-b rasmda ko'rsatilganidek aylana shaklida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#d0987da2"
+    },
+    {
+      "q": "Aylana shaklidagi potensiometrning murvati burilsa nima sodir bo'ladi?",
+      "v": [
+        "4-surgich aylana shaklida harakat qiladi va zanjirdagi kuchlanish bir tekisda o'zgaradi",
+        "Reostatning qarshiligi o'zgarmay qoladi",
+        "Zanjirdagi tok kuchi nolga teng bo'ladi",
+        "Murvat zanjirni uzib yuboradi"
+      ],
+      "t": 0,
+      "izoh": "Murvat burilsa, 4-surgich aylana shaklida harakat qiladi va zanjirdagi kuchlanish bir tekisda o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#41c44b02"
+    },
+    {
+      "q": "Radiotexnikada potensiometrlardan qanday maqsadda foydalaniladi?",
+      "v": [
+        "Radio va televizorlar ovozining past-balandligini o'zgartirishda",
+        "Elektr lampalarini almashtirishda",
+        "Tok manbaini zaryadlashda",
+        "Antenna kuchini oshirishda"
+      ],
+      "t": 0,
+      "izoh": "Radiotexnikada, jumladan, radio va televizorlar ovozining past-balandligini o'zgartirishda potensiometrlardan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#acfdecf3"
+    },
+    {
+      "q": "Kinoteatr zali chiroqlarini asta-sekin o'chirish uchun tok bir me'yorda qanday o'zgartiriladi?",
+      "v": [
+        "Kamaytiriladi",
+        "Oshiriladi",
+        "O'zgarmas qoldiriladi",
+        "Tez-tez uzilib ulanadi"
+      ],
+      "t": 0,
+      "izoh": "Kinoteatr zali chiroqlarini asta-sekin o'chirish uchun zanjirdagi tok bir me'yorda kamaytiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#0ab83781"
+    },
+    {
+      "q": "Elektropoyezd tezligini asta-sekin oshirish uchun elektr dvigateldagi tok qanday o'zgartiriladi?",
+      "v": [
+        "Bir me'yorda oshiriladi",
+        "Bir me'yorda kamaytiriladi",
+        "Nolga tushiriladi",
+        "Tez-tez yo'nalishi o'zgartiriladi"
+      ],
+      "t": 0,
+      "izoh": "Elektropoyezd tezligini asta-sekin oshirish uchun elektr dvigateldagi tok bir me'yorda oshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#282ec875"
+    },
+    {
+      "q": "Ommetr nimani o'lchash uchun ishlatiladi?",
+      "v": [
+        "Rezistorlarning qarshiligini",
+        "Zanjirdagi tok kuchini",
+        "O'tkazgich uchlaridagi kuchlanishni",
+        "Elektr zaryadini"
+      ],
+      "t": 0,
+      "izoh": "Ommetr yordamida rezistorlarning qarshiligini o'lchash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#05e55706"
+    },
+    {
+      "q": "Reostat surgichini siljitganda zanjirdagi tok kuchi nima sababdan o'zgaradi?",
+      "v": [
+        "Zanjirga ulangan sim qismining uzunligi o'zgarib, qarshilik o'zgaradi",
+        "Tok manbai kuchlanishi o'zgaradi",
+        "Ampermetr qarshiligi o'zgaradi",
+        "Simning solishtirma qarshiligi o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Surgich siljiganda zanjirga ulangan sim qismining uzunligi o'zgaradi, natijada qarshilik va tok kuchi o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#f9432916"
+    },
+    {
+      "q": "Reostat va potensiometrning asosiy farqi nimada?",
+      "v": [
+        "Reostat tok kuchini, potensiometr kuchlanishni rostlash uchun qo'llaniladi",
+        "Reostat faqat o'zgaruvchan tokda, potensiometr faqat doimiy tokda ishlaydi",
+        "Reostat katta qarshilikli, potensiometr kichik qarshilikli",
+        "Reostat metall simdan, potensiometr chinnidan yasaladi"
+      ],
+      "t": 0,
+      "izoh": "Reostat tok kuchini rostlash, potensiometr kuchlanishni rostlash uchun qo'llaniladi; potensiometr sifatida reostat maxsus sxema bo'yicha ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar#d8c55468"
+    }
+  ]
+}

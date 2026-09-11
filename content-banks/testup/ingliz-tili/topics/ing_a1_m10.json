@@ -1,0 +1,1306 @@
+{
+  "nom": "Possessive adjectives (my, your...)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "This is ___ book. I like it.",
+      "v": [
+        "my",
+        "your",
+        "his",
+        "her"
+      ],
+      "t": 0,
+      "izoh": "Mening -> my.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#385a681b"
+    },
+    {
+      "q": "That is Tom's car. ___ car is fast.",
+      "v": [
+        "His",
+        "Her",
+        "My",
+        "Their"
+      ],
+      "t": 0,
+      "izoh": "Uning (erkak) -> his.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#e17e800e"
+    },
+    {
+      "q": "Anna has a cat. ___ cat is white.",
+      "v": [
+        "Her",
+        "His",
+        "My",
+        "Our"
+      ],
+      "t": 0,
+      "izoh": "Uning (ayol) -> her.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#8edc8a04"
+    },
+    {
+      "q": "We have a house. ___ house is big.",
+      "v": [
+        "Our",
+        "Their",
+        "My",
+        "Your"
+      ],
+      "t": 0,
+      "izoh": "Bizning -> our.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#63d71648"
+    },
+    {
+      "q": "You have a pen. ___ pen is blue.",
+      "v": [
+        "Your",
+        "My",
+        "His",
+        "Her"
+      ],
+      "t": 0,
+      "izoh": "Sening/sizning -> your.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#856a4338"
+    },
+    {
+      "q": "They have a dog. ___ dog is small.",
+      "v": [
+        "Their",
+        "Our",
+        "His",
+        "Her"
+      ],
+      "t": 0,
+      "izoh": "Ularning -> their.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#8541b07f"
+    },
+    {
+      "q": "The dog wags ___ tail.",
+      "v": [
+        "its",
+        "his",
+        "her",
+        "their"
+      ],
+      "t": 0,
+      "izoh": "Hayvon/narsa egaligi -> its.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#0ff553b4"
+    },
+    {
+      "q": "I love ___ family.",
+      "v": [
+        "my",
+        "your",
+        "his",
+        "our"
+      ],
+      "t": 0,
+      "izoh": "Mening -> my.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#2e36999c"
+    },
+    {
+      "q": "Sam is happy. ___ friends are here.",
+      "v": [
+        "His",
+        "Her",
+        "Its",
+        "My"
+      ],
+      "t": 0,
+      "izoh": "Uning (erkak) -> his.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#c9b1e0ea"
+    },
+    {
+      "q": "Maria and I are sisters. ___ mother is kind.",
+      "v": [
+        "Our",
+        "Their",
+        "My",
+        "Your"
+      ],
+      "t": 0,
+      "izoh": "Maria va men (biz) -> our.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#624d5c58"
+    },
+    {
+      "q": "Is this ___ bag? It is Lola's.",
+      "v": [
+        "her",
+        "his",
+        "its",
+        "my"
+      ],
+      "t": 0,
+      "izoh": "Uning (ayol) -> her.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#d38f9002"
+    },
+    {
+      "q": "You and Tom are late. ___ bus is here.",
+      "v": [
+        "Your",
+        "Our",
+        "His",
+        "Her"
+      ],
+      "t": 0,
+      "izoh": "Sizlarning (you) -> your.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#094b3e7b"
+    },
+    {
+      "q": "The children play with ___ toys.",
+      "v": [
+        "their",
+        "his",
+        "her",
+        "its"
+      ],
+      "t": 0,
+      "izoh": "Ularning -> their.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#f23392e7"
+    },
+    {
+      "q": "He reads ___ book every day.",
+      "v": [
+        "his",
+        "her",
+        "my",
+        "our"
+      ],
+      "t": 0,
+      "izoh": "Uning (erkak) -> his.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#45d044cc"
+    },
+    {
+      "q": "The bird builds ___ nest.",
+      "v": [
+        "its",
+        "his",
+        "her",
+        "their"
+      ],
+      "t": 0,
+      "izoh": "Hayvon egaligi -> its.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#62557a72"
+    },
+    {
+      "q": "I have a cat. ___ cat is white.",
+      "v": [
+        "My",
+        "Your",
+        "His",
+        "Her"
+      ],
+      "t": 0,
+      "izoh": "I -> my.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#ab65eebb"
+    },
+    {
+      "q": "You have a book. ___ book is red.",
+      "v": [
+        "My",
+        "Your",
+        "His",
+        "Its"
+      ],
+      "t": 1,
+      "izoh": "You -> your.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#6094cdb7"
+    },
+    {
+      "q": "He has a car. ___ car is fast.",
+      "v": [
+        "Her",
+        "His",
+        "Its",
+        "Their"
+      ],
+      "t": 1,
+      "izoh": "He -> his.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#7d21fca5"
+    },
+    {
+      "q": "She has a bag. ___ bag is small.",
+      "v": [
+        "His",
+        "Her",
+        "Its",
+        "Your"
+      ],
+      "t": 1,
+      "izoh": "She -> her.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#adce174b"
+    },
+    {
+      "q": "The dog has a bone. ___ bone is big.",
+      "v": [
+        "His",
+        "Her",
+        "Its",
+        "Their"
+      ],
+      "t": 2,
+      "izoh": "Hayvon -> its.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#330db7ab"
+    },
+    {
+      "q": "We have a house. ___ house is new.",
+      "v": [
+        "Your",
+        "Their",
+        "Our",
+        "His"
+      ],
+      "t": 2,
+      "izoh": "We -> our.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#e4e3aa8f"
+    },
+    {
+      "q": "They have a ball. ___ ball is round.",
+      "v": [
+        "Our",
+        "Your",
+        "Their",
+        "Her"
+      ],
+      "t": 2,
+      "izoh": "They -> their.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#8eaea5a7"
+    },
+    {
+      "q": "Tom is a boy. ___ name is Tom.",
+      "v": [
+        "Her",
+        "His",
+        "Its",
+        "My"
+      ],
+      "t": 1,
+      "izoh": "Erkak -> his.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#460e3a90"
+    },
+    {
+      "q": "Anna is a girl. ___ name is Anna.",
+      "v": [
+        "His",
+        "Her",
+        "Their",
+        "Its"
+      ],
+      "t": 1,
+      "izoh": "Ayol -> her.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#61eaf827"
+    },
+    {
+      "q": "I am a student. ___ teacher is kind.",
+      "v": [
+        "My",
+        "Our",
+        "Your",
+        "His"
+      ],
+      "t": 0,
+      "izoh": "I -> my.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#a6240a91"
+    },
+    {
+      "q": "You and I are friends. ___ school is big.",
+      "v": [
+        "My",
+        "Our",
+        "Their",
+        "Your"
+      ],
+      "t": 1,
+      "izoh": "we -> our.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#4b992226"
+    },
+    {
+      "q": "The children are happy. ___ toys are new.",
+      "v": [
+        "His",
+        "Her",
+        "Their",
+        "Its"
+      ],
+      "t": 2,
+      "izoh": "They -> their.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#53db4ab7"
+    },
+    {
+      "q": "This is a bird. ___ wings are small.",
+      "v": [
+        "His",
+        "Its",
+        "Their",
+        "Her"
+      ],
+      "t": 1,
+      "izoh": "Hayvon -> its.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#e96a9730"
+    },
+    {
+      "q": "Ali, is this ___ pen?",
+      "v": [
+        "my",
+        "your",
+        "his",
+        "their"
+      ],
+      "t": 1,
+      "izoh": "Sen -> your.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#b5c7c25c"
+    },
+    {
+      "q": "My mother is nice. I love ___ smile.",
+      "v": [
+        "his",
+        "her",
+        "its",
+        "your"
+      ],
+      "t": 1,
+      "izoh": "Mother -> her.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#8d7dc6c6"
+    },
+    {
+      "q": "My father works hard. ___ job is difficult.",
+      "v": [
+        "Her",
+        "His",
+        "Its",
+        "Our"
+      ],
+      "t": 1,
+      "izoh": "Father -> his.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#a2890697"
+    },
+    {
+      "q": "We are a family. ___ home is warm.",
+      "v": [
+        "Your",
+        "Our",
+        "Their",
+        "My"
+      ],
+      "t": 1,
+      "izoh": "We -> our.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#eb138b35"
+    },
+    {
+      "q": "The students study. ___ books are open.",
+      "v": [
+        "His",
+        "Their",
+        "Her",
+        "Its"
+      ],
+      "t": 1,
+      "izoh": "They -> their.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#6bcc2261"
+    },
+    {
+      "q": "I like my room. ___ walls are blue.",
+      "v": [
+        "Its",
+        "His",
+        "Her",
+        "Their"
+      ],
+      "t": 0,
+      "izoh": "Room -> its.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#e4987a9b"
+    },
+    {
+      "q": "You are a teacher. ___ students like you.",
+      "v": [
+        "My",
+        "Your",
+        "Our",
+        "His"
+      ],
+      "t": 1,
+      "izoh": "You -> your.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#d165c53f"
+    },
+    {
+      "q": "He plays football. ___ team is strong.",
+      "v": [
+        "Her",
+        "His",
+        "Its",
+        "Their"
+      ],
+      "t": 1,
+      "izoh": "He -> his.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#bbb75f28"
+    },
+    {
+      "q": "She sings well. ___ voice is beautiful.",
+      "v": [
+        "His",
+        "Her",
+        "Its",
+        "Your"
+      ],
+      "t": 1,
+      "izoh": "She -> her.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#6c5cf585"
+    },
+    {
+      "q": "I have two dogs. ___ dogs are friendly.",
+      "v": [
+        "My",
+        "Your",
+        "His",
+        "Their"
+      ],
+      "t": 0,
+      "izoh": "I -> my.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#56d51ff1"
+    },
+    {
+      "q": "The cat is hungry. ___ food is here.",
+      "v": [
+        "His",
+        "Her",
+        "Its",
+        "Our"
+      ],
+      "t": 2,
+      "izoh": "Hayvon -> its.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#2844fa03"
+    },
+    {
+      "q": "We won the game. ___ team is happy.",
+      "v": [
+        "My",
+        "Our",
+        "Their",
+        "Your"
+      ],
+      "t": 1,
+      "izoh": "We -> our.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#378a9a9e"
+    },
+    {
+      "q": "They live here. ___ house is near.",
+      "v": [
+        "Our",
+        "Their",
+        "Your",
+        "His"
+      ],
+      "t": 1,
+      "izoh": "They -> their.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#643016a4"
+    },
+    {
+      "q": "You have a sister. ___ sister is tall.",
+      "v": [
+        "My",
+        "Your",
+        "His",
+        "Her"
+      ],
+      "t": 1,
+      "izoh": "You -> your.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#4f127d4c"
+    },
+    {
+      "q": "Sara and Lola are here. ___ mother is a doctor.",
+      "v": [
+        "His",
+        "Her",
+        "Their",
+        "Our"
+      ],
+      "t": 2,
+      "izoh": "They -> their.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#7dc0eccd"
+    },
+    {
+      "q": "I read a book. ___ pages are old.",
+      "v": [
+        "Its",
+        "His",
+        "Their",
+        "Her"
+      ],
+      "t": 0,
+      "izoh": "Book -> its.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#b2ce0d6d"
+    },
+    {
+      "q": "He is my brother. ___ room is upstairs.",
+      "v": [
+        "Her",
+        "His",
+        "Its",
+        "Your"
+      ],
+      "t": 1,
+      "izoh": "Brother -> his.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#af7d84dd"
+    },
+    {
+      "q": "I have a dog. ___ dog is small.",
+      "v": [
+        "My",
+        "Your",
+        "His",
+        "Her"
+      ],
+      "t": 0,
+      "izoh": "'I' uchun 'my'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#6304b36d"
+    },
+    {
+      "q": "I love ___ family very much.",
+      "v": [
+        "your",
+        "my",
+        "its",
+        "their"
+      ],
+      "t": 1,
+      "izoh": "'I' uchun 'my'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#bb0916d7"
+    },
+    {
+      "q": "I clean ___ room every day.",
+      "v": [
+        "his",
+        "her",
+        "my",
+        "our"
+      ],
+      "t": 2,
+      "izoh": "'I' uchun 'my'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#2a503d14"
+    },
+    {
+      "q": "I like ___ new bike.",
+      "v": [
+        "my",
+        "your",
+        "its",
+        "their"
+      ],
+      "t": 0,
+      "izoh": "'I' uchun 'my'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#4826c255"
+    },
+    {
+      "q": "I write with ___ pen.",
+      "v": [
+        "her",
+        "my",
+        "his",
+        "your"
+      ],
+      "t": 1,
+      "izoh": "'I' uchun 'my'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#d3c68152"
+    },
+    {
+      "q": "You are a student. ___ teacher is kind.",
+      "v": [
+        "My",
+        "His",
+        "Your",
+        "Her"
+      ],
+      "t": 2,
+      "izoh": "'you' uchun 'your'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#a2a4667d"
+    },
+    {
+      "q": "Where is ___ book, John?",
+      "v": [
+        "your",
+        "my",
+        "his",
+        "its"
+      ],
+      "t": 0,
+      "izoh": "'you' uchun 'your'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#6c8be51b"
+    },
+    {
+      "q": "You and ___ sister are tall.",
+      "v": [
+        "my",
+        "your",
+        "his",
+        "our"
+      ],
+      "t": 1,
+      "izoh": "'you' uchun 'your'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#f9edc690"
+    },
+    {
+      "q": "Please open ___ eyes.",
+      "v": [
+        "her",
+        "his",
+        "your",
+        "its"
+      ],
+      "t": 2,
+      "izoh": "'you' uchun 'your'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#ea74cb7e"
+    },
+    {
+      "q": "Is this ___ bag?",
+      "v": [
+        "your",
+        "my",
+        "their",
+        "his"
+      ],
+      "t": 0,
+      "izoh": "'you' uchun 'your'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#13cfe0a6"
+    },
+    {
+      "q": "He is Tom. ___ car is blue.",
+      "v": [
+        "Her",
+        "His",
+        "Its",
+        "Your"
+      ],
+      "t": 1,
+      "izoh": "'he' uchun 'his'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#c73e3ac0"
+    },
+    {
+      "q": "My brother lost ___ keys.",
+      "v": [
+        "her",
+        "its",
+        "his",
+        "my"
+      ],
+      "t": 2,
+      "izoh": "'he' uchun 'his'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#94e28a7f"
+    },
+    {
+      "q": "He reads ___ book at night.",
+      "v": [
+        "his",
+        "her",
+        "your",
+        "their"
+      ],
+      "t": 0,
+      "izoh": "'he' uchun 'his'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#17f2efa7"
+    },
+    {
+      "q": "Ali plays with ___ friends.",
+      "v": [
+        "her",
+        "its",
+        "his",
+        "my"
+      ],
+      "t": 2,
+      "izoh": "'he' uchun 'his'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#5f4e0982"
+    },
+    {
+      "q": "The boy eats ___ lunch.",
+      "v": [
+        "his",
+        "her",
+        "our",
+        "your"
+      ],
+      "t": 0,
+      "izoh": "'he' uchun 'his'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#8b448b4a"
+    },
+    {
+      "q": "She is Anna. ___ dress is red.",
+      "v": [
+        "His",
+        "Her",
+        "Its",
+        "Your"
+      ],
+      "t": 1,
+      "izoh": "'she' uchun 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#4c51dbcc"
+    },
+    {
+      "q": "My sister loves ___ cat.",
+      "v": [
+        "his",
+        "its",
+        "her",
+        "my"
+      ],
+      "t": 2,
+      "izoh": "'she' uchun 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#6abe5bd3"
+    },
+    {
+      "q": "She washes ___ hands.",
+      "v": [
+        "her",
+        "his",
+        "your",
+        "their"
+      ],
+      "t": 0,
+      "izoh": "'she' uchun 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#177508af"
+    },
+    {
+      "q": "The girl rides ___ bike.",
+      "v": [
+        "his",
+        "her",
+        "our",
+        "its"
+      ],
+      "t": 1,
+      "izoh": "'she' uchun 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#c730568f"
+    },
+    {
+      "q": "Maria calls ___ mother.",
+      "v": [
+        "her",
+        "his",
+        "your",
+        "our"
+      ],
+      "t": 0,
+      "izoh": "'she' uchun 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#aeee1b13"
+    },
+    {
+      "q": "The cat drinks ___ milk.",
+      "v": [
+        "its",
+        "his",
+        "her",
+        "your"
+      ],
+      "t": 0,
+      "izoh": "Hayvon uchun 'its'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#5db46e71"
+    },
+    {
+      "q": "The tree loses ___ leaves in autumn.",
+      "v": [
+        "his",
+        "its",
+        "her",
+        "their"
+      ],
+      "t": 1,
+      "izoh": "Narsa uchun 'its'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#ffa2e0d3"
+    },
+    {
+      "q": "The company changed ___ name.",
+      "v": [
+        "his",
+        "her",
+        "its",
+        "their"
+      ],
+      "t": 2,
+      "izoh": "Narsa uchun 'its'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#26160578"
+    },
+    {
+      "q": "We are a team. ___ coach is strong.",
+      "v": [
+        "Their",
+        "Our",
+        "Your",
+        "His"
+      ],
+      "t": 1,
+      "izoh": "'we' uchun 'our'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#3906234e"
+    },
+    {
+      "q": "We love ___ school.",
+      "v": [
+        "their",
+        "our",
+        "your",
+        "its"
+      ],
+      "t": 1,
+      "izoh": "'we' uchun 'our'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#d07630bc"
+    },
+    {
+      "q": "My friend and I do ___ homework together.",
+      "v": [
+        "their",
+        "your",
+        "our",
+        "his"
+      ],
+      "t": 2,
+      "izoh": "'we' uchun 'our'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#5d61b137"
+    },
+    {
+      "q": "We clean ___ house on Sunday.",
+      "v": [
+        "our",
+        "their",
+        "your",
+        "its"
+      ],
+      "t": 0,
+      "izoh": "'we' uchun 'our'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#9bc2dc9b"
+    },
+    {
+      "q": "We invite ___ friends to the party.",
+      "v": [
+        "their",
+        "our",
+        "your",
+        "his"
+      ],
+      "t": 1,
+      "izoh": "'we' uchun 'our'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#47c22cab"
+    },
+    {
+      "q": "They are students. ___ books are new.",
+      "v": [
+        "Our",
+        "Their",
+        "Your",
+        "His"
+      ],
+      "t": 1,
+      "izoh": "'they' uchun 'their'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#e31f9e77"
+    },
+    {
+      "q": "My parents sold ___ old car.",
+      "v": [
+        "their",
+        "our",
+        "your",
+        "his"
+      ],
+      "t": 0,
+      "izoh": "'they' uchun 'their'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#613b24d7"
+    },
+    {
+      "q": "The boys ride ___ bikes to school.",
+      "v": [
+        "its",
+        "their",
+        "our",
+        "her"
+      ],
+      "t": 1,
+      "izoh": "'they' uchun 'their'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#70685904"
+    },
+    {
+      "q": "Tom and Ann love ___ dog.",
+      "v": [
+        "his",
+        "her",
+        "their",
+        "our"
+      ],
+      "t": 2,
+      "izoh": "'they' uchun 'their'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#e6fc20e4"
+    },
+    {
+      "q": "Choose the correct sentence:",
+      "v": [
+        "She love her mother.",
+        "She loves her mother.",
+        "She loves his mother.",
+        "She loves she mother."
+      ],
+      "t": 1,
+      "izoh": "'she' uchun 'her' va 'loves' to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#8105887a"
+    },
+    {
+      "q": "Choose the correct sentence:",
+      "v": [
+        "He plays with his friends.",
+        "He plays with her friends.",
+        "He plays with him friends.",
+        "He play with his friends."
+      ],
+      "t": 0,
+      "izoh": "'he' uchun 'his'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#8105887a~2"
+    },
+    {
+      "q": "Choose the correct sentence:",
+      "v": [
+        "We do their homework.",
+        "We do our homework.",
+        "We do your homework.",
+        "We do us homework."
+      ],
+      "t": 1,
+      "izoh": "'we' uchun 'our'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#8105887a~3"
+    },
+    {
+      "q": "Choose the correct sentence:",
+      "v": [
+        "The dog eats her food.",
+        "The dog eats his food.",
+        "The dog eats its food.",
+        "The dog eats their food."
+      ],
+      "t": 2,
+      "izoh": "Hayvon uchun 'its'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#8105887a~4"
+    },
+    {
+      "q": "Choose the correct sentence:",
+      "v": [
+        "I like my new shoes.",
+        "I like me new shoes.",
+        "I like mine new shoes.",
+        "I like I new shoes."
+      ],
+      "t": 0,
+      "izoh": "'I' uchun 'my'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#8105887a~5"
+    },
+    {
+      "q": "Choose the correct sentence:",
+      "v": [
+        "They visit our grandma.",
+        "They visit their grandma.",
+        "They visit they grandma.",
+        "They visit them grandma."
+      ],
+      "t": 1,
+      "izoh": "'they' uchun 'their'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#8105887a~6"
+    },
+    {
+      "q": "Choose the correct sentence:",
+      "v": [
+        "You forget your keys.",
+        "You forget you keys.",
+        "You forget yours keys.",
+        "You forget yours' keys."
+      ],
+      "t": 0,
+      "izoh": "'you' uchun 'your'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#8105887a~7"
+    },
+    {
+      "q": "Choose the correct sentence:",
+      "v": [
+        "Anna calls she friend.",
+        "Anna calls her friend.",
+        "Anna calls hers friend.",
+        "Anna call her friend."
+      ],
+      "t": 1,
+      "izoh": "'she' uchun 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#8105887a~8"
+    },
+    {
+      "q": "Find the mistake: 'She reads his book.' (the book belongs to the girl)",
+      "v": [
+        "She",
+        "reads",
+        "his",
+        "book"
+      ],
+      "t": 2,
+      "izoh": "Qiz uchun 'her' bo'lishi kerak, 'his' emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#d5f6e723"
+    },
+    {
+      "q": "Find the mistake: 'The cat licks his paw.' (animal)",
+      "v": [
+        "cat",
+        "licks",
+        "his",
+        "paw"
+      ],
+      "t": 2,
+      "izoh": "Hayvon uchun 'its' to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#ed0d7aa4"
+    },
+    {
+      "q": "Find the mistake: 'We love their country.' (the speakers' own country)",
+      "v": [
+        "We",
+        "love",
+        "their",
+        "country"
+      ],
+      "t": 2,
+      "izoh": "'we' uchun 'our' bo'lishi kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#19a00b12"
+    },
+    {
+      "q": "Find the mistake: 'They ride our bikes.' (bikes belong to them)",
+      "v": [
+        "They",
+        "ride",
+        "our",
+        "bikes"
+      ],
+      "t": 2,
+      "izoh": "'they' uchun 'their' bo'lishi kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#7da10996"
+    },
+    {
+      "q": "Find the mistake: 'I like your idea.' (the idea is mine)",
+      "v": [
+        "I",
+        "like",
+        "your",
+        "idea"
+      ],
+      "t": 2,
+      "izoh": "'I' uchun 'my' bo'lishi kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#73235466"
+    },
+    {
+      "q": "Find the mistake: 'He washes her car.' (his own car)",
+      "v": [
+        "He",
+        "washes",
+        "her",
+        "car"
+      ],
+      "t": 2,
+      "izoh": "'he' uchun 'his' bo'lishi kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#f9441402"
+    },
+    {
+      "q": "Find the mistake: 'You lost his ticket.' (your own ticket)",
+      "v": [
+        "You",
+        "lost",
+        "his",
+        "ticket"
+      ],
+      "t": 2,
+      "izoh": "'you' uchun 'your' bo'lishi kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#885277fe"
+    },
+    {
+      "q": "Find the mistake: 'The bird feeds their babies.' (one bird)",
+      "v": [
+        "bird",
+        "feeds",
+        "their",
+        "babies"
+      ],
+      "t": 2,
+      "izoh": "Bitta qush uchun 'its' to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#098d9ecc"
+    },
+    {
+      "q": "Put in order: is / this / my / phone",
+      "v": [
+        "This is my phone.",
+        "Is this my phone.",
+        "My phone is this.",
+        "This my phone is."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: This is my phone.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#6a684c4d"
+    },
+    {
+      "q": "Put in order: her / loves / she / job",
+      "v": [
+        "She loves her job.",
+        "She her loves job.",
+        "Loves she her job.",
+        "Her job she loves."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: She loves her job.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#3ba7b2d1"
+    },
+    {
+      "q": "Put in order: our / we / clean / house",
+      "v": [
+        "We clean our house.",
+        "We our clean house.",
+        "Clean we our house.",
+        "House we clean our."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: We clean our house.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#4648343f"
+    },
+    {
+      "q": "Put in order: his / he / rides / bike",
+      "v": [
+        "He rides his bike.",
+        "He his rides bike.",
+        "Rides he his bike.",
+        "His bike he rides."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: He rides his bike.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#1a307dea"
+    },
+    {
+      "q": "Put in order: their / play / they / games",
+      "v": [
+        "They play their games.",
+        "They their play games.",
+        "Play they their games.",
+        "Their games they play."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: They play their games.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#80fdd5c2"
+    },
+    {
+      "q": "Put in order: your / open / please / book",
+      "v": [
+        "Please open your book.",
+        "Open please your book.",
+        "Your book please open.",
+        "Please your open book."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: Please open your book.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#5ed81b0d"
+    },
+    {
+      "q": "Match: I -> ?",
+      "v": [
+        "my",
+        "your",
+        "his",
+        "our"
+      ],
+      "t": 0,
+      "izoh": "'I' -> 'my'.",
+      "qiy": "oson",
+      "id": "ing_a1_m10#142947fb"
+    }
+  ]
+}

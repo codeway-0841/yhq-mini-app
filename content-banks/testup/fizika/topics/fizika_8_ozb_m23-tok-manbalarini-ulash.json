@@ -1,0 +1,396 @@
+{
+  "nom": "23-mavzu. Tok Manbalarini Ulash",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "23-§ dagi amaliy mashg'ulotning maqsadi nima?",
+      "v": [
+        "Tok manbalarini ulash hamda manba uchlaridagi kuchlanishni o'lchashni o'rganish",
+        "Elektr qarshilikni o'lchashni o'rganish",
+        "Ampermetrdan foydalanishni o'rganish",
+        "Kondensatorlarni zaryadlashni o'rganish"
+      ],
+      "t": 0,
+      "izoh": "Mashg'ulotning maqsadi: tok manbalarini ulash hamda manba uchlaridagi kuchlanishni o'lchashni o'rganish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#0d2104e8"
+    },
+    {
+      "q": "Amaliy mashg'ulot uchun qanday jihozlar kerak?",
+      "v": [
+        "3 dona 1,5 V li galvanik element, voltmetr, ulovchi simlar",
+        "Ikkita rezistor, ampermetr, kalit",
+        "Kondensator, multimetr, lampochka",
+        "Reostat, tok manbai, termometr"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar: 3 dona 1,5 V li galvanik element, voltmetr, ulovchi simlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#2094699b"
+    },
+    {
+      "q": "Mashg'ulotda har bir galvanik elementning kuchlanishi qancha?",
+      "v": [
+        "1,5 V",
+        "4,5 V",
+        "3 V",
+        "9 V"
+      ],
+      "t": 0,
+      "izoh": "Har biri 1,5 V bo'lgan 3 ta element olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#4819854f"
+    },
+    {
+      "q": "Tok manbaining uchlaridagi kuchlanishni o'lchashda manbaning musbat qutbi voltmetrning qaysi qisqichiga ulanadi?",
+      "v": [
+        "«+» qisqichiga",
+        "«−» qisqichiga",
+        "COM qisqichiga",
+        "Istalgan qisqichiga"
+      ],
+      "t": 0,
+      "izoh": "Manbaning musbat qutbi voltmetrning «+» qisqichiga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#15dbd6e8"
+    },
+    {
+      "q": "Tok manbaining manfiy qutbi voltmetrning qaysi qisqichiga ulanadi?",
+      "v": [
+        "«−» qisqichiga",
+        "«+» qisqichiga",
+        "V, Ω, mA qisqichiga",
+        "Hech qaysisiga"
+      ],
+      "t": 0,
+      "izoh": "Manbaning manfiy qutbi voltmetrning «−» qisqichiga ulanadi (68-rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#a9b99265"
+    },
+    {
+      "q": "Tok manbalarini ketma-ket ulashda birinchi elementning musbat qutbi ikkinchisining qaysi qutbiga ulanadi?",
+      "v": [
+        "Manfiy qutbiga",
+        "Musbat qutbiga",
+        "Voltmetr qisqichiga",
+        "Hech qayerga ulanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulashda birinchi elementning musbat qutbi ikkinchisining manfiy qutbiga ulanadi (69-rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#569da4b7"
+    },
+    {
+      "q": "69-rasmga ko'ra, har biri 1,5 V li uchta element ketma-ket ulanganda umumiy kuchlanish qancha bo'ladi?",
+      "v": [
+        "4,5 V",
+        "1,5 V",
+        "3 V",
+        "6 V"
+      ],
+      "t": 0,
+      "izoh": "Uchta 1,5 V li element ketma-ket ulanganda 4,5 V hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#e4daa46d"
+    },
+    {
+      "q": "Tok manbalari ketma-ket ulanganda natijaviy kuchlanish qanday hisoblanadi?",
+      "v": [
+        "U_um = U₁ + U₂ + U₃",
+        "U_um = U₁ = U₂ = U₃",
+        "U_um = U₁ · U₂ · U₃",
+        "U_um = U₁ − U₂ − U₃"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanganda natijaviy kuchlanish U_um = U₁ + U₂ + U₃ ifoda orqali hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#e2ecbad7"
+    },
+    {
+      "q": "Mashg'ulotda hosil qilingan elektr zanjiridagi umumiy kuchlanish (U_um) nima yordamida o'lchanadi?",
+      "v": [
+        "Voltmetr yordamida",
+        "Ampermetr yordamida",
+        "Milliampermetr yordamida",
+        "Reostat yordamida"
+      ],
+      "t": 0,
+      "izoh": "Umumiy kuchlanish (U_um) voltmetr yordamida o'lchanadi va natija jadvalga yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#6a6031a0"
+    },
+    {
+      "q": "Mashg'ulotda U₁ + U₂ + U₃ yig'indi hisoblanib, u qaysi qiymat bilan taqqoslanadi?",
+      "v": [
+        "Umumiy kuchlanish U_um qiymati bilan",
+        "Har bir element qarshiligi bilan",
+        "Zanjirdagi tok kuchi bilan",
+        "Voltmetrning ichki qarshiligi bilan"
+      ],
+      "t": 0,
+      "izoh": "U₁ + U₂ + U₃ yig'indi hisoblanib, umumiy kuchlanish U_um qiymati bilan taqqoslanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#be7df98a"
+    },
+    {
+      "q": "Multimetr yordamida qaysi fizik kattaliklarning qiymatlarini o'lchash mumkin?",
+      "v": [
+        "Elektr kuchlanish, elektr qarshilik, tok kuchi, hatto temperaturani ham",
+        "Faqat tok kuchini",
+        "Faqat kuchlanishni",
+        "Faqat elektr sig'imini"
+      ],
+      "t": 0,
+      "izoh": "Multimetr yordamida elektr kuchlanish, elektr qarshilik, tok kuchi, hattoki temperaturani ham o'lchash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#6a43b633"
+    },
+    {
+      "q": "Multimetrda kuchlanishni o'lchash uchun OFF holatda turgan murvat qayerga buriladi?",
+      "v": [
+        "DCV yozilgan tomonga",
+        "ACA yozilgan tomonga",
+        "Ω yozilgan tomonga",
+        "Hz yozilgan tomonga"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanishni o'lchash uchun murvat DCV yozilgan tomonga buriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#bb286255"
+    },
+    {
+      "q": "Multimetrda kuchlanishni o'lchash chegaralari sifatida qanday qiymatlar ko'rsatilgan?",
+      "v": [
+        "20, 200, 1000",
+        "2, 20, 200",
+        "10, 100, 500",
+        "5, 50, 5000"
+      ],
+      "t": 0,
+      "izoh": "DCV tomonda kuchlanishni o'lchash chegaralari 20, 200, 1000 ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#d80f4bde"
+    },
+    {
+      "q": "Galvanik elementning kuchlanishi 1,5 V atrofida bo'lgani uchun multimetr murvati qaysi o'lchash chegarasiga qo'yiladi?",
+      "v": [
+        "20 ko'rsatilgan nuqtaga",
+        "200 ko'rsatilgan nuqtaga",
+        "1000 ko'rsatilgan nuqtaga",
+        "2 ko'rsatilgan nuqtaga"
+      ],
+      "t": 0,
+      "izoh": "1,5 V atrofidagi kuchlanish uchun murvat o'lchash chegarasi deb 20 ko'rsatilgan nuqtaga ro'para qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#cc032cc8"
+    },
+    {
+      "q": "Multimetrning qaysi qisqichlariga ulangan ulovchi simlar tok manbaining qutblariga ulanadi?",
+      "v": [
+        "COM va V, Ω, mA qisqichlariga",
+        "Faqat COM qisqichiga",
+        "A va COM qisqichlariga",
+        "Ikkita V qisqichiga"
+      ],
+      "t": 0,
+      "izoh": "Multimetrning COM va V, Ω, mA qisqichlariga ulangan simlar tok manbai qutblariga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#ff0aa98c"
+    },
+    {
+      "q": "Tok manbaining kuchlanish qiymati multimetrda qayerda namoyon bo'ladi?",
+      "v": [
+        "Multimetr tablosiga chiqadi",
+        "Voltmetr strelkasida",
+        "Elementning korpusida",
+        "Jadvalda avtomatik yoziladi"
+      ],
+      "t": 0,
+      "izoh": "Tok manbaining kuchlanishining qiymati multimetr tablosiga chiqadi (70-rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#dea3f1b9"
+    },
+    {
+      "q": "Limon yoki apelsin yordamida batareyka yasashda qanday metallardan yasalgan simlar olinadi?",
+      "v": [
+        "Mis va temir",
+        "Mis va alyuminiy",
+        "Temir va rux",
+        "Mis va kumush"
+      ],
+      "t": 0,
+      "izoh": "Limon batareykasi uchun mis va temirdan yasalgan simlar olinadi (rasmda Fe va Cu ko'rsatilgan).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#2e652778"
+    },
+    {
+      "q": "Limon batareykasi tajribasida simlar limonga tiqilib, o'rtasiga nima ulanadi?",
+      "v": [
+        "Lampochka",
+        "Rezistor",
+        "Kondensator",
+        "Reostat"
+      ],
+      "t": 0,
+      "izoh": "Simlar limonga tiqilib, o'rtasiga lampochka ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#77090cda"
+    },
+    {
+      "q": "Limon batareykasida mis (Cu) sim qanday qutb vazifasini bajaradi (rasmdagi belgi bo'yicha)?",
+      "v": [
+        "Musbat qutb («+»)",
+        "Manfiy qutb («−»)",
+        "Neytral qutb",
+        "Yerga ulash"
+      ],
+      "t": 0,
+      "izoh": "Rasmda Cu ustida «+» belgisi ko'rsatilgan, ya'ni mis sim musbat qutb bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#446ebb2f"
+    },
+    {
+      "q": "Har biri 1,5 V li to'rtta galvanik element ketma-ket ulansa, umumiy kuchlanish qancha bo'ladi?",
+      "v": [
+        "6 V",
+        "1,5 V",
+        "3 V",
+        "4,5 V"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanganda kuchlanishlar qo'shiladi: 4 · 1,5 V = 6 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#7912063d"
+    },
+    {
+      "q": "Ikkita 1,5 V li element ketma-ket ulanganda umumiy kuchlanish necha volt bo'ladi?",
+      "v": [
+        "3 V",
+        "1,5 V",
+        "2,25 V",
+        "4,5 V"
+      ],
+      "t": 0,
+      "izoh": "U_um = 1,5 + 1,5 = 3 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#a023ff43"
+    },
+    {
+      "q": "Mashg'ulot jadvalining birinchi ustunida qanday qiymatlar yoziladi?",
+      "v": [
+        "Har bir galvanik elementning uchlaridagi kuchlanish qiymatlari (U₁, U₂, U₃)",
+        "Har bir elementning qarshiligi",
+        "Zanjirdagi tok kuchlari",
+        "Elementlarning massasi"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga har bir galvanik elementning uchlaridagi kuchlanish qiymatlari (U₁, U₂, U₃) yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#4e891213"
+    },
+    {
+      "q": "Amaliy mashg'ulotda o'lchangan har bir element kuchlanishi U₁, U₂, U₃ va umumiy kuchlanish U_um orasida qanday munosabat kutiladi?",
+      "v": [
+        "U_um = U₁ + U₂ + U₃",
+        "U_um = U₁ = U₂ = U₃",
+        "U_um = (U₁ + U₂ + U₃)/3",
+        "U_um = U₁ · U₂ · U₃"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanganda umumiy kuchlanish alohida kuchlanishlar yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#b7bee724"
+    },
+    {
+      "q": "Galvanik element kuchlanishini multimetrda o'lchaganda o'lchash chegarasini to'g'ri tanlash nima uchun muhim?",
+      "v": [
+        "Kuchlanish 1,5 V atrofida bo'lgani uchun 20 V chegara aniq o'lchash imkonini beradi",
+        "Chegara tanlash natijaga ta'sir qilmaydi",
+        "1000 V chegarada aniqroq ko'rsatadi",
+        "Chegarani tanlash elementni zaryadlaydi"
+      ],
+      "t": 0,
+      "izoh": "Kichik kuchlanishni aniq o'lchash uchun 20 V chegara tanlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#93d391a8"
+    },
+    {
+      "q": "Uchta element ketma-ket ulanganda ikkinchi elementning musbat qutbi qayerga ulanadi?",
+      "v": [
+        "Uchinchi elementning manfiy qutbiga",
+        "Uchinchi elementning musbat qutbiga",
+        "Birinchi elementning musbat qutbiga",
+        "Voltmetrning «−» qisqichiga"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi elementning musbat qutbi uchinchi elementning manfiy qutbiga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#941c80ae"
+    },
+    {
+      "q": "Amaliy mashg'ulot oxirida o'tkazilgan ish asosida nima qilinadi?",
+      "v": [
+        "Xulosa yoziladi",
+        "Jadval yo'q qilinadi",
+        "Elementlar zaryadlanadi",
+        "Voltmetr qarshiligi hisoblanadi"
+      ],
+      "t": 0,
+      "izoh": "Mashg'ulotning 6-bandida o'tkazilgan mashg'ulot asosida xulosa yozish ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m23-tok-manbalarini-ulash#d701e0ab"
+    }
+  ]
+}

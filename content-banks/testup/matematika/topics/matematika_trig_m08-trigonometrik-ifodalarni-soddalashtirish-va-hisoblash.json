@@ -1,0 +1,1609 @@
+{
+  "nom": "Trigonometrik ifodalarni soddalashtirish va hisoblash",
+  "bolim": "Trigonometriya",
+  "blok": "trig",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Fizika laboratoriyasida Aziz o'lchov natijalarini qayta ishlayotib, hisob varaqasida sin²α + cos²α + tg²α ifodasiga duch keldi. Uni eng sodda ko'rinishda ko'rsating.",
+      "v": [
+        "1/cos²α",
+        "1/sin²α",
+        "tg²α",
+        "cos²α/sin²α"
+      ],
+      "t": 0,
+      "izoh": "Asosiy ayniyatga ko'ra sin²α + cos²α = 1, shuning uchun ifoda 1 + tg²α ko'rinishga keladi. Ikkinchi asosiy ayniyat 1 + tg²α = 1/cos²α ni beradi. Javob: 1/cos²α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "pifagor-ayniyat-soddalashtirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#abd4c02b"
+    },
+    {
+      "q": "(1 − cos²β) · (1 + tg²β) ko'paytmasini soddalashtiring va natijani eng qisqa ko'rinishda yozing.",
+      "v": [
+        "ctg²β",
+        "tg²β",
+        "sin²β",
+        "cos²β"
+      ],
+      "t": 1,
+      "izoh": "Birinchi qavs 1 − cos²β = sin²β ga teng. Ikkinchi qavs 1 + tg²β = 1/cos²β ga teng. Ularni ko'paytiramiz: sin²β/cos²β = tg²β. Javob: tg²β.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "pifagor-ayniyat-soddalashtirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#f354f4be"
+    },
+    {
+      "q": "Dilnoza uy vazifasida cos⁴α − sin⁴α ifodasini soddalashtirishi kerak. To'g'ri natijani tanlang.",
+      "v": [
+        "cos2α",
+        "sin2α",
+        "cos²α + sin²α",
+        "−cos2α"
+      ],
+      "t": 0,
+      "izoh": "Ifoda kvadratlar ayirmasi: cos⁴α − sin⁴α = (cos²α − sin²α)(cos²α + sin²α). Ikkinchi qavs 1 ga teng, birinchi qavs esa ikkilangan burchak formulasi bo'yicha cos2α. Javob: cos2α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "pifagor-ayniyat-soddalashtirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#ed764a35"
+    },
+    {
+      "q": "sin²x · ctg²x + sin²x yig'indisi barcha joiz x qiymatlarida bir xil songa teng bo'ladi. Shu sonni toping.",
+      "v": [
+        "2sin²x",
+        "cos²x",
+        "1",
+        "sin²x"
+      ],
+      "t": 2,
+      "izoh": "ctg²x ni cos²x/sin²x ko'rinishda yozamiz: sin²x · cos²x/sin²x = cos²x. Endi yig'indi cos²x + sin²x ko'rinishga keldi, u esa asosiy ayniyat bo'yicha 1 ga teng. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "pifagor-ayniyat-soddalashtirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#3039f41b"
+    },
+    {
+      "q": "Bekzod keltirish formulalarini takrorlayapti. cos(90° − α) · tg(180° + α) · ctg α ko'paytmasini soddalashtiring.",
+      "v": [
+        "cos α",
+        "sin α",
+        "−sin α",
+        "tg α"
+      ],
+      "t": 1,
+      "izoh": "Keltirish formulalari: cos(90° − α) = sin α, tg(180° + α) = tg α. Demak ko'paytma sin α · tg α · ctg α ko'rinishiga keladi. tg α · ctg α = 1 bo'lgani uchun natija sin α. Javob: sin α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-va-ayniyat-birga",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#902c1554"
+    },
+    {
+      "q": "sin(180° − α) + cos(270° + α) yig'indisini soddalashtirilgan ko'rinishga keltiring va to'g'ri natijani belgilang.",
+      "v": [
+        "2cos α",
+        "0",
+        "sin α + cos α",
+        "2sin α"
+      ],
+      "t": 3,
+      "izoh": "sin(180° − α) = sin α, chunki ikkinchi chorakda sinus musbat. cos(270° + α) = sin α, chunki 270° da funksiya nomi almashadi va to'rtinchi chorakda kosinus musbat. Yig'indi sin α + sin α = 2sin α. Javob: 2sin α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-va-ayniyat-birga",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#26d0a99e"
+    },
+    {
+      "q": "Malika daftarida tg(90° + α) · tg(180° − α) ko'paytmasi yozilgan. Uni soddalashtirib, natijani ko'rsating.",
+      "v": [
+        "−1",
+        "tg²α",
+        "1",
+        "ctg²α"
+      ],
+      "t": 2,
+      "izoh": "tg(90° + α) = −ctg α, chunki 90° da funksiya nomi almashadi. tg(180° − α) = −tg α. Ko'paytma (−ctg α) · (−tg α) = ctg α · tg α = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-va-ayniyat-birga",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#596d6fd1"
+    },
+    {
+      "q": "sin(π − α) · cos(π/2 + α) · ctg(π + α) ifodasini soddalashtiring va natijani tanlang.",
+      "v": [
+        "sin α · cos α",
+        "−sin²α",
+        "−cos²α",
+        "−sin α · cos α"
+      ],
+      "t": 3,
+      "izoh": "sin(π − α) = sin α, cos(π/2 + α) = −sin α, ctg(π + α) = ctg α. Ko'paytma sin α · (−sin α) · cos α/sin α ko'rinishiga keladi. Bitta sin α qisqaradi va −sin α · cos α qoladi. Javob: −sin α · cos α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "keltirish-va-ayniyat-birga",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#ac4a5cad"
+    },
+    {
+      "q": "Nodira sinov testida cos(360° − α) + sin(270° − α) ifodasining qiymatini topishi kerak. To'g'ri javobni tanlang.",
+      "v": [
+        "2cos α",
+        "0",
+        "−2cos α",
+        "2sin α"
+      ],
+      "t": 1,
+      "izoh": "cos(360° − α) = cos α, chunki to'liq aylanish kosinusni o'zgartirmaydi. sin(270° − α) = −cos α, chunki 270° da nom almashadi va uchinchi chorakda sinus manfiy. Yig'indi cos α − cos α = 0. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-va-ayniyat-birga",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#719ad53b"
+    },
+    {
+      "q": "sin α = 3/5 va α burchak ikkinchi chorakda yotadi. (2cos α + sin α)/(cos α − 2sin α) kasrining qiymatini hisoblang.",
+      "v": [
+        "1/2",
+        "−11/2",
+        "−5/2",
+        "−1/2"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi chorakda kosinus manfiy, shuning uchun cos α = −4/5. Surat: 2 · (−4/5) + 3/5 = −1. Maxraj: −4/5 − 2 · 3/5 = −2. Kasr (−1)/(−2) = 1/2. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymat-berilgan-ifoda-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#5de99ad8"
+    },
+    {
+      "q": "Uchinchi chorakda yotuvchi β burchak uchun cos β = −8/17 ekani ma'lum. tg β + ctg β yig'indisining aniq qiymatini toping.",
+      "v": [
+        "−289/120",
+        "289/120",
+        "120/289",
+        "161/120"
+      ],
+      "t": 1,
+      "izoh": "Uchinchi chorakda sinus ham manfiy: sin β = −15/17. Yig'indini umumiy maxrajga keltiramiz: tg β + ctg β = (sin²β + cos²β)/(sin β · cos β) = 1/(sin β · cos β). Ko'paytma (−15/17) · (−8/17) = 120/289. Demak yig'indi 289/120. Javob: 289/120.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymat-berilgan-ifoda-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#df1283f9"
+    },
+    {
+      "q": "tg γ = 2 bo'lsa, (3sin γ − cos γ)/(sin γ + 4cos γ) kasrining qiymatini toping.",
+      "v": [
+        "7/6",
+        "1/6",
+        "6/5",
+        "5/6"
+      ],
+      "t": 3,
+      "izoh": "Surat va maxrajni cos γ ga bo'lamiz, chunki cos γ ≠ 0. Hosil bo'ladi: (3tg γ − 1)/(tg γ + 4). Endi tg γ = 2 ni qo'yamiz: (6 − 1)/(2 + 4) = 5/6. Javob: 5/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymat-berilgan-ifoda-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#02670b76"
+    },
+    {
+      "q": "Birinchi chorakda yotuvchi α burchak uchun cos α = 0,6. sin α − 2cos α ifodaning qiymatini hisoblang.",
+      "v": [
+        "0,2",
+        "−1",
+        "−0,4",
+        "0,4"
+      ],
+      "t": 2,
+      "izoh": "Asosiy ayniyatdan sin²α = 1 − 0,36 = 0,64, birinchi chorakda sinus musbat, demak sin α = 0,8. Endi qiymatni qo'yamiz: 0,8 − 2 · 0,6 = 0,8 − 1,2 = −0,4. Javob: −0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymat-berilgan-ifoda-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#e2e3385d"
+    },
+    {
+      "q": "ctg θ = −3/4 va θ burchak ikkinchi chorakda yotadi. 5sin θ + 3cos θ ifodaning qiymatini hisoblang.",
+      "v": [
+        "5,8",
+        "0,6",
+        "2,2",
+        "−2,2"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi chorakda sinus musbat, kosinus manfiy. ctg θ = cos θ/sin θ = −3/4 bo'lgani uchun sin θ = 4/5 va cos θ = −3/5. Qiymatlarni qo'yamiz: 5 · 0,8 + 3 · (−0,6) = 4 − 1,8 = 2,2. Javob: 2,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymat-berilgan-ifoda-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#812bf0d1"
+    },
+    {
+      "q": "(tg α + ctg α) · sin α · cos α ko'paytmasi barcha joiz α larda o'zgarmas bo'ladi. Uni toping.",
+      "v": [
+        "1",
+        "2",
+        "sin α · cos α",
+        "sin2α"
+      ],
+      "t": 0,
+      "izoh": "Qavs ichini umumiy maxrajga keltiramiz: tg α + ctg α = 1/(sin α · cos α). Bu ifodani sin α · cos α ga ko'paytirsak, ko'paytuvchilar qisqaradi va 1 qoladi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg-ctg-ayniyat-soddalashtirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#19b9e4f6"
+    },
+    {
+      "q": "Xurshid (1 + ctg²x) · sin²x · tg x ifodasini soddalashtirmoqchi. Barcha joiz x uchun natija qanday bo'ladi?",
+      "v": [
+        "ctg x",
+        "tg x",
+        "sin x",
+        "cos x"
+      ],
+      "t": 1,
+      "izoh": "Ayniyatga ko'ra 1 + ctg²x = 1/sin²x. Uni sin²x ga ko'paytirsak 1 hosil bo'ladi. Qolgan ko'paytuvchi tg x o'zgarishsiz qoladi. Javob: tg x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-ctg-ayniyat-soddalashtirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#b4a744df"
+    },
+    {
+      "q": "ctg²β − 1/sin²β ayirmasining qiymati barcha joiz β larda bir xil chiqadi. Shu qiymatni aniqlang.",
+      "v": [
+        "1",
+        "0",
+        "−1",
+        "−tg²β"
+      ],
+      "t": 2,
+      "izoh": "ctg²β ni cos²β/sin²β deb yozamiz va umumiy maxrajga keltiramiz: (cos²β − 1)/sin²β. Surat cos²β − 1 = −sin²β ga teng. Demak kasr −sin²β/sin²β = −1. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tg-ctg-ayniyat-soddalashtirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#4ede288b"
+    },
+    {
+      "q": "Sardor imtihonga tayyorlanayotib (1/cos²φ − 1) · ctg φ ifodasiga duch keldi. Uni soddalashtirilgan ko'rinishda yozing.",
+      "v": [
+        "tg φ",
+        "ctg φ",
+        "tg²φ",
+        "tg³φ"
+      ],
+      "t": 0,
+      "izoh": "Qavs ichi 1/cos²φ − 1 = tg²φ ga teng, chunki 1 + tg²φ = 1/cos²φ. Endi tg²φ · ctg φ ni hisoblaymiz: tg²φ · (1/tg φ) = tg φ. Javob: tg φ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-ctg-ayniyat-soddalashtirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#d4fdfd83"
+    },
+    {
+      "q": "Geodezist Otabek burchak hisobida sin75° ning aniq qiymatiga muhtoj bo'ldi. Qo'shish formulasidan foydalanib to'g'ri qiymatni tanlang.",
+      "v": [
+        "(√6 − √2)/4",
+        "(√6 + √2)/4",
+        "(√6 + √2)/2",
+        "(√3 + 1)/4"
+      ],
+      "t": 1,
+      "izoh": "75° ni 45° + 30° ko'rinishida yozamiz. sin(45° + 30°) = sin45° · cos30° + cos45° · sin30°. Bu (√2/2)(√3/2) + (√2/2)(1/2) = (√6 + √2)/4 ga teng. Javob: (√6 + √2)/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshish-formulasi-bilan-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#6eb1a6e3"
+    },
+    {
+      "q": "Nilufar sinov variantida sin40° · cos20° + cos40° · sin20° ifodasini uchratdi. Uning aniq qiymatini hisoblang.",
+      "v": [
+        "1/2",
+        "√2/2",
+        "√3/2",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "Bu ifoda sinusning yig'indi formulasi: sin a · cos b + cos a · sin b = sin(a + b). Demak ifoda sin(40° + 20°) = sin60° ga teng. sin60° = √3/2. Javob: √3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshish-formulasi-bilan-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#4fc665f7"
+    },
+    {
+      "q": "Tomning qiyaligini hisoblashda quruvchi Rustamga tg15° ning aniq qiymati kerak bo'ldi. To'g'ri qiymatni ko'rsating.",
+      "v": [
+        "2 + √3",
+        "√3 − 2",
+        "2 − √3",
+        "√3/3"
+      ],
+      "t": 2,
+      "izoh": "15° ni 45° − 30° deb olamiz: tg(45° − 30°) = (tg45° − tg30°)/(1 + tg45° · tg30°). Bu (1 − √3/3)/(1 + √3/3) ga teng. Surat va maxrajni 3 ga ko'paytirsak (3 − √3)/(3 + √3), maxrajdan qutulgach 2 − √3 chiqadi. Javob: 2 − √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshish-formulasi-bilan-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#fbe55b58"
+    },
+    {
+      "q": "Ikki o'lchov natijasi asosida cos70° · cos10° + sin70° · sin10° ifodasi tuzildi. Uning qiymatini toping.",
+      "v": [
+        "√3/2",
+        "√2/2",
+        "−1/2",
+        "1/2"
+      ],
+      "t": 3,
+      "izoh": "Kosinusning ayirma formulasi: cos a · cos b + sin a · sin b = cos(a − b). Demak ifoda cos(70° − 10°) = cos60° ga teng. cos60° = 1/2. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshish-formulasi-bilan-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#f659229c"
+    },
+    {
+      "q": "Bog'dagi suv purkagich o'tkir α burchak ostida otiladi va sin α = 0,8 ekani o'lchandi. sin2α ning qiymatini hisoblang.",
+      "v": [
+        "1,6",
+        "0,48",
+        "0,96",
+        "−0,28"
+      ],
+      "t": 2,
+      "izoh": "O'tkir burchak uchun cos α = √(1 − 0,64) = 0,6. Ikkilangan burchak formulasi sin2α = 2 · sin α · cos α. Demak sin2α = 2 · 0,8 · 0,6 = 0,96. Javob: 0,96.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikkilangan-burchak-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#881a7d97"
+    },
+    {
+      "q": "Elektr zanjiridagi faza burchagi uchun tg α = 3 ekani aniqlandi. cos2α ning qiymatini hisoblang.",
+      "v": [
+        "0,8",
+        "0,6",
+        "−0,6",
+        "−0,8"
+      ],
+      "t": 3,
+      "izoh": "Tangens orqali ikkilangan burchak formulasi: cos2α = (1 − tg²α)/(1 + tg²α). Qiymatni qo'yamiz: (1 − 9)/(1 + 9) = −8/10. Demak cos2α = −0,8. Javob: −0,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilangan-burchak-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#937008ed"
+    },
+    {
+      "q": "Kamola og'zaki hisob mashg'ulotida 8 · sin15° · cos15° ifodasini tez hisoblashi kerak. Natijani ko'rsating.",
+      "v": [
+        "4",
+        "2√3",
+        "√3",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "2 · sin15° · cos15° = sin30° bo'lgani uchun ifodani 4 · (2 · sin15° · cos15°) ko'rinishda yozamiz. Bu 4 · sin30° ga teng. sin30° = 1/2, demak natija 4 · 1/2 = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilangan-burchak-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#c1587d77"
+    },
+    {
+      "q": "Sinov mashg'ulotida Doston cos²15° − sin²15° ifodasini hisoblab, javobini tekshirmoqchi. To'g'ri qiymatni tanlang.",
+      "v": [
+        "√3/2",
+        "1/2",
+        "√2/2",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Ikkilangan burchak formulasi cos²a − sin²a = cos2a ni qo'llaymiz. Bu yerda a = 15°, demak ifoda cos30° ga teng. cos30° = √3/2. Javob: √3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilangan-burchak-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#b70bb5b2"
+    },
+    {
+      "q": "Nazorat ishida (sin75° − sin15°)/(cos75° + cos15°) kasrini soddalashtirib, son qiymatini topish talab qilingan. To'g'ri javobni tanlang.",
+      "v": [
+        "√3",
+        "√3/3",
+        "1/2",
+        "√2/2"
+      ],
+      "t": 1,
+      "izoh": "Suratni ko'paytmaga aylantiramiz: sin75° − sin15° = 2 · cos45° · sin30° = √2/2. Maxraj: cos75° + cos15° = 2 · cos45° · cos30° = √6/2. Kasr (√2/2) : (√6/2) = 1/√3 = √3/3. Javob: √3/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-kopaytma-aylantirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#6d3a87f4"
+    },
+    {
+      "q": "Ikki tebranishning yig'indisi sin20° + sin40° ko'rinishida yozilgan. Uni ko'paytmaga aylantirib, eng sodda natijani ko'rsating.",
+      "v": [
+        "2cos10°",
+        "sin10°",
+        "2sin30°",
+        "cos10°"
+      ],
+      "t": 3,
+      "izoh": "Yig'indini ko'paytmaga aylantirish formulasi: sin a + sin b = 2 · sin((a + b)/2) · cos((a − b)/2). Bu yerda 2 · sin30° · cos10° hosil bo'ladi. sin30° = 1/2 bo'lgani uchun natija cos10°. Javob: cos10°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-kopaytma-aylantirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#1a2b26c1"
+    },
+    {
+      "q": "Muattar ko'paytmani yig'indiga aylantirish formulasi yordamida cos15° · cos45° qiymatini topmoqchi. To'g'ri natijani tanlang.",
+      "v": [
+        "(√3 − 1)/4",
+        "(√6 + √2)/4",
+        "(√3 + 1)/4",
+        "(√3 + 1)/2"
+      ],
+      "t": 2,
+      "izoh": "Formula: cos a · cos b = (cos(a − b) + cos(a + b))/2. Demak ifoda (cos30° + cos60°)/2 ga teng. Bu (√3/2 + 1/2)/2 = (√3 + 1)/4. Javob: (√3 + 1)/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-kopaytma-aylantirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#ddfd4525"
+    },
+    {
+      "q": "Ikki datchik ko'rsatkichi cos10° + cos110° ko'rinishida qo'shildi. Bu yig'indini soddalashtirib, natijani belgilang.",
+      "v": [
+        "cos60°",
+        "2cos50°",
+        "−cos50°",
+        "cos50°"
+      ],
+      "t": 3,
+      "izoh": "Formula: cos a + cos b = 2 · cos((a + b)/2) · cos((a − b)/2). Bu yerda 2 · cos60° · cos50° hosil bo'ladi. cos60° = 1/2 bo'lgani uchun natija cos50°. Javob: cos50°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-kopaytma-aylantirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#e85d41f8"
+    },
+    {
+      "q": "ABC uchburchakning burchaklari A, B va C bilan belgilangan. sin(A + B) ifodasi uchinchi burchak orqali qanday yoziladi?",
+      "v": [
+        "sin C",
+        "−sin C",
+        "cos C",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Uchburchak burchaklari yig'indisi 180° ga teng, demak A + B = 180° − C. Keltirish formulasiga ko'ra sin(180° − C) = sin C. Javob: sin C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-burchaklari-yigindisi",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#75a41afb"
+    },
+    {
+      "q": "Geometriya darsida o'quvchilardan ixtiyoriy ABC uchburchak uchun cos(A + B) + cos C yig'indisini hisoblash so'raldi. To'g'ri javobni tanlang.",
+      "v": [
+        "2cos C",
+        "0",
+        "−2cos C",
+        "cos C"
+      ],
+      "t": 1,
+      "izoh": "A + B = 180° − C bo'lgani uchun cos(A + B) = cos(180° − C) = −cos C. Endi yig'indi −cos C + cos C ko'rinishga keladi. Bu esa har qanday uchburchak uchun 0 ga teng. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-burchaklari-yigindisi",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#9484de50"
+    },
+    {
+      "q": "Uchburchakning ikkita burchagi uchun tg A = 1 va tg B = 2 ekani ma'lum. Uchinchi burchakning tangensini toping.",
+      "v": [
+        "−3",
+        "1/3",
+        "3",
+        "−1/3"
+      ],
+      "t": 2,
+      "izoh": "Avval tg(A + B) = (tg A + tg B)/(1 − tg A · tg B) = (1 + 2)/(1 − 2) = −3. Uchburchakda C = 180° − (A + B), shuning uchun tg C = −tg(A + B). Demak tg C = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-burchaklari-yigindisi",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#e181da09"
+    },
+    {
+      "q": "ABC uchburchakda A + B + C = 180°. sin((A + B)/2) ifodasi C burchak orqali qanday yoziladi?",
+      "v": [
+        "sin(C/2)",
+        "cos C",
+        "cos(C/2)",
+        "−cos(C/2)"
+      ],
+      "t": 2,
+      "izoh": "Shartdan A + B = 180° − C, demak (A + B)/2 = 90° − C/2. Keltirish formulasiga ko'ra sin(90° − C/2) = cos(C/2). Javob: cos(C/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-burchaklari-yigindisi",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#747b66fd"
+    },
+    {
+      "q": "To'g'ri burchakli ABC uchburchakda C burchak 90° ga teng. sin²A + sin²B yig'indisining qiymatini aniqlang.",
+      "v": [
+        "0",
+        "2",
+        "1/2",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "C = 90° bo'lgani uchun A + B = 90°, ya'ni B = 90° − A. Keltirish formulasiga ko'ra sin B = cos A. Demak yig'indi sin²A + cos²A ko'rinishga keladi va u 1 ga teng. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-burchaklari-yigindisi",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#5386743d"
+    },
+    {
+      "q": "Quyidagi tengliklardan qaysi biri barcha joiz α qiymatlarida ayniyat bo'ladi? To'g'ri javobni tanlang.",
+      "v": [
+        "sin²α − cos²α = cos2α",
+        "(sin α + cos α)² = 1 + sin2α",
+        "1 + tg²α = 1/sin²α",
+        "sin2α = 2sin α"
+      ],
+      "t": 1,
+      "izoh": "Qavsni ochamiz: (sin α + cos α)² = sin²α + 2sin α · cos α + cos²α. Asosiy ayniyat bo'yicha sin²α + cos²α = 1, o'rta had esa sin2α ga teng. Demak tenglik 1 + sin2α ni beradi. Qolgan uchtasi noto'g'ri: sin²α − cos²α = −cos2α, 1 + tg²α = 1/cos²α, sin2α esa 2sin α · cos α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-tekshirish-tanlash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#6a556e7f"
+    },
+    {
+      "q": "Keltirish formulalari bo'yicha yozilgan quyidagi tengliklardan qaysi biri ayniyat emas?",
+      "v": [
+        "sin(90° − α) = cos α",
+        "cos(180° − α) = −cos α",
+        "tg(180° + α) = −tg α",
+        "ctg(90° − α) = tg α"
+      ],
+      "t": 2,
+      "izoh": "Tangens davri 180° ga teng, shuning uchun tg(180° + α) = tg α bo'ladi, minus ishora paydo bo'lmaydi. Qolgan uchta tenglik keltirish jadvali bilan to'liq mos: 90° da funksiya nomi almashadi, 180° da esa kosinus ishorasini o'zgartiradi. Javob: tg(180° + α) = −tg α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-tekshirish-tanlash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#41fef31d"
+    },
+    {
+      "q": "Quyidagi tengliklardan qaysi biri barcha joiz α larda o'rinli bo'ladi?",
+      "v": [
+        "1/cos²α − tg²α = 1",
+        "sin²α = 1 + cos²α",
+        "cos2α = 2cos α",
+        "tg2α = 2tg α"
+      ],
+      "t": 0,
+      "izoh": "1 + tg²α = 1/cos²α ayniyatidan tg²α ni chap tomonga o'tkazamiz: 1/cos²α − tg²α = 1. Ikkinchi tenglikda ishora xato, chunki sin²α = 1 − cos²α. Uchinchi va to'rtinchi tengliklarda ikkilangan burchak formulasi shunchaki koeffitsientga almashtirilgan, bu noto'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-tekshirish-tanlash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#aaa9a641"
+    },
+    {
+      "q": "Ayniyatni to'ldiring: sin4α = 2 · sin2α · … . Nuqtalar o'rniga qaysi ifoda qo'yilishi kerak?",
+      "v": [
+        "cos2α",
+        "cos4α",
+        "sin2α",
+        "cos α"
+      ],
+      "t": 0,
+      "izoh": "Ikkilangan burchak formulasi sin2x = 2 · sin x · cos x ko'rinishda. Bu yerda x o'rniga 2α ni qo'yamiz: sin4α = 2 · sin2α · cos2α. Demak bo'sh o'ringa cos2α yoziladi. Javob: cos2α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-tekshirish-tanlash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#8bd7a4f5"
+    },
+    {
+      "q": "Trigonometrik ayniyatni isbotlash jarayonida (1 + cos2α)/sin2α kasri hosil bo'ldi. Uni eng sodda ko'rinishga keltiring.",
+      "v": [
+        "tg α",
+        "ctg α",
+        "2ctg α",
+        "ctg2α"
+      ],
+      "t": 1,
+      "izoh": "Surat uchun 1 + cos2α = 2cos²α formulasidan foydalanamiz. Maxraj sin2α = 2 · sin α · cos α. Kasr 2cos²α/(2 · sin α · cos α) ko'rinishga keladi va qisqargach cos α/sin α, ya'ni ctg α qoladi. Javob: ctg α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-ifoda-soddalashtirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#afeaf6f7"
+    },
+    {
+      "q": "Nazorat ishida (1 − cos2α)/(1 + cos2α) kasrini soddalashtirish talab qilingan. To'g'ri natijani belgilang.",
+      "v": [
+        "ctg²α",
+        "tg α",
+        "2tg²α",
+        "tg²α"
+      ],
+      "t": 3,
+      "izoh": "1 − cos2α = 2sin²α va 1 + cos2α = 2cos²α formulalarini qo'yamiz. Kasr 2sin²α/(2cos²α) ko'rinishga keladi. Ikkilik qisqaradi va sin²α/cos²α = tg²α qoladi. Javob: tg²α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-ifoda-soddalashtirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#b6ba4a74"
+    },
+    {
+      "q": "Datchik signalini qayta ishlashda sin2α/(1 + cos2α) kasri paydo bo'ldi. Uning sodda ko'rinishini toping.",
+      "v": [
+        "2tg α",
+        "ctg α",
+        "tg α",
+        "sin α"
+      ],
+      "t": 2,
+      "izoh": "Suratda sin2α = 2 · sin α · cos α, maxrajda 1 + cos2α = 2cos²α. Kasr (2 · sin α · cos α)/(2cos²α) bo'ladi. Umumiy ko'paytuvchilar qisqargach sin α/cos α = tg α qoladi. Javob: tg α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-ifoda-soddalashtirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#4442c707"
+    },
+    {
+      "q": "Ikki tebranish yig'indisidan hosil bo'lgan (sin3α + sin α)/(cos3α + cos α) kasrini soddalashtiring.",
+      "v": [
+        "tg2α",
+        "ctg2α",
+        "tg α",
+        "2tg α"
+      ],
+      "t": 0,
+      "izoh": "Suratni ko'paytmaga aylantiramiz: sin3α + sin α = 2 · sin2α · cos α. Maxraj: cos3α + cos α = 2 · cos2α · cos α. Umumiy ko'paytuvchi 2cos α qisqaradi va sin2α/cos2α = tg2α qoladi. Javob: tg2α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-ifoda-soddalashtirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#15b20e88"
+    },
+    {
+      "q": "Ikki burchak uchun tuzilgan (tg α + tg β)/(ctg α + ctg β) kasrini soddalashtirib, natijani ko'rsating.",
+      "v": [
+        "1",
+        "tg(α + β)",
+        "ctg α · ctg β",
+        "tg α · tg β"
+      ],
+      "t": 3,
+      "izoh": "Maxrajdagi ctg α + ctg β ni tangens orqali yozamiz: 1/tg α + 1/tg β = (tg α + tg β)/(tg α · tg β). Kasrni bo'lganda (tg α + tg β) qisqaradi va tg α · tg β qoladi. Javob: tg α · tg β.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-ifoda-soddalashtirish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#2e9da1c9"
+    },
+    {
+      "q": "Aziz masalada sin α + cos α = 1,2 shartini oldi. sin α · cos α ko'paytmasining qiymatini toping.",
+      "v": [
+        "0,44",
+        "0,72",
+        "−0,22",
+        "0,22"
+      ],
+      "t": 3,
+      "izoh": "Tenglikning ikki tomonini kvadratga ko'taramiz: sin²α + 2 · sin α · cos α + cos²α = 1,44. Asosiy ayniyat bo'yicha chap tomon 1 + 2 · sin α · cos α ga teng. Demak 2 · sin α · cos α = 0,44 va ko'paytma 0,22. Javob: 0,22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetrik-sin-cos-yigindi",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#caac30e3"
+    },
+    {
+      "q": "Tenglamani yechish jarayonida sin α − cos α = 0,6 munosabati topildi. sin2α ning qiymatini hisoblang.",
+      "v": [
+        "0,64",
+        "−0,64",
+        "0,32",
+        "1,36"
+      ],
+      "t": 0,
+      "izoh": "Ikki tomonni kvadratga ko'taramiz: sin²α − 2 · sin α · cos α + cos²α = 0,36. Chap tomon 1 − sin2α ga teng, chunki 2 · sin α · cos α = sin2α. Demak 1 − sin2α = 0,36 va sin2α = 0,64. Javob: 0,64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetrik-sin-cos-yigindi",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#8dac86a1"
+    },
+    {
+      "q": "Ma'lumki sin α · cos α = 0,3. Shu shartda (sin α + cos α)² ifodaning qiymati nimaga teng?",
+      "v": [
+        "1,3",
+        "0,6",
+        "1,6",
+        "0,4"
+      ],
+      "t": 2,
+      "izoh": "Qavsni ochamiz: (sin α + cos α)² = sin²α + cos²α + 2 · sin α · cos α. Birinchi ikki had yig'indisi 1 ga teng. Qolgan had 2 · 0,3 = 0,6. Demak natija 1 + 0,6 = 1,6. Javob: 1,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetrik-sin-cos-yigindi",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#68f281a5"
+    },
+    {
+      "q": "Masala shartida sin α + cos α = √2 berilgan. sin⁴α + cos⁴α ifodaning qiymatini toping.",
+      "v": [
+        "0",
+        "3/4",
+        "1/2",
+        "1/4"
+      ],
+      "t": 2,
+      "izoh": "Shartni kvadratga ko'taramiz: 2 = 1 + 2 · sin α · cos α, demak sin α · cos α = 1/2. Endi sin⁴α + cos⁴α = (sin²α + cos²α)² − 2sin²α · cos²α formulasidan foydalanamiz. Bu 1 − 2 · (1/2)² = 1 − 1/2 = 1/2 ni beradi. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetrik-sin-cos-yigindi",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#d75a2325"
+    },
+    {
+      "q": "Ifodani soddalashtirgan o'quvchi tg α + ctg α = 5 tenglikka keldi. sin α · cos α ko'paytmasini aniqlang.",
+      "v": [
+        "5",
+        "0,2",
+        "2,5",
+        "0,4"
+      ],
+      "t": 1,
+      "izoh": "Yig'indini umumiy maxrajga keltiramiz: tg α + ctg α = (sin²α + cos²α)/(sin α · cos α) = 1/(sin α · cos α). Demak 1/(sin α · cos α) = 5. Bundan sin α · cos α = 1/5 = 0,2. Javob: 0,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-sin-cos-yigindi",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#4657f6b1"
+    },
+    {
+      "q": "Ustoz o'quvchilarga sin⁶α + cos⁶α + 3sin²α · cos²α ifodasi doimiy songa teng ekanini isbotlashni topshirdi. Shu sonni toping.",
+      "v": [
+        "3",
+        "0",
+        "2",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "Kublar yig'indisi formulasidan sin⁶α + cos⁶α = (sin²α + cos²α)³ − 3sin²α · cos²α · (sin²α + cos²α) chiqadi. Bu 1 − 3sin²α · cos²α ga teng. Unga 3sin²α · cos²α ni qo'shsak, aynan 1 qoladi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajali-ifoda-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#8fb3e666"
+    },
+    {
+      "q": "Ixtiyoriy α uchun sin⁴α − cos⁴α + cos2α ifodaning qiymati o'zgarmas bo'ladi. Uni toping.",
+      "v": [
+        "0",
+        "2cos2α",
+        "cos2α",
+        "−2cos2α"
+      ],
+      "t": 0,
+      "izoh": "Kvadratlar ayirmasiga ajratamiz: sin⁴α − cos⁴α = (sin²α − cos²α)(sin²α + cos²α) = sin²α − cos²α. Bu esa −cos2α ga teng. Demak ifoda −cos2α + cos2α = 0 bo'ladi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajali-ifoda-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#e34c3e5f"
+    },
+    {
+      "q": "O'lchov natijasida sin²α = 0,4 ekani aniqlandi. sin⁴α + cos⁴α ifodaning qiymatini hisoblang.",
+      "v": [
+        "0,52",
+        "1",
+        "0,48",
+        "0,24"
+      ],
+      "t": 0,
+      "izoh": "Asosiy ayniyatdan cos²α = 1 − 0,4 = 0,6. Endi sin⁴α = 0,4² = 0,16 va cos⁴α = 0,6² = 0,36. Ularning yig'indisi 0,16 + 0,36 = 0,52. Javob: 0,52.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajali-ifoda-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#020e6100"
+    },
+    {
+      "q": "Notanish ko'rinishdagi 2(sin⁶α + cos⁶α) − 3(sin⁴α + cos⁴α) ifodasi burchakka bog'liq emas. Uning qiymatini aniqlang.",
+      "v": [
+        "1",
+        "0",
+        "−1",
+        "−3"
+      ],
+      "t": 2,
+      "izoh": "sin²α · cos²α ni p deb belgilaymiz. Ma'lumki sin⁶α + cos⁶α = 1 − 3p va sin⁴α + cos⁴α = 1 − 2p. Ifodaga qo'yamiz: 2(1 − 3p) − 3(1 − 2p) = 2 − 6p − 3 + 6p = −1. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajali-ifoda-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#6fff022c"
+    },
+    {
+      "q": "Aylana bo'ylab harakat masalasida cos α = 0,28 va α o'tkir burchak ekani berilgan. sin(α/2) qiymatini toping.",
+      "v": [
+        "0,36",
+        "0,8",
+        "0,72",
+        "0,6"
+      ],
+      "t": 3,
+      "izoh": "Yarim burchak formulasi: sin²(α/2) = (1 − cos α)/2. Qiymatni qo'yamiz: (1 − 0,28)/2 = 0,36. α o'tkir bo'lgani uchun α/2 ham birinchi chorakda va sinus musbat, demak sin(α/2) = 0,6. Javob: 0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-burchak-formulasi",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#3f75ee19"
+    },
+    {
+      "q": "Ikkinchi chorakda yotuvchi α burchak uchun cos α = −0,68 berilgan. cos(α/2) qiymatini hisoblang.",
+      "v": [
+        "0,4",
+        "−0,4",
+        "0,16",
+        "0,84"
+      ],
+      "t": 0,
+      "izoh": "Yarim burchak formulasi: cos²(α/2) = (1 + cos α)/2 = (1 − 0,68)/2 = 0,16. α ikkinchi chorakda bo'lsa, α/2 birinchi chorakda yotadi va kosinus musbat. Demak cos(α/2) = 0,4. Javob: 0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yarim-burchak-formulasi",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#d0d03498"
+    },
+    {
+      "q": "Birinchi chorakdagi α burchak uchun cos α = 0,6 ekani ma'lum. tg(α/2) ning qiymatini toping.",
+      "v": [
+        "2",
+        "0,5",
+        "0,2",
+        "0,8"
+      ],
+      "t": 1,
+      "izoh": "Birinchi chorakda sin α = √(1 − 0,36) = 0,8. Yarim burchak formulasi tg(α/2) = (1 − cos α)/sin α ni beradi. Qiymatlarni qo'yamiz: (1 − 0,6)/0,8 = 0,4/0,8 = 0,5. Javob: 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yarim-burchak-formulasi",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#6c78c90d"
+    },
+    {
+      "q": "Yarim burchak formulasidan foydalanib 1 − 2sin²22,5° ifodaning aniq qiymatini toping.",
+      "v": [
+        "√3/2",
+        "1/2",
+        "√2/2",
+        "−√2/2"
+      ],
+      "t": 2,
+      "izoh": "Ikkilangan burchak formulasi cos2x = 1 − 2sin²x ni teskari yo'nalishda qo'llaymiz. Bu yerda x = 22,5°, demak ifoda cos45° ga teng. cos45° = √2/2. Javob: √2/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yarim-burchak-formulasi",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#e639863a"
+    },
+    {
+      "q": "Universal almashtirish usulida tg(α/2) = 1/3 ekani berilgan. sin α ning qiymatini hisoblang.",
+      "v": [
+        "0,8",
+        "0,75",
+        "0,6",
+        "0,3"
+      ],
+      "t": 2,
+      "izoh": "Universal almashtirish: sin α = 2t/(1 + t²), bu yerda t = tg(α/2). Qiymatni qo'yamiz: (2 · 1/3)/(1 + 1/9) = (2/3) : (10/9) = 6/10. Demak sin α = 0,6. Javob: 0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "universal-almashtirish-tg-yarim",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#f43544f5"
+    },
+    {
+      "q": "Burchakning yarmi uchun tg(α/2) = 2 ekani aniqlandi. cos α ning qiymatini toping.",
+      "v": [
+        "−0,6",
+        "0,6",
+        "0,8",
+        "−0,8"
+      ],
+      "t": 0,
+      "izoh": "Universal almashtirish: cos α = (1 − t²)/(1 + t²), bu yerda t = tg(α/2). Qiymatni qo'yamiz: (1 − 4)/(1 + 4) = −3/5. Demak cos α = −0,6. Javob: −0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "universal-almashtirish-tg-yarim",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#b0773136"
+    },
+    {
+      "q": "tg(α/2) = 1/2 bo'lsa, (1 + sin α)/(1 + cos α) kasrining qiymatini hisoblang.",
+      "v": [
+        "8/9",
+        "9/8",
+        "4/3",
+        "3/4"
+      ],
+      "t": 1,
+      "izoh": "Universal almashtirish bilan sin α = (2 · 1/2)/(1 + 1/4) = 1 : 1,25 = 0,8 va cos α = (1 − 1/4)/(1 + 1/4) = 0,75 : 1,25 = 0,6. Endi kasrni hisoblaymiz: (1 + 0,8)/(1 + 0,6) = 1,8/1,6 = 9/8. Javob: 9/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "universal-almashtirish-tg-yarim",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#23c87e29"
+    },
+    {
+      "q": "Uchinchi chorakda yotuvchi α burchak uchun sin α · cos α · tg α ko'paytmasining ishorasini aniqlang.",
+      "v": [
+        "musbat",
+        "manfiy",
+        "nolga teng",
+        "aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi chorakda sinus manfiy, kosinus ham manfiy, tangens esa musbat. Ikki manfiy sonning ko'paytmasi musbat bo'ladi, uni yana musbat songa ko'paytirsak natija musbat qoladi. Javob: musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-ishora-aniqlash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#91972d15"
+    },
+    {
+      "q": "Ikkinchi chorakda yotuvchi α burchak uchun cos α + tg α ifodaning ishorasini aniqlang.",
+      "v": [
+        "musbat",
+        "nolga teng",
+        "α ga bog'liq",
+        "manfiy"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi chorakda kosinus manfiy, sinus esa musbat. tg α = sin α/cos α bo'lgani uchun tangens ham manfiy. Ikki manfiy sonning yig'indisi har doim manfiy. Javob: manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chorak-ishora-aniqlash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#d765b65c"
+    },
+    {
+      "q": "Ma'lumki sin α > 0 va tg α < 0. Bunday α burchak koordinata tekisligining qaysi chorakida yotadi?",
+      "v": [
+        "I chorak",
+        "II chorak",
+        "III chorak",
+        "IV chorak"
+      ],
+      "t": 1,
+      "izoh": "sin α > 0 shartini birinchi va ikkinchi choraklar qanoatlantiradi. tg α < 0 bo'lishi uchun sinus va kosinus ishoralari har xil bo'lishi kerak, ya'ni kosinus manfiy. Ikkala shart faqat ikkinchi chorakda bajariladi. Javob: II chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-ishora-aniqlash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#f10c3fc8"
+    },
+    {
+      "q": "Shartga ko'ra cos α = −0,6 va tg α > 0 bo'lsin. sin α ning qiymatini aniqlang.",
+      "v": [
+        "0,8",
+        "−0,64",
+        "−0,8",
+        "0,64"
+      ],
+      "t": 2,
+      "izoh": "Kosinus manfiy va tangens musbat bo'lsa, sinus ham manfiy bo'ladi, ya'ni burchak uchinchi chorakda. Asosiy ayniyatdan sin²α = 1 − 0,36 = 0,64. Ildiz olamiz va ishorani hisobga olamiz: sin α = −0,8. Javob: −0,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chorak-ishora-aniqlash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#df319b15"
+    },
+    {
+      "q": "Geodezist Sardor minoradan 48 m uzoqlikda turib uning uchiga qaraydi. Ko'rish burchagi uchun tg α = 3/4 bo'lsa, minoraning balandligi necha metr?",
+      "v": [
+        "28,8 m",
+        "36 m",
+        "38,4 m",
+        "64 m"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri burchakli uchburchakda tg α qarshi katetning yondosh katetga nisbati. Demak balandlik h = 48 · tg α. Hisoblaymiz: 48 · 3/4 = 36. Javob: 36 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-geodeziya-balandlik",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#4016c6e3"
+    },
+    {
+      "q": "Balandligi 96 m bo'lgan minora uchidan yerdagi nuqtaga qaraladi. Ko'rish nurining gorizontga nisbatan pasayish burchagi β uchun ctg β = 2,5 ekani o'lchandi. Nuqtagacha bo'lgan gorizontal masofani toping.",
+      "v": [
+        "38,4 m",
+        "258,5 m",
+        "480 m",
+        "240 m"
+      ],
+      "t": 3,
+      "izoh": "Minora balandligi h = 96 m qarshi katet, izlanayotgan gorizontal masofa d qo'shni katet. Pasayish burchagi β uchun tg β = h/d, demak ctg β = d/h. Bundan d = h · ctg β = 96 · 2,5 = 240. Javob: 240 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-geodeziya-balandlik",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#f971680c"
+    },
+    {
+      "q": "Samolyot yer sathidan 3 km balandlikda uchmoqda. Uni kuzatayotgan Dilnoza uchun ko'rish burchagi α bo'lib, sin α = 0,6. Samolyotgacha bo'lgan to'g'ri masofani toping.",
+      "v": [
+        "1,8 km",
+        "4 km",
+        "5 km",
+        "3,75 km"
+      ],
+      "t": 2,
+      "izoh": "Balandlik qarshi katet, izlanayotgan to'g'ri masofa esa gipotenuza. sin α = balandlik/masofa munosabatidan masofa = 3 : 0,6 = 5. Javob: 5 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-geodeziya-balandlik",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#49316cea"
+    },
+    {
+      "q": "Kuzatuvchi minoraning uchini tg α = 0,75 bo'lgan burchak ostida ko'rmoqda. Minoraga 14 m yaqinlashgach ko'rish burchagining tangensi 1,25 ga aylandi. Minoraning balandligini toping.",
+      "v": [
+        "35 m",
+        "17,5 m",
+        "21 m",
+        "26,25 m"
+      ],
+      "t": 3,
+      "izoh": "Dastlabki masofani d deb olamiz. Birinchi holatda h = 0,75d, ikkinchi holatda h = 1,25(d − 14). Tenglamani yechamiz: 0,75d = 1,25d − 17,5, bundan 0,5d = 17,5 va d = 35. Balandlik h = 0,75 · 35 = 26,25. Javob: 26,25 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-geodeziya-balandlik",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#dc4c9acd"
+    },
+    {
+      "q": "Omborga yuk ko'tarish uchun uzunligi 6,5 m bo'lgan qiya taxta o'rnatildi. Taxta va yer orasidagi burchak uchun sin α = 0,6 bo'lsa, taxta ko'targan balandlikni toping.",
+      "v": [
+        "5,2 m",
+        "3,9 m",
+        "10,8 m",
+        "8,1 m"
+      ],
+      "t": 1,
+      "izoh": "Taxta gipotenuza vazifasini bajaradi, balandlik esa qarshi katet. sin α = balandlik/taxta uzunligi munosabatidan balandlik = 6,5 · 0,6 = 3,9. Javob: 3,9 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qiya-tekislik-tom",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#6d872533"
+    },
+    {
+      "q": "Uyning tomi α burchak ostida qiya bo'lib, cos α = 0,8. Tomning gorizontal proyeksiyasi 24 m bo'lsa, tom qiyaligining uzunligi qancha?",
+      "v": [
+        "19,2 m",
+        "18 m",
+        "30 m",
+        "40 m"
+      ],
+      "t": 2,
+      "izoh": "Gorizontal proyeksiya yondosh katet, qiyalik esa gipotenuza. cos α = proyeksiya/qiyalik munosabatidan qiyalik = 24 : 0,8 = 30. Javob: 30 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qiya-tekislik-tom",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#6161f40b"
+    },
+    {
+      "q": "Zavodda uzunligi 15 m bo'lgan konveyer lentasi gorizontga nisbatan α burchak ostida o'rnatilgan va tg α = 0,75. Lentaning yuqori uchi qancha balandlikda turadi?",
+      "v": [
+        "11,25 m",
+        "9 m",
+        "12 m",
+        "20 m"
+      ],
+      "t": 1,
+      "izoh": "Avval tg α = 0,75 dan sin α ni topamiz: 0,75 = 3/4 nisbat 3, 4, 5 uchburchakni beradi, demak sin α = 0,6. Lenta gipotenuza bo'lgani uchun balandlik 15 · 0,6 = 9. Javob: 9 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qiya-tekislik-tom",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#b3c0dc98"
+    },
+    {
+      "q": "Tog' yo'lining 2 km uzunlikdagi qismi doimiy α burchak ostida ko'tariladi va sin α = 0,05. Shu qismda ko'tarilish balandligi necha metrni tashkil qiladi?",
+      "v": [
+        "100 m",
+        "0,1 m",
+        "40 000 m",
+        "200 m"
+      ],
+      "t": 0,
+      "izoh": "Avval birlikni aylantiramiz: 2 km = 2000 m. Yo'l gipotenuza, ko'tarilish esa qarshi katet, shuning uchun balandlik = 2000 · sin α. Hisoblaymiz: 2000 · 0,05 = 100. Javob: 100 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-qiya-tekislik-tom",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#3fb7a934"
+    },
+    {
+      "q": "Diametri 40 m bo'lgan charxpalak markazi yer sathidan 22 m balandlikda. Kabinaning balandligi h = 22 + 20 · sin α formula bilan topiladi. sin α = 0,6 bo'lganda kabina qancha balandlikda bo'ladi?",
+      "v": [
+        "46 m",
+        "12 m",
+        "38 m",
+        "34 m"
+      ],
+      "t": 3,
+      "izoh": "Formulaga qiymatni qo'yamiz: h = 22 + 20 · 0,6. Ko'paytma 20 · 0,6 = 12 ga teng, bu markazdan yuqoriga ko'tarilish. Umumiy balandlik 22 + 12 = 34. Javob: 34 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aylanma-harakat",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#793d1a1c"
+    },
+    {
+      "q": "Suv g'ildiragining radiusi 5 m. Uning chetidagi nuqta eng past holatdan α burchakka burilganda ko'targan balandligi h = 5(1 − cos α) ga teng. cos α = 0,28 bo'lsa, balandlikni hisoblang.",
+      "v": [
+        "3,6 m",
+        "1,4 m",
+        "6,4 m",
+        "0,72 m"
+      ],
+      "t": 0,
+      "izoh": "Avval qavs ichini hisoblaymiz: 1 − 0,28 = 0,72. So'ng radiusga ko'paytiramiz: 5 · 0,72 = 3,6. Javob: 3,6 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-aylanma-harakat",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#d79f9d4c"
+    },
+    {
+      "q": "Aylanma eshik qanoti α burchakka burilganda uning uchi ostona chizig'idan 2,4 · sin α metr, devordan esa 2,4 · cos α metr uzoqlashadi. Shu ikki masofa kvadratlarining yig'indisini toping.",
+      "v": [
+        "5,76 m²",
+        "2,4 m²",
+        "4,8 m²",
+        "1 m²"
+      ],
+      "t": 0,
+      "izoh": "Kvadratlarni yozamiz: (2,4 · sin α)² + (2,4 · cos α)² = 2,4² · (sin²α + cos²α). Qavs ichi asosiy ayniyat bo'yicha 1 ga teng. Demak yig'indi 2,4² = 5,76 bo'ladi va u burchakka bog'liq emas. Javob: 5,76 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-aylanma-harakat",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#6866416e"
+    },
+    {
+      "q": "Soat milining uzunligi 12 sm. Mil uchi α burchakka burilganda uning vertikal siljishi 12(1 − cos α), gorizontal siljishi esa 12 · sin α ga teng. sin α = 0,6 va α o'tkir bo'lsa, ikki siljish yig'indisini toping.",
+      "v": [
+        "9,6 sm",
+        "7,2 sm",
+        "2,4 sm",
+        "14,4 sm"
+      ],
+      "t": 0,
+      "izoh": "O'tkir burchak uchun cos α = 0,8. Vertikal siljish 12 · (1 − 0,8) = 2,4 sm. Gorizontal siljish 12 · 0,6 = 7,2 sm. Ularning yig'indisi 2,4 + 7,2 = 9,6. Javob: 9,6 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aylanma-harakat",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#cf023215"
+    },
+    {
+      "q": "Ikki g'altakdagi tok kuchlari i₁ = 6sin α va i₂ = 6cos α formulalar bilan berilgan. i₁² + i₂² yig'indisining qiymatini toping.",
+      "v": [
+        "6 A²",
+        "12 A²",
+        "36 A²",
+        "72 A²"
+      ],
+      "t": 2,
+      "izoh": "Kvadratga ko'taramiz: i₁² + i₂² = 36sin²α + 36cos²α. Umumiy ko'paytuvchini qavsdan chiqaramiz: 36(sin²α + cos²α). Qavs ichi 1 ga teng, demak yig'indi 36 bo'lib, burchakka bog'liq emas. Javob: 36 A².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tebranish-va-tok",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#34858723"
+    },
+    {
+      "q": "Uzunligi 80 sm bo'lgan mayatnik vertikaldan α burchakka og'ganda ko'targan balandligi h = 80(1 − cos α) ga teng. cos α = 0,85 bo'lsa, balandlikni hisoblang.",
+      "v": [
+        "68 sm",
+        "12 sm",
+        "148 sm",
+        "0,15 sm"
+      ],
+      "t": 1,
+      "izoh": "Qavs ichini hisoblaymiz: 1 − 0,85 = 0,15. Endi uni ip uzunligiga ko'paytiramiz: 80 · 0,15 = 12. Javob: 12 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tebranish-va-tok",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#238f4695"
+    },
+    {
+      "q": "Generator chiqishidagi lahzali quvvat p = u · i formula bilan topiladi, bunda u = 40sin α va i = 40cos α. Quvvatning eng katta qiymatini hisoblang.",
+      "v": [
+        "1600 Vt",
+        "400 Vt",
+        "80 Vt",
+        "800 Vt"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytmani yozamiz: p = 1600 · sin α · cos α. Ikkilangan burchak formulasi bo'yicha 2 · sin α · cos α = sin2α, demak p = 800 · sin2α. sin2α ning eng katta qiymati 1 ga teng, shuning uchun quvvat ko'pi bilan 800 bo'ladi. Javob: 800 Vt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tebranish-va-tok",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#be84824e"
+    },
+    {
+      "q": "Elektr zanjirida faza burchagi uchun tg α = 0,75 ekani o'lchandi. Zanjirning quvvat koeffitsienti deb ataluvchi cos α ni hisoblang.",
+      "v": [
+        "0,6",
+        "0,75",
+        "0,8",
+        "1,25"
+      ],
+      "t": 2,
+      "izoh": "1 + tg²α = 1/cos²α ayniyatidan foydalanamiz: 1 + 0,5625 = 1,5625. Demak cos²α = 1 : 1,5625 = 0,64. Faza burchagi o'tkir bo'lgani uchun cos α = 0,8. Javob: 0,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tebranish-va-tok",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#03cdb00a"
+    },
+    {
+      "q": "Tebranish energiyasi e = 18 · sin α · cos α formula bilan hisoblanadi. O'lchov natijasida sin2α = 0,7 ekani aniqlangan bo'lsa, energiyani toping.",
+      "v": [
+        "12,6 J",
+        "6,3 J",
+        "18 J",
+        "3,15 J"
+      ],
+      "t": 1,
+      "izoh": "Ikkilangan burchak formulasidan sin α · cos α = sin2α : 2 kelib chiqadi. Demak e = 18 · sin2α : 2 = 9 · sin2α. Qiymatni qo'yamiz: 9 · 0,7 = 6,3. Javob: 6,3 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tebranish-va-tok",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#7dc06799"
+    },
+    {
+      "q": "Ikki karnaydan chiqqan tovush tebranishlarining yig'indisi sin70° + sin50° ko'rinishida yozildi. Uni ko'paytmaga aylantirib, eng sodda natijani tanlang.",
+      "v": [
+        "√3 · cos10°",
+        "2cos10°",
+        "√3 · sin10°",
+        "cos10°"
+      ],
+      "t": 0,
+      "izoh": "Formulaga ko'ra sin a + sin b = 2 · sin((a + b)/2) · cos((a − b)/2). Bu yerda 2 · sin60° · cos10° hosil bo'ladi. sin60° = √3/2 bo'lgani uchun natija √3 · cos10°. Javob: √3 · cos10°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tovush-tolqin",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#12d402c5"
+    },
+    {
+      "q": "Ikki tovush qabul qilgichning ko'rsatkichlari ayirmasi cos40° − cos80° ko'rinishida chiqdi. Uni ko'paytmaga aylantirib, natijani belgilang.",
+      "v": [
+        "−√3 · sin20°",
+        "2sin20°",
+        "√3 · cos20°",
+        "√3 · sin20°"
+      ],
+      "t": 3,
+      "izoh": "Formula: cos a − cos b = −2 · sin((a + b)/2) · sin((a − b)/2). Bu yerda −2 · sin60° · sin(−20°) hosil bo'ladi. Sinus toq funksiya, shuning uchun sin(−20°) = −sin20° va minuslar yo'qoladi: 2 · sin60° · sin20° = √3 · sin20°. Javob: √3 · sin20°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tovush-tolqin",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#902cbbb0"
+    },
+    {
+      "q": "Ikki tovush tebranishining yig'indisi y = sin α + sin3α ko'rinishida yozildi. Uni ko'paytma shaklida ifodalang.",
+      "v": [
+        "2cos2α · sin α",
+        "sin4α",
+        "2sin2α · cos α",
+        "2sin4α · cos2α"
+      ],
+      "t": 2,
+      "izoh": "Yig'indini ko'paytmaga aylantirish formulasi: sin a + sin b = 2 · sin((a + b)/2) · cos((a − b)/2). Bu yerda a = 3α va b = α, demak yarim yig'indi 2α, yarim ayirma esa α. Natija 2 · sin2α · cos α. Javob: 2sin2α · cos α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tovush-tolqin",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#7ce5d337"
+    },
+    {
+      "q": "Balandligi 12 m bo'lgan ustunning yerdagi soyasi 5 m ni tashkil qildi. Quyosh nurining gorizontga og'ish burchagi α uchun sin α ni toping.",
+      "v": [
+        "5/13",
+        "12/13",
+        "12/5",
+        "13/12"
+      ],
+      "t": 1,
+      "izoh": "Ustun va soya to'g'ri burchakli uchburchak katetlari. Gipotenuza √(144 + 25) = 13 m. sin α qarshi katetning gipotenuzaga nisbati, ya'ni 12/13. Javob: 12/13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-quyosh-soya",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#b98320f5"
+    },
+    {
+      "q": "Balandligi 6 m bo'lgan daraxtning soyasi 6 · ctg α ga teng. Peshinda ctg α = 0,5, kechqurun esa ctg α = 2,5 bo'ldi. Kechqurungi va peshingi soyalar ayirmasini toping.",
+      "v": [
+        "18 m",
+        "3 m",
+        "15 m",
+        "12 m"
+      ],
+      "t": 3,
+      "izoh": "Peshingi soya 6 · 0,5 = 3 m. Kechqurungi soya 6 · 2,5 = 15 m. Ularning ayirmasi 15 − 3 = 12. Javob: 12 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-quyosh-soya",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#60425606"
+    },
+    {
+      "q": "Balandligi 3,2 m bo'lgan ustunning soyasi 3,2 · ctg α ga teng, bunda quyosh nurining burchagi uchun tg α = 0,5. Burchak ikki barobar oshganda soya uzunligi qanday bo'ladi?",
+      "v": [
+        "2,4 m",
+        "6,4 m",
+        "3,2 m",
+        "1,6 m"
+      ],
+      "t": 0,
+      "izoh": "Avval ikkilangan burchak tangensini topamiz: tg2α = 2 · 0,5/(1 − 0,25) = 1 : 0,75 = 4/3. Demak ctg2α = 3/4 = 0,75. Yangi soya 3,2 · 0,75 = 2,4. Javob: 2,4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-quyosh-soya",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#526b52cc"
+    },
+    {
+      "q": "Qayiqning 5 m/s tezligi ikkita o'zaro perpendikulyar tashkil etuvchiga ajratildi: 5sin α va 5cos α. Bu tashkil etuvchilar kvadratlarining yig'indisini toping.",
+      "v": [
+        "5 m²/s²",
+        "10 m²/s²",
+        "50 m²/s²",
+        "25 m²/s²"
+      ],
+      "t": 3,
+      "izoh": "Kvadratlar yig'indisini yozamiz: 25sin²α + 25cos²α = 25(sin²α + cos²α). Qavs ichi 1 ga teng, demak yig'indi 25 bo'ladi. Bu natija tezlik moduli kvadratiga teng va burchakka bog'liq emas. Javob: 25 m²/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-navigatsiya-yonalish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#440e2879"
+    },
+    {
+      "q": "Samolyot yo'nalishi ketma-ket 35° va 25° ga burildi. Navigatsiya hisobida cos35° · cos25° − sin35° · sin25° ifodasi hosil bo'ldi. Uning qiymatini toping.",
+      "v": [
+        "1/2",
+        "√3/2",
+        "−1/2",
+        "√3/3"
+      ],
+      "t": 0,
+      "izoh": "Bu ifoda kosinusning yig'indi formulasi: cos a · cos b − sin a · sin b = cos(a + b). Demak ifoda cos(35° + 25°) = cos60° ga teng. cos60° = 1/2. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-navigatsiya-yonalish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#fe82eb80"
+    },
+    {
+      "q": "Kema shimoliy yo'nalishdan α burchak og'ib 65 km yurdi, bunda sin α = 5/13. Uning shimolga va sharqqa siljishlari ayirmasini toping.",
+      "v": [
+        "85 km",
+        "35 km",
+        "25 km",
+        "60 km"
+      ],
+      "t": 1,
+      "izoh": "Sharqqa siljish 65 · sin α = 65 · 5/13 = 25 km. Shimolga siljish uchun cos α kerak: cos α = 12/13, demak 65 · 12/13 = 60 km. Ayirma 60 − 25 = 35. Javob: 35 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-navigatsiya-yonalish",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#26740ec1"
+    },
+    {
+      "q": "Kalkulyatorsiz hisoblang: sin(arccos(3/5)) ifodaning aniq qiymati nimaga teng?",
+      "v": [
+        "4/5",
+        "3/5",
+        "5/4",
+        "−4/5"
+      ],
+      "t": 0,
+      "izoh": "arccos(3/5) burchagini α deb belgilaymiz, u holda cos α = 3/5 va α birinchi chorakda yotadi. Asosiy ayniyatdan sin²α = 1 − 9/25 = 16/25. Birinchi chorakda sinus musbat, demak sin α = 4/5. Javob: 4/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-trigonometrik-qiymat",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#709da47a"
+    },
+    {
+      "q": "Ifodaning son qiymatini toping: cos(2 · arcsin 0,6) nimaga teng?",
+      "v": [
+        "0,8",
+        "0,96",
+        "0,28",
+        "−0,28"
+      ],
+      "t": 2,
+      "izoh": "arcsin 0,6 burchagini α deb olamiz, u holda sin α = 0,6. Ikkilangan burchak formulasi cos2α = 1 − 2sin²α ni qo'llaymiz. Hisoblaymiz: 1 − 2 · 0,36 = 1 − 0,72 = 0,28. Javob: 0,28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-trigonometrik-qiymat",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#6b89b566"
+    },
+    {
+      "q": "Burchak arcsin(8/17) ga teng deb berilgan. Shu burchakning tangensini toping.",
+      "v": [
+        "15/8",
+        "8/15",
+        "8/17",
+        "17/15"
+      ],
+      "t": 1,
+      "izoh": "Burchakni α deb olamiz: sin α = 8/17 va α birinchi chorakda. Asosiy ayniyatdan cos²α = 1 − 64/289 = 225/289, demak cos α = 15/17. Tangens tg α = sin α : cos α = 8/15. Javob: 8/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-trigonometrik-qiymat",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#70100b30"
+    },
+    {
+      "q": "Maxsus ko'paytma cos20° · cos40° · cos80° ning aniq qiymatini hisoblang.",
+      "v": [
+        "1/4",
+        "1/2",
+        "1/16",
+        "1/8"
+      ],
+      "t": 3,
+      "izoh": "Ifodani 2sin20° ga ko'paytirib va bo'lib olamiz. Surat ketma-ket soddalashadi: 2sin20° · cos20° = sin40°; sin40° · cos40° = sin80°/2; (sin80°/2) · cos80° = sin160°/4. Demak 2sin20° · (cos20° · cos40° · cos80°) = sin160°/4, bundan ko'paytma = sin160°/(8sin20°). sin160° = sin20° bo'lgani uchun qiymat 1/8. Javob: 1/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytma-maxsus-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#ccfe70cd"
+    },
+    {
+      "q": "Muntazam beshburchak bilan bog'liq masalada cos36° · cos72° ko'paytmasi paydo bo'ldi. Uning aniq qiymatini toping.",
+      "v": [
+        "1/4",
+        "1/2",
+        "1/8",
+        "√5/4"
+      ],
+      "t": 0,
+      "izoh": "Ifodani 2sin36° ga ko'paytirib va bo'lamiz. Surat 2sin36° · cos36° = sin72°, so'ng sin72° · cos72° juftligi sin144°/2 ni beradi. Umumiy qiymat sin144°/(4sin36°) bo'ladi, sin144° = sin36° bo'lgani uchun natija 1/4. Javob: 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytma-maxsus-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#97fcf086"
+    },
+    {
+      "q": "Ma'lum ayniyatga ko'ra tg20° · tg40° · tg80° ko'paytmasi aniq songa teng bo'ladi. Shu qiymatni ko'rsating.",
+      "v": [
+        "1",
+        "√3/3",
+        "3",
+        "√3"
+      ],
+      "t": 3,
+      "izoh": "Uchta burchakning yig'indisi va ayirmalari 60° bilan bog'liq: tg20° · tg40° · tg80° ko'paytmasi tg3α = tg α · tg(60° − α) · tg(60° + α) ayniyatiga mos keladi, bu yerda α = 20°. Demak ko'paytma tg60° ga teng, ya'ni √3. Javob: √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytma-maxsus-hisoblash",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#33a7098d"
+    },
+    {
+      "q": "O'zgaruvchan tok chizig'idagi kuchlanish u = 60sin α + 80cos α ko'rinishida yozilgan. Kuchlanishning eng katta qiymatini toping.",
+      "v": [
+        "140 V",
+        "80 V",
+        "100 V",
+        "20 V"
+      ],
+      "t": 2,
+      "izoh": "a · sin α + b · cos α ifodaning eng katta qiymati √(a² + b²) ga teng. Bu yerda √(3600 + 6400) = √10000 = 100. Demak kuchlanish 100 dan oshmaydi va shu qiymatga erishadi. Javob: 100 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amplituda-eng-katta-qiymat",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#3939e675"
+    },
+    {
+      "q": "Tebranish tenglamasi y = 3sin α − 4cos α ko'rinishida berilgan. Bu ifodaning eng kichik qiymatini toping.",
+      "v": [
+        "5",
+        "−1",
+        "−7",
+        "−5"
+      ],
+      "t": 3,
+      "izoh": "Ifodani R · sin(α − φ) ko'rinishida yozish mumkin, bunda R = √(3² + 4²) = 5. Sinus −1 dan 1 gacha qiymat oladi, shuning uchun ifoda −5 dan 5 gacha o'zgaradi. Eng kichik qiymat −5. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amplituda-eng-katta-qiymat",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#e66558f6"
+    },
+    {
+      "q": "Qurilma ko'rsatkichi 5sin α + 12cos α formula bilan o'zgaradi. Uning qiymatlari qaysi oraliqni to'liq egallaydi?",
+      "v": [
+        "[−17; 17]",
+        "[−13; 13]",
+        "[−7; 7]",
+        "[−12; 12]"
+      ],
+      "t": 1,
+      "izoh": "Bunday ifodaning amplitudasi √(5² + 12²) = √169 = 13 ga teng. Ifoda −13 dan 13 gacha barcha qiymatlarni qabul qiladi. Koeffitsientlarni shunchaki qo'shish yoki ayirish noto'g'ri natija beradi. Javob: [−13; 13].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amplituda-eng-katta-qiymat",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#59c2a240"
+    },
+    {
+      "q": "Ikki datchik ko'rsatkichlarining yig'indisi sin α + cos α ifodasi bilan beriladi. Bu yig'indining eng katta qiymatini toping.",
+      "v": [
+        "2",
+        "√2",
+        "1",
+        "√2/2"
+      ],
+      "t": 1,
+      "izoh": "Ifodani √2 · sin(α + 45°) ko'rinishida yozamiz, chunki amplituda √(1 + 1) = √2. Sinusning eng katta qiymati 1 bo'lgani uchun yig'indi ko'pi bilan √2 ga teng bo'ladi. Javob: √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amplituda-eng-katta-qiymat",
+      "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash#0b09bc3e"
+    }
+  ]
+}

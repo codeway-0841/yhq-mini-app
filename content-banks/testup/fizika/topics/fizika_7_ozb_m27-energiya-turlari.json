@@ -1,0 +1,486 @@
+{
+  "nom": "27-mavzu. Energiya Turlari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Energiya deb nimaga aytiladi?",
+      "v": [
+        "Jismning ish bajara olish qobiliyatini tavsiflovchi fizik kattalikka",
+        "Jismning tezligiga",
+        "Jismning massasiga",
+        "Jismning haroratiga"
+      ],
+      "t": 0,
+      "izoh": "Energiya — ish bajara olish qobiliyati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#0ff691b5"
+    },
+    {
+      "q": "Energiya qanday kattalik?",
+      "v": [
+        "Skalyar kattalik",
+        "Vektor kattalik",
+        "O'lchanmaydigan kattalik",
+        "Birliksiz kattalik"
+      ],
+      "t": 0,
+      "izoh": "Energiya skalyar kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#2b40a2b4"
+    },
+    {
+      "q": "Mexanik energiyaning nechta turi mavjud?",
+      "v": [
+        "Ikki turi: kinetik va potensial",
+        "Uch turi",
+        "Bitta turi",
+        "To'rt turi"
+      ],
+      "t": 0,
+      "izoh": "Kinetik va potensial energiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#2a3c0f6d"
+    },
+    {
+      "q": "Mexanik energiya deb nimaga aytiladi?",
+      "v": [
+        "Jismning yoki jismlar sistemasining bir holatdan boshqa holatga o'tishida ish bajara olish qobiliyatini ko'rsatuvchi fizik kattalikka",
+        "Jismning og'irligiga",
+        "Jismning zichligiga",
+        "Kuchning masofaga ko'paytmasiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi ta'rif shunday.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#1cd95874"
+    },
+    {
+      "q": "Mexanik energiyaning birligi qaysi?",
+      "v": [
+        "Joul (J)",
+        "Vatt (W)",
+        "Nyuton (N)",
+        "Paskal (Pa)"
+      ],
+      "t": 0,
+      "izoh": "Energiya ishdek J da o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#bf83ee85"
+    },
+    {
+      "q": "Kinetik energiya deb nimaga aytiladi?",
+      "v": [
+        "Jismlarning mexanik harakati tufayli vujudga keladigan energiyaga",
+        "Jismlarning balandligi tufayli vujudga keladigan energiyaga",
+        "Jismlarning massasiga",
+        "Jismning tinch holatiga"
+      ],
+      "t": 0,
+      "izoh": "Kinetik energiya harakat energiyasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#643d43aa"
+    },
+    {
+      "q": "Kinetik so'zi qaysi tildan olingan va nima degan ma'noni anglatadi?",
+      "v": [
+        "Grekcha kinematos — harakat",
+        "Lotincha potentia — vaziyat",
+        "Inglizcha affair — ish",
+        "Arabcha — kuch"
+      ],
+      "t": 0,
+      "izoh": "Kinematos — harakat demakdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#43db408e"
+    },
+    {
+      "q": "Kinetik energiyaning formulasi qaysi?",
+      "v": [
+        "Ek = m·v²/2",
+        "Ek = m·g·h",
+        "Ek = m·v",
+        "Ek = F·s"
+      ],
+      "t": 0,
+      "izoh": "Ek = mv²/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m27-energiya-turlari#2118baf5"
+    },
+    {
+      "q": "Potensial energiya deb nimaga aytiladi?",
+      "v": [
+        "Jismlarning o'zaro ta'siri yoki vaziyati tufayli vujudga keladigan energiyaga",
+        "Jismning harakati tufayli hosil bo'lgan energiyaga",
+        "Jismning massasiga",
+        "Jismning tezlanishiga"
+      ],
+      "t": 0,
+      "izoh": "Potensial energiya vaziyat energiyasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#6f929fb2"
+    },
+    {
+      "q": "Potensial so'zi qaysi so'zdan olingan?",
+      "v": [
+        "Lotincha potentia — vaziyat yoki imkoniyat",
+        "Grekcha kinematos — harakat",
+        "Inglizcha power — quvvat",
+        "Fransuzcha energie — kuch"
+      ],
+      "t": 0,
+      "izoh": "Potentia — vaziyat, imkoniyat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#fb31aa03"
+    },
+    {
+      "q": "Yer sirtidan h balandlikka ko'tarilgan jismning potensial energiyasi formulasi qaysi?",
+      "v": [
+        "Ep = m·g·h",
+        "Ep = m·v²/2",
+        "Ep = F·s",
+        "Ep = N·t"
+      ],
+      "t": 0,
+      "izoh": "Ep = m·g·h.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m27-energiya-turlari#5bd9a8e7"
+    },
+    {
+      "q": "Ep = m·g·h formulasidagi h nimani bildiradi?",
+      "v": [
+        "Jismning yer sirtidan turgan balandligini",
+        "Jismning hajmini",
+        "Jismning tezligini",
+        "Vaqtni"
+      ],
+      "t": 0,
+      "izoh": "h — balandlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m27-energiya-turlari#5059306f"
+    },
+    {
+      "q": "Jismning energiyasi qancha katta bo'lsa, u qanday qobiliyatga ega bo'ladi?",
+      "v": [
+        "Ko'proq ish bajarish qobiliyatiga",
+        "Kamroq ish bajarish qobiliyatiga",
+        "Hech qanday ish bajarmaydi",
+        "Faqat issiqlik chiqaradi"
+      ],
+      "t": 0,
+      "izoh": "Katta energiya — ko'p ish bajarish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#bec005d1"
+    },
+    {
+      "q": "Blokdan o'tkazilgan ipga osilgan yuk pastga tushib aravachani harakatga keltirganda nima sodir bo'ladi?",
+      "v": [
+        "Yukning harakati ish bajaradi, demak yuk energiyaga ega",
+        "Energiya yo'qoladi",
+        "Hech narsa bo'lmaydi",
+        "Aravacha energiya yo'qotadi"
+      ],
+      "t": 0,
+      "izoh": "Ish bajara olgan jism energiyaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#a8f1070e"
+    },
+    {
+      "q": "Energiya bordan yo'q, yo'qdan bor bo'ladimi?",
+      "v": [
+        "Yo'q, u faqat bir turdan ikkinchi turga aylanishi mumkin",
+        "Ha, yo'qdan bor bo'ladi",
+        "Ha, bardan yo'q bo'ladi",
+        "Ba'zan yo'qoladi"
+      ],
+      "t": 0,
+      "izoh": "Energiya saqlanadi va aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#547fd976"
+    },
+    {
+      "q": "Tepalikda turgan shar qanday energiyaga ega?",
+      "v": [
+        "Potensial energiyaga",
+        "Kinetik energiyaga",
+        "Hech qanday energiyaga ega emas",
+        "Issiqlik energiyasiga"
+      ],
+      "t": 0,
+      "izoh": "Balandlikda turgan shar potensial energiyaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#b98570fd"
+    },
+    {
+      "q": "Tepalikdan pastga harakatlangan sharning energiyasi qanday o'zgaradi?",
+      "v": [
+        "Potensial energiyasi kamayib, kinetik energiyasi ortadi",
+        "Kinetik energiyasi kamayadi",
+        "Ikkalasi ham o'zgarmaydi",
+        "Ikkalasi ham yo'qoladi"
+      ],
+      "t": 0,
+      "izoh": "Ep kamayadi, Ek ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#d1d5f832"
+    },
+    {
+      "q": "Ishqalanish hisobga olinmasa, shar tepalikning quyi nuqtasiga yetganda uning kinetik energiyasi nimaga teng bo'ladi?",
+      "v": [
+        "Dastlabki potensial energiyasiga",
+        "Nolga",
+        "Og'irlik kuchiga",
+        "Massasiga"
+      ],
+      "t": 0,
+      "izoh": "mv²/2 = mgh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#7a1ec3f2"
+    },
+    {
+      "q": "Ma'lum balandlikda uchib ketayotgan samolyot qanday energiyaga ega?",
+      "v": [
+        "Bir paytda ham kinetik, ham potensial energiyaga",
+        "Faqat kinetik",
+        "Faqat potensial",
+        "Hech qanday"
+      ],
+      "t": 0,
+      "izoh": "Harakat va balandlik — ikkala tur energiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#d05e0a38"
+    },
+    {
+      "q": "Jismning to'la energiyasi qanday topiladi?",
+      "v": [
+        "E = m·g·h + m·v²/2",
+        "E = m·g·h",
+        "E = m·v²/2",
+        "E = F·s"
+      ],
+      "t": 0,
+      "izoh": "To'la energiya — kinetik va potensial yig'indisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#0a8074b6"
+    },
+    {
+      "q": "Massasi 0,4 kg koptok 5 m balandlikda ushlab turilsa, uning potensial energiyasi qancha?",
+      "v": [
+        "19,62 J",
+        "196,2 J",
+        "1,962 J",
+        "1962 J"
+      ],
+      "t": 0,
+      "izoh": "Ep = 0,4·9,81·5 = 19,62 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m27-energiya-turlari#28066fab"
+    },
+    {
+      "q": "Og'ir atletikachi shtangani ko'tarish jarayonida nima qiladi?",
+      "v": [
+        "O'z energiyasini shtangaga uzatadi",
+        "Shtangadan energiya oladi",
+        "Hech qanday energiya almashinuvi bo'lmaydi",
+        "Shtanga massasini kamaytiradi"
+      ],
+      "t": 0,
+      "izoh": "Ish bajarilib, energiya uzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#9d4eb568"
+    },
+    {
+      "q": "Daryolarda suvning harakatida qaysi energiya hosil bo'ladi?",
+      "v": [
+        "Kinetik energiya",
+        "Potensial energiya",
+        "Hech qanday",
+        "Faqat issiqlik energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Harakatdagi suv kinetik energiyaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#89755f45"
+    },
+    {
+      "q": "Otilgan tosh dastlab qanday energiyaga ega bo'ladi?",
+      "v": [
+        "Kinetik energiyaga",
+        "Faqat potensial energiyaga",
+        "Hech qanday energiyaga ega emas",
+        "Issiqlik energiyasiga"
+      ],
+      "t": 0,
+      "izoh": "Harakatga keltirilgan tosh kinetik energiya oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#6f649854"
+    },
+    {
+      "q": "Energiyaning turlariga qaysilar kiradi?",
+      "v": [
+        "Mexanik, issiqlik, elektr, yorug'lik energiyalari",
+        "Faqat mexanik energiya",
+        "Faqat elektr energiya",
+        "Faqat issiqlik energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikda mexanik, issiqlik, elektr, yorug'lik keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m27-energiya-turlari#42dc7398"
+    },
+    {
+      "q": "Kinetik energiya qaysi kattaliklarga bog'liq?",
+      "v": [
+        "Jismning massasi va tezligiga",
+        "Jismning balandligi va massasiga",
+        "Faqat jismning hajmiga",
+        "Faqat zichlikka"
+      ],
+      "t": 0,
+      "izoh": "Ek = mv²/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m27-energiya-turlari#372f182f"
+    },
+    {
+      "q": "Potensial energiya qaysi kattaliklarga bog'liq?",
+      "v": [
+        "Jismning massasi, g va balandligiga",
+        "Jismning tezligiga",
+        "Jismning haroratiga",
+        "Jismning shakliga"
+      ],
+      "t": 0,
+      "izoh": "Ep = m·g·h.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m27-energiya-turlari#13b97ad4"
+    },
+    {
+      "q": "Xonaning shipida 3 m balandlikda osilgan 5 kg qandilning potensial energiyasi qanday formula bilan topiladi?",
+      "v": [
+        "Ep = m·g·h",
+        "Ep = m·v²/2",
+        "Ep = F·s",
+        "Ep = N·t"
+      ],
+      "t": 0,
+      "izoh": "Potensial energiya formulasi Ep = mgh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m27-energiya-turlari#fd285439"
+    },
+    {
+      "q": "Mechanical energy inglizcha so'z o'zbek tilida nimani anglatadi?",
+      "v": [
+        "Mexanik energiya",
+        "Mexanik ish",
+        "Mexanik quvvat",
+        "Kinetik energiya"
+      ],
+      "t": 0,
+      "izoh": "Mechanical energy — mexanik energiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#ce22c7de"
+    },
+    {
+      "q": "Jismning tezligi ikki marta ortsa, kinetik energiyasi qanday o'zgaradi?",
+      "v": [
+        "To'rt marta ortadi",
+        "Ikki marta ortadi",
+        "O'zgarmaydi",
+        "Ikki marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Ek tezlik kvadratiga proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#dcff173c"
+    },
+    {
+      "q": "Jismning ko'tarilish balandligi ikki marta ortsa, potensial energiyasi qanday o'zgaradi?",
+      "v": [
+        "Ikki marta ortadi",
+        "To'rt marta ortadi",
+        "O'zgarmaydi",
+        "Ikki marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Ep balandlikka to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#278cab96"
+    },
+    {
+      "q": "Yerga tik tushayotgan jism qanday energiyalarga ega?",
+      "v": [
+        "Ham kinetik, ham potensial energiyaga",
+        "Faqat potensial",
+        "Faqat kinetik",
+        "Hech qanday"
+      ],
+      "t": 0,
+      "izoh": "Balandlikda harakatlanayotgan jism ikkala energiyaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m27-energiya-turlari#be155c94"
+    }
+  ]
+}

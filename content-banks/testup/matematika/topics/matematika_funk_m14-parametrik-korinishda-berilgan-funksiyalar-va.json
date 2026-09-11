@@ -1,0 +1,1609 @@
+{
+  "nom": "Parametrik ko'rinishda berilgan funksiyalar va ularning grafiklari",
+  "bolim": "Funksiyalar",
+  "blok": "funk",
+  "rasmiyBolim": 4,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Egri chiziq x = 2t + 1, y = t² − 3 parametrik tenglamalar bilan berilgan. t = 4 qiymatga mos keluvchi nuqtaning koordinatalarini toping.",
+      "v": [
+        "(9; 13)",
+        "(8; 13)",
+        "(9; 19)",
+        "(13; 9)"
+      ],
+      "t": 0,
+      "izoh": "Parametrning qiymatini ikkala formulaga qo'yamiz. x = 2·4 + 1 = 9 bo'ladi. y = 4² − 3 = 16 − 3 = 13 chiqadi. Demak nuqta (9; 13). Javob: (9; 13).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "t-da-nuqta-koordinatasi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#7707fefc"
+    },
+    {
+      "q": "Zilola sinf taxtasida nuqta harakatini x = 3t − 2, y = 5 − t² formulalar bilan yozdi. Bu nuqta t = 3 bo'lganda qayerda joylashadi?",
+      "v": [
+        "(11; −4)",
+        "(9; −4)",
+        "(7; −4)",
+        "(7; 4)"
+      ],
+      "t": 2,
+      "izoh": "x uchun 3·3 − 2 = 9 − 2 = 7 hosil bo'ladi. y uchun 5 − 3² = 5 − 9 = −4 chiqadi. Ayirmaning ishorasini saqlash muhim. Javob: (7; −4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "t-da-nuqta-koordinatasi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#b19aba87"
+    },
+    {
+      "q": "x = 4cos t, y = 4sin t tenglamalar bilan berilgan aylanada t = π/2 parametrga mos nuqtani ko'rsating.",
+      "v": [
+        "(4; 0)",
+        "(0; 4)",
+        "(0; −4)",
+        "(−4; 0)"
+      ],
+      "t": 1,
+      "izoh": "cos(π/2) = 0 bo'lgani uchun x = 4·0 = 0. sin(π/2) = 1 bo'lgani uchun y = 4·1 = 4. Bu aylananing yuqori nuqtasi. Javob: (0; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "t-da-nuqta-koordinatasi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#d48bde08"
+    },
+    {
+      "q": "Bekzod dronni x = 6t, y = 18 + 2t qonun bo'yicha uchirdi, bu yerda masofa metrda, t esa sekundda o'lchanadi. Uchirilgandan 5 sekund keyin dron qaysi nuqtada bo'ladi?",
+      "v": [
+        "(30; 10)",
+        "(30; 20)",
+        "(28; 30)",
+        "(30; 28)"
+      ],
+      "t": 3,
+      "izoh": "Gorizontal koordinata x = 6·5 = 30 metr bo'ladi. Balandlik esa y = 18 + 2·5 = 18 + 10 = 28 metr. Boshlang'ich 18 metrni tashlab ketmaslik kerak. Javob: (30; 28).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "t-da-nuqta-koordinatasi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#234d070d"
+    },
+    {
+      "q": "Parametrik ko'rinishda x = t³ − t, y = t² + 1 egri chiziq berilgan. Unda t = −2 qiymatga mos nuqtaning koordinatalarini hisoblang.",
+      "v": [
+        "(−10; 5)",
+        "(−6; 5)",
+        "(6; 5)",
+        "(−6; 3)"
+      ],
+      "t": 1,
+      "izoh": "Avval x ni topamiz: (−2)³ − (−2) = −8 + 2 = −6. Manfiy t ni ayirishda ishora o'zgaradi. Keyin y = (−2)² + 1 = 4 + 1 = 5. Javob: (−6; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "t-da-nuqta-koordinatasi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#ebc9a929"
+    },
+    {
+      "q": "x = t + 2, y = 3t − 1 parametrik tenglamalardan t ni yo'qotib, y ni x orqali oshkor ifodalang.",
+      "v": [
+        "y = 3x − 1",
+        "y = 3x − 7",
+        "y = 3x + 5",
+        "y = 3x − 5"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tenglamadan t = x − 2 kelib chiqadi. Buni ikkinchisiga qo'yamiz: y = 3(x − 2) − 1. Qavsni ochsak y = 3x − 6 − 1 = 3x − 7. Javob: y = 3x − 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrni-yoqotish-chiziqli",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#7319cce5"
+    },
+    {
+      "q": "x = 5 − 2t va y = 3 + 4t bo'lsa, bu nuqtalar to'plami qaysi to'g'ri chiziqda yotishini aniqlang.",
+      "v": [
+        "y = −2x + 13",
+        "y = 2x + 13",
+        "y = −2x + 3",
+        "y = 2x − 7"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tenglamadan 2t = 5 − x, ya'ni t = (5 − x)/2. Ikkinchisiga qo'yamiz: y = 3 + 4·(5 − x)/2 = 3 + 2(5 − x). Qavsni ochsak y = 3 + 10 − 2x = 13 − 2x. Javob: y = −2x + 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrni-yoqotish-chiziqli",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#a773e0d2"
+    },
+    {
+      "q": "Sardorning avtomobili sharq tomonga x = 40t km, shimol tomonga esa y = 60 + 20t km qonun bo'yicha siljiydi. Uning yo'li qaysi to'g'ri chiziq bilan tasvirlanadi?",
+      "v": [
+        "y = 2x + 60",
+        "y = 0,5x + 30",
+        "y = 20x + 60",
+        "y = 0,5x + 60"
+      ],
+      "t": 3,
+      "izoh": "x = 40t dan t = x/40 topiladi. Buni y ga qo'yamiz: y = 60 + 20·x/40 = 60 + 0,5x. Yo'lning boshlang'ich siljishi 60 km saqlanadi. Javob: y = 0,5x + 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrni-yoqotish-chiziqli",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#ecf6e293"
+    },
+    {
+      "q": "x = 3t − 4 va y = 6t + 1 parametrik tenglamalar orasidagi bog'lanishni oshkor ko'rinishda yozing.",
+      "v": [
+        "y = 2x + 9",
+        "y = 2x + 1",
+        "y = 2x − 7",
+        "y = 0,5x + 9"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tenglamadan 3t = x + 4, demak t = (x + 4)/3. Ikkinchisiga qo'yamiz: y = 6·(x + 4)/3 + 1 = 2(x + 4) + 1. Qavsni ochib y = 2x + 8 + 1 = 2x + 9 hosil qilamiz. Javob: y = 2x + 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrni-yoqotish-chiziqli",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#4c7e901e"
+    },
+    {
+      "q": "Gulnora hovuzdan nasos bilan suv chiqarmoqda: t soatdan keyin hovuzda y = 900 − 120t m³ suv qoladi, sarflangan energiya esa x = 30t kVt·soatga teng. y ni x orqali ifodalang.",
+      "v": [
+        "y = 900 − 120x",
+        "y = 900 + 4x",
+        "y = 900 − 4x",
+        "y = 900 − 0,25x"
+      ],
+      "t": 2,
+      "izoh": "x = 30t tenglamadan t = x/30 kelib chiqadi. Uni hajm formulasiga qo'yamiz: y = 900 − 120·x/30. 120 ni 30 ga bo'lsak 4 chiqadi, demak y = 900 − 4x. Javob: y = 900 − 4x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrni-yoqotish-chiziqli",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#51ba7042"
+    },
+    {
+      "q": "x = t + 1, y = t² parametrik tenglamalar tekislikda qanday egri chiziqni aniqlaydi?",
+      "v": [
+        "y = (x + 1)²",
+        "y = x² − 1",
+        "y = (x − 1)²",
+        "y = x² + 1"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tenglamadan t = x − 1 topiladi. Buni y = t² ga qo'yamiz va y = (x − 1)² hosil bo'ladi. Bu uchi (1; 0) nuqtada bo'lgan parabola. Javob: y = (x − 1)².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrni-yoqotish-parabola",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#ab57a655"
+    },
+    {
+      "q": "x = 2t va y = t² + 3 bo'lganda, y ni x orqali ifodalovchi tenglamani toping.",
+      "v": [
+        "y = x² + 3",
+        "y = x²/2 + 3",
+        "y = 4x² + 3",
+        "y = x²/4 + 3"
+      ],
+      "t": 3,
+      "izoh": "x = 2t dan t = x/2 kelib chiqadi. Uni kvadratga ko'tarsak t² = x²/4 bo'ladi. Demak y = x²/4 + 3. Bo'luvchi ham kvadratga ko'tarilishini unutmaslik kerak. Javob: y = x²/4 + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrni-yoqotish-parabola",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#6cb9f139"
+    },
+    {
+      "q": "Koptok zarbdan keyin gorizontal x = 15t metr, vertikal y = 20t − 5t² metr qonun bo'yicha uchdi. Uning trayektoriyasi tenglamasi qaysi?",
+      "v": [
+        "y = 4x/3 − x²/3",
+        "y = 4x/3 − x²/45",
+        "y = 4x/3 − 5x²",
+        "y = 4x/3 + x²/45"
+      ],
+      "t": 1,
+      "izoh": "Gorizontal tenglamadan t = x/15 topiladi. Uni vertikal tenglamaga qo'yamiz: y = 20·x/15 − 5·(x/15)². Bu yerda 20/15 = 4/3, va 5/225 = 1/45. Demak y = 4x/3 − x²/45. Javob: y = 4x/3 − x²/45.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrni-yoqotish-parabola",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#5b0b14f0"
+    },
+    {
+      "q": "x = t², y = 2t tenglamalar bilan berilgan chiziq qaysi tenglama bilan tasvirlanadi (bu yerda t ixtiyoriy haqiqiy son)?",
+      "v": [
+        "y² = 4x",
+        "y² = 2x",
+        "x² = 4y",
+        "y = 4x²"
+      ],
+      "t": 0,
+      "izoh": "y = 2t tenglamadan t = y/2 kelib chiqadi. Uni x = t² ga qo'yamiz: x = y²/4. Ikkala tomonni 4 ga ko'paytirsak y² = 4x hosil bo'ladi. Javob: y² = 4x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrni-yoqotish-parabola",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#bdbecfba"
+    },
+    {
+      "q": "x = t − 3 va y = t² − 6t + 9 bo'lsa, egri chiziqning oshkor tenglamasini aniqlang.",
+      "v": [
+        "y = (x + 3)²",
+        "y = x²",
+        "y = (x − 3)²",
+        "y = x² − 9"
+      ],
+      "t": 1,
+      "izoh": "y ifodasini to'la kvadratga keltiramiz: t² − 6t + 9 = (t − 3)². Shartga ko'ra x = t − 3, demak y = x². Bu koordinata boshida uchi bo'lgan parabola. Javob: y = x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrni-yoqotish-parabola",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#076ef785"
+    },
+    {
+      "q": "x = 3 + 5cos t, y = −2 + 5sin t tenglamalar bilan berilgan aylananing markazi hamda radiusini toping.",
+      "v": [
+        "Markaz (3; −2), R = 5",
+        "Markaz (−3; 2), R = 5",
+        "Markaz (3; −2), R = 25",
+        "Markaz (5; 5), R = 3"
+      ],
+      "t": 0,
+      "izoh": "Aylananing parametrik yozuvi x = a + Rcos t, y = b + Rsin t ko'rinishida bo'ladi. Bunda markaz (a; b), radius esa R. Solishtirsak a = 3, b = −2, R = 5 chiqadi. Javob: markaz (3; −2), R = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-markaz-radius",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#29913a0d"
+    },
+    {
+      "q": "x = 7cos t, y = 7sin t tenglamalar bilan berilgan chiziqning uzunligi nimaga teng bo'ladi?",
+      "v": [
+        "7π",
+        "14π",
+        "49π",
+        "28π"
+      ],
+      "t": 1,
+      "izoh": "Bu tenglamalar markazi koordinata boshida, radiusi 7 bo'lgan aylanani beradi. Aylana uzunligi L = 2πR formula bilan hisoblanadi. Demak L = 2π·7 = 14π. Javob: 14π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-uzunlik-yuza",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#dcd36084"
+    },
+    {
+      "q": "Chorvador Anvar qoziqqa bog'langan echkining yurish chegarasini x = 12 + 9cos t, y = 8 + 9sin t deb yozdi, o'lchov birligi metr. Echki sharq tomonga eng uzoq borganda qaysi nuqtada turadi?",
+      "v": [
+        "(21; 17)",
+        "(9; 8)",
+        "(12; 17)",
+        "(21; 8)"
+      ],
+      "t": 3,
+      "izoh": "x eng katta qiymatini cos t = 1 bo'lganda oladi, ya'ni x = 12 + 9 = 21. Ayni paytda sin t = 0 bo'lgani uchun y = 8 + 0 = 8. Ikkala koordinata bir vaqtda maksimum bo'la olmaydi. Javob: (21; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylana-chekka-nuqta",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#3f8ee07c"
+    },
+    {
+      "q": "Aylana x = 2cos t − 5, y = 2sin t + 3 ko'rinishda berilgan. Uning oshkor tenglamasini yozing.",
+      "v": [
+        "(x + 5)² + (y − 3)² = 4",
+        "(x − 5)² + (y + 3)² = 4",
+        "(x + 5)² + (y − 3)² = 2",
+        "(x + 5)² + (y + 3)² = 4"
+      ],
+      "t": 0,
+      "izoh": "Tenglamalarni x + 5 = 2cos t va y − 3 = 2sin t ko'rinishda yozamiz. Ikkalasini kvadratga ko'tarib qo'shsak, cos²t + sin²t = 1 ayniyat qo'llanadi. Natijada (x + 5)² + (y − 3)² = 2² = 4. Javob: (x + 5)² + (y − 3)² = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-oshkor-tenglamaga",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#2f01660e"
+    },
+    {
+      "q": "Markazi koordinata boshida va radiusi 10 ga teng bo'lgan aylananing parametrik tenglamasini ko'rsating.",
+      "v": [
+        "x = 10cos t, y = 10cos t",
+        "x = cos 10t, y = sin 10t",
+        "x = 10cos t, y = 10sin t",
+        "x = 100cos t, y = 100sin t"
+      ],
+      "t": 2,
+      "izoh": "Markazi boshda bo'lgan aylana uchun x = Rcos t, y = Rsin t yoziladi. Bu yerda R = 10 bo'lgani uchun x = 10cos t, y = 10sin t. Radius argument ichiga emas, koeffitsientga qo'yiladi. Javob: x = 10cos t, y = 10sin t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-parametrik-yozish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#7b19b783"
+    },
+    {
+      "q": "A(2; −1) nuqtadan o'tuvchi va yo'naltiruvchi vektori (3; 5) bo'lgan to'g'ri chiziqning parametrik tenglamasini yozing.",
+      "v": [
+        "x = 2 + 5t, y = −1 + 3t",
+        "x = 3 + 2t, y = 5 − t",
+        "x = 2 + 3t, y = −1 + 5t",
+        "x = 2t + 3, y = 5t − 1"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri chiziqning parametrik yozuvi x = x₀ + at, y = y₀ + bt ko'rinishida bo'ladi. Bu yerda (x₀; y₀) — berilgan nuqta, (a; b) — yo'naltiruvchi vektor. Demak x = 2 + 3t, y = −1 + 5t. Javob: x = 2 + 3t, y = −1 + 5t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "togri-chiziq-parametrik-yozish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#4d2f6843"
+    },
+    {
+      "q": "M(−4; 6) va N(2; −3) nuqtalardan o'tuvchi to'g'ri chiziqning parametrik tenglamasini tuzing.",
+      "v": [
+        "x = −4 + 6t, y = 6 + 9t",
+        "x = −4 + 6t, y = 6 − 9t",
+        "x = −4 − 6t, y = 6 − 9t",
+        "x = 6 − 4t, y = −9 + 6t"
+      ],
+      "t": 1,
+      "izoh": "Avval yo'naltiruvchi vektorni topamiz: MN = (2 − (−4); −3 − 6) = (6; −9). Boshlang'ich nuqta sifatida M ni olamiz. Shunda x = −4 + 6t, y = 6 − 9t hosil bo'ladi. Javob: x = −4 + 6t, y = 6 − 9t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-chiziq-parametrik-yozish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#1c3a9d19"
+    },
+    {
+      "q": "Toshkentdan chiqqan yuk mashinasi (0; 0) nuqtadan boshlab har soatda sharqqa 45 km, shimolga 60 km siljiydi. Uning harakatini parametrik ko'rinishda qanday yozish mumkin?",
+      "v": [
+        "x = 60t, y = 45t",
+        "x = 45 + t, y = 60 + t",
+        "x = 45t, y = 60t",
+        "x = 45t², y = 60t²"
+      ],
+      "t": 2,
+      "izoh": "Har soatda siljish o'zgarmas bo'lgani uchun koordinatalar vaqtga to'g'ri proporsional. Sharq yo'nalishi x bo'lgani uchun x = 45t, shimol yo'nalishi y bo'lgani uchun y = 60t. Boshlang'ich nuqta nol bo'lgani uchun ozod had qo'shilmaydi. Javob: x = 45t, y = 60t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "togri-chiziq-parametrik-yozish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#746e77d5"
+    },
+    {
+      "q": "x = 1 − 4t, y = 7 + 3t to'g'ri chiziqning boshlang'ich nuqtasi va yo'naltiruvchi vektorini ko'rsating.",
+      "v": [
+        "Nuqta (1; 7), vektor (4; 3)",
+        "Nuqta (−4; 3), vektor (1; 7)",
+        "Nuqta (1; 7), vektor (−4; −3)",
+        "Nuqta (1; 7), vektor (−4; 3)"
+      ],
+      "t": 3,
+      "izoh": "t oldidagi koeffitsientlar yo'naltiruvchi vektorni beradi, ozod hadlar esa boshlang'ich nuqtani. Bu yerda ozod hadlar 1 va 7, ya'ni nuqta (1; 7). t oldidagi koeffitsientlar −4 va 3, ya'ni vektor (−4; 3). Javob: nuqta (1; 7), vektor (−4; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-chiziq-parametrik-yozish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#f903532c"
+    },
+    {
+      "q": "x = 2t + 1, y = t² parametrik tenglamalar bilan berilgan chiziqda A(7; 9) nuqta yotadimi degan savolga to'g'ri javobni tanlang.",
+      "v": [
+        "Ha, chunki t = 7 da x = 7 bo'ladi",
+        "Yo'q, chunki t = 3 da y = 6 chiqadi",
+        "Yo'q, chunki x va y bir vaqtda mos kelmaydi",
+        "Ha, chunki t = 3 da ikkala koordinata ham mos keladi"
+      ],
+      "t": 3,
+      "izoh": "Avval abssissadan parametrni topamiz: 2t + 1 = 7 dan t = 3. Endi shu t ni ordinata formulasiga qo'yamiz: y = 3² = 9. Berilgan ordinata ham 9 ga teng, demak nuqta chiziqda yotadi. Javob: ha, t = 3 da mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-chiziqda-yotishi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#bd66e9ce"
+    },
+    {
+      "q": "x = 3cos t, y = 3sin t aylana uchun B(2; 2) nuqtaning tegishliligi haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Tegishli, chunki ikkala koordinata ham 3 dan kichik",
+        "Tegishli emas, chunki 2² + 2² = 8, radius kvadrati esa 9",
+        "Tegishli, chunki 2 + 2 = 4 soni 3 dan katta",
+        "Tegishli, chunki nuqta aylana ichida yotadi"
+      ],
+      "t": 1,
+      "izoh": "Parametrni yo'qotsak x² + y² = 9 aylana hosil bo'ladi. Nuqtani tenglamaga qo'yamiz: 2² + 2² = 4 + 4 = 8. Bu 9 ga teng emas, demak nuqta aylanada yotmaydi, balki uning ichida qoladi. Javob: tegishli emas, chunki 8 ≠ 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-chiziqda-yotishi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#1809f87b"
+    },
+    {
+      "q": "x = t − 2, y = 3t + 4 chiziqda (5; 19), (0; 4), (5; 25), (1; 7) nuqtalardan qaysi biri yotadi?",
+      "v": [
+        "(5; 19)",
+        "(0; 4)",
+        "(5; 25)",
+        "(1; 7)"
+      ],
+      "t": 2,
+      "izoh": "Har bir nuqtaning abssissasidan parametrni topamiz: t = x + 2. Nuqta (5; 25) uchun t = 7 va y = 3·7 + 4 = 25, mos keladi. Qolgan nuqtalarda hisoblangan ordinata berilganidan farq qiladi. Javob: (5; 25).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-chiziqda-yotishi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#a15bfb3e"
+    },
+    {
+      "q": "Karim aylana shaklidagi yo'lka bo'ylab x = 50cos t, y = 50sin t qonun bilan yuguradi, o'lchov birligi metr. Uning yo'lida (30; 40) nuqtaga qo'yilgan suv chelagi uchraydimi?",
+      "v": [
+        "Yo'q, chunki 30 + 40 = 70 va bu 50 dan katta",
+        "Ha, chunki 30 va 40 sonlari 50 dan kichik",
+        "Yo'q, chunki 30² + 40² = 5000",
+        "Ha, chunki 30² + 40² = 2500 = 50²"
+      ],
+      "t": 3,
+      "izoh": "Parametrni yo'qotsak yo'lka tenglamasi x² + y² = 2500 bo'ladi. Chelak nuqtasini qo'yamiz: 30² + 40² = 900 + 1600 = 2500. Chap tomon o'ng tomonga teng chiqdi, demak chelak yo'lka ustida. Javob: ha, uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqta-chiziqda-yotishi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#3e418f62"
+    },
+    {
+      "q": "x = t², y = t³ tenglamalar bilan berilgan egri chiziqda (4; −8) nuqta yotadimi, tekshiring.",
+      "v": [
+        "Ha, t = −2 bo'lganda",
+        "Ha, t = 2 bo'lganda",
+        "Yo'q, chunki t² manfiy bo'lolmaydi",
+        "Yo'q, chunki t = 2 da y = 8"
+      ],
+      "t": 0,
+      "izoh": "x = 4 shartdan t² = 4, ya'ni t = 2 yoki t = −2 bo'lishi mumkin. t = 2 da y = 8 chiqadi, bu mos emas. t = −2 da esa y = (−2)³ = −8, bu berilgan ordinataga teng. Javob: ha, t = −2 bo'lganda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqta-chiziqda-yotishi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#144ff34b"
+    },
+    {
+      "q": "x = 4t − 5, y = t² + 2 parametrik chiziqda (7; 11) nuqtaga qaysi parametr qiymati mos keladi?",
+      "v": [
+        "t = 0,5",
+        "t = 3",
+        "t = −3",
+        "t = 4"
+      ],
+      "t": 1,
+      "izoh": "Abssissa tenglamasidan 4t − 5 = 7, demak 4t = 12 va t = 3. Tekshiramiz: y = 3² + 2 = 9 + 2 = 11, bu berilgan ordinataga mos. Ikkinchi ildiz t = −3 da abssissa −17 chiqadi va mos kelmaydi. Javob: t = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-nuqta-uchun-t",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#9388df43"
+    },
+    {
+      "q": "x = 6 − 2t, y = 5t + 1 chiziqda ordinatasi 26 ga teng bo'lgan nuqtaning abssissasini toping.",
+      "v": [
+        "−4",
+        "16",
+        "−4,4",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Ordinata tenglamasidan 5t + 1 = 26, ya'ni 5t = 25 va t = 5. Topilgan parametrni abssissa formulasiga qo'yamiz: x = 6 − 2·5 = 6 − 10 = −4. Savol parametr emas, abssissa haqida. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-nuqta-uchun-t",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#a8f905ae"
+    },
+    {
+      "q": "Zamira velosipedda sharqqa x = 15t km siljiydi, janubdagi to'siqqacha qolgan masofa esa y = 20 − 2t km bo'yicha kamayadi. U (120; 4) nuqtaga necha soatdan keyin yetib boradi?",
+      "v": [
+        "12",
+        "8",
+        "3",
+        "10"
+      ],
+      "t": 1,
+      "izoh": "Abssissa tenglamasidan 15t = 120, demak t = 8 soat. Tekshiramiz: y = 20 − 2·8 = 20 − 16 = 4, bu berilgan ordinataga mos keladi. Demak ikkala shart bir vaqtda bajariladi. Javob: 8 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-nuqta-uchun-t",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#63ada9bf"
+    },
+    {
+      "q": "x = 2cos t, y = 2sin t aylanada (−2; 0) nuqtaga [0; 2π) oralig'idagi qaysi parametr mos keladi?",
+      "v": [
+        "t = π",
+        "t = π/2",
+        "t = 3π/2",
+        "t = 2π"
+      ],
+      "t": 0,
+      "izoh": "Shartdan 2cos t = −2, ya'ni cos t = −1 bo'lishi kerak. Shu bilan birga 2sin t = 0, ya'ni sin t = 0. Ikkala shartni [0; 2π) oralig'ida faqat t = π qanoatlantiradi. Javob: t = π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-nuqta-uchun-t",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#4ab71ebf"
+    },
+    {
+      "q": "x = 3cos t, y = 5sin t tenglamalar bilan berilgan egri chiziqning oshkor tenglamasini aniqlang.",
+      "v": [
+        "x²/9 + y²/25 = 1",
+        "x²/25 + y²/9 = 1",
+        "x²/3 + y²/5 = 1",
+        "x² + y² = 34"
+      ],
+      "t": 0,
+      "izoh": "Tenglamalardan cos t = x/3 va sin t = y/5 kelib chiqadi. Asosiy trigonometrik ayniyat cos²t + sin²t = 1 ni qo'llaymiz. Natijada x²/9 + y²/25 = 1 ellips hosil bo'ladi. Javob: x²/9 + y²/25 = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ellips-trig-ayniyat",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#2f81809c"
+    },
+    {
+      "q": "x = 6cos t, y = 4sin t tenglamalar bilan berilgan ellipsning yarim o'qlari uzunligini toping.",
+      "v": [
+        "3 va 2",
+        "36 va 16",
+        "12 va 8",
+        "6 va 4"
+      ],
+      "t": 3,
+      "izoh": "Ellipsning parametrik yozuvi x = acos t, y = bsin t ko'rinishida bo'ladi. Bu yerda a va b — yarim o'qlar. Koeffitsientlarni solishtirsak a = 6, b = 4 chiqadi. Javob: 6 va 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ellips-yarim-oqlari",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#6987361f"
+    },
+    {
+      "q": "x = 2 + 4cos t, y = −1 + 3sin t egri chiziqning oshkor tenglamasi qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "(x + 2)²/16 + (y − 1)²/9 = 1",
+        "(x − 2)²/4 + (y + 1)²/3 = 1",
+        "(x − 2)²/16 + (y + 1)²/9 = 1",
+        "(x − 2)²/9 + (y + 1)²/16 = 1"
+      ],
+      "t": 2,
+      "izoh": "Tenglamalarni cos t = (x − 2)/4 va sin t = (y + 1)/3 ko'rinishga keltiramiz. Ikkalasini kvadratga ko'tarib qo'shsak, asosiy ayniyat bo'yicha yig'indi 1 ga teng bo'ladi. Maxrajlarda 4² = 16 va 3² = 9 turadi. Javob: (x − 2)²/16 + (y + 1)²/9 = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ellips-trig-ayniyat",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#865f580a"
+    },
+    {
+      "q": "Stadion maydonchasining chegarasi x = 80cos t, y = 50sin t tenglamalar bilan chizilgan, o'lchov birligi metr. Maydonchaning sharqdan g'arbga eng katta kengligi qancha?",
+      "v": [
+        "80 m",
+        "100 m",
+        "160 m",
+        "130 m"
+      ],
+      "t": 2,
+      "izoh": "x koordinata −80 dan 80 gacha o'zgaradi, chunki cos t qiymatlari −1 va 1 orasida yotadi. Kenglik chekka nuqtalar orasidagi masofa, ya'ni 80 − (−80) = 160 metr. Yarim o'q emas, to'liq o'q so'ralgan. Javob: 160 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ellips-oq-uzunligi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#173ec75c"
+    },
+    {
+      "q": "x = 5cos t, y = 5sin t va x = 5cos t, y = 3sin t chiziqlari orasidagi farqni to'g'ri tavsiflagan javobni tanlang.",
+      "v": [
+        "Ikkalasi ham radiusi 5 bo'lgan aylana",
+        "Birinchisi aylana, ikkinchisi yarim o'qlari 5 va 3 bo'lgan ellips",
+        "Birinchisi ellips, ikkinchisi radiusi 3 bo'lgan aylana",
+        "Ikkalasi ham bir xil ellipsni beradi"
+      ],
+      "t": 1,
+      "izoh": "Birinchi juftlikda ikkala koeffitsient teng, shuning uchun x² + y² = 25 aylana chiqadi. Ikkinchi juftlikda koeffitsientlar har xil, natijada x²/25 + y²/9 = 1 ellips hosil bo'ladi. Koeffitsientlar tengligi aylana belgisidir. Javob: birinchisi aylana, ikkinchisi ellips.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egri-chiziq-turini-aniqlash",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#e75baa0b"
+    },
+    {
+      "q": "x = t + 4, y = t² − 9 egri chiziq abssissalar o'qini qaysi nuqtalarda kesib o'tadi?",
+      "v": [
+        "(7; 0) va (−1; 0)",
+        "(3; 0) va (−3; 0)",
+        "(7; 0) va (1; 0)",
+        "(0; 7) va (0; 1)"
+      ],
+      "t": 2,
+      "izoh": "Abssissalar o'qida y = 0 bo'ladi, demak t² − 9 = 0 va t = 3 yoki t = −3. t = 3 da x = 7, t = −3 da esa x = 1 chiqadi. Demak kesishish nuqtalari (7; 0) va (1; 0). Javob: (7; 0) va (1; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oq-bilan-kesishish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#a3d356ff"
+    },
+    {
+      "q": "x = 2t − 6, y = 5t + 10 to'g'ri chiziq ordinatalar o'qini qaysi nuqtada kesib o'tadi?",
+      "v": [
+        "(0; 25)",
+        "(0; 10)",
+        "(3; 0)",
+        "(0; −5)"
+      ],
+      "t": 0,
+      "izoh": "Ordinatalar o'qida x = 0 bo'ladi, shuning uchun 2t − 6 = 0 va t = 3. Topilgan parametrni ordinata formulasiga qo'yamiz: y = 5·3 + 10 = 25. Demak kesishish nuqtasi (0; 25). Javob: (0; 25).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oq-bilan-kesishish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#c238e74b"
+    },
+    {
+      "q": "Lift kabinasining o'rni x = 3, y = 2 + 1,5t formulalar bilan berilgan, o'lchov metrda va t sekundda. 6 sekunddan keyin kabina qanday balandlikda bo'ladi?",
+      "v": [
+        "9 m",
+        "3 m",
+        "11 m",
+        "8 m"
+      ],
+      "t": 2,
+      "izoh": "Balandlik ordinata bilan aniqlanadi, shuning uchun y formulasiga t = 6 ni qo'yamiz. y = 2 + 1,5·6 = 2 + 9 = 11 metr. Boshlang'ich 2 metrni tashlab ketish tipik xato. Javob: 11 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harakat-vaqt-koordinata",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#6762aa0b"
+    },
+    {
+      "q": "Model raketaning o'rni x = 30t, y = 40t − 5t² metr bilan berilgan, t sekundda o'lchanadi. Raketa qaysi vaqtda yana yer sathiga qaytadi?",
+      "v": [
+        "4 s",
+        "5 s",
+        "40 s",
+        "8 s"
+      ],
+      "t": 3,
+      "izoh": "Yer sathida y = 0 bo'ladi, demak 40t − 5t² = 0. Ko'paytuvchiga ajratsak 5t(8 − t) = 0, ildizlari t = 0 va t = 8. Uchish boshi t = 0 bo'lgani uchun qaytish vaqti 8 sekund; t = 4 esa eng yuqori nuqta vaqti. Javob: 8 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-vaqt-koordinata",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#0f931833"
+    },
+    {
+      "q": "Darvozabon koptokni x = 8t, y = 24t − 4t² qonun bo'yicha tepdi, masofa metrda va vaqt sekundda. Koptokning eng yuqori balandligi qancha bo'ladi?",
+      "v": [
+        "72 m",
+        "24 m",
+        "36 m",
+        "18 m"
+      ],
+      "t": 2,
+      "izoh": "Balandlik parabola bo'lgani uchun cho'qqi vaqti t = 24 : (2·4) = 3 sekund. Shu vaqtda y = 24·3 − 4·3² = 72 − 36 = 36 metr. Cho'qqi vaqtidagi birinchi qo'shiluvchining o'zi javob emas. Javob: 36 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harakat-vaqt-koordinata",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#87a1ec07"
+    },
+    {
+      "q": "Avtomobil g'ildiragining markazi x = 5t, y = 12t qonun bilan siljiydi, masofa metrda va vaqt sekundda. Uning tezligi qanchaga teng?",
+      "v": [
+        "17 m/s",
+        "13 m/s",
+        "60 m/s",
+        "7 m/s"
+      ],
+      "t": 1,
+      "izoh": "Bir sekundda abssissa 5 metrga, ordinata 12 metrga o'zgaradi. Siljish vektorining uzunligi Pifagor teoremasi bilan topiladi: √(5² + 12²) = √169 = 13. Koordinatalarni oddiy qo'shish tezlik bermaydi. Javob: 13 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-vaqt-koordinata",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#4c51dcbd"
+    },
+    {
+      "q": "Chumoli stol ustida x = 2t, y = t + 3 qonun bo'yicha yuradi, masofa santimetrda va vaqt sekundda. Uning boshlang'ich o'rni va 10 sekunddan keyingi o'rnini toping.",
+      "v": [
+        "Boshi (0; 3), oxiri (20; 13)",
+        "Boshi (0; 0), oxiri (20; 10)",
+        "Boshi (2; 3), oxiri (20; 13)",
+        "Boshi (0; 3), oxiri (20; 10)"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich o'rin t = 0 da olinadi: x = 0, y = 0 + 3 = 3. So'ng t = 10 ni qo'yamiz: x = 2·10 = 20, y = 10 + 3 = 13. Ordinatadagi 3 qo'shiluvchi ikkala holatda ham saqlanadi. Javob: boshi (0; 3), oxiri (20; 13).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-vaqt-koordinata",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#a3be807e"
+    },
+    {
+      "q": "Qayiq ko'lda x = 4t, y = 3t qonun bo'yicha suzadi, masofa kilometrda va vaqt soatda. 2 soatdan keyin qayiq chiqish nuqtasidan qancha uzoqda bo'ladi?",
+      "v": [
+        "14 km",
+        "10 km",
+        "7 km",
+        "5 km"
+      ],
+      "t": 1,
+      "izoh": "Ikki soatdan keyin qayiq (8; 6) nuqtada bo'ladi. Koordinata boshigacha masofa √(8² + 6²) = √100 = 10 kilometr. Koordinatalarni qo'shib yuborish xato natija beradi. Javob: 10 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masofa-parametrik",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#6c7c0549"
+    },
+    {
+      "q": "x = t + 1, y = 2t − 3 chiziqning t = 2 va t = 5 qiymatlariga mos nuqtalari orasidagi masofani hisoblang.",
+      "v": [
+        "9",
+        "3√5",
+        "3",
+        "45"
+      ],
+      "t": 1,
+      "izoh": "t = 2 da nuqta (3; 1), t = 5 da esa (6; 7) bo'ladi. Koordinata ayirmalari 3 va 6 ga teng. Masofa √(3² + 6²) = √45 = 3√5. Ildizni olishni unutish yoki ayirmalarni qo'shish xatoga olib keladi. Javob: 3√5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masofa-parametrik",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#04fb050f"
+    },
+    {
+      "q": "Anvar bog'dagi aylana yo'lkada x = 60cos t, y = 60sin t qonun bilan yuradi, o'lchov metrda. U bog' markazidan doim qanday masofada turadi?",
+      "v": [
+        "120 m",
+        "30 m",
+        "60 m",
+        "3600 m"
+      ],
+      "t": 2,
+      "izoh": "Tenglamalarni kvadratga ko'tarib qo'shsak x² + y² = 60² hosil bo'ladi. Bu markazi boshda va radiusi 60 metr bo'lgan aylana. Aylananing har bir nuqtasi markazdan radius qadar uzoqda. Javob: 60 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-parametrik",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#ead9ce57"
+    },
+    {
+      "q": "x = 3t, y = 4t chiziqda koordinata boshidan 20 birlik uzoqlikda yotgan nuqtaga mos parametrni toping (t > 0).",
+      "v": [
+        "0,8",
+        "20",
+        "5",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Nuqtaning boshgacha masofasi √((3t)² + (4t)²) = √(25t²) = 5t bo'ladi. Shartga ko'ra 5t = 20, demak t = 4. Koeffitsientlarni kvadratga ko'tarmasdan qo'shish noto'g'ri tenglama beradi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masofa-parametrik",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#65f300e0"
+    },
+    {
+      "q": "x = 1 + 2t, y = 3 − t tenglamalar 0 ≤ t ≤ 4 oraliqda kesmani beradi. Shu kesmaning uchlarini toping.",
+      "v": [
+        "(1; 3) va (9; −1)",
+        "(0; 4) va (1; 3)",
+        "(1; 3) va (9; 1)",
+        "(3; 1) va (−1; 9)"
+      ],
+      "t": 0,
+      "izoh": "Kesma uchlari parametrning chekka qiymatlarida hosil bo'ladi. t = 0 da x = 1, y = 3. t = 4 da x = 1 + 8 = 9, y = 3 − 4 = −1. Javob: (1; 3) va (9; −1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "t-oraligi-kesma",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#8e6a4ce2"
+    },
+    {
+      "q": "x = 2 + 3t, y = −1 + 4t tenglamalar 0 ≤ t ≤ 1 oraliqda berilgan. Hosil bo'lgan kesmaning uzunligini hisoblang.",
+      "v": [
+        "7",
+        "5",
+        "12",
+        "25"
+      ],
+      "t": 1,
+      "izoh": "Uchlar t = 0 da (2; −1) va t = 1 da (5; 3) bo'ladi. Koordinata ayirmalari 3 va 4 ga teng. Uzunlik √(3² + 4²) = √25 = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "t-oraligi-kesma",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#c2436c8f"
+    },
+    {
+      "q": "x = 4cos t, y = 4sin t tenglamalar 0 ≤ t ≤ π oraliqda tekislikda qanday shaklni chizadi?",
+      "v": [
+        "Radiusi 4 bo'lgan to'liq aylana",
+        "Radiusi 4 bo'lgan chorak aylana",
+        "Uzunligi 4 bo'lgan kesma",
+        "Radiusi 4 bo'lgan yuqori yarim aylana"
+      ],
+      "t": 3,
+      "izoh": "Parametr to'liq aylana uchun 2π gacha o'zgarishi kerak edi. Bu yerda t faqat π gacha borgani uchun burchak yarmini bosib o'tadi. 0 dan π gacha sin t manfiy bo'lmaydi, demak yuqori yarim aylana chiziladi. Javob: radiusi 4 bo'lgan yuqori yarim aylana.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "t-oraligi-kesma",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#6affa484"
+    },
+    {
+      "q": "Diametri 12 metr bo'lgan aylanma yo'lka x = 6cos t, y = 6sin t bilan berilgan. Sardor t = 0 dan t = π/2 gacha yurdi, u necha metr yo'l bosdi?",
+      "v": [
+        "6π m",
+        "1,5π m",
+        "12π m",
+        "3π m"
+      ],
+      "t": 3,
+      "izoh": "Parametrik yozuvda t markaziy burchak vazifasini bajaradi. Yoy uzunligi l = R·t formula bilan topiladi. Bu yerda R = 6 va burchak π/2, demak l = 6·π/2 = 3π metr. Javob: 3π m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "t-oraligi-kesma",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#e37abd7c"
+    },
+    {
+      "q": "x = 2 + t, y = 1 + 3t parametrik to'g'ri chiziq y = 2x − 1 chiziq bilan qaysi nuqtada kesishadi?",
+      "v": [
+        "(2; 1)",
+        "(3; 4)",
+        "(4; 7)",
+        "(7; 4)"
+      ],
+      "t": 2,
+      "izoh": "Parametrik ifodalarni ikkinchi tenglamaga qo'yamiz: 1 + 3t = 2(2 + t) − 1. O'ng tomonni ochsak 1 + 3t = 3 + 2t, demak t = 2. Shu t da x = 4, y = 7 bo'ladi. Javob: (4; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-chiziq-kesishishi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#7ab8fb93"
+    },
+    {
+      "q": "x = 3t, y = 9t² parametrik egri chiziq y = 9 to'g'ri chiziqni qaysi nuqtalarda kesib o'tadi?",
+      "v": [
+        "Faqat (3; 9)",
+        "(9; 3) va (−9; 3)",
+        "(1; 9) va (−1; 9)",
+        "(3; 9) va (−3; 9)"
+      ],
+      "t": 3,
+      "izoh": "Shartdan 9t² = 9, ya'ni t² = 1 va t = 1 yoki t = −1. t = 1 da x = 3, t = −1 da esa x = −3 chiqadi. Manfiy ildizni tashlab ketish yarim javob beradi. Javob: (3; 9) va (−3; 9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-chiziq-kesishishi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#83d70df3"
+    },
+    {
+      "q": "Ikki dron uchmoqda: birinchisi x = 2t, y = 5 + t, ikkinchisi x = 12 − t, y = 2 + 2t qonun bilan (kilometrda, t minutda). Ular bir vaqtning o'zida to'qnashadimi?",
+      "v": [
+        "Ha, t = 4 minutda (8; 9) nuqtada",
+        "Yo'q, t = 4 da abssissalar tenglashadi, ordinatalar esa 9 va 10 bo'ladi",
+        "Ha, t = 3 minutda (6; 8) nuqtada",
+        "Yo'q, chunki ularning abssissalari hech qachon tenglashmaydi"
+      ],
+      "t": 1,
+      "izoh": "Abssissalarni tenglashtiramiz: 2t = 12 − t, bundan 3t = 12 va t = 4. Shu paytda birinchi dron ordinatasi 5 + 4 = 9, ikkinchisiniki esa 2 + 8 = 10. Ordinatalar farq qilgani uchun to'qnashuv bo'lmaydi. Javob: yo'q, ordinatalar 9 va 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-chiziq-kesishishi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#60a1a293"
+    },
+    {
+      "q": "x = t, y = t² parametrik egri chiziq y = 2x + 3 to'g'ri chiziq bilan qaysi abssissalarda kesishadi?",
+      "v": [
+        "−3 va 1",
+        "3 va 1",
+        "3 va −1",
+        "0 va 2"
+      ],
+      "t": 2,
+      "izoh": "x = t bo'lgani uchun tenglama t² = 2t + 3 ko'rinishga keladi. Uni t² − 2t − 3 = 0 deb yozamiz. Viyet teoremasi bo'yicha ildizlar 3 va −1. Demak kesishish abssissalari 3 va −1. Javob: 3 va −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-chiziq-kesishishi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#d18ecf10"
+    },
+    {
+      "q": "x = t² − 4, y = t + 1 tenglamalar bilan berilgan chiziq ordinatalar o'qini qaysi nuqtalarda kesib o'tadi?",
+      "v": [
+        "(0; 3) va (0; −1)",
+        "(0; 3) va (0; 1)",
+        "(2; 0) va (−2; 0)",
+        "Faqat (0; 3)"
+      ],
+      "t": 0,
+      "izoh": "Ordinatalar o'qida abssissa nolga teng: t² − 4 = 0, demak t = 2 yoki t = −2. t = 2 da y = 3, t = −2 da esa y = −1 bo'ladi. Ikkala ildiz ham hisobga olinadi. Javob: (0; 3) va (0; −1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oq-bilan-kesishish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#33656603"
+    },
+    {
+      "q": "Paraplan x = 5t − 20, y = 60 − 4t qonun bilan uchmoqda, o'lchov metrda va vaqt sekundda. U yer sathiga qo'nganda abssissasi qanday bo'ladi?",
+      "v": [
+        "−20",
+        "75",
+        "55",
+        "15"
+      ],
+      "t": 2,
+      "izoh": "Yer sathida y = 0, demak 60 − 4t = 0 va t = 15 sekund. Topilgan vaqtni abssissa formulasiga qo'yamiz: x = 5·15 − 20 = 75 − 20 = 55 metr. Boshlang'ich siljish −20 ni tashlab ketmaslik kerak. Javob: 55.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oq-bilan-kesishish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#665cf332"
+    },
+    {
+      "q": "x = 2 + 6cos t, y = −3 + 6sin t aylana abssissalar o'qini kesib o'tadimi degan savolga to'g'ri javobni tanlang.",
+      "v": [
+        "Yo'q, chunki markaz o'qning pastida yotadi",
+        "Ha, chunki markazning abssissasi 2 musbat",
+        "Yo'q, chunki radius markazdan juda uzoq",
+        "Ha, chunki markazdan o'qqacha masofa 3, u radius 6 dan kichik"
+      ],
+      "t": 3,
+      "izoh": "Aylana markazi (2; −3), radiusi esa 6 ga teng. Markazdan abssissalar o'qigacha masofa ordinata moduliga teng, ya'ni 3. Masofa radiusdan kichik bo'lgani uchun aylana o'qni ikki nuqtada kesadi. Javob: ha, 3 < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oq-bilan-kesishish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#f0feb8b3"
+    },
+    {
+      "q": "x = 2 + t, y = 5 − 3t tenglamalar tekislikda qanday chiziqni hosil qilishini aniqlang.",
+      "v": [
+        "Parabola",
+        "To'g'ri chiziq",
+        "Aylana",
+        "Giperbola"
+      ],
+      "t": 1,
+      "izoh": "Ikkala koordinata ham parametrga chiziqli bog'langan. t = x − 2 ni ikkinchi tenglamaga qo'ysak y = 5 − 3(x − 2) = 11 − 3x hosil bo'ladi. Bu birinchi darajali tenglama, ya'ni to'g'ri chiziq. Javob: to'g'ri chiziq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "egri-chiziq-turini-aniqlash",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#8192794a"
+    },
+    {
+      "q": "x = 4cos t, y = 4sin t + 3 tenglamalar bilan berilgan chiziqni to'g'ri tavsiflagan javobni tanlang.",
+      "v": [
+        "Markazi (0; 3) va radiusi 4 bo'lgan aylana",
+        "Markazi (0; 0) va radiusi 4 bo'lgan aylana",
+        "Yarim o'qlari 4 va 3 bo'lgan ellips",
+        "Uchi (0; 3) nuqtada bo'lgan parabola"
+      ],
+      "t": 0,
+      "izoh": "Tenglamalarni cos t = x/4 va sin t = (y − 3)/4 ko'rinishga keltiramiz. Asosiy ayniyat bo'yicha x² + (y − 3)² = 16 hosil bo'ladi. Bu markazi (0; 3), radiusi 4 bo'lgan aylana. Javob: markazi (0; 3), radiusi 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egri-chiziq-turini-aniqlash",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#e5cfe0b0"
+    },
+    {
+      "q": "Ixtiyoriy haqiqiy t uchun x = t², y = t⁴ tenglamalar qanday chiziqni beradi?",
+      "v": [
+        "To'liq y = x² parabola",
+        "y = x⁴ egri chizig'i",
+        "y = x to'g'ri chizig'i",
+        "y = x² parabolaning faqat x ≥ 0 qismi"
+      ],
+      "t": 3,
+      "izoh": "y = t⁴ = (t²)² va x = t² bo'lgani uchun y = x² bog'lanish chiqadi. Lekin x = t² hech qachon manfiy bo'lmaydi. Shuning uchun parabolaning faqat o'ng yarmi hosil bo'ladi. Javob: y = x² parabolaning x ≥ 0 qismi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "egri-chiziq-turini-aniqlash",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#6f25a558"
+    },
+    {
+      "q": "x = 3sin t, y = 3cos t tenglamalar qanday chiziqni va nuqtaning qanday aylanish yo'nalishini beradi?",
+      "v": [
+        "Radiusi 3 aylana, soat strelkasiga qarshi yo'nalishda",
+        "Yarim o'qlari 3 va 1 bo'lgan ellips",
+        "Radiusi 3 aylana, soat strelkasi bo'yicha yo'nalishda",
+        "Radiusi 9 bo'lgan aylana"
+      ],
+      "t": 2,
+      "izoh": "Kvadratlarni qo'shsak x² + y² = 9, ya'ni radiusi 3 bo'lgan aylana. Yo'nalishni tekshiramiz: t = 0 da nuqta (0; 3), t = π/2 da esa (3; 0) bo'ladi. Yuqoridan o'ngga siljish soat strelkasi bo'yicha harakatni bildiradi. Javob: aylana, soat strelkasi bo'yicha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "egri-chiziq-turini-aniqlash",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#12dd357d"
+    },
+    {
+      "q": "x = 3t va y = 12/t tenglamalardan parametrni yo'qotib, y ni x orqali ifodalang (t ≠ 0).",
+      "v": [
+        "y = 36/x",
+        "y = 4/x",
+        "y = 12/x",
+        "y = 36x"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tenglamadan t = x/3 kelib chiqadi. Uni ikkinchisiga qo'yamiz: y = 12 : (x/3). Kasrga bo'lish teskarisiga ko'paytirish demak, ya'ni y = 12·3/x = 36/x. Javob: y = 36/x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-yoqotish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#739148b0"
+    },
+    {
+      "q": "Zavodda t soat ishlaganda tayyorlangan detallar soni x = 5t ta, bitta detalga to'g'ri kelgan qat'iy xarajat esa y = 200/t ming so'm. y ni x orqali ifodalang.",
+      "v": [
+        "y = 40/x",
+        "y = 200/x",
+        "y = 1000x",
+        "y = 1000/x"
+      ],
+      "t": 3,
+      "izoh": "Detallar sonidan vaqtni topamiz: t = x/5. Uni xarajat formulasiga qo'yamiz: y = 200 : (x/5) = 200·5/x. Demak y = 1000/x giperbola hosil bo'ladi. Javob: y = 1000/x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "giperbola-yoqotish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#c5ffa5ae"
+    },
+    {
+      "q": "t > 0 bo'lganda x = t + 1/t va y = t − 1/t bo'lsa, x bilan y orasidagi bog'lanishni toping.",
+      "v": [
+        "x² + y² = 4",
+        "x² − y² = 2",
+        "x² − y² = 4",
+        "x·y = 4"
+      ],
+      "t": 2,
+      "izoh": "Ikkala ifodani kvadratga ko'taramiz: x² = t² + 2 + 1/t², y² = t² − 2 + 1/t². Ularning ayirmasini olsak t² va 1/t² qisqaradi. Qoladi x² − y² = 2 − (−2) = 4. Javob: x² − y² = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "giperbola-yoqotish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#f5c5e351"
+    },
+    {
+      "q": "x = 2^t va y = 4^t bo'lsa, y ni x orqali ifodalovchi tenglamani toping (x > 0).",
+      "v": [
+        "y = x²",
+        "y = 2x",
+        "y = x⁴",
+        "y = √x"
+      ],
+      "t": 0,
+      "izoh": "4 sonini 2² ko'rinishda yozamiz, shunda y = (2²)^t = (2^t)². Shartga ko'ra 2^t = x, demak y = x². Ko'rsatkichlarni qo'shish emas, asosni tenglashtirish kerak. Javob: y = x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-parametr-yoqotish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#490ff101"
+    },
+    {
+      "q": "x = 3^t, y = 3^(2t) + 1 tenglamalardan parametrni yo'qotib, oshkor bog'lanishni yozing.",
+      "v": [
+        "y = 2x + 1",
+        "y = x³ + 1",
+        "y = x² + 1",
+        "y = 9x + 1"
+      ],
+      "t": 2,
+      "izoh": "Daraja xossasiga ko'ra 3^(2t) = (3^t)². Shartga ko'ra 3^t = x, shuning uchun 3^(2t) = x². Demak y = x² + 1 bo'ladi. Javob: y = x² + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-parametr-yoqotish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#975039a3"
+    },
+    {
+      "q": "Laboratoriyada t soatdan keyin bakteriyalar soni x = 2^t ming donani, sarflangan oziqa esa y = 8·2^t + 5 grammni tashkil qiladi. y ni x orqali ifodalang.",
+      "v": [
+        "y = 16x + 5",
+        "y = 8x² + 5",
+        "y = x⁸ + 5",
+        "y = 8x + 5"
+      ],
+      "t": 3,
+      "izoh": "Ikkala formulada ham 2^t ifodasi qatnashadi. Shartga ko'ra 2^t = x, shuning uchun uni to'g'ridan-to'g'ri almashtiramiz. Natijada y = 8x + 5 chiziqli bog'lanish hosil bo'ladi. Javob: y = 8x + 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-parametr-yoqotish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#87ba8db4"
+    },
+    {
+      "q": "y = 3x − 2 to'g'ri chiziqning parametrik tenglamasi qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "x = t, y = 3t − 2",
+        "x = 3t, y = t − 2",
+        "x = t − 2, y = 3t",
+        "x = 3t − 2, y = t"
+      ],
+      "t": 0,
+      "izoh": "Eng sodda yo'l — abssissani parametr deb olish, ya'ni x = t. Shunda ordinata y = 3t − 2 ko'rinishda yoziladi. Qolgan variantlarda parametrni yo'qotsak boshqa chiziqlar chiqadi. Javob: x = t, y = 3t − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qaysi-parametrik-mos",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#eb713284"
+    },
+    {
+      "q": "x² + y² = 36 tenglama bilan berilgan aylananing parametrik yozuvi qaysi variantda to'g'ri?",
+      "v": [
+        "x = 36cos t, y = 36sin t",
+        "x = 6cos t, y = 6sin t",
+        "x = 6cos t, y = 6cos t",
+        "x = 6sin t, y = 6sin t"
+      ],
+      "t": 1,
+      "izoh": "Aylana radiusi R = √36 = 6 ga teng, radius kvadrati emas. Markazi koordinata boshida bo'lgani uchun x = 6cos t, y = 6sin t yoziladi. Ikkala formulada bir xil funksiya turishi to'g'ri chiziq beradi. Javob: x = 6cos t, y = 6sin t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qaysi-parametrik-mos",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#4207d00d"
+    },
+    {
+      "q": "(x − 1)² + (y + 2)² = 49 aylananing parametrik yozuvini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "x = 1 + 49cos t, y = −2 + 49sin t",
+        "x = −1 + 7cos t, y = 2 + 7sin t",
+        "x = 1 + 7cos t, y = −2 + 7sin t",
+        "x = 7 + cos t, y = −7 + sin t"
+      ],
+      "t": 2,
+      "izoh": "Tenglamadan markaz (1; −2) va radius √49 = 7 ekanligi ko'rinadi. Parametrik yozuv x = x₀ + Rcos t, y = y₀ + Rsin t. Markaz koordinatalari ishorasini almashtirmaslik kerak. Javob: x = 1 + 7cos t, y = −2 + 7sin t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qaysi-parametrik-mos",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#dc0a843f"
+    },
+    {
+      "q": "y = x² − 5 parabolaning parametrik ko'rinishi qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "x = t², y = t − 5",
+        "x = t, y = t² − 5",
+        "x = t − 5, y = t²",
+        "x = t², y = t² − 5"
+      ],
+      "t": 1,
+      "izoh": "Abssissani parametr deb olamiz: x = t. Bunda ordinata y = t² − 5 bo'ladi va parametrni yo'qotsak boshlang'ich tenglama tiklanadi. Boshqa variantlarda parametr yo'qotilganda boshqa egri chiziq chiqadi. Javob: x = t, y = t² − 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qaysi-parametrik-mos",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#242b3e0a"
+    },
+    {
+      "q": "Bolalar karuseli x = 5cos(πt/6), y = 5sin(πt/6) qonun bo'yicha aylanadi, bu yerda t sekundda o'lchanadi. Bir to'liq aylanish uchun necha sekund ketadi?",
+      "v": [
+        "6 sekund",
+        "12 sekund",
+        "3 sekund",
+        "24 sekund"
+      ],
+      "t": 1,
+      "izoh": "To'liq aylanish burchak argumenti 2π ga o'zgarganda tugaydi. Demak πt/6 = 2π tenglamani yechamiz. Ikkala tomonni π ga bo'lsak t/6 = 2, ya'ni t = 12 sekund. Javob: 12 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylanma-harakat-burchak",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#b91b2c35"
+    },
+    {
+      "q": "Soat sekund milining uchi x = 15sin(πt/30), y = 15cos(πt/30) qonun bilan siljiydi, uzunlik santimetrda va t sekundda. 15 sekunddan keyin radius qanday burchakka buriladi?",
+      "v": [
+        "30°",
+        "45°",
+        "90°",
+        "180°"
+      ],
+      "t": 2,
+      "izoh": "t = 0 da mil uchi (0; 15) nuqtada, ya'ni '12' raqamida turadi va vaqt o'tishi bilan soat strelkasi bo'yicha buriladi. Burilish burchagi argumentga teng, ya'ni πt/30. t = 15 ni qo'yamiz: π·15/30 = π/2. Radian o'lchovni gradusga o'tkazsak π/2 burchak 90° ga teng. Javob: 90°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylanma-harakat-burchak",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#9537f638"
+    },
+    {
+      "q": "Diametri 40 metr bo'lgan aylanma charx kabinasi x = 20cos(πt/4), y = 20sin(πt/4) qonun bilan siljiydi, charx markazi koordinata boshida, t esa minutda o'lchanadi. Kabina t = 0 dagi yon holatidan eng yuqori nuqtaga birinchi marta qachon yetadi?",
+      "v": [
+        "1 minut",
+        "4 minut",
+        "8 minut",
+        "2 minut"
+      ],
+      "t": 3,
+      "izoh": "Eng yuqori nuqtada ordinata maksimal, ya'ni sin(πt/4) = 1 bo'lishi kerak. Bu shart πt/4 = π/2 bo'lganda bajariladi. Bundan t/4 = 1/2 va t = 2 minut. Javob: 2 minut.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylanma-harakat-burchak",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#8d07588b"
+    },
+    {
+      "q": "x = 5cos 2t, y = 5sin 2t harakatda nuqta 0 ≤ t ≤ 2π oraliqda aylana bo'ylab necha marta to'liq aylanib chiqadi?",
+      "v": [
+        "1 marta",
+        "2 marta",
+        "4 marta",
+        "0,5 marta"
+      ],
+      "t": 1,
+      "izoh": "Burchak argumenti 2t bo'lgani uchun t = 0 dan t = 2π gacha argument 0 dan 4π gacha o'zgaradi. Bitta to'liq aylanish 2π ga to'g'ri keladi. Demak 4π : 2π = 2 marta aylanib chiqadi. Javob: 2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylanma-harakat-burchak",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#8a9f9b47"
+    },
+    {
+      "q": "Bog'bon markazi (7; −5) nuqtada va radiusi 3 metr bo'lgan doira shaklidagi gulzor chizmoqchi. Gulzor chegarasining parametrik tenglamasi qaysi?",
+      "v": [
+        "x = 7 + 3cos t, y = −5 + 3sin t",
+        "x = 3 + 7cos t, y = 3 − 5sin t",
+        "x = −7 + 3cos t, y = 5 + 3sin t",
+        "x = 7 + 9cos t, y = −5 + 9sin t"
+      ],
+      "t": 0,
+      "izoh": "Markazi (a; b), radiusi R bo'lgan aylana x = a + Rcos t, y = b + Rsin t deb yoziladi. Bu yerda a = 7, b = −5, R = 3. Radius kvadratga ko'tarilmaydi. Javob: x = 7 + 3cos t, y = −5 + 3sin t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-parametrik-yozish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#56041eee"
+    },
+    {
+      "q": "Markazi (0; 4) nuqtada bo'lgan va koordinata boshidan o'tuvchi aylananing parametrik tenglamasini yozing.",
+      "v": [
+        "x = 4cos t, y = 4 + 4sin t",
+        "x = 4 + 4cos t, y = 4sin t",
+        "x = 4cos t, y = 4sin t",
+        "x = 2cos t, y = 4 + 2sin t"
+      ],
+      "t": 0,
+      "izoh": "Radius markazdan koordinata boshigacha bo'lgan masofaga teng, ya'ni R = 4. Markaz abssissasi nol, ordinatasi esa 4 ga teng. Demak x = 4cos t, y = 4 + 4sin t. Javob: x = 4cos t, y = 4 + 4sin t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylana-parametrik-yozish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#e8acfe98"
+    },
+    {
+      "q": "x = 8cos t − 1, y = 8sin t + 6 tenglamalar bilan berilgan aylananing markazi va radiusini aniqlang.",
+      "v": [
+        "Markaz (−1; 6), R = 8",
+        "Markaz (1; −6), R = 8",
+        "Markaz (8; 8), R = 1",
+        "Markaz (−1; 6), R = 64"
+      ],
+      "t": 0,
+      "izoh": "Ifodalarni x = −1 + 8cos t va y = 6 + 8sin t tartibda yozib olamiz. Ozod hadlar markaz koordinatalarini, kosinus va sinus oldidagi koeffitsient esa radiusni beradi. Demak markaz (−1; 6), radius 8. Javob: markaz (−1; 6), R = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-markaz-radius",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#991a864c"
+    },
+    {
+      "q": "Bog'dagi suv purkagich x = 24 + 11cos t, y = 15 + 11sin t chegarasigacha suv sepadi, o'lchov metrda. Purkagich qayerda o'rnatilgan va qanday radiusda ishlaydi?",
+      "v": [
+        "(11; 11) da, radius 24 m",
+        "(24; 15) da, radius 22 m",
+        "(−24; −15) da, radius 11 m",
+        "(24; 15) da, radius 11 m"
+      ],
+      "t": 3,
+      "izoh": "Sepiladigan hudud chegarasi aylana bo'lib, uning markazi purkagich o'rniga to'g'ri keladi. Ozod hadlardan markaz (24; 15) ekanligi ko'rinadi. Koeffitsient 11 radiusni bildiradi, diametr emas. Javob: (24; 15) da, radius 11 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-markaz-radius",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#d152760c"
+    },
+    {
+      "q": "x = 9cos t, y = 9sin t chiziq bilan chegaralangan doiraning yuzasini hisoblang.",
+      "v": [
+        "18π",
+        "81π",
+        "9π",
+        "162π"
+      ],
+      "t": 1,
+      "izoh": "Berilgan tenglamalar radiusi 9 bo'lgan aylanani beradi. Doira yuzasi S = πR² formula bilan topiladi. Demak S = π·9² = 81π. Aylana uzunligi formulasi bilan chalkashtirmaslik kerak. Javob: 81π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-uzunlik-yuza",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#8d850c21"
+    },
+    {
+      "q": "Manejning chegarasi x = 25cos t, y = 25sin t tenglamalar bilan berilgan, o'lchov metrda. Uni bir marta to'liq aylanib chiqish uchun necha metr yugurish kerak?",
+      "v": [
+        "25π m",
+        "625π m",
+        "100π m",
+        "50π m"
+      ],
+      "t": 3,
+      "izoh": "Tenglamalar radiusi 25 metr bo'lgan aylanani beradi. Bir marta aylanish uzunligi L = 2πR ga teng. Demak L = 2π·25 = 50π metr. Yuza formulasi bu yerda ishlatilmaydi. Javob: 50π m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-uzunlik-yuza",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#9682d727"
+    },
+    {
+      "q": "x = −7 + 5cos t, y = 4 + 5sin t aylananing eng past nuqtasi koordinatalarini toping.",
+      "v": [
+        "(−12; −1)",
+        "(−7; 9)",
+        "(−7; −1)",
+        "(−12; 4)"
+      ],
+      "t": 2,
+      "izoh": "Eng past nuqtada ordinata minimal bo'ladi, ya'ni sin t = −1. Shunda y = 4 − 5 = −1 chiqadi. Ayni paytda cos t = 0 bo'lgani uchun x = −7 o'zgarmaydi. Javob: (−7; −1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-chekka-nuqta",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#d20b842f"
+    },
+    {
+      "q": "Aylanma ko'prikning chekkasi x = 30 + 18cos t, y = 12 + 18sin t bilan tasvirlangan, o'lchov metrda. Uning eng shimoliy, ya'ni ordinatasi eng katta nuqtasi qayerda?",
+      "v": [
+        "(48; 12)",
+        "(30; 30)",
+        "(30; 12)",
+        "(48; 30)"
+      ],
+      "t": 1,
+      "izoh": "Ordinata maksimal bo'lishi uchun sin t = 1 bo'lishi kerak, shunda y = 12 + 18 = 30. Bu holda cos t = 0 bo'ladi va x = 30 qiymatida qoladi. Ikkala koordinata bir vaqtda maksimumga chiqmaydi. Javob: (30; 30).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-chekka-nuqta",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#ef73c83a"
+    },
+    {
+      "q": "x = 3cos t + 4, y = 3sin t − 6 tenglamalar bilan berilgan aylananing oshkor tenglamasini yozing.",
+      "v": [
+        "(x + 4)² + (y − 6)² = 9",
+        "(x − 4)² + (y + 6)² = 3",
+        "(x − 4)² + (y − 6)² = 9",
+        "(x − 4)² + (y + 6)² = 9"
+      ],
+      "t": 3,
+      "izoh": "Ifodalarni x − 4 = 3cos t va y + 6 = 3sin t ko'rinishga keltiramiz. Ikkalasini kvadratga ko'tarib qo'shsak, asosiy ayniyat bo'yicha o'ng tomon 3² = 9 bo'ladi. Markaz koordinatalari tenglamada teskari ishora bilan turadi. Javob: (x − 4)² + (y + 6)² = 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-oshkor-tenglamaga",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#18529425"
+    },
+    {
+      "q": "Radarning ko'rish chegarasi x = 10cos t, y = 10sin t tenglamalar bilan berilgan, o'lchov kilometrda. Shu chegaraning oshkor tenglamasi qaysi?",
+      "v": [
+        "x² + y² = 100",
+        "x² + y² = 10",
+        "x + y = 10",
+        "x² − y² = 100"
+      ],
+      "t": 0,
+      "izoh": "Ikkala tenglamani kvadratga ko'taramiz: x² = 100cos²t, y² = 100sin²t. Ularni qo'shsak x² + y² = 100(cos²t + sin²t) = 100. Radius kvadratga ko'tarilishini unutmaslik kerak. Javob: x² + y² = 100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-oshkor-tenglamaga",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#46008661"
+    },
+    {
+      "q": "Koordinata boshidan o'tuvchi va (−2; 7) vektorga parallel bo'lgan to'g'ri chiziqning parametrik tenglamasi qaysi?",
+      "v": [
+        "x = 7t, y = −2t",
+        "x = −2 + t, y = 7 + t",
+        "x = −2t, y = 7t",
+        "x = 2t, y = 7t"
+      ],
+      "t": 2,
+      "izoh": "Chiziq boshdan o'tgani uchun x₀ = 0 va y₀ = 0 bo'ladi. Yo'naltiruvchi vektor koordinatalari t oldidagi koeffitsient bo'lib qoladi. Demak x = −2t, y = 7t. Javob: x = −2t, y = 7t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "togri-chiziq-parametrik-yozish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#fb6d7b7a"
+    },
+    {
+      "q": "x = t² − 2t, y = t + 5 chiziqda ordinatasi 8 ga teng bo'lgan nuqtaning abssissasini toping.",
+      "v": [
+        "48",
+        "7",
+        "8",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Ordinata tenglamasidan t + 5 = 8, demak t = 3. Topilgan parametrni abssissa formulasiga qo'yamiz: x = 3² − 2·3 = 9 − 6 = 3. Ordinatani parametr o'rniga qo'yish katta xatoga olib keladi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-nuqta-uchun-t",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#8d1b58f4"
+    },
+    {
+      "q": "x = 6 + t, y = 2 + t chiziqning t = 0 va t = 5 qiymatlariga mos nuqtalari orasidagi masofani hisoblang.",
+      "v": [
+        "5√2",
+        "10",
+        "5",
+        "50"
+      ],
+      "t": 0,
+      "izoh": "t = 0 da nuqta (6; 2), t = 5 da esa (11; 7) bo'ladi. Koordinata ayirmalari ikkalasi ham 5 ga teng. Masofa √(5² + 5²) = √50 = 5√2. Javob: 5√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-parametrik",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#e0782d36"
+    },
+    {
+      "q": "x = 2cos t, y = 2sin t tenglamalar π ≤ t ≤ 3π/2 oraliqda qanday shaklni chizadi?",
+      "v": [
+        "Birinchi chorakdagi chorak aylana",
+        "Uchinchi chorakdagi chorak aylana",
+        "Pastki yarim aylana",
+        "Radiusi 2 bo'lgan to'liq aylana"
+      ],
+      "t": 1,
+      "izoh": "Bu oraliqda cos t manfiy, demak abssissa manfiy bo'ladi. Sinus ham manfiy, demak ordinata ham manfiy. Ikkala koordinata manfiy bo'lgan soha uchinchi chorak, burchak esa π/2 ga teng. Javob: uchinchi chorakdagi chorak aylana.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "t-oraligi-kesma",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#f6f1f25d"
+    },
+    {
+      "q": "x = 2t, y = t + 3 va x = s + 4, y = 2s − 1 to'g'ri chiziqlar qaysi nuqtada kesishadi?",
+      "v": [
+        "(4; 5)",
+        "(7; 8)",
+        "(8; 7)",
+        "(8; 5)"
+      ],
+      "t": 2,
+      "izoh": "Abssissalarni tenglashtiramiz: 2t = s + 4. Ordinatalardan t + 3 = 2s − 1, ya'ni t = 2s − 4. Birinchi tenglamaga qo'ysak 4s − 8 = s + 4, bundan s = 4 va t = 4. Shunda x = 8, y = 7 bo'ladi. Javob: (8; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-chiziq-kesishishi",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#3227e310"
+    },
+    {
+      "q": "x = 7cos t, y = 2sin t tenglamalar bilan berilgan egri chiziqning oshkor tenglamasini yozing.",
+      "v": [
+        "x²/49 + y²/4 = 1",
+        "x²/4 + y²/49 = 1",
+        "x²/7 + y²/2 = 1",
+        "x² + y² = 53"
+      ],
+      "t": 0,
+      "izoh": "Tenglamalardan cos t = x/7 va sin t = y/2 kelib chiqadi. Asosiy trigonometrik ayniyatga qo'ysak x²/7² + y²/2² = 1 bo'ladi. Maxrajlarda koeffitsientlarning kvadratlari turadi. Javob: x²/49 + y²/4 = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ellips-trig-ayniyat",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#cac1c8c5"
+    },
+    {
+      "q": "Yer uchastkasining tomonlari x = 4t metr va y = 60/t metr formulalar bilan berilgan. Tomonlar orasidagi bog'lanishni oshkor ko'rinishda yozing.",
+      "v": [
+        "y = 15/x",
+        "y = 60/x",
+        "y = 240x",
+        "y = 240/x"
+      ],
+      "t": 3,
+      "izoh": "Birinchi formuladan t = x/4 topiladi. Uni ikkinchisiga qo'yamiz: y = 60 : (x/4) = 60·4/x. Demak y = 240/x, ya'ni uchastka yuzasi doim 240 kvadrat metr. Javob: y = 240/x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-yoqotish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#235f2f93"
+    },
+    {
+      "q": "x = 5^t va y = 5^(t+1) − 3 bo'lsa, y ni x orqali ifodalovchi tenglamani toping.",
+      "v": [
+        "y = x + 2",
+        "y = x⁵ − 3",
+        "y = 5x − 3",
+        "y = 5x + 3"
+      ],
+      "t": 2,
+      "izoh": "Daraja xossasiga ko'ra 5^(t+1) = 5·5^t. Shartga ko'ra 5^t = x, demak 5^(t+1) = 5x. Shunda y = 5x − 3 bo'ladi. Ko'rsatkichga bir qo'shishni asosga qo'shishga aylantirish xato. Javob: y = 5x − 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-parametr-yoqotish",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#cb7d8850"
+    },
+    {
+      "q": "y = 4/x giperbolaning parametrik yozuvi qaysi variantda to'g'ri berilgan (t ≠ 0)?",
+      "v": [
+        "x = t, y = 4/t",
+        "x = 2t, y = 1/t",
+        "x = t, y = 4t",
+        "x = 4/t, y = 4t"
+      ],
+      "t": 0,
+      "izoh": "Abssissani parametr deb olamiz: x = t. Shunda ordinata y = 4/t bo'ladi va parametrni yo'qotsak boshlang'ich tenglama tiklanadi. Boshqa variantlarda ko'paytma 4 dan farq qiladi. Javob: x = t, y = 4/t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qaysi-parametrik-mos",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#9de977e7"
+    },
+    {
+      "q": "Ventilyator parragining uchi x = 45cos(4πt), y = 45sin(4πt) qonun bilan siljiydi, t sekundda o'lchanadi. Parrak bir sekundda necha marta to'liq aylanadi?",
+      "v": [
+        "4 marta",
+        "2 marta",
+        "8 marta",
+        "1 marta"
+      ],
+      "t": 1,
+      "izoh": "Bir sekundda burchak argumenti 0 dan 4π gacha o'zgaradi. Bitta to'liq aylanish 2π radianga to'g'ri keladi. Demak aylanishlar soni 4π : 2π = 2 ga teng. Javob: 2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylanma-harakat-burchak",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#6111e3b7"
+    },
+    {
+      "q": "x = 3 + t, y = 5 − 2t chiziqda t = 1 va t = 7 qiymatlariga mos nuqtalar orasidagi kesmaning o'rta nuqtasini toping.",
+      "v": [
+        "(7; 3)",
+        "(14; −6)",
+        "(6; −6)",
+        "(7; −3)"
+      ],
+      "t": 3,
+      "izoh": "t = 1 da nuqta (4; 3), t = 7 da esa (10; −9) bo'ladi. O'rta nuqta koordinatalari uchlarning o'rta arifmetigiga teng. Demak x = (4 + 10)/2 = 7, y = (3 − 9)/2 = −3. Javob: (7; −3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrik-orta-nuqta",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#55683d52"
+    },
+    {
+      "q": "Dronning yo'li x = 20t, y = 300 − 15t metr bilan berilgan va uchish t = 0 dan t = 8 gacha davom etdi. Yo'l kesmasining o'rta nuqtasi qayerda joylashadi?",
+      "v": [
+        "(160; 180)",
+        "(80; 150)",
+        "(80; 480)",
+        "(80; 240)"
+      ],
+      "t": 3,
+      "izoh": "Uchish boshida nuqta (0; 300), oxirida esa (160; 300 − 120) = (160; 180) bo'ladi. O'rta nuqta abssissasi (0 + 160)/2 = 80. Ordinatasi esa (300 + 180)/2 = 240. Javob: (80; 240).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrik-orta-nuqta",
+      "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va#9a1b1601"
+    }
+  ]
+}

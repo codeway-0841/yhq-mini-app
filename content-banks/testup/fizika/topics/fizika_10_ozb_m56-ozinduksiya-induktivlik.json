@@ -1,0 +1,501 @@
+{
+  "nom": "56-mavzu. Ozinduksiya Induktivlik",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "O'zinduksiya hodisasi nima?",
+      "v": [
+        "Konturdagi tok o'zgarganda shu konturning o'zida induksion EYK hosil bo'lishi hodisasi",
+        "Ikki kontur orasidagi induksiya hodisasi",
+        "Magnitning g'altakka kiritilishi hodisasi",
+        "Tokning simni qizdirishi hodisasi"
+      ],
+      "t": 0,
+      "izoh": "Konturdan o'tayotgan tok o'zgarsa, hosil qilgan magnit oqimi ham o'zgaradi va konturning o'zida induksion EYK hosil bo'ladi — bu o'zinduksiya hodisasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#bb6ba0ac"
+    },
+    {
+      "q": "O'zinduksiya hodisasini kuzatish tajribasidagi zanjir qaysi qismlardan iborat?",
+      "v": [
+        "Ikkita bir xil lampa, R qarshilik, ko'p o'ramli g'altak, kalit va o'zgarmas tok manbai",
+        "Bitta lampa, kondensator va diod",
+        "G'altak, galvanometr va doimiy magnit",
+        "Uchta lampa va o'zgaruvchan tok manbai"
+      ],
+      "t": 0,
+      "izoh": "Zanjir ikkita bir xil lampa, R qarshilik, ko'p o'ramli g'altak, kalit va o'zgarmas tok manbaidan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#08836ead"
+    },
+    {
+      "q": "Kalit ulanganda qaysi lampa birinchi bo'lib yonadi?",
+      "v": [
+        "R qarshilik orqali ulangan lampa",
+        "G'altak orqali ulangan lampa",
+        "Ikkalasi bir vaqtda",
+        "Hech biri yonmaydi"
+      ],
+      "t": 0,
+      "izoh": "Kalit ulanganda R qarshilik orqali ulangan ikkinchi lampa zahotiyoq yonadi, g'altakli lampa esa kechikib yonadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#7045b763"
+    },
+    {
+      "q": "G'altak orqali ulangan lampa nima uchun kechikib yonadi?",
+      "v": [
+        "G'altakda manbaini tokka teskari yo'nalgan o'zinduksiya toki yuzaga keladi",
+        "G'altak qarshiligi juda katta",
+        "Simlar uzun bo'lgani uchun",
+        "Lampaning spiral qizig'i uchun"
+      ],
+      "t": 0,
+      "izoh": "Kalit ulangan zahotiyoq g'altakda tok manbai hosil qilgan tokka teskari yo'nalgan o'zinduksiya toki yuzaga keladi va lampa kech yonadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#3bba8ec3"
+    },
+    {
+      "q": "Kalit uzilganda g'altak orqali ulangan lampa qanday o'chadi?",
+      "v": [
+        "Sekin xiralashib o'chadi",
+        "Zudlik bilan o'chadi",
+        "Yorqinlashib yonib ketadi",
+        "Tebranib o'chadi"
+      ],
+      "t": 0,
+      "izoh": "Kalit uzilganda birinchi (g'altakli) lampa sekin xiralashib o'chadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#e01ced31"
+    },
+    {
+      "q": "Kalit uzilganda R qarshilik orqali ulangan lampa qanday o'chadi?",
+      "v": [
+        "Shu zahoti o'chadi",
+        "Sekin xiralashib o'chadi",
+        "Yana yonib turadi",
+        "Tovush chiqaradi"
+      ],
+      "t": 0,
+      "izoh": "Kalit uzilganda ikkinchi lampa shu zahoti o'chadi, birinchi lampa esa sekin xiralashib o'chadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#8bfa6f5f"
+    },
+    {
+      "q": "Tokli o'tkazgich hosil qilgan magnit oqimi nimaga bog'liq?",
+      "v": [
+        "O'tayotgan tok kuchiga va g'altakning xususiyatlariga",
+        "Faqat simning uzunligiga",
+        "Faqat xona haroratiga",
+        "Faqat kuchlanish manbaiga"
+      ],
+      "t": 0,
+      "izoh": "Tokli o'tkazgichning hosil qilgan magnit oqimi undan o'tayotgan tok kuchiga va g'altakning xususiyatlariga bog'liq: Ф = L·I.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#5f208f8f"
+    },
+    {
+      "q": "Ф = L·I formuladagi L nimani bildiradi?",
+      "v": [
+        "G'altakning induktivligini",
+        "G'altakning uzunligini",
+        "Tok kuchini",
+        "Magnit oqimini"
+      ],
+      "t": 0,
+      "izoh": "L — g'altakning geometrik o'lchamlari va muhitning magnit xossalariga bog'liq proporsionallik koeffitsiyenti, ya'ni induktivlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#8d3a200d"
+    },
+    {
+      "q": "Induktivlik nimaga bog'liq?",
+      "v": [
+        "G'altakning geometrik o'lchamlariga va o'zakning magnit xossalariga",
+        "Faqat tok kuchiga",
+        "Faqat kuchlanishga",
+        "Faqat sim rangiga"
+      ],
+      "t": 0,
+      "izoh": "Induktivlik g'altakning geometrik o'lchamlariga va g'altak joylashgan muhitning (o'zakning) magnit xossalariga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#a68ec9b2"
+    },
+    {
+      "q": "XBSda induktivlik birligi nima?",
+      "v": [
+        "Genri (H)",
+        "Veber (Wb)",
+        "Tesla (T)",
+        "Volt (V)"
+      ],
+      "t": 0,
+      "izoh": "XBSda induktivlik birligi uchun genri (H) qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#3c215cdb"
+    },
+    {
+      "q": "Induktivlik birligi kimga bag'ishlab atalgan?",
+      "v": [
+        "Amerikalik olim J. Genriga",
+        "M. Faradeyga",
+        "X. Lensga",
+        "G. Ommga"
+      ],
+      "t": 0,
+      "izoh": "Birlik o'zinduksiya hodisasini birinchi bo'lib kuzatgan amerikalik olim J. Genri sharafiga atalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#bf5fb01c"
+    },
+    {
+      "q": "O'zinduksiya EYKning formulasi qanday?",
+      "v": [
+        "εi = –L·ΔI/Δt",
+        "εi = L·I²/2",
+        "εi = –ΔI/(L·Δt)",
+        "εi = I·R"
+      ],
+      "t": 0,
+      "izoh": "εi = –ΔФ/Δt = –L·ΔI/Δt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#3e627174"
+    },
+    {
+      "q": "O'zinduksiya EYKning kattaligi nimaga to'g'ri proporsional?",
+      "v": [
+        "Konturdagi tok kuchining o'zgarish tezligiga",
+        "Tok kuchining kvadratiga",
+        "G'altakning rangiga",
+        "Kuchlanishning o'zgarish chastotasiga"
+      ],
+      "t": 0,
+      "izoh": "O'zinduksiya EYKning kattaligi konturdagi tok kuchining o'zgarish tezligiga (ΔI/Δt) to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#9fc340ff"
+    },
+    {
+      "q": "1 genri qanday aniqlanadi?",
+      "v": [
+        "Tok 1 A/s tezlik bilan o'zgarganda konturda 1 V o'zinduksiya EYK hosil bo'lsa, induktivlik 1 H",
+        "Tok 1 A bo'lganda 1 Wb oqim hosil bo'lsa",
+        "Kuchlanish 1 V bo'lganda tok 1 A bo'lsa",
+        "1 s da 1 J energiya sarflansa"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchining o'zgarish tezligi 1 A/s bo'lganda konturda 1 V o'zinduksiya EYK yuzaga kelsa, konturning induktivligi 1 H ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#d779e33b"
+    },
+    {
+      "q": "1 H qanday birliklarga teng?",
+      "v": [
+        "1 V·s/A",
+        "1 A/s",
+        "1 J/s",
+        "1 V/A²"
+      ],
+      "t": 0,
+      "izoh": "1 H = 1 V/(A/s) = 1 V·s/A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#630cb1e8"
+    },
+    {
+      "q": "Solenoidning induktivligi formulasi qanday?",
+      "v": [
+        "L = μ·μ0·N²·S/l",
+        "L = μ0·N·S·l",
+        "L = N²/(μ·μ0·S)",
+        "L = μ·μ0·l/(N·S)"
+      ],
+      "t": 0,
+      "izoh": "Uzun g'altak (solenoid)ning induktivligi L = μ·μ0·N²·S/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#c5ec80bc"
+    },
+    {
+      "q": "Solenoid induktivligi formuladagi μ nimani bildiradi?",
+      "v": [
+        "Solenoid ichidagi muhitning magnit singdiruvchanligini",
+        "Vakuumning magnit doimiysini",
+        "O'ramlar sonini",
+        "Solenoid uzunligini"
+      ],
+      "t": 0,
+      "izoh": "μ — solenoid ichidagi muhitning magnit singdiruvchanligi, μ0 — vakuumning magnit doimiysi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#f86711dc"
+    },
+    {
+      "q": "O'zinduksiya hodisasi mexanikadagi qaysi hodisaga o'xshatiladi?",
+      "v": [
+        "Inersiya hodisasiga",
+        "Gravitatsiya hodisasiga",
+        "Ishqalanish hodisasiga",
+        "Elastiklik hodisasiga"
+      ],
+      "t": 0,
+      "izoh": "O'zinduksiya hodisasini mexanikadagi inersiya hodisasiga o'xshatish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#1d6ff310"
+    },
+    {
+      "q": "Inersiya hodisasida massa qanday rol o'ynasa, o'zinduksiyada nima shunday rol o'ynaydi?",
+      "v": [
+        "Induktivlik",
+        "Tok kuchi",
+        "Magnit oqimi",
+        "Kuchlanish"
+      ],
+      "t": 0,
+      "izoh": "Induktivlik qancha katta bo'lsa, zanjirdagi tokning o'zgarishi shuncha sekin (inert) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#41173553"
+    },
+    {
+      "q": "G'altakdagi tok kuchi 2 marta tezroq o'zgarsa, o'zinduksiya EYK qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi",
+        "4 marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "εi = –L·ΔI/Δt formulada EYK tok o'zgarish tezligiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#af8dbf41"
+    },
+    {
+      "q": "G'altak induktivligi 3 marta oshsa, bir xil tok o'zgarishida o'zinduksiya EYK qanday o'zgaradi?",
+      "v": [
+        "3 marta ortadi",
+        "3 marta kamayadi",
+        "9 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "EYK induktivlikka to'g'ri proporsional: εi = –L·ΔI/Δt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#640654ad"
+    },
+    {
+      "q": "G'altakdan o'tayotgan tok 2 marta ortsa, undagi magnit oqimi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "4 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ф = L·I: magnit oqimi tok kuchiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#42b8b05a"
+    },
+    {
+      "q": "Solenoid o'ramlar soni 2 marta ko'paysa, uning induktivligi qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "O'zgarmaydi",
+        "2 marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "L = μ·μ0·N²·S/l: induktivlik o'ramlar sonining kvadratiga proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#d5a70a98"
+    },
+    {
+      "q": "Kalit ulangan zahotiyoq g'altakdagi tok qanday o'zgaradi?",
+      "v": [
+        "Noldan I0 gacha ma'lum vaqt ichida o'zgaradi",
+        "Zudlik bilan maksimalga erishadi",
+        "Avval kamayib keyin ortadi",
+        "O'zgarmay qoladi"
+      ],
+      "t": 0,
+      "izoh": "Kalit ulangan zahotiyoq g'altakdan o'tayotgan tok kuchi t1 vaqt ichida noldan I0 gacha o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#fd121742"
+    },
+    {
+      "q": "O'zinduksiya toki qanday yo'nalishda bo'ladi?",
+      "v": [
+        "Tokning o'zgarishiga qarshi yo'nalishda",
+        "Har doim manbai toki bilan bir yo'nalishda",
+        "Har doim manbai tokiga teskari",
+        "Yo'nalishga ega emas"
+      ],
+      "t": 0,
+      "izoh": "O'zinduksiya toki tok ortganda unga teskari, tok kamayganda uni qo'llab-quvvatlovchi yo'nalishda bo'ladi — tokning o'zgarishiga qarshi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#2e78c8cc"
+    },
+    {
+      "q": "G'altakga ketma-ket ulangan lampaning yonishi va o'chishining asta-sekinligi nimani taqqoslash mumkin?",
+      "v": [
+        "Inertroq jismning joyidan sekin qo'zg'alishi va to'xtashi birdaniga amalga oshmasligi bilan",
+        "Elastik prujinaning siqilishi bilan",
+        "Suyuqlikning qaynashi bilan",
+        "Gazning kengayishi bilan"
+      ],
+      "t": 0,
+      "izoh": "Bu jarayonni inertroq jismning joyidan sekin qo'zg'alishi va uning to'xtashi birdaniga amalga oshmasligi bilan taqqoslash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#5d959db6"
+    },
+    {
+      "q": "Ba'zi radiolarni elektr tarmog'idan uzganda tovush keskin yo'qolmay, asta-sekin pasayishi nimaga bog'liq?",
+      "v": [
+        "Zanjirdagi o'zinduksiya hodisasiga",
+        "Dinamikning yomonlashishiga",
+        "Kondensatorning qizishiga",
+        "To'lqinning uzunligiga"
+      ],
+      "t": 0,
+      "izoh": "Tok birdan yo'qolmasdan o'zinduksiya hisobiga asta-sekin kamayadi, shuning uchun tovush sekin pasayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#4c95e464"
+    },
+    {
+      "q": "Induktivligi 0,1 H bo'lgan g'altakdan 2 A tok o'tsa, undagi magnit oqimi qanday?",
+      "v": [
+        "0,2 Wb",
+        "0,05 Wb",
+        "2 Wb",
+        "0,1 Wb"
+      ],
+      "t": 0,
+      "izoh": "Ф = L·I = 0,1 H · 2 A = 0,2 Wb.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#0f9cea09"
+    },
+    {
+      "q": "Induktivligi 2 H bo'lgan g'altakda tok 0,2 s da 1 A dan 5 A gacha ortsa, o'zinduksiya EYK moduli qanday?",
+      "v": [
+        "40 V",
+        "20 V",
+        "10 V",
+        "80 V"
+      ],
+      "t": 0,
+      "izoh": "εi = L·ΔI/Δt = 2 H · (5–1) A / 0,2 s = 40 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#3aa8e9d1"
+    },
+    {
+      "q": "G'altakdagi tok 0,2 s davomida noldan 3 A gacha tekis o'zgarganda 1,5 V o'zinduksiya EYK hosil bo'lsa, induktivlik qanday?",
+      "v": [
+        "0,1 H",
+        "1 H",
+        "0,5 H",
+        "2 H"
+      ],
+      "t": 0,
+      "izoh": "L = εi·Δt/ΔI = 1,5 V · 0,2 s / 3 A = 0,1 H.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#1a6ab055"
+    },
+    {
+      "q": "Induktivligi 0,12 H bo'lgan g'altakda 6 V o'zinduksiya EYK hosil bo'lsa, tok qanday tezlik bilan o'zgarmoqda?",
+      "v": [
+        "50 A/s",
+        "0,02 A/s",
+        "72 A/s",
+        "0,72 A/s"
+      ],
+      "t": 0,
+      "izoh": "ΔI/Δt = εi/L = 6 V / 0,12 H = 50 A/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#a4e444d0"
+    },
+    {
+      "q": "Tok kuchining o'zgarish tezligi 50 A/s bo'lganda solenoid uchlarida 0,075 V o'zinduksiya EYK hosil bo'lsa, uning induktivligi qanday?",
+      "v": [
+        "1,5·10⁻³ H",
+        "0,075 H",
+        "1,5 H",
+        "3,75 H"
+      ],
+      "t": 0,
+      "izoh": "L = εi/(ΔI/Δt) = 0,075 V / 50 A/s = 1,5·10⁻³ H.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#535849c7"
+    },
+    {
+      "q": "O'zinduksiya hodisasiga kundalik hayotdan qaysi misol to'g'ri keladi?",
+      "v": [
+        "Tarmoqdan uzilgan radio tovushining asta-sekin pasayishi",
+        "Choynakning qizishi",
+        "Magnitning temirni tortishi",
+        "Simning uzayishi"
+      ],
+      "t": 0,
+      "izoh": "Radio tarmoqdan uzilganda tovushning asta-sekin pasayishi o'zinduksiya hodisasiga misoldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik#8fbb89d9"
+    }
+  ]
+}

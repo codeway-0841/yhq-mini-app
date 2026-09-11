@@ -1,0 +1,1236 @@
+{
+  "nom": "Topishmoqlar",
+  "bolim": "Kichik janrlar",
+  "savollar": [
+    {
+      "q": "Quyidagi parcha qaysi asardan olingan? Bularni to'g'ridan to'g'ri so'rasak, ehtimol, aytmaslar.",
+      "v": [
+        "«Uch og'a-ini botirlar»",
+        "«Oshiq G'arib va Shohsanam»",
+        "«Zarina va Striangey»",
+        "«Oygul bilan Baxtiyor»"
+      ],
+      "t": 0,
+      "izoh": "Parcha «Uch og'a-ini botirlar» asaridan. Vazirning sir bilish rejasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#1591f53b"
+    },
+    {
+      "q": "Quyidagi parcha qaysi asardan olingan? Shu nonni taxlagan kishining otasi novvoy ekan.",
+      "v": [
+        "«Zariadr va Odatida»",
+        "«Zarina va Striangey»",
+        "«Uch og'a-ini botirlar»",
+        "«Oq terakmi, ko'k terak»"
+      ],
+      "t": 2,
+      "izoh": "Parcha «Uch og'a-ini botirlar» asaridan. Kenja botirning zakovati namoyon bo'lgan o'rin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#eedcc807"
+    },
+    {
+      "q": "Quyidagi parcha qaysi asardan olingan? Shu go'sht qo'zi go'shti ekan, biroq shu qo'zi it emib katta bo'lgan.",
+      "v": [
+        "«Oshiq G'arib va Shohsanam»",
+        "«Zariadr va Odatida»",
+        "«Malikayi Husnobod»",
+        "«Uch og'a-ini botirlar»"
+      ],
+      "t": 3,
+      "izoh": "Parcha «Uch og'a-ini botirlar» asaridan. To'ng'ich botirning farosatli hukmi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#ff065d68"
+    },
+    {
+      "q": "«Bir daraxtda o'n ikki shox» topishmog'i javoblari ketma-ketligi to'g'ri tartibda qaysi javobda berilgan?",
+      "v": [
+        "yil → oy → kun → kecha va kunduz",
+        "kecha va kunduz → oy → kun → yil",
+        "kun → oy → yil → kecha va kunduz",
+        "kecha va kunduz → kun → oy → yil"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri tartib: yil → oy → kun → kecha va kunduz. Topishmoqda bir necha predmet yashiringan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#f12bd442"
+    },
+    {
+      "q": "Topishmoq javobini topish bosqichlari to'g'ri tartibda qaysi javobda berilgan?",
+      "v": [
+        "belgilarni eshitish → xayolan solishtirish → javobni topish → javobni asoslash",
+        "javobni asoslash → belgilarni eshitish → javobni topish → xayolan solishtirish",
+        "xayolan solishtirish → javobni topish → belgilarni eshitish → javobni asoslash",
+        "javobni asoslash → xayolan solishtirish → belgilarni eshitish → javobni topish"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri tartib: belgilarni eshitish → xayolan solishtirish → javobni topish → javobni asoslash. Topishmoq mantiqiy fikrlash mashqidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#39db64e2"
+    },
+    {
+      "q": "Topishmoq tili qanday bo'lishi lozim?",
+      "v": [
+        "murakkab va kitobiy",
+        "sodda va ravon",
+        "ilmiy va atamali",
+        "rasmiy va quruq"
+      ],
+      "t": 1,
+      "izoh": "Soddalik topishmoqning ommaviyligini ta'minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_xoi_m04-topishmoqlar#f9613fe6"
+    },
+    {
+      "q": "«Yuzi oppoq, qor emas, non bo'lmaydi, un emas» topishmog'i nimani bildiradi?",
+      "v": [
+        "shakar",
+        "tuz",
+        "guruch",
+        "paxta"
+      ],
+      "t": 0,
+      "izoh": "Rang o'xshashligi topishmoq o'zagini tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#561330d5"
+    },
+    {
+      "q": "An'anaviy topishmoqlar zamirida nima aks etgan?",
+      "v": [
+        "zamonaviy texnika yutuqlari",
+        "shahar qurilishi tarixi",
+        "chet el an'analari",
+        "xalq tarixi va qadriyatlari"
+      ],
+      "t": 3,
+      "izoh": "Ular ajdodlar turmush tarzini saqlab qolgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#6cb453ea"
+    },
+    {
+      "q": "«Har shoxda o'ttiz yaproq» iborasi nimani bildiradi?",
+      "v": [
+        "kundagi soatlarni",
+        "oydagi kunlarni",
+        "haftadagi kunlarni",
+        "yildagi fasllarni"
+      ],
+      "t": 1,
+      "izoh": "Bir oy o'ttiz kundan iborat deb olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#ad7dbaf9"
+    },
+    {
+      "q": "«Chiston» so'zi qaysi tildan olingan?",
+      "v": [
+        "yunon tilidan",
+        "arab tilidan",
+        "hind tilidan",
+        "fors tilidan"
+      ],
+      "t": 3,
+      "izoh": "So'z topishmoq, jumboq ma'nosini anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#9650a6a0"
+    },
+    {
+      "q": "«Boshi taroq, dumi o'roq» topishmog'ining javobi qaysi?",
+      "v": [
+        "kaklik",
+        "qarg'a",
+        "xo'roz",
+        "tovus"
+      ],
+      "t": 2,
+      "izoh": "Toji taroqqa, dumi o'roqqa qiyoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#72ff0087"
+    },
+    {
+      "q": "Topishmoqlar tuzilishiga ko'ra necha xil bo'ladi?",
+      "v": [
+        "og'zaki va yozma turlarga",
+        "bir va bir necha predmetli",
+        "katta va kichik turlarga",
+        "qadimgi va yangi turlarga"
+      ],
+      "t": 1,
+      "izoh": "Bo'linish yashiringan narsalar soniga asoslanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#547a3863"
+    },
+    {
+      "q": "Topishmoqning javobi bilan savoli o'rtasidagi bog'lanish nimaga asoslanadi?",
+      "v": [
+        "aytilish joyiga",
+        "belgilar o'xshashligiga",
+        "so'zlar uzunligiga",
+        "harflar sonига"
+      ],
+      "t": 1,
+      "izoh": "O'xshashlik shakl, rang yoki vazifada bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#5e94e9e6"
+    },
+    {
+      "q": "Topishmoqlar avloddan avlodga qanday yo'l bilan o'tib kelgan?",
+      "v": [
+        "maxsus darsliklar orqali",
+        "chet el kitoblari orqali",
+        "saroy kotiblari yozuvi orqali",
+        "og'zaki tarzda, aytish orqali"
+      ],
+      "t": 3,
+      "izoh": "Ular yozib olingunga qadar shu yo'l bilan yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_xoi_m04-topishmoqlar#4da0a9e1"
+    },
+    {
+      "q": "Quyidagi parcha nimani anglatadi? Bularni to'g'ridan to'g'ri so'rasak, ehtimol, aytmaslar.",
+      "v": [
+        "Umidini uzgan yorga aytilgan dalda.",
+        "Doston matniga singdirilgan maqol.",
+        "Ikkinchi shart — yoy tortish sinovi.",
+        "Vazirning sir bilish rejasi."
+      ],
+      "t": 3,
+      "izoh": "«Uch og'a-ini botirlar» asaridagi bu parchada vazirning sir bilish rejasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#2669911b"
+    },
+    {
+      "q": "Quyidagi parcha nimani anglatadi? Shu go'sht qo'zi go'shti ekan, biroq shu qo'zi it emib katta bo'lgan.",
+      "v": [
+        "Otaning o'g'illariga qilgan o'giti.",
+        "Qahramon nutqidagi maqtanish ohangi.",
+        "Umidini uzgan yorga aytilgan dalda.",
+        "To'ng'ich botirning farosatli hukmi."
+      ],
+      "t": 3,
+      "izoh": "«Uch og'a-ini botirlar» asaridagi bu parchada to'ng'ich botirning farosatli hukmi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#e8ff0830"
+    },
+    {
+      "q": "Quyidagi parcha nimani anglatadi? Shu nonni taxlagan kishining otasi novvoy ekan.",
+      "v": [
+        "Sakkiz bo'g'inli, jangovar ohangdagi band.",
+        "Sovchilikni rad etgan bekning manman so'zlari.",
+        "Kenja botirning zakovati namoyon bo'lgan o'rin.",
+        "Aynan shu so'zlar butun voqealarga turtki bo'ladi."
+      ],
+      "t": 2,
+      "izoh": "«Uch og'a-ini botirlar» asaridagi bu parchada kenja botirning zakovati namoyon bo'lgan o'rin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#44762555"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Kuzatuvchanlik va o'tkir zehn insonni ishonchli hukmga olib kelishi uqtirilgan",
+      "v": [
+        "«Ulug'lar duosi qabul bo'ladi»",
+        "«Malikayi Husnobod»",
+        "«Oshiq G'arib va Shohsanam»",
+        "«Uch og'a-ini botirlar»"
+      ],
+      "t": 3,
+      "izoh": "Bu — «Uch og'a-ini botirlar» asarining bosh g'oyasi. Botirlar dasturxondagi taomdan sir topadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#41e00203"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Yoshlikdagi tajribasizlik sinovlar orqali pishiqlikka aylanishi tasvirlangan",
+      "v": [
+        "«Ravshan»",
+        "«Boychechak»",
+        "«Maydagul»",
+        "«Yor-yor»"
+      ],
+      "t": 0,
+      "izoh": "Bu — «Ravshan» asarining bosh g'oyasi. Qahramon savol-javoblarda chiniqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#3648c932"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Sinovga to'g'ri javob bergan kishi mukofot olishi ertak misolida ochilgan",
+      "v": [
+        "«Zumrad va Qimmat»",
+        "«Ziyod botir»",
+        "«Zariadr va Odatida»",
+        "«Xo'sh-xo'sh»"
+      ],
+      "t": 0,
+      "izoh": "Bu — «Zumrad va Qimmat» asarining bosh g'oyasi. Sinov motivi topishmoq mantig'iga yaqin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#9be2a6b8"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Zakovat va farosat jismoniy kuch bilan barobar qadrlanishi ko'rsatilgan",
+      "v": [
+        "«Alpomish»",
+        "«Chittigul»",
+        "«Kuyovsalom»",
+        "«Kelinsalom»"
+      ],
+      "t": 0,
+      "izoh": "Bu — «Alpomish» asarining bosh g'oyasi. Qahramon sinovlarda aqlini ham ishga soladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#3b761ecc"
+    },
+    {
+      "q": "Topishmoqning tarbiyaviy vazifasi bilan bir qatorda yana qanday vazifasi bor?",
+      "v": [
+        "tarix o'rgatish vazifasi",
+        "ko'ngilochar o'yin vazifasi",
+        "hunar sirini yashirish vazifasi",
+        "hujjat saqlash vazifasi"
+      ],
+      "t": 1,
+      "izoh": "Topishmoq aytish uzoq yillar sevimli o'yin bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#6de707f8"
+    },
+    {
+      "q": "Topishmoq matni ko'pincha qanday shaklda bo'ladi?",
+      "v": [
+        "qisqa, ohangdor va qofiyali",
+        "uzun va nasriy shaklda",
+        "faqat bir so'zdan iborat",
+        "hikoya tarzida bayon qilingan"
+      ],
+      "t": 0,
+      "izoh": "Ohangdorlik uni yodda saqlashni osonlashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#c570af65"
+    },
+    {
+      "q": "«Bir parcha patir, olamga tatir» topishmog'ining javobi nima?",
+      "v": [
+        "oy",
+        "yomg'ir",
+        "shamol",
+        "bulut"
+      ],
+      "t": 0,
+      "izoh": "Oy nurining butun olamga yetishi nazarda tutilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#90bbf3a0"
+    },
+    {
+      "q": "«Onasi bitta, bolasi mingta» topishmog'i nimani anglatadi?",
+      "v": [
+        "quyosh va bulut",
+        "tog' va vodiy",
+        "daryo va ko'l",
+        "oy va yulduzlar"
+      ],
+      "t": 3,
+      "izoh": "Osmon jismlari ona-bola munosabatiga qiyoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#4ef77bf0"
+    },
+    {
+      "q": "Topishmoqning xalq orasidagi nomlaridan biri qaysi?",
+      "v": [
+        "lapar",
+        "topmacha",
+        "yalla",
+        "terma"
+      ],
+      "t": 1,
+      "izoh": "U «jumboq» va «matal» deb ham atalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#45166ad3"
+    },
+    {
+      "q": "Topishmoqda yashirin ma'no ko'pincha qanday beriladi?",
+      "v": [
+        "chizma orqali",
+        "to'g'ridan to'g'ri",
+        "raqamlar bilan",
+        "majoziy shaklda"
+      ],
+      "t": 3,
+      "izoh": "Narsa qush, hayvon yoki buyumga qiyoslanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#dcd2fc3c"
+    },
+    {
+      "q": "«Shahari bor, odami yo'q, daryosi bor, suvi yo'q» topishmog'ining javobi qaysi?",
+      "v": [
+        "xarita",
+        "daftar",
+        "kitob",
+        "suratlar"
+      ],
+      "t": 0,
+      "izoh": "Topishmoq o'quv qurollari mavzusiga oid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#899ea195"
+    },
+    {
+      "q": "«Kichkina dekcha, ichi to'la mixcha» topishmog'ining javobi nima?",
+      "v": [
+        "bodring",
+        "yong'oq",
+        "qovun",
+        "anor"
+      ],
+      "t": 3,
+      "izoh": "Anor donalari mixchaga o'xshatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#ad0bf6f5"
+    },
+    {
+      "q": "Topishmoqda predmet belgilari batafsil berilsa, u qanday bo'ladi?",
+      "v": [
+        "nasriy",
+        "bir misrali",
+        "qofiyasiz",
+        "ko'p misrali"
+      ],
+      "t": 3,
+      "izoh": "Belgilar ko'paygani sari matn uzayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#494ddba7"
+    },
+    {
+      "q": "Topishmoqlar qaysi yosh guruhi uchun ayniqsa foydali sanaladi?",
+      "v": [
+        "keksalar uchun",
+        "talabalar uchun",
+        "hunarmandlar uchun",
+        "bolalar uchun"
+      ],
+      "t": 3,
+      "izoh": "U bolani yoshlikdan mantiqiy fikrlashga undaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_xoi_m04-topishmoqlar#b912887d"
+    },
+    {
+      "q": "Topishmoq bilan chistonning asosiy farqi nimada?",
+      "v": [
+        "chiston faqat bolalarga aytiladi",
+        "ular orasida hech qanday farq yo'q",
+        "chiston yozma adabiyotdagi she'riy janr",
+        "topishmoq har doim she'riy bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Topishmoq — og'zaki ijod namunasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#f6aa9fa1"
+    },
+    {
+      "q": "Topishmoq aytish odati xalq orasida qachon keng qo'llangan?",
+      "v": [
+        "faqat safar yo'llarida",
+        "faqat bahor bayramlarida",
+        "faqat to'y marosimlarida",
+        "uzun qish kechalarida yig'inlarda"
+      ],
+      "t": 3,
+      "izoh": "Kattalar ham, bolalar ham bahsga qo'shilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#dca687b6"
+    },
+    {
+      "q": "Topishmoqlar mavzu jihatidan qanday?",
+      "v": [
+        "faqat tabiatga oid",
+        "faqat hayvonlarga oid",
+        "rang-barang",
+        "faqat uy-ro'zg'orga oid"
+      ],
+      "t": 2,
+      "izoh": "Tabiat, odam, mehnat qurollari — barchasi mavzu bo'la oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_xoi_m04-topishmoqlar#a6448659"
+    },
+    {
+      "q": "Topishmoq javobini asoslash nima uchun muhim?",
+      "v": [
+        "javobni yodlashga yordam beradi",
+        "qofiyani aniqlashga yordam beradi",
+        "misra sonini belgilaydi",
+        "fikrni dalillash malakasini beradi"
+      ],
+      "t": 3,
+      "izoh": "Topuvchi belgilarni izohlab berishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#54bc678d"
+    },
+    {
+      "q": "«Boshi taroq, dumi o'roq» topishmog'i qaysi mavzuga oid?",
+      "v": [
+        "tabiat hodisalariga",
+        "o'quv qurollariga",
+        "cholg'u asboblariga",
+        "hayvonot dunyosiga"
+      ],
+      "t": 3,
+      "izoh": "Javob — parranda nomi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#041152c7"
+    },
+    {
+      "q": "«Zar gilam, zar-zar gilam, ko'taray desam, og'ir gilam» topishmog'ining javobi nima?",
+      "v": [
+        "tog'",
+        "bulut",
+        "ko'l",
+        "yer"
+      ],
+      "t": 3,
+      "izoh": "Yer yuzasi keng gilamga o'xshatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#a017c547"
+    },
+    {
+      "q": "«Bir otasi, bir onasi, necha yuz ming bolasi» topishmog'ining javobi qaysi?",
+      "v": [
+        "tog', dara, cho'l",
+        "quyosh, oy, yulduzlar",
+        "daryo, ko'l, dengiz",
+        "bulut, shamol, yomg'ir"
+      ],
+      "t": 1,
+      "izoh": "Topishmoqda uchta predmet yashiringan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#fba70215"
+    },
+    {
+      "q": "Topishmoq va maqolni yaqinlashtiruvchi jihat nima?",
+      "v": [
+        "marosimda aytilishi",
+        "she'riy vaznning bir xilligi",
+        "tugal xulosaning borligi",
+        "ichki qofiyaning mavjudligi"
+      ],
+      "t": 3,
+      "izoh": "Ohangdoshlik ikkala janr uchun ham xarakterli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#2cb6bd48"
+    },
+    {
+      "q": "Topishmoqning bolalar uchun asosiy foydasi nimada?",
+      "v": [
+        "yod olish qobiliyatini sinashida",
+        "kuzatuvchanlik va topqirlikni o'stirishida",
+        "yozuv malakasini shakllantirishida",
+        "jismoniy chaqqonlikni oshirishida"
+      ],
+      "t": 1,
+      "izoh": "Shu sababli u bolalar folklorining faol janri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#bfc6ec66"
+    },
+    {
+      "q": "«Qoziq ustida qor turmas» topishmog'ining javobi nima?",
+      "v": [
+        "olma",
+        "yong'oq",
+        "shakar",
+        "tuxum"
+      ],
+      "t": 3,
+      "izoh": "Tuxum rangi qorga, shakli suyriga qiyoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#d4b3fe27"
+    },
+    {
+      "q": "Ertak va dostonlarda qahramonlar bir-birining nimasini topishmoq bilan sinaydi?",
+      "v": [
+        "aql-farosatini",
+        "ovqat pishirish mahoratini",
+        "jismoniy kuchini",
+        "ot minish qobiliyatini"
+      ],
+      "t": 0,
+      "izoh": "Bu hodisa ko'proq ertaklarda uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#55627efc"
+    },
+    {
+      "q": "Topishmoqlar qanday shakllarda yaratiladi?",
+      "v": [
+        "faqat dramatik shaklda",
+        "nasriy va she'riy shaklda",
+        "faqat nasriy shaklda",
+        "faqat she'riy shaklda"
+      ],
+      "t": 1,
+      "izoh": "Ular ixcham, sodda va qofiyali bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#e9acf792"
+    },
+    {
+      "q": "«Teg desa tegmaydi, tegma desa tegadi» topishmog'ining javobi qaysi?",
+      "v": [
+        "quloq",
+        "burun",
+        "lab",
+        "ko'z"
+      ],
+      "t": 2,
+      "izoh": "Topishmoq odam a'zolari mavzusiga oid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#eeb94a4e"
+    },
+    {
+      "q": "Topishmoq barcha xalqlar og'zaki ijodida qanday o'rin tutadi?",
+      "v": [
+        "faqat marosimda aytiladigan janr",
+        "faqat kattalarga atalgan janr",
+        "eng kam uchraydigan janr",
+        "eng sevimli janrlardan biri"
+      ],
+      "t": 3,
+      "izoh": "Topishmoq — hammabop, ommaviy janr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_xoi_m04-topishmoqlar#eeb56c72"
+    },
+    {
+      "q": "Topishmoqda narsa nomi qanday holda beriladi?",
+      "v": [
+        "harflari almashtirilgan holda",
+        "raqam bilan belgilangan holda",
+        "ochiq aytilgan holda",
+        "boshqa narsaga qiyoslangan holda"
+      ],
+      "t": 3,
+      "izoh": "Qiyoslash topishmoq badiiyatining asosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#b0a01c3d"
+    },
+    {
+      "q": "«Yer tagida oltin qoziq» topishmog'ining javobi nima?",
+      "v": [
+        "kartoshka",
+        "sabzi",
+        "piyoz",
+        "sholg'om"
+      ],
+      "t": 1,
+      "izoh": "Sabzi rangi va shakli bilan qoziqqa qiyoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#7cb3c838"
+    },
+    {
+      "q": "Chiston mumtoz adabiyotda qaysi shakllarda yozilgan?",
+      "v": [
+        "fard, bayt, qit'a, ruboiy va g'azal shaklida",
+        "faqat maktub va vasiyat shaklida",
+        "faqat maqola va risola shaklida",
+        "faqat doston va qissa shaklida"
+      ],
+      "t": 0,
+      "izoh": "Chiston shakl jihatidan xilma-xil bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#ab42583b"
+    },
+    {
+      "q": "Topishmoqlar to'plamini nashr etgan olimlardan biri kim?",
+      "v": [
+        "B. Qosimov",
+        "Z. Husainova",
+        "S. Ahmedov",
+        "Sh. Shomaqsudov"
+      ],
+      "t": 1,
+      "izoh": "«O'zbek topishmoqlari» to'plami 1966-yilda chop etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#99e76889"
+    },
+    {
+      "q": "«O'zbek topishmoqlari» to'plami qaysi yilda nashr etilgan?",
+      "v": [
+        "1986-yilda",
+        "1966-yilda",
+        "1976-yilda",
+        "1956-yilda"
+      ],
+      "t": 1,
+      "izoh": "To'plam 5-sinf darsligining asosiy manbalaridan biri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#e0810f3e"
+    },
+    {
+      "q": "Topishmoq javobini qidirishda o'quvchi nimaga tayanadi?",
+      "v": [
+        "aytuvchining ovoz ohangiga",
+        "tasvirdagi belgilarni solishtirishga",
+        "butunlay tasodifiy taxminga",
+        "matndagi so'zlar sonini sanashga"
+      ],
+      "t": 1,
+      "izoh": "Mantiqiy bog'lash asosiy yo'l hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#d2dff2b9"
+    },
+    {
+      "q": "Topishmoqlarda inson va olam qanday vositalar orqali ifodalanadi?",
+      "v": [
+        "sana va hujjatlar orqali",
+        "xarita va chizmalar orqali",
+        "o'xshatish va taqqoslashlar orqali",
+        "raqam va o'lchovlar orqali"
+      ],
+      "t": 2,
+      "izoh": "Savol shakli ham muhim vosita sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#4e6d9949"
+    },
+    {
+      "q": "Topishmoq javobini topa olmagan kishi nima beradi?",
+      "v": [
+        "shahar yoki qishloq",
+        "kitob yoki daftar",
+        "pul yoki mol",
+        "to'n yoki do'ppi"
+      ],
+      "t": 0,
+      "izoh": "Bu — o'yin shartiga aylangan shartli «jazo».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#7713fb7d"
+    },
+    {
+      "q": "Topishmoq qaysi janrlar ichida ham uchraydi?",
+      "v": [
+        "doston va ertaklarda",
+        "alla va lapardagi",
+        "maqol va hikmatlarda",
+        "yig'i va yo'qlovda"
+      ],
+      "t": 0,
+      "izoh": "U asar mazmunini boyitib, qiziqarli qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#ad2eabb7"
+    },
+    {
+      "q": "«Pakpakana bo'yi bor, yetti qavat to'ni bor» — bu qaysi janr namunasi?",
+      "v": [
+        "maqol",
+        "alla",
+        "topishmoq",
+        "terma"
+      ],
+      "t": 2,
+      "izoh": "Unda hukm yo'q, belgilar berilgan, xolos.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#e6d00775"
+    },
+    {
+      "q": "«Otasi uzun xo'ja, onasi yoyma xotin, bolasi shirin-shakar» topishmog'i nimani bildiradi?",
+      "v": [
+        "tog', yoni va toshi",
+        "daraxt, shoxi va mevasi",
+        "buloq, arig'i va suvi",
+        "tok, bargi va uzumi"
+      ],
+      "t": 3,
+      "izoh": "Uch predmetli topishmoqqa yorqin misol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#01e51c0b"
+    },
+    {
+      "q": "Topishmoq inson uchun qanday ahamiyatga ega?",
+      "v": [
+        "ovoz tembrini yaxshilaydi",
+        "jismoniy kuchni oshiradi",
+        "yozuv malakasini beradi",
+        "mantiqiy fikrlashni o'stiradi"
+      ],
+      "t": 3,
+      "izoh": "Shu bois u tarbiya vositasi sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_xoi_m04-topishmoqlar#bfba974d"
+    },
+    {
+      "q": "«Bir daraxtda o'n ikki shox, har shoxda o'ttiz yaproq» topishmog'ining javobi nima?",
+      "v": [
+        "yil",
+        "asr",
+        "fasl",
+        "hafta"
+      ],
+      "t": 0,
+      "izoh": "Daraxt — yil, shox — oy, yaproq — kun timsoli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#8949edd3"
+    },
+    {
+      "q": "«Chin qushim, chinni qushim, chin tepaga qo'ndi qushim» topishmog'ining javobi qaysi?",
+      "v": [
+        "choynak",
+        "ko'za",
+        "piyola",
+        "qozon"
+      ],
+      "t": 0,
+      "izoh": "Choy quyilishi qushning salom berishiga qiyoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#390d70ec"
+    },
+    {
+      "q": "Topishmoqning javobi topilgach, tinglovchida qanday tuyg'u paydo bo'ladi?",
+      "v": [
+        "kashfiyot qilgandek quvonch",
+        "ortiqcha charchoq hissi",
+        "befarqlik va zerikish",
+        "qo'rquv va hayajon"
+      ],
+      "t": 0,
+      "izoh": "Shu quvonch janrni tirik saqlab keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#66961e65"
+    },
+    {
+      "q": "Yaratilish davriga ko'ra topishmoqlar qanday guruhlanadi?",
+      "v": [
+        "oddiy va murakkab",
+        "an'anaviy va zamonaviy",
+        "kichik va yirik",
+        "she'riy va nasriy"
+      ],
+      "t": 1,
+      "izoh": "Zamonaviylarida fan va texnika yutuqlari aks etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#babd951e"
+    },
+    {
+      "q": "Topishmoqlarning she'riy shakli qaysi vaznga tayanadi?",
+      "v": [
+        "erkin vaznga",
+        "sarbast vaznga",
+        "aruz vazniga",
+        "barmoq vazniga"
+      ],
+      "t": 3,
+      "izoh": "Bo'g'in tengligi ohangdorlik beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#a53bf201"
+    },
+    {
+      "q": "Chiston qanday shaklda paydo bo'lgan?",
+      "v": [
+        "kundalik shaklida",
+        "monolog shaklida",
+        "maktub shaklida",
+        "savol-javob shaklida"
+      ],
+      "t": 3,
+      "izoh": "Unda narsa-hodisalar ko'chma ma'noda tasvirlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#6ba76640"
+    },
+    {
+      "q": "Zamonaviy topishmoqlarda nima o'z ifodasini topgan?",
+      "v": [
+        "dehqonchilik mavsumi",
+        "qadimgi urf-odatlar",
+        "fan va texnika yutuqlari",
+        "chorvachilik tajribasi"
+      ],
+      "t": 2,
+      "izoh": "Ular kundalik turmushdagi o'zgarishlarni aks ettiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#0895a62b"
+    },
+    {
+      "q": "Topishmoq javobi topilgach, tinglovchida qanday tuyg'u paydo bo'ladi?",
+      "v": [
+        "ranjish hissi",
+        "charchoq hissi",
+        "kashfiyot quvonchi",
+        "befarqlik hissi"
+      ],
+      "t": 2,
+      "izoh": "Bu tuyg'u janrning ommaviyligini ta'minlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#b41e9756"
+    },
+    {
+      "q": "«Bir qop un, ichida ustun» topishmog'i qaysi mevani bildiradi?",
+      "v": [
+        "shaftoli",
+        "jiyda",
+        "anor",
+        "behi"
+      ],
+      "t": 1,
+      "izoh": "Mevaning unsimon eti va ichidagi danagi tasvirlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#5f2dca14"
+    },
+    {
+      "q": "Topishmoqda narsaning qaysi tomonlari tasvirlanadi?",
+      "v": [
+        "sanasi va joyi",
+        "sifati va belgilari",
+        "narxi va og'irligi",
+        "egasi va nomi"
+      ],
+      "t": 1,
+      "izoh": "Belgilar orqali javobga yo'l ochiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#b044f31d"
+    },
+    {
+      "q": "Topishmoqlarda eng ko'p qo'llanadigan badiiy san'at qaysi?",
+      "v": [
+        "tajnis",
+        "o'xshatish",
+        "tazod",
+        "talmeh"
+      ],
+      "t": 1,
+      "izoh": "Narsa boshqa narsaga qiyoslanib tasvirlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#a4913d89"
+    },
+    {
+      "q": "Topishmoqda ko'chma belgilar nimaga xizmat qiladi?",
+      "v": [
+        "qofiyani buzishga",
+        "mavzuni o'zgartirishga",
+        "savolni uzaytirishga",
+        "javobni yashirishga"
+      ],
+      "t": 3,
+      "izoh": "Yashirinlik topishmoq mohiyatini tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#3604476e"
+    },
+    {
+      "q": "Topishmoq qaysi jihati bilan ertakdan farq qiladi?",
+      "v": [
+        "qahramoni bo'lmasligi bilan",
+        "og'zaki tarqalishi bilan",
+        "voqea bayon qilmasligi bilan",
+        "muallifi noma'lumligi bilan"
+      ],
+      "t": 2,
+      "izoh": "Topishmoqda syujet emas, belgi tasviri bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#1cfe6773"
+    },
+    {
+      "q": "«Kunduz kuni o'chirib, tunda yoqa olmaysan» topishmog'ining javobi nima?",
+      "v": [
+        "chiroq",
+        "sham",
+        "gulxan",
+        "quyosh"
+      ],
+      "t": 3,
+      "izoh": "Quyoshsiz hayot bo'lmasligi ta'kidlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#4f7013f2"
+    },
+    {
+      "q": "Topishmoq mumtoz adabiyotda qanday ataladi?",
+      "v": [
+        "fard",
+        "qit'a",
+        "chiston",
+        "tuyuq"
+      ],
+      "t": 2,
+      "izoh": "Chiston mumtoz adabiyotning kichik lirik janri sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#ca0032c8"
+    },
+    {
+      "q": "«O'tga tushsa yonmas, suvga tushsa oqmas» topishmog'ining javobi qaysi?",
+      "v": [
+        "soya",
+        "tutun",
+        "bug'",
+        "shamol"
+      ],
+      "t": 0,
+      "izoh": "Soyaning moddiy emasligi topishmoq asosini tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#ed6b635d"
+    },
+    {
+      "q": "Topishmoq necha qismdan iborat bo'ladi?",
+      "v": [
+        "bir qismdan",
+        "to'rt qismdan",
+        "uch qismdan",
+        "ikki qismdan"
+      ],
+      "t": 3,
+      "izoh": "Birinchisi — tasvir, ikkinchisi — javob.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#0f413684"
+    },
+    {
+      "q": "Topishmoq ko'pincha qaysi badiiy usulga tayanadi?",
+      "v": [
+        "o'xshatishga",
+        "qofiyasizlikka",
+        "sanoqqa",
+        "takrorga"
+      ],
+      "t": 0,
+      "izoh": "Narsa boshqa narsaga qiyoslab tasvirlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#263f6278"
+    },
+    {
+      "q": "Topishmoq bolalarni nimaga o'rgatadi?",
+      "v": [
+        "topag'onlik va hozirjavoblikka",
+        "mehnat va matonat ko'rsatishga",
+        "sabr va toqat bilan kutishga",
+        "tartib va intizom saqlashga"
+      ],
+      "t": 0,
+      "izoh": "Topishmoq ayni paytda ko'ngilochar o'yin hamdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#8a199927"
+    },
+    {
+      "q": "Topishmoqning eng qisqa shakli qanday bo'ladi?",
+      "v": [
+        "bir misrali",
+        "to'rt misrali",
+        "o'n bir misrali",
+        "sakkiz misrali"
+      ],
+      "t": 0,
+      "izoh": "Masalan, «Yer tagida oltin qoziq».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#25af81f4"
+    },
+    {
+      "q": "«Bir daraxtda o'n ikki shox» topishmog'ida «shox» nimani anglatadi?",
+      "v": [
+        "kunni",
+        "faslni",
+        "haftani",
+        "oyni"
+      ],
+      "t": 3,
+      "izoh": "Yilda o'n ikki oy borligi nazarda tutilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#d2be1985"
+    },
+    {
+      "q": "Topishmoqlarni to'plash ishida asosiy manba kim hisoblanadi?",
+      "v": [
+        "kutubxona xodimlari",
+        "saroy kotiblari",
+        "chet el sayyohlari",
+        "xalq vakillari"
+      ],
+      "t": 3,
+      "izoh": "Olimlar ularni xalq orasidan yozib olgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#dc9090ef"
+    },
+    {
+      "q": "Xalq topishmoqlari qaysi fan doirasida o'rganiladi?",
+      "v": [
+        "manbashunoslik",
+        "folklorshunoslik",
+        "kitobatchilik",
+        "matnshunoslik"
+      ],
+      "t": 1,
+      "izoh": "Olimlar ularni to'plab, tasniflab, nashr etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_xoi_m04-topishmoqlar#5710be88"
+    },
+    {
+      "q": "Topishmoqda narsa qanday yo'l bilan tasvirlanadi?",
+      "v": [
+        "nomi ochiq aytilib",
+        "faqat o'lchami aytilib",
+        "nomi aytilmay, belgilari orqali",
+        "faqat rangi ko'rsatilib"
+      ],
+      "t": 2,
+      "izoh": "Shu bois javobni topish o'ylashni talab qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_xoi_m04-topishmoqlar#3f6a4ead"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Turkiy xalq tafakkurining o'tkirligi til va og'zaki ijod namunalari orqali isbotlangan",
+      "v": [
+        "«Go'ro'g'lining tug'ilishi»",
+        "«Yusuf va Ahmad»",
+        "«Devonu lug'otit turk»",
+        "«Tohir va Zuhra»"
+      ],
+      "t": 2,
+      "izoh": "Bu — «Devonu lug'otit turk» asarining bosh g'oyasi. Asar so'z ma'nosini xalq ijodi bilan izohlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_xoi_m04-topishmoqlar#100a8aeb"
+    }
+  ]
+}

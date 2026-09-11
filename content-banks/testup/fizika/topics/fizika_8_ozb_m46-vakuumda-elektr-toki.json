@@ -1,0 +1,456 @@
+{
+  "nom": "46-mavzu. Vakuumda Elektr Toki",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Vakuum deb qanday holatga aytiladi?",
+      "v": [
+        "Nay ichidagi gaz molekulalari bir devordan ikkinchi devorga deyarli bir-biri bilan to'qnashmasdan yetib boradigan darajada so'rilgan holatga",
+        "Gaz umuman yo'q bo'lgan mutlaq bo'shliqqa",
+        "Gaz juda qizigan holatga",
+        "Gaz suyuqlangan holatga"
+      ],
+      "t": 0,
+      "izoh": "Naydagi gaz molekulalari soni shunday kamaytirilganki, ular bir devordan ikkinchi devorga deyarli to'qnashmasdan yetib boradi — bu holat vakuum deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#4bd4af5f"
+    },
+    {
+      "q": "Vakuumda elektr tokining o'tish tabiatini o'rgangan fizik kim?",
+      "v": [
+        "Amerikalik fizik Tomas Edison",
+        "Ingliz fizigi M. Faradey",
+        "Nemis fizigi K. Rikke",
+        "L. I. Mandelshtam"
+      ],
+      "t": 0,
+      "izoh": "Amerikalik fizik Tomas Edison vakuumda elektr tokining o'tish tabiatini o'rgangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#6dd392b8"
+    },
+    {
+      "q": "Edison tajribasida shisha kolba ichidagi ikki elektroddan biri tok manbaining manfiy qutbiga, ikkinchisi galvanometr orqali musbat qutbga ulanganida dastlab nima kuzatilgan?",
+      "v": [
+        "Galvanometr strelkasi o'zgarmagan — vakuumdan tok o'tmayotgan",
+        "Galvanometr strelkasi og'igan — tok o'tgan",
+        "Lampochka yongan",
+        "Elektrodlar qizigan"
+      ],
+      "t": 0,
+      "izoh": "Dastlab galvanometr strelkasi o'zgarmagan, ya'ni vakuumdan tok o'tmayotgani kuzatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#af9e1080"
+    },
+    {
+      "q": "Edison tajribasida vakuumdan tok o'tishi qanday sharoitda kuzatilgan?",
+      "v": [
+        "Tok manbaining manfiy qutbiga ulangan elektrod qizdirilganda",
+        "Elektrodlar orasidagi masofa kamaytirilganda",
+        "Kuchlanish kamaytirilganda",
+        "Kolba muzlatilganda"
+      ],
+      "t": 0,
+      "izoh": "Manfiy qutbga ulangan elektrod qizdirilganda vakuumda elektr toki yuzaga kelgani, ya'ni galvanometr strelkasi og'ishi kuzatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#30586189"
+    },
+    {
+      "q": "Termoelektron emissiya deb qanday hodisaga aytiladi?",
+      "v": [
+        "Qizdirilgan metallardan elektronlarning ajralib chiqishiga",
+        "Metallarning erishiga",
+        "Elektronlarning ionlar bilan qo'shilishiga",
+        "Metallarning oksidlanishiga"
+      ],
+      "t": 0,
+      "izoh": "Qizdirilgan metallardan elektronlarning ajralib chiqishi termoelektron emissiya deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#c66a0f19"
+    },
+    {
+      "q": "Vakuumda hosil bo'lgan elektr toki nimadan iborat?",
+      "v": [
+        "Qizdirilgan elektroddan ajralib chiqqan elektronlar oqimidan",
+        "Ionlar oqimidan",
+        "Molekulalar oqimidan",
+        "Protonlar oqimidan"
+      ],
+      "t": 0,
+      "izoh": "Vakuumdagi elektr toki qizdirilgan elektroddan ajralib chiqqan elektronlar oqimidan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#48cccda4"
+    },
+    {
+      "q": "Qizdirilayotgan elektrod nima deb ataladi va u manbaining qaysi qutbiga ulanadi?",
+      "v": [
+        "Katod, manfiy qutbga",
+        "Anod, musbat qutbga",
+        "Katod, musbat qutbga",
+        "Anod, manfiy qutbga"
+      ],
+      "t": 0,
+      "izoh": "Qizdirilayotgan elektrod katod deb ataladi va u tok manbaining manfiy qutbiga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#d86891cf"
+    },
+    {
+      "q": "Sovuq elektrod nima deb ataladi va u manbaining qaysi qutbiga ulanadi?",
+      "v": [
+        "Anod, musbat qutbga",
+        "Katod, manfiy qutbga",
+        "Anod, manfiy qutbga",
+        "Katod, musbat qutbga"
+      ],
+      "t": 0,
+      "izoh": "Sovuq elektrod anod deb ataladi va u manbaining musbat qutbiga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#76783b0f"
+    },
+    {
+      "q": "Katod va anod kavsharlangan vakuumli kolba (nay) nima deb yuritiladi?",
+      "v": [
+        "Ikki elektrodli elektron lampa yoki diod",
+        "Triod",
+        "Tranzistor",
+        "Kondensator"
+      ],
+      "t": 0,
+      "izoh": "Katod va anod kavsharlangan vakuumli kolba ikki elektrodli elektron lampa yoki diod deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#2b52f31c"
+    },
+    {
+      "q": "O'tgan asrda elektron lampalar qaysi asboblarda keng foydalanilgan?",
+      "v": [
+        "Radio, televizor, kompyuter, sanoat elektronikasida",
+        "Faqat lampochkalarda",
+        "Faqat akkumulyatorlarda",
+        "Faqat telefonda"
+      ],
+      "t": 0,
+      "izoh": "Elektron lampalar elektronika sohasida yetakchi o'rinni egallagan, ulardan radio, televizor, kompyuter, sanoat elektronikasida keng foydalanilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#aa2df33a"
+    },
+    {
+      "q": "Hozirgi kunda vakuumli lampalarning o'rniga qanday asboblar qo'llanilmoqda?",
+      "v": [
+        "Zamonaviy hamda kam energiya iste'mol qiluvchi yarimo'tkazgichlardan yasalgan asboblar",
+        "Katta o'lchamli vakuumli lampalar",
+        "Mexanik relelar",
+        "Elektromagnitlar"
+      ],
+      "t": 0,
+      "izoh": "Bugungi kunda vakuumli lampalar o'rniga zamonaviy va kam energiya iste'mol qiluvchi yarimo'tkazgich asboblar qo'llanilmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#0c5d1281"
+    },
+    {
+      "q": "Vakuumda elektr toki qanday yuzaga keladi?",
+      "v": [
+        "Katod qizdirilganda undan elektronlar ajralib chiqadi va elektr maydon ta'sirida anodga tomon tartibli harakatga keladi",
+        "Anoddan elektronlar katodga harakatlanadi",
+        "Gaz molekulalari ionlashadi",
+        "Elektrodlar o'zaro erishadi"
+      ],
+      "t": 0,
+      "izoh": "Katod qizdirilganda undan elektronlar ajralib chiqib, anod va katod orasidagi elektr maydon ta'sirida anodga tomon tartibli harakatga keladi — zanjirda tok hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#cddf7ea7"
+    },
+    {
+      "q": "t vaqt davomida anodga N ta elektron yetib kelsa, anodda olgan zaryad miqdori qanday hisoblanadi?",
+      "v": [
+        "q = N·e",
+        "q = N/e",
+        "q = e/N",
+        "q = N·e·t"
+      ],
+      "t": 0,
+      "izoh": "Anodga N ta elektron yetib kelsa, zaryad miqdori q = N·e ifodaga ko'ra hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#f8b4e649"
+    },
+    {
+      "q": "Anod toki qanday formula orqali hisoblanadi?",
+      "v": [
+        "I = q/t = N·e/t",
+        "I = q·t",
+        "I = N/(e·t)",
+        "I = t/(N·e)"
+      ],
+      "t": 0,
+      "izoh": "Anod toki I = q/t = N·e/t formula orqali hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#669f86e1"
+    },
+    {
+      "q": "Elektronning zaryadi qanchaga teng?",
+      "v": [
+        "e = 1,6·10⁻¹⁹ C",
+        "e = 1,6·10⁻¹⁶ C",
+        "e = 96500 C",
+        "e = 1 C"
+      ],
+      "t": 0,
+      "izoh": "Elektron zaryadi e = 1,6·10⁻¹⁹ C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#bd782e5a"
+    },
+    {
+      "q": "O'zbekistonda metallarda termoelektron emissiya hodisasini o'rganish bo'yicha kimga rahbarlik qilgan olim aytiladi?",
+      "v": [
+        "Akademik Ubay Oripov",
+        "Akademik Mirzo Ulug'bek",
+        "M. Faradey",
+        "T. Edison"
+      ],
+      "t": 0,
+      "izoh": "Yurtdoshimiz akademik Ubay Oripov rahbarligida bir guruh olimlar termoelektron emissiyani o'rganish bo'yicha ilmiy tadqiqot olib borgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#d3889c11"
+    },
+    {
+      "q": "U. Oripov rahbarligidagi olimlarning ilmiy izlanishlari natijalari qaysi sohalarda keng qo'llanilmoqda?",
+      "v": [
+        "Kosmik materialshunoslik va asbobsozlik sohasida",
+        "Faqat tibbiyotda",
+        "Faqat qishloq xo'jaligida",
+        "Faqat qurilishda"
+      ],
+      "t": 0,
+      "izoh": "Ilmiy izlanishlar natijalari kosmik materialshunoslik va asbobsozlik sohasida keng qo'llanilmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#06cb9306"
+    },
+    {
+      "q": "Diodning katodi qizdirilmasa, vakuumli lampadan tok o'tadimi?",
+      "v": [
+        "O'tmaydi, chunki elektronlar ajralib chiqmaydi",
+        "O'tadi, chunki maydon elektronlarni tortadi",
+        "O'tadi, lekin juda kuchli",
+        "Faqat teskari yo'nalishda o'tadi"
+      ],
+      "t": 0,
+      "izoh": "Katod qizdirilmasa, undan elektronlar ajralib chiqmaydi va vakuumdan tok o'tmaydi — Edison tajribasi shuni ko'rsatgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#85a7118f"
+    },
+    {
+      "q": "Diodda tok faqat bir yo'nalishda o'tishining sababi nima?",
+      "v": [
+        "Elektronlar faqat qizdirilgan katoddan ajralib chiqadi va anodga tomon harakatlanadi",
+        "Anod ham elektron chiqaradi",
+        "Vakuum to'liq bo'sh emas",
+        "Galvanometr to'xtatib qo'yadi"
+      ],
+      "t": 0,
+      "izoh": "Elektronlar faqat qizdirilgan katoddan ajralib chiqib anodga harakatlanadi, sovuq anod elektron chiqarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#71a9ce5a"
+    },
+    {
+      "q": "Ikki elektrodli lampaning anodiga har sekundda 1,2·10¹⁷ ta elektron yetib borsa, anod toki qanday topiladi?",
+      "v": [
+        "I = N·e/t formula bilan",
+        "I = N·t/e formula bilan",
+        "I = e·t/N formula bilan",
+        "I = N·e·t formula bilan"
+      ],
+      "t": 0,
+      "izoh": "I = N·e/t. Darslikdagi masolada I = 1,92·10⁻² A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#f3ee2a96"
+    },
+    {
+      "q": "Darslikdagi masolada anodga har sekundda 1,2·10¹⁷ ta elektron yetib borganda anod toki qancha chiqqan?",
+      "v": [
+        "1,92·10⁻² A",
+        "1,92 A",
+        "1,6·10⁻¹⁹ A",
+        "0,012 A"
+      ],
+      "t": 0,
+      "izoh": "I = 1,2·10¹⁷·1,6·10⁻¹⁹/1 = 1,92·10⁻² A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#fb06e3f2"
+    },
+    {
+      "q": "Vakuumli diodning umumiy ko'rinishi va elektr sxemasi darslikning qaysi rasimda keltirilgan?",
+      "v": [
+        "119-rasmda",
+        "102-rasmda",
+        "110-rasmda",
+        "128-rasmda"
+      ],
+      "t": 0,
+      "izoh": "Vakuumli diodning umumiy ko'rinishi va elektr sxemasi 119-rasmda keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#f369dcf5"
+    },
+    {
+      "q": "Vakuum hosil qilish uchun nay ichidagi gaz qanday so'rib olinadi?",
+      "v": [
+        "Maxsus nasos yordamida",
+        "Qizdirish yo'li bilan",
+        "Muzlatish yo'li bilan",
+        "Bosim oshirib"
+      ],
+      "t": 0,
+      "izoh": "Nay ichidagi gaz maxsus nasosda so'rilib, undagi gaz molekulalari soni kamaytiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#0ddf1285"
+    },
+    {
+      "q": "Vakuumda tok o'tishi uchun nima shart?",
+      "v": [
+        "Zaryad tashuvchilar — qizdirilgan katoddan ajralib chiqqan elektronlar mavjud bo'lishi kerak",
+        "Gaz molekulalari ko'p bo'lishi kerak",
+        "Elektrodlar sovuq bo'lishi kerak",
+        "Kuchlanish nolga teng bo'lishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Vakuumda zaryad tashuvchilar yo'q; tok faqat qizdirilgan katoddan ajralib chiqqan elektronlar hisobiga yuzaga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#7ae89213"
+    },
+    {
+      "q": "Elektron lampalar zamonaviy yarimo'tkazgich asboblariga nisbatan qanday kamchiligi tufayli almashtirilmoqda?",
+      "v": [
+        "Ko'p energiya iste'mol qiladi",
+        "Juda arzon",
+        "Juda kichik",
+        "Ishlash prinsipi murakkab emas"
+      ],
+      "t": 0,
+      "izoh": "Vakuumli lampalar o'rniga zamonaviy hamda kam energiya iste'mol qiluvchi yarimo'tkazgich asboblar qo'llanilmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#5b237c11"
+    },
+    {
+      "q": "Anod toki I = N·e/t formulasidagi N nimani bildiradi?",
+      "v": [
+        "t vaqt davomida anodga yetib kelgan elektronlar sonini",
+        "Katoddagi atomlar sonini",
+        "Vakuumdagi molekulalar sonini",
+        "Elektrodlar sonini"
+      ],
+      "t": 0,
+      "izoh": "N — t vaqt davomida anodga yetib kelgan elektronlar soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#f6626d26"
+    },
+    {
+      "q": "Metallarda tok bilan vakuumdagi tokning o'xshash tomoni nimada?",
+      "v": [
+        "Ikkalasida ham zaryad tashuvchilar erkin elektronlar",
+        "Ikkalasida ham zaryad tashuvchilar ionlar",
+        "Ikkalasida ham maydon kerak emas",
+        "Ikkalasi ham kimyoviy jarayon keltirib chiqaradi"
+      ],
+      "t": 0,
+      "izoh": "Metallarda ham, vakuumda ham elektr tokini erkin elektronlarning tartibli harakati hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#7241a380"
+    },
+    {
+      "q": "Katod qizdirilganda undan elektronlar ajralib chiqa boshlashi qanday hodisa bilan izohlanadi?",
+      "v": [
+        "Termoelektron emissiya bilan",
+        "Elektrolitik dissotsiatsiya bilan",
+        "Rekombinatsiya bilan",
+        "Ionli bog'lanish bilan"
+      ],
+      "t": 0,
+      "izoh": "Qizdirilgan metallardan elektronlarning ajralib chiqishi termoelektron emissiya deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#522047c2"
+    },
+    {
+      "q": "Diod sxemasida katod va anod manba qutblariga qanday ulanadi?",
+      "v": [
+        "Katod — manfiy qutbga, anod — musbat qutbga",
+        "Katod — musbat qutbga, anod — manfiy qutbga",
+        "Ikkalasi ham musbat qutbga",
+        "Ikkalasi ham manfiy qutbga"
+      ],
+      "t": 0,
+      "izoh": "Katod manbaining manfiy qutbiga, anod esa musbat qutbiga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#73fbd338"
+    },
+    {
+      "q": "Vakuumli lampa diod deb atalishining sababi nima?",
+      "v": [
+        "U ikki elektrodli elektron lampa bo'lgani uchun (di — ikki)",
+        "U ikki xil gazdan iborat",
+        "U ikki marta kuchaytiradi",
+        "U ikki yo'nalishda tok o'tkazadi"
+      ],
+      "t": 0,
+      "izoh": "Katod va anod kavsharlangan vakuumli kolba ikki elektrodli elektron lampa — diod deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m46-vakuumda-elektr-toki#2fc7c8ff"
+    }
+  ]
+}

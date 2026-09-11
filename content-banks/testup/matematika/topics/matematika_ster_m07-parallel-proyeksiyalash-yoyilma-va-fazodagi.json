@@ -1,0 +1,1609 @@
+{
+  "nom": "Parallel proyeksiyalash, yoyilma va fazodagi geometrik almashtirishlar",
+  "bolim": "Stereometriya",
+  "blok": "ster",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Loyihachi Dilnoza fazoviy shaklni parallel proyeksiyalash usulida qog'ozga tushirmoqda. Bunday tasvirlashda shaklning quyidagi xossalaridan qaysi biri har doim saqlanib qoladi?",
+      "v": [
+        "Aylananing radiusi",
+        "Bir to'g'ri chiziqdagi kesmalar nisbati",
+        "Kesmalarning haqiqiy uzunligi",
+        "Burchaklarning kattaligi"
+      ],
+      "t": 1,
+      "izoh": "Parallel proyeksiyalash to'g'ri chiziqni to'g'ri chiziqqa, parallel chiziqlarni parallel chiziqlarga o'tkazadi va bir to'g'ri chiziqda yotgan kesmalar nisbatini o'zgartirmaydi. Uzunlik, burchak va radius esa proyeksiyalash yo'nalishiga bog'liq holda o'zgaradi, shuning uchun ular saqlanmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='20,268 220,268 285,228 85,228' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='85' y1='120' x2='215' y2='95' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='85' y1='252' x2='215' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='85' y1='120' x2='85' y2='252' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='215' y1='95' x2='215' y2='240' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='78' y='114' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='224' y='90' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='76' y='250' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='224' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='150' y='190' font-size='13' fill='%23334155' text-anchor='middle'%3Eproyeksiyalash%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proyeksiya-xossa",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#ba451501"
+    },
+    {
+      "q": "Chizmachilik darsida o'qituvchi fazodagi ikkita parallel to'g'ri chiziqni tekislikka parallel proyeksiyaladi. Proyeksiyalash yo'nalishi bu chiziqlarga parallel emas. Ularning tasvirlari qanday bo'ladi?",
+      "v": [
+        "Albatta kesishuvchi ikki to'g'ri chiziq",
+        "Ikkita nuqta",
+        "O'zaro perpendikulyar ikki to'g'ri chiziq",
+        "Parallel yoki ustma-ust tushuvchi ikki to'g'ri chiziq"
+      ],
+      "t": 3,
+      "izoh": "Parallel chiziqlarni proyeksiyalovchi tekisliklar ham o'zaro parallel bo'ladi yoki ustma-ust tushadi. Shu sababli ularning tasvirlari kesishmaydi: yo parallel ikki chiziq, yo bitta chiziq hosil bo'ladi. Kesishuvchi yoki perpendikulyar bo'lishi shart emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proyeksiya-xossa",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#f2a1db97"
+    },
+    {
+      "q": "Parallelogramm shaklidagi metall plastinka tekislikka parallel proyeksiyalanmoqda, uning tekisligi proyeksiyalash yo'nalishiga parallel emas. Quyidagi figuralardan qaysi biri hech qachon uning tasviri bo'la olmaydi?",
+      "v": [
+        "Teng yonli trapetsiya",
+        "Kvadrat",
+        "To'g'ri to'rtburchak",
+        "Romb"
+      ],
+      "t": 0,
+      "izoh": "Parallel proyeksiyalashda parallel tomonlar parallelligicha qoladi, demak parallelogramm tasviri ham parallelogramm bo'ladi. Kvadrat, to'g'ri to'rtburchak va romb parallelogrammning xususiy hollari, trapetsiyada esa faqat bitta juft tomon parallel. Shuning uchun trapetsiya hosil bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proyeksiya-xossa",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#bce4935b"
+    },
+    {
+      "q": "Talaba Sarvar parallel proyeksiyalash xossalarini daftariga yozib chiqdi. Uning quyidagi tasdiqlaridan qaysi biri noto'g'ri?",
+      "v": [
+        "To'g'ri chiziq tasviri to'g'ri chiziq bo'ladi",
+        "Parallel kesmalarning nisbati saqlanadi",
+        "Perpendikulyar chiziqlarning tasvirlari ham perpendikulyar bo'ladi",
+        "Kesmaning o'rtasi tasvirning o'rtasiga o'tadi"
+      ],
+      "t": 2,
+      "izoh": "Parallel proyeksiyalash affin almashtirish bo'lgani uchun to'g'ri chiziqlilik, parallellik, o'rta nuqta va kesmalar nisbati saqlanadi. Ammo burchak kattaligi saqlanmaydi: perpendikulyar chiziqlarning tasvirlari o'tkir yoki o'tmas burchak hosil qilishi mumkin. Demak perpendikulyarlik haqidagi tasdiq noto'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "proyeksiya-xossa",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#fa62e43e"
+    },
+    {
+      "q": "Quyoshning parallel nurlari ostida gorizontal yerga doira shaklidagi qopqoqning soyasi tushmoqda. Qopqoq tekisligi yerga parallel emas. Uning soyasi umumiy holda qanday figura bo'ladi?",
+      "v": [
+        "Kvadrat",
+        "Parallelogramm",
+        "Ellips",
+        "Doira"
+      ],
+      "t": 2,
+      "izoh": "Parallel nurlar aylanani parallel proyeksiyalaydi. Aylananing tekisligi proyeksiya tekisligiga parallel bo'lmaganda uning tasviri cho'zilgan yopiq egri chiziq, ya'ni ellips bo'ladi. Doira faqat tekisliklar parallel bo'lganda hosil bo'lardi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='20,268 220,268 285,228 85,228' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='150' cy='108' rx='62' ry='24' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='150' cy='248' rx='62' ry='16' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='88' y1='108' x2='88' y2='248' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='212' y1='108' x2='212' y2='248' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='82' font-size='13' fill='%23334155' text-anchor='middle'%3Eqopqoq%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Esoya%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proyeksiya-figura-turi",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#ea02a642"
+    },
+    {
+      "q": "ABCD kvadrat shaklidagi lyukning parallel proyeksiyasi A₁B₁C₁D₁ chizildi. Lyuk tekisligi proyeksiya tekisligiga parallel emas. Hosil bo'lgan tasvir umumiy holda qanday figura bo'ladi?",
+      "v": [
+        "Parallelogramm",
+        "Kvadrat",
+        "Trapetsiya",
+        "Deltoid"
+      ],
+      "t": 0,
+      "izoh": "Kvadratning qarama-qarshi tomonlari parallel va teng. Proyeksiyalashda parallellik va parallel kesmalar nisbati saqlanadi, demak tasvirda ham qarama-qarshi tomonlar parallel va teng bo'ladi. Bu esa parallelogramm ta'rifidir; burchaklar to'g'ri qolishi shart emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='20,268 220,268 285,228 85,228' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='70,115 198,98 238,142 110,159' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='70,250 190,240 228,254 108,264' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='70' y1='115' x2='70' y2='250' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='238' y1='142' x2='228' y2='254' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='62' y='110' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='206' y='92' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='246' y='140' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='102' y='168' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='60' y='250' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='190' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3EB₁%3C/text%3E%3Ctext x='236' y='252' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='102' y='281' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proyeksiya-figura-turi",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#7b459bd5"
+    },
+    {
+      "q": "Uchburchak shaklidagi bayroqchaning parallel proyeksiyasi olinganda uning medianasi tasvirda qanday chiziqqa aylanadi?",
+      "v": [
+        "Tasvir uchburchagining balandligiga",
+        "Tasvir uchburchagining bissektrisasiga",
+        "Tasvir uchburchagining o'rta chizig'iga",
+        "Tasvir uchburchagining medianasiga"
+      ],
+      "t": 3,
+      "izoh": "Mediana uchni qarama-qarshi tomonning o'rtasi bilan tutashtiradi. Parallel proyeksiyalashda kesmaning o'rtasi tasvirning o'rtasiga o'tadi, uch esa uchga o'tadi. Shuning uchun mediana yana mediana bo'lib qoladi, balandlik yoki bissektrisa emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proyeksiya-figura-turi",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#2f629af4"
+    },
+    {
+      "q": "Fazodagi aylanaga ichki chizilgan kvadratning parallel proyeksiyasi olindi va aylana tasviri ellips bo'ldi. Kvadrat tasviridagi diagonallar haqida nima deyish mumkin?",
+      "v": [
+        "O'zaro parallel bo'lib qoladi",
+        "Ellips markazida kesishadi, lekin perpendikulyar bo'lmasligi mumkin",
+        "Albatta perpendikulyar bo'ladi va teng qoladi",
+        "Ellips markazidan o'tmaydi"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat diagonallari aylana markazida kesishadi va uni teng ikkiga bo'ladi. Proyeksiyalashda o'rta nuqta saqlangani uchun tasvir diagonallari ham ellips markazida kesishadi. Ammo burchak saqlanmaydi, shuning uchun ular perpendikulyar bo'lishi shart emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='150' rx='105' ry='60' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='240.9,180 114.1,206.4 59.1,120 185.9,93.6' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='240.9' y1='180' x2='59.1' y2='120' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='114.1' y1='206.4' x2='185.9' y2='93.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='250.9' y='184' font-size='13' fill='%23334155' text-anchor='start'%3EA₁%3C/text%3E%3Ctext x='114.1' y='224.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB₁%3C/text%3E%3Ctext x='49.1' y='120' font-size='13' fill='%23334155' text-anchor='end'%3EC₁%3C/text%3E%3Ctext x='185.9' y='85.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "proyeksiya-figura-turi",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#6c0e96a8"
+    },
+    {
+      "q": "AB kesma tekislikka parallel proyeksiyalanganda A₁B₁ = 18 sm tasvir hosil bo'ldi. M nuqta AB kesmani A uchidan boshlab 2 : 1 nisbatda bo'ladi. A₁M₁ kesma necha santimetr?",
+      "v": [
+        "9 sm",
+        "6 sm",
+        "36 sm",
+        "12 sm"
+      ],
+      "t": 3,
+      "izoh": "Parallel proyeksiyalashda bir to'g'ri chiziqdagi kesmalar nisbati saqlanadi, demak A₁M₁ : M₁B₁ = 2 : 1. Bu holda A₁M₁ butun kesmaning uchdan ikki qismi: 18 · 2 : 3 = 12 sm. Yarmini olish yoki uchdan bir qismini olish xato bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='20,268 220,268 285,228 85,228' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='60' y1='130' x2='230' y2='110' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='60' y1='252' x2='230' y2='236' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='60' y1='130' x2='60' y2='252' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='230' y1='110' x2='230' y2='236' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='173.3' y1='116.7' x2='173.3' y2='241.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='173.3' cy='116.7' r='3' fill='%23334155' stroke='none'/%3E%3Ccircle cx='173.3' cy='241.3' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='52' y='126' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='238' y='106' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='173' y='106' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='52' y='254' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='240' y='236' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='173' y='266' font-size='13' fill='%23334155' text-anchor='middle'%3EM₁%3C/text%3E%3Ctext x='120' y='230' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proyeksiya-nisbat",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#b6a1676e"
+    },
+    {
+      "q": "Geodezist Ulug'bek qiya tortilgan 45 m uzunlikdagi trosning gorizontal tekislikdagi proyeksiyasini o'lchab 27 m deb yozdi. Trosning A uchidan 15 m masofadagi belgi proyeksiyada A₁ dan necha metr uzoqlikda bo'ladi?",
+      "v": [
+        "27 m",
+        "9 m",
+        "15 m",
+        "5 m"
+      ],
+      "t": 1,
+      "izoh": "Belgi trosni A uchidan 15 : 45 = 1 : 3 nisbatda bo'ladi. Proyeksiyalashda bu nisbat saqlanadi, demak belgi tasviri ham proyeksiyani xuddi shu nisbatda bo'ladi. Shuning uchun izlanayotgan masofa 27 : 3 = 9 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='20,268 220,268 285,228 85,228' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='124' x2='164.5' y2='250' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='124' x2='70' y2='250' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='70' y1='250' x2='164.5' y2='250' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='101.5' y1='166' x2='101.5' y2='250' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='101.5' cy='166' r='3' fill='%23334155' stroke='none'/%3E%3Ccircle cx='101.5' cy='250' r='3' fill='%23334155' stroke='none'/%3E%3Cpolyline points='81,250 81,239 70,239' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='62' y='120' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='174' y='244' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='60' y='264' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='96' y='156' font-size='13' fill='%23334155' text-anchor='end'%3E15 m%3C/text%3E%3Ctext x='150' y='178' font-size='13' fill='%23334155' text-anchor='start'%3E45 m%3C/text%3E%3Ctext x='120' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3E27 m%3C/text%3E%3Ctext x='85' y='242' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proyeksiya-nisbat",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#4cdabcaa"
+    },
+    {
+      "q": "Fazodagi ABCD trapetsiyaning parallel proyeksiyasida asoslar tasviri 20 sm va 12 sm bo'ldi. Trapetsiya o'rta chizig'ining tasviri necha santimetr bo'ladi?",
+      "v": [
+        "8 sm",
+        "4 sm",
+        "16 sm",
+        "32 sm"
+      ],
+      "t": 2,
+      "izoh": "Proyeksiyalashda yon tomonlarning o'rta nuqtalari yana o'rta nuqtalarga o'tadi, demak o'rta chiziq tasviri hosil bo'lgan trapetsiyaning o'rta chizig'i bo'ladi. Uning uzunligi asoslar yig'indisining yarmiga teng: (20 + 12) : 2 = 16 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='20,268 220,268 285,228 85,228' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='65,142 185,142 161,118 89,118' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='65,262 185,262 161,238 89,238' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='65' y1='142' x2='65' y2='262' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='185' y1='142' x2='185' y2='262' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='125' y='278' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='125' y='250' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='57' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='193' y='146' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='57' y='266' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='193' y='266' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proyeksiya-nisbat",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#0846c84c"
+    },
+    {
+      "q": "Fazodagi ABCD to'rtburchakning parallel proyeksiyasida A₁B₁C₁D₁ parallelogramm hosil bo'ldi. Bundan ABCD to'rtburchak haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "U parallelogramm bo'lishi shart emas, chunki tekis bo'lmasligi mumkin",
+        "U albatta parallelogramm bo'ladi",
+        "U albatta kvadrat bo'ladi",
+        "U albatta trapetsiya bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Agar ABCD bitta tekislikda yotsa, proyeksiyalash affin bo'lgani uchun parallelogramm tasviridan asl figura ham parallelogramm ekani kelib chiqadi. Lekin fazoda uchlari bir tekislikda yotmaydigan to'rtburchak ham parallelogrammga proyeksiyalanishi mumkin. Demak xulosa faqat tekis holda o'rinli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "proyeksiya-nisbat",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#92983f65"
+    },
+    {
+      "q": "Ustaxonada 24 sm uzunlikdagi metall novda gorizontal stol yuzasiga 60° burchak ostida qiya qo'yilgan. Novdaning stol yuzasidagi ortogonal proyeksiyasi necha santimetr?",
+      "v": [
+        "12 sm",
+        "12√3 sm",
+        "24 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Qiya kesma va uning proyeksiyasi to'g'ri burchakli uchburchak hosil qiladi, kesma esa gipotenuza bo'ladi. Proyeksiya uzunligi 24 · cos60° = 24 · 1/2 = 12 sm. Bu yerda sinus olinsa 12√3 chiqadi, bu tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='20,268 220,268 285,228 85,228' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='75' x2='171' y2='250' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='75' x2='70' y2='250' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='70' y1='250' x2='171' y2='250' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='81,250 81,239 70,239' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='145,250 145.1,248.9 145.1,247.7 145.3,246.6 145.4,245.5 145.7,244.4 145.9,243.3 146.2,242.2 146.6,241.1 147,240.1 147.5,239 148,238 148.5,237 149.1,236 149.7,235.1 150.4,234.2 151.1,233.3 151.9,232.4 152.7,231.6 153.5,230.8 154.3,230.1 155.2,229.4 156.1,228.7 157.1,228.1 158,227.5' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='134.7' y='233' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='62' y='71' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='64' y='266' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='179' y='266' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='132.5' y='156.5' font-size='13' fill='%23334155' text-anchor='start'%3E24 sm%3C/text%3E%3Ctext x='105.4' y='244' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortogonal-kesma-uzunlik",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#db81fbfc"
+    },
+    {
+      "q": "Devorga tirab qo'yilgan 5 m uzunlikdagi narvon pol tekisligi bilan 45° burchak hosil qiladi. Narvonning poldagi ortogonal proyeksiyasi necha metr?",
+      "v": [
+        "2,5 m",
+        "5 m",
+        "2,5√2 m",
+        "5√2 m"
+      ],
+      "t": 2,
+      "izoh": "Proyeksiya uzunligi kesma uzunligini burchak kosinusiga ko'paytirish bilan topiladi. Demak u 5 · cos45° = 5 · √2/2 = 2,5√2 m, ya'ni taxminan 3,54 m. Kosinusni tashlab yuborib 5 m deyish yoki 2,5 m deyish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='20,268 220,268 285,228 85,228' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='100' x2='220' y2='250' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='100' x2='70' y2='250' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='70' y1='250' x2='220' y2='250' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='81,250 81,239 70,239' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='194,250 194,249.1 194.1,248.3 194.1,247.5 194.2,246.6 194.3,245.8 194.5,244.9 194.7,244.1 194.9,243.3 195.1,242.5 195.4,241.6 195.7,240.8 196,240.1 196.3,239.3 196.7,238.5 197.1,237.7 197.5,237 197.9,236.3 198.4,235.6 198.9,234.9 199.4,234.2 199.9,233.5 200.5,232.9 201,232.2 201.6,231.6' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='181.2' y='237.9' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='62' y='96' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='64' y='266' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='228' y='266' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='157' y='169' font-size='13' fill='%23334155' text-anchor='start'%3E5 m%3C/text%3E%3Ctext x='122.5' y='244' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortogonal-kesma-uzunlik",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#182303e4"
+    },
+    {
+      "q": "Qiya kesmaning tekislikdagi ortogonal proyeksiyasi 15 sm ni tashkil qiladi, kesmaning o'zi esa tekislik bilan 30° burchak hosil qiladi. Kesmaning uzunligi necha santimetr?",
+      "v": [
+        "7,5 sm",
+        "10√3 sm",
+        "30 sm",
+        "15√3 sm"
+      ],
+      "t": 1,
+      "izoh": "Proyeksiya = kesma · cos30° bo'lgani uchun kesma = 15 : cos30° = 15 · 2/√3 = 30/√3 = 10√3 sm. Bu taxminan 17,3 sm. Kosinus o'rniga sinus ishlatilsa 30 sm chiqadi, bu esa tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='20,268 220,268 285,228 85,228' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='163.4' x2='220' y2='250' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='163.4' x2='70' y2='250' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='70' y1='250' x2='220' y2='250' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='81,250 81,239 70,239' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='194,250 194,249.4 194,248.9 194.1,248.3 194.1,247.7 194.2,247.2 194.2,246.6 194.3,246 194.4,245.5 194.5,244.9 194.6,244.4 194.7,243.8 194.9,243.3 195,242.7 195.2,242.2 195.4,241.6 195.6,241.1 195.8,240.6 196,240.1 196.2,239.5 196.4,239 196.7,238.5 196.9,238 197.2,237.5 197.5,237' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='179.4' y='243.1' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='62' y='159.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='64' y='266' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='228' y='266' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='157' y='200.7' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='122.5' y='244' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortogonal-kesma-uzunlik",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#9f1f1afd"
+    },
+    {
+      "q": "A nuqta tekislikdan 9 sm balandlikda joylashgan va undan tekislikdagi B nuqtaga o'tkazilgan qiya kesma 15 sm. Xuddi shu A nuqtadan chiqqan boshqa qiya kesma tekislik bilan 45° burchak hosil qilsa, uning proyeksiyasi necha santimetr?",
+      "v": [
+        "12 sm",
+        "9√2 sm",
+        "15 sm",
+        "9 sm"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi qiya kesma uchun proyeksiya balandlikni burchak tangensiga bo'lish bilan topiladi: 9 : tg45° = 9 : 1 = 9 sm. Birinchi kesmaning proyeksiyasi esa √(15² − 9²) = 12 sm, u savolda so'ralmagan. Shuning uchun 12 sm chalg'ituvchi javob.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='20,268 220,268 285,228 85,228' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='65' y1='151' x2='197' y2='250' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='65' y1='151' x2='164' y2='250' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='65' y1='151' x2='65' y2='250' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='65' y1='250' x2='197' y2='250' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='76,250 76,239 65,239' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='140,250 140,249.2 140.1,248.4 140.1,247.6 140.2,246.9 140.3,246.1 140.5,245.3 140.6,244.6 140.8,243.8 141,243 141.3,242.3 141.5,241.5 141.8,240.8 142.1,240.1 142.5,239.4 142.8,238.7 143.2,238 143.6,237.3 144,236.7 144.5,236 145,235.4 145.4,234.8 146,234.2 146.5,233.6 147,233' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='57' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='58' y='266' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='206' y='266' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='160' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='58' y='200' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='146' y='192' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3Ctext x='112' y='242' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='133' y='236' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortogonal-kesma-uzunlik",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#14077607"
+    },
+    {
+      "q": "Bog'da tortilgan 20 m uzunlikdagi simning yerdagi ortogonal proyeksiyasi 10 m ni tashkil qiladi. Sim yer tekisligi bilan necha gradus burchak hosil qiladi?",
+      "v": [
+        "90°",
+        "60°",
+        "30°",
+        "45°"
+      ],
+      "t": 1,
+      "izoh": "Kesma bilan tekislik orasidagi burchakning kosinusi proyeksiyaning kesmaga nisbatiga teng: cos φ = 10 : 20 = 1/2. Bunday kosinusga 60° burchak mos keladi. Agar nisbat sinus deb olinsa, xato ravishda 30° chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='20,268 220,268 285,228 85,228' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='75' x2='171' y2='250' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='75' x2='70' y2='250' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='70' y1='250' x2='171' y2='250' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='81,250 81,239 70,239' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='145,250 145.1,248.9 145.1,247.7 145.3,246.6 145.4,245.5 145.7,244.4 145.9,243.3 146.2,242.2 146.6,241.1 147,240.1 147.5,239 148,238 148.5,237 149.1,236 149.7,235.1 150.4,234.2 151.1,233.3 151.9,232.4 152.7,231.6 153.5,230.8 154.3,230.1 155.2,229.4 156.1,228.7 157.1,228.1 158,227.5' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='134.7' y='233' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='62' y='71' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='64' y='266' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='179' y='266' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='132.5' y='156.5' font-size='13' fill='%23334155' text-anchor='start'%3E20 m%3C/text%3E%3Ctext x='105.4' y='244' font-size='13' fill='%23334155' text-anchor='middle'%3E10 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proyeksiya-burchak-topish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#e745bc31"
+    },
+    {
+      "q": "Kesmaning uzunligi 8√2 sm, uning tekislikdagi ortogonal proyeksiyasi esa 8 sm ga teng. Kesma bilan tekislik orasidagi burchakni toping.",
+      "v": [
+        "30°",
+        "60°",
+        "90°",
+        "45°"
+      ],
+      "t": 3,
+      "izoh": "Burchak kosinusi cos φ = 8 : 8√2 = 1/√2 = √2/2 ga teng. Bunday qiymatga 45° burchak mos keladi. Demak kesma tekislik bilan 45° burchak hosil qiladi, uning balandligi ham 8 sm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='20,268 220,268 285,228 85,228' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='100' x2='220' y2='250' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='100' x2='70' y2='250' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='70' y1='250' x2='220' y2='250' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='81,250 81,239 70,239' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='194,250 194,249.1 194.1,248.3 194.1,247.5 194.2,246.6 194.3,245.8 194.5,244.9 194.7,244.1 194.9,243.3 195.1,242.5 195.4,241.6 195.7,240.8 196,240.1 196.3,239.3 196.7,238.5 197.1,237.7 197.5,237 197.9,236.3 198.4,235.6 198.9,234.9 199.4,234.2 199.9,233.5 200.5,232.9 201,232.2 201.6,231.6' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='181.2' y='237.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='62' y='96' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='64' y='266' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='228' y='266' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='157' y='169' font-size='13' fill='%23334155' text-anchor='start'%3E8√2 sm%3C/text%3E%3Ctext x='122.5' y='244' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proyeksiya-burchak-topish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#e6ba7b97"
+    },
+    {
+      "q": "Chodir ustunining tepasidan yerga arqon tortilgan. Arqonning yerdagi proyeksiyasi 6 m, ustun balandligi esa 6√3 m. Arqon yer tekisligi bilan qanday burchak hosil qiladi?",
+      "v": [
+        "60°",
+        "30°",
+        "45°",
+        "75°"
+      ],
+      "t": 0,
+      "izoh": "Ustun balandligi va proyeksiya katetlar bo'lgani uchun tg φ = 6√3 : 6 = √3. Bunday tangensga 60° burchak mos keladi. Katetlarni almashtirib qo'yilsa tg φ = 1/√3 va xato ravishda 30° hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proyeksiya-burchak-topish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#88adc389"
+    },
+    {
+      "q": "Uzunligi 16 sm bo'lgan kesmaning bir uchi tekislikda yotadi va uning ortogonal proyeksiyasi kesma uzunligining yarmiga teng. Kesma tekislik bilan qanday burchak hosil qiladi hamda ikkinchi uchi qanday balandlikda bo'ladi?",
+      "v": [
+        "60° va 8 sm",
+        "45° va 8√2 sm",
+        "60° va 8√3 sm",
+        "30° va 8 sm"
+      ],
+      "t": 2,
+      "izoh": "Proyeksiya 16 : 2 = 8 sm, demak cos φ = 8 : 16 = 1/2 va φ = 60°. Balandlik esa 16 · sin60° = 16 · √3/2 = 8√3 sm, taxminan 13,86 sm. Balandlikni 8 sm deb olish proyeksiya bilan chalkashtirish natijasidir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='20,268 220,268 285,228 85,228' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='75' x2='171' y2='250' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='75' x2='70' y2='250' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='70' y1='250' x2='171' y2='250' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='81,250 81,239 70,239' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='145,250 145.1,248.9 145.1,247.7 145.3,246.6 145.4,245.5 145.7,244.4 145.9,243.3 146.2,242.2 146.6,241.1 147,240.1 147.5,239 148,238 148.5,237 149.1,236 149.7,235.1 150.4,234.2 151.1,233.3 151.9,232.4 152.7,231.6 153.5,230.8 154.3,230.1 155.2,229.4 156.1,228.7 157.1,228.1 158,227.5' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='134.7' y='233' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='62' y='71' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='64' y='266' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='179' y='266' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='132.5' y='156.5' font-size='13' fill='%23334155' text-anchor='start'%3E16 sm%3C/text%3E%3Ctext x='105.4' y='244' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='62' y='162.5' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "proyeksiya-burchak-topish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#3c007a4f"
+    },
+    {
+      "q": "Quyosh panelining yuzasi 12 m² bo'lib, u gorizontal tom tekisligiga nisbatan 60° burchak ostida o'rnatilgan. Panelning tom tekisligidagi ortogonal proyeksiyasi necha kvadrat metr?",
+      "v": [
+        "24 m²",
+        "12 m²",
+        "6 m²",
+        "6√3 m²"
+      ],
+      "t": 2,
+      "izoh": "Yassi figuraning ortogonal proyeksiyasi yuzasi S' = S · cos φ formula bilan topiladi. Demak S' = 12 · cos60° = 12 · 1/2 = 6 m². Kosinus o'rniga sinus olinsa 6√3 m² chiqadi, bu tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='40' y1='240' x2='262' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='136.1' x2='210' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='136.1' x2='150' y2='240' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='240' x2='210' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='161,240 161,229 150,229' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='184,240 184,238.9 184.1,237.7 184.2,236.6 184.4,235.5 184.6,234.4 184.9,233.3 185.2,232.2 185.6,231.1 186,230.1 186.4,229 186.9,228 187.5,227 188.1,226 188.7,225.1 189.4,224.2 190.1,223.3 190.8,222.4 191.6,221.6 192.4,220.8 193.3,220.1 194.2,219.4 195.1,218.7 196,218.1 197,217.5' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='178' y='224' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='196' y='178' font-size='13' fill='%23334155' text-anchor='start'%3E12 m²%3C/text%3E%3Ctext x='180' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='70' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Etom%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortogonal-yuza",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#e2cc4c14"
+    },
+    {
+      "q": "Uchburchak shaklidagi plastinkaning ortogonal proyeksiyasi yuzasi 18 sm² ga teng. Plastinka tekisligi proyeksiya tekisligi bilan 30° burchak hosil qilsa, plastinkaning haqiqiy yuzasi qancha?",
+      "v": [
+        "12√3 sm²",
+        "9 sm²",
+        "36 sm²",
+        "9√3 sm²"
+      ],
+      "t": 0,
+      "izoh": "S' = S · cos φ formuladan S = S' : cos30° = 18 : (√3/2) = 36/√3 = 12√3 sm². Bu taxminan 20,8 sm². Kosinus o'rniga sinus ishlatilsa 36 sm², ko'paytirilsa 9√3 sm² chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortogonal-yuza",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#978714b1"
+    },
+    {
+      "q": "Ko'lmak ustida turgan 40 m² yuzali qiya soyabonning suv sathidagi ortogonal proyeksiyasi 20 m² ni tashkil qildi. Soyabon tekisligi suv sathi bilan qanday burchak hosil qiladi?",
+      "v": [
+        "30°",
+        "45°",
+        "120°",
+        "60°"
+      ],
+      "t": 3,
+      "izoh": "Ortogonal proyeksiya yuzasining haqiqiy yuzaga nisbati tekisliklar orasidagi burchak kosinusiga teng: cos φ = 20 : 40 = 1/2. Bu qiymatga 60° burchak mos keladi. Nisbatni sinus deb qabul qilish 30° degan xato javobga olib keladi, S' = S·cos²φ deb chalkashtirish 45° ni beradi, kosinus ishorasini manfiy olish esa 120° ni beradi — holbuki tekisliklar orasidagi burchak 90° dan katta bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortogonal-yuza",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#14770b0f"
+    },
+    {
+      "q": "Prizma ichida yasalgan kesim yuzasi 36√2 sm² bo'lib, uning tekisligi asos tekisligi bilan 45° burchak hosil qiladi. Kesimning asos tekisligidagi ortogonal proyeksiyasi yuzasini toping.",
+      "v": [
+        "36√2 sm²",
+        "36 sm²",
+        "18√2 sm²",
+        "72 sm²"
+      ],
+      "t": 1,
+      "izoh": "Proyeksiya yuzasi S' = S · cos45° = 36√2 · √2/2 formula bo'yicha hisoblanadi. √2 · √2 = 2 bo'lgani uchun S' = 36 · 2 : 2 = 36 sm². Kosinusga bo'lib yuborilsa 72 sm² degan xato javob chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='40' y1='240' x2='262' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='110' y1='140' x2='210' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='110' y1='140' x2='110' y2='240' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='110' y1='240' x2='210' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='121,240 121,229 110,229' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='184,240 184,239.1 184.1,238.3 184.1,237.5 184.2,236.6 184.3,235.8 184.5,234.9 184.7,234.1 184.9,233.3 185.1,232.5 185.4,231.6 185.7,230.8 186,230.1 186.3,229.3 186.7,228.5 187.1,227.7 187.5,227 187.9,226.3 188.4,225.6 188.9,224.9 189.4,224.2 189.9,223.5 190.5,222.9 191,222.2 191.6,221.6' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='176' y='226' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='172' y='176' font-size='13' fill='%23334155' text-anchor='start'%3E36√2 sm²%3C/text%3E%3Ctext x='160' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='66' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Easos%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortogonal-yuza",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#2e490fea"
+    },
+    {
+      "q": "Radiusi 5 sm va balandligi 12 sm bo'lgan silindrsimon bankaning yon sirti kesib ochildi. Hosil bo'lgan to'g'ri to'rtburchakning tomonlari qanday bo'ladi?",
+      "v": [
+        "5π sm va 12 sm",
+        "10π sm va 5 sm",
+        "25π sm va 12 sm",
+        "10π sm va 12 sm"
+      ],
+      "t": 3,
+      "izoh": "Yon sirt yoyilmasining bir tomoni asos aylanasi uzunligiga teng: 2πr = 2π · 5 = 10π sm. Ikkinchi tomoni esa silindr balandligiga, ya'ni 12 sm ga teng. Radiusni aylana o'rniga qo'yish yoki πr² ni olish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='57' r='27' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='57' x2='177' y2='57' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Crect x='65' y='100' width='170' height='65' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='150' y='92' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='57' y='136.5' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='163.5' y='51' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ccircle cx='150' cy='208' r='27' fill='none' stroke='%23334155' stroke-width='2'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "silindr-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#68e665ab"
+    },
+    {
+      "q": "Konserva bankasining yorlig'i uning yon sirtini to'liq qoplaydi. Banka radiusi 4 sm, balandligi esa 15 sm. Yorliq uchun necha kvadrat santimetr qog'oz kerak bo'ladi?",
+      "v": [
+        "152π sm²",
+        "120π sm²",
+        "60π sm²",
+        "240π sm²"
+      ],
+      "t": 1,
+      "izoh": "Yon sirt yoyilmasi to'g'ri to'rtburchak bo'lib, yuzasi 2πr · h ga teng. Demak S = 2π · 4 · 15 = 120π sm², taxminan 376,8 sm². Asoslar ham qo'shilsa 152π chiqadi, lekin yorliq faqat yon sirtni qoplaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='80' rx='24' ry='9' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='174,170 173.9,170.7 173.7,171.4 173.3,172.1 172.8,172.8 172.2,173.4 171.4,174.1 170.5,174.7 169.4,175.3 168.2,175.8 167,176.4 165.6,176.8 164.1,177.3 162.5,177.7 160.9,178 159.2,178.3 157.4,178.6 155.6,178.8 153.8,178.9 151.9,179 150,179 148.1,179 146.2,178.9 144.4,178.8 142.6,178.6 140.8,178.3 139.1,178 137.5,177.7 135.9,177.3 134.4,176.8 133,176.4 131.8,175.8 130.6,175.3 129.5,174.7 128.6,174.1 127.8,173.4 127.2,172.8 126.7,172.1 126.3,171.4 126.1,170.7 126,170' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='126,170 126.1,169.3 126.3,168.6 126.7,167.9 127.2,167.2 127.8,166.6 128.6,165.9 129.5,165.3 130.6,164.7 131.8,164.2 133,163.6 134.4,163.2 135.9,162.7 137.5,162.3 139.1,162 140.8,161.7 142.6,161.4 144.4,161.2 146.2,161.1 148.1,161 150,161 151.9,161 153.8,161.1 155.6,161.2 157.4,161.4 159.2,161.7 160.9,162 162.5,162.3 164.1,162.7 165.6,163.2 167,163.6 168.2,164.2 169.4,164.7 170.5,165.3 171.4,165.9 172.2,166.6 172.8,167.2 173.3,167.9 173.7,168.6 173.9,169.3 174,170' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='126' y1='80' x2='126' y2='170' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='174' y1='80' x2='174' y2='170' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='80' x2='174' y2='80' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='150' cy='80' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='162' y='74' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='186' y='128' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3Cline x1='180' y1='80' x2='180' y2='170' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3Eyorliq yon sirtni qoplaydi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "silindr-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#7e413cc6"
+    },
+    {
+      "q": "Silindrning yon sirti yoyilmasidagi to'g'ri to'rtburchakning tomonlari 18π sm va 10 sm ga teng. Shu silindr asosining radiusi necha santimetr?",
+      "v": [
+        "10 sm",
+        "4,5 sm",
+        "9 sm",
+        "18 sm"
+      ],
+      "t": 2,
+      "izoh": "Yoyilmaning uzun tomoni asos aylanasi uzunligi: 2πr = 18π. Ikkala tomonni 2π ga bo'lsak r = 9 sm hosil bo'ladi. Ikkiga bo'lishni unutib 18 sm deyish yoki balandlikni radius deb olish tipik xatolardir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='57' r='27' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='57' x2='177' y2='57' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Crect x='65' y='100' width='170' height='30' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='150' y='92' font-size='13' fill='%23334155' text-anchor='middle'%3E18π sm%3C/text%3E%3Ctext x='57' y='119' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Ctext x='163.5' y='51' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ccircle cx='150' cy='173' r='27' fill='none' stroke='%23334155' stroke-width='2'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "silindr-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#e11e56db"
+    },
+    {
+      "q": "Silindrsimon quvurning yon sirti yoyilganda tomonlari teng bo'lgan kvadrat hosil bo'ldi. Quvur balandligi 8π sm bo'lsa, uning asos radiusi necha santimetr?",
+      "v": [
+        "4 sm",
+        "8 sm",
+        "4π sm",
+        "2 sm"
+      ],
+      "t": 0,
+      "izoh": "Yoyilma kvadrat bo'lgani uchun asos aylanasi uzunligi balandlikka teng: 2πr = 8π. Bundan r = 4 sm kelib chiqadi. Bu yerda π qisqaradi, shuning uchun javobda π qolmaydi va 4π noto'g'ri bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Crect x='30' y='70' width='150' height='150' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='105' y='62' font-size='13' fill='%23334155' text-anchor='middle'%3E8π sm%3C/text%3E%3Ctext x='105' y='244' font-size='13' fill='%23334155' text-anchor='middle'%3Ekvadrat yoyilma%3C/text%3E%3Ccircle cx='244' cy='145' r='24' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='244' y1='145' x2='268' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='244' cy='145' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='256' y='139' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='244' y='190' font-size='13' fill='%23334155' text-anchor='middle'%3Easos%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "silindr-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#6af51604"
+    },
+    {
+      "q": "Asos radiusi 5 sm va yasovchisi 15 sm bo'lgan konusning yon sirti yoyilganda hosil bo'ladigan sektorning markaziy burchagi necha gradus?",
+      "v": [
+        "120°",
+        "60°",
+        "90°",
+        "240°"
+      ],
+      "t": 0,
+      "izoh": "Sektor yoyi asos aylanasiga teng, shuning uchun α = 360° · r : l formuladan foydalanamiz. Demak α = 360° · 5 : 15 = 120°. Radius va yasovchini almashtirib qo'yish yoki 360 ni ikkiga bo'lish xato javobga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='178,189.2 177.9,190 177.7,190.8 177.2,191.5 176.6,192.3 175.9,193 174.9,193.7 173.9,194.4 172.7,195.1 171.3,195.7 169.8,196.3 168.2,196.8 166.5,197.3 164.6,197.7 162.7,198.1 160.7,198.4 158.7,198.7 156.5,198.9 154.4,199.1 152.2,199.2 150,199.2 147.8,199.2 145.6,199.1 143.5,198.9 141.3,198.7 139.3,198.4 137.3,198.1 135.4,197.7 133.5,197.3 131.8,196.8 130.2,196.3 128.7,195.7 127.3,195.1 126.1,194.4 125.1,193.7 124.1,193 123.4,192.3 122.8,191.5 122.3,190.8 122.1,190 122,189.2' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='122,189.2 122.1,188.4 122.3,187.6 122.8,186.9 123.4,186.1 124.1,185.4 125.1,184.7 126.1,184 127.3,183.3 128.7,182.7 130.2,182.1 131.8,181.6 133.5,181.1 135.4,180.7 137.3,180.3 139.3,180 141.3,179.7 143.5,179.5 145.6,179.3 147.8,179.2 150,179.2 152.2,179.2 154.4,179.3 156.5,179.5 158.7,179.7 160.7,180 162.7,180.3 164.6,180.7 166.5,181.1 168.2,181.6 169.8,182.1 171.3,182.7 172.7,183.3 173.9,184 174.9,184.7 175.9,185.4 176.6,186.1 177.2,186.9 177.7,187.6 177.9,188.4 178,189.2' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='110' x2='122' y2='189.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='110' x2='178' y2='189.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='189.2' x2='178' y2='189.2' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='150' cy='189.2' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='164' y='183' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='120' y='150' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konus-yoyilma-sektor",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#01f7bc6a"
+    },
+    {
+      "q": "Bayram qalpoqchasi konus shaklida bo'lib, uning yasovchisi 24 sm. Qalpoqcha kesib ochilganda markaziy burchagi 90° bo'lgan sektor hosil bo'ldi. Qalpoqcha asosining radiusi necha santimetr?",
+      "v": [
+        "8 sm",
+        "3 sm",
+        "6 sm",
+        "12 sm"
+      ],
+      "t": 2,
+      "izoh": "α = 360° · r : l tenglikdan r = l · α : 360° kelib chiqadi. Demak r = 24 · 90 : 360 = 24 : 4 = 6 sm. Yasovchini ikkiga bo'lib 12 sm deyish yoki uchga bo'lish tipik xatolardir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,150 217.2,217.2 214.9,219.3 212.6,221.4 210.3,223.4 207.8,225.4 205.3,227.2 202.8,229 200.2,230.7 197.5,232.3 194.8,233.8 192,235.2 189.2,236.5 186.4,237.8 183.5,238.9 180.5,240 177.6,240.9 174.6,241.8 171.6,242.5 168.5,243.2 165.5,243.7 162.4,244.2 159.3,244.5 156.2,244.8 153.1,244.9 150,245 146.9,244.9 143.8,244.8 140.7,244.5 137.6,244.2 134.5,243.7 131.5,243.2 128.4,242.5 125.4,241.8 122.4,240.9 119.5,240 116.5,238.9 113.6,237.8 110.8,236.5 108,235.2 105.2,233.8 102.5,232.3 99.8,230.7 97.2,229 94.7,227.2 92.2,225.4 89.7,223.4 87.4,221.4 85.1,219.3 82.8,217.2' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='150' r='3' fill='%23334155' stroke='none'/%3E%3Cpolyline points='171.2,171.2 169.8,172.6 168.3,173.8 166.7,174.9 165,176 163.3,176.9 161.5,177.7 159.6,178.4 157.8,179 155.9,179.4 153.9,179.7 152,179.9 150,180 148,179.9 146.1,179.7 144.1,179.4 142.2,179 140.4,178.4 138.5,177.7 136.7,176.9 135,176 133.3,174.9 131.7,173.8 130.2,172.6 128.8,171.2' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='202' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Ctext x='193.6' y='177.6' font-size='13' fill='%23334155' text-anchor='start'%3E24 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konus-yoyilma-sektor",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#8974598b"
+    },
+    {
+      "q": "Konusning yon sirti yoyilmasidagi sektorning markaziy burchagi 270°, sektor radiusi esa 8 sm. Shu konus asosining radiusini toping.",
+      "v": [
+        "3 sm",
+        "6 sm",
+        "4 sm",
+        "8 sm"
+      ],
+      "t": 1,
+      "izoh": "Sektor radiusi konusning yasovchisi bo'ladi, ya'ni l = 8 sm. r = l · α : 360° = 8 · 270 : 360 = 8 · 3/4 = 6 sm. Sektor to'la doiraning to'rtdan uch qismi ekanini payqash yechimni tezlashtiradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,150 217.2,82.8 223.4,89.7 229,97.2 233.8,105.2 237.8,113.6 240.9,122.4 243.2,131.5 244.5,140.7 245,150 244.5,159.3 243.2,168.5 240.9,177.6 237.8,186.4 233.8,194.8 229,202.8 223.4,210.3 217.2,217.2 210.3,223.4 202.8,229 194.8,233.8 186.4,237.8 177.6,240.9 168.5,243.2 159.3,244.5 150,245 140.7,244.5 131.5,243.2 122.4,240.9 113.6,237.8 105.2,233.8 97.2,229 89.7,223.4 82.8,217.2 76.6,210.3 71,202.8 66.2,194.8 62.2,186.4 59.1,177.6 56.8,168.5 55.5,159.3 55,150 55.5,140.7 56.8,131.5 59.1,122.4 62.2,113.6 66.2,105.2 71,97.2 76.6,89.7 82.8,82.8' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='150' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='150' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3E270°%3C/text%3E%3Ctext x='200' y='106' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konus-yoyilma-sektor",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#6f436f0d"
+    },
+    {
+      "q": "Konusning yasovchisi uning asos radiusidan 3 marta katta. Yon sirt yoyilmasidagi sektorning markaziy burchagi necha gradus va bu sektor to'la doiraning qanday qismini tashkil qiladi?",
+      "v": [
+        "60° va oltidan bir qismini",
+        "90° va to'rtdan bir qismini",
+        "240° va uchdan ikki qismini",
+        "120° va uchdan bir qismini"
+      ],
+      "t": 3,
+      "izoh": "l = 3r bo'lgani uchun α = 360° · r : l = 360° · r : 3r = 120°. Bu burchak to'la aylananing 120 : 360 = 1/3 qismiga to'g'ri keladi. Demak sektor doiraning uchdan bir qismi bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='180,189.9 179.9,190.7 179.6,191.6 179.2,192.4 178.5,193.2 177.7,194.1 176.7,194.8 175.6,195.6 174.3,196.3 172.8,197 171.2,197.6 169.5,198.2 167.6,198.7 165.7,199.2 163.6,199.7 161.5,200 159.3,200.3 157,200.5 154.7,200.7 152.4,200.8 150,200.9 147.6,200.8 145.3,200.7 143,200.5 140.7,200.3 138.5,200 136.4,199.7 134.3,199.2 132.4,198.7 130.5,198.2 128.8,197.6 127.2,197 125.7,196.3 124.4,195.6 123.3,194.8 122.3,194.1 121.5,193.2 120.8,192.4 120.4,191.6 120.1,190.7 120,189.9' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='120,189.9 120.1,189 120.4,188.1 120.8,187.3 121.5,186.5 122.3,185.6 123.3,184.9 124.4,184.1 125.7,183.4 127.2,182.7 128.8,182.1 130.5,181.5 132.4,181 134.3,180.5 136.4,180 138.5,179.7 140.7,179.4 143,179.2 145.3,179 147.6,178.9 150,178.9 152.4,178.9 154.7,179 157,179.2 159.3,179.4 161.5,179.7 163.6,180 165.7,180.5 167.6,181 169.5,181.5 171.2,182.1 172.8,182.7 174.3,183.4 175.6,184.1 176.7,184.9 177.7,185.6 178.5,186.5 179.2,187.3 179.6,188.1 179.9,189 180,189.9' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='105' x2='120' y2='189.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='105' x2='180' y2='189.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='189.9' x2='180' y2='189.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='150' cy='189.9' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='165' y='184' font-size='13' fill='%23334155' text-anchor='middle'%3Er%3C/text%3E%3Ctext x='118' y='148' font-size='13' fill='%23334155' text-anchor='end'%3E3r%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konus-yoyilma-sektor",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#97baff44"
+    },
+    {
+      "q": "Do'ppi qolipi konus shaklida bo'lib, uning asos radiusi 6 sm, yasovchisi esa 10 sm. Qolipning yon sirtini qoplash uchun necha kvadrat santimetr mato kerak bo'ladi?",
+      "v": [
+        "36π sm²",
+        "60π sm²",
+        "96π sm²",
+        "30π sm²"
+      ],
+      "t": 1,
+      "izoh": "Konus yon sirti yuzasi S = πrl formula bilan topiladi. Demak S = π · 6 · 10 = 60π sm², taxminan 188,4 sm². Asos ham qo'shilsa 96π chiqadi, lekin bu yerda faqat yon sirt qoplanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='204,182 203.8,183.5 203.3,185 202.5,186.4 201.4,187.9 199.9,189.3 198.1,190.6 196,191.9 193.7,193.2 191.1,194.3 188.2,195.4 185.1,196.4 181.7,197.4 178.2,198.2 174.5,198.9 170.7,199.6 166.7,200.1 162.6,200.5 158.4,200.8 154.2,200.9 150,201 145.8,200.9 141.6,200.8 137.4,200.5 133.3,200.1 129.3,199.6 125.5,198.9 121.8,198.2 118.3,197.4 114.9,196.4 111.8,195.4 108.9,194.3 106.3,193.2 104,191.9 101.9,190.6 100.1,189.3 98.6,187.9 97.5,186.4 96.7,185 96.2,183.5 96,182' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='96,182 96.2,180.5 96.7,179 97.5,177.6 98.6,176.1 100.1,174.7 101.9,173.4 104,172.1 106.3,170.8 108.9,169.7 111.8,168.6 114.9,167.6 118.3,166.6 121.8,165.8 125.5,165.1 129.3,164.4 133.3,163.9 137.4,163.5 141.6,163.2 145.8,163.1 150,163 154.2,163.1 158.4,163.2 162.6,163.5 166.7,163.9 170.7,164.4 174.5,165.1 178.2,165.8 181.7,166.6 185.1,167.6 188.2,168.6 191.1,169.7 193.7,170.8 196,172.1 198.1,173.4 199.9,174.7 201.4,176.1 202.5,177.6 203.3,179 203.8,180.5 204,182' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='110' x2='96' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='110' x2='204' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='182' x2='204' y2='182' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='150' cy='182' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='177' y='176' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='112' y='148' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konus-yoyilma-yuza",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#7731f49e"
+    },
+    {
+      "q": "Konusning to'la sirti yoyilmasi bitta doira va bitta sektordan iborat. Asos radiusi 4 sm, yasovchisi 9 sm bo'lsa, yoyilmaning umumiy yuzasi qancha?",
+      "v": [
+        "36π sm²",
+        "16π sm²",
+        "72π sm²",
+        "52π sm²"
+      ],
+      "t": 3,
+      "izoh": "Sektor yuzasi πrl = π · 4 · 9 = 36π, doira yuzasi esa πr² = 16π. Ularni qo'shsak 36π + 16π = 52π sm² hosil bo'ladi. Faqat sektorni olib 36π deyish asosni unutish demakdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='190,180.6 189.9,181.7 189.5,182.8 188.9,183.9 188,184.9 187,186 185.6,187 184.1,187.9 182.4,188.8 180.4,189.7 178.3,190.5 176,191.2 173.5,191.9 170.9,192.5 168.2,193.1 165.3,193.5 162.4,193.9 159.3,194.2 156.3,194.4 153.1,194.6 150,194.6 146.9,194.6 143.7,194.4 140.7,194.2 137.6,193.9 134.7,193.5 131.8,193.1 129.1,192.5 126.5,191.9 124,191.2 121.7,190.5 119.6,189.7 117.6,188.8 115.9,187.9 114.4,187 113,186 112,184.9 111.1,183.9 110.5,182.8 110.1,181.7 110,180.6' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='110,180.6 110.1,179.5 110.5,178.4 111.1,177.3 112,176.3 113,175.2 114.4,174.2 115.9,173.3 117.6,172.4 119.6,171.5 121.7,170.7 124,170 126.5,169.3 129.1,168.7 131.8,168.1 134.7,167.7 137.6,167.3 140.7,167 143.7,166.8 146.9,166.6 150,166.6 153.1,166.6 156.3,166.8 159.3,167 162.4,167.3 165.3,167.7 168.2,168.1 170.9,168.7 173.5,169.3 176,170 178.3,170.7 180.4,171.5 182.4,172.4 184.1,173.3 185.6,174.2 187,175.2 188,176.3 188.9,177.3 189.5,178.4 189.9,179.5 190,180.6' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='100' x2='110' y2='180.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='100' x2='190' y2='180.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='180.6' x2='190' y2='180.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='150' cy='180.6' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='170' y='174' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='118' y='142' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='150' y='226' font-size='13' fill='%23334155' text-anchor='middle'%3Eto‘la sirt yoyilmasi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konus-yoyilma-yuza",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#60772f7c"
+    },
+    {
+      "q": "Konus shaklidagi chodirning yon sirtini tikish uchun 84π m² mato sarflandi. Chodir asosining radiusi 7 m bo'lsa, uning yasovchisi necha metr?",
+      "v": [
+        "12 m",
+        "6 m",
+        "14 m",
+        "24 m"
+      ],
+      "t": 0,
+      "izoh": "Yon sirt yuzasi S = πrl bo'lgani uchun l = S : (πr) = 84π : (7π) = 12 m. Radiusni ikkilantirib yuborish yoki javobni yarmiga bo'lish tipik xatolardir. Demak yasovchi 12 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konus-yoyilma-yuza",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#91e35050"
+    },
+    {
+      "q": "Konusning yon sirti yoyilmasi radiusi 12 sm va markaziy burchagi 120° bo'lgan sektordan iborat. Shu konusning to'la sirti yuzasi necha kvadrat santimetr?",
+      "v": [
+        "144π sm²",
+        "160π sm²",
+        "64π sm²",
+        "48π sm²"
+      ],
+      "t": 2,
+      "izoh": "Avval asos radiusini topamiz: r = l · α : 360° = 12 · 120 : 360 = 4 sm. Yon sirt πrl = π · 4 · 12 = 48π, asos πr² = 16π. To'la sirt 48π + 16π = 64π sm² bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,150 232.3,197.5 230.1,201 227.8,204.5 225.4,207.8 222.8,211.1 220,214.2 217.2,217.2 214.2,220 211.1,222.8 207.8,225.4 204.5,227.8 201,230.1 197.5,232.3 193.9,234.3 190.1,236.1 186.4,237.8 182.5,239.3 178.6,240.6 174.6,241.8 170.6,242.7 166.5,243.6 162.4,244.2 158.3,244.6 154.1,244.9 150,245 145.9,244.9 141.7,244.6 137.6,244.2 133.5,243.6 129.4,242.7 125.4,241.8 121.4,240.6 117.5,239.3 113.6,237.8 109.9,236.1 106.1,234.3 102.5,232.3 99,230.1 95.5,227.8 92.2,225.4 88.9,222.8 85.8,220 82.8,217.2 80,214.2 77.2,211.1 74.6,207.8 72.2,204.5 69.9,201 67.7,197.5' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='150' r='3' fill='%23334155' stroke='none'/%3E%3Cpolyline points='176,165 174.6,167.2 173,169.3 171.2,171.2 169.3,173 167.2,174.6 165,176 162.7,177.2 160.3,178.2 157.8,179 155.2,179.5 152.6,179.9 150,180 147.4,179.9 144.8,179.5 142.2,179 139.7,178.2 137.3,177.2 135,176 132.8,174.6 130.7,173 128.8,171.2 127,169.3 125.4,167.2 124,165' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='202' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='201.1' y='167.8' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konus-yoyilma-yuza",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#8dca1e98"
+    },
+    {
+      "q": "Asosining tomoni 6 sm bo'lgan muntazam uchburchakli prizmaning balandligi 10 sm. Uning yon sirti yoyilmasi to'g'ri to'rtburchak bo'lsa, tomonlari qanday bo'ladi?",
+      "v": [
+        "12 sm va 10 sm",
+        "18 sm va 6 sm",
+        "18 sm va 10 sm",
+        "6 sm va 10 sm"
+      ],
+      "t": 2,
+      "izoh": "Yon sirt yoyilmasining bir tomoni asos perimetriga teng: P = 3 · 6 = 18 sm. Ikkinchi tomoni prizma balandligi, ya'ni 10 sm. Perimetr o'rniga bitta tomonni olish yoki ikki tomonni qo'shish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='120' y1='230' x2='180' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='120' y1='230' x2='150' y2='212' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='180' y1='230' x2='150' y2='212' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cpolygon points='120,130 180,130 150,112' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='120' y1='230' x2='120' y2='130' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='180' y1='230' x2='180' y2='130' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='212' x2='150' y2='112' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='250' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='114' y='182' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "prizma-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#1cd1a0a2"
+    },
+    {
+      "q": "Karton qutining o'lchamlari 20 sm, 15 sm va 10 sm. Choklar hisobga olinmasa, quti yoyilmasi uchun eng kamida necha kvadrat santimetr karton kerak bo'ladi?",
+      "v": [
+        "1300 sm²",
+        "650 sm²",
+        "3000 sm²",
+        "900 sm²"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri burchakli parallelepiped to'la sirti S = 2(ab + bc + ac) formula bilan topiladi. Demak S = 2(20 · 15 + 20 · 10 + 15 · 10) = 2(300 + 200 + 150) = 1300 sm². 3000 esa hajm, u yerda xato qilinadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,160 170,160 170,210 70,210' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='160' x2='115' y2='130' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='170' y1='160' x2='215' y2='130' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='170' y1='210' x2='215' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='115' y1='130' x2='215' y2='130' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='215' y1='130' x2='215' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='210' x2='115' y2='180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='115' y1='180' x2='115' y2='130' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='115' y1='180' x2='215' y2='180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ctext x='120' y='228' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='178' y='190' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3Ctext x='206' y='150' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "prizma-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#135b89d1"
+    },
+    {
+      "q": "Muntazam olti burchakli prizmaning asos tomoni 4 sm, balandligi esa 9 sm. Uning yon sirti yoyilmasining yuzasi necha kvadrat santimetr?",
+      "v": [
+        "36 sm²",
+        "432 sm²",
+        "108 sm²",
+        "216 sm²"
+      ],
+      "t": 3,
+      "izoh": "Asos perimetri P = 6 · 4 = 24 sm. Yon sirt yoyilmasi eni P va bo'yi h bo'lgan to'g'ri to'rtburchak: S = 24 · 9 = 216 sm². Bitta yoqni olib 36 sm² deyish yoki ikkilantirib 432 deyish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='205,235 177.5,256.4 122.5,256.4 95,235' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='95,235 122.5,213.6 177.5,213.6 205,235' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cpolygon points='205,111 177.5,132.4 122.5,132.4 95,111 122.5,89.6 177.5,89.6' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='205' y1='235' x2='205' y2='111' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.5' y1='256.4' x2='177.5' y2='132.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.5' y1='256.4' x2='122.5' y2='132.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='95' y1='235' x2='95' y2='111' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.5' y1='213.6' x2='122.5' y2='89.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='177.5' y1='213.6' x2='177.5' y2='89.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='212' y='180' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "prizma-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#afec9072"
+    },
+    {
+      "q": "Prizmaning yon sirti yoyilmasi tomonlari 30 sm va 7 sm bo'lgan to'g'ri to'rtburchakdan iborat. Prizma asosi muntazam beshburchak bo'lsa, uning asos tomoni va balandligi qanday?",
+      "v": [
+        "6 sm va 30 sm",
+        "6 sm va 7 sm",
+        "7 sm va 6 sm",
+        "5 sm va 7 sm"
+      ],
+      "t": 1,
+      "izoh": "Yoyilmaning uzun tomoni asos perimetriga teng, demak 5a = 30 va a = 6 sm. Ikkinchi tomoni esa balandlik, ya'ni h = 7 sm. Tomon va balandlikni almashtirib qo'yish tipik xato hisoblanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Crect x='60' y='120' width='180' height='42' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='96' y1='120' x2='96' y2='162' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='132' y1='120' x2='132' y2='162' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='168' y1='120' x2='168' y2='162' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='204' y1='120' x2='204' y2='162' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='112' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Ctext x='52' y='146' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3Ctext x='150' y='196' font-size='13' fill='%23334155' text-anchor='middle'%3Ebeshburchakli prizma yon sirti%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "prizma-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#8c769aad"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramida asosining tomoni 10 sm, apofemasi esa 12 sm. Uning yon sirti yoyilmasi to'rtta teng uchburchakdan iborat bo'lsa, yuzasi qancha?",
+      "v": [
+        "120 sm²",
+        "480 sm²",
+        "340 sm²",
+        "240 sm²"
+      ],
+      "t": 3,
+      "izoh": "Har bir yon yoq yuzasi 1/2 · 10 · 12 = 60 sm². To'rtta yoq uchun 4 · 60 = 240 sm² hosil bo'ladi. Asos yuzasi 100 sm² ni ham qo'shsak to'la sirt 340 sm² bo'ladi, lekin savolda faqat yon sirt so'ralgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='95,220 150,246 205,220' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='95,220 150,194 205,220' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='135' x2='95' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='135' x2='205' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='135' x2='150' y2='246' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='135' x2='150' y2='194' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='135' x2='177.5' y2='233' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='177.5' cy='233' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='198' y='250' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3Ctext x='196' y='186' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "piramida-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#f174e958"
+    },
+    {
+      "q": "Chorbog'dagi piramida shaklidagi ayvon tomining asosi tomoni 4 m bo'lgan kvadrat, har bir yon yoqning balandligi esa 2,5 m. Tomni qoplash uchun necha kvadrat metr material kerak?",
+      "v": [
+        "16 m²",
+        "20 m²",
+        "10 m²",
+        "40 m²"
+      ],
+      "t": 1,
+      "izoh": "Bitta yon yoq uchburchak yuzasi 1/2 · 4 · 2,5 = 5 m². Tomda to'rtta bunday yoq bor, demak 4 · 5 = 20 m². Asos qoplanmaydi, shuning uchun 16 m² qo'shilmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='46,195 150,221 254,195' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='46,195 150,169 254,195' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='140' x2='46' y2='195' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='140' x2='254' y2='195' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='140' x2='150' y2='221' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='140' x2='150' y2='169' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='140' x2='202' y2='208' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='202' cy='208' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='218' y='226' font-size='13' fill='%23334155' text-anchor='start'%3E4 m%3C/text%3E%3Ctext x='212' y='166' font-size='13' fill='%23334155' text-anchor='start'%3E2,5 m%3C/text%3E%3Ctext x='150' y='280' font-size='13' fill='%23334155' text-anchor='middle'%3Eayvon tomi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "piramida-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#f70c6f1f"
+    },
+    {
+      "q": "Muntazam uchburchakli piramidaning asos tomoni 8 sm, apofemasi 9 sm, asos yuzasi esa 16√3 sm². Uning to'la sirti necha kvadrat santimetr?",
+      "v": [
+        "216 + 16√3 sm²",
+        "54 + 16√3 sm²",
+        "108 + 16√3 sm²",
+        "108 sm²"
+      ],
+      "t": 2,
+      "izoh": "Bitta yon yoq yuzasi 1/2 · 8 · 9 = 36 sm², uchtasi uchun 3 · 36 = 108 sm². To'la sirt yon sirt va asos yig'indisi: 108 + 16√3 sm². Asosni unutib faqat 108 deyish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='75' y1='240' x2='225' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='75' y1='240' x2='150' y2='212' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='225' y1='240' x2='150' y2='212' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='105' x2='75' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='105' x2='225' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='105' x2='150' y2='212' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='105' x2='150' y2='240' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='240' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='160' y='180' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#17982eb3"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidaning yoyilmasida har bir yon yoq teng tomonli uchburchak bo'lib chiqdi. Asos tomoni 6 sm bo'lsa, piramidaning yon sirti yuzasi necha kvadrat santimetr?",
+      "v": [
+        "36√3 sm²",
+        "36 sm²",
+        "18√3 sm²",
+        "72√3 sm²"
+      ],
+      "t": 0,
+      "izoh": "Teng tomonli uchburchak yuzasi a²√3 : 4 formula bilan topiladi: 36√3 : 4 = 9√3 sm². To'rtta yoq uchun 4 · 9√3 = 36√3 sm², taxminan 62,4 sm². Uchburchakni to'g'ri burchakli deb hisoblash xato beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Crect x='120' y='120' width='60' height='60' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='120,120 180,120 150,68' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='120,180 180,180 150,232' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='120,120 120,180 68,150' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='180,120 180,180 232,150' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='150' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='150' y='264' font-size='13' fill='%23334155' text-anchor='middle'%3Eyon yoqlar teng tomonli%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#c804ac8c"
+    },
+    {
+      "q": "Kub yoyilmasining kvadratchalariga A, B, C, D, E va F harflari yozilgan. Chizmadagi yoyilma kubga o'ralganda A harfli yoq qaysi yoq bilan qarama-qarshi joylashadi?",
+      "v": [
+        "C",
+        "B",
+        "D",
+        "E"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket joylashgan A, B, C, D kvadratchalari kub yon sirtini halqa qilib o'raydi. Halqada bittasidan keyingisi qo'shni, birdan oshirib sanalgani esa qarama-qarshi bo'ladi. Demak A ning ro'parasi C, B ning ro'parasi D, qolgan E va F esa o'zaro qarama-qarshi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Crect x='104' y='81' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='127' y='109' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Crect x='58' y='127' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='81' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Crect x='104' y='127' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='127' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Crect x='150' y='127' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='173' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Crect x='196' y='127' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='219' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Crect x='104' y='173' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='127' y='201' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#82c8e962"
+    },
+    {
+      "q": "Qirrasi 4 sm bo'lgan kubning yoyilmasi oltita bir xil kvadratdan iborat. Yoyilmaning umumiy yuzasi necha kvadrat santimetr?",
+      "v": [
+        "16 sm²",
+        "24 sm²",
+        "96 sm²",
+        "64 sm²"
+      ],
+      "t": 2,
+      "izoh": "Bitta kvadrat yuzasi 4² = 16 sm². Yoyilmada oltita kvadrat bor, demak S = 6 · 16 = 96 sm². 64 sm² bu kubning hajmi qiymati, 24 esa qirralar yig'indisiga o'xshash xato natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Crect x='35' y='105' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Crect x='81' y='105' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Crect x='127' y='105' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Crect x='127' y='151' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Crect x='173' y='151' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Crect x='219' y='151' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='58' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#01402ea9"
+    },
+    {
+      "q": "O'yin kubigining qarama-qarshi yoqlaridagi ochkolar yig'indisi doim 7 ga teng. Yoyilmadagi bitta yoqda 2 ochko bo'lsa, unga qarama-qarshi yoqda nechta ochko bo'ladi?",
+      "v": [
+        "3",
+        "5",
+        "4",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Qarama-qarshi yoqlar yig'indisi 7 bo'lgani uchun izlanayotgan son 7 − 2 = 5. Kubikning boshqa juftliklari esa 1 va 6, 3 va 4 bo'ladi. Qo'shni yoqlarni qarama-qarshi deb olish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Crect x='104' y='81' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Crect x='58' y='127' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='81' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3E2%3C/text%3E%3Crect x='104' y='127' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Crect x='150' y='127' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='173' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Crect x='196' y='127' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Crect x='104' y='173' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Eqarama-qarshi yoqlar yig‘indisi 7%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#8ea34b21"
+    },
+    {
+      "q": "Chizmadagi kub yoyilmasida A, B, C, D kvadratlari ketma-ket joylashgan, P kvadrat B ning ustida, Q kvadrat esa C ning ostida. Kub yig'ilganda P qaysi yoq bilan qarama-qarshi bo'ladi?",
+      "v": [
+        "A",
+        "D",
+        "C",
+        "Q"
+      ],
+      "t": 3,
+      "izoh": "A, B, C, D zanjiri kubning to'rtta yon yoqini halqa qilib o'raydi, P va Q esa qolgan ikkita yoq bo'ladi. Zanjirdan chiqib turgan ikki kvadrat halqaning qarama-qarshi tomonlarida yotgani uchun ular yuqori va quyi yoqlarga tushadi. Demak P ning ro'parasi Q.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Crect x='104' y='81' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='127' y='109' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Crect x='58' y='127' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='81' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Crect x='104' y='127' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='127' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Crect x='150' y='127' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='173' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Crect x='196' y='127' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='219' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Crect x='150' y='173' width='46' height='46' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='173' y='201' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-yoyilma",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#a16a3109"
+    },
+    {
+      "q": "Silindrsimon ustunning asos aylanasi 24 dm, balandligi esa 10 dm. Ustun sirti bo'ylab pastki chetdan yuqori chetgacha bir marta aylanib chiqadigan eng qisqa chiziq uzunligi necha detsimetr?",
+      "v": [
+        "24 dm",
+        "26 dm",
+        "34 dm",
+        "14 dm"
+      ],
+      "t": 1,
+      "izoh": "Yon sirtni yoyib to'g'ri to'rtburchakka aylantiramiz: tomonlari 24 dm va 10 dm. Eng qisqa yo'l shu to'rtburchakning diagonali: √(24² + 10²) = √676 = 26 dm. Tomonlarni qo'shib 34 dm deyish yo'lni qirralar bo'ylab yurish demakdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='90' rx='55' ry='20' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='205,220 204.8,221.6 204.3,223.1 203.5,224.7 202.3,226.2 200.8,227.7 199,229.1 196.9,230.4 194.5,231.8 191.8,233 188.9,234.1 185.7,235.2 182.3,236.2 178.7,237.1 175,237.8 171,238.5 167,239 162.8,239.4 158.6,239.8 154.3,239.9 150,240 145.7,239.9 141.4,239.8 137.2,239.4 133,239 129,238.5 125,237.8 121.3,237.1 117.7,236.2 114.3,235.2 111.1,234.1 108.2,233 105.5,231.8 103.1,230.4 101,229.1 99.2,227.7 97.7,226.2 96.5,224.7 95.7,223.1 95.2,221.6 95,220' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='95,220 95.2,218.4 95.7,216.9 96.5,215.3 97.7,213.8 99.2,212.3 101,210.9 103.1,209.6 105.5,208.2 108.2,207 111.1,205.9 114.3,204.8 117.7,203.8 121.3,202.9 125,202.2 129,201.5 133,201 137.2,200.6 141.4,200.2 145.7,200.1 150,200 154.3,200.1 158.6,200.2 162.8,200.6 167,201 171,201.5 175,202.2 178.7,202.9 182.3,203.8 185.7,204.8 188.9,205.9 191.8,207 194.5,208.2 196.9,209.6 199,210.9 200.8,212.3 202.3,213.8 203.5,215.3 204.3,216.9 204.8,218.4 205,220' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='95' y1='90' x2='95' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='205' y1='90' x2='205' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='150,240 144.3,237.7 138.6,235.2 133,232.5 127.6,229.6 122.5,226.5 117.7,223.2 113.2,219.7 109.1,216 105.5,212.3 102.4,208.3 99.8,204.3 97.7,200.2 96.2,196 95.3,191.8 95,187.5 95.3,183.2 96.2,179 97.7,174.8 99.8,170.7 102.4,166.7 105.5,162.7 109.1,159 113.2,155.3 117.7,151.8 122.5,148.5 127.6,145.4 133,142.5 138.6,139.8 144.3,137.3 150,135 155.7,132.9 161.4,131.1 167,129.5 172.4,128.1 177.5,126.8 182.3,125.8 186.8,125 190.9,124.3 194.5,123.7 197.6,123.3 200.2,123 202.3,122.8 203.8,122.7 204.7,122.6 205,122.5 204.7,122.4 203.8,122.3 202.3,122.2 200.2,122 197.6,121.7 194.5,121.3 190.9,120.7 186.8,120 182.3,119.2 177.5,118.2 172.4,116.9 167,115.5 161.4,113.9 155.7,112.1 150,110' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3Easos aylanasi 24 dm%3C/text%3E%3Ctext x='216' y='160' font-size='13' fill='%23334155' text-anchor='start'%3E10 dm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-qisqa-yol",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#b56d54e8"
+    },
+    {
+      "q": "Uzunligi 12 sm, eni 5 sm va balandligi 4 sm bo'lgan quti sirti bo'ylab chumoli bir uchdan unga diagonal qarama-qarshi uchgacha yurmoqda. Eng qisqa yo'l uzunligi necha santimetr?",
+      "v": [
+        "21 sm",
+        "13 sm",
+        "√305 sm",
+        "15 sm"
+      ],
+      "t": 3,
+      "izoh": "Yoyilmaning har xil variantini tekshiramiz: √(12² + (5 + 4)²) = √225 = 15, √((12 + 4)² + 5²) = √281 va √((12 + 5)² + 4²) = √305. Eng kichigi 15 sm. Qirralar bo'ylab yurilsa 21 sm chiqadi, bu esa uzunroq.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='60,150 204,150 204,198 60,198' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='60' y1='150' x2='102' y2='120' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='204' y1='150' x2='246' y2='120' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='204' y1='198' x2='246' y2='168' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='102' y1='120' x2='246' y2='120' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='246' y1='120' x2='246' y2='168' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='60' y1='198' x2='102' y2='168' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='102' y1='168' x2='102' y2='120' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='102' y1='168' x2='246' y2='168' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='60' cy='198' r='3' fill='%23334155' stroke='none'/%3E%3Ccircle cx='246' cy='120' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='52' y='208' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='254' y='116' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='132' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='212' y='182' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3Ctext x='232' y='142' font-size='13' fill='%23334155' text-anchor='start'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-qisqa-yol",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#d686e02c"
+    },
+    {
+      "q": "Konusning asos radiusi 3 sm, yasovchisi 12 sm. Asos aylanasidagi A nuqtadan konus yon sirti bo'ylab aylanib yana A nuqtaga qaytadigan eng qisqa yo'l uzunligi qancha?",
+      "v": [
+        "12√2 sm",
+        "24 sm",
+        "6π sm",
+        "12 sm"
+      ],
+      "t": 0,
+      "izoh": "Yon sirtni yoysak markaziy burchagi α = 360° · 3 : 12 = 90° bo'lgan sektor hosil bo'ladi. Eng qisqa yo'l sektorning ikki chetki radiusini tutashtiruvchi vatar: √(12² + 12²) = 12√2 sm. Asos aylanasi bo'ylab yurish 6π sm, ya'ni uzunroq.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='174,193 173.9,193.7 173.7,194.4 173.3,195.1 172.8,195.8 172.2,196.4 171.4,197.1 170.5,197.7 169.4,198.3 168.2,198.8 167,199.4 165.6,199.8 164.1,200.3 162.5,200.7 160.9,201 159.2,201.3 157.4,201.6 155.6,201.8 153.8,201.9 151.9,202 150,202 148.1,202 146.2,201.9 144.4,201.8 142.6,201.6 140.8,201.3 139.1,201 137.5,200.7 135.9,200.3 134.4,199.8 133,199.4 131.8,198.8 130.6,198.3 129.5,197.7 128.6,197.1 127.8,196.4 127.2,195.8 126.7,195.1 126.3,194.4 126.1,193.7 126,193' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='126,193 126.1,192.3 126.3,191.6 126.7,190.9 127.2,190.2 127.8,189.6 128.6,188.9 129.5,188.3 130.6,187.7 131.8,187.2 133,186.6 134.4,186.2 135.9,185.7 137.5,185.3 139.1,185 140.8,184.7 142.6,184.4 144.4,184.2 146.2,184.1 148.1,184 150,184 151.9,184 153.8,184.1 155.6,184.2 157.4,184.4 159.2,184.7 160.9,185 162.5,185.3 164.1,185.7 165.6,186.2 167,186.6 168.2,187.2 169.4,187.7 170.5,188.3 171.4,188.9 172.2,189.6 172.8,190.2 173.3,190.9 173.7,191.6 173.9,192.3 174,193' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='100' x2='126' y2='193' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='100' x2='174' y2='193' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='193' x2='174' y2='193' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='150' cy='193' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='163' y='187' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3Ctext x='124' y='148' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ccircle cx='150' cy='202' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='150' y='224' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-qisqa-yol",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#5754ffdd"
+    },
+    {
+      "q": "Xonaning uzunligi 8 m, kengligi 3 m va balandligi 3 m. Pol va devor bo'ylab bir pastki burchakdan unga diagonal qarama-qarshi yuqori burchakka boradigan eng qisqa yo'lni toping.",
+      "v": [
+        "√73 m",
+        "√130 m",
+        "10 m",
+        "14 m"
+      ],
+      "t": 2,
+      "izoh": "Pol va devorni bitta tekislikka yoyamiz: katetlar 8 m va 3 + 3 = 6 m bo'ladi. Yo'l uzunligi √(8² + 6²) = √100 = 10 m. Boshqa yoyilmada √((8 + 3)² + 3²) = √130 chiqadi, u uzunroq.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='50,140 226,140 226,206 50,206' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='50' y1='140' x2='98' y2='106' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='226' y1='140' x2='274' y2='106' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='226' y1='206' x2='274' y2='172' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='98' y1='106' x2='274' y2='106' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='274' y1='106' x2='274' y2='172' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='50' y1='206' x2='98' y2='172' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='98' y1='172' x2='98' y2='106' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='98' y1='172' x2='274' y2='172' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='50' cy='206' r='3' fill='%23334155' stroke='none'/%3E%3Ccircle cx='274' cy='106' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='42' y='212' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='282' y='102' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='138' y='224' font-size='13' fill='%23334155' text-anchor='middle'%3E8 m%3C/text%3E%3Ctext x='234' y='182' font-size='13' fill='%23334155' text-anchor='start'%3E3 m%3C/text%3E%3Ctext x='254' y='132' font-size='13' fill='%23334155' text-anchor='start'%3E3 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-qisqa-yol",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#0139e28c"
+    },
+    {
+      "q": "Ustaxonada radiusi 3 dm va balandligi 8 dm bo'lgan qopqoqsiz silindrsimon idish yasalmoqda. Idishning yon sirti va tubi uchun jami necha kvadrat detsimetr tunuka kerak?",
+      "v": [
+        "66π dm²",
+        "24π dm²",
+        "57π dm²",
+        "48π dm²"
+      ],
+      "t": 2,
+      "izoh": "Yon sirt 2πrh = 2π · 3 · 8 = 48π dm², tubi esa πr² = 9π dm². Idish qopqoqsiz bo'lgani uchun faqat bitta asos hisoblanadi: 48π + 9π = 57π dm². Ikkala asosni qo'shsak 66π chiqadi, bu xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='110' rx='33' ry='12' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='183,198 182.9,198.9 182.6,199.9 182.1,200.8 181.4,201.7 180.5,202.6 179.4,203.4 178.1,204.3 176.7,205.1 175.1,205.8 173.3,206.5 171.4,207.1 169.4,207.7 167.2,208.2 165,208.7 162.6,209.1 160.2,209.4 157.7,209.7 155.2,209.9 152.6,210 150,210 147.4,210 144.8,209.9 142.3,209.7 139.8,209.4 137.4,209.1 135,208.7 132.8,208.2 130.6,207.7 128.6,207.1 126.7,206.5 124.9,205.8 123.3,205.1 121.9,204.3 120.6,203.4 119.5,202.6 118.6,201.7 117.9,200.8 117.4,199.9 117.1,198.9 117,198' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='117,198 117.1,197.1 117.4,196.1 117.9,195.2 118.6,194.3 119.5,193.4 120.6,192.6 121.9,191.7 123.3,190.9 124.9,190.2 126.7,189.5 128.6,188.9 130.6,188.3 132.8,187.8 135,187.3 137.4,186.9 139.8,186.6 142.3,186.3 144.8,186.1 147.4,186 150,186 152.6,186 155.2,186.1 157.7,186.3 160.2,186.6 162.6,186.9 165,187.3 167.2,187.8 169.4,188.3 171.4,188.9 173.3,189.5 175.1,190.2 176.7,190.9 178.1,191.7 179.4,192.6 180.5,193.4 181.4,194.3 182.1,195.2 182.6,196.1 182.9,197.1 183,198' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='117' y1='110' x2='117' y2='198' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='183' y1='110' x2='183' y2='198' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='110' x2='183' y2='110' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='150' cy='110' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='166' y='104' font-size='13' fill='%23334155' text-anchor='middle'%3E3 dm%3C/text%3E%3Ctext x='194' y='158' font-size='13' fill='%23334155' text-anchor='start'%3E8 dm%3C/text%3E%3Ctext x='150' y='244' font-size='13' fill='%23334155' text-anchor='middle'%3Eqopqoqsiz idish%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilma-materialdan",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#a41a926b"
+    },
+    {
+      "q": "Bir kvadrat metri 15 000 so'm turadigan brezentdan konus shaklidagi chodir tikiladi. Chodir asosining radiusi 4 m, yasovchisi 9 m. Yon sirt uchun ketadigan brezent necha so'm turadi? (π ≈ 3,14)",
+      "v": [
+        "1 695 600 so'm",
+        "847 800 so'm",
+        "753 600 so'm",
+        "3 391 200 so'm"
+      ],
+      "t": 0,
+      "izoh": "Yon sirt yuzasi πrl = 3,14 · 4 · 9 = 113,04 m². Narxi 113,04 · 15 000 = 1 695 600 so'm. Agar yuza o'rniga πr² = 50,24 m² olinsa 753 600 so'm degan xato javob chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilma-materialdan",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#4fd9de7c"
+    },
+    {
+      "q": "Do'kon uchun asosi 30 sm va 20 sm bo'lgan, balandligi 25 sm li to'g'ri burchakli qutilar tayyorlanmoqda. Har bir qutining yoyilmasi uchun necha kvadrat santimetr karton sarflanadi?",
+      "v": [
+        "1850 sm²",
+        "2700 sm²",
+        "15000 sm²",
+        "3700 sm²"
+      ],
+      "t": 3,
+      "izoh": "To'la sirt S = 2(30 · 20 + 30 · 25 + 20 · 25) = 2(600 + 750 + 500) = 3700 sm². Ikkiga ko'paytirishni unutsak 1850, bitta juft yoqni tashlab ketsak 2700 chiqadi. 15000 esa qutining hajmi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='60,120 180,120 180,220 60,220' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='60' y1='120' x2='112' y2='84' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='180' y1='120' x2='232' y2='84' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='180' y1='220' x2='232' y2='184' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='112' y1='84' x2='232' y2='84' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='232' y1='84' x2='232' y2='184' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='60' y1='220' x2='112' y2='184' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='112' y1='184' x2='112' y2='84' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='112' y1='184' x2='232' y2='184' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ctext x='120' y='240' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Ctext x='190' y='176' font-size='13' fill='%23334155' text-anchor='start'%3E25 sm%3C/text%3E%3Ctext x='216' y='106' font-size='13' fill='%23334155' text-anchor='start'%3E20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilma-materialdan",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#be8a65cf"
+    },
+    {
+      "q": "Tunukachi Rustam radiusi 5 sm va balandligi 20 sm bo'lgan silindrsimon quvur uchun yon sirt yoyilmasini chizdi va choklar uchun har tomondan 1 sm qo'shdi. Tunuka bo'lagining o'lchamlari qanday bo'ladi? (π ≈ 3,14)",
+      "v": [
+        "33,4 sm va 20 sm",
+        "33,4 sm va 22 sm",
+        "31,4 sm va 20 sm",
+        "32,4 sm va 21 sm"
+      ],
+      "t": 1,
+      "izoh": "Yoyilmaning o'zi 2πr = 2 · 3,14 · 5 = 31,4 sm va 20 sm. Har tomondan 1 sm qo'shilgani uchun har bir o'lchamga 2 sm qo'shiladi: 31,4 + 2 = 33,4 sm va 20 + 2 = 22 sm. Faqat bir tomondan qo'shish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Crect x='70' y='90' width='157' height='100' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Crect x='65' y='85' width='167' height='110' fill='none' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='148' y='82' font-size='13' fill='%23334155' text-anchor='middle'%3E31,4 sm%3C/text%3E%3Ctext x='60' y='144' font-size='13' fill='%23334155' text-anchor='end'%3E20 sm%3C/text%3E%3Ctext x='148' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3Ehar tomondan 1 sm chok%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyilma-materialdan",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#77177f19"
+    },
+    {
+      "q": "Fazodagi A(3; −2; 5) nuqtaning koordinatalar boshiga nisbatan simmetrik nuqtasi qanday koordinatalarga ega bo'ladi?",
+      "v": [
+        "(3; 2; 5)",
+        "(−3; −2; 5)",
+        "(3; −2; −5)",
+        "(−3; 2; −5)"
+      ],
+      "t": 3,
+      "izoh": "Koordinatalar boshiga nisbatan simmetriyada har uchala koordinata ishorasini almashtiradi. Demak A nuqta (−3; 2; −5) ga o'tadi. Faqat bitta koordinatani almashtirish tekislikka nisbatan simmetriyaga mos keladi, bu esa boshqa almashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "markaziy-simmetriya",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#7c70f332"
+    },
+    {
+      "q": "B(1; 4; −3) nuqtaning C(2; 1; 0) nuqtaga nisbatan simmetrigi izlanmoqda. Izlanayotgan nuqtaning koordinatalari qanday bo'ladi?",
+      "v": [
+        "(3; 5; −3)",
+        "(3; −2; 3)",
+        "(1,5; 2,5; −1,5)",
+        "(−1; −4; 3)"
+      ],
+      "t": 1,
+      "izoh": "Markazga nisbatan simmetriyada markaz kesmaning o'rtasi bo'ladi, demak B' = 2C − B. Koordinatalar bo'yicha: 2 · 2 − 1 = 3, 2 · 1 − 4 = −2, 2 · 0 − (−3) = 3. Javob (3; −2; 3), o'rta nuqtani javob deb olish esa xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "markaziy-simmetriya",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#67be5d96"
+    },
+    {
+      "q": "Ustaxonada detalning M(−4; 6; 2) nuqtasi va unga simmetrik M₁(2; 0; 8) nuqtasi belgilangan. Simmetriya markazining koordinatalarini toping.",
+      "v": [
+        "(−2; 6; 10)",
+        "(1; −3; −5)",
+        "(−1; 3; 5)",
+        "(6; −6; 6)"
+      ],
+      "t": 2,
+      "izoh": "Simmetriya markazi MM₁ kesmaning o'rtasi bo'ladi. O'rta nuqta koordinatalari: (−4 + 2) : 2 = −1, (6 + 0) : 2 = 3, (2 + 8) : 2 = 5. Demak markaz (−1; 3; 5), koordinatalar ayirmasini javob deb olish xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markaziy-simmetriya",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#711d3ead"
+    },
+    {
+      "q": "To'g'ri burchakli parallelepipedning simmetriya markazi qayerda joylashadi va bu almashtirishda uning qaysi elementlari bir-biriga o'tadi?",
+      "v": [
+        "Diagonallar kesishgan nuqtada; qarama-qarshi yoqlar bir-biriga o'tadi",
+        "Asos markazida; barcha yoqlar o'z o'rnida qoladi",
+        "Bir uchida; qo'shni qirralar almashadi",
+        "Yon qirraning o'rtasida; asoslar almashadi"
+      ],
+      "t": 0,
+      "izoh": "Parallelepipedning to'rtta fazoviy diagonali bitta nuqtada kesishadi va shu nuqtada teng ikkiga bo'linadi. Shu sababli u simmetriya markazi bo'ladi. Markazga nisbatan simmetriyada har bir yoq o'ziga qarama-qarshi yoqqa, har bir uch esa qarama-qarshi uchga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "markaziy-simmetriya",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#4fe11e4e"
+    },
+    {
+      "q": "N(2; −3; 7) nuqtaning Oxy koordinata tekisligiga nisbatan simmetrik nuqtasining koordinatalari qanday bo'ladi?",
+      "v": [
+        "(2; −3; −7)",
+        "(−2; 3; 7)",
+        "(2; 3; 7)",
+        "(−2; −3; 7)"
+      ],
+      "t": 0,
+      "izoh": "Oxy tekisligiga nisbatan simmetriyada nuqtaning tekislikdan uzoqligi saqlanadi, lekin u qarama-qarshi tomonga o'tadi. Bunda faqat z koordinata ishorasini almashtiradi: (2; −3; −7). Barcha koordinatalarni almashtirish markazga nisbatan simmetriya bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekislik-simmetriya",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#ff74ae28"
+    },
+    {
+      "q": "Ko'zgu tekisligidan 6 sm masofada turgan sham bilan uning ko'zgudagi tasviri orasidagi masofa necha santimetr bo'ladi?",
+      "v": [
+        "3 sm",
+        "36 sm",
+        "12 sm",
+        "6 sm"
+      ],
+      "t": 2,
+      "izoh": "Tekislikka nisbatan simmetriyada tasvir ham tekislikdan xuddi shuncha, ya'ni 6 sm uzoqlikda joylashadi, lekin qarama-qarshi tomonda. Sham va tasvir orasidagi masofa ikkala bo'lakning yig'indisi: 6 + 6 = 12 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='60' x2='150' y2='250' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='90' cy='155' r='3' fill='%23334155' stroke='none'/%3E%3Ccircle cx='210' cy='155' r='3' fill='%23334155' stroke='none'/%3E%3Cline x1='90' y1='155' x2='210' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='90' y='138' font-size='13' fill='%23334155' text-anchor='middle'%3Esham%3C/text%3E%3Ctext x='212' y='138' font-size='13' fill='%23334155' text-anchor='start'%3Etasvir%3C/text%3E%3Ctext x='120' y='176' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='150' y='200' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='46' font-size='13' fill='%23334155' text-anchor='middle'%3Eko‘zgu%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekislik-simmetriya",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#a0b34551"
+    },
+    {
+      "q": "P(5; 1; −2) nuqtaning Oxz koordinata tekisligiga nisbatan simmetrigi qaysi nuqta bo'ladi?",
+      "v": [
+        "(−5; −1; 2)",
+        "(5; −1; −2)",
+        "(−5; 1; −2)",
+        "(5; 1; 2)"
+      ],
+      "t": 1,
+      "izoh": "Oxz tekisligi x va z o'qlaridan o'tadi, unga nisbatan simmetriyada y koordinata ishorasini almashtiradi. Demak P nuqta (5; −1; −2) ga o'tadi. z ni almashtirish Oxy tekisligiga, x ni almashtirish esa Oyz tekisligiga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekislik-simmetriya",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#b4ec0b7a"
+    },
+    {
+      "q": "α tekislikka nisbatan simmetriyada AB kesma A₁B₁ kesmaga o'tdi. AB kesma α tekislikni kesib o'tsa, kesishish nuqtasi haqida nima deyish mumkin?",
+      "v": [
+        "U ham boshqa joyga ko'chadi",
+        "A₁B₁ bu nuqtadan o'tmaydi",
+        "U tekislikdan tashqariga chiqadi",
+        "U qo'zg'almas qoladi va A₁B₁ ham shu nuqtadan o'tadi"
+      ],
+      "t": 3,
+      "izoh": "Simmetriya tekisligida yotgan har bir nuqta o'z o'rnida qoladi, chunki uning tekislikkacha masofasi nolga teng. AB kesmaning α bilan kesishish nuqtasi aynan shunday nuqta. Demak u qo'zg'almas va tasvir kesma ham xuddi shu nuqtadan o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekislik-simmetriya",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#713c7802"
+    },
+    {
+      "q": "Fazodagi K(3; −5; 2) nuqtaning Oz o'qiga nisbatan simmetrik nuqtasi qanday koordinatalarga ega bo'ladi?",
+      "v": [
+        "(3; 5; 2)",
+        "(−3; 5; 2)",
+        "(3; −5; −2)",
+        "(−3; −5; −2)"
+      ],
+      "t": 1,
+      "izoh": "Oz o'qiga nisbatan simmetriya shu o'q atrofida 180° ga burish bilan bir xil natija beradi. Bunda o'qqa perpendikulyar bo'lgan x va y koordinatalar ishorasini almashtiradi, z esa o'zgarmaydi. Demak javob (−3; 5; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziq-simmetriya",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#1a7a8a83"
+    },
+    {
+      "q": "T(4; 2; −6) nuqta Ox o'qiga nisbatan simmetrik almashtirilsa, hosil bo'lgan nuqtaning koordinatalari qanday bo'ladi?",
+      "v": [
+        "(−4; 2; −6)",
+        "(−4; −2; −6)",
+        "(4; 2; 6)",
+        "(4; −2; 6)"
+      ],
+      "t": 3,
+      "izoh": "Ox o'qiga nisbatan simmetriyada o'q bo'ylab yo'nalgan x koordinata o'zgarmaydi, qolgan ikkitasi esa ishorasini almashtiradi. Demak T nuqta (4; −2; 6) ga o'tadi. Uchala ishorani almashtirish koordinatalar boshiga nisbatan simmetriya bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziq-simmetriya",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#3e08379a"
+    },
+    {
+      "q": "Fazoda to'g'ri chiziqqa nisbatan simmetriya qanday almashtirish bilan bir xil natija beradi?",
+      "v": [
+        "Shu to'g'ri chiziq atrofida 180° ga burish bilan",
+        "Shu to'g'ri chiziq atrofida 90° ga burish bilan",
+        "Biror vektorga parallel ko'chirish bilan",
+        "Nuqtaga nisbatan simmetriya bilan"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri chiziqqa nisbatan simmetriyada har bir nuqta o'qqa perpendikulyar tekislikda o'q atrofida qarama-qarshi tomonga o'tadi va o'qgacha masofa saqlanadi. Bu esa aynan shu o'q atrofida 180° ga burish demakdir. 90° ga burishda nuqta boshqa joyga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziq-simmetriya",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#fc2c0618"
+    },
+    {
+      "q": "Konveyerdagi qutining A(2; −1; 4) nuqtasi (3; 5; −2) vektor bo'yicha parallel ko'chirildi. Nuqtaning yangi koordinatalari qanday bo'ladi?",
+      "v": [
+        "(6; −5; −8)",
+        "(5; 4; −2)",
+        "(5; 4; 2)",
+        "(−1; −6; 6)"
+      ],
+      "t": 2,
+      "izoh": "Parallel ko'chirishda nuqta koordinatalariga vektor koordinatalari qo'shiladi. Demak 2 + 3 = 5, −1 + 5 = 4, 4 + (−2) = 2 va yangi nuqta (5; 4; 2). Ayirish yoki ko'paytirish tipik xatolardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallel-kochirish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#7403565e"
+    },
+    {
+      "q": "Parallel ko'chirishda D(−2; 3; 1) nuqta D₁(4; 0; 5) nuqtaga o'tdi. Ko'chirish vektorining koordinatalarini toping.",
+      "v": [
+        "(2; 3; 6)",
+        "(1; 1,5; 3)",
+        "(6; −3; 4)",
+        "(−6; 3; −4)"
+      ],
+      "t": 2,
+      "izoh": "Ko'chirish vektori tasvir nuqtasidan boshlang'ich nuqtani ayirish bilan topiladi. Demak 4 − (−2) = 6, 0 − 3 = −3, 5 − 1 = 4 va vektor (6; −3; 4). Ayirishni teskari tartibda bajarish ishoralarni buzadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallel-kochirish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#f7f433ab"
+    },
+    {
+      "q": "Radiusi 7 sm bo'lgan shar biror vektorga parallel ko'chirildi. Hosil bo'lgan tasvir qanday shakl bo'ladi va uning radiusi qancha?",
+      "v": [
+        "Radiusi 7 sm bo'lgan shar",
+        "Radiusi 14 sm bo'lgan shar",
+        "Radiusi 3,5 sm bo'lgan shar",
+        "Ellipsoid"
+      ],
+      "t": 0,
+      "izoh": "Parallel ko'chirish harakat, ya'ni masofalarni saqlaydigan almashtirish hisoblanadi. Shuning uchun shar yana sharga o'tadi va radius o'zgarmaydi, faqat markaz siljiydi. Radiusning ikkilanishi yoki shakl buzilishi o'xshashlik almashtirishida bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-kochirish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#acfaa960"
+    },
+    {
+      "q": "ABCD parallelogrammda AB tomon bo'yicha yo'nalgan vektorga parallel ko'chirish bajarildi. Bu ko'chirishda D nuqta qaysi nuqtaga o'tadi?",
+      "v": [
+        "B nuqtaga",
+        "A nuqtaga",
+        "Diagonallar kesishgan nuqtaga",
+        "C nuqtaga"
+      ],
+      "t": 3,
+      "izoh": "Parallelogrammda AB va DC tomonlar parallel hamda teng, ya'ni AB vektor DC vektorga teng. Demak D nuqtani AB vektorga ko'chirsak, u aynan C nuqtaga tushadi. B nuqtaga o'tish uchun AD vektorga ko'chirish kerak bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallel-kochirish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#8ed77aae"
+    },
+    {
+      "q": "Aylanish o'qidan 5 sm uzoqlikdagi nuqta shu o'q atrofida 90° ga burildi. Boshlang'ich va hosil bo'lgan nuqtalar orasidagi masofa necha santimetr?",
+      "v": [
+        "5√3 sm",
+        "5√2 sm",
+        "10 sm",
+        "5 sm"
+      ],
+      "t": 1,
+      "izoh": "Nuqta o'qqa perpendikulyar tekislikda radiusi 5 sm bo'lgan aylana bo'ylab siljiydi. Markaziy burchagi 90° bo'lgan vatar to'g'ri burchakli teng yonli uchburchakning gipotenuzasi: √(5² + 5²) = 5√2 sm. 180° da bu masofa 10 sm bo'lardi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='100' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='150' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='140' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='150' y1='150' x2='250' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='150' x2='150' y2='250' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='250' y1='150' x2='150' y2='250' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='184,150 183.9,152.2 183.7,154.4 183.3,156.6 182.8,158.8 182.2,160.9 181.4,163 180.5,165 179.4,167 178.3,168.9 177,170.7 175.6,172.4 174,174 172.4,175.6 170.7,177 168.9,178.3 167,179.4 165,180.5 163,181.4 160.9,182.2 158.8,182.8 156.6,183.3 154.4,183.7 152.2,183.9 150,184' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='200' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='258' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='150' y='270' font-size='13' fill='%23334155' text-anchor='middle'%3EM₁%3C/text%3E%3Ctext x='216' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "fazoda-burish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#1d381baf"
+    },
+    {
+      "q": "Muntazam uchburchakli prizma o'z o'qi atrofida burilganda eng kichik qaysi burchakda boshlang'ich holatiga ustma-ust tushadi?",
+      "v": [
+        "60°",
+        "90°",
+        "180°",
+        "120°"
+      ],
+      "t": 3,
+      "izoh": "Prizma asosi muntazam uchburchak bo'lgani uchun uchta bir xil holatga ega. To'la aylanish 360° ni uchga bo'lsak 120° hosil bo'ladi. 90° kvadrat asos uchun, 180° esa to'rtburchakli holat uchun to'g'ri kelardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "fazoda-burish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#a6a19d2c"
+    },
+    {
+      "q": "Karusel o'qidan 3 m uzoqlikda o'tirgan bola o'q atrofida 120° ga burilgach, boshlang'ich joyidan necha metr uzoqlikda bo'ladi?",
+      "v": [
+        "3 m",
+        "3√3 m",
+        "6 m",
+        "3√2 m"
+      ],
+      "t": 1,
+      "izoh": "Bola radiusi 3 m bo'lgan aylana bo'ylab siljiydi va izlanayotgan masofa markaziy burchagi 120° bo'lgan vatar. Vatar uzunligi 2R · sin(α/2) = 2 · 3 · sin60° = 6 · √3/2 = 3√3 m. Bu taxminan 5,2 m bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='140' r='90' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='140' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='142' y='136' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='150' y1='140' x2='240' y2='140' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='140' x2='105' y2='217.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='240' y1='140' x2='105' y2='217.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='182,140 181.9,142.8 181.5,145.6 180.9,148.3 180.1,150.9 179,153.5 177.7,156 176.2,158.4 174.5,160.6 172.6,162.6 170.6,164.5 168.4,166.2 166,167.7 163.5,169 160.9,170.1 158.3,170.9 155.6,171.5 152.8,171.9 150,172 147.2,171.9 144.4,171.5 141.7,170.9 139.1,170.1 136.5,169 134,167.7' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='132' font-size='13' fill='%23334155' text-anchor='middle'%3E3 m%3C/text%3E%3Ctext x='248' y='144' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='97' y='233.9' font-size='13' fill='%23334155' text-anchor='end'%3EM₁%3C/text%3E%3Ctext x='180' y='200' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "fazoda-burish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#d4bc76ef"
+    },
+    {
+      "q": "O'quvchi kub modelini qo'lida aylantirib, uni teng ikki qismga bo'luvchi barcha tekisliklarni sanamoqchi. Kubning nechta simmetriya tekisligi bor?",
+      "v": [
+        "3",
+        "12",
+        "9",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Kubning qarama-qarshi yoqlar markazlaridan o'tuvchi 3 ta simmetriya tekisligi bor. Bundan tashqari qarama-qarshi qirralardan o'tuvchi 6 ta diagonal tekislik mavjud. Jami 3 + 6 = 9 ta simmetriya tekisligi bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='85,130 195,130 195,240 85,240' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='85' y1='130' x2='125' y2='90' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='195' y1='130' x2='235' y2='90' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='195' y1='240' x2='235' y2='200' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='125' y1='90' x2='235' y2='90' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='235' y1='90' x2='235' y2='200' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='85' y1='240' x2='125' y2='200' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='125' y1='200' x2='125' y2='90' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='125' y1='200' x2='235' y2='200' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cpolygon points='140,130 180,90 180,200 140,240' fill='none' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Esimmetriya tekisligi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-elementlari",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#9a2bc3ca"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidaning nechta simmetriya tekisligi bor va uning simmetriya markazi mavjudmi?",
+      "v": [
+        "4 ta, markazi yo'q",
+        "4 ta, markazi bor",
+        "2 ta, markazi yo'q",
+        "8 ta, markazi bor"
+      ],
+      "t": 0,
+      "izoh": "Simmetriya tekisliklari asosning qarama-qarshi tomonlari o'rtalaridan va qarama-qarshi uchlaridan o'tadi, ya'ni 2 + 2 = 4 ta. Simmetriya markazi bo'lishi uchun jismning har bir nuqtasiga qarama-qarshi nuqta mos kelishi kerak, piramidada esa uch nuqtasining jufti yo'q. Demak markaz mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-elementlari",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#54849217"
+    },
+    {
+      "q": "Muzey ustaxonasida to'rtta model turibdi: kub, muntazam olti burchakli prizma, shar va muntazam uchburchakli piramida. Ulardan qaysi birida simmetriya markazi mavjud emas?",
+      "v": [
+        "Muntazam uchburchakli piramida",
+        "Kub",
+        "Shar",
+        "Muntazam olti burchakli prizma"
+      ],
+      "t": 0,
+      "izoh": "Simmetriya markazi bo'lgan jismda har bir nuqtaga markazdan teng uzoqlikdagi qarama-qarshi nuqta mos keladi. Kubda diagonallar kesishmasi, sharda markaz, olti burchakli prizmada esa asoslar markazlarini tutashtiruvchi kesmaning o'rtasi shunday nuqtadir. Uchburchakli piramidada asos va uch qismlari mos kelmaydi, shuning uchun markaz yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetriya-elementlari",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#ad9a8ae8"
+    },
+    {
+      "q": "Ustaxonada ikkita o'xshash konus shaklidagi qolip bor va ularning o'xshashlik koeffitsienti 2 : 3 ga teng. Bu qoliplarning to'la sirtlari nisbati qanday bo'ladi?",
+      "v": [
+        "8 : 27",
+        "16 : 81",
+        "4 : 9",
+        "2 : 3"
+      ],
+      "t": 2,
+      "izoh": "O'xshash jismlarda sirtlar nisbati o'xshashlik koeffitsientining kvadratiga teng. Demak nisbat 2² : 3² = 4 : 9. Kub darajasini olish 8 : 27 hajmlar nisbatini beradi, bu esa boshqa savolning javobi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='115.5,230 115.4,231 115,232 114.5,233.1 113.7,234 112.8,235 111.6,235.9 110.2,236.8 108.7,237.7 107,238.5 105.1,239.2 103,239.9 100.8,240.6 98.5,241.1 96.1,241.6 93.6,242.1 91,242.4 88.3,242.7 85.5,242.9 82.8,243 80,243.1 77.2,243 74.5,242.9 71.7,242.7 69,242.4 66.4,242.1 63.9,241.6 61.5,241.1 59.2,240.6 57,239.9 54.9,239.2 53,238.5 51.3,237.7 49.8,236.8 48.4,235.9 47.2,235 46.3,234 45.5,233.1 45,232 44.6,231 44.5,230' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='44.5,230 44.6,229 45,228 45.5,226.9 46.3,226 47.2,225 48.4,224.1 49.8,223.2 51.3,222.3 53,221.5 54.9,220.8 57,220.1 59.2,219.4 61.5,218.9 63.9,218.4 66.4,217.9 69,217.6 71.7,217.3 74.5,217.1 77.2,217 80,216.9 82.8,217 85.5,217.1 88.3,217.3 91,217.6 93.6,217.9 96.1,218.4 98.5,218.9 100.8,219.4 103,220.1 105.1,220.8 107,221.5 108.7,222.3 110.2,223.2 111.6,224.1 112.8,225 113.7,226 114.5,226.9 115,228 115.4,229 115.5,230' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='80' y1='136.7' x2='44.5' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='80' y1='136.7' x2='115.5' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='268.2,230 268,231.5 267.5,233.1 266.7,234.6 265.6,236.1 264.2,237.5 262.4,238.9 260.4,240.2 258,241.5 255.5,242.7 252.6,243.9 249.6,244.9 246.3,245.9 242.8,246.7 239.2,247.5 235.4,248.1 231.4,248.6 227.4,249.1 223.3,249.4 219.2,249.5 215,249.6 210.8,249.5 206.7,249.4 202.6,249.1 198.6,248.6 194.6,248.1 190.8,247.5 187.2,246.7 183.7,245.9 180.4,244.9 177.4,243.9 174.5,242.7 172,241.5 169.6,240.2 167.6,238.9 165.8,237.5 164.4,236.1 163.3,234.6 162.5,233.1 162,231.5 161.8,230' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='161.8,230 162,228.5 162.5,226.9 163.3,225.4 164.4,223.9 165.8,222.5 167.6,221.1 169.6,219.8 172,218.5 174.5,217.3 177.4,216.1 180.4,215.1 183.7,214.1 187.2,213.3 190.8,212.5 194.6,211.9 198.6,211.4 202.6,210.9 206.7,210.6 210.8,210.5 215,210.4 219.2,210.5 223.3,210.6 227.4,210.9 231.4,211.4 235.4,211.9 239.2,212.5 242.8,213.3 246.3,214.1 249.6,215.1 252.6,216.1 255.5,217.3 258,218.5 260.4,219.8 262.4,221.1 264.2,222.5 265.6,223.9 266.7,225.4 267.5,226.9 268,228.5 268.2,230' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='215' y1='90' x2='161.8' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='215' y1='90' x2='268.2' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='80' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EI qolip%3C/text%3E%3Ctext x='215' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EII qolip%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshashlik-sirt",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#93dab796"
+    },
+    {
+      "q": "Havo sharining radiusi puflash natijasida 3 marta ortdi. Sharning sirt yuzasi necha marta kattalashadi?",
+      "v": [
+        "6 marta",
+        "9 marta",
+        "3 marta",
+        "27 marta"
+      ],
+      "t": 1,
+      "izoh": "Shar sirti S = 4πR² formula bilan hisoblanadi, ya'ni yuza radius kvadratiga proporsional. Radius 3 marta ortsa yuza 3² = 9 marta ortadi. 27 marta esa hajmning o'zgarishi bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshashlik-sirt",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#e9789f70"
+    },
+    {
+      "q": "Binoning 1 : 50 masshtabdagi maketining tashqi devorlarini bo'yash uchun 0,8 m² yuza bo'yaldi. Haqiqiy binoning shu devorlari yuzasi necha kvadrat metr bo'ladi?",
+      "v": [
+        "40 m²",
+        "100 000 m²",
+        "2500 m²",
+        "2000 m²"
+      ],
+      "t": 3,
+      "izoh": "Chiziqli o'lchamlar 50 marta katta bo'lgani uchun yuzalar 50² = 2500 marta katta bo'ladi. Demak S = 0,8 · 2500 = 2000 m². 50 ga ko'paytirish 40 m², kub darajasini olish esa 100 000 m² degan xato beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='90,130 200,130 200,220 90,220' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='90' y1='130' x2='130' y2='90' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='200' y1='130' x2='240' y2='90' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='200' y1='220' x2='240' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='130' y1='90' x2='240' y2='90' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='240' y1='90' x2='240' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='90' y1='220' x2='130' y2='180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='130' y1='180' x2='130' y2='90' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='130' y1='180' x2='240' y2='180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='250' font-size='13' fill='%23334155' text-anchor='middle'%3Emaket, masshtab 1 : 50%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshashlik-sirt",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#dd5ddb09"
+    },
+    {
+      "q": "Ikkita o'xshash silindrsimon idishning balandliklari 12 sm va 18 sm. Kichik idishning yon sirti 96π sm² bo'lsa, katta idishning yon sirti qancha bo'ladi?",
+      "v": [
+        "192π sm²",
+        "216π sm²",
+        "144π sm²",
+        "324π sm²"
+      ],
+      "t": 1,
+      "izoh": "O'xshashlik koeffitsienti k = 18 : 12 = 3/2, sirtlar nisbati esa k² = 9/4. Demak katta idish sirti 96π · 9 : 4 = 216π sm². Faqat 3/2 ga ko'paytirish 144π, kub darajasini olish esa 324π degan xato beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='80' cy='136.7' rx='29.9' ry='11.2' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='109.9,230 109.8,230.9 109.5,231.8 109,232.6 108.4,233.5 107.6,234.3 106.6,235.1 105.5,235.9 104.2,236.6 102.7,237.3 101.1,237.9 99.4,238.5 97.6,239.1 95.6,239.5 93.6,240 91.4,240.3 89.2,240.7 87,240.9 84.7,241.1 82.3,241.2 80,241.2 77.7,241.2 75.3,241.1 73,240.9 70.8,240.7 68.6,240.3 66.4,240 64.4,239.5 62.4,239.1 60.6,238.5 58.9,237.9 57.3,237.3 55.8,236.6 54.5,235.9 53.4,235.1 52.4,234.3 51.6,233.5 51,232.6 50.5,231.8 50.2,230.9 50.1,230' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='50.1,230 50.2,229.1 50.5,228.2 51,227.4 51.6,226.5 52.4,225.7 53.4,224.9 54.5,224.1 55.8,223.4 57.3,222.7 58.9,222.1 60.6,221.5 62.4,220.9 64.4,220.5 66.4,220 68.6,219.7 70.8,219.3 73,219.1 75.3,218.9 77.7,218.8 80,218.8 82.3,218.8 84.7,218.9 87,219.1 89.2,219.3 91.4,219.7 93.6,220 95.6,220.5 97.6,220.9 99.4,221.5 101.1,222.1 102.7,222.7 104.2,223.4 105.5,224.1 106.6,224.9 107.6,225.7 108.4,226.5 109,227.4 109.5,228.2 109.8,229.1 109.9,230' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='50.1' y1='136.7' x2='50.1' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='109.9' y1='136.7' x2='109.9' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='215' cy='90' rx='44.8' ry='16.8' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='259.8,230 259.7,231.3 259.2,232.6 258.6,233.9 257.6,235.2 256.4,236.4 254.9,237.6 253.2,238.8 251.2,239.9 249.1,240.9 246.7,241.9 244.1,242.8 241.3,243.6 238.4,244.3 235.3,245 232.1,245.5 228.8,246 225.5,246.3 222,246.6 218.5,246.7 215,246.8 211.5,246.7 208,246.6 204.5,246.3 201.2,246 197.9,245.5 194.7,245 191.6,244.3 188.7,243.6 185.9,242.8 183.3,241.9 180.9,240.9 178.8,239.9 176.8,238.8 175.1,237.6 173.6,236.4 172.4,235.2 171.4,233.9 170.8,232.6 170.3,231.3 170.2,230' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='170.2,230 170.3,228.7 170.8,227.4 171.4,226.1 172.4,224.8 173.6,223.6 175.1,222.4 176.8,221.2 178.8,220.1 180.9,219.1 183.3,218.1 185.9,217.2 188.7,216.4 191.6,215.7 194.7,215 197.9,214.5 201.2,214 204.5,213.7 208,213.4 211.5,213.3 215,213.2 218.5,213.3 222,213.4 225.5,213.7 228.8,214 232.1,214.5 235.3,215 238.4,215.7 241.3,216.4 244.1,217.2 246.7,218.1 249.1,219.1 251.2,220.1 253.2,221.2 254.9,222.4 256.4,223.6 257.6,224.8 258.6,226.1 259.2,227.4 259.7,228.7 259.8,230' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='170.2' y1='90' x2='170.2' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='259.8' y1='90' x2='259.8' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='80' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='215' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxshashlik-sirt",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#bb479a11"
+    },
+    {
+      "q": "Bolalar bog'chasi uchun yasalgan yog'och kubning qirrasi 3 marta uzaytirildi. Yangi kubning hajmi eskisidan necha marta katta bo'ladi?",
+      "v": [
+        "9 marta",
+        "3 marta",
+        "6 marta",
+        "27 marta"
+      ],
+      "t": 3,
+      "izoh": "Kub hajmi V = a³ formula bilan topiladi, demak hajm qirraning kubiga proporsional. Qirra 3 marta ortsa hajm 3³ = 27 marta ortadi. 9 marta esa sirt yuzasining o'zgarishiga mos keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='25,203.3 61.7,203.3 61.7,240 25,240' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='25' y1='203.3' x2='37.8' y2='190.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='61.7' y1='203.3' x2='74.5' y2='190.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='61.7' y1='240' x2='74.5' y2='227.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='37.8' y1='190.5' x2='74.5' y2='190.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='74.5' y1='190.5' x2='74.5' y2='227.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='25' y1='240' x2='37.8' y2='227.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='37.8' y1='227.2' x2='37.8' y2='190.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='37.8' y1='227.2' x2='74.5' y2='227.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cpolygon points='139.5,130 249.5,130 249.5,240 139.5,240' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='139.5' y1='130' x2='178' y2='91.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='249.5' y1='130' x2='288' y2='91.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='249.5' y1='240' x2='288' y2='201.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='178' y1='91.5' x2='288' y2='91.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='288' y1='91.5' x2='288' y2='201.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='139.5' y1='240' x2='178' y2='201.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='178' y1='201.5' x2='178' y2='91.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='178' y1='201.5' x2='288' y2='201.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ctext x='43.3' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='194.5' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E3a%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshashlik-hajm",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#f8fa8761"
+    },
+    {
+      "q": "Muzeydagi ikkita o'xshash piramida maketining mos qirralari nisbati 2 : 5 ga teng. Bu maketlarning hajmlari nisbati qanday bo'ladi?",
+      "v": [
+        "8 : 125",
+        "4 : 25",
+        "2 : 5",
+        "8 : 25"
+      ],
+      "t": 0,
+      "izoh": "O'xshash jismlarda hajmlar nisbati o'xshashlik koeffitsientining kubiga teng. Demak nisbat 2³ : 5³ = 8 : 125. Kvadratini olish 4 : 25 sirtlar nisbatini beradi, bu esa hajmga tegishli emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='51,235 75,246 99,235' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='51,235 75,224 99,235' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='75' y1='179' x2='51' y2='235' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='75' y1='179' x2='99' y2='235' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='75' y1='179' x2='75' y2='246' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='75' y1='179' x2='75' y2='224' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cpolyline points='145,235 205,263 265,235' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='145,235 205,207 265,235' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='205' y1='95' x2='145' y2='235' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='205' y1='95' x2='265' y2='235' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='205' y1='95' x2='205' y2='263' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='205' y1='95' x2='205' y2='207' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ctext x='75' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3E2 qism%3C/text%3E%3Ctext x='205' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3E5 qism%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshashlik-hajm",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#d71f8cf9"
+    },
+    {
+      "q": "Suv quyish uchun ishlatiladigan konus shaklidagi idishning 1 : 4 masshtabdagi kichik nusxasi yasaldi. Katta idishga 128 litr suv sig'sa, kichigiga necha litr sig'adi?",
+      "v": [
+        "8 litr",
+        "4 litr",
+        "2 litr",
+        "32 litr"
+      ],
+      "t": 2,
+      "izoh": "Chiziqli o'lchamlar 4 marta kichik bo'lgani uchun hajmlar 4³ = 64 marta farq qiladi. Demak kichik idish sig'imi 128 : 64 = 2 litr. Faqat 4 ga bo'lish 32 litr, kvadratga bo'lish esa 8 litr degan xato beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshashlik-hajm",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#5bd9001c"
+    },
+    {
+      "q": "Konus shaklidagi stakanning balandligi 12 sm. Unga suv 6 sm balandlikkacha quyildi. Suv stakan to'la hajmining necha foizini egallaydi?",
+      "v": [
+        "25%",
+        "33%",
+        "12,5%",
+        "50%"
+      ],
+      "t": 2,
+      "izoh": "Suv to'ldirgan qism butun konusga o'xshash bo'lib, koeffitsienti k = 6 : 12 = 1/2. Hajmlar nisbati k³ = 1/8, ya'ni 0,125. Foizda bu 12,5% bo'ladi; balandlik yarmi bo'lgani uchun hajm ham yarmi deb o'ylash tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxshashlik-hajm",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#ee11da0d"
+    },
+    {
+      "q": "Ikkita o'xshash jismning hajmlari nisbati 8 : 27 ga teng ekani ma'lum. Shu jismlarning sirtlari nisbatini toping.",
+      "v": [
+        "4 : 9",
+        "2 : 3",
+        "8 : 27",
+        "64 : 729"
+      ],
+      "t": 0,
+      "izoh": "Hajmlar nisbati k³ = 8 : 27 bo'lgani uchun k = 2 : 3 kelib chiqadi. Sirtlar nisbati esa k² = 4 : 9 bo'ladi. Hajm nisbatini o'zgarishsiz javob deb olish yoki kub ildizni olmay turib hajmlar nisbatini kvadratga ko'tarish (8 : 27)² = 64 : 729 tipik xatolardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshashlik-k-topish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#2cfdc1f3"
+    },
+    {
+      "q": "Ikkita o'xshash idishning to'la sirtlari nisbati 9 : 16 ga teng. Bu idishlarning hajmlari nisbati qanday bo'ladi?",
+      "v": [
+        "3 : 4",
+        "9 : 16",
+        "81 : 256",
+        "27 : 64"
+      ],
+      "t": 3,
+      "izoh": "Sirtlar nisbati k² = 9 : 16 bo'lgani uchun k = 3 : 4. Hajmlar nisbati esa k³ = 27 : 64 bo'ladi. Sirt nisbatini yana kvadratga ko'tarish 81 : 256 degan noto'g'ri javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='80' cy='125' rx='33.6' ry='12.6' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='113.6,230 113.5,231 113.2,232 112.7,232.9 112,233.9 111,234.8 109.9,235.7 108.6,236.6 107.2,237.4 105.5,238.2 103.8,238.9 101.8,239.6 99.7,240.2 97.6,240.7 95.3,241.2 92.9,241.6 90.4,242 87.8,242.3 85.3,242.4 82.6,242.6 80,242.6 77.4,242.6 74.7,242.4 72.2,242.3 69.6,242 67.1,241.6 64.7,241.2 62.4,240.7 60.3,240.2 58.2,239.6 56.2,238.9 54.5,238.2 52.8,237.4 51.4,236.6 50.1,235.7 49,234.8 48,233.9 47.3,232.9 46.8,232 46.5,231 46.4,230' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='46.4,230 46.5,229 46.8,228 47.3,227.1 48,226.1 49,225.2 50.1,224.3 51.4,223.4 52.8,222.6 54.5,221.8 56.2,221.1 58.2,220.4 60.3,219.8 62.4,219.3 64.7,218.8 67.1,218.4 69.6,218 72.2,217.7 74.7,217.6 77.4,217.4 80,217.4 82.6,217.4 85.3,217.6 87.8,217.7 90.4,218 92.9,218.4 95.3,218.8 97.6,219.3 99.7,219.8 101.8,220.4 103.8,221.1 105.5,221.8 107.2,222.6 108.6,223.4 109.9,224.3 111,225.2 112,226.1 112.7,227.1 113.2,228 113.5,229 113.6,230' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='46.4' y1='125' x2='46.4' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='113.6' y1='125' x2='113.6' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='215' cy='90' rx='44.8' ry='16.8' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='259.8,230 259.7,231.3 259.2,232.6 258.6,233.9 257.6,235.2 256.4,236.4 254.9,237.6 253.2,238.8 251.2,239.9 249.1,240.9 246.7,241.9 244.1,242.8 241.3,243.6 238.4,244.3 235.3,245 232.1,245.5 228.8,246 225.5,246.3 222,246.6 218.5,246.7 215,246.8 211.5,246.7 208,246.6 204.5,246.3 201.2,246 197.9,245.5 194.7,245 191.6,244.3 188.7,243.6 185.9,242.8 183.3,241.9 180.9,240.9 178.8,239.9 176.8,238.8 175.1,237.6 173.6,236.4 172.4,235.2 171.4,233.9 170.8,232.6 170.3,231.3 170.2,230' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='170.2,230 170.3,228.7 170.8,227.4 171.4,226.1 172.4,224.8 173.6,223.6 175.1,222.4 176.8,221.2 178.8,220.1 180.9,219.1 183.3,218.1 185.9,217.2 188.7,216.4 191.6,215.7 194.7,215 197.9,214.5 201.2,214 204.5,213.7 208,213.4 211.5,213.3 215,213.2 218.5,213.3 222,213.4 225.5,213.7 228.8,214 232.1,214.5 235.3,215 238.4,215.7 241.3,216.4 244.1,217.2 246.7,218.1 249.1,219.1 251.2,220.1 253.2,221.2 254.9,222.4 256.4,223.6 257.6,224.8 258.6,226.1 259.2,227.4 259.7,228.7 259.8,230' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='170.2' y1='90' x2='170.2' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='259.8' y1='90' x2='259.8' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='80' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3EI idish%3C/text%3E%3Ctext x='215' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3EII idish%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshashlik-k-topish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#4db60359"
+    },
+    {
+      "q": "Bir xil materialdan yasalgan o'xshash ikki detalning massalari 16 g va 54 g. Birinchi detalning ikkinchisiga o'xshashlik koeffitsienti qanday?",
+      "v": [
+        "3 : 2",
+        "2 : 3",
+        "4 : 9",
+        "8 : 27"
+      ],
+      "t": 1,
+      "izoh": "Bir xil materialda massalar hajmlarga proporsional, demak k³ = 16 : 54 = 8 : 27. Kub ildizini olsak k = 2 : 3 hosil bo'ladi. Tartibni teskari olish 3 : 2, massalar nisbatining o'zini koeffitsient deb olish esa 8 : 27 degan xato beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshashlik-k-topish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#61cd7481"
+    },
+    {
+      "q": "Ikkita o'xshash konusning yon sirtlari yuzasi 50π sm² va 200π sm². Kichik konusning balandligi 6 sm bo'lsa, kattasining balandligi necha santimetr?",
+      "v": [
+        "24 sm",
+        "18 sm",
+        "9 sm",
+        "12 sm"
+      ],
+      "t": 3,
+      "izoh": "Sirtlar nisbati 50π : 200π = 1 : 4, demak k² = 1/4 va k = 1/2. Chiziqli o'lchamlar 2 marta farq qiladi: 6 · 2 = 12 sm. Sirtlar nisbatini to'g'ridan-to'g'ri qo'llash 24 sm degan xato beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='106.6,230 106.5,230.8 106.3,231.5 105.9,232.3 105.3,233 104.6,233.8 103.7,234.4 102.7,235.1 101.5,235.8 100.2,236.4 98.8,236.9 97.3,237.5 95.6,237.9 93.9,238.4 92.1,238.7 90.2,239.1 88.2,239.3 86.2,239.5 84.2,239.7 82.1,239.8 80,239.8 77.9,239.8 75.8,239.7 73.8,239.5 71.8,239.3 69.8,239.1 67.9,238.7 66.1,238.4 64.4,237.9 62.7,237.5 61.2,236.9 59.8,236.4 58.5,235.8 57.3,235.1 56.3,234.4 55.4,233.8 54.7,233 54.1,232.3 53.7,231.5 53.5,230.8 53.4,230' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='53.4,230 53.5,229.2 53.7,228.5 54.1,227.7 54.7,227 55.4,226.2 56.3,225.6 57.3,224.9 58.5,224.2 59.8,223.6 61.2,223.1 62.7,222.5 64.4,222.1 66.1,221.6 67.9,221.3 69.8,220.9 71.8,220.7 73.8,220.5 75.8,220.3 77.9,220.2 80,220.2 82.1,220.2 84.2,220.3 86.2,220.5 88.2,220.7 90.2,220.9 92.1,221.3 93.9,221.6 95.6,222.1 97.3,222.5 98.8,223.1 100.2,223.6 101.5,224.2 102.7,224.9 103.7,225.6 104.6,226.2 105.3,227 105.9,227.7 106.3,228.5 106.5,229.2 106.6,230' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='80' y1='160' x2='53.4' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='80' y1='160' x2='106.6' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='268.2,230 268,231.5 267.5,233.1 266.7,234.6 265.6,236.1 264.2,237.5 262.4,238.9 260.4,240.2 258,241.5 255.5,242.7 252.6,243.9 249.6,244.9 246.3,245.9 242.8,246.7 239.2,247.5 235.4,248.1 231.4,248.6 227.4,249.1 223.3,249.4 219.2,249.5 215,249.6 210.8,249.5 206.7,249.4 202.6,249.1 198.6,248.6 194.6,248.1 190.8,247.5 187.2,246.7 183.7,245.9 180.4,244.9 177.4,243.9 174.5,242.7 172,241.5 169.6,240.2 167.6,238.9 165.8,237.5 164.4,236.1 163.3,234.6 162.5,233.1 162,231.5 161.8,230' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='161.8,230 162,228.5 162.5,226.9 163.3,225.4 164.4,223.9 165.8,222.5 167.6,221.1 169.6,219.8 172,218.5 174.5,217.3 177.4,216.1 180.4,215.1 183.7,214.1 187.2,213.3 190.8,212.5 194.6,211.9 198.6,211.4 202.6,210.9 206.7,210.6 210.8,210.5 215,210.4 219.2,210.5 223.3,210.6 227.4,210.9 231.4,211.4 235.4,211.9 239.2,212.5 242.8,213.3 246.3,214.1 249.6,215.1 252.6,216.1 255.5,217.3 258,218.5 260.4,219.8 262.4,221.1 264.2,222.5 265.6,223.9 266.7,225.4 267.5,226.9 268,228.5 268.2,230' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='215' y1='90' x2='161.8' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='215' y1='90' x2='268.2' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='80' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='215' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxshashlik-k-topish",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#35692271"
+    },
+    {
+      "q": "Piramidaning balandligi 15 sm. Uning uchidan 5 sm masofada asosga parallel kesim o'tkazildi. Kesim yuzasi asos yuzasining qanday qismini tashkil qiladi?",
+      "v": [
+        "Beshdan bir qismini",
+        "To'qqizdan bir qismini",
+        "Uchdan bir qismini",
+        "Yigirma yettidan bir qismini"
+      ],
+      "t": 1,
+      "izoh": "Kesim va asos o'xshash, koeffitsient balandliklar nisbatiga teng: k = 5 : 15 = 1/3. Yuzalar nisbati k² = 1/9 bo'ladi. Balandliklar nisbatining o'zini javob deb olish yoki kub darajasini olish tipik xatolardir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='90,235 150,263 210,235' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='90,235 150,207 210,235' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='85' x2='90' y2='235' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='85' x2='210' y2='235' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='85' x2='150' y2='263' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='85' x2='150' y2='207' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cpolygon points='130,135 150,144.3 170,135 150,125.7' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='85' x2='150' y2='235' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='142' y='112' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3Ctext x='142' y='195' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "piramida-kesim-oxshash",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#667637da"
+    },
+    {
+      "q": "Konus balandligining o'rtasidan asosga parallel tekislik o'tkazildi. Ajralgan kichik konusning hajmi butun konus hajmining qanday qismi bo'ladi?",
+      "v": [
+        "Ikkidan bir qismi",
+        "Oltidan bir qismi",
+        "Sakkizdan bir qismi",
+        "To'rtdan bir qismi"
+      ],
+      "t": 2,
+      "izoh": "Kichik konus butun konusga o'xshash va k = 1/2. Hajmlar nisbati k³ = 1/8 ga teng. Kvadratini olish to'rtdan bir, balandliklar nisbatini olish esa ikkidan bir degan xato javoblarni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='210,230 209.8,231.7 209.3,233.4 208.3,235.1 207.1,236.8 205.4,238.4 203.5,240 201.2,241.5 198.5,242.9 195.6,244.3 192.4,245.6 189,246.7 185.3,247.8 181.3,248.8 177.2,249.6 173,250.3 168.5,250.9 164,251.4 159.4,251.7 154.7,251.9 150,252 145.3,251.9 140.6,251.7 136,251.4 131.5,250.9 127,250.3 122.8,249.6 118.7,248.8 114.7,247.8 111,246.7 107.6,245.6 104.4,244.3 101.5,242.9 98.8,241.5 96.5,240 94.6,238.4 92.9,236.8 91.7,235.1 90.7,233.4 90.2,231.7 90,230' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='90,230 90.2,228.3 90.7,226.6 91.7,224.9 92.9,223.2 94.6,221.6 96.5,220 98.8,218.5 101.5,217.1 104.4,215.7 107.6,214.4 111,213.3 114.7,212.2 118.7,211.2 122.8,210.4 127,209.7 131.5,209.1 136,208.6 140.6,208.3 145.3,208.1 150,208 154.7,208.1 159.4,208.3 164,208.6 168.5,209.1 173,209.7 177.2,210.4 181.3,211.2 185.3,212.2 189,213.3 192.4,214.4 195.6,215.7 198.5,217.1 201.2,218.5 203.5,220 205.4,221.6 207.1,223.2 208.3,224.9 209.3,226.6 209.8,228.3 210,230' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='90' x2='90' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='90' x2='210' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='150' cy='160' rx='30' ry='11' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='90' x2='150' y2='230' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='142' y='128' font-size='13' fill='%23334155' text-anchor='end'%3Eh/2%3C/text%3E%3Ctext x='142' y='200' font-size='13' fill='%23334155' text-anchor='end'%3Eh/2%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-kesim-oxshash",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#4fb6e454"
+    },
+    {
+      "q": "Piramida asosining yuzasi 72 sm². Uchidan boshlab balandlikning uchdan ikki qismida asosga parallel kesim o'tkazildi. Kesim yuzasi necha kvadrat santimetr?",
+      "v": [
+        "32 sm²",
+        "48 sm²",
+        "24 sm²",
+        "21,3 sm²"
+      ],
+      "t": 0,
+      "izoh": "O'xshashlik koeffitsienti k = 2/3, yuzalar nisbati esa k² = 4/9. Demak kesim yuzasi 72 · 4 : 9 = 32 sm². Faqat 2/3 ga ko'paytirish 48 sm², kub darajasini olish esa 21,3 sm² degan xato beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='84,235 150,265 216,235' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='84,235 150,205 216,235' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='85' x2='84' y2='235' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='85' x2='216' y2='235' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='85' x2='150' y2='265' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='85' x2='150' y2='205' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cpolygon points='106,185 150,205 194,185 150,165' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='85' x2='150' y2='235' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='144' y='140' font-size='13' fill='%23334155' text-anchor='end'%3E2h/3%3C/text%3E%3Ctext x='144' y='226' font-size='13' fill='%23334155' text-anchor='end'%3Eh/3%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Easos yuzasi 72 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-kesim-oxshash",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#ba15c794"
+    },
+    {
+      "q": "Konus asosga parallel tekislik bilan kesildi va hosil bo'lgan kichik konusning hajmi butun konus hajmining 1/27 qismini tashkil qildi. Kesim tekisligi asosdan konus balandligining qanday qismi masofada o'tgan?",
+      "v": [
+        "Uchdan ikki qismi masofada",
+        "Uchdan bir qismi masofada",
+        "Yigirma yettidan bir qismi masofada",
+        "To'qqizdan bir qismi masofada"
+      ],
+      "t": 0,
+      "izoh": "Hajmlar nisbati k³ = 1/27 bo'lgani uchun k = 1/3. Demak kesim uchdan balandlikning uchdan bir qismi masofada o'tgan. Asosdan hisoblasak qolgan qism 1 − 1/3 = 2/3 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-kesim-oxshash",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#944ef60a"
+    },
+    {
+      "q": "Bir xil materialdan yasalgan ikkita o'xshash haykalning balandliklari 40 sm va 120 sm. Kichigining massasi 5 kg bo'lsa, kattasining massasi necha kilogramm?",
+      "v": [
+        "15 kg",
+        "90 kg",
+        "135 kg",
+        "45 kg"
+      ],
+      "t": 2,
+      "izoh": "O'xshashlik koeffitsienti k = 120 : 40 = 3. Bir xil materialda massa hajmga proporsional, demak k³ = 27 marta ortadi: 5 · 27 = 135 kg. Kvadratini olish 45 kg, chiziqli nisbatni olish esa 15 kg degan xato beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='80' cy='183.3' rx='14.9' ry='5.6' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='94.9,230 94.9,230.4 94.7,230.9 94.5,231.3 94.2,231.7 93.8,232.1 93.3,232.5 92.7,232.9 92.1,233.3 91.4,233.6 90.6,234 89.7,234.3 88.8,234.5 87.8,234.8 86.8,235 85.7,235.2 84.6,235.3 83.5,235.4 82.3,235.5 81.2,235.6 80,235.6 78.8,235.6 77.7,235.5 76.5,235.4 75.4,235.3 74.3,235.2 73.2,235 72.2,234.8 71.2,234.5 70.3,234.3 69.4,234 68.6,233.6 67.9,233.3 67.3,232.9 66.7,232.5 66.2,232.1 65.8,231.7 65.5,231.3 65.3,230.9 65.1,230.4 65.1,230' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='65.1,230 65.1,229.6 65.3,229.1 65.5,228.7 65.8,228.3 66.2,227.9 66.7,227.5 67.3,227.1 67.9,226.7 68.6,226.4 69.4,226 70.3,225.7 71.2,225.5 72.2,225.2 73.2,225 74.3,224.8 75.4,224.7 76.5,224.6 77.7,224.5 78.8,224.4 80,224.4 81.2,224.4 82.3,224.5 83.5,224.6 84.6,224.7 85.7,224.8 86.8,225 87.8,225.2 88.8,225.5 89.7,225.7 90.6,226 91.4,226.4 92.1,226.7 92.7,227.1 93.3,227.5 93.8,227.9 94.2,228.3 94.5,228.7 94.7,229.1 94.9,229.6 94.9,230' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='65.1' y1='183.3' x2='65.1' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='94.9' y1='183.3' x2='94.9' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='215' cy='90' rx='44.8' ry='16.8' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='259.8,230 259.7,231.3 259.2,232.6 258.6,233.9 257.6,235.2 256.4,236.4 254.9,237.6 253.2,238.8 251.2,239.9 249.1,240.9 246.7,241.9 244.1,242.8 241.3,243.6 238.4,244.3 235.3,245 232.1,245.5 228.8,246 225.5,246.3 222,246.6 218.5,246.7 215,246.8 211.5,246.7 208,246.6 204.5,246.3 201.2,246 197.9,245.5 194.7,245 191.6,244.3 188.7,243.6 185.9,242.8 183.3,241.9 180.9,240.9 178.8,239.9 176.8,238.8 175.1,237.6 173.6,236.4 172.4,235.2 171.4,233.9 170.8,232.6 170.3,231.3 170.2,230' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='170.2,230 170.3,228.7 170.8,227.4 171.4,226.1 172.4,224.8 173.6,223.6 175.1,222.4 176.8,221.2 178.8,220.1 180.9,219.1 183.3,218.1 185.9,217.2 188.7,216.4 191.6,215.7 194.7,215 197.9,214.5 201.2,214 204.5,213.7 208,213.4 211.5,213.3 215,213.2 218.5,213.3 222,213.4 225.5,213.7 228.8,214 232.1,214.5 235.3,215 238.4,215.7 241.3,216.4 244.1,217.2 246.7,218.1 249.1,219.1 251.2,220.1 253.2,221.2 254.9,222.4 256.4,223.6 257.6,224.8 258.6,226.1 259.2,227.4 259.7,228.7 259.8,230' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='170.2' y1='90' x2='170.2' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='259.8' y1='90' x2='259.8' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='80' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3Ctext x='215' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3E120 sm%3C/text%3E%3Ctext x='80' y='280' font-size='13' fill='%23334155' text-anchor='middle'%3Ekichik haykal%3C/text%3E%3Ctext x='215' y='280' font-size='13' fill='%23334155' text-anchor='middle'%3Ekatta haykal%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-massa-narx",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#ed172240"
+    },
+    {
+      "q": "Avtomobilning 1 : 20 masshtabdagi maketi 1,5 kg keladi. Xuddi shu materialdan yasalgan haqiqiy avtomobilning massasi necha tonna bo'lardi?",
+      "v": [
+        "24 t",
+        "12 t",
+        "0,6 t",
+        "0,03 t"
+      ],
+      "t": 1,
+      "izoh": "Chiziqli o'lchamlar 20 marta katta, demak hajm va massa 20³ = 8000 marta katta bo'ladi. Massa 1,5 · 8000 = 12 000 kg, ya'ni 12 t. Kvadratga ko'tarish (20² = 400) 0,6 t, chiziqli nisbatning o'zi esa 0,03 t degan xato beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-massa-narx",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#271851d3"
+    },
+    {
+      "q": "Ikkita o'xshash idishni bo'yash uchun kichigiga 250 g bo'yoq sarflandi. Kattasining chiziqli o'lchamlari 2 marta katta bo'lsa, unga necha gramm bo'yoq kerak bo'ladi?",
+      "v": [
+        "500 g",
+        "2000 g",
+        "750 g",
+        "1000 g"
+      ],
+      "t": 3,
+      "izoh": "Bo'yoq miqdori bo'yaladigan sirt yuzasiga proporsional, sirt esa k² marta ortadi. Bu yerda k = 2, demak yuza 4 marta katta: 250 · 4 = 1000 g. Faqat 2 ga ko'paytirish 500 g, kub darajasi esa 2000 g degan xato beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='80' cy='160' rx='22.4' ry='8.4' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='102.4,230 102.3,230.7 102.1,231.3 101.8,232 101.3,232.6 100.7,233.2 100,233.8 99.1,234.4 98.1,234.9 97,235.5 95.8,235.9 94.5,236.4 93.2,236.8 91.7,237.2 90.2,237.5 88.6,237.8 86.9,238 85.2,238.2 83.5,238.3 81.8,238.4 80,238.4 78.2,238.4 76.5,238.3 74.8,238.2 73.1,238 71.4,237.8 69.8,237.5 68.3,237.2 66.8,236.8 65.5,236.4 64.2,235.9 63,235.5 61.9,234.9 60.9,234.4 60,233.8 59.3,233.2 58.7,232.6 58.2,232 57.9,231.3 57.7,230.7 57.6,230' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='57.6,230 57.7,229.3 57.9,228.7 58.2,228 58.7,227.4 59.3,226.8 60,226.2 60.9,225.6 61.9,225.1 63,224.5 64.2,224.1 65.5,223.6 66.8,223.2 68.3,222.8 69.8,222.5 71.4,222.2 73.1,222 74.8,221.8 76.5,221.7 78.2,221.6 80,221.6 81.8,221.6 83.5,221.7 85.2,221.8 86.9,222 88.6,222.2 90.2,222.5 91.7,222.8 93.2,223.2 94.5,223.6 95.8,224.1 97,224.5 98.1,225.1 99.1,225.6 100,226.2 100.7,226.8 101.3,227.4 101.8,228 102.1,228.7 102.3,229.3 102.4,230' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='57.6' y1='160' x2='57.6' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='102.4' y1='160' x2='102.4' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='215' cy='90' rx='44.8' ry='16.8' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='259.8,230 259.7,231.3 259.2,232.6 258.6,233.9 257.6,235.2 256.4,236.4 254.9,237.6 253.2,238.8 251.2,239.9 249.1,240.9 246.7,241.9 244.1,242.8 241.3,243.6 238.4,244.3 235.3,245 232.1,245.5 228.8,246 225.5,246.3 222,246.6 218.5,246.7 215,246.8 211.5,246.7 208,246.6 204.5,246.3 201.2,246 197.9,245.5 194.7,245 191.6,244.3 188.7,243.6 185.9,242.8 183.3,241.9 180.9,240.9 178.8,239.9 176.8,238.8 175.1,237.6 173.6,236.4 172.4,235.2 171.4,233.9 170.8,232.6 170.3,231.3 170.2,230' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='170.2,230 170.3,228.7 170.8,227.4 171.4,226.1 172.4,224.8 173.6,223.6 175.1,222.4 176.8,221.2 178.8,220.1 180.9,219.1 183.3,218.1 185.9,217.2 188.7,216.4 191.6,215.7 194.7,215 197.9,214.5 201.2,214 204.5,213.7 208,213.4 211.5,213.3 215,213.2 218.5,213.3 222,213.4 225.5,213.7 228.8,214 232.1,214.5 235.3,215 238.4,215.7 241.3,216.4 244.1,217.2 246.7,218.1 249.1,219.1 251.2,220.1 253.2,221.2 254.9,222.4 256.4,223.6 257.6,224.8 258.6,226.1 259.2,227.4 259.7,228.7 259.8,230' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='170.2' y1='90' x2='170.2' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='259.8' y1='90' x2='259.8' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='80' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Ekichik idish%3C/text%3E%3Ctext x='215' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Ekatta idish%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-massa-narx",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#5d740e31"
+    },
+    {
+      "q": "Sotuvchi bir xil shakldagi ikki o'lchamli asal bankalarini sotadi. Katta bankaning balandligi kichigidan 1,5 marta ortiq va narx hajmga mutanosib. Kichigi 30 000 so'm tursa, kattasi qancha turishi kerak?",
+      "v": [
+        "135 000 so'm",
+        "101 250 so'm",
+        "67 500 so'm",
+        "45 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Narx hajmga mutanosib, hajm esa k³ marta ortadi: 1,5³ = 3,375. Demak katta banka narxi 30 000 · 3,375 = 101 250 so'm. Kvadratni olish 67 500, chiziqli nisbatni olish esa 45 000 so'm degan xato beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "model-massa-narx",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#f7f94d40"
+    },
+    {
+      "q": "Fazodagi ikkita parallel tekislikka nisbatan ketma-ket simmetriya bajarildi, tekisliklar orasidagi masofa esa 7 sm. Bu ikki almashtirish natijasida qanday almashtirish hosil bo'ladi?",
+      "v": [
+        "Uzunligi 7 sm bo'lgan vektorga parallel ko'chirish",
+        "180° ga burish",
+        "Nuqtaga nisbatan simmetriya",
+        "Uzunligi 14 sm bo'lgan vektorga parallel ko'chirish"
+      ],
+      "t": 3,
+      "izoh": "Birinchi simmetriyada nuqta birinchi tekislikdan nariga o'tadi, ikkinchisida esa yana siljiydi. Har bir nuqta uchun umumiy siljish tekisliklar orasidagi masofaning ikkilangani, ya'ni 2 · 7 = 14 sm. Bu tekisliklarga perpendikulyar vektorga parallel ko'chirishdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='40,150 190,150 250,115 100,115' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='40,230 190,230 250,195 100,195' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='215' y1='133' x2='215' y2='213' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='224' y='176' font-size='13' fill='%23334155' text-anchor='start'%3E7 sm%3C/text%3E%3Ctext x='34' y='146' font-size='13' fill='%23334155' text-anchor='end'%3Eα%3C/text%3E%3Ctext x='34' y='226' font-size='13' fill='%23334155' text-anchor='end'%3Eβ%3C/text%3E%3Ccircle cx='120' cy='70' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='120' y='60' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-kompozitsiya",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#4419f4ae"
+    },
+    {
+      "q": "O'zaro perpendikulyar bo'lgan ikkita tekislikka nisbatan ketma-ket simmetriya bajarilsa, natijada qanday almashtirish hosil bo'ladi?",
+      "v": [
+        "Kesishish chizig'iga nisbatan simmetriya",
+        "Biror vektorga parallel ko'chirish",
+        "Nuqtaga nisbatan simmetriya",
+        "Ayniy almashtirish"
+      ],
+      "t": 0,
+      "izoh": "Kesishuvchi ikki tekislikdagi simmetriyalar kompozitsiyasi ularning kesishish chizig'i atrofida burish beradi, burchak esa tekisliklar orasidagi burchakning ikkilangani bo'ladi. Bu yerda 2 · 90° = 180°, ya'ni o'q atrofida 180° ga burish. U esa kesishish chizig'iga nisbatan simmetriya bilan bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-kompozitsiya",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#260641ef"
+    },
+    {
+      "q": "Jism avval (2; 0; −1) vektorga, so'ngra (−3; 4; 5) vektorga parallel ko'chirildi. Bu ikki ko'chirish o'rniga bitta qanday ko'chirish bajarish mumkin?",
+      "v": [
+        "(−6; 0; −5) vektorga",
+        "(1; 4; 4) vektorga",
+        "(−1; 4; 4) vektorga",
+        "(5; −4; −6) vektorga"
+      ],
+      "t": 2,
+      "izoh": "Ketma-ket bajarilgan ikki parallel ko'chirish yana parallel ko'chirish beradi, uning vektori esa vektorlar yig'indisiga teng. Koordinatalarni qo'shamiz: 2 + (−3) = −1, 0 + 4 = 4, −1 + 5 = 4. Demak natijaviy vektor (−1; 4; 4).",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='60' y1='220' x2='140' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='134.2,186.8 140,180 131,180.6' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='140' y1='180' x2='105' y2='90' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='111.3,96.5 105,90 104.7,99' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='60' y1='220' x2='105' y2='90' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='105.6,99 105,90 99,96.7' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='96' y='188' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='132' y='132' font-size='13' fill='%23334155' text-anchor='start'%3Eb%3C/text%3E%3Ctext x='64' y='150' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ccircle cx='60' cy='220' r='3' fill='%23334155' stroke='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-kompozitsiya",
+      "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi#dc54f283"
+    }
+  ]
+}

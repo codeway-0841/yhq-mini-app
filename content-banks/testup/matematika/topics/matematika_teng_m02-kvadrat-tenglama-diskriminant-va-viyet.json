@@ -1,0 +1,1609 @@
+{
+  "nom": "Kvadrat tenglama: diskriminant va Viyet teoremasi",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "3x² − 7x + 2 = 0 tenglamaning diskriminantini hisoblang va uni to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "73",
+        "37",
+        "25",
+        "−25"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda a = 3, b = −7, c = 2. Diskriminant formulasi D = b² − 4ac. Demak D = (−7)² − 4·3·2 = 49 − 24 = 25. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diskriminant-hisoblash",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#b9f00e0d"
+    },
+    {
+      "q": "x² + 6x + 9 = 0 tenglamada diskriminant qanday qiymatga ega bo'ladi?",
+      "v": [
+        "72",
+        "0",
+        "36",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsientlar: a = 1, b = 6, c = 9. D = b² − 4ac = 36 − 4·1·9 = 36 − 36 = 0. Diskriminant nolga teng, ya'ni tenglama to'la kvadrat ko'rinishida. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diskriminant-hisoblash",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#c89cf591"
+    },
+    {
+      "q": "2x² − 5x − 3 = 0 tenglama uchun diskriminantning qiymatini toping.",
+      "v": [
+        "1",
+        "7",
+        "25",
+        "49"
+      ],
+      "t": 3,
+      "izoh": "a = 2, b = −5, c = −3 bo'ladi. D = (−5)² − 4·2·(−3) = 25 + 24 = 49. Manfiy c oldidagi ikki minus qo'shishga aylanadi. Javob: 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diskriminant-hisoblash",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#aa38e395"
+    },
+    {
+      "q": "5x² − 4x + 3 = 0 tenglamaning diskriminantini hisoblab, to'g'ri javobni belgilang.",
+      "v": [
+        "−44",
+        "76",
+        "44",
+        "−76"
+      ],
+      "t": 0,
+      "izoh": "a = 5, b = −4, c = 3. Avval b² = (−4)² = 16 topiladi, so'ng 4ac = 4·5·3 = 60. D = 16 − 60 = −44. Javob: −44.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diskriminant-hisoblash",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#3c2543e3"
+    },
+    {
+      "q": "Sardor 4x² + 12x + 9 = 0 tenglamani yechishdan oldin diskriminantni hisoblamoqchi. U qanday son olishi kerak?",
+      "v": [
+        "288",
+        "144",
+        "0",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "a = 4, b = 12, c = 9 deb olamiz. D = 12² − 4·4·9 = 144 − 144 = 0. Diskriminant nol chiqdi, chunki chap tomon (2x + 3)² ga teng. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diskriminant-hisoblash",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#b436bb5d"
+    },
+    {
+      "q": "x² − 8x + 16 = 0 tenglama nechta har xil haqiqiy ildizga ega ekanligini aniqlang.",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "Haqiqiy ildizi yo'q",
+        "3 ta"
+      ],
+      "t": 1,
+      "izoh": "Diskriminantni hisoblaymiz: D = 64 − 4·1·16 = 64 − 64 = 0. D = 0 bo'lganda tenglama yagona ildizga ega bo'ladi, u x = 4. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-soni-diskriminant-belgisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#2a6333e7"
+    },
+    {
+      "q": "9x² + 6x + 4 = 0 tenglamaning haqiqiy ildizlari soni haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Ikkita har xil haqiqiy ildiz bor",
+        "Bitta haqiqiy ildiz bor",
+        "Haqiqiy ildizi yo'q",
+        "Uchta haqiqiy ildiz bor"
+      ],
+      "t": 2,
+      "izoh": "D = 6² − 4·9·4 = 36 − 144 = −108. Diskriminant manfiy bo'lgani uchun manfiy sondan kvadrat ildiz chiqarib bo'lmaydi. Demak haqiqiy ildiz mavjud emas. Javob: haqiqiy ildizi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-soni-diskriminant-belgisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#42ef444d"
+    },
+    {
+      "q": "7x² − 3x − 5 = 0 tenglamada ildizlar soni qancha bo'ladi va nima uchun aynan shunday?",
+      "v": [
+        "Ikkita, chunki D > 0",
+        "Bitta, chunki D = 0",
+        "Yo'q, chunki D < 0",
+        "Ikkita, chunki D = 0"
+      ],
+      "t": 0,
+      "izoh": "D = (−3)² − 4·7·(−5) = 9 + 140 = 149. Bu son musbat, ya'ni D > 0. Diskriminant musbat bo'lganda tenglama ikkita har xil haqiqiy ildizga ega. Javob: ikkita, chunki D > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-soni-diskriminant-belgisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#fe966dc3"
+    },
+    {
+      "q": "Quyidagi tenglamalardan qaysi biri yagona haqiqiy ildizga ega: x² + 5x + 4 = 0, x² − 6x + 9 = 0, x² + 2x + 5 = 0, x² − 1 = 0?",
+      "v": [
+        "x² + 5x + 4 = 0",
+        "x² − 6x + 9 = 0",
+        "x² + 2x + 5 = 0",
+        "x² − 1 = 0"
+      ],
+      "t": 1,
+      "izoh": "Har birining diskriminantini sanaymiz: birinchisida 25 − 16 = 9, ikkinchisida 36 − 36 = 0, uchinchisida 4 − 20 = −16, to'rtinchisida 0 + 4 = 4. Faqat ikkinchisida D = 0. Javob: x² − 6x + 9 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-soni-diskriminant-belgisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#8ffdd8d0"
+    },
+    {
+      "q": "Berilgan to'rt tenglamadan qaysi birining haqiqiy ildizi umuman yo'q: 2x² − 3x − 1 = 0, x² + x + 1 = 0, 3x² − 12 = 0, x² − 10x + 25 = 0?",
+      "v": [
+        "2x² − 3x − 1 = 0",
+        "x² + x + 1 = 0",
+        "3x² − 12 = 0",
+        "x² − 10x + 25 = 0"
+      ],
+      "t": 1,
+      "izoh": "Diskriminantlar: 9 + 8 = 17, keyin 1 − 4 = −3, so'ng 0 + 144 = 144, oxirgisida 100 − 100 = 0. Faqat ikkinchi tenglamada D manfiy chiqdi. Javob: x² + x + 1 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-soni-diskriminant-belgisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#444b53d7"
+    },
+    {
+      "q": "x² − 6x + m = 0 tenglama yagona ildizga ega bo'lishi uchun m qanday qiymatni qabul qilishi kerak?",
+      "v": [
+        "−9",
+        "36",
+        "6",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "Yagona ildiz sharti D = 0. Bu yerda D = 36 − 4m, demak 36 − 4m = 0. Bundan 4m = 36 va m = 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-yagona-ildiz-sharti",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#710fb0d4"
+    },
+    {
+      "q": "x² + kx + 25 = 0 tenglamaning ikkita teng ildizi bo'lishi uchun k ning musbat qiymatini toping.",
+      "v": [
+        "5",
+        "10",
+        "−10",
+        "25"
+      ],
+      "t": 1,
+      "izoh": "Teng ildizlar sharti D = 0, ya'ni k² − 4·1·25 = 0. Demak k² = 100 va k = 10 yoki k = −10. Shartga ko'ra musbat qiymat kerak. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-yagona-ildiz-sharti",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#90f71a78"
+    },
+    {
+      "q": "ax² − 12x + 9 = 0 kvadrat tenglama yagona ildizga ega bo'lsa, a ning qiymatini aniqlang.",
+      "v": [
+        "4",
+        "−4",
+        "36",
+        "144"
+      ],
+      "t": 0,
+      "izoh": "Kvadrat tenglamada a ≠ 0. Yagona ildiz uchun D = 0: 144 − 4·a·9 = 0. Bundan 36a = 144 va a = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-yagona-ildiz-sharti",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#be663ade"
+    },
+    {
+      "q": "x² + 2(m − 1)x + 4 = 0 tenglama karrali ildizga ega bo'ladigan m ning eng katta qiymatini toping.",
+      "v": [
+        "−1",
+        "1",
+        "3",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Karrali ildiz uchun D = 0. Bu yerda D = 4(m − 1)² − 16, demak (m − 1)² = 4. Bundan m − 1 = 2 yoki m − 1 = −2, ya'ni m = 3 yoki m = −1. Eng kattasi 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-yagona-ildiz-sharti",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#aca49625"
+    },
+    {
+      "q": "Kvadrat tenglama 3x² + 6x + c = 0 ko'rinishida berilgan. U bitta ildizga ega bo'lsa, c nechaga teng?",
+      "v": [
+        "3",
+        "12",
+        "6",
+        "−3"
+      ],
+      "t": 0,
+      "izoh": "Bitta ildiz sharti D = 0 ni beradi: 6² − 4·3·c = 0. Demak 36 = 12c va c = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-yagona-ildiz-sharti",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#3dbc2212"
+    },
+    {
+      "q": "x² − 5x + 6 = 0 tenglamaning ildizlarini toping va ularni to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "−2 va −3",
+        "1 va 6",
+        "2 va 3",
+        "−1 va 6"
+      ],
+      "t": 2,
+      "izoh": "D = 25 − 24 = 1, √D = 1. Ildizlar x = (5 ± 1)/2 formulasidan topiladi: x₁ = 3 va x₂ = 2. Tekshirish: 2 + 3 = 5 va 2·3 = 6. Javob: 2 va 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglamani-diskriminant-bilan-yechish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#9a7ef956"
+    },
+    {
+      "q": "2x² + 5x − 3 = 0 tenglamaning ildizlari qaysi javobda to'g'ri berilgan?",
+      "v": [
+        "−0,5 va 3",
+        "2 va −3",
+        "0,5 va 3",
+        "0,5 va −3"
+      ],
+      "t": 3,
+      "izoh": "D = 25 − 4·2·(−3) = 25 + 24 = 49, √D = 7. Ildizlar x = (−5 ± 7)/4 ko'rinishida: x₁ = 2/4 = 0,5 va x₂ = −12/4 = −3. Javob: 0,5 va −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglamani-diskriminant-bilan-yechish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#ae866af0"
+    },
+    {
+      "q": "3x² − 2x − 8 = 0 tenglamani yeching va ildizlarning kattasini ko'rsating.",
+      "v": [
+        "−4/3",
+        "2",
+        "8/3",
+        "4/3"
+      ],
+      "t": 1,
+      "izoh": "D = 4 + 4·3·8 = 4 + 96 = 100, √D = 10. Ildizlar x = (2 ± 10)/6: x₁ = 12/6 = 2 va x₂ = −8/6 = −4/3. Kattasi 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglamani-diskriminant-bilan-yechish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#7b784b93"
+    },
+    {
+      "q": "4x² − 12x + 5 = 0 tenglamaning kichik ildizini topib, to'g'ri variantni belgilang.",
+      "v": [
+        "0,5",
+        "2,5",
+        "1,5",
+        "−0,5"
+      ],
+      "t": 0,
+      "izoh": "D = 144 − 4·4·5 = 144 − 80 = 64, √D = 8. Ildizlar x = (12 ± 8)/8: x₁ = 20/8 = 2,5 va x₂ = 4/8 = 0,5. Kichigi 0,5. Javob: 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglamani-diskriminant-bilan-yechish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#14a0707a"
+    },
+    {
+      "q": "Nodira x² + 4x − 21 = 0 tenglamani diskriminant orqali yechdi. U qanday ildizlar juftini olishi kerak?",
+      "v": [
+        "−3 va 7",
+        "3 va 7",
+        "−3 va −7",
+        "3 va −7"
+      ],
+      "t": 3,
+      "izoh": "D = 16 − 4·1·(−21) = 16 + 84 = 100, √D = 10. Ildizlar x = (−4 ± 10)/2: x₁ = 6/2 = 3 va x₂ = −14/2 = −7. Javob: 3 va −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglamani-diskriminant-bilan-yechish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#3a9e2111"
+    },
+    {
+      "q": "x² − 9x + 20 = 0 tenglama ildizlarining yig'indisi va ko'paytmasini Viyet teoremasi yordamida toping.",
+      "v": [
+        "Yig'indisi 9, ko'paytmasi 20",
+        "Yig'indisi −9, ko'paytmasi 20",
+        "Yig'indisi 9, ko'paytmasi −20",
+        "Yig'indisi −9, ko'paytmasi −20"
+      ],
+      "t": 0,
+      "izoh": "Keltirilgan tenglamada x₁ + x₂ = −b va x₁·x₂ = c bo'ladi. Bu yerda b = −9, shuning uchun yig'indi 9 ga teng. Ko'paytma esa c = 20. Javob: yig'indisi 9, ko'paytmasi 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "viyet-yigindi-va-kopaytma",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#4ad8f4cc"
+    },
+    {
+      "q": "2x² − 10x + 6 = 0 tenglama ildizlarining yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "−5",
+        "5",
+        "10",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Umumiy holda Viyet teoremasiga ko'ra x₁ + x₂ = −b/a. Bu yerda a = 2 va b = −10. Demak yig'indi 10/2 = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "viyet-yigindi-va-kopaytma",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#b730beb4"
+    },
+    {
+      "q": "3x² + 7x − 6 = 0 tenglama ildizlarining ko'paytmasi qanday songa teng?",
+      "v": [
+        "2",
+        "−6",
+        "−2",
+        "−7/3"
+      ],
+      "t": 2,
+      "izoh": "Viyet teoremasiga ko'ra x₁·x₂ = c/a. Bu yerda c = −6 va a = 3. Demak ko'paytma −6/3 = −2 ga teng. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "viyet-yigindi-va-kopaytma",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#e7a7db29"
+    },
+    {
+      "q": "5x² − 15x + 10 = 0 tenglama ildizlari yig'indisining ularning ko'paytmasiga nisbatini hisoblang.",
+      "v": [
+        "2/3",
+        "3",
+        "2",
+        "1,5"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi x₁ + x₂ = 15/5 = 3, ko'paytma x₁·x₂ = 10/5 = 2. Endi nisbatni olamiz: 3/2 = 1,5. Javob: 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-yigindi-va-kopaytma",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#ddb40e6a"
+    },
+    {
+      "q": "Anvar bog'ida ekilgan ikki tup daraxt balandligi (metrda) x² − 14x + 45 = 0 tenglamaning ildizlari bilan ifodalanadi. Daraxtlarning umumiy balandligi qancha?",
+      "v": [
+        "14 m",
+        "45 m",
+        "9 m",
+        "−14 m"
+      ],
+      "t": 0,
+      "izoh": "Umumiy balandlik ildizlarning yig'indisiga teng. Viyet teoremasiga ko'ra keltirilgan tenglamada x₁ + x₂ = 14. Ildizlarni topish shart emas, garchi ular 5 m va 9 m bo'lsa ham. Javob: 14 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-yigindi-va-kopaytma",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#c6fe370c"
+    },
+    {
+      "q": "x² − 6x + 4 = 0 tenglama ildizlari uchun x₁² + x₂² ifodaning qiymatini hisoblang.",
+      "v": [
+        "44",
+        "28",
+        "32",
+        "36"
+      ],
+      "t": 1,
+      "izoh": "Viyet bo'yicha x₁ + x₂ = 6 va x₁·x₂ = 4. Simmetrik ifodani yoyamiz: x₁² + x₂² = (x₁ + x₂)² − 2x₁x₂. Demak 36 − 2·4 = 36 − 8 = 28. Javob: 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-kvadratlar-yigindisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#127cb637"
+    },
+    {
+      "q": "x² + 5x + 3 = 0 tenglamaning ildizlari x₁ va x₂ bo'lsa, ularning kvadratlari yig'indisini toping.",
+      "v": [
+        "31",
+        "22",
+        "19",
+        "−19"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda x₁ + x₂ = −5 va x₁·x₂ = 3. Formuladan foydalanamiz: x₁² + x₂² = (x₁ + x₂)² − 2x₁x₂ = 25 − 6 = 19. Yig'indi manfiy bo'lsa ham kvadrati musbat chiqadi. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-kvadratlar-yigindisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#32a03434"
+    },
+    {
+      "q": "2x² − 8x + 3 = 0 tenglamaning ildizlari uchun x₁² + x₂² ifodasi qanday qiymatga ega?",
+      "v": [
+        "19",
+        "58",
+        "16",
+        "13"
+      ],
+      "t": 3,
+      "izoh": "Avval a ga bo'lamiz: x₁ + x₂ = 8/2 = 4 va x₁·x₂ = 3/2 = 1,5. Endi x₁² + x₂² = 4² − 2·1,5 = 16 − 3 = 13. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-kvadratlar-yigindisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#877737b1"
+    },
+    {
+      "q": "x² − 7x + 10 = 0 tenglama ildizlarining kvadratlari yig'indisi ularning ko'paytmasidan necha birlik ko'p?",
+      "v": [
+        "9",
+        "19",
+        "29",
+        "39"
+      ],
+      "t": 1,
+      "izoh": "Viyet bo'yicha yig'indi 7, ko'paytma 10. Kvadratlar yig'indisi 49 − 2·10 = 29. Endi farqni olamiz: 29 − 10 = 19. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "viyet-kvadratlar-yigindisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#46ec5316"
+    },
+    {
+      "q": "Zilola to'g'ri to'rtburchak gilamning ikki o'lchovi (metrda) x² − 11x + 24 = 0 tenglama ildizlariga teng deb topdi. Bu o'lchovlar kvadratlari yig'indisi nechaga teng?",
+      "v": [
+        "121",
+        "97",
+        "24",
+        "73"
+      ],
+      "t": 3,
+      "izoh": "O'lchovlar yig'indisi 11, ko'paytmasi 24 ga teng. Kvadratlar yig'indisi (x₁ + x₂)² − 2x₁x₂ = 121 − 48 = 73. Tekshirish: o'lchovlar 3 va 8, ya'ni 9 + 64 = 73. Javob: 73.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-kvadratlar-yigindisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#14c3b266"
+    },
+    {
+      "q": "x² − 8x + 12 = 0 tenglama ildizlari uchun 1/x₁ + 1/x₂ ifodaning qiymatini toping.",
+      "v": [
+        "3/2",
+        "−2/3",
+        "2/3",
+        "1/12"
+      ],
+      "t": 2,
+      "izoh": "Kasrlarni umumiy maxrajga keltiramiz: 1/x₁ + 1/x₂ = (x₁ + x₂)/(x₁·x₂). Viyet bo'yicha yig'indi 8, ko'paytma 12. Demak 8/12 = 2/3. Javob: 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-teskarilar-yigindisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#4f272c12"
+    },
+    {
+      "q": "2x² + 6x + 4 = 0 tenglamaning ildizlari x₁ va x₂ bo'lsa, 1/x₁ + 1/x₂ nimaga teng?",
+      "v": [
+        "−1,5",
+        "1,5",
+        "−3",
+        "−2/3"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi x₁ + x₂ = −6/2 = −3, ko'paytma x₁·x₂ = 4/2 = 2. Teskarilar yig'indisi (x₁ + x₂)/(x₁·x₂) = −3/2 = −1,5. Javob: −1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-teskarilar-yigindisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#de7ab0f3"
+    },
+    {
+      "q": "x² − 5x + 2 = 0 tenglama ildizlarining teskari qiymatlari yig'indisi qanday songa teng?",
+      "v": [
+        "0,4",
+        "2,5",
+        "−2,5",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "Teskarilar yig'indisi (x₁ + x₂)/(x₁·x₂) formulasi bilan topiladi. Bu yerda yig'indi 5, ko'paytma 2. Demak 5/2 = 2,5. Javob: 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-teskarilar-yigindisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#9eb9e25a"
+    },
+    {
+      "q": "3x² − 4x − 2 = 0 tenglama ildizlari uchun (x₁ + x₂)/(x₁·x₂) ifodani hisoblang.",
+      "v": [
+        "2",
+        "−1/2",
+        "4/3",
+        "−2"
+      ],
+      "t": 3,
+      "izoh": "Viyet teoremasi bo'yicha x₁ + x₂ = 4/3 va x₁·x₂ = −2/3. Nisbatni olamiz: (4/3) : (−2/3) = −2. Uchlik maxrajlar qisqaradi. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "viyet-teskarilar-yigindisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#853d5643"
+    },
+    {
+      "q": "Ikki ishchining bir xil ishni alohida bajarish vaqtlari (soatda) x² − 10x + 24 = 0 tenglama ildizlariga teng. Ularning bir soatlik ish unumlari yig'indisi qanday kasr bo'ladi?",
+      "v": [
+        "12/5",
+        "1/24",
+        "5/12",
+        "1/10"
+      ],
+      "t": 2,
+      "izoh": "Ish unumlari 1/x₁ va 1/x₂ ga teng. Ularning yig'indisi (x₁ + x₂)/(x₁·x₂) = 10/24 = 5/12. Ildizlar 4 va 6 soat ekanini tekshirish ham shu natijani beradi. Javob: 5/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "viyet-teskarilar-yigindisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#0b799ef7"
+    },
+    {
+      "q": "x² − 7x + 12 = 0 tenglama ildizlari ayirmasining modulini hisoblang.",
+      "v": [
+        "7",
+        "1",
+        "5",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "Avval diskriminant topiladi: D = 49 − 48 = 1. Ildizlar ayirmasining moduli √D/a formulasi bilan hisoblanadi, ya'ni √1/1 = 1. Tekshirish: ildizlar 3 va 4, ularning ayirmasi 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "viyet-ildizlar-ayirmasi-moduli",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#a8387812"
+    },
+    {
+      "q": "x² + 2x − 15 = 0 tenglamaning katta ildizi kichigidan necha birlik ko'p ekanini toping.",
+      "v": [
+        "2",
+        "4",
+        "8",
+        "15"
+      ],
+      "t": 2,
+      "izoh": "D = 4 + 60 = 64, demak √D = 8. Ildizlar ayirmasining moduli √D/a = 8/1 = 8 ga teng. Tekshirish uchun ildizlar 3 va −5, farqi 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-ildizlar-ayirmasi-moduli",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#44210ea5"
+    },
+    {
+      "q": "2x² − 9x + 4 = 0 tenglama ildizlari ayirmasining moduli nechaga teng bo'ladi?",
+      "v": [
+        "3,5",
+        "7",
+        "4,5",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "D = 81 − 4·2·4 = 81 − 32 = 49, √D = 7. Bosh koeffitsient 2 bo'lgani uchun modul 7/2 = 3,5 ga teng. Ildizlar 4 va 0,5, ularning farqi ham 3,5. Javob: 3,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-ildizlar-ayirmasi-moduli",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#a983943e"
+    },
+    {
+      "q": "x² − 6x + k = 0 tenglama ildizlari ayirmasining moduli 4 ga teng bo'lsa, k koeffitsientini toping.",
+      "v": [
+        "4",
+        "5",
+        "9",
+        "20"
+      ],
+      "t": 1,
+      "izoh": "Modul √D ga teng, demak √D = 4 va D = 16. Ikkinchi tomondan D = 36 − 4k, shuning uchun 36 − 4k = 16. Bundan 4k = 20 va k = 5. Ildizlar 1 va 5 bo'lib, farqi haqiqatan 4. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "viyet-ildizlar-ayirmasi-moduli",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#b96e936a"
+    },
+    {
+      "q": "Oilada ikki farzandning yoshi x² − 15x + 54 = 0 tenglama ildizlariga teng. Katta farzand kichigidan necha yosh katta?",
+      "v": [
+        "15",
+        "9",
+        "6",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "D = 225 − 216 = 9, demak √D = 3. Yoshlar farqi √D/a = 3 ga teng. Haqiqatan ildizlar 6 va 9, ular real yoshlar. Javob: 3 yosh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-ildizlar-ayirmasi-moduli",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#f2b1a07f"
+    },
+    {
+      "q": "x² + bx − 10 = 0 tenglamaning ildizlaridan biri 5 ga teng. b koeffitsientini aniqlang.",
+      "v": [
+        "−3",
+        "3",
+        "−15",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Ildizni tenglamaga qo'yamiz: 25 + 5b − 10 = 0. Bundan 5b = −15 va b = −3. Ikkinchi ildiz Viyet bo'yicha −10/5 = −2 chiqadi. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-ildiz-orqali-koeffitsient",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#c808cdd1"
+    },
+    {
+      "q": "3x² + mx − 6 = 0 tenglamaning bitta ildizi 2 bo'lsa, m koeffitsienti nechaga teng?",
+      "v": [
+        "3",
+        "−3",
+        "−6",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "x = 2 ni qo'yamiz: 3·4 + 2m − 6 = 0, ya'ni 12 + 2m − 6 = 0. Bundan 2m = −6 va m = −3. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-ildiz-orqali-koeffitsient",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#a3c232e9"
+    },
+    {
+      "q": "x² − 8x + c = 0 tenglamaning ildizlaridan biri 3 ga teng bo'lsa, c ning qiymati qanday?",
+      "v": [
+        "−15",
+        "5",
+        "15",
+        "24"
+      ],
+      "t": 2,
+      "izoh": "x = 3 ni qo'yamiz: 9 − 24 + c = 0, demak c = 15. Viyet bo'yicha ikkinchi ildiz 15/3 = 5 va yig'indi 8 chiqadi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-ildiz-orqali-koeffitsient",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#58514870"
+    },
+    {
+      "q": "x² + px + q = 0 tenglamaning ildizlari 2 va −7 ekani ma'lum. p va q koeffitsientlarini aniqlang.",
+      "v": [
+        "p = −5, q = −14",
+        "p = 5, q = 14",
+        "p = −5, q = 14",
+        "p = 5, q = −14"
+      ],
+      "t": 3,
+      "izoh": "Viyet teoremasiga ko'ra x₁ + x₂ = −p, ya'ni 2 + (−7) = −5 = −p, demak p = 5. Ko'paytma q = 2·(−7) = −14. Javob: p = 5, q = −14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-ildiz-orqali-koeffitsient",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#5f19947e"
+    },
+    {
+      "q": "Do'kondagi ikki navli kartoshkaning bir kilogramm narxi (ming so'mda) x² + bx + 120 = 0 tenglamaning ildizlari. Narxlardan biri 10 ming so'm bo'lsa, b nechaga teng?",
+      "v": [
+        "22",
+        "−22",
+        "−10",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "x = 10 ni qo'yamiz: 100 + 10b + 120 = 0, demak 10b = −220 va b = −22. Ikkinchi navning narxi Viyet bo'yicha 120 : 10 = 12 ming so'm. Javob: −22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bitta-ildiz-orqali-koeffitsient",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#8d980551"
+    },
+    {
+      "q": "Ildizlari 4 va −6 bo'lgan keltirilgan kvadrat tenglamani tuzing va to'g'ri javobni tanlang.",
+      "v": [
+        "x² + 2x − 24 = 0",
+        "x² − 2x − 24 = 0",
+        "x² + 2x + 24 = 0",
+        "x² − 2x + 24 = 0"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi 4 + (−6) = −2, ko'paytma 4·(−6) = −24. Keltirilgan tenglama x² − (yig'indi)x + (ko'paytma) = 0 ko'rinishida yoziladi. Demak x² + 2x − 24 = 0. Javob: x² + 2x − 24 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlardan-tenglama-tuzish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#37f91614"
+    },
+    {
+      "q": "Ildizlari yig'indisi 7 ga, ko'paytmasi 10 ga teng bo'lgan keltirilgan kvadrat tenglamani ko'rsating.",
+      "v": [
+        "x² + 7x + 10 = 0",
+        "x² − 7x + 10 = 0",
+        "x² − 7x − 10 = 0",
+        "x² + 7x − 10 = 0"
+      ],
+      "t": 1,
+      "izoh": "Keltirilgan tenglamaning umumiy ko'rinishi x² − sx + p = 0, bunda s — yig'indi, p — ko'paytma. Bu yerda s = 7 va p = 10. Demak x² − 7x + 10 = 0. Javob: x² − 7x + 10 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlardan-tenglama-tuzish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#384b4663"
+    },
+    {
+      "q": "Ildizlari faqat 3 dan iborat, bosh koeffitsienti 2 ga teng kvadrat tenglamani toping.",
+      "v": [
+        "2x² − 6x + 9 = 0",
+        "2x² + 12x + 18 = 0",
+        "2x² − 12x + 18 = 0",
+        "x² − 6x + 18 = 0"
+      ],
+      "t": 2,
+      "izoh": "Karrali ildiz 3 bo'lgani uchun tenglama 2(x − 3)² = 0 ko'rinishida. Qavsni ochamiz: 2(x² − 6x + 9) = 2x² − 12x + 18. Javob: 2x² − 12x + 18 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlardan-tenglama-tuzish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#55bec81f"
+    },
+    {
+      "q": "Ildizlari 2 + √3 va 2 − √3 sonlaridan iborat keltirilgan kvadrat tenglamani tuzing.",
+      "v": [
+        "x² − 4x − 1 = 0",
+        "x² + 4x + 1 = 0",
+        "x² − 4x + 3 = 0",
+        "x² − 4x + 1 = 0"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi (2 + √3) + (2 − √3) = 4 ga teng. Ko'paytma kvadratlar ayirmasi formulasi bilan 4 − 3 = 1 chiqadi. Demak tenglama x² − 4x + 1 = 0. Javob: x² − 4x + 1 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlardan-tenglama-tuzish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#7ad69473"
+    },
+    {
+      "q": "Tomorqaning bo'yi 12 m, eni esa 5 m. Shu ikki o'lchov ildiz bo'ladigan keltirilgan kvadrat tenglamani tuzing.",
+      "v": [
+        "x² + 17x + 60 = 0",
+        "x² − 17x + 60 = 0",
+        "x² − 17x − 60 = 0",
+        "x² − 60x + 17 = 0"
+      ],
+      "t": 1,
+      "izoh": "O'lchovlar yig'indisi 12 + 5 = 17, ko'paytmasi 12·5 = 60. Keltirilgan tenglama x² − 17x + 60 = 0 ko'rinishida bo'ladi. Javob: x² − 17x + 60 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlardan-tenglama-tuzish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#97a6b45e"
+    },
+    {
+      "q": "x² + 8x − 9 = 0 tenglamani to'la kvadratga keltirib yeching va ildizlarni ko'rsating.",
+      "v": [
+        "−1 va 9",
+        "1 va 9",
+        "1 va −9",
+        "−1 va −9"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonga 16 qo'shamiz: x² + 8x + 16 = 9 + 16, ya'ni (x + 4)² = 25. Bundan x + 4 = 5 yoki x + 4 = −5. Demak x = 1 yoki x = −9. Javob: 1 va −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadratga-keltirish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#38f02441"
+    },
+    {
+      "q": "x² − 10x + 21 = 0 tenglamani (x − a)² = b ko'rinishiga keltirsak, a va b qanday bo'ladi?",
+      "v": [
+        "a = 5, b = 46",
+        "a = 10, b = 4",
+        "a = −5, b = 4",
+        "a = 5, b = 4"
+      ],
+      "t": 3,
+      "izoh": "Erkin hadni o'ng tomonga o'tkazamiz: x² − 10x = −21. Ikkala tomonga 25 qo'shsak, (x − 5)² = 4 hosil bo'ladi. Demak a = 5 va b = 4. Javob: a = 5, b = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadratga-keltirish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#e3807c51"
+    },
+    {
+      "q": "2x² − 12x + 10 = 0 tenglamani to'la kvadrat usuli bilan yechganda qanday ildizlar hosil bo'ladi?",
+      "v": [
+        "−1 va −5",
+        "3 va 5",
+        "1 va 3",
+        "1 va 5"
+      ],
+      "t": 3,
+      "izoh": "Avval ikkala tomonni 2 ga bo'lamiz: x² − 6x + 5 = 0. To'la kvadrat hosil qilamiz: (x − 3)² = 4. Bundan x − 3 = 2 yoki x − 3 = −2, ya'ni x = 5 yoki x = 1. Javob: 1 va 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadratga-keltirish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#462ca607"
+    },
+    {
+      "q": "x² + 6x + 11 = 0 tenglamani to'la kvadratga keltirgach, uning ildizlari haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Ikkita har xil haqiqiy ildiz bor",
+        "Haqiqiy ildizi yo'q",
+        "Bitta karrali ildiz bor",
+        "Ildizlari 3 va −3"
+      ],
+      "t": 1,
+      "izoh": "Ifodani almashtiramiz: x² + 6x + 9 + 2 = 0, ya'ni (x + 3)² = −2. Kvadrat hech qachon manfiy bo'lmaydi, shuning uchun tenglik bajarilmaydi. Javob: haqiqiy ildizi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-kvadratga-keltirish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#58b94077"
+    },
+    {
+      "q": "Bog'bon ariq uzunligini topish uchun x² − 14x + 40 = 0 tenglamani to'la kvadrat usuli bilan yechmoqchi. Tenglama qaysi ko'rinishga keladi?",
+      "v": [
+        "(x − 7)² = 9",
+        "(x − 7)² = 40",
+        "(x − 14)² = 9",
+        "(x + 7)² = 9"
+      ],
+      "t": 0,
+      "izoh": "Erkin hadni o'ngga o'tkazamiz: x² − 14x = −40. Ikkala tomonga 49 qo'shamiz: (x − 7)² = 49 − 40 = 9. Bundan uzunlik 10 m yoki 4 m chiqadi. Javob: (x − 7)² = 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadratga-keltirish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#01e113e0"
+    },
+    {
+      "q": "x² + 9x + 14 = 0 tenglamani yechmasdan turib, uning ildizlari ishorasi haqida qanday xulosa chiqariladi?",
+      "v": [
+        "Ikkalasi ham musbat",
+        "Biri musbat, biri manfiy",
+        "Biri nolga teng",
+        "Ikkalasi ham manfiy"
+      ],
+      "t": 3,
+      "izoh": "Viyet bo'yicha ko'paytma 14 musbat, demak ildizlar bir xil ishorada. Yig'indi esa −9, ya'ni manfiy. Bir xil ishorali, yig'indisi manfiy sonlar faqat manfiy bo'ladi. Javob: ikkalasi ham manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-ishorasini-tahlil",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#293049b9"
+    },
+    {
+      "q": "3x² − 4x − 7 = 0 tenglama ildizlarining ishoralari qanday bo'lishini aniqlang.",
+      "v": [
+        "Ikkalasi musbat",
+        "Ikkalasi manfiy",
+        "Har xil ishorada, moduli kattasi musbat",
+        "Har xil ishorada, moduli kattasi manfiy"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytma −7/3 manfiy, demak ildizlar har xil ishorada. Yig'indi 4/3 musbat, ya'ni musbat ildizning moduli kattaroq. Javob: har xil ishorada, moduli kattasi musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-ishorasini-tahlil",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#65dde41d"
+    },
+    {
+      "q": "x² − 2mx + 9 = 0 tenglamaning ikkala ildizi ham musbat bo'lishi uchun m qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "m ≥ 3",
+        "m ≤ −3",
+        "m > 0",
+        "−3 ≤ m ≤ 3"
+      ],
+      "t": 0,
+      "izoh": "Uch shartni birga tekshiramiz. Birinchidan D ≥ 0: 4m² − 36 ≥ 0, ya'ni m ning moduli 3 dan kichik emas. Ikkinchidan ko'paytma 9 musbat. Uchinchidan yig'indi 2m musbat bo'lishi kerak, demak m musbat. Javob: m ≥ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-ishorasini-tahlil",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#540a7848"
+    },
+    {
+      "q": "Ikki mahsulotning bir donadan keladigan foydasi (ming so'mda) x² + 3x − 40 = 0 tenglama ildizlari. Ulardan biri zarar keltirayotganini qanday dalil bilan isbotlash mumkin?",
+      "v": [
+        "Ko'paytma manfiy, demak ildizlar har xil ishorada",
+        "Yig'indi musbat, demak ikkalasi ham musbat",
+        "Diskriminant musbat, demak ikkalasi ham musbat",
+        "Ko'paytma manfiy, demak ikkalasi ham manfiy"
+      ],
+      "t": 0,
+      "izoh": "Viyet bo'yicha ildizlar ko'paytmasi −40 ga teng, ya'ni manfiy. Ko'paytma manfiy bo'lsa, ildizlardan biri musbat, ikkinchisi manfiy. Manfiy foyda esa zarar demakdir. Haqiqatan ildizlar 5 va −8. Javob: ko'paytma manfiy, demak ildizlar har xil ishorada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-ishorasini-tahlil",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#88009fac"
+    },
+    {
+      "q": "x² − 4x + 1 = 0 tenglama ildizlari uchun x₁³ + x₂³ ifodaning qiymatini hisoblang.",
+      "v": [
+        "64",
+        "76",
+        "48",
+        "52"
+      ],
+      "t": 3,
+      "izoh": "Viyet bo'yicha yig'indi 4, ko'paytma 1. Kublar yig'indisi formulasi x₁³ + x₂³ = (x₁ + x₂)³ − 3x₁x₂(x₁ + x₂). Demak 64 − 3·1·4 = 64 − 12 = 52. Javob: 52.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "viyet-kublar-yigindisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#516052d7"
+    },
+    {
+      "q": "x² − 3x + 2 = 0 tenglamaning ildizlari kublarining yig'indisini toping.",
+      "v": [
+        "27",
+        "9",
+        "45",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi 3, ko'paytma 2. Formuladan foydalanamiz: 3³ − 3·2·3 = 27 − 18 = 9. Tekshirish: ildizlar 1 va 2, ya'ni 1 + 8 = 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-kublar-yigindisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#b9b454c2"
+    },
+    {
+      "q": "x² + 2x − 5 = 0 tenglama ildizlari uchun x₁³ + x₂³ ifodasi nimaga teng bo'ladi?",
+      "v": [
+        "22",
+        "−8",
+        "−38",
+        "38"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda yig'indi −2, ko'paytma −5. Formulaga qo'yamiz: (−2)³ − 3·(−5)·(−2) = −8 − 30 = −38. Ikki manfiyning ko'paytmasi musbat bo'lib, minus bilan ayriladi. Javob: −38.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "viyet-kublar-yigindisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#7189f882"
+    },
+    {
+      "q": "2x² − 8x + 6 = 0 tenglama ildizlarining kublari yig'indisi qanday songa teng?",
+      "v": [
+        "64",
+        "82",
+        "52",
+        "28"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomonni 2 ga bo'lsak x² − 4x + 3 = 0 bo'ladi, ya'ni yig'indi 4, ko'paytma 3. Kublar yig'indisi 4³ − 3·3·4 = 64 − 36 = 28. Ildizlar 1 va 3, ya'ni 1 + 27 = 28. Javob: 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-kublar-yigindisi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#14c2c93b"
+    },
+    {
+      "q": "x² − 6x + m = 0 tenglama ildizlarining kvadratlari yig'indisi 20 ga teng bo'lsa, m ni toping.",
+      "v": [
+        "−8",
+        "16",
+        "8",
+        "28"
+      ],
+      "t": 2,
+      "izoh": "Viyet bo'yicha yig'indi 6, ko'paytma m. Kvadratlar yig'indisi 36 − 2m ga teng. Shartga ko'ra 36 − 2m = 20, bundan 2m = 16 va m = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrni-ildizlar-shartidan-topish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#e11f8e23"
+    },
+    {
+      "q": "x² + kx + 8 = 0 tenglama ildizlarining teskari qiymatlari yig'indisi 0,75 ga teng. k nechaga teng?",
+      "v": [
+        "6",
+        "−6",
+        "0,75",
+        "−8"
+      ],
+      "t": 1,
+      "izoh": "Teskarilar yig'indisi (x₁ + x₂)/(x₁·x₂) = −k/8 ko'rinishida. Shartga ko'ra −k/8 = 0,75, demak k = −6. Ildizlar 2 va 4 bo'lib, 1/2 + 1/4 = 0,75 chiqadi. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrni-ildizlar-shartidan-topish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#9a5aa871"
+    },
+    {
+      "q": "x² − 9x + c = 0 tenglama ildizlaridan biri ikkinchisidan ikki marta katta bo'lsa, c ning qiymatini toping.",
+      "v": [
+        "9",
+        "27",
+        "18",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Ildizlarni t va 2t deb belgilaymiz. Yig'indi t + 2t = 3t = 9, demak t = 3. Ildizlar 3 va 6, ularning ko'paytmasi c = 18. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrni-ildizlar-shartidan-topish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#122fb0be"
+    },
+    {
+      "q": "x² − 2mx + (m + 6) = 0 tenglama ildizlarining yig'indisi ko'paytmasiga teng bo'lsa, m ning qiymatini aniqlang.",
+      "v": [
+        "−6",
+        "3",
+        "2",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Viyet bo'yicha yig'indi 2m, ko'paytma m + 6. Shartga ko'ra 2m = m + 6, bundan m = 6. Bu holda D = 144 − 48 = 96 musbat, demak ildizlar mavjud. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrni-ildizlar-shartidan-topish",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#3fae2d5f"
+    },
+    {
+      "q": "x² − 5x + 3 = 0 tenglamaning ildizlari x₁ va x₂. Ildizlari x₁ + 1 va x₂ + 1 bo'lgan keltirilgan tenglamani tuzing.",
+      "v": [
+        "x² − 7x + 9 = 0",
+        "x² − 6x + 4 = 0",
+        "x² − 7x + 4 = 0",
+        "x² − 5x + 4 = 0"
+      ],
+      "t": 0,
+      "izoh": "Yangi yig'indi (x₁ + 1) + (x₂ + 1) = 5 + 2 = 7. Yangi ko'paytma (x₁ + 1)(x₂ + 1) = x₁x₂ + x₁ + x₂ + 1 = 3 + 5 + 1 = 9. Demak tenglama x² − 7x + 9 = 0. Javob: x² − 7x + 9 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlari-ozgargan-yangi-tenglama",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#1e1e72f0"
+    },
+    {
+      "q": "x² − 4x + 2 = 0 tenglama ildizlari x₁ va x₂ bo'lsa, ildizlari 2x₁ va 2x₂ bo'lgan keltirilgan tenglamani toping.",
+      "v": [
+        "x² − 8x + 4 = 0",
+        "x² − 8x + 8 = 0",
+        "x² − 4x + 8 = 0",
+        "x² − 8x + 16 = 0"
+      ],
+      "t": 1,
+      "izoh": "Yangi ildizlar yig'indisi 2(x₁ + x₂) = 2·4 = 8. Yangi ko'paytma 4·x₁x₂ = 4·2 = 8. Demak tenglama x² − 8x + 8 = 0 ko'rinishida. Javob: x² − 8x + 8 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlari-ozgargan-yangi-tenglama",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#528b41ee"
+    },
+    {
+      "q": "x² + 6x + 5 = 0 tenglama ildizlariga teskari sonlar qaysi tenglamaning ildizlari bo'ladi?",
+      "v": [
+        "x² + 6x + 5 = 0",
+        "5x² + x + 6 = 0",
+        "5x² + 6x + 1 = 0",
+        "x² + 5x + 6 = 0"
+      ],
+      "t": 2,
+      "izoh": "Teskari ildizli tenglama koeffitsientlarni teskari tartibda yozish bilan hosil bo'ladi. Berilgan tenglamada koeffitsientlar 1, 6, 5 edi, teskarisi 5, 6, 1 bo'ladi. Tekshirish: ildizlar −1 va −5, teskarilari −1 va −1/5, ularning yig'indisi −6/5 va ko'paytmasi 1/5. Javob: 5x² + 6x + 1 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlari-ozgargan-yangi-tenglama",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#86863be1"
+    },
+    {
+      "q": "Ravshanning to'g'ri to'rtburchak shaklidagi tomorqasi bo'yi enidan 3 m uzun, yuzi esa 40 m². Tomorqaning enini toping.",
+      "v": [
+        "8 m",
+        "5 m",
+        "4 m",
+        "20 m"
+      ],
+      "t": 1,
+      "izoh": "Enni x deb olsak, bo'yi x + 3 bo'ladi. Yuza tenglamasi x(x + 3) = 40, ya'ni x² + 3x − 40 = 0. D = 9 + 160 = 169, √D = 13, shuning uchun x = (−3 + 13)/2 = 5. Manfiy ildiz uzunlik bo'la olmaydi. Javob: 5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-maydon-va-olcham",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#ec65ddd5"
+    },
+    {
+      "q": "Kvadrat shaklidagi hovlining bir tomoni 3 m ga uzaytirilib, ikkinchisi 2 m ga qisqartirildi. Hosil bo'lgan to'g'ri to'rtburchakning yuzi 66 m² ga teng. Hovlining dastlabki tomoni necha metr edi?",
+      "v": [
+        "6 m",
+        "8 m",
+        "4 m",
+        "10 m"
+      ],
+      "t": 1,
+      "izoh": "Dastlabki tomonni x deb belgilaymiz, u holda (x + 3)(x − 2) = 66. Qavslarni ochamiz: x² + x − 6 = 66, ya'ni x² + x − 72 = 0. D = 1 + 288 = 289, √D = 17, ildizlar (−1 ± 17) : 2, ya'ni 8 va −9. Uzunlik musbat bo'lgani uchun x = 8. Javob: 8 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-maydon-va-olcham",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#6e021b84"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchak shaklidagi bayroqning katetlari ayirmasi 7 sm, yuzi esa 30 sm². Kichik katetni toping.",
+      "v": [
+        "12 sm",
+        "6 sm",
+        "5 sm",
+        "10 sm"
+      ],
+      "t": 2,
+      "izoh": "Kichik katet x bo'lsa, kattasi x + 7 bo'ladi. Yuza formulasidan x(x + 7)/2 = 30, ya'ni x² + 7x − 60 = 0. D = 49 + 240 = 289, √D = 17, demak x = (−7 + 17)/2 = 5. Katetlar 5 sm va 12 sm. Javob: 5 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-maydon-va-olcham",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#5cf04740"
+    },
+    {
+      "q": "Maktab gulzorining perimetri 26 m, yuzi esa 40 m² ga teng. Gulzorning uzun tomoni necha metr?",
+      "v": [
+        "8 m",
+        "5 m",
+        "13 m",
+        "10 m"
+      ],
+      "t": 0,
+      "izoh": "Qo'shni tomonlar yig'indisi perimetrning yarmiga, ya'ni 13 ga teng, ko'paytmasi esa 40. Viyet teoremasiga ko'ra ular x² − 13x + 40 = 0 tenglama ildizlari. D = 169 − 160 = 9, ildizlar 8 va 5. Uzun tomon 8 m. Javob: 8 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-maydon-va-olcham",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#5191b436"
+    },
+    {
+      "q": "Yig'ilishlar zalining bo'yi enidan 4 m uzun bo'lib, uning yuzi 96 m² ga teng. Zalning perimetrini hisoblang.",
+      "v": [
+        "20 m",
+        "96 m",
+        "32 m",
+        "40 m"
+      ],
+      "t": 3,
+      "izoh": "En x bo'lsa, bo'y x + 4 bo'ladi va x(x + 4) = 96, ya'ni x² + 4x − 96 = 0. D = 16 + 384 = 400, √D = 20, demak x = 8. Tomonlar 8 m va 12 m, perimetr esa 2·(8 + 12) = 40 m. Javob: 40 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-maydon-va-olcham",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#0c59fa27"
+    },
+    {
+      "q": "Yuk mashinasi 300 km yo'lni bosib o'tdi. Agar tezligi 10 km/soat ortiq bo'lganida, u shu yo'lni 1 soat tez bosib o'tar edi. Mashinaning tezligini toping.",
+      "v": [
+        "50 km/soat",
+        "60 km/soat",
+        "40 km/soat",
+        "30 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Tezlikni x deb olsak, vaqtlar farqi 300/x − 300/(x + 10) = 1 bo'ladi. Maxrajlardan qutulsak 3000 = x² + 10x, ya'ni x² + 10x − 3000 = 0. D = 100 + 12000 = 12100, √D = 110, demak x = (−10 + 110)/2 = 50. Tekshirish: 300 : 50 = 6 soat, 300 : 60 = 5 soat. Javob: 50 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harakat-va-tezlik",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#e9af9fdc"
+    },
+    {
+      "q": "Velosipedchi 60 km masofani bosib o'tishi kerak edi. U tezligini 5 km/soat oshirib, yo'lni rejadagidan 1 soat oldin tugatdi. Dastlabki tezlik qanday edi?",
+      "v": [
+        "20 km/soat",
+        "12 km/soat",
+        "15 km/soat",
+        "10 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki tezlik x bo'lsa, 60/x − 60/(x + 5) = 1 tenglama hosil bo'ladi. Uni soddalashtirsak 300 = x² + 5x, ya'ni x² + 5x − 300 = 0. D = 25 + 1200 = 1225, √D = 35, demak x = 15. Tekshirish: 60 : 15 = 4 soat, 60 : 20 = 3 soat. Javob: 15 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harakat-va-tezlik",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#03dbee1d"
+    },
+    {
+      "q": "Ikki poyezd ikki shahar orasidagi 180 km yo'lni bosib o'tdi. Ularning yo'lda sarflagan vaqtlari (soatda) t² − 7t + 12 = 0 tenglamaning ildizlariga teng. Tezroq poyezdning tezligini toping.",
+      "v": [
+        "60 km/soat",
+        "45 km/soat",
+        "90 km/soat",
+        "30 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Tenglamaning diskriminanti D = 49 − 48 = 1, shuning uchun ildizlar 3 va 4. Tezroq poyezd yo'lni kamroq vaqtda, ya'ni 3 soatda bosgan. Tezlik masofani vaqtga bo'lish bilan topiladi: 180 : 3 = 60. Javob: 60 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harakat-va-tezlik",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#ef21ca1b"
+    },
+    {
+      "q": "Piyoda va velosipedchi bir xil 45 km yo'lni bosdi. Ularning sarflagan vaqtlari (soatda) x² − 12x + 27 = 0 tenglama ildizlariga teng. Vaqtlar farqi necha soat?",
+      "v": [
+        "12 soat",
+        "6 soat",
+        "9 soat",
+        "3 soat"
+      ],
+      "t": 1,
+      "izoh": "D = 144 − 4·27 = 144 − 108 = 36, demak √D = 6. Ildizlar ayirmasining moduli √D : a = 6 ga teng. Haqiqatan vaqtlar 3 soat va 9 soat: velosipedchi 45 : 3 = 15 km/soat, piyoda esa 45 : 9 = 5 km/soat tezlikda harakatlangan. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harakat-va-tezlik",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#caa88d16"
+    },
+    {
+      "q": "Sayyoh 24 km yo'lni rejadagidan 1 km/soat sekin yurgani uchun manzilga 2 soat kech yetib keldi. Uning haqiqiy tezligini toping.",
+      "v": [
+        "4 km/soat",
+        "6 km/soat",
+        "8 km/soat",
+        "3 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Haqiqiy tezlik x bo'lsa, rejadagisi x + 1 bo'ladi va 24/x − 24/(x + 1) = 2. Maxrajlardan qutulsak 24 = 2x(x + 1), ya'ni x² + x − 12 = 0. D = 1 + 48 = 49, √D = 7, demak x = 3. Tekshirish: 24 : 3 = 8 soat, 24 : 4 = 6 soat. Javob: 3 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harakat-va-tezlik",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#9eb9df75"
+    },
+    {
+      "q": "Dilshod 96 ming so'mga bir necha dona daftar sotib oldi. Agar har bir daftar 2 ming so'm arzon bo'lganida, u xuddi shu pulga 4 ta ko'p daftar olardi. Bitta daftar qancha turadi?",
+      "v": [
+        "8 ming so'm",
+        "6 ming so'm",
+        "12 ming so'm",
+        "4 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "Narxni p deb olsak, 96/(p − 2) − 96/p = 4 tenglama hosil bo'ladi. Uni soddalashtirsak 192 = 4p(p − 2), ya'ni p² − 2p − 48 = 0. D = 4 + 192 = 196, √D = 14, demak p = 8. Tekshirish: 96 : 8 = 12 ta, 96 : 6 = 16 ta. Javob: 8 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-narx-va-miqdor",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#31692426"
+    },
+    {
+      "q": "Bozordagi ikki xil olmaning bir kilogramm narxi (ming so'mda) x² − 25x + 156 = 0 tenglamaning ildizlariga teng. Narxlar orasidagi farq qancha?",
+      "v": [
+        "1 ming so'm",
+        "25 ming so'm",
+        "13 ming so'm",
+        "12 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "D = 625 − 4·156 = 625 − 624 = 1, demak √D = 1. Narxlar farqi √D/a = 1 ga teng. Narxlarning o'zi 12 ming so'm va 13 ming so'm. Javob: 1 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-va-miqdor",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#d53dbe0a"
+    },
+    {
+      "q": "Bir kilogramm guruch va bir kilogramm loviya narxining yig'indisi 34 ming so'm, ko'paytmasi esa 273 ga teng. Arzonrog'i qancha turadi?",
+      "v": [
+        "21 ming so'm",
+        "17 ming so'm",
+        "13 ming so'm",
+        "34 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Narxlar x² − 34x + 273 = 0 tenglamaning ildizlari bo'ladi. D = 1156 − 1092 = 64, √D = 8. Ildizlar (34 + 8)/2 = 21 va (34 − 8)/2 = 13. Arzonrog'i 13 ming so'm. Javob: 13 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-va-miqdor",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#5ada18f2"
+    },
+    {
+      "q": "Fermer bozorga bir xil narxdagi tuxumlarni olib chiqdi. Tuxumlar soni va bir donasining narxi (so'mda) x² − 1030x + 30000 = 0 tenglamaning ildizlari. Tuxumlar soni 100 tadan kam bo'lsa, u nechta?",
+      "v": [
+        "1000 ta",
+        "300 ta",
+        "100 ta",
+        "30 ta"
+      ],
+      "t": 3,
+      "izoh": "Tenglamaning diskriminanti D = 1030² − 4·30000 = 1060900 − 120000 = 940900, √D = 970. Ildizlar (1030 + 970) : 2 = 1000 va (1030 − 970) : 2 = 30. Shartga ko'ra tuxumlar soni 100 dan kichik, demak 30 ta tuxum bor, bir donasi esa 1000 so'm turadi. Javob: 30 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-narx-va-miqdor",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#2e9e76ae"
+    },
+    {
+      "q": "Ikki usta birgalikda devorni 6 kunda suvaydi. Yolg'iz ishlaganda birinchi usta ikkinchisidan 5 kun tez tugatadi. Birinchi usta bu ishni necha kunda bajaradi?",
+      "v": [
+        "10 kun",
+        "15 kun",
+        "12 kun",
+        "5 kun"
+      ],
+      "t": 0,
+      "izoh": "Birinchi usta x kunda bajarsa, ikkinchisi x + 5 kunda bajaradi va 1/x + 1/(x + 5) = 1/6. Maxrajlardan qutulsak x² − 7x − 30 = 0 hosil bo'ladi. D = 49 + 120 = 169, √D = 13, demak x = 10. Tekshirish: 1/10 + 1/15 = 1/6. Javob: 10 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#a4c7dacc"
+    },
+    {
+      "q": "Ikki nasos hovuzni birgalikda 4 soatda to'ldiradi. Ikkinchi nasos yolg'iz ishlaganda birinchisidan 6 soat ko'p vaqt sarflaydi. Birinchi nasos hovuzni necha soatda to'ldiradi?",
+      "v": [
+        "12 soat",
+        "6 soat",
+        "8 soat",
+        "4 soat"
+      ],
+      "t": 1,
+      "izoh": "Birinchi nasos x soatda to'ldirsa, ikkinchisi x + 6 soatda to'ldiradi va 1/x + 1/(x + 6) = 1/4. Soddalashtirsak x² − 2x − 24 = 0 chiqadi. D = 4 + 96 = 100, √D = 10, demak x = 6. Tekshirish: 1/6 + 1/12 = 1/4. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#e8356a06"
+    },
+    {
+      "q": "Ikki traktorchining dalani yolg'iz haydash vaqtlari (kunda) x² − 21x + 108 = 0 tenglamaning ildizlariga teng. Ularning birgalikdagi bir kunlik ish unumi qanday kasrga teng?",
+      "v": [
+        "7/36",
+        "36/7",
+        "1/21",
+        "1/108"
+      ],
+      "t": 0,
+      "izoh": "Birgalikdagi unum 1/x₁ + 1/x₂ = (x₁ + x₂)/(x₁·x₂) formulasi bilan topiladi. Viyet bo'yicha yig'indi 21, ko'paytma 108. Demak unum 21/108 = 7/36. Tekshirish: ildizlar 9 va 12. Javob: 7/36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#7e2413d6"
+    },
+    {
+      "q": "Ikki tikuvchining bir partiya kiyimni yolg'iz tikish vaqtlari yig'indisi 15 kun, ko'paytmasi esa 56 ga teng. Tezroq ishlaydigan tikuvchi necha kunda tikadi?",
+      "v": [
+        "8 kun",
+        "15 kun",
+        "7 kun",
+        "56 kun"
+      ],
+      "t": 2,
+      "izoh": "Vaqtlar x² − 15x + 56 = 0 tenglamaning ildizlari bo'ladi. D = 225 − 224 = 1, √D = 1. Ildizlar (15 + 1)/2 = 8 va (15 − 1)/2 = 7. Tezrog'i kamroq vaqt sarflaydi. Javob: 7 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#77e389a0"
+    },
+    {
+      "q": "Koptok 25 m balandlikdagi balkondan yuqoriga otildi va uning balandligi h = 25 + 20t − 5t² formula bilan o'zgaradi. Koptok yerga necha soniyadan keyin tushadi?",
+      "v": [
+        "4 s",
+        "2 s",
+        "5 s",
+        "20 s"
+      ],
+      "t": 2,
+      "izoh": "Yerga tushganda balandlik nolga teng: 25 + 20t − 5t² = 0. Ikkala tomonni −5 ga bo'lsak t² − 4t − 5 = 0 hosil bo'ladi. D = 16 + 20 = 36, √D = 6, ildizlar (4 ± 6) : 2, ya'ni 5 va −1. Vaqt musbat bo'lgani uchun t = 5. Javob: 5 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-otilgan-jism",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#7388a94b"
+    },
+    {
+      "q": "Balandligi h = 25t − 5t² formula bilan o'zgaradigan jism 30 m balandlikka ko'tarila oladimi va qachon?",
+      "v": [
+        "Yo'q, diskriminant manfiy",
+        "Ha, 2 va 3-soniyalarda",
+        "Ha, faqat 5-soniyada",
+        "Yo'q, eng katta balandlik 25 m"
+      ],
+      "t": 1,
+      "izoh": "Shartni tenglamaga aylantiramiz: 25t − 5t² = 30, ya'ni t² − 5t + 6 = 0. D = 25 − 24 = 1, √D = 1, ildizlar t = 2 va t = 3. Diskriminant musbat, demak jism bu balandlikka ko'tarilishda va tushishda ikki marta yetadi. Javob: ha, 2 va 3-soniyalarda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-otilgan-jism",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#8e8cb685"
+    },
+    {
+      "q": "Tosh 40 m balandlikdagi jardan 10 m/s tezlik bilan pastga otildi va uning balandligi h = 40 − 10t − 5t² formula bilan kamayadi. Tosh yerga necha soniyada tushadi?",
+      "v": [
+        "4 s",
+        "2 s",
+        "6 s",
+        "8 s"
+      ],
+      "t": 1,
+      "izoh": "Yerga tushish payti h = 0 shartidan topiladi: 40 − 10t − 5t² = 0. Ikkala tomonni −5 ga bo'lamiz: t² + 2t − 8 = 0. D = 4 + 32 = 36, √D = 6, ildizlar (−2 ± 6) : 2, ya'ni 2 va −4. Vaqt musbat bo'lgani uchun t = 2. Javob: 2 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-otilgan-jism",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#a2fd6a9b"
+    },
+    {
+      "q": "Kichik raketaning balandligi h = 30t − 5t² formulasi bilan o'zgaradi. U 50 m balandlikka ko'tarila oladimi?",
+      "v": [
+        "Yo'q, chunki D < 0",
+        "Ha, 2-soniyada",
+        "Ha, 5-soniyada",
+        "Yo'q, chunki D = 0"
+      ],
+      "t": 0,
+      "izoh": "Tenglama tuzamiz: 30t − 5t² = 50, ya'ni t² − 6t + 10 = 0. Diskriminant D = 36 − 40 = −4 chiqadi. Manfiy diskriminant haqiqiy yechim yo'qligini bildiradi, ya'ni bunday balandlikka yetmaydi. Javob: yo'q, chunki D < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-otilgan-jism",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#18c28aae"
+    },
+    {
+      "q": "Ikki ketma-ket natural sonning ko'paytmasi 156 ga teng ekani ma'lum. Ushbu sonlarning kattasini toping.",
+      "v": [
+        "13",
+        "12",
+        "14",
+        "26"
+      ],
+      "t": 0,
+      "izoh": "Kichik sonni x deb olsak, kattasi x + 1 bo'ladi va x(x + 1) = 156. Bu x² + x − 156 = 0 tenglamani beradi. D = 1 + 624 = 625, √D = 25, demak x = 12. Katta son 13. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-son-va-yosh-masalasi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#2619e3f7"
+    },
+    {
+      "q": "Otaning yoshi o'g'lining yoshidan 24 yosh katta, ularning yoshlari ko'paytmasi esa 385 ga teng. O'g'lining yoshini aniqlang.",
+      "v": [
+        "35 yosh",
+        "14 yosh",
+        "11 yosh",
+        "24 yosh"
+      ],
+      "t": 2,
+      "izoh": "O'g'lining yoshi x bo'lsa, otasiniki x + 24 bo'ladi va x(x + 24) = 385. Demak x² + 24x − 385 = 0. D = 576 + 1540 = 2116, √D = 46, shuning uchun x = (−24 + 46)/2 = 11. Ota 35 yoshda. Javob: 11 yosh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-son-va-yosh-masalasi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#24c0eff2"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 18 ga, kvadratlari yig'indisi esa 170 ga teng. Bu sonlarning ko'paytmasini toping.",
+      "v": [
+        "154",
+        "72",
+        "88",
+        "77"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi kvadrati formulasidan foydalanamiz: (x + y)² = x² + y² + 2xy. Demak 324 = 170 + 2xy, bundan 2xy = 154 va xy = 77. Tekshirish: sonlar 7 va 11. Javob: 77.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-son-va-yosh-masalasi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#78effcc9"
+    },
+    {
+      "q": "O'ylangan sonning kvadrati shu sonning olti barobaridan 27 birlik ko'p ekani ma'lum. Shunday sonlardan musbatini toping.",
+      "v": [
+        "9",
+        "−3",
+        "3",
+        "27"
+      ],
+      "t": 0,
+      "izoh": "Shartni tenglamaga aylantiramiz: x² = 6x + 27, ya'ni x² − 6x − 27 = 0. D = 36 + 108 = 144, √D = 12. Ildizlar (6 + 12)/2 = 9 va (6 − 12)/2 = −3. Musbati 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-son-va-yosh-masalasi",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#1956164a"
+    },
+    {
+      "q": "Sexning bir kunlik foydasi (mln so'mda) F = −x² + 12x − 20 formula bilan hisoblanadi, bunda x — tayyorlangan mahsulot soni. Sex qanday x qiymatlarida nol foyda oladi?",
+      "v": [
+        "2 va 10",
+        "2 va 6",
+        "6 va 10",
+        "4 va 5"
+      ],
+      "t": 0,
+      "izoh": "Nol foyda sharti F = 0, ya'ni −x² + 12x − 20 = 0. Ikkala tomonni −1 ga ko'paytiramiz: x² − 12x + 20 = 0. D = 144 − 80 = 64, √D = 8, ildizlar (12 ± 8)/2, ya'ni 10 va 2. Javob: 2 va 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-daromad-va-foyda",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#b6905d97"
+    },
+    {
+      "q": "Do'kon mahsulot narxini oshirgach, kunlik tushumi T = −2x² + 24x formula bilan ifodalandi; bunda x — narxning ming so'mdagi o'sishi, T — kunlik tushum (mln so'mda). Tushum 64 mln so'm bo'ladigan x qiymatlarini toping.",
+      "v": [
+        "2 va 16",
+        "4 va 8",
+        "6 va 8",
+        "4 va 16"
+      ],
+      "t": 1,
+      "izoh": "Tenglama tuzamiz: −2x² + 24x = 64. Ikkala tomonni −2 ga bo'lsak x² − 12x + 32 = 0 hosil bo'ladi. D = 144 − 128 = 16, √D = 4, ildizlar (12 ± 4) : 2, ya'ni 8 va 4. Demak narx 4 ming yoki 8 ming so'mga oshsa, kunlik tushum 64 mln so'm bo'ladi. Javob: 4 va 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-daromad-va-foyda",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#16d38dfd"
+    },
+    {
+      "q": "Korxonaning ikki bo'limi olgan daromadi (mln so'mda) x² − 30x + 200 = 0 tenglamaning ildizlariga teng. Daromadlar kvadratlari yig'indisini hisoblang.",
+      "v": [
+        "900",
+        "700",
+        "500",
+        "400"
+      ],
+      "t": 2,
+      "izoh": "Viyet bo'yicha yig'indi 30, ko'paytma 200. Kvadratlar yig'indisi (x₁ + x₂)² − 2x₁x₂ = 900 − 400 = 500. Tekshirish: daromadlar 10 va 20, ya'ni 100 + 400 = 500. Javob: 500.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-daromad-va-foyda",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#d412d280"
+    },
+    {
+      "q": "Tadbirkorning ikki tur mahsulotdan olgan foydasi (mln so'mda) x² − 13x + 40 = 0 tenglamaning ildizlari bo'ldi. Foydalarning teskari qiymatlari yig'indisi qanday kasr bo'ladi?",
+      "v": [
+        "40/13",
+        "1/13",
+        "1/40",
+        "13/40"
+      ],
+      "t": 3,
+      "izoh": "Teskarilar yig'indisi (x₁ + x₂)/(x₁·x₂) formulasi orqali topiladi. Viyet bo'yicha yig'indi 13, ko'paytma 40. Demak natija 13/40 ga teng. Foydalar esa 5 va 8. Javob: 13/40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-daromad-va-foyda",
+      "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet#8e0a8cd1"
+    }
+  ]
+}

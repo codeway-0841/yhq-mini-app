@@ -1,0 +1,1609 @@
+{
+  "nom": "Uchburchakka ichki va tashqi chizilgan aylana",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Karim ustaxonada katetlari 9 sm va 12 sm bo'lgan to'g'ri burchakli uchburchak shaklidagi plastinka tayyorladi va uni doira ichiga to'liq joylashtirmoqchi. Eng kichik doiraning radiusi necha santimetr?",
+      "v": [
+        "15 sm",
+        "3 sm",
+        "7,5 sm",
+        "10,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Plastinkani to'liq qoplaydigan eng kichik doira — tashqi chizilgan aylana. Avval gipotenuzani topamiz: c = √(9² + 12²) = √225 = 15 sm. To'g'ri burchakli uchburchakda tashqi chizilgan aylana markazi gipotenuza o'rtasida yotadi, shuning uchun R = c/2 = 15/2 = 7,5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,40.6 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,50.2 120.5,57.4 127.7,47.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='113.9' y='30.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='158.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='166' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='206.1' y='94' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='61.7' y='94.8' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tb-tashqi-radius",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#3ee0b0e3"
+    },
+    {
+      "q": "Nodira devorga to'g'ri burchakli uchburchak shaklidagi ko'zgu osdi, uning gipotenuzasi 26 sm ga teng. Ko'zguni to'liq qoplaydigan doira shaklidagi ramkaning diametri necha santimetr bo'lishi kerak?",
+      "v": [
+        "26 sm",
+        "13 sm",
+        "52 sm",
+        "6,5 sm"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri burchakli uchburchakda tashqi chizilgan aylananing markazi gipotenuzaning o'rtasida yotadi va radius gipotenuzaning yarmiga teng: R = 26/2 = 13 sm. Demak aylananing diametri D = 2R = 26 sm, ya'ni gipotenuzaning o'ziga teng bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='69.7,69.1 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='65.1,80.2 76.2,84.8 80.8,73.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='59.1' y='62.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.7' y='158.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='156.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='166' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='161.3' y='165.4' font-size='13' fill='%23334155' text-anchor='middle'%3E26 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tb-tashqi-radius",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#8961de2f"
+    },
+    {
+      "q": "Katetlari 5 sm va 12 sm bo'lgan to'g'ri burchakli uchburchakka tashqi chizilgan aylananing uzunligini toping va natijani π orqali ifodalang.",
+      "v": [
+        "6,5π sm",
+        "26π sm",
+        "17π sm",
+        "13π sm"
+      ],
+      "t": 3,
+      "izoh": "Gipotenuza c = √(5² + 12²) = √169 = 13 sm. Tashqi chizilgan aylana radiusi R = c/2 = 6,5 sm. Aylana uzunligi L = 2πR = 2π · 6,5 = 13π sm. Katetlar yig'indisini gipotenuza deb olish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='69.7,69.1 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='65.1,80.2 76.2,84.8 80.8,73.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='59.1' y='62.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.7' y='158.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='156.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='182.1' y='108.8' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='37.1' y='110.5' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tb-tashqi-radius",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#c4fd028f"
+    },
+    {
+      "q": "Bog'da katetlari 30 m va 40 m bo'lgan to'g'ri burchakli uchburchak shaklidagi maydon bor. Uning uchala burchagidan bir xil uzoqlikda joylashgan nuqta qayerda bo'ladi va u burchaklardan necha metr uzoqlikda?",
+      "v": [
+        "Gipotenuza o'rtasida, 35 m",
+        "Gipotenuza o'rtasida, 25 m",
+        "To'g'ri burchak uchida, 50 m",
+        "Uchburchak markazida, 20 m"
+      ],
+      "t": 1,
+      "izoh": "Uchala uchdan teng uzoqlikdagi nuqta — tashqi chizilgan aylananing markazi. Gipotenuza c = √(30² + 40²) = √2500 = 50 m. To'g'ri burchakli uchburchakda bu markaz aynan gipotenuza o'rtasiga tushadi va undan uchlargacha masofa R = 50/2 = 25 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,40.6 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,50.2 120.5,57.4 127.7,47.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='113.9' y='30.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='158.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='206.1' y='94' font-size='13' fill='%23334155' text-anchor='middle'%3E40 m%3C/text%3E%3Ctext x='61.7' y='94.8' font-size='13' fill='%23334155' text-anchor='middle'%3E30 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tb-tashqi-radius",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#e3163fe2"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari 8 sm va 15 sm. Unga tashqi chizilgan aylananing radiusi ichki chizilgan aylananing radiusidan necha santimetr katta?",
+      "v": [
+        "5,5 sm",
+        "11,5 sm",
+        "2,5 sm",
+        "8,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Gipotenuza c = √(8² + 15²) = √289 = 17 sm. Tashqi aylana radiusi R = c/2 = 8,5 sm. Ichki aylana radiusi r = (a + b − c)/2 = (8 + 15 − 17)/2 = 3 sm. Ayirma R − r = 8,5 − 3 = 5,5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='103.1' cy='109.8' r='40.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='86.5,55.3 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='80.9,65.9 91.5,71.5 97.1,60.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='78.1' y='46.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.8' y='158.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.6' y='157.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='190.4' y='101.5' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='45.7' y='103' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tb-tashqi-radius",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#49284ef5"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakka tashqi chizilgan aylananing radiusi 6,5 sm, uchburchakning bir kateti esa 5 sm ga teng. Uchburchakning yuzasi necha kvadrat santimetr?",
+      "v": [
+        "32,5 sm²",
+        "60 sm²",
+        "16,25 sm²",
+        "30 sm²"
+      ],
+      "t": 3,
+      "izoh": "Gipotenuza c = 2R = 13 sm. Ikkinchi katet b = √(13² − 5²) = √144 = 12 sm. Yuza S = (1/2) · 5 · 12 = 30 sm². Yuzani gipotenuza bilan hisoblash yoki yarmini unutish eng ko'p uchraydigan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='69.7,69.1 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='65.1,80.2 76.2,84.8 80.8,73.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='150' x2='36' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='59.1' y='62.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.7' y='158.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='156.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='37.1' y='110.5' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tb-R-dan-tomon",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#cd6b75e6"
+    },
+    {
+      "q": "Aylanaga ichki chizilgan uchburchakning bir tomoni shu aylananing diametri bo'lib, uzunligi 20 sm. Uchburchakning ikkinchi tomoni 12 sm bo'lsa, uchinchi tomoni necha santimetr?",
+      "v": [
+        "8 sm",
+        "16 sm",
+        "√544 sm",
+        "10 sm"
+      ],
+      "t": 1,
+      "izoh": "Diametrga tayangan ichki chizilgan burchak to'g'ri burchak bo'ladi, demak uchburchak to'g'ri burchakli va 20 sm — gipotenuza. Pifagor teoremasidan: x = √(20² − 12²) = √(400 − 144) = √256 = 16 sm. Tomonlarni ayirish emas, kvadratlarni ayirish kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,40.6 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,50.2 120.5,57.4 127.7,47.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='113.9' y='30.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='158.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='166' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='154.5' y='169.4' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='61.7' y='94.8' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tb-R-dan-tomon",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#cc24040d"
+    },
+    {
+      "q": "Tashqi chizilgan aylanasining radiusi 10 sm bo'lgan to'g'ri burchakli uchburchakning katetlari o'zaro teng. Shu uchburchakning perimetri necha santimetr?",
+      "v": [
+        "(20 + 10√2) sm",
+        "40√2 sm",
+        "(20 + 20√2) sm",
+        "60 sm"
+      ],
+      "t": 2,
+      "izoh": "Gipotenuza c = 2R = 20 sm. Katetlar teng bo'lgani uchun 2a² = 20², ya'ni a² = 200 va a = 10√2 sm. Perimetr P = 10√2 + 10√2 + 20 = (20 + 20√2) sm. Bitta katetni qo'shib yuborish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='141.5,44.5 150,53 158.5,44.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='150' x2='150' y2='264' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.8' y='158.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.2' y='158.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='166' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='188' y='212' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tb-R-dan-tomon",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#32559163"
+    },
+    {
+      "q": "Anvar to'g'ri burchakli uchburchak shaklidagi bog' uchastkasining uchala burchagiga ustun qoqdi, so'ng ularning har biridan 12,5 m uzoqlikdagi nuqtaga favvora o'rnatdi. Uchastkaning gipotenuzasi necha metr?",
+      "v": [
+        "12,5 m",
+        "6,25 m",
+        "50 m",
+        "25 m"
+      ],
+      "t": 3,
+      "izoh": "Uchala ustundan teng uzoqlikdagi nuqta — tashqi chizilgan aylana markazi, uning radiusi R = 12,5 m. To'g'ri burchakli uchburchakda gipotenuza aylananing diametriga teng: c = 2R = 2 · 12,5 = 25 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,40.6 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,50.2 120.5,57.4 127.7,47.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='150' x2='36' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='113.9' y='30.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='158.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tb-R-dan-tomon",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#5255c03f"
+    },
+    {
+      "q": "Katetlari 6 sm va 8 sm bo'lgan to'g'ri burchakli uchburchakka ichki chizilgan aylananing radiusi necha santimetrga teng?",
+      "v": [
+        "4 sm",
+        "2 sm",
+        "5 sm",
+        "1 sm"
+      ],
+      "t": 1,
+      "izoh": "Avval gipotenuzani topamiz: c = √(6² + 8²) = √100 = 10 sm. To'g'ri burchakli uchburchak uchun r = (a + b − c)/2 = (6 + 8 − 10)/2 = 4/2 = 2 sm. Ikkiga bo'lishni unutsak 4 sm chiqadi, bu esa xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='127.2' cy='159.1' r='45.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,95.3 36,204.7 264,204.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,104.9 120.5,112.1 127.7,102.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='127.2' cy='159.1' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='113.9' y='84.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='213.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='140.2' y='176.1' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='206.1' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='61.7' y='149.5' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tb-ichki-radius",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#59303262"
+    },
+    {
+      "q": "Usta katetlari 9 sm va 40 sm bo'lgan to'g'ri burchakli uchburchak shaklidagi taxtachaga sig'adigan eng katta doira shaklidagi teshik o'ymoqchi. Teshikning diametri necha santimetr bo'ladi?",
+      "v": [
+        "4 sm",
+        "20,5 sm",
+        "8 sm",
+        "9 sm"
+      ],
+      "t": 2,
+      "izoh": "Taxtachaga sig'adigan eng katta doira — ichki chizilgan aylana. Gipotenuza c = √(9² + 40²) = √1681 = 41 sm. Radius r = (9 + 40 − 41)/2 = 8/2 = 4 sm. Savolda diametr so'ralgani uchun D = 2r = 8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='63.8' cy='152.2' r='22.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='47,125.6 36,174.4 264,174.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='44.4,137.3 56.1,139.9 58.7,128.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='33.4' y='123.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.3' y='181.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.9' y='180' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='171.2' y='150.8' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3Ctext x='25.6' y='152.3' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tb-ichki-radius",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#ccbff592"
+    },
+    {
+      "q": "Katetlari 5 sm va 12 sm bo'lgan to'g'ri burchakli uchburchakka ichki chizilgan aylananing uzunligi qanchaga teng (natijani π orqali yozing)?",
+      "v": [
+        "4π sm",
+        "2π sm",
+        "13π sm",
+        "8π sm"
+      ],
+      "t": 0,
+      "izoh": "Gipotenuza c = √(5² + 12²) = 13 sm. Ichki aylana radiusi r = (5 + 12 − 13)/2 = 2 sm. Aylana uzunligi L = 2πr = 2π · 2 = 4π sm. Agar tashqi aylana bilan chalkashtirilsa 13π chiqadi, bu boshqa aylananing uzunligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='88.6' cy='155.4' r='35.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='69.7,109.5 36,190.5 264,190.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='65.1,120.6 76.2,125.2 80.8,114.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='59.1' y='102.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.7' y='198.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='197.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='182.1' y='149.3' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='37.1' y='151' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tb-ichki-radius",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#708e918b"
+    },
+    {
+      "q": "Xonaning burchagida katetlari 1,2 m va 1,6 m bo'lgan to'g'ri burchakli uchburchak shaklidagi bo'sh joy qoldi. Shu joyga to'liq sig'adigan eng katta dumaloq gilamning radiusi necha metr?",
+      "v": [
+        "0,8 m",
+        "0,4 m",
+        "1 m",
+        "0,2 m"
+      ],
+      "t": 1,
+      "izoh": "Gipotenuza c = √(1,2² + 1,6²) = √4 = 2 m. Eng katta dumaloq gilam — ichki chizilgan aylana, uning radiusi r = (1,2 + 1,6 − 2)/2 = 0,8/2 = 0,4 m. Diametr bilan chalkashtirilsa 0,8 m chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='127.2' cy='159.1' r='45.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,95.3 36,204.7 264,204.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,104.9 120.5,112.1 127.7,102.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='127.2' cy='159.1' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='113.9' y='84.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='213.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='140.2' y='176.1' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='206.1' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3E1,6 m%3C/text%3E%3Ctext x='61.7' y='149.5' font-size='13' fill='%23334155' text-anchor='middle'%3E1,2 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tb-ichki-radius",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#f13965e6"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakka ichki chizilgan aylananing radiusi 3 sm, gipotenuzasi esa 25 sm ga teng. Shu uchburchakning perimetri necha santimetr?",
+      "v": [
+        "31 sm",
+        "50 sm",
+        "56 sm",
+        "28 sm"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri burchakli uchburchakda r = (a + b − c)/2, demak a + b − c = 2r = 6 sm. Bundan a + b = 6 + 25 = 31 sm. Perimetr P = a + b + c = 31 + 25 = 56 sm. Gipotenuzani qo'shishni unutish eng ko'p uchraydigan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='72.5' cy='153.3' r='27.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='53.9,119.4 36,180.6 264,180.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='50.5,130.9 62,134.3 65.4,122.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='72.5' cy='153.3' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='41.2' y='115.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.4' y='188.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.9' y='186.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='85.5' y='170.3' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='163.5' y='193.2' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tb-r-dan-tomon",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#f5c885b1"
+    },
+    {
+      "q": "Ichki chizilgan aylanasining radiusi 4 sm, gipotenuzasi esa 26 sm bo'lgan to'g'ri burchakli uchburchakning yuzasi necha kvadrat santimetr?",
+      "v": [
+        "120 sm²",
+        "104 sm²",
+        "60 sm²",
+        "240 sm²"
+      ],
+      "t": 0,
+      "izoh": "a + b − c = 2r = 8, demak a + b = 8 + 26 = 34 sm. Yarim perimetr p = (34 + 26)/2 = 30 sm. Har qanday uchburchak uchun S = p · r, shuning uchun S = 30 · 4 = 120 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='88.6' cy='155.4' r='35.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='69.7,109.5 36,190.5 264,190.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='65.1,120.6 76.2,125.2 80.8,114.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='88.6' y1='155.4' x2='88.6' y2='190.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='88.6' cy='155.4' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='59.1' y='102.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.7' y='198.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='197.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='101.6' y='172.4' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='161.3' y='205.9' font-size='13' fill='%23334155' text-anchor='middle'%3E26 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tb-r-dan-tomon",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#2a6afde0"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakka ichki chizilgan aylananing radiusi 3 sm, bir kateti esa 8 sm. Ikkinchi kateti necha santimetrga teng?",
+      "v": [
+        "17 sm",
+        "11 sm",
+        "5 sm",
+        "15 sm"
+      ],
+      "t": 3,
+      "izoh": "r = (a + b − c)/2 dan 6 = 8 + b − c, ya'ni c = b + 2. Pifagor teoremasi: 8² + b² = (b + 2)². Bundan 64 + b² = b² + 4b + 4, demak 4b = 60 va b = 15 sm. Tekshiruv: c = 17, r = (8 + 15 − 17)/2 = 3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='103.1' cy='157.1' r='40.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='86.5,102.7 36,197.3 264,197.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='80.8,113.3 91.4,118.9 97.1,108.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='103.1' cy='157.1' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='78.1' y='94.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.8' y='206.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.6' y='204.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='116.1' y='174.1' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='45.7' y='150.4' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tb-r-dan-tomon",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#d559aab9"
+    },
+    {
+      "q": "Sardor to'g'ri burchakli uchburchak shaklidagi tomorqaning ichiga radiusi 5 m bo'lgan dumaloq hovuz qazdi, hovuz uchala to'siqqa ham tegib turibdi. Tomorqaning yuzasi 150 m² bo'lsa, perimetri necha metr?",
+      "v": [
+        "30 m",
+        "120 m",
+        "60 m",
+        "15 m"
+      ],
+      "t": 2,
+      "izoh": "Hovuz uchala tomonga tegib turgani uchun u ichki chizilgan aylana, r = 5 m. S = p · r formulasidan p = S/r = 150/5 = 30 m. Bu yarim perimetr, demak to'liq perimetr P = 2p = 60 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='127.2' cy='159.1' r='45.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,95.3 36,204.7 264,204.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,104.9 120.5,112.1 127.7,102.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='127.2' y1='159.1' x2='154.6' y2='122.6' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='127.2' cy='159.1' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='113.9' y='84.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='213.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='140.2' y='176.1' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tb-r-dan-tomon",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#efa87e03"
+    },
+    {
+      "q": "Yog'och taxtadan tomoni 12 sm bo'lgan teng tomonli uchburchak kesib olindi va uning ichiga sig'adigan eng katta doira chizildi. Shu doiraning radiusi necha santimetr?",
+      "v": [
+        "4√3 sm",
+        "6√3 sm",
+        "√3 sm",
+        "2√3 sm"
+      ],
+      "t": 3,
+      "izoh": "Teng tomonli uchburchak uchun ichki chizilgan aylana radiusi r = a√3/6. Bunda r = 12√3/6 = 2√3 sm. Agar tashqi aylana formulasi R = a√3/3 qo'llansa 4√3 chiqadi, balandlik esa 6√3 ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='182.9' r='65.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,51.3 36,248.7 264,248.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='182.9' x2='150' y2='248.7' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='182.9' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='40.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='23' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='199.9' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='150' y='268.7' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-tomonli-ichki",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#c916a8e7"
+    },
+    {
+      "q": "Metall simdan yasalgan teng tomonli uchburchak shaklidagi ramkaning perimetri 54 sm. Ramka ichiga chizish mumkin bo'lgan eng katta doiraning radiusi necha santimetr?",
+      "v": [
+        "3√3 sm",
+        "6√3 sm",
+        "9√3 sm",
+        "9 sm"
+      ],
+      "t": 0,
+      "izoh": "Teng tomonli uchburchakning tomoni a = 54/3 = 18 sm. Ichki chizilgan aylana radiusi r = a√3/6 = 18√3/6 = 3√3 sm. Tashqi aylana radiusi bundan ikki marta katta, ya'ni 6√3 sm bo'lardi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='182.9' r='65.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,51.3 36,248.7 264,248.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='182.9' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='40.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='23' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='199.9' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='150' y='268.7' font-size='13' fill='%23334155' text-anchor='middle'%3EP = 54 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-tomonli-ichki",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#af830ff7"
+    },
+    {
+      "q": "Teng tomonli uchburchakka ichki chizilgan aylananing radiusi 4 sm ga teng bo'lsa, shu uchburchakning tomoni necha santimetr?",
+      "v": [
+        "4√3 sm",
+        "8√3 sm",
+        "12 sm",
+        "8 sm"
+      ],
+      "t": 1,
+      "izoh": "r = a√3/6 formulasidan a = 6r/√3 = 6 · 4/√3 = 24/√3. Maxrajni ratsionallashtiramiz: a = 24√3/3 = 8√3 sm. Radiusni oddiy uch yoki ikkiga ko'paytirish bu yerda ishlamaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='182.9' r='65.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,51.3 36,248.7 264,248.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='182.9' x2='150' y2='248.7' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='182.9' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='40.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='23' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='199.9' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-tomonli-ichki",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#ab04f761"
+    },
+    {
+      "q": "Teng tomonli uchburchakka ichki chizilgan doiraning yuzasi 12π sm² ga teng. Shu uchburchakning tomoni necha santimetr?",
+      "v": [
+        "6 sm",
+        "4√3 sm",
+        "12 sm",
+        "24 sm"
+      ],
+      "t": 2,
+      "izoh": "Doira yuzasidan πr² = 12π, demak r² = 12 va r = 2√3 sm. Endi r = a√3/6 formulasidan a = 6r/√3 = 6 · 2√3/√3 = 12 sm. Ildizni olishni unutib r = 12 deb olish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='182.9' r='65.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,51.3 36,248.7 264,248.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='182.9' x2='150' y2='248.7' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='182.9' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='40.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='23' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='199.9' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-tomonli-ichki",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#8ba3e0aa"
+    },
+    {
+      "q": "Tomoni 9 sm bo'lgan teng tomonli uchburchak shaklidagi belgi doira ichiga to'liq joylashtirilmoqchi. Eng kichik doiraning radiusi necha santimetr bo'ladi?",
+      "v": [
+        "3√3 sm",
+        "1,5√3 sm",
+        "4,5 sm",
+        "9√3 sm"
+      ],
+      "t": 0,
+      "izoh": "Belgini to'liq qoplaydigan eng kichik doira — tashqi chizilgan aylana. Teng tomonli uchburchakda R = a√3/3 = 9√3/3 = 3√3 sm. Ichki aylana radiusi r = a√3/6 = 1,5√3 sm bo'lib, u belgini qoplamaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='150' x2='150' y2='36' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='150' y='227' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-tomonli-tashqi",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#452732fd"
+    },
+    {
+      "q": "Teng tomonli uchburchakka tashqi chizilgan aylananing radiusi 10 sm ga teng bo'lsa, uchburchakning tomoni necha santimetr?",
+      "v": [
+        "20 sm",
+        "5√3 sm",
+        "10 sm",
+        "10√3 sm"
+      ],
+      "t": 3,
+      "izoh": "R = a√3/3 formulasidan a = 3R/√3 = R√3. Demak a = 10√3 sm. Diametrni tomon deb olib 20 sm javob berish tipik xato, chunki tomon aylananing diametridan kichik.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='150' x2='51.3' y2='207' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-tomonli-tashqi",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#0b149af4"
+    },
+    {
+      "q": "Diametri 24 sm bo'lgan doira shaklidagi taxtachadan eng katta teng tomonli uchburchak kesib olindi. Kesib olingan uchburchakning perimetri necha santimetr?",
+      "v": [
+        "36 sm",
+        "36√3 sm",
+        "72 sm",
+        "18√3 sm"
+      ],
+      "t": 1,
+      "izoh": "Doiraga chizilgan eng katta teng tomonli uchburchak — ichki chizilgan uchburchak, uning R = 24/2 = 12 sm. Tomoni a = R√3 = 12√3 sm. Perimetr P = 3a = 36√3 sm. Diametrni tomon deb olish xato javobga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-tomonli-tashqi",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#be65dda3"
+    },
+    {
+      "q": "Teng tomonli uchburchakka tashqi chizilgan aylananing uzunligi 16π sm ga teng. Shu uchburchakning yuzasi necha kvadrat santimetr?",
+      "v": [
+        "48√3 sm²",
+        "16√3 sm²",
+        "96√3 sm²",
+        "64√3 sm²"
+      ],
+      "t": 0,
+      "izoh": "Aylana uzunligidan 2πR = 16π, demak R = 8 sm. Tomoni a = R√3 = 8√3 sm, ya'ni a² = 192. Teng tomonli uchburchak yuzasi S = a²√3/4 = 192√3/4 = 48√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='150' x2='150' y2='36' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-tomonli-tashqi",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#e46a2eed"
+    },
+    {
+      "q": "Teng tomonli uchburchakning balandligi 15 sm ga teng. Unga tashqi chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "5 sm",
+        "7,5 sm",
+        "30 sm",
+        "10 sm"
+      ],
+      "t": 3,
+      "izoh": "Teng tomonli uchburchakda markaz balandlikni uchdan bir nisbatda bo'ladi: R = 2h/3 va r = h/3. Demak R = 2 · 15/3 = 10 sm. Ichki aylana radiusi esa 5 sm bo'lib, u boshqa kattalik.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='57' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-tomonli-tashqi",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#d0b464d8"
+    },
+    {
+      "q": "Teng tomonli uchburchakka ichki chizilgan aylananing radiusi 5 sm bo'lsa, shu uchburchakka tashqi chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "5√3 sm",
+        "10 sm",
+        "2,5 sm",
+        "15 sm"
+      ],
+      "t": 1,
+      "izoh": "Teng tomonli uchburchakda ikkala aylananing markazi bitta nuqtada bo'ladi va R = 2r munosabati o'rinli. Demak R = 2 · 5 = 10 sm. Bu yerda √3 ko'paytuvchi kerak emas, chunki nisbat sof ikkiga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='57' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-tomonli-R-r",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#7633c0ce"
+    },
+    {
+      "q": "Teng tomonli uchburchakda tashqi chizilgan doiraning yuzasi ichki chizilgan doiraning yuzasidan necha marta katta ekanini aniqlang.",
+      "v": [
+        "2 marta",
+        "√3 marta",
+        "4 marta",
+        "3 marta"
+      ],
+      "t": 2,
+      "izoh": "Teng tomonli uchburchakda R = 2r. Doiralar yuzalarining nisbati radiuslar nisbatining kvadratiga teng: (πR²)/(πr²) = (R/r)² = 2² = 4. Radiuslar nisbati 2 bo'lgani bilan yuzalar nisbati 4 marta bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='57' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-tomonli-R-r",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#0afe839e"
+    },
+    {
+      "q": "Teng tomonli uchburchakning balandligi unga ichki chizilgan aylana radiusidan necha marta katta?",
+      "v": [
+        "2 marta",
+        "1,5 marta",
+        "√3 marta",
+        "3 marta"
+      ],
+      "t": 3,
+      "izoh": "Teng tomonli uchburchakda markaz balandliklarning kesishish nuqtasi ham bo'lib, u har bir balandlikni uchidan 2 : 1 nisbatda bo'ladi. Pastki bo'lak r ga teng, demak h = 3r. Ya'ni balandlik radiusdan roppa-rosa uch marta katta.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='182.9' r='65.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,51.3 36,248.7 264,248.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='182.9' x2='150' y2='248.7' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='182.9' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='40.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='23' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='199.9' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-tomonli-R-r",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#59c61a28"
+    },
+    {
+      "q": "Teng tomonli uchburchakka ichki va tashqi chizilgan aylanalar radiuslarining ayirmasi 6 sm ga teng. Shu uchburchakning tomoni necha santimetr?",
+      "v": [
+        "6√3 sm",
+        "12√3 sm",
+        "12 sm",
+        "36 sm"
+      ],
+      "t": 1,
+      "izoh": "R = 2r bo'lgani uchun R − r = 2r − r = r. Demak r = 6 sm. Endi r = a√3/6 formulasidan a = 6r/√3 = 36/√3 = 12√3 sm. Ayirmani R deb olish yoki tomonni oddiy uchga ko'paytirish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='57' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-tomonli-R-r",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#d3db1c19"
+    },
+    {
+      "q": "Tomonlari 13 sm, 14 sm va 15 sm bo'lgan uchburchakka ichki chizilgan aylananing radiusi necha santimetrga teng?",
+      "v": [
+        "2 sm",
+        "8,125 sm",
+        "4 sm",
+        "6 sm"
+      ],
+      "t": 2,
+      "izoh": "Yarim perimetr p = (13 + 14 + 15)/2 = 21 sm. Geron formulasi bo'yicha S = √(21 · 8 · 7 · 6) = √7056 = 84 sm². S = p · r bo'lgani uchun r = S/p = 84/21 = 4 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133.7' cy='182.6' r='65.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='117.4,52.3 36,247.7 264,247.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='133.7' cy='182.6' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='114.9' y='41.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='23.3' y='259.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277.3' y='258.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='146.7' y='199.6' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='152.6' y='267.5' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='204.2' y='145.5' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='62.5' y='146.6' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-p-r",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#558bc693"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning yuzasi 54 sm², perimetri esa 36 sm. Unga ichki chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "3 sm",
+        "1,5 sm",
+        "6 sm",
+        "1/3 sm"
+      ],
+      "t": 0,
+      "izoh": "Yarim perimetr p = 36/2 = 18 sm. Har qanday uchburchak uchun S = p · r, demak r = S/p = 54/18 = 3 sm. Yuzani to'liq perimetrga bo'lish (1,5) yoki formulani teskari qo'llash tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='127.2' cy='159.1' r='45.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,95.3 36,204.7 264,204.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,104.9 120.5,112.1 127.7,102.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='127.2' cy='159.1' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='113.9' y='84.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='213.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='140.2' y='176.1' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-p-r",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#23162105"
+    },
+    {
+      "q": "Dehqon tomonlari 20 m, 21 m va 29 m bo'lgan uchburchak shaklidagi maydonning ichiga dumaloq hovuz qazmoqchi, hovuz uchala chegaraga ham tegishi kerak. Hovuzning radiusi necha metr bo'ladi?",
+      "v": [
+        "14,5 m",
+        "6 m",
+        "12 m",
+        "3 m"
+      ],
+      "t": 1,
+      "izoh": "20² + 21² = 400 + 441 = 841 = 29², demak uchburchak to'g'ri burchakli. Ichki chizilgan aylana radiusi r = (20 + 21 − 29)/2 = 12/2 = 6 m. Tashqi aylana radiusi 14,5 m bo'lib, u hovuz uchun to'g'ri kelmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='146.1' cy='159.8' r='47.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='144.4,93.1 36,206.9 264,206.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='136.1,101.8 144.8,110.1 153.1,101.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='146.1' cy='159.8' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='143.7' y='82.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.8' y='215.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.3' y='215.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='159.1' y='176.8' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='150.8' y='226.9' font-size='13' fill='%23334155' text-anchor='middle'%3E29 m%3C/text%3E%3Ctext x='219.4' y='148.9' font-size='13' fill='%23334155' text-anchor='middle'%3E21 m%3C/text%3E%3Ctext x='75' y='149' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-p-r",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#0ebc9f66"
+    },
+    {
+      "q": "Tomonlari 9 sm, 10 sm va 17 sm bo'lgan uchburchakka ichki chizilgan aylananing radiusi necha santimetrga teng?",
+      "v": [
+        "4 sm",
+        "1 sm",
+        "2 sm",
+        "8,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Yarim perimetr p = (9 + 10 + 17)/2 = 18 sm. Geron formulasi: S = √(18 · 9 · 8 · 1) = √1296 = 36 sm². Demak r = S/p = 36/18 = 2 sm. Uchburchak to'g'ri burchakli emas, shuning uchun eng uzun tomonning yarmi javob bo'lmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='143.3' cy='151.6' r='26.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='142.5,121.6 36,178.4 264,178.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='143.3' cy='151.6' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='140.5' y='110.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.2' y='184.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.8' y='184.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='156.3' y='168.6' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='152.1' y='198.3' font-size='13' fill='%23334155' text-anchor='middle'%3E17 sm%3C/text%3E%3Ctext x='219' y='151.3' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='73.5' y='151.4' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-p-r",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#db6049c1"
+    },
+    {
+      "q": "Uchburchakning perimetri 72 sm, unga ichki chizilgan aylananing radiusi esa 6 sm. Shu uchburchakning yuzasi necha kvadrat santimetr?",
+      "v": [
+        "216 sm²",
+        "432 sm²",
+        "108 sm²",
+        "12 sm²"
+      ],
+      "t": 0,
+      "izoh": "Yarim perimetr p = 72/2 = 36 sm. S = p · r formulasiga qo'yamiz: S = 36 · 6 = 216 sm². Formulada to'liq perimetrni ishlatish (432) yoki bo'lish amalini qo'llash tipik xatolardir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='127.2' cy='159.1' r='45.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,95.3 36,204.7 264,204.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='127.2' y1='159.1' x2='127.2' y2='204.7' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='127.2' cy='159.1' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='113.9' y='84.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='213.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='140.2' y='176.1' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-p-r",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#87f35044"
+    },
+    {
+      "q": "Uchburchakning yuzasi 120 sm², unga ichki chizilgan aylananing radiusi 4 sm. Shu uchburchakning perimetri necha santimetr?",
+      "v": [
+        "30 sm",
+        "480 sm",
+        "15 sm",
+        "60 sm"
+      ],
+      "t": 3,
+      "izoh": "S = p · r formulasidan yarim perimetr p = S/r = 120/4 = 30 sm. Savolda to'liq perimetr so'ralgani uchun P = 2p = 60 sm. Yarim perimetrni javob deb berish eng ko'p uchraydigan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='88.6' cy='155.4' r='35.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='69.7,109.5 36,190.5 264,190.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='88.6' y1='155.4' x2='88.6' y2='190.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='88.6' cy='155.4' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='59.1' y='102.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.7' y='198.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='197.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='101.6' y='172.4' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "p-r-teskari",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#1080c226"
+    },
+    {
+      "q": "Uchburchakning tomonlari 3 : 4 : 5 nisbatda, unga ichki chizilgan aylananing radiusi esa 4 sm. Shu uchburchakning perimetri necha santimetr?",
+      "v": [
+        "24 sm",
+        "12 sm",
+        "48 sm",
+        "36 sm"
+      ],
+      "t": 2,
+      "izoh": "Tomonlarni 3k, 4k, 5k deb olamiz. (3k)² + (4k)² = (5k)² bo'lgani uchun uchburchak to'g'ri burchakli. r = (3k + 4k − 5k)/2 = k, demak k = 4. Tomonlar 12, 16, 20 va perimetr P = 48 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='127.2' cy='159.1' r='45.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,95.3 36,204.7 264,204.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,104.9 120.5,112.1 127.7,102.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='127.2' cy='159.1' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='113.9' y='84.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='213.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='140.2' y='176.1' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "p-r-teskari",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#e917a49a"
+    },
+    {
+      "q": "Bog'bon uchburchak shaklidagi gulzorning ichiga radiusi 3 m bo'lgan dumaloq favvora joylashtirdi, favvora uchala chegaraga tegib turibdi. Gulzorning perimetri 40 m bo'lsa, yuzasi necha kvadrat metr?",
+      "v": [
+        "120 m²",
+        "30 m²",
+        "20 m²",
+        "60 m²"
+      ],
+      "t": 3,
+      "izoh": "Favvora uchala tomonga tegib turgani uchun u ichki chizilgan aylana, r = 3 m. Yarim perimetr p = 40/2 = 20 m. S = p · r = 20 · 3 = 60 m². Formulada to'liq perimetrni ishlatish natijani ikki barobar oshirib yuboradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='103.1' cy='157.1' r='40.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='86.5,102.7 36,197.3 264,197.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='103.1' y1='157.1' x2='122' y2='121.6' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='103.1' cy='157.1' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='78.1' y='94.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.8' y='206.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.6' y='204.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='116.1' y='174.1' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "p-r-teskari",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#e8175a28"
+    },
+    {
+      "q": "Ichki chizilgan aylananing radiusi 4 sm, yuzasi esa 84 sm² bo'lgan uchburchakning eng katta tomoni 15 sm. Qolgan ikkita tomonining yig'indisi necha santimetr?",
+      "v": [
+        "27 sm",
+        "6 sm",
+        "21 sm",
+        "42 sm"
+      ],
+      "t": 0,
+      "izoh": "S = p · r dan yarim perimetr p = 84/4 = 21 sm, demak to'liq perimetr P = 42 sm. Qolgan ikki tomon yig'indisi 42 − 15 = 27 sm. Yarim perimetrdan ayirish (21 − 15 = 6) juda ko'p uchraydigan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='142.4' cy='174.3' r='60.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='136.3,64.9 36,235.1 264,235.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='142.4' cy='174.3' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='135.1' y='53.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22.7' y='246' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277.5' y='245.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='155.4' y='191.3' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='151.3' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "p-r-teskari",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#6d095aa0"
+    },
+    {
+      "q": "Tomonlari 6 sm, 8 sm va 10 sm bo'lgan uchburchakka tashqi chizilgan aylananing radiusini R = abc/(4S) formulasi yordamida hisoblang.",
+      "v": [
+        "10 sm",
+        "5 sm",
+        "2 sm",
+        "4 sm"
+      ],
+      "t": 1,
+      "izoh": "6² + 8² = 100 = 10², demak uchburchak to'g'ri burchakli va yuzasi S = (1/2) · 6 · 8 = 24 sm². Formulaga qo'yamiz: R = (6 · 8 · 10)/(4 · 24) = 480/96 = 5 sm. Bu gipotenuzaning yarmiga teng chiqdi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,40.6 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,50.2 120.5,57.4 127.7,47.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='113.9' y='30.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='158.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='166' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='154.5' y='169.4' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='206.1' y='94' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='61.7' y='94.8' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "R-abc-4S",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#09f38dc0"
+    },
+    {
+      "q": "Tomonlari 13 sm, 14 sm va 15 sm bo'lgan uchburchakka tashqi chizilgan aylananing radiusi necha santimetrga teng?",
+      "v": [
+        "4 sm",
+        "16,25 sm",
+        "8,125 sm",
+        "7,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Yarim perimetr p = 21 sm, Geron formulasi bo'yicha S = √(21 · 8 · 7 · 6) = 84 sm². R = abc/(4S) = (13 · 14 · 15)/(4 · 84) = 2730/336 = 8,125 sm. Ichki aylana radiusi esa r = 84/21 = 4 sm bo'lardi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='121.9,39.5 51.8,207.9 248.2,207.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='119.4' y='28.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.1' y='219.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.5' y='218.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='152.6' y='227.7' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='198.6' y='119.2' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='72.7' y='120.3' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "R-abc-4S",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#2684f09d"
+    },
+    {
+      "q": "Tomonlari 5 sm, 5 sm va 6 sm bo'lgan teng yonli uchburchakka tashqi chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "3,125 sm",
+        "3 sm",
+        "2,5 sm",
+        "1,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Asosga tushirilgan balandlik h = √(5² − 3²) = 4 sm, demak S = (1/2) · 6 · 4 = 12 sm². R = abc/(4S) = (5 · 5 · 6)/(4 · 12) = 150/48 = 3,125 sm. Ichki aylana radiusi r = S/p = 12/8 = 1,5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 40.6,181.9 259.4,181.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='26.9' y='192' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='273.1' y='192' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='150' y='201.9' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='219.3' y='106.5' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='80.7' y='106.5' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "R-abc-4S",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#a10feaa2"
+    },
+    {
+      "q": "Uchburchakning tomonlari 7 sm, 15 sm va 20 sm ga teng. Shu uchburchakka tashqi chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "10 sm",
+        "2 sm",
+        "25 sm",
+        "12,5 sm"
+      ],
+      "t": 3,
+      "izoh": "Yarim perimetr p = (7 + 15 + 20)/2 = 21 sm. Geron formulasi: S = √(21 · 14 · 6 · 1) = √1764 = 42 sm². R = abc/(4S) = (7 · 15 · 20)/(4 · 42) = 2100/168 = 12,5 sm. Uchburchak to'g'ri burchakli emas, shuning uchun eng uzun tomonning yarmi javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='109.9,43.3 58.8,81.6 241.2,81.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='99.1' y='36.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='256.1' y='87.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='161.6' y='96.7' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='191.3' y='63.9' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='68.5' y='64.5' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "R-abc-4S",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#a6a61528"
+    },
+    {
+      "q": "Uchburchakning bir tomoni 12 sm bo'lib, unga qarshi yotgan burchagi 30° ga teng. Shu uchburchakka tashqi chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "24 sm",
+        "12 sm",
+        "6 sm",
+        "12√3 sm"
+      ],
+      "t": 1,
+      "izoh": "Sinuslar teoremasining kengaytirilgan ko'rinishi: a/sin A = 2R. Bunda 12/sin30° = 12/0,5 = 24, demak 2R = 24 va R = 12 sm. Ikkiga bo'lishni unutish eng ko'p uchraydigan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='130.2,37.7 93,248.7 207,248.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='128.8' y='26.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='84.3' y='264.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='217.1' y='263.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='151.5' y='268.6' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinuslar-2R",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#ea5db456"
+    },
+    {
+      "q": "Uchburchakning bir tomoni 10 sm bo'lib, unga qarshi yotgan burchagi 45° ni tashkil qiladi. Shu uchburchakka tashqi chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "5√2 sm",
+        "10√2 sm",
+        "5 sm",
+        "10 sm"
+      ],
+      "t": 0,
+      "izoh": "a/sin A = 2R formulasidan 2R = 10/sin45° = 10/(√2/2) = 20/√2 = 10√2. Demak R = 5√2 sm. Bu yerda 2R ni R deb olib yuborish yoki tomonning oddiy yarmini javob deb berish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='120.5,39.9 69.4,230.6 230.6,230.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='118.2' y='29.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='58.2' y='244.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='242.9' y='243.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='152.4' y='250.4' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinuslar-2R",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#b410b624"
+    },
+    {
+      "q": "Tashqi chizilgan aylanasining radiusi 8 sm bo'lgan uchburchakning bir burchagi 60° ga teng. Shu burchakka qarshi yotgan tomon necha santimetr?",
+      "v": [
+        "4√3 sm",
+        "8 sm",
+        "16 sm",
+        "8√3 sm"
+      ],
+      "t": 3,
+      "izoh": "Sinuslar teoremasidan a = 2R · sin A = 2 · 8 · sin60° = 16 · (√3/2) = 8√3 sm. Radiusni ikkilantirmasdan a = R · sinA deb hisoblash 4√3 xato javobini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='111,42.9 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='150' x2='111' y2='42.9' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='107.5' y='32.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.7' y='219.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.2' y='217.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinuslar-2R",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#bf51919a"
+    },
+    {
+      "q": "Aylanaga ichki chizilgan uchburchakning ikki burchagi 40° va 65° ga teng, aylananing radiusi esa 9 sm. Uchburchakning eng katta tomoni necha santimetr (0,1 gacha aniqlikda)?",
+      "v": [
+        "16,3 sm",
+        "17,4 sm",
+        "11,6 sm",
+        "8,7 sm"
+      ],
+      "t": 1,
+      "izoh": "Uchinchi burchak 180° − 40° − 65° = 75°, u eng katta bo'lgani uchun eng katta tomon unga qarshi yotadi. a = 2R · sin75° = 18 · 0,9659 ≈ 17,4 sm. Eng katta tomonni 65° yoki 40° ga bog'lash tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='198.2,46.7 39.9,179.5 260.1,179.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='203.3' y='36.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='25.7' y='188.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='273.7' y='189.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sinuslar-2R",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#a1d6b266"
+    },
+    {
+      "q": "Uchburchakning tomonlari 8 sm, 12 sm va 14 sm. Ichki chizilgan aylana 8 sm li tomonga tegib, uni ikkita kesmaga ajratadi. Shu kesmalarning kichigi necha santimetr?",
+      "v": [
+        "5 sm",
+        "4 sm",
+        "3 sm",
+        "9 sm"
+      ],
+      "t": 2,
+      "izoh": "Yarim perimetr p = (8 + 12 + 14)/2 = 17 sm. Uchdan chiqqan urinma kesmalari p minus qarama-qarshi tomon: 17 − 8 = 9, 17 − 12 = 5 va 17 − 14 = 3 sm. 8 sm li tomon 5 sm va 3 sm bo'laklarga ajraladi, kichigi 3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='169' cy='210.4' r='53.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='211.9,36 73.9,264 226.1,264' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='169' cy='210.4' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='215.8' y='25.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='62.1' y='277.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='234.9' y='280.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='182' y='227.4' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='145.8' y='283.4' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='231.6' y='144.1' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='133.5' y='141.1' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinish-kesmalari",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#8eee72a8"
+    },
+    {
+      "q": "Uchburchakning perimetri 30 sm, uning bir tomoni 11 sm. Ichki chizilgan aylananing shu tomonga qarama-qarshi uchdan chiqarilgan urinma kesmasi necha santimetr?",
+      "v": [
+        "19 sm",
+        "15 sm",
+        "5,5 sm",
+        "4 sm"
+      ],
+      "t": 3,
+      "izoh": "Yarim perimetr p = 30/2 = 15 sm. Uchdan chiqqan ikkita urinma kesma teng bo'lib, ularning uzunligi p minus qarama-qarshi tomonga teng: 15 − 11 = 4 sm. To'liq perimetrdan ayirish (19) tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='139.6' cy='171.3' r='58.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='132.1,70.1 36,229.9 264,229.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='139.6' cy='171.3' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='130.4' y='59.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22.5' y='240.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277.7' y='240' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='152.6' y='188.3' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='151.8' y='249.8' font-size='13' fill='%23334155' text-anchor='middle'%3E11 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinish-kesmalari",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#b4fe68d2"
+    },
+    {
+      "q": "Uchburchakka ichki chizilgan aylana tomonlarga tegib turibdi va uchlaridan chiqqan urinma kesmalar 4 sm, 6 sm hamda 9 sm ga teng. Uchburchakning perimetri necha santimetr?",
+      "v": [
+        "19 sm",
+        "38 sm",
+        "76 sm",
+        "24 sm"
+      ],
+      "t": 1,
+      "izoh": "Har bir uchdan chiqqan ikkita urinma kesma o'zaro teng, shuning uchun har bir uzunlik perimetrda ikki marta qatnashadi. P = 2 · (4 + 6 + 9) = 2 · 19 = 38 sm. Yig'indining o'zini javob deb berish (19) yarim perimetrdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='167.8' cy='204' r='60' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='199.8,36 61,264 239,264' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='167.8' cy='204' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='203' y='25.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='48.8' y='276.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='249.3' y='278.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='180.8' y='221' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinish-kesmalari",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#d43b6262"
+    },
+    {
+      "q": "Uchburchakning tomonlari 13 sm, 14 sm va 15 sm. Ichki chizilgan aylana 14 sm li tomonni qanday kesmalarga ajratadi?",
+      "v": [
+        "7 sm va 7 sm",
+        "5 sm va 9 sm",
+        "6 sm va 8 sm",
+        "4 sm va 10 sm"
+      ],
+      "t": 2,
+      "izoh": "Yarim perimetr p = 21 sm. Urinma kesmalari p minus qarama-qarshi tomon: 21 − 13 = 8, 21 − 14 = 7 va 21 − 15 = 6 sm. 14 sm li tomonning uchlaridan chiqqan kesmalar 8 sm va 6 sm bo'lib, ular yig'indisi 14 sm ni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='158.8' cy='193.2' r='70.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='169.6,36.7 36,263.3 264,263.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='158.8' cy='193.2' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='170.9' y='25.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='23.3' y='275.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='276.3' y='275.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='171.8' y='210.2' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='148.6' y='283.2' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3Ctext x='230.4' y='145.5' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='89.7' y='144.8' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinish-kesmalari",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#b80ee844"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda ichki chizilgan aylana gipotenuzaga tegib, uni 5 sm va 12 sm uzunlikdagi kesmalarga ajratadi. Shu uchburchakning yuzasi necha kvadrat santimetr?",
+      "v": [
+        "60 sm²",
+        "30 sm²",
+        "120 sm²",
+        "42,5 sm²"
+      ],
+      "t": 0,
+      "izoh": "Gipotenuza c = 5 + 12 = 17 sm, katetlar esa (5 + r) va (12 + r) ga teng. Pifagor teoremasi: (5 + r)² + (12 + r)² = 289 dan 2r² + 34r − 120 = 0, ya'ni r² + 17r − 60 = 0 va r = 3 sm. Katetlar 8 va 15, demak S = (1/2) · 8 · 15 = 60 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='103.1' cy='157.1' r='40.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='86.5,102.7 36,197.3 264,197.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='80.8,113.3 91.4,118.9 97.1,108.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='103.1' cy='157.1' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='78.1' y='94.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.8' y='206.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.6' y='204.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='116.1' y='174.1' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='158.9' y='214.6' font-size='13' fill='%23334155' text-anchor='middle'%3E17 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinish-kesmadan-tomon",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#8fe6abff"
+    },
+    {
+      "q": "Ichki chizilgan aylana to'g'ri burchakli uchburchakning gipotenuzasini 3 sm va 10 sm kesmalarga ajratadi. Shu aylananing radiusi necha santimetr?",
+      "v": [
+        "3,5 sm",
+        "2 sm",
+        "6,5 sm",
+        "1 sm"
+      ],
+      "t": 1,
+      "izoh": "Gipotenuza c = 3 + 10 = 13 sm, katetlar (3 + r) va (10 + r). Pifagor teoremasidan (3 + r)² + (10 + r)² = 169, ya'ni 2r² + 26r − 60 = 0 va r² + 13r − 30 = 0. Bundan r = 2 sm. Tekshiruv: katetlar 5 va 12, r = (5 + 12 − 13)/2 = 2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='88.6' cy='155.4' r='35.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='69.7,109.5 36,190.5 264,190.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='65.1,120.6 76.2,125.2 80.8,114.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='88.6' cy='155.4' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='59.1' y='102.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.7' y='198.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='197.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='101.6' y='172.4' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='161.3' y='205.9' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinish-kesmadan-tomon",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#bf3c420e"
+    },
+    {
+      "q": "Uchburchakka ichki chizilgan aylana bir tomonni 7 sm va 9 sm kesmalarga ajratadi, uchinchi uchdan chiqqan urinma kesma esa 4 sm. Uchburchakning perimetri necha santimetr?",
+      "v": [
+        "20 sm",
+        "16 sm",
+        "40 sm",
+        "32 sm"
+      ],
+      "t": 2,
+      "izoh": "Uchta uchdan chiqqan urinma kesmalar 7 sm, 9 sm va 4 sm. Har biri perimetrda ikki martadan qatnashgani uchun P = 2 · (7 + 9 + 4) = 2 · 20 = 40 sm. Yig'indi 20 sm — bu faqat yarim perimetr.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='164.3' cy='162.6' r='50.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='171.4,86.8 36,213.2 264,213.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='164.3' cy='162.6' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='173.9' y='76' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.8' y='222.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278' y='222.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='177.3' y='179.6' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='147.3' y='233' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinish-kesmadan-tomon",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#10337492"
+    },
+    {
+      "q": "Uchburchakning perimetri 46 sm. Ichki chizilgan aylana bir tomonni 6 sm va 8 sm kesmalarga ajratsa, shu tomonga qarama-qarshi uchdan chiqqan urinma kesma necha santimetr?",
+      "v": [
+        "9 sm",
+        "7 sm",
+        "14 sm",
+        "32 sm"
+      ],
+      "t": 0,
+      "izoh": "Kesilgan tomon 6 + 8 = 14 sm, yarim perimetr esa p = 46/2 = 23 sm. Qarama-qarshi uchdan chiqqan urinma kesma p minus shu tomonga teng: 23 − 14 = 9 sm. Tekshiruv: 6 + 8 + 9 = 23 = p.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='166' cy='194.6' r='69.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='186.6,36 37.9,264 262.1,264' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='166' cy='194.6' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='189' y='25.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='25.1' y='275.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='274' y='277.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='179' y='211.6' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='147.5' y='283.8' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinish-kesmadan-tomon",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#59eefdef"
+    },
+    {
+      "q": "Uchburchakka ichki chizilgan aylananing markazi uchburchakning qaysi chiziqlari kesishish nuqtasida yotadi?",
+      "v": [
+        "Tomonlarning o'rta perpendikulyarlari",
+        "Balandliklar",
+        "Medianalar",
+        "Burchaklar bissektrisalari"
+      ],
+      "t": 3,
+      "izoh": "Ichki aylana uchala tomonga teng masofada bo'lishi kerak. Burchak bissektrisasi esa aynan burchak tomonlaridan teng uzoqlikdagi nuqtalar to'plamidir. Shuning uchun uchala bissektrisaning kesishish nuqtasi ichki aylananing markazi bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='125.6' cy='162.4' r='49.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='113.4,87.8 36,212.2 264,212.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='125.6' y1='162.4' x2='125.6' y2='212.2' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='125.6' y1='162.4' x2='36' y2='212.2' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='125.6' y1='162.4' x2='264' y2='212.2' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='125.6' cy='162.4' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='109.2' y='77.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22.1' y='221.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.3' y='220.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='138.6' y='179.4' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "markaz-turi",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#36668de8"
+    },
+    {
+      "q": "Uchburchakka tashqi chizilgan aylananing markazi qaysi to'g'ri chiziqlarning kesishish nuqtasi hisoblanadi?",
+      "v": [
+        "Burchaklar bissektrisalari",
+        "Medianalar",
+        "Tomonlarning o'rta perpendikulyarlari",
+        "O'rta chiziqlar"
+      ],
+      "t": 2,
+      "izoh": "Tashqi aylana markazi uchala uchdan teng uzoqlikda bo'lishi shart. Kesmaning o'rta perpendikulyari uning uchlaridan teng uzoqlikdagi nuqtalar to'plami bo'lgani uchun uchala o'rta perpendikulyar bitta nuqtada kesishadi va shu nuqta markaz bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='113.7,41.9 37,165.3 263,165.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='150' x2='37' y2='165.3' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='150' x2='263' y2='165.3' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='109.5' y='31.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='23.1' y='175' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277.2' y='174' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "markaz-turi",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#52908fee"
+    },
+    {
+      "q": "O'tmas burchakli uchburchakka tashqi chizilgan aylananing markazi uchburchakka nisbatan qayerda joylashadi?",
+      "v": [
+        "Uchburchak ichida",
+        "Eng katta tomonning o'rtasida",
+        "O'tmas burchak uchida",
+        "Uchburchakdan tashqarida"
+      ],
+      "t": 3,
+      "izoh": "Markaz o'tkir burchakli uchburchakda ichkarida, to'g'ri burchakli uchburchakda gipotenuza o'rtasida yotadi. Burchak o'tmas bo'lganda unga qarshi yotgan tomonga tayangan markaziy burchak 180° dan katta chiqadi, shuning uchun markaz shu tomonning narigi tomoniga, ya'ni uchburchakdan tashqariga chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='136.9,36.8 56.7,84.5 243.3,84.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='132.9' y='26.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='41.9' y='91.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='258.1' y='90.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markaz-turi",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#d037c610"
+    },
+    {
+      "q": "Ixtiyoriy uchburchak uchun quyidagi tasdiqlardan qaysi biri har doim to'g'ri bo'ladi?",
+      "v": [
+        "Ichki chizilgan aylananing markazi doim uchburchak ichida yotadi",
+        "Tashqi chizilgan aylananing markazi doim uchburchak ichida yotadi",
+        "Ikkala aylananing markazi doimo ustma-ust tushadi",
+        "Ichki chizilgan aylananing markazi uchburchakdan tashqarida ham bo'lishi mumkin"
+      ],
+      "t": 0,
+      "izoh": "Bissektrisalar har doim uchburchak ichida kesishadi, shuning uchun ichki aylana markazi hech qachon tashqariga chiqmaydi. Tashqi aylana markazi esa o'tmas burchakli uchburchakda tashqariga chiqadi, ikkala markaz esa faqat teng tomonli uchburchakda ustma-ust tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markaz-turi",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#98b4bb6c"
+    },
+    {
+      "q": "ABC uchburchakning A burchagi 50° ga teng. I nuqta ichki chizilgan aylananing markazi bo'lsa, ∠BIC burchagi necha gradus?",
+      "v": [
+        "100°",
+        "115°",
+        "130°",
+        "65°"
+      ],
+      "t": 1,
+      "izoh": "I nuqtada BI va CI bissektrisalar bo'lgani uchun ∠IBC + ∠ICB = (∠B + ∠C)/2 = (180° − 50°)/2 = 65°. Demak ∠BIC = 180° − 65° = 115°. Buni qisqa formula bilan ham yozish mumkin: ∠BIC = 90° + ∠A/2.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='160.3' cy='196.1' r='67.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='174.3,36 42.7,264 257.3,264' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160.3' y1='196.1' x2='42.7' y2='264' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='160.3' y1='196.1' x2='257.3' y2='264' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='160.3' cy='196.1' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='175.9' y='25.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='30.2' y='276.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='269.2' y='277.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='173.3' y='213.1' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-BIC",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#3d5f1923"
+    },
+    {
+      "q": "Ichki chizilgan aylana markazi I bo'lgan uchburchakda ∠BIC = 130° ekani ma'lum. Uchburchakning A burchagi necha gradusga teng?",
+      "v": [
+        "40°",
+        "65°",
+        "80°",
+        "50°"
+      ],
+      "t": 2,
+      "izoh": "∠BIC = 90° + ∠A/2 formulasidan 130° = 90° + ∠A/2. Bundan ∠A/2 = 40° va ∠A = 80°. Formulani teskari o'qib ∠A = 40° deb javob berish eng ko'p uchraydigan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='137' cy='164.5' r='52.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='129.9,82.9 36,217.1 264,217.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='137' y1='164.5' x2='36' y2='217.1' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='137' y1='164.5' x2='264' y2='217.1' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='137' cy='164.5' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='127.7' y='72.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22.2' y='226.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.1' y='226.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='181.5' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-BIC",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#501786a5"
+    },
+    {
+      "q": "Uchburchakning B va C burchaklari mos ravishda 44° va 66° ga teng. Bissektrisalarning kesishish nuqtasi I bo'lsa, ∠BIC burchagi necha gradus?",
+      "v": [
+        "125°",
+        "110°",
+        "145°",
+        "55°"
+      ],
+      "t": 0,
+      "izoh": "BI va CI bissektrisalar bo'lgani uchun ∠IBC = 22° va ∠ICB = 33°. IBC uchburchakdan ∠BIC = 180° − 22° − 33° = 125°. Burchaklarni yarimlashni unutsak 180° − 110° = 70° kabi xato natija chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='176.6' cy='170.2' r='56.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='195.4,73 36,227 264,227' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='176.6' y1='170.2' x2='36' y2='227' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='176.6' y1='170.2' x2='264' y2='227' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='176.6' cy='170.2' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='199.6' y='62.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22.1' y='236.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277.3' y='237.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='189.6' y='187.2' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-BIC",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#ccb76960"
+    },
+    {
+      "q": "Teng tomonli uchburchakda ichki chizilgan aylana markazidan ikkita uchgacha o'tkazilgan kesmalar orasidagi burchak necha gradusga teng?",
+      "v": [
+        "60°",
+        "90°",
+        "150°",
+        "120°"
+      ],
+      "t": 3,
+      "izoh": "Teng tomonli uchburchakning har bir burchagi 60°, markaz esa bissektrisalar kesishish nuqtasi. ∠BIC = 90° + 60°/2 = 120°. Uchta bunday burchak birgalikda 360° ni beradi, bu javobni tasdiqlaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='182.9' r='65.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,51.3 36,248.7 264,248.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='182.9' x2='36' y2='248.7' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='182.9' x2='264' y2='248.7' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='182.9' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='40.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='23' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='199.9' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-BIC",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#a0251446"
+    },
+    {
+      "q": "O nuqta ABC uchburchakka tashqi chizilgan aylananing markazi. Agar ∠A = 35° bo'lsa, ∠BOC markaziy burchagi necha gradusga teng?",
+      "v": [
+        "35°",
+        "70°",
+        "107,5°",
+        "145°"
+      ],
+      "t": 1,
+      "izoh": "BC yoyiga tayangan ∠A ichki chizilgan burchak, ∠BOC esa xuddi shu yoyga tayangan markaziy burchak. Markaziy burchak ichki chizilgan burchakdan ikki marta katta, demak ∠BOC = 2 · 35° = 70°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='140.1,36.4 84.6,243.4 215.4,243.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='150' x2='84.6' y2='243.4' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='150' x2='215.4' y2='243.4' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='139.4' y='25.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='74.6' y='258.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='226' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-BOC",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#b65bf1a0"
+    },
+    {
+      "q": "Aylanaga ichki chizilgan uchburchakda BC tomonga tayangan markaziy burchak 140° ga teng. Shu tomonga qarama-qarshi yotgan uchburchak burchagi necha gradus?",
+      "v": [
+        "70°",
+        "140°",
+        "40°",
+        "20°"
+      ],
+      "t": 0,
+      "izoh": "Ichki chizilgan burchak bir yoyga tayangan markaziy burchakning yarmiga teng. Demak ∠A = 140°/2 = 70°. Markaziy burchakni yana ikkilantirish yoki 180° dan ayirish tipik xatolardir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='130.2,37.7 42.9,189 257.1,189' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='150' x2='42.9' y2='189' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='150' x2='257.1' y2='189' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='128.3' y='26.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='29.5' y='199.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='270.8' y='199.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-BOC",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#460dbe99"
+    },
+    {
+      "q": "Tashqi chizilgan aylana markazi O bo'lgan uchburchakda ∠BOC = 90° va OB = OC = 10 sm. BC tomonning uzunligi necha santimetr?",
+      "v": [
+        "20 sm",
+        "10 sm",
+        "5√2 sm",
+        "10√2 sm"
+      ],
+      "t": 3,
+      "izoh": "OBC uchburchak teng yonli va O uchidagi burchak 90°, ya'ni u teng yonli to'g'ri burchakli uchburchak. Gipotenuza BC = √(10² + 10²) = √200 = 10√2 sm. Radiuslarni oddiy qo'shib 20 sm deyish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='140.1,36.4 69.4,230.6 230.6,230.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='150' x2='69.4' y2='230.6' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='150' x2='230.6' y2='230.6' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='139.3' y='25.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='57.9' y='244.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='242.5' y='243.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-BOC",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#88a24c8f"
+    },
+    {
+      "q": "Tashqi chizilgan aylana markazi O uchburchak ichida yotadi va ∠BOC = 120°, ∠AOB = 130° ga teng. Uchburchakning C burchagi necha gradus?",
+      "v": [
+        "60°",
+        "65°",
+        "55°",
+        "130°"
+      ],
+      "t": 1,
+      "izoh": "Markazdagi uchta burchak to'la burchakni beradi: ∠AOC = 360° − 120° − 130° = 110°. Har bir uchburchak burchagi o'ziga qarama-qarshi markaziy burchakning yarmiga teng, demak ∠C = ∠AOB/2 = 130°/2 = 65°. Tekshiruv: 60° + 55° + 65° = 180°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='169.8,37.7 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='150' x2='51.3' y2='207' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='150' x2='248.7' y2='207' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='171.5' y='26.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.1' y='218.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.5' y='218.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-BOC",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#bebd047b"
+    },
+    {
+      "q": "Tomonlari 10 sm, 10 sm va 12 sm bo'lgan uchburchakka ichki chizilgan doiraning yuzasi necha kvadrat santimetr (π orqali yozing)?",
+      "v": [
+        "6π sm²",
+        "3π sm²",
+        "9π sm²",
+        "36π sm²"
+      ],
+      "t": 2,
+      "izoh": "Asosga tushirilgan balandlik h = √(10² − 6²) = 8 sm, yuza S = (1/2) · 12 · 8 = 48 sm². Yarim perimetr p = 16 sm, demak r = 48/16 = 3 sm. Doira yuzasi S = πr² = 9π sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='169' r='57' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,74 36,226 264,226' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='169' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='63' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22.3' y='236.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277.7' y='236.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='150' y='246' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='221.6' y='147.5' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='78.4' y='147.5' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-aylana-olcham",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#650c41be"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari 12 sm va 16 sm. Unga ichki chizilgan doiraning yuzasi necha kvadrat santimetr (π orqali yozing)?",
+      "v": [
+        "8π sm²",
+        "4π sm²",
+        "100π sm²",
+        "16π sm²"
+      ],
+      "t": 3,
+      "izoh": "Gipotenuza c = √(12² + 16²) = √400 = 20 sm. Ichki aylana radiusi r = (12 + 16 − 20)/2 = 4 sm. Doira yuzasi S = πr² = π · 16 = 16π sm². Uzunlik formulasi 2πr = 8π bilan chalkashtirmaslik kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='127.2' cy='159.1' r='45.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,95.3 36,204.7 264,204.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,104.9 120.5,112.1 127.7,102.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='127.2' cy='159.1' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='113.9' y='84.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='213.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='140.2' y='176.1' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='206.1' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='61.7' y='149.5' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-aylana-olcham",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#fa6d37c0"
+    },
+    {
+      "q": "Teng tomonli uchburchakning tomoni 6 sm ga teng. Unga ichki chizilgan aylananing uzunligi qanchaga teng (π orqali yozing)?",
+      "v": [
+        "π√3 sm",
+        "2π√3 sm",
+        "4π√3 sm",
+        "2π sm"
+      ],
+      "t": 1,
+      "izoh": "Teng tomonli uchburchakda r = a√3/6 = 6√3/6 = √3 sm. Aylana uzunligi L = 2πr = 2π√3 sm. Tashqi aylana radiusi R = 2r = 2√3 bo'lib, uning uzunligi ikki barobar katta bo'lardi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='182.9' r='65.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,51.3 36,248.7 264,248.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='182.9' x2='150' y2='248.7' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='182.9' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='40.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='23' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='199.9' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='150' y='268.7' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-aylana-olcham",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#79b9c051"
+    },
+    {
+      "q": "Yog'och taxtaning shakli tomonlari 15 sm, 20 sm va 25 sm bo'lgan uchburchak. Uning ichiga o'yilgan eng katta doira taxta yuzasining necha foizini egallaydi (π ≈ 3,14, butungacha)?",
+      "v": [
+        "26%",
+        "78%",
+        "52%",
+        "40%"
+      ],
+      "t": 2,
+      "izoh": "15² + 20² = 625 = 25², demak uchburchak to'g'ri burchakli va S = (1/2) · 15 · 20 = 150 sm². Ichki aylana radiusi r = (15 + 20 − 25)/2 = 5 sm, doira yuzasi 25π ≈ 78,5 sm². Nisbat 78,5 : 150 ≈ 0,523, ya'ni taxminan 52%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='127.2' cy='159.1' r='45.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,95.3 36,204.7 264,204.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,104.9 120.5,112.1 127.7,102.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='113.9' y='84.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='213.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='154.5' y='224.1' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Ctext x='206.1' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='61.7' y='149.5' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-aylana-olcham",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#8d09b386"
+    },
+    {
+      "q": "Katetlari 7 sm va 24 sm bo'lgan to'g'ri burchakli uchburchakka tashqi chizilgan doiraning yuzasi necha kvadrat santimetr (π orqali yozing)?",
+      "v": [
+        "156,25π sm²",
+        "625π sm²",
+        "25π sm²",
+        "12,5π sm²"
+      ],
+      "t": 0,
+      "izoh": "Gipotenuza c = √(7² + 24²) = √625 = 25 sm, demak R = c/2 = 12,5 sm. Doira yuzasi S = πR² = π · 156,25 = 156,25π sm². Radius o'rniga diametrni kvadratga ko'tarish 625π xato javobini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='53.9,88.7 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='50.5,100.2 62,103.6 65.4,92.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='41.3' y='84.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.4' y='157.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.9' y='156.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='174.5' y='119.5' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='29.1' y='121.1' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-aylana-olcham",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#950f2108"
+    },
+    {
+      "q": "Tomonlari 6 sm, 8 sm va 10 sm bo'lgan uchburchakka tashqi chizilgan aylananing uzunligi qanchaga teng (π orqali yozing)?",
+      "v": [
+        "5π sm",
+        "10π sm",
+        "25π sm",
+        "20π sm"
+      ],
+      "t": 1,
+      "izoh": "6² + 8² = 10² bo'lgani uchun uchburchak to'g'ri burchakli va R = 10/2 = 5 sm. Aylana uzunligi L = 2πR = 2π · 5 = 10π sm. Yuza formulasi πR² = 25π bilan chalkashtirish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,40.6 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,50.2 120.5,57.4 127.7,47.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='113.9' y='30.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='158.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='154.5' y='169.4' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='206.1' y='94' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='61.7' y='94.8' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-aylana-olcham",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#b09ca7ef"
+    },
+    {
+      "q": "Teng tomonli uchburchakning tomoni 6√3 sm ga teng. Unga tashqi chizilgan doiraning yuzasi necha kvadrat santimetr (π orqali yozing)?",
+      "v": [
+        "9π sm²",
+        "12π sm²",
+        "36π sm²",
+        "18π sm²"
+      ],
+      "t": 2,
+      "izoh": "Tashqi aylana radiusi R = a√3/3 = 6√3 · √3/3 = 18/3 = 6 sm. Doira yuzasi S = πR² = 36π sm². Ichki aylana radiusi r = 3 sm bo'lib, uning yuzasi 9π sm² ni tashkil qiladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='150' x2='150' y2='36' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-aylana-olcham",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#35f42b04"
+    },
+    {
+      "q": "Reklama belgisi tomonlari 9 sm, 12 sm va 15 sm bo'lgan uchburchak shaklida. Uni to'liq qoplaydigan eng kichik dumaloq stikerning yuzasi necha kvadrat santimetr (π orqali yozing)?",
+      "v": [
+        "56,25π sm²",
+        "225π sm²",
+        "15π sm²",
+        "9π sm²"
+      ],
+      "t": 0,
+      "izoh": "9² + 12² = 225 = 15², demak uchburchak to'g'ri burchakli. Belgini qoplaydigan eng kichik doira — tashqi chizilgan aylana, R = 15/2 = 7,5 sm. Stiker yuzasi S = πR² = 56,25π sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,40.6 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,50.2 120.5,57.4 127.7,47.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='113.9' y='30.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='158.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='166' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='154.5' y='169.4' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='206.1' y='94' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='61.7' y='94.8' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-aylana-olcham",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#2c76acc3"
+    },
+    {
+      "q": "Tomoni 12 sm bo'lgan teng tomonli uchburchakka tashqi va ichki chizilgan doiralar yuzalarining ayirmasi necha kvadrat santimetr (π orqali yozing)?",
+      "v": [
+        "60π sm²",
+        "12π sm²",
+        "24π sm²",
+        "36π sm²"
+      ],
+      "t": 3,
+      "izoh": "Teng tomonli uchburchakda R = a√3/3 = 4√3 sm va r = a√3/6 = 2√3 sm. Demak R² = 48, r² = 12. Yuzalar ayirmasi πR² − πr² = π(48 − 12) = 36π sm². Yuzalarni qo'shib yuborish 60π xato javobini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='57' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='150' y='227' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "halqa-farq",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#13798e0b"
+    },
+    {
+      "q": "Katetlari 6 sm va 8 sm bo'lgan to'g'ri burchakli uchburchakka tashqi chizilgan doira yuzasi bilan uchburchak yuzasining ayirmasi necha kvadrat santimetr (π ≈ 3,14)?",
+      "v": [
+        "78,5 sm²",
+        "102,5 sm²",
+        "54,5 sm²",
+        "30,5 sm²"
+      ],
+      "t": 2,
+      "izoh": "Gipotenuza c = 10 sm, demak R = 5 sm va doira yuzasi 25 · 3,14 = 78,5 sm². Uchburchak yuzasi S = (1/2) · 6 · 8 = 24 sm². Ayirma 78,5 − 24 = 54,5 sm². Yuzalarni qo'shish 102,5 xato natijasini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,40.6 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,50.2 120.5,57.4 127.7,47.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='113.9' y='30.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='158.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='206.1' y='94' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='61.7' y='94.8' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "halqa-farq",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#25632675"
+    },
+    {
+      "q": "Tomonlari 5 sm, 12 sm va 13 sm bo'lgan uchburchakning yuzasi bilan unga ichki chizilgan doira yuzasining ayirmasi qanchaga teng (π ≈ 3,14)?",
+      "v": [
+        "12,56 sm²",
+        "42,56 sm²",
+        "6,28 sm²",
+        "17,44 sm²"
+      ],
+      "t": 3,
+      "izoh": "5² + 12² = 169 = 13², demak uchburchak to'g'ri burchakli va S = (1/2) · 5 · 12 = 30 sm². Ichki aylana radiusi r = (5 + 12 − 13)/2 = 2 sm, doira yuzasi 4 · 3,14 = 12,56 sm². Ayirma 30 − 12,56 = 17,44 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='88.6' cy='155.4' r='35.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='69.7,109.5 36,190.5 264,190.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='65.1,120.6 76.2,125.2 80.8,114.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='59.1' y='102.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.7' y='198.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='197.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='161.3' y='205.9' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3Ctext x='182.1' y='149.3' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='37.1' y='151' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "halqa-farq",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#fcec86b5"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan doiraga ichki chizilgan teng tomonli uchburchak doira yuzasining necha foizini egallaydi (π ≈ 3,14, √3 ≈ 1,73, butungacha)?",
+      "v": [
+        "41%",
+        "50%",
+        "75%",
+        "33%"
+      ],
+      "t": 0,
+      "izoh": "Uchburchak tomoni a = R√3 = 6√3 sm, demak a² = 108. Uchburchak yuzasi S = a²√3/4 = 108 · 1,73/4 ≈ 46,7 sm². Doira yuzasi 36 · 3,14 = 113,04 sm². Nisbat 46,7 : 113,04 ≈ 0,413, ya'ni taxminan 41%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='150' x2='150' y2='36' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "halqa-farq",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#43f73598"
+    },
+    {
+      "q": "Teng yonli uchburchakning asosi 12 sm, yon tomoni esa 10 sm ga teng. Unga ichki chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "4 sm",
+        "3 sm",
+        "6,25 sm",
+        "8 sm"
+      ],
+      "t": 1,
+      "izoh": "Asosga tushirilgan balandlik h = √(10² − 6²) = √64 = 8 sm, demak S = (1/2) · 12 · 8 = 48 sm². Yarim perimetr p = (10 + 10 + 12)/2 = 16 sm. Ichki aylana radiusi r = S/p = 48/16 = 3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='169' r='57' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,74 36,226 264,226' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='169' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='63' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22.3' y='236.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277.7' y='236.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='150' y='246' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='221.6' y='147.5' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='78.4' y='147.5' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-r-R",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#f2d28694"
+    },
+    {
+      "q": "Teng yonli uchburchakning asosi 48 sm, yon tomonlari esa 30 sm dan. Unga tashqi chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "24 sm",
+        "18 sm",
+        "25 sm",
+        "8 sm"
+      ],
+      "t": 2,
+      "izoh": "Balandlik h = √(30² − 24²) = √324 = 18 sm, yuza S = (1/2) · 48 · 18 = 432 sm². R = abc/(4S) = (30 · 30 · 48)/(4 · 432) = 43200/1728 = 25 sm. Asosning yarmi 24 sm bo'lib, u markazgacha bo'lgan masofa emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 40.6,118.1 259.4,118.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='26' y='125.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='274' y='125.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='150' y='138.1' font-size='13' fill='%23334155' text-anchor='middle'%3E48 sm%3C/text%3E%3Ctext x='220.2' y='77.2' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Ctext x='79.8' y='77.2' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-yonli-r-R",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#0993ef34"
+    },
+    {
+      "q": "Tomonlari 25 sm, 25 sm va 30 sm bo'lgan teng yonli uchburchakka ichki chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "7,5 sm",
+        "10 sm",
+        "15,625 sm",
+        "20 sm"
+      ],
+      "t": 0,
+      "izoh": "Balandlik h = √(25² − 15²) = √400 = 20 sm, yuza S = (1/2) · 30 · 20 = 300 sm². Yarim perimetr p = 40 sm, demak r = S/p = 300/40 = 7,5 sm. Tashqi aylana radiusi esa R = (25 · 25 · 30)/1200 = 15,625 sm bo'lardi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='169' r='57' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,74 36,226 264,226' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='169' x2='150' y2='226' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='169' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='63' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22.3' y='236.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277.7' y='236.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='150' y='246' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Ctext x='221.6' y='147.5' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Ctext x='78.4' y='147.5' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-r-R",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#39429b05"
+    },
+    {
+      "q": "Teng yonli to'g'ri burchakli uchburchakning kateti 8 sm ga teng. Unga ichki chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "4√2 sm",
+        "(8 + 4√2) sm",
+        "4 sm",
+        "(8 − 4√2) sm"
+      ],
+      "t": 3,
+      "izoh": "Gipotenuza c = √(8² + 8²) = 8√2 sm. To'g'ri burchakli uchburchak uchun r = (a + b − c)/2 = (8 + 8 − 8√2)/2 = (16 − 8√2)/2 = 8 − 4√2 sm. Ishorani almashtirib qo'shish yoki katetning yarmini javob deb berish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='159.8' r='47.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,93 36,207 264,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='141.5,101.5 150,110 158.5,101.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='159.8' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='82' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.8' y='215.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.2' y='215.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='176.8' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='222.2' y='148.9' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='77.8' y='148.9' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-yonli-r-R",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#017033ee"
+    },
+    {
+      "q": "Uchburchakka tashqi chizilgan aylananing radiusi 9 sm, ichki chizilganiniki esa 2 sm. Eyler munosabatiga ko'ra ikkala aylana markazlari orasidagi masofa necha santimetr?",
+      "v": [
+        "7 sm",
+        "3√5 sm",
+        "11 sm",
+        "5 sm"
+      ],
+      "t": 1,
+      "izoh": "Eyler munosabati: OI² = R(R − 2r). Bunda OI² = 9 · (9 − 4) = 9 · 5 = 45. Demak OI = √45 = 3√5 sm. Radiuslarni oddiy ayirish (7 sm) yoki R − 2r ni javob deb berish (5 sm) tipik xatolardir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='68.9' cy='124.7' r='25.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='50.9,93.7 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68.9' y1='124.7' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='68.9' cy='124.7' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='44.9' y='82.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='59.9' y='112.7' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "Eyler-OI",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#fa9a41e8"
+    },
+    {
+      "q": "Teng tomonli uchburchakda ichki va tashqi chizilgan aylanalar markazlari orasidagi masofa qanday bo'ladi?",
+      "v": [
+        "0 ga teng, markazlar ustma-ust tushadi",
+        "r ga teng",
+        "R − r ga teng",
+        "R/2 ga teng"
+      ],
+      "t": 0,
+      "izoh": "Teng tomonli uchburchakda bissektrisa, mediana va o'rta perpendikulyar bitta chiziqqa aylanadi, shuning uchun ikkala markaz bir nuqtaga tushadi. Buni Eyler munosabati ham tasdiqlaydi: R = 2r bo'lgani uchun OI² = R(R − 2r) = 0.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='57' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "Eyler-OI",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#f3a75fa6"
+    },
+    {
+      "q": "Uchburchakka tashqi chizilgan aylananing radiusi 10 sm, markazlar orasidagi masofa esa 5 sm. Ichki chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "5 sm",
+        "2,5 sm",
+        "7,5 sm",
+        "3,75 sm"
+      ],
+      "t": 3,
+      "izoh": "Eyler munosabati OI² = R(R − 2r) ga qiymatlarni qo'yamiz: 25 = 10 · (10 − 2r). Bundan 10 − 2r = 2,5, ya'ni 2r = 7,5 va r = 3,75 sm. Oxirgi bo'lish qadamini tashlab ketish 7,5 xato javobini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='112.3' cy='107.3' r='42.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='98.2,48.5 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='112.3' y1='107.3' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='112.3' cy='107.3' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='92.2' y='37.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='97.3' y='115.3' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "Eyler-OI",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#33ce4dc9"
+    },
+    {
+      "q": "Koordinata tekisligida uchlari A(0; 0), B(6; 0) va C(0; 8) bo'lgan uchburchakka tashqi chizilgan aylananing markazi qaysi nuqtada yotadi?",
+      "v": [
+        "(0; 0)",
+        "(3; 4)",
+        "(2; 2)",
+        "(2; 8/3)"
+      ],
+      "t": 1,
+      "izoh": "AB va AC koordinata o'qlari bo'ylab yotgani uchun A uchida to'g'ri burchak bor. Gipotenuza BC ning uzunligi 10 birlik va tashqi aylana markazi uning o'rtasida yotadi. O'rta nuqta koordinatalari ((6 + 0)/2; (0 + 8)/2) = (3; 4).",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='28' y1='258' x2='285' y2='258' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='40' y1='270' x2='40' y2='18' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='88.4' y1='254' x2='88.4' y2='262' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='136.9' y1='254' x2='136.9' y2='262' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='185.3' y1='254' x2='185.3' y2='262' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='233.8' y1='254' x2='233.8' y2='262' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='36' y1='209.6' x2='44' y2='209.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='36' y1='161.1' x2='44' y2='161.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='36' y1='112.7' x2='44' y2='112.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='36' y1='64.2' x2='44' y2='64.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='40,258 185.3,258 40,64.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='288' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Ctext x='27' y='20' font-size='13' fill='%23334155' text-anchor='middle'%3Ey%3C/text%3E%3Ctext x='29.2' y='276.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='200.3' y='272' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='33.7' y='51.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-markaz",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#2ca57009"
+    },
+    {
+      "q": "Uchlari A(0; 0), B(9; 0) va C(0; 12) bo'lgan uchburchakka ichki chizilgan aylananing markazi va radiusi qanday?",
+      "v": [
+        "Markaz (4,5; 6), radiusi 7,5 birlik",
+        "Markaz (3; 4), radiusi 5 birlik",
+        "Markaz (3; 3), radiusi 3 birlik",
+        "Markaz (3; 3), radiusi 6 birlik"
+      ],
+      "t": 2,
+      "izoh": "Uchburchak A uchida to'g'ri burchakli, katetlari 9 va 12, gipotenuzasi esa √(81 + 144) = 15 birlik. Ichki aylana radiusi r = (9 + 12 − 15)/2 = 3. Aylana ikkala o'qqa ham tegib turgani uchun markaz o'qlardan 3 birlik uzoqlikda, ya'ni (3; 3) nuqtada.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='28' y1='258' x2='285' y2='258' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='40' y1='270' x2='40' y2='18' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='90.3' y1='254' x2='90.3' y2='262' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='140.6' y1='254' x2='140.6' y2='262' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='190.9' y1='254' x2='190.9' y2='262' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='241.2' y1='254' x2='241.2' y2='262' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='36' y1='207.7' x2='44' y2='207.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='36' y1='157.4' x2='44' y2='157.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='36' y1='107.1' x2='44' y2='107.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='36' y1='56.8' x2='44' y2='56.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='40,258 190.9,258 40,56.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='288' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Ctext x='27' y='20' font-size='13' fill='%23334155' text-anchor='middle'%3Ey%3C/text%3E%3Ctext x='90.3' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='140.6' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3E6%3C/text%3E%3Ctext x='190.9' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3E9%3C/text%3E%3Ctext x='241.2' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3E12%3C/text%3E%3Ctext x='28' y='212.2' font-size='13' fill='%23334155' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='28' y='161.9' font-size='13' fill='%23334155' text-anchor='middle'%3E6%3C/text%3E%3Ctext x='28' y='111.6' font-size='13' fill='%23334155' text-anchor='middle'%3E9%3C/text%3E%3Ctext x='28' y='61.3' font-size='13' fill='%23334155' text-anchor='middle'%3E12%3C/text%3E%3Ctext x='29.2' y='276.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='205.9' y='272' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='33.7' y='43.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-markaz",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#3f57d5e2"
+    },
+    {
+      "q": "Uchlari A(1; 1), B(7; 1) va C(7; 9) bo'lgan uchburchakka tashqi chizilgan aylananing radiusi nechaga teng?",
+      "v": [
+        "10 birlik",
+        "2 birlik",
+        "4 birlik",
+        "5 birlik"
+      ],
+      "t": 3,
+      "izoh": "AB tomoni gorizontal va uzunligi 6, BC tomoni vertikal va uzunligi 8 birlik, demak B uchida to'g'ri burchak bor. Gipotenuza AC = √(36 + 64) = 10 birlik, tashqi aylana radiusi esa R = 10/2 = 5 birlik.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='28' y1='258' x2='285' y2='258' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='40' y1='270' x2='40' y2='18' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='83.6' y1='254' x2='83.6' y2='262' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='127.2' y1='254' x2='127.2' y2='262' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='170.8' y1='254' x2='170.8' y2='262' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='214.4' y1='254' x2='214.4' y2='262' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='36' y1='214.4' x2='44' y2='214.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='36' y1='170.8' x2='44' y2='170.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='36' y1='127.2' x2='44' y2='127.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='36' y1='83.6' x2='44' y2='83.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='36' y1='40' x2='44' y2='40' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='61.8,236.2 192.6,236.2 192.6,61.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='288' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Ctext x='27' y='20' font-size='13' fill='%23334155' text-anchor='middle'%3Ey%3C/text%3E%3Ctext x='46.8' y='250.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='203.4' y='254.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='198.9' y='48.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-markaz",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#d3168df6"
+    },
+    {
+      "q": "Bekzod tomonlari 13 m, 14 m va 15 m bo'lgan uchburchak maydonchaning ichiga uchala chetga tegib turadigan dumaloq gulzor qurdi. Gulzor chetiga metriga 25 000 so'mdan bordyur qo'yilsa, xarajat qancha bo'ladi (π ≈ 3,14)?",
+      "v": [
+        "1 256 000 so'm",
+        "628 000 so'm",
+        "314 000 so'm",
+        "1 050 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Yarim perimetr p = 21 m, Geron formulasi bilan S = √(21 · 8 · 7 · 6) = 84 m², demak r = 84/21 = 4 m. Gulzor cheti uzunligi L = 2πr = 8 · 3,14 = 25,12 m. Xarajat 25,12 · 25 000 = 628 000 so'm. Maydonchaning perimetriga bordyur qo'yish boshqa masala bo'lardi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133.7' cy='182.6' r='65.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='117.4,52.3 36,247.7 264,247.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='133.7' cy='182.6' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='114.9' y='41.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='23.3' y='259.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277.3' y='258.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='146.7' y='199.6' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='152.6' y='267.5' font-size='13' fill='%23334155' text-anchor='middle'%3E14 m%3C/text%3E%3Ctext x='204.2' y='145.5' font-size='13' fill='%23334155' text-anchor='middle'%3E15 m%3C/text%3E%3Ctext x='62.5' y='146.6' font-size='13' fill='%23334155' text-anchor='middle'%3E13 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-loyiha",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#820edc2a"
+    },
+    {
+      "q": "Usta katetlari 20 sm va 21 sm bo'lgan to'g'ri burchakli uchburchak shaklidagi metall plastinkaga sig'adigan eng katta doirani o'ymoqchi. O'yiladigan doira chizig'ining uzunligi necha santimetr (π ≈ 3,14)?",
+      "v": [
+        "18,84 sm",
+        "91,06 sm",
+        "37,68 sm",
+        "113,04 sm"
+      ],
+      "t": 2,
+      "izoh": "Gipotenuza c = √(20² + 21²) = √841 = 29 sm. Ichki aylana radiusi r = (20 + 21 − 29)/2 = 6 sm. Aylana uzunligi L = 2πr = 12 · 3,14 = 37,68 sm. Faqat πr olinsa 18,84, tashqi aylana olinsa 91,06 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='146.1' cy='159.8' r='47.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='144.4,93.1 36,206.9 264,206.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='136.1,101.8 144.8,110.1 153.1,101.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='143.7' y='82.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.8' y='215.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.3' y='215.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='219.4' y='148.9' font-size='13' fill='%23334155' text-anchor='middle'%3E21 sm%3C/text%3E%3Ctext x='75' y='149' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-loyiha",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#c25c9173"
+    },
+    {
+      "q": "Maktab hovlisida tomonlari 9 m, 12 m va 15 m bo'lgan uchburchak maydonga uchala tomonga tegadigan dumaloq gulzor ekildi. Gulzordan tashqarida qolgan yer yuzasi necha kvadrat metr (π ≈ 3,14)?",
+      "v": [
+        "25,74 m²",
+        "28,26 m²",
+        "82,26 m²",
+        "35,16 m²"
+      ],
+      "t": 0,
+      "izoh": "9² + 12² = 225 = 15², demak maydon to'g'ri burchakli va S = (1/2) · 9 · 12 = 54 m². Ichki aylana radiusi r = (9 + 12 − 15)/2 = 3 m, gulzor yuzasi 9 · 3,14 = 28,26 m². Qolgan yer 54 − 28,26 = 25,74 m². Yuza o'rniga aylana uzunligini ayirish 35,16 xato javobini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='127.2' cy='159.1' r='45.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,95.3 36,204.7 264,204.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,104.9 120.5,112.1 127.7,102.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='127.2' cy='159.1' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='113.9' y='84.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='213.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='140.2' y='176.1' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='154.5' y='224.1' font-size='13' fill='%23334155' text-anchor='middle'%3E15 m%3C/text%3E%3Ctext x='206.1' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='61.7' y='149.5' font-size='13' fill='%23334155' text-anchor='middle'%3E9 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-loyiha",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#97d99e9d"
+    },
+    {
+      "q": "Zargar tomoni 24 mm bo'lgan teng tomonli uchburchak shaklidagi kumush plastinkani to'liq qoplaydigan eng kichik dumaloq oltin qoplama yasamoqchi. Qoplamaning diametri necha millimetr (√3 ≈ 1,73, 0,1 gacha)?",
+      "v": [
+        "13,9 mm",
+        "27,7 mm",
+        "24 mm",
+        "41,5 mm"
+      ],
+      "t": 1,
+      "izoh": "Plastinkani to'liq qoplaydigan eng kichik doira — tashqi chizilgan aylana, R = a√3/3 = 24 · 1,73/3 ≈ 13,84 mm. Savolda diametr so'ralgani uchun D = 2R ≈ 27,7 mm. Tomonni √3 ga ko'paytirib yuborish 41,5 xato javobini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='150' y='227' font-size='13' fill='%23334155' text-anchor='middle'%3E24 mm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-loyiha",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#725f95af"
+    },
+    {
+      "q": "Quyidagi uchburchaklardan qaysi birida tashqi chizilgan aylananing markazi uchburchakning tomonida yotadi?",
+      "v": [
+        "Tomonlari 5 sm, 6 sm va 7 sm bo'lgan uchburchakda",
+        "Tomonlari 4 sm, 5 sm va 8 sm bo'lgan uchburchakda",
+        "Tomonlari 8 sm, 15 sm va 17 sm bo'lgan uchburchakda",
+        "Tomonlari 9 sm, 9 sm va 9 sm bo'lgan uchburchakda"
+      ],
+      "t": 2,
+      "izoh": "Markaz tomonda yotishi uchun uchburchak to'g'ri burchakli bo'lishi kerak, chunki u holda markaz gipotenuza o'rtasiga tushadi. Tomonlari 8 sm, 15 sm va 17 sm bo'lgan uchburchakda 8² + 15² = 289 = 17², demak aynan shu uchburchak to'g'ri burchakli. Tomonlari 4 sm, 5 sm va 8 sm bo'lganida esa 4² + 5² = 41 < 64 bo'lgani uchun uchburchak o'tmas burchakli va markazi tashqarida yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tahlil-tasdiq",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#0e61ee0b"
+    },
+    {
+      "q": "Tomonlari 6 sm, 8 sm va 10 sm bo'lgan uchburchak hamda tomonlari 6 sm, 8 sm va 12 sm bo'lgan uchburchakning qaysi birida tashqi chizilgan aylana radiusi kattaroq?",
+      "v": [
+        "Ikkinchisida, chunki u o'tmas burchakli",
+        "Birinchisida, chunki u to'g'ri burchakli",
+        "Ikkalasida bir xil, chunki ikki tomoni teng",
+        "Berilganlar yetarli emas"
+      ],
+      "t": 0,
+      "izoh": "Birinchi uchburchak to'g'ri burchakli, R = 10/2 = 5 sm. Ikkinchisida p = 13, S = √(13 · 7 · 5 · 1) = √455 ≈ 21,3 sm², demak R = (6 · 8 · 12)/(4 · 21,3) ≈ 6,8 sm. Uchinchi tomon uzaygan sari uchburchak yassilashadi va tashqi aylana kattalashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tahlil-tasdiq",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#0dc75b21"
+    },
+    {
+      "q": "Uchburchakka ichki chizilgan aylananing radiusi haqidagi quyidagi tasdiqlardan qaysi biri noto'g'ri?",
+      "v": [
+        "Radius yuzaning yarim perimetrga nisbatiga teng",
+        "Teng tomonli uchburchakda radius tashqi aylana radiusining yarmiga teng",
+        "Radius uchburchakning eng qisqa balandligidan kichik",
+        "Radius tomonlar yig'indisining choragiga teng"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri munosabat r = S/p, ya'ni radius yuzaga ham bog'liq, faqat perimetrga emas. Masalan tomonlari 6, 8, 10 bo'lgan uchburchakda perimetrning choragi 6 sm, haqiqiy radius esa 2 sm. Qolgan uchta tasdiq har doim o'rinli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tahlil-tasdiq",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#8234e4d9"
+    },
+    {
+      "q": "Ikki uchburchakning perimetrlari o'zaro teng, lekin birinchisining yuzasi ikkinchisinikidan katta. Ularga ichki chizilgan aylanalar radiuslari haqida nima deyish mumkin?",
+      "v": [
+        "Ikkinchisining radiusi kattaroq",
+        "Radiuslar o'zaro teng bo'ladi",
+        "Birinchisining radiusi kattaroq",
+        "Taqqoslash uchun tomonlarni bilish shart"
+      ],
+      "t": 2,
+      "izoh": "r = S/p munosabatida yarim perimetr p ikkala uchburchak uchun bir xil. Kasrning maxraji teng bo'lgani uchun surat kattaroq bo'lgan uchburchakning radiusi ham kattaroq bo'ladi. Demak yuzasi katta bo'lgan birinchi uchburchakning ichki aylanasi kengroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tahlil-tasdiq",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#af7a5589"
+    },
+    {
+      "q": "Tomonlari 3 sm, 4 sm va 5 sm bo'lgan uchburchakda ichki va tashqi chizilgan aylanalar radiuslarining nisbati nechaga teng?",
+      "v": [
+        "1 : 2",
+        "5 : 2",
+        "3 : 5",
+        "2 : 5"
+      ],
+      "t": 3,
+      "izoh": "Uchburchak to'g'ri burchakli, chunki 3² + 4² = 5². Ichki aylana radiusi r = (3 + 4 − 5)/2 = 1 sm, tashqi aylana radiusi R = 5/2 = 2,5 sm. Nisbat r : R = 1 : 2,5 = 2 : 5. Nisbatni teskari yozish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='127.2' cy='104.4' r='45.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='118.1,40.6 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110.9,50.2 120.5,57.4 127.7,47.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='113.9' y='30.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='158.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='154.5' y='169.4' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='206.1' y='94' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='61.7' y='94.8' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-r-R",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#a2c90d99"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari 5 sm va 12 sm. Unga tashqi chizilgan aylananing radiusi ichki chizilganidan necha marta katta?",
+      "v": [
+        "3,25 marta",
+        "2 marta",
+        "4,5 marta",
+        "13 marta"
+      ],
+      "t": 0,
+      "izoh": "Gipotenuza c = 13 sm, demak R = 6,5 sm. Ichki aylana radiusi r = (5 + 12 − 13)/2 = 2 sm. Nisbat R : r = 6,5 : 2 = 3,25. Ikkala radiusni chalkashtirmaslik uchun har birini alohida hisoblash kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='88.6' cy='114.9' r='35.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='69.7,69.1 36,150 264,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='65.1,80.2 76.2,84.8 80.8,73.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='59.1' y='62.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.7' y='158.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='156.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='182.1' y='108.8' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='37.1' y='110.5' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-r-R",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#e23fc1c5"
+    },
+    {
+      "q": "Teng tomonli uchburchakda ichki chizilgan aylana uzunligining tashqi chizilgan aylana uzunligiga nisbati nechaga teng?",
+      "v": [
+        "1 : 4",
+        "1 : 2",
+        "1 : √3",
+        "2 : 3"
+      ],
+      "t": 1,
+      "izoh": "Teng tomonli uchburchakda R = 2r. Aylana uzunligi radiusga to'g'ri proporsional, demak 2πr : 2πR = r : 2r = 1 : 2. Nisbat 1 : 4 esa yuzalar uchun o'rinli bo'lardi, chunki yuza radiusning kvadratiga bog'liq.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='114' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='57' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='150,36 51.3,207 248.7,207' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-r-R",
+      "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan#26b326ff"
+    }
+  ]
+}

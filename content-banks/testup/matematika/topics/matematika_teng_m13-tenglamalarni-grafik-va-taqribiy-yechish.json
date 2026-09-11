@@ -1,0 +1,1609 @@
+{
+  "nom": "Tenglamalarni grafik va taqribiy yechish",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "y = x² parabola va y = 2x + 3 to'g'ri chiziq grafiklari koordinata tekisligida nechta umumiy nuqtaga ega ekanligini aniqlang.",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "3 ta",
+        "umumiy nuqtasi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Umumiy nuqtalar abssissalari x² = 2x + 3 tenglamadan topiladi. Uni x² − 2x − 3 = 0 ko'rinishga keltiramiz. D = 4 + 12 = 16 > 0 bo'lgani uchun ikkita har xil ildiz bor: x = 3 va x = −1. Demak grafiklar ikki nuqtada kesishadi. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-togri-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#2785db32"
+    },
+    {
+      "q": "y = x² − 4x + 7 parabola bilan y = 3 gorizontal to'g'ri chiziq koordinata tekisligida nechta nuqtada kesishadi?",
+      "v": [
+        "ikkita nuqtada",
+        "bitta nuqtada",
+        "uchta nuqtada",
+        "kesishmaydi"
+      ],
+      "t": 1,
+      "izoh": "Tenglama tuzamiz: x² − 4x + 7 = 3, ya'ni x² − 4x + 4 = 0. Bu (x − 2)² = 0 ko'rinishga keladi. D = 16 − 16 = 0 bo'lgani uchun yagona ildiz x = 2. Parabolaning uchi aynan shu to'g'ri chiziq ustida yotadi. Javob: bitta nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-togri-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#4cfc9242"
+    },
+    {
+      "q": "y = x² + 2x + 5 parabola va y = x + 1 to'g'ri chiziq grafiklarining umumiy nuqtalari soni nechaga teng?",
+      "v": [
+        "1",
+        "2",
+        "0",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "x² + 2x + 5 = x + 1 tenglamani yechamiz. Hadlarni bir tomonga o'tkazsak x² + x + 4 = 0 hosil bo'ladi. D = 1 − 16 = −15 < 0, ya'ni haqiqiy ildiz yo'q. Parabola to'g'ri chiziqdan butunlay yuqorida joylashgan. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-togri-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#ffea0ce1"
+    },
+    {
+      "q": "Do'konning bir kunlik foydasi P = −x² + 14x − 24 million so'm formula bilan hisoblanadi, bu yerda x — mahsulot narxi (ming so'mda). Foyda aynan 21 million so'm bo'ladigan narxlar yig'indisini toping.",
+      "v": [
+        "45 ming so'm",
+        "9 ming so'm",
+        "7 ming so'm",
+        "14 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Shart bo'yicha −x² + 14x − 24 = 21. Hadlarni ko'chirsak x² − 14x + 45 = 0 chiqadi. D = 196 − 180 = 16, √D = 4, ildizlar x = (14 + 4) : 2 = 9 va x = (14 − 4) : 2 = 5. Ikkala narx ham mos keladi, yig'indisi 9 + 5 = 14. Javob: 14 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-togri-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#2a92fb7f"
+    },
+    {
+      "q": "y = |x − 3| va y = 2 funksiyalar grafiklari nechta nuqtada kesishadi, ya'ni |x − 3| = 2 tenglama nechta ildizga ega?",
+      "v": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "Modul grafigi uchi (3; 0) nuqtada bo'lgan burchakdir, y = 2 esa gorizontal chiziq. Burchakning ikkala tarmog'i ham shu chiziqni kesadi. Tenglamadan x − 3 = 2 yoki x − 3 = −2, ya'ni x = 5 va x = 1. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-grafik-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#5e7d92c7"
+    },
+    {
+      "q": "y = |x| − 4 funksiya grafigi bilan y = −4 to'g'ri chiziqning umumiy nuqtalari soni nechaga teng?",
+      "v": [
+        "2",
+        "0",
+        "1",
+        "cheksiz ko'p"
+      ],
+      "t": 2,
+      "izoh": "Tenglama |x| − 4 = −4 ko'rinishida bo'lib, undan |x| = 0 kelib chiqadi. Modul faqat x = 0 da nolga aylanadi. Grafik jihatdan y = −4 chiziq burchak uchidan o'tadi va uni faqat shu nuqtada uradi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-grafik-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#2a2ac500"
+    },
+    {
+      "q": "|x² − 9| = 5 tenglamaning ildizlari sonini y = |x² − 9| va y = 5 grafiklarini taqqoslash yo'li bilan aniqlang.",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 3,
+      "izoh": "Modulni ochamiz: x² − 9 = 5 yoki x² − 9 = −5. Birinchisidan x² = 14, ya'ni x = ±√14 — ikkita ildiz. Ikkinchisidan x² = 4, ya'ni x = ±2 — yana ikkita ildiz. Hammasi bo'lib to'rtta har xil ildiz hosil bo'ladi. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-grafik-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#2ef795e5"
+    },
+    {
+      "q": "|x − 1| = 3 − x tenglamani grafik usulda yechganda y = |x − 1| va y = 3 − x chiziqlari nechta nuqtada kesishadi?",
+      "v": [
+        "bitta",
+        "ikkita",
+        "uchta",
+        "birorta ham emas"
+      ],
+      "t": 0,
+      "izoh": "Ikki holni ko'ramiz. Agar x ≥ 1 bo'lsa x − 1 = 3 − x, bundan 2x = 4 va x = 2, bu shartga mos. Agar x < 1 bo'lsa 1 − x = 3 − x, bundan 1 = 3 — yolg'on tenglik, yechim yo'q. Demak kesishish nuqtasi bitta. Javob: bitta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-grafik-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#a2a81dc2"
+    },
+    {
+      "q": "y = 6/x giperbola va y = x + 1 to'g'ri chiziq ikki nuqtada kesishadi. Shu nuqtalar abssissalarining ko'paytmasini toping.",
+      "v": [
+        "6",
+        "−6",
+        "−1",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Kesishish shartidan 6/x = x + 1, ya'ni x² + x − 6 = 0 (bu yerda x ≠ 0). D = 1 + 24 = 25, ildizlar x = 2 va x = −3. Ularning ko'paytmasi 2·(−3) = −6. Buni Viyet teoremasi ham tasdiqlaydi: ko'paytma c/a = −6. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-togri-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#ae01bcef"
+    },
+    {
+      "q": "y = 4/x giperbola va y = −x to'g'ri chiziq grafiklari kesishadimi, kesishsa nechta nuqtada kesishadi?",
+      "v": [
+        "1 nuqtada",
+        "2 nuqtada",
+        "kesishmaydi",
+        "4 nuqtada"
+      ],
+      "t": 2,
+      "izoh": "Tenglama 4/x = −x ko'rinishida. Ikkala tomonni x ga ko'paytiramiz (x ≠ 0): 4 = −x², ya'ni x² = −4. Kvadrat manfiy bo'la olmaydi, shuning uchun haqiqiy ildiz yo'q. Giperbola I va III choraklarda, to'g'ri chiziq esa II va IV choraklarda yotadi. Javob: kesishmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "giperbola-togri-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#a46440e8"
+    },
+    {
+      "q": "y = 10/x va y = 7 − x funksiyalar grafiklari ikki nuqtada kesishadi. Shu nuqtalar ordinatalarining yig'indisini toping.",
+      "v": [
+        "10",
+        "3",
+        "5",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "10/x = 7 − x dan x² − 7x + 10 = 0 hosil bo'ladi. D = 49 − 40 = 9, ildizlar x = 5 va x = 2. Ordinatalarni topamiz: 10 : 5 = 2 va 10 : 2 = 5. Ularning yig'indisi 2 + 5 = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-togri-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#ab2918fa"
+    },
+    {
+      "q": "y = k/x giperbola y = 4 − x to'g'ri chiziq bilan aynan bitta umumiy nuqtaga ega bo'lishi uchun k parametr qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "4",
+        "2",
+        "8",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "k/x = 4 − x tenglamadan x² − 4x + k = 0 kelib chiqadi. Bitta umumiy nuqta bo'lishi uchun diskriminant nolga teng bo'lsin: D = 16 − 4k = 0. Bundan k = 4. Tekshiramiz: x² − 4x + 4 = 0 tenglama x = 2 yagona ildizga ega, u x ≠ 0 shartini buzmaydi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "giperbola-togri-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#b5d38e78"
+    },
+    {
+      "q": "2ˣ = 3 − x tenglama nechta haqiqiy ildizga ega ekanligini grafik usulda, ya'ni ikki funksiya grafigini taqqoslab aniqlang.",
+      "v": [
+        "0 ta",
+        "1 ta",
+        "2 ta",
+        "3 ta"
+      ],
+      "t": 1,
+      "izoh": "Chap tomondagi y = 2ˣ funksiya barcha haqiqiy x larda (butun son o'qida) qat'iy o'suvchi, o'ng tomondagi y = 3 − x esa qat'iy kamayuvchi. O'suvchi va kamayuvchi funksiyalar grafiklari ko'pi bilan bir nuqtada kesishadi. x = 1 da 2 = 2 tenglik bajariladi, demak kesishish bor. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-chiziqli-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#f24b2be0"
+    },
+    {
+      "q": "y = 2ˣ ko'rsatkichli funksiya va y = x² parabola grafiklarining umumiy nuqtalari soni nechaga teng?",
+      "v": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Musbat qiymatlarni sinaymiz: x = 2 da 4 = 4 va x = 4 da 16 = 16 — ikkita kesishish. Manfiy tomonda x = −1 da 2ˣ = 0,5, x² = 1, ya'ni parabola yuqorida; x = 0 da 1 > 0 — parabola pastda, demak (−1; 0) oralig'ida yana bitta kesishish bor. Boshqa nuqta yo'q. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-chiziqli-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#1dc3486f"
+    },
+    {
+      "q": "y = (1/2)ˣ ko'rsatkichli funksiya va y = x + 3 to'g'ri chiziq grafiklari nechta nuqtada kesishadi?",
+      "v": [
+        "0",
+        "2",
+        "3",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "y = (1/2)ˣ funksiya kamayuvchi, y = x + 3 esa o'suvchi. Bunday juftlik ko'pi bilan bitta umumiy nuqtaga ega. x = −3 da chap tomon 8, o'ng tomon 0 — chap katta; x = 0 da 1 va 3 — chap kichik. Demak (−3; 0) oralig'ida aynan bitta kesishish bor. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-chiziqli-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#0fa66b45"
+    },
+    {
+      "q": "Havzadagi suvo'tlar maydoni har haftada ikki barobar ortadi va t haftadan keyin 2ᵗ m² bo'ladi. Xodimlar esa har haftada 3 m² dan tozalaydi, ya'ni tozalangan maydon 3t m². 2ᵗ = 3t tenglama musbat t larda nechta yechimga ega?",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "3 ta",
+        "yechimi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Kichik qiymatlarni sinaymiz: t = 1 da 2 < 3, t = 2 da 4 < 6, t = 3 da 8 < 9, t = 4 da 16 > 12 — demak 3 va 4 orasida bitta kesishish bor. Nolga yaqin joyda esa t = 0,2 da 1,15 > 0,6, t = 0,5 da 1,41 < 1,5 — bu yerda ham bitta kesishish bor. Jami ikkita yechim. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-chiziqli-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#11d9f30d"
+    },
+    {
+      "q": "lg x = 2 − x tenglamaning haqiqiy ildizlari sonini y = lg x va y = 2 − x grafiklarini chizib aniqlang.",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "3 ta",
+        "ildizi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi x > 0. Bu sohada y = lg x o'suvchi, y = 2 − x esa kamayuvchi funksiya. Shuning uchun kesishish ko'pi bilan bitta bo'ladi. x = 1 da lg 1 = 0, 2 − 1 = 1 — logarifm pastda; x = 10 da 1 va −8 — logarifm yuqorida. Demak oraliqda aynan bitta ildiz bor. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-chiziqli-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#8057908d"
+    },
+    {
+      "q": "y = log₂x va y = x − 4 funksiyalar grafiklarining umumiy nuqtalari soni nechaga teng?",
+      "v": [
+        "0 ta",
+        "1 ta",
+        "2 ta",
+        "4 ta"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi x > 0. x = 1 da log₂1 = 0, chiziq esa −3 — logarifm yuqorida. x = 8 da 3 < 4 — logarifm pastda, demak (1; 8) da bitta ildiz bor. x nolga intilganda log₂x → −∞, chiziq esa −4 ga intiladi, ya'ni logarifm pastda; shuning uchun (0; 1) oralig'ida yana bitta ildiz bor. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifmik-chiziqli-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#153ab7e9"
+    },
+    {
+      "q": "y = log₃x logarifmik funksiya va y = −x to'g'ri chiziq grafiklari nechta nuqtada kesishadi?",
+      "v": [
+        "2 nuqtada",
+        "kesishmaydi",
+        "3 nuqtada",
+        "1 nuqtada"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi x > 0, shu sohada logarifm o'suvchi, y = −x esa kamayuvchi. Demak kesishish ko'pi bilan bitta. x nolga intilganda logarifm −∞ ga tushadi, to'g'ri chiziq esa 0 ga yaqin; x = 1 da log₃1 = 0, chiziq −1 — logarifm yuqorida. Demak (0; 1) oralig'ida aynan bitta kesishish bor. Javob: 1 nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-chiziqli-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#39432bba"
+    },
+    {
+      "q": "Ovoz kuchi darajasi L = 10·lg t formula bilan o'lchanadi, bu yerda t — ovoz intensivligining bo'sag'a qiymatga nisbati. Muhandis L = 30 dB holatni y = 10·lg t va y = 30 grafiklari kesishishi orqali topmoqchi. t nechaga teng?",
+      "v": [
+        "1000",
+        "300",
+        "100",
+        "30"
+      ],
+      "t": 0,
+      "izoh": "Grafiklar kesishgan nuqtada 10·lg t = 30 tenglik bajariladi. Ikkala tomonni 10 ga bo'lamiz: lg t = 3. Logarifm ta'rifiga ko'ra t = 10³ = 1000. Javob: 1000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-chiziqli-kesishish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#82921e31"
+    },
+    {
+      "q": "y = sin x sinusoida va y = 1/2 gorizontal to'g'ri chiziq [0; 2π] kesmada nechta umumiy nuqtaga ega?",
+      "v": [
+        "ikkita",
+        "bitta",
+        "uchta",
+        "to'rtta"
+      ],
+      "t": 0,
+      "izoh": "Sinusning qiymati [0; 2π] da avval 0 dan 1 gacha ko'tariladi, so'ng −1 gacha tushadi va yana 0 ga qaytadi. y = 1/2 chizig'ini u ko'tarilish qismida bir marta, tushish qismida bir marta kesadi. Mos ildizlar x = π/6 va x = 5π/6. Javob: ikkita.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-kesishish-oraliqda",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#2fd711ec"
+    },
+    {
+      "q": "sin x = x tenglamani grafik usulda yechganda y = sin x va y = x chiziqlari nechta umumiy nuqtaga ega bo'ladi?",
+      "v": [
+        "ikkita ildiz",
+        "bitta ildiz",
+        "uchta ildiz",
+        "cheksiz ko'p ildiz"
+      ],
+      "t": 1,
+      "izoh": "x > 0 bo'lganda har doim sin x < x, x < 0 bo'lganda esa sin x > x bo'ladi. Demak tenglik faqat x = 0 da bajarilishi mumkin. Tekshiramiz: sin 0 = 0, tenglik to'g'ri. Grafik jihatdan to'g'ri chiziq sinusoidaga koordinata boshida urinadi. Javob: bitta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-kesishish-oraliqda",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#e8bac4ca"
+    },
+    {
+      "q": "tg x = 1 tenglama [0; 2π) yarim ochiq oraliqda nechta yechimga ega ekanligini grafik tasavvur yordamida aniqlang.",
+      "v": [
+        "1 ta yechim",
+        "3 ta yechim",
+        "2 ta yechim",
+        "4 ta yechim"
+      ],
+      "t": 2,
+      "izoh": "Tangensning davri π ga teng. tg x = 1 tenglamaning umumiy yechimi x = π/4 + πn ko'rinishida yoziladi. n = 0 da x = π/4, n = 1 da x = 5π/4 — ikkalasi ham [0; 2π) oralig'iga tushadi. n = 2 da x = 9π/4 bo'lib, u 2π dan katta; n = −1 da esa ildiz manfiy chiqadi. Demak berilgan oraliqda 2 ta yechim bor. Javob: 2 ta yechim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-kesishish-oraliqda",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#1c9da822"
+    },
+    {
+      "q": "y = sin x va y = x² funksiyalar grafiklari koordinata tekisligida nechta umumiy nuqtaga ega ekanligini aniqlang.",
+      "v": [
+        "umumiy nuqta yo'q",
+        "1 ta umumiy nuqta",
+        "3 ta umumiy nuqta",
+        "2 ta umumiy nuqta"
+      ],
+      "t": 3,
+      "izoh": "x < 0 da sin x manfiy, x² esa musbat — kesishish bo'lmaydi. x = 0 da ikkalasi ham nol, bu birinchi umumiy nuqta. x biroz o'sganda sin x parabolodan yuqori turadi, x = 1 da esa sin 1 ≈ 0,84 < 1 — parabola o'zib ketadi, demak (0; 1) ichida yana bitta kesishish bor. x > 1 da parabola doim yuqorida. Javob: 2 ta umumiy nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trigonometrik-kesishish-oraliqda",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#00d705d7"
+    },
+    {
+      "q": "|x² − 4| = a tenglama aynan uchta har xil haqiqiy ildizga ega bo'lishi uchun a parametr qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "a = 4",
+        "a = 0",
+        "a = 2",
+        "a = 8"
+      ],
+      "t": 0,
+      "izoh": "y = |x² − 4| grafigi ikkita chuqurlikka ega: u x = ±2 da nolga tegadi va x = 0 da 4 balandlikka ko'tariladi. y = a chizig'i a = 0 da ikki, 0 < a < 4 da to'rt nuqtada kesadi. a aynan 4 ga teng bo'lganda chiziq o'rtadagi cho'qqidan o'tadi va uchta kesishish qoladi: x = 0, x = ±√8. Javob: a = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-ildiz-soni-grafik",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#3b765f39"
+    },
+    {
+      "q": "y = x² − 6x + 5 parabola va y = a gorizontal to'g'ri chiziq ikkita umumiy nuqtaga ega bo'lishi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a ≥ −4",
+        "a > −4",
+        "a > 5",
+        "a < −4"
+      ],
+      "t": 1,
+      "izoh": "Parabola uchining abssissasi x = 3, ordinatasi esa 9 − 18 + 5 = −4. Tarmoqlari yuqoriga qaragan, shuning uchun eng kichik qiymat −4. Gorizontal chiziq uchdan qat'iy yuqorida bo'lsagina ikkita kesishish beradi; aynan a = −4 da bitta nuqta qoladi. Javob: a > −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-ildiz-soni-grafik",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#2d993847"
+    },
+    {
+      "q": "|x| = a − 1 tenglama birorta ham haqiqiy yechimga ega bo'lmasligi uchun a parametr qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "a > 1",
+        "a = 1",
+        "a < 1",
+        "a ≤ 1"
+      ],
+      "t": 2,
+      "izoh": "y = |x| grafigi hech qachon abssissa o'qidan pastga tushmaydi, ya'ni uning qiymatlari nomanfiy. Gorizontal chiziq y = a − 1 grafik bilan kesishmasligi uchun u o'qdan pastda yotishi kerak: a − 1 < 0. Bundan a < 1. a = 1 da esa yagona yechim x = 0 paydo bo'ladi. Javob: a < 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-ildiz-soni-grafik",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#68117dd9"
+    },
+    {
+      "q": "|x² − 6x| = a tenglama to'rtta har xil haqiqiy ildizga ega bo'ladigan a parametr qiymatlari oralig'ini toping.",
+      "v": [
+        "a > 9",
+        "a = 9",
+        "0 < a < 6",
+        "0 < a < 9"
+      ],
+      "t": 3,
+      "izoh": "x² − 6x kvadrat uchhad x = 0 va x = 6 da nolga aylanadi, uchi x = 3 da bo'lib qiymati −9. Modul olingach shu chuqurlik yuqoriga qaytariladi va grafikda balandligi 9 bo'lgan tepalik hosil bo'ladi. y = a chizig'i shu tepalikdan past, lekin noldan yuqori bo'lsa to'rtta kesishish beradi. Javob: 0 < a < 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-ildiz-soni-grafik",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#dd7caa36"
+    },
+    {
+      "q": "f(x) = x³ − 3x − 5 funksiya uchun f(x) = 0 tenglamaning ildizi quyidagi oraliqlarning qaysi birida joylashganini aniqlang.",
+      "v": [
+        "(1; 2)",
+        "(2; 3)",
+        "(3; 4)",
+        "(0; 1)"
+      ],
+      "t": 1,
+      "izoh": "Chekka qiymatlarni hisoblaymiz: f(2) = 8 − 6 − 5 = −3, f(3) = 27 − 9 − 5 = 13. Funksiya uzluksiz va oraliq chekkalarida ishorasi qarama-qarshi, demak orada nol bor. Boshqa oraliqlarda ishora almashmaydi: f(1) = −7, f(0) = −5, f(4) = 47. Javob: (2; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-oraligi-belgi-almashishi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#8fa16e32"
+    },
+    {
+      "q": "2ˣ + x − 5 = 0 tenglamaning yagona ildizi qaysi butun sonlar bilan chegaralangan oraliqda yotishini toping.",
+      "v": [
+        "(0; 1)",
+        "(3; 4)",
+        "(1; 2)",
+        "(2; 3)"
+      ],
+      "t": 2,
+      "izoh": "g(x) = 2ˣ + x − 5 deb belgilaymiz. g(1) = 2 + 1 − 5 = −2 manfiy, g(2) = 4 + 2 − 5 = 1 musbat. Ishora almashgani uchun ildiz shu ikki son orasida. Funksiya o'suvchi bo'lgani sababli boshqa ildiz yo'q. Javob: (1; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-oraligi-belgi-almashishi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#304ac609"
+    },
+    {
+      "q": "lg x + x = 3 tenglamaning ildizi qaysi oraliqda joylashgan? Hisoblashda lg 2 ≈ 0,301 va lg 3 ≈ 0,477 qiymatlaridan foydalaning.",
+      "v": [
+        "(1; 2)",
+        "(3; 4)",
+        "(4; 5)",
+        "(2; 3)"
+      ],
+      "t": 3,
+      "izoh": "h(x) = lg x + x − 3 funksiyani qaraymiz. h(2) ≈ 0,301 + 2 − 3 = −0,699 manfiy, h(3) ≈ 0,477 + 3 − 3 = 0,477 musbat. Uzluksiz funksiya ishorasini almashtirgani uchun shu oraliqda ildiz bor. Javob: (2; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-oraligi-belgi-almashishi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#c4024df0"
+    },
+    {
+      "q": "Zavodning oylik sof foydasi F(x) = x³ − 5x − 30 million so'm formula bilan hisoblanadi, bu yerda x — ishlab chiqarilgan mahsulot miqdori (ming dona). Foyda nolga aylanadigan x qaysi butun sonlar orasida yotadi?",
+      "v": [
+        "3 va 4 orasida",
+        "2 va 3 orasida",
+        "4 va 5 orasida",
+        "1 va 2 orasida"
+      ],
+      "t": 0,
+      "izoh": "F(3) = 27 − 15 − 30 = −18, ya'ni bu miqdorda zavod hali zarar ko'radi. F(4) = 64 − 20 − 30 = 14, ya'ni foyda musbatga o'tdi. Uzluksiz funksiya manfiydan musbatga o'tishda albatta nolni kesib o'tadi. Demak zararsizlik nuqtasi 3 va 4 ming dona orasida. Javob: 3 va 4 orasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-oraligi-belgi-almashishi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#8548324c"
+    },
+    {
+      "q": "f(x) = x³ − x − 3 funksiyaning [1; 2] kesmadagi ildizi yarim bo'lish usuli bilan izlanmoqda. Birinchi qadamdan keyin qaysi oraliq qoladi?",
+      "v": [
+        "(1; 1,5)",
+        "(1,5; 2)",
+        "(1,5; 1,75)",
+        "(1,25; 1,5)"
+      ],
+      "t": 1,
+      "izoh": "Kesmaning o'rtasi x = 1,5. Shu nuqtada f(1,5) = 3,375 − 1,5 − 3 = −1,125, ya'ni manfiy. Kesma o'ng chekkasida f(2) = 8 − 2 − 3 = 3 musbat. Ishora almashish o'ng yarmida bo'lgani uchun izlash aynan shu yerda davom etadi. Javob: (1,5; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yarim-bolish-usuli-qadam",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#7423c268"
+    },
+    {
+      "q": "√5 sonini x² − 5 = 0 tenglamaning [2; 3] kesmadagi ildizi sifatida yarim bo'lish usuli bilan izlaymiz. Ikkita qadamdan keyin qaysi oraliq qoladi?",
+      "v": [
+        "(2,25; 2,5)",
+        "(2; 2,5)",
+        "(2; 2,25)",
+        "(2,5; 3)"
+      ],
+      "t": 2,
+      "izoh": "Birinchi qadam: o'rta nuqta 2,5, f(2,5) = 6,25 − 5 = 1,25 musbat, f(2) = −1 manfiy, demak (2; 2,5) qoladi. Ikkinchi qadam: o'rta nuqta 2,25, f(2,25) = 5,0625 − 5 = 0,0625 musbat, chap chekka esa hamon manfiy. Shuning uchun (2; 2,25) oralig'iga o'tamiz. Javob: (2; 2,25).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yarim-bolish-usuli-qadam",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#ff5cb065"
+    },
+    {
+      "q": "Uzunligi 1 ga teng bo'lgan [1; 2] kesmada yarim bo'lish usuli qo'llanmoqda. Ildizni 0,1 dan kichik aniqlikda topish uchun kamida nechta qadam kerak bo'ladi?",
+      "v": [
+        "3 ta",
+        "5 ta",
+        "6 ta",
+        "4 ta"
+      ],
+      "t": 3,
+      "izoh": "Har bir qadamda oraliq uzunligi ikki barobar qisqaradi. Qadamlardan keyingi uzunliklar: 0,5 keyin 0,25 keyin 0,125 va nihoyat 0,0625. Faqat to'rtinchi qadamdan keyin uzunlik 0,1 dan kichik bo'ladi. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-bolish-usuli-qadam",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#10c4628b"
+    },
+    {
+      "q": "x³ + x = 20 tenglamaning [2; 3] kesmadagi ildizi yarim bo'lish usuli bilan izlanmoqda. Birinchi qadamdan keyin qaysi oraliq qoladi?",
+      "v": [
+        "(2,5; 3)",
+        "(2; 2,5)",
+        "(2,5; 2,75)",
+        "(2,75; 3)"
+      ],
+      "t": 0,
+      "izoh": "O'rta nuqtani olamiz: x = 2,5. Chap tomonni hisoblaymiz: 2,5³ + 2,5 = 15,625 + 2,5 = 18,125, bu 20 dan kichik. Kesmaning o'ng chekkasida esa 27 + 3 = 30 bo'lib, 20 dan katta. Ishora almashish o'ng yarmida bo'lgani uchun izlash aynan shu yerda davom etadi. Javob: (2,5; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yarim-bolish-usuli-qadam",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#a545586d"
+    },
+    {
+      "q": "Uzluksiz f(x) funksiya qiymatlari o'lchandi: f(0) = −7, f(1) = −2, f(2) = 5, f(3) = 14. f(x) = 0 tenglamaning ildizi qayerda joylashgan?",
+      "v": [
+        "0 va 1 orasida",
+        "1 va 2 orasida",
+        "2 va 3 orasida",
+        "ildiz yo'q"
+      ],
+      "t": 1,
+      "izoh": "Jadvaldagi qiymatlar ishorasini kuzatamiz: manfiy, manfiy, musbat, musbat. Ishora faqat f(1) bilan f(2) orasida almashadi. Uzluksiz funksiya manfiydan musbatga o'tayotganda albatta nolga teng bo'ladi. Javob: 1 va 2 orasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-orqali-ildiz-oraligi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#89c0ccc0"
+    },
+    {
+      "q": "Uzluksiz g(x) funksiya uchun g(−2) = 4, g(−1) = −3, g(0) = −5, g(1) = −1, g(2) = 6 qiymatlar ma'lum. g(x) = 0 tenglama shu kesmada kamida nechta ildizga ega?",
+      "v": [
+        "kamida 1 ta",
+        "kamida 3 ta",
+        "kamida 2 ta",
+        "kamida 4 ta"
+      ],
+      "t": 2,
+      "izoh": "Ishoralar ketma-ketligi: musbat, manfiy, manfiy, manfiy, musbat. Birinchi almashish −2 bilan −1 orasida, ikkinchisi esa 1 bilan 2 orasida ro'y beradi. Har bir almashish kamida bitta ildizni kafolatlaydi. Javob: kamida 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-orqali-ildiz-oraligi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#ffe78232"
+    },
+    {
+      "q": "Meteorolog havo haroratini o'lchadi: soat 5 da −4 °C, soat 7 da −1 °C, soat 9 da 3 °C, soat 11 da 8 °C. Harorat nol darajaga qaysi o'lchovlar orasida yetgan?",
+      "v": [
+        "soat 5 va 7 orasida",
+        "soat 9 va 11 orasida",
+        "soat 11 dan keyin",
+        "soat 7 va 9 orasida"
+      ],
+      "t": 3,
+      "izoh": "Harorat vaqt bo'yicha uzluksiz o'zgaradi. Qiymatlar ishorasi soat 7 dagi −1 dan soat 9 dagi 3 ga o'tishda manfiydan musbatga aylanadi. Demak nol daraja aynan shu ikki o'lchov orasida bo'lib o'tgan. Javob: soat 7 va 9 orasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-orqali-ildiz-oraligi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#32aa484c"
+    },
+    {
+      "q": "h(x) = x³ − 2x − 5 funksiya uchun h(2) = −1 va h(2,1) = 0,061 hisoblangan. Tenglama ildizini 0,1 aniqlikda yaxlitlab qaysi qiymatni olish to'g'ri bo'ladi?",
+      "v": [
+        "2,1",
+        "2",
+        "2,5",
+        "2,2"
+      ],
+      "t": 0,
+      "izoh": "Ildiz 2 bilan 2,1 orasida yotadi, chunki funksiya shu yerda ishorani almashtiradi. Chekkalardagi qiymatlarni taqqoslaymiz: |−1| = 1, |0,061| = 0,061. Nolga ancha yaqin qiymat 2,1 nuqtada olingan, demak ildiz shu chekkaga yaqinroq. Javob: 2,1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-orqali-ildiz-oraligi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#c9647f0f"
+    },
+    {
+      "q": "y = 2x − 1 va y = −x + 8 to'g'ri chiziqlar grafiklari kesishadigan nuqtaning koordinatalarini toping.",
+      "v": [
+        "(3; 5)",
+        "(5; 3)",
+        "(3; 8)",
+        "(9; 17)"
+      ],
+      "t": 0,
+      "izoh": "Kesishish nuqtasida ikkala ifoda tenglashadi: 2x − 1 = −x + 8. Hadlarni yig'amiz: 3x = 9, bundan x = 3. Endi ordinatani birinchi formuladan topamiz: y = 2·3 − 1 = 5. Tekshirish: −3 + 8 = 5, mos keladi. Javob: (3; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesishish-nuqtasi-koordinatasi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#9989c78c"
+    },
+    {
+      "q": "y = x² − 2x parabola va y = x + 4 to'g'ri chiziq ikki nuqtada kesishadi. Katta abssissali kesishish nuqtasining ordinatasini toping.",
+      "v": [
+        "−1",
+        "8",
+        "4",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Tenglama tuzamiz: x² − 2x = x + 4, ya'ni x² − 3x − 4 = 0. D = 9 + 16 = 25, ildizlar x = 4 va x = −1. Katta abssissa x = 4. Ordinatani to'g'ri chiziq formulasidan topamiz: y = 4 + 4 = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishish-nuqtasi-koordinatasi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#498c999a"
+    },
+    {
+      "q": "Toshkentda ikki taksi xizmati ishlaydi: birinchisi 12000 so'm chaqiruv haqi va har kilometr uchun 1800 so'm, ikkinchisi 21000 so'm chaqiruv haqi va har kilometr uchun 1200 so'm oladi. Ikkala xizmat narxi teng bo'ladigan masofani toping.",
+      "v": [
+        "5 km",
+        "9 km",
+        "15 km",
+        "30 km"
+      ],
+      "t": 2,
+      "izoh": "Ikki narx funksiyasini tenglashtiramiz: 12000 + 1800x = 21000 + 1200x. O'xshash hadlarni yig'amiz: 600x = 9000, bundan x = 15. Tekshiramiz: 12000 + 27000 = 39000 va 21000 + 18000 = 39000 — narxlar teng. Javob: 15 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishish-nuqtasi-koordinatasi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#0812124f"
+    },
+    {
+      "q": "y = √x va y = x − 2 funksiyalar grafiklari yagona nuqtada kesishadi. Shu nuqtaning koordinatalarini aniqlang.",
+      "v": [
+        "(1; 1)",
+        "(2; 4)",
+        "(9; 3)",
+        "(4; 2)"
+      ],
+      "t": 3,
+      "izoh": "√x = x − 2 tenglamani kvadratga ko'taramiz: x = x² − 4x + 4, ya'ni x² − 5x + 4 = 0. Ildizlar x = 1 va x = 4. x = 1 da o'ng tomon −1 manfiy chiqadi, ildiz esa manfiy bo'la olmaydi — bu begona ildiz. x = 4 da √4 = 2 va 4 − 2 = 2, tenglik bajariladi. Javob: (4; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesishish-nuqtasi-koordinatasi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#420343c5"
+    },
+    {
+      "q": "x² + y² = 25 aylana va y = 5 to'g'ri chiziqdan tuzilgan sistema nechta haqiqiy yechimga ega ekanligini grafik yo'l bilan aniqlang.",
+      "v": [
+        "yagona yechim",
+        "ikkita yechim",
+        "yechimi yo'q",
+        "cheksiz ko'p yechim"
+      ],
+      "t": 0,
+      "izoh": "Aylananing markazi koordinata boshida, radiusi 5 ga teng. y = 5 chizig'i markazdan aynan 5 birlik uzoqlikda, ya'ni radiusga teng masofada. Bunday chiziq aylanaga urinadi va faqat bitta umumiy nuqta beradi. Uni topamiz: x² + 25 = 25, x = 0, nuqta (0; 5). Javob: yagona yechim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sistema-grafik-yechim-soni",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#45355e0b"
+    },
+    {
+      "q": "x² + y² = 9 aylana va y = x + 5 to'g'ri chiziqdan tuzilgan sistemaning haqiqiy yechimlari soni nechaga teng?",
+      "v": [
+        "bitta yechim",
+        "yechimi yo'q",
+        "ikkita yechim",
+        "uchta yechim"
+      ],
+      "t": 1,
+      "izoh": "Aylana radiusi 3. To'g'ri chiziq y = x + 5 ordinatalar o'qini 5 nuqtada, abssissalar o'qini −5 nuqtada kesadi. Markazdan chiziqqa masofa 5 : √2 ≈ 3,54 ga teng va u radius 3 dan katta. Demak chiziq aylanadan tashqarida o'tadi. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema-grafik-yechim-soni",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#3477aca4"
+    },
+    {
+      "q": "x² + y² = 16 aylana va x = 2 vertikal to'g'ri chiziq koordinata tekisligida nechta umumiy nuqtaga ega?",
+      "v": [
+        "bitta nuqta",
+        "umumiy nuqta yo'q",
+        "ikkita nuqta",
+        "uchta nuqta"
+      ],
+      "t": 2,
+      "izoh": "Aylana radiusi 4, vertikal chiziq esa markazdan 2 birlik uzoqlikda o'tadi. Bu masofa radiusdan kichik, demak chiziq aylanani kesib o'tadi. Tekshiramiz: 4 + y² = 16, y² = 12, ya'ni y = ±√12 — ikkita qiymat. Javob: ikkita nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sistema-grafik-yechim-soni",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#b1d09933"
+    },
+    {
+      "q": "y = x² parabola va y = 6 − |x| siniq chiziqdan tuzilgan sistema nechta haqiqiy yechimga ega?",
+      "v": [
+        "bitta yechim",
+        "to'rtta yechim",
+        "uchta yechim",
+        "ikkita yechim"
+      ],
+      "t": 3,
+      "izoh": "x² = 6 − |x| tenglamani yozamiz va |x| = u belgilashni kiritamiz, bunda x² = u². Hosil bo'lgan u² + u − 6 = 0 tenglamaning ildizlari u = 2 va u = −3. Modul manfiy bo'lmagani uchun faqat u = 2 mos keladi, ya'ni x = 2 va x = −2. Javob: ikkita yechim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema-grafik-yechim-soni",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#25e79862"
+    },
+    {
+      "q": "Diofant tenglamasi 3x + 5y = 47 berilgan. Uning ikkala noma'lumi ham natural son bo'lgan nechta (x; y) yechimi mavjud?",
+      "v": [
+        "uchta",
+        "ikkita",
+        "to'rtta",
+        "beshta"
+      ],
+      "t": 0,
+      "izoh": "y ni ketma-ket qo'yib chiqamiz. y = 1 da 3x = 42, x = 14 — mos. y = 4 da 3x = 27, x = 9 — mos. y = 7 da 3x = 12, x = 4 — mos. y = 10 da 3x = −3 chiqadi, bu natural emas. Oraliqdagi qolgan y larda 47 − 5y soni 3 ga bo'linmaydi. Javob: uchta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diofant-chiziqli-yechim-soni",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#b877d648"
+    },
+    {
+      "q": "7x + 11y = 100 tenglamaning natural sonlardan iborat yagona yechimi mavjud. Shu yechimni ko'rsating.",
+      "v": [
+        "x = 4, y = 8",
+        "x = 8, y = 4",
+        "x = 11, y = 2",
+        "x = 2, y = 8"
+      ],
+      "t": 1,
+      "izoh": "11y ni 100 dan ayirib, natija 7 ga bo'linishini talab qilamiz. y = 1 da 89, y = 2 da 78, y = 3 da 67 — hech biri 7 ga bo'linmaydi. y = 4 da 100 − 44 = 56 va 56 : 7 = 8 — mos keladi. y = 5 dan y = 9 gacha bo'lgan qiymatlarda ham 100 − 11y soni 7 ga bo'linmaydi (jumladan y = 9 da 100 − 99 = 1). y = 10 dan boshlab esa ayirma manfiy bo'lib qoladi. Javob: x = 8, y = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diofant-chiziqli-yechim-soni",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#94d31ff2"
+    },
+    {
+      "q": "4x + 6y = 25 tenglama butun sonlarda nechta yechimga ega ekanligini aniqlang va javobni asoslang.",
+      "v": [
+        "cheksiz ko'p",
+        "bitta",
+        "butun yechimi yo'q",
+        "ikkita"
+      ],
+      "t": 2,
+      "izoh": "Chap tomondagi ikkala had ham juft: 4x juft va 6y juft, demak ularning yig'indisi ham juft son. O'ng tomondagi 25 esa toq son. Juft son hech qachon toq songa teng bo'lmaydi. Shuning uchun bu tenglamaning butun sonli yechimi umuman yo'q. Javob: butun yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diofant-chiziqli-yechim-soni",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#1ad4e7c5"
+    },
+    {
+      "q": "6x + 9y = 42 tenglamaning ikkala noma'lumi ham natural son bo'lgan yechimlari soni nechaga teng?",
+      "v": [
+        "1 ta",
+        "3 ta",
+        "4 ta",
+        "2 ta"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomonni 3 ga bo'lamiz: 2x + 3y = 14. Chap tomonda 2x juft, 14 ham juft, demak 3y juft bo'lishi kerak, ya'ni y juft son. y = 2 da 2x = 8, x = 4 — mos. y = 4 da 2x = 2, x = 1 — mos. y = 6 da 2x = −4 chiqadi, bu yaramaydi. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diofant-chiziqli-yechim-soni",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#90956a71"
+    },
+    {
+      "q": "Aziz do'kondan narxi 5000 so'mlik va 8000 so'mlik daftarlar sotib olib, kassaga 61000 so'm to'ladi. Har ikkala turdan kamida bittadan olgan bo'lsa, xaridni necha xil qilish mumkin?",
+      "v": [
+        "2 xil",
+        "3 xil",
+        "1 xil",
+        "4 xil"
+      ],
+      "t": 0,
+      "izoh": "Narxlarni ming so'mda yozamiz: 5a + 8b = 61, bunda a va b kamida 1 ga teng. 61 − 8b soni 5 ga bo'linishi kerak. b = 2 da 61 − 16 = 45 va a = 9. b = 7 da 61 − 56 = 5 va a = 1. Qolgan b larda qoldiq 5 ga bo'linmaydi, b = 8 da esa ayirma manfiy. Javob: 2 xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diofant-hayotiy-xarid",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#bd817e4d"
+    },
+    {
+      "q": "Dilnoza unni 3 kg li va 7 kg li qoplarda sotib olib, jami 59 kg un keltirdi. Har ikkala turdagi qopdan kamida bittadan bo'lsa, nechta variant mumkin?",
+      "v": [
+        "2 xil usulda",
+        "3 xil usulda",
+        "4 xil usulda",
+        "5 xil usulda"
+      ],
+      "t": 1,
+      "izoh": "3x + 7y = 59 tenglamani tuzamiz, bunda x va y kamida 1 ga teng. 59 − 7y soni 3 ga bo'linishi kerak. y = 2 da 45 : 3 = 15, y = 5 da 24 : 3 = 8, y = 8 da 3 : 3 = 1 — uchta mos holat. y = 9 da ayirma manfiy bo'lib qoladi. Javob: 3 xil usulda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diofant-hayotiy-xarid",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#4daa9cc6"
+    },
+    {
+      "q": "Maktab ekskursiyasiga 285 o'quvchi boradi. Ularni 45 o'rinli va 30 o'rinli avtobuslarga bo'sh joy qolmaydigan qilib joylashtirish kerak. Eng kam avtobus bilan borish uchun jami nechta avtobus zarur?",
+      "v": [
+        "8 ta",
+        "9 ta",
+        "7 ta",
+        "6 ta"
+      ],
+      "t": 2,
+      "izoh": "45x + 30y = 285 tenglamani 15 ga qisqartiramiz: 3x + 2y = 19. 2y juft, 19 toq bo'lgani uchun 3x toq, ya'ni x toq son. x = 1 da y = 8 (jami 9 ta), x = 3 da y = 5 (jami 8 ta), x = 5 da y = 2 (jami 7 ta). x = 7 da y manfiy chiqadi. Eng kichik jami 7 ta. Javob: 7 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diofant-hayotiy-xarid",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#30c33f8a"
+    },
+    {
+      "q": "Konsert chiptalari 12000 so'm va 20000 so'mdan sotiladi. Bir guruh jami 176000 so'mlik chipta xarid qildi va har turdan kamida bittadan oldi. Arzon chiptalar soni ko'pi bilan nechta bo'lishi mumkin?",
+      "v": [
+        "3 ta",
+        "8 ta",
+        "11 ta",
+        "13 ta"
+      ],
+      "t": 3,
+      "izoh": "Ming so'mda yozamiz: 12x + 20y = 176, ikkala tomonni 4 ga bo'lsak 3x + 5y = 44. Arzon chiptalar soni x ni kattalashtirish uchun y ni kichraytiramiz. y = 1 da 3x = 39 va x = 13 — mos keladi. y = 2 va y = 3 da qoldiq 3 ga bo'linmaydi, y = 4 da esa x = 8 bo'lib kichrayadi. Javob: 13 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diofant-hayotiy-xarid",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#fef6c1bc"
+    },
+    {
+      "q": "Nyutonning urinmalar usulida navbatdagi yaqinlashish x₁ = x₀ − f(x₀)/f′(x₀) formula bo'yicha topiladi. f(x) = x³ − 7 va x₀ = 2 bo'lsa, x₁ ning yuzdan bir aniqlikdagi qiymatini toping.",
+      "v": [
+        "1,92",
+        "2,08",
+        "1,89",
+        "1,83"
+      ],
+      "t": 0,
+      "izoh": "Avval kerakli qiymatlarni hisoblaymiz: f(2) = 8 − 7 = 1. Hosila f′(x) = 3x², shuning uchun f′(2) = 12. Formulaga qo'yamiz: x₁ = 2 − 1 : 12 = 2 − 0,0833… = 1,9166… Yuzdan bir aniqlikda yaxlitlasak 1,92 hosil bo'ladi. Javob: 1,92.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nyuton-urinma-qadam",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#bd4710fe"
+    },
+    {
+      "q": "√3 sonini urinmalar usuli bilan izlaymiz: f(x) = x² − 3 deb olib, boshlang'ich yaqinlashish x₀ = 2 tanlanadi. Birinchi qadamdan keyin x₁ nechaga teng bo'ladi?",
+      "v": [
+        "1,5",
+        "1,75",
+        "2,25",
+        "1,7"
+      ],
+      "t": 1,
+      "izoh": "Hosilani topamiz: f′(x) = 2x, demak f′(2) = 4. Funksiyaning qiymati esa f(2) = 4 − 3 = 1. Urinmalar usuli formulasiga qo'yamiz: x₁ = 2 − 1 : 4 = 2 − 0,25 = 1,75. Bu qiymat haqiqiy ildiz √3 ≈ 1,732 ga ancha yaqin. Javob: 1,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nyuton-urinma-qadam",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#38df5b49"
+    },
+    {
+      "q": "Urinmalar usulini f(x) = x² − a funksiyaga qo'llasak, keyingi yaqinlashishni hisoblash formulasi qaysi ko'rinishga soddalashadi?",
+      "v": [
+        "xₙ₊₁ = xₙ + a/xₙ",
+        "xₙ₊₁ = (xₙ − a/xₙ) : 2",
+        "xₙ₊₁ = (xₙ + a/xₙ) : 2",
+        "xₙ₊₁ = a/xₙ"
+      ],
+      "t": 2,
+      "izoh": "Hosila f′(x) = 2x bo'ladi. Formulaga qo'yamiz: xₙ₊₁ = xₙ − (xₙ² − a) : (2xₙ). Umumiy maxrajga keltirsak (2xₙ² − xₙ² + a) : (2xₙ), ya'ni (xₙ² + a) : (2xₙ) hosil bo'ladi. Buni ikkiga ajratib yozsak (xₙ + a/xₙ) : 2 ko'rinishi chiqadi — bu ildiz chiqarishning mashhur taqribiy formulasi. Javob: xₙ₊₁ = (xₙ + a/xₙ) : 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nyuton-urinma-qadam",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#5e550c10"
+    },
+    {
+      "q": "Taqribiy yechishning urinmalar usulida y = f(x) grafigiga x₀ nuqtada urinma o'tkaziladi. Ildizga navbatdagi yaqinlashish sifatida qaysi nuqtaning abssissasi olinadi?",
+      "v": [
+        "kesmaning o'rtasidagi nuqta",
+        "grafik va o'q oralig'idagi yuzning markazi",
+        "vatarning grafik bilan kesishish nuqtasi",
+        "urinmaning abssissalar o'qi bilan kesishish nuqtasi"
+      ],
+      "t": 3,
+      "izoh": "Usulning mohiyati shundaki, egri chiziq kichik oraliqda unga o'tkazilgan urinma bilan almashtiriladi. Urinma to'g'ri chiziq bo'lgani uchun uning noli oson topiladi. Aynan shu nol ildizga navbatdagi yaqinlashish bo'lib xizmat qiladi. Shuning uchun ham usul urinmalar usuli deb ataladi. Javob: urinmaning abssissalar o'qi bilan kesishish nuqtasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nyuton-urinma-qadam",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#b07497c6"
+    },
+    {
+      "q": "x² = 2 tenglamaning [1; 2] kesmadagi ildizi vatarlar usuli bilan izlanmoqda: kesma uchlarini tutashtiruvchi vatarning abssissalar o'qi bilan kesishish nuqtasi olinadi. Birinchi yaqinlashishni yuzdan bir aniqlikda toping.",
+      "v": [
+        "1,33",
+        "1,5",
+        "1,41",
+        "1,67"
+      ],
+      "t": 0,
+      "izoh": "Chetlardagi qiymatlar: f(1) = 1 − 2 = −1 va f(2) = 4 − 2 = 2. Vatar (1; −1) va (2; 2) nuqtalardan o'tadi. Uning nolini nisbatdan topamiz: x = 1 + 1·(2 − 1) : (2 + 1) = 1 + 1 : 3 ≈ 1,3333. Yuzdan bir aniqlikda yaxlitlasak 1,33 chiqadi. Javob: 1,33.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vatarlar-usuli-taqribiy",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#b3683759"
+    },
+    {
+      "q": "Uzluksiz f funksiya uchun f(2) = −3 va f(5) = 6 qiymatlar o'lchandi. Vatarlar usuli bo'yicha ildizning birinchi yaqinlashishi nechaga teng bo'ladi?",
+      "v": [
+        "2,5",
+        "3",
+        "3,5",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Kesma uchlarini tutashtiruvchi vatar (2; −3) va (5; 6) nuqtalardan o'tadi. Chetlardagi qiymatlar modullari 3 va 6, ya'ni vatarning noli chap chekkaga ikki barobar yaqinroq. Kesma uzunligi 3 ni shu nisbatda bo'lamiz: 2 + 3·3 : 9 = 2 + 1 = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vatarlar-usuli-taqribiy",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#bb656af0"
+    },
+    {
+      "q": "Yarim bo'lish usulida oraliq har doim teng ikkiga bo'linadi. Vatarlar usulida esa navbatdagi yaqinlashish nuqtasi qanday tanlanadi?",
+      "v": [
+        "oraliqning aynan o'rtasi olinadi",
+        "har doim kesmaning chap chekkasi olinadi",
+        "kesma uchlarini tutashtiruvchi vatar abssissalar o'qini kesgan nuqta olinadi",
+        "oraliq uzunligining uchdan bir qismi olinadi"
+      ],
+      "t": 2,
+      "izoh": "Vatarlar usulida funksiya kesma ustida to'g'ri chiziq bilan almashtiriladi. Bu to'g'ri chiziq, ya'ni vatar, kesma uchlaridagi (a; f(a)) va (b; f(b)) nuqtalardan o'tadi. Uning abssissalar o'qini kesgan joyi ildizga yangi yaqinlashish sifatida olinadi. Shu sababli usul funksiyaning chetlardagi qiymatlarini ham hisobga oladi. Javob: kesma uchlarini tutashtiruvchi vatar abssissalar o'qini kesgan nuqta olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vatarlar-usuli-taqribiy",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#922eea85"
+    },
+    {
+      "q": "Muzlatgichdan olingan mahsulot isiyapti: 4-daqiqada harorat −5 °C, 9-daqiqada esa 15 °C bo'ldi. Ikki o'lchov nuqtasini tutashtiruvchi vatar yordamida harorat nol darajaga yetgan paytni taqriban toping.",
+      "v": [
+        "6,5 daqiqa",
+        "5 daqiqa",
+        "4,75 daqiqa",
+        "5,25 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "O'lchov nuqtalari (4; −5) va (9; 15). Ular orasidagi 5 daqiqada harorat 20 daraja ko'tarilgan, ya'ni vatar bo'ylab har daqiqada aynan 4 daraja. Nolga yetish uchun −5 dan 5 daraja ko'tarilish kerak, bu esa 5 : 4 = 1,25 daqiqa vaqt oladi. Demak izlangan payt 4 + 1,25 = 5,25 daqiqa. Javob: 5,25 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vatarlar-usuli-taqribiy",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#5659ebc6"
+    },
+    {
+      "q": "cos x = x tenglama nechta haqiqiy ildizga ega ekanligini y = cos x va y = x grafiklarini bitta tekislikda taqqoslab aniqlang.",
+      "v": [
+        "1 ta",
+        "cheksiz ko'p",
+        "3 ta",
+        "2 ta"
+      ],
+      "t": 0,
+      "izoh": "Kosinusning qiymatlari [−1; 1] oralig'idan chiqmaydi, shuning uchun ildiz ham faqat shu oraliqda bo'lishi mumkin. Manfiy x larda cos x musbat, x ning o'zi esa manfiy — tenglik bo'lmaydi. [0; 1] da y = x qat'iy o'suvchi, y = cos x esa kamayuvchi, demak kesishish ko'pi bilan bitta. x = 0 da 1 > 0, x = 1 da cos 1 ≈ 0,54 < 1 — ishora almashdi, ya'ni aynan bitta ildiz bor. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "transsendent-ildiz-oraligi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#c6ca9210"
+    },
+    {
+      "q": "sin x = x/3 tenglama nechta haqiqiy ildizga ega ekanligini y = sin x sinusoida va y = x/3 to'g'ri chiziq grafiklarini taqqoslab aniqlang.",
+      "v": [
+        "1 ta ildiz",
+        "3 ta ildiz",
+        "2 ta ildiz",
+        "5 ta ildiz"
+      ],
+      "t": 1,
+      "izoh": "|x| > 3 bo'lganda x/3 ning moduli birdan katta, sinus esa hech qachon 1 dan oshmaydi — demak ildizlar faqat [−3; 3] da izlanadi. x = 0 da ikkala tomon nolga teng, bu birinchi ildiz. x = 1 da sin 1 ≈ 0,84, chiziq esa 0,33 — sinus yuqorida; x = 3 da sin 3 ≈ 0,14, chiziq esa 1 — sinus pastda, ya'ni oraliqda yana bitta ildiz bor. Ikkala funksiya toq bo'lgani uchun manfiy tomonda ham aynan bitta ildiz bo'ladi. Javob: 3 ta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "transsendent-ildiz-oraligi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#eee10bb8"
+    },
+    {
+      "q": "cos x = 2x tenglamaning yagona musbat ildizi qaysi oraliqda yotadi? Hisoblashda cos 0,4 ≈ 0,921 va cos 0,5 ≈ 0,878 qiymatlaridan foydalaning.",
+      "v": [
+        "(0,2; 0,3)",
+        "(0,3; 0,4)",
+        "(0,4; 0,5)",
+        "(0,5; 0,6)"
+      ],
+      "t": 2,
+      "izoh": "g(x) = cos x − 2x funksiyani qaraymiz. g(0,4) ≈ 0,921 − 0,8 = 0,121 musbat, g(0,5) ≈ 0,878 − 1 = −0,122 manfiy. Uzluksiz funksiya ishorasini almashtirgani uchun ildiz shu ikki qiymat orasida joylashgan. Kosinus kamayuvchi, y = 2x esa o'suvchi bo'lgani sababli boshqa ildiz bo'lishi mumkin emas. Javob: (0,4; 0,5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "transsendent-ildiz-oraligi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#6944f888"
+    },
+    {
+      "q": "Zanjirdagi tok kuchi i = 5·sin t − t formula bilan o'zgaradi, bunda t — soniya. Tok kuchi musbat vaqtda birinchi marta qaysi ikki butun soniya orasida nolga aylanadi? sin 1 ≈ 0,841, sin 2 ≈ 0,909 va sin 3 ≈ 0,141.",
+      "v": [
+        "0 va 1 soniya orasida",
+        "1 va 2 soniya orasida",
+        "3 va 4 soniya orasida",
+        "2 va 3 soniya orasida"
+      ],
+      "t": 3,
+      "izoh": "Qiymatlarni ketma-ket hisoblaymiz. t = 1 da i ≈ 5·0,841 − 1 = 3,205 musbat. t = 2 da i ≈ 5·0,909 − 2 = 2,545 — hamon musbat. t = 3 da i ≈ 5·0,141 − 3 = −2,295 manfiy. Ishora aynan shu ikki qiymat orasida almashdi, uzluksiz funksiya esa u yerda albatta nolga teng bo'ladi. Javob: 2 va 3 soniya orasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "transsendent-ildiz-oraligi",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#3393a2fa"
+    },
+    {
+      "q": "y = |x| funksiya grafigi 3 birlik pastga siljitildi. Hosil bo'lgan grafik abssissalar o'qini nechta nuqtada kesib o'tadi?",
+      "v": [
+        "ikki nuqtada",
+        "bir nuqtada",
+        "uch nuqtada",
+        "kesib o'tmaydi"
+      ],
+      "t": 0,
+      "izoh": "Siljishdan keyin funksiya y = |x| − 3 ko'rinishini oladi. O'q bilan kesishish uchun |x| − 3 = 0, ya'ni |x| = 3 bo'lishi kerak. Bundan x = 3 va x = −3 — ikkita yechim. Grafik jihatdan burchakning uchi o'qdan pastga tushgani uchun ikkala tarmoq ham o'qni kesadi. Javob: ikki nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-siljish-ildiz-soni",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#d458b5c5"
+    },
+    {
+      "q": "y = (x − 2)² + 1 parabola abssissalar o'qi bilan nechta umumiy nuqtaga ega ekanligini aniqlang.",
+      "v": [
+        "bir nuqtada",
+        "kesmaydi",
+        "ikki nuqtada",
+        "to'rt nuqtada"
+      ],
+      "t": 1,
+      "izoh": "Parabolaning uchi (2; 1) nuqtada, tarmoqlari esa yuqoriga qaragan. Demak funksiyaning eng kichik qiymati 1 ga teng va u hech qachon nolga tushmaydi. Tenglama tuzsak (x − 2)² = −1 chiqadi, kvadrat manfiy bo'la olmaydi. Javob: kesmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-siljish-ildiz-soni",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#b5961811"
+    },
+    {
+      "q": "y = |x² − 4| funksiya grafigi 1 birlik pastga siljitildi. Yangi grafik abssissalar o'qini nechta nuqtada kesadi?",
+      "v": [
+        "ikkita",
+        "uchta",
+        "to'rtta",
+        "bitta"
+      ],
+      "t": 2,
+      "izoh": "Siljishdan keyin tenglama |x² − 4| − 1 = 0, ya'ni |x² − 4| = 1 ko'rinishga keladi. Modulni ochamiz: x² − 4 = 1 dan x² = 5, ya'ni x = ±√5 — ikkita ildiz. x² − 4 = −1 dan x² = 3, ya'ni x = ±√3 — yana ikkita ildiz. Hammasi to'rtta har xil nuqta. Javob: to'rtta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-siljish-ildiz-soni",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#cf7030da"
+    },
+    {
+      "q": "y = 2ˣ ko'rsatkichli funksiya grafigi 4 birlik pastga siljitilgandan keyin abssissalar o'qini nechta nuqtada kesadi?",
+      "v": [
+        "kesmaydi",
+        "ikkita nuqtada",
+        "uchta nuqtada",
+        "bitta nuqtada"
+      ],
+      "t": 3,
+      "izoh": "Siljishdan keyin funksiya y = 2ˣ − 4 ko'rinishida bo'ladi. Nolga tenglashtiramiz: 2ˣ = 4, bundan x = 2. Ko'rsatkichli funksiya qat'iy o'suvchi bo'lgani uchun boshqa ildiz bo'lishi mumkin emas. Javob: bitta nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-siljish-ildiz-soni",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#f2e27d0d"
+    },
+    {
+      "q": "y = x³ − 4x funksiyaning grafigi abssissalar o'qini nechta nuqtada kesib o'tishini aniqlang.",
+      "v": [
+        "3 ta nuqta",
+        "1 ta nuqta",
+        "2 ta nuqta",
+        "4 ta nuqta"
+      ],
+      "t": 0,
+      "izoh": "Funksiyani ko'paytuvchilarga ajratamiz: x³ − 4x = x(x² − 4) = x(x − 2)(x + 2). Ko'paytma nolga teng bo'lishi uchun ko'paytuvchilardan biri nol bo'lsin. Bundan x = 0, x = 2 va x = −2 ildizlari kelib chiqadi. Uchala qiymat ham har xil. Javob: 3 ta nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "funksiya-nollari-soni-oraliqda",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#7345e216"
+    },
+    {
+      "q": "y = cos x funksiya grafigi [0; 2π] kesmada abssissalar o'qini necha marta kesib o'tadi?",
+      "v": [
+        "uch marta",
+        "ikki marta",
+        "bir marta",
+        "to'rt marta"
+      ],
+      "t": 1,
+      "izoh": "Kosinus nolga aylanadigan nuqtalar x = π/2 + πn ko'rinishida bo'ladi. [0; 2π] kesmaga ulardan π/2 va 3π/2 tushadi, keyingisi 5π/2 esa 2π dan katta. Demak grafik o'qni ikki marta kesadi. Javob: ikki marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "funksiya-nollari-soni-oraliqda",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#a4eecb5f"
+    },
+    {
+      "q": "y = (x − 1)(x² + 4) funksiyaning nechta haqiqiy noli borligini aniqlang va javobni asoslang.",
+      "v": [
+        "ikkita noli",
+        "noli yo'q",
+        "bitta noli",
+        "uchta noli"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytma nolga teng bo'lishi uchun ko'paytuvchilardan biri nolga aylanishi kerak. Birinchi ko'paytuvchidan x = 1 kelib chiqadi. Ikkinchi ko'paytuvchi x² + 4 esa har qanday haqiqiy x da kamida 4 ga teng, ya'ni hech qachon nol bo'lmaydi. Demak yagona haqiqiy nol bor. Javob: bitta noli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "funksiya-nollari-soni-oraliqda",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#b4897e40"
+    },
+    {
+      "q": "Koptok yerdan yuqoriga otildi va uning balandligi h = −5t² + 20t metr formula bilan o'zgaradi. Koptok necha soniyadan keyin yana yerga tushadi?",
+      "v": [
+        "2 s",
+        "5 s",
+        "20 s",
+        "4 s"
+      ],
+      "t": 3,
+      "izoh": "Yerga tushish payti balandlik nolga teng: −5t² + 20t = 0. Umumiy ko'paytuvchini chiqaramiz: −5t(t − 4) = 0. Bundan t = 0 va t = 4. Birinchi qiymat otilish payti, demak qaytib tushish t = 4 soniyada bo'ladi. Javob: 4 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "funksiya-nollari-soni-oraliqda",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#616a7638"
+    },
+    {
+      "q": "Shaharcha aholisi N = 800·1,05ᵗ formula bo'yicha o'sadi, bunda t — yillar soni. Aholi soni 1000 kishidan qaysi ikki yil orasida oshib ketadi?",
+      "v": [
+        "4 va 5 yil orasida",
+        "3 va 4 yil orasida",
+        "5 va 6 yil orasida",
+        "6 va 7 yil orasida"
+      ],
+      "t": 0,
+      "izoh": "Shart 800·1,05ᵗ = 1000 ko'rinishida, ya'ni 1,05ᵗ = 1,25. Darajalarni ketma-ket hisoblaymiz: 1,05² = 1,1025, 1,05⁴ ≈ 1,2155 — bu 1,25 dan kichik. 1,05⁵ ≈ 1,2763 — bu 1,25 dan katta. Demak kerakli t shu ikki butun son orasida. Javob: 4 va 5 yil orasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-taqribiy-oraliq",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#7bfc6407"
+    },
+    {
+      "q": "Kvadrat shaklidagi ekin maydonining yuzi 500 m². Maydon tomonining uzunligi qaysi ikki butun son orasida yotadi?",
+      "v": [
+        "20 m va 21 m orasida",
+        "22 m va 23 m orasida",
+        "23 m va 24 m orasida",
+        "24 m va 25 m orasida"
+      ],
+      "t": 1,
+      "izoh": "Tomon uzunligi a bo'lsa, a² = 500 tenglamani yechish kerak. Butun sonlarning kvadratlarini sinaymiz: 22² = 484, bu 500 dan kichik. 23² = 529, bu 500 dan katta. Demak a soni shu ikki qiymat orasida joylashgan. Javob: 22 m va 23 m orasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-taqribiy-oraliq",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#1fea851d"
+    },
+    {
+      "q": "Kub shaklidagi suv idishining hajmi 100 litr, ya'ni 100 dm³ ga teng. Idish qirrasining uzunligi qaysi ikki butun son orasida bo'ladi?",
+      "v": [
+        "3 dm va 4 dm orasida",
+        "5 dm va 6 dm orasida",
+        "4 dm va 5 dm orasida",
+        "6 dm va 7 dm orasida"
+      ],
+      "t": 2,
+      "izoh": "Qirra uzunligi a bo'lsa, a³ = 100 tenglamani taqribiy yechamiz. Kublarni sinab ko'ramiz: 4³ = 64, bu 100 dan kichik. 5³ = 125, bu 100 dan katta. Demak qirra shu ikki butun son orasida yotadi va taxminan 4,6 dm ga teng. Javob: 4 dm va 5 dm orasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-taqribiy-oraliq",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#600a8f09"
+    },
+    {
+      "q": "Bankdagi omonat har yili 12 foizga ortadi. Omonat egasi mablag'i ikki barobar ko'payishini kutmoqda. Buning uchun kamida necha yil o'tishi kerak?",
+      "v": [
+        "5 yil",
+        "6 yil",
+        "8 yil",
+        "7 yil"
+      ],
+      "t": 3,
+      "izoh": "Shart 1,12ᵗ = 2 ko'rinishida yoziladi. Darajalarni hisoblaymiz: 1,12⁵ ≈ 1,762 — hali ikki barobar emas. 1,12⁶ ≈ 1,974 — bu ham 2 dan kichik. 1,12⁷ ≈ 2,211 — mana endi ikki barobardan oshdi. Demak kamida yetti yil kutish kerak. Javob: 7 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-taqribiy-oraliq",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#3ece5dfb"
+    },
+    {
+      "q": "√5 ni taqribiy hisoblash uchun xₙ₊₁ = (xₙ + 5/xₙ) : 2 ketma-ketligi ishlatiladi. Boshlang'ich qiymat x₀ = 2 bo'lsa, birinchi yaqinlashish x₁ nechaga teng?",
+      "v": [
+        "2,25",
+        "2,5",
+        "4,5",
+        "2,236"
+      ],
+      "t": 0,
+      "izoh": "Formulaga x₀ = 2 ni qo'yamiz. Avval 5 : 2 = 2,5 ni hisoblaymiz. So'ng qavs ichidagi yig'indini topamiz: 2 + 2,5 = 4,5. Nihoyat uni ikkiga bo'lamiz: 4,5 : 2 = 2,25. Javob: 2,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "iteratsiya-taqribiy-qiymat",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#89bd9fa7"
+    },
+    {
+      "q": "√10 ni topish uchun xₙ₊₁ = (xₙ + 10/xₙ) : 2 iteratsiyasi qo'llanadi va x₀ = 3 deb olinadi. x₁ ning yuzdan bir aniqlikdagi qiymatini toping.",
+      "v": [
+        "3,33",
+        "3,17",
+        "3,16",
+        "6,33"
+      ],
+      "t": 1,
+      "izoh": "Avval 10 : 3 ≈ 3,3333 ni hisoblaymiz. Uni boshlang'ich qiymatga qo'shamiz: 3 + 3,3333 = 6,3333. Endi yig'indini ikkiga bo'lamiz: 6,3333 : 2 = 3,16665. Yuzdan bir aniqlikda yaxlitlasak 3,17 chiqadi. Javob: 3,17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "iteratsiya-taqribiy-qiymat",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#334bcf18"
+    },
+    {
+      "q": "x = 1 + 1/x tenglama xₙ₊₁ = 1 + 1/xₙ iteratsiyasi bilan yechilmoqda. x₀ = 1 bo'lsa, uchinchi yaqinlashish x₃ nechaga teng?",
+      "v": [
+        "3/2",
+        "2",
+        "5/3",
+        "8/5"
+      ],
+      "t": 2,
+      "izoh": "Ketma-ket hisoblaymiz. Birinchi qadam: x₁ = 1 + 1/1 = 2. Ikkinchi qadam: x₂ = 1 + 1/2 = 3/2. Uchinchi qadam: x₃ = 1 + 1 : (3/2) = 1 + 2/3 = 5/3. Javob: 5/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "iteratsiya-taqribiy-qiymat",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#c3a850cb"
+    },
+    {
+      "q": "Kubi 30 ga teng bo'lgan musbat sonni, ya'ni x³ = 30 tenglamaning ildizini o'ndan bir aniqlikda taqribiy hisoblang.",
+      "v": [
+        "3,3",
+        "3,2",
+        "3",
+        "3,1"
+      ],
+      "t": 3,
+      "izoh": "Butun sonlardan boshlaymiz: 3³ = 27, bu 30 dan kichik; 4³ = 64, bu ancha katta. Demak ildiz 3 va 4 orasida. O'ndan birlarni sinaymiz: 3,1³ = 29,791 va 3,2³ = 32,768. Birinchisi 30 dan atigi 0,209 ga farq qiladi, ikkinchisi esa 2,768 ga. Javob: 3,1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "iteratsiya-taqribiy-qiymat",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#f1393dbb"
+    },
+    {
+      "q": "Yarim bo'lish usuli [3; 4] kesmadan boshlanib, beshta qadam bajarildi. Oxirgi oraliqning istalgan nuqtasi javob deb olinsa, mutlaq xatolik qanday bahoga ega bo'ladi?",
+      "v": [
+        "0,03125 dan oshmaydi",
+        "0,0625 dan oshmaydi",
+        "0,125 dan oshmaydi",
+        "0,2 dan oshmaydi"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich kesma uzunligi 1 ga teng. Har bir qadamda uzunlik ikki barobar qisqaradi: 0,5 keyin 0,25 keyin 0,125 keyin 0,0625 va nihoyat 0,03125. Haqiqiy ildiz ham, tanlangan javob ham oxirgi oraliq ichida yotadi, shuning uchun ular orasidagi farq shu uzunlikdan oshmaydi. Javob: 0,03125 dan oshmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-xato-baholash",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#76f5b928"
+    },
+    {
+      "q": "Tenglama ildizining taqribiy qiymati x ≈ 2,7 bo'lib, mutlaq xatolik 0,05 dan oshmasligi ma'lum. Aniq ildiz qaysi oraliqda yotadi?",
+      "v": [
+        "(2,6; 2,8)",
+        "(2,65; 2,75)",
+        "(2,69; 2,71)",
+        "(2,5; 2,9)"
+      ],
+      "t": 1,
+      "izoh": "Mutlaq xatolik ta'rifiga ko'ra aniq qiymat bilan taqribiy qiymat ayirmasining moduli 0,05 dan oshmaydi. Demak aniq ildiz 2,7 dan har ikki tomonga 0,05 dan uzoqroqqa keta olmaydi. Chegaralarni hisoblaymiz: 2,7 − 0,05 = 2,65 va 2,7 + 0,05 = 2,75. Javob: (2,65; 2,75).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-xato-baholash",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#606e7277"
+    },
+    {
+      "q": "Iteratsiya jarayonida ketma-ket yaqinlashishlar x₄ = 1,7321 va x₅ = 1,7320 chiqdi. Javobni qaysi ko'rinishda yozish o'rinli bo'ladi?",
+      "v": [
+        "1,7",
+        "1,73",
+        "1,732",
+        "1,73205"
+      ],
+      "t": 2,
+      "izoh": "Ikki ketma-ket yaqinlashishning ayirmasi |1,7321 − 1,7320| = 0,0001 ga teng, ya'ni jarayon deyarli to'xtagan. Ishonchli deb faqat ikkala qiymatda bir xil turgan raqamlarni olish mumkin, ular esa 1,732 sonini beradi. Oxirgi xona allaqachon o'zgarib turibdi, uni javobga kiritish asossiz. Shuning uchun ildiz mingdan bir aniqlikda yoziladi. Javob: 1,732.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-xato-baholash",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#4c7e3bad"
+    },
+    {
+      "q": "Muhandis a³ = 50 tenglamaning ildizini taqriban 3,7 deb oldi. 3,7³ = 50,653 ekanini bilgan holda, bu qiymat tenglamani qanday chetlanish bilan qanoatlantirishini aniqlang.",
+      "v": [
+        "1,653",
+        "0,347",
+        "0,065",
+        "0,653"
+      ],
+      "t": 3,
+      "izoh": "Tanlangan qiymatni tenglamaga qo'yamiz va ikki tomon farqini olamiz. Chap tomon 3,7³ = 50,653 ga, o'ng tomon esa 50 ga teng. Ularning ayirmasi 50,653 − 50 = 0,653. Bu son taqribiy yechimning qoldig'i, ya'ni tenglamani qanoatlantirishdagi chetlanish. Javob: 0,653.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-xato-baholash",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#cb4d60d4"
+    },
+    {
+      "q": "y = f(x) funksiya grafigi abssissalar o'qini x = −3, x = 1 va x = 4 nuqtalarda kesib o'tadi. f(x) = 0 tenglama ildizlarining yig'indisi nechaga teng?",
+      "v": [
+        "2",
+        "−2",
+        "8",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Grafikning abssissalar o'qi bilan kesishish nuqtalari aynan tenglamaning ildizlari bo'ladi. Demak ildizlar −3, 1 va 4. Ularni qo'shamiz: −3 + 1 + 4 = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-tavsifidan-ildiz-oqish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#bb546790"
+    },
+    {
+      "q": "y = f(x) va y = g(x) funksiyalar grafiklari faqat (−2; 5) va (3; 5) nuqtalarda kesishadi. f(x) = g(x) tenglama ildizlarining ko'paytmasini toping.",
+      "v": [
+        "1",
+        "−6",
+        "6",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Ikki grafik kesishgan nuqtalarning abssissalari f(x) = g(x) tenglamaning ildizlari bo'ladi. Demak ildizlar x = −2 va x = 3. Ularning ko'paytmasi (−2)·3 = −6. Ordinatalar bu yerda ishlatilmaydi. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-tavsifidan-ildiz-oqish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#39531a36"
+    },
+    {
+      "q": "Uchinchi darajali y = f(x) funksiyaning lokal maksimumi 5 ga, lokal minimumi esa −1 ga teng. f(x) = 3 tenglama nechta haqiqiy ildizga ega?",
+      "v": [
+        "1 ta ildiz",
+        "2 ta ildiz",
+        "3 ta ildiz",
+        "ildiz yo'q"
+      ],
+      "t": 2,
+      "izoh": "Kub funksiya grafigi avval ko'tariladi, keyin tushadi va yana ko'tariladi. y = 3 gorizontal chizig'i lokal minimum −1 dan yuqorida va lokal maksimum 5 dan pastda joylashgan. Bunday chiziq grafikning uchala qismini ham kesib o'tadi. Javob: 3 ta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-tavsifidan-ildiz-oqish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#6ed999b9"
+    },
+    {
+      "q": "y = x³ − 3x funksiyaning lokal maksimumi 2 ga, lokal minimumi −2 ga teng. x³ − 3x = a tenglama uchta har xil haqiqiy ildizga ega bo'ladigan a lar oralig'ini toping.",
+      "v": [
+        "a > 2",
+        "a < −2",
+        "a = 2",
+        "−2 < a < 2"
+      ],
+      "t": 3,
+      "izoh": "y = a gorizontal chizig'i grafikni uch marta kesishi uchun u lokal minimum bilan lokal maksimum orasida yotishi kerak. Bu shart −2 < a < 2 ko'rinishida yoziladi. Chekka qiymatlarda, ya'ni a = 2 yoki a = −2 da ildizlardan ikkitasi ustma-ust tushib, ildizlar soni ikkitaga kamayadi. Javob: −2 < a < 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-tavsifidan-ildiz-oqish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#a236e5e2"
+    },
+    {
+      "q": "x² = 7 tenglamaning musbat ildizini, ya'ni √7 sonini o'ndan bir aniqlikda taqribiy hisoblang.",
+      "v": [
+        "2,6",
+        "2,7",
+        "2,5",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Ildiz 2 va 3 orasida, chunki 4 < 7 < 9. O'ndan birlarni sinaymiz: 2,6² = 6,76 va 2,7² = 7,29. Birinchisi 7 dan 0,24 ga, ikkinchisi esa 0,29 ga farq qiladi. Demak 7 ga yaqinroq qiymat 2,6 da olinadi. Javob: 2,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-ildiz-yaxlitlash",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#8aaf64d8"
+    },
+    {
+      "q": "x² = 30 tenglamaning musbat ildizini o'ndan bir aniqlikda yaxlitlab yozing.",
+      "v": [
+        "5,4",
+        "5,5",
+        "5,3",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Ildiz 5 va 6 orasida, chunki 25 < 30 < 36. O'ndan birlarni tekshiramiz: 5,4² = 29,16 va 5,5² = 30,25. Birinchi qiymat 30 dan 0,84 ga, ikkinchisi esa atigi 0,25 ga farq qiladi. Demak yaqinroq yaxlitlash 5,5. Javob: 5,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-ildiz-yaxlitlash",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#52262af2"
+    },
+    {
+      "q": "Kvadrat shaklidagi xonaning yuzi 20 m². Xona tomonining uzunligini o'ndan bir metr aniqlikda toping.",
+      "v": [
+        "4,4 m",
+        "4,2 m",
+        "4,5 m",
+        "5 m"
+      ],
+      "t": 2,
+      "izoh": "Tomon uzunligi a bo'lsa a² = 20 bo'ladi, ya'ni a soni 4 va 5 orasida. O'ndan birlarni sinaymiz: 4,4² = 19,36 va 4,5² = 20,25. Birinchisi 20 dan 0,64 ga, ikkinchisi esa 0,25 ga farq qiladi. Demak yaqinroq qiymat 4,5 m. Javob: 4,5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-ildiz-yaxlitlash",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#5a5beecb"
+    },
+    {
+      "q": "2ˣ = 7 tenglama uchun x = 2,8 da chap tomon ≈ 6,96, x = 2,9 da esa ≈ 7,46 ekani hisoblangan. Ildizni o'ndan bir aniqlikda yaxlitlang.",
+      "v": [
+        "2,9",
+        "3",
+        "2,7",
+        "2,8"
+      ],
+      "t": 3,
+      "izoh": "Ildiz 2,8 va 2,9 orasida, chunki chap tomon shu oraliqda 7 qiymatidan o'tadi. Chetlanishlarni taqqoslaymiz: 7 − 6,96 = 0,04 va 7,46 − 7 = 0,46. Birinchi chetlanish ancha kichik, demak ildiz chap chekkaga yaqin. Javob: 2,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-ildiz-yaxlitlash",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#a32ed9ef"
+    },
+    {
+      "q": "x³ + x = 6 tenglamani grafik usulda yechish uchun qaysi ikki funksiya grafigini bitta koordinata tekisligida chizish kerak?",
+      "v": [
+        "y = x³ va y = 6 − x",
+        "y = x³ va y = 6 + x",
+        "y = x³ + 6 va y = x",
+        "y = 3x va y = 6 − x"
+      ],
+      "t": 0,
+      "izoh": "Grafik usulda tenglama ikki qismga ajratiladi va har biri alohida funksiya sifatida chiziladi. x hadini o'ng tomonga o'tkazamiz: x³ = 6 − x. Chap tomonda kub parabola, o'ng tomonda esa to'g'ri chiziq qoladi. Ularning kesishish nuqtasi izlanayotgan ildizni beradi. Javob: y = x³ va y = 6 − x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglamani-ikki-funksiyaga-ajratish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#5f619466"
+    },
+    {
+      "q": "lg x + x = 4 tenglamani grafik usulda yechish uchun qaysi juft funksiya grafigini chizish qulay bo'ladi?",
+      "v": [
+        "y = lg x va y = 4 + x",
+        "y = lg x va y = 4 − x",
+        "y = lg x + 4 va y = x",
+        "y = lg x va y = x − 4"
+      ],
+      "t": 1,
+      "izoh": "Tenglamada x hadini o'ng tomonga o'tkazamiz: lg x = 4 − x. Endi chap tomonda logarifmik funksiya, o'ng tomonda esa kamayuvchi to'g'ri chiziq turadi. Ularning kesishish nuqtasi tenglamaning yagona ildizini ko'rsatadi. Javob: y = lg x va y = 4 − x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglamani-ikki-funksiyaga-ajratish",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#5fba6d07"
+    },
+    {
+      "q": "Quyidagi tenglamalardan qaysi biri birorta ham haqiqiy ildizga ega emas?",
+      "v": [
+        "lg x = 0",
+        "|x| = 5",
+        "2ˣ = x",
+        "x³ = −8"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tenglamadan x = 1, uchinchisidan x = −2 kelib chiqadi, ikkinchisi esa x = 5 va x = −5 ildizlarga ega. y = 2ˣ grafigi esa y = x to'g'ri chizig'idan doim yuqorida yotadi: x ≤ 0 da daraja musbat, chiziq nomusbat; x > 0 da esa 2ˣ o'sishi tezroq va eng yaqin joyda ham farq musbat qoladi. Javob: 2ˣ = x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglamalar-ichidan-tanlash",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#b48ee19d"
+    },
+    {
+      "q": "Quyidagi tenglamalardan qaysi biri aynan uchta haqiqiy ildizga ega?",
+      "v": [
+        "x² = 4",
+        "2ˣ = 8",
+        "x² + 1 = 0",
+        "|x| = x²"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tenglama ikkita, ikkinchisi bitta ildizga ega, uchinchisining haqiqiy ildizi yo'q. Oxirgisida x = 0 yechim bo'ladi; x > 0 da x = x² dan x = 1, x < 0 da esa −x = x² dan x = −1 chiqadi. Demak uchta har xil ildiz bor. Javob: |x| = x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglamalar-ichidan-tanlash",
+      "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish#f6dfe1ba"
+    }
+  ]
+}

@@ -1,0 +1,681 @@
+{
+  "nom": "Geografiya-5, 19-§. Koʻl va muzliklar. Yer osti suvlari, 66-70-bet",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Koʻl nima deb ataladi?",
+      "v": [
+        "Tabiiy chuqurliklarda toʻplanib qolgan suv",
+        "Oʻzanda oqayotgan suv oqimi",
+        "Yer poʻsti orasidagi suv",
+        "Quruqlikda toʻplangan qor va muz"
+      ],
+      "t": 0,
+      "izoh": "Ana shunday tabiiy chuqurliklarda toʻplanib qolgan suvga koʻl deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m19#ab1d3278"
+    },
+    {
+      "q": "Koʻllar dengizlardan qanday farq qiladi?",
+      "v": [
+        "Koʻllar okeanlar bilan tutashmagan boʻladi",
+        "Koʻllar har doim shoʻr boʻladi",
+        "Koʻllar har doim dengizdan katta boʻladi",
+        "Koʻllarda suv umuman yoʻq"
+      ],
+      "t": 0,
+      "izoh": "Koʻllar dengizlardan farq qilib, okeanlar bilan tutashmagan boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#4679bf32"
+    },
+    {
+      "q": "Yer yuzidagi eng katta koʻl qaysi va maydoni qancha?",
+      "v": [
+        "Kaspiy koʻli, maydoni 376 ming km2",
+        "Baykal koʻli, maydoni 31 ming km2",
+        "Orol dengizi, maydoni 68 ming km2",
+        "Viktoriya koʻli, maydoni 68 ming km2"
+      ],
+      "t": 0,
+      "izoh": "Eng katta koʻl Kaspiy koʻli. Uning maydoni 376 ming km2 ni tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#de585003"
+    },
+    {
+      "q": "Yer yuzidagi eng chuqur koʻl qaysi va chuqurligi qancha?",
+      "v": [
+        "Baykal koʻli, chuqurligi 1620 metr",
+        "Kaspiy koʻli, chuqurligi 1000 metr",
+        "Orol dengizi, chuqurligi 68 metr",
+        "Issiqkoʻl, chuqurligi 700 metr"
+      ],
+      "t": 0,
+      "izoh": "Eng chuqur koʻl — Baykal. Chuqurligi 1620 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#8eef89c5"
+    },
+    {
+      "q": "Oʻrta Osiyodagi eng katta koʻllardan biri (hozirda maydoni juda kichrayib qolgan) qaysi?",
+      "v": [
+        "Orol dengizi",
+        "Kaspiy koʻli",
+        "Baykal koʻli",
+        "Issiqkoʻl"
+      ],
+      "t": 0,
+      "izoh": "Oʻrta Osiyodagi eng katta koʻllardan biri Orol dengizi edi. Hozirgi vaqtda Orol dengizi suvi qurib, maydoni juda kichrayib qolgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#49d6dd68"
+    },
+    {
+      "q": "Tektonik koʻllar qanday hosil boʻladi?",
+      "v": [
+        "Yer poʻstining yorilishidan yoki asta-sekin pasayishidan hosil boʻlgan chuqurliklar suvga toʻlishidan",
+        "Togʻlar qulab, vodiyni toʻsib qolishidan",
+        "Daryo oʻzanlarining eskirib qolishidan",
+        "Sunʼiy ravishda qazilishidan"
+      ],
+      "t": 0,
+      "izoh": "Koʻl suvi toʻldirgan chuqurliklar koʻpincha Yer poʻstining asta-sekin pasayishidan yoki yorilishidan hosil boʻladi. Bunday chuqurliklar suvga toʻlib hosil boʻlgan koʻllar tektonik koʻllar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#50318aad"
+    },
+    {
+      "q": "Tektonik koʻllarga qanday misollar keltirilgan?",
+      "v": [
+        "Issiqkoʻl va Baykal koʻllari",
+        "Kaspiy va Orol koʻllari",
+        "Sarez va Viktoriya koʻllari",
+        "Oʻlik dengiz va Balxash koʻli"
+      ],
+      "t": 0,
+      "izoh": "Issiqkoʻl va Baykal koʻllari tektonik koʻllardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#92028684"
+    },
+    {
+      "q": "Toʻgʻon koʻllari qanday vujudga keladi?",
+      "v": [
+        "Togʻlar qulab, vodiyni toʻsib qolishidan",
+        "Yer poʻstining yorilishidan",
+        "Daryo oʻzanlarining eskirishidan",
+        "Muzliklarning erishidan"
+      ],
+      "t": 0,
+      "izoh": "Togʻ daryolari vodiylarida chuqur toʻgʻon koʻllari uchraydi. Ular togʻlar qulab, vodiyni toʻsib qolishidan vujudga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#3497ac1d"
+    },
+    {
+      "q": "Pomir togʻlaridagi Sarez koʻli qanday hosil boʻlgan?",
+      "v": [
+        "Togʻlar qulab, vodiyni toʻsib qolishidan (toʻgʻon koʻli sifatida)",
+        "Yer poʻstining yorilishidan (tektonik koʻl sifatida)",
+        "Daryo oʻzani eskirishidan (oʻzan koʻl sifatida)",
+        "Sunʼiy ravishda qurilishidan"
+      ],
+      "t": 0,
+      "izoh": "Pomir togʻlaridagi Sarez koʻli shunday (toʻgʻon koʻli sifatida) hosil boʻlgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#27ee6de0"
+    },
+    {
+      "q": "Oʻzan koʻllar qanday paydo boʻladi?",
+      "v": [
+        "Tekislikdagi daryolarning eski, qoldiq oʻzanlari suvga toʻlib qolishidan",
+        "Togʻlar qulab, vodiyni toʻsishidan",
+        "Yer poʻstining yorilishidan",
+        "Muzliklarning erishidan"
+      ],
+      "t": 0,
+      "izoh": "Tekislikdagi daryolar ilonizi oʻzanlarda oqadigan joylarda eski, qoldiq oʻzanlar suvga toʻlib qolib, oʻzan koʻllar paydo boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#07155dd6"
+    },
+    {
+      "q": "Oqmas koʻl nima?",
+      "v": [
+        "Koʻlga daryolar quyilsa-yu, biror daryo ham oqib chiqmaydigan koʻl",
+        "Koʻlga hech qanday daryo quyilmaydigan koʻl",
+        "Koʻldan koʻp daryo oqib chiqadigan koʻl",
+        "Suvi butunlay muzlagan koʻl"
+      ],
+      "t": 0,
+      "izoh": "Agar koʻllarga daryolar quyilsa-yu bironta ham daryo oqib chiqmasa, bunday koʻl oqmas koʻl deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#08219d95"
+    },
+    {
+      "q": "Oqmas koʻllarga qanday misollar keltirilgan?",
+      "v": [
+        "Kaspiy, Orol koʻllari",
+        "Baykal, Issiqkoʻl",
+        "Sarez, Viktoriya",
+        "Oʻlik dengiz, Balxash"
+      ],
+      "t": 0,
+      "izoh": "Kaspiy, Orol koʻllari shunday (oqmas) koʻllar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#f3d2a884"
+    },
+    {
+      "q": "Oqar koʻl nima?",
+      "v": [
+        "Undan daryo oqib chiqadigan koʻl",
+        "Unga hech qanday daryo quyilmaydigan koʻl",
+        "Suvi doim bir xil sathda turadigan koʻl",
+        "Yomgʻir suvidan toʻyinadigan koʻl"
+      ],
+      "t": 0,
+      "izoh": "Agar koʻllardan daryo oqib chiqsa, u oqar koʻl deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#ec2a7bd8"
+    },
+    {
+      "q": "Baykal koʻliga necha daryo quyiladi va undan nechta daryo oqib chiqadi?",
+      "v": [
+        "300 dan ortiq daryo quyiladi, undan bitta katta daryo — Angara daryosi oqib chiqadi",
+        "Bitta daryo quyiladi, hech qanday daryo oqib chiqmaydi",
+        "50 ta daryo quyiladi, ikkita daryo oqib chiqadi",
+        "Hech qanday daryo quyilmaydi, faqat bitta oqib chiqadi"
+      ],
+      "t": 0,
+      "izoh": "Baykal koʻliga 300 dan ortiq daryo quyiladi va undan bitta katta daryo — Angara daryosi oqib chiqadi. Baykal — oqar koʻl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#80dd34c8"
+    },
+    {
+      "q": "Nega issiq oʻlkalardagi oqmas koʻllar suvi shoʻr boʻladi?",
+      "v": [
+        "Chunki qoʻshilgan suv bugʻlanib ketib, suvda erigan tuzlar qoladi",
+        "Chunki ular togʻ jinslaridan tuz olib keladi",
+        "Chunki ularga faqat dengiz suvi quyiladi",
+        "Chunki ular sunʼiy tarzda shoʻrlanadi"
+      ],
+      "t": 0,
+      "izoh": "Odatda iqlimi issiq oʻlkalardagi oqmas koʻllar suvi shoʻr boʻladi. Chunki qoʻshilgan suv bugʻlanib ketib, suvda erigan tuzlar qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#9d7b67a8"
+    },
+    {
+      "q": "Dunyodagi eng shoʻr koʻl qaysi?",
+      "v": [
+        "Arabiston yarim orolidagi Oʻlik dengiz",
+        "Kaspiy koʻli",
+        "Orol dengizi",
+        "Baykal koʻli"
+      ],
+      "t": 0,
+      "izoh": "Dunyodagi eng shoʻr koʻl Arabiston yarim orolidagi Oʻlik dengiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#8c8b7e6d"
+    },
+    {
+      "q": "Oʻlik dengizning 1 litr suvida qancha tuz bor?",
+      "v": [
+        "270 grammgacha",
+        "27 grammgacha",
+        "1000 grammgacha",
+        "50 grammgacha"
+      ],
+      "t": 0,
+      "izoh": "Uning 1 litr suvida 270 grammgacha tuz bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#d0e4401d"
+    },
+    {
+      "q": "Shoʻr koʻllardan inson qanday maqsadlarda foydalanadi?",
+      "v": [
+        "Tuz olinadi, shoʻr suv va balchiq ayrim kasalliklarni davolashda qoʻllaniladi",
+        "Baliqchilik uchun ishlatiladi",
+        "Sayohat maqsadida ishlatiladi",
+        "Umuman foydalanilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Shoʻr koʻllardan tuz olinadi, shoʻr suv va balchiq ayrim kasalliklarni davolashda qoʻllaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#88bbe000"
+    },
+    {
+      "q": "Chuchuk koʻllardan inson qanday foydalanadi?",
+      "v": [
+        "Baliqchilik, parrandachilikni rivojlantirishda, toza suvidan aholi va xoʻjaliklarni taʼminlashda",
+        "Tuz olishda",
+        "Davolanish uchun",
+        "Umuman foydalanilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Chuchuk koʻllardan baliqchilik, parrandachilikni rivojlantirishda, toza suvidan aholi va xoʻjaliklarni suv bilan taʼminlashda foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#f9f1a41c"
+    },
+    {
+      "q": "Insonlar bunyod etadigan sunʼiy koʻllar nima deb ataladi va qanday maqsadda quriladi?",
+      "v": [
+        "Suv omborlari, daryolar suvini tartibga solish va elektr energiyasi olish uchun quriladi",
+        "Artezian quduqlar, ichimlik suvi olish uchun quriladi",
+        "Geyzerlar, davolanish uchun quriladi",
+        "Buloqlar, sugʻorish uchun quriladi"
+      ],
+      "t": 0,
+      "izoh": "Insonlar sunʼiy koʻllar — suv omborlarini ham barpo etishadi. Ular, asosan, daryolar suvini tartibga solish va elektr energiyasi olish uchun quriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#ea6ef8d3"
+    },
+    {
+      "q": "Muzliklar nima?",
+      "v": [
+        "Quruqlikda qor toʻplanib, hosil boʻlgan koʻp yillik muzlar",
+        "Daryo va koʻllarni qoplab yotgan muzlar",
+        "Dengiz suvining muzlashidan hosil boʻlgan qatlam",
+        "Yer osti suvlarining muzlashidan hosil boʻlgan qatlam"
+      ],
+      "t": 0,
+      "izoh": "Quruqlikda qor toʻplanib, hosil boʻlgan koʻp yillik muzlar muzliklar deyiladi. Ular daryo va koʻllarni qoplab yotgan muzlardan farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#a46647bf"
+    },
+    {
+      "q": "Sovuq oʻlkalarda va baland togʻlarda muzlik qanday hosil boʻladi?",
+      "v": [
+        "Yogʻgan qor erib ulgurmay toʻplanadi va zichlashib muzga aylanadi",
+        "Yomgʻir suvi muzlashidan hosil boʻladi",
+        "Daryo suvi muzlashidan hosil boʻladi",
+        "Dengiz suvi muzlashidan hosil boʻladi"
+      ],
+      "t": 0,
+      "izoh": "Sovuq oʻlkalarda va baland togʻlarda yogʻgan qor erib ulgurmay toʻplanadi va zichlashib muzga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#c88d1eba"
+    },
+    {
+      "q": "Tyanshan va Pomir togʻlaridagi muzliklar necha metrdan balandda hosil boʻladi?",
+      "v": [
+        "3500 m dan balandda",
+        "1000 m dan balandda",
+        "2000 m dan balandda",
+        "5000 m dan balandda"
+      ],
+      "t": 0,
+      "izoh": "Tyanshan va Pomir togʻlaridagi muzliklar 3500 m dan balandda hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#e0a2dacc"
+    },
+    {
+      "q": "Qor chizigʻi nima?",
+      "v": [
+        "Qor yigʻiladigan va muzlik hosil boʻladigan balandlikning quyi chegarasi",
+        "Muzlikning eng yuqori nuqtasi",
+        "Aysbergning suv ostidagi chegarasi",
+        "Koʻl va daryolar orasidagi chegara"
+      ],
+      "t": 0,
+      "izoh": "Qor yigʻiladigan va muzlik hosil boʻladigan balandlikning quyi chegarasi qor chizigʻi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#ccd81952"
+    },
+    {
+      "q": "Qor chizigʻi qutbiy oʻlkalarda qayerga pasayadi?",
+      "v": [
+        "Dengiz sathigacha",
+        "3500 metrgacha",
+        "Ekvator chizigʻigacha",
+        "Yer markazigacha"
+      ],
+      "t": 0,
+      "izoh": "Qor chizigʻi qutbiy oʻlkalarda dengiz sathigacha pasayadi. Shuning uchun qutbiy oʻlkalarda dengiz boʻyidagi yerlar ham muzlik bilan qoplanib yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#191567f3"
+    },
+    {
+      "q": "Togʻlardagi muzliklar bahor kelishi bilan nima qiladi?",
+      "v": [
+        "Asta erib daryolarga suv beradi",
+        "Butunlay yoʻqolib ketadi",
+        "Yanada qattiqlashadi",
+        "Oʻzgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Togʻlardagi muzliklar bahor kelishi bilan asta erib daryolarga suv beradi. Amudaryo, Sirdaryo va Zarafshon daryolari koʻp suvini shunday muzliklardan oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#8226ba18"
+    },
+    {
+      "q": "Antarktida materigi va Grenlandiya orolidagi muzning qalinligi qanchaga yetadi?",
+      "v": [
+        "4 ming metrga",
+        "400 metrga",
+        "40 metrga",
+        "40 ming metrga"
+      ],
+      "t": 0,
+      "izoh": "Antarktida materigi, dunyodagi eng katta orol — Grenlandiya shunday muzliklar bilan qoplangan. Muzning qalinligi esa 4 ming metrga yetadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#b85d6f46"
+    },
+    {
+      "q": "Aysberg nima?",
+      "v": [
+        "Muzlik yorilib, boʻlinib, suvga tushib hosil boʻlgan, suvda suzib yuruvchi katta muz togʻlari",
+        "Doimiy qor bilan qoplangan togʻ choʻqqisi",
+        "Dengiz suvining muzlashidan hosil boʻlgan yupqa qatlam",
+        "Yer osti suvining muzlashidan hosil boʻlgan blok"
+      ],
+      "t": 0,
+      "izoh": "Muzlik yorilib, boʻlinib, suvga tushadi va suvda suzib yuruvchi katta muz togʻlarini hosil qiladi. Bular aysberglar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#fcb05d34"
+    },
+    {
+      "q": "«Aysberg» soʻzi qaysi tillardan olingan va nima maʼnoni bildiradi?",
+      "v": [
+        "Gollandcha «iys» — muz, nemischa «berg» — togʻ",
+        "Yunoncha «iys» — suv, «berg» — shar",
+        "Inglizcha «iys» — sovuq, «berg» — daryo",
+        "Fransuzcha «iys» — okean, «berg» — chuqurlik"
+      ],
+      "t": 0,
+      "izoh": "Aysberglar (gollandcha «iys» — muz, nemischa «berg» — togʻ degan maʼnolarni bildiradi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#ad4faf4e"
+    },
+    {
+      "q": "Antarktida qirgʻoqlari yonida kuzatilgan ulkan aysbergning oʻlchamlari qanday boʻlgan?",
+      "v": [
+        "Uzunligi 170 km, eni 45 km, qalinligi 200 m",
+        "Uzunligi 17 km, eni 4,5 km, qalinligi 20 m",
+        "Uzunligi 1700 km, eni 450 km, qalinligi 2000 m",
+        "Uzunligi 70 km, eni 20 km, qalinligi 100 m"
+      ],
+      "t": 0,
+      "izoh": "Antarktida qirgʻoqlari yonida kuzatilgan ulkan bir aysbergning uzunligi 170 km, eni 45 km va qalinligi 200 m boʻlgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo5_m19#89aa4cb7"
+    },
+    {
+      "q": "Aysbergning qaysi qismi suv tagida boʻladi?",
+      "v": [
+        "Katta qismi",
+        "Kichik qismi",
+        "Yarmi",
+        "Umuman suv tagida boʻlmaydi"
+      ],
+      "t": 0,
+      "izoh": "Aysbergning katta qismi suv tagida boʻladi. Aysberglar dengiz va okeanlardagi kemalar qatnovi uchun juda xavfli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#87177538"
+    },
+    {
+      "q": "Yer osti suvlari nima?",
+      "v": [
+        "Yer poʻsti yuza qismidagi togʻ jinslarining gʻovak, boʻshliq va yoriqlaridagi suvlar",
+        "Daryo va koʻllarda toʻplangan suvlar",
+        "Muzliklardan hosil boʻlgan suvlar",
+        "Dengiz va okean suvlari"
+      ],
+      "t": 0,
+      "izoh": "Yer poʻsti yuza qismidagi togʻ jinslarining gʻovak, boʻshliq va yoriqlaridagi suvlar yer osti suvlari deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#e5b3dc0c"
+    },
+    {
+      "q": "Yer osti suvlari hosil boʻlishi uchun nima zarur?",
+      "v": [
+        "Yetarli miqdorda yogʻin yogʻib turishi va yuzadagi togʻ jinslari gʻovak boʻlishi",
+        "Kuchli quyosh issigʻi",
+        "Baland togʻlar mavjudligi",
+        "Dengizga yaqinlik"
+      ],
+      "t": 0,
+      "izoh": "Yer osti suvlari hosil boʻlishi uchun quruqlikka yetarli miqdorda yogʻin (qor, yomgʻir) yogʻib turishi va yuzadagi togʻ jinslari suvni chuqurga oʻtkazib yuboradigan darajada gʻovak boʻlishi zarur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#da8f6cc8"
+    },
+    {
+      "q": "Suvni yaxshi oʻtkazuvchi jinslarga qanday misollar keltirilgan?",
+      "v": [
+        "Shagʻal, qum",
+        "Granit, ohaktosh",
+        "Qumtosh, gil",
+        "Bazalt, marmar"
+      ],
+      "t": 0,
+      "izoh": "Shagʻal, qum suvni yaxshi oʻtkazadi. Shuning uchun shagʻal, qum suvni oʻtkazuvchi jinslar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#8e7762ba"
+    },
+    {
+      "q": "Suvni yaxshi oʻtkazmaydigan jinslarga qanday misollar keltirilgan?",
+      "v": [
+        "Granit, ohaktosh, qumtosh, gil",
+        "Shagʻal, qum",
+        "Torf, koʻmir",
+        "Osh tuzi, gips"
+      ],
+      "t": 0,
+      "izoh": "Granit, ohaktosh, qumtosh, gil singari jinslar suvni yaxshi oʻtkazmaydi. Shunga koʻra ular suvni oʻtkazmaydigan jinslar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#c6d64467"
+    },
+    {
+      "q": "Gʻovakliklarida suv boʻlgan qatlamlar nima deb ataladi?",
+      "v": [
+        "Suvli qatlamlar",
+        "Suvsiz qatlamlar",
+        "Bosimli qatlamlar",
+        "Grunt qatlamlari"
+      ],
+      "t": 0,
+      "izoh": "Yer poʻstining yuza qismidagi togʻ jinslari qatlam-qatlam boʻlib yotganligidan yer osti suvlari ham qatlamlar hosil qiladi. Gʻovakliklarida suv boʻlgan qatlamlar suvli qatlamlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#7365f129"
+    },
+    {
+      "q": "Ikkita suv oʻtkazmaydigan qatlam orasida joylashgan suv nima deb ataladi?",
+      "v": [
+        "Qatlamlar orasidagi suv",
+        "Grunt suvi",
+        "Mineral suv",
+        "Buloq suvi"
+      ],
+      "t": 0,
+      "izoh": "Ikkita suv oʻtkazmaydigan qatlam orasida joylashgan suv qatlamlar orasidagi suv deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#04cb3778"
+    },
+    {
+      "q": "Togʻ jinslari qatlamlari tovoq shaklida boʻlsa, yer osti suvlari qanday xususiyatga ega boʻladi?",
+      "v": [
+        "Bosimli boʻladi",
+        "Shoʻr boʻladi",
+        "Muzlab qoladi",
+        "Butunlay yoʻqoladi"
+      ],
+      "t": 0,
+      "izoh": "Agar togʻ jinslari qatlamlari tovoq shaklida boʻlsa, yer osti suvlari bosimli boʻladi. Bunday joylarda burgʻ qudugʻidan suv oʻzi oqib, baʼzan otilib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#dd379942"
+    },
+    {
+      "q": "Bosimli suvli qatlamlardan suv oʻzi oqib chiqadigan quduqlar nima deb ataladi?",
+      "v": [
+        "Artezian quduqlar",
+        "Grunt quduqlar",
+        "Mineral quduqlar",
+        "Tektonik quduqlar"
+      ],
+      "t": 0,
+      "izoh": "Bunday quduqlar artezian quduqlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#1cba526d"
+    },
+    {
+      "q": "Yer yuzasidagi gʻovak jinslar orasidagi suvlar nima deb ataladi?",
+      "v": [
+        "Grunt suvi",
+        "Artezian suvi",
+        "Mineral suvi",
+        "Qatlamlar orasidagi suv"
+      ],
+      "t": 0,
+      "izoh": "Yer yuzasidagi gʻovak jinslar orasidagi suvlar grunt suvi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#72c4f254"
+    },
+    {
+      "q": "Grunt suvlari sathi qaysi fasllarda yuqori boʻladi?",
+      "v": [
+        "Qish va bahorda",
+        "Yoz va kuzda",
+        "Yozda",
+        "Kuzda"
+      ],
+      "t": 0,
+      "izoh": "Grunt suvlari sathi qish va bahorda qor erib, yomgʻir koʻp yogʻib turganligi sababli yuqori boʻladi. Yozda, kuz boshida esa pasayib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#9f7b943a"
+    },
+    {
+      "q": "Grunt suvlari yer yuzasiga chiqib nima hosil qiladi?",
+      "v": [
+        "Buloqlarni",
+        "Koʻllarni",
+        "Daryolarni",
+        "Muzliklarni"
+      ],
+      "t": 0,
+      "izoh": "Grunt suvlari togʻ jinslaridagi gʻovaklar orqali past tomonga asta-sekin oqadi. Ular jarlarda, daryo vodiylarida, pastliklarda yer yuzasiga chiqib, buloqlarni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#d93008b4"
+    },
+    {
+      "q": "Yerning chuqur qatlamlaridagi, harorati yuqori va tarkibida turli tuz va minerallar erigan suvlar nima deb ataladi?",
+      "v": [
+        "Mineral suvlar",
+        "Grunt suvlari",
+        "Artezian suvlari",
+        "Qatlamlar orasidagi suv"
+      ],
+      "t": 0,
+      "izoh": "Yerning chuqur qatlamlaridagi yer osti suvlari harorati yuqori va tarkibida turli tuzlar hamda minerallar erigan boʻladi. Ular mineral suvlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#6a9f4db8"
+    },
+    {
+      "q": "Oʻzbekistondagi mineral suvlarga qanday misollar keltirilgan?",
+      "v": [
+        "Toshkent, Chimyon, Chortoq mineral suvlari",
+        "Kaspiy, Orol suvlari",
+        "Sirdaryo, Amudaryo suvlari",
+        "Baykal, Issiqkoʻl suvlari"
+      ],
+      "t": 0,
+      "izoh": "Oʻzbekistonda shifobaxsh suvlar koʻp. Masalan, Toshkent, Chimyon, Chortoq mineral suvlari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#212104b7"
+    },
+    {
+      "q": "19-§ oxiridagi tayanch soʻz va tushunchalar qatorida qanday atamalar keltirilgan?",
+      "v": [
+        "Tektonik koʻllar, oʻzan koʻl, Buloq, Toʻgʻon koʻllar, oqar koʻl, oqmas koʻl, Suv ombori, Artezian suv, Muzlik, aysberg, Qor chizigʻi, Yer osti suvlari, Grunt suvlari, mineral suvlar, Artezian quduq",
+        "Gidrosfera, Dunyo okeani, Quruqlikdagi suvlar",
+        "Daryo, Oʻzan, Irmoq, Suvayirgʻich, Manba",
+        "Atmosfera, Troposfera, Stratosfera"
+      ],
+      "t": 0,
+      "izoh": "19-§ oxiridagi tayanch soʻz va tushunchalar: Tektonik koʻllar, oʻzan koʻl, Buloq, Toʻgʻon koʻllar, oqar koʻl, oqmas koʻl, Suv ombori, Artezian suv, Muzlik, aysberg, Qor chizigʻi, Yer osti suvlari, Grunt suvlari, mineral suvlar, Artezian quduq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m19#2cea0167"
+    }
+  ]
+}

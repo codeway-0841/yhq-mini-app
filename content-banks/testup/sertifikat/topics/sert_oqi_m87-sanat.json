@@ -1,0 +1,580 @@
+{
+  "nom": "She'riy san'at (ta'rifi bilan)",
+  "bolim": "She'riy matn — g'azal",
+  "savollar": [
+    {
+      "id": "sert_oqi_m87-sanat#b47b2d12",
+      "q": "Quyidagi qaysi she'riy san'at g'azalda QO'LLANILMAGAN?",
+      "v": [
+        "tashbeh — bir narsani boshqasiga ochiq o'xshatish",
+        "husni ta'lil — hodisaga shoirona sabab ko'rsatish",
+        "istiora — o'xshatish asosida ko'chma nom berish",
+        "tarse' — misralarni ohangdosh so'zlardan tuzish"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "«tarse'» san'ati bu g'azalda uchramaydi. Qolgan uchtasi matnda qo'llangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m87-sanat",
+      "teg": [
+        "gazal/sanat",
+        "sanat/tarse'",
+        "gazal/tong-nasimi",
+        "muallif/navoiy"
+      ],
+      "ball": 2.5,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "gazal",
+        "ref": "tong-nasimi",
+        "lugat": true
+      },
+      "javob": null,
+      "manba": "Mumtoz devonlar; savollar — TestUp",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m87-sanat#2843a230",
+      "q": "Quyidagi qaysi she'riy san'at g'azalda qo'llangan?",
+      "v": [
+        "tajnis — shakldosh so'zlarni yonma-yon qo'llash",
+        "talmeh — mashhur voqea yoki shaxsga ishora qilish",
+        "tashbeh — bir narsani boshqasiga ochiq o'xshatish",
+        "irsoli masal — she'rga maqol yoki hikmatli so'z kiritish"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "«tashbeh» — bir narsani boshqasiga ochiq o'xshatish. Bu san'at g'azalda qo'llangan; qolgan uchtasi esa yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m87-sanat",
+      "teg": [
+        "gazal/sanat",
+        "sanat/tashbeh",
+        "gazal/tong-nasimi",
+        "muallif/navoiy"
+      ],
+      "ball": 2.5,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "gazal",
+        "ref": "tong-nasimi",
+        "lugat": true
+      },
+      "javob": null,
+      "manba": "Mumtoz devonlar; savollar — TestUp",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m87-sanat#24d34585",
+      "q": "Quyidagi qaysi she'riy san'at g'azalda QO'LLANILMAGAN?",
+      "v": [
+        "husni ta'lil — hodisaga shoirona sabab ko'rsatish",
+        "irsoli masal — she'rga maqol yoki hikmatli so'z kiritish",
+        "istiora — o'xshatish asosida ko'chma nom berish",
+        "tashbeh — bir narsani boshqasiga ochiq o'xshatish"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "«irsoli masal» san'ati bu g'azalda uchramaydi. Qolgan uchtasi matnda qo'llangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m87-sanat",
+      "teg": [
+        "gazal/sanat",
+        "sanat/irsoli-masal",
+        "gazal/tong-nasimi",
+        "muallif/navoiy"
+      ],
+      "ball": 2.5,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "gazal",
+        "ref": "tong-nasimi",
+        "lugat": true
+      },
+      "javob": null,
+      "manba": "Mumtoz devonlar; savollar — TestUp",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m87-sanat#4c90e0e1",
+      "q": "Quyidagi qaysi she'riy san'at g'azalda qo'llangan?",
+      "v": [
+        "istiora — o'xshatish asosida ko'chma nom berish",
+        "talmeh — mashhur voqea yoki shaxsga ishora qilish",
+        "irsoli masal — she'rga maqol yoki hikmatli so'z kiritish",
+        "tajnis — shakldosh so'zlarni yonma-yon qo'llash"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "«istiora» — o'xshatish asosida ko'chma nom berish. Bu san'at g'azalda qo'llangan; qolgan uchtasi esa yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m87-sanat",
+      "teg": [
+        "gazal/sanat",
+        "sanat/istiora",
+        "gazal/tong-nasimi",
+        "muallif/navoiy"
+      ],
+      "ball": 2.5,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "gazal",
+        "ref": "tong-nasimi",
+        "lugat": true
+      },
+      "javob": null,
+      "manba": "Mumtoz devonlar; savollar — TestUp",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m87-sanat#352ab1df",
+      "q": "Quyidagi qaysi she'riy san'at g'azalda qo'llangan?",
+      "v": [
+        "tarse' — misralarni ohangdosh so'zlardan tuzish",
+        "husni ta'lil — hodisaga shoirona sabab ko'rsatish",
+        "talmeh — mashhur voqea yoki shaxsga ishora qilish",
+        "irsoli masal — she'rga maqol yoki hikmatli so'z kiritish"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "«husni ta'lil» — hodisaga shoirona sabab ko'rsatish. Bu san'at g'azalda qo'llangan; qolgan uchtasi esa yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m87-sanat",
+      "teg": [
+        "gazal/sanat",
+        "sanat/husni-ta'lil",
+        "gazal/tong-nasimi",
+        "muallif/navoiy"
+      ],
+      "ball": 2.5,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "gazal",
+        "ref": "tong-nasimi",
+        "lugat": true
+      },
+      "javob": null,
+      "manba": "Mumtoz devonlar; savollar — TestUp",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m87-sanat#6c668c6b",
+      "q": "Quyidagi qaysi she'riy san'at g'azalda qo'llangan?",
+      "v": [
+        "tanosub — bog'liq tushunchalarni birga keltirish",
+        "talmeh — mashhur voqea yoki shaxsga ishora qilish",
+        "tajnis — shakldosh so'zlarni yonma-yon qo'llash",
+        "tardi aks — so'zlar tartibini teskari takrorlash"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "«tanosub» — bog'liq tushunchalarni birga keltirish. Bu san'at g'azalda qo'llangan; qolgan uchtasi esa yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m87-sanat",
+      "teg": [
+        "gazal/sanat",
+        "sanat/tanosub",
+        "gazal/ul-sarv",
+        "muallif/navoiy"
+      ],
+      "ball": 2.5,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "gazal",
+        "ref": "ul-sarv",
+        "lugat": true
+      },
+      "javob": null,
+      "manba": "Mumtoz devonlar; savollar — TestUp",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m87-sanat#8cf92996",
+      "q": "Quyidagi qaysi she'riy san'at g'azalda QO'LLANILMAGAN?",
+      "v": [
+        "tashbeh — bir narsani boshqasiga ochiq o'xshatish",
+        "istiora — o'xshatish asosida ko'chma nom berish",
+        "tajnis — shakldosh so'zlarni yonma-yon qo'llash",
+        "tanosub — bog'liq tushunchalarni birga keltirish"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "«tajnis» san'ati bu g'azalda uchramaydi. Qolgan uchtasi matnda qo'llangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m87-sanat",
+      "teg": [
+        "gazal/sanat",
+        "sanat/tajnis",
+        "gazal/ul-sarv",
+        "muallif/navoiy"
+      ],
+      "ball": 2.5,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "gazal",
+        "ref": "ul-sarv",
+        "lugat": true
+      },
+      "javob": null,
+      "manba": "Mumtoz devonlar; savollar — TestUp",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m87-sanat#6eeaa110",
+      "q": "Quyidagi qaysi she'riy san'at g'azalda QO'LLANILMAGAN?",
+      "v": [
+        "tanosub — bog'liq tushunchalarni birga keltirish",
+        "tashbeh — bir narsani boshqasiga ochiq o'xshatish",
+        "istiora — o'xshatish asosida ko'chma nom berish",
+        "talmeh — mashhur voqea yoki shaxsga ishora qilish"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "«talmeh» san'ati bu g'azalda uchramaydi. Qolgan uchtasi matnda qo'llangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m87-sanat",
+      "teg": [
+        "gazal/sanat",
+        "sanat/talmeh",
+        "gazal/ul-sarv",
+        "muallif/navoiy"
+      ],
+      "ball": 2.5,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "gazal",
+        "ref": "ul-sarv",
+        "lugat": true
+      },
+      "javob": null,
+      "manba": "Mumtoz devonlar; savollar — TestUp",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m87-sanat#296e8f62",
+      "q": "Quyidagi qaysi she'riy san'at g'azalda qo'llangan?",
+      "v": [
+        "tajnis — shakldosh so'zlarni yonma-yon qo'llash",
+        "tashbeh — bir narsani boshqasiga ochiq o'xshatish",
+        "tardi aks — so'zlar tartibini teskari takrorlash",
+        "talmeh — mashhur voqea yoki shaxsga ishora qilish"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "«tashbeh» — bir narsani boshqasiga ochiq o'xshatish. Bu san'at g'azalda qo'llangan; qolgan uchtasi esa yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m87-sanat",
+      "teg": [
+        "gazal/sanat",
+        "sanat/tashbeh",
+        "gazal/ul-sarv",
+        "muallif/navoiy"
+      ],
+      "ball": 2.5,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "gazal",
+        "ref": "ul-sarv",
+        "lugat": true
+      },
+      "javob": null,
+      "manba": "Mumtoz devonlar; savollar — TestUp",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m87-sanat#95360de6",
+      "q": "Quyidagi qaysi she'riy san'at g'azalda qo'llangan?",
+      "v": [
+        "ruju' — fikrdan qaytib, kuchliroq fikr aytish",
+        "talmeh — mashhur voqea yoki shaxsga ishora qilish",
+        "tajnis — shakldosh so'zlarni yonma-yon qo'llash",
+        "istiora — o'xshatish asosida ko'chma nom berish"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "«istiora» — o'xshatish asosida ko'chma nom berish. Bu san'at g'azalda qo'llangan; qolgan uchtasi esa yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m87-sanat",
+      "teg": [
+        "gazal/sanat",
+        "sanat/istiora",
+        "gazal/ul-sarv",
+        "muallif/navoiy"
+      ],
+      "ball": 2.5,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "gazal",
+        "ref": "ul-sarv",
+        "lugat": true
+      },
+      "javob": null,
+      "manba": "Mumtoz devonlar; savollar — TestUp",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m87-sanat#fce6c594",
+      "q": "Quyidagi qaysi she'riy san'at g'azalda qo'llangan?",
+      "v": [
+        "tardi aks — so'zlar tartibini teskari takrorlash",
+        "tarse' — misralarni ohangdosh so'zlardan tuzish",
+        "tajnis — shakldosh so'zlarni yonma-yon qo'llash",
+        "tashbeh — bir narsani boshqasiga ochiq o'xshatish"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "«tashbeh» — bir narsani boshqasiga ochiq o'xshatish. Bu san'at g'azalda qo'llangan; qolgan uchtasi esa yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m87-sanat",
+      "teg": [
+        "gazal/sanat",
+        "sanat/tashbeh",
+        "gazal/chehrayi-gulrang",
+        "muallif/ogahiy"
+      ],
+      "ball": 2.5,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "gazal",
+        "ref": "chehrayi-gulrang",
+        "lugat": true
+      },
+      "javob": null,
+      "manba": "Mumtoz devonlar; savollar — TestUp",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m87-sanat#4601e18d",
+      "q": "Quyidagi qaysi she'riy san'at g'azalda QO'LLANILMAGAN?",
+      "v": [
+        "tajnis — shakldosh so'zlarni yonma-yon qo'llash",
+        "tashbeh — bir narsani boshqasiga ochiq o'xshatish",
+        "istiora — o'xshatish asosida ko'chma nom berish",
+        "tanosub — bog'liq tushunchalarni birga keltirish"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "«tajnis» san'ati bu g'azalda uchramaydi. Qolgan uchtasi matnda qo'llangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m87-sanat",
+      "teg": [
+        "gazal/sanat",
+        "sanat/tajnis",
+        "gazal/chehrayi-gulrang",
+        "muallif/ogahiy"
+      ],
+      "ball": 2.5,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "gazal",
+        "ref": "chehrayi-gulrang",
+        "lugat": true
+      },
+      "javob": null,
+      "manba": "Mumtoz devonlar; savollar — TestUp",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m87-sanat#fc36c0e6",
+      "q": "Quyidagi qaysi she'riy san'at g'azalda QO'LLANILMAGAN?",
+      "v": [
+        "tanosub — bog'liq tushunchalarni birga keltirish",
+        "tashbeh — bir narsani boshqasiga ochiq o'xshatish",
+        "tarse' — misralarni ohangdosh so'zlardan tuzish",
+        "istiora — o'xshatish asosida ko'chma nom berish"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "«tarse'» san'ati bu g'azalda uchramaydi. Qolgan uchtasi matnda qo'llangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m87-sanat",
+      "teg": [
+        "gazal/sanat",
+        "sanat/tarse'",
+        "gazal/chehrayi-gulrang",
+        "muallif/ogahiy"
+      ],
+      "ball": 2.5,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "gazal",
+        "ref": "chehrayi-gulrang",
+        "lugat": true
+      },
+      "javob": null,
+      "manba": "Mumtoz devonlar; savollar — TestUp",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m87-sanat#2557cd21",
+      "q": "Quyidagi qaysi she'riy san'at g'azalda qo'llangan?",
+      "v": [
+        "takrir — bir so'z yoki iborani ataylab qaytarish",
+        "tardi aks — so'zlar tartibini teskari takrorlash",
+        "tarse' — misralarni ohangdosh so'zlardan tuzish",
+        "tanosub — bog'liq tushunchalarni birga keltirish"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "«tanosub» — bog'liq tushunchalarni birga keltirish. Bu san'at g'azalda qo'llangan; qolgan uchtasi esa yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m87-sanat",
+      "teg": [
+        "gazal/sanat",
+        "sanat/tanosub",
+        "gazal/chehrayi-gulrang",
+        "muallif/ogahiy"
+      ],
+      "ball": 2.5,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "gazal",
+        "ref": "chehrayi-gulrang",
+        "lugat": true
+      },
+      "javob": null,
+      "manba": "Mumtoz devonlar; savollar — TestUp",
+      "ishonch": "B1"
+    }
+  ]
+}

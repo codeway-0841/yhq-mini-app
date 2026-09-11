@@ -1,0 +1,1609 @@
+{
+  "nom": "Teskari funksiya",
+  "bolim": "Funksiyalar",
+  "blok": "funk",
+  "rasmiyBolim": 4,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Nargiza f(x) = 3x − 7 funksiyaga teskari funksiyani topish uchun tenglamani x ga nisbatan yechdi. U qanday natija olishi kerak?",
+      "v": [
+        "f⁻¹(x) = (x + 7)/3",
+        "f⁻¹(x) = (x − 7)/3",
+        "f⁻¹(x) = 3x + 7",
+        "f⁻¹(x) = 1/(3x − 7)"
+      ],
+      "t": 0,
+      "izoh": "y = 3x − 7 deb belgilanadi va tenglama x ga nisbatan yechiladi: 3x = y + 7, bundan x = (y + 7)/3. Endi x va y harflari o'rin almashtiriladi. Demak f⁻¹(x) = (x + 7)/3. (x − 7)/3 — ishorani almashtirish xatosi, 1/(3x − 7) esa teskari funksiyani teskari songa chalkashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#0b9ce455"
+    },
+    {
+      "q": "f(x) = −2x + 5 funksiya berilgan. Uning teskarisi f⁻¹(x) ni ifodalovchi to'g'ri formulani tanlang.",
+      "v": [
+        "(x − 5)/2",
+        "(x + 5)/2",
+        "(5 − x)/2",
+        "−2x − 5"
+      ],
+      "t": 2,
+      "izoh": "y = −2x + 5 tenglikdan 2x = 5 − y hosil bo'ladi, bundan x = (5 − y)/2. Harflar almashtirilgach f⁻¹(x) = (5 − x)/2 bo'ladi. (x − 5)/2 — minus ishorasini tashlab ketish xatosi, (x + 5)/2 esa 2 ga bo'lishdan oldin ishorani noto'g'ri qo'yish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#06b288be"
+    },
+    {
+      "q": "Bir funksiya f(x) = x/4 + 3 ko'rinishda berilgan bo'lsa, unga teskari funksiyaning analitik ifodasi qanday bo'ladi?",
+      "v": [
+        "4x + 12",
+        "4x − 12",
+        "4x − 3",
+        "x/4 − 3"
+      ],
+      "t": 1,
+      "izoh": "y = x/4 + 3 tenglikdan x/4 = y − 3 kelib chiqadi, ikkala tomon 4 ga ko'paytiriladi: x = 4y − 12. Harflarni almashtirsak f⁻¹(x) = 4x − 12. 4x − 3 — 4 ga ko'paytirishni faqat bitta hadga qo'llash, 4x + 12 esa ishorani almashtirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#d165de8d"
+    },
+    {
+      "q": "Ustoz doskaga f(x) = 5 − 4x funksiyani yozdi va o'quvchilardan uning teskarisini topishni so'radi. Quyidagilardan qaysi biri to'g'ri javob?",
+      "v": [
+        "(x − 5)/4",
+        "(5 + x)/4",
+        "5 − x/4",
+        "(5 − x)/4"
+      ],
+      "t": 3,
+      "izoh": "y = 5 − 4x tenglamada 4x = 5 − y bo'ladi, demak x = (5 − y)/4. Harflar almashtirilgandan keyin f⁻¹(x) = (5 − x)/4 hosil bo'ladi. (x − 5)/4 — surat ishorasini teskari qo'yish, 5 − x/4 esa 4 ga bo'lishni butun ifodaga emas, faqat x ga qo'llash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#dbbab6eb"
+    },
+    {
+      "q": "f(x) = (2x − 9)/5 kasr ko'rinishdagi funksiyaning teskarisini topish uchun avval ikkala tomonni 5 ga ko'paytirish kerak. Yakuniy javobni belgilang.",
+      "v": [
+        "(5x − 9)/2",
+        "(5x + 18)/2",
+        "(5x + 9)/2",
+        "(2x + 9)/5"
+      ],
+      "t": 2,
+      "izoh": "y = (2x − 9)/5 tenglikni 5 ga ko'paytiramiz: 5y = 2x − 9. Bundan 2x = 5y + 9 va x = (5y + 9)/2. Harflar almashtirilgach f⁻¹(x) = (5x + 9)/2. (5x − 9)/2 — 9 ni chap tomonga o'tkazishda ishorani saqlab qolish, (5x + 18)/2 esa 9 ni ikki marta hisoblash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#01e50ee4"
+    },
+    {
+      "q": "Teskarilanuvchi f funksiya uchun f(4) = 19 tenglik o'rinli ekani ma'lum bo'lsa, f⁻¹(19) qiymati nimaga teng?",
+      "v": [
+        "19",
+        "4",
+        "1/19",
+        "15"
+      ],
+      "t": 1,
+      "izoh": "Teskari funksiyaning ta'rifiga ko'ra f(a) = b bo'lganda f⁻¹(b) = a bo'ladi. Bu yerda a = 4 va b = 19. Demak f⁻¹(19) = 4. 1/19 — teskari funksiyani teskari songa chalkashtirish, 15 esa 19 dan 4 ni ayirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-orqali-teskari-qiymat",
+      "id": "matematika_funk_m12-teskari-funksiya#ebc4027e"
+    },
+    {
+      "q": "f(x) = 2x + 7 funksiya berilgan. Shu funksiya uchun f⁻¹(23) ning qiymatini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "53",
+        "15",
+        "8",
+        "32"
+      ],
+      "t": 2,
+      "izoh": "f⁻¹(23) ni topish uchun 2x + 7 = 23 tenglama yechiladi: 2x = 16, bundan x = 8. Demak f⁻¹(23) = 8. 53 — 23 ni funksiyaning o'ziga qo'yish, 15 — 7 ni ayirish o'rniga qo'shib, so'ng 2 ga bo'lish xatosi: (23 + 7)/2 = 15, 32 esa bo'lish o'rniga ko'paytirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-orqali-teskari-qiymat",
+      "id": "matematika_funk_m12-teskari-funksiya#fbf9383e"
+    },
+    {
+      "q": "Kubik funksiya f(x) = x³ + 1 ko'rinishda berilgan. Uning teskarisi uchun f⁻¹(28) qiymatini toping.",
+      "v": [
+        "3",
+        "27",
+        "29",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "x³ + 1 = 28 tenglamadan x³ = 27 kelib chiqadi, bundan x = 3. Demak f⁻¹(28) = 3. 27 — kub ildiz olishni unutish, 29 — 1 ni ayirish o'rniga qo'shish, 9 esa 27 ni 3 ga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-orqali-teskari-qiymat",
+      "id": "matematika_funk_m12-teskari-funksiya#22520484"
+    },
+    {
+      "q": "f(x) = √(x − 2) funksiya uchun f⁻¹(5) qiymatini aniqlang: bunda avval ildiz ostidagi ifodani topish kerak bo'ladi.",
+      "v": [
+        "7",
+        "25",
+        "27",
+        "23"
+      ],
+      "t": 2,
+      "izoh": "√(x − 2) = 5 tenglamaning ikkala tomoni kvadratga ko'tariladi: x − 2 = 25. Bundan x = 27 chiqadi. 25 — 2 ni qaytarib qo'shishni unutish, 7 — kvadratga ko'tarmasdan 5 va 2 ni qo'shish, 23 esa ishorani almashtirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-orqali-teskari-qiymat",
+      "id": "matematika_funk_m12-teskari-funksiya#78942f02"
+    },
+    {
+      "q": "Teskarilanuvchi f funksiya uchun f(−3) = 8 va f(2) = −5 ekani berilgan. f⁻¹(−5) + f⁻¹(8) yig'indisini toping.",
+      "v": [
+        "3",
+        "−1",
+        "5",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "f(2) = −5 bo'lgani uchun f⁻¹(−5) = 2, f(−3) = 8 bo'lgani uchun esa f⁻¹(8) = −3. Yig'indi 2 + (−3) = −1 ga teng. 3 — funksiya qiymatlarini qo'shib yuborish, 5 esa ayirish amalini bajarish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-orqali-teskari-qiymat",
+      "id": "matematika_funk_m12-teskari-funksiya#85e3d4cf"
+    },
+    {
+      "q": "Quyidagi funksiyalardan qaysi biri butun haqiqiy sonlar to'plamida teskarilanuvchi hisoblanadi: y = x², y = |x|, y = x³ − 2, y = x⁴ + 1?",
+      "v": [
+        "y = x²",
+        "y = |x|",
+        "y = x³ − 2",
+        "y = x⁴ + 1"
+      ],
+      "t": 2,
+      "izoh": "Funksiya teskarilanishi uchun u qat'iy monoton, ya'ni o'zaro bir qiymatli bo'lishi kerak. y = x², y = |x| va y = x⁴ + 1 juft funksiyalar bo'lib, x va −x bir xil qiymat beradi. Faqat y = x³ − 2 butun sonlar o'qida qat'iy o'suvchi, shuning uchun aynan u teskarilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mavjudlik-sharti",
+      "id": "matematika_funk_m12-teskari-funksiya#5308f51e"
+    },
+    {
+      "q": "Berilgan funksiyaga teskari funksiya mavjud bo'lishi uchun quyidagi shartlardan qaysi biri zarur va yetarli hisoblanadi?",
+      "v": [
+        "Funksiya aniqlanish sohasida uzluksiz bo'lishi",
+        "Funksiya grafigi koordinata boshidan o'tishi",
+        "Funksiya juft bo'lishi",
+        "Funksiya o'zaro bir qiymatli, ya'ni har bir qiymatiga faqat bitta argument mos kelishi"
+      ],
+      "t": 3,
+      "izoh": "Teskari funksiya har bir y qiymatdan yagona x ni qaytarishi kerak, bu esa faqat o'zaro bir qiymatli funksiyalarda bajariladi. Uzluksizlik yetarli emas: y = x² uzluksiz, lekin teskarilanmaydi. Juftlik esa aksincha, teskarilanishga to'sqinlik qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mavjudlik-sharti",
+      "id": "matematika_funk_m12-teskari-funksiya#6574bae7"
+    },
+    {
+      "q": "y = x² funksiya butun aniqlanish sohasida teskarilanmaydi. Bu holatning asosiy sababini eng aniq ifodalagan javobni tanlang.",
+      "v": [
+        "Grafigi parabola bo'lgani uchun",
+        "Bitta y qiymatga ikkita har xil x mos keladi: y = 9 uchun x = 3 va x = −3",
+        "Aniqlanish sohasi barcha haqiqiy sonlardan iborat bo'lgani uchun",
+        "Qiymatlari manfiy bo'la olmagani uchun"
+      ],
+      "t": 1,
+      "izoh": "Teskari funksiya har bir qiymatdan yagona argumentga qaytishi shart. x² = 9 tenglamaning esa ikkita yechimi bor: x = 3 va x = −3, ya'ni qaysi birini tanlashni aniqlab bo'lmaydi. Parabola shakli yoki qiymatlar sohasining musbatligi bunga sabab emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mavjudlik-sharti",
+      "id": "matematika_funk_m12-teskari-funksiya#9f938d96"
+    },
+    {
+      "q": "Bog'dagi kvadrat shaklidagi maydonning tomoni x metr bo'lganda yuzasi S(x) = x² formula bilan hisoblanadi. Amaliy shart x > 0 ekanini hisobga olsak, qanday xulosa to'g'ri bo'ladi?",
+      "v": [
+        "Teskarilanadi, chunki musbat sonlar to'plamida qat'iy o'suvchi",
+        "Teskarilanmaydi, chunki kvadrat funksiya juft",
+        "Teskarilanmaydi, chunki grafigi parabola",
+        "Teskarilanadi, chunki funksiya uzluksiz"
+      ],
+      "t": 0,
+      "izoh": "Juftlik teskarilanishga faqat butun sonlar o'qida to'sqinlik qiladi, bu masalada esa aniqlanish sohasi x > 0 bilan cheklangan. Musbat tomonlarda S(x) = x² qat'iy o'suvchi, shuning uchun har bir yuzaga yagona tomon mos keladi va teskarisi x = √S ko'rinishida yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mavjudlik-sharti",
+      "id": "matematika_funk_m12-teskari-funksiya#9e47b745"
+    },
+    {
+      "q": "Quyidagi funksiyalardan qaysi biri o'zining tabiiy aniqlanish sohasida teskarilanuvchi emas: y = 5 − 2x, y = 2ˣ, y = sin x, y = lg x?",
+      "v": [
+        "y = 5 − 2x",
+        "y = 2ˣ",
+        "y = sin x",
+        "y = lg x"
+      ],
+      "t": 2,
+      "izoh": "Chiziqli y = 5 − 2x kamayuvchi, y = 2ˣ o'suvchi, y = lg x ham o'suvchi, ya'ni ularning har biri qat'iy monoton. y = sin x esa davriy: sin 0 va sin π ikkalasi ham nolga teng. Bitta qiymatga cheksiz ko'p argument mos kelgani uchun u teskarilanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mavjudlik-sharti",
+      "id": "matematika_funk_m12-teskari-funksiya#566b9fed"
+    },
+    {
+      "q": "f funksiyaning aniqlanish sohasi D(f) = [2; 7], qiymatlar sohasi esa E(f) = [−1; 5] bo'lsa, teskari funksiyaning aniqlanish sohasi qanday bo'ladi?",
+      "v": [
+        "[2; 7]",
+        "[−1; 5]",
+        "[−1; 7]",
+        "[2; 5]"
+      ],
+      "t": 1,
+      "izoh": "Teskari funksiyada aniqlanish va qiymatlar sohalari o'rin almashadi: D(f⁻¹) = E(f) va E(f⁻¹) = D(f). Demak D(f⁻¹) = [−1; 5] bo'ladi. [2; 7] — sohalarni almashtirishni unutish, [−1; 7] esa ikki oraliqning chekkalarini aralashtirib yuborish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sohalar-almashinuvi",
+      "id": "matematika_funk_m12-teskari-funksiya#cb15bac5"
+    },
+    {
+      "q": "f(x) = √(x − 3) funksiya uchun teskari funksiyaning qiymatlar sohasi E(f⁻¹) ni ko'rsating va tanlovingizni asoslang.",
+      "v": [
+        "[3; +∞)",
+        "[0; +∞)",
+        "(−∞; 3]",
+        "(0; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Ildiz ostidagi ifoda manfiy bo'lmasligi kerak: x − 3 ≥ 0, ya'ni D(f) = [3; +∞). Teskari funksiyaning qiymatlar sohasi asl funksiyaning aniqlanish sohasiga teng bo'lgani uchun E(f⁻¹) = [3; +∞). [0; +∞) — bu E(f), ya'ni ikki sohani chalkashtirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sohalar-almashinuvi",
+      "id": "matematika_funk_m12-teskari-funksiya#74e95076"
+    },
+    {
+      "q": "Zavodda kunlik ishlab chiqarilgan mahsulot soni 20 dan 90 tagacha o'zgaradi, foyda esa 150 dan 600 ming so'mgacha o'sadi. Foydaga ko'ra mahsulot sonini beruvchi teskari bog'lanishning aniqlanish sohasi qanday?",
+      "v": [
+        "[20; 90]",
+        "[20; 600]",
+        "[90; 600]",
+        "[150; 600]"
+      ],
+      "t": 3,
+      "izoh": "Asl bog'lanishda argument mahsulot soni, qiymat esa foyda edi. Teskari bog'lanishda foyda argumentga aylanadi, shuning uchun uning aniqlanish sohasi asl funksiyaning qiymatlar sohasiga teng: [150; 600]. [20; 90] — sohalarni almashtirmasdan ko'chirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sohalar-almashinuvi",
+      "id": "matematika_funk_m12-teskari-funksiya#0b58d8e9"
+    },
+    {
+      "q": "Ko'rsatkichli f(x) = 2ˣ funksiyaning teskarisi logarifmik funksiya bo'ladi. Ana shu teskari funksiyaning aniqlanish sohasi nimadan iborat?",
+      "v": [
+        "Barcha haqiqiy sonlar",
+        "[0; +∞)",
+        "(0; +∞)",
+        "(1; +∞)"
+      ],
+      "t": 2,
+      "izoh": "y = 2ˣ funksiyaning qiymatlar sohasi E(f) = (0; +∞), chunki musbat asosli daraja hech qachon nolga teng bo'lmaydi. Teskari funksiyaning aniqlanish sohasi shu to'plamga teng: D(f⁻¹) = (0; +∞). [0; +∞) — nolni ortiqcha kiritish xatosi, chunki log₂0 mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sohalar-almashinuvi",
+      "id": "matematika_funk_m12-teskari-funksiya#23186ccb"
+    },
+    {
+      "q": "Teskari funksiya f⁻¹ uchun D(f⁻¹) = [−4; 6] va E(f⁻¹) = [1; 9] ekani ma'lum. Asl f funksiyaning aniqlanish va qiymatlar sohalarini ko'rsating.",
+      "v": [
+        "D(f) = [−4; 6], E(f) = [1; 9]",
+        "D(f) = [1; 9], E(f) = [−4; 6]",
+        "D(f) = [1; 9], E(f) = [1; 9]",
+        "D(f) = [−4; 9], E(f) = [1; 6]"
+      ],
+      "t": 1,
+      "izoh": "Sohalar almashinuvi ikki tomonlama ishlaydi: D(f) = E(f⁻¹) va E(f) = D(f⁻¹). Berilganlarga ko'ra D(f) = [1; 9], E(f) = [−4; 6] bo'ladi. Birinchi variant sohalarni almashtirmasdan ko'chirish, oxirgisi esa oraliq chekkalarini aralashtirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sohalar-almashinuvi",
+      "id": "matematika_funk_m12-teskari-funksiya#bceecebb"
+    },
+    {
+      "q": "f funksiya grafigiga M(3; 8) nuqta tegishli bo'lsa, teskari funksiyaning grafigi qaysi nuqtadan albatta o'tadi?",
+      "v": [
+        "(3; 8)",
+        "(8; 3)",
+        "(−3; 8)",
+        "(−8; −3)"
+      ],
+      "t": 1,
+      "izoh": "Teskari funksiyaning grafigi asl grafikning y = x chizig'iga nisbatan aksidan iborat. Bunday aks ettirishda nuqtaning abssissasi va ordinatasi o'rin almashadi. Demak M(3; 8) nuqta (8; 3) ga o'tadi. (−3; 8) — ishorani o'zgartirish, (3; 8) esa koordinatalarni almashtirmaslik xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriya-y-teng-x",
+      "id": "matematika_funk_m12-teskari-funksiya#a3475670"
+    },
+    {
+      "q": "Bir funksiya va uning teskarisining grafiklari koordinata tekisligida qaysi to'g'ri chiziqqa nisbatan aynan simmetrik joylashadi?",
+      "v": [
+        "Ox o'qiga",
+        "y = x to'g'ri chiziqqa",
+        "Oy o'qiga",
+        "y = −x to'g'ri chiziqqa"
+      ],
+      "t": 1,
+      "izoh": "Teskari funksiya hosil qilishda har bir (a; b) nuqta (b; a) ga aylanadi, ya'ni abssissa va ordinata o'rin almashadi. Aynan shunday almashtirish tekislikni birinchi choraklar bissektrisasi y = x ga nisbatan aks ettiradi. Shu sababli ikki grafik y = x ga nisbatan simmetrik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriya-y-teng-x",
+      "id": "matematika_funk_m12-teskari-funksiya#10173e2a"
+    },
+    {
+      "q": "Chizmada y = f(x) grafigi A(−2; 1) va B(4; 7) nuqtalardan o'tadi. Teskari funksiya grafigidagi ularga mos nuqtalarni ko'rsating.",
+      "v": [
+        "(−2; 1) va (4; 7)",
+        "(2; −1) va (−4; −7)",
+        "(1; −2) va (7; 4)",
+        "(−1; 2) va (−7; −4)"
+      ],
+      "t": 2,
+      "izoh": "y = x ga nisbatan aks ettirishda har bir nuqtaning koordinatalari o'rin almashadi, ishoralar esa saqlanadi. Shuning uchun A(−2; 1) nuqta (1; −2) ga, B(4; 7) nuqta esa (7; 4) ga o'tadi. Ishorani o'zgartiruvchi variantlar koordinata boshiga nisbatan simmetriyaga tegishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-y-teng-x",
+      "id": "matematika_funk_m12-teskari-funksiya#ae4b7a9c"
+    },
+    {
+      "q": "y = f(x) grafigi Oy o'qini (0; 5) nuqtada kesib o'tadi. Teskari funksiyaning grafigi Ox o'qini qaysi nuqtada kesadi?",
+      "v": [
+        "(5; 0)",
+        "(0; 5)",
+        "(−5; 0)",
+        "(1/5; 0)"
+      ],
+      "t": 0,
+      "izoh": "Asl grafikda (0; 5) nuqta bor. Teskari funksiyada koordinatalar o'rin almashgani uchun uning grafigida (5; 0) nuqta paydo bo'ladi. Ordinatasi nolga teng bu nuqta aynan Ox o'qida yotadi. (0; 5) — almashtirishni unutish, (1/5; 0) esa teskari songa chalkashtirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-y-teng-x",
+      "id": "matematika_funk_m12-teskari-funksiya#8f037d0c"
+    },
+    {
+      "q": "Teskari funksiyaning grafigi asl grafikdan y = x ga nisbatan aks ettirish yo'li bilan hosil qilinadi. Quyidagi tasdiqlardan qaysi biri shu xossaga zid?",
+      "v": [
+        "Asl grafikning Ox o'qi bilan kesishish nuqtasi teskarisining Oy o'qi bilan kesishish nuqtasiga aylanadi",
+        "Aks ettirishda grafikning shakli o'zgarmaydi, faqat joylashuvi o'zgaradi",
+        "Aks ettirishda har bir nuqtaning abssissasi va ordinatasi o'rin almashadi",
+        "Aks ettirishda har bir nuqtaning ikkala koordinatasi ishorasini o'zgartiradi"
+      ],
+      "t": 3,
+      "izoh": "y = x ga nisbatan simmetriya (a; b) nuqtani (b; a) ga o'tkazadi: koordinatalar o'rin almashadi, ishoralar esa o'zgarmaydi. Ikkala ishorani almashtirish koordinata boshiga nisbatan simmetriyaga xos. Shuning uchun oxirgi tasdiq teskari funksiya xossasiga zid keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetriya-y-teng-x",
+      "id": "matematika_funk_m12-teskari-funksiya#5ed7f1a2"
+    },
+    {
+      "q": "f teskarilanuvchi funksiya bo'lsa, f(f⁻¹(x)) ifodaning qiymati aniqlanish sohasidagi barcha x lar uchun nimaga teng bo'ladi?",
+      "v": [
+        "x",
+        "1",
+        "f(x)",
+        "1/x"
+      ],
+      "t": 0,
+      "izoh": "Teskari funksiya asl funksiyaning ta'sirini butunlay bekor qiladi. Avval x ga f⁻¹ qo'llanadi, so'ng natijaga f qo'llanadi va boshlang'ich songa qaytiladi. Shuning uchun f(f⁻¹(x)) = x bo'ladi. 1/x — teskari funksiyani teskari songa chalkashtirish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kompozitsiya-ayniyat",
+      "id": "matematika_funk_m12-teskari-funksiya#0bc6f8d8"
+    },
+    {
+      "q": "f(x) = 4x − 5 funksiya berilgan. Shu funksiya uchun f⁻¹(f(11)) ifodaning qiymatini ortiqcha hisoblashlarsiz aniqlang.",
+      "v": [
+        "39",
+        "44",
+        "1",
+        "11"
+      ],
+      "t": 3,
+      "izoh": "f⁻¹(f(x)) = x ayniyati har qanday teskarilanuvchi funksiya uchun o'rinli, shuning uchun ifoda darhol 11 ga teng. Buni bosqichma-bosqich ham tekshirish mumkin: f(11) = 39, so'ng f⁻¹(39) = (39 + 5)/4 = 11. 39 — oraliq natijada to'xtab qolish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kompozitsiya-ayniyat",
+      "id": "matematika_funk_m12-teskari-funksiya#fada8c8a"
+    },
+    {
+      "q": "Shahnoza f(x) = x/3 + 8 funksiya bilan ishlayapti va f(f⁻¹(21)) ifodani hisoblamoqchi. U qanday javob olishi kerak?",
+      "v": [
+        "15",
+        "39",
+        "21",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "f(f⁻¹(x)) = x ayniyatiga ko'ra javob darhol 21 ga teng bo'ladi. Tekshirib ko'ramiz: f⁻¹(x) = 3x − 24, demak f⁻¹(21) = 39, so'ngra f(39) = 39/3 + 8 = 21. 39 — oxirgi qadamni bajarmaslik, 7 esa 21 ni 3 ga bo'lib qo'yish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompozitsiya-ayniyat",
+      "id": "matematika_funk_m12-teskari-funksiya#cbad1016"
+    },
+    {
+      "q": "f va g funksiyalar uchun f(g(x)) = x va g(f(x)) = x ayniyatlari bir vaqtda bajariladi. Bu ma'lumotdan qanday to'g'ri xulosa kelib chiqadi?",
+      "v": [
+        "f va g o'zaro teskari funksiyalardir",
+        "f va g bir xil funksiyalardir",
+        "f va g grafiklari Ox o'qiga nisbatan simmetrik",
+        "f va g ning ko'paytmasi birga teng"
+      ],
+      "t": 0,
+      "izoh": "Ikki funksiyaning kompozitsiyasi ikkala tartibda ham ayniy x ni bersa, ular bir-birining ta'sirini bekor qiladi. Bu esa o'zaro teskari funksiyalar ta'rifining o'zi, ya'ni g = f⁻¹. Bir xil funksiyalarda bu shart bajarilmaydi: f(x) = 2x uchun f(f(x)) = 4x chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompozitsiya-ayniyat",
+      "id": "matematika_funk_m12-teskari-funksiya#5df17a90"
+    },
+    {
+      "q": "f(x) = 5x + 2 funksiya va uning teskarisi berilgan. f⁻¹(f(a)) + f(f⁻¹(b)) ifodani a va b harflari orqali soddalashtiring.",
+      "v": [
+        "5a + 5b + 4",
+        "ab",
+        "2(a + b)",
+        "a + b"
+      ],
+      "t": 3,
+      "izoh": "Teskari funksiyaning asosiy ayniyatlari f⁻¹(f(a)) = a va f(f⁻¹(b)) = b ko'rinishida bo'ladi. Shuning uchun ifoda a + b ga teng va f ning aniq ko'rinishi umuman kerak emas. 5a + 5b + 4 — ayniyatni ko'rmay, f(a) + f(b) ni hisoblash xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kompozitsiya-ayniyat",
+      "id": "matematika_funk_m12-teskari-funksiya#51f0461d"
+    },
+    {
+      "q": "f(x) = (x + 3)/(x − 2) kasr-chiziqli funksiya berilgan. Uning teskari funksiyasini topib, to'g'ri variantni belgilang.",
+      "v": [
+        "(2x + 3)/(x − 1)",
+        "(2x − 3)/(x + 1)",
+        "(x − 3)/(x + 2)",
+        "(x + 2)/(x − 3)"
+      ],
+      "t": 0,
+      "izoh": "y = (x + 3)/(x − 2) tenglikni maxrajga ko'paytiramiz: y(x − 2) = x + 3. Qavsni ochib x li hadlarni bir tomonga yig'amiz: xy − x = 2y + 3, ya'ni x(y − 1) = 2y + 3. Bundan x = (2y + 3)/(y − 1), harflar almashtirilgach f⁻¹(x) = (2x + 3)/(x − 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-chiziqli-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#0c57acfd"
+    },
+    {
+      "q": "Sardor f(x) = 1/(x + 4) funksiyaning teskarisini topish uchun tenglikni x ga nisbatan yechishi kerak. To'g'ri natijani ko'rsating.",
+      "v": [
+        "1/x + 4",
+        "1/(x − 4)",
+        "1/x − 4",
+        "x + 4"
+      ],
+      "t": 2,
+      "izoh": "y = 1/(x + 4) tenglikdan x + 4 = 1/y kelib chiqadi, bundan x = 1/y − 4 bo'ladi. Harflar almashtirilgach f⁻¹(x) = 1/x − 4. 1/(x − 4) — to'rtni maxraj ichida qoldirish, 1/x + 4 esa ishorani almashtirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-chiziqli-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#9ac5fdc9"
+    },
+    {
+      "q": "f(x) = (3x)/(x + 1) funksiya x ≠ −1 shartida aniqlangan. Uning teskari funksiyasi qanday ko'rinishga ega bo'ladi?",
+      "v": [
+        "x/(x − 3)",
+        "x/(3 − x)",
+        "3x/(x − 1)",
+        "(x + 1)/(3x)"
+      ],
+      "t": 1,
+      "izoh": "y(x + 1) = 3x tenglikni ochamiz: xy + y = 3x. x li hadlarni ajratamiz: x(y − 3) = −y, bundan x = −y/(y − 3) = y/(3 − y). Demak f⁻¹(x) = x/(3 − x). x/(x − 3) — ishorani qisqartirishda yo'qotish, (x + 1)/(3x) esa kasrni shunchaki ag'darish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-chiziqli-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#92eccdb0"
+    },
+    {
+      "q": "Kasr-chiziqli f(x) = (2x − 1)/(x + 5) funksiyaning teskarisi topilgach, uning aniqlanish sohasidan chiqarib tashlanadigan qiymat qanday bo'ladi?",
+      "v": [
+        "x = −5",
+        "x = 1/2",
+        "x = 5",
+        "x = 2"
+      ],
+      "t": 3,
+      "izoh": "Teskari funksiya f⁻¹(x) = (5x + 1)/(2 − x) ko'rinishida chiqadi, uning maxraji nolga aylanmasligi kerak: 2 − x ≠ 0. Demak x = 2 chiqarib tashlanadi. Bu qiymat asl funksiyaning gorizontal asimptotasi bo'lib, E(f) ga kirmaydi. x = −5 esa asl funksiyaning taqiqlangan nuqtasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-chiziqli-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#f034276f"
+    },
+    {
+      "q": "Suv omborida sath h metr bo'lganda quvurdagi bosim p = (4h)/(h + 3) formula bilan hisoblanadi. Bosimga ko'ra sathni beruvchi teskari formulani toping.",
+      "v": [
+        "h = 3p/(p − 4)",
+        "h = 4p/(p + 3)",
+        "h = 3p/(4 − p)",
+        "h = (p + 3)/(4p)"
+      ],
+      "t": 2,
+      "izoh": "p(h + 3) = 4h tenglikni ochamiz: ph + 3p = 4h. h li hadlarni bir tomonga yig'amiz: h(p − 4) = −3p, bundan h = −3p/(p − 4) = 3p/(4 − p). Bu izlangan teskari bog'lanish. h = 4p/(p + 3) — asl formulada harflarni shunchaki almashtirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-chiziqli-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#44b108a5"
+    },
+    {
+      "q": "Ko'rsatkichli f(x) = 3ˣ funksiya butun sonlar o'qida o'suvchi. Uning teskari funksiyasini to'g'ri yozgan variantni belgilang.",
+      "v": [
+        "log₃x",
+        "lg 3x",
+        "x³",
+        "3⁻ˣ"
+      ],
+      "t": 0,
+      "izoh": "y = 3ˣ tenglikni x ga nisbatan yechish uchun logarifm ta'rifi qo'llanadi: x = log₃y. Harflar almashtirilgach f⁻¹(x) = log₃x hosil bo'ladi. x³ — asos bilan ko'rsatkichni chalkashtirish, 3⁻ˣ esa teskari funksiyani manfiy ko'rsatkichli daraja bilan almashtirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-logarifmik-juft",
+      "id": "matematika_funk_m12-teskari-funksiya#0cebe033"
+    },
+    {
+      "q": "Logarifmik f(x) = log₅x funksiyaning teskarisi qaysi funksiya bo'ladi? Javobni ko'rsatkichli funksiya ko'rinishida tanlang.",
+      "v": [
+        "x⁵",
+        "5ˣ",
+        "log₅(1/x)",
+        "1/log₅x"
+      ],
+      "t": 1,
+      "izoh": "y = log₅x tenglikni logarifm ta'rifiga ko'ra x = 5ʸ ko'rinishida yozamiz. Harflar almashtirilgach f⁻¹(x) = 5ˣ bo'ladi. x⁵ — asos bilan ko'rsatkichni almashtirish, 1/log₅x esa teskari funksiyani teskari songa chalkashtirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-logarifmik-juft",
+      "id": "matematika_funk_m12-teskari-funksiya#275f003e"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni har soatda ikki barobar oshadi va t soatdan keyin N = 200·2ᵗ ga teng bo'ladi. Soniga ko'ra vaqtni beruvchi teskari bog'lanishni toping.",
+      "v": [
+        "t = log₂(N/200)",
+        "t = log₂N − 200",
+        "t = 200·log₂N",
+        "t = N/400"
+      ],
+      "t": 0,
+      "izoh": "N = 200·2ᵗ tenglikning ikkala tomonini 200 ga bo'lamiz: 2ᵗ = N/200. Logarifm ta'rifiga ko'ra t = log₂(N/200) bo'ladi. t = log₂N − 200 — bo'lishni ayirishga aylantirish, t = N/400 esa darajani oddiy ko'paytmaga chalkashtirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-logarifmik-juft",
+      "id": "matematika_funk_m12-teskari-funksiya#1f1c6e2e"
+    },
+    {
+      "q": "Nodira f(x) = 2ˣ⁺³ funksiyaning teskarisini topmoqchi, lekin ko'rsatkichdagi qo'shiluvchini qanday hisobga olishni bilmayapti. To'g'ri javobni ko'rsating.",
+      "v": [
+        "log₂(x − 3)",
+        "log₂x + 3",
+        "log₂x − 3",
+        "log₂(x + 3)"
+      ],
+      "t": 2,
+      "izoh": "y = 2ˣ⁺³ tenglikdan logarifm ta'rifiga ko'ra x + 3 = log₂y kelib chiqadi. Bundan x = log₂y − 3 va harflar almashtirilgach f⁻¹(x) = log₂x − 3. log₂(x − 3) — uchni logarifm ichiga kiritish, log₂x + 3 esa ishorani almashtirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-logarifmik-juft",
+      "id": "matematika_funk_m12-teskari-funksiya#4298f9f9"
+    },
+    {
+      "q": "Ko'rsatkichli va logarifmik funksiyalar o'zaro teskari ekanidan foydalanib, log₇(7ˣ⁺²) ifodani hech qanday jadvalsiz soddalashtiring va natijani belgilang.",
+      "v": [
+        "x",
+        "7x + 2",
+        "2x",
+        "x + 2"
+      ],
+      "t": 3,
+      "izoh": "logₐ(aᵘ) = u ayniyati ko'rsatkichli va logarifmik funksiyalar o'zaro teskari bo'lgani uchun o'rinli. Bu yerda asos 7 va u = x + 2, demak butun ifoda x + 2 ga teng. x — qo'shiluvchini tashlab ketish, 7x + 2 esa asosni ko'paytuvchi sifatida chiqarish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-logarifmik-juft",
+      "id": "matematika_funk_m12-teskari-funksiya#7557970c"
+    },
+    {
+      "q": "f(x) = x² funksiya faqat manfiy bo'lmagan x lar to'plamida qaralmoqda. Uning teskari funksiyasini ko'rsating.",
+      "v": [
+        "√x",
+        "−√x",
+        "x/2",
+        "±√x"
+      ],
+      "t": 0,
+      "izoh": "x ≥ 0 shartida y = x² qat'iy o'suvchi, shuning uchun teskarilanadi. y = x² tenglikdan x = √y, chunki manfiy ildiz aniqlanish sohasiga kirmaydi. Demak f⁻¹(x) = √x. ±√x — bitta argumentga ikkita qiymat berib, funksiya ta'rifining o'zini buzadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-daraja-juft",
+      "id": "matematika_funk_m12-teskari-funksiya#f2ac4be7"
+    },
+    {
+      "q": "Kub funksiya f(x) = x³ butun sonlar o'qida teskarilanadi. Uning teskari funksiyasi qanday yoziladi va nega qo'shimcha cheklov kerak emas?",
+      "v": [
+        "√x",
+        "∛x",
+        "x/3",
+        "x⁻³"
+      ],
+      "t": 1,
+      "izoh": "y = x³ funksiya butun sonlar o'qida qat'iy o'suvchi, shuning uchun aniqlanish sohasini toraytirish talab qilinmaydi. Tenglikni yechsak x = ∛y, ya'ni f⁻¹(x) = ∛x. Kub ildiz manfiy sonlardan ham olinadi, aynan shu sabab kvadrat funksiyadagi cheklov bu yerda kerak emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-daraja-juft",
+      "id": "matematika_funk_m12-teskari-funksiya#5035467a"
+    },
+    {
+      "q": "f(x) = x² − 4 funksiya x ≥ 0 oraliqda berilgan. Unga teskari funksiyaning ifodasini toping.",
+      "v": [
+        "√x + 4",
+        "√(x − 4)",
+        "√(x + 4)",
+        "x² + 4"
+      ],
+      "t": 2,
+      "izoh": "y = x² − 4 tenglikdan x² = y + 4 kelib chiqadi. x ≥ 0 bo'lgani uchun x = √(y + 4) olinadi va manfiy ildiz tashlanadi. Demak f⁻¹(x) = √(x + 4). √x + 4 — ildizni faqat bitta hadga qo'llash, √(x − 4) esa ishorani almashtirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-daraja-juft",
+      "id": "matematika_funk_m12-teskari-funksiya#bc589b24"
+    },
+    {
+      "q": "Kvadrat shaklidagi gilamning yuzasi S kvadrat metr bo'lsa, uning tomoni qanday formula bilan topiladi? Yuza va tomon o'zaro teskari bog'langan kattaliklardir.",
+      "v": [
+        "a = S²",
+        "a = S/4",
+        "a = S/2",
+        "a = √S"
+      ],
+      "t": 3,
+      "izoh": "Tomoni a bo'lgan kvadratning yuzasi S = a² formula bilan hisoblanadi. Bu bog'lanishni teskari yo'nalishda yozish uchun a ga nisbatan yechamiz: a = √S, chunki uzunlik manfiy bo'la olmaydi. a = S/4 — perimetr formulasi bilan chalkashtirish, a = S/2 esa yuzani ikkiga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-daraja-juft",
+      "id": "matematika_funk_m12-teskari-funksiya#9fb0202f"
+    },
+    {
+      "q": "y = (x − 3)² funksiya teskarilanuvchi bo'lishi uchun uning aniqlanish sohasini qanday cheklash yetarli bo'ladi?",
+      "v": [
+        "x ≥ 3",
+        "x ≥ 0",
+        "0 ≤ x ≤ 5",
+        "x ≠ 3"
+      ],
+      "t": 0,
+      "izoh": "Parabolaning uchi x = 3 nuqtada joylashgan: undan chapda funksiya kamayadi, o'ngda esa o'sadi. Teskarilanish uchun uch nuqtasining faqat bitta tomonida qolish kerak, shuning uchun x ≥ 3 cheklashi yetarli. x ≥ 0 va 0 ≤ x ≤ 5 oraliqlari x = 3 ni ichiga oladi, ularda monotonlik buziladi (masalan 2 va 4 nuqtalarda qiymat bir xil — 1). x ≠ 3 esa faqat bitta nuqtani chiqarib tashlaydi, qolgan qismda funksiya baribir ikki tomonga simmetrik bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqni-cheklash",
+      "id": "matematika_funk_m12-teskari-funksiya#63ac02fd"
+    },
+    {
+      "q": "f(x) = x² funksiya [−1; 4] kesmada berilgan va bu kesmada teskarilanmaydi. Teskarilanishi uchun kesmaning eng uzun qaysi qismini olish kerak?",
+      "v": [
+        "[−1; 0]",
+        "[0; 4]",
+        "[1; 4]",
+        "[−1; 4]"
+      ],
+      "t": 1,
+      "izoh": "x² funksiya [−1; 0] da kamayadi, [0; 4] da esa o'sadi, ya'ni nol nuqtada monotonlik yo'nalishi o'zgaradi. Teskarilanish uchun bitta monoton qism olinadi, ularning uzunliklari esa 1 va 4 ga teng. Demak eng uzuni [0; 4]. [1; 4] ham monoton, lekin undan uzunroq qism mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqni-cheklash",
+      "id": "matematika_funk_m12-teskari-funksiya#2e74fc70"
+    },
+    {
+      "q": "Yuqoriga otilgan jismning balandligi h(t) = 20t − 5t² formula bilan beriladi. Jism ko'tarilayotgan bosqichda balandlikka ko'ra vaqt bir qiymatli topiladi: bu bosqich qaysi oraliq?",
+      "v": [
+        "[0; 4]",
+        "[2; 4]",
+        "[0; 2]",
+        "[0; 20]"
+      ],
+      "t": 2,
+      "izoh": "h(t) = 20t − 5t² parabolaning shoxlari pastga qaragan, uning uchi t = 20/(2·5) = 2 sekundda joylashgan. Uch nuqtasigacha bo'lgan [0; 2] oraliqda jism ko'tariladi va h qat'iy o'sadi, ya'ni har bir balandlikka yagona vaqt mos keladi. [0; 4] da esa har bir balandlik ikki marta uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqni-cheklash",
+      "id": "matematika_funk_m12-teskari-funksiya#c05679ac"
+    },
+    {
+      "q": "y = cos x funksiya teskarilanuvchi bo'lishi uchun odatda qaysi kesmada qaraladi? Aynan shu kesma arccos funksiyaning qiymatlar sohasini beradi.",
+      "v": [
+        "[−π/2; π/2]",
+        "[0; 2π]",
+        "[−π; π]",
+        "[0; π]"
+      ],
+      "t": 3,
+      "izoh": "Kosinus davriy funksiya, shuning uchun butun o'qda teskarilanmaydi. [0; π] kesmada u qat'iy kamayadi va har bir qiymat faqat bir marta uchraydi, shu bois aynan shu kesma tanlangan. [−π/2; π/2] esa sinus uchun ishlatiladi va arcsin ning qiymatlar sohasi hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqni-cheklash",
+      "id": "matematika_funk_m12-teskari-funksiya#17ea971b"
+    },
+    {
+      "q": "f funksiya o'z aniqlanish sohasida qat'iy kamayuvchi va teskarilanuvchi. Uning teskari funksiyasi qanday monotonlik xossasiga ega bo'ladi?",
+      "v": [
+        "Qat'iy kamayuvchi",
+        "Qat'iy o'suvchi",
+        "O'zgarmas",
+        "Monotonligini aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Agar a < b bo'lganda f(a) > f(b) bo'lsa, teskari funksiyada kattaroq argumentga kichikroq qiymat mos keladi. Ya'ni f⁻¹ argument oshgan sari kamayadi. Demak teskari funksiya asl funksiya bilan bir xil yo'nalishda monoton bo'lib, qat'iy kamayuvchi bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-monotonlik",
+      "id": "matematika_funk_m12-teskari-funksiya#e737f415"
+    },
+    {
+      "q": "Sovutgichga qo'yilgan mahsulotning harorati vaqt o'tishi bilan bir tekis pasayib boradi. Haroratga ko'ra vaqtni beruvchi teskari bog'lanish qanday xarakterga ega bo'ladi?",
+      "v": [
+        "O'suvchi",
+        "Kamayuvchi",
+        "Davriy",
+        "O'zgarmas"
+      ],
+      "t": 1,
+      "izoh": "Vaqt ortganda harorat pasayadi, ya'ni asl bog'lanish kamayuvchi. Teskari bog'lanishda haroratni bilib vaqt topiladi: harorat qanchalik past bo'lsa, shuncha ko'p vaqt o'tgan bo'ladi. Demak harorat oshgani sari vaqt kamayadi va teskari bog'lanish ham kamayuvchi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-monotonlik",
+      "id": "matematika_funk_m12-teskari-funksiya#115827dc"
+    },
+    {
+      "q": "f(x) = 7 − 3x funksiyaning teskarisi topilgach, uning o'sish yoki kamayish xarakteri qanday bo'lishini burchak koeffitsienti orqali asoslang.",
+      "v": [
+        "O'suvchi, chunki burchak koeffitsienti 1/3",
+        "Kamayuvchi, chunki burchak koeffitsienti −3",
+        "Kamayuvchi, chunki burchak koeffitsienti −1/3",
+        "O'suvchi, chunki burchak koeffitsienti 3"
+      ],
+      "t": 2,
+      "izoh": "y = 7 − 3x tenglikdan 3x = 7 − y, ya'ni f⁻¹(x) = (7 − x)/3 = 7/3 − x/3. Bu chiziqli funksiyaning burchak koeffitsienti −1/3 bo'lib, u manfiy, demak teskari funksiya kamayuvchi. Asl funksiyaning koeffitsienti −3 edi: ikkalasi ham manfiy, ya'ni yo'nalish saqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-monotonlik",
+      "id": "matematika_funk_m12-teskari-funksiya#d217a4bc"
+    },
+    {
+      "q": "Ikki o'quvchi bahslashmoqda: biri teskari funksiya har doim o'suvchi deydi, ikkinchisi esa monotonlik yo'nalishi saqlanadi deydi. Kim haq va nima uchun?",
+      "v": [
+        "Birinchi o'quvchi: teskari funksiya har doim o'suvchi",
+        "Ikkalasi ham noto'g'ri: teskari funksiya monoton bo'lmaydi",
+        "Javob berish uchun funksiyaning aniq ko'rinishi kerak",
+        "Ikkinchi o'quvchi: teskari funksiya asl funksiya bilan bir xil yo'nalishda monoton"
+      ],
+      "t": 3,
+      "izoh": "Teskarilanuvchi funksiya albatta qat'iy monoton bo'ladi va bu xossa teskarisiga ham o'tadi. O'suvchi funksiyaning teskarisi o'suvchi, kamayuvchining teskarisi esa kamayuvchi bo'ladi. Masalan y = −2x kamayuvchi va uning teskarisi y = −x/2 ham kamayuvchi. Demak ikkinchi o'quvchi haq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-monotonlik",
+      "id": "matematika_funk_m12-teskari-funksiya#1019f8dd"
+    },
+    {
+      "q": "arcsin funksiya sinusning [−π/2; π/2] kesmadagi teskarisidir. Shu ta'rifga tayanib arcsin(1/2) qiymatini toping.",
+      "v": [
+        "π/6",
+        "π/3",
+        "5π/6",
+        "π/2"
+      ],
+      "t": 0,
+      "izoh": "arcsin(1/2) — bu [−π/2; π/2] kesmada yotuvchi va sinusi 1/2 ga teng burchak. Bunday burchak π/6 ga teng, chunki sin(π/6) = 1/2. 5π/6 burchakning sinusi ham 1/2, lekin u kesmaga kirmaydi. π/3 esa kosinus qiymati bilan chalkashtirish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-trigonometrik",
+      "id": "matematika_funk_m12-teskari-funksiya#e28e6452"
+    },
+    {
+      "q": "Hisoblang: arctg 1 + arccos 0 ifodaning qiymati nechaga teng bo'ladi va u qanday burchakni beradi?",
+      "v": [
+        "π/2",
+        "3π/4",
+        "π/4",
+        "π"
+      ],
+      "t": 1,
+      "izoh": "arctg 1 — tangensi birga teng burchak, ya'ni π/4. arccos 0 — kosinusi nolga teng burchak, ya'ni π/2. Ularning yig'indisi π/4 + π/2 = 3π/4 ga teng bo'ladi. π/4 — ikkinchi qo'shiluvchini tashlab ketish, π/2 esa birinchisini hisobga olmaslik xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-trigonometrik",
+      "id": "matematika_funk_m12-teskari-funksiya#fd211e48"
+    },
+    {
+      "q": "sin(arcsin 0,4) ifodaning qiymatini teskari funksiyalar ayniyatidan foydalanib aniqlang va to'g'ri javobni belgilang.",
+      "v": [
+        "0,6",
+        "1",
+        "0,4",
+        "2,5"
+      ],
+      "t": 2,
+      "izoh": "sin va arcsin o'zaro teskari funksiyalar, shuning uchun sin(arcsin a) = a ayniyati −1 ≤ a ≤ 1 bo'lganda o'rinli. Bu yerda a = 0,4 shartni qanoatlantiradi, demak natija 0,4 ga teng. 2,5 — teskari songa chalkashtirish, 0,6 esa sinus va kosinus qiymatlarini chalkashtirib, 1 − 0,4 ni hisoblash xatosi (haqiqatda cos(arcsin 0,4) = √0,84 ≈ 0,92).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-trigonometrik",
+      "id": "matematika_funk_m12-teskari-funksiya#dd91bf3c"
+    },
+    {
+      "q": "Zinapoyaning gorizontal bilan hosil qilgan burchagi tangensi 1/√3 ga teng. Bu burchakni arctg funksiyasi orqali graduslarda ifodalang.",
+      "v": [
+        "60°",
+        "45°",
+        "15°",
+        "30°"
+      ],
+      "t": 3,
+      "izoh": "arctg funksiya tangens qiymatidan burchakni tiklaydi, ya'ni u tangensga teskari. tg 30° = 1/√3 bo'lgani uchun arctg(1/√3) = 30°. 60° — tangensi √3 ga teng burchak, ya'ni kasrni ag'darib yuborish xatosi. 45° esa tangensi birga teng burchakdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-trigonometrik",
+      "id": "matematika_funk_m12-teskari-funksiya#9c07586a"
+    },
+    {
+      "q": "g(x) = 6 − x funksiya uchun g(g(x)) ifodani soddalashtiring va bundan qanday xulosa kelib chiqishini aniqlang.",
+      "v": [
+        "x, demak g o'ziga teskari funksiya",
+        "6, demak g o'zgarmas funksiya",
+        "12 − x, demak g chiziqli funksiya",
+        "x − 6, demak g siljitish amali"
+      ],
+      "t": 0,
+      "izoh": "Ifodani ochamiz: g(g(x)) = 6 − (6 − x) = 6 − 6 + x = x. Kompozitsiya ayniy x ni bergani uchun g o'zining teskarisiga teng, ya'ni g⁻¹ = g. Bunday funksiyaning grafigi y = x chizig'iga nisbatan o'z-o'ziga aks etadi. 12 − x — qavs oldidagi ishorani noto'g'ri ochish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "involutsiya",
+      "id": "matematika_funk_m12-teskari-funksiya#2288a26c"
+    },
+    {
+      "q": "Quyidagi funksiyalardan qaysi biri o'z teskarisiga teng: y = 2x, y = x + 5, y = x², y = 1/x?",
+      "v": [
+        "y = 2x",
+        "y = x + 5",
+        "y = x²",
+        "y = 1/x"
+      ],
+      "t": 3,
+      "izoh": "Funksiya o'ziga teskari bo'lishi uchun f(f(x)) = x shart bajarilishi kerak. y = 1/x uchun f(f(x)) = 1/(1/x) = x, ya'ni shart bajariladi. y = 2x da f(f(x)) = 4x, y = x + 5 da esa f(f(x)) = x + 10 chiqadi. y = x² umuman teskarilanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "involutsiya",
+      "id": "matematika_funk_m12-teskari-funksiya#33097e62"
+    },
+    {
+      "q": "f(x) = (x + 2)/(x − 1) funksiya uchun f(f(x)) ni hisoblang va funksiya o'ziga teskari ekanini tekshirib ko'ring.",
+      "v": [
+        "3x, demak funksiya o'ziga teskari emas",
+        "x, demak funksiya o'ziga teskari",
+        "1/x, demak funksiya teskarilanmaydi",
+        "x + 2, demak natija asl funksiyaga qaytadi"
+      ],
+      "t": 1,
+      "izoh": "Suratni hisoblaymiz: (x + 2)/(x − 1) + 2 = (x + 2 + 2x − 2)/(x − 1) = 3x/(x − 1). Maxrajni hisoblaymiz: (x + 2)/(x − 1) − 1 = (x + 2 − x + 1)/(x − 1) = 3/(x − 1). Ikki kasrni bo'lsak x hosil bo'ladi, demak f o'ziga teskari funksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "involutsiya",
+      "id": "matematika_funk_m12-teskari-funksiya#21a870f6"
+    },
+    {
+      "q": "Ikki do'st o'yin o'ylab topdi: birinchisi son aytadi, ikkinchisi undan 10 ni ayirib, natijaning ishorasini o'zgartiradi. Bu amal o'ziga teskarimi?",
+      "v": [
+        "Yo'q, chunki ikki marta qo'llanganda 20 ga kamayadi",
+        "Yo'q, chunki ishora ikki marta o'zgaradi",
+        "Ha, chunki amalni ikki marta qo'llasa boshlang'ich son qaytadi",
+        "Aniqlab bo'lmaydi, chunki aniq son berilmagan"
+      ],
+      "t": 2,
+      "izoh": "Amalni formula bilan yozamiz: g(x) = −(x − 10) = 10 − x. Uni ikki marta qo'llaymiz: g(g(x)) = 10 − (10 − x) = x. Boshlang'ich son qaytgani uchun amal o'ziga teskari, ya'ni g⁻¹ = g. Masalan 3 dan 7 hosil bo'ladi, 7 dan esa yana 3 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "involutsiya",
+      "id": "matematika_funk_m12-teskari-funksiya#64e9ba1a"
+    },
+    {
+      "q": "f(x) = ax + 6 funksiyaning teskarisi f⁻¹(x) = (x − 6)/4 ko'rinishida ekani ma'lum. a parametrning qiymatini toping.",
+      "v": [
+        "4",
+        "1/4",
+        "6",
+        "−4"
+      ],
+      "t": 0,
+      "izoh": "f(x) = ax + 6 dan y = ax + 6, so'ng ax = y − 6 va x = (y − 6)/a. Demak umumiy ko'rinish f⁻¹(x) = (x − 6)/a bo'ladi. Uni berilgan ifoda bilan solishtirsak a = 4 chiqadi. 1/4 — surat bilan maxrajni chalkashtirish, 6 esa ozod hadni parametr deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrli-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#2b489369"
+    },
+    {
+      "q": "f(x) = 2x + b funksiyaning teskarisi (5; 1) nuqtadan o'tadi. b parametrning qiymatini aniqlang.",
+      "v": [
+        "9",
+        "−3",
+        "3",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "f⁻¹ grafigi (5; 1) nuqtadan o'tsa, f⁻¹(5) = 1 bo'ladi, bu esa f(1) = 5 degani. Formulaga qo'yamiz: f(1) = 2·1 + b = 2 + b, demak 2 + b = 5 va b = 3. 7 — 2 + b = 5 tenglamada b ni topishda ayirish o'rniga qo'shish (5 + 2 = 7) xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrli-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#ca07a6d5"
+    },
+    {
+      "q": "Taksi tarifi f(x) = kx + 5000 so'm ko'rinishida bo'lib, teskari bog'lanish 20000 so'mlik to'lovga 5 km masofani mos qo'yadi. k ning qiymatini toping.",
+      "v": [
+        "4000",
+        "3000",
+        "5000",
+        "15000"
+      ],
+      "t": 1,
+      "izoh": "Teskari bog'lanish 20000 so'mga 5 km ni mos qo'ysa, asl funksiyada f(5) = 20000 bo'ladi. Tenglama tuzamiz: 5k + 5000 = 20000, bundan 5k = 15000 va k = 3000 so'm. 4000 — boshlang'ich 5000 so'mni ayirmaslik, 15000 esa 5 ga bo'lishni unutish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrli-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#2f1c981b"
+    },
+    {
+      "q": "f(x) = (x + m)/3 funksiya uchun f⁻¹(4) = 7 tenglik bajarilishi ma'lum. m parametrning qiymatini toping.",
+      "v": [
+        "12",
+        "−5",
+        "19",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "f⁻¹(4) = 7 tenglik asl funksiyada f(7) = 4 ekanini bildiradi. Buni formulaga qo'yamiz: (7 + m)/3 = 4, bundan 7 + m = 12 va m = 5. 12 — oraliq natijada to'xtab qolish, 19 esa 7 ni ayirish o'rniga qo'shish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrli-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#9f218717"
+    },
+    {
+      "q": "Jadvalda f funksiyaning qiymatlari berilgan: f(1) = 5, f(2) = 9, f(3) = 14, f(4) = 20. Shu jadval asosida f⁻¹(14) qiymatini aniqlang.",
+      "v": [
+        "14",
+        "3",
+        "20",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Teskari funksiya qiymatdan argumentga qaytaradi, shuning uchun jadvalda 14 soni qaysi katakda turganini qidiramiz. U f(3) sifatida uchraydi, demak f⁻¹(14) = 3 bo'ladi. 20 — keyingi katakni olish, 9 esa jadvalda bir qator yuqoriga siljish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#09bf45f7"
+    },
+    {
+      "q": "Maktab so'rovida sinf va o'quvchilar soni qayd etildi: 5-sinfda 28 ta, 6-sinfda 31 ta, 7-sinfda 26 ta, 8-sinfda 33 ta. Bu bog'lanish teskarilanadimi?",
+      "v": [
+        "Ha, chunki barcha sonlar har xil va har bir songa yagona sinf mos keladi",
+        "Yo'q, chunki sonlar o'sish tartibida joylashmagan",
+        "Yo'q, chunki sinf raqami butun son bo'lishi shart",
+        "Ha, chunki o'quvchilar soni doimo musbat"
+      ],
+      "t": 0,
+      "izoh": "Teskarilanish uchun har bir qiymatga yagona argument mos kelishi kerak. Bu yerda 28, 31, 26 va 33 sonlari bir-biridan farq qiladi, demak har bir sondan sinfni bir qiymatli tiklash mumkin. Monotonlik shart emas: sonlar o'sish tartibida bo'lmasa ham teskarilanish buzilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#5f39f2fc"
+    },
+    {
+      "q": "Teskarilanuvchi f funksiya uchun jadval berilgan: f(0) = 2, f(1) = 5, f(2) = 8, f(3) = 11. f⁻¹(8) − f⁻¹(2) ayirmani hisoblang.",
+      "v": [
+        "6",
+        "3",
+        "2",
+        "−2"
+      ],
+      "t": 2,
+      "izoh": "Jadvaldan f(2) = 8 bo'lgani uchun f⁻¹(8) = 2, f(0) = 2 bo'lgani uchun esa f⁻¹(2) = 0. Ayirma 2 − 0 = 2 ga teng. 6 — teskari funksiya o'rniga qiymatlarni ayirish, ya'ni 8 − 2 ni hisoblash xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#f48a7431"
+    },
+    {
+      "q": "Do'konda 2 kg guruch 26000 so'm, 3 kg guruch 39000 so'm, 5 kg guruch 65000 so'm turadi. Xaridor 52000 so'm to'lagan bo'lsa, teskari bog'lanish orqali necha kilogramm olganini aniqlang.",
+      "v": [
+        "5 kg",
+        "6 kg",
+        "3 kg",
+        "4 kg"
+      ],
+      "t": 3,
+      "izoh": "Avval bir kilogramm narxi topiladi: 26000 : 2 = 13000 so'm, bu 39000 : 3 va 65000 : 5 natijalari bilan mos tushadi. Teskari bog'lanish narxdan massani beradi: 52000 : 13000 = 4 kg. 5 kg — 65000 so'mga, 3 kg esa 39000 so'mga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#2797d78f"
+    },
+    {
+      "q": "f va g teskarilanuvchi funksiyalar bo'lsa, (f∘g)⁻¹ kompozitsiyaning teskarisi qanday formula bilan hisoblanadi va amallar tartibi qanday o'zgaradi?",
+      "v": [
+        "g⁻¹∘f⁻¹",
+        "f⁻¹∘g⁻¹",
+        "f⁻¹·g⁻¹",
+        "(f·g)⁻¹"
+      ],
+      "t": 0,
+      "izoh": "Kompozitsiya avval g ni, so'ng f ni qo'llaydi. Uni bekor qilish uchun amallar teskari tartibda yechiladi: avval f ning ta'siri, keyin g niki olib tashlanadi. Shuning uchun (f∘g)⁻¹ = g⁻¹∘f⁻¹ bo'ladi. Tartibni saqlab qolish — eng ko'p uchraydigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kompozitsiya-teskarisi",
+      "id": "matematika_funk_m12-teskari-funksiya#71afbc47"
+    },
+    {
+      "q": "f(x) = x + 4 va g(x) = 3x funksiyalar berilgan. h(x) = f(g(x)) kompozitsiya uchun teskari funksiyani toping.",
+      "v": [
+        "(x + 4)/3",
+        "(x − 4)/3",
+        "3x − 4",
+        "x/3 − 4"
+      ],
+      "t": 1,
+      "izoh": "Avval kompozitsiyani tuzamiz: h(x) = f(g(x)) = f(3x) = 3x + 4. Endi y = 3x + 4 tenglikdan 3x = y − 4 va x = (y − 4)/3. Demak h⁻¹(x) = (x − 4)/3. x/3 − 4 — 3 ga bo'lishni faqat x ga qo'llash, ya'ni qavsni unutish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompozitsiya-teskarisi",
+      "id": "matematika_funk_m12-teskari-funksiya#b3fcacb7"
+    },
+    {
+      "q": "Ustaxonada avval x metr mato 4 ga bo'linadi, so'ng natijaga 7 qo'shiladi. Bu ikki amalni bekor qiluvchi teskari amallar ketma-ketligini ko'rsating.",
+      "v": [
+        "Avval 4 ga ko'paytiriladi, so'ng 7 ayiriladi",
+        "Avval 7 qo'shiladi, so'ng 4 ga bo'linadi",
+        "Avval 7 ayiriladi, so'ng 4 ga ko'paytiriladi",
+        "Avval 4 ga bo'linadi, so'ng 7 ayiriladi"
+      ],
+      "t": 2,
+      "izoh": "Amallar ketma-ketligi f(x) = x/4 + 7 formulaga mos keladi. Teskarisi har bir amalni teskarisi bilan va teskari tartibda bajaradi: avval oxirgi amal, ya'ni 7 ni qo'shish bekor qilinadi, so'ng 4 ga bo'lish bekor qilinadi. Demak avval 7 ayiriladi, keyin 4 ga ko'paytiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kompozitsiya-teskarisi",
+      "id": "matematika_funk_m12-teskari-funksiya#7ed8ca0b"
+    },
+    {
+      "q": "f(x) = 2x − 1 va g(x) = x³ funksiyalar berilgan bo'lsa, (g∘f)⁻¹(27) qiymatini hisoblang.",
+      "v": [
+        "14",
+        "3",
+        "5",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Avval kompozitsiya tuziladi: (g∘f)(x) = g(f(x)) = (2x − 1)³. Teskari qiymatni topish uchun (2x − 1)³ = 27 tenglama yechiladi: 2x − 1 = 3, bundan 2x = 4 va x = 2. 3 — kub ildizda to'xtab qolish, 14 esa faqat chiziqli qismni teskarilash xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kompozitsiya-teskarisi",
+      "id": "matematika_funk_m12-teskari-funksiya#37a5420f"
+    },
+    {
+      "q": "f(x) = 4x − 9 funksiya berilgan. Quyidagi nuqtalardan qaysi biri uning teskarisi f⁻¹ ning grafigiga tegishli bo'ladi?",
+      "v": [
+        "(5; 11)",
+        "(11; 5)",
+        "(11; 35)",
+        "(11; 20)"
+      ],
+      "t": 1,
+      "izoh": "Avval teskari funksiyani tuzamiz: y = 4x − 9 dan x = (y + 9)/4, ya'ni f⁻¹(x) = (x + 9)/4. Nuqtaning ordinatasi shu formuladan chiqishi kerak: (11 + 9)/4 = 5, demak (11; 5) mos keladi. (5; 11) — asl f grafigining nuqtasi, (11; 20) esa 4 ga bo'lishni unutish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-nuqta-tegishli",
+      "id": "matematika_funk_m12-teskari-funksiya#64c833e7"
+    },
+    {
+      "q": "y = f⁻¹(x) grafigi (−6; 2) nuqtadan o'tadi. U holda asl f funksiya haqida qaysi tenglik o'rinli bo'ladi?",
+      "v": [
+        "f(2) = −6",
+        "f(−6) = 2",
+        "f(2) = 6",
+        "f(−2) = 6"
+      ],
+      "t": 0,
+      "izoh": "Teskari funksiya grafigidagi (−6; 2) nuqta f⁻¹(−6) = 2 ekanini bildiradi. Ta'rifga ko'ra bu tenglik asl funksiyada f(2) = −6 ko'rinishini oladi. f(−6) = 2 — koordinatalarni almashtirmaslik, f(2) = 6 esa manfiy ishorani tushirib qoldirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-nuqta-tegishli",
+      "id": "matematika_funk_m12-teskari-funksiya#f084563b"
+    },
+    {
+      "q": "Anvar y = f(x) grafigidan foydalanib, teskari funksiya grafigi (8; −1) nuqtadan o'tishini tekshirmoqchi. U qaysi tenglikni tekshirishi kerak?",
+      "v": [
+        "f(8) = −1",
+        "f⁻¹(−1) = 8",
+        "f(−1) = 8",
+        "f(1) = −8"
+      ],
+      "t": 2,
+      "izoh": "Teskari funksiya grafigidagi (8; −1) nuqta f⁻¹(8) = −1 degani. Bu tenglik asl funksiyada f(−1) = 8 ko'rinishiga o'tadi. Shuning uchun Anvar y = f(x) grafigida abssissasi −1 bo'lgan nuqtaning ordinatasi 8 ga tengligini tekshirishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-nuqta-tegishli",
+      "id": "matematika_funk_m12-teskari-funksiya#d201031a"
+    },
+    {
+      "q": "f(x) = √(x + 1) funksiyaning grafigi (8; 3) nuqtadan o'tadi. Teskari funksiya grafigidagi mos nuqtani toping va uni formula bilan tasdiqlang.",
+      "v": [
+        "(8; 3), chunki nuqta o'zgarmaydi",
+        "(3; 3), chunki simmetriya y = x chizig'ida",
+        "(−3; 8), chunki ishora almashadi",
+        "(3; 8), chunki f⁻¹(x) = x² − 1 va 3² − 1 = 8"
+      ],
+      "t": 3,
+      "izoh": "f(8) = √9 = 3 bo'lgani uchun grafik haqiqatan (8; 3) nuqtadan o'tadi. Teskari funksiyada koordinatalar o'rin almashadi va (3; 8) nuqta hosil bo'ladi. Buni formula bilan tekshiramiz: y = √(x + 1) dan x = y² − 1, ya'ni f⁻¹(x) = x² − 1 va 3² − 1 = 8. Natija mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-nuqta-tegishli",
+      "id": "matematika_funk_m12-teskari-funksiya#e11525e7"
+    },
+    {
+      "q": "O'suvchi f funksiya va uning teskarisi f⁻¹ grafiklari kesishsa, kesishish nuqtalari haqida qanday aniq xulosa chiqarish mumkin?",
+      "v": [
+        "Ular y = x chiziqda yotadi, ya'ni f(x) = x tenglamani qanoatlantiradi",
+        "Ular albatta Ox o'qida yotadi",
+        "Ular faqat koordinata boshida bo'lishi mumkin",
+        "Kesishish nuqtasi umuman mavjud bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Agar (a; b) nuqta ikkala grafikka tegishli bo'lsa, f(a) = b va f⁻¹(a) = b, ya'ni f(b) = a bo'ladi. O'suvchi funksiyada a < b bo'lsa f(a) < f(b), bundan b < a chiqib qarama-qarshilik hosil bo'ladi. Demak a = b va nuqta y = x chizig'ida yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesishish-y-teng-x",
+      "id": "matematika_funk_m12-teskari-funksiya#16acf48e"
+    },
+    {
+      "q": "f(x) = 3x − 8 funksiya va uning teskarisi grafiklari kesishadigan nuqtaning koordinatalarini toping.",
+      "v": [
+        "(8; 8)",
+        "(4; 4)",
+        "(2; 2)",
+        "(0; 0)"
+      ],
+      "t": 1,
+      "izoh": "O'suvchi funksiya uchun kesishish nuqtasi y = x chizig'ida yotadi, shuning uchun f(x) = x tenglama yechiladi: 3x − 8 = x. Bundan 2x = 8 va x = 4, ya'ni nuqta (4; 4). (8; 8) — ozod hadni to'g'ridan-to'g'ri javob deb olish, (2; 2) esa 8 ni 4 ga bo'lish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishish-y-teng-x",
+      "id": "matematika_funk_m12-teskari-funksiya#c71ef527"
+    },
+    {
+      "q": "Bir korxonada narx modeli p(x) = 0,5x + 20 ko'rinishida berilgan. Model va uning teskarisi grafiklari qaysi nuqtada kesishadi?",
+      "v": [
+        "(20; 20)",
+        "(10; 10)",
+        "(40; 40)",
+        "(60; 60)"
+      ],
+      "t": 2,
+      "izoh": "Chiziqli o'suvchi model uchun kesishish y = x chizig'ida bo'ladi, shuning uchun p(x) = x tenglama yechiladi: 0,5x + 20 = x. Bundan 20 = 0,5x va x = 40, ya'ni nuqta (40; 40). (20; 20) — ozod hadni javob deb olish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishish-y-teng-x",
+      "id": "matematika_funk_m12-teskari-funksiya#a9f25776"
+    },
+    {
+      "q": "f(x) = 12 − x funksiya va uning teskarisi ustma-ust tushadi. Bu holda ikki grafikning kesishish to'plami nimadan iborat bo'ladi?",
+      "v": [
+        "Bitta nuqta (6; 6)",
+        "Bo'sh to'plam",
+        "y = x to'g'ri chiziq",
+        "Butun y = 12 − x to'g'ri chiziq"
+      ],
+      "t": 3,
+      "izoh": "f(f(x)) = 12 − (12 − x) = x bo'lgani uchun f o'ziga teskari, ya'ni f⁻¹ = f. Bir xil ikki funksiyaning grafiklari ustma-ust tushadi, demak ular butun chiziq bo'ylab kesishadi. Kesishish to'plami y = 12 − x to'g'ri chiziqning o'zi bo'ladi, faqat (6; 6) nuqta emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesishish-y-teng-x",
+      "id": "matematika_funk_m12-teskari-funksiya#6cfc6b0c"
+    },
+    {
+      "q": "Do'konda x dona daftar uchun to'lov C(x) = 5000x + 10000 so'm, bunda 10000 so'm sumka narxi. Xaridor jami 60000 so'm to'lagan bo'lsa, nechta daftar olgan?",
+      "v": [
+        "12",
+        "10",
+        "14",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Teskari bog'lanish to'lovdan daftarlar sonini beradi. 5000x + 10000 = 60000 tenglamani yechamiz: 5000x = 50000, bundan x = 10 dona. 12 — sumka narxini ayirmaslik, 14 — 10000 ni qo'shib yuborish, 5 esa 50000 ni sumka narxiga bo'lish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#a633b82b"
+    },
+    {
+      "q": "Kommunal to'lov T(m) = 1200m + 15000 so'm formula bilan hisoblanadi, bunda m — sarflangan kub metr suv. To'lovga ko'ra suv miqdorini beruvchi teskari formulani yozing.",
+      "v": [
+        "m = (T − 15000)/1200",
+        "m = T/1200 − 15000",
+        "m = (T + 15000)/1200",
+        "m = 1200T − 15000"
+      ],
+      "t": 0,
+      "izoh": "T = 1200m + 15000 tenglikni m ga nisbatan yechamiz: 1200m = T − 15000, bundan m = (T − 15000)/1200. Bu to'lovdan suv miqdorini beruvchi teskari formula. m = T/1200 − 15000 — bo'lishni faqat bitta hadga qo'llash, (T + 15000)/1200 esa ishorani almashtirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#fa019424"
+    },
+    {
+      "q": "Kitobning tannarxiga 15 foiz ustama qo'shilgach, sotuv narxi 92000 so'm bo'ldi. Teskari hisob yordamida boshlang'ich tannarxni toping.",
+      "v": [
+        "78200 so'm",
+        "105800 so'm",
+        "13800 so'm",
+        "80000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Ustama qo'shilgach narx 1,15 marta oshgan, ya'ni 1,15·p = 92000. Bundan p = 92000 : 1,15 = 80000 so'm. 78200 — 92000 dan 15 foiz ayirish xatosi, chunki foiz kichikroq asosdan olinishi kerak edi. 13800 esa faqat ustamaning o'zini hisoblash natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-narx-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#e8ca2b6b"
+    },
+    {
+      "q": "Tadbirkorning x dona mahsulot sotgandagi foydasi P(x) = 12000x − 300000 so'm. Foyda 900000 so'mga yetishi uchun nechta dona sotilishi kerak?",
+      "v": [
+        "100",
+        "75",
+        "50",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "Teskari bog'lanish foydadan sotuv sonini beradi. 12000x − 300000 = 900000 tenglamadan 12000x = 1200000 va x = 100 dona. 75 — doimiy xarajatni hisobga olmaslik, 50 — qo'shish o'rniga ayirish, 25 esa faqat xarajatni qoplaydigan sonni topish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-teskari",
+      "id": "matematika_funk_m12-teskari-funksiya#0467770f"
+    },
+    {
+      "q": "Farengeyt va Selsiy shkalalari F = 1,8C + 32 formula bilan bog'langan. Selsiy qiymatini Farengeytdan topuvchi teskari formulani ko'rsating.",
+      "v": [
+        "C = (F + 32)/1,8",
+        "C = F/1,8 − 32",
+        "C = 1,8F − 32",
+        "C = (F − 32)/1,8"
+      ],
+      "t": 3,
+      "izoh": "F = 1,8C + 32 tenglikni C ga nisbatan yechamiz: 1,8C = F − 32, bundan C = (F − 32)/1,8. Bu ikki shkala o'zaro teskari funksiyalar ekanini ko'rsatadi. C = F/1,8 − 32 — bo'lishni faqat bitta hadga qo'llash, (F + 32)/1,8 esa ishorani almashtirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-harorat-olchov",
+      "id": "matematika_funk_m12-teskari-funksiya#65f50d53"
+    },
+    {
+      "q": "Havo harorati 95 daraja Farengeyt deb e'lon qilindi. Teskari formuladan foydalanib, bu necha daraja Selsiyga to'g'ri kelishini hisoblang.",
+      "v": [
+        "35",
+        "63",
+        "203",
+        "139"
+      ],
+      "t": 0,
+      "izoh": "Teskari formula C = (F − 32)/1,8 ko'rinishida bo'ladi. Qiymatni qo'yamiz: (95 − 32)/1,8 = 63/1,8 = 35 daraja Selsiy. 63 — ayirishdan keyin bo'lishni unutish, 203 — teskari formula o'rniga to'g'ridan-to'g'ri F = 1,8C + 32 ni qo'llash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-harorat-olchov",
+      "id": "matematika_funk_m12-teskari-funksiya#17f92c0b"
+    },
+    {
+      "q": "Bir mamlakatda masofa millarda o'lchanadi va 1 mil taxminan 1,6 km ga teng. Kilometrdan milga o'tkazuvchi teskari bog'lanish qanday formula bilan beriladi?",
+      "v": [
+        "m = 1,6k",
+        "m = k + 1,6",
+        "m = k/1,6",
+        "m = 1,6/k"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri bog'lanish k = 1,6m ko'rinishida, ya'ni millar kilometrga aylantiriladi. Teskarisini topish uchun m ga nisbatan yechamiz: m = k/1,6. m = 1,6k — bog'lanish yo'nalishini chalkashtirish, m = 1,6/k esa kasrni ag'darib yuborish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-harorat-olchov",
+      "id": "matematika_funk_m12-teskari-funksiya#c7556aca"
+    },
+    {
+      "q": "Suv o'lchagichning ko'rsatkichi s = 0,25v + 3 bo'lib, v — litrdagi hajm. Ko'rsatkich 13 bo'lganda idishdagi suv hajmini toping.",
+      "v": [
+        "52",
+        "10",
+        "2,5",
+        "40"
+      ],
+      "t": 3,
+      "izoh": "Teskari bog'lanish ko'rsatkichdan hajmni beradi. 0,25v + 3 = 13 tenglamadan 0,25v = 10, bundan v = 10 : 0,25 = 40 litr. 52 — uchni ayirmasdan bo'lish, 10 — ayirishdan keyin to'xtab qolish, 2,5 esa bo'lish o'rniga ko'paytirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harorat-olchov",
+      "id": "matematika_funk_m12-teskari-funksiya#c4f52a53"
+    },
+    {
+      "q": "Avtobus doimiy 60 km/soat tezlik bilan yuradi va bosib o'tgan masofa S = 60t formula bilan beriladi. Masofaga ko'ra vaqtni beruvchi teskari funksiyani yozing.",
+      "v": [
+        "t = S/60",
+        "t = 60S",
+        "t = S − 60",
+        "t = 60/S"
+      ],
+      "t": 0,
+      "izoh": "S = 60t tenglikni t ga nisbatan yechamiz va t = S/60 hosil bo'ladi. Bu masofadan vaqtni beruvchi teskari funksiya. Masalan 180 km uchun t = 3 soat chiqadi. t = 60S — bog'lanish yo'nalishini chalkashtirish, t = 60/S esa kasrni ag'darib yuborish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masofa-vaqt",
+      "id": "matematika_funk_m12-teskari-funksiya#812b81d7"
+    },
+    {
+      "q": "Poyezd yo'lga chiqqach qolgan masofa d(t) = 344 − 172t km formula bilan beriladi. Qolgan masofa 86 km bo'lganda necha soat yurilgan?",
+      "v": [
+        "2 soat",
+        "1,5 soat",
+        "0,5 soat",
+        "2,5 soat"
+      ],
+      "t": 1,
+      "izoh": "Teskari bog'lanish qolgan masofadan vaqtni beradi. 344 − 172t = 86 tenglamadan 172t = 258, bundan t = 1,5 soat. 2 soat — butun yo'lni bosib o'tish vaqti, 0,5 soat — 86 ni 172 ga bo'lish, 2,5 soat esa ayirish o'rniga qo'shish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-masofa-vaqt",
+      "id": "matematika_funk_m12-teskari-funksiya#9bcff42e"
+    },
+    {
+      "q": "Sayohatchi yo'lga chiqishdan oldin 2 soat tayyorgarlik ko'radi, umumiy vaqt esa t = 2 + s/6 soat. Vaqtga ko'ra masofani beruvchi teskari formulani toping.",
+      "v": [
+        "s = 6t − 2",
+        "s = (t − 2)/6",
+        "s = 6t + 12",
+        "s = 6(t − 2)"
+      ],
+      "t": 3,
+      "izoh": "t = 2 + s/6 tenglikni s ga nisbatan yechamiz: s/6 = t − 2, ikkala tomon 6 ga ko'paytiriladi va s = 6(t − 2) chiqadi. s = 6t − 2 — 6 ga ko'paytirishni faqat bitta hadga qo'llash, s = 6t + 12 esa qavsni ochishda ishorani almashtirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-masofa-vaqt",
+      "id": "matematika_funk_m12-teskari-funksiya#d7f3735d"
+    },
+    {
+      "q": "Mashina 90 km/soat tezlikda ketmoqda va sayohat vaqti 2 soatdan 5 soatgacha o'zgaradi. Masofaga ko'ra vaqtni beruvchi teskari funksiyaning aniqlanish sohasi qanday bo'ladi?",
+      "v": [
+        "[2; 5]",
+        "[90; 450]",
+        "[180; 450]",
+        "[180; 900]"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri bog'lanish S = 90t bo'lib, t = 2 da S = 180, t = 5 da esa S = 450 km. Demak masofa [180; 450] oraliqda o'zgaradi. Teskari funksiyaning argumenti aynan masofa bo'lgani uchun uning aniqlanish sohasi shu oraliqqa teng. [2; 5] — sohalarni almashtirmaslik xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-masofa-vaqt",
+      "id": "matematika_funk_m12-teskari-funksiya#d34c5547"
+    },
+    {
+      "q": "Sexda 90 ta tayyor stul bor edi va har kuni yana 45 tadan yasaladi. Jami 675 ta stul bo'lishi uchun necha kun ishlash kerak?",
+      "v": [
+        "13",
+        "15",
+        "17",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Omborda 90 ta stul bo'lgani uchun bog'lanish N = 45n + 90 ko'rinishida. Teskari bog'lanish sondan kunni beradi: 45n + 90 = 675, bundan 45n = 585 va n = 13 kun. 15 — dastlabki zaxirani ayirmaslik, 17 — 90 ni qo'shib yuborish, 2 esa faqat zaxirani bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_funk_m12-teskari-funksiya#85aeec8e"
+    },
+    {
+      "q": "Ishchi bir soatda 12 ta detal tayyorlaydi va bajarilgan ish D = 12h formula bilan beriladi. Teskari funksiya nimani anglatadi va qanday yoziladi?",
+      "v": [
+        "h = 12D — detallar sonidan vaqt",
+        "h = D − 12 — detallar sonidan vaqt",
+        "h = 12/D — vaqtdan unum",
+        "h = D/12 — detallar sonidan sarflangan vaqt"
+      ],
+      "t": 3,
+      "izoh": "D = 12h tenglikni h ga nisbatan yechamiz va h = D/12 hosil bo'ladi. Teskari funksiya ish hajmidan sarflangan vaqtni beradi, ya'ni argument bilan qiymat rollari almashadi. Masalan 96 ta detal uchun h = 8 soat kerak. h = 12D — yo'nalishni chalkashtirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_funk_m12-teskari-funksiya#5349e212"
+    },
+    {
+      "q": "Brigadaning kunlik unumi U = 32 + 8k detal, bunda k — qo'shimcha ishchilar soni. Unum 120 detalga yetishi uchun nechta qo'shimcha ishchi kerak bo'ladi?",
+      "v": [
+        "15",
+        "11",
+        "19",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Teskari bog'lanish unumdan ishchilar sonini beradi: 32 + 8k = 120, bundan 8k = 88 va k = 11 ta. 15 — asosiy 32 detalni ayirmaslik, 19 — uni qo'shib yuborish, 4 esa faqat asosiy unumni 8 ga bo'lish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_funk_m12-teskari-funksiya#2df9632d"
+    },
+    {
+      "q": "Bir dala 4 ta traktor bilan 6 kunda haydaladi va traktorlar soni bilan vaqt teskari proporsional bog'langan. Bu bog'lanishning teskari funksiyasi haqida qanday xulosa to'g'ri?",
+      "v": [
+        "Teskari funksiya mavjud emas, chunki bog'lanish kamayuvchi",
+        "Teskari funksiya chiziqli ko'rinishga o'tadi",
+        "Teskari funksiya n = 24/t ko'rinishida bo'lib, asl bog'lanish bilan bir xil qolipda",
+        "Teskari funksiya n = 24t ko'rinishida bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Ish hajmi doimiy: 4 traktor 6 kun ishlagani uchun jami 24 traktor-kun. Demak t = 24/n va bu bog'lanish qat'iy kamayuvchi, ya'ni teskarilanadi. Teskarisini topsak n = 24/t chiqadi, formula bir xil qolipda qoladi. Kamayuvchilik teskarilanishga to'sqinlik qilmaydi, aksincha uni ta'minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_funk_m12-teskari-funksiya#7a865445"
+    },
+    {
+      "q": "Internet tarifida oylik to'lov A(g) = 24000 + 1500g so'm, bunda g — qo'shimcha gigabaytlar soni. Foydalanuvchi 78000 so'm to'lagan bo'lsa, nechta qo'shimcha gigabayt olgan?",
+      "v": [
+        "52",
+        "68",
+        "16",
+        "36"
+      ],
+      "t": 3,
+      "izoh": "Teskari bog'lanish to'lovdan gigabayt sonini beradi. 24000 + 1500g = 78000 tenglamadan 1500g = 54000, bundan g = 36 gigabayt. 52 — asosiy 24000 so'mni ayirmaslik, 68 — uni qo'shib yuborish, 16 esa faqat asosiy to'lovni bo'lish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tarif-statistika",
+      "id": "matematika_funk_m12-teskari-funksiya#23409ebd"
+    },
+    {
+      "q": "Sinfda test natijasi 100 ballik shkaladan bahoga B = 1 + 0,04b formula bilan o'tkaziladi. Bahosi 3 bo'lgan o'quvchi necha ball to'plagan?",
+      "v": [
+        "50",
+        "75",
+        "100",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "Teskari bog'lanish bahodan ballni beradi. 1 + 0,04b = 3 tenglamadan 0,04b = 2, bundan b = 2 : 0,04 = 50 ball. 75 — birni ayirmaslik, 100 — birni qo'shib yuborish, 25 esa faqat birni 0,04 ga bo'lish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tarif-statistika",
+      "id": "matematika_funk_m12-teskari-funksiya#b391ba51"
+    },
+    {
+      "q": "Aholi soni har yili 3 foizga o'sib, t yildan keyin N = 500000·1,03ᵗ ga teng bo'ladi. Aholi soniga ko'ra vaqtni beruvchi teskari bog'lanishni ko'rsating.",
+      "v": [
+        "t = lg N/lg 500000",
+        "t = lg(N/500000)/lg 1,03",
+        "t = (N − 500000)/1,03",
+        "t = 1,03·lg(N/500000)"
+      ],
+      "t": 1,
+      "izoh": "N = 500000·1,03ᵗ tenglikning ikkala tomonini 500000 ga bo'lamiz: 1,03ᵗ = N/500000. Endi o'nlik logarifm olamiz: t·lg 1,03 = lg(N/500000). Bundan t = lg(N/500000)/lg 1,03. Ko'rsatkichli va logarifmik funksiyalar o'zaro teskari bo'lgani uchun shunday almashtirish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tarif-statistika",
+      "id": "matematika_funk_m12-teskari-funksiya#cdfb2cb1"
+    },
+    {
+      "q": "Tadqiqotda daromad va soliq o'rtasidagi bog'lanish jadval bilan berilgan, ammo ikki xil daromadga bir xil soliq to'g'ri kelgan. Bu holat teskari funksiya haqida nima deydi?",
+      "v": [
+        "Teskari funksiya mavjud, chunki jadvaldagi barcha daromadlar har xil",
+        "Teskari funksiya mavjud, lekin faqat kichik daromadlar uchun",
+        "Teskari funksiya mavjud, chunki soliq miqdori har doim musbat",
+        "Teskari funksiya mavjud emas, chunki bitta soliqdan daromadni bir qiymatli tiklab bo'lmaydi"
+      ],
+      "t": 3,
+      "izoh": "Teskarilanish sharti — har bir qiymatga yagona argument mos kelishi. Bu yerda ikki xil daromadga bir xil soliq to'g'ri kelgan, ya'ni soliq qiymatidan daromadni tiklaganda ikkita javob chiqadi. Shuning uchun bog'lanish o'zaro bir qiymatli emas va teskari funksiya mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tarif-statistika",
+      "id": "matematika_funk_m12-teskari-funksiya#77ef64f3"
+    }
+  ]
+}

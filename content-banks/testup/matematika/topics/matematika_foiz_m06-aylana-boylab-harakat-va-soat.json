@@ -1,0 +1,1609 @@
+{
+  "nom": "Aylana bo'ylab harakat va soat strelkalari",
+  "bolim": "Nisbat, foiz va matnli masalalar",
+  "blok": "foiz",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Aziz va Bekzod 400 m uzunlikdagi aylana stadion trekining bir nuqtasidan bir vaqtda qarama-qarshi yo'nalishda yugurishni boshladi. Azizning tezligi 5 m/s, Bekzodniki 3 m/s. Ular birinchi marta necha soniyadan keyin uchrashadi?",
+      "v": [
+        "200 soniya",
+        "80 soniya",
+        "50 soniya",
+        "25 soniya"
+      ],
+      "t": 2,
+      "izoh": "Qarama-qarshi yo'nalishda yaqinlashish tezligi tezliklar yig'indisiga teng: 5 + 3 = 8 m/s. Birinchi uchrashuvgacha ular birgalikda butun bir aylanani, ya'ni 400 m ni bosib o'tadi. Vaqt: 400 : 8 = 50 soniya. Javob: 50 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchrashish-vaqti-qarama-qarshi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#b158a7ff"
+    },
+    {
+      "q": "Shahar bog'idagi aylana yo'lakning uzunligi 1800 m. Nodira 3 m/s tezlik bilan yuguradi, Sanjar esa 7 m/s tezlik bilan velosipedda unga qarama-qarshi yo'nalishda harakatlanadi. Ikkalasi bir nuqtadan bir vaqtda yo'lga chiqqan bo'lsa, birinchi uchrashuv necha daqiqadan keyin bo'ladi?",
+      "v": [
+        "3 daqiqa",
+        "7,5 daqiqa",
+        "10 daqiqa",
+        "1,5 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Qarama-qarshi harakatda tezliklar qo'shiladi: 3 + 7 = 10 m/s. Uchrashguncha birgalikda bosib o'tiladigan yo'l bir aylanaga teng, ya'ni 1800 m. Vaqt: 1800 : 10 = 180 soniya. Buni daqiqaga aylantiramiz: 180 : 60 = 3 daqiqa. Javob: 3 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchrashish-vaqti-qarama-qarshi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#a17cc6ce"
+    },
+    {
+      "q": "Velotrekning bir aylanasi 250 m. Ikki sportchi bir nuqtadan qarama-qarshi tomonga 12 m/s va 13 m/s tezlik bilan yo'l oldi. Ular birinchi marta necha soniyadan so'ng yonma-yon keladi?",
+      "v": [
+        "250 soniya",
+        "5 soniya",
+        "20 soniya",
+        "10 soniya"
+      ],
+      "t": 3,
+      "izoh": "Yaqinlashish tezligi: 12 + 13 = 25 m/s. Bir nuqtadan qarama-qarshi chiqqanlar birinchi marta uchrashguncha ular birgalikda to'liq bir aylana, ya'ni 250 m yo'l bosadi. Vaqt: 250 : 25 = 10 soniya. Javob: 10 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchrashish-vaqti-qarama-qarshi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#ade047e2"
+    },
+    {
+      "q": "Aylanma avtomobil yo'lining uzunligi 12 km. Yengil avtomobil 45 km/soat, mototsikl esa 35 km/soat tezlik bilan bir nuqtadan qarama-qarshi yo'nalishda harakatlana boshladi. Ular necha daqiqadan keyin uchrashadi?",
+      "v": [
+        "72 daqiqa",
+        "9 daqiqa",
+        "16 daqiqa",
+        "4,5 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Yaqinlashish tezligi: 45 + 35 = 80 km/soat. Uchrashguncha birgalikda 12 km yo'l bosiladi. Vaqt: 12 : 80 = 0,15 soat. Soatni daqiqaga aylantiramiz: 0,15 · 60 = 9 daqiqa. Javob: 9 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchrashish-vaqti-qarama-qarshi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#16ade555"
+    },
+    {
+      "q": "Aylana shaklidagi ko'l atrofidagi so'qmoqning uzunligi 960 m. Malika 1,6 m/s, Zuhra esa 1,4 m/s tezlik bilan bir nuqtadan qarama-qarshi yo'nalishda yura boshladi. Ular birinchi marta necha soniyadan keyin uchrashadi?",
+      "v": [
+        "4800 soniya",
+        "320 soniya",
+        "600 soniya",
+        "160 soniya"
+      ],
+      "t": 1,
+      "izoh": "Yaqinlashish tezligi: 1,6 + 1,4 = 3 m/s. Birinchi uchrashuvgacha ikkalasi birgalikda bir aylana, ya'ni 960 m yo'l bosadi. Vaqt: 960 : 3 = 320 soniya. Javob: 320 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchrashish-vaqti-qarama-qarshi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#f89d1c36"
+    },
+    {
+      "q": "Toshkentdagi 400 m li aylana trekda Anvar 5 m/s, Doston 3 m/s tezlik bilan bir yo'nalishda yuguryapti. Ular bir nuqtadan bir vaqtda start oldi. Anvar Dostonni birinchi marta necha soniyadan keyin bir aylanaga ortda qoldiradi?",
+      "v": [
+        "50 soniya",
+        "80 soniya",
+        "100 soniya",
+        "200 soniya"
+      ],
+      "t": 3,
+      "izoh": "Bir yo'nalishdagi harakatda uzoqlashish tezligi tezliklar ayirmasiga teng: 5 − 3 = 2 m/s. Bir aylanaga ortda qoldirish uchun Anvar Dostondan 400 m ortiq yo'l bosishi kerak. Vaqt: 400 : 2 = 200 soniya. Javob: 200 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvib-otish-vaqti-bir-tomon",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#a926a489"
+    },
+    {
+      "q": "Aylana trekning uzunligi 720 m. Ikki yuguruvchi bir nuqtadan bir yo'nalishda 7,5 m/s va 4,5 m/s tezlik bilan yugurdi. Tez yuguruvchi sekinini birinchi marta necha soniyadan keyin quvib yetadi?",
+      "v": [
+        "240 soniya",
+        "60 soniya",
+        "96 soniya",
+        "120 soniya"
+      ],
+      "t": 0,
+      "izoh": "Bir yo'nalishda harakatlanganda tezliklar ayiriladi: 7,5 − 4,5 = 3 m/s. Quvib yetish uchun tez yuguruvchi bir aylana, ya'ni 720 m ortiq yo'l bosishi kerak. Vaqt: 720 : 3 = 240 soniya. Javob: 240 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvib-otish-vaqti-bir-tomon",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#2afb80bc"
+    },
+    {
+      "q": "Velosiped poygasida 450 m li aylana trekda Jasur 9 m/s, Olim 6 m/s tezlik bilan bir tomonga harakatlanmoqda. Jasur Olimni birinchi marta necha soniyadan keyin bir aylana bilan ortda qoldiradi?",
+      "v": [
+        "30 soniya",
+        "50 soniya",
+        "150 soniya",
+        "75 soniya"
+      ],
+      "t": 2,
+      "izoh": "Uzoqlashish tezligi: 9 − 6 = 3 m/s. Bir aylanaga ortda qoldirish uchun Jasur Olimdan 450 m ortiq yo'l bosishi lozim. Vaqt: 450 : 3 = 150 soniya. Javob: 150 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvib-otish-vaqti-bir-tomon",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#f9d51a7e"
+    },
+    {
+      "q": "Aylanma trassaning uzunligi 6 km. Bir avtomobil 90 km/soat, ikkinchisi 60 km/soat tezlik bilan bir yo'nalishda ketyapti. Tez avtomobil ikkinchisini birinchi marta necha daqiqadan keyin quvib yetadi?",
+      "v": [
+        "12 daqiqa",
+        "2,4 daqiqa",
+        "4 daqiqa",
+        "6 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Tezliklar ayirmasi: 90 − 60 = 30 km/soat. Quvib yetish uchun ortiqcha bosiladigan yo'l bir aylanaga, ya'ni 6 km ga teng. Vaqt: 6 : 30 = 0,2 soat. Daqiqaga o'tkazamiz: 0,2 · 60 = 12 daqiqa. Javob: 12 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvib-otish-vaqti-bir-tomon",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#e98897cd"
+    },
+    {
+      "q": "Bog'dagi aylana yo'lakning uzunligi 1080 m. Shahnoza 4,5 m/s, Gulnora 3,3 m/s tezlik bilan bir yo'nalishda yugurmoqda. Shahnoza Gulnorani birinchi marta necha daqiqadan keyin bir aylanaga ortda qoldiradi?",
+      "v": [
+        "900 daqiqa",
+        "4 daqiqa",
+        "15 daqiqa",
+        "7,5 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Uzoqlashish tezligi: 4,5 − 3,3 = 1,2 m/s. Ortiqcha bosilishi kerak bo'lgan yo'l 1080 m. Vaqt: 1080 : 1,2 = 900 soniya. Soniyani daqiqaga aylantiramiz: 900 : 60 = 15 daqiqa. Javob: 15 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvib-otish-vaqti-bir-tomon",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#e2ae9aaf"
+    },
+    {
+      "q": "Ikki yuguruvchi 500 m li aylana trekning bir nuqtasidan qarama-qarshi yo'nalishda 6 m/s va 4 m/s tezlik bilan yugurdi. Ular uchinchi marta necha soniyadan keyin uchrashadi?",
+      "v": [
+        "50 soniya",
+        "150 soniya",
+        "250 soniya",
+        "750 soniya"
+      ],
+      "t": 1,
+      "izoh": "Yaqinlashish tezligi: 6 + 4 = 10 m/s. Har bir uchrashuv orasida ular birgalikda bitta aylana bosadi, ya'ni har 500 : 10 = 50 soniyada bir marta uchrashadi. Uchinchi uchrashuv 3 · 50 = 150 soniyadan keyin bo'ladi. Javob: 150 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-marta-uchrashish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#9ec1285e"
+    },
+    {
+      "q": "Aylana trekning uzunligi 800 m. Sardor va Ulug'bek bir nuqtadan qarama-qarshi tomonga 9 m/s va 7 m/s tezlik bilan yo'l oldi. Ular beshinchi marta uchrashguncha qancha vaqt o'tadi?",
+      "v": [
+        "50 soniya",
+        "2000 soniya",
+        "200 soniya",
+        "250 soniya"
+      ],
+      "t": 3,
+      "izoh": "Yaqinlashish tezligi: 9 + 7 = 16 m/s. Ketma-ket uchrashuvlar orasidagi vaqt 800 : 16 = 50 soniya. Beshinchi uchrashuv uchun bu vaqtni 5 ga ko'paytiramiz: 5 · 50 = 250 soniya. Javob: 250 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-marta-uchrashish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#732006bd"
+    },
+    {
+      "q": "720 m li aylana trekda Kamola 6 m/s, Nigora 4 m/s tezlik bilan bir yo'nalishda yuguradi. Kamola Nigorani to'rtinchi marta necha soniyadan keyin quvib yetadi?",
+      "v": [
+        "360 soniya",
+        "288 soniya",
+        "1080 soniya",
+        "1440 soniya"
+      ],
+      "t": 3,
+      "izoh": "Bir yo'nalishda tezliklar ayiriladi: 6 − 4 = 2 m/s. Har bir quvib yetish uchun 720 m ortiqcha yo'l kerak, ya'ni 720 : 2 = 360 soniya. To'rtinchi marta quvib yetish 4 · 360 = 1440 soniyadan keyin sodir bo'ladi. Javob: 1440 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-marta-uchrashish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#030f0423"
+    },
+    {
+      "q": "Aylana yo'lakning uzunligi 1200 m. Ikki chang'ichi bir nuqtadan qarama-qarshi yo'nalishda 6,5 m/s va 3,5 m/s tezlik bilan harakatlandi. Ular oltinchi marta uchrashganda startdan necha daqiqa o'tgan bo'ladi?",
+      "v": [
+        "2 daqiqa",
+        "12 daqiqa",
+        "10 daqiqa",
+        "40 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Yaqinlashish tezligi: 6,5 + 3,5 = 10 m/s. Uchrashuvlar orasidagi vaqt 1200 : 10 = 120 soniya. Oltinchi uchrashuv 6 · 120 = 720 soniyadan keyin bo'ladi. Daqiqaga aylantiramiz: 720 : 60 = 12 daqiqa. Javob: 12 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-marta-uchrashish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#9927f961"
+    },
+    {
+      "q": "400 m li aylana trekda Farrux 6 m/s, Shohrux 2 m/s tezlik bilan bir nuqtadan qarama-qarshi yo'nalishda yugurishni boshladi. 10 daqiqa ichida ular necha marta uchrashadi?",
+      "v": [
+        "6 marta",
+        "9 marta",
+        "12 marta",
+        "24 marta"
+      ],
+      "t": 2,
+      "izoh": "Yaqinlashish tezligi: 6 + 2 = 8 m/s. 10 daqiqa 600 soniyaga teng, shu vaqtda ular birgalikda 8 · 600 = 4800 m yo'l bosadi. Har bir uchrashuvga bitta aylana, ya'ni 400 m to'g'ri keladi: 4800 : 400 = 12. Javob: 12 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-vaqtda-uchrashishlar-soni",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#936717ba"
+    },
+    {
+      "q": "Aylana trekning uzunligi 300 m. Ikki yuguruvchi qarama-qarshi yo'nalishda 5 m/s va 4 m/s tezlik bilan bir nuqtadan yugurdi. 5 daqiqa davomida ular necha marta uchrashdi?",
+      "v": [
+        "9 marta",
+        "1 marta",
+        "5 marta",
+        "18 marta"
+      ],
+      "t": 0,
+      "izoh": "Yaqinlashish tezligi: 5 + 4 = 9 m/s. 5 daqiqa 300 soniya, shu vaqtda birgalikda 9 · 300 = 2700 m bosiladi. Uchrashuvlar soni: 2700 : 300 = 9. Javob: 9 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-vaqtda-uchrashishlar-soni",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#773fd46c"
+    },
+    {
+      "q": "500 m li aylana trekda Rustam 7 m/s, Bahodir 5 m/s tezlik bilan bir yo'nalishda yugurmoqda. 20 daqiqa ichida Rustam Bahodirni necha marta quvib yetadi?",
+      "v": [
+        "5 marta",
+        "4 marta",
+        "28 marta",
+        "16 marta"
+      ],
+      "t": 1,
+      "izoh": "Bir yo'nalishda uzoqlashish tezligi: 7 − 5 = 2 m/s. Bitta quvib yetish uchun 500 : 2 = 250 soniya kerak. 20 daqiqa 1200 soniya: 1200 : 250 = 4,8. Butun quvib yetishlar sanaladi, ya'ni 4 marta. Javob: 4 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "berilgan-vaqtda-uchrashishlar-soni",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#da4abfce"
+    },
+    {
+      "q": "Aylana shaklidagi 1000 m li yo'lda ikki velosipedchi qarama-qarshi yo'nalishda 4 m/s va 6 m/s tezlik bilan bir soat davomida harakatlandi. Ular shu vaqt ichida necha marta uchrashdi?",
+      "v": [
+        "36 marta",
+        "7 marta",
+        "21 marta",
+        "72 marta"
+      ],
+      "t": 0,
+      "izoh": "Yaqinlashish tezligi: 4 + 6 = 10 m/s. Bir soat 3600 soniya, shu vaqtda birgalikda 10 · 3600 = 36000 m yo'l bosiladi. Har uchrashuvga 1000 m to'g'ri keladi: 36000 : 1000 = 36. Javob: 36 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-vaqtda-uchrashishlar-soni",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#a6ab3529"
+    },
+    {
+      "q": "Ikki yuguruvchi aylana trekning bir nuqtasidan qarama-qarshi yo'nalishda 6 m/s va 4 m/s tezlik bilan yugurdi va har 40 soniyada bir marta uchrashdi. Trekning uzunligi qancha?",
+      "v": [
+        "80 m",
+        "240 m",
+        "200 m",
+        "400 m"
+      ],
+      "t": 3,
+      "izoh": "Ketma-ket uchrashuvlar orasida ular birgalikda aynan bitta aylana bosadi. Yaqinlashish tezligi: 6 + 4 = 10 m/s. Aylana uzunligi: 10 · 40 = 400 m. Javob: 400 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trek-uzunligini-topish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#42645fcb"
+    },
+    {
+      "q": "Bir yo'nalishda yuguruvchi ikki sportchining tezliklari 8 m/s va 5 m/s. Tezrog'i sekinini har 3 daqiqada bir marta bir aylanaga ortda qoldiradi. Aylana trekning uzunligi necha metr?",
+      "v": [
+        "2340 m",
+        "1440 m",
+        "540 m",
+        "270 m"
+      ],
+      "t": 2,
+      "izoh": "Bir yo'nalishdagi harakatda tezliklar ayirmasi olinadi: 8 − 5 = 3 m/s. Ortda qoldirishlar orasidagi vaqt 3 daqiqa, ya'ni 180 soniya. Aylana uzunligi ortiqcha bosilgan yo'lga teng: 3 · 180 = 540 m. Javob: 540 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trek-uzunligini-topish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#253aae7a"
+    },
+    {
+      "q": "Aylanma yo'lda ikki avtomobil qarama-qarshi yo'nalishda 12 km/soat va 18 km/soat tezlik bilan yurib, har 2 daqiqada bir marta uchrashadi. Aylanma yo'lning uzunligi necha kilometr?",
+      "v": [
+        "0,2 km",
+        "0,6 km",
+        "1 km",
+        "60 km"
+      ],
+      "t": 2,
+      "izoh": "Yaqinlashish tezligi: 12 + 18 = 30 km/soat. Bu tezlikni daqiqaga keltiramiz: 30 : 60 = 0,5 km/daqiqa. Ikki uchrashuv orasidagi 2 daqiqada bitta aylana bosiladi: 0,5 · 2 = 1 km. Javob: 1 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trek-uzunligini-topish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#0ef74bcf"
+    },
+    {
+      "q": "Ikki velosipedchi aylana trekda bir yo'nalishda 9,5 m/s va 7 m/s tezlik bilan harakatlanmoqda. Tez velosipedchi sekinini har 5 daqiqada bir marta quvib yetadi. Trek uzunligi qancha?",
+      "v": [
+        "4950 m",
+        "2850 m",
+        "375 m",
+        "750 m"
+      ],
+      "t": 3,
+      "izoh": "Tezliklar ayirmasi: 9,5 − 7 = 2,5 m/s. Quvib yetishlar orasidagi vaqt 5 daqiqa, ya'ni 300 soniya. Shu vaqtda tez velosipedchi sekinidan ortiqcha bosgan yo'l bir aylanaga teng: 2,5 · 300 = 750 m. Javob: 750 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trek-uzunligini-topish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#cb2d5380"
+    },
+    {
+      "q": "600 m li aylana trekda ikki yuguruvchi bir nuqtadan qarama-qarshi yo'nalishda yugurdi va har 50 soniyada uchrashdi. Ulardan birining tezligi 7 m/s bo'lsa, ikkinchisining tezligi qancha?",
+      "v": [
+        "5 m/s",
+        "12 m/s",
+        "19 m/s",
+        "6 m/s"
+      ],
+      "t": 0,
+      "izoh": "Uchrashuvlar orasida birgalikda bir aylana bosiladi, demak tezliklar yig'indisi 600 : 50 = 12 m/s. Ikkinchi tezlikni topish uchun yig'indidan ma'lumini ayiramiz: 12 − 7 = 5 m/s. Javob: 5 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomalum-tezlikni-topish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#9db6f714"
+    },
+    {
+      "q": "Aylana trekning uzunligi 900 m. Ikki velosipedchi bir yo'nalishda harakatlanmoqda va tezrog'i sekinini har 300 soniyada bir marta quvib yetadi. Tez velosipedchining tezligi 8,5 m/s bo'lsa, ikkinchisiniki qancha?",
+      "v": [
+        "11,5 m/s",
+        "5,5 m/s",
+        "3 m/s",
+        "4,25 m/s"
+      ],
+      "t": 1,
+      "izoh": "Quvib yetishlar orasida ortiqcha bosilgan yo'l bir aylanaga teng, demak tezliklar ayirmasi 900 : 300 = 3 m/s. Sekin velosipedchining tezligi: 8,5 − 3 = 5,5 m/s. Javob: 5,5 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomalum-tezlikni-topish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#04047196"
+    },
+    {
+      "q": "Uzunligi 1,2 km bo'lgan aylanma yo'lda avtomobil va mototsikl qarama-qarshi yo'nalishda harakatlanib, har daqiqada bir marta uchrashadi. Avtomobilning tezligi 42 km/soat bo'lsa, mototsiklniki qancha?",
+      "v": [
+        "30 km/soat",
+        "114 km/soat",
+        "72 km/soat",
+        "18 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Bir daqiqada birgalikda 1,2 km bosiladi, demak yaqinlashish tezligi 1,2 km/daqiqa. Soatga keltiramiz: 1,2 · 60 = 72 km/soat. Mototsikl tezligi: 72 − 42 = 30 km/soat. Javob: 30 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-tezlikni-topish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#3da30db4"
+    },
+    {
+      "q": "750 m li aylana trekda ikki yuguruvchi bir yo'nalishda yuguradi. Tez yuguruvchi sekinini har 250 soniyada bir aylanaga ortda qoldiradi. Sekin yuguruvchining tezligi 4 m/s bo'lsa, tez yuguruvchiniki qancha?",
+      "v": [
+        "1 m/s",
+        "7 m/s",
+        "3 m/s",
+        "5,5 m/s"
+      ],
+      "t": 1,
+      "izoh": "Ortda qoldirishlar orasida ortiqcha bosilgan yo'l bir aylana: tezliklar ayirmasi 750 : 250 = 3 m/s. Tez yuguruvchining tezligi sekinnikidan 3 m/s ortiq: 4 + 3 = 7 m/s. Javob: 7 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomalum-tezlikni-topish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#30a4ed39"
+    },
+    {
+      "q": "Aylana trekning uzunligi 400 m. Ikki yuguruvchi qarama-qarshi yo'nalishda yugurganda har 40 soniyada, bir yo'nalishda yugurganda esa har 200 soniyada uchrashadi. Tez yuguruvchining tezligini toping.",
+      "v": [
+        "4 m/s",
+        "10 m/s",
+        "6 m/s",
+        "8 m/s"
+      ],
+      "t": 2,
+      "izoh": "Qarama-qarshi holatdan tezliklar yig'indisi topiladi: 400 : 40 = 10 m/s. Bir yo'nalishdagi holatdan ayirma topiladi: 400 : 200 = 2 m/s. Sistemani yechamiz: tez yuguruvchi tezligi (10 + 2) : 2 = 6 m/s. Javob: 6 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-shartdan-tezliklar-sistemasi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#12111da9"
+    },
+    {
+      "q": "900 m li aylana trekda ikki chopqir qarama-qarshi yo'nalishda har 45 soniyada, bir yo'nalishda esa har 180 soniyada uchrashadi. Sekin chopqirning tezligi qancha?",
+      "v": [
+        "12,5 m/s",
+        "5 m/s",
+        "15 m/s",
+        "7,5 m/s"
+      ],
+      "t": 3,
+      "izoh": "Tezliklar yig'indisi: 900 : 45 = 20 m/s. Tezliklar ayirmasi: 900 : 180 = 5 m/s. Sekin chopqirning tezligi yig'indi va ayirmaning yarim farqiga teng: (20 − 5) : 2 = 7,5 m/s. Javob: 7,5 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-shartdan-tezliklar-sistemasi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#23f4535c"
+    },
+    {
+      "q": "Aylana trekda ikki velosipedchi qarama-qarshi yo'nalishda har 80 soniyada, bir yo'nalishda esa har 400 soniyada uchrashadi. Ularning tezliklari nisbati qanday?",
+      "v": [
+        "5 : 1",
+        "5 : 4",
+        "2 : 1",
+        "3 : 2"
+      ],
+      "t": 3,
+      "izoh": "Trek uzunligi L bo'lsin. Tezliklar yig'indisi L : 80, ayirmasi L : 400. Yig'indining ayirmaga nisbati 400 : 80 = 5, ya'ni (v₁ + v₂) = 5(v₁ − v₂). Bundan 4v₁ = 6v₂, demak v₁ : v₂ = 3 : 2. Javob: 3 : 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-shartdan-tezliklar-sistemasi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#8b91cc88"
+    },
+    {
+      "q": "560 m li aylana trekda ikki velosipedchi qarama-qarshi yo'nalishda har 35 soniyada, bir yo'nalishda esa har 140 soniyada uchrashadi. Tez velosipedchining tezligi qancha?",
+      "v": [
+        "6 m/s",
+        "16 m/s",
+        "10 m/s",
+        "12 m/s"
+      ],
+      "t": 2,
+      "izoh": "Tezliklar yig'indisi: 560 : 35 = 16 m/s. Tezliklar ayirmasi: 560 : 140 = 4 m/s. Tez velosipedchining tezligi: (16 + 4) : 2 = 10 m/s. Javob: 10 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-shartdan-tezliklar-sistemasi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#5c250396"
+    },
+    {
+      "q": "Aziza va Nilufar 600 m li aylana trekning A nuqtasidan qarama-qarshi yo'nalishda 8 m/s va 4 m/s tezlik bilan yugura boshladi. Ular birinchi marta uchrashganda Nilufar necha metr yo'l bosgan bo'ladi?",
+      "v": [
+        "400 m",
+        "200 m",
+        "300 m",
+        "600 m"
+      ],
+      "t": 1,
+      "izoh": "Yaqinlashish tezligi: 8 + 4 = 12 m/s. Birinchi uchrashuv vaqti: 600 : 12 = 50 soniya. Shu vaqtda Nilufar o'z tezligi bilan 4 · 50 = 200 m yo'l bosadi. Javob: 200 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchrashish-nuqtasining-joylashuvi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#150b0796"
+    },
+    {
+      "q": "400 m li aylana trekda ikki yuguruvchi bir nuqtadan bir yo'nalishda 7 m/s va 5 m/s tezlik bilan yugurdi. Tez yuguruvchi sekinini birinchi marta quvib yetganda u nechta to'liq aylanani tugatgan bo'ladi?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "4 ta",
+        "7 ta"
+      ],
+      "t": 0,
+      "izoh": "Tezliklar ayirmasi: 7 − 5 = 2 m/s, quvib yetish vaqti 400 : 2 = 200 soniya. Shu vaqtda tez yuguruvchi 7 · 200 = 1400 m yo'l bosadi. Aylanalar soni: 1400 : 400 = 3,5, ya'ni 3 ta to'liq aylana tugallangan. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchrashish-nuqtasining-joylashuvi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#0226c327"
+    },
+    {
+      "q": "900 m uzunlikdagi aylana yo'lakning B nuqtasidan ikki velosipedchi qarama-qarshi yo'nalishda 10 m/s va 5 m/s tezlik bilan yo'lga chiqdi. Birinchi uchrashuv nuqtasi B dan tez velosipedchining harakat yo'nalishi bo'yicha necha metr uzoqlikda bo'ladi?",
+      "v": [
+        "300 m",
+        "600 m",
+        "450 m",
+        "900 m"
+      ],
+      "t": 1,
+      "izoh": "Yaqinlashish tezligi: 10 + 5 = 15 m/s. Uchrashuv vaqti: 900 : 15 = 60 soniya. Tez velosipedchi shu vaqtda 10 · 60 = 600 m yo'l bosadi, demak uchrashuv nuqtasi B dan uning yo'nalishi bo'yicha 600 m uzoqlikda. Javob: 600 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchrashish-nuqtasining-joylashuvi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#502f6d79"
+    },
+    {
+      "q": "800 m li aylana trekning diametral qarama-qarshi ikki nuqtasidan Otabek va Sherzod bir-biriga qarab 6 m/s va 4 m/s tezlik bilan yugura boshladi. Ular necha soniyadan keyin uchrashadi?",
+      "v": [
+        "40 soniya",
+        "80 soniya",
+        "200 soniya",
+        "20 soniya"
+      ],
+      "t": 0,
+      "izoh": "Ular bir aylanani emas, balki uni ajratib turgan yoyni bosib o'tishi kerak. Diametral qarama-qarshi nuqtalar orasidagi yoy yarim aylanaga teng: 800 : 2 = 400 m. Yaqinlashish tezligi 6 + 4 = 10 m/s. Vaqt: 400 : 10 = 40 soniya. Javob: 40 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "boshlangich-siljish-bilan-harakat",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#8a39397e"
+    },
+    {
+      "q": "Yuguruvchi uzunligi 540 m bo'lgan aylana trekni 6 m/s o'zgarmas tezlik bilan aylanib chiqadi. Uning bir marta aylanish davri necha soniya?",
+      "v": [
+        "540 soniya",
+        "45 soniya",
+        "90 soniya",
+        "3240 soniya"
+      ],
+      "t": 2,
+      "izoh": "Aylanish davri bir aylanani bosib o'tish vaqtiga teng, ya'ni T = L : v. Bu yerda L = 540 m, v = 6 m/s. Demak T = 540 : 6 = 90 soniya. Javob: 90 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylanish-davri-va-chastota",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#5ceb540c"
+    },
+    {
+      "q": "Velosipedchi uzunligi 2 km bo'lgan aylana trassani 5 daqiqada bir marta aylanib chiqadi. Uning tezligi necha km/soat?",
+      "v": [
+        "0,4 km/soat",
+        "10 km/soat",
+        "12 km/soat",
+        "24 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Bir aylanish davri 5 daqiqa, ya'ni 5 : 60 = 1/12 soat. Tezlik yo'lning vaqtga nisbati: v = 2 : (1/12) = 2 · 12 = 24 km/soat. Javob: 24 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylanish-davri-va-chastota",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#b3b21409"
+    },
+    {
+      "q": "Ikki yuguruvchi aylana trekni mos ravishda 60 soniya va 80 soniyada aylanib chiqadi. Ular start chizig'idan bir vaqtda yugurishni boshlagan bo'lsa, ikkalasi ham start chizig'ida yana birinchi marta qachon birga bo'ladi?",
+      "v": [
+        "4 daqiqa",
+        "2 daqiqa 20 soniya",
+        "20 soniya",
+        "80 soniya"
+      ],
+      "t": 0,
+      "izoh": "Har bir yuguruvchi start chizig'ida o'z davrining karralarida bo'ladi: birinchisi 60, 120, 180, 240 soniyada, ikkinchisi 80, 160, 240 soniyada. Ikkalasi birga bo'lgan eng kichik vaqt ular davrlarining eng kichik umumiy karralisi: EKUK(60, 80) = 240 soniya, ya'ni 4 daqiqa. Javob: 4 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylanish-davri-va-chastota",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#36afc4ac"
+    },
+    {
+      "q": "Bolalar bog'chasidagi karusel bir marta to'liq aylanishga 20 soniya sarflaydi. U 6 daqiqa davomida uzluksiz aylansa, necha marta to'liq aylanadi?",
+      "v": [
+        "120 marta",
+        "3 marta",
+        "18 marta",
+        "36 marta"
+      ],
+      "t": 2,
+      "izoh": "Avval vaqtni bir xil birlikka keltiramiz: 6 daqiqa = 6 · 60 = 360 soniya. Bitta to'liq aylanishga 20 soniya ketadi. Aylanishlar soni: 360 : 20 = 18. Javob: 18 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylanish-davri-va-chastota",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#ae4178f7"
+    },
+    {
+      "q": "Yuguruvchi aylana trekni 72 soniyada bir marta aylanib chiqadi. U trek markazidan qaralganda bir soniyada necha gradusga buriladi?",
+      "v": [
+        "7,2°/s",
+        "5°/s",
+        "0,2°/s",
+        "6°/s"
+      ],
+      "t": 1,
+      "izoh": "Bir to'liq aylanish markazda 360° li burchakka mos keladi va u 72 soniya davom etadi. Burchak tezlik burchakning vaqtga nisbati: 360 : 72 = 5. Demak yuguruvchi har soniyada 5° ga buriladi. Javob: 5°/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-tezlik-va-burchak-yoli",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#e0c13f9d"
+    },
+    {
+      "q": "Aylanma platformaning chekkasidagi ikki bola markazga nisbatan 4°/s va 6°/s burchak tezlik bilan qarama-qarshi yo'nalishda harakatlanmoqda. Ular bir nuqtadan boshlagan bo'lsa, birinchi marta necha soniyadan keyin yana uchrashadi?",
+      "v": [
+        "180 soniya",
+        "90 soniya",
+        "36 soniya",
+        "60 soniya"
+      ],
+      "t": 2,
+      "izoh": "Qarama-qarshi yo'nalishda burchak tezliklar qo'shiladi: 4 + 6 = 10°/s. Uchrashish uchun ular chizgan burchaklar yig'indisi to'liq aylanani, ya'ni 360° ni tashkil qilishi kerak. Vaqt: 360 : 10 = 36 soniya. Javob: 36 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-tezlik-va-burchak-yoli",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#a2ab8bb8"
+    },
+    {
+      "q": "Nuqta aylana bo'ylab tekis harakatlanib, bir aylanani 45 soniyada bosib o'tadi. 12 soniya ichida u markazdan qaralganda necha gradusli burchakni chizadi?",
+      "v": [
+        "48°",
+        "96°",
+        "144°",
+        "120°"
+      ],
+      "t": 1,
+      "izoh": "Burchak tezlik: 360 : 45 = 8 gradus har soniyada. 12 soniyada chizilgan burchak: 8 · 12 = 96°. Javob: 96°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-tezlik-va-burchak-yoli",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#b38a6520"
+    },
+    {
+      "q": "Aylana bo'ylab ikki nuqta bir yo'nalishda 8°/s va 3°/s burchak tezlik bilan harakatlanadi. Ular bir vaqtda bir joydan boshlagan bo'lsa, tezrog'i sekinini birinchi marta necha soniyadan keyin bir aylanaga ortda qoldiradi?",
+      "v": [
+        "45 soniya",
+        "120 soniya",
+        "36 soniya",
+        "72 soniya"
+      ],
+      "t": 3,
+      "izoh": "Bir yo'nalishdagi harakatda burchak tezliklar ayiriladi: 8 − 3 = 5°/s. Bir aylanaga ortda qoldirish uchun ortiqcha chizilgan burchak 360° bo'lishi kerak. Vaqt: 360 : 5 = 72 soniya. Javob: 72 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-tezlik-va-burchak-yoli",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#d525dbec"
+    },
+    {
+      "q": "600 m li aylana trekda Anvar 5 m/s, Bobur 4 m/s va Davron 3 m/s tezlik bilan bir nuqtadan bir yo'nalishda yugurishni boshladi. Anvar Davronni birinchi marta necha soniyadan keyin bir aylanaga ortda qoldiradi?",
+      "v": [
+        "300 soniya",
+        "600 soniya",
+        "75 soniya",
+        "200 soniya"
+      ],
+      "t": 0,
+      "izoh": "Uch yuguruvchidan faqat Anvar bilan Davron kerak. Ularning tezliklari ayirmasi: 5 − 3 = 2 m/s. Bir aylanaga ortda qoldirish uchun 600 m ortiqcha yo'l kerak. Vaqt: 600 : 2 = 300 soniya. Javob: 300 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchta-harakatlanuvchi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#074c4957"
+    },
+    {
+      "q": "900 m li aylana trekda Aziz soat strelkasi yo'nalishida 6 m/s, Vali va G'ani esa unga qarama-qarshi yo'nalishda 3 m/s va 2 m/s tezlik bilan yuguradi. 900 soniya ichida Aziz Vali va G'ani bilan jami necha marta uchrashadi?",
+      "v": [
+        "17 marta",
+        "18 marta",
+        "9 marta",
+        "16 marta"
+      ],
+      "t": 0,
+      "izoh": "Aziz Vali bilan qarama-qarshi harakatlanadi: yaqinlashish tezligi 6 + 3 = 9 m/s, uchrashuvlar orasidagi vaqt 900 : 9 = 100 soniya, demak 900 soniyada 9 marta uchrashadi. Aziz va G'ani uchun: 6 + 2 = 8 m/s, oraliq 900 : 8 = 112,5 soniya, 900 : 112,5 = 8 marta. Jami: 9 + 8 = 17. Javob: 17 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchta-harakatlanuvchi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#4562e95e"
+    },
+    {
+      "q": "Uch yuguruvchining aylana trekni bir marta aylanib chiqish vaqti mos ravishda 40, 60 va 90 soniya. Ular start chizig'idan bir vaqtda yo'lga chiqqan bo'lsa, uchalasi ham start chizig'ida yana birinchi marta necha daqiqadan keyin to'planadi?",
+      "v": [
+        "3 daqiqa 10 soniya",
+        "10 soniya",
+        "12 daqiqa",
+        "6 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Har bir yuguruvchi start chizig'ida o'z davrining karralarida bo'ladi, demak izlanayotgan vaqt uchala davrning eng kichik umumiy karralisi. EKUK(40, 60, 90) ni topamiz: 40 = 2³ · 5, 60 = 2² · 3 · 5, 90 = 2 · 3² · 5, demak EKUK = 2³ · 3² · 5 = 360 soniya. Bu 6 daqiqaga teng. Javob: 6 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchta-harakatlanuvchi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#80a908a1"
+    },
+    {
+      "q": "800 m li aylana trekda Umid va Zafar bir-biridan trek bo'ylab 300 m masofada turibdi. Ular bir vaqtda bir-biriga qarab 6 m/s va 4 m/s tezlik bilan yugura boshladi. Ular necha soniyadan keyin uchrashadi?",
+      "v": [
+        "80 soniya",
+        "30 soniya",
+        "150 soniya",
+        "50 soniya"
+      ],
+      "t": 1,
+      "izoh": "Ular butun aylanani emas, balki oralaridagi 300 m li yoyni yopishi kerak. Bir-biriga qarab harakatda tezliklar qo'shiladi: 6 + 4 = 10 m/s. Vaqt: 300 : 10 = 30 soniya. Javob: 30 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boshlangich-siljish-bilan-harakat",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#10ffb1ef"
+    },
+    {
+      "q": "720 m li aylana trekda tez yuguruvchi sekin yuguruvchidan 240 m orqada turibdi. Ularning tezliklari 8 m/s va 5 m/s bo'lib, ikkalasi bir yo'nalishda yuguradi. Tez yuguruvchi sekinini necha soniyadan keyin quvib yetadi?",
+      "v": [
+        "240 soniya",
+        "48 soniya",
+        "80 soniya",
+        "30 soniya"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda yopilishi kerak bo'lgan masofa butun aylana emas, balki 240 m li oraliq. Bir yo'nalishdagi harakatda tezliklar ayiriladi: 8 − 5 = 3 m/s. Vaqt: 240 : 3 = 80 soniya. Javob: 80 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "boshlangich-siljish-bilan-harakat",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#7063318c"
+    },
+    {
+      "q": "600 m li aylana trekda Laylo 4 m/s tezlik bilan yugura boshladi. Oradan 30 soniya o'tgach, xuddi shu nuqtadan Malika 6 m/s tezlik bilan bir yo'nalishda yugurdi. Malika Layloni necha soniyadan keyin quvib yetadi?",
+      "v": [
+        "90 soniya",
+        "60 soniya",
+        "300 soniya",
+        "20 soniya"
+      ],
+      "t": 1,
+      "izoh": "Malika yo'lga chiqqan payt Laylo allaqachon 4 · 30 = 120 m yo'l bosgan. Bu oraliq 6 − 4 = 2 m/s tezlik bilan qisqaradi. Quvib yetish vaqti: 120 : 2 = 60 soniya. Javob: 60 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "boshlangich-siljish-bilan-harakat",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#3cb4078f"
+    },
+    {
+      "q": "Ikki yuguruvchi aylana trekning start nuqtasidan qarama-qarshi yo'nalishda bir vaqtda yugurdi. Ular birinchi marta yana aynan start nuqtasida uchrashganda Aziz 5 ta, Bobur 3 ta to'liq aylana bosib o'tgan edi. Ularning tezliklari nisbati qanday?",
+      "v": [
+        "3 : 5",
+        "8 : 5",
+        "5 : 3",
+        "5 : 8"
+      ],
+      "t": 2,
+      "izoh": "Ikkalasi bir xil vaqt davomida yugurdi. Bosib o'tilgan yo'l tezlikka to'g'ri proporsional, aylana uzunligi esa ikkalasi uchun bir xil. Demak yo'llar nisbati 5L : 3L = 5 : 3 bo'lgani uchun tezliklar nisbati ham 5 : 3 bo'ladi. Javob: 5 : 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchrashuvlardan-tezliklar-nisbati",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#7bc4e159"
+    },
+    {
+      "q": "Aylana trekda tez yuguruvchi bir aylanani 3 daqiqada bosib o'tadi va sekin yuguruvchini har 4 daqiqada bir marta bir aylanaga ortda qoldiradi. Sekin yuguruvchi bir aylanani necha daqiqada bosib o'tadi?",
+      "v": [
+        "12 daqiqa",
+        "7 daqiqa",
+        "1 daqiqa",
+        "6 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Bir daqiqada tez yuguruvchi trekning 1/3 qismini bosadi. Har 4 daqiqada u sekinni bir aylanaga ortda qoldirgani uchun ular bir daqiqada bosgan ulushlar farqi 1/4 ga teng. Sekin yuguruvchining bir daqiqadagi ulushi: 1/3 − 1/4 = 1/12. Demak u bir aylanani 12 daqiqada bosadi. Javob: 12 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchrashuvlardan-tezliklar-nisbati",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#236d0876"
+    },
+    {
+      "q": "Ikki chang'ichi aylana trekda qarama-qarshi yo'nalishda harakatlanib, har 30 soniyada bir marta uchrashadi. Ulardan biri bir aylanani 50 soniyada bosib o'tsa, ikkinchisi bir aylanani necha soniyada bosib o'tadi?",
+      "v": [
+        "20 soniya",
+        "80 soniya",
+        "30 soniya",
+        "75 soniya"
+      ],
+      "t": 3,
+      "izoh": "Qarama-qarshi harakatda bir soniyada bosilgan ulushlar qo'shiladi va har 30 soniyada yig'indi bitta aylanani beradi, ya'ni ulushlar yig'indisi 1/30. Birinchisining ulushi 1/50. Ikkinchisiniki: 1/30 − 1/50 = (5 − 3)/150 = 1/75. Demak uning davri 75 soniya. Javob: 75 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchrashuvlardan-tezliklar-nisbati",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#240a8149"
+    },
+    {
+      "q": "750 m li aylana trekda ikki yuguruvchi qarama-qarshi yo'nalishda har 50 soniyada uchrashadi. Birinchisining tezligi ikkinchisinikidan 1,5 marta katta bo'lsa, tez yuguruvchining tezligi qancha?",
+      "v": [
+        "6 m/s",
+        "15 m/s",
+        "7,5 m/s",
+        "9 m/s"
+      ],
+      "t": 3,
+      "izoh": "Uchrashuvlar orasida birgalikda bir aylana bosiladi: tezliklar yig'indisi 750 : 50 = 15 m/s. Sekin yuguruvchining tezligi x bo'lsa, tezniki 1,5x. U holda 1,5x + x = 15, ya'ni 2,5x = 15 va x = 6 m/s. Tez yuguruvchining tezligi: 1,5 · 6 = 9 m/s. Javob: 9 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchrashuvlardan-tezliklar-nisbati",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#da87d82d"
+    },
+    {
+      "q": "Dilshod darsga soat 3:40 da kirdi. Shu paytda devor soatining soat va minut strelkalari orasidagi kichik burchak necha gradus bo'ladi?",
+      "v": [
+        "150°",
+        "130°",
+        "110°",
+        "230°"
+      ],
+      "t": 1,
+      "izoh": "Minut strelkasi daqiqada 6° yuradi: 40 daqiqada u 6 · 40 = 240° da turadi. Soat strelkasi 3 da 3 · 30 = 90° da bo'ladi va daqiqada 0,5° suriladi: 0,5 · 40 = 20°, ya'ni u 110° da. Strelkalar orasidagi burchak: 240 − 110 = 130°. Javob: 130°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilgan-vaqtdagi-burchak",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#aeca798f"
+    },
+    {
+      "q": "Muzey soat 9:20 da ochildi. Ochilish onida devor soatining ikki strelkasi orasidagi kichik burchak nechaga teng?",
+      "v": [
+        "160°",
+        "150°",
+        "200°",
+        "120°"
+      ],
+      "t": 0,
+      "izoh": "Minut strelkasi: 6 · 20 = 120°. Soat strelkasi: 9 · 30 + 0,5 · 20 = 270 + 10 = 280°. Ular orasidagi farq: 280 − 120 = 160°. Bu 180° dan kichik, demak izlangan kichik burchak shu. Javob: 160°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilgan-vaqtdagi-burchak",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#904739d6"
+    },
+    {
+      "q": "Sevara imtihon topshiriqlarini soat 5:24 da tugatdi. Shu daqiqada soat va minut strelkalari orasidagi burchak necha gradus edi?",
+      "v": [
+        "6°",
+        "12°",
+        "18°",
+        "342°"
+      ],
+      "t": 2,
+      "izoh": "Minut strelkasi: 6 · 24 = 144°. Soat strelkasi: 5 · 30 + 0,5 · 24 = 150 + 12 = 162°. Farq: 162 − 144 = 18°. Javob: 18°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilgan-vaqtdagi-burchak",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#7adc6c87"
+    },
+    {
+      "q": "Avtobus bekatga soat 2:50 da yetib keldi. Shu paytda bekatdagi soatning strelkalari orasidagi kichik burchak qanchaga teng?",
+      "v": [
+        "240°",
+        "215°",
+        "145°",
+        "95°"
+      ],
+      "t": 2,
+      "izoh": "Minut strelkasi: 6 · 50 = 300°. Soat strelkasi: 2 · 30 + 0,5 · 50 = 60 + 25 = 85°. Farq: 300 − 85 = 215°. Bu 180° dan katta, shuning uchun kichik burchakni topamiz: 360 − 215 = 145°. Javob: 145°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-vaqtdagi-burchak",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#20d49d2d"
+    },
+    {
+      "q": "Dilnoza uchrashuvga soat 10:15 da keldi. Shu onda devor soatining ikki strelkasi orasidagi kichik burchak necha gradus?",
+      "v": [
+        "142,5°",
+        "210°",
+        "217,5°",
+        "150°"
+      ],
+      "t": 0,
+      "izoh": "Minut strelkasi: 6 · 15 = 90°. Soat strelkasi: 10 · 30 + 0,5 · 15 = 300 + 7,5 = 307,5°. Farq: 307,5 − 90 = 217,5°. Kichik burchak: 360 − 217,5 = 142,5°. Javob: 142,5°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-vaqtdagi-burchak",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#e0576fdb"
+    },
+    {
+      "q": "Soat 4 dan 5 gacha bo'lgan oraliqda soat va minut strelkalari ustma-ust tushadi. Bu hodisa soat 4 dan necha daqiqa o'tgach ro'y beradi?",
+      "v": [
+        "20 daqiqa",
+        "21 9/11 daqiqa",
+        "24 daqiqa",
+        "22 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Soat 4 da minut strelkasi soat strelkasidan 4 · 30 = 120° orqada. Minut strelkasi soat strelkasiga nisbatan daqiqada 6 − 0,5 = 5,5° yaqinlashadi. Ustma-ust tushish uchun kerakli vaqt: 120 : 5,5 = 240/11 = 21 9/11 daqiqa. Javob: 21 9/11 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "strelkalar-ustma-ust-tushishi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#ef77fc37"
+    },
+    {
+      "q": "Soat 7 dan 8 gacha bo'lgan oraliqda strelkalar bir marta ustma-ust tushadi. Bu payt soat 7 dan necha daqiqadan keyin sodir bo'ladi?",
+      "v": [
+        "35 daqiqa",
+        "42 daqiqa",
+        "38 daqiqa",
+        "38 2/11 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Soat 7 da strelkalar orasidagi burchak 7 · 30 = 210°. Minut strelkasi bu farqni daqiqada 5,5° dan yopadi. Vaqt: 210 : 5,5 = 420/11 = 38 2/11 daqiqa. Javob: 38 2/11 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "strelkalar-ustma-ust-tushishi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#ce3ac160"
+    },
+    {
+      "q": "Soat 1 dan 2 gacha oraliqda soat va minut strelkalari qachon ustma-ust tushadi?",
+      "v": [
+        "5 5/11 daqiqa",
+        "5 daqiqa",
+        "6 daqiqa",
+        "5,5 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Soat 1 da strelkalar orasidagi burchak 30°. Nisbiy burchak tezlik 6 − 0,5 = 5,5 gradus har daqiqada. Kerakli vaqt: 30 : 5,5 = 60/11 = 5 5/11 daqiqa. Javob: 5 5/11 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "strelkalar-ustma-ust-tushishi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#f3d78fba"
+    },
+    {
+      "q": "Poyezd soat 10 dan 11 gacha bo'lgan oraliqda jo'nadi va aynan jo'nash onida vokzal soatining strelkalari ustma-ust turgan edi. Poyezd qaysi vaqtda jo'nagan?",
+      "v": [
+        "10 soat 50 daqiqa",
+        "10 soat 55 daqiqa",
+        "11 soat 5 5/11 daqiqa",
+        "10 soat 54 6/11 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Soat 10 da minut strelkasi soat strelkasidan 10 · 30 = 300° orqada. Nisbiy burchak tezlik 5,5 gradus har daqiqada. Vaqt: 300 : 5,5 = 600/11 = 54 6/11 daqiqa. Demak jo'nash payti 10 soat 54 6/11 daqiqa. Javob: 10 soat 54 6/11 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "strelkalar-ustma-ust-tushishi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#c1b8d35b"
+    },
+    {
+      "q": "Sardor soat 6 dan 7 gacha bo'lgan oraliqda uydan chiqdi va shu onda devor soatining ikki strelkasi ustma-ust turgan edi. Sardor soat nechada chiqqan?",
+      "v": [
+        "6 soat 30 daqiqa",
+        "6 soat 36 daqiqa",
+        "6 soat 32 8/11 daqiqa",
+        "6 soat 33 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Soat 6 da strelkalar orasidagi burchak 6 · 30 = 180°. Minut strelkasi bu farqni daqiqada 5,5° dan yopadi. Vaqt: 180 : 5,5 = 360/11 = 32 8/11 daqiqa. Demak Sardor 6 soat 32 8/11 daqiqada chiqqan. Javob: 6 soat 32 8/11 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "strelkalar-ustma-ust-tushishi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#45c58280"
+    },
+    {
+      "q": "Soat 2 dan 3 gacha bo'lgan oraliqda soat va minut strelkalari birinchi marta o'zaro perpendikulyar bo'ladi. Bu soat 2 dan necha daqiqa o'tgach yuz beradi?",
+      "v": [
+        "25 daqiqa",
+        "27 3/11 daqiqa",
+        "30 daqiqa",
+        "15 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Soat 2 da minut strelkasi soat strelkasidan 60° orqada. Perpendikulyar holat uchun u avval shu 60° ni yopib, so'ng 90° ga o'zib ketishi kerak, ya'ni jami 150° ni qo'lga kiritadi. Nisbiy burchak tezlik 5,5 gradus har daqiqada: 150 : 5,5 = 300/11 = 27 3/11 daqiqa. Javob: 27 3/11 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "strelkalar-perpendikulyar-holati",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#84ac80b5"
+    },
+    {
+      "q": "Soat 5 dan 6 gacha oraliqda strelkalar birinchi marta 90° li burchak hosil qiladi. Bu payt soat 5 dan necha daqiqadan keyin keladi?",
+      "v": [
+        "10 daqiqa",
+        "10 10/11 daqiqa",
+        "12 daqiqa",
+        "11 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Soat 5 da strelkalar orasidagi burchak 5 · 30 = 150°. Burchak 90° bo'lishi uchun minut strelkasi bu farqni 150 − 90 = 60° ga qisqartirishi kerak. Nisbiy tezlik 5,5 gradus har daqiqada: 60 : 5,5 = 120/11 = 10 10/11 daqiqa. Javob: 10 10/11 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "strelkalar-perpendikulyar-holati",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#d147b604"
+    },
+    {
+      "q": "Soat 6 dan 7 gacha bo'lgan oraliqda soat va minut strelkalari birinchi marta perpendikulyar holatga keladi. Bu qachon sodir bo'ladi?",
+      "v": [
+        "15 daqiqa",
+        "18 daqiqa",
+        "16 4/11 daqiqa",
+        "16 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Soat 6 da burchak 180° ga teng. U 90° gacha kamayishi uchun minut strelkasi soat strelkasidan 90° ni yutib olishi kerak. Nisbiy burchak tezlik 5,5 gradus har daqiqada: 90 : 5,5 = 180/11 = 16 4/11 daqiqa. Javob: 16 4/11 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "strelkalar-perpendikulyar-holati",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#3b167195"
+    },
+    {
+      "q": "Nodir soat 7 dan keyin strelkalar birinchi marta to'g'ri burchak hosil qilgan paytda uydan chiqdi. U soat nechada chiqqan?",
+      "v": [
+        "7 soat 20 daqiqa",
+        "7 soat 24 daqiqa",
+        "7 soat 22 daqiqa",
+        "7 soat 21 9/11 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Soat 7 da strelkalar orasidagi burchak 210°. To'g'ri burchak hosil bo'lishi uchun bu farq 90° ga kamayishi, ya'ni minut strelkasi 210 − 90 = 120° ni yutishi kerak. Nisbiy tezlik 5,5 gradus har daqiqada: 120 : 5,5 = 240/11 = 21 9/11 daqiqa. Javob: 7 soat 21 9/11 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "strelkalar-perpendikulyar-holati",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#85364aef"
+    },
+    {
+      "q": "Soat 2 dan 3 gacha bo'lgan oraliqda soat va minut strelkalari bir to'g'ri chiziqda, lekin qarama-qarshi tomonga yo'nalgan holatga keladi. Bu soat 2 dan necha daqiqa o'tgach bo'ladi?",
+      "v": [
+        "43 7/11 daqiqa",
+        "40 daqiqa",
+        "48 daqiqa",
+        "44 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Soat 2 da minut strelkasi soat strelkasidan 60° orqada. Qarama-qarshi yo'nalish uchun u shu 60° ni yopib, yana 180° ga o'zishi kerak: jami 240°. Nisbiy tezlik 5,5 gradus har daqiqada: 240 : 5,5 = 480/11 = 43 7/11 daqiqa. Javob: 43 7/11 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "strelkalar-qarama-qarshi-holati",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#4f33a9a9"
+    },
+    {
+      "q": "Soat 3 dan 4 gacha oraliqda strelkalar 180° li burchak hosil qiladi. Bu qaysi vaqtda ro'y beradi?",
+      "v": [
+        "3 soat 45 daqiqa",
+        "3 soat 54 daqiqa",
+        "3 soat 49 1/11 daqiqa",
+        "3 soat 49 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Soat 3 da burchak 90°. Minut strelkasi bu 90° ni yopib, ustiga yana 180° qo'shishi kerak, jami 270°. Nisbiy burchak tezlik 5,5 gradus har daqiqada: 270 : 5,5 = 540/11 = 49 1/11 daqiqa. Javob: 3 soat 49 1/11 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "strelkalar-qarama-qarshi-holati",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#59400873"
+    },
+    {
+      "q": "Yarim tundan keyin soat 12 dan 1 gacha bo'lgan oraliqda strelkalar birinchi marta qarama-qarshi yo'nalishga tushadi. Bu necha daqiqadan keyin bo'ladi?",
+      "v": [
+        "32 8/11 daqiqa",
+        "30 daqiqa",
+        "36 daqiqa",
+        "33 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Soat 12 da ikkala strelka ustma-ust turadi, ya'ni burchak 0°. Qarama-qarshi yo'nalish uchun minut strelkasi 180° ga o'zib ketishi kerak. Nisbiy tezlik 5,5 gradus har daqiqada: 180 : 5,5 = 360/11 = 32 8/11 daqiqa. Javob: 32 8/11 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "strelkalar-qarama-qarshi-holati",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#5e5e0bab"
+    },
+    {
+      "q": "Bir kunning yarmi, ya'ni 12 soat davomida soat va minut strelkalari necha marta bir to'g'ri chiziqda qarama-qarshi yo'nalishda joylashadi?",
+      "v": [
+        "12 marta",
+        "11 marta",
+        "22 marta",
+        "24 marta"
+      ],
+      "t": 1,
+      "izoh": "Minut strelkasi soat strelkasiga nisbatan daqiqada 5,5° buriladi, 12 soatda esa 5,5 · 720 = 3960°, ya'ni 3960 : 360 = 11 ta to'liq aylanani ortiqcha chizadi. Qarama-qarshi holat har bir nisbiy aylanada aynan bir marta uchraydi, demak 11 marta. Javob: 11 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "strelkalar-qarama-qarshi-holati",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#9e2e740d"
+    },
+    {
+      "q": "Ma'ruza soat 8:00 da boshlanadi. Shu soatdan keyin necha daqiqa o'tgach minut strelkasi soat strelkasidan aynan 130° orqada qoladi?",
+      "v": [
+        "18 daqiqa",
+        "23 7/11 daqiqa",
+        "20 daqiqa",
+        "26 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Soat 8:00 da soat strelkasi 240° da, minut strelkasi 0° da turadi, ya'ni minut strelkasi soat strelkasidan 240° orqada (ular orasidagi kichik burchak esa 120°, chunki ikki nur orasidagi burchak 180° dan oshmaydi). Minut strelkasi har daqiqada soat strelkasidan 5,5° yutgani uchun orqada qolish 240 − 5,5M ga teng bo'ladi. 240 − 5,5M = 130 tenglamadan 5,5M = 110, M = 20 daqiqa. Tekshiramiz: 8:20 da soat strelkasi 240 + 0,5 · 20 = 250°, minut strelkasi 6 · 20 = 120°; 250 − 120 = 130°. Javob: 20 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchakdan-vaqtni-topish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#cc5cf5c8"
+    },
+    {
+      "q": "Soat 5 dan keyin strelkalar orasidagi burchak birinchi marta 18° bo'lgan payt soat nechani ko'rsatadi?",
+      "v": [
+        "5:22",
+        "5:03",
+        "5:30",
+        "5:24"
+      ],
+      "t": 3,
+      "izoh": "Soat 5 da strelkalar orasidagi burchak 5 · 30 = 150°. Minut strelkasi soat strelkasiga daqiqada 5,5° yaqinlashadi, demak burchak 150 − 5,5M ga teng. 150 − 5,5M = 18 dan 5,5M = 132 va M = 24 daqiqa. Demak soat 5:24 ni ko'rsatadi. Javob: 5:24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchakdan-vaqtni-topish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#b0db3639"
+    },
+    {
+      "q": "Kechqurun soat 11 dan keyin necha daqiqa o'tgach minut strelkasi soat strelkasidan aynan 110° orqada qoladi?",
+      "v": [
+        "40 daqiqa",
+        "36 daqiqa",
+        "44 daqiqa",
+        "20 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Soat 11:00 da soat strelkasi 330° da, minut strelkasi 0° da: minut strelkasi soat strelkasidan 330° orqada (ular orasidagi kichik burchak esa atigi 30°). Minut strelkasi bu orqada qolishni har daqiqada 5,5° ga qisqartiradi: 330 − 5,5M = 110. Bundan 5,5M = 220 va M = 40 daqiqa. Tekshiramiz: 11:40 da soat strelkasi 330 + 0,5 · 40 = 350°, minut strelkasi 6 · 40 = 240°; 350 − 240 = 110°. Javob: 40 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchakdan-vaqtni-topish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#2d85ec5e"
+    },
+    {
+      "q": "Soat 4 dan keyin minut strelkasi soat strelkasidan 45° oldinda bo'lishi uchun necha daqiqa o'tishi kerak?",
+      "v": [
+        "27,5 daqiqa",
+        "30 daqiqa",
+        "33 daqiqa",
+        "8 2/11 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Soat 4 da minut strelkasi soat strelkasidan 120° orqada. Oldinda bo'lishi uchun u avval shu 120° ni yopib, ustiga 45° qo'shishi kerak, jami 165°. Nisbiy burchak tezlik 5,5 gradus har daqiqada: 165 : 5,5 = 30 daqiqa. Javob: 30 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchakdan-vaqtni-topish",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#d04586f4"
+    },
+    {
+      "q": "Bir kecha-kunduz, ya'ni 24 soat davomida devor soatining soat va minut strelkalari necha marta ustma-ust tushadi?",
+      "v": [
+        "24 marta",
+        "22 marta",
+        "23 marta",
+        "12 marta"
+      ],
+      "t": 1,
+      "izoh": "Minut strelkasi soat strelkasiga nisbatan 12 soatda 5,5 · 720 = 3960° buriladi, bu esa 3960 : 360 = 11 ta ortiqcha aylana. Har bir ortiqcha aylanada strelkalar aynan bir marta ustma-ust tushadi, ya'ni 12 soatda 11 marta. Bir kecha-kunduzda bu ikki barobar: 2 · 11 = 22 marta. Javob: 22 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "holatlar-sonini-sanash",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#01c9ee0e"
+    },
+    {
+      "q": "12 soat davomida soat va minut strelkalari necha marta o'zaro perpendikulyar holatga keladi?",
+      "v": [
+        "22 marta",
+        "44 marta",
+        "24 marta",
+        "11 marta"
+      ],
+      "t": 0,
+      "izoh": "Minut strelkasi soat strelkasiga nisbatan 12 soatda 11 ta ortiqcha aylana chizadi. Har bir ortiqcha aylanada nisbiy burchak bir marta 90° dan va bir marta 270° dan o'tadi, ya'ni perpendikulyar holat ikki marta yuzaga keladi. Demak jami 11 · 2 = 22 marta. Javob: 22 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "holatlar-sonini-sanash",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#15cccc83"
+    },
+    {
+      "q": "Bir kecha-kunduzda soat va minut strelkalari necha marta to'g'ri burchak hosil qiladi?",
+      "v": [
+        "22 marta",
+        "48 marta",
+        "88 marta",
+        "44 marta"
+      ],
+      "t": 3,
+      "izoh": "12 soatda strelkalar 22 marta perpendikulyar bo'ladi, chunki nisbiy 11 aylananing har birida bu holat ikki marta uchraydi. Bir kecha-kunduz ikkita 12 soatlik davrdan iborat, demak 2 · 22 = 44 marta. Javob: 44 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "holatlar-sonini-sanash",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#70a0135d"
+    },
+    {
+      "q": "Devor soatining strelkalari ketma-ket ikki marta ustma-ust tushishi orasida qancha vaqt o'tadi?",
+      "v": [
+        "60 daqiqa",
+        "65 daqiqa",
+        "65 5/11 daqiqa",
+        "66 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Strelkalar yana ustma-ust tushishi uchun minut strelkasi soat strelkasidan to'liq 360° ni yutishi kerak. Nisbiy burchak tezlik 6 − 0,5 = 5,5 gradus har daqiqada. Vaqt: 360 : 5,5 = 720/11 = 65 5/11 daqiqa. Javob: 65 5/11 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "holatlar-sonini-sanash",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#f3ed4dd7"
+    },
+    {
+      "q": "Sinf soati 25 daqiqa davom etdi. Shu vaqt ichida devor soatining minut strelkasi necha gradusga buriladi?",
+      "v": [
+        "12,5°",
+        "25°",
+        "137,5°",
+        "150°"
+      ],
+      "t": 3,
+      "izoh": "Minut strelkasi bir soatda, ya'ni 60 daqiqada to'liq aylanani chizadi: 360 : 60 = 6 gradus har daqiqada. 25 daqiqada u 6 · 25 = 150° ga buriladi. Javob: 150°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "strelkaning-burilish-burchagi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#4d238c1e"
+    },
+    {
+      "q": "Nurbek 3 soat 20 daqiqa davomida kitob o'qidi. Shu vaqt ichida devor soatining soat strelkasi necha gradusga buriladi?",
+      "v": [
+        "1200°",
+        "90°",
+        "100°",
+        "10°"
+      ],
+      "t": 2,
+      "izoh": "Soat strelkasi 12 soatda 360° chizadi, demak bir soatda 30°, bir daqiqada esa 0,5°. Vaqtni daqiqaga aylantiramiz: 3 soat 20 daqiqa = 200 daqiqa. Burilish: 0,5 · 200 = 100°. Javob: 100°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "strelkaning-burilish-burchagi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#0a4c789e"
+    },
+    {
+      "q": "48 daqiqa ichida minut strelkasi soat strelkasidan necha gradus ko'p buriladi?",
+      "v": [
+        "288°",
+        "264°",
+        "24°",
+        "312°"
+      ],
+      "t": 1,
+      "izoh": "Minut strelkasi daqiqada 6°, soat strelkasi 0,5° buriladi. Ularning burilishlari farqi har daqiqada 6 − 0,5 = 5,5°. 48 daqiqada farq: 5,5 · 48 = 264°. Javob: 264°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "strelkaning-burilish-burchagi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#354d65c8"
+    },
+    {
+      "q": "Maktabda bir dars 45 daqiqa davom etadi. Bir dars davomida minut strelkasi siferblat bo'ylab qanday burchakka buriladi?",
+      "v": [
+        "270°",
+        "22,5°",
+        "247,5°",
+        "45°"
+      ],
+      "t": 0,
+      "izoh": "Minut strelkasi har daqiqada 6° buriladi. 45 daqiqada u 6 · 45 = 270° ga buriladi. Bu to'liq aylananing to'rtdan uch qismiga to'g'ri keladi. Javob: 270°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "strelkaning-burilish-burchagi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#9e20dbbc"
+    },
+    {
+      "q": "Sport mashg'ulotida murabbiy sekundomerda 24 soniya vaqt o'lchadi. Shu vaqt ichida soniya strelkasi necha gradusga buriladi?",
+      "v": [
+        "144°",
+        "24°",
+        "12°",
+        "240°"
+      ],
+      "t": 0,
+      "izoh": "Soniya strelkasi bir daqiqada, ya'ni 60 soniyada to'liq aylanani chizadi: 360 : 60 = 6 gradus har soniyada. 24 soniyada burilish: 6 · 24 = 144°. Javob: 144°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soniya-strelkasi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#ac9003ce"
+    },
+    {
+      "q": "Elektron tabloda vaqt 12:00:20 deb ko'rsatilgan. Aynan shu onda mexanik soatning soniya strelkasi bilan minut strelkasi orasidagi burchak necha gradus bo'ladi?",
+      "v": [
+        "120°",
+        "118°",
+        "122°",
+        "116°"
+      ],
+      "t": 1,
+      "izoh": "Soniya strelkasi soniyada 6° yuradi: 20 soniyada u 6 · 20 = 120° da bo'ladi. Minut strelkasi ham shu 20 soniyada joyidan siljiydi: 20 soniya 1/3 daqiqa, demak u 6 · (1/3) = 2° ga buriladi. Burchak: 120 − 2 = 118°. Javob: 118°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "soniya-strelkasi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#ee199fb2"
+    },
+    {
+      "q": "Devor soatining soniya strelkasi bir kecha-kunduz davomida necha marta to'liq aylanadi?",
+      "v": [
+        "720 marta",
+        "60 marta",
+        "1440 marta",
+        "86400 marta"
+      ],
+      "t": 2,
+      "izoh": "Soniya strelkasi bir to'liq aylanani bir daqiqada bajaradi. Bir kecha-kunduzda 24 · 60 = 1440 daqiqa bor. Demak strelka 1440 marta to'liq aylanadi. Javob: 1440 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soniya-strelkasi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#f6a0b8bc"
+    },
+    {
+      "q": "Soniya strelkasining burchak tezligi soat strelkasining burchak tezligidan necha marta katta?",
+      "v": [
+        "60 marta",
+        "12 marta",
+        "3600 marta",
+        "720 marta"
+      ],
+      "t": 3,
+      "izoh": "Soniya strelkasi soniyada 6° buriladi. Soat strelkasi daqiqada 0,5°, ya'ni soniyada 0,5 : 60 = 1/120 gradus buriladi. Nisbat: 6 : (1/120) = 6 · 120 = 720. Javob: 720 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soniya-strelkasi",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#54852477"
+    },
+    {
+      "q": "Anvarning qo'l soati har kecha-kunduzda 4 daqiqa orqada qoladi. Soat to'g'ri qo'yilganidan 6 kun o'tgach u haqiqiy vaqtdan necha daqiqa orqada bo'ladi?",
+      "v": [
+        "10 daqiqa",
+        "20 daqiqa",
+        "24 daqiqa",
+        "96 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Har kuni orqada qolish 4 daqiqadan ortadi. 6 kunda jami orqada qolish: 4 · 6 = 24 daqiqa. Javob: 24 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nosoz-soat",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#2745d259"
+    },
+    {
+      "q": "Devor soati har soatda 45 soniya oldinga ketadi. To'g'ri qo'yilganidan 2 kecha-kunduz o'tgach u haqiqiy vaqtdan necha daqiqa oldinda bo'ladi?",
+      "v": [
+        "36 daqiqa",
+        "90 daqiqa",
+        "18 daqiqa",
+        "2160 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "2 kecha-kunduzda 2 · 24 = 48 soat bor. Har soatda soat 45 soniya oldinga ketadi: 45 · 48 = 2160 soniya. Buni daqiqaga aylantiramiz: 2160 : 60 = 36 daqiqa. Javob: 36 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nosoz-soat",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#ae2dcae1"
+    },
+    {
+      "q": "Zilola soatini dushanba kuni soat 9:00 da to'g'ri qo'ydi. Soat har kecha-kunduzda 3 daqiqa orqada qoladi. 5 kundan keyin soat 9:00 bo'lganda uning soati nechani ko'rsatadi?",
+      "v": [
+        "9:15",
+        "8:55",
+        "8:15",
+        "8:45"
+      ],
+      "t": 3,
+      "izoh": "5 kunda to'plangan xato: 3 · 5 = 15 daqiqa, va soat orqada qolgani uchun u haqiqiy vaqtdan kam ko'rsatadi. Haqiqiy vaqt 9:00 bo'lganda soat 9:00 dan 15 daqiqa kam, ya'ni 8:45 ni ko'rsatadi. Javob: 8:45.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nosoz-soat",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#2581baa0"
+    },
+    {
+      "q": "Bir soat har kecha-kunduzda 6 daqiqa oldinga ketadi. U yana to'g'ri vaqtni ko'rsatishi uchun kamida necha kun o'tishi kerak?",
+      "v": [
+        "60 kun",
+        "120 kun",
+        "240 kun",
+        "10 kun"
+      ],
+      "t": 1,
+      "izoh": "Oddiy siferblatda vaqt 12 soatda takrorlanadi, demak soat to'liq 12 soat, ya'ni 720 daqiqa oldinga ketganda yana to'g'ri vaqtni ko'rsatadi. Kunlar soni: 720 : 6 = 120 kun. Javob: 120 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nosoz-soat",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#5f8698ac"
+    },
+    {
+      "q": "Devor soati oyna ro'parasida osilgan. Haqiqiy vaqt 3:25 bo'lsa, oynadagi aksda soat qanday vaqtni ko'rsatadi?",
+      "v": [
+        "9:25",
+        "8:25",
+        "9:35",
+        "8:35"
+      ],
+      "t": 3,
+      "izoh": "Oynadagi aks siferblatni 12 va 6 raqamlarini tutashtiruvchi o'q bo'yicha ag'daradi, shuning uchun ko'rinadigan vaqt 12 soatdan berilgan vaqtni ayirish bilan topiladi. Hisoblaymiz: 11 soat 60 daqiqa − 3 soat 25 daqiqa = 8 soat 35 daqiqa. Javob: 8:35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oynadagi-aks",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#fb806928"
+    },
+    {
+      "q": "Oynaga qaragan kishi devor soatining aksida 9:15 ni ko'rdi. Haqiqiy vaqt qanday bo'lgan?",
+      "v": [
+        "3:45",
+        "2:45",
+        "2:15",
+        "3:15"
+      ],
+      "t": 1,
+      "izoh": "Aks almashtirishi qaytariladigan, ya'ni haqiqiy vaqt ham 12 soatdan ko'ringan vaqtni ayirish bilan topiladi. Hisoblaymiz: 11 soat 60 daqiqa − 9 soat 15 daqiqa = 2 soat 45 daqiqa. Javob: 2:45.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oynadagi-aks",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#8f5161b1"
+    },
+    {
+      "q": "Haqiqiy vaqt 7:40 bo'lganda oynadagi aksda soat strelkalari qaysi vaqtni ko'rsatadi?",
+      "v": [
+        "4:20",
+        "5:20",
+        "4:40",
+        "5:40"
+      ],
+      "t": 0,
+      "izoh": "Oynadagi vaqtni topish uchun berilgan vaqtni 12 soatdan ayiramiz: 11 soat 60 daqiqa − 7 soat 40 daqiqa = 4 soat 20 daqiqa. Javob: 4:20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oynadagi-aks",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#c92a0c0a"
+    },
+    {
+      "q": "Minut strelkasi bir daqiqada 6°, soat strelkasi esa 0,5° buriladi. Minut strelkasining soat strelkasiga nisbatan burchak tezligi qancha?",
+      "v": [
+        "6,5°/daq",
+        "6°/daq",
+        "5,5°/daq",
+        "12°/daq"
+      ],
+      "t": 2,
+      "izoh": "Ikki strelka bir yo'nalishda aylanadi, shuning uchun nisbiy burchak tezlik ularning ayirmasiga teng. Hisoblaymiz: 6 − 0,5 = 5,5 gradus har daqiqada. Aynan shu qiymat strelkalar masalalarining hammasida ishlatiladi. Javob: 5,5°/daq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbiy-burchak-tezlik",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#eabb9dd9"
+    },
+    {
+      "q": "Soat 12:00 da strelkalar ustma-ust turadi. Oradan roppa-rosa bir soat o'tgach minut strelkasi soat strelkasiga nisbatan necha gradusga burilgan bo'ladi?",
+      "v": [
+        "360°",
+        "330°",
+        "30°",
+        "390°"
+      ],
+      "t": 1,
+      "izoh": "Nisbiy burchak tezlik 6 − 0,5 = 5,5 gradus har daqiqada. Bir soat 60 daqiqa, demak nisbiy burilish 5,5 · 60 = 330°. Bu 360° dan kam bo'lgani uchun soat 1 da strelkalar ustma-ust tushmaydi, ular orasida 30° qoladi. Javob: 330°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbiy-burchak-tezlik",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#54e353a2"
+    },
+    {
+      "q": "Soat va minut strelkalari orasidagi kichik burchak eng katta bo'lganda u necha gradusga teng bo'ladi?",
+      "v": [
+        "360°",
+        "90°",
+        "150°",
+        "180°"
+      ],
+      "t": 3,
+      "izoh": "Ikki nur orasidagi kichik burchak hech qachon 180° dan oshmaydi, chunki undan katta qiymat uchun 360° dan ayirish orqali kichigi olinadi. Strelkalar bir to'g'ri chiziqda qarama-qarshi turganda aynan shu chegaraga erishiladi. Javob: 180°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbiy-burchak-tezlik",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#56c64ac6"
+    },
+    {
+      "q": "Soat 12:00 dan keyin 3 soat 18 daqiqa davomida soat va minut strelkalari necha marta ustma-ust tushadi?",
+      "v": [
+        "4 marta",
+        "2 marta",
+        "3 marta",
+        "6 marta"
+      ],
+      "t": 2,
+      "izoh": "Ustma-ust tushishlar har 360 : 5,5 = 720/11 = 65 5/11 daqiqada takrorlanadi. Berilgan vaqt 3 · 60 + 18 = 198 daqiqa. Nechta oraliq sig'ishini topamiz: 198 · 11 : 720 = 2178 : 720 = 3,025. Butun qismini olamiz, demak strelkalar 3 marta ustma-ust tushadi. Javob: 3 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbiy-burchak-tezlik",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#05b68399"
+    },
+    {
+      "q": "Soat siferblatini 60 bo'linmali aylana trek deb qaraymiz: minut strelkasi bir daqiqada 1 bo'linma, soat strelkasi esa 1/12 bo'linma yuradi. Soat 12:00 da ikkalasi bir joyda edi. Minut strelkasi soat strelkasini quvib yetishi uchun undan necha bo'linma ortiq yurishi kerak?",
+      "v": [
+        "60 bo'linma",
+        "12 bo'linma",
+        "55 bo'linma",
+        "5 bo'linma"
+      ],
+      "t": 0,
+      "izoh": "Bu aylana trekda quvib yetish masalasi bilan bir xil: quvuvchi ortiqcha aynan bitta to'liq aylanani bosishi kerak. Siferblat aylanasi 60 bo'linmadan iborat, demak minut strelkasi soat strelkasidan 60 bo'linma ortiq yurishi shart. Tekshirish uchun: har daqiqada u 1 − 1/12 = 11/12 bo'linma yutadi, 60 : (11/12) = 720/11 daqiqa, bu tanish natija. Javob: 60 bo'linma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-strelka-tahlili",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#1a691f02"
+    },
+    {
+      "q": "Soat 4 dan 5 gacha bo'lgan oraliqda strelkalar orasidagi burchak ikki marta 40° ga teng bo'ladi. Bu ikki payt orasida qancha vaqt o'tadi?",
+      "v": [
+        "14 6/11 daqiqa",
+        "7 3/11 daqiqa",
+        "29 1/11 daqiqa",
+        "13 1/3 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Soat 4 da burchak 120°. Birinchi holat minut strelkasi yaqinlashayotganda: 120 − 5,5M = 40, bundan M = 80 : 5,5 = 160/11 daqiqa. Ikkinchi holat u o'zib ketgandan keyin: 5,5M − 120 = 40, bundan M = 160 : 5,5 = 320/11 daqiqa. Farq: 320/11 − 160/11 = 160/11 = 14 6/11 daqiqa. Javob: 14 6/11 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-strelka-tahlili",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#2edb7ddb"
+    },
+    {
+      "q": "Soat 3:00 dan 4:00 gacha bo'lgan vaqt oralig'ida, chegaralarni ham hisobga olganda, soat va minut strelkalari necha marta o'zaro perpendikulyar bo'ladi?",
+      "v": [
+        "1 marta",
+        "3 marta",
+        "2 marta",
+        "4 marta"
+      ],
+      "t": 2,
+      "izoh": "Soat 3:00 da soat strelkasi 90° da, minut strelkasi 0° da, ya'ni burchak aynan 90° — bu birinchi holat. Keyingisi uchun minut strelkasi soat strelkasini quvib o'tib, undan 90° o'zishi kerak: 5,5M = 180, M = 32 8/11 daqiqa — ikkinchi holat. Uchinchisi uchun 5,5M = 360, ya'ni M = 65 5/11 daqiqa chiqadi, bu esa oraliqdan tashqarida. Soat 4:00 da burchak 120°. Javob: 2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-strelka-tahlili",
+      "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat#d340d312"
+    }
+  ]
+}

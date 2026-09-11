@@ -1,0 +1,1609 @@
+{
+  "nom": "Sonning standart shakli va o'lchov birliklari",
+  "bolim": "Sonlar va ular ustida amallar",
+  "blok": "arif",
+  "rasmiyBolim": 1,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Kichik shaharchada bir kunda taxminan 2 340 000 litr ichimlik suvi sarflanadi. Shu miqdorni sonning standart shaklida yozing.",
+      "v": [
+        "2,34·10⁶ l",
+        "23,4·10⁵ l",
+        "2,34·10⁵ l",
+        "2,34·10⁷ l"
+      ],
+      "t": 0,
+      "izoh": "Standart shakl a·10ⁿ ko'rinishida bo'ladi va bunda 1 ≤ a < 10 shart. 2 340 000 sonida vergulni birinchi raqamdan keyin qo'yamiz: 2,34. Vergul 6 xona chapga surildi, demak ko'rsatkich 6. Javob: 2,34·10⁶ l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "katta-sonni-standart-shaklga",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#f42fc827"
+    },
+    {
+      "q": "Yer sharining ekvator bo'ylab uzunligi taxminan 40 075 km. Shu masofani metrga aylantirib, standart shaklda ifodalang.",
+      "v": [
+        "4,0075·10⁴ m",
+        "40,075·10⁶ m",
+        "4,0075·10⁷ m",
+        "4,0075·10⁶ m"
+      ],
+      "t": 2,
+      "izoh": "Avval birlik aylantiriladi: 1 km = 1000 m, shuning uchun 40 075 km = 40 075 000 m. Endi vergulni birinchi raqamdan keyin qo'yamiz — 4,0075, vergul 7 xona chapga surilgan. Javob: 4,0075·10⁷ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "katta-sonni-standart-shaklga",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#b36745cb"
+    },
+    {
+      "q": "O'zbekistonda bir mavsumda 8 100 000 tonnaga yaqin g'alla yig'ib olinadi. Bu sonning standart shakli qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "81·10⁵ t",
+        "8,1·10⁵ t",
+        "8,1·10⁷ t",
+        "8,1·10⁶ t"
+      ],
+      "t": 3,
+      "izoh": "Sonda 7 ta raqam bor, birinchi nolmas raqam 8. Vergulni 8 dan keyin qo'ysak, 8,1 hosil bo'ladi va vergul 6 xona chapga suriladi. 81 ko'paytuvchisi 1 ≤ a < 10 shartini buzadi, 8,1·10⁵ va 8,1·10⁷ esa xonalarni noto'g'ri sanashdan chiqadi. Javob: 8,1·10⁶ t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "katta-sonni-standart-shaklga",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#53805115"
+    },
+    {
+      "q": "Serverdagi ma'lumot hajmi 512 000 000 000 bayt ekan. Shu sonni standart shaklda yozing.",
+      "v": [
+        "51,2·10¹⁰ bayt",
+        "5,12·10¹¹ bayt",
+        "5,12·10¹⁰ bayt",
+        "5,12·10¹² bayt"
+      ],
+      "t": 1,
+      "izoh": "512 000 000 000 sonida jami 12 ta raqam bor. Vergulni birinchi raqamdan keyin qo'yamiz: 5,12. Vergul 11 xona chapga surilgani uchun ko'rsatkich 11 bo'ladi. Javob: 5,12·10¹¹ bayt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "katta-sonni-standart-shaklga",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#5f0a6813"
+    },
+    {
+      "q": "Bir yil davomida qidiruv tizimiga 4 900 000 000 000 ta so'rov yuborilgan. Shu sonni standart shaklda ko'rsating.",
+      "v": [
+        "49·10¹¹ ta",
+        "4,9·10¹² ta",
+        "4,9·10¹¹ ta",
+        "4,9·10¹³ ta"
+      ],
+      "t": 1,
+      "izoh": "Sonda 13 ta raqam bor: 4 va undan keyin 9, so'ng nollar. Vergul 4 dan keyin qo'yilganda 4,9 chiqadi va vergul 12 xona chapga suriladi. Demak son 4,9·10¹² ga teng. Javob: 4,9·10¹² ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "katta-sonni-standart-shaklga",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#ad3a7669"
+    },
+    {
+      "q": "Laboratoriya tarozisi 3,05·10⁻² kg massani ko'rsatdi. Bu massani odatiy o'nli kasr ko'rinishida yozing.",
+      "v": [
+        "0,305 kg",
+        "0,00305 kg",
+        "305 kg",
+        "0,0305 kg"
+      ],
+      "t": 3,
+      "izoh": "10⁻² ga ko'paytirish vergulni ikki xona chapga surish demakdir. 3,05 dagi vergulni ikki xona chapga suramiz va 0,0305 hosil bo'ladi. Bu 30,5 g ga teng massa. Javob: 0,0305 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shakldan-oddiy-yozuvga",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#ee7392f7"
+    },
+    {
+      "q": "Bakteriyaning uzunligi 2,4·10⁻⁶ m ga teng. Uni mikrometrda ifodalang, bunda 1 mkm = 10⁻⁶ m.",
+      "v": [
+        "24 mkm",
+        "2,4 mkm",
+        "0,24 mkm",
+        "240 mkm"
+      ],
+      "t": 1,
+      "izoh": "1 mkm = 10⁻⁶ m bo'lgani uchun 2,4·10⁻⁶ m yozuvidagi 10⁻⁶ m aynan bitta mikrometr. Demak uzunlik 2,4 ta mikrometrga teng. Ko'rsatkichlar mos kelgani sababli faqat a ko'paytuvchi qoladi. Javob: 2,4 mkm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shakldan-oddiy-yozuvga",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#013490bd"
+    },
+    {
+      "q": "Astronomiya darsligida bir yorug'lik yili 9,46·10¹² km deb berilgan. Bu masofa odatiy yozuvda qanday ko'rinadi?",
+      "v": [
+        "946 000 000 000 km",
+        "94 600 000 000 000 km",
+        "9 460 000 000 000 km",
+        "9 460 000 000 km"
+      ],
+      "t": 2,
+      "izoh": "10¹² ga ko'paytirish vergulni 12 xona o'ngga surish demakdir. 9,46 dan boshlab vergulni 12 xona o'ngga surganda 9 460 000 000 000 hosil bo'ladi. Sonda 9 dan keyin jami 12 ta raqam turishi kerak. Javob: 9 460 000 000 000 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shakldan-oddiy-yozuvga",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#f2cc9c4f"
+    },
+    {
+      "q": "Do'kondagi muzlatgichning narxi e'londa 3,6·10⁶ so'm deb yozilgan. Bu narx odatiy yozuvda necha so'mni tashkil etadi?",
+      "v": [
+        "360 000 so'm",
+        "3 600 000 so'm",
+        "36 000 000 so'm",
+        "3 600 so'm"
+      ],
+      "t": 1,
+      "izoh": "10⁶ ga ko'paytirishda vergul 6 xona o'ngga suriladi. 3,6 dagi vergulni 6 xona o'ngga surib, 3 600 000 ni olamiz. Ya'ni muzlatgich uch million olti yuz ming so'm turadi. Javob: 3 600 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "standart-shakldan-oddiy-yozuvga",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#c0afc86b"
+    },
+    {
+      "q": "Virus zarrachasining diametri 0,000000012 m ni tashkil etadi. Shu qiymatni standart shaklda yozing.",
+      "v": [
+        "1,2·10⁻⁸ m",
+        "1,2·10⁻⁷ m",
+        "12·10⁻⁹ m",
+        "1,2·10⁸ m"
+      ],
+      "t": 0,
+      "izoh": "Verguldan keyingi birinchi nolmas raqam 1 bo'lib, u sakkizinchi o'rinda turadi. Vergulni o'ngga 8 xona surib 1,2 ni hosil qilamiz, har bir surish ko'rsatkichni bittaga kamaytiradi. Shuning uchun ko'rsatkich manfiy, ya'ni −8. Javob: 1,2·10⁻⁸ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kichik-sonni-standart-shaklga",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#f7ae866d"
+    },
+    {
+      "q": "Qizil qon tanachasining qalinligi 0,0000021 m ekan. Uning standart shakli qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "21·10⁻⁷ m",
+        "2,1·10⁻⁵ m",
+        "2,1·10⁻⁶ m",
+        "2,1·10⁻⁷ m"
+      ],
+      "t": 2,
+      "izoh": "Verguldan keyin beshta nol turadi, birinchi nolmas raqam 2 oltinchi o'rinda. Vergulni 6 xona o'ngga surganda 2,1 hosil bo'ladi, demak ko'rsatkich −6. 21 ko'paytuvchisi standart shakl shartiga mos emas, 10⁻⁵ va 10⁻⁷ esa nollarni noto'g'ri sanashdan chiqadi. Javob: 2,1·10⁻⁶ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kichik-sonni-standart-shaklga",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#3031d946"
+    },
+    {
+      "q": "Dori tarkibidagi faol modda miqdori 0,00045 g ni tashkil qiladi. Bu miqdorning standart shaklini toping.",
+      "v": [
+        "4,5·10⁻³ g",
+        "4,5·10⁻⁴ g",
+        "45·10⁻⁵ g",
+        "4,5·10⁻⁵ g"
+      ],
+      "t": 1,
+      "izoh": "0,00045 sonida verguldan keyin uchta nol bor, birinchi nolmas raqam 4 to'rtinchi o'rinda turadi. Vergulni 4 xona o'ngga surib 4,5 ni olamiz, ko'rsatkich esa −4 bo'ladi. Javob: 4,5·10⁻⁴ g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kichik-sonni-standart-shaklga",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#1bfef9c7"
+    },
+    {
+      "q": "Ipak tolasining qalinligi 0,0000097 m deb o'lchandi. Uni standart shaklda yozganda a ko'paytuvchi nechaga teng bo'ladi?",
+      "v": [
+        "0,97",
+        "97",
+        "0,097",
+        "9,7"
+      ],
+      "t": 3,
+      "izoh": "Standart shaklda a·10ⁿ yozuvidagi a uchun 1 ≤ a < 10 shart bajarilishi kerak. 0,0000097 sonida birinchi nolmas raqam 9, undan keyin 7 keladi. Demak a = 9,7, ko'rsatkich esa −6 bo'ladi. Javob: 9,7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kichik-sonni-standart-shaklga",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#c6f79cc6"
+    },
+    {
+      "q": "Havodagi chang zarrachasining massasi 0,000000305 g. Uni standart shaklda yozganda 10 ning ko'rsatkichi nechaga teng?",
+      "v": [
+        "−7",
+        "−6",
+        "−8",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "Verguldan keyin oltita nol turadi, birinchi nolmas raqam 3 yettinchi o'rinda joylashgan. Vergulni 7 xona o'ngga surish kerak, shuning uchun ko'rsatkich −7. Son 3,05·10⁻⁷ ko'rinishida yoziladi. Javob: −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kichik-sonni-standart-shaklga",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#886cd381"
+    },
+    {
+      "q": "Quyidagi yozuvlardan qaysi biri sonning standart shakli shartiga to'liq mos keladi: 12,5·10³, 0,64·10⁵, 7,08·10⁴, 95·10²?",
+      "v": [
+        "12,5·10³",
+        "0,64·10⁵",
+        "7,08·10⁴",
+        "95·10²"
+      ],
+      "t": 2,
+      "izoh": "Standart shaklda ko'paytuvchi a uchun 1 ≤ a < 10 shart bajarilishi kerak. 12,5 va 95 o'ndan katta, 0,64 esa birdan kichik, shuning uchun ular mos emas. Faqat 7,08 kerakli oraliqqa tushadi. Javob: 7,08·10⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shakl-yozuvini-baholash",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#56da7eed"
+    },
+    {
+      "q": "Aziz 68 000 sonini daftarida 68·10³ ko'rinishida yozdi. Uning yozuvidagi kamchilikni to'g'rilagan variantni tanlang.",
+      "v": [
+        "6,8·10⁴",
+        "6,8·10³",
+        "0,68·10⁵",
+        "68·10⁴"
+      ],
+      "t": 0,
+      "izoh": "68·10³ qiymati bo'yicha to'g'ri, chunki u 68 000 ga teng, ammo 68 soni 10 dan katta. Ko'paytuvchini 6,8 ga aylantirsak, u 10 marta kichrayadi, shuning uchun ko'rsatkich bittaga oshadi. Natijada 6,8·10⁴ hosil bo'ladi. Javob: 6,8·10⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shakl-yozuvini-baholash",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#712f4e46"
+    },
+    {
+      "q": "Malika 0,00082 sonini standart shaklda 8,2·10⁴ deb yozdi. To'g'ri yozuv qanday bo'lishi kerak?",
+      "v": [
+        "8,2·10⁻³",
+        "0,82·10⁻³",
+        "8,2·10⁻⁴",
+        "8,2·10⁻⁵"
+      ],
+      "t": 2,
+      "izoh": "Berilgan son birdan kichik, shuning uchun ko'rsatkich albatta manfiy bo'ladi. Verguldan keyin uchta nol bor, birinchi nolmas raqam 8 to'rtinchi o'rinda. Vergulni 4 xona o'ngga surib 8,2·10⁻⁴ ni olamiz. Ko'paytuvchisi birdan kichik bo'lgan 0,82·10⁻³ esa standart shakl talabiga javob bermaydi. Javob: 8,2·10⁻⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shakl-yozuvini-baholash",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#00f129fa"
+    },
+    {
+      "q": "5,4·10⁶ va 54·10⁵ yozuvlari haqidagi qaysi fikr to'g'ri hisoblanadi?",
+      "v": [
+        "Ikkalasi teng va ikkalasi ham standart shaklda",
+        "Birinchisi ikkinchisidan 10 marta kichik",
+        "Ikkinchisi standart shaklda, birinchisi esa emas",
+        "Ikkalasi teng, lekin faqat birinchisi standart shaklda"
+      ],
+      "t": 3,
+      "izoh": "54·10⁵ = 54·100 000 = 5 400 000 va 5,4·10⁶ = 5 400 000, demak qiymatlari bir xil. Standart shakl esa ko'paytuvchining 1 dan katta yoki teng va 10 dan kichik bo'lishini talab qiladi. 54 bu shartni buzadi, 5,4 esa qanoatlantiradi. Javob: ikkalasi teng, lekin faqat birinchisi standart shaklda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "standart-shakl-yozuvini-baholash",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#ae067259"
+    },
+    {
+      "q": "Fizika masalasida (3·10⁵)·(2,5·10⁴) ko'paytmani hisoblash talab qilinadi. Natijani standart shaklda ko'rsating.",
+      "v": [
+        "7,5·10⁹",
+        "7,5·10²⁰",
+        "75·10⁸",
+        "7,5·10⁸"
+      ],
+      "t": 0,
+      "izoh": "Standart shakldagi sonlarni ko'paytirishda a ko'paytuvchilar ko'paytiriladi, o'nning darajalari esa qo'shiladi. 3·2,5 = 7,5 va 10⁵·10⁴ = 10⁹ bo'ladi. 7,5 soni bir bilan o'n orasida, demak natija tayyor. Javob: 7,5·10⁹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shaklda-kopaytirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#297455b7"
+    },
+    {
+      "q": "Mamlakatda 4·10⁶ ta oila yashaydi va har bir oila oyiga o'rtacha 2,4·10⁵ so'm gaz uchun to'laydi. Barcha oilalarning bir oylik to'lovi qancha? Javobni standart shaklda yozing.",
+      "v": [
+        "9,6·10¹⁰ so'm",
+        "96·10¹⁰ so'm",
+        "6,4·10¹¹ so'm",
+        "9,6·10¹¹ so'm"
+      ],
+      "t": 3,
+      "izoh": "Umumiy to'lov (4·10⁶)·(2,4·10⁵) ko'paytmaga teng. Ko'paytuvchilarni alohida ko'paytiramiz: 4·2,4 = 9,6, darajalarni qo'shamiz: 10⁶·10⁵ = 10¹¹. Ko'paytuvchilarni ko'paytirish o'rniga qo'shib yuborish (4 + 2,4 = 6,4) xato natija beradi. 96·10¹⁰ yozuvining qiymati teng bo'lsa ham, 96 soni 10 dan katta bo'lgani uchun u standart shakl emas. Javob: 9,6·10¹¹ so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "standart-shaklda-kopaytirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#c081e3b3"
+    },
+    {
+      "q": "Bir gramm suvda taxminan 3,3·10²² ta molekula bo'ladi. 500 g suvda nechta molekula bo'lishini standart shaklda hisoblang.",
+      "v": [
+        "1,65·10²⁵ ta",
+        "16,5·10²⁴ ta",
+        "1,65·10²⁴ ta",
+        "8,3·10²² ta"
+      ],
+      "t": 0,
+      "izoh": "Avval 500 ni standart shaklga keltiramiz: 500 = 5·10². Ko'paytuvchilarni ko'paytiramiz: 3,3·5 = 16,5, darajalarni qo'shamiz: 10²²·10² = 10²⁴. 16,5 soni 10 dan katta bo'lgani uchun uni 1,65·10¹ deb yozamiz va ko'rsatkichni bittaga oshiramiz. Javob: 1,65·10²⁵ ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "standart-shaklda-kopaytirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#6f034573"
+    },
+    {
+      "q": "Bir kvadrat metr quyosh panelidan soatiga 1,8·10³ Vt·soat energiya olinadi. Maydoni 2,5·10⁴ m² bo'lgan stansiya bir soatda qancha energiya beradi? Natijani standart shaklda ko'rsating.",
+      "v": [
+        "4,5·10¹² Vt·soat",
+        "45·10⁶ Vt·soat",
+        "4,3·10⁷ Vt·soat",
+        "4,5·10⁷ Vt·soat"
+      ],
+      "t": 3,
+      "izoh": "Umumiy energiya bitta kvadrat metrdagi energiyani maydonga ko'paytirish bilan topiladi: (1,8·10³)·(2,5·10⁴). Ko'paytuvchilar: 1,8·2,5 = 4,5, darajalar qo'shiladi: 10³·10⁴ = 10⁷. Ko'paytirish o'rniga qo'shish 4,3 kabi xato beradi. 45·10⁶ yozuvining qiymati teng bo'lsa ham, 45 soni 10 dan katta bo'lgani uchun u standart shakl emas. Javob: 4,5·10⁷ Vt·soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shaklda-kopaytirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#122dfcc9"
+    },
+    {
+      "q": "(8,4·10⁹) : (2·10⁴) bo'linmani hisoblab, natijani standart shaklda yozing.",
+      "v": [
+        "4,2·10¹³",
+        "4,2·10⁴",
+        "4,2·10⁵",
+        "42·10⁴"
+      ],
+      "t": 2,
+      "izoh": "Standart shakldagi sonlarni bo'lishda ko'paytuvchilar bo'linadi, darajalarning ko'rsatkichlari esa ayiriladi. 8,4 : 2 = 4,2 va 10⁹ : 10⁴ = 10⁵ bo'ladi. Ko'rsatkichlarni qo'shib yuborish 10¹³ kabi xato natija beradi. Javob: 4,2·10⁵.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "standart-shaklda-bolish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#e159c274"
+    },
+    {
+      "q": "Yirik poytaxt shahrida 3,6·10⁶ kishi yashaydi, shahar maydoni esa 1,2·10³ km². Har bir kvadrat kilometrga o'rtacha necha kishi to'g'ri keladi?",
+      "v": [
+        "4,32·10⁹ kishi",
+        "3·10³ kishi",
+        "3·10² kishi",
+        "3·10⁹ kishi"
+      ],
+      "t": 1,
+      "izoh": "Zichlikni topish uchun aholi sonini maydonga bo'lamiz: (3,6·10⁶) : (1,2·10³). Ko'paytuvchilar bo'linadi: 3,6 : 1,2 = 3, ko'rsatkichlar ayiriladi: 6 − 3 = 3. Bo'lish o'rniga ko'paytirish 4,32·10⁹ kabi haqiqatga sig'maydigan natija beradi. Javob: 3·10³ kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shaklda-bolish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#79c50026"
+    },
+    {
+      "q": "G'isht zavodi bir yilda 7,2·10⁷ dona mahsulot chiqaradi va yilda 360 kun ishlaydi. Bir kunda o'rtacha nechta g'isht tayyorlanadi?",
+      "v": [
+        "2·10⁴ dona",
+        "2·10⁶ dona",
+        "2·10⁵ dona",
+        "2,592·10¹⁰ dona"
+      ],
+      "t": 2,
+      "izoh": "360 kunni standart shaklda yozamiz: 360 = 3,6·10². Endi bo'lamiz: (7,2·10⁷) : (3,6·10²). Ko'paytuvchilar 7,2 : 3,6 = 2, ko'rsatkichlar 7 − 2 = 5. Demak kuniga 2·10⁵ dona, ya'ni 200 000 ta g'isht tayyorlanadi. Javob: 2·10⁵ dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "standart-shaklda-bolish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#9a921473"
+    },
+    {
+      "q": "(9,6·10⁻³) : (3,2·10⁻⁷) bo'linmaning qiymatini standart shaklda toping.",
+      "v": [
+        "3·10⁴",
+        "3·10⁻¹⁰",
+        "3·10⁻⁴",
+        "3·10¹⁰"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytuvchilarni bo'lamiz: 9,6 : 3,2 = 3. Ko'rsatkichlarni ayiramiz: −3 − (−7) = −3 + 7 = 4. Manfiy ko'rsatkichni ayirishda ishora o'zgarishini unutmaslik kerak, aks holda −10 chiqib qoladi. Javob: 3·10⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shaklda-bolish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#fe89235d"
+    },
+    {
+      "q": "Ikki omborda mos ravishda 4,5·10⁵ kg va 2,8·10⁵ kg bug'doy saqlanmoqda. Ikkala omborda jami qancha bug'doy bor?",
+      "v": [
+        "7,3·10¹⁰ kg",
+        "7,3·10⁵ kg",
+        "73·10⁵ kg",
+        "1,26·10¹¹ kg"
+      ],
+      "t": 1,
+      "izoh": "Ikkala sonda ham daraja bir xil — 10⁵, shuning uchun faqat ko'paytuvchilar qo'shiladi: 4,5 + 2,8 = 7,3. Daraja o'zgarmaydi, chunki qo'shishda ko'rsatkichlar qo'shilmaydi. Natija 7,3·10⁵ kg, ya'ni 730 tonna. Javob: 7,3·10⁵ kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "standart-shaklda-qoshish-ayirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#35fff3ef"
+    },
+    {
+      "q": "Sardor 6,4·10⁶ va 5,2·10⁵ sonlarining ayirmasini topishi kerak. To'g'ri natijani ko'rsating.",
+      "v": [
+        "1,2·10⁶",
+        "5,88·10⁶",
+        "5,88·10⁵",
+        "5,88·10⁷"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichlar har xil bo'lgani uchun avval ularni tenglashtiramiz: 5,2·10⁵ = 0,52·10⁶. Endi ayiramiz: 6,4 − 0,52 = 5,88, daraja 10⁶ bo'lib qoladi. Ko'rsatkichni tenglashtirmasdan 6,4 − 5,2 = 1,2 deb hisoblash keng tarqalgan xato. Javob: 5,88·10⁶.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shaklda-qoshish-ayirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#603e4b3f"
+    },
+    {
+      "q": "Kutubxonada 1,25·10⁴ ta kitob bor edi, yil davomida yana 3,5·10³ ta kitob keltirildi. Hozir kutubxonada nechta kitob bor?",
+      "v": [
+        "4,75·10⁴ ta",
+        "1,6·10⁴ ta",
+        "1,6·10⁵ ta",
+        "1,6·10⁷ ta"
+      ],
+      "t": 1,
+      "izoh": "3,5·10³ ni 10⁴ darajaga keltiramiz: 3,5·10³ = 0,35·10⁴. Qo'shamiz: 1,25 + 0,35 = 1,6, daraja 10⁴ saqlanadi. Demak kitoblar soni 16 000 ta. Ko'rsatkichni tenglashtirmasdan qo'shish 4,75 kabi xato beradi. Javob: 1,6·10⁴ ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shaklda-qoshish-ayirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#6c93c484"
+    },
+    {
+      "q": "Ikki daryoning yillik suv oqimi 8,7·10⁹ m³ va 9,4·10⁸ m³ ni tashkil etadi. Birinchisi ikkinchisidan qancha ko'p suv oqizadi?",
+      "v": [
+        "7,76·10⁸ m³",
+        "9,64·10⁹ m³",
+        "7,76·10⁹ m³",
+        "0,7·10⁹ m³"
+      ],
+      "t": 2,
+      "izoh": "Kichik ko'rsatkichli sonni kattasiga keltiramiz: 9,4·10⁸ = 0,94·10⁹. Ayiramiz: 8,7 − 0,94 = 7,76, daraja 10⁹ qoladi. Ko'paytuvchilarni to'g'ridan-to'g'ri ayirish 0,7 kabi, ayirish o'rniga qo'shish esa 9,64 kabi xato beradi. Javob: 7,76·10⁹ m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "standart-shaklda-qoshish-ayirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#8df9ceea"
+    },
+    {
+      "q": "Bekzod (2·10⁴)³ ifodani hisoblashi kerak. Natijani standart shaklda ko'rsating.",
+      "v": [
+        "8·10¹²",
+        "8·10⁷",
+        "6·10¹²",
+        "6·10⁷"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytmani darajaga ko'tarishda har bir ko'paytuvchi alohida darajaga ko'tariladi: (2·10⁴)³ = 2³·(10⁴)³. Bu yerda 2³ = 8, darajani darajaga ko'tarishda esa ko'rsatkichlar ko'paytiriladi: 4·3 = 12. Ko'rsatkichga 3 ni qo'shib yuborish 10⁷ kabi xato beradi. Javob: 8·10¹².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "standart-shaklni-darajaga-koatarish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#0eba429f"
+    },
+    {
+      "q": "Kubning qirrasi 3·10⁻² m ga teng. Uning hajmini standart shaklda hisoblang.",
+      "v": [
+        "27·10⁻⁶ m³",
+        "2,7·10⁻⁶ m³",
+        "9·10⁻⁴ m³",
+        "2,7·10⁻⁵ m³"
+      ],
+      "t": 3,
+      "izoh": "Kub hajmi qirraning kubiga teng: V = (3·10⁻²)³ = 3³·10⁻⁶ = 27·10⁻⁶. 27 soni 10 dan katta, shuning uchun uni 2,7·10¹ deb yozib, ko'rsatkichni bittaga oshiramiz: 2,7·10⁻⁵. Kubga emas, kvadratga ko'tarish 9·10⁻⁴ kabi xato beradi. Javob: 2,7·10⁻⁵ m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "standart-shaklni-darajaga-koatarish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#e10bb627"
+    },
+    {
+      "q": "Kvadrat shaklidagi paxta maydonining tomoni 4,5·10² m. Uning yuzasini standart shaklda toping.",
+      "v": [
+        "2,025·10⁵ m²",
+        "20,25·10⁴ m²",
+        "2,025·10⁴ m²",
+        "9·10⁴ m²"
+      ],
+      "t": 0,
+      "izoh": "Kvadrat yuzasi S = a² formulasi bilan topiladi: (4,5·10²)² = 4,5²·10⁴ = 20,25·10⁴. Bu yozuv standart emas, chunki 20,25 soni 10 dan katta. Uni 2,025·10¹ deb yozib, ko'rsatkichni bittaga oshiramiz. Ko'paytuvchini kvadratga ko'tarish o'rniga 2 ga ko'paytirib (4,5·2 = 9), darajani esa to'g'ri kvadratlash 9·10⁴ kabi xato beradi. Javob: 2,025·10⁵ m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shaklni-darajaga-koatarish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#8871229f"
+    },
+    {
+      "q": "√(9·10⁻⁸) ifodaning qiymati standart shaklda qanday yoziladi?",
+      "v": [
+        "3·10⁻⁸",
+        "9·10⁻⁴",
+        "3·10⁻¹⁶",
+        "3·10⁻⁴"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytmadan ildiz olganda har bir ko'paytuvchidan alohida ildiz olinadi: √9 = 3. Darajadan kvadrat ildiz olishda ko'rsatkich ikkiga bo'linadi: −8 : 2 = −4. Ko'rsatkichni ikkiga ko'paytirish 10⁻¹⁶ kabi xato beradi. Javob: 3·10⁻⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shaklni-darajaga-koatarish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#ca9f9dca"
+    },
+    {
+      "q": "3,2·10⁵, 4,8·10⁴, 2,9·10⁵ va 9,1·10⁴ sonlaridan eng kattasini aniqlang.",
+      "v": [
+        "4,8·10⁴",
+        "3,2·10⁵",
+        "2,9·10⁵",
+        "9,1·10⁴"
+      ],
+      "t": 1,
+      "izoh": "Avval darajalarga qaraladi: 10⁵ darajali sonlar 10⁴ darajalilardan katta, shuning uchun 4,8·10⁴ va 9,1·10⁴ chiqib ketadi. Qolgan ikkitasida ko'paytuvchilar solishtiriladi: 3,2 > 2,9. Eng katta ko'paytuvchiga qarab shoshilib 9,1 ni tanlash keng tarqalgan xato. Javob: 3,2·10⁵.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "standart-shakl-taqqoslash",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#33e31f81"
+    },
+    {
+      "q": "5,6·10⁻³ va 8,9·10⁻⁴ sonlaridan qaysi biri kichik va buning sababi nima?",
+      "v": [
+        "5,6·10⁻³, chunki ko'paytuvchisi kichikroq",
+        "8,9·10⁻⁴, chunki ko'paytuvchisi katta",
+        "8,9·10⁻⁴, chunki ko'rsatkichi kichikroq",
+        "Ular teng qiymatga ega"
+      ],
+      "t": 2,
+      "izoh": "Manfiy ko'rsatkich qanchalik kichik bo'lsa, son shunchalik kichik bo'ladi: −4 < −3. Buni tekshirish oson: 5,6·10⁻³ = 0,0056, 8,9·10⁻⁴ = 0,00089. Ko'paytuvchilarga qarab hukm chiqarish noto'g'ri, chunki avval daraja solishtiriladi. Javob: 8,9·10⁻⁴, chunki ko'rsatkichi kichikroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-shakl-taqqoslash",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#bafb2128"
+    },
+    {
+      "q": "Uch shaharning aholisi 2,4·10⁶, 9,8·10⁵ va 1,7·10⁶ kishini tashkil etadi. Ularni kamayish tartibida joylashtirgan variantni tanlang.",
+      "v": [
+        "9,8·10⁵; 1,7·10⁶; 2,4·10⁶",
+        "2,4·10⁶; 9,8·10⁵; 1,7·10⁶",
+        "9,8·10⁵; 2,4·10⁶; 1,7·10⁶",
+        "2,4·10⁶; 1,7·10⁶; 9,8·10⁵"
+      ],
+      "t": 3,
+      "izoh": "Avval darajalar taqqoslanadi: 10⁶ darajali ikki son 10⁵ darajalisidan katta, demak 9,8·10⁵ eng kichigi. Qolgan ikkitasida ko'paytuvchilarni solishtiramiz: 2,4 > 1,7. Kamayish tartibi kattadan kichikka qarab yoziladi. Javob: 2,4·10⁶; 1,7·10⁶; 9,8·10⁵.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "standart-shakl-taqqoslash",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#febb8d4c"
+    },
+    {
+      "q": "Bir detalning uzunligi 4,5·10⁻² m, ikkinchisiniki esa 4,5 sm deb berilgan. Bu ikki o'lcham haqida qanday xulosa to'g'ri?",
+      "v": [
+        "Birinchisi 10 marta uzun",
+        "Ikkinchisi 10 marta uzun",
+        "Ular teng, chunki 4,5·10⁻² m = 4,5 sm",
+        "Birinchisi 100 marta uzun"
+      ],
+      "t": 2,
+      "izoh": "Birinchi o'lchamni oddiy yozuvga o'tkazamiz: 4,5·10⁻² m = 0,045 m. Endi santimetrga aylantiramiz: 0,045 m = 4,5 sm, chunki 1 m = 100 sm. Demak ikkala detal ham bir xil uzunlikda. Javob: ular teng, chunki 4,5·10⁻² m = 4,5 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "standart-shakl-taqqoslash",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#3046020c"
+    },
+    {
+      "q": "6,3·10⁸ soni 2,1·10⁵ sonidan necha marta katta ekanligini aniqlang.",
+      "v": [
+        "3000 marta",
+        "300 marta",
+        "30 000 marta",
+        "3 marta"
+      ],
+      "t": 0,
+      "izoh": "Necha marta katta ekanini bilish uchun kattasini kichigiga bo'lamiz: (6,3·10⁸) : (2,1·10⁵). Ko'paytuvchilar 6,3 : 2,1 = 3, ko'rsatkichlar 8 − 5 = 3. Demak natija 3·10³, ya'ni 3000. Javob: 3000 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "necha-marta-katta-tartib",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#9c139b1e"
+    },
+    {
+      "q": "Quyosh massasi 2·10³⁰ kg, Yer massasi esa taxminan 6·10²⁴ kg. Quyosh Yerdan qariyb necha marta og'ir?",
+      "v": [
+        "3·10⁶ marta",
+        "3,3·10⁶ marta",
+        "3·10⁵ marta",
+        "3,3·10⁵ marta"
+      ],
+      "t": 3,
+      "izoh": "Nisbatni topamiz: (2·10³⁰) : (6·10²⁴). Ko'paytuvchilar 2 : 6 = 0,33, ko'rsatkichlar 30 − 24 = 6, ya'ni 0,33·10⁶. Bu yozuv standart emas, chunki 0,33 birdan kichik; uni 3,3 ga aylantirib ko'rsatkichni bittaga kamaytiramiz. Javob: 3,3·10⁵ marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "necha-marta-katta-tartib",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#f155b76c"
+    },
+    {
+      "q": "Mikroskop ostida bakteriyaning o'lchami 2·10⁻⁶ m, virus zarrachasiniki esa 5·10⁻⁸ m ekani aniqlandi. Bakteriya virusdan necha marta katta?",
+      "v": [
+        "40 marta",
+        "4 marta",
+        "400 marta",
+        "250 marta"
+      ],
+      "t": 0,
+      "izoh": "Kattasini kichigiga bo'lamiz: (2·10⁻⁶) : (5·10⁻⁸). Ko'paytuvchilar 2 : 5 = 0,4, ko'rsatkichlar −6 − (−8) = 2, ya'ni 0,4·10² = 40. Ko'paytuvchilarni teskari bo'lib (5 : 2 = 2,5), ko'rsatkichni esa o'zgartirmasdan qoldirish 250 kabi xato beradi. Javob: 40 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "necha-marta-katta-tartib",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#b42564a7"
+    },
+    {
+      "q": "Mamlakat byudjetida ta'limga 1,2·10¹⁴ so'm ajratilgan, bitta maktab qurilishi esa 4·10¹⁰ so'm turadi. Shu mablag'ga nechta maktab qurish mumkin?",
+      "v": [
+        "300 ta",
+        "3000 ta",
+        "30 000 ta",
+        "300 000 ta"
+      ],
+      "t": 1,
+      "izoh": "Maktablar sonini topish uchun byudjetni bitta maktab narxiga bo'lamiz: (1,2·10¹⁴) : (4·10¹⁰). Ko'paytuvchilar 1,2 : 4 = 0,3, ko'rsatkichlar 14 − 10 = 4, ya'ni 0,3·10⁴. Bu standart shakl emas, uni 3·10³ = 3000 deb yozamiz. Ko'paytuvchini 3 ga aylantirib ko'rsatkichni ham oshirib yuborish 30 000 kabi xato beradi. Javob: 3000 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "necha-marta-katta-tartib",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#17f1acc8"
+    },
+    {
+      "q": "Dilnoza park bo'ylab yugurish yo'lagining uzunligi 2,5 km ekanini bildi. Bu masofani santimetrda standart shaklda ifodalang.",
+      "v": [
+        "2,5·10⁴ sm",
+        "2,5·10³ sm",
+        "2,5·10⁵ sm",
+        "2,5·10⁶ sm"
+      ],
+      "t": 2,
+      "izoh": "1 km = 1000 m va 1 m = 100 sm, demak 1 km = 100 000 sm. Shunga ko'ra 2,5 km = 2,5·100 000 = 250 000 sm. Bu sonni standart shaklda yozsak 2,5·10⁵ sm bo'ladi. Faqat metrgacha aylantirib to'xtab qolish 2,5·10³ kabi xato beradi. Javob: 2,5·10⁵ sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzunlik-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#e540ddcf"
+    },
+    {
+      "q": "Yangi qurilgan turar joy binosining balandligi 47 m. Bu balandlikni millimetrda standart shaklda ifodalang.",
+      "v": [
+        "4,7·10³ mm",
+        "4,7·10⁵ mm",
+        "470 mm",
+        "4,7·10⁴ mm"
+      ],
+      "t": 3,
+      "izoh": "1 m = 1000 mm bo'lgani uchun 47 m = 47·1000 = 47 000 mm. Standart shaklga keltiramiz: vergulni 4 dan keyin qo'yamiz va u 4 xona chapga suriladi. Demak balandlik 4,7·10⁴ mm. Metrni santimetrgacha aylantirib to'xtash 4,7·10³ kabi xato beradi. Javob: 4,7·10⁴ mm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzunlik-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#65139cd6"
+    },
+    {
+      "q": "Geodezist o'lchagan 1 250 000 sm masofani kilometr birligida ifodalang.",
+      "v": [
+        "12,5 km",
+        "1,25 km",
+        "125 km",
+        "1250 km"
+      ],
+      "t": 0,
+      "izoh": "1 km = 100 000 sm bo'lgani uchun santimetrni kilometrga o'tkazishda 100 000 ga bo'linadi. 1 250 000 : 100 000 = 12,5. Demak o'lchangan masofa 12,5 km ni tashkil etadi. Faqat 1000 ga bo'lish 1250 kabi xato beradi, chunki u metrni beradi. Javob: 12,5 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzunlik-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#35d4d269"
+    },
+    {
+      "q": "Elektr simining uzunligi 0,85 km ni tashkil etadi. Uni desimetrda standart shaklda ifodalang.",
+      "v": [
+        "8,5·10² dm",
+        "8,5·10³ dm",
+        "8,5·10⁴ dm",
+        "8,5·10⁵ dm"
+      ],
+      "t": 1,
+      "izoh": "Avval kilometrni metrga o'tkazamiz: 0,85 km = 850 m. Keyin 1 m = 10 dm bo'lgani uchun 850 m = 8500 dm. Standart shaklda bu 8,5·10³ dm bo'ladi. Metrda to'xtab qolish 8,5·10² kabi xato beradi. Javob: 8,5·10³ dm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzunlik-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#4936ada6"
+    },
+    {
+      "q": "Nilufar 4 m 20 sm uzunlikdagi mato oldi, undan ko'ylak uchun 2 m 75 sm kesib olindi. Necha santimetr mato qoldi?",
+      "v": [
+        "255 sm",
+        "145 sm",
+        "695 sm",
+        "14,5 sm"
+      ],
+      "t": 1,
+      "izoh": "Ikkala o'lchamni ham santimetrga aylantiramiz: 4 m 20 sm = 420 sm, 2 m 75 sm = 275 sm. Ayiramiz: 420 − 275 = 145 sm. Metr va santimetrni alohida ayirish 255 kabi xato beradi, chunki 20 dan 75 ni ayirishda qarz olish kerak. Javob: 145 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uzunlik-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#c3725c95"
+    },
+    {
+      "q": "Fermer xo'jaligiga biriktirilgan yer maydoni 3,5 gektarni tashkil etadi. Bu maydon necha kvadrat metrga teng?",
+      "v": [
+        "3500 m²",
+        "350 m²",
+        "35 000 m²",
+        "350 000 m²"
+      ],
+      "t": 2,
+      "izoh": "1 gektar tomoni 100 m bo'lgan kvadratning yuzasi, ya'ni 1 ga = 10 000 m². Shunga ko'ra 3,5 ga = 3,5·10 000 = 35 000 m². Gektarni 1000 ga ko'paytirish 3500 kabi xato natija beradi. Javob: 35 000 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#f06548cd"
+    },
+    {
+      "q": "Yotoqxona polining yuzasi 24 m² ni tashkil etadi. Uni kvadrat santimetrda standart shaklda ifodalang.",
+      "v": [
+        "2,4·10³ sm²",
+        "2,4·10⁴ sm²",
+        "2,4·10⁶ sm²",
+        "2,4·10⁵ sm²"
+      ],
+      "t": 3,
+      "izoh": "1 m = 100 sm bo'lgani uchun 1 m² = 100² = 10 000 sm². Demak 24 m² = 24·10 000 = 240 000 sm². Standart shaklda bu 2,4·10⁵ sm² bo'ladi. Yuza birligini aylantirishda 100 ga emas, 100² ga ko'paytirish kerakligi ko'p unutiladi. Javob: 2,4·10⁵ sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#1bc9f282"
+    },
+    {
+      "q": "Yangi bog' uchun ajratilgan maydon 0,8 km² ni tashkil etadi. Bu necha gektarga teng?",
+      "v": [
+        "80 ga",
+        "8 ga",
+        "800 ga",
+        "8000 ga"
+      ],
+      "t": 0,
+      "izoh": "1 km² = 1 000 000 m² va 1 ga = 10 000 m², demak 1 km² = 100 ga. Shunga ko'ra 0,8 km² = 0,8·100 = 80 ga. Kilometrni metrga aylantirgandagi 1000 koeffitsientini yuza uchun ishlatish 800 kabi xato beradi. Javob: 80 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#c6fb596c"
+    },
+    {
+      "q": "Kvadrat shaklidagi bolalar maydonchasining tomoni 250 sm. Uning yuzasi necha kvadrat metrni tashkil etadi?",
+      "v": [
+        "62 500 m²",
+        "625 m²",
+        "6,25 m²",
+        "0,625 m²"
+      ],
+      "t": 2,
+      "izoh": "Avval tomonni metrga o'tkazamiz: 250 sm = 2,5 m. Kvadrat yuzasi S = a² = 2,5² = 6,25 m². Agar tomonni aylantirmasdan 250² = 62 500 hisoblansa, natija kvadrat santimetrda chiqadi va uni m² deb yozish xato bo'ladi. Javob: 6,25 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#1d422fb4"
+    },
+    {
+      "q": "Uchta yer uchastkasining yuzasi 2 ga, 25 000 m² va 0,015 km² deb berilgan. Ularni o'sish tartibida joylashtirgan variantni tanlang.",
+      "v": [
+        "2 ga; 0,015 km²; 25 000 m²",
+        "25 000 m²; 2 ga; 0,015 km²",
+        "0,015 km²; 25 000 m²; 2 ga",
+        "0,015 km²; 2 ga; 25 000 m²"
+      ],
+      "t": 3,
+      "izoh": "Solishtirish uchun hammasini bitta birlikka keltiramiz. 2 ga = 20 000 m², 0,015 km² = 0,015·1 000 000 = 15 000 m², uchinchisi esa 25 000 m². Endi tartib aniq: 15 000 < 20 000 < 25 000. Javob: 0,015 km²; 2 ga; 25 000 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#facf2238"
+    },
+    {
+      "q": "Fermadagi suv baki 3,2 m³ suv sig'diradi. Bu hajm necha litrni tashkil etadi?",
+      "v": [
+        "3200 l",
+        "320 l",
+        "32 000 l",
+        "32 l"
+      ],
+      "t": 0,
+      "izoh": "1 m³ = 1000 dm³ va 1 dm³ = 1 l, demak 1 m³ = 1000 l. Shunga ko'ra 3,2 m³ = 3,2·1000 = 3200 l. Hajm birligi aylantirilganda koeffitsient 10³ bo'lishini unutish 320 kabi xato beradi. Javob: 3200 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#feb696a9"
+    },
+    {
+      "q": "Do'kondagi mineral suv shishasining hajmi 750 ml. Uni kub santimetrda va kub desimetrda to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "75 sm³ va 0,075 dm³",
+        "750 sm³ va 0,75 dm³",
+        "7500 sm³ va 7,5 dm³",
+        "750 sm³ va 7,5 dm³"
+      ],
+      "t": 1,
+      "izoh": "1 ml = 1 sm³ bo'lgani uchun 750 ml = 750 sm³. 1 dm³ = 1000 sm³ bo'lgani uchun 750 sm³ = 750 : 1000 = 0,75 dm³. Bu 0,75 litrga teng hajm. Javob: 750 sm³ va 0,75 dm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#ce812117"
+    },
+    {
+      "q": "Basseynning hajmi 1,8·10³ m³ ga teng. Undagi suvni to'kib, sig'imi 200 litr bo'lgan nechta bochkani to'ldirish mumkin?",
+      "v": [
+        "900 ta",
+        "90 000 ta",
+        "9000 ta",
+        "9 ta"
+      ],
+      "t": 2,
+      "izoh": "Avval hajmni litrga aylantiramiz: 1,8·10³ m³ = 1800 m³ = 1 800 000 l. Endi bochka sig'imiga bo'lamiz: 1 800 000 : 200 = 9000. Kub metrni litrga aylantirmasdan bo'lish 9 kabi xato beradi. Javob: 9000 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajm-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#ec8c857e"
+    },
+    {
+      "q": "Ichki hajmi 1 m³ bo'lgan qutiga qirrasi 1 dm bo'lgan nechta kubcha joylashadi?",
+      "v": [
+        "100 ta",
+        "10 ta",
+        "10 000 ta",
+        "1000 ta"
+      ],
+      "t": 3,
+      "izoh": "Kubchaning hajmi 1 dm³ ga teng. 1 m = 10 dm bo'lgani uchun 1 m³ = 10³ = 1000 dm³. Demak qutiga 1000 ta kubcha sig'adi. Uzunlik koeffitsienti 10 ni kub uchun ham 10 deb olish 10 kabi xato beradi. Javob: 1000 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#9c1aeb48"
+    },
+    {
+      "q": "Yuk mashinasi bir reysda 4,5 tonna sement tashiydi. Bu massa necha kilogrammni tashkil etadi?",
+      "v": [
+        "4500 kg",
+        "450 kg",
+        "45 000 kg",
+        "45 kg"
+      ],
+      "t": 0,
+      "izoh": "1 tonna = 1000 kg bo'lgani uchun tonnani kilogrammga aylantirishda 1000 ga ko'paytiriladi. Demak 4,5 t = 4,5·1000 = 4500 kg. Faqat 100 ga ko'paytirish 450 kabi xato beradi, chunki bu sentnerga tegishli koeffitsient. Javob: 4500 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "massa-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#38a8147a"
+    },
+    {
+      "q": "Bitta tabletkada 250 mg faol modda bor. Bir qutida 40 ta tabletka bo'lsa, qutidagi faol modda jami necha gramm?",
+      "v": [
+        "1 g",
+        "10 g",
+        "100 g",
+        "0,1 g"
+      ],
+      "t": 1,
+      "izoh": "Avval umumiy massani milligrammda topamiz: 250·40 = 10 000 mg. 1 g = 1000 mg bo'lgani uchun 10 000 mg = 10 000 : 1000 = 10 g. Milligrammni grammga aylantirishda 100 ga bo'lish 100 g kabi xato beradi. Javob: 10 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "massa-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#d0223d29"
+    },
+    {
+      "q": "Non zavodi omboriga 12 sentner un keltirildi. Bu miqdorni tonnada ifodalang.",
+      "v": [
+        "12 t",
+        "0,12 t",
+        "1,2 t",
+        "120 t"
+      ],
+      "t": 2,
+      "izoh": "1 sentner = 100 kg, demak 12 s = 1200 kg. 1 tonna = 1000 kg bo'lgani uchun 1200 : 1000 = 1,2 t. Sentnerni tonnaga to'g'ridan-to'g'ri tenglashtirish 12 t kabi xato beradi. Javob: 1,2 t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "massa-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#768cbd0c"
+    },
+    {
+      "q": "Bitta olmaning massasi 180 g, bir yashikda esa 25 ta olma bor. Yashikdagi olmalarning umumiy massasi necha kilogramm bo'ladi?",
+      "v": [
+        "45 kg",
+        "0,45 kg",
+        "450 kg",
+        "4,5 kg"
+      ],
+      "t": 3,
+      "izoh": "Umumiy massani grammda topamiz: 180·25 = 4500 g. 1 kg = 1000 g bo'lgani uchun 4500 g = 4500 : 1000 = 4,5 kg. Grammni kilogrammga aylantirishda 100 ga bo'lish 45 kg kabi xato beradi. Javob: 4,5 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "massa-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#b7184253"
+    },
+    {
+      "q": "Sut kombinati bir kunda 2,4·10⁴ kg sutni qayta ishlaydi. Bu massa necha tonnani tashkil etadi?",
+      "v": [
+        "24 t",
+        "240 t",
+        "2,4 t",
+        "2400 t"
+      ],
+      "t": 0,
+      "izoh": "Avval standart shakldan oddiy yozuvga o'tamiz: 2,4·10⁴ kg = 24 000 kg. 1 t = 1000 kg bo'lgani uchun 24 000 : 1000 = 24 t. Kilogrammni tonnaga aylantirishda 100 ga bo'lish 240 t kabi xato beradi. Javob: 24 t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "massa-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#44bea69f"
+    },
+    {
+      "q": "Bir sutkada necha sekund borligini standart shaklda ko'rsating.",
+      "v": [
+        "1,44·10³ s",
+        "8,64·10⁴ s",
+        "8,64·10³ s",
+        "3,6·10³ s"
+      ],
+      "t": 1,
+      "izoh": "Bir sutkada 24 soat, har soatda 60 daqiqa, har daqiqada 60 sekund bor. Demak 24·60·60 = 86 400 sekund. Standart shaklda bu 8,64·10⁴ s bo'ladi. Bir soatdagi 3600 sekund yoki bir sutkadagi 1440 daqiqa bilan chalkashtirmaslik kerak. Javob: 8,64·10⁴ s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vaqt-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#e57120eb"
+    },
+    {
+      "q": "Poyezd Toshkentdan Samarqandgacha yo'lda 3 soat 45 daqiqa yurdi. Bu vaqt necha daqiqaga teng?",
+      "v": [
+        "345 daqiqa",
+        "225 daqiqa",
+        "180 daqiqa",
+        "207 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Soatlarni daqiqaga aylantiramiz: 3 soat = 3·60 = 180 daqiqa. Unga qolgan 45 daqiqani qo'shamiz: 180 + 45 = 225 daqiqa. Vaqtni 3,45 soat deb yozib 60 ga ko'paytirish 207 kabi xato beradi, chunki 45 daqiqa 0,45 soat emas. Javob: 225 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vaqt-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#f061f61d"
+    },
+    {
+      "q": "Kosmik apparat parvozi 2,16·10⁵ sekund davom etdi. Bu vaqt necha soatni tashkil qiladi?",
+      "v": [
+        "6 soat",
+        "600 soat",
+        "60 soat",
+        "3600 soat"
+      ],
+      "t": 2,
+      "izoh": "Standart shaklni ochamiz: 2,16·10⁵ s = 216 000 s. Bir soatda 3600 sekund bor, shuning uchun 216 000 : 3600 = 60. Faqat 60 ga bo'lish daqiqani beradi va 3600 kabi xato javobga olib keladi. Javob: 60 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vaqt-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#7d054b0f"
+    },
+    {
+      "q": "Avtomat dastgoh bitta detalni 45 sekundda tayyorlaydi. U 8 soat davomida to'xtamasdan ishlasa, nechta detal tayyor bo'ladi?",
+      "v": [
+        "64 ta",
+        "6400 ta",
+        "480 ta",
+        "640 ta"
+      ],
+      "t": 3,
+      "izoh": "Ish vaqtini sekundga aylantiramiz: 8 soat = 8·3600 = 28 800 s. Endi bitta detalga ketadigan vaqtga bo'lamiz: 28 800 : 45 = 640. Vaqtni faqat daqiqaga aylantirib (8·60 = 480), bo'lishni umuman bajarmaslik 480 kabi xato beradi. Javob: 640 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vaqt-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#d091c733"
+    },
+    {
+      "q": "Bir qopda 25 kg 400 g un bor. Nonvoyxona kuniga 8 ta qop un ishlatadi. Kunlik un sarfi qancha bo'ladi?",
+      "v": [
+        "203 kg 200 g",
+        "200 kg 400 g",
+        "203 kg 20 g",
+        "208 kg"
+      ],
+      "t": 0,
+      "izoh": "Bitta qop massasini kilogrammda yozamiz: 25 kg 400 g = 25,4 kg. Sakkiz qop uchun 25,4·8 = 203,2 kg. Butun qismi 203 kg, kasr qismi 0,2 kg = 200 g. Massani 26 kg ga yumaloqlash 208 kg kabi xato beradi. Javob: 203 kg 200 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-birlikda-hisob",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#16754f3e"
+    },
+    {
+      "q": "Bir bo'lak pishloqning massasi 1 kg 250 g. Kilogrammi 68 000 so'mdan sotilsa, shu bo'lak necha so'm turadi?",
+      "v": [
+        "68 250 so'm",
+        "85 000 so'm",
+        "54 400 so'm",
+        "81 600 so'm"
+      ],
+      "t": 1,
+      "izoh": "Massani kilogrammda yozamiz: 1 kg 250 g = 1,25 kg. Narxni topamiz: 68 000·1,25 = 85 000 so'm. Grammlarni to'g'ridan-to'g'ri so'mga qo'shish 68 250 kabi, bo'lish esa 54 400 kabi xato beradi. Javob: 85 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-birlikda-hisob",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#38cdc150"
+    },
+    {
+      "q": "Suv isitgich 2 soat 30 daqiqada 450 litr suvni isitadi. Bir soatda o'rtacha necha litr suv isitiladi?",
+      "v": [
+        "225 l",
+        "180 l",
+        "150 l",
+        "1125 l"
+      ],
+      "t": 1,
+      "izoh": "Vaqtni soatda yozamiz: 2 soat 30 daqiqa = 2,5 soat. Bir soatlik unumni topamiz: 450 : 2,5 = 180 l. Daqiqalarni tashlab yuborib 450 : 2 = 225 deb hisoblash yoki 3 soatga yumaloqlab 150 chiqarish keng tarqalgan xato. Javob: 180 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-birlikda-hisob",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#ea2c001f"
+    },
+    {
+      "q": "Ishchi 1 soat 20 daqiqada 24 ta detal yasaydi. Shu tezlikda ishlasa, 4 soatda nechta detal tayyorlaydi?",
+      "v": [
+        "96 ta",
+        "80 ta",
+        "72 ta",
+        "48 ta"
+      ],
+      "t": 2,
+      "izoh": "1 soat 20 daqiqa = 80 daqiqa, 4 soat esa 240 daqiqa. Ish vaqti 240 : 80 = 3 marta ko'p, demak detallar ham 3 marta ko'p: 24·3 = 72 ta. Vaqtni 1,2 soat deb olish 80 kabi xato natijaga olib keladi. Javob: 72 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-birlikda-hisob",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#e152a50e"
+    },
+    {
+      "q": "Shahar yo'lida avtobus 72 km/soat tezlik bilan harakatlanmoqda. Bu tezlik metr/sekundda qanchani tashkil etadi?",
+      "v": [
+        "2 m/s",
+        "200 m/s",
+        "36 m/s",
+        "20 m/s"
+      ],
+      "t": 3,
+      "izoh": "Bir soatda 72 km, ya'ni 72 000 m yo'l bosiladi, bir soatda esa 3600 sekund bor. Tezlikni topamiz: 72 000 : 3600 = 20 m/s. Amalda km/soat ni 3,6 ga bo'lish qoidasi shundan kelib chiqadi, 2 ga bo'lish esa 36 kabi xato beradi. Javob: 20 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#9f0c72b2"
+    },
+    {
+      "q": "Velosiped poygasida sportchi 15 m/s tezlikni ko'rsatdi. Bu tezlik soatiga necha kilometrga to'g'ri keladi?",
+      "v": [
+        "54 km/soat",
+        "4,2 km/soat",
+        "150 km/soat",
+        "540 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Bir sekundda 15 m, bir soatda esa 3600 sekund bor: 15·3600 = 54 000 m. Buni kilometrga aylantiramiz: 54 000 : 1000 = 54 km. Qisqasi, m/s ni 3,6 ga ko'paytirish kerak; 3,6 ga bo'lish 4,2 kabi xato beradi. Javob: 54 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#994113e0"
+    },
+    {
+      "q": "Yorug'lik bo'shliqda 3·10⁸ m/s tezlik bilan tarqaladi. U bir daqiqada qancha masofani bosib o'tadi?",
+      "v": [
+        "1,8·10⁹ m",
+        "5·10⁶ m",
+        "1,8·10¹⁰ m",
+        "1,8·10¹¹ m"
+      ],
+      "t": 2,
+      "izoh": "Bir daqiqa 60 sekundga teng, shuning uchun masofa 3·10⁸·60 ga teng. 60 ni 6·10¹ deb yozamiz: 3·6 = 18 va 10⁸·10¹ = 10⁹, ya'ni 18·10⁹. Standart shaklga keltirsak 1,8·10¹⁰ m bo'ladi. Ko'paytirish o'rniga bo'lish 5·10⁶ kabi xato beradi. Javob: 1,8·10¹⁰ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlik-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#47b4248c"
+    },
+    {
+      "q": "Aziz velosipedda 20 daqiqada 6 km yo'l bosdi. Uning o'rtacha tezligi metr/sekundda qancha bo'ladi?",
+      "v": [
+        "18 m/s",
+        "0,3 m/s",
+        "300 m/s",
+        "5 m/s"
+      ],
+      "t": 3,
+      "izoh": "Masofani metrga, vaqtni sekundga aylantiramiz: 6 km = 6000 m, 20 daqiqa = 1200 s. Tezlik 6000 : 1200 = 5 m/s. Vaqtni daqiqada qoldirish 300 kabi, tezlikni km/soatda hisoblab birlikni almashtirmaslik esa 18 kabi xato beradi. Javob: 5 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlik-birligi-aylantirish",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#9dd16a16"
+    },
+    {
+      "q": "Dehqon 45 ar yerga kartoshka ekdi. Ekilgan maydon necha gektarga teng?",
+      "v": [
+        "0,45 ga",
+        "4,5 ga",
+        "45 ga",
+        "0,045 ga"
+      ],
+      "t": 0,
+      "izoh": "1 ar = 100 m², 1 gektar esa 10 000 m², demak 1 ga = 100 ar. Shunga ko'ra 45 ar = 45 : 100 = 0,45 ga. Arni 10 ga bo'lish 4,5 kabi xato natija beradi. Javob: 0,45 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yer-maydoni-gektar-ar",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#9743ed41"
+    },
+    {
+      "q": "Xo'jalikning 120 gektar paxta maydonidan har gektariga 32 sentnerdan hosil olindi. Jami necha tonna paxta yig'ilgan?",
+      "v": [
+        "3840 t",
+        "384 t",
+        "38,4 t",
+        "3,84 t"
+      ],
+      "t": 1,
+      "izoh": "Umumiy hosilni sentnerda topamiz: 120·32 = 3840 sentner. 1 t = 10 sentner bo'lgani uchun 3840 : 10 = 384 t. Sentnerni tonnaga aylantirishni unutish 3840 t kabi ishonarsiz natija beradi. Javob: 384 t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yer-maydoni-gektar-ar",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#f0c0cf6c"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi dalaning tomonlari 800 m va 250 m. Uning yuzasi necha gektarni tashkil etadi?",
+      "v": [
+        "200 ga",
+        "2 ga",
+        "20 ga",
+        "2000 ga"
+      ],
+      "t": 2,
+      "izoh": "Yuzani topamiz: S = 800·250 = 200 000 m². 1 ga = 10 000 m² bo'lgani uchun 200 000 : 10 000 = 20 ga. Yuzani 1000 ga bo'lish 200 ga kabi xato beradi, chunki bu koeffitsient gektarga tegishli emas. Javob: 20 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yer-maydoni-gektar-ar",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#a347de1f"
+    },
+    {
+      "q": "Bog'dorchilik xo'jaligining 6,5 ga yeri bor va har 100 m² maydonga 4 tupdan ko'chat ekiladi. Jami nechta ko'chat kerak bo'ladi?",
+      "v": [
+        "260 ta",
+        "26 000 ta",
+        "2600 ta",
+        "650 ta"
+      ],
+      "t": 2,
+      "izoh": "Maydonni kvadrat metrga aylantiramiz: 6,5 ga = 6,5·10 000 = 65 000 m². Uni 100 m² li bo'laklarga ajratamiz: 65 000 : 100 = 650 bo'lak. Har bo'lakka 4 tupdan ekilgani uchun 650·4 = 2600 ta ko'chat kerak. Oxirgi qadamni tashlab ketish 650 kabi xato beradi. Javob: 2600 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yer-maydoni-gektar-ar",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#56ed8f06"
+    },
+    {
+      "q": "Oila bir oyda 18 m³ suv sarfladi, har kub metr suv uchun 2 800 so'm to'lanadi. Oylik to'lov qancha bo'ladi?",
+      "v": [
+        "50 400 so'm",
+        "5 040 so'm",
+        "504 000 so'm",
+        "2 818 so'm"
+      ],
+      "t": 0,
+      "izoh": "To'lov sarflangan hajmni tarifga ko'paytirish bilan topiladi: 18·2 800. Avval 18·28 = 504, so'ng ikkita nol qo'shamiz: 50 400 so'm. Ko'paytirish o'rniga qo'shish 2 818 kabi mantiqsiz natija beradi. Javob: 50 400 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "suv-sarfi-hajm-hisobi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#ec78ee7a"
+    },
+    {
+      "q": "Nosoz jo'mrakdan har daqiqada 12 litr suv oqib turadi. Ikki soat ichida necha kub metr suv behuda ketadi?",
+      "v": [
+        "14,4 m³",
+        "0,144 m³",
+        "1,44 m³",
+        "144 m³"
+      ],
+      "t": 2,
+      "izoh": "Ikki soat 120 daqiqaga teng, demak oqqan suv 12·120 = 1440 litr. 1 m³ = 1000 l bo'lgani uchun 1440 : 1000 = 1,44 m³. Litrni kub metrga aylantirishda 100 ga bo'lish 14,4 kabi xato beradi. Javob: 1,44 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "suv-sarfi-hajm-hisobi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#57c355a5"
+    },
+    {
+      "q": "Suv omborida 4,5·10⁷ m³ suv zaxirasi bor, shahar esa kuniga 1,5·10⁵ m³ suv iste'mol qiladi. Zaxira necha kunga yetadi?",
+      "v": [
+        "30 kun",
+        "3000 kun",
+        "3 kun",
+        "300 kun"
+      ],
+      "t": 3,
+      "izoh": "Zaxirani kunlik sarfga bo'lamiz: (4,5·10⁷) : (1,5·10⁵). Ko'paytuvchilar 4,5 : 1,5 = 3, ko'rsatkichlar 7 − 5 = 2, ya'ni 3·10² = 300. Ko'rsatkichlarni ayirishda xato qilish 30 yoki 3000 kabi javoblarga olib keladi. Javob: 300 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "suv-sarfi-hajm-hisobi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#8b2871a5"
+    },
+    {
+      "q": "Sug'orish kanalidan har sekundda 2,5 m³ suv oqib o'tadi. Bir soat davomida qancha suv oqadi?",
+      "v": [
+        "9·10³ m³",
+        "9·10² m³",
+        "1,5·10² m³",
+        "9·10⁴ m³"
+      ],
+      "t": 0,
+      "izoh": "Bir soatda 3600 sekund bor, shuning uchun hajm 2,5·3600 = 9000 m³ ga teng. Standart shaklda bu 9·10³ m³ bo'ladi. Faqat bir daqiqalik oqimni hisoblab to'xtash 1,5·10² kabi xato beradi. Javob: 9·10³ m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suv-sarfi-hajm-hisobi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#58b71757"
+    },
+    {
+      "q": "Atomning diametri taxminan 1,2·10⁻¹⁰ m. Agar 5000 ta atom yonma-yon tizilsa, ular egallagan uzunlik qancha bo'ladi?",
+      "v": [
+        "6·10⁻⁶ m",
+        "6·10⁻⁷ m",
+        "6·10⁻³⁰ m",
+        "6·10⁻⁸ m"
+      ],
+      "t": 1,
+      "izoh": "5000 ni standart shaklda yozamiz: 5000 = 5·10³. Ko'paytiramiz: 1,2·5 = 6 va 10⁻¹⁰·10³ = 10⁻⁷. Ko'rsatkichlarni qo'shishda manfiy son bilan ishlashni chalkashtirish 10⁻³⁰ kabi xato beradi. Javob: 6·10⁻⁷ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mikro-olcham-standart-shakl",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#41a69ba9"
+    },
+    {
+      "q": "Elektronning massasi 9,1·10⁻³¹ kg, protonniki esa 1,67·10⁻²⁷ kg. Proton elektrondan taxminan necha marta og'ir?",
+      "v": [
+        "1,8·10⁴ marta",
+        "5,4·10⁻⁴ marta",
+        "1,8·10³ marta",
+        "1,8·10² marta"
+      ],
+      "t": 2,
+      "izoh": "Kattasini kichigiga bo'lamiz: (1,67·10⁻²⁷) : (9,1·10⁻³¹). Ko'paytuvchilar 1,67 : 9,1 ≈ 0,18, ko'rsatkichlar −27 − (−31) = 4, ya'ni 0,18·10⁴. Buni standart shaklga keltirsak 1,8·10³ bo'ladi. Bo'linuvchi bilan bo'luvchini almashtirish 5,4·10⁻⁴ kabi teskari natija beradi. Javob: 1,8·10³ marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mikro-olcham-standart-shakl",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#b4693bc7"
+    },
+    {
+      "q": "Inson sochining qalinligi 7·10⁻⁵ m ga yaqin. Bu qalinlikni mikrometrda ifodalang.",
+      "v": [
+        "7 mkm",
+        "0,7 mkm",
+        "700 mkm",
+        "70 mkm"
+      ],
+      "t": 3,
+      "izoh": "1 mkm = 10⁻⁶ m, shuning uchun berilgan qiymatni shu ko'rinishga keltiramiz: 7·10⁻⁵ = 70·10⁻⁶. Demak qalinlik 70 mikrometrga teng. Ko'rsatkichni o'zgartirmasdan 7 mkm deb yozish keng tarqalgan xato. Javob: 70 mkm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mikro-olcham-standart-shakl",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#70c25d84"
+    },
+    {
+      "q": "Bitta hujayraning massasi taxminan 3·10⁻⁹ g. Bir gramm to'qimada qanchaga yaqin hujayra bo'lishi mumkin?",
+      "v": [
+        "3,3·10⁸ ta",
+        "3·10⁹ ta",
+        "3,3·10⁹ ta",
+        "3,3·10⁷ ta"
+      ],
+      "t": 0,
+      "izoh": "Hujayralar sonini topish uchun umumiy massani bitta hujayra massasiga bo'lamiz: 1 : (3·10⁻⁹). Bu 0,33·10⁹ ga teng, chunki manfiy ko'rsatkichli songa bo'lish musbat ko'rsatkich beradi. Standart shaklga keltirsak 3,3·10⁸ bo'ladi. Javob: 3,3·10⁸ ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mikro-olcham-standart-shakl",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#a7fae71b"
+    },
+    {
+      "q": "Yerdan Oygacha bo'lgan masofa 3,84·10⁵ km. Radiosignal 3·10⁵ km/s tezlikda tarqalsa, u qancha vaqtda Oyga yetadi?",
+      "v": [
+        "12,8 s",
+        "1,28 s",
+        "0,128 s",
+        "128 s"
+      ],
+      "t": 1,
+      "izoh": "Vaqt masofani tezlikka bo'lish orqali topiladi: (3,84·10⁵) : (3·10⁵). Ko'paytuvchilar 3,84 : 3 = 1,28, ko'rsatkichlar 5 − 5 = 0, ya'ni 10⁰ = 1. Demak signal 1,28 sekundda yetib boradi. Ko'rsatkichlarni noto'g'ri ayirish 12,8 yoki 0,128 kabi javoblarga olib keladi. Javob: 1,28 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "astronomik-masofa-hisobi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#4c0718c4"
+    },
+    {
+      "q": "Bir yorug'lik yili 9,46·10¹² km ga teng. Yulduzgacha bo'lgan masofa 4,2 yorug'lik yili bo'lsa, u necha kilometrni tashkil etadi?",
+      "v": [
+        "3,97·10¹² km",
+        "2,25·10¹² km",
+        "3,97·10¹³ km",
+        "3,97·10¹⁴ km"
+      ],
+      "t": 2,
+      "izoh": "Masofani topish uchun bir yorug'lik yilini 4,2 ga ko'paytiramiz: 9,46·4,2 = 39,732, daraja 10¹² qoladi. 39,7 soni 10 dan katta bo'lgani uchun uni 3,97 ga aylantirib, ko'rsatkichni bittaga oshiramiz. Ko'paytirish o'rniga bo'lish 2,25 kabi xato beradi. Javob: 3,97·10¹³ km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "astronomik-masofa-hisobi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#c3f6fe3d"
+    },
+    {
+      "q": "Quyoshdan Yergacha bo'lgan masofa 1,5·10⁸ km, yorug'lik tezligi esa 3·10⁵ km/s. Yorug'lik Yerga qancha vaqtda yetib keladi?",
+      "v": [
+        "5 daqiqa",
+        "83 daqiqa 20 sekund",
+        "8 daqiqa 33 sekund",
+        "8 daqiqa 20 sekund"
+      ],
+      "t": 3,
+      "izoh": "Vaqtni topamiz: (1,5·10⁸) : (3·10⁵) = 0,5·10³ = 500 s. Endi sekundni daqiqaga aylantiramiz: 500 : 60 = 8, qoldiq esa 20 sekund. Sekundni 100 ga bo'lish 5 daqiqa kabi, bo'linmaning kasr qismini to'g'ridan-to'g'ri sekund deb yozish esa 8 daqiqa 33 sekund kabi xato beradi. Javob: 8 daqiqa 20 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "astronomik-masofa-hisobi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#443400cd"
+    },
+    {
+      "q": "Yupiterning Quyoshdan o'rtacha uzoqligi 7,8·10⁸ km, Yerniki esa 1,5·10⁸ km. Yupiter Quyoshdan necha marta uzoqroq joylashgan?",
+      "v": [
+        "5,2 marta",
+        "52 marta",
+        "0,19 marta",
+        "5,2·10³ marta"
+      ],
+      "t": 0,
+      "izoh": "Nisbatni topamiz: (7,8·10⁸) : (1,5·10⁸). Darajalar bir xil bo'lgani uchun ular qisqaradi va 10⁰ = 1 qoladi. Ko'paytuvchilarni bo'lamiz: 7,8 : 1,5 = 5,2. Nisbatni teskari olish 0,19 kabi xato beradi. Javob: 5,2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "astronomik-masofa-hisobi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#73a30bdb"
+    },
+    {
+      "q": "Birlik oldidagi prefikslarning qiymati to'g'ri berilgan qatorni tanlang.",
+      "v": [
+        "kilo = 10², mega = 10⁵, milli = 10⁻²",
+        "kilo = 10³, mega = 10⁶, milli = 10⁻³",
+        "kilo = 10³, mega = 10⁹, milli = 10⁻⁶",
+        "kilo = 10⁶, mega = 10³, milli = 10⁻³"
+      ],
+      "t": 1,
+      "izoh": "Kilo prefiksi mingni, ya'ni 10³ ni bildiradi: 1 km = 1000 m. Mega millionni bildiradi, ya'ni 10⁶. Milli esa mingdan birni, ya'ni 10⁻³ ni anglatadi: 1 mm = 0,001 m. Mega bilan giga (10⁹) ni chalkashtirish keng tarqalgan xato. Javob: kilo = 10³, mega = 10⁶, milli = 10⁻³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-prefiksi-manosi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#6afc3473"
+    },
+    {
+      "q": "Xotira kartasining hajmi 5 gigabayt. Uni megabaytda standart shaklda ifodalang, bunda 1 GB = 10³ MB deb olinsin.",
+      "v": [
+        "5·10⁶ MB",
+        "5·10² MB",
+        "5·10³ MB",
+        "5·10⁹ MB"
+      ],
+      "t": 2,
+      "izoh": "Shart bo'yicha 1 GB = 10³ MB, demak 5 GB = 5·10³ MB. Bu 5000 megabaytga teng. Giga prefiksining o'zi 10⁹ bo'lgani bilan bu yerda hisob bayt emas, megabaytda yuritilmoqda. Javob: 5·10³ MB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-prefiksi-manosi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#90c96f14"
+    },
+    {
+      "q": "Kichik issiqlik elektr stansiyasining quvvati 2,5 megavattni tashkil etadi. Bu quvvatni vattda standart shaklda yozing.",
+      "v": [
+        "2,5·10³ Vt",
+        "2,5·10⁹ Vt",
+        "2,5·10⁵ Vt",
+        "2,5·10⁶ Vt"
+      ],
+      "t": 3,
+      "izoh": "Mega prefiksi 10⁶ ni bildiradi, ya'ni 1 MVt = 1 000 000 Vt. Shunga ko'ra 2,5 MVt = 2,5·10⁶ Vt. Mega o'rniga kilo koeffitsientini olish 2,5·10³ kabi xato beradi. Javob: 2,5·10⁶ Vt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-prefiksi-manosi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#9e6febb7"
+    },
+    {
+      "q": "Nanotexnologiyada o'lchamlar nanometrda beriladi. 250 nm uzunlik metrda standart shaklda qanday yoziladi?",
+      "v": [
+        "2,5·10⁻⁷ m",
+        "2,5·10⁻⁹ m",
+        "2,5·10⁻⁶ m",
+        "2,5·10⁻¹¹ m"
+      ],
+      "t": 0,
+      "izoh": "1 nm = 10⁻⁹ m bo'lgani uchun 250 nm = 250·10⁻⁹ m. 250 ni standart shaklda yozamiz: 2,5·10². Ko'rsatkichlarni qo'shamiz: 2 + (−9) = −7. Javob: 2,5·10⁻⁷ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-prefiksi-manosi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#c8bf0203"
+    },
+    {
+      "q": "Temirning zichligi 7,8 g/sm³ ga teng. Hajmi 1 dm³ bo'lgan temir bo'lakning massasi necha kilogramm?",
+      "v": [
+        "78 kg",
+        "7,8 kg",
+        "0,78 kg",
+        "780 kg"
+      ],
+      "t": 1,
+      "izoh": "Avval hajmni kub santimetrga aylantiramiz: 1 dm³ = 1000 sm³. Massani topamiz: 7,8·1000 = 7800 g. Grammni kilogrammga o'tkazamiz: 7800 : 1000 = 7,8 kg. Grammni kilogrammga o'tkazishda 1000 ga emas, 100 ga bo'lish 78 kg kabi xato beradi. Javob: 7,8 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zichlik-va-birlik-hisobi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#36380c6f"
+    },
+    {
+      "q": "Yog'och bo'lakning hajmi 0,25 m³, zichligi esa 600 kg/m³. Uning massasini toping.",
+      "v": [
+        "2400 kg",
+        "15 kg",
+        "150 kg",
+        "1500 kg"
+      ],
+      "t": 2,
+      "izoh": "Massa zichlik bilan hajmning ko'paytmasiga teng: m = 600·0,25 = 150 kg. Zichlikni hajmga bo'lish 2400 kg kabi haqiqatga mos kelmaydigan natija beradi. O'nli kasrga ko'paytirishda vergul o'rnini adashtirish esa 15 kg beradi. Javob: 150 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zichlik-va-birlik-hisobi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#32abec4e"
+    },
+    {
+      "q": "Benzinning zichligi 0,72 kg/l. Bakka quyilgan 40 litr benzinning massasi necha kilogramm bo'ladi?",
+      "v": [
+        "55,6 kg",
+        "288 kg",
+        "2,88 kg",
+        "28,8 kg"
+      ],
+      "t": 3,
+      "izoh": "Massa zichlikni hajmga ko'paytirish bilan topiladi: 0,72·40 = 28,8 kg. Bo'lish amali 55,6 kg kabi xato beradi, vergulni noto'g'ri qo'yish esa 288 yoki 2,88 ga olib keladi. Javob: 28,8 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zichlik-va-birlik-hisobi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#01042483"
+    },
+    {
+      "q": "Suvning zichligi 1000 kg/m³. Idishdagi 250 litr suvning massasi qanchani tashkil etadi?",
+      "v": [
+        "250 kg",
+        "2500 kg",
+        "25 kg",
+        "250 000 kg"
+      ],
+      "t": 0,
+      "izoh": "Avval hajmni kub metrga aylantiramiz: 250 l = 0,25 m³, chunki 1 m³ = 1000 l. Massani topamiz: 1000·0,25 = 250 kg. Litrni kub metr deb olib 250·1000 hisoblash 250 000 kg kabi mantiqsiz natija beradi. Javob: 250 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zichlik-va-birlik-hisobi",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#4d8a8ca8"
+    },
+    {
+      "q": "Quyidagi o'lchovlardan qaysi biri haqiqatga mos kelmaydi: bolaning bo'yi 1,3 m, olmaning massasi 150 g, sinf xonasining yuzasi 45 km², choynakning hajmi 1,2 l?",
+      "v": [
+        "Bolaning bo'yi 1,3 m",
+        "Olmaning massasi 150 g",
+        "Sinf xonasining yuzasi 45 km²",
+        "Choynakning hajmi 1,2 l"
+      ],
+      "t": 2,
+      "izoh": "1 km² tomoni bir kilometr bo'lgan kvadratning yuzasi, ya'ni 1 000 000 m². 45 km² butun bir shaharcha maydoniga to'g'ri keladi, sinf xonasi esa taxminan 45 m² bo'ladi. Qolgan uchta o'lcham hayotiy qiymatlarga mos. Javob: sinf xonasining yuzasi 45 km².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "olcham-birligini-tanlash",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#a0434e47"
+    },
+    {
+      "q": "Daryo ustidagi ko'prikning uzunligini o'lchash uchun eng qulay birlikni tanlang.",
+      "v": [
+        "millimetr",
+        "metr",
+        "kilometr",
+        "mikrometr"
+      ],
+      "t": 1,
+      "izoh": "Ko'priklarning uzunligi odatda o'nlab yoki yuzlab metr atrofida bo'ladi. Millimetr juda mayda, natijada olti xonali son chiqadi; kilometr esa juda yirik, natija bir sondan kichik kasr bo'lib qoladi. Mikrometr mikroskopik o'lchamlar uchun ishlatiladi. Javob: metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "olcham-birligini-tanlash",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#d705f70b"
+    },
+    {
+      "q": "Talaba tajribada probirkadagi suyuqlik hajmini 35 deb yozdi, ammo birligini ko'rsatmadi. Qaysi birlik bu qiymatga eng mos keladi?",
+      "v": [
+        "litr",
+        "kub metr",
+        "kub kilometr",
+        "millilitr"
+      ],
+      "t": 3,
+      "izoh": "Probirka kichik shisha idish bo'lib, unga bir necha o'n millilitr suyuqlik sig'adi. 35 litr katta bochkaga, 35 m³ esa butun basseynga to'g'ri keladi. Shuning uchun bu yerda faqat millilitr mantiqiy. Javob: millilitr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "olcham-birligini-tanlash",
+      "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov#743943cd"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Hosilaning fizik ma'nosi",
+  "bolim": "Matematik analiz asoslari",
+  "blok": "anlz",
+  "rasmiyBolim": 5,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Yuk mashinasi to'g'ri chiziq bo'ylab s(t) = 2t³ − 3t² + 5t qonuniyat bilan harakatlanadi, bunda s metrda, t soniyada olingan. Mashinaning t = 2 s paytdagi lahzali tezligini toping.",
+      "v": [
+        "14 m/s",
+        "17 m/s",
+        "12 m/s",
+        "18 m/s"
+      ],
+      "t": 1,
+      "izoh": "Hosilaning fizik ma'nosiga ko'ra tezlik v(t) = s'(t). Hosilani olamiz: v(t) = 6t² − 6t + 5. Endi t = 2 ni qo'yamiz: v(2) = 6·4 − 6·2 + 5 = 24 − 12 + 5 = 17. 14 m/s — bu s(2), ya'ni bosib o'tilgan yo'l, tezlik emas. 12 m/s — 5 hadi tushib qolgan. 18 m/s — bu a(2), tezlanish. Javob: 17 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-lahzali-kophad",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#ee9f8cf7"
+    },
+    {
+      "q": "Kuzatuv droni vertikal ustunga qarab s(t) = t³ − 4t² + 12t qonun bo'yicha uchadi (s — metr, t — soniya). Uchishning to'rtinchi soniyasidagi lahzali tezligi qanday bo'ladi?",
+      "v": [
+        "48 m/s",
+        "12 m/s",
+        "28 m/s",
+        "16 m/s"
+      ],
+      "t": 2,
+      "izoh": "Tezlik yo'l funksiyasining hosilasi: v(t) = 3t² − 8t + 12. t = 4 da v(4) = 3·16 − 8·4 + 12 = 48 − 32 + 12 = 28. 48 m/s — bu s(4) qiymati, ya'ni o'tilgan yo'l. 12 m/s — s(4) : 4, bu o'rtacha tezlik, lahzali emas. 16 m/s — a(4) tezlanish. Javob: 28 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-lahzali-kophad",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#054b47ec"
+    },
+    {
+      "q": "Velosiped mashg'ulotida Jasurning bosib o'tgan yo'li s(t) = 0,1t³ + 3t formula bilan ifodalanadi, bu yerda s metrda, t soniyada. Startdan keyingi 5-soniyada uning lahzali tezligi nechaga teng?",
+      "v": [
+        "27,5 m/s",
+        "7,5 m/s",
+        "10,5 m/s",
+        "3 m/s"
+      ],
+      "t": 2,
+      "izoh": "Tezlik hosila orqali topiladi: v(t) = 0,3t² + 3. t = 5 uchun v(5) = 0,3·25 + 3 = 7,5 + 3 = 10,5. 27,5 m/s — bu s(5), ya'ni o'tilgan masofa. 7,5 m/s — oxirgi hadning hosilasi bo'lgan 3 qo'shilmay qolgan. 3 m/s — bu a(5) = 0,6·5, ya'ni tezlanish. Javob: 10,5 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-lahzali-kophad",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#163f64ec"
+    },
+    {
+      "q": "Avtomobil tekis yo'ldan s(t) = 15t + 0,5t² qonun bilan harakatlanmoqda (s — metr, t — soniya). Harakat boshlangandan 6 soniya o'tgach uning spidometri qanday tezlikni ko'rsatadi?",
+      "v": [
+        "18 m/s",
+        "21 m/s",
+        "108 m/s",
+        "1 m/s"
+      ],
+      "t": 1,
+      "izoh": "Spidometr lahzali tezlikni ko'rsatadi, u esa v(t) = s'(t) = 15 + t. Demak v(6) = 15 + 6 = 21. 18 m/s — 0,5t² ning hosilasi xato ravishda 0,5t deb olingan. 108 m/s — bu s(6) = 90 + 18, ya'ni yo'l. 1 m/s — a = 1, tezlanish qiymati. Javob: 21 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-lahzali-kophad",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#3283ec56"
+    },
+    {
+      "q": "Moddiy nuqta s(t) = 4t² − t + 3 qonuniyat bo'yicha harakatlanadi, bunda s metrda va t soniyada o'lchanadi. Nuqtaning uchinchi soniya oxiridagi lahzali tezligini hisoblang.",
+      "v": [
+        "24 m/s",
+        "36 m/s",
+        "8 m/s",
+        "23 m/s"
+      ],
+      "t": 3,
+      "izoh": "Avval hosilani olamiz: v(t) = 8t − 1. So'ng t = 3 ni qo'yamiz: v(3) = 8·3 − 1 = 24 − 1 = 23. 24 m/s — −1 hadi hisobga olinmagan. 36 m/s — bu s(3) = 36 − 3 + 3, ya'ni koordinata. 8 m/s — a(t) = 8 tezlanish. Javob: 23 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-lahzali-kophad",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#bee81524"
+    },
+    {
+      "q": "Jismning harakat qonuni s(t) = t⁴ − 2t³ + 5t ko'rinishida berilgan (s — metr, t — soniya). Ikkinchi soniyada jismning tezlanishi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "24 m/s²",
+        "13 m/s²",
+        "36 m/s²",
+        "48 m/s²"
+      ],
+      "t": 0,
+      "izoh": "Tezlanish yo'lning ikkinchi tartibli hosilasi: avval v(t) = 4t³ − 6t² + 5, keyin a(t) = 12t² − 12t. t = 2 da a(2) = 12·4 − 12·2 = 48 − 24 = 24. 13 m/s² — bu v(2) = 32 − 24 + 5, ya'ni tezlik. 36 m/s² — uchinchi hosila 24t − 12 ning qiymati. 48 m/s² — ikkinchi had tushib qolgan. Javob: 24 m/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-ikkinchi-hosila",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#c6392d12"
+    },
+    {
+      "q": "Model raketa uchirilgandan keyin ko'tarilish balandligi h(t) = 5t³ + 2t² formulaga bo'ysunadi (h — metr, t — soniya). Uchinchi soniyadagi tezlanishini toping.",
+      "v": [
+        "147 m/s²",
+        "90 m/s²",
+        "94 m/s²",
+        "30 m/s²"
+      ],
+      "t": 2,
+      "izoh": "Balandlikdan ikki marta hosila olamiz: v(t) = 15t² + 4t, so'ngra a(t) = 30t + 4. t = 3 uchun a(3) = 30·3 + 4 = 90 + 4 = 94. 147 m/s² — bu v(3) = 135 + 12, ya'ni tezlik. 90 m/s² — 2t² hadidan kelgan 4 qo'shilmagan. 30 m/s² — faqat koeffitsient olingan. Javob: 94 m/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-ikkinchi-hosila",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#5b5e9d28"
+    },
+    {
+      "q": "Konda ishlaydigan vagonetka relslar bo'ylab s(t) = 2t³ − 9t² + 12t qonun bilan siljiydi (s — metr, t — soniya). Birinchi soniya oxirida vagonetkaning tezlanishi qanday bo'ladi?",
+      "v": [
+        "6 m/s²",
+        "12 m/s²",
+        "−6 m/s²",
+        "0 m/s²"
+      ],
+      "t": 2,
+      "izoh": "Ketma-ket ikki marta hosila olamiz: v(t) = 6t² − 18t + 12, a(t) = 12t − 18. t = 1 da a(1) = 12 − 18 = −6. Manfiy ishora tezlanish harakatga qarama-qarshi yo'nalganini bildiradi. 6 m/s² — ishora almashtirilgan. 12 m/s² — −18 hadi tushirilgan. 0 m/s² — bu v(1) qiymati. Javob: −6 m/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-ikkinchi-hosila",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#23296bd1"
+    },
+    {
+      "q": "Yuk ko'targich platformasi s(t) = 0,5t³ + t² qonuniyat bo'yicha ko'tariladi, bunda s metrda, t soniyada. To'rtinchi soniyadagi tezlanish qiymatini hisoblang.",
+      "v": [
+        "14 m/s²",
+        "12 m/s²",
+        "32 m/s²",
+        "50 m/s²"
+      ],
+      "t": 0,
+      "izoh": "Birinchi hosila v(t) = 1,5t² + 2t, ikkinchi hosila a(t) = 3t + 2. t = 4 ni qo'ysak a(4) = 12 + 2 = 14. Bu qonunda v(t) = t(1,5t + 2) ≥ 0, ya'ni platforma haqiqatan yuqoriga ko'tarilib boradi. 12 m/s² — oxirgi +2 hadi unutilgan. 32 m/s² — bu v(4) = 24 + 8, ya'ni tezlik, tezlanish emas. 50 m/s² — a(t) ga t o'rniga t² qo'yib yuborilgan. Javob: 14 m/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-ikkinchi-hosila",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#d0c58f85"
+    },
+    {
+      "q": "Jismning harakat tenglamasi s(t) = 7t² − t³ + 4t bo'lsa (s — metr, t — soniya), harakat boshlangan paytdagi, ya'ni t = 0 dagi tezlanishini aniqlang.",
+      "v": [
+        "4 m/s²",
+        "14 m/s²",
+        "7 m/s²",
+        "−6 m/s²"
+      ],
+      "t": 1,
+      "izoh": "Tezlik v(t) = 14t − 3t² + 4, tezlanish a(t) = 14 − 6t. Boshlang'ich paytda t = 0, demak a(0) = 14 − 0 = 14. 4 m/s² — bu v(0), ya'ni boshlang'ich tezlik. 7 m/s² — 7t² hadining koeffitsienti ikkiga ko'paytirilmagan. −6 m/s² — a(t) dagi t oldidagi koeffitsient javob deb olingan. Javob: 14 m/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-ikkinchi-hosila",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#afb19854"
+    },
+    {
+      "q": "Moddiy nuqta s(t) = t³ − 6t² + 9t qonun bilan harakatlanadi (s — metr, t — soniya). Nuqtaning harakati qaysi paytlarda to'xtaydi, ya'ni tezligi nolga aylanadi?",
+      "v": [
+        "t = 0 s va t = 3 s",
+        "faqat t = 2 s",
+        "faqat t = 1 s",
+        "t = 1 s va t = 3 s"
+      ],
+      "t": 3,
+      "izoh": "To'xtash sharti v(t) = 0. Hosila: v(t) = 3t² − 12t + 9 = 3(t − 1)(t − 3). Ko'paytuvchilarni nolga tenglaymiz: t = 1 va t = 3. Ikkala payt ham javobga kiradi. t = 0 va t = 3 — bu s(t) = 0 tenglamaning ildizlari, ya'ni boshlang'ich nuqtaga qaytish payti. t = 2 — tezlanish nolga aylangan payt. Javob: t = 1 s va t = 3 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-toxtash-payti",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#c1d7a6fa"
+    },
+    {
+      "q": "Sinov maydonchasida harakatlanayotgan aravacha uchun s(t) = 2t³ − 15t² + 24t qonun o'rinli (s — metr, t — soniya). Aravacha ikkinchi marta qaysi paytda to'xtaydi?",
+      "v": [
+        "1 s",
+        "2,5 s",
+        "5 s",
+        "4 s"
+      ],
+      "t": 3,
+      "izoh": "Tezlik v(t) = 6t² − 30t + 24 = 6(t − 1)(t − 4). Nolga aylanish paytlari t = 1 va t = 4. Ular vaqt o'qida tartib bilan joylashgan, demak ikkinchi to'xtash t = 4 s da bo'ladi. 1 s — birinchi to'xtash payti. 2,5 s — a(t) = 12t − 30 nolga aylangan payt. 5 s — Viyet teoremasidagi ildizlar yig'indisi ildiz deb olingan. Javob: 4 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-toxtash-payti",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#85df397d"
+    },
+    {
+      "q": "Haydovchi tormozni bosgach avtomobil s(t) = 21t − 1,5t² qonuniyat bo'yicha siljiydi (s — metr, t — soniya). Avtomobil to'liq to'xtaguncha necha soniya o'tadi?",
+      "v": [
+        "7 s",
+        "14 s",
+        "10,5 s",
+        "3,5 s"
+      ],
+      "t": 0,
+      "izoh": "To'xtash paytida tezlik nolga teng bo'ladi. v(t) = 21 − 3t, shuning uchun 21 − 3t = 0 va t = 7. 14 s — s(t) = 0 tenglamaning ildizi, bu avtomobilning boshlang'ich nuqtaga qaytishi bo'lib, tormozlashda ma'nosiz. 10,5 s — 21 ni 2 ga bo'lish xatosi. 3,5 s — koeffitsient ikki marta ikkiga ko'paytirilgan. Javob: 7 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-toxtash-payti",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#da22cc41"
+    },
+    {
+      "q": "Suvga tashlangan shar chuqurlikka s(t) = 12t − t³ qonun bilan cho'kadi, bunda s metrda va t soniyada. Sharning cho'kishi qaysi paytda to'xtaydi?",
+      "v": [
+        "2 s",
+        "4 s",
+        "6 s",
+        "12 s"
+      ],
+      "t": 0,
+      "izoh": "To'xtash payti v(t) = 0 shartidan topiladi. Hosila v(t) = 12 − 3t², demak 3t² = 12, t² = 4 va musbat ildiz t = 2. 4 s — t² = 4 tenglamada kvadrat ildiz olish unutilgan. 6 s — t³ ning hosilasi 2t deb olingan. 12 s — koeffitsient to'g'ridan-to'g'ri vaqt deb qabul qilingan. Javob: 2 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-toxtash-payti",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#8d258829"
+    },
+    {
+      "q": "Moddiy nuqtaning harakat qonuni s(t) = t³ − 3t² + 3t ko'rinishida berilgan (s — metr, t — soniya). Nuqta harakat davomida umuman necha marta to'xtaydi va qaysi paytda?",
+      "v": [
+        "Ikki marta — t = 1 s va t = 3 s",
+        "Bir marta — t = 1 s da",
+        "Umuman to'xtamaydi",
+        "Uch marta to'xtaydi"
+      ],
+      "t": 1,
+      "izoh": "Tezlik v(t) = 3t² − 6t + 3 = 3(t − 1)². Bu ifoda to'la kvadrat bo'lgani uchun diskriminanti nolga teng va yagona ildiz t = 1 chiqadi. Karrali ildiz ikkita to'xtash degani emas — nuqta bir marta to'xtaydi va yana oldingi yo'nalishda davom etadi. Javob: bir marta, t = 1 s da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harakat-toxtash-payti",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#80bf2da9"
+    },
+    {
+      "q": "Avtomobil yo'lga chiqqach s(t) = 2t² + 5t qonuniyat bilan tezlanadi (s — metr, t — soniya). Uning tezligi 45 m/s ga yetishi uchun necha soniya kerak bo'ladi?",
+      "v": [
+        "10 s",
+        "11,25 s",
+        "20 s",
+        "40 s"
+      ],
+      "t": 0,
+      "izoh": "Tezlik v(t) = 4t + 5. Shartga ko'ra 4t + 5 = 45, bundan 4t = 40 va t = 10. 11,25 s — boshlang'ich tezlik 5 hisobga olinmay 45 : 4 qilingan. 20 s — 2t² ning hosilasi 2t deb olingan. 40 s — 4t = 40 dan t = 40 deb yozib yuborilgan. Javob: 10 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilgan-tezlikka-erishish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#d6f36a57"
+    },
+    {
+      "q": "Jism s(t) = t³ + 3t² qonuniyat bo'yicha harakatlanmoqda, bunda s metrda va t soniyada o'lchanadi. Jismning tezligi 45 m/s bo'lgan paytni toping.",
+      "v": [
+        "3 s",
+        "5 s",
+        "√15 s",
+        "7,5 s"
+      ],
+      "t": 0,
+      "izoh": "Tezlik v(t) = 3t² + 6t. Tenglama tuzamiz: 3t² + 6t = 45, ya'ni t² + 2t − 15 = 0. Ildizlari t = 3 va t = −5. Vaqt manfiy bo'lolmaydi, demak t = 3 s. 5 s — manfiy ildizning moduli olingan. √15 s — 6t hadi tashlab yuborilgan. 7,5 s — faqat 6t = 45 tenglama yechilgan. Javob: 3 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-tezlikka-erishish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#247ec7bf"
+    },
+    {
+      "q": "Yo'lovchi poyezdi bekatdan qo'zg'algach s(t) = 0,4t² + 12t qonun bilan harakatlanadi (s — metr, t — soniya). Poyezd 28 m/s tezlikka qachon erishadi?",
+      "v": [
+        "35 s",
+        "40 s",
+        "16 s",
+        "20 s"
+      ],
+      "t": 3,
+      "izoh": "Hosila: v(t) = 0,8t + 12. Tenglama 0,8t + 12 = 28 ko'rinishini oladi, bundan 0,8t = 16 va t = 20. 35 s — boshlang'ich tezlik 12 ayirilmay 28 : 0,8 qilingan. 40 s — hosilada koeffitsient ikkiga ko'paytirilmagan. 16 s — ayirma javob deb olingan, oxirgi bo'lish bajarilmagan. Javob: 20 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-tezlikka-erishish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#6901f8c0"
+    },
+    {
+      "q": "Moddiy nuqta s(t) = t³ − 12t qonuniyat bo'yicha harakatlanadi (s — metr, t — soniya). Uning tezligi 96 m/s qiymatga yetgan paytni aniqlang.",
+      "v": [
+        "36 s",
+        "32 s",
+        "6 s",
+        "4√2 s"
+      ],
+      "t": 2,
+      "izoh": "Tezlik v(t) = 3t² − 12. Shartdan 3t² − 12 = 96, ya'ni 3t² = 108 va t² = 36, musbat ildiz t = 6. 36 s — t² = 36 dan ildiz olinmagan. 32 s — 96 : 3 natijasi javob deb olingan. 4√2 s — −12 hadi hisobga olinmay 3t² = 96 yechilgan. Javob: 6 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-tezlikka-erishish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#9a9df76f"
+    },
+    {
+      "q": "Jism s(t) = t³ − 6t² + 20t qonun bilan harakatlanadi (s — metr, t — soniya). Jismning tezligi boshlang'ich tezligiga teng bo'lgan paytni toping.",
+      "v": [
+        "2 s",
+        "20 s",
+        "4 s",
+        "Hech qachon takrorlanmaydi"
+      ],
+      "t": 2,
+      "izoh": "Tezlik v(t) = 3t² − 12t + 20, boshlang'ich tezlik esa v(0) = 20 m/s. Tenglama: 3t² − 12t + 20 = 20, ya'ni 3t² − 12t = 0 va 3t(t − 4) = 0. Ildizlar t = 0 va t = 4, ammo t = 0 boshlang'ich paytning o'zi. Demak izlangan payt t = 4 s. 2 s — a(t) = 0 bo'lgan payt. 20 s — tezlik qiymati vaqt deb qabul qilingan. Javob: 4 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "berilgan-tezlikka-erishish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#d8415374"
+    },
+    {
+      "q": "Jismning harakat qonuni s(t) = 5t³ − 2t² + 7t − 4 ko'rinishida berilgan. Shu jismning ixtiyoriy t paytdagi tezligini ifodalovchi to'g'ri formulani tanlang.",
+      "v": [
+        "v(t) = 15t² − 4t + 7",
+        "v(t) = 15t² − 2t + 7",
+        "v(t) = 5t² − 2t + 7",
+        "v(t) = 30t − 4"
+      ],
+      "t": 0,
+      "izoh": "Tezlik yo'lning vaqt bo'yicha hosilasi: v(t) = s'(t). Har bir hadni alohida differensiallaymiz: (5t³)' = 15t², (−2t²)' = −4t, (7t)' = 7, (−4)' = 0. Demak v(t) = 15t² − 4t + 7. v(t) = 15t² − 2t + 7 variantida −2t² ning hosilasi −2t deb olingan, v(t) = 5t² − 2t + 7 da darajalar pasaytirilmagan, v(t) = 30t − 4 esa tezlik emas, tezlanish. Javob: v(t) = 15t² − 4t + 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-formulasini-tanlash",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#d8777cd8"
+    },
+    {
+      "q": "Moddiy nuqtaning harakat qonuni s(t) = 8t − t³/3 bilan berilgan bo'lsa, uning tezligini vaqtga bog'liq holda to'g'ri ifodalagan variantni ko'rsating.",
+      "v": [
+        "v(t) = 8 − t³",
+        "v(t) = 8 − 3t²",
+        "v(t) = 8 − t²",
+        "v(t) = 8 − t²/3"
+      ],
+      "t": 2,
+      "izoh": "Hosila olamiz: (8t)' = 8, (t³/3)' = 3t²/3 = t². Demak v(t) = 8 − t². v(t) = 8 − t³ variantida kubik had umuman differensiallanmagan, v(t) = 8 − 3t² da maxrajdagi 3 ga bo'lish unutilgan, v(t) = 8 − t²/3 da esa 3 ga ikki marta bo'lingan. Javob: v(t) = 8 − t².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-formulasini-tanlash",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#1f756330"
+    },
+    {
+      "q": "Jism s(t) = 4t³ + 5t² − 2t qonun bo'yicha harakatlanadi. Uning tezlanishini ixtiyoriy t payt uchun to'g'ri ifodalovchi formulani belgilang.",
+      "v": [
+        "a(t) = 12t² + 10t − 2",
+        "a(t) = 24t + 10",
+        "a(t) = 24t² + 10",
+        "a(t) = 12t + 5"
+      ],
+      "t": 1,
+      "izoh": "Tezlanish ikkinchi tartibli hosila: avval v(t) = 12t² + 10t − 2, so'ngra a(t) = v'(t) = 24t + 10. a(t) = 12t² + 10t − 2 deb ko'rsatilgan javobda tezlik tezlanish o'rniga olingan. a(t) = 24t² + 10 da t ning darajasi pasaytirilmagan. a(t) = 12t + 5 da koeffitsientlar ikkiga ko'paytirilmagan. Javob: a(t) = 24t + 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlik-formulasini-tanlash",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#b017a5a4"
+    },
+    {
+      "q": "Konveyerdagi detal s(t) = 3t² + 8t + 12 qonuniyat bilan siljiydi, bunda s santimetrda va t soniyada o'lchanadi. Detalning boshlang'ich tezligi nechaga teng?",
+      "v": [
+        "12 sm/s",
+        "0 sm/s",
+        "6 sm/s",
+        "8 sm/s"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich tezlik v(0) ga teng. Avval hosila: v(t) = 6t + 8. Endi t = 0 ni qo'yamiz: v(0) = 6·0 + 8 = 8. 12 sm/s — bu s(0), ya'ni boshlang'ich koordinata, tezlik emas. 0 sm/s — t = 0 da tezlik ham nol deb o'ylash xatosi. 6 sm/s — bu a(0), tezlanish. Javob: 8 sm/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boshlangich-tezlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#e3d9f958"
+    },
+    {
+      "q": "Bekzod to'pni tik yuqoriga otdi, uning balandligi h(t) = 25t − 5t² formula bilan ifodalanadi (h — metr, t — soniya). To'p qanday boshlang'ich tezlik bilan otilgan?",
+      "v": [
+        "25 m/s",
+        "20 m/s",
+        "0 m/s",
+        "10 m/s"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich tezlik v(0) bilan aniqlanadi. Hosila: v(t) = 25 − 10t, demak v(0) = 25 − 0 = 25. 20 m/s — 25 dan 5 ayirilgan, ya'ni koeffitsientlar noto'g'ri qo'shilgan. 0 m/s — eng yuqori nuqtadagi tezlik bilan chalkashtirilgan. 10 m/s — bu tezlanish moduli. Javob: 25 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boshlangich-tezlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#197a5954"
+    },
+    {
+      "q": "Moddiy nuqta s(t) = t³ − 4t² + 11t + 2 qonun bilan harakatlanadi (s — metr, t — soniya). Nuqtaning boshlang'ich tezligi va boshlang'ich tezlanishini birgalikda to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "v₀ = 2 m/s, a₀ = 11 m/s²",
+        "v₀ = 11 m/s, a₀ = 8 m/s²",
+        "v₀ = 11 m/s, a₀ = −8 m/s²",
+        "v₀ = 0 m/s, a₀ = −8 m/s²"
+      ],
+      "t": 2,
+      "izoh": "Hosilalarni topamiz: v(t) = 3t² − 8t + 11 va a(t) = 6t − 8. Endi t = 0 ni qo'yamiz: v(0) = 11 va a(0) = −8. v₀ = 2 m/s, a₀ = 11 m/s² javobida boshlang'ich koordinata bilan tezlik o'rni almashgan. v₀ = 11 m/s, a₀ = 8 m/s² da tezlanishning manfiy ishorasi tushirilgan. v₀ = 0 m/s, a₀ = −8 m/s² da boshlang'ich tezlik nol deb olingan. Javob: v₀ = 11 m/s, a₀ = −8 m/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boshlangich-tezlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#2067adaa"
+    },
+    {
+      "q": "Jismning harakat qonuni s(t) = t² + 4t bo'lsin (s — metr, t — soniya). Uning birinchi va uchinchi soniyalar orasidagi o'rtacha tezligi bilan uchinchi soniyadagi lahzali tezligi qanchaga farq qiladi?",
+      "v": [
+        "2 m/s",
+        "16 m/s",
+        "8 m/s",
+        "10 m/s"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha tezlik: s(3) = 9 + 12 = 21, s(1) = 1 + 4 = 5, demak (21 − 5) : (3 − 1) = 16 : 2 = 8 m/s. Lahzali tezlik: v(t) = 2t + 4, v(3) = 10 m/s. Farq 10 − 8 = 2 m/s. 16 m/s — oraliq uzunligiga bo'lish unutilgan. 8 va 10 — bu farq emas, qiymatlarning o'zi. Javob: 2 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-va-lahzali-tezlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#897599c2"
+    },
+    {
+      "q": "Sinov mashinasi s(t) = t³ − 2t² + 5t qonun bilan harakatlanadi (s — metr, t — soniya). Mashinaning dastlabki to'rt soniya davomidagi o'rtacha tezligini hisoblang.",
+      "v": [
+        "52 m/s",
+        "13 m/s",
+        "37 m/s",
+        "21 m/s"
+      ],
+      "t": 1,
+      "izoh": "O'rtacha tezlik yo'l orttirmasining vaqt orttirmasiga nisbati: s(4) = 64 − 32 + 20 = 52, s(0) = 0. Demak 52 : 4 = 13 m/s. 52 m/s — vaqtga bo'lish bajarilmagan. 37 m/s — bu v(4), ya'ni lahzali tezlik. 21 m/s — chetki tezliklar v(0) = 5 va v(4) = 37 ning o'rtacha arifmetigi, bu esa o'rtacha tezlik emas. Javob: 13 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-va-lahzali-tezlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#5f3b298e"
+    },
+    {
+      "q": "Nilufar avtomobilda 3 soatda 210 km yo'l bosdi, yo'l chetidagi radar esa uni bir lahzada 130 km/soat tezlikda qayd etdi. Bu ikki sonning matematik ma'nosini to'g'ri izohlagan javobni tanlang.",
+      "v": [
+        "Radar xato o'lchagan, chunki tezlik 70 km/soatdan oshishi mumkin emas",
+        "Ikkala son ham lahzali tezlik, faqat turli birlikda o'lchangan",
+        "70 km/soat — hosila qiymati, 130 km/soat esa o'rtacha tezlik",
+        "70 km/soat — s(t) ning uch soatlik oraliqdagi o'rtacha o'zgarish tezligi, 130 km/soat esa aynan bir paytdagi hosila qiymati"
+      ],
+      "t": 3,
+      "izoh": "210 : 3 = 70 km/soat — bu kesuvchi chiziqning burchak koeffitsienti, ya'ni o'rtacha tezlik. Radar qayd etgan 130 km/soat esa urinma burchak koeffitsienti, ya'ni s'(t) ning bitta paytdagi qiymati. Lahzali tezlik o'rtachadan ancha katta bo'lishi mumkin, chunki yo'lning bir qismida mashina sekin yurgan. Javob: 70 km/soat — s(t) ning uch soatlik oraliqdagi o'rtacha o'zgarish tezligi, 130 km/soat esa aynan bir paytdagi hosila qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-va-lahzali-tezlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#8610e1d6"
+    },
+    {
+      "q": "Jism s(t) = 6t² qonun bilan harakatlanadi (s — metr, t — soniya). Dastlabki besh soniyada uning lahzali tezligi shu oraliqdagi o'rtacha tezligiga qaysi paytda teng bo'ladi?",
+      "v": [
+        "12,5 s",
+        "5 s",
+        "30 s",
+        "2,5 s"
+      ],
+      "t": 3,
+      "izoh": "O'rtacha tezlik: s(5) = 150, demak 150 : 5 = 30 m/s. Lahzali tezlik v(t) = 12t. Tenglama 12t = 30, bundan t = 2,5 s va bu payt oraliq ichida yotadi. 12,5 s — o'rtacha tezlik o'rniga s(5) = 150 olingan. 5 s — oraliqning oxiri javob deb qabul qilingan. 30 s — tezlik qiymati vaqt deb yozilgan. Javob: 2,5 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-va-lahzali-tezlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#da960a8c"
+    },
+    {
+      "q": "Sardor toshni tik yuqoriga otdi va uning balandligi h(t) = 30t − 5t² formula bilan o'zgardi (h — metr, t — soniya). Tosh eng yuqori nuqtaga qaysi paytda ko'tariladi?",
+      "v": [
+        "6 s",
+        "3 s",
+        "5 s",
+        "15 s"
+      ],
+      "t": 1,
+      "izoh": "Eng yuqori nuqtada tosh bir lahza to'xtaydi, ya'ni tezlik nolga aylanadi. v(t) = 30 − 10t, shundan 30 − 10t = 0 va t = 3 s. 6 s — h(t) = 0 tenglamaning ildizi, bu toshning yerga qaytish payti. 5 s — formuladagi koeffitsient javob deb olingan. 15 s — 30 ni 10 ga emas, 2 ga bo'lish xatosi. Javob: 3 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-otish-balandlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#34e81ac6"
+    },
+    {
+      "q": "Katapultadan otilgan to'pning balandligi h(t) = 40t − 5t² qonun bilan o'zgaradi (h — metr, t — soniya). To'p yerga qaytib tushayotgan paytdagi tezligini ishorasi bilan toping.",
+      "v": [
+        "−40 m/s",
+        "40 m/s",
+        "0 m/s",
+        "−80 m/s"
+      ],
+      "t": 0,
+      "izoh": "Avval tushish paytini topamiz: h(t) = 0 dan 5t(8 − t) = 0, demak t = 8 s. Tezlik v(t) = 40 − 10t, shuning uchun v(8) = 40 − 80 = −40 m/s. Manfiy ishora harakat pastga yo'nalganini bildiradi. 40 m/s — ishora tushirilgan. 0 m/s — eng yuqori nuqtadagi tezlik. −80 m/s — hosila noto'g'ri olingan. Javob: −40 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-otish-balandlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#c386ddc8"
+    },
+    {
+      "q": "Signal raketasi h(t) = 24t − 3t² qonun bo'yicha ko'tariladi (h — metr, t — soniya). Raketa ko'tarilgan eng katta balandlikni hisoblang.",
+      "v": [
+        "96 m",
+        "84 m",
+        "48 m",
+        "0 m"
+      ],
+      "t": 2,
+      "izoh": "Eng yuqori nuqtada v(t) = 24 − 6t nolga teng, demak t = 4 s. Shu paytdagi balandlik h(4) = 24·4 − 3·16 = 96 − 48 = 48 m. 96 m — ikkinchi had hisobga olinmagan. 84 m — 3t² o'rniga 3t qo'yilgan. 0 m — t = 8 dagi, ya'ni yerga tushish paytidagi balandlik. Javob: 48 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-otish-balandlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#2681e88a"
+    },
+    {
+      "q": "Balandligi 45 m bo'lgan qoyadan tosh yuqoriga otildi va uning balandligi h(t) = 45 + 10t − 5t² qonun bilan o'zgardi. Tosh yer sathidan qanday eng katta balandlikka ko'tariladi?",
+      "v": [
+        "45 m",
+        "55 m",
+        "50 m",
+        "40 m"
+      ],
+      "t": 2,
+      "izoh": "Tezlik v(t) = 10 − 10t, u t = 1 s da nolga aylanadi. Shu paytdagi balandlik h(1) = 45 + 10 − 5 = 50 m. 45 m — boshlang'ich balandlikning o'zi, ko'tarilish qo'shilmagan. 55 m — oxirgi had −5 tushirilgan. 40 m — qo'shish o'rniga ayirish qilingan. Javob: 50 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-otish-balandlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#f1eb09b1"
+    },
+    {
+      "q": "Tik yuqoriga otilgan jismning balandligi h(t) = 35t − 5t² qonun bilan o'zgaradi (h — metr, t — soniya). Jism pastga qarab 15 m/s tezlik bilan tushayotgan paytni toping.",
+      "v": [
+        "5 s",
+        "2 s",
+        "3,5 s",
+        "7 s"
+      ],
+      "t": 0,
+      "izoh": "Pastga yo'nalgan tezlik manfiy ishorali bo'ladi, shuning uchun v(t) = −15 deb yozamiz. v(t) = 35 − 10t, demak 35 − 10t = −15, bundan 10t = 50 va t = 5 s. 2 s — o'ng tomondagi ishora musbat olingan. 3,5 s — eng yuqori nuqtaga chiqish payti. 7 s — yerga tushish payti. Javob: 5 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-otish-balandlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#1d14b9f6"
+    },
+    {
+      "q": "Yuk mashinasining harakat qonuni s(t) = 5 + 3t + 4t² ko'rinishida berilgan (s — metr, t — soniya). Bu harakat tekis tezlanuvchanmi va tezlanish qanday qiymatga ega?",
+      "v": [
+        "Ha, tekis tezlanuvchan, a = 8 m/s²",
+        "Ha, tekis tezlanuvchan, a = 4 m/s²",
+        "Yo'q, tezlanish vaqtga bog'liq holda o'zgaradi",
+        "Ha, tekis tezlanuvchan, a = 3 m/s²"
+      ],
+      "t": 0,
+      "izoh": "Ikki marta hosila olamiz: v(t) = 3 + 8t va a(t) = 8. Tezlanish t ga bog'liq emas, demak harakat tekis tezlanuvchan va a = 8 m/s². 4 m/s² — kvadrat oldidagi koeffitsient ikkiga ko'paytirilmagan. 3 m/s² — bu boshlang'ich tezlik. Javob: tekis tezlanuvchan, a = 8 m/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekis-tezlanuvchan-tezlanish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#1095900c"
+    },
+    {
+      "q": "Jism s(t) = 2t³ + t² qonun bilan harakatlanadi (s — metr, t — soniya). Bu harakatda tezlanish o'zgarmas qiymatga ega bo'ladimi degan savolga to'g'ri javobni tanlang.",
+      "v": [
+        "Ha, a = 2 m/s² va u o'zgarmaydi",
+        "Ha, a = 12 m/s² va u o'zgarmaydi",
+        "Yo'q, a(t) = 12t + 2 bo'lgani uchun tezlanish o'zgaradi",
+        "Yo'q, a(t) = 6t² + 2t bo'lgani uchun tezlanish o'zgaradi"
+      ],
+      "t": 2,
+      "izoh": "Ketma-ket hosila olamiz: v(t) = 6t² + 2t, so'ngra a(t) = 12t + 2. Bu ifodada t qatnashgani uchun tezlanish har paytda boshqacha bo'ladi, demak harakat tekis tezlanuvchan emas. a = 2 m/s² degan javobda faqat erkin had olingan, a = 12 m/s² da faqat t oldidagi koeffitsient. a(t) = 6t² + 2t deb ko'rsatilgan javobda esa tezlanish o'rniga tezlik yozilgan. Javob: a(t) = 12t + 2, tezlanish o'zgaruvchan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekis-tezlanuvchan-tezlanish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#4abdf90f"
+    },
+    {
+      "q": "Tekis tezlanuvchan harakat kinematik formulasi bilan berilgan: s(t) = 12 + 9t + 3t² (s — metr, t — soniya). Bu harakatning boshlang'ich tezligi va tezlanishini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "v₀ = 9 m/s, a = 3 m/s²",
+        "v₀ = 12 m/s, a = 6 m/s²",
+        "v₀ = 9 m/s, a = 1,5 m/s²",
+        "v₀ = 9 m/s, a = 6 m/s²"
+      ],
+      "t": 3,
+      "izoh": "Umumiy formula s(t) = s₀ + v₀t + at²/2 bilan solishtiramiz. t oldidagi koeffitsient v₀ = 9 m/s. t² oldidagi koeffitsient a/2 = 3, demak a = 6 m/s². Buni hosila orqali ham tekshirish mumkin: v(t) = 9 + 6t va a(t) = 6. a = 3 m/s² deyilgan javobda t² oldidagi koeffitsient bevosita tezlanish deb olingan, a = 1,5 m/s² da u yana ikkiga bo'lingan. v₀ = 12 m/s deyilgan javobda esa boshlang'ich koordinata tezlik deb qaralgan. Javob: v₀ = 9 m/s, a = 6 m/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekis-tezlanuvchan-tezlanish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#4d84b3bb"
+    },
+    {
+      "q": "Ko'p qavatli binoda lift kabinasi s(t) = 0,75t² + 2t qonun bilan yuqoriga ko'tariladi (s — metr, t — soniya). Kabinaning tezlanishi haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "0,75 m/s² ga teng va o'zgarmaydi",
+        "1,5 m/s² ga teng va o'zgarmaydi",
+        "1,5 m/s² dan boshlanib, vaqt o'tishi bilan ortadi",
+        "3 m/s² ga teng va o'zgarmaydi"
+      ],
+      "t": 1,
+      "izoh": "Birinchi hosila v(t) = 1,5t + 2 tezlikni beradi, ikkinchi hosila a(t) = 1,5 esa tezlanishni. Natijada t qatnashmagani uchun tezlanish o'zgarmas. 0,75 m/s² — koeffitsient ikkiga ko'paytirilmagan. 3 m/s² — ortiqcha ikkiga ko'paytirilgan. Javob: 1,5 m/s² ga teng va o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekis-tezlanuvchan-tezlanish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#5dc93572"
+    },
+    {
+      "q": "Jismning tezligi bevosita v(t) = 4t² − 3t + 6 formula bilan berilgan (v — m/s, t — soniya). Ikkinchi soniyadagi tezlanishini hisoblang.",
+      "v": [
+        "16 m/s²",
+        "8 m/s²",
+        "13 m/s²",
+        "6 m/s²"
+      ],
+      "t": 2,
+      "izoh": "Tezlanish tezlikning hosilasi: a(t) = 8t − 3. t = 2 uchun a(2) = 16 − 3 = 13. 16 m/s² — −3 hadi tushirilgan, bu ayni paytda v(2) = 16 − 6 + 6 qiymatiga ham teng. 8 m/s² — faqat koeffitsient olingan. 6 m/s² — tezlikdagi erkin had ko'chirilgan. Javob: 13 m/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "v-berilgan-tezlanish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#aca5cd7a"
+    },
+    {
+      "q": "Tramvay bekatga yaqinlashayotganda uning tezligi v(t) = 12 − 0,8t formula bilan o'zgaradi (v — m/s, t — soniya). Tramvayning tezlanishini toping.",
+      "v": [
+        "−0,8 m/s²",
+        "0,8 m/s²",
+        "−12 m/s²",
+        "−1,6 m/s²"
+      ],
+      "t": 0,
+      "izoh": "Tezlanish tezlikning vaqt bo'yicha hosilasiga teng: a(t) = v'(t) = −0,8. Qiymat manfiy, chunki tramvay sekinlashmoqda, va u t ga bog'liq emas. 0,8 m/s² — ishora tushirilgan. −12 m/s² — boshlang'ich tezlik tezlanish deb olingan. −1,6 m/s² — chiziqli hadning hosilasi ortiqcha ikkiga ko'paytirilgan. Javob: −0,8 m/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "v-berilgan-tezlanish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#8336f124"
+    },
+    {
+      "q": "Jismning tezligi v(t) = 3t² + 2t − 5 formula bilan berilgan (v — m/s, t — soniya). Uchinchi soniyadagi tezlanishini hisoblang.",
+      "v": [
+        "18 m/s²",
+        "20 m/s²",
+        "28 m/s²",
+        "6 m/s²"
+      ],
+      "t": 1,
+      "izoh": "Tezlanish a(t) = v'(t) = 6t + 2. t = 3 uchun a(3) = 18 + 2 = 20. 18 m/s² — erkin hadning hosilasi emas, balki 2 hadi qo'shilmay qolgan. 28 m/s² — bu v(3) = 27 + 6 − 5, ya'ni tezlikning o'zi. 6 m/s² — faqat koeffitsient yozilgan. Javob: 20 m/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "v-berilgan-tezlanish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#06b7699b"
+    },
+    {
+      "q": "Sinovdagi qurilmaning tezligi v(t) = t³ − 9t² + 15t formula bilan o'zgaradi (v — m/s, t — soniya). Qurilmaning tezlanishi qaysi paytlarda nolga aylanadi?",
+      "v": [
+        "t = 3 s",
+        "faqat t = 5 s",
+        "t = 1 s va t = 5 s",
+        "t = 1 s va t = 15 s"
+      ],
+      "t": 2,
+      "izoh": "Tezlanish a(t) = 3t² − 18t + 15 = 3(t − 1)(t − 5). Uni nolga tenglaymiz va ikkita ildiz olamiz: t = 1 va t = 5. t = 3 — bu parabolaning uchi, ya'ni tezlanish eng kichik bo'lgan payt. Faqat t = 5 deyilsa bitta ildiz yo'qoladi. t = 15 — Viyet teoremasi noto'g'ri qo'llanganda chiqadi. Javob: t = 1 s va t = 5 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "v-berilgan-tezlanish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#c9c3a5f6"
+    },
+    {
+      "q": "Moddiy nuqta s(t) = t² − 8t + 7 qonun bilan harakatlanadi (s — metr, t — soniya). Nuqta qaysi vaqt oralig'ida koordinata o'qining manfiy yo'nalishi tomon siljiydi?",
+      "v": [
+        "t < 4 s oraliqda",
+        "t > 4 s oraliqda",
+        "t < 8 s oraliqda",
+        "Hech qachon, harakat doim musbat yo'nalishda"
+      ],
+      "t": 0,
+      "izoh": "Yo'nalish tezlik ishorasi bilan aniqlanadi: v(t) = 2t − 8. Manfiy yo'nalish uchun 2t − 8 < 0, bundan t < 4. Demak dastlabki to'rt soniyada nuqta orqaga siljiydi, keyin oldinga qaytadi. t > 4 — bu musbat yo'nalish oralig'i, ishora almashtirilgan. t < 8 — hosila olinmay, koeffitsient bevosita ishlatilgan. Javob: t < 4 s oraliqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harakat-yonalishi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#941557cf"
+    },
+    {
+      "q": "Jism s(t) = t³ − 3t² qonuniyat bo'yicha harakatlanadi (s — metr, t — soniya). Birinchi soniya oxirida jism qaysi yo'nalishda harakatlanayotganini aniqlang.",
+      "v": [
+        "Musbat yo'nalishda, chunki v(1) = 3 m/s",
+        "Ayni paytda to'xtagan, chunki v(1) = 0",
+        "Manfiy yo'nalishda, chunki v(1) = −3 m/s",
+        "Manfiy yo'nalishda, chunki s(1) = −2 m"
+      ],
+      "t": 2,
+      "izoh": "Tezlik v(t) = 3t² − 6t, demak v(1) = 3 − 6 = −3 m/s. Tezlik manfiy bo'lgani uchun jism koordinata o'qining manfiy yo'nalishida siljiydi. v(1) = 3 m/s deb yozilgan javobda −6t hadi tushirib qoldirilgan. s(1) = −2 m ga tayangan javobda yo'nalish koordinata ishorasi bilan aniqlangan, holbuki uni faqat hosila belgilaydi. Javob: manfiy yo'nalishda, v(1) = −3 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-yonalishi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#5b49343c"
+    },
+    {
+      "q": "Moddiy nuqtaning harakat qonuni s(t) = t³ − 6t² + 9t ko'rinishida berilgan (s — metr, t — soniya). Nuqta butun harakat davomida yo'nalishini necha marta o'zgartiradi?",
+      "v": [
+        "Bir marta",
+        "Uch marta",
+        "Umuman o'zgartirmaydi",
+        "Ikki marta"
+      ],
+      "t": 3,
+      "izoh": "Tezlik v(t) = 3t² − 12t + 9 = 3(t − 1)(t − 3). Ildizlar t = 1 va t = 3. Oraliqlarda ishorani tekshiramiz: t < 1 da musbat, 1 < t < 3 da manfiy, t > 3 da yana musbat. Ishora ikki marta almashdi, demak yo'nalish ikki marta o'zgaradi. Ildizlar soni bilan yo'nalish o'zgarishini chalkashtirmaslik kerak: karrali ildizda ishora almashmaydi. Javob: ikki marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harakat-yonalishi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#12952122"
+    },
+    {
+      "q": "Ombor liftining vertikal siljishi s(t) = 0,05t³ − 0,6t² + 1,8t qonun bilan ifodalanadi (s — metr, t — soniya). To'rtinchi soniyada lift qaysi tomonga va qanday tezlik bilan harakatlanmoqda?",
+      "v": [
+        "Yuqoriga, 0,6 m/s tezlik bilan",
+        "Pastga, 2,4 m/s tezlik bilan",
+        "Ayni paytda to'xtab turibdi",
+        "Pastga, 0,6 m/s tezlik bilan"
+      ],
+      "t": 3,
+      "izoh": "Tezlik v(t) = 0,15t² − 1,2t + 1,8 = 0,15(t − 2)(t − 6). t = 4 da v(4) = 2,4 − 4,8 + 1,8 = −0,6 m/s. Manfiy ishora lift pastga tushayotganini, moduli esa tezlik 0,6 m/s ekanini bildiradi. Yuqoriga deb ko'rsatilgan javobda ishora e'tiborsiz qoldirilgan. Pastga 2,4 m/s degan javobda ozod had 1,8 tushirib qoldirilgan. To'xtab turibdi degan javobda t = 4 to'xtash payti deb o'ylangan, aslida lift t = 2 va t = 6 soniyalarda to'xtaydi. Javob: pastga, 0,6 m/s tezlik bilan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-yonalishi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#7b9af7cb"
+    },
+    {
+      "q": "Basseynga suv quyilmoqda va undagi suv hajmi V(t) = 3t² + 20t formula bilan o'sadi, bunda V litrda, t daqiqada. Beshinchi daqiqada suv qanday tezlik bilan quyilmoqda?",
+      "v": [
+        "35 litr/min",
+        "50 litr/min",
+        "30 litr/min",
+        "175 litr/min"
+      ],
+      "t": 1,
+      "izoh": "Quyilish tezligi hajmning hosilasi: V'(t) = 6t + 20. t = 5 uchun V'(5) = 30 + 20 = 50 litr/min. 35 litr/min — V(5) = 175 ni 5 ga bo'lish, ya'ni o'rtacha tezlik. 30 litr/min — 20 hadi qo'shilmagan. 175 litr/min — to'plangan hajm tezlik deb olingan. Javob: 50 litr/min.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-ozgarish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#d2f3d393"
+    },
+    {
+      "q": "Bakdan suv oqib chiqmoqda va undagi hajm V(t) = 800 − 4t² qonun bilan kamayadi (V — litr, t — daqiqa). O'ninchi daqiqada suv qanday tezlik bilan kamaymoqda?",
+      "v": [
+        "−80 litr/min",
+        "−40 litr/min",
+        "−400 litr/min",
+        "80 litr/min"
+      ],
+      "t": 0,
+      "izoh": "Hajmning o'zgarish tezligi V'(t) = −8t. t = 10 da V'(10) = −80 litr/min, manfiy ishora hajm kamayayotganini bildiradi. −40 litr/min — koeffitsient ikkiga ko'paytirilmagan. −400 litr/min — bu 10 daqiqada yo'qolgan umumiy hajm, tezlik emas. 80 litr/min — ishora tushirilgan. Javob: −80 litr/min.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-ozgarish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#85524658"
+    },
+    {
+      "q": "Suv omboriga daryodan suv kelmoqda va to'plangan hajm V(t) = 0,5t³ + 6t formula bilan o'sadi (V — kub metr, t — soat). To'rtinchi soatda suv qanday tezlik bilan to'planmoqda?",
+      "v": [
+        "24 m³/soat",
+        "56 m³/soat",
+        "30 m³/soat",
+        "14 m³/soat"
+      ],
+      "t": 2,
+      "izoh": "Hosila olamiz: V'(t) = 1,5t² + 6. t = 4 uchun V'(4) = 1,5·16 + 6 = 24 + 6 = 30 m³/soat. 24 m³/soat — 6 hadi qo'shilmagan. 56 m³/soat — bu V(4) = 32 + 24, ya'ni to'plangan hajm. 14 m³/soat — 56 ni 4 ga bo'lgan o'rtacha tezlik. Javob: 30 m³/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-ozgarish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#15ed36e7"
+    },
+    {
+      "q": "Sut zavodida idishdagi mahsulot massasi m(t) = 240 − 1,5t² qonun bilan kamayadi (m — kilogramm, t — daqiqa). Quyish tezligi daqiqasiga 30 kg ga yetgan paytni toping.",
+      "v": [
+        "20 min",
+        "10 min",
+        "30 min",
+        "8 min"
+      ],
+      "t": 1,
+      "izoh": "Massaning o'zgarish tezligi m'(t) = −3t. Kamayish tezligi 30 kg/min bo'lishi uchun −3t = −30, bundan t = 10 daqiqa. 20 min — koeffitsient ikkiga ko'paytirilmay 30 : 1,5 qilingan. 30 min — tezlik qiymati vaqt deb olingan. 8 min — 240 : 30, ya'ni idish butunlay bo'shashi uchun kerak deb o'ylangan vaqt. Javob: 10 min.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-ozgarish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#b491aece"
+    },
+    {
+      "q": "Suv omboridagi hajm V(t) = t³ − 9t² + 24t qonun bilan o'zgaradi (V — kub metr, t — soat). Ombordagi suv hajmi qaysi vaqt oralig'ida kamayadi?",
+      "v": [
+        "t < 2 soat oralig'ida",
+        "t > 4 soat oralig'ida",
+        "0 < t < 6 soat oralig'ida",
+        "2 soat < t < 4 soat oralig'ida"
+      ],
+      "t": 3,
+      "izoh": "Hajm kamayishi uchun V'(t) < 0 bo'lishi kerak. V'(t) = 3t² − 18t + 24 = 3(t − 2)(t − 4). Bu ko'paytma ildizlar orasida manfiy, chetlarida musbat. Demak hajm 2 soat bilan 4 soat orasida kamayadi, qolgan paytlarda ortadi. t < 2 soat va t > 4 soat oraliqlarini ko'rsatgan javoblarda aynan hajm ortadigan paytlar tanlangan. 0 < t < 6 soat javobida esa V'(t) = 0 tenglamaning ildizlari xato topilgan. Javob: 2 soat < t < 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajm-ozgarish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#07f85bb1"
+    },
+    {
+      "q": "Piyoladagi choyning harorati T(t) = 90 − 2t² qonun bilan pasayadi, bunda T gradus Selsiyda, t daqiqada. Uchinchi daqiqada harorat qanday tezlik bilan pasaymoqda?",
+      "v": [
+        "−6 °C/min",
+        "−18 °C/min",
+        "−12 °C/min",
+        "12 °C/min"
+      ],
+      "t": 2,
+      "izoh": "Haroratning o'zgarish tezligi T'(t) = −4t. t = 3 uchun T'(3) = −12 °C/min. Manfiy ishora sovish jarayonini bildiradi. −6 °C/min — koeffitsient ikkiga ko'paytirilmagan. −18 °C/min — bu uch daqiqada tushgan umumiy harorat, tezlik emas. 12 °C/min — ishora yozilmagan. Javob: −12 °C/min.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harorat-ozgarish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#42d1f321"
+    },
+    {
+      "q": "Non pechida harorat T(t) = 20 + 15t − 0,5t² qonun bilan ko'tariladi (T — gradus Selsiyda, t — daqiqa). Harorat qaysi daqiqada eng yuqori qiymatga chiqadi, ya'ni isish to'xtaydi?",
+      "v": [
+        "30 min",
+        "7,5 min",
+        "20 min",
+        "15 min"
+      ],
+      "t": 3,
+      "izoh": "Isish to'xtagan paytda haroratning o'zgarish tezligi nolga aylanadi. T'(t) = 15 − t, demak 15 − t = 0 va t = 15 daqiqa. 30 min — 15 ni 0,5 ga bo'lish xatosi. 7,5 min — aksincha ikkiga bo'lingan. 20 min — boshlang'ich harorat vaqt deb olingan. Javob: 15 min.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harorat-ozgarish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#734d0b9b"
+    },
+    {
+      "q": "Meteostansiya kuzatuvida havo harorati T(t) = 0,1t³ − 1,2t² + 2t + 18 qonun bilan o'zgardi (T — gradus Selsiyda, t — soat). To'rtinchi soatda harorat qanday tezlik bilan o'zgarmoqda?",
+      "v": [
+        "2,8 °C/soat",
+        "−2,8 °C/soat",
+        "−4,8 °C/soat",
+        "13,2 °C/soat"
+      ],
+      "t": 1,
+      "izoh": "Hosila: T'(t) = 0,3t² − 2,4t + 2. t = 4 uchun T'(4) = 0,3·16 − 2,4·4 + 2 = 4,8 − 9,6 + 2 = −2,8 °C/soat. Manfiy natija harorat pasayayotganini bildiradi. 2,8 — ishora yo'qolgan. −4,8 — erkin had 2 qo'shilmagan. 13,2 — bu T(4), ya'ni haroratning o'zi. Javob: −2,8 °C/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harorat-ozgarish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#4167ae58"
+    },
+    {
+      "q": "Isitgichdagi suv harorati T(t) funksiya bilan berilgan va hisob natijasida T'(6) = 5 ekani aniqlandi. Bu natijaning fizik ma'nosini to'g'ri tushuntirgan javobni tanlang.",
+      "v": [
+        "Oltinchi daqiqada suv harorati 5 °C ga teng",
+        "Olti daqiqa ichida harorat jami 5 °C ga ko'tarilgan",
+        "Oltinchi daqiqada harorat daqiqasiga 5 °C tezlik bilan ortmoqda",
+        "Oltinchi daqiqada isitish davom etadigan vaqt 5 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Hosila funksiyaning o'zgarish tezligini beradi, funksiyaning qiymatini emas. Shuning uchun T'(6) = 5 degani aynan oltinchi daqiqada harorat bir daqiqada 5 °C ga ortmoqda demakdir. Harorat 5 °C ga teng degan javobda hosila T(6) bilan chalkashtirilgan. Jami 5 °C ga ko'tarilgan degan javobda lahzali tezlik o'rniga olti daqiqadagi umumiy o'zgarish olingan. Qolgan isitish vaqti haqidagi javobning hosilaga umuman aloqasi yo'q. Javob: oltinchi daqiqada harorat daqiqasiga 5 °C tezlik bilan ortmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harorat-ozgarish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#0df1846f"
+    },
+    {
+      "q": "Laboratoriya idishida bakteriyalar soni N(t) = 500 + 30t² qonun bilan ko'paymoqda (N — dona, t — soat). Oltinchi soatda bakteriyalar soni qanday tezlik bilan ortmoqda?",
+      "v": [
+        "360 dona/soat",
+        "180 dona/soat",
+        "1580 dona/soat",
+        "30 dona/soat"
+      ],
+      "t": 0,
+      "izoh": "O'sish tezligi N'(t) = 60t. t = 6 uchun N'(6) = 360 dona/soat. 180 dona/soat — koeffitsient ikkiga ko'paytirilmagan. 1580 dona/soat — bu N(6) = 500 + 1080, ya'ni bakteriyalarning umumiy soni. 30 dona/soat — formuladagi koeffitsient. Javob: 360 dona/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "populyatsiya-osish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#cffff29f"
+    },
+    {
+      "q": "Shahar aholisi N(t) = 120 + 4t + 0,5t² qonun bilan o'smoqda, bunda N ming kishida, t esa 2020-yildan boshlab yillarda. O'ninchi yilda aholi qanday tezlik bilan ortmoqda?",
+      "v": [
+        "9 ming kishi/yil",
+        "210 ming kishi/yil",
+        "4 ming kishi/yil",
+        "14 ming kishi/yil"
+      ],
+      "t": 3,
+      "izoh": "O'sish tezligi N'(t) = 4 + t. t = 10 uchun N'(10) = 4 + 10 = 14 ming kishi/yil. 9 ming kishi/yil — 0,5t² ning hosilasi 0,5t deb olingan. 210 ming kishi/yil — bu N(10), ya'ni aholining umumiy soni. 4 ming kishi/yil — boshlang'ich o'sish tezligi. Javob: 14 ming kishi/yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "populyatsiya-osish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#a87c301b"
+    },
+    {
+      "q": "Baliqchilik xo'jaligidagi baliqlar soni N(t) = 2000 + 150t − 5t² qonun bilan o'zgaradi (N — dona, t — oy). Baliqlar sonining o'sishi qaysi oyda to'xtaydi?",
+      "v": [
+        "30 oy",
+        "15 oy",
+        "75 oy",
+        "150 oy"
+      ],
+      "t": 1,
+      "izoh": "O'sish to'xtaganda N'(t) = 0 bo'ladi. N'(t) = 150 − 10t, demak 150 − 10t = 0 va t = 15 oy. 30 oy — 150 ni 5 ga bo'lish xatosi, hosilada koeffitsient ikkiga ko'paytirilmagan. 75 oy — 150 ni 2 ga bo'lish. 150 oy — formuladagi koeffitsient vaqt deb olingan. Javob: 15 oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "populyatsiya-osish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#9207e997"
+    },
+    {
+      "q": "Paxta dalasidagi zararkunanda hasharotlar soni N(t) = t³ − 12t² + 45t + 60 qonun bilan o'zgardi (N — ming dona, t — kun). O'sish tezligi qaysi kunlarda nolga aylanadi va ular orasida son qanday o'zgaradi?",
+      "v": [
+        "t = 3 va t = 5 kunlarda nolga aylanadi, ular orasida hasharotlar soni kamayadi",
+        "t = 3 va t = 5 kunlarda nolga aylanadi, ular orasida son ortishda davom etadi",
+        "Faqat t = 4 kunda nolga aylanadi",
+        "t = 15 va t = 3 kunlarda nolga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "O'sish tezligi N'(t) = 3t² − 24t + 45 = 3(t − 3)(t − 5). Ildizlar t = 3 va t = 5. Ishorani tekshiramiz: t = 4 da N'(4) = 3·1·(−1) = −3 < 0, demak shu oraliqda hasharotlar soni kamayadi. t = 4 — hosilaning eng kichik qiymati payti, ildiz emas. Javob: t = 3 va t = 5 kunlarda, oraliqda son kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "populyatsiya-osish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#7927db32"
+    },
+    {
+      "q": "O'tkazgichning ko'ndalang kesimidan o'tgan zaryad q(t) = 2t² + 3t qonun bilan to'planadi (q — kulon, t — soniya). To'rtinchi soniyadagi tok kuchini toping.",
+      "v": [
+        "19 A",
+        "11 A",
+        "44 A",
+        "4 A"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi zaryadning vaqt bo'yicha hosilasi: I(t) = q'(t) = 4t + 3. t = 4 uchun I(4) = 16 + 3 = 19 A. 11 A — q(4) = 44 ni 4 ga bo'lish, ya'ni o'rtacha tok kuchi. 44 A — to'plangan zaryadning o'zi. 4 A — formuladagi koeffitsient. Javob: 19 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zaryad-tok-kuchi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#a1ce8ce4"
+    },
+    {
+      "q": "Zanjirdan o'tgan zaryad q(t) = 0,5t³ − t² + 5t formula bilan ifodalanadi (q — kulon, t — soniya). Ikkinchi soniyadagi tok kuchini hisoblang.",
+      "v": [
+        "10 A",
+        "7 A",
+        "2 A",
+        "5 A"
+      ],
+      "t": 1,
+      "izoh": "Tok kuchi I(t) = q'(t) = 1,5t² − 2t + 5. t = 2 uchun I(2) = 6 − 4 + 5 = 7 A. 10 A — bu q(2) = 4 − 4 + 10, ya'ni zaryad. 2 A — oxirgi had 5 qo'shilmay qolgan. 5 A — boshlang'ich tok kuchi I(0). Javob: 7 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zaryad-tok-kuchi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#b2df683b"
+    },
+    {
+      "q": "O'tkazgichdagi zaryad q(t) = t³ + 3t qonun bilan o'zgaradi (q — kulon, t — soniya). Tok kuchi 15 A qiymatga qaysi paytda yetadi?",
+      "v": [
+        "4 s",
+        "2 s",
+        "5 s",
+        "√5 s"
+      ],
+      "t": 1,
+      "izoh": "Tok kuchi I(t) = 3t² + 3. Tenglama 3t² + 3 = 15 ko'rinishida bo'ladi, bundan 3t² = 12, t² = 4 va musbat ildiz t = 2 s. 4 s — kvadrat ildiz olish unutilgan. 5 s — 15 : 3 natijasi javob deb yozilgan. √5 s — erkin had 3 ayirilmagan. Javob: 2 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zaryad-tok-kuchi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#1300268c"
+    },
+    {
+      "q": "O'tkazgichdan o'tgan zaryad q(t) = 4t² formula bilan berilgan (q — kulon, t — soniya). Uchinchi soniyadagi lahzali tok kuchi shu uch soniyadagi o'rtacha tok kuchidan qanchaga ortiq?",
+      "v": [
+        "24 A",
+        "36 A",
+        "12 A",
+        "8 A"
+      ],
+      "t": 2,
+      "izoh": "Lahzali tok kuchi I(3) = q'(3) = 8·3 = 24 A. O'rtacha tok kuchi esa q(3) : 3 = 36 : 3 = 12 A. Farq 24 − 12 = 12 A. 24 A va 36 A — bu farq emas, balki lahzali qiymat va to'plangan zaryad. 8 A — hosiladagi koeffitsientning o'zi, t ga ko'paytirilmagan. Javob: 12 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zaryad-tok-kuchi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#81b81477"
+    },
+    {
+      "q": "Elektr motori bajargan ish A(t) = 6t² + 40t qonun bilan ortadi, bunda A joulda, t soniyada. Beshinchi soniyadagi lahzali quvvatni toping.",
+      "v": [
+        "100 Vt",
+        "70 Vt",
+        "350 Vt",
+        "60 Vt"
+      ],
+      "t": 0,
+      "izoh": "Lahzali quvvat ishning hosilasiga teng: N(t) = A'(t) = 12t + 40. t = 5 uchun N(5) = 60 + 40 = 100 Vt. 70 Vt — A(5) = 350 ni 5 ga bo'lish, ya'ni o'rtacha quvvat. 350 Vt — bajarilgan umumiy ish. 60 Vt — 40 hadi qo'shilmagan. Javob: 100 Vt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bajarilgan-ish-quvvat",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#dd774cc1"
+    },
+    {
+      "q": "Nasos bajargan ish A(t) = 2t³ + 15t qonuniyat bilan o'zgaradi (A — joul, t — soniya). Uchinchi soniyadagi quvvatini hisoblang.",
+      "v": [
+        "54 Vt",
+        "99 Vt",
+        "69 Vt",
+        "33 Vt"
+      ],
+      "t": 2,
+      "izoh": "Quvvat N(t) = A'(t) = 6t² + 15. t = 3 uchun N(3) = 54 + 15 = 69 Vt. 54 Vt — 15 hadi qo'shilmay qolgan. 99 Vt — bu A(3) = 54 + 45, ya'ni bajarilgan ish. 33 Vt — 99 ni 3 ga bo'lgan o'rtacha quvvat. Javob: 69 Vt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bajarilgan-ish-quvvat",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#38d5a585"
+    },
+    {
+      "q": "Ko'targich mexanizmi bajargan ish A(t) = 5t² + 30t formula bilan ortadi (A — joul, t — soniya). Mexanizm quvvati 250 Vt ga qaysi paytda yetadi?",
+      "v": [
+        "25 s",
+        "22 s",
+        "220 s",
+        "44 s"
+      ],
+      "t": 1,
+      "izoh": "Quvvat N(t) = 10t + 30. Tenglama 10t + 30 = 250, bundan 10t = 220 va t = 22 s. 25 s — boshlang'ich had 30 ayirilmay 250 : 10 qilingan. 220 s — ayirma javob deb olingan, bo'lish bajarilmagan. 44 s — 5t² ning hosilasi 5t deb olinib, 5t = 220 yechilgan. Javob: 22 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bajarilgan-ish-quvvat",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#0d7bccc3"
+    },
+    {
+      "q": "Suv nasosi bajargan ish A(t) = 120t − 2t² qonun bilan o'zgaradi (A — joul, t — soniya). Nasosning quvvati qaysi paytda nolga aylanadi, ya'ni foydali ish to'xtaydi?",
+      "v": [
+        "60 s",
+        "120 s",
+        "15 s",
+        "30 s"
+      ],
+      "t": 3,
+      "izoh": "Quvvat N(t) = A'(t) = 120 − 4t. Uni nolga tenglaymiz: 120 − 4t = 0, bundan t = 30 s. 60 s — A(t) = 0 tenglamaning ildizi, bu bajarilgan ish nolga qaytish payti. 120 s — formuladagi koeffitsient vaqt deb olingan. 15 s — koeffitsient ortiqcha ikkiga ko'paytirilib, 120 : 8 hisoblangan. Javob: 30 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bajarilgan-ish-quvvat",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#0866185d"
+    },
+    {
+      "q": "Notekis sterjenning uchidan x santimetr masofagacha bo'lgan qismining massasi m(x) = 3x² + 2x gramm. Sterjenning uchidan 5 sm uzoqlikdagi chiziqli zichligini toping.",
+      "v": [
+        "32 g/sm",
+        "30 g/sm",
+        "85 g/sm",
+        "17 g/sm"
+      ],
+      "t": 0,
+      "izoh": "Chiziqli zichlik massaning uzunlik bo'yicha hosilasi: ρ(x) = m'(x) = 6x + 2. x = 5 uchun ρ(5) = 30 + 2 = 32 g/sm. 30 g/sm — 2 hadi qo'shilmagan. 85 g/sm — bu m(5) = 75 + 10, ya'ni massaning o'zi. 17 g/sm — 85 ni 5 ga bo'lgan o'rtacha zichlik. Javob: 32 g/sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sterjen-chiziqli-zichlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#09d4cffe"
+    },
+    {
+      "q": "Notekis quyilgan temir balkaning uchidan x metrgacha bo'lgan qismining massasi m(x) = x³ + 5x kilogramm. Balkaning uchidan 2 m uzoqlikdagi chiziqli zichligi qanday bo'ladi?",
+      "v": [
+        "18 kg/m",
+        "12 kg/m",
+        "17 kg/m",
+        "9 kg/m"
+      ],
+      "t": 2,
+      "izoh": "Chiziqli zichlik ρ(x) = m'(x) = 3x² + 5. x = 2 uchun ρ(2) = 12 + 5 = 17 kg/m. 18 kg/m — bu m(2) = 8 + 10, ya'ni massa. 12 kg/m — erkin had 5 qo'shilmagan. 9 kg/m — 18 ni 2 ga bo'lgan o'rtacha zichlik. Javob: 17 kg/m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sterjen-chiziqli-zichlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#c409e9f6"
+    },
+    {
+      "q": "Sterjenning uchidan x santimetrgacha bo'lgan qismi massasi m(x) = 2x² + 6x gramm bo'lsa, uning chiziqli zichligi 26 g/sm qiymatga qaysi nuqtada yetadi?",
+      "v": [
+        "6,5 sm",
+        "10 sm",
+        "5 sm",
+        "20 sm"
+      ],
+      "t": 2,
+      "izoh": "Chiziqli zichlik ρ(x) = 4x + 6. Tenglama 4x + 6 = 26 ko'rinishini oladi, bundan 4x = 20 va x = 5 sm. 6,5 sm — 6 hadi hisobga olinmay 26 : 4 qilingan. 10 sm — 2x² ning hosilasi 2x deb olingan. 20 sm — ayirma javob deb yozilib, bo'lish bajarilmagan. Javob: 5 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sterjen-chiziqli-zichlik",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#c25d7d1d"
+    },
+    {
+      "q": "Shkiv aylanganda uning burilish burchagi φ(t) = 2t³ + 3t² radian qonun bilan ortadi, bunda t soniyada o'lchanadi. Ikkinchi soniyadagi burchak tezligini toping.",
+      "v": [
+        "36 rad/s",
+        "28 rad/s",
+        "30 rad/s",
+        "24 rad/s"
+      ],
+      "t": 0,
+      "izoh": "Burchak tezlik burilish burchagining vaqt bo'yicha hosilasi: ω(t) = φ'(t) = 6t² + 6t. t = 2 uchun ω(2) = 6·4 + 6·2 = 24 + 12 = 36 rad/s. 28 rad/s — bu φ(2), ya'ni burilgan burchakning o'zi. 30 rad/s — bu φ''(2) = 12·2 + 6, ya'ni burchak tezlanish. 24 rad/s — 3t² hadining hosilasi qo'shilmay qolgan. Javob: 36 rad/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-tezlik-aylanish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#27cf7860"
+    },
+    {
+      "q": "Aylanma stanok shpindelining burilish burchagi φ(t) = t³ − 2t² + 5t radian qonun bilan o'zgaradi (t — soniya). Uchinchi soniyadagi burchak tezlanishini hisoblang.",
+      "v": [
+        "20 rad/s²",
+        "18 rad/s²",
+        "6 rad/s²",
+        "14 rad/s²"
+      ],
+      "t": 3,
+      "izoh": "Burchak tezlanish burilish burchagining ikkinchi tartibli hosilasi: avval ω(t) = 3t² − 4t + 5, so'ngra ε(t) = ω'(t) = 6t − 4. t = 3 uchun ε(3) = 18 − 4 = 14 rad/s². 20 rad/s² — bu ω(3) = 27 − 12 + 5, ya'ni burchak tezlik. 18 rad/s² — oxirgi −4 hadi tushirib qoldirilgan. 6 rad/s² — faqat t oldidagi koeffitsient olingan. Javob: 14 rad/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-tezlik-aylanish",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#47523e0d"
+    },
+    {
+      "q": "Jismning impulsi p(t) = t³ − 6t² + 9t kg·m/s qonun bilan o'zgaradi (t — soniya). Nyutonning ikkinchi qonuniga ko'ra kuch F = p'(t) bo'lsa, jismga ta'sir etuvchi kuch qaysi paytlarda nolga aylanadi?",
+      "v": [
+        "Faqat t = 3 s da",
+        "t = 0 s va t = 3 s da",
+        "t = 2 s da",
+        "t = 1 s va t = 3 s da"
+      ],
+      "t": 3,
+      "izoh": "Kuch impulsning vaqt bo'yicha hosilasi: F(t) = p'(t) = 3t² − 12t + 9 = 3(t − 1)(t − 3). Ko'paytma nolga aylanishi uchun t = 1 s yoki t = 3 s bo'lishi kerak. t = 0 s va t = 3 s — bu p(t) = t(t − 3)² = 0 tenglamaning ildizlari, ya'ni impulsning o'zi nolga aylanadigan paytlar, kuchniki emas. t = 2 s da esa F(2) = 12 − 24 + 9 = −3 N, kuch nolga emas, eng kichik qiymatiga erishadi. Javob: t = 1 s va t = 3 s da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "impuls-kuch",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#488ed8ff"
+    },
+    {
+      "q": "Jismning impulsi p(t) = t³ − 3t² + 4t kg·m/s qonun bilan ortadi (t — soniya). Unga ta'sir etayotgan F = p'(t) kuch qaysi paytda eng kichik qiymatga erishadi va u nimaga teng?",
+      "v": [
+        "t = 2 s da, F = 4 N",
+        "t = 1 s da, F = 1 N",
+        "t = 0 s da, F = 4 N",
+        "t = 1 s da, F = 2 N"
+      ],
+      "t": 1,
+      "izoh": "Kuch F(t) = p'(t) = 3t² − 6t + 4 — tarmoqlari yuqoriga qaragan parabola, shuning uchun eng kichik qiymat uning uchida bo'ladi: t = 6 : (2·3) = 1 s. Bu paytda F(1) = 3 − 6 + 4 = 1 N. t = 2 s da, F = 4 N javobida parabola uchi noto'g'ri topilgan: F(2) = 4 N, lekin bu minimum emas. t = 0 s da, F = 4 N javobida chegaradagi qiymat minimum deb olingan. t = 1 s da, F = 2 N javobida payt to'g'ri, ammo kuch o'rniga p(1) = 2 hisoblangan. Javob: t = 1 s da, F = 1 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "impuls-kuch",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#c48f2cb6"
+    },
+    {
+      "q": "Ko'lmakdagi doira shaklidagi dog'ning radiusi r(t) = 2t + 1 santimetr qonun bilan o'sadi. Ikkinchi soniyada dog' yuzasi qanday tezlik bilan kattalashmoqda?",
+      "v": [
+        "20π sm²/s",
+        "10π sm²/s",
+        "25π sm²/s",
+        "5π sm²/s"
+      ],
+      "t": 0,
+      "izoh": "Yuza S = πr², radius esa vaqtga bog'liq. Murakkab funksiya hosilasi: S'(t) = 2πr·r'(t) = 2π(2t + 1)·2. t = 2 da radius 5 sm, demak S'(2) = 2π·5·2 = 20π sm²/s. 10π — ichki hosila 2 ga ko'paytirish unutilgan. 25π — bu S(2), ya'ni yuzaning o'zi. 5π — radius qiymati ishlatilgan. Javob: 20π sm²/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-hajm-ozgarish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#95c89fa9"
+    },
+    {
+      "q": "Muzlatkichda hosil bo'layotgan kub shaklidagi muz bo'lagining qirrasi a(t) = t + 3 santimetr qonun bilan o'sadi, bunda t — soat. Birinchi soatda muzning hajmi qanday tezlik bilan ortmoqda?",
+      "v": [
+        "16 sm³/soat",
+        "64 sm³/soat",
+        "48 sm³/soat",
+        "12 sm³/soat"
+      ],
+      "t": 2,
+      "izoh": "Kub hajmi V = a³, qirra esa vaqtga bog'liq. Hosila: V'(t) = 3a²·a'(t) = 3(t + 3)²·1. t = 1 da qirra 4 sm, demak V'(1) = 3·16 = 48 sm³/soat. 16 sm³/soat — 3 ko'paytuvchi tushirilgan. 64 sm³/soat — bu V(1) = 4³, ya'ni hajmning o'zi. 12 sm³/soat — kvadratga ko'tarish o'rniga qirra bevosita ishlatilgan. Javob: 48 sm³/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-hajm-ozgarish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#fbfb1ab1"
+    },
+    {
+      "q": "Suv yuzasiga to'kilgan yog' doira shaklida tarqalmoqda va uning radiusi r(t) = 0,5t metr qonun bilan ortadi. Sakkizinchi daqiqada dog' yuzasi qanday tezlik bilan kengaymoqda?",
+      "v": [
+        "16π m²/min",
+        "2π m²/min",
+        "8π m²/min",
+        "4π m²/min"
+      ],
+      "t": 3,
+      "izoh": "Yuza S = πr² = π(0,5t)² = 0,25πt². Hosila: S'(t) = 0,5πt. t = 8 uchun S'(8) = 4π m²/min. 16π — bu S(8) = π·16, ya'ni yuzaning o'zi. 2π — hosilada koeffitsient ikkiga ko'paytirilmagan. 8π — 2πr = 2π·4 hisoblanib, ichki hosila 0,5 ga ko'paytirilmagan. Javob: 4π m²/min.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-hajm-ozgarish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#5a625626"
+    },
+    {
+      "q": "Fotosuratni kattalashtirishda kvadrat ramkaning tomoni a(t) = 4t + 2 santimetr qonun bilan o'sadi. Uchinchi soniyada ramka yuzasining o'sish tezligini toping.",
+      "v": [
+        "28 sm²/s",
+        "196 sm²/s",
+        "14 sm²/s",
+        "112 sm²/s"
+      ],
+      "t": 3,
+      "izoh": "Kvadrat yuzasi S = a², tomon vaqtga bog'liq. Hosila: S'(t) = 2a·a'(t) = 2(4t + 2)·4. t = 3 da tomon 14 sm, demak S'(3) = 2·14·4 = 112 sm²/s. 28 sm²/s — ichki hosila 4 ga ko'paytirish unutilgan. 196 sm²/s — bu S(3) = 14², ya'ni yuza. 14 sm²/s — tomon uzunligining o'zi. Javob: 112 sm²/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-hajm-ozgarish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#2f68fdaa"
+    },
+    {
+      "q": "Prujinaga osilgan yuk s(t) = 4 sin 2t qonun bilan tebranadi, bunda s santimetrda, t soniyada o'lchanadi. Tebranish boshlangan paytdagi, ya'ni t = 0 dagi tezligini toping.",
+      "v": [
+        "4 sm/s",
+        "8 sm/s",
+        "2 sm/s",
+        "0 sm/s"
+      ],
+      "t": 1,
+      "izoh": "Tezlik v(t) = s'(t) = 4·cos 2t·2 = 8 cos 2t. t = 0 uchun cos 0 = 1, demak v(0) = 8 sm/s. 4 sm/s — ichki hosila 2 ga ko'paytirish unutilgan. 2 sm/s — faqat ichki hosila yozilgan. 0 sm/s — bu s(0), ya'ni boshlang'ich siljish. Javob: 8 sm/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tebranish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#4fa7186c"
+    },
+    {
+      "q": "Suvda suzayotgan buyning vertikal siljishi s(t) = 6 cos(πt/2) santimetr qonun bilan o'zgaradi, bunda t soniyada. Birinchi soniya oxiridagi tezligini toping.",
+      "v": [
+        "−6 sm/s",
+        "3π sm/s",
+        "−3π sm/s",
+        "0 sm/s"
+      ],
+      "t": 2,
+      "izoh": "Murakkab funksiyaning hosilasini olamiz: v(t) = −6 sin(πt/2)·(π/2) = −3π sin(πt/2). t = 1 da sin(π/2) = 1, demak v(1) = −3π sm/s. −6 sm/s — ichki hosila π/2 ga ko'paytirish unutilgan. 3π sm/s — kosinusning hosilasidagi minus tushirilgan. 0 sm/s — bu s(1) qiymati. Javob: −3π sm/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tebranish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#9905b742"
+    },
+    {
+      "q": "Tebranayotgan nuqtaning koordinatasi s(t) = 3 sin t + 4 cos t santimetr formula bilan berilgan (t — soniya). Tebranish boshlangan paytdagi tezligini hisoblang.",
+      "v": [
+        "4 sm/s",
+        "3 sm/s",
+        "−4 sm/s",
+        "7 sm/s"
+      ],
+      "t": 1,
+      "izoh": "Hosila olamiz: v(t) = 3 cos t − 4 sin t. t = 0 da cos 0 = 1 va sin 0 = 0, demak v(0) = 3 − 0 = 3 sm/s. 4 sm/s — bu s(0) = 4, ya'ni boshlang'ich siljish. −4 sm/s — kosinus va sinus hadlarining hosilalari almashtirilgan. 7 sm/s — koeffitsientlar shunchaki qo'shilgan. Javob: 3 sm/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tebranish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#e8e3b4ac"
+    },
+    {
+      "q": "Prujinali mayatnikning siljishi s(t) = 2 sin 3t santimetr qonun bilan o'zgaradi (t — soniya). Mayatnik erishadigan eng katta tezlik modulini toping.",
+      "v": [
+        "6 sm/s",
+        "2 sm/s",
+        "3 sm/s",
+        "18 sm/s"
+      ],
+      "t": 0,
+      "izoh": "Tezlik v(t) = 2·cos 3t·3 = 6 cos 3t. Kosinusning eng katta moduli 1 ga teng, shuning uchun tezlikning eng katta moduli 6 sm/s bo'ladi. 2 sm/s — siljish amplitudasi tezlik deb olingan. 3 sm/s — faqat ichki hosila yozilgan. 18 sm/s — koeffitsientlar ortiqcha bir marta ko'paytirilgan. Javob: 6 sm/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tebranish-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#27366949"
+    },
+    {
+      "q": "Radioaktiv moddaning massasi m(t) = 80·e^(−0,05t) gramm qonun bilan kamayadi, bunda t soatda o'lchanadi. Kuzatuv boshlangan paytda massa qanday tezlik bilan kamaymoqda?",
+      "v": [
+        "−0,05 g/soat",
+        "−80 g/soat",
+        "−4 g/soat",
+        "4 g/soat"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkichli funksiyaning hosilasi: m'(t) = 80·(−0,05)·e^(−0,05t) = −4·e^(−0,05t). t = 0 da e⁰ = 1, demak m'(0) = −4 g/soat. −0,05 g/soat — faqat daraja ko'rsatkichidagi koeffitsient olingan. −80 g/soat — boshlang'ich massa tezlik deb yozilgan. 4 g/soat — kamayishni bildiruvchi minus tushirilgan. Javob: −4 g/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-jarayon-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#8624899d"
+    },
+    {
+      "q": "Ozuqa muhitidagi bakteriyalar soni N(t) = 200·e^(0,4t) qonun bilan o'sadi. Bakteriyalar sonining o'sish tezligi bilan ularning shu paytdagi soni orasidagi bog'lanishni to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "N'(t) = 200·N(t)",
+        "N'(t) = N(t)",
+        "N'(t) = 0,4·t·N(t)",
+        "N'(t) = 0,4·N(t)"
+      ],
+      "t": 3,
+      "izoh": "Hosila olamiz: N'(t) = 200·0,4·e^(0,4t) = 0,4·200·e^(0,4t). Qavs ichidagi ifoda aynan N(t) ga teng, demak N'(t) = 0,4·N(t). Ya'ni har paytda o'sish tezligi mavjud sonning 0,4 qismini tashkil qiladi — bu ko'rsatkichli o'sishning asosiy xossasi. Boshqa variantlarda koeffitsient noto'g'ri tanlangan yoki ortiqcha t qo'shilgan. Javob: N'(t) = 0,4·N(t).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-jarayon-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#5270157e"
+    },
+    {
+      "q": "Bankdagi omonat summasi K(t) = 5000·e^(0,12t) ming so'm qonun bilan o'sadi, bunda t yillarda o'lchanadi. Omonat qo'yilgan paytda summa qanday tezlik bilan ortmoqda?",
+      "v": [
+        "600 ming so'm/yil",
+        "5000 ming so'm/yil",
+        "0,12 ming so'm/yil",
+        "60 ming so'm/yil"
+      ],
+      "t": 0,
+      "izoh": "Hosila K'(t) = 5000·0,12·e^(0,12t) = 600·e^(0,12t). t = 0 da e⁰ = 1, demak K'(0) = 600 ming so'm/yil. 5000 ming so'm/yil — boshlang'ich summa tezlik deb olingan. 0,12 ming so'm/yil — faqat ko'rsatkichdagi koeffitsient. 60 ming so'm/yil — o'nga bo'lish xatosi. Javob: 600 ming so'm/yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-jarayon-tezligi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#3cc91c7c"
+    },
+    {
+      "q": "Ikki jism bir vaqtda yo'lga chiqdi va ularning harakat qonunlari s₁(t) = t² + 4t hamda s₂(t) = 3t² − 8t ko'rinishida berilgan (metrda). Jismlarning tezliklari qaysi paytda tenglashadi?",
+      "v": [
+        "6 s",
+        "3 s",
+        "12 s",
+        "1,5 s"
+      ],
+      "t": 1,
+      "izoh": "Tezliklarni topamiz: v₁(t) = 2t + 4 va v₂(t) = 6t − 8. Ularni tenglashtiramiz: 2t + 4 = 6t − 8, bundan 4t = 12 va t = 3 s. 6 s — s₁(t) = s₂(t) tenglamaning ildizi, ya'ni jismlar uchrashgan payt, tezliklar emas. 12 s — bo'lish bajarilmagan. 1,5 s — hadlar ko'chirilganda ishoralar chalkashtirilgan. Javob: 3 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-jism-tezlik-tenglashishi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#d81d1ca0"
+    },
+    {
+      "q": "Bir bekatdan chiqqan ikki avtomobilning harakat qonunlari s₁(t) = 20t + t² va s₂(t) = 5t² metr ko'rinishida. Ikkinchi avtomobil birinchisi bilan bir xil tezlikka qachon erishadi?",
+      "v": [
+        "5 s",
+        "20 s",
+        "10 s",
+        "2,5 s"
+      ],
+      "t": 3,
+      "izoh": "Tezliklar: v₁(t) = 20 + 2t va v₂(t) = 10t. Tenglama 10t = 20 + 2t, bundan 8t = 20 va t = 2,5 s. 5 s — yo'llarni tenglashtirish natijasi, bu uchrashish payti. 20 s — boshlang'ich tezlik vaqt deb olingan. 10 s — 20 : 2, ya'ni faqat birinchi jismning koeffitsientlari ishlatilgan. Javob: 2,5 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-jism-tezlik-tenglashishi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#61a551d9"
+    },
+    {
+      "q": "Ikki moddiy nuqtaning harakat qonunlari s₁(t) = t³ va s₂(t) = 12t metr ko'rinishida berilgan. Ularning tezliklari teng bo'lgan paytni aniqlang.",
+      "v": [
+        "4 s",
+        "2√3 s",
+        "6 s",
+        "2 s"
+      ],
+      "t": 3,
+      "izoh": "Tezliklar: v₁(t) = 3t² va v₂(t) = 12. Tenglama 3t² = 12, bundan t² = 4 va musbat ildiz t = 2 s. 4 s — kvadrat ildiz olish unutilgan. 2√3 s — t³ = 12t, ya'ni koordinatalarni tenglashtirish natijasi. 6 s — 12 ni 2 ga bo'lish xatosi. Javob: 2 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-jism-tezlik-tenglashishi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#ede9f0b8"
+    },
+    {
+      "q": "Ikki jism s₁(t) = t² + 6t va s₂(t) = 2t² + 2t qonunlar bo'yicha harakatlanadi (metrda, t soniyada). Ikkinchi jismning tezligi birinchisidan qaysi paytdan boshlab katta bo'ladi?",
+      "v": [
+        "t > 2 s dan boshlab",
+        "t < 2 s oralig'ida",
+        "t > 4 s dan boshlab",
+        "t > 1 s dan boshlab"
+      ],
+      "t": 0,
+      "izoh": "Tezliklar: v₁(t) = 2t + 6 va v₂(t) = 4t + 2. Shart v₂ > v₁, ya'ni 4t + 2 > 2t + 6. Hadlarni guruhlaymiz: 2t > 4, bundan t > 2. Demak ikkinchi soniyadan keyin ikkinchi jism tezroq harakatlanadi. t < 2 s degan javobda tengsizlik ishorasi teskari olingan. t > 4 s javobida 2t > 4 dan t > 4 deb yozilib, ikkiga bo'lish bajarilmagan. t > 1 s javobida esa bo'lish noto'g'ri bajarilgan. Javob: t > 2 s dan boshlab.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-jism-tezlik-tenglashishi",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#98efe784"
+    },
+    {
+      "q": "Tormozlanayotgan yuk mashinasining harakat qonuni s(t) = 18t − 1,5t² metr ko'rinishida berilgan. Mashina to'liq to'xtaguncha qancha yo'l bosib o'tadi?",
+      "v": [
+        "108 m",
+        "54 m",
+        "162 m",
+        "27 m"
+      ],
+      "t": 1,
+      "izoh": "Avval to'xtash paytini topamiz: v(t) = 18 − 3t = 0, demak t = 6 s. Endi shu paytdagi yo'lni hisoblaymiz: s(6) = 18·6 − 1,5·36 = 108 − 54 = 54 m. 108 m — ikkinchi had ayirilmagan. 162 m — ayirish o'rniga qo'shish qilingan. 27 m — natija ortiqcha ikkiga bo'lingan. Javob: 54 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toxtaguncha-bosib-otilgan-yol",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#d2cd59d2"
+    },
+    {
+      "q": "Avtobus tormozlangandan keyin s(t) = 20t − 2t² qonun bilan siljiydi, bunda s metrda, t soniyada. Avtobusning tormozlash yo'lini, ya'ni to'xtaguncha bosib o'tgan masofasini toping.",
+      "v": [
+        "100 m",
+        "150 m",
+        "50 m",
+        "25 m"
+      ],
+      "t": 2,
+      "izoh": "To'xtash sharti v(t) = 0. Hosila v(t) = 20 − 4t, demak 20 − 4t = 0 va t = 5 s. Tormozlash yo'li s(5) = 100 − 2·25 = 100 − 50 = 50 m. 100 m — ikkinchi had hisobga olinmagan. 150 m — ayirish o'rniga qo'shish bajarilgan. 25 m — 50 ni yana ikkiga bo'lish xatosi. Javob: 50 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toxtaguncha-bosib-otilgan-yol",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#6bd21d2f"
+    },
+    {
+      "q": "Moddiy nuqta s(t) = t³ − 6t² + 9t qonun bilan harakatlanadi (s — metr, t — soniya). Nuqta birinchi marta to'xtagan paytdagi koordinatasini toping.",
+      "v": [
+        "0 m",
+        "9 m",
+        "−4 m",
+        "4 m"
+      ],
+      "t": 3,
+      "izoh": "Tezlik v(t) = 3t² − 12t + 9 = 3(t − 1)(t − 3), demak birinchi to'xtash t = 1 s da bo'ladi. Koordinata s(1) = 1 − 6 + 9 = 4 m. 0 m — bu s(3), ya'ni ikkinchi to'xtash paytidagi koordinata. 9 m — faqat oxirgi had hisoblangan. −4 m — ishoralar noto'g'ri qo'yilgan. Javob: 4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toxtaguncha-bosib-otilgan-yol",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#6992e4ed"
+    },
+    {
+      "q": "Jism s(t) = t² − 6t qonun bilan harakatlanadi (s — metr, t — soniya). Dastlabki 5 soniyada jism bosib o'tgan to'liq yo'l uzunligini hisoblang.",
+      "v": [
+        "13 m",
+        "5 m",
+        "9 m",
+        "4 m"
+      ],
+      "t": 0,
+      "izoh": "Tezlik v(t) = 2t − 6 nolga t = 3 s da aylanadi va shu paytda yo'nalish o'zgaradi. Koordinatalar: s(0) = 0, s(3) = −9, s(5) = −5. Birinchi bo'lakda 9 m, ikkinchi bo'lakda |−5 − (−9)| = 4 m yurilgan. To'liq yo'l 9 + 4 = 13 m. 5 m — bu siljish moduli, to'liq yo'l emas. 9 va 4 — faqat bitta bo'lak. Javob: 13 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toxtaguncha-bosib-otilgan-yol",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#be8d518c"
+    },
+    {
+      "q": "Jismning harakat qonuni s(t) = −t³ + 9t² + 5t metr ko'rinishida berilgan (t — soniya). Jism eng katta tezlikka qaysi paytda erishadi?",
+      "v": [
+        "6 s",
+        "3 s",
+        "9 s",
+        "4,5 s"
+      ],
+      "t": 1,
+      "izoh": "Tezlik v(t) = −3t² + 18t + 5 — tarmoqlari pastga qaragan parabola, shuning uchun eng katta qiymat uchida bo'ladi: t = 18 : (2·3) = 3 s. 6 s — maxrajdagi 2 ko'paytuvchi tushirilgan. 9 s — dastlabki formuladagi koeffitsient olingan. 4,5 s — 9 ni ikkiga bo'lish xatosi. Javob: 3 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maksimal-tezlik-payti",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#5f5c89a1"
+    },
+    {
+      "q": "Sinov qurilmasining harakat qonuni s(t) = 30t² − 2t³ metr ko'rinishida berilgan (t — soniya). Qurilma erishadigan eng katta tezlikning qiymatini toping.",
+      "v": [
+        "300 m/s",
+        "60 m/s",
+        "10 m/s",
+        "150 m/s"
+      ],
+      "t": 3,
+      "izoh": "Tezlik v(t) = 60t − 6t². U eng katta bo'lgan paytda a(t) = 60 − 12t nolga aylanadi, demak t = 5 s. Endi v(5) = 300 − 6·25 = 300 − 150 = 150 m/s. 300 m/s — ikkinchi had ayirilmagan. 60 m/s — hosiladagi koeffitsient. 10 m/s — bu tezlik nolga aylanadigan payt, tezlik qiymati emas. Javob: 150 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maksimal-tezlik-payti",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#f0c397f6"
+    },
+    {
+      "q": "Jismning tezligi v(t) = 12t − t² formula bilan berilgan (v — m/s, t — soniya). Jism eng katta tezlikka erishgan paytda uning tezlanishi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "12 m/s²",
+        "36 m/s²",
+        "0 m/s²",
+        "6 m/s²"
+      ],
+      "t": 2,
+      "izoh": "Tezlanish a(t) = 12 − 2t. Tezlik eng katta bo'lgan paytda uning hosilasi, ya'ni tezlanish nolga aylanadi: 12 − 2t = 0 va t = 6 s. Demak izlanayotgan tezlanish 0 m/s². 12 m/s² — boshlang'ich tezlanish a(0). 36 m/s² — bu v(6) = 72 − 36, ya'ni eng katta tezlik. 6 m/s² — payt qiymati javob deb yozilgan. Javob: 0 m/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maksimal-tezlik-payti",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#6bc07940"
+    },
+    {
+      "q": "Avtomobilning bosib o'tgan yo'li s(t) funksiya bilan berilgan, bunda s kilometrda, t soatda o'lchanadi. Hisob natijasida s'(2) = 85 chiqdi. Bu natijaning ma'nosini to'g'ri izohlagan javobni tanlang.",
+      "v": [
+        "Ikkinchi soatda avtomobil 85 km yo'l bosgan",
+        "Ikki soat ichida avtomobil jami 85 km yurgan",
+        "Ikkinchi soat oxirida avtomobilning lahzali tezligi 85 km/soat",
+        "Avtomobilning butun yo'l davomidagi o'rtacha tezligi 85 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Yo'l funksiyasining hosilasi lahzali tezlikni beradi, masofani emas. Shuning uchun s'(2) = 85 aynan t = 2 soat paytida spidometr 85 km/soat ko'rsatishini bildiradi. Ikkinchi soatda 85 km yo'l bosgan va ikki soatda jami 85 km yurgan degan javoblarda hosila masofa deb tushunilgan. Butun yo'lning o'rtacha tezligi haqidagi javobda esa lahzali tezlik o'rtacha tezlik bilan chalkashtirilgan. Javob: ikkinchi soat oxirida avtomobilning lahzali tezligi 85 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-manosi-talqin",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#cd01b087"
+    },
+    {
+      "q": "Suv omboridagi suv hajmi V(t) funksiya bilan ifodalanadi (V — kub metr, t — soat) va hisob natijasida V'(5) = −12 chiqdi. Bu son nimani anglatishini to'g'ri ko'rsating.",
+      "v": [
+        "Beshinchi soatda hajm soatiga 12 m³ tezlik bilan kamaymoqda",
+        "Beshinchi soatda ombordagi suv hajmi 12 m³ ni tashkil qiladi",
+        "Besh soat ichida ombordan jami 12 m³ suv chiqib ketgan",
+        "Beshinchi soatda hajm soatiga 12 m³ tezlik bilan ortmoqda"
+      ],
+      "t": 0,
+      "izoh": "Hosila kattalikning o'zgarish tezligini ko'rsatadi, uning qiymatini emas. Manfiy ishora esa kamayishni bildiradi. Demak V'(5) = −12 aynan beshinchi soatda hajm har soatda 12 m³ ga kamayayotganini anglatadi. Hajm 12 m³ ni tashkil qiladi degan javobda hosila V(5) bilan almashtirilgan. Jami 12 m³ suv chiqib ketgan degan javobda lahzali tezlik o'rniga besh soatdagi umumiy o'zgarish olingan. Hajm ortmoqda degan javobda manfiy ishora e'tiborsiz qoldirilgan. Javob: beshinchi soatda hajm soatiga 12 m³ tezlik bilan kamaymoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-manosi-talqin",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#e36076bb"
+    },
+    {
+      "q": "Jismning tezligi v(t) uchun v'(4) = 0 ekani aniqlandi va shu payt atrofida v'(t) ning ishorasi musbatdan manfiyga o'zgardi. Bu holat jism harakati haqida nima deydi?",
+      "v": [
+        "To'rtinchi soniyada jism butunlay to'xtagan",
+        "To'rtinchi soniyada jismning tezligi eng katta qiymatga erishgan",
+        "To'rtinchi soniyada jismning tezligi eng kichik qiymatga erishgan",
+        "To'rtinchi soniyada jism harakat yo'nalishini o'zgartirgan"
+      ],
+      "t": 1,
+      "izoh": "v'(t) — bu tezlanish. U nolga aylanib, musbatdan manfiyga o'tsa, tezlik avval ortib, keyin kamaya boshlaydi, demak shu paytda tezlik eng katta qiymatga erishadi. To'xtash yoki yo'nalish o'zgarishi esa v(t) = 0 sharti bilan bog'liq, v'(t) = 0 bilan emas — aynan shu ikki shartni chalkashtirish tipik xato. Javob: tezlik eng katta qiymatga erishgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-manosi-talqin",
+      "id": "matematika_anlz_m04-hosilaning-fizik-manosi#14758d83"
+    }
+  ]
+}

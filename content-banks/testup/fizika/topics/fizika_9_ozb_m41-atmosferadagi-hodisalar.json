@@ -1,0 +1,486 @@
+{
+  "nom": "41-mavzu. Atmosferadagi Hodisalar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Havoning absolut namligi deb nimaga aytiladi?",
+      "v": [
+        "1 m³ havodagi suv bug'ining massasiga",
+        "1 kg havodagi suv bug'ining massasiga",
+        "Havodagi suv bug'ining hajmiga",
+        "1 m³ havodagi kislorod massasiga"
+      ],
+      "t": 0,
+      "izoh": "1 m³ havodagi suv bug'ining massasi havoning absolut namligi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#54812fd6"
+    },
+    {
+      "q": "Absolut namlik qanday formula bilan hisoblanadi va qanday birlikda ifodalanadi?",
+      "v": [
+        "ρ = m/V, g/m³",
+        "ρ = V/m, m³/g",
+        "ρ = m·V, g·m³",
+        "ρ = p/T, Pa/K"
+      ],
+      "t": 0,
+      "izoh": "Berilgan hajmdagi havoda suv bug'ining massasi orqali ρ = m/V; absolut namlik 1 m³ havoda necha gramm suv bug'i borligini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#99ced749"
+    },
+    {
+      "q": "Havoning nisbiy namligi deb nimaga aytiladi?",
+      "v": [
+        "Berilgan temperaturada havodagi suv bug'ining zichligi (absolut namligi) shu temperaturada to'yingan bug' zichligiga nisbatining foizlarda olingan qiymatiga",
+        "1 m³ havodagi suv bug'ining massasiga",
+        "Havodagi suv bug'ining bosimiga",
+        "To'yingan bug'ning zichligiga"
+      ],
+      "t": 0,
+      "izoh": "Nisbiy namlik — absolut namlikning shu temperaturada to'yingan bug' zichligiga nisbatining foizlardagi qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#fdd0baad"
+    },
+    {
+      "q": "Havoning nisbiy namligi qanday formula bilan ifodalanadi?",
+      "v": [
+        "φ = (ρ/ρ₀)·100%",
+        "φ = (ρ₀/ρ)·100%",
+        "φ = ρ·ρ₀·100%",
+        "φ = (ρ−ρ₀)·100%"
+      ],
+      "t": 0,
+      "izoh": "φ = (ρ/ρ₀)·100%, bunda ρ₀ — to'yingan bug' zichligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#79d8ae4b"
+    },
+    {
+      "q": "Nisbiy namlikni suv bug'ining bosimi orqali qanday ifodalash mumkin?",
+      "v": [
+        "φ = (p/p₀)·100%",
+        "φ = (p₀/p)·100%",
+        "φ = p·p₀",
+        "φ = p₀−p"
+      ],
+      "t": 0,
+      "izoh": "φ = (p/p₀)·100%, bunda p — havodagi suv bug'ining bosimi, p₀ — to'yingan bug'ning bosimi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#3e3720a3"
+    },
+    {
+      "q": "Nisbiy namlik 100% ga teng bo'lganda nima sodir bo'ladi?",
+      "v": [
+        "Havodagi suv bug'i to'yingan bo'ladi va bug'lanish sodir bo'lmaydi",
+        "Bug'lanish juda tezlashadi",
+        "Havo butunlay quruq bo'ladi",
+        "Suv bug'i darhol muzlaydi"
+      ],
+      "t": 0,
+      "izoh": "Nisbiy namlik 100% ga teng bo'lganda havodagi suv bug'ining to'yinganligi, bug'lanish sodir bo'lmayotganligi bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#44550906"
+    },
+    {
+      "q": "Jadvalga ko'ra, 20 °C da to'yingan suv bug'ining zichligi qancha?",
+      "v": [
+        "17,3 g/m³",
+        "12,8 g/m³",
+        "23,0 g/m³",
+        "9,4 g/m³"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda 20 °C uchun ρ₀ = 17,3 g/m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#4315c184"
+    },
+    {
+      "q": "Jadvalga ko'ra, 20 °C da to'yingan suv bug'ining bosimi qancha?",
+      "v": [
+        "2,33 kPa",
+        "1,71 kPa",
+        "3,17 kPa",
+        "1,23 kPa"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda 20 °C uchun p₀ = 2,33 kPa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#8c487985"
+    },
+    {
+      "q": "Havo temperaturasi ortishi bilan uning to'yinish chegarasi (to'yingan bug' zichligi) qanday o'zgaradi?",
+      "v": [
+        "Ortib boradi",
+        "Kamayib boradi",
+        "O'zgarmaydi",
+        "Avval kamayib, keyin ortadi"
+      ],
+      "t": 0,
+      "izoh": "Havo temperaturasi ortishi bilan uning to'yinish chegarasi ham ortib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#46351035"
+    },
+    {
+      "q": "Avgust psixrometri qanday tuzilishga ega?",
+      "v": [
+        "U biri quruq, ikkinchisi nam termometrdan iborat",
+        "Bitta termometr va barometrdan iborat",
+        "Ikkita barometrdan iborat",
+        "Bitta gigrometr va manometrdan iborat"
+      ],
+      "t": 0,
+      "izoh": "Avgust psixrometri biri quruq, ikkinchisi nam termometrdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#f616a936"
+    },
+    {
+      "q": "Avgust psixrometrida nam termometr qanday tayyorlanadi?",
+      "v": [
+        "Uchining pastki qismi mato bilan o'ralib, suvli idishga tushiriladi",
+        "Uchiga moy surtiladi",
+        "Qizdirilib qo'yiladi",
+        "Sovutgichga solinadi"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi termometrning uchi mato bilan o'ralib, pastki uchi suvli idishga tushiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#e71a649d"
+    },
+    {
+      "q": "Psixrometrda nam termometrning ko'rsatishi nima uchun quruq termometrnikidan past bo'ladi?",
+      "v": [
+        "Matodan suv bug'lanib, termometrni sovitadi",
+        "Nam termometr buzilgan bo'ladi",
+        "Suv termometrni qizdiradi",
+        "Havo bosimi uni past ko'rsatadi"
+      ],
+      "t": 0,
+      "izoh": "Havo qancha quruq bo'lsa, suv matodan shuncha tez bug'lanadi va termometr temperaturasi shuncha past bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#9cf3d06f"
+    },
+    {
+      "q": "57-rasmdagi psixrometrda quruq termometr 28 °C, nam termometr 21 °C ni ko'rsatmoqda. Termometrlar farqi va nisbiy namlik qancha?",
+      "v": [
+        "Farq 7 °C, nisbiy namlik 53%",
+        "Farq 7 °C, nisbiy namlik 48%",
+        "Farq 5 °C, nisbiy namlik 65%",
+        "Farq 6 °C, nisbiy namlik 59%"
+      ],
+      "t": 0,
+      "izoh": "28−21 = 7 °C; psixrometrik jadvaldan (28 °C, Δt=7) nisbiy namlik 53% ekani aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#164440c8"
+    },
+    {
+      "q": "Psixrometrik jadvaldan foydalanish uchun qanday kattaliklar kerak?",
+      "v": [
+        "Quruq termometr ko'rsatishi va quruq-nam termometrlar ko'rsatishlarining farqi",
+        "Faqat nam termometr ko'rsatishi",
+        "Havo bosimi va shamol tezligi",
+        "Faqat havo temperaturasi"
+      ],
+      "t": 0,
+      "izoh": "Quruq va nam termometrlar ko'rsatgan temperaturalar farqini hisoblab, psixrometrik jadvaldan nisbiy namlik aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#7aaa1ee9"
+    },
+    {
+      "q": "Psixrometrik jadvalga ko'ra, quruq termometr 20 °C, termometrlar farqi 4 °C bo'lganda nisbiy namlik qancha?",
+      "v": [
+        "66%",
+        "59%",
+        "74%",
+        "51%"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda 20 °C qatori va Δt=4 ustuni kesishmasida 66% turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#71e2702d"
+    },
+    {
+      "q": "Quruq va nam termometrlar ko'rsatishlarining farqi 0 °C bo'lsa, nisbiy namlik qancha bo'ladi?",
+      "v": [
+        "100%",
+        "50%",
+        "0%",
+        "90%"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda har qanday quruq termometr ko'rsatishida farq 0 bo'lsa, nisbiy namlik 100% ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#18cb34d0"
+    },
+    {
+      "q": "Havo odatda qanday holatlarda quruq, me'yorida va nam deb hisoblanadi?",
+      "v": [
+        "50% dan kam bo'lganda quruq, 50–80% bo'lganda me'yorida, 80% dan katta bo'lganda nam",
+        "30% dan kamda quruq, 30–50% da me'yorida, 50% dan kattada nam",
+        "80% dan kamda quruq, 80–90% da me'yorida, 90% dan kattada nam",
+        "Faqat 100% da nam"
+      ],
+      "t": 0,
+      "izoh": "Nisbiy namlik 50% dan kam bo'lganda havo quruq, 50–80% bo'lganda me'yorida, 80% dan katta bo'lganda nam hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#0e063148"
+    },
+    {
+      "q": "Namlikning katta bo'lishi qanday oqibatlarga olib keladi?",
+      "v": [
+        "Metall buyumlarning zanglashiga, yog'och buyumlarning shishishiga",
+        "Yog'och buyumlarning qiyshayishiga",
+        "Metallarning yorqinlashiga",
+        "Buyumlarning quruq qolishiga"
+      ],
+      "t": 0,
+      "izoh": "Namlik katta bo'lishi metall buyumlarning zanglashiga, yog'och buyumlarning shishishiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#43cc9830"
+    },
+    {
+      "q": "Quruq havoda yog'och buyumlarga nima bo'ladi?",
+      "v": [
+        "O'z namligini yo'qotib, qiyshayishi va yorilishi mumkin",
+        "Shishib kattalashadi",
+        "Zanglay boshlaydi",
+        "Hech narsa bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Quruq havoda yog'och buyumlar o'z namligini yo'qotib, qiyshayishi va yorilishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#575c0c23"
+    },
+    {
+      "q": "Tuman qanday hosil bo'ladi?",
+      "v": [
+        "Yer yuzi ustida havo namligi katta bo'lganda suv bug'larining bir qismi kondensatsiyalanib, mayda suv tomchilariga aylanadi",
+        "Suv bug'lari muzlaganda",
+        "Yomg'ir tomchilari kichrayganda",
+        "Qor eriganda"
+      ],
+      "t": 0,
+      "izoh": "Yer yuzi ustida kondensatsiyalangan mayda suv tomchilarining atmosferadagi aralashmasi tuman deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#43059ce2"
+    },
+    {
+      "q": "Shudring nuqtasi deb nimaga aytiladi?",
+      "v": [
+        "Suv bug'i to'yinadigan temperaturaga",
+        "Suvning qaynash temperaturasiga",
+        "Suvning muzlash temperaturasiga",
+        "Havoning eng yuqori temperaturasiga"
+      ],
+      "t": 0,
+      "izoh": "Suv bug'i to'yinadigan temperatura shudring nuqtasi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#ae7087a0"
+    },
+    {
+      "q": "Darslikdagi misolda kunduzi 30 °C da absolut namlik 12,5 g/m³ bo'lsa, tunda havo qanday temperaturagacha pasayganda shudring hosil bo'ladi?",
+      "v": [
+        "15 °C ga yaqin (12,5 g/m³ shu temperaturada to'yingan zichlikka aylanadi)",
+        "30 °C da",
+        "0 °C da",
+        "25 °C da"
+      ],
+      "t": 0,
+      "izoh": "12,5 g/m³ zichlik taxminan 15 °C da to'yingan holatga o'tadi (C nuqta); shu temperatura shudring nuqtasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#1f14678b"
+    },
+    {
+      "q": "Havoning absolut namligini shudring nuqta orqali aniqlaydigan asbob qanday deyiladi?",
+      "v": [
+        "Gigrometr",
+        "Psixrometr",
+        "Barometr",
+        "Termometr"
+      ],
+      "t": 0,
+      "izoh": "Havoning absolut namligini shudring nuqta orqali aniqlaydigan asbobga gigrometr deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#f0d79fbd"
+    },
+    {
+      "q": "Qirov qanday hosil bo'ladi?",
+      "v": [
+        "Temperatura 0 °C dan past bo'lgan paytlarda kondensatsiyalangan suv bug'lari muz zarrachalarini hosil qilib, yerga tushadi",
+        "Suv tomchilari yerdagi chang bilan aralashganda",
+        "Tuman bug'lanib ketganda",
+        "Yomg'ir kuchayganda"
+      ],
+      "t": 0,
+      "izoh": "0 °C dan pastda kondensatsiyalangan suv bug'lari muz zarrachalarini hosil qilib, yerga qirov bo'lib tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#d47084ad"
+    },
+    {
+      "q": "Bulut qanday hosil bo'ladi?",
+      "v": [
+        "Bir necha kilometr balandlikda temperatura past bo'lgani uchun suv bug'lari to'yinib kondensatsiyalanib, mayda suv zarrachalarini hosil qiladi",
+        "Yer yuzida suv bug'lanib ko'tarilganda",
+        "Qirov eriganda",
+        "Shudring quriganda"
+      ],
+      "t": 0,
+      "izoh": "Balandlikda temperatura past bo'lgani uchun suv bug'larining to'yinishi oson bo'ladi, kondensatsiyalanib mayda suv zarrachalari — bulut hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#1ad338d0"
+    },
+    {
+      "q": "Yomg'ir qanday hosil bo'ladi?",
+      "v": [
+        "Temperatura yanada pasayganda suv zarrachalari birlashib suv tomchilariga aylanadi va o'z og'irligini tutib turolmay yerga tushadi",
+        "Bulut bug'lanib ketganda",
+        "Muz zarrachalari qotishganda",
+        "Tuman zichlashganda"
+      ],
+      "t": 0,
+      "izoh": "Suv zarrachalari birlashib tomchilarga aylanadi; o'z og'irligini tutib turolmagan tomchilar yerga yomg'ir bo'lib tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#2cf349e4"
+    },
+    {
+      "q": "Qor qanday hosil bo'ladi?",
+      "v": [
+        "Bulutdagi temperatura sovib ketganda suv bug'lari muz zarrachalarini hosil qilib kondensatsiyalanadi, muz zarrachalari birlashib qor uchqunlarini hosil qiladi",
+        "Suv tomchilari muzlab qotganda",
+        "Yomg'ir sovuganda",
+        "Tuman qotib qolganda"
+      ],
+      "t": 0,
+      "izoh": "Bulut soviganda suv bug'lari muz zarrachalariga aylanib kondensatsiyalanadi, muz zarrachalari birlashib qor uchqunlarini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#198f3775"
+    },
+    {
+      "q": "Do'l qanday hosil bo'ladi?",
+      "v": [
+        "Past temperaturali bulutdagi muz zarrachalari havo oqimlari ta'sirida yuqoriga-pastga harakat qilib, har gal ko'tarilganda muz pardasi qoplaydi va yiriklashadi",
+        "Suv tomchilari darhol muzlab qoladi",
+        "Qor uchqunlari erib yana qotadi",
+        "Yomg'ir tomchilari birlashadi"
+      ],
+      "t": 0,
+      "izoh": "Muz zarrachalari havo oqimlarida yuqoriga-pastga harakatlanib, har ko'tarilganda muz pardasi qoplaydi, yiriklashib do'l hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#b698bb44"
+    },
+    {
+      "q": "Ob-havo deb nimaga aytiladi?",
+      "v": [
+        "Aniq bir vaqtda ma'lum bir joyda havoning holatiga",
+        "Yil davomidagi o'rtacha havo haroratiga",
+        "Faqat yog'ingarchilik miqdoriga",
+        "Faqat shamol tezligiga"
+      ],
+      "t": 0,
+      "izoh": "Aniq bir vaqtda ma'lum bir joyda havoning holati ob-havo deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#92e4e24d"
+    },
+    {
+      "q": "Ob-havoning asosiy elementlari qaysilar?",
+      "v": [
+        "Havoning temperaturasi, namligi va bosimi",
+        "Shamol, bulut va yog'inlar",
+        "Tuman, shudring va qirov",
+        "Faqat temperatura va shamol"
+      ],
+      "t": 0,
+      "izoh": "Havoning temperaturasi, namligi va bosimi ob-havoning asosiy elementlari deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#f5ff5130"
+    },
+    {
+      "q": "Havo temperaturasining pasayishi qanday oqibatlarga olib keladi?",
+      "v": [
+        "Atmosfera bosimining kamayishiga, nisbiy namlikning ortishiga",
+        "Nisbiy namlikning kamayishiga",
+        "Bosimning ortishiga",
+        "Bug'lanishning tezlashishiga"
+      ],
+      "t": 0,
+      "izoh": "Havo temperaturasining pasayishi atmosfera bosimining kamayishiga, nisbiy namlikning ortishiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#a42346f8"
+    },
+    {
+      "q": "O'zbekistonda ob-havoni o'rganish bo'yicha qanday xizmat mavjud?",
+      "v": [
+        "Toshkent shahrida va viloyatlarda gidrometeorologik markaz xizmat qiladi",
+        "Faqat Toshkentda bitta observatoriya bor",
+        "Faqat xalqaro markazlar kuzatadi",
+        "Ob-havo o'rganilmaydi"
+      ],
+      "t": 0,
+      "izoh": "O'zbekistonda ob-havoni o'rganish bo'yicha Toshkent shahrida va viloyatlarda gidrometeorologik markaz xizmat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar#60d9c5ee"
+    }
+  ]
+}

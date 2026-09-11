@@ -1,0 +1,531 @@
+{
+  "nom": "25-mavzu. Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kimyoviy reaksiyalar necha guruhga bo'linadi?",
+      "v": [
+        "2 guruhga: qaytar va qaytmas reaksiyalar",
+        "3 guruhga: to'g'ri, teskari va aralash",
+        "4 guruhga: ekzotermik, endotermik, katalitik, oddiy",
+        "5 guruhga: gomogen, geterogen, qaytar, qaytmas, zanjirsimon"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy reaksiyalar qaytar va qaytmas reaksiyalar deb 2 guruhga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#3cdf140f"
+    },
+    {
+      "q": "Qaytmas reaksiyalar deb qanday reaksiyalarga aytiladi?",
+      "v": [
+        "Faqat bir yo'nalishda boradigan va boshlang'ich moddalar oxirgi mahsulotlarga to'liq aylanadigan reaksiyalarga",
+        "Ikki yo'nalishda bir vaqtda boradigan reaksiyalarga",
+        "Faqat katalizator bilan boradigan reaksiyalarga",
+        "Faqat qizdirilganda boradigan reaksiyalarga"
+      ],
+      "t": 0,
+      "izoh": "Qaytmas reaksiyalar faqat bir yo'nalishda borib, boshlang'ich moddalar to'liq mahsulotga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#c1ba06e9"
+    },
+    {
+      "q": "Qaytmas reaksiyalarda hosil bo'lgan mahsulotlar haqida qaysi fikr to'g'ri?",
+      "v": [
+        "Ular parchalanib yoki o'zaro reaksiyaga kirib dastlabki moddalarni hosil qilmaydi",
+        "Ular qisman dastlabki moddalarni hosil qiladi",
+        "Ular darhol qayta parchalanadi",
+        "Ular faqat suvda eriganda dastlabki moddalarni hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Qaytmas reaksiyalar mahsulotlari dastlabki moddalarni hosil qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#3e37d3df"
+    },
+    {
+      "q": "Mis metallining konsentrlangan nitrat kislota bilan reaksiyasidan olingan mahsulotlardan metall holidagi misni olish mumkinmi?",
+      "v": [
+        "Yo'q, chunki bu reaksiya qaytmas reaksiya",
+        "Ha, mahsulotlarni qizdirish orqali",
+        "Ha, suv qo'shish orqali",
+        "Ha, bosim oshirish orqali"
+      ],
+      "t": 0,
+      "izoh": "Cu + 4HNO3 = Cu(NO3)2 + 2NO2 + 2H2O reaksiyasi qaytmas, mahsulotlardan misni olib bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#a433b8fc"
+    },
+    {
+      "q": "Mis va konsentrlangan nitrat kislota reaksiyasining tenglamasi qaysi?",
+      "v": [
+        "Cu + 4HNO3 = Cu(NO3)2 + 2NO2 + 2H2O",
+        "Cu + 2HNO3 = Cu(NO3)2 + H2",
+        "3Cu + 8HNO3 = 3Cu(NO3)2 + 2NO + 4H2O",
+        "Cu + HNO3 = CuNO3 + H2O"
+      ],
+      "t": 0,
+      "izoh": "Darslikda Cu + 4HNO3 = Cu(NO3)2 + 2NO2 + 2H2O keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#1dd42355"
+    },
+    {
+      "q": "Temir va oltingugurt reaksiyaga kirishtirilib olingan temir (II) sulfid haqida qaysi fikr to'g'ri?",
+      "v": [
+        "U shu haroratda yana temir metali va oltingugurtga parchalanmaydi",
+        "U qizdirilganda dastlabki moddalarga parchalanadi",
+        "U suvda erib dastlabki moddalarni hosil qiladi",
+        "U kislorod bilan qayta reaksiyaga kirishadi"
+      ],
+      "t": 0,
+      "izoh": "FeS shu haroratda temir va oltingugurtga parchalanmaydi, reaksiya qaytmas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#c16e108b"
+    },
+    {
+      "q": "Qaytmas reaksiyalar qachongacha davom etadi?",
+      "v": [
+        "Dastlabki moddalardan birontasi tugamaguncha, ya'ni oxirigacha",
+        "Muvozanat qaror topguncha",
+        "Katalizator sarflanib bo'lguncha",
+        "Harorat tushguncha"
+      ],
+      "t": 0,
+      "izoh": "Qaytmas reaksiyalar dastlabki moddalardan biri tugamaguncha davom etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#c1f9fa63"
+    },
+    {
+      "q": "Kimyoviy reaksiyalar qaysi holda qaytmas bo'ladi: reaksiya mahsulotlari...",
+      "v": [
+        "reaksiya doirasidan cho'kma yoki gaz holda chiqib ketsa",
+        "katalizator ishtirok etsa",
+        "eritmada qolsa",
+        "suvda yaxshi erisa"
+      ],
+      "t": 0,
+      "izoh": "Mahsulotlar cho'kma yoki gaz holda chiqib ketsa, reaksiya qaytmas bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#c10c10b0"
+    },
+    {
+      "q": "Qaysi reaksiyada mahsulot cho'kma holda chiqib ketishi tufayli reaksiya qaytmas bo'ladi?",
+      "v": [
+        "CaCl2 + H2SO4 = CaSO4 + 2HCl",
+        "SO2 + H2O = H2SO3",
+        "N2 + 3H2 = 2NH3",
+        "CO2 + H2 = CO + H2O"
+      ],
+      "t": 0,
+      "izoh": "CaSO4 cho'kma hosil qiladi, reaksiya qaytmas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#52e5b5d1"
+    },
+    {
+      "q": "K2CO3 + 2HCl = 2KCl + CO2 + H2O reaksiyasi nima uchun qaytmas?",
+      "v": [
+        "CO2 gaz holda chiqib ketadi",
+        "KCl cho'kma hosil qiladi",
+        "Katta miqdorda issiqlik ajraladi",
+        "Katalizator ishtirok etadi"
+      ],
+      "t": 0,
+      "izoh": "CO2 gaz holda chiqib ketishi tufayli reaksiya qaytmas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#c4ea4c90"
+    },
+    {
+      "q": "NaOH + HCl = NaCl + H2O reaksiyasi qaysi sabab bilan qaytmas hisoblanadi?",
+      "v": [
+        "Kam ionlanadigan birikma — suv hosil bo'ladi",
+        "Gaz ajralib chiqadi",
+        "Cho'kma hosil bo'ladi",
+        "Katta miqdorda gaz yutiladi"
+      ],
+      "t": 0,
+      "izoh": "Kam ionlanadigan birikma, masalan suv hosil bo'lsa, reaksiya qaytmas bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#e9d99ec3"
+    },
+    {
+      "q": "Magniyning yonishi qaysi sabab bilan qaytmas reaksiyaga misol qilingan?",
+      "v": [
+        "Reaksiya davomida katta miqdorda energiya ajraladi",
+        "Gaz yutiladi",
+        "Cho'kma hosil bo'ladi",
+        "Suv hosil bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "2Mg + O2 = 2MgO reaksiyasida katta miqdorda energiya (ΔH = -602,5 kj/mol) ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#4edbc1a4"
+    },
+    {
+      "q": "2Mg + O2 = 2MgO reaksiyasining issiqlik effekti qancha?",
+      "v": [
+        "ΔH = -602,5 kj/mol",
+        "ΔH = +602,5 kj/mol",
+        "ΔH = -285,8 kj/mol",
+        "ΔH = -393,5 kj/mol"
+      ],
+      "t": 0,
+      "izoh": "Darslikda ΔH = -602,5 kj/mol deb keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#76b14b66"
+    },
+    {
+      "q": "Qaytar reaksiyalar deb qanday reaksiyalarga aytiladi?",
+      "v": [
+        "Bir vaqtning o'zida bir-biriga teskari ikki yo'nalishda boradigan reaksiyalarga",
+        "Faqat bir yo'nalishda boradigan reaksiyalarga",
+        "Faqat katalizator bilan boradigan reaksiyalarga",
+        "Mahsulotlari gaz bo'lgan reaksiyalarga"
+      ],
+      "t": 0,
+      "izoh": "Qaytar reaksiyalar bir vaqtda ikki qarama-qarshi yo'nalishda boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#59958021"
+    },
+    {
+      "q": "Qaytar reaksiyalarning tenglamalarida chap va o'ng qismlari orasida nima qo'yiladi?",
+      "v": [
+        "Qarama-qarshi tomonlarga yo'nalgan ikkita strelka",
+        "Bitta strelka",
+        "Tenglik belgisi",
+        "Plyus belgisi"
+      ],
+      "t": 0,
+      "izoh": "Qaytar reaksiya tenglamalarida qarama-qarshi ikkita strelka qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#fcb63920"
+    },
+    {
+      "q": "Oltingugurt (IV) oksid suv bilan reaksiyaga kirishib qanday kislota hosil qiladi?",
+      "v": [
+        "Sulfit kislota (H2SO3)",
+        "Sulfat kislota (H2SO4)",
+        "Tiosulfat kislota (H2S2O3)",
+        "Vodorod sulfid (H2S)"
+      ],
+      "t": 0,
+      "izoh": "SO2 + H2O = H2SO3 — sulfit kislota hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#3f2fa3e3"
+    },
+    {
+      "q": "Chapdan o'ngga boradigan reaksiya nima deb ataladi?",
+      "v": [
+        "To'g'ri reaksiya",
+        "Teskari reaksiya",
+        "Qaytmas reaksiya",
+        "Katalitik reaksiya"
+      ],
+      "t": 0,
+      "izoh": "Chapdan o'ngga boradigan reaksiya to'g'ri reaksiya deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#74df0a3b"
+    },
+    {
+      "q": "O'ngdan chapga boradigan reaksiya nima deb ataladi?",
+      "v": [
+        "Teskari reaksiya",
+        "To'g'ri reaksiya",
+        "Qaytmas reaksiya",
+        "Gomogen reaksiya"
+      ],
+      "t": 0,
+      "izoh": "O'ngdan chapga boradigan reaksiya teskari reaksiya deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#6e7e41c7"
+    },
+    {
+      "q": "Kimyoviy muvozanat deb qanday holatga aytiladi?",
+      "v": [
+        "To'g'ri reaksiya tezligi bilan teskari reaksiya tezligi tenglashgan holatga",
+        "Reaksiya to'liq tugagan holatga",
+        "Barcha moddalar sarflangan holatga",
+        "Faqat mahsulotlar qolgan holatga"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri va teskari reaksiya tezliklari tenglashgan holat kimyoviy muvozanat deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#a546f7ca"
+    },
+    {
+      "q": "Kimyoviy muvozanat qanday reaksiyalarda sodir bo'ladi?",
+      "v": [
+        "Qaytar reaksiyalarda",
+        "Qaytmas reaksiyalarda",
+        "Har ikkala turdagi reaksiyalarda",
+        "Faqat ekzotermik reaksiyalarda"
+      ],
+      "t": 0,
+      "izoh": "Muvozanat qaytar reaksiyalarda sodir bo'ladi; qaytmas reaksiyalarda muvozanat haqida gapirish noo'rin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#6a10bc5d"
+    },
+    {
+      "q": "aA + bB = cC + dD reaksiya uchun to'g'ri reaksiya tezligining formulasi qaysi?",
+      "v": [
+        "v = k1·[A]^a·[B]^b",
+        "v = k2·[C]^c·[D]^d",
+        "v = k1·[C]^c·[D]^d",
+        "v = k2·[A]^a·[B]^b"
+      ],
+      "t": 0,
+      "izoh": "v(to'g'ri) = k1·[A]^a·[B]^b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#e66ffced"
+    },
+    {
+      "q": "aA + bB = cC + dD reaksiya uchun teskari reaksiya tezligining formulasi qaysi?",
+      "v": [
+        "v = k2·[C]^c·[D]^d",
+        "v = k1·[A]^a·[B]^b",
+        "v = k2·[A]^a·[B]^b",
+        "v = k1·[C]^c·[D]^d"
+      ],
+      "t": 0,
+      "izoh": "v(teskari) = k2·[C]^c·[D]^d.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#7ebba3ad"
+    },
+    {
+      "q": "Muvozanat konstantasining formulasi qaysi?",
+      "v": [
+        "K_M = [C]^c·[D]^d / ([A]^a·[B]^b)",
+        "K_M = [A]^a·[B]^b / ([C]^c·[D]^d)",
+        "K_M = k1·[A]·[B]",
+        "K_M = [A]+[B] / [C]+[D]"
+      ],
+      "t": 0,
+      "izoh": "K_M = [C]^c·[D]^d / ([A]^a·[B]^b).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#2f152210"
+    },
+    {
+      "q": "Muvozanat konstantasi qanday aniqlanadi?",
+      "v": [
+        "Eksperimental yo'l bilan",
+        "Faqat nazariy hisoblash bilan",
+        "Dastlabki konsentratsiyalar yig'indisi orqali",
+        "Moddalarning molyar massalari orqali"
+      ],
+      "t": 0,
+      "izoh": "Muvozanat konstantasi eksperimental yo'l bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#685ee82b"
+    },
+    {
+      "q": "Muvozanat konstantasining qiymati katta bo'lsa, bu nima haqida ma'lumot beradi?",
+      "v": [
+        "Reaksiyada mahsulot miqdorlari ko'p ekanligini",
+        "Dastlabki moddalar miqdori ko'p ekanligini",
+        "Reaksiya umuman bormasligini",
+        "Katalizator zarurligini"
+      ],
+      "t": 0,
+      "izoh": "K_M katta bo'lsa, reaksiyada mahsulot miqdorlari ko'p; kichik bo'lsa, dastlabki moddalar miqdori ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#4b1d3255"
+    },
+    {
+      "q": "Muvozanat konstantasi moddalarning konsentratsiyalariga bog'liqmi?",
+      "v": [
+        "Yo'q, u faqat haroratga bog'liq",
+        "Ha, konsentratsiyaga to'g'ri proporsional",
+        "Ha, konsentratsiyaga teskari proporsional",
+        "Faqat bosimga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Muvozanat konstantasi konsentratsiyalarga bog'liq emas, u haroratga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#8fb2938d"
+    },
+    {
+      "q": "Kimyoviy muvozanat nima uchun dinamik (harakatchan) xususiyatga ega?",
+      "v": [
+        "Muvozanat vaqtida harakat to'xtamaydi: qancha mahsulot parchalansa, xuddi o'shancha mahsulot hosil bo'ladi",
+        "Moddalar umuman reaksiyaga kirmaydi",
+        "Reaksiya faqat bir yo'nalishda boradi",
+        "Moddalar idishda harakatsiz turadi"
+      ],
+      "t": 0,
+      "izoh": "Muvozanatda harakat to'xtamaydi, vaqt birligida qancha mahsulot parchalansa, o'shancha mahsulot hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#9a559470"
+    },
+    {
+      "q": "Kimyoviy muvozanat holatida boshlang'ich moddalar konsentratsiyalarining ko'paytmasi nimaga teng bo'ladi?",
+      "v": [
+        "Reaksiyadan keyingi hosil bo'lgan moddalar konsentratsiyalarining ko'paytmasiga (tegishli darajalarda)",
+        "Nolga",
+        "Tezlik konstantasiga",
+        "Moddalar massalari yig'indisiga"
+      ],
+      "t": 0,
+      "izoh": "Muvozanat holatida boshlang'ich moddalar konsentratsiyalari ko'paytmasi mahsulotlar konsentratsiyalari ko'paytmasiga teng (muvozanat nisbatida).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#a9d32d44"
+    },
+    {
+      "q": "Agar reaksiya bo'yicha moddalar oldida koeffitsiyent qo'yilmagan bo'lsa, koeffitsiyent nechaga teng deb hisoblanadi?",
+      "v": [
+        "1 ga",
+        "0 ga",
+        "2 ga",
+        "10 ga"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsiyent qo'yilmagan bo'lsa, u 1 ga teng deb hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#296b12da"
+    },
+    {
+      "q": "Har qanday sonning birinchi darajasi nimaga teng?",
+      "v": [
+        "O'sha sonning o'ziga",
+        "1 ga",
+        "0 ga",
+        "Sonning kvadratiga"
+      ],
+      "t": 0,
+      "izoh": "Birinchi daraja sonning o'ziga teng: 2^1 = 2, 3^1 = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#bf25552a"
+    },
+    {
+      "q": "1-masalada: A+2B=C+D reaksiyasi uchun [A]=0,4 mol/l, [B]=0,5 mol/l, [C]=0,25 mol/l, [D]=0,8 mol/l bo'lsa, muvozanat konstantasi qancha?",
+      "v": [
+        "2",
+        "0,5",
+        "1",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "K_M = 0,25·0,8/(0,4·0,5^2) = 0,2/0,1 = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#aedf0a66"
+    },
+    {
+      "q": "1-masalada muvozanat konstantasi 2 ga teng chiqishi nimani bildiradi?",
+      "v": [
+        "Teskari reaksiya tezligi to'g'ri reaksiya tezligidan ikki marta katta bo'lganini",
+        "To'g'ri reaksiya ikki marta tezroq ekanini",
+        "Mahsulot hosil bo'lmaganini",
+        "Katalizator ishtirok etganini"
+      ],
+      "t": 0,
+      "izoh": "K_M = 2 bo'lsa, teskari reaksiya tezligi to'g'ri reaksiya tezligidan ikki marta katta bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#681fb1c1"
+    },
+    {
+      "q": "2-masalada: 2A+B=C reaksiyasi uchun [A]=0,5 mol/l, [B]=0,2 mol/l, K_M=1 bo'lsa, C moddaning muvozanat konsentratsiyasi qancha?",
+      "v": [
+        "0,05 mol/l",
+        "0,5 mol/l",
+        "0,1 mol/l",
+        "0,25 mol/l"
+      ],
+      "t": 0,
+      "izoh": "1 = x/(0,5^2·0,2); x = 0,25·0,2 = 0,05 mol/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#77ab9046"
+    },
+    {
+      "q": "Idishga azot va vodorod solinib qopqog'i berkitilganda dastlab qanday reaksiya boshlanadi?",
+      "v": [
+        "Azot va vodorod molekulalari o'zaro ta'sirlashib ammiak hosil qiladi",
+        "Ammiak darhol parchalanadi",
+        "Hech qanday reaksiya bo'lmaydi",
+        "Faqat azot kislorod bilan reaksiyaga kirishadi"
+      ],
+      "t": 0,
+      "izoh": "N2 + 3H2 = 2NH3 — azot va vodorod ammiak hosil qila boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#3c06da5e"
+    },
+    {
+      "q": "Ammiak sintezi sistemasida vaqt o'tishi bilan nima uchun teskari reaksiya ham boshlanadi?",
+      "v": [
+        "Ammiak miqdori ortib, uning molekulalari parchalanib azot va vodorod hosil qila boshlaydi",
+        "Azot va vodorod tugab qoladi",
+        "Idish hajmi o'zgaradi",
+        "Harorat keskin tushib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Ammiak miqdori ortishi bilan u parchalanib, teskari reaksiya ham borishni boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m25-qaytar-qaytmas-kimyoviy-muvozanat#3b356fcf"
+    }
+  ]
+}

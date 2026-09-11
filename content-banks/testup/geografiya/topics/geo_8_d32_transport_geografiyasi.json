@@ -1,0 +1,171 @@
+{
+  "nom": "32-dars: Transport geografiyasi",
+  "bolim": "VI bob. Transport va aholiga xizmat ko’rsatish",
+  "savollar": [
+    {
+      "q": "O’zbekiston transportining nechta turiga ega?",
+      "v": [
+        "5 ta",
+        "2 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 0,
+      "izoh": "O’zbekiston quruqlik (temiryo’l, avtomobil transporti), suv (daryo), havo, quvur (neft va tabiiy gaz tashish) va elektron (elektr uzatish liniyalari) transportiga ega - jami 5 ta asosiy turga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d32_transport_geografiyasi#20236786"
+    },
+    {
+      "q": "Barcha transport turlari xizmat ko’rsatish jarayonining o’zaro aloqadorligi asosida nimani tashkil etadi?",
+      "v": [
+        "transport majmuasini",
+        "transport tizimini",
+        "transport tugunini",
+        "transport ishini"
+      ],
+      "t": 0,
+      "izoh": "Barcha transport turlari xizmat ko’rsatish jarayonining o’zaro aloqadorligi asosida transport majmuasini tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d32_transport_geografiyasi#d9b749da"
+    },
+    {
+      "q": "Oz mablag’ evaziga yo’lga qo’yiladigan transport tur(lar)ini toping.",
+      "v": [
+        "suv va havo",
+        "suv",
+        "quvur va suv",
+        "havo va quvur"
+      ],
+      "t": 0,
+      "izoh": "Temiryo’l, avtomobil yo’l qurishga ko’plab mablag’ va vaqt kerak bo’ladi. Quvur transportiga esa minglab tonna quvur sarflanadi. Ammo suv, havo transport yo’nalishi (trassa) oz mablag’ evaziga yo’lga qo’yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d32_transport_geografiyasi#049a2fae"
+    },
+    {
+      "q": "Transportning ishi nimaga qarab belgilanadi?",
+      "v": [
+        "yuk tashish hajmiga",
+        "yuk tashish xarajatiga",
+        "yuk tashish masofasiga",
+        "tashilayotgan yuk turiga"
+      ],
+      "t": 0,
+      "izoh": "Transportning ishi uning yuk tashish hajmiga qarab belgilanadi. Yuk tashish hajmi ma’lum vaqtda ma’lum masofaga tashilgan yuk miqdori bo’lib, u tonna-kilometrda ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d32_transport_geografiyasi#57f97d41"
+    },
+    {
+      "q": "Yuklarni bevosita iste’molchiga yetkazib bera oladigan transport turini belgilang.",
+      "v": [
+        "avtomobil transporti",
+        "temiryo’l transporti",
+        "havo transporti",
+        "daryo transporti"
+      ],
+      "t": 0,
+      "izoh": "Avtomobil transporti yuklarni (boshqa transportga qayta ortmay) bevosita iste’molchiga yetkazib bera oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d32_transport_geografiyasi#8d27d67f"
+    },
+    {
+      "q": "Mamlakatimizning tog’li rayonlarida qaysi transport turining ahamiyati katta?",
+      "v": [
+        "avtomobil transporti",
+        "temiryo’l transporti",
+        "havo transporti",
+        "daryo transporti"
+      ],
+      "t": 0,
+      "izoh": "Qisqa va o’rtacha masofalarga yo’lovchi hamda yuk tashishda temiryo’llarga qaraganda avtomobil afzaldir. Mamlakatimizning tog’li rayonlarida avtomobil transportining ahamiyati, ayniqsa, katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d32_transport_geografiyasi#87d80e6b"
+    },
+    {
+      "q": "Avtomobil transportida qisqa masofalar necha km gacha bo’ladi?",
+      "v": [
+        "100",
+        "200",
+        "50",
+        "150"
+      ],
+      "t": 0,
+      "izoh": "Qisqa (100 km gacha) va o’rtacha masofalarga yo’lovchi hamda yuk tashishda temiryo’llarga qaraganda avtomobil afzaldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d32_transport_geografiyasi#ba76a8a9"
+    },
+    {
+      "q": "Transportning eng qimmat, shu bilan birga tez harakatlanadigan, joy relyefiga kam bog’liq bo’lgan turini aniqlang.",
+      "v": [
+        "havo transporti",
+        "avtomobil transporti",
+        "temiryo’l transporti",
+        "suv transporti"
+      ],
+      "t": 0,
+      "izoh": "Havo transporti transportning eng qimmat va shu bilan birga eng tez harakatlanadigan hamda joy relyefiga kam bog’liq bo’lgan turidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d32_transport_geografiyasi#c68dc7b0"
+    },
+    {
+      "q": "Transport nimalarni tashish bilan geografik mehnat taqsimotining chuqurlashuviga imkon yaratadi?",
+      "v": [
+        "yo’lovchilarni va yuklarni",
+        "faqat yuklarni",
+        "faqat yo’lovchilarni",
+        "faqat pochta jo’natmalarini"
+      ],
+      "t": 0,
+      "izoh": "Transport yo’lovchilarni va yuklarni tashish bilan mamlakat bo’ylab ham, jahon bo’ylab ham geografik mehnat taqsimotining chuqurlashuviga imkon yaratadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo_8_d32_transport_geografiyasi#e8bc3896"
+    },
+    {
+      "q": "Har bir transport turiga mos qanday inshootlar bo’ladi?",
+      "v": [
+        "yuk ortish-tushirish maydoni, harakat yo’nalishi, vokzal, aerodrom, bekat hamda aloqa vositalari",
+        "faqat yo’llar",
+        "faqat vokzallar",
+        "faqat ombor binolari"
+      ],
+      "t": 0,
+      "izoh": "Har bir transport turiga mos yuk ortish-tushirish maydoni, harakat yo’nalishi, vokzal, aerodrom, bekat hamda aloqa vositalari bo’ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d32_transport_geografiyasi#57d13af0"
+    },
+    {
+      "q": "Transport turlari ishchi kuchini band qilishi bo’yicha qanday farqlanadi?",
+      "v": [
+        "yuk quvur, suv, temiryo’l transportlarida tashilganda sarf-xarajat avtomobil yoki havo transportidagidan ancha kam bo’ladi",
+        "barcha transport turlarida ishchi kuchi bir xil bo’ladi",
+        "faqat avtomobil transporti ishchi kuchi talab qiladi",
+        "ishchi kuchi faqat havo transportida ko’p talab qilinadi"
+      ],
+      "t": 0,
+      "izoh": "Yuk quvur, suv, temiryo’l transportlarida tashilganda sarf-xarajat avtomobil yoki havo transportida tashilgan yuk sarf-xarajatidan ancha kam bo’ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d32_transport_geografiyasi#61946158"
+    }
+  ]
+}

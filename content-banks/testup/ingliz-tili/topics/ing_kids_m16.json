@@ -1,0 +1,422 @@
+{
+  "nom": "Weather (Ob-havo)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "What is the weather? ☀️",
+      "v": [
+        "sunny",
+        "rainy",
+        "snowy",
+        "windy"
+      ],
+      "t": 0,
+      "izoh": "☀️ = sunny (quyoshli).",
+      "qiy": "oson",
+      "id": "ing_kids_m16#d385f5e4"
+    },
+    {
+      "q": "What is the weather? 🌧️",
+      "v": [
+        "sunny",
+        "rainy",
+        "cloudy",
+        "snowy"
+      ],
+      "t": 1,
+      "izoh": "🌧️ = rainy (yomg'irli).",
+      "qiy": "oson",
+      "id": "ing_kids_m16#b7c1eb39"
+    },
+    {
+      "q": "What is the weather? ❄️",
+      "v": [
+        "hot",
+        "windy",
+        "snowy",
+        "sunny"
+      ],
+      "t": 2,
+      "izoh": "❄️ = snowy (qorli).",
+      "qiy": "oson",
+      "id": "ing_kids_m16#ba8480d4"
+    },
+    {
+      "q": "What is the weather? ☁️",
+      "v": [
+        "cloudy",
+        "rainy",
+        "sunny",
+        "snowy"
+      ],
+      "t": 0,
+      "izoh": "☁️ = cloudy (bulutli).",
+      "qiy": "oson",
+      "id": "ing_kids_m16#d680ca23"
+    },
+    {
+      "q": "What is the weather? 💨",
+      "v": [
+        "rainy",
+        "windy",
+        "sunny",
+        "snowy"
+      ],
+      "t": 1,
+      "izoh": "💨 = windy (shamolli).",
+      "qiy": "oson",
+      "id": "ing_kids_m16#380894df"
+    },
+    {
+      "q": "What is the weather? ⛈️",
+      "v": [
+        "sunny",
+        "cloudy",
+        "stormy",
+        "windy"
+      ],
+      "t": 2,
+      "izoh": "⛈️ = stormy (bo'ronli).",
+      "qiy": "oson",
+      "id": "ing_kids_m16#2935b2c9"
+    },
+    {
+      "q": "How is it? 🥵",
+      "v": [
+        "hot",
+        "cold",
+        "rainy",
+        "snowy"
+      ],
+      "t": 0,
+      "izoh": "🥵 = hot (issiq).",
+      "qiy": "oson",
+      "id": "ing_kids_m16#a0dbb238"
+    },
+    {
+      "q": "How is it? 🥶",
+      "v": [
+        "hot",
+        "cold",
+        "sunny",
+        "windy"
+      ],
+      "t": 1,
+      "izoh": "🥶 = cold (sovuq).",
+      "qiy": "oson",
+      "id": "ing_kids_m16#832f3173"
+    },
+    {
+      "q": "What is this? 🌈",
+      "v": [
+        "cloud",
+        "snow",
+        "rainbow",
+        "wind"
+      ],
+      "t": 2,
+      "izoh": "🌈 = rainbow (kamalak).",
+      "qiy": "oson",
+      "id": "ing_kids_m16#73137921"
+    },
+    {
+      "q": "What is this? 🌫️",
+      "v": [
+        "foggy",
+        "sunny",
+        "hot",
+        "rainy"
+      ],
+      "t": 0,
+      "izoh": "🌫️ = foggy (tumanli).",
+      "qiy": "oson",
+      "id": "ing_kids_m16#f480989b"
+    },
+    {
+      "q": "What do you use when it rains? ☔",
+      "v": [
+        "An umbrella",
+        "A spoon",
+        "A pillow",
+        "A shoe"
+      ],
+      "t": 0,
+      "izoh": "Yomg'irda soyabon ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#ec64d1c9"
+    },
+    {
+      "q": "☀️ The sun is shining. It is ___.",
+      "v": [
+        "snowy",
+        "sunny",
+        "rainy",
+        "foggy"
+      ],
+      "t": 1,
+      "izoh": "Quyoshli ob-havo.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#0f0942c0"
+    },
+    {
+      "q": "In winter it is very ___.",
+      "v": [
+        "hot",
+        "warm",
+        "cold",
+        "dry"
+      ],
+      "t": 2,
+      "izoh": "Qishda juda sovuq bo'ladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#4b68e701"
+    },
+    {
+      "q": "❄️ White snow is falling. It is ___.",
+      "v": [
+        "rainy",
+        "windy",
+        "snowy",
+        "sunny"
+      ],
+      "t": 2,
+      "izoh": "Qorli ob-havo.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#d0b11775"
+    },
+    {
+      "q": "🌧️ Water is falling from the clouds. It is ___.",
+      "v": [
+        "cloudy",
+        "rainy",
+        "dry",
+        "hot"
+      ],
+      "t": 1,
+      "izoh": "Yomg'irli ob-havo.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#8de53a7b"
+    },
+    {
+      "q": "In summer it is very ___.",
+      "v": [
+        "cold",
+        "cool",
+        "hot",
+        "snowy"
+      ],
+      "t": 2,
+      "izoh": "Yozda juda issiq bo'ladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#e05cd3cb"
+    },
+    {
+      "q": "💨 The trees are moving a lot. It is ___.",
+      "v": [
+        "windy",
+        "foggy",
+        "sunny",
+        "icy"
+      ],
+      "t": 0,
+      "izoh": "Shamolli ob-havo.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#6d290778"
+    },
+    {
+      "q": "☁️ The sky is grey and full of clouds. It is ___.",
+      "v": [
+        "sunny",
+        "cloudy",
+        "hot",
+        "dry"
+      ],
+      "t": 1,
+      "izoh": "Bulutli ob-havo.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#1038fb02"
+    },
+    {
+      "q": "🌈 What can you see after sun and rain together?",
+      "v": [
+        "A rainbow",
+        "A snowman",
+        "The moon",
+        "A star"
+      ],
+      "t": 0,
+      "izoh": "Kamalak.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#24d18866"
+    },
+    {
+      "q": "⛈️ There is thunder and lightning. It is ___.",
+      "v": [
+        "sunny",
+        "stormy",
+        "foggy",
+        "warm"
+      ],
+      "t": 1,
+      "izoh": "Bo'ronli ob-havo.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#ae23cabd"
+    },
+    {
+      "q": "🌫️ You cannot see far away. It is ___.",
+      "v": [
+        "foggy",
+        "sunny",
+        "hot",
+        "dry"
+      ],
+      "t": 0,
+      "izoh": "Tumanli ob-havo.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#7147f26c"
+    },
+    {
+      "q": "What do you wear when it is very cold? 🧥",
+      "v": [
+        "A warm coat",
+        "Sandals",
+        "A swimsuit",
+        "Sunglasses"
+      ],
+      "t": 0,
+      "izoh": "Sovuqda issiq palto.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#f24b7b43"
+    },
+    {
+      "q": "The weather is not hot and not cold. It is ___.",
+      "v": [
+        "freezing",
+        "warm",
+        "icy",
+        "stormy"
+      ],
+      "t": 1,
+      "izoh": "Iliq ob-havo.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#b7dfd3f0"
+    },
+    {
+      "q": "After the rain, the ground is ___.",
+      "v": [
+        "dry",
+        "wet",
+        "hot",
+        "sunny"
+      ],
+      "t": 1,
+      "izoh": "Ho'l (nam).",
+      "qiy": "oson",
+      "id": "ing_kids_m16#7a4aa4df"
+    },
+    {
+      "q": "There is no rain for many weeks. The ground is ___.",
+      "v": [
+        "wet",
+        "dry",
+        "cold",
+        "snowy"
+      ],
+      "t": 1,
+      "izoh": "Quruq.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#150c86bc"
+    },
+    {
+      "q": "What do you wear on your eyes when it is sunny? 😎",
+      "v": [
+        "Sunglasses",
+        "Gloves",
+        "Boots",
+        "A scarf"
+      ],
+      "t": 0,
+      "izoh": "Quyoshda ko'zoynak.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#967cf660"
+    },
+    {
+      "q": "🥵 It is very hot. What do you drink to feel cool?",
+      "v": [
+        "Cold water",
+        "Hot soup",
+        "Warm tea",
+        "Nothing"
+      ],
+      "t": 0,
+      "izoh": "Issiqda sovuq suv.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#a59d3200"
+    },
+    {
+      "q": "🥶 It is freezing. Water turns to ___.",
+      "v": [
+        "ice",
+        "rain",
+        "fog",
+        "wind"
+      ],
+      "t": 0,
+      "izoh": "Muz.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#97457fa6"
+    },
+    {
+      "q": "You can make a snowman when it is ___.",
+      "v": [
+        "rainy",
+        "snowy",
+        "hot",
+        "dry"
+      ],
+      "t": 1,
+      "izoh": "Qorli kunda qorbobo.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#d083bf4f"
+    },
+    {
+      "q": "What holds the rain up in the sky?",
+      "v": [
+        "Clouds",
+        "The sun",
+        "Stars",
+        "The moon"
+      ],
+      "t": 0,
+      "izoh": "Bulutlar.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#c54d15a5"
+    },
+    {
+      "q": "The weather is a little bit cold. It is ___.",
+      "v": [
+        "hot",
+        "cool",
+        "warm",
+        "stormy"
+      ],
+      "t": 1,
+      "izoh": "Salqin.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#223a6eec"
+    },
+    {
+      "q": "What do you wear on your hands when it is cold? 🧤",
+      "v": [
+        "Gloves",
+        "Socks",
+        "Glasses",
+        "Boots"
+      ],
+      "t": 0,
+      "izoh": "Qo'lqop.",
+      "qiy": "oson",
+      "id": "ing_kids_m16#1d390cd8"
+    }
+  ]
+}

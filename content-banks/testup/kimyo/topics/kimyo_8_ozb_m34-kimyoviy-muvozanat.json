@@ -1,0 +1,486 @@
+{
+  "nom": "34-mavzu. Kimyoviy muvozanat",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kimyoviy reaksiyalar qanday turlarga bo'linadi?",
+      "v": [
+        "Qaytmas va qaytar reaksiyalarga",
+        "Endotermik va ekzotermik reaksiyalarga",
+        "Tez va sekin reaksiyalarga",
+        "Sodda va murakkab reaksiyalarga"
+      ],
+      "t": 0,
+      "izoh": "Reaksiyalar qaytmas va qaytar reaksiyalarga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#5752f40f"
+    },
+    {
+      "q": "Qaytmas reaksiyalar qanday reaksiyalar?",
+      "v": [
+        "Faqat reaksiya mahsulotlarining hosil bo'lishi tomonga boradigan reaksiyalar",
+        "Qarama-qarshi tomonga boradigan reaksiyalar",
+        "Faqat qizdirilganda boradigan reaksiyalar",
+        "Katalizator ishtirokisiz bormaydigan reaksiyalar"
+      ],
+      "t": 0,
+      "izoh": "Qaytmas reaksiyalar faqat mahsulot hosil bo'lish tomonga boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#29200c7f"
+    },
+    {
+      "q": "Qaytar reaksiyalar deb qanday reaksiyalarga aytiladi?",
+      "v": [
+        "Ayni bir sharoitda qarama-qarshi tomonga boradigan reaksiyalarga",
+        "Faqat mahsulot hosil qiladigan reaksiyalarga",
+        "Juda sekin kechadigan reaksiyalarga",
+        "Portlash bilan kechadigan reaksiyalarga"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi qaytar reaksiya ta'rifi shunday.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#59958021"
+    },
+    {
+      "q": "Ohaktoshning parchalanish reaksiyasi nima uchun qaytmas reaksiya hisoblanadi?",
+      "v": [
+        "Chunki reaksiya faqat mahsulotlar hosil bo'lish tomonga boradi",
+        "Chunki reaksiya qaytar va ekzotermik",
+        "Chunki reaksiya katalizator talab qiladi",
+        "Chunki reaksiya faqat yuqori haroratda kechadi"
+      ],
+      "t": 0,
+      "izoh": "Qaytmas reaksiyalar faqat mahsulotlar hosil bo'lishi tomonga boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#abf398e2"
+    },
+    {
+      "q": "Quyidagi reaksiyalardan qaysi biri qaytmas reaksiyaga misol qilib keltirilgan?",
+      "v": [
+        "NaCl + AgNO3 = AgCl + NaNO3",
+        "2SO2 + O2 = 2SO3",
+        "CO2 + H2 = H2O + CO",
+        "SO2 + H2O = H2SO3"
+      ],
+      "t": 0,
+      "izoh": "NaCl + AgNO3 reaksiyasi qaytmas reaksiyalarga misol sifatida keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#9bbae008"
+    },
+    {
+      "q": "CaCO3 + 2HCl = CaCl2 + CO2 + H2O reaksiyasi qanday reaksiyaga misol?",
+      "v": [
+        "Qaytmas reaksiyaga",
+        "Qaytar reaksiyaga",
+        "Muvozanatdagi reaksiyaga",
+        "Katalitik reaksiyaga"
+      ],
+      "t": 0,
+      "izoh": "Bu reaksiya qaytmas reaksiyalar qatorida keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#23e58cbe"
+    },
+    {
+      "q": "Qaytmas reaksiyalar qatoriga kirmaydigan reaksiyani toping.",
+      "v": [
+        "SO2 + H2O = H2SO3",
+        "NaOH + HNO3 = NaNO3 + H2O",
+        "2KClO3 = 2KCl + 3O2",
+        "Zn + H2SO4 = ZnSO4 + H2"
+      ],
+      "t": 0,
+      "izoh": "SO2 ning suv bilan reaksiyasi qaytar reaksiya sifatida keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#43f833b8"
+    },
+    {
+      "q": "SO2 suv bilan reaksiyaga kirishib qanday kislota hosil qiladi?",
+      "v": [
+        "Sulfit kislota",
+        "Sulfat kislota",
+        "Vodorod sulfid",
+        "Oltingugurtli kislota"
+      ],
+      "t": 0,
+      "izoh": "SO2 + H2O = H2SO3 — sulfit kislota hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#466f42cd"
+    },
+    {
+      "q": "SO2 + H2O = H2SO3 reaksiyasida hosil bo'layotgan H2SO3 ning eritmadagi miqdori ortishi bilan nima sodir bo'ladi?",
+      "v": [
+        "Teskari reaksiya ham sodir bo'la boshlaydi",
+        "To'g'ri reaksiya to'xtaydi",
+        "Reaksiya qaytmasholatga o'tadi",
+        "Kislota to'liq parchalanib ketadi"
+      ],
+      "t": 0,
+      "izoh": "H2SO3 miqdori ortishi bilan H2SO3 = H2O + SO2 teskari reaksiya boshlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#4e41e306"
+    },
+    {
+      "q": "Qaytar reaksiyada chapdan o'ngga boradigan reaksiya nima deb ataladi?",
+      "v": [
+        "To'g'ri reaksiya",
+        "Teskari reaksiya",
+        "Qaytmas reaksiya",
+        "Asosiy reaksiya"
+      ],
+      "t": 0,
+      "izoh": "Chapdan o'ngga boradigan reaksiya — to'g'ri reaksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#3bd30689"
+    },
+    {
+      "q": "Qaytar reaksiyada o'ngdan chapga boradigan reaksiya nima deb ataladi?",
+      "v": [
+        "Teskari reaksiya",
+        "To'g'ri reaksiya",
+        "Qaytmas reaksiya",
+        "Qo'shimcha reaksiya"
+      ],
+      "t": 0,
+      "izoh": "O'ngdan chapga boradigan reaksiya — teskari reaksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#abec34aa"
+    },
+    {
+      "q": "Kimyoviy muvozanat deb qanday holatga aytiladi?",
+      "v": [
+        "To'g'ri reaksiya tezligi bilan teskari reaksiya tezligi tenglashgan holatga",
+        "Reaksiya to'liq tugagan holatga",
+        "Faqat mahsulotlar qolgan holatga",
+        "Dastlabki moddalar saqlanib qolgan holatga"
+      ],
+      "t": 0,
+      "izoh": "υ1 = υ2 bo'lgan holat kimyoviy muvozanat deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#a546f7ca"
+    },
+    {
+      "q": "Kimyoviy muvozanat shartini formula bilan qanday ifodalashadi?",
+      "v": [
+        "υ1 = υ2",
+        "υ1 > υ2",
+        "υ1 < υ2",
+        "υ1 + υ2 = 0"
+      ],
+      "t": 0,
+      "izoh": "υ1 — to'g'ri, υ2 — teskari reaksiya tezligi; muvozanatda ular teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#122655c5"
+    },
+    {
+      "q": "Kimyoviy muvozanat paytida reaksiya mahsulotlaridan nechta molekula hosil bo'lsa, shuncha molekula nima bo'ladi?",
+      "v": [
+        "Ajralib turadi",
+        "Erib ketadi",
+        "Zichlashadi",
+        "Konsentrlanadi"
+      ],
+      "t": 0,
+      "izoh": "Muvozanatda nechta molekula hosil bo'lsa, shuncha molekula ajralib turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#e4363cef"
+    },
+    {
+      "q": "Kimyoviy muvozanatni siljitish mumkin bo'lgan omillarni toping.",
+      "v": [
+        "Bosim, harorat va moddalar konsentratsiyasining o'zgarishi",
+        "Katalizator qo'shilishi",
+        "Idishning o'zgarishi",
+        "Eritmaning rangining o'zgarishi"
+      ],
+      "t": 0,
+      "izoh": "Bosim, harorat va konsentratsiya o'zgarishi muvozanatni siljitadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#d002c307"
+    },
+    {
+      "q": "Katalizator kimyoviy muvozanatga qanday ta'sir qiladi?",
+      "v": [
+        "Muvozanatni siljitmaydi, balki muvozanatning tezroq qaror topishiga yordam beradi",
+        "Muvozanatni to'g'ri tomonga siljitadi",
+        "Muvozanatni teskari tomonga siljitadi",
+        "Muvozanatni butunlay buzadi"
+      ],
+      "t": 0,
+      "izoh": "Katalizator muvozanatni siljitmaydi, faqat tezroq qaror topishiga yordam beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#89e73c93"
+    },
+    {
+      "q": "Haroratning ko'tarilishi qanday reaksiyani tezlashtiradi?",
+      "v": [
+        "Issiqlik yutilishi bilan sodir bo'ladigan reaksiyani",
+        "Issiqlik ajralishi bilan sodir bo'ladigan reaksiyani",
+        "Har qanday qaytmas reaksiyani",
+        "Faqat katalitik reaksiyani"
+      ],
+      "t": 0,
+      "izoh": "Harorat ko'tarilishi endotermik (issiqlik yutadigan) reaksiyani tezlashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#92e7531d"
+    },
+    {
+      "q": "SO2 ni oksidlash reaksiyasi qanday reaksiyadir?",
+      "v": [
+        "Qaytar va ekzotermik reaksiya",
+        "Qaytmas va endotermik reaksiya",
+        "Qaytar va endotermik reaksiya",
+        "Qaytmas va ekzotermik reaksiya"
+      ],
+      "t": 0,
+      "izoh": "2SO2 + O2 ⇄ 2SO3 + Q — qaytar va ekzotermik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#54babdcf"
+    },
+    {
+      "q": "2SO2 + O2 ⇄ 2SO3 + Q reaksiyasida harorat ko'tarilsa, nima sodir bo'ladi?",
+      "v": [
+        "Teskari reaksiya tezlashadi",
+        "To'g'ri reaksiya tezlashadi",
+        "Ikkala reaksiya ham to'xtaydi",
+        "Muvozanat o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ekzotermik reaksiyada harorat ko'tarilishi teskari reaksiyani tezlashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#5fa43907"
+    },
+    {
+      "q": "2SO2 + O2 ⇄ 2SO3 + Q reaksiyasida harorat pasaysa, nima sodir bo'ladi?",
+      "v": [
+        "To'g'ri reaksiya tezlashadi",
+        "Teskari reaksiya tezlashadi",
+        "Reaksiya to'xtaydi",
+        "Muvozanat o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Harorat pasayishi to'g'ri (ekzotermik) reaksiyani tezlashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#d2c47d0c"
+    },
+    {
+      "q": "Bosimning oshirilishi kimyoviy muvozanatni qaysi tomonga siljitadi?",
+      "v": [
+        "Hajm kamayishiga olib keladigan reaksiya tomonga",
+        "Hajm ortishiga olib keladigan reaksiya tomonga",
+        "Har doim to'g'ri tomonga",
+        "Har doim teskari tomonga"
+      ],
+      "t": 0,
+      "izoh": "Bosim oshishi muvozanatni hajm kamayadigan tomon siljitadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#6608228a"
+    },
+    {
+      "q": "2SO2 + O2 ⇄ 2SO3 reaksiyasida to'g'ri reaksiyada hajm qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Avval ortib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Hisoblashlardan to'g'ri reaksiyada hajm kamayishi ko'rinib turibdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#646a71c5"
+    },
+    {
+      "q": "2SO2 + O2 ⇄ 2SO3 reaksiyasida bosim oshirilsa, muvozanat qaysi tomonga siljiydi?",
+      "v": [
+        "To'g'ri reaksiya tomonga",
+        "Teskari reaksiya tomonga",
+        "Siljimaydi",
+        "Reaksiya to'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri reaksiyada hajm kamayadi, demak bosim oshishi to'g'ri reaksiyani tezlashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#89dbd46e"
+    },
+    {
+      "q": "Muvozanatda turgan reaksiyadagi moddalardan birining konsentratsiyasi ortsa, muvozanat qaysi tomonga siljiydi?",
+      "v": [
+        "Shu modda sarflanadigan tomonga",
+        "Shu modda hosil bo'ladigan tomonga",
+        "Har doim teskari tomonga",
+        "Siljimaydi"
+      ],
+      "t": 0,
+      "izoh": "Konsentratsiya ortgan modda sarflanadigan tomonga muvozanat siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#c74f6339"
+    },
+    {
+      "q": "CO2 + H2 ⇄ H2O + CO reaksiyasida CO2 ning konsentratsiyasi orttirilsa, muvozanat qaysi tomonga siljiydi?",
+      "v": [
+        "To'g'ri reaksiya tomonga",
+        "Teskari reaksiya tomonga",
+        "Siljimaydi",
+        "Reaksiya to'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "CO2 konsentratsiyasi ortsa, u sarflanadigan to'g'ri tomonga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#6d0b4e90"
+    },
+    {
+      "q": "CO2 + H2 ⇄ H2O + CO reaksiyasida CO ning konsentratsiyasi ortsa, muvozanat qaysi tomonga siljiydi?",
+      "v": [
+        "Teskari tomonga",
+        "To'g'ri tomonga",
+        "Siljimaydi",
+        "Reaksiya tezlashib, qaytmas bo'lib qoladi"
+      ],
+      "t": 0,
+      "izoh": "CO konsentratsiyasi ortsa, u sarflanadigan teskari tomonga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#143d5f8d"
+    },
+    {
+      "q": "2NO + O2 ⇄ 2NO2 + Q reaksiyasida harorat pasaytirilsa, muvozanat qaysi tomonga siljiydi?",
+      "v": [
+        "To'g'ri reaksiya tomonga",
+        "Teskari reaksiya tomonga",
+        "Siljimaydi",
+        "Reaksiya to'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "Reaksiya ekzotermik; harorat pasayishi to'g'ri reaksiyani tezlashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#0ccfdb95"
+    },
+    {
+      "q": "Qaytar kimyoviy reaksiyalarda dastlabki moddalar sarflanishi bilan to'g'ri reaksiyaning tezligi qanday o'zgaradi?",
+      "v": [
+        "Susayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Avval ortib, keyin to'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki moddalar konsentratsiyasi kamayishi bilan to'g'ri reaksiya tezligi susayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#7e75b59c"
+    },
+    {
+      "q": "Qaytar reaksiya davomida hosil bo'layotgan mahsulotlarning konsentratsiyasi ortishi teskari reaksiya tezligini qanday o'zgartiradi?",
+      "v": [
+        "Ortiradi",
+        "Kamaytiradi",
+        "O'zgartirmaydi",
+        "To'xtatadi"
+      ],
+      "t": 0,
+      "izoh": "Mahsulotlar konsentratsiyasi ortishi hisobiga teskari reaksiya tezligi ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#c7a4a654"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri qaytmas reaksiya tenglamasi?",
+      "v": [
+        "Zn + H2SO4 = ZnSO4 + H2",
+        "2SO2 + O2 ⇄ 2SO3",
+        "SO2 + H2O ⇄ H2SO3",
+        "CO2 + H2 ⇄ H2O + CO"
+      ],
+      "t": 0,
+      "izoh": "Zn + H2SO4 reaksiyasi qaytmas reaksiyalar qatorida keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#b7ce8d15"
+    },
+    {
+      "q": "2KClO3 = 2KCl + 3O2 reaksiyasida qanday mahsulotlar hosil bo'ladi?",
+      "v": [
+        "KCl va O2",
+        "KClO4 va O2",
+        "K2O va Cl2",
+        "KCl va O3"
+      ],
+      "t": 0,
+      "izoh": "Kaliy xlorat parchalanib, KCl va kislorod hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#70cdb4a1"
+    },
+    {
+      "q": "NaOH + HNO3 = NaNO3 + H2O reaksiyasi qanday turdagi reaksiyaga misol?",
+      "v": [
+        "Qaytmas reaksiyaga",
+        "Qaytar reaksiyaga",
+        "Muvozanatdagi reaksiyaga",
+        "Katalitik reaksiyaga"
+      ],
+      "t": 0,
+      "izoh": "Bu reaksiya qaytmas reaksiyalar qatorida keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m34-kimyoviy-muvozanat#68a04caa"
+    }
+  ]
+}

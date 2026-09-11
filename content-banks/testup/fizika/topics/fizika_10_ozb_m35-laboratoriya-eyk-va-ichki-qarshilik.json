@@ -1,0 +1,411 @@
+{
+  "nom": "35-mavzu. Laboratoriya Eyk Va Ichki Qarshilik",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Ushbu laboratoriya ishining maqsadi nima?",
+      "v": [
+        "Ampermetr va voltmetr yordamida tok manbaining EYKini va ichki qarshiligini aniqlash",
+        "Rezistorning qarshiligini aniqlash",
+        "O'tkazgichdagi tok zichligini o'lchash",
+        "Lampochkaning quvvatini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Ishning maqsadi — ampermetr va voltmetr yordamida manbaning EYKini va ichki qarshiligini aniqlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#a95c201a"
+    },
+    {
+      "q": "Laboratoriya ishida qanday qarshilikli rezistorlardan foydalaniladi?",
+      "v": [
+        "10 Ω va 20 Ω",
+        "5 Ω va 10 Ω",
+        "20 Ω va 40 Ω",
+        "1 Ω va 2 Ω"
+      ],
+      "t": 0,
+      "izoh": "Kerakli asboblar ro'yxatida 10 Ω va 20 Ω qarshilikli rezistorlar keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#6fa530fb"
+    },
+    {
+      "q": "Laboratoriya ishida qaysi o'lchov asboblari ishlatiladi?",
+      "v": [
+        "Ampermetr va voltmetr",
+        "Galvanometr va elektrometr",
+        "Ommetr va vattmetr",
+        "Barometr va termometr"
+      ],
+      "t": 0,
+      "izoh": "Ishda ampermetr va voltmetr ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#4b166749"
+    },
+    {
+      "q": "Kalit ochiq holda voltmetr ko'rsatishi nimaga teng deb olinadi?",
+      "v": [
+        "Manbaning EYKiga (ℰ)",
+        "Zanjirdagi tok kuchiga",
+        "Manbaning ichki qarshiligiga",
+        "Nolga"
+      ],
+      "t": 0,
+      "izoh": "Kalit ochiqda U_V = ℰ deb olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#b07638f9"
+    },
+    {
+      "q": "Kalit ulangach (yopilgach) ampermetr ko'rsatishi nimani bildiradi?",
+      "v": [
+        "Yopiq zanjirdagi I_A tok kuchini",
+        "Manbaning EYKini",
+        "Ichki qarshilikdagi kuchlanish tushuvini",
+        "Qisqa tutashuv tokini"
+      ],
+      "t": 0,
+      "izoh": "Kalit ulanganda ampermetr ko'rsatishi I_A yozib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#48fadfeb"
+    },
+    {
+      "q": "Tok manbaining ichki qarshiligini hisoblash formulasi qaysi?",
+      "v": [
+        "r = (ℰ − U₂)/I_A",
+        "r = ℰ/I_A",
+        "r = U₂·I_A",
+        "r = (ℰ + U₂)/I_A"
+      ],
+      "t": 0,
+      "izoh": "Ichki qarshilik r = (ℰ − U₂)/I_A formuladan hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#0210f1d2"
+    },
+    {
+      "q": "r = (ℰ − U₂)/I_A formulasidagi U₂ nimani bildiradi?",
+      "v": [
+        "Kalit ulangan holda voltmetr ko'rsatishini (tashqi qismdagi kuchlanishni)",
+        "Kalit ochiq holdagi voltmetr ko'rsatishini",
+        "Manbaning EYKini",
+        "Ichki qarshilikdagi kuchlanish tushuvini"
+      ],
+      "t": 0,
+      "izoh": "U₂ — kalit yopiq holatda voltmetr ko'rsatgan tashqi kuchlanish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#ca9f2b16"
+    },
+    {
+      "q": "Bu laboratoriya ishida ampermetr zanjirga qanday ulanadi?",
+      "v": [
+        "Rezistor bilan ketma-ket",
+        "Rezistor bilan parallel",
+        "Manba qutblariga parallel",
+        "Voltmetrga parallel"
+      ],
+      "t": 0,
+      "izoh": "Ampermetr tokni o'lchash uchun zanjirga ketma-ket ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#7b2a2edb"
+    },
+    {
+      "q": "Bu laboratoriya ishida voltmetr zanjirga qanday ulanadi?",
+      "v": [
+        "Manba qutblariga (zanjirga) parallel",
+        "Zanjirga ketma-ket",
+        "Ampermetrga ketma-ket",
+        "Kalit bilan ketma-ket faqat"
+      ],
+      "t": 0,
+      "izoh": "Voltmetr kuchlanishni o'lchash uchun parallel ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#7fb5f748"
+    },
+    {
+      "q": "Laboratoriya ishida tajriba necha marta va nima uchun takrorlanadi?",
+      "v": [
+        "20 Ω li rezistor bilan takrorlanib, r₁ va r₂ natijalar solishtiriladi",
+        "Natijalar katta chiqsa, tok kamaytiriladi",
+        "Voltmetr buzilganda qayta o'lchanadi",
+        "Faqat bir marta bajariladi"
+      ],
+      "t": 0,
+      "izoh": "20 Ω rezistor bilan tajriba takrorlanib, topilgan r₁ va r₂ lar solishtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#dea61545"
+    },
+    {
+      "q": "Kalit yopilganda voltmetr ko'rsatishi kalit ochiq holatdagiga nisbatan qanday bo'ladi?",
+      "v": [
+        "Kichik bo'ladi (U < ℰ)",
+        "Katta bo'ladi (U > ℰ)",
+        "Bir xil bo'ladi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Tok oqqanda ichki qarshilikda kuchlanish tushuvi bo'ladi, shuning uchun U < ℰ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#0edb6bea"
+    },
+    {
+      "q": "Kalit ochiq va yopiq holatlardagi voltmetr ko'rsatishlari farqi (ℰ − U) nimani bildiradi?",
+      "v": [
+        "Manbaning ichki qarshilikdagi kuchlanish tushuvini (I·r)",
+        "Tashqi qarshilikdagi kuchlanishni",
+        "Manbaning EYKini",
+        "Zanjirdagi tok kuchini"
+      ],
+      "t": 0,
+      "izoh": "ℰ − U = I·r — ichki qarshilikdagi kuchlanish tushuvi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#53a587aa"
+    },
+    {
+      "q": "Ichki qarshilik qanday birlikda o'lchanadi?",
+      "v": [
+        "Om (Ω)",
+        "Volt (V)",
+        "Amper (A)",
+        "Vatt (Vt)"
+      ],
+      "t": 0,
+      "izoh": "Ichki qarshilik ham qarshilik bo'lgani uchun om (Ω) da o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#930d1d0c"
+    },
+    {
+      "q": "Manbaning ichki qarshiligi nima hisobiga hosil bo'ladi?",
+      "v": [
+        "Galvanik elementda elektrolit eritmasi va elektrodlarning qarshiligi hisobiga",
+        "Ulovchi simlarning qarshiligi hisobiga",
+        "Voltmetrning katta qarshiligi hisobiga",
+        "Kalit kontaktlari hisobiga"
+      ],
+      "t": 0,
+      "izoh": "Galvanik elementda ichki qarshilik elektrolit va elektrodlar qarshiligidan hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#49cada43"
+    },
+    {
+      "q": "Elektr zanjirning qaysi qismi tashqi zanjir deyiladi?",
+      "v": [
+        "Tok iste'molchilari, o'lchov asboblari va ulovchi simlardan iborat qismi",
+        "Tok manbaining o'zi",
+        "Manbaning elektrodlari",
+        "Elektrolit eritmasi"
+      ],
+      "t": 0,
+      "izoh": "Iste'molchilar, o'lchov asboblari va simlar tashqi zanjirni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#4c40c1f9"
+    },
+    {
+      "q": "Elektr zanjirning qaysi qismi ichki zanjir deyiladi?",
+      "v": [
+        "Tok manbaining o'zi",
+        "Rezistor va lampochka",
+        "Ampermetr va voltmetr",
+        "Ulovchi simlar"
+      ],
+      "t": 0,
+      "izoh": "Tok manbai zanjirning ichki qismini tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#cc9b7499"
+    },
+    {
+      "q": "Ikki tajribada topilgan r₁ va r₂ qiymatlar o'rtasida qanday munosabat bo'lishi kutiladi?",
+      "v": [
+        "Ular bir-biriga yaqin (taxminan teng) bo'lishi kerak",
+        "r₂ har doim r₁ dan ikki marta katta bo'ladi",
+        "r₂ har doim nolga teng bo'ladi",
+        "r₁ har doim r₂ dan ikki marta kichik bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Ichki qarshilik manba xossasi bo'lgani uchun r₁ va r₂ yaqin chiqishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#af523c1b"
+    },
+    {
+      "q": "Tajriba natijalari qayerga yozib boriladi?",
+      "v": [
+        "Maxsus jadvalga",
+        "Rasmga",
+        "Grafikka",
+        "Sxema ichiga"
+      ],
+      "t": 0,
+      "izoh": "Natijalar U_V, U₂, I_A, ℰ, r ustunlari bo'lgan jadvalga ko'chiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#54648c6f"
+    },
+    {
+      "q": "Laboratoriya ishida zanjirni yig'ishda avval qaysi rezistor ulanadi?",
+      "v": [
+        "10 Ω qarshilikli rezistor",
+        "20 Ω qarshilikli rezistor",
+        "Ixtiyoriy rezistor",
+        "Rezistor ulanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ish tartibida avval 10 Ω li rezistor ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#80d5a470"
+    },
+    {
+      "q": "Manbaning EYKi deganda nimani tushunasiz?",
+      "v": [
+        "Chet kuchlarning birlik musbat zaryadni ko'chirishda bajargan ishini",
+        "Zanjirdagi tok kuchini",
+        "Manba qutblaridagi zaryad miqdorini",
+        "Ichki qarshilikdagi kuchlanish tushuvini"
+      ],
+      "t": 0,
+      "izoh": "EYK — chet kuchlarning birlik musbat zaryadni ko'chirishdagi ishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#53799e9b"
+    },
+    {
+      "q": "Agar kalit yopilganda voltmetr ko'rsatishi EYKga juda yaqin bo'lsa, manbaning ichki qarshiligi haqida nima deyish mumkin?",
+      "v": [
+        "Ichki qarshilik kichik",
+        "Ichki qarshilik juda katta",
+        "Ichki qarshilik nolga teng bo'lishi mumkin emas",
+        "Ichki qarshilik cheksiz"
+      ],
+      "t": 0,
+      "izoh": "I·r kichik bo'lsa, U ℰ ga yaqin bo'ladi, demak r kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#f152aafc"
+    },
+    {
+      "q": "EYK qanday birlikda ifodalanadi?",
+      "v": [
+        "Volt (V)",
+        "Om (Ω)",
+        "Amper (A)",
+        "Joul (J)"
+      ],
+      "t": 0,
+      "izoh": "EYK volt (V) da o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#701de2e5"
+    },
+    {
+      "q": "Laboratoriya ishida tok manbai sifatida nima ishlatilishi mumkin?",
+      "v": [
+        "Laboratoriya universal tok manbai yoki akkumulyator",
+        "Faqat quruq galvanik element",
+        "Faqat fotoelektr batareya",
+        "Faqat termoelement"
+      ],
+      "t": 0,
+      "izoh": "Kerakli asboblarda laboratoriya universal tok manbai yoki akkumulyator ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#9d68c4b7"
+    },
+    {
+      "q": "Manbaning ichki qarshiligi katta bo'lsa, zanjirdagi tok ortganda manba qisqichlaridagi kuchlanish qanday o'zgaradi?",
+      "v": [
+        "Ko'proq (sezilarli) pasayadi",
+        "Kamroq pasayadi",
+        "Umuman o'zgarmaydi",
+        "Ortadi"
+      ],
+      "t": 0,
+      "izoh": "r katta bo'lsa, I·r tushuvi katta bo'lib, U ko'proq pasayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#8ebcdd46"
+    },
+    {
+      "q": "O'lchov natijalariga minimal ta'sir qilishi uchun ampermetrning ichki qarshiligi qanday bo'lishi kerak?",
+      "v": [
+        "Iloji boricha kichik",
+        "Iloji boricha katta",
+        "Tashqi qarshilikka teng",
+        "Manba ichki qarshiligidan katta"
+      ],
+      "t": 0,
+      "izoh": "Ampermetr ketma-ket ulangani uchun uning qarshiligi kichik bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#539741dd"
+    },
+    {
+      "q": "O'lchov natijalariga minimal ta'sir qilishi uchun voltmetrning ichki qarshiligi qanday bo'lishi kerak?",
+      "v": [
+        "Iloji boricha katta",
+        "Iloji boricha kichik",
+        "Nolga yaqin",
+        "Rezistor qarshiligiga teng"
+      ],
+      "t": 0,
+      "izoh": "Voltmetr parallel ulangani uchun qarshiligi katta bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#9173d55b"
+    },
+    {
+      "q": "Laboratoriya ishida kalit yig'ilish jarayonida qanday holatda bo'lishi tavsiya etiladi?",
+      "v": [
+        "Ochiq holatda",
+        "Yopiq holatda",
+        "Farqi yo'q",
+        "Kalit ishlatilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ish tartibida avval kalit ochiq holda voltmetr ko'rsatishi yozib olinadi — zanjir yig'ishda ham kalit ochiq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik#bf5c1efe"
+    }
+  ]
+}

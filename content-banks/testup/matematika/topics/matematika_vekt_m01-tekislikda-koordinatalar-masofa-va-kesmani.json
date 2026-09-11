@@ -1,0 +1,1609 @@
+{
+  "nom": "Tekislikda koordinatalar, masofa va kesmani bo'lish",
+  "bolim": "Koordinatalar va vektorlar",
+  "blok": "vekt",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "A(−6; 4), B(3; −7), C(−2; −5) va D(8; 9) nuqtalaridan qaysi biri koordinata tekisligining ikkinchi choragida yotadi?",
+      "v": [
+        "A(−6; 4)",
+        "B(3; −7)",
+        "C(−2; −5)",
+        "D(8; 9)"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi chorakda abssissa manfiy, ordinata esa musbat bo'ladi. A(−6; 4) nuqtada x = −6 < 0 va y = 4 > 0, demak shart bajariladi. B(3; −7) to'rtinchi, C(−2; −5) uchinchi, D(8; 9) esa birinchi chorakda yotadi. Javob: A(−6; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-aniqlash",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#eafe8e12"
+    },
+    {
+      "q": "Metro sxemasida yangi bekat P(7; −5) nuqtaga to'g'ri keladi. Shu bekat qaysi chorakda joylashganini ko'rsating.",
+      "v": [
+        "III chorak",
+        "IV chorak",
+        "I chorak",
+        "II chorak"
+      ],
+      "t": 1,
+      "izoh": "Bekatning abssissasi x = 7 musbat, ordinatasi esa y = −5 manfiy. Musbat abssissa va manfiy ordinata birgalikda faqat to'rtinchi chorakda uchraydi. Birinchi chorakda ikkala koordinata ham musbat bo'lar edi. Javob: IV chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-aniqlash",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#8d12d9ed"
+    },
+    {
+      "q": "M(a; b) nuqta uchinchi chorakda yotadi. Shu holda N(a; −b) nuqta qaysi chorakka tushadi?",
+      "v": [
+        "II chorak",
+        "III chorak",
+        "IV chorak",
+        "I chorak"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi chorakda a < 0 va b < 0 bo'ladi. N nuqtaning abssissasi o'zgarmay a < 0 qoladi, ordinatasi esa −b bo'lgani uchun musbat qiymat oladi. Manfiy abssissa va musbat ordinata ikkinchi chorakni beradi. Abssissa ishorasi almashtirilganda esa to'rtinchi chorak chiqar edi. Javob: II chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-aniqlash",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#588a0a02"
+    },
+    {
+      "q": "K(−3; 0), L(0; 8), P(−4; −9) va R(5; 0) nuqtalaridan nechtasi hech qaysi chorakka tegishli emas?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "4 ta",
+        "3 ta"
+      ],
+      "t": 3,
+      "izoh": "Koordinata o'qlarida yotgan nuqtalar hech qaysi chorakka kirmaydi. K(−3; 0) va R(5; 0) abssissa o'qida, L(0; 8) esa ordinata o'qida yotadi — jami uchta nuqta. P(−4; −9) uchinchi chorakda joylashgani uchun u hisobga olinmaydi. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chorak-aniqlash",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#f3280c1d"
+    },
+    {
+      "q": "M(x; y) nuqta uchun x·y < 0 va y > 0 shartlari bajariladi. Bu nuqta qaysi chorakda yotadi?",
+      "v": [
+        "uchinchi chorak",
+        "to'rtinchi chorak",
+        "ikkinchi chorak",
+        "birinchi chorak"
+      ],
+      "t": 2,
+      "izoh": "y > 0 bo'lgani uchun ko'paytma manfiy bo'lishi faqat x < 0 bo'lgandagina mumkin. Demak abssissa manfiy, ordinata esa musbat. Bunday nuqtalar ikkinchi chorakda joylashadi. Javob: ikkinchi chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-shart-ishora",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#36e9d9e3"
+    },
+    {
+      "q": "A(m − 4; m + 2) nuqta ikkinchi chorakda yotishi uchun m qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "m > 4",
+        "m < −2",
+        "−4 < m < 2",
+        "−2 < m < 4"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi chorakda abssissa manfiy bo'ladi: m − 4 < 0, ya'ni m < 4. Ordinata musbat bo'lishi kerak: m + 2 > 0, ya'ni m > −2. Ikkala shartning kesishmasi −2 < m < 4 oraliqni beradi. Javob: −2 < m < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chorak-shart-ishora",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#6418cce0"
+    },
+    {
+      "q": "Nuqtaning koordinatalari qarama-qarshi ishorali va abssissasi ordinatasidan katta. Bunday nuqta qaysi chorakda joylashadi?",
+      "v": [
+        "to'rtinchi chorak",
+        "birinchi chorak",
+        "ikkinchi chorak",
+        "uchinchi chorak"
+      ],
+      "t": 0,
+      "izoh": "Koordinatalar qarama-qarshi ishorali bo'lsa, nuqta ikkinchi yoki to'rtinchi chorakda bo'ladi. Abssissa ordinatadan katta bo'lishi uchun x musbat, y esa manfiy bo'lishi shart. Bu shart to'rtinchi chorakka mos keladi. Javob: to'rtinchi chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chorak-shart-ishora",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#d4e712b1"
+    },
+    {
+      "q": "B(−5; 3) nuqta va uning har ikkala koordinatasi kvadratga oshirilgan C(25; 9) nuqtasi mos ravishda qaysi choraklarda yotadi?",
+      "v": [
+        "IV va I",
+        "II va I",
+        "II va III",
+        "III va I"
+      ],
+      "t": 1,
+      "izoh": "B(−5; 3) nuqtada abssissa manfiy, ordinata musbat — bu ikkinchi chorak. Kvadratga oshirgandan keyin (−5)² = 25 va 3² = 9 hosil bo'ladi, ya'ni ikkala koordinata ham musbat. Musbat koordinatalar birinchi chorakni bildiradi. Javob: II va I.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chorak-shart-ishora",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#5f55212a"
+    },
+    {
+      "q": "P(−7; 4) nuqtaning abssissa o'qiga nisbatan simmetrik nuqtasi koordinatalarini toping.",
+      "v": [
+        "(4; −7)",
+        "(−7; −4)",
+        "(7; 4)",
+        "(7; −4)"
+      ],
+      "t": 1,
+      "izoh": "Abssissa o'qiga nisbatan simmetriyada abssissa o'zgarmaydi, ordinata esa ishorasini almashtiradi. P(−7; 4) uchun x = −7 o'z holicha qoladi, y = 4 esa −4 ga aylanadi. Demak izlangan nuqta (−7; −4) bo'ladi. Javob: (−7; −4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqqa-simmetriya",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#157694f0"
+    },
+    {
+      "q": "A(6; −9) nuqta ordinata o'qiga nisbatan aks ettirildi. Hosil bo'lgan nuqtaning koordinatalari qanday?",
+      "v": [
+        "(−6; −9)",
+        "(−6; 9)",
+        "(6; 9)",
+        "(9; −6)"
+      ],
+      "t": 0,
+      "izoh": "Ordinata o'qiga nisbatan simmetriyada ordinata o'zgarishsiz qoladi, abssissa esa qarama-qarshi songa almashadi. A(6; −9) nuqtada 6 soni −6 ga aylanadi, −9 esa o'sha holida qoladi. Javob: (−6; −9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqqa-simmetriya",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#dfc4a9cf"
+    },
+    {
+      "q": "M(3; k) va N(3; −8) nuqtalar abssissa o'qiga nisbatan simmetrik bo'lsa, k nechaga teng?",
+      "v": [
+        "−8",
+        "3",
+        "−3",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Abssissa o'qiga nisbatan simmetrik nuqtalarning abssissalari teng, ordinatalari esa qarama-qarshi bo'ladi. Bu yerda abssissalar allaqachon teng, demak faqat ordinatalar shartini yozamiz. Shundan k = −(−8) = 8 kelib chiqadi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqqa-simmetriya",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#d7f0abaa"
+    },
+    {
+      "q": "Devordagi karta ordinata o'qi bo'ylab bukildi. Bunda Q(−12; 5) nuqta ustiga qaysi nuqta tushadi?",
+      "v": [
+        "(12; −5)",
+        "(5; −12)",
+        "(12; 5)",
+        "(−12; −5)"
+      ],
+      "t": 2,
+      "izoh": "Ordinata o'qi bo'ylab bukish — bu o'sha o'qqa nisbatan simmetriya demakdir. Simmetriyada ordinata saqlanadi, abssissa esa ishorasini o'zgartiradi. Shuning uchun Q(−12; 5) nuqta ustiga (12; 5) nuqta tushadi. Javob: (12; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqqa-simmetriya",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#aebd61ef"
+    },
+    {
+      "q": "C(−4; −11) nuqtaning koordinata boshiga nisbatan simmetrik nuqtasini toping.",
+      "v": [
+        "(−4; 11)",
+        "(4; −11)",
+        "(11; 4)",
+        "(4; 11)"
+      ],
+      "t": 3,
+      "izoh": "Koordinata boshiga nisbatan simmetriyada ikkala koordinata ham ishorasini almashtiradi. C(−4; −11) uchun −4 soni 4 ga, −11 soni esa 11 ga aylanadi. Natijada (4; 11) nuqta hosil bo'ladi. Javob: (4; 11).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bosh-simmetriya",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#94cb7817"
+    },
+    {
+      "q": "D(a; b) nuqtaning koordinata boshiga nisbatan simmetrigi (7; −2) bo'lsa, a + b yig'indi nimaga teng?",
+      "v": [
+        "9",
+        "−9",
+        "−5",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Simmetrik nuqtalarning koordinatalari qarama-qarshi bo'lgani uchun a = −7 va b = 2 kelib chiqadi. Endi so'ralgan yig'indini hisoblaymiz: a + b = −7 + 2 = −5. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bosh-simmetriya",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#18e3dd5a"
+    },
+    {
+      "q": "Koordinata boshiga nisbatan simmetriyada nuqta o'z o'rnida qoladigan holat qachon yuz beradi?",
+      "v": [
+        "Nuqta birinchi chorakda yotganda",
+        "Nuqta koordinata boshida yotganda",
+        "Nuqta abssissa o'qida yotganda",
+        "Nuqta ordinata o'qida yotganda"
+      ],
+      "t": 1,
+      "izoh": "M(x; y) nuqtaning simmetrigi (−x; −y) bo'ladi. Nuqta o'z o'rnida qolishi uchun x = −x va y = −y tengliklari bir vaqtda bajarilishi kerak. Bulardan x = 0 va y = 0, ya'ni nuqta koordinata boshining o'zi ekani chiqadi. Javob: nuqta koordinata boshida yotganda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bosh-simmetriya",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#88fd5a1c"
+    },
+    {
+      "q": "Shashka taxtasida dona E(−6; 9) katakdan koordinata boshiga nisbatan simmetrik katakka ko'chirildi. Dona qaysi katakka tushdi?",
+      "v": [
+        "(6; −9)",
+        "(−6; −9)",
+        "(9; −6)",
+        "(6; 9)"
+      ],
+      "t": 0,
+      "izoh": "Koordinata boshiga nisbatan simmetriyada har ikkala koordinata qarama-qarshi songa almashadi. E(−6; 9) uchun −6 soni 6 ga, 9 soni esa −9 ga aylanadi. Demak dona (6; −9) katakka tushadi. Javob: (6; −9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bosh-simmetriya",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#5cb1e35c"
+    },
+    {
+      "q": "A(5; −3) nuqta avval abssissa o'qiga, so'ngra ordinata o'qiga nisbatan ketma-ket aks ettirildi. Oxirgi nuqtani toping.",
+      "v": [
+        "(−5; 3)",
+        "(5; 3)",
+        "(−5; −3)",
+        "(3; −5)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi aks ettirishda ordinata ishorasini o'zgartiradi va (5; −3) nuqtadan (5; 3) hosil bo'ladi. Ikkinchi aks ettirishda abssissa ishorasini o'zgartiradi, natijada (−5; 3) chiqadi. Ikki o'qqa ketma-ket aks ettirish koordinata boshiga nisbatan simmetriya bilan bir xil natija beradi. Javob: (−5; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-ketma-ket",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#5cc829d8"
+    },
+    {
+      "q": "B(−8; 7) nuqta koordinata boshiga, hosil bo'lgan nuqta esa abssissa o'qiga nisbatan aks ettirildi. Yakuniy nuqtani ko'rsating.",
+      "v": [
+        "(−8; 7)",
+        "(8; 7)",
+        "(−8; −7)",
+        "(8; −7)"
+      ],
+      "t": 1,
+      "izoh": "Koordinata boshiga nisbatan simmetriya (−8; 7) nuqtani (8; −7) ga o'tkazadi. So'ng abssissa o'qiga nisbatan simmetriyada ordinata ishorasi yana almashadi va (8; 7) hosil bo'ladi. Yakuniy natija boshlang'ich nuqtaning ordinata o'qiga nisbatan simmetrigi bilan mos tushadi. Javob: (8; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-ketma-ket",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#44bda13e"
+    },
+    {
+      "q": "P(2; −6) nuqta ordinata o'qiga nisbatan, so'ng hosil bo'lgan nuqta koordinata boshiga nisbatan aks ettirildi. Natijaviy nuqta P bilan qanday bog'langan?",
+      "v": [
+        "U P ning ordinata o'qiga nisbatan simmetrigi",
+        "U P ning koordinata boshiga nisbatan simmetrigi",
+        "U P ning abssissa o'qiga nisbatan simmetrigi",
+        "U P ning o'zi"
+      ],
+      "t": 2,
+      "izoh": "Ordinata o'qiga nisbatan aks ettirishdan (−2; −6) nuqta chiqadi. Koordinata boshiga nisbatan aks ettirish uni (2; 6) ga o'tkazadi. Boshlang'ich P(2; −6) bilan solishtirsak, faqat ordinatasining ishorasi o'zgargan — bu esa abssissa o'qiga nisbatan simmetriya demakdir. Javob: u P ning abssissa o'qiga nisbatan simmetrigi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetriya-ketma-ket",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#aa900cbd"
+    },
+    {
+      "q": "N(−9; 4) nuqta ketma-ket abssissa o'qiga, ordinata o'qiga va koordinata boshiga nisbatan aks ettirildi. Yakuniy nuqta qanday koordinatalarga ega?",
+      "v": [
+        "(9; −4)",
+        "(−9; −4)",
+        "(9; 4)",
+        "(−9; 4)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi aks ettirishdan (−9; −4), ikkinchisidan esa (9; −4) hosil bo'ladi. Koordinata boshiga nisbatan uchinchi aks ettirish ikkala ishorani almashtiradi va (−9; 4) chiqadi. Bu boshlang'ich N nuqtaning o'zi, ya'ni uchta almashtirish birgalikda ayniy almashtirishni beradi. Javob: (−9; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetriya-ketma-ket",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#72e1d496"
+    },
+    {
+      "q": "Bog'dagi to'g'ri yo'lka abssissa o'qi bo'ylab o'tadi va uning bir tomonida A(−15; 8) nuqtada archa o'sadi. Bog'bon narigi tomonga simmetrik archa ekmoqchi. Yangi archa qaysi nuqtaga tushadi?",
+      "v": [
+        "(15; −8)",
+        "(8; −15)",
+        "(−15; −8)",
+        "(15; 8)"
+      ],
+      "t": 2,
+      "izoh": "Yo'lka abssissa o'qi bo'lgani uchun simmetriya aynan shu o'qqa nisbatan bajariladi. Bunda abssissa o'zgarmaydi, ordinata esa qarama-qarshi songa aylanadi. A(−15; 8) uchun natija (−15; −8) bo'ladi. Javob: (−15; −8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-simmetriya",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#597121ce"
+    },
+    {
+      "q": "Kanal ordinata o'qi bo'ylab oqadi. Uning bir qirg'og'ida T(−24; 13) nuqtada tol o'sadi. Loyihaga ko'ra ikkinchi qirg'oqqa kanalga nisbatan simmetrik tol ekiladi. Yangi tolning koordinatalari qanday?",
+      "v": [
+        "(−24; −13)",
+        "(24; −13)",
+        "(13; −24)",
+        "(24; 13)"
+      ],
+      "t": 3,
+      "izoh": "Kanal ordinata o'qi bo'ylab ketgani uchun simmetriya aynan shu o'qqa nisbatan bajariladi. Bunda ordinata o'zgarmaydi, abssissa esa ishorasini almashtiradi. T(−24; 13) uchun natija (24; 13) bo'ladi. Javob: (24; 13).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-simmetriya",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#c2433edf"
+    },
+    {
+      "q": "Naqqosh gulning bir bargini M(7; −4) nuqtaga chizdi. Naqsh koordinata boshiga nisbatan markaziy simmetriyaga ega bo'lishi uchun ikkinchi barg qayerga chiziladi?",
+      "v": [
+        "(−7; 4)",
+        "(7; 4)",
+        "(−7; −4)",
+        "(4; −7)"
+      ],
+      "t": 0,
+      "izoh": "Markaziy simmetriyada nuqtaning ikkala koordinatasi ham qarama-qarshi songa almashadi. M(7; −4) uchun 7 soni −7 ga, −4 soni esa 4 ga aylanadi. Demak ikkinchi barg (−7; 4) nuqtaga chiziladi. Javob: (−7; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-simmetriya",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#044fad80"
+    },
+    {
+      "q": "Xonaning devori ordinata o'qi, poli esa abssissa o'qi bilan tasvirlangan. Chiroq S(6; 8) nuqtada bo'lsa, uning devordagi va poldagi ikki aksi orasidagi masofa necha birlik?",
+      "v": [
+        "16",
+        "20",
+        "10",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "Devor ordinata o'qi bo'lgani uchun birinchi aks (−6; 8) nuqtada, pol abssissa o'qi bo'lgani uchun ikkinchi aks (6; −8) nuqtada bo'ladi. Ular orasidagi masofa √((6 − (−6))² + (−8 − 8)²) ifodaga teng. Hisoblasak √(144 + 256) = √400 = 20 chiqadi. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-simmetriya",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#6905f63e"
+    },
+    {
+      "q": "A(−2; 3) va B(4; 11) nuqtalar orasidagi masofani hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "100",
+        "10",
+        "14",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Masofa formulasi d = √((x₂ − x₁)² + (y₂ − y₁)²) ko'rinishida bo'ladi. Bu yerda x₂ − x₁ = 4 − (−2) = 6 va y₂ − y₁ = 11 − 3 = 8. Demak d = √(36 + 64) = √100 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-nuqta-masofa",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#ade37d68"
+    },
+    {
+      "q": "C(5; −7) nuqtadan D(−7; −2) nuqtagacha bo'lgan masofa nechaga teng?",
+      "v": [
+        "13",
+        "17",
+        "7",
+        "169"
+      ],
+      "t": 0,
+      "izoh": "Koordinatalar ayirmasini topamiz: −7 − 5 = −12 va −2 − (−7) = 5. Ularning kvadratlari 144 va 25, yig'indisi esa 169. Masofa √169 = 13 ga teng. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-nuqta-masofa",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#73044e56"
+    },
+    {
+      "q": "Koordinata boshidan E(−9; 12) nuqtagacha bo'lgan masofa qancha?",
+      "v": [
+        "21",
+        "3",
+        "225",
+        "15"
+      ],
+      "t": 3,
+      "izoh": "Koordinata boshi O(0; 0) bo'lgani uchun masofa √(x² + y²) formula bilan topiladi. Bu yerda (−9)² = 81 va 12² = 144, ularning yig'indisi 225. Demak masofa √225 = 15 birlikka teng. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-nuqta-masofa",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#248f436a"
+    },
+    {
+      "q": "A(1; 2), B(4; 6), C(−2; −1) va D(3; 4) nuqtalar berilgan. AB va CD kesmalardan qaysi biri uzunroq va necha barobar?",
+      "v": [
+        "CD kesma, 2 barobar",
+        "Ikkala kesma teng",
+        "CD kesma, √2 barobar",
+        "AB kesma, √2 barobar"
+      ],
+      "t": 2,
+      "izoh": "AB = √((4 − 1)² + (6 − 2)²) = √(9 + 16) = 5 birlik. CD = √((3 − (−2))² + (4 − (−1))²) = √(25 + 25) = √50 = 5√2 birlik. Demak CD uzunroq va nisbat 5√2 : 5 = √2 ga teng. Javob: CD kesma, √2 barobar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-nuqta-masofa",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#823f3f69"
+    },
+    {
+      "q": "Shahar rejasida bir katak 100 m ga teng. Maktab M(2; 3) katakda, stadion esa S(11; 15) katakda joylashgan. Ular orasidagi to'g'ri chiziqli masofa necha metr?",
+      "v": [
+        "2100 m",
+        "150 m",
+        "15 m",
+        "1500 m"
+      ],
+      "t": 3,
+      "izoh": "Kataklardagi ayirmalar 11 − 2 = 9 va 15 − 3 = 12 ga teng. Masofa √(81 + 144) = √225 = 15 katakni tashkil qiladi. Har bir katak 100 m bo'lgani uchun 15 · 100 = 1500 m chiqadi. Javob: 1500 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-masofa-xarita",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#55c7aa69"
+    },
+    {
+      "q": "Dala chizmasida quduq Q(−6; 8), omborxona esa R(6; −1) nuqtada. Bir birlik 10 m ga teng bo'lsa, quduqdan omborxonagacha necha metr yurish kerak?",
+      "v": [
+        "15 m",
+        "1500 m",
+        "150 m",
+        "210 m"
+      ],
+      "t": 2,
+      "izoh": "Abssissalar ayirmasi 6 − (−6) = 12, ordinatalar ayirmasi esa −1 − 8 = −9 ga teng. Masofa √(144 + 81) = √225 = 15 birlik chiqadi. Har bir birlik 10 m bo'lgani uchun 15 · 10 = 150 m. Javob: 150 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-masofa-xarita",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#9d60b830"
+    },
+    {
+      "q": "Dilnoza uyidan O(0; 0) chiqib, avval A(8; 0) do'konga, so'ng B(8; 6) kutubxonaga bordi. Uyiga to'g'ri qaytsa, qaytish yo'li borish yo'lidan necha birlik qisqa bo'ladi?",
+      "v": [
+        "10 birlik",
+        "4 birlik",
+        "6 birlik",
+        "2 birlik"
+      ],
+      "t": 1,
+      "izoh": "Borish yo'li ikki bo'lakdan iborat: 8 + 6 = 14 birlik. Qaytish esa to'g'ri chiziq bo'ylab √(8² + 6²) = √100 = 10 birlik. Farq 14 − 10 = 4 birlikni tashkil qiladi. Javob: 4 birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-masofa-xarita",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#d7e05e83"
+    },
+    {
+      "q": "Uch qishloq xaritada A(0; 0), B(12; 0) va C(12; 5) nuqtalarda. Sayyoh A dan C ga to'g'ri bordi, qaytishda esa B orqali o'tdi. Sayyohning umumiy yo'li necha birlik?",
+      "v": [
+        "30",
+        "25",
+        "29",
+        "26"
+      ],
+      "t": 0,
+      "izoh": "AC masofasi √(12² + 5²) = √169 = 13 birlikka teng. Qaytish yo'li CB = 5 va BA = 12 birlik bo'laklardan iborat. Umumiy yo'l 13 + 5 + 12 = 30 birlik. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-masofa-xarita",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#4f690710"
+    },
+    {
+      "q": "M(−7; 24) nuqtadan abssissa o'qigacha va ordinata o'qigacha bo'lgan masofalar yig'indisini toping.",
+      "v": [
+        "31",
+        "17",
+        "25",
+        "168"
+      ],
+      "t": 0,
+      "izoh": "Nuqtadan abssissa o'qigacha masofa uning ordinatasi moduliga teng: |24| = 24. Ordinata o'qigacha masofa esa abssissasining moduli, ya'ni |−7| = 7. Yig'indi 24 + 7 = 31 birlik. Javob: 31.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqqacha-masofa",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#caf2a1ee"
+    },
+    {
+      "q": "P(a; −5) nuqtadan koordinata boshigacha masofa 13 ga teng bo'lsa, a ning musbat qiymatini toping.",
+      "v": [
+        "144",
+        "12",
+        "8",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "Masofa formulasidan √(a² + (−5)²) = 13 tenglama hosil bo'ladi. Ikkala tomonni kvadratga oshirsak a² + 25 = 169, ya'ni a² = 144. Musbat ildiz a = 12 ga teng. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqqacha-masofa",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#6b3c7ab6"
+    },
+    {
+      "q": "Nuqtaning abssissa o'qigacha masofasi 6, ordinata o'qigacha masofasi 8 va u uchinchi chorakda yotadi. Nuqtaning koordinatalarini aniqlang.",
+      "v": [
+        "(8; 6)",
+        "(−8; 6)",
+        "(−8; −6)",
+        "(−6; −8)"
+      ],
+      "t": 2,
+      "izoh": "Abssissa o'qigacha masofa ordinataning modulini beradi: |y| = 6. Ordinata o'qigacha masofa esa abssissaning modulini beradi: |x| = 8. Uchinchi chorakda ikkala koordinata manfiy bo'lgani uchun nuqta (−8; −6) ko'rinishida bo'ladi. Javob: (−8; −6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqqacha-masofa",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#f3733c2d"
+    },
+    {
+      "q": "Quvurning burilish nuqtasi T(20; −21) da, nasos esa koordinata boshida joylashgan. Burilish nuqtasidan abssissa o'qigacha va nasosgacha bo'lgan masofalar ayirmasini toping.",
+      "v": [
+        "29",
+        "41",
+        "8",
+        "21"
+      ],
+      "t": 2,
+      "izoh": "Burilish nuqtasidan abssissa o'qigacha bo'lgan masofa uning ordinatasi moduliga teng: |−21| = 21. Nasos koordinata boshida bo'lgani uchun unga qadar masofa √(20² + 21²) = √(400 + 441) = √841 = 29 chiqadi. Izlangan ayirma 29 − 21 = 8 ga teng. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqqacha-masofa",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#3fcc2952"
+    },
+    {
+      "q": "A(3; 2) va B(x; 6) nuqtalar orasidagi masofa 5 ga teng. x ning eng kichik qiymatini toping.",
+      "v": [
+        "−3",
+        "3",
+        "0",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Masofa shartidan (x − 3)² + (6 − 2)² = 25 tenglama hosil bo'ladi. Bundan (x − 3)² = 25 − 16 = 9, ya'ni x − 3 = 3 yoki x − 3 = −3. Ildizlar 6 va 0 bo'lib, ulardan kichigi 0 ga teng. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masofa-nomalum-koordinata",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#aeda189e"
+    },
+    {
+      "q": "Ordinata o'qida yotgan va C(4; 1) nuqtadan 5 birlik uzoqlikdagi nuqtalarning ordinatalari yig'indisi nimaga teng?",
+      "v": [
+        "4",
+        "6",
+        "−2",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Ordinata o'qidagi ixtiyoriy nuqta (0; y) ko'rinishida bo'ladi. Masofa shartidan (0 − 4)² + (y − 1)² = 25, ya'ni (y − 1)² = 9 kelib chiqadi. Bundan y = 4 va y = −2, ularning yig'indisi esa 4 + (−2) = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masofa-nomalum-koordinata",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#527f39ee"
+    },
+    {
+      "q": "Nuqtaning abssissasi 5 ga teng va u A(1; −2) nuqtadan √17 birlik uzoqlikda. Nuqtaning ordinatasi qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "−1 va −3",
+        "1 va 3",
+        "−1 va 3",
+        "Faqat −1"
+      ],
+      "t": 0,
+      "izoh": "Masofa shartidan (5 − 1)² + (y + 2)² = 17 tenglamasi chiqadi. Bundan (y + 2)² = 17 − 16 = 1, ya'ni y + 2 = 1 yoki y + 2 = −1. Demak ordinata −1 yoki −3 bo'ladi. Javob: −1 va −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masofa-nomalum-koordinata",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#9a186b22"
+    },
+    {
+      "q": "K(−2; y) nuqta L(4; 3) nuqtadan 10 birlik uzoqlikda joylashgan. y ning barcha qiymatlari yig'indisini toping.",
+      "v": [
+        "11",
+        "6",
+        "16",
+        "−6"
+      ],
+      "t": 1,
+      "izoh": "Masofa shartidan (4 + 2)² + (3 − y)² = 100 tenglama hosil bo'ladi. Bundan (3 − y)² = 100 − 36 = 64, ya'ni 3 − y = 8 yoki 3 − y = −8. Ildizlar y = −5 va y = 11, ularning yig'indisi 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masofa-nomalum-koordinata",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#23db557f"
+    },
+    {
+      "q": "A(0; 0), B(6; 0) va C(3; 4) uchlari bilan berilgan uchburchak qanday uchburchak ekanini aniqlang.",
+      "v": [
+        "Turli tomonli",
+        "Teng yonli",
+        "Teng tomonli",
+        "To'g'ri burchakli"
+      ],
+      "t": 1,
+      "izoh": "AB tomon gorizontal va u 6 birlikka teng. AC = √(3² + 4²) = 5, BC = √((6 − 3)² + 4²) = 5 birlik. Ikki tomon teng, uchinchisi esa boshqacha, demak uchburchak teng yonli. To'g'ri burchak yo'q, chunki 5² + 5² = 50 ≠ 36. Javob: teng yonli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-turi",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#709e47af"
+    },
+    {
+      "q": "P(2; 3), Q(10; 3) va R(2; 18) nuqtalar uchburchak uchlari bo'lsa, uning gipotenuzasi uzunligini toping.",
+      "v": [
+        "23",
+        "17",
+        "15",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "P uchidan chiqqan tomonlar koordinata o'qlariga parallel: PQ = 10 − 2 = 8 va PR = 18 − 3 = 15. Demak P uchidagi burchak to'g'ri burchak, gipotenuza esa QR tomoni. Pifagor teoremasiga ko'ra QR = √(8² + 15²) = √(64 + 225) = √289 = 17. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-turi",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#26b1c904"
+    },
+    {
+      "q": "M(−1; 2), N(3; 5) va K(6; 1) uchburchakning uchlari. To'g'ri burchak qaysi uchda joylashganini aniqlang.",
+      "v": [
+        "M uchida",
+        "K uchida",
+        "Uchburchakda to'g'ri burchak yo'q",
+        "N uchida"
+      ],
+      "t": 3,
+      "izoh": "MN = √(4² + 3²) = 5, NK = √(3² + (−4)²) = 5 va MK = √(7² + (−1)²) = √50 birlik. Pifagor teoremasi bo'yicha MN² + NK² = 25 + 25 = 50 = MK² tenglik bajariladi. Eng uzun tomon MK gipotenuza bo'lgani uchun to'g'ri burchak unga qarama-qarshi N uchida yotadi. Javob: N uchida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-turi",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#023e556c"
+    },
+    {
+      "q": "A(2; 3), B(2; 9) va C(7; 6) uchlari berilgan uchburchakda eng uzun tomon qaysi va uning uzunligi qancha?",
+      "v": [
+        "BC, √34 birlik",
+        "AB, 8 birlik",
+        "AB, 6 birlik",
+        "AC, √34 birlik"
+      ],
+      "t": 2,
+      "izoh": "AB tomon vertikal bo'lgani uchun uning uzunligi 9 − 3 = 6 birlik. AC = √((7 − 2)² + (6 − 3)²) = √34 ≈ 5,83 birlik. BC = √((7 − 2)² + (6 − 9)²) = √34 birlik, ya'ni AC bilan teng. Demak eng uzuni AB va u 6 birlikka teng. Javob: AB, 6 birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-turi",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#d5400751"
+    },
+    {
+      "q": "Uchlari A(0; 0), B(6; 0) va C(6; 8) bo'lgan uchburchakning perimetrini toping.",
+      "v": [
+        "14",
+        "22",
+        "26",
+        "24"
+      ],
+      "t": 3,
+      "izoh": "AB tomon gorizontal va 6 birlikka, BC tomon vertikal va 8 birlikka teng. AC tomon esa √(6² + 8²) = √100 = 10 birlik. Perimetr 6 + 8 + 10 = 24 birlikni tashkil qiladi. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perimetr-koordinatalar",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#200e41e7"
+    },
+    {
+      "q": "Bog' uchastkasining burchaklari xaritada A(1; 1), B(9; 1), C(9; 7) va D(1; 7) nuqtalarda. Bir birlik 5 m bo'lsa, uchastkani o'rab olishga necha metr to'siq kerak?",
+      "v": [
+        "240 m",
+        "28 m",
+        "140 m",
+        "70 m"
+      ],
+      "t": 2,
+      "izoh": "Uchastka to'g'ri to'rtburchak shaklida: eni 9 − 1 = 8, bo'yi esa 7 − 1 = 6 birlik. Perimetr 2·(8 + 6) = 28 birlikka teng. Har bir birlik 5 m bo'lgani uchun 28 · 5 = 140 m to'siq kerak bo'ladi. Javob: 140 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perimetr-koordinatalar",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#6307cdb0"
+    },
+    {
+      "q": "M(−3; 0), N(0; 4), K(3; 0) va L(0; −4) nuqtalar romb uchlari bo'lsa, rombning perimetrini toping.",
+      "v": [
+        "25",
+        "20",
+        "14",
+        "10"
+      ],
+      "t": 1,
+      "izoh": "Rombning tomoni MN = √((0 + 3)² + (4 − 0)²) = √25 = 5 birlikka teng. Rombning to'rt tomoni ham teng bo'lgani uchun perimetr 4 · 5 = 20 birlik. Diagonallar 6 va 8 birlik bo'lsa ham, perimetr diagonallar orqali emas, tomon orqali topiladi. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-koordinatalar",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#a2c2c336"
+    },
+    {
+      "q": "Uchburchak uchlari A(−4; −1), B(0; 2) va C(3; −2) nuqtalarda. Perimetr eng yaqin butun songa yaxlitlanganda nechaga teng bo'ladi?",
+      "v": [
+        "17",
+        "15",
+        "18",
+        "20"
+      ],
+      "t": 0,
+      "izoh": "AB = √(4² + 3²) = 5 va BC = √(3² + (−4)²) = 5 birlik. CA = √(7² + (−1)²) = √50 ≈ 7,07 birlik. Perimetr 5 + 5 + 7,07 = 17,07 bo'lib, yaxlitlanganda 17 chiqadi. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perimetr-koordinatalar",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#2e954800"
+    },
+    {
+      "q": "Abssissa o'qida M(1; 4) va N(7; −2) nuqtalardan teng uzoqlikda yotgan nuqtaning abssissasini toping.",
+      "v": [
+        "3",
+        "4",
+        "6",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Izlanayotgan nuqta (x; 0) ko'rinishida bo'ladi. Teng uzoqlik shartidan (x − 1)² + 16 = (x − 7)² + 4 tenglama hosil bo'ladi. Qavslarni ochib soddalashtirsak −2x + 17 = −14x + 53, bundan 12x = 36 va x = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-uzoq-nuqta",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#443b72a7"
+    },
+    {
+      "q": "Ordinata o'qida A(−2; 1) va B(4; 3) nuqtalardan bir xil uzoqlikda yotgan nuqtaning ordinatasini toping.",
+      "v": [
+        "3",
+        "5",
+        "2",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Izlanayotgan nuqta (0; y) ko'rinishida bo'ladi. Teng uzoqlik shartidan 4 + (y − 1)² = 16 + (y − 3)² tenglamasi chiqadi. Qavslarni ochib soddalashtirsak 5 − 2y = 25 − 6y, bundan 4y = 20 va y = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-uzoq-nuqta",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#5cb495dd"
+    },
+    {
+      "q": "Ikki quduq xaritada A(2; 6) va B(8; 6) nuqtalarda joylashgan. Ikkala quduqdan teng uzoqlikdagi barcha nuqtalar qanday chiziqni hosil qiladi?",
+      "v": [
+        "Markazi (5; 6) bo'lgan aylana",
+        "AB kesmaning o'zi",
+        "x = 5 to'g'ri chizig'i",
+        "y = 6 to'g'ri chizig'i"
+      ],
+      "t": 2,
+      "izoh": "Ikki nuqtadan teng uzoqlikdagi nuqtalar to'plami — shu nuqtalarni tutashtiruvchi kesmaning o'rta perpendikulyari. AB kesmaning o'rtasi ((2 + 8)/2; (6 + 6)/2) = (5; 6) nuqtada. AB gorizontal bo'lgani uchun o'rta perpendikulyar vertikal, ya'ni x = 5 to'g'ri chizig'i. Javob: x = 5 to'g'ri chizig'i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-uzoq-nuqta",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#b019aebe"
+    },
+    {
+      "q": "C(0; 4) nuqta A(−3; 0) va B(a; 0) nuqtalardan teng uzoqlikda yotadi. a ning musbat qiymatini toping.",
+      "v": [
+        "−3",
+        "4",
+        "9",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "CA = √((−3 − 0)² + (0 − 4)²) = √25 = 5 birlik. CB = √(a² + 16) bo'lib, u ham 5 ga teng bo'lishi kerak. Bundan a² = 25 − 16 = 9 va musbat qiymat a = 3 chiqadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-uzoq-nuqta",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#c0cd9508"
+    },
+    {
+      "q": "A(−5; 8) va B(9; −2) nuqtalarni tutashtiruvchi kesmaning o'rtasi koordinatalarini toping.",
+      "v": [
+        "(4; 6)",
+        "(2; −3)",
+        "(2; 3)",
+        "(7; −5)"
+      ],
+      "t": 2,
+      "izoh": "O'rta nuqta formulasi ((x₁ + x₂)/2; (y₁ + y₂)/2) ko'rinishida. Abssissa (−5 + 9)/2 = 2, ordinata esa (8 + (−2))/2 = 3 chiqadi. Demak o'rta nuqta (2; 3) da yotadi. Javob: (2; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesma-ortasi",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#dd12cb41"
+    },
+    {
+      "q": "P(3; −7) va Q(−11; 1) nuqtalar orasidagi kesmaning o'rtasi qaysi chorakda yotadi?",
+      "v": [
+        "I chorak",
+        "II chorak",
+        "III chorak",
+        "hech qaysi (o'qda yotadi)"
+      ],
+      "t": 2,
+      "izoh": "O'rta nuqtaning abssissasi (3 + (−11))/2 = −4, ordinatasi esa (−7 + 1)/2 = −3 ga teng. Ikkala koordinata ham manfiy bo'lgani uchun nuqta uchinchi chorakda yotadi. Koordinatalarning hech biri nolga teng emasligi uchun nuqta o'q ustida yotmaydi. Javob: III chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesma-ortasi",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#5af64602"
+    },
+    {
+      "q": "Kvadratning qarama-qarshi uchlari A(1; 2) va C(7; 8) nuqtalarda. Kvadrat diagonallarining kesishish nuqtasini toping.",
+      "v": [
+        "(4; 5)",
+        "(3; 3)",
+        "(8; 10)",
+        "(5; 4)"
+      ],
+      "t": 0,
+      "izoh": "Kvadrat diagonallari kesishish nuqtasida teng ikkiga bo'linadi, demak bu nuqta AC diagonalning o'rtasi. Abssissa (1 + 7)/2 = 4, ordinata esa (2 + 8)/2 = 5 chiqadi. Javob: (4; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesma-ortasi",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#fa07a6e7"
+    },
+    {
+      "q": "Trapetsiyaning yon tomoni uchlari K(−6; 3) va L(2; 9) nuqtalarda. Shu tomonning o'rtasidan koordinata boshigacha masofa qancha?",
+      "v": [
+        "10",
+        "2√10",
+        "√52",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Yon tomonning o'rtasi ((−6 + 2)/2; (3 + 9)/2) = (−2; 6) nuqtada bo'ladi. Koordinata boshigacha masofa √((−2)² + 6²) = √40 ga teng. Ildiz ostidan to'la kvadratni chiqarsak √40 = 2√10 hosil bo'ladi. Javob: 2√10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesma-ortasi",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#7bb75da3"
+    },
+    {
+      "q": "Ikki qishloq xaritada A(−14; 6) va B(22; 18) nuqtalarda. Ular orasidagi yo'lning aynan yarmida avtobus bekati quriladi. Bekat qaysi nuqtaga tushadi?",
+      "v": [
+        "(12; 4)",
+        "(4; 12)",
+        "(8; 24)",
+        "(18; 6)"
+      ],
+      "t": 1,
+      "izoh": "Bekat AB kesmaning o'rtasida joylashadi. Abssissa (−14 + 22)/2 = 4, ordinata esa (6 + 18)/2 = 12 chiqadi. Demak bekat (4; 12) nuqtaga quriladi. Javob: (4; 12).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-orta-nuqta",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#6e61f998"
+    },
+    {
+      "q": "Aziz uyi A(2; −4), Bobur uyi esa B(10; 8) nuqtada. Ikkalasi teng masofa yurib uchrashsa, uchrashuv nuqtasi koordinata boshidan qancha uzoqlikda bo'ladi?",
+      "v": [
+        "2√10",
+        "8",
+        "√10",
+        "4√10"
+      ],
+      "t": 0,
+      "izoh": "Uchrashuv nuqtasi AB kesmaning o'rtasi: ((2 + 10)/2; (−4 + 8)/2) = (6; 2). Koordinata boshigacha masofa √(6² + 2²) = √40 birlik. Ildizni soddalashtirsak 2√10 hosil bo'ladi. Javob: 2√10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-orta-nuqta",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#39fe78ff"
+    },
+    {
+      "q": "Ikki ustunning tepasi P(−3; 12) va Q(9; 12) nuqtalarda. Ular orasiga tortilgan simning o'rtasiga chiroq osilgan bo'lsa, chiroq abssissa o'qidan necha birlik balandlikda?",
+      "v": [
+        "6",
+        "3",
+        "24",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Simning o'rtasi ((−3 + 9)/2; (12 + 12)/2) = (3; 12) nuqtada bo'ladi. Abssissa o'qidan balandlik ordinataning moduliga teng, ya'ni 12 birlik. Ikkala ustun bir xil balandlikda bo'lgani uchun o'rta nuqta ham o'sha balandlikda qoladi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-orta-nuqta",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#65dfa955"
+    },
+    {
+      "q": "Sport maydonchasining diagonal chizig'i M(4; 5) va N(16; 21) nuqtalar orasida tortilgan. Chiziq o'rtasiga bayroq qo'yilsa, bayroqdan M gacha masofa qancha bo'ladi?",
+      "v": [
+        "5",
+        "14",
+        "10",
+        "20"
+      ],
+      "t": 2,
+      "izoh": "Chiziqning o'rtasi ((4 + 16)/2; (5 + 21)/2) = (10; 13) nuqtada. Bayroqdan M gacha masofa √((10 − 4)² + (13 − 5)²) = √(36 + 64) = 10 birlik. Bu butun MN kesmaning yarmi, chunki MN = 20 birlik. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-orta-nuqta",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#0f9f2a83"
+    },
+    {
+      "q": "AB kesmaning o'rtasi M(4; −1), A uchi esa (−2; 5) nuqtada. B uchining koordinatalarini toping.",
+      "v": [
+        "(1; 2)",
+        "(6; −6)",
+        "(−8; 11)",
+        "(10; −7)"
+      ],
+      "t": 3,
+      "izoh": "O'rta nuqta formulasidan xB = 2·xM − xA = 2·4 − (−2) = 10 kelib chiqadi. Xuddi shunday yB = 2·yM − yA = 2·(−1) − 5 = −7 bo'ladi. Demak B uchi (10; −7) nuqtada. Javob: (10; −7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchinchi-uch-ortasi-orqali",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#30436b4f"
+    },
+    {
+      "q": "M(−3; 4) nuqta CD kesmaning o'rtasi. D uchining koordinatalari (5; −2) bo'lsa, C uchini toping.",
+      "v": [
+        "(−8; 6)",
+        "(13; −10)",
+        "(−11; 10)",
+        "(1; 1)"
+      ],
+      "t": 2,
+      "izoh": "C uchining abssissasi xC = 2·xM − xD = 2·(−3) − 5 = −11 formula bilan topiladi. Ordinata uchun yC = 2·yM − yD = 2·4 − (−2) = 10 chiqadi. Demak C uchi (−11; 10) nuqtada. Javob: (−11; 10).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchinchi-uch-ortasi-orqali",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#298962e7"
+    },
+    {
+      "q": "Kesmaning bir uchi A(a; 7), ikkinchisi B(9; b), o'rtasi esa M(2; −1) nuqtada. a + b yig'indini toping.",
+      "v": [
+        "4",
+        "−14",
+        "−4",
+        "14"
+      ],
+      "t": 1,
+      "izoh": "Abssissalar uchun (a + 9)/2 = 2 tenglama yoziladi, bundan a = −5. Ordinatalar uchun (7 + b)/2 = −1 bo'lib, bundan b = −9 chiqadi. Yig'indi a + b = −5 + (−9) = −14. Javob: −14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchinchi-uch-ortasi-orqali",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#c42d14d5"
+    },
+    {
+      "q": "AB kesmaning o'rtasi abssissa o'qida yotadi va A uchi (−4; 6) nuqtada. B uchining ordinatasi qanday bo'lishi kerak?",
+      "v": [
+        "−6",
+        "6",
+        "0",
+        "−3"
+      ],
+      "t": 0,
+      "izoh": "O'rta nuqta abssissa o'qida yotsa, uning ordinatasi nolga teng bo'ladi. O'rta nuqta formulasidan (6 + yB)/2 = 0 tenglamasi hosil bo'ladi. Bundan yB = −6 kelib chiqadi. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchinchi-uch-ortasi-orqali",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#1bcb73f2"
+    },
+    {
+      "q": "ABCD parallelogrammning uchta uchi A(1; 2), B(6; 3) va C(8; 9) nuqtalarda berilgan. D uchining koordinatalarini toping.",
+      "v": [
+        "(3; 8)",
+        "(13; 10)",
+        "(−1; −4)",
+        "(15; 14)"
+      ],
+      "t": 0,
+      "izoh": "Parallelogrammda diagonallar kesishish nuqtasida teng bo'linadi, ya'ni AC va BD ning o'rtalari ustma-ust tushadi. Shundan xD = xA + xC − xB = 1 + 8 − 6 = 3 kelib chiqadi. Xuddi shunday yD = 2 + 9 − 3 = 8 bo'ladi. Javob: (3; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelogramm-tortinchi-uch",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#28dff4ca"
+    },
+    {
+      "q": "Parallelogrammning uchlari tartib bilan K(−2; 1), L(4; 1) va M(6; 5) nuqtalarda. To'rtinchi uch N ni aniqlang.",
+      "v": [
+        "(0; 1)",
+        "(0; 5)",
+        "(8; 5)",
+        "(12; 5)"
+      ],
+      "t": 1,
+      "izoh": "KLMN parallelogrammda KM va LN diagonallar bir nuqtada teng ikkiga bo'linadi. Bundan xN = xK + xM − xL = −2 + 6 − 4 = 0 kelib chiqadi. Ordinata uchun yN = 1 + 5 − 1 = 5 bo'ladi. Javob: (0; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelogramm-tortinchi-uch",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#8cdabeac"
+    },
+    {
+      "q": "Bog'dagi to'rtta ustun ABCD parallelogrammini hosil qiladi va uchtasining o'rni A(0; 0), B(7; 2) hamda C(9; 8). Diagonallar kesishish nuqtasi qayerda bo'ladi?",
+      "v": [
+        "(3,5; 1)",
+        "(9; 8)",
+        "(4,5; 4)",
+        "(8; 5)"
+      ],
+      "t": 2,
+      "izoh": "ABCD parallelogrammda diagonallar AC va BD bo'lib, ular kesishish nuqtasida teng ikkiga bo'linadi. Uchlar tartibi ma'lum bo'lgani uchun AC diagonalning o'rtasini topish kifoya: ((0 + 9)/2; (0 + 8)/2) = (4,5; 4). D uchini bilmasak ham, bitta diagonal yetarli bo'ladi. Javob: (4,5; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallelogramm-tortinchi-uch",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#1ac65121"
+    },
+    {
+      "q": "ABCD parallelogrammda A(−1; −2) va B(3; 1) uchlari hamda diagonallar kesishish nuqtasi O(4; 3) berilgan. C uchini toping.",
+      "v": [
+        "(5; 5)",
+        "(3; 4)",
+        "(8; 9)",
+        "(9; 8)"
+      ],
+      "t": 3,
+      "izoh": "Kesishish nuqtasi AC diagonalning o'rtasi bo'lgani uchun xC = 2·4 − (−1) = 9 chiqadi. Ordinata uchun yC = 2·3 − (−2) = 8 bo'ladi. B uchi bu hisobda umuman ishtirok etmaydi. Javob: (9; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelogramm-tortinchi-uch",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#56007e5e"
+    },
+    {
+      "q": "Uchburchak uchlari A(−2; 3), B(5; −1) va C(6; 7) nuqtalarda. Medianalar kesishish nuqtasining koordinatalarini toping.",
+      "v": [
+        "(1,5; 1,5)",
+        "(3; 9)",
+        "(3; 3)",
+        "(9; 9)"
+      ],
+      "t": 2,
+      "izoh": "Medianalar kesishish nuqtasi uchlar koordinatalarining o'rta arifmetigiga teng. Abssissa (−2 + 5 + 6)/3 = 3, ordinata esa (3 + (−1) + 7)/3 = 3 chiqadi. Demak izlangan nuqta (3; 3). Javob: (3; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "medianalar-kesishish",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#1568454d"
+    },
+    {
+      "q": "Uchburchakning uchlari P(1; −4), Q(−7; 2) va R(9; 8) nuqtalarda. Uning og'irlik markazi qaysi chorakda yotadi?",
+      "v": [
+        "I chorak",
+        "III chorak",
+        "IV chorak",
+        "hech qaysi (o'qda yotadi)"
+      ],
+      "t": 0,
+      "izoh": "Og'irlik markazi medianalar kesishish nuqtasi bilan bir xil nuqtadir. Abssissa (1 + (−7) + 9)/3 = 1, ordinata esa (−4 + 2 + 8)/3 = 2 chiqadi. Ikkala koordinata ham musbat bo'lgani uchun nuqta birinchi chorakda yotadi. Koordinatalar noldan farqli, shuning uchun og'irlik markazi o'q ustiga tushmaydi. Javob: I chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "medianalar-kesishish",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#6d748abb"
+    },
+    {
+      "q": "Uchburchak uchlari A(0; 0), B(12; 0) va C(0; 9) nuqtalarda. Medianalar kesishish nuqtasidan A uchigacha bo'lgan masofani toping.",
+      "v": [
+        "5",
+        "7,5",
+        "2,5",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Medianalar kesishish nuqtasi G((0 + 12 + 0)/3; (0 + 0 + 9)/3) = (4; 3) da yotadi. A(0; 0) dan G gacha masofa √(4² + 3²) = 5 birlikka teng. Bu natija medianani uchdan boshlab 2 : 1 nisbatda bo'lish qoidasiga mos keladi, chunki butun mediana 7,5 birlik. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "medianalar-kesishish",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#8424a7b3"
+    },
+    {
+      "q": "Uchburchak uchlari A(−4; 5), B(2; −7) va C(8; 11) nuqtalarda. Medianalar kesishish nuqtasi koordinatalarining yig'indisi nimaga teng?",
+      "v": [
+        "6",
+        "5",
+        "15",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Abssissa (−4 + 2 + 8)/3 = 2, ordinata esa (5 + (−7) + 11)/3 = 3 chiqadi. Demak medianalar kesishish nuqtasi (2; 3) da yotadi. Koordinatalar yig'indisi 2 + 3 = 5 ga teng. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "medianalar-kesishish",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#3650ccd1"
+    },
+    {
+      "q": "Uchta suv nasosining o'rni sxemada A(3; 1), B(−6; 4) va C(9; 10) nuqtalarda. Boshqaruv shchiti nasoslarning og'irlik markaziga o'rnatilsa, u qaysi nuqtaga tushadi?",
+      "v": [
+        "(2; 15)",
+        "(2; 5)",
+        "(6; 15)",
+        "(3; 7,5)"
+      ],
+      "t": 1,
+      "izoh": "Uch nuqtaning og'irlik markazi ularning koordinatalari o'rta arifmetigi orqali topiladi. Abssissa (3 + (−6) + 9)/3 = 2, ordinata esa (1 + 4 + 10)/3 = 5 chiqadi. Demak shchit (2; 5) nuqtaga o'rnatiladi. Javob: (2; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-markaziy-nuqta",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#b5a31aef"
+    },
+    {
+      "q": "Uch qishloqning markazi A(−5; −2), B(11; 5) va C(6; 12) nuqtalarda. Shifoxona ularning og'irlik markaziga quriladigan bo'lsa, uning koordinatalarini toping.",
+      "v": [
+        "(4; 5)",
+        "(12; 15)",
+        "(6; 7,5)",
+        "(3; 5)"
+      ],
+      "t": 0,
+      "izoh": "Og'irlik markazi uchta nuqta koordinatalarining o'rtachasi sifatida topiladi. Abssissa (−5 + 11 + 6)/3 = 4, ordinata esa (−2 + 5 + 12)/3 = 5 chiqadi. Demak shifoxona (4; 5) nuqtaga quriladi. Javob: (4; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-markaziy-nuqta",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#d5329968"
+    },
+    {
+      "q": "Uchta darvoza P(0; 0), Q(6; 0) va R(0; 6) nuqtalarda joylashgan. Qorovulxona ularning og'irlik markazida bo'lsa, undan P darvozagacha necha birlik?",
+      "v": [
+        "4",
+        "2",
+        "4√2",
+        "2√2"
+      ],
+      "t": 3,
+      "izoh": "Og'irlik markazi ((0 + 6 + 0)/3; (0 + 0 + 6)/3) = (2; 2) nuqtada yotadi. P(0; 0) gacha masofa √(2² + 2²) = √8 birlikka teng. Ildiz ostidan to'la kvadratni chiqarsak 2√2 hosil bo'ladi. Javob: 2√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-markaziy-nuqta",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#fa239091"
+    },
+    {
+      "q": "Uch chodir K(−9; 3), L(0; −6) va M(6; 12) nuqtalarda tikilgan. Gulxan chodirlarning og'irlik markazida yoqilsa, gulxandan ordinata o'qigacha masofa qancha bo'ladi?",
+      "v": [
+        "√10",
+        "5",
+        "1",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Og'irlik markazi ((−9 + 0 + 6)/3; (3 + (−6) + 12)/3) = (−1; 3) nuqtada joylashadi. Ordinata o'qigacha masofa abssissaning moduliga teng, ya'ni |−1| = 1 birlik. Koordinata boshigacha masofa esa √10 bo'lar edi, lekin u so'ralmagan. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-markaziy-nuqta",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#735ced32"
+    },
+    {
+      "q": "Uchburchak medianalari M(2; −1) nuqtada kesishadi va uchlarining ikkitasi A(−3; 4) hamda B(7; −5). Uchinchi uchni toping.",
+      "v": [
+        "(4; −2)",
+        "(2; 2)",
+        "(6; −3)",
+        "(2; −2)"
+      ],
+      "t": 3,
+      "izoh": "Og'irlik markazi formulasidan xA + xB + xC = 3·xM tenglik kelib chiqadi. Bundan xC = 3·2 − (−3) − 7 = 6 + 3 − 7 = 2 chiqadi. Ordinata uchun yC = 3·(−1) − 4 − (−5) = −3 − 4 + 5 = −2 bo'ladi. Javob: (2; −2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "centroid-teskari-uch",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#80a5cae2"
+    },
+    {
+      "q": "Uchburchakning og'irlik markazi koordinata boshida yotadi va ikki uchi A(−4; 7) hamda B(9; −2). Uchinchi uch qayerda joylashgan?",
+      "v": [
+        "(13; −9)",
+        "(−5; 5)",
+        "(−5; −5)",
+        "(5; 5)"
+      ],
+      "t": 2,
+      "izoh": "Og'irlik markazi koordinata boshida bo'lsa, uchlar koordinatalarining yig'indisi nolga teng bo'ladi. Abssissalar uchun −4 + 9 + xC = 0, bundan xC = −5. Ordinatalar uchun 7 + (−2) + yC = 0, bundan yC = −5 chiqadi. Javob: (−5; −5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "centroid-teskari-uch",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#52301248"
+    },
+    {
+      "q": "Uchburchakning og'irlik markazi G(−1; 4), uchlaridan ikkitasi esa B(3; 9) va C(−7; 1). A uchining abssissasi qanday?",
+      "v": [
+        "5",
+        "1",
+        "−1",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "Og'irlik markazi shartidan xA + xB + xC = 3·xG tenglik yoziladi. Bundan xA = 3·(−1) − 3 − (−7) = −3 − 3 + 7 = 1 chiqadi. Demak A uchining abssissasi 1 ga teng. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "centroid-teskari-uch",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#39657641"
+    },
+    {
+      "q": "Uchburchakning og'irlik markazi G(2; 2) va uchlaridan biri A(2; 8) nuqtada. A ga qarama-qarshi tomonning o'rtasi qaysi nuqtada yotadi?",
+      "v": [
+        "(2; −1)",
+        "(2; 5)",
+        "(2; −4)",
+        "(2; 2)"
+      ],
+      "t": 0,
+      "izoh": "Medianalar kesishish nuqtasi medianani uchdan boshlab 2 : 1 nisbatda bo'ladi, ya'ni AG = 2·GM. A dan G gacha o'zgarish (0; −6) bo'lgani uchun G dan M gacha o'zgarish uning yarmi, ya'ni (0; −3). Demak M(2; 2 − 3) = (2; −1) nuqtada yotadi. Javob: (2; −1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "centroid-teskari-uch",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#b9ee09e0"
+    },
+    {
+      "q": "A(−3; 2) va B(9; 14) nuqtalarni tutashtiruvchi kesmani A uchidan boshlab 1 : 3 nisbatda bo'luvchi nuqtani toping.",
+      "v": [
+        "(0; 5)",
+        "(6; 11)",
+        "(3; 8)",
+        "(1; 6)"
+      ],
+      "t": 0,
+      "izoh": "1 : 3 nisbatda jami to'rt ulush bo'lgani uchun izlangan nuqta A dan kesmaning to'rtdan bir qismida yotadi. Abssissa −3 + (9 − (−3))/4 = −3 + 3 = 0 chiqadi. Ordinata esa 2 + (14 − 2)/4 = 2 + 3 = 5 bo'ladi. Javob: (0; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmani-nisbatda-bolish",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#ef145e3e"
+    },
+    {
+      "q": "M(2; −5) va N(14; 7) nuqtalar orasidagi kesmada MP : PN = 2 : 1 shartni qanoatlantiruvchi P nuqtani toping.",
+      "v": [
+        "(26; 19)",
+        "(10; 3)",
+        "(6; −1)",
+        "(8; 1)"
+      ],
+      "t": 1,
+      "izoh": "MP : PN = 2 : 1 bo'lsa, P nuqta MN kesmaning M dan boshlab uchdan ikki qismida yotadi. Abssissa 2 + (14 − 2)·2/3 = 2 + 8 = 10 chiqadi. Ordinata esa −5 + (7 − (−5))·2/3 = −5 + 8 = 3 bo'ladi. Javob: (10; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmani-nisbatda-bolish",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#50c97325"
+    },
+    {
+      "q": "A(1; 3) va B(11; 8) nuqtalar berilgan. AB kesmani B uchidan boshlab 3 : 2 nisbatda bo'luvchi nuqtaning abssissasi qanday?",
+      "v": [
+        "6",
+        "9",
+        "5",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Nisbat B uchidan olingani uchun izlangan nuqta BA kesmaning B dan beshdan uch qismida yotadi. Abssissa 11 + (1 − 11)·3/5 = 11 − 6 = 5 chiqadi. Agar nisbat xato ravishda A tomondan olinsa, javob 7 bo'lib qolar edi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmani-nisbatda-bolish",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#caa59b5f"
+    },
+    {
+      "q": "C(−8; −3) va D(4; 9) nuqtalar orasidagi kesma uchta teng bo'lakka bo'lindi. Bo'linish nuqtalarining barcha koordinatalari yig'indisi nimaga teng?",
+      "v": [
+        "−3",
+        "5",
+        "1",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Kesma uchta teng bo'lakka bo'linsa, bo'linish nuqtalari C dan uchdan bir va uchdan ikki masofada yotadi. Birinchisi (−8 + 4; −3 + 4) = (−4; 1), ikkinchisi esa (−8 + 8; −3 + 8) = (0; 5). Barcha koordinatalar yig'indisi −4 + 1 + 0 + 5 = 2 ga teng. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmani-nisbatda-bolish",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#f640501c"
+    },
+    {
+      "q": "Gaz quvuri A(0; 0) nuqtadan B(20; 15) nuqtagacha tortilgan. Nazorat qudug'i quvurni A dan boshlab 2 : 3 nisbatda bo'ladigan joyda qaziladi. Quduq qaysi nuqtada bo'ladi?",
+      "v": [
+        "(10; 7,5)",
+        "(4; 3)",
+        "(8; 6)",
+        "(12; 9)"
+      ],
+      "t": 2,
+      "izoh": "2 : 3 nisbatda jami besh ulush bor va quduq A dan beshdan ikki masofada joylashadi. Abssissa 20·2/5 = 8, ordinata esa 15·2/5 = 6 chiqadi. Demak quduq (8; 6) nuqtada qaziladi. Javob: (8; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-nisbatda-taqsimlash",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#a520e5fe"
+    },
+    {
+      "q": "Temir yo'l M(−10; 4) va N(14; 16) bekatlari orasida to'g'ri chiziq bo'ylab o'tadi. Yangi bekat yo'lning M dan boshlab uchdan bir qismida quriladi. Yangi bekat koordinatalari qanday?",
+      "v": [
+        "(6; 12)",
+        "(2; 10)",
+        "(−2; 12)",
+        "(−2; 8)"
+      ],
+      "t": 3,
+      "izoh": "Yangi bekat MN kesmaning M dan boshlab uchdan bir qismida yotadi. Abssissa −10 + (14 − (−10))/3 = −10 + 8 = −2 chiqadi. Ordinata esa 4 + (16 − 4)/3 = 4 + 4 = 8 bo'ladi. Javob: (−2; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-nisbatda-taqsimlash",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#25c80f5f"
+    },
+    {
+      "q": "Tog' yonbag'ridagi ikki tayanch ustunning uchlari P(6; 2) va Q(30; 26) nuqtalarda. Ular orasidagi tarang simda qaldirg'och P dan Q gacha bo'lgan masofani 5 : 7 nisbatda bo'ladigan nuqtada o'tiribdi. Qaldirg'och abssissa o'qidan qancha balandlikda?",
+      "v": [
+        "12",
+        "14",
+        "16",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "PQ kesma 5 : 7 nisbatda bo'linadi, ya'ni jami 12 ulushdan qaldirg'och P tomondan 5 ulush uzoqlikda o'tiribdi. Balandlik ordinata bilan o'lchanadi: 2 + (26 − 2)·5/12 = 2 + 10 = 12. Abssissa esa 6 + (30 − 6)·5/12 = 16 chiqadi, lekin balandlik uchun u kerak emas. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-nisbatda-taqsimlash",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#63a8b80e"
+    },
+    {
+      "q": "Ikki ombor A(−6; −4) va B(18; 20) nuqtalarda. Yuk mashinasi A dan chiqib, butun yo'lning 25 foizini bosib o'tdi. Mashina hozir qaysi nuqtada turibdi?",
+      "v": [
+        "(4,5; 5)",
+        "(0; 2)",
+        "(6; 8)",
+        "(12; 14)"
+      ],
+      "t": 1,
+      "izoh": "25 foiz — bu kesmaning to'rtdan bir qismi demakdir. Abssissa −6 + (18 − (−6))/4 = −6 + 6 = 0 chiqadi. Ordinata esa −4 + (20 − (−4))/4 = −4 + 6 = 2 bo'ladi. Javob: (0; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-nisbatda-taqsimlash",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#b7d3491b"
+    },
+    {
+      "q": "A(−4; 1) va B(8; 10) nuqtalar orasidagi kesmada P(0; 4) nuqta yotadi. P nuqta AB kesmani qanday nisbatda bo'ladi?",
+      "v": [
+        "3 : 1",
+        "1 : 2",
+        "2 : 1",
+        "1 : 3"
+      ],
+      "t": 1,
+      "izoh": "A dan P gacha koordinatalar o'zgarishi (0 − (−4); 4 − 1) = (4; 3), uzunligi esa 5 birlik. P dan B gacha o'zgarish (8 − 0; 10 − 4) = (8; 6), uzunligi 10 birlik. Demak AP : PB = 5 : 10 = 1 : 2. Javob: 1 : 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolish-nisbatini-topish",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#807a613f"
+    },
+    {
+      "q": "M(2; −6) va N(2; 9) nuqtalarni tutashtiruvchi kesma abssissa o'qini K nuqtada kesadi. K nuqta MN kesmani qanday nisbatda bo'ladi?",
+      "v": [
+        "2 : 3",
+        "3 : 2",
+        "1 : 2",
+        "2 : 5"
+      ],
+      "t": 0,
+      "izoh": "Kesma vertikal bo'lgani uchun u abssissa o'qini K(2; 0) nuqtada kesadi. MK = |0 − (−6)| = 6 va KN = |9 − 0| = 9 birlikka teng. Nisbat MK : KN = 6 : 9 = 2 : 3 bo'ladi. Javob: 2 : 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolish-nisbatini-topish",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#6316a104"
+    },
+    {
+      "q": "A(−5; −2) va B(7; 10) nuqtalar orasidagi kesmani ordinata o'qi qanday nisbatda bo'ladi?",
+      "v": [
+        "7 : 5",
+        "5 : 12",
+        "1 : 2",
+        "5 : 7"
+      ],
+      "t": 3,
+      "izoh": "Kesish nuqtasining abssissasi nolga teng bo'lishi kerak. A dan B gacha abssissa 12 birlikka o'sadi, noldan o'tish uchun esa 5 birlik yetarli. Qolgan qismi 12 − 5 = 7 birlik bo'lgani uchun nisbat 5 : 7 chiqadi. Javob: 5 : 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolish-nisbatini-topish",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#5ac12511"
+    },
+    {
+      "q": "Kesmaning uchlari C(1; 1) va D(13; 25) nuqtalarda, undagi E nuqta esa (4; 7). CE : ED nisbati qanday va E kesma o'rtasining qaysi tomonida yotadi?",
+      "v": [
+        "1 : 2, C tomonda",
+        "1 : 3, D tomonda",
+        "1 : 3, C tomonda",
+        "3 : 1, D tomonda"
+      ],
+      "t": 2,
+      "izoh": "CD kesmada abssissa 12 birlikka ortadi, CE bo'lagida esa 4 − 1 = 3 birlikka. Demak E nuqta C dan kesmaning to'rtdan bir qismida yotadi va CE : ED = 1 : 3 bo'ladi. To'rtdan bir yarimdan kichik bo'lgani uchun E o'rtaga nisbatan C tomonda joylashgan. Javob: 1 : 3, C tomonda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolish-nisbatini-topish",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#3e7c0bff"
+    },
+    {
+      "q": "Uchburchak uchlari A(1; 2), B(4; 12) va C(14; 4) nuqtalarda. A uchidan chiqqan mediananing uzunligini hisoblang.",
+      "v": [
+        "14",
+        "5",
+        "100",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Mediana A uchini BC tomonning o'rtasi bilan tutashtiradi. BC ning o'rtasi ((4 + 14)/2; (12 + 4)/2) = (9; 8) nuqtada. Mediana uzunligi √((9 − 1)² + (8 − 2)²) = √(64 + 36) = √100 = 10 birlikka teng. Oxirida ildizni olishni unutgan o'quvchi 100 ni, koordinata farqlarini oddiy qo'shib yuborgan o'quvchi esa 8 + 6 = 14 ni belgilaydi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "median-uzunligi",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#12e38ffb"
+    },
+    {
+      "q": "Uchburchakda B(−6; 3) uchi va unga qarshi AC tomonning uchlari A(0; −5) hamda C(8; 1). B dan chiqqan mediana uzunligi qancha?",
+      "v": [
+        "√200",
+        "5",
+        "5√5",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "AC tomonning o'rtasi ((0 + 8)/2; (−5 + 1)/2) = (4; −2) nuqtada yotadi. Mediana uzunligi √((4 + 6)² + (−2 − 3)²) = √(100 + 25) = √125 birlik. Ildiz ostidan to'la kvadratni chiqarsak 5√5 hosil bo'ladi. Javob: 5√5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "median-uzunligi",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#9417c74c"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning uchlari O(0; 0), A(0; 12) va B(16; 0) nuqtalarda. Gipotenuzaga tushirilgan mediana uzunligini toping.",
+      "v": [
+        "8",
+        "10",
+        "20",
+        "14"
+      ],
+      "t": 1,
+      "izoh": "Gipotenuza AB ning o'rtasi ((0 + 16)/2; (12 + 0)/2) = (8; 6) nuqtada. O(0; 0) dan shu nuqtagacha masofa √(64 + 36) = 10 birlikka teng. Natija gipotenuzaga tushirilgan mediana gipotenuzaning yarmiga teng degan qoidaga mos, chunki AB = 20 birlik. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "median-uzunligi",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#006868af"
+    },
+    {
+      "q": "Uchburchak uchlari K(2; 1), L(2; 9) va M(10; 1) nuqtalarda. Uning eng qisqa medianasi qaysi uchdan chiqadi?",
+      "v": [
+        "K uchidan",
+        "L uchidan",
+        "M uchidan",
+        "Uchala mediana teng"
+      ],
+      "t": 0,
+      "izoh": "LM ning o'rtasi (6; 5) bo'lgani uchun K dan chiqqan mediana √(4² + 4²) = √32 ≈ 5,66 birlik. KM ning o'rtasi (6; 1), demak L dan chiqqan mediana √(4² + 8²) = √80 ≈ 8,94 birlik. KL ning o'rtasi (2; 5) bo'lib, M dan chiqqan mediana ham √80 ga teng. Eng qisqasi K uchidan chiqadi. Javob: K uchidan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "median-uzunligi",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#9c75b2bd"
+    },
+    {
+      "q": "Aylana diametrining uchlari A(−3; 4) va B(9; −12) nuqtalarda. Aylananing markazi va radiusini toping.",
+      "v": [
+        "Markaz (3; −4), radius 10",
+        "Markaz (3; −4), radius 20",
+        "Markaz (6; −8), radius 10",
+        "Markaz (3; 4), radius 10"
+      ],
+      "t": 0,
+      "izoh": "Markaz diametrning o'rtasi bo'ladi: ((−3 + 9)/2; (4 + (−12))/2) = (3; −4). Diametr uzunligi √((9 + 3)² + (−12 − 4)²) = √(144 + 256) = 20 birlik. Radius uning yarmi, ya'ni 10 birlikka teng. Javob: markaz (3; −4), radius 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-diametr-markaz",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#a62be62a"
+    },
+    {
+      "q": "Aylananing markazi O(2; −1), diametrining bir uchi esa P(−6; 5) nuqtada. Diametrning ikkinchi uchini toping.",
+      "v": [
+        "(10; 3)",
+        "(10; −7)",
+        "(−2; 2)",
+        "(8; −6)"
+      ],
+      "t": 1,
+      "izoh": "Markaz diametrning o'rtasi bo'lgani uchun ikkinchi uchning abssissasi 2·2 − (−6) = 10 chiqadi. Ordinata uchun 2·(−1) − 5 = −7 bo'ladi. Demak diametrning ikkinchi uchi (10; −7) nuqtada. Javob: (10; −7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-diametr-markaz",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#05b6d700"
+    },
+    {
+      "q": "Dumaloq hovuzning chetidagi ikki qarama-qarshi nuqta xaritada A(1; 2) va B(9; 8). Bir birlik 2 m ga teng bo'lsa, hovuzning radiusi necha metr?",
+      "v": [
+        "5 m",
+        "40 m",
+        "10 m",
+        "20 m"
+      ],
+      "t": 2,
+      "izoh": "A va B qarama-qarshi nuqtalar bo'lgani uchun AB kesma diametr hisoblanadi. AB = √(8² + 6²) = 10 birlik, ya'ni 10 · 2 = 20 m. Radius diametrning yarmi bo'lgani uchun 20 : 2 = 10 m chiqadi. Javob: 10 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylana-diametr-markaz",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#6e4588e3"
+    },
+    {
+      "q": "Markazi C(4; 3) nuqtada bo'lgan aylana koordinata boshidan o'tadi. Aylananing koordinata boshidan eng uzoq nuqtasigacha bo'lgan masofa qancha?",
+      "v": [
+        "5",
+        "25",
+        "7",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Aylana koordinata boshidan o'tgani uchun radius CO masofasiga teng: √(4² + 3²) = 5 birlik. Koordinata boshi aylanada yotadi, undan eng uzoq nuqta esa shu nuqtadan o'tuvchi diametrning ikkinchi uchi. Demak masofa 2 · 5 = 10 birlik. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylana-diametr-markaz",
+      "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani#3b6e28d6"
+    }
+  ]
+}

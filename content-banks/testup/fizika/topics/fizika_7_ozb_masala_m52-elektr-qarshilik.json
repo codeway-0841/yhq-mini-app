@@ -1,0 +1,216 @@
+{
+  "nom": "52-mavzu. Masala. Elektr Qarshilik",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Uzunligi 100 m va ko‘ndalang kesimining yuzasi 2 mm² bo‘lgan mis simning qarshiligini toping. (ρ = 0,017·10⁻⁶ Ω·m)",
+      "v": [
+        "0,85 Ω",
+        "0,085 Ω",
+        "8,5 Ω",
+        "1,7 Ω"
+      ],
+      "t": 0,
+      "izoh": "R = ρ·l/S = 0,017·10⁻⁶·100/(2·10⁻⁶) = 0,85 Ω",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m52-elektr-qarshilik#5a81dff3"
+    },
+    {
+      "q": "Uzunligi 2 m va ko‘ndalang kesimining yuzasi 0,5 mm² bo‘lgan nixrom simning qarshiligi qancha? (ρ = 1,1·10⁻⁶ Ω·m)",
+      "v": [
+        "4,4 Ω",
+        "2,2 Ω",
+        "0,44 Ω",
+        "44 Ω"
+      ],
+      "t": 0,
+      "izoh": "R = ρ·l/S = 1,1·10⁻⁶·2/(0,5·10⁻⁶) = 4,4 Ω",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m52-elektr-qarshilik#6a8961ac"
+    },
+    {
+      "q": "Uzunligi 10 m, ko‘ndalang kesim yuzi 1 mm² bo‘lgan alyuminiy simning qarshiligi qancha? (ρ = 0,028·10⁻⁶ Ω·m)",
+      "v": [
+        "0,28 Ω",
+        "2,8 Ω",
+        "0,028 Ω",
+        "0,56 Ω"
+      ],
+      "t": 0,
+      "izoh": "R = ρ·l/S = 0,028·10⁻⁶·10/(1·10⁻⁶) = 0,28 Ω",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m52-elektr-qarshilik#77f6cec8"
+    },
+    {
+      "q": "Ko‘ndalang kesim yuzi 0,5 mm² bo‘lgan nikelin simdan qarshiligi 2 Ω bo‘lgan spiral tayyorlash kerak. Simning uzunligi qanday bo‘lishi lozim? (ρ = 0,4·10⁻⁶ Ω·m)",
+      "v": [
+        "2,5 m",
+        "0,25 m",
+        "25 m",
+        "5 m"
+      ],
+      "t": 0,
+      "izoh": "l = R·S/ρ = 2·0,5·10⁻⁶/(0,4·10⁻⁶) = 2,5 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m52-elektr-qarshilik#24a8816f"
+    },
+    {
+      "q": "Uzunligi 3 m, ko‘ndalang kesim yuzi 0,5 mm² bo‘lgan simning qarshiligi 2,4 Ω. Sim qanday moddadan tayyorlangan?",
+      "v": [
+        "Nikelin",
+        "Nixrom",
+        "Mis",
+        "Temir"
+      ],
+      "t": 0,
+      "izoh": "ρ = R·S/l = 2,4·0,5·10⁻⁶/3 = 0,4·10⁻⁶ Ω·m — bu nikelin",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m52-elektr-qarshilik#08824e5f"
+    },
+    {
+      "q": "Bir xil moddadan yasalgan ikkita sim bor: birinchisining uzunligi 5 m, kesim yuzi 0,1 mm²; ikkinchisiniki 0,5 m va 3 mm². Birinchi simning qarshiligi ikkinchisinikidan necha marta katta?",
+      "v": [
+        "300 marta",
+        "30 marta",
+        "3 marta",
+        "150 marta"
+      ],
+      "t": 0,
+      "izoh": "R₁/R₂ = (l₁/S₁)/(l₂/S₂) = (5/0,1)/(0,5/3) = 50/0,167 = 300",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m52-elektr-qarshilik#7a80bf3a"
+    },
+    {
+      "q": "Uzunligi 5 m, ko‘ndalang kesim yuzi 0,2 mm² bo‘lgan volfram simning qarshiligi qancha? (ρ = 0,055·10⁻⁶ Ω·m)",
+      "v": [
+        "1,375 Ω",
+        "13,75 Ω",
+        "0,275 Ω",
+        "2,75 Ω"
+      ],
+      "t": 0,
+      "izoh": "R = ρ·l/S = 0,055·10⁻⁶·5/(0,2·10⁻⁶) = 1,375 Ω",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m52-elektr-qarshilik#dd710572"
+    },
+    {
+      "q": "Uzunligi 50 m, kesim yuzi 1 mm² bo‘lgan temir simning qarshiligi qancha? (ρ = 0,098·10⁻⁶ Ω·m)",
+      "v": [
+        "4,9 Ω",
+        "0,49 Ω",
+        "49 Ω",
+        "9,8 Ω"
+      ],
+      "t": 0,
+      "izoh": "R = ρ·l/S = 0,098·10⁻⁶·50/(1·10⁻⁶) = 4,9 Ω",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m52-elektr-qarshilik#26f92786"
+    },
+    {
+      "q": "Qarshiligi 4 Ω bo‘lgan simning uzunligi (kesimi o‘zgarmas holda) 2 marta orttirilsa, uning qarshiligi qanday bo‘ladi?",
+      "v": [
+        "8 Ω",
+        "2 Ω",
+        "4 Ω",
+        "16 Ω"
+      ],
+      "t": 0,
+      "izoh": "R ~ l, demak R₂ = 2·R₁ = 2·4 = 8 Ω",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m52-elektr-qarshilik#afb8ee94"
+    },
+    {
+      "q": "Qarshiligi 3 Ω bo‘lgan sim dastgohda cho‘zilib, ikki marta uzun qilingan (hajmi o‘zgarmagan). Simning yangi qarshiligi qancha bo‘ladi?",
+      "v": [
+        "12 Ω",
+        "6 Ω",
+        "1,5 Ω",
+        "24 Ω"
+      ],
+      "t": 0,
+      "izoh": "l 2 marta ortdi, hajm o‘zgarmagani uchun S 2 marta kichraydi: R₂ = R₁·2·2 = 3·4 = 12 Ω",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m52-elektr-qarshilik#910823ab"
+    },
+    {
+      "q": "Uzunligi 100 m, kesim yuzi 0,5 mm² bo‘lgan mis simning qarshiligi qancha? (ρ = 0,017·10⁻⁶ Ω·m)",
+      "v": [
+        "3,4 Ω",
+        "0,34 Ω",
+        "34 Ω",
+        "1,7 Ω"
+      ],
+      "t": 0,
+      "izoh": "R = ρ·l/S = 0,017·10⁻⁶·100/(0,5·10⁻⁶) = 3,4 Ω",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m52-elektr-qarshilik#6883cb12"
+    },
+    {
+      "q": "Uzunligi 40 m bo‘lgan mis simning qarshiligi 0,34 Ω. Simning ko‘ndalang kesim yuzini toping. (ρ = 0,017·10⁻⁶ Ω·m)",
+      "v": [
+        "2 mm²",
+        "0,5 mm²",
+        "4 mm²",
+        "1 mm²"
+      ],
+      "t": 0,
+      "izoh": "S = ρ·l/R = 0,017·10⁻⁶·40/0,34 = 2·10⁻⁶ m² = 2 mm²",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m52-elektr-qarshilik#71b1412e"
+    },
+    {
+      "q": "Bir xil moddadan yasalgan ikki simdan birinchisining uzunligi ikkinchisinikidan 3 marta katta, kesim yuzi esa 2 marta kichik. Birinchi simning qarshiligi ikkinchisinikidan necha marta katta?",
+      "v": [
+        "6 marta",
+        "1,5 marta",
+        "3 marta",
+        "5 marta"
+      ],
+      "t": 0,
+      "izoh": "R₁/R₂ = (l₁/l₂)·(S₂/S₁) = 3·2 = 6",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m52-elektr-qarshilik#33640d10"
+    },
+    {
+      "q": "Elektr plitaning qizdirgichi ko‘ndalang kesim yuzi 0,1 mm² bo‘lgan nixrom simdan yasaladi. Qarshiligi 55 Ω bo‘lishi uchun qanday uzunlikda sim olish kerak? (ρ = 1,1·10⁻⁶ Ω·m)",
+      "v": [
+        "5 m",
+        "0,5 m",
+        "50 m",
+        "2,5 m"
+      ],
+      "t": 0,
+      "izoh": "l = R·S/ρ = 55·0,1·10⁻⁶/(1,1·10⁻⁶) = 5 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m52-elektr-qarshilik#73c7c7e6"
+    }
+  ]
+}

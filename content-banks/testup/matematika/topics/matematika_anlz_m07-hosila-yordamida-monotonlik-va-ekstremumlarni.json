@@ -1,0 +1,1609 @@
+{
+  "nom": "Hosila yordamida monotonlik va ekstremumlarni topish",
+  "bolim": "Matematik analiz asoslari",
+  "blok": "anlz",
+  "rasmiyBolim": 5,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "f(x) = x³ − 6x² + 9x + 2 funksiyaning statsionar nuqtalarini toping.",
+      "v": [
+        "1 va 3",
+        "−1 va −3",
+        "0 va 4",
+        "2 va 3"
+      ],
+      "t": 0,
+      "izoh": "Statsionar nuqtada hosila nolga aylanadi. f'(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3). Demak f'(x) = 0 tenglamadan x = 1 va x = 3 chiqadi. Javob: 1 va 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "statsionar-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#145bfd27"
+    },
+    {
+      "q": "f(x) = 2x³ + 3x² − 12x + 5 funksiyaning hosilasi nolga aylanadigan nuqtalarni aniqlang.",
+      "v": [
+        "2 va −1",
+        "−2 va 1",
+        "0 va 1",
+        "−2 va −1"
+      ],
+      "t": 1,
+      "izoh": "Hosila f'(x) = 6x² + 6x − 12 bo'ladi. Uni nolga tenglaymiz: x² + x − 2 = 0. Viyet teoremasi bo'yicha ildizlar x = −2 va x = 1. Javob: −2 va 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "statsionar-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#5010de54"
+    },
+    {
+      "q": "Farg'onadagi sexda t soat o'tgach ombordagi tayyor mahsulot zaxirasi N(t) = 12t² − t³ dona bo'ladi (tayyor buyumlar jo'natib turilgani uchun zaxira kamayishi ham mumkin). Hosila nolga aylanadigan musbat t qiymatini toping.",
+      "v": [
+        "4 soat",
+        "24 soat",
+        "8 soat",
+        "12 soat"
+      ],
+      "t": 2,
+      "izoh": "N'(t) = 24t − 3t². Uni nolga tenglaymiz: 3t(8 − t) = 0. Musbat yechim t = 8. Demak sakkizinchi soatda zaxiraning o'zgarish tezligi nolga tushadi va zaxira eng katta qiymatga chiqadi. Javob: 8 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "statsionar-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#a7dfb25c"
+    },
+    {
+      "q": "f(x) = x⁴ − 8x² + 3 funksiya nechta statsionar nuqtaga ega va ular qaysi nuqtalar?",
+      "v": [
+        "Uchta: −2; 0; 2",
+        "Ikkita: −2 va 2",
+        "Bitta: 0",
+        "Uchta: −4; 0; 4"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 4x³ − 16x = 4x(x − 2)(x + 2). Hosila nolga aylanishi uchun x = 0, x = 2 yoki x = −2 bo'lishi kerak. Demak uchta statsionar nuqta bor. Javob: −2; 0; 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "statsionar-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#1e73e7dc"
+    },
+    {
+      "q": "f(x) = x³ − 3ax² + 3x − 1 funksiyaning statsionar nuqtalari x₁ va x₂ bo'lib, x₁ + x₂ = 4 sharti bajarilsa, a nechaga teng?",
+      "v": [
+        "4",
+        "1",
+        "2",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 3x² − 6ax + 3. Statsionar nuqtalar shu kvadrat uchhadning ildizlari. Viyet teoremasiga ko'ra x₁ + x₂ = 6a/3 = 2a. Shart bo'yicha 2a = 4, demak a = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "statsionar-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#21eafd02"
+    },
+    {
+      "q": "f(x) = x² − 10x + 21 funksiya qaysi oraliqda o'suvchi bo'ladi?",
+      "v": [
+        "(5; +∞)",
+        "(−∞; 5)",
+        "(10; +∞)",
+        "(−∞; −5)"
+      ],
+      "t": 0,
+      "izoh": "Funksiya o'sishi uchun f'(x) > 0 bo'lishi kerak. f'(x) = 2x − 10 > 0 tengsizlikdan x > 5 kelib chiqadi. Demak o'sish oralig'i (5; +∞). Javob: (5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "osish-oraligi",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#0d8f699b"
+    },
+    {
+      "q": "f(x) = x³ − 12x + 7 funksiyaning o'sish oraliqlarini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "(−2; 2)",
+        "(−∞; −2) va (2; +∞)",
+        "(−∞; 0)",
+        "(2; +∞)"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 3x² − 12. f'(x) > 0 tengsizlik x² > 4 ga keltiriladi, bundan x < −2 yoki x > 2. Demak funksiya (−∞; −2) va (2; +∞) oraliqlarida o'suvchi. Javob: (−∞; −2) va (2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "osish-oraligi",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#fce4fd29"
+    },
+    {
+      "q": "Namangandagi issiqxonada havo harorati kun boshidan t soat o'tgach T(t) = −0,2t³ + 1,8t² + 15 daraja bo'ladi. Harorat qaysi vaqt oralig'ida ko'tarilib boradi?",
+      "v": [
+        "0 dan 9 soatgacha",
+        "6 soatdan keyin",
+        "0 dan 3 soatgacha",
+        "0 dan 6 soatgacha"
+      ],
+      "t": 3,
+      "izoh": "Harorat ko'tarilishi T'(t) > 0 degani. T'(t) = −0,6t² + 3,6t = −0,6t(t − 6). Bu ifoda 0 < t < 6 oraliqda musbat. Demak harorat dastlabki olti soat davomida ko'tariladi. Javob: 0 dan 6 soatgacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "osish-oraligi",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#7f12917f"
+    },
+    {
+      "q": "f(x) = x³ + 3x² + 3x + 11 funksiyaning o'sishi haqida quyidagi fikrlardan qaysi biri to'g'ri?",
+      "v": [
+        "Faqat (−1; +∞) oraliqda o'suvchi",
+        "Butun son o'qida o'suvchi",
+        "Faqat (−∞; −1) oraliqda o'suvchi",
+        "Hech qayerda o'suvchi emas"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 3x² + 6x + 3 = 3(x + 1)². To'la kvadrat hech qachon manfiy bo'lmaydi, u faqat x = −1 da nolga aylanadi. Bitta nuqtada nolga aylanish o'sishni buzmaydi, shuning uchun funksiya butun son o'qida o'suvchi. Javob: butun son o'qida o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "osish-oraligi",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#29dc5392"
+    },
+    {
+      "q": "Anvar f(x) = (1/3)x³ − (5/2)x² + 6x funksiyaning o'sish oraliqlarini topmoqchi. U qaysi javobni yozishi kerak?",
+      "v": [
+        "(2; 3)",
+        "(−∞; 3)",
+        "(2; +∞)",
+        "(−∞; 2) va (3; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Hosila f'(x) = x² − 5x + 6 = (x − 2)(x − 3). Ko'paytma musbat bo'lishi uchun ikkala qavs bir xil ishorada bo'lsin: x < 2 yoki x > 3. Javob: (−∞; 2) va (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "osish-oraligi",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#3b9fbfda"
+    },
+    {
+      "q": "f(x) = x² + 14x − 5 funksiya qaysi oraliqda kamayuvchi ekanini aniqlang.",
+      "v": [
+        "(−∞; −7)",
+        "(−7; +∞)",
+        "(−∞; 7)",
+        "(−∞; −14)"
+      ],
+      "t": 0,
+      "izoh": "Kamayish sharti f'(x) < 0 ko'rinishida yoziladi. f'(x) = 2x + 14 < 0 tengsizlikdan 2x < −14, ya'ni x < −7. Javob: (−∞; −7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kamayish-oraligi",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#74872002"
+    },
+    {
+      "q": "f(x) = 2x³ − 9x² + 12x − 4 funksiyaning kamayish oralig'ini ko'rsating.",
+      "v": [
+        "(−∞; 1)",
+        "(2; +∞)",
+        "(1; 2)",
+        "(−2; −1)"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 6x² − 18x + 12 = 6(x − 1)(x − 2). Ko'paytma manfiy bo'lishi uchun x ikkala ildiz orasida yotishi kerak. Demak kamayish oralig'i (1; 2). Javob: (1; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kamayish-oraligi",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#95acd639"
+    },
+    {
+      "q": "Bir savdo do'konida mahsulot zaxirasi x kundan keyin Z(x) = x³ − 15x² + 63x + 120 dona bo'ladi. Zaxira qaysi kunlar oralig'ida kamayib boradi?",
+      "v": [
+        "0 dan 3-kungacha",
+        "3-kundan 7-kungacha",
+        "7-kundan keyin",
+        "0 dan 7-kungacha"
+      ],
+      "t": 1,
+      "izoh": "Zaxira kamayishi Z'(x) < 0 shartiga mos keladi. Z'(x) = 3x² − 30x + 63 = 3(x − 3)(x − 7). Bu ifoda 3 < x < 7 oraliqda manfiy. Javob: 3-kundan 7-kungacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kamayish-oraligi",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#30516557"
+    },
+    {
+      "q": "f(x) = x³ − 3x² + 3x − 8 funksiyaning kamayishi haqida quyidagi mulohazalardan qaysi biri to'g'ri?",
+      "v": [
+        "Kamayish oralig'i (−∞; 1)",
+        "Kamayish oralig'i (1; +∞)",
+        "Funksiyaning kamayish oralig'i yo'q",
+        "Kamayish oralig'i (0; 1)"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 3x² − 6x + 3 = 3(x − 1)² bo'lib, u hech qachon manfiy emas. Demak f'(x) < 0 sharti hech qayerda bajarilmaydi va funksiya kamayadigan oraliq mavjud emas. Javob: kamayish oralig'i yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kamayish-oraligi",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#59d944be"
+    },
+    {
+      "q": "f(x) = −x² + 8x + 1 funksiyaning maksimum nuqtasini toping.",
+      "v": [
+        "x = 4",
+        "x = −4",
+        "x = 8",
+        "x = 17"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = −2x + 8. Statsionar nuqta: −2x + 8 = 0, ya'ni x = 4. Hosila bu nuqtadan o'tganda musbatdan manfiyga o'zgaradi, demak x = 4 maksimum nuqtasi. Javob: x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maksimum-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#0ac7e5c3"
+    },
+    {
+      "q": "f(x) = x³ − 3x² − 9x + 4 funksiyaning maksimum nuqtasi qaysi?",
+      "v": [
+        "x = 3",
+        "x = 1",
+        "x = 9",
+        "x = −1"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 3x² − 6x − 9 = 3(x + 1)(x − 3). Statsionar nuqtalar −1 va 3. x = −1 dan o'tganda hosila musbatdan manfiyga o'zgaradi, bu maksimum. x = 3 esa minimum nuqtasi. Javob: x = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maksimum-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#b7be5f95"
+    },
+    {
+      "q": "Guliston fermerlari gektariga x kg o'g'it solganda hosildorlik H(x) = 60 + 12x − 0,2x² sentnerni tashkil etadi. Hosildorlik eng yuqori bo'ladigan o'g'it miqdorini toping.",
+      "v": [
+        "60 kg",
+        "12 kg",
+        "24 kg",
+        "30 kg"
+      ],
+      "t": 3,
+      "izoh": "Hosildorlik hosilasi H'(x) = 12 − 0,4x. Uni nolga tenglaymiz: 0,4x = 12, bundan x = 30. Hosila musbatdan manfiyga o'tgani uchun bu maksimum nuqta. Javob: 30 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maksimum-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#6b85e69b"
+    },
+    {
+      "q": "f(x) = x(6 − x)² funksiyaning (0; 6) oralig'idagi maksimum nuqtasini aniqlang.",
+      "v": [
+        "x = 3",
+        "x = 4",
+        "x = 2",
+        "x = 6"
+      ],
+      "t": 2,
+      "izoh": "Qavsni ochamiz: f(x) = x³ − 12x² + 36x. Hosila f'(x) = 3x² − 24x + 36 = 3(x − 2)(x − 6). (0; 6) oralig'ida x = 2 da hosila musbatdan manfiyga o'zgaradi. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maksimum-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#e999d073"
+    },
+    {
+      "q": "Sardor darsda f(x) = 12x − x³ funksiyaning maksimum nuqtasini izlamoqda. Qaysi javob to'g'ri bo'ladi?",
+      "v": [
+        "x = −2",
+        "x = 4",
+        "x = 16",
+        "x = 2"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 12 − 3x² = 3(2 − x)(2 + x). Hosila x = 2 da musbatdan manfiyga o'tadi, demak maksimum nuqta x = 2. x = −2 esa minimum nuqtasi. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maksimum-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#162af380"
+    },
+    {
+      "q": "f(x) = x² − 12x + 40 funksiyaning minimum nuqtasini ko'rsating.",
+      "v": [
+        "x = 6",
+        "x = −6",
+        "x = 12",
+        "x = 4"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 2x − 12 bo'lib, u x = 6 da nolga aylanadi. Chapda hosila manfiy, o'ngda musbat, demak x = 6 minimum nuqtasi. Javob: x = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "minimum-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#0c7b0955"
+    },
+    {
+      "q": "f(x) = x³ + 6x² + 9x − 2 funksiyaning minimum nuqtasi qayerda joylashgan?",
+      "v": [
+        "x = −3",
+        "x = −1",
+        "x = 1",
+        "x = 3"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 3x² + 12x + 9 = 3(x + 1)(x + 3). Statsionar nuqtalar −3 va −1. x = −1 da hosila manfiydan musbatga o'tadi, demak bu minimum nuqta. Javob: x = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "minimum-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#d4c0278c"
+    },
+    {
+      "q": "Bir korxonada x ming dona mahsulot ishlab chiqarish xarajati C(x) = x² − 18x + 145 million so'mni tashkil qiladi. Xarajat eng kam bo'ladigan ishlab chiqarish hajmini toping.",
+      "v": [
+        "9 ming dona",
+        "18 ming dona",
+        "64 ming dona",
+        "4,5 ming dona"
+      ],
+      "t": 0,
+      "izoh": "Xarajat funksiyasining hosilasi C'(x) = 2x − 18. Nolga tenglasak, x = 9 chiqadi. Hosila chapda manfiy, o'ngda musbat, demak bu minimum nuqta. Javob: 9 ming dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "minimum-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#4b0dcfda"
+    },
+    {
+      "q": "Qutining balandligi x dm bo'lganda unga ketadigan material sarfi f(x) = x + 4/x m² ga teng bo'ladi. Sarf eng kam bo'ladigan balandlikni toping.",
+      "v": [
+        "4 dm",
+        "0,5 dm",
+        "2 dm",
+        "8 dm"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 1 − 4/x². Uni nolga tenglaymiz: x² = 4, musbat yechim x = 2. x < 2 da hosila manfiy, x > 2 da musbat, demak bu minimum nuqta. Javob: 2 dm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "minimum-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#6b6b344e"
+    },
+    {
+      "q": "f(x) = x⁴ − 4x³ + 10 funksiyaning minimum nuqtasi qaysi va nima uchun x = 0 ekstremum bo'lmaydi?",
+      "v": [
+        "x = 3; x = 0 da hosila ishorasi o'zgarmaydi",
+        "x = 0; x = 3 da hosila ishorasi o'zgarmaydi",
+        "x = 3 va x = 0 ikkalasi ham minimum",
+        "Funksiyaning ekstremumi yo'q"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 4x³ − 12x² = 4x²(x − 3). 4x² ko'paytuvchi hamma joyda nomanfiy, shuning uchun hosilaning ishorasi faqat (x − 3) ga bog'liq. x < 3 da hosila manfiy, x > 3 da musbat, demak x = 3 minimum. x = 0 da hosila nolga aylansa ham ishora o'zgarmaydi. Javob: x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "minimum-nuqta-topish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#f628238a"
+    },
+    {
+      "q": "f(x) = x² − 6x + 11 funksiyaning minimum qiymatini hisoblang.",
+      "v": [
+        "2",
+        "3",
+        "11",
+        "−2"
+      ],
+      "t": 0,
+      "izoh": "Hosila f'(x) = 2x − 6 nolga aylanganda x = 3 chiqadi. Bu minimum nuqta, chunki hosila manfiydan musbatga o'tadi. Minimum qiymat f(3) = 9 − 18 + 11 = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekstremum-qiymati",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#0dd6dbe6"
+    },
+    {
+      "q": "f(x) = x³ − 3x + 5 funksiyaning maksimum qiymati nechaga teng?",
+      "v": [
+        "3",
+        "7",
+        "5",
+        "−1"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 3x² − 3 = 3(x − 1)(x + 1). x = −1 da hosila musbatdan manfiyga o'zgaradi, demak u maksimum nuqta. Maksimum qiymat f(−1) = −1 + 3 + 5 = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstremum-qiymati",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#57fb4e41"
+    },
+    {
+      "q": "Toshkentda taksi haydovchisining kunlik sof daromadi D(x) = 40x − x² ming so'm, bu yerda x — kunlik reyslar soni. Uning eng yuqori daromadi qanchaga teng?",
+      "v": [
+        "800 ming so'm",
+        "20 ming so'm",
+        "40 ming so'm",
+        "400 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "D'(x) = 40 − 2x. Nolga tenglasak x = 20 reys chiqadi. Bu nuqtada hosila musbatdan manfiyga o'tadi, demak daromad maksimal. D(20) = 800 − 400 = 400. Javob: 400 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekstremum-qiymati",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#fa03aa22"
+    },
+    {
+      "q": "f(x) = x³ − 6x² + 9x + 1 funksiyaning maksimum va minimum qiymatlari ayirmasi nechaga teng?",
+      "v": [
+        "6",
+        "2",
+        "4",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3). x = 1 maksimum, x = 3 minimum nuqta. f(1) = 5 va f(3) = 1. Ularning ayirmasi 5 − 1 = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremum-qiymati",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#3b8b2c92"
+    },
+    {
+      "q": "Nodira f(x) = 2x + 18/x funksiyaning x > 0 sohadagi eng kichik qiymatini topmoqchi. To'g'ri javob qanday?",
+      "v": [
+        "9",
+        "20",
+        "6",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 2 − 18/x². Hosila nolga aylanganda x² = 9, ya'ni x = 3. Chapda hosila manfiy, o'ngda musbat — bu minimum. f(3) = 6 + 6 = 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstremum-qiymati",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#92f4b1eb"
+    },
+    {
+      "q": "f(x) = x³ + 5x + 2 funksiya nechta ekstremum nuqtasiga ega?",
+      "v": [
+        "Bitta",
+        "Ikkita",
+        "Nolta",
+        "Uchta"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 3x² + 5. Kvadrat had nomanfiy bo'lgani uchun hosila hamma joyda musbat. Hosila ishorasini umuman o'zgartirmasa, ekstremum bo'lmaydi. Javob: nolta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekstremumlar-soni",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#be5f2a2e"
+    },
+    {
+      "q": "f(x) = 3x⁵ − 5x³ funksiyaning ekstremum nuqtalari soni nechta?",
+      "v": [
+        "Ikkita",
+        "Uchta",
+        "Bitta",
+        "To'rtta"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 15x⁴ − 15x² = 15x²(x − 1)(x + 1). Hosila x = −1, x = 0 va x = 1 da nolga aylanadi. Lekin x = 0 atrofida 15x² ishorani o'zgartirmaydi, shuning uchun u ekstremum emas. Faqat x = −1 va x = 1 ekstremum beradi. Javob: ikkita.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstremumlar-soni",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#64ed4762"
+    },
+    {
+      "q": "Suv omborida suv sathi h(t) = t³ − 6t² + 12t + 40 metr formula bilan o'zgaradi. Sath o'zgarishida nechta ekstremum kuzatiladi?",
+      "v": [
+        "Bitta",
+        "Ikkita",
+        "Ekstremum kuzatilmaydi",
+        "Uchta"
+      ],
+      "t": 2,
+      "izoh": "h'(t) = 3t² − 12t + 12 = 3(t − 2)². To'la kvadrat nomanfiy, u faqat t = 2 da nolga aylanadi va ishorasini o'zgartirmaydi. Demak sath doimo o'sib boradi, ekstremum yo'q. Javob: ekstremum kuzatilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstremumlar-soni",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#544f0c0d"
+    },
+    {
+      "q": "f(x) = x⁴ − 2x² + 3 funksiyaning maksimum nuqtalari va minimum nuqtalari sonini ko'rsating.",
+      "v": [
+        "1 ta maksimum, 2 ta minimum",
+        "2 ta maksimum, 1 ta minimum",
+        "1 ta maksimum, 1 ta minimum",
+        "3 ta minimum, maksimum yo'q"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 4x³ − 4x = 4x(x − 1)(x + 1). Hosila ishorasi −1 da manfiydan musbatga, 0 da musbatdan manfiyga, 1 da yana manfiydan musbatga o'zgaradi. Demak x = 0 maksimum, x = −1 va x = 1 minimum nuqtalari. Javob: 1 ta maksimum, 2 ta minimum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremumlar-soni",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#b6bd913f"
+    },
+    {
+      "q": "Quyidagi funksiyalardan qaysi biri butun aniqlanish sohasida birorta ham ekstremumga ega emas?",
+      "v": [
+        "f(x) = x³ − 4x",
+        "f(x) = x⁴ − 4x",
+        "f(x) = x³ + 4x",
+        "f(x) = 4x − x²"
+      ],
+      "t": 2,
+      "izoh": "Har birining hosilasini tekshiramiz. (x³ + 4x)' = 3x² + 4 — doimo musbat, demak ekstremum yo'q. Qolgan uchtasida hosila ishorasini o'zgartiradi: x³ − 4x da ikkita, x⁴ − 4x da bitta, 4x − x² da bitta ekstremum bor. Javob: f(x) = x³ + 4x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstremumlar-soni",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#c6fc7de7"
+    },
+    {
+      "q": "f(x) = x³ + ax² + 3x − 7 funksiya butun son o'qida o'suvchi bo'lishi uchun a parametr qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "−3 ≤ a ≤ 3",
+        "a ≥ 3",
+        "a ≤ −3 yoki a ≥ 3",
+        "−9 ≤ a ≤ 9"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² + 2ax + 3. O'suvchi bo'lishi uchun bu kvadrat uchhad barcha x da nomanfiy bo'lsin, ya'ni D ≤ 0. D = 4a² − 4·3·3 = 4a² − 36 ≤ 0, bundan a² ≤ 9. Javob: −3 ≤ a ≤ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlik-parametr-shart",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#4dd0713a"
+    },
+    {
+      "q": "f(x) = x³ − 3ax + 8 funksiyaning ekstremumi bo'lmasligi uchun a ning qanday qiymatlari mos keladi?",
+      "v": [
+        "a ≥ 0",
+        "a ≤ 0",
+        "a > 3",
+        "a ≤ 3"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 3x² − 3a = 3(x² − a). Ekstremum bo'lmasligi uchun hosila ishorasini o'zgartirmasligi kerak. a > 0 bo'lsa x = ±√a nuqtalarda ishora o'zgaradi. Demak a ≤ 0 bo'lishi shart. Javob: a ≤ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monotonlik-parametr-shart",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#b0ec6161"
+    },
+    {
+      "q": "f(x) = x³ + 3x² + mx + 4 funksiya (−1; 2) oralig'ida o'suvchi bo'lishi uchun m ning eng kichik qiymati qanday?",
+      "v": [
+        "0",
+        "−3",
+        "3",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 3x² + 6x + m. O'suvchilik uchun shu oraliqda f'(x) ≥ 0 bo'lsin. g(x) = 3x² + 6x ifodaning [−1; 2] dagi eng kichik qiymati x = −1 da: 3 − 6 = −3. Demak m ≥ 3 bo'lishi kerak. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monotonlik-parametr-shart",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#751a37f0"
+    },
+    {
+      "q": "f(x) = (a − 2)x³ + 6x + 1 funksiya butun son o'qida o'suvchi bo'ladigan a qiymatlari to'plamini toping.",
+      "v": [
+        "a > 2",
+        "a ≥ 2",
+        "a ≤ 2",
+        "a ≠ 2"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 3(a − 2)x² + 6. a = 2 bo'lsa f'(x) = 6 > 0 — funksiya o'suvchi. a > 2 bo'lsa hosila yana musbat. a < 2 bo'lsa katta |x| larda 3(a − 2)x² had hosilani manfiy qiladi. Javob: a ≥ 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlik-parametr-shart",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#2fed2739"
+    },
+    {
+      "q": "f(x) = x³ + ax² − 9x + 4 funksiya x = 1 nuqtada ekstremumga erishsa, a nechaga teng?",
+      "v": [
+        "6",
+        "−3",
+        "9",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Ekstremum nuqtada hosila nolga teng bo'ladi. f'(x) = 3x² + 2ax − 9 va f'(1) = 3 + 2a − 9 = 0. Bundan 2a = 6, ya'ni a = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtada-ekstremum-parametr",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#c751e164"
+    },
+    {
+      "q": "Muhandis loyihasidagi y(x) = x³ − 6x² + bx + 2 egri chiziq x = 1 nuqtada ekstremumga ega bo'lishi kerak. b ning qiymati qanday?",
+      "v": [
+        "12",
+        "−9",
+        "9",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Ekstremum shartidan y'(1) = 0 kelib chiqadi. y'(x) = 3x² − 12x + b, demak 3 − 12 + b = 0. Bundan b = 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtada-ekstremum-parametr",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#0e40a81d"
+    },
+    {
+      "q": "f(x) = x³ + ax² + bx + 1 funksiya x = −1 nuqtada maksimumga, x = 3 nuqtada minimumga erishadi. a + b yig'indisi nechaga teng?",
+      "v": [
+        "12",
+        "−6",
+        "−9",
+        "−12"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 3x² + 2ax + b ning ildizlari −1 va 3 bo'ladi. Viyet bo'yicha ildizlar yig'indisi −2a/3 = 2, bundan a = −3. Ildizlar ko'paytmasi b/3 = −3, bundan b = −9. Demak a + b = −12. Javob: −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqtada-ekstremum-parametr",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#93d08d0b"
+    },
+    {
+      "q": "Fermer suv sarfini S(t) = t³ − 12t² + kt + 30 model bilan baholaydi va model t = 2 soatda ekstremumga ega bo'lishini xohlaydi. k qanday bo'lishi kerak?",
+      "v": [
+        "24",
+        "36",
+        "48",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "Ekstremum shartiga ko'ra S'(2) = 0 bo'lishi kerak. S'(t) = 3t² − 24t + k, demak 3·4 − 24·2 + k = 0. Bundan 12 − 48 + k = 0 va k = 36. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtada-ekstremum-parametr",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#2c8f0147"
+    },
+    {
+      "q": "Ma'lumki, f'(x) < 0 tengsizlik (−∞; 5) oraliqda, f'(x) > 0 esa (5; +∞) oraliqda bajariladi. x = 5 nuqta haqida nima deyish mumkin?",
+      "v": [
+        "Maksimum nuqta",
+        "Minimum nuqta",
+        "Egilish nuqtasi",
+        "Ekstremum emas"
+      ],
+      "t": 1,
+      "izoh": "Hosila x = 5 dan chapda manfiy, ya'ni funksiya kamayadi, o'ngda musbat, ya'ni o'sadi. Kamayishdan o'sishga o'tish nuqtasi minimum deb ataladi. Javob: minimum nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-jadvalidan-xulosa",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#aea1ac7b"
+    },
+    {
+      "q": "Bir funksiyaning hosilasi x = −4 da nolga aylanadi va shu nuqtadan o'tganda musbatdan manfiyga o'zgaradi. Funksiyaning shu nuqtadagi holati qanday?",
+      "v": [
+        "x = −4 maksimum nuqtasi",
+        "x = −4 minimum nuqtasi",
+        "Funksiya x = −4 da uzilishga ega",
+        "x = −4 ekstremum bo'la olmaydi"
+      ],
+      "t": 0,
+      "izoh": "Hosila musbat bo'lsa funksiya o'sadi, manfiy bo'lsa kamayadi. Musbatdan manfiyga o'tish o'sishdan kamayishga o'tishni bildiradi. Bunday nuqta maksimum deyiladi. Javob: x = −4 maksimum nuqtasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-jadvalidan-xulosa",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#00c5706b"
+    },
+    {
+      "q": "Jadvalga ko'ra f'(x) ifoda (−∞; −2) da musbat, (−2; 1) da manfiy, (1; +∞) da yana musbat. Funksiyaning ekstremum nuqtalari qaysilar?",
+      "v": [
+        "x = −2 minimum, x = 1 maksimum",
+        "x = −2 maksimum, x = 1 minimum",
+        "Ikkalasi ham minimum nuqta",
+        "Ekstremum mavjud emas"
+      ],
+      "t": 1,
+      "izoh": "Hosila x = −2 da musbatdan manfiyga o'tadi — bu maksimum nuqta. x = 1 da esa manfiydan musbatga o'tadi — bu minimum nuqta. Javob: x = −2 maksimum, x = 1 minimum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-jadvalidan-xulosa",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#b62817c9"
+    },
+    {
+      "q": "Uzluksiz funksiyaning hosilasi (0; 3) da manfiy, (3; 7) da ham manfiy va x = 3 da nolga teng. Bu funksiya haqida qaysi xulosa to'g'ri?",
+      "v": [
+        "x = 3 minimum nuqtasi",
+        "x = 3 maksimum nuqtasi",
+        "x = 3 ekstremum emas, funksiya (0; 7) da kamayadi",
+        "Funksiya (0; 7) oralig'ida o'sadi"
+      ],
+      "t": 2,
+      "izoh": "Ekstremum uchun hosila ishorasi o'zgarishi shart. Bu yerda hosila ikkala tomonda ham manfiy, faqat bitta nuqtada nolga aylanadi. Demak funksiya butun (0; 7) oraliqda kamayadi va x = 3 ekstremum emas. Javob: x = 3 ekstremum emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-jadvalidan-xulosa",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#a465b31e"
+    },
+    {
+      "q": "Funksiyaning hosilasi f'(x) = (x − 6)(x + 2) ko'rinishida berilgan. Shu funksiyaning minimum nuqtasini toping.",
+      "v": [
+        "x = 6",
+        "x = −2",
+        "x = 2",
+        "x = −6"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = (x − 6)(x + 2) ifoda x = −2 va x = 6 da nolga aylanadi. x = 6 dan chapda ko'paytma manfiy, o'ngda musbat. Manfiydan musbatga o'tish minimumni bildiradi. Javob: x = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-korinishidan-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#17df4eb6"
+    },
+    {
+      "q": "f'(x) = −3(x − 1)(x − 8) bo'lsa, funksiyaning maksimum nuqtasi qaysi va u qanday aniqlanadi?",
+      "v": [
+        "x = 1",
+        "x = 8",
+        "x = 3",
+        "x = 4,5"
+      ],
+      "t": 1,
+      "izoh": "Minus ishora tufayli hosilaning ishorasi teskari bo'ladi: x < 1 da manfiy, 1 < x < 8 da musbat, x > 8 da yana manfiy. Musbatdan manfiyga o'tish x = 8 da ro'y beradi, demak u maksimum nuqta. Javob: x = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-korinishidan-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#cb7aa26a"
+    },
+    {
+      "q": "Hosilasi f'(x) = x²(x − 5) bo'lgan funksiyaning ekstremum nuqtalari sonini aniqlang.",
+      "v": [
+        "Bitta",
+        "Ikkita",
+        "Uchta",
+        "Birorta ham yo'q"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = x²(x − 5) ifoda x = 0 va x = 5 da nolga aylanadi. x² ko'paytuvchi doim nomanfiy, shuning uchun x = 0 da ishora o'zgarmaydi. Faqat x = 5 da hosila manfiydan musbatga o'tadi. Javob: bitta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-korinishidan-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#91f9affa"
+    },
+    {
+      "q": "f'(x) = (x + 3)²(x − 1)(x − 4) berilgan bo'lsa, funksiya qaysi oraliqda kamayadi?",
+      "v": [
+        "(−3; 1)",
+        "(−∞; −3)",
+        "(1; 4)",
+        "(−3; 4)"
+      ],
+      "t": 2,
+      "izoh": "(x + 3)² ko'paytuvchi nomanfiy bo'lgani uchun hosilaning ishorasi (x − 1)(x − 4) ga bog'liq. Bu ko'paytma 1 < x < 4 oraliqda manfiy. Demak funksiya (1; 4) oralig'ida kamayadi. Javob: (1; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-korinishidan-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#3b283fa9"
+    },
+    {
+      "q": "Andijonlik tadbirkor bir dona buyumni p ming so'mdan sotganda kunlik foydasi F(p) = 90p − 3p² ming so'm bo'ladi. Foyda maksimal bo'lishi uchun narx qancha bo'lsin?",
+      "v": [
+        "30 ming so'm",
+        "15 ming so'm",
+        "90 ming so'm",
+        "45 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "F'(p) = 90 − 6p. Nolga tenglaymiz: 6p = 90, ya'ni p = 15. Hosila bu nuqtada musbatdan manfiyga o'tadi, demak foyda maksimal. Javob: 15 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-foyda-maksimum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#f8903a57"
+    },
+    {
+      "q": "Reklamaga x million so'm sarflaganda korxonaning oylik foydasi F(x) = 27x − x³ + 50 million so'mga teng bo'ladi. Foyda maksimal bo'ladigan reklama xarajatini toping.",
+      "v": [
+        "9 million so'm",
+        "27 million so'm",
+        "3 million so'm",
+        "6 million so'm"
+      ],
+      "t": 2,
+      "izoh": "F'(x) = 27 − 3x² = 3(3 − x)(3 + x). Musbat sohada hosila x = 3 da musbatdan manfiyga o'tadi. Demak eng katta foyda x = 3 da erishiladi. Javob: 3 million so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-foyda-maksimum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#4d3ef4d1"
+    },
+    {
+      "q": "Chirchiqdagi zavod bir oyda x tonna mahsulot sotganda daromadi D(x) = 120x − 2x² million so'm bo'ladi. Maksimal daromad qancha million so'mga teng?",
+      "v": [
+        "3600",
+        "30",
+        "900",
+        "1800"
+      ],
+      "t": 3,
+      "izoh": "D'(x) = 120 − 4x. Nolga tenglaymiz va x = 30 tonna chiqadi. Bu nuqtada hosila musbatdan manfiyga o'tadi. D(30) = 3600 − 1800 = 1800. Javob: 1800 million so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-foyda-maksimum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#89b80dde"
+    },
+    {
+      "q": "Turistik firma guruhda 20 kishi bo'lsa har biridan 500 ming so'm oladi. Har bir qo'shimcha odam uchun narx hamma uchun 10 ming so'mga kamayadi. Daromad maksimal bo'lishi uchun guruhda necha kishi bo'lsin?",
+      "v": [
+        "20 kishi",
+        "30 kishi",
+        "35 kishi",
+        "25 kishi"
+      ],
+      "t": 2,
+      "izoh": "Qo'shimcha odam sonini x deb olamiz. Daromad D(x) = (20 + x)(500 − 10x) = 10000 + 300x − 10x². D'(x) = 300 − 20x nolga aylanganda x = 15. Demak guruhda 20 + 15 = 35 kishi bo'lishi kerak. Javob: 35 kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-foyda-maksimum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#579f9422"
+    },
+    {
+      "q": "Bog'da 40 tup olma ko'chati bo'lsa, har biri 500 tadan meva beradi. Qo'shimcha ekilgan har bir tup har bir daraxtning hosilini 5 tadan kamaytiradi. Umumiy hosil eng ko'p bo'lishi uchun jami necha tup bo'lsin?",
+      "v": [
+        "60 tup",
+        "40 tup",
+        "50 tup",
+        "70 tup"
+      ],
+      "t": 3,
+      "izoh": "Qo'shimcha tup sonini x bilan belgilaymiz. Umumiy hosil H(x) = (40 + x)(500 − 5x) = 20000 + 300x − 5x². H'(x) = 300 − 10x nolga aylanganda x = 30. Demak jami 40 + 30 = 70 tup bo'ladi. Javob: 70 tup.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-foyda-maksimum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#04abec1d"
+    },
+    {
+      "q": "Bir sexda x dona buyum tayyorlash xarajati C(x) = 0,5x² − 20x + 350 ming so'mni tashkil qiladi. Xarajat minimal bo'ladigan buyum sonini aniqlang.",
+      "v": [
+        "20 dona",
+        "40 dona",
+        "10 dona",
+        "350 dona"
+      ],
+      "t": 0,
+      "izoh": "C'(x) = x − 20. Hosila nolga aylanganda x = 20 chiqadi. Chapda hosila manfiy, o'ngda musbat, demak bu minimum nuqta. Javob: 20 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-xarajat-minimum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#63641223"
+    },
+    {
+      "q": "Yuk mashinasining tezligi v km/soat bo'lganda bir kilometr yo'lga sarflanadigan yoqilg'i Y(v) = v/200 + 18/v litrni tashkil qiladi. Yoqilg'i sarfi eng kam bo'ladigan tezlikni toping.",
+      "v": [
+        "90 km/soat",
+        "60 km/soat",
+        "80 km/soat",
+        "40 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Y'(v) = 1/200 − 18/v². Nolga tenglaymiz: v² = 18·200 = 3600, bundan v = 60. Tezlik 60 dan kichik bo'lsa hosila manfiy, katta bo'lsa musbat — demak minimum. Javob: 60 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-xarajat-minimum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#bda89af1"
+    },
+    {
+      "q": "Omborda x tonna g'alla saqlashning oylik xarajati C(x) = 2x + 800/x + 15 million so'mga teng. Xarajat eng kam bo'ladigan saqlash hajmini toping.",
+      "v": [
+        "40 tonna",
+        "400 tonna",
+        "20 tonna",
+        "10 tonna"
+      ],
+      "t": 2,
+      "izoh": "C'(x) = 2 − 800/x². Nolga tenglasak x² = 400, ya'ni x = 20. Hosila x < 20 da manfiy, x > 20 da musbat, demak xarajat x = 20 da eng kam bo'ladi. Javob: 20 tonna.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-xarajat-minimum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#51d5bf20"
+    },
+    {
+      "q": "Bir firma yetkazib berishga jami T(x) = x² − 24x + 200 million so'm sarflaydi, bu yerda x — kunlik yetkazmalar soni. Xarajat minimal bo'lgandagi qiymat qancha?",
+      "v": [
+        "12 million so'm",
+        "56 million so'm",
+        "200 million so'm",
+        "144 million so'm"
+      ],
+      "t": 1,
+      "izoh": "T'(x) = 2x − 24 nolga aylanganda x = 12 chiqadi. Bu minimum nuqta, chunki hosila manfiydan musbatga o'tadi. T(12) = 144 − 288 + 200 = 56. Javob: 56 million so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-xarajat-minimum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#5cdbce7f"
+    },
+    {
+      "q": "Moddiy nuqta to'g'ri chiziq bo'ylab s(t) = t³ − 9t² + 24t qonun bo'yicha harakatlanadi. Uning koordinatasi qaysi paytda mahalliy maksimumga erishadi?",
+      "v": [
+        "t = 2 s",
+        "t = 4 s",
+        "t = 3 s",
+        "t = 6 s"
+      ],
+      "t": 0,
+      "izoh": "Tezlik s'(t) = 3t² − 18t + 24 = 3(t − 2)(t − 4). Hosila t = 2 da musbatdan manfiyga o'tadi, demak koordinata shu paytda mahalliy maksimumga erishadi. Javob: t = 2 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harakat-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#3afc77bf"
+    },
+    {
+      "q": "Yuqoriga otilgan toshning balandligi h(t) = 30t − 5t² metr bilan ifodalanadi. Tosh eng yuqori nuqtaga qaysi soniyada chiqadi?",
+      "v": [
+        "6 s",
+        "3 s",
+        "5 s",
+        "45 s"
+      ],
+      "t": 1,
+      "izoh": "Balandlik hosilasi h'(t) = 30 − 10t tezlikni beradi. Eng yuqori nuqtada tezlik nolga teng: 30 − 10t = 0, bundan t = 3. Javob: 3 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-harakat-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#64050906"
+    },
+    {
+      "q": "Avtobusning shahardan uzoqlashishi d(t) = 2t³ − 15t² + 24t + 30 km bilan beriladi. Avtobus qaysi paytda shahardan mahalliy eng uzoq masofada bo'ladi va bu masofa qancha?",
+      "v": [
+        "t = 4 soat, 14 km",
+        "t = 1 soat, 21 km",
+        "t = 1 soat, 41 km",
+        "t = 4 soat, 41 km"
+      ],
+      "t": 2,
+      "izoh": "d'(t) = 6t² − 30t + 24 = 6(t − 1)(t − 4). t = 1 da hosila musbatdan manfiyga o'tadi, demak mahalliy maksimum shu paytda. d(1) = 2 − 15 + 24 + 30 = 41. Javob: t = 1 soat, 41 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-harakat-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#be21a0fa"
+    },
+    {
+      "q": "Dronning yerdan balandligi H(t) = −t³ + 18t² − 81t + 120 metr qonun bilan o'zgaradi, bu yerda t — uchish boshlangandan keyingi daqiqalar soni. Dron qaysi paytda mahalliy minimumga tushadi?",
+      "v": [
+        "t = 9 daq",
+        "t = 6 daq",
+        "t = 12 daq",
+        "t = 3 daq"
+      ],
+      "t": 3,
+      "izoh": "H'(t) = −3t² + 36t − 81 = −3(t − 3)(t − 9). Minus ishora tufayli t < 3 da hosila manfiy, 3 < t < 9 da musbat. Manfiydan musbatga o'tish t = 3 da yuz beradi, demak dron mahalliy minimumga shu paytda tushadi. Javob: t = 3 daq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harakat-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#fde66c27"
+    },
+    {
+      "q": "f(x) = (x² + 9)/x funksiyaning x > 0 sohadagi ekstremum nuqtasini va uning turini aniqlang.",
+      "v": [
+        "x = 3, minimum",
+        "x = 3, maksimum",
+        "x = 9, minimum",
+        "x = 6, minimum"
+      ],
+      "t": 0,
+      "izoh": "Ifodani soddalashtiramiz: f(x) = x + 9/x. Hosilasi f'(x) = 1 − 9/x² bo'lib, u x = 3 da nolga aylanadi. x < 3 da hosila manfiy, x > 3 da musbat — demak minimum. Javob: x = 3, minimum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrli-funksiya-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#fc76a83b"
+    },
+    {
+      "q": "Kanaldagi suv oqimining tezligi v(x) = x/(x² + 4) m/s formula bilan beriladi, bu yerda x — chetdan metrda o'lchangan masofa. Tezlik maksimal bo'ladigan masofani toping.",
+      "v": [
+        "4 m",
+        "2 m",
+        "1 m",
+        "0,25 m"
+      ],
+      "t": 1,
+      "izoh": "Bo'linma hosilasi qoidasiga ko'ra v'(x) = (4 − x²)/(x² + 4)². Maxraj doim musbat, shuning uchun ishora 4 − x² ga bog'liq. U x = 2 da musbatdan manfiyga o'tadi. Javob: 2 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-funksiya-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#f35c63db"
+    },
+    {
+      "q": "f(x) = (x − 1)/(x + 2) funksiyaning ekstremumlari haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "x = −2 da minimumga ega",
+        "Ekstremumi yo'q, har bir oraliqda o'suvchi",
+        "x = 1 da maksimumga ega",
+        "Ekstremumi yo'q, har bir oraliqda kamayuvchi"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = ((x + 2) − (x − 1))/(x + 2)² = 3/(x + 2)². Surat musbat, maxraj kvadrat, demak hosila aniqlanish sohasida doim musbat. Shuning uchun ekstremum yo'q va funksiya (−∞; −2) hamda (−2; +∞) oraliqlarida o'suvchi. Javob: ekstremumi yo'q, har bir oraliqda o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-funksiya-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#56dea66d"
+    },
+    {
+      "q": "Ishlab chiqarishda bir dona mahsulotga to'g'ri keladigan o'rtacha xarajat O(x) = (x² + 400)/x ming so'm. O'rtacha xarajat eng kam bo'lgandagi mahsulot soni va o'sha xarajat qancha?",
+      "v": [
+        "20 dona, 20 ming so'm",
+        "40 dona, 20 ming so'm",
+        "20 dona, 40 ming so'm",
+        "10 dona, 50 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Ifodani O(x) = x + 400/x ko'rinishda yozamiz. O'(x) = 1 − 400/x² nolga aylanganda x² = 400, ya'ni x = 20. Bu minimum nuqta. O(20) = 20 + 20 = 40. Javob: 20 dona, 40 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-funksiya-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#67ac1de6"
+    },
+    {
+      "q": "f(x) = x·e^(−x) funksiyaning maksimum nuqtasini toping.",
+      "v": [
+        "x = 1",
+        "x = 0",
+        "x = −1",
+        "x = e"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytma hosilasi: f'(x) = e^(−x) − x·e^(−x) = e^(−x)(1 − x). Ko'rsatkichli ko'paytuvchi doim musbat, shuning uchun ishora (1 − x) ga bog'liq. x = 1 da u musbatdan manfiyga o'tadi — maksimum. Javob: x = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-funksiya-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#537f2b04"
+    },
+    {
+      "q": "f(x) = e^x − 3x funksiyaning ekstremum nuqtasini va uning turini aniqlang.",
+      "v": [
+        "x = ln3, maksimum",
+        "x = ln3, minimum",
+        "x = 3, minimum",
+        "x = e³, minimum"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = e^x − 3. Uni nolga tenglaymiz: e^x = 3, bundan x = ln3. Chapda hosila manfiy, o'ngda musbat, demak bu minimum nuqta. Javob: x = ln3, minimum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-funksiya-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#ac80b7e4"
+    },
+    {
+      "q": "Dori moddasining qondagi miqdori C(t) = 8t·e^(−0,5t) mg/l bilan ifodalanadi, bu yerda t — qabuldan keyingi soatlar. Modda miqdori eng yuqori bo'ladigan vaqtni toping.",
+      "v": [
+        "4 soat",
+        "0,5 soat",
+        "8 soat",
+        "2 soat"
+      ],
+      "t": 3,
+      "izoh": "C'(t) = 8e^(−0,5t)(1 − 0,5t). Ko'rsatkichli ko'paytuvchi musbat, shuning uchun 1 − 0,5t = 0 shartdan t = 2 chiqadi. Bu nuqtada hosila musbatdan manfiyga o'tadi, demak miqdor maksimal. Javob: 2 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-funksiya-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#a361e097"
+    },
+    {
+      "q": "f(x) = x²·e^x funksiyaning ekstremum nuqtalari qaysilar va ular qanday turga kiradi?",
+      "v": [
+        "x = −2 maksimum, x = 0 minimum",
+        "x = −2 minimum, x = 0 maksimum",
+        "Faqat x = 0 minimum nuqtasi bor",
+        "Ekstremum nuqtasi yo'q"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 2x·e^x + x²·e^x = x·e^x·(x + 2). e^x musbat, shuning uchun ishora x(x + 2) ga bog'liq. x = −2 da musbatdan manfiyga (maksimum), x = 0 da manfiydan musbatga (minimum) o'tadi. Javob: x = −2 maksimum, x = 0 minimum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-funksiya-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#38e1ba00"
+    },
+    {
+      "q": "f(x) = x − ln x funksiyaning ekstremum nuqtasini va turini toping.",
+      "v": [
+        "x = 1, minimum",
+        "x = 1, maksimum",
+        "x = e, minimum",
+        "x = 2, minimum"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi x > 0. f'(x) = 1 − 1/x nolga aylanganda x = 1 chiqadi. Nol bilan bir orasida hosila manfiy, birdan katta x larda musbat, demak minimum. Javob: x = 1, minimum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmli-funksiya-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#451a817a"
+    },
+    {
+      "q": "f(x) = x·ln x funksiya qaysi nuqtada minimumga erishadi?",
+      "v": [
+        "x = e",
+        "x = 1/e",
+        "x = 1",
+        "x = e²"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = ln x + 1 ko'rinishida bo'ladi. Nolga tenglaymiz: ln x = −1, bundan x = 1/e. Chapda hosila manfiy, o'ngda musbat, shuning uchun bu minimum nuqta. Javob: x = 1/e.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmli-funksiya-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#5b8ba419"
+    },
+    {
+      "q": "f(x) = ln x − x/4 funksiyaning maksimum qiymatini hisoblang.",
+      "v": [
+        "ln4 + 1",
+        "4 − ln4",
+        "1 − ln4",
+        "ln4 − 1"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi x > 0. f'(x) = 1/x − 1/4 nolga aylanganda x = 4. Hosila musbatdan manfiyga o'tgani uchun bu maksimum nuqta. Maksimum qiymat f(4) = ln4 − 4/4 = ln4 − 1. Javob: ln4 − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmli-funksiya-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#07af2b9e"
+    },
+    {
+      "q": "Tadqiqotda foydali ish koeffitsienti K(x) = 20ln x − 2x ko'rinishda modellashtirilgan, bu yerda x — sarflangan resurs birligi. Koeffitsient maksimal bo'ladigan x ni toping.",
+      "v": [
+        "20",
+        "10",
+        "5",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "K'(x) = 20/x − 2. Nolga tenglaymiz: 20/x = 2, bundan x = 10. Hosila x < 10 da musbat, x > 10 da manfiy — demak maksimum. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmli-funksiya-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#af77d052"
+    },
+    {
+      "q": "f(x) = 2sin x + x funksiyaning [0; 2π] kesmadagi maksimum nuqtasini toping.",
+      "v": [
+        "x = 2π/3",
+        "x = 4π/3",
+        "x = π/3",
+        "x = π"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 2cos x + 1. Nolga tenglaymiz: cos x = −1/2, bundan x = 2π/3 va x = 4π/3. x = 2π/3 da hosila musbatdan manfiyga o'tadi, demak u maksimum nuqta. Javob: x = 2π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#5febceeb"
+    },
+    {
+      "q": "f(x) = sin x − cos x funksiyaning [0; π] kesmadagi maksimum nuqtasini aniqlang.",
+      "v": [
+        "x = π/4",
+        "x = 3π/4",
+        "x = π/2",
+        "x = π"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = cos x + sin x. Nolga tenglasak tg x = −1 hosil bo'ladi, [0; π] da bu x = 3π/4 ni beradi. Shu nuqtada hosila musbatdan manfiyga o'tadi. Javob: x = 3π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#ba4bd381"
+    },
+    {
+      "q": "f(x) = cos 2x + 2cos x funksiyaning [0; π] kesmasidagi minimum nuqtasini toping.",
+      "v": [
+        "x = π/3",
+        "x = π",
+        "x = 2π/3",
+        "x = π/2"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = −2sin 2x − 2sin x = −2sin x·(2cos x + 1). [0; π] da sin x ≥ 0, shuning uchun ishora −(2cos x + 1) ga bog'liq. x = 2π/3 da hosila manfiydan musbatga o'tadi. Javob: x = 2π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trigonometrik-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#7d00650f"
+    },
+    {
+      "q": "f(x) = x − 2sin x funksiyaning [0; 2π] kesmadagi minimum nuqtasini va shu nuqtadagi qiymatini ko'rsating.",
+      "v": [
+        "x = 5π/3, qiymat 5π/3 + √3",
+        "x = π/3, qiymat π/3 + √3",
+        "x = π/6, qiymat π/6 − 1",
+        "x = π/3, qiymat π/3 − √3"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 1 − 2cos x. Nolga tenglasak cos x = 1/2, [0; 2π] da x = π/3 va x = 5π/3. x = π/3 da hosila manfiydan musbatga o'tadi — minimum. f(π/3) = π/3 − 2sin(π/3) = π/3 − √3. Javob: x = π/3, qiymat π/3 − √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trigonometrik-ekstremum",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#0009e299"
+    },
+    {
+      "q": "f(x) = x^(3/2) − 3x funksiya x ≥ 0 sohada aniqlangan. Uning minimum nuqtasini toping.",
+      "v": [
+        "x = 4",
+        "x = 2",
+        "x = 9",
+        "x = 1"
+      ],
+      "t": 0,
+      "izoh": "Hosilasi f'(x) = (3/2)·√x − 3 bo'ladi. Nolga tenglasak √x = 2, ya'ni x = 4. Hosila chapda manfiy, o'ngda musbat — demak minimum nuqta. Javob: x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-modulli-monotonlik",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#5a952aaa"
+    },
+    {
+      "q": "f(x) = √(x² + 6x + 13) funksiyaning minimum nuqtasini aniqlang.",
+      "v": [
+        "x = 3",
+        "x = 13",
+        "x = −6",
+        "x = −3"
+      ],
+      "t": 3,
+      "izoh": "Ildiz ostidagi ifodani to'la kvadratga keltiramiz: x² + 6x + 13 = (x + 3)² + 4. Hosila f'(x) = (x + 3)/√(x² + 6x + 13) bo'lib, u x = −3 da nolga aylanadi va shu yerda manfiydan musbatga o'tadi. Javob: x = −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-modulli-monotonlik",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#a8a5e4f8"
+    },
+    {
+      "q": "f(x) = x·√(4 − x²) funksiyaning [−2; 2] kesmadagi maksimum nuqtasini toping.",
+      "v": [
+        "x = 2",
+        "x = 1",
+        "x = √2",
+        "x = −√2"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = √(4 − x²) − x²/√(4 − x²) = (4 − 2x²)/√(4 − x²). Surat nolga aylanganda x² = 2, ya'ni x = ±√2. x = √2 da hosila musbatdan manfiyga o'tadi, demak maksimum shu yerda. Javob: x = √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizli-modulli-monotonlik",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#c3e695a0"
+    },
+    {
+      "q": "f(x) = |x² − 4x| funksiyaning (0; 4) oralig'idagi maksimum nuqtasi qaysi va u yerdagi qiymat qanday?",
+      "v": [
+        "x = 2 da maksimum, qiymati 4",
+        "x = 2 da minimum, qiymati 0",
+        "x = 0 da maksimum, qiymati 4",
+        "Maksimum nuqtasi yo'q"
+      ],
+      "t": 0,
+      "izoh": "(0; 4) oraliqda x² − 4x manfiy, shuning uchun modul ochilganda f(x) = 4x − x² bo'ladi. Hosila f'(x) = 4 − 2x nolga aylanganda x = 2. Hosila musbatdan manfiyga o'tadi — maksimum. f(2) = 8 − 4 = 4. Javob: x = 2 da maksimum, qiymati 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-modulli-monotonlik",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#02a54bc7"
+    },
+    {
+      "q": "f(x) = x³ + 3x² + 3x + 7 funksiyaning x = −1 statsionar nuqtasi maksimummi, minimummi yoki ekstremum emasmi?",
+      "v": [
+        "Maksimum nuqta",
+        "Minimum nuqta",
+        "Ekstremum nuqtasi emas",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 3x² + 6x + 3 = 3(x + 1)². Hosila x = −1 da nolga aylanadi, lekin ikkala tomonda ham musbat bo'lib qoladi. Ishora o'zgarmagani uchun bu nuqta ekstremum emas. Javob: ekstremum nuqtasi emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "statsionar-nuqta-turini-ajratish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#dbb6b2e0"
+    },
+    {
+      "q": "f(x) = x⁵ − 5x³ funksiyaning statsionar nuqtalaridan qaysi biri ekstremum bermaydi?",
+      "v": [
+        "x = 0",
+        "x = √3",
+        "x = −√3",
+        "Hammasi ekstremum beradi"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 5x⁴ − 15x² = 5x²(x² − 3). Statsionar nuqtalar x = 0, x = √3 va x = −√3. x = 0 atrofida 5x² musbat bo'lib qoladi, (x² − 3) esa manfiy — ishora o'zgarmaydi. Demak x = 0 ekstremum bermaydi. Javob: x = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "statsionar-nuqta-turini-ajratish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#13a1de80"
+    },
+    {
+      "q": "f(x) = x³ + px + q funksiyaning statsionar nuqtalari bo'lishi va ular haqiqiy ekstremum berishi uchun p qanday bo'lishi kerak?",
+      "v": [
+        "p > 0",
+        "p = 0",
+        "p < 0",
+        "p ≥ 0"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 3x² + p. Statsionar nuqta bo'lishi uchun 3x² = −p tenglama haqiqiy yechimga ega bo'lsin, ya'ni −p > 0. Bundan p < 0 kelib chiqadi. Bu holda ikkita statsionar nuqta bo'ladi va hosila ishorasini o'zgartiradi. Javob: p < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "statsionar-nuqta-turini-ajratish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#cd22f8a7"
+    },
+    {
+      "q": "Quyidagi funksiyalardan qaysi birida statsionar nuqta bor, lekin ekstremum yo'q?",
+      "v": [
+        "f(x) = x²",
+        "f(x) = x³",
+        "f(x) = x⁴",
+        "f(x) = −x²"
+      ],
+      "t": 1,
+      "izoh": "x² va −x² da hosila nolda ishorasini o'zgartiradi, demak ekstremum bor. x⁴ da ham 4x³ ishorani o'zgartiradi. x³ da esa hosila 3x² doim nomanfiy, x = 0 statsionar nuqta bo'lsa ham ekstremum emas. Javob: f(x) = x³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "statsionar-nuqta-turini-ajratish",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#4cd17d7d"
+    },
+    {
+      "q": "f(x) = x³ + 2x − 5 funksiya butun son o'qida o'suvchi ekani ma'lum. f(2) va f(3) qiymatlarini taqqoslang.",
+      "v": [
+        "f(2) < f(3)",
+        "f(2) > f(3)",
+        "f(2) = f(3)",
+        "Taqqoslab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² + 2 bo'lib, u hamma joyda musbat. Demak funksiya butun son o'qida o'suvchi. O'suvchi funksiyada kattaroq argumentga kattaroq qiymat mos keladi, 2 < 3 bo'lgani uchun f(2) < f(3). Javob: f(2) < f(3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlikdan-taqqoslash",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#f990280e"
+    },
+    {
+      "q": "Bir kompaniyaning yillik daromadi D(t) = t³ − 3t² + 5t + 20 million so'm. Daromad har yili ortib boradimi va D(4) bilan D(5) qanday munosabatda?",
+      "v": [
+        "Ortib boradi, D(4) < D(5)",
+        "Kamayib boradi, D(4) > D(5)",
+        "Ortib boradi, lekin D(4) > D(5)",
+        "Ba'zan ortadi, ba'zan kamayadi"
+      ],
+      "t": 0,
+      "izoh": "D'(t) = 3t² − 6t + 5. Bu kvadrat uchhadning diskriminanti 36 − 60 = −24 < 0, bosh koeffitsient musbat, demak hosila hamma joyda musbat. Funksiya o'suvchi, shuning uchun D(4) < D(5). Javob: ortib boradi, D(4) < D(5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlikdan-taqqoslash",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#e7a51a20"
+    },
+    {
+      "q": "f(x) = x³ − 6x² + 9x funksiyaning f(1), f(2) va f(5) qiymatlarini o'sish tartibida joylashtiring.",
+      "v": [
+        "f(1) < f(2) < f(5)",
+        "f(2) < f(1) < f(5)",
+        "f(5) < f(2) < f(1)",
+        "f(1) < f(5) < f(2)"
+      ],
+      "t": 1,
+      "izoh": "Qiymatlarni hisoblaymiz: f(1) = 1 − 6 + 9 = 4, f(2) = 8 − 24 + 18 = 2, f(5) = 125 − 150 + 45 = 20. Funksiya (1; 3) oralig'ida kamayadi, shuning uchun f(2) eng kichik chiqadi. Javob: f(2) < f(1) < f(5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlikdan-taqqoslash",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#e42c6fc5"
+    },
+    {
+      "q": "f(x) = x⁵ + 3x³ + 7x bo'lsa, f(a) > f(b) tengsizlikdan a va b haqida qanday xulosa chiqadi?",
+      "v": [
+        "a > b",
+        "a < b",
+        "a = b",
+        "Xulosa chiqarib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 5x⁴ + 9x² + 7. Barcha hadlar nomanfiy va erkin had musbat, demak hosila doim musbat. Funksiya qat'iy o'suvchi bo'lgani uchun f(a) > f(b) dan a > b kelib chiqadi. Javob: a > b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlikdan-taqqoslash",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#856f74b8"
+    },
+    {
+      "q": "f(x) = x³ − 3x² − 45x + 8 funksiyaning ekstremum nuqtalari ko'paytmasi nechaga teng?",
+      "v": [
+        "−15",
+        "15",
+        "2",
+        "−2"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² − 6x − 45 = 3(x − 5)(x + 3). Ekstremum nuqtalari x = 5 va x = −3. Ularning ko'paytmasi 5·(−3) = −15. Javob: −15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekstremum-nuqtalari-ustida-amal",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#a64aff9b"
+    },
+    {
+      "q": "f(x) = 2x³ − 21x² + 60x − 4 funksiyaning maksimum va minimum nuqtalari yig'indisini toping.",
+      "v": [
+        "10",
+        "7",
+        "3",
+        "−7"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 6x² − 42x + 60 = 6(x − 2)(x − 5). Maksimum nuqta x = 2, minimum nuqta x = 5. Ularning yig'indisi 2 + 5 = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekstremum-nuqtalari-ustida-amal",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#05c0bab9"
+    },
+    {
+      "q": "f(x) = x³ − 12x + 3 funksiyaning maksimum va minimum qiymatlari yig'indisi nechaga teng?",
+      "v": [
+        "32",
+        "0",
+        "−6",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 3x² − 12 = 3(x − 2)(x + 2). Maksimum x = −2 da: f(−2) = −8 + 24 + 3 = 19. Minimum x = 2 da: f(2) = 8 − 24 + 3 = −13. Yig'indisi 19 + (−13) = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremum-nuqtalari-ustida-amal",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#0e09a5bb"
+    },
+    {
+      "q": "f(x) = x³ + ax² + bx funksiyaning ekstremum nuqtalari −2 va 4 bo'lsa, a va b ning ko'paytmasi nechaga teng?",
+      "v": [
+        "−72",
+        "27",
+        "−24",
+        "72"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 3x² + 2ax + b ning ildizlari −2 va 4. Viyet bo'yicha yig'indi: −2a/3 = 2, bundan a = −3. Ko'paytma: b/3 = −8, bundan b = −24. Demak a·b = (−3)·(−24) = 72. Javob: 72.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremum-nuqtalari-ustida-amal",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#3bae7689"
+    },
+    {
+      "q": "Kasalxonada bemorlar soni B(t) = t³ − 18t² + 96t + 40 kishi bilan modellanadi, bu yerda t — haftalar soni. Bemorlar soni qaysi haftalarda kamayadi?",
+      "v": [
+        "4-haftadan 8-haftagacha",
+        "0 dan 4-haftagacha",
+        "8-haftadan keyin",
+        "Umuman kamaymaydi"
+      ],
+      "t": 0,
+      "izoh": "B'(t) = 3t² − 36t + 96 = 3(t − 4)(t − 8). Ko'paytma 4 < t < 8 oraliqda manfiy, demak bemorlar soni shu haftalarda kamayadi. Javob: 4-haftadan 8-haftagacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-osish-kamayish-tahlil",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#6ba8814c"
+    },
+    {
+      "q": "Bir qishloqda aholi soni P(t) = t³ − 21t² + 120t + 600 kishi bilan baholanadi, bu yerda t — yillar soni. Aholi o'sishi to'xtab, kamayishga o'tadigan yilni toping.",
+      "v": [
+        "10-yil",
+        "4-yil",
+        "7-yil",
+        "14-yil"
+      ],
+      "t": 1,
+      "izoh": "P'(t) = 3t² − 42t + 120 = 3(t − 4)(t − 10). Hosila t = 4 da musbatdan manfiyga o'tadi, demak o'sish shu yilda to'xtaydi va kamayish boshlanadi. t = 10 da esa aksincha, kamayish o'sishga aylanadi. Javob: 4-yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-osish-kamayish-tahlil",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#791dd99a"
+    },
+    {
+      "q": "Sotuvchi mahsulot narxini x foizga oshirganda savdo tushumi T(x) = 500 + 40x − x² million so'm bo'ladi. Tushum qaysi oraliqda o'sib boradi?",
+      "v": [
+        "0 dan 20 foizgacha",
+        "20 foizdan keyin",
+        "0 dan 40 foizgacha",
+        "0 dan 10 foizgacha"
+      ],
+      "t": 0,
+      "izoh": "T'(x) = 40 − 2x. Tushum o'sishi uchun 40 − 2x > 0, ya'ni x < 20 bo'lishi kerak. Demak narx yigirma foizgacha oshirilganda tushum ortib boradi, undan keyin kamayadi. Javob: 0 dan 20 foizgacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-osish-kamayish-tahlil",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#187e784b"
+    },
+    {
+      "q": "f(x) = x³ − 3x² + a funksiyaning maksimum qiymati 5 ga teng bo'lsa, a nechaga teng?",
+      "v": [
+        "9",
+        "1",
+        "5",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 3x² − 6x = 3x(x − 2). Hosila x = 0 da musbatdan manfiyga o'tadi, demak maksimum nuqta x = 0. Maksimum qiymat f(0) = a. Shart bo'yicha a = 5. Minimum nuqta x = 2 ni tanlash tipik xato. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremum-qiymati-parametr",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#32db0d67"
+    },
+    {
+      "q": "f(x) = x³ − 3ax² + 4 funksiyaning minimum qiymati 0 ga teng bo'lishi uchun musbat a qanday bo'lishi kerak?",
+      "v": [
+        "2",
+        "1/2",
+        "4",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 3x² − 6ax = 3x(x − 2a). a > 0 bo'lganda minimum nuqta x = 2a. f(2a) = 8a³ − 12a³ + 4 = 4 − 4a³. Shart bo'yicha 4 − 4a³ = 0, bundan a³ = 1 va a = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremum-qiymati-parametr",
+      "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni#5fc96c9d"
+    }
+  ]
+}

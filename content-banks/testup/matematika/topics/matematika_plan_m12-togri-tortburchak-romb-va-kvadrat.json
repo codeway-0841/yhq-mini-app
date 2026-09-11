@@ -1,0 +1,1609 @@
+{
+  "nom": "To'g'ri to'rtburchak, romb va kvadrat",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Alisher xonasining poli to'g'ri to'rtburchak shaklida bo'lib, tomonlari 12 m va 9 m. Poldagi bir burchakdan qarama-qarshi burchakka tortilgan simning uzunligi necha metr?",
+      "v": [
+        "15 m",
+        "21 m",
+        "3 m",
+        "108 m"
+      ],
+      "t": 0,
+      "izoh": "Sim to'g'ri to'rtburchakning diagonali bo'ladi va u polni ikkita to'g'ri burchakli uchburchakka ajratadi. Pifagor teoremasiga ko'ra d² = 12² + 9² = 144 + 81 = 225, demak d = √225 = 15 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,78.8 245,78.8 245,221.3 55,221.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='78.8' x2='245' y2='221.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,78.8 67,90.8 55,90.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='72.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='72.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='237.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='237.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='69.8' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='46' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E9 m%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tortburchak-diagonal-topish",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#3dee7858"
+    },
+    {
+      "q": "Noutbuk ekranining eni 32 sm, bo'yi 24 sm. Ishlab chiqaruvchi ekran o'lchamini har doim diagonal bo'yicha ko'rsatadi. Bu ekranning o'lchami necha santimetr?",
+      "v": [
+        "56 sm",
+        "28 sm",
+        "40 sm",
+        "8 sm"
+      ],
+      "t": 2,
+      "izoh": "Ekran to'g'ri to'rtburchak, diagonali esa uning qarama-qarshi burchaklarini tutashtiradi. d² = 32² + 24² = 1024 + 576 = 1600 bo'lgani uchun d = √1600 = 40 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,78.8 245,78.8 245,221.3 55,221.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='78.8' x2='245' y2='221.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,78.8 67,90.8 55,90.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='72.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='72.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='237.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='237.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='69.8' font-size='13' fill='%23334155' text-anchor='middle'%3E32 sm%3C/text%3E%3Ctext x='46' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E24 sm%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tortburchak-diagonal-topish",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#c7680186"
+    },
+    {
+      "q": "Bog'dagi to'g'ri to'rtburchak shaklidagi gulzorning bo'yi enidan 5 m uzun. Gulzorning eni 15 m bo'lsa, uning diagonali necha metr?",
+      "v": [
+        "35 m",
+        "17,5 m",
+        "300 m",
+        "25 m"
+      ],
+      "t": 3,
+      "izoh": "Avval bo'yini topamiz: 15 + 5 = 20 m. So'ng Pifagor teoremasini qo'llaymiz: d² = 20² + 15² = 400 + 225 = 625. Bundan d = √625 = 25 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,78.8 245,78.8 245,221.3 55,221.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='78.8' x2='245' y2='221.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,78.8 67,90.8 55,90.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='72.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='72.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='237.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='237.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='69.8' font-size='13' fill='%23334155' text-anchor='middle'%3E15 m + 5 m%3C/text%3E%3Ctext x='46' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E15 m%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-diagonal-topish",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#212ab9df"
+    },
+    {
+      "q": "ABCD to'g'ri to'rtburchakda AB = 24 sm va BC = 10 sm. AC diagonalning uzunligini toping.",
+      "v": [
+        "34 sm",
+        "26 sm",
+        "14 sm",
+        "240 sm"
+      ],
+      "t": 1,
+      "izoh": "ABC uchburchak B uchida to'g'ri burchakka ega, AC esa uning gipotenuzasi. AC² = 24² + 10² = 576 + 100 = 676, demak AC = √676 = 26 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,110.4 245,110.4 245,189.6 55,189.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='110.4' x2='245' y2='189.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,110.4 67,122.4 55,122.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='104.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='104.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='205.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='205.6' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='101.4' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='254' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tortburchak-diagonal-topish",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#e9d845e3"
+    },
+    {
+      "q": "Zilola devorga osish uchun to'g'ri to'rtburchak shaklidagi ko'zgu tanladi. Ko'zguning diagonali 65 sm, balandligi esa 63 sm. Ko'zguning eni necha santimetr?",
+      "v": [
+        "2 sm",
+        "256 sm",
+        "128 sm",
+        "16 sm"
+      ],
+      "t": 3,
+      "izoh": "Diagonal gipotenuza, balandlik esa katet bo'ladi. Ikkinchi katet: a² = 65² − 63² = 4225 − 3969 = 256. Ildiz olamiz: a = √256 = 16 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='125.9,55 174.1,55 174.1,245 125.9,245' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='125.9' y1='55' x2='174.1' y2='245' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='137.9,55 137.9,67 125.9,67' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='117.9' y='49' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='49' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='182.1' y='261' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='117.9' y='261' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='46' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='116.9' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E63 sm%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E65 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tortburchak-tomon-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#39c66d84"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi bayroqning diagonali 50 sm, bo'yi esa 40 sm. Bayroqning eni necha santimetr?",
+      "v": [
+        "10 sm",
+        "30 sm",
+        "900 sm",
+        "90 sm"
+      ],
+      "t": 1,
+      "izoh": "Pifagor teoremasini teskari tomonga qo'llaymiz: eni² = 50² − 40² = 2500 − 1600 = 900. Demak eni = √900 = 30 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,78.8 245,78.8 245,221.3 55,221.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='78.8' x2='245' y2='221.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,78.8 67,90.8 55,90.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='72.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='72.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='237.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='237.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='69.8' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3Ctext x='46' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E50 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tortburchak-tomon-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#cbe8d216"
+    },
+    {
+      "q": "ABCD to'g'ri to'rtburchakning diagonali BD = 17 sm, AB tomoni esa 15 sm. To'rtburchakning perimetrini toping.",
+      "v": [
+        "64 sm",
+        "23 sm",
+        "46 sm",
+        "120 sm"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi tomon: AD² = 17² − 15² = 289 − 225 = 64, ya'ni AD = 8 sm. Perimetr P = 2·(15 + 8) = 46 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,99.3 245,99.3 245,200.7 55,200.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='245' y1='99.3' x2='55' y2='200.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,99.3 67,111.3 55,111.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='93.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='93.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='216.7' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='216.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='90.3' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='46' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E17 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-tomon-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#f1502d40"
+    },
+    {
+      "q": "Usta Rustam eshik o'rniga to'g'ri to'rtburchak shaklidagi taxta o'rnatmoqchi. Taxtaning balandligi 2 m, diagonali esa 2,5 m. Taxtaning yuzi necha kvadrat metr?",
+      "v": [
+        "3 m²",
+        "5 m²",
+        "1,5 m²",
+        "0,5 m²"
+      ],
+      "t": 0,
+      "izoh": "Taxtaning eni: e² = 2,5² − 2² = 6,25 − 4 = 2,25, demak e = 1,5 m. Endi yuz: S = 2·1,5 = 3 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='105,90 195,90 195,210 105,210' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='105' y1='90' x2='195' y2='210' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='117,90 117,102 105,102' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='97' y='84' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='203' y='84' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='203' y='226' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='97' y='226' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='81' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='96' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E2 m%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E2,5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-tomon-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#baf7cea9"
+    },
+    {
+      "q": "ABCD to'g'ri to'rtburchakda diagonallar O nuqtada kesishadi va ∠AOB = 60°. AB tomon 9 sm bo'lsa, AC diagonalning uzunligi necha santimetr?",
+      "v": [
+        "9 sm",
+        "18 sm",
+        "36 sm",
+        "4,5 sm"
+      ],
+      "t": 1,
+      "izoh": "Diagonallar teng va kesishish nuqtasida teng ikkiga bo'linadi, shuning uchun OA = OB. Bir burchagi 60° bo'lgan teng yonli uchburchak teng tomonli bo'ladi, ya'ni OA = OB = AB = 9 sm. Butun diagonal AC = 2·9 = 18 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='107.3,76 192.7,76 192.7,224 107.3,224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107.3' y1='76' x2='192.7' y2='224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='192.7' y1='76' x2='107.3' y2='224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='119.3,76 119.3,88 107.3,88' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='143' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='99.3' y='70' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='200.7' y='70' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='200.7' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='99.3' y='240' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='150' y='131' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-diagonal-burchak",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#4d3547f9"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning diagonallari orasidagi o'tkir burchak 40°. Diagonal bilan katta tomon orasida hosil bo'ladigan burchak necha gradus?",
+      "v": [
+        "20°",
+        "70°",
+        "50°",
+        "40°"
+      ],
+      "t": 0,
+      "izoh": "Katta tomon diagonallar orasidagi o'tmas burchak qarshisida yotadi, ya'ni uchburchakning uchidagi burchak 180° − 40° = 140°. Diagonallarning yarmi teng bo'lgani uchun uchburchak teng yonli va asosidagi burchaklar (180° − 140°) : 2 = 20° ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tortburchak-diagonal-burchak",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#1075596d"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning diagonali kichik tomon bilan 60° burchak hosil qiladi. Kichik tomon 7 sm bo'lsa, diagonalning uzunligi necha santimetr?",
+      "v": [
+        "3,5 sm",
+        "7√3 sm",
+        "28 sm",
+        "14 sm"
+      ],
+      "t": 3,
+      "izoh": "Kichik tomon 60° li burchakka yopishgan katet, diagonal esa gipotenuza. cos60° = 7/d va cos60° = 1/2 bo'lgani uchun d = 7 : 0,5 = 14 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,95.2 245,95.2 245,204.8 55,204.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='95.2' x2='245' y2='204.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,95.2 67,107.2 55,107.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='89.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='89.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='220.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='220.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='46' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='64' y='125.2' font-size='13' fill='%23334155' text-anchor='start'%3E60°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-diagonal-burchak",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#fcc61c7a"
+    },
+    {
+      "q": "Reklama bannerining diagonali gorizontal tomon bilan 30° burchak hosil qiladi. Bannerning vertikal tomoni 1,2 m bo'lsa, diagonali necha metr?",
+      "v": [
+        "0,6 m",
+        "1,2√3 m",
+        "2,4 m",
+        "4,8 m"
+      ],
+      "t": 2,
+      "izoh": "Vertikal tomon 30° li burchak qarshisidagi katet, diagonal esa gipotenuza. sin30° = 1,2/d va sin30° = 0,5 bo'lgani uchun d = 1,2 : 0,5 = 2,4 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,95.1 245,95.1 245,204.9 55,204.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='245' y1='95.1' x2='55' y2='204.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,95.1 67,107.1 55,107.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='89.1' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='89.1' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='220.9' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='220.9' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='46' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E1,2 m%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='68' y='193.9' font-size='13' fill='%23334155' text-anchor='start'%3E30°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-diagonal-burchak",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#c0bbe383"
+    },
+    {
+      "q": "ABCD to'g'ri to'rtburchakning diagonallari O nuqtada kesishadi. AC = 26 sm bo'lsa, OB kesmaning uzunligi necha santimetr?",
+      "v": [
+        "13 sm",
+        "26 sm",
+        "6,5 sm",
+        "52 sm"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri to'rtburchakda diagonallar teng va kesishgan nuqtada teng ikkiga bo'linadi. Shuning uchun BD = AC = 26 sm va OB = 26 : 2 = 13 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,94.6 245,94.6 245,205.4 55,205.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='94.6' x2='245' y2='205.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='245' y1='94.6' x2='55' y2='205.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,94.6 67,106.6 55,106.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='143' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='47' y='88.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='88.6' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='221.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='221.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E26 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tortburchak-diagonal-yarmi",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#055a8918"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning diagonallari kesishgan nuqtadan har bir uchigacha bo'lgan masofa 10 sm. Ikkala diagonal uzunliklarining yig'indisi necha santimetr?",
+      "v": [
+        "20 sm",
+        "80 sm",
+        "40 sm",
+        "10 sm"
+      ],
+      "t": 2,
+      "izoh": "Kesishish nuqtasi har bir diagonalni teng ikkiga bo'ladi, demak bitta diagonal 2·10 = 20 sm. Diagonallar teng bo'lgani uchun ularning yig'indisi 20 + 20 = 40 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,91.5 245,91.5 245,208.5 55,208.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='91.5' x2='245' y2='208.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='245' y1='91.5' x2='55' y2='208.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,91.5 67,103.5 55,103.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='143' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='47' y='85.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='85.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='224.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='224.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tortburchak-diagonal-yarmi",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#7ede3863"
+    },
+    {
+      "q": "ABCD to'g'ri to'rtburchakda AB = 16 sm, BC = 12 sm va diagonallari O nuqtada kesishgan. AOB uchburchakning perimetri necha santimetr?",
+      "v": [
+        "46 sm",
+        "56 sm",
+        "26 sm",
+        "36 sm"
+      ],
+      "t": 3,
+      "izoh": "Avval diagonalni topamiz: AC² = 16² + 12² = 256 + 144 = 400, ya'ni AC = 20 sm. Diagonallar teng va teng ikkiga bo'linadi, shuning uchun OA = OB = 10 sm. Perimetr: 16 + 10 + 10 = 36 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,78.8 245,78.8 245,221.3 55,221.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='78.8' x2='245' y2='221.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='245' y1='78.8' x2='55' y2='221.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,78.8 67,90.8 55,90.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='143' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='47' y='72.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='72.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='237.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='237.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='69.8' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='254' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-diagonal-yarmi",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#e99eb2d7"
+    },
+    {
+      "q": "Sport maydonchasi to'g'ri to'rtburchak shaklida bo'lib, tomonlari 80 m va 60 m. Maydoncha diagonallari kesishgan nuqtaga chiroq o'rnatildi. Chiroqdan maydonchaning eng yaqin burchagigacha masofa necha metr?",
+      "v": [
+        "70 m",
+        "50 m",
+        "100 m",
+        "40 m"
+      ],
+      "t": 1,
+      "izoh": "Diagonallar teng va teng ikkiga bo'lingani uchun kesishish nuqtasi to'rtala uchdan bir xil uzoqlikda turadi, ya'ni burchaklarning biri yaqinroq emas. Diagonal: d² = 80² + 60² = 10000, d = 100 m. Izlangan masofa 100 : 2 = 50 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,78.8 245,78.8 245,221.3 55,221.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='78.8' x2='245' y2='221.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='245' y1='78.8' x2='55' y2='221.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,78.8 67,90.8 55,90.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='143' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='47' y='72.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='72.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='237.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='237.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='69.8' font-size='13' fill='%23334155' text-anchor='middle'%3E80 m%3C/text%3E%3Ctext x='254' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E60 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tortburchak-diagonal-yarmi",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#c3c74a9d"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning tomonlari 6 sm va 8 sm. Uning atrofiga chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "10 sm",
+        "7 sm",
+        "2,5 sm",
+        "5 sm"
+      ],
+      "t": 3,
+      "izoh": "Aylananing markazi diagonallar kesishgan nuqtada, radius esa diagonalning yarmiga teng. d² = 8² + 6² = 100 bo'lgani uchun d = 10 sm va R = 10 : 2 = 5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='93.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='75,93.8 225,93.8 225,206.3 75,206.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='75' y1='93.8' x2='225' y2='206.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='87,93.8 87,105.8 75,105.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='67' y='87.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='233' y='87.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='233' y='222.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='67' y='222.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='84.8' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='66' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tortburchak-tashqi-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#a82a66d2"
+    },
+    {
+      "q": "Ustaxonada diametri 34 sm bo'lgan yumaloq taxtadan to'g'ri to'rtburchak shaklidagi bo'lak shunday kesildiki, uning to'rtala uchi ham taxta chetida yotadi. Bo'lakning bir tomoni 16 sm bo'lsa, ikkinchisi necha santimetr?",
+      "v": [
+        "18 sm",
+        "30 sm",
+        "17 sm",
+        "900 sm"
+      ],
+      "t": 1,
+      "izoh": "To'rtala uchi aylanada yotgani uchun to'rtburchakning diagonali diametrga teng, ya'ni 34 sm. Ikkinchi tomon: b² = 34² − 16² = 1156 − 256 = 900, demak b = 30 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='85' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='75,110 225,110 225,190 75,190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='75' y1='110' x2='225' y2='190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='87,110 87,122 75,122' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='67' y='104' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='233' y='104' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='233' y='206' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='67' y='206' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='101' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='234' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E16 sm%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E34 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-tashqi-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#f02c0667"
+    },
+    {
+      "q": "ABCD to'g'ri to'rtburchak atrofiga chizilgan aylananing radiusi 13 sm, AB tomoni esa 24 sm. To'rtburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "312 sm²",
+        "120 sm²",
+        "240 sm²",
+        "624 sm²"
+      ],
+      "t": 2,
+      "izoh": "Diagonal aylananing diametriga teng: d = 2·13 = 26 sm. Ikkinchi tomon: b² = 26² − 24² = 676 − 576 = 100, ya'ni b = 10 sm. Yuz S = 24·10 = 240 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='81.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='75,118.8 225,118.8 225,181.3 75,181.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='75' y1='118.8' x2='225' y2='181.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='87,118.8 87,130.8 75,130.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='67' y='112.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='233' y='112.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='233' y='197.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='67' y='197.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='109.8' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='234' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-tashqi-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#441498fa"
+    },
+    {
+      "q": "Radiusi 25 sm bo'lgan dumaloq oynaga to'g'ri to'rtburchak shaklidagi rasm shunday joylashtirildiki, uning to'rtala burchagi ham aylanaga tegib turibdi. Rasmning eni 30 sm bo'lsa, yuzi necha kvadrat santimetr?",
+      "v": [
+        "1200 sm²",
+        "750 sm²",
+        "600 sm²",
+        "1500 sm²"
+      ],
+      "t": 0,
+      "izoh": "Rasmning diagonali aylananing diametriga teng: d = 2·25 = 50 sm. Ikkinchi tomon: b² = 50² − 30² = 2500 − 900 = 1600, ya'ni b = 40 sm. Yuz S = 30·40 = 1200 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='93.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='75,93.8 225,93.8 225,206.3 75,206.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='75' y1='93.8' x2='225' y2='206.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='87,93.8 87,105.8 75,105.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='67' y='87.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='233' y='87.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='233' y='222.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='67' y='222.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='84.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='234' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E30 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-tashqi-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#e0b8a42f"
+    },
+    {
+      "q": "Nodira uzunligi 4 m va eni 3 m bo'lgan xona poliga kvadrat metri 85 000 so'mdan turadigan parket yotqizmoqchi. Parket uchun jami qancha so'm to'laydi?",
+      "v": [
+        "1 190 000 so'm",
+        "1 020 000 so'm",
+        "595 000 so'm",
+        "255 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Avval pol yuzini topamiz: S = 4·3 = 12 m². Endi narxni hisoblaymiz: 12·85 000 = 1 020 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tortburchak-yuz-kontekst",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#7374bd0c"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi tomorqaning perimetri 46 m, bo'yi esa enidan 3 m ortiq. Tomorqaning yuzi necha kvadrat metr?",
+      "v": [
+        "130 m²",
+        "120 m²",
+        "156 m²",
+        "529 m²"
+      ],
+      "t": 0,
+      "izoh": "Perimetrning yarmi 46 : 2 = 23 m, ya'ni eni va bo'yi yig'indisi 23. Eni x bo'lsa, x + (x + 3) = 23 dan x = 10, bo'yi esa 13 m. Yuz S = 10·13 = 130 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,76.9 245,76.9 245,223.1 55,223.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='67,76.9 67,88.9 55,88.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='70.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='70.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='239.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='239.1' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='67.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='46' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-yuz-kontekst",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#4b5b7b0e"
+    },
+    {
+      "q": "Sanjar to'g'ri to'rtburchak shaklidagi uchastkani sim to'siq bilan o'rab chiqdi. Uchastkaning yuzi 96 m², eni esa 8 m. To'siq uchun necha metr sim ketgan?",
+      "v": [
+        "20 m",
+        "104 m",
+        "24 m",
+        "40 m"
+      ],
+      "t": 3,
+      "izoh": "Bo'yini yuzdan topamiz: 96 : 8 = 12 m. To'siq uzunligi perimetrga teng: P = 2·(12 + 8) = 40 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,86.7 245,86.7 245,213.3 55,213.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='67,86.7 67,98.7 55,98.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='80.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='80.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='229.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='229.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='77.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='46' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E8 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-yuz-kontekst",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#040fbf2b"
+    },
+    {
+      "q": "Hovlining bo'yi 18 m, eni 12 m. Hovli chetidan ichkariga qarab kengligi 1 m bo'lgan yo'lak qoldirildi, qolgan qismiga esa o't ekildi. O't ekilgan qismning yuzi necha kvadrat metr?",
+      "v": [
+        "187 m²",
+        "216 m²",
+        "160 m²",
+        "156 m²"
+      ],
+      "t": 2,
+      "izoh": "Yo'lak har ikki chetdan 1 m dan olingani uchun ichki to'rtburchakning bo'yi 18 − 2 = 16 m, eni esa 12 − 2 = 10 m bo'ladi. O't ekilgan yuz S = 16·10 = 160 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,86.7 245,86.7 245,213.3 55,213.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='65.6,97.3 234.4,97.3 234.4,202.8 65.6,202.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='86.7' x2='150' y2='97.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='95' font-size='13' fill='%23334155' text-anchor='start'%3E1 m%3C/text%3E%3Ctext x='150' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3Eo't ekilgan qism%3C/text%3E%3Cpolyline points='67,86.7 67,98.7 55,98.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='80.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='80.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='229.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='229.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='77.7' font-size='13' fill='%23334155' text-anchor='middle'%3E18 m%3C/text%3E%3Ctext x='46' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E12 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tortburchak-yuz-kontekst",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#25a4c319"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning perimetri 34 sm, diagonali esa 13 sm. Uning yuzi necha kvadrat santimetr?",
+      "v": [
+        "60 sm²",
+        "30 sm²",
+        "120 sm²",
+        "72 sm²"
+      ],
+      "t": 0,
+      "izoh": "Tomonlari a va b bo'lsin: a + b = 34 : 2 = 17 va a² + b² = 13² = 169. (a + b)² = a² + 2ab + b² formulasidan 289 = 169 + 2ab, demak 2ab = 120 va yuz S = ab = 60 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tortburchak-yuz-perimetr-sistema",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#319bb8b2"
+    },
+    {
+      "q": "Zavodda to'g'ri to'rtburchak shaklidagi metall plastinkalar tayyorlanadi. Bir plastinkaning perimetri 28 sm, yuzi esa 48 sm². Plastinkaning diagonali necha santimetr?",
+      "v": [
+        "14 sm",
+        "100 sm",
+        "10 sm",
+        "20 sm"
+      ],
+      "t": 2,
+      "izoh": "a + b = 28 : 2 = 14 va ab = 48. Diagonal uchun a² + b² = (a + b)² − 2ab = 196 − 96 = 100 kerak. Demak d = √100 = 10 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tortburchak-yuz-perimetr-sistema",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#7ef98c5f"
+    },
+    {
+      "q": "Anvarning fermasidagi to'g'ri to'rtburchak shaklidagi maydonning yuzi 192 m², bo'yi esa enidan 3 marta uzun. Maydonning eni necha metr?",
+      "v": [
+        "24 m",
+        "64 m",
+        "16 m",
+        "8 m"
+      ],
+      "t": 3,
+      "izoh": "Eni x bo'lsa, bo'yi 3x bo'ladi va yuz x·3x = 3x² = 192. Bundan x² = 64 va x = 8 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,118.3 245,118.3 245,181.7 55,181.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='67,118.3 67,130.3 55,130.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='112.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='112.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='197.7' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='197.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='109.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='46' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-yuz-perimetr-sistema",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#935e1538"
+    },
+    {
+      "q": "Kitob javonining orqa taxtasi to'g'ri to'rtburchak shaklida bo'lib, tomonlari nisbati 3 : 2 kabi. Taxtaning perimetri 200 sm bo'lsa, yuzi necha kvadrat santimetr?",
+      "v": [
+        "600 sm²",
+        "2400 sm²",
+        "9600 sm²",
+        "1200 sm²"
+      ],
+      "t": 1,
+      "izoh": "Tomonlarni 3k va 2k deb olamiz. Perimetr 2·(3k + 2k) = 10k = 200 dan k = 20. Demak tomonlar 60 sm va 40 sm, yuz esa S = 60·40 = 2400 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,86.7 245,86.7 245,213.3 55,213.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='67,86.7 67,98.7 55,98.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='80.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='80.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='229.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='229.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='77.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='46' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-yuz-perimetr-sistema",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#06a49775"
+    },
+    {
+      "q": "Romb shaklidagi belgining diagonallari 14 sm va 10 sm. Belgining yuzi necha kvadrat santimetr?",
+      "v": [
+        "140 sm²",
+        "24 sm²",
+        "35 sm²",
+        "70 sm²"
+      ],
+      "t": 3,
+      "izoh": "Romb yuzi diagonallar ko'paytmasining yarmiga teng: S = d₁·d₂ : 2. Demak S = 14·10 : 2 = 140 : 2 = 70 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,79.3 249,150 150,220.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='79.3' x2='150' y2='220.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='71.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='238.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='157' y='114.6' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-yuz-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#57734945"
+    },
+    {
+      "q": "Sayyoraning bog'idagi gulzor romb shaklida bo'lib, diagonallari 12 m va 9 m. Gulzorning yuzi necha kvadrat metr?",
+      "v": [
+        "108 m²",
+        "54 m²",
+        "21 m²",
+        "27 m²"
+      ],
+      "t": 1,
+      "izoh": "Rombning diagonallari o'zaro perpendikulyar, shuning uchun S = d₁·d₂ : 2 formulasi ishlaydi. S = 12·9 : 2 = 108 : 2 = 54 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,75.8 249,150 150,224.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='75.8' x2='150' y2='224.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='67.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='242.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='157' y='112.9' font-size='13' fill='%23334155' text-anchor='start'%3E9 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-yuz-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#37f5edad"
+    },
+    {
+      "q": "Uy tomiga romb shaklidagi bezak o'rnatiladi. Bezakning bir diagonali 40 sm, ikkinchisi esa undan 15 sm qisqa. Bezakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "1000 sm²",
+        "800 sm²",
+        "500 sm²",
+        "250 sm²"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi diagonal 40 − 15 = 25 sm. Endi yuzni hisoblaymiz: S = 40·25 : 2 = 1000 : 2 = 500 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,88.1 249,150 150,211.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='88.1' x2='150' y2='211.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='80.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='229.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3Ctext x='157' y='119.1' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-yuz-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#1af8a96b"
+    },
+    {
+      "q": "Romb shaklidagi kafel plitkasining diagonallari 30 sm va 16 sm. Yuzi 6 m² bo'lgan devorni to'liq qoplash uchun nechta shunday plitka kerak bo'ladi?",
+      "v": [
+        "250 ta",
+        "125 ta",
+        "500 ta",
+        "25 ta"
+      ],
+      "t": 0,
+      "izoh": "Bitta plitka yuzi S = 30·16 : 2 = 240 sm². Devor yuzini santimetrga o'tkazamiz: 6 m² = 60 000 sm². Plitkalar soni 60 000 : 240 = 250 ta.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,97.2 249,150 150,202.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='97.2' x2='150' y2='202.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='89.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='220.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Ctext x='157' y='123.6' font-size='13' fill='%23334155' text-anchor='start'%3E16 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "romb-yuz-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#ca037e64"
+    },
+    {
+      "q": "Rombning yuzi 84 sm², diagonallaridan biri esa 12 sm. Ikkinchi diagonalning uzunligi necha santimetr?",
+      "v": [
+        "7 sm",
+        "14 sm",
+        "28 sm",
+        "72 sm"
+      ],
+      "t": 1,
+      "izoh": "S = d₁·d₂ : 2 formulasidan d₂ = 2S : d₁ kelib chiqadi. Demak d₂ = 2·84 : 12 = 168 : 12 = 14 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='52,150 150,66 248,150 150,234' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='150' x2='248' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='66' x2='150' y2='234' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='58' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='256' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='252' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='101' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='157' y='108' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-diagonal-yuzdan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#ec114e69"
+    },
+    {
+      "q": "Romb shaklidagi bayroqchaning yuzi 240 sm², katta diagonali esa 30 sm. Kichik diagonali necha santimetr?",
+      "v": [
+        "16 sm",
+        "8 sm",
+        "32 sm",
+        "210 sm"
+      ],
+      "t": 0,
+      "izoh": "Kichik diagonal d₂ = 2S : d₁ formulasi bilan topiladi. d₂ = 2·240 : 30 = 480 : 30 = 16 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,97.2 249,150 150,202.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='97.2' x2='150' y2='202.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='89.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='220.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Ctext x='157' y='123.6' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-diagonal-yuzdan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#70ac0130"
+    },
+    {
+      "q": "Dehqonning romb shaklidagi yeri 0,6 gektarni egallaydi. Yerning bir diagonali 100 m bo'lsa, ikkinchi diagonali necha metr?",
+      "v": [
+        "60 m",
+        "1200 m",
+        "12 m",
+        "120 m"
+      ],
+      "t": 3,
+      "izoh": "Avval birlikni almashtiramiz: 0,6 gektar = 6000 m². So'ng d₂ = 2S : d₁ = 2·6000 : 100 = 12 000 : 100 = 120 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-diagonal-yuzdan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#76f8325d"
+    },
+    {
+      "q": "Romb shaklidagi oynaning yuzi 900 sm², katta diagonali esa kichigidan 2 marta uzun. Kichik diagonal necha santimetr?",
+      "v": [
+        "60 sm",
+        "45 sm",
+        "30 sm",
+        "15 sm"
+      ],
+      "t": 2,
+      "izoh": "Kichik diagonalni x deb olsak, kattasi 2x bo'ladi. Yuz S = x·2x : 2 = x² = 900, demak x = √900 = 30 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,100.5 249,150 150,199.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='100.5' x2='150' y2='199.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='92.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='217.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='157' y='125.3' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-diagonal-yuzdan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#1d7996dc"
+    },
+    {
+      "q": "Rombning diagonallari 16 sm va 12 sm ga teng. Rombning tomoni necha santimetr?",
+      "v": [
+        "10 sm",
+        "20 sm",
+        "14 sm",
+        "28 sm"
+      ],
+      "t": 0,
+      "izoh": "Diagonallar o'zaro perpendikulyar va kesishish nuqtasida teng ikkiga bo'linadi, shuning uchun yarim diagonallar 8 sm va 6 sm. Tomon a² = 8² + 6² = 64 + 36 = 100 dan a = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,75.8 249,150 150,224.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='75.8' x2='150' y2='224.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='67.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='242.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='157' y='112.9' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='92.5' y='108.9' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-tomon-diagonallardan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#3c965ce9"
+    },
+    {
+      "q": "Romb shaklidagi darvoza panjarasi diagonallari 48 sm va 20 sm bo'lgan metall ramkaga o'rnatiladi. Ramkaning bir tomoni necha santimetr?",
+      "v": [
+        "52 sm",
+        "34 sm",
+        "26 sm",
+        "68 sm"
+      ],
+      "t": 2,
+      "izoh": "Yarim diagonallar 24 sm va 10 sm bo'ladi hamda ular to'g'ri burchak hosil qiladi. Tomon a² = 24² + 10² = 576 + 100 = 676, demak a = 26 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,108.8 249,150 150,191.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='108.8' x2='150' y2='191.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='100.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='209.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E48 sm%3C/text%3E%3Ctext x='157' y='129.4' font-size='13' fill='%23334155' text-anchor='start'%3E20 sm%3C/text%3E%3Ctext x='92.5' y='125.4' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-tomon-diagonallardan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#be9045e9"
+    },
+    {
+      "q": "Romb shaklidagi maydonchaning diagonallari 24 m va 18 m. Maydonchani to'liq o'rab olish uchun necha metr to'siq kerak?",
+      "v": [
+        "84 m",
+        "42 m",
+        "30 m",
+        "60 m"
+      ],
+      "t": 3,
+      "izoh": "Yarim diagonallar 12 m va 9 m, tomon esa a² = 12² + 9² = 225 dan a = 15 m. To'siq uzunligi perimetrga teng: P = 4·15 = 60 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,75.8 249,150 150,224.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='75.8' x2='150' y2='224.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='67.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='242.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E24 m%3C/text%3E%3Ctext x='157' y='112.9' font-size='13' fill='%23334155' text-anchor='start'%3E18 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-tomon-diagonallardan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#c4861497"
+    },
+    {
+      "q": "Romb shaklidagi uchastkaning diagonallari 30 m va 40 m. Uchastka chegarasi bo'ylab har 5 metrda bitta ustun o'rnatilsa, jami nechta ustun kerak bo'ladi?",
+      "v": [
+        "21 ta",
+        "20 ta",
+        "28 ta",
+        "14 ta"
+      ],
+      "t": 1,
+      "izoh": "Yarim diagonallar 15 m va 20 m, tomon a² = 15² + 20² = 625 dan a = 25 m. Perimetr P = 4·25 = 100 m. Chegara yopiq chiziq bo'lgani uchun ustunlar soni 100 : 5 = 20 ta.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,75.8 249,150 150,224.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='75.8' x2='150' y2='224.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='67.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='242.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E40 m%3C/text%3E%3Ctext x='157' y='112.9' font-size='13' fill='%23334155' text-anchor='start'%3E30 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "romb-tomon-diagonallardan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#a3094af3"
+    },
+    {
+      "q": "Rombning tomoni 13 sm, diagonallaridan biri esa 24 sm. Ikkinchi diagonalning uzunligi necha santimetr?",
+      "v": [
+        "5 sm",
+        "26 sm",
+        "12 sm",
+        "10 sm"
+      ],
+      "t": 3,
+      "izoh": "Yarim diagonal 24 : 2 = 12 sm. Ikkinchi yarim diagonal: m² = 13² − 12² = 169 − 144 = 25, ya'ni m = 5 sm. Butun diagonal 2·5 = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,108.8 249,150 150,191.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='108.8' x2='150' y2='191.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='100.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='209.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='157' y='129.4' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='92.5' y='125.4' font-size='13' fill='%23334155' text-anchor='end'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-tomon-va-diagonal",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#d5d911ef"
+    },
+    {
+      "q": "Romb shaklidagi qog'oz varaqning tomoni 10 sm, uzun diagonali esa 16 sm. Qisqa diagonali necha santimetr?",
+      "v": [
+        "6 sm",
+        "12 sm",
+        "20 sm",
+        "24 sm"
+      ],
+      "t": 1,
+      "izoh": "Uzun diagonalning yarmi 8 sm. Qisqa diagonalning yarmi: m² = 10² − 8² = 100 − 64 = 36 dan m = 6 sm. Demak qisqa diagonal 2·6 = 12 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,75.8 249,150 150,224.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='75.8' x2='150' y2='224.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='67.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='242.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='157' y='112.9' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='92.5' y='108.9' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-tomon-va-diagonal",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#6cbe1fdb"
+    },
+    {
+      "q": "Yo'l chetidagi romb shaklidagi belgining tomoni 17 sm, kichik diagonali esa 16 sm. Belgining yuzi necha kvadrat santimetr?",
+      "v": [
+        "480 sm²",
+        "136 sm²",
+        "240 sm²",
+        "120 sm²"
+      ],
+      "t": 2,
+      "izoh": "Kichik diagonalning yarmi 8 sm. Katta diagonalning yarmi: m² = 17² − 8² = 289 − 64 = 225 dan m = 15 sm, ya'ni katta diagonal 30 sm. Yuz S = 16·30 : 2 = 240 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,97.2 249,150 150,202.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='97.2' x2='150' y2='202.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='89.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='220.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='157' y='123.6' font-size='13' fill='%23334155' text-anchor='start'%3E16 sm%3C/text%3E%3Ctext x='92.5' y='119.6' font-size='13' fill='%23334155' text-anchor='end'%3E17 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-tomon-va-diagonal",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#dd1a8f6c"
+    },
+    {
+      "q": "Romb shaklidagi bog'chaning perimetri 52 m, katta diagonali esa 24 m. Bog'chaning yuzi necha kvadrat metr?",
+      "v": [
+        "120 m²",
+        "240 m²",
+        "156 m²",
+        "60 m²"
+      ],
+      "t": 0,
+      "izoh": "Tomon a = 52 : 4 = 13 m. Katta diagonalning yarmi 12 m, kichigining yarmi esa √(13² − 12²) = √25 = 5 m, ya'ni kichik diagonal 10 m. Yuz S = 24·10 : 2 = 120 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,108.8 249,150 150,191.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='108.8' x2='150' y2='191.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='100.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='209.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E24 m%3C/text%3E%3Ctext x='157' y='129.4' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='92.5' y='125.4' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-tomon-va-diagonal",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#669b7799"
+    },
+    {
+      "q": "Rombning tomoni 8 sm, o'tkir burchagi esa 60°. Rombning kichik diagonali necha santimetr?",
+      "v": [
+        "4 sm",
+        "8 sm",
+        "8√3 sm",
+        "16 sm"
+      ],
+      "t": 1,
+      "izoh": "Kichik diagonal 60° li burchak qarshisida yotadi va u rombning ikki tomoni bilan teng yonli uchburchak hosil qiladi. Uchidagi burchak 60° bo'lgani uchun uchburchak teng tomonli, demak diagonal tomonga teng: 8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,92.8 249,150 150,207.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='92.8' x2='150' y2='207.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='84.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='225.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='157' y='121.4' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='92.5' y='117.4' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='65' y='155' font-size='13' fill='%23334155' text-anchor='start'%3E60°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-maxsus-burchak",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#eb8bc763"
+    },
+    {
+      "q": "Romb shaklidagi ramkaning tomoni 12 sm, o'tkir burchagi esa 60°. Ramkaning katta diagonali necha santimetr?",
+      "v": [
+        "12√3 sm",
+        "12 sm",
+        "24 sm",
+        "6√3 sm"
+      ],
+      "t": 0,
+      "izoh": "O'tkir burchagi 60° bo'lgan rombda kichik diagonal tomonga teng, ya'ni 12 sm. Yarim diagonallar to'g'ri burchakli uchburchak hosil qiladi: (D : 2)² = 12² − 6² = 108, demak D : 2 = 6√3 va D = 12√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,92.8 249,150 150,207.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='92.8' x2='150' y2='207.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='84.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='225.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='92.5' y='117.4' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='65' y='155' font-size='13' fill='%23334155' text-anchor='start'%3E60°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-maxsus-burchak",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#e720237d"
+    },
+    {
+      "q": "Rombning o'tkir burchagi 60°, shu burchak qarshisidagi diagonali esa 9 sm. Rombning perimetri necha santimetr?",
+      "v": [
+        "18 sm",
+        "72 sm",
+        "27 sm",
+        "36 sm"
+      ],
+      "t": 3,
+      "izoh": "60° li burchak qarshisidagi diagonal rombning ikki tomoni bilan teng tomonli uchburchak beradi, demak tomon 9 sm ga teng. Perimetr P = 4·9 = 36 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,92.8 249,150 150,207.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='92.8' x2='150' y2='207.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='84.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='225.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='157' y='121.4' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3Ctext x='92.5' y='117.4' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='65' y='155' font-size='13' fill='%23334155' text-anchor='start'%3E60°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-maxsus-burchak",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#d3765ccf"
+    },
+    {
+      "q": "Devordagi romb shaklidagi bezakning o'tkir burchagi 60°, katta diagonali esa 18√3 sm. Bezakning tomoni necha santimetr?",
+      "v": [
+        "9 sm",
+        "36 sm",
+        "18 sm",
+        "54 sm"
+      ],
+      "t": 2,
+      "izoh": "O'tkir burchagi 60° bo'lgan rombda katta diagonal tomonning √3 barobariga teng: D = a√3. Demak a√3 = 18√3 tenglikdan a = 18 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,92.8 249,150 150,207.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='92.8' x2='150' y2='207.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='84.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='225.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E18√3 sm%3C/text%3E%3Ctext x='92.5' y='117.4' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='65' y='155' font-size='13' fill='%23334155' text-anchor='start'%3E60°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-maxsus-burchak",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#f0db91f7"
+    },
+    {
+      "q": "Rombning tomoni 10 sm, burchaklaridan biri esa 120°. Rombning yuzi necha kvadrat santimetr?",
+      "v": [
+        "50√3 sm²",
+        "100√3 sm²",
+        "50 sm²",
+        "25√3 sm²"
+      ],
+      "t": 0,
+      "izoh": "Romb yuzi S = a²·sinα formulasi bilan topiladi. sin120° = √3/2 bo'lgani uchun S = 100·√3/2 = 50√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,92.8 249,150 150,207.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='84.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='225.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='92.5' y='117.4' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Ctext x='150' y='116.8' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-yuz-tomon-burchak",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#a2438834"
+    },
+    {
+      "q": "Romb shaklidagi gilamchaning tomoni 6 dm, o'tkir burchagi esa 30°. Gilamchaning yuzi necha kvadrat detsimetr?",
+      "v": [
+        "36 dm²",
+        "9 dm²",
+        "18 dm²",
+        "24 dm²"
+      ],
+      "t": 2,
+      "izoh": "S = a²·sinα formulasini qo'llaymiz. sin30° = 0,5 bo'lgani uchun S = 6²·0,5 = 36·0,5 = 18 dm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,123.5 249,150 150,176.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='115.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='194.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='92.5' y='132.7' font-size='13' fill='%23334155' text-anchor='end'%3E6 dm%3C/text%3E%3Ctext x='65' y='155' font-size='13' fill='%23334155' text-anchor='start'%3E30°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-yuz-tomon-burchak",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#1edc016b"
+    },
+    {
+      "q": "Romb shaklidagi yer uchastkasining tomoni 20 m, o'tkir burchagi esa 45°. Uchastkaning yuzi necha kvadrat metr?",
+      "v": [
+        "400√2 m²",
+        "200 m²",
+        "100√2 m²",
+        "200√2 m²"
+      ],
+      "t": 3,
+      "izoh": "S = a²·sinα formulasidan foydalanamiz. sin45° = √2/2 bo'lgani uchun S = 400·√2/2 = 200√2 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,109 249,150 150,191' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='101' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='92.5' y='125.5' font-size='13' fill='%23334155' text-anchor='end'%3E20 m%3C/text%3E%3Ctext x='65' y='155' font-size='13' fill='%23334155' text-anchor='start'%3E45°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-yuz-tomon-burchak",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#1258cfc2"
+    },
+    {
+      "q": "Rombning yuzi 72 sm², tomoni esa 12 sm. Rombning o'tkir burchagi necha gradus?",
+      "v": [
+        "60°",
+        "30°",
+        "45°",
+        "150°"
+      ],
+      "t": 1,
+      "izoh": "S = a²·sinα formulasiga qo'yamiz: 72 = 144·sinα, demak sinα = 0,5. O'tkir burchak uchun bu α = 30° degani.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-yuz-tomon-burchak",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#a45266fb"
+    },
+    {
+      "q": "Rombning yuzi 96 sm², tomoni esa 12 sm. Rombning balandligi necha santimetr?",
+      "v": [
+        "16 sm",
+        "4 sm",
+        "84 sm",
+        "8 sm"
+      ],
+      "t": 3,
+      "izoh": "Romb parallelogramm bo'lgani uchun S = a·h. Bundan h = S : a = 96 : 12 = 8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,112.2 249,150 150,187.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='187.8' x2='124.8' y2='121.8' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='128.4,131.2 119,134.7 115.4,125.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='145.4' y='158.8' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='104.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='205.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='92.5' y='127.1' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-balandlik",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#253f5f08"
+    },
+    {
+      "q": "Devorning romb shaklidagi bo'yalgan qismi tomoni 20 sm, balandligi esa 15 sm. Bu qismning yuzi necha kvadrat santimetr?",
+      "v": [
+        "150 sm²",
+        "300 sm²",
+        "35 sm²",
+        "600 sm²"
+      ],
+      "t": 1,
+      "izoh": "Romb yuzini tomon va shu tomonga tushirilgan balandlik ko'paytmasi sifatida hisoblaymiz: S = a·h = 20·15 = 300 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,105.3 249,150 150,194.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='194.7' x2='116.5' y2='120.4' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='120.6,129.6 111.5,133.7 107.4,124.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='141.2' y='161.6' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='97.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='212.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='92.5' y='123.7' font-size='13' fill='%23334155' text-anchor='end'%3E20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-balandlik",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#2a99e239"
+    },
+    {
+      "q": "Uchastka romb shaklida bo'lib, uning diagonallari 30 m va 40 m. Rombning balandligi, ya'ni qarama-qarshi tomonlari orasidagi masofa, necha metr?",
+      "v": [
+        "12 m",
+        "48 m",
+        "24 m",
+        "25 m"
+      ],
+      "t": 2,
+      "izoh": "Diagonallar yarmi bo'yicha tomon a² = 15² + 20² = 625 dan a = 25 m. Yuz S = 30·40 : 2 = 600 m². Balandlik esa h = S : a = 600 : 25 = 24 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,75.8 249,150 150,224.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='75.8' x2='150' y2='224.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='224.3' x2='78.7' y2='129.2' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='86.7,123.2 92.7,131.2 84.7,137.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='113' y='168' font-size='13' fill='%23334155' text-anchor='start'%3Eh = ?%3C/text%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='67.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='242.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E40 m%3C/text%3E%3Ctext x='157' y='112.9' font-size='13' fill='%23334155' text-anchor='start'%3E30 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-balandlik",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#7fd535b4"
+    },
+    {
+      "q": "Rombning balandligi 12 sm, o'tkir burchagi esa 30°. Rombning perimetri necha santimetr?",
+      "v": [
+        "96 sm",
+        "24 sm",
+        "48 sm",
+        "144 sm"
+      ],
+      "t": 0,
+      "izoh": "Balandlik h = a·sinα munosabatidan foydalanamiz: 12 = a·sin30° = a·0,5, demak a = 24 sm. Perimetr P = 4·24 = 96 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,123.5 249,150 150,176.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='176.5' x2='136.7' y2='127' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='139.3,136.7 129.7,139.3 127.1,129.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='151.4' y='155.8' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='115.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='194.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='65' y='155' font-size='13' fill='%23334155' text-anchor='start'%3E30°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "romb-balandlik",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#78ae24df"
+    },
+    {
+      "q": "Rombning yuzi 96 sm², perimetri esa 48 sm. Rombga ichki chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "2 sm",
+        "4 sm",
+        "8 sm",
+        "16 sm"
+      ],
+      "t": 1,
+      "izoh": "Tomon a = 48 : 4 = 12 sm, balandlik h = S : a = 96 : 12 = 8 sm. Ichki aylana qarama-qarshi ikki tomonga tegadi, shuning uchun uning diametri balandlikka teng: r = 8 : 2 = 4 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='35.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='51,150 150,112.2 249,150 150,187.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='104.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='205.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cline x1='150' y1='150' x2='137.4' y2='117' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='143' font-size='13' fill='%23334155' text-anchor='start'%3Er = ?%3C/text%3E%3Ctext x='150' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3ES = 96 sm², P = 48 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-ichki-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#39b81451"
+    },
+    {
+      "q": "Rombning diagonallari 12 sm va 16 sm. Rombga ichki chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "4,8 sm",
+        "9,6 sm",
+        "5 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Tomon a² = 6² + 8² = 100 dan a = 10 sm, yuz esa S = 12·16 : 2 = 96 sm². Balandlik h = 96 : 10 = 9,6 sm, radius esa uning yarmi: r = 4,8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='59.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='51,150 150,75.8 249,150 150,224.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='75.8' x2='150' y2='224.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='67.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='242.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='157' y='112.9' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "romb-ichki-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#0e2ab903"
+    },
+    {
+      "q": "Romb shaklidagi bog' maydonining tomoni 25 m, qarama-qarshi tomonlari orasidagi masofa esa 24 m. Shu maydonga to'liq joylashadigan eng katta dumaloq gulzorning radiusi necha metr?",
+      "v": [
+        "24 m",
+        "12,5 m",
+        "6 m",
+        "12 m"
+      ],
+      "t": 3,
+      "izoh": "Eng katta doira rombga ichki chizilgan aylana bo'ladi, u qarama-qarshi tomonlarga tegadi. Uning diametri qarama-qarshi tomonlar orasidagi masofaga, ya'ni rombning balandligiga teng: r = 24 : 2 = 12 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='59.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='51,150 150,75.7 249,150 150,224.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='67.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='242.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='92.5' y='108.9' font-size='13' fill='%23334155' text-anchor='end'%3E25 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-ichki-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#72371528"
+    },
+    {
+      "q": "Romb shaklidagi belgi ichiga aylana chizilgan bo'lib, uning radiusi 6 sm. Rombning tomoni 15 sm bo'lsa, rombning yuzi necha kvadrat santimetr?",
+      "v": [
+        "90 sm²",
+        "360 sm²",
+        "180 sm²",
+        "225 sm²"
+      ],
+      "t": 2,
+      "izoh": "Ichki aylananing diametri rombning balandligiga teng: h = 2·6 = 12 sm. Yuz S = a·h = 15·12 = 180 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='44.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='51,150 150,100.5 249,150 150,199.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='92.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='217.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='92.5' y='121.3' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-ichki-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#979a76ed"
+    },
+    {
+      "q": "Romb shaklidagi ramkaning tomoni 35 sm. Ramkani chetlari bo'ylab o'rab chiqish uchun necha santimetr lenta kerak?",
+      "v": [
+        "140 sm",
+        "70 sm",
+        "105 sm",
+        "1225 sm"
+      ],
+      "t": 0,
+      "izoh": "Rombning to'rtala tomoni teng bo'lgani uchun perimetr P = 4·a. Demak P = 4·35 = 140 sm lenta kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,90.5 249,150 150,209.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='82.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='227.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='92.5' y='116.3' font-size='13' fill='%23334155' text-anchor='end'%3E35 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-perimetr-kontekst",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#f1fb718d"
+    },
+    {
+      "q": "Bekzod romb shaklidagi gilamning chetini jiyak bilan bezatdi va bunga 3,2 m jiyak sarfladi. Gilamning tomoni necha santimetr?",
+      "v": [
+        "160 sm",
+        "40 sm",
+        "80 sm",
+        "8 sm"
+      ],
+      "t": 2,
+      "izoh": "Jiyak uzunligi perimetrga teng: 3,2 m = 320 sm. Tomon a = P : 4 = 320 : 4 = 80 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-perimetr-kontekst",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#bc7031b8"
+    },
+    {
+      "q": "Romb shaklidagi tomorqaning perimetri 68 m. Tomorqa diagonallaridan biri 30 m bo'lsa, ikkinchi diagonali necha metr?",
+      "v": [
+        "8 m",
+        "32 m",
+        "34 m",
+        "16 m"
+      ],
+      "t": 3,
+      "izoh": "Tomon a = 68 : 4 = 17 m. Berilgan diagonalning yarmi 15 m, ikkinchisining yarmi esa √(17² − 15²) = √64 = 8 m. Demak ikkinchi diagonal 2·8 = 16 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,97.2 249,150 150,202.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='97.2' x2='150' y2='202.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='89.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='220.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E30 m%3C/text%3E%3Ctext x='157' y='123.6' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='92.5' y='119.6' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-perimetr-kontekst",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#70b673d9"
+    },
+    {
+      "q": "Romb shaklidagi bog' uchastkasining perimetri 100 m, yuzi esa 600 m². Uchastka diagonallari uzunliklarining yig'indisi necha metr?",
+      "v": [
+        "50 m",
+        "70 m",
+        "80 m",
+        "35 m"
+      ],
+      "t": 1,
+      "izoh": "Tomon a = 25 m, demak yarim diagonallar uchun (d₁ : 2)² + (d₂ : 2)² = 625, ya'ni d₁² + d₂² = 2500. Yuzdan d₁·d₂ = 1200. (d₁ + d₂)² = 2500 + 2·1200 = 4900, demak yig'indi √4900 = 70 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "romb-perimetr-kontekst",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#f16bd75e"
+    },
+    {
+      "q": "Rombning o'tkir burchagi 70° ga teng. Shu burchakdan chiqqan diagonal uni ikkiga bo'ladi. Hosil bo'lgan burchaklarning har biri necha gradus?",
+      "v": [
+        "70°",
+        "140°",
+        "55°",
+        "35°"
+      ],
+      "t": 3,
+      "izoh": "Rombning har bir diagonali o'zi chiqqan burchakni teng ikkiga bo'ladi, chunki diagonal hosil qilgan uchburchak teng yonli. Demak har bir burchak 70° : 2 = 35°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-burchak-bissektrisa",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#5452d58b"
+    },
+    {
+      "q": "ABCD rombda ∠BAD = 110°, unga AC diagonal o'tkazilgan. ∠ACB burchak necha gradus?",
+      "v": [
+        "35°",
+        "55°",
+        "70°",
+        "110°"
+      ],
+      "t": 1,
+      "izoh": "Romb tomonlari teng, shuning uchun ABC uchburchak teng yonli. ∠ABC = 180° − 110° = 70°, asosidagi burchaklar esa (180° − 70°) : 2 = 55° ga teng. Demak ∠ACB = 55°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-burchak-bissektrisa",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#c6299e01"
+    },
+    {
+      "q": "Rombning diagonallari kesishganda to'rtta to'g'ri burchakli uchburchak hosil bo'ladi. Ulardan biridagi kichik o'tkir burchak 32° bo'lsa, rombning o'tkir burchagi necha gradus?",
+      "v": [
+        "32°",
+        "116°",
+        "64°",
+        "58°"
+      ],
+      "t": 2,
+      "izoh": "Diagonallar perpendikulyar va burchaklarni teng ikkiga bo'ladi, shuning uchun uchburchakdagi o'tkir burchaklar rombning burchaklari yarmiga teng. Kichigi 32° bo'lsa, rombning o'tkir burchagi 2·32° = 64°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-burchak-bissektrisa",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#a7d3c7c2"
+    },
+    {
+      "q": "ABCD rombning AC diagonali BC tomon bilan 25° li burchak hosil qiladi. Rombning katta burchagi necha gradus?",
+      "v": [
+        "130°",
+        "50°",
+        "155°",
+        "65°"
+      ],
+      "t": 0,
+      "izoh": "AC diagonal ∠BCD burchakni teng ikkiga bo'ladi, demak ∠BCD = 2·25° = 50°. Qo'shni burchaklar yig'indisi 180° bo'lgani uchun katta burchak 180° − 50° = 130°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-burchak-bissektrisa",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#c172a498"
+    },
+    {
+      "q": "Kvadrat shaklidagi kafel plitkasining tomoni 7 sm. Plitkaning diagonali necha santimetr?",
+      "v": [
+        "14 sm",
+        "7√2 sm",
+        "7√3 sm",
+        "49 sm"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat diagonali d = a√2 formulasi bilan topiladi, chunki d² = a² + a² = 2a². Demak d = 7√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='76,76 224,76 224,224 76,224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='76' y1='76' x2='224' y2='224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='88,76 88,88 76,88' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='68' y='70' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='232' y='70' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='232' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='68' y='240' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-diagonal-tomondan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#fd9c7870"
+    },
+    {
+      "q": "Kvadrat shaklidagi stol qopqog'ining tomoni 90 sm. Qopqoqning bir burchagidan qarama-qarshi burchagigacha bo'lgan masofa necha santimetr?",
+      "v": [
+        "90√2 sm",
+        "180 sm",
+        "90√3 sm",
+        "45√2 sm"
+      ],
+      "t": 0,
+      "izoh": "Izlanayotgan masofa kvadratning diagonali bo'ladi. d = a√2 formulasiga ko'ra d = 90√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='76,76 224,76 224,224 76,224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='76' y1='76' x2='224' y2='224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='88,76 88,88 76,88' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='68' y='70' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='232' y='70' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='232' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='68' y='240' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3E90 sm%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-diagonal-tomondan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#96737ab5"
+    },
+    {
+      "q": "Kvadrat shaklidagi maydonchaning perimetri 48 m. Maydonchaning diagonali necha metr?",
+      "v": [
+        "48√2 m",
+        "24 m",
+        "6√2 m",
+        "12√2 m"
+      ],
+      "t": 3,
+      "izoh": "Avval tomonni topamiz: a = 48 : 4 = 12 m. So'ng diagonal d = a√2 = 12√2 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='76,76 224,76 224,224 76,224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='76' y1='76' x2='224' y2='224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='88,76 88,88 76,88' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='68' y='70' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='232' y='70' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='232' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='68' y='240' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-diagonal-tomondan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#3a909b51"
+    },
+    {
+      "q": "Kvadrat shaklidagi xonaning yuzi 32 m². Xonaning bir burchagidan qarama-qarshi burchagiga tortilgan simning uzunligi necha metr?",
+      "v": [
+        "4√2 m",
+        "16 m",
+        "8 m",
+        "32√2 m"
+      ],
+      "t": 2,
+      "izoh": "Diagonal orqali yuz S = d² : 2 ko'rinishda yoziladi, chunki d = a√2. Demak d² = 2S = 64 va d = 8 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='76,76 224,76 224,224 76,224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='76' y1='76' x2='224' y2='224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='88,76 88,88 76,88' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='68' y='70' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='232' y='70' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='232' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='68' y='240' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-diagonal-tomondan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#720259d8"
+    },
+    {
+      "q": "Kvadratning diagonali 10√2 sm ga teng. Kvadratning perimetri necha santimetr?",
+      "v": [
+        "40 sm",
+        "40√2 sm",
+        "20 sm",
+        "80 sm"
+      ],
+      "t": 0,
+      "izoh": "d = a√2 formulasidan a = d : √2 = 10√2 : √2 = 10 sm. Perimetr P = 4·10 = 40 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='76,76 224,76 224,224 76,224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='76' y1='76' x2='224' y2='224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='88,76 88,88 76,88' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='68' y='70' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='232' y='70' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='232' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='68' y='240' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E10√2 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-tomon-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#5f559061"
+    },
+    {
+      "q": "Kvadrat shaklidagi salfetkaning diagonali 24 sm. Salfetkaning tomoni necha santimetr?",
+      "v": [
+        "12 sm",
+        "24√2 sm",
+        "12√2 sm",
+        "6√2 sm"
+      ],
+      "t": 2,
+      "izoh": "a = d : √2 formulasini qo'llaymiz: a = 24 : √2 = 24√2 : 2 = 12√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='76,76 224,76 224,224 76,224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='76' y1='76' x2='224' y2='224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='88,76 88,88 76,88' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='68' y='70' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='232' y='70' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='232' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='68' y='240' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E24 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-tomon-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#80c560ac"
+    },
+    {
+      "q": "Kvadrat shaklidagi rasm ramkasining diagonali 18√2 sm. Ramkani yasash uchun necha santimetr reyka kerak bo'ladi?",
+      "v": [
+        "72√2 sm",
+        "36 sm",
+        "18 sm",
+        "72 sm"
+      ],
+      "t": 3,
+      "izoh": "Tomon a = 18√2 : √2 = 18 sm. Reyka uzunligi perimetrga teng: P = 4·18 = 72 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='76,76 224,76 224,224 76,224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='76' y1='76' x2='224' y2='224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='88,76 88,88 76,88' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='68' y='70' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='232' y='70' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='232' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='68' y='240' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E18√2 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-tomon-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#9c8e0070"
+    },
+    {
+      "q": "Har birining diagonali 8 sm bo'lgan ikkita bir xil kvadrat plitka yonma-yon qo'yildi. Hosil bo'lgan to'g'ri to'rtburchakning perimetri necha santimetr?",
+      "v": [
+        "12√2 sm",
+        "24√2 sm",
+        "16√2 sm",
+        "32 sm"
+      ],
+      "t": 1,
+      "izoh": "Plitkaning tomoni a = 8 : √2 = 4√2 sm. Yonma-yon qo'yilganda to'rtburchak tomonlari 8√2 sm va 4√2 sm bo'ladi. Perimetr P = 2·(8√2 + 4√2) = 24√2 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-tomon-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#19658758"
+    },
+    {
+      "q": "Kvadrat shaklidagi lyukning diagonali 12 sm. Lyukning yuzi necha kvadrat santimetr?",
+      "v": [
+        "144 sm²",
+        "36 sm²",
+        "24 sm²",
+        "72 sm²"
+      ],
+      "t": 3,
+      "izoh": "Kvadrat yuzi diagonal orqali S = d² : 2 ko'rinishida yoziladi. Demak S = 144 : 2 = 72 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='76,76 224,76 224,224 76,224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='76' y1='76' x2='224' y2='224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='88,76 88,88 76,88' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='68' y='70' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='232' y='70' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='232' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='68' y='240' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-yuz-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#cc203221"
+    },
+    {
+      "q": "Kvadrat shaklidagi oynaning diagonali 1,6 m. Oynaning yuzi necha kvadrat metr?",
+      "v": [
+        "2,56 m²",
+        "1,28 m²",
+        "0,64 m²",
+        "3,2 m²"
+      ],
+      "t": 1,
+      "izoh": "S = d² : 2 formulasini qo'llaymiz. d² = 1,6·1,6 = 2,56, demak S = 2,56 : 2 = 1,28 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='76,76 224,76 224,224 76,224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='76' y1='76' x2='224' y2='224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='88,76 88,88 76,88' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='68' y='70' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='232' y='70' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='232' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='68' y='240' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E1,6 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-yuz-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#7e97befd"
+    },
+    {
+      "q": "Kvadrat shaklidagi ikki xonadan birinchisining diagonali 6 m, ikkinchisiniki esa 8 m. Ikkala xonaning umumiy yuzi necha kvadrat metr?",
+      "v": [
+        "100 m²",
+        "25 m²",
+        "50 m²",
+        "14 m²"
+      ],
+      "t": 2,
+      "izoh": "Har bir xona yuzi S = d² : 2 formulasi bilan topiladi: 36 : 2 = 18 m² va 64 : 2 = 32 m². Umumiy yuz 18 + 32 = 50 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-yuz-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#7d9b65fb"
+    },
+    {
+      "q": "Kvadrat shaklidagi uchastkaning yuzi 50 m². Uchastkaning diagonali bo'ylab ariq qazilsa, ariqning uzunligi necha metr bo'ladi?",
+      "v": [
+        "10 m",
+        "25 m",
+        "5√2 m",
+        "100 m"
+      ],
+      "t": 0,
+      "izoh": "S = d² : 2 formulasidan d² = 2S = 100 kelib chiqadi. Demak diagonal d = 10 m va ariq uzunligi ham 10 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='76,76 224,76 224,224 76,224' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='76' y1='76' x2='224' y2='224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='88,76 88,88 76,88' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='68' y='70' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='232' y='70' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='232' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='68' y='240' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-yuz-diagonaldan",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#f7f9470f"
+    },
+    {
+      "q": "Kvadrat shaklidagi taxtaning tomoni 24 sm. Taxtadan qirqib olish mumkin bo'lgan eng katta doiraning radiusi necha santimetr?",
+      "v": [
+        "24 sm",
+        "12 sm",
+        "12√2 sm",
+        "6 sm"
+      ],
+      "t": 1,
+      "izoh": "Eng katta doira kvadratga ichki chizilgan aylana bo'ladi va u to'rtala tomonga tegadi. Uning diametri tomonga teng, demak r = 24 : 2 = 12 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='75' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='75,75 225,75 225,225 75,225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='87,75 87,87 75,87' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='67' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='233' y='69' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='233' y='241' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='67' y='241' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='66' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Cline x1='150' y1='150' x2='225' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='187.5' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3Er%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-ichki-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#4344c2a2"
+    },
+    {
+      "q": "Kvadrat shaklidagi qutining tubiga to'rtala devorga tegib turadigan dumaloq lagan joylashdi. Lagan diametri 30 sm bo'lsa, quti tubining yuzi necha kvadrat santimetr?",
+      "v": [
+        "900 sm²",
+        "225 sm²",
+        "1800 sm²",
+        "450 sm²"
+      ],
+      "t": 0,
+      "izoh": "Lagan kvadratga ichki chizilgan aylana bo'lgani uchun uning diametri kvadrat tomoniga teng: a = 30 sm. Yuz S = 30·30 = 900 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='75' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='75,75 225,75 225,225 75,225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='87,75 87,87 75,87' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='67' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='233' y='69' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='233' y='241' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='67' y='241' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='66' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ichki-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#14c53539"
+    },
+    {
+      "q": "Kvadratga ichki chizilgan aylananing uzunligi 20π sm ga teng. Kvadratning yuzi necha kvadrat santimetr?",
+      "v": [
+        "100 sm²",
+        "1600 sm²",
+        "200 sm²",
+        "400 sm²"
+      ],
+      "t": 3,
+      "izoh": "Aylana uzunligi C = 2πr = 20π dan r = 10 sm. Ichki aylananing diametri kvadrat tomoniga teng: a = 20 sm. Yuz S = 20·20 = 400 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='75' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='75,75 225,75 225,225 75,225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='87,75 87,87 75,87' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='67' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='233' y='69' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='233' y='241' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='67' y='241' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='244' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-ichki-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#ae65ed40"
+    },
+    {
+      "q": "Diagonali 20 sm bo'lgan kvadrat shaklidagi qog'ozdan eng katta doira qirqib olindi. Doiraning radiusi necha santimetr?",
+      "v": [
+        "10 sm",
+        "10√2 sm",
+        "5√2 sm",
+        "5 sm"
+      ],
+      "t": 2,
+      "izoh": "Avval tomonni topamiz: a = 20 : √2 = 10√2 sm. Eng katta doira ichki chizilgan aylana bo'lgani uchun r = a : 2 = 5√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='75' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='75,75 225,75 225,225 75,225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='75' y1='75' x2='225' y2='225' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='87,75 87,87 75,87' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='67' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='233' y='69' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='233' y='241' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='67' y='241' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='158' y='144' font-size='13' fill='%23334155' text-anchor='start'%3E20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ichki-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#d6588a13"
+    },
+    {
+      "q": "Kvadratning tomoni 8 sm. Kvadrat atrofiga chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "4√2 sm",
+        "4 sm",
+        "8√2 sm",
+        "2√2 sm"
+      ],
+      "t": 0,
+      "izoh": "Tashqi aylananing markazi diagonallar kesishgan nuqtada, radiusi esa diagonalning yarmi. d = 8√2 bo'lgani uchun R = 8√2 : 2 = 4√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='91.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='85,85 215,85 215,215 85,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='97,85 97,97 85,97' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='77' y='79' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='223' y='79' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='223' y='231' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='77' y='231' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='76' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Cline x1='150' y1='150' x2='215' y2='85' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='190.5' y='138' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-tashqi-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#b51f8e5e"
+    },
+    {
+      "q": "Radiusi 9 sm bo'lgan dumaloq taxtaga to'rtala uchi cheti bilan tegadigan kvadrat chizildi. Kvadratning tomoni necha santimetr?",
+      "v": [
+        "9 sm",
+        "18 sm",
+        "9√2 sm",
+        "18√2 sm"
+      ],
+      "t": 2,
+      "izoh": "Kvadratning diagonali aylana diametriga teng: d = 2·9 = 18 sm. Tomon a = d : √2 = 18 : √2 = 9√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='91.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='85,85 215,85 215,215 85,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='97,85 97,97 85,97' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='77' y='79' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='223' y='79' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='223' y='231' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='77' y='231' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='76' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='150' y1='150' x2='215' y2='85' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='190.5' y='138' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-tashqi-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#dbfe9899"
+    },
+    {
+      "q": "Kvadrat atrofiga chizilgan aylananing radiusi 5√2 sm. Kvadratning yuzi necha kvadrat santimetr?",
+      "v": [
+        "50 sm²",
+        "200 sm²",
+        "25 sm²",
+        "100 sm²"
+      ],
+      "t": 3,
+      "izoh": "Diagonal d = 2R = 10√2 sm. Tomon a = d : √2 = 10 sm, yuz esa S = 10·10 = 100 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='91.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='85,85 215,85 215,215 85,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='97,85 97,97 85,97' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='77' y='79' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='223' y='79' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='223' y='231' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='77' y='231' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Cline x1='150' y1='150' x2='215' y2='85' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='190.5' y='138' font-size='13' fill='%23334155' text-anchor='middle'%3E5√2 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-tashqi-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#c3babadc"
+    },
+    {
+      "q": "Kvadrat shaklidagi dasturxonning yuzi 64 dm². Dasturxon dumaloq stol ustiga uning to'rtala uchi ham stol chetiga tegib turadigan qilib yoyildi. Stolning radiusi necha detsimetr?",
+      "v": [
+        "8√2 dm",
+        "4√2 dm",
+        "4 dm",
+        "8 dm"
+      ],
+      "t": 1,
+      "izoh": "Dasturxon tomoni a = √64 = 8 dm, diagonali esa d = 8√2 dm. To'rtala uch stol chetida bo'lgani uchun aylana kvadrat atrofiga chizilgan: R = d : 2 = 4√2 dm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='91.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='85,85 215,85 215,215 85,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='97,85 97,97 85,97' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='77' y='79' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='223' y='79' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='223' y='231' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='77' y='231' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Cline x1='150' y1='150' x2='215' y2='85' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='186' y='132' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Ctext x='150' y='170' font-size='13' fill='%23334155' text-anchor='middle'%3ES = 64 dm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-tashqi-aylana",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#5cf5e500"
+    },
+    {
+      "q": "Bir kvadratga ichki chizilgan aylana va shu kvadrat atrofiga chizilgan aylana radiuslarining nisbati nimaga teng?",
+      "v": [
+        "1 : 2",
+        "2 : 1",
+        "1 : 4",
+        "1 : √2"
+      ],
+      "t": 3,
+      "izoh": "Ichki aylana radiusi r = a : 2, tashqi aylana radiusi esa R = a√2 : 2. Nisbat r : R = (a : 2) : (a√2 : 2) = 1 : √2.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='84.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='60' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='90,90 210,90 210,210 90,210' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='102,90 102,102 90,102' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='82' y='84' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='218' y='84' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='218' y='226' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='82' y='226' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-aylana-birgalikda",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#fcf428cc"
+    },
+    {
+      "q": "Kvadratga ichki chizilgan aylananing radiusi 6 sm. Shu kvadrat atrofiga chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "12 sm",
+        "6√2 sm",
+        "6 sm",
+        "12√2 sm"
+      ],
+      "t": 1,
+      "izoh": "Ichki aylananing diametri kvadrat tomoniga teng, demak a = 2·6 = 12 sm. Kvadratning diagonali d = 12√2 sm, tashqi aylana radiusi esa uning yarmi: R = 12√2 : 2 = 6√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='84.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='60' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='90,90 210,90 210,210 90,210' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='102,90 102,102 90,102' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='82' y='84' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='218' y='84' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='218' y='226' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='82' y='226' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Cline x1='150' y1='150' x2='210' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='180' y='166' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Cline x1='150' y1='150' x2='210' y2='90' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='186' y='132' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-aylana-birgalikda",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#f5a662e2"
+    },
+    {
+      "q": "Kvadrat shaklidagi bog'ning tomoni 20 m, markazida esa radiusi 6 m bo'lgan dumaloq hovuz bor. Bog'ning hovuzdan tashqari qismining yuzi necha kvadrat metr? (π ≈ 3,14)",
+      "v": [
+        "113,04 m²",
+        "400 m²",
+        "286,96 m²",
+        "371,74 m²"
+      ],
+      "t": 2,
+      "izoh": "Bog' yuzi S = 20·20 = 400 m². Hovuz yuzi S = 3,14·6² = 3,14·36 = 113,04 m². Ayirma 400 − 113,04 = 286,96 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='45' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='150' x2='195' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='172.5' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E6 m%3C/text%3E%3Cpolygon points='75,75 225,75 225,225 75,225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='87,75 87,87 75,87' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='67' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='233' y='69' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='233' y='241' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='67' y='241' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='66' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-aylana-birgalikda",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#7f565747"
+    },
+    {
+      "q": "Tomoni 12 sm bo'lgan kvadratga aylana, shu aylanaga esa yana bir kvadrat ichki chizildi. Ichki kvadratning yuzi necha kvadrat santimetr?",
+      "v": [
+        "72 sm²",
+        "36 sm²",
+        "144 sm²",
+        "18 sm²"
+      ],
+      "t": 0,
+      "izoh": "Katta kvadratga ichki chizilgan aylananing diametri 12 sm. Ichki kvadratning diagonali shu diametrga teng, demak uning yuzi S = d² : 2 = 144 : 2 = 72 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='75' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='75,75 225,75 225,225 75,225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='150,75 225,150 150,225 75,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='87,75 87,87 75,87' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='67' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='233' y='69' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='233' y='241' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='67' y='241' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='66' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-aylana-birgalikda",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#793b3ab4"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning tomonlari o'rtalari ketma-ket kesmalar bilan tutashtirildi. Hosil bo'lgan to'rtburchak qanday shakl bo'ladi?",
+      "v": [
+        "Kvadrat",
+        "Romb",
+        "Teng yonli trapetsiya",
+        "To'g'ri to'rtburchak"
+      ],
+      "t": 1,
+      "izoh": "Hosil bo'lgan to'rtburchakning tomonlari dastlabki shakl diagonallariga parallel va ularning yarmiga teng. To'g'ri to'rtburchakda diagonallar teng bo'lgani uchun to'rtala yangi tomon ham teng chiqadi, ya'ni romb hosil bo'ladi. Teng yonli trapetsiya bo'la olmaydi, chunki o'rta nuqtalar to'rtburchagining qarama-qarshi tomonlari doim juft-juft parallel.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-nuqtalar-shakli",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#b50e0f61"
+    },
+    {
+      "q": "Rombning tomonlari o'rtalari ketma-ket tutashtirilsa, qanday to'rtburchak hosil bo'ladi?",
+      "v": [
+        "To'g'ri to'rtburchak",
+        "Romb",
+        "Kvadrat",
+        "Trapetsiya"
+      ],
+      "t": 0,
+      "izoh": "Yangi to'rtburchak tomonlari rombning diagonallariga parallel bo'ladi. Rombda diagonallar o'zaro perpendikulyar bo'lgani uchun yangi shaklning barcha burchaklari to'g'ri burchak, ya'ni u to'g'ri to'rtburchak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-nuqtalar-shakli",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#e491a52a"
+    },
+    {
+      "q": "Tomonlari 16 sm va 12 sm bo'lgan to'g'ri to'rtburchak tomonlarining o'rtalari tutashtirildi. Hosil bo'lgan rombning yuzi necha kvadrat santimetr?",
+      "v": [
+        "192 sm²",
+        "48 sm²",
+        "24 sm²",
+        "96 sm²"
+      ],
+      "t": 3,
+      "izoh": "Burchaklarda kesilgan to'rtta uchburchakning yuzi jami dastlabki shakl yuzining yarmini tashkil qiladi. Demak romb yuzi S = 16·12 : 2 = 96 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,78.8 245,78.8 245,221.3 55,221.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='150,78.8 245,150 150,221.3 55,150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='78.8' r='3' fill='%235b4bc4'/%3E%3Ccircle cx='245' cy='150' r='3' fill='%235b4bc4'/%3E%3Ccircle cx='150' cy='221.3' r='3' fill='%235b4bc4'/%3E%3Ccircle cx='55' cy='150' r='3' fill='%235b4bc4'/%3E%3Ctext x='150' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='67,78.8 67,90.8 55,90.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='72.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='72.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='237.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='237.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='69.8' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='46' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-nuqtalar-shakli",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#c5f3721d"
+    },
+    {
+      "q": "Diagonallari 20 sm va 12 sm bo'lgan rombning tomonlari o'rtalari tutashtirilib to'g'ri to'rtburchak yasaldi. Bu to'g'ri to'rtburchakning perimetri necha santimetr?",
+      "v": [
+        "64 sm",
+        "16 sm",
+        "32 sm",
+        "24 sm"
+      ],
+      "t": 2,
+      "izoh": "Yangi to'rtburchakning tomonlari romb diagonallarining yarmiga teng, ya'ni 10 sm va 6 sm. Perimetr P = 2·(10 + 6) = 32 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,150 150,90.6 249,150 150,209.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='150' x2='249' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='90.6' x2='150' y2='209.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='162,150 162,138 150,138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='82.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='257' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='227.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='157' y='120.3' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-nuqtalar-shakli",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#f8c56655"
+    },
+    {
+      "q": "Quyidagi mulohazalardan qaysi biri har qanday romb uchun doim to'g'ri bo'ladi?",
+      "v": [
+        "Diagonallari o'zaro perpendikulyar",
+        "Diagonallari teng",
+        "Barcha burchaklari to'g'ri",
+        "Diagonallari teng va perpendikulyar"
+      ],
+      "t": 0,
+      "izoh": "Rombning diagonallari doim o'zaro perpendikulyar va burchaklarini teng ikkiga bo'ladi. Diagonallarning tengligi esa faqat kvadratda bajariladi, oddiy rombda emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xossa-mulohaza",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#373c65f1"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning romb ham bo'lishi uchun unga qanday qo'shimcha shart yetarli?",
+      "v": [
+        "Diagonallari teng bo'lishi",
+        "Diagonallari kesishishi",
+        "Qo'shni tomonlari teng bo'lishi",
+        "Burchaklari to'g'ri bo'lishi"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri to'rtburchakda diagonallar allaqachon teng va burchaklar to'g'ri, shuning uchun bu shartlar yangi ma'lumot bermaydi. Qo'shni tomonlar teng bo'lsa, barcha tomonlar tenglashadi va shakl romb, ya'ni kvadrat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xossa-mulohaza",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#f5cd96e2"
+    },
+    {
+      "q": "Parallelogrammning diagonallari teng va o'zaro perpendikulyar ekani ma'lum. Bu parallelogramm qanday shakl bo'ladi?",
+      "v": [
+        "Romb",
+        "To'g'ri to'rtburchak",
+        "To'g'ri burchakli trapetsiya",
+        "Kvadrat"
+      ],
+      "t": 3,
+      "izoh": "Diagonallarning tengligi parallelogrammni to'g'ri to'rtburchak qiladi, perpendikulyarligi esa romb qiladi. Ikkala xossa birga bajarilsa, shakl kvadrat bo'ladi. Trapetsiya variantlari mos emas, chunki shartda shakl parallelogramm deb berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xossa-mulohaza",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#98beb4f7"
+    },
+    {
+      "q": "Romb, kvadrat va to'g'ri to'rtburchak haqidagi quyidagi mulohazalardan qaysi biri noto'g'ri?",
+      "v": [
+        "Har qanday kvadrat rombdir",
+        "Har qanday romb kvadratdir",
+        "Har qanday kvadrat to'g'ri to'rtburchakdir",
+        "Rombning diagonali burchagini teng ikkiga bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat barcha tomonlari teng bo'lgani uchun rombning, barcha burchaklari to'g'ri bo'lgani uchun to'g'ri to'rtburchakning xususiy holi. Teskarisi esa o'rinli emas: burchaklari to'g'ri bo'lmagan romb kvadrat emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xossa-mulohaza",
+      "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat#1c8e7366"
+    }
+  ]
+}

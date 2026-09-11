@@ -1,0 +1,456 @@
+{
+  "nom": "47-mavzu. Tola Ichki Qaytish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "To'la ichki qaytish hodisasi qachon yuz beradi?",
+      "v": [
+        "Sindirish ko'rsatkichi katta muhitdan kichik muhitga tushganda, tushish burchagi ma'lum burchakdan katta bo'lganda",
+        "Sindirish ko'rsatkichi kichik muhitdan katta muhitga tushganda, istalgan burchakda",
+        "Ikki muhit chegarasiga nur perpendikulyar tushganda",
+        "Nur bir jinsli muhitda tarqalayotganda"
+      ],
+      "t": 0,
+      "izoh": "Sindirish ko'rsatkichi katta muhitdan kichik muhitga tushganda tushish burchagi chegaraviy burchakdan katta bo'lsa, nur chegaradan to'la qaytadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#f492b005"
+    },
+    {
+      "q": "Tushish burchagining chegaraviy qiymati qanday ifodalanadi?",
+      "v": [
+        "sin α₀ = n₂/n₁",
+        "sin α₀ = n₁/n₂",
+        "sin α₀ = n₁·n₂",
+        "α₀ = n₂/n₁"
+      ],
+      "t": 0,
+      "izoh": "Chegaraviy burchak sin α₀ = n₂/n₁ formula bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#3eb56f0d"
+    },
+    {
+      "q": "Nurning shishadan (n₁ = 1,5) havoga o'tishdagi chegaraviy burchagi taxminan qancha?",
+      "v": [
+        "42°",
+        "30°",
+        "60°",
+        "90°"
+      ],
+      "t": 0,
+      "izoh": "sin α₀ = 1/1,5 ≈ 0,667, bundan α₀ ≈ 42°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#83dcd462"
+    },
+    {
+      "q": "Chegaraviy burchak deganda nima tushuniladi?",
+      "v": [
+        "Sinish burchagi 90° ga teng bo'ladigan tushish burchagi",
+        "Sinish burchagi 0° ga teng bo'ladigan tushish burchagi",
+        "Qaytish burchagi tushish burchagiga teng bo'ladigan burchak",
+        "Nur sinmaydigan tushish burchagi"
+      ],
+      "t": 0,
+      "izoh": "Tushish burchagi α₀ chegaraviy qiymatga yetganda sinish burchagi β = 90° bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#93e5acad"
+    },
+    {
+      "q": "Shishadan havoga o'tayotgan nur uchun α = 30° bo'lganda sinish burchagi taxminan qancha bo'ladi?",
+      "v": [
+        "β ≈ 42°",
+        "β ≈ 30°",
+        "β ≈ 20°",
+        "β ≈ 90°"
+      ],
+      "t": 0,
+      "izoh": "Darslik misolida α = 30° da β ≈ 42° bo'ladi (70-a rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#d8c89a78"
+    },
+    {
+      "q": "Sinish burchagini aniqlash uchun qaysi ifoda ishlatiladi (47-§)?",
+      "v": [
+        "sin β = (n₁/n₂)·sin α",
+        "sin β = (n₂/n₁)·sin α",
+        "sin β = sin α",
+        "β = α·n₁"
+      ],
+      "t": 0,
+      "izoh": "Sinish burchagi sin β = (n₁/n₂)·sin α ifoda orqali aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#e0f36bca"
+    },
+    {
+      "q": "Shishadan havoga tushayotgan nurda α = 40° bo'lganda sinish burchagi qancha bo'ladi?",
+      "v": [
+        "β = 75°",
+        "β = 42°",
+        "β = 50°",
+        "β = 90°"
+      ],
+      "t": 0,
+      "izoh": "Darslikda α = 40° da β = 75° bo'ladi (70-b rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#04331f5b"
+    },
+    {
+      "q": "Tushish burchagi α₀ dan katta bo'lgan hollarda singan nur nima qiladi?",
+      "v": [
+        "Ikki muhit chegarasidan birinchi muhit ichiga to'la qaytadi",
+        "Ikkinchi muhitga o'tib ketadi",
+        "Chegarada so'nadi",
+        "Chegaradan perpendikulyar o'tadi"
+      ],
+      "t": 0,
+      "izoh": "Tushish burchagi α₀ dan katta bo'lganda singan nur chegaradan shu muhit ichiga to'la qaytadi — to'la ichki qaytish hodisasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#cd6737ab"
+    },
+    {
+      "q": "To'la ichki qaytish hodisasidan nima uchun foydalaniladi?",
+      "v": [
+        "Yorug'lik nurlarini biror yo'nalishga burish yoki nurlar dastasining o'rnini almashtirish uchun",
+        "Yorug'lik tezligini oshirish uchun",
+        "Nurlarni bir nuqtaga yig'ish uchun",
+        "Yorug'likni ranglarga ajratish uchun"
+      ],
+      "t": 0,
+      "izoh": "To'la ichki qaytishdan nurlarni biror yo'nalishga burish (71-a rasm) yoki nurlar dastasining o'rnini almashtirish (71-b rasm) uchun foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#566035eb"
+    },
+    {
+      "q": "To'la ichki qaytish hodisasini keng o'rganuvchi optikaning alohida sohasi qanday ataladi?",
+      "v": [
+        "«Nur tolalar optikasi»",
+        "«Geometrik optika»",
+        "«To'lqin optikasi»",
+        "«Kristall optikasi»"
+      ],
+      "t": 0,
+      "izoh": "Bu hodisa «Nur tolalar optikasi» deb ataluvchi optikaning alohida sohasi mutaxassislari tomonidan keng o'rganiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#472788be"
+    },
+    {
+      "q": "Nur tolasi qanday tuzilishga ega?",
+      "v": [
+        "Sindirish ko'rsatkichi katta shisha yoki plastik o'zak va uni o'rab turuvchi sindirish ko'rsatkichi kichik qobiqdan",
+        "Bir jinsli shisha silindrdan",
+        "Metall o'tkazgich va izolyatsiya qavatidan",
+        "Ichki qismi ko'zgulangan quvur shaklidan"
+      ],
+      "t": 0,
+      "izoh": "Tola sindirish ko'rsatkichlari farq qiluvchi silindr shaklidagi shisha yoki plastik o'zak hamda uni o'rab turuvchi qobiqdan tashkil topgan; o'zakniki qobiqnikidan katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#378a08d3"
+    },
+    {
+      "q": "Nur tolasida signal tashqariga chiqib ketmasdan tolaning ikkinchi uchidan chiqishining sababi nima?",
+      "v": [
+        "O'zak va qobiq chegarasida yorug'likning to'la ichki qaytish hodisasi yuz berishi",
+        "Tola devorining nurani yutishi",
+        "Signalning tola ichida sinishi",
+        "Tola materialining magnit xususiyati"
+      ],
+      "t": 0,
+      "izoh": "O'zakning sindirish ko'rsatkichi qobiqnikidan katta bo'lgani uchun o'zak-qobiq chegarasida to'la ichki qaytish yuz beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#d14f8f9a"
+    },
+    {
+      "q": "Tola o'zagining diametri qanday oralıqda bo'ladi?",
+      "v": [
+        "Bir necha mikrondan yuzlab mikrongacha",
+        "Bir necha millimetrdan bir santimetrgacha",
+        "Bir necha nanometrdan bir mikrongacha",
+        "Bir santimetrdan bir metrgacha"
+      ],
+      "t": 0,
+      "izoh": "Tola o'zagining diametri bir necha mikrondan yuzlab mikrongacha, qobiq qalinligi o'nlab mikrondan yuzlab mikrongacha bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#4c7e0650"
+    },
+    {
+      "q": "Nur tolali kabellar orqali yuborilgan signal qanday uzatiladi?",
+      "v": [
+        "Nihoyatda kam yo'qotish va yuqori sifat bilan uzoq masofalarga",
+        "Katta yo'qotish bilan faqat qisqa masofalarga",
+        "Faqat shahar ichidagi masofalarga",
+        "Faqat simsiz yo'l bilan"
+      ],
+      "t": 0,
+      "izoh": "Nur tolali kabellar orqali yuborilgan signal nihoyatda kam yo'qotish va yuqori sifat bilan uzoq masofalarga uzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#dcca51f8"
+    },
+    {
+      "q": "Nur tolali aloqa kabellari qayerlardan o'tkazilgan?",
+      "v": [
+        "Tinch va Atlantika okeanlarining suv ostidan",
+        "Faqat quruqlikdan",
+        "Kosmik fazodan",
+        "Sahrolar ostidan"
+      ],
+      "t": 0,
+      "izoh": "Nur tolali aloqa kabellari Tinch va Atlantika okeanlarining suv ostidan o'tkazilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#171021f5"
+    },
+    {
+      "q": "Nur tolalar optikasi tibbiyotda nima uchun qo'llaniladi?",
+      "v": [
+        "Odamning ichki a'zolarini ko'rish va tasvirga olish uchun",
+        "Suyaklarni rentgenlash uchun",
+        "Qon tarkibini tahlil qilish uchun",
+        "Dori moddalarini to'qimalarga yetkazish uchun"
+      ],
+      "t": 0,
+      "izoh": "Nur tolalar optikasi yordamida odamning ichki a'zolarini ko'rish, tasvirga olish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#e06d83ac"
+    },
+    {
+      "q": "Tibbiyotda nur tolali kabel qanday ishlatiladi?",
+      "v": [
+        "Kabel qizilo'ngach orqali oshqozonga tushiriladi; bir toladan yorug'lik beriladi, ikkinchisidan qaytgan yorug'lik qabul qilinadi",
+        "Kabel teri ostiga operatsiya yo'li bilan joylashtiriladi",
+        "Kabel orqali organizmga elektr toki uzatiladi",
+        "Kabel yordamida qon bosimi o'lchanadi"
+      ],
+      "t": 0,
+      "izoh": "Nur tolali kabel qizilo'ngach orqali oshqozonga tushiriladi; bir toladan yorug'lik beriladi, ikkinchisidan oshqozon devorlaridan qaytgan yorug'lik qabul qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#f73d0692"
+    },
+    {
+      "q": "Temperatura ortishi bilan suvning sindirish ko'rsatkichi biroz kamayadi. Bunda suv uchun to'la qaytishning chegaraviy burchagi qanday o'zgaradi?",
+      "v": [
+        "Kattalashadi",
+        "Kichiklashadi",
+        "O'zgarmaydi",
+        "Avval kichiklashib, keyin kattalashadi"
+      ],
+      "t": 0,
+      "izoh": "sin α₀ = n₂/n₁ da n₁ kamaysa, nisbat kattalashadi, demak α₀ ham kattalashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#014580ae"
+    },
+    {
+      "q": "Toza suv (1,33), shisha (1,5) va olmosning (2,42) qaysi birida to'la ichki qaytishning chegaraviy burchagi eng kichik?",
+      "v": [
+        "Olmosda",
+        "Shishada",
+        "Suvda",
+        "Barchasida bir xil"
+      ],
+      "t": 0,
+      "izoh": "sin α₀ = n₂/n₁ da n₁ katta bo'lgani sari sin α₀ kichik, demak α₀ ham kichik bo'ladi — eng kichik olmosda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#77076248"
+    },
+    {
+      "q": "Nur havodan suvga tushmoqda. Bunda to'la ichki qaytish hodisasini kuzatish mumkinmi?",
+      "v": [
+        "Yo'q, chunki to'la ichki qaytish faqat katta ko'rsatkichli muhitdan kichik ko'rsatkichli muhitga o'tishda yuz beradi",
+        "Ha, chunki suv shaffof muhit",
+        "Ha, faqat tushish burchagi 90° dan katta bo'lganda",
+        "Yo'q, chunki suv suyuq muhit"
+      ],
+      "t": 0,
+      "izoh": "Havo (n ≈ 1) dan suvga (n = 1,33) o'tishda sindirish ko'rsatkichi kichikdan kattaga o'tadi, to'la ichki qaytish yuz bermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#80832b31"
+    },
+    {
+      "q": "To'la ichki qaytish hodisasi qaysi sohada keng qo'llaniladi?",
+      "v": [
+        "Axborot texnologiya sohasida",
+        "Qurilish sohasida",
+        "Qishloq xo'jaligida",
+        "Kimyo sanoatida"
+      ],
+      "t": 0,
+      "izoh": "To'la ichki qaytish hodisasi axborot texnologiya sohasida keng qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#7eec7ce0"
+    },
+    {
+      "q": "Hozirgi paytda nur tolali kabellar qaysi yo'nalishlarni bog'lab turadi?",
+      "v": [
+        "Osiyo va Yevropani Amerika qit'asi bilan, Yevropani O'zbekiston orqali Xitoy bilan",
+        "Faqat Yevropa davlatlarini o'zaro",
+        "Faqat Afrika bilan Avstraliyani",
+        "Faqat shaharlararo tarmoqlarni"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi paytda kabellar Osiyo va Yevropani Amerika qit'asi bilan, Yevropani O'zbekiston orqali Xitoy bilan bog'lab turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#7bbf0af9"
+    },
+    {
+      "q": "Nur dastasi sindirish ko'rsatkichi 1,5 bo'lgan muhitdan ikkinchi muhitga 53° burchak ostida tushganda to'la ichki qaytish kuzatildi. Bu nima haqida guvohlik beradi?",
+      "v": [
+        "Ikkinchi muhitning sindirish ko'rsatkichi n₂ = n₁·sin 53° dan kichik ekanidan",
+        "Ikkinchi muhitning sindirish ko'rsatkichi 1,5 dan katta ekanidan",
+        "Ikkinchi muhit havo ekanidan",
+        "Tushish burchagi chegaraviy burchakdan kichik ekanidan"
+      ],
+      "t": 0,
+      "izoh": "To'la ichki qaytish kuzatilishi α > α₀, ya'ni sin α₀ = n₂/n₁ < sin 53°, bundan n₂ < 1,5·sin 53° ≈ 1,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#05774904"
+    },
+    {
+      "q": "Shisha-havo chegarasida nur qanday burchak ostida tushganda to'la ichki qaytish kuzatiladi?",
+      "v": [
+        "42° dan katta burchakda",
+        "42° dan kichik burchakda",
+        "Faqat 90° burchakda",
+        "Faqat 0° burchakda"
+      ],
+      "t": 0,
+      "izoh": "Shisha uchun α₀ ≈ 42°, demak tushish burchagi 42° dan katta bo'lganda to'la ichki qaytish kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#a5b1c577"
+    },
+    {
+      "q": "Suv (n = 1,33) uchun to'la ichki qaytishning chegaraviy burchagini aniqlashda sin α₀ qanchaga teng?",
+      "v": [
+        "1/1,33 ≈ 0,75",
+        "1,33",
+        "0,667",
+        "1/2,42"
+      ],
+      "t": 0,
+      "izoh": "Suv-havo chegarasi uchun sin α₀ = n₂/n₁ = 1/1,33 ≈ 0,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#d7c41568"
+    },
+    {
+      "q": "To'la ichki qaytishda qaytgan nur qaysi qonunga bo'ysunadi?",
+      "v": [
+        "Yorug'likning qaytish qonuniga (α = γ)",
+        "Yorug'likning sinish qonuniga",
+        "Yorug'likning mustaqillik qonuniga",
+        "Hech qanday qonunga bo'ysunmaydi"
+      ],
+      "t": 0,
+      "izoh": "To'la ichki qaytishda ham nur qaytish qonuniga bo'ysunadi: qaytish burchagi tushish burchagiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#07e8818f"
+    },
+    {
+      "q": "Nurning shisha orqali havoga o'tishida tushish burchagi kattalashtirilib borilsa, sinish burchagi qanday o'zgaradi?",
+      "v": [
+        "90° ga yaqinlasha boradi",
+        "Kichraya boradi",
+        "O'zgarmaydi",
+        "Nolga yaqinlashadi"
+      ],
+      "t": 0,
+      "izoh": "Tushish burchagi kattalashtirilib borilsa, sinish burchagi 90° ga yaqinlasha boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#883ec61c"
+    },
+    {
+      "q": "Nur tolali kabelning bir uchidan signal yuborilsa, uning ikkinchi uchidan nima qabul qilinadi?",
+      "v": [
+        "Shu signalning o'zi",
+        "Boshqa chastotali signal",
+        "Elektr toki",
+        "Magnit maydon"
+      ],
+      "t": 0,
+      "izoh": "Kabelning bir uchidan signal (tasvir) yuborilsa, uning ikkinchi uchidan shu signalning o'zini qabul qilib olish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#6a05cc1a"
+    },
+    {
+      "q": "Optik tasvir qanday uzatiladi?",
+      "v": [
+        "Muayyan tartib bilan joylashtirilgan nur tolalar kabellari orqali",
+        "Bitta qalin shisha tayoq orqali",
+        "Metall simlar orqali",
+        "Linzalar sistemasi orqali"
+      ],
+      "t": 0,
+      "izoh": "Optik tasvir muayyan tartib bilan joylashtirilgan nur tolalar kabellari orqali uzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#36e5391f"
+    },
+    {
+      "q": "Olmosning sindirish ko'rsatkichi katta (2,42) bo'lgani uchun uning chegaraviy burchagi kichik bo'ladi. Bu olmosning qanday xususiyatini izohlaydi?",
+      "v": [
+        "Olmos ichiga tushgan nur ko'p marta to'la ichki qaytishi va uning yorqin yaltirashini",
+        "Olmosning qattiqligini",
+        "Olmosning shaffofligini",
+        "Olmosning elektr o'tkazmasligini"
+      ],
+      "t": 0,
+      "izoh": "Chegaraviy burchak kichik bo'lgani uchun olmos ichiga tushgan nur ko'pincha to'la ichki qaytadi, shu sababli olmos kuchli yaltiraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m47-tola-ichki-qaytish#6a7c1a84"
+    }
+  ]
+}

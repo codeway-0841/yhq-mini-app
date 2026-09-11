@@ -1,0 +1,531 @@
+{
+  "nom": "08-mavzu. Alkanlarning kimyoviy xossasi. Ishlatilishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Alkanlarning kimyoviy faolligi boshqa uglevodorodlarga qaraganda qanday?",
+      "v": [
+        "Nisbatan pastroq",
+        "Nisbatan yuqoriroq",
+        "Bir xil",
+        "Juda yuqori"
+      ],
+      "t": 0,
+      "izoh": "Alkanlar kimyoviy faolligi nisbatan pastroq uglevodorodlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#17707021"
+    },
+    {
+      "q": "Alkanlar oddiy sharoitda reaksiyalarga qanday kirishadi?",
+      "v": [
+        "Kirishmaydi",
+        "Faol kirishadi",
+        "Faqat suv bilan kirishadi",
+        "Faqat kislota bilan kirishadi"
+      ],
+      "t": 0,
+      "izoh": "Alkanlar oddiy sharoitda reaksiyalarga kirishmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#46345abe"
+    },
+    {
+      "q": "Alkanlar qanday sharoitlarda o'rin olish reaksiyalariga kirishadi?",
+      "v": [
+        "Katalizator ishtirokida, temperatura va yorug'lik ta'sirida",
+        "Faqat sovuqda",
+        "Faqat suvli eritmada",
+        "Faqat bosim ostida"
+      ],
+      "t": 0,
+      "izoh": "Katalizator, temperatura va yorug'lik ta'sirida kirishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#2eb0ce37"
+    },
+    {
+      "q": "Uglevodorodlar yuqori haroratda yonganda qanday moddalar hosil bo'ladi?",
+      "v": [
+        "CO2 va H2O",
+        "CO va H2",
+        "CO2 va H2",
+        "C va H2O"
+      ],
+      "t": 0,
+      "izoh": "Yonishda CO2 va H2O hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#79165c2f"
+    },
+    {
+      "q": "Alkanlarning umumiy yonish reaksiyasi formulasi qanday?",
+      "v": [
+        "CnH2n+2 + (1,5n+0,5)O2 = nCO2 + (n+1)H2O",
+        "CnH2n + nO2 = nCO2 + nH2O",
+        "CnH2n+2 + nO2 = nCO + nH2O",
+        "CnH2n-2 + 2nO2 = nCO2 + nH2O"
+      ],
+      "t": 0,
+      "izoh": "CnH2n+2 + (1,5n+0,5)O2 = nCO2 + (n+1)H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#f0f19ade"
+    },
+    {
+      "q": "Metanning yonish reaksiyasi tenglamasi qanday?",
+      "v": [
+        "CH4 + 2O2 = CO2 + 2H2O",
+        "CH4 + O2 = CO2 + H2O",
+        "2CH4 + 3O2 = 2CO2 + 2H2O",
+        "CH4 + 3O2 = CO2 + 2H2O"
+      ],
+      "t": 0,
+      "izoh": "CH4 + 2O2 = CO2 + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#83afbdc4"
+    },
+    {
+      "q": "Propanning yonish reaksiyasida O2 koeffitsiyenti nechaga teng?",
+      "v": [
+        "5",
+        "3",
+        "4",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "C3H8 + 5O2 = 3CO2 + 4H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#36eedde3"
+    },
+    {
+      "q": "Propan yonganda necha mol CO2 va H2O hosil bo'ladi?",
+      "v": [
+        "3 mol CO2 va 4 mol H2O",
+        "2 mol CO2 va 3 mol H2O",
+        "4 mol CO2 va 3 mol H2O",
+        "3 mol CO2 va 3 mol H2O"
+      ],
+      "t": 0,
+      "izoh": "C3H8 + 5O2 = 3CO2 + 4H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#05a62b23"
+    },
+    {
+      "q": "Metan qancha temperaturada qizdirilsa atsetilen va vodorod hosil bo'ladi?",
+      "v": [
+        "1500°C",
+        "500°C",
+        "1000°C",
+        "2000°C"
+      ],
+      "t": 0,
+      "izoh": "Metan 1500°C da qizdirilsa atsetilen va vodorod hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#1cfb5c4d"
+    },
+    {
+      "q": "2CH4 1500°C da qizdirilganda qanday moddalar hosil bo'ladi?",
+      "v": [
+        "C2H2 va 3H2",
+        "C2H4 va 2H2",
+        "C2H6 va H2",
+        "2C va 4H2"
+      ],
+      "t": 0,
+      "izoh": "2CH4 = C2H2 + 3H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#863052a5"
+    },
+    {
+      "q": "Termik kreking deganda qanday jarayon tushuniladi?",
+      "v": [
+        "Yuqori temperaturada uglerod bog'lari uzilib, uglerod atomi kam alkan va alkenlar aralashmasi hosil bo'lishi",
+        "Katalizator bilan uglevodorodlarni yonish jarayoni",
+        "Alkanlarning galogen bilan reaksiyasi",
+        "Metanni qizdirib atsetilen olish"
+      ],
+      "t": 0,
+      "izoh": "Termik kreking — yuqori temperaturada C bog'lar uzilib, alkan va alken aralashmasi hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#738ee084"
+    },
+    {
+      "q": "Katalitik kreking deganda qanday jarayon tushuniladi?",
+      "v": [
+        "Kreking jarayonining katalizatorlar ishtirokida olib borilishi",
+        "Krekingning yorug'likda olib borilishi",
+        "Krekingning suvda olib borilishi",
+        "Krekingning bosimsiz olib borilishi"
+      ],
+      "t": 0,
+      "izoh": "Katalizatorlar ishtirokida olib borilgan kreking katalitik kreking deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#2c28df17"
+    },
+    {
+      "q": "Katalitik kreking usuli yordamida qanday hosilalar olinadi?",
+      "v": [
+        "Uglevodorodlarning tarmoqlangan hosilalari",
+        "Faqat normal zanjirli hosilalar",
+        "Faqat galogenli hosilalar",
+        "Faqat alkenlar"
+      ],
+      "t": 0,
+      "izoh": "Katalitik kreking bilan tarmoqlangan hosilalar olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#718bab91"
+    },
+    {
+      "q": "n-geksan termik krekingida hosil bo'lishi mumkin bo'lgan juftlik qaysi?",
+      "v": [
+        "Metan va penten-1",
+        "Metan va etan",
+        "Vodorod va geksan",
+        "Propan va buten-2"
+      ],
+      "t": 0,
+      "izoh": "n-geksan krekingida metan va penten-1 hosil bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#c74c14e2"
+    },
+    {
+      "q": "n-geksan krekingida etan bilan birga qaysi alken hosil bo'ladi?",
+      "v": [
+        "Buten-1",
+        "Penten-1",
+        "Propen",
+        "Eten"
+      ],
+      "t": 0,
+      "izoh": "Etan bilan buten-1 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#aed8541e"
+    },
+    {
+      "q": "n-geksan krekingida propan bilan birga qaysi alken hosil bo'ladi?",
+      "v": [
+        "Propen",
+        "Eten",
+        "Buten-1",
+        "Penten-1"
+      ],
+      "t": 0,
+      "izoh": "Propan bilan propen hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#06271ade"
+    },
+    {
+      "q": "n-geksan krekingida butan bilan birga qaysi alken hosil bo'ladi?",
+      "v": [
+        "Eten",
+        "Propen",
+        "Buten-1",
+        "Penten-1"
+      ],
+      "t": 0,
+      "izoh": "Butan bilan eten hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#fc077c74"
+    },
+    {
+      "q": "n-pentan katalitik krekingidan hosil bo'ladigan tarmoqlangan hosilalar qaysilar?",
+      "v": [
+        "2-metilbutan va 2,2-dimetilpropan",
+        "n-pentan va izopentan",
+        "2-metilpropan va butan",
+        "Neopentan va n-butan"
+      ],
+      "t": 0,
+      "izoh": "2-metilbutan va 2,2-dimetilpropan hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#0ff87646"
+    },
+    {
+      "q": "Metan bilan xlor qanday sharoitda reaksiyaga kirishadi?",
+      "v": [
+        "Yorug'lik ta'sirida",
+        "Qorong'uda",
+        "Yuqori bosimda",
+        "Suvli eritmada"
+      ],
+      "t": 0,
+      "izoh": "Metan bilan xlor yorug'lik ta'sirida reaksiyaga kirishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#f9c64c38"
+    },
+    {
+      "q": "Metanni xlorlashda vodorod atomlari qanday almashadi?",
+      "v": [
+        "Birin-ketin xlor atomlari bilan",
+        "Bir vaqtning o'zida to'liq",
+        "Faqat bitta atom almashadi",
+        "Faqat qizdirilganda"
+      ],
+      "t": 0,
+      "izoh": "Vodorod atomlari birin-ketin xlor atomlari bilan o'rin almashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#22a89f69"
+    },
+    {
+      "q": "CH4 + Cl2 reaksiyasida birinchi bosqichda qanday moddalar hosil bo'ladi?",
+      "v": [
+        "CH3Cl va HCl",
+        "CH2Cl2 va HCl",
+        "CHCl3 va HCl",
+        "CCl4 va HCl"
+      ],
+      "t": 0,
+      "izoh": "Birinchi bosqichda metil xlorid va HCl hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#882147e3"
+    },
+    {
+      "q": "Metanni ketma-ket xlorlashda hosil bo'ladigan moddalar ketma-ketligi qanday?",
+      "v": [
+        "Metil xlorid, metilen xlorid, xloroform, uglerod(IV)xlorid",
+        "Xloroform, metil xlorid, metilen xlorid, uglerod(IV)xlorid",
+        "Metilen xlorid, metil xlorid, uglerod(IV)xlorid, xloroform",
+        "Uglerod(IV)xlorid, xloroform, metilen xlorid, metil xlorid"
+      ],
+      "t": 0,
+      "izoh": "CH3Cl, CH2Cl2, CHCl3, CCl4 ketma-ket hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#9eff1b04"
+    },
+    {
+      "q": "CHCl3 moddaning nomi nima?",
+      "v": [
+        "Xloroform",
+        "Metil xlorid",
+        "Metilen xlorid",
+        "Uglerod(IV)xlorid"
+      ],
+      "t": 0,
+      "izoh": "CHCl3 — xloroform.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#875409e6"
+    },
+    {
+      "q": "CH2Cl2 moddaning nomi nima?",
+      "v": [
+        "Metilen xlorid",
+        "Metil xlorid",
+        "Xloroform",
+        "Uglerod(IV)xlorid"
+      ],
+      "t": 0,
+      "izoh": "CH2Cl2 — metilen xlorid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#68462839"
+    },
+    {
+      "q": "CCl4 moddaning nomi nima?",
+      "v": [
+        "Uglerod(IV)xlorid",
+        "Xloroform",
+        "Metilen xlorid",
+        "Metil xlorid"
+      ],
+      "t": 0,
+      "izoh": "CCl4 — uglerod(IV)xlorid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#1b652299"
+    },
+    {
+      "q": "Tarmoqlangan uglevodorodlarni galogenlashda vodorod avvalo qaysi uglerod atomlaridagi o'rnini galogenga beradi?",
+      "v": [
+        "Uchlamchi uglerod atomlaridagi",
+        "Birlamchi uglerod atomlaridagi",
+        "Ikkilamchi uglerod atomlaridagi",
+        "To'rtlamchi uglerod atomlaridagi"
+      ],
+      "t": 0,
+      "izoh": "Avval uchlamchi, keyin ikkilamchi, oxirida birlamchi ugleroddagi H almashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#c820e515"
+    },
+    {
+      "q": "Tarmoqlangan uglevodorodlarni galogenlashda vodorodning o'rnini galogenga berish ketma-ketligi qanday?",
+      "v": [
+        "Uchlamchi, ikkilamchi, birlamchi",
+        "Birlamchi, ikkilamchi, uchlamchi",
+        "Ikkilamchi, birlamchi, uchlamchi",
+        "Uchlamchi, birlamchi, ikkilamchi"
+      ],
+      "t": 0,
+      "izoh": "Asosan uchlamchi, keyin ikkilamchi va oxiri birlamchi ugleroddagi vodorod almashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#aea2c93f"
+    },
+    {
+      "q": "Degidrogenlash reaksiyasi yordamida alkanlardan nima hosil qilinadi?",
+      "v": [
+        "Tegishli to'yinmagan uglevodorodlar",
+        "Galogenli hosilalar",
+        "Spirtlar",
+        "Sikloalkanlar"
+      ],
+      "t": 0,
+      "izoh": "Degidrogenlashda alkanlardan to'yinmagan uglevodorodlar hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#c8eb4b22"
+    },
+    {
+      "q": "Etan degidrogenlanganda qanday moddalar hosil bo'ladi?",
+      "v": [
+        "Etilen va vodorod",
+        "Atsetilen va vodorod",
+        "Metan va uglerod",
+        "Eten va suv"
+      ],
+      "t": 0,
+      "izoh": "C2H6 = C2H4 + H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#abe0452d"
+    },
+    {
+      "q": "Tabiiy gazning asosini qaysi alkan tashkil etadi va u qanday ishlatiladi?",
+      "v": [
+        "Metan, yoqilg'i sifatida",
+        "Etan, erituvchi sifatida",
+        "Propan, dorivor sifatida",
+        "Butan, indikator sifatida"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy gaz asosini metan tashkil qiladi, yoqilg'i sifatida ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#65d20fb1"
+    },
+    {
+      "q": "Metandan qanday moddalar olinishi darslikda keltirilgan?",
+      "v": [
+        "Metil spirt, sirka kislota, etil spirt, sintetik kauchuk, mochevina",
+        "Benzol, fenol, toluol",
+        "Gliserin, sirka kislota, sikar",
+        "Etilen, atsetilen, benzol"
+      ],
+      "t": 0,
+      "izoh": "Metandan metil spirt, sirka kislota, etil spirt, sintetik kauchuk, mochevina olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#3df3ad67"
+    },
+    {
+      "q": "Dixloretan, xloroform va tetraxlormetanlar qanday maqsadda ishlatiladi?",
+      "v": [
+        "Erituvchi sifatida",
+        "Yoqilg'i sifatida",
+        "O'g'it sifatida",
+        "Oziq-ovqat qo'shimchasi sifatida"
+      ],
+      "t": 0,
+      "izoh": "Ular erituvchi sifatida foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#b0ec25c4"
+    },
+    {
+      "q": "Alkanlar yonishidan tashqari qanday maqsadda ham ishlatiladi?",
+      "v": [
+        "Yoqilg'i sifatida",
+        "Erituvchi sifatida",
+        "Katalizator sifatida",
+        "Indikator sifatida"
+      ],
+      "t": 0,
+      "izoh": "Alkanlar yoqilg'i sifatida ham ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#3c1953ac"
+    },
+    {
+      "q": "3-metilpentanni xlorlashda xlor asosan qaysi uglerodga birikadi?",
+      "v": [
+        "Uchlamchi uglerodga",
+        "Birlamchi uglerodga",
+        "Ikkilamchi uglerodga",
+        "To'rtlamchi uglerodga"
+      ],
+      "t": 0,
+      "izoh": "Darslik misolida xlor uchlamchi uglerodga birikadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#b3b9217a"
+    },
+    {
+      "q": "Alkanlarning galogenlanish reaksiyasi qanday reaksiya turiga kiradi?",
+      "v": [
+        "O'rin olish (almashish) reaksiyasi",
+        "Qo'shilish reaksiyasi",
+        "Ajrish reaksiyasi",
+        "Almashinuv reaksiyasi"
+      ],
+      "t": 0,
+      "izoh": "Galogenlanish — o'rin olish reaksiyasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m08-alkanlar-kimyoviy-xossalari-ishlatilishi#ea3fb609"
+    }
+  ]
+}

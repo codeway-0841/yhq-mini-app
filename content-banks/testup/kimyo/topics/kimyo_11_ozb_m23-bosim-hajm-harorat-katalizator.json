@@ -1,0 +1,546 @@
+{
+  "nom": "23-mavzu. Reaksiya tezligiga bosim, hajm va haroratning ta'siri. Katalizator haqida tushuncha",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Bosim o'zgarishi qanday sistemada boruvchi reaksiyalarga ta'sir o'tkazadi?",
+      "v": [
+        "Faqatgina yopiq sistemada boruvchi reaksiyalarga",
+        "Faqat ochiq idishdagi reaksiyalarga",
+        "Har qanday sistemadagi reaksiyalarga",
+        "Faqat suyuq moddalar reaksiyalariga"
+      ],
+      "t": 0,
+      "izoh": "Bosim o'zgarishi faqatgina yopiq sistemada boruvchi reaksiyalarga ta'sir o'tkazadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#a0c213eb"
+    },
+    {
+      "q": "Yopiq sistemada hajm kamayganda bosim va gaz moddalarning molyar konsentratsiyalari qanday o'zgaradi?",
+      "v": [
+        "Bosim ortadi, konsentratsiyalar ham shuncha martaga ortadi",
+        "Bosim kamayadi, konsentratsiyalar ortadi",
+        "Bosim o'zgarmaydi, konsentratsiyalar kamayadi",
+        "Bosim ortadi, konsentratsiyalar o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Hajm necha marta kamaysa, bosim shuncha marta ortadi va konsentratsiyalar ham shuncha martaga ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#dbad9c82"
+    },
+    {
+      "q": "Hajm oshganda sistema ichidagi gaz moddalar konsentratsiyasi qanday o'zgaradi?",
+      "v": [
+        "Bosim kamayishi bilan birga kamayadi",
+        "Bosim ortishi bilan birga ortadi",
+        "O'zgarmaydi",
+        "Avval ortadi, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Hajm oshganda bosim kamayadi, bu gaz moddalar konsentratsiyasining kamayishiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#0a2379bb"
+    },
+    {
+      "q": "23-mavzudagi misolda hajmi 6 l bo'lgan reaktorga 12 mol is gazi (CO) va 18 mol kislorod solingan. C(CO) qanchaga teng?",
+      "v": [
+        "2 mol/litr",
+        "3 mol/litr",
+        "6 mol/litr",
+        "12 mol/litr"
+      ],
+      "t": 0,
+      "izoh": "C(CO) = n/V = 12/6 = 2 mol/litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#43517788"
+    },
+    {
+      "q": "Shu misolda C(O2) qanchaga teng?",
+      "v": [
+        "3 mol/litr",
+        "2 mol/litr",
+        "18 mol/litr",
+        "9 mol/litr"
+      ],
+      "t": 0,
+      "izoh": "C(O2) = 18/6 = 3 mol/litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#61ef3a43"
+    },
+    {
+      "q": "2CO + O2 = 2CO2 reaksiyasi uchun k = 1, C(CO) = 2 mol/litr, C(O2) = 3 mol/litr bo'lsa, reaksiya tezligi qancha?",
+      "v": [
+        "12",
+        "6",
+        "18",
+        "24"
+      ],
+      "t": 0,
+      "izoh": "v = k·[CO]^2·[O2] = 1·2^2·3 = 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#6f49921d"
+    },
+    {
+      "q": "Yuqoridagi misolda idish hajmi 6 litrdan 2 litrgacha kamaytirilsa, C(CO) va C(O2) qanday qiymat oladi?",
+      "v": [
+        "C(CO) = 6 mol/litr, C(O2) = 9 mol/litr",
+        "C(CO) = 2 mol/litr, C(O2) = 3 mol/litr",
+        "C(CO) = 4 mol/litr, C(O2) = 6 mol/litr",
+        "C(CO) = 12 mol/litr, C(O2) = 18 mol/litr"
+      ],
+      "t": 0,
+      "izoh": "C(CO) = 12/2 = 6 mol/litr; C(O2) = 18/2 = 9 mol/litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#03600dcb"
+    },
+    {
+      "q": "Hajm 3 marta kamaytirilganda 2CO + O2 = 2CO2 reaksiyasining tezligi necha marta oshadi?",
+      "v": [
+        "27 marta",
+        "9 marta",
+        "3 marta",
+        "81 marta"
+      ],
+      "t": 0,
+      "izoh": "v2 = 1·6^2·9 = 324; v2:v1 = 324:12 = 27 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#295f812e"
+    },
+    {
+      "q": "Sistemaning hajmi ortganda reaksiya tezligi qanday o'zgaradi?",
+      "v": [
+        "Bosim va konsentratsiyalar kamayib, tezlik sekinlashadi",
+        "Tezlik ortadi",
+        "Tezlik o'zgarmaydi",
+        "Avval ortib, keyin o'zgarmay qoladi"
+      ],
+      "t": 0,
+      "izoh": "Hajm ortganda bosim kamayadi, konsentratsiyalar kamayib, tezlik sekinlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#13131c3f"
+    },
+    {
+      "q": "Reaksiya tezligining haroratga bog'liqli qaysi qonun yordamida tushuntiriladi?",
+      "v": [
+        "Vant Goff qonuni",
+        "Boys-Mariott qonuni",
+        "Gess qonuni",
+        "Avogadro qonuni"
+      ],
+      "t": 0,
+      "izoh": "Harorat ta'siri Vant Goff qonuni yordamida tushuntiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#0daaf4d8"
+    },
+    {
+      "q": "Vant Goff qonuniga ko'ra harorat har 10° ga o'zgartirilganda reaksiya tezligi necha marta o'zgaradi?",
+      "v": [
+        "2-4 marta",
+        "10 marta",
+        "1,5 marta",
+        "5-10 marta"
+      ],
+      "t": 0,
+      "izoh": "Harorat har 10° ga o'zgarganda tezlik 2-4 marta o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#edae0d66"
+    },
+    {
+      "q": "Reaksiyaning harorat koeffitsiyenti deb nimaga aytiladi?",
+      "v": [
+        "Haroratning har 10°C o'zgarishida tezlikni necha marta o'zgarishini ko'rsatuvchi songa",
+        "Haroratning har 1°C o'zgarishida tezlik o'zgarishiga",
+        "Reaksiya boshlanish haroratiga",
+        "Tezlik konstantasining haroratga nisbatiga"
+      ],
+      "t": 0,
+      "izoh": "Har 10°C o'zgarishda tezlikni necha marta o'zgarishini ko'rsatuvchi son — harorat koeffitsiyenti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#a7725e7a"
+    },
+    {
+      "q": "Agar temperatura 10°C ga ortganda tezlik 4 marta oshsa, ushbu reaksiya uchun harorat koeffitsiyenti nechaga teng?",
+      "v": [
+        "4 ga",
+        "2 ga",
+        "10 ga",
+        "40 ga"
+      ],
+      "t": 0,
+      "izoh": "Tezlik 4 marta oshsa, harorat koeffitsiyenti 4 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#de1e8aef"
+    },
+    {
+      "q": "Haroratning tezlikka ta'sirini ifodalovchi formulada γ nimani bildiradi?",
+      "v": [
+        "Reaksiyaning harorat koeffitsiyentini",
+        "Tezlik konstantasini",
+        "Haroratlar farqini",
+        "Boshlang'ich tezlikni"
+      ],
+      "t": 0,
+      "izoh": "γ — reaksiyaning harorat koeffitsiyenti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#937c410e"
+    },
+    {
+      "q": "v2 = v1·γ^((t2-t1)/10) formulasida v1 va v2 nimani bildiradi?",
+      "v": [
+        "Reaksiyaning t1 va t2 haroratdagi tezliklarini",
+        "Boshlang'ich va yakuniy konsentratsiyalarni",
+        "To'g'ri va teskari reaksiya tezliklarini",
+        "Ikki xil moddaning tezliklarini"
+      ],
+      "t": 0,
+      "izoh": "v1 va v2 — reaksiyaning t1 va t2 haroratdagi tezliklari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#dd4c7457"
+    },
+    {
+      "q": "Katalizator tajribasida probirkaga qaysi modda solib qizdiriladi?",
+      "v": [
+        "H2O2 (vodorod peroksid)",
+        "H2SO4 (sulfat kislota)",
+        "NaOH (natriy gidroksid)",
+        "KMnO4 (kaliy permanganat)"
+      ],
+      "t": 0,
+      "izoh": "Tajribada probirkaga oz miqdorda H2O2 solib qizdiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#5449ca17"
+    },
+    {
+      "q": "Vodorod peroksid qizdirilganda cho'g'lantirilgan tayoqcha nima uchun yonmaydi?",
+      "v": [
+        "Reaksiya sekin borayotgani uchun ajralayotgan kislorod miqdori kam bo'ladi",
+        "Kislorod umuman ajralmaydi",
+        "Tayoqcha nam bo'lgani uchun",
+        "Vodorod peroksid kislorod ajratmaydi"
+      ],
+      "t": 0,
+      "izoh": "Reaksiya sekin boradi, ajralgan kislorod cho'g'langan tayoqchani yondirish uchun yetarli emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#f762f33e"
+    },
+    {
+      "q": "Katalizator tajribasida vodorod peroksidga qaysi modda kukun holigacha maydalanib solinadi?",
+      "v": [
+        "Marganes (IV) oksid",
+        "Temir (III) oksid",
+        "Mis (II) oksid",
+        "Kremniy (IV) oksid"
+      ],
+      "t": 0,
+      "izoh": "Probirkaga marganes (IV) oksid maydalanib solinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#45060ddd"
+    },
+    {
+      "q": "Marganes (IV) oksid solingandan keyin probirkaga cho'g'lantirilgan tayoqcha solinsa nima bo'ladi?",
+      "v": [
+        "U yorqin alanga bilan yona boshlaydi",
+        "U so'nib qoladi",
+        "Hech qanday o'zgarish bo'lmaydi",
+        "Tayoqcha eriy boshlaydi"
+      ],
+      "t": 0,
+      "izoh": "Kislorod ajralish tezligi oshgach, tayoqcha yorqin alanga bilan yonadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#b78cfeb2"
+    },
+    {
+      "q": "Katalizatorlar deb qanday moddalarga aytiladi?",
+      "v": [
+        "Reaksiya tezligini oshiruvchi, lekin reaksiya davomida sarflanmay qoladigan moddalarga",
+        "Reaksiya davomida to'liq sarflanadigan moddalarga",
+        "Reaksiyani sekinlashtiruvchi moddalarga",
+        "Reaksiya mahsulotlariga"
+      ],
+      "t": 0,
+      "izoh": "Katalizatorlar tezlikni oshiradi, ammo reaksiya davomida sarflanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#fbd98245"
+    },
+    {
+      "q": "Moddani tinch holatidan faol holatiga o'tkazish uchun kerak bo'ladigan energiya nima deyiladi?",
+      "v": [
+        "Faollanish energiyasi",
+        "Yonish issiqlig'i",
+        "Ionlanish energiyasi",
+        "Yadro energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Bu energiya faollanish energiyasi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#8933138a"
+    },
+    {
+      "q": "Katalizatorlar reaksiyani qanday tezlashtiradi?",
+      "v": [
+        "Moddalarni faollanish energiyasini kamaytirib, energiya kam bo'lsa ham faollashishini ta'minlab",
+        "Haroratni ko'tarib",
+        "Konsentratsiyani oshirib",
+        "Bosimni oshirib"
+      ],
+      "t": 0,
+      "izoh": "Katalizatorlar faollanish energiyasini kamaytiradi, natijada reaksiya tezligi oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#01875576"
+    },
+    {
+      "q": "Katalizator ishtirokida boradigan reaksiyalar nima deyiladi?",
+      "v": [
+        "Katalitik reaksiyalar",
+        "Qaytar reaksiyalar",
+        "Endotermik reaksiyalar",
+        "Almashinuv reaksiyalari"
+      ],
+      "t": 0,
+      "izoh": "Katalizator ishtirokidagi reaksiyalar katalitik reaksiyalar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#cbdfd4b2"
+    },
+    {
+      "q": "Quruq holdagi alyuminiy va yod aralashmasida reaksiya qanday boradi va uni nima tezlashtiradi?",
+      "v": [
+        "Reaksiya sust boradi, suv tomizilsa shiddat bilan kecha boshlaydi",
+        "Reaksiya darhol portlash bilan boradi",
+        "Suv qo'shilsa reaksiya to'xtaydi",
+        "Reaksiya faqat qizdirilganda boradi"
+      ],
+      "t": 0,
+      "izoh": "Alyuminiy va yod quruq holda sust reaksiyaga kirishadi, suv tomizilsa reaksiya shiddatlanadi — suv katalizator vazifasini bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#9c15d1ef"
+    },
+    {
+      "q": "Zamonaviy avtomobillar dvigatelida katalizator sifatida qaysi metall qo'llanishi darslikda aytilgan?",
+      "v": [
+        "Platina",
+        "Oltin",
+        "Mis",
+        "Nikel"
+      ],
+      "t": 0,
+      "izoh": "Platina metali ko'pchilik reaksiyalarda muhim katalizator; avtomobil katalizatorlarida qo'llanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#4c837f51"
+    },
+    {
+      "q": "Avtomobil dvigatelidagi katalizatorning vazifasi nima?",
+      "v": [
+        "Yonilg'ini to'la yoqishga va atrof muhit ifloslanishining oldini olishga yordam beradi",
+        "Dvigatelni sovutadi",
+        "Yonilg'i sarfini ko'paytiradi",
+        "Motor quvvatini kamaytiradi"
+      ],
+      "t": 0,
+      "izoh": "Katalizator yonilg'ining to'la yonishiga va ifloslanishning oldini olishga yordam beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#8afca649"
+    },
+    {
+      "q": "Oqsil tabiatli biologik katalizatorlar nima deyiladi?",
+      "v": [
+        "Fermentlar",
+        "Ingibitorlar",
+        "Gormonlar",
+        "Vitaminlar"
+      ],
+      "t": 0,
+      "izoh": "Oqsil tabiatli biologik katalizatorlar fermentlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#a1133101"
+    },
+    {
+      "q": "Xamir oshirishda achitqi bakteriyalari ajratuvchi ferment uglevodorodlarni nimaga parchalaydi?",
+      "v": [
+        "Uglerod (IV) oksid va etil spirtiga",
+        "Suv va kislorodga",
+        "Sirka kislota va suvga",
+        "Glyukoza va fruktozaga"
+      ],
+      "t": 0,
+      "izoh": "Ferment uglevodorodlarni tezlik bilan uglerod (IV) oksid va etil spirtiga parchalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#4de242e7"
+    },
+    {
+      "q": "Vodorod peroksid eritmasiga xom go'sht, sabzi va kartoshka bo'laklari tushirilganda kislorod ajralishi qaysi ferment tufayli yuzaga keladi?",
+      "v": [
+        "Katalaza",
+        "Amilaza",
+        "Lipaza",
+        "Pepsin"
+      ],
+      "t": 0,
+      "izoh": "Bu reaksiya katalaza fermenti ishi tufayli yuzaga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#13c1dfc1"
+    },
+    {
+      "q": "Qaynatib pishirilgan go'sht, sabzi va kartoshka bilan tajriba takrorlansa reaksiya nima uchun bormaydi?",
+      "v": [
+        "Qaynatish vaqtida katalaza fermenti parchalanib ketadi",
+        "Moddalar tarkibi o'zgarib ketadi",
+        "Vodorod peroksid buziladi",
+        "Moddalar qattiqlashib qoladi"
+      ],
+      "t": 0,
+      "izoh": "Qaynatishda katalaza fermenti parchalanib ketadi, shuning uchun reaksiya bormaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#52ae75bc"
+    },
+    {
+      "q": "Reaksiya tezligini sekinlashtiruvchi moddalar nima deyiladi?",
+      "v": [
+        "Ingibitorlar",
+        "Fermentlar",
+        "Katalizatorlar",
+        "Oksidlovchilar"
+      ],
+      "t": 0,
+      "izoh": "Tezlikni sekinlashtiruvchi moddalar ingibitorlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#a70ca429"
+    },
+    {
+      "q": "Darslikdagi xulosaga ko'ra reaksiya tezligi qaysi omillarga bog'liq?",
+      "v": [
+        "Moddalar tabiatiga, gaz va suyuq moddalar konsentratsiyasiga, yopiq sistemada bosim va hajmga, haroratga, katalizator ishtirokiga va qattiq moddaning tutashish yuzasiga",
+        "Faqat harorat va bosimga",
+        "Faqat modda tabiati va konsentratsiyaga",
+        "Faqat katalizator va hajmga"
+      ],
+      "t": 0,
+      "izoh": "Xulosada 5 omil sanab o'tilgan: tabiat, konsentratsiya, bosim va hajm, harorat, katalizator va tutashish yuzasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#6791566b"
+    },
+    {
+      "q": "1-masalada: 50°C da to'g'ri reaksiya tezligi 3 mol/litr·min, harorat koeffitsiyenti 4 bo'lsa, 70°C dagi tezlik qancha?",
+      "v": [
+        "48 mol/litr·min",
+        "24 mol/litr·min",
+        "12 mol/litr·min",
+        "7 mol/litr·min"
+      ],
+      "t": 0,
+      "izoh": "20°C farq uchun 4·4 = 16 marta; 3·16 = 48 mol/litr·min.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#3de522a1"
+    },
+    {
+      "q": "2-masalada: 60°C da tezlik 1,5 mol/l·min, harorat koeffitsiyenti 2 bo'lsa, 90°C dagi tezlik qancha?",
+      "v": [
+        "12 mol/l·min",
+        "6 mol/l·min",
+        "4,5 mol/l·min",
+        "9 mol/l·min"
+      ],
+      "t": 0,
+      "izoh": "(90-60)/10 = 3; v2 = 1,5·2^3 = 1,5·8 = 12 mol/l·min.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#c2e836c9"
+    },
+    {
+      "q": "3-masalada 4NH3 + 3O2 = 2N2 + 6H2O reaksiyasida bosim 2 marta oshirilsa, to'g'ri reaksiya tezligi necha marta ortadi?",
+      "v": [
+        "128 marta",
+        "32 marta",
+        "64 marta",
+        "12 marta"
+      ],
+      "t": 0,
+      "izoh": "v = 1·2^4·2^3 = 16·8 = 128 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#5bdbf437"
+    },
+    {
+      "q": "4-masalada propanning yonish reaksiyasi qanday tenglashtirilgan?",
+      "v": [
+        "C3H8 + 5O2 = 3CO2 + 4H2O",
+        "C3H8 + 3O2 = 3CO2 + 2H2O",
+        "2C3H8 + 7O2 = 6CO2 + 8H2O",
+        "C3H8 + O2 = CO2 + H2O"
+      ],
+      "t": 0,
+      "izoh": "Darslikda C3H8 + 5O2 = 3CO2 + 4H2O ko'rinishida tenglashtirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m23-bosim-hajm-harorat-katalizator#8a00f2ba"
+    }
+  ]
+}

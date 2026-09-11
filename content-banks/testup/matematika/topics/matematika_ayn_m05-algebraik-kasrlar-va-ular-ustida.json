@@ -1,0 +1,1609 @@
+{
+  "nom": "Algebraik kasrlar va ular ustida amallar",
+  "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+  "blok": "ayn",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Bekzod uy vazifasida 12a³b/(18a²b³) algebraik kasrini eng sodda ko'rinishga keltirishi kerak. Uning to'g'ri javobi qaysi?",
+      "v": [
+        "2a/(3b)",
+        "3a/(2b²)",
+        "2a/(3b²)",
+        "2a/(3b⁴)"
+      ],
+      "t": 2,
+      "izoh": "Sonli koeffitsientlar 6 ga qisqaradi: 12 : 6 = 2, 18 : 6 = 3. Harflar bo'yicha a³ : a² = a, b : b³ = 1/b². Demak kasr 2a/(3b²) ko'rinishini oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-qisqartirish-monom",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#7e5c1d64"
+    },
+    {
+      "q": "Nodira 15x⁴y²/(25x²y⁵) kasrini qisqartirdi va javobini daftariga yozdi. Qaysi variant uning to'g'ri natijasi?",
+      "v": [
+        "3x²/(5y⁷)",
+        "3x²/(5y³)",
+        "5x²/(3y³)",
+        "3x⁶/(5y³)"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsientlarni 5 ga qisqartiramiz: 15 : 5 = 3 va 25 : 5 = 5. Daraja ko'rsatkichlari ayiriladi: x⁴ : x² = x², y² : y⁵ = 1/y³. Natija 3x²/(5y³) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-qisqartirish-monom",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#364e5ea7"
+    },
+    {
+      "q": "Ustoz doskaga 4m²n/(6mn²) kasrini yozib, uni qisqartirishni so'radi. Qaysi ifoda to'g'ri natija hisoblanadi?",
+      "v": [
+        "2m/(3n)",
+        "2mn/3",
+        "3m/(2n)",
+        "2m/(3n²)"
+      ],
+      "t": 0,
+      "izoh": "Surat va maxrajning umumiy ko'paytuvchisi 2mn ga teng. 4m²n : 2mn = 2m, 6mn² : 2mn = 3n. Shuning uchun kasr 2m/(3n) ga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-qisqartirish-monom",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#c31c10f1"
+    },
+    {
+      "q": "8p⁵q³/(12p⁵q) kasrida surat va maxrajdagi bir xil ko'paytuvchilar qisqartirilsa, qanday ifoda qoladi?",
+      "v": [
+        "2q⁴/3",
+        "3/(2q²)",
+        "2pq²/3",
+        "2q²/3"
+      ],
+      "t": 3,
+      "izoh": "Koeffitsientlar 4 ga qisqaradi: 8 : 4 = 2, 12 : 4 = 3. p⁵ : p⁵ = 1, ya'ni p butunlay yo'qoladi. q³ : q = q². Demak javob 2q²/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qisqartirish-monom",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#dfdb52aa"
+    },
+    {
+      "q": "(x² − 25)/(x + 5) kasrini qisqartirib, hosil bo'lgan sodda ifodani belgilang (x ≠ −5).",
+      "v": [
+        "x − 5",
+        "x + 5",
+        "x − 25",
+        "x² − 5"
+      ],
+      "t": 0,
+      "izoh": "Suratni kvadratlar ayirmasi formulasi bilan yoyamiz: x² − 25 = (x − 5)(x + 5). Maxraj x + 5 bilan qisqartirilgach x − 5 qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-qisqartirish-kvadratlar-ayirmasi",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#f1184b1c"
+    },
+    {
+      "q": "(9a² − 16)/(3a + 4) ifodasini soddalashtiring; bunda 3a + 4 nolga teng emas deb qaraladi.",
+      "v": [
+        "3a + 4",
+        "9a − 4",
+        "3a − 16",
+        "3a − 4"
+      ],
+      "t": 3,
+      "izoh": "9a² = (3a)² va 16 = 4² bo'lgani uchun surat (3a − 4)(3a + 4) ko'rinishida yoyiladi. Maxrajdagi 3a + 4 qisqaradi va 3a − 4 qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-qisqartirish-kvadratlar-ayirmasi",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#7cb6da41"
+    },
+    {
+      "q": "Kamola (4y + 7)/(16y² − 49) kasrini qisqartirdi. Uning daftaridagi to'g'ri javob qaysi variantda berilgan?",
+      "v": [
+        "1/(4y + 7)",
+        "1/(4y − 7)",
+        "4y − 7",
+        "1/(4y² − 7)"
+      ],
+      "t": 1,
+      "izoh": "Maxrajni yoyamiz: 16y² − 49 = (4y − 7)(4y + 7). Surat 4y + 7 shu ko'paytuvchi bilan qisqaradi. Maxrajda 4y − 7 qolgani uchun natija 1/(4y − 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qisqartirish-kvadratlar-ayirmasi",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#c71f5c37"
+    },
+    {
+      "q": "(m² − n²)/(m² + 2mn + n²) kasri qisqartirilgandan keyin qanday ifoda hosil bo'lishini aniqlang.",
+      "v": [
+        "(m + n)/(m − n)",
+        "m − n",
+        "(m − n)/(m + n)",
+        "1/(2mn)"
+      ],
+      "t": 2,
+      "izoh": "Surat (m − n)(m + n) ga, maxraj esa (m + n)² ga yoyiladi. Umumiy ko'paytuvchi m + n qisqartirilgach (m − n)/(m + n) qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qisqartirish-kvadratlar-ayirmasi",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#95ca6775"
+    },
+    {
+      "q": "(x² − 7x + 12)/(x² − 9) kasrini ko'paytuvchilarga ajratish yo'li bilan qisqartiring.",
+      "v": [
+        "(x − 4)/(x − 3)",
+        "(x − 4)/(x + 3)",
+        "(x + 4)/(x + 3)",
+        "(x − 3)/(x + 3)"
+      ],
+      "t": 1,
+      "izoh": "Viyet teoremasi bo'yicha x² − 7x + 12 = (x − 3)(x − 4). Maxraj x² − 9 = (x − 3)(x + 3). Umumiy ko'paytuvchi x − 3 qisqaradi va (x − 4)/(x + 3) qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-qisqartirish-kvadrat-uchhad",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#2be9525f"
+    },
+    {
+      "q": "Sinov testida (x² + 5x + 6)/(x² + 4x + 4) kasrini qisqartirish so'ralgan edi. To'g'ri natija qaysi?",
+      "v": [
+        "(x + 3)/(x + 2)",
+        "(x + 2)/(x + 3)",
+        "(x + 3)/(x + 2)²",
+        "(x + 6)/(x + 4)"
+      ],
+      "t": 0,
+      "izoh": "Surat (x + 2)(x + 3) ko'rinishida, maxraj esa (x + 2)² ko'rinishida yoyiladi. Bitta x + 2 ko'paytuvchi qisqargach (x + 3)/(x + 2) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-qisqartirish-kvadrat-uchhad",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#1316fcbb"
+    },
+    {
+      "q": "Abituriyent (2x² − 8)/(x² + 4x + 4) kasrini soddalashtirmoqda. Qaysi variantda uning to'g'ri javobi berilgan?",
+      "v": [
+        "(x − 2)/(x + 2)",
+        "2(x + 2)/(x − 2)",
+        "2(x − 2)/(x + 2)²",
+        "2(x − 2)/(x + 2)"
+      ],
+      "t": 3,
+      "izoh": "Suratdan 2 chiqariladi: 2x² − 8 = 2(x² − 4) = 2(x − 2)(x + 2). Maxraj (x + 2)². Bitta x + 2 qisqargach 2(x − 2)/(x + 2) qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qisqartirish-kvadrat-uchhad",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#4b5b9c45"
+    },
+    {
+      "q": "Surati a² − a − 6, maxraji a² − 4a + 3 bo'lgan kasr qisqartirilsa, qanday natija chiqadi?",
+      "v": [
+        "(a − 2)/(a − 1)",
+        "(a + 2)/(a + 1)",
+        "(a + 2)/(a − 1)",
+        "(a − 3)/(a − 1)"
+      ],
+      "t": 2,
+      "izoh": "a² − a − 6 = (a − 3)(a + 2), chunki ildizlari 3 va −2. a² − 4a + 3 = (a − 3)(a − 1). Umumiy a − 3 qisqaradi, natija (a + 2)/(a − 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qisqartirish-kvadrat-uchhad",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#defdd35a"
+    },
+    {
+      "q": "(ax + ay + bx + by)/(x + y) kasrini guruhlash usulidan foydalanib qisqartiring va natijani ko'rsating.",
+      "v": [
+        "ab",
+        "a + b + x",
+        "(a + b)/(x + y)",
+        "a + b"
+      ],
+      "t": 3,
+      "izoh": "Suratni guruhlaymiz: a(x + y) + b(x + y) = (a + b)(x + y). Maxrajdagi x + y bilan qisqartirilgach faqat a + b qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qisqartirish-guruhlash",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#247ee501"
+    },
+    {
+      "q": "Muhandis hisob-kitobda (x³ + x²)/(x² + x) kasriga duch keldi. Uni soddalashtirganda nima hosil bo'ladi?",
+      "v": [
+        "x²",
+        "1/x",
+        "x",
+        "x + 1"
+      ],
+      "t": 2,
+      "izoh": "Suratdan x² ni, maxrajdan x ni chiqaramiz: x²(x + 1) va x(x + 1). x + 1 qisqaradi, qolgan x² : x = x bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-qisqartirish-guruhlash",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#0fe8bca6"
+    },
+    {
+      "q": "(2a − 2b + am − bm)/(m + 2) kasrini guruhlab qisqartirsangiz, qaysi ifoda qoladi?",
+      "v": [
+        "a − b",
+        "a + b",
+        "2(a − b)",
+        "(a − b)/(m + 2)"
+      ],
+      "t": 0,
+      "izoh": "Suratni guruhlaymiz: 2(a − b) + m(a − b) = (a − b)(2 + m). Maxraj m + 2 bilan bir xil, shuning uchun u qisqaradi va a − b qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qisqartirish-guruhlash",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#bbb30468"
+    },
+    {
+      "q": "O'quvchi (x² − xy + 2x − 2y)/(x − y) kasrini guruhlab qisqartirdi. Uning natijasi qanday bo'lishi kerak?",
+      "v": [
+        "x − 2",
+        "x + 2",
+        "x + 2y",
+        "(x + 2)/(x − y)"
+      ],
+      "t": 1,
+      "izoh": "Suratni ikki juftga bo'lamiz: x(x − y) + 2(x − y) = (x − y)(x + 2). Maxraj x − y qisqargach x + 2 qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-qisqartirish-guruhlash",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#ac534c48"
+    },
+    {
+      "q": "(3 − x)/(x − 3) algebraik kasrining qiymati x ≠ 3 bo'lganda nechaga teng bo'ladi?",
+      "v": [
+        "−1",
+        "1",
+        "0",
+        "aniqlanmagan"
+      ],
+      "t": 0,
+      "izoh": "Suratdan −1 chiqaramiz: 3 − x = −(x − 3). Kasr −(x − 3)/(x − 3) ko'rinishiga keladi va x ≠ 3 bo'lgani uchun natija −1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-kopaytuvchi",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#3bea0a0e"
+    },
+    {
+      "q": "(a − b)/(2b − 2a) ifodasini soddalashtirganda hosil bo'ladigan qiymatni toping.",
+      "v": [
+        "1/2",
+        "−1/2",
+        "−2",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Maxrajdan 2 ni chiqaramiz: 2b − 2a = 2(b − a) = −2(a − b). Kasr (a − b)/(−2(a − b)) bo'lib, a − b qisqargach −1/2 qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarama-qarshi-kopaytuvchi",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#926baadb"
+    },
+    {
+      "q": "(x² − 16)/(4 − x) kasrini qisqartirib, uning eng sodda ko'rinishini belgilang.",
+      "v": [
+        "x + 4",
+        "−x + 4",
+        "−x − 4",
+        "x − 4"
+      ],
+      "t": 2,
+      "izoh": "Surat (x − 4)(x + 4) ga yoyiladi, maxraj esa 4 − x = −(x − 4) ko'rinishida yoziladi. x − 4 qisqargach −(x + 4), ya'ni −x − 4 qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarama-qarshi-kopaytuvchi",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#67e91074"
+    },
+    {
+      "q": "Farrux (5 − y)²/(y − 5) kasrini qisqartirdi. Uning to'g'ri javobi qaysi variantda?",
+      "v": [
+        "5 − y",
+        "−1",
+        "(y − 5)²",
+        "y − 5"
+      ],
+      "t": 3,
+      "izoh": "Qarama-qarshi ifodalarning kvadratlari teng: (5 − y)² = (y − 5)². Shuning uchun kasr (y − 5)²/(y − 5) ko'rinishini oladi va y − 5 qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qarama-qarshi-kopaytuvchi",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#f35de8ae"
+    },
+    {
+      "q": "3/(x² − 9) algebraik kasr ifodasi qaysi x qiymatlarida ma'noga ega bo'lmaydi?",
+      "v": [
+        "faqat x = 3",
+        "x = 9",
+        "x = 3 va x = −3",
+        "x = 0"
+      ],
+      "t": 2,
+      "izoh": "Kasr maxraji nolga aylanmasligi kerak: x² − 9 = 0 tenglamani yechamiz. Bundan x² = 9 va x = 3 yoki x = −3. Aynan shu ikki nuqtada kasr ma'noga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxraj-nol-emas-shart",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#8a7a29a5"
+    },
+    {
+      "q": "Dilnoza (x + 2)/(x² − 5x + 6) kasrining maxraji nolga aylanadigan x qiymatlarini izlamoqda. Ular qaysilar?",
+      "v": [
+        "x = −2 va x = −3",
+        "x = 1 va x = 6",
+        "x = −2 va x = 3",
+        "x = 2 va x = 3"
+      ],
+      "t": 3,
+      "izoh": "Maxrajni ko'paytuvchilarga ajratamiz: x² − 5x + 6 = (x − 2)(x − 3). Ko'paytma nolga teng bo'lishi uchun x = 2 yoki x = 3 bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxraj-nol-emas-shart",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#01516075"
+    },
+    {
+      "q": "5x/((x − 4)(x + 1)) algebraik kasrning aniqlanish sohasidan chiqarib tashlanadigan sonlar qaysilar?",
+      "v": [
+        "−4 va 1",
+        "4 va −1",
+        "0 va 4",
+        "faqat 4"
+      ],
+      "t": 1,
+      "izoh": "Maxraj ikki ko'paytuvchidan iborat. x − 4 = 0 dan x = 4, x + 1 = 0 dan x = −1 chiqadi. Shu ikki son aniqlanish sohasiga kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxraj-nol-emas-shart",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#f112dd01"
+    },
+    {
+      "q": "(x − 7)/(x² + 4) kasri qaysi haqiqiy x qiymatlarida aniqlanmagan bo'ladi degan savolga to'g'ri javobni tanlang.",
+      "v": [
+        "hech qanday x da aniqlanmagan bo'lmaydi",
+        "x = 7 da",
+        "x = 2 va x = −2 da",
+        "x = −4 da"
+      ],
+      "t": 0,
+      "izoh": "x² har doim manfiy emas, shuning uchun x² + 4 ≥ 4 bo'ladi va hech qachon nolga aylanmaydi. Demak kasr barcha haqiqiy sonlarda aniqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maxraj-nol-emas-shart",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#18f72035"
+    },
+    {
+      "q": "(x² − 4)/(x + 2) kasrining qiymati nolga teng bo'ladigan x sonini toping.",
+      "v": [
+        "x = −2",
+        "x = 2",
+        "x = 2 va x = −2",
+        "x = 0"
+      ],
+      "t": 1,
+      "izoh": "Kasr nolga teng bo'lishi uchun surat nol, maxraj noldan farqli bo'lishi kerak. x² − 4 = 0 dan x = 2 yoki x = −2. Lekin x = −2 da maxraj nolga aylanadi, shuning uchun faqat x = 2 mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qiymati-nol",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#3d699eae"
+    },
+    {
+      "q": "((x − 5)(x + 3))/(x − 5) kasr nolga teng bo'lishi uchun x qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "x = 5",
+        "x = 3",
+        "x = −3",
+        "x = 5 va x = −3"
+      ],
+      "t": 2,
+      "izoh": "Surat nolga aylanadigan qiymatlar: x = 5 va x = −3. Lekin x = 5 da maxraj ham nolga aylanadi va kasr ma'nosini yo'qotadi. Demak javob x = −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qiymati-nol",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#6d7a5f2f"
+    },
+    {
+      "q": "Nazorat ishida (3x − 12)/(x² − 16) kasrining nolga aylanish sharti so'ralgan. To'g'ri javobni tanlang.",
+      "v": [
+        "x = 4",
+        "x = −4",
+        "x = 4 va x = −4",
+        "bunday x mavjud emas"
+      ],
+      "t": 3,
+      "izoh": "Surat 3x − 12 = 0 dan x = 4 chiqadi. Ammo maxraj x² − 16 = (x − 4)(x + 4) aynan x = 4 da nolga aylanadi. Boshqa nol beruvchi qiymat yo'q, shuning uchun yechim mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-qiymati-nol",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#5a0d8958"
+    },
+    {
+      "q": "(x² − 3x)/(x − 3) algebraik kasr nechta x qiymatida nolga teng bo'ladi?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "0 ta",
+        "3 ta"
+      ],
+      "t": 0,
+      "izoh": "Surat x(x − 3) nolga aylanadigan qiymatlar x = 0 va x = 3. Maxraj x = 3 da nolga aylangani uchun bu qiymat mos kelmaydi. Faqat x = 0 qoladi, ya'ni bitta qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-qiymati-nol",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#f50d0f51"
+    },
+    {
+      "q": "1/(6ab) va 1/(9a²) kasrlarini qo'shish uchun eng kichik umumiy maxraj qanday bo'ladi?",
+      "v": [
+        "54a³b",
+        "18ab",
+        "9a²b",
+        "18a²b"
+      ],
+      "t": 3,
+      "izoh": "Sonlar uchun eng kichik umumiy karrali: 6 va 9 ning EKUKi 18. Harflarda eng katta daraja olinadi: a² va b. Demak umumiy maxraj 18a²b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-maxraj-topish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#3657b2f0"
+    },
+    {
+      "q": "2/(x − 3) va 5/(x + 3) kasrlari uchun eng kichik umumiy maxrajni ko'rsating.",
+      "v": [
+        "x² − 9",
+        "x² + 9",
+        "x − 9",
+        "(x − 3)²"
+      ],
+      "t": 0,
+      "izoh": "Maxrajlar turli chiziqli ko'paytuvchilar bo'lgani uchun ular ko'paytiriladi: (x − 3)(x + 3). Bu kvadratlar ayirmasi formulasi bo'yicha x² − 9 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-maxraj-topish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#2dc239a0"
+    },
+    {
+      "q": "3/(x² − 4) va 7/(x² + 4x + 4) kasrlarini umumiy maxrajga keltirishda qanday ifoda olinadi?",
+      "v": [
+        "(x − 2)(x + 2)",
+        "(x² − 4)(x + 2)²",
+        "(x − 2)(x + 2)²",
+        "(x − 2)²(x + 2)"
+      ],
+      "t": 2,
+      "izoh": "Birinchi maxraj (x − 2)(x + 2), ikkinchisi (x + 2)². Har bir ko'paytuvchi eng katta darajada olinadi: x − 2 birinchi darajada, x + 2 ikkinchi darajada. Demak (x − 2)(x + 2)².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-maxraj-topish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#2e58a2af"
+    },
+    {
+      "q": "Sardor 1/(12x²), 1/(18x³) va 1/(24x) kasrlarini bitta maxrajga keltirmoqchi. Eng kichik umumiy maxraj qaysi?",
+      "v": [
+        "36x³",
+        "72x³",
+        "72x⁶",
+        "5184x⁶"
+      ],
+      "t": 1,
+      "izoh": "12, 18 va 24 sonlarining eng kichik umumiy karralisi 72 ga teng. x ning eng katta darajasi uchinchi daraja. Shuning uchun umumiy maxraj 72x³ bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-maxraj-topish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#4f434848"
+    },
+    {
+      "q": "1/(x − 2) + 1/(x + 2) yig'indisini bitta algebraik kasr ko'rinishida yozing.",
+      "v": [
+        "2x/(x² − 4)",
+        "2/(x² − 4)",
+        "2x/(x² + 4)",
+        "1/(x² − 4)"
+      ],
+      "t": 0,
+      "izoh": "Umumiy maxraj (x − 2)(x + 2) = x² − 4. Suratlar: (x + 2) + (x − 2) = 2x. Demak yig'indi 2x/(x² − 4) ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrlarni-qoshish-ayirish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#313c9293"
+    },
+    {
+      "q": "3/a − 2/b ayirmasini umumiy maxrajga keltirib, bitta kasr shaklida ifodalang.",
+      "v": [
+        "(3a − 2b)/(ab)",
+        "1/(ab)",
+        "(3b − 2a)/(ab)",
+        "(3b + 2a)/(ab)"
+      ],
+      "t": 2,
+      "izoh": "Umumiy maxraj ab. Birinchi kasrni b ga, ikkinchisini a ga to'ldiramiz: 3b/(ab) − 2a/(ab). Suratlar ayiriladi va (3b − 2a)/(ab) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrlarni-qoshish-ayirish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#0b01a9ac"
+    },
+    {
+      "q": "Malika 5/(x + 1) − 3/(x − 1) ayirmasini hisobladi. Uning to'g'ri natijasi qaysi variantda?",
+      "v": [
+        "(2x + 8)/(x² − 1)",
+        "(2x − 8)/(x² − 1)",
+        "(2x − 2)/(x² − 1)",
+        "2/(x² − 1)"
+      ],
+      "t": 1,
+      "izoh": "Umumiy maxraj (x + 1)(x − 1) = x² − 1. Surat: 5(x − 1) − 3(x + 1) = 5x − 5 − 3x − 3 = 2x − 8. Natija (2x − 8)/(x² − 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrlarni-qoshish-ayirish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#a725de7e"
+    },
+    {
+      "q": "a/(a − b) + b/(b − a) ifodasini soddalashtirganda qanday natija hosil bo'ladi?",
+      "v": [
+        "−1",
+        "0",
+        "(a + b)/(a − b)",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi kasr maxrajini almashtiramiz: b − a = −(a − b), demak b/(b − a) = −b/(a − b). Yig'indi (a − b)/(a − b) ko'rinishiga keladi va 1 ga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrlarni-qoshish-ayirish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#1d5fa029"
+    },
+    {
+      "q": "(3a/(4b)) · (8b²/(9a³)) ko'paytmani bajarib, natijani eng sodda ko'rinishga keltiring.",
+      "v": [
+        "2b/(3a)",
+        "2b/(3a²)",
+        "3b/(2a²)",
+        "2b²/(3a²)"
+      ],
+      "t": 1,
+      "izoh": "Suratlar va maxrajlar alohida ko'paytiriladi: 24ab² va 36a³b. Koeffitsientlar 12 ga qisqaradi, a : a³ = 1/a², b² : b = b. Natija 2b/(3a²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-kopaytirish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#e41a9325"
+    },
+    {
+      "q": "((x − 3)/(x + 5)) · ((x² + 5x)/(x² − 9)) ko'paytmasini soddalashtiring va javobni belgilang.",
+      "v": [
+        "x/(x − 3)",
+        "1/(x + 3)",
+        "x²/(x² − 9)",
+        "x/(x + 3)"
+      ],
+      "t": 3,
+      "izoh": "x² + 5x = x(x + 5), x² − 9 = (x − 3)(x + 3). Ko'paytmada x − 3 va x + 5 ko'paytuvchilar qisqaradi. Qolgan ifoda x/(x + 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-kopaytirish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#20e6c9b3"
+    },
+    {
+      "q": "Talaba ((x² − 1)/(x + 4)) · ((2x + 8)/(x − 1)) ko'paytmasini bajardi. To'g'ri javob qaysi?",
+      "v": [
+        "2x + 2",
+        "x + 1",
+        "2x − 2",
+        "2x² + 2"
+      ],
+      "t": 0,
+      "izoh": "x² − 1 = (x − 1)(x + 1) va 2x + 8 = 2(x + 4). Ko'paytmada x + 4 hamda x − 1 qisqaradi. Qoladi 2(x + 1) = 2x + 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-kopaytirish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#879cf48f"
+    },
+    {
+      "q": "(6/(x² − 4)) · ((x + 2)/3) amalini bajaring va javobni sodda kasr ko'rinishida yozing.",
+      "v": [
+        "2/(x + 2)",
+        "2/(x² − 4)",
+        "2/(x − 2)",
+        "(x + 2)/(2(x − 2))"
+      ],
+      "t": 2,
+      "izoh": "x² − 4 = (x − 2)(x + 2). Ko'paytmada x + 2 qisqaradi, 6 : 3 = 2 bo'ladi. Natijada 2/(x − 2) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-kopaytirish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#4a2e50ba"
+    },
+    {
+      "q": "(9x²/(4y)) : (3x/(8y³)) bo'linmani hisoblang va sodda ko'rinishini toping.",
+      "v": [
+        "6xy",
+        "27x³/(32y⁴)",
+        "6xy²",
+        "6x²y²"
+      ],
+      "t": 2,
+      "izoh": "Bo'lish teskari kasrga ko'paytirishga almashtiriladi: 9x²/(4y) · 8y³/(3x). Surat 72x²y³, maxraj 12xy. Qisqartirilgach 6xy² qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-bolish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#b60473b4"
+    },
+    {
+      "q": "((x + 1)/(x − 2)) : ((x² − 1)/(x² − 4)) amalining natijasini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "(x + 2)/(x − 1)",
+        "(x − 2)/(x + 1)",
+        "(x + 1)/(x − 2)",
+        "(x + 2)/(x + 1)"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi kasrni ag'daramiz: (x + 1)/(x − 2) · (x² − 4)/(x² − 1). Yoyilma: (x − 2)(x + 2) va (x − 1)(x + 1). x + 1 hamda x − 2 qisqaradi, javob (x + 2)/(x − 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-bolish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#6c46ea8b"
+    },
+    {
+      "q": "Zilola ((a² − b²)/(3a)) : ((a + b)/(6a²)) bo'linmasini soddalashtirdi. Uning to'g'ri javobi qanday?",
+      "v": [
+        "2a(a + b)",
+        "a(a − b)/2",
+        "2(a − b)",
+        "2a(a − b)"
+      ],
+      "t": 3,
+      "izoh": "Teskari kasrga ko'paytiramiz: (a − b)(a + b)/(3a) · 6a²/(a + b). a + b qisqaradi, 6a² : 3a = 2a. Natija 2a(a − b).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-bolish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#83764374"
+    },
+    {
+      "q": "12/(x² − 9) kasrini 4/(x + 3) kasriga bo'lganda hosil bo'ladigan ifodani ko'rsating.",
+      "v": [
+        "3/(x + 3)",
+        "3/(x − 3)",
+        "48/((x² − 9)(x + 3))",
+        "3(x + 3)/(x − 3)"
+      ],
+      "t": 1,
+      "izoh": "Bo'linma 12/((x − 3)(x + 3)) · (x + 3)/4 ko'rinishiga keladi. x + 3 qisqaradi, 12 : 4 = 3. Javob 3/(x − 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-bolish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#4797bec5"
+    },
+    {
+      "q": "(1/2 + 1/3)/(1/2 − 1/3) ko'p qavatli kasrning son qiymatini hisoblang.",
+      "v": [
+        "1/5",
+        "6",
+        "5/6",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Surat: 1/2 + 1/3 = 5/6. Maxraj: 1/2 − 1/3 = 1/6. Bo'linma (5/6) : (1/6) = 5 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kop-qavatli-kasr",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#bd7a0e4d"
+    },
+    {
+      "q": "(1 − 1/x)/(1 − 1/x²) ko'p qavatli kasrini soddalashtirib, sodda ifoda ko'rinishiga keltiring.",
+      "v": [
+        "x/(x − 1)",
+        "x/(x + 1)",
+        "(x + 1)/x",
+        "1/(x + 1)"
+      ],
+      "t": 1,
+      "izoh": "Surat (x − 1)/x, maxraj (x² − 1)/x² = (x − 1)(x + 1)/x². Bo'linma (x − 1)/x · x²/((x − 1)(x + 1)) bo'lib, qisqartirilgach x/(x + 1) qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kop-qavatli-kasr",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#ada906cc"
+    },
+    {
+      "q": "Nazorat ishida (a/b + b/a) : (1/b + 1/a) ko'p qavatli ifodani soddalashtirish talab qilingan. Javob qaysi?",
+      "v": [
+        "(a + b)/(ab)",
+        "a² + b²",
+        "(a² + b²)/(a + b)",
+        "(a² + b²)/(ab)"
+      ],
+      "t": 2,
+      "izoh": "Surat (a² + b²)/(ab), maxraj (a + b)/(ab) ko'rinishiga keltiriladi. Bo'lishda ab lar qisqaradi va (a² + b²)/(a + b) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kop-qavatli-kasr",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#947214a4"
+    },
+    {
+      "q": "x + 1/(1 + 1/x) ifodasini bitta kasr shaklida yozing; bunda x ≠ 0 va x ≠ −1.",
+      "v": [
+        "(x² + 2x)/(x + 1)",
+        "(x² + x)/(x + 1)",
+        "(x + 1)/x",
+        "(x² + 1)/(x + 1)"
+      ],
+      "t": 0,
+      "izoh": "Ichkaridan boshlaymiz: 1 + 1/x = (x + 1)/x, demak 1/((x + 1)/x) = x/(x + 1). Endi x + x/(x + 1) = (x² + x + x)/(x + 1) = (x² + 2x)/(x + 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kop-qavatli-kasr",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#ca931352"
+    },
+    {
+      "q": "(x² − 9)/(x² − 6x + 9) kasrining x = 5 dagi son qiymatini toping.",
+      "v": [
+        "4",
+        "2",
+        "8",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Kasrni qisqartiramiz: (x − 3)(x + 3)/(x − 3)² = (x + 3)/(x − 3). x = 5 ni qo'yamiz: 8/2 = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soddalashtirib-qiymat-hisoblash",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#6e2b9e12"
+    },
+    {
+      "q": "Ifoda (a² − 4a)/(a² − 16) ko'rinishida berilgan. Uning a = 6 dagi qiymati nechaga teng?",
+      "v": [
+        "3",
+        "2/5",
+        "5/3",
+        "3/5"
+      ],
+      "t": 3,
+      "izoh": "Qisqartiramiz: a(a − 4)/((a − 4)(a + 4)) = a/(a + 4). a = 6 da 6/10 = 3/5 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soddalashtirib-qiymat-hisoblash",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#5024d8d6"
+    },
+    {
+      "q": "(2x + 6)/(x² + 3x) kasrning x = 0,5 bo'lgandagi qiymatini hisoblang.",
+      "v": [
+        "2",
+        "0,25",
+        "4",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Surat 2(x + 3), maxraj x(x + 3). x + 3 qisqaradi va 2/x qoladi. x = 0,5 da 2 : 0,5 = 4 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soddalashtirib-qiymat-hisoblash",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#1450422e"
+    },
+    {
+      "q": "m = −2 bo'lganda (m² + 5m)/(m² − 25) kasrining qiymati nimaga teng bo'ladi?",
+      "v": [
+        "−2/7",
+        "2/7",
+        "2/3",
+        "−2/3"
+      ],
+      "t": 1,
+      "izoh": "Qisqartiramiz: m(m + 5)/((m − 5)(m + 5)) = m/(m − 5). m = −2 da (−2)/(−7) = 2/7 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soddalashtirib-qiymat-hisoblash",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#c1040a7b"
+    },
+    {
+      "q": "x + 1/x = 4 shart berilgan. x² + 1/x² ifodaning qiymatini toping.",
+      "v": [
+        "16",
+        "18",
+        "14",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Shartning ikkala tomonini kvadratga ko'taramiz: (x + 1/x)² = x² + 2 + 1/x² = 16. Bundan x² + 1/x² = 16 − 2 = 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-kasrli-ifoda",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#cf3c69f3"
+    },
+    {
+      "q": "a − 1/a = 3 bo'lsa, a² + 1/a² ifodasi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "9",
+        "11",
+        "7",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Ayirmani kvadratga ko'taramiz: (a − 1/a)² = a² − 2 + 1/a² = 9. Demak a² + 1/a² = 9 + 2 = 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-kasrli-ifoda",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#662916ae"
+    },
+    {
+      "q": "y + 1/y = 5 bo'lsa, y³ + 1/y³ ifodaning qiymatini aniqlang.",
+      "v": [
+        "125",
+        "115",
+        "120",
+        "110"
+      ],
+      "t": 3,
+      "izoh": "Kublash formulasidan foydalanamiz: (y + 1/y)³ = y³ + 1/y³ + 3(y + 1/y). Demak 125 = y³ + 1/y³ + 15 va y³ + 1/y³ = 110.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetrik-kasrli-ifoda",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#89b343bf"
+    },
+    {
+      "q": "x² + 1/x² = 7 bo'lgan holda (x + 1/x)² ifodaning qiymati nechaga teng?",
+      "v": [
+        "9",
+        "5",
+        "7",
+        "49"
+      ],
+      "t": 0,
+      "izoh": "Yoyamiz: (x + 1/x)² = x² + 2·x·(1/x) + 1/x² = x² + 2 + 1/x². Bunga 7 ni qo'yamiz va 7 + 2 = 9 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-kasrli-ifoda",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#f7db0730"
+    },
+    {
+      "q": "Anvar bir ishni x soatda, Bobur esa xuddi shu ishni x + 3 soatda bajaradi. Ular birgalikda bir soatda ishning qanday qismini bajaradi?",
+      "v": [
+        "1/(2x + 3)",
+        "(2x + 3)/(x² + 3x)",
+        "2/(x² + 3x)",
+        "(2x + 3)/(x + 3)"
+      ],
+      "t": 1,
+      "izoh": "Anvarning bir soatlik unumi 1/x, Boburniki 1/(x + 3). Yig'indi ((x + 3) + x)/(x(x + 3)) = (2x + 3)/(x² + 3x) ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ish-unumi",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#96be7b9f"
+    },
+    {
+      "q": "Bir quvur hovuzni a soatda, ikkinchi quvur esa b soatda to'ldiradi. Ikkalasi birga ochilsa, hovuz necha soatda to'ladi?",
+      "v": [
+        "ab/(a + b) soat",
+        "(a + b)/2 soat",
+        "(a + b)/(ab) soat",
+        "a + b soat"
+      ],
+      "t": 0,
+      "izoh": "Birgalikdagi bir soatlik unum 1/a + 1/b = (a + b)/(ab). To'lish vaqti unumga teskari kattalik, ya'ni ab/(a + b) soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-ish-unumi",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#b796313a"
+    },
+    {
+      "q": "Traktor dalani 12 kunda, kombayn esa n kunda ishlab chiqadi. Ikkalasi birgalikda bir kunda dalaning qanday qismini ishlaydi?",
+      "v": [
+        "12n/(n + 12)",
+        "(n + 12)/12",
+        "(n + 12)/(12n)",
+        "2/(n + 12)"
+      ],
+      "t": 2,
+      "izoh": "Traktorning kunlik ulushi 1/12, kombaynniki 1/n. Umumiy maxraj 12n bo'lib, yig'indi (n + 12)/(12n) ko'rinishini oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ish-unumi",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#c8548a29"
+    },
+    {
+      "q": "Usta buyurtmani 6 soatda, shogird esa 9 soatda bajaradi. Birgalikda ishlaganda buyurtma necha soatda tayyor bo'ladi?",
+      "v": [
+        "7,5 soat",
+        "15 soat",
+        "3 soat",
+        "3,6 soat"
+      ],
+      "t": 3,
+      "izoh": "Birgalikdagi soatlik unum 1/6 + 1/9 = 3/18 + 2/18 = 5/18. Vaqt shu unumga teskari: 18/5 = 3,6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ish-unumi",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#2736f929"
+    },
+    {
+      "q": "Qayiq daryo oqimi bo'ylab 24 km yo'lni bosdi. Turg'un suvdagi tezligi v km/soat, oqim tezligi 3 km/soat. Sarflangan vaqt qanday ifodalanadi?",
+      "v": [
+        "24/(v − 3) soat",
+        "24/v + 3 soat",
+        "(24 + 3)/v soat",
+        "24/(v + 3) soat"
+      ],
+      "t": 3,
+      "izoh": "Oqim bo'ylab harakatda tezliklar qo'shiladi: v + 3 km/soat. Vaqt masofani tezlikka bo'lish bilan topiladi, ya'ni 24/(v + 3) soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-tezlik-vaqt",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#1c17cf45"
+    },
+    {
+      "q": "Avtobus 180 km yo'lni t soatda bosdi, yengil mashina esa shu yo'lni bir soat tez bosdi. Mashinaning tezligi qaysi ifoda bilan yoziladi?",
+      "v": [
+        "180/(t + 1) km/soat",
+        "180/t − 1 km/soat",
+        "180/(t − 1) km/soat",
+        "(180 − 1)/t km/soat"
+      ],
+      "t": 2,
+      "izoh": "Mashinaning yo'lda bo'lgan vaqti t − 1 soat. Tezlik masofani vaqtga bo'lish orqali topiladi: 180/(t − 1) km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-tezlik-vaqt",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#2a311033"
+    },
+    {
+      "q": "Velosipedchi 15 km yo'lni x km/soat tezlik bilan bordi, qaytishda esa (x − 2) km/soat tezlikda yurdi. Yo'lga ketgan umumiy vaqt qaysi kasr bilan beriladi?",
+      "v": [
+        "30/(2x − 2) soat",
+        "(30x − 30)/(x² − 2x) soat",
+        "(30x − 30)/(2x − 2) soat",
+        "30/(x² − 2x) soat"
+      ],
+      "t": 1,
+      "izoh": "Borish vaqti 15/x, qaytish vaqti 15/(x − 2). Umumiy maxraj x(x − 2) bo'lib, surat 15(x − 2) + 15x = 30x − 30. Demak vaqt (30x − 30)/(x² − 2x) soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-tezlik-vaqt",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#25e4668f"
+    },
+    {
+      "q": "Poyezd 300 km yo'lni bosadi. Tezligi v km/soat dan (v + 10) km/soat ga oshirilsa, yo'lda tejalgan vaqt qaysi ifodaga teng bo'ladi?",
+      "v": [
+        "3000/(v² + 10v) soat",
+        "3000/(v + 10) soat",
+        "300/(v² + 10v) soat",
+        "10/(v² + 10v) soat"
+      ],
+      "t": 0,
+      "izoh": "Tejalgan vaqt 300/v − 300/(v + 10) ayirmasiga teng. Umumiy maxraj v(v + 10), surat 300(v + 10) − 300v = 3000. Javob 3000/(v² + 10v) soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-tezlik-vaqt",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#cdd7d2ca"
+    },
+    {
+      "q": "Do'kondan 60 000 so'mga n dona daftar olindi. Agar bitta daftar 500 so'mga arzonlashsa, o'sha pulga necha dona daftar olish mumkin?",
+      "v": [
+        "120n/(120 − n) dona",
+        "120n/(120 + n) dona",
+        "n/(120 − n) dona",
+        "120/(120 − n) dona"
+      ],
+      "t": 0,
+      "izoh": "Bitta daftarning narxi 60 000/n so'm, arzonlashgach 60 000/n − 500 so'm. Dona soni 60 000 : (60 000/n − 500) = 60 000n/(60 000 − 500n). Surat va maxrajni 500 ga qisqartirsak 120n/(120 − n) chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-narx-birlik",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#e59749ba"
+    },
+    {
+      "q": "Sayohat uchun 900 000 so'm avtobus haqi n ta o'quvchiga teng bo'linadi. Yana 3 ta o'quvchi qo'shilsa, har birining ulushi qancha kamayadi?",
+      "v": [
+        "900 000/(n² + 3n) so'm",
+        "2 700 000/(n² + 3n) so'm",
+        "2 700 000/(n + 3) so'm",
+        "300 000/n so'm"
+      ],
+      "t": 1,
+      "izoh": "Avvalgi ulush 900 000/n, keyingisi 900 000/(n + 3). Ayirma 900 000·3/(n(n + 3)) ga teng. Demak kamayish 2 700 000/(n² + 3n) so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-narx-birlik",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#63be476b"
+    },
+    {
+      "q": "Bir kilogramm go'shtning narxi q so'mni tashkil qiladi. Nodira 250 000 so'mga necha kilogramm go'sht sotib ola oladi?",
+      "v": [
+        "q/250 000 kg",
+        "250 000·q kg",
+        "(250 000 − q) kg",
+        "250 000/q kg"
+      ],
+      "t": 3,
+      "izoh": "Sotib olinadigan miqdor umumiy pulni bir kilogramm narxiga bo'lish orqali topiladi. Demak miqdor 250 000/q kilogrammga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-narx-birlik",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#820c1c54"
+    },
+    {
+      "q": "Do'kon 8 ta bir xil kitobni jami s so'mga sotib oldi va har birini tannarxidan 5 000 so'm qimmat sotdi. Bitta kitobning sotuv narxi qanday?",
+      "v": [
+        "(s + 5 000)/8 so'm",
+        "s/8 + 40 000 so'm",
+        "(s + 40 000)/8 so'm",
+        "(s − 40 000)/8 so'm"
+      ],
+      "t": 2,
+      "izoh": "Bitta kitobning tannarxi s/8 so'm. Sotuv narxi s/8 + 5 000 bo'ladi. Umumiy maxraj 8 ga keltirsak (s + 40 000)/8 so'm hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-narx-birlik",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#baec575c"
+    },
+    {
+      "q": "Idishda 40 litr eritma bor, uning 6 litri tuzdan iborat. Eritmaga yana x litr suv qo'shilsa, tuzning yangi ulushi qanday bo'ladi?",
+      "v": [
+        "6/(40 − x)",
+        "(6 + x)/40",
+        "6/(40 + x)",
+        "(6 + x)/(40 + x)"
+      ],
+      "t": 2,
+      "izoh": "Suv qo'shilganda tuz miqdori o'zgarmaydi va 6 litrligicha qoladi. Eritmaning umumiy hajmi esa 40 + x litr bo'ladi. Demak ulush 6/(40 + x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-aralashma",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#3b045ccc"
+    },
+    {
+      "q": "Bankada 15 kg siropning 20 foizi shakar. Unga yana m kg shakar qo'shilsa, yangi aralashmadagi shakar ulushi qanday ifodalanadi?",
+      "v": [
+        "(3 + m)/15",
+        "3/(15 + m)",
+        "(20 + m)/(15 + m)",
+        "(3 + m)/(15 + m)"
+      ],
+      "t": 3,
+      "izoh": "Dastlabki shakar miqdori 15 ning 20 foizi, ya'ni 3 kg. Qo'shilgach shakar 3 + m kg, umumiy massa esa 15 + m kg bo'ladi. Ulush (3 + m)/(15 + m).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-aralashma",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#73e9556d"
+    },
+    {
+      "q": "Sut va suv aralashmasi 24 litrni tashkil qiladi, undagi suv miqdori v litr. Aralashmadagi sutning ulushini ifodalovchi kasrni ko'rsating.",
+      "v": [
+        "(24 − v)/24",
+        "v/24",
+        "24/(24 − v)",
+        "(24 − v)/v"
+      ],
+      "t": 0,
+      "izoh": "Sutning miqdori umumiy hajmdan suvni ayirish bilan topiladi: 24 − v litr. Ulush esa sut miqdorining umumiy hajmga nisbati, ya'ni (24 − v)/24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-aralashma",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#ec7181dd"
+    },
+    {
+      "q": "Qotishmada 8 kg mis va k kg rux bor. Qotishmaga yana 4 kg mis qo'shilgach, misning ulushi qaysi ifodaga teng bo'ladi?",
+      "v": [
+        "12/(8 + k)",
+        "12/(12 + k)",
+        "8/(12 + k)",
+        "(8 + k)/12"
+      ],
+      "t": 1,
+      "izoh": "Mis miqdori 8 + 4 = 12 kg ga yetadi. Qotishmaning umumiy massasi 8 + k + 4 = 12 + k kg bo'ladi. Demak misning ulushi 12/(12 + k).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-aralashma",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#a8813e3c"
+    },
+    {
+      "q": "1/n − 1/(n + 1) ayirmasini bitta algebraik kasr shaklida yozing va to'g'ri variantni belgilang.",
+      "v": [
+        "1/(n + 1)",
+        "1/(n² + n)",
+        "−1/(n² + n)",
+        "(2n + 1)/(n² + n)"
+      ],
+      "t": 1,
+      "izoh": "Umumiy maxraj n(n + 1) = n² + n. Surat (n + 1) − n = 1 ga teng. Demak ayirma 1/(n² + n) ko'rinishida yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teleskopik-kasr",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#708afa03"
+    },
+    {
+      "q": "Teleskopik usuldan foydalanib 1/(1·2) + 1/(2·3) + 1/(3·4) yig'indisini hisoblang va sodda kasr ko'rinishida yozing.",
+      "v": [
+        "1/4",
+        "2/3",
+        "3/4",
+        "1/24"
+      ],
+      "t": 2,
+      "izoh": "Har bir qo'shiluvchini yoyamiz: 1 − 1/2, 1/2 − 1/3, 1/3 − 1/4. O'rtadagi hadlar o'zaro qisqaradi va 1 − 1/4 = 3/4 qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teleskopik-kasr",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#3044469d"
+    },
+    {
+      "q": "1/(x(x + 2)) kasrini A/x + B/(x + 2) ko'rinishida yoyganda A koeffitsientining qiymati nechaga teng?",
+      "v": [
+        "1/2",
+        "−1/2",
+        "1",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Tenglikni umumiy maxrajga keltiramiz: A(x + 2) + Bx = 1. x = 0 da 2A = 1, demak A = 1/2. Tekshirish uchun x = −2 da B = −1/2 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teleskopik-kasr",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#5f0b452a"
+    },
+    {
+      "q": "1/(2·5) + 1/(5·8) + 1/(8·11) yig'indisi qanday sodda kasrga teng bo'lishini aniqlang.",
+      "v": [
+        "1/22",
+        "9/22",
+        "3/11",
+        "3/22"
+      ],
+      "t": 3,
+      "izoh": "Bu yerda 1/(a(a + 3)) = (1/3)(1/a − 1/(a + 3)). Yig'indi (1/3)(1/2 − 1/11) ga teng. 1/2 − 1/11 = 9/22, uchdan biri esa 3/22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teleskopik-kasr",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#e92059b4"
+    },
+    {
+      "q": "(3x + 7)/x kasr butun son bo'ladigan butun x qiymatlari nechta ekanini aniqlang.",
+      "v": [
+        "2 ta",
+        "8 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 3,
+      "izoh": "Kasrni ajratamiz: (3x + 7)/x = 3 + 7/x. Butun bo'lishi uchun x soni 7 ning bo'luvchisi bo'lishi kerak: 1, −1, 7 va −7. Demak to'rtta qiymat mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-son-bolish-sharti",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#12fe08f5"
+    },
+    {
+      "q": "n natural son bo'lganda (2n + 5)/(n + 1) kasr butun son bo'ladigan n qiymatlari nechta?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "cheksiz ko'p"
+      ],
+      "t": 0,
+      "izoh": "Ajratamiz: (2n + 5)/(n + 1) = 2 + 3/(n + 1). n natural bo'lgani uchun n + 1 ≥ 2 va u 3 ning bo'luvchisi bo'lishi kerak. Faqat n + 1 = 3, ya'ni n = 2 mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-son-bolish-sharti",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#e795b0aa"
+    },
+    {
+      "q": "(n² + 4)/n kasri nechta butun n qiymatida butun songa aylanadi degan savolga javob bering.",
+      "v": [
+        "3 ta",
+        "6 ta",
+        "4 ta",
+        "5 ta"
+      ],
+      "t": 1,
+      "izoh": "Kasrni ajratamiz: (n² + 4)/n = n + 4/n. Demak n soni 4 ning bo'luvchisi bo'lishi kerak: 1, −1, 2, −2, 4 va −4. Jami oltita qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-son-bolish-sharti",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#23ecb043"
+    },
+    {
+      "q": "Sovg'alar soni (x + 9), bolalar soni esa (x − 1) ta. Nisbat butun son bo'lishi uchun x − 1 qaysi sonning bo'luvchisi bo'lishi kerak?",
+      "v": [
+        "9",
+        "8",
+        "10",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "Ajratamiz: (x + 9)/(x − 1) = 1 + 10/(x − 1). Butun natija olish uchun x − 1 soni 10 ning bo'luvchisi bo'lishi shart.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-son-bolish-sharti",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#d1040637"
+    },
+    {
+      "q": "Ombordagi oq va qora g'ishtlar soni a/b = 3/5 nisbatda. Umumiy g'ishtlar sonining qora g'ishtlarga nisbati (a + b)/b nechaga teng?",
+      "v": [
+        "8/5",
+        "5/8",
+        "3/8",
+        "8/3"
+      ],
+      "t": 0,
+      "izoh": "Nisbatni ajratamiz: (a + b)/b = a/b + 1. Bu 3/5 + 1 = 3/5 + 5/5 = 8/5 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-nisbat-proporsiya",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#d7576a23"
+    },
+    {
+      "q": "x/y = 2 bo'lgan holda (2x + y)/(x − y) ifodaning son qiymatini hisoblang.",
+      "v": [
+        "3",
+        "1/5",
+        "5",
+        "−5"
+      ],
+      "t": 2,
+      "izoh": "Shartdan x = 2y. O'rniga qo'yamiz: (4y + y)/(2y − y) = 5y/y. y ≠ 0 bo'lgani uchun natija 5 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-nisbat-proporsiya",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#098dd13e"
+    },
+    {
+      "q": "4 kg shirinlik (x − 1) ta qutiga, 6 kg shirinlik esa (x + 2) ta qutiga teng joylandi. Har bir qutidagi og'irlik bir xil bo'lsa, x nechaga teng?",
+      "v": [
+        "−8",
+        "14",
+        "1",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Shart 4/(x − 1) = 6/(x + 2) tenglamani beradi. Krest usulida 4(x + 2) = 6(x − 1), ya'ni 4x + 8 = 6x − 6. Bundan 2x = 14 va x = 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-nisbat-proporsiya",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#68c89906"
+    },
+    {
+      "q": "Sinfdagi a'lochilar soni (m + 3) ta, o'quvchilarning umumiy soni (m + 8) ta. A'lochilar ulushi 1/2 bo'lsa, m nechaga teng?",
+      "v": [
+        "5",
+        "2",
+        "−2",
+        "−5"
+      ],
+      "t": 1,
+      "izoh": "Tenglama (m + 3)/(m + 8) = 1/2 ko'rinishida. Krest usulida 2(m + 3) = m + 8, ya'ni 2m + 6 = m + 8. Bundan m = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-nisbat-proporsiya",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#ecfea6bb"
+    },
+    {
+      "q": "Haydovchi x soat ishlab (3x + 5) ming so'm topdi. Uning bir soatlik o'rtacha daromadini butun qism va kasr qism yig'indisi shaklida yozing.",
+      "v": [
+        "3x + 5/x",
+        "3 + 5/x",
+        "5 + 3/x",
+        "3 + 5x"
+      ],
+      "t": 1,
+      "izoh": "O'rtacha daromad (3x + 5)/x ga teng. Suratni had-bahad bo'lamiz: 3x/x + 5/x. Natijada 3 + 5/x hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-qismni-ajratish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#0e7d5a85"
+    },
+    {
+      "q": "(x² + 2x + 3)/x ifodani qanday sodda yig'indi shaklida yozish mumkinligini aniqlang.",
+      "v": [
+        "x + 2 + 3x",
+        "x² + 2x + 3/x",
+        "1 + 2/x + 3/x",
+        "x + 2 + 3/x"
+      ],
+      "t": 3,
+      "izoh": "Suratning har bir hadini maxrajga alohida bo'lamiz: x²/x = x, 2x/x = 2, 3/x esa o'zgarmaydi. Demak natija x + 2 + 3/x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-qismni-ajratish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#27576c02"
+    },
+    {
+      "q": "Kombayn (2x − 1) tonna bug'doyni (x + 3) ta mashinaga teng taqsimladi. Bitta mashinaga tushgan miqdorni butun qismni ajratib yozing.",
+      "v": [
+        "2 + 7/(x + 3)",
+        "2 − 1/(x + 3)",
+        "2 − 7/(x + 3)",
+        "2x − 7/(x + 3)"
+      ],
+      "t": 2,
+      "izoh": "Suratni maxraj orqali ifodalaymiz: 2x − 1 = 2(x + 3) − 7. Kasrni bo'laklarga ajratsak 2 − 7/(x + 3) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-qismni-ajratish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#8af718e8"
+    },
+    {
+      "q": "Iqtisodchi hisobotda (5n + 12)/(n + 2) kasriga duch keldi. Uni butun qism va qoldiq kasr yig'indisi ko'rinishida yozing.",
+      "v": [
+        "5 + 2/(n + 2)",
+        "5 − 2/(n + 2)",
+        "5 + 12/(n + 2)",
+        "5n + 2/(n + 2)"
+      ],
+      "t": 0,
+      "izoh": "Suratni maxrajga moslaymiz: 5n + 12 = 5(n + 2) + 2. Kasrni ikkiga ajratsak 5 + 2/(n + 2) chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-qismni-ajratish",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#07a6bfb0"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi xonaning yuzi 48 sm², eni a sm ga teng. Uning perimetrini ifodalovchi kasrli ifodani ko'rsating.",
+      "v": [
+        "(a² + 48)/a sm",
+        "2(a + 48) sm",
+        "(2a² + 96)/a sm",
+        "(2a + 96)/a sm"
+      ],
+      "t": 2,
+      "izoh": "Uzunlik yuzani enga bo'lish bilan topiladi: 48/a. Perimetr 2(a + 48/a) ga teng. Umumiy maxrajga keltirsak (2a² + 96)/a sm hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-geometrik-olcham",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#295186e1"
+    },
+    {
+      "q": "Uchburchakning yuzi 30 sm², asosining uzunligi b sm. Shu asosga tushirilgan balandlik qaysi ifoda bilan topiladi?",
+      "v": [
+        "60/b sm",
+        "30/b sm",
+        "15/b sm",
+        "b/60 sm"
+      ],
+      "t": 0,
+      "izoh": "Uchburchak yuzi S = (1/2)·asos·balandlik formulasi bilan hisoblanadi. Bundan balandlik 2S/asos, ya'ni 60/b sm ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-geometrik-olcham",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#7c5f545b"
+    },
+    {
+      "q": "To'g'ri burchakli parallelepipedning hajmi 120 sm³, asos tomonlari x sm va (x + 2) sm. Uning balandligi qaysi kasrga teng?",
+      "v": [
+        "120/(x + 2) sm",
+        "120/(x² + 2x) sm",
+        "120/(2x + 2) sm",
+        "(120 − x)/(x + 2) sm"
+      ],
+      "t": 1,
+      "izoh": "Hajm asos yuzasini balandlikka ko'paytirish bilan topiladi. Asos yuzasi x(x + 2) = x² + 2x. Demak balandlik 120/(x² + 2x) sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-geometrik-olcham",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#1fe04760"
+    },
+    {
+      "q": "Bog'ning yuzi 600 m², uzunligi esa (x + 10) m ni tashkil qiladi. Bog'ning eni qaysi ifoda bilan beriladi?",
+      "v": [
+        "600/x + 10 m",
+        "(600 − x − 10) m",
+        "(600 + x)/10 m",
+        "600/(x + 10) m"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri to'rtburchak yuzi uzunlik va enning ko'paytmasiga teng. Demak en yuzani uzunlikka bo'lish bilan topiladi: 600/(x + 10) m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-geometrik-olcham",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#a38543c1"
+    },
+    {
+      "q": "(1/(x − 1) − 1/(x + 1)) · (x² − 1)/2 ifodani soddalashtiring va natijani belgilang.",
+      "v": [
+        "x",
+        "2",
+        "x² − 1",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "Qavs ichidagi ayirma: ((x + 1) − (x − 1))/(x² − 1) = 2/(x² − 1). Uni (x² − 1)/2 ga ko'paytirsak barcha ko'paytuvchilar qisqaradi va 1 qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-amallar-zanjiri",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#17b61e45"
+    },
+    {
+      "q": "(a/(a + 2) + 2/(a + 2)) : (a + 2) amallar ketma-ketligini bajaring va natijani toping.",
+      "v": [
+        "1",
+        "1/(a + 2)",
+        "a + 2",
+        "(a + 2)²"
+      ],
+      "t": 1,
+      "izoh": "Qavs ichida maxrajlar bir xil: (a + 2)/(a + 2) = 1. So'ng 1 ni (a + 2) ga bo'lamiz va 1/(a + 2) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-amallar-zanjiri",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#d9047fef"
+    },
+    {
+      "q": "((x + 3)/x − 3/x) · x² ko'paytmani hisoblang va sodda ko'rinishga keltiring.",
+      "v": [
+        "x²",
+        "x",
+        "x³",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Maxrajlar bir xil bo'lgani uchun suratlar ayiriladi: (x + 3 − 3)/x = x/x = 1. So'ng 1 ni x² ga ko'paytiramiz va x² chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralash-amallar-zanjiri",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#e482072b"
+    },
+    {
+      "q": "Avval (2/(x − 2) + 1) ifodani bitta kasrga keltiring, so'ng uni x/(x − 2) ga bo'ling. Natija qanday bo'ladi?",
+      "v": [
+        "x/(x − 2)",
+        "x",
+        "1",
+        "(x − 2)/x"
+      ],
+      "t": 2,
+      "izoh": "Birinchi qadam: 2/(x − 2) + 1 = (2 + x − 2)/(x − 2) = x/(x − 2). Ikkinchi qadamda bir xil kasrni o'ziga bo'lamiz va 1 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-amallar-zanjiri",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#8c4073a1"
+    },
+    {
+      "q": "Sinfda 12 ta qiz bola bor, o'g'il bolalar soni esa n ta. Sinfdagi qizlarning ulushini ifodalovchi kasrni toping.",
+      "v": [
+        "12/(12 + n)",
+        "12/n",
+        "n/(12 + n)",
+        "(12 + n)/12"
+      ],
+      "t": 0,
+      "izoh": "Sinfdagi jami o'quvchilar soni 12 + n ta. Qizlarning ulushi ularning sonini jami songa bo'lish orqali topiladi: 12/(12 + n).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ulush-statistika",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#72ca9c87"
+    },
+    {
+      "q": "Do'konning kunlik savdosi 3 200 000 so'm, xarajati esa x so'm. Sof foydaning umumiy savdoga nisbatini ifodalovchi kasr qaysi?",
+      "v": [
+        "x/3 200 000",
+        "(3 200 000 − x)/3 200 000",
+        "3 200 000/(3 200 000 − x)",
+        "(3 200 000 − x)/x"
+      ],
+      "t": 1,
+      "izoh": "Sof foyda savdodan xarajatni ayirish bilan topiladi: 3 200 000 − x so'm. Uni umumiy savdoga bo'lsak (3 200 000 − x)/3 200 000 kasri hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ulush-statistika",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#455f5b5c"
+    },
+    {
+      "q": "Bir hafta davomida Jasur t ta masala yechdi, ukasi esa undan 8 ta kam yechdi. Ukasi yechgan masalalarning Jasurnikiga nisbati qanday?",
+      "v": [
+        "t/(t − 8)",
+        "8/t",
+        "(t − 8)/t",
+        "(t − 8)/8"
+      ],
+      "t": 2,
+      "izoh": "Ukasi yechgan masalalar soni t − 8 ta. Nisbat ukasining natijasini Jasurning natijasiga bo'lish bilan topiladi, ya'ni (t − 8)/t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ulush-statistika",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#80b343f5"
+    },
+    {
+      "q": "Anorzorda 250 tup anor o'sadi, ulardan k tupi qurib qolgan. Sog'lom tuplarning qurib qolganlariga nisbatini ifodalovchi kasrni ko'rsating.",
+      "v": [
+        "k/(250 − k)",
+        "(250 − k)/250",
+        "250/k",
+        "(250 − k)/k"
+      ],
+      "t": 3,
+      "izoh": "Sog'lom tuplar soni 250 − k ta. Nisbatda sog'lom tuplar soni surat, qurib qolganlari esa maxraj bo'ladi: (250 − k)/k.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ulush-statistika",
+      "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida#040a69c6"
+    }
+  ]
+}

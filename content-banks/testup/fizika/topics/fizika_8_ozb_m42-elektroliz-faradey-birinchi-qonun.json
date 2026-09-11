@@ -1,0 +1,486 @@
+{
+  "nom": "42-mavzu. Elektroliz Faradey Birinchi Qonun",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektroliz deb qanday hodisaga aytiladi?",
+      "v": [
+        "Elektrolitdan elektr toki o'tganda elektrodlarda modda ajralib chiqish hodisasiga",
+        "Moddalarning suvda ionlarga ajralishiga",
+        "Elektrodlarning erish hodisasiga",
+        "Tokning suyuqlikni qizitishiga"
+      ],
+      "t": 0,
+      "izoh": "Elektrolitdan tok o'tganda elektrodlarda modda ajralib chiqish hodisasi elektroliz deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#40963f70"
+    },
+    {
+      "q": "Elektrolizni kuzatish uchun elektrolitik vannadagi suvga qanday tuz solinadi?",
+      "v": [
+        "Mis sulfat tuzi (CuSO₄)",
+        "Osh tuzi (NaCl)",
+        "Kumush nitrat (AgNO₃)",
+        "Kaliy yodid (KI)"
+      ],
+      "t": 0,
+      "izoh": "Tajribada suvga mis sulfat tuzi (CuSO₄) solib elektrolit hosil qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#e4fe2665"
+    },
+    {
+      "q": "Mis sulfat eritmasida qanday ionlar hosil bo'ladi?",
+      "v": [
+        "Mis (Cu²⁺) va sulfat (SO₄²⁻) ionlari",
+        "Natriy va xlor ionlari",
+        "Kumush va nitrat ionlari",
+        "Vodorod va kislorod ionlari"
+      ],
+      "t": 0,
+      "izoh": "CuSO₄ suvda mis (Cu²⁺) va sulfat (SO₄²⁻) ionlariga ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#46722187"
+    },
+    {
+      "q": "Elektrolizda mis sulfat eritmasidagi Cu²⁺ ionlari qayerga tomon harakatlanadi?",
+      "v": [
+        "Katodga tomon",
+        "Anodga tomon",
+        "Vanna tubiga",
+        "Eritma yuzasiga"
+      ],
+      "t": 0,
+      "izoh": "Musbat Cu²⁺ ionlari katodga, manfiy SO₄²⁻ ionlari anodga tomon harakat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#77edfe0e"
+    },
+    {
+      "q": "Elektroliz vaqtida katod sirtida nima yig'iladi?",
+      "v": [
+        "Mis atomlari",
+        "Sulfat ionlari",
+        "Suv molekulalari",
+        "Xlor atomlari"
+      ],
+      "t": 0,
+      "izoh": "Katod sirtida Cu atomlari yig'ila boradi, katoddagi mis qatlami qalinlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#dc714abd"
+    },
+    {
+      "q": "Faradeyning birinchi qonuni qanday ta'riflanadi?",
+      "v": [
+        "Elektroliz vaqtida elektrodlarda ajralib chiqqan moddaning massasi elektrolitdan o'tgan zaryad miqdoriga to'g'ri proportsionaldir",
+        "Ajralgan modda massasi kuchlanishga teskari proportsionaldir",
+        "Ajralgan modda massasi faqat vaqtga bog'liq",
+        "Ajralgan modda massasi zaryadga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Birinchi qonun: elektrodlarda ajralib chiqqan modda massasi elektrolitdan o'tgan zaryad miqdoriga to'g'ri proportsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#2668c869"
+    },
+    {
+      "q": "Faradeyning birinchi qonunining matematik ifodasi qaysi?",
+      "v": [
+        "m = k·q",
+        "m = q / k",
+        "m = k / q",
+        "m = k·q²"
+      ],
+      "t": 0,
+      "izoh": "Faradeyning birinchi qonuni: m = k·q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#a60af795"
+    },
+    {
+      "q": "m = k·q formulasidagi k kattalik nima deb ataladi?",
+      "v": [
+        "Moddaning elektrokimyoviy ekvivalenti",
+        "Faradey doimiysi",
+        "Modda miqdori",
+        "Valentlik"
+      ],
+      "t": 0,
+      "izoh": "k — proportsionallik koeffitsiyenti bo'lib, moddaning elektrokimyoviy ekvivalenti deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#38df9d2f"
+    },
+    {
+      "q": "Moddaning elektrokimyoviy ekvivalenti qanday ta'riflanadi?",
+      "v": [
+        "Elektrolitdan bir kulon zaryad o'tganda ajralib chiqqan modda massasiga son jihatdan teng kattalik",
+        "Bir mol moddaning massasi",
+        "Atom massasining valentlikka nisbati",
+        "Bir amper tokdagi zaryad miqdori"
+      ],
+      "t": 0,
+      "izoh": "Elektrokimyoviy ekvivalent — elektrolitdan 1 kulon zaryad o'tganda ajralib chiqqan modda massasiga son jihatdan teng kattalik: k = m/q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#62b04a31"
+    },
+    {
+      "q": "Elektrokimyoviy ekvivalentning o'lchov birligi nima?",
+      "v": [
+        "kg/C",
+        "C/kg",
+        "kg·C",
+        "A/kg"
+      ],
+      "t": 0,
+      "izoh": "[k] = kg/C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#2c5a40c8"
+    },
+    {
+      "q": "Kumush uchun elektrokimyoviy ekvivalent qanchaga teng?",
+      "v": [
+        "1,118 mg/C",
+        "0,367 mg/C",
+        "0,329 mg/C",
+        "0,094 mg/C"
+      ],
+      "t": 0,
+      "izoh": "Kumush uchun k = 1,118 mg/C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#031a47ee"
+    },
+    {
+      "q": "Mis uchun elektrokimyoviy ekvivalent qanchaga teng?",
+      "v": [
+        "0,329 mg/C",
+        "1,118 mg/C",
+        "0,304 mg/C",
+        "0,367 mg/C"
+      ],
+      "t": 0,
+      "izoh": "Mis uchun k = 0,329 mg/C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#ae4f70d7"
+    },
+    {
+      "q": "Nikel uchun elektrokimyoviy ekvivalent qancha?",
+      "v": [
+        "0,304 mg/C",
+        "0,329 mg/C",
+        "0,094 mg/C",
+        "1,118 mg/C"
+      ],
+      "t": 0,
+      "izoh": "Nikel uchun k = 0,304 mg/C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#9acec955"
+    },
+    {
+      "q": "Alyuminiy uchun elektrokimyoviy ekvivalent qancha?",
+      "v": [
+        "0,094 mg/C",
+        "0,304 mg/C",
+        "0,367 mg/C",
+        "1,118 mg/C"
+      ],
+      "t": 0,
+      "izoh": "Alyuminiy uchun k = 0,094 mg/C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#3f534f76"
+    },
+    {
+      "q": "Xlor uchun elektrokimyoviy ekvivalent qancha?",
+      "v": [
+        "0,367 mg/C",
+        "0,329 mg/C",
+        "0,304 mg/C",
+        "0,094 mg/C"
+      ],
+      "t": 0,
+      "izoh": "Xlor uchun k = 0,367 mg/C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#d21ce90e"
+    },
+    {
+      "q": "Zaryad miqdorini tok kuchi va vaqt orqali ifodalovchi formula qaysi?",
+      "v": [
+        "q = I·Δt",
+        "q = I / Δt",
+        "q = Δt / I",
+        "q = I·Δt²"
+      ],
+      "t": 0,
+      "izoh": "Elektrolit orqali o'tgan zaryad q = I·Δt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#d5fd2ba8"
+    },
+    {
+      "q": "Faradeyning birinchi qonunini tok kuchi va vaqt orqali ifodalovchi formula qanday?",
+      "v": [
+        "m = k·I·Δt",
+        "m = k·I / Δt",
+        "m = I·Δt / k",
+        "m = k / (I·Δt)"
+      ],
+      "t": 0,
+      "izoh": "q = I·Δt ni hisobga olib: m = k·I·Δt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#757b07c6"
+    },
+    {
+      "q": "Faradeyning birinchi qonunini tekshirish tajribasida uchta A, B va C vannalar qanday ulanadi?",
+      "v": [
+        "111-rasmdagi kabi, A vanna B va C vannalar bilan shunday ulanganki, A dan o'tgan tok B va C tok kuchlarining yig'indisiga teng",
+        "Uchchasi ketma-ket ulanadi",
+        "Uchchasi parallel ulanadi",
+        "Faqat A va B ulanadi"
+      ],
+      "t": 0,
+      "izoh": "Tajribada A vannadan o'tayotgan Iᴀ tok kuchi B va C vannalardan o'tayotgan Iʙ va Iᴄ larning yig'indisiga teng: Iᴀ = Iʙ + Iᴄ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#6414b91d"
+    },
+    {
+      "q": "Faradeyning birinchi qonunini tekshirish tajribasida vannalardagi massalar qanday munosabatda bo'ladi?",
+      "v": [
+        "mᴀ = mʙ + mᴄ",
+        "mᴀ = mʙ = mᴄ",
+        "mᴀ = 2mʙ",
+        "mᴀ = mʙ − mᴄ"
+      ],
+      "t": 0,
+      "izoh": "mᴀ = kIᴀΔt, mʙ = kIʙΔt, mᴄ = kIᴄΔt bo'lgani uchun mᴀ = mʙ + mᴄ tajribada tasdiqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#d312bf0f"
+    },
+    {
+      "q": "Elektrodlarda ajralib chiqqan modda massasi nimaga bog'liq ekanini Faradey tajribalari ko'rsatgan?",
+      "v": [
+        "Elektrodlar tomon harakat qilayotgan ionlar soniga, ya'ni o'tayotgan zaryad miqdoriga",
+        "Elektrodlarning rangiga",
+        "Vannaning hajmiga",
+        "Eritmaning rangiga"
+      ],
+      "t": 0,
+      "izoh": "Ajralib chiqqan modda massasi elektrodlarga yetib kelgan ionlar soniga, ya'ni o'tgan zaryad miqdoriga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#72c34086"
+    },
+    {
+      "q": "Elektrolitik vannada katod nima vazifani bajaradi?",
+      "v": [
+        "Manbaining manfiy qutbiga ulanadi va unga musbat ionlar yetib keladi",
+        "Manbaining musbat qutbiga ulanadi",
+        "Elektrolitni qizitadi",
+        "Ionlarni neytrallaydi"
+      ],
+      "t": 0,
+      "izoh": "Katod manfiy qutbga ulangan elektrod bo'lib, unga musbat ionlar (masalan, Cu²⁺) yetib kelib modda sifatida ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#f308dbe4"
+    },
+    {
+      "q": "Elektroliz vaqtida tok uzoq vaqt o'tkazib turilsa, nima kuzatiladi?",
+      "v": [
+        "Katodda mis moddasi ajralib chiqqani va mis qatlamining qalinlashishi",
+        "Anodda mis yig'ilishi",
+        "Eritmaning muzlashi",
+        "Elektrodlarning erishi to'xtashi"
+      ],
+      "t": 0,
+      "izoh": "Tok uzoq o'tkazilsa, katodda mis moddasi ajralib chiqqani va qatlamning qalinlashishi kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#3f618917"
+    },
+    {
+      "q": "Buyum 40 minut davomida nickellanganda sirtiga 1,8 g nikel o'tirgan bo'lsa, elektrolitdan o'tgan tok kuchi qanday topiladi?",
+      "v": [
+        "I = m/(k·t) formula bilan",
+        "I = k·m·t formula bilan",
+        "I = m·k/t formula bilan",
+        "I = t/(k·m) formula bilan"
+      ],
+      "t": 0,
+      "izoh": "m = k·I·t dan I = m/(k·t). Darslikdagi masolada I = 2,5 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#d4db1edd"
+    },
+    {
+      "q": "Darslikdagi masala yechish namunasida 40 minutda 1,8 g nikel o'tirish uchun zarur tok kuchi qancha chiqadi?",
+      "v": [
+        "2,5 A",
+        "1,8 A",
+        "40 A",
+        "0,304 A"
+      ],
+      "t": 0,
+      "izoh": "I = 1,8·10⁻³/(0,304·10⁻⁶·2400) = 2,5 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#e3ec621a"
+    },
+    {
+      "q": "Elektrokimyoviy ekvivalent qiymati tajribada qanday aniqlanadi?",
+      "v": [
+        "Elektrolitdan ma'lum zaryad o'tkazib, ajralgan modda massasini o'lchash yo'li bilan",
+        "Metallni tortish yo'li bilan",
+        "Eritmani qaynatish yo'li bilan",
+        "Kuchlanishni o'lchash yo'li bilan"
+      ],
+      "t": 0,
+      "izoh": "Turli moddalarning elektrokimyoviy ekvivalenti tajribada aniqlangan: k = m/q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#ea3686a6"
+    },
+    {
+      "q": "Bir xil zaryad o'tganda qaysi metall ko'proq massada ajralib chiqadi: kumush (1,118 mg/C) yoki mis (0,329 mg/C)?",
+      "v": [
+        "Kumush, chunki uning elektrokimyoviy ekvivalenti kattaroq",
+        "Mis, chunki u yengilroq",
+        "Ikkalasi teng miqdorda",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "m = k·q ga ko'ra k katta bo'lgan modda ko'proq massada ajraladi: kumush ko'proq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#70641080"
+    },
+    {
+      "q": "m = k·q formulasida q qanday fizik kattalik va uning birligi nima?",
+      "v": [
+        "Zaryad miqdori, kulon (C)",
+        "Tok kuchi, amper (A)",
+        "Vaqt, sekund (s)",
+        "Massa, kilogramm (kg)"
+      ],
+      "t": 0,
+      "izoh": "q — elektrolitdan o'tgan zaryad miqdori, kulonda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#53634cf7"
+    },
+    {
+      "q": "Elektrolizda mis kuporosi (CuSO₄) eritmasi ishlatilganda katodda va anodda qanday jarayonlar ketadi?",
+      "v": [
+        "Katodda Cu atomlari yig'iladi, SO₄²⁻ ionlari anodga tomon harakatlanadi",
+        "Katodda sulfat yig'iladi",
+        "Anodda mis yig'iladi",
+        "Ikkala elektrodda ham mis yig'iladi"
+      ],
+      "t": 0,
+      "izoh": "Cu²⁺ ionlari katodga borib mis sifatida ajraladi, SO₄²⁻ ionlari anodga harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#1eea836f"
+    },
+    {
+      "q": "Elektroliz vaqtida elektrodlarga borib yetadigan ionlar soni ikki baravar oshsa, ajralib chiquvchi modda massasi qanday o'zgaradi?",
+      "v": [
+        "Ikki baravar oshadi",
+        "O'zgarmaydi",
+        "Ikki baravar kamayadi",
+        "To'rt baravar oshadi"
+      ],
+      "t": 0,
+      "izoh": "m = k·q ga ko'ra massa zaryad miqdoriga (ionlar soniga) to'g'ri proportsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#f3de9989"
+    },
+    {
+      "q": "Elektroliz paytida tok kuchi o'zgarmas bo'lib, vaqt ikki baravar uzaysa, ajralgan modda massasi qanday o'zgaradi?",
+      "v": [
+        "Ikki baravar ko'payadi",
+        "O'zgarmaydi",
+        "Yarimga kamayadi",
+        "To'rt baravar ko'payadi"
+      ],
+      "t": 0,
+      "izoh": "m = k·I·Δt ga ko'ra massa vaqtga to'g'ri proportsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#e29cb884"
+    },
+    {
+      "q": "Elektrolitdan bir kulon zaryad o'tganda katodda 1,118 mg kumush ajralib chiqdi. Bu qaysi fizik kattalikning qiymati?",
+      "v": [
+        "Kumushning elektrokimyoviy ekvivalenti",
+        "Faradey doimiysi",
+        "Kumushning molyar massasi",
+        "Kumushning atom massasi"
+      ],
+      "t": 0,
+      "izoh": "1 C zaryad o'tganda ajralgan modda massasi son jihatdan elektrokimyoviy ekvivalentga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#6ff49556"
+    },
+    {
+      "q": "Elektroliz hodisasida elektrodlarda modda ajralib chiqishi elektrolitlardagi tokni qanday zarralar hosil qilishi bilan bog'liq?",
+      "v": [
+        "Musbat va manfiy ionlar",
+        "Erkin elektronlar",
+        "Neytral atomlar",
+        "Protonlar"
+      ],
+      "t": 0,
+      "izoh": "Elektrolitlarda tokni ionlar hosil qiladi, ular elektrodlarga yetib kelib modda sifatida ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun#b549074b"
+    }
+  ]
+}

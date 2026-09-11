@@ -1,0 +1,1506 @@
+{
+  "nom": "Gapda so'z tartibi va gap turlari uslubiyati",
+  "bolim": "Sintaktik vositalar uslubiyati",
+  "savollar": [
+    {
+      "q": "«Kutubxona soat to'qqizda ochiladi.» qaysi maqsadda aytilgan?",
+      "v": [
+        "undov gap",
+        "so'roq gap",
+        "darak gap",
+        "buyruq gap"
+      ],
+      "t": 2,
+      "izoh": "Bu gapda ma'lumot bayon qilingan, undash yo'q, shuning uchun u «darak gap» sanaladi. Berilgan qolganlari boshqa maqsadni bildiradi: «so'roq gap», «undov gap», «buyruq gap».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#e6e90a1d"
+    },
+    {
+      "q": "«Qo'lingizni sovun bilan yuving.» gapining turini aniqlang.",
+      "v": [
+        "darak gap",
+        "buyruq gap",
+        "so'roq gap",
+        "undov gap"
+      ],
+      "t": 1,
+      "izoh": "Bu gapda ish bajarishga undov ifodalangan, shuning uchun u «buyruq gap» sanaladi. Berilgan qolganlari boshqa maqsadni bildiradi: «darak gap», «so'roq gap», «undov gap».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#c22647ef"
+    },
+    {
+      "q": "«Sen bu kitobni o'qidingmi?» qaysi maqsadda aytilgan?",
+      "v": [
+        "so'roq gap",
+        "undov gap",
+        "buyruq gap",
+        "darak gap"
+      ],
+      "t": 0,
+      "izoh": "Bu gapda javob talab qiladigan savol berilmoqda, shuning uchun u «so'roq gap» sanaladi. Berilgan qolganlari boshqa maqsadni bildiradi: «undov gap», «buyruq gap», «darak gap».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#aa923d0b"
+    },
+    {
+      "q": "«Voy, bu bolalarning mehnati naqadar ulug', ular butun mahallani bir kunda ozoda qilib qo'yishibdi-ya!» — ifoda maqsadiga ko'ra qanday gap?",
+      "v": [
+        "so'roq gap",
+        "buyruq gap",
+        "undov gap",
+        "darak gap"
+      ],
+      "t": 2,
+      "izoh": "Bu gapda hayrat ohangi uzun bayonda ham saqlanib qolgan, shuning uchun u «undov gap» sanaladi. Berilgan qolganlari boshqa maqsadni bildiradi: «so'roq gap», «buyruq gap», «darak gap».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#44effa1b"
+    },
+    {
+      "q": "O'zgarmagan tartibda «aniqlovchi» qaysi o'rinni egallaydi?",
+      "v": [
+        "kesimdan oldin",
+        "aniqlanmishdan oldin",
+        "gap oxirida",
+        "gap boshida"
+      ],
+      "t": 1,
+      "izoh": "«aniqlovchi» — «aniqlanmishdan oldin»: belgini bildirgani uchun o'zi izohlaydigan so'z oldiga qo'yiladi. O'zgargan tartibda, ya'ni inversiyada bu joylashuv o'zgaradi. Berilgan qolgan o'rinlar boshqa qismga tegishli: «kesimdan oldin», «gap oxirida», «gap boshida».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#b29f8970"
+    },
+    {
+      "q": "O'zgarmagan tartibda «hol» qaysi o'rinni egallaydi?",
+      "v": [
+        "gap oxirida",
+        "aniqlanmishdan oldin",
+        "gap boshida",
+        "kesimdan oldin"
+      ],
+      "t": 3,
+      "izoh": "«hol» — «kesimdan oldin»: harakat belgisini bildirgani uchun harakatdan oldin turadi. O'zgargan tartibda, ya'ni inversiyada bu joylashuv o'zgaradi. Berilgan qolgan o'rinlar boshqa qismga tegishli: «gap oxirida», «aniqlanmishdan oldin», «gap boshida».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#fd05a97a"
+    },
+    {
+      "q": "«kesim» ning odatdagi o'rni qayerda?",
+      "v": [
+        "aniqlanmishdan oldin",
+        "kesimdan oldin",
+        "gap oxirida",
+        "gap boshida"
+      ],
+      "t": 2,
+      "izoh": "«kesim» — «gap oxirida»: odatdagi tartibda xabar oxirida keladi. O'zgargan tartibda, ya'ni inversiyada bu joylashuv o'zgaradi. Berilgan qolgan o'rinlar boshqa qismga tegishli: «aniqlanmishdan oldin», «kesimdan oldin», «gap boshida».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#3d40e2e9"
+    },
+    {
+      "q": "«ega» ning odatdagi o'rni qayerda?",
+      "v": [
+        "kesimdan oldin",
+        "gap oxirida",
+        "gap boshida",
+        "aniqlanmishdan oldin"
+      ],
+      "t": 2,
+      "izoh": "«ega» — «gap boshida»: odatdagi tartibda o'z aniqlovchisi bilan oldinda turadi. O'zgargan tartibda, ya'ni inversiyada bu joylashuv o'zgaradi. Berilgan qolgan o'rinlar boshqa qismga tegishli: «kesimdan oldin», «gap oxirida», «aniqlanmishdan oldin».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#3fd0a4ec"
+    },
+    {
+      "q": "Berilganlardan qaysi biri so'roq gap?",
+      "v": [
+        "Eh, bu yerlar naqadar chiroyli ekan!",
+        "Iltimos, eshikni ohista yopib qo'ying.",
+        "Nega kecha darsga kelmading, nima bo'ldi?",
+        "Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!"
+      ],
+      "t": 2,
+      "izoh": "«Nega kecha darsga kelmading, nima bo'ldi?» gapida javob talab qiladigan savol berilmoqda, shuning uchun u «so'roq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Iltimos, eshikni ohista yopib qo'ying.» — buyruq gap, chunki ish bajarishga undov ifodalangan; «Eh, bu yerlar naqadar chiroyli ekan!» — undov gap, chunki hayajon ohangi ustun turibdi; «Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!» — undov gap, chunki afsus ohangi butun gapga singdirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#87bc1a0b"
+    },
+    {
+      "q": "Qaysi gapda javob talab qilinmoqda?",
+      "v": [
+        "Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak bo'ladi?",
+        "Ertaga darsga vaqtida kelishni unutmang.",
+        "Yashang, mana bu haqiqiy mardlik!",
+        "Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!"
+      ],
+      "t": 0,
+      "izoh": "«Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak bo'ladi?» gapida so'roq shakli orqali aniq ma'lumot so'ralmoqda, shuning uchun u «so'roq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Ertaga darsga vaqtida kelishni unutmang.» — buyruq gap, chunki harakatga undash ifodalangan; «Yashang, mana bu haqiqiy mardlik!» — undov gap, chunki quvonch ohangi bilan aytilgan; «Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!» — undov gap, chunki afsus ohangi butun gapga singdirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#99e065ea"
+    },
+    {
+      "q": "Qaysi gap ma'lumot so'rash uchun tuzilgan?",
+      "v": [
+        "Ukam bugun maktabdan kech qaytdi.",
+        "Bu masalani kim hal qilib beradi?",
+        "Attang, shunday imkoniyatni qo'ldan boy berdik!",
+        "Yozda oilamiz bilan dengizga sayohat qildik."
+      ],
+      "t": 1,
+      "izoh": "«Bu masalani kim hal qilib beradi?» gapida so'roq olmoshi orqali ma'lumot so'ralmoqda, shuning uchun u «so'roq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Ukam bugun maktabdan kech qaytdi.» — darak gap, chunki voqea haqida oddiy ma'lumot berilmoqda; «Yozda oilamiz bilan dengizga sayohat qildik.» — darak gap, chunki voqelik haqida oddiy xabar berilmoqda; «Attang, shunday imkoniyatni qo'ldan boy berdik!» — undov gap, chunki afsus ohangi kuchli ifodalangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#fe9a8f58"
+    },
+    {
+      "q": "Qaysi gap ma'lumot so'rash uchun tuzilgan?",
+      "v": [
+        "Eh, bu yerlar naqadar chiroyli ekan!",
+        "Bizning maktabimiz shahar markazida joylashgan ekan.",
+        "Siz qachon biznikiga mehmonga kelasizlar?",
+        "Ofarin, sen juda yaxshi javob berding!"
+      ],
+      "t": 2,
+      "izoh": "«Siz qachon biznikiga mehmonga kelasizlar?» gapida aniq javob kutilayotgan savol berilgan, shuning uchun u «so'roq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Eh, bu yerlar naqadar chiroyli ekan!» — undov gap, chunki hayajon ohangi ustun turibdi; «Bizning maktabimiz shahar markazida joylashgan ekan.» — darak gap, chunki ma'lumot bayon qilingan, undash yo'q; «Ofarin, sen juda yaxshi javob berding!» — undov gap, chunki kuchli his-hayajon bilan aytilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#bf1c1024"
+    },
+    {
+      "q": "Qaysi gapda ish bajarishga undalmoqda?",
+      "v": [
+        "Barakalla, qanday ajoyib javob!",
+        "Qo'lingizni sovun bilan yuving.",
+        "Sen bu kitobni o'qidingmi?",
+        "Bu ishni kim bajardi?"
+      ],
+      "t": 1,
+      "izoh": "«Qo'lingizni sovun bilan yuving.» gapida ish bajarishga undov ifodalangan, shuning uchun u «buyruq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Barakalla, qanday ajoyib javob!» — undov gap, chunki hayajon ohangi ustun turibdi; «Sen bu kitobni o'qidingmi?» — so'roq gap, chunki javob talab qiladigan savol berilmoqda; «Bu ishni kim bajardi?» — so'roq gap, chunki so'roq olmoshi orqali ma'lumot so'ralmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#a1ff25a2"
+    },
+    {
+      "q": "Qaysi gapda ish bajarishga undalmoqda?",
+      "v": [
+        "Bahorda daraxtlar barg yozadi.",
+        "Kutubxona soat to'qqizda ochiladi.",
+        "Voy, qanday shirin qovun!",
+        "Bu yerda shovqin qilmang."
+      ],
+      "t": 3,
+      "izoh": "«Bu yerda shovqin qilmang.» gapida harakatdan tiyilish talab qilinmoqda, shuning uchun u «buyruq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Bahorda daraxtlar barg yozadi.» — darak gap, chunki voqelik haqida oddiy xabar berilmoqda; «Kutubxona soat to'qqizda ochiladi.» — darak gap, chunki ma'lumot bayon qilingan, undash yo'q; «Voy, qanday shirin qovun!» — undov gap, chunki kuchli hayajon bilan aytilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#351e730e"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri topshiriq ohangida aytilgan?",
+      "v": [
+        "Qo'lingizni sovun bilan yuving.",
+        "Bahorda daraxtlar barg yozadi.",
+        "Voy, qanday shirin qovun!",
+        "Kutubxona soat to'qqizda ochiladi."
+      ],
+      "t": 0,
+      "izoh": "«Qo'lingizni sovun bilan yuving.» gapida ish bajarishga undov ifodalangan, shuning uchun u «buyruq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Bahorda daraxtlar barg yozadi.» — darak gap, chunki voqelik haqida oddiy xabar berilmoqda; «Voy, qanday shirin qovun!» — undov gap, chunki kuchli hayajon bilan aytilgan; «Kutubxona soat to'qqizda ochiladi.» — darak gap, chunki ma'lumot bayon qilingan, undash yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#88a4dc49"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri topshiriq ohangida aytilgan?",
+      "v": [
+        "Siz qachon biznikiga mehmonga kelasizlar?",
+        "Sizning uyingiz shu ko'chada joylashganmi?",
+        "Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak bo'ladi?",
+        "Ertaga darsga vaqtida kelishni unutmang."
+      ],
+      "t": 3,
+      "izoh": "«Ertaga darsga vaqtida kelishni unutmang.» gapida harakatga undash ifodalangan, shuning uchun u «buyruq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Siz qachon biznikiga mehmonga kelasizlar?» — so'roq gap, chunki aniq javob kutilayotgan savol berilgan; «Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak bo'ladi?» — so'roq gap, chunki so'roq shakli orqali aniq ma'lumot so'ralmoqda; «Sizning uyingiz shu ko'chada joylashganmi?» — so'roq gap, chunki so'roq shakli orqali ma'lumot so'ralmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#5fcd624c"
+    },
+    {
+      "q": "Qaysi gap «darak gap» tarzida tuzilgan?",
+      "v": [
+        "Ertaga darsga vaqtida kelishni unutmang.",
+        "Ukam bugun maktabdan kech qaytdi.",
+        "Sizning uyingiz shu ko'chada joylashganmi?",
+        "Iltimos, eshikni ohista yopib qo'ying."
+      ],
+      "t": 1,
+      "izoh": "Bu gapda voqea haqida oddiy ma'lumot berilmoqda, shuning uchun u «darak gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Ertaga darsga vaqtida kelishni unutmang.» — buyruq gap; «Sizning uyingiz shu ko'chada joylashganmi?» — so'roq gap; «Iltimos, eshikni ohista yopib qo'ying.» — buyruq gap.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#e1cf3e13"
+    },
+    {
+      "q": "Qaysi gap «buyruq gap» tarzida tuzilgan?",
+      "v": [
+        "Darsni diqqat bilan tinglang.",
+        "Bahorda daraxtlar barg yozadi.",
+        "Barakalla, qanday ajoyib javob!",
+        "Kutubxona soat to'qqizda ochiladi."
+      ],
+      "t": 0,
+      "izoh": "Bu gapda ish bajarishga undov ifodalangan, shuning uchun u «buyruq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Bahorda daraxtlar barg yozadi.» — darak gap; «Barakalla, qanday ajoyib javob!» — undov gap; «Kutubxona soat to'qqizda ochiladi.» — darak gap.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#03db5273"
+    },
+    {
+      "q": "Berilganlardan qaysi biri «buyruq gap» sanaladi?",
+      "v": [
+        "Voy, qanday shirin qovun!",
+        "Bu ishni kim bajardi?",
+        "Bahorda daraxtlar barg yozadi.",
+        "Qo'lingizni sovun bilan yuving."
+      ],
+      "t": 3,
+      "izoh": "Bu gapda ish bajarishga undov ifodalangan, shuning uchun u «buyruq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Bu ishni kim bajardi?» — so'roq gap; «Bahorda daraxtlar barg yozadi.» — darak gap; «Voy, qanday shirin qovun!» — undov gap.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#e5f8cb6f"
+    },
+    {
+      "q": "Berilganlardan qaysi biri «buyruq gap» sanaladi?",
+      "v": [
+        "Kitoblarni javonga tartib bilan terib qo'ying.",
+        "Sizning uyingiz shu ko'chada joylashganmi?",
+        "Bu masalani kim hal qilib beradi?",
+        "Siz qachon biznikiga mehmonga kelasizlar?"
+      ],
+      "t": 0,
+      "izoh": "Bu gapda topshiriq berish ohangi ustun, shuning uchun u «buyruq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Siz qachon biznikiga mehmonga kelasizlar?» — so'roq gap; «Sizning uyingiz shu ko'chada joylashganmi?» — so'roq gap; «Bu masalani kim hal qilib beradi?» — so'roq gap.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#1f0e4828"
+    },
+    {
+      "q": "Uchtasi «darak gap». Berilganlardan qaysi biri ortiqcha?",
+      "v": [
+        "Bu kitobni ukam kecha o'qib chiqdi.",
+        "Ofarin, sen juda yaxshi javob berding!",
+        "Kitoblar javonda tartib bilan terib qo'yilgan.",
+        "Yozda oilamiz bilan dengizga sayohat qildik."
+      ],
+      "t": 1,
+      "izoh": "Bu gapda kuchli his-hayajon bilan aytilgan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi «darak gap»: «Bu kitobni ukam kecha o'qib chiqdi.» «Kitoblar javonda tartib bilan terib qo'yilgan.» «Yozda oilamiz bilan dengizga sayohat qildik.»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#351590ef"
+    },
+    {
+      "q": "Uchtasi «darak gap». Berilganlardan qaysi biri ortiqcha?",
+      "v": [
+        "Yozda dalalarda ish qizib ketadi.",
+        "Attang, shunday imkoniyatni qo'ldan boy berdik!",
+        "Ukam bugun maktabdan kech qaytdi.",
+        "Bizning maktabimiz shahar markazida joylashgan ekan."
+      ],
+      "t": 1,
+      "izoh": "Bu gapda afsus ohangi kuchli ifodalangan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi «darak gap»: «Yozda dalalarda ish qizib ketadi.» «Bizning maktabimiz shahar markazida joylashgan ekan.» «Ukam bugun maktabdan kech qaytdi.»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#662e3f2f"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri «darak gap» sanalmaydi?",
+      "v": [
+        "Ukam bugun maktabdan kech qaytdi.",
+        "Bizning maktabimiz shahar markazida joylashgan ekan.",
+        "Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak bo'ladi?",
+        "Kitoblar javonda tartib bilan terib qo'yilgan."
+      ],
+      "t": 2,
+      "izoh": "Bu gapda so'roq shakli orqali aniq ma'lumot so'ralmoqda, shuning uchun u «so'roq gap» sanaladi. Qolgan uchtasi «darak gap»: «Ukam bugun maktabdan kech qaytdi.» «Bizning maktabimiz shahar markazida joylashgan ekan.» «Kitoblar javonda tartib bilan terib qo'yilgan.»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#89ae9f70"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri «buyruq gap» sanalmaydi?",
+      "v": [
+        "Ertaga darsga vaqtida kelishni unutmang.",
+        "Kitoblarni javonga tartib bilan terib qo'ying.",
+        "Qo'lingizni yuvib, dasturxon boshiga o'tiring.",
+        "Eh, bu yerlar naqadar chiroyli ekan!"
+      ],
+      "t": 3,
+      "izoh": "Bu gapda hayajon ohangi ustun turibdi, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi «buyruq gap»: «Ertaga darsga vaqtida kelishni unutmang.» «Kitoblarni javonga tartib bilan terib qo'ying.» «Qo'lingizni yuvib, dasturxon boshiga o'tiring.»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#ef80ea11"
+    },
+    {
+      "q": "Berilgan qisqa gaplardan qaysi biri darak gap?",
+      "v": [
+        "Kitoblarni javonga tartib bilan terib qo'ying.",
+        "Kitoblar javonda tartib bilan terib qo'yilgan.",
+        "Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak bo'ladi?",
+        "Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!"
+      ],
+      "t": 1,
+      "izoh": "«Kitoblar javonda tartib bilan terib qo'yilgan.» gapida holat haqida quruq xabar berilgan, shuning uchun u «darak gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Kitoblarni javonga tartib bilan terib qo'ying.» — buyruq gap, chunki topshiriq berish ohangi ustun; «Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak bo'ladi?» — so'roq gap, chunki so'roq shakli orqali aniq ma'lumot so'ralmoqda; «Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!» — undov gap, chunki afsus ohangi butun gapga singdirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#dc077e8b"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri xabar tarzida aytilgan?",
+      "v": [
+        "Nega kecha darsga kelmading, nima bo'ldi?",
+        "Kitoblarni javonga tartib bilan terib qo'ying.",
+        "Iltimos, eshikni ohista yopib qo'ying.",
+        "Kitoblar javonda tartib bilan terib qo'yilgan."
+      ],
+      "t": 3,
+      "izoh": "«Kitoblar javonda tartib bilan terib qo'yilgan.» gapida holat haqida quruq xabar berilgan, shuning uchun u «darak gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Kitoblarni javonga tartib bilan terib qo'ying.» — buyruq gap, chunki topshiriq berish ohangi ustun; «Iltimos, eshikni ohista yopib qo'ying.» — buyruq gap, chunki ish bajarishga undov ifodalangan; «Nega kecha darsga kelmading, nima bo'ldi?» — so'roq gap, chunki javob talab qiladigan savol berilmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#467602c8"
+    },
+    {
+      "q": "Berilgan qisqa gaplardan qaysi biri darak gap?",
+      "v": [
+        "Ukam bugun maktabdan kech qaytdi.",
+        "Bu masalani kim hal qilib beradi?",
+        "Iltimos, eshikni ohista yopib qo'ying.",
+        "Nega kecha darsga kelmading, nima bo'ldi?"
+      ],
+      "t": 0,
+      "izoh": "«Ukam bugun maktabdan kech qaytdi.» gapida voqea haqida oddiy ma'lumot berilmoqda, shuning uchun u «darak gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Bu masalani kim hal qilib beradi?» — so'roq gap, chunki so'roq olmoshi orqali ma'lumot so'ralmoqda; «Iltimos, eshikni ohista yopib qo'ying.» — buyruq gap, chunki ish bajarishga undov ifodalangan; «Nega kecha darsga kelmading, nima bo'ldi?» — so'roq gap, chunki javob talab qiladigan savol berilmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#277bda3f"
+    },
+    {
+      "q": "Berilgan qisqa gaplardan qaysi biri darak gap?",
+      "v": [
+        "Bu kitobni ukam kecha o'qib chiqdi.",
+        "Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!",
+        "Ofarin, sen juda yaxshi javob berding!",
+        "Yashang, mana bu haqiqiy mardlik!"
+      ],
+      "t": 0,
+      "izoh": "«Bu kitobni ukam kecha o'qib chiqdi.» gapida ma'lumot bayon qilingan, undash yo'q, shuning uchun u «darak gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Yashang, mana bu haqiqiy mardlik!» — undov gap, chunki quvonch ohangi bilan aytilgan; «Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!» — undov gap, chunki afsus ohangi butun gapga singdirilgan; «Ofarin, sen juda yaxshi javob berding!» — undov gap, chunki kuchli his-hayajon bilan aytilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#c32c9b95"
+    },
+    {
+      "q": "Berilgan qisqa gaplardan qaysi biri undov gap?",
+      "v": [
+        "Attang, shunday imkoniyatni qo'ldan boy berdik!",
+        "Yozda dalalarda ish qizib ketadi.",
+        "Kitoblar javonda tartib bilan terib qo'yilgan.",
+        "Sizning uyingiz shu ko'chada joylashganmi?"
+      ],
+      "t": 0,
+      "izoh": "«Attang, shunday imkoniyatni qo'ldan boy berdik!» gapida afsus ohangi kuchli ifodalangan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Kitoblar javonda tartib bilan terib qo'yilgan.» — darak gap, chunki holat haqida quruq xabar berilgan; «Yozda dalalarda ish qizib ketadi.» — darak gap, chunki voqelik haqida oddiy xabar berilgan; «Sizning uyingiz shu ko'chada joylashganmi?» — so'roq gap, chunki so'roq shakli orqali ma'lumot so'ralmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#8ff5e986"
+    },
+    {
+      "q": "Qaysi gapda kuchli his-hayajon ifodalangan?",
+      "v": [
+        "Bahorda daraxtlar barg yozadi.",
+        "Qo'lingizni sovun bilan yuving.",
+        "Voy, qanday shirin qovun!",
+        "Bu ishni kim bajardi?"
+      ],
+      "t": 2,
+      "izoh": "«Voy, qanday shirin qovun!» gapida kuchli hayajon bilan aytilgan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Bahorda daraxtlar barg yozadi.» — darak gap, chunki voqelik haqida oddiy xabar berilmoqda; «Qo'lingizni sovun bilan yuving.» — buyruq gap, chunki ish bajarishga undov ifodalangan; «Bu ishni kim bajardi?» — so'roq gap, chunki so'roq olmoshi orqali ma'lumot so'ralmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#7c4c5583"
+    },
+    {
+      "q": "Berilgan qisqa gaplardan qaysi biri undov gap?",
+      "v": [
+        "Bu kitobni ukam kecha o'qib chiqdi.",
+        "Kitoblar javonda tartib bilan terib qo'yilgan.",
+        "Ertaga darsga vaqtida kelishni unutmang.",
+        "Yashang, mana bu haqiqiy mardlik!"
+      ],
+      "t": 3,
+      "izoh": "«Yashang, mana bu haqiqiy mardlik!» gapida quvonch ohangi bilan aytilgan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Bu kitobni ukam kecha o'qib chiqdi.» — darak gap, chunki ma'lumot bayon qilingan, undash yo'q; «Kitoblar javonda tartib bilan terib qo'yilgan.» — darak gap, chunki holat haqida quruq xabar berilgan; «Ertaga darsga vaqtida kelishni unutmang.» — buyruq gap, chunki harakatga undash ifodalangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#f50fea02"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri hayajon ohangi bilan aytilgan?",
+      "v": [
+        "Ertaga darsga vaqtida kelishni unutmang.",
+        "Nega kecha darsga kelmading, nima bo'ldi?",
+        "Bu masalani kim hal qilib beradi?",
+        "Yashang, mana bu haqiqiy mardlik!"
+      ],
+      "t": 3,
+      "izoh": "«Yashang, mana bu haqiqiy mardlik!» gapida quvonch ohangi bilan aytilgan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Ertaga darsga vaqtida kelishni unutmang.» — buyruq gap, chunki harakatga undash ifodalangan; «Nega kecha darsga kelmading, nima bo'ldi?» — so'roq gap, chunki javob talab qiladigan savol berilmoqda; «Bu masalani kim hal qilib beradi?» — so'roq gap, chunki so'roq olmoshi orqali ma'lumot so'ralmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#b1de9c76"
+    },
+    {
+      "q": "Qaysi misolda predmet boshqasiga qiyoslangan?",
+      "v": [
+        "Zarhal barglar shabadada tebranardi.",
+        "Marvarid tomchilar yaproqda yaltiradi.",
+        "Ko'zlari yulduzdek charaqlab turardi.",
+        "Yozuvchi yozuvini yana yozdi."
+      ],
+      "t": 2,
+      "izoh": "«Ko'zlari yulduzdek charaqlab turardi.» misolida belgi qiyoslash vositasi bilan berilgan — bu «o'xshatish» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Zarhal barglar shabadada tebranardi.» — sifatlash, chunki predmet belgisi ko'chma ma'noda berilgan; «Marvarid tomchilar yaproqda yaltiradi.» — sifatlash, chunki narsaga obrazli belgi qo'shib tasvirlangan; «Yozuvchi yozuvini yana yozdi.» — tavtologiya, chunki ayni o'zak ortiqcha takrorlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#f88df2a0"
+    },
+    {
+      "q": "Quyidagilardan qaysi birida qiyoslash vositasi bor?",
+      "v": [
+        "Ko'zlari yulduzdek charaqlab turardi.",
+        "Bilim quvvat, mehnat davlat.",
+        "Bordi mehnat, keldi rohat.",
+        "Zarhal barglar shabadada tebranardi."
+      ],
+      "t": 0,
+      "izoh": "«Ko'zlari yulduzdek charaqlab turardi.» misolida belgi qiyoslash vositasi bilan berilgan — bu «o'xshatish» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Bilim quvvat, mehnat davlat.» — parallellik, chunki qurilma aynan bir qolipda takrorlangan; «Bordi mehnat, keldi rohat.» — inversiya, chunki kesim ikkala qismda ham oldinga chiqarilgan; «Zarhal barglar shabadada tebranardi.» — sifatlash, chunki predmet belgisi ko'chma ma'noda berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#646c8c52"
+    },
+    {
+      "q": "Quyidagilardan qaysi birida qiyoslash vositasi bor?",
+      "v": [
+        "Yog'di yomg'ir, yuvildi yo'llar changi.",
+        "Uning yuzi oydek yorishib ketdi.",
+        "Kumush tomchilar zumrad barglarda yaltiradi.",
+        "Oltin kuz bog'imizga kumush sepdi."
+      ],
+      "t": 1,
+      "izoh": "«Uning yuzi oydek yorishib ketdi.» misolida predmet boshqasiga «-dek» vositasida qiyoslangan — bu «o'xshatish» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Yog'di yomg'ir, yuvildi yo'llar changi.» — inversiya, chunki xabar bildiruvchi qism oldinga chiqarilgan; «Kumush tomchilar zumrad barglarda yaltiradi.» — sifatlash, chunki belgi ko'chma ma'noda qo'shib berilgan; «Oltin kuz bog'imizga kumush sepdi.» — sifatlash, chunki ikki belgi ham ko'chma ma'noda qo'llangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#b3040f21"
+    },
+    {
+      "q": "Qaysi misolda predmet boshqasiga qiyoslangan?",
+      "v": [
+        "Uning yuzi to'lin oydek yorishib, xonaga nur tarqagandek bo'ldi.",
+        "Ko'z yoshi daryo bo'lib oqdi.",
+        "Yetib keldi kutilgan quvonchli xabar.",
+        "Ko'z yoshlari daryo bo'lib oqdi, butun hovlini suv bosayozdi."
+      ],
+      "t": 0,
+      "izoh": "«Uning yuzi to'lin oydek yorishib, xonaga nur tarqagandek bo'ldi.» misolida qiyoslash vositasi ikki marta qo'llangan — bu «o'xshatish» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Ko'z yoshi daryo bo'lib oqdi.» — mubolag'a, chunki miqdor ataylab oshirib tasvirlangan; «Yetib keldi kutilgan quvonchli xabar.» — inversiya, chunki bo'laklar odatdagi tartibdan chetlatilgan; «Ko'z yoshlari daryo bo'lib oqdi, butun hovlini suv bosayozdi.» — mubolag'a, chunki miqdor ataylab oshirib, ikki qismda tasvirlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#298eea95"
+    },
+    {
+      "q": "Quyidagilardan qaysi birida oshirib tasvirlash bor?",
+      "v": [
+        "So'yladi ustoz, tingladi shogird jimgina.",
+        "Yog'di yomg'ir, yuvildi yo'llar changi.",
+        "Oltin kuz bog'imizga kumush sochdi.",
+        "Ovozi butun shaharni tutib ketdi."
+      ],
+      "t": 3,
+      "izoh": "«Ovozi butun shaharni tutib ketdi.» misolida tovush kuchi haddan ortiq qilib berilgan — bu «mubolag'a» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Yog'di yomg'ir, yuvildi yo'llar changi.» — inversiya, chunki xabar bildiruvchi qism oldinga chiqarilgan; «Oltin kuz bog'imizga kumush sochdi.» — sifatlash, chunki predmet belgisi ko'chma ma'noda berilgan; «So'yladi ustoz, tingladi shogird jimgina.» — inversiya, chunki xabar qismi gap boshiga olib chiqilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#2c150672"
+    },
+    {
+      "q": "Quyidagilardan qaysi birida oshirib tasvirlash bor?",
+      "v": [
+        "Mehnat qilgan mehr topar, dangasalik qilgan afsus chekar.",
+        "Oltin kuz zarrin barglarni kumush shudringga cho'mdirib qo'ydi.",
+        "Kumush oy tunni yoritib turdi.",
+        "Ko'z yoshi daryo bo'lib oqdi."
+      ],
+      "t": 3,
+      "izoh": "«Ko'z yoshi daryo bo'lib oqdi.» misolida miqdor ataylab oshirib tasvirlangan — bu «mubolag'a» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Mehnat qilgan mehr topar, dangasalik qilgan afsus chekar.» — parallellik, chunki ikki qism bir xil qolipda qarshi qo'yilgan; «Oltin kuz zarrin barglarni kumush shudringga cho'mdirib qo'ydi.» — sifatlash, chunki uch belgi ham ko'chma ma'noda qo'shib berilgan; «Kumush oy tunni yoritib turdi.» — sifatlash, chunki belgi badiiy tarzda ko'chirib berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#74360ebd"
+    },
+    {
+      "q": "Qaysi misolda belgi haqiqatdagidan ortiq ko'rsatilgan?",
+      "v": [
+        "Bugun bugungi ishni bugun bajardik.",
+        "Ona yurting — oltin beshiging.",
+        "Ko'z yoshlari daryo bo'lib oqdi, butun hovlini suv bosayozdi.",
+        "Bugungi ishni bugun bajaring, ertangi ishni ertaga bajaring."
+      ],
+      "t": 2,
+      "izoh": "«Ko'z yoshlari daryo bo'lib oqdi, butun hovlini suv bosayozdi.» misolida miqdor ataylab oshirib, ikki qismda tasvirlangan — bu «mubolag'a» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Bugun bugungi ishni bugun bajardik.» — tavtologiya, chunki ayni birlik ortiqcha qaytarilgan; «Ona yurting — oltin beshiging.» — sifatlash, chunki predmet belgisi ko'chma ma'noda berilgan; «Bugungi ishni bugun bajaring, ertangi ishni ertaga bajaring.» — parallellik, chunki ikki qism aynan bir qolipda tuzilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#f265dac0"
+    },
+    {
+      "q": "Berilganlardan qaysi birida mubolag'a qo'llangan?",
+      "v": [
+        "Bugun bugungi ishni bugun bajardik.",
+        "Ovozi butun shaharni tutib ketdi.",
+        "Bugungi ishni bugun bajaring, ertangi ishni ertaga bajaring.",
+        "Yog'di yomg'ir, yuvildi yo'llar changi."
+      ],
+      "t": 1,
+      "izoh": "«Ovozi butun shaharni tutib ketdi.» misolida tovush kuchi haddan ortiq qilib berilgan — bu «mubolag'a» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Bugun bugungi ishni bugun bajardik.» — tavtologiya, chunki ayni birlik ortiqcha qaytarilgan; «Yog'di yomg'ir, yuvildi yo'llar changi.» — inversiya, chunki xabar bildiruvchi qism oldinga chiqarilgan; «Bugungi ishni bugun bajaring, ertangi ishni ertaga bajaring.» — parallellik, chunki ikki qism aynan bir qolipda tuzilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#4d1a341a"
+    },
+    {
+      "q": "Qaysi qisqa misolda «parallellik» qo'llangan?",
+      "v": [
+        "Oltin kuzning zarrin kunlari yetib keldi.",
+        "Ochildi eshik, kirib keldi kutilmagan mehmon, jonlandi xonadon.",
+        "Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi.",
+        "To'g'ri bo'lsang gul bo'lasan, egri bo'lsang kul bo'lasan."
+      ],
+      "t": 3,
+      "izoh": "Bu misolda qurilma aynan takrorlangan — bu «parallellik» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Ochildi eshik, kirib keldi kutilmagan mehmon, jonlandi xonadon.» — inversiya; «Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi.» — tavtologiya; «Oltin kuzning zarrin kunlari yetib keldi.» — sifatlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#00fa6960"
+    },
+    {
+      "q": "«sifatlash» ko'ringan misolni toping.",
+      "v": [
+        "Ochildi eshik, kirib keldi kutilmagan mehmon, jonlandi xonadon.",
+        "Oltin kuz zarrin barglarni kumush shudringga cho'mdirib qo'ydi.",
+        "Yozuvchi yozgan yozuvini yana yozdi.",
+        "Yetib keldi kutilgan quvonchli xabar."
+      ],
+      "t": 1,
+      "izoh": "Bu misolda uch belgi ham ko'chma ma'noda qo'shib berilgan — bu «sifatlash» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Ochildi eshik, kirib keldi kutilmagan mehmon, jonlandi xonadon.» — inversiya; «Yetib keldi kutilgan quvonchli xabar.» — inversiya; «Yozuvchi yozgan yozuvini yana yozdi.» — tavtologiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#f9eeab6b"
+    },
+    {
+      "q": "Berilganlardan qaysi birida «sifatlash» kuzatiladi?",
+      "v": [
+        "Uning yuzi oydek yorishib ketdi.",
+        "Ochildi eshik, kirib keldi kutilmagan mehmon, jonlandi xonadon.",
+        "Bolalar bahordagi qushlar kabi yengil bo'lib maydon bo'ylab yugurishardi.",
+        "Marvarid tomchilar zumrad yaproqlarda quyoshda jimgina yaltirardi."
+      ],
+      "t": 3,
+      "izoh": "Bu misolda belgilar ko'chma ma'noda ketma-ket qo'llangan — bu «sifatlash» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Ochildi eshik, kirib keldi kutilmagan mehmon, jonlandi xonadon.» — inversiya; «Bolalar bahordagi qushlar kabi yengil bo'lib maydon bo'ylab yugurishardi.» — o'xshatish; «Uning yuzi oydek yorishib ketdi.» — o'xshatish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#5496598f"
+    },
+    {
+      "q": "«mubolag'a» ko'ringan misolni toping.",
+      "v": [
+        "Oltin kuz zarrin barglarni kumush shudringga cho'mdirib qo'ydi.",
+        "Ilm o'rgangan yuksalar, ilmdan qochgan pastlar, tirishgan yutar.",
+        "Mehnat qilgan mehr topar, dangasa och qolar.",
+        "Ko'z yoshlari daryo bo'lib oqdi, butun hovlini suv bosayozdi."
+      ],
+      "t": 3,
+      "izoh": "Bu misolda miqdor ataylab oshirib, ikki qismda tasvirlangan — bu «mubolag'a» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Oltin kuz zarrin barglarni kumush shudringga cho'mdirib qo'ydi.» — sifatlash; «Ilm o'rgangan yuksalar, ilmdan qochgan pastlar, tirishgan yutar.» — parallellik; «Mehnat qilgan mehr topar, dangasa och qolar.» — parallellik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#2fbca854"
+    },
+    {
+      "q": "Berilganlardan qaysi birida «sifatlash» kuzatilmaydi?",
+      "v": [
+        "Oltin kuz bog'imizga kumush sepdi.",
+        "Kumush oy tunni yoritib turdi.",
+        "Yetib keldi kutilgan xabar, quvondi butun mahalla, tarqadi shodlik.",
+        "Marvarid tomchilar zumrad yaproqlarda quyoshda jimgina yaltirardi."
+      ],
+      "t": 2,
+      "izoh": "Bu misolda kesim uch qismda ham gap boshiga chiqarilgan — bu «inversiya». Qolgan uchtasida «sifatlash» ishlagan: «Oltin kuz bog'imizga kumush sepdi.» «Kumush oy tunni yoritib turdi.» «Marvarid tomchilar zumrad yaproqlarda quyoshda jimgina yaltirardi.»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_usl_m12-gap-uslubiyati#c0d4cb3f"
+    },
+    {
+      "q": "«Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi.» misolidagi vositani aniqlang.",
+      "v": [
+        "parallellik",
+        "inversiya",
+        "tavtologiya",
+        "sifatlash"
+      ],
+      "t": 2,
+      "izoh": "Bu misolda bir o'zakli birliklar keraksiz qaytarilgan — bu «tavtologiya» deyiladi. Berilgan qolganlari bu misolda kuzatilmaydi: «parallellik» — qurilmalarning bir xil qolipda takrorlanishi; «inversiya» — bo'laklarning odatdagi o'rni almashtirilishi; «sifatlash» — predmet belgisining ko'chma ma'noda berilishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#aad6adcb"
+    },
+    {
+      "q": "«Kumush tomchilar zumrad barglarda yaltiradi.» misolida qaysi hodisa ko'rinadi?",
+      "v": [
+        "parallellik",
+        "sifatlash",
+        "inversiya",
+        "tavtologiya"
+      ],
+      "t": 1,
+      "izoh": "Bu misolda belgi ko'chma ma'noda qo'shib berilgan — bu «sifatlash» deyiladi. Berilgan qolganlari bu misolda kuzatilmaydi: «parallellik» — qurilmalarning bir xil qolipda takrorlanishi; «inversiya» — bo'laklarning odatdagi o'rni almashtirilishi; «tavtologiya» — bir o'zakli birliklarning ortiqcha qaytarilishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#e6d5ea6c"
+    },
+    {
+      "q": "«Yozuvchi yozgan yozuvini yana yozdi.» misolida qaysi hodisa ko'rinadi?",
+      "v": [
+        "sifatlash",
+        "parallellik",
+        "tavtologiya",
+        "inversiya"
+      ],
+      "t": 2,
+      "izoh": "Bu misolda bir o'zakli birliklar keraksiz qaytarilgan — bu «tavtologiya» deyiladi. Berilgan qolganlari bu misolda kuzatilmaydi: «sifatlash» — predmet belgisining ko'chma ma'noda berilishi; «parallellik» — qurilmalarning bir xil qolipda takrorlanishi; «inversiya» — bo'laklarning odatdagi o'rni almashtirilishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#9b289572"
+    },
+    {
+      "q": "«Mehnat qilgan mehr topar, dangasalik qilgan afsus chekar.» misolidagi vositani aniqlang.",
+      "v": [
+        "sifatlash",
+        "tavtologiya",
+        "parallellik",
+        "inversiya"
+      ],
+      "t": 2,
+      "izoh": "Bu misolda ikki qism bir xil qolipda qarshi qo'yilgan — bu «parallellik» deyiladi. Berilgan qolganlari bu misolda kuzatilmaydi: «sifatlash» — predmet belgisining ko'chma ma'noda berilishi; «tavtologiya» — bir o'zakli birliklarning ortiqcha qaytarilishi; «inversiya» — bo'laklarning odatdagi o'rni almashtirilishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#8c996caa"
+    },
+    {
+      "q": "«Ovozi butun shaharni tutib ketdi.» misolidagi vositani aniqlang.",
+      "v": [
+        "tavtologiya",
+        "mubolag'a",
+        "parallellik",
+        "inversiya"
+      ],
+      "t": 1,
+      "izoh": "Bu misolda tovush kuchi haddan ortiq qilib berilgan — bu «mubolag'a» deyiladi. Berilgan qolganlari bu misolda kuzatilmaydi: «tavtologiya» — bir o'zakli birliklarning ortiqcha qaytarilishi; «parallellik» — qurilmalarning bir xil qolipda takrorlanishi; «inversiya» — bo'laklarning odatdagi o'rni almashtirilishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#ff5477f3"
+    },
+    {
+      "q": "Berilganlardan qaysi biri undov gap?",
+      "v": [
+        "Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak va kim bilan birga borishimiz lozim?",
+        "Kecha darsga nega kelmading va nima uchun menga oldindan xabar bermading?",
+        "Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza, bu manzara naqadar ko'ngilni yayratadi!",
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang."
+      ],
+      "t": 2,
+      "izoh": "«Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza, bu manzara naqadar ko'ngilni yayratadi!» gapida hayajon ohangi uch qismda ham kuchli ifodalangan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Kecha darsga nega kelmading va nima uchun menga oldindan xabar bermading?» — so'roq gap, chunki javob talab qiladigan ikki savol ketma-ket berilgan; «Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak va kim bilan birga borishimiz lozim?» — so'roq gap, chunki so'roq olmoshlari orqali aniq ma'lumot so'ralmoqda; «Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.» — buyruq gap, chunki topshiriq berish ohangi butun gapda ustun turibdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#ad8e9522"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri hayajon ohangi bilan aytilgan?",
+      "v": [
+        "Kecha darsga nega kelmading va nima uchun menga oldindan xabar bermading?",
+        "Hovlini supurib chiqing, gullarni sug'oring, so'ngra darvozani yopib, itni bog'lab qo'yishni ham esdan chiqarmang.",
+        "Voy, bu bolalarning mehnati naqadar ulug', ular butun mahallani bir kunda ozoda qilib qo'yishibdi-ya!",
+        "Bu kitobni qaysi kutubxonadan olding, uni qancha muddatga berishdi va qaytarish sanasi qachon tugaydi?"
+      ],
+      "t": 2,
+      "izoh": "«Voy, bu bolalarning mehnati naqadar ulug', ular butun mahallani bir kunda ozoda qilib qo'yishibdi-ya!» gapida hayrat ohangi uzun bayonda ham saqlanib qolgan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Kecha darsga nega kelmading va nima uchun menga oldindan xabar bermading?» — so'roq gap, chunki javob talab qiladigan ikki savol ketma-ket berilgan; «Hovlini supurib chiqing, gullarni sug'oring, so'ngra darvozani yopib, itni bog'lab qo'yishni ham esdan chiqarmang.» — buyruq gap, chunki to'rt topshiriq ketma-ket undash ohangida berilgan; «Bu kitobni qaysi kutubxonadan olding, uni qancha muddatga berishdi va qaytarish sanasi qachon tugaydi?» — so'roq gap, chunki uzun qurilmada ham javob talab qilinmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#18021b08"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri hayajon ohangi bilan aytilgan?",
+      "v": [
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.",
+        "Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza ekan!",
+        "Kecha darsga nega kelmading va nima uchun menga oldindan xabar bermading?",
+        "Bu kitobni qaysi kutubxonadan olding, uni qancha muddatga berishdi va qaytarish sanasi qachon tugaydi?"
+      ],
+      "t": 1,
+      "izoh": "«Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza ekan!» gapida hayajon ohangi ikki qismda ham kuchli ifodalangan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.» — buyruq gap, chunki topshiriq berish ohangi butun gapda ustun turibdi; «Bu kitobni qaysi kutubxonadan olding, uni qancha muddatga berishdi va qaytarish sanasi qachon tugaydi?» — so'roq gap, chunki uzun qurilmada ham javob talab qilinmoqda; «Kecha darsga nega kelmading va nima uchun menga oldindan xabar bermading?» — so'roq gap, chunki javob talab qiladigan ikki savol ketma-ket berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#d85b904b"
+    },
+    {
+      "q": "Berilganlardan qaysi biri undov gap?",
+      "v": [
+        "Voy, bu bolalarning mehnati naqadar ulug', ular butun mahallani bir kunda ozoda qilib qo'yishibdi-ya!",
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.",
+        "Kitoblarni javonga tartib bilan terib qo'ying, chiqishda eshikni yoping va kalitni navbatchiga topshirishni unutmang.",
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring va daftaringizni yoningizda olib yuring."
+      ],
+      "t": 0,
+      "izoh": "«Voy, bu bolalarning mehnati naqadar ulug', ular butun mahallani bir kunda ozoda qilib qo'yishibdi-ya!» gapida hayrat ohangi uzun bayonda ham saqlanib qolgan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.» — buyruq gap, chunki topshiriq berish ohangi butun gapda ustun turibdi; «Kitoblarni javonga tartib bilan terib qo'ying, chiqishda eshikni yoping va kalitni navbatchiga topshirishni unutmang.» — buyruq gap, chunki ketma-ket ish bajarishga undash ifodalangan; «Darsga vaqtida keling, uy vazifasini to'liq bajaring va daftaringizni yoningizda olib yuring.» — buyruq gap, chunki topshiriq berish ohangi butun gapda ustun turibdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#48b2dfc0"
+    },
+    {
+      "q": "Berilganlardan qaysi biri undov gap?",
+      "v": [
+        "Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang.",
+        "Kecha darsga nega kelmading va nima uchun menga oldindan xabar bermading?",
+        "Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza ekan!",
+        "Bu kitobni qaysi kutubxonadan olding, uni qancha muddatga berishdi va qaytarish sanasi qachon tugaydi?"
+      ],
+      "t": 2,
+      "izoh": "«Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza ekan!» gapida hayajon ohangi ikki qismda ham kuchli ifodalangan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang.» — buyruq gap, chunki ketma-ket ish bajarishga undash ifodalangan; «Kecha darsga nega kelmading va nima uchun menga oldindan xabar bermading?» — so'roq gap, chunki javob talab qiladigan ikki savol ketma-ket berilgan; «Bu kitobni qaysi kutubxonadan olding, uni qancha muddatga berishdi va qaytarish sanasi qachon tugaydi?» — so'roq gap, chunki uzun qurilmada ham javob talab qilinmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#13557dbd"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri undash va savolsiz aytilgan?",
+      "v": [
+        "Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza, bu manzara naqadar ko'ngilni yayratadi!",
+        "Hovlini supurib chiqing, gullarni sug'oring, so'ngra darvozani yopib, itni bog'lab qo'yishni ham esdan chiqarmang.",
+        "Kutubxona har kuni soat to'qqizda ochilib, kechqurun oltida yopiladi, dam olish kunlari esa ishlamaydi.",
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang."
+      ],
+      "t": 2,
+      "izoh": "«Kutubxona har kuni soat to'qqizda ochilib, kechqurun oltida yopiladi, dam olish kunlari esa ishlamaydi.» gapida ma'lumot bayon qilingan, so'roq va undash ohangi yo'q, shuning uchun u «darak gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza, bu manzara naqadar ko'ngilni yayratadi!» — undov gap, chunki hayajon ohangi uch qismda ham kuchli ifodalangan; «Hovlini supurib chiqing, gullarni sug'oring, so'ngra darvozani yopib, itni bog'lab qo'yishni ham esdan chiqarmang.» — buyruq gap, chunki to'rt topshiriq ketma-ket undash ohangida berilgan; «Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.» — buyruq gap, chunki topshiriq berish ohangi butun gapda ustun turibdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#d66f8c12"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri undash va savolsiz aytilgan?",
+      "v": [
+        "Voy, bu bolalarning mehnati naqadar ulug', ular butun mahallani bir kunda ozoda qilib qo'yishibdi-ya!",
+        "Bu kitobni qaysi kutubxonadan olding, uni qancha muddatga berishdi va qaytarish sanasi qachon tugaydi?",
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring va daftaringizni yoningizda olib yuring.",
+        "Bahor kelishi bilan bog'imizdagi olma daraxtlari barg yozdi va butun hovli yashil rangga burkandi."
+      ],
+      "t": 3,
+      "izoh": "«Bahor kelishi bilan bog'imizdagi olma daraxtlari barg yozdi va butun hovli yashil rangga burkandi.» gapida voqelik haqida ketma-ket xabar berilgan, undash yo'q, shuning uchun u «darak gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Voy, bu bolalarning mehnati naqadar ulug', ular butun mahallani bir kunda ozoda qilib qo'yishibdi-ya!» — undov gap, chunki hayrat ohangi uzun bayonda ham saqlanib qolgan; «Bu kitobni qaysi kutubxonadan olding, uni qancha muddatga berishdi va qaytarish sanasi qachon tugaydi?» — so'roq gap, chunki uzun qurilmada ham javob talab qilinmoqda; «Darsga vaqtida keling, uy vazifasini to'liq bajaring va daftaringizni yoningizda olib yuring.» — buyruq gap, chunki topshiriq berish ohangi butun gapda ustun turibdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#9d01fe2b"
+    },
+    {
+      "q": "Qaysi gapda oddiy xabar berilmoqda?",
+      "v": [
+        "Voy, bu bolalarning mehnati naqadar ulug', ular butun mahallani bir kunda ozoda qilib qo'yishibdi-ya!",
+        "Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik, endi afsuslanishdan boshqa chora qolmadi-ya!",
+        "Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak va kim bilan birga borishimiz lozim?",
+        "Kutubxona har kuni soat to'qqizda ochilib, kechqurun oltida yopiladi, dam olish kunlari esa ishlamaydi."
+      ],
+      "t": 3,
+      "izoh": "«Kutubxona har kuni soat to'qqizda ochilib, kechqurun oltida yopiladi, dam olish kunlari esa ishlamaydi.» gapida ma'lumot bayon qilingan, so'roq va undash ohangi yo'q, shuning uchun u «darak gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Voy, bu bolalarning mehnati naqadar ulug', ular butun mahallani bir kunda ozoda qilib qo'yishibdi-ya!» — undov gap, chunki hayrat ohangi uzun bayonda ham saqlanib qolgan; «Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik, endi afsuslanishdan boshqa chora qolmadi-ya!» — undov gap, chunki afsus ohangi butun qurilmaga singdirilgan; «Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak va kim bilan birga borishimiz lozim?» — so'roq gap, chunki so'roq olmoshlari orqali aniq ma'lumot so'ralmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#d349c8d4"
+    },
+    {
+      "q": "Berilganlardan qaysi biri darak gap?",
+      "v": [
+        "Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza ekan!",
+        "Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang.",
+        "Voy, bu bolalarning mehnati naqadar ulug', ular butun mahallani bir kunda ozoda qilib qo'yishibdi-ya!",
+        "Bahor kelishi bilan bog'imizdagi olma daraxtlari barg yozdi va butun hovli yashil rangga burkandi."
+      ],
+      "t": 3,
+      "izoh": "«Bahor kelishi bilan bog'imizdagi olma daraxtlari barg yozdi va butun hovli yashil rangga burkandi.» gapida voqelik haqida ketma-ket xabar berilgan, undash yo'q, shuning uchun u «darak gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza ekan!» — undov gap, chunki hayajon ohangi ikki qismda ham kuchli ifodalangan; «Voy, bu bolalarning mehnati naqadar ulug', ular butun mahallani bir kunda ozoda qilib qo'yishibdi-ya!» — undov gap, chunki hayrat ohangi uzun bayonda ham saqlanib qolgan; «Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang.» — buyruq gap, chunki ketma-ket ish bajarishga undash ifodalangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#58bc851e"
+    },
+    {
+      "q": "Qaysi gap voqelik haqida ma'lumot beradi?",
+      "v": [
+        "Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik, endi afsuslanishdan boshqa chora qolmadi-ya!",
+        "Kutubxona har kuni soat to'qqizda ochilib, kechqurun oltida yopiladi, dam olish kunlari esa ishlamaydi.",
+        "Kitoblarni javonga tartib bilan terib qo'ying, chiqishda eshikni yoping va kalitni navbatchiga topshirishni unutmang.",
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring va daftaringizni yoningizda olib yuring."
+      ],
+      "t": 1,
+      "izoh": "«Kutubxona har kuni soat to'qqizda ochilib, kechqurun oltida yopiladi, dam olish kunlari esa ishlamaydi.» gapida ma'lumot bayon qilingan, so'roq va undash ohangi yo'q, shuning uchun u «darak gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik, endi afsuslanishdan boshqa chora qolmadi-ya!» — undov gap, chunki afsus ohangi butun qurilmaga singdirilgan; «Kitoblarni javonga tartib bilan terib qo'ying, chiqishda eshikni yoping va kalitni navbatchiga topshirishni unutmang.» — buyruq gap, chunki ketma-ket ish bajarishga undash ifodalangan; «Darsga vaqtida keling, uy vazifasini to'liq bajaring va daftaringizni yoningizda olib yuring.» — buyruq gap, chunki topshiriq berish ohangi butun gapda ustun turibdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#362d834e"
+    },
+    {
+      "q": "Berilganlardan qaysi biri «undov gap» sanaladi?",
+      "v": [
+        "Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!",
+        "Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang.",
+        "Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak bo'ladi?",
+        "Kecha darsga nega kelmading va nima uchun menga oldindan xabar bermading?"
+      ],
+      "t": 0,
+      "izoh": "Bu gapda afsus ohangi butun gapga singdirilgan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak bo'ladi?» — so'roq gap; «Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang.» — buyruq gap; «Kecha darsga nega kelmading va nima uchun menga oldindan xabar bermading?» — so'roq gap.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#994fcf6c"
+    },
+    {
+      "q": "Berilganlardan qaysi biri «buyruq gap» sanaladi?",
+      "v": [
+        "Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!",
+        "Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza ekan!",
+        "Kecha darsga nega kelmading va nima uchun menga oldindan xabar bermading?",
+        "Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang."
+      ],
+      "t": 3,
+      "izoh": "Bu gapda ketma-ket ish bajarishga undash ifodalangan, shuning uchun u «buyruq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!» — undov gap; «Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza ekan!» — undov gap; «Kecha darsga nega kelmading va nima uchun menga oldindan xabar bermading?» — so'roq gap.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#5b03bcab"
+    },
+    {
+      "q": "Qaysi gap «buyruq gap» tarzida tuzilgan?",
+      "v": [
+        "Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang.",
+        "Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak bo'ladi?",
+        "Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza ekan!",
+        "Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!"
+      ],
+      "t": 0,
+      "izoh": "Bu gapda ketma-ket ish bajarishga undash ifodalangan, shuning uchun u «buyruq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak bo'ladi?» — so'roq gap; «Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza ekan!» — undov gap; «Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!» — undov gap.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#125d40ed"
+    },
+    {
+      "q": "Qaysi gap «so'roq gap» tarzida tuzilgan?",
+      "v": [
+        "Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza ekan!",
+        "Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang.",
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring va daftaringizni yoningizda olib yuring.",
+        "Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak bo'ladi?"
+      ],
+      "t": 3,
+      "izoh": "Bu gapda so'roq shakli orqali aniq ma'lumot so'ralmoqda, shuning uchun u «so'roq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang.» — buyruq gap; «Darsga vaqtida keling, uy vazifasini to'liq bajaring va daftaringizni yoningizda olib yuring.» — buyruq gap; «Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza ekan!» — undov gap.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#bb0ea3ed"
+    },
+    {
+      "q": "Ifoda maqsadiga ko'ra «so'roq gap» bo'lgan gapni toping.",
+      "v": [
+        "Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak bo'ladi?",
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring va daftaringizni yoningizda olib yuring.",
+        "Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza ekan!",
+        "Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!"
+      ],
+      "t": 0,
+      "izoh": "Bu gapda so'roq shakli orqali aniq ma'lumot so'ralmoqda, shuning uchun u «so'roq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik-a!» — undov gap; «Darsga vaqtida keling, uy vazifasini to'liq bajaring va daftaringizni yoningizda olib yuring.» — buyruq gap; «Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza ekan!» — undov gap.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#7ce86bc0"
+    },
+    {
+      "q": "«inversiya» ko'ringan misolni toping.",
+      "v": [
+        "Yetib keldi kutilgan xabar, quvondi butun mahalla, tarqadi shodlik.",
+        "Ish ishlaydigan ishchi ishga keldi.",
+        "Ilm o'rgangan yuksalar, ilmdan qochgan pastlar, tirishgan yutar, dangasalik qilgan yutqazar.",
+        "Ovozi shunday baland chiqdiki, butun shahar uni eshitib qoldi."
+      ],
+      "t": 0,
+      "izoh": "Bu misolda kesim uch qismda ham gap boshiga chiqarilgan — bu «inversiya» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Ovozi shunday baland chiqdiki, butun shahar uni eshitib qoldi.» — mubolag'a; «Ish ishlaydigan ishchi ishga keldi.» — tavtologiya; «Ilm o'rgangan yuksalar, ilmdan qochgan pastlar, tirishgan yutar, dangasalik qilgan yutqazar.» — parallellik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#f3acdee9"
+    },
+    {
+      "q": "«sifatlash» ko'ringan misolni toping.",
+      "v": [
+        "Kumush tomchilar zumrad barglarda yaltiradi.",
+        "Uning yuzi to'lin oydek yorishib, xonaga nur tarqagandek bo'ldi.",
+        "Ko'pkariga kirganning halollik erur dardi.",
+        "Uning kuchi tog'ni qo'porar edi."
+      ],
+      "t": 0,
+      "izoh": "Bu misolda belgi ko'chma ma'noda qo'shib berilgan — bu «sifatlash» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Uning yuzi to'lin oydek yorishib, xonaga nur tarqagandek bo'ldi.» — o'xshatish; «Ko'pkariga kirganning halollik erur dardi.» — inversiya; «Uning kuchi tog'ni qo'porar edi.» — mubolag'a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#2ebd0005"
+    },
+    {
+      "q": "«o'xshatish» ko'ringan misolni toping.",
+      "v": [
+        "Oltin kuzning zarrin kunlari yetib keldi.",
+        "Bugun bugungi ishni bugun bajardik.",
+        "Bolalar bahordagi qushlar kabi yengil bo'lib maydon bo'ylab yugurishardi.",
+        "Ochildi eshik, kirib keldi kutilmagan mehmon, jonlandi xonadon."
+      ],
+      "t": 2,
+      "izoh": "Bu misolda harakat «kabi» vositasi orqali qiyoslangan — bu «o'xshatish» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Oltin kuzning zarrin kunlari yetib keldi.» — sifatlash; «Bugun bugungi ishni bugun bajardik.» — tavtologiya; «Ochildi eshik, kirib keldi kutilmagan mehmon, jonlandi xonadon.» — inversiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#0aec7088"
+    },
+    {
+      "q": "«parallellik» ko'ringan misolni toping.",
+      "v": [
+        "Yetib keldi kutilgan xabar, quvondi butun mahalla, tarqadi shodlik.",
+        "Ovozi shunday baland chiqdiki, butun shahar uni eshitib qoldi.",
+        "Ilm o'rgangan yuksalar, ilmdan qochgan pastlar, tirishgan yutar.",
+        "Bolalar bahordagi qushlar kabi yengil bo'lib maydon bo'ylab yugurishardi."
+      ],
+      "t": 2,
+      "izoh": "Bu misolda qurilma bir xil qolipda uch marta takrorlangan — bu «parallellik» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Yetib keldi kutilgan xabar, quvondi butun mahalla, tarqadi shodlik.» — inversiya; «Ovozi shunday baland chiqdiki, butun shahar uni eshitib qoldi.» — mubolag'a; «Bolalar bahordagi qushlar kabi yengil bo'lib maydon bo'ylab yugurishardi.» — o'xshatish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#04fec6f7"
+    },
+    {
+      "q": "Qaysi misolda «tavtologiya» qo'llangan?",
+      "v": [
+        "Kumush oy tunni yoritib turdi.",
+        "Ish ishlaydigan ishchi ishga keldi.",
+        "Yetib keldi kutilgan quvonchli xabar.",
+        "Yog'di yomg'ir, yuvildi yo'llar changi."
+      ],
+      "t": 1,
+      "izoh": "Bu misolda bir o'zak jumla ichida to'rt marta qaytarilgan — bu «tavtologiya» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Kumush oy tunni yoritib turdi.» — sifatlash; «Yetib keldi kutilgan quvonchli xabar.» — inversiya; «Yog'di yomg'ir, yuvildi yo'llar changi.» — inversiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#d859e7c2"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysi biri yanglish?",
+      "v": [
+        "«Yozda oilamiz bilan dengizga sayohat qildik.» — darak gap",
+        "«Iltimos, eshikni ohista yopib qo'ying.» — darak gap",
+        "«Ofarin, sen juda yaxshi javob berding!» — undov gap",
+        "«Sizning uyingiz shu ko'chada joylashganmi?» — so'roq gap"
+      ],
+      "t": 1,
+      "izoh": "«Iltimos, eshikni ohista yopib qo'ying.» gapida ish bajarishga undov ifodalangan, ya'ni u «buyruq gap»; «darak gap» deb baholash yanglish. Qolgan uch qatorda tahlil joyida: ««Yozda oilamiz bilan dengizga sayohat qildik.» — darak gap», ««Ofarin, sen juda yaxshi javob berding!» — undov gap», ««Sizning uyingiz shu ko'chada joylashganmi?» — so'roq gap».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#b56adbfd"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysi biri yanglish?",
+      "v": [
+        "«Kutubxona soat to'qqizda ochiladi.» — darak gap",
+        "«Ukam bugun maktabdan kech qaytdi.» — darak gap",
+        "«Bizning maktabimiz shahar markazida joylashgan ekan.» — darak gap",
+        "«Voy, qanday shirin qovun!» — darak gap"
+      ],
+      "t": 3,
+      "izoh": "«Voy, qanday shirin qovun!» gapida kuchli hayajon bilan aytilgan, ya'ni u «undov gap»; «darak gap» deb baholash yanglish. Qolgan uch qatorda tahlil joyida: ««Kutubxona soat to'qqizda ochiladi.» — darak gap», ««Ukam bugun maktabdan kech qaytdi.» — darak gap», ««Bizning maktabimiz shahar markazida joylashgan ekan.» — darak gap».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#99c34747"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysi biri yanglish?",
+      "v": [
+        "«Darsni diqqat bilan tinglang.» — undov gap",
+        "«Siz qachon biznikiga mehmonga kelasizlar?» — so'roq gap",
+        "«Ofarin, sen juda yaxshi javob berding!» — undov gap",
+        "«Sizning uyingiz shu ko'chada joylashganmi?» — so'roq gap"
+      ],
+      "t": 0,
+      "izoh": "«Darsni diqqat bilan tinglang.» gapida ish bajarishga undov ifodalangan, ya'ni u «buyruq gap»; «undov gap» deb baholash yanglish. Qolgan uch qatorda tahlil joyida: ««Siz qachon biznikiga mehmonga kelasizlar?» — so'roq gap», ««Ofarin, sen juda yaxshi javob berding!» — undov gap», ««Sizning uyingiz shu ko'chada joylashganmi?» — so'roq gap».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#24461302"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysi biri yanglish?",
+      "v": [
+        "«Iltimos, eshikni ohista yopib qo'ying.» — buyruq gap",
+        "«Qo'lingizni yuvib, dasturxon boshiga o'tiring.» — darak gap",
+        "«Bu ishni kim bajardi?» — so'roq gap",
+        "«Barakalla, qanday ajoyib javob!» — undov gap"
+      ],
+      "t": 1,
+      "izoh": "«Qo'lingizni yuvib, dasturxon boshiga o'tiring.» gapida ketma-ket ish bajarishga undalmoqda, ya'ni u «buyruq gap»; «darak gap» deb baholash yanglish. Qolgan uch qatorda tahlil joyida: ««Iltimos, eshikni ohista yopib qo'ying.» — buyruq gap», ««Bu ishni kim bajardi?» — so'roq gap», ««Barakalla, qanday ajoyib javob!» — undov gap».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#1604b65b"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysi biri yanglish?",
+      "v": [
+        "«Bu masalani kim hal qilib beradi?» — so'roq gap",
+        "«Darsni diqqat bilan tinglang.» — so'roq gap",
+        "«Kitoblar javonda tartib bilan terib qo'yilgan.» — darak gap",
+        "«Yozda dalalarda ish qizib ketadi.» — darak gap"
+      ],
+      "t": 1,
+      "izoh": "«Darsni diqqat bilan tinglang.» gapida ish bajarishga undov ifodalangan, ya'ni u «buyruq gap»; «so'roq gap» deb baholash yanglish. Qolgan uch qatorda tahlil joyida: ««Bu masalani kim hal qilib beradi?» — so'roq gap», ««Kitoblar javonda tartib bilan terib qo'yilgan.» — darak gap», ««Yozda dalalarda ish qizib ketadi.» — darak gap».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#6f639bb4"
+    },
+    {
+      "q": "Quyidagi gaplardan qaysi biri «so'roq gap» sanalmaydi?",
+      "v": [
+        "Kecha darsga nega kelmading va nima uchun menga oldindan xabar bermading?",
+        "Bu kitobni qaysi kutubxonadan olding, uni qancha muddatga berishdi va qaytarish sanasi qachon tugaydi?",
+        "Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak va kim bilan birga borishimiz lozim?",
+        "Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik, endi afsuslanishdan boshqa chora qolmadi-ya!"
+      ],
+      "t": 3,
+      "izoh": "Bu gapda afsus ohangi butun qurilmaga singdirilgan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi «so'roq gap»: «Bu kitobni qaysi kutubxonadan olding, uni qancha muddatga berishdi va qaytarish sanasi qachon tugaydi?» «Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak va kim bilan birga borishimiz lozim?» «Kecha darsga nega kelmading va nima uchun menga oldindan xabar bermading?»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#56b3472c"
+    },
+    {
+      "q": "Quyidagi gaplardan qaysi biri «buyruq gap» sanalmaydi?",
+      "v": [
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.",
+        "Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza, bu manzara naqadar ko'ngilni yayratadi!",
+        "Hovlini supurib chiqing, gullarni sug'oring, so'ngra darvozani yopib, itni bog'lab qo'yishni ham esdan chiqarmang.",
+        "Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang."
+      ],
+      "t": 1,
+      "izoh": "Bu gapda hayajon ohangi uch qismda ham kuchli ifodalangan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi «buyruq gap»: «Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.» «Hovlini supurib chiqing, gullarni sug'oring, so'ngra darvozani yopib, itni bog'lab qo'yishni ham esdan chiqarmang.» «Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang.»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#579a6b1a"
+    },
+    {
+      "q": "Quyidagi gaplardan qaysi biri «buyruq gap» sanalmaydi?",
+      "v": [
+        "Voy, bu bolalarning mehnati naqadar ulug', ular butun mahallani bir kunda ozoda qilib qo'yishibdi-ya!",
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring va daftaringizni yoningizda olib yuring.",
+        "Kitoblarni javonga tartib bilan terib qo'ying, chiqishda eshikni yoping va kalitni navbatchiga topshirishni unutmang.",
+        "Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang."
+      ],
+      "t": 0,
+      "izoh": "Bu gapda hayrat ohangi uzun bayonda ham saqlanib qolgan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi «buyruq gap»: «Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang.» «Darsga vaqtida keling, uy vazifasini to'liq bajaring va daftaringizni yoningizda olib yuring.» «Kitoblarni javonga tartib bilan terib qo'ying, chiqishda eshikni yoping va kalitni navbatchiga topshirishni unutmang.»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#01837b26"
+    },
+    {
+      "q": "Uchtasi «buyruq gap». Berilganlardan qaysi biri ortiqcha?",
+      "v": [
+        "Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang.",
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.",
+        "Hovlini supurib chiqing, gullarni sug'oring, so'ngra darvozani yopib, itni bog'lab qo'yishni ham esdan chiqarmang.",
+        "Bahor kelishi bilan bog'imizdagi olma daraxtlari barg yozdi va butun hovli yashil rangga burkandi."
+      ],
+      "t": 3,
+      "izoh": "Bu gapda voqelik haqida ketma-ket xabar berilgan, undash yo'q, shuning uchun u «darak gap» sanaladi. Qolgan uchtasi «buyruq gap»: «Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.» «Hovlini supurib chiqing, gullarni sug'oring, so'ngra darvozani yopib, itni bog'lab qo'yishni ham esdan chiqarmang.» «Kitoblarni javonga tartib bilan terib qo'ying va qaytib chiqqaningizda eshikni yopishni unutmang.»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#0bb74ec7"
+    },
+    {
+      "q": "Uchtasi «buyruq gap». Berilganlardan qaysi biri ortiqcha?",
+      "v": [
+        "Hovlini supurib chiqing, gullarni sug'oring, so'ngra darvozani yopib, itni bog'lab qo'yishni ham esdan chiqarmang.",
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring va daftaringizni yoningizda olib yuring.",
+        "Voy, bu bolalarning mehnati naqadar ulug', ular butun mahallani bir kunda ozoda qilib qo'yishibdi-ya!",
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang."
+      ],
+      "t": 2,
+      "izoh": "Bu gapda hayrat ohangi uzun bayonda ham saqlanib qolgan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi «buyruq gap»: «Hovlini supurib chiqing, gullarni sug'oring, so'ngra darvozani yopib, itni bog'lab qo'yishni ham esdan chiqarmang.» «Darsga vaqtida keling, uy vazifasini to'liq bajaring va daftaringizni yoningizda olib yuring.» «Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#963cea0b"
+    },
+    {
+      "q": "Berilgan misollardan qaysi birida «tavtologiya» kuzatilmaydi?",
+      "v": [
+        "Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi va yozuvidan nihoyat mamnun bo'ldi.",
+        "Ishchi ishlagan ishini ishboshiga ko'rsatdi, ishboshi esa ish sifatini ishxonada yana bir bor tekshirdi.",
+        "Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi va yozuvidan mamnun bo'ldi.",
+        "Mehnat qilgan mehr topar, mehr topgan baxt ko'rar, baxt ko'rgan umr surar."
+      ],
+      "t": 3,
+      "izoh": "Bu misolda qurilma bir xil qolipda uch marta takrorlangan — bu «parallellik». Qolgan uchtasida «tavtologiya» ishlagan: «Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi va yozuvidan nihoyat mamnun bo'ldi.» «Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi va yozuvidan mamnun bo'ldi.» «Ishchi ishlagan ishini ishboshiga ko'rsatdi, ishboshi esa ish sifatini ishxonada yana bir bor tekshirdi.»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#a88d56a5"
+    },
+    {
+      "q": "Berilgan misollardan qaysi birida «tavtologiya» kuzatilmaydi?",
+      "v": [
+        "Kumush oy zangori osmonda suzib, uyquga cho'mgan qishloqqa oltin nurini sochib turardi.",
+        "Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi va yozuvidan mamnun bo'ldi.",
+        "Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi va yozuvidan nihoyat mamnun bo'ldi.",
+        "Ishchi ishlagan ishini ishboshiga ko'rsatdi, ishboshi esa ish sifatini ishxonada yana bir bor tekshirdi."
+      ],
+      "t": 0,
+      "izoh": "Bu misolda uzun tasvirda belgilar ko'chma ma'noda qo'llangan — bu «sifatlash». Qolgan uchtasida «tavtologiya» ishlagan: «Ishchi ishlagan ishini ishboshiga ko'rsatdi, ishboshi esa ish sifatini ishxonada yana bir bor tekshirdi.» «Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi va yozuvidan mamnun bo'ldi.» «Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi va yozuvidan nihoyat mamnun bo'ldi.»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#1d5bf6ce"
+    },
+    {
+      "q": "Berilgan misollardan qaysi birida «tavtologiya» kuzatilmaydi?",
+      "v": [
+        "Oltin kuzning zarrin kunlarida marvarid tomchilar zumrad yaproqlarda quyosh nurida jimgina yaltirab turardi.",
+        "Ishchi ishlagan ishini ishboshiga ko'rsatdi, ishboshi esa ish sifatini ishxonada yana bir bor tekshirdi.",
+        "Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi va yozuvidan nihoyat mamnun bo'ldi.",
+        "Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi va yozuvidan mamnun bo'ldi."
+      ],
+      "t": 0,
+      "izoh": "Bu misolda bir necha belgi ko'chma ma'noda ketma-ket qo'shib berilgan — bu «sifatlash». Qolgan uchtasida «tavtologiya» ishlagan: «Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi va yozuvidan mamnun bo'ldi.» «Ishchi ishlagan ishini ishboshiga ko'rsatdi, ishboshi esa ish sifatini ishxonada yana bir bor tekshirdi.» «Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi va yozuvidan nihoyat mamnun bo'ldi.»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#eadd0370"
+    },
+    {
+      "q": "Berilgan misollardan qaysi birida «inversiya» kuzatilmaydi?",
+      "v": [
+        "Mehnat qilgan mehr topar, mehr topgan baxt ko'rar, baxt ko'rgan umr surar.",
+        "Keldi bahor, uyg'ondi tabiat, ochildi bog'da lolalar, kuyladi daraxtlar shoxida qushlar.",
+        "Keldi bahor, uyg'ondi tabiat, ochildi bog'da lolalar, kuyladi daraxtlar shoxida quvnoq qushlar.",
+        "Yetib keldi kutilgan xabar, quvondi butun mahalla, tarqadi shodlik ko'chalar bo'ylab jimgina."
+      ],
+      "t": 0,
+      "izoh": "Bu misolda qurilma bir xil qolipda uch marta takrorlangan — bu «parallellik». Qolgan uchtasida «inversiya» ishlagan: «Keldi bahor, uyg'ondi tabiat, ochildi bog'da lolalar, kuyladi daraxtlar shoxida quvnoq qushlar.» «Keldi bahor, uyg'ondi tabiat, ochildi bog'da lolalar, kuyladi daraxtlar shoxida qushlar.» «Yetib keldi kutilgan xabar, quvondi butun mahalla, tarqadi shodlik ko'chalar bo'ylab jimgina.»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#4a20fe39"
+    },
+    {
+      "q": "Uchta misolda «sifatlash» qo'llangan. Qaysi biri ortiqcha?",
+      "v": [
+        "Kumush oy zangori osmonda suzib, uyquga cho'mgan qishloqqa oltin nurini sochib turardi.",
+        "Oltin kuzning zarrin kunlarida marvarid tomchilar zumrad yaproqlarda quyosh nurida jimgina yaltirab turardi.",
+        "Oltin kuzning zarrin kunlarida marvarid tomchilar zumrad yaproqlarda quyoshda yaltirab turardi.",
+        "Uning kuchi shunchalik ediki, tog'ni ham joyidan qo'porib tashlar edi."
+      ],
+      "t": 3,
+      "izoh": "Bu misolda belgi haqiqatdagidan ortiq darajada ko'rsatilgan — bu «mubolag'a». Qolgan uchtasida «sifatlash» ishlagan: «Kumush oy zangori osmonda suzib, uyquga cho'mgan qishloqqa oltin nurini sochib turardi.» «Oltin kuzning zarrin kunlarida marvarid tomchilar zumrad yaproqlarda quyosh nurida jimgina yaltirab turardi.» «Oltin kuzning zarrin kunlarida marvarid tomchilar zumrad yaproqlarda quyoshda yaltirab turardi.»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_usl_m12-gap-uslubiyati#22b610cc"
+    },
+    {
+      "q": "«Uyga qaysi yo'ldan borasan?» — bu qaysi qurilma?",
+      "v": [
+        "ritorik so'roq",
+        "oddiy so'roq",
+        "buyruq ifodasi",
+        "undov ifodasi"
+      ],
+      "t": 1,
+      "izoh": "Bu misolda ma'lumot so'ralmoqda, javob kutilyapti, shuning uchun u «oddiy so'roq» sanaladi. Berilgan qolganlari bu misolga tushmaydi: «ritorik so'roq», «undov ifodasi», «buyruq ifodasi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#e3ec8fd0"
+    },
+    {
+      "q": "«Bu kitobni qachon o'qib chiqding?» — bu qaysi qurilma?",
+      "v": [
+        "ritorik so'roq",
+        "oddiy so'roq",
+        "buyruq ifodasi",
+        "undov ifodasi"
+      ],
+      "t": 1,
+      "izoh": "Bu misolda aniq javob talab qilinmoqda, shuning uchun u «oddiy so'roq» sanaladi. Berilgan qolganlari bu misolga tushmaydi: «ritorik so'roq», «undov ifodasi», «buyruq ifodasi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#247cc381"
+    },
+    {
+      "q": "«Iltimos, eshikni yopib qo'ying.» misolini qanday baholaysiz?",
+      "v": [
+        "oddiy so'roq",
+        "ritorik so'roq",
+        "buyruq ifodasi",
+        "undov ifodasi"
+      ],
+      "t": 2,
+      "izoh": "Bu misolda ish bajarishga undash bor, shuning uchun u «buyruq ifodasi» sanaladi. Berilgan qolganlari bu misolga tushmaydi: «ritorik so'roq», «oddiy so'roq», «undov ifodasi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#bcac60dc"
+    },
+    {
+      "q": "Odatdagi tartibda «kesimdan oldin» qaysi qism turadi?",
+      "v": [
+        "kesim",
+        "aniqlovchi",
+        "ega",
+        "hol"
+      ],
+      "t": 3,
+      "izoh": "«kesimdan oldin» — «hol» ning odatdagi joyi: harakat belgisini bildirgani uchun harakatdan oldin turadi. Inversiyada bu joylashuv o'zgaradi. Berilgan qolganlari boshqa joyni egallaydi: «kesim», «aniqlovchi», «ega».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#c19d9dd0"
+    },
+    {
+      "q": "Qaysi qismning odatdagi joyi «gap boshida»?",
+      "v": [
+        "aniqlovchi",
+        "ega",
+        "kesim",
+        "hol"
+      ],
+      "t": 1,
+      "izoh": "«gap boshida» — «ega» ning odatdagi joyi: odatdagi tartibda o'z aniqlovchisi bilan oldinda turadi. Inversiyada bu joylashuv o'zgaradi. Berilgan qolganlari boshqa joyni egallaydi: «aniqlovchi», «hol», «kesim».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#13105c4e"
+    },
+    {
+      "q": "O'zgarmagan tartibda «gap boshida» nima joylashadi?",
+      "v": [
+        "ega",
+        "aniqlovchi",
+        "kesim",
+        "hol"
+      ],
+      "t": 0,
+      "izoh": "«gap boshida» — «ega» ning odatdagi joyi: odatdagi tartibda o'z aniqlovchisi bilan oldinda turadi. Inversiyada bu joylashuv o'zgaradi. Berilgan qolganlari boshqa joyni egallaydi: «aniqlovchi», «kesim», «hol».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#0cafd722"
+    },
+    {
+      "q": "Qaysi gap «so'roq gap» tarzida tuzilgan?",
+      "v": [
+        "Ertaga qaysi soatda uchrashamiz, qayerda kutib turishim kerak va kim bilan birga borishimiz lozim?",
+        "Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza, bu manzara naqadar ko'ngilni yayratadi!",
+        "Kitoblarni javonga tartib bilan terib qo'ying, chiqishda eshikni yoping va kalitni navbatchiga topshirishni unutmang.",
+        "Maktabimizda yangi sport zali qurildi va unda o'quvchilar tanaffusdan keyin mashg'ulot o'tkazish imkoniga ega bo'lishdi."
+      ],
+      "t": 0,
+      "izoh": "Bu gapda so'roq olmoshlari orqali aniq ma'lumot so'ralmoqda, shuning uchun u «so'roq gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Kitoblarni javonga tartib bilan terib qo'ying, chiqishda eshikni yoping va kalitni navbatchiga topshirishni unutmang.» — buyruq gap; «Eh, bu tog'lar naqadar go'zal, bu havo naqadar toza, bu manzara naqadar ko'ngilni yayratadi!» — undov gap; «Maktabimizda yangi sport zali qurildi va unda o'quvchilar tanaffusdan keyin mashg'ulot o'tkazish imkoniga ega bo'lishdi.» — darak gap.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#cd65dd05"
+    },
+    {
+      "q": "Berilganlardan qaysi biri «undov gap» sanaladi?",
+      "v": [
+        "Voy, bu bolalarning mehnati naqadar ulug', ular butun mahallani bir kunda ozoda qilib qo'yishibdi-ya!",
+        "Bahor kelishi bilan bog'imizdagi olma daraxtlari barg yozdi va butun hovli yashil rangga burkandi.",
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.",
+        "Kutubxona har kuni soat to'qqizda ochilib, kechqurun oltida yopiladi, dam olish kunlari esa ishlamaydi."
+      ],
+      "t": 0,
+      "izoh": "Bu gapda hayrat ohangi uzun bayonda ham saqlanib qolgan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Kutubxona har kuni soat to'qqizda ochilib, kechqurun oltida yopiladi, dam olish kunlari esa ishlamaydi.» — darak gap; «Bahor kelishi bilan bog'imizdagi olma daraxtlari barg yozdi va butun hovli yashil rangga burkandi.» — darak gap; «Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.» — buyruq gap.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#02aea1a9"
+    },
+    {
+      "q": "Berilganlardan qaysi biri «undov gap» sanaladi?",
+      "v": [
+        "Attang, shunday ajoyib imkoniyatni beparvoligimiz tufayli qo'ldan boy berdik, endi afsuslanishdan boshqa chora qolmadi-ya!",
+        "Bahor kelishi bilan bog'imizdagi olma daraxtlari barg yozdi, hovli yashil rangga burkandi va havoda gul hidi taraldi.",
+        "Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.",
+        "Bu kitobni qaysi kutubxonadan olding, uni qancha muddatga berishdi va qaytarish sanasi qachon tugaydi?"
+      ],
+      "t": 0,
+      "izoh": "Bu gapda afsus ohangi butun qurilmaga singdirilgan, shuning uchun u «undov gap» sanaladi. Qolgan uchtasi boshqa maqsadda aytilgan: «Bahor kelishi bilan bog'imizdagi olma daraxtlari barg yozdi, hovli yashil rangga burkandi va havoda gul hidi taraldi.» — darak gap; «Darsga vaqtida keling, uy vazifasini to'liq bajaring, daftaringizni yoningizda olib yuring va tartibni saqlang.» — buyruq gap; «Bu kitobni qaysi kutubxonadan olding, uni qancha muddatga berishdi va qaytarish sanasi qachon tugaydi?» — so'roq gap.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#d972f812"
+    },
+    {
+      "q": "Berilgan uzun misollardan qaysi birida «parallellik» kuzatiladi?",
+      "v": [
+        "Oltin kuzning zarrin kunlarida marvarid tomchilar zumrad yaproqlarda quyoshda yaltirab turardi.",
+        "Ishchi ishlagan ishini ishboshiga ko'rsatdi, ishboshi esa ish sifatini ishxonada yana bir bor tekshirdi.",
+        "Mehnat qilgan mehr topar, mehr topgan baxt ko'rar, baxt ko'rgan umr surar.",
+        "Oltin kuzning zarrin kunlarida marvarid tomchilar zumrad yaproqlarda quyosh nurida jimgina yaltirab turardi."
+      ],
+      "t": 2,
+      "izoh": "Bu misolda qurilma bir xil qolipda uch marta takrorlangan — bu «parallellik» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Oltin kuzning zarrin kunlarida marvarid tomchilar zumrad yaproqlarda quyoshda yaltirab turardi.» — sifatlash; «Ishchi ishlagan ishini ishboshiga ko'rsatdi, ishboshi esa ish sifatini ishxonada yana bir bor tekshirdi.» — tavtologiya; «Oltin kuzning zarrin kunlarida marvarid tomchilar zumrad yaproqlarda quyosh nurida jimgina yaltirab turardi.» — sifatlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#635082c7"
+    },
+    {
+      "q": "Qaysi misolda «parallellik» qo'llangan?",
+      "v": [
+        "Yetib keldi kutilgan xabar, quvondi butun mahalla, tarqadi shodlik ko'chalar bo'ylab jimgina.",
+        "Ilm o'rgangan yuksalar, ilmdan qochgan pastlar, tirishgan yutar, dangasalik qilgan yutqazar.",
+        "Oltin kuzning zarrin kunlarida marvarid tomchilar zumrad yaproqlarda quyoshda yaltirab turardi.",
+        "Ko'z yoshlari daryo bo'lib oqdi, butun hovlini suv bosdi, qo'shnilar ham chiqib yordamga keldi."
+      ],
+      "t": 1,
+      "izoh": "Bu misolda to'rt qism ham aynan bir qolipda tuzilgan — bu «parallellik» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Yetib keldi kutilgan xabar, quvondi butun mahalla, tarqadi shodlik ko'chalar bo'ylab jimgina.» — inversiya; «Oltin kuzning zarrin kunlarida marvarid tomchilar zumrad yaproqlarda quyoshda yaltirab turardi.» — sifatlash; «Ko'z yoshlari daryo bo'lib oqdi, butun hovlini suv bosdi, qo'shnilar ham chiqib yordamga keldi.» — mubolag'a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#82d2fdd5"
+    },
+    {
+      "q": "Berilgan uzun misollardan qaysi birida «inversiya» kuzatiladi?",
+      "v": [
+        "Mehnat qilgan mehr topar, mehr topgan baxt ko'rar, baxt ko'rgan umr surar.",
+        "Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi va yozuvidan mamnun bo'ldi.",
+        "Keldi bahor, uyg'ondi tabiat, ochildi bog'da lolalar, kuyladi daraxtlar shoxida quvnoq qushlar.",
+        "Ilm o'rgangan yuksalar, ilmdan qochgan pastlar, tirishgan yutar, dangasalik qilgan yutqazar."
+      ],
+      "t": 2,
+      "izoh": "Bu misolda kesim to'rt qismda ham odatdagi o'rnidan oldinga chiqarilgan — bu «inversiya» deyiladi. Qolgan uchtasida boshqa vosita ishlagan: «Mehnat qilgan mehr topar, mehr topgan baxt ko'rar, baxt ko'rgan umr surar.» — parallellik; «Yozuvchi yozgan yozuvini yana bir bor yozib chiqdi va yozuvidan mamnun bo'ldi.» — tavtologiya; «Ilm o'rgangan yuksalar, ilmdan qochgan pastlar, tirishgan yutar, dangasalik qilgan yutqazar.» — parallellik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#19f4a211"
+    },
+    {
+      "q": "Qaysi qatorda misol va vosita to'g'ri juftlangan?",
+      "v": [
+        "«Kumush oy zangori osmonda suzib, uyquga cho'mgan qishloqqa oltin nurini sochib turardi.» — mubolag'a",
+        "«Keldi bahor, uyg'ondi tabiat, ochildi bog'da lolalar, kuyladi daraxtlar shoxida qushlar.» — inversiya",
+        "«Uning yuzi oydek yorishib ketdi.» — mubolag'a",
+        "«Bordi mehnat, keldi rohat.» — mubolag'a"
+      ],
+      "t": 1,
+      "izoh": "Bu misolda xabar bildiruvchi qismlar ketma-ket oldinga chiqarilgan — «inversiya», shuning uchun qator joyida. Qolgan uch qatorda yorliq almashtirilgan: «Kumush oy zangori osmonda suzib, uyquga cho'mgan qishloqqa oltin nurini sochib turardi.» aslida «sifatlash»; «Uning yuzi oydek yorishib ketdi.» aslida «o'xshatish»; «Bordi mehnat, keldi rohat.» aslida «inversiya».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#b9f0b801"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysi biri o'rinli?",
+      "v": [
+        "«Mehnat qilgan mehr topar, dangasalik qilgan afsus chekar.» — inversiya",
+        "«Xizmat qilgan xizmatini qildi.» — mubolag'a",
+        "«Bolalar qushdek yengil yugurishardi.» — mubolag'a",
+        "«Kumush tomchilar zumrad barglarda yaltiradi.» — sifatlash"
+      ],
+      "t": 3,
+      "izoh": "Bu misolda belgi ko'chma ma'noda qo'shib berilgan — «sifatlash», shuning uchun qator joyida. Qolgan uch qatorda yorliq almashtirilgan: «Xizmat qilgan xizmatini qildi.» aslida «tavtologiya»; «Bolalar qushdek yengil yugurishardi.» aslida «o'xshatish»; «Mehnat qilgan mehr topar, dangasalik qilgan afsus chekar.» aslida «parallellik».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#37e89765"
+    },
+    {
+      "q": "Qaysi qatorda misol va vosita to'g'ri juftlangan?",
+      "v": [
+        "«Zarhal barglar shabadada tebranardi.» — mubolag'a",
+        "«Yog'di yomg'ir, yuvildi yo'llar changi.» — mubolag'a",
+        "«Bordi mehnat, keldi rohat.» — inversiya",
+        "«Ilm o'rgangan yuksalar, ilmdan qochgan pastlar, tirishgan yutar, dangasalik qilgan yutqazar.» — o'xshatish"
+      ],
+      "t": 2,
+      "izoh": "Bu misolda kesim ikkala qismda ham oldinga chiqarilgan — «inversiya», shuning uchun qator joyida. Qolgan uch qatorda yorliq almashtirilgan: «Zarhal barglar shabadada tebranardi.» aslida «sifatlash»; «Yog'di yomg'ir, yuvildi yo'llar changi.» aslida «inversiya»; «Ilm o'rgangan yuksalar, ilmdan qochgan pastlar, tirishgan yutar, dangasalik qilgan yutqazar.» aslida «parallellik».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_usl_m12-gap-uslubiyati#470e6fe0"
+    }
+  ]
+}

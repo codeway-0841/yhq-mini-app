@@ -1,0 +1,305 @@
+{
+  "nom": "Days of the week (Hafta kunlari)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "📅 What day comes after Monday?",
+      "v": [
+        "Tuesday",
+        "Sunday",
+        "Friday",
+        "Saturday"
+      ],
+      "t": 0,
+      "izoh": "Monday (dushanba) dan keyin Tuesday (seshanba) keladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#5a0cf37f"
+    },
+    {
+      "q": "📅 What day comes before Wednesday?",
+      "v": [
+        "Tuesday",
+        "Thursday",
+        "Sunday",
+        "Monday"
+      ],
+      "t": 0,
+      "izoh": "Wednesday (chorshanba) dan oldin Tuesday (seshanba) keladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#d4642a4e"
+    },
+    {
+      "q": "📅 Which day comes after Friday?",
+      "v": [
+        "Saturday",
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "t": 0,
+      "izoh": "Friday (juma) dan keyin Saturday (shanba) keladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#700b7957"
+    },
+    {
+      "q": "📅 Which two days are the weekend?",
+      "v": [
+        "Saturday and Sunday",
+        "Monday and Tuesday",
+        "Wednesday and Thursday",
+        "Friday and Monday"
+      ],
+      "t": 0,
+      "izoh": "Weekend = Saturday va Sunday (dam olish kunlari).",
+      "qiy": "oson",
+      "id": "ing_kids_m17#1fb090df"
+    },
+    {
+      "q": "📅 What is the first day of the school week?",
+      "v": [
+        "Monday",
+        "Sunday",
+        "Friday",
+        "Thursday"
+      ],
+      "t": 0,
+      "izoh": "Maktab haftasi Monday (dushanba) dan boshlanadi.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#93a7afbc"
+    },
+    {
+      "q": "📅 What day comes after Sunday?",
+      "v": [
+        "Monday",
+        "Saturday",
+        "Friday",
+        "Thursday"
+      ],
+      "t": 0,
+      "izoh": "Sunday (yakshanba) dan keyin Monday (dushanba) keladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#7bed5528"
+    },
+    {
+      "q": "📅 How many days are in one week?",
+      "v": [
+        "Seven",
+        "Five",
+        "Ten",
+        "Three"
+      ],
+      "t": 0,
+      "izoh": "Bir haftada seven (yetti) kun bor.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#bf684360"
+    },
+    {
+      "q": "📅 What day comes between Wednesday and Friday?",
+      "v": [
+        "Thursday",
+        "Monday",
+        "Sunday",
+        "Tuesday"
+      ],
+      "t": 0,
+      "izoh": "Wednesday va Friday orasida Thursday (payshanba) keladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#e05edc45"
+    },
+    {
+      "q": "📅 Which day comes after Thursday?",
+      "v": [
+        "Friday",
+        "Monday",
+        "Sunday",
+        "Tuesday"
+      ],
+      "t": 0,
+      "izoh": "Thursday (payshanba) dan keyin Friday (juma) keladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#b25713f8"
+    },
+    {
+      "q": "📅 What is the last day of the week on the calendar?",
+      "v": [
+        "Sunday",
+        "Monday",
+        "Wednesday",
+        "Friday"
+      ],
+      "t": 0,
+      "izoh": "Kalendarda oxirgi kun Sunday (yakshanba).",
+      "qiy": "oson",
+      "id": "ing_kids_m17#5344bd2a"
+    },
+    {
+      "q": "What day comes before Friday?",
+      "v": [
+        "Saturday",
+        "Thursday",
+        "Monday",
+        "Sunday"
+      ],
+      "t": 1,
+      "izoh": "Jumadan oldin payshanba.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#7c823ae9"
+    },
+    {
+      "q": "What day is between Tuesday and Thursday?",
+      "v": [
+        "Monday",
+        "Friday",
+        "Wednesday",
+        "Sunday"
+      ],
+      "t": 2,
+      "izoh": "Chorshanba.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#0113b3d0"
+    },
+    {
+      "q": "Which day comes after Saturday?",
+      "v": [
+        "Friday",
+        "Sunday",
+        "Monday",
+        "Tuesday"
+      ],
+      "t": 1,
+      "izoh": "Shanbadan keyin yakshanba.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#f3d0ecb3"
+    },
+    {
+      "q": "Saturday and Sunday together are called the ___.",
+      "v": [
+        "weekend",
+        "week",
+        "month",
+        "year"
+      ],
+      "t": 0,
+      "izoh": "Dam olish kunlari (weekend).",
+      "qiy": "oson",
+      "id": "ing_kids_m17#d7ec861c"
+    },
+    {
+      "q": "What day comes before Monday?",
+      "v": [
+        "Tuesday",
+        "Sunday",
+        "Saturday",
+        "Friday"
+      ],
+      "t": 1,
+      "izoh": "Dushanbadan oldin yakshanba.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#2e0d7156"
+    },
+    {
+      "q": "What day is between Friday and Sunday?",
+      "v": [
+        "Saturday",
+        "Monday",
+        "Thursday",
+        "Tuesday"
+      ],
+      "t": 0,
+      "izoh": "Shanba.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#9d15ae06"
+    },
+    {
+      "q": "What day comes after Wednesday?",
+      "v": [
+        "Tuesday",
+        "Thursday",
+        "Monday",
+        "Sunday"
+      ],
+      "t": 1,
+      "izoh": "Chorshanbadan keyin payshanba.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#8fb161e1"
+    },
+    {
+      "q": "What day comes after Thursday?",
+      "v": [
+        "Friday",
+        "Wednesday",
+        "Sunday",
+        "Monday"
+      ],
+      "t": 0,
+      "izoh": "Payshanbadan keyin juma.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#92823ed6"
+    },
+    {
+      "q": "Which is the first day of the school week?",
+      "v": [
+        "Monday",
+        "Sunday",
+        "Saturday",
+        "Friday"
+      ],
+      "t": 0,
+      "izoh": "Dushanba.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#06710463"
+    },
+    {
+      "q": "Which is the last day of the weekend?",
+      "v": [
+        "Saturday",
+        "Sunday",
+        "Friday",
+        "Monday"
+      ],
+      "t": 1,
+      "izoh": "Yakshanba.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#5a6f657f"
+    },
+    {
+      "q": "Monday, Tuesday and Wednesday are all ___.",
+      "v": [
+        "days",
+        "months",
+        "colours",
+        "numbers"
+      ],
+      "t": 0,
+      "izoh": "Kunlar.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#fea7f7fa"
+    },
+    {
+      "q": "What day comes after Tuesday?",
+      "v": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Sunday"
+      ],
+      "t": 1,
+      "izoh": "Seshanbadan keyin chorshanba.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#3beae15f"
+    },
+    {
+      "q": "What day comes after Monday?",
+      "v": [
+        "Tuesday",
+        "Sunday",
+        "Friday",
+        "Thursday"
+      ],
+      "t": 0,
+      "izoh": "Dushanbadan keyin seshanba.",
+      "qiy": "oson",
+      "id": "ing_kids_m17#16dbd8e1"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "n-darajali ildiz va uning xossalari",
+  "bolim": "Daraja, ildiz va logarifm",
+  "blok": "dari",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Salim ∛(−216) ifodaning qiymatini daftariga yozdi. U yozgan son quyidagilardan qaysi biri?",
+      "v": [
+        "−6",
+        "6",
+        "−8",
+        "−72"
+      ],
+      "t": 0,
+      "izoh": "Toq ko'rsatkichli ildiz manfiy sondan ham chiqariladi va ishorani saqlaydi. 6³ = 216 bo'lgani uchun (−6)³ = −216. Demak ∛(−216) = −6. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toq-ildizni-hisoblash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#608e4613"
+    },
+    {
+      "q": "⁵√(−32) ifodaning qiymatini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "2",
+        "−2",
+        "−16",
+        "−32"
+      ],
+      "t": 1,
+      "izoh": "Toq daraja manfiy ishorani saqlaydi, ya'ni (−2)⁵ = −32. Shuning uchun ⁵√(−32) = −2. Ildiz ostidagi sonni 2 ga bo'lish yoki minusni tashlab yuborish tipik xato. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toq-ildizni-hisoblash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#a1230a14"
+    },
+    {
+      "q": "Laboratoriya hisobotida ∛(−0,008) ifodaning qiymati kerak bo'lib qoldi. Bu qiymat quyidagilardan qaysi biriga aynan teng?",
+      "v": [
+        "0,2",
+        "−0,02",
+        "−0,2",
+        "−0,08"
+      ],
+      "t": 2,
+      "izoh": "0,008 sonini 8/1000 ko'rinishida yozamiz. ∛8 = 2, ∛1000 = 10, demak ∛0,008 = 2/10 = 0,2. Toq ildiz ishorani saqlagani uchun ∛(−0,008) = −0,2. Javob: −0,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toq-ildizni-hisoblash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#d27de412"
+    },
+    {
+      "q": "−125/64 kasrning kub ildizi qanday songa teng bo'ladi?",
+      "v": [
+        "5/4",
+        "−4/5",
+        "−25/16",
+        "−5/4"
+      ],
+      "t": 3,
+      "izoh": "Kasrning ildizi surat va maxraj ildizlarining nisbatiga teng: ∛(−125/64) = ∛(−125) : ∛64. Bu yerda ∛(−125) = −5, ∛64 = 4. Demak natija −5/4. Javob: −5/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toq-ildizni-hisoblash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#465f9063"
+    },
+    {
+      "q": "Aziza kompyuter darsida ⁴√1296 ifodani hisoblab, natijani jadvalga yozmoqchi. U jadvalga qanday sonni yozishi kerak bo'ladi?",
+      "v": [
+        "36",
+        "6",
+        "216",
+        "324"
+      ],
+      "t": 1,
+      "izoh": "Avval 6² = 36, so'ng 36² = 1296, ya'ni 1296 = 6⁴. Shuning uchun ⁴√1296 = 6. 36 — kvadrat ildizni olib to'xtab qolish xatosi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-ildizni-hisoblash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#d800cc6c"
+    },
+    {
+      "q": "⁶√64 ifodaning qiymati qanchaga teng ekanligini hisoblab toping.",
+      "v": [
+        "8",
+        "4",
+        "2",
+        "32"
+      ],
+      "t": 2,
+      "izoh": "2⁶ = 64 bo'lgani uchun ⁶√64 = 2. Bu yerda 8 — kvadrat ildizning, 4 esa kub ildizning javobi, ya'ni ildiz ko'rsatkichini chalkashtirish xatosi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-ildizni-hisoblash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#e48a0a4d"
+    },
+    {
+      "q": "Anvar ⁴√(16·625) ifodani ildiz ostidagi sonni ko'paytuvchilarga ajratish yo'li bilan hisoblamoqchi. U qanday natija oladi?",
+      "v": [
+        "20",
+        "100",
+        "50",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytmaning ildizi ildizlar ko'paytmasiga teng: ⁴√(16·625) = ⁴√16 · ⁴√625. Bu yerda ⁴√16 = 2 va ⁴√625 = 5, demak natija 2·5 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-ildizni-hisoblash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#23a7c8bf"
+    },
+    {
+      "q": "Nodira ⁴√(81/16) ni hisoblab, javobni qisqarmas kasr ko'rinishida yozdi. U qanday kasr oldi?",
+      "v": [
+        "3/2",
+        "9/4",
+        "2/3",
+        "81/16"
+      ],
+      "t": 0,
+      "izoh": "Kasrdan ildiz surat va maxrajdan alohida olinadi: ⁴√81 = 3, ⁴√16 = 2. Demak ⁴√(81/16) = 3/2. 9/4 — faqat kvadrat ildizgacha yetib to'xtash xatosi. Javob: 3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-ildizni-hisoblash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#94cd4c65"
+    },
+    {
+      "q": "Quyidagi ifodalardan qaysi biri haqiqiy sonlar to'plamida ma'noga ega emas?",
+      "v": [
+        "∛(−27)",
+        "⁴√(−16)",
+        "⁵√(−1)",
+        "√25"
+      ],
+      "t": 1,
+      "izoh": "Juft ko'rsatkichli ildiz manfiy sondan chiqarilmaydi, chunki hech qanday haqiqiy sonning juft darajasi manfiy bo'lmaydi. ∛(−27) va ⁵√(−1) toq ildiz, ular aniqlangan. Javob: ⁴√(−16).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-ildiz-manfiydan-manosizligi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#2c7c0279"
+    },
+    {
+      "q": "n juft son bo'lsa, ⁿ√a ifodasi haqiqiy son bo'lishi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a ≥ 0",
+        "a > 0",
+        "a ≤ 0",
+        "a — istalgan haqiqiy son"
+      ],
+      "t": 0,
+      "izoh": "Juft darajaga ko'tarilgan har qanday haqiqiy son manfiy bo'lmaydi, shuning uchun juft ildiz ostidagi ifoda ham manfiy bo'lmasligi shart. a = 0 da ildiz mavjud va nolga teng, demak shart a ≥ 0. Javob: a ≥ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-ildiz-manfiydan-manosizligi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#585ff30a"
+    },
+    {
+      "q": "⁴√(x − 7) ifodasi qanday x lar uchun ma'noga ega bo'ladi?",
+      "v": [
+        "x > 7",
+        "x ≤ 7",
+        "x ≥ 7",
+        "barcha x lar"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkich 4 — juft son, shuning uchun ildiz ostidagi ifoda manfiy bo'lmasligi kerak: x − 7 ≥ 0. Bundan x ≥ 7. x = 7 da ildiz nolga teng, ya'ni bu nuqta ham sohaga kiradi. Javob: x ≥ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-ildiz-aniqlanish-sohasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#27c483ea"
+    },
+    {
+      "q": "⁶√(15 − 3x) ifodaning aniqlanish sohasini toping.",
+      "v": [
+        "x ≥ 5",
+        "x ≤ 15",
+        "x ≥ −5",
+        "x ≤ 5"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkich 6 juft bo'lgani uchun 15 − 3x ≥ 0 bo'lishi shart. Bundan 15 ≥ 3x va x ≤ 5 kelib chiqadi. Musbat songa bo'lishda tengsizlik ishorasi o'zgarmaydi. Javob: x ≤ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-ildiz-aniqlanish-sohasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#506a5ec2"
+    },
+    {
+      "q": "√(x + 2) / ⁴√(6 − x) ko'rinishidagi ifoda qanday oraliqda aniqlangan?",
+      "v": [
+        "−2 ≤ x ≤ 6",
+        "−2 ≤ x < 6",
+        "−2 < x < 6",
+        "x ≥ −2"
+      ],
+      "t": 1,
+      "izoh": "Suratdagi ildiz uchun x + 2 ≥ 0, ya'ni x ≥ −2. Maxrajdagi ildiz nolga teng bo'lmasligi kerak, shuning uchun 6 − x > 0, ya'ni x < 6. Ikki shartni birlashtiramiz. Javob: −2 ≤ x < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-ildiz-aniqlanish-sohasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#b3a28b85"
+    },
+    {
+      "q": "⁴√(x² − 9x + 20) ifodasi aniqlangan bo'lishi uchun x qanday qiymatlarni qabul qilishi mumkin?",
+      "v": [
+        "4 ≤ x ≤ 5",
+        "x ≤ 5",
+        "x ≤ 4 yoki x ≥ 5",
+        "barcha haqiqiy x lar"
+      ],
+      "t": 2,
+      "izoh": "Uchhadni ko'paytuvchilarga ajratamiz: x² − 9x + 20 = (x − 4)(x − 5). Ko'paytma manfiy bo'lmasligi uchun ikkala ko'paytuvchi bir xil ishorada bo'lishi kerak. Parabola shoxlari yuqoriga qaragani uchun ifoda ildizlardan tashqarida musbat. Javob: x ≤ 4 yoki x ≥ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-ildiz-aniqlanish-sohasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#ae35868d"
+    },
+    {
+      "q": "∛(x − 11) ifodasining aniqlanish sohasi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Faqat x ≥ 11",
+        "Faqat x > 11",
+        "Barcha haqiqiy sonlar",
+        "Faqat x ≤ 11"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkich 3 — toq son. Toq ildiz manfiy sondan ham chiqariladi, shuning uchun ildiz ostidagi ifodaga hech qanday cheklov qo'yilmaydi. Demak x istalgan haqiqiy son bo'lishi mumkin. Javob: barcha haqiqiy sonlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toq-ildiz-aniqlanish-sohasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#23a9e0ba"
+    },
+    {
+      "q": "⁵√(2x + 3) va ⁴√(2x + 3) ifodalarining aniqlanish sohalari bir-biridan qanday farq qiladi?",
+      "v": [
+        "Birinchisi — barcha x, ikkinchisi — x ≥ −1,5",
+        "Ikkalasi ham x ≥ −1,5",
+        "Birinchisi — x ≥ −1,5, ikkinchisi — barcha x",
+        "Ikkalasi ham barcha haqiqiy x"
+      ],
+      "t": 0,
+      "izoh": "5 toq ko'rsatkich, shuning uchun ⁵√(2x + 3) barcha x larda aniqlangan. 4 juft bo'lgani uchun 2x + 3 ≥ 0 shart qo'yiladi, bundan x ≥ −1,5. Farq aynan shu shartda. Javob: birinchisi — barcha x, ikkinchisi — x ≥ −1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toq-ildiz-aniqlanish-sohasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#b45010df"
+    },
+    {
+      "q": "∛(x + 4) / (x² − 25) ko'rinishidagi ifoda haqiqiy sonlar to'plamida qaysi nuqtalarda aniqlanmaydi?",
+      "v": [
+        "faqat x = 5",
+        "x = −4",
+        "x = 5, x = −5 va x = −4",
+        "x = 5 va x = −5"
+      ],
+      "t": 3,
+      "izoh": "Kub ildiz barcha sonlarda aniqlangan, shuning uchun cheklov faqat maxrajdan chiqadi. x² − 25 = 0 tenglamaning yechimlari x = 5 va x = −5, aynan shu nuqtalarda maxraj nolga aylanadi. Javob: x = 5 va x = −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toq-ildiz-aniqlanish-sohasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#6bb9b356"
+    },
+    {
+      "q": "Matematika to'garagida taxtaga ∛16 · ∛4 ko'paytma yozildi va uni soddalashtirish topshirildi. Natija nechaga teng?",
+      "v": [
+        "8",
+        "4",
+        "∛20",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "Bir xil ko'rsatkichli ildizlar ko'paytmasi ildiz ostidagi sonlar ko'paytmasiga teng: ∛16 · ∛4 = ∛(16·4) = ∛64. 4³ = 64 bo'lgani uchun natija 4. ∛20 — ildiz ostidagi sonlarni qo'shish xatosi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-kopaytma-xossasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#c8759c14"
+    },
+    {
+      "q": "⁴√27 va ⁴√3 sonlarning ko'paytmasi qanday butun songa teng bo'ladi?",
+      "v": [
+        "9",
+        "⁴√30",
+        "3",
+        "81"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkichlar bir xil bo'lgani uchun ildizlarni bitta ildiz ostiga birlashtiramiz: ⁴√27 · ⁴√3 = ⁴√(27·3) = ⁴√81. 3⁴ = 81, demak natija 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-kopaytma-xossasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#f9ff6961"
+    },
+    {
+      "q": "∛2 · ∛4 · ∛27 ifodani soddalashtirganda qanday son hosil bo'ladi?",
+      "v": [
+        "216",
+        "∛33",
+        "12",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Uchala ildiz ham kub ildiz, shuning uchun ular bitta ildiz ostida ko'paytiriladi: ∛(2·4·27) = ∛216. 6³ = 216 bo'lgani uchun natija 6. ∛33 — sonlarni qo'shib yuborish xatosi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-kopaytma-xossasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#3cc6f70c"
+    },
+    {
+      "q": "Agar ∛a = 5 va ∛b = 2 bo'lsa, ∛(a·b) + ∛(a/b) ifodaning qiymatini toping.",
+      "v": [
+        "12,5",
+        "15",
+        "10",
+        "7,5"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytma ildizi ildizlar ko'paytmasiga teng: ∛(a·b) = 5·2 = 10. Bo'linma ildizi ildizlar bo'linmasiga teng: ∛(a/b) = 5 : 2 = 2,5. Yig'indi 10 + 2,5 = 12,5. Javob: 12,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-kopaytma-xossasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#912c3460"
+    },
+    {
+      "q": "Muhandis ⁴√1250 ni ⁴√2 ga bo'lish orqali detalning o'lchov koeffitsientini topmoqchi. Bu koeffitsient nechaga teng?",
+      "v": [
+        "625",
+        "5",
+        "⁴√1248",
+        "25"
+      ],
+      "t": 1,
+      "izoh": "Bir xil ko'rsatkichli ildizlar bo'linmasi ildiz ostidagi sonlar bo'linmasiga teng: ⁴√1250 : ⁴√2 = ⁴√(1250 : 2) = ⁴√625. 5⁴ = 625, demak koeffitsient 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-bolinma-xossasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#74cd42ad"
+    },
+    {
+      "q": "Do'kondagi ikki idishning hajmlari nisbati ∛(1029/3) ko'rinishida yozilgan. Ushbu nisbatning aniq qiymati quyidagilardan qaysi biriga teng?",
+      "v": [
+        "343",
+        "49",
+        "7",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Avval ildiz ostidagi kasrni soddalashtiramiz: 1029 : 3 = 343. So'ng ∛343 = 7, chunki 7³ = 343. Ildiz belgisini tashlab yuborib 343 deb javob berish tipik xato. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-bolinma-xossasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#ee7bfa69"
+    },
+    {
+      "q": "⁶√(x¹²) : ⁶√(x⁶) ifodani x > 0 shartida soddalashtiring.",
+      "v": [
+        "x²",
+        "x³",
+        "x⁶",
+        "x"
+      ],
+      "t": 3,
+      "izoh": "Bo'linmani bitta ildiz ostiga yig'amiz: ⁶√(x¹² : x⁶) = ⁶√(x⁶). Darajalar bo'linganda ko'rsatkichlar ayiriladi. x > 0 bo'lgani uchun ⁶√(x⁶) = x. Javob: x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-bolinma-xossasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#562f10d5"
+    },
+    {
+      "q": "Agar ⁴√m = 12 bo'lsa, ⁴√(m/81) ifodaning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "4",
+        "6",
+        "3",
+        "4/3"
+      ],
+      "t": 0,
+      "izoh": "Bo'linma ildizi ildizlar bo'linmasiga teng: ⁴√(m/81) = ⁴√m : ⁴√81. Bu yerda ⁴√81 = 3, shuning uchun 12 : 3 = 4. 4/3 — maxrajdan ⁴√81 = 3 o'rniga √81 = 9 ni olib, 12 : 9 deb hisoblash xatosi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-bolinma-xossasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#8206921a"
+    },
+    {
+      "q": "∛54 ifodani ildiz ostidan ko'paytuvchi chiqarib soddalashtiring.",
+      "v": [
+        "2∛3",
+        "3∛2",
+        "6∛3",
+        "3∛3"
+      ],
+      "t": 1,
+      "izoh": "54 sonini kub bo'luvchisi bilan yozamiz: 54 = 27·2. Demak ∛54 = ∛27 · ∛2 = 3∛2. 27 ning kub ildizi 3, 2 esa ildiz ostida qoladi. Javob: 3∛2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytuvchini-ildiz-ostidan-chiqarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#028a98a1"
+    },
+    {
+      "q": "⁴√162 ifodani ildiz belgisi ostidan ko'paytuvchini chiqarib yozing.",
+      "v": [
+        "2⁴√3",
+        "9⁴√2",
+        "3⁴√2",
+        "3⁴√18"
+      ],
+      "t": 2,
+      "izoh": "162 = 81·2 va 81 = 3⁴ ekanini payqaymiz. Shuning uchun ⁴√162 = ⁴√81 · ⁴√2 = 3⁴√2. 9 — 81 ning kvadrat ildizini olish xatosi. Javob: 3⁴√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytuvchini-ildiz-ostidan-chiqarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#579cefbc"
+    },
+    {
+      "q": "⁵√(96·a⁵) ifodani a > 0 bo'lganda eng sodda ko'rinishga keltiring.",
+      "v": [
+        "32a·⁵√3",
+        "6a·⁵√2",
+        "3a·⁵√2",
+        "2a·⁵√3"
+      ],
+      "t": 3,
+      "izoh": "96 = 32·3 va 32 = 2⁵. Shuning uchun ⁵√(96·a⁵) = ⁵√32 · ⁵√3 · ⁵√(a⁵). Bu yerda ⁵√32 = 2, a > 0 bo'lgani uchun ⁵√(a⁵) = a. Javob: 2a·⁵√3. 32a·⁵√3 — 32 dan ildiz olishni unutish, 3a·⁵√2 — 2 bilan 3 ni almashtirib yuborish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytuvchini-ildiz-ostidan-chiqarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#574e9ad7"
+    },
+    {
+      "q": "Kubsimon omborning hajmi 128 m³ ga teng. Uning qirrasi uzunligini eng sodda ildiz ko'rinishida yozing.",
+      "v": [
+        "4∛2 m",
+        "2∛4 m",
+        "8∛2 m",
+        "4∛4 m"
+      ],
+      "t": 0,
+      "izoh": "Kub hajmi a³ = 128, demak qirrasi a = ∛128. 128 = 64·2 bo'lgani uchun ∛128 = ∛64 · ∛2 = 4∛2. Bu taxminan 5 m atrofidagi uzunlik. Javob: 4∛2 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytuvchini-ildiz-ostidan-chiqarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#e8fa30a4"
+    },
+    {
+      "q": "2∛5 ifodani bitta kub ildiz ko'rinishida yozing va to'g'ri variantni tanlang.",
+      "v": [
+        "∛10",
+        "∛40",
+        "∛20",
+        "∛80"
+      ],
+      "t": 1,
+      "izoh": "Ildiz oldidagi ko'paytuvchi ildiz ostiga uning ko'rsatkichi darajasida kiritiladi: 2 = ∛8. Demak 2∛5 = ∛8 · ∛5 = ∛40. ∛10 — 2 ni darajaga ko'tarmasdan kiritish xatosi. Javob: ∛40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytuvchini-ildiz-ostiga-kiritish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#9003f4f3"
+    },
+    {
+      "q": "3⁴√2 ifodani yagona to'rtinchi darajali ildiz ostida yozing.",
+      "v": [
+        "⁴√6",
+        "⁴√54",
+        "⁴√162",
+        "⁴√24"
+      ],
+      "t": 2,
+      "izoh": "3 ni ildiz ostiga kiritish uchun uni 4-darajaga ko'taramiz: 3 = ⁴√81. Demak 3⁴√2 = ⁴√(81·2) = ⁴√162. ⁴√6 — ko'rsatkichni hisobga olmay ko'paytirish xatosi. Javob: ⁴√162.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytuvchini-ildiz-ostiga-kiritish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#40ffb3c4"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri 2⁵√3 ifodaga aynan teng bo'ladi?",
+      "v": [
+        "⁵√6",
+        "⁵√48",
+        "⁵√12",
+        "⁵√96"
+      ],
+      "t": 3,
+      "izoh": "2 ni beshinchi darajali ildiz ostiga kiritamiz: 2 = ⁵√32, chunki 2⁵ = 32. Shuning uchun 2⁵√3 = ⁵√32 · ⁵√3 = ⁵√96. ⁵√6 — darajaga ko'tarmasdan kiritish xatosi. Javob: ⁵√96.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytuvchini-ildiz-ostiga-kiritish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#6e501d5d"
+    },
+    {
+      "q": "(∛7)³ ifodaning qiymati nechaga teng ekanligini aniqlang.",
+      "v": [
+        "7",
+        "21",
+        "343",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "n-darajali ildizning ta'rifiga ko'ra, ildiz aniqlangan bo'lsa (ⁿ√a)ⁿ = a bo'ladi. Demak (∛7)³ = 7. 343 — 7 ni kubga ko'tarish xatosi, 21 esa 7 ni 3 ga ko'paytirish xatosi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizni-darajaga-kotarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#44826b0e"
+    },
+    {
+      "q": "Talaba (⁴√5)⁸ ifodani soddalashtirishda ko'rsatkichni ildiz ko'rsatkichiga bo'lish qoidasidan foydalandi. U qanday aniq son oldi?",
+      "v": [
+        "5",
+        "25",
+        "40",
+        "625"
+      ],
+      "t": 1,
+      "izoh": "(⁴√5)⁸ = ((⁴√5)⁴)² ko'rinishida guruhlaymiz. Ichki qavs 5 ga teng, demak natija 5² = 25. Qisqacha aytganda 8 : 4 = 2 va javob 5². Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizni-darajaga-kotarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#dcf5bb1e"
+    },
+    {
+      "q": "(∛9)⁶ · (⁴√2)⁸ ko'paytmaning qiymatini hisoblang.",
+      "v": [
+        "162",
+        "648",
+        "324",
+        "81"
+      ],
+      "t": 2,
+      "izoh": "Birinchi ko'paytuvchi: (∛9)⁶ = 9^(6/3) = 9² = 81. Ikkinchi ko'paytuvchi: (⁴√2)⁸ = 2^(8/4) = 2² = 4. Ularning ko'paytmasi 81·4 = 324. Javob: 324.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizni-darajaga-kotarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#b9db5490"
+    },
+    {
+      "q": "⁶√(2⁴) ifodani ildiz ko'rsatkichini qisqartirib sodda ko'rinishga keltiring.",
+      "v": [
+        "∛2",
+        "∛4",
+        "√2",
+        "√8"
+      ],
+      "t": 1,
+      "izoh": "Ildiz ostidagi daraja ko'rsatkichi bilan ildiz ko'rsatkichini kasr sifatida qisqartiramiz: ⁶√(2⁴) = 2^(4/6) = 2^(2/3). Kasr ko'rsatkich 2/3 esa ∛(2²) = ∛4 degani. Javob: ∛4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-korsatkichini-qisqartirish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#e27c461e"
+    },
+    {
+      "q": "x > 0 bo'lganda ⁸√(x⁶) ifodani eng kichik ildiz ko'rsatkichi bilan yozing.",
+      "v": [
+        "⁴√(x²)",
+        "√(x³)",
+        "⁴√(x³)",
+        "⁸√(x³)"
+      ],
+      "t": 2,
+      "izoh": "Kasr ko'rsatkichli darajaga o'tamiz: ⁸√(x⁶) = x^(6/8). Kasrni qisqartirsak 6/8 = 3/4 bo'ladi. Demak ifoda x^(3/4), ya'ni ⁴√(x³) ga teng. Javob: ⁴√(x³).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-korsatkichini-qisqartirish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#a372b701"
+    },
+    {
+      "q": "Sinov ishida ⁹√(a³) ifodani soddalashtirish so'ralgan. a > 0 bo'lsa, to'g'ri natija qaysi variantda ko'rsatilgan?",
+      "v": [
+        "⁹√a",
+        "a³",
+        "√a",
+        "∛a"
+      ],
+      "t": 3,
+      "izoh": "⁹√(a³) = a^(3/9) = a^(1/3) ko'rinishiga keladi. Kasr ko'rsatkich 1/3 esa kub ildizni bildiradi. Shunday qilib ildiz ko'rsatkichi 9 dan 3 ga qisqardi. Javob: ∛a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-korsatkichini-qisqartirish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#44827114"
+    },
+    {
+      "q": "¹²√64 ifodani ildiz ko'rsatkichini qisqartirish yo'li bilan sodda ko'rinishda yozing.",
+      "v": [
+        "√2",
+        "∛2",
+        "⁴√2",
+        "⁶√2"
+      ],
+      "t": 0,
+      "izoh": "64 sonini 2 ning darajasi ko'rinishida yozamiz: 64 = 2⁶. U holda ¹²√64 = ¹²√(2⁶) = 2^(6/12) = 2^(1/2). Bu esa √2 ga teng. Javob: √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-korsatkichini-qisqartirish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#2e6a1e93"
+    },
+    {
+      "q": "Muhandislik hisob-kitobida ¹⁰√(9⁵) ifodasi uchrab qoldi. Uning aniq son qiymati nechaga teng bo'ladi deb hisoblaysiz?",
+      "v": [
+        "9",
+        "3",
+        "√3",
+        "⁵√9"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichlarni kasr ko'rinishida qisqartiramiz: ¹⁰√(9⁵) = 9^(5/10) = 9^(1/2). Bu oddiy kvadrat ildiz, ya'ni √9 = 3. Ildizni umuman tashlab yuborib 9 deb javob berish tipik xato. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-korsatkichini-qisqartirish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#89172a89"
+    },
+    {
+      "q": "Ixtiyoriy haqiqiy a uchun ⁴√(a⁴) ifodasi nimaga teng bo'ladi?",
+      "v": [
+        "a",
+        "|a|",
+        "a²",
+        "−a"
+      ],
+      "t": 1,
+      "izoh": "Juft ko'rsatkichli ildizning qiymati hech qachon manfiy bo'lmaydi. a manfiy bo'lganda ham natija musbat chiqishi kerak, shuning uchun javob modul bilan yoziladi: ⁴√(a⁴) = |a|. Javob: |a|.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-ildiz-modul-xossasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#f904c769"
+    },
+    {
+      "q": "Har qanday haqiqiy x uchun ⁶√((x − 5)⁶) ifodasini modul belgisi yordamida yozing.",
+      "v": [
+        "x − 5",
+        "5 − x",
+        "|x − 5|",
+        "(x − 5)²"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkich 6 — juft son, shuning uchun natija manfiy bo'lmasligi kerak. x < 5 bo'lganda x − 5 manfiy chiqadi, demak javobni modul ostida yozish shart. Javob: |x − 5|.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-ildiz-modul-xossasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#8ffd2fa8"
+    },
+    {
+      "q": "Karim ⁶√((−7)⁶) ifodani hisoblab, javob manfiy chiqishi kerak deb o'yladi. Aslida to'g'ri javob qanday bo'ladi?",
+      "v": [
+        "−7",
+        "42",
+        "−42",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "(−7)⁶ juft darajaga ko'tarilgani uchun musbat son chiqadi. Juft ildiz esa faqat manfiy bo'lmagan qiymat beradi, shuning uchun ⁶√((−7)⁶) = |−7| = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-ildiz-modul-xossasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#14e8a79c"
+    },
+    {
+      "q": "⁵√((−4)⁵) va ⁴√((−4)⁴) ifodalarning qiymatlari mos ravishda qanday bo'ladi?",
+      "v": [
+        "−4 va 4",
+        "4 va 4",
+        "−4 va −4",
+        "4 va −4"
+      ],
+      "t": 0,
+      "izoh": "Toq ko'rsatkichli ildiz ishorani saqlaydi, shuning uchun ⁵√((−4)⁵) = −4. Juft ko'rsatkichli ildiz esa modul beradi: ⁴√((−4)⁴) = |−4| = 4. Javob: −4 va 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-ildiz-modul-xossasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#6c03dee8"
+    },
+    {
+      "q": "x = −3 bo'lganda √(x²) + ⁴√(x⁴) ifodaning qiymati nechaga teng bo'lishini hisoblab, to'g'ri variantni belgilang.",
+      "v": [
+        "−6",
+        "6",
+        "0",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "Ikkala ildiz ham juft ko'rsatkichli, shuning uchun √(x²) = |x| va ⁴√(x⁴) = |x|. x = −3 da |x| = 3 bo'ladi, demak yig'indi 3 + 3 = 6. Ishorani saqlab qolib −6 deb javob berish tipik xato. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-ildiz-modul-xossasi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#c66de1bf"
+    },
+    {
+      "q": "√(∛64) ifodaning qiymatini bosqichma-bosqich hisoblab toping va javobni belgilang.",
+      "v": [
+        "4",
+        "8",
+        "2",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Avval ichki ildizni hisoblaymiz: ∛64 = 4, chunki 4³ = 64. So'ng tashqi ildiz: √4 = 2. Bir yo'la yozilsa bu ⁶√64 ga teng va u ham 2 beradi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizdan-ildiz-chiqarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#e19b7f59"
+    },
+    {
+      "q": "O'quvchi ∛(√4096) ifodani ichkaridan tashqariga qarab hisoblamoqchi. U bu ifodani hisoblab, oxirida qanday natijaga keladi?",
+      "v": [
+        "8",
+        "16",
+        "64",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Avval ichki ildiz: √4096 = 64, chunki 64² = 4096. So'ng tashqi ildiz: ∛64 = 4. Umumiy qoida bo'yicha bu ⁶√4096 ga teng, natija o'zgarmaydi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizdan-ildiz-chiqarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#1efc4fd3"
+    },
+    {
+      "q": "√(∛a) ifodani bitta ildiz belgisi ostida yozish uchun ildiz ko'rsatkichi qanday bo'lishi kerak?",
+      "v": [
+        "6",
+        "5",
+        "9",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Ildizdan ildiz olinganda ko'rsatkichlar ko'paytiriladi: √(∛a) = ⁶√a, chunki 2·3 = 6. Ko'rsatkichlarni qo'shib 5 deb olish yoki kvadratga ko'tarib 9 deb olish tipik xato. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizdan-ildiz-chiqarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#f4ff5e42"
+    },
+    {
+      "q": "x > 0 bo'lsa, ⁴√(∛(x¹²)) ifodaning qiymati nimaga teng bo'ladi?",
+      "v": [
+        "x²",
+        "x",
+        "x³",
+        "x⁴"
+      ],
+      "t": 1,
+      "izoh": "Ichkaridan boshlaymiz: ∛(x¹²) = x^(12/3) = x⁴. So'ng ⁴√(x⁴) = x, chunki x musbat. Boshqacha yo'l: ildiz ko'rsatkichlari ko'paytmasi 12 va x¹² ning ko'rsatkichi ham 12, demak natija x. Javob: x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizdan-ildiz-chiqarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#ae22ce47"
+    },
+    {
+      "q": "∛3 va √2 sonlarini umumiy ko'rsatkichga keltirib taqqoslang.",
+      "v": [
+        "∛3 < √2",
+        "∛3 = √2",
+        "∛3 > √2",
+        "Taqqoslab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Umumiy ko'rsatkich sifatida 6 ni olamiz: ∛3 = ⁶√(3²) = ⁶√9, √2 = ⁶√(2³) = ⁶√8. Ko'rsatkichlar tenglashgach ildiz ostidagi sonlar solishtiriladi: 9 > 8. Javob: ∛3 > √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-korsatkichga-keltirib-taqqoslash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#9b5de8a5"
+    },
+    {
+      "q": "Olimpiada mashg'ulotida ⁴√5 va ∛3 sonlaridan qaysi biri katta ekanini aniqlash so'ralgan. To'g'ri xulosa qaysi variantda?",
+      "v": [
+        "⁴√5 < ∛3",
+        "Ular teng",
+        "∛3 ikki marta katta",
+        "⁴√5 > ∛3"
+      ],
+      "t": 3,
+      "izoh": "4 va 3 ko'rsatkichlarning eng kichik umumiy karralisi 12. ⁴√5 = ¹²√(5³) = ¹²√125, ∛3 = ¹²√(3⁴) = ¹²√81. 125 > 81 bo'lgani uchun birinchi son katta. Javob: ⁴√5 > ∛3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-korsatkichga-keltirib-taqqoslash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#f241932f"
+    },
+    {
+      "q": "√3 va ∛5 sonlarini taqqoslash uchun ularni oltinchi darajali ildizga keltiring va to'g'ri natijani belgilang.",
+      "v": [
+        "√3 > ∛5",
+        "√3 < ∛5",
+        "√3 = ∛5",
+        "Ikkalasi ham 2 dan katta"
+      ],
+      "t": 0,
+      "izoh": "√3 = ⁶√(3³) = ⁶√27 va ∛5 = ⁶√(5²) = ⁶√25 ko'rinishiga keltiriladi. Endi ildiz ostidagi sonlarni solishtiramiz: 27 > 25. Demak birinchi son kattaroq. Javob: √3 > ∛5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-korsatkichga-keltirib-taqqoslash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#ef5436ef"
+    },
+    {
+      "q": "⁵√10 va ∛4 sonlarining qaysi biri katta ekanligini umumiy ko'rsatkichga keltirib aniqlang.",
+      "v": [
+        "⁵√10 > ∛4",
+        "∛4 > ⁵√10",
+        "Ular teng",
+        "Farqi 1 ga teng"
+      ],
+      "t": 1,
+      "izoh": "5 va 3 ko'rsatkichlarning umumiy karralisi 15. ⁵√10 = ¹⁵√(10³) = ¹⁵√1000, ∛4 = ¹⁵√(4⁵) = ¹⁵√1024. 1024 > 1000 bo'lgani uchun ∛4 kattaroq. Javob: ∛4 > ⁵√10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-korsatkichga-keltirib-taqqoslash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#04de985e"
+    },
+    {
+      "q": "Birinchi ustaxonada mahsulot hajmi 4 yilda 16 baravar, ikkinchisida 6 yilda 64 baravar oshdi. Yillik o'sish koeffitsienti qaysi ustaxonada katta?",
+      "v": [
+        "Birinchisida",
+        "Ikkinchisida",
+        "Ikkalasida bir xil",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Yillik koeffitsient umumiy o'sishdan n-darajali ildiz olib topiladi. Birinchisi ⁴√16 = 2, ikkinchisi ⁶√64 = 2, chunki 2⁴ = 16 va 2⁶ = 64. Demak ikkala ustaxonada ham koeffitsient bir xil. Javob: ikkalasida bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-korsatkichga-keltirib-taqqoslash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#b7df7352"
+    },
+    {
+      "q": "√2, ∛2 va ⁶√2 sonlarini o'sish tartibida joylashtiring.",
+      "v": [
+        "√2 < ∛2 < ⁶√2",
+        "∛2 < ⁶√2 < √2",
+        "Uchalasi teng",
+        "⁶√2 < ∛2 < √2"
+      ],
+      "t": 3,
+      "izoh": "Ildiz ostidagi son 1 dan katta bo'lsa, ildiz ko'rsatkichi ortgan sari qiymat kamayadi. Ko'rsatkichlar 6 > 3 > 2 bo'lgani uchun qiymatlar teskari tartibda joylashadi. Javob: ⁶√2 < ∛2 < √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlarni-tartiblash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#ba054805"
+    },
+    {
+      "q": "0 < a < 1 shartida √a va ⁴√a sonlaridan qaysi biri kattaroq bo'ladi?",
+      "v": [
+        "⁴√a",
+        "√a",
+        "Ular teng",
+        "Ikkalasi ham 1 dan katta"
+      ],
+      "t": 0,
+      "izoh": "Birdan kichik musbat sondan ildiz olganda natija 1 ga yaqinlashadi, ko'rsatkich qancha katta bo'lsa shuncha yaqin. Masalan a = 0,0625 bo'lsa √a = 0,25, ⁴√a = 0,5. Demak to'rtinchi darajali ildiz kattaroq. Javob: ⁴√a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlarni-tartiblash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#ca6dcd1f"
+    },
+    {
+      "q": "√5, ∛10 va ⁴√20 sonlarini kichikdan kattaga qarab tartiblang.",
+      "v": [
+        "∛10 < ⁴√20 < √5",
+        "⁴√20 < ∛10 < √5",
+        "√5 < ∛10 < ⁴√20",
+        "⁴√20 < √5 < ∛10"
+      ],
+      "t": 1,
+      "izoh": "Umumiy ko'rsatkich 12 ni olamiz: √5 = ¹²√(5⁶) = ¹²√15625, ∛10 = ¹²√(10⁴) = ¹²√10000, ⁴√20 = ¹²√(20³) = ¹²√8000. Endi tartib aniq ko'rinadi: 8000 < 10000 < 15625. Javob: ⁴√20 < ∛10 < √5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlarni-tartiblash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#80aa639f"
+    },
+    {
+      "q": "Uch xil o'lchov natijasi ∛7, ⁴√15 va ⁶√60 ko'rinishida yozilgan. Ulardan qaysi biri eng katta ekanligini aniqlang.",
+      "v": [
+        "⁴√15",
+        "∛7",
+        "⁶√60",
+        "Uchalasi teng"
+      ],
+      "t": 2,
+      "izoh": "Umumiy ko'rsatkich 12 ga keltiramiz: ∛7 = ¹²√(7⁴) = ¹²√2401, ⁴√15 = ¹²√(15³) = ¹²√3375, ⁶√60 = ¹²√(60²) = ¹²√3600. Eng katta ildiz osti soni 3600 ga tegishli. Javob: ⁶√60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlarni-tartiblash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#fae65571"
+    },
+    {
+      "q": "⁵√(a³) ifodani kasr ko'rsatkichli daraja ko'rinishida yozing (a > 0).",
+      "v": [
+        "a^(5/3)",
+        "a^(1/15)",
+        "a^(8/5)",
+        "a^(3/5)"
+      ],
+      "t": 3,
+      "izoh": "Ta'rifga ko'ra ⁿ√(aᵐ) = a^(m/n) bo'ladi. Bu yerda ildiz ostidagi daraja 3, ildiz ko'rsatkichi 5. Demak natija a^(3/5). Ko'rsatkichlarni o'rin almashtirib a^(5/3) deb yozish tipik xato. Javob: a^(3/5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-korsatkichli-darajaga-otish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#63febb48"
+    },
+    {
+      "q": "8^(2/3) darajaning qiymatini ildiz orqali hisoblab toping.",
+      "v": [
+        "4",
+        "16",
+        "6",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Kasr ko'rsatkichli daraja ildizga aylanadi: 8^(2/3) = ∛(8²) = ∛64 = 4. Xuddi shu natijani (∛8)² = 2² = 4 yo'li bilan ham olish mumkin. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-korsatkichli-darajaga-otish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#6e4d9f18"
+    },
+    {
+      "q": "Iqtisodiy hisob-kitobda 81^(3/4) ko'rinishidagi daraja uchrab qoldi. Uning son qiymati nechaga teng bo'lishini aniqlab, to'g'ri variantni tanlang.",
+      "v": [
+        "12",
+        "27",
+        "9",
+        "243"
+      ],
+      "t": 1,
+      "izoh": "Darajani ildiz orqali yozamiz: 81^(3/4) = (⁴√81)³. Bu yerda ⁴√81 = 3, so'ngra 3³ = 27. 243 — ildiz olish o'rniga asosni ko'rsatkich suratiga ko'paytirib yuborish (81·3) xatosi. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-korsatkichli-darajaga-otish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#0c488806"
+    },
+    {
+      "q": "32^(−2/5) darajaning qiymatini oddiy kasr ko'rinishida ifodalang.",
+      "v": [
+        "1/2",
+        "4",
+        "1/4",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "Manfiy ko'rsatkich teskari songa o'tishni bildiradi: 32^(−2/5) = 1 : 32^(2/5). Bu yerda 32^(2/5) = (⁵√32)² = 2² = 4. Demak natija 1/4. Manfiy ko'rsatkichni manfiy javob deb tushunish xato. Javob: 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-korsatkichli-darajaga-otish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#1b5d4603"
+    },
+    {
+      "q": "5∛2 + 3∛2 yig'indini soddalashtiring va to'g'ri variantni tanlang.",
+      "v": [
+        "8∛4",
+        "15∛2",
+        "2∛8",
+        "8∛2"
+      ],
+      "t": 3,
+      "izoh": "O'xshash ildizlar — ildiz ko'rsatkichi va ildiz osti bir xil bo'lgan hadlar. Ularda faqat koeffitsientlar qo'shiladi: 5 + 3 = 8, ildizning o'zi o'zgarmaydi. Javob: 8∛2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshash-ildizlarni-qoshish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#41d62635"
+    },
+    {
+      "q": "∛54 − ∛16 ayirmani ildiz ostidan ko'paytuvchi chiqarish yo'li bilan soddalashtiring.",
+      "v": [
+        "∛2",
+        "∛38",
+        "5∛2",
+        "∛70"
+      ],
+      "t": 0,
+      "izoh": "Har bir hadni ajratamiz: ∛54 = ∛(27·2) = 3∛2 va ∛16 = ∛(8·2) = 2∛2. Endi o'xshash hadlar ayiriladi: 3∛2 − 2∛2 = ∛2. ∛38 — ildiz ostidagi sonlarni ayirish xatosi. Javob: ∛2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshash-ildizlarni-qoshish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#75dea50b"
+    },
+    {
+      "q": "Duradgor uch xil taxta kesdi: ularning uzunliklari 2⁴√3 m, 5⁴√3 m va 4⁴√3 m. Taxtalarning umumiy uzunligi qancha?",
+      "v": [
+        "11⁴√9 m",
+        "11⁴√3 m",
+        "40⁴√3 m",
+        "11⁴√27 m"
+      ],
+      "t": 1,
+      "izoh": "Uchala hadda ham bir xil ildiz — ⁴√3 turibdi, shuning uchun faqat koeffitsientlar qo'shiladi: 2 + 5 + 4 = 11. Umumiy uzunlik 11⁴√3 m bo'ladi. Ildiz ostini ham qo'shish yoki ko'paytirish xato. Javob: 11⁴√3 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshash-ildizlarni-qoshish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#994a24bd"
+    },
+    {
+      "q": "∛250 + ∛128 − ∛16 ifodani eng sodda ko'rinishga keltiring.",
+      "v": [
+        "11∛2",
+        "∛362",
+        "7∛2",
+        "∛2"
+      ],
+      "t": 2,
+      "izoh": "Har bir hadni ajratamiz: ∛250 = 5∛2, ∛128 = 4∛2, ∛16 = 2∛2. Endi koeffitsientlar bilan ishlaymiz: 5 + 4 − 2 = 7. Natija 7∛2 ga teng. Javob: 7∛2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxshash-ildizlarni-qoshish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#0454dcbb"
+    },
+    {
+      "q": "1/∛5 kasrning maxrajini irratsionallikdan qutqarib, to'g'ri ko'rinishni tanlang.",
+      "v": [
+        "∛5/5",
+        "∛5/25",
+        "∛5",
+        "∛25/5"
+      ],
+      "t": 3,
+      "izoh": "Maxrajni to'la kubga to'ldirish kerak, shuning uchun surat va maxrajni ∛25 ga ko'paytiramiz. Maxrajda ∛5 · ∛25 = ∛125 = 5 hosil bo'ladi, suratda esa ∛25 qoladi. Javob: ∛25/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxrajni-irratsionallikdan-qutqarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#a71433d9"
+    },
+    {
+      "q": "6/⁴√8 kasrni maxrajida ildiz qolmaydigan ko'rinishga keltiring.",
+      "v": [
+        "3⁴√2",
+        "6⁴√2",
+        "3⁴√8",
+        "2⁴√3"
+      ],
+      "t": 0,
+      "izoh": "8 = 2³ bo'lgani uchun maxrajni to'ldirish uchun ⁴√2 ga ko'paytiramiz: ⁴√8 · ⁴√2 = ⁴√16 = 2. Surat 6·⁴√2 bo'ladi, kasr esa 6⁴√2 : 2 = 3⁴√2 ga teng. Javob: 3⁴√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxrajni-irratsionallikdan-qutqarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#3a02a3aa"
+    },
+    {
+      "q": "10/∛4 kasrni soddalashtirib, maxrajdagi ildizdan xalos bo'ling.",
+      "v": [
+        "10∛2",
+        "5∛2",
+        "5∛4",
+        "2∛5"
+      ],
+      "t": 1,
+      "izoh": "4 = 2² bo'lgani uchun surat va maxrajni ∛2 ga ko'paytiramiz: ∛4 · ∛2 = ∛8 = 2. Kasr 10∛2 : 2 ko'rinishiga keladi va u 5∛2 ga teng. Javob: 5∛2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxrajni-irratsionallikdan-qutqarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#18cc9644"
+    },
+    {
+      "q": "∛(2/9) ifodani maxrajida ildiz qolmaydigan ko'rinishda yozing.",
+      "v": [
+        "∛2/3",
+        "∛6/9",
+        "∛6/3",
+        "∛18/3"
+      ],
+      "t": 2,
+      "izoh": "Avval ildizni ajratamiz: ∛(2/9) = ∛2 : ∛9. Maxrajni to'la kubga to'ldirish uchun surat va maxrajni ∛3 ga ko'paytiramiz: ∛9 · ∛3 = ∛27 = 3, surat esa ∛2 · ∛3 = ∛6. Javob: ∛6/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maxrajni-irratsionallikdan-qutqarish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#56acab30"
+    },
+    {
+      "q": "Kub shaklidagi qutining hajmi 1000 sm³ ga teng. Uning bir qirrasi necha santimetr ekanligini toping.",
+      "v": [
+        "333 sm",
+        "10 sm",
+        "100 sm",
+        "500 sm"
+      ],
+      "t": 1,
+      "izoh": "Kubning hajmi V = a³ formula bilan topiladi, demak qirra a = ∛V. Bu yerda ∛1000 = 10, chunki 10³ = 1000. Hajmni 3 ga bo'lish emas, undan kub ildiz olish kerak. Javob: 10 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-kub-hajmdan-qirra",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#e791fa07"
+    },
+    {
+      "q": "Fermer kubsimon don omborining hajmini 729 m³ deb hisobladi. Omborning ichki qirrasi necha metr bo'ladi?",
+      "v": [
+        "27 m",
+        "243 m",
+        "9 m",
+        "81 m"
+      ],
+      "t": 2,
+      "izoh": "Qirra hajmning kub ildiziga teng: a = ∛729 = 9, chunki 9³ = 729. 27 — kub ildiz o'rniga kvadrat ildiz olish, 243 esa hajmni 3 ga bo'lish xatosi. Javob: 9 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-kub-hajmdan-qirra",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#adf9fcb4"
+    },
+    {
+      "q": "Betondan quyilgan kubsimon blokning hajmi 0,064 m³ ga teng. Uning qirrasi necha metr uzunlikda bo'ladi?",
+      "v": [
+        "0,8 m",
+        "0,2 m",
+        "0,04 m",
+        "0,4 m"
+      ],
+      "t": 3,
+      "izoh": "Qirra a = ∛0,064 ga teng. 0,064 sonini 64/1000 ko'rinishida yozamiz: ∛64 = 4, ∛1000 = 10, demak a = 4/10 = 0,4 m. Vergul o'rnini adashtirib 0,04 deb olish tipik xato. Javob: 0,4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kub-hajmdan-qirra",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#5866cd10"
+    },
+    {
+      "q": "Kubsimon akvariumga 3375 litr suv sig'adi. Uning ichki qirrasi uzunligi necha detsimetrga teng ekanligini hisoblang.",
+      "v": [
+        "25 dm",
+        "58 dm",
+        "15 dm",
+        "1125 dm"
+      ],
+      "t": 2,
+      "izoh": "1 litr 1 dm³ ga teng, demak akvarium hajmi 3375 dm³. Qirra a = ∛3375 = 15 dm, chunki 15³ = 3375. 1125 — hajmni 3 ga bo'lish xatosi. Javob: 15 dm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kub-hajmdan-qirra",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#b85af9f5"
+    },
+    {
+      "q": "Ikkita kubsimon idishning hajmlari 54 litr va 2 litr. Ularning qirralari nisbati nechaga teng bo'ladi?",
+      "v": [
+        "3 : 1",
+        "27 : 1",
+        "9 : 1",
+        "6 : 1"
+      ],
+      "t": 0,
+      "izoh": "Qirra hajmning kub ildizi bo'lgani uchun nisbat ham ildiz ostiga kiradi: ∛54 : ∛2 = ∛(54 : 2) = ∛27 = 3. Demak qirralar nisbati 3 : 1. Hajmlar nisbatining o'zini javob deb olish tipik xato. Javob: 3 : 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-kub-qirralar-nisbati",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#3ce71c11"
+    },
+    {
+      "q": "Kubsimon idishning hajmi 8 marta oshirilsa, uning qirrasi necha marta uzayadi?",
+      "v": [
+        "8 marta",
+        "2 marta",
+        "4 marta",
+        "3 marta"
+      ],
+      "t": 1,
+      "izoh": "Qirra a = ∛V bo'lgani uchun hajm 8 marta ortsa qirra ∛8 marta ortadi. ∛8 = 2, demak qirra atigi 2 marta uzayadi. Hajm bilan birga qirrani ham 8 marta ortadi deb o'ylash keng tarqalgan xato. Javob: 2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajm-ozgarishida-qirra-ozgarishi",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#83a88520"
+    },
+    {
+      "q": "Korxona daromadi 4 yil ichida 81 barobar ortdi. Har yili daromad o'rtacha necha marta ko'paygan?",
+      "v": [
+        "9 marta",
+        "20 marta",
+        "3 marta",
+        "4 marta"
+      ],
+      "t": 2,
+      "izoh": "Yillik o'rtacha koeffitsient k bo'lsa, to'rt yilda k⁴ = 81 bo'ladi. Bundan k = ⁴√81 = 3. 81 ni 4 ga bo'lib 20 deb olish yoki kvadrat ildiz olib 9 deb javob berish tipik xato. Javob: 3 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ortacha-yillik-osish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#f05920b7"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni 6 soat ichida 64 marta ko'paydi. Har soatda ularning soni necha marta ortgan?",
+      "v": [
+        "4 marta",
+        "6 marta",
+        "10 marta",
+        "2 marta"
+      ],
+      "t": 3,
+      "izoh": "Har soatlik koeffitsient k uchun k⁶ = 64 tenglama hosil bo'ladi. Demak k = ⁶√64 = 2, chunki 2⁶ = 64. O'sish ko'paytirish bilan borgani uchun 64 ni 6 ga bo'lish noto'g'ri. Javob: 2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ortacha-yillik-osish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#1fc2d866"
+    },
+    {
+      "q": "Suv omborining hajmi 3 yil davomida har yili bir xil marta ortib, jami 64 barobarga oshdi. Yillik ortish koeffitsienti qancha?",
+      "v": [
+        "4 marta",
+        "8 marta",
+        "21 marta",
+        "16 marta"
+      ],
+      "t": 0,
+      "izoh": "Uch yillik o'sish k³ = 64 ko'rinishida yoziladi. Bundan k = ∛64 = 4, chunki 4³ = 64. 64 ni 3 ga bo'lib 21 deb olish yoki kvadrat ildiz olib 8 deb javob berish tipik xato. Javob: 4 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ortacha-yillik-osish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#5a835a62"
+    },
+    {
+      "q": "Firma daromadi 6 yilda 729 barobar ortdi. Shu sur'at saqlansa, dastlabki 2 yilda daromad necha barobar oshgan?",
+      "v": [
+        "3 barobar",
+        "9 barobar",
+        "243 barobar",
+        "27 barobar"
+      ],
+      "t": 1,
+      "izoh": "Avval yillik koeffitsientni topamiz: k = ⁶√729 = 3, chunki 3⁶ = 729. Ikki yildagi o'sish esa k² = 3² = 9 barobar bo'ladi. 729 ni 3 ga bo'lib 243 deb olish tipik xato. Javob: 9 barobar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ortacha-yillik-osish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#ded1e48f"
+    },
+    {
+      "q": "Kvadrat shaklidagi ikkita bir xil xona yuzalari ko'paytmasi 1296 m⁴ ga teng. Har bir xonaning tomoni necha metr?",
+      "v": [
+        "36 m",
+        "324 m",
+        "6 m",
+        "18 m"
+      ],
+      "t": 2,
+      "izoh": "Ikki bir xil kvadratning yuzalari ko'paytmasi a²·a² = a⁴ ga teng. Demak a⁴ = 1296 va a = ⁴√1296 = 6, chunki 6⁴ = 1296. 36 — kvadrat ildizgacha yetib to'xtash xatosi. Javob: 6 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formuladan-ildiz-orqali-topish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#ce9bffe2"
+    },
+    {
+      "q": "Silindr shaklidagi bakning hajmi V = 4h³ formula bilan berilgan. V = 500 m³ va h balandlik bo'lsa, h nechaga teng?",
+      "v": [
+        "125 m",
+        "25 m",
+        "8 m",
+        "5 m"
+      ],
+      "t": 3,
+      "izoh": "Tenglamani h ga nisbatan yechamiz: 4h³ = 500, bundan h³ = 125. Endi kub ildiz olamiz: h = ∛125 = 5 m. 125 ni javob deb qoldirish oxirgi qadamni tashlab ketish xatosi. Javob: 5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formuladan-ildiz-orqali-topish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#2704edb5"
+    },
+    {
+      "q": "Isitgichning quvvati P = 2t⁴ formula bilan hisoblanadi. P = 162 Vt bo'lsa, t parametr nechaga teng?",
+      "v": [
+        "3",
+        "81",
+        "9",
+        "40"
+      ],
+      "t": 0,
+      "izoh": "Tenglamadan t⁴ = 162 : 2 = 81 hosil bo'ladi. Endi to'rtinchi darajali ildiz olamiz: t = ⁴√81 = 3. 81 ni javob deb qoldirish yoki kvadrat ildiz olib 9 deb yozish tipik xato. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formuladan-ildiz-orqali-topish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#62bc9020"
+    },
+    {
+      "q": "Konussimon idishning hajmi V = k·r³ ko'rinishida, k = 2 va V = 128 sm³. Radius r necha santimetr?",
+      "v": [
+        "64 sm",
+        "4 sm",
+        "8 sm",
+        "16 sm"
+      ],
+      "t": 1,
+      "izoh": "Berilganlarni formulaga qo'yamiz: 2r³ = 128, bundan r³ = 64. Kub ildiz olsak r = ∛64 = 4 sm. 64 ni javob deb olish yoki kvadrat ildiz olib 8 deb yozish tipik xato. Javob: 4 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "formuladan-ildiz-orqali-topish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#d93ba92e"
+    },
+    {
+      "q": "∛x = 5 tenglamaning ildizini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "15",
+        "25",
+        "125",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Tenglamaning ikkala tomonini kubga ko'taramiz: (∛x)³ = 5³. Chap tomonda x qoladi, o'ng tomonda esa 125 hosil bo'ladi. Demak x = 125. 15 — 5 ni 3 ga ko'paytirish xatosi. Javob: 125.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-tenglama-yechish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#9bbdfbe3"
+    },
+    {
+      "q": "⁴√x = 3 tenglama qanday x qiymatida to'g'ri tenglikka aylanadi?",
+      "v": [
+        "12",
+        "64",
+        "27",
+        "81"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomonni to'rtinchi darajaga ko'taramiz: x = 3⁴ = 81. 12 — 3 ni 4 ga ko'paytirish, 27 esa kubga ko'tarib to'xtab qolish xatosi. Javob: 81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-tenglama-yechish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#b9ec5581"
+    },
+    {
+      "q": "Tenglama ∛(2x − 1) = 3 ko'rinishida berilgan. Uning yechimi nechaga teng bo'ladi?",
+      "v": [
+        "14",
+        "13",
+        "5",
+        "4,5"
+      ],
+      "t": 0,
+      "izoh": "Ikkala tomonni kubga ko'taramiz: 2x − 1 = 27. Bundan 2x = 28 va x = 14. 13 — birni noto'g'ri tomonga o'tkazib 26 ni 2 ga bo'lish xatosi. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-tenglama-yechish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#79f2adab"
+    },
+    {
+      "q": "⁴√(x + 5) = −2 tenglamaning haqiqiy yechimlari haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "x = 11",
+        "Yechimi yo'q",
+        "x = 21",
+        "x = −3"
+      ],
+      "t": 1,
+      "izoh": "Juft ko'rsatkichli ildizning qiymati hech qachon manfiy bo'lmaydi, o'ng tomonda esa −2 turibdi. Shuning uchun tenglik hech qanday x da bajarilmaydi. Ikkala tomonni to'rtinchi darajaga ko'tarib x = 11 deb javob berish keng tarqalgan xato. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizli-tenglama-yechish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#628d3117"
+    },
+    {
+      "q": "Tenglama ⁵√(x − 3) = 2 shaklida yozilgan. Uni qanoatlantiruvchi x qiymatini toping.",
+      "v": [
+        "13",
+        "35",
+        "10",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni beshinchi darajaga ko'taramiz: x − 3 = 2⁵ = 32. Bundan x = 32 + 3 = 35. 13 — 2 ni 5 ga ko'paytirib 10 olish va uchni qo'shish xatosi. Javob: 35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-tenglama-yechish",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#464a0141"
+    },
+    {
+      "q": "∛30 soni qaysi ikkita ketma-ket butun son orasida joylashgan?",
+      "v": [
+        "2 va 3",
+        "4 va 5",
+        "3 va 4",
+        "5 va 6"
+      ],
+      "t": 2,
+      "izoh": "Yaqin kublarni eslaymiz: 3³ = 27 va 4³ = 64. 27 < 30 < 64 bo'lgani uchun ∛30 soni 3 bilan 4 orasida yotadi. Javob: 3 va 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizni-butun-sonlar-orasida-baholash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#effabd69"
+    },
+    {
+      "q": "Muhandis ⁴√700 ni taxminan baholamoqchi. Bu son qaysi ikkita ketma-ket butun son orasida yotishini aniqlang.",
+      "v": [
+        "4 va 5",
+        "6 va 7",
+        "8 va 9",
+        "5 va 6"
+      ],
+      "t": 3,
+      "izoh": "To'rtinchi darajalarni solishtiramiz: 5⁴ = 625 va 6⁴ = 1296. 625 < 700 < 1296 bo'lgani uchun ⁴√700 soni 5 bilan 6 orasida joylashadi. Javob: 5 va 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizni-butun-sonlar-orasida-baholash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#251d993d"
+    },
+    {
+      "q": "∛500 sonining butun qismi nechaga teng ekanligini aniqlang.",
+      "v": [
+        "7",
+        "8",
+        "6",
+        "70"
+      ],
+      "t": 0,
+      "izoh": "Kublarni solishtiramiz: 7³ = 343 va 8³ = 512. 343 < 500 < 512 bo'lgani uchun ∛500 soni 7 dan katta, 8 dan kichik. Demak butun qismi 7 ga teng. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizni-butun-sonlar-orasida-baholash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#1e16912a"
+    },
+    {
+      "q": "Kubsimon idishning hajmi 100 litrga teng. Uning qirrasi uzunligi eng yaqin butun santimetrga qanday baholanadi?",
+      "v": [
+        "10 sm",
+        "46 sm",
+        "32 sm",
+        "100 sm"
+      ],
+      "t": 1,
+      "izoh": "Avval birlikni aylantiramiz: 100 litr = 100 000 sm³. Qirra a = ∛100000. 46³ = 97 336 va 47³ = 103 823 bo'lgani uchun natija 46 ga eng yaqin. Litrni sm³ ga aylantirmaslik tipik xato. Javob: 46 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizni-butun-sonlar-orasida-baholash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#ab63af87"
+    },
+    {
+      "q": "Quyidagi tengliklardan qaysi biri barcha musbat a va b lar uchun noto'g'ri?",
+      "v": [
+        "∛(a·b) = ∛a · ∛b",
+        "∛(a/b) = ∛a : ∛b",
+        "∛(a + b) = ∛a + ∛b",
+        "(∛a)³ = a"
+      ],
+      "t": 2,
+      "izoh": "Ildiz ko'paytma va bo'linma ustidan tarqaladi, lekin yig'indi ustidan tarqalmaydi. Masalan a = b = 1 bo'lganda chap tomon ∛2, ya'ni taxminan 1,26, o'ng tomon esa 2 chiqadi. Javob: ∛(a + b) = ∛a + ∛b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-xossasi-tahlili",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#4efbe9bc"
+    },
+    {
+      "q": "n toq son bo'lganda ⁿ√(aⁿ) ifodasi ixtiyoriy haqiqiy a uchun nimaga teng bo'ladi?",
+      "v": [
+        "|a|",
+        "aⁿ",
+        "faqat a ≥ 0 da aniqlangan",
+        "a"
+      ],
+      "t": 3,
+      "izoh": "Toq ko'rsatkichli ildiz manfiy sondan ham chiqadi va ishorani saqlaydi, shuning uchun modul qo'yish kerak emas. Demak ⁿ√(aⁿ) = a bo'ladi. Modul faqat n juft bo'lgan holda yoziladi. Javob: a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-xossasi-tahlili",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#b169e53d"
+    },
+    {
+      "q": "√(a²·b) ifodani a < 0 va b > 0 shartida ildizdan tashqariga to'g'ri chiqarilgan ko'rinishini tanlang.",
+      "v": [
+        "−a√b",
+        "a√b",
+        "a²√b",
+        "−√b"
+      ],
+      "t": 0,
+      "izoh": "Kvadrat ildiz ostidan a² chiqarilganda modul hosil bo'ladi: √(a²·b) = |a|·√b. a < 0 bo'lgani uchun |a| = −a. Demak natija −a√b va bu musbat son. Javob: −a√b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-xossasi-tahlili",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#cc9c0d16"
+    },
+    {
+      "q": "⁴√(16·x⁸·y⁴) ifodani x va y ixtiyoriy haqiqiy sonlar bo'lganda soddalashtiring.",
+      "v": [
+        "2x²y",
+        "2x²|y|",
+        "2|x|y²",
+        "4x²|y|"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytuvchilarni alohida ajratamiz: ⁴√16 = 2, ⁴√(x⁸) = x², ⁴√(y⁴) = |y|. x² har doim manfiy emas, y esa manfiy bo'lishi mumkin, shuning uchun faqat y modul ostida qoladi. Javob: 2x²|y|.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-xossasi-tahlili",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#ac98bbcd"
+    },
+    {
+      "q": "Birinchi bo'lakning yuzasi ∛4096 m² ga, ikkinchisiniki ⁴√4096 m² ga teng. Qaysi bo'lak kattaroq ekanligini hisoblab aniqlang.",
+      "v": [
+        "Ikkinchisi",
+        "Ular teng",
+        "Birinchisi",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "∛4096 = 16, chunki 16³ = 4096. ⁴√4096 = 8, chunki 8⁴ = 4096. Ildiz ostidagi son bir xil bo'lsa, ko'rsatkich kattalashgan sari qiymat kichrayadi. Javob: birinchisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ildizlarni-taqqoslash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#e80f76ee"
+    },
+    {
+      "q": "Sardor ⁵√243 kg va ∛216 kg og'irlikdagi ikki qopni ko'tardi. Ularning og'irliklari farqi necha kilogramm?",
+      "v": [
+        "2 kg",
+        "9 kg",
+        "27 kg",
+        "3 kg"
+      ],
+      "t": 3,
+      "izoh": "⁵√243 = 3, chunki 3⁵ = 243. ∛216 = 6, chunki 6³ = 216. Og'irliklar farqi 6 − 3 = 3 kg bo'ladi. Ildiz ostidagi sonlarni ayirishga urinish qo'pol xato. Javob: 3 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ildizlarni-taqqoslash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#8cb2ee54"
+    },
+    {
+      "q": "Bir xil narxdagi mahsulot uchta do'konda ∛1728, ⁴√20736 va ⁶√2985984 marta qadoqlangan. Qaysi do'konda qadoqlar soni eng ko'p?",
+      "v": [
+        "Uchalasida bir xil",
+        "Birinchisida",
+        "Ikkinchisida",
+        "Uchinchisida"
+      ],
+      "t": 0,
+      "izoh": "Har uchala ildiz ham 12 ga teng: 12³ = 1728, 12⁴ = 20736 va 12⁶ = 2985984. Ildiz ko'rsatkichi bilan birga ildiz ostidagi son ham o'sgani uchun natijalar tenglashadi. Javob: uchalasida bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ildizlarni-taqqoslash",
+      "id": "matematika_dari_m03-n-darajali-ildiz-va-uning#4d5c411e"
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "nom": "Clothes (Kiyimlar)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "What is this? 👕",
+      "v": [
+        "hat",
+        "shirt",
+        "shoes",
+        "socks"
+      ],
+      "t": 1,
+      "izoh": "👕 = shirt (ko'ylak).",
+      "qiy": "oson",
+      "id": "ing_kids_m14#ff7047a5"
+    },
+    {
+      "q": "What is this? 👖",
+      "v": [
+        "trousers",
+        "dress",
+        "hat",
+        "coat"
+      ],
+      "t": 0,
+      "izoh": "👖 = trousers (shim).",
+      "qiy": "oson",
+      "id": "ing_kids_m14#56063d4f"
+    },
+    {
+      "q": "What is this? 👗",
+      "v": [
+        "socks",
+        "shoes",
+        "dress",
+        "shirt"
+      ],
+      "t": 2,
+      "izoh": "👗 = dress (ko'ylak, qizlar uchun).",
+      "qiy": "oson",
+      "id": "ing_kids_m14#65b44123"
+    },
+    {
+      "q": "What is this? 🧢",
+      "v": [
+        "cap",
+        "coat",
+        "dress",
+        "socks"
+      ],
+      "t": 0,
+      "izoh": "🧢 = cap (kepka).",
+      "qiy": "oson",
+      "id": "ing_kids_m14#06d5e936"
+    },
+    {
+      "q": "What is this? 👟",
+      "v": [
+        "hat",
+        "shoes",
+        "shirt",
+        "trousers"
+      ],
+      "t": 1,
+      "izoh": "👟 = shoes (poyabzal).",
+      "qiy": "oson",
+      "id": "ing_kids_m14#4e291426"
+    },
+    {
+      "q": "What is this? 🧦",
+      "v": [
+        "coat",
+        "cap",
+        "socks",
+        "dress"
+      ],
+      "t": 2,
+      "izoh": "🧦 = socks (paypoq).",
+      "qiy": "oson",
+      "id": "ing_kids_m14#e8f7bf38"
+    },
+    {
+      "q": "What is this? 🧥",
+      "v": [
+        "coat",
+        "socks",
+        "shoes",
+        "shirt"
+      ],
+      "t": 0,
+      "izoh": "🧥 = coat (palto).",
+      "qiy": "oson",
+      "id": "ing_kids_m14#ed1ea9fe"
+    },
+    {
+      "q": "What is this? 🧤",
+      "v": [
+        "hat",
+        "gloves",
+        "shoes",
+        "dress"
+      ],
+      "t": 1,
+      "izoh": "🧤 = gloves (qo'lqop).",
+      "qiy": "oson",
+      "id": "ing_kids_m14#b2037c2b"
+    },
+    {
+      "q": "What is this? 🧣",
+      "v": [
+        "cap",
+        "socks",
+        "scarf",
+        "coat"
+      ],
+      "t": 2,
+      "izoh": "🧣 = scarf (sharf).",
+      "qiy": "oson",
+      "id": "ing_kids_m14#94d08d07"
+    },
+    {
+      "q": "What is this? 👒",
+      "v": [
+        "hat",
+        "shoes",
+        "gloves",
+        "shirt"
+      ],
+      "t": 0,
+      "izoh": "👒 = hat (shlyapa).",
+      "qiy": "oson",
+      "id": "ing_kids_m14#90593c90"
+    },
+    {
+      "q": "What do you wear on your hands?",
+      "v": [
+        "Gloves",
+        "Boots",
+        "Hat",
+        "Belt"
+      ],
+      "t": 0,
+      "izoh": "Qo'lga kiyiladi — qo'lqop.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#ed13cf53"
+    },
+    {
+      "q": "What do you wear on your head?",
+      "v": [
+        "Socks",
+        "Shoes",
+        "Hat",
+        "Scarf"
+      ],
+      "t": 2,
+      "izoh": "Boshga kiyiladi — shlyapa.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#756aa1b6"
+    },
+    {
+      "q": "What do you wear on your feet?",
+      "v": [
+        "Cap",
+        "Shoes",
+        "Gloves",
+        "Belt"
+      ],
+      "t": 1,
+      "izoh": "Oyoqqa kiyiladi — tufli.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#4a652932"
+    },
+    {
+      "q": "🧤",
+      "v": [
+        "Gloves",
+        "Socks",
+        "Scarf",
+        "Cap"
+      ],
+      "t": 0,
+      "izoh": "🧤 — qo'lqop.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#8acf5995"
+    },
+    {
+      "q": "You wear these on your hands when it is cold.",
+      "v": [
+        "Shorts",
+        "Gloves",
+        "Socks",
+        "T-shirt"
+      ],
+      "t": 1,
+      "izoh": "Sovuqda qo'lga — qo'lqop.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#300ec15a"
+    },
+    {
+      "q": "You wear this around your neck when it is cold.",
+      "v": [
+        "Scarf",
+        "Shoes",
+        "Cap",
+        "Skirt"
+      ],
+      "t": 0,
+      "izoh": "Bo'yinga — sharf.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#8974dac7"
+    },
+    {
+      "q": "What holds your trousers up?",
+      "v": [
+        "Belt",
+        "Hat",
+        "Scarf",
+        "Socks"
+      ],
+      "t": 0,
+      "izoh": "Shimni ushlab turadi — kamar.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#f627f555"
+    },
+    {
+      "q": "What do you wear to sleep at night?",
+      "v": [
+        "Coat",
+        "Pyjamas",
+        "Boots",
+        "Cap"
+      ],
+      "t": 1,
+      "izoh": "Uxlashda — pijama.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#4310a211"
+    },
+    {
+      "q": "What do you wear when it is cold outside?",
+      "v": [
+        "Coat",
+        "Shorts",
+        "T-shirt",
+        "Socks"
+      ],
+      "t": 0,
+      "izoh": "Sovuqda tashqariga — palto.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#7755876e"
+    },
+    {
+      "q": "What do you wear on a hot day?",
+      "v": [
+        "Coat",
+        "Gloves",
+        "Shorts",
+        "Scarf"
+      ],
+      "t": 2,
+      "izoh": "Issiq kunda — shortik.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#21638e8f"
+    },
+    {
+      "q": "A warm top made of wool is a ...",
+      "v": [
+        "Jumper",
+        "Socks",
+        "Cap",
+        "Belt"
+      ],
+      "t": 0,
+      "izoh": "Issiq kofta — jumper.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#f6dac186"
+    },
+    {
+      "q": "Which one do you wear on your legs?",
+      "v": [
+        "Hat",
+        "Trousers",
+        "Gloves",
+        "Scarf"
+      ],
+      "t": 1,
+      "izoh": "Oyoqqa (uzun) — shim.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#0accf64f"
+    },
+    {
+      "q": "Which one goes on your feet, under your shoes?",
+      "v": [
+        "Socks",
+        "Cap",
+        "Coat",
+        "Belt"
+      ],
+      "t": 0,
+      "izoh": "Tufli tagidan — paypoq.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#53e50e08"
+    },
+    {
+      "q": "What do you wear over your shirt to keep warm?",
+      "v": [
+        "Jacket",
+        "Shorts",
+        "Cap",
+        "Socks"
+      ],
+      "t": 0,
+      "izoh": "Ustki yengil kiyim — kurtka.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#04b2164e"
+    },
+    {
+      "q": "Which one keeps your head warm?",
+      "v": [
+        "Belt",
+        "Hat",
+        "Socks",
+        "Dress"
+      ],
+      "t": 1,
+      "izoh": "Boshni isitadi — shlyapa.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#6bd0bca9"
+    },
+    {
+      "q": "What do you wear on your feet in the snow?",
+      "v": [
+        "Sandals",
+        "Boots",
+        "Cap",
+        "Belt"
+      ],
+      "t": 1,
+      "izoh": "Qorda oyoqqa — etik.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#6ce8eec0"
+    },
+    {
+      "q": "A piece of clothing girls wear on the lower body is a ...",
+      "v": [
+        "Skirt",
+        "Cap",
+        "Gloves",
+        "Scarf"
+      ],
+      "t": 0,
+      "izoh": "Yubka — skirt.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#abb7ce48"
+    },
+    {
+      "q": "Which one do you put on your feet first, then shoes?",
+      "v": [
+        "Hat",
+        "Scarf",
+        "Socks",
+        "Belt"
+      ],
+      "t": 2,
+      "izoh": "Avval — paypoq, keyin tufli.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#abd086cc"
+    },
+    {
+      "q": "What has short sleeves and you wear it in summer?",
+      "v": [
+        "Coat",
+        "T-shirt",
+        "Boots",
+        "Gloves"
+      ],
+      "t": 1,
+      "izoh": "Yozda kiyiladi — futbolka.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#34c412be"
+    },
+    {
+      "q": "👟",
+      "v": [
+        "Hat",
+        "Shoes",
+        "Coat",
+        "Belt"
+      ],
+      "t": 1,
+      "izoh": "👟 — tufli/krossovka.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#b56fb0af"
+    },
+    {
+      "q": "🧦",
+      "v": [
+        "Socks",
+        "Gloves",
+        "Skirt",
+        "Cap"
+      ],
+      "t": 0,
+      "izoh": "🧦 — paypoq.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#9aa74de6"
+    },
+    {
+      "q": "👕",
+      "v": [
+        "Trousers",
+        "Shoes",
+        "T-shirt",
+        "Hat"
+      ],
+      "t": 2,
+      "izoh": "👕 — futbolka.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#31217b17"
+    },
+    {
+      "q": "👖",
+      "v": [
+        "Trousers",
+        "Dress",
+        "Scarf",
+        "Socks"
+      ],
+      "t": 0,
+      "izoh": "👖 — shim.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#6f20710e"
+    },
+    {
+      "q": "👗",
+      "v": [
+        "Coat",
+        "Dress",
+        "Cap",
+        "Boots"
+      ],
+      "t": 1,
+      "izoh": "👗 — ko'ylak (qizlar).",
+      "qiy": "oson",
+      "id": "ing_kids_m14#86c231b9"
+    },
+    {
+      "q": "🧢",
+      "v": [
+        "Cap",
+        "Gloves",
+        "Skirt",
+        "Belt"
+      ],
+      "t": 0,
+      "izoh": "🧢 — keptka.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#6087c28f"
+    },
+    {
+      "q": "🧥",
+      "v": [
+        "Socks",
+        "Shorts",
+        "Coat",
+        "Hat"
+      ],
+      "t": 2,
+      "izoh": "🧥 — palto.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#f589762c"
+    },
+    {
+      "q": "🧣",
+      "v": [
+        "Scarf",
+        "Shoes",
+        "Dress",
+        "Cap"
+      ],
+      "t": 0,
+      "izoh": "🧣 — sharf.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#1f806064"
+    },
+    {
+      "q": "👒",
+      "v": [
+        "Boots",
+        "Hat",
+        "Gloves",
+        "Belt"
+      ],
+      "t": 1,
+      "izoh": "👒 — shlyapa.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#46797c21"
+    },
+    {
+      "q": "🥾",
+      "v": [
+        "Boots",
+        "Socks",
+        "Scarf",
+        "Cap"
+      ],
+      "t": 0,
+      "izoh": "🥾 — etik.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#8d2ec780"
+    },
+    {
+      "q": "🩳",
+      "v": [
+        "Shorts",
+        "Coat",
+        "Hat",
+        "Gloves"
+      ],
+      "t": 0,
+      "izoh": "🩳 — shortik.",
+      "qiy": "oson",
+      "id": "ing_kids_m14#5800ae27"
+    }
+  ]
+}

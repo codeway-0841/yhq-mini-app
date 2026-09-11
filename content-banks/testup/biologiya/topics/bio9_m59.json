@@ -1,0 +1,636 @@
+{
+  "nom": "Biologiya-9, 59-§. Oʻzgaruvchanlik, 158-bet",
+  "bolim": "VII BOB. Genetika asoslari",
+  "savollar": [
+    {
+      "q": "Oʻzgaruvchanlik deb nimaga aytiladi?",
+      "v": [
+        "Organizmlarning belgi va xususiyatlari bilan oʻzaro farq qilishi yoki bir turga mansub organizmlarning bir-biridan farq qilish xossasiga",
+        "Organizmlarning belgilarini nasldan-naslga oʻzgarmay uzatilishiga",
+        "Organizmlarning tashqi muhitga toʻliq moslashuv xususiyatiga",
+        "Genlarning butunlay oʻzgarmasdan saqlanib qolishiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻzgaruvchanlik — organizmlarning belgi va xususiyatlari bilan oʻzaro farq qilishi yoki bir turga mansub organizmlarning bir-biridan farq qilish xossasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m59#19751e08"
+    },
+    {
+      "q": "Oʻzgaruvchanlik tufayli nima ortadi?",
+      "v": [
+        "Turlar xilma-xilligi",
+        "Organizmlar soni",
+        "Xromosomalar soni",
+        "Genlar barqarorligi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻzgaruvchanlik tufayli turlar xilma-xilligi ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m59#e9b1e430"
+    },
+    {
+      "q": "Oʻzgaruvchanlik nima uchun manba hisoblanadi?",
+      "v": [
+        "Tabiiy va suʼniy tanlash uchun",
+        "Faqat suʼniy tanlash uchun",
+        "Faqat tabiiy tanlash uchun",
+        "Genlarning barqarorligi uchun"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻzgaruvchanlik tabiiy va suʼniy tanlash uchun manba hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#3878cf5f"
+    },
+    {
+      "q": "Oʻzgaruvchanlik qanday ikki asosiy xilga boʻlinadi?",
+      "v": [
+        "Irsiylanmaydigan va irsiylanadigan",
+        "Kombinativ va mutatsion",
+        "Fenotipik va ontogenetik",
+        "Tabiiy va suʼniy"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻzgaruvchanlik irsiylanmaydigan va irsiylanadigan xillarga boʻlinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#a379a269"
+    },
+    {
+      "q": "Kombinativ oʻzgaruvchanlik qanday amalga oshadi?",
+      "v": [
+        "Ota-ona organizmlarning erkin chatishuvi natijasida keyingi avlodlarda genlarning yangi kombinatsiyalari vujudga kelishi orqali",
+        "Genlar va xromosomalarning oʻzgarishi orqali",
+        "Tashqi muhit omillari taʼsirida fenotip oʻzgarishi bilan",
+        "Meyozda krossingover tufayli"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra kombinativ oʻzgaruvchanlik ota-ona organizmlarning erkin chatishuvi natijasida keyingi avlodlarda genlarning yangi kombinatsiyalari vujudga kelishi orqali amalga oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#85d95839"
+    },
+    {
+      "q": "Rekombinogenez oʻzgaruvchanlik nima tufayli amalga oshadi?",
+      "v": [
+        "Meyoz jarayonida gomologik xromosomalar oʻrtasida sodir boʻladigan krossingover tufayli",
+        "Genlar va xromosomalarning oʻzgarishi tufayli",
+        "Erkin chatishuv natijasidagi gen kombinatsiyalari tufayli",
+        "Tashqi muhit omillari taʼsiri tufayli"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra rekombinogenez oʻzgaruvchanlik meyoz jarayonida gomologik xromosomalar oʻrtasida sodir boʻladigan krossingover tufayli amalga oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m59#7f52371b"
+    },
+    {
+      "q": "Mutatsion oʻzgaruvchanlik qanday amalga oshadi?",
+      "v": [
+        "Genlar va xromosomalarning oʻzgarishi orqali",
+        "Meyozda krossingover tufayli",
+        "Ota-onaning erkin chatishuvi orqali",
+        "Individual rivojlanish natijasida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsion oʻzgaruvchanlik genlar va xromosomalarning oʻzgarishi orqali amalga oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#a0a6b492"
+    },
+    {
+      "q": "Ontogenetik oʻzgaruvchanlik nima natijasida amalga oshadi?",
+      "v": [
+        "Organizmlarning individual rivojlanishi natijasida belgilarining oʻzgarishi bilan",
+        "Genlar va xromosomalarning oʻzgarishi natijasida",
+        "Meyozdagi krossingover natijasida",
+        "Erkin chatishuvda gen kombinatsiyalari natijasida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ontogenetik oʻzgaruvchanlik organizmlarning individual rivojlanishi natijasida belgilarining oʻzgarishi bilan amalga oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#3e887247"
+    },
+    {
+      "q": "Modifikatsion oʻzgaruvchanlikning mohiyati nimadan iborat?",
+      "v": [
+        "Tashqi muhit omillari taʼsirida genotip oʻzgarmagan holda fenotipning oʻzgarishi",
+        "Genlar va xromosomalarning oʻzgarishi",
+        "Genotipning butunlay oʻzgarishi",
+        "Meyozdagi krossingover natijasidagi oʻzgarish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra modifikatsion oʻzgaruvchanlik tashqi muhit omillari taʼsiri natijasida organizmlar genotipi oʻzgarmagan holda fenotipini oʻzgarishi bilan bogʻliqdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#b0bde704"
+    },
+    {
+      "q": "Modifikatsion oʻzgaruvchanlikning yana bir nomi qanday?",
+      "v": [
+        "Fenotipik oʻzgaruvchanlik",
+        "Mutatsion oʻzgaruvchanlik",
+        "Kombinativ oʻzgaruvchanlik",
+        "Rekombinogenez oʻzgaruvchanlik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra modifikatsion oʻzgaruvchanlik fenotipik oʻzgaruvchanlik deb ham ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m59#37ad5413"
+    },
+    {
+      "q": "Modifikatsion oʻzgaruvchanlikka taʼsir etuvchi tashqi muhit omillariga qaysilar kiradi?",
+      "v": [
+        "Harorat, namlik, ozuqa miqdori va sifati",
+        "Faqat genlar va xromosomalar",
+        "Faqat meyoz va krossingover",
+        "Faqat ota-ona genotipi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra organizmga tashqi muhit omillari — harorat, namlik, ozuqa miqdori va sifati oʻz taʼsirini koʻrsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#f0929e93"
+    },
+    {
+      "q": "Tashqi muhit omillari organizmning qaysi xususiyatlarini oʻzgartirishi mumkin?",
+      "v": [
+        "Fiziologik, morfologik xususiyatlari hamda fenotipini",
+        "Faqat genotipini",
+        "Faqat xromosomalar sonini",
+        "Faqat gen tuzilishini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bu omillar organizmning fiziologik, morfologik xususiyatlarini hamda fenotipini oʻzgartirishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#5fc03f7f"
+    },
+    {
+      "q": "Himolay quyonining yelkasidagi oq junlar yulib tashlanib, oʻsha joyga sovuq taʼsir etilsa qanday jun oʻsib chiqadi?",
+      "v": [
+        "Qora jun",
+        "Oq jun",
+        "Kulrang jun",
+        "Jun umuman oʻsmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Himolay quyonining yelkasidagi oq junlarni yulib tashlab, oʻsha joyga sovuq taʼsir etilsa, qora jun oʻsib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#467d3c02"
+    },
+    {
+      "q": "Himolay quyonining qora oʻsgan junlari olib tashlanib, oʻsha joyga issiq belbogʻ bogʻlansa qanday jun oʻsib chiqadi?",
+      "v": [
+        "Oq jun",
+        "Qora jun",
+        "Chipor jun",
+        "Jun oʻsmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra qora junlarni olib tashlab issiq belbogʻ bogʻlansa, yana oq jun oʻsib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#b7a65d46"
+    },
+    {
+      "q": "Himolay quyonlari 30 °C haroratda boqilsa, ularning juni qanday rangda boʻladi?",
+      "v": [
+        "Hamma juni oq rangda",
+        "Hamma juni qora rangda",
+        "Junning bir qismi qora rangda",
+        "Junning bir qismi kulrang"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Himolay quyonlarini 30 °C da boqilsa, uning hamma juni oq rangda boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#f227b0cd"
+    },
+    {
+      "q": "Himolay quyoni junining harorat taʼsirida rang oʻzgarishi qanday oʻzgaruvchanlikka misol boʻladi?",
+      "v": [
+        "Fenotipik (modifikatsion) oʻzgaruvchanlikka",
+        "Mutatsion oʻzgaruvchanlikka",
+        "Kombinativ oʻzgaruvchanlikka",
+        "Rekombinogenez oʻzgaruvchanlikka"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Himolay quyoni junining harorat taʼsirida oʻzgarishi fenotipik (modifikatsion) oʻzgaruvchanlikka misoldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#45c0baf2"
+    },
+    {
+      "q": "Ozuqa yetishmasa yoki ota-onaga spirtli ozuqa berilsa, tugʻilgan quyonchalar qanday boʻladi?",
+      "v": [
+        "Chala boʻlib, rivojlanishi sust boʻladi",
+        "Kuchli va sogʻlom boʻladi",
+        "Juni butunlay qora boʻladi",
+        "Tez rivojlanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ozuqa yetishmasa yoki ota-onaga spirtli ozuqa berilsa, tugʻilgan quyonchalar chala boʻlib, rivojlanishi sust boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#4f5f859e"
+    },
+    {
+      "q": "Tashqi muhit taʼsirida vujudga kelgan belgilarning oʻzgarishi nasl uchun qanday xususiyatga ega?",
+      "v": [
+        "Nasldan-naslga oʻtmaydi",
+        "Nasldan-naslga oʻtadi",
+        "Faqat urgʻochilarga oʻtadi",
+        "Faqat erkaklarga oʻtadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tashqi muhit taʼsirida belgilarning oʻzgarishi nasldan-naslga oʻtmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#e1da65c4"
+    },
+    {
+      "q": "Nilufar gulining suv ostidagi bargi qanday shaklga ega?",
+      "v": [
+        "Ingichka lansetsimon",
+        "Voronkasimon",
+        "Patsimon qirqilgan",
+        "Yaxlit"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra nilufarning suv ostidagi bargi ingichka lansetsimon boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#078514b2"
+    },
+    {
+      "q": "Nilufar gulining suv ustidagi barglari qanday shaklda boʻladi?",
+      "v": [
+        "Voronkasimon",
+        "Ingichka lansetsimon",
+        "Patsimon qirqilgan",
+        "Yaxlit uchburchak"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra nilufarning suv ustidagi barglari voronkasimon boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#28d9e47f"
+    },
+    {
+      "q": "Suv yongʻogʻining suv osti barglari qanday koʻrinishda boʻladi?",
+      "v": [
+        "Patsimon qirqilgan",
+        "Yaxlit",
+        "Voronkasimon",
+        "Ingichka lansetsimon"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra suv yongʻogʻida suv osti barglari patsimon qirqilgan boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#a382aea6"
+    },
+    {
+      "q": "Suv yongʻogʻining suv usti barglari qanday boʻladi?",
+      "v": [
+        "Yaxlit",
+        "Patsimon qirqilgan",
+        "Lansetsimon",
+        "Voronkasimon"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra suv yongʻogʻining suv usti barglari yaxlit boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#c84ac2b9"
+    },
+    {
+      "q": "Odamlarda (albinos boʻlmasa) ultrabinafsha nurlar taʼsirida terining qoramtir tusga oʻtishiga nima sabab boʻladi?",
+      "v": [
+        "Melanin pigmentining toʻplanishi",
+        "Gemoglobin miqdorining ortishi",
+        "Xlorofill pigmentining toʻplanishi",
+        "Terining junsizlanishi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra barcha odamlarda ultrabinafsha nurlar taʼsirida melanin pigmenti toʻplanishi tufayli terisi qoramtir tusga oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#a51e1721"
+    },
+    {
+      "q": "Terisi ultrabinafsha nurlarga qanday odamlarda qoramtir tusga oʻtmaydi?",
+      "v": [
+        "Albinos odamlarda",
+        "Yosh bolalarda",
+        "Keksa odamlarda",
+        "Sport bilan shugʻullanuvchilarda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ultrabinafsha nurlar taʼsirida teri faqat albinos boʻlmagan odamlarda qoramtir tusga oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#ad68896a"
+    },
+    {
+      "q": "Tashqi muhitning maʼlum taʼsirida yuzaga keladigan oʻzgarishlar tur vakillarida qanday namoyon boʻladi?",
+      "v": [
+        "Shu tur vakillarining barchasi uchun bir xilda",
+        "Har bir vakilda mutlaqo har xil",
+        "Faqat urgʻochilarda",
+        "Faqat bir necha vakilda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tashqi muhit taʼsirida organizmning har bir turi oʻziga xos oʻzgarishlarga duch keladi va bu oʻzgarishlar shu tur vakillarining barchasi uchun bir xilda boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#ff38f9fe"
+    },
+    {
+      "q": "Tashqi muhit sharoitlari taʼsirida belgilarning oʻzgarishlari qanday chegaraga ega?",
+      "v": [
+        "Chegarali, yaʼni chegarasiz emas",
+        "Butunlay chegarasiz",
+        "Faqat genotipga bogʻliq boʻlmagan chegarali",
+        "Umuman oʻzgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tashqi muhit sharoitlari taʼsirida belgilarning oʻzgarishlari chegarasiz emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#902de83d"
+    },
+    {
+      "q": "Reaksiya normasi deb nimaga aytiladi?",
+      "v": [
+        "Belgilarning tashqi muhit omillari taʼsirida genotipga bogʻliq holda oʻzgarish darajasi yoki oʻzgaruvchanlik chegaralariga",
+        "Genlarning nasldan-naslga oʻzgarmay uzatilishiga",
+        "Xromosomalar sonining oʻzgarishiga",
+        "Ota-ona chatishuvi natijasidagi gen kombinatsiyalariga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra belgilarning tashqi muhit omillari taʼsirida muayyan doirada, organizm genotipiga bogʻliq holda oʻzgarish darajasi yoki oʻzgaruvchanlik chegaralariga reaksiya normasi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m59#bfa11759"
+    },
+    {
+      "q": "Reaksiya normasining kengligi nima bilan aniqlanadi?",
+      "v": [
+        "Genotip bilan",
+        "Tashqi muhit harorati bilan",
+        "Organizmning yoshi bilan",
+        "Ozuqa rangi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra reaksiya normasining kengligi genotip bilan aniqlanadi va organizm hayot faoliyatidagi belgilarining ahamiyatiga bogʻliq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#4e5672a5"
+    },
+    {
+      "q": "Reaksiya normasining torligi qanday belgilarga xosdir?",
+      "v": [
+        "Bosh miya yoki yurak kattaligi kabi muhim belgilarga",
+        "Organizmdagi yogʻ miqdoriga",
+        "Barglarning kattaligiga",
+        "Teri rangiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra reaksiya normasining torligi bosh miya yoki yurak kattaligi kabi muhim belgilarga xosdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m59#8ee576cc"
+    },
+    {
+      "q": "Organizmda qaysi belgi juda keng doirada oʻzgaruvchan boʻladi?",
+      "v": [
+        "Yogʻ miqdori",
+        "Bosh miya kattaligi",
+        "Yurak kattaligi",
+        "Xromosomalar soni"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra organizmdagi yogʻ miqdori juda keng doirada oʻzgaruvchan boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#3403d4cc"
+    },
+    {
+      "q": "Sut tarkibidagi yogʻ miqdori nimaga bogʻliq boʻladi?",
+      "v": [
+        "Qoramol zotiga, genotipga",
+        "Faqat tashqi haroratga",
+        "Faqat ozuqa rangiga",
+        "Faqat sut miqdoriga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sut tarkibidagi yogʻ miqdori qoramol zotiga, genotipga bogʻliq boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#f71a4bed"
+    },
+    {
+      "q": "Hasharotlar yordamida changlanadigan oʻsimliklarda qaysi aʼzo kamdan-kam hollarda oʻzgaradi?",
+      "v": [
+        "Guli",
+        "Barglari",
+        "Ildizi",
+        "Poyasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra hasharotlar yordamida changlanadigan oʻsimliklar guli kamdan-kam hollarda oʻzgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#103a57e5"
+    },
+    {
+      "q": "Hasharotlar yordamida changlanadigan oʻsimliklarda qaysi belgi juda oʻzgaruvchan boʻladi?",
+      "v": [
+        "Barglarining kattaligi",
+        "Gulining shakli",
+        "Gulining rangi",
+        "Ildizining uzunligi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra hasharotlar yordamida changlanadigan oʻsimliklarning guli kamdan-kam oʻzgaradi, lekin barglarining kattaligi juda oʻzgaruvchan boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#de9c2126"
+    },
+    {
+      "q": "Inson uchun foydali oʻsimlik, hayvon va mikroorganizmlar olishda modifikatsion oʻzgaruvchanlikning nimasini bilish katta ahamiyatga ega?",
+      "v": [
+        "Reaksiya normasini",
+        "Xromosomalar sonini",
+        "Mutatsiya tezligini",
+        "Krossingover chastotasini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra inson uchun foydali oʻsimlik, hayvon va mikroorganizmlarni olishda modifikatsion oʻzgaruvchanlikning reaksiya normasini bilish seleksiya amaliyotida katta ahamiyatga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m59#08ff21fe"
+    },
+    {
+      "q": "Modifikatsion oʻzgaruvchanlikning reaksiya normasini bilish qaysi amaliyotda katta ahamiyatga ega?",
+      "v": [
+        "Seleksiya amaliyotida",
+        "Faqat astronomiyada",
+        "Faqat matematikada",
+        "Faqat geologiyada"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra modifikatsion oʻzgaruvchanlikning reaksiya normasini bilish seleksiya amaliyotida katta ahamiyatga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#1b50fc7a"
+    },
+    {
+      "q": "Modifikatsion oʻzgaruvchanlikning reaksiya normasini bilish qishloq xoʻjaligida nima imkonini beradi?",
+      "v": [
+        "Yangi sermahsul zot va navlar yaratish hamda mavjud zot va navlardan yuqori darajada foydalanish imkonini",
+        "Xromosomalar sonini koʻpaytirish imkonini",
+        "Genlarni butunlay oʻzgartirish imkonini",
+        "Mutatsiyalarni butunlay toʻxtatish imkonini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra reaksiya normasini bilish qishloq xoʻjaligida yangi sermahsul zot va navlarni yaratishdan tashqari, mavjud zot va navlardan yuqori darajada foydalanish imkonini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m59#8885fd21"
+    },
+    {
+      "q": "Modifikatsion oʻzgaruvchanlik qonuniyatlarini oʻrganish qaysi sohada muhim ahamiyat kasb etadi?",
+      "v": [
+        "Tibbiyotda inson organizmini reaksiya normasi doirasida saqlab turishda",
+        "Faqat qurilishda",
+        "Faqat mexanikada",
+        "Faqat kimyo sanoatida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra modifikatsion oʻzgaruvchanlik qonuniyatlarini oʻrganish tibbiyotda inson organizmini reaksiya normasi doirasida saqlab turish va rivojlantirishda muhim ahamiyat kasb etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#80a3a30b"
+    },
+    {
+      "q": "Fenotipik (modifikatsion) oʻzgaruvchanlik irsiylanish jihatidan qanday xususiyatga ega?",
+      "v": [
+        "Irsiylanish xususiyatiga ega emas",
+        "Har doim irsiylanadi",
+        "Faqat urgʻochilarda irsiylanadi",
+        "Faqat erkaklarda irsiylanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fenotipik (modifikatsion) oʻzgaruvchanlik irsiylanish xususiyatiga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#bf5b6d7f"
+    },
+    {
+      "q": "Fenotipik oʻzgaruvchanlikda oʻzgarishlar qanday xarakterga ega?",
+      "v": [
+        "Guruhli xarakterga",
+        "Yakka-tartibdagi xarakterga",
+        "Tasodifiy va noyob xarakterga",
+        "Irsiy xarakterga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fenotipik oʻzgaruvchanlikda oʻzgarishlar guruhli xarakterga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#777f8bab"
+    },
+    {
+      "q": "Fenotipik oʻzgaruvchanlikda oʻzgarishlar asosan nimaga bogʻliq?",
+      "v": [
+        "Tashqi muhit taʼsiriga",
+        "Faqat genlar oʻzgarishiga",
+        "Faqat krossingoverga",
+        "Faqat xromosoma sonining oʻzgarishiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fenotipik oʻzgaruvchanlikda oʻzgarishlar tashqi muhit taʼsiriga bogʻliqdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#35cd03d1"
+    },
+    {
+      "q": "Fenotipik oʻzgaruvchanlikda oʻzgaruvchanlik chegaralari nima bilan aniqlanadi?",
+      "v": [
+        "Genotip bilan",
+        "Tashqi harorat bilan",
+        "Ozuqa miqdori bilan",
+        "Namlik bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fenotipik oʻzgaruvchanlikda oʻzgaruvchanlik chegaralari genotip bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m59#9dd783a3"
+    },
+    {
+      "q": "Fenotipik oʻzgaruvchanlikda oʻzgarishlar bir xil yoʻnalishda boʻlishiga qaramay, ularning namoyon boʻlish darajasi qanday boʻladi?",
+      "v": [
+        "Har xil organizmlarda turlicha boʻladi",
+        "Barcha organizmlarda mutlaqo bir xil boʻladi",
+        "Faqat urgʻochilarda kuchli boʻladi",
+        "Umuman namoyon boʻlmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻzgarishlar bir xil yoʻnalishda boʻlishiga qaramay, ularning namoyon boʻlish darajasi har xil organizmlarda turlicha boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m59#b56a109b"
+    }
+  ]
+}

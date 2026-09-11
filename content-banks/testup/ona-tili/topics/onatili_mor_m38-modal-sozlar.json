@@ -1,0 +1,1506 @@
+{
+  "nom": "Modal so'zlar",
+  "bolim": "Alohida olingan so'z turkumlari",
+  "savollar": [
+    {
+      "q": "Quyidagi javoblardan qaysisida modal so'z bor?",
+      "v": [
+        "orqali",
+        "kerak",
+        "bilan",
+        "kabi"
+      ],
+      "t": 1,
+      "izoh": "«kerak» so'zlovchining zaruriyat munosabatini bildiradi. Boshqalari mos emas: «orqali», «bilan» va «kabi» — mustaqil so'zga ma'no qo'shib, uni boshqa so'zga bog'laydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#8347cbc8"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida modal so'z bor?",
+      "v": [
+        "lekin",
+        "aytishlaricha",
+        "yoxud",
+        "marhamat"
+      ],
+      "t": 1,
+      "izoh": "«aytishlaricha» fikr qayerdan olinganini ko'rsatadi. Boshqalari mos emas: «lekin» va «yoxud» — so'z yoki gaplarni bog'laydi, so'roqqa javob bermaydi; «marhamat» — taklif-chaqiriq uchun ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#c91dd307"
+    },
+    {
+      "q": "Berilgan javoblardan qaysisi modal so'z sanaladi?",
+      "v": [
+        "aytishlaricha",
+        "bo'yicha",
+        "yoki",
+        "agar"
+      ],
+      "t": 0,
+      "izoh": "«aytishlaricha» fikr qayerdan olinganini ko'rsatadi. Boshqalari mos emas: «yoki» va «agar» — so'z yoki gaplarni bog'laydi, so'roqqa javob bermaydi; «bo'yicha» — mustaqil so'zga ma'no qo'shib, uni boshqa so'zga bog'laydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#b5bad107"
+    },
+    {
+      "q": "Berilganlardan qaysisi zaruriyat ma'nosidagi modal so'z hisoblanadi?",
+      "v": [
+        "afsuski",
+        "zarur",
+        "so'zsiz",
+        "aytishlaricha"
+      ],
+      "t": 1,
+      "izoh": "«zarur» — zaruriyat ma'nosidagi modal so'z: u so'zlovchining zaruriyat munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «afsuski» — afsus ma'nosidagi modal so'z; «so'zsiz» — ishonch ma'nosidagi modal so'z; «aytishlaricha» — fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#95f06d47"
+    },
+    {
+      "q": "Qaysi so'z zaruriyat ma'nosidagi modal so'z deb baholanadi?",
+      "v": [
+        "darhaqiqat",
+        "taassufki",
+        "darkor",
+        "nazarimda"
+      ],
+      "t": 2,
+      "izoh": "«darkor» — zaruriyat ma'nosidagi modal so'z: u so'zlovchining zaruriyat munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «darhaqiqat» — ishonch ma'nosidagi modal so'z; «taassufki» — afsus ma'nosidagi modal so'z; «nazarimda» — fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#a7e0496d"
+    },
+    {
+      "q": "Quyidagilardan qaysisi zaruriyat ma'nosidagi modal so'zga misol bo'la oladi?",
+      "v": [
+        "darkor",
+        "aftidan",
+        "taassufki",
+        "haqiqatan"
+      ],
+      "t": 0,
+      "izoh": "«darkor» — zaruriyat ma'nosidagi modal so'z: u so'zlovchining zaruriyat munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «aftidan» — gumon ma'nosidagi modal so'z; «taassufki» — afsus ma'nosidagi modal so'z; «haqiqatan» — ishonch ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#1e277281"
+    },
+    {
+      "q": "Quyidagilardan qaysisi ishonch ma'nosidagi modal so'zga misol bo'la oladi?",
+      "v": [
+        "chamasi",
+        "menimcha",
+        "lozim",
+        "shaksiz"
+      ],
+      "t": 3,
+      "izoh": "«shaksiz» — ishonch ma'nosidagi modal so'z: u so'zlovchining ishonch munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «chamasi» — gumon ma'nosidagi modal so'z; «menimcha» — fikr manbaini ko'rsatuvchi modal so'z; «lozim» — zaruriyat ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#aa1127c6"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida ishonch ma'nosidagi modal so'z berilgan?",
+      "v": [
+        "haqiqatan",
+        "zarur",
+        "kerak",
+        "chamasi"
+      ],
+      "t": 0,
+      "izoh": "«haqiqatan» — ishonch ma'nosidagi modal so'z: u so'zlovchining ishonch munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «chamasi» — gumon ma'nosidagi modal so'z; «zarur» va «kerak» — zaruriyat ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#0682fe4e"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida ishonch ma'nosidagi modal so'z berilgan?",
+      "v": [
+        "chog'i",
+        "afsuski",
+        "lozim",
+        "so'zsiz"
+      ],
+      "t": 3,
+      "izoh": "«so'zsiz» — ishonch ma'nosidagi modal so'z: u so'zlovchining ishonch munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «afsuski» — afsus ma'nosidagi modal so'z; «lozim» — zaruriyat ma'nosidagi modal so'z; «chog'i» — gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#2d0231ac"
+    },
+    {
+      "q": "Qaysi so'z gumon ma'nosidagi modal so'z deb baholanadi?",
+      "v": [
+        "taassufki",
+        "fikrimcha",
+        "shekilli",
+        "darhaqiqat"
+      ],
+      "t": 2,
+      "izoh": "«shekilli» — gumon ma'nosidagi modal so'z: u so'zlovchining gumon munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «taassufki» — afsus ma'nosidagi modal so'z; «fikrimcha» — fikr manbaini ko'rsatuvchi modal so'z; «darhaqiqat» — ishonch ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#d223e494"
+    },
+    {
+      "q": "Qaysi javobdagi so'z gumon ma'nosidagi modal so'z sanaladi?",
+      "v": [
+        "menimcha",
+        "afsuski",
+        "so'zsiz",
+        "chamasi"
+      ],
+      "t": 3,
+      "izoh": "«chamasi» — gumon ma'nosidagi modal so'z: u so'zlovchining gumon munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «menimcha» — fikr manbaini ko'rsatuvchi modal so'z; «afsuski» — afsus ma'nosidagi modal so'z; «so'zsiz» — ishonch ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#0fd3ef4e"
+    },
+    {
+      "q": "Berilganlardan qaysisi gumon ma'nosidagi modal so'z hisoblanadi?",
+      "v": [
+        "zarur",
+        "chog'i",
+        "taassufki",
+        "darhaqiqat"
+      ],
+      "t": 1,
+      "izoh": "«chog'i» — gumon ma'nosidagi modal so'z: u so'zlovchining gumon munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «zarur» — zaruriyat ma'nosidagi modal so'z; «taassufki» — afsus ma'nosidagi modal so'z; «darhaqiqat» — ishonch ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#c8d5d54c"
+    },
+    {
+      "q": "Qaysi javobdagi so'z afsus ma'nosidagi modal so'z sanaladi?",
+      "v": [
+        "shaksiz",
+        "afsuski",
+        "haqiqatan",
+        "zarur"
+      ],
+      "t": 1,
+      "izoh": "«afsuski» — afsus ma'nosidagi modal so'z: u so'zlovchining afsus munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «shaksiz» va «haqiqatan» — ishonch ma'nosidagi modal so'z; «zarur» — zaruriyat ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#9803a3d2"
+    },
+    {
+      "q": "Qaysi so'z afsus ma'nosidagi modal so'z deb baholanadi?",
+      "v": [
+        "shaksiz",
+        "fikrimcha",
+        "shubhasiz",
+        "taassufki"
+      ],
+      "t": 3,
+      "izoh": "«taassufki» — afsus ma'nosidagi modal so'z: u so'zlovchining afsus munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «fikrimcha» — fikr manbaini ko'rsatuvchi modal so'z; «shubhasiz» va «shaksiz» — ishonch ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#85e58559"
+    },
+    {
+      "q": "Quyidagilardan qaysisi afsus ma'nosidagi modal so'zga misol bo'la oladi?",
+      "v": [
+        "shekilli",
+        "fikrimcha",
+        "menimcha",
+        "afsuski"
+      ],
+      "t": 3,
+      "izoh": "«afsuski» — afsus ma'nosidagi modal so'z: u so'zlovchining afsus munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «fikrimcha» va «menimcha» — fikr manbaini ko'rsatuvchi modal so'z; «shekilli» — gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#60f4f277"
+    },
+    {
+      "q": "Qaysi javobdagi so'z fikr manbaini ko'rsatuvchi modal so'z sanaladi?",
+      "v": [
+        "chog'i",
+        "haqiqatan",
+        "fikrimcha",
+        "shaksiz"
+      ],
+      "t": 2,
+      "izoh": "«fikrimcha» — fikr manbaini ko'rsatuvchi modal so'z: u fikr kimga tegishli ekanini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «haqiqatan» va «shaksiz» — ishonch ma'nosidagi modal so'z; «chog'i» — gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#4367d12d"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida fikr manbaini ko'rsatuvchi modal so'z berilgan?",
+      "v": [
+        "chamasi",
+        "menimcha",
+        "afsuski",
+        "darkor"
+      ],
+      "t": 1,
+      "izoh": "«menimcha» — fikr manbaini ko'rsatuvchi modal so'z: u fikr kimga tegishli ekanini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «chamasi» — gumon ma'nosidagi modal so'z; «darkor» — zaruriyat ma'nosidagi modal so'z; «afsuski» — afsus ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#fd73f76e"
+    },
+    {
+      "q": "Quyidagilardan qaysisi fikr manbaini ko'rsatuvchi modal so'zga misol bo'la oladi?",
+      "v": [
+        "menimcha",
+        "darhaqiqat",
+        "taassufki",
+        "shaksiz"
+      ],
+      "t": 0,
+      "izoh": "«menimcha» — fikr manbaini ko'rsatuvchi modal so'z: u fikr kimga tegishli ekanini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «darhaqiqat» va «shaksiz» — ishonch ma'nosidagi modal so'z; «taassufki» — afsus ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#0437fffe"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "darkor",
+        "kerak",
+        "lozim",
+        "darhaqiqat"
+      ],
+      "t": 3,
+      "izoh": "«darhaqiqat» — ishonch ma'nosidagi modal so'z: u so'zlovchining ishonch munosabatini bildiradi. Qolgan uchtasi esa zaruriyat ma'nosidagi modal so'z: «darkor», «lozim» va «kerak» — so'zlovchining zaruriyat munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#c11579d3"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "fikrimcha",
+        "nazarimda",
+        "chog'i",
+        "aytishlaricha"
+      ],
+      "t": 2,
+      "izoh": "«chog'i» — gumon ma'nosidagi modal so'z: u so'zlovchining gumon munosabatini bildiradi. Qolgan uchtasi esa fikr manbaini ko'rsatuvchi modal so'z: «fikrimcha» va «nazarimda» — fikr kimga tegishli ekanini ko'rsatadi; «aytishlaricha» — fikr qayerdan olinganini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#462da6aa"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "nazarimda",
+        "chamasi",
+        "chog'i",
+        "shekilli"
+      ],
+      "t": 0,
+      "izoh": "«nazarimda» — fikr manbaini ko'rsatuvchi modal so'z: u fikr kimga tegishli ekanini ko'rsatadi. Qolgan uchtasi esa gumon ma'nosidagi modal so'z: «chog'i», «chamasi» va «shekilli» — so'zlovchining gumon munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#bf647d36"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "so'zsiz",
+        "darhaqiqat",
+        "chamasi",
+        "haqiqatan"
+      ],
+      "t": 2,
+      "izoh": "«chamasi» — gumon ma'nosidagi modal so'z: u so'zlovchining gumon munosabatini bildiradi. Qolgan uchtasi esa ishonch ma'nosidagi modal so'z: «so'zsiz», «darhaqiqat» va «haqiqatan» — so'zlovchining ishonch munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#66b10d39"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "shekilli",
+        "ehtimol",
+        "aftidan",
+        "so'zsiz"
+      ],
+      "t": 3,
+      "izoh": "«so'zsiz» — ishonch ma'nosidagi modal so'z: u so'zlovchining ishonch munosabatini bildiradi. Qolgan uchtasi esa gumon ma'nosidagi modal so'z: «shekilli», «ehtimol» va «aftidan» — so'zlovchining gumon munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#1e9f0230"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "fikrimcha",
+        "darkor",
+        "lozim",
+        "zarur"
+      ],
+      "t": 0,
+      "izoh": "«fikrimcha» — fikr manbaini ko'rsatuvchi modal so'z: u fikr kimga tegishli ekanini ko'rsatadi. Qolgan uchtasi esa zaruriyat ma'nosidagi modal so'z: «darkor», «lozim» va «zarur» — so'zlovchining zaruriyat munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#3efaa21a"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "aftidan",
+        "ehtimol",
+        "chamasi",
+        "so'zsiz"
+      ],
+      "t": 3,
+      "izoh": "«so'zsiz» — ishonch ma'nosidagi modal so'z: u so'zlovchining ishonch munosabatini bildiradi. Qolgan uchtasi esa gumon ma'nosidagi modal so'z: «aftidan», «ehtimol» va «chamasi» — so'zlovchining gumon munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#0f8149cb"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "nazarimda",
+        "shubhasiz",
+        "fikrimcha",
+        "menimcha"
+      ],
+      "t": 1,
+      "izoh": "«shubhasiz» — ishonch ma'nosidagi modal so'z: u so'zlovchining ishonch munosabatini bildiradi. Qolgan uchtasi esa fikr manbaini ko'rsatuvchi modal so'z: «nazarimda», «menimcha» va «fikrimcha» — fikr kimga tegishli ekanini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#a99cc622"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "darhaqiqat",
+        "fikrimcha",
+        "haqiqatan",
+        "shubhasiz"
+      ],
+      "t": 1,
+      "izoh": "«fikrimcha» — fikr manbaini ko'rsatuvchi modal so'z: u fikr kimga tegishli ekanini ko'rsatadi. Qolgan uchtasi esa ishonch ma'nosidagi modal so'z: «darhaqiqat», «haqiqatan» va «shubhasiz» — so'zlovchining ishonch munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#eda23279"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "kerak",
+        "shubhasiz",
+        "so'zsiz",
+        "darhaqiqat"
+      ],
+      "t": 0,
+      "izoh": "«kerak» — zaruriyat ma'nosidagi modal so'z: u so'zlovchining zaruriyat munosabatini bildiradi. Qolgan uchtasi esa ishonch ma'nosidagi modal so'z: «shubhasiz», «so'zsiz» va «darhaqiqat» — so'zlovchining ishonch munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#e2bff91c"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "darhaqiqat",
+        "shaksiz",
+        "so'zsiz",
+        "aftidan"
+      ],
+      "t": 3,
+      "izoh": "«aftidan» — gumon ma'nosidagi modal so'z: u so'zlovchining gumon munosabatini bildiradi. Qolgan uchtasi esa ishonch ma'nosidagi modal so'z: «darhaqiqat», «shaksiz» va «so'zsiz» — so'zlovchining ishonch munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#5eefe32f"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "aytishlaricha",
+        "kerak",
+        "darkor",
+        "zarur"
+      ],
+      "t": 0,
+      "izoh": "«aytishlaricha» — fikr manbaini ko'rsatuvchi modal so'z: u fikr qayerdan olinganini ko'rsatadi. Qolgan uchtasi esa zaruriyat ma'nosidagi modal so'z: «kerak», «darkor» va «zarur» — so'zlovchining zaruriyat munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#e5d3daf4"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "chamasi",
+        "fikrimcha",
+        "shekilli",
+        "chog'i"
+      ],
+      "t": 1,
+      "izoh": "«fikrimcha» — fikr manbaini ko'rsatuvchi modal so'z: u fikr kimga tegishli ekanini ko'rsatadi. Qolgan uchtasi esa gumon ma'nosidagi modal so'z: «chamasi», «shekilli» va «chog'i» — so'zlovchining gumon munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#b2c15579"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "kerak",
+        "darkor",
+        "nazarimda",
+        "zarur"
+      ],
+      "t": 2,
+      "izoh": "«nazarimda» — fikr manbaini ko'rsatuvchi modal so'z: u fikr kimga tegishli ekanini ko'rsatadi. Qolgan uchtasi esa zaruriyat ma'nosidagi modal so'z: «kerak», «darkor» va «zarur» — so'zlovchining zaruriyat munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#28f33062"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "nazarimda",
+        "shekilli",
+        "ehtimol",
+        "aftidan"
+      ],
+      "t": 0,
+      "izoh": "«nazarimda» — fikr manbaini ko'rsatuvchi modal so'z: u fikr kimga tegishli ekanini ko'rsatadi. Qolgan uchtasi esa gumon ma'nosidagi modal so'z: «aftidan», «shekilli» va «ehtimol» — so'zlovchining gumon munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#9b0eac76"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "menimcha",
+        "aytishlaricha",
+        "chog'i",
+        "nazarimda"
+      ],
+      "t": 2,
+      "izoh": "«chog'i» — gumon ma'nosidagi modal so'z: u so'zlovchining gumon munosabatini bildiradi. Qolgan uchtasi esa fikr manbaini ko'rsatuvchi modal so'z: «menimcha» va «nazarimda» — fikr kimga tegishli ekanini ko'rsatadi; «aytishlaricha» — fikr qayerdan olinganini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#2d0c27c2"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "lozim",
+        "shekilli",
+        "kerak",
+        "darkor"
+      ],
+      "t": 1,
+      "izoh": "«shekilli» — gumon ma'nosidagi modal so'z: u so'zlovchining gumon munosabatini bildiradi. Qolgan uchtasi esa zaruriyat ma'nosidagi modal so'z: «lozim», «darkor» va «kerak» — so'zlovchining zaruriyat munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m38-modal-sozlar#3aeb5c07"
+    },
+    {
+      "q": "«taassufki» qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "fikr manbaini ko'rsatadi",
+        "zaruriyat ma'nosini bildiradi",
+        "afsus ma'nosini bildiradi",
+        "gumon ma'nosini bildiradi"
+      ],
+      "t": 2,
+      "izoh": "«taassufki» so'zlovchining afsus munosabatini bildiradi; shu bois u afsus ma'nosini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#3d7f5e1c"
+    },
+    {
+      "q": "«chog'i» so'zi qanday munosabat bildiradi?",
+      "v": [
+        "zaruriyat ma'nosini bildiradi",
+        "gumon ma'nosini bildiradi",
+        "ishonch ma'nosini bildiradi",
+        "afsus ma'nosini bildiradi"
+      ],
+      "t": 1,
+      "izoh": "«chog'i» so'zlovchining gumon munosabatini bildiradi; shu bois u gumon ma'nosini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#4074ffe5"
+    },
+    {
+      "q": "«chamasi» so'zining ma'nosini aniqlang.",
+      "v": [
+        "fikr manbaini ko'rsatadi",
+        "ishonch ma'nosini bildiradi",
+        "gumon ma'nosini bildiradi",
+        "afsus ma'nosini bildiradi"
+      ],
+      "t": 2,
+      "izoh": "«chamasi» so'zlovchining gumon munosabatini bildiradi; shu bois u gumon ma'nosini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#c0c5a519"
+    },
+    {
+      "q": "«shaksiz» so'zi qanday munosabat bildiradi?",
+      "v": [
+        "ishonch ma'nosini bildiradi",
+        "afsus ma'nosini bildiradi",
+        "gumon ma'nosini bildiradi",
+        "fikr manbaini ko'rsatadi"
+      ],
+      "t": 0,
+      "izoh": "«shaksiz» so'zlovchining ishonch munosabatini bildiradi; shu bois u ishonch ma'nosini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#0c587333"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida gumon ma'nosidagi modal so'z berilgan?",
+      "v": [
+        "shekilli",
+        "haqiqatan",
+        "so'zsiz",
+        "shaksiz"
+      ],
+      "t": 0,
+      "izoh": "«shekilli» — gumon ma'nosidagi modal so'z: u so'zlovchining gumon munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «so'zsiz», «haqiqatan» va «shaksiz» — ishonch ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#40452157"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida afsus ma'nosidagi modal so'z berilgan?",
+      "v": [
+        "shaksiz",
+        "haqiqatan",
+        "shubhasiz",
+        "taassufki"
+      ],
+      "t": 3,
+      "izoh": "«taassufki» — afsus ma'nosidagi modal so'z: u so'zlovchining afsus munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «shaksiz», «haqiqatan» va «shubhasiz» — ishonch ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#a850f92e"
+    },
+    {
+      "q": "Qaysi so'z ishonch ma'nosidagi modal so'z deb baholanadi?",
+      "v": [
+        "aytishlaricha",
+        "nazarimda",
+        "haqiqatan",
+        "menimcha"
+      ],
+      "t": 2,
+      "izoh": "«haqiqatan» — ishonch ma'nosidagi modal so'z: u so'zlovchining ishonch munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «aytishlaricha», «nazarimda» va «menimcha» — fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#4c0642be"
+    },
+    {
+      "q": "Qaysi javobdagi so'z fikr manbaini ko'rsatuvchi modal so'z sanaladi?",
+      "v": [
+        "menimcha",
+        "darkor",
+        "zarur",
+        "lozim"
+      ],
+      "t": 0,
+      "izoh": "«menimcha» — fikr manbaini ko'rsatuvchi modal so'z: u fikr kimga tegishli ekanini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «zarur», «darkor» va «lozim» — zaruriyat ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#09307422"
+    },
+    {
+      "q": "Berilganlardan qaysisi zaruriyat ma'nosidagi modal so'z hisoblanadi?",
+      "v": [
+        "so'zsiz",
+        "shaksiz",
+        "kerak",
+        "darhaqiqat"
+      ],
+      "t": 2,
+      "izoh": "«kerak» — zaruriyat ma'nosidagi modal so'z: u so'zlovchining zaruriyat munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «so'zsiz», «shaksiz» va «darhaqiqat» — ishonch ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#919f2eff"
+    },
+    {
+      "q": "Berilganlardan qaysisi ishonch ma'nosidagi modal so'z hisoblanadi?",
+      "v": [
+        "menimcha",
+        "nazarimda",
+        "fikrimcha",
+        "so'zsiz"
+      ],
+      "t": 3,
+      "izoh": "«so'zsiz» — ishonch ma'nosidagi modal so'z: u so'zlovchining ishonch munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «menimcha», «fikrimcha» va «nazarimda» — fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#3e1d028d"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida ishonch ma'nosidagi modal so'z berilgan?",
+      "v": [
+        "lozim",
+        "kerak",
+        "darkor",
+        "shaksiz"
+      ],
+      "t": 3,
+      "izoh": "«shaksiz» — ishonch ma'nosidagi modal so'z: u so'zlovchining ishonch munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «kerak», «darkor» va «lozim» — zaruriyat ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#ed00a20f"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida fikr manbaini ko'rsatuvchi modal so'z berilgan?",
+      "v": [
+        "kerak",
+        "lozim",
+        "fikrimcha",
+        "darkor"
+      ],
+      "t": 2,
+      "izoh": "«fikrimcha» — fikr manbaini ko'rsatuvchi modal so'z: u fikr kimga tegishli ekanini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «kerak», «lozim» va «darkor» — zaruriyat ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#ad212886"
+    },
+    {
+      "q": "Quyidagilardan qaysisi afsus ma'nosidagi modal so'zga misol bo'la oladi?",
+      "v": [
+        "taassufki",
+        "chamasi",
+        "ehtimol",
+        "shekilli"
+      ],
+      "t": 0,
+      "izoh": "«taassufki» — afsus ma'nosidagi modal so'z: u so'zlovchining afsus munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «shekilli», «chamasi» va «ehtimol» — gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#1f8e793c"
+    },
+    {
+      "q": "Qaysi so'z fikr manbaini ko'rsatuvchi modal so'z deb baholanadi?",
+      "v": [
+        "kerak",
+        "zarur",
+        "darkor",
+        "nazarimda"
+      ],
+      "t": 3,
+      "izoh": "«nazarimda» — fikr manbaini ko'rsatuvchi modal so'z: u fikr kimga tegishli ekanini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «zarur», «darkor» va «kerak» — zaruriyat ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#88ab9793"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida gumon ma'nosidagi modal so'z berilgan?",
+      "v": [
+        "aytishlaricha",
+        "nazarimda",
+        "menimcha",
+        "aftidan"
+      ],
+      "t": 3,
+      "izoh": "«aftidan» — gumon ma'nosidagi modal so'z: u so'zlovchining gumon munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «aytishlaricha», «nazarimda» va «menimcha» — fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#5f1b6d21"
+    },
+    {
+      "q": "Berilganlardan qaysisi ishonch ma'nosidagi modal so'z hisoblanadi?",
+      "v": [
+        "darhaqiqat",
+        "aftidan",
+        "ehtimol",
+        "shekilli"
+      ],
+      "t": 0,
+      "izoh": "«darhaqiqat» — ishonch ma'nosidagi modal so'z: u so'zlovchining ishonch munosabatini bildiradi. Qolgan javoblar boshqa guruhga oid: «aftidan», «ehtimol» va «shekilli» — gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#09132de5"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq ishonch ma'nosidagi modal so'zga oid?",
+      "v": [
+        "aytishlaricha, darhaqiqat, haqiqatan",
+        "chog'i, so'zsiz, darhaqiqat",
+        "so'zsiz, shaksiz, darhaqiqat",
+        "shaksiz, darkor, darhaqiqat"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri qatordagi uchala so'z ham ishonch ma'nosidagi modal so'z: «so'zsiz», «shaksiz» va «darhaqiqat» — so'zlovchining ishonch munosabatini bildiradi. Qolgan qatorlarga begona so'z aralashgan: «chog'i» — gumon ma'nosidagi modal so'z; «aytishlaricha» — fikr manbaini ko'rsatuvchi modal so'z; «darkor» — zaruriyat ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#340bea26"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar ishonch ma'nosidagi modal so'z sanaladi?",
+      "v": [
+        "shaksiz, chog'i, darhaqiqat",
+        "darhaqiqat, so'zsiz, nazarimda",
+        "fikrimcha, shaksiz, darhaqiqat",
+        "haqiqatan, darhaqiqat, so'zsiz"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham ishonch ma'nosidagi modal so'z: «haqiqatan», «darhaqiqat» va «so'zsiz» — so'zlovchining ishonch munosabatini bildiradi. Qolgan qatorlarga begona so'z aralashgan: «chog'i» — gumon ma'nosidagi modal so'z; «fikrimcha» va «nazarimda» — fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#4debc346"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham zaruriyat ma'nosidagi modal so'zga misol bo'ladi?",
+      "v": [
+        "lozim, kerak, zarur",
+        "zarur, lozim, shubhasiz",
+        "ehtimol, lozim, kerak",
+        "fikrimcha, kerak, lozim"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham zaruriyat ma'nosidagi modal so'z: «lozim», «kerak» va «zarur» — so'zlovchining zaruriyat munosabatini bildiradi. Qolgan qatorlarga begona so'z aralashgan: «shubhasiz» — ishonch ma'nosidagi modal so'z; «ehtimol» — gumon ma'nosidagi modal so'z; «fikrimcha» — fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#667cb175"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar zaruriyat ma'nosidagi modal so'z sanaladi?",
+      "v": [
+        "shubhasiz, zarur, lozim",
+        "zarur, kerak, lozim",
+        "chamasi, lozim, kerak",
+        "kerak, zarur, haqiqatan"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham zaruriyat ma'nosidagi modal so'z: «zarur», «kerak» va «lozim» — so'zlovchining zaruriyat munosabatini bildiradi. Qolgan qatorlarga begona so'z aralashgan: «shubhasiz» va «haqiqatan» — ishonch ma'nosidagi modal so'z; «chamasi» — gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#37ba4658"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham fikr manbaini ko'rsatuvchi modal so'zga misol bo'ladi?",
+      "v": [
+        "chamasi, fikrimcha, nazarimda",
+        "fikrimcha, aytishlaricha, menimcha",
+        "menimcha, haqiqatan, fikrimcha",
+        "shubhasiz, aytishlaricha, nazarimda"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham fikr manbaini ko'rsatuvchi modal so'z: «fikrimcha» va «menimcha» — fikr kimga tegishli ekanini ko'rsatadi; «aytishlaricha» — fikr qayerdan olinganini ko'rsatadi. Qolgan qatorlarga begona so'z aralashgan: «chamasi» — gumon ma'nosidagi modal so'z; «shubhasiz» va «haqiqatan» — ishonch ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#83602615"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar gumon ma'nosidagi modal so'z sanaladi?",
+      "v": [
+        "menimcha, shekilli, chamasi",
+        "haqiqatan, chamasi, shekilli",
+        "chog'i, zarur, ehtimol",
+        "chamasi, shekilli, aftidan"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham gumon ma'nosidagi modal so'z: «chamasi», «shekilli» va «aftidan» — so'zlovchining gumon munosabatini bildiradi. Qolgan qatorlarga begona so'z aralashgan: «menimcha» — fikr manbaini ko'rsatuvchi modal so'z; «haqiqatan» — ishonch ma'nosidagi modal so'z; «zarur» — zaruriyat ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#e63e14d1"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham gumon ma'nosidagi modal so'zga misol bo'ladi?",
+      "v": [
+        "ehtimol, aftidan, aytishlaricha",
+        "lozim, chamasi, aftidan",
+        "kerak, ehtimol, chog'i",
+        "chamasi, shekilli, chog'i"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham gumon ma'nosidagi modal so'z: «chamasi», «shekilli» va «chog'i» — so'zlovchining gumon munosabatini bildiradi. Qolgan qatorlarga begona so'z aralashgan: «aytishlaricha» — fikr manbaini ko'rsatuvchi modal so'z; «lozim» va «kerak» — zaruriyat ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#85be51dc"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar fikr manbaini ko'rsatuvchi modal so'z sanaladi?",
+      "v": [
+        "fikrimcha, nazarimda, aytishlaricha",
+        "aftidan, menimcha, nazarimda",
+        "nazarimda, lozim, fikrimcha",
+        "aytishlaricha, shaksiz, fikrimcha"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham fikr manbaini ko'rsatuvchi modal so'z: «fikrimcha» va «nazarimda» — fikr kimga tegishli ekanini ko'rsatadi; «aytishlaricha» — fikr qayerdan olinganini ko'rsatadi. Qolgan qatorlarga begona so'z aralashgan: «lozim» — zaruriyat ma'nosidagi modal so'z; «aftidan» — gumon ma'nosidagi modal so'z; «shaksiz» — ishonch ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#f2b652a1"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham zaruriyat ma'nosidagi modal so'zga misol bo'ladi?",
+      "v": [
+        "darhaqiqat, lozim, darkor",
+        "zarur, aytishlaricha, kerak",
+        "kerak, zarur, darkor",
+        "lozim, ehtimol, darkor"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri qatordagi uchala so'z ham zaruriyat ma'nosidagi modal so'z: «kerak», «zarur» va «darkor» — so'zlovchining zaruriyat munosabatini bildiradi. Qolgan qatorlarga begona so'z aralashgan: «darhaqiqat» — ishonch ma'nosidagi modal so'z; «aytishlaricha» — fikr manbaini ko'rsatuvchi modal so'z; «ehtimol» — gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#e77f88fa"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham ishonch ma'nosidagi modal so'zga misol bo'ladi?",
+      "v": [
+        "shaksiz, haqiqatan, darhaqiqat",
+        "so'zsiz, darhaqiqat, chamasi",
+        "chog'i, shubhasiz, darhaqiqat",
+        "darhaqiqat, aytishlaricha, shubhasiz"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham ishonch ma'nosidagi modal so'z: «shaksiz», «haqiqatan» va «darhaqiqat» — so'zlovchining ishonch munosabatini bildiradi. Qolgan qatorlarga begona so'z aralashgan: «aytishlaricha» — fikr manbaini ko'rsatuvchi modal so'z; «chamasi» va «chog'i» — gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#51a4df0a"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq zaruriyat ma'nosidagi modal so'zga oid?",
+      "v": [
+        "zarur, kerak, lozim",
+        "lozim, darkor, chog'i",
+        "fikrimcha, zarur, darkor",
+        "darkor, menimcha, zarur"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham zaruriyat ma'nosidagi modal so'z: «zarur», «kerak» va «lozim» — so'zlovchining zaruriyat munosabatini bildiradi. Qolgan qatorlarga begona so'z aralashgan: «fikrimcha» va «menimcha» — fikr manbaini ko'rsatuvchi modal so'z; «chog'i» — gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#8e908358"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham ishonch ma'nosidagi modal so'zga misol bo'ladi?",
+      "v": [
+        "lozim, darhaqiqat, so'zsiz",
+        "chamasi, darhaqiqat, shubhasiz",
+        "nazarimda, haqiqatan, so'zsiz",
+        "so'zsiz, shubhasiz, shaksiz"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham ishonch ma'nosidagi modal so'z: «so'zsiz», «shubhasiz» va «shaksiz» — so'zlovchining ishonch munosabatini bildiradi. Qolgan qatorlarga begona so'z aralashgan: «lozim» — zaruriyat ma'nosidagi modal so'z; «chamasi» — gumon ma'nosidagi modal so'z; «nazarimda» — fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#1dbd225d"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«chamasi» — zaruriyat ma'nosidagi modal so'z",
+        "«aftidan» — gumon ma'nosidagi modal so'z",
+        "«afsuski» — fikr manbaini ko'rsatuvchi modal so'z",
+        "«menimcha» — gumon ma'nosidagi modal so'z"
+      ],
+      "t": 1,
+      "izoh": "«aftidan» — gumon ma'nosidagi modal so'z, chunki u so'zlovchining gumon munosabatini bildiradi. Boshqa javoblarda baho chalkashtirilgan: «chamasi» aslida gumon ma'nosidagi modal so'z; «afsuski» aslida afsus ma'nosidagi modal so'z; «menimcha» aslida fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#e10b6119"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«aftidan» — afsus ma'nosidagi modal so'z",
+        "«lozim» — zaruriyat ma'nosidagi modal so'z",
+        "«menimcha» — ishonch ma'nosidagi modal so'z",
+        "«taassufki» — fikr manbaini ko'rsatuvchi modal so'z"
+      ],
+      "t": 1,
+      "izoh": "«lozim» — zaruriyat ma'nosidagi modal so'z, chunki u so'zlovchining zaruriyat munosabatini bildiradi. Boshqa javoblarda baho chalkashtirilgan: «aftidan» aslida gumon ma'nosidagi modal so'z; «menimcha» aslida fikr manbaini ko'rsatuvchi modal so'z; «taassufki» aslida afsus ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#6c305e63"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«lozim» — zaruriyat ma'nosidagi modal so'z",
+        "«taassufki» — zaruriyat ma'nosidagi modal so'z",
+        "«nazarimda» — ishonch ma'nosidagi modal so'z",
+        "«zarur» — afsus ma'nosidagi modal so'z"
+      ],
+      "t": 0,
+      "izoh": "«lozim» — zaruriyat ma'nosidagi modal so'z, chunki u so'zlovchining zaruriyat munosabatini bildiradi. Boshqa javoblarda baho chalkashtirilgan: «taassufki» aslida afsus ma'nosidagi modal so'z; «nazarimda» aslida fikr manbaini ko'rsatuvchi modal so'z; «zarur» aslida zaruriyat ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#8a668e88"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«darhaqiqat» — ishonch ma'nosidagi modal so'z",
+        "«aftidan» — zaruriyat ma'nosidagi modal so'z",
+        "«shekilli» — afsus ma'nosidagi modal so'z",
+        "«darkor» — ishonch ma'nosidagi modal so'z"
+      ],
+      "t": 0,
+      "izoh": "«darhaqiqat» — ishonch ma'nosidagi modal so'z, chunki u so'zlovchining ishonch munosabatini bildiradi. Boshqa javoblarda baho chalkashtirilgan: «aftidan» va «shekilli» aslida gumon ma'nosidagi modal so'z; «darkor» aslida zaruriyat ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#ab4d64ce"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«darkor» — gumon ma'nosidagi modal so'z",
+        "«shubhasiz» — ishonch ma'nosidagi modal so'z",
+        "«taassufki» — zaruriyat ma'nosidagi modal so'z",
+        "«aytishlaricha» — afsus ma'nosidagi modal so'z"
+      ],
+      "t": 1,
+      "izoh": "«shubhasiz» — ishonch ma'nosidagi modal so'z, chunki u so'zlovchining ishonch munosabatini bildiradi. Boshqa javoblarda baho chalkashtirilgan: «darkor» aslida zaruriyat ma'nosidagi modal so'z; «taassufki» aslida afsus ma'nosidagi modal so'z; «aytishlaricha» aslida fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#5be62f72"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«lozim» — afsus ma'nosidagi modal so'z",
+        "«aytishlaricha» — zaruriyat ma'nosidagi modal so'z",
+        "«zarur» — zaruriyat ma'nosidagi modal so'z",
+        "«chog'i» — afsus ma'nosidagi modal so'z"
+      ],
+      "t": 2,
+      "izoh": "«zarur» — zaruriyat ma'nosidagi modal so'z, chunki u so'zlovchining zaruriyat munosabatini bildiradi. Boshqa javoblarda baho chalkashtirilgan: «aytishlaricha» aslida fikr manbaini ko'rsatuvchi modal so'z; «lozim» aslida zaruriyat ma'nosidagi modal so'z; «chog'i» aslida gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#f904dfb0"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«aftidan» — fikr manbaini ko'rsatuvchi modal so'z",
+        "«shubhasiz» — zaruriyat ma'nosidagi modal so'z",
+        "«nazarimda» — ishonch ma'nosidagi modal so'z",
+        "«so'zsiz» — ishonch ma'nosidagi modal so'z"
+      ],
+      "t": 3,
+      "izoh": "«so'zsiz» — ishonch ma'nosidagi modal so'z, chunki u so'zlovchining ishonch munosabatini bildiradi. Boshqa javoblarda baho chalkashtirilgan: «shubhasiz» aslida ishonch ma'nosidagi modal so'z; «nazarimda» aslida fikr manbaini ko'rsatuvchi modal so'z; «aftidan» aslida gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#a31e317c"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«chog'i» — gumon ma'nosidagi modal so'z",
+        "«menimcha» — zaruriyat ma'nosidagi modal so'z",
+        "«darhaqiqat» — fikr manbaini ko'rsatuvchi modal so'z",
+        "«ehtimol» — fikr manbaini ko'rsatuvchi modal so'z"
+      ],
+      "t": 0,
+      "izoh": "«chog'i» — gumon ma'nosidagi modal so'z, chunki u so'zlovchining gumon munosabatini bildiradi. Boshqa javoblarda baho chalkashtirilgan: «darhaqiqat» aslida ishonch ma'nosidagi modal so'z; «menimcha» aslida fikr manbaini ko'rsatuvchi modal so'z; «ehtimol» aslida gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#de9f6b07"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«zarur» — afsus ma'nosidagi modal so'z",
+        "«taassufki» — ishonch ma'nosidagi modal so'z",
+        "«chamasi» — gumon ma'nosidagi modal so'z",
+        "«chog'i» — afsus ma'nosidagi modal so'z"
+      ],
+      "t": 2,
+      "izoh": "«chamasi» — gumon ma'nosidagi modal so'z, chunki u so'zlovchining gumon munosabatini bildiradi. Boshqa javoblarda baho chalkashtirilgan: «zarur» aslida zaruriyat ma'nosidagi modal so'z; «taassufki» aslida afsus ma'nosidagi modal so'z; «chog'i» aslida gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#101e6c00"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«darkor» — gumon ma'nosidagi modal so'z",
+        "«taassufki» — afsus ma'nosidagi modal so'z",
+        "«afsuski» — ishonch ma'nosidagi modal so'z",
+        "«shekilli» — zaruriyat ma'nosidagi modal so'z"
+      ],
+      "t": 1,
+      "izoh": "«taassufki» — afsus ma'nosidagi modal so'z, chunki u so'zlovchining afsus munosabatini bildiradi. Boshqa javoblarda baho chalkashtirilgan: «darkor» aslida zaruriyat ma'nosidagi modal so'z; «shekilli» aslida gumon ma'nosidagi modal so'z; «afsuski» aslida afsus ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#1f0792b2"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«lozim» — afsus ma'nosidagi modal so'z",
+        "«chog'i» — gumon ma'nosidagi modal so'z",
+        "«taassufki» — fikr manbaini ko'rsatuvchi modal so'z",
+        "«fikrimcha» — zaruriyat ma'nosidagi modal so'z"
+      ],
+      "t": 1,
+      "izoh": "«chog'i» — gumon ma'nosidagi modal so'z, chunki u so'zlovchining gumon munosabatini bildiradi. Boshqa javoblarda baho chalkashtirilgan: «lozim» aslida zaruriyat ma'nosidagi modal so'z; «taassufki» aslida afsus ma'nosidagi modal so'z; «fikrimcha» aslida fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#eff8ce51"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«fikrimcha» — ishonch ma'nosidagi modal so'z",
+        "«haqiqatan» — fikr manbaini ko'rsatuvchi modal so'z",
+        "«so'zsiz» — gumon ma'nosidagi modal so'z",
+        "«taassufki» — afsus ma'nosidagi modal so'z"
+      ],
+      "t": 3,
+      "izoh": "«taassufki» — afsus ma'nosidagi modal so'z, chunki u so'zlovchining afsus munosabatini bildiradi. Boshqa javoblarda baho chalkashtirilgan: «fikrimcha» aslida fikr manbaini ko'rsatuvchi modal so'z; «haqiqatan» va «so'zsiz» aslida ishonch ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m38-modal-sozlar#8824fa7b"
+    },
+    {
+      "q": "«taassufki» qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "yordamchi so'z",
+        "taqlid so'z",
+        "undov so'z",
+        "modal so'z"
+      ],
+      "t": 3,
+      "izoh": "«taassufki» — so'zlovchining afsus munosabatini bildiradi. Qolgan javoblar mos emas: yordamchi so'z — so'z va gaplarni bog'laydi; taqlid so'z — tovush yoki ko'rinishga taqlidni bildiradi; undov so'z — his-tuyg'u yoki xitobni ifodalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#569c7984"
+    },
+    {
+      "q": "«fikrimcha» qaysi guruhga mansub?",
+      "v": [
+        "taqlid so'z",
+        "yordamchi so'z",
+        "modal so'z",
+        "undov so'z"
+      ],
+      "t": 2,
+      "izoh": "«fikrimcha» — fikr kimga tegishli ekanini ko'rsatadi. Qolgan javoblar mos emas: taqlid so'z — tovush yoki ko'rinishga taqlidni bildiradi; yordamchi so'z — so'z va gaplarni bog'laydi; undov so'z — his-tuyg'u yoki xitobni ifodalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#8024e110"
+    },
+    {
+      "q": "«barakalla» qaysi guruhga mansub?",
+      "v": [
+        "undov so'z",
+        "yordamchi so'z",
+        "taqlid so'z",
+        "modal so'z"
+      ],
+      "t": 0,
+      "izoh": "«barakalla» — ma'qullash tuyg'usini ifodalaydi. Qolgan javoblar mos emas: modal so'z — so'zlovchining fikrga munosabatini bildiradi; yordamchi so'z — so'z va gaplarni bog'laydi; taqlid so'z — tovush yoki ko'rinishga taqlidni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#4bc00281"
+    },
+    {
+      "q": "«ammo» qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "undov so'z",
+        "taqlid so'z",
+        "yordamchi so'z",
+        "modal so'z"
+      ],
+      "t": 2,
+      "izoh": "«ammo» — ikki fikrni zidlab bog'laydi. Qolgan javoblar mos emas: undov so'z — his-tuyg'u yoki xitobni ifodalaydi; taqlid so'z — tovush yoki ko'rinishga taqlidni bildiradi; modal so'z — so'zlovchining fikrga munosabatini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#bf104d69"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri gumon ma'nosidagi modal so'z emas?",
+      "v": [
+        "aftidan, chamasi, chog'i",
+        "afsuski, ehtimol, chog'i",
+        "chog'i, aftidan, chamasi",
+        "shekilli, chamasi, chog'i"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «afsuski» — afsus ma'nosidagi modal so'z: u so'zlovchining afsus munosabatini bildiradi. Yonidagi «chog'i» va «ehtimol» esa gumon ma'nosidagi modal so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#d9f4bb48"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq gumon ma'nosidagi modal so'zdan iborat emas?",
+      "v": [
+        "lozim, chog'i, ehtimol",
+        "chamasi, ehtimol, aftidan",
+        "chog'i, chamasi, ehtimol",
+        "ehtimol, shekilli, aftidan"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javobdagi «lozim» — zaruriyat ma'nosidagi modal so'z: u so'zlovchining zaruriyat munosabatini bildiradi. Yonidagi «ehtimol» va «chog'i» esa gumon ma'nosidagi modal so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#90acabb1"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida ishonch ma'nosidagi modal so'z bo'lmagan so'z bor?",
+      "v": [
+        "so'zsiz, shubhasiz, haqiqatan",
+        "darhaqiqat, haqiqatan, so'zsiz",
+        "haqiqatan, darhaqiqat, afsuski",
+        "shubhasiz, shaksiz, darhaqiqat"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «afsuski» — afsus ma'nosidagi modal so'z: u so'zlovchining afsus munosabatini bildiradi. Yonidagi «darhaqiqat» va «haqiqatan» esa ishonch ma'nosidagi modal so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#3e95d5a3"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq ishonch ma'nosidagi modal so'zdan iborat emas?",
+      "v": [
+        "shaksiz, darhaqiqat, so'zsiz",
+        "shubhasiz, darhaqiqat, so'zsiz",
+        "menimcha, shaksiz, darhaqiqat",
+        "so'zsiz, haqiqatan, darhaqiqat"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «menimcha» — fikr manbaini ko'rsatuvchi modal so'z: u fikr kimga tegishli ekanini ko'rsatadi. Yonidagi «shaksiz» va «darhaqiqat» esa ishonch ma'nosidagi modal so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#d031662b"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq ishonch ma'nosidagi modal so'zdan iborat emas?",
+      "v": [
+        "so'zsiz, haqiqatan, shaksiz",
+        "darhaqiqat, shaksiz, haqiqatan",
+        "shubhasiz, haqiqatan, darkor",
+        "haqiqatan, darhaqiqat, so'zsiz"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «darkor» — zaruriyat ma'nosidagi modal so'z: u so'zlovchining zaruriyat munosabatini bildiradi. Yonidagi «haqiqatan» va «shubhasiz» esa ishonch ma'nosidagi modal so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#d3600f78"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida gumon ma'nosidagi modal so'z bo'lmagan so'z bor?",
+      "v": [
+        "chog'i, aftidan, ehtimol",
+        "aftidan, chamasi, ehtimol",
+        "ehtimol, chamasi, aytishlaricha",
+        "shekilli, chog'i, chamasi"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «aytishlaricha» — fikr manbaini ko'rsatuvchi modal so'z: u fikr qayerdan olinganini ko'rsatadi. Yonidagi «ehtimol» va «chamasi» esa gumon ma'nosidagi modal so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#23951908"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida ishonch ma'nosidagi modal so'z bo'lmagan so'z bor?",
+      "v": [
+        "shaksiz, darhaqiqat, haqiqatan",
+        "darhaqiqat, nazarimda, shubhasiz",
+        "haqiqatan, shaksiz, so'zsiz",
+        "so'zsiz, shubhasiz, darhaqiqat"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «nazarimda» — fikr manbaini ko'rsatuvchi modal so'z: u fikr kimga tegishli ekanini ko'rsatadi. Yonidagi «shubhasiz» va «darhaqiqat» esa ishonch ma'nosidagi modal so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#bb6ee937"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri ishonch ma'nosidagi modal so'z emas?",
+      "v": [
+        "haqiqatan, darhaqiqat, shaksiz",
+        "shaksiz, shubhasiz, darhaqiqat",
+        "so'zsiz, shaksiz, darhaqiqat",
+        "darhaqiqat, haqiqatan, lozim"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «lozim» — zaruriyat ma'nosidagi modal so'z: u so'zlovchining zaruriyat munosabatini bildiradi. Yonidagi «darhaqiqat» va «haqiqatan» esa ishonch ma'nosidagi modal so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#a3abc568"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida gumon ma'nosidagi modal so'z bo'lmagan so'z bor?",
+      "v": [
+        "chog'i, shaksiz, ehtimol",
+        "aftidan, ehtimol, chamasi",
+        "ehtimol, chog'i, chamasi",
+        "chamasi, aftidan, chog'i"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javobdagi «shaksiz» — ishonch ma'nosidagi modal so'z: u so'zlovchining ishonch munosabatini bildiradi. Yonidagi «ehtimol» va «chog'i» esa gumon ma'nosidagi modal so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#22443f3b"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq gumon ma'nosidagi modal so'zdan iborat emas?",
+      "v": [
+        "chamasi, chog'i, aftidan",
+        "chog'i, shekilli, ehtimol",
+        "shekilli, chamasi, chog'i",
+        "aftidan, ehtimol, afsuski"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «afsuski» — afsus ma'nosidagi modal so'z: u so'zlovchining afsus munosabatini bildiradi. Yonidagi «aftidan» va «ehtimol» esa gumon ma'nosidagi modal so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#820dceba"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq ishonch ma'nosidagi modal so'zdan iborat emas?",
+      "v": [
+        "shaksiz, darhaqiqat, shubhasiz",
+        "so'zsiz, darhaqiqat, shaksiz",
+        "afsuski, darhaqiqat, haqiqatan",
+        "shubhasiz, shaksiz, darhaqiqat"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «afsuski» — afsus ma'nosidagi modal so'z: u so'zlovchining afsus munosabatini bildiradi. Yonidagi «darhaqiqat» va «haqiqatan» esa ishonch ma'nosidagi modal so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#9885d2a9"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq ishonch ma'nosidagi modal so'zdan iborat emas?",
+      "v": [
+        "shaksiz, shubhasiz, darhaqiqat",
+        "lozim, haqiqatan, shaksiz",
+        "haqiqatan, shaksiz, darhaqiqat",
+        "darhaqiqat, shaksiz, so'zsiz"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «lozim» — zaruriyat ma'nosidagi modal so'z: u so'zlovchining zaruriyat munosabatini bildiradi. Yonidagi «haqiqatan» va «shaksiz» esa ishonch ma'nosidagi modal so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#2ea79530"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«taassufki» — afsus ma'nosidagi modal so'z",
+        "«kerak» — afsus ma'nosidagi modal so'z",
+        "«aytishlaricha» — fikr manbaini ko'rsatuvchi modal so'z",
+        "«haqiqatan» — ishonch ma'nosidagi modal so'z"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «kerak» so'ziga afsus ma'nosidagi modal so'z deb baho berilgan, holbuki u — zaruriyat ma'nosidagi modal so'z: so'zlovchining zaruriyat munosabatini bildiradi. Qolgan javoblardagi baho o'rinli: «taassufki» rostdan ham afsus ma'nosidagi modal so'z; «haqiqatan» rostdan ham ishonch ma'nosidagi modal so'z; «aytishlaricha» rostdan ham fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#d36019f9"
+    },
+    {
+      "q": "Qaysi javobdagi baho noto'g'ri berilgan?",
+      "v": [
+        "«fikrimcha» — fikr manbaini ko'rsatuvchi modal so'z",
+        "«taassufki» — afsus ma'nosidagi modal so'z",
+        "«ehtimol» — fikr manbaini ko'rsatuvchi modal so'z",
+        "«menimcha» — fikr manbaini ko'rsatuvchi modal so'z"
+      ],
+      "t": 2,
+      "izoh": "Bu javobda «ehtimol» so'ziga fikr manbaini ko'rsatuvchi modal so'z deb baho berilgan, holbuki u — gumon ma'nosidagi modal so'z: so'zlovchining gumon munosabatini bildiradi. Qolgan javoblardagi baho o'rinli: «fikrimcha» va «menimcha» rostdan ham fikr manbaini ko'rsatuvchi modal so'z; «taassufki» rostdan ham afsus ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#81257a7e"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«shaksiz» — afsus ma'nosidagi modal so'z",
+        "«afsuski» — afsus ma'nosidagi modal so'z",
+        "«chog'i» — gumon ma'nosidagi modal so'z",
+        "«haqiqatan» — ishonch ma'nosidagi modal so'z"
+      ],
+      "t": 0,
+      "izoh": "Bu javobda «shaksiz» so'ziga afsus ma'nosidagi modal so'z deb baho berilgan, holbuki u — ishonch ma'nosidagi modal so'z: so'zlovchining ishonch munosabatini bildiradi. Qolgan javoblardagi baho o'rinli: «haqiqatan» rostdan ham ishonch ma'nosidagi modal so'z; «afsuski» rostdan ham afsus ma'nosidagi modal so'z; «chog'i» rostdan ham gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#bfb8978d"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi xato?",
+      "v": [
+        "«aytishlaricha» — fikr manbaini ko'rsatuvchi modal so'z",
+        "«ehtimol» — afsus ma'nosidagi modal so'z",
+        "«shubhasiz» — ishonch ma'nosidagi modal so'z",
+        "«chog'i» — gumon ma'nosidagi modal so'z"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «ehtimol» so'ziga afsus ma'nosidagi modal so'z deb baho berilgan, holbuki u — gumon ma'nosidagi modal so'z: so'zlovchining gumon munosabatini bildiradi. Qolgan javoblardagi baho o'rinli: «aytishlaricha» rostdan ham fikr manbaini ko'rsatuvchi modal so'z; «shubhasiz» rostdan ham ishonch ma'nosidagi modal so'z; «chog'i» rostdan ham gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#9a4e4691"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«aftidan» — gumon ma'nosidagi modal so'z",
+        "«zarur» — afsus ma'nosidagi modal so'z",
+        "«afsuski» — afsus ma'nosidagi modal so'z",
+        "«nazarimda» — fikr manbaini ko'rsatuvchi modal so'z"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «zarur» so'ziga afsus ma'nosidagi modal so'z deb baho berilgan, holbuki u — zaruriyat ma'nosidagi modal so'z: so'zlovchining zaruriyat munosabatini bildiradi. Qolgan javoblardagi baho o'rinli: «aftidan» rostdan ham gumon ma'nosidagi modal so'z; «afsuski» rostdan ham afsus ma'nosidagi modal so'z; «nazarimda» rostdan ham fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#213ef78a"
+    },
+    {
+      "q": "Qaysi javobdagi baho noto'g'ri berilgan?",
+      "v": [
+        "«menimcha» — fikr manbaini ko'rsatuvchi modal so'z",
+        "«taassufki» — afsus ma'nosidagi modal so'z",
+        "«aytishlaricha» — fikr manbaini ko'rsatuvchi modal so'z",
+        "«shekilli» — zaruriyat ma'nosidagi modal so'z"
+      ],
+      "t": 3,
+      "izoh": "Bu javobda «shekilli» so'ziga zaruriyat ma'nosidagi modal so'z deb baho berilgan, holbuki u — gumon ma'nosidagi modal so'z: so'zlovchining gumon munosabatini bildiradi. Qolgan javoblardagi baho o'rinli: «taassufki» rostdan ham afsus ma'nosidagi modal so'z; «aytishlaricha» va «menimcha» rostdan ham fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#10139ef7"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi xato?",
+      "v": [
+        "«aftidan» — gumon ma'nosidagi modal so'z",
+        "«aytishlaricha» — fikr manbaini ko'rsatuvchi modal so'z",
+        "«nazarimda» — gumon ma'nosidagi modal so'z",
+        "«chog'i» — gumon ma'nosidagi modal so'z"
+      ],
+      "t": 2,
+      "izoh": "Bu javobda «nazarimda» so'ziga gumon ma'nosidagi modal so'z deb baho berilgan, holbuki u — fikr manbaini ko'rsatuvchi modal so'z: fikr kimga tegishli ekanini ko'rsatadi. Qolgan javoblardagi baho o'rinli: «aftidan» va «chog'i» rostdan ham gumon ma'nosidagi modal so'z; «aytishlaricha» rostdan ham fikr manbaini ko'rsatuvchi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#6927d2ad"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«kerak» — zaruriyat ma'nosidagi modal so'z",
+        "«zarur» — ishonch ma'nosidagi modal so'z",
+        "«fikrimcha» — fikr manbaini ko'rsatuvchi modal so'z",
+        "«aftidan» — gumon ma'nosidagi modal so'z"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «zarur» so'ziga ishonch ma'nosidagi modal so'z deb baho berilgan, holbuki u — zaruriyat ma'nosidagi modal so'z: so'zlovchining zaruriyat munosabatini bildiradi. Qolgan javoblardagi baho o'rinli: «kerak» rostdan ham zaruriyat ma'nosidagi modal so'z; «fikrimcha» rostdan ham fikr manbaini ko'rsatuvchi modal so'z; «aftidan» rostdan ham gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#0c39db95"
+    },
+    {
+      "q": "Qaysi javobdagi baho noto'g'ri berilgan?",
+      "v": [
+        "«ehtimol» — gumon ma'nosidagi modal so'z",
+        "«menimcha» — fikr manbaini ko'rsatuvchi modal so'z",
+        "«chamasi» — gumon ma'nosidagi modal so'z",
+        "«haqiqatan» — fikr manbaini ko'rsatuvchi modal so'z"
+      ],
+      "t": 3,
+      "izoh": "Bu javobda «haqiqatan» so'ziga fikr manbaini ko'rsatuvchi modal so'z deb baho berilgan, holbuki u — ishonch ma'nosidagi modal so'z: so'zlovchining ishonch munosabatini bildiradi. Qolgan javoblardagi baho o'rinli: «menimcha» rostdan ham fikr manbaini ko'rsatuvchi modal so'z; «chamasi» va «ehtimol» rostdan ham gumon ma'nosidagi modal so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m38-modal-sozlar#1fb78666"
+    }
+  ]
+}

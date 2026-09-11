@@ -1,0 +1,1506 @@
+{
+  "nom": "Radif va raviy",
+  "bolim": "Vazn va qofiya",
+  "savollar": [
+    {
+      "q": "Quyidagi so'zlar kimning tilidan aytilgan? Ey shah, karam aylar chog'i teng tut yamon-u yaxshini, Kim, mehr nuri teng tushar vayron-u obod ustina.",
+      "v": [
+        "Hudhud",
+        "Ogahiy",
+        "Suhayl",
+        "Shirin"
+      ],
+      "t": 1,
+      "izoh": "Bu so'zlar Ogahiy tilidan aytilgan. Ishqiy g'azal bag'riga ijtimoiy mazmun singdirilgan bayt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#f61b66cf"
+    },
+    {
+      "q": "Quyidagi so'zlar kimning tilidan aytilgan? Boshimg'a yoqqan g'am toshin mingdin biricha bo'lmag'ay, Gardun agar ming Besutun yog'dursa Farhod ustina.",
+      "v": [
+        "Farhod",
+        "Majnun",
+        "Suhayl",
+        "Ogahiy"
+      ],
+      "t": 3,
+      "izoh": "Bu so'zlar Ogahiy tilidan aytilgan. Baytda bo'rttirish o'zining eng yuqori chegarasiga ko'tarilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#6d73c0f9"
+    },
+    {
+      "q": "Quyidagi parcha nimani anglatadi? Ey shah, karam aylar chog'i teng tut yamon-u yaxshini, Kim, mehr nuri teng tushar vayron-u obod ustina.",
+      "v": [
+        "Shoir bilgan narsasini bilmaganday savol tarzida beradi.",
+        "So'z takrori bitiktoshda tez-tez uchraydigan tasvir usuli.",
+        "Chaqaloqqa ism qo'yilishi kitobat san'ati orqali izohlanadi.",
+        "Ishqiy g'azal bag'riga ijtimoiy mazmun singdirilgan bayt."
+      ],
+      "t": 3,
+      "izoh": "Bu parchada ishqiy g'azal bag'riga ijtimoiy mazmun singdirilgan bayt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#c64637f8"
+    },
+    {
+      "q": "Quyidagi parcha nimani anglatadi? Boshimg'a yoqqan g'am toshin mingdin biricha bo'lmag'ay, Gardun agar ming Besutun yog'dursa Farhod ustina.",
+      "v": [
+        "Gul avval «otashin vard», so'ng «shu'layi dard» deb ataladi.",
+        "Baytda insonni o'zligini anglashga chorlash ohangi yetakchi.",
+        "Baytda bo'rttirish o'zining eng yuqori chegarasiga ko'tarilgan.",
+        "Gulning uyalib qizarishi — unga insoniy sifat berilgan tashxis namunasi."
+      ],
+      "t": 2,
+      "izoh": "Bu parchada baytda bo'rttirish o'zining eng yuqori chegarasiga ko'tarilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#0d0ead50"
+    },
+    {
+      "q": "Misra oxiridagi unsurlarning kelish tartibi to'g'ri tartibda qaysi javobda berilgan?",
+      "v": [
+        "qofiyadosh so'z o'zagi → radif → raviy",
+        "qofiyadosh so'z o'zagi → raviy → radif",
+        "raviy → qofiyadosh so'z o'zagi → radif",
+        "radif → qofiyadosh so'z o'zagi → raviy"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri tartib: qofiyadosh so'z o'zagi → raviy → radif. Radif doim qofiyadan keyin turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#0ac5872e"
+    },
+    {
+      "q": "Radif turini aniqlash bosqichlari to'g'ri tartibda qaysi javobda berilgan?",
+      "v": [
+        "undagi so'zlarni sanash → takrorlanuvchi qismni ajratish → yig'iq yoki yoyiq deb belgilash",
+        "takrorlanuvchi qismni ajratish → yig'iq yoki yoyiq deb belgilash → undagi so'zlarni sanash",
+        "takrorlanuvchi qismni ajratish → undagi so'zlarni sanash → yig'iq yoki yoyiq deb belgilash",
+        "yig'iq yoki yoyiq deb belgilash → takrorlanuvchi qismni ajratish → undagi so'zlarni sanash"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri tartib: takrorlanuvchi qismni ajratish → undagi so'zlarni sanash → yig'iq yoki yoyiq deb belgilash. Bir so'z bo'lsa yig'iq, ko'p so'z bo'lsa yoyiq radif.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#689000d7"
+    },
+    {
+      "q": "Ogahiy hayotidagi asarlarning yaratilish tartibi to'g'ri tartibda qaysi javobda berilgan?",
+      "v": [
+        "Jome ul-voqeoti sultoniy → Zubdat ul-tavorix → Gulshani davlat",
+        "Zubdat ul-tavorix → Jome ul-voqeoti sultoniy → Gulshani davlat",
+        "Gulshani davlat → Zubdat ul-tavorix → Jome ul-voqeoti sultoniy",
+        "Zubdat ul-tavorix → Gulshani davlat → Jome ul-voqeoti sultoniy"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri tartib: Zubdat ul-tavorix → Jome ul-voqeoti sultoniy → Gulshani davlat. Tarixiy asarlar shu izchillikda bitilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#400ef187"
+    },
+    {
+      "q": "Radifning she'riy tuzilishdagi o'rni qanday baholanadi?",
+      "v": [
+        "umuman ahamiyatsiz",
+        "qofiya bilan bir qatorda",
+        "faqat nasrga xos",
+        "qofiyadan ustun"
+      ],
+      "t": 1,
+      "izoh": "Ikkalasi birga misra oxirini shakllantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#6ae192a2"
+    },
+    {
+      "q": "Yoyiq radif she'rga qanday ta'sir qiladi?",
+      "v": [
+        "qofiyani yo'qotadi",
+        "vaznni buzadi",
+        "bandni qisqartiradi",
+        "takror qismni cho'zadi"
+      ],
+      "t": 3,
+      "izoh": "Uzun radif ohangni yanada ta'kidlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#7813c131"
+    },
+    {
+      "q": "Radif qofiyaga qanday munosabatda bo'ladi?",
+      "v": [
+        "undan keyin turadi",
+        "undan mustaqil",
+        "uning o'rnini egallaydi",
+        "undan oldin turadi"
+      ],
+      "t": 0,
+      "izoh": "Ikkalasi birgalikda misra oxirini tuzadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_san_m18-radif-raviy#09e78ec3"
+    },
+    {
+      "q": "Ogahiy qaysi yilda vafot etgan?",
+      "v": [
+        "1884-yilda",
+        "1874-yilda",
+        "1854-yilda",
+        "1864-yilda"
+      ],
+      "t": 1,
+      "izoh": "Umrining so'nggi yillarigacha ijod bilan shug'ullangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#1c2cee64"
+    },
+    {
+      "q": "Radif va tajnis birga kelsa, misra oxirida nima kuzatiladi?",
+      "v": [
+        "qofiya nasrga aylanadi",
+        "takror so'z turli ma'noda jaranglaydi",
+        "vazn ikkiga bo'linadi",
+        "takror so'z butunlay yo'qoladi"
+      ],
+      "t": 1,
+      "izoh": "Ogahiy g'azalida shunday hodisa bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#cc24f241"
+    },
+    {
+      "q": "Qofiyaning asosini tashkil etuvchi tirgak tovush qanday ataladi?",
+      "v": [
+        "radif",
+        "raviy",
+        "turoq",
+        "zihof"
+      ],
+      "t": 1,
+      "izoh": "U unli ham, undosh ham bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_san_m18-radif-raviy#671bbc0e"
+    },
+    {
+      "q": "Radifsiz g'azal bo'lishi mumkinmi?",
+      "v": [
+        "yo'q, hech qachon",
+        "faqat nasrda",
+        "faqat tarjimada",
+        "ha, bo'lishi mumkin"
+      ],
+      "t": 3,
+      "izoh": "Radif majburiy unsur emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#90bf631b"
+    },
+    {
+      "q": "Radif va raviy tushunchalari qaysi darslik bo'limida beriladi?",
+      "v": [
+        "«Chiston haqida» bo'limida",
+        "«Lirika haqida» bo'limida",
+        "«Qofiya va radif» bo'limida",
+        "«She'r vaznlari» bo'limida"
+      ],
+      "t": 2,
+      "izoh": "Bo'lim 7-sinf darsligida joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#20cd0d73"
+    },
+    {
+      "q": "Raviyning qofiya turini belgilashdagi roli qanday?",
+      "v": [
+        "u faqat vaznni belgilaydi",
+        "u faqat radif turini belgilaydi",
+        "u turga umuman ta'sir qilmaydi",
+        "uning o'rniga qarab tur aniqlanadi"
+      ],
+      "t": 3,
+      "izoh": "Muqayyad va mutlaq shu belgiga ko'ra ajratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#23c095b6"
+    },
+    {
+      "q": "Ogahiyning «kechadur» radifli g'azalida bu so'z qaysi san'atni yuzaga chiqargan?",
+      "v": [
+        "tajnis",
+        "tazod",
+        "tanosib",
+        "talmeh"
+      ],
+      "t": 0,
+      "izoh": "So'z misralarda turli ma'noda jaranglaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#016c9756"
+    },
+    {
+      "q": "Raviyni aniqlashda qofiyadosh so'zlarning nechtasi taqqoslanadi?",
+      "v": [
+        "faqat bittasi",
+        "barchasi shart emas",
+        "kamida ikkitasi",
+        "kamida o'ntasi"
+      ],
+      "t": 2,
+      "izoh": "Bir so'zdan raviy aniqlab bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#a97a5840"
+    },
+    {
+      "q": "«Aylansun» radifi qaysi turga mansub?",
+      "v": [
+        "muqayyad qofiya",
+        "mutlaq qofiya",
+        "yoyiq radif",
+        "yig'iq radif"
+      ],
+      "t": 3,
+      "izoh": "Bir so'z butun g'azal davomida qaytariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#533c51fc"
+    },
+    {
+      "q": "Uvaysiy g'azalidagi «jononimni» va «davronimni» so'zlari nima hisoblanadi?",
+      "v": [
+        "qofiyadosh so'zlar",
+        "rukn nomlari",
+        "radif so'zlari",
+        "turoq bo'laklari"
+      ],
+      "t": 0,
+      "izoh": "Ulardan keyingi so'z radif bo'lib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#c3cb406b"
+    },
+    {
+      "q": "Radifning takrorlanishi she'rning hajmiga qanday ta'sir qiladi?",
+      "v": [
+        "ikki barobar oshiradi",
+        "ta'sir qilmaydi",
+        "yarmiga qisqartiradi",
+        "butunlay yo'qotadi"
+      ],
+      "t": 1,
+      "izoh": "Hajm baytlar soni bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#92cf9b18"
+    },
+    {
+      "q": "Radif she'rni yodlashda qanday yordam beradi?",
+      "v": [
+        "so'zlar o'rnini almashtiradi",
+        "bandlar sonini kamaytiradi",
+        "takror ohangni mustahkamlaydi",
+        "matn hajmini qisqartiradi"
+      ],
+      "t": 2,
+      "izoh": "Qaytarilgan so'z xotirada osilib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#4bc2216d"
+    },
+    {
+      "q": "Ogahiy hayotining og'ir davri nima bilan boshlangan?",
+      "v": [
+        "oyog'ining shikastlanishi bilan",
+        "devonining yo'qolishi bilan",
+        "saroydan chiqarilishi bilan",
+        "yurtdan quvilishi bilan"
+      ],
+      "t": 0,
+      "izoh": "U yigit yoshidayoq to'shakka bog'lanib qolgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#5c865073"
+    },
+    {
+      "q": "«Ey shah, karam aylar chog'i teng tut yamon-u yaxshini» baytida nima ilgari surilgan?",
+      "v": [
+        "sayohat g'oyasi",
+        "adolat g'oyasi",
+        "savdo g'oyasi",
+        "jang g'oyasi"
+      ],
+      "t": 1,
+      "izoh": "Mehr nuri hammaga teng tushishi ta'kidlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#9b39cf71"
+    },
+    {
+      "q": "Radif tanlashda shoir uchun asosiy qiyinchilik nima?",
+      "v": [
+        "sarlavha topish",
+        "harflar sonini hisoblash",
+        "nashrni tayyorlash",
+        "har baytga mantiqan mos kelishi"
+      ],
+      "t": 3,
+      "izoh": "Bir so'z butun she'rga o'tirishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#1b4c9306"
+    },
+    {
+      "q": "Radifning ohangdagi vazifasi nima bilan izohlanadi?",
+      "v": [
+        "bandning qisqarib borishi bilan",
+        "kutilgan takrorning ro'yobga chiqishi bilan",
+        "vaznning almashib turishi bilan",
+        "kutilmagan so'zning paydo bo'lishi bilan"
+      ],
+      "t": 1,
+      "izoh": "Takror ohangni mustahkamlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#a78b87e2"
+    },
+    {
+      "q": "Radif she'rga qanday xususiyat baxsh etadi?",
+      "v": [
+        "tarixiy aniqlikni",
+        "hujjatli qat'iylikni",
+        "ilmiy izchillikni",
+        "ohang yaxlitligini"
+      ],
+      "t": 3,
+      "izoh": "Takrorlanuvchi so'z butun she'rni bog'lab turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#afa0ee14"
+    },
+    {
+      "q": "Radif atamasi qaysi tildan olingan?",
+      "v": [
+        "yunon tilidan",
+        "arab tilidan",
+        "lotin tilidan",
+        "hind tilidan"
+      ],
+      "t": 1,
+      "izoh": "Sharq poetikasi atamalarining aksari arabchadir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#ccde3a03"
+    },
+    {
+      "q": "Ogahiy zullisonaynlik an'anasini nima bilan davom ettirgan?",
+      "v": [
+        "ikki shaharda yashash bilan",
+        "ikki devon tuzish bilan",
+        "ikki janrda ijod qilish bilan",
+        "ikki tilda she'r yozish bilan"
+      ],
+      "t": 3,
+      "izoh": "Uning she'rlari bir qismi fors tilida bitilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#9bf6a54a"
+    },
+    {
+      "q": "Radifning takrorlanishi she'rda qanday tuyg'u uyg'otadi?",
+      "v": [
+        "so'zning yo'qolishi tuyg'usini",
+        "matnning uzilishi tuyg'usini",
+        "ohangning qaytishi tuyg'usini",
+        "voqeaning tugashi tuyg'usini"
+      ],
+      "t": 2,
+      "izoh": "O'quvchi takrorni oldindan kutadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#c61ff3de"
+    },
+    {
+      "q": "«Ta'viz ul-oshiqin» nomi qanday tarjima qilinadi?",
+      "v": [
+        "Oshiqlar tumori",
+        "Nafis majlislar",
+        "Go'zallik boshlanmasi",
+        "Ma'nolar xazinasi"
+      ],
+      "t": 0,
+      "izoh": "Devon Feruzning taklifi bilan tuzilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#42d0ebd9"
+    },
+    {
+      "q": "«Ustina» radifli g'azal tahlili qaysi darslikda berilgan?",
+      "v": [
+        "7-sinf adabiyot darsligida",
+        "9-sinf adabiyot darsligida",
+        "5-sinf adabiyot darsligida",
+        "11-sinf ona tili darsligida"
+      ],
+      "t": 1,
+      "izoh": "Tahlil Ogahiy lirikasi bo'limida keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#8ea968d9"
+    },
+    {
+      "q": "«Ustina» radifi qaysi turga mansub?",
+      "v": [
+        "muqayyad qofiya",
+        "mutlaq qofiya",
+        "yoyiq radif",
+        "yig'iq radif"
+      ],
+      "t": 3,
+      "izoh": "U bir so'zdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#1bf0f827"
+    },
+    {
+      "q": "Bir necha so'zdan iborat radif qanday ataladi?",
+      "v": [
+        "muqayyad radif",
+        "yoyiq radif",
+        "mutlaq radif",
+        "yig'iq radif"
+      ],
+      "t": 1,
+      "izoh": "Bunda takrorlanuvchi qism uzun bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#884dff02"
+    },
+    {
+      "q": "Ogahiyning «Ustina» radifli g'azali qaysi devondan olingan?",
+      "v": [
+        "Xazoyin ul-maoniy",
+        "Badoye' ul-bidoya",
+        "Ta'viz ul-oshiqin",
+        "Devoni Foniy"
+      ],
+      "t": 2,
+      "izoh": "Devon nomi «Oshiqlar tumori» ma'nosini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#600fc6cc"
+    },
+    {
+      "q": "Radifning she'rdagi ma'noviy vazifasi nima?",
+      "v": [
+        "bandlar sonini belgilash",
+        "sahifani to'ldirish",
+        "nashrni bezash",
+        "asosiy tushunchani ta'kidlash"
+      ],
+      "t": 3,
+      "izoh": "Takrorlanuvchi so'z fikr markazini ushlab turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#d0321cbf"
+    },
+    {
+      "q": "Ogahiy ishqiy g'azallariga qanday mazmun singdirilgan?",
+      "v": [
+        "tarixiy va hujjatli",
+        "falsafiy va ijtimoiy",
+        "savdo va hisob",
+        "ilmiy va tibbiy"
+      ],
+      "t": 1,
+      "izoh": "Yor timsolida shohga xos xususiyatlar ham aks etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#c66aec25"
+    },
+    {
+      "q": "Ogahiy qaysi tarixiy asari nomi «Tarixlar qaymog'i» ma'nosini beradi?",
+      "v": [
+        "Gulshani davlat",
+        "Jome ul-voqeoti sultoniy",
+        "Zubdat ul-tavorix",
+        "Shohidi iqbol"
+      ],
+      "t": 2,
+      "izoh": "Asar 1846-yilda yozilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#c37b098a"
+    },
+    {
+      "q": "Ogahiy tarjima qilgan «Guliston» asarining muallifi kim?",
+      "v": [
+        "Abdurahmon Jomiy",
+        "Nizomiy Ganjaviy",
+        "Badriddin Hiloliy",
+        "Sa'diy Sheroziy"
+      ],
+      "t": 3,
+      "izoh": "Ogahiy o'nlab asarni o'zbekchalashtirgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#3e8b0b18"
+    },
+    {
+      "q": "Raviy undosh bo'lgan qofiyaga misol qaysi javobda to'g'ri berilgan?",
+      "v": [
+        "nishon – makon – qon",
+        "daryo – sahro – ro'yo",
+        "gado – mosivo – ado",
+        "mubtalo – oshno – muddao"
+      ],
+      "t": 0,
+      "izoh": "Ularda oxirgi undosh tirgak vazifasini bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#78f132bd"
+    },
+    {
+      "q": "Radif so'zi she'r davomida o'zgarsa, bu nimani anglatadi?",
+      "v": [
+        "radif buzilganini",
+        "qofiya kuchayganini",
+        "vazn o'zgarganini",
+        "bandning tugaganini"
+      ],
+      "t": 0,
+      "izoh": "Radif aynan qaytarilishi shart.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#5ce7e1d5"
+    },
+    {
+      "q": "Qofiyasiz she'r bo'lishi mumkinmi?",
+      "v": [
+        "faqat nasrda",
+        "ha, oq she'r shaklida",
+        "faqat tarjimada",
+        "yo'q, hech qachon"
+      ],
+      "t": 1,
+      "izoh": "Oq she'rda ohang boshqa vosita bilan beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#73dade0d"
+    },
+    {
+      "q": "Radif qo'llangan she'rning har bayti nima bilan tugaydi?",
+      "v": [
+        "nuqta bilan",
+        "har safar boshqa so'z bilan",
+        "ayni so'z yoki so'zlar bilan",
+        "muallif taxallusi bilan"
+      ],
+      "t": 2,
+      "izoh": "Shu takror g'azalni yaxlit qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_san_m18-radif-raviy#089ced1a"
+    },
+    {
+      "q": "Radif qo'llangan she'rni ovoz chiqarib o'qiganda nima seziladi?",
+      "v": [
+        "bo'g'inlarning yo'qolishi",
+        "bandning uzilishi",
+        "vaznning buzilishi",
+        "oxirgi so'zning qaytarilishi"
+      ],
+      "t": 3,
+      "izoh": "Takror quloqqa yaqqol chalinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_san_m18-radif-raviy#f6e7927c"
+    },
+    {
+      "q": "Radif bilan takrir san'atining farqi nimada?",
+      "v": [
+        "takrirning nasrga xosligida",
+        "radifning o'rni qat'iy belgilanganida",
+        "takrirning vazn o'lchashida",
+        "radifning unli bo'lishida"
+      ],
+      "t": 1,
+      "izoh": "Takrir misraning istalgan joyida kelaveradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#28fbd13a"
+    },
+    {
+      "q": "Milliy sertifikat topshirig'ida raviy so'ralganda javob nima bo'ladi?",
+      "v": [
+        "butun radif birikmasi",
+        "she'r sarlavhasi",
+        "butun qofiyadosh so'z",
+        "bitta tovushning o'zi"
+      ],
+      "t": 3,
+      "izoh": "Javob tovush bilan cheklanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#a1d50f99"
+    },
+    {
+      "q": "Qofiyadosh so'zlarda raviyning o'rni qanday bo'ladi?",
+      "v": [
+        "har safar o'zgaruvchan",
+        "qat'iy belgilangan",
+        "butunlay erkin",
+        "faqat sarlavhaga bog'liq"
+      ],
+      "t": 1,
+      "izoh": "O'rin o'zgarsa, ohangdoshlik yo'qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#4993b8d7"
+    },
+    {
+      "q": "«Qotig'roq kelmadi hargiz jahong'a ushbu qishdin qish» misrasida «qish» so'zi nima bo'lib kelgan?",
+      "v": [
+        "faqat raviy tovushi",
+        "faqat rukn nomi",
+        "faqat turoq bo'lagi",
+        "ham qofiya, ham radif"
+      ],
+      "t": 3,
+      "izoh": "Bir so'z ikki vazifani birdek bajargan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#3b7fe16d"
+    },
+    {
+      "q": "Radif qo'llangan she'rda o'quvchi nimani oldindan sezadi?",
+      "v": [
+        "muallif kimligini",
+        "misra qanday tugashini",
+        "bandlar sonini",
+        "nashr yilini"
+      ],
+      "t": 1,
+      "izoh": "Takror kutilgan ohangni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#34d44322"
+    },
+    {
+      "q": "Radif so'zi ma'no jihatdan qanday tanlanadi?",
+      "v": [
+        "faqat qisqa bo'lgani uchun",
+        "she'rning asosiy fikriga mos",
+        "faqat noyob bo'lgani uchun",
+        "tasodifiy va befarq"
+      ],
+      "t": 1,
+      "izoh": "Radif she'rning mavzusini ochib beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#e362df22"
+    },
+    {
+      "q": "Radifni to'g'ri ajratish uchun she'rda nechta bayt qaraladi?",
+      "v": [
+        "barcha bandlar",
+        "faqat bitta",
+        "kamida o'nta",
+        "kamida ikkita"
+      ],
+      "t": 3,
+      "izoh": "Takror bir baytda ko'rinmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#e6d68be0"
+    },
+    {
+      "q": "Radif she'rning qaysi o'rnida joylashadi?",
+      "v": [
+        "qofiyadan oldin",
+        "sarlavhada",
+        "misra boshida",
+        "qofiyadan keyin"
+      ],
+      "t": 3,
+      "izoh": "Shu bois u misraning eng oxirida turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_san_m18-radif-raviy#966d4028"
+    },
+    {
+      "q": "Raviyni topish uchun qofiyadosh so'zlarda nima izlanadi?",
+      "v": [
+        "bir xil bo'g'in soni",
+        "bir xil urg'u o'rni",
+        "bir xil takrorlangan tovush",
+        "bir xil so'z turkumi"
+      ],
+      "t": 2,
+      "izoh": "Aynan takrorlangan tovush tirgak hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#da83bcf2"
+    },
+    {
+      "q": "Uvaysiy g'azalidagi «afg'on» va «so'zon» so'zlari nima hisoblanadi?",
+      "v": [
+        "radif so'zlari",
+        "qofiyadosh so'zlar",
+        "turoq bo'laklari",
+        "rukn nomlari"
+      ],
+      "t": 1,
+      "izoh": "Radif ulardan keyin keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#3c36f79b"
+    },
+    {
+      "q": "Radifni tahlil qilishda birinchi navbatda nima aniqlanadi?",
+      "v": [
+        "shoir yoshi",
+        "nashr yili",
+        "takrorlanuvchi qism",
+        "bandlar soni"
+      ],
+      "t": 2,
+      "izoh": "Undan keyin uning turi belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_san_m18-radif-raviy#88eff4e6"
+    },
+    {
+      "q": "Radif so'zi she'rning mavzusi haqida nima beradi?",
+      "v": [
+        "nashr adadini",
+        "aniq sanani",
+        "ishorani",
+        "muallif ismini"
+      ],
+      "t": 2,
+      "izoh": "Masalan, «qish» radifi fasl mavzusiga ishora qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#a9db52e3"
+    },
+    {
+      "q": "«Shohidi iqbol» nomi qanday tarjima qilinadi?",
+      "v": [
+        "Baxt shohidi",
+        "Davlat gulshani",
+        "Sultonlik voqealari",
+        "Tarixlar qaymog'i"
+      ],
+      "t": 0,
+      "izoh": "Asar XIX asrning oltmishinchi yillarida yozilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#4d841964"
+    },
+    {
+      "q": "«Sog'indim» so'zi bilan tugagan g'azalda bu so'z qanday vazifa bajaradi?",
+      "v": [
+        "radif vazifasini",
+        "rukn vazifasini",
+        "raviy vazifasini",
+        "turoq vazifasini"
+      ],
+      "t": 0,
+      "izoh": "Undan oldingi so'zlar qofiyadosh hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#3590a71a"
+    },
+    {
+      "q": "Radif turini aniqlashda nimaga qaraladi?",
+      "v": [
+        "undagi unlilar soniga",
+        "undagi harflar soniga",
+        "undagi so'zlar soniga",
+        "undagi bo'g'inlar soniga"
+      ],
+      "t": 2,
+      "izoh": "Bir so'z bo'lsa yig'iq, ko'p bo'lsa yoyiq radif.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#2250de1d"
+    },
+    {
+      "q": "«Qish» radifli g'azal qaysi mavzuga bag'ishlangan?",
+      "v": [
+        "savdo yo'llariga",
+        "hunarmandchilikka",
+        "jang tasviriga",
+        "tabiat tasviriga"
+      ],
+      "t": 3,
+      "izoh": "Ogahiy peyzaj ustasi sifatida tanilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#a640f77a"
+    },
+    {
+      "q": "Radifli g'azal matla'sida takrorlanuvchi so'z nechta misrada uchraydi?",
+      "v": [
+        "birortasida ham",
+        "faqat ikkinchisida",
+        "ikkalasida ham",
+        "faqat birinchisida"
+      ],
+      "t": 2,
+      "izoh": "Matla'ning har ikki misrasi qofiyalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#7f9ddd92"
+    },
+    {
+      "q": "Radifli she'rlar odatda qanday nom bilan yuritiladi?",
+      "v": [
+        "muallif taxallusi bilan",
+        "nashr yili bilan",
+        "bandlar soni bilan",
+        "radif so'zining o'zi bilan"
+      ],
+      "t": 3,
+      "izoh": "Masalan, «Ustina» radifli g'azal deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#87f53f06"
+    },
+    {
+      "q": "Radif she'riy asarni tahlil qilishda qaysi bosqichda aniqlanadi?",
+      "v": [
+        "muallif tarjimayi holida",
+        "qofiya tahlili bilan birga",
+        "syujet tahlilidan oldin",
+        "nashr ma'lumotlarida"
+      ],
+      "t": 1,
+      "izoh": "Ikkalasi misra oxiri tahliliga kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#6ffcbeb5"
+    },
+    {
+      "q": "Ogahiyning maktab dasturida alohida tahlil qilinadigan g'azali qaysi radif bilan yuritiladi?",
+      "v": [
+        "kechadur",
+        "sog'indim",
+        "aylansun",
+        "ustina"
+      ],
+      "t": 3,
+      "izoh": "G'azal shu so'zning takrori bilan tanilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#02e65790"
+    },
+    {
+      "q": "Radif va raviy tushunchalari imtihon dasturida qaysi tushuncha bilan birga beriladi?",
+      "v": [
+        "pafos bilan",
+        "kompozitsiya bilan",
+        "syujet bilan",
+        "qofiya bilan"
+      ],
+      "t": 3,
+      "izoh": "Ular 2.6-kodli bandda birga sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#d5ae1399"
+    },
+    {
+      "q": "Radif tahlilida ko'p yo'l qo'yiladigan xato qaysi?",
+      "v": [
+        "bandni misra deb olish",
+        "sarlavhani epigraf deb olish",
+        "vaznni janr deb olish",
+        "radifni qofiya deb olish"
+      ],
+      "t": 3,
+      "izoh": "Radif qofiyadan keyin turadi, uning qismi emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#ea668681"
+    },
+    {
+      "q": "Raviy nima uchun tirgak tovush deb ataladi?",
+      "v": [
+        "bandni ajratgani uchun",
+        "misrani uzaytirgani uchun",
+        "qofiyani ushlab turgani uchun",
+        "vaznni o'lchagani uchun"
+      ],
+      "t": 2,
+      "izoh": "Ohangdoshlik aynan shu tovushga tayanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#8b66e6b7"
+    },
+    {
+      "q": "«Mubtalo», «oshno», «muddao» so'zlarida raviy vazifasini nima bajargan?",
+      "v": [
+        "m undoshi",
+        "d undoshi",
+        "o unlisi",
+        "a unlisi"
+      ],
+      "t": 2,
+      "izoh": "Bu o'rinda cho'ziq unli tirgak bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#7026aa94"
+    },
+    {
+      "q": "Radif she'riy tarjimada nima uchun muhim?",
+      "v": [
+        "sahifa sonini bilish uchun",
+        "muqova tanlash uchun",
+        "nashr adadini topish uchun",
+        "takror ohangni saqlash uchun"
+      ],
+      "t": 3,
+      "izoh": "Radif yo'qolsa, she'r shakli buziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#c22396b6"
+    },
+    {
+      "q": "Radif bo'lishi uchun takrorlanuvchi so'z qanday bo'lishi shart?",
+      "v": [
+        "har safar o'zgargan",
+        "ohangdosh, lekin boshqa",
+        "butunlay o'zgarmagan",
+        "faqat sinonim"
+      ],
+      "t": 2,
+      "izoh": "Ozgina o'zgarsa, u radif hisoblanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#e58aa96e"
+    },
+    {
+      "q": "Raviy unli bo'lgan qofiyaga misol qaysi javobda to'g'ri berilgan?",
+      "v": [
+        "boshida – qoshida – yoshida",
+        "mubtalo – oshno – muddao",
+        "nishon – makon – qon",
+        "toshini – boshini – yoshini"
+      ],
+      "t": 1,
+      "izoh": "Bu qatorda cho'ziq unli tirgak bo'lib kelgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#f7360467"
+    },
+    {
+      "q": "Yig'iq radifga misol qaysi javobda to'g'ri berilgan?",
+      "v": [
+        "aylamakni mendin o'rgandi",
+        "aylab mani bexud etar",
+        "sog'indim",
+        "qilmadi hargiz vafo"
+      ],
+      "t": 2,
+      "izoh": "U bitta so'zdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#9d70f5a2"
+    },
+    {
+      "q": "Radif so'zining she'r sarlavhasiga aylanishi nimani ko'rsatadi?",
+      "v": [
+        "uning tarjima ekanini",
+        "uning she'rdagi markaziy o'rnini",
+        "uning tasodifiy tanlanganini",
+        "uning ortiqchaligini"
+      ],
+      "t": 1,
+      "izoh": "Radif she'rning tanish belgisiga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#57a791e1"
+    },
+    {
+      "q": "Ogahiy devoni nima deb ataladi?",
+      "v": [
+        "Ta'viz ul-oshiqin",
+        "Xazoyin ul-maoniy",
+        "Devoni Foniy",
+        "Badoye' ul-bidoya"
+      ],
+      "t": 0,
+      "izoh": "Nomi «Oshiqlar tumori» ma'nosini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#2b1664de"
+    },
+    {
+      "q": "Ogahiy she'riyati o'zbek mumtoz adabiyotida qanday baholanadi?",
+      "v": [
+        "faqat tarjima sifatida",
+        "birinchi o'rinda",
+        "Navoiydan keyingi o'rinda",
+        "e'tiborga olinmaydigan"
+      ],
+      "t": 2,
+      "izoh": "U sermahsul va serqirra shoir hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#62b25d7c"
+    },
+    {
+      "q": "Radifi bor she'rda qofiyadosh so'zni topish uchun nima qilinadi?",
+      "v": [
+        "radif ajratib tashlanadi",
+        "nashr tekshiriladi",
+        "bandlar sanaladi",
+        "sarlavha o'qiladi"
+      ],
+      "t": 0,
+      "izoh": "Qolgan so'z qofiyadosh hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#8f53e3de"
+    },
+    {
+      "q": "Radifning bo'lishi qofiya tanlashni qanday o'zgartiradi?",
+      "v": [
+        "qofiya misra boshiga o'tadi",
+        "qofiya butunlay yo'qoladi",
+        "qofiya radifdan oldinga suriladi",
+        "qofiya sarlavhaga ko'chadi"
+      ],
+      "t": 2,
+      "izoh": "Ohangdosh so'z endi oxirgi so'z bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#25ce19ce"
+    },
+    {
+      "q": "Mumtoz she'r ilmi raviyning qayerda bo'lishini talab qilgan?",
+      "v": [
+        "misraning boshida",
+        "so'zning o'zagida",
+        "she'rning sarlavhasida",
+        "so'zning qo'shimchasida"
+      ],
+      "t": 1,
+      "izoh": "Amaliyotda chetga chiqishlar ham uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#7ac7e6d9"
+    },
+    {
+      "q": "Radifsiz she'rda misraning oxirgi so'zi nima bo'ladi?",
+      "v": [
+        "radif so'zi",
+        "rukn nomi",
+        "turoq bo'lagi",
+        "qofiyadosh so'z"
+      ],
+      "t": 3,
+      "izoh": "Radif bo'lmasa, qofiya oxirda turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#091a622b"
+    },
+    {
+      "q": "«Aylamakni mendin o'rgandi» birikmasi she'rda nima hisoblanadi?",
+      "v": [
+        "mutlaq qofiya",
+        "yig'iq radif",
+        "muqayyad qofiya",
+        "yoyiq radif"
+      ],
+      "t": 3,
+      "izoh": "U uch so'zdan tuzilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#3471db1b"
+    },
+    {
+      "q": "Ogahiy g'azallarida tabiat tasvirida qaysi vositalar qo'llangan?",
+      "v": [
+        "tashbih va tashxis",
+        "sana va raqam",
+        "jadval va chizma",
+        "sanoq va hisob"
+      ],
+      "t": 0,
+      "izoh": "Fasl tarovati shu vositalar bilan beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#5ad10d4c"
+    },
+    {
+      "q": "«Aylamakni mendin o'rgandi» radifi nechta so'zdan iborat?",
+      "v": [
+        "uchta",
+        "ikkita",
+        "beshta",
+        "bitta"
+      ],
+      "t": 0,
+      "izoh": "Shu sababli u yoyiq radif hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#53082ce1"
+    },
+    {
+      "q": "Ogahiyning «Aylansun» radifli g'azalida takror so'z nechta bo'ladi?",
+      "v": [
+        "bitta",
+        "to'rtta",
+        "ikkita",
+        "uchta"
+      ],
+      "t": 0,
+      "izoh": "Radif bir so'zdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#8934c2a2"
+    },
+    {
+      "q": "Bir she'rda raviy o'zgarishi mumkinmi?",
+      "v": [
+        "ha, har baytda o'zgaradi",
+        "yo'q, o'zgarmaydi",
+        "ha, faqat maqta'da",
+        "ha, faqat matla'da"
+      ],
+      "t": 1,
+      "izoh": "Raviy butun she'r davomida bir xil qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#0eeb771a"
+    },
+    {
+      "q": "Radif she'rda ma'noni qanday yo'naltiradi?",
+      "v": [
+        "ma'noni inkor etib",
+        "ma'noni butunlay yashirib",
+        "diqqatni bir tushunchaga qaratib",
+        "ma'noni ikkiga bo'lib"
+      ],
+      "t": 2,
+      "izoh": "Takrorlanuvchi so'z fikr markazi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#bebb9ca5"
+    },
+    {
+      "q": "Radif so'zining lug'aviy ma'nosi qaysi javobda to'g'ri berilgan?",
+      "v": [
+        "ortidan ergashuvchi",
+        "oldinda boruvchi",
+        "ustidan tushuvchi",
+        "yonida turuvchi"
+      ],
+      "t": 0,
+      "izoh": "U qofiyaning ortidan ergashib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#a31b47b0"
+    },
+    {
+      "q": "Radifning qofiya bilan bir so'zda birlashishi mumkinmi?",
+      "v": [
+        "yo'q, hech qachon",
+        "faqat tarjimada",
+        "ha, ayrim hollarda",
+        "faqat nasrda"
+      ],
+      "t": 2,
+      "izoh": "«Qish» so'zi shunga misol bo'la oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#280570df"
+    },
+    {
+      "q": "Radifning eng qisqa ko'rinishi qanday bo'ladi?",
+      "v": [
+        "bir sahifa hajmida",
+        "bir so'zdan iborat",
+        "bir bayt hajmida",
+        "bir band hajmida"
+      ],
+      "t": 1,
+      "izoh": "Bu yig'iq radif deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#44277943"
+    },
+    {
+      "q": "Radif she'rning shakliy tugalligiga qanday hissa qo'shadi?",
+      "v": [
+        "har baytni bir xil yakunlaydi",
+        "har baytni turlicha boshlaydi",
+        "baytlarni birlashtirmaydi",
+        "bandlarni ikkiga bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Yakuniy takror shaklni yaxlitlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#60509c14"
+    },
+    {
+      "q": "Bir so'zdan iborat radif qanday ataladi?",
+      "v": [
+        "mutlaq radif",
+        "yoyiq radif",
+        "yig'iq radif",
+        "muqayyad radif"
+      ],
+      "t": 2,
+      "izoh": "Radifning bu turi eng ko'p uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#ae2e0803"
+    },
+    {
+      "q": "Ogahiy devoni kimning taklifi bilan tuzilgan?",
+      "v": [
+        "Umarxonning",
+        "Husayn Boyqaroning",
+        "Amiriyning",
+        "Feruzning"
+      ],
+      "t": 3,
+      "izoh": "Feruz — Muhammad Rahimxon Soniy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#bf87fefd"
+    },
+    {
+      "q": "Radif bilan qofiyaning asosiy farqi nimada?",
+      "v": [
+        "radif vazn o'lchashida",
+        "radif aynan takrorlanishida",
+        "radif unli bo'lishida",
+        "radif nasrda kelishida"
+      ],
+      "t": 1,
+      "izoh": "Qofiyadosh so'zlar esa faqat ohangdosh bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#59a53a17"
+    },
+    {
+      "q": "«Lola – piyola» qofiyasida raviy qaysi tovush ekani nima bilan izohlanadi?",
+      "v": [
+        "so'zlarning o'zlashmaligi bilan",
+        "so'z uzunligining tengligi bilan",
+        "qisqa unli tirgak bo'lolmasligi bilan",
+        "so'zlarning otligi bilan"
+      ],
+      "t": 2,
+      "izoh": "Shu bois undosh raviy hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#f3d74594"
+    },
+    {
+      "q": "Qofiyadan keyin takrorlanadigan so'z yoki so'zlar birligi qanday ataladi?",
+      "v": [
+        "rukn",
+        "raviy",
+        "turoq",
+        "radif"
+      ],
+      "t": 3,
+      "izoh": "U she'r davomida o'zgarmay qaytariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_san_m18-radif-raviy#805f0887"
+    },
+    {
+      "q": "Radif she'rning qaysi qismini bog'lab turadi?",
+      "v": [
+        "faqat maqta'ni",
+        "barcha baytlarini",
+        "faqat matla'ni",
+        "faqat sarlavhani"
+      ],
+      "t": 1,
+      "izoh": "Takror butun asarga yaxlitlik beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#3b928a12"
+    },
+    {
+      "q": "Radif qo'llangan g'azalning nomi odatda qayerdan olinadi?",
+      "v": [
+        "radif so'zining o'zidan",
+        "nashr etilgan yilidan",
+        "muallifning taxallusidan",
+        "she'rning birinchi so'zidan"
+      ],
+      "t": 0,
+      "izoh": "Shu bois «Ustina» radifli g'azal deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#1c9f1c8f"
+    },
+    {
+      "q": "Radif va saj' o'rtasidagi farq nimada?",
+      "v": [
+        "biri arabcha, ikkinchisi lotincha bo'lishida",
+        "biri unli, ikkinchisi undosh bo'lishida",
+        "biri she'rda, ikkinchisi nasrda kelishida",
+        "biri vazn, ikkinchisi band belgilashida"
+      ],
+      "t": 2,
+      "izoh": "Saj' nasriy jumla oxirlariga tegishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_san_m18-radif-raviy#07179200"
+    },
+    {
+      "q": "Radif eng ko'p qaysi janrda uchraydi?",
+      "v": [
+        "romanda",
+        "reportajda",
+        "g'azalda",
+        "ocherkda"
+      ],
+      "t": 2,
+      "izoh": "G'azalning tuzilishi takrorga juda mos.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_san_m18-radif-raviy#e170c08b"
+    },
+    {
+      "q": "Radif tushunchasi qaysi ilm doirasida o'rganiladi?",
+      "v": [
+        "badiiyat ilmida",
+        "qofiya ilmida",
+        "aruz ilmida",
+        "mantiq ilmida"
+      ],
+      "t": 1,
+      "izoh": "U qofiya bilan bir qatorda tahlil qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#f9d65a1b"
+    },
+    {
+      "q": "Raviy tushunchasi qaysi ilm doirasida o'rganiladi?",
+      "v": [
+        "tarix ilmida",
+        "badiiyat ilmida",
+        "aruz ilmida",
+        "qofiya ilmida"
+      ],
+      "t": 3,
+      "izoh": "Qofiya ilmi mumtoz adabiyotshunoslikning bir qismi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_san_m18-radif-raviy#9d4ae1a4"
+    }
+  ]
+}

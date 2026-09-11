@@ -1,0 +1,1609 @@
+{
+  "nom": "Sonning moduli (absolut qiymati)",
+  "bolim": "Sonlar va ular ustida amallar",
+  "blok": "arif",
+  "rasmiyBolim": 1,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Modul ta'rifiga ko'ra manfiy sonning moduli unga qarama-qarshi songa teng. Shu ta'rifdan foydalanib |−17| ning qiymatini aniqlang.",
+      "v": [
+        "−17",
+        "17",
+        "0",
+        "34"
+      ],
+      "t": 1,
+      "izoh": "−17 soni manfiy, shuning uchun uning moduli qarama-qarshi soniga teng: |−17| = −(−17) = 17. Modul hech qachon manfiy qiymat qabul qilmaydi. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-tarifi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#de4c0e3a"
+    },
+    {
+      "q": "Anvar daftariga −0,8 sonini yozdi va uning modulini topmoqchi. |−0,8| ifodaning qiymati qanchaga teng bo'ladi?",
+      "v": [
+        "−0,8",
+        "0,08",
+        "0,8",
+        "1,25"
+      ],
+      "t": 2,
+      "izoh": "Manfiy o'nli kasrning moduli ham unga qarama-qarshi songa teng: |−0,8| = 0,8. Vergul o'rni siljimaydi va son teskari aylantirilmaydi. Javob: 0,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-tarifi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#b0189ca0"
+    },
+    {
+      "q": "Musbat sonning moduli o'ziga, manfiy sonniki esa qarama-qarshisiga teng. Shu qoidaga ko'ra |0| va |−9| qiymatlari mos ravishda nechaga teng?",
+      "v": [
+        "0 va 9",
+        "0 va −9",
+        "aniqlanmagan va 9",
+        "9 va 9"
+      ],
+      "t": 0,
+      "izoh": "Nolning moduli nolga teng, chunki nol na musbat, na manfiy: |0| = 0. Manfiy son uchun esa |−9| = 9. Demak izlangan qiymatlar 0 va 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-tarifi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#044fd649"
+    },
+    {
+      "q": "a = −23 bo'lsa, |a| va −a ifodalarning qiymatlari haqida qaysi xulosa to'g'ri ekanini aniqlang.",
+      "v": [
+        "|a| = −23, −a = 23",
+        "|a| = 23, −a = −23",
+        "|a| = −23, −a = −23",
+        "|a| = 23, −a = 23, ular teng"
+      ],
+      "t": 3,
+      "izoh": "a manfiy bo'lgani uchun ta'rifga ko'ra |a| = −a bo'ladi. Bu yerda −a = −(−23) = 23, demak |a| ham 23 ga teng. Ikkala ifoda bir xil musbat qiymat beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-tarifi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#1336473c"
+    },
+    {
+      "q": "Sonlar o'qida M nuqta −6,5 koordinatada, N nuqta esa 4 koordinatada joylashgan. Har birining koordinata boshidan uzoqligini modul orqali toping.",
+      "v": [
+        "6,5 va 4",
+        "−6,5 va 4",
+        "10,5 va 10,5",
+        "2,5 va 2,5"
+      ],
+      "t": 0,
+      "izoh": "Nuqtaning koordinata boshidan uzoqligi uning koordinatasi moduliga teng. |−6,5| = 6,5 va |4| = 4 bo'ladi. Masofa hech qachon manfiy bo'lmaydi. Javob: 6,5 va 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "noldan-uzoqlik",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#83b47ee8"
+    },
+    {
+      "q": "Koordinata boshidan 12 birlik uzoqlikda joylashgan nuqtalarning sonlar o'qidagi koordinatalari qanday bo'lishi mumkin?",
+      "v": [
+        "faqat 12",
+        "12 va −12",
+        "faqat −12",
+        "0 va 12"
+      ],
+      "t": 1,
+      "izoh": "Shart |x| = 12 ko'rinishida yoziladi. Nolning ikki tomonida ham undan 12 birlik uzoqlikdagi nuqta bor, demak x = 12 yoki x = −12. Javob: 12 va −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "noldan-uzoqlik",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#6b441b3c"
+    },
+    {
+      "q": "Dilnoza sonlar o'qida x nuqtani belgiladi va uning noldan uzoqligi 7,5 birlik ekanini aniqladi. Bu ma'lumotni to'g'ri ifodalagan yozuvni tanlang.",
+      "v": [
+        "|x| = 7,5, demak x = 7,5 yoki x = −7,5",
+        "|x| = 7,5, demak faqat x = 7,5",
+        "|x| = ±7,5, demak x = 7,5",
+        "|x| = 15, demak x = 7,5 yoki x = −7,5"
+      ],
+      "t": 0,
+      "izoh": "Noldan uzoqlik modul bilan yoziladi, ya'ni |x| = 7,5. Modulning o'zi manfiy bo'lmaydi, lekin unga mos x ikki xil bo'ladi. Shuning uchun x = 7,5 yoki x = −7,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "noldan-uzoqlik",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#7faab1dc"
+    },
+    {
+      "q": "Sonlar o'qida A(−14) va B(9) nuqtalar belgilangan. Qaysi nuqta koordinata boshiga yaqinroq joylashgan va buni qanday asoslash mumkin?",
+      "v": [
+        "A, chunki −14 < 9",
+        "B, chunki |9| = 9 va |−14| = 14",
+        "A, chunki |−14| = −14",
+        "ikkalasi ham teng uzoqlikda"
+      ],
+      "t": 1,
+      "izoh": "Yaqinlik koordinatalarning o'zi bilan emas, ularning modullari bilan solishtiriladi. |−14| = 14, |9| = 9 va 9 < 14 bo'lgani uchun B nuqta yaqinroq turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "noldan-uzoqlik",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#8bd093ea"
+    },
+    {
+      "q": "Sonlar o'qida P nuqta −11, Q nuqta esa 6 koordinatada joylashgan. Ular orasidagi masofani |a − b| formulasi yordamida hisoblang.",
+      "v": [
+        "17",
+        "5",
+        "−17",
+        "−5"
+      ],
+      "t": 0,
+      "izoh": "Ikki nuqta orasidagi masofa koordinatalar ayirmasining moduliga teng: |−11 − 6| = |−17| = 17. Koordinatalarni qo'shib emas, ayirib hisoblash kerak. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-nuqta-masofa",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#10e586e5"
+    },
+    {
+      "q": "Termometrda −7 °C va 18 °C belgilari orasida necha bo'lim borligini bilish uchun ikki son orasidagi masofa topiladi. Bu masofa qanchaga teng?",
+      "v": [
+        "11",
+        "−25",
+        "25",
+        "125"
+      ],
+      "t": 2,
+      "izoh": "Masofa ayirmaning moduliga teng: |18 − (−7)| = |18 + 7| = 25. Manfiy sonni ayirish qo'shishga aylangani uchun natija 11 emas, 25 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-nuqta-masofa",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#a777188e"
+    },
+    {
+      "q": "Sonlar o'qidagi C(−3,5) va D(8,5) nuqtalar orasidagi masofa necha birlikni tashkil qiladi?",
+      "v": [
+        "5",
+        "6",
+        "−12",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Masofani ayirma moduli sifatida topamiz: |8,5 − (−3,5)| = |8,5 + 3,5| = 12. Butun qismlarni oddiy ayirib qo'yish xato natija beradi. Javob: 12 birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-nuqta-masofa",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#94b37d7f"
+    },
+    {
+      "q": "Sonlar o'qida K nuqta 5 koordinatada turibdi. L nuqta K dan 13 birlik uzoqlikda va koordinata boshidan 8 birlikdan ortiq uzoqlikda joylashgan. L ning koordinatasi qanday?",
+      "v": [
+        "−8",
+        "18",
+        "8",
+        "−18"
+      ],
+      "t": 1,
+      "izoh": "|L − 5| = 13 shartdan L = 5 + 13 = 18 yoki L = 5 − 13 = −8 kelib chiqadi. Ikkinchi holda |−8| = 8 bo'lib, u 8 dan ortiq emas. Demak shartga faqat L = 18 mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-nuqta-masofa",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#4dace51e"
+    },
+    {
+      "q": "Sonli ifodaning qiymatini toping: |−24| + |7| − |−15|. Har bir modul alohida ochiladi.",
+      "v": [
+        "46",
+        "16",
+        "32",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Avval modullarni ochamiz: |−24| = 24, |7| = 7 va |−15| = 15. So'ngra 24 + 7 − 15 = 16 hosil bo'ladi. Modul belgisidan chiqqan sonlar musbat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modulli-sonli-ifoda",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#0200e7bf"
+    },
+    {
+      "q": "Amallar tartibiga e'tibor berib |−3| · |−7| − |−4| · 5 ifodaning qiymatini hisoblang.",
+      "v": [
+        "41",
+        "−1",
+        "1",
+        "−41"
+      ],
+      "t": 2,
+      "izoh": "Modullarni ochamiz: |−3| = 3, |−7| = 7 va |−4| = 4. Avval ko'paytirish bajariladi: 3 · 7 = 21 hamda 4 · 5 = 20. Keyin 21 − 20 = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-sonli-ifoda",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#042dbab8"
+    },
+    {
+      "q": "Nodira |−72| : |−8| + |−3|² ifodani hisoblamoqchi. To'g'ri natijani ko'rsatuvchi variantni tanlang.",
+      "v": [
+        "18",
+        "0",
+        "81",
+        "−18"
+      ],
+      "t": 0,
+      "izoh": "|−72| = 72 va |−8| = 8 bo'lgani uchun 72 : 8 = 9. Keyingi had |−3|² = 3² = 9. Yig'indi 9 + 9 = 18 chiqadi. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-sonli-ifoda",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#8e995473"
+    },
+    {
+      "q": "|−2,5| · 4 + |6| : |−3| ifodaning qiymati qancha bo'ladi? Amallar tartibini saqlab hisoblang.",
+      "v": [
+        "−12",
+        "−8",
+        "10",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "|−2,5| = 2,5 bo'lgani uchun 2,5 · 4 = 10. Ikkinchi qismda |6| : |−3| = 6 : 3 = 2. Natijada 10 + 2 = 12 hosil bo'ladi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-sonli-ifoda",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#c575b07c"
+    },
+    {
+      "q": "|−9 + 4| ifodada avval qavs ichidagi amal bajariladi, keyin modul olinadi. Ifodaning qiymati nechaga teng?",
+      "v": [
+        "5",
+        "13",
+        "−5",
+        "−13"
+      ],
+      "t": 0,
+      "izoh": "Modul ichidagi qo'shishni bajaramiz: −9 + 4 = −5. So'ngra modul olinadi: |−5| = 5. Modulni har bir qo'shiluvchiga alohida qo'llash mumkin emas. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ichi-amal-tartibi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#879808f8"
+    },
+    {
+      "q": "Avval ko'paytirish, so'ng qo'shish bajariladi: |−7 · 3 + 15| ifodaning qiymatini toping.",
+      "v": [
+        "36",
+        "6",
+        "126",
+        "−6"
+      ],
+      "t": 1,
+      "izoh": "Modul ichida dastlab −7 · 3 = −21 topiladi, so'ng −21 + 15 = −6 bo'ladi. Oxirida modul olinadi: |−6| = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ichi-amal-tartibi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#51011f97"
+    },
+    {
+      "q": "|3 − 11| va |3| − |11| ifodalar bir xil qiymatga egami? Ikkalasini hisoblab, to'g'ri javobni tanlang.",
+      "v": [
+        "Ha, ikkalasi ham 8 ga teng",
+        "Yo'q: birinchisi 8, ikkinchisi −8",
+        "Yo'q: birinchisi −8, ikkinchisi 8",
+        "Ha, ikkalasi ham −8 ga teng"
+      ],
+      "t": 1,
+      "izoh": "Birinchi ifodada avval ayirma topiladi: 3 − 11 = −8, so'ng |−8| = 8. Ikkinchisida esa modullar alohida ochiladi va 3 − 11 = −8 chiqadi. Demak qiymatlar teng emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ichi-amal-tartibi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#1ccc7759"
+    },
+    {
+      "q": "|−4 − 6| : |−2 + 7| ifodada bo'linuvchi va bo'luvchi alohida hisoblanadi. Natija qanday chiqadi?",
+      "v": [
+        "0,4",
+        "10",
+        "2",
+        "−2"
+      ],
+      "t": 2,
+      "izoh": "Bo'linuvchi: −4 − 6 = −10, demak |−10| = 10. Bo'luvchi: −2 + 7 = 5, demak |5| = 5. Shundan keyin 10 : 5 = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ichi-amal-tartibi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#f2132f1f"
+    },
+    {
+      "q": "Ko'paytmaning moduli modullar ko'paytmasiga teng degan xossadan foydalanib |−13 · 4| ifodaning qiymatini toping.",
+      "v": [
+        "17",
+        "52",
+        "−52",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Xossaga ko'ra |−13 · 4| = |−13| · |4| = 13 · 4 = 52. Modulni qo'shish yoki ayirish amaliga aylantirib bo'lmaydi. Javob: 52.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kopaytma-bolinma-xossasi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#76cb7d55"
+    },
+    {
+      "q": "|−96| : |−12| ifodani bo'linmaning moduli haqidagi xossa yordamida hisoblang va natijani ko'rsating.",
+      "v": [
+        "−8",
+        "108",
+        "8",
+        "84"
+      ],
+      "t": 2,
+      "izoh": "Bo'linmaning moduli modullar bo'linmasiga teng: |−96| : |−12| = 96 : 12 = 8. Ikki manfiy sonning nisbati musbat bo'lgani uchun javob ham musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kopaytma-bolinma-xossasi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#93641264"
+    },
+    {
+      "q": "x = −5 va y = 3 bo'lsa, |x · y| hamda |x| · |y| ifodalarning qiymatlari mos ravishda qanday bo'ladi?",
+      "v": [
+        "−15 va 15",
+        "15 va −15",
+        "−15 va −15",
+        "15 va 15"
+      ],
+      "t": 3,
+      "izoh": "Avval x · y = −5 · 3 = −15, demak |x · y| = 15. Ikkinchi ifodada |−5| · |3| = 5 · 3 = 15. Ikkalasi teng chiqishi modulning ko'paytmaga oid xossasini tasdiqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kopaytma-bolinma-xossasi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#f3cea264"
+    },
+    {
+      "q": "|−7| · |−8| ko'paytmani |−7 + (−8)| yig'indi moduli bilan solishtiring: qaysi biri katta va ular orasidagi farq qancha?",
+      "v": [
+        "Ko'paytma katta, farq 41",
+        "Yig'indi katta, farq 41",
+        "Ko'paytma katta, farq 71",
+        "Ular teng, farq 0"
+      ],
+      "t": 0,
+      "izoh": "|−7| · |−8| = 7 · 8 = 56 bo'ladi. Ikkinchisida avval −7 + (−8) = −15, so'ng |−15| = 15. 56 > 15 va farq 56 − 15 = 41. Javob: ko'paytma katta, farq 41.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kopaytma-bolinma-xossasi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#2e0eff99"
+    },
+    {
+      "q": "√((−6)²) ifodaning qiymatini hisoblang va kvadrat ildizning manfiy natija bermasligini hisobga oling.",
+      "v": [
+        "−6",
+        "36",
+        "12",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Avval (−6)² = 36 topiladi, so'ngra √36 = 6 bo'ladi. Umumiy qoida √(a²) = |a| ko'rinishida yoziladi va natija hech qachon manfiy bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-ildiz-modul",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#582ed583"
+    },
+    {
+      "q": "a < 0 bo'lganda √(a²) ifoda qanday soddalashadi? Javobni modul belgisisiz, a orqali yozing.",
+      "v": [
+        "a",
+        "a²",
+        "−a",
+        "|a|"
+      ],
+      "t": 2,
+      "izoh": "Har qanday a uchun √(a²) = |a| ayniyati o'rinli. a manfiy bo'lgani uchun |a| = −a bo'ladi va bu ifoda musbat qiymat beradi. Javob: −a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ildiz-modul",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#8657549a"
+    },
+    {
+      "q": "√((5 − 9)²) + √((−3)²) ifodaning qiymatini bosqichma-bosqich hisoblang.",
+      "v": [
+        "7",
+        "1",
+        "25",
+        "−7"
+      ],
+      "t": 0,
+      "izoh": "Birinchi ildizda (5 − 9)² = 16 va √16 = 4. Ikkinchisida (−3)² = 9 va √9 = 3. Yig'indi 4 + 3 = 7 ga teng. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ildiz-modul",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#20c480a5"
+    },
+    {
+      "q": "√((a − 7)²) ifodani a > 7 va a < 7 hollari uchun alohida soddalashtiring.",
+      "v": [
+        "Ikkala holda ham a − 7",
+        "Ikkala holda ham 7 − a",
+        "a > 7 da 7 − a; a < 7 da a − 7",
+        "a > 7 da a − 7; a < 7 da 7 − a"
+      ],
+      "t": 3,
+      "izoh": "√((a − 7)²) = |a − 7| bo'ladi. a > 7 bo'lsa a − 7 > 0 va modul o'zgarishsiz ochiladi. a < 7 bo'lsa a − 7 < 0, shuning uchun modul qarama-qarshi ifoda 7 − a ga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-ildiz-modul",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#03d25099"
+    },
+    {
+      "q": "−15, 9, −22 va 18 sonlarining modullarini hisoblab, sonlarning o'zini modullari o'sish tartibida joylashtiring.",
+      "v": [
+        "−22, −15, 9, 18",
+        "9, −15, 18, −22",
+        "−15, 9, 18, −22",
+        "18, 9, −15, −22"
+      ],
+      "t": 1,
+      "izoh": "Modullar: |−15| = 15, |9| = 9, |−22| = 22 va |18| = 18. Ularni o'sish tartibida yozsak 9 < 15 < 18 < 22 bo'ladi. Shunga mos sonlar 9, −15, 18, −22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modullarni-taqqoslash",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#17439c60"
+    },
+    {
+      "q": "Berilgan −31, 27, −19 va 30 sonlaridan qaysi birining moduli eng katta ekanini aniqlang.",
+      "v": [
+        "−31",
+        "27",
+        "−19",
+        "30"
+      ],
+      "t": 0,
+      "izoh": "Sonlarning modullari mos ravishda 31, 27, 19 va 30 ga teng. Ularning eng kattasi 31 bo'lib, u −31 songa tegishli. Manfiy ishora modulning kattaligiga ta'sir qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modullarni-taqqoslash",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#c7d923af"
+    },
+    {
+      "q": "Ikki savdogarning kunlik foydasi mos ravishda −4,2 mln so'm va 4,05 mln so'mga o'zgardi. Qaysi o'zgarish kattaroq va buni qanday aniqlaymiz?",
+      "v": [
+        "4,05 mln so'm, chunki u musbat",
+        "−4,2 mln so'm, chunki |−4,2| = 4,2",
+        "Ikkala o'zgarish teng kattalikda",
+        "4,05 mln so'm, chunki 4,05 > −4,2"
+      ],
+      "t": 1,
+      "izoh": "O'zgarishning kattaligi uning moduli bilan o'lchanadi, ishora esa faqat yo'nalishni ko'rsatadi. |−4,2| = 4,2 va |4,05| = 4,05 bo'lib, 4,2 > 4,05. Demak birinchi o'zgarish kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modullarni-taqqoslash",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#056f5d9b"
+    },
+    {
+      "q": "O'quvchilarning bo'yi me'yordan quyidagicha farq qildi: Bekzod +6 sm, Dilshod −7 sm, Aziz −4 sm, Elyor +5 sm. Kimning chetlanishi me'yorga eng yaqin?",
+      "v": [
+        "Bekzod",
+        "Dilshod",
+        "Aziz",
+        "Elyor"
+      ],
+      "t": 2,
+      "izoh": "Me'yorga yaqinlik chetlanish moduli bilan baholanadi: 6, 7, 4 va 5. Eng kichigi 4 bo'lib, u Azizga tegishli. Chetlanishning ishorasi faqat yo'nalishni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modullarni-taqqoslash",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#5374e682"
+    },
+    {
+      "q": "|x| = 14 tenglamaning barcha ildizlarini topib, ularning yig'indisi nechaga tengligini aniqlang.",
+      "v": [
+        "0",
+        "28",
+        "14",
+        "−14"
+      ],
+      "t": 0,
+      "izoh": "Tenglamaning ildizlari x = 14 va x = −14 bo'ladi. Ular nolga nisbatan simmetrik joylashgani uchun yig'indi 14 + (−14) = 0 chiqadi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sodda-modulli-tenglama",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#cee90162"
+    },
+    {
+      "q": "|x − 5| = 3 tenglamani yechib, uning kattaroq ildizini ko'rsating.",
+      "v": [
+        "2",
+        "15",
+        "−8",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Modul 3 ga teng bo'lishi uchun x − 5 = 3 yoki x − 5 = −3 bo'lishi kerak. Birinchisidan x = 8, ikkinchisidan x = 2 kelib chiqadi. Kattarog'i 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sodda-modulli-tenglama",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#8e8cd462"
+    },
+    {
+      "q": "|x + 4| = 0 tenglama nechta ildizga ega va u qanday qiymatga teng?",
+      "v": [
+        "2 ta: x = 4 va x = −4",
+        "1 ta: x = 4",
+        "1 ta: x = −4",
+        "Ildizi yo'q"
+      ],
+      "t": 2,
+      "izoh": "Modul faqat ichidagi ifoda nolga aylangandagina nolga teng bo'ladi. Demak x + 4 = 0 va bundan x = −4. Yechim yagona, chunki nolning qarama-qarshisi ham nol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sodda-modulli-tenglama",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#2ef38dbf"
+    },
+    {
+      "q": "|2x − 7| = 9 tenglamaning ildizlarini topib, ular ayirmasining modulini hisoblang.",
+      "v": [
+        "7",
+        "9",
+        "16",
+        "4,5"
+      ],
+      "t": 1,
+      "izoh": "Birinchi holda 2x − 7 = 9 dan x = 8 chiqadi. Ikkinchi holda 2x − 7 = −9 dan x = −1. Ildizlar ayirmasining moduli |8 − (−1)| = 9 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sodda-modulli-tenglama",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#3fdd70fe"
+    },
+    {
+      "q": "x < 3 sharti bajarilganda |x − 3| ifodani modul belgisisiz ko'rinishda yozing.",
+      "v": [
+        "x − 3",
+        "x + 3",
+        "3 − x",
+        "−x − 3"
+      ],
+      "t": 2,
+      "izoh": "x < 3 bo'lgani uchun x − 3 < 0, ya'ni modul ostidagi ifoda manfiy. Manfiy ifodaning moduli unga qarama-qarshi ifodaga teng: |x − 3| = −(x − 3) = 3 − x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishorani-ochish-shartda",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#3b2c8d11"
+    },
+    {
+      "q": "a > 0 va b < 0 bo'lsa, |a| + |b| yig'indini a va b harflari orqali modulsiz yozing.",
+      "v": [
+        "a − b",
+        "a + b",
+        "−a + b",
+        "−a − b"
+      ],
+      "t": 0,
+      "izoh": "a musbat bo'lgani uchun |a| = a bo'ladi. b manfiy bo'lgani uchun |b| = −b. Demak |a| + |b| = a + (−b) = a − b. Javob: a − b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishorani-ochish-shartda",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#27fafc1d"
+    },
+    {
+      "q": "2 < x < 6 shart bajarilganda |x − 2| − |x − 6| ifoda qanday soddalashadi?",
+      "v": [
+        "4",
+        "2x − 8",
+        "8 − 2x",
+        "−4"
+      ],
+      "t": 1,
+      "izoh": "2 < x bo'lgani uchun x − 2 > 0 va |x − 2| = x − 2. x < 6 bo'lgani uchun x − 6 < 0 va |x − 6| = 6 − x. Ayirma (x − 2) − (6 − x) = 2x − 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ishorani-ochish-shartda",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#c600707b"
+    },
+    {
+      "q": "n manfiy butun son bo'lsa, |n| + n ifodaning qiymati nimaga teng bo'ladi?",
+      "v": [
+        "2n",
+        "−2n",
+        "n",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "n < 0 bo'lgani uchun ta'rifga ko'ra |n| = −n. Demak |n| + n = −n + n = 0. Manfiy son va uning moduli qarama-qarshi sonlar bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishorani-ochish-shartda",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#d7338d8b"
+    },
+    {
+      "q": "a < b shart berilgan bo'lsa, |a − b| + |b − a| ifoda qanday ko'rinishda soddalashadi?",
+      "v": [
+        "0",
+        "2a − 2b",
+        "2b − 2a",
+        "b − a"
+      ],
+      "t": 2,
+      "izoh": "a < b bo'lgani uchun a − b < 0 va |a − b| = b − a. Ayni paytda b − a > 0, demak |b − a| = b − a. Yig'indi 2(b − a) = 2b − 2a bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodani-soddalashtirish",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#3df1c277"
+    },
+    {
+      "q": "m manfiy son bo'lganda |m| : m nisbatning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "−1",
+        "1",
+        "0",
+        "m"
+      ],
+      "t": 0,
+      "izoh": "m < 0 bo'lgani uchun |m| = −m. Demak |m| : m = (−m) : m = −1. Bu nisbat barcha manfiy sonlar uchun bir xil qiymat beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodani-soddalashtirish",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#d3986d12"
+    },
+    {
+      "q": "x ≥ 0 shartda |x| + |−x| ifodani soddalashtiring va natijani ko'rsating.",
+      "v": [
+        "0",
+        "2x",
+        "x",
+        "−2x"
+      ],
+      "t": 1,
+      "izoh": "x manfiymas bo'lgani uchun |x| = x. Qarama-qarshi sonlarning modullari teng bo'lgani uchun |−x| = x. Yig'indi x + x = 2x ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifodani-soddalashtirish",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#94a5fc48"
+    },
+    {
+      "q": "√7 ≈ 2,65 ekanini hisobga olib |3 − √7| + |√7 − 3| ifodaning qiymatini toping.",
+      "v": [
+        "0",
+        "2√7 − 6",
+        "6",
+        "6 − 2√7"
+      ],
+      "t": 3,
+      "izoh": "√7 taxminan 2,65 bo'lgani uchun 3 − √7 > 0, demak birinchi modul 3 − √7 ga teng. Ikkinchi ifoda √7 − 3 < 0, uning moduli ham 3 − √7. Yig'indi 2(3 − √7) = 6 − 2√7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifodani-soddalashtirish",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#0d450fe0"
+    },
+    {
+      "q": "x < −2 bo'lganda |x + 2| + |x − 1| ifodani modul belgisisiz yozing.",
+      "v": [
+        "2x + 1",
+        "−2x − 1",
+        "3",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "x < −2 bo'lgani uchun x + 2 < 0 va |x + 2| = −x − 2. Bunday x da x − 1 < 0 ham bajariladi, demak |x − 1| = 1 − x. Yig'indi (−x − 2) + (1 − x) = −2x − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-modulli-oraliqda-ochish",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#48125325"
+    },
+    {
+      "q": "−2 ≤ x ≤ 1 oraliqda |x + 2| + |x − 1| ifoda qanday qiymat qabul qiladi?",
+      "v": [
+        "3",
+        "−2x − 1",
+        "2x + 1",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Bu oraliqda x + 2 ≥ 0 bo'lgani uchun |x + 2| = x + 2. Shu bilan birga x − 1 ≤ 0, demak |x − 1| = 1 − x. Yig'indi (x + 2) + (1 − x) = 3, ya'ni ifoda o'zgarmas son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-modulli-oraliqda-ochish",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#9acd67bd"
+    },
+    {
+      "q": "x > 5 shart bajarilganda |x − 5| − |2 − x| ifodani soddalashtiring.",
+      "v": [
+        "3",
+        "2x − 7",
+        "−3",
+        "7 − 2x"
+      ],
+      "t": 2,
+      "izoh": "x > 5 bo'lgani uchun x − 5 > 0 va |x − 5| = x − 5. Xuddi shu shartda 2 − x < 0, demak |2 − x| = x − 2. Ayirma (x − 5) − (x − 2) = −3 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-modulli-oraliqda-ochish",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#3700100d"
+    },
+    {
+      "q": "0 < x < 4 oraliqda |x| + |x − 4| ifodaning qiymati nimaga teng bo'ladi?",
+      "v": [
+        "4 − 2x",
+        "−4",
+        "2x − 4",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "x musbat bo'lgani uchun |x| = x. x < 4 bo'lgani uchun x − 4 < 0 va |x − 4| = 4 − x. Yig'indi x + (4 − x) = 4 bo'lib, u x ga bog'liq emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-modulli-oraliqda-ochish",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#8c311548"
+    },
+    {
+      "q": "|x − 3| + |y + 5| = 0 tenglik o'rinli bo'lsa, x va y ning qiymatlarini toping.",
+      "v": [
+        "x = 3, y = 5",
+        "x = 3, y = −5",
+        "x = −3, y = 5",
+        "x = −3, y = −5"
+      ],
+      "t": 1,
+      "izoh": "Modullar manfiy bo'lmaydi, ikki manfiymas sonning yig'indisi esa faqat ikkalasi nol bo'lgandagina nolga teng. Demak x − 3 = 0 va y + 5 = 0, bundan x = 3 hamda y = −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modullar-yigindisi-nol",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#0f3e2835"
+    },
+    {
+      "q": "|a + 7| + |b − 2| = 0 bo'lsa, a · b ko'paytmaning qiymati nechaga teng?",
+      "v": [
+        "14",
+        "−5",
+        "−14",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi nol bo'lishi uchun har bir modul alohida nol bo'lishi shart: a + 7 = 0 va b − 2 = 0. Bundan a = −7, b = 2 kelib chiqadi. Ko'paytma −7 · 2 = −14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modullar-yigindisi-nol",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#f76f3232"
+    },
+    {
+      "q": "|m| + |n| = 0 shart berilgan bo'lsa, m² + n³ ifodaning qiymati qanday bo'ladi?",
+      "v": [
+        "0",
+        "1",
+        "−1",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Modullar yig'indisi nol bo'lgani uchun m = 0 va n = 0 bo'ladi. Demak m² = 0 hamda n³ = 0. Ularning yig'indisi 0 + 0 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modullar-yigindisi-nol",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#c7bbf7ce"
+    },
+    {
+      "q": "|x − 1| + |x − 6| = 0 tenglama nechta yechimga ega ekanini aniqlang.",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "Cheksiz ko'p",
+        "Yechimi yo'q"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi nol bo'lishi uchun x − 1 = 0 va x − 6 = 0 bir vaqtda bajarilishi kerak edi. Bu esa x ning bir vaqtda 1 va 6 ga teng bo'lishini talab qiladi, bunday son mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modullar-yigindisi-nol",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#4ff9b405"
+    },
+    {
+      "q": "|x − 4| = x − 4 tenglik x ning qanday qiymatlarida o'rinli bo'ladi?",
+      "v": [
+        "x > 4",
+        "x ≥ 4",
+        "x ≤ 4",
+        "Ixtiyoriy x"
+      ],
+      "t": 1,
+      "izoh": "Modul ifodaning o'ziga teng bo'lishi uchun modul ostidagi ifoda manfiymas bo'lishi kerak. Demak x − 4 ≥ 0 va bundan x ≥ 4. Tenglik x = 4 da ham bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-teng-ozi-sharti",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#3530d15c"
+    },
+    {
+      "q": "|a| = −a tenglik a ning qanday qiymatlarida bajarilishini aniqlang.",
+      "v": [
+        "a < 0",
+        "a ≥ 0",
+        "a ≤ 0",
+        "faqat a = 0"
+      ],
+      "t": 2,
+      "izoh": "a < 0 bo'lganda ta'rifga ko'ra |a| = −a bo'ladi. a = 0 bo'lganda ham |0| = 0 va −0 = 0, ya'ni tenglik saqlanadi. Demak barcha musbat bo'lmagan qiymatlar, ya'ni a ≤ 0 mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-teng-ozi-sharti",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#d5c0a44d"
+    },
+    {
+      "q": "|3 − x| = x − 3 tenglik bajarilishi uchun x qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "x ≥ 3",
+        "x ≤ 3",
+        "x > 3",
+        "x = 3"
+      ],
+      "t": 0,
+      "izoh": "Chap tomon modul bo'lgani uchun o'ng tomon manfiymas bo'lishi shart: x − 3 ≥ 0, ya'ni x ≥ 3. Bu shartda 3 − x ≤ 0 bo'lib, |3 − x| = x − 3 haqiqatan bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-teng-ozi-sharti",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#50ecdc06"
+    },
+    {
+      "q": "|x| = x tenglikni qanoatlantiruvchi sonlar orasiga −3, 0, 5 va 7 dan qaysilari kiradi?",
+      "v": [
+        "faqat 5 va 7",
+        "faqat 0",
+        "−3, 0, 5 va 7",
+        "0, 5 va 7"
+      ],
+      "t": 3,
+      "izoh": "|x| = x tenglik x ≥ 0 bo'lganda o'rinli bo'ladi. Berilgan sonlardan −3 manfiy, shuning uchun u mos kelmaydi. Qolgan 0, 5 va 7 manfiymas, demak ular tenglikni qanoatlantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-teng-ozi-sharti",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#b1eac26a"
+    },
+    {
+      "q": "|x| < 5 tengsizlikni qanoatlantiruvchi butun sonlar nechta ekanini toping.",
+      "v": [
+        "10",
+        "9",
+        "11",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "|x| < 5 tengsizlik −5 < x < 5 oraliqni beradi. Bu oraliqdagi butun sonlar −4, −3, −2, −1, 0, 1, 2, 3 va 4. Ularning soni 9 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-tengsizlik-oraliq",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#2c46dcce"
+    },
+    {
+      "q": "Sonlar o'qida |x| ≤ 3 shartni qanoatlantiruvchi nuqtalar qanday joylashadi?",
+      "v": [
+        "faqat 3 va −3 nuqtalar",
+        "3 dan katta barcha nuqtalar",
+        "−3 dan 3 gacha bo'lgan kesma",
+        "0 dan 3 gacha bo'lgan kesma"
+      ],
+      "t": 2,
+      "izoh": "|x| nuqtaning koordinata boshidan uzoqligini bildiradi. Uzoqlik 3 dan oshmasligi kerak, demak nuqta noldan chapga ham, o'ngga ham 3 birlikdan uzoqlashmaydi. Bu −3 dan 3 gacha bo'lgan kesma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modulli-tengsizlik-oraliq",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#eee71bd6"
+    },
+    {
+      "q": "|x − 2| < 4 tengsizlikning yechimi qaysi oraliqdan iborat bo'ladi?",
+      "v": [
+        "−2 < x < 6",
+        "−4 < x < 4",
+        "2 < x < 6",
+        "−6 < x < 2"
+      ],
+      "t": 0,
+      "izoh": "Tengsizlik x nuqtaning 2 dan uzoqligi 4 dan kichik ekanini bildiradi. Demak x nuqta 2 dan chapga ham, o'ngga ham 4 birlikdan uzoqlashmaydi: 2 − 4 < x < 2 + 4. Javob: −2 < x < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-tengsizlik-oraliq",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#4ba0130a"
+    },
+    {
+      "q": "Muzlatgichdagi mahsulot harorati |t + 3| ≤ 2 shartni qanoatlantirishi kerak. Ruxsat etilgan eng past va eng yuqori haroratni toping.",
+      "v": [
+        "−1 °C dan 5 °C gacha",
+        "−2 °C dan 2 °C gacha",
+        "1 °C dan 5 °C gacha",
+        "−5 °C dan −1 °C gacha"
+      ],
+      "t": 3,
+      "izoh": "Shart t + 3 ning −2 dan 2 gacha bo'lishini bildiradi: −2 ≤ t + 3 ≤ 2. Tengsizlikning har bir qismidan 3 ni ayiramiz va −5 ≤ t ≤ −1 hosil bo'ladi. Javob: −5 °C dan −1 °C gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modulli-tengsizlik-oraliq",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#8013c6c7"
+    },
+    {
+      "q": "|a| = 8 va |b| = 5 bo'lsa, |a + b| ifoda qabul qilishi mumkin bo'lgan eng katta qiymatni toping.",
+      "v": [
+        "3",
+        "13",
+        "40",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Har doim |a + b| ≤ |a| + |b| = 13 bo'ladi. Tenglik a bilan b bir xil ishorali bo'lganda, masalan a = 8 va b = 5 da erishiladi. Demak eng katta qiymat 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-modulini-baholash",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#330c2572"
+    },
+    {
+      "q": "|m| = 11 va |n| = 4 bo'lganda |m + n| ifodaning eng kichik qiymati qanday bo'ladi?",
+      "v": [
+        "7",
+        "15",
+        "0",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Yig'indining moduli eng kichik bo'lishi uchun sonlar qarama-qarshi ishorali olinadi, masalan m = 11 va n = −4. U holda |m + n| = |7| = 7 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-modulini-baholash",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#db906077"
+    },
+    {
+      "q": "Ikki sonning modullari 9 va 6 ga teng. Ularning yig'indisi moduli qanday qiymatlarni qabul qilishi mumkin?",
+      "v": [
+        "faqat 15",
+        "faqat 3",
+        "3 yoki 15",
+        "3 dan 15 gacha ixtiyoriy son"
+      ],
+      "t": 2,
+      "izoh": "Sonlar 9 va 6, 9 va −6, −9 va 6, yoki −9 va −6 bo'lishi mumkin. Yig'indi modullari mos ravishda 15, 3, 3 va 15 chiqadi. Boshqa qiymat hosil bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-modulini-baholash",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#7e9da7bd"
+    },
+    {
+      "q": "|a + b| = |a| + |b| tenglik qanday hollarda o'rinli bo'lishini aniqlang.",
+      "v": [
+        "a va b qarama-qarshi ishorali bo'lganda",
+        "faqat a = b bo'lganda",
+        "har doim o'rinli",
+        "a va b bir xil ishorali yoki biri nolga teng"
+      ],
+      "t": 3,
+      "izoh": "Ishoralar bir xil bo'lganda sonlar bir yo'nalishda qo'shiladi va yig'indi moduli modullar yig'indisiga teng bo'ladi. Ishoralar qarama-qarshi bo'lsa, sonlar bir-birini qisman yo'qotadi va tenglik buziladi. Biri nolga teng bo'lgan hol ham mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-modulini-baholash",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#c6115e66"
+    },
+    {
+      "q": "|x| = 7 va |y| = 12 bo'lsa, |x − y| ifodaning eng kichik va eng katta qiymatlari qanday bo'ladi?",
+      "v": [
+        "5 va 19",
+        "5 va 84",
+        "7 va 12",
+        "0 va 19"
+      ],
+      "t": 0,
+      "izoh": "Ayirma moduli eng kichik bo'lishi uchun x va y bir xil ishorali olinadi: |7 − 12| = 5. Eng katta bo'lishi uchun ishoralar qarama-qarshi olinadi: |7 − (−12)| = 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-modulini-baholash",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#da5cab87"
+    },
+    {
+      "q": "Sonlar o'qida a nuqta 4, b nuqta esa −9 koordinatada joylashgan. |a − b| va |b − a| qiymatlari o'zaro qanday bog'langan?",
+      "v": [
+        "Birinchisi 13, ikkinchisi −13",
+        "Ikkalasi ham 13 ga teng",
+        "Birinchisi −13, ikkinchisi 13",
+        "Ikkalasi ham −13 ga teng"
+      ],
+      "t": 1,
+      "izoh": "|a − b| = |4 − (−9)| = 13 va |b − a| = |−9 − 4| = 13. Masofa yo'nalishga bog'liq emas, shuning uchun ikkala ifoda bir xil qiymat beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-modulini-baholash",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#51786313"
+    },
+    {
+      "q": "|a| = 15 va |b| = 15 bo'lsa, |a − b| ifoda qanday qiymatlarni qabul qilishi mumkin?",
+      "v": [
+        "faqat 30",
+        "faqat 0",
+        "0 yoki 30",
+        "15 yoki 30"
+      ],
+      "t": 2,
+      "izoh": "Modullari teng ikki son yo o'zaro teng, yo qarama-qarshi bo'ladi. Birinchi holda ayirma 0 chiqadi, ikkinchi holda esa |15 − (−15)| = 30. Javob: 0 yoki 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-modulini-baholash",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#96a0251f"
+    },
+    {
+      "q": "Ikki aholi punktining dengiz sathiga nisbatan balandligi 320 m va −45 m. Ular orasidagi balandliklar farqini modul yordamida toping.",
+      "v": [
+        "275 m",
+        "−365 m",
+        "320 m",
+        "365 m"
+      ],
+      "t": 3,
+      "izoh": "Farq balandliklar ayirmasining moduliga teng: |320 − (−45)| = |320 + 45| = 365. Manfiy balandlikni ayirish qo'shishga aylanadi, shuning uchun 275 emas, 365 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-modulini-baholash",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#035b6f68"
+    },
+    {
+      "q": "Toshkentda kunduzgi harorat 11 °C, kechasi esa −4 °C bo'ldi. Sutka davomidagi harorat o'zgarishining kattaligini hisoblang.",
+      "v": [
+        "15 °C",
+        "7 °C",
+        "−15 °C",
+        "44 °C"
+      ],
+      "t": 0,
+      "izoh": "O'zgarish kattaligi ikki qiymat ayirmasining moduliga teng: |11 − (−4)| = |15| = 15. Savolda ishora emas, kattalik so'ralgani uchun javob musbat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harorat-ogishi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#43fdad0a"
+    },
+    {
+      "q": "Samarqandda uch kun davomida harorat me'yordan −6 °C, +2 °C va −3 °C ga chetlashdi. Chetlanishlar modullarining yig'indisini toping.",
+      "v": [
+        "−7 °C",
+        "11 °C",
+        "7 °C",
+        "1 °C"
+      ],
+      "t": 1,
+      "izoh": "Har bir chetlanishning modulini olamiz: 6, 2 va 3. Ularni qo'shsak 6 + 2 + 3 = 11 bo'ladi. Modullar yig'indisi chetlanishlarning umumiy kattaligini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harorat-ogishi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#43a96db7"
+    },
+    {
+      "q": "Muzxona harorati −18 °C ga sozlangan, nazorat asbobi esa −21 °C ni ko'rsatdi. Chetlanish modulini toping va uni 2 °C lik ruxsat chegarasi bilan solishtiring.",
+      "v": [
+        "3 °C, chegaraga mos",
+        "39 °C, chegaradan oshgan",
+        "3 °C, chegaradan oshgan",
+        "−3 °C, chegaraga mos"
+      ],
+      "t": 2,
+      "izoh": "Chetlanish |−21 − (−18)| = |−3| = 3 °C ga teng. Bu qiymat ruxsat etilgan 2 °C dan katta, demak asbob ko'rsatkichi chegaradan chiqib ketgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harorat-ogishi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#b881dcce"
+    },
+    {
+      "q": "Bir kunda harorat ertalab −5 °C, tushda 9 °C va kechqurun 1 °C bo'ldi. Qaysi ikki o'lchov orasidagi farq eng katta va u qanchaga teng?",
+      "v": [
+        "Tush va kechqurun, 8 °C",
+        "Ertalab va kechqurun, 6 °C",
+        "Ertalab va tush, 4 °C",
+        "Ertalab va tush, 14 °C"
+      ],
+      "t": 3,
+      "izoh": "Farqlarni modul bilan hisoblaymiz: |9 − (−5)| = 14, |1 − 9| = 8 va |1 − (−5)| = 6. Eng kattasi 14 °C bo'lib, u ertalabki va tushdagi o'lchovlar orasida kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harorat-ogishi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#f94bf8df"
+    },
+    {
+      "q": "Zavodda un qopining massasi 50 kg bo'lishi kerak, ruxsat etilgan chetlanish 0,4 kg. Tekshirilgan qop 49,5 kg chiqdi, u talabga javob beradimi?",
+      "v": [
+        "Mos emas, chetlanish 0,5 kg",
+        "Mos, chetlanish 0,5 kg",
+        "Mos, chetlanish 0,4 kg",
+        "Mos emas, chetlanish 1,5 kg"
+      ],
+      "t": 0,
+      "izoh": "Chetlanish |49,5 − 50| = 0,5 kg ga teng. Ruxsat etilgan qiymat 0,4 kg bo'lgani uchun 0,5 > 0,4 bo'ladi. Demak qop talabga javob bermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sifat-nazorati-dopusk",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#4416f498"
+    },
+    {
+      "q": "Detal diametri 26 mm bo'lishi kerak va sifat sharti |d − 26| ≤ 0,3 ko'rinishida berilgan. Ruxsat etilgan eng kichik va eng katta diametrni toping.",
+      "v": [
+        "26 mm dan 26,3 mm gacha",
+        "25,7 mm dan 26,3 mm gacha",
+        "25,3 mm dan 26,3 mm gacha",
+        "23 mm dan 29 mm gacha"
+      ],
+      "t": 1,
+      "izoh": "Shart −0,3 ≤ d − 26 ≤ 0,3 ni bildiradi. Tengsizlikning har bir qismiga 26 ni qo'shamiz va 25,7 ≤ d ≤ 26,3 hosil bo'ladi. Javob: 25,7 mm dan 26,3 mm gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sifat-nazorati-dopusk",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#3efdebfc"
+    },
+    {
+      "q": "Dorixonada shishaga 200 ml sirop quyiladi, chetlanish 3 ml dan oshmasligi shart. O'lchangan shishalar 198 ml, 204 ml, 196 ml va 202 ml chiqdi, nechtasi talabga javob beradi?",
+      "v": [
+        "1 ta",
+        "4 ta",
+        "2 ta",
+        "3 ta"
+      ],
+      "t": 2,
+      "izoh": "Chetlanishlarni modul bilan topamiz: |198 − 200| = 2, |204 − 200| = 4, |196 − 200| = 4 va |202 − 200| = 2. Ulardan 3 ml dan oshmagani ikkitasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sifat-nazorati-dopusk",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#d3d7de5e"
+    },
+    {
+      "q": "Paxta tolasi namligi uchun sifat sharti |n − 8| ≤ 1,5 ko'rinishida berilgan. Laboratoriya 9,8% ni aniqlagan bo'lsa, namlikni kamida necha foizga kamaytirish kerak?",
+      "v": [
+        "1,8%",
+        "1,5%",
+        "2,3%",
+        "0,3%"
+      ],
+      "t": 3,
+      "izoh": "Shartga ko'ra namlik 6,5% dan 9,5% gacha bo'lishi mumkin. Hozirgi qiymat 9,8% bo'lib, u yuqori chegaradan 9,8 − 9,5 = 0,3% ga oshib ketgan. Demak kamida 0,3% ga kamaytirish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sifat-nazorati-dopusk",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#0cc94235"
+    },
+    {
+      "q": "Yo'lning 40-kilometr belgisida turgan avtomobil 12-kilometr belgisidagi shifoxonaga bormoqchi. Bosib o'tiladigan masofani modul yordamida hisoblang.",
+      "v": [
+        "28 km",
+        "52 km",
+        "−28 km",
+        "480 km"
+      ],
+      "t": 0,
+      "izoh": "Ikki belgi orasidagi masofa koordinatalar ayirmasining moduliga teng: |12 − 40| = |−28| = 28. Masofa manfiy bo'lmagani uchun modul olinadi. Javob: 28 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-harakat",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#d4bac61d"
+    },
+    {
+      "q": "Jasur uyidan 350 m sharqqa, so'ngra 800 m g'arbga yurdi. Uyi koordinata boshi deb olinsa, uning oxirgi holati uydan qancha uzoqlikda bo'ladi?",
+      "v": [
+        "1150 m",
+        "450 m",
+        "−450 m",
+        "350 m"
+      ],
+      "t": 1,
+      "izoh": "Sharqni musbat yo'nalish deb olsak, umumiy siljish 350 + (−800) = −450 m bo'ladi. Uydan uzoqlik shu siljishning moduliga teng: |−450| = 450 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-harakat",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#a9db6828"
+    },
+    {
+      "q": "Avtobus bekati 5-kilometrda, maktab 23-kilometrda, do'kon esa 14-kilometrda joylashgan. Maktab bekatga yoki do'konga qay biriga yaqinroq va farqi qancha?",
+      "v": [
+        "Bekatga yaqin, farq 9 km",
+        "Ikkalasiga teng uzoqlikda",
+        "Do'konga yaqin, farq 9 km",
+        "Do'konga yaqin, farq 18 km"
+      ],
+      "t": 2,
+      "izoh": "Maktabdan bekatgacha |23 − 5| = 18 km, do'kongacha esa |23 − 14| = 9 km. 9 < 18 bo'lgani uchun do'kon yaqinroq, uzoqliklar farqi 18 − 9 = 9 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-harakat",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#ea67b18c"
+    },
+    {
+      "q": "Dron uchish nuqtasidan gorizontal o'q bo'ylab avval −120 m, so'ng +260 m, keyin −90 m siljidi. Uning bosib o'tgan yo'li va uchish nuqtasidan uzoqligi qancha?",
+      "v": [
+        "50 m va 470 m",
+        "470 m va 470 m",
+        "290 m va 50 m",
+        "470 m va 50 m"
+      ],
+      "t": 3,
+      "izoh": "Bosib o'tilgan yo'l siljishlar modullari yig'indisiga teng: 120 + 260 + 90 = 470 m. Oxirgi holat esa algebraik yig'indi bilan topiladi: −120 + 260 − 90 = 50, uzoqlik |50| = 50 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masofa-harakat",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#151c8d0e"
+    },
+    {
+      "q": "Malika oyiga 2 400 000 so'm sarflashni rejalashtirgan edi, aslida 2 655 000 so'm sarfladi. Rejadan chetlanishning kattaligini toping.",
+      "v": [
+        "255 000 so'm",
+        "−255 000 so'm",
+        "5 055 000 so'm",
+        "155 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Chetlanish reja va haqiqiy sarf ayirmasining moduliga teng: |2 655 000 − 2 400 000| = 255 000 so'm. Ortiqcha sarf ham, kam sarf ham modul bilan o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "byudjet-narx-farqi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#584c2c84"
+    },
+    {
+      "q": "Bir xil daftar uch do'konda 8 500, 9 200 va 7 900 so'mdan sotilmoqda. O'rtacha narx 8 533 so'm bo'lsa, qaysi do'kon narxi o'rtachadan eng kam farq qiladi?",
+      "v": [
+        "9 200 so'mlik do'kon",
+        "8 500 so'mlik do'kon",
+        "7 900 so'mlik do'kon",
+        "Farqlar teng"
+      ],
+      "t": 1,
+      "izoh": "Har bir narxning o'rtachadan chetlanishini modul bilan topamiz: |8 500 − 8 533| = 33, |9 200 − 8 533| = 667 va |7 900 − 8 533| = 633. Eng kichigi 33 bo'lgani uchun javob birinchi do'kon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "byudjet-narx-farqi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#032b41b4"
+    },
+    {
+      "q": "Fermer bug'doyni kilogrammiga 4 200 so'mdan sotishni kutgan edi, bozorda 3 750 so'mdan sotdi. 600 kg mahsulot uchun kutilgan va haqiqiy tushum farqini toping.",
+      "v": [
+        "450 so'm",
+        "2 700 000 so'm",
+        "270 000 so'm",
+        "27 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Bir kilogrammdagi chetlanish |3 750 − 4 200| = 450 so'mni tashkil qiladi. Butun mahsulot uchun bu farq 450 · 600 = 270 000 so'm bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "byudjet-narx-farqi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#1790be53"
+    },
+    {
+      "q": "Oilaviy byudjetda oziq-ovqatga chetlanish +120 000 so'm, transportga −45 000 so'm, kommunal to'lovga −60 000 so'm bo'ldi. Chetlanishlarning umumiy kattaligi qancha?",
+      "v": [
+        "15 000 so'm",
+        "−15 000 so'm",
+        "105 000 so'm",
+        "225 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Umumiy kattalik chetlanishlar modullari yig'indisiga teng: 120 000 + 45 000 + 60 000 = 225 000 so'm. Algebraik yig'indi esa atigi 15 000 so'm bo'lib, u haqiqiy tebranishni yashiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "byudjet-narx-farqi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#7cf4bf6b"
+    },
+    {
+      "q": "Beshta o'quvchining test ballari 62, 70, 55, 74 va 64 ga teng. O'rtacha ball 65 bo'lsa, ballarning o'rtachadan absolyut chetlanishlari yig'indisini toping.",
+      "v": [
+        "28",
+        "0",
+        "5,6",
+        "325"
+      ],
+      "t": 0,
+      "izoh": "Har bir chetlanishni modul bilan hisoblaymiz: 3, 5, 10, 9 va 1. Ularni qo'shamiz: 3 + 5 + 10 + 9 + 1 = 28. Bu yig'indi tarqoqlikni ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-absolyut-ogish",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#6867c2aa"
+    },
+    {
+      "q": "To'rt kunlik sotuv 48, 52, 39 va 61 donani tashkil qildi. O'rtacha sotuvni topib, birinchi kunning o'rtachadan chetlanishini modul bilan aniqlang.",
+      "v": [
+        "−2 dona",
+        "2 dona",
+        "50 dona",
+        "4 dona"
+      ],
+      "t": 1,
+      "izoh": "O'rtacha sotuv (48 + 52 + 39 + 61) : 4 = 200 : 4 = 50 dona. Birinchi kunning chetlanishi |48 − 50| = 2 dona bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-absolyut-ogish",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#b749006e"
+    },
+    {
+      "q": "Uzunlik uch marta o'lchanib 12,3 sm, 13,0 sm va 12,7 sm natijalar olindi. Haqiqiy uzunlik 12,5 sm bo'lsa, o'lchovlarning o'rtacha absolyut xatosini hisoblang.",
+      "v": [
+        "0,9 sm",
+        "0,1 sm",
+        "0,3 sm",
+        "0,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Xatolarni modul bilan topamiz: |12,3 − 12,5| = 0,2, |13,0 − 12,5| = 0,5 va |12,7 − 12,5| = 0,2. Yig'indi 0,9 bo'lib, o'rtachasi 0,9 : 3 = 0,3 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-absolyut-ogish",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#9429aec1"
+    },
+    {
+      "q": "Birinchi sotuvchining haftalik chetlanishlari +7, −7, +6, −6 dona, ikkinchisiniki esa 0, +1, −1, +2 dona. Qaysi sotuvchi rejaga barqarorroq amal qilgan?",
+      "v": [
+        "Birinchisi, chetlanishlar yig'indisi 0 dona",
+        "Ikkalasi bir xil, chunki algebraik yig'indi 0",
+        "Birinchisi, chetlanishlar yig'indisi 26 dona",
+        "Ikkinchisi, chetlanishlar yig'indisi 4 dona"
+      ],
+      "t": 3,
+      "izoh": "Barqarorlik chetlanishlar modullari yig'indisi bilan o'lchanadi. Birinchisida 7 + 7 + 6 + 6 = 26, ikkinchisida esa 0 + 1 + 1 + 2 = 4 chiqadi. Algebraik yig'indi birinchisida 0, ikkinchisida +2 bo'lsa ham, u qarama-qarshi ishorali tebranishni yashirgani uchun mezon bo'la olmaydi. Modullar yig'indisi kichik bo'lgan ikkinchi sotuvchi barqarorroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-absolyut-ogish",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#cd65dd42"
+    },
+    {
+      "q": "√5 ≈ 2,24 ekanini hisobga olib, |√5 − 3| ifodani modul belgisisiz ko'rinishda yozing.",
+      "v": [
+        "3 − √5",
+        "√5 − 3",
+        "√5 + 3",
+        "−3 − √5"
+      ],
+      "t": 0,
+      "izoh": "√5 taxminan 2,24 bo'lgani uchun √5 − 3 < 0, ya'ni modul ostidagi ifoda manfiy. Manfiy ifodaning moduli unga qarama-qarshi ifodaga teng: |√5 − 3| = 3 − √5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "irratsional-ifoda-ishorasi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#ee31e6aa"
+    },
+    {
+      "q": "π ≈ 3,14 deb olib, |π − 4| + |π − 3| ifodani modulsiz yozing va soddalashtiring.",
+      "v": [
+        "2π − 7",
+        "1",
+        "7 − 2π",
+        "−1"
+      ],
+      "t": 1,
+      "izoh": "π < 4 bo'lgani uchun π − 4 < 0 va |π − 4| = 4 − π. Ayni paytda π > 3, demak π − 3 > 0 va |π − 3| = π − 3. Yig'indi (4 − π) + (π − 3) = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "irratsional-ifoda-ishorasi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#97f314db"
+    },
+    {
+      "q": "√10 soni 3 dan katta ekanini hisobga olib, |2 − √10| ifodani modul belgisisiz ifodalang.",
+      "v": [
+        "2 − √10",
+        "−2 − √10",
+        "√10 − 2",
+        "2 + √10"
+      ],
+      "t": 2,
+      "izoh": "√10 > 3 bo'lgani uchun 2 − √10 < 0 bo'ladi. Manfiy ifodaning moduli qarama-qarshi ifodaga teng: |2 − √10| = −(2 − √10) = √10 − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "irratsional-ifoda-ishorasi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#d4d736fd"
+    },
+    {
+      "q": "√3 ≈ 1,73 ekani ma'lum bo'lsa, |√3 − 1| − |1 − √3| ifodaning qiymatini toping.",
+      "v": [
+        "2√3 − 2",
+        "2 − 2√3",
+        "2√3",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "√3 > 1 bo'lgani uchun √3 − 1 > 0 va birinchi modul √3 − 1 ga teng. Ikkinchi ifoda 1 − √3 < 0, uning moduli ham √3 − 1. Ayirma (√3 − 1) − (√3 − 1) = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "irratsional-ifoda-ishorasi",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#1af4c650"
+    },
+    {
+      "q": "Sonlar o'qida −8 nuqtaga nolga nisbatan simmetrik nuqtaning koordinatasi va uning moduli qanday bo'ladi?",
+      "v": [
+        "8 va 8",
+        "−8 va 8",
+        "8 va −8",
+        "0 va 8"
+      ],
+      "t": 0,
+      "izoh": "Nolga nisbatan simmetrik nuqta qarama-qarshi koordinataga ega, demak −8 ning simmetrigi 8. Simmetrik nuqtalarning noldan uzoqligi bir xil bo'lgani uchun modul ham 8 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-simmetriya",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#30f99f8e"
+    },
+    {
+      "q": "Sonlar o'qida A(−6) va B(10) nuqtalar berilgan. Ular orasidagi kesma o'rtasining koordinatasini va uning noldan uzoqligini toping.",
+      "v": [
+        "8 va 8",
+        "2 va 2",
+        "16 va 16",
+        "−2 va 2"
+      ],
+      "t": 1,
+      "izoh": "O'rta nuqtaning koordinatasi (−6 + 10) : 2 = 2 ga teng. Uning noldan uzoqligi |2| = 2 bo'ladi. Koordinatalarni emas, ularning modullarini o'rtalash xato natija beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-simmetriya",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#7310ca44"
+    },
+    {
+      "q": "Sonlar o'qida C nuqta −3 va 11 nuqtalardan teng uzoqlikda joylashgan. C ning koordinatasi va bu teng uzoqlik qanchaga teng?",
+      "v": [
+        "4 va 14",
+        "7 va 4",
+        "4 va 7",
+        "8 va 7"
+      ],
+      "t": 2,
+      "izoh": "Teng uzoqlikdagi nuqta kesmaning o'rtasida yotadi: C = (−3 + 11) : 2 = 4. Uzoqlikni modul bilan tekshiramiz: |4 − (−3)| = 7 va |11 − 4| = 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-simmetriya",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#d5e17226"
+    },
+    {
+      "q": "|x| = |−9| tenglikni qanoatlantiruvchi x qiymatlari sonlar o'qida qanday joylashadi?",
+      "v": [
+        "Faqat bitta nuqta: 9",
+        "Faqat bitta nuqta: −9",
+        "9 dan −9 gacha bo'lgan kesmaning barcha nuqtalari",
+        "Nolga nisbatan simmetrik ikkita nuqta: 9 va −9"
+      ],
+      "t": 3,
+      "izoh": "|−9| = 9 bo'lgani uchun tenglama |x| = 9 ko'rinishga keladi. Uning yechimlari x = 9 va x = −9 bo'lib, ular noldan bir xil uzoqlikda, qarama-qarshi tomonlarda yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-simmetriya",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#642552b6"
+    },
+    {
+      "q": "Jadvalda to'rt shaharning me'yordan harorat chetlanishi berilgan: Nukus +3, Buxoro −2, Andijon +5, Xiva −4. Chetlanish moduli eng katta va eng kichik bo'lgan shaharlarni aniqlang.",
+      "v": [
+        "Andijon va Buxoro",
+        "Andijon va Xiva",
+        "Xiva va Buxoro",
+        "Nukus va Buxoro"
+      ],
+      "t": 0,
+      "izoh": "Chetlanishning kattaligi modul bilan o'lchanadi: |+3| = 3, |−2| = 2, |+5| = 5, |−4| = 4. Eng kattasi 5 bo'lib Andijonga, eng kichigi 2 bo'lib Buxoroga tegishli. Ishora faqat chetlanish yo'nalishini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-chetlanish-tahlili",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#d69c9cb0"
+    },
+    {
+      "q": "Beshta o'lchov xatosi quyidagicha: −0,4; +0,7; −0,9; +0,2; −0,6. Moduli 0,5 dan katta bo'lgan xatolar nechta?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "5 ta"
+      ],
+      "t": 1,
+      "izoh": "Xatolarning modullari 0,4, 0,7, 0,9, 0,2 va 0,6 ga teng. Ulardan 0,5 dan kattalari 0,7, 0,9 va 0,6 bo'lib, jami uchta xato shartga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-chetlanish-tahlili",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#e07988c2"
+    },
+    {
+      "q": "Do'konning to'rt kunlik daromadi rejadan −180, +240, −95 va +35 ming so'mga farq qildi. Chetlanishlarning umumiy kattaligi va sof natijasi qanday?",
+      "v": [
+        "0 va 550",
+        "550 va 550",
+        "550 va 0",
+        "370 va 0"
+      ],
+      "t": 2,
+      "izoh": "Modullar yig'indisi 180 + 240 + 95 + 35 = 550 ming so'mni beradi. Sof natija esa −180 + 240 − 95 + 35 = 0. Demak kunlik tebranishlar katta bo'lsa ham, to'rt kunlik reja aniq bajarilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-chetlanish-tahlili",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#910f3aac"
+    },
+    {
+      "q": "Sportchining besh urinishdagi natijasi me'yordan 0; −1,2; +0,8; −0,5 va +1,4 sekundga farq qildi. Chetlanish moduli eng katta va eng kichik bo'lgan urinishlar modullarining ayirmasini toping.",
+      "v": [
+        "2,6 s",
+        "0,5 s",
+        "1,2 s",
+        "1,4 s"
+      ],
+      "t": 3,
+      "izoh": "Chetlanish modullari 0; 1,2; 0,8; 0,5 va 1,4 ga teng. Ular orasida eng kattasi 1,4, eng kichigi esa 0. Ayirma 1,4 − 0 = 1,4 sekundni beradi. Ishoralar faqat me'yordan qaysi tomonga og'ilganini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-chetlanish-tahlili",
+      "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati#05efff02"
+    }
+  ]
+}

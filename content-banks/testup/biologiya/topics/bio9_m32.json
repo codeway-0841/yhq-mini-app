@@ -1,0 +1,621 @@
+{
+  "nom": "Biologiya-9, 32-§. Energiya almashinuvi bosqichlari, 81-bet",
+  "bolim": "V BOB. Hujayralarda moddalar va energiya almashinuvi",
+  "savollar": [
+    {
+      "q": "Tirik organizmlar hujayrasidagi energiya almashinuvi jarayoni necha bosqichga ajratiladi?",
+      "v": [
+        "Uchta bosqichga",
+        "Ikkita bosqichga",
+        "To'rtta bosqichga",
+        "Beshta bosqichga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra tirik organizmlar hujayrasida kechadigan energiya almashinuvi jarayonini uchta bosqichga ajratish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m32#ae71e178"
+    },
+    {
+      "q": "Energiya almashinuvining birinchi bosqichi qanday nomlanadi?",
+      "v": [
+        "Tayyorgarlik bosqichi",
+        "Glikoliz bosqichi",
+        "Kislorodli parchalanish bosqichi",
+        "Aerob oksidlanish bosqichi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra birinchi bosqich — tayyorgarlik bosqichi bo'lib, unda yirik molekulalar oddiy molekulalarga parchalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m32#fe4b2102"
+    },
+    {
+      "q": "Tayyorgarlik bosqichida qaysi moddalarning yirik molekulalari oddiy molekulalarga parchalanadi?",
+      "v": [
+        "Uglevodlar, yog'lar, oqsillar va nuklein kislotalar",
+        "Faqat uglevodlar va yog'lar",
+        "Faqat oqsillar va vitaminlar",
+        "Faqat nuklein kislotalar va suv"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra tayyorgarlik bosqichida uglevodlar, yog'lar, oqsillar, nuklein kislotalarning yirik molekulalari oddiy molekulalarga parchalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#03f6fbca"
+    },
+    {
+      "q": "Tayyorgarlik bosqichida kraxmal qaysi moddagacha parchalanadi?",
+      "v": [
+        "Glukozagacha",
+        "Aminokislotagacha",
+        "Glitseringacha",
+        "Yog' kislotasigacha"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra tayyorgarlik bosqichida kraxmal glukozagacha parchalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m32#8ff62caa"
+    },
+    {
+      "q": "Tayyorgarlik bosqichida yog'lar qaysi moddalargacha parchalanadi?",
+      "v": [
+        "Yog' kislotasi va glitseringacha",
+        "Glukoza va aminokislotagacha",
+        "Sut kislotasi va suvgacha",
+        "Etil spirti va CO2 gacha"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra yog'lar yog' kislotasi va glitseringacha parchalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#c8a4bbf6"
+    },
+    {
+      "q": "Tayyorgarlik bosqichida oqsillar qaysi moddagacha parchalanadi?",
+      "v": [
+        "Aminokislotalargacha",
+        "Glukozagacha",
+        "Glitseringacha",
+        "Yog' kislotasigacha"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra oqsillar aminokislotalargacha parchalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m32#3e52346a"
+    },
+    {
+      "q": "Tayyorgarlik bosqichida parchalanish natijasida hosil bo'lgan energiya qanday tarqaladi?",
+      "v": [
+        "Barchasi issiqlik energiyasi sifatida tashqi muhitga ajraladi",
+        "Barchasi ATF sifatida to'planadi",
+        "Yarmi issiqlik, yarmi ATF sifatida saqlanadi",
+        "Barchasi sut kislotasida to'planadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bu bosqichda hosil bo'lgan energiyaning barchasi issiqlik energiyasi sifatida tashqi muhitga ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#6faa7e86"
+    },
+    {
+      "q": "Energiya almashinuvining ikkinchi bosqichi qanday nomlanadi?",
+      "v": [
+        "Glikoliz",
+        "Tayyorgarlik bosqichi",
+        "Aerob parchalanish",
+        "Spirtli achish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra ikkinchi bosqich — glikoliz, ya'ni kislorodsiz (anaerob) parchalanish deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m32#738935c6"
+    },
+    {
+      "q": "Glikoliz boshqacha qanday nomlanadi?",
+      "v": [
+        "Kislorodsiz (anaerob) parchalanish",
+        "Kislorodli (aerob) parchalanish",
+        "To'la parchalanish",
+        "Tayyorgarlik bosqichi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra glikoliz kislorodsiz (anaerob) parchalanish deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m32#af4976dc"
+    },
+    {
+      "q": "Odam, ko'pgina hayvonlar va mikroorganizmlar hujayrasida asosiy energiya manbai nima hisoblanadi?",
+      "v": [
+        "Glukoza",
+        "Sut kislotasi",
+        "Etil spirti",
+        "Glitserin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra odam, ko'pgina hayvonlar va mikroorganizmlar hujayrasida asosiy energiya manbai glukoza hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#854ccaa6"
+    },
+    {
+      "q": "Glikoliz jarayoni nimalardan iborat?",
+      "v": [
+        "Ketma-ket keluvchi bir qancha fermentativ reaksiyalar yig'indisidan",
+        "Bitta oddiy kimyoviy reaksiyadan",
+        "Faqat fizik jarayonlardan",
+        "Kislorod ishtirokidagi oksidlanish reaksiyalaridan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra glikoliz ketma-ket keluvchi bir qancha fermentativ reaksiyalar yig'indisidan iboratdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#640c6de5"
+    },
+    {
+      "q": "Glikoliz jarayonida qancha oraliq reaksiyalar hosil bo'ladi?",
+      "v": [
+        "O'ndan ortiq",
+        "Uchtadan ortiq emas",
+        "Aynan beshta",
+        "Aynan ikkita"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra glikolizning hosil bo'lishida o'ndan ortiq oraliq reaksiyalar hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#938464be"
+    },
+    {
+      "q": "Glikoliz jarayonida bitta glukoza molekulasidan nechta ATF molekulasi hosil bo'ladi?",
+      "v": [
+        "2 molekula ATF",
+        "36 molekula ATF",
+        "38 molekula ATF",
+        "4 molekula ATF"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra glikoliz jarayonida glukoza parchalanib, ikki molekula ATF hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#01caf237"
+    },
+    {
+      "q": "Glikoliz jarayonida glukoza parchalanib ATFdan tashqari yana qaysi modda hosil bo'ladi?",
+      "v": [
+        "Sut kislotasi (2 molekula)",
+        "Etil spirti",
+        "Glitserin",
+        "Aminokislota"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra glikolizda glukoza parchalanib, ikki molekula ATF va ikki molekula sut kislotasi molekulalari hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#eee88068"
+    },
+    {
+      "q": "Glikoliz jarayonida qaysi ikkita modda doimo ishtirok etadi?",
+      "v": [
+        "H3PO4 va ADF",
+        "O2 va CO2",
+        "Sut kislotasi va suv",
+        "Glukoza va etil spirti"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra glikolizda doimo H3PO4 va ADF ishtirok etadi, ular hujayrada hamisha bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m32#6f3f57f3"
+    },
+    {
+      "q": "Glikoliz jarayonida qancha energiya ajralib chiqadi?",
+      "v": [
+        "200 kJ",
+        "2600 kJ",
+        "2800 kJ",
+        "1520 kJ"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra glikoliz natijasida 200 kJ energiya ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#d1c98bf3"
+    },
+    {
+      "q": "Glikolizda ajralgan energiyaning necha foizi issiqlik sifatida ajraladi?",
+      "v": [
+        "60 %",
+        "40 %",
+        "44,6 %",
+        "55,4 %"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra glikolizdagi energiyaning 60 % issiqlik sifatida ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m32#cc003ce8"
+    },
+    {
+      "q": "Glikolizda ajralgan energiyaning necha foizi ATF sifatida tejaladi?",
+      "v": [
+        "40 %",
+        "60 %",
+        "55,4 %",
+        "44,6 %"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra glikolizdagi energiyaning 40 % ATF sifatida tejaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m32#27c5d952"
+    },
+    {
+      "q": "Glikoliz jarayoni qaysi hujayralarda amalga oshadi?",
+      "v": [
+        "Barcha hayvon hujayralarida va ba'zi mikroorganizmlar hujayralarida",
+        "Faqat o'simlik hujayralarida",
+        "Faqat mitoxondriyaga ega hujayralarda",
+        "Faqat nerv hujayralarida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra glikoliz jarayoni barcha hayvon hujayralarida va ba'zi mikroorganizmlarning hujayralarida amalga oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#dbf4b409"
+    },
+    {
+      "q": "Spirtli achish jarayoni tuzilishi jihatidan nimadan iborat?",
+      "v": [
+        "Glikoliz singari bir qancha fermentativ reaksiyalar zanjiridan",
+        "Bitta oddiy kimyoviy reaksiyadan",
+        "Faqat kislorodli oksidlanish reaksiyalaridan",
+        "Faqat fizik jarayonlardan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra spirtli achish ham glikoliz singari bir qancha fermentativ reaksiyalar zanjiridan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#16eea8d0"
+    },
+    {
+      "q": "Spirtli achish natijasida qanday moddalar hosil bo'ladi?",
+      "v": [
+        "CO2, etil spirti, ATF va suv",
+        "Sut kislotasi, ATF va suv",
+        "Glukoza, kislorod va suv",
+        "Aminokislota va glitserin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra spirtli achish natijasida CO2, etil spirti, ATF va suv hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#02787a86"
+    },
+    {
+      "q": "Spirtli achish natijasida qancha energiya va nechta ATF hosil bo'ladi?",
+      "v": [
+        "200 kJ energiya va 2 molekula ATF",
+        "2600 kJ energiya va 36 molekula ATF",
+        "2800 kJ energiya va 38 molekula ATF",
+        "400 kJ energiya va 4 molekula ATF"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra spirtli achishda ham 200 kJ energiya va 2 molekula ATF hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#5e672849"
+    },
+    {
+      "q": "Bir molekula ADFning ATFga aylanishidan qancha energiya ATFda tejaladi?",
+      "v": [
+        "40 kJ",
+        "80 kJ",
+        "120 kJ",
+        "200 kJ"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bir molekula ADFning ATFga aylanishidan 40 kJ energiya ATFda tejaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m32#deda9c5b"
+    },
+    {
+      "q": "Kislorodsiz parchalanishda 2 molekula ATF hosil bo'lganda ATFda jami qancha energiya tejaladi?",
+      "v": [
+        "80 kJ (2 x 40)",
+        "40 kJ",
+        "120 kJ",
+        "200 kJ"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra kislorodsiz parchalanishda 2 molekula ATF hosil bo'lib, 2 x 40 = 80 kJ energiya ATFda tejaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m32#c4544ce1"
+    },
+    {
+      "q": "Kislorodsiz parchalanishda qancha energiya issiqlik sifatida tarqaladi?",
+      "v": [
+        "120 kJ",
+        "80 kJ",
+        "40 kJ",
+        "200 kJ"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra kislorodsiz parchalanishda 200 kJdan 80 kJ ATFda tejalib, 120 kJ energiya issiqlik sifatida tarqaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m32#5d06bebf"
+    },
+    {
+      "q": "Energiya almashinuvining uchinchi bosqichi qanday nomlanadi?",
+      "v": [
+        "Kislorodli (aerob) parchalanish",
+        "Glikoliz",
+        "Tayyorgarlik bosqichi",
+        "Spirtli achish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra uchinchi bosqich — kislorodli (aerob) parchalanish hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m32#0406f6f6"
+    },
+    {
+      "q": "Kislorodli (aerob) parchalanish yana qanday nomlanadi?",
+      "v": [
+        "To'la parchalanish",
+        "Kislorodsiz parchalanish",
+        "Tayyorgarlik bosqichi",
+        "Anaerob parchalanish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra uchinchi bosqich — kislorodli (aerob) parchalanish, ya'ni to'la parchalanish hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#4392fa9d"
+    },
+    {
+      "q": "Aerob oksidlanish hujayraning qaysi organoidida amalga oshadi?",
+      "v": [
+        "Mitoxondriyada",
+        "Ribosomada",
+        "Yadroda",
+        "Hujayra membranasida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra aerob oksidlanish mitoxondriyada amalga oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#f19e5f86"
+    },
+    {
+      "q": "Aerob parchalanish amalga oshishi uchun nima bo'lishi shart?",
+      "v": [
+        "Kislorod",
+        "Sut kislotasi",
+        "Etil spirti",
+        "Glitserin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra aerob parchalanish amalga oshishi uchun kislorod bo'lishi shart.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m32#b14e5113"
+    },
+    {
+      "q": "Kislorodli parchalanish natijasida qancha energiya hosil bo'ladi?",
+      "v": [
+        "2600 kJ",
+        "200 kJ",
+        "2800 kJ",
+        "1520 kJ"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra kislorodli parchalanish natijasida 2600 kJ energiya hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#f9a6816b"
+    },
+    {
+      "q": "Glikolizda hosil bo'lgan 2 molekula sut kislotasi mitoxondriyada kislorod ta'sirida parchalanganda nechta ATF hosil bo'ladi?",
+      "v": [
+        "36 molekula ATF",
+        "2 molekula ATF",
+        "38 molekula ATF",
+        "18 molekula ATF"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra glikolizda hosil bo'lgan 2 molekula sut kislotasi mitoxondriyada kislorod ta'sirida parchalanganda 36 molekula ATF hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#f0b2be39"
+    },
+    {
+      "q": "Kislorodli parchalanishda ajralgan 2600 kJ energiyaning necha foizi issiqlik sifatida ajraladi?",
+      "v": [
+        "44,6 %",
+        "55,4 %",
+        "60 %",
+        "40 %"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra kislorodli parchalanishdan hosil bo'lgan energiyaning 44,6 % issiqlik sifatida ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m32#63fffbac"
+    },
+    {
+      "q": "Kislorodli parchalanishda ajralgan 2600 kJ energiyaning necha foizi ATFda to'planadi?",
+      "v": [
+        "55,4 %",
+        "44,6 %",
+        "40 %",
+        "60 %"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra kislorodli parchalanishda energiyaning 55,4 % ATFda to'planadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m32#45dead22"
+    },
+    {
+      "q": "Bir molekula glukoza to'liq parchalanganda (kislorodsiz + kislorodli) jami nechta ATF hosil bo'ladi?",
+      "v": [
+        "38 ATF (2 + 36)",
+        "36 ATF",
+        "40 ATF",
+        "2 ATF"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra glukoza to'liq parchalanganda 2 + 36 = 38 ATF hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#c5af261b"
+    },
+    {
+      "q": "Glukoza to'liq parchalanganda 38 ATFda qancha energiya to'planadi?",
+      "v": [
+        "1520 kJ (38 x 40)",
+        "2800 kJ",
+        "2600 kJ",
+        "200 kJ"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra 38 x 40 = 1520 kJ energiya ATFda to'planadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m32#35ba98d7"
+    },
+    {
+      "q": "Bir molekula glukoza to'liq parchalanganda jami qancha energiya hosil bo'ladi?",
+      "v": [
+        "2800 kJ (200 + 2600)",
+        "1520 kJ",
+        "2600 kJ",
+        "200 kJ"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra glukoza to'liq parchalanganda 200 + 2600 = 2800 kJ hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#476de4c1"
+    },
+    {
+      "q": "Bir molekula glukoza kislorodsiz parchalansa qancha, kislorodli parchalansa qancha energiya ajraladi?",
+      "v": [
+        "Kislorodsizda 200 kJ, kislorodlida 2600 kJ",
+        "Kislorodsizda 2600 kJ, kislorodlida 200 kJ",
+        "Ikkalasida ham 2800 kJ",
+        "Kislorodsizda 40 kJ, kislorodlida 80 kJ"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bir molekula glukoza kislorodsiz parchalansa 200 kJ, kislorodli parchalanishda esa 2600 kJ ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#7451eb15"
+    },
+    {
+      "q": "Qaysi hollarda hujayrada kislorodli parchalanish amalga oshmay qolishi mumkin?",
+      "v": [
+        "Kislorod yetishmaganda yoki mitoxondriyalar shikastlanganda",
+        "Glukoza ko'p bo'lganda",
+        "Fermentlar ko'payganda",
+        "Harorat pasayganda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra kislorod yetishmaganda yoki mitoxondriyalar shikastlanganda kislorodli parchalanish qiyinlashadi yoki amalga oshmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#9975c60d"
+    },
+    {
+      "q": "Kislorodli parchalanish amalga oshmaganda hujayra ATFni faqat qaysi jarayondan oladi?",
+      "v": [
+        "Kislorodsiz jarayondan",
+        "Kislorodli jarayondan",
+        "Tayyorgarlik bosqichidan",
+        "Fotosintezdan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bunday hollarda hujayra hayoti uchun zarur ATFni faqat kislorodsiz jarayondan oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#c06e364b"
+    },
+    {
+      "q": "Faqat kislorodsiz jarayondan foydalanilganda normadagiga nisbatan qancha ko'p glukoza sarflanadi?",
+      "v": [
+        "20 barobar ko'p",
+        "2 barobar ko'p",
+        "36 barobar ko'p",
+        "10 barobar ko'p"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra faqat kislorodsiz jarayon uchun normadagiga nisbatan 20 barobar ko'p glukoza sarflash kerak bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m32#db32fcc7"
+    },
+    {
+      "q": "Aerob parchalanishning har bir oraliq bosqichida ajraladigan energiya anaerob parchalanishga nisbatan qanday bo'ladi?",
+      "v": [
+        "Ancha yuqori bo'ladi",
+        "Ancha past bo'ladi",
+        "Teng bo'ladi",
+        "Umuman ajralmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra aerob parchalanish bosqichlarida ajraladigan energiya miqdori anaerob parchalanishga nisbatan ancha yuqori bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m32#5e19c913"
+    }
+  ]
+}

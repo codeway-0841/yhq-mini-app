@@ -1,0 +1,471 @@
+{
+  "nom": "12-mavzu. Kimyoviy reaksiyalarning sodir bo'lishi. Kimyoviy reaksiya tenglamalari. Koeffitsientlar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kimyoviy tenglama deganda nimani tushunamiz?",
+      "v": [
+        "Kimyoviy reaksiyalarning kimyoviy formulalar yordamida ifodalanishini",
+        "Moddalarning jadval shaklida berilishini",
+        "Atomlarning sonini hisoblashni",
+        "Moddaning massasini o'lchashni"
+      ],
+      "t": 0,
+      "izoh": "12-§ ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#8c389618"
+    },
+    {
+      "q": "Reaksiya tenglamasida reaksiyaga kirishayotgan moddalarning formulalari qayerga yoziladi?",
+      "v": [
+        "«=» ishorasining chap tomoniga",
+        "«=» ishorasining o'ng tomoniga",
+        "Tenglamaning ustiga",
+        "Ixtiyoriy joyga"
+      ],
+      "t": 0,
+      "izoh": "Reagentlar chapga, mahsulotlar o'ngga yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#6d47315e"
+    },
+    {
+      "q": "Reaksiya tenglamasida moddalar orasiga qanday ishora qo'yiladi?",
+      "v": [
+        "«+»",
+        "«-»",
+        "«=»",
+        "«·»"
+      ],
+      "t": 0,
+      "izoh": "Moddalar orasiga «+» ishorasi qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#4d7c914b"
+    },
+    {
+      "q": "Kimyoviy tenglamada koeffitsientlar nima uchun qo'yiladi?",
+      "v": [
+        "Chap va o'ng tomondagi atomlar sonini tenglashtirish uchun",
+        "Moddalarning massasini oshirish uchun",
+        "Formulalarni chiroyli ko'rsatish uchun",
+        "Reaksiyani tezlashtirish uchun"
+      ],
+      "t": 0,
+      "izoh": "Atomlar soni reaksiyada o'zgarmaydi, shuning uchun koeffitsientlar qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#31910d53"
+    },
+    {
+      "q": "2H2 + O2 = 2H2O tenglamasida vodorod moddasi oldidagi koeffitsient qanday?",
+      "v": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Vodorod atomlarini tenglashtirish uchun 2 koeffitsient qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#f88bf651"
+    },
+    {
+      "q": "H2 + O2 = H2O tenglamasini tenglashtirishda birinchi bo'lib qaysi modda oldiga koeffitsient qo'yiladi?",
+      "v": [
+        "H2O oldiga 2 koeffitsient",
+        "H2 oldiga",
+        "O2 oldiga",
+        "Hech biriga"
+      ],
+      "t": 0,
+      "izoh": "Darslikda avval H2O oldiga 2 qo'yilib kislorod atomlari tenglashtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#49a5ca7c"
+    },
+    {
+      "q": "Mg + O2 = MgO tenglamasi to'g'ri tenglashtirilganda koeffitsientlar qanday bo'ladi?",
+      "v": [
+        "2Mg + O2 = 2MgO",
+        "Mg + O2 = 2MgO",
+        "Mg + 2O2 = 2MgO",
+        "2Mg + 2O2 = 2MgO"
+      ],
+      "t": 0,
+      "izoh": "2Mg + O2 = 2MgO — atomlar soni teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#a3003b10"
+    },
+    {
+      "q": "HgO = Hg + O2 tenglamasini to'g'ri tenglang.",
+      "v": [
+        "2HgO = 2Hg + O2",
+        "HgO = Hg + O2",
+        "2HgO = Hg + 2O2",
+        "HgO = 2Hg + O2"
+      ],
+      "t": 0,
+      "izoh": "2HgO = 2Hg + O2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#3c489613"
+    },
+    {
+      "q": "Fe + Cl2 = FeCl3 tenglamasini to'g'ri tenglang.",
+      "v": [
+        "2Fe + 3Cl2 = 2FeCl3",
+        "Fe + Cl2 = FeCl3",
+        "Fe + 3Cl2 = 2FeCl3",
+        "2Fe + Cl2 = 2FeCl3"
+      ],
+      "t": 0,
+      "izoh": "2Fe + 3Cl2 = 2FeCl3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#c1a36de0"
+    },
+    {
+      "q": "Na + Cl2 = NaCl tenglamasini to'g'ri tenglang.",
+      "v": [
+        "2Na + Cl2 = 2NaCl",
+        "Na + 2Cl2 = 2NaCl",
+        "2Na + 2Cl2 = 2NaCl",
+        "Na + Cl2 = 2NaCl"
+      ],
+      "t": 0,
+      "izoh": "2Na + Cl2 = 2NaCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#4e2f125c"
+    },
+    {
+      "q": "Ohaktosh (CaCO3) parchalanganda kalsiy oksid (CaO) va karbonat angidrid (CO2) hosil bo'ladi. Reaksiya tenglamasi qanday?",
+      "v": [
+        "CaCO3 = CaO + CO2",
+        "2CaCO3 = CaO + 2CO2",
+        "2CaCO3 = 2CaO + CO2",
+        "CaCO3 = 2CaO + CO2"
+      ],
+      "t": 0,
+      "izoh": "CaCO3 = CaO + CO2 — koeffitsientlar kerak emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#144c988e"
+    },
+    {
+      "q": "Kimyoviy reaksiya sodir bo'lishi uchun reaksiyaga kirishayotgan moddalarning molekulalari nima qilishi kerak?",
+      "v": [
+        "To'qnashishi kerak",
+        "Bir-biridan uzoqlashishi",
+        "Parchalanishi",
+        "Kamayishi"
+      ],
+      "t": 0,
+      "izoh": "12-§: molekulalar to'qnashishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#f63b3b90"
+    },
+    {
+      "q": "Reaksiya sodir bo'lishini osonlashtirish uchun qattiq moddalar bilan nima qilish lozim?",
+      "v": [
+        "Ular maydalanishi yoki kukun holiga keltirilishi lozim",
+        "Ular sovitilishi kerak",
+        "Ular yirik bo'laklanishi kerak",
+        "Hech narsa qilish shart emas"
+      ],
+      "t": 0,
+      "izoh": "Tegib turadigan yuza satxi katta bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#d3133d1f"
+    },
+    {
+      "q": "Reaksiya sodir bo'lishini tezlashtirish uchun nimadan foydalanish lozim?",
+      "v": [
+        "Moddalarning eritmalaridan",
+        "Quruq moddalardan",
+        "Yirik kristallardan",
+        "Metall folgadan"
+      ],
+      "t": 0,
+      "izoh": "12-§: moddalarning eritmalaridan foydalanish reaksiyani tezlashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#ead43e54"
+    },
+    {
+      "q": "Sham yonishida issiqlik berish nega kerak?",
+      "v": [
+        "Reaksiyaning boshlanishi uchun; keyin reaksiya o'zicha davom etadi",
+        "Reaksiyani butunlay to'xtatish uchun",
+        "To'xtovsiz qizdirish uchun",
+        "Issiqlik umuman kerak emas"
+      ],
+      "t": 0,
+      "izoh": "Sham yonishi boshida issiqlik beriladi, keyin reaksiya o'zicha davom etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#12313791"
+    },
+    {
+      "q": "Qaysi reaksiya uchun issiqlik to'xtovsiz berilishi kerak (qizdirish to'xtatilsa, reaksiya ham to'xtaydi)?",
+      "v": [
+        "Shakarning parchalanishi",
+        "Shamning yonishi",
+        "Yog'ochning yonishi",
+        "Fosforning yonishi"
+      ],
+      "t": 0,
+      "izoh": "12-§: shakar parchalanishi to'xtovsiz qizdirishni talab qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#a37f7bc8"
+    },
+    {
+      "q": "Mis xona haroratida havo kislorodi bilan tez ta'sirlashishi uchun nima kerak?",
+      "v": [
+        "Qizdirish",
+        "Sovitish",
+        "Suvga solish",
+        "Yoritish"
+      ],
+      "t": 0,
+      "izoh": "Misni qizdirish kerak bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#23ed7cc7"
+    },
+    {
+      "q": "2H2 + O2 = 2H2O tenglamasi qanday o'qiladi?",
+      "v": [
+        "«ikki ash ikki plus o ikki teng ikki ash ikki o»",
+        "«ikki ash ikki teng o ikki plyus ash ikki o»",
+        "«ash ikki plyus o ikki teng ash ikki o»",
+        "«ash ikki o plyus o ikki teng ash ikki o ikki»"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi o'qilish tartibi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#f9aad4c7"
+    },
+    {
+      "q": "Oddiy sham ochiq havoda turganda nima kuzatiladi?",
+      "v": [
+        "Hech qanday hodisa ro‘y bermaydi",
+        "Sham darhol yonib ketadi",
+        "Sham portlaydi",
+        "Sham zanglaydi"
+      ],
+      "t": 0,
+      "izoh": "Oddiy sham ochiq havoda turganda hech qanday hodisa ro‘y bermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#18bac819"
+    },
+    {
+      "q": "Tabiiy gaz va havo yig‘ilib qolgan yopiq xonada kichik uchqun nima keltirib chiqaradi?",
+      "v": [
+        "Kuchli portlashni",
+        "Sekin zanglashni",
+        "Cho‘kma hosil bo‘lishini",
+        "Hech narsani"
+      ],
+      "t": 0,
+      "izoh": "Kichik uchqun yoki cho‘g‘lanib turgan sigareta bu xonada kuchli portlashga sabab bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#5bb92c66"
+    },
+    {
+      "q": "Mis xona haroratida havo kislorodi bilan ta’sirlashishi uchun qancha vaqt kerak bo‘ladi?",
+      "v": [
+        "Bir necha yillab vaqt",
+        "Bir necha soniya",
+        "Bir necha soat",
+        "Bir necha kun"
+      ],
+      "t": 0,
+      "izoh": "Mis xona haroratida havo kislorodi bilan ta’sirlashmaydi, buning uchun bir necha yillab vaqt kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#930da0ff"
+    },
+    {
+      "q": "Kimyoviy reaksiya tenglamasida hosil bo‘layotgan moddalarning formulalari qayerga yoziladi?",
+      "v": [
+        "«=» ishorasining o‘ng tomoniga",
+        "«=» ishorasining chap tomoniga",
+        "Tenglama ustiga",
+        "Qavs ichiga"
+      ],
+      "t": 0,
+      "izoh": "Reaksiya natijasida hosil bo‘layotgan moddalar formulalari o‘ng tomonga yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#fb48537a"
+    },
+    {
+      "q": "Kimyoviy reaksiya natijasida atomlar soni qanday o‘zgaradi?",
+      "v": [
+        "O‘zgarmay qoladi",
+        "Ko‘payadi",
+        "Kamayadi",
+        "Nolga teng bo‘ladi"
+      ],
+      "t": 0,
+      "izoh": "Atomlar soni reaksiya natijasida o‘zgarmay qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#87154fb7"
+    },
+    {
+      "q": "H2 + O2 = H2O tenglamasida birinchi navbatda qaysi element atomlari soni tenglashtiriladi?",
+      "v": [
+        "Kislorod",
+        "Vodorod",
+        "Ikkalasi bir vaqtda",
+        "Hech biri"
+      ],
+      "t": 0,
+      "izoh": "Avval suv molekulasi oldiga 2 koeffitsienti qo‘yilib, kislorod atomlari tenglashtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#5e5e5944"
+    },
+    {
+      "q": "Oq fosforga havo tegishi bilan qanday reaksiya sodir bo‘ladi?",
+      "v": [
+        "Darhol yonadi",
+        "Sekin eriydi",
+        "Bug‘lanadi",
+        "Hech qanday o‘zgarish bo‘lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Oq fosforga havo tegishi bilan yonish reaksiyasi sodir bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#bafd682e"
+    },
+    {
+      "q": "Vodorod va kislorod o‘zaro reaksiyaga kirishib qanday modda hosil qiladi?",
+      "v": [
+        "Suv",
+        "Vodorod peroksid",
+        "Ammiak",
+        "Karbonat angidrid"
+      ],
+      "t": 0,
+      "izoh": "Vodorod va kislorod reaksiyaga kirishib suv hosil qiladi: H2, O2, H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#54a8098e"
+    },
+    {
+      "q": "Reaksiya sodir bo‘lishini osonlashtirish uchun qattiq moddalarning qanday bo‘lishi lozim?",
+      "v": [
+        "Maydalanishi yoki kukun holiga keltirilishi",
+        "Katta bo‘lak holida saqlanishi",
+        "Sovutilishi",
+        "Suvda cho‘ktirilishi"
+      ],
+      "t": 0,
+      "izoh": "Qattiq moddalar maydalanishi yoki kukun holiga keltirilishi lozim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#ea917832"
+    },
+    {
+      "q": "Ba’zi reaksiyalarni boshida qizdirib qo‘yilsa kifoya qiladi, chunki keyin...",
+      "v": [
+        "reaksiya o‘z-o‘zidan davom etadi",
+        "reaksiya darhol to‘xtaydi",
+        "moddalar zanglay boshlaydi",
+        "cho‘kma hosil bo‘ladi"
+      ],
+      "t": 0,
+      "izoh": "Ba’zi reaksiyalar boshida qizdirib qo‘yilsa kifoya, so‘ng o‘z-o‘zidan davom etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#71b96bc0"
+    },
+    {
+      "q": "Ohaktosh (CaCO3) parchalanish reaksiyasi tenglamasi qanday?",
+      "v": [
+        "CaCO3 = CaO + CO2",
+        "CaCO3 = Ca + CO3",
+        "CaO + CO2 = CaCO3",
+        "CaCO3 + H2O = CaO + H2CO3"
+      ],
+      "t": 0,
+      "izoh": "Ohaktosh parchalanganda kalsiy oksid va karbonat angidrid hosil bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#5c6705f0"
+    },
+    {
+      "q": "Koeffitsientlar kimyoviy tenglamada qayerga qo‘yiladi?",
+      "v": [
+        "Moddalar oldiga",
+        "Element belgisining pastki o‘ng tomoniga",
+        "Tenglama oxiriga",
+        "«+» ishorasi oldiga"
+      ],
+      "t": 0,
+      "izoh": "Zarurat tug‘ilsa, koeffitsientlar moddalar oldiga qo‘yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#d8876463"
+    },
+    {
+      "q": "Kimyoviy tenglama tenglab olinganda «=» belgisi nimani bildiradi?",
+      "v": [
+        "Chap va o‘ng tomondagi atomlar sonining tengligini",
+        "Moddalarning massasi teng emasligini",
+        "Reaksiyaning to‘xtaganini",
+        "Moddalarning hajmi tengligini"
+      ],
+      "t": 0,
+      "izoh": "Tenglamaning chap va o‘ng tomonidagi atomlar soni tenglashganda «=» belgisi o‘z ma’nosiga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m12-kimyoviy-reaksiyalarning-sodir-bolishi-kimyoviy-reaksiya-ten#3fb2ab96"
+    }
+  ]
+}

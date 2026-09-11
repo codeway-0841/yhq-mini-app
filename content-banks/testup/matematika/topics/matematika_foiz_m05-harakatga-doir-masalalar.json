@@ -1,0 +1,1609 @@
+{
+  "nom": "Harakatga doir masalalar",
+  "bolim": "Nisbat, foiz va matnli masalalar",
+  "blok": "foiz",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Toshkent bilan Buxoro oralig'i 280 km. Anvar Toshkentdan 60 km/soat, Bekzod Buxorodan 80 km/soat tezlik bilan bir vaqtda bir-biriga qarab yo'lga chiqdi. Ular necha soatdan keyin uchrashadi?",
+      "v": [
+        "2 soat",
+        "3,5 soat",
+        "4 soat",
+        "14 soat"
+      ],
+      "t": 0,
+      "izoh": "Qarama-qarshi harakatda yaqinlashish tezligi tezliklarning yig'indisiga teng: 60 + 80 = 140 km/soat. Uchrashuv vaqti t = 280 : 140 = 2 soat. 3,5 soat — faqat Bekzodning tezligiga bo'lish, 4 soat — o'rtacha 70 km/soat deb olish, 14 soat — tezliklar ayirmasiga bo'lish xatosi. Javob: 2 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-uchrashuv-vaqti",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#9d596933"
+    },
+    {
+      "q": "Ikki qishloq oralig'i 45 km. Dilshod velosipedda 18 km/soat, Sardor esa 12 km/soat tezlik bilan bir vaqtda qarama-qarshi yo'lga chiqdi. Uchrashuvgacha qancha vaqt o'tadi?",
+      "v": [
+        "7,5 soat",
+        "2,5 soat",
+        "1,5 soat",
+        "3,75 soat"
+      ],
+      "t": 2,
+      "izoh": "Yaqinlashish tezligi 18 + 12 = 30 km/soat bo'ladi. Demak t = 45 : 30 = 1,5 soat. 2,5 soat — 45 ni 18 ga bo'lish, 3,75 soat — 45 ni 12 ga bo'lish, 7,5 soat — tezliklar ayirmasi 6 ga bo'lish xatosi. Javob: 1,5 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-uchrashuv-vaqti",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#3af65f48"
+    },
+    {
+      "q": "Ikki shahar oralig'idagi 420 km masofani ikki avtomobil bir-biriga qarab bosib o'tdi va 3 soatdan keyin uchrashdi. Birinchisining tezligi 60 km/soat bo'lsa, ikkinchisiniki qancha?",
+      "v": [
+        "140 km/soat",
+        "80 km/soat",
+        "70 km/soat",
+        "60 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Uchrashguncha ikkalasi birgalikda 420 km yo'l bosgan, demak yig'indi tezlik 420 : 3 = 140 km/soat. Ikkinchi avtomobil tezligi 140 − 60 = 80 km/soat. 140 km/soat — yig'indi tezlikni javob deb olish, 70 km/soat — 420 ni 6 ga bo'lish, 60 km/soat — tezliklar teng deb o'ylash. Javob: 80 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-tezlikni-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#0c3e1f2c"
+    },
+    {
+      "q": "Ikki poyezd ikki stansiyadan bir vaqtda bir-biriga qarab jo'nadi va 4 soatdan keyin uchrashdi. Tezliklari 55 km/soat va 45 km/soat bo'lsa, stansiyalar orasidagi masofani toping.",
+      "v": [
+        "400 km",
+        "220 km",
+        "180 km",
+        "40 km"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi tezlik 55 + 45 = 100 km/soat. Bosib o'tilgan umumiy masofa S = 100 · 4 = 400 km. 220 km — faqat birinchi poyezdning yo'li, 180 km — faqat ikkinchisiniki, 40 km — tezliklar ayirmasini vaqtga ko'paytirish xatosi. Javob: 400 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-masofani-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#7b5ead01"
+    },
+    {
+      "q": "Nodira maktabdan 5 km/soat, akasi esa kutubxonadan 7 km/soat tezlik bilan bir vaqtda bir-biriga qarab yurdi. Maktab bilan kutubxona oralig'i 3,6 km bo'lsa, ular necha daqiqadan keyin uchrashadi?",
+      "v": [
+        "43 daqiqa",
+        "9 daqiqa",
+        "30 daqiqa",
+        "18 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Yaqinlashish tezligi 5 + 7 = 12 km/soat. Vaqt t = 3,6 : 12 = 0,3 soat. 0,3 soat = 0,3 · 60 = 18 daqiqa. 30 daqiqa — 0,3 soatni xato o'qish, 43 daqiqa — faqat Nodiraning tezligini olish, 9 daqiqa — masofani teng ikkiga bo'lib yuborish. Javob: 18 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarama-qarshi-uchrashuv-daqiqada",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#4ce4a72b"
+    },
+    {
+      "q": "Ikki velosipedchi bitta maydondan bir vaqtda qarama-qarshi tomonlarga 14 km/soat va 16 km/soat tezlik bilan yo'lga chiqdi. 2,5 soatdan keyin ular orasidagi masofa qancha bo'ladi?",
+      "v": [
+        "75 km",
+        "35 km",
+        "40 km",
+        "5 km"
+      ],
+      "t": 0,
+      "izoh": "Qarama-qarshi tomonga ketganda uzoqlashish tezligi 14 + 16 = 30 km/soat. Masofa S = 30 · 2,5 = 75 km. 35 km — faqat birinchisining yo'li, 40 km — faqat ikkinchisiniki, 5 km — tezliklar ayirmasini vaqtga ko'paytirish. Javob: 75 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzoqlashish-masofasi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#8210d75a"
+    },
+    {
+      "q": "Ikki avtobus bitta bekatdan qarama-qarshi yo'nalishda jo'nadi va 3 soatdan keyin ular orasidagi masofa 285 km bo'ldi. Birinchi avtobusning tezligi 50 km/soat bo'lsa, ikkinchisiniki qancha?",
+      "v": [
+        "95 km/soat",
+        "145 km/soat",
+        "50 km/soat",
+        "45 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Uzoqlashish tezligi 285 : 3 = 95 km/soat. Bu ikki tezlikning yig'indisi, demak ikkinchi avtobus tezligi 95 − 50 = 45 km/soat. 95 km/soat — yig'indini javob deb olish, 145 km/soat — ayirish o'rniga qo'shish, 50 km/soat — tezliklar teng deb o'ylash. Javob: 45 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzoqlashish-tezlikni-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#928fc07e"
+    },
+    {
+      "q": "Ko'lda ikki qayiq bitta joydan qarama-qarshi tomonga 10 km/soat va 14 km/soat tezlik bilan suzib ketdi. Ular orasidagi masofa 96 km bo'lishi uchun necha soat o'tishi kerak?",
+      "v": [
+        "9,6 soat",
+        "4 soat",
+        "6,9 soat",
+        "24 soat"
+      ],
+      "t": 1,
+      "izoh": "Uzoqlashish tezligi 10 + 14 = 24 km/soat. Vaqt t = 96 : 24 = 4 soat. 9,6 soat — faqat birinchi qayiq tezligiga bo'lish, 6,9 soat — faqat ikkinchisiga bo'lish, 24 soat — tezliklar ayirmasi 4 ga bo'lish xatosi. Javob: 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzoqlashish-vaqtini-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#0df27e8d"
+    },
+    {
+      "q": "Ikki yuk poyezdi bitta stansiyadan qarama-qarshi yo'nalishda 40 km/soat va 52 km/soat tezlik bilan jo'nadi. Ular orasidagi masofa 138 km bo'lganda jo'nashdan beri qancha vaqt o'tgan?",
+      "v": [
+        "1,5 soat",
+        "2,65 soat",
+        "3,45 soat",
+        "11,5 soat"
+      ],
+      "t": 0,
+      "izoh": "Uzoqlashish tezligi 40 + 52 = 92 km/soat. Vaqt t = 138 : 92 = 1,5 soat. 3,45 soat — 138 ni 40 ga bo'lish, 2,65 soat — 138 ni 52 ga bo'lish, 11,5 soat — tezliklar ayirmasi 12 ga bo'lish natijasi. Javob: 1,5 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzoqlashish-vaqtini-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#59f39b20"
+    },
+    {
+      "q": "Yuk mashinasi omborxonadan 40 km/soat tezlik bilan chiqdi. Oradan 2 soat o'tgach xuddi shu yo'ldan 60 km/soat tezlikdagi yengil avtomobil yo'lga tushdi. Avtomobil yuk mashinasini necha soatda quvib yetadi?",
+      "v": [
+        "0,8 soat",
+        "1,3 soat",
+        "4 soat",
+        "2 soat"
+      ],
+      "t": 2,
+      "izoh": "Yuk mashinasi 2 soatda 40 · 2 = 80 km oldinga ketgan. Bir tomonga harakatda yaqinlashish tezligi ayirmaga teng: 60 − 40 = 20 km/soat. Quvib yetish vaqti 80 : 20 = 4 soat. 2 soat — 80 ni 40 ga bo'lish, 1,3 soat — 80 ni 60 ga bo'lish, 0,8 soat — tezliklar yig'indisiga bo'lish xatosi. Javob: 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvib-yetish-vaqti",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#ee93f424"
+    },
+    {
+      "q": "Velosipedchi 12 km/soat tezlik bilan yo'l bo'ylab ketmoqda va u mototsikldan 3 km oldinda. Mototsikl 27 km/soat tezlik bilan uning ortidan bormoqda. Necha daqiqadan keyin mototsikl velosipedchini quvib yetadi?",
+      "v": [
+        "12 daqiqa",
+        "15 daqiqa",
+        "20 daqiqa",
+        "7 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Yaqinlashish tezligi 27 − 12 = 15 km/soat. Vaqt t = 3 : 15 = 0,2 soat, ya'ni 0,2 · 60 = 12 daqiqa. 20 daqiqa — 0,2 soatni noto'g'ri o'qish, 15 daqiqa — faqat velosipedchi tezligini olish, 7 daqiqa — faqat mototsikl tezligini olish. Javob: 12 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvib-yetish-daqiqada",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#f37601cd"
+    },
+    {
+      "q": "Bir yo'lda ikki avtomobil bir tomonga qarab ketmoqda: oldingisi 75 km/soat, orqadagisi 90 km/soat. Hozir ular orasidagi masofa 45 km bo'lsa, orqadagisi oldingisini qancha vaqtda quvib yetadi?",
+      "v": [
+        "0,5 soat",
+        "3 soat",
+        "0,6 soat",
+        "0,3 soat"
+      ],
+      "t": 1,
+      "izoh": "Bir tomonga harakatda yaqinlashish tezligi 90 − 75 = 15 km/soat. Vaqt t = 45 : 15 = 3 soat. 0,5 soat — 45 ni 90 ga bo'lish, 0,6 soat — 45 ni 75 ga bo'lish, 0,3 soat — tezliklar yig'indisi 165 ga bo'lish xatosi. Javob: 3 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvib-yetish-vaqti",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#52740809"
+    },
+    {
+      "q": "Sardor uydan soat 08:00 da 5 km/soat tezlik bilan piyoda chiqdi. Otasi soat 08:30 da velosipedda 15 km/soat tezlik bilan uning ortidan yo'lga tushdi. Otasi o'g'lini soat nechada quvib yetadi?",
+      "v": [
+        "08:40",
+        "08:45",
+        "09:00",
+        "09:15"
+      ],
+      "t": 1,
+      "izoh": "Sardor yarim soatda 5 · 0,5 = 2,5 km oldinga ketgan. Yaqinlashish tezligi 15 − 5 = 10 km/soat, vaqt 2,5 : 10 = 0,25 soat, ya'ni 15 daqiqa. 08:30 ga 15 daqiqa qo'shsak 08:45 bo'ladi. 09:00 — 0,25 soatni yarim soat deb olish, 08:40 — 10 daqiqa deb hisoblash, 09:15 — 45 daqiqa deb olish. Javob: 08:45.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvib-yetish-soat-vaqti",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#4fb54e3c"
+    },
+    {
+      "q": "Birinchi poyezd 60 km/soat tezlik bilan ketmoqda va ikkinchisidan 90 km oldinda. Ikkinchi poyezd uni roppa-rosa 2 soatda quvib yetishi uchun uning tezligi qanday bo'lishi kerak?",
+      "v": [
+        "15 km/soat",
+        "45 km/soat",
+        "150 km/soat",
+        "105 km/soat"
+      ],
+      "t": 3,
+      "izoh": "90 km ni 2 soatda yopish uchun yaqinlashish tezligi 90 : 2 = 45 km/soat bo'lishi kerak. Bu tezliklar ayirmasi, demak ikkinchi poyezd tezligi 60 + 45 = 105 km/soat. 45 km/soat — nisbiy tezlikni javob deb olish, 15 km/soat — 60 dan ayirish, 150 km/soat — masofani to'g'ridan-to'g'ri tezlikka qo'shish. Javob: 105 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvib-yetish-tezlikni-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#acc75507"
+    },
+    {
+      "q": "Sardor soat 08:00 da uydan 4 km/soat tezlik bilan piyoda chiqdi, Jasur esa soat 09:00 da xuddi shu yo'ldan 6 km/soat tezlik bilan yurdi. Jasur uydan necha kilometr uzoqlikda Sardorni quvib yetadi?",
+      "v": [
+        "4 km",
+        "8 km",
+        "12 km",
+        "24 km"
+      ],
+      "t": 2,
+      "izoh": "Sardor bir soatda 4 km oldinga ketadi. Yaqinlashish tezligi 6 − 4 = 2 km/soat, quvib yetish vaqti 4 : 2 = 2 soat. Jasur shu vaqtda 6 · 2 = 12 km yuradi. 4 km — boshlang'ich oraliqni javob deb olish, 8 km — Sardorning ikki soatlik yo'li, 24 km — vaqtni 4 soat deb olish. Javob: 12 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvib-yetish-nuqtasi-masofasi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#b520db3b"
+    },
+    {
+      "q": "Sayr yo'lida birinchi piyoda 5 km/soat tezlik bilan yo'lga chiqdi, ikkinchisi esa 45 daqiqa kechikib 8 km/soat tezlik bilan yengil yugurib ortidan tushdi. Ikkinchisi yo'lga chiqqan joydan qancha masofada birinchisini quvib yetadi?",
+      "v": [
+        "3,75 km",
+        "6,25 km",
+        "1,25 km",
+        "10 km"
+      ],
+      "t": 3,
+      "izoh": "45 daqiqa = 0,75 soat, shu vaqtda birinchi piyoda 5 · 0,75 = 3,75 km ketgan. Yaqinlashish tezligi 8 − 5 = 3 km/soat, vaqt 3,75 : 3 = 1,25 soat. Ikkinchisi 8 · 1,25 = 10 km yo'l bosadi. 3,75 km — boshlang'ich oraliq, 6,25 km — birinchisining shu vaqtdagi yo'li, 1,25 km — vaqtni masofa deb olish. Javob: 10 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quvib-yetish-nuqtasi-masofasi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#2ac12da9"
+    },
+    {
+      "q": "Qoidabuzar avtomobil postdan 90 km/soat tezlik bilan o'tib ketdi. Oradan 12 daqiqa o'tgach patrul mashinasi 120 km/soat tezlik bilan uning ortidan chiqdi. Patrul mashinasi quvib yetguncha necha kilometr yo'l bosadi?",
+      "v": [
+        "18 km",
+        "36 km",
+        "54 km",
+        "72 km"
+      ],
+      "t": 3,
+      "izoh": "12 daqiqa = 0,2 soat, shu vaqtda qoidabuzar 90 · 0,2 = 18 km ketgan. Yaqinlashish tezligi 120 − 90 = 30 km/soat, vaqt 18 : 30 = 0,6 soat. Patrul 120 · 0,6 = 72 km yo'l bosadi. 18 km — boshlang'ich oraliq, 54 km — qoidabuzarning shu vaqtdagi qo'shimcha yo'li, 36 km — boshlang'ich 18 km oraliqni ikkilantirish (quvish vaqtini 0,6 emas, 0,3 soat deb olish). Javob: 72 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quvib-yetish-bosilgan-yol",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#1736c1af"
+    },
+    {
+      "q": "Mototsikl 63 km/soat, avtobus esa 45 km/soat tezlik bilan bitta yo'ldan bir tomonga ketmoqda. Mototsikl avtobusni 50 daqiqada quvib yetgan bo'lsa, dastlab ular orasidagi masofa qancha edi?",
+      "v": [
+        "15 km",
+        "37,5 km",
+        "52,5 km",
+        "90 km"
+      ],
+      "t": 0,
+      "izoh": "50 daqiqa = 5/6 soat. Yaqinlashish tezligi 63 − 45 = 18 km/soat. Boshlang'ich masofa S = 18 · 5/6 = 15 km. 52,5 km — mototsiklning shu vaqtdagi yo'li, 37,5 km — avtobusning yo'li, 90 km — tezliklar yig'indisini vaqtga ko'paytirish. Javob: 15 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvib-yetish-boshlangich-masofa",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#1234ab1d"
+    },
+    {
+      "q": "Qayiqning turg'un suvdagi tezligi 18 km/soat, daryo oqimining tezligi esa 3 km/soat. Qayiq oqim bo'ylab 63 km masofani necha soatda bosib o'tadi?",
+      "v": [
+        "3 soat",
+        "3,5 soat",
+        "4,2 soat",
+        "21 soat"
+      ],
+      "t": 0,
+      "izoh": "Oqim bo'ylab tezlik 18 + 3 = 21 km/soat. Vaqt t = 63 : 21 = 3 soat. 3,5 soat — oqimni hisobga olmay 18 ga bo'lish, 4,2 soat — oqimga qarshi tezlik 15 ga bo'lish, 21 soat — tezlikni javob bilan chalkashtirish. Javob: 3 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqim-boylab-vaqt",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#7710d686"
+    },
+    {
+      "q": "Kemaning turg'un suvdagi tezligi 17 km/soat, oqim tezligi 2 km/soat. Kema oqimga qarshi 90 km masofani bosib o'tishi uchun qancha vaqt kerak bo'ladi?",
+      "v": [
+        "4,7 soat",
+        "5,3 soat",
+        "6,9 soat",
+        "6 soat"
+      ],
+      "t": 3,
+      "izoh": "Oqimga qarshi tezlik 17 − 2 = 15 km/soat. Vaqt t = 90 : 15 = 6 soat. 5,3 soat — oqimni hisobga olmay 17 ga bo'lish, 4,7 soat — oqim bo'ylab tezlik 19 ga bo'lish, 6,9 soat — oqimni ikki marta ayirish (17 − 2 − 2 = 13). Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqimga-qarshi-vaqt",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#059f57cf"
+    },
+    {
+      "q": "Kemaning turg'un suvdagi tezligi 22 km/soat, daryo oqimi 3 km/soat. Kema oqim bo'ylab to'xtamasdan 4 soat suzdi. U necha kilometr masofani bosib o'tgan?",
+      "v": [
+        "100 km",
+        "88 km",
+        "76 km",
+        "12 km"
+      ],
+      "t": 0,
+      "izoh": "Oqim bo'ylab tezlik 22 + 3 = 25 km/soat. Masofa S = 25 · 4 = 100 km. 88 km — oqimni hisobga olmaslik, 76 km — oqimga qarshi tezlikni olish, 12 km — faqat oqim tezligini vaqtga ko'paytirish. Javob: 100 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqim-boylab-masofa",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#6741ced6"
+    },
+    {
+      "q": "Turg'un suvdagi tezligi 24 km/soat bo'lgan kema oqimga qarshi harakatlanib 3 soatda 63 km yo'l bosdi. Shu daryodagi oqimning tezligini toping.",
+      "v": [
+        "1,5 km/soat",
+        "3 km/soat",
+        "21 km/soat",
+        "45 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Kemaning oqimga qarshi tezligi 63 : 3 = 21 km/soat. Bu turg'un tezlikdan oqim tezligi ayirilgani, demak oqim 24 − 21 = 3 km/soat. 21 km/soat — oqimga qarshi tezlikni javob deb olish, 45 km/soat — ayirish o'rniga qo'shish, 1,5 km/soat — farqni yana ikkiga bo'lish. Javob: 3 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqim-tezligini-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#f7841439"
+    },
+    {
+      "q": "Qayiqning oqim bo'ylab tezligi 27 km/soat, daryo oqimining tezligi esa 4 km/soat ekani ma'lum. Shu qayiqning oqimga qarshi tezligi qanday bo'ladi?",
+      "v": [
+        "15 km/soat",
+        "19 km/soat",
+        "23 km/soat",
+        "31 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Qayiqning turg'un suvdagi tezligi 27 − 4 = 23 km/soat. Oqimga qarshi tezlik esa 23 − 4 = 19 km/soat, ya'ni oqim bo'ylab tezlikdan ikkilangan oqim ayiriladi. 23 km/soat — turg'un tezlikni javob deb olish, 31 km/soat — qo'shib yuborish, 15 km/soat — oqimni uch marta ayirish. Javob: 19 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqim-boylabdan-qarshiga-otish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#712e9c41"
+    },
+    {
+      "q": "Qayiqning oqim bo'ylab tezligi 30 km/soat, oqimga qarshi tezligi esa 22 km/soat. Shu daryo oqimining tezligi qancha?",
+      "v": [
+        "2 km/soat",
+        "4 km/soat",
+        "8 km/soat",
+        "26 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Oqim bo'ylab va oqimga qarshi tezliklarning ayirmasi ikkilangan oqim tezligiga teng: 30 − 22 = 8. Demak oqim tezligi 8 : 2 = 4 km/soat. 8 km/soat — ikkiga bo'lishni unutish, 26 km/soat — yarim yig'indi, ya'ni turg'un tezlik, 2 km/soat — yana ikkiga bo'lish. Javob: 4 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-tezlikdan-oqimni-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#df749f61"
+    },
+    {
+      "q": "Kema oqim bo'ylab 96 km masofani 4 soatda, xuddi shu masofani oqimga qarshi 6 soatda bosib o'tdi. Kemaning turg'un suvdagi tezligini toping.",
+      "v": [
+        "4 km/soat",
+        "16 km/soat",
+        "24 km/soat",
+        "20 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Oqim bo'ylab tezlik 96 : 4 = 24 km/soat, oqimga qarshi tezlik 96 : 6 = 16 km/soat. Turg'un tezlik ularning o'rta arifmetigi: (24 + 16) : 2 = 20 km/soat. 24 km/soat va 16 km/soat — oraliq tezliklarni javob deb olish, 4 km/soat — oqim tezligi. Javob: 20 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-vaqtdan-turgun-tezlik",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#bc56d7ea"
+    },
+    {
+      "q": "Qayiq 40 km masofani oqim bo'ylab 2 soatda, oqimga qarshi esa 2,5 soatda bosib o'tdi. Shu daryodagi oqimning tezligi qancha ekanini aniqlang.",
+      "v": [
+        "2 km/soat",
+        "4 km/soat",
+        "18 km/soat",
+        "36 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Oqim bo'ylab tezlik 40 : 2 = 20 km/soat, oqimga qarshi 40 : 2,5 = 16 km/soat. Oqim tezligi (20 − 16) : 2 = 2 km/soat. 4 km/soat — ikkiga bo'lishni unutish, 18 km/soat — turg'un tezlik, 36 km/soat — ikki tezlik yig'indisi. Javob: 2 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-vaqtdan-oqim-tezligi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#355c1ae3"
+    },
+    {
+      "q": "Kema oqimga qarshi 7 soat suzib 91 km yo'l bosdi. Daryo oqimining tezligi 3 km/soat bo'lsa, kemaning turg'un suvdagi tezligi qanday?",
+      "v": [
+        "10 km/soat",
+        "13 km/soat",
+        "16 km/soat",
+        "19 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Kemaning oqimga qarshi tezligi 91 : 7 = 13 km/soat. Bu turg'un tezlikdan oqim ayirilgani, demak turg'un tezlik 13 + 3 = 16 km/soat. 13 km/soat — oqimga qarshi tezlikni javob deb olish, 10 km/soat — qo'shish o'rniga ayirish, 19 km/soat — oqimni ikki marta qo'shish. Javob: 16 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarshi-tezlikdan-turgunni-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#3f7a8447"
+    },
+    {
+      "q": "Qayiqchi bandargohdan 36 km narigi qishloqqa oqim bo'ylab suzib borib, yana o'sha yo'ldan qaytdi. Qayiqning turg'un suvdagi tezligi 15 km/soat, oqim 3 km/soat bo'lsa, butun sayohat necha soat davom etadi?",
+      "v": [
+        "4 soat",
+        "4,8 soat",
+        "5 soat",
+        "6 soat"
+      ],
+      "t": 2,
+      "izoh": "Oqim bo'ylab tezlik 15 + 3 = 18 km/soat, unga 36 : 18 = 2 soat ketadi. Oqimga qarshi tezlik 15 − 3 = 12 km/soat, qaytishga 36 : 12 = 3 soat. Jami 2 + 3 = 5 soat. 4 soat — ikki tomonni ham oqim bo'ylab hisoblash, 4,8 soat — 72 ni 15 ga bo'lish, 6 soat — ikki tomonni ham oqimga qarshi hisoblash. Javob: 5 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "borib-qaytish-jami-vaqt",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#ad836142"
+    },
+    {
+      "q": "Qayiq A bandargohdan B bandargohga oqim bo'ylab 3 soatda yetib bordi, qaytishga esa 4,5 soat sarfladi. Daryo oqimining tezligi 2 km/soat bo'lsa, bandargohlar orasidagi masofani toping.",
+      "v": [
+        "24 km",
+        "30 km",
+        "36 km",
+        "45 km"
+      ],
+      "t": 2,
+      "izoh": "Qayiqning turg'un tezligini v deb olamiz. Masofa ikki yo'l uchun teng: 3 · (v + 2) = 4,5 · (v − 2). Bundan 3v + 6 = 4,5v − 9, ya'ni 1,5v = 15 va v = 10 km/soat. Masofa S = 3 · 12 = 36 km. 30 km — turg'un tezlikni masofa hisobiga qo'yish, 24 km — oqimga qarshi tezlikni oqim bo'ylab vaqtga ko'paytirish, 45 km — 10 ni 4,5 ga ko'paytirish. Javob: 36 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-vaqtdan-masofani-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#ec3633d2"
+    },
+    {
+      "q": "Turizm guruhi qayiqda 48 km narigi orolga borib qaytdi. Qayiqning turg'un suvdagi tezligi 10 km/soat, oqim tezligi 2 km/soat bo'lsa, borish va qaytishga jami qancha vaqt ketadi?",
+      "v": [
+        "8 soat",
+        "9,6 soat",
+        "10 soat",
+        "12 soat"
+      ],
+      "t": 2,
+      "izoh": "Oqim bo'ylab tezlik 12 km/soat, unga 48 : 12 = 4 soat ketadi. Oqimga qarshi tezlik 8 km/soat, qaytishga 48 : 8 = 6 soat. Jami 4 + 6 = 10 soat. 9,6 soat — 96 ni 10 ga bo'lish, ya'ni oqimni umuman hisobga olmaslik, 8 soat — ikki tomonni oqim bo'ylab olish, 12 soat — ikki tomonni oqimga qarshi olish. Javob: 10 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "borib-qaytish-jami-vaqt",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#ac3c2324"
+    },
+    {
+      "q": "Kema oqim bo'ylab 90 km masofani 3 soatda bosib o'tdi. Daryo oqimining tezligi 5 km/soat bo'lsa, kema xuddi shu masofani qaytishda necha soatda bosadi?",
+      "v": [
+        "3 soat",
+        "3,6 soat",
+        "4,5 soat",
+        "6 soat"
+      ],
+      "t": 2,
+      "izoh": "Oqim bo'ylab tezlik 90 : 3 = 30 km/soat, demak turg'un tezlik 30 − 5 = 25 km/soat. Oqimga qarshi tezlik 25 − 5 = 20 km/soat, vaqt 90 : 20 = 4,5 soat. 3,6 soat — turg'un tezlikka bo'lish, 3 soat — vaqt o'zgarmaydi deb o'ylash, 6 soat — tezlikni 15 deb olish. Javob: 4,5 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qaytish-vaqtini-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#a6a35c7d"
+    },
+    {
+      "q": "Daryoda sol 24 km masofani 8 soatda suzib o'tdi. Turg'un suvdagi tezligi 12 km/soat bo'lgan qayiq xuddi shu masofani oqim bo'ylab necha soatda bosadi?",
+      "v": [
+        "1,6 soat",
+        "2 soat",
+        "2,7 soat",
+        "8 soat"
+      ],
+      "t": 0,
+      "izoh": "Sol o'zi harakatlanmaydi, u faqat oqim bilan suzadi, demak oqim tezligi 24 : 8 = 3 km/soat. Qayiqning oqim bo'ylab tezligi 12 + 3 = 15 km/soat, vaqt 24 : 15 = 1,6 soat. 2 soat — oqimni hisobga olmay 12 ga bo'lish, 2,7 soat — oqimga qarshi tezlik 9 ga bo'lish, 8 soat — sol vaqtini takrorlash. Javob: 1,6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sol-oqim-tezligi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#1b4466a7"
+    },
+    {
+      "q": "Ikki bandargoh oralig'i 36 km. Daryo oqimining tezligi 1,5 km/soat bo'lsa, o'z tezligiga ega bo'lmagan sol yuqori bandargohdan quyisiga necha soatda suzib boradi?",
+      "v": [
+        "18 soat",
+        "24 soat",
+        "48 soat",
+        "54 soat"
+      ],
+      "t": 1,
+      "izoh": "Solning tezligi oqim tezligiga teng, ya'ni 1,5 km/soat. Vaqt t = 36 : 1,5 = 24 soat. 54 soat — masofani tezlikka ko'paytirish, 18 soat — 36 ni 2 ga bo'lish, 48 soat — oqimni 0,75 km/soat deb olish. Javob: 24 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sol-suzish-vaqti",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#3a800a21"
+    },
+    {
+      "q": "Daryo yuzasida oqim bilan suzib borayotgan yog'och parcha 45 daqiqada 3 km masofani bosib o'tdi. Shu daryodagi oqimning tezligi qancha?",
+      "v": [
+        "0,25 km/soat",
+        "2,25 km/soat",
+        "4 km/soat",
+        "5 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Yog'och parcha oqim tezligida suzadi. 45 daqiqa = 0,75 soat, demak tezlik 3 : 0,75 = 4 km/soat. 2,25 km/soat — bo'lish o'rniga ko'paytirish, 0,25 km/soat — 0,75 ni 3 ga bo'lish, 5 km/soat — 45 daqiqani 0,6 soat deb olish. Javob: 4 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "suzuvchi-jism-oqim-tezligi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#3d810ffa"
+    },
+    {
+      "q": "Qayiq A bandargohdan B bandargohga oqim bo'ylab 2 soatda yetib boradi, xuddi shu masofani sol 12 soatda suzib o'tadi. Qayiqning turg'un suvdagi tezligi oqim tezligidan necha marta katta?",
+      "v": [
+        "3 marta",
+        "4 marta",
+        "5 marta",
+        "6 marta"
+      ],
+      "t": 2,
+      "izoh": "Oqim tezligini u, masofani S deb olamiz. Sol uchun S = 12u. Qayiq uchun S = 2 · (v + u), demak 2v + 2u = 12u va 2v = 10u, ya'ni v = 5u. Turg'un tezlik oqimdan 5 marta katta. 6 marta — S = 12u dan to'g'ridan-to'g'ri nisbat olish, 4 marta va 3 marta — tenglamani noto'g'ri soddalashtirish. Javob: 5 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sol-va-qayiq-nisbati",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#576f903a"
+    },
+    {
+      "q": "Metroda harakatlanayotgan eskalatorda qimirlamay turgan yo'lovchi 3 daqiqada pastga tushadi. Eskalator to'xtab qolganda esa u xuddi shu masofani 1 daqiqada piyoda bosib tushadi. Harakatlanayotgan eskalatorda yurib tushsa, necha sekund ketadi?",
+      "v": [
+        "30 sekund",
+        "45 sekund",
+        "90 sekund",
+        "120 sekund"
+      ],
+      "t": 1,
+      "izoh": "Eskalator uch daqiqada butun yo'lni bosadi, ya'ni uning unumi 1/3. Yo'lovchining o'z unumi esa 1 (bir daqiqada butun yo'l). Birgalikdagi unum 1 + 1/3 = 4/3, demak vaqt 3/4 daqiqa = 45 sekund. 120 sekund — ikki vaqtning o'rta arifmetigi, 90 sekund — uzun vaqtni ikkiga bo'lish, 30 sekund — qisqa vaqtni ikkiga bo'lish. Javob: 45 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eskalator-birgalikda-vaqt",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#05688dc4"
+    },
+    {
+      "q": "Eskalator to'xtab qolganda Kamola undan 1 daqiqada piyoda tushadi, harakatlanayotgan eskalatorda qimirlamay tursa 2 daqiqada tushadi. Harakatlanayotgan eskalatorda yurib tushsa qancha vaqt ketadi?",
+      "v": [
+        "40 sekund",
+        "30 sekund",
+        "60 sekund",
+        "90 sekund"
+      ],
+      "t": 0,
+      "izoh": "Eskalatorning unumi 1/2 (ikki daqiqada butun yo'l), Kamolaning unumi esa 1. Birgalikda 1 + 1/2 = 3/2, vaqt 2/3 daqiqa, ya'ni 40 sekund. 90 sekund — ikki vaqtning o'rta arifmetigi, 60 sekund — faqat piyoda yurish vaqtini javob deb olish, 30 sekund — bir daqiqani ikkiga bo'lish. Javob: 40 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eskalator-birgalikda-vaqt",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#44693ca7"
+    },
+    {
+      "q": "Yuqoriga ko'tarilayotgan eskalatorda Bekzod yurib borib 30 sekundda tepaga chiqadi, qimirlamay tursa 90 sekundda chiqadi. Eskalator to'xtab qolgan bo'lsa, u necha sekundda tepaga chiqadi?",
+      "v": [
+        "22,5 sekund",
+        "45 sekund",
+        "60 sekund",
+        "120 sekund"
+      ],
+      "t": 1,
+      "izoh": "Butun yo'lni birlik deb olamiz. Birgalikdagi unum 1/30, eskalatorning unumi 1/90. Bekzodning o'z unumi 1/30 − 1/90 = 3/90 − 1/90 = 2/90 = 1/45, demak u 45 sekundda chiqadi. 60 sekund — vaqtlar ayirmasi, 120 sekund — vaqtlar yig'indisi, 22,5 sekund — 45 ni ikkiga bo'lish. Javob: 45 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eskalator-tezligini-ajratish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#6471e837"
+    },
+    {
+      "q": "Bekat eskalatorining uzunligi 45 m, u 0,5 m/s tezlik bilan harakatlanadi. Unda qimirlamay turgan yo'lovchi pastdan tepaga necha sekundda ko'tariladi?",
+      "v": [
+        "22,5 sekund",
+        "45 sekund",
+        "90 sekund",
+        "180 sekund"
+      ],
+      "t": 2,
+      "izoh": "Yo'lovchi eskalator tezligida ko'tariladi, chunki o'zi yurmaydi. Vaqt t = 45 : 0,5 = 90 sekund. 22,5 sekund — bo'lish o'rniga ko'paytirish, 45 sekund — uzunlikni to'g'ridan-to'g'ri sekund deb olish, 180 sekund — tezlikni 0,25 m/s deb hisoblash. Javob: 90 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eskalator-uzunlik-vaqt",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#89fa2eea"
+    },
+    {
+      "q": "Eskalator har sekundda 2 ta pog'onani yuqoriga ko'taradi. Unda ko'tarilayotgan yo'lovchi esa har sekundda 3 ta pog'onaga qadam qo'yadi va 24 sekundda tepaga chiqadi. Eskalatorda jami nechta pog'ona bor?",
+      "v": [
+        "48 ta",
+        "72 ta",
+        "24 ta",
+        "120 ta"
+      ],
+      "t": 3,
+      "izoh": "Yo'lovchi va eskalator birgalikda sekundiga 2 + 3 = 5 ta pog'onani bosib o'tadi. 24 sekundda esa 5 · 24 = 120 ta pog'ona o'tiladi, bu eskalatorning to'liq uzunligi. 72 ta — faqat yo'lovchi bosgan pog'onalar, 48 ta — faqat eskalator ko'targani, 24 ta — vaqtni pog'ona deb olish. Javob: 120 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eskalator-pogona-soni",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#f054525f"
+    },
+    {
+      "q": "Yuqoriga ko'tarilayotgan eskalatorda yo'lovchi 45 ta pog'onaga qadam qo'yib, 15 sekundda tepaga yetdi. Eskalator har sekundda 4 ta pog'onani ko'targan bo'lsa, eskalatordagi pog'onalar soni qancha?",
+      "v": [
+        "45 ta",
+        "60 ta",
+        "75 ta",
+        "105 ta"
+      ],
+      "t": 3,
+      "izoh": "Eskalatorning o'zi 15 sekundda 4 · 15 = 60 ta pog'onani yuqoriga chiqargan. Yo'lovchi qo'shimcha 45 ta pog'ona bosgan, demak jami 60 + 45 = 105 ta. 45 ta — faqat sanalgan pog'onalar, 60 ta — faqat eskalator hissasi, 75 ta — eskalator tezligini 2 pog'ona deb olish. Javob: 105 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eskalator-pogona-soni",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#03595e04"
+    },
+    {
+      "q": "Pastga tushayotgan eskalatorda bola sekundiga 2 ta pog'ona bossa 60 ta pog'ona sanaydi, sekundiga 3 ta pog'ona bossa 75 ta sanaydi. Eskalatorda jami nechta pog'ona bor?",
+      "v": [
+        "90 ta",
+        "120 ta",
+        "135 ta",
+        "150 ta"
+      ],
+      "t": 3,
+      "izoh": "Birinchi holatda tushish vaqti 60 : 2 = 30 sekund, ikkinchisida 75 : 3 = 25 sekund. Eskalator tezligi e bo'lsa, jami pog'ona ikki holatda ham bir xil: 60 + 30e = 75 + 25e, bundan 5e = 15 va e = 3. Jami 60 + 30 · 3 = 150 ta. 135 ta — ikki sanoqni qo'shish, 120 ta — 60 ni ikkilantirish, 90 ta — eskalatorni 1 pog'ona deb olish. Javob: 150 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eskalator-ikki-sanoq",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#d28aa818"
+    },
+    {
+      "q": "Aeroport terminalida harakatlanuvchi tasmaning uzunligi 60 m va u 1 m/s tezlik bilan yuradi. Yo'lovchi tasma ustida 1,5 m/s tezlik bilan oldinga yursa, tasmani necha sekundda bosib o'tadi?",
+      "v": [
+        "24 sekund",
+        "40 sekund",
+        "60 sekund",
+        "120 sekund"
+      ],
+      "t": 0,
+      "izoh": "Yo'lovchining yerga nisbatan tezligi 1 + 1,5 = 2,5 m/s. Vaqt t = 60 : 2,5 = 24 sekund. 40 sekund — faqat o'z yurish tezligini olish, 60 sekund — faqat tasma tezligini olish, 120 sekund — tezliklar ayirmasi 0,5 ga bo'lish. Javob: 24 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tasma-birgalikda-vaqt",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#0b0643c6"
+    },
+    {
+      "q": "Harakatlanuvchi tasmada qimirlamay turgan yo'lovchi uni 80 sekundda, tasma bo'ylab yurgan yo'lovchi esa 32 sekundda bosib o'tadi. Yo'lovchining yurish tezligi tasma tezligidan necha marta katta?",
+      "v": [
+        "1,25 marta",
+        "1,5 marta",
+        "2 marta",
+        "2,5 marta"
+      ],
+      "t": 1,
+      "izoh": "Uzunlikni birlik deb olamiz: tasma unumi 1/80, birgalikdagi unum 1/32. Yo'lovchining o'z unumi 1/32 − 1/80 = 5/160 − 2/160 = 3/160. Nisbat (3/160) : (2/160) = 1,5. 2,5 marta — 80 ni 32 ga bo'lish, 2 marta — unumlarni noto'g'ri ayirish, 1,25 marta — 80 ni 64 ga bo'lish. Javob: 1,5 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tasma-tezliklar-nisbati",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#49a5f1cc"
+    },
+    {
+      "q": "Savdo markazidagi harakatlanuvchi tasmaning uzunligi 48 m, tezligi 0,8 m/s. Tasmada qimirlamay turgan yo'lovchi, yonidagi yo'lakdan 1,2 m/s bilan yurgan yo'lovchidan necha sekund kech yetib boradi?",
+      "v": [
+        "20 sekund",
+        "40 sekund",
+        "60 sekund",
+        "100 sekund"
+      ],
+      "t": 0,
+      "izoh": "Tasmadagi yo'lovchi 48 : 0,8 = 60 sekundda, piyoda esa 48 : 1,2 = 40 sekundda yetib boradi. Farq 60 − 40 = 20 sekund. 60 sekund va 40 sekund — alohida vaqtlarni javob deb olish, 100 sekund — ikki vaqtni qo'shish. Javob: 20 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tasma-vaqt-farqi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#72b6097d"
+    },
+    {
+      "q": "Harakatlanuvchi tasma bo'ylab yurgan yo'lovchi uni 45 sekundda, tasmaning teskari tomoniga qarab yurgan yo'lovchi esa 180 sekundda bosib o'tadi. Tasmada qimirlamay turgan yo'lovchi necha sekundda o'tadi?",
+      "v": [
+        "90 sekund",
+        "112,5 sekund",
+        "120 sekund",
+        "225 sekund"
+      ],
+      "t": 2,
+      "izoh": "Uzunlik birlik bo'lsin, tasma unumi t, yurish unumi p. Tasma bo'ylab p + t = 1/45, teskari tomonga p − t = 1/180. Ikkinchisini birinchisidan ayirsak 2t = 1/45 − 1/180 = 3/180, demak t = 1/120 va tasmada turgan yo'lovchi 120 sekundda o'tadi. 112,5 sekund — ikki vaqtning o'rta arifmetigi, 90 sekund — 45 ni ikkilantirish, 225 sekund — vaqtlar yig'indisi. Javob: 120 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tasma-teskari-yurish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#a76fbba0"
+    },
+    {
+      "q": "Uzunligi 240 m bo'lgan poyezd 72 km/soat tezlik bilan uzunligi 360 m bo'lgan ko'prikdan o'tmoqda. Poyezd ko'prikni to'liq tark etishi uchun necha sekund kerak bo'ladi?",
+      "v": [
+        "12 sekund",
+        "18 sekund",
+        "30 sekund",
+        "42 sekund"
+      ],
+      "t": 2,
+      "izoh": "Avval tezlikni aylantiramiz: 72 km/soat = 72 : 3,6 = 20 m/s. Poyezd ko'prikdan to'liq o'tishi uchun o'z uzunligi bilan ko'prik uzunligi yig'indisini bosishi kerak: 240 + 360 = 600 m. Vaqt 600 : 20 = 30 sekund. 18 sekund — faqat ko'prik uzunligini olish, 12 sekund — faqat poyezd uzunligini olish, 42 sekund — 840 m deb hisoblash. Javob: 30 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "poyezd-koprikdan-otish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#327d64f2"
+    },
+    {
+      "q": "Uzunligi 180 m bo'lgan poyezd 54 km/soat tezlik bilan ko'prikdan 28 sekundda to'liq o'tdi. Shu ko'prikning uzunligi qancha?",
+      "v": [
+        "180 m",
+        "240 m",
+        "420 m",
+        "600 m"
+      ],
+      "t": 1,
+      "izoh": "Tezlik 54 : 3,6 = 15 m/s. Poyezd 28 sekundda 15 · 28 = 420 m yo'l bosgan, bu ko'prik va poyezd uzunliklari yig'indisi. Ko'prik uzunligi 420 − 180 = 240 m. 420 m — umumiy yo'lni javob deb olish, 600 m — ayirish o'rniga qo'shish, 180 m — poyezd uzunligini takrorlash. Javob: 240 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koprik-uzunligini-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#511c9aef"
+    },
+    {
+      "q": "Uzunligi 150 m bo'lgan poyezd uzunligi 500 m bo'lgan tunneldan 26 sekundda to'liq o'tdi. Poyezdning tezligi necha km/soat ekanini toping.",
+      "v": [
+        "25 km/soat",
+        "69,2 km/soat",
+        "72 km/soat",
+        "90 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Poyezd bosgan yo'l 150 + 500 = 650 m, tezlik 650 : 26 = 25 m/s. Uni km/soat ga aylantiramiz: 25 · 3,6 = 90 km/soat. 25 km/soat — m/s ni aylantirmaslik, 69,2 km/soat — faqat tunnel uzunligini olish, 72 km/soat — 20 m/s deb hisoblash. Javob: 90 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "poyezd-tezligini-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#f79de417"
+    },
+    {
+      "q": "Uzunligi 210 m bo'lgan tezyurar poyezd 108 km/soat tezlik bilan uzunligi 480 m bo'lgan ko'prikka kirdi. Poyezdning oxirgi vagoni ko'prikdan chiqquncha necha sekund o'tadi?",
+      "v": [
+        "7 sekund",
+        "16 sekund",
+        "30 sekund",
+        "23 sekund"
+      ],
+      "t": 3,
+      "izoh": "Tezlik 108 : 3,6 = 30 m/s. To'liq o'tish uchun bosiladigan yo'l 210 + 480 = 690 m. Vaqt 690 : 30 = 23 sekund. 16 sekund — faqat ko'prikni hisobga olish, 7 sekund — faqat poyezd uzunligini olish, 30 sekund — tezlik sonini vaqt deb olish. Javob: 23 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "poyezd-koprikdan-otish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#56342306"
+    },
+    {
+      "q": "Poyezd 45 km/soat tezlik bilan uzunligi 400 m bo'lgan ko'prikdan 40 sekundda to'liq o'tdi. Shu poyezdning uzunligi qancha?",
+      "v": [
+        "100 m",
+        "400 m",
+        "500 m",
+        "900 m"
+      ],
+      "t": 0,
+      "izoh": "Tezlik 45 : 3,6 = 12,5 m/s. Bosilgan umumiy yo'l 12,5 · 40 = 500 m. Poyezd uzunligi 500 − 400 = 100 m. 500 m — umumiy yo'lni javob deb olish, 900 m — ayirish o'rniga qo'shish, 400 m — ko'prik uzunligini takrorlash. Javob: 100 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "poyezd-uzunligini-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#368739a4"
+    },
+    {
+      "q": "Uzunligi 195 m bo'lgan poyezd yo'l chetidagi ustundan 13 sekundda o'tib ketdi. Poyezdning tezligi necha km/soat?",
+      "v": [
+        "15 km/soat",
+        "27 km/soat",
+        "54 km/soat",
+        "108 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Ustun nuqta deb qaraladi, shuning uchun poyezd faqat o'z uzunligini bosadi: 195 : 13 = 15 m/s. km/soat ga o'tkazamiz: 15 · 3,6 = 54 km/soat. 15 km/soat — m/s ni aylantirmaslik, 108 km/soat — 3,6 ga ikki marta ko'paytirish, 27 km/soat — 1,8 ga ko'paytirish. Javob: 54 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "poyezd-ustundan-otish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#8fd9b569"
+    },
+    {
+      "q": "Poyezd 72 km/soat tezlik bilan perronda turgan yo'lovchi yonidan 9 sekundda o'tib ketdi. Shu poyezdning uzunligi necha metr?",
+      "v": [
+        "90 m",
+        "180 m",
+        "200 m",
+        "648 m"
+      ],
+      "t": 1,
+      "izoh": "Tezlik 72 : 3,6 = 20 m/s. Turgan odam yonidan o'tishda poyezd o'z uzunligini bosadi, demak uzunlik 20 · 9 = 180 m. 648 m — km/soat ni aylantirmay 72 ni 9 ga ko'paytirish, 200 m — 180 m natijani yumaloq songa yaxlitlab yuborish, 90 m — natijani ikkiga bo'lish. Javob: 180 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "poyezd-uzunligi-ustun-orqali",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#2cd76bb6"
+    },
+    {
+      "q": "Uzunligi 120 m bo'lgan poyezd telegraf ustunidan 6 sekundda o'tdi. Xuddi shu tezlikda u uzunligi 300 m bo'lgan platformadan necha sekundda to'liq o'tadi?",
+      "v": [
+        "6 sekund",
+        "15 sekund",
+        "21 sekund",
+        "27 sekund"
+      ],
+      "t": 2,
+      "izoh": "Ustundan o'tish orqali tezlikni topamiz: 120 : 6 = 20 m/s. Platformadan to'liq o'tish uchun 120 + 300 = 420 m bosiladi, vaqt 420 : 20 = 21 sekund. 15 sekund — faqat platforma uzunligini olish, 6 sekund — vaqt o'zgarmaydi deb o'ylash, 27 sekund — 540 m deb hisoblash. Javob: 21 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "poyezd-ustundan-platformaga",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#23ecba09"
+    },
+    {
+      "q": "Perronda turgan Aziza yonidan uzunligi 176 m bo'lgan poyezd 11 sekundda o'tib ketdi. Poyezdning tezligi necha km/soat bo'lgan?",
+      "v": [
+        "16 km/soat",
+        "28,8 km/soat",
+        "57,6 km/soat",
+        "60 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Poyezd o'z uzunligini bosgan: 176 : 11 = 16 m/s. km/soat ga aylantiramiz: 16 · 3,6 = 57,6 km/soat. 16 km/soat — birlikni aylantirmaslik, 28,8 km/soat — 1,8 ga ko'paytirish, 60 km/soat — javobni yaxlitlab yuborish. Javob: 57,6 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "poyezd-ustundan-otish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#6ea19848"
+    },
+    {
+      "q": "Uzunliklari 150 m va 250 m bo'lgan ikki poyezd qarama-qarshi yo'nalishda 54 km/soat va 90 km/soat tezlik bilan harakatlanmoqda. Ular uchrashgan paytdan to'liq ajralgunga qadar necha sekund o'tadi?",
+      "v": [
+        "4 sekund",
+        "10 sekund",
+        "20 sekund",
+        "40 sekund"
+      ],
+      "t": 1,
+      "izoh": "Qarama-qarshi harakatda nisbiy tezlik yig'indiga teng: 54 + 90 = 144 km/soat = 40 m/s. Bosiladigan yo'l ikki poyezd uzunligi yig'indisi: 150 + 250 = 400 m. Vaqt 400 : 40 = 10 sekund. 40 sekund — tezliklar ayirmasini olish, 20 sekund — faqat bitta poyezd uzunligini olish, 4 sekund — 144 km/soat ni 40 m/s emas, 100 m/s deb aylantirish xatosi. Javob: 10 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-poyezd-qarama-qarshi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#7d1a0713"
+    },
+    {
+      "q": "Uzunligi 180 m bo'lgan poyezd 90 km/soat tezlik bilan, uzunligi 120 m bo'lgan poyezd esa 54 km/soat tezlik bilan bir tomonga ketmoqda. Tezroq poyezd sekinini to'liq quvib o'tishi uchun necha sekund kerak?",
+      "v": [
+        "7,5 sekund",
+        "12 sekund",
+        "18 sekund",
+        "30 sekund"
+      ],
+      "t": 3,
+      "izoh": "Bir tomonga harakatda nisbiy tezlik ayirmaga teng: 90 − 54 = 36 km/soat = 10 m/s. Quvib o'tish uchun 180 + 120 = 300 m bosiladi, vaqt 300 : 10 = 30 sekund. 7,5 sekund — tezliklar yig'indisini olish, 18 sekund — faqat uzun poyezdni olish, 12 sekund — faqat kalta poyezdni olish. Javob: 30 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-poyezd-quvib-otish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#ac7d9244"
+    },
+    {
+      "q": "Uzunliklari 130 m va 170 m bo'lgan ikki poyezd qarama-qarshi yo'nalishda harakatlanib, bir-birini 6 sekundda to'liq o'tdi. Birinchi poyezdning tezligi 72 km/soat bo'lsa, ikkinchisiniki qancha?",
+      "v": [
+        "36 km/soat",
+        "50 km/soat",
+        "108 km/soat",
+        "180 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Bosilgan yo'l 130 + 170 = 300 m, nisbiy tezlik 300 : 6 = 50 m/s = 180 km/soat. Bu ikki tezlik yig'indisi, demak ikkinchi poyezd 180 − 72 = 108 km/soat. 180 km/soat — nisbiy tezlikni javob deb olish, 50 km/soat — m/s ni aylantirmaslik, 36 km/soat — 72 ni ikkiga bo'lish. Javob: 108 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-poyezd-tezlikni-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#4450841a"
+    },
+    {
+      "q": "Uzunligi 210 m bo'lgan poyezd 90 km/soat tezlik bilan ketmoqda. Unga qarama-qarshi yo'ldan 18 km/soat tezlik bilan velosipedchi kelmoqda. Poyezd velosipedchi yonidan necha sekundda o'tib ketadi?",
+      "v": [
+        "6 sekund",
+        "7 sekund",
+        "8,4 sekund",
+        "10,5 sekund"
+      ],
+      "t": 1,
+      "izoh": "Qarama-qarshi harakat uchun nisbiy tezlik 90 + 18 = 108 km/soat = 30 m/s. Poyezd o'z uzunligini bosadi: 210 : 30 = 7 sekund. 8,4 sekund — velosipedchini turgan deb olish, 10,5 sekund — tezliklarni ayirish, 6 sekund — nisbiy tezlikni 35 m/s deb hisoblash. Javob: 7 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "poyezd-va-velosipedchi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#483ca4cd"
+    },
+    {
+      "q": "Avtomobil shahardan qishloqqa 60 km/soat tezlik bilan bordi, qaytishda esa yo'l tirbandligi tufayli 40 km/soat tezlik bilan yurdi. Butun yo'l uchun o'rtacha tezlik qancha?",
+      "v": [
+        "24 km/soat",
+        "48 km/soat",
+        "50 km/soat",
+        "100 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Masofa ikki tomonda ham teng, shuning uchun o'rtacha tezlik garmonik o'rtacha bo'ladi: v = 2 · 60 · 40 : (60 + 40) = 4800 : 100 = 48 km/soat. 50 km/soat — oddiy o'rta arifmetikni olish, 24 km/soat — ikkiga ko'paytirishni unutish, 100 km/soat — tezliklarni qo'shib yuborish. Javob: 48 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-tezlik-teng-masofa",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#6f1a9163"
+    },
+    {
+      "q": "Yugurish mashg'ulotida Ozoda stadion doirasini birinchi marta 12 km/soat, ikkinchi marta esa 8 km/soat tezlik bilan bosdi. Ikki doira uchun uning o'rtacha tezligi qancha bo'ladi?",
+      "v": [
+        "4,8 km/soat",
+        "9,6 km/soat",
+        "10 km/soat",
+        "20 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Ikki doira uzunligi teng, demak o'rtacha tezlik v = 2 · 12 · 8 : (12 + 8) = 192 : 20 = 9,6 km/soat. 10 km/soat — o'rta arifmetik, 4,8 km/soat — ikkilantirishni unutish, 20 km/soat — tezliklar yig'indisi. Javob: 9,6 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-tezlik-teng-masofa",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#f6318e7e"
+    },
+    {
+      "q": "Sayyoh tepalikka 3 km/soat tezlik bilan chiqdi va xuddi shu so'qmoqdan 6 km/soat tezlik bilan pastga tushdi. Uning butun yo'ldagi o'rtacha tezligini toping.",
+      "v": [
+        "2 km/soat",
+        "4 km/soat",
+        "4,5 km/soat",
+        "9 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Chiqish va tushish masofalari teng, shuning uchun v = 2 · 3 · 6 : (3 + 6) = 36 : 9 = 4 km/soat. 4,5 km/soat — o'rta arifmetik, 2 km/soat — ikkilantirishni unutish, 9 km/soat — tezliklarni qo'shish. Javob: 4 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-tezlik-teng-masofa",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#db8085f8"
+    },
+    {
+      "q": "Avtobus 90 km yo'lning birinchi yarmini 30 km/soat, ikkinchi yarmini esa 45 km/soat tezlik bilan bosib o'tdi. Butun yo'l uchun avtobusning o'rtacha tezligi qancha?",
+      "v": [
+        "18 km/soat",
+        "36 km/soat",
+        "37,5 km/soat",
+        "75 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Har bir yarim yo'l 45 km. Birinchi yarmiga 45 : 30 = 1,5 soat, ikkinchisiga 45 : 45 = 1 soat ketadi, jami 2,5 soat. O'rtacha tezlik 90 : 2,5 = 36 km/soat. 37,5 km/soat — o'rta arifmetik, 18 km/soat — garmonik formulada ikkilantirishni unutish, 75 km/soat — tezliklar yig'indisi. Javob: 36 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-tezlik-yarim-yol",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#c7a3d791"
+    },
+    {
+      "q": "Avtomobil qo'shni shaharga 80 km/soat tezlik bilan bordi. Borish va qaytish uchun uning o'rtacha tezligi 60 km/soat bo'lsa, qaytishdagi tezligi qancha edi?",
+      "v": [
+        "24 km/soat",
+        "40 km/soat",
+        "48 km/soat",
+        "70 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Qaytishdagi tezlik x bo'lsin. Teng masofalar uchun 2 · 80 · x : (80 + x) = 60. Bundan 160x = 4800 + 60x, ya'ni 100x = 4800 va x = 48 km/soat. 40 km/soat — o'rta arifmetikdan chiqarish, 70 km/soat — 80 va 60 ning o'rtachasi, 24 km/soat — 4800 ni 200 ga bo'lish. Javob: 48 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-tezlikdan-ikkinchi-tezlik",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#426a9b1c"
+    },
+    {
+      "q": "Avtomobil dastlabki 2 soat davomida 70 km/soat, keyingi 2 soat davomida esa 50 km/soat tezlik bilan yurdi. Butun safar uchun uning o'rtacha tezligi qancha?",
+      "v": [
+        "30 km/soat",
+        "58,3 km/soat",
+        "120 km/soat",
+        "60 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Birinchi bo'lakda 70 · 2 = 140 km, ikkinchisida 50 · 2 = 100 km, jami 240 km. Umumiy vaqt 4 soat, o'rtacha tezlik 240 : 4 = 60 km/soat. 58,3 km/soat — teng masofa formulasini noto'g'ri qo'llash, 120 km/soat — tezliklar yig'indisi, 30 km/soat — 240 ni 8 ga bo'lish. Javob: 60 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-tezlik-teng-vaqt",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#a7fd4f5c"
+    },
+    {
+      "q": "Yuk mashinasi 3 soat davomida 80 km/soat, so'ngra 1 soat davomida 40 km/soat tezlik bilan harakatlandi. Uning butun yo'ldagi o'rtacha tezligini hisoblang.",
+      "v": [
+        "53,3 km/soat",
+        "60 km/soat",
+        "70 km/soat",
+        "280 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Uch soatda 80 · 3 = 240 km, bir soatda 40 km, jami 280 km. Umumiy vaqt 4 soat, o'rtacha tezlik 280 : 4 = 70 km/soat. 60 km/soat — vaqtlarni hisobga olmay o'rta arifmetik olish, 53,3 km/soat — teng masofa formulasini qo'llash, 280 km/soat — masofani javob deb olish. Javob: 70 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-tezlik-teng-vaqt",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#2f83181a"
+    },
+    {
+      "q": "Sayohatchi 1,5 soat davomida velosipedda 12 km/soat tezlik bilan, keyin 0,5 soat davomida 4 km/soat tezlik bilan piyoda yurdi. Uning butun yo'l davomidagi o'rtacha tezligi qancha?",
+      "v": [
+        "6 km/soat",
+        "8 km/soat",
+        "10 km/soat",
+        "20 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Velosipedda 12 · 1,5 = 18 km, piyoda 4 · 0,5 = 2 km, jami 20 km. Umumiy vaqt 1,5 + 0,5 = 2 soat, o'rtacha tezlik 20 : 2 = 10 km/soat. 8 km/soat — oddiy o'rta arifmetik, 6 km/soat — garmonik o'rtachani qo'llash, 20 km/soat — masofani tezlik deb olish. Javob: 10 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-tezlik-teng-vaqt",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#5267916a"
+    },
+    {
+      "q": "Ekspeditsiya mashinasi birinchi bo'lakda 60 km ni 1 soatda, ikkinchisida 40 km ni 1 soatda, uchinchisida esa 50 km ni 2 soatda bosdi. Butun yo'l uchun o'rtacha tezligi qancha?",
+      "v": [
+        "30 km/soat",
+        "37,5 km/soat",
+        "41,7 km/soat",
+        "50 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Umumiy masofa 60 + 40 + 50 = 150 km, umumiy vaqt 1 + 1 + 2 = 4 soat. O'rtacha tezlik 150 : 4 = 37,5 km/soat. 41,7 km/soat — uch tezlikning o'rta arifmetigi, 50 km/soat — o'rtadagi bo'lak tezligini olish, 30 km/soat — masofani 5 soatga bo'lish. Javob: 37,5 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-tezlik-uch-bolak",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#383ac374"
+    },
+    {
+      "q": "Avtobus ikki shahar orasidagi 180 km yo'lni bosib o'tdi: sof harakat vaqti 3 soat bo'lgan, yo'lda yana 30 daqiqa dam olish uchun to'xtagan. To'xtash bilan birga hisoblangan o'rtacha tezligi qancha?",
+      "v": [
+        "45 km/soat",
+        "51,4 km/soat",
+        "60 km/soat",
+        "90 km/soat"
+      ],
+      "t": 1,
+      "izoh": "To'xtash ham umumiy vaqtga kiradi: 3 + 0,5 = 3,5 soat. O'rtacha tezlik 180 : 3,5 = 51,4 km/soat. 60 km/soat — to'xtashni hisobga olmaslik, 45 km/soat — vaqtni 4 soat deb yaxlitlash, 90 km/soat — vaqtni 2 soat deb olish. Javob: 51,4 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-tezlik-toxtash-bilan",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#5da04b7c"
+    },
+    {
+      "q": "Avtomobil butun yo'lning uchdan bir qismini 30 km/soat tezlik bilan, qolgan qismini esa 60 km/soat tezlik bilan bosdi. Uning butun yo'ldagi o'rtacha tezligini toping.",
+      "v": [
+        "40 km/soat",
+        "45 km/soat",
+        "50 km/soat",
+        "90 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Yo'lni birlik deb olamiz. Birinchi qismga (1/3) : 30 = 1/90 soat, ikkinchi qismga (2/3) : 60 = 1/90 soat ketadi, jami 2/90 soat. O'rtacha tezlik 1 : (2/90) = 45 km/soat. 50 km/soat — masofa ulushini vaznsiz qo'shish, 40 km/soat — teng masofa formulasini qo'llash, 90 km/soat — tezliklar yig'indisi. Javob: 45 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-tezlik-yol-ulushi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#070ffbad"
+    },
+    {
+      "q": "Avtomobil ikki shahar orasidagi 240 km yo'lni bosishi kerak edi. U rejadagidan 20 km/soat tez yurgani uchun manzilga 1 soat oldin yetib bordi. Rejadagi tezlik qancha edi?",
+      "v": [
+        "40 km/soat",
+        "60 km/soat",
+        "80 km/soat",
+        "120 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Rejadagi tezlik v bo'lsin: 240 : v − 240 : (v + 20) = 1. Kasrlarni yo'qotsak 240 · 20 = v · (v + 20), ya'ni v² + 20v − 4800 = 0. Diskriminant 400 + 19200 = 19600, √19600 = 140, shuning uchun v = (−20 + 140) : 2 = 60. 80 km/soat — oshirilgan tezlikni javob deb olish, 40 km/soat va 120 km/soat — tenglamani noto'g'ri tuzish. Javob: 60 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlik-oshirib-vaqt-yutish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#9146979d"
+    },
+    {
+      "q": "Velosipedchi 60 km masofani bosishi kerak edi. Tezligini 5 km/soat oshirgani uchun u yo'lni rejadagidan 1 soat tez bosdi. Velosipedchining dastlabki tezligi qancha edi?",
+      "v": [
+        "10 km/soat",
+        "12 km/soat",
+        "15 km/soat",
+        "20 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki tezlik v bo'lsa, 60 : v − 60 : (v + 5) = 1. Bundan 60 · 5 = v · (v + 5), ya'ni v² + 5v − 300 = 0. Diskriminant 25 + 1200 = 1225, √1225 = 35, demak v = (−5 + 35) : 2 = 15. 20 km/soat — oshirilgan tezlik, 12 km/soat — 60 ni 5 ga bo'lish, 10 km/soat — tenglamani teng bo'lish deb soddalashtirish. Javob: 15 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlik-oshirib-vaqt-yutish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#624ad1bd"
+    },
+    {
+      "q": "Poyezd 210 km yo'lni belgilangan tezlik bilan bosishi kerak edi. Ammo u rejadagidan 5 km/soat sekin yurgani uchun manzilga 1 soat kech yetdi. Rejadagi tezligi qancha edi?",
+      "v": [
+        "30 km/soat",
+        "35 km/soat",
+        "40 km/soat",
+        "42 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Rejadagi tezlik v bo'lsin: 210 : (v − 5) − 210 : v = 1. Kasrlardan qutulsak 210 · 5 = v · (v − 5), ya'ni v² − 5v − 1050 = 0. Diskriminant 25 + 4200 = 4225, √4225 = 65, demak v = (5 + 65) : 2 = 35. 30 km/soat — kamaytirilgan tezlik, 42 km/soat — 210 ni 5 ga bo'lish, 40 km/soat — tenglamani taxminan yechish. Javob: 35 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlik-kamayib-kechikish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#b7d75fd5"
+    },
+    {
+      "q": "Ikki shahar oralig'i 340 km. Birinchi avtomobil soat 08:00 da 40 km/soat tezlik bilan yo'lga chiqdi, ikkinchisi esa soat 09:00 da qarshi tomondan 60 km/soat tezlik bilan jo'nadi. Ular soat nechada uchrashadi?",
+      "v": [
+        "11:00",
+        "11:24",
+        "12:00",
+        "13:00"
+      ],
+      "t": 2,
+      "izoh": "Birinchi avtomobil bir soatda 40 km bosgan, demak soat 09:00 da ular orasida 340 − 40 = 300 km qoladi. Yaqinlashish tezligi 40 + 60 = 100 km/soat, uchrashuvgacha 300 : 100 = 3 soat kerak. 09:00 ga 3 soat qo'shsak 12:00 bo'ladi. 11:00 — 3 soatni 08:00 dan sanash, 11:24 — kechikishni umuman hisobga olmaslik, 13:00 — 4 soat deb olish. Javob: 12:00.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kechikib-chiqib-uchrashuv",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#9f4d3f49"
+    },
+    {
+      "q": "Avtobus bekatdan soat 09:00 da 45 km/soat tezlik bilan jo'nadi. Taksi esa soat 10:20 da xuddi shu yo'ldan 75 km/soat tezlik bilan uning ortidan yo'lga chiqdi. Taksi avtobusni soat nechada quvib yetadi?",
+      "v": [
+        "11:20",
+        "12:00",
+        "13:20",
+        "12:20"
+      ],
+      "t": 3,
+      "izoh": "Avtobus 1 soat 20 daqiqada, ya'ni 4/3 soatda 45 · 4/3 = 60 km oldinga ketgan. Yaqinlashish tezligi 75 − 45 = 30 km/soat, quvib yetish uchun 60 : 30 = 2 soat kerak. 10:20 ga 2 soat qo'shsak 12:20 bo'ladi. 11:20 — 1 soat deb hisoblash, 12:00 — vaqtni 09:00 dan sanash, 13:20 — 3 soat deb olish. Javob: 12:20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kechikib-chiqib-quvish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#d31f8d52"
+    },
+    {
+      "q": "Ikki qishloq oralig'i 96 km. Birinchi qishloqdan piyoda 6 km/soat tezlik bilan chiqdi, oradan 2 soat o'tgach ikkinchi qishloqdan velosipedchi 18 km/soat tezlik bilan unga qarab yo'lga tushdi. Uchrashuv joyi birinchi qishloqdan qancha uzoqlikda bo'ladi?",
+      "v": [
+        "12 km",
+        "21 km",
+        "33 km",
+        "63 km"
+      ],
+      "t": 2,
+      "izoh": "Piyoda ikki soatda 6 · 2 = 12 km yuradi, qolgan masofa 96 − 12 = 84 km. Yaqinlashish tezligi 6 + 18 = 24 km/soat, uchrashuvgacha 84 : 24 = 3,5 soat kerak. Piyoda jami 6 · (2 + 3,5) = 33 km yurgan. 63 km — velosipedchining yo'li, 21 km — faqat oxirgi bosqichdagi yo'l, 12 km — dastlabki ikki soatlik yo'l. Javob: 33 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kechikib-chiqib-uchrashuv-nuqtasi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#6dd5309a"
+    },
+    {
+      "q": "Stadionning aylana yo'lagi uzunligi 400 m. Ikki yuguruvchi bitta joydan bir tomonga qarab 5 m/s va 4 m/s tezlik bilan yugura boshladi. Tezrog'i sekinini bir to'liq doiraga ortda qoldirishi uchun necha sekund kerak?",
+      "v": [
+        "44,4 sekund",
+        "80 sekund",
+        "100 sekund",
+        "400 sekund"
+      ],
+      "t": 3,
+      "izoh": "Bir tomonga yugurganda ular orasidagi masofa sekundiga 5 − 4 = 1 m ga ortadi. Bir doira, ya'ni 400 m ni yopish uchun 400 : 1 = 400 sekund kerak. 44,4 sekund — tezliklar yig'indisiga bo'lish, 80 sekund — faqat tez yuguruvchining tezligiga bo'lish, 100 sekund — sekin yuguruvchining tezligiga bo'lish. Javob: 400 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylanma-trek-quvish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#3a4157d8"
+    },
+    {
+      "q": "Uzunligi 400 m bo'lgan aylana yo'lakda ikki sportchi bitta joydan qarama-qarshi tomonga 6 m/s va 4 m/s tezlik bilan yugurdi. Ular birinchi marta necha sekunddan keyin uchrashadi?",
+      "v": [
+        "40 sekund",
+        "66,7 sekund",
+        "100 sekund",
+        "200 sekund"
+      ],
+      "t": 0,
+      "izoh": "Qarama-qarshi yugurganda yaqinlashish tezligi 6 + 4 = 10 m/s. Ular birgalikda bir doirani, ya'ni 400 m ni bosishlari kerak: 400 : 10 = 40 sekund. 200 sekund — tezliklar ayirmasiga bo'lish, 66,7 sekund va 100 sekund — faqat bitta sportchining tezligini olish. Javob: 40 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylanma-trek-qarama-qarshi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#baf00d95"
+    },
+    {
+      "q": "Uzunligi 1200 m bo'lgan aylanma yo'lda velosipedchi 8 m/s, yuguruvchi esa 5 m/s tezlik bilan bir tomonga harakatlanmoqda. 40 daqiqa ichida velosipedchi yuguruvchini necha marta quvib o'tadi?",
+      "v": [
+        "6 marta",
+        "10 marta",
+        "16 marta",
+        "26 marta"
+      ],
+      "t": 0,
+      "izoh": "40 daqiqa = 2400 sekund. Bir tomonga harakatda nisbiy tezlik 8 − 5 = 3 m/s, shu vaqtda velosipedchi yuguruvchidan 3 · 2400 = 7200 m ortiq yuradi. Har quvib o'tish bitta doiraga, ya'ni 1200 m ga to'g'ri keladi: 7200 : 1200 = 6 marta. 16 marta — velosipedchining o'z doiralari soni, 10 marta — yuguruvchining doiralari, 26 marta — ikkalasini qo'shish. Javob: 6 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylanma-trek-quvish-soni",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#4e891e01"
+    },
+    {
+      "q": "Samolyotning shamolsiz havodagi tezligi 620 km/soat, shamolning tezligi esa 40 km/soat. Samolyot shamol yo'nalishi bo'ylab 1980 km masofani necha soatda uchib o'tadi?",
+      "v": [
+        "3 soat",
+        "3,2 soat",
+        "3,4 soat",
+        "33 soat"
+      ],
+      "t": 0,
+      "izoh": "Shamol bo'ylab uchishda tezliklar qo'shiladi: 620 + 40 = 660 km/soat. Vaqt 1980 : 660 = 3 soat. 3,2 soat — shamolni hisobga olmaslik, 3,4 soat — shamolga qarshi tezlik 580 ga bo'lish, 33 soat — masofani 60 ga bo'lish. Javob: 3 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shamol-boylab-vaqt",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#cacdda44"
+    },
+    {
+      "q": "Samolyot shamol yo'nalishi bo'ylab 2100 km masofani 3 soatda, teskari yo'nalishda esa xuddi shu masofani 3,5 soatda uchib o'tdi. Shamolning tezligini toping.",
+      "v": [
+        "50 km/soat",
+        "100 km/soat",
+        "650 km/soat",
+        "1300 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Shamol bo'ylab tezlik 2100 : 3 = 700 km/soat, qarshi yo'nalishda 2100 : 3,5 = 600 km/soat. Ularning ayirmasi ikkilangan shamol tezligi: (700 − 600) : 2 = 50 km/soat. 100 km/soat — ikkiga bo'lishni unutish, 650 km/soat — samolyotning o'z tezligi, 1300 km/soat — ikki tezlik yig'indisi. Javob: 50 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shamol-tezligini-topish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#68651642"
+    },
+    {
+      "q": "Samolyotning shamolsiz tezligi 540 km/soat, shamol tezligi 60 km/soat. U 1800 km narigi shaharga shamol bo'ylab uchib borib, teskari shamolda qaytdi. Borish va qaytishga jami qancha vaqt ketgan?",
+      "v": [
+        "6 soat",
+        "6,67 soat",
+        "6,75 soat",
+        "7,5 soat"
+      ],
+      "t": 2,
+      "izoh": "Borishda tezlik 540 + 60 = 600 km/soat, vaqt 1800 : 600 = 3 soat. Qaytishda tezlik 540 − 60 = 480 km/soat, vaqt 1800 : 480 = 3,75 soat. Jami 3 + 3,75 = 6,75 soat. 6,67 soat — shamolni umuman hisobga olmaslik, 6 soat — ikki tomonni ham shamol bo'ylab olish, 7,5 soat — ikki tomonni ham shamolga qarshi olish. Javob: 6,75 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shamol-borib-qaytish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#f86c7a88"
+    },
+    {
+      "q": "Yo'l chetidagi belgi shu qismda eng katta tezlik 80 km/soat ekanini bildiradi. Avtomobil esa 25 m/s tezlik bilan ketmoqda. Haydovchi tezlikni necha km/soat ga kamaytirishi kerak?",
+      "v": [
+        "10 km/soat",
+        "35 km/soat",
+        "55 km/soat",
+        "170 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Avval m/s ni km/soat ga aylantiramiz: 25 · 3,6 = 90 km/soat. Ortiqcha tezlik 90 − 80 = 10 km/soat. 55 km/soat — birlikni aylantirmay 80 dan 25 ni ayirish, 35 km/soat — 25 ni 1,8 ga ko'paytirish, 170 km/soat — ayirish o'rniga qo'shish. Javob: 10 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-aylantirish-tezlik-solishtirish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#7e734e53"
+    },
+    {
+      "q": "Piyoda odam 5 km/soat tezlik bilan yuradi. U yo'lni kesib o'tishga berilgan 7 sekundda necha metr yurishini bilmoqchi, buning uchun avval tezligini m/s ga o'tkazish kerak. Bu tezlik taxminan qancha bo'ladi?",
+      "v": [
+        "0,72 m/s",
+        "1,39 m/s",
+        "3,6 m/s",
+        "18 m/s"
+      ],
+      "t": 1,
+      "izoh": "km/soat dan m/s ga o'tish uchun 3,6 ga bo'linadi: 5 : 3,6 ≈ 1,39 m/s (demak 7 sekundda taxminan 9,7 m yuradi). 18 m/s — bo'lish o'rniga ko'paytirish, 0,72 m/s — 3,6 ni 5 ga bo'lish, 3,6 m/s — koeffitsientning o'zini javob deb olish. Javob: 1,39 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-aylantirish-ms-ga",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#0fed5df1"
+    },
+    {
+      "q": "Mashg'ulotda velosipedchi 8 m/s tezlik bilan 12 daqiqa davomida to'xtamay harakatlandi. U shu vaqt ichida necha kilometr masofani bosib o'tdi?",
+      "v": [
+        "1,6 km",
+        "5,76 km",
+        "57,6 km",
+        "96 km"
+      ],
+      "t": 1,
+      "izoh": "12 daqiqa = 12 · 60 = 720 sekund. Masofa 8 · 720 = 5760 m, ya'ni 5,76 km. 96 km — 8 ni 12 ga to'g'ridan-to'g'ri ko'paytirish, 1,6 km — daqiqani soat deb olish, 57,6 km — vaqtni 2 soat deb hisoblash. Javob: 5,76 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-aylantirish-masofa",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#1dcc8d8e"
+    },
+    {
+      "q": "Ikki shahar oralig'i 300 km. Birinchisidan 70 km/soat, ikkinchisidan esa 80 km/soat tezlik bilan bir vaqtda ikki avtomobil bir-biriga qarab yo'lga chiqdi. Uchrashuv joyi birinchi shahardan qancha uzoqlikda bo'ladi?",
+      "v": [
+        "140 km",
+        "150 km",
+        "160 km",
+        "210 km"
+      ],
+      "t": 0,
+      "izoh": "Yaqinlashish tezligi 70 + 80 = 150 km/soat, uchrashuv vaqti 300 : 150 = 2 soat. Birinchi avtomobil shu vaqtda 70 · 2 = 140 km yuradi. 160 km — ikkinchi shahardan bo'lgan masofa, 150 km — yo'lning o'rtasi deb o'ylash, 210 km — vaqtni 3 soat deb olish. Javob: 140 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchrashuv-nuqtasi-masofasi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#48041e96"
+    },
+    {
+      "q": "Ikki piyoda oralig'i 36 km bo'lgan joydan bir vaqtda bir-biriga qarab yurdi: biri 4 km/soat, ikkinchisi 5 km/soat tezlik bilan. Uchrashgan paytda ikkinchisi birinchisidan necha kilometr ko'p yo'l bosgan bo'ladi?",
+      "v": [
+        "1 km",
+        "4 km",
+        "9 km",
+        "36 km"
+      ],
+      "t": 1,
+      "izoh": "Yaqinlashish tezligi 4 + 5 = 9 km/soat, uchrashuv vaqti 36 : 9 = 4 soat. Birinchisi 4 · 4 = 16 km, ikkinchisi 5 · 4 = 20 km yuradi, farq 20 − 16 = 4 km. 1 km — tezliklar farqini javob deb olish, 9 km — yaqinlashish tezligini olish, 36 km — butun masofani olish. Javob: 4 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchrashuvda-yol-farqi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#b26cc6e2"
+    },
+    {
+      "q": "Ikki avtomobil qarama-qarshi tomondan bir vaqtda jo'nab, 3 soatdan keyin uchrashdi. Birinchisining tezligi 60 km/soat edi. Uchrashuvdan keyin u ikkinchi avtomobil jo'nagan shaharga yana 4 soatda yetib bordi. Ikkinchi avtomobilning tezligi qancha?",
+      "v": [
+        "45 km/soat",
+        "60 km/soat",
+        "80 km/soat",
+        "240 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Uchrashuvdan keyin birinchi avtomobil ikkinchisi uchrashuvgacha bosgan masofani bosadi: u 60 · 4 = 240 km. Ikkinchi avtomobil bu masofani 3 soatda bosgan, demak tezligi 240 : 3 = 80 km/soat. 240 km/soat — masofani tezlik deb olish, 60 km/soat — tezliklar teng deb o'ylash, 45 km/soat — 180 ni 4 ga bo'lish. Javob: 80 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchrashuvdan-keyingi-yol",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#40edcad9"
+    },
+    {
+      "q": "Ikki avtomobilning tezliklari 3 : 4 nisbatda. Bir xil masofani birinchi avtomobil ikkinchisidan 1 soat ko'proq vaqtda bosadi. Ikkinchi avtomobil shu masofani necha soatda bosadi?",
+      "v": [
+        "1 soat",
+        "3 soat",
+        "4 soat",
+        "7 soat"
+      ],
+      "t": 1,
+      "izoh": "Bir xil masofada vaqtlar tezliklarga teskari nisbatda bo'ladi, ya'ni vaqtlar nisbati 4 : 3. Vaqtlarni 4x va 3x deb olsak, 4x − 3x = 1, demak x = 1. Ikkinchi avtomobilning vaqti 3x = 3 soat. 4 soat — birinchi avtomobilning vaqti, 7 soat — ikki vaqt yig'indisi, 1 soat — farqni javob deb olish. Javob: 3 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezliklar-nisbati-vaqt",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#4cb0b1a3"
+    },
+    {
+      "q": "Piyodaning tezligi velosipedchining tezligidan 3 marta kam. Ular 24 km masofani bosishda sarflagan vaqtlarining farqi 4 soatni tashkil qildi. Velosipedchining tezligi qancha?",
+      "v": [
+        "4 km/soat",
+        "8 km/soat",
+        "12 km/soat",
+        "16 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Piyodaning tezligi v bo'lsa, velosipedchiniki 3v. Shart bo'yicha 24 : v − 24 : (3v) = 4. Chap tomonni birlashtirsak (72 − 24) : (3v) = 4, ya'ni 48 = 12v va v = 4 km/soat. Velosipedchining tezligi 3 · 4 = 12 km/soat. 4 km/soat — piyodaning tezligi, 8 km/soat — 24 ni 3 ga bo'lish, 16 km/soat — farqni noto'g'ri hisoblash. Javob: 12 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlik-nisbati-vaqt-farqi",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#dc1e67af"
+    },
+    {
+      "q": "Poyezd stansiyaga 60 km/soat tezlik bilan borsa jadvaldan 1 soat kech, 90 km/soat tezlik bilan borsa 1 soat erta yetadi. Stansiyagacha bo'lgan masofa qancha?",
+      "v": [
+        "180 km",
+        "270 km",
+        "360 km",
+        "540 km"
+      ],
+      "t": 2,
+      "izoh": "Ikki holatdagi vaqt farqi 1 + 1 = 2 soat. Masofani S deb olsak, S : 60 − S : 90 = 2. Umumiy maxraj 180 bo'lgani uchun S · (3 − 2) : 180 = 2, demak S = 360 km. 180 km — vaqt farqini 1 soat deb olish (yoki maxrajni javob deb olish), 270 km — farqni 1,5 soat deb olish, 540 km — 3 soat deb olish. Javob: 360 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kech-erta-yetish-masofa",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#d60ff930"
+    },
+    {
+      "q": "O'quvchi maktabga 4 km/soat tezlik bilan yursa darsga 5 daqiqa kechikadi, 5 km/soat tezlik bilan yursa 4 daqiqa erta yetadi. Uy bilan maktab orasidagi masofani toping.",
+      "v": [
+        "1,8 km",
+        "2 km",
+        "3 km",
+        "4,5 km"
+      ],
+      "t": 2,
+      "izoh": "Ikki holatdagi vaqt farqi 5 + 4 = 9 daqiqa = 0,15 soat. Masofa S bo'lsa, S : 4 − S : 5 = 0,15. Chap tomonni birlashtirsak S : 20 = 0,15, demak S = 3 km. 1,8 km — 9 daqiqani 0,15 soat emas, 0,09 soat deb olish, 2 km — 0,1 soat deb hisoblash, 4,5 km — 0,225 soat deb olish. Javob: 3 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kech-erta-yetish-masofa",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#d1bce280"
+    },
+    {
+      "q": "Avtomobil yo'lning birinchi yarmini 40 km/soat tezlik bilan bosdi. Butun yo'l uchun o'rtacha tezlik 48 km/soat bo'lishi uchun u qolgan yarmini qanday tezlik bilan bosishi kerak?",
+      "v": [
+        "56 km/soat",
+        "60 km/soat",
+        "64 km/soat",
+        "96 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Teng masofalar uchun o'rtacha tezlik 2 · 40 · x : (40 + x) = 48. Bundan 80x = 1920 + 48x, ya'ni 32x = 1920 va x = 60 km/soat. 56 km/soat — o'rta arifmetikdan chiqarish, 96 km/soat — 48 ni ikkilantirish, 64 km/soat — tenglamani noto'g'ri soddalashtirish. Javob: 60 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-tezlik-qolgan-bolak",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#cfa861ef"
+    },
+    {
+      "q": "Poyezd 3 soat davomida 90 km/soat tezlik bilan yurdi, so'ng oraliq stansiyada 20 daqiqa turdi va yana 2 soat davomida 75 km/soat tezlik bilan yurdi. To'xtash bilan birga o'rtacha tezligi qancha?",
+      "v": [
+        "75 km/soat",
+        "78,75 km/soat",
+        "82,5 km/soat",
+        "84 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Birinchi bo'lakda 90 · 3 = 270 km, ikkinchisida 75 · 2 = 150 km, jami 420 km. Umumiy vaqt 3 + 2 soat va 20 daqiqa, ya'ni 16/3 soat. O'rtacha tezlik 420 : (16/3) = 78,75 km/soat. 84 km/soat — to'xtashni hisobga olmaslik, 82,5 km/soat — ikki tezlikning o'rta arifmetigi, 75 km/soat — ikkinchi bo'lak tezligini olish. Javob: 78,75 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-tezlik-toxtash-ikki-bolak",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#6d194bf9"
+    },
+    {
+      "q": "Ikki piyoda bir-biriga qarab yurib uchrashdi. Uchrashuvdan keyin birinchisi manzilga 4 soatda, ikkinchisi esa 9 soatda yetib bordi. Ularning tezliklari nisbati qanday?",
+      "v": [
+        "2 : 3",
+        "3 : 2",
+        "4 : 9",
+        "9 : 4"
+      ],
+      "t": 1,
+      "izoh": "Uchrashuvdan keyingi vaqtlar t₁ va t₂ bo'lsa, tezliklar nisbati v₁ : v₂ = √t₂ : √t₁ bo'ladi. Demak v₁ : v₂ = √9 : √4 = 3 : 2. Tezroq yurgan piyoda qolgan yo'lni qisqaroq vaqtda bosgani mantiqan ham to'g'ri. 4 : 9 va 9 : 4 — vaqtlar nisbatini ildizsiz olish, 2 : 3 — nisbatni teskari yozish. Javob: 3 : 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchrashuvdan-keyingi-vaqt-nisbati",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#6d3d0b98"
+    },
+    {
+      "q": "Ikki mashina bitta postdan bir vaqtda bir tomonga qarab 55 km/soat va 70 km/soat tezlik bilan jo'nadi. 4 soatdan keyin ular orasidagi masofa qancha bo'ladi?",
+      "v": [
+        "60 km",
+        "220 km",
+        "280 km",
+        "500 km"
+      ],
+      "t": 0,
+      "izoh": "Bir tomonga harakatda uzoqlashish tezligi ayirmaga teng: 70 − 55 = 15 km/soat. Masofa 15 · 4 = 60 km. 500 km — tezliklar yig'indisini vaqtga ko'paytirish, 280 km — faqat tez mashinaning yo'li, 220 km — faqat sekin mashinaning yo'li. Javob: 60 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-tomonga-uzoqlashish",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#c9e25740"
+    },
+    {
+      "q": "Piyoda soat 09:00 da uydan 5 km/soat tezlik bilan chiqdi. Velosipedchi soat 10:30 da xuddi shu yo'ldan 15 km/soat tezlik bilan yo'lga tushdi. Velosipedchi piyodadan 5 km oldinda bo'ladigan payt soat nechada bo'ladi?",
+      "v": [
+        "11:15",
+        "11:45",
+        "12:00",
+        "12:15"
+      ],
+      "t": 1,
+      "izoh": "Soat 10:30 da piyoda 5 · 1,5 = 7,5 km oldinda. Velosipedchi avval shu 7,5 km ni yopishi, so'ng yana 5 km oldinga chiqishi kerak, ya'ni jami 12,5 km. Nisbiy tezlik 15 − 5 = 10 km/soat, vaqt 12,5 : 10 = 1,25 soat = 1 soat 15 daqiqa. 10:30 ga qo'shsak 11:45. 11:15 — faqat quvib yetish paytini olish, 12:00 — 1,5 soat deb olish, 12:15 — 12,5 km o'rniga 17,5 km deb hisoblash (7,5 km ni ikki marta qo'shish). Javob: 11:45.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oldinga-otish-vaqti",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#ff03c5bf"
+    },
+    {
+      "q": "Avtomobil A shahardan B shaharga o'zgarmas tezlik bilan 5 soatda boradi. Agar tezligini 10 km/soat oshirsa, xuddi shu yo'lni 4 soatda bosadi. A va B shaharlar orasidagi masofa qancha?",
+      "v": [
+        "40 km",
+        "160 km",
+        "200 km",
+        "250 km"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki tezlik v bo'lsin. Masofa ikki holatda ham bir xil: 5v = 4 · (v + 10). Qavsni ochsak 5v = 4v + 40, demak v = 40 km/soat. Masofa S = 5 · 40 = 200 km. 40 km — tezlikni masofa deb olish, 160 km — 4 · 40 ni olish, 250 km — tezlikni 50 deb hisoblash. Javob: 200 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlikni-oshirib-masofa",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#283c114a"
+    },
+    {
+      "q": "Dala yo'lidan kombayn 8 km/soat tezlik bilan jo'nadi. Oradan 30 daqiqa o'tgach xuddi shu yo'ldan traktor 12 km/soat tezlik bilan yurdi. Traktor kombaynni necha daqiqada quvib yetadi?",
+      "v": [
+        "20 daqiqa",
+        "30 daqiqa",
+        "60 daqiqa",
+        "120 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "30 daqiqa = 0,5 soat, shu vaqtda kombayn 8 · 0,5 = 4 km oldinga ketgan. Yaqinlashish tezligi 12 − 8 = 4 km/soat, vaqt 4 : 4 = 1 soat, ya'ni 60 daqiqa. 30 daqiqa — kechikish vaqtini javob deb olish, 20 daqiqa — 4 ni 12 ga bo'lish, 120 daqiqa — nisbiy tezlikni 2 deb olish. Javob: 60 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvib-yetish-daqiqada",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#ccde2072"
+    },
+    {
+      "q": "Musobaqada sportchi birinchi 400 m masofani 80 sekundda, keyingi 600 m ni esa 100 sekundda bosdi. Uning butun 1000 m dagi o'rtacha tezligi metr bo'lib sekundda qancha?",
+      "v": [
+        "4,5 m/s",
+        "5,5 m/s",
+        "5,56 m/s",
+        "6 m/s"
+      ],
+      "t": 2,
+      "izoh": "Umumiy masofa 400 + 600 = 1000 m, umumiy vaqt 80 + 100 = 180 sekund. O'rtacha tezlik 1000 : 180 ≈ 5,56 m/s. 5,5 m/s — ikki bo'lak tezligining o'rta arifmetigi, 6 m/s — faqat ikkinchi bo'lak tezligi, 4,5 m/s — masofani 220 sekundga bo'lish. Javob: 5,56 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-tezlik-metr-sekund",
+      "id": "matematika_foiz_m05-harakatga-doir-masalalar#e986958f"
+    }
+  ]
+}

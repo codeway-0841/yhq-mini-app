@@ -1,0 +1,231 @@
+{
+  "nom": "09-mavzu. Masala. Tekis Harakat Tezlik Yol",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Bola tekis harakatlanib 600 m yo'lni 5 minutda bosib o'tdi. Uning tezligi qanday bo'lgan?",
+      "v": [
+        "2 m/s",
+        "120 m/s",
+        "0,5 m/s",
+        "300 m/s"
+      ],
+      "t": 0,
+      "izoh": "t = 5 min = 300 s; υ = s/t = 600/300 = 2 m/s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#069b2e5e"
+    },
+    {
+      "q": "Sportchi tekis harakatlanib 2,7 km masofani 15 minutda bosib o'tdi. Uning tezligini toping.",
+      "v": [
+        "3 m/s",
+        "0,18 m/s",
+        "180 m/s",
+        "2,7 m/s"
+      ],
+      "t": 0,
+      "izoh": "s = 2700 m, t = 900 s; υ = s/t = 2700/900 = 3 m/s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#582cd72c"
+    },
+    {
+      "q": "Sportchi 3 m/s tezlik bilan 20 minutda qancha masofani bosib o'tadi?",
+      "v": [
+        "3600 m",
+        "60 m",
+        "3,6 m",
+        "7200 m"
+      ],
+      "t": 0,
+      "izoh": "t = 20 min = 1200 s; s = υ·t = 3·1200 = 3600 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#7c735482"
+    },
+    {
+      "q": "Avtobus o'rtacha 15 m/s tezlikda harakatlansa, 60 sekundda qancha masofani bosib o'tadi?",
+      "v": [
+        "900 m",
+        "0,25 m",
+        "4 m",
+        "90 m"
+      ],
+      "t": 0,
+      "izoh": "s = υ·t = 15·60 = 900 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#d9ec73ac"
+    },
+    {
+      "q": "O'quvchi 10 minut davomida 600 m yo'l yurdi. Yo'lning shu qismida o'quvchining tezligini toping.",
+      "v": [
+        "1 m/s",
+        "60 m/s",
+        "0,6 m/s",
+        "10 m/s"
+      ],
+      "t": 0,
+      "izoh": "t = 10 min = 600 s; υ = s/t = 600/600 = 1 m/s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#4a762213"
+    },
+    {
+      "q": "800 m uzunligidagi poyezd 160 m uzunlikdagi ko'prikdan 1 minutda o'tdi. Poyezdning tezligini toping.",
+      "v": [
+        "16 m/s",
+        "13,3 m/s",
+        "960 m/s",
+        "2,7 m/s"
+      ],
+      "t": 0,
+      "izoh": "s = 800 + 160 = 960 m; υ = s/t = 960/60 = 16 m/s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#2a674fb5"
+    },
+    {
+      "q": "Uzunligi 300 m bo'lgan poyezd 10 m/s tezlik bilan tekis harakatlanib, uzunligi 250 m bo'lgan tunnelga kirib bormoqda. Poyezd qancha vaqtda tunneldan butunlay chiqib ketadi?",
+      "v": [
+        "55 s",
+        "25 s",
+        "30 s",
+        "550 s"
+      ],
+      "t": 0,
+      "izoh": "s = 300 + 250 = 550 m; t = s/υ = 550/10 = 55 s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#3b43ff36"
+    },
+    {
+      "q": "Uzunligi 120 m bo'lgan poyezd 54 km/h tezlik bilan harakatlanib, uzunligi 90 m bo'lgan tunnelga kirib ketmoqda. U tunneldan chiqquncha qancha vaqt ketadi?",
+      "v": [
+        "14 s",
+        "8 s",
+        "6 s",
+        "3,9 s"
+      ],
+      "t": 0,
+      "izoh": "υ = 54/3,6 = 15 m/s; s = 120 + 90 = 210 m; t = 210/15 = 14 s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#6993a3a5"
+    },
+    {
+      "q": "Jism harakati kuzatilish momentida x₀ = −6 m nuqtada turgan. Jism 4 m/s o'zgarmas tezlik bilan x o'qi yo'nalishida harakatlansa, 4 s dan so'ng uning koordinatasi nimaga teng bo'ladi?",
+      "v": [
+        "10 m",
+        "-22 m",
+        "22 m",
+        "16 m"
+      ],
+      "t": 0,
+      "izoh": "x = x₀ + υ·t = −6 + 4·4 = 10 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#84e6ff90"
+    },
+    {
+      "q": "Ikki avtomobilning harakat tenglamalari x₁ = 30 + 20t (m) va x₂ = 90 − 10t (m) ko'rinishda berilgan. Ular qancha vaqtdan keyin uchrashadi?",
+      "v": [
+        "2 s",
+        "3 s",
+        "1,5 s",
+        "6 s"
+      ],
+      "t": 0,
+      "izoh": "30 + 20t = 90 − 10t → 30t = 60 → t = 2 s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#d7506290"
+    },
+    {
+      "q": "Ikki avtomobilning harakat tenglamalari x₁ = 30 + 20t (m) va x₂ = 90 − 10t (m) berilgan. Ularning uchrashish joyining koordinatasini toping.",
+      "v": [
+        "70 m",
+        "40 m",
+        "90 m",
+        "110 m"
+      ],
+      "t": 0,
+      "izoh": "t = 2 s; x = 30 + 20·2 = 70 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#b708b035"
+    },
+    {
+      "q": "Piyodaning tezligi 1 m/s, velosipedchiniki 5 m/s. Velosipedchi piyodani 20 s da quvib o'tdi. Boshlanishda ular orasidagi masofa qancha bo'lgan?",
+      "v": [
+        "80 m",
+        "120 m",
+        "100 m",
+        "20 m"
+      ],
+      "t": 0,
+      "izoh": "s = (υ₂ − υ₁)·t = (5 − 1)·20 = 80 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#ea4d3a6c"
+    },
+    {
+      "q": "Samolyot shahar ustidan 1 minutda uchib o'tdi. Samolyotning tezligi 900 km/h bo'lsa, uning uchish yo'nalishida shahar kengligi qancha?",
+      "v": [
+        "15 km",
+        "900 km",
+        "54 km",
+        "1,5 km"
+      ],
+      "t": 0,
+      "izoh": "s = υ·t = 900 km/h · (1/60) h = 15 km",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#f179d73c"
+    },
+    {
+      "q": "Avtomobil 85 km/h tezlik bilan 2 soat harakatlanib, manzilga yetib kelganda yo'l hisoblagich 16420 km ni ko'rsatdi. Hisoblagichning dastlabki ko'rsatkichi qanday bo'lgan?",
+      "v": [
+        "16250 km",
+        "16590 km",
+        "170 km",
+        "16335 km"
+      ],
+      "t": 0,
+      "izoh": "s = 85·2 = 170 km; 16420 − 170 = 16250 km",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#f863189a"
+    },
+    {
+      "q": "Ikki parallel temir yo'ldan uzunligi 400 m, tezligi 54 km/h bo'lgan yuk poyezdi va uzunligi 140 m, tezligi 90 km/h bo'lgan yo'lovchi poyezdi bir tomonga harakatlanmoqda. Yo'lovchi poyezdi yuk poyezdini qancha vaqtda quvib o'tadi?",
+      "v": [
+        "54 s",
+        "36 s",
+        "21,6 s",
+        "13,5 s"
+      ],
+      "t": 0,
+      "izoh": "υ₂ − υ₁ = 25 − 15 = 10 m/s; s = 400 + 140 = 540 m; t = 540/10 = 54 s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol#af14cdc7"
+    }
+  ]
+}

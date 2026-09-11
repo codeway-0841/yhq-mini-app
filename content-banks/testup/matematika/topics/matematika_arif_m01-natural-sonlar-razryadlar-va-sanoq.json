@@ -1,0 +1,1609 @@
+{
+  "nom": "Natural sonlar, razryadlar va sanoq sistemalari",
+  "bolim": "Sonlar va ular ustida amallar",
+  "blok": "arif",
+  "rasmiyBolim": 1,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "48 : 6 + 7 · 3 − 5 ifodaning qiymatini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "40",
+        "24",
+        "34",
+        "−6"
+      ],
+      "t": 1,
+      "izoh": "Avval ko'paytirish va bo'lish bajariladi: 48 : 6 = 8 va 7 · 3 = 21. Endi qo'shish va ayirish chapdan o'ngga: 8 + 21 = 29, 29 − 5 = 24. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amallar-tartibi-sodda",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#031766b7"
+    },
+    {
+      "q": "120 − 4 · 9 + 63 : 7 ifodaning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "75",
+        "84",
+        "93",
+        "21"
+      ],
+      "t": 2,
+      "izoh": "Birinchi bosqichda ko'paytirish va bo'lish: 4 · 9 = 36, 63 : 7 = 9. Ifoda 120 − 36 + 9 ko'rinishiga keladi. Qo'shish va ayirish chapdan o'ngga bajariladi: 120 − 36 = 84, 84 + 9 = 93. Javob: 93.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amallar-tartibi-sodda",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#64645408"
+    },
+    {
+      "q": "15 + 5 · 8 − 96 : 4 ifodaning qiymatini toping.",
+      "v": [
+        "31",
+        "16",
+        "55",
+        "−65"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi bosqich amallari oldin bajariladi: 5 · 8 = 40 va 96 : 4 = 24. Shundan keyin 15 + 40 = 55, 55 − 24 = 31 chiqadi. Javob: 31.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amallar-tartibi-sodda",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#401d360f"
+    },
+    {
+      "q": "7 · 6 − 54 : 9 + 13 ifodaning qiymati qanchaga teng?",
+      "v": [
+        "23",
+        "36",
+        "61",
+        "49"
+      ],
+      "t": 3,
+      "izoh": "Avval 7 · 6 = 42 va 54 : 9 = 6 topiladi. Endi 42 − 6 + 13 ni chapdan o'ngga hisoblaymiz: 42 − 6 = 36, 36 + 13 = 49. Javob: 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amallar-tartibi-sodda",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#5244acd5"
+    },
+    {
+      "q": "(36 + 24) : 12 · 5 ifodaning qiymatini hisoblang.",
+      "v": [
+        "25",
+        "46",
+        "1",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Qavs ichidagi amal birinchi bajariladi: 36 + 24 = 60. Qolgan bo'lish va ko'paytirish teng huquqli, shuning uchun chapdan o'ngga yuriladi: 60 : 12 = 5, keyin 5 · 5 = 25. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amallar-tartibi-qavsli",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#db876338"
+    },
+    {
+      "q": "8 · (45 − 17) : 7 ifodaning qiymati nechaga teng?",
+      "v": [
+        "49",
+        "32",
+        "4",
+        "224"
+      ],
+      "t": 1,
+      "izoh": "Qavs ichida 45 − 17 = 28 bo'ladi. Endi 8 · 28 = 224, so'ngra 224 : 7 = 32. Ko'paytirish va bo'lish chapdan o'ngga navbat bilan bajariladi. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amallar-tartibi-qavsli",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#bcaf6822"
+    },
+    {
+      "q": "150 − (24 + 6 · 9) ifodaning qiymatini toping.",
+      "v": [
+        "180",
+        "96",
+        "72",
+        "−120"
+      ],
+      "t": 2,
+      "izoh": "Qavs ichida ham amallar tartibi saqlanadi: avval 6 · 9 = 54, keyin 24 + 54 = 78. Shundan so'ng 150 − 78 = 72. Javob: 72.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amallar-tartibi-qavsli",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#5cbcd2ec"
+    },
+    {
+      "q": "(72 : 8 + 4) · 6 ifodaning qiymati qanday son bo'ladi?",
+      "v": [
+        "33",
+        "36",
+        "13",
+        "78"
+      ],
+      "t": 3,
+      "izoh": "Qavs ichida oldin bo'lish: 72 : 8 = 9, so'ng qo'shish: 9 + 4 = 13. Endi qavs tashqarisidagi ko'paytirish bajariladi: 13 · 6 = 78. Javob: 78.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amallar-tartibi-qavsli",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#f516e515"
+    },
+    {
+      "q": "24 + 36 : 6 − 2 ifodasida qavslar shunday qo'yilsinki, natija 15 ga teng bo'lsin. Qaysi yozuv shu shartni bajaradi?",
+      "v": [
+        "(24 + 36) : 6 − 2",
+        "24 + 36 : (6 − 2)",
+        "(24 + 36) : (6 − 2)",
+        "24 + (36 : 6 − 2)"
+      ],
+      "t": 2,
+      "izoh": "Har bir variantni hisoblab ko'ramiz: birinchisi 60 : 6 − 2 = 8, ikkinchisi 24 + 9 = 33, uchinchisi 60 : 4 = 15, to'rtinchisi 24 + 4 = 28. Faqat uchinchi yozuvda 15 chiqadi. Javob: (24 + 36) : (6 − 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qavs-orni-natija",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#529706b2"
+    },
+    {
+      "q": "56 − 8 · 4 + 12 ifodasiga qavs qo'yib, qiymatini 12 ga tenglashtirish kerak. Qaysi variant to'g'ri?",
+      "v": [
+        "(56 − 8) · 4 + 12",
+        "56 − (8 · 4 + 12)",
+        "56 − 8 · (4 + 12)",
+        "(56 − 8 · 4) + 12"
+      ],
+      "t": 1,
+      "izoh": "Variantlarni tekshiramiz: 48 · 4 + 12 = 204; 56 − (32 + 12) = 56 − 44 = 12; 56 − 8 · 16 = 56 − 128 = −72; (56 − 32) + 12 = 36. Shart faqat ikkinchi yozuvda bajariladi. Javob: 56 − (8 · 4 + 12).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qavs-orni-natija",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#1426764a"
+    },
+    {
+      "q": "Quyidagi to'rt ifoda bir xil sonlardan tuzilgan. Ularning qaysi birining qiymati eng katta bo'ladi?",
+      "v": [
+        "(18 + 12) · 3",
+        "18 + 12 · 3",
+        "18 · (12 + 3)",
+        "(18 · 12) + 3"
+      ],
+      "t": 2,
+      "izoh": "Har birini hisoblaymiz: 30 · 3 = 90; 18 + 36 = 54; 18 · 15 = 270; 216 + 3 = 219. Eng katta qiymat 270 ga teng va u 18 · (12 + 3) ifodada hosil bo'ladi. Javob: 18 · (12 + 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qavs-orni-natija",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#eb2242f5"
+    },
+    {
+      "q": "Zilola daftariga 90 − 30 : 5 · 2 ifodani yozdi va javobini 24 deb topdi. Qavslarni qayerga qo'ysa, uning javobi to'g'ri chiqadi?",
+      "v": [
+        "90 − (30 : 5) · 2",
+        "(90 − 30) : (5 · 2)",
+        "90 − 30 : (5 · 2)",
+        "(90 − 30) : 5 · 2"
+      ],
+      "t": 3,
+      "izoh": "Variantlar qiymati: 90 − 6 · 2 = 78; 60 : 10 = 6; 90 − 3 = 87; 60 : 5 · 2 = 12 · 2 = 24. Zilolaning 24 javobi faqat oxirgi yozuvda hosil bo'ladi. Javob: (90 − 30) : 5 · 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qavs-orni-natija",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#38814015"
+    },
+    {
+      "q": "200 − [(45 + 15) : 4 + 27] ifodaning qiymatini hisoblang.",
+      "v": [
+        "212",
+        "158",
+        "62",
+        "185"
+      ],
+      "t": 1,
+      "izoh": "Eng ichki qavsdan boshlaymiz: 45 + 15 = 60. Keyin 60 : 4 = 15 va 15 + 27 = 42. Oxirida 200 − 42 = 158. Javob: 158.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichma-ich-qavs",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#002b143d"
+    },
+    {
+      "q": "3 · [84 : (9 − 2) + 5] ifodaning qiymati nechaga teng?",
+      "v": [
+        "51",
+        "41",
+        "36",
+        "17"
+      ],
+      "t": 0,
+      "izoh": "Ichki qavs: 9 − 2 = 7. So'ng 84 : 7 = 12 va 12 + 5 = 17. Oxirgi qadamda kvadrat qavs tashqarisidagi ko'paytirish: 3 · 17 = 51. Javob: 51.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichma-ich-qavs",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#be95da7f"
+    },
+    {
+      "q": "[(23 + 7) · 5 − 30] : 6 ifodaning qiymatini toping.",
+      "v": [
+        "145",
+        "25",
+        "20",
+        "120"
+      ],
+      "t": 2,
+      "izoh": "Ichki qavsda 23 + 7 = 30. Keyin 30 · 5 = 150 va 150 − 30 = 120. Kvadrat qavs yopilgach 120 : 6 = 20 bo'ladi. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichma-ich-qavs",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#4e9ead2e"
+    },
+    {
+      "q": "45 + 2 · [96 : (18 − 6) − 3] ifodaning qiymati qanchaga teng?",
+      "v": [
+        "58",
+        "61",
+        "50",
+        "55"
+      ],
+      "t": 3,
+      "izoh": "Ichki qavs: 18 − 6 = 12. Undan keyin 96 : 12 = 8, so'ng 8 − 3 = 5. Endi 2 · 5 = 10 va 45 + 10 = 55. Javob: 55.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichma-ich-qavs",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#f21627f0"
+    },
+    {
+      "q": "Dilnoza do'kondan kilosi 14 000 so'mdan 3 kg olma va kilosi 22 000 so'mdan 2 kg banan oldi. Kassaga 100 000 so'm bergan bo'lsa, unga qancha qaytim qaytariladi?",
+      "v": [
+        "86 000 so'm",
+        "58 000 so'm",
+        "14 000 so'm",
+        "56 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Avval har bir mahsulot narxi topiladi: olma uchun 3 · 14 000 = 42 000 so'm, banan uchun 2 · 22 000 = 44 000 so'm. Jami xarid 42 000 + 44 000 = 86 000 so'm. Qaytim esa 100 000 − 86 000 = 14 000 so'm. Javob: 14 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amallar-tartibi-hayotiy",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#273f7864"
+    },
+    {
+      "q": "Bahodir sinf uchun har birida 25 tadan daftar bo'lgan 4 ta quti oldi. So'ng qo'shni sinfga 18 ta daftar berdi va do'kondan yana 30 ta daftar sotib oldi. Unda nechta daftar bo'ldi?",
+      "v": [
+        "112 ta",
+        "52 ta",
+        "82 ta",
+        "58 ta"
+      ],
+      "t": 0,
+      "izoh": "Qutilardagi daftarlar soni 4 · 25 = 100 ta. Berib yuborilgani ayiriladi: 100 − 18 = 82 ta. Yangi olingani qo'shiladi: 82 + 30 = 112 ta. Javob: 112 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amallar-tartibi-hayotiy",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#0951ac76"
+    },
+    {
+      "q": "Zavodda 6 ta stanok kuniga 45 tadan, yana 4 ta stanok esa 60 tadan detal tayyorlaydi. Bir kunda jami nechta detal tayyorlanadi?",
+      "v": [
+        "1050 ta",
+        "510 ta",
+        "450 ta",
+        "105 ta"
+      ],
+      "t": 1,
+      "izoh": "Birinchi guruh stanoklari 6 · 45 = 270 ta detal beradi. Ikkinchi guruh 4 · 60 = 240 ta detal beradi. Kunlik jami 270 + 240 = 510 ta detal. Javob: 510 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amallar-tartibi-hayotiy",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#d1f256b7"
+    },
+    {
+      "q": "Yuk mashinasi avval 3 soat davomida soatiga 80 km, keyin 2 soat davomida soatiga 95 km tezlik bilan yurdi. U jami qancha yo'l bosdi?",
+      "v": [
+        "875 km",
+        "175 km",
+        "430 km",
+        "240 km"
+      ],
+      "t": 2,
+      "izoh": "Birinchi bosqichda 3 · 80 = 240 km yo'l bosilgan. Ikkinchi bosqichda 2 · 95 = 190 km. Jami yo'l 240 + 190 = 430 km bo'ladi. Javob: 430 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amallar-tartibi-hayotiy",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#74a5325d"
+    },
+    {
+      "q": "40 703 sonining razryad qo'shiluvchilari yig'indisi ko'rinishidagi yozuvi qaysi qatorda to'g'ri berilgan?",
+      "v": [
+        "4 000 + 700 + 3",
+        "40 000 + 70 + 3",
+        "40 000 + 700 + 3",
+        "4 000 + 70 + 30"
+      ],
+      "t": 2,
+      "izoh": "Sonni razryadlarga ajratamiz: 4 — o'n minglar, 0 — minglar, 7 — yuzlar, 0 — o'nlar, 3 — birlar. Demak 4 raqami 40 000 ni, 7 raqami 700 ni bildiradi. Yig'indi 40 000 + 700 + 3 bo'ladi. Javob: 40 000 + 700 + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "razryad-yoyilma",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#4c099398"
+    },
+    {
+      "q": "9 060 504 sonini razryad qo'shiluvchilariga yoying va to'g'ri yozuvni tanlang.",
+      "v": [
+        "9 000 000 + 6 000 + 500 + 4",
+        "9 000 000 + 60 000 + 500 + 4",
+        "900 000 + 60 000 + 500 + 4",
+        "9 000 000 + 60 000 + 50 + 4"
+      ],
+      "t": 1,
+      "izoh": "Sondagi nolga teng bo'lmagan raqamlar: 9 — millionlar, 6 — o'n minglar, 5 — yuzlar, 4 — birlar. Shunga ko'ra 9 · 1 000 000 = 9 000 000, 6 · 10 000 = 60 000, 5 · 100 = 500. Yig'indi 9 000 000 + 60 000 + 500 + 4. Javob: shu yozuv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "razryad-yoyilma",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#5e62f34b"
+    },
+    {
+      "q": "70 090 sonining razryad qo'shiluvchilariga yoyilmasi qaysi variantda to'g'ri ko'rsatilgan?",
+      "v": [
+        "7 000 + 90",
+        "70 000 + 9",
+        "70 000 + 900",
+        "70 000 + 90"
+      ],
+      "t": 3,
+      "izoh": "Sonda faqat ikkita nolmas raqam bor: 7 o'n minglar razryadida, 9 esa o'nlar razryadida turibdi. Demak 7 raqami 70 000 ni, 9 raqami 90 ni bildiradi. Yoyilma 70 000 + 90 ko'rinishida yoziladi. Javob: 70 000 + 90.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "razryad-yoyilma",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#26ae2a9f"
+    },
+    {
+      "q": "Anvar 305 208 sonini razryad qo'shiluvchilariga yoyayotib bitta qo'shiluvchini tushirib qoldirdi va 300 000 + 5 000 + 8 deb yozdi. Qaysi qo'shiluvchi tushib qolgan?",
+      "v": [
+        "200",
+        "2 000",
+        "20",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "305 208 sonining to'liq yoyilmasi 300 000 + 5 000 + 200 + 8 ko'rinishida bo'ladi, chunki 2 raqami yuzlar razryadida turibdi. Anvarning yozuvida yuzlar razryadi yo'q. Demak tushib qolgan qo'shiluvchi 200. Javob: 200.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "razryad-yoyilma",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#417fab78"
+    },
+    {
+      "q": "300 000 + 20 000 + 6 · 100 + 8 yig'indisi qaysi songa teng bo'ladi?",
+      "v": [
+        "326 008",
+        "32 608",
+        "320 068",
+        "320 608"
+      ],
+      "t": 3,
+      "izoh": "Har bir qo'shiluvchini razryadiga qo'yamiz: 300 000 va 20 000 birlashib 320 000 beradi, 6 · 100 = 600 yuzlar razryadiga, 8 esa birlar razryadiga tushadi. Minglar va o'nlar razryadida raqam yo'q, ular nol bilan to'ldiriladi. Natija 320 608. Javob: 320 608.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilmadan-son",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#965bc67f"
+    },
+    {
+      "q": "5 · 10 000 + 7 · 100 + 3 ko'rinishida yozilgan son qaysi variantda to'g'ri ko'rsatilgan?",
+      "v": [
+        "5 703",
+        "50 703",
+        "50 730",
+        "57 003"
+      ],
+      "t": 1,
+      "izoh": "5 raqami o'n minglar razryadida, ya'ni 50 000. Keyin 7 · 100 = 700 yuzlar razryadiga tushadi, 3 esa birlar razryadida qoladi. Minglar va o'nlar razryadi bo'sh, ular nol bilan yoziladi: 50 703. Javob: 50 703.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilmadan-son",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#7e52f016"
+    },
+    {
+      "q": "8 · 1 000 000 + 4 · 10 000 + 9 · 10 yig'indisiga teng bo'lgan sonni toping.",
+      "v": [
+        "8 400 090",
+        "8 040 900",
+        "8 040 090",
+        "8 049 000"
+      ],
+      "t": 2,
+      "izoh": "Qo'shiluvchilarni razryadlarga joylashtiramiz: 8 millionlar razryadida, 4 o'n minglar razryadida, 9 o'nlar razryadida turadi. Qolgan barcha razryadlar nol bilan to'ldiriladi. Shunday qilib son 8 040 090 ko'rinishida yoziladi. Javob: 8 040 090.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilmadan-son",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#f1840975"
+    },
+    {
+      "q": "Bir sonning razryad yoyilmasi 4 · 1000 + 0 · 100 + 6 · 10 + 5 ko'rinishida berilgan. Shu sonning yuzlar razryadidagi raqami nechaga teng?",
+      "v": [
+        "0",
+        "6",
+        "4",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Yoyilmada har bir ko'paytuvchi o'z razryadini ko'rsatadi: 4 minglar, 0 yuzlar, 6 o'nlar, 5 birlar razryadida. Demak son 4065 ga teng. Yuzlar razryadida 0 turibdi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilmadan-son",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#ff700ed7"
+    },
+    {
+      "q": "748 512 sonida 4 raqami qanday o'rin qiymatiga ega ekanligini aniqlang.",
+      "v": [
+        "4 000",
+        "40 000",
+        "400 000",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Razryadlarni o'ngdan chapga sanaymiz: 2 — birlar, 1 — o'nlar, 5 — yuzlar, 8 — minglar, 4 — o'n minglar, 7 — yuz minglar. Demak 4 raqami o'n minglar razryadida turibdi va uning o'rin qiymati 40 000. Javob: 40 000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "raqam-orin-qiymati",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#033ac84b"
+    },
+    {
+      "q": "6 384 sonida 3 raqamining o'rin qiymatidan 8 raqamining o'rin qiymatini ayiring. Natija nechaga teng?",
+      "v": [
+        "−5",
+        "292",
+        "380",
+        "220"
+      ],
+      "t": 3,
+      "izoh": "3 raqami yuzlar razryadida turibdi, uning o'rin qiymati 300. 8 raqami o'nlar razryadida, uning o'rin qiymati 80. Ayirma 300 − 80 = 220 ga teng. Javob: 220.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "raqam-orin-qiymati",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#d7cf9f3f"
+    },
+    {
+      "q": "9 275 316 sonida chapdan uchinchi o'rinda turgan raqam qaysi razryadga tegishli?",
+      "v": [
+        "minglar",
+        "o'n minglar",
+        "yuz minglar",
+        "yuzlar"
+      ],
+      "t": 1,
+      "izoh": "Son yetti xonali, shuning uchun chapdagi 9 millionlar razryadida turadi. Undan keyingi 2 yuz minglar, uchinchi o'rindagi 7 esa o'n minglar razryadida bo'ladi. Javob: o'n minglar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "raqam-orin-qiymati",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#78112319"
+    },
+    {
+      "q": "Bir shahar aholisi 2 909 000 kishi deb qayd etilgan. Shu sondagi ikkita 9 raqamidan chapdagisining o'rin qiymati o'ngdagisinikidan necha marta katta?",
+      "v": [
+        "10 marta",
+        "90 marta",
+        "100 marta",
+        "1000 marta"
+      ],
+      "t": 2,
+      "izoh": "Chapdagi 9 yuz minglar razryadida, uning o'rin qiymati 900 000. O'ngdagi 9 minglar razryadida, uning o'rin qiymati 9 000. Nisbatni topamiz: 900 000 : 9 000 = 100. Javob: 100 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "raqam-orin-qiymati",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#6c294824"
+    },
+    {
+      "q": "5 306 sonini a · 1000 + b · 100 + c · 10 + d ko'rinishida yozdik. b va d raqamlarining yig'indisi nechaga teng?",
+      "v": [
+        "8",
+        "9",
+        "11",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Yozuvni solishtiramiz: a = 5, b = 3, c = 0, d = 6. Bizga b va d kerak, ya'ni yuzlar va birlar raqamlari. Ularning yig'indisi 3 + 6 = 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "razryad-koeffitsienti",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#cb684980"
+    },
+    {
+      "q": "Ikki xonali sonning o'nlar raqami x, birlar raqami y bo'lsa, shu son qaysi ifoda orqali ifodalanadi?",
+      "v": [
+        "x + y",
+        "10 · x + y",
+        "x · y",
+        "x + 10 · y"
+      ],
+      "t": 1,
+      "izoh": "Ikki xonali sonda o'nlar raqami o'n marta katta qiymat beradi, birlar raqami esa o'z qiymatida qoladi. Masalan 47 soni 10 · 4 + 7 ko'rinishida yoziladi. Demak umumiy yozuv 10 · x + y bo'ladi. Javob: 10 · x + y.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "razryad-koeffitsienti",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#17f93aba"
+    },
+    {
+      "q": "Uch xonali sonning raqamlari yig'indisi 15 ga teng. Yuzlar raqami birlar raqamidan 3 ta katta, o'nlar raqami esa 2 ga teng. Shu sonni toping.",
+      "v": [
+        "258",
+        "852",
+        "825",
+        "582"
+      ],
+      "t": 2,
+      "izoh": "O'nlar raqami 2 bo'lgani uchun yuzlar va birlar raqamlari yig'indisi 15 − 2 = 13. Yuzlar raqamini birlar raqamidan 3 ta katta deb olsak, birlar raqami (13 − 3) : 2 = 5, yuzlar raqami esa 8 bo'ladi. Demak son 825. Javob: 825.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "razryad-koeffitsienti",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#7b7d8bba"
+    },
+    {
+      "q": "Ikki xonali sonda o'nlar raqami birlar raqamidan 4 ta katta, raqamlari yig'indisi esa 12 ga teng. Shu son nechaga teng?",
+      "v": [
+        "48",
+        "82",
+        "62",
+        "84"
+      ],
+      "t": 3,
+      "izoh": "Birlar raqamini kichik qism deb olamiz: ikkita raqam yig'indisi 12, farqi 4. Kichigi (12 − 4) : 2 = 4, kattasi 4 + 4 = 8. O'nlar raqami katta bo'lgani uchun son 84 ko'rinishida yoziladi. Javob: 84.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "razryad-koeffitsienti",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#636449dd"
+    },
+    {
+      "q": "3, 0, 7, 5 raqamlarining har biridan bir martadan foydalanib tuzish mumkin bo'lgan eng katta to'rt xonali sonni toping.",
+      "v": [
+        "7530",
+        "7503",
+        "5730",
+        "3057"
+      ],
+      "t": 0,
+      "izoh": "Eng katta sonni olish uchun eng katta raqam eng yuqori razryadga qo'yiladi. Raqamlarni kamayish tartibida joylashtiramiz: 7, 5, 3, 0. Shunday qilib son 7530 bo'ladi. Javob: 7530.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "raqamlardan-son-tuzish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#dfc9160e"
+    },
+    {
+      "q": "2, 4, 6, 9 raqamlarining har biridan bir martadan foydalanib tuzilgan eng katta va eng kichik to'rt xonali sonlarning ayirmasini toping.",
+      "v": [
+        "7146",
+        "7173",
+        "6993",
+        "12111"
+      ],
+      "t": 1,
+      "izoh": "Eng katta son raqamlarni kamayish tartibida yozishdan hosil bo'ladi: 9642. Eng kichigi esa o'sish tartibida: 2469. Ayirma 9642 − 2469 = 7173. Javob: 7173.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "raqamlardan-son-tuzish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#9ac32bfb"
+    },
+    {
+      "q": "0, 1, 8 raqamlaridan foydalanib, raqamlari takrorlanmaydigan nechta uch xonali son tuzish mumkin?",
+      "v": [
+        "6 ta",
+        "3 ta",
+        "4 ta",
+        "9 ta"
+      ],
+      "t": 2,
+      "izoh": "Birinchi raqam nol bo'la olmaydi, shuning uchun unga 2 xil tanlov bor: 1 yoki 8. Qolgan ikki o'rinni qolgan ikki raqam 2 usulda to'ldiradi. Jami 2 · 2 = 4 ta son: 108, 180, 810, 801. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "raqamlardan-son-tuzish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#9d0eac17"
+    },
+    {
+      "q": "Kamola eshik kodini 4, 4, 7, 2 raqamlaridan tuzmoqchi va har bir raqamdan berilgan miqdorda foydalanadi. U tuza oladigan eng kichik to'rt xonali son qaysi?",
+      "v": [
+        "2447",
+        "2474",
+        "4247",
+        "7442"
+      ],
+      "t": 0,
+      "izoh": "Eng kichik sonni olish uchun eng kichik raqam eng yuqori razryadga qo'yiladi. Raqamlarni o'sish tartibida joylashtiramiz: 2, 4, 4, 7. Demak kod 2447 bo'ladi. Javob: 2447.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "raqamlardan-son-tuzish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#69b438cb"
+    },
+    {
+      "q": "Ikki xonali sonning raqamlari o'rni almashtirilganda hosil bo'lgan son dastlabkisidan 27 ta katta bo'ldi. Shu sonning raqamlari ayirmasi nechaga teng?",
+      "v": [
+        "3",
+        "27",
+        "9",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki son 10 · a + b, almashtirilgani esa 10 · b + a ko'rinishida yoziladi. Ularning ayirmasi 10 · b + a − 10 · a − b = 9 · (b − a) ga teng. Shartga ko'ra 9 · (b − a) = 27, demak b − a = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "raqam-orin-almashtirish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#da920c3c"
+    },
+    {
+      "q": "73 sonining raqamlari o'rni almashtirildi. Hosil bo'lgan son bilan dastlabki sonning yig'indisi nechaga teng?",
+      "v": [
+        "36",
+        "110",
+        "20",
+        "1010"
+      ],
+      "t": 1,
+      "izoh": "Raqamlar almashtirilsa 37 soni hosil bo'ladi. Endi ikkala sonni qo'shamiz: 73 + 37 = 110. Javob: 110.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "raqam-orin-almashtirish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#b283ea7d"
+    },
+    {
+      "q": "546 sonining yuzlar va birlar razryadidagi raqamlari o'rin almashtirildi. Yangi son dastlabkisidan qanchaga katta bo'ldi?",
+      "v": [
+        "9",
+        "100",
+        "99",
+        "198"
+      ],
+      "t": 2,
+      "izoh": "Almashtirishdan keyin 645 soni hosil bo'ladi. Ayirmani topamiz: 645 − 546 = 99. Buni umumiy holda ham ko'rish mumkin, chunki chekka raqamlar almashganda son 99 · (birlar va yuzlar raqamlari ayirmasi) ga o'zgaradi. Javob: 99.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "raqam-orin-almashtirish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#c7b57fd1"
+    },
+    {
+      "q": "Muallim jurnalga sinfdagi o'quvchilar sonini 42 deb yozish o'rniga raqamlarni almashtirib 24 deb yozib qo'ydi. Yozilgan son haqiqiysidan qanchaga kam bo'lib qoldi?",
+      "v": [
+        "2",
+        "20",
+        "66",
+        "18"
+      ],
+      "t": 3,
+      "izoh": "Haqiqiy son 42, yozilgani esa 24. Ayirmani hisoblaymiz: 42 − 24 = 18. Demak jurnalda son 18 taga kam ko'rsatilgan. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "raqam-orin-almashtirish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#790c5ad2"
+    },
+    {
+      "q": "Raqamlari yig'indisi 20 ga teng bo'lgan eng kichik natural sonni toping.",
+      "v": [
+        "299",
+        "389",
+        "992",
+        "2999"
+      ],
+      "t": 0,
+      "izoh": "Son imkon qadar kam xonali bo'lishi kerak: ikki xonali sonda raqamlar yig'indisi eng ko'pi 18, demak son uch xonali. Uch xonali sonni kichraytirish uchun yuzlar raqami eng kichik olinadi: qolgan ikki raqam eng ko'pi 9 + 9 = 18 bergani uchun yuzlar raqami 2 bo'ladi. Shunday qilib son 299. Javob: 299.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "raqamlar-yigindisi-shart",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#ec4428fd"
+    },
+    {
+      "q": "Raqamlari yig'indisi 7 ga teng bo'lgan eng katta uch xonali sonni aniqlang.",
+      "v": [
+        "610",
+        "700",
+        "511",
+        "970"
+      ],
+      "t": 1,
+      "izoh": "Sonni kattalashtirish uchun avvalo yuzlar razryadiga imkon qadar katta raqam qo'yiladi, ya'ni 7. Unda o'nlar va birlar razryadiga yig'indini oshirmaslik uchun 0 qo'yiladi. Shunday qilib son 700 bo'ladi, chunki 970 ning raqamlari yig'indisi 16 ga teng va shartni bajarmaydi. Javob: 700.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "raqamlar-yigindisi-shart",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#2221292d"
+    },
+    {
+      "q": "Dilshod ikki xonali sonni o'yladi: uning raqamlari yig'indisi 11 ga teng va sonning o'zi 5 ga karrali. U qaysi sonni o'ylagan?",
+      "v": [
+        "56",
+        "92",
+        "65",
+        "55"
+      ],
+      "t": 2,
+      "izoh": "5 ga karrali son 0 yoki 5 raqami bilan tugaydi. Agar birlar raqami 0 bo'lsa, o'nlar raqami 11 bo'lishi kerak, bu mumkin emas. Birlar raqami 5 bo'lsa, o'nlar raqami 11 − 5 = 6 bo'ladi. Demak son 65. Javob: 65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "raqamlar-yigindisi-shart",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#1d4b784a"
+    },
+    {
+      "q": "Raqamlari yig'indisi 24 ga teng bo'lgan uch xonali sonlar ichida eng kichigini toping.",
+      "v": [
+        "789",
+        "888",
+        "996",
+        "699"
+      ],
+      "t": 3,
+      "izoh": "Sonni kichraytirish uchun yuzlar razryadiga imkon qadar kichik raqam qo'yish kerak. O'nlar va birlar razryadi eng ko'pi 9 + 9 = 18 beradi, shuning uchun yuzlar raqami 24 − 18 = 6 dan kichik bo'la olmaydi. Demak son 699. Javob: 699.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "raqamlar-yigindisi-shart",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#1ebbd326"
+    },
+    {
+      "q": "Natural sonning o'ng tomoniga bitta nol qo'shib yozilsa, uning raqamlari bilan nima sodir bo'ladi?",
+      "v": [
+        "Har bir raqam bitta razryad chapga siljiydi",
+        "Har bir raqam bitta razryad o'ngga siljiydi",
+        "Razryadlar umuman o'zgarmaydi",
+        "Faqat birlar razryadidagi raqam o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Oxiriga nol qo'shilganda birlar razryadini nol egallaydi, avvalgi birlar raqami esa o'nlar razryadiga o'tadi. Xuddi shunday har bir raqam bitta yuqori razryadga, ya'ni chapga siljiydi. Shu sababli sonning qiymati 10 marta ortadi. Javob: har bir raqam bitta razryad chapga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "razryad-ozgarishi",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#125da766"
+    },
+    {
+      "q": "Natural sonning o'ng tomoniga uchta nol qo'shib yozildi. Son necha marta ortadi?",
+      "v": [
+        "3 marta",
+        "30 marta",
+        "300 marta",
+        "1000 marta"
+      ],
+      "t": 3,
+      "izoh": "Har bir qo'shilgan nol sonni 10 marta orttiradi, chunki barcha raqamlar bitta razryad chapga siljiydi. Uchta nol uchun bu ta'sir uch marta takrorlanadi: 10 · 10 · 10 = 1000. Javob: 1000 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "razryad-ozgarishi",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#2761ec4b"
+    },
+    {
+      "q": "2 748 sonining o'nlar razryadidagi raqami 3 ga orttirildi, qolgan raqamlar o'zgarmadi. Son qanchaga ortdi?",
+      "v": [
+        "3",
+        "30",
+        "300",
+        "33"
+      ],
+      "t": 1,
+      "izoh": "O'nlar razryadida 4 raqami turibdi, u 7 ga aylanadi va son 2 778 bo'ladi. Ayirma 2 778 − 2 748 = 30. Buning sababi shundaki, o'nlar razryadidagi har bir birlik 10 ta qiymat beradi, ya'ni 3 · 10 = 30. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "razryad-ozgarishi",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#e304660e"
+    },
+    {
+      "q": "Kassir chekka 78 500 so'm o'rniga xato bilan 785 000 so'm deb yozib qo'ydi. Yozilgan summa haqiqiysidan qanchaga ko'p chiqdi?",
+      "v": [
+        "707 500 so'm",
+        "863 500 so'm",
+        "706 500 so'm",
+        "78 500 so'm"
+      ],
+      "t": 2,
+      "izoh": "Xato natijasida har bir raqam bitta razryad chapga siljigan, ya'ni summa 10 marta ortgan. Ortiqcha qismni topish uchun ayiramiz: 785 000 − 78 500 = 706 500 so'm. Javob: 706 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "razryad-ozgarishi",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#5fb76ed6"
+    },
+    {
+      "q": "«Uch million yetmish ming to'qqiz» soni raqamlar bilan qanday yoziladi?",
+      "v": [
+        "3 070 009",
+        "3 700 009",
+        "3 070 090",
+        "3 007 009"
+      ],
+      "t": 0,
+      "izoh": "Millionlar sinfida 3 turadi, minglar sinfida yetmish, ya'ni 070 yoziladi. Birliklar sinfida esa to'qqiz, ya'ni 009 bo'ladi. Har bir sinf uch xonadan iborat qilib to'ldiriladi: 3 070 009. Javob: 3 070 009.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonlarni-oqish-yozish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#65e3ebbf"
+    },
+    {
+      "q": "5 004 020 soni qanday o'qilishini ko'rsating.",
+      "v": [
+        "besh million qirq ming yigirma",
+        "besh million to'rt ming yigirma",
+        "besh million to'rt yuz ming yigirma",
+        "besh million to'rt ming ikki yuz"
+      ],
+      "t": 1,
+      "izoh": "Sonni sinflarga ajratamiz: 5 — millionlar, 004 — minglar, 020 — birliklar sinfi. Minglar sinfidagi 004 «to'rt ming» deb o'qiladi, birliklar sinfidagi 020 esa «yigirma» bo'ladi. Demak son «besh million to'rt ming yigirma» deb o'qiladi. Javob: shu variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonlarni-oqish-yozish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#182c11f9"
+    },
+    {
+      "q": "Eng kichik olti xonali son bilan eng katta besh xonali sonning ayirmasi nechaga teng?",
+      "v": [
+        "10",
+        "9",
+        "1",
+        "199 999"
+      ],
+      "t": 2,
+      "izoh": "Eng kichik olti xonali son 100 000, eng katta besh xonali son esa 99 999. Ular natural sonlar qatorida qo'shni turadi. Ayirma 100 000 − 99 999 = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonlarni-oqish-yozish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#1b70c59f"
+    },
+    {
+      "q": "Maktabga yangi jihozlar uchun 40 000 000 so'm ajratilgan. Bu son necha xonali va uning eng yuqori razryadi qaysi?",
+      "v": [
+        "8 xonali, millionlar razryadi",
+        "7 xonali, millionlar razryadi",
+        "9 xonali, yuz millionlar razryadi",
+        "8 xonali, o'n millionlar razryadi"
+      ],
+      "t": 3,
+      "izoh": "Sondagi raqamlarni sanaymiz: 4 dan keyin yettita nol bor, demak son 8 xonali. Eng chapdagi raqam eng yuqori razryadni belgilaydi. Sakkiz xonali sonda chapdagi raqam o'n millionlar razryadida turadi. Javob: 8 xonali, o'n millionlar razryadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonlarni-oqish-yozish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#6719162b"
+    },
+    {
+      "q": "43 sonini ikkilik sanoq sistemasiga o'tkazing va to'g'ri yozuvni tanlang.",
+      "v": [
+        "110101₂",
+        "101011₂",
+        "101101₂",
+        "100011₂"
+      ],
+      "t": 1,
+      "izoh": "43 ni ketma-ket 2 ga bo'lamiz: 43 : 2 = 21 (qoldiq 1), 21 : 2 = 10 (qoldiq 1), 10 : 2 = 5 (qoldiq 0), 5 : 2 = 2 (qoldiq 1), 2 : 2 = 1 (qoldiq 0), oxirgi bo'linma 1. Qoldiqlarni oxiridan boshiga qarab yozamiz: 101011₂. Tekshirish: 32 + 8 + 2 + 1 = 43. Javob: 101011₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "onlikdan-ikkilikka",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#3ace9efd"
+    },
+    {
+      "q": "Kompyuter texnikasida 100 soni ikkilik sanoq sistemasida qanday yoziladi?",
+      "v": [
+        "1010100₂",
+        "1100010₂",
+        "1000100₂",
+        "1100100₂"
+      ],
+      "t": 3,
+      "izoh": "100 sonini ikkining darajalari yig'indisi sifatida yozamiz: 100 = 64 + 32 + 4. Bu 2⁶, 2⁵ va 2² darajalariga mos keladi. Shu razryadlarga 1, qolganlariga 0 qo'yamiz: 1100100₂. Javob: 1100100₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onlikdan-ikkilikka",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#cbb0b84a"
+    },
+    {
+      "q": "26 sonini ikkilik sanoq sistemasiga o'tkazganda hosil bo'lgan yozuvda nechta 1 raqami bo'ladi?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "4 ta",
+        "5 ta"
+      ],
+      "t": 0,
+      "izoh": "26 sonini ikkining darajalariga ajratamiz: 26 = 16 + 8 + 2, ya'ni ikkilik yozuvi 11010₂. Bu yozuvda birinchi, ikkinchi va to'rtinchi o'rinlarda 1 turibdi. Demak birlar soni 3 ta. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onlikdan-ikkilikka",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#a84a465d"
+    },
+    {
+      "q": "Sanjar ustaxonadagi 60 ta detalni ikkilik sanoq sistemasidagi belgilar bilan raqamlamoqchi. 60 soni shu sistemada qanday yoziladi?",
+      "v": [
+        "110100₂",
+        "111010₂",
+        "111100₂",
+        "101100₂"
+      ],
+      "t": 2,
+      "izoh": "60 sonini ikkining darajalari yig'indisiga ajratamiz: 60 = 32 + 16 + 8 + 4. Bu 2⁵, 2⁴, 2³ va 2² darajalari, 2¹ va 2⁰ esa qatnashmaydi. Shunga ko'ra yozuv 111100₂ bo'ladi. Javob: 111100₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onlikdan-ikkilikka",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#80b23ebe"
+    },
+    {
+      "q": "110101₂ soni o'nlik sanoq sistemasida qaysi songa teng bo'ladi?",
+      "v": [
+        "43",
+        "53",
+        "51",
+        "61"
+      ],
+      "t": 1,
+      "izoh": "Razryadlarni o'ngdan chapga 2 ning darajalari bilan ko'paytiramiz: 1 · 2⁵ + 1 · 2⁴ + 0 · 2³ + 1 · 2² + 0 · 2¹ + 1 · 2⁰. Bu 32 + 16 + 4 + 1 = 53 ni beradi. Agar yozuv teskari o'qilsa 43 chiqadi, bu esa 101011₂ ning qiymati. Javob: 53.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikkilikdan-onlikka",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#a5dcab82"
+    },
+    {
+      "q": "Kompyuter xotirasida sakkiz razryadli 10110011₂ kod saqlangan. Bu kod o'nlik sanoq sistemasida qaysi songa mos keladi?",
+      "v": [
+        "205",
+        "115",
+        "179",
+        "178"
+      ],
+      "t": 2,
+      "izoh": "Chapdagi razryad 2⁷ ga mos keladi: 128 + 0 + 32 + 16 + 0 + 0 + 2 + 1. Yig'indini hisoblaymiz: 128 + 32 = 160, 160 + 16 = 176, 176 + 2 + 1 = 179. Chapdagi razryadni 2⁶ deb olsak 115 chiqadi, bu tipik xato. Javob: 179.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilikdan-onlikka",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#a4a90da8"
+    },
+    {
+      "q": "1000₂, 111₂ va 1010₂ sonlarining o'nlik sanoq sistemasidagi qiymatlari yig'indisini toping.",
+      "v": [
+        "33",
+        "26",
+        "27",
+        "25"
+      ],
+      "t": 3,
+      "izoh": "Har birini alohida o'giramiz: 1000₂ = 8, chunki bu 2³ ga teng; 111₂ = 4 + 2 + 1 = 7; 1010₂ = 8 + 2 = 10. Endi yig'indini topamiz: 8 + 7 + 10 = 25. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilikdan-onlikka",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#d91e8749"
+    },
+    {
+      "q": "Tarozida 1 kg, 2 kg, 4 kg, 8 kg va 16 kg li toshlar bor. Qo'yilgan toshlar 11001₂ kodi bilan belgilangan bo'lsa, tarozidagi umumiy og'irlik qancha?",
+      "v": [
+        "25 kg",
+        "19 kg",
+        "24 kg",
+        "26 kg"
+      ],
+      "t": 0,
+      "izoh": "Koddagi razryadlar chapdan o'ngga 16, 8, 4, 2, 1 toshlariga mos keladi. Birlar turgan razryadlarni olamiz: 16 kg, 8 kg va 1 kg. Ularning yig'indisi 16 + 8 + 1 = 25 kg. Javob: 25 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkilikdan-onlikka",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#07140e08"
+    },
+    {
+      "q": "89 sonini beshlik sanoq sistemasiga o'tkazing va to'g'ri yozuvni tanlang.",
+      "v": [
+        "324₅",
+        "234₅",
+        "342₅",
+        "314₅"
+      ],
+      "t": 0,
+      "izoh": "89 ni ketma-ket 5 ga bo'lamiz: 89 : 5 = 17 (qoldiq 4), 17 : 5 = 3 (qoldiq 2), oxirgi bo'linma 3. Qoldiqlarni oxiridan boshiga yozamiz: 324₅. Tekshiramiz: 3 · 25 + 2 · 5 + 4 = 89. Javob: 324₅.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "onlikdan-boshqa-asosga",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#17a46375"
+    },
+    {
+      "q": "156 sonini sakkizlik sanoq sistemasida yozing.",
+      "v": [
+        "432₈",
+        "234₈",
+        "224₈",
+        "244₈"
+      ],
+      "t": 1,
+      "izoh": "156 ni 8 ga bo'lamiz: 156 : 8 = 19 (qoldiq 4), 19 : 8 = 2 (qoldiq 3), oxirgi bo'linma 2. Qoldiqlarni teskari tartibda o'qiymiz: 234₈. Tekshiruv: 2 · 64 + 3 · 8 + 4 = 156. Javob: 234₈.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "onlikdan-boshqa-asosga",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#44d887b3"
+    },
+    {
+      "q": "50 sonini uchlik sanoq sistemasiga o'tkazganda qanday yozuv hosil bo'ladi?",
+      "v": [
+        "1212₃",
+        "2121₃",
+        "1221₃",
+        "1112₃"
+      ],
+      "t": 0,
+      "izoh": "50 ni 3 ga bo'lib boramiz: 50 : 3 = 16 (qoldiq 2), 16 : 3 = 5 (qoldiq 1), 5 : 3 = 1 (qoldiq 2), oxirgi bo'linma 1. Qoldiqlarni oxiridan yozsak 1212₃ chiqadi. Tekshiruv: 27 + 2 · 9 + 3 + 2 = 50. Javob: 1212₃.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onlikdan-boshqa-asosga",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#225db143"
+    },
+    {
+      "q": "Informatika darsida 200 ta kompyuterni o'n oltilik sanoq sistemasida raqamlash topshirilgan. 200 soni shu sistemada qanday yoziladi?",
+      "v": [
+        "8C₁₆",
+        "D8₁₆",
+        "C8₁₆",
+        "C4₁₆"
+      ],
+      "t": 2,
+      "izoh": "200 ni 16 ga bo'lamiz: 200 : 16 = 12 (qoldiq 8). O'n oltilik sistemada 12 raqami C harfi bilan belgilanadi. Demak yozuv C8₁₆ bo'ladi, ya'ni 12 · 16 + 8 = 200. Javob: C8₁₆.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onlikdan-boshqa-asosga",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#0cc830dd"
+    },
+    {
+      "q": "347₈ soni o'nlik sanoq sistemasida qanday qiymatga ega bo'ladi?",
+      "v": [
+        "63",
+        "231",
+        "483",
+        "224"
+      ],
+      "t": 1,
+      "izoh": "Razryad qiymatlari 8 ning darajalari bilan aniqlanadi: 3 · 8² + 4 · 8¹ + 7 · 8⁰. Hisoblaymiz: 3 · 64 = 192, 4 · 8 = 32, oxirgi hadi 7. Yig'indi 192 + 32 + 7 = 231. Javob: 231.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boshqa-asosdan-onlikka",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#71f40de8"
+    },
+    {
+      "q": "O'n oltilik sanoq sistemasidagi 1A₁₆ soni o'nlik sistemada nechaga teng?",
+      "v": [
+        "110",
+        "17",
+        "25",
+        "26"
+      ],
+      "t": 3,
+      "izoh": "O'n oltilik sistemada A harfi 10 raqamini bildiradi. Razryadlarga ko'ra qiymat 1 · 16 + 10 ga teng. Demak son 26 bo'ladi. Javob: 26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boshqa-asosdan-onlikka",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#4f99f403"
+    },
+    {
+      "q": "2103₅ yozuvi o'nlik sanoq sistemasida qaysi songa mos keladi?",
+      "v": [
+        "258",
+        "382",
+        "278",
+        "2103"
+      ],
+      "t": 2,
+      "izoh": "Razryadlar 5 ning darajalari: 2 · 5³ + 1 · 5² + 0 · 5¹ + 3 · 5⁰. Hisoblaymiz: 2 · 125 = 250, 1 · 25 = 25, uchinchi had nol, oxirgisi 3. Yig'indi 250 + 25 + 3 = 278. Javob: 278.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boshqa-asosdan-onlikka",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#004687bb"
+    },
+    {
+      "q": "Ombor daftarida mahsulot soni 1101₂ ta deb yozib qo'yilgan. Bu aslida nechta mahsulotni bildiradi?",
+      "v": [
+        "11",
+        "13",
+        "1101",
+        "14"
+      ],
+      "t": 1,
+      "izoh": "Ikkilik yozuvni razryadlarga ajratamiz: 1 · 2³ + 1 · 2² + 0 · 2¹ + 1 · 2⁰. Bu 8 + 4 + 1 = 13 ga teng. Yozuvni teskari o'qish 11 ni beradi, bu esa xato. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boshqa-asosdan-onlikka",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#a715a0c4"
+    },
+    {
+      "q": "Asosi noma'lum sanoq sistemasida 24 ko'rinishida yozilgan son o'nlik sistemada 14 ga teng. Shu sistemaning asosini toping.",
+      "v": [
+        "5",
+        "6",
+        "7",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Ikki xonali yozuvning qiymati 2 · asos + 4 ko'rinishida bo'ladi. Shartga ko'ra 2 · asos + 4 = 14, bundan 2 · asos = 10 va asos = 5. Asos 5 bo'lgani uchun undagi 4 raqami o'rinli. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asosni-topish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#1bb078e1"
+    },
+    {
+      "q": "Qaysi sanoq sistemasida 121 yozuvi o'nlik sistemadagi 16 soniga teng bo'ladi?",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Yozuvning qiymati asosning darajalari bilan ifodalanadi: asos² + 2 · asos + 1. Bu ifoda (asos + 1)² ko'rinishida yig'iladi va u 16 ga teng bo'lishi kerak. Demak asos + 1 = 4, ya'ni asos 3 ga teng. Tekshiruv: 9 + 6 + 1 = 16. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asosni-topish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#8d71f602"
+    },
+    {
+      "q": "Bir sanoq sistemasida 44 ko'rinishida yozilgan son o'nlik sistemada 28 ga teng ekan. Shu sistemaning asosi qanday?",
+      "v": [
+        "7",
+        "5",
+        "6",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Yozuvning qiymati 4 · asos + 4 ga teng bo'ladi. Tenglama tuzamiz: 4 · asos + 4 = 28, bundan 4 · asos = 24 va asos = 6. Asos 6 bo'lsa, undagi 4 raqami ishlatilishi mumkin. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asosni-topish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#ca9ef06d"
+    },
+    {
+      "q": "Qandaydir sanoq sistemasida 13 deb yozilgan son o'nlik sistemada 7 ga teng. Shu sistemada 22 deb yozilgan son o'nlik sistemada nechaga teng bo'ladi?",
+      "v": [
+        "22",
+        "8",
+        "12",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Avval asosni topamiz: 1 · asos + 3 = 7, demak asos 4 ga teng. Endi ikkinchi yozuvni shu asosda hisoblaymiz: 2 · 4 + 2 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asosni-topish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#42160744"
+    },
+    {
+      "q": "13₄ va 13₅ sonlarini solishtiring: qaysi biri katta va necha birlikka katta?",
+      "v": [
+        "13₄ soni 1 ta katta",
+        "13₅ soni 1 ta katta",
+        "Ikkalasi ham teng",
+        "13₅ soni 2 ta katta"
+      ],
+      "t": 1,
+      "izoh": "Ikkala yozuvni o'nlik sistemaga o'giramiz: 13₄ = 1 · 4 + 3 = 7, 13₅ = 1 · 5 + 3 = 8. Bir xil raqamlar yozilgan bo'lsa ham, asos katta bo'lgan sonning qiymati kattaroq. Ayirma 8 − 7 = 1. Javob: 13₅ soni 1 ta katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sanoq-sistemalarini-solishtirish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#8d8babb2"
+    },
+    {
+      "q": "1011₂, 21₈, 31₅ va 12₁₆ sonlaridan qaysi biri eng katta qiymatga ega?",
+      "v": [
+        "1011₂",
+        "21₈",
+        "31₅",
+        "12₁₆"
+      ],
+      "t": 3,
+      "izoh": "Hammasini o'nlik sistemaga keltiramiz: 1011₂ = 8 + 2 + 1 = 11; 21₈ = 2 · 8 + 1 = 17; 31₅ = 3 · 5 + 1 = 16; 12₁₆ = 1 · 16 + 2 = 18. Eng kichik asosli yozuv eng uzun bo'lsa ham, uning qiymati eng kichik chiqdi. Eng katta qiymat 18 ga teng. Javob: 12₁₆.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sanoq-sistemalarini-solishtirish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#91a93b28"
+    },
+    {
+      "q": "Alisher 101₂ ta, Bekzod esa 12₃ ta daftar sotib oldi. Ulardan qaysi biri ko'proq daftar olgan?",
+      "v": [
+        "Alisher ko'proq oldi",
+        "Bekzod ko'proq oldi",
+        "Ikkalasi teng miqdorda oldi",
+        "Berilganlar yetarli emas"
+      ],
+      "t": 2,
+      "izoh": "Har bir yozuvni o'nlik sistemaga o'giramiz: 101₂ = 4 + 0 + 1 = 5 ta, 12₃ = 1 · 3 + 2 = 5 ta. Har xil sanoq sistemasida yozilgan bu ikki yozuv bir xil miqdorni bildiradi. Javob: ikkalasi teng miqdorda oldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sanoq-sistemalarini-solishtirish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#072a6c10"
+    },
+    {
+      "q": "1001₂, 12₈ va 21₃ sonlarini o'sish tartibida joylashtiring.",
+      "v": [
+        "21₃, 1001₂, 12₈",
+        "1001₂, 12₈, 21₃",
+        "12₈, 21₃, 1001₂",
+        "21₃, 12₈, 1001₂"
+      ],
+      "t": 0,
+      "izoh": "Sonlarni o'nlik sistemaga keltiramiz: 1001₂ = 8 + 1 = 9; 12₈ = 1 · 8 + 2 = 10; 21₃ = 2 · 3 + 1 = 7. Endi 7, 9, 10 tartibida joylashtiramiz. Demak to'g'ri qatorlanish 21₃, 1001₂, 12₈ bo'ladi. Javob: shu tartib.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sanoq-sistemalarini-solishtirish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#691d94ec"
+    },
+    {
+      "q": "1011₂ va 110₂ sonlarining yig'indisini ikkilik sanoq sistemasida yozing.",
+      "v": [
+        "10001₂",
+        "1121₂",
+        "10011₂",
+        "1111₂"
+      ],
+      "t": 0,
+      "izoh": "Qulaylik uchun o'nlik sistemaga o'tamiz: 1011₂ = 11, 110₂ = 6. Yig'indi 11 + 6 = 17 ga teng. Endi 17 ni ikkilik sistemaga qaytaramiz: 17 = 16 + 1, ya'ni 10001₂. Javob: 10001₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sanoq-sistemasida-amal",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#788d94d6"
+    },
+    {
+      "q": "101₂ va 11₂ sonlarining ko'paytmasini ikkilik sanoq sistemasida toping.",
+      "v": [
+        "1011₂",
+        "1111₂",
+        "10101₂",
+        "111₂"
+      ],
+      "t": 1,
+      "izoh": "O'nlik sistemada 101₂ = 5, 11₂ = 3 bo'ladi. Ularning ko'paytmasi 5 · 3 = 15. 15 sonini ikkilik sistemaga o'tkazamiz: 15 = 8 + 4 + 2 + 1, ya'ni 1111₂. Javob: 1111₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sanoq-sistemasida-amal",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#433010c4"
+    },
+    {
+      "q": "26₈ va 15₈ sonlarining yig'indisini sakkizlik sanoq sistemasida hisoblang.",
+      "v": [
+        "41₈",
+        "35₈",
+        "44₈",
+        "43₈"
+      ],
+      "t": 3,
+      "izoh": "O'nlik sistemaga o'tkazamiz: 26₈ = 2 · 8 + 6 = 22, 15₈ = 1 · 8 + 5 = 13. Yig'indi 22 + 13 = 35. Endi 35 ni sakkizlik sistemaga qaytaramiz: 35 = 4 · 8 + 3, ya'ni 43₈. Javob: 43₈.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sanoq-sistemasida-amal",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#62ab1223"
+    },
+    {
+      "q": "Nodira ikkita faylning hajmini ikkilik sanoq sistemasida 1100₂ MB va 1010₂ MB deb yozib qo'ygan. Ularning umumiy hajmi o'nlik sistemada qancha bo'ladi?",
+      "v": [
+        "22 MB",
+        "2110 MB",
+        "20 MB",
+        "26 MB"
+      ],
+      "t": 0,
+      "izoh": "Har bir yozuvni o'nlik sistemaga o'giramiz: 1100₂ = 8 + 4 = 12, 1010₂ = 8 + 2 = 10. Umumiy hajm 12 + 10 = 22 MB. Yozuvlarni o'nlik sonlardek qo'shib yuborish 2110 kabi noto'g'ri natijaga olib keladi. Javob: 22 MB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sanoq-sistemasida-amal",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#c6cdd04f"
+    },
+    {
+      "q": "Ikkilik sanoq sistemasida beshta razryad bilan yozilgan eng katta son o'nlik sistemada nechaga teng?",
+      "v": [
+        "32",
+        "31",
+        "16",
+        "63"
+      ],
+      "t": 1,
+      "izoh": "Beshta razryadning hammasi birga teng bo'lsa, son eng katta bo'ladi: 11111₂. Uning qiymati 16 + 8 + 4 + 2 + 1 = 31. Buni 2⁵ − 1 formulasi bilan ham tekshirish mumkin. Javob: 31.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sanoq-sistemasida-raqam-soni",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#e0190c46"
+    },
+    {
+      "q": "Qaysi natural sonlar ikkilik sanoq sistemasida aynan to'rtta razryad bilan yoziladi?",
+      "v": [
+        "8 dan 15 gacha",
+        "4 dan 8 gacha",
+        "16 dan 31 gacha",
+        "1 dan 15 gacha"
+      ],
+      "t": 0,
+      "izoh": "To'rt razryadli eng kichik ikkilik yozuv 1000₂, uning qiymati 8 ga teng. Eng kattasi esa 1111₂, ya'ni 15. Demak shu oraliqdagi barcha sonlar to'rtta razryad bilan yoziladi. Javob: 8 dan 15 gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sanoq-sistemasida-raqam-soni",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#8313a1a9"
+    },
+    {
+      "q": "255 soni ikkilik sanoq sistemasida nechta razryaddan iborat bo'ladi?",
+      "v": [
+        "7 ta",
+        "9 ta",
+        "8 ta",
+        "16 ta"
+      ],
+      "t": 2,
+      "izoh": "255 sonini ikkining darajalari bilan solishtiramiz: 2⁸ = 256 bo'lgani uchun 255 undan kichik. Aslida 255 = 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1, ya'ni yozuvi 11111111₂. Bu yerda sakkizta razryad bor. Javob: 8 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sanoq-sistemasida-raqam-soni",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#75a7e427"
+    },
+    {
+      "q": "Do'kondagi 500 xil mahsulotning har biriga alohida ikkilik kod berilmoqchi. Har bir kod uchun kamida nechta razryad kerak bo'ladi?",
+      "v": [
+        "8 ta",
+        "10 ta",
+        "500 ta",
+        "9 ta"
+      ],
+      "t": 3,
+      "izoh": "Razryadlar soni n bo'lsa, ular bilan 2 ning n-darajasiga teng miqdordagi har xil kod tuziladi. Sakkiz razryad 2⁸ = 256 ta kod beradi, bu 500 ta uchun yetmaydi. To'qqiz razryad esa 2⁹ = 512 ta kod beradi va shart bajariladi. Javob: 9 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sanoq-sistemasida-raqam-soni",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#c111e557"
+    },
+    {
+      "q": "Xonadagi to'rtta chiroqning har biri yoki yonadi, yoki o'chadi. Chiroqlarning yoqilish holati jami necha xil bo'lishi mumkin?",
+      "v": [
+        "16 ta",
+        "8 ta",
+        "4 ta",
+        "15 ta"
+      ],
+      "t": 0,
+      "izoh": "Har bir chiroq ikki holatda bo'ladi va uni ikkilik razryad deb qarash mumkin. To'rtta chiroq uchun holatlar soni 2 · 2 · 2 · 2 = 2⁴ = 16 ga teng. Hamma chiroq o'chgan holat ham hisobga olinadi, shuning uchun 15 emas. Javob: 16 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilik-hayotiy",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#9af735ee"
+    },
+    {
+      "q": "Sotuvchida 1 g, 2 g, 4 g, 8 g, 16 g va 32 g li toshlar bor. U tarozida 45 g yukni o'lchash uchun qaysi toshlarni qo'yishi kerak?",
+      "v": [
+        "32 g, 16 g va 1 g",
+        "32 g, 8 g, 4 g va 1 g",
+        "32 g, 8 g, 4 g va 2 g",
+        "16 g, 8 g, 4 g, 2 g va 1 g"
+      ],
+      "t": 1,
+      "izoh": "Toshlar ikkining darajalari bo'lgani uchun massani ikkilik yoyilmaga ajratamiz: 45 = 32 + 8 + 4 + 1. Bu 101101₂ yozuviga mos keladi. Demak 32 g, 8 g, 4 g va 1 g toshlar qo'yiladi. Javob: shu to'rt tosh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilik-hayotiy",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#5d36d985"
+    },
+    {
+      "q": "Kompyuterda bitta bayt sakkizta bitdan iborat. Sakkiz bitli ikkilik kod bilan eng ko'pi bilan nechta har xil belgi kodlanadi?",
+      "v": [
+        "128 ta",
+        "255 ta",
+        "256 ta",
+        "64 ta"
+      ],
+      "t": 2,
+      "izoh": "Har bir bit ikki qiymat qabul qiladi, shuning uchun kodlar soni 2⁸ ga teng. Hisoblaymiz: 2⁸ = 256. Bu yerda barcha bitlari nolga teng kod ham alohida belgi hisoblanadi, shu sababli 255 emas. Javob: 256 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikkilik-hayotiy",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#fe177c7f"
+    },
+    {
+      "q": "Robot faqat ikkilik buyruqni tushunadi: 1 raqami bir qadam oldinga yurishni, 0 esa joyida turishni bildiradi. 1101101₂ dasturi bo'yicha robot necha qadam yuradi?",
+      "v": [
+        "4 ta",
+        "7 ta",
+        "109 ta",
+        "5 ta"
+      ],
+      "t": 3,
+      "izoh": "Dasturdagi buyruqlarni sanaymiz: yozuvda birlar soni qadamlar soniga teng. 1101101 yozuvida beshta 1 va ikkita 0 bor. Demak robot 5 qadam oldinga yuradi, 109 esa shu yozuvning o'nlik qiymati bo'lib, savolga javob emas. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikkilik-hayotiy",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#8d86bdd3"
+    },
+    {
+      "q": "Kassada 100 000, 10 000, 1 000 va 100 so'mlik banknotlar bor. 342 500 so'mni eng kam sondagi banknot bilan berish uchun 10 000 so'mlikdan nechta kerak bo'ladi?",
+      "v": [
+        "4 ta",
+        "3 ta",
+        "2 ta",
+        "5 ta"
+      ],
+      "t": 0,
+      "izoh": "Summani razryad qo'shiluvchilariga yoyamiz: 342 500 = 300 000 + 40 000 + 2 000 + 500. Har bir qo'shiluvchi o'z banknotiga mos keladi: 3 ta yuz minglik, 4 ta o'n minglik, 2 ta minglik va 5 ta yuzlik. Demak 10 000 so'mlikdan 4 ta kerak. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "razryad-hayotiy",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#aec19040"
+    },
+    {
+      "q": "Avtomobil yo'l hisoblagichi 19 999 km ni ko'rsatib turibdi. Yana 1 km yurilgach, hisoblagichdagi qaysi raqamlar o'zgaradi?",
+      "v": [
+        "Faqat birlar razryadidagi raqam",
+        "Beshala razryaddagi raqam ham",
+        "Faqat o'n minglar razryadidagi raqam",
+        "Faqat ikkita razryaddagi raqam"
+      ],
+      "t": 1,
+      "izoh": "19 999 ga 1 qo'shilsa 20 000 hosil bo'ladi. Birlar razryadida 9 dan keyin 0 kelib, birlik yuqori razryadga o'tadi va bu ko'chish zanjir bo'ylab davom etadi. Natijada beshta razryaddagi raqamning hammasi o'zgaradi. Javob: beshala razryaddagi raqam ham.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "razryad-hayotiy",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#1f566e98"
+    },
+    {
+      "q": "Sharbat zavodida bir kunda 8 405 shisha to'ldirildi. Shu sonning minglar razryadidagi raqami bilan birlar razryadidagi raqami ko'paytmasini toping.",
+      "v": [
+        "13",
+        "32",
+        "40",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "Sonni razryadlarga ajratamiz: 8 — minglar, 4 — yuzlar, 0 — o'nlar, 5 — birlar razryadida. Kerakli raqamlar 8 va 5 ekan. Ularning ko'paytmasi 8 · 5 = 40. Javob: 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "razryad-hayotiy",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#e2685fd5"
+    },
+    {
+      "q": "Maktabga 4 ta qutida 1000 tadan, 7 ta qutida 100 tadan va 6 ta qutida 10 tadan daftar keltirildi. Jami nechta daftar keltirilgan?",
+      "v": [
+        "4760",
+        "476",
+        "4076",
+        "4706"
+      ],
+      "t": 0,
+      "izoh": "Har bir guruhni alohida hisoblaymiz: 4 · 1000 = 4000, 7 · 100 = 700, 6 · 10 = 60. Bu qo'shiluvchilar aynan razryad qo'shiluvchilari bo'lib, ularni birlashtiramiz: 4000 + 700 + 60 = 4760. Javob: 4760.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "razryad-hayotiy",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#0f0c9c07"
+    },
+    {
+      "q": "O'quvchi 36 + 4 · 5 ifodaning qiymatini 200 deb topdi. U qanday xatoga yo'l qo'ygan?",
+      "v": [
+        "4 · 5 ko'paytmasini noto'g'ri topgan",
+        "Ayirish amalini tushirib qoldirgan",
+        "Ifodaning qiymati haqiqatan 200 ga teng",
+        "Avval qo'shishni, so'ng ko'paytirishni bajargan"
+      ],
+      "t": 3,
+      "izoh": "O'quvchi 36 + 4 = 40 ni hisoblab, keyin 40 · 5 = 200 qilgan. Aslida ko'paytirish qo'shishdan oldin bajariladi: 4 · 5 = 20, so'ng 36 + 20 = 56. Demak xato amallar tartibini buzishda. Javob: avval qo'shishni, so'ng ko'paytirishni bajargan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xato-topish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#ff15d2be"
+    },
+    {
+      "q": "Nodir 720 : (9 · 4) ifodani qavsga e'tibor bermay 720 : 9 · 4 deb hisobladi va 320 javobini oldi. To'g'ri javob nechaga teng?",
+      "v": [
+        "320",
+        "20",
+        "80",
+        "36"
+      ],
+      "t": 1,
+      "izoh": "Qavs ichidagi amal birinchi bajarilishi kerak: 9 · 4 = 36. Endi bo'lishni bajaramiz: 720 : 36 = 20. Nodirning yo'li chapdan o'ngga bo'lish va ko'paytirishga olib kelgan, shuning uchun u 320 ni olgan. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xato-topish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#bb672187"
+    },
+    {
+      "q": "Sevara 5 703 sonini razryad qo'shiluvchilariga 5 000 + 70 + 3 ko'rinishida yoydi. To'g'ri yoyilma qanday bo'lishi kerak edi?",
+      "v": [
+        "5 000 + 70 + 30",
+        "500 + 700 + 3",
+        "5 000 + 700 + 3",
+        "5 000 + 7 + 3"
+      ],
+      "t": 2,
+      "izoh": "Sonda 7 raqami yuzlar razryadida turibdi, Sevara esa uni o'nlar razryadidagidek 70 deb olgan. Yuzlar razryadidagi 7 raqami 700 qiymatni beradi. Shu sababli to'g'ri yozuv 5 000 + 700 + 3 bo'ladi. Javob: 5 000 + 700 + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xato-topish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#7b844032"
+    },
+    {
+      "q": "Aziz 1101₂ sonini o'nlik sistemaga o'tkazayotib raqamlarini qo'shdi va javobni 3 deb yozdi. Uning xatosi nimada?",
+      "v": [
+        "2 ning darajalarini noto'g'ri hisoblagan",
+        "Har bir raqamni o'z razryad qiymatiga ko'paytirmagan",
+        "Yozuvni teskari tartibda o'qigan",
+        "Xato yo'q, javob to'g'ri"
+      ],
+      "t": 1,
+      "izoh": "Har qanday sanoq sistemasida raqamning qiymati uning razryadiga bog'liq bo'ladi. To'g'ri yo'l: 1 · 2³ + 1 · 2² + 0 · 2¹ + 1 · 2⁰ = 8 + 4 + 0 + 1 = 13. Aziz esa razryad qiymatlarini hisobga olmay, faqat raqamlarni qo'shgan. Javob: har bir raqamni o'z razryad qiymatiga ko'paytirmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xato-topish",
+      "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq#b5b28976"
+    }
+  ]
+}

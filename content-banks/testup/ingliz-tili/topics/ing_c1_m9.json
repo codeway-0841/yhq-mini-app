@@ -1,0 +1,1306 @@
+{
+  "nom": "Nuanced synonyms",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "After the marathon she was utterly ___, unable to lift her legs.",
+      "v": [
+        "tired",
+        "exhausted",
+        "drowsy",
+        "sleepy"
+      ],
+      "t": 1,
+      "izoh": "exhausted = butunlay holdan toygan, charchoqning eng kuchli darajasi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#aee9414b"
+    },
+    {
+      "q": "The endless bureaucratic forms left him ___ and disheartened.",
+      "v": [
+        "weary",
+        "elated",
+        "drowsy",
+        "furious"
+      ],
+      "t": 0,
+      "izoh": "weary = ruhan toliqqan, zerikib charchagan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#19a889af"
+    },
+    {
+      "q": "The warm milk made the toddler ___ and she dozed off.",
+      "v": [
+        "exhausted",
+        "drowsy",
+        "weary",
+        "irritated"
+      ],
+      "t": 1,
+      "izoh": "drowsy = uyqusi kelayotgan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#288ce39c"
+    },
+    {
+      "q": "Passing the exam left her ___, jumping around the room.",
+      "v": [
+        "content",
+        "cheerful",
+        "elated",
+        "pleased"
+      ],
+      "t": 2,
+      "izoh": "elated = quvonchdan uchib ketgan, o'ta xursand.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#329e3c53"
+    },
+    {
+      "q": "He is perfectly ___ with a quiet evening and a good book.",
+      "v": [
+        "elated",
+        "content",
+        "ecstatic",
+        "thrilled"
+      ],
+      "t": 1,
+      "izoh": "content = qanoatlangan, xotirjam mamnun.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#afa7150e"
+    },
+    {
+      "q": "She has a ___ personality and always brightens the office.",
+      "v": [
+        "cheerful",
+        "weary",
+        "furious",
+        "content"
+      ],
+      "t": 0,
+      "izoh": "cheerful = quvnoq, xushchaqchaq.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#25b96254"
+    },
+    {
+      "q": "The flood caused ___ destruction across three provinces.",
+      "v": [
+        "little",
+        "enormous",
+        "slight",
+        "minor"
+      ],
+      "t": 1,
+      "izoh": "enormous = nihoyatda katta, ulkan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#d90bb138"
+    },
+    {
+      "q": "The project needs a ___ investment, though not an astronomical one.",
+      "v": [
+        "tiny",
+        "substantial",
+        "colossal",
+        "enormous"
+      ],
+      "t": 1,
+      "izoh": "substantial = sezilarli, anchagina miqdordagi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#dd2b1641"
+    },
+    {
+      "q": "When she saw the broken window she was ___ and yelled.",
+      "v": [
+        "content",
+        "furious",
+        "weary",
+        "drowsy"
+      ],
+      "t": 1,
+      "izoh": "furious = g'azabdan qaynab turgan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#5687b47b"
+    },
+    {
+      "q": "The slow internet left him mildly ___, but not truly angry.",
+      "v": [
+        "furious",
+        "enraged",
+        "irritated",
+        "livid"
+      ],
+      "t": 2,
+      "izoh": "irritated = biroz asabi buzilgan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#856c6d65"
+    },
+    {
+      "q": "A stable heartbeat is ___ to survival; without it we die.",
+      "v": [
+        "optional",
+        "crucial",
+        "trivial",
+        "minor"
+      ],
+      "t": 1,
+      "izoh": "crucial = hal qiluvchi, o'ta muhim.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#b480a09d"
+    },
+    {
+      "q": "Oxygen is ___ for all living organisms.",
+      "v": [
+        "trivial",
+        "vital",
+        "minor",
+        "dull"
+      ],
+      "t": 1,
+      "izoh": "vital = hayot uchun zarur.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#c143f34e"
+    },
+    {
+      "q": "The evidence was ___ enough to change the jury's verdict.",
+      "v": [
+        "significant",
+        "trivial",
+        "minor",
+        "negligible"
+      ],
+      "t": 0,
+      "izoh": "significant = sezilarli, ahamiyatli.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#a0ff3db8"
+    },
+    {
+      "q": "Losing her father left her ___ for months.",
+      "v": [
+        "cheerful",
+        "miserable",
+        "content",
+        "elated"
+      ],
+      "t": 1,
+      "izoh": "miserable = juda baxtsiz, tang ahvolda.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#c2d2f0d8"
+    },
+    {
+      "q": "The rainy sky gave the town a ___ atmosphere.",
+      "v": [
+        "elated",
+        "gloomy",
+        "cheerful",
+        "vibrant"
+      ],
+      "t": 1,
+      "izoh": "gloomy = ma'yus, xira.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#5270ec00"
+    },
+    {
+      "q": "After the loss the striker looked ___, staring at the ground.",
+      "v": [
+        "dejected",
+        "thrilled",
+        "cheerful",
+        "content"
+      ],
+      "t": 0,
+      "izoh": "dejected = umidsiz, tushkun.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#9a862b23"
+    },
+    {
+      "q": "The detective was ___ enough to spot the tiny inconsistency.",
+      "v": [
+        "dull",
+        "shrewd",
+        "clumsy",
+        "weary"
+      ],
+      "t": 1,
+      "izoh": "shrewd = ziyrak, tadbirkor aqlli.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#b06e8b43"
+    },
+    {
+      "q": "Her ___ analysis impressed the entire academic panel.",
+      "v": [
+        "astute",
+        "dull",
+        "careless",
+        "vague"
+      ],
+      "t": 0,
+      "izoh": "astute = o'tkir zehnli, mohir.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#9d27fe08"
+    },
+    {
+      "q": "The child gave a ___ answer that surprised the teacher.",
+      "v": [
+        "clever",
+        "dull",
+        "slow",
+        "vague"
+      ],
+      "t": 0,
+      "izoh": "clever = topqir, aqlli.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#c6ce6795"
+    },
+    {
+      "q": "When the lights went out the children were ___ and screamed.",
+      "v": [
+        "content",
+        "terrified",
+        "cheerful",
+        "elated"
+      ],
+      "t": 1,
+      "izoh": "terrified = qattiq qo'rqib ketgan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#95ddaf28"
+    },
+    {
+      "q": "She felt ___ before the interview, though not fully panicked.",
+      "v": [
+        "terrified",
+        "apprehensive",
+        "furious",
+        "elated"
+      ],
+      "t": 1,
+      "izoh": "apprehensive = xavotirda, biroz tashvishli.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#7fab7978"
+    },
+    {
+      "q": "He was ___ of dogs after being bitten as a child.",
+      "v": [
+        "fond",
+        "frightened",
+        "content",
+        "proud"
+      ],
+      "t": 1,
+      "izoh": "frightened = qo'rqadigan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#41ec228f"
+    },
+    {
+      "q": "The bride looked absolutely ___ in her silk gown.",
+      "v": [
+        "plain",
+        "stunning",
+        "dull",
+        "ordinary"
+      ],
+      "t": 1,
+      "izoh": "stunning = hayratlanarli darajada go'zal.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#802c8ed7"
+    },
+    {
+      "q": "The museum houses several ___ pieces of Renaissance jewelry.",
+      "v": [
+        "exquisite",
+        "plain",
+        "crude",
+        "dull"
+      ],
+      "t": 0,
+      "izoh": "exquisite = nafis, benihoya nozik go'zal.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#5dc7e2e0"
+    },
+    {
+      "q": "The morning air was ___, making us reach for our coats.",
+      "v": [
+        "boiling",
+        "chilly",
+        "warm",
+        "scorching"
+      ],
+      "t": 1,
+      "izoh": "chilly = salqin, sovuqroq.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#97d16c7a"
+    },
+    {
+      "q": "The desert sun was ___, and we sought any patch of shade.",
+      "v": [
+        "chilly",
+        "scorching",
+        "cool",
+        "mild"
+      ],
+      "t": 1,
+      "izoh": "scorching = jazirama, kuydiruvchi issiq.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#6f3e977b"
+    },
+    {
+      "q": "The messenger delivered the news with ___ efficiency.",
+      "v": [
+        "sluggish",
+        "swift",
+        "lazy",
+        "slow"
+      ],
+      "t": 1,
+      "izoh": "swift = tez, chaqqon.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#f8e15c62"
+    },
+    {
+      "q": "He made a ___ decision without thinking it through.",
+      "v": [
+        "careful",
+        "hasty",
+        "deliberate",
+        "slow"
+      ],
+      "t": 1,
+      "izoh": "hasty = shoshqaloq, o'ylamay qilingan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#bf60537d"
+    },
+    {
+      "q": "The abandoned house had an ___ silence that unnerved us.",
+      "v": [
+        "cheerful",
+        "eerie",
+        "cozy",
+        "warm"
+      ],
+      "t": 1,
+      "izoh": "eerie = vahimali, g'alati qo'rqinchli.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#82356719"
+    },
+    {
+      "q": "His ___ behavior at dinner made everyone uncomfortable.",
+      "v": [
+        "normal",
+        "peculiar",
+        "polite",
+        "warm"
+      ],
+      "t": 1,
+      "izoh": "peculiar = g'alati, odatdan tashqari.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#c653db1b"
+    },
+    {
+      "q": "The comedian's ___ remarks had the whole hall roaring.",
+      "v": [
+        "dull",
+        "witty",
+        "boring",
+        "flat"
+      ],
+      "t": 1,
+      "izoh": "witty = zukko, hozirjavob kulgili.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#f011d393"
+    },
+    {
+      "q": "After the storm the lake was ___ and mirror-still.",
+      "v": [
+        "turbulent",
+        "tranquil",
+        "rough",
+        "noisy"
+      ],
+      "t": 1,
+      "izoh": "tranquil = tinch, osoyishta.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#944b54f9"
+    },
+    {
+      "q": "The soldier's ___ act saved his entire unit.",
+      "v": [
+        "cowardly",
+        "valiant",
+        "timid",
+        "weak"
+      ],
+      "t": 1,
+      "izoh": "valiant = jasur, mardona.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#3e048380"
+    },
+    {
+      "q": "They live in an ___ neighborhood full of mansions.",
+      "v": [
+        "poor",
+        "affluent",
+        "shabby",
+        "modest"
+      ],
+      "t": 1,
+      "izoh": "affluent = badavlat, boy.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#1ecced01"
+    },
+    {
+      "q": "The scientist studied an ___ manuscript from the 9th century.",
+      "v": [
+        "modern",
+        "ancient",
+        "recent",
+        "new"
+      ],
+      "t": 1,
+      "izoh": "ancient = qadimiy.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#45f652d5"
+    },
+    {
+      "q": "That software is ___ now; nobody uses it anymore.",
+      "v": [
+        "current",
+        "obsolete",
+        "modern",
+        "popular"
+      ],
+      "t": 1,
+      "izoh": "obsolete = eskirgan, iste'moldan chiqqan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#a01f84c9"
+    },
+    {
+      "q": "Climbing the north face was an ___ task that took days.",
+      "v": [
+        "easy",
+        "arduous",
+        "simple",
+        "effortless"
+      ],
+      "t": 1,
+      "izoh": "arduous = og'ir, mashaqqatli.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#772cce3d"
+    },
+    {
+      "q": "The riddle was ___, and it stumped even the experts.",
+      "v": [
+        "simple",
+        "tricky",
+        "obvious",
+        "plain"
+      ],
+      "t": 1,
+      "izoh": "tricky = chalkash, murakkab.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#6c31ff05"
+    },
+    {
+      "q": "The ___ engine could haul twice the normal load.",
+      "v": [
+        "feeble",
+        "robust",
+        "fragile",
+        "weak"
+      ],
+      "t": 1,
+      "izoh": "robust = baquvvat, mustahkam.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#020f7613"
+    },
+    {
+      "q": "A ___ dose of the drug can be dangerous.",
+      "v": [
+        "mild",
+        "potent",
+        "weak",
+        "gentle"
+      ],
+      "t": 1,
+      "izoh": "potent = kuchli ta'sirli.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#b63abc94"
+    },
+    {
+      "q": "There was only a ___ amount of sugar left, barely a spoon.",
+      "v": [
+        "huge",
+        "minute",
+        "vast",
+        "ample"
+      ],
+      "t": 1,
+      "izoh": "minute (mayn-yut) = juda oz, mitti.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#e6eb0bbd"
+    },
+    {
+      "q": "The audience was ___ when the magician vanished.",
+      "v": [
+        "bored",
+        "astonished",
+        "calm",
+        "indifferent"
+      ],
+      "t": 1,
+      "izoh": "astonished = hayratdan qotib qolgan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#e1e07e03"
+    },
+    {
+      "q": "The loud bang ___ everyone in the library.",
+      "v": [
+        "soothed",
+        "startled",
+        "bored",
+        "pleased"
+      ],
+      "t": 1,
+      "izoh": "startled = to'satdan cho'chib tushgan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#520efd00"
+    },
+    {
+      "q": "She ___ at the painting for an hour, lost in thought.",
+      "v": [
+        "glanced",
+        "gazed",
+        "glared",
+        "peeked"
+      ],
+      "t": 1,
+      "izoh": "gazed = uzoq va sinchkovlik bilan tikildi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#eb53004c"
+    },
+    {
+      "q": "He ___ at his rival with open hostility.",
+      "v": [
+        "gazed",
+        "glared",
+        "peeked",
+        "glanced"
+      ],
+      "t": 1,
+      "izoh": "glared = jahl bilan o'qraydi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#68075021"
+    },
+    {
+      "q": "She only ___ at her watch and kept walking.",
+      "v": [
+        "stared",
+        "glanced",
+        "gazed",
+        "glared"
+      ],
+      "t": 1,
+      "izoh": "glanced = shosha-pisha bir qaradi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#174e149b"
+    },
+    {
+      "q": "The old man ___ slowly through the park, enjoying the sun.",
+      "v": [
+        "strode",
+        "strolled",
+        "trudged",
+        "sprinted"
+      ],
+      "t": 1,
+      "izoh": "strolled = bemalol, sekin sayr qildi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#ad5bf3d0"
+    },
+    {
+      "q": "Exhausted, they ___ through the thick mud to the camp.",
+      "v": [
+        "strolled",
+        "trudged",
+        "strode",
+        "danced"
+      ],
+      "t": 1,
+      "izoh": "trudged = og'ir qadam bilan zo'rg'a yurdi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#4ed45c39"
+    },
+    {
+      "q": "The CEO ___ confidently into the boardroom.",
+      "v": [
+        "trudged",
+        "strode",
+        "shuffled",
+        "stumbled"
+      ],
+      "t": 1,
+      "izoh": "strode = dadil, katta qadamlar bilan yurdi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#8dbac569"
+    },
+    {
+      "q": "He ___ the secret so quietly no one else heard.",
+      "v": [
+        "shouted",
+        "whispered",
+        "exclaimed",
+        "declared"
+      ],
+      "t": 1,
+      "izoh": "whispered = shivirladi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#5649eed9"
+    },
+    {
+      "q": "Under his breath he ___ a complaint about the delay.",
+      "v": [
+        "exclaimed",
+        "muttered",
+        "declared",
+        "announced"
+      ],
+      "t": 1,
+      "izoh": "muttered = ming'irladi, tushunarsiz gapirdi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#6482de95"
+    },
+    {
+      "q": "The starving dog ___ its food in seconds.",
+      "v": [
+        "nibbled",
+        "devoured",
+        "sipped",
+        "munched"
+      ],
+      "t": 1,
+      "izoh": "devoured = ochko'zlik bilan yamladi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#1f526435"
+    },
+    {
+      "q": "She ___ delicately at the biscuit, taking tiny bites.",
+      "v": [
+        "devoured",
+        "nibbled",
+        "gobbled",
+        "gulped"
+      ],
+      "t": 1,
+      "izoh": "nibbled = ozgina-ozgina tishladi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#a0e64b21"
+    },
+    {
+      "q": "In anger he ___ the plate across the room.",
+      "v": [
+        "placed",
+        "hurled",
+        "set",
+        "laid"
+      ],
+      "t": 1,
+      "izoh": "hurled = kuch bilan uloqtirdi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#2dbef89d"
+    },
+    {
+      "q": "The vase ___ into a hundred pieces on the tile.",
+      "v": [
+        "bent",
+        "shattered",
+        "folded",
+        "cracked"
+      ],
+      "t": 1,
+      "izoh": "shattered = chil-chil sindi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#dde5cb2b"
+    },
+    {
+      "q": "Dew ___ on the grass in the early sunlight.",
+      "v": [
+        "glared",
+        "glistened",
+        "dimmed",
+        "faded"
+      ],
+      "t": 1,
+      "izoh": "glistened = yaltiradi, jimirladi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#15942daf"
+    },
+    {
+      "q": "House prices ___ by forty percent in a single year.",
+      "v": [
+        "plummeted",
+        "soared",
+        "stagnated",
+        "dipped"
+      ],
+      "t": 1,
+      "izoh": "soared = keskin ko'tarildi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#7c5283ae"
+    },
+    {
+      "q": "After the scandal the stock ___ overnight.",
+      "v": [
+        "soared",
+        "plummeted",
+        "climbed",
+        "rose"
+      ],
+      "t": 1,
+      "izoh": "plummeted = keskin pastga tushdi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#39804531"
+    },
+    {
+      "q": "The desert traveler ___ for a single sip of water.",
+      "v": [
+        "disliked",
+        "craved",
+        "refused",
+        "ignored"
+      ],
+      "t": 1,
+      "izoh": "craved = juda qattiq istadi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#33ba95be"
+    },
+    {
+      "q": "She ___ for the quiet village life she had left behind.",
+      "v": [
+        "dreaded",
+        "yearned",
+        "refused",
+        "avoided"
+      ],
+      "t": 1,
+      "izoh": "yearned = qattiq sog'inib intildi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#49ae2302"
+    },
+    {
+      "q": "His ___ voice filled the hall without a microphone.",
+      "v": [
+        "feeble",
+        "booming",
+        "faint",
+        "soft"
+      ],
+      "t": 1,
+      "izoh": "booming = gumburlab yangragan, baland.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#b983f862"
+    },
+    {
+      "q": "Only a ___ whisper escaped her trembling lips.",
+      "v": [
+        "booming",
+        "faint",
+        "loud",
+        "harsh"
+      ],
+      "t": 1,
+      "izoh": "faint = zaif, kuchsiz.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#09bc78c2"
+    },
+    {
+      "q": "The negotiations reached a ___ point that decided everything.",
+      "v": [
+        "trivial",
+        "pivotal",
+        "minor",
+        "dull"
+      ],
+      "t": 1,
+      "izoh": "pivotal = burilish nuqtasi, hal qiluvchi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#9062edac"
+    },
+    {
+      "q": "Safety is of ___ importance on a construction site.",
+      "v": [
+        "paramount",
+        "minor",
+        "slight",
+        "trivial"
+      ],
+      "t": 0,
+      "izoh": "paramount = eng oliy, birinchi darajali.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#47852a6b"
+    },
+    {
+      "q": "The rescue was a ___ operation demanding total precision.",
+      "v": [
+        "careless",
+        "meticulous",
+        "sloppy",
+        "hasty"
+      ],
+      "t": 1,
+      "izoh": "meticulous = o'ta puxta, mayda-chuydasigacha aniq.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#316f4a76"
+    },
+    {
+      "q": "He gave a ___ account, leaving out no detail.",
+      "v": [
+        "vague",
+        "thorough",
+        "sketchy",
+        "brief"
+      ],
+      "t": 1,
+      "izoh": "thorough = mukammal, batafsil.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#5f58ea3a"
+    },
+    {
+      "q": "Her explanation was too ___ to be of any real help.",
+      "v": [
+        "precise",
+        "vague",
+        "exact",
+        "clear"
+      ],
+      "t": 1,
+      "izoh": "vague = mavhum, noaniq.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#58b09982"
+    },
+    {
+      "q": "The general devised a ___ plan that anticipated every move.",
+      "v": [
+        "clumsy",
+        "cunning",
+        "naive",
+        "random"
+      ],
+      "t": 1,
+      "izoh": "cunning = ayyorona, pixini yorgan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#0da9140d"
+    },
+    {
+      "q": "The waiter was ___ and refilled our glasses unasked.",
+      "v": [
+        "rude",
+        "attentive",
+        "careless",
+        "idle"
+      ],
+      "t": 1,
+      "izoh": "attentive = e'tiborli, xushmuomala.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#5eda2302"
+    },
+    {
+      "q": "His ___ remarks offended half the guests.",
+      "v": [
+        "tactful",
+        "tactless",
+        "polite",
+        "gracious"
+      ],
+      "t": 1,
+      "izoh": "tactless = beandisha, nazokatsiz.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#8bc6ea99"
+    },
+    {
+      "q": "She handled the delicate matter with great ___.",
+      "v": [
+        "tactlessness",
+        "tact",
+        "rudeness",
+        "haste"
+      ],
+      "t": 1,
+      "izoh": "tact = nazokat, xushmuomalalik.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#608fcc80"
+    },
+    {
+      "q": "The ___ smell of the rotten fish filled the market.",
+      "v": [
+        "pleasant",
+        "pungent",
+        "faint",
+        "sweet"
+      ],
+      "t": 1,
+      "izoh": "pungent = o'tkir, achchiq (hid).",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#cbb145e3"
+    },
+    {
+      "q": "A ___ aroma of fresh bread drifted from the bakery.",
+      "v": [
+        "foul",
+        "fragrant",
+        "acrid",
+        "stale"
+      ],
+      "t": 1,
+      "izoh": "fragrant = xushbo'y.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#64d593eb"
+    },
+    {
+      "q": "The lecture was so ___ that half the class fell asleep.",
+      "v": [
+        "gripping",
+        "tedious",
+        "exciting",
+        "lively"
+      ],
+      "t": 1,
+      "izoh": "tedious = zerikarli, cho'zilib ketgan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#f91f4463"
+    },
+    {
+      "q": "The thriller was ___, keeping us on the edge of our seats.",
+      "v": [
+        "dull",
+        "gripping",
+        "boring",
+        "flat"
+      ],
+      "t": 1,
+      "izoh": "gripping = maroqli, o'ziga tortadigan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#45b01302"
+    },
+    {
+      "q": "He offered a ___ apology that no one believed.",
+      "v": [
+        "sincere",
+        "insincere",
+        "heartfelt",
+        "genuine"
+      ],
+      "t": 1,
+      "izoh": "insincere = samimiyatsiz, soxta.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#b652376b"
+    },
+    {
+      "q": "Her ___ gratitude moved everyone at the ceremony.",
+      "v": [
+        "fake",
+        "heartfelt",
+        "cold",
+        "forced"
+      ],
+      "t": 1,
+      "izoh": "heartfelt = chin dildan, samimiy.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#6cdabcb9"
+    },
+    {
+      "q": "The road was ___ after the landslide and impossible to pass.",
+      "v": [
+        "clear",
+        "impassable",
+        "open",
+        "smooth"
+      ],
+      "t": 1,
+      "izoh": "impassable = o'tib bo'lmaydigan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#05461530"
+    },
+    {
+      "q": "The instructions were ___ and easy to follow.",
+      "v": [
+        "confusing",
+        "lucid",
+        "muddled",
+        "obscure"
+      ],
+      "t": 1,
+      "izoh": "lucid = ravshan, tushunarli.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#8feee828"
+    },
+    {
+      "q": "His argument was ___, jumping from point to point.",
+      "v": [
+        "coherent",
+        "incoherent",
+        "clear",
+        "logical"
+      ],
+      "t": 1,
+      "izoh": "incoherent = mantiqsiz, uzuq-yuluq.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#35af110b"
+    },
+    {
+      "q": "The treaty brought a ___ peace that lasted decades.",
+      "v": [
+        "fragile",
+        "lasting",
+        "brief",
+        "shaky"
+      ],
+      "t": 1,
+      "izoh": "lasting = uzoq davom etadigan, mustahkam.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#2ae6aad7"
+    },
+    {
+      "q": "Their truce was ___ and collapsed within a week.",
+      "v": [
+        "durable",
+        "fragile",
+        "solid",
+        "firm"
+      ],
+      "t": 1,
+      "izoh": "fragile = mo'rt, beqaror.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#794af338"
+    },
+    {
+      "q": "The soup was ___ and needed a pinch of salt.",
+      "v": [
+        "savory",
+        "bland",
+        "spicy",
+        "rich"
+      ],
+      "t": 1,
+      "izoh": "bland = ta'msiz, mazasiz.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#8043ee66"
+    },
+    {
+      "q": "The curry was pleasantly ___ without being overwhelming.",
+      "v": [
+        "bland",
+        "savory",
+        "dull",
+        "flat"
+      ],
+      "t": 1,
+      "izoh": "savory = mazali, totli (sho'r).",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#352284d2"
+    },
+    {
+      "q": "He is a ___ worker who never misses a deadline.",
+      "v": [
+        "idle",
+        "diligent",
+        "lazy",
+        "careless"
+      ],
+      "t": 1,
+      "izoh": "diligent = tirishqoq, mehnatkash.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#f0dd67ca"
+    },
+    {
+      "q": "Her ___ nature meant the chores were always left undone.",
+      "v": [
+        "diligent",
+        "slothful",
+        "active",
+        "eager"
+      ],
+      "t": 1,
+      "izoh": "slothful = dangasa, yalqov.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#d6af7461"
+    },
+    {
+      "q": "The manager was ___, listening to every complaint patiently.",
+      "v": [
+        "dismissive",
+        "receptive",
+        "hostile",
+        "cold"
+      ],
+      "t": 1,
+      "izoh": "receptive = ochiq, qabul qiladigan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#1ca296d4"
+    },
+    {
+      "q": "He was ___ of new ideas and rejected them outright.",
+      "v": [
+        "receptive",
+        "dismissive",
+        "open",
+        "curious"
+      ],
+      "t": 1,
+      "izoh": "dismissive = mensimaydigan, rad etadigan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#97313a4c"
+    },
+    {
+      "q": "The ___ crowd cheered wildly for the home team.",
+      "v": [
+        "apathetic",
+        "fervent",
+        "indifferent",
+        "bored"
+      ],
+      "t": 1,
+      "izoh": "fervent = ishtiyoqli, olovli.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#8d3f27d6"
+    },
+    {
+      "q": "The students seemed ___, showing no interest at all.",
+      "v": [
+        "fervent",
+        "apathetic",
+        "eager",
+        "keen"
+      ],
+      "t": 1,
+      "izoh": "apathetic = befarq, loqayd.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#c7f805d7"
+    },
+    {
+      "q": "The witness gave a ___ testimony that convinced the court.",
+      "v": [
+        "dubious",
+        "credible",
+        "false",
+        "shaky"
+      ],
+      "t": 1,
+      "izoh": "credible = ishonarli.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#8e15d307"
+    },
+    {
+      "q": "His excuse sounded ___, and no one bought it.",
+      "v": [
+        "credible",
+        "dubious",
+        "solid",
+        "valid"
+      ],
+      "t": 1,
+      "izoh": "dubious = shubhali, ishonchsiz.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#8eb44c2c"
+    },
+    {
+      "q": "The manager made a ___ promise he had no intention of keeping.",
+      "v": [
+        "genuine",
+        "hollow",
+        "firm",
+        "solid"
+      ],
+      "t": 1,
+      "izoh": "hollow = quruq, bo'sh (va'da).",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#c48bd0cc"
+    },
+    {
+      "q": "She is ___ about details, checking every figure twice.",
+      "v": [
+        "careless",
+        "fastidious",
+        "sloppy",
+        "lax"
+      ],
+      "t": 1,
+      "izoh": "fastidious = injiq, o'ta talabchan aniq.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#96ae215b"
+    },
+    {
+      "q": "The design was ___, with nothing extra or wasteful.",
+      "v": [
+        "cluttered",
+        "sleek",
+        "messy",
+        "bulky"
+      ],
+      "t": 1,
+      "izoh": "sleek = ixcham, silliq zamonaviy.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#79330742"
+    },
+    {
+      "q": "The old cellar had a ___, musty smell.",
+      "v": [
+        "fresh",
+        "dank",
+        "dry",
+        "clean"
+      ],
+      "t": 1,
+      "izoh": "dank = nam va sovuq, dimiqqan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#12af3cf0"
+    },
+    {
+      "q": "His ___ wit made him the star of every dinner party.",
+      "v": [
+        "dull",
+        "sparkling",
+        "flat",
+        "tired"
+      ],
+      "t": 1,
+      "izoh": "sparkling = yorqin, jonli (hazil).",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#f9ddf652"
+    },
+    {
+      "q": "The ___ heat of the afternoon drove everyone indoors.",
+      "v": [
+        "mild",
+        "oppressive",
+        "gentle",
+        "pleasant"
+      ],
+      "t": 1,
+      "izoh": "oppressive = bo'g'iq, ezuvchi (issiq).",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#98dae265"
+    },
+    {
+      "q": "A ___ breeze cooled the terrace at dusk.",
+      "v": [
+        "oppressive",
+        "refreshing",
+        "stifling",
+        "scorching"
+      ],
+      "t": 1,
+      "izoh": "refreshing = tetiklashtiruvchi, salqin.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#24da8467"
+    },
+    {
+      "q": "The ambassador spoke in a ___ tone that calmed the room.",
+      "v": [
+        "abrasive",
+        "soothing",
+        "harsh",
+        "shrill"
+      ],
+      "t": 1,
+      "izoh": "soothing = tinchlantiruvchi, yumshoq.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m9#f1d88f70"
+    }
+  ]
+}

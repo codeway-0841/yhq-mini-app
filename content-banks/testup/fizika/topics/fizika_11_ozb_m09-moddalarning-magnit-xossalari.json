@@ -1,0 +1,456 @@
+{
+  "nom": "09-mavzu. Moddalarning Magnit Xossalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Magnetiklar deb qanday moddalarga aytiladi?",
+      "v": [
+        "Magnit maydon ta'sirida magnitlanib qoladigan moddalarga",
+        "Faqat tabiiy magnitlarga",
+        "Elektr tokini o'tkazmaydigan moddalarga",
+        "Harorat ta'sirida eriydigan moddalarga"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydon ta'sirida magnitlanib qoladigan moddalarga magnetiklar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#b366e466"
+    },
+    {
+      "q": "Quyidagi moddalarning qaysi biri magnetik hisoblanadi?",
+      "v": [
+        "Temir",
+        "Daraxt",
+        "Shisha",
+        "Plastmassa"
+      ],
+      "t": 0,
+      "izoh": "Temir, nikel, kobalt kabi moddalar magnit maydonga kiritilganda magnitlanib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#1b6191eb"
+    },
+    {
+      "q": "Tokli g'altakning biror muhitda hosil qilgan magnit maydon induksiyasi qanday ifodalanadi?",
+      "v": [
+        "B = μ·B₀",
+        "B = B₀/μ",
+        "B = μ/B₀",
+        "B = μ + B₀"
+      ],
+      "t": 0,
+      "izoh": "Muhitdagi magnit maydon induksiyasi B = μ·B₀, bunda B₀ — vakuumdagi induksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#cb134a8c"
+    },
+    {
+      "q": "Muhitning magnit singdiruvchanligi μ qanday ifodalanadi?",
+      "v": [
+        "μ = B/B₀",
+        "μ = B·B₀",
+        "μ = B₀/B",
+        "μ = B − B₀"
+      ],
+      "t": 0,
+      "izoh": "μ = B/B₀ — muhitdagi maydon induksiyasining vakuumdagi induksiyaga nisbati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#1ede4497"
+    },
+    {
+      "q": "Magnit singdiruvchanlikning fizik ma'nosi nimada?",
+      "v": [
+        "Muhitdagi maydon induksiyasi vakuumdagidan necha marta farq qilishini bildiradi",
+        "Moddaning zichligini bildiradi",
+        "Moddaning qarshiligini bildiradi",
+        "Magnitning kuchini bildiradi"
+      ],
+      "t": 0,
+      "izoh": "μ faqat muhitning tabiatiga bog'liq bo'lib, muhitdagi maydon induksiyasi vakuumdagidan necha marta farq qilishini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#85297937"
+    },
+    {
+      "q": "Magnit singdiruvchanlik μ ning o'lchov birligi qanday?",
+      "v": [
+        "O'lchov birligiga ega emas (nisbiylik kattaligi)",
+        "Genri",
+        "Tesla",
+        "Vb/m²"
+      ],
+      "t": 0,
+      "izoh": "μ = B/B₀ — ikki bir xil birlikdagi kattalik nisbati bo'lgani uchun o'lchovsiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#cd20cf41"
+    },
+    {
+      "q": "Tabiatdagi moddalar magnit singdiruvchanligiga ko'ra necha turga bo'linadi?",
+      "v": [
+        "Uch turga: diamagnetiklar, paramagnetiklar, ferromagnetiklar",
+        "Ikki turga: magnitlar va nemagnitlar",
+        "To'rt turga: metallar, gazlar, suyuqliklar, qattiq jismlar",
+        "Besh turga"
+      ],
+      "t": 0,
+      "izoh": "Barcha moddalar magnit singdiruvchanligiga ko'ra uch turga bo'linadi: dia-, para-, ferromagnetiklar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#a3f6ef72"
+    },
+    {
+      "q": "Diamagnetiklar deb qanday moddalarga aytiladi?",
+      "v": [
+        "Magnit singdiruvchanligi birdan kichik (μ < 1) bo'lgan moddalarga",
+        "μ = 1 bo'lgan moddalarga",
+        "μ >> 1 bo'lgan moddalarga",
+        "μ > 1 bo'lgan moddalarga"
+      ],
+      "t": 0,
+      "izoh": "Magnit singdiruvchanligi birdan kichik bo'lgan moddalar diamagnetiklar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#0a1b9976"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri diamagnetik moddalarga kiradi?",
+      "v": [
+        "Oltin, kumush, mis, rux",
+        "Temir, nikel, kobalt",
+        "Platina, alyuminiy",
+        "Kislorod, xrom"
+      ],
+      "t": 0,
+      "izoh": "Oltin, kumush, mis, rux va ba'zi gazlar diamagnetiklardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#03b317c8"
+    },
+    {
+      "q": "Magnit maydonga kiritilgan diamagnetiklar maydonni qanday o'zgartiradi?",
+      "v": [
+        "Susaytiradi",
+        "Kuchaytiradi",
+        "O'zgartirmaydi",
+        "Nolga teng qiladi"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydoniga kiritilgan diamagnetiklar uni susaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#7b0b0153"
+    },
+    {
+      "q": "Diamagnetik moddaga magnit maydoni yaqinlashtirilsa, u qanday harakatlanadi?",
+      "v": [
+        "Maydondan uzoqlashadi",
+        "Maydonga yaqinlashadi",
+        "Joyida qoladi",
+        "Aylanishga o'tadi"
+      ],
+      "t": 0,
+      "izoh": "Diamagnetiklarga magnit maydoni yaqinlashtirilganda ular maydondan uzoqlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#df07cbde"
+    },
+    {
+      "q": "Paramagnetiklar deb qanday moddalarga aytiladi?",
+      "v": [
+        "Magnit singdiruvchanligi birdan biroz katta (μ > 1) bo'lgan moddalarga",
+        "μ < 1 bo'lgan moddalarga",
+        "μ >> 1 bo'lgan moddalarga",
+        "μ = 0 bo'lgan moddalarga"
+      ],
+      "t": 0,
+      "izoh": "Magnit singdiruvchanligi birdan biroz katta bo'lgan moddalar paramagnetiklar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#ce986781"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri paramagnetik moddalarga kiradi?",
+      "v": [
+        "Platina, alyuminiy, xrom, marganes, kislorod",
+        "Oltin, kumush, mis",
+        "Temir, nikel, kobalt",
+        "Rux, qo'rg'oshin, simob"
+      ],
+      "t": 0,
+      "izoh": "Paramagnetiklarga platina, alyuminiy, xrom, marganes, kislorod kabi moddalar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#d651ad43"
+    },
+    {
+      "q": "Magnit maydonga kiritilgan paramagnetiklar maydonni qanday o'zgartiradi?",
+      "v": [
+        "Qisman kuchaytiradi",
+        "Susaytiradi",
+        "Butunlay yo'q qiladi",
+        "O'zgartirmaydi"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydonga kiritilgan paramagnetiklar maydonni qisman kuchaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#9c36bf13"
+    },
+    {
+      "q": "Ferromagnetiklar deb qanday moddalarga aytiladi?",
+      "v": [
+        "Magnit singdiruvchanligi birdan juda katta (μ >> 1) bo'lgan moddalarga",
+        "μ < 1 bo'lgan moddalarga",
+        "μ ≈ 1 bo'lgan moddalarga",
+        "Singdiruvchanligi nolga teng moddalarga"
+      ],
+      "t": 0,
+      "izoh": "Magnit singdiruvchanligi birdan juda katta bo'lgan moddalar ferromagnetiklar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#de841021"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri ferromagnetik moddalarga kiradi?",
+      "v": [
+        "Temir, nikel, kobalt va ularning ba'zi qotishmalari",
+        "Oltin va kumush",
+        "Platina va alyuminiy",
+        "Mis va rux"
+      ],
+      "t": 0,
+      "izoh": "Temir, nikel, kobalt va ularning ba'zi qotishmalari ferromagnetiklardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#58ba2b8e"
+    },
+    {
+      "q": "Magnit maydonga kiritilgan ferromagnetiklar maydonni qanday o'zgartiradi?",
+      "v": [
+        "Kuchaytiradi",
+        "Susaytiradi",
+        "O'zgartirmaydi",
+        "Teskari aylantiradi"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydonga kiritilgan ferromagnetiklar uni kuchaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#bc0bc7b9"
+    },
+    {
+      "q": "Ferromagnetik moddadan yasalgan jismni magnit maydoniga kiritilganda jism qanday harakatlanadi?",
+      "v": [
+        "Maydonga yaqinlashadi (tortiladi)",
+        "Maydondan uzoqlashadi",
+        "Joyida qimir etmaydi",
+        "Faqat issiqlikda harakatlanadi"
+      ],
+      "t": 0,
+      "izoh": "Ferromagnetik jismlar magnit maydoniga kiritilganda maydonga yaqinlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#250a23e6"
+    },
+    {
+      "q": "Ferromagnetiklar texnikada qayerlarda qo'llaniladi?",
+      "v": [
+        "Transformator, tok generatori, elektrodvigatel o'zaklarida",
+        "Faqat zargarlik buyumlarida",
+        "Faqat oynalarda",
+        "Faqat qog'oz ishlab chiqarishda"
+      ],
+      "t": 0,
+      "izoh": "Transformator, tok generatori, elektrodvigatel va boshqa qurilmalarning o'zaklari ferromagnit materiallardan yasaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#4b71a975"
+    },
+    {
+      "q": "Doimiy magnitlarning tibbiyotdagi qo'llanishiga misol qaysi?",
+      "v": [
+        "Qon bosimini pasaytiruvchi bilaguzuk",
+        "Jarrohlik asboblarini tozalash",
+        "Rentgen nurlarini kuchaytirish",
+        "Dori saqlash"
+      ],
+      "t": 0,
+      "izoh": "Doimiy magnitlardan qon bosimini pasaytiruvchi moslama sifatida qo'lga taqiladigan bilaguzuk tayyorlanmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#c092a695"
+    },
+    {
+      "q": "G'altakka kuchlanish o'zgartirilmasdan turli moddadan yasalgan o'zaklar kiritilsa, magnit maydon induksiyasi qanday o'zgaradi?",
+      "v": [
+        "Moddaning tabiatiga qarab turlicha o'zgaradi",
+        "Har doim bir xil ortadi",
+        "O'zgarmaydi",
+        "Har doim nolga kamayadi"
+      ],
+      "t": 0,
+      "izoh": "G'altak ichidagi induksiya unga kiritilgan moddaning tabiatiga bog'liq: B = μ·B₀.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#0a23b66e"
+    },
+    {
+      "q": "Magnit singdiruvchanligi 60 ga teng ferromagnit, induksiyasi 0,50 T bo'lgan o'zaksiz g'altakka kiritilsa, g'altakdagi induksiya qancha bo'ladi?",
+      "v": [
+        "30 T",
+        "0,5 T",
+        "60 T",
+        "29,5 T"
+      ],
+      "t": 0,
+      "izoh": "B = μ·B₀ = 60·0,5 = 30 T.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#90ef5828"
+    },
+    {
+      "q": "O'zaksiz g'altakdagi magnit maydon induksiyasi 25 mT ga teng. G'altak ichiga μ = 60 bo'lgan ferromagnit o'zak kiritilsa, induksiya qanday bo'ladi?",
+      "v": [
+        "1,5 T",
+        "0,25 T",
+        "6 T",
+        "15 T"
+      ],
+      "t": 0,
+      "izoh": "B = μ·B₀ = 60·0,025 = 1,5 T.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#cd253f18"
+    },
+    {
+      "q": "Tokli g'altakdagi induksiya 20 mT bo'lib, ferromagnit o'zak kiritilganda u 200 mT ga yetdi. O'zakning magnit singdiruvchanligi qancha?",
+      "v": [
+        "10",
+        "20",
+        "100",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "μ = B/B₀ = 200/20 = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#a31aece3"
+    },
+    {
+      "q": "Magnit induksiyasi 80 mT bo'lgan o'zaksiz g'altakka μ = 25 bo'lgan ferromagnit o'zak kiritildi. G'altakda induksiya qancha bo'ladi?",
+      "v": [
+        "2 T",
+        "4 T",
+        "1,2 T",
+        "3,6 T"
+      ],
+      "t": 0,
+      "izoh": "B = μ·B₀ = 25·0,08 = 2 T.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#10141e78"
+    },
+    {
+      "q": "Diamagnetik, paramagnetik va ferromagnetiklarning μ qiymatlarini to'g'ri ketma-ketlikda ko'rsating.",
+      "v": [
+        "μ < 1; μ > 1; μ >> 1",
+        "μ > 1; μ < 1; μ >> 1",
+        "μ >> 1; μ > 1; μ < 1",
+        "μ = 1; μ > 1; μ < 1"
+      ],
+      "t": 0,
+      "izoh": "Diamagnetiklar μ < 1, paramagnetiklar μ > 1 (biroz katta), ferromagnetiklar μ >> 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#0e579c43"
+    },
+    {
+      "q": "G'altakka ferromagnit o'zak kiritilganda magnit maydon induksiyasi qanday o'zgaradi?",
+      "v": [
+        "μ marta ortadi",
+        "μ marta kamayadi",
+        "Ikki marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "B = μ·B₀ ga ko'ra induksiya μ marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#5c85e29c"
+    },
+    {
+      "q": "Nima uchun transformator o'zaklari ferromagnit materiallardan yasaladi?",
+      "v": [
+        "Ular magnit maydonni kuchaytirish xossasiga ega bo'lgani uchun",
+        "Ular engil bo'lgani uchun",
+        "Ular arzon va rangli bo'lgani uchun",
+        "Ular tok o'tkazmaydigan izolyator bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Ferromagnetiklar maydonni kuchaytirish xossasiga ega, shuning uchun texnik qurilmalarning o'zaklari ulardan yasaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#85a3ba61"
+    },
+    {
+      "q": "Qaysi modda magnit maydondan uzoqlashish xossasiga ega?",
+      "v": [
+        "Mis (diamagnetik)",
+        "Temir (ferromagnetik)",
+        "Platina (paramagnetik)",
+        "Nikel (ferromagnetik)"
+      ],
+      "t": 0,
+      "izoh": "Diamagnetiklar (masalan, mis) magnit maydondan uzoqlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#36ae30ba"
+    },
+    {
+      "q": "Tokli g'altakning vakuumda hosil qilgan magnit maydon induksiyasi B₀, muhitda esa B bo'lsa, qaysi holda muhit paramagnetik hisoblanadi?",
+      "v": [
+        "B, B₀ dan biroz katta bo'lganda",
+        "B, B₀ dan kichik bo'lganda",
+        "B, B₀ dan yuzlab marta katta bo'lganda",
+        "B = 0 bo'lganda"
+      ],
+      "t": 0,
+      "izoh": "Paramagnetiklarda μ > 1 (biroz katta), demak B, B₀ dan biroz katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari#68b3f064"
+    }
+  ]
+}

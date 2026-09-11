@@ -1,0 +1,486 @@
+{
+  "nom": "19-mavzu. Normal konsentratsiya",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Eritmaning normal konsentratsiyasi deganda nima tushuniladi?",
+      "v": [
+        "1 l eritmaning tarkibida erigan moddani ekvivalent miqdoriga aytiladi",
+        "1 l eritmada erigan moddani mollar soniga aytiladi",
+        "100 g eritmada erigan modda massasiga aytiladi",
+        "1 kg suvda erigan modda miqdoriga aytiladi"
+      ],
+      "t": 0,
+      "izoh": "1 l eritmaning tarkibida erigan moddani ekvivalent miqdoriga shu eritmani normal konsentratsiya deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#6eb15236"
+    },
+    {
+      "q": "Normal konsentratsiya qanday belgi bilan ifodalanadi?",
+      "v": [
+        "C_N",
+        "C_M",
+        "C%",
+        "n_ekv"
+      ],
+      "t": 0,
+      "izoh": "Normal konsentratsiya C_N belgisi bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#d2becb44"
+    },
+    {
+      "q": "Erigan moddani ekvivalent miqdori qanday belgi bilan ifodalanadi?",
+      "v": [
+        "n_ekv",
+        "C_N",
+        "E",
+        "m"
+      ],
+      "t": 0,
+      "izoh": "Ekvivalent miqdor n_ekv belgisi bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#96627b6e"
+    },
+    {
+      "q": "Erigan moddani ekvivalent miqdorini (n_ekv) aniqlash formulasini ko'rsating.",
+      "v": [
+        "n_ekv = m/E",
+        "n_ekv = m · E",
+        "n_ekv = E/m",
+        "n_ekv = m/M"
+      ],
+      "t": 0,
+      "izoh": "Erigan moddaning massasini ekvivalent massasiga bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#dd4cf62e"
+    },
+    {
+      "q": "Ekvivalent miqdorning (n_ekv) o'lchov birligi nima?",
+      "v": [
+        "g/ekv",
+        "mol/l",
+        "g/ml",
+        "N"
+      ],
+      "t": 0,
+      "izoh": "n_ekv — erigan moddaning ekvivalent miqdori (g/ekv).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#a90c540b"
+    },
+    {
+      "q": "n_ekv = m/E formulasida E nimani bildiradi?",
+      "v": [
+        "Erigan moddaning ekvivalent massasini",
+        "Erigan modda miqdorini",
+        "Eritma hajmini",
+        "Normal konsentratsiyani"
+      ],
+      "t": 0,
+      "izoh": "E — erigan moddaning ekvivalent massasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#ec1a77b0"
+    },
+    {
+      "q": "Kislota ekvivalent massasini aniqlash formulasini ko'rsating.",
+      "v": [
+        "E_kta = M_kta / n(H)",
+        "E_kta = M_kta · n(H)",
+        "E_kta = n(H) / M_kta",
+        "E_kta = M_kta / n(OH)"
+      ],
+      "t": 0,
+      "izoh": "Kislota molyar massasini metallga o'rnini bera oladigan vodorodlar soniga bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#d551e57d"
+    },
+    {
+      "q": "Kislota ekvivalent massasi formulasida n(H) nimani bildiradi?",
+      "v": [
+        "Metallga o'rnini bera oladigan vodorodlar sonini",
+        "Kislota molekulasidagi barcha atomlar sonini",
+        "Kislotaning valentligini",
+        "Kislota qoldig'i zaryadini"
+      ],
+      "t": 0,
+      "izoh": "n(H) — metallga o'rnini bera oladigan vodorodlar soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#dbe38a26"
+    },
+    {
+      "q": "H2SO4 ning ekvivalent massasi qancha? (M(H2SO4)=98 g/mol)",
+      "v": [
+        "49",
+        "98",
+        "24,5",
+        "32,67"
+      ],
+      "t": 0,
+      "izoh": "E(H2SO4) = 98/2 = 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#cc3610cb"
+    },
+    {
+      "q": "24,5 g H2SO4 ning ekvivalent miqdori qancha? (E(H2SO4)=49)",
+      "v": [
+        "0,5 g/ekv",
+        "0,25 g/ekv",
+        "2 g/ekv",
+        "49 g/ekv"
+      ],
+      "t": 0,
+      "izoh": "n_ekv = 24,5/49 = 0,5 g/ekv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#b6443c3b"
+    },
+    {
+      "q": "Normal konsentratsiyani (C_N) aniqlash formulasini ko'rsating.",
+      "v": [
+        "C_N = n_ekv / V",
+        "C_N = V / n_ekv",
+        "C_N = n_ekv · V",
+        "C_N = m / V"
+      ],
+      "t": 0,
+      "izoh": "Erigan moddaning ekvivalent miqdorini eritmaning hajmiga bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#340c6f69"
+    },
+    {
+      "q": "Normal konsentratsiyaning o'lchov birligi nima?",
+      "v": [
+        "N (normal)",
+        "M (molyar)",
+        "g/ml",
+        "%"
+      ],
+      "t": 0,
+      "izoh": "Normal konsentratsiyani o'lchov birligi N (normal)dir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#a5631594"
+    },
+    {
+      "q": "Normal konsentratsiyada eritma hajmi qaysi birlikda o'lchanadi?",
+      "v": [
+        "l da",
+        "ml da",
+        "g da",
+        "kg da"
+      ],
+      "t": 0,
+      "izoh": "Normal konsentratsiyada eritma hajmini l da o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#79157c44"
+    },
+    {
+      "q": "Erigan moddaning ekvivalent miqdorini (n_ekv) normal konsentratsiya orqali aniqlash formulasini ko'rsating.",
+      "v": [
+        "n_ekv = C_N · V",
+        "n_ekv = C_N / V",
+        "n_ekv = V / C_N",
+        "n_ekv = C_N · m"
+      ],
+      "t": 0,
+      "izoh": "Normal konsentratsiyani eritma hajmiga ko'paytirish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#b72f9831"
+    },
+    {
+      "q": "Eritma hajmini (V) normal konsentratsiya orqali aniqlash formulasini ko'rsating.",
+      "v": [
+        "V = n_ekv / C_N",
+        "V = n_ekv · C_N",
+        "V = C_N / n_ekv",
+        "V = m / C_N"
+      ],
+      "t": 0,
+      "izoh": "Ekvivalent miqdorni normal konsentratsiyaga bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#caa1c41a"
+    },
+    {
+      "q": "5 l eritma tarkibida 3 g/ekv HCl bo'lsa, shu eritmaning normal konsentratsiyasi qancha?",
+      "v": [
+        "0,6 N",
+        "1,67 N",
+        "15 N",
+        "0,3 N"
+      ],
+      "t": 0,
+      "izoh": "C_N = 3/5 = 0,6 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#148856ab"
+    },
+    {
+      "q": "Asos ekvivalent massasini aniqlash formulasini ko'rsating.",
+      "v": [
+        "E_asos = M_asos / n(OH)",
+        "E_asos = M_asos · n(OH)",
+        "E_asos = M_asos / n(H)",
+        "E_asos = n(OH) / M_asos"
+      ],
+      "t": 0,
+      "izoh": "Asos molyar massasini OH guruh soniga bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#f7cfddfa"
+    },
+    {
+      "q": "Asos ekvivalent massasi formulasidagi n nimani bildiradi?",
+      "v": [
+        "OH guruh sonini",
+        "Metallga o'rnini bera oladigan vodorodlar sonini",
+        "Asos molekulasidagi atomlar sonini",
+        "Metallning atom massasini"
+      ],
+      "t": 0,
+      "izoh": "n — OH guruh soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#8d66be24"
+    },
+    {
+      "q": "Darslikdagi masalada Ba(OH)2 ning molyar massasi qancha deb olingan?",
+      "v": [
+        "171 g/mol",
+        "137 g/mol",
+        "85,5 g/mol",
+        "100 g/mol"
+      ],
+      "t": 0,
+      "izoh": "M(Ba(OH)2) = 171 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#647dafda"
+    },
+    {
+      "q": "Ba(OH)2 ning ekvivalent massasi qancha? (M(Ba(OH)2)=171 g/mol)",
+      "v": [
+        "85,5",
+        "171",
+        "42,75",
+        "57"
+      ],
+      "t": 0,
+      "izoh": "E(Ba(OH)2) = 171/2 = 85,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#c2a6bbb7"
+    },
+    {
+      "q": "68,4 g Ba(OH)2 ning ekvivalent miqdori qancha? (E=85,5)",
+      "v": [
+        "0,8 g/ekv",
+        "0,4 g/ekv",
+        "1,25 g/ekv",
+        "8 g/ekv"
+      ],
+      "t": 0,
+      "izoh": "n_ekv = 68,4/85,5 = 0,8 g/ekv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#603c2756"
+    },
+    {
+      "q": "5000 g suvda 68,4 g Ba(OH)2 eritilganda hosil bo'lgan eritmaning massasi qancha?",
+      "v": [
+        "5068,4 g",
+        "5000 g",
+        "68,4 g",
+        "4931,6 g"
+      ],
+      "t": 0,
+      "izoh": "5000 + 68,4 = 5068,4 g eritma hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#31269f9f"
+    },
+    {
+      "q": "5068,4 g massali va 1,267 g/ml zichlikli eritmaning hajmi qancha?",
+      "v": [
+        "4000 ml (4 l)",
+        "5068,4 ml",
+        "500 ml",
+        "1267 ml"
+      ],
+      "t": 0,
+      "izoh": "V = 5068,4/1,267 = 4000 ml = 4 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#7edd2a93"
+    },
+    {
+      "q": "5000 g suvga 68,4 g Ba(OH)2 qo'shilishidan hosil bo'lgan eritmaning (ρ=1,267 g/ml) normal konsentratsiyasi qancha?",
+      "v": [
+        "0,2 N",
+        "0,8 N",
+        "2 N",
+        "0,02 N"
+      ],
+      "t": 0,
+      "izoh": "C_N = 0,8/4 = 0,2 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#03c4e39d"
+    },
+    {
+      "q": "9,8 g H2SO4 ning ekvivalent miqdori qancha? (E(H2SO4)=49)",
+      "v": [
+        "0,2 g/ekv",
+        "0,5 g/ekv",
+        "2 g/ekv",
+        "0,1 g/ekv"
+      ],
+      "t": 0,
+      "izoh": "n_ekv = 9,8/49 = 0,2 g/ekv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#ed480cd6"
+    },
+    {
+      "q": "9,8 g H2SO4 ning 0,2 N li eritmasining hajmi qancha?",
+      "v": [
+        "1 l",
+        "0,2 l",
+        "2 l",
+        "0,5 l"
+      ],
+      "t": 0,
+      "izoh": "V = n_ekv/C_N = 0,2/0,2 = 1 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#da5ebf24"
+    },
+    {
+      "q": "Normal konsentratsiyani o'rganishdan oldin qanday tushunchaga ega bo'lish kerakligi aytilgan?",
+      "v": [
+        "Erigan moddani ekvivalent miqdori nima ekanligi va qanday aniqlanishi haqida",
+        "Eritma zichligi haqida",
+        "Foiz konsentratsiya haqida",
+        "Eruvchanlik koeffitsiyenti haqida"
+      ],
+      "t": 0,
+      "izoh": "Avval erigan moddani ekvivalent miqdori va uni aniqlash haqida tushunchaga ega bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#626393d0"
+    },
+    {
+      "q": "Mavzuga doir 4-masalada qanday shart berilgan?",
+      "v": [
+        "6 l eritma tarkibida 3 g/ekv NaCl bo'lsa, eritmaning normal konsentratsiyasini aniqlash",
+        "1 l eritma tarkibida 2 g/ekv NH4Cl bo'lsa, normal konsentratsiyani aniqlash",
+        "5 l eritma tarkibida 3 g/ekv HCl bo'lsa, normal konsentratsiyani aniqlash",
+        "10,25 g H2SO4 ning g/ekv lar sonini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 4-masala: 6 l eritma, 3 g/ekv NaCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#7333ca39"
+    },
+    {
+      "q": "Mavzuga doir 2-masalada qaysi moddaning g/ekv lar sonini aniqlash taklif etilgan?",
+      "v": [
+        "20,8 g Al(OH)3 ning",
+        "10,25 g H2SO4 ning",
+        "6,67 g Fe2(SO4)3 ning",
+        "3 g/ekv NaCl ning"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 2-masala: 20,8 g Al(OH)3 ning g/ekv lar soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#fdf47788"
+    },
+    {
+      "q": "0,6 N yozuvi qanday o'qiladi?",
+      "v": [
+        "0,6 normal",
+        "0,6 molyar",
+        "0,6 foiz",
+        "0,6 g/ekv"
+      ],
+      "t": 0,
+      "izoh": "Normal konsentratsiya birligi N (normal) deb o'qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#4195528e"
+    },
+    {
+      "q": "H2SO4 kislota uchun n(H) nechaga teng?",
+      "v": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "H2SO4 da metallga o'rnini bera oladigan vodorodlar soni 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#014106cd"
+    },
+    {
+      "q": "Ba(OH)2 asos uchun n(OH) nechaga teng?",
+      "v": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Ba(OH)2 da OH guruh soni 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m19-normal-konsentratsiya#dcbac19e"
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "nom": "1-1-mavzu. 1",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Qadimgi yunon olimi Eratosfen yozgan kitobi qanday nomlangan?",
+      "v": [
+        "«Geografika»",
+        "«Geometriya»",
+        "«Kosmografiya»",
+        "«Tabiatnoma»"
+      ],
+      "t": 0,
+      "izoh": "Qadimgi yunon olimi Eratosfen kitob yozib, uni «Geografika» deb atagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m1-1#593d4ea5"
+    },
+    {
+      "q": "«Geografika» kitobining muallifi kim?",
+      "v": [
+        "Eratosfen",
+        "Pifagor",
+        "Aristotel",
+        "Ptolemey"
+      ],
+      "t": 0,
+      "izoh": "«Geografika» kitobini qadimgi yunon olimi Eratosfen yozgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m1-1#0a2d1c10"
+    },
+    {
+      "q": "Yunoncha «ge» soʻzi qanday maʼnoni bildiradi?",
+      "v": [
+        "Yer",
+        "Osmon",
+        "Suv",
+        "Xarita"
+      ],
+      "t": 0,
+      "izoh": "Yunoncha «ge» — Yer, «grafo» — yozaman degan maʼnoni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m1-1#4e836d66"
+    },
+    {
+      "q": "Yunoncha «grafo» soʻzi qanday maʼnoni bildiradi?",
+      "v": [
+        "Yozaman",
+        "Chizaman",
+        "Oʻlchayman",
+        "Kuzataman"
+      ],
+      "t": 0,
+      "izoh": "Yunoncha «ge» — Yer, «grafo» — yozaman degan maʼnoni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m1-1#c85db56f"
+    },
+    {
+      "q": "«Geografiya» soʻzi qaysi tildan olingan?",
+      "v": [
+        "Yunon tilidan",
+        "Lotin tilidan",
+        "Arab tilidan",
+        "Fors tilidan"
+      ],
+      "t": 0,
+      "izoh": "«Geografiya» soʻzi yunoncha «ge» (Yer) va «grafo» (yozaman) soʻzlaridan tashkil topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m1-1#2886fddc"
+    },
+    {
+      "q": "«Geografiya» soʻzi qanday maʼnolarni anglatadi?",
+      "v": [
+        "«Yerni tasvirlab yozaman», «Yerning tasviri»",
+        "«Yerni oʻlchayman»",
+        "«Osmonni kuzataman»",
+        "«Xaritani chizaman»"
+      ],
+      "t": 0,
+      "izoh": "«Geografiya» soʻzi «Yerni tasvirlab yozaman», «Yerning tasviri» degan maʼnolarni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#64bd3e06"
+    },
+    {
+      "q": "Geografiya fani nimalarni oʻrganadigan fandir?",
+      "v": [
+        "Yer yuzining tabiati, aholisi, xoʻjaligini, insonning tabiatdan foydalanish va uni muhofaza qilish masalalarini",
+        "Osmon jismlarini va yulduzlarni",
+        "Davlatlar tarixini va urushlarni",
+        "Matematik hisob-kitoblarni"
+      ],
+      "t": 0,
+      "izoh": "Geografiya Yer yuzining tabiati, aholisi, uning xoʻjaligini, insonning tabiatdan foydalanish va uni muhofaza qilish masalalarini oʻrganadigan fandir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#ad3429b4"
+    },
+    {
+      "q": "Geografiya bilan shugʻullanadigan kishilar qanday ataladi?",
+      "v": [
+        "Geograflar",
+        "Geologlar",
+        "Astronomlar",
+        "Kartograflar"
+      ],
+      "t": 0,
+      "izoh": "Geografiya bilan shugʻullanadigan kishilarni geograflar deb ataymiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m1-1#f025d4f9"
+    },
+    {
+      "q": "Uzoq vaqt davomida geograflar asosan nima bilan shugʻullanib kelishdi?",
+      "v": [
+        "Yer yuzi tabiatini, aholisi va mamlakatlarning xoʻjaligini tasvirlab yozish bilan",
+        "Xaritalar chizish bilan",
+        "Iqlimni oʻlchash bilan",
+        "Tuproq tarkibini tekshirish bilan"
+      ],
+      "t": 0,
+      "izoh": "Uzoq vaqtgacha geograflar Yer yuzi tabiatini, aholisi va mamlakatlarning xoʻjaligini tasvirlab yozish bilan shugʻullanib kelishdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#d83c99dd"
+    },
+    {
+      "q": "Geograf-sayyohlar nima ish qilishdi?",
+      "v": [
+        "Yangi yerlarni, dengiz va okeanlarni kashf qilishdi",
+        "Davlat chegaralarini belgilashdi",
+        "Harbiy yurishlarda qatnashishdi",
+        "Savdo yoʻllarini boshqarishdi"
+      ],
+      "t": 0,
+      "izoh": "Geograf-sayyohlar yangi yerlarni, dengiz va okeanlarni kashf qilishdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#48452a38"
+    },
+    {
+      "q": "Yer yuzini tasvirlash, sayyoramizning kattaligini aniqlash, xaritasini tuzish uchun necha yil kerak boʻldi?",
+      "v": [
+        "Bir necha ming yil",
+        "Bir necha oʻn yil",
+        "Bir necha yuz yil",
+        "Bir necha kun"
+      ],
+      "t": 0,
+      "izoh": "Yer yuzini tasvirlash, sayyoramizning kattaligini aniqlash, xaritasini tuzish uchun bir necha ming yillar kerak boʻldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#eff81e4b"
+    },
+    {
+      "q": "Geografiya fani rivojlanib borgan sari unda nechta asosiy yoʻnalish vujudga keldi?",
+      "v": [
+        "Ikkita",
+        "Uchta",
+        "Toʻrtta",
+        "Beshta"
+      ],
+      "t": 0,
+      "izoh": "Geografiya fani rivojlanib borgan sari unda ikkita asosiy yoʻnalish: tabiiy geografiya va ijtimoiy-iqtisodiy geografiya vujudga keldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m1-1#bc659c1d"
+    },
+    {
+      "q": "Geografiya fanining ikkita asosiy yoʻnalishi qaysilar?",
+      "v": [
+        "Tabiiy geografiya va ijtimoiy-iqtisodiy geografiya",
+        "Siyosiy geografiya va tarixiy geografiya",
+        "Iqtisodiy geografiya va harbiy geografiya",
+        "Astronomik geografiya va tibbiy geografiya"
+      ],
+      "t": 0,
+      "izoh": "Geografiya fanida ikkita asosiy yoʻnalish: tabiiy geografiya va ijtimoiy-iqtisodiy geografiya mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m1-1#7efc905c"
+    },
+    {
+      "q": "5-sinf oʻquvchilari tabiiy geografiyaning qaysi muhim boʻlimini oʻrganishadi?",
+      "v": [
+        "«Tabiiy geografiya boshlangʻich kursi»ni",
+        "«Iqtisodiy geografiya asoslari»ni",
+        "«Siyosiy xarita»ni",
+        "«Materiklar tarixi»ni"
+      ],
+      "t": 0,
+      "izoh": "5-sinfda tabiiy geografiyaning juda muhim boʻlimi — «Tabiiy geografiya boshlangʻich kursi»ni oʻrganasiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m1-1#c25eefaf"
+    },
+    {
+      "q": "Tabiiy geografiya nimalarni oʻrganadi?",
+      "v": [
+        "Yer yuzi tabiatining holati, uning oʻzgarishi, roʻy beradigan tabiiy hodisalarni",
+        "Davlatlar aholisi sonini",
+        "Sanoat korxonalarini",
+        "Transport yoʻllarini"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy geografiya Yer yuzi tabiatining holati, uning oʻzgarishi, roʻy beradigan tabiiy hodisalarni, tabiatdan foydalanganda nimalarga eʼtibor berish zarurligini oʻrganadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#aa705b38"
+    },
+    {
+      "q": "Inson yashashi uchun zarur boʻlgan narsalarni u qayerdan oladi?",
+      "v": [
+        "Tabiatdan",
+        "Fabrikalardan",
+        "Boshqa sayyoralardan",
+        "Davlat xazinasidan"
+      ],
+      "t": 0,
+      "izoh": "Inson yashashi uchun zarur boʻlgan hamma narsani — havo va suvni, oziq-ovqat va foydali qazilmalarni tabiatdan oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m1-1#f5b4fedc"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri inson tabiatdan oladigan narsalar qatoriga kirmaydi?",
+      "v": [
+        "Sunʼiy yoʻldosh",
+        "Havo",
+        "Suv",
+        "Foydali qazilmalar"
+      ],
+      "t": 0,
+      "izoh": "Inson tabiatdan havo, suv, oziq-ovqat va foydali qazilmalarni oladi; sunʼiy yoʻldosh inson tomonidan yaratilgan texnik vosita.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#29ad9069"
+    },
+    {
+      "q": "Matnda taʼkidlanishicha, inson tabiat asosida nimalarni quradi?",
+      "v": [
+        "Uy-joylar, zavodlar, shaharlar",
+        "Koʻpriklar",
+        "Metro yoʻllari",
+        "Aeroportlar"
+      ],
+      "t": 0,
+      "izoh": "Inson uy-joylar, zavodlar, shaharlar quradi, konlarni ochadi, gʻalla, paxta va boshqa ekinlar ekadi, bogʻlar barpo qiladi, chorva mollarini boqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#762b4ca4"
+    },
+    {
+      "q": "Tabiat boyliklaridan unumli foydalanish va uni avaylab asrash uchun nima zarur?",
+      "v": [
+        "Geografiya fanini juda yaxshi bilish",
+        "Tarix fanini bilish",
+        "Matematikani bilish",
+        "Chet tilini bilish"
+      ],
+      "t": 0,
+      "izoh": "Tabiat boyliklaridan unumli foydalanish, uni avaylab asrash uchun esa, albatta, geografiya fanini juda yaxshi bilish zarur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#ea5ee478"
+    },
+    {
+      "q": "Tabiiy geografiya nima bilan chegaralanib qolmaydi?",
+      "v": [
+        "Yer yuzi yoki uning biror joyi tabiatiga taʼrif berish bilan",
+        "Tabiiy hodisalarni tushuntirish bilan",
+        "Iqlim xususiyatlarini oʻrganish bilan",
+        "Relyef shakllarini tavsiflash bilan"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy geografiya Yer yuzi yoki uning biror joyi tabiatiga taʼrif berish bilan chegaralanmaydi, balki sayyoramiz tabiatining nima uchun xilma-xil ekanligi sabablarini tushuntiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo5_m1-1#e5b8144c"
+    },
+    {
+      "q": "Choʻl zonalarida yogʻingarchilik miqdori qanday boʻladi?",
+      "v": [
+        "Kam boʻladi",
+        "Koʻp boʻladi",
+        "Oʻrtacha boʻladi",
+        "Umuman boʻlmaydi"
+      ],
+      "t": 0,
+      "izoh": "Matnda taʼkidlanishicha, choʻl zonalarida yogʻingarchilikning kam boʻlishini tabiiy geografiya tushuntirib beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#5020364e"
+    },
+    {
+      "q": "Togʻli hududlarda yogʻingarchilik miqdori qanday boʻladi?",
+      "v": [
+        "Koʻp boʻladi",
+        "Kam boʻladi",
+        "Umuman boʻlmaydi",
+        "Qishda boʻladi"
+      ],
+      "t": 0,
+      "izoh": "Choʻl zonalarida yogʻingarchilikning kam, togʻli hududlarda esa aksincha, koʻp boʻlishini tabiiy geografiya tushuntiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#ff22614f"
+    },
+    {
+      "q": "Togʻlar ustida jazirama yozda ham nima erimaydi?",
+      "v": [
+        "Qor",
+        "Muz koʻllari",
+        "Toshlar",
+        "Yashil oʻsimliklar"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy geografiya togʻlar ustida jazirama yozda ham qor erimasligini tushuntirib beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#c69e7897"
+    },
+    {
+      "q": "Baʼzi hududlarda ob-havo yil boʻyi qanday boʻlishi mumkin?",
+      "v": [
+        "Bir xil — issiq",
+        "Doim sovuq",
+        "Doim yomgʻirli",
+        "Doim shamolli"
+      ],
+      "t": 0,
+      "izoh": "Ayrim joylarda yil boʻyi ob-havo bir xil — issiq boʻlishini tabiiy geografiya tushuntiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#e9d3db99"
+    },
+    {
+      "q": "Boshqa hududlarda esa qanday jarayon aniq almashinib turadi?",
+      "v": [
+        "Toʻrtta fasl",
+        "Ikkita fasl",
+        "Uchta fasl",
+        "Fasllar umuman almashmaydi"
+      ],
+      "t": 0,
+      "izoh": "Boshqa hududlarda toʻrtta fasl aniq almashinib turishini tabiiy geografiya tushuntirib beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#982d2a7a"
+    },
+    {
+      "q": "Tabiat «kambagʻallashib» ketmasligi uchun geografiya qanday savolga javob beradi?",
+      "v": [
+        "Tabiatdan, uning boyliklaridan qanday foydalanish kerakligiga",
+        "Qaysi davlat boyroq ekanligiga",
+        "Qanday sport turlari foydali ekanligiga",
+        "Qanday tillarni oʻrganish kerakligiga"
+      ],
+      "t": 0,
+      "izoh": "Tabiat kambagʻallashib ketmasligi, ifloslanmasligi uchun tabiatdan qanday foydalanish kerakligi haqidagi savollarga geografiya javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#21f76a57"
+    },
+    {
+      "q": "«Tabiiy geografiya boshlangʻich kursi»da oʻquvchilar nimalarni bilib oladi?",
+      "v": [
+        "Yer yuzi tabiatining asosiy umumiy qonuniyatlarini",
+        "Davlatlar poytaxtlarini",
+        "Mamlakatlar bayroqlarini",
+        "Tillar oilasini"
+      ],
+      "t": 0,
+      "izoh": "«Tabiiy geografiya boshlangʻich kursi»da Yer yuzi tabiatining asosiy umumiy qonuniyatlari va tabiatni kuzatishning eng oddiy usullari oʻrganiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#bd76c6aa"
+    },
+    {
+      "q": "«Tabiiy geografiya boshlangʻich kursi» oʻquvchilarni nechanchi sinfda oʻrganiladigan materiklar va okeanlar tabiiy geografiyasiga tayyorlaydi?",
+      "v": [
+        "6-sinfda",
+        "7-sinfda",
+        "8-sinfda",
+        "5-sinfning oʻzida"
+      ],
+      "t": 0,
+      "izoh": "«Tabiiy geografiya boshlangʻich kursi» sizni 6-sinfda oʻrganiladigan materiklar va okeanlar tabiiy geografiyasini oson oʻzlashtirishga tayyorlab boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#002027ad"
+    },
+    {
+      "q": "5-sinf geografiya darsligi nechta bobdan iborat?",
+      "v": [
+        "Yettita",
+        "Beshta",
+        "Oltita",
+        "Sakkizta"
+      ],
+      "t": 0,
+      "izoh": "Qoʻlingizdagi ushbu darslik yettita bobdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m1-1#bcaa2287"
+    },
+    {
+      "q": "Darslikning «Geografik xaritalar» bobini oʻqib, oʻquvchilar nimani bilib oladilar?",
+      "v": [
+        "Globus va xaritada Yer yuzasining katta qismlari qanday tasvirlanishini",
+        "Davlat chegaralari tarixini",
+        "Iqlim turlarini",
+        "Aholi sonini"
+      ],
+      "t": 0,
+      "izoh": "Geografik xaritalar bobini oʻqib, globus va xaritada Yer yuzasining katta qismlari qanday qilib tasvirlanishini bilib olasiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m1-1#9093d323"
+    }
+  ]
+}

@@ -1,0 +1,1306 @@
+{
+  "nom": "Possessive 's",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "This is ___ car. It belongs to Tom.",
+      "v": [
+        "Tom's",
+        "Toms",
+        "Tom",
+        "Toms'"
+      ],
+      "t": 0,
+      "izoh": "Egalik uchun ismga 's qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#bc1acc3b"
+    },
+    {
+      "q": "That is ___ bag. It belongs to Anna.",
+      "v": [
+        "Anna's",
+        "Annas",
+        "Anna",
+        "Annas'"
+      ],
+      "t": 0,
+      "izoh": "Egalik -> ism + 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#c248ab96"
+    },
+    {
+      "q": "The ___ tail is long. (the dog)",
+      "v": [
+        "dog's",
+        "dogs",
+        "dog",
+        "dogs'"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga 's qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#efb3e180"
+    },
+    {
+      "q": "This is my ___ house. (mother)",
+      "v": [
+        "mother's",
+        "mothers",
+        "mother",
+        "mothers'"
+      ],
+      "t": 0,
+      "izoh": "Egalik -> so'z + 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#54c90cd9"
+    },
+    {
+      "q": "___ book is on the table. (Sam)",
+      "v": [
+        "Sam's",
+        "Sams",
+        "Sam",
+        "Sams'"
+      ],
+      "t": 0,
+      "izoh": "Ismga 's qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#c8c1e359"
+    },
+    {
+      "q": "The ___ room is big. (the children)",
+      "v": [
+        "children's",
+        "childrens",
+        "children",
+        "childs'"
+      ],
+      "t": 0,
+      "izoh": "Noto'g'ri ko'plik (children) -> children's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#306643c0"
+    },
+    {
+      "q": "That is my ___ car. (father)",
+      "v": [
+        "father's",
+        "fathers",
+        "father",
+        "fathers'"
+      ],
+      "t": 0,
+      "izoh": "Egalik -> so'z + 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#00412d12"
+    },
+    {
+      "q": "The ___ toys are new. (two boys)",
+      "v": [
+        "boys'",
+        "boy's",
+        "boys",
+        "boyes"
+      ],
+      "t": 0,
+      "izoh": "-s bilan tugagan ko'plikka faqat ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#8262aa47"
+    },
+    {
+      "q": "___ sister is a doctor. (Lola)",
+      "v": [
+        "Lola's",
+        "Lolas",
+        "Lola",
+        "Lolas'"
+      ],
+      "t": 0,
+      "izoh": "Ismga 's qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#4dbaa847"
+    },
+    {
+      "q": "This is the ___ pen. (teacher)",
+      "v": [
+        "teacher's",
+        "teachers",
+        "teacher",
+        "teachers'"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga 's qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#32cdf742"
+    },
+    {
+      "q": "___ friends are here. (Maria)",
+      "v": [
+        "Maria's",
+        "Marias",
+        "Maria",
+        "Marias'"
+      ],
+      "t": 0,
+      "izoh": "Ismga 's qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#ff487e1b"
+    },
+    {
+      "q": "The ___ names are nice. (two girls)",
+      "v": [
+        "girls'",
+        "girl's",
+        "girls",
+        "girles"
+      ],
+      "t": 0,
+      "izoh": "-s bilan tugagan ko'plikka faqat ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#fc411850"
+    },
+    {
+      "q": "My ___ dog is big. (brother)",
+      "v": [
+        "brother's",
+        "brothers",
+        "brother",
+        "brothers'"
+      ],
+      "t": 0,
+      "izoh": "Egalik -> so'z + 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#ea2ca92e"
+    },
+    {
+      "q": "That is ___ phone. (John)",
+      "v": [
+        "John's",
+        "Johns",
+        "John",
+        "Johns'"
+      ],
+      "t": 0,
+      "izoh": "Ismga 's qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#2dd7ceab"
+    },
+    {
+      "q": "The ___ feet are big. (the men)",
+      "v": [
+        "men's",
+        "mens",
+        "men",
+        "mens'"
+      ],
+      "t": 0,
+      "izoh": "Noto'g'ri ko'plik (men) -> men's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#96ddbbe7"
+    },
+    {
+      "q": "This is ___ pen. (Ali)",
+      "v": [
+        "Ali's",
+        "Alis",
+        "Alis'",
+        "Alise"
+      ],
+      "t": 0,
+      "izoh": "Birlik -> 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#4d8ecfca"
+    },
+    {
+      "q": "These are the ___ toys. (two boys)",
+      "v": [
+        "boy's",
+        "boys'",
+        "boys",
+        "boyes"
+      ],
+      "t": 1,
+      "izoh": "Ko'plik (-s) -> s'.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#8b7f8242"
+    },
+    {
+      "q": "The ___ room is upstairs. (children)",
+      "v": [
+        "childrens",
+        "children's",
+        "childrens'",
+        "childs"
+      ],
+      "t": 1,
+      "izoh": "Istisno ko'plik -> children's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#51d296f1"
+    },
+    {
+      "q": "The ___ coats are here. (men)",
+      "v": [
+        "mens",
+        "mens'",
+        "men's",
+        "mans"
+      ],
+      "t": 2,
+      "izoh": "Istisno ko'plik -> men's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#da7e3e42"
+    },
+    {
+      "q": "The ___ tail is long. (one cat)",
+      "v": [
+        "cat's",
+        "cats'",
+        "cats",
+        "catts"
+      ],
+      "t": 0,
+      "izoh": "Birlik -> 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#35b249ef"
+    },
+    {
+      "q": "The ___ tails are long. (two cats)",
+      "v": [
+        "cat's",
+        "cats'",
+        "cats",
+        "catss"
+      ],
+      "t": 1,
+      "izoh": "Ko'plik (-s) -> s'.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#14a3cd86"
+    },
+    {
+      "q": "This is the ___ ball. (dog)",
+      "v": [
+        "dogs",
+        "dog's",
+        "dogs'",
+        "dogss"
+      ],
+      "t": 1,
+      "izoh": "Birlik -> 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#3d3f9313"
+    },
+    {
+      "q": "The ___ books are on the desk. (students)",
+      "v": [
+        "student's",
+        "students'",
+        "students",
+        "studentes"
+      ],
+      "t": 1,
+      "izoh": "Ko'plik (-s) -> s'.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#83d228ba"
+    },
+    {
+      "q": "The ___ shoes are new. (women)",
+      "v": [
+        "womens",
+        "womens'",
+        "women's",
+        "womans"
+      ],
+      "t": 2,
+      "izoh": "Istisno ko'plik -> women's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#721783d1"
+    },
+    {
+      "q": "My ___ house is big. (friend)",
+      "v": [
+        "friends",
+        "friend's",
+        "friends'",
+        "friendes"
+      ],
+      "t": 1,
+      "izoh": "Birlik -> 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#af2b1c2c"
+    },
+    {
+      "q": "The ___ names are on the list. (girls)",
+      "v": [
+        "girl's",
+        "girls'",
+        "girls",
+        "girles"
+      ],
+      "t": 1,
+      "izoh": "Ko'plik (-s) -> s'.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#c36616db"
+    },
+    {
+      "q": "This is ___ bag. (Sara)",
+      "v": [
+        "Sara's",
+        "Saras",
+        "Saras'",
+        "Sarase"
+      ],
+      "t": 0,
+      "izoh": "Birlik -> 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#427af9a7"
+    },
+    {
+      "q": "The ___ voices are loud. (people)",
+      "v": [
+        "peoples",
+        "peoples'",
+        "people's",
+        "peopls"
+      ],
+      "t": 2,
+      "izoh": "Istisno ko'plik -> people's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#a1b49376"
+    },
+    {
+      "q": "The ___ wheel is broken. (bike)",
+      "v": [
+        "bikes",
+        "bike's",
+        "bikes'",
+        "bikess"
+      ],
+      "t": 1,
+      "izoh": "Birlik -> 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#41c32ce1"
+    },
+    {
+      "q": "The ___ desks are clean. (teachers)",
+      "v": [
+        "teacher's",
+        "teachers'",
+        "teachers",
+        "teacheres"
+      ],
+      "t": 1,
+      "izoh": "Ko'plik (-s) -> s'.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#6a130515"
+    },
+    {
+      "q": "My ___ car is blue. (brother)",
+      "v": [
+        "brothers",
+        "brother's",
+        "brothers'",
+        "brotheres"
+      ],
+      "t": 1,
+      "izoh": "Birlik -> 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#2e86c4e1"
+    },
+    {
+      "q": "The ___ toy is broken. (one baby)",
+      "v": [
+        "babys",
+        "baby's",
+        "babies'",
+        "babis"
+      ],
+      "t": 1,
+      "izoh": "Birlik -> 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#8a20f65b"
+    },
+    {
+      "q": "The ___ toys are broken. (two babies)",
+      "v": [
+        "baby's",
+        "babies'",
+        "babies",
+        "babys"
+      ],
+      "t": 1,
+      "izoh": "Ko'plik (-s) -> s'.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#c02cb563"
+    },
+    {
+      "q": "This is the ___ office. (doctor)",
+      "v": [
+        "doctors",
+        "doctor's",
+        "doctors'",
+        "doctores"
+      ],
+      "t": 1,
+      "izoh": "Birlik -> 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#ca679245"
+    },
+    {
+      "q": "The ___ nests are in the tree. (birds)",
+      "v": [
+        "bird's",
+        "birds'",
+        "birds",
+        "birdes"
+      ],
+      "t": 1,
+      "izoh": "Ko'plik (-s) -> s'.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#e1afc198"
+    },
+    {
+      "q": "___ dress is red. (Lola)",
+      "v": [
+        "Lola's",
+        "Lolas",
+        "Lolas'",
+        "Lolase"
+      ],
+      "t": 0,
+      "izoh": "Birlik -> 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#220ea189"
+    },
+    {
+      "q": "The ___ hats are on the table. (men)",
+      "v": [
+        "mens",
+        "men's",
+        "mens'",
+        "mans"
+      ],
+      "t": 1,
+      "izoh": "Istisno ko'plik -> men's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#aacf4d8a"
+    },
+    {
+      "q": "This is my ___ house. (grandmother)",
+      "v": [
+        "grandmothers",
+        "grandmother's",
+        "grandmothers'",
+        "grandmotheres"
+      ],
+      "t": 1,
+      "izoh": "Birlik -> 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#80fb6328"
+    },
+    {
+      "q": "The ___ classroom is big. (children)",
+      "v": [
+        "childrens",
+        "children's",
+        "childrens'",
+        "childs"
+      ],
+      "t": 1,
+      "izoh": "Istisno ko'plik -> children's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#fdac37bb"
+    },
+    {
+      "q": "The ___ ball is here. (one boy)",
+      "v": [
+        "boys",
+        "boy's",
+        "boys'",
+        "boyes"
+      ],
+      "t": 1,
+      "izoh": "Birlik -> 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#9d07cd7a"
+    },
+    {
+      "q": "The ___ bags are heavy. (women)",
+      "v": [
+        "womens",
+        "women's",
+        "womens'",
+        "womans"
+      ],
+      "t": 1,
+      "izoh": "Istisno ko'plik -> women's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#8da95e1e"
+    },
+    {
+      "q": "That is ___ bike. (Aziz)",
+      "v": [
+        "Aziz's",
+        "Azizs",
+        "Azizs'",
+        "Azize"
+      ],
+      "t": 0,
+      "izoh": "Birlik -> 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#2c132cca"
+    },
+    {
+      "q": "The ___ cage is small. (one bird)",
+      "v": [
+        "birds",
+        "bird's",
+        "birds'",
+        "birdes"
+      ],
+      "t": 1,
+      "izoh": "Birlik -> 's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#162369f3"
+    },
+    {
+      "q": "The ___ jackets are new. (players)",
+      "v": [
+        "player's",
+        "players'",
+        "players",
+        "playeres"
+      ],
+      "t": 1,
+      "izoh": "Ko'plik (-s) -> s'.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#99832521"
+    },
+    {
+      "q": "This is ___ book. (owner: Ali, one owner)",
+      "v": [
+        "Ali's",
+        "Alis",
+        "Alis'",
+        "Ali"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#7706b952"
+    },
+    {
+      "q": "This is ___ car. (owner: Sara, one owner)",
+      "v": [
+        "Sara's",
+        "Saras",
+        "Saras'",
+        "Sara"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#c9ffb55f"
+    },
+    {
+      "q": "This is ___ house. (owner: Tom, one owner)",
+      "v": [
+        "Tom's",
+        "Toms",
+        "Toms'",
+        "Tom"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#b2e51ef9"
+    },
+    {
+      "q": "This is ___ phone. (owner: Anna, one owner)",
+      "v": [
+        "Anna's",
+        "Annas",
+        "Annas'",
+        "Anna"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#5926b92a"
+    },
+    {
+      "q": "This is ___ tail. (owner: the boy, one owner)",
+      "v": [
+        "The boy's",
+        "The boys",
+        "The boys'",
+        "The boy"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#30b151e4"
+    },
+    {
+      "q": "This is ___ hat. (owner: the girl, one owner)",
+      "v": [
+        "The girl's",
+        "The girls",
+        "The girls'",
+        "The girl"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#eace072b"
+    },
+    {
+      "q": "This is ___ bag. (owner: the teacher, one owner)",
+      "v": [
+        "The teacher's",
+        "The teachers",
+        "The teachers'",
+        "The teacher"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#0137898a"
+    },
+    {
+      "q": "This is ___ room. (owner: the doctor, one owner)",
+      "v": [
+        "The doctor's",
+        "The doctors",
+        "The doctors'",
+        "The doctor"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#4f16e0df"
+    },
+    {
+      "q": "This is ___ pen. (owner: my brother, one owner)",
+      "v": [
+        "My brother's",
+        "My brothers",
+        "My brothers'",
+        "My brother"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#e85c45ce"
+    },
+    {
+      "q": "This is ___ ball. (owner: the dog, one owner)",
+      "v": [
+        "The dog's",
+        "The dogs",
+        "The dogs'",
+        "The dog"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#7850740a"
+    },
+    {
+      "q": "This is ___ coat. (owner: the cat, one owner)",
+      "v": [
+        "The cat's",
+        "The cats",
+        "The cats'",
+        "The cat"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#d0e383e1"
+    },
+    {
+      "q": "This is ___ desk. (owner: the man, one owner)",
+      "v": [
+        "The man's",
+        "The mans",
+        "The mans'",
+        "The man"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#dccfb31d"
+    },
+    {
+      "q": "This is ___ chair. (owner: the woman, one owner)",
+      "v": [
+        "The woman's",
+        "The womans",
+        "The womans'",
+        "The woman"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#6eb68a39"
+    },
+    {
+      "q": "This is ___ cup. (owner: the king, one owner)",
+      "v": [
+        "The king's",
+        "The kings",
+        "The kings'",
+        "The king"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#620db60f"
+    },
+    {
+      "q": "This is ___ key. (owner: the baby, one owner)",
+      "v": [
+        "The baby's",
+        "The babys",
+        "The babys'",
+        "The baby"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#df35a852"
+    },
+    {
+      "q": "This is ___ toy. (owner: my mother, one owner)",
+      "v": [
+        "My mother's",
+        "My mothers",
+        "My mothers'",
+        "My mother"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#3497237e"
+    },
+    {
+      "q": "This is ___ shoe. (owner: the driver, one owner)",
+      "v": [
+        "The driver's",
+        "The drivers",
+        "The drivers'",
+        "The driver"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#fffce8b7"
+    },
+    {
+      "q": "This is ___ bike. (owner: the singer, one owner)",
+      "v": [
+        "The singer's",
+        "The singers",
+        "The singers'",
+        "The singer"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#329221a1"
+    },
+    {
+      "q": "This is ___ dress. (owner: the writer, one owner)",
+      "v": [
+        "The writer's",
+        "The writers",
+        "The writers'",
+        "The writer"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#b8cf258d"
+    },
+    {
+      "q": "This is ___ watch. (owner: the boss, one owner)",
+      "v": [
+        "The boss's",
+        "The bosss",
+        "The bosss'",
+        "The boss"
+      ],
+      "t": 0,
+      "izoh": "Bitta egaga ' 's ' qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#0314186b"
+    },
+    {
+      "q": "That is ___ room. (owner: the boys, more than one, regular plural)",
+      "v": [
+        "The boys'",
+        "The boys's",
+        "The boy's",
+        "The boys"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik va -s bilan tugagan egaga faqat apostrof (s') qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#5d829614"
+    },
+    {
+      "q": "That is ___ classroom. (owner: the girls, more than one, regular plural)",
+      "v": [
+        "The girls'",
+        "The girls's",
+        "The girl's",
+        "The girls"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik va -s bilan tugagan egaga faqat apostrof (s') qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#fd39ff30"
+    },
+    {
+      "q": "That is ___ books. (owner: the students, more than one, regular plural)",
+      "v": [
+        "The students'",
+        "The students's",
+        "The student's",
+        "The students"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik va -s bilan tugagan egaga faqat apostrof (s') qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#7db78a35"
+    },
+    {
+      "q": "That is ___ car. (owner: my parents, more than one, regular plural)",
+      "v": [
+        "My parents'",
+        "My parents's",
+        "My parent's",
+        "My parents"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik va -s bilan tugagan egaga faqat apostrof (s') qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#5c5f131f"
+    },
+    {
+      "q": "That is ___ office. (owner: the teachers, more than one, regular plural)",
+      "v": [
+        "The teachers'",
+        "The teachers's",
+        "The teacher's",
+        "The teachers"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik va -s bilan tugagan egaga faqat apostrof (s') qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#f3f71ae7"
+    },
+    {
+      "q": "That is ___ house. (owner: the dogs, more than one, regular plural)",
+      "v": [
+        "The dogs'",
+        "The dogs's",
+        "The dog's",
+        "The dogs"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik va -s bilan tugagan egaga faqat apostrof (s') qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#386cd03e"
+    },
+    {
+      "q": "That is ___ food. (owner: the cats, more than one, regular plural)",
+      "v": [
+        "The cats'",
+        "The cats's",
+        "The cat's",
+        "The cats"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik va -s bilan tugagan egaga faqat apostrof (s') qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#b57c634d"
+    },
+    {
+      "q": "That is ___ tools. (owner: the workers, more than one, regular plural)",
+      "v": [
+        "The workers'",
+        "The workers's",
+        "The worker's",
+        "The workers"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik va -s bilan tugagan egaga faqat apostrof (s') qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#b1dead1b"
+    },
+    {
+      "q": "That is ___ clinic. (owner: the doctors, more than one, regular plural)",
+      "v": [
+        "The doctors'",
+        "The doctors's",
+        "The doctor's",
+        "The doctors"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik va -s bilan tugagan egaga faqat apostrof (s') qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#1b3a2eb6"
+    },
+    {
+      "q": "That is ___ ball. (owner: the players, more than one, regular plural)",
+      "v": [
+        "The players'",
+        "The players's",
+        "The player's",
+        "The players"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik va -s bilan tugagan egaga faqat apostrof (s') qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#c560a133"
+    },
+    {
+      "q": "Choose the correct sentence (one dog):",
+      "v": [
+        "The dog's tail is long.",
+        "The dogs' tail is long.",
+        "The dogs tail is long.",
+        "The dog tails' is long."
+      ],
+      "t": 0,
+      "izoh": "Bitta it uchun dog's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#26b8ecd3"
+    },
+    {
+      "q": "Choose the correct sentence (two dogs):",
+      "v": [
+        "The dog's tails are long.",
+        "The dogs' tails are long.",
+        "The dogs tails are long.",
+        "The dogss' tails are long."
+      ],
+      "t": 1,
+      "izoh": "Ko'p it (dogs) uchun dogs'.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#4b515d8c"
+    },
+    {
+      "q": "Choose the correct sentence (one student):",
+      "v": [
+        "The student's bag is here.",
+        "The students' bag is here.",
+        "The students bag is here.",
+        "The student bags' here."
+      ],
+      "t": 0,
+      "izoh": "Bitta o'quvchi uchun student's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#22184957"
+    },
+    {
+      "q": "Choose the correct sentence (many students):",
+      "v": [
+        "The student's books are new.",
+        "The students books are new.",
+        "The students' books are new.",
+        "The studentss' books are new."
+      ],
+      "t": 2,
+      "izoh": "Ko'p o'quvchi uchun students'.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#ebb6879d"
+    },
+    {
+      "q": "Choose the correct sentence (my two parents):",
+      "v": [
+        "My parent's car is red.",
+        "My parents car is red.",
+        "My parents' car is red.",
+        "My parentss' car is red."
+      ],
+      "t": 2,
+      "izoh": "Ikki ota-ona uchun parents'.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#4b92000b"
+    },
+    {
+      "q": "Choose the correct sentence (one teacher):",
+      "v": [
+        "The teacher's desk is big.",
+        "The teachers' desk is big.",
+        "The teachers desk is big.",
+        "The teacher desks' is big."
+      ],
+      "t": 0,
+      "izoh": "Bitta o'qituvchi uchun teacher's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#f3c29f96"
+    },
+    {
+      "q": "Choose the correct sentence (one baby):",
+      "v": [
+        "The baby's toy is small.",
+        "The babys' toy is small.",
+        "The babies' toy is small.",
+        "The baby toys' small."
+      ],
+      "t": 0,
+      "izoh": "Bitta chaqaloq uchun baby's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#2375acee"
+    },
+    {
+      "q": "Choose the correct sentence (name Ali):",
+      "v": [
+        "This is Ali's phone.",
+        "This is Alis phone.",
+        "This is Alis' phone.",
+        "This is Ali phones'."
+      ],
+      "t": 0,
+      "izoh": "Ismga ' 's ' qo'shiladi: Ali's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#9cc83ee6"
+    },
+    {
+      "q": "Find the mistake: 'This is Toms car.'",
+      "v": [
+        "This",
+        "is",
+        "Toms",
+        "car"
+      ],
+      "t": 2,
+      "izoh": "To'g'risi Tom's (apostrof kerak).",
+      "qiy": "oson",
+      "id": "ing_a1_m11#b8a1e993"
+    },
+    {
+      "q": "Find the mistake: 'The girls's dress is nice.' (one girl)",
+      "v": [
+        "girls's",
+        "dress",
+        "is",
+        "nice"
+      ],
+      "t": 0,
+      "izoh": "Bitta qiz uchun girl's bo'ladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#7bd00291"
+    },
+    {
+      "q": "Find the mistake: 'The boys' names.' (only one boy)",
+      "v": [
+        "boys'",
+        "names",
+        "the",
+        "one"
+      ],
+      "t": 0,
+      "izoh": "Bitta bola bo'lsa boy's bo'lishi kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#c95eb1b7"
+    },
+    {
+      "q": "Find the mistake: 'My mother car is old.'",
+      "v": [
+        "My",
+        "mother",
+        "car",
+        "old"
+      ],
+      "t": 1,
+      "izoh": "To'g'risi mother's car ( 's kerak).",
+      "qiy": "oson",
+      "id": "ing_a1_m11#e29791c4"
+    },
+    {
+      "q": "Find the mistake: 'The childrens' room is big.'",
+      "v": [
+        "childrens'",
+        "room",
+        "is",
+        "big"
+      ],
+      "t": 0,
+      "izoh": "'children' allaqachon ko'plik, to'g'risi children's.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#5cd3d7e2"
+    },
+    {
+      "q": "Find the mistake: 'Sara book is on the desk.'",
+      "v": [
+        "Sara",
+        "book",
+        "desk",
+        "on"
+      ],
+      "t": 0,
+      "izoh": "To'g'risi Sara's book.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#83bcba49"
+    },
+    {
+      "q": "Find the mistake: 'The cats tail' (one cat)",
+      "v": [
+        "cats",
+        "tail",
+        "the",
+        "one"
+      ],
+      "t": 0,
+      "izoh": "Bitta mushuk uchun cat's tail.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#dffe0f1c"
+    },
+    {
+      "q": "Find the mistake: 'The teachers room' (many teachers)",
+      "v": [
+        "teachers",
+        "room",
+        "the",
+        "many"
+      ],
+      "t": 0,
+      "izoh": "Ko'p o'qituvchi uchun teachers' room.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#b16c7b45"
+    },
+    {
+      "q": "Put in order: book / Ali's / is / new",
+      "v": [
+        "Ali's book is new.",
+        "Book Ali's is new.",
+        "Ali's is book new.",
+        "New book Ali's is."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: Ali's book is new.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#eaac0b7b"
+    },
+    {
+      "q": "Put in order: tail / the / dog's / is / long",
+      "v": [
+        "The dog's tail is long.",
+        "The tail dog's is long.",
+        "Dog's the tail is long.",
+        "The dog's is tail long."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: The dog's tail is long.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#4ffd6ca9"
+    },
+    {
+      "q": "Put in order: car / parents' / my / is / big",
+      "v": [
+        "My parents' car is big.",
+        "My car parents' is big.",
+        "Parents' my car is big.",
+        "My parents' is car big."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: My parents' car is big.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#257245c8"
+    },
+    {
+      "q": "Put in order: bag / Sara's / red / is",
+      "v": [
+        "Sara's bag is red.",
+        "Bag Sara's is red.",
+        "Sara's is bag red.",
+        "Red bag Sara's is."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: Sara's bag is red.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#8d2954cb"
+    },
+    {
+      "q": "Put in order: room / students' / the / is / clean",
+      "v": [
+        "The students' room is clean.",
+        "The room students' is clean.",
+        "Students' the room is clean.",
+        "The students' is room clean."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: The students' room is clean.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#5ac21f01"
+    },
+    {
+      "q": "Put in order: hat / the / boy's / is / black",
+      "v": [
+        "The boy's hat is black.",
+        "The hat boy's is black.",
+        "Boy's the hat is black.",
+        "The boy's is hat black."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: The boy's hat is black.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#3271bc70"
+    },
+    {
+      "q": "How do you show one owner (singular)?",
+      "v": [
+        "add 's",
+        "add s'",
+        "add s",
+        "add nothing"
+      ],
+      "t": 0,
+      "izoh": "Bitta ega uchun 's qo'shiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#0480a61c"
+    },
+    {
+      "q": "How do you show many owners ending in -s (plural)?",
+      "v": [
+        "add 's",
+        "add just an apostrophe (s')",
+        "add es",
+        "add nothing"
+      ],
+      "t": 1,
+      "izoh": "-s bilan tugagan ko'plikka faqat apostrof (s').",
+      "qiy": "oson",
+      "id": "ing_a1_m11#25831c79"
+    },
+    {
+      "q": "'The dog's bone' means...",
+      "v": [
+        "one dog",
+        "two dogs",
+        "many dogs",
+        "no dog"
+      ],
+      "t": 0,
+      "izoh": "dog's = bitta it.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#3a2d23ea"
+    },
+    {
+      "q": "'The dogs' bones' means...",
+      "v": [
+        "one dog",
+        "more than one dog",
+        "no dog",
+        "a bone"
+      ],
+      "t": 1,
+      "izoh": "dogs' = bir nechta it.",
+      "qiy": "oson",
+      "id": "ing_a1_m11#baedea19"
+    }
+  ]
+}

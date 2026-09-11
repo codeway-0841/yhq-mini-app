@@ -1,0 +1,456 @@
+{
+  "nom": "06-mavzu. Kimyoviy elementlar davriy sistemasi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kimyoviy elementlar davriy sistemasida nechta davr bor?",
+      "v": [
+        "7 ta",
+        "8 ta",
+        "6 ta",
+        "9 ta"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy elementlar davriy sistemasida 7 ta davr bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#55a26694"
+    },
+    {
+      "q": "Kimyoviy elementlar davriy sistemasida nechta guruh bor?",
+      "v": [
+        "8 ta",
+        "7 ta",
+        "10 ta",
+        "18 ta"
+      ],
+      "t": 0,
+      "izoh": "Davriy sistemada 8 ta guruh bor, ular rim raqamlari bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#44c53133"
+    },
+    {
+      "q": "Qaysi davrlar kichik davrlar deyiladi?",
+      "v": [
+        "1-, 2-, 3-davrlar",
+        "4-, 5-, 6-davrlar",
+        "1- va 2-davrlar",
+        "5-, 6-, 7-davrlar"
+      ],
+      "t": 0,
+      "izoh": "1-, 2-, 3-davrlar kichik davrlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#01e66268"
+    },
+    {
+      "q": "Qaysi davrlar katta davrlar deyiladi?",
+      "v": [
+        "4-, 5-, 6-, 7-davrlar",
+        "1-, 2-, 3-davrlar",
+        "2-, 3-, 4-davrlar",
+        "6- va 7-davrlar"
+      ],
+      "t": 0,
+      "izoh": "4-, 5-, 6-, 7-davrlar katta davrlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#d607720b"
+    },
+    {
+      "q": "1-davrda nechta element joylashgan?",
+      "v": [
+        "Ikkita — vodorod va geliy",
+        "Sakkizta",
+        "O'n sakkizta",
+        "Oltita"
+      ],
+      "t": 0,
+      "izoh": "1-davrda faqat ikkita element — vodorod va geliy joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#0f9e4112"
+    },
+    {
+      "q": "2- va 3-davrlarda nechtadan element bor?",
+      "v": [
+        "8 tadan",
+        "18 tadan",
+        "32 tadan",
+        "2 tadan"
+      ],
+      "t": 0,
+      "izoh": "2- va 3-davrlarda 8 tadan element bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#359d7d42"
+    },
+    {
+      "q": "4- va 5-davrlarda nechtadan element bor?",
+      "v": [
+        "18 tadan",
+        "8 tadan",
+        "32 tadan",
+        "10 tadan"
+      ],
+      "t": 0,
+      "izoh": "4-, 5-davrlarda 18 tadan element bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#746e898a"
+    },
+    {
+      "q": "6- va 7-davrlarda nechtadan element bor?",
+      "v": [
+        "32 tadan",
+        "18 tadan",
+        "8 tadan",
+        "24 tadan"
+      ],
+      "t": 0,
+      "izoh": "6-, 7-davrlarda 32 tadan element bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#1295e3ed"
+    },
+    {
+      "q": "Kichik davrlar nechtadan qatorni o'z ichiga oladi?",
+      "v": [
+        "Bittadan",
+        "Ikkitadan",
+        "To'rttadan",
+        "Uchtadan"
+      ],
+      "t": 0,
+      "izoh": "Kichik davrlar bittadan qatorni, katta davrlar ikkitadan qatorni o'z ichiga oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#8c2e64be"
+    },
+    {
+      "q": "Davr deganda qanday qator tushuniladi?",
+      "v": [
+        "Ishqoriy metalldan boshlanib inert gazlar bilan tugaydigan elementlarning gorizontal qatori",
+        "Vertikal qatorga joylashgan o'xshash elementlar",
+        "Bir guruhga joylashgan metallar qatori",
+        "Atom massasi bir xil elementlar qatori"
+      ],
+      "t": 0,
+      "izoh": "Ishqoriy metalldan boshlanib inert gazlar bilan tugaydigan elementlarning gorizontal qatori davr deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#dfde9eba"
+    },
+    {
+      "q": "Guruhlar qanday tashkil topadi?",
+      "v": [
+        "Bitta vertikal qatorga joylashgan o'xshash elementlardan",
+        "Bitta gorizontal qatordagi metallardan",
+        "Atom massasi teng elementlardan",
+        "Bir davrdagi metallmaslardan"
+      ],
+      "t": 0,
+      "izoh": "Bitta vertikal qatorga joylashgan o'xshash elementlar guruhlarni tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#70956ec0"
+    },
+    {
+      "q": "Har bir guruh jadvalning yuqori qismida qanday belgilanadi?",
+      "v": [
+        "Rim raqamlari bilan",
+        "Arab raqamlari bilan",
+        "Lotin harflari bilan",
+        "Yunon harflari bilan"
+      ],
+      "t": 0,
+      "izoh": "Har bir guruh jadvalning yuqori qismida rim raqamlari bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#365353b1"
+    },
+    {
+      "q": "I guruhning ishqoriy metallardan iborat vertikal qatori qanday guruhcha hisoblanadi?",
+      "v": [
+        "Bosh guruhcha",
+        "Qo'shimcha guruhcha",
+        "Yonaki guruhcha",
+        "Katta guruhcha"
+      ],
+      "t": 0,
+      "izoh": "I guruhning ishqoriy metallar qatori bosh guruhcha hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#74607132"
+    },
+    {
+      "q": "Mis, kumush va oltinlar qaysi guruhcha elementlaridir?",
+      "v": [
+        "Qo'shimcha guruhcha",
+        "Bosh guruhcha",
+        "Inert gazlar guruhchasi",
+        "Galogenlar guruhchasi"
+      ],
+      "t": 0,
+      "izoh": "Mis, kumush va oltinlar qo'shimcha guruhcha elementlaridir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#4d498ef7"
+    },
+    {
+      "q": "Vodorod davriy sistemaning I guruhida joylashgan, chunki uning oksidi (suv)dagi valentligi nechaga teng?",
+      "v": [
+        "1 ga",
+        "2 ga",
+        "3 ga",
+        "7 ga"
+      ],
+      "t": 0,
+      "izoh": "Vodorod I guruhda, chunki suvda uning valentligi 1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#cd719326"
+    },
+    {
+      "q": "Vodorodni VII guruhga, ya'ni galogenlar qatoriga ham kiritish mumkin, chunki uning tashqi energetik qobig'ini to'ldirish uchun nechta elektron kam?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "7 ta",
+        "8 ta"
+      ],
+      "t": 0,
+      "izoh": "Vodorodning tashqi qobig'ini to'ldirish uchun 1 ta elektron kam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#2fc13061"
+    },
+    {
+      "q": "Bosh guruhchalarda joylashgan elementlarning tashqi qavatidagi elektronlar soni nimaga son jihatdan teng?",
+      "v": [
+        "Guruh raqamiga",
+        "Davr raqamiga",
+        "Atom massasiga",
+        "Neytronlar soniga"
+      ],
+      "t": 0,
+      "izoh": "Tashqi qavatdagi elektronlar soni guruh raqamiga son jihatdan teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#a9b48400"
+    },
+    {
+      "q": "Elementning kislorodga nisbatan yuqori valentligi, asosan, nimaga son jihatdan teng?",
+      "v": [
+        "Guruh raqamiga",
+        "Davr raqamiga",
+        "Neytronlar soniga",
+        "Atom massasiga"
+      ],
+      "t": 0,
+      "izoh": "Yuqori valentlik asosan guruh raqamiga teng (kislorod va ftor mustasno).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#8feb99dd"
+    },
+    {
+      "q": "Kislorodga nisbatan yuqori valentligi guruh raqamiga teng bo'lish qoidasidan qaysi elementlar mustasno?",
+      "v": [
+        "Kislorod va ftor",
+        "Vodorod va geliy",
+        "Natriy va kaliy",
+        "Uglerod va kremniy"
+      ],
+      "t": 0,
+      "izoh": "Kislorod va ftor bu qoidadan mustasno.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#88e223c9"
+    },
+    {
+      "q": "Metallmaslarning vodorod bilan hosil qiladigan uchuvchan birikmalaridagi valentligi qanday o'zgaradi?",
+      "v": [
+        "4 dan 1 gacha kamayib boradi",
+        "1 dan 4 gacha ortib boradi",
+        "Doimiy 1 bo'lib qoladi",
+        "Doimiy 2 bo'lib qoladi"
+      ],
+      "t": 0,
+      "izoh": "Uchuvchan vodorodli birikmalardagi valentlik 4 dan 1 gacha kamayib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#e2e63a26"
+    },
+    {
+      "q": "Bosh guruhchalarda nisbiy atom massalari ortib borgan sari metallik xossasi qanday o'zgaradi?",
+      "v": [
+        "Kuchayib boradi",
+        "Susayib boradi",
+        "O'zgarmaydi",
+        "Avval susayib, keyin kuchayadi"
+      ],
+      "t": 0,
+      "izoh": "Bosh guruhchalarda pastga tushgan sari metallik xossasi kuchayib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#02f79883"
+    },
+    {
+      "q": "I guruh bosh guruhchasida metallik xossasi eng yuqori bo'lgan element qaysi?",
+      "v": [
+        "Fransiy",
+        "Litiy",
+        "Natriy",
+        "Kaliy"
+      ],
+      "t": 0,
+      "izoh": "I guruh bosh guruhchasida fransiyda eng yuqori metallik xossalar namoyon bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#80fa9b71"
+    },
+    {
+      "q": "Galogenlarda metallmaslik xossasi qanday o'zgaradi?",
+      "v": [
+        "Ftordan boshlab yodga tomon susayib boradi",
+        "Yoddan boshlab ftorga tomon susayib boradi",
+        "Butun guruhda bir xil",
+        "Ftordan yodga tomon kuchayib boradi"
+      ],
+      "t": 0,
+      "izoh": "Galogenlarda metallmaslik xossasi ftordan boshlab yodga tomon susayib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#c4ff58e9"
+    },
+    {
+      "q": "Eng kuchli metallmas element qaysi?",
+      "v": [
+        "Ftor",
+        "Xlor",
+        "Yod",
+        "Brom"
+      ],
+      "t": 0,
+      "izoh": "Eng kuchli metallmas bu ftordir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#c6121468"
+    },
+    {
+      "q": "Litiydan boshlab sanalganda xossalarini takrorlaydigan to'qqizinchi element qaysi?",
+      "v": [
+        "Natriy",
+        "Kaliy",
+        "Magniy",
+        "Berilliy"
+      ],
+      "t": 0,
+      "izoh": "Litiydan boshlab to'qqizinchi element — natriy, u litiy xossalarini takrorlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#24bed6b0"
+    },
+    {
+      "q": "Natriydan boshlab sanalganda litiy va natriy xossalarini takrorlaydigan to'qqizinchi element qaysi?",
+      "v": [
+        "Kaliy",
+        "Rubidiy",
+        "Magniy",
+        "Kalsiy"
+      ],
+      "t": 0,
+      "izoh": "Natriydan boshlab to'qqizinchi element — kaliy, u litiy va natriy xossalarini takrorlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#d19a60e2"
+    },
+    {
+      "q": "Katta davrlar qanday qatorlardan tashkil topgan bo'ladi?",
+      "v": [
+        "Juft va toq qatorlardan",
+        "Faqat juft qatorlardan",
+        "Faqat toq qatorlardan",
+        "Bitta qatordan"
+      ],
+      "t": 0,
+      "izoh": "Katta davrlar juft va toq qatorlardan tashkil topgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#314c3181"
+    },
+    {
+      "q": "Davr ichida elementlarning metallik va metallmaslik xossalari qanday o'zgaradi?",
+      "v": [
+        "Metallik xossa sekin-asta kamayib, metallmaslik xossa ortib boradi",
+        "Metallik xossa ortib, metallmaslik xossa kamayib boradi",
+        "Ikkalasi ham o'zgarmaydi",
+        "Ikkalasi ham ortib boradi"
+      ],
+      "t": 0,
+      "izoh": "Davr bo'ylab metallik xossasi kamayib, metallmaslik xossasi ortib tipik metallmasga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#2f74e2e6"
+    },
+    {
+      "q": "Bosh guruhchalarda nisbiy atom massalari ortib borgan sari metallmaslik xossasi qanday o'zgaradi?",
+      "v": [
+        "Susayib boradi",
+        "Kuchayib boradi",
+        "O'zgarmaydi",
+        "Avval kuchayib, keyin susayadi"
+      ],
+      "t": 0,
+      "izoh": "Bosh guruhchalarda pastga tushgan sari metallmaslik xossasi susayib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#232ddb77"
+    },
+    {
+      "q": "Ishqoriy metallardan boshlanib inert gaz bilan tugaydigan qatordan nima hosil bo'ladi?",
+      "v": [
+        "Davr",
+        "Guruh",
+        "Guruhcha",
+        "Blok"
+      ],
+      "t": 0,
+      "izoh": "Ishqoriy metallar bilan boshlanib inert gazlar bilan tugaydigan qatorlardan davrlar hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m06-davriy-sistema#e433769b"
+    }
+  ]
+}

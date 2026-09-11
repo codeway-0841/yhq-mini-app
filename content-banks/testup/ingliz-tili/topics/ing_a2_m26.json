@@ -1,0 +1,1306 @@
+{
+  "nom": "Directions (Yo'l ko'rsatish)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "'Turn left' degani nima?",
+      "v": [
+        "Chapga buriling",
+        "O'ngga buriling",
+        "To'g'ri yuring",
+        "Orqaga qayting"
+      ],
+      "t": 0,
+      "izoh": "Turn left = chapga buriling.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#0d61ba2d"
+    },
+    {
+      "q": "'Turn right' ma'nosi?",
+      "v": [
+        "Chapga buriling",
+        "O'ngga buriling",
+        "To'xtang",
+        "To'g'ri yuring"
+      ],
+      "t": 1,
+      "izoh": "Turn right = o'ngga buriling.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#b906d68b"
+    },
+    {
+      "q": "'Go straight on' degani?",
+      "v": [
+        "To'g'ri yuring",
+        "Chapga buriling",
+        "Orqaga qayting",
+        "O'ngga buriling"
+      ],
+      "t": 0,
+      "izoh": "Go straight on = to'g'riga yuring.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#23f7c478"
+    },
+    {
+      "q": "'Opposite' so'zining ma'nosi?",
+      "v": [
+        "Yonida",
+        "Ro'parasida",
+        "Orqasida",
+        "Ichida"
+      ],
+      "t": 1,
+      "izoh": "Opposite = ro'parasida, qarshisida.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#d95f97cc"
+    },
+    {
+      "q": "'Corner' degani nima?",
+      "v": [
+        "Burchak",
+        "Ko'prik",
+        "Yo'l",
+        "Uy"
+      ],
+      "t": 0,
+      "izoh": "Corner = burchak.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#b0311073"
+    },
+    {
+      "q": "'Traffic lights' ma'nosi?",
+      "v": [
+        "Yo'l belgisi",
+        "Svetofor",
+        "Avtobus",
+        "Ko'prik"
+      ],
+      "t": 1,
+      "izoh": "Traffic lights = svetofor.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#e87bcd07"
+    },
+    {
+      "q": "'Next to' degani?",
+      "v": [
+        "Yonida",
+        "Uzoqda",
+        "Orqasida",
+        "Ro'parasida"
+      ],
+      "t": 0,
+      "izoh": "Next to = yonida.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#af7c4aa9"
+    },
+    {
+      "q": "'Between' so'zi?",
+      "v": [
+        "Yonida",
+        "Ikki narsa orasida",
+        "Orqasida",
+        "Oldida"
+      ],
+      "t": 1,
+      "izoh": "Between = orasida.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#ef1ba6c4"
+    },
+    {
+      "q": "'Roundabout' degani nima?",
+      "v": [
+        "Aylanma yo'l, halqa",
+        "To'g'ri yo'l",
+        "Ko'prik",
+        "Burchak"
+      ],
+      "t": 0,
+      "izoh": "Roundabout = aylanma, halqa yo'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#3f0104a0"
+    },
+    {
+      "q": "'Crossroads' ma'nosi?",
+      "v": [
+        "Ko'prik",
+        "Chorraha",
+        "Burchak",
+        "Svetofor"
+      ],
+      "t": 1,
+      "izoh": "Crossroads = chorraha.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#e06a309a"
+    },
+    {
+      "q": "'On the left' degani?",
+      "v": [
+        "Chap tomonda",
+        "O'ng tomonda",
+        "Oldinda",
+        "Orqada"
+      ],
+      "t": 0,
+      "izoh": "On the left = chap tomonda.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#d754a28c"
+    },
+    {
+      "q": "'On the right' so'zi?",
+      "v": [
+        "Chap tomonda",
+        "O'ng tomonda",
+        "Ichida",
+        "Orasida"
+      ],
+      "t": 1,
+      "izoh": "On the right = o'ng tomonda.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#c84a4005"
+    },
+    {
+      "q": "'Near' degani nima?",
+      "v": [
+        "Yaqin",
+        "Uzoq",
+        "Chapda",
+        "Orqada"
+      ],
+      "t": 0,
+      "izoh": "Near = yaqin.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#077b7489"
+    },
+    {
+      "q": "'Far' so'zi?",
+      "v": [
+        "Yaqin",
+        "Uzoq",
+        "Yonida",
+        "Oldida"
+      ],
+      "t": 1,
+      "izoh": "Far = uzoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#f5f6ea65"
+    },
+    {
+      "q": "'Cross the road' degani?",
+      "v": [
+        "Yo'ldan o'ting",
+        "Yo'lda to'xtang",
+        "Orqaga qayting",
+        "Yugurmang"
+      ],
+      "t": 0,
+      "izoh": "Cross the road = ko'chadan o'ting.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#5ffa130a"
+    },
+    {
+      "q": "'Behind' ma'nosi?",
+      "v": [
+        "Oldida",
+        "Orqasida",
+        "Yonida",
+        "Ustida"
+      ],
+      "t": 1,
+      "izoh": "Behind = orqasida.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#dc8ea352"
+    },
+    {
+      "q": "'In front of' degani nima?",
+      "v": [
+        "Oldida",
+        "Orqasida",
+        "Ichida",
+        "Ostida"
+      ],
+      "t": 0,
+      "izoh": "In front of = oldida.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#705dd54e"
+    },
+    {
+      "q": "'Take the first turning' ma'nosi?",
+      "v": [
+        "Oxirgi burilishga kiring",
+        "Birinchi burilishga kiring",
+        "To'g'ri yuring",
+        "To'xtang"
+      ],
+      "t": 1,
+      "izoh": "Take the first turning = birinchi burilishga kiring.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#c4731e9f"
+    },
+    {
+      "q": "'How do I get to...?' degani?",
+      "v": [
+        "...ga qanday boraman?",
+        "...qayerda?",
+        "...qancha turadi?",
+        "...kim?"
+      ],
+      "t": 0,
+      "izoh": "How do I get to...? = ...ga qanday boraman?",
+      "qiy": "orta",
+      "id": "ing_a2_m26#1ed44450"
+    },
+    {
+      "q": "'Get to' so'zi ma'nosi?",
+      "v": [
+        "Sotib olmoq",
+        "Yetib bormoq",
+        "To'xtamoq",
+        "Qaytmoq"
+      ],
+      "t": 1,
+      "izoh": "Get to = yetib bormoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#f2d8e9c6"
+    },
+    {
+      "q": "'Chapga buriling' inglizcha?",
+      "v": [
+        "Turn left",
+        "Turn right",
+        "Go straight",
+        "Stop"
+      ],
+      "t": 0,
+      "izoh": "Chapga buriling = turn left.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#91cfcb1a"
+    },
+    {
+      "q": "'Chorraha' inglizchada?",
+      "v": [
+        "Corner",
+        "Crossroads",
+        "Roundabout",
+        "Bridge"
+      ],
+      "t": 1,
+      "izoh": "Chorraha = crossroads.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#b592301c"
+    },
+    {
+      "q": "'Svetofor' inglizcha?",
+      "v": [
+        "Traffic lights",
+        "Corner",
+        "Roundabout",
+        "Bus stop"
+      ],
+      "t": 0,
+      "izoh": "Svetofor = traffic lights.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#126b70b8"
+    },
+    {
+      "q": "'Ro'parasida' inglizchada?",
+      "v": [
+        "Next to",
+        "Opposite",
+        "Behind",
+        "Between"
+      ],
+      "t": 1,
+      "izoh": "Ro'parasida = opposite.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#4ae81981"
+    },
+    {
+      "q": "'Uzoq' inglizcha?",
+      "v": [
+        "Far",
+        "Near",
+        "Left",
+        "Right"
+      ],
+      "t": 0,
+      "izoh": "Uzoq = far.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#4a81d395"
+    },
+    {
+      "q": "Excuse me, how do I ___ to the station?",
+      "v": [
+        "get",
+        "take",
+        "cross",
+        "turn"
+      ],
+      "t": 0,
+      "izoh": "Get to = yetib bormoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#3443b008"
+    },
+    {
+      "q": "At the traffic lights, ___ left.",
+      "v": [
+        "cross",
+        "turn",
+        "near",
+        "opposite"
+      ],
+      "t": 1,
+      "izoh": "Turn left = chapga buriling.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#585769b7"
+    },
+    {
+      "q": "Go ___ on for 100 metres, then stop.",
+      "v": [
+        "straight",
+        "left",
+        "behind",
+        "between"
+      ],
+      "t": 0,
+      "izoh": "Go straight on = to'g'riga yuring.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#efb17ba7"
+    },
+    {
+      "q": "The bank is ___ the post office; they face each other.",
+      "v": [
+        "behind",
+        "opposite",
+        "next",
+        "near"
+      ],
+      "t": 1,
+      "izoh": "Opposite = ro'parasida, yuzma-yuz.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#826312be"
+    },
+    {
+      "q": "The shop is on the ___ of the street, where two roads meet.",
+      "v": [
+        "corner",
+        "middle",
+        "roof",
+        "door"
+      ],
+      "t": 0,
+      "izoh": "Corner = burchak.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#f9a784da"
+    },
+    {
+      "q": "Stop at the red ___ .",
+      "v": [
+        "road",
+        "traffic lights",
+        "corner",
+        "roundabout"
+      ],
+      "t": 1,
+      "izoh": "Traffic lights = svetofor, qizil chiroqda to'xtang.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#d72421fd"
+    },
+    {
+      "q": "My house is ___ to the school; they share a wall.",
+      "v": [
+        "next",
+        "far",
+        "opposite",
+        "between"
+      ],
+      "t": 0,
+      "izoh": "Next to = yonida.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#3670cc0a"
+    },
+    {
+      "q": "The cafe is ___ the bank and the shop.",
+      "v": [
+        "near",
+        "between",
+        "behind",
+        "corner"
+      ],
+      "t": 1,
+      "izoh": "Between = ikkisining orasida.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#96c4ea94"
+    },
+    {
+      "q": "At the ___ , take the second exit.",
+      "v": [
+        "roundabout",
+        "corner",
+        "door",
+        "window"
+      ],
+      "t": 0,
+      "izoh": "Roundabout = aylanma yo'l, chiqishni tanlaysiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#c67f6854"
+    },
+    {
+      "q": "Two roads meet here. This is a ___ .",
+      "v": [
+        "bridge",
+        "crossroads",
+        "corner",
+        "roof"
+      ],
+      "t": 1,
+      "izoh": "Crossroads = chorraha.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#585a0c04"
+    },
+    {
+      "q": "The library is ___ the left, next to the park.",
+      "v": [
+        "on",
+        "in",
+        "at",
+        "by"
+      ],
+      "t": 0,
+      "izoh": "On the left = chap tomonda.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#14c242e4"
+    },
+    {
+      "q": "You will see the hotel ___ the right.",
+      "v": [
+        "in",
+        "on",
+        "at",
+        "of"
+      ],
+      "t": 1,
+      "izoh": "On the right = o'ng tomonda.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#c873721e"
+    },
+    {
+      "q": "The bus stop is very ___ ; only two minutes' walk.",
+      "v": [
+        "near",
+        "far",
+        "behind",
+        "between"
+      ],
+      "t": 0,
+      "izoh": "Near = yaqin.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#e5468f26"
+    },
+    {
+      "q": "The airport is ___ from here; it takes an hour.",
+      "v": [
+        "near",
+        "far",
+        "next",
+        "on"
+      ],
+      "t": 1,
+      "izoh": "Far = uzoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#bb7c5d06"
+    },
+    {
+      "q": "Be careful when you ___ the road.",
+      "v": [
+        "cross",
+        "turn",
+        "get",
+        "take"
+      ],
+      "t": 0,
+      "izoh": "Cross the road = yo'ldan o'ting.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#0ac3eaac"
+    },
+    {
+      "q": "The car park is ___ the building, at the back.",
+      "v": [
+        "in front of",
+        "behind",
+        "opposite",
+        "next"
+      ],
+      "t": 1,
+      "izoh": "Behind = orqasida.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#6c4d0351"
+    },
+    {
+      "q": "There is a big tree ___ the house, before the door.",
+      "v": [
+        "in front of",
+        "behind",
+        "between",
+        "near"
+      ],
+      "t": 0,
+      "izoh": "In front of = oldida.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#a16fa5f1"
+    },
+    {
+      "q": "Take the ___ turning on the right.",
+      "v": [
+        "first",
+        "corner",
+        "near",
+        "far"
+      ],
+      "t": 0,
+      "izoh": "First turning = birinchi burilish.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#040a7234"
+    },
+    {
+      "q": "'___ do I get to the museum?' — 'Go straight on.'",
+      "v": [
+        "How",
+        "Who",
+        "What",
+        "When"
+      ],
+      "t": 0,
+      "izoh": "How do I get to...? = qanday boraman?",
+      "qiy": "orta",
+      "id": "ing_a2_m26#615aa0ef"
+    },
+    {
+      "q": "Turn ___ at the corner, not left.",
+      "v": [
+        "straight",
+        "right",
+        "behind",
+        "near"
+      ],
+      "t": 1,
+      "izoh": "Turn right = o'ngga buriling.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#3a6e4d13"
+    },
+    {
+      "q": "Walk to the ___ where the streets cross.",
+      "v": [
+        "crossroads",
+        "roof",
+        "window",
+        "garden"
+      ],
+      "t": 0,
+      "izoh": "Crossroads = chorraha.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#bd521fd1"
+    },
+    {
+      "q": "The pharmacy is ___ door to the hospital.",
+      "v": [
+        "next",
+        "far",
+        "behind",
+        "between"
+      ],
+      "t": 0,
+      "izoh": "Next door = yonidagi bino.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#3c4ec1a0"
+    },
+    {
+      "q": "Don't cross now; wait for the green ___ .",
+      "v": [
+        "corner",
+        "light",
+        "road",
+        "turning"
+      ],
+      "t": 1,
+      "izoh": "Green light = yashil chiroq, svetofor.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#7a8d4995"
+    },
+    {
+      "q": "The station is on the ___ of the town, far away.",
+      "v": [
+        "edge",
+        "centre",
+        "corner",
+        "door"
+      ],
+      "t": 0,
+      "izoh": "On the edge = chetida, uzoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#d29c323e"
+    },
+    {
+      "q": "Go past the school and it's ___ the corner.",
+      "v": [
+        "around",
+        "between",
+        "opposite",
+        "near"
+      ],
+      "t": 0,
+      "izoh": "Around the corner = burchak ortida.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#6cb121e8"
+    },
+    {
+      "q": "To ___ to the beach, take bus number 5.",
+      "v": [
+        "get",
+        "turn",
+        "cross",
+        "take"
+      ],
+      "t": 0,
+      "izoh": "Get to = yetib bormoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#f0338787"
+    },
+    {
+      "q": "The gym is ___ front of the bank.",
+      "v": [
+        "in",
+        "on",
+        "at",
+        "of"
+      ],
+      "t": 0,
+      "izoh": "In front of = oldida.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#10464c84"
+    },
+    {
+      "q": "He is standing ___ me, at my back.",
+      "v": [
+        "in front of",
+        "behind",
+        "next",
+        "opposite"
+      ],
+      "t": 1,
+      "izoh": "Behind = orqasida.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#8e20528e"
+    },
+    {
+      "q": "'Where is the toilet?' 'It's ___ to the kitchen.'",
+      "v": [
+        "next",
+        "far",
+        "between",
+        "opposite"
+      ],
+      "t": 0,
+      "izoh": "Next to = yonida.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#7aa15b4a"
+    },
+    {
+      "q": "Take the first ___ on the left after the bridge.",
+      "v": [
+        "turning",
+        "corner",
+        "light",
+        "road"
+      ],
+      "t": 0,
+      "izoh": "First turning = birinchi burilish.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#de6fb474"
+    },
+    {
+      "q": "Which phrase means 'go without turning'?",
+      "v": [
+        "go straight on",
+        "turn left",
+        "cross the road",
+        "take the first turning"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri yurish = go straight on.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#dda05592"
+    },
+    {
+      "q": "Which word means 'the place where two streets meet at an angle'?",
+      "v": [
+        "roundabout",
+        "corner",
+        "bridge",
+        "light"
+      ],
+      "t": 1,
+      "izoh": "Burchak = corner.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#ba8fa661"
+    },
+    {
+      "q": "Which word means 'a circular road where cars go around'?",
+      "v": [
+        "roundabout",
+        "crossroads",
+        "corner",
+        "traffic lights"
+      ],
+      "t": 0,
+      "izoh": "Aylanma yo'l = roundabout.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#d6c7a47d"
+    },
+    {
+      "q": "Which phrase means 'facing something, on the other side'?",
+      "v": [
+        "next to",
+        "opposite",
+        "behind",
+        "between"
+      ],
+      "t": 1,
+      "izoh": "Ro'parasida = opposite.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#4261dc9a"
+    },
+    {
+      "q": "Which word means 'close, not far'?",
+      "v": [
+        "near",
+        "far",
+        "behind",
+        "between"
+      ],
+      "t": 0,
+      "izoh": "Yaqin = near.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#8c3a7956"
+    },
+    {
+      "q": "Which word means 'a long way away'?",
+      "v": [
+        "near",
+        "far",
+        "next",
+        "opposite"
+      ],
+      "t": 1,
+      "izoh": "Uzoq = far.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#5229ee7a"
+    },
+    {
+      "q": "Which phrase means 'at the side of something'?",
+      "v": [
+        "next to",
+        "between",
+        "behind",
+        "in front of"
+      ],
+      "t": 0,
+      "izoh": "Yonida = next to.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#a722a434"
+    },
+    {
+      "q": "Which word means 'in the middle of two things'?",
+      "v": [
+        "near",
+        "between",
+        "behind",
+        "corner"
+      ],
+      "t": 1,
+      "izoh": "Orasida = between.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#6b9cf11c"
+    },
+    {
+      "q": "Which phrase means 'at the back of something'?",
+      "v": [
+        "behind",
+        "in front of",
+        "next to",
+        "opposite"
+      ],
+      "t": 0,
+      "izoh": "Orqasida = behind.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#48f58400"
+    },
+    {
+      "q": "Which phrase means 'at the front of something'?",
+      "v": [
+        "behind",
+        "in front of",
+        "between",
+        "near"
+      ],
+      "t": 1,
+      "izoh": "Oldida = in front of.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#a2055a2a"
+    },
+    {
+      "q": "Which word means 'red, yellow and green lights for cars'?",
+      "v": [
+        "traffic lights",
+        "corner",
+        "roundabout",
+        "crossroads"
+      ],
+      "t": 0,
+      "izoh": "Svetofor = traffic lights.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#8d33b9c0"
+    },
+    {
+      "q": "Which phrase means 'to walk from one side of the street to the other'?",
+      "v": [
+        "cross the road",
+        "turn right",
+        "go straight",
+        "get to"
+      ],
+      "t": 0,
+      "izoh": "Yo'ldan o'tish = cross the road.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#5f451d7c"
+    },
+    {
+      "q": "Which phrase means 'to arrive at a place'?",
+      "v": [
+        "get to",
+        "turn left",
+        "next to",
+        "on the left"
+      ],
+      "t": 0,
+      "izoh": "Yetib bormoq = get to.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#2c4c4f72"
+    },
+    {
+      "q": "Which phrase do you use to ASK for directions?",
+      "v": [
+        "How do I get to...?",
+        "Turn left.",
+        "It's near.",
+        "Go straight."
+      ],
+      "t": 0,
+      "izoh": "Yo'l so'rash = How do I get to...?",
+      "qiy": "orta",
+      "id": "ing_a2_m26#93972218"
+    },
+    {
+      "q": "Which word means 'a place where roads cross'?",
+      "v": [
+        "crossroads",
+        "corner",
+        "bridge",
+        "light"
+      ],
+      "t": 0,
+      "izoh": "Chorraha = crossroads.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#c0fa5078"
+    },
+    {
+      "q": "Which phrase means 'take the first road that turns off'?",
+      "v": [
+        "take the first turning",
+        "go straight on",
+        "cross the road",
+        "turn back"
+      ],
+      "t": 0,
+      "izoh": "Birinchi burilishga kirish = take the first turning.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#b6061a51"
+    },
+    {
+      "q": "Which word is the OPPOSITE of 'near'?",
+      "v": [
+        "far",
+        "next",
+        "behind",
+        "on"
+      ],
+      "t": 0,
+      "izoh": "Near teskarisi = far.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#cae224f8"
+    },
+    {
+      "q": "Which is the OPPOSITE of 'turn left'?",
+      "v": [
+        "turn right",
+        "go straight",
+        "stop",
+        "cross"
+      ],
+      "t": 0,
+      "izoh": "Turn left teskarisi = turn right.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#76eb06c4"
+    },
+    {
+      "q": "Which is the OPPOSITE of 'in front of'?",
+      "v": [
+        "behind",
+        "next to",
+        "near",
+        "opposite"
+      ],
+      "t": 0,
+      "izoh": "In front of teskarisi = behind.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#ab2eff03"
+    },
+    {
+      "q": "Which word do drivers watch to stop or go?",
+      "v": [
+        "traffic lights",
+        "corner",
+        "turning",
+        "roundabout"
+      ],
+      "t": 0,
+      "izoh": "Haydovchilar svetoforga qaraydi = traffic lights.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#f7d3060a"
+    },
+    {
+      "q": "You want the shop across the street, facing you. It is ___ your position.",
+      "v": [
+        "opposite",
+        "behind",
+        "next to",
+        "between"
+      ],
+      "t": 0,
+      "izoh": "Yuzma-yuz = opposite.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#590e880c"
+    },
+    {
+      "q": "The map shows the park is a two-minute walk. It is ___ .",
+      "v": [
+        "far",
+        "near",
+        "behind",
+        "opposite"
+      ],
+      "t": 1,
+      "izoh": "Ikki daqiqa = near.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#73a58da2"
+    },
+    {
+      "q": "You are driving and reach a red light. You should ___ .",
+      "v": [
+        "stop",
+        "turn left",
+        "go straight",
+        "cross"
+      ],
+      "t": 0,
+      "izoh": "Qizil svetoforda = stop.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#07d9832f"
+    },
+    {
+      "q": "A tourist asks you the way to the hotel. He says: '___'",
+      "v": [
+        "Turn left now.",
+        "How do I get to the hotel?",
+        "It is far.",
+        "Go home."
+      ],
+      "t": 1,
+      "izoh": "Yo'l so'rash = How do I get to...?",
+      "qiy": "orta",
+      "id": "ing_a2_m26#b033faf8"
+    },
+    {
+      "q": "You must walk to the other side of the street. You ___ .",
+      "v": [
+        "cross the road",
+        "go straight on",
+        "turn back",
+        "stay"
+      ],
+      "t": 0,
+      "izoh": "Yo'ldan o'ting = cross the road.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#ef704835"
+    },
+    {
+      "q": "The bank and the shop are side by side. The bank is ___ the shop.",
+      "v": [
+        "opposite",
+        "next to",
+        "behind",
+        "between"
+      ],
+      "t": 1,
+      "izoh": "Yonida = next to.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#a042275a"
+    },
+    {
+      "q": "The cat is hiding at the back of the sofa. It is ___ the sofa.",
+      "v": [
+        "behind",
+        "in front of",
+        "near",
+        "on"
+      ],
+      "t": 0,
+      "izoh": "Orqasida = behind.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#5e5e08d7"
+    },
+    {
+      "q": "There is a car park just before the entrance. It is ___ the building.",
+      "v": [
+        "behind",
+        "in front of",
+        "between",
+        "far from"
+      ],
+      "t": 1,
+      "izoh": "Oldida = in front of.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#e5add419"
+    },
+    {
+      "q": "You reach a circular junction with an island in the middle. This is a ___ .",
+      "v": [
+        "roundabout",
+        "corner",
+        "bridge",
+        "light"
+      ],
+      "t": 0,
+      "izoh": "Aylanma yo'l = roundabout.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#0fecf275"
+    },
+    {
+      "q": "Four roads meet at one point. This is a ___ .",
+      "v": [
+        "corner",
+        "crossroads",
+        "roof",
+        "door"
+      ],
+      "t": 1,
+      "izoh": "Chorraha = crossroads.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#31a03cae"
+    },
+    {
+      "q": "The pharmacy sits with a park on one side and a bank on the other. It is ___ them.",
+      "v": [
+        "between",
+        "next to",
+        "behind",
+        "opposite"
+      ],
+      "t": 0,
+      "izoh": "Orasida = between.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#79359e1e"
+    },
+    {
+      "q": "You should not go left; go the other way. ___ .",
+      "v": [
+        "Turn right",
+        "Turn left",
+        "Go back",
+        "Stop"
+      ],
+      "t": 0,
+      "izoh": "Boshqa tomon = turn right.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#e950c3ba"
+    },
+    {
+      "q": "The teacher says walk forward and don't turn. She means ___ .",
+      "v": [
+        "go straight on",
+        "turn left",
+        "cross the road",
+        "turn right"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri yuring = go straight on.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#f6f22898"
+    },
+    {
+      "q": "The library is on your left hand as you walk. It is ___ .",
+      "v": [
+        "on the right",
+        "on the left",
+        "behind you",
+        "far"
+      ],
+      "t": 1,
+      "izoh": "Chap qo'l tomonda = on the left.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#59ebc9c1"
+    },
+    {
+      "q": "After the bridge, take the very first road on the right. You ___ .",
+      "v": [
+        "take the first turning",
+        "go straight on",
+        "cross the road",
+        "stop"
+      ],
+      "t": 0,
+      "izoh": "Birinchi burilish = take the first turning.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#807ef789"
+    },
+    {
+      "q": "You need to be at the airport by 6. You must ___ there by 6.",
+      "v": [
+        "get",
+        "turn",
+        "cross",
+        "take"
+      ],
+      "t": 0,
+      "izoh": "Yetib borish = get to.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#bb595a0f"
+    },
+    {
+      "q": "The shop stands where two streets meet at an angle, on the ___ .",
+      "v": [
+        "corner",
+        "roundabout",
+        "bridge",
+        "light"
+      ],
+      "t": 0,
+      "izoh": "Burchakda = on the corner.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#6309a01a"
+    },
+    {
+      "q": "The museum is one hour away by bus. It is ___ .",
+      "v": [
+        "near",
+        "far",
+        "next to",
+        "opposite"
+      ],
+      "t": 1,
+      "izoh": "Bir soat = far.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#3b798fe3"
+    },
+    {
+      "q": "You are behind a tall man and cannot see. He is ___ you.",
+      "v": [
+        "in front of",
+        "behind",
+        "next to",
+        "opposite"
+      ],
+      "t": 0,
+      "izoh": "Oldingizda turgan = in front of.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#84850e3c"
+    },
+    {
+      "q": "You walk and the hotel appears on your right hand. It is ___ .",
+      "v": [
+        "on the left",
+        "on the right",
+        "behind",
+        "far"
+      ],
+      "t": 1,
+      "izoh": "O'ng qo'l tomonda = on the right.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#d45c9195"
+    },
+    {
+      "q": "You reach the traffic lights, then turn towards your left hand. You ___ .",
+      "v": [
+        "turn left",
+        "turn right",
+        "go straight",
+        "stop"
+      ],
+      "t": 0,
+      "izoh": "Chap tomonga = turn left.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#8bb613ff"
+    },
+    {
+      "q": "The post office faces the school across the road. It is ___ the school.",
+      "v": [
+        "opposite",
+        "next to",
+        "behind",
+        "between"
+      ],
+      "t": 0,
+      "izoh": "Ro'parasida = opposite.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#daa72801"
+    },
+    {
+      "q": "To reach the market, you keep going forward without turning. You ___ .",
+      "v": [
+        "go straight on",
+        "turn left",
+        "cross the road",
+        "turn right"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri yurish = go straight on.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#7d0b23b4"
+    },
+    {
+      "q": "You want the road that turns off first after the shop. Take the ___ turning.",
+      "v": [
+        "first",
+        "last",
+        "far",
+        "near"
+      ],
+      "t": 0,
+      "izoh": "Birinchi = first turning.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#e8191459"
+    },
+    {
+      "q": "A driver approaches a busy junction where roads cross. It is a ___ .",
+      "v": [
+        "crossroads",
+        "corner",
+        "roof",
+        "garden"
+      ],
+      "t": 0,
+      "izoh": "Chorraha = crossroads.",
+      "qiy": "orta",
+      "id": "ing_a2_m26#28886e31"
+    }
+  ]
+}

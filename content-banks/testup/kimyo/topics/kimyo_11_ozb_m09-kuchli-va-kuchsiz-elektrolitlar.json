@@ -1,0 +1,531 @@
+{
+  "nom": "09-mavzu. Kuchli va kuchsiz elektrolitlar haqida tushuncha",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektrolitik dissotsiatsiyalanish nazariyasini kim va qachon taklif etgan?",
+      "v": [
+        "S. Arrenius 1887-yilda",
+        "D. Mendeleyev 1869-yilda",
+        "A. Lavuazye 1789-yilda",
+        "Y. Bertselius 1810-yilda"
+      ],
+      "t": 0,
+      "izoh": "1887-yilda S. Arrenius elektrolitik dissotsiatsiyalanish nazariyasini taklif etdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#29a9a777"
+    },
+    {
+      "q": "Elektrolit moddalarning suvda eriganda yoki suyuqlantirilganda ionlarga ajralishi nima deyiladi?",
+      "v": [
+        "Dissotsiatsiya",
+        "Assotsiatsiya",
+        "Gidroliz",
+        "Gidratlanish"
+      ],
+      "t": 0,
+      "izoh": "Elektrolit moddalarning suvda eriganda yoki suyuqlantirilganda ionlarga ajralishi dissotsiatsiya deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#46661e24"
+    },
+    {
+      "q": "Elektr toki ta'sirida musbat ionlar qaysi elektrodga tomon harakatlanadi?",
+      "v": [
+        "Katodga",
+        "Anodga",
+        "Har ikkala elektrodga",
+        "Harakatlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Elektr toki ta'sirida musbat ionlar katodga, manfiy ionlar anodga tomon harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#94d5b40f"
+    },
+    {
+      "q": "Manfiy zaryadlangan ionlar nima deyiladi?",
+      "v": [
+        "Anionlar",
+        "Kationlar",
+        "Molekulalar",
+        "Atomlar"
+      ],
+      "t": 0,
+      "izoh": "Musbat zaryadlangan ionlar kationlar, manfiy zaryadlanganlari anionlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#e2777a5a"
+    },
+    {
+      "q": "NaCl suvda dissotsiatsiyalanganda qanday ionlar hosil bo'ladi?",
+      "v": [
+        "Na+ va Cl-",
+        "Na- va Cl+",
+        "Na2+ va Cl2-",
+        "Faqat Na+"
+      ],
+      "t": 0,
+      "izoh": "NaCl → Na+ + Cl- ko'rinishda dissotsiatsiyalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#181b030c"
+    },
+    {
+      "q": "Dissotsiatsiya natijasida hosil bo'lgan qarama-qarshi zaryadli ionlarning bir-biri bilan to'qnashib qaytadan molekulaga aylanishi nima deyiladi?",
+      "v": [
+        "Assotsiatsiya",
+        "Dissotsiatsiya",
+        "Gidroliz",
+        "Kristallanish"
+      ],
+      "t": 0,
+      "izoh": "Ionlarning qaytadan molekulaga aylanishi assotsiatsiya deyiladi, chunki dissotsiatsiya qaytar jarayondir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#f4279f83"
+    },
+    {
+      "q": "Osh tuzining konsentrlangan eritmasidan tok o'tkazilganda lampochka qanday yonadi?",
+      "v": [
+        "Yorug' yonadi",
+        "Yonmaydi",
+        "Suso'nikli yonadi",
+        "Avval yonib, keyin o'chadi"
+      ],
+      "t": 0,
+      "izoh": "Osh tuzining konsentrlangan eritmasidan tok o'tkazilganda lampochka yorug' yonadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#e056be9e"
+    },
+    {
+      "q": "Osh tuzi eritmasi suyultirilganda lampochka yorug'ligi qanday o'zgaradi?",
+      "v": [
+        "Deyarli o'zgarmaydi",
+        "Butunlay o'chadi",
+        "Kuchli ravshanlashadi",
+        "Avval oshib, keyin so'nadi"
+      ],
+      "t": 0,
+      "izoh": "Suyultirilgan holda ham lampochka yorug'ligi deyarli o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#b5ec3b50"
+    },
+    {
+      "q": "NH4OH, H2SO3, CH3COOH ning konsentrlangan eritmalaridan tok o'tkazilsa lampochka qanday yonadi?",
+      "v": [
+        "Yonmaydi",
+        "Yorug' yonadi",
+        "Suso'nikli yonadi",
+        "Miltillab yonadi"
+      ],
+      "t": 0,
+      "izoh": "Bu moddalarning konsentrlangan eritmalaridan tok o'tkazilsa lampochka yonmaydi, eritmalar suyultirilsa yonadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#e80b44e5"
+    },
+    {
+      "q": "Kuchsiz elektrolitlar eritmasi suyultirib borilsa lampochka yorug'ligi qanday o'zgaradi?",
+      "v": [
+        "Ravshanlashib boradi",
+        "So'nib boradi",
+        "O'zgarmaydi",
+        "Avval so'nib, keyin yonadi"
+      ],
+      "t": 0,
+      "izoh": "Suyultirilsa qanchalik suyultirib borilsa shunchalik lampochka yorug' yonadi, ya'ni ravshanlashib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#75c4bcad"
+    },
+    {
+      "q": "Quyidagi qaysi moddaning 0,1 M li eritmasida molekulalarning ko'proq qismi ionlarga ajralgan bo'ladi?",
+      "v": [
+        "HNO3",
+        "NH4OH",
+        "H2S",
+        "CH3COOH"
+      ],
+      "t": 0,
+      "izoh": "NaOH, KOH, HCl, HNO3 larning 0,1 M li eritmalarida molekulalarning ko'proq qismi ionlarga ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#e56bbd22"
+    },
+    {
+      "q": "Qaysi moddaning 0,1 M li eritmasi deyarli dissotsiatsiyalanmaydi yoki juda oz qismi ionlarga ajraladi?",
+      "v": [
+        "CH3COOH",
+        "HCl",
+        "NaOH",
+        "KOH"
+      ],
+      "t": 0,
+      "izoh": "NH4OH, H2S, CH3COOH larning 0,1 M li eritmalari deyarli dissotsiatsiyalanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#bad201a9"
+    },
+    {
+      "q": "Eritmalari yoki suyuqlanmalari elektr tokini o'tkazadigan moddalar nima deyiladi?",
+      "v": [
+        "Elektrolitlar",
+        "Noelektrolitlar",
+        "Kationlar",
+        "Anionlar"
+      ],
+      "t": 0,
+      "izoh": "Eritmalari yoki suyuqlanmalari elektr tokini o'tkazadigan moddalar elektrolitlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#9f833e70"
+    },
+    {
+      "q": "Elektrolitlarga qaysi moddalar kiradi?",
+      "v": [
+        "Suvda eriydigan kislotalar, ishqorlar va tuzlar",
+        "Shakar, spirtlar va distillangan suv",
+        "Metan va karbonat angidrid",
+        "Qutbsiz kovalent bog'lanishli moddalar"
+      ],
+      "t": 0,
+      "izoh": "Elektrolitlarga suvda eriydigan kislotalar, ishqorlar va tuzlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#08c3ca09"
+    },
+    {
+      "q": "Elektrolitlar kristall holda elektr tokini qanday o'tkazadi?",
+      "v": [
+        "Yomon o'tkazadi yoki butunlay o'tkazmaydi",
+        "Juda yaxshi o'tkazadi",
+        "Faqat qizdirilganda o'tkazadi",
+        "Faqat bosim ostida o'tkazadi"
+      ],
+      "t": 0,
+      "izoh": "Kristall holda elektrolitlar elektr tokini yomon o'tkazadi yoki butunlay o'tkazmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#739cec9a"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri kuchli kislotalar qatoriga kiradi?",
+      "v": [
+        "HClO4",
+        "H2CO3",
+        "H2S",
+        "HCN"
+      ],
+      "t": 0,
+      "izoh": "Kuchli kislotalar: H2SO4, HCl, HClO4, HClO3, HBr, HMnO4, HJ, HNO3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#368be974"
+    },
+    {
+      "q": "Kislorodli kislotalarda (HnEOm) kislorod sonidan (m) vodorod soni (n) ayrilganda natija qanday bo'lsa, kuchli elektrolit hisoblanadi?",
+      "v": [
+        "2 ga teng yoki katta bo'lsa (m-n≥2)",
+        "2 dan kichik bo'lsa (m-n<2)",
+        "Nolga teng bo'lsa",
+        "Manfiy bo'lsa"
+      ],
+      "t": 0,
+      "izoh": "Natija 2 ga teng yoki katta bo'lsa (m-n≥2), kislota kuchli elektrolit hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#a0dc1dd4"
+    },
+    {
+      "q": "m-n<2 shart bajarilsa, kislorodli kislota qanday elektrolit hisoblanadi?",
+      "v": [
+        "Kuchsiz elektrolit",
+        "Kuchli elektrolit",
+        "Noelektrolit",
+        "O'rtacha kuchli elektrolit"
+      ],
+      "t": 0,
+      "izoh": "Natija 2 dan kichik bo'lsa (m-n<2), kislota kuchsiz elektrolit hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#70f150c6"
+    },
+    {
+      "q": "Kuchli elektrolitlar bo'lgan ishqorlar davriy sistemaning qaysi guruh elementlari gidroksidlari?",
+      "v": [
+        "IA va IIA guruh (Be va Mg dan tashqari)",
+        "IIIA va IVA guruh",
+        "VA va VIA guruh",
+        "Faqat VIIA guruh"
+      ],
+      "t": 0,
+      "izoh": "Kuchli ishqorlar — IA va IIA guruh elementlarining (Be va Mg dan tashqari) gidroksidlari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#e24318ca"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri kuchsiz kislota?",
+      "v": [
+        "HF",
+        "HCl",
+        "HBr",
+        "HJ"
+      ],
+      "t": 0,
+      "izoh": "Kuchsiz kislotalar: H2CO3, H2S, HNO2, H2SO3, HF, HCN.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#ad833475"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri kuchsiz asoslar qatoriga kiradi?",
+      "v": [
+        "Mg(OH)2",
+        "KOH",
+        "NaOH",
+        "Ba(OH)2"
+      ],
+      "t": 0,
+      "izoh": "Kuchsiz asoslar: NH4OH, Mg(OH)2, Fe(OH)2, Fe(OH)3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#34aceab8"
+    },
+    {
+      "q": "Quyidagi qaysi tuz suvda yaxshi eriydigan tuz bo'lgani uchun kuchli elektrolit hisoblanadi?",
+      "v": [
+        "NaCl",
+        "CaCO3",
+        "BaSO4",
+        "MgCO3"
+      ],
+      "t": 0,
+      "izoh": "Suvda yaxshi eriydigan tuzlar (NaCl, K2SO4, KClO3, CH3COONH4) kuchli elektrolitlar; yomon eriydigan tuzlar kuchsiz elektrolit.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#a06f7d9c"
+    },
+    {
+      "q": "Suvda yomon eriydigan tuzlar qanday elektrolit hisoblanadi?",
+      "v": [
+        "Kuchsiz elektrolit",
+        "Kuchli elektrolit",
+        "Noelektrolit",
+        "Ishqor"
+      ],
+      "t": 0,
+      "izoh": "Suvda yomon eriydigan tuzlar (eruvchanlik jadvali asosida) kuchsiz elektrolit hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#6388fbce"
+    },
+    {
+      "q": "Barcha organik kislotalar va suv qanday elektrolitga misol?",
+      "v": [
+        "Kuchsiz elektrolit",
+        "Kuchli elektrolit",
+        "Noelektrolit",
+        "Ishqoriy elektrolit"
+      ],
+      "t": 0,
+      "izoh": "Barcha organik kislotalar va suv kuchsiz elektrolitlar qatoriga kiritilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#e6b9c120"
+    },
+    {
+      "q": "Eritmalari yoki suyuqlanmalari elektr tokini o'tkazmaydigan moddalar nima deyiladi?",
+      "v": [
+        "Noelektrolitlar",
+        "Elektrolitlar",
+        "Anionlar",
+        "Kationlar"
+      ],
+      "t": 0,
+      "izoh": "Eritmalari yoki suyuqlanmalari elektr tokini o'tkazmaydigan moddalar elektrolitmaslar (noelektrolitlar) deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#9d60c0aa"
+    },
+    {
+      "q": "Noelektrolitlarga qaysi moddalar kiradi?",
+      "v": [
+        "Metan, karbonat angidrid, shakar, spirtlar va distillangan suv",
+        "Suvda eriydigan kislotalar va ishqorlar",
+        "Suvda yaxshi eriydigan tuzlar",
+        "Kuchli kislotalar va ishqorlar"
+      ],
+      "t": 0,
+      "izoh": "Noelektrolitlarga qutbsiz kovalent bog'lanishli moddalar, metan, karbonat angidrid, shakar, spirtlar va distillangan suv kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#560fa598"
+    },
+    {
+      "q": "Quyidagi qatordan faqat kuchli elektrolitlarni toping.",
+      "v": [
+        "NaCl, K2SO4, KOH, Ca(NO3)2",
+        "CH3COOH, H2CO3, H2SO3, NH4OH",
+        "HF, H2S, NH4OH, HNO2",
+        "Ni(OH)2, NH4OH, H2CO3, HF"
+      ],
+      "t": 0,
+      "izoh": "KCl, Na2SO4, KOH, Ca(NO3)2 kabi yaxshi eriydigan tuzlar va ishqorlar kuchli elektrolit; CH3COOH, H2CO3, H2SO3, NH4OH esa kuchsiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#2141c838"
+    },
+    {
+      "q": "Quyidagi qatordan faqat kuchsiz elektrolitlar joylashganini toping.",
+      "v": [
+        "CH3COOH, H2CO3, H2SO3, NH4OH",
+        "NaCl, KOH, HCl, KNO3",
+        "HNO3, H2SO4, NaOH, KCl",
+        "K2SO4, NaCl, HCl, KOH"
+      ],
+      "t": 0,
+      "izoh": "CH3COOH, H2CO3, H2SO3, NH4OH — barchasi kuchsiz elektrolitlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#aaaa7b29"
+    },
+    {
+      "q": "HClO4 kislotasida m-n qiymati nechaga teng va u qanday elektrolit?",
+      "v": [
+        "3, kuchli elektrolit",
+        "1, kuchsiz elektrolit",
+        "2, kuchsiz elektrolit",
+        "0, noelektrolit"
+      ],
+      "t": 0,
+      "izoh": "HClO4 da m-n = 4-1 = 3 ≥ 2, demak kuchli elektrolit.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#6ff7f8a0"
+    },
+    {
+      "q": "H2CO3 kislotasida m-n qiymati nechaga teng va u qanday elektrolit?",
+      "v": [
+        "1, kuchsiz elektrolit",
+        "3, kuchli elektrolit",
+        "2, kuchli elektrolit",
+        "4, kuchli elektrolit"
+      ],
+      "t": 0,
+      "izoh": "H2CO3 da m-n = 3-2 = 1 < 2, demak kuchsiz elektrolit.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#57ce1be5"
+    },
+    {
+      "q": "Bir molekula ammoniy dixromat (NH4)2Cr2O7 dissotsiatsiyalanganda nechta ion hosil bo'ladi?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "4 ta",
+        "9 ta"
+      ],
+      "t": 0,
+      "izoh": "(NH4)2Cr2O7 → 2NH4+ + Cr2O7 2-, ya'ni 2 ta kation va 1 ta anion, jami 3 ta ion.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#5904f215"
+    },
+    {
+      "q": "Bir molekula vismut (III) nitrat Bi(NO3)3 dissotsiatsiyalanganda nechta ion hosil bo'ladi?",
+      "v": [
+        "4 ta",
+        "3 ta",
+        "2 ta",
+        "6 ta"
+      ],
+      "t": 0,
+      "izoh": "Bi(NO3)3 → Bi3+ + 3NO3-, ya'ni 1 ta kation va 3 ta anion, jami 4 ta ion.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#770d89eb"
+    },
+    {
+      "q": "Bir molekula ammoniy dixromat va 3 molekula vismut (III) nitrat dissotsiatsiyalanganda hosil bo'lgan umumiy ionlar soni nechta?",
+      "v": [
+        "15 ta",
+        "12 ta",
+        "9 ta",
+        "7 ta"
+      ],
+      "t": 0,
+      "izoh": "(NH4)2Cr2O7 dan 3 ta ion, 3·Bi(NO3)3 dan 3·4=12 ta ion, jami 3+12=15 ta ion.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#9a654c26"
+    },
+    {
+      "q": "CuSO4, NH4NO3, BaCl2, Na2S moddalarning suvda yaxshi eriydigan bo'lgani uchun ular qaysi toifaga kiradi?",
+      "v": [
+        "Kuchli elektrolitlar",
+        "Kuchsiz elektrolitlar",
+        "Noelektrolitlar",
+        "Kuchsiz asoslar"
+      ],
+      "t": 0,
+      "izoh": "Suvda yaxshi eriydigan tuzlar kuchli elektrolitlar hisoblanadi (eruvchanlik jadvali asosida).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#0aea253e"
+    },
+    {
+      "q": "Shakar eritmasidan elektr toki o'tkazilganda lampochka yonadimi?",
+      "v": [
+        "Yonmaydi, chunki shakar noelektrolit",
+        "Yorug' yonadi",
+        "Suso'nikli yonadi",
+        "Avval yonib keyin o'chadi"
+      ],
+      "t": 0,
+      "izoh": "Shakar noelektrolit bo'lgani uchun uning eritmasi elektr tokini o'tkazmaydi, lampochka yonmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m09-kuchli-va-kuchsiz-elektrolitlar#ff7b98d4"
+    }
+  ]
+}

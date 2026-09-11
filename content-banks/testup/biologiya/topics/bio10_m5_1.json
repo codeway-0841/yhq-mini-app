@@ -1,0 +1,936 @@
+{
+  "nom": "Biologiya-10, 5.1. Genetik muhandislik",
+  "bolim": "V BOB. Biotexnologiya",
+  "savollar": [
+    {
+      "q": "Genetik muhandislik (gen injenerligi) nima?",
+      "v": [
+        "Hujayra genetik apparatiga o'zgarish kiritish orqali rekombinant DNK yaratish va yangi biologik xususiyatga ega ob'ektlar hosil qilish imkonini beruvchi usullar va texnologiyalar yig'indisi",
+        "Faqat hujayralarni sun'iy sharoitda ko'paytirish bilan shug'ullanadigan fan",
+        "Organizmlarni tashqi ko'rinishiga qarab tasniflovchi usullar tizimi",
+        "Oqsillarning fazoviy tuzilishini o'rganuvchi kimyoviy texnologiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra genetik muhandislik hujayra genetik apparatiga o'zgarish kiritish orqali rekombinant DNK yaratish va shu asosda yangi biologik xususiyatga ega ob'ektlar hosil qilish imkonini beruvchi usullar va texnologiyalar yig'indisidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#e13cf994"
+    },
+    {
+      "q": "Gen injenerligi yo'nalishining vujudga kelishiga qanday izlanishlar asos bo'ldi?",
+      "v": [
+        "Bakteriyalardagi rekombinatsiya jarayonlari va viruslarning hujayra irsiy materialini o'zgartirish mexanizmlari ustidagi izlanishlar",
+        "Faqat o'simliklarni chatishtirish bo'yicha seleksion tajribalar",
+        "Hayvonlarning migratsiyasini kuzatish natijalari",
+        "Tuproq mikroblarining ekologik tadqiqotlari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bakteriyalarda sodir bo'ladigan rekombinatsiya jarayonlari va viruslarning hujayra irsiy materialini o'zgartirish mexanizmlari ustida olib borilgan izlanishlar tufayli genetik injenerlik yo'nalishi vujudga keldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#2c4314f0"
+    },
+    {
+      "q": "Genetik muhandislik usullarining asosiy mohiyati nimadan iborat?",
+      "v": [
+        "Organizmga yangi genni kiritishdan",
+        "Organizmdan barcha genlarni chiqarib tashlashdan",
+        "Hujayralarni faqat past haroratda saqlashdan",
+        "Oqsillarni parchalab, aminokislotalarga ajratishdan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra ushbu usullarning mohiyati organizmga yangi genni kiritishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m5_1#fa226d84"
+    },
+    {
+      "q": "Genetik muhandislikda organizmga kiritiladigan yangi gen qayerdan olinishi mumkin?",
+      "v": [
+        "Yangidan sintezlanishi yoki boshqa organizmdan ko'chirilishi mumkin",
+        "Faqat o'sha organizmning o'zidan olinadi",
+        "Faqat inson genomidan olinadi",
+        "Faqat suvda erigan holda tayyorlanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra kiritiladigan gen yangidan sintezlanishi yoki boshqa organizmdan ko'chirilishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#3016f315"
+    },
+    {
+      "q": "Bakteriya genomiga oqsilni kodlovchi gen kiritilsa nima yuz beradi?",
+      "v": [
+        "Bakteriya hujayrasi mazkur oqsilni sintezlash xususiyatiga ega bo'ladi",
+        "Bakteriya darhol nobud bo'ladi",
+        "Bakteriya ko'payishdan butunlay to'xtaydi",
+        "Bakteriya o'z DNK sini yo'qotadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bakteriya genomiga oqsilni kodlovchi gen kiritilsa, bakteriya hujayrasi mazkur oqsilni sintezlash xususiyatiga ega bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#57bc763d"
+    },
+    {
+      "q": "Prokariot hujayralarda sodir bo'ladigan, tabiiy genetik injeneriyaga o'xshash rekombinatsiya jarayonlari qaysilar?",
+      "v": [
+        "Transformatsiya, transduksiya, kon'yugatsiya",
+        "Mitoz, meyoz, amitoz",
+        "Fotosintez, nafas olish, bijg'ish",
+        "Transkripsiya, translyatsiya, replikatsiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra prokariot hujayralarda sodir bo'ladigan rekombinatsiya jarayonlari transformatsiya, transduksiya va kon'yugatsiyadan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#3744358a"
+    },
+    {
+      "q": "Gen muhandisligining asosiy maqsadi nima?",
+      "v": [
+        "Genlarning strukturasini maqsadga muvofiq o'zgartirish va ularning faoliyatini idora etish",
+        "Barcha organizmlarni bir turga aylantirish",
+        "Faqat hujayralarni mikroskopda kuzatish",
+        "Tabiiy tanlanishni to'xtatib qo'yish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra gen muhandisligining maqsadi genlarning strukturasini aniq maqsadga muvofiq o'zgartirish va ularning faoliyatini idora etishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#812f861f"
+    },
+    {
+      "q": "Gen muhandisligi yutuqlari qaysi amaliy natijalarga olib keldi?",
+      "v": [
+        "Sanoat miqyosida oqsil ishlab chiqarish, tur xususiyatlarini o'zgartirish, kasalliklarni tez tashxis qilish",
+        "Faqat yangi tog' jinslarini shakllantirish",
+        "Iqlim o'zgarishini to'liq to'xtatish",
+        "Yulduzlararo sayohatni ta'minlash"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra gen muhandisligi sanoat miqyosida oqsil moddalari ishlab chiqarish, o'simlik va hayvon turlarini o'zgartirish hamda irsiy va yuqumli kasalliklarni aniq va tez tashxis qilish usullarini yaratdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#4d7195e7"
+    },
+    {
+      "q": "Gen muhandisligining tadqiqot obyektlari qaysilar?",
+      "v": [
+        "Viruslar, bakteriyalar, zamburug'lar, hayvon va o'simliklarning hujayralari",
+        "Faqat sut emizuvchilarning suyaklari",
+        "Faqat dengiz suvidagi minerallar",
+        "Faqat gullaydigan o'simliklarning changi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra gen muhandisligining tadqiqot obyektlari viruslar, bakteriyalar, zamburug'lar, hayvon va o'simliklarning hujayralaridir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m5_1#2bca5552"
+    },
+    {
+      "q": "Tadqiqot obyektlariga ko'ra genetik injeneriya qaysi yo'nalishlarni o'z ichiga oladi?",
+      "v": [
+        "Gen muhandisligi, xromosoma muhandisligi, hujayra muhandisligi",
+        "Fizika, kimyo, geografiya muhandisligi",
+        "Suv, havo, tuproq muhandisligi",
+        "Nazariy, amaliy va tajriba injeneriyasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra tadqiqot obyektlariga ko'ra genetik injeneriya gen muhandisligi, xromosoma muhandisligi va hujayra muhandisligi yo'nalishlarini o'z ichiga oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#b0b9ce4b"
+    },
+    {
+      "q": "Genetik injeneriya usullari vositasida genlar bilan qanday amallarni bajarish mumkin?",
+      "v": [
+        "Genlarni ko'paytirish (klonlash), DNK zanjiridagi nukleotidni boshqasi bilan almashtirish, bir organizm genini boshqa organizm hujayrasiga ko'chirish",
+        "Faqat genlarni butunlay yo'q qilish",
+        "Faqat oqsillarni yog'ga aylantirish",
+        "Faqat hujayralarni bo'yash va o'lchash"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra genetik injeneriya usullari vositasida genlarni ko'paytirish (klonlash), DNK zanjiridagi xohlagan nukleotidni boshqasi bilan almashtirish, bir organizm genini boshqa organizm hujayrasiga ko'chirish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#186ac10b"
+    },
+    {
+      "q": "Genetik injeneriyada genlarni ko'paytirish jarayoni yana qanday nomlanadi?",
+      "v": [
+        "Klonlash",
+        "Fotosintez",
+        "Denaturatsiya",
+        "Fermentatsiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra genetik injeneriya usullari vositasida genlarni ko'paytirish klonlash deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m5_1#d16346b3"
+    },
+    {
+      "q": "Genetika va molekulyar biologiyada vektor deb nimaga aytiladi?",
+      "v": [
+        "Genetik materialni hujayraga kiritish uchun foydalaniladigan DNK molekulasi",
+        "Hujayrani parchalovchi kimyoviy modda",
+        "Oqsil sintezini to'xtatuvchi ferment",
+        "Hujayra membranasidagi maxsus retseptor"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra vektor — genetik materialni hujayraga kiritish uchun foydalaniladigan DNK molekulasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#f8de747d"
+    },
+    {
+      "q": "Ko'p sonli aynan bir xil DNK nusxalarini olish usuli qanday ataladi?",
+      "v": [
+        "Genlarni klonlash",
+        "Transkripsiya",
+        "Translyatsiya",
+        "Denaturatsiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra ko'p sonli aynan bir xil DNK nusxalarini olish usuli genlarni klonlash deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m5_1#b420cb09"
+    },
+    {
+      "q": "Genetik injeneriyada klonlashtiruvchi vektor sifatida asosan nimalardan foydalaniladi?",
+      "v": [
+        "Plazmidlar va bakteriofaglardan",
+        "Ribosoma va lizosomalardan",
+        "Mitoxondriya va xloroplastdan",
+        "Aminokislota va yog' kislotalaridan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra klonlashtiruvchi vosita sifatida genetik injeneriyada plazmidlar hamda bakteriofaglardan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#651f2281"
+    },
+    {
+      "q": "Plazmidlar nima?",
+      "v": [
+        "Bakteriyalarda aniqlangan kichik halqasimon DNK molekulasi",
+        "Hujayra ichidagi yirik oqsil kompleksi",
+        "Bakteriyaning tashqi qobig'idagi yog' qatlami",
+        "Ribosomalar hosil qiladigan RNK to'plami"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra plazmidlar bakteriyalarda aniqlangan kichik halqasimon DNK molekulasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#3544eee4"
+    },
+    {
+      "q": "Plazmidlar bakteriyaning asosiy (xromosoma) DNK siga nisbatan qanday xususiyatga ega?",
+      "v": [
+        "Undan alohida bo'lib, mustaqil ravishda replikatsiyalanadi",
+        "Undan hech qachon ajralmaydi",
+        "Faqat u bilan birga parchalanadi",
+        "Uning nusxasi hisoblanadi va o'zi replikatsiyalanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra plazmidlar asosiy (xromosoma) DNK dan alohida bo'lib, undan mustaqil ravishda replikatsiyalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#18a343c6"
+    },
+    {
+      "q": "Bakteriofag (fag) nima?",
+      "v": [
+        "O'z DNK sini bakteriya hujayrasiga kirita oladigan virus",
+        "Bakteriyalarni himoya qiluvchi oqsil",
+        "Bakteriya ichidagi kichik halqasimon DNK",
+        "Hujayra bo'linishini boshqaruvchi ferment"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bakteriofag (fag)lar o'z DNK sini bakteriya hujayrasiga kirita oladigan viruslardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#db8b06c5"
+    },
+    {
+      "q": "Turli organizmlarning DNK bo'laklaridan iborat, klonlanadigan gen plazmida yoki fagga biriktirilgan konstruksiya qanday ataladi?",
+      "v": [
+        "Rekombinant DNK",
+        "Ribosomal RNK",
+        "Xromatin",
+        "Nukleoid"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra turli organizmlar DNK bo'laklaridan iborat konstruksiya rekombinant DNK deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#74a09283"
+    },
+    {
+      "q": "Klonlanishi zarur bo'lgan gen plazmida yoki fag DNK siga nima vositasida biriktiriladi?",
+      "v": [
+        "Maxsus fermentlar vositasida",
+        "Yorug'lik nuri yordamida",
+        "Yuqori bosim ta'sirida",
+        "Faqat mexanik aralashtirish orqali"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra klonlanishi zarur bo'lgan gen plazmidaga yoki fag DNK siga maxsus fermentlar vositasida biriktiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#5ac02c8c"
+    },
+    {
+      "q": "Bakteriya genomiga joylashgan rekombinant DNK nusxalari qanday ko'payadi?",
+      "v": [
+        "Bakteriyalarning bo'linishi natijasida ortib boradi",
+        "O'z-o'zidan yorug'likda ko'payadi",
+        "Faqat harorat oshganda parchalanadi",
+        "Boshqa viruslar orqali yo'q qilinadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bakteriya genomiga joylashib olgan rekombinant DNK nusxalari bakteriyalarning bo'linishi natijasida ortib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#4b297a34"
+    },
+    {
+      "q": "Gen muhandisligida bakteriya yordamida sanoat miqyosida ishlab chiqarilishi darslikda misol qilib keltirilgan gormon qaysi?",
+      "v": [
+        "Insulin",
+        "Adrenalin",
+        "Tiroksin",
+        "Estrogen"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra insulin oqsili genini bakteriya genomiga kiritib, ushbu gormonni ishlab chiqarish yo'lga qo'yilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#4fabf240"
+    },
+    {
+      "q": "Plazmidlar bakteriyaga tashqi muhitga moslashishda qanday muhim xususiyat beradi?",
+      "v": [
+        "Antibiotiklarga qarshilik ko'rsatish xususiyatini oshiradi",
+        "Fotosintez qilish qobiliyatini beradi",
+        "Yadro hosil qilishga yordam beradi",
+        "Ko'p hujayrali organizmga aylantiradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra plazmidlar bakteriyalarning antibiotiklarga qarshilik ko'rsatish kabi xususiyatini oshiradigan genlardan tashkil topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#78b2fb65"
+    },
+    {
+      "q": "Plazmidning tuzilishi qanday?",
+      "v": [
+        "DNK qo'sh zanjirli halqasidan iborat molekula",
+        "Bir zanjirli RNK molekulasi",
+        "Oqsildan tuzilgan g'ovak tuzilma",
+        "Yog' kislotalaridan iborat membrana"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra plazmid bir nechta genlardan tashkil topgan DNK qo'sh zanjirli halqasidan iborat molekuladir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#7ec42505"
+    },
+    {
+      "q": "Ayrim plazmidlarning bir hujayradan ikkinchi hujayraga o'tishi qaysi jarayonlar orqali amalga oshadi?",
+      "v": [
+        "Kon'yugatsiya va transformatsiya",
+        "Fotosintez va nafas olish",
+        "Mitoz va meyoz",
+        "Transkripsiya va translyatsiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra plazmidlarning bir hujayradan ikkinchi hujayraga o'tishi kon'yugatsiya va transformatsiya jarayonlarida amalga oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m5_1#07c8cbe6"
+    },
+    {
+      "q": "Bakteriya bo'linganda nukleoidga birikkan (rekombinatsiyalangan) plazmid genlari qanday taqdirga ega bo'ladi?",
+      "v": [
+        "Asosiy \"xromosoma\" genlari bilan birikkan holda nasldan naslga beriladi",
+        "Bo'linish oldidan butunlay yo'qoladi",
+        "Faqat tashqi muhitga chiqariladi",
+        "Oqsilga aylanib parchalanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bakteriya bo'linganda rekombinatsiyalanuvchi plazmid genlari asosiy \"xromosoma\" genlari bilan birikkan holda nasldan naslga beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m5_1#f8e31cf2"
+    },
+    {
+      "q": "Plazmidlarga nisbatan faglarning vektor sifatidagi asosiy afzalligi nimada?",
+      "v": [
+        "Ko'proq DNK bo'laklarini klonlash imkoniyati mavjudligida",
+        "Antibiotik ishlab chiqarishida",
+        "Yadro hosil qila olishida",
+        "Fotosintez qila olishida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra plazmidlarga nisbatan faglarning afzalligi ko'proq DNK bo'laklarini klonlash imkoniyati mavjudligidadir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#a727c7db"
+    },
+    {
+      "q": "Fag vektor sifatida ishlatilganda aksariyat hollarda qaysi fagdan foydalaniladi?",
+      "v": [
+        "Lyambda fagdan",
+        "T-limfotsit fagdan",
+        "Retrofagdan",
+        "Plazmid fagdan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra aksariyat holatlarda klonlash uchun lyambda fagdan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#93299af9"
+    },
+    {
+      "q": "Fag vektorda klonlash qanday amalga oshiriladi?",
+      "v": [
+        "Fag DNK sining bir qismi klonlash zarur bo'lgan DNK fragmenti bilan almashtiriladi",
+        "Fag butunlay parchalanib, faqat oqsili ishlatiladi",
+        "Fag DNK si ikki baravar ko'paytirilib saqlanadi",
+        "Fag hujayra tashqarisida yangi virus hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra fag DNK sining bir qismi klonlash zarur bo'lgan DNK fragmenti bilan almashtiriladi va fag bakteriya hujayrasiga kirgach uning genomiga birikadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#5c1e47b5"
+    },
+    {
+      "q": "Gen muhandisligi fermentlari DNK bilan ishlashda qanday vazifalarni bajaradi?",
+      "v": [
+        "DNKni tegishli joyidan qirqish, bo'laklarni ulash va nukleotidlar ketma-ketligini sintez qilish",
+        "Faqat hujayrani bo'yashda yordam berish",
+        "Faqat haroratni pasaytirish",
+        "Faqat DNKni suvda eritish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra gen muhandisligi fermentlari DNKni tegishli joyidan qirqish, DNK bo'laklarini ulash va yangi nukleotidlar ketma-ketligini sintez qilishda qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#6bcef561"
+    },
+    {
+      "q": "Gen muhandisligida foydalaniladigan fermentlar qaysi guruhlarga ajratiladi?",
+      "v": [
+        "DNKni bo'laklarga bo'luvchi, DNK sintezlovchi, ulovchi va uchlar strukturasini o'zgartiruvchi",
+        "Faqat qirquvchi va bo'yovchi",
+        "Faqat isituvchi va sovutuvchi",
+        "Faqat oqsil va yog' hosil qiluvchi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra fermentlar DNKni bo'laklarga bo'luvchi, RNK matritsa asosida DNK bo'laklarini sintezlovchi, DNK bo'laklarini ulovchi va DNK uchlari strukturasini o'zgartiruvchi guruhlarga ajratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m5_1#f49f7244"
+    },
+    {
+      "q": "DNK polimeraza fermenti birinchi marta qachon va kim tomonidan ajratib olingan?",
+      "v": [
+        "1958-yilda Korenberg va uning hamkorlari tomonidan",
+        "1901-yilda Mendel tomonidan",
+        "1975-yilda Uotson va Krik tomonidan",
+        "1865-yilda Paster tomonidan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra DNK polimeraza birinchi marta 1958-yilda Korenberg va uning hamkorlari tomonidan ajratib olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m5_1#2911173f"
+    },
+    {
+      "q": "DNK polimeraza fermenti dastlab qaysi organizmdan ajratib olingan?",
+      "v": [
+        "Esherichia coli (ichak tayoqchasi bakteriyasi)dan",
+        "Odam qonidan",
+        "Achitqi zamburug'idan",
+        "Lyambda fagdan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra DNK polimeraza Esherichia coli (ichak tayoqchasi bakteriyasi)dan ajratib olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m5_1#bc8ef5c9"
+    },
+    {
+      "q": "DNK polimeraza fermenti qanday jarayonda ishtirok etadi?",
+      "v": [
+        "Komplementar nukleotidlarni biriktirish yo'li bilan DNK zanjiri reduplikatsiyasida",
+        "Oqsilni aminokislotalarga parchalashda",
+        "Yog'larni sintezlashda",
+        "Hujayra membranasini hosil qilishda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra DNK polimeraza komplementar nukleotidlarni biriktirish yo'li bilan DNK zanjiri reduplikatsiya jarayonida ishtirok etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#afb7fad6"
+    },
+    {
+      "q": "Gen muhandisligida DNK polimeraza qaysi maqsadda qo'llaniladi?",
+      "v": [
+        "Yangi DNK molekulalarini sintezlashda",
+        "DNKni bo'laklarga qirqishda",
+        "Oqsillarni parchalashda",
+        "Hujayralarni bo'yashda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra DNK polimeraza gen muhandisligida yangi DNK molekulalarini sintezlashda qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#e521efb0"
+    },
+    {
+      "q": "Hujayrada har bir faol gen nima hosil qiladi?",
+      "v": [
+        "Minglab komplementar mRNK molekulalarini",
+        "Faqat bitta oqsil molekulasini",
+        "Yangi hujayra membranasini",
+        "Bir nechta plazmid halqasini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra hujayrada har bir faol gen minglab komplementar mRNK molekulalarini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#735f28c0"
+    },
+    {
+      "q": "Insulinni kodlovchi gen qaysi hujayralarda faol bo'ladi?",
+      "v": [
+        "Me'da osti bezi hujayralarida",
+        "Jigar hujayralarida",
+        "Miya neyronlarida",
+        "Teri epiteliy hujayralarida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra insulinni kodlovchi gen me'da osti bezi hujayralarida faol bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#c5e84bad"
+    },
+    {
+      "q": "RNK matritsasi asosida komplementar DNK sintezlovchi fermentga ega bo'lgan organizmlar qaysilar?",
+      "v": [
+        "Retroviruslar",
+        "Yashil o'simliklar",
+        "Sut emizuvchilar",
+        "Zamburug'lar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra retroviruslar RNK matritsasi asosida komplementar DNK sintezlovchi fermentga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#1bc99803"
+    },
+    {
+      "q": "RNK matritsasi asosida DNK sintezlovchi ferment qanday nomlanadi?",
+      "v": [
+        "Teskari transkriptaza (revertaza)",
+        "DNK ligaza",
+        "Restriktaza",
+        "DNK polimeraza"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra RNK asosida DNK sintezlovchi ferment teskari transkriptaza yoki revertaza deb nomlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#7e99905a"
+    },
+    {
+      "q": "Teskari transkriptaza fermenti qaysi jarayonga teskari jarayonni amalga oshiradi?",
+      "v": [
+        "DNK matritsa asosida RNK sintezi — transkripsiyaga",
+        "Oqsil sintezi — translyatsiyaga",
+        "DNK reduplikatsiyasiga",
+        "Hujayra bo'linishi — mitozga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra RNK matritsasi asosida DNK sintezi DNK matritsa asosida RNK sintezi — transkripsiyaga teskari jarayondir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m5_1#00dee733"
+    },
+    {
+      "q": "Retroviruslar teskari transkriptaza fermentidan qanday maqsadda foydalanadi?",
+      "v": [
+        "RNK dan iborat o'z genomini yangi hujayralarni zararlovchi DNK ga aylantirish uchun",
+        "Oqsillarni parchalash uchun",
+        "Bakteriya membranasini teshish uchun",
+        "Fotosintez amalga oshirish uchun"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra retroviruslar bu fermentdan RNK dan iborat o'z genomini yangi hujayralarni zararlovchi DNK ga aylantirish uchun foydalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m5_1#6a5a377a"
+    },
+    {
+      "q": "Zarur genning DNK-nusxasi (mRNK asosida) qaysi ferment yordamida sintezlanadi?",
+      "v": [
+        "Teskari transkriptaza",
+        "Restriktaza",
+        "DNK ligaza",
+        "Amilaza"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra mRNK ajratib olingach, teskari transkriptaza yordamida zarur genning DNK-nusxasi sintezlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#2c3ad60b"
+    },
+    {
+      "q": "Genlarni ajratib olishga qaratilgan dastlabki tadqiqotlar qaysi yillarda restriktazalarning ochilishi bilan bog'liq?",
+      "v": [
+        "1960-70-yillarda",
+        "1900-1910-yillarda",
+        "1930-1940-yillarda",
+        "1990-2000-yillarda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra genlarni ajratib olish tadqiqotlari 1960-70-yillarda restriksion endonukleazalarning ochilishi bilan bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m5_1#17e29755"
+    },
+    {
+      "q": "Restriksion endonukleaza atamasidagi \"restriction\" so'zi inglizchadan qanday tarjima qilinadi?",
+      "v": [
+        "Cheklovchi",
+        "Ko'paytiruvchi",
+        "Ulovchi",
+        "Sintezlovchi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra restriksion (inglizcha restricting) — cheklovchi ma'nosini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#5f29e4f8"
+    },
+    {
+      "q": "Bakteriyalarda aniqlangan restriktaza fermentlari qanday vazifani bajaradi?",
+      "v": [
+        "Bakteriyaga kirgan virus DNKsini qirqib, viruslarning ko'payishini cheklaydi",
+        "Bakteriya oqsillarini sintezlaydi",
+        "Bakteriya membranasini mustahkamlaydi",
+        "Bakteriyani harakatlantiradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra restriktazalar bakteriyaga kirgan virus DNKsini qirqib, viruslarning bakteriya hujayrasida ko'payishini cheklaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#ab43dc15"
+    },
+    {
+      "q": "Har bir bakteriya restriksion endonukleazalar bo'yicha qanday xususiyatga ega?",
+      "v": [
+        "O'ziga xos restriksion endonukleazalarni sintezlaydi",
+        "Faqat bitta umumiy restriktaza ishlatadi",
+        "Restriktaza umuman sintezlamaydi",
+        "Restriktazani boshqa bakteriyadan oladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra har bir bakteriya o'ziga xos restriksion endonukleazalarni sintezlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#29d3b1ad"
+    },
+    {
+      "q": "Restriktazalar DNKning qanday joyini tanib kesadi?",
+      "v": [
+        "Muayyan maxsus ketma-ketliklarni — restriksiya saytlari (nuqtalari)ni",
+        "DNKning istalgan tasodifiy nuqtasini",
+        "Faqat DNK zanjirining o'rtasini",
+        "Faqat oqsilga birikkan joyini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra restriktazalar DNKning muayyan maxsus ketma-ketliklari — restriksiya saytlari (nuqtalari)ni tanib kesadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#f977ad5d"
+    },
+    {
+      "q": "Yot DNKni parchalaydigan restriktaza o'ziga xos nechta nukleotid ketma-ketligini tanib kesadi?",
+      "v": [
+        "6 ta",
+        "2 ta",
+        "10 ta",
+        "20 ta"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra har qanday restriktaza fermenti DNKni o'ziga xos 6 ta nukleotid ketma-ketligini tanib kesadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m5_1#729e15a1"
+    },
+    {
+      "q": "Restriktaza DNKni kesganda qanday uchli bo'laklar hosil bo'lishi mumkin?",
+      "v": [
+        "To'mtoq yoki yopishqoq uchli DNK bo'laklari",
+        "Faqat aylanasimon bo'laklar",
+        "Faqat bir zanjirli bo'laklar",
+        "Faqat oqsil bilan qoplangan bo'laklar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra restriktaza kesganda to'mtoq yoki yopishqoq uchli DNK bo'laklari hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#7d36d99e"
+    },
+    {
+      "q": "Yopishqoq uchli DNK bo'laklari o'zaro qanday bog' hisobiga komplementar juftlar hosil qilib birikadi?",
+      "v": [
+        "Vodorod bog'lari hisobiga",
+        "Fosfodiefir bog'lari hisobiga",
+        "Peptid bog'lari hisobiga",
+        "Ion bog'lari hisobiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra yopishqoq uchlar bir-biri bilan vodorod bog'lari hisobiga o'zaro komplementar juftlar hosil qilib birikadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#8de1ab0b"
+    },
+    {
+      "q": "Restriktazalarni nomlashda nimadan foydalaniladi?",
+      "v": [
+        "Ferment ajratib olingan bakteriya turi lotincha nomining bosh harflari va qo'shimcha belgilaridan",
+        "Fermentni kashf etgan olimning ismidan",
+        "Fermentning molekulyar og'irligidan",
+        "Fermentning rangidan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra restriktazalarni nomlashda ferment ajratib olingan bakteriya turi lotincha nomining bosh harflari va qo'shimcha belgilaridan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m5_1#05e0f5ea"
+    },
+    {
+      "q": "Quyidagi restriktazalardan qaysi biri \"yopishqoq\" uchlar hosil qilib kesadi?",
+      "v": [
+        "EcoRI",
+        "HpaI",
+        "DNK ligaza",
+        "Revertaza"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra EcoRI restriktazasi \"yopishqoq\" uchlar hosil qilib kesadi, HpaI esa \"to'mtoq\" uchlar hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m5_1#5870dc2d"
+    },
+    {
+      "q": "Quyidagi restriktazalardan qaysi biri \"to'mtoq\" uchlar hosil qilib kesadi?",
+      "v": [
+        "HpaI",
+        "EcoRI",
+        "DNK polimeraza",
+        "Teskari transkriptaza"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra HpaI restriktazasi \"to'mtoq\" uchlar hosil qilib kesadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m5_1#eca6d2b8"
+    },
+    {
+      "q": "Nima uchun yopishqoq uchlar hosil qiluvchi restriktazalar gen muhandisligida keng qo'llaniladi?",
+      "v": [
+        "Ular hosil qilgan yopishqoq uchlar orqali har xil DNK bo'laklarini bir-biriga bog'lash soddalashadi",
+        "Ular DNKni butunlay parchalab yuboradi",
+        "Ular oqsil sintezini tezlashtiradi",
+        "Ular faqat bir zanjirli DNK bilan ishlaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra yopishqoq uchlardan foydalanib har xil DNK bo'laklarini bir-biriga bog'lash soddalashgani uchun bu restriktazalar keng qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#ca4a9671"
+    },
+    {
+      "q": "Restriktaza yordamida bo'laklarga bo'lingan DNKni o'ta aniqlik bilan bir-biridan ajratib olish qaysi qurilmada amalga oshiriladi?",
+      "v": [
+        "Elektroforez qurilmasida",
+        "Sentrifuga qurilmasida",
+        "Mikroskop qurilmasida",
+        "Termostat qurilmasida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra restriktaza bilan bo'laklarga bo'lingan DNK elektroforez qurilmasida o'ta aniqlik bilan bir-biridan ajratib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#389ff622"
+    },
+    {
+      "q": "Qo'shni nukleotidlar orasidagi fosfodiefir bog'larini tiklab, DNK bo'laklarini bog'lovchi ferment qaysi?",
+      "v": [
+        "DNK ligaza",
+        "Restriktaza",
+        "DNK polimeraza",
+        "Teskari transkriptaza"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra qo'shni nukleotidlar orasidagi fosfodiefir bog'larini tiklab DNK bo'laklarini bog'lovchi ferment DNK ligaza deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#fde2f276"
+    },
+    {
+      "q": "DNK ligaza DNKning qanday uchlarini biriktira oladi?",
+      "v": [
+        "Ham \"yopishqoq uchli\", ham \"to'mtoq uchli\" qismlarini",
+        "Faqat \"yopishqoq uchli\" qismlarini",
+        "Faqat \"to'mtoq uchli\" qismlarini",
+        "Faqat bir zanjirli qismlarini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra ligaza yordamida DNKning \"yopishqoq uchli\" yoki \"to'mtoq uchli\" har qanday qismlari biriktiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#82ab95d9"
+    },
+    {
+      "q": "Donor DNK sini ajratib olishda restriktazadan foydalanilgan bo'lsa, plazmid DNK ga qanday ishlov berish lozim?",
+      "v": [
+        "Huddi shu restriktaza bilan ishlov berish lozim",
+        "Boshqa bir restriktaza bilan ishlov berish lozim",
+        "Faqat ligaza bilan ishlov berish lozim",
+        "Hech qanday ferment ishlatmaslik lozim"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra donor DNK sini ajratib olishda restriktazadan foydalanilgan bo'lsa, plazmid DNK ga ham huddi shu restriktaza bilan ishlov berish lozim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#878ae78f"
+    },
+    {
+      "q": "DNK restriksion fragmentlari plazmid DNK bilan aralashtirilganda birikish qanday ketma-ketlikda amalga oshadi?",
+      "v": [
+        "Dastlab vodorod bog'lari hisobiga, so'ng DNK-ligaza qo'shilgach fosfodiefir bog'lari hosil bo'ladi",
+        "Dastlab fosfodiefir, so'ng vodorod bog'lari hosil bo'ladi",
+        "Faqat peptid bog'lari hosil bo'ladi",
+        "Faqat ion bog'lari hisobiga birikadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra birikish dastlab vodorod bog'lari hisobiga, so'ng DNK-ligaza qo'shilgach fosfodiefir bog'lari hosil bo'lishi orqali amalga oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m5_1#b12d429c"
+    },
+    {
+      "q": "Ligaza fermentining gen muhandisligidagi ahamiyati qanday?",
+      "v": [
+        "Eng ko'p qo'llaniladigan fermentlardan biri bo'lib, DNK bo'laklarini bog'laydi",
+        "DNKni faqat parchalaydi",
+        "Oqsillarni sintezlaydi",
+        "Hujayrani bo'yaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra ligaza DNK bo'laklarini bog'lovchi eng ko'p qo'llaniladigan fermentlardan biridir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#dd14c81d"
+    },
+    {
+      "q": "Rekombinatsiya jarayoni nimalardan iborat ekanligi darslikda qanday ta'kidlangan?",
+      "v": [
+        "DNKni bo'laklarga ajratish va ularni ulashdan",
+        "Faqat oqsillarni parchalashdan",
+        "Faqat hujayralarni bo'yashdan",
+        "Faqat RNKni ko'paytirishdan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra rekombinatsiya jarayoni DNKni bo'laklarga ajratish va ularni ulashdan iborat ekanligi ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#5a8dd8e3"
+    },
+    {
+      "q": "Fermentlar funksiyasiga ko'ra: DNK molekulasini fragmentlarga kesuvchi ferment qaysi?",
+      "v": [
+        "Restriktaza",
+        "Ligaza",
+        "Polimeraza",
+        "Revertaza"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra restriktaza DNK molekulasini fragmentlarga kesadi (ligaza — fosfodiefir bog'larini hosil qiladi, polimeraza — reduplikatsiyada ishtirok etadi, revertaza — RNK asosida DNK sintezlaydi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m5_1#76da1009"
+    }
+  ]
+}

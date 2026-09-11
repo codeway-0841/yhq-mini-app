@@ -1,0 +1,486 @@
+{
+  "nom": "15-mavzu. Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Eritma konsentratsiyasi deganda nima tushuniladi?",
+      "v": [
+        "Ma'lum massadagi yoki hajmdagi eritmada erigan moddaning massasini yoki miqdorini ifodalovchi tushuncha",
+        "Eritmada erituvchining massasini ifodalovchi tushuncha",
+        "Eritmaning faqat hajmini ifodalovchi tushuncha",
+        "Eritmaning haroratini ifodalovchi tushuncha"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi ta'rif: eritma konsentratsiyasi — ma'lum massadagi yoki hajmdagi eritmada erigan moddaning massasini yoki miqdorini ifodalovchi tushuncha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#24fadbf4"
+    },
+    {
+      "q": "Eritma tarkibida erigan moddani miqdori ko'p bo'lsa, bunday eritma nima deyiladi?",
+      "v": [
+        "Konsentratsiyasi yuqori bo'lgan eritma",
+        "Suyultirilgan eritma",
+        "To'yungan eritma",
+        "Toza erituvchi"
+      ],
+      "t": 0,
+      "izoh": "Erigan modda miqdori ko'p bo'lsa, eritma konsentratsiyasi yuqori bo'lgan eritma deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#e9a17609"
+    },
+    {
+      "q": "Konsentrlangan eritmalarning zichligi qanday bo'ladi?",
+      "v": [
+        "Katta",
+        "Past",
+        "Toza suvniki bilan bir xil",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Konsentrlangan eritmalarni zichligi katta, harakatchanligi yoki qovushqoqligi past bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#09b9ebf4"
+    },
+    {
+      "q": "Konsentrlangan eritmalarning harakatchanligi yoki qovushqoqligi qanday bo'ladi?",
+      "v": [
+        "Past",
+        "Katta",
+        "Toza suvniki bilan bir xil",
+        "O'zgarmas"
+      ],
+      "t": 0,
+      "izoh": "Konsentrlangan eritmalarda harakatchanlik yoki qovushqoqlik past bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#50cfccb3"
+    },
+    {
+      "q": "Past konsentratsiyali ya'ni suyultirilgan eritmalarda erigan moddaning miqdori qanday bo'ladi?",
+      "v": [
+        "Juda kam",
+        "Juda ko'p",
+        "O'rtacha",
+        "Erituvchidan ko'p"
+      ],
+      "t": 0,
+      "izoh": "Suyultirilgan eritmalarda erigan moddaning miqdori juda kam bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#95bb292e"
+    },
+    {
+      "q": "Suyultirilgan eritmalarda erigan modda miqdori juda kam bo'lgani uchun eritmaning zichligi, harakatchanligi va qovushqoqligi nimaga yaqin bo'ladi?",
+      "v": [
+        "Toza suvnikiga",
+        "Konsentrlangan eritmanikiga",
+        "To'yungan eritmanikiga",
+        "Kristall moddanikiga"
+      ],
+      "t": 0,
+      "izoh": "Suyultirilgan eritmalarda bu xossalar toza suvnikiga yaqin bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#c900d98b"
+    },
+    {
+      "q": "Darslikda eritmani konsentratsiyasini aniq ifodalash usullaridan nechtasi keltirilgan?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "4 ta",
+        "5 ta"
+      ],
+      "t": 0,
+      "izoh": "Foiz, molyar va normal konsentratsiya — jami 3 ta usul keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#2156f52c"
+    },
+    {
+      "q": "Eritma konsentratsiyasini aniq ifodalash usullari qaysilar?",
+      "v": [
+        "Foiz, molyar va normal konsentratsiya",
+        "Foiz, massa va hajm konsentratsiyasi",
+        "Molyar, atom va ion konsentratsiyasi",
+        "Normal, hajmiy va og'irlik konsentratsiyasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikda foiz konsentratsiya, molyar konsentratsiya, normal konsentratsiya usullari sanalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#8a3d52e1"
+    },
+    {
+      "q": "Foiz konsentratsiya nimani ko'rsatadi?",
+      "v": [
+        "Eritma massasini necha foizini erigan modda tashkil qilishini",
+        "Eritma hajmini necha foizini suv tashkil qilishini",
+        "1 l eritmadagi mollar sonini",
+        "1 l eritmadagi ekvivalent miqdorni"
+      ],
+      "t": 0,
+      "izoh": "Foiz konsentratsiya eritma massasini necha foizini erigan modda tashkil qilishini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#d0d8d19a"
+    },
+    {
+      "q": "Foiz konsentratsiyani boshqacha qilib qanday ifodalash mumkin?",
+      "v": [
+        "100 g eritma tarkibida necha gramm erigan modda borligini ko'rsatadi",
+        "100 ml eritmadagi modda hajmini ko'rsatadi",
+        "1 l eritmadagi modda massasini ko'rsatadi",
+        "1 kg suvda erigan modda miqdorini ko'rsatadi"
+      ],
+      "t": 0,
+      "izoh": "Foiz konsentratsiya 100 g eritma tarkibida necha gramm erigan modda borligini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#fbe754eb"
+    },
+    {
+      "q": "15% li shakarning eritmasi deganda nimani tushunamiz?",
+      "v": [
+        "100 g eritmada 15 g shakar va 85 g suv borligini",
+        "100 g suvda 15 g shakar borligini",
+        "100 g eritmada 85 g shakar borligini",
+        "1 l eritmada 15 g shakar borligini"
+      ],
+      "t": 0,
+      "izoh": "15% li shakar eritmasi — 100 g eritmada 15 g shakar va 85 g suv borligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#43ba4a72"
+    },
+    {
+      "q": "Foiz konsentratsiya qanday belgi bilan ifodalanadi?",
+      "v": [
+        "C%",
+        "C_M",
+        "C_N",
+        "n"
+      ],
+      "t": 0,
+      "izoh": "Foiz konsentratsiya C% belgisi bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#c007cfad"
+    },
+    {
+      "q": "Foiz konsentratsiya formulasida m1 nimani bildiradi?",
+      "v": [
+        "Erigan modda massasini",
+        "Eritma massasini",
+        "Eritma hajmini",
+        "Erituvchi massasini"
+      ],
+      "t": 0,
+      "izoh": "m1 — erigan modda massasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#8678f2d4"
+    },
+    {
+      "q": "Foiz konsentratsiya formulasida m2 nimani bildiradi?",
+      "v": [
+        "Eritma massasini",
+        "Erigan modda massasini",
+        "Eritma hajmini",
+        "Eritma zichligini"
+      ],
+      "t": 0,
+      "izoh": "m2 — eritma massasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#50d78432"
+    },
+    {
+      "q": "Foiz konsentratsiyani aniqlash formulasini ko'rsating.",
+      "v": [
+        "C% = m1/m2 · 100%",
+        "C% = m2/m1 · 100%",
+        "C% = m1 · m2 · 100%",
+        "C% = m1 · V · 100%"
+      ],
+      "t": 0,
+      "izoh": "Erigan modda massasi eritmaning umumiy massasiga bo'linib, 100% ga ko'paytiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#a0212124"
+    },
+    {
+      "q": "Foiz konsentratsiyani hisoblashda erigan modda massasi eritma massasiga bo'lingach, hosil bo'lgan son nimaga ko'paytiriladi?",
+      "v": [
+        "100% ga",
+        "10% ga",
+        "1000 ga",
+        "Erigan modda massasiga"
+      ],
+      "t": 0,
+      "izoh": "Hosil bo'lgan sonni foizda ifodalash uchun 100% ga ko'paytiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#963d803c"
+    },
+    {
+      "q": "Erigan modda massasini (m1) topish formulasini ko'rsating.",
+      "v": [
+        "m1 = C% · m2 / 100%",
+        "m1 = m2 · 100% / C%",
+        "m1 = C% · 100% / m2",
+        "m1 = C% / (m2 · 100%)"
+      ],
+      "t": 0,
+      "izoh": "Foiz konsentratsiyani eritma massasiga ko'paytirib 100% ga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#192f2add"
+    },
+    {
+      "q": "Eritma massasini (m2) topish formulasini ko'rsating.",
+      "v": [
+        "m2 = m1 · 100% / C%",
+        "m2 = C% · m1 / 100%",
+        "m2 = C% · 100% / m1",
+        "m2 = m1 / (C% · 100%)"
+      ],
+      "t": 0,
+      "izoh": "Erigan modda massasini 100% ga ko'paytirib, foiz konsentratsiyaga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#8b3f0979"
+    },
+    {
+      "q": "30 g KCl 100 g suvda eritilganda hosil bo'lgan eritmaning massasi qancha bo'ladi?",
+      "v": [
+        "130 g",
+        "100 g",
+        "70 g",
+        "230 g"
+      ],
+      "t": 0,
+      "izoh": "30 + 100 = 130 g eritma hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#bf003f87"
+    },
+    {
+      "q": "30 g KCl 100 g suvda eritilishidan hosil bo'lgan eritmaning foiz konsentratsiyasi qancha?",
+      "v": [
+        "23%",
+        "30%",
+        "43%",
+        "13%"
+      ],
+      "t": 0,
+      "izoh": "C% = 30/130 · 100% = 23%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#250560f0"
+    },
+    {
+      "q": "50 g KNO3 ni necha gramm suvda eritilganda 40% li eritma hosil bo'ladi?",
+      "v": [
+        "75 g",
+        "60 g",
+        "100 g",
+        "125 g"
+      ],
+      "t": 0,
+      "izoh": "x = 50·60/40 = 75 g H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#215a2903"
+    },
+    {
+      "q": "100 g 40% li eritmani tayyorlash uchun 40 g KNO3 ga necha gramm erituvchi (suv) kerak?",
+      "v": [
+        "60 g",
+        "40 g",
+        "100 g",
+        "50 g"
+      ],
+      "t": 0,
+      "izoh": "40% li eritma uchun 40 g tuz va 60 g suv kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#22eaee8f"
+    },
+    {
+      "q": "150 g suvda necha gramm NaNO3 eritilsa 25% li eritma hosil bo'ladi?",
+      "v": [
+        "50 g",
+        "25 g",
+        "75 g",
+        "37,5 g"
+      ],
+      "t": 0,
+      "izoh": "x = 150·25/75 = 50 g NaNO3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#f52a55e8"
+    },
+    {
+      "q": "25% li eritma tayyorlash uchun massa jihatidan 75 g erituvchiga necha gramm erigan modda to'g'ri keladi?",
+      "v": [
+        "25 g",
+        "75 g",
+        "50 g",
+        "100 g"
+      ],
+      "t": 0,
+      "izoh": "25% li eritma uchun 25 g erigan modda va 75 g erituvchi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#72eec1a9"
+    },
+    {
+      "q": "30% li KBr eritmasidan 500 g tayyorlash uchun necha gramm tuz kerak?",
+      "v": [
+        "150 g",
+        "350 g",
+        "30 g",
+        "500 g"
+      ],
+      "t": 0,
+      "izoh": "x1(KBr) = 500·30/100 = 150 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#ef91f4d1"
+    },
+    {
+      "q": "30% li KBr eritmasidan 500 g tayyorlash uchun necha gramm suv kerak?",
+      "v": [
+        "350 g",
+        "150 g",
+        "70 g",
+        "470 g"
+      ],
+      "t": 0,
+      "izoh": "x2(H2O) = 500·70/100 = 350 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#5bfc9251"
+    },
+    {
+      "q": "Masalada erigan moddaning massasi berilmay, uning miqdori (n) berilganda massa qanday aniqlanadi?",
+      "v": [
+        "m = n · M",
+        "m = n / M",
+        "m = M / n",
+        "m = n · V"
+      ],
+      "t": 0,
+      "izoh": "Modda miqdorini molyar massaga ko'paytirib erigan modda massasi aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#5a11236d"
+    },
+    {
+      "q": "Darslikdagi masalada Na2CO3 ning molyar massasi qancha deb olingan?",
+      "v": [
+        "106 g/mol",
+        "100 g/mol",
+        "84 g/mol",
+        "96 g/mol"
+      ],
+      "t": 0,
+      "izoh": "M(Na2CO3) = 106 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#75b7b116"
+    },
+    {
+      "q": "0,5 mol Na2CO3 ning massasi qancha?",
+      "v": [
+        "53 g",
+        "106 g",
+        "26,5 g",
+        "212 g"
+      ],
+      "t": 0,
+      "izoh": "m = 0,5 · 106 = 53 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#b07709b1"
+    },
+    {
+      "q": "53 g Na2CO3 97 g suvda eritilganda hosil bo'lgan eritmaning massasi qancha?",
+      "v": [
+        "150 g",
+        "97 g",
+        "53 g",
+        "44 g"
+      ],
+      "t": 0,
+      "izoh": "53 + 97 = 150 g eritma hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#3a0d1e84"
+    },
+    {
+      "q": "0,5 mol Na2CO3 97 g suvda eritilishidan hosil bo'lgan eritmaning foiz konsentratsiyasi qancha?",
+      "v": [
+        "35,33%",
+        "53%",
+        "23%",
+        "45,5%"
+      ],
+      "t": 0,
+      "izoh": "C% = 53/150 · 100% = 35,33%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#c55e0f45"
+    },
+    {
+      "q": "Eritmaning umumiy massasi nimadan iborat?",
+      "v": [
+        "Erigan modda va erituvchi massalari yig'indisidan",
+        "Faqat erigan modda massasidan",
+        "Faqat erituvchi massasidan",
+        "Erigan modda massasi va hajmi yig'indisidan"
+      ],
+      "t": 0,
+      "izoh": "Eritmaning umumiy massasi — erigan modda va erituvchi massalari yig'indisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m15-eritma-konsentratsiyasi#09557828"
+    }
+  ]
+}

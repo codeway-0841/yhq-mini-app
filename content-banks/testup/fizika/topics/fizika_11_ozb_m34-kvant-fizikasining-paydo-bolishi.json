@@ -1,0 +1,531 @@
+{
+  "nom": "34-mavzu. Kvant Fizikasining Paydo Bolishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kvant fizikasining paydo bo'lishiga asosiy sabab nima bo'lgan?",
+      "v": [
+        "XX asr boshida klassik nazariyalar bir qator ilmiy muammolarni hal qila olmadi",
+        "XIX asrda mexanika qonunlari noto'g'ri deb topildi",
+        "Yangi o'lchash asboblari ixtiro qilindi",
+        "Optika to'liq o'rganilib bo'lingan edi"
+      ],
+      "t": 0,
+      "izoh": "XX asr boshida klassik fizika, shu jumladan Maksvell nazariyasi, bir qator muammolarni tushuntirolmadi — shu krizis kvant fizikasining paydo bo'lishiga sabab bo'ldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#6c5ea6ff"
+    },
+    {
+      "q": "Klassik fizika tushuntirolmagan muammolardan biri qaysi?",
+      "v": [
+        "Issiqlik nurlanishining to'lqin uzunligi bo'yicha taqsimoti",
+        "Erkin tushish qonuni",
+        "Arximed qonuni",
+        "Nyutonning birinchi qonuni"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik nurlanishi energiyasining to'lqin uzunliklar bo'yicha taqsimotini klassik nazariyalar to'liq tushuntira olmadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#448292ef"
+    },
+    {
+      "q": "Vin siljish qonuni qanday ifodalanadi?",
+      "v": [
+        "λm·T = b",
+        "λm/T = b",
+        "λm + T = b",
+        "λm = b·T"
+      ],
+      "t": 0,
+      "izoh": "Vin siljish qonuni: λm·T = b, bu yerda b = 2,898·10⁻³ m·K — Vin doimiysi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#f8daea0e"
+    },
+    {
+      "q": "Vin doimiysi b ning qiymati qancha?",
+      "v": [
+        "2,898·10⁻³ m·K",
+        "6,626·10⁻³⁴ J·s",
+        "1,6·10⁻¹⁹ J",
+        "3·10⁸ m/s"
+      ],
+      "t": 0,
+      "izoh": "Vin doimiysi b = 2,898·10⁻³ m·K ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#f92c2a5e"
+    },
+    {
+      "q": "Vin qonuniga ko'ra, nurlanish maksimumiga to'g'ri keluvchi to'lqin uzunligi λm absolut temperaturaga qanday bog'liq?",
+      "v": [
+        "Teskari proporsional",
+        "To'g'ri proporsional",
+        "Kvadratik proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "λm = b/T, ya'ni λm absolut temperaturaga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#7f6b0b04"
+    },
+    {
+      "q": "Jismning temperaturasi oshganda, nurlanish energiyasi maksimumiga to'g'ri keluvchi to'lqin uzunligi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Avval ortib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "λm = b/T bo'lgani uchun temperatura oshganda maksimum qisqa to'lqinlar tomonga siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#7717d5fe"
+    },
+    {
+      "q": "Quyoshning maksimal nurlanish energiyasi (λ ≈ 470 nm) qaysi nurlarga to'g'ri keladi?",
+      "v": [
+        "Yashil nurlarga",
+        "Qizil nurlarga",
+        "Ultrabinafsha nurlarga",
+        "Infraqizil nurlarga"
+      ],
+      "t": 0,
+      "izoh": "Quyoshning maksimal nurlanish energiyasi 470 nm atrofida bo'lib, yashil nurlarga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#31b0fd3c"
+    },
+    {
+      "q": "Vin qonuniga asosan Quyoshning sirt temperaturasi taxminan qancha deb topiladi?",
+      "v": [
+        "6300 K",
+        "300 K",
+        "10000 K",
+        "1500 K"
+      ],
+      "t": 0,
+      "izoh": "λm = 470 nm ga Vin qonuni qo'llanilsa, T ≈ 6300 K hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#bfbd60eb"
+    },
+    {
+      "q": "Reley-Jins qonuni nurlanish energiyasining taqsimotini qanday to'lqinlarda to'g'ri tushuntirdi?",
+      "v": [
+        "Faqat uzun to'lqinlarda",
+        "Faqat qisqa to'lqinlarda",
+        "Barcha to'lqinlarda",
+        "Faqat ko'rinadigan to'lqinlarda"
+      ],
+      "t": 0,
+      "izoh": "Reley-Jins qonuni faqat uzun to'lqinlardagi taqsimotni tushuntirdi, qisqa to'lqinlar uchun tajribaga zid keldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#e47b753b"
+    },
+    {
+      "q": "Reley-Jins qonuni qisqa to'lqinlar uchun qanday natija berdi?",
+      "v": [
+        "Tajriba natijalariga zid keldi",
+        "Tajribani to'liq tasdiqladi",
+        "Natija bermadi",
+        "Faqat kvant nazariyasini tasdiqladi"
+      ],
+      "t": 0,
+      "izoh": "Qisqa to'lqinlar uchun Reley-Jins qonuni tajriba natijalariga va amaliyotga zid keldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#f38b48ad"
+    },
+    {
+      "q": "XX asr boshidagi krizisli ilmiy muammolarga qaysilar kiradi?",
+      "v": [
+        "Chiziqli spektrlar, fotoeffekt, yorug'lik bosimi",
+        "Mayerning issiqlik ekvivalenti",
+        "Ohm qonuni",
+        "Nyutonning tortishish qonuni"
+      ],
+      "t": 0,
+      "izoh": "Chiziqli spektrlar, fotoeffektning kashf etilishi, yorug'lik bosimi va yorug'likning elektronlarda sochilishi klassik fizika tushuntira olmagan muammolar edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#f9591f3c"
+    },
+    {
+      "q": "Kvant gipotezasini ilgari surgan olim kim?",
+      "v": [
+        "M. Plank",
+        "A. Eynshteyn",
+        "J. Maksvell",
+        "P. Lebedev"
+      ],
+      "t": 0,
+      "izoh": "Nemis olimi Maks Plank nurlanishning kvantlanishi haqidagi g'oyani ilgari surdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#5a5cb03d"
+    },
+    {
+      "q": "Plank gipotezasining mohiyati nimadan iborat?",
+      "v": [
+        "Jismning nurlanishi va yutishi uzluksiz emas, alohida porsiyalar — kvantlarda ro'y beradi",
+        "Yorug'lik faqat to'lqindan iborat",
+        "Energiya cheksiz kichik qismlarga bo'linadi",
+        "Nurlanish temperaturaga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Plank faraziga ko'ra, jismning nurlanishi va yutishi porsiya-porsiya (kvantlarda) ro'y beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#75f0b56d"
+    },
+    {
+      "q": "Kvant nima?",
+      "v": [
+        "Jismning yutish yoki nurlanish energiyasining minimal qismi",
+        "Elektronning zaryadi",
+        "Atom yadrosining zarrasi",
+        "Yorug'lik to'lqininig yarim davri"
+      ],
+      "t": 0,
+      "izoh": "Kvant — jismning yutish yoki nurlanish energiyasining minimal qismidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#ebd61d98"
+    },
+    {
+      "q": "Kvant energiyasi qanday formula bilan ifodalanadi?",
+      "v": [
+        "E = hν",
+        "E = mc²",
+        "E = mυ²/2",
+        "E = qU"
+      ],
+      "t": 0,
+      "izoh": "Plank nazariyasiga ko'ra, kvant energiyasi E = hν — yorug'lik chastotasiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#afc6d29e"
+    },
+    {
+      "q": "Plank doimiysi h ning qiymati qancha?",
+      "v": [
+        "6,626·10⁻³⁴ J·s",
+        "6,626·10⁻³⁴ J",
+        "1,6·10⁻¹⁹ J·s",
+        "4,136·10⁻¹⁵ J"
+      ],
+      "t": 0,
+      "izoh": "h = 6,626·10⁻³⁴ J·s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#17bc72b7"
+    },
+    {
+      "q": "Plank doimiysining o'lchov birligi nima?",
+      "v": [
+        "J·s",
+        "J/s",
+        "N·m",
+        "J/K"
+      ],
+      "t": 0,
+      "izoh": "Plank doimiysi energiya × vaqt birligiga ega: J·s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#284fe9c5"
+    },
+    {
+      "q": "Kvant energiyasi yorug'lik chastotasiga qanday bog'liq?",
+      "v": [
+        "To'g'ri proporsional",
+        "Teskari proporsional",
+        "Kvadratik proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "E = hν formulaga ko'ra, kvant energiyasi chastotaga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#be6630d9"
+    },
+    {
+      "q": "Yorug'lik chastotasi 2 marta ortsa, kvant energiyasi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "4 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "E = hν bo'lgani uchun chastota 2 marta ortganda energiya ham 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#23d3e5d9"
+    },
+    {
+      "q": "To'lqin uzunligi qisqargan sari kvant energiyasi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "ν = c/λ bo'lgani uchun λ qisqarishida chastota va shu bilan kvant energiyasi ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#dc435195"
+    },
+    {
+      "q": "Plank gipotezasi qaysi nazariyaga zid edi?",
+      "v": [
+        "Klassik fizika nazariyalariga",
+        "Nyuton mexanikasining birinchi qonuniga",
+        "Termodinamikaning birinchi qonuniga",
+        "Arximed qonuniga"
+      ],
+      "t": 0,
+      "izoh": "Plank klassik fizikaga zid bo'lgan yangi g'oya — nurlanishning uzluksiz emasligi haqidagi farazni ilgari surdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#3264a970"
+    },
+    {
+      "q": "Plank o'z nazariyasi yordamida qaysi muammolarni tushuntirib berdi?",
+      "v": [
+        "Nurlanish energiyasining to'lqin uzunligi bo'yicha taqsimot qonunini",
+        "Planetalar harakati qonunlarini",
+        "Gidrostatika qonunlarini",
+        "Magnit maydon qonunlarini"
+      ],
+      "t": 0,
+      "izoh": "Plank nurlanish energiyasining to'lqin uzunligi bo'yicha taqsimot qonunini yaratdi va yuqoridagi muammolarni tushuntirdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#10e6d7b5"
+    },
+    {
+      "q": "Maksvell nazariyasi qaysi hodisalarni tushuntira olmadi?",
+      "v": [
+        "Fotoeffekt, yorug'lik bosimi, chiziqli spektrlar",
+        "Induksiya tokining paydo bo'lishini",
+        "Elektromagnit to'lqinlarning tarqalishini",
+        "Yorug'likning qutblanishini"
+      ],
+      "t": 0,
+      "izoh": "Fotoeffekt, yorug'lik bosimi, chiziqli spektrlar va yorug'likning elektronlarda sochilishi Maksvell nazariyasi tushuntira olmagan hodisalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#5327c25c"
+    },
+    {
+      "q": "Termodinamik muvozanat nima degani?",
+      "v": [
+        "Temperaturalarning tenglashishi",
+        "Bosimlarning tenglashishi",
+        "Zaryadlarning tenglashishi",
+        "Tezliklarning tenglashishi"
+      ],
+      "t": 0,
+      "izoh": "Nurlanayotgan jism issiqligini atrofga berib, temperaturalarning tenglashishiga — termodinamik muvozanatga olib kelishi kerak edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#b545450b"
+    },
+    {
+      "q": "Plank nazariyasi nurlanuvchi jismlarning mavjud bo'lishi haqida nima dedi?",
+      "v": [
+        "Termodinamik muvozanat shart emasligini tushuntirdi",
+        "Muvozanat doimo zarur ekanini isbotladi",
+        "Nurlanish imkonsizligini aytdi",
+        "Faqat Quyosh uchun to'g'riligini ko'rsatdi"
+      ],
+      "t": 0,
+      "izoh": "Plank nazariyasi nurlanuvchi jismlar (Quyosh misolida) uchun termodinamik muvozanat shart emasligini tushuntirdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#a60c31a6"
+    },
+    {
+      "q": "Quyosh temperaturasi 6000 K bo'lsa ham u issiqligini to'liq berib muvozanatga kelmaysa, buni nima tushuntiradi?",
+      "v": [
+        "Nurlanishning kvant tabiati",
+        "Yorug'likning katta tezligi",
+        "Quyoshning katta massasi",
+        "Maksvell tenglamalari"
+      ],
+      "t": 0,
+      "izoh": "Bunday hodisa klassik nazariyaga zid bo'lib, uni Plankning kvant nazariyasi tushuntirdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#a693b0a2"
+    },
+    {
+      "q": "Gazlar va metall bug'larining nurlanish spektrlarining qandayligi tushuntirishni talab qilgan edi?",
+      "v": [
+        "Chiziqli bo'lishini",
+        "Uzluksiz bo'lishini",
+        "Bir xil bo'lishini",
+        "Qorong'i bo'lishini"
+      ],
+      "t": 0,
+      "izoh": "Gazlar va metall bug'lari spektrlarining chiziqli bo'lishini tushuntirish XX asr boshidagi krizisli muammolardan biri edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#0d7dd1e4"
+    },
+    {
+      "q": "Nurlanish energiyasi maksimumining siljishi qonuni kim nomi bilan ataladi?",
+      "v": [
+        "Vin",
+        "Plank",
+        "Eynshteyn",
+        "Reley"
+      ],
+      "t": 0,
+      "izoh": "λm·T = b qonun Vin siljish qonuni deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#73f474c1"
+    },
+    {
+      "q": "Har bir to'lqin uzunligiga to'g'ri kelgan nurlanish energiyasining ulushi qanday?",
+      "v": [
+        "Har xil",
+        "Bir xil",
+        "Nolga teng",
+        "Cheksiz"
+      ],
+      "t": 0,
+      "izoh": "Nurlanayotgan energiya barcha to'lqin uzunliklarda har xil bo'lib, aniq taqsimot qonuniga bo'ysunadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#79d12922"
+    },
+    {
+      "q": "Ikki jismning temperaturalari T va 2T bo'lsa, ularning nurlanish maksimumiga to'g'ri keluvchi to'lqin uzunliklari nisbatı λ1/λ2 qancha?",
+      "v": [
+        "2",
+        "1/2",
+        "4",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "λm = b/T bo'lgani uchun λ1/λ2 = T2/T1 = 2T/T = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#4c6b609a"
+    },
+    {
+      "q": "Plank doimiysi h = 6,626·10⁻³⁴ J·s bo'lsa, chastotasi 10¹⁵ Hz bo'lgan kvant energiyasining tartibi qanday?",
+      "v": [
+        "10⁻¹⁹ J",
+        "10⁻³⁴ J",
+        "10⁻¹⁵ J",
+        "10⁻⁴⁹ J"
+      ],
+      "t": 0,
+      "izoh": "E = hν = 6,626·10⁻³⁴·10¹⁵ ≈ 6,6·10⁻¹⁹ J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#0b3148f6"
+    },
+    {
+      "q": "Zamonaviy fizika nuqtayi nazaridan yorug'lik qanday tabiatga ega?",
+      "v": [
+        "Zarra-to'lqin dualizmiga ega",
+        "Faqat to'lqin",
+        "Faqat zarra",
+        "Na to'lqin, na zarra"
+      ],
+      "t": 0,
+      "izoh": "Zamonaviy fizikada yorug'lik ham to'lqin, ham zarra (kvant) xossalariga ega deb qaraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#1fc5a7b8"
+    },
+    {
+      "q": "Klassik nazariyalar hal qila olmagan muammolarni hal qilish uchun Plank qanday yondashuvni taklif qildi?",
+      "v": [
+        "Energiyaning kvantlanishi g'oyasini",
+        "Yangicha koordinata sistemasini",
+        "Nisbiy harakat nazariyasini",
+        "Molekulalar harakati nazariyasini"
+      ],
+      "t": 0,
+      "izoh": "Plank nurlanish va yutish energiyasi kvantlarda ro'y beradi degan yangi g'oyani ilgari surdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#c91fec5e"
+    },
+    {
+      "q": "Vin doimiysi b ning o'lchov birligi qaysi?",
+      "v": [
+        "m·K",
+        "J·s",
+        "W/m²",
+        "m/s"
+      ],
+      "t": 0,
+      "izoh": "b = 2,898·10⁻³ m·K — uzunlik va temperatura ko'paytmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#de4f9a37"
+    },
+    {
+      "q": "Jism temperaturasi 3000 K dan 6000 K ga oshganda nurlanish maksimumi to'lqin uzunligi qanday o'zgaradi?",
+      "v": [
+        "2 marta qisqaradi",
+        "2 marta uzayadi",
+        "4 marta qisqaradi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "λm = b/T, temperatura ikki baravar oshganda λm ikki marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi#9be722d3"
+    }
+  ]
+}

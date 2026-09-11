@@ -1,0 +1,471 @@
+{
+  "nom": "23-mavzu. Fenollar va aromatik spirtlar. Olinishi va xossalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Fenollar deb qanday birikmalarga aytiladi?",
+      "v": [
+        "Gidroksil guruhi benzol halqasidagi uglerodga bevosita birikkan birikmalarga",
+        "Gidroksil guruhi benzol halqasining yon zanjiridagi uglerodga birikkan birikmalarga",
+        "Tarkibida karbonil guruh bo'lgan aromatik birikmalarga",
+        "Tarkibida nitro guruh bo'lgan aromatik birikmalarga"
+      ],
+      "t": 0,
+      "izoh": "Gidroksil guruhi benzol halqasidagi uglerodga bevosita birikkan birikmalarni fenollar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#be4517e1"
+    },
+    {
+      "q": "Aromatik spirtlar deb qanday birikmalarga aytiladi?",
+      "v": [
+        "Gidroksil guruh benzol halqasining yon zanjiridagi uglerodga birikishidan hosil bo'lgan birikmalarga",
+        "Gidroksil guruh benzol halqasidagi uglerodga bevosita birikkan birikmalarga",
+        "Tarkibida benzol halqasi bo'lmagan spirtlarga",
+        "Tarkibida ikkita benzol halqasi bo'lgan birikmalarga"
+      ],
+      "t": 0,
+      "izoh": "Gidroksil guruh benzol halqasining yon zanjiridagi uglerodga birikishidan hosil bo'lgan birikmalarga aromatik spirtlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#b29858f8"
+    },
+    {
+      "q": "Fenollar tarkibidagi OH soniga qarab qanday turlarga ajratiladi?",
+      "v": [
+        "Bir atomli va ko'p atomli fenollarga",
+        "Faqat bir atomli fenollarga",
+        "Oddiy va murakkab fenollarga",
+        "Tabiiy va sun'iy fenollarga"
+      ],
+      "t": 0,
+      "izoh": "Tarkibidagi OH soniga qarab bir atomli va ko'p atomli fenollar bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#c9cd49d7"
+    },
+    {
+      "q": "Pirokatexinning sistematik nomi qanday?",
+      "v": [
+        "1,2-digidroksibenzol",
+        "1,2,3-trigidroksibenzol",
+        "1,3-digidroksibenzol",
+        "1,4-digidroksibenzol"
+      ],
+      "t": 0,
+      "izoh": "Pirokatexin — 1,2-digidroksibenzol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#2d78d8c8"
+    },
+    {
+      "q": "Piroogallolning sistematik nomi qanday?",
+      "v": [
+        "1,2,3-trigidroksibenzol",
+        "1,2-digidroksibenzol",
+        "1,3,5-trigidroksibenzol",
+        "1,4-digidroksibenzol"
+      ],
+      "t": 0,
+      "izoh": "Piroogallol — 1,2,3-trigidroksibenzol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#ab0e52aa"
+    },
+    {
+      "q": "Fenolning gomologlari sifatida qaysi moddalar keltirilgan?",
+      "v": [
+        "o-krezol, m-krezol va p-krezol",
+        "Benzil spirt va 2-fenil etanol",
+        "Pirokatexin va piroogallol",
+        "Toluol va ksilol"
+      ],
+      "t": 0,
+      "izoh": "Fenolning gomologi sifatida o-krezol, m-krezol va p-krezollarni keltirish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#f4d76ac9"
+    },
+    {
+      "q": "Krezollar fenoldan qanday guruh bilan farq qiladi?",
+      "v": [
+        "CH3 guruh bilan",
+        "OH guruh bilan",
+        "NO2 guruh bilan",
+        "Cl atomi bilan"
+      ],
+      "t": 0,
+      "izoh": "Krezollarda benzol halqasida OH guruh bilan birga CH3 guruh ham birikkan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#9fe2a848"
+    },
+    {
+      "q": "Aromatik spirtlarga misol qaysi juftlik?",
+      "v": [
+        "Benzil spirt va 2-fenil etanol",
+        "Fenol va o-krezol",
+        "Pirokatexin va piroogallol",
+        "Etanol va propanol"
+      ],
+      "t": 0,
+      "izoh": "OH guruhning benzol yon zanjiridagi uglerod atomiga bog'lanishi natijasida hosil bo'lgan moddalarga aromatik spirtlar deyiladi. Masalan, benzil spirt, 2-fenil etanol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#745da746"
+    },
+    {
+      "q": "Sanoatda fenol qanday usulda olinadi?",
+      "v": [
+        "Xlorbenzolni katalizator ishtirokida o'yuvchi natriy eritmasi ta'sirida gidrolizlab",
+        "Benzolni to'g'ridan-to'g'ri kislorod bilan oksidlab",
+        "Toluolni xlorlab",
+        "Benzolni gidrogenlab"
+      ],
+      "t": 0,
+      "izoh": "Sanoatda fenol xlorbenzolni katalizator ishtirokida o'yuvchi natriy eritmasi ta'sirida gidrolizlab olinadi: C6H5Cl + NaOH = C6H5OH + NaCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#170c2c8e"
+    },
+    {
+      "q": "C6H5Cl + NaOH reaksiyasida fenoldan tashqari qanday mahsulot hosil bo'ladi?",
+      "v": [
+        "NaCl",
+        "HCl",
+        "H2O",
+        "Cl2"
+      ],
+      "t": 0,
+      "izoh": "C6H5Cl + NaOH = C6H5OH + NaCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#311534a8"
+    },
+    {
+      "q": "Texnikada fenol olishning keyingi usulida xlorbenzol suv bilan gidrolizlanganda qanday yon mahsulot hosil bo'ladi?",
+      "v": [
+        "HCl",
+        "NaCl",
+        "H2",
+        "Cl2"
+      ],
+      "t": 0,
+      "izoh": "C6H5Cl + H2O = C6H5OH + HCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#89ea8a65"
+    },
+    {
+      "q": "Fenolning fizik xossalari qanday?",
+      "v": [
+        "O'tkir hidli, suvda yomon eriydigan, rangsiz kristall modda",
+        "Hidsiz, suvda yaxshi eriydigan suyuqlik",
+        "Shirin hidli, qattiq sariq modda",
+        "Bo'g'uvchi hidli gaz"
+      ],
+      "t": 0,
+      "izoh": "Fenol o'tkir hidli, suvda yomon eriydigan, rangsiz kristall modda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#e4bd51a0"
+    },
+    {
+      "q": "Fenollar qaysi erituvchilarda yaxshi eriydi?",
+      "v": [
+        "Spirtda, efirda va benzolda",
+        "Faqat suvda",
+        "Faqat benzolda",
+        "Suvda va kislotalarda"
+      ],
+      "t": 0,
+      "izoh": "Fenollar spirtda, efirda va benzolda yaxshi eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#668ee39f"
+    },
+    {
+      "q": "Fenol teriga tushsa qanday ta'sir qiladi?",
+      "v": [
+        "Kuydiradi",
+        "Sovutadi",
+        "Hech qanday ta'sir qilmaydi",
+        "Terini oqartiradi"
+      ],
+      "t": 0,
+      "izoh": "Fenollar teriga tushsa kuydiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#8c641f9b"
+    },
+    {
+      "q": "Fenol uchun sifat reaksiyasi qaysi reaktiv bilan o'tkaziladi?",
+      "v": [
+        "Temir (III) xlorid bilan",
+        "Mis (II) gidroksid bilan",
+        "Kumush oksidining ammiakli eritmasi bilan",
+        "Bromli suv bilan"
+      ],
+      "t": 0,
+      "izoh": "Fenol temir (III) xlorid bilan binafsharang moddani hosil qiladi, shuning uchun bu reaksiya fenolga sifat reaksiyasi hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#281b8da0"
+    },
+    {
+      "q": "Fenol FeCl3 bilan ta'sirlashganda qanday rangli modda hosil bo'ladi?",
+      "v": [
+        "Binafsharang",
+        "Ko'k",
+        "Qizil",
+        "Sariq"
+      ],
+      "t": 0,
+      "izoh": "Fenol temir (III) xlorid bilan binafsharang moddani hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#f791f057"
+    },
+    {
+      "q": "Fenol FeCl3 bilan reaksiyasida hosil bo'ladigan birikmaning formulasi qanday?",
+      "v": [
+        "(C6H5O)3Fe",
+        "C6H5ONa",
+        "(C6H5)3Fe",
+        "Fe(OH)3"
+      ],
+      "t": 0,
+      "izoh": "3C6H5OH + FeCl3 = (C6H5O)3Fe + 3HCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#c3941be5"
+    },
+    {
+      "q": "Fenolning FeCl3 bilan reaksiyasida fenol oldidagi koeffitsient nechaga teng?",
+      "v": [
+        "3",
+        "1",
+        "2",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "3C6H5OH + FeCl3 = (C6H5O)3Fe + 3HCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#032ea97f"
+    },
+    {
+      "q": "Fenollar benzolga qaraganda reaksiyaga nima uchun oson kirishadi?",
+      "v": [
+        "Gidroksil guruh benzol yadrosi bilan bevosita bog'langanligi uchun elektron zichligi benzol yadrosida teng taqsimlanmagan",
+        "Fenol molekulasi benzoldan kichik bo'lgani uchun",
+        "Fenol suvda eriganligi uchun",
+        "Fenol qattiq modda bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Fenolda gidroksil guruh benzol yadrosi bilan bevosita bog'langanligi uchun elektron zichligi benzoldagi kabi teng taqsimlanmaganligi sababli fenollar benzolga qaraganda reaksiyaga oson kirishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#35def251"
+    },
+    {
+      "q": "Fenol natriy metali bilan ta'sirlashganda qanday mahsulotlar hosil bo'ladi?",
+      "v": [
+        "Natriy fenolyat va vodorod",
+        "Natriy fenolyat va suv",
+        "Natriy etilat va vodorod",
+        "Benzol va vodorod"
+      ],
+      "t": 0,
+      "izoh": "2C6H5OH + 2Na = 2C6H5ONa + H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#20c64311"
+    },
+    {
+      "q": "Natriy fenolyatning formulasi qanday?",
+      "v": [
+        "C6H5ONa",
+        "C2H5ONa",
+        "C6H5OH",
+        "CH3ONa"
+      ],
+      "t": 0,
+      "izoh": "Fenollar natriy metali bilan ta'sirlashganda fenolyat (C6H5ONa) hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#c723962b"
+    },
+    {
+      "q": "Fenollarning ishqorlar bilan ham reaksiyaga kirishi nimani ko'rsatadi?",
+      "v": [
+        "Fenolning kuchsiz kislotali xususiyatga ega ekanligini",
+        "Fenolning kuchli asos ekanligini",
+        "Fenolning betaraf modda ekanligini",
+        "Fenolning oksidlovchi ekanligini"
+      ],
+      "t": 0,
+      "izoh": "Spirtlardan farqli ravishda fenollar ishqorlar bilan ham reaksiyaga kirishadi. Bu fenolning kuchsiz kislotali xususiyatga ega ekanligini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#56dc1eb7"
+    },
+    {
+      "q": "C6H5OH + NaOH reaksiyasida qanday mahsulotlar hosil bo'ladi?",
+      "v": [
+        "C6H5ONa va H2O",
+        "C6H5ONa va H2",
+        "C6H6 va Na2O",
+        "C6H5OH o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "C6H5OH + NaOH = C6H5ONa + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#a0a6153a"
+    },
+    {
+      "q": "Fenollar bromli suv bilan ta'sirlashganda qanday cho'kma hosil bo'ladi?",
+      "v": [
+        "2,4,6-tribrom fenol — oq rangli cho'kma",
+        "2,4,6-tribrom fenol — sariq cho'kma",
+        "Monobrom fenol — oq cho'kma",
+        "Dibrom fenol — ko'k cho'kma"
+      ],
+      "t": 0,
+      "izoh": "Fenollar bromli suv bilan ta'sirlashib, 2,4,6-tribrom fenol (oq rangli cho'kma) hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#77e6691d"
+    },
+    {
+      "q": "Fenol bromli suv bilan reaksiyasida bromning koeffitsienti nechaga teng?",
+      "v": [
+        "3Br2",
+        "2Br2",
+        "Br2",
+        "6Br2"
+      ],
+      "t": 0,
+      "izoh": "C6H5OH + 3Br2 = 2,4,6-tribrom fenol + 3HBr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#bd3c33c9"
+    },
+    {
+      "q": "Fenol bromli suv bilan ta'sirlashganda qanday yon mahsulot ajraladi?",
+      "v": [
+        "3HBr",
+        "3HCl",
+        "Br2",
+        "H2O"
+      ],
+      "t": 0,
+      "izoh": "C6H5OH + 3Br2 = 2,4,6-tribrom fenol + 3HBr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#af503f4e"
+    },
+    {
+      "q": "Fenollar yetarli miqdorda nitrat kislota bilan reaksiyaga kirishganda hosil bo'ladigan 2,4,6-trinitrofenolning boshqa nomi qanday?",
+      "v": [
+        "Pikrin kislotasi",
+        "Sirka kislota",
+        "Piroogallol",
+        "Nitroglitserin"
+      ],
+      "t": 0,
+      "izoh": "Fenollar yetarli miqdorda nitrat kislota bilan reaksiyaga kirishib 2,4,6-trinitrofenol (pikrin kislotasi) hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#93af6938"
+    },
+    {
+      "q": "Pikrin kislotasi molekulasida nechta nitro guruh bor?",
+      "v": [
+        "Uchta",
+        "Ikkita",
+        "Bitta",
+        "To'rtta"
+      ],
+      "t": 0,
+      "izoh": "2,4,6-trinitrofenol (pikrin kislotasi) tarkibida uchta NO2 guruhi bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#427cd1d5"
+    },
+    {
+      "q": "Fenol nitrat kislota bilan reaksiyasida suv oldidagi koeffitsient nechaga teng?",
+      "v": [
+        "3",
+        "1",
+        "2",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "C6H5OH + 3HNO3 = 2,4,6-trinitrofenol + 3H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#5fcbe970"
+    },
+    {
+      "q": "2-fenil etanol tuzilishida gidroksil guruh qayerda joylashgan?",
+      "v": [
+        "Benzol halqasining yon zanjiridagi uglerodda",
+        "Benzol halqasidagi uglerodda bevosita",
+        "Ikki benzol halqasi orasida",
+        "Halqadagi uchta uglerodda bir vaqtda"
+      ],
+      "t": 0,
+      "izoh": "2-fenil etanol — aromatik spirt, OH guruh yon zanjirdagi (CH2-CH2-OH) uglerodga birikkan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#154a1f4a"
+    },
+    {
+      "q": "1 mol fenol natriy metali bilan to'liq ta'sirlashganda necha mol vodorod ajraladi?",
+      "v": [
+        "0,5 mol",
+        "1 mol",
+        "1,5 mol",
+        "2 mol"
+      ],
+      "t": 0,
+      "izoh": "2C6H5OH + 2Na = 2C6H5ONa + H2 tenglamaga ko'ra 2 mol fenoldan 1 mol H2, ya'ni 1 mol fenoldan 0,5 mol H2 ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m23-fenollar-va-aromatik-spirtlar#6873a68d"
+    }
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "nom": "06-mavzu. Temperatura",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Temperatura deb nimaga aytiladi?",
+      "v": [
+        "Moddaning issiqlik darajasini miqdor jihatdan aniqlaydigan fizik kattalikka",
+        "Jismning massasini aniqlaydigan kattalikka",
+        "Moddaning hajmini o'lchaydigan kattalikka",
+        "Jismning tezligini bildiruvchi kattalikka"
+      ],
+      "t": 0,
+      "izoh": "Temperatura — moddaning issiqlik darajasini miqdor jihatdan aniqlaydigan fizik kattalikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#36d38dba"
+    },
+    {
+      "q": "«Temperatura» so'zi lotinchada qanday ma'noni bildiradi?",
+      "v": [
+        "«Holat» degan ma'noni",
+        "«Issiq» degan ma'noni",
+        "«Katta» degan ma'noni",
+        "«Harakat» degan ma'noni"
+      ],
+      "t": 0,
+      "izoh": "«Temperatura» lotinchada «holat» degan ma'noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#e7d91ccd"
+    },
+    {
+      "q": "Issiqlik muvozanati deb nimaga aytiladi?",
+      "v": [
+        "Moddalarda issiqlik almashinishi natijasida ularning temperaturalari tenglashishiga",
+        "Moddalarning qizdirilishiga",
+        "Jismlarning bir-biriga tegishiga",
+        "Temperaturaning oshishiga"
+      ],
+      "t": 0,
+      "izoh": "Moddalarda issiqlik almashinishi natijasida ularning temperaturalari tenglashishiga issiqlik muvozanati deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#6908867a"
+    },
+    {
+      "q": "Ikki jismning temperaturasi bir xil bo'lganda ular orasida issiqlik almashinuvi qanday bo'ladi?",
+      "v": [
+        "Issiqlik almashinuv jarayoni bo'lmaydi",
+        "Issiqlik almashinuvi tezlashadi",
+        "Issiqlik faqat bir tomonga o'tadi",
+        "Issiqlik almashinuvi sekinlashadi"
+      ],
+      "t": 0,
+      "izoh": "Ikki jismning temperaturasi bir xil bo'lganda ular orasida issiqlik almashinuv jarayoni bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#90d41e11"
+    },
+    {
+      "q": "Temperaturalari har xil bo'lgan jismlar bir-biriga tekkizilganda issiqlik qanday uzatiladi?",
+      "v": [
+        "Temperaturasi yuqori bo'lgan jism past temperaturali jismga issiqlik uzatadi",
+        "Past temperaturali jism yuqori temperaturali jismga issiqlik uzatadi",
+        "Ikkala jism ham bir-biriga issiqlik uzatmaydi",
+        "Issiqlik faqat havoga uzatiladi"
+      ],
+      "t": 0,
+      "izoh": "Temperaturasi yuqori bo'lgan jism past temperaturali jismga issiqlik uzatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#d13ed568"
+    },
+    {
+      "q": "Choynakdan piyolaga quyilgan issiq choy bilan nima sodir bo'ladi?",
+      "v": [
+        "Ma'lum vaqtdan keyin uning temperaturasi xona temperaturasi bilan tenglashadi, ya'ni muvozanat holatiga keladi",
+        "Choy temperaturasi doimiy oshib boradi",
+        "Choy temperaturasi o'zgarmay qoladi",
+        "Choy darhol muzlaydi"
+      ],
+      "t": 0,
+      "izoh": "Issiq choy ma'lum vaqtdan keyin xona temperaturasi bilan tenglashib, muvozanat holatiga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#208244a8"
+    },
+    {
+      "q": "Temperatura qanday asbob yordamida o'lchanadi?",
+      "v": [
+        "Termometr yordamida",
+        "Barometr yordamida",
+        "Dinamometr yordamida",
+        "Ampermetr yordamida"
+      ],
+      "t": 0,
+      "izoh": "Temperatura termometr yordamida o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#a27773fa"
+    },
+    {
+      "q": "Simobli termometrning ishlash printsipi qanday?",
+      "v": [
+        "Temperatura ortganda rezervuardagi simob hajmi kengayadi va simob naycha orqali yuqoriga ko'tariladi",
+        "Temperatura ortganda simob hajmi kichrayadi",
+        "Simob temperaturaga bog'liq emas",
+        "Naychadagi havo siqilishi hisobiga"
+      ],
+      "t": 0,
+      "izoh": "Temperatura ortganda rezervuardagi simob hajmi kengayadi va naycha orqali yuqoriga ko'tariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#d7e4204b"
+    },
+    {
+      "q": "Selsiy shkalasida normal atmosfera bosimida muzning erish temperaturasi qanday olingan?",
+      "v": [
+        "Nol gradus deb",
+        "100 gradus deb",
+        "50 gradus deb",
+        "-100 gradus deb"
+      ],
+      "t": 0,
+      "izoh": "Normal atmosfera bosimida muzning erish temperaturasi nol gradus deb olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#90e59c8b"
+    },
+    {
+      "q": "Selsiy shkalasida suvning qaynash temperaturasi qanday olingan va oraliq qanday bo'lingan?",
+      "v": [
+        "100 gradus deb olingan va oraliq 100 ta teng bo'lakka bo'lingan, har bir bo'lak 1 gradus",
+        "50 gradus deb olingan, oraliq 50 bo'lakka bo'lingan",
+        "1000 gradus deb olingan, oraliq 10 bo'lakka bo'lingan",
+        "273 gradus deb olingan"
+      ],
+      "t": 0,
+      "izoh": "Suvning qaynash temperaturasi 100 gradus deb olingan; oraliq 100 ta teng bo'lakka bo'lingan va har bir bo'lak 1 gradus.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#43b5a02f"
+    },
+    {
+      "q": "Selsiy shkalasi kim tomonidan va qachon tavsiya etilgan?",
+      "v": [
+        "Shved olimi Anders Selsiy tomonidan 1742-yilda",
+        "Uilyam Tomson tomonidan 1848-yilda",
+        "Robert Broun tomonidan 1827-yilda",
+        "Lyudvig Bolsman tomonidan 1905-yilda"
+      ],
+      "t": 0,
+      "izoh": "Selsiy shkalasi 1742-yilda shved olimi Anders Selsiy tomonidan tavsiya etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#0ff30a41"
+    },
+    {
+      "q": "«Gradus» so'zi lotinchada qanday ma'noni bildiradi?",
+      "v": [
+        "«Qadam» degan ma'noni",
+        "«Issiqlik» degan ma'noni",
+        "«O'lchov» degan ma'noni",
+        "«Nuqta» degan ma'noni"
+      ],
+      "t": 0,
+      "izoh": "«Gradus» lotinchada «qadam» degan ma'noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#8ed211d0"
+    },
+    {
+      "q": "Odam temperaturasini o'lchaydigan tibbiyot termometri qanday oralikda darajalangan?",
+      "v": [
+        "35 °C dan 42 °C gacha",
+        "0 °C dan 100 °C gacha",
+        "20 °C dan 50 °C gacha",
+        "-10 °C dan 110 °C gacha"
+      ],
+      "t": 0,
+      "izoh": "Tibbiyot termometri 35 °C dan 42 °C gacha darajalangan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#8d292dc7"
+    },
+    {
+      "q": "Havo temperaturasini o'lchaydigan termometr, odatda, qanday oralikda darajalangan?",
+      "v": [
+        "20 °C dan 50 °C gacha",
+        "0 °C dan 100 °C gacha",
+        "35 °C dan 42 °C gacha",
+        "-273 °C dan 0 °C gacha"
+      ],
+      "t": 0,
+      "izoh": "Havo temperaturasini o'lchaydigan termometr, odatda, 20 °C dan 50 °C gacha darajalangan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#3054212a"
+    },
+    {
+      "q": "Absolyut temperatura qanday harf bilan belgilanadi va uning XBS dagi birligi nima?",
+      "v": [
+        "T harfi bilan, kelvin (K)",
+        "t harfi bilan, gradus (°C)",
+        "ν harfi bilan, mol",
+        "p harfi bilan, paskal"
+      ],
+      "t": 0,
+      "izoh": "Absolyut temperatura T harfi bilan belgilanadi va XBS da birligi kelvin (K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#35772b57"
+    },
+    {
+      "q": "Temperaturaning absolyut shkalasini kim va qachon taklif qilgan?",
+      "v": [
+        "Ingliz olimi Uilyam Tomson (Kelvin) 1848-yilda",
+        "Anders Selsiy 1742-yilda",
+        "Amedeo Avogadro 1811-yilda",
+        "Jan Perren 1926-yilda"
+      ],
+      "t": 0,
+      "izoh": "Absolyut shkalani ingliz olimi Uilyam Tomson (Kelvin) 1848-yilda taklif qilgan; shkala Kelvin shkalasi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#36a35f71"
+    },
+    {
+      "q": "Selsiy shkalasidan Kelvin shkalasiga o'tish formulasi qanday?",
+      "v": [
+        "T = t + 273",
+        "T = t - 273",
+        "T = t + 100",
+        "T = 273 - t"
+      ],
+      "t": 0,
+      "izoh": "T = t + 273 (273,15 ni yaxlitlab 273 deb olingan).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m06-temperatura#605e0e37"
+    },
+    {
+      "q": "Absolyut nol temperatura Selsiy shkalasida qanchaga teng?",
+      "v": [
+        "-273,15 °C",
+        "-100 °C",
+        "0 °C",
+        "-373,15 °C"
+      ],
+      "t": 0,
+      "izoh": "Selsiy shkalasida o'lchanganda absolyut nol temperatura -273,15 °C ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#fabdc411"
+    },
+    {
+      "q": "t = 0 °C da absolyut temperatura qancha bo'ladi?",
+      "v": [
+        "T = 273 K",
+        "T = 0 K",
+        "T = 100 K",
+        "T = 373 K"
+      ],
+      "t": 0,
+      "izoh": "T = t + 273 = 0 + 273 = 273 K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m06-temperatura#ab80a4dd"
+    },
+    {
+      "q": "100 °C temperatura Kelvin shkalasida qanchaga teng?",
+      "v": [
+        "T = 373 K",
+        "T = 273 K",
+        "T = 173 K",
+        "T = 473 K"
+      ],
+      "t": 0,
+      "izoh": "T = 100 + 273 = 373 K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m06-temperatura#52428f03"
+    },
+    {
+      "q": "-73 °C temperatura Kelvin shkalasida qancha?",
+      "v": [
+        "T = 200 K",
+        "T = 346 K",
+        "T = 73 K",
+        "T = 273 K"
+      ],
+      "t": 0,
+      "izoh": "T = -73 + 273 = 200 K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m06-temperatura#69ea7366"
+    },
+    {
+      "q": "Absolyut nol temperatura haqida qanday tasavvur to'g'ri?",
+      "v": [
+        "Mumkin bo'lgan eng past temperatura; bunda modda molekulalarining issiqlik harakati to'xtaydi",
+        "Suvning qaynash temperaturasi",
+        "Xonadagi odatiy temperatura",
+        "Muzning erish temperaturasi"
+      ],
+      "t": 0,
+      "izoh": "Absolyut nol temperatura mumkin bo'lgan eng past temperatura bo'lib, bunda modda molekulalarining issiqlik harakati to'xtaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#55fdf13d"
+    },
+    {
+      "q": "Absolyut temperaturaning o'zgarishi ΔT bilan Selsiy shkalasi bo'yicha o'zgarish Δt orasida qanday munosabat bor?",
+      "v": [
+        "ΔT = Δt",
+        "ΔT = Δt + 273",
+        "ΔT = 273·Δt",
+        "ΔT = Δt/273"
+      ],
+      "t": 0,
+      "izoh": "Kelvin shkalasida temperatura birligining qadamlari qiymati Selsiy shkalasidagi qiymatga teng: ΔT = Δt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m06-temperatura#86a57a93"
+    },
+    {
+      "q": "Molekulalarning tartibsiz harakati qanday ataladi?",
+      "v": [
+        "Issiqlik harakati",
+        "Broun harakati",
+        "Aylanma harakat",
+        "Tartibli harakat"
+      ],
+      "t": 0,
+      "izoh": "Molekulalarning tartibsiz harakati issiqlik harakati deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#5c63fde2"
+    },
+    {
+      "q": "Temperaturaning molekulyar-kinetik talqinida temperatura nima?",
+      "v": [
+        "Gaz molekulalari ilgarilanma harakati o'rtacha kinetik energiyasining o'lchovi",
+        "Molekulalarning massasi o'lchovi",
+        "Gaz hajmining o'lchovi",
+        "Molekulalar sonining o'lchovi"
+      ],
+      "t": 0,
+      "izoh": "Temperatura — gaz molekulalari ilgarilanma harakati o'rtacha kinetik energiyasining o'lchovidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#d3877181"
+    },
+    {
+      "q": "Molekulalarning o'rtacha kinetik energiyasi bilan temperatura orasidagi bog'lanish qanday ifodalanadi?",
+      "v": [
+        "Ē_k = (3/2)·k·T",
+        "Ē_k = k·T",
+        "Ē_k = (2/3)·k·T",
+        "Ē_k = 3·k·T"
+      ],
+      "t": 0,
+      "izoh": "Ē_k = (3/2)·k·T.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m06-temperatura#384d770a"
+    },
+    {
+      "q": "Bolsman doimiysi nimani ifodalaydi va son qiymati qancha?",
+      "v": [
+        "Energiya birligi bilan temperatura birligi orasidagi munosabatni; k = 1,38·10⁻²³ J/K",
+        "Bosim bilan hajm orasidagi munosabatni; k = 6,02·10²³ mol⁻¹",
+        "Massa bilan energiya orasidagi munosabatni; k = 1,66·10⁻²⁷ kg",
+        "Zaryad bilan tok orasidagi munosabatni; k = 1,6·10⁻¹⁹ K"
+      ],
+      "t": 0,
+      "izoh": "Bolsman doimiysi — energiya birligi bilan temperatura birligi orasidagi munosabatni ifodalovchi kattalik; k = 1,38·10⁻²³ J/K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#167f0679"
+    },
+    {
+      "q": "Bolsman doimiysi kim sharafiga atalgan?",
+      "v": [
+        "Avstriyalik fizik Lyudvig Bolsman sharafiga",
+        "Ingliz olimi Uilyam Tomson sharafiga",
+        "Italyan olimi Amedeo Avogadro sharafiga",
+        "Shved olimi Anders Selsiy sharafiga"
+      ],
+      "t": 0,
+      "izoh": "k koeffitsiyent gazlar MKN asoschilaridan biri bo'lgan avstriyalik fizik Lyudvig Bolsman sharafiga Bolsman doimiysi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#b2693fa5"
+    },
+    {
+      "q": "Ideal gaz bosimining temperaturaga bog'liqlik ifodasi qanday?",
+      "v": [
+        "p = n·k·T",
+        "p = n·T/k",
+        "p = k·T/n",
+        "p = n/(k·T)"
+      ],
+      "t": 0,
+      "izoh": "p = (2/3)n·(3/2)kT = n·k·T.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m06-temperatura#4f309682"
+    },
+    {
+      "q": "Ideal gazning bosimi nimaga to'g'ri proporsional?",
+      "v": [
+        "Gaz molekularining konsentratsiyasi va uning temperaturasiga",
+        "Faqat idishning shakliga",
+        "Faqat molekulalarning massasiga",
+        "Devorning qalinligiga"
+      ],
+      "t": 0,
+      "izoh": "Ideal gazning bosimi gaz molekularining konsentratsiyasi va uning temperaturasiga to'g'ri proporsionaldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#d260631b"
+    },
+    {
+      "q": "Yopiq idishdagi gaz 27 °C dan 627 °C gacha qizdirildi. Gaz bosimi qanday o'zgaradi?",
+      "v": [
+        "3 marta oshadi",
+        "3 marta kamayadi",
+        "O'zgarmaydi",
+        "2 marta oshadi"
+      ],
+      "t": 0,
+      "izoh": "T₁ = 300 K, T₂ = 900 K; p ~ T bo'lgani uchun bosim 900/300 = 3 marta oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m06-temperatura#a86325a0"
+    },
+    {
+      "q": "Hajmi 4 l idishdagi gaz bosimi 120 kPa bo'lsa, gaz molekularining ilgarilanma harakatining to'la kinetik energiyasi qancha?",
+      "v": [
+        "E_to'la = 720 J",
+        "E_to'la = 480 J",
+        "E_to'la = 120 J",
+        "E_to'la = 1440 J"
+      ],
+      "t": 0,
+      "izoh": "E_to'la = (3/2)·p·V = (3/2)·12·10⁴·4·10⁻³ = 720 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m06-temperatura#f45919c2"
+    },
+    {
+      "q": "Idishdagi gaz molekulalarining konsentratsiyasi 3·10²⁷ m⁻³, temperatura 60 °C bo'lganda bosimni topishda avval nima qilish kerak?",
+      "v": [
+        "Temperaturani kelvinga o'tkazib (T = 333 K), p = n·k·T formulani qo'llash kerak",
+        "Temperaturani Selsiyda qoldirib, p = n·k·t ni hisoblash kerak",
+        "Konsentratsiyani mol ga o'tkazish kerak",
+        "Bosimni hajmga ko'paytirish kerak"
+      ],
+      "t": 0,
+      "izoh": "p = nkT formulasida temperatura kelvinda bo'lishi kerak: T = 60 + 273 = 333 K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m06-temperatura#8cda1215"
+    },
+    {
+      "q": "Makroskopik nuqtayi nazardan temperatura nima?",
+      "v": [
+        "Modda issiqlik holatining miqdoriy o'lchovi",
+        "Moddaning massasi o'lchovi",
+        "Moddaning zichligi o'lchovi",
+        "Moddaning hajmi o'lchovi"
+      ],
+      "t": 0,
+      "izoh": "Makroskopik nuqtayi nazardan temperatura modda issiqlik holatining miqdoriy o'lchovidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#5ee97f91"
+    },
+    {
+      "q": "300 K temperatura Selsiy shkalasida qanchaga teng?",
+      "v": [
+        "t = 27 °C",
+        "t = 300 °C",
+        "t = -27 °C",
+        "t = 573 °C"
+      ],
+      "t": 0,
+      "izoh": "t = T - 273 = 300 - 273 = 27 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m06-temperatura#fe23ef3c"
+    },
+    {
+      "q": "Odam tanasining temperaturasini o'lchashda tana bilan termometr ichidagi simob orasida nima qaror topguncha ma'lum vaqt o'tadi?",
+      "v": [
+        "Issiqlik muvozanati",
+        "Elektr muvozanati",
+        "Mexanik muvozanat",
+        "Bosim muvozanati"
+      ],
+      "t": 0,
+      "izoh": "Tana bilan termometr ichidagi simob orasida issiqlik muvozanati qaror topguncha ma'lum vaqt o'tadi; keyin termometr ko'rsatishi o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m06-temperatura#88efbeb1"
+    }
+  ]
+}

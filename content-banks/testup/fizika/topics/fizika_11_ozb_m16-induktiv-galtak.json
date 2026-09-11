@@ -1,0 +1,456 @@
+{
+  "nom": "16-mavzu. Induktiv Galtak",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Lampochka va induktiv g'altak ketma-ket o'zgarmas tok manbayiga, so'ngra shu effektiv kuchlanishga teng o'zgaruvchan tok manbayiga ulansa, qaysi holda lampochka xiralashib yonadi?",
+      "v": [
+        "O'zgaruvchan tok manbayiga ulanganda",
+        "O'zgarmas tok manbayiga ulanganda",
+        "Ikkala holda bir xil yonadi",
+        "Ikkala holda ham yonmaydi"
+      ],
+      "t": 0,
+      "izoh": "O'zgaruvchan tok zanjiriga ulangan lampochkaning ravshanligi kamroq bo'ladi, chunki g'altakning induktiv qarshiligi paydo bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#9512ccd5"
+    },
+    {
+      "q": "G'altakdan o'zgaruvchan tok o'tganda unda nima hosil bo'ladi?",
+      "v": [
+        "O'zinduksiya elektr yurituvchi kuchi (EYuK)",
+        "Faqat issiqlik",
+        "Doimiy magnit maydon",
+        "Elektr zaryadi"
+      ],
+      "t": 0,
+      "izoh": "G'altakdan o'tuvchi tok g'altakning induktivligi tufayli unda o'zinduksiya elektr yurituvchi kuchini (EYuK) hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#085b95c1"
+    },
+    {
+      "q": "O'zinduksiya EYuK ning oniy qiymati qanday ifodalanadi?",
+      "v": [
+        "E = −L·i'",
+        "E = L·i",
+        "E = −L/i",
+        "E = L·i²"
+      ],
+      "t": 0,
+      "izoh": "O'zinduksiya EYuK ning oniy qiymati E = −L·i' bilan aniqlanadi (i' — tokning vaqt bo'yicha hosilasi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#19a19c15"
+    },
+    {
+      "q": "G'altakdagi kuchlanishning amplituda qiymati qanday aniqlanadi?",
+      "v": [
+        "Um = Im·ωL",
+        "Um = Im/(ωL)",
+        "Um = Im·L/ω",
+        "Um = Im·ω/L"
+      ],
+      "t": 0,
+      "izoh": "G'altakdagi kuchlanishning amplituda qiymati Um = Im·ωL ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#43241895"
+    },
+    {
+      "q": "Faqat induktiv g'altak ulangan zanjirda kuchlanish tebranishlari tok kuchi tebranishlaridan faza bo'yicha qanday farq qiladi?",
+      "v": [
+        "π/2 ga oldinga boradi",
+        "π/2 ga orqada qoladi",
+        "π ga oldinga boradi",
+        "Bir xil fazada bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "G'altak uchlariga qo'yilgan kuchlanish tebranishlari tok kuchi tebranishlaridan faza bo'yicha π/2 ga oldinga boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#87627a31"
+    },
+    {
+      "q": "G'altak ulangan zanjirda kuchlanishning tenglamasi qanday?",
+      "v": [
+        "U = Um·cos(ωt + π/2)",
+        "U = Um·cosωt",
+        "U = Um·cos(ωt − π/2)",
+        "U = Um·cos(ωt + π)"
+      ],
+      "t": 0,
+      "izoh": "G'altak uchlariga qo'yilgan kuchlanish tenglamasi U = Um·cos(ωt + π/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#1bdcd4e0"
+    },
+    {
+      "q": "Induktiv qarshilik qanday formula bilan aniqlanadi?",
+      "v": [
+        "XL = ωL",
+        "XL = 1/(ωL)",
+        "XL = L/ω",
+        "XL = ω/L"
+      ],
+      "t": 0,
+      "izoh": "G'altakning qarshiligi XL = Um/Im = ωL.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#e4bf50dd"
+    },
+    {
+      "q": "Induktiv qarshilik qanday birlikda o'lchanadi?",
+      "v": [
+        "Om (Ω) da",
+        "Genrida",
+        "Faradda",
+        "Amperda"
+      ],
+      "t": 0,
+      "izoh": "Induktiv qarshilik ham Ω (Om) larda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#3c8b8bbe"
+    },
+    {
+      "q": "Induktiv qarshilik nega reaktiv qarshilik deb ataladi?",
+      "v": [
+        "Chunki Om qonunida aktiv qarshilik o'rnida XL kattalik turadi, lekin unda energiya issiqlikka aylanmaydi",
+        "Chunki u faqat o'zgarmas tokda namoyon bo'ladi",
+        "Chunki u har doim nolga teng",
+        "Chunki u chastotaga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Im = Um/XL ifoda zanjirning bir qismi uchun Om qonuni bo'lib, aktiv qarshilik o'rnida XL kattalik turibdi, shuning uchun uni induktiv (reaktiv) qarshilik deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#93a0450a"
+    },
+    {
+      "q": "G'altakdan o'tuvchi tok kuchi qanday kattaliklarga bog'liq?",
+      "v": [
+        "G'altakning induktivligi va o'zgaruvchan tok chastotasiga",
+        "Faqat kuchlanishga",
+        "Faqat sim qalinligiga",
+        "Faqat o'ramlar rangiga"
+      ],
+      "t": 0,
+      "izoh": "G'altakdan o'tuvchi tok kuchi g'altakning induktivligiga va o'zgaruvchan tok chastotasiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#894e6822"
+    },
+    {
+      "q": "G'altak uchun Om qonuni qanday ko'rinishda yoziladi?",
+      "v": [
+        "Im = Um/XL",
+        "Im = Um·XL",
+        "Im = XL/Um",
+        "Im = Um·L"
+      ],
+      "t": 0,
+      "izoh": "Im = Um/XL — bu ifoda zanjirning bir qismi uchun Om qonuni hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#3472d587"
+    },
+    {
+      "q": "G'altakning induktivligi 2 marta ortirilsa, induktiv qarshilik qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "XL = ωL bo'lgani uchun L 2 marta ortsa, XL 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#38a47b26"
+    },
+    {
+      "q": "O'zgaruvchan tok chastotasi 2 marta ortirilsa, induktiv qarshilik qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "XL = ωL = 2πvL bo'lgani uchun chastota 2 marta ortsa, XL 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#aff413ee"
+    },
+    {
+      "q": "G'altakning induktivligi 2 marta ortirilsa, undan o'tuvchi tok kuchi qanday o'zgaradi (kuchlanish o'zgarmasa)?",
+      "v": [
+        "2 marta kamayadi",
+        "2 marta ortadi",
+        "4 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Im = Um/(ωL) bo'lgani uchun L 2 marta ortsa, tok kuchi 2 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#32c32f13"
+    },
+    {
+      "q": "G'altak ulangan zanjirning vektor diagrammasida kuchlanish vektori tok kuchi vektoriga nisbatan qanday joylashadi?",
+      "v": [
+        "π/2 burchakka oldinga siljigan",
+        "π/2 burchakka orqada",
+        "Parallel",
+        "Qarama-qarshi yo'nalgan"
+      ],
+      "t": 0,
+      "izoh": "Vektor diagrammada kuchlanish vektori tok kuchi vektoridan π/2 ga oldinga bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#ac168326"
+    },
+    {
+      "q": "O'zgarmas tokda ideal g'altakning qarshiligi qanday?",
+      "v": [
+        "Nolga teng (ω = 0 bo'lganda XL = 0)",
+        "Cheksiz katta",
+        "ωL ga teng",
+        "1/(ωL) ga teng"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas tokda chastota nolga teng bo'lgani uchun XL = ωL = 0 — ideal g'altak o'zgarmas tokka qarshilik ko'rsatmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#ccf1f8b8"
+    },
+    {
+      "q": "Juda yuqori chastotalarda g'altakning induktiv qarshiligi qanday bo'ladi?",
+      "v": [
+        "Juda katta bo'ladi (tok deyarli o'tmaydi)",
+        "Nolga yaqinlashadi",
+        "O'zgarmas qoladi",
+        "Salbiy bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "XL = ωL bo'lgani uchun chastota juda yuqori bo'lganda induktiv qarshilik juda katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#80baf3d3"
+    },
+    {
+      "q": "Induktivligi 0,1 Gn bo'lgan g'altakning 50 Gz chastotadagi induktiv qarshiligi taxminan qancha?",
+      "v": [
+        "31,4 Ω",
+        "15,7 Ω",
+        "62,8 Ω",
+        "5 Ω"
+      ],
+      "t": 0,
+      "izoh": "XL = 2πvL = 2·3,14·50·0,1 = 31,4 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#76ccc2f8"
+    },
+    {
+      "q": "G'altakdagi kuchlanish va o'zinduksiya EYuK orasidagi munosabat qanday (R = 0)?",
+      "v": [
+        "u = −E",
+        "u = E",
+        "u = 2E",
+        "u = E/2"
+      ],
+      "t": 0,
+      "izoh": "R = 0 ekanligi hisobga olinsa, 0 = E + u yoki u = −E bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#691fa803"
+    },
+    {
+      "q": "G'altakda tok kuchi maksimal bo'lgan momentda kuchlanish qanday qiymatga ega?",
+      "v": [
+        "Nolga teng",
+        "Maksimal",
+        "O'rtacha",
+        "Salbiy maksimal"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish tokdan π/2 ga oldinga bo'lgani uchun tok maksimal bo'lgan momentda kuchlanish nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#94964375"
+    },
+    {
+      "q": "G'altak va kondensatorning o'zgaruvchan tok zanjiridagi faza xususiyatlari qanday farq qiladi?",
+      "v": [
+        "G'altakda kuchlanish tokdan π/2 oldinga, kondensatorda tok kuchlanishdan π/2 oldinga boradi",
+        "Ikkalasida ham kuchlanish tokdan oldinga boradi",
+        "Ikkalasida ham tok kuchlanishdan oldinga boradi",
+        "Farqi yo'q"
+      ],
+      "t": 0,
+      "izoh": "G'altakda kuchlanish tok kuchidan π/2 ga oldinga, kondensatorda esa tok kuchi kuchlanishdan π/2 ga oldinga boradi — xususiyatlar qarama-qarshi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#f3cc656b"
+    },
+    {
+      "q": "Induktiv qarshilik chastota ortganda oshib boradi. Buning fizik sababi nima?",
+      "v": [
+        "Chastota ortganda tok tezroq o'zgaradi va o'zinduksiya EYuK kuchayadi",
+        "Chastota ortganda g'altak qiziydi",
+        "Chastota ortganda sig'im oshadi",
+        "Chastota ortganda sim qarshiligi kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Chastota ortib, tok tezroq o'zgarganda o'zinduksiya EYuK (E = −L·i') kuchayadi, shu bois induktiv qarshilik oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#680bb1af"
+    },
+    {
+      "q": "G'altakning induktivligi birligi qanday?",
+      "v": [
+        "Genri (Gn)",
+        "Farad (F)",
+        "Om (Ω)",
+        "Veber (Vb)"
+      ],
+      "t": 0,
+      "izoh": "G'altakning induktivligi Genri (Gn) larda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#30a800a2"
+    },
+    {
+      "q": "Tok i = Im·cosωt qonuni bo'yicha o'zgarsa, o'zinduksiya EYuK ning oniy qiymati qanday bo'ladi?",
+      "v": [
+        "E = −Im·ωL·sinωt",
+        "E = Im·ωL·cosωt",
+        "E = −Im·L·cosωt",
+        "E = Im·ωL·sin²ωt"
+      ],
+      "t": 0,
+      "izoh": "Kitobdagi (3–15) formulaga ko'ra: i = Im·cosωt bo'lganda o'zinduksiya EYuK ning oniy qiymati E = −Im·ωL·sinωt ga teng. Shu bois kuchlanish u = −E = Im·ωL·sinωt = Im·ωL·cos(ωt + π/2) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#aea31452"
+    },
+    {
+      "q": "Induktivligi 0,05 Gn g'altak 100 Gz chastotali zanjirga ulangan. Induktiv qarshilik qancha?",
+      "v": [
+        "31,4 Ω",
+        "62,8 Ω",
+        "15,7 Ω",
+        "10 Ω"
+      ],
+      "t": 0,
+      "izoh": "XL = 2πvL = 2·3,14·100·0,05 = 31,4 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#70fb110a"
+    },
+    {
+      "q": "G'altakning o'zgaruvchan tok zanjiridagi asosiy vazifasi nima?",
+      "v": [
+        "Zanjirga induktiv (reaktiv) qarshilik kiritish va faza siljishi hosil qilish",
+        "Energiyani issiqlikka aylantirish",
+        "Tokni to'g'rilash",
+        "Sig'imni oshirish"
+      ],
+      "t": 0,
+      "izoh": "G'altak o'zgaruvchan tok zanjirida induktiv qarshilik kiritadi va kuchlanishni tok kuchidan π/2 fazaga siljitadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#064d7501"
+    },
+    {
+      "q": "Lampochka va g'altak o'zgaruvchan tok zanjirida xira yonishining sababi nima?",
+      "v": [
+        "G'altakning induktiv qarshiligi zanjirdagi tokni kamaytiradi",
+        "G'altak energiyani issiqlikka aylantiradi",
+        "G'altak kuchlanishni oshiradi",
+        "Lampochka qarshiligi ortadi"
+      ],
+      "t": 0,
+      "izoh": "O'zgaruvchan tokda g'altakda induktiv qarshilik paydo bo'lib, zanjirdagi tok kuchi kamayadi, shu bois lampochka xiraroq yonadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#16f3de31"
+    },
+    {
+      "q": "Chastota 4 marta ortirilsa, induktiv qarshilik qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "16 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "XL = ωL = 2πvL bo'lgani uchun chastota 4 marta ortsa, XL 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#d0876428"
+    },
+    {
+      "q": "Sig'im qarshilik va induktiv qarshilikning chastotaga bog'liqligi qanday farq qiladi?",
+      "v": [
+        "Sig'im qarshilik chastota ortganda kamayadi, induktiv qarshilik ortadi",
+        "Ikkalasi ham chastota ortganda ortadi",
+        "Ikkalasi ham chastota ortganda kamayadi",
+        "Ikkalasi ham chastotaga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Xc = 1/(ωC) chastota ortganda kamayadi, XL = ωL esa chastota ortganda ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#78b8a757"
+    },
+    {
+      "q": "Zanjirdagi EYuK, g'altak uchlaridagi kuchlanish va aktiv qarshilikdagi potensial tushuvi qanday munosabat orqali bog'langan?",
+      "v": [
+        "iR = E + u",
+        "iR = E − u",
+        "iR = E·u",
+        "iR = u/E"
+      ],
+      "t": 0,
+      "izoh": "Zanjirdagi EYuK, g'altak uchlaridagi kuchlanish va aktiv qarshilikdagi potensial tushuvi iR = E + u munosabat orqali bog'langan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m16-induktiv-galtak#e5c6b0ef"
+    }
+  ]
+}

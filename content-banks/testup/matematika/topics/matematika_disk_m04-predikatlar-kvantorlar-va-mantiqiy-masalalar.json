@@ -1,0 +1,1609 @@
+{
+  "nom": "Predikatlar, kvantorlar va mantiqiy masalalar",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "X = {1, 2, 3, 4, 5, 6, 7, 8} to'plamda P(x): «x soni 3 ga qoldiqsiz bo'linadi» predikati berilgan. Uning rostlik to'plamini toping.",
+      "v": [
+        "{3, 6}",
+        "{3, 6, 9}",
+        "{1, 3, 6}",
+        "{6}"
+      ],
+      "t": 0,
+      "izoh": "Rostlik to'plami — predikatni rost qiladigan elementlar to'plami. X ning elementlarini birma-bir tekshiramiz: 3 ga bo'linadiganlari 3 va 6. 9 soni X ga kirmaydi, 1 esa 3 ga bo'linmaydi. Javob: {3, 6}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "predikat-rostlik-toplami",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#fc4dedd4"
+    },
+    {
+      "q": "Butun sonlar to'plamida R(x): «|x| ≤ 3» predikati berilgan. Bu predikatning rostlik to'plamini ko'rsating.",
+      "v": [
+        "{−2, −1, 0, 1, 2}",
+        "{−3, −2, −1, 0, 1, 2, 3}",
+        "{0, 1, 2, 3}",
+        "{1, 2, 3}"
+      ],
+      "t": 1,
+      "izoh": "|x| ≤ 3 tengsizligi −3 ≤ x ≤ 3 ni bildiradi. Butun sonlardan bu oraliqqa −3, −2, −1, 0, 1, 2 va 3 tushadi. Chegaralar ham kiradi, chunki tengsizlik qat'iy emas. Javob: {−3, −2, −1, 0, 1, 2, 3}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "predikat-rostlik-toplami",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#0b2ee322"
+    },
+    {
+      "q": "Sinfdagi o'quvchilar to'plami M = {Aziza, Bekzod, Dilnoza, Elyor, Farruh} bo'lib, T(x): «x matematika olimpiadasida qatnashgan» predikati berilgan. Olimpiadada Aziza, Dilnoza va Farruh qatnashgan bo'lsa, T(x) ning rostlik to'plamini toping.",
+      "v": [
+        "{Bekzod, Elyor}",
+        "{Aziza, Bekzod, Dilnoza}",
+        "{Aziza, Dilnoza, Farruh}",
+        "M to'plamning o'zi"
+      ],
+      "t": 2,
+      "izoh": "Rostlik to'plamiga predikatni rost qiladigan elementlar kiradi. Shart bo'yicha qatnashganlar — Aziza, Dilnoza va Farruh. Bekzod bilan Elyor uchun predikat yolg'on, demak ular rostlik to'plamiga kirmaydi. Javob: {Aziza, Dilnoza, Farruh}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "predikat-rostlik-toplami",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#66bd0076"
+    },
+    {
+      "q": "Natural sonlar to'plamida S(x): «3x − 7 < 8» predikati berilgan. Uning rostlik to'plamini aniqlang.",
+      "v": [
+        "{1, 2, 3, 4, 5}",
+        "{0, 1, 2, 3, 4}",
+        "{5, 6, 7, 8}",
+        "{1, 2, 3, 4}"
+      ],
+      "t": 3,
+      "izoh": "Tengsizlikni yechamiz: 3x − 7 < 8 dan 3x < 15, demak x < 5. Natural sonlardan 5 dan kichiklari 1, 2, 3 va 4. Nol natural son emas, 5 esa qat'iy tengsizlikni qanoatlantirmaydi. Javob: {1, 2, 3, 4}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "predikat-rostlik-toplami",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#98fcc3ed"
+    },
+    {
+      "q": "Anvar do'konda narxi 5000, 7500, 12000, 15000 va 20000 so'm bo'lgan beshta daftarni ko'rib chiqdi. N(x): «x so'mlik daftar narxi 10000 so'mdan yuqori» predikatining rostlik to'plamini toping.",
+      "v": [
+        "{12000, 15000, 20000}",
+        "{15000, 20000}",
+        "{7500, 12000, 15000, 20000}",
+        "{5000, 7500}"
+      ],
+      "t": 0,
+      "izoh": "Har bir narxni 10000 bilan solishtiramiz: 5000 va 7500 kichik, 12000, 15000 hamda 20000 esa katta. Demak predikat faqat oxirgi uchta narxda rost bo'ladi. Javob: {12000, 15000, 20000}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "predikat-rostlik-toplami",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#fd1e2c08"
+    },
+    {
+      "q": "Quyidagi to'rtta yozuvdan qaysi biri mulohaza emas, balki predikat, ya'ni rostligi o'zgaruvchining qiymatiga bog'liq bo'ladi?",
+      "v": [
+        "«7 soni tub son»",
+        "«12 soni 5 ga bo'linadi»",
+        "«x + 4 = 9»",
+        "«Toshkent — O'zbekiston poytaxti»"
+      ],
+      "t": 2,
+      "izoh": "Mulohaza — rostligi darhol aniqlanadigan gap. «7 soni tub son» rost, «12 soni 5 ga bo'linadi» yolg'on, poytaxt haqidagi gap rost — uchalasi ham mulohaza. «x + 4 = 9» yozuvining rostligi esa x ga bog'liq: x = 5 da rost, boshqa qiymatlarda yolg'on. Javob: «x + 4 = 9».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "predikat-va-mulohaza-farqi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#8441c364"
+    },
+    {
+      "q": "P(x): «x² − 5x + 6 = 0» predikati berilgan. O'zgaruvchi o'rniga x = 2 qiymat qo'yilganda predikat mulohazaga aylanadi. Hosil bo'lgan mulohaza qanday bo'ladi?",
+      "v": [
+        "Yolg'on mulohaza",
+        "Rost mulohaza",
+        "U predikatligicha qoladi",
+        "Rostligini aniqlab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Qiymatni qo'yamiz: 2² − 5·2 + 6 = 4 − 10 + 6 = 0. Tenglik bajarildi, demak yozuv rost mulohazaga aylandi. O'zgaruvchi aniq son bilan almashtirilgani uchun u endi predikat emas. Javob: rost mulohaza.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "predikat-va-mulohaza-farqi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#9a294ee2"
+    },
+    {
+      "q": "Dilshod «x shahri Farg'ona vodiysida joylashgan» yozuvini mulohazaga aylantirmoqchi. Buning uchun u nima qilishi kerak?",
+      "v": [
+        "yozuvni inkor qilishi kerak",
+        "yozuvdagi «joylashgan» so'zini olib tashlashi kerak",
+        "bu yozuv allaqachon mulohaza, hech narsa qilish shart emas",
+        "x o'rniga aniq shahar nomini qo'yishi kerak"
+      ],
+      "t": 3,
+      "izoh": "Predikat o'zgaruvchi tufayli rostligi noaniq bo'lgan yozuvdir. Uni mulohazaga aylantirishning eng oddiy yo'li — o'zgaruvchi o'rniga aniq qiymat qo'yish. Masalan «Marg'ilon shahri Farg'ona vodiysida joylashgan» rost mulohaza bo'ladi. Inkor qilish yoki so'z olib tashlash o'zgaruvchini yo'qotmaydi. Javob: x o'rniga aniq shahar nomini qo'yishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "predikat-va-mulohaza-farqi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#8f7e15bc"
+    },
+    {
+      "q": "«Har qanday x natural son uchun x + 0 = x» yozuvi haqida to'g'ri fikrni tanlang.",
+      "v": [
+        "Bu mulohaza va u rost",
+        "Bu predikat, chunki ichida x harfi bor",
+        "Bu mulohaza va u yolg'on",
+        "Bu na predikat, na mulohaza"
+      ],
+      "t": 0,
+      "izoh": "Yozuvda x bor, lekin uning oldiga «har qanday» umumiylik kvantori qo'yilgan. Kvantor o'zgaruvchini bog'laydi va predikatni mulohazaga aylantiradi. Nolni qo'shish sonni o'zgartirmaydi, shuning uchun bu mulohaza rost. Javob: bu mulohaza va u rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "predikat-va-mulohaza-farqi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#c1ede214"
+    },
+    {
+      "q": "Natural sonlar to'plamida ∀x (x + 3 > x) mulohazasi berilgan. Uning rostligini aniqlang va sababini ko'rsating.",
+      "v": [
+        "Yolg'on, chunki x = 0 da tenglik hosil bo'ladi",
+        "Rost, lekin faqat musbat sonlar uchun",
+        "Rost, chunki har qanday songa 3 qo'shilsa natija o'sha sondan katta bo'ladi",
+        "Yolg'on, chunki katta sonlarda 3 ning ta'siri sezilmaydi"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlikni soddalashtiramiz: x + 3 > x ikkala tomondan x ni ayirsak 3 > 0 bo'ladi. Bu x ning qiymatiga umuman bog'liq emas va har doim bajariladi. Demak umumiylik kvantori bilan yozilgan mulohaza rost. Javob: rost, har qanday songa 3 qo'shilsa natija o'sha sondan katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiylik-kvantori-rostligi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#a68f4fb6"
+    },
+    {
+      "q": "Bir guruhdagi olti o'quvchining bo'yi 158, 162, 165, 170, 174 va 181 sm. «Guruhdagi har bir o'quvchining bo'yi 160 sm dan baland» degan mulohaza qanday baholanadi?",
+      "v": [
+        "Rost, chunki o'quvchilarning ko'pchiligi 160 sm dan baland",
+        "Yolg'on, chunki bo'yi 158 sm bo'lgan o'quvchi shartni buzadi",
+        "Rost, chunki o'rtacha bo'y 160 sm dan katta",
+        "Yolg'on, chunki hech bir o'quvchining bo'yi 160 sm dan baland emas"
+      ],
+      "t": 1,
+      "izoh": "Umumiylik kvantorli mulohaza bitta qarshi misol bilan rad etiladi. Ro'yxatdagi 158 sm 160 dan kichik, demak shart barcha o'quvchida bajarilmaydi. Ko'pchilik yoki o'rtacha qiymat bu yerda hech narsani hal qilmaydi. Javob: yolg'on, bo'yi 158 sm bo'lgan o'quvchi shartni buzadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiylik-kvantori-rostligi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#73daa3b7"
+    },
+    {
+      "q": "Haqiqiy sonlar to'plamida ∀x (x² ≥ 0) va ∀x (x³ ≥ 0) mulohazalari berilgan. Ularning rostligi haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "Ikkalasi ham rost",
+        "Birinchisi yolg'on, ikkinchisi rost",
+        "Ikkalasi ham yolg'on",
+        "Birinchisi rost, ikkinchisi yolg'on"
+      ],
+      "t": 3,
+      "izoh": "Har qanday haqiqiy sonning kvadrati manfiy bo'lmaydi, shuning uchun birinchi mulohaza rost. Uchinchi daraja esa ishorani saqlaydi: x = −2 da x³ = −8 < 0, ya'ni qarshi misol topildi. Demak ikkinchi mulohaza yolg'on. Javob: birinchisi rost, ikkinchisi yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiylik-kvantori-rostligi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#21f594d1"
+    },
+    {
+      "q": "K = {14, 21, 28, 35, 49} to'plami uchun «bu to'plamning har bir elementi 7 ga karrali» mulohazasi aytildi. Uning rostligini aniqlang.",
+      "v": [
+        "Rost, beshta sonning ham 7 ga bo'linishi tekshiriladi",
+        "Yolg'on, chunki 21 soni 7 ga bo'linmaydi",
+        "Yolg'on, chunki 49 soni 7 ga bo'linmaydi",
+        "Aniqlab bo'lmaydi, chunki to'plam cheksiz"
+      ],
+      "t": 0,
+      "izoh": "To'plam chekli bo'lgani uchun barcha elementni tekshirish mumkin: 14 = 7·2, 21 = 7·3, 28 = 7·4, 35 = 7·5, 49 = 7·7. Beshtasi ham 7 ga karrali chiqdi, demak umumiylik kvantorli mulohaza rost. Javob: rost, beshta sonning ham 7 ga bo'linishi tekshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiylik-kvantori-rostligi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#095a3e94"
+    },
+    {
+      "q": "Butun sonlar to'plamida ∃x (x² = 2) mulohazasi berilgan. Bu mulohaza rostmi yoki yolg'onmi?",
+      "v": [
+        "Rost, chunki x = √2 shartni qanoatlantiradi",
+        "Rost, chunki x = 1 ni olish mumkin",
+        "Yolg'on, chunki √2 butun son emas",
+        "Yolg'on, chunki son kvadrati manfiy bo'la olmaydi"
+      ],
+      "t": 2,
+      "izoh": "Mavjudlik kvantorli mulohaza rost bo'lishi uchun sohada kamida bitta mos element topilishi kerak. x² = 2 tenglamaning yechimlari √2 va −√2, ular irratsional sonlar. Butun sonlar orasida bunday son yo'q, demak mulohaza yolg'on. Javob: yolg'on, chunki √2 butun son emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mavjudlik-kvantori-rostligi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#e9cac061"
+    },
+    {
+      "q": "Bekzod do'kondagi to'rt xil sut narxini yozib oldi: 9800, 11200, 12500 va 13400 so'm. «Bu do'konda narxi 10000 so'mdan arzon sut bor» mulohazasi rostmi?",
+      "v": [
+        "Yolg'on, chunki barcha sutlar 10000 so'mdan qimmat",
+        "Rost, chunki o'rtacha narx 10000 so'mga yaqin",
+        "Yolg'on, chunki bunday sut atigi bitta",
+        "Rost, narxi 9800 so'm bo'lgan sut shu shartni qanoatlantiradi"
+      ],
+      "t": 3,
+      "izoh": "Mavjudlik kvantori uchun bitta misol yetarli. Ro'yxatdagi 9800 so'm 10000 dan kichik, demak shart bajariladigan sut bor. Bunday sutning atigi bitta bo'lishi mulohazani yolg'on qilmaydi. Javob: rost, narxi 9800 so'm bo'lgan sut shu shartni qanoatlantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mavjudlik-kvantori-rostligi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#ac3f4a18"
+    },
+    {
+      "q": "Matematika to'garagida Nodira «kamida bitta tub son juft bo'ladi» degan mulohazani aytdi. Uning bu fikri rostmi yoki yolg'onmi?",
+      "v": [
+        "Yolg'on, barcha tub sonlar toq bo'ladi",
+        "Rost, 2 soni ham tub, ham juft son",
+        "Rost, 4 soni tub va juft son",
+        "Yolg'on, chunki 2 tub son hisoblanmaydi"
+      ],
+      "t": 1,
+      "izoh": "2 sonining bo'luvchilari faqat 1 va 2, demak u tub son. Ayni paytda u 2 ga bo'linadi, ya'ni juft. Shunday qilib mavjudlik kvantorli mulohazani tasdiqlaydigan element topildi. 4 esa tub emas, chunki 2 ga bo'linadi. Javob: rost, 2 soni ham tub, ham juft son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mavjudlik-kvantori-rostligi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#9fb23c34"
+    },
+    {
+      "q": "Haqiqiy sonlar to'plamida ∃x (x² + 4 = 0) va ∃x (x² − 4 = 0) mulohazalari berilgan. Qaysi biri rost bo'ladi?",
+      "v": [
+        "Faqat ikkinchisi rost",
+        "Faqat birinchisi rost",
+        "Ikkalasi ham rost",
+        "Ikkalasi ham yolg'on"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tenglamadan x² = −4 kelib chiqadi, haqiqiy sonning kvadrati esa manfiy bo'lmaydi, demak yechim yo'q. Ikkinchi tenglamadan x² = 4, bundan x = 2 yoki x = −2. Yechim bor, demak faqat ikkinchi mulohaza rost. Javob: faqat ikkinchisi rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mavjudlik-kvantori-rostligi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#09cc00d9"
+    },
+    {
+      "q": "«Sinfdagi barcha o'quvchilar ingliz tilini o'rganadi» mulohazasining inkorini to'g'ri ifodalagan variantni tanlang.",
+      "v": [
+        "Sinfdagi hech bir o'quvchi ingliz tilini o'rganmaydi",
+        "Sinfdagi barcha o'quvchilar ingliz tilini o'rganmaydi",
+        "Sinfda ingliz tilini o'rganmaydigan kamida bitta o'quvchi bor",
+        "Sinfdagi ba'zi o'quvchilar ingliz tilini o'rganadi"
+      ],
+      "t": 2,
+      "izoh": "Umumiylik kvantorining inkori mavjudlik kvantoriga aylanadi: ¬∀x P(x) ≡ ∃x ¬P(x). «Barchasi o'rganadi» gapi yolg'on bo'lishi uchun o'rganmaydigan bitta o'quvchi yetarli. «Hech biri o'rganmaydi» bu ancha kuchli tasdiq va inkor bo'la olmaydi. Javob: sinfda ingliz tilini o'rganmaydigan kamida bitta o'quvchi bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiylik-inkori",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#d6accbd9"
+    },
+    {
+      "q": "Umumiylik kvantori bilan yozilgan ∀x P(x) mulohazasining inkori simvolik ravishda qanday ko'rinishga ega bo'ladi?",
+      "v": [
+        "∀x ¬P(x)",
+        "¬∃x P(x)",
+        "∃x P(x)",
+        "∃x ¬P(x)"
+      ],
+      "t": 3,
+      "izoh": "Inkor kvantorni almashtiradi va predikatga o'tadi: ¬∀x P(x) ≡ ∃x ¬P(x). Ya'ni «hamma uchun bajariladi» gapining inkori «bajarilmaydigan bittasi bor» degani. ∀x ¬P(x) esa butunlay boshqa, ancha kuchli tasdiq. Javob: ∃x ¬P(x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiylik-inkori",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#7797cd08"
+    },
+    {
+      "q": "«Firmadagi har bir xodim kompyuter kursini tugatgan» degan hisobotni tekshiruvchi rad etmoqchi. Buning uchun unga nima qilish yetarli bo'ladi?",
+      "v": [
+        "Barcha xodimlar kursni tugatmaganini isbotlashi kerak",
+        "Kursni tugatmagan bitta xodimni topishi yetarli",
+        "Xodimlarning yarmidan ko'pi kursni tugatmaganini ko'rsatishi kerak",
+        "Kursni tugatgan bitta xodimni topishi yetarli"
+      ],
+      "t": 1,
+      "izoh": "Hisobot umumiylik kvantorli mulohaza: har bir xodim uchun shart bajariladi deyilgan. Uning inkori mavjudlik kvantorli bo'ladi — shart bajarilmagan kamida bitta xodim bor. Demak bitta qarshi misol butun tasdiqni yiqitadi, barcha xodimni tekshirish shart emas. Javob: kursni tugatmagan bitta xodimni topishi yetarli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiylik-inkori",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#61f2e3c1"
+    },
+    {
+      "q": "Matematika darsida Sardor «har qanday x haqiqiy son uchun x² > x» degan tasdiqni aytdi. Bu tasdiqning inkori qanday yoziladi?",
+      "v": [
+        "Shunday x haqiqiy son borki, x² ≤ x",
+        "Har qanday x haqiqiy son uchun x² ≤ x",
+        "Shunday x haqiqiy son borki, x² > x",
+        "Har qanday x haqiqiy son uchun x² < x"
+      ],
+      "t": 0,
+      "izoh": "Umumiylik kvantorining inkori mavjudlik kvantoriga aylanadi, ichkaridagi shart esa teskarisiga o'tadi. «Katta» munosabatining inkori «katta emas», ya'ni «kichik yoki teng». Demak inkor: shunday x borki, x² ≤ x. Javob: shunday x haqiqiy son borki, x² ≤ x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiylik-inkori",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#5495e573"
+    },
+    {
+      "q": "Kutubxonachi «bu guruhda kamida bitta talaba nemis tilini biladi» dedi. Uning mulohazasining inkori qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "Bu guruhda kamida bitta talaba nemis tilini bilmaydi",
+        "Bu guruhdagi barcha talabalar nemis tilini biladi",
+        "Bu guruhda faqat bitta talaba nemis tilini biladi",
+        "Bu guruhdagi hech bir talaba nemis tilini bilmaydi"
+      ],
+      "t": 3,
+      "izoh": "Berilgan gap mavjudlik kvantorli: ∃x P(x). Uning inkori ¬∃x P(x) ≡ ∀x ¬P(x) ko'rinishida bo'ladi. So'z bilan aytganda «biladigan biror talaba yo'q», ya'ni hech biri bilmaydi. Javob: bu guruhdagi hech bir talaba nemis tilini bilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mavjudlik-inkori",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#4ba9a714"
+    },
+    {
+      "q": "∃x Q(x) mulohazasining inkori ∀x ¬Q(x) ekanini bilgan holda «ba'zi butun sonlar 4 ga bo'linadi» gapining inkorini toping.",
+      "v": [
+        "Ba'zi butun sonlar 4 ga bo'linmaydi",
+        "Hech bir butun son 4 ga bo'linmaydi",
+        "Barcha butun sonlar 4 ga bo'linadi",
+        "Faqat juft butun sonlar 4 ga bo'linadi"
+      ],
+      "t": 1,
+      "izoh": "«Ba'zi» so'zi mavjudlik kvantorini bildiradi. Uning inkorida kvantor umumiylikka o'tadi va shart inkor qilinadi. Demak «bo'linadigan biror butun son yo'q» degan gap hosil bo'ladi. Javob: hech bir butun son 4 ga bo'linmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mavjudlik-inkori",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#e887115e"
+    },
+    {
+      "q": "Nazoratchi «omborda muddati o'tgan kamida bitta mahsulot bor» degan shikoyatni tekshirib, uni rad etdi. Rad etish qanday xulosani anglatadi?",
+      "v": [
+        "Omborda muddati o'tgan mahsulotlar juda ko'p",
+        "Omborda muddati o'tmagan kamida bitta mahsulot bor",
+        "Ombordagi barcha mahsulotlarning muddati o'tmagan",
+        "Ombordagi mahsulotlarning yarmi yaroqli"
+      ],
+      "t": 2,
+      "izoh": "Shikoyat mavjudlik kvantorli tasdiq edi. Uni rad etish shu tasdiqning inkorini qabul qilish demakdir, ya'ni ∀x ¬P(x). So'z bilan: muddati o'tgan birorta ham mahsulot yo'q. Javob: ombordagi barcha mahsulotlarning muddati o'tmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mavjudlik-inkori",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#65748009"
+    },
+    {
+      "q": "«∃x ∈ N (x² = 30)» mulohazasining inkorini so'z bilan to'g'ri ifodalagan variantni belgilang.",
+      "v": [
+        "Hech bir natural sonning kvadrati 30 ga teng emas",
+        "Ba'zi natural sonlarning kvadrati 30 ga teng emas",
+        "Barcha natural sonlarning kvadrati 30 ga teng",
+        "Faqat bitta natural sonning kvadrati 30 ga teng"
+      ],
+      "t": 0,
+      "izoh": "Mavjudlik kvantorining inkori umumiylik kvantoriga aylanadi: ¬∃x P(x) ≡ ∀x ¬P(x). Bu yerda P(x) shart x² = 30 bo'lgani uchun inkorda x² ≠ 30 bo'ladi. Demak barcha natural sonlar uchun kvadrat 30 dan farqli. Javob: hech bir natural sonning kvadrati 30 ga teng emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mavjudlik-inkori",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#54779864"
+    },
+    {
+      "q": "«Har bir haqiqiy sonning kvadrati manfiy emas» jumlasini kvantorlar yordamida to'g'ri yozgan variantni tanlang.",
+      "v": [
+        "∃x ∈ R (x² ≥ 0)",
+        "∀x ∈ R (x² ≥ 0)",
+        "∀x ∈ R (x² > 0)",
+        "∃x ∈ R (x² ≤ 0)"
+      ],
+      "t": 1,
+      "izoh": "«Har bir» so'zi umumiylik kvantori ∀ bilan yoziladi. «Manfiy emas» esa noldan kichik emas, ya'ni x² ≥ 0. Qat'iy tengsizlik x² > 0 noto'g'ri bo'lardi, chunki x = 0 da kvadrat nolga teng. Javob: ∀x ∈ R (x² ≥ 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sozdan-kvantorga",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#b2934db4"
+    },
+    {
+      "q": "Do'kon egasi «mening do'konimda hech bo'lmaganda bitta tovar chegirmada» dedi. T(x): «x tovar chegirmada» belgilashda bu jumla qanday yoziladi?",
+      "v": [
+        "∀x T(x)",
+        "¬∃x T(x)",
+        "∀x ¬T(x)",
+        "∃x T(x)"
+      ],
+      "t": 3,
+      "izoh": "«Hech bo'lmaganda bitta» iborasi mavjudlik kvantorining o'zbekcha ifodasidir. Demak shart bajariladigan kamida bitta tovar borligi tasdiqlanmoqda. Bu simvolik ravishda ∃x T(x) ko'rinishida yoziladi. Javob: ∃x T(x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sozdan-kvantorga",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#c044e902"
+    },
+    {
+      "q": "«Sinfdagi hech bir o'quvchi darsga kechikmadi» jumlasi K(x): «x o'quvchi darsga kechikdi» predikati orqali qanday yoziladi?",
+      "v": [
+        "∃x ¬K(x)",
+        "¬∀x K(x)",
+        "∀x ¬K(x)",
+        "∀x K(x)"
+      ],
+      "t": 2,
+      "izoh": "«Hech bir» iborasi «har bir uchun bajarilmaydi» ma'nosini beradi. Demak har bir o'quvchi uchun K(x) yolg'on, ya'ni ¬K(x) rost. Bu ∀x ¬K(x) ko'rinishida yoziladi va u ¬∃x K(x) ga ekvivalent. Javob: ∀x ¬K(x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sozdan-kvantorga",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#3a115149"
+    },
+    {
+      "q": "«Har qanday musbat son uchun undan kichik musbat son topiladi» jumlasini simvolik ko'rinishda to'g'ri yozgan variantni tanlang.",
+      "v": [
+        "∀x > 0 ∃y > 0 (y < x)",
+        "∃x > 0 ∀y > 0 (y < x)",
+        "∀x > 0 ∀y > 0 (y < x)",
+        "∃x > 0 ∃y > 0 (y < x)"
+      ],
+      "t": 0,
+      "izoh": "Jumla avval «har qanday musbat son uchun» deydi, demak birinchi kvantor umumiylik va u x ga tegishli. Keyin «topiladi» so'zi mavjudlikni bildiradi va topiladigan y aynan shu x ga bog'liq. Shuning uchun kvantorlar tartibi ∀x, so'ng ∃y bo'ladi. Javob: ∀x > 0 ∃y > 0 (y < x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sozdan-kvantorga",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#d0894572"
+    },
+    {
+      "q": "Haqiqiy sonlar to'plamida yozilgan ∀x ∃y (x + y = 0) mulohazasini so'z bilan to'g'ri ifodalang.",
+      "v": [
+        "Shunday son borki, u barcha sonlar bilan qo'shilganda nol beradi",
+        "Har qanday son uchun unga qarama-qarshi son mavjud",
+        "Har qanday ikkita sonning yig'indisi nolga teng",
+        "Ba'zi sonlar uchungina qarama-qarshi son mavjud"
+      ],
+      "t": 1,
+      "izoh": "Birinchi kvantor ∀x «har qanday son uchun» deb o'qiladi. Ikkinchi kvantor ∃y esa shu x ga mos y ning mavjudligini bildiradi, bu yerda y = −x. Demak har bir son uchun uni nolga to'ldiruvchi qarama-qarshi son bor. Javob: har qanday son uchun unga qarama-qarshi son mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvantordan-sozga",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#ff1fd883"
+    },
+    {
+      "q": "F(x, y): «x talaba y fanidan imtihon topshirdi» predikati berilgan. ∃x ∀y F(x, y) yozuvi qanday ma'noni anglatadi?",
+      "v": [
+        "Har bir talaba kamida bitta fandan imtihon topshirgan",
+        "Har bir fandan kamida bitta talaba imtihon topshirgan",
+        "Shunday talaba borki, u barcha fanlardan imtihon topshirgan",
+        "Barcha talabalar barcha fanlardan imtihon topshirgan"
+      ],
+      "t": 2,
+      "izoh": "Tashqi kvantor ∃x bo'lgani uchun avval bitta talaba tanlanadi. Undan keyingi ∀y esa shu tanlangan talaba uchun barcha fanlar bo'yicha shart bajarilishini talab qiladi. Demak hech bo'lmaganda bitta talaba hamma fandan imtihon topshirgan. Javob: shunday talaba borki, u barcha fanlardan imtihon topshirgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvantordan-sozga",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#9d59bdf5"
+    },
+    {
+      "q": "∀x ∈ N (x ≥ 1) yozuvining so'zdagi ma'nosini to'g'ri bergan variantni tanlang.",
+      "v": [
+        "Ba'zi natural sonlar 1 dan katta",
+        "1 dan katta natural son mavjud",
+        "Barcha natural sonlar 1 ga teng",
+        "Har qanday natural son 1 dan kichik emas"
+      ],
+      "t": 3,
+      "izoh": "∀ belgisi «har qanday» deb o'qiladi, N esa natural sonlar to'plami. Shart x ≥ 1 bo'lgani uchun «1 dan kichik emas» degan ma'no chiqadi. «Ba'zi» so'zi mavjudlik kvantoriga tegishli va bu yerga to'g'ri kelmaydi. Javob: har qanday natural son 1 dan kichik emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvantordan-sozga",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#e26f1f21"
+    },
+    {
+      "q": "S(x): «x kunda yomg'ir yog'di» predikati kiritilgan. Ob-havo hisobotidagi ¬∃x S(x) yozuvi qanday o'qiladi?",
+      "v": [
+        "Hech bir kunda yomg'ir yog'magan",
+        "Kamida bir kunda yomg'ir yog'magan",
+        "Har kuni yomg'ir yog'gan",
+        "Faqat bir kunda yomg'ir yog'gan"
+      ],
+      "t": 0,
+      "izoh": "∃x S(x) «yomg'ir yoqqan kun bor» degani. Uning oldidagi inkor belgisi bu mavjudlikni rad etadi. Demak yomg'ir yoqqan birorta ham kun topilmaydi. Javob: hech bir kunda yomg'ir yog'magan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvantordan-sozga",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#09024619"
+    },
+    {
+      "q": "Karim «har qanday tub son toq bo'ladi» degan xulosaga keldi. Uning bu xulosasini rad etadigan qarshi misolni ko'rsating.",
+      "v": [
+        "9",
+        "2",
+        "15",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Qarshi misol shartni qanoatlantiruvchi, lekin xulosani buzuvchi son bo'lishi kerak, ya'ni tub va juft son. 9 va 15 tub emas, 3 esa tub bo'lsa ham toq. 2 soni tub va ayni paytda juft, demak u xulosani yiqitadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarshi-misol",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#eec4921f"
+    },
+    {
+      "q": "«Har qanday haqiqiy x uchun x² > x» tasdig'i berilgan. Bu tasdiqni rad etadigan sonni tanlang.",
+      "v": [
+        "2",
+        "3",
+        "0,5",
+        "−1"
+      ],
+      "t": 2,
+      "izoh": "Har bir variantni tekshiramiz: 2 uchun 4 > 2 bajariladi, 3 uchun 9 > 3 bajariladi, −1 uchun 1 > −1 bajariladi. 0,5 uchun esa kvadrat 0,25 bo'ladi va 0,25 > 0,5 shart buziladi. Javob: 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarshi-misol",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#a6d7d1d5"
+    },
+    {
+      "q": "Sotuvchi «bizning barcha mevalarimiz O'zbekistonda yetishtirilgan» dedi. Xaridor bu tasdiqni rad etish uchun nima qilishi kerak?",
+      "v": [
+        "O'zbekistonda yetishtirilgan bitta mevani ko'rsatishi kerak",
+        "Chetdan keltirilgan barcha mevalar ro'yxatini talab qilishi kerak",
+        "Mevalarning yarmi chetdan kelganini tasdiqlovchi hujjat olishi kerak",
+        "Chetdan keltirilgan bitta mevani ko'rsatishi kerak"
+      ],
+      "t": 3,
+      "izoh": "Sotuvchining gapi umumiylik kvantorli mulohaza. Bunday mulohazani rad etish uchun uning inkori, ya'ni bitta qarshi misol yetarli. Chetdan kelgan bitta meva topilsa, «barchasi» degan tasdiq yolg'onga chiqadi. Javob: chetdan keltirilgan bitta mevani ko'rsatishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarshi-misol",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#1141f4f4"
+    },
+    {
+      "q": "«Ikkita irratsional sonning yig'indisi doim irratsional bo'ladi» tasdig'i uchun qarshi misol bo'ladigan juftlikni tanlang.",
+      "v": [
+        "√2 va −√2",
+        "√2 va √3",
+        "√5 va √5",
+        "π va √3"
+      ],
+      "t": 0,
+      "izoh": "Qarshi misolda ikkala son irratsional, yig'indisi esa ratsional bo'lishi kerak. √2 + (−√2) = 0, nol esa ratsional son. Qolgan juftliklarda yig'indi irratsional bo'lib qoladi, masalan √5 + √5 = 2√5. Javob: √2 va −√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qarshi-misol",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#5a02580c"
+    },
+    {
+      "q": "Haqiqiy sonlar to'plamida ∀x ∃y (y > x) va ∃y ∀x (y > x) mulohazalari berilgan. Ularning rostligi haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "Faqat ∃y ∀x (y > x) rost",
+        "Ikkala mulohaza ham rost bo'ladi",
+        "Faqat ∀x ∃y (y > x) rost",
+        "Ikkala mulohaza ham yolg'on bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Birinchi mulohazada har bir x uchun alohida y tanlanadi, masalan y = x + 1, demak u rost. Ikkinchisida esa bitta y hamma x dan katta bo'lishi talab qilinadi, ya'ni eng katta haqiqiy son kerak bo'ladi. Bunday son yo'q, shuning uchun ikkinchi mulohaza yolg'on. Javob: faqat ∀x ∃y (y > x) rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-kvantor-tartibi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#39e5a1a7"
+    },
+    {
+      "q": "L(x, y): «x o'quvchi y kitobni o'qigan» predikati berilgan. «Har bir o'quvchi kamida bitta kitob o'qigan» jumlasi qaysi yozuvga mos keladi?",
+      "v": [
+        "∃x ∀y L(x, y)",
+        "∀x ∃y L(x, y)",
+        "∀y ∃x L(x, y)",
+        "∃y ∀x L(x, y)"
+      ],
+      "t": 1,
+      "izoh": "«Har bir o'quvchi» iborasi x bo'yicha umumiylik kvantorini beradi va u birinchi turadi. «Kamida bitta kitob» esa y bo'yicha mavjudlik kvantorini beradi. Kitob har bir o'quvchida boshqacha bo'lishi mumkin, shuning uchun ∃y ichkarida qoladi. Javob: ∀x ∃y L(x, y).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-kvantor-tartibi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#c5659bd4"
+    },
+    {
+      "q": "D(x, y): «x shifokor y bemorni qabul qildi» predikati berilgan. ∃y ∀x D(x, y) yozuvining ma'nosini to'g'ri bergan variantni tanlang.",
+      "v": [
+        "Har bir shifokor kamida bitta bemorni qabul qilgan",
+        "Shunday shifokor borki, u barcha bemorlarni qabul qilgan",
+        "Har bir bemorni kamida bitta shifokor qabul qilgan",
+        "Shunday bemor borki, uni barcha shifokorlar qabul qilgan"
+      ],
+      "t": 3,
+      "izoh": "Tashqi kvantor ∃y bemorga tegishli, demak avval bitta bemor tanlanadi. Ichkaridagi ∀x esa shu bemorni har bir shifokor qabul qilganini talab qiladi. Kvantorlar o'rni almashsa, ma'no butunlay o'zgaradi. Javob: shunday bemor borki, uni barcha shifokorlar qabul qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-kvantor-tartibi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#21c8dffc"
+    },
+    {
+      "q": "«Har qanday butun son uchun undan katta butun son mavjud» va «shunday butun son borki, u hamma butun sonlardan katta» jumlalari orasidagi farqni to'g'ri tushuntirgan variantni tanlang.",
+      "v": [
+        "Birinchisida y soni x ga bog'liq holda tanlanadi, ikkinchisida esa bitta umumiy y talab qilinadi",
+        "Ikkala jumla ham bir xil ma'noni beradi",
+        "Birinchisida bitta umumiy y talab qilinadi, ikkinchisida y soni x ga bog'liq",
+        "Farq faqat so'z tartibida, mantiqiy ma'no o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Birinchi jumlada ∀ tashqarida, ∃ ichkarida turadi, shuning uchun har bir x ga o'z y si mos keladi va y = x + 1 deb olish mumkin. Ikkinchi jumlada ∃ tashqarida, demak hamma x uchun bitta umumiy y kerak bo'ladi. Eng katta butun son mavjud emasligi sababli ikkinchi jumla yolg'on. Javob: birinchisida y soni x ga bog'liq holda tanlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-kvantor-tartibi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#3ccb44fa"
+    },
+    {
+      "q": "U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} to'plamda A(x): «x juft son», B(x): «x soni 3 ga bo'linadi» predikatlari berilgan. A(x) ∧ B(x) predikatining rostlik to'plamini toping.",
+      "v": [
+        "{2, 3, 4, 6, 8, 9, 10}",
+        "{6}",
+        "{3, 6, 9}",
+        "{2, 4, 6, 8, 10}"
+      ],
+      "t": 1,
+      "izoh": "Konyunksiyaning rostlik to'plami ikki predikat rostlik to'plamlarining kesishmasi bo'ladi. A ning rostlik to'plami {2, 4, 6, 8, 10}, B niki esa {3, 6, 9}. Ularning umumiy elementi faqat 6. Javob: {6}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "rostlik-toplami-amallar",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#dbe6c21d"
+    },
+    {
+      "q": "V = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12} to'plamda P(x): «x soni 4 ga karrali», Q(x): «x soni 6 ga karrali». P(x) ∨ Q(x) predikatining rostlik to'plamini toping.",
+      "v": [
+        "{12}",
+        "{4, 8, 12}",
+        "{4, 6, 8, 10, 12}",
+        "{4, 6, 8, 12}"
+      ],
+      "t": 3,
+      "izoh": "Dizyunksiyaning rostlik to'plami ikki to'plamning birlashmasidir. 4 ga karralilar: 4, 8, 12. 6 ga karralilar: 6, 12. Birlashma {4, 6, 8, 12} bo'ladi, 10 esa na 4 ga, na 6 ga karrali. Javob: {4, 6, 8, 12}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rostlik-toplami-amallar",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#c6859f3e"
+    },
+    {
+      "q": "Klubdagi 20 nafar bolaning 12 tasi shaxmat, 9 tasi shashka to'garagiga qatnaydi, 5 tasi esa ikkala to'garakka ham boradi. Shu ikki predikat konyunksiyasining rostlik to'plamida nechta bola bor?",
+      "v": [
+        "16 ta",
+        "21 ta",
+        "5 ta",
+        "12 ta"
+      ],
+      "t": 2,
+      "izoh": "Konyunksiya «ham shaxmatga, ham shashkaga qatnaydi» degan ma'noni beradi, ya'ni ikki to'plamning kesishmasi kerak. Shartda bunday bolalar soni to'g'ridan-to'g'ri berilgan — 5 nafar. 16 soni birlashmaning quvvati, ya'ni 12 + 9 − 5 ifodasidan chiqadi. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rostlik-toplami-amallar",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#5230fb19"
+    },
+    {
+      "q": "X = {−3, −2, −1, 0, 1, 2, 3} to'plamda C(x): «x² ≤ 4» va D(x): «x > 0» predikatlari berilgan. C(x) ∧ D(x) predikatining rostlik to'plamini toping.",
+      "v": [
+        "{1, 2}",
+        "{1, 2, 3}",
+        "{0, 1, 2}",
+        "{−2, −1, 1, 2}"
+      ],
+      "t": 0,
+      "izoh": "C(x) shartini X dan qanoatlantiruvchilar: −2, −1, 0, 1, 2, chunki ularning kvadrati 4 dan oshmaydi. D(x) shartini esa 1, 2, 3 qanoatlantiradi. Ikki to'plamning kesishmasi {1, 2} bo'ladi, 3 soni C ga kirmaydi. Javob: {1, 2}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rostlik-toplami-amallar",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#eb0c093f"
+    },
+    {
+      "q": "Y = {1, 2, 3, 4, 5, 6, 7, 8, 9} to'plamda E(x): «x soni 5 dan katta» predikati berilgan. ¬E(x) predikatining rostlik to'plamini toping.",
+      "v": [
+        "{1, 2, 3, 4}",
+        "{6, 7, 8, 9}",
+        "{5, 6, 7, 8, 9}",
+        "{1, 2, 3, 4, 5}"
+      ],
+      "t": 3,
+      "izoh": "Inkorning rostlik to'plami asosiy predikat rostlik to'plamiga to'ldiruvchi bo'ladi. E ning rostlik to'plami {6, 7, 8, 9}, chunki bu sonlar 5 dan katta. Qolgan elementlar {1, 2, 3, 4, 5} inkorni rost qiladi, 5 ning o'zi ham kiradi. Javob: {1, 2, 3, 4, 5}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "rostlik-toplami-toldiruvchi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#2708e173"
+    },
+    {
+      "q": "Mahalladagi 30 xonadonning 18 tasida internet ulanishi bor. «x xonadonda internet bor» predikatining inkori rostlik to'plamida nechta xonadon bo'ladi?",
+      "v": [
+        "18 ta",
+        "12 ta",
+        "30 ta",
+        "48 ta"
+      ],
+      "t": 1,
+      "izoh": "Inkorning rostlik to'plami universal to'plamdan asosiy rostlik to'plamini ayirish bilan topiladi. Universal to'plam 30 xonadon, internetli xonadonlar 18 ta. Demak internet yo'q xonadonlar 30 − 18 = 12 ta. Javob: 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "rostlik-toplami-toldiruvchi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#3f283b10"
+    },
+    {
+      "q": "P(x) predikatining rostlik to'plami A bo'lib, u universal to'plam U ning qismi. Bunda ¬P(x) predikatining rostlik to'plami nimaga teng bo'ladi?",
+      "v": [
+        "A va U to'plamlarning birlashmasi",
+        "A va U to'plamlarning kesishmasi",
+        "U to'plamning A ga to'ldiruvchisi",
+        "A to'plamning o'zi"
+      ],
+      "t": 2,
+      "izoh": "Inkor predikat aynan A ga kirmaydigan elementlarda rost bo'ladi. Bunday elementlar U to'plamda bor, lekin A da yo'q. Bu esa ta'rifga ko'ra U dagi A ning to'ldiruvchisi. A bilan U ning birlashmasi U ning o'zini, kesishmasi esa A ni beradi. Javob: U to'plamning A ga to'ldiruvchisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rostlik-toplami-toldiruvchi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#cefa844d"
+    },
+    {
+      "q": "Reklamada «bizning barcha mahsulotlarimiz shakarsiz» deyilgan. Iste'molchilar huquqini himoya qiluvchi tashkilot bu tasdiqni qanday rad eta oladi?",
+      "v": [
+        "Tarkibida shakar bor bitta mahsulotni ko'rsatib",
+        "Barcha mahsulotlarda shakar borligini isbotlab",
+        "Mahsulotlarning yarmida shakar borligini ko'rsatib",
+        "Tarkibida shakar yo'q bitta mahsulotni ko'rsatib"
+      ],
+      "t": 0,
+      "izoh": "Reklamadagi gap ∀x P(x) ko'rinishidagi umumiylik tasdig'i. Uning inkori ∃x ¬P(x), ya'ni shartni buzadigan bitta mahsulot yetarli. Barcha mahsulotda shakar borligini isbotlash talab qilinmaydi, bu ancha kuchli shart. Javob: tarkibida shakar bor bitta mahsulotni ko'rsatib.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "reklama-tasdigini-inkor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#5686f11e"
+    },
+    {
+      "q": "«Bizning do'konimizda hech qanday tovar chetdan keltirilmagan» degan e'lonning inkori qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "Do'kondagi barcha tovarlar chetdan keltirilgan",
+        "Do'konda chetdan keltirilmagan tovar bor",
+        "Do'kondagi tovarlarning yarmi chetdan keltirilgan",
+        "Do'konda chetdan keltirilgan kamida bitta tovar bor"
+      ],
+      "t": 3,
+      "izoh": "E'londagi gap ∀x ¬P(x) ko'rinishida, ya'ni hech bir tovar chetdan kelmagan. Uning inkori ∃x P(x) bo'ladi, ya'ni chetdan kelgan tovar mavjud. Bunday tovarning nechtaligi ahamiyatsiz, bittasi ham yetarli. Javob: do'konda chetdan keltirilgan kamida bitta tovar bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "reklama-tasdigini-inkor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#e90f4d7f"
+    },
+    {
+      "q": "Bir kafe «bizda har kuni yangi taom bo'ladi» deb e'lon qildi. Tekshiruvchi bu e'lonni rad etish uchun nimani aniqlashi kerak?",
+      "v": [
+        "Barcha kunlarda yangi taom bo'lmaganini isbotlashi kerak",
+        "Yangi taom bo'lmagan kamida bitta kunni topishi kerak",
+        "Yangi taom bo'lgan bitta kunni topishi kerak",
+        "Kunlarning yarmida yangi taom bo'lmaganini ko'rsatishi kerak"
+      ],
+      "t": 1,
+      "izoh": "E'lon kunlar to'plamida umumiylik kvantori bilan berilgan tasdiq. Uning inkori mavjudlik kvantoriga o'tadi va bitta buzilgan kun yetarli bo'ladi. Yangi taom bo'lgan kunni topish esa e'lonni tasdiqlaydi, rad etmaydi. Javob: yangi taom bo'lmagan kamida bitta kunni topishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "reklama-tasdigini-inkor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#f9506384"
+    },
+    {
+      "q": "Zavodda bir kunda 500 ta detal ishlab chiqarildi. Sifat nazoratchisi «barcha detallar standartga mos» degan xulosani asosli berish uchun nima qilishi kerak?",
+      "v": [
+        "Bitta detalni tekshirishi yetarli",
+        "Yarmini, ya'ni 250 ta detalni tekshirishi kerak",
+        "Barcha 500 ta detalni tekshirishi kerak",
+        "Tasodifiy 50 ta detalni tekshirishi kerak"
+      ],
+      "t": 2,
+      "izoh": "Umumiylik kvantorli tasdiqni isbotlash bilan rad etish o'rtasida katta farq bor. Rad etish uchun bitta qarshi misol yetarli, lekin tasdiqlash uchun sohaning har bir elementi tekshirilishi kerak. Chekli soha bo'lgani uchun bu yerda hamma 500 detal ko'rib chiqiladi. Javob: barcha 500 ta detalni tekshirishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nazorat-tekshiruv-kvantor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#910cba38"
+    },
+    {
+      "q": "Konserva zavodida nazoratchi «partiyada kamida bitta yaroqsiz banka bor» degan tasdiqni isbotlamoqchi. U buning uchun nima qilishi kerak?",
+      "v": [
+        "Bitta yaroqsiz bankani topib ko'rsatishi kerak",
+        "Barcha bankalarni tekshirib chiqishi kerak",
+        "Bitta yaroqli bankani topib ko'rsatishi kerak",
+        "Bankalarning yarmini tekshirishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq mavjudlik kvantori bilan berilgan, uni isbotlash uchun bitta misol keltirish kifoya. Barcha bankalarni tekshirish faqat teskari, umumiylik tasdig'i uchun zarur bo'lardi. Yaroqli banka topish esa hech narsani isbotlamaydi. Javob: bitta yaroqsiz bankani topib ko'rsatishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nazorat-tekshiruv-kvantor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#f8d29bab"
+    },
+    {
+      "q": "Maktabda 240 o'quvchi bor. Direktor «bugun hech bir o'quvchi darsdan qolmadi» dedi. Bu mulohazani rad etish uchun zarur bo'lgan eng kam ma'lumotni tanlang.",
+      "v": [
+        "Barcha 240 o'quvchining davomat jadvali",
+        "Darsdan qolgan bitta o'quvchi haqidagi ma'lumot",
+        "Darsga kelgan bitta o'quvchi haqidagi ma'lumot",
+        "O'quvchilarning yarmi haqidagi davomat ma'lumoti"
+      ],
+      "t": 1,
+      "izoh": "Direktorning gapi ∀x ¬P(x) ko'rinishidagi umumiylik mulohazasi. Uning inkori ∃x P(x), ya'ni darsdan qolgan bitta o'quvchining borligi. Shunday bitta holat topilsa, butun tasdiq yolg'onga chiqadi. Javob: darsdan qolgan bitta o'quvchi haqidagi ma'lumot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nazorat-tekshiruv-kvantor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#d90f92fb"
+    },
+    {
+      "q": "Tadbirkor «mening barcha xodimlarimning ish staji 3 yildan ortiq» dedi. Kadrlar bo'limi olti xodimning stajini yozdi: 5, 4, 7, 2, 6 va 8 yil. Tadbirkorning tasdig'i haqida to'g'ri xulosa qaysi?",
+      "v": [
+        "Rost, chunki o'rtacha staj 5 yildan ortiq",
+        "Rost, chunki xodimlarning aksariyati 3 yildan ortiq ishlagan",
+        "Yolg'on, chunki hech kimning staji 3 yildan ortiq emas",
+        "Yolg'on, 2 yillik stajga ega xodim tasdiqni buzadi"
+      ],
+      "t": 3,
+      "izoh": "Umumiylik tasdig'i sohaning har bir elementida bajarilishi shart. Ro'yxatdagi 2 yil 3 dan kichik, demak shart buzilgan xodim topildi. O'rtacha qiymat yoki ko'pchilikning holati bunday tasdiqni qutqarmaydi. Javob: yolg'on, 2 yillik stajga ega xodim tasdiqni buzadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nazorat-tekshiruv-kvantor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#eff22a71"
+    },
+    {
+      "q": "Orolda rostgo'ylar doim rost, yolg'onchilar esa doim yolg'on gapiradi. Orol aholisidan biri «men yolg'onchiman» dedi. Bu holat haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "U rostgo'y",
+        "U yolg'onchi",
+        "Bunday gapni orol aholisidan hech kim ayta olmaydi",
+        "U goh rost, goh yolg'on gapiradi"
+      ],
+      "t": 2,
+      "izoh": "Agar gapiruvchi rostgo'y bo'lsa, gapi rost bo'lishi kerak, ya'ni u yolg'onchi bo'lib qoladi — ziddiyat. Agar u yolg'onchi bo'lsa, gapi yolg'on bo'lishi kerak, ya'ni u yolg'onchi emas — yana ziddiyat. Ikkala holda ham qarama-qarshilik chiqadi. Javob: bunday gapni orol aholisidan hech kim ayta olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rostgoy-yolgonchi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#a9d2ccfe"
+    },
+    {
+      "q": "Orolda A va B ismli ikki kishi uchrashdi. A: «Ikkalamiz ham yolg'onchimiz» dedi. Rostgo'ylar doim rost, yolg'onchilar doim yolg'on gapirishini bilgan holda A va B kimligini aniqlang.",
+      "v": [
+        "A yolg'onchi, B rostgo'y",
+        "A rostgo'y, B yolg'onchi",
+        "Ikkalasi ham yolg'onchi",
+        "Ikkalasi ham rostgo'y"
+      ],
+      "t": 0,
+      "izoh": "A rostgo'y deb faraz qilsak, gapi rost bo'ladi va A yolg'onchi chiqadi — ziddiyat. Demak A yolg'onchi, uning gapi yolg'on, ya'ni «ikkalasi ham yolg'onchi» tasdig'i noto'g'ri. A yolg'onchi bo'lgani uchun bu tasdiqning buzilishi faqat B rostgo'y bo'lgandagina mumkin. Javob: A yolg'onchi, B rostgo'y.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "rostgoy-yolgonchi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#f06df77c"
+    },
+    {
+      "q": "Anvar: «Bobur yolg'on gapiryapti». Bobur: «Doniyor yolg'on gapiryapti». Doniyor: «Anvar ham, Bobur ham yolg'on gapiryapti». Har biri yo doim rost, yo doim yolg'on gapirsa, kim rost gapiryapti?",
+      "v": [
+        "Faqat Anvar",
+        "Faqat Bobur",
+        "Faqat Doniyor",
+        "Anvar bilan Bobur"
+      ],
+      "t": 1,
+      "izoh": "Doniyor rost gapiradi deb faraz qilsak, Anvar ham, Bobur ham yolg'onchi bo'ladi. U holda Anvarning «Bobur yolg'onchi» gapi rost chiqadi, bu esa uning yolg'onchiligiga zid. Demak Doniyor yolg'onchi, shundan Anvar yoki Bobur rostgo'y ekani kelib chiqadi. Bobur «Doniyor yolg'onchi» deyapti va bu rost, demak Bobur rostgo'y, Anvar esa uni yolg'onchi deb ayblagani uchun yolg'onchi. Javob: faqat Bobur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "rostgoy-yolgonchi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#9af44724"
+    },
+    {
+      "q": "Sayyoh yo'l ayrig'ida turibdi: bir yo'l shaharga, ikkinchisi cho'lga olib boradi. Yonidagi yagona odam yo doim rost, yo doim yolg'on gapiradi. Bitta savol bilan to'g'ri yo'lni aniqlash uchun qaysi savolni berish kerak?",
+      "v": [
+        "«Shaharga qaysi yo'l olib boradi?»",
+        "«Siz rostgo'ymisiz?»",
+        "«Cho'l qaysi tomonda joylashgan?»",
+        "«Agar sizdan boshqa turdagi odamdan so'rasam, u qaysi yo'lni ko'rsatardi?»"
+      ],
+      "t": 3,
+      "izoh": "Savolga ikki qatlamli murojaat kiritilsa, rostgo'y ham, yolg'onchi ham bir xil noto'g'ri yo'lni ko'rsatadi. Rostgo'y yolg'onchining yolg'onini rost aytadi, yolg'onchi esa rostgo'yning rostini buzib aytadi. Demak javobda ko'rsatilgan yo'lning teskarisi shaharga olib boradi. Javob: «Agar sizdan boshqa turdagi odamdan so'rasam, u qaysi yo'lni ko'rsatardi?»",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "rostgoy-yolgonchi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#a1a9a7af"
+    },
+    {
+      "q": "Malika, Nodir va Otabek matematika, fizika va kimyo to'garaklariga qatnaydi, har biri faqat bittasiga. Malika kimyoga bormaydi, Nodir esa matematikaga ham, kimyoga ham bormaydi. Otabek qaysi to'garakka qatnaydi?",
+      "v": [
+        "Matematika to'garagiga",
+        "Fizika to'garagiga",
+        "Kimyo to'garagiga",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Nodir uchun ikkita to'garak inkor qilingan, demak unga faqat fizika qoladi. Malika kimyoga bormaydi va fizika band, shuning uchun u matematikaga qatnaydi. Otabekka esa qolgan yagona to'garak — kimyo to'g'ri keladi. Javob: kimyo to'garagiga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadvalli-mantiqiy-masala",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#8bfb0e70"
+    },
+    {
+      "q": "Aziz, Bahrom, Sanjar va Timur futbol, tennis, suzish va shaxmat bilan shug'ullanadi, har biri faqat bittasi bilan. Aziz suvga tushmaydi va koptok o'ynamaydi, Sanjar esa tennis o'ynaydi. Aziz qaysi sport bilan shug'ullanadi?",
+      "v": [
+        "Shaxmat bilan",
+        "Tennis bilan",
+        "Suzish bilan",
+        "Futbol bilan"
+      ],
+      "t": 0,
+      "izoh": "«Suvga tushmaydi» sharti Azizdan suzishni chiqaradi, «koptok o'ynamaydi» sharti esa ham futbolni, ham tennisni chiqaradi. Tennis allaqachon Sanjarga tegishli, demak Azizga faqat shaxmat qoladi. Javob: shaxmat bilan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadvalli-mantiqiy-masala",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#f7d7a829"
+    },
+    {
+      "q": "Zilola, Gulnora va Sevara Toshkent, Samarqand va Buxoro shaharlarida yashaydi. Zilola Toshkentda ham, Buxoroda ham yashamaydi, Sevara esa Toshkentda yashamaydi. Gulnora qaysi shaharda yashaydi?",
+      "v": [
+        "Samarqandda",
+        "Buxoroda",
+        "Ma'lumot yetarli emas",
+        "Toshkentda"
+      ],
+      "t": 3,
+      "izoh": "Zilola uchun ikkita shahar inkor qilingan, demak u Samarqandda yashaydi. Sevara Toshkentda yashamaydi va Samarqand band, shuning uchun unga Buxoro qoladi. Gulnoraga esa yagona bo'sh shahar — Toshkent to'g'ri keladi. Javob: Toshkentda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadvalli-mantiqiy-masala",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#fd8c15a4"
+    },
+    {
+      "q": "Jasur, Kamol va Lutfulla 9, 11 va 13 yoshda bo'lib, yoshlari har xil. Jasur Kamoldan katta, Lutfulla esa eng yosh emas. Kamol necha yoshda?",
+      "v": [
+        "11 yoshda",
+        "9 yoshda",
+        "13 yoshda",
+        "Aniqlash mumkin emas"
+      ],
+      "t": 1,
+      "izoh": "Lutfulla eng yosh emas, demak u 9 yoshda emas. Jasur Kamoldan katta bo'lgani uchun Jasur ham eng kichik bo'la olmaydi. Shunday qilib 9 yosh faqat Kamolga qoladi. Lutfulla 11 yoki 13 yoshda bo'lishi mumkin, lekin Kamolning yoshi yagona aniqlanadi. Javob: 9 yoshda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadvalli-mantiqiy-masala",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#8a30a0ae"
+    },
+    {
+      "q": "Sinfda deraza singan. Rustam: «Men sindirmadim». Shohruh: «Derazani Rustam sindirdi». Tohir: «Men sindirmadim». Uchtasidan faqat bittasi rost gapirgan bo'lsa, derazani kim sindirgan?",
+      "v": [
+        "Rustam",
+        "Shohruh",
+        "Tohir",
+        "Aniqlash mumkin emas"
+      ],
+      "t": 2,
+      "izoh": "Aybdor Rustam bo'lsa, Shohruh va Tohirning gaplari rost chiqadi, ya'ni ikkita rost — shartga zid. Aybdor Shohruh bo'lsa, Rustam va Tohir rost gapirgan bo'ladi, bu ham ikkita rost. Aybdor Tohir bo'lsa, faqat Rustamning gapi rost, qolgan ikkitasi yolg'on — shart bajariladi. Javob: Tohir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kim-aybdor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#318f42ee"
+    },
+    {
+      "q": "Uch o'quvchidan biri sinf jurnalini yashirgan. Alisher: «Buni Botir qildi». Botir: «Men qilmadim». Vali: «Buni Alisher qilgan». Ulardan faqat bittasi yolg'on gapirgan bo'lsa, jurnalni kim yashirgan?",
+      "v": [
+        "Alisher",
+        "Botir",
+        "Vali",
+        "Uchalasi ham aybdor emas"
+      ],
+      "t": 0,
+      "izoh": "Aybdor Alisher bo'lsa, uning gapi yolg'on, Botirning gapi rost, Valining gapi ham rost — roppa-rosa bitta yolg'on chiqadi. Aybdor Botir bo'lsa, Botir va Vali yolg'on gapirgan bo'ladi, ya'ni ikkita yolg'on. Aybdor Vali bo'lsa, Alisher bilan Vali yolg'on gapiradi, bu ham ikkita. Faqat birinchi holat shartga mos keladi. Javob: Alisher.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kim-aybdor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#167b37bd"
+    },
+    {
+      "q": "Do'kon kassasidan pul yo'qoldi. Farhod: «Pulni Gulom oldi». Gulom: «Men olmadim». Hamid: «Farhod pulni olmagan». Islom: «Gulom yolg'on gapiryapti». To'rt xodimdan faqat bittasi yolg'on gapirgan bo'lsa, pulni kim olgan?",
+      "v": [
+        "Farhod",
+        "Gulom",
+        "Hamid",
+        "Islom"
+      ],
+      "t": 1,
+      "izoh": "Islomning gapi «Gulom olgan» degani bilan bir xil ma'noda, ya'ni u Farhodning gapiga teng. Ikkalasi bir vaqtda yolg'on bo'lsa, yolg'onchi ikkita chiqadi va shart buziladi, demak ikkalasi ham rost. Bundan pulni Gulom olgani kelib chiqadi, uning «men olmadim» gapi esa yagona yolg'on bo'ladi. Hamidning gapi ham rost qoladi. Javob: Gulom.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kim-aybdor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#724bcac8"
+    },
+    {
+      "q": "Musobaqada Zafar, Nurafshon va Olmos jamoalari qatnashdi. G'olib haqida uchta taxmin aytildi: «G'olib Olmos emas», «G'olib Nurafshon emas» va «G'olib — Nurafshon». Taxminlardan roppa-rosa bittasi to'g'ri chiqqan bo'lsa, qaysi jamoa g'olib?",
+      "v": [
+        "Nurafshon jamoasi",
+        "Zafar jamoasi",
+        "G'olibni aniqlab bo'lmaydi",
+        "Olmos jamoasi"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi va uchinchi taxminlar bir-birining inkori, demak ulardan aynan bittasi doim to'g'ri bo'ladi. Shart bo'yicha to'g'ri taxmin bitta bo'lgani uchun birinchi taxmin yolg'on bo'lishi shart, ya'ni g'olib — Olmos. Buni tekshiramiz: ikkinchi taxmin to'g'ri, uchinchisi yolg'on, jami bitta to'g'ri taxmin. Javob: Olmos jamoasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kim-aybdor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#f081d437"
+    },
+    {
+      "q": "Sofizm: a = b bo'lsin. Ikkala tomonni a ga ko'paytiramiz: a² = ab. So'ng b² ni ayiramiz: a² − b² = ab − b². Ko'paytuvchilarga ajratamiz: (a − b)(a + b) = b(a − b). (a − b) ga qisqartirsak a + b = b, ya'ni 2b = b va 2 = 1. Xato qaysi qadamda?",
+      "v": [
+        "Ikkala tomonni a ga ko'paytirish qadamida",
+        "b² ni ayirish qadamida",
+        "(a − b) ga qisqartirish qadamida, chunki a = b bo'lgani uchun a − b = 0",
+        "Ko'paytuvchilarga ajratish qadamida"
+      ],
+      "t": 2,
+      "izoh": "Tenglikning ikkala tomonini bir xil songa ko'paytirish va bir xil sonni ayirish to'g'ri amallar. Ko'paytuvchilarga ajratish ham ayniyat bo'yicha to'g'ri bajarilgan. Ammo shartda a = b berilgani uchun a − b = 0 bo'ladi, nolga qisqartirish esa taqiqlanadi. Javob: (a − b) ga qisqartirish qadamida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sofizm-xatosi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#f97060d5"
+    },
+    {
+      "q": "Sofizm: √((−1)·(−1)) = √(−1) · √(−1) = −1, ammo √((−1)·(−1)) = √1 = 1. Demak 1 = −1. Bu mulohazadagi xato nimada?",
+      "v": [
+        "√(ab) = √a · √b qoidasi manfiy sonlar uchun o'rinli emas",
+        "√1 = 1 tengligi noto'g'ri",
+        "(−1)·(−1) = 1 tengligi noto'g'ri",
+        "Manfiy sonni ko'paytirishda ishora saqlanib qolishi kerak edi"
+      ],
+      "t": 0,
+      "izoh": "Ildizni ko'paytmadan ajratish qoidasi faqat manfiy bo'lmagan sonlar uchun isbotlangan. Bu yerda ildiz ostidagi ko'paytuvchilar manfiy, shuning uchun qoidani qo'llash mumkin emas. Qolgan tengliklar to'g'ri: (−1)·(−1) = 1 va √1 = 1. Javob: √(ab) = √a · √b qoidasi manfiy sonlar uchun o'rinli emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sofizm-xatosi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#96aa5ee7"
+    },
+    {
+      "q": "«Isbot»: 2 > 1 tengsizlikning ikkala tomoni lg0,5 ga ko'paytirilib, 2·lg0,5 > lg0,5, ya'ni lg0,25 > lg0,5 va bundan 0,25 > 0,5 xulosasi chiqarilgan. Xato qayerda?",
+      "v": [
+        "2·lg0,5 = lg0,25 tengligi noto'g'ri",
+        "lg0,5 manfiy son, unga ko'paytirilganda tengsizlik ishorasi almashishi kerak edi",
+        "lg funksiyasi o'suvchi emas, shuning uchun uni tashlab yuborib bo'lmaydi",
+        "2 > 1 tengsizligining o'zi noto'g'ri"
+      ],
+      "t": 1,
+      "izoh": "0,5 soni 1 dan kichik bo'lgani uchun lg0,5 manfiy chiqadi. Tengsizlikni manfiy songa ko'paytirganda ishora teskarisiga o'zgarishi shart, bu qadam esa bajarilmagan. Darajani logarifm oldiga chiqarish va o'nlik logarifmning o'suvchiligi to'g'ri ishlatilgan. Javob: lg0,5 manfiy son, unga ko'paytirilganda tengsizlik ishorasi almashishi kerak edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sofizm-xatosi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#9bbb9948"
+    },
+    {
+      "q": "Sofizm bilan paradoks o'rtasidagi farqni to'g'ri tushuntirgan variantni tanlang.",
+      "v": [
+        "Sofizm ham, paradoks ham xatosiz mulohazadir",
+        "Sofizm har doim rost, paradoks har doim yolg'on",
+        "Paradoksda ataylab yashirilgan xato bor, sofizmda esa xato yo'q",
+        "Sofizmda ataylab yashirilgan xato bor, paradoks esa mantiqning o'zidagi ziddiyatdan kelib chiqadi"
+      ],
+      "t": 3,
+      "izoh": "Sofizm — tashqi ko'rinishi ishonarli bo'lgan, lekin ichida ataylab yashirilgan xato saqlanadigan mulohaza, masalan nolga bo'lish. Paradoks esa xatosiz mulohaza bo'lib, u tushunchalarning o'zidagi ziddiyatni ochib beradi. Shuning uchun sofizmning xatosini topish mumkin, paradoksniki esa yo'q. Javob: sofizmda ataylab yashirilgan xato bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sofizm-xatosi",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#007bdc20"
+    },
+    {
+      "q": "Sartarosh paradoksida qishloq sartaroshi o'zi soqol olmaydigan barcha erkaklarning va faqat shularning soqolini oladi. Sartaroshning o'z soqolini kim oladi?",
+      "v": [
+        "Sartaroshning o'zi",
+        "Boshqa qishloqdan kelgan sartarosh",
+        "Savolga izchil javob yo'q, shartning o'zi ziddiyatli",
+        "Hech kim, u soqolini butunlay olmay qo'yadi"
+      ],
+      "t": 2,
+      "izoh": "Agar sartarosh o'z soqolini olsa, u «o'zi soqol olmaydiganlar» toifasiga kirmaydi, demak uni olmasligi kerak. Agar olmasa, u aynan shu toifaga kiradi va shart bo'yicha uning soqolini olishi kerak. Ikkala faraz ham o'z inkoriga olib keladi. Javob: savolga izchil javob yo'q, shartning o'zi ziddiyatli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "paradoks-tahlili",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#050592f3"
+    },
+    {
+      "q": "Mantiq darsida «bu jumla yolg'on» degan gap muhokama qilindi. Bu gapning rostlik qiymati haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "Unga rost yoki yolg'on qiymat berib bo'lmaydi, bu yolg'onchi paradoksi",
+        "U rost mulohaza deb qabul qilinadi",
+        "U yolg'on mulohaza deb qabul qilinadi",
+        "U predikat, chunki tarkibida o'zgaruvchi bor"
+      ],
+      "t": 0,
+      "izoh": "Gapni rost deb faraz qilsak, unda aytilgani bo'yicha u yolg'on bo'lishi kerak. Yolg'on deb faraz qilsak, aytilgani bajarilmaydi, ya'ni u rost bo'lib qoladi. Har ikki faraz ham ziddiyatga olib keladi, shuning uchun gapga rostlik qiymati berilmaydi. Javob: unga rost yoki yolg'on qiymat berib bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "paradoks-tahlili",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#f4155b00"
+    },
+    {
+      "q": "Bir talaba «men hech qachon rost gapirmayman» dedi. Bu gapdan qanday mantiqiy xulosa kelib chiqadi?",
+      "v": [
+        "Bu gap rost, demak u hech qachon rost gapirmaydi",
+        "Bu gap ham rost, ham yolg'on bo'lishi mumkin",
+        "Bu gapdan hech qanday xulosa chiqmaydi",
+        "Bu gap yolg'on, demak u ba'zan rost gapiradi"
+      ],
+      "t": 3,
+      "izoh": "Gap rost bo'lsa, talaba hech qachon rost gapirmaydi, lekin u hozir rost gapirdi — ziddiyat. Demak gap yolg'on bo'lishi kerak. Yolg'on bo'lishi esa «hech qachon rost gapirmayman» tasdig'ining inkori, ya'ni u ba'zan rost gapiradi degani. Javob: bu gap yolg'on, demak u ba'zan rost gapiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "paradoks-tahlili",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#f7cedb46"
+    },
+    {
+      "q": "Krokodil paradoksida krokodil bolani qaytarish sharti sifatida onadan o'zining nima qilishini to'g'ri aytishni talab qildi. Ona «sen bolani qaytarmaysan» deb javob berdi. Bu vaziyat nimani ko'rsatadi?",
+      "v": [
+        "Krokodil bolani albatta qaytaradi",
+        "Krokodil shartni na bajara oladi, na buza oladi, ya'ni ziddiyat yuzaga keladi",
+        "Krokodil bolani albatta qaytarmaydi",
+        "Onaning javobi yolg'on bo'lgani uchun shart bekor bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Krokodil bolani qaytarsa, onaning bashorati yolg'on chiqadi va shart bo'yicha qaytarmasligi kerak edi. Qaytarmasa, onaning bashorati rost chiqadi va shart bo'yicha qaytarishi kerak edi. Har ikki yo'l ham o'z shartini buzadi. Javob: krokodil shartni na bajara oladi, na buza oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "paradoks-tahlili",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#ea4053b9"
+    },
+    {
+      "q": "Z = {−5, −4, −3, −2, −1, 0, 1, 2, 3, 4, 5} to'plamda F(x): «x² ≤ 9» predikatining rostlik to'plamida nechta element bor?",
+      "v": [
+        "9 ta",
+        "6 ta",
+        "7 ta",
+        "4 ta"
+      ],
+      "t": 2,
+      "izoh": "x² ≤ 9 sharti −3 ≤ x ≤ 3 ga teng kuchli. Berilgan to'plamdan bu oraliqqa −3, −2, −1, 0, 1, 2, 3 tushadi. Ularni sanasak yettita element chiqadi, nolni tushirib qoldirmaslik kerak. Javob: 7 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "rostlik-toplami-elementlari-soni",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#59af9f0a"
+    },
+    {
+      "q": "Natural sonlar orasida G(x): «x soni 36 ning bo'luvchisi» predikati berilgan. Uning rostlik to'plami nechta elementdan iborat?",
+      "v": [
+        "9 ta",
+        "6 ta",
+        "8 ta",
+        "18 ta"
+      ],
+      "t": 0,
+      "izoh": "36 ning bo'luvchilarini juftlab yozamiz: 1 va 36, 2 va 18, 3 va 12, 4 va 9, hamda 6. Oxirgi juftlikda ikkala ko'paytuvchi bir xil, chunki 36 to'la kvadrat. Jami to'qqizta bo'luvchi hosil bo'ladi. Javob: 9 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "rostlik-toplami-elementlari-soni",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#7c65a5b8"
+    },
+    {
+      "q": "Kutubxonada 45 ta kitob bor, ularning 28 tasi o'zbek tilida. «x kitob o'zbek tilida emas» predikatining rostlik to'plamida nechta kitob bo'ladi?",
+      "v": [
+        "28 ta",
+        "45 ta",
+        "73 ta",
+        "17 ta"
+      ],
+      "t": 3,
+      "izoh": "Inkor predikatning rostlik to'plami universal to'plamning qolgan qismidan iborat. Universal to'plamda 45 kitob, o'zbek tilidagilari 28 ta. Demak boshqa tildagilar 45 − 28 = 17 ta. Javob: 17 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "rostlik-toplami-elementlari-soni",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#baf70a89"
+    },
+    {
+      "q": "Mantiq qoidalariga ko'ra ¬∀x P(x) mulohazasiga ekvivalent bo'lgan simvolik yozuvni tanlang.",
+      "v": [
+        "∀x ¬P(x)",
+        "∃x ¬P(x)",
+        "¬∃x ¬P(x)",
+        "∃x P(x)"
+      ],
+      "t": 1,
+      "izoh": "Umumiylik kvantorining inkori de Morgan qoidasining kvantorli ko'rinishiga bo'ysunadi. Unga ko'ra inkor kvantorni almashtiradi va predikat oldiga o'tadi. Demak ¬∀x P(x) yozuvi ∃x ¬P(x) ga teng kuchli. Javob: ∃x ¬P(x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvantorli-ekvivalent",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#da1b4939"
+    },
+    {
+      "q": "«Hech bir talaba imtihondan yiqilmadi» va «barcha talabalar imtihondan o'tdi» mulohazalari orasidagi munosabatni to'g'ri ko'rsating.",
+      "v": [
+        "Birinchisi ikkinchisining inkori",
+        "Ular bir-biriga zid mulohazalar",
+        "Ular ekvivalent mulohazalar",
+        "Ular orasida hech qanday mantiqiy bog'liqlik yo'q"
+      ],
+      "t": 2,
+      "izoh": "Birinchi gap ∀x ¬P(x) ko'rinishida, bu yerda P(x) «x yiqildi» degani. Imtihonda yiqilmaslik va o'tish bir xil holat bo'lgani uchun ikkinchi gap ∀x Q(x) ko'rinishida bo'lib, Q(x) aynan ¬P(x) ga teng. Demak ikkala mulohaza bir xil ma'noni turlicha ifodalaydi. Javob: ular ekvivalent mulohazalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvantorli-ekvivalent",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#926e85ea"
+    },
+    {
+      "q": "Implikatsiya qatnashgan ∀x (P(x) → Q(x)) mulohazasining inkori qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "∃x (P(x) ∧ ¬Q(x))",
+        "∀x (P(x) ∧ ¬Q(x))",
+        "∃x (¬P(x) → Q(x))",
+        "∀x (¬P(x) → ¬Q(x))"
+      ],
+      "t": 0,
+      "izoh": "Avval umumiylik kvantorining inkori mavjudlik kvantoriga aylanadi. So'ng implikatsiyaning inkori olinadi: P → Q shartning inkori P ∧ ¬Q ko'rinishida bo'ladi. Ikkalasini birlashtirsak ∃x (P(x) ∧ ¬Q(x)) hosil bo'ladi. Javob: ∃x (P(x) ∧ ¬Q(x)).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvantorli-ekvivalent",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#e2ba104e"
+    },
+    {
+      "q": "«Ba'zi o'quvchilar sport bilan shug'ullanmaydi» mulohazasiga ekvivalent bo'lgan variantni tanlang.",
+      "v": [
+        "Hech bir o'quvchi sport bilan shug'ullanmaydi",
+        "«Barcha o'quvchilar sport bilan shug'ullanadi» degan tasdiq yolg'on",
+        "Barcha o'quvchilar sport bilan shug'ullanadi",
+        "Ba'zi o'quvchilar sport bilan shug'ullanadi"
+      ],
+      "t": 1,
+      "izoh": "Berilgan gap ∃x ¬P(x) ko'rinishida yoziladi. Kvantorlar qoidasiga ko'ra bu ¬∀x P(x) ga ekvivalent. So'z bilan aytganda «hammasi shug'ullanadi» degan tasdiqning yolg'onligini bildiradi. «Hech biri» varianti esa ancha kuchli tasdiq bo'lib, unga teng emas. Javob: «barcha o'quvchilar sport bilan shug'ullanadi» degan tasdiq yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvantorli-ekvivalent",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#4f4a7cd8"
+    },
+    {
+      "q": "∀x (x + 5 > 0) mulohazasi natural sonlar to'plamida va butun sonlar to'plamida qanday qiymat oladi?",
+      "v": [
+        "Ikkala to'plamda ham rost",
+        "Natural sonlarda yolg'on, butun sonlarda rost",
+        "Ikkala to'plamda ham yolg'on",
+        "Natural sonlarda rost, butun sonlarda yolg'on"
+      ],
+      "t": 3,
+      "izoh": "Natural sonlar musbat bo'lgani uchun x + 5 har doim beshdan katta, demak mulohaza rost. Butun sonlarda esa manfiylar ham bor: x = −7 olsak x + 5 = −2 chiqadi va shart buziladi. Bitta qarshi misol umumiylik mulohazasini yiqitadi. Javob: natural sonlarda rost, butun sonlarda yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sohaga-bogliq-rostlik",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#3a51f8be"
+    },
+    {
+      "q": "∃x (x² = 5) mulohazasi ratsional sonlar to'plamida va haqiqiy sonlar to'plamida qanday baholanadi?",
+      "v": [
+        "Ikkalasida ham rost",
+        "Ratsional sonlarda rost, haqiqiy sonlarda yolg'on",
+        "Ratsional sonlarda yolg'on, haqiqiy sonlarda rost",
+        "Ikkalasida ham yolg'on"
+      ],
+      "t": 2,
+      "izoh": "Tenglamaning yechimlari √5 va −√5 bo'lib, ular irratsional sonlardir. Ratsional sonlar orasida bunday son yo'q, shuning uchun u yerda mulohaza yolg'on. Haqiqiy sonlar to'plamida esa √5 mavjud, demak mulohaza rost. Javob: ratsional sonlarda yolg'on, haqiqiy sonlarda rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sohaga-bogliq-rostlik",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#94b6d63f"
+    },
+    {
+      "q": "«Har qanday sonning teskarisi shu to'plamda mavjud» mulohazasi noldan farqli butun sonlar to'plamida va noldan farqli ratsional sonlar to'plamida qanday baholanadi?",
+      "v": [
+        "Butun sonlarda yolg'on, noldan farqli ratsional sonlarda rost",
+        "Ikkala to'plamda ham rost bo'ladi",
+        "Butun sonlarda rost, ratsional sonlarda yolg'on",
+        "Ikkala to'plamda ham yolg'on bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Butun sonlarda 3 ning teskarisi 1/3 bo'ladi, bu esa butun son emas, demak qarshi misol topildi. Ratsional sonlarda esa a/b ko'rinishidagi har bir noldan farqli son uchun b/a ham ratsional bo'ladi. Shuning uchun ikkinchi to'plamda mulohaza rost. Javob: butun sonlarda yolg'on, noldan farqli ratsional sonlarda rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sohaga-bogliq-rostlik",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#da2ad24c"
+    },
+    {
+      "q": "∀x ∃y (x = 2y) mulohazasi butun sonlar to'plamida va haqiqiy sonlar to'plamida qanday qiymat oladi?",
+      "v": [
+        "Ikkala sohada ham rost",
+        "Butun sonlarda yolg'on, haqiqiy sonlarda rost",
+        "Butun sonlarda rost, haqiqiy sonlarda yolg'on",
+        "Ikkala sohada ham yolg'on"
+      ],
+      "t": 1,
+      "izoh": "Mulohaza «har bir son ikkilangan songa teng bo'ladigan y bor» degani, ya'ni y = x : 2. Butun sonlarda x = 7 olsak y = 3,5 chiqadi, bu butun son emas, demak mulohaza yolg'on. Haqiqiy sonlarda esa har qanday x uchun x : 2 ham haqiqiy son, shuning uchun mulohaza rost. Javob: butun sonlarda yolg'on, haqiqiy sonlarda rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sohaga-bogliq-rostlik",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#e83e3468"
+    },
+    {
+      "q": "P(x): «x soni 6 ga bo'linadi», Q(x): «x soni 3 ga bo'linadi». Natural sonlar to'plamida ∀x (P(x) → Q(x)) mulohazasining rostligini aniqlang.",
+      "v": [
+        "Yolg'on, chunki 3 ga bo'linadigan sonlar 6 ga bo'linmasligi mumkin",
+        "Yolg'on, chunki x = 9 qarshi misol bo'ladi",
+        "Rost, 6 ga bo'linadigan har bir son 3 ga ham bo'linadi",
+        "Rost, chunki 3 va 6 o'zaro tub sonlar"
+      ],
+      "t": 2,
+      "izoh": "6 ga bo'linadigan son 6k ko'rinishida yoziladi, bu esa 3·(2k) ga teng, demak u 3 ga ham bo'linadi. Implikatsiya faqat shart rost, xulosa yolg'on bo'lgandagina buziladi, bunday hol esa yuz bermaydi. x = 9 da shartning o'zi bajarilmaydi, shuning uchun u qarshi misol bo'la olmaydi. Javob: rost, 6 ga bo'linadigan har bir son 3 ga ham bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "implikatsiyali-predikat",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#bb8b4293"
+    },
+    {
+      "q": "Maktabda «agar o'quvchi olimpiada g'olibi bo'lsa, u imtihondan ozod qilinadi» qoidasi bor. Bu qoida qaysi holatda buzilgan bo'ladi?",
+      "v": [
+        "Olimpiada g'olibi bo'lmagan, lekin imtihondan ozod qilingan o'quvchi topilsa",
+        "Barcha o'quvchilar imtihon topshirsa",
+        "Olimpiada g'olibi imtihondan ozod qilinsa",
+        "Olimpiada g'olibi bo'lgan, lekin imtihondan ozod qilinmagan o'quvchi topilsa"
+      ],
+      "t": 3,
+      "izoh": "Qoida P → Q ko'rinishidagi implikatsiya bo'lib, u faqat bitta holatda yolg'on bo'ladi: shart bajarilgan, natija esa bajarilmagan. Demak g'olib bo'lgan, lekin ozod qilinmagan o'quvchi qoidani buzadi. G'olib bo'lmagan o'quvchining ozod qilinishi qoidaga zid emas, chunki qoida bunday holatga hech narsa demaydi. Javob: olimpiada g'olibi bo'lgan, lekin imtihondan ozod qilinmagan o'quvchi topilsa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "implikatsiyali-predikat",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#4f644ea9"
+    },
+    {
+      "q": "R(x): «x to'rtburchak kvadrat», S(x): «x to'rtburchak romb». To'rtburchaklar to'plamida ∀x (R(x) → S(x)) mulohazasi rostmi?",
+      "v": [
+        "Rost, chunki har bir kvadrat rombning xususiy holi",
+        "Yolg'on, chunki har bir romb kvadrat emas",
+        "Yolg'on, chunki kvadrat va romb butunlay har xil shakllar",
+        "Rost, chunki har bir romb kvadrat bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Romb — barcha tomonlari teng bo'lgan to'rtburchak. Kvadratda ham to'rtta tomon teng, shuning uchun har bir kvadrat rombdir. Implikatsiya shu yo'nalishda tekshiriladi, teskarisi esa talab qilinmaydi. Javob: rost, chunki har bir kvadrat rombning xususiy holi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "implikatsiyali-predikat",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#0ea4b2f5"
+    },
+    {
+      "q": "T = {1, 2, 3, 4, 5, 6} to'plamda A(x): «x > 3», B(x): «x juft son» predikatlari berilgan. ∀x ∈ T (A(x) → B(x)) mulohazasi rostmi?",
+      "v": [
+        "Rost, chunki 4 va 6 juft sonlar",
+        "Yolg'on, chunki x = 2 da A(2) yolg'on bo'lsa ham implikatsiya buziladi",
+        "Yolg'on, chunki x = 5 da shart rost, xulosa esa yolg'on",
+        "Rost, chunki barcha juft sonlar 3 dan katta"
+      ],
+      "t": 2,
+      "izoh": "Implikatsiyani buzadigan element A(x) rost, B(x) yolg'on bo'lgan element bo'lishi kerak. T dagi 3 dan katta sonlar: 4, 5 va 6. Ulardan 5 toq, demak A(5) rost, B(5) yolg'on va implikatsiya buziladi. x = 2 da esa A(2) yolg'on, shuning uchun implikatsiya avtomatik rost bo'ladi. Javob: yolg'on, chunki x = 5 da shart rost, xulosa esa yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "implikatsiyali-predikat",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#9dbe96d8"
+    },
+    {
+      "q": "Agar predikatning aniqlanish sohasi bo'sh to'plam bo'lsa, ∀x P(x) va ∃x P(x) mulohazalari qanday baholanadi?",
+      "v": [
+        "Ikkalasi ham rost bo'ladi",
+        "∀x P(x) rost, ∃x P(x) yolg'on",
+        "∀x P(x) yolg'on, ∃x P(x) rost",
+        "Ikkalasi ham yolg'on bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Umumiylik mulohazasi faqat qarshi misol topilganda yolg'on bo'ladi. Bo'sh to'plamda esa hech qanday element yo'q, demak qarshi misol ham topilmaydi va mulohaza rost deb qabul qilinadi. Mavjudlik mulohazasi uchun aksincha, kamida bitta element kerak, u esa yo'q. Javob: ∀x P(x) rost, ∃x P(x) yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bosh-toplamda-kvantor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#16e785a9"
+    },
+    {
+      "q": "Sinfda bironta ham chet ellik o'quvchi yo'q. Shu sinf haqida «har bir chet ellik o'quvchi ingliz tilida gapiradi» mulohazasi aytildi. U qanday baholanadi?",
+      "v": [
+        "Yolg'on, chunki bunday o'quvchi yo'q",
+        "Ma'nosiz, chunki bunday o'quvchi yo'q",
+        "Rostligini aniqlash uchun qo'shimcha ma'lumot kerak",
+        "Rost, chunki shartni buzadigan o'quvchi umuman yo'q"
+      ],
+      "t": 3,
+      "izoh": "Bu mulohaza aslida implikatsiya: agar o'quvchi chet ellik bo'lsa, u ingliz tilida gapiradi. Sinfda chet ellik o'quvchi bo'lmagani uchun shart hech kimda bajarilmaydi. Demak implikatsiyani buzadigan holat yuz bermaydi va mulohaza rost hisoblanadi. Javob: rost, chunki shartni buzadigan o'quvchi umuman yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bosh-toplamda-kvantor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#47faa9c6"
+    },
+    {
+      "q": "M = {x ∈ N | x < 1} to'plamda «M ning har bir elementi 100 dan katta» mulohazasi berilgan. Uning rostligini aniqlang.",
+      "v": [
+        "Rost, chunki M bo'sh to'plam",
+        "Yolg'on, chunki 100 dan katta element yo'q",
+        "Rost, chunki 0 soni 100 dan katta",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Natural sonlar 1 dan boshlanadi, shuning uchun 1 dan kichik natural son yo'q va M bo'sh to'plam. Bo'sh to'plamda umumiylik kvantorli mulohaza qarshi misolsiz qoladi. Bunday mulohaza kelishuvga ko'ra rost deb qabul qilinadi. Javob: rost, chunki M bo'sh to'plam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bosh-toplamda-kvantor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#97e65d53"
+    },
+    {
+      "q": "«Barcha matematiklar mantiqni biladi» va «Sardar — matematik» mulohazalaridan qanday xulosa kelib chiqadi?",
+      "v": [
+        "Sardar mantiqni bilmaydi",
+        "Mantiqni biladigan har bir odam matematik",
+        "Sardar mantiqni biladi",
+        "Hech qanday xulosa chiqmaydi"
+      ],
+      "t": 2,
+      "izoh": "Birinchi mulohaza ∀x (matematik(x) → mantiqni biladi(x)) ko'rinishida yoziladi. Ikkinchi mulohaza Sardar uchun shartning bajarilishini bildiradi. Umumiylik kvantorini Sardarga qo'llasak, implikatsiyadan natija kelib chiqadi. Teskari yo'nalishdagi xulosa esa asossiz bo'lardi. Javob: Sardar mantiqni biladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "silogizm-xulosa",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#547cc6c1"
+    },
+    {
+      "q": "«Ba'zi sportchilar shaxmatchi» va «barcha shaxmatchilar diqqatli» mulohazalaridan qaysi xulosa mantiqan to'g'ri chiqadi?",
+      "v": [
+        "Barcha sportchilar diqqatli",
+        "Ba'zi sportchilar diqqatli",
+        "Barcha diqqatli odamlar sportchi",
+        "Hech bir sportchi diqqatli emas"
+      ],
+      "t": 1,
+      "izoh": "Birinchi shartga ko'ra sportchi ham, shaxmatchi ham bo'lgan kamida bitta odam bor. Ikkinchi shart bunday odamning diqqatli ekanini beradi. Demak diqqatli sportchi mavjud, ya'ni «ba'zi sportchilar diqqatli» xulosasi chiqadi. Barcha sportchilar haqida esa hech narsa aytilmagan. Javob: ba'zi sportchilar diqqatli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "silogizm-xulosa",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#3d339f04"
+    },
+    {
+      "q": "«Barcha kvadratlar to'rtburchak» va «bu shakl to'rtburchak» ma'lumotlaridan «bu shakl kvadrat» degan xulosa chiqarildi. Bu xulosa to'g'rimi?",
+      "v": [
+        "To'g'ri, chunki kvadrat ham to'rtburchak hisoblanadi",
+        "To'g'ri, chunki har bir to'rtburchak kvadrat",
+        "Aniqlab bo'lmaydi, ma'lumot yetarli emas",
+        "Noto'g'ri, teskari yo'nalishdagi bunday xulosa asossiz"
+      ],
+      "t": 3,
+      "izoh": "Berilgan qoida «kvadrat bo'lsa, to'rtburchak bo'ladi» yo'nalishida ishlaydi. Xulosada esa teskari yo'nalish qo'llanilgan, ya'ni natijadan shart chiqarilgan. Bunday o'tish mantiqan asossiz: to'g'ri to'rtburchak ham to'rtburchak, lekin kvadrat emas. Javob: noto'g'ri, teskari yo'nalishdagi bunday xulosa asossiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "silogizm-xulosa",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#3fe58871"
+    },
+    {
+      "q": "Firmada «barcha menejerlar ingliz tilini biladi» qoidasi amal qiladi. Nodirbek ingliz tilini bilmaydi. Bundan qanday xulosa kelib chiqadi?",
+      "v": [
+        "Nodirbek menejer emas",
+        "Nodirbek menejer",
+        "Nodirbek ingliz tilini o'rganishi kerak",
+        "Hech qanday xulosa chiqmaydi"
+      ],
+      "t": 0,
+      "izoh": "Qoida «menejer bo'lsa, ingliz tilini biladi» implikatsiyasidir. Nodirbek uchun natija bajarilmagani ma'lum, ya'ni ¬Q rost. Implikatsiyaning teskari o'girilgan shakli ¬Q → ¬P ga ko'ra shart ham bajarilmaydi. Javob: Nodirbek menejer emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "silogizm-xulosa",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#8817a63e"
+    },
+    {
+      "q": "Kunlik savdo hisoboti: Chinor do'koni 4,2 mln so'm, Lola 3,8 mln so'm, Bahor 5,1 mln so'm, Nurafshon 2,9 mln so'm. «Har bir do'kon 3 mln so'mdan ortiq savdo qildi» mulohazasi qanday baholanadi?",
+      "v": [
+        "Rost, chunki o'rtacha savdo 4 mln so'mdan ortiq",
+        "Rost, to'rtala do'kon ham shartni bajardi",
+        "Yolg'on, Nurafshon do'koni 3 mln so'mdan kam savdo qildi",
+        "Yolg'on, chunki hech bir do'kon 3 mln so'mdan ortiq savdo qilmadi"
+      ],
+      "t": 2,
+      "izoh": "Umumiylik mulohazasi jadvaldagi har bir qatorda tekshiriladi. Uchta do'kon shartni bajaradi, Nurafshonning savdosi esa 2,9 mln so'm bo'lib, 3 mln dan kam. Bitta qarshi misol butun mulohazani yolg'onga chiqaradi, o'rtacha qiymat bu yerda hisobga olinmaydi. Javob: yolg'on, Nurafshon do'koni 3 mln so'mdan kam savdo qildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-malumot-kvantor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#7f3a2f23"
+    },
+    {
+      "q": "Beshta o'quvchining matematikadan ballari: 78, 85, 62, 91 va 70. «Kamida bitta o'quvchi 90 balldan yuqori oldi» va «barcha o'quvchilar 60 balldan yuqori oldi» mulohazalarining rostligini aniqlang.",
+      "v": [
+        "Faqat birinchisi rost",
+        "Ikkala mulohaza ham rost",
+        "Faqat ikkinchisi rost",
+        "Ikkala mulohaza ham yolg'on"
+      ],
+      "t": 1,
+      "izoh": "Birinchi mulohaza mavjudlik kvantorli: 91 balli 90 dan yuqori, demak u rost. Ikkinchisi umumiylik kvantorli: eng past ball 62 bo'lib, u ham 60 dan yuqori. Demak barcha ballar shartni qanoatlantiradi va ikkinchi mulohaza ham rost. Javob: ikkala mulohaza ham rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-malumot-kvantor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#00c792bd"
+    },
+    {
+      "q": "Sayohat guruhidagi besh turistning yoshi: 24, 31, 19, 45 va 28. «Guruhda 20 yoshdan kichik turist yo'q» mulohazasining inkori rostmi?",
+      "v": [
+        "Yolg'on, chunki barcha turistlar 20 yoshdan katta",
+        "Rost, chunki o'rtacha yosh 20 dan katta",
+        "Yolg'on, chunki guruhdagi turistlar soni beshta",
+        "Rost, chunki guruhda 19 yoshli turist bor"
+      ],
+      "t": 3,
+      "izoh": "Dastlabki mulohaza ∀x ¬P(x) ko'rinishida, bu yerda P(x) «x turist 20 yoshdan kichik» degani. Uning inkori ∃x P(x), ya'ni 20 yoshdan kichik turist mavjud. Ro'yxatda 19 yoshli turist bor, demak inkor rost bo'ladi. Javob: rost, chunki guruhda 19 yoshli turist bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-malumot-kvantor",
+      "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar#6e30bb4e"
+    }
+  ]
+}

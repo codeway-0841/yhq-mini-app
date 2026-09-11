@@ -1,0 +1,546 @@
+{
+  "nom": "18-mavzu. Elementlarning oksidlanish darajasi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Atomlarning bergan yoki olgan elektronlar soni nima deb ataladi?",
+      "v": [
+        "Oksidlanish darajasi",
+        "Valentlik",
+        "Elektrmanfiylik",
+        "Ionlashuv energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Atomlarning bergan yoki olgan elektronlar soni shu atomning oksidlanish darajasi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#0b969c8b"
+    },
+    {
+      "q": "Elektronlarni o'zidan siljitgan atomlar qanday ataladi?",
+      "v": [
+        "Elektron bergan atomlar",
+        "Elektron olgan atomlar",
+        "Neytral atomlar",
+        "Inert atomlar"
+      ],
+      "t": 0,
+      "izoh": "Elektronlarni o'zidan siljitgan atomlarni 'elektron bergan' atomlar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#ec270c73"
+    },
+    {
+      "q": "Elektronlarni o'ziga tortgan atomlar qanday ataladi?",
+      "v": [
+        "Elektron olgan atomlar",
+        "Elektron bergan atomlar",
+        "Erkin atomlar",
+        "Ionlashgan atomlar"
+      ],
+      "t": 0,
+      "izoh": "Elektronlarni o'ziga tortgan atomlarni 'elektron olgan' atomlar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#708ac382"
+    },
+    {
+      "q": "Element 1 ta elektron bersa, qanday oksidlanish darajasini hosil qiladi?",
+      "v": [
+        "+1",
+        "-1",
+        "+2",
+        "-2"
+      ],
+      "t": 0,
+      "izoh": "1 ta elektron bersa +1, olsa -1 oksidlanish darajasi hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#85b5377c"
+    },
+    {
+      "q": "Element 2 ta elektron olsa, qanday oksidlanish darajasini hosil qiladi?",
+      "v": [
+        "-2",
+        "+2",
+        "-1",
+        "+1"
+      ],
+      "t": 0,
+      "izoh": "2 ta elektron bersa +2, olsa -2 oksidlanish darajasi hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#bf49865b"
+    },
+    {
+      "q": "Element 3 ta elektron bersa, qanday oksidlanish darajasini hosil qiladi?",
+      "v": [
+        "+3",
+        "-3",
+        "+2",
+        "-2"
+      ],
+      "t": 0,
+      "izoh": "3 ta elektron bersa +3, olsa -3 oksidlanish darajasi hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#97616fed"
+    },
+    {
+      "q": "Ionlarning zaryadini yozishda zaryad miqdori qayerga yoziladi?",
+      "v": [
+        "\"+\" yoki \"-\" ishorasining oldiga",
+        "\"+\" yoki \"-\" ishorasining keyin",
+        "Element belgisining ostiga",
+        "Element belgisining chap tomoniga"
+      ],
+      "t": 0,
+      "izoh": "Ionlarning zaryadini yozishda zaryad miqdori \"+\" yoki \"-\" ishoralarining oldiga yoziladi (SO4 2-, Al 3+).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#9dc77d67"
+    },
+    {
+      "q": "Elementning oksidlanish darajasini yozishda qiymat qayerga yoziladi?",
+      "v": [
+        "\"+\" yoki \"-\" ishorasidan keyin",
+        "\"+\" yoki \"-\" ishorasidan oldin",
+        "Element belgisining ostiga",
+        "Qavs ichiga"
+      ],
+      "t": 0,
+      "izoh": "Oksidlanish darajasi qiymati \"+\" yoki \"-\" ishoralaridan keyin yoziladi (Na+1, Al+3, S-2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#1fe9a8d7"
+    },
+    {
+      "q": "Oddiy moddalarda (H2, Cl2, N2, Fe) elementning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "Nolga",
+        "+1 ga",
+        "-1 ga",
+        "+2 ga"
+      ],
+      "t": 0,
+      "izoh": "Qutbsiz kovalent bog'lanishli oddiy moddalarda oksidlanish darajasi nolga teng, chunki umumiy juft elektronlar hech qaysi atomga siljimagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#6fe80490"
+    },
+    {
+      "q": "Oddiy moddalarda oksidlanish darajasining nolga tengligining sababi nima?",
+      "v": [
+        "Umumiy juft elektronlar hech qaysi atomga tomon siljimagan",
+        "Atomlar elektron bermaydi",
+        "Molekula zaryadlangan",
+        "Atomlar ionlashgan"
+      ],
+      "t": 0,
+      "izoh": "Chunki atomlar orasida hosil bo'lgan umumiy juft elektronlar hech qaysi atomga tomon siljimagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#7995b956"
+    },
+    {
+      "q": "Al2S3 da aluminiyning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "+3",
+        "-3",
+        "+2",
+        "-2"
+      ],
+      "t": 0,
+      "izoh": "Aluminiy tashqi energetik qavatidagi uchta elektronni berib +3 oksidlanish darajasini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#5b56b73b"
+    },
+    {
+      "q": "Al2S3 da oltingugurtning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "-2",
+        "+2",
+        "+6",
+        "-3"
+      ],
+      "t": 0,
+      "izoh": "Oltingugurt tashqi qavatiga ikkita elektron olib -2 oksidlanish darajasini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#852f64e5"
+    },
+    {
+      "q": "Kimyoviy birikmalarni tashkil etuvchi atomlarning oksidlanish darajalari yig'indisi nechaga teng?",
+      "v": [
+        "Nolga",
+        "Guruh raqamiga",
+        "+1 ga",
+        "-2 ga"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy birikmalarni tashkil etuvchi atomlarning oksidlanish darajalari yig'indisi hamisha nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#a25b32d1"
+    },
+    {
+      "q": "Birikmada oksidlanish darajalarini yozishda elektron bergan element belgisi qayerga yoziladi?",
+      "v": [
+        "Avval (birinchiga)",
+        "Keyin (ikkinchiga)",
+        "Qavs ichiga",
+        "Formula ostiga"
+      ],
+      "t": 0,
+      "izoh": "Elektron bergan (elektr musbat) element belgisi avval, elektron olgan (elektr manfiy) element belgisi keyin yoziladi (NH3, CH4 istisno).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#11ddb775"
+    },
+    {
+      "q": "Birikmada elektron bergan element belgisi avval yozilishiga istisno qaysi moddalar?",
+      "v": [
+        "NH3 va CH4",
+        "H2O va CO2",
+        "NaCl va MgO",
+        "H2SO4 va HNO3"
+      ],
+      "t": 0,
+      "izoh": "NH3, CH4 lar istisno sifatida keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#4200ca00"
+    },
+    {
+      "q": "H3PO4 da fosforning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "+5",
+        "+3",
+        "-3",
+        "+4"
+      ],
+      "t": 0,
+      "izoh": "3(+1) + x + 4(-2) = 0 dan x = +5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#dbfca118"
+    },
+    {
+      "q": "Fosfat kislotadagi eng elektrmanfiy element qaysi?",
+      "v": [
+        "Kislorod",
+        "Fosfor",
+        "Vodorod",
+        "Xlor"
+      ],
+      "t": 0,
+      "izoh": "Fosfat kislotada eng elektrmanfiy element kislorod.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#a06c74c3"
+    },
+    {
+      "q": "Metall atomlarining barchasi elektron bergani uchun ular qanday oksidlanish darajasini hosil qiladi?",
+      "v": [
+        "Faqat musbat",
+        "Faqat manfiy",
+        "Ham musbat, ham manfiy",
+        "Faqat nol"
+      ],
+      "t": 0,
+      "izoh": "Metall atomlarining barchasi elektron beradi, shuning uchun faqat musbat oksidlanish darajasini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#c4d5446e"
+    },
+    {
+      "q": "Metallmaslardan faqat -1 oksidlanish darajasiga ega bo'lgan element qaysi?",
+      "v": [
+        "Ftor",
+        "Kislorod",
+        "Xlor",
+        "Vodorod"
+      ],
+      "t": 0,
+      "izoh": "Metallmaslardan ftor faqat -1 oksidlanish darajasiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#175fe962"
+    },
+    {
+      "q": "Vodorod metallar bilan hosil qilgan gidridlarida qanday oksidlanish darajasini hosil qiladi?",
+      "v": [
+        "-1",
+        "+1",
+        "+2",
+        "-2"
+      ],
+      "t": 0,
+      "izoh": "Vodorod gidridlarida -1, qolgan birikmalarda +1 oksidlanish darajasini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#11df4cdc"
+    },
+    {
+      "q": "Kislorod ftor bilan birikmada qanday oksidlanish darajasini namoyon qiladi?",
+      "v": [
+        "+2",
+        "-2",
+        "-1",
+        "+1"
+      ],
+      "t": 0,
+      "izoh": "Kislorod atomi ftorga elektron beradi va +2, qolgan birikmalarida -2 oksidlanish darajasini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#744c34dd"
+    },
+    {
+      "q": "Peroksidlarda (masalan, H2O2) kislorodning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "-1",
+        "-2",
+        "+2",
+        "+1"
+      ],
+      "t": 0,
+      "izoh": "Peroksidlarda kislorod -1 oksidlanish darajasini namoyon qiladi (H2O2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#cb35cfb0"
+    },
+    {
+      "q": "Asosiy guruhcha elementlarining yuqori oksidlanish darajasi nimaga teng?",
+      "v": [
+        "Guruh raqamiga",
+        "Davr raqamiga",
+        "Sakkizga",
+        "Nolga"
+      ],
+      "t": 0,
+      "izoh": "Asosiy guruhcha elementlarining yuqori oksidlanish darajasi shu elementning guruh raqamiga teng (Na+1, Mg+2, Al+3, Si+4, P+5, S+6, Cl+7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#d7671b47"
+    },
+    {
+      "q": "Darslikdagi qatorda oltingugurtning yuqori oksidlanish darajasi qanday ko'rsatilgan?",
+      "v": [
+        "S+6",
+        "S+4",
+        "S+2",
+        "S-2"
+      ],
+      "t": 0,
+      "izoh": "Na+1, Mg+2, Al+3, Si+4, P+5, S+6, Cl+7 qatori keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#aaaa54f9"
+    },
+    {
+      "q": "Marganes VII guruh elementi. Uning yuqori oksidlanish darajasi nechaga teng?",
+      "v": [
+        "+7",
+        "+5",
+        "+6",
+        "+4"
+      ],
+      "t": 0,
+      "izoh": "Marganes VII guruh elementi, shuning uchun yuqori oksidlanish darajasi +7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#9ee78cf7"
+    },
+    {
+      "q": "Elementning quyi oksidlanish darajasi qanday aniqlanadi?",
+      "v": [
+        "Sakkizdan valent elektronlari ayirmasiga teng va manfiy ishorali",
+        "Guruh raqamiga teng va musbat",
+        "Davr raqamiga teng",
+        "Doimo -1 ga teng"
+      ],
+      "t": 0,
+      "izoh": "Quyi oksidlanish darajasi sakkizdan valent elektronlari ayirmasiga teng bo'lib manfiy ishorali bo'ladi va metallmaslarga xos.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#00f78057"
+    },
+    {
+      "q": "Oltingugurt VI guruh elementi, valent elektroni oltita. Uning quyi oksidlanish darajasi nechaga teng?",
+      "v": [
+        "-2",
+        "+6",
+        "-6",
+        "+2"
+      ],
+      "t": 0,
+      "izoh": "8 - 6 = 2; demak, quyi oksidlanish darajasi -2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#49f398a8"
+    },
+    {
+      "q": "Qo'lda hisoblashda Al2S3 uchun oksidlanish darajalari yig'indisi qanday tekshiriladi?",
+      "v": [
+        "2(+3) + 3(-2) = 0",
+        "3(+2) + 2(-3) = 0",
+        "2(+2) + 3(-1) = 0",
+        "(+3) + (-2) = 0"
+      ],
+      "t": 0,
+      "izoh": "2(+3) + 3(-2) = 6 - 6 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#5cabc7cf"
+    },
+    {
+      "q": "SiO2 da kremniyning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "+4",
+        "+2",
+        "-4",
+        "-2"
+      ],
+      "t": 0,
+      "izoh": "x + 2(-2) = 0 dan x = +4 (darslikdagi mashqdagi birikmalardan).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#beebdb8e"
+    },
+    {
+      "q": "BeCl2 da berilliyning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "+2",
+        "+1",
+        "-2",
+        "+4"
+      ],
+      "t": 0,
+      "izoh": "x + 2(-1) = 0 dan x = +2 (darslikdagi topshiriqdagi birikmalardan).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#6900c9fc"
+    },
+    {
+      "q": "HMnO4 da marganesning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "+7",
+        "+6",
+        "+5",
+        "+4"
+      ],
+      "t": 0,
+      "izoh": "+1 + x + 4(-2) = 0 dan x = +7 (darslikdagi topshiriqdagi birikmalardan).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#d044c5fb"
+    },
+    {
+      "q": "ClF3 da xlorning oksidlanish darajasi nechaga teng?",
+      "v": [
+        "+3",
+        "-3",
+        "+1",
+        "-1"
+      ],
+      "t": 0,
+      "izoh": "Ftor faqat -1 da; x + 3(-1) = 0 dan x = +3 (darslikdagi topshiriqdagi birikmalardan).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#6f381e93"
+    },
+    {
+      "q": "Vodorod peroksid H2O2 molekulasida kislorod atomlarining oksidlanish darajasi qanday yozilgan?",
+      "v": [
+        "H+1 - O-1 - O-1 - H+1",
+        "H+1 - O-2 - O-2 - H+1",
+        "H-1 - O+1 - O+1 - H-1",
+        "H+2 - O-1 - H+2"
+      ],
+      "t": 0,
+      "izoh": "H2O2 (Vodorod peroksid) H+1 - O-1 - O-1 - H+1 ko'rinishida keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#cfb706f1"
+    },
+    {
+      "q": "Qo'llaniladigan qoidaga ko'ra, metallmaslar (ftordan tashqari) qanday oksidlanish darajalarini namoyon qila oladi?",
+      "v": [
+        "Ham manfiy, ham musbat",
+        "Faqat manfiy",
+        "Faqat musbat",
+        "Faqat nol"
+      ],
+      "t": 0,
+      "izoh": "Qolgan metallmaslar ham manfiy, ham musbat oksidlanish darajasini namoyon qila oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#3716ca53"
+    },
+    {
+      "q": "Quyidagi oddiy moddalarning qaysi birida oksidlanish darajasi nolga teng EMAS?",
+      "v": [
+        "H2O",
+        "N2",
+        "O2",
+        "P"
+      ],
+      "t": 0,
+      "izoh": "H2O birikma; oddiy moddalarda (N2, O2, Cl2, O3, P, S, C, Na, Mg, Al, Fe) oksidlanish darajasi nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#182f2bda"
+    },
+    {
+      "q": "Darslikda pirit deb atalgan moddaning formulasi qanday?",
+      "v": [
+        "FeS2",
+        "FeS",
+        "Fe2S3",
+        "FeSO4"
+      ],
+      "t": 0,
+      "izoh": "Topshiriqda pirit (FeS2) keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m18-oksidlanish-darajasi#fb53ab8d"
+    }
+  ]
+}

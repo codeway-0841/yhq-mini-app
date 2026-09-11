@@ -1,0 +1,486 @@
+{
+  "nom": "25-mavzu. Zaryadlangan Shar Maydoni",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Bir jinsli zaryadlangan sharda zaryad qanday taqsimlanadi?",
+      "v": [
+        "Shar sirti bo'ylab bir tekisda",
+        "Shar ichida bir tekisda",
+        "Shar markazida to'planadi",
+        "Tasodifiy taqsimlanadi"
+      ],
+      "t": 0,
+      "izoh": "Zaryad shar sirti bo'ylab bir tekisda taqsimlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#a1a99f81"
+    },
+    {
+      "q": "Zaryadlangan shar sirtidan tashqaridagi elektr maydon kuch chiziqlarining taqsimoti nimaga o'xshaydi?",
+      "v": [
+        "Nuqtaviy zaryadning kuchlanganlik chiziqlari taqsimotiga",
+        "Magnit maydon chiziqlariga",
+        "Bir jinsli maydon chiziqlariga",
+        "Parallel chiziqlar to'plamiga"
+      ],
+      "t": 0,
+      "izoh": "Sirt zichligi bir tekis bo'lgani uchun nuqtaviy zaryad maydoni kabi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#979dda66"
+    },
+    {
+      "q": "Zaryadlangan shar ichidagi (r < R) elektr maydon kuchlanganligi nimaga teng?",
+      "v": [
+        "Nolga",
+        "kq/R²",
+        "σ/ε0",
+        "Cheksizga"
+      ],
+      "t": 0,
+      "izoh": "Zaryad faqat sirt bo'ylab taqsimlangani uchun ichida E = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#7b037201"
+    },
+    {
+      "q": "Zaryadlangan sharning ichida elektr maydon nima uchun nolga teng?",
+      "v": [
+        "Zaryadlar o'zaro itarishish tufayli faqat sirt bo'ylab taqsimlanadi",
+        "Shar metall emas",
+        "Zaryad yo'qoladi",
+        "Maydon yutib yuboriladi"
+      ],
+      "t": 0,
+      "izoh": "Zaryad o'zaro itarishish kuchi tufayli sirtga chiqadi, ichida maydon qolmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#eb0b9182"
+    },
+    {
+      "q": "Zaryadlangan shar tashqarisidagi (r > R) nuqtadagi maydon kuchlanganligi qanday hisoblanadi?",
+      "v": [
+        "Xuddi shar markazida joylashgan q nuqtaviy zaryad maydoni kabi",
+        "Bir jinsli maydon kabi",
+        "Nolga teng",
+        "σ/2ε0 ga teng"
+      ],
+      "t": 0,
+      "izoh": "Tashqarida E = kq/r², go'yo zaryad markazda joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#295365e8"
+    },
+    {
+      "q": "Shar sirtidan x masofadagi nuqtadagi maydon kuchlanganligini hisoblashda r qanday topiladi?",
+      "v": [
+        "r = R + x",
+        "r = R – x",
+        "r = x",
+        "r = R² + x²"
+      ],
+      "t": 0,
+      "izoh": "r = R + x — markazdan nuqtagacha bo'lgan masofa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#d452cde2"
+    },
+    {
+      "q": "Zaryadning sirt zichligi nima deb ataladi?",
+      "v": [
+        "Sirtning birlik yuzasiga to'g'ri keladigan zaryad miqdori",
+        "Sirt yuzasining o'zgarishi",
+        "Zaryadning umumiy miqdori",
+        "Maydon kuchlanganligi"
+      ],
+      "t": 0,
+      "izoh": "σ — birlik yuzaga to'g'ri keladigan zaryad miqdori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#d4817db7"
+    },
+    {
+      "q": "Zaryadning sirt zichligi qaysi harf bilan belgilanadi?",
+      "v": [
+        "σ (sigma)",
+        "ε (epsilon)",
+        "ρ (ro)",
+        "α (alfa)"
+      ],
+      "t": 0,
+      "izoh": "Sirt zichligi σ harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#4f875b8b"
+    },
+    {
+      "q": "Zaryadning sirt zichligi qaysi formula bilan topiladi?",
+      "v": [
+        "σ = q/S",
+        "σ = q·S",
+        "σ = S/q",
+        "σ = q/S²"
+      ],
+      "t": 0,
+      "izoh": "σ = Δq/ΔS yoki σ = q/S.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#64d1ae24"
+    },
+    {
+      "q": "Shar (sfera) uchun zaryadning sirt zichligi qanday ifodalanadi?",
+      "v": [
+        "σ = q/(4πR²)",
+        "σ = q/R²",
+        "σ = 4πR²q",
+        "σ = q/(2πR)"
+      ],
+      "t": 0,
+      "izoh": "Sfera yuzi S = 4πR², shuning uchun σ = q/(4πR²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#c7b2e383"
+    },
+    {
+      "q": "XBSda zaryadning sirt zichligi birligi nima?",
+      "v": [
+        "C/m²",
+        "N/C",
+        "C/m",
+        "V/m"
+      ],
+      "t": 0,
+      "izoh": "Zaryadning sirt zichligi C/m² da o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#4dc62de1"
+    },
+    {
+      "q": "Tekis zaryadlangan cheksiz tekislik qanday maydon hosil qiladi?",
+      "v": [
+        "Bir jinsli elektr maydon",
+        "Radial maydon",
+        "Nolga teng maydon",
+        "Turbulent maydon"
+      ],
+      "t": 0,
+      "izoh": "Cheksiz tekislik bir jinsli elektr maydon hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#b690437d"
+    },
+    {
+      "q": "Tekis zaryadlangan cheksiz tekislikning maydon kuchlanganligi qanday?",
+      "v": [
+        "E = σ/2ε0",
+        "E = σ/ε0",
+        "E = kq/r²",
+        "E = σ·ε0"
+      ],
+      "t": 0,
+      "izoh": "Cheksiz tekislik uchun E = σ/(2ε0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#b8f26f2c"
+    },
+    {
+      "q": "Cheksiz zaryadlangan tekislikning maydon kuchlanganligi tekislikkacha bo'lgan masofaga bog'liqmi?",
+      "v": [
+        "Yo'q, bog'liq emas",
+        "Ha, to'g'ri proporsional",
+        "Ha, teskari proporsional",
+        "Ha, kvadratik teskari"
+      ],
+      "t": 0,
+      "izoh": "Kattaligi masofaga bog'liq emas — maydon bir jinsli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#fbb6cdf6"
+    },
+    {
+      "q": "Shar sirtidagi elektr maydon kuchlanganligi sirt zichligi orqali qanday ifodalanadi?",
+      "v": [
+        "E = σ/ε0",
+        "E = σ/2ε0",
+        "E = σε0",
+        "E = kσ/R"
+      ],
+      "t": 0,
+      "izoh": "Shar sirtida E = σ/ε0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#fcfeeaa2"
+    },
+    {
+      "q": "Shar sirtidan tashqaridagi nuqtada kuchlanganlik sirt zichligi orqali qanday yoziladi?",
+      "v": [
+        "E = σR²/(ε0r²)",
+        "E = σ/ε0",
+        "E = σr²/(ε0R²)",
+        "E = σ/(2ε0)"
+      ],
+      "t": 0,
+      "izoh": "E = σR²/(ε0r²) — (7) formula.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#14f26ca9"
+    },
+    {
+      "q": "Sfera sirtining yuzi qanday hisoblanadi?",
+      "v": [
+        "S = 4πR²",
+        "S = 2πR",
+        "S = πR²",
+        "S = 4πR³/3"
+      ],
+      "t": 0,
+      "izoh": "Sfera yuzi S = 4πR².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#71d90bb1"
+    },
+    {
+      "q": "Muhitning nisbiy dielektrik singdiruvchanligi nimani ko'rsatadi?",
+      "v": [
+        "Zaryadlarning shu muhitdagi maydon kuchlanganligi vakuumdagidan necha marta kichikligini",
+        "Muhitning zichligini",
+        "Muhitning haroratini",
+        "Zaryad miqdorini"
+      ],
+      "t": 0,
+      "izoh": "ε — maydonning vakuumdagiga nisbatan necha marta kichrayishini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#9f8e99f4"
+    },
+    {
+      "q": "Dielektrik singdiruvchanlik qanday kattalik?",
+      "v": [
+        "O'lchamsiz kattalik",
+        "N/C birlikda o'lchanadi",
+        "C/m² birlikda o'lchanadi",
+        "V birlikda o'lchanadi"
+      ],
+      "t": 0,
+      "izoh": "ε o'lchamsiz kattalikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#1cd31949"
+    },
+    {
+      "q": "Nisbiy dielektrik singdiruvchanlik qanday belgilanadi?",
+      "v": [
+        "ε (epsilon)",
+        "σ (sigma)",
+        "ρ (ro)",
+        "λ (lyambda)"
+      ],
+      "t": 0,
+      "izoh": "Yunoncha ε (epsilon) harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#b0ec7675"
+    },
+    {
+      "q": "Dielektrik singdiruvchanlikning ta'rif formulasini ko'rsating.",
+      "v": [
+        "ε = E0/E",
+        "ε = E/E0",
+        "ε = E0·E",
+        "ε = E0 + E"
+      ],
+      "t": 0,
+      "izoh": "Ta'rifga ko'ra ε = E0/E.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#e7ca9e6b"
+    },
+    {
+      "q": "Bir jinsli dielektrik ichiga joylashtirilgan nuqtaviy zaryadning maydon kuchlanganligi qanday o'zgaradi?",
+      "v": [
+        "ε marta kamayadi",
+        "ε marta ortadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "E = E0/ε — ε marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#f5fb182e"
+    },
+    {
+      "q": "Dielektrik ichida maydon nima uchun susayiradi?",
+      "v": [
+        "Dielektrik o'z ichida tashqi maydonga qarshi yo'nalgan maydon hosil qiladi",
+        "Dielektrik zaryadni yutadi",
+        "Dielektrik issiq bo'ladi",
+        "Zaryadlar yo'qoladi"
+      ],
+      "t": 0,
+      "izoh": "Ichki maydon tashqi maydonni susaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#4e1912d6"
+    },
+    {
+      "q": "Dielektrik ichida joylashgan nuqtaviy zaryaddan r masofadagi kuchlanganlik qanday hisoblanadi?",
+      "v": [
+        "E = kq/(εr²)",
+        "E = kq/r²",
+        "E = εkq/r²",
+        "E = σ/ε0"
+      ],
+      "t": 0,
+      "izoh": "E = kq/(εr²) — (9) formula.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#817a6abd"
+    },
+    {
+      "q": "Biror muhitda turgan sharning sirtidagi maydon kuchlanganligi qanday hisoblanadi?",
+      "v": [
+        "E = kq/(εR²)",
+        "E = kq/R²",
+        "E = σ/2ε0",
+        "E = kq·ε/R²"
+      ],
+      "t": 0,
+      "izoh": "E = kq/(εR²) — (10) formula.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#7d2c6faf"
+    },
+    {
+      "q": "Suvning nisbiy dielektrik singdiruvchanligi qanchaga teng?",
+      "v": [
+        "81",
+        "2,1",
+        "7",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda suv uchun ε = 81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#412c9c45"
+    },
+    {
+      "q": "Havonning nisbiy dielektrik singdiruvchanligi qanchaga teng?",
+      "v": [
+        "1",
+        "81",
+        "2,5",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Havo uchun ε = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#1e2dd149"
+    },
+    {
+      "q": "Kerosinning dielektrik singdiruvchanligi qancha?",
+      "v": [
+        "2,1",
+        "2,5",
+        "81",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "Kerosin uchun ε = 2,1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#3c8434de"
+    },
+    {
+      "q": "Slyudaning dielektrik singdiruvchanligi qancha?",
+      "v": [
+        "6",
+        "7",
+        "2,1",
+        "81"
+      ],
+      "t": 0,
+      "izoh": "Slyuda uchun ε = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#f79aa479"
+    },
+    {
+      "q": "Shishaning dielektrik singdiruvchanligi qancha?",
+      "v": [
+        "7",
+        "6",
+        "2,5",
+        "81"
+      ],
+      "t": 0,
+      "izoh": "Shisha uchun ε = 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#1a15ddf3"
+    },
+    {
+      "q": "Sirt zichligi 4,2 marta kamaytirilsa, sfera sirtidagi maydon kuchlanganligi qanday o'zgaradi?",
+      "v": [
+        "4,2 marta kamayadi",
+        "4,2 marta ortadi",
+        "2,1 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "E = σ/ε0 ga ko'ra kuchlanganlik σ ga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#6f6f72d8"
+    },
+    {
+      "q": "Faradey qafasi ichidagi elektroskop yaproqlari nega ochilmaydi?",
+      "v": [
+        "O'tkazgich (qafas) ichida elektr maydon nolga teng",
+        "Elektroskop buzilgan",
+        "Qafas zaryadsiz",
+        "Havo dielektrik"
+      ],
+      "t": 0,
+      "izoh": "Metall qafas ichida natijaviy maydon nol — elektrostatik himoya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni#513a9114"
+    }
+  ]
+}

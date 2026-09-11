@@ -1,0 +1,1609 @@
+{
+  "nom": "Hodisalar ustida amallar, qo'shish va ko'paytirish teoremalari",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Nafisa qutidan bitta shar oladi. A hodisasi — shar qizil, B hodisasi — shar ko'k. A + B hodisasi qanday natijani anglatadi?",
+      "v": [
+        "Olingan shar qizil yoki ko'k bo'ladi",
+        "Olingan shar ham qizil, ham ko'k bo'ladi",
+        "Olingan shar na qizil, na ko'k bo'ladi",
+        "Olingan shar faqat qizil bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Ikki hodisaning yig'indisi A + B deb shu ikkisidan kamida bittasi ro'y berishini bildiruvchi hodisa aytiladi. Shu sababli A + B — olingan shar qizil bo'lgan yoki ko'k bo'lgan hollarning barchasini qamrab oladi. Ikkalasi birga ro'y berishi esa ko'paytma A · B ga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-manosi",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#f0354bd5"
+    },
+    {
+      "q": "Jasur imtihonda ikkita masalani yechmoqchi. A — birinchi masala yechildi, B — ikkinchi masala yechildi. A + B hodisasi qanday ta'riflanadi?",
+      "v": [
+        "Ikkala masala ham yechildi",
+        "Kamida bitta masala yechildi",
+        "Hech qaysi masala yechilmadi",
+        "Faqat birinchi masala yechildi"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi hodisasi qo'shiluvchilardan kamida bittasi ro'y berishini bildiradi. Demak A + B uchta holni qamraydi: faqat birinchisi yechildi, faqat ikkinchisi yechildi, ikkalasi ham yechildi. Bularning umumiy ifodasi — kamida bitta masala yechildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-manosi",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#6f46fcac"
+    },
+    {
+      "q": "Bir nishonga uch o'quvchi navbat bilan bittadan o'q uzadi. Aᵢ — i-o'quvchining nishonga tekkizishi. A₁ + A₂ + A₃ hodisasi nimani bildiradi?",
+      "v": [
+        "Uchala o'quvchi ham nishonga tekkizadi",
+        "Faqat bitta o'quvchi nishonga tekkizadi",
+        "Kamida bitta o'quvchi nishonga tekkizadi",
+        "Hech kim nishonga tekkiza olmaydi"
+      ],
+      "t": 2,
+      "izoh": "Uch hodisaning yig'indisi ulardan hech bo'lmaganda bittasi ro'y berishini anglatadi. Bu yerda bitta, ikkita yoki uchta tekkizish hollarining barchasi yig'indiga kiradi. Faqat bittasi tekkizishi — bu yig'indining bir qismi, uning o'zi emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-manosi",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#bea179d4"
+    },
+    {
+      "q": "Kutubxonada A hodisasi — olingan kitob o'zbek tilida, B hodisasi — olingan kitob badiiy adabiyotga oid. Quyidagi kitoblardan qaysi biri A + B hodisasiga kirmaydi?",
+      "v": [
+        "O'zbek tilidagi she'riy to'plam",
+        "Rus tilidagi badiiy roman",
+        "O'zbek tilidagi izohli lug'at",
+        "Ingliz tilidagi kimyo qo'llanmasi"
+      ],
+      "t": 3,
+      "izoh": "A + B hodisasiga kitob o'zbek tilida bo'lsa yoki badiiy bo'lsa kiradi. She'riy to'plam o'zbek tilida — A ga kiradi, rus tilidagi roman badiiy — B ga kiradi, izohli lug'at o'zbek tilida — yana A ga kiradi. Ingliz tilidagi kimyo qo'llanmasi na A, na B shartini bajaradi, shuning uchun yig'indidan tashqarida qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-manosi",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#7cff4de0"
+    },
+    {
+      "q": "Dilnoza dastadan bitta karta oladi. A — karta qizil mastda, B — karta rasmli (valet, dama yoki qirol). A · B hodisasi qanday kartani bildiradi?",
+      "v": [
+        "Qizil yoki rasmli karta",
+        "Qizil rangdagi rasmli karta",
+        "Qora rangdagi rasmli karta",
+        "Rasmsiz qizil karta"
+      ],
+      "t": 1,
+      "izoh": "Ikki hodisaning ko'paytmasi ikkalasining bir vaqtda ro'y berishini bildiradi. Demak karta ayni paytda ham qizil mastda, ham rasmli bo'lishi shart. Faqat rangni yoki faqat rasmni talab qilish yig'indiga mos keladi, ko'paytmaga emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-manosi",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#47318cb3"
+    },
+    {
+      "q": "Zavod nazoratida A — detalning uzunligi me'yorda, B — detalning og'irligi me'yorda hodisalari kuzatilmoqda. A · B hodisasi qaysi detalni tavsiflaydi?",
+      "v": [
+        "Detalning kamida bitta ko'rsatkichi me'yorda",
+        "Detalning uzunligi me'yordan chetda",
+        "Detalning ikkala ko'rsatkichi ham me'yorda",
+        "Detalning ikkala ko'rsatkichi ham me'yordan chetda"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytma A · B ikki hodisaning birgalikda ro'y berishini anglatadi. Bu yerda detalning uzunligi ham, og'irligi ham bir vaqtda me'yorda bo'lishi kerak. Kamida bittasi me'yorda bo'lishi esa A + B yig'indisiga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-manosi",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#5655c3fc"
+    },
+    {
+      "q": "Ikki talaba bir xil imtihonni topshiradi. A — birinchisi imtihondan o'tdi, B — ikkinchisi imtihondan o'tdi. Ā · B hodisasi qaysi natijani ifodalaydi?",
+      "v": [
+        "Ikkalasi ham imtihondan o'tdi",
+        "Ikkalasi ham imtihondan yiqildi",
+        "Kamida bittasi imtihondan o'tdi",
+        "Birinchisi yiqildi, ikkinchisi o'tdi"
+      ],
+      "t": 3,
+      "izoh": "Ā belgisi A hodisasiga qarama-qarshi hodisani, ya'ni birinchi talabaning yiqilishini bildiradi. Ko'paytma esa ikki shartning bir vaqtda bajarilishini talab qiladi. Demak Ā · B — birinchisi yiqilgan, ikkinchisi esa o'tgan holdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-manosi",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#3ce314d1"
+    },
+    {
+      "q": "Ob-havo kuzatuvida A — ertaga yomg'ir yog'ishi, B — ertaga shamol kuchayishi hodisalari olingan. A · B̄ hodisasi qanday kunni tasvirlaydi?",
+      "v": [
+        "Yomg'ir yog'adi, lekin shamol kuchaymaydi",
+        "Yomg'ir yog'maydi, ammo shamol kuchayadi",
+        "Na yomg'ir yog'adi, na shamol kuchayadi",
+        "Yomg'ir ham yog'adi, shamol ham kuchayadi"
+      ],
+      "t": 0,
+      "izoh": "B̄ hodisasi B ga qarama-qarshi, ya'ni shamol kuchaymasligini bildiradi. A · B̄ ko'paytmasida ikkala shart birga bajariladi: yomg'ir bor va shamol kuchayishi yo'q. Shunday kun izlanayotgan hodisaga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-manosi",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#aa3fc357"
+    },
+    {
+      "q": "Bitta zar tashlanadi. Quyidagi hodisa juftliklaridan qaysi biri birgalikda bo'lmagan hodisalar juftligidir?",
+      "v": [
+        "«Juft son tushdi» va «4 dan katta son tushdi»",
+        "«Toq son tushdi» va «3 ga karrali son tushdi»",
+        "«2 dan kichik son tushdi» va «5 dan katta son tushdi»",
+        "«Juft son tushdi» va «6 ochko tushdi»"
+      ],
+      "t": 2,
+      "izoh": "Birgalikda bo'lmagan hodisalar bir sinovda birga ro'y bera olmaydi, ya'ni umumiy natijasi yo'q. Birinchi juftlikda 6 ochko ikkalasiga ham mos, ikkinchisida 3 ochko ikkalasiga mos, to'rtinchisida yana 6 ochko umumiy. Uchinchi juftlikda esa birinchi hodisa faqat 1 ni, ikkinchisi faqat 6 ni qamraydi va umumiy natija yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birgalikda-bolmaganlik",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#973ac6b2"
+    },
+    {
+      "q": "Sardor qutidan bitta shar oladi; qutida qizil, ko'k va yashil sharlar bor. Quyidagi juftliklardan qaysisi birgalikda bo'la olmaydi?",
+      "v": [
+        "«Shar qizil» va «shar ko'k»",
+        "«Shar qizil emas» va «shar ko'k»",
+        "«Shar yashil» va «shar rangli»",
+        "«Shar qizil emas» va «shar yashil»"
+      ],
+      "t": 0,
+      "izoh": "Bitta shar bir vaqtda ikki xil rangda bo'la olmaydi, shuning uchun «qizil» va «ko'k» hodisalari birga ro'y bermaydi. Qolgan juftliklarda esa umumiy natija bor: ko'k shar ayni paytda qizil emas, yashil shar ham rangli, ham qizil emas. Demak faqat birinchi juftlik birgalikda bo'lmagan hodisalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birgalikda-bolmaganlik",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#f1bdbe50"
+    },
+    {
+      "q": "Statistik kuzatuvda P(A) = 0,4; P(B) = 0,5 va P(A + B) = 0,9 ekani aniqlandi. Bu ikki hodisa haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Ular birgalikda bo'lgan hodisalar",
+        "Ular birgalikda bo'lmagan hodisalar",
+        "Ular qarama-qarshi hodisalar",
+        "Ular bog'liqsiz hodisalardir"
+      ],
+      "t": 1,
+      "izoh": "Umumiy qo'shish teoremasiga ko'ra P(A + B) = P(A) + P(B) − P(A · B). Berilganlarni qo'ysak: 0,9 = 0,4 + 0,5 − P(A · B), bundan P(A · B) = 0. Kesishma ehtimoli nolga teng bo'lgani uchun hodisalar birgalikda emas. Bog'liqsiz bo'lganda P(A · B) = 0,4 · 0,5 = 0,2 chiqar edi, qarama-qarshi bo'lishi uchun esa ehtimollar yig'indisi 1 ga teng bo'lishi kerak edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birgalikda-bolmaganlik",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#16067f9a"
+    },
+    {
+      "q": "Bir vaqtning o'zida ikkita zar tashlanadi. «Ochkolar yig'indisi 7 ga teng» va «ikkala zarda bir xil son tushdi» hodisalari qanday hodisalardir?",
+      "v": [
+        "Bog'liqsiz hodisalar",
+        "Birgalikda bo'lgan hodisalar",
+        "Qarama-qarshi hodisalar",
+        "Birgalikda bo'lmagan hodisalar"
+      ],
+      "t": 3,
+      "izoh": "Ikkala zarda bir xil son tushsa, yig'indi 2, 4, 6, 8, 10 yoki 12 bo'ladi, ya'ni doim juft son chiqadi. 7 esa toq son, shuning uchun bu ikki hodisa bir sinovda birga ro'y bera olmaydi. Ular qarama-qarshi ham emas, chunki ikkalasi ham ro'y bermaydigan natijalar mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birgalikda-bolmaganlik",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#6da10fa9"
+    },
+    {
+      "q": "Merganning bitta o'q bilan nishonga tekkizish ehtimoli 0,82 ga teng. Uning shu otishda nishonga tekkiza olmaslik ehtimolini toping.",
+      "v": [
+        "0,18",
+        "0,82",
+        "0,28",
+        "1,18"
+      ],
+      "t": 0,
+      "izoh": "Tekkizish va tekkizmaslik qarama-qarshi hodisalardir, ularning ehtimollari yig'indisi 1 ga teng. Demak P(Ā) = 1 − P(A) = 1 − 0,82. Ayirmani hisoblasak, 0,18 kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-hodisa",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#d76857e4"
+    },
+    {
+      "q": "Zavodda tayyorlangan lampochkaning yaroqsiz chiqish ehtimoli 0,035 ga teng. Tasodifiy olingan lampochkaning yaroqli bo'lish ehtimoli qancha?",
+      "v": [
+        "0,035",
+        "0,65",
+        "0,965",
+        "0,975"
+      ],
+      "t": 2,
+      "izoh": "Lampochka yo yaroqli, yo yaroqsiz bo'ladi — bu ikki hodisa to'liq guruh tashkil etadi. Shuning uchun yaroqli bo'lish ehtimoli 1 − 0,035 ga teng. Ayirma 0,965 ni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-hodisa",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#e692befa"
+    },
+    {
+      "q": "Qutida 9 ta oq va 16 ta qora shar bor. Tasodifiy olingan shar oq bo'lmaslik ehtimolini toping.",
+      "v": [
+        "9/25",
+        "16/25",
+        "16/9",
+        "9/16"
+      ],
+      "t": 1,
+      "izoh": "Qutidagi sharlar soni 9 + 16 = 25 ta. Oq shar chiqish ehtimoli 9/25, unga qarama-qarshi hodisa esa 1 − 9/25 = 16/25 ga teng. Xuddi shu natijani qora sharlar sonini bevosita sanab ham olish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarama-qarshi-hodisa",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#32dcd324"
+    },
+    {
+      "q": "Talabaning savolga to'g'ri javob berish ehtimoli p ga teng, xato javob berish ehtimoli esa to'g'ri javob ehtimolidan 3 marta katta. p ning qiymatini toping.",
+      "v": [
+        "0,75",
+        "1/3",
+        "0,5",
+        "0,25"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri va xato javob qarama-qarshi hodisalar, demak ularning ehtimollari yig'indisi 1 ga teng. Shartga ko'ra xato javob ehtimoli 3p, shuning uchun p + 3p = 1 tenglama hosil bo'ladi. Bundan 4p = 1 va p = 0,25 kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarama-qarshi-hodisa",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#0c663eb7"
+    },
+    {
+      "q": "Lotereya barabanida 30 ta shar bor: ulardan 6 tasi katta yutuqni, 9 tasi kichik yutuqni beradi. Bitta shar olinganda qandaydir yutuq chiqish ehtimolini toping.",
+      "v": [
+        "0,2",
+        "0,5",
+        "0,3",
+        "0,06"
+      ],
+      "t": 1,
+      "izoh": "Katta va kichik yutuq birgalikda bo'lmagan hodisalar, chunki bitta shar ikkala yutuqni bera olmaydi. Shuning uchun qo'shish teoremasi qo'llanadi: 6/30 + 9/30 = 15/30. Bu kasr qisqartirilganda 0,5 ga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshish-birgalikda-bolmagan",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#cad12b53"
+    },
+    {
+      "q": "Kitob javonida 14 ta matematika, 10 ta fizika va 26 ta adabiyot kitobi turibdi. Tasodifiy olingan kitob aniq fanlarga oid bo'lish ehtimoli qancha?",
+      "v": [
+        "0,48",
+        "0,28",
+        "0,52",
+        "0,2"
+      ],
+      "t": 0,
+      "izoh": "Javondagi kitoblar soni 14 + 10 + 26 = 50 ta. Aniq fanlarga matematika va fizika kitoblari kiradi, bu hodisalar birgalikda emas. Demak ehtimol 14/50 + 10/50 = 24/50 = 0,48 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshish-birgalikda-bolmagan",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#2d1b7378"
+    },
+    {
+      "q": "Tirda o'quvchi 10 ochkoni 0,15, 9 ochkoni 0,28 va 8 ochkoni 0,32 ehtimol bilan uradi. Uning 8 ochkodan kam urish ehtimolini toping.",
+      "v": [
+        "0,75",
+        "0,32",
+        "0,25",
+        "0,68"
+      ],
+      "t": 2,
+      "izoh": "10, 9 va 8 ochko urish hodisalari birgalikda emas, shuning uchun ularning ehtimollari qo'shiladi: 0,15 + 0,28 + 0,32 = 0,75. Bu 8 ochko va undan yuqori natija ehtimoli. 8 dan kam urish unga qarama-qarshi hodisa, demak 1 − 0,75 = 0,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshish-birgalikda-bolmagan",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#96dfd839"
+    },
+    {
+      "q": "Avtomobil zavodida mashinalarning 40 foizi oq, 25 foizi kulrang, 15 foizi qora rangda bo'yaladi. Tasodifiy tanlangan mashina oq ham, kulrang ham bo'lmasligi ehtimolini toping.",
+      "v": [
+        "0,65",
+        "0,15",
+        "0,6",
+        "0,35"
+      ],
+      "t": 3,
+      "izoh": "Oq va kulrang bo'yash hodisalari birgalikda emas, ularning yig'indisi ehtimoli 0,4 + 0,25 = 0,65 ga teng. Izlanayotgan hodisa shu yig'indiga qarama-qarshi hodisadir. Demak javob 1 − 0,65 = 0,35 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshish-birgalikda-bolmagan",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#e65bd498"
+    },
+    {
+      "q": "Guruhdagi talabaning ingliz tilini bilish ehtimoli 0,6, nemis tilini bilish ehtimoli 0,3, ikkala tilni ham bilish ehtimoli 0,2. Talaba kamida bitta chet tilini bilish ehtimolini toping.",
+      "v": [
+        "0,7",
+        "0,9",
+        "0,18",
+        "0,4"
+      ],
+      "t": 0,
+      "izoh": "Bu hodisalar birgalikda, chunki talaba ikkala tilni ham bilishi mumkin. Shuning uchun umumiy qo'shish teoremasi ishlatiladi: P(A + B) = P(A) + P(B) − P(A · B). Qiymatlarni qo'ysak, 0,6 + 0,3 − 0,2 = 0,7 kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshish-umumiy-formula",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#acfd1e65"
+    },
+    {
+      "q": "Do'konga kelgan xaridorning non sotib olish ehtimoli 0,75, sut sotib olish ehtimoli 0,45, ikkalasini birga olish ehtimoli 0,35. Xaridor shu ikki mahsulotdan kamida bittasini olish ehtimoli qancha?",
+      "v": [
+        "1,2",
+        "0,35",
+        "0,85",
+        "0,4"
+      ],
+      "t": 2,
+      "izoh": "Non va sut olish birgalikda bo'lgan hodisalar, chunki ular birga sotib olinishi mumkin. Umumiy qo'shish teoremasiga ko'ra 0,75 + 0,45 − 0,35 hisoblanadi. Natija 0,85 ga teng; kesishmani ayirmasa, javob 1,2 chiqib ehtimol uchun imkonsiz qiymat hosil bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshish-umumiy-formula",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#089ec0eb"
+    },
+    {
+      "q": "Bitta zar tashlanadi. «Juft son tushdi» va «3 ga karrali son tushdi» hodisalaridan kamida bittasi ro'y berish ehtimolini toping.",
+      "v": [
+        "1/2",
+        "2/3",
+        "5/6",
+        "1/3"
+      ],
+      "t": 1,
+      "izoh": "Juft sonlar 2, 4, 6 — ehtimoli 3/6; 3 ga karrali sonlar 3 va 6 — ehtimoli 2/6. Bu hodisalarning umumiy natijasi 6 ochko, ya'ni kesishma ehtimoli 1/6. Demak 3/6 + 2/6 − 1/6 = 4/6 = 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshish-umumiy-formula",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#f2fe2423"
+    },
+    {
+      "q": "Ma'lum ikki hodisa uchun P(A) = 0,55; P(B) = 0,4 va P(A · B) = 0,25 bo'lsa, A ro'y berib, B ro'y bermaslik ehtimolini toping.",
+      "v": [
+        "0,15",
+        "0,25",
+        "0,7",
+        "0,3"
+      ],
+      "t": 3,
+      "izoh": "A hodisasi ikki qismga bo'linadi: B bilan birga ro'y beradigan qism va B siz ro'y beradigan qism. Demak P(A · B̄) = P(A) − P(A · B). Hisoblasak, 0,55 − 0,25 = 0,3 kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshish-umumiy-formula",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#e7d32048"
+    },
+    {
+      "q": "Sinfdagi o'quvchining futbol seksiyasiga qatnash ehtimoli 0,5, shaxmat to'garagiga qatnash ehtimoli 0,35, kamida bittasiga qatnash ehtimoli esa 0,7. Ikkalasiga ham qatnash ehtimolini toping.",
+      "v": [
+        "0,15",
+        "0,85",
+        "0,175",
+        "0,2"
+      ],
+      "t": 0,
+      "izoh": "Umumiy qo'shish teoremasidan P(A · B) = P(A) + P(B) − P(A + B) ifodasi kelib chiqadi. Qiymatlarni qo'ysak, 0,5 + 0,35 − 0,7 hisoblanadi. Natija 0,15 ga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-kesishma-topish",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#9f877fb4"
+    },
+    {
+      "q": "Ikki hodisa uchun P(A) = 0,62; P(B) = 0,48 va P(A + B) = 0,86 berilgan. Bu hodisalar bog'liqsizmi yoki bog'liqmi, tekshiring.",
+      "v": [
+        "Bog'liqsiz, chunki P(A · B) = P(A) · P(B)",
+        "Bog'liqsiz, chunki P(A + B) qiymati 1 dan kichik",
+        "Bog'liq, chunki P(A · B) = 0,24, P(A) · P(B) = 0,2976",
+        "Birgalikda emas, chunki P(A · B) = 0"
+      ],
+      "t": 2,
+      "izoh": "Avval kesishma topiladi: P(A · B) = 0,62 + 0,48 − 0,86 = 0,24. Bog'liqsizlik sharti P(A · B) = P(A) · P(B) ko'rinishida bo'ladi. Bu yerda P(A) · P(B) = 0,62 · 0,48 = 0,2976, u 0,24 ga teng emas, demak hodisalar bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "venn-kesishma-topish",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#03b49f89"
+    },
+    {
+      "q": "Poliklinikaga kelgan bemorning tomog'i og'rish ehtimoli 0,7, isitmasi bo'lish ehtimoli 0,5, kamida bitta alomat bo'lish ehtimoli 0,8. Faqat isitmasi bo'lib, tomog'i og'rimaslik ehtimolini toping.",
+      "v": [
+        "0,4",
+        "0,1",
+        "0,3",
+        "0,2"
+      ],
+      "t": 1,
+      "izoh": "Avval ikkala alomat birga uchrash ehtimoli topiladi: 0,7 + 0,5 − 0,8 = 0,4. Faqat isitma bo'lgan hol — isitmali bemorlardan tomog'i ham og'riganlarini chiqarib tashlash demak. Demak 0,5 − 0,4 = 0,1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "venn-kesishma-topish",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#68757b10"
+    },
+    {
+      "q": "A va B birgalikda bo'lgan hodisalar bo'lib, P(A) = 0,45 va P(B) = 0,6 ga teng. P(A · B) qanday oraliqdagi qiymatlarni qabul qilishi mumkin?",
+      "v": [
+        "0 dan 0,45 gacha",
+        "0,05 dan 0,6 gacha",
+        "0 dan 0,27 gacha",
+        "0,05 dan 0,45 gacha"
+      ],
+      "t": 3,
+      "izoh": "Kesishma A ning ichida yotgani uchun P(A · B) qiymati P(A) = 0,45 dan katta bo'la olmaydi. Ikkinchi tomondan P(A + B) ≤ 1 shartidan P(A · B) ≥ 0,45 + 0,6 − 1 = 0,05 kelib chiqadi. Demak kesishma ehtimoli 0,05 bilan 0,45 orasida yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "venn-kesishma-topish",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#edb088ff"
+    },
+    {
+      "q": "Ikkita bog'liqsiz stanokning bir smenada nosozliksiz ishlash ehtimoli mos ravishda 0,9 va 0,85 ga teng. Ikkala stanok ham nosozliksiz ishlash ehtimolini toping.",
+      "v": [
+        "1,75",
+        "0,765",
+        "0,985",
+        "0,875"
+      ],
+      "t": 1,
+      "izoh": "Stanoklar bir-biriga bog'liq emas, shuning uchun ko'paytirish teoremasi qo'llanadi. P(A · B) = P(A) · P(B) = 0,9 · 0,85. Ko'paytmani hisoblasak, 0,765 kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytirish-boglqsiz",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#37af1c1f"
+    },
+    {
+      "q": "Tanga ketma-ket ikki marta tashlandi. Ikkala tashlashda ham gerb tomoni tushish ehtimolini toping.",
+      "v": [
+        "1/2",
+        "1/8",
+        "3/4",
+        "1/4"
+      ],
+      "t": 3,
+      "izoh": "Tashlashlar bir-biriga bog'liq emas, har birida gerb tushish ehtimoli 1/2. Bog'liqsiz hodisalar ko'paytmasining ehtimoli ularning ehtimollari ko'paytmasiga teng. Demak 1/2 · 1/2 = 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytirish-boglqsiz",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#f19ae4aa"
+    },
+    {
+      "q": "Birinchi qutida 5 ta oq va 3 ta qora, ikkinchi qutida 4 ta oq va 5 ta qora shar bor. Har qutidan bittadan shar olinganda ikkalasi ham oq bo'lish ehtimolini toping.",
+      "v": [
+        "9/17",
+        "5/18",
+        "19/24",
+        "3/8"
+      ],
+      "t": 1,
+      "izoh": "Birinchi qutidan oq shar chiqish ehtimoli 5/8, ikkinchisidan esa 4/9. Qutilar mustaqil bo'lgani uchun ehtimollar ko'paytiriladi: 5/8 · 4/9 = 20/72. Kasrni qisqartirsak, 5/18 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytirish-boglqsiz",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#165d4aba"
+    },
+    {
+      "q": "Uchta bog'liqsiz elementdan iborat qurilmada elementlarning ishdan chiqish ehtimoli 0,1; 0,2 va 0,25 ga teng. Uchala element ham soz holda qolish ehtimolini toping.",
+      "v": [
+        "0,005",
+        "0,45",
+        "0,54",
+        "0,995"
+      ],
+      "t": 2,
+      "izoh": "Har bir element uchun soz qolish ehtimoli qarama-qarshi hodisa orqali topiladi: 0,9; 0,8 va 0,75. Elementlar bog'liqsiz bo'lgani uchun bu ehtimollar ko'paytiriladi. Hisoblasak, 0,9 · 0,8 · 0,75 = 0,54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytirish-boglqsiz",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#f07d2aaf"
+    },
+    {
+      "q": "Ikki mergan nishonga bir-biridan bog'liqsiz ravishda bittadan o'q uzadi; ularning tekkizish ehtimollari 0,7 va 0,8. Nishonga kamida bitta o'q tegish ehtimolini toping.",
+      "v": [
+        "0,56",
+        "1,5",
+        "0,94",
+        "0,06"
+      ],
+      "t": 2,
+      "izoh": "«Kamida bitta» hodisasining qarama-qarshisi — hech bir o'q tegmasligi. Tegmaslik ehtimollari 0,3 va 0,2, ular bog'liqsiz bo'lgani uchun ko'paytiriladi: 0,3 · 0,2 = 0,06. Demak izlanayotgan ehtimol 1 − 0,06 = 0,94.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kamida-bitta",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#3a18da81"
+    },
+    {
+      "q": "Talaba uchta imtihonni mustaqil topshiradi; har birida yiqilish ehtimoli 0,2 ga teng. Uning kamida bitta imtihondan yiqilish ehtimolini toping.",
+      "v": [
+        "0,488",
+        "0,6",
+        "0,512",
+        "0,008"
+      ],
+      "t": 0,
+      "izoh": "Qarama-qarshi hodisa — uchala imtihondan ham o'tish, uning ehtimoli 0,8 · 0,8 · 0,8 = 0,512. Kamida bitta yiqilish ehtimoli esa 1 − 0,512 ga teng. Hisoblasak, 0,488 kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kamida-bitta",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#ab724753"
+    },
+    {
+      "q": "Xonadagi ikkita chiroqning bir oy ichida kuyib ketishi bir-biridan mustaqil bo'lib, ehtimollari mos ravishda 0,15 va 0,2 ga teng. Bir oyda kamida bitta chiroq kuyib ketish ehtimolini toping.",
+      "v": [
+        "0,03",
+        "0,35",
+        "0,68",
+        "0,32"
+      ],
+      "t": 3,
+      "izoh": "Avval hech bir chiroq kuymasligi ehtimoli topiladi: 0,85 · 0,8 = 0,68. Bu hodisa izlanayotgan hodisaga qarama-qarshi. Demak kamida bitta chiroq kuyish ehtimoli 1 − 0,68 = 0,32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kamida-bitta",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#5a18f2a5"
+    },
+    {
+      "q": "Qutidagi 12 ta detaldan 4 tasi nuqsonli. Tasodifiy 3 ta detal olinganda ular orasida kamida bitta nuqsonli detal bo'lish ehtimolini toping.",
+      "v": [
+        "14/55",
+        "41/55",
+        "1/3",
+        "1/55"
+      ],
+      "t": 1,
+      "izoh": "12 detaldan 3 tasini tanlash usullari soni C₁₂³ = 220 ta. Hech bir nuqsonli detal tushmasligi uchun 8 ta sozidan 3 tasi olinadi: C₈³ = 56, bu holning ehtimoli 56/220 = 14/55. Kamida bitta nuqsonli bo'lish ehtimoli esa 1 − 14/55 = 41/55.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kamida-bitta",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#578325de"
+    },
+    {
+      "q": "Uchta talabadan har biri berilgan masalani mustaqil yechadi; yechish ehtimollari 0,5; 0,6 va 0,7. Hech qaysi talaba masalani yecha olmaslik ehtimolini toping.",
+      "v": [
+        "0,21",
+        "0,94",
+        "0,4",
+        "0,06"
+      ],
+      "t": 3,
+      "izoh": "Har bir talaba uchun yecha olmaslik ehtimoli qarama-qarshi hodisadan topiladi: 0,5; 0,4 va 0,3. Talabalar mustaqil ishlagani uchun bu ehtimollar ko'paytiriladi. Demak 0,5 · 0,4 · 0,3 = 0,06.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hech-biri",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#46f4168e"
+    },
+    {
+      "q": "Uchta zavod bir xil detal ishlab chiqaradi; ularning nuqsonli detal berish ehtimoli 0,05; 0,08 va 0,1. Har zavoddan bittadan olingan detallarning hech biri nuqsonli bo'lmaslik ehtimolini toping.",
+      "v": [
+        "0,7866",
+        "0,23",
+        "0,0004",
+        "0,77"
+      ],
+      "t": 0,
+      "izoh": "Har bir zavod uchun yaroqli detal ehtimoli 0,95; 0,92 va 0,9 ga teng. Detallar bir-biriga bog'liq emas, shuning uchun ehtimollar ko'paytiriladi. Ketma-ket hisoblasak, 0,95 · 0,92 = 0,874, so'ng 0,874 · 0,9 = 0,7866.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hech-biri",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#8859cbdf"
+    },
+    {
+      "q": "Sayyoh uchta mustaqil yo'nalish bo'yicha internetdan ma'lumot izlaydi; har bir yo'nalishda ma'lumot topa olmaslik ehtimoli 0,3. Uchala yo'nalish bo'yicha ham ma'lumot topa olmaslik ehtimolini toping.",
+      "v": [
+        "0,9",
+        "0,027",
+        "0,343",
+        "0,7"
+      ],
+      "t": 1,
+      "izoh": "Uchala qidiruv mustaqil, shuning uchun ularning ko'paytmasi ehtimoli ehtimollar ko'paytmasiga teng. Demak 0,3 · 0,3 · 0,3 hisoblanadi. Natija 0,027 ga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hech-biri",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#9c1a0fda"
+    },
+    {
+      "q": "Ikkita tanga va bitta zar birga tashlanadi. Hech bir tangada gerb tushmasligi hamda zarda 6 ochko tushmasligi ehtimolini toping.",
+      "v": [
+        "1/8",
+        "5/12",
+        "5/24",
+        "1/24"
+      ],
+      "t": 2,
+      "izoh": "Har bir tangada gerb tushmaslik ehtimoli 1/2, zarda 6 tushmaslik ehtimoli esa 5/6. Uch sinov ham bir-biriga bog'liq emas, shuning uchun ehtimollar ko'paytiriladi. Demak 1/2 · 1/2 · 5/6 = 5/24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hech-biri",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#44b448b7"
+    },
+    {
+      "q": "Ikki nazoratchi mahsulotni mustaqil tekshiradi; nuqsonni sezish ehtimollari 0,8 va 0,6 ga teng. Nuqsonni aynan bitta nazoratchi sezish ehtimolini toping.",
+      "v": [
+        "0,44",
+        "0,48",
+        "0,92",
+        "0,08"
+      ],
+      "t": 0,
+      "izoh": "Aynan bitta sezish ikki xil yo'l bilan ro'y beradi: birinchisi sezib, ikkinchisi sezmasligi yoki aksincha. Birinchi yo'lning ehtimoli 0,8 · 0,4 = 0,32, ikkinchisiniki 0,2 · 0,6 = 0,12. Bu hodisalar birgalikda emas, shuning uchun qo'shiladi: 0,32 + 0,12 = 0,44.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aynan-bittasi",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#9ebf47e3"
+    },
+    {
+      "q": "Ikki talaba bir masalani mustaqil yechishga kirishdi; yechish ehtimollari 0,7 va 0,5. Masalani ular ichidan faqat bittasi yechish ehtimolini toping.",
+      "v": [
+        "0,35",
+        "0,85",
+        "0,5",
+        "0,15"
+      ],
+      "t": 2,
+      "izoh": "Faqat birinchisi yechishi ehtimoli 0,7 · 0,5 = 0,35, faqat ikkinchisi yechishi ehtimoli 0,3 · 0,5 = 0,15. Bu ikki hodisa birga ro'y bermaydi, shuning uchun ehtimollar qo'shiladi. Yig'indi 0,35 + 0,15 = 0,5 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aynan-bittasi",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#d7114d1b"
+    },
+    {
+      "q": "Uch mergan nishonga bir-biridan mustaqil ravishda bittadan o'q uzadi; tekkizish ehtimollari mos ravishda 0,6; 0,5 va 0,4. Nishonga aynan bitta o'q tegish ehtimolini toping.",
+      "v": [
+        "0,12",
+        "0,88",
+        "1,5",
+        "0,38"
+      ],
+      "t": 3,
+      "izoh": "Aynan bitta tekkizish uch xil holda bo'ladi. Birinchisi tekkizsa: 0,6 · 0,5 · 0,6 = 0,18; ikkinchisi tekkizsa: 0,4 · 0,5 · 0,6 = 0,12; uchinchisi tekkizsa: 0,4 · 0,5 · 0,4 = 0,08. Bu uch hol birgalikda emas, demak yig'indi 0,18 + 0,12 + 0,08 = 0,38.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aynan-bittasi",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#d0d43caf"
+    },
+    {
+      "q": "Ikkita qutidan bittadan detal olinadi. Birinchi qutida detalning standart bo'lish ehtimoli 0,9, ikkinchisida 0,75. Olingan ikki detaldan faqat bittasi standart bo'lish ehtimolini toping.",
+      "v": [
+        "0,675",
+        "0,3",
+        "0,975",
+        "0,025"
+      ],
+      "t": 1,
+      "izoh": "Birinchisi standart, ikkinchisi standart emas bo'lishi ehtimoli 0,9 · 0,25 = 0,225. Teskari hol uchun 0,1 · 0,75 = 0,075. Bu hollar birga ro'y bermaydi, shuning uchun 0,225 + 0,075 = 0,3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aynan-bittasi",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#06c6f631"
+    },
+    {
+      "q": "Otishda o'quvchi 10 ochkoni 0,18, 9 ochkoni 0,34, 8 ochkoni 0,27 ehtimol bilan uradi; boshqa natijalar bitta hodisaga birlashtirilgan. Shu to'rtinchi natijaning ehtimolini toping.",
+      "v": [
+        "0,79",
+        "0,82",
+        "0,21",
+        "0,73"
+      ],
+      "t": 2,
+      "izoh": "Sanalgan to'rt natija to'liq guruh tashkil etadi, ya'ni ularning ehtimollari yig'indisi 1 ga teng. Uch ma'lum natijaning yig'indisi 0,18 + 0,34 + 0,27 = 0,79. Demak qolgan natijaning ehtimoli 1 − 0,79 = 0,21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toliq-guruh",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#e4b5f023"
+    },
+    {
+      "q": "Qutida faqat qizil, ko'k va sariq sharlar bor. Qizil shar chiqish ehtimoli 0,42, ko'k shar chiqish ehtimoli esa qizilnikidan 0,17 ga kam. Sariq shar chiqish ehtimolini toping.",
+      "v": [
+        "0,33",
+        "0,25",
+        "0,67",
+        "0,17"
+      ],
+      "t": 0,
+      "izoh": "Avval ko'k shar ehtimoli topiladi: 0,42 − 0,17 = 0,25. Uch rang to'liq guruh tashkil etgani uchun ehtimollar yig'indisi 1 ga teng. Demak sariq shar ehtimoli 1 − 0,42 − 0,25 = 0,33.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toliq-guruh",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#e888c21b"
+    },
+    {
+      "q": "Ikki hodisa to'liq guruh tashkil qiladi. Birinchisining ehtimoli ikkinchisinikidan 4 marta katta bo'lsa, ikkinchi hodisaning ehtimoli qanchaga teng?",
+      "v": [
+        "0,8",
+        "0,25",
+        "0,4",
+        "0,2"
+      ],
+      "t": 3,
+      "izoh": "To'liq guruh hodisalarining ehtimollari yig'indisi 1 ga teng. Ikkinchi hodisa ehtimolini x desak, birinchisi 4x bo'ladi va x + 4x = 1 tenglama hosil bo'ladi. Bundan 5x = 1, ya'ni x = 0,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toliq-guruh",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#8758e267"
+    },
+    {
+      "q": "Tadbirda ishtirokchiga uchta sovrindan bittasi beriladi: birinchi sovrin ehtimoli p, ikkinchisiniki 2p, uchinchisiniki 3p. Ishtirokchining ikkinchi yoki uchinchi sovrinni olish ehtimolini toping.",
+      "v": [
+        "1/6",
+        "5/6",
+        "1/2",
+        "1/3"
+      ],
+      "t": 1,
+      "izoh": "Uch sovrin to'liq guruh tashkil etadi, demak p + 2p + 3p = 1 va 6p = 1, ya'ni p = 1/6. Ikkinchi va uchinchi sovrin birgalikda bo'lmagan hodisalar, shuning uchun ehtimollari qo'shiladi. Yig'indi 2p + 3p = 5p = 5/6 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toliq-guruh",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#efdfbf4a"
+    },
+    {
+      "q": "Qutida 7 ta oq va 5 ta qora shar bor. Tasodifiy ravishda uchta shar birdaniga olinganda ularning hammasi oq bo'lish ehtimolini toping.",
+      "v": [
+        "7/12",
+        "343/1728",
+        "7/44",
+        "1/22"
+      ],
+      "t": 2,
+      "izoh": "12 ta shardan 3 tasini tanlashning barcha usullari soni C₁₂³ = 220 ta. Uchala oq shar 7 tadan tanlanadi: C₇³ = 35 usul. Demak ehtimol 35/220, qisqartirilganda 7/44 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "klassik-kombinatorika",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#124663e3"
+    },
+    {
+      "q": "22 kishilik guruhdan 2 nafar navbatchi tasodifiy tanlanadi, guruhda 10 nafar qiz bor. Tanlanganlarning ikkalasi ham qiz bo'lish ehtimolini toping.",
+      "v": [
+        "15/77",
+        "5/11",
+        "25/121",
+        "2/7"
+      ],
+      "t": 0,
+      "izoh": "22 kishidan 2 tasini tanlash usullari soni C₂₂² = 231 ta. Ikkala navbatchi qiz bo'lishi uchun 10 qizdan 2 tasi tanlanadi: C₁₀² = 45 usul. Demak ehtimol 45/231 bo'lib, qisqartirilganda 15/77 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "klassik-kombinatorika",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#73b9ceca"
+    },
+    {
+      "q": "Lotereyada 40 ta biletdan 6 tasi yutuqli. Odam bir yo'la 2 ta bilet sotib olsa, ular orasida kamida bittasi yutuqli bo'lish ehtimolini toping.",
+      "v": [
+        "187/260",
+        "3/20",
+        "9/400",
+        "73/260"
+      ],
+      "t": 3,
+      "izoh": "40 ta biletdan 2 tasini tanlash usullari soni C₄₀² = 780 ta. Ikkalasi ham yutuqsiz bo'lishi C₃₄² = 561 usulda ro'y beradi, ya'ni ehtimoli 561/780. Kamida bitta yutuq ehtimoli qarama-qarshi hodisa orqali topiladi: 1 − 561/780 = 219/780 = 73/260.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "klassik-kombinatorika",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#cc95a043"
+    },
+    {
+      "q": "Shaxmat to'garagidagi 9 nafar o'quvchidan 4 nafari saralashga tasodifiy tanlanadi. To'garakda 3 nafar razryadli o'yinchi bor; ularning barchasi saralashga tushish ehtimolini toping.",
+      "v": [
+        "1/126",
+        "1/21",
+        "4/9",
+        "5/42"
+      ],
+      "t": 1,
+      "izoh": "9 o'quvchidan 4 tasini tanlash usullari soni C₉⁴ = 126 ta. Uchala razryadli o'yinchi tanlansa, qolgan bitta o'rin 6 nafardan tanlanadi: C₆¹ = 6 usul. Demak ehtimol 6/126 bo'lib, qisqartirilganda 1/21 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "klassik-kombinatorika",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#5e8a348e"
+    },
+    {
+      "q": "Qutidagi 15 ta detaldan 3 tasi nuqsonli. Ketma-ket ikkita detal qaytarilmasdan olinadi; ikkalasi ham soz bo'lish ehtimolini toping.",
+      "v": [
+        "4/5",
+        "16/25",
+        "22/35",
+        "1/35"
+      ],
+      "t": 2,
+      "izoh": "Birinchi detal soz chiqish ehtimoli 12/15. Undan keyin qutida 14 detal qoladi, ulardan 11 tasi soz, demak ikkinchi qadam ehtimoli 11/14. Ko'paytirish teoremasiga ko'ra 12/15 · 11/14 = 132/210 = 22/35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qaytarmasdan-ketma-ket",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#e1cc6769"
+    },
+    {
+      "q": "Sinfdagi 18 o'quvchidan 5 tasi olimpiada g'olibi. Ikki o'quvchi navbat bilan tasodifiy chaqiriladi; birinchisi g'olib, ikkinchisi g'olib bo'lmasligi ehtimolini toping.",
+      "v": [
+        "65/324",
+        "5/18",
+        "13/18",
+        "65/306"
+      ],
+      "t": 3,
+      "izoh": "Birinchi chaqirilgan o'quvchining g'olib bo'lish ehtimoli 5/18. Undan keyin sinfda 17 o'quvchi qoladi, ular orasida g'olib bo'lmaganlar 13 ta, demak ikkinchi qadam ehtimoli 13/17. Ehtimollar ko'paytiriladi: 5/18 · 13/17 = 65/306.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qaytarmasdan-ketma-ket",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#59e7ee00"
+    },
+    {
+      "q": "Hamyonda 6 ta ellik minglik va 4 ta o'n minglik banknot bor. Ketma-ket ikkita banknot olinganda ikkalasi ham ellik minglik bo'lish ehtimolini toping.",
+      "v": [
+        "1/3",
+        "9/25",
+        "3/5",
+        "2/15"
+      ],
+      "t": 0,
+      "izoh": "Birinchi banknot ellik minglik chiqish ehtimoli 6/10. Undan keyin hamyonda 9 ta banknot qoladi, ulardan 5 tasi ellik minglik, demak ikkinchi qadam ehtimoli 5/9. Ko'paytma 6/10 · 5/9 = 30/90 bo'lib, u 1/3 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qaytarmasdan-ketma-ket",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#3318f7e8"
+    },
+    {
+      "q": "Qutida 4 ta qizil, 5 ta ko'k va 3 ta yashil qalam bor. Qaytarmasdan uchta qalam olinganda ularning uchalasi ham har xil rangda bo'lish ehtimolini toping.",
+      "v": [
+        "5/144",
+        "3/11",
+        "3/44",
+        "8/11"
+      ],
+      "t": 1,
+      "izoh": "12 ta qalamdan 3 tasini tanlash usullari soni C₁₂³ = 220 ta. Har rangdan bittadan olish usullari soni 4 · 5 · 3 = 60 ta. Demak ehtimol 60/220 bo'lib, qisqartirilganda 3/11 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qaytarmasdan-ketma-ket",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#3d7cb2da"
+    },
+    {
+      "q": "Zar ketma-ket uch marta tashlanadi. Har uchala tashlashda ham 6 ochko tushish ehtimolini toping.",
+      "v": [
+        "1/18",
+        "1/36",
+        "1/6",
+        "1/216"
+      ],
+      "t": 3,
+      "izoh": "Har bir tashlashda 6 ochko tushish ehtimoli 1/6 ga teng. Tashlashlar bir-biriga bog'liq emas, shuning uchun ehtimollar ko'paytiriladi. Demak 1/6 · 1/6 · 1/6 = 1/216.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qaytarib-tanlash",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#9588f010"
+    },
+    {
+      "q": "Do'kondagi avtomat har bir tugma bosilganda 0,08 ehtimol bilan buzuq chek chiqaradi. Ketma-ket bosilgan ikki tugmada ham buzuq chek chiqish ehtimolini toping.",
+      "v": [
+        "0,0064",
+        "0,16",
+        "0,64",
+        "0,8464"
+      ],
+      "t": 0,
+      "izoh": "Har bir bosish natijasi oldingisiga bog'liq emas, demak hodisalar bog'liqsiz. Ko'paytirish teoremasiga ko'ra ehtimollar ko'paytiriladi: 0,08 · 0,08. Natija 0,0064 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qaytarib-tanlash",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#ca897414"
+    },
+    {
+      "q": "Mashqda har bir o'qning nishonga tegish ehtimoli 0,2 ga teng. Uchta mustaqil o'q uzilganda hech biri nishonga tegmasligi ehtimolini toping.",
+      "v": [
+        "0,384",
+        "0,008",
+        "0,512",
+        "0,488"
+      ],
+      "t": 2,
+      "izoh": "Bitta o'qning tegmaslik ehtimoli qarama-qarshi hodisadan topiladi: 1 − 0,2 = 0,8. Otishlar bog'liqsiz bo'lgani uchun ehtimollar ko'paytiriladi. Demak 0,8 · 0,8 · 0,8 = 0,512.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qaytarib-tanlash",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#1871ea2f"
+    },
+    {
+      "q": "Bir savolga to'g'ri javob berish ehtimoli 0,6 bo'lgan talaba beshta savoldan iborat testni yechmoqda. Uning beshta savolga ham to'g'ri javob berish ehtimolini toping.",
+      "v": [
+        "0,36",
+        "0,07776",
+        "0,1296",
+        "0,4"
+      ],
+      "t": 1,
+      "izoh": "Savollarga javob berish hodisalari bog'liqsiz, shuning uchun ehtimollar ko'paytiriladi. Demak izlanayotgan ehtimol 0,6 ni besh marta ko'paytirishdan hosil bo'ladi. Ketma-ket hisoblasak: 0,36; 0,216; 0,1296 va nihoyat 0,07776.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qaytarib-tanlash",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#78cab583"
+    },
+    {
+      "q": "Bitta zar tashlanganda 5 dan katta yoki 2 dan kichik son tushish ehtimolini toping.",
+      "v": [
+        "1/3",
+        "1/6",
+        "2/3",
+        "1/2"
+      ],
+      "t": 0,
+      "izoh": "5 dan katta sonlarga faqat 6 kiradi, 2 dan kichik sonlarga faqat 1 kiradi. Bu ikki hodisa birga ro'y bermaydi, shuning uchun ehtimollar qo'shiladi: 1/6 + 1/6 = 2/6. Kasrni qisqartirsak, 1/3 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zar-hodisalari",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#efcb684f"
+    },
+    {
+      "q": "Ikkita zar birga tashlanadi. Ochkolar yig'indisi 8 ga teng bo'lishi yoki ikkala zarda bir xil son tushishi ehtimolini toping.",
+      "v": [
+        "11/36",
+        "1/6",
+        "5/18",
+        "5/36"
+      ],
+      "t": 2,
+      "izoh": "Jami natijalar soni 36 ta. Yig'indisi 8 bo'lgan holatlar 5 ta, bir xil son tushgan holatlar 6 ta, ikkala shartni birga bajaruvchi holat esa faqat bitta — (4; 4). Umumiy qo'shish teoremasiga ko'ra (5 + 6 − 1)/36 = 10/36 = 5/18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zar-hodisalari",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#19912a23"
+    },
+    {
+      "q": "Ikkita zar birga tashlanadi va zarlarning natijalari bir-biridan bog'liqsiz. Kamida bitta zarda 4 ochko tushish ehtimolini toping.",
+      "v": [
+        "5/18",
+        "1/36",
+        "25/36",
+        "11/36"
+      ],
+      "t": 3,
+      "izoh": "Qarama-qarshi hodisa — hech bir zarda 4 tushmasligi. Har bir zar uchun bunday natija ehtimoli 5/6, zarlar bog'liqsiz bo'lgani uchun ko'paytiriladi: 25/36. Demak izlanayotgan ehtimol 1 − 25/36 = 11/36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zar-hodisalari",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#9e106dfe"
+    },
+    {
+      "q": "Zar ketma-ket ikki marta tashlanadi. Birinchi tashlashda toq son, ikkinchisida esa birinchisidan qat'iy katta son tushish ehtimolini toping.",
+      "v": [
+        "1/2",
+        "1/4",
+        "1/3",
+        "1/6"
+      ],
+      "t": 1,
+      "izoh": "Barcha natijalar soni 36 ta. Agar birinchi tashlashda 1 tushsa, ikkinchisi 5 xil bo'ladi; 3 tushsa 3 xil; 5 tushsa 1 xil. Qulay natijalar soni 5 + 3 + 1 = 9, demak ehtimol 9/36 = 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zar-hodisalari",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#c8da991d"
+    },
+    {
+      "q": "36 ta kartadan iborat dastadan bitta karta olinadi. Olingan karta qizil mastda yoki tuz bo'lish ehtimolini toping.",
+      "v": [
+        "11/18",
+        "1/2",
+        "5/9",
+        "1/9"
+      ],
+      "t": 2,
+      "izoh": "Dastada qizil kartalar 18 ta, tuzlar esa 4 ta. Ikki tuz qizil mastda bo'lgani uchun hodisalar birgalikda va kesishma 2 ta kartadan iborat. Umumiy qo'shish teoremasiga ko'ra (18 + 4 − 2)/36 = 20/36 = 5/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "karta-lotereya",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#b05bdeb1"
+    },
+    {
+      "q": "Lotereyada 100 ta biletdan 5 tasi avtomobil, 12 tasi maishiy texnika yutadi. Bitta bilet olinganda qandaydir yutuq chiqish ehtimolini toping.",
+      "v": [
+        "0,17",
+        "0,05",
+        "0,12",
+        "0,006"
+      ],
+      "t": 0,
+      "izoh": "Bitta bilet ikkala yutuqni birdan bera olmaydi, demak hodisalar birgalikda emas. Shuning uchun ehtimollar qo'shiladi: 5/100 + 12/100 = 17/100. Bu kasr 0,17 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "karta-lotereya",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#b411045c"
+    },
+    {
+      "q": "Do'kondagi 60 ta kitobdan 25 tasi chegirmada, 20 tasi yangi nashr, 8 tasi esa ham chegirmada, ham yangi nashr. Tasodifiy olingan kitob chegirmada yoki yangi nashr bo'lish ehtimolini toping.",
+      "v": [
+        "3/4",
+        "5/12",
+        "1/3",
+        "37/60"
+      ],
+      "t": 3,
+      "izoh": "Bu hodisalar birgalikda, chunki 8 ta kitob ikkala shartni ham bajaradi. Umumiy qo'shish teoremasiga ko'ra qulay kitoblar soni 25 + 20 − 8 = 37 ta. Demak ehtimol 37/60 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "karta-lotereya",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#daf51582"
+    },
+    {
+      "q": "Idishda 1 dan 30 gacha raqamlangan jetonlar bor. Tasodifiy olingan jeton raqami 3 ga yoki 5 ga bo'linish ehtimolini toping.",
+      "v": [
+        "8/15",
+        "7/15",
+        "1/2",
+        "1/5"
+      ],
+      "t": 1,
+      "izoh": "3 ga bo'linadigan jetonlar 10 ta, 5 ga bo'linadiganlari 6 ta. Ikkalasiga ham bo'linadigan, ya'ni 15 ga karrali jetonlar 2 ta — bu kesishma. Demak qulay natijalar soni 10 + 6 − 2 = 14 va ehtimol 14/30 = 7/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "karta-lotereya",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#6ca58252"
+    },
+    {
+      "q": "Ikki hodisa uchun P(A) = 0,45; P(B) = 0,6 va P(A · B) = 0,27 berilgan. A ham, B ham ro'y bermasligi ehtimolini toping.",
+      "v": [
+        "0,78",
+        "0,27",
+        "0,4",
+        "0,22"
+      ],
+      "t": 3,
+      "izoh": "Avval yig'indi ehtimoli topiladi: 0,45 + 0,6 − 0,27 = 0,78. «Hech biri ro'y bermaydi» hodisasi yig'indiga qarama-qarshi hodisadir. Demak javob 1 − 0,78 = 0,22 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "de-morgan",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#b2597068"
+    },
+    {
+      "q": "Ikki avtomatning bir kunda ishdan chiqishi bir-biridan mustaqil bo'lib, ehtimollari 0,12 va 0,2 ga teng. «Kamida bitta avtomat ishdan chiqadi» hodisasiga qarama-qarshi hodisaning ehtimolini toping.",
+      "v": [
+        "0,704",
+        "0,296",
+        "0,024",
+        "0,68"
+      ],
+      "t": 0,
+      "izoh": "«Kamida bitta ishdan chiqadi» hodisasiga qarama-qarshi hodisa — hech qaysi avtomat ishdan chiqmasligi. Har bir avtomat uchun soz qolish ehtimoli 0,88 va 0,8. Avtomatlar bog'liqsiz bo'lgani uchun 0,88 · 0,8 = 0,704.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "de-morgan",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#5d81887b"
+    },
+    {
+      "q": "«Uchala detal ham standart» hodisasiga qarama-qarshi hodisa qanday ta'riflanadi?",
+      "v": [
+        "Uchala detal ham standart emas",
+        "Faqat bitta detal standart emas",
+        "Kamida bitta detal standart emas",
+        "Kamida bitta detal standart"
+      ],
+      "t": 2,
+      "izoh": "Qarama-qarshi hodisa berilgan hodisa ro'y bermagan barcha hollarni qamrab oladi. «Uchalasi ham standart» buzilishi uchun hech bo'lmaganda bitta detal standart bo'lmasligi kifoya. Uchalasi ham standart emas bo'lishi esa bu hollarning faqat bir qismi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "de-morgan",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#ff03aa39"
+    },
+    {
+      "q": "Bog'liqsiz A va B hodisalar uchun P(A) = 0,4 va ikkalasi ham ro'y bermaslik ehtimoli 0,18 ga teng. P(B) ni toping.",
+      "v": [
+        "0,3",
+        "0,7",
+        "0,6",
+        "0,82"
+      ],
+      "t": 1,
+      "izoh": "Hech biri ro'y bermasligi — bu Ā va B̄ hodisalarining birga ro'y berishi. Hodisalar bog'liqsiz bo'lgani uchun P(Ā) · P(B̄) = 0,18, ya'ni 0,6 · P(B̄) = 0,18. Bundan P(B̄) = 0,3 va P(B) = 1 − 0,3 = 0,7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "de-morgan",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#0736daf8"
+    },
+    {
+      "q": "Ovchi qushga ketma-ket ikki marta mustaqil o'q uzadi; birinchi otishda tekkizish ehtimoli 0,45, ikkinchisida 0,6. Ikkala o'q ham nishonga tegish ehtimolini toping.",
+      "v": [
+        "1,05",
+        "0,27",
+        "0,525",
+        "0,78"
+      ],
+      "t": 1,
+      "izoh": "Otishlar bir-biriga bog'liq emas, shuning uchun ko'paytirish teoremasi qo'llanadi. Ikkala o'q tegishi ehtimoli 0,45 · 0,6 ga teng. Ko'paytmani hisoblasak, 0,27 kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "otish-nishon",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#d7b652da"
+    },
+    {
+      "q": "Mergan nishonga tekkizguncha o'q uzadi, har bir otishda tekkizish ehtimoli 0,7. Aynan uchinchi otishda birinchi marta tekkizish ehtimolini toping.",
+      "v": [
+        "0,343",
+        "0,7",
+        "0,027",
+        "0,063"
+      ],
+      "t": 3,
+      "izoh": "Bu hodisa uchta shartning birga bajarilishini talab qiladi: birinchi otish xato, ikkinchisi xato, uchinchisi aniq. Xato otish ehtimoli 0,3, otishlar esa bog'liqsiz. Demak 0,3 · 0,3 · 0,7 = 0,063.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "otish-nishon",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#aa75c668"
+    },
+    {
+      "q": "Uchta mergan nishonga bir-biridan mustaqil ravishda bittadan o'q uzadi, har birining tekkizish ehtimoli 0,7 ga teng. Nishonga kamida ikkita o'q tegish ehtimolini toping.",
+      "v": [
+        "0,784",
+        "0,441",
+        "0,343",
+        "0,973"
+      ],
+      "t": 0,
+      "izoh": "Aynan ikkita tekkizish uch xil yo'l bilan bo'ladi, har birining ehtimoli 0,7 · 0,7 · 0,3 = 0,147, jami 3 · 0,147 = 0,441. Uchalasi tekkizishi ehtimoli 0,7 · 0,7 · 0,7 = 0,343. Bu hodisalar birgalikda emas, shuning uchun 0,441 + 0,343 = 0,784.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "otish-nishon",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#7117b278"
+    },
+    {
+      "q": "Ikki mergan navbat bilan bittadan o'q uzadi; otishlar bog'liqsiz bo'lib, birinchisining tekkizish ehtimoli 0,55, ikkinchisiniki 0,8. Nishonga faqat ikkinchi mergan tekkizishi ehtimolini toping.",
+      "v": [
+        "0,44",
+        "0,11",
+        "0,36",
+        "0,8"
+      ],
+      "t": 2,
+      "izoh": "Bu hodisa birinchi merganning xato qilishi va ikkinchisining tekkizishi bilan ro'y beradi. Birinchisining xato qilish ehtimoli 1 − 0,55 = 0,45. Otishlar bog'liqsiz bo'lgani uchun 0,45 · 0,8 = 0,36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "otish-nishon",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#1c1f9331"
+    },
+    {
+      "q": "Elektr zanjiri ketma-ket ulangan ikki mustaqil elementdan iborat; ularning nosozliksiz ishlash ehtimoli 0,95 va 0,9. Butun zanjirning nosozliksiz ishlash ehtimolini toping.",
+      "v": [
+        "1,85",
+        "0,925",
+        "0,995",
+        "0,855"
+      ],
+      "t": 3,
+      "izoh": "Ketma-ket ulanishda zanjir faqat ikkala element ham soz bo'lganda ishlaydi. Bu — hodisalar ko'paytmasi, elementlar esa bog'liqsiz. Demak 0,95 · 0,9 = 0,855.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishonchlilik-zanjir",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#c3a4a038"
+    },
+    {
+      "q": "Qurilmada ikkita mustaqil element parallel ulangan, har birining ishdan chiqish ehtimoli 0,08. Qurilma ishlashi uchun kamida bitta element soz bo'lishi kifoya; qurilmaning ishlash ehtimolini toping.",
+      "v": [
+        "0,8464",
+        "0,9936",
+        "0,84",
+        "0,16"
+      ],
+      "t": 1,
+      "izoh": "Qurilma faqat ikkala element ham ishdan chiqqanda to'xtaydi, bu hodisaning ehtimoli 0,08 · 0,08 = 0,0064. Ishlash hodisasi unga qarama-qarshi. Demak 1 − 0,0064 = 0,9936.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishonchlilik-zanjir",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#71debdb2"
+    },
+    {
+      "q": "Tizimda birinchi va ikkinchi bo'g'in ketma-ket ulangan, uchinchi bo'g'in esa ularga parallel qo'yilgan. Bo'g'inlar bir-biridan mustaqil ishlaydi va har birining ishlash ehtimoli 0,8 bo'lsa, tizim ishlash ehtimolini toping.",
+      "v": [
+        "0,512",
+        "0,64",
+        "0,928",
+        "0,96"
+      ],
+      "t": 2,
+      "izoh": "Ketma-ket ulangan ikki bo'g'in birgalikda 0,8 · 0,8 = 0,64 ehtimol bilan ishlaydi. Tizim ishlamasligi uchun bu tarmoq ham, uchinchi bo'g'in ham ishdan chiqishi kerak: 0,36 · 0,2 = 0,072. Demak ishlash ehtimoli 1 − 0,072 = 0,928.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ishonchlilik-zanjir",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#bbada141"
+    },
+    {
+      "q": "Avtomat liniyasi to'rtta mustaqil bo'g'indan iborat; har birining smena davomida uzluksiz ishlash ehtimoli 0,9. Butun liniyaning smena davomida uzluksiz ishlash ehtimolini toping.",
+      "v": [
+        "0,6561",
+        "0,9999",
+        "0,3439",
+        "0,36"
+      ],
+      "t": 0,
+      "izoh": "Liniya faqat to'rtala bo'g'in ham uzluksiz ishlagandagina to'xtamaydi. Bo'g'inlar mustaqil bo'lgani uchun ehtimollar ko'paytiriladi. Ketma-ket hisoblasak: 0,81; keyin 0,729 va nihoyat 0,6561.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ishonchlilik-zanjir",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#428b1df4"
+    },
+    {
+      "q": "Har bir o'qning nishonga tegish ehtimoli 0,5 ga teng. Kamida bitta o'q tegish ehtimoli 0,875 dan kam bo'lmasligi uchun kamida nechta o'q uzish kerak?",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Kamida bitta tegish ehtimoli qarama-qarshi hodisa orqali yoziladi: 1 − 0,5ⁿ. Shart bo'yicha 1 − 0,5ⁿ ≥ 0,875, bundan 0,5ⁿ ≤ 0,125 kelib chiqadi. Ikki otishda 0,25, uch otishda esa 0,125 hosil bo'ladi, demak kamida 3 ta o'q kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-masala-son-topish",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#a816b6ea"
+    },
+    {
+      "q": "Lotereyada bitta bilet bilan yutish ehtimoli 0,1 ga teng. Kamida bitta yutuq olish ehtimoli 0,3 dan katta bo'lishi uchun kamida nechta bilet sotib olish kerak?",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Yutuqsiz qolish ehtimoli har bir biletda 0,9, biletlar esa bog'liqsiz deb qaraladi. Shart 1 − 0,9ⁿ > 0,3, ya'ni 0,9ⁿ < 0,7 ko'rinishida yoziladi. Bitta biletda 0,9; ikkitada 0,81; uchtada 0,729 — bularning hammasi hali 0,7 dan katta; to'rtta biletda esa 0,6561 hosil bo'ladi. Demak kamida 4 ta bilet kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-masala-son-topish",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#4095d11e"
+    },
+    {
+      "q": "Ikkita bog'liqsiz hodisaning birgalikda ro'y berish ehtimoli 0,36, birinchi hodisaning ehtimoli esa 0,6 ga teng. Ikkinchi hodisaning ehtimolini toping.",
+      "v": [
+        "0,6",
+        "0,216",
+        "0,96",
+        "0,24"
+      ],
+      "t": 0,
+      "izoh": "Bog'liqsiz hodisalar uchun P(A · B) = P(A) · P(B) tengligi o'rinli. Berilganlarni qo'ysak, 0,36 = 0,6 · P(B) tenglama hosil bo'ladi. Bundan P(B) = 0,36 : 0,6 = 0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-masala-son-topish",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#c8709b14"
+    },
+    {
+      "q": "A va B birgalikda bo'lmagan hodisalar. P(A + B) = 0,72 va A ning ehtimoli B nikidan 2 marta katta bo'lsa, P(B) ni toping.",
+      "v": [
+        "0,48",
+        "0,36",
+        "0,28",
+        "0,24"
+      ],
+      "t": 3,
+      "izoh": "Hodisalar birgalikda bo'lmagani uchun P(A + B) = P(A) + P(B). P(B) = x desak, P(A) = 2x va 2x + x = 0,72 tenglama chiqadi. Bundan 3x = 0,72, ya'ni x = 0,24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-masala-son-topish",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#5407284f"
+    },
+    {
+      "q": "Qutidagi 20 ta detaldan 6 tasi nuqsonli. Birinchi olingan detal nuqsonli chiqdi va qutiga qaytarilmadi; ikkinchi detal ham nuqsonli bo'lish ehtimolini toping.",
+      "v": [
+        "6/19",
+        "3/10",
+        "5/19",
+        "1/4"
+      ],
+      "t": 2,
+      "izoh": "Birinchi detal olingandan keyin qutida 19 ta detal qoladi. Ular orasidagi nuqsonlilar soni ham bittaga kamayib, 5 taga tushadi. Demak shartli ehtimol 5/19 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shartli-ehtimol",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#cca9495a"
+    },
+    {
+      "q": "Talabaning imtihonga tayyorlanish ehtimoli 0,85; tayyorlangan talabaning a'lo baho olish ehtimoli esa 0,6. Tasodifiy talaba tayyorlangan va a'lo baho olgan bo'lish ehtimolini toping.",
+      "v": [
+        "0,51",
+        "1,45",
+        "0,25",
+        "0,34"
+      ],
+      "t": 0,
+      "izoh": "Bu yerda ikki hodisa ko'paytmasining ehtimoli izlanmoqda, lekin hodisalar bog'liq. Umumiy ko'paytirish teoremasiga ko'ra P(A · B) = P(A) · P(B|A). Demak 0,85 · 0,6 = 0,51.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shartli-ehtimol",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#0ff5173e"
+    },
+    {
+      "q": "Qutida 8 ta oq va 7 ta qora shar bor. Ketma-ket ikkita shar qaytarilmasdan olinadi; birinchisi oq, ikkinchisi qora bo'lish ehtimolini toping.",
+      "v": [
+        "56/225",
+        "8/15",
+        "7/15",
+        "4/15"
+      ],
+      "t": 3,
+      "izoh": "Birinchi shar oq chiqish ehtimoli 8/15. Undan keyin qutida 14 shar qoladi, ulardan 7 tasi qora, demak shartli ehtimol 7/14 = 1/2. Ko'paytirish teoremasiga ko'ra 8/15 · 1/2 = 4/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shartli-ehtimol",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#a75431ed"
+    },
+    {
+      "q": "Guruhdagi 25 talabadan 10 tasi ingliz tilini biladi. Ketma-ket ikki talaba tanlanganda ikkalasi ham ingliz tilini bilish ehtimoli qanchaga teng?",
+      "v": [
+        "4/25",
+        "3/20",
+        "2/5",
+        "7/20"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tanlangan talabaning ingliz tilini bilish ehtimoli 10/25. Undan keyin 24 talaba qoladi, ular orasida tilni biluvchilar 9 ta, demak shartli ehtimol 9/24. Ko'paytma 10/25 · 9/24 = 90/600 bo'lib, qisqartirilganda 3/20 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shartli-ehtimol",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#3b01d551"
+    },
+    {
+      "q": "Partiyadagi 20 ta lampochkadan 3 tasi nuqsonli. Tasodifiy 2 ta lampochka birdaniga olinganda ikkalasi ham soz bo'lish ehtimolini toping.",
+      "v": [
+        "17/20",
+        "289/400",
+        "68/95",
+        "3/190"
+      ],
+      "t": 2,
+      "izoh": "20 ta lampochkadan 2 tasini tanlash usullari soni C₂₀² = 190 ta. Ikkalasi ham soz bo'lishi uchun 17 tadan 2 tasi tanlanadi: C₁₇² = 136 usul. Demak ehtimol 136/190 bo'lib, qisqartirilganda 68/95 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kombinatorik-nuqsonli",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#48346a5b"
+    },
+    {
+      "q": "Yashikdagi 15 ta mevadan 4 tasi buzilgan. Tasodifiy 3 ta meva olinganda ular orasida aynan bittasi buzilgan bo'lish ehtimolini toping.",
+      "v": [
+        "44/91",
+        "33/91",
+        "4/15",
+        "66/455"
+      ],
+      "t": 0,
+      "izoh": "15 ta mevadan 3 tasini tanlash usullari soni C₁₅³ = 455 ta. Aynan bitta buzilgan meva tanlanishi uchun 4 tadan 1 tasi va 11 tasidan 2 tasi olinadi: C₄¹ · C₁₁² = 4 · 55 = 220 usul. Demak ehtimol 220/455, qisqartirilganda 44/91.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kombinatorik-nuqsonli",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#a654a65c"
+    },
+    {
+      "q": "Do'kondagi 12 ta telefondan 5 tasi qora rangda. Xaridor 2 ta telefonni tasodifiy tanlaganda ular orasida kamida bittasi qora bo'lish ehtimolini toping.",
+      "v": [
+        "7/22",
+        "5/12",
+        "25/144",
+        "15/22"
+      ],
+      "t": 3,
+      "izoh": "12 ta telefondan 2 tasini tanlash usullari soni C₁₂² = 66 ta. Hech qaysisi qora bo'lmasligi uchun 7 tadan 2 tasi olinadi: C₇² = 21 usul, ehtimoli 21/66 = 7/22. Kamida bitta qora bo'lish ehtimoli esa 1 − 7/22 = 15/22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kombinatorik-nuqsonli",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#d4ee8ccd"
+    },
+    {
+      "q": "Sinovdan o'tayotgan 10 ta asbobdan 3 tasi sozlanmagan. Nazoratchi tasodifiy 4 tasini tekshiradi; tekshirilganlarning barchasi sozlangan bo'lish ehtimolini toping.",
+      "v": [
+        "7/10",
+        "1/6",
+        "5/6",
+        "1/30"
+      ],
+      "t": 1,
+      "izoh": "10 ta asbobdan 4 tasini tanlash usullari soni C₁₀⁴ = 210 ta. Barchasi sozlangan bo'lishi uchun 7 tadan 4 tasi tanlanadi: C₇⁴ = 35 usul. Demak ehtimol 35/210 bo'lib, qisqartirilganda 1/6 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kombinatorik-nuqsonli",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#ca04e6d7"
+    },
+    {
+      "q": "Uchta detal navbat bilan tekshiriladi. Aᵢ — i-detalning standart chiqishi hodisasi. «Uchala detal ham standart» hodisasini qanday yozish mumkin?",
+      "v": [
+        "A₁ + A₂ + A₃",
+        "Ā₁ · Ā₂ · Ā₃",
+        "A₁ · A₂ · A₃",
+        "A₁ · A₂ + A₃"
+      ],
+      "t": 2,
+      "izoh": "Bir necha hodisaning birgalikda ro'y berishi ularning ko'paytmasi bilan ifodalanadi. Bu yerda uchala shart ham bajarilishi kerak, demak uchta hodisa ko'paytiriladi. Yig'indi esa kamida bittasi standart bo'lishini bildirgan bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simvolik-yozuv",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#05977cf0"
+    },
+    {
+      "q": "Ikki talaba imtihon topshiradi. A — birinchisi o'tdi, B — ikkinchisi o'tdi hodisalari kiritilgan. «Ular ichidan faqat bittasi o'tdi» hodisasini ifodalang.",
+      "v": [
+        "A · B̄ + Ā · B",
+        "A · B",
+        "A + B",
+        "Ā · B̄"
+      ],
+      "t": 0,
+      "izoh": "Faqat bittasi o'tishi ikki xil yo'l bilan ro'y beradi: birinchisi o'tib, ikkinchisi yiqilsa yoki aksincha. Har bir yo'l ko'paytma bilan, ikki yo'lning birlashuvi esa yig'indi bilan yoziladi. Demak izlanayotgan ifoda A · B̄ + Ā · B ko'rinishida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simvolik-yozuv",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#7175ce0a"
+    },
+    {
+      "q": "Nishonga uchta o'q uziladi; Aᵢ — i-o'qning nishonga tegishi hodisasi. «Kamida bitta o'q nishonga tegmadi» hodisasini qanday ifodalash mumkin?",
+      "v": [
+        "Ā₁ · Ā₂ · Ā₃",
+        "A₁ · A₂ · A₃",
+        "A₁ + A₂ + A₃",
+        "Ā₁ + Ā₂ + Ā₃"
+      ],
+      "t": 3,
+      "izoh": "«Kamida bitta» iborasi doim yig'indi bilan ifodalanadi. Bu yerda tegmaslik hodisalari olinadi, ya'ni har bir Aᵢ ning qarama-qarshisi. Demak izlanayotgan hodisa Ā₁ + Ā₂ + Ā₃ bo'lib, u «uchalasi ham tegdi» hodisasiga qarama-qarshidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simvolik-yozuv",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#07bf780f"
+    },
+    {
+      "q": "A va B hodisalar uchun A · B̄ + Ā · B + A · B ifodasi qaysi hodisaga teng kuchli ekanini aniqlang.",
+      "v": [
+        "A · B",
+        "A + B",
+        "Ā · B̄",
+        "A · B̄"
+      ],
+      "t": 1,
+      "izoh": "Berilgan uch qo'shiluvchi bir-birini istisno qiluvchi uch holni beradi: faqat A, faqat B, hamda A va B birga. Bu uch hol birlashganda A yoki B ro'y bergan barcha natijalar to'liq qamrab olinadi. Demak ifoda A + B yig'indisiga teng kuchli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simvolik-yozuv",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#e92078b8"
+    },
+    {
+      "q": "Ikki do'kondan mahsulot yetkazib beriladi; birinchisidan kelgan mahsulotning yaroqli bo'lish ehtimoli 0,9, ikkinchisidan kelganiniki 0,8 va mahsulotlarning sifati bir-biridan bog'liqsiz. Har do'kondan bittadan olingan mahsulotlardan kamida bittasi yaroqsiz bo'lish ehtimolini toping.",
+      "v": [
+        "0,28",
+        "0,72",
+        "0,02",
+        "0,98"
+      ],
+      "t": 0,
+      "izoh": "Qarama-qarshi hodisa — ikkala mahsulot ham yaroqli bo'lishi, uning ehtimoli 0,9 · 0,8 = 0,72. Kamida bittasi yaroqsiz bo'lish hodisasi shunga qarama-qarshi. Demak javob 1 − 0,72 = 0,28 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-modellashtirish",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#88565fe2"
+    },
+    {
+      "q": "Avgust oyida bir kunda yomg'ir yog'ish ehtimoli 0,1 ga teng va har kungi ob-havo oldingi kunlardan bog'liqsiz deb hisoblanadi. Ketma-ket uch kun kuzatilganda aynan bir kun yomg'ir yog'ish ehtimolini toping.",
+      "v": [
+        "0,001",
+        "0,271",
+        "0,081",
+        "0,243"
+      ],
+      "t": 3,
+      "izoh": "Aynan bitta yomg'irli kun uch xil holda bo'ladi: yomg'ir birinchi, ikkinchi yoki uchinchi kunga to'g'ri keladi. Har bir holning ehtimoli 0,1 · 0,9 · 0,9 = 0,081, kunlar esa bog'liqsiz. Bu uch hol birgalikda emas, shuning uchun 3 · 0,081 = 0,243.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-modellashtirish",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#ae94a728"
+    },
+    {
+      "q": "Fermer xo'jaligi sotib olgan urug'ning unib chiqish ehtimoli 0,85 ga teng va urug'lar bir-biridan bog'liqsiz unib chiqadi. Ikkita urug' ekilganda ulardan kamida bittasi unib chiqish ehtimolini toping.",
+      "v": [
+        "0,7225",
+        "0,9775",
+        "0,0225",
+        "0,3"
+      ],
+      "t": 1,
+      "izoh": "Har bir urug'ning unmay qolish ehtimoli 1 − 0,85 = 0,15. Ikkala urug' ham unmasligi ehtimoli 0,15 · 0,15 = 0,0225. Kamida bittasi unib chiqishi shunga qarama-qarshi hodisa, demak 1 − 0,0225 = 0,9775.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-modellashtirish",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#b5e8384a"
+    },
+    {
+      "q": "Ikki savdo nuqtasida bir xil mahsulot sotiladi. Xaridorning birinchi nuqtadan xarid qilish ehtimoli 0,52, ikkinchisidan 0,38, ikkalasidan ham xarid qilish ehtimoli 0,15. Xaridor hech qaysi nuqtadan xarid qilmaslik ehtimolini toping.",
+      "v": [
+        "0,75",
+        "0,1",
+        "0,25",
+        "0,15"
+      ],
+      "t": 2,
+      "izoh": "Avval kamida bitta nuqtadan xarid qilish ehtimoli topiladi: 0,52 + 0,38 − 0,15 = 0,75. Hech qaysisidan xarid qilmaslik shu hodisaga qarama-qarshi. Demak javob 1 − 0,75 = 0,25 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-modellashtirish",
+      "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va#dfeac731"
+    }
+  ]
+}

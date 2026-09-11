@@ -1,0 +1,456 @@
+{
+  "nom": "32-mavzu. Maxsus Nisbiylik Nazariyasi Asoslari Tezliklarni Qoshish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Maxsus nisbiylik nazariyasi qachon va kim tomonidan yaratilgan?",
+      "v": [
+        "1905-yilda A. Eynshteyn tomonidan",
+        "1687-yilda I. Nyuton tomonidan",
+        "1904-yilda G. Lorens tomonidan",
+        "1865-yilda J. Maksvell tomonidan"
+      ],
+      "t": 0,
+      "izoh": "Maxsus nisbiylik nazariyasi 1905-yilda A. Eynshteyn tomonidan yaratilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#f817dcd8"
+    },
+    {
+      "q": "Klassik (Nyuton) mexanikasi qanday tezliklardagi harakatlarni o'rganadi?",
+      "v": [
+        "Yorug'lik tezligidan ancha kichik (υ << c) tezliklardagi harakatlarni",
+        "Yorug'lik tezligiga yaqin tezliklardagi harakatlarni",
+        "Faqat tinch holatdagi jismlarni",
+        "Har qanday tezlikdagi harakatlarni"
+      ],
+      "t": 0,
+      "izoh": "Klassik mexanika υ << c bo'lgan kichik tezliklardagi harakatlarni o'rganadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#b7a76521"
+    },
+    {
+      "q": "Klassik mexanikada Galileyning nisbiylik tamoyili nimani bildiradi?",
+      "v": [
+        "Dinamika qonunlari barcha inersial sanoq sistemalarida bir xilda bajariladi",
+        "Yorug'lik tezligi barcha sistemalarda bir xil",
+        "Vaqt barcha sistemalarda har xil o'tadi",
+        "Massa tezlikka bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Galiley nisbiylik tamoyiliga ko'ra dinamika qonunlari barcha inersial sanoq sistemalarida bir xilda bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#ab2713b3"
+    },
+    {
+      "q": "Galiley almashtirishlari nimaga xizmat qiladi?",
+      "v": [
+        "Bir-biriga nisbatan harakatlanayotgan ikkita inersial sanoq sistemasida jismning koordinata, tezlik va vaqtini hisoblashga",
+        "Elektromagnit to'lqinlar tezligini hisoblashga",
+        "Massa va energiya bog'liqligini aniqlashga",
+        "Fazoviy burchakni o'lchashga"
+      ],
+      "t": 0,
+      "izoh": "Galiley almashtirishlari ikkita inersial sanoq sistemasiga nisbatan jismning koordinatalari va tezliklarini hisoblashga imkon beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#f8a9c2e5"
+    },
+    {
+      "q": "K' sanoq sistemasi K sistemasining X o'qi bo'ylab u tezlik bilan harakat qilsa, Galiley almashtirishlari qanday yoziladi?",
+      "v": [
+        "x = x' + ut, y = y', z = z', t = t'",
+        "x = x' − ut², y = y', z = z', t = t'",
+        "x = x' + u/t, y = y', z = z', t = t'",
+        "x = x' + ut, y = y' + ut, z = z', t = t'"
+      ],
+      "t": 0,
+      "izoh": "Galiley almashtirishlari: x = x' + ut, y = y', z = z', t = t'.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#56d59c3d"
+    },
+    {
+      "q": "Galiley almashtirishlarida vaqt uchun qanday munosabat qabul qilinadi?",
+      "v": [
+        "t = t' — barcha sanoq sistemalarida yagona vaqt",
+        "t = t'/2",
+        "t = t'·√(1−β²)",
+        "t vaqt t' dan katta"
+      ],
+      "t": 0,
+      "izoh": "Klassik mexanikada barcha sanoq sistemalarida yagona vaqt qabul qilinadi: t = t'.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#809ef2c8"
+    },
+    {
+      "q": "Galiley almashtirishlariga binoan jismning tezlanishlari turli inersial sanoq sistemalarida qanday bo'ladi?",
+      "v": [
+        "Barcha inersial sanoq sistemalarida bir xil",
+        "Harakatlanayotgan sistemada katta",
+        "Harakatlanayotgan sistemada kichik",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "ax = a'x, ay = a'y, az = a'z — tezlanish barcha inersial sistemalarda bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#a336b26c"
+    },
+    {
+      "q": "Maksvell nazariyasiga asosan elektromagnit to'lqinlarning tarqalish tezligi qanday?",
+      "v": [
+        "Barcha inersial sanoq sistemalarida bir xil bo'lib, yorug'likning vakuumdagi tezligiga teng",
+        "Manba tezligiga bog'liq",
+        "Muhitga bog'liq bo'lib, vakuumda nolga teng",
+        "Sanoq sistemasi tezligi bilan oshadi"
+      ],
+      "t": 0,
+      "izoh": "Maksvell nazariyasiga ko'ra elektromagnit to'lqinlar tezligi barcha inersial sistemalarda bir xil va c ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#67b550bd"
+    },
+    {
+      "q": "Yorug'lik tezligining sanoq sistemalari harakatiga bog'liq emasligini tajribada kimlar isbotlagan?",
+      "v": [
+        "A. Maykelson va E. Morli",
+        "Galiley va Nyuton",
+        "Eynshteyn va Plank",
+        "Lorens va Maksvell"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik tezligining doimiyligi A. Maykelson va E. Morli tajribalarida isbotlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#5819c3f0"
+    },
+    {
+      "q": "Klassik nazariya bilan tajriba orasidagi qarama-qarshilik nimadan iborat edi?",
+      "v": [
+        "Galiley almashtirishlari bo'yicha yorug'lik tezligi u + c bo'lishi kerak edi, lekin tajribada c ga teng chiqdi",
+        "Nyuton qonunlari kichik tezliklarda ishlamadi",
+        "Elektromagnit to'lqinlar vakuumda tarqalmadi",
+        "Tezlanish sistemalarda har xil chiqdi"
+      ],
+      "t": 0,
+      "izoh": "Galiley formulasi bo'yicha tezlik u + c bo'lishi kerak edi, lekin Maykelson tajribasi c ni berdi — bu qarama-qarshilikka Eynshteyn barham berdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#13da21ae"
+    },
+    {
+      "q": "Eynshteyn klassik fizikada absolut deb hisoblangan qaysi kattalikni nisbiy deb qabul qildi?",
+      "v": [
+        "Vaqtni (va fazo kattaliklarini)",
+        "Massani",
+        "Zaryadni",
+        "Yorug'lik tezligini"
+      ],
+      "t": 0,
+      "izoh": "Eynshteyn absolut deb hisoblangan kattaliklarni, shu jumladan vaqtni, nisbiy kattaliklar deb qabul qildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#50cd99a8"
+    },
+    {
+      "q": "Relyativistik mexanika qanday jismlarning harakat qonunlarini o'rganadi?",
+      "v": [
+        "Yorug'lik tezligidan kichik, ammo unga yaqin tezlik bilan harakatlanayotgan jismlarning",
+        "Faqat tinch jismlarning",
+        "Faqat kundalik hayotdagi sekin jismlarning",
+        "Yorug'likdan tez jismlarning"
+      ],
+      "t": 0,
+      "izoh": "Relyativistik mexanika c dan kichik, ammo unga yaqin tezlikdagi jismlar harakat qonunlarini o'z ichiga oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#79991243"
+    },
+    {
+      "q": "Eynshteynning maxsus nisbiylik nazariyasi asosini nechta postulat tashkil etadi?",
+      "v": [
+        "Ikkita — nisbiylik tamoyili va yorug'lik tezligining doimiylik tamoyili",
+        "Bitta — yorug'lik tezligining doimiyligi",
+        "Uchta — Nyuton qonunlari",
+        "To'rtta — termodinamika qonunlari"
+      ],
+      "t": 0,
+      "izoh": "Maxsus nisbiylik nazariyasi ikkita postulatga asoslangan: nisbiylik tamoyili va yorug'lik tezligining doimiylik tamoyili.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#062b7384"
+    },
+    {
+      "q": "Yorug'lik tezligining doimiylik tamoyili nimani bildiradi?",
+      "v": [
+        "Yorug'likning vakuumdagi tezligi barcha inersial sanoq sistemalarida bir xil",
+        "Yorug'lik tezligi manba tezligiga qo'shiladi",
+        "Yorug'lik tezligi muhitda ortadi",
+        "Yorug'lik tezligi faqat Yerga nisbatan doimiy"
+      ],
+      "t": 0,
+      "izoh": "Tamoyilga ko'ra yorug'likning vakuumdagi tezligi barcha inersial sanoq sistemalarida bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#07e3f4c2"
+    },
+    {
+      "q": "Eynshteynning nisbiylik tamoyili nimani bildiradi?",
+      "v": [
+        "Barcha tabiat qonunlari va jarayonlari barcha inersial sanoq sistemalarida bir xilda ro'y beradi",
+        "Faqat mexanika qonunlari barcha sistemalarda bir xil",
+        "Yorug'lik tezligi manbaga bog'liq",
+        "Vaqt absolut kattalik"
+      ],
+      "t": 0,
+      "izoh": "Nisbiylik tamoyili: barcha tabiat qonunlari barcha inersial sanoq sistemalarida bir xilda ro'y beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#ec07bb08"
+    },
+    {
+      "q": "Relyativistik hollar uchun Galiley almashtirishlari o'rniga qaysi almashtirishlar o'rinli?",
+      "v": [
+        "Lorens almashtirishlari",
+        "Nyuton almashtirishlari",
+        "Galiley almashtirishlari o'zi",
+        "Eyler almashtirishlari"
+      ],
+      "t": 0,
+      "izoh": "Relyativistik hollar uchun Lorens almashtirishlari o'rinli; ular 1904-yilda tavsiya etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#7837a733"
+    },
+    {
+      "q": "Lorens almashtirishlarida β nimalarni nisbati?",
+      "v": [
+        "Sistema tezligining yorug'lik tezligiga nisbati: β = u/c",
+        "Yorug'lik tezligining sistema tezligiga nisbati",
+        "Massaning energiyaga nisbati",
+        "Vaqtlarning nisbati"
+      ],
+      "t": 0,
+      "izoh": "β = u/c — harakat tezligining yorug'lik tezligiga nisbati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#75b10401"
+    },
+    {
+      "q": "Kichik tezliklarda (u << c) Lorens almashtirishlari qanday ko'rinishga o'tadi?",
+      "v": [
+        "Galiley almashtirishlari formulasiga",
+        "Nolga",
+        "Nyutonning uchinchi qonuniga",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "u << c bo'lganda Lorens almashtirishlari Galiley almashtirishlariga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#490c73c9"
+    },
+    {
+      "q": "Nisbiylik nazariyasi klassik Nyuton mexanikasiga qanday munosabatda?",
+      "v": [
+        "Uni rad etmaydi, balki uning qo'llanilish chegarasini aniqlab beradi",
+        "Uni to'liq rad etadi",
+        "Undan mustaqil, hech qanday aloqasi yo'q",
+        "Faqat kvant mexanikasi bilan bog'laydi"
+      ],
+      "t": 0,
+      "izoh": "Nisbiylik nazariyasi klassik mexanikani rad etmaydi, balki uning qo'llanilish chegarasini aniqlab beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#527fb642"
+    },
+    {
+      "q": "Vaqtning relyativistik sekinlashishi qaysi formula bilan ifodalanadi?",
+      "v": [
+        "τ = τ₀/√(1−β²)",
+        "τ = τ₀·√(1−β²)",
+        "τ = τ₀·(1−β²)",
+        "τ = τ₀ + β²"
+      ],
+      "t": 0,
+      "izoh": "τ = τ₀/√(1−β²): harakatlanayotgan sistemada vaqt sekinlashadi (τ > τ₀).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#31cd6e7c"
+    },
+    {
+      "q": "Qo'zg'almas sanoq sistemasiga nisbatan harakatlanayotgan sistemada vaqtning o'tishi qanday bo'ladi?",
+      "v": [
+        "Sekinlashadi",
+        "Tezlashadi",
+        "O'zgarmaydi",
+        "To'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "τ > τ₀ bo'lgani uchun harakatlanayotgan sistemada vaqt sekinlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#5cbd56fb"
+    },
+    {
+      "q": "Uzunlikning relyativistik kamayishi (Lorens qisqarishi) qaysi formula bilan ifodalanadi?",
+      "v": [
+        "l = l₀·√(1−υ²/c²)",
+        "l = l₀/√(1−υ²/c²)",
+        "l = l₀·(1+υ²/c²)",
+        "l = l₀·υ/c"
+      ],
+      "t": 0,
+      "izoh": "l = l₀√(1−β²): harakatlanayotgan jismning chiziqli o'lchami qisqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#a47032e3"
+    },
+    {
+      "q": "Lorens uzunlik qisqarishi nimani anglatadi?",
+      "v": [
+        "Kuzatuvchiga nisbatan harakatlanayotgan jismning chiziqli o'lchami qisqaradi",
+        "Jismning massasi kamayadi",
+        "Jismning hajmi ortadi",
+        "Jismning uzunligi barcha yo'nalishda ortadi"
+      ],
+      "t": 0,
+      "izoh": "Kuzatuvchiga nisbatan harakatlanayotgan jismning chiziqli o'lchami qisqaradi — bu Lorens qisqarishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#ff2eba3c"
+    },
+    {
+      "q": "Tezliklarni qo'shishning relyativistik qonuni qanday yoziladi? (υ₂ — jismning qo'zg'almas sistemadagi tezligi, υ₁ — harakatlanuvchi sistemadagi tezligi, u — sistemaning tezligi)",
+      "v": [
+        "υ₂ = (υ₁ + u)/(1 + υ₁·u/c²)",
+        "υ₂ = υ₁ + u",
+        "υ₂ = (υ₁ + u)/(1 − c²)",
+        "υ₂ = υ₁·u/c"
+      ],
+      "t": 0,
+      "izoh": "Relyativistik qonun: υ₂ = (υ₁ + u)/(1 + υ₁·u/c²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#761e8288"
+    },
+    {
+      "q": "Tezliklar yorug'lik tezligidan juda kichik bo'lganda relyativistik qo'shish qonuni qanday ko'rinish oladi?",
+      "v": [
+        "Klassik υ₂ = υ₁ + u qonuniga aylanadi",
+        "υ₂ = c ga teng bo'ladi",
+        "υ₂ = 0 ga teng bo'ladi",
+        "υ₂ = υ₁ − u ga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "υ₁·u/c² ≈ 0 bo'lganda relyativistik formula klassik tezliklarni qo'shish qonuniga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#09a6fdcd"
+    },
+    {
+      "q": "Agar jismning harakatlanuvchi sistemadagi tezligi υ₁ = c bo'lsa, qo'zg'almas sistemadagi tezligi qancha bo'ladi?",
+      "v": [
+        "υ₂ = c",
+        "υ₂ = c + u",
+        "υ₂ = 2c",
+        "υ₂ = u"
+      ],
+      "t": 0,
+      "izoh": "υ₂ = (c+u)/(1+u/c) = c — Eynshteyn postulatiga muvofiq natija.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#8fb81c82"
+    },
+    {
+      "q": "Tezliklarni qo'shishning relyativistik qonuni qaysi almashtirishlardan kelib chiqadi?",
+      "v": [
+        "Lorens almashtirishlaridan",
+        "Galiley almashtirishlaridan",
+        "Nyuton tenglamalaridan",
+        "Maksvell tenglamalaridan"
+      ],
+      "t": 0,
+      "izoh": "Tezliklarni qo'shishning relyativistik qonuni Lorens almashtirishlaridan kelib chiqqan muhim natijalardan biridir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#7d9c5d41"
+    },
+    {
+      "q": "Klassik fizikada absolut deb qaralgan, relyativistik fizikada nisbiy bo'lgan kattaliklar qaysilar?",
+      "v": [
+        "Fazo (uzunlik) va vaqt",
+        "Yorug'lik tezligi va zaryad",
+        "Massa va energiya faqat",
+        "Kuch va tezlanish"
+      ],
+      "t": 0,
+      "izoh": "Eynshteyn fazo va vaqtni nisbiy kattaliklar deb qabul qildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#aa889b72"
+    },
+    {
+      "q": "Lorens almashtirishlari elektrodinamika tenglamalari uchun qanday xossaga ega?",
+      "v": [
+        "Ularga nisbatan invariant (o'zgarmas)",
+        "Ularga nisbatan noto'g'ri",
+        "Faqat mexanikaga tegishli",
+        "Elektrodinamikaga taalluqli emas"
+      ],
+      "t": 0,
+      "izoh": "Lorens almashtirishlari elektrodinamika tenglamalari uchun ham invariantdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#6894feb1"
+    },
+    {
+      "q": "Yorug'lik tezligi c ning taxminiy qiymati qancha?",
+      "v": [
+        "3·10⁸ m/s",
+        "3·10⁶ m/s",
+        "3·10¹⁰ m/s",
+        "340 m/s"
+      ],
+      "t": 0,
+      "izoh": "c ≈ 3·10⁸ m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish#40b9fedf"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Ko'rsatkichli tenglamalar",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Nodira 2^(x+3) = 2^(5x−1) tenglamani yechmoqda. Asoslar bir xil bo'lgani uchun ko'rsatkichlarni tenglashtirib, x ning qiymatini toping.",
+      "v": [
+        "x = 1",
+        "x = −1",
+        "x = 1/3",
+        "x = −0,5"
+      ],
+      "t": 0,
+      "izoh": "Ikkala tomonning asosi 2 ga teng, shuning uchun ko'rsatkichlar tenglashtiriladi: x + 3 = 5x − 1. Noma'lumni o'ngga, sonlarni chapga yig'amiz: 3 + 1 = 5x − x, ya'ni 4 = 4x. Demak x = 1. Javob: x = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-xil-asos-tenglashtirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#85672a78"
+    },
+    {
+      "q": "3^(2x−5) = 3^(x+4) tenglama berilgan. Ikkala tomonning asosi bir xil bo'lgani uchun x ning qiymatini toping.",
+      "v": [
+        "x = 3",
+        "x = −1",
+        "x = 9",
+        "x = −9"
+      ],
+      "t": 2,
+      "izoh": "Asoslar teng bo'lgani uchun ko'rsatkichlarni tenglashtiramiz: 2x − 5 = x + 4. Noma'lumni bir tomonga, ozod hadni ikkinchi tomonga o'tkazamiz: 2x − x = 4 + 5. Bundan x = 9 kelib chiqadi. Javob: x = 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-xil-asos-tenglashtirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#1e371315"
+    },
+    {
+      "q": "5^(x²−3x) = 5^(−2) tenglamaning barcha ildizlarini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "x = 0 va x = 3",
+        "x = 1 va x = 2",
+        "x = −1 va x = −2",
+        "x = 1 va x = −2"
+      ],
+      "t": 1,
+      "izoh": "Asoslar bir xil, demak x² − 3x = −2. Barcha hadni chap tomonga o'tkazamiz: x² − 3x + 2 = 0. Viyet teoremasiga ko'ra ildizlar yig'indisi 3, ko'paytmasi 2, ya'ni ildizlar 1 va 2. Javob: x = 1 va x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-asos-tenglashtirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#642681c7"
+    },
+    {
+      "q": "4^(x²−x−6) = 1 tenglamada o'ng tomonni 4 asosli daraja ko'rinishida yozib, ildizlarni aniqlang.",
+      "v": [
+        "x = 2 va x = 3",
+        "x = −3 va x = 2",
+        "x = 6 va x = −1",
+        "x = −2 va x = 3"
+      ],
+      "t": 3,
+      "izoh": "Nolga teng bo'lmagan sonning nolinchi darajasi birga teng: 1 = 4⁰. Shuning uchun x² − x − 6 = 0 bo'ladi. Kvadrat uchhadni ko'paytuvchilarga ajratamiz: (x − 3)(x + 2) = 0. Bundan x = 3 va x = −2. Javob: x = −2 va x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-asos-tenglashtirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#26d19f27"
+    },
+    {
+      "q": "6^(x+1) = 6^(2−x) tenglamani yeching va javobni o'nli kasr ko'rinishida ko'rsating.",
+      "v": [
+        "x = 1,5",
+        "x = 0,5",
+        "x = −0,5",
+        "x = 3"
+      ],
+      "t": 1,
+      "izoh": "Asoslar teng bo'lgani uchun x + 1 = 2 − x. Noma'lumlarni chapga yig'amiz: x + x = 2 − 1, ya'ni 2x = 1. Bundan x = 0,5 kelib chiqadi. Javob: x = 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-xil-asos-tenglashtirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#2e3cadf3"
+    },
+    {
+      "q": "Malika 4^(x−1) = 32 tenglamani yechish uchun ikkala tomonni 2 asosiga keltirdi. U qanday javob olishi kerak?",
+      "v": [
+        "x = 3,5",
+        "x = 2,5",
+        "x = 1,5",
+        "x = 6"
+      ],
+      "t": 0,
+      "izoh": "4 = 2² va 32 = 2⁵ ekanini yozamiz: 2^(2x−2) = 2⁵. Asoslar tenglashgani uchun 2x − 2 = 5. Bundan 2x = 7, ya'ni x = 3,5. Javob: x = 3,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asosga-keltirish-darajali",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#e8c2ff7f"
+    },
+    {
+      "q": "9^x = 27^(x−1) tenglamada ikkala tomonni 3 asosiga keltiring va noma'lumni toping.",
+      "v": [
+        "x = 1",
+        "x = −3",
+        "x = 0,6",
+        "x = 3"
+      ],
+      "t": 3,
+      "izoh": "9 = 3² va 27 = 3³ bo'lgani uchun 3^(2x) = 3^(3x−3) hosil bo'ladi. Ko'rsatkichlarni tenglashtiramiz: 2x = 3x − 3. Noma'lumni bir tomonga o'tkazsak, 3 = x. Javob: x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asosga-keltirish-darajali",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#185aa4b5"
+    },
+    {
+      "q": "8^(2x−1) = 16^(x+2) tenglamaning ildizini toping. Ikkala son ham 2 ning darajasi ekaniga e'tibor bering.",
+      "v": [
+        "x = 2,5",
+        "x = 1,1",
+        "x = 5,5",
+        "x = 11"
+      ],
+      "t": 2,
+      "izoh": "8 = 2³ va 16 = 2⁴, demak 2^(6x−3) = 2^(4x+8). Ko'rsatkichlar tenglashtiriladi: 6x − 3 = 4x + 8. Bundan 2x = 11 va x = 5,5. Javob: x = 5,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asosga-keltirish-darajali",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#8c2ceb5f"
+    },
+    {
+      "q": "9^(x²−1) = 27^(x−1) tenglamaning ildizlar to'plamini aniqlang.",
+      "v": [
+        "x = 1 va x = 3",
+        "x = −0,5 va x = 1",
+        "x = 0,5 va x = 1",
+        "faqat x = 1"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonni 3 asosiga keltiramiz: 3^(2x²−2) = 3^(3x−3). Ko'rsatkichlar teng: 2x² − 2 = 3x − 3, ya'ni 2x² − 3x + 1 = 0. Diskriminant D = 9 − 8 = 1, shuning uchun x = 1 va x = 0,5. Javob: x = 0,5 va x = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asosga-keltirish-darajali",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#429c8c5b"
+    },
+    {
+      "q": "Bobur 5^(2x) = 125^(x−2) tenglamani yechdi. Uning topgan javobini quyidagilardan tanlang.",
+      "v": [
+        "x = 2",
+        "x = 1,2",
+        "x = −6",
+        "x = 6"
+      ],
+      "t": 3,
+      "izoh": "125 = 5³ bo'lgani uchun o'ng tomon 5^(3x−6) ko'rinishini oladi. Asoslar bir xil, demak 2x = 3x − 6. Noma'lumni bir tomonga yig'amiz: 6 = x. Javob: x = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asosga-keltirish-darajali",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#766f3801"
+    },
+    {
+      "q": "2^x = ∛16 tenglamada o'ng tomondagi ildizni daraja ko'rinishida yozib, x ni toping.",
+      "v": [
+        "x = 4/3",
+        "x = 3/4",
+        "x = 4",
+        "x = 16/3"
+      ],
+      "t": 0,
+      "izoh": "16 = 2⁴, demak ∛16 = 2^(4/3). Tenglama 2^x = 2^(4/3) ko'rinishiga keladi. Asoslar teng bo'lgani uchun x = 4/3. Javob: x = 4/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-asosga-keltirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#72322107"
+    },
+    {
+      "q": "3^(x−1) = √27 tenglamaning ildizini toping. Kvadrat ildizni kasr ko'rsatkichli daraja bilan almashtiring.",
+      "v": [
+        "x = 1,5",
+        "x = 2,5",
+        "x = 0,5",
+        "x = 4"
+      ],
+      "t": 1,
+      "izoh": "27 = 3³ bo'lgani uchun √27 = 3^(3/2). Tenglama 3^(x−1) = 3^(3/2) ko'rinishini oladi. Ko'rsatkichlarni tenglashtiramiz: x − 1 = 1,5, bundan x = 2,5. Javob: x = 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-asosga-keltirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#bb53399e"
+    },
+    {
+      "q": "(√5)^x = 3125 tenglamada asos kvadrat ildiz ko'rinishida berilgan. Noma'lum ko'rsatkichni toping.",
+      "v": [
+        "x = 5",
+        "x = 2,5",
+        "x = 20",
+        "x = 10"
+      ],
+      "t": 3,
+      "izoh": "√5 = 5^(1/2) va 3125 = 5⁵ ekanini yozamiz. Tenglama 5^(x/2) = 5⁵ ko'rinishiga keladi. Ko'rsatkichlar teng: x/2 = 5, demak x = 10. Javob: x = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-asosga-keltirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#c25dcb72"
+    },
+    {
+      "q": "⁴√(2^x) = 8 tenglamani yeching. Bu yerda to'rtinchi darajali ildiz ostida 2 ning darajasi turibdi.",
+      "v": [
+        "x = 3",
+        "x = 12",
+        "x = 0,75",
+        "x = 7"
+      ],
+      "t": 1,
+      "izoh": "To'rtinchi darajali ildiz kasr ko'rsatkich beradi: ⁴√(2^x) = 2^(x/4). O'ng tomon 8 = 2³. Demak x/4 = 3 va x = 12. Javob: x = 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-asosga-keltirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#096924ed"
+    },
+    {
+      "q": "2^x · ∛2 = 16 tenglamada chap tomondagi ikki darajani birlashtirib, x ni toping.",
+      "v": [
+        "x = 13/3",
+        "x = 4",
+        "x = 11/3",
+        "x = 3"
+      ],
+      "t": 2,
+      "izoh": "∛2 = 2^(1/3) bo'lgani uchun chap tomon 2^(x + 1/3) ga teng. O'ng tomon 16 = 2⁴. Ko'rsatkichlar teng: x + 1/3 = 4, bundan x = 4 − 1/3 = 11/3. Javob: x = 11/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-asosga-keltirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#5c203bac"
+    },
+    {
+      "q": "(1/3)^x = 81 tenglamada asos birdan kichik kasr. Noma'lum ko'rsatkichning qiymatini toping.",
+      "v": [
+        "x = −4",
+        "x = 4",
+        "x = 1/4",
+        "x = −1/4"
+      ],
+      "t": 0,
+      "izoh": "1/3 = 3^(−1) va 81 = 3⁴ deb yozamiz. U holda 3^(−x) = 3⁴ bo'ladi. Ko'rsatkichlar teng: −x = 4, demak x = −4. Javob: x = −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-va-onli-asos",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#8c96ad90"
+    },
+    {
+      "q": "0,5^(x+2) = 32 tenglamani yechishda o'nli kasrni 2 ning darajasi sifatida yozing va ildizni toping.",
+      "v": [
+        "x = −7",
+        "x = 7",
+        "x = 8",
+        "x = −3"
+      ],
+      "t": 0,
+      "izoh": "0,5 = 2^(−1) va 32 = 2⁵ bo'ladi. Tenglama 2^(−x−2) = 2⁵ ko'rinishini oladi. Ko'rsatkichlar teng: −x − 2 = 5, ya'ni −x = 7 va x = −7. Javob: x = −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-va-onli-asos",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#e8a9cb78"
+    },
+    {
+      "q": "(2/3)^x = 27/8 tenglamaning ildizini toping. O'ng tomondagi kasrni asos orqali ifodalang.",
+      "v": [
+        "x = 1,5",
+        "x = 3",
+        "x = −1,5",
+        "x = −3"
+      ],
+      "t": 3,
+      "izoh": "27/8 kasrni teskari aylantirsak (2/3)³ = 8/27 bo'ladi, demak 27/8 = (2/3)^(−3). Tenglama (2/3)^x = (2/3)^(−3) ko'rinishiga keladi. Asoslar teng bo'lgani uchun x = −3. Javob: x = −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-va-onli-asos",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#da043aa2"
+    },
+    {
+      "q": "0,04^(x−1) = 125 tenglamani yeching. Chap tomondagi o'nli kasr 5 ning darajasi ekanini hisobga oling.",
+      "v": [
+        "x = 2,5",
+        "x = −0,5",
+        "x = −1,5",
+        "x = 0,5"
+      ],
+      "t": 1,
+      "izoh": "0,04 = 1/25 = 5^(−2) va 125 = 5³. Tenglama 5^(−2x+2) = 5³ ko'rinishini oladi. Ko'rsatkichlar teng: −2x + 2 = 3, bundan −2x = 1 va x = −0,5. Javob: x = −0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-va-onli-asos",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#ed45f354"
+    },
+    {
+      "q": "0,2^(3x) = 5^(x+4) tenglamada ikkala tomonni 5 asosiga keltirib, noma'lumni toping.",
+      "v": [
+        "x = 1",
+        "x = 2",
+        "x = −1",
+        "x = −2"
+      ],
+      "t": 2,
+      "izoh": "0,2 = 1/5 = 5^(−1), demak chap tomon 5^(−3x) ga teng. Tenglama 5^(−3x) = 5^(x+4) ko'rinishiga keladi. Ko'rsatkichlar teng: −3x = x + 4, ya'ni −4x = 4 va x = −1. Javob: x = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-va-onli-asos",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#6e5b058c"
+    },
+    {
+      "q": "5·3^x = 405 tenglamada avval koeffitsientdan qutuling, so'ng asoslarni tenglashtiring va x ning qiymatini toping.",
+      "v": [
+        "3",
+        "4",
+        "5",
+        "81"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni 5 ga bo'lamiz: 3^x = 81. Endi 81 ni asos bo'yicha yozamiz: 81 = 3⁴. Asoslar bir xil bo'lgani uchun ko'rsatkichlar teng: x = 4. Bu yerda 81 javob emas, u faqat oraliq natija. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsientli-sodda",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#d4050e47"
+    },
+    {
+      "q": "4·5^(x−1) = 2500 tenglamada avval ikkala tomonni 4 ga bo'ling, keyin 5 asosiga keltirib ildizni aniqlang.",
+      "v": [
+        "4",
+        "6",
+        "625",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "2500 ni 4 ga bo'lsak, 5^(x−1) = 625 hosil bo'ladi. 625 = 5⁴ ekanini yozamiz. Asoslar teng, demak x − 1 = 4. Bundan x = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsientli-sodda",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#dea7d2a1"
+    },
+    {
+      "q": "Quyidagi tenglamani yeching: 7·2^x − 15 = 433. Avval ozod hadni o'ng tomonga o'tkazing, keyin koeffitsientga bo'ling.",
+      "v": [
+        "6",
+        "5",
+        "7",
+        "64"
+      ],
+      "t": 0,
+      "izoh": "Ozod hadni o'ngga o'tkazamiz: 7·2^x = 448. Ikkala tomonni 7 ga bo'lamiz: 2^x = 64. 64 = 2⁶ bo'lgani uchun x = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsientli-sodda",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#e0bbe4b1"
+    },
+    {
+      "q": "9·3^(x−2) = 2187 tenglamaning ildizini toping. Diqqat: ko'rsatkichdagi ikkilikni oxirida qaytarib qo'shishni unutmang.",
+      "v": [
+        "3",
+        "5",
+        "7",
+        "243"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonni 9 ga bo'lamiz: 3^(x−2) = 243. 243 = 3⁵ bo'lgani uchun x − 2 = 5. Bundan x = 7 kelib chiqadi. Agar ikkilik qaytarilmasa, xato ravishda 5 olinadi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koeffitsientli-sodda",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#d950ad97"
+    },
+    {
+      "q": "2^(x+2) + 2^x = 20 tenglamada chap tomondan umumiy ko'paytuvchini qavsdan tashqariga chiqarib, x ni toping.",
+      "v": [
+        "1",
+        "4",
+        "2",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "2^(x+2) = 2^x · 2² ekanini hisobga olamiz. Qavsdan 2^x ni chiqaramiz: 2^x·(4 + 1) = 20, ya'ni 2^x·5 = 20. Bundan 2^x = 4 = 2², demak x = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-kopaytuvchi-yigindi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#9ff40de6"
+    },
+    {
+      "q": "3^(x+1) + 3^x = 108 tenglamani umumiy ko'paytuvchini chiqarish usuli bilan yeching va ildizni belgilang.",
+      "v": [
+        "3",
+        "2",
+        "4",
+        "27"
+      ],
+      "t": 0,
+      "izoh": "3^(x+1) = 3·3^x bo'lgani uchun chap tomon 3^x·(3 + 1) = 4·3^x ko'rinishini oladi. U holda 4·3^x = 108, ya'ni 3^x = 27. 27 = 3³ bo'lgani uchun x = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-kopaytuvchi-yigindi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#f17bb70b"
+    },
+    {
+      "q": "2^x + 2^(x+1) + 2^(x+2) = 224 tenglamada uchta hadning umumiy ko'paytuvchisini chiqaring va 2^x ning qiymatini toping.",
+      "v": [
+        "2^x = 16",
+        "2^x = 64",
+        "2^x = 112",
+        "2^x = 32"
+      ],
+      "t": 3,
+      "izoh": "Har uch hadda 2^x bor: 2^x·(1 + 2 + 4) = 224. Qavs ichi 7 ga teng, demak 7·2^x = 224. Ikkala tomonni 7 ga bo'lsak, 2^x = 32 chiqadi. Javob: 2^x = 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-kopaytuvchi-yigindi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#3e2d3604"
+    },
+    {
+      "q": "3^(x+2) + 3^(x+1) = 324 tenglamada eng kichik ko'rsatkichli hadni qavsdan chiqarib, 3^x ning qiymatini aniqlang.",
+      "v": [
+        "3^x = 9",
+        "3^x = 27",
+        "3^x = 81",
+        "3^x = 36"
+      ],
+      "t": 1,
+      "izoh": "3^(x+2) = 9·3^x va 3^(x+1) = 3·3^x. Demak 3^x·(9 + 3) = 324, ya'ni 12·3^x = 324. Ikkala tomonni 12 ga bo'lamiz: 3^x = 27. Javob: 3^x = 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-kopaytuvchi-yigindi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#845cdc4d"
+    },
+    {
+      "q": "3^(x+1) − 3^(x−1) = 24 tenglamada eng kichik darajani qavsdan chiqaring va tenglamaning ildizini toping.",
+      "v": [
+        "x = 1",
+        "x = 3",
+        "x = 8",
+        "x = 2"
+      ],
+      "t": 3,
+      "izoh": "Eng kichik daraja 3^(x−1). U holda 3^(x−1)·(3² − 1) = 24, ya'ni 3^(x−1)·8 = 24. Bundan 3^(x−1) = 3, demak x − 1 = 1 va x = 2. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-kopaytuvchi-ayirma",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#3b75e38f"
+    },
+    {
+      "q": "5^(x+1) − 5^x = 500 ayirma ko'rinishidagi tenglamani yeching va noma'lumning qiymatini ko'rsating.",
+      "v": [
+        "x = 2",
+        "x = 125",
+        "x = 3",
+        "x = 5"
+      ],
+      "t": 2,
+      "izoh": "5^(x+1) = 5·5^x bo'lgani uchun 5^x·(5 − 1) = 500. Demak 4·5^x = 500 va 5^x = 125. 125 = 5³ bo'lgani uchun x = 3. Javob: x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-kopaytuvchi-ayirma",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#16a2a47b"
+    },
+    {
+      "q": "2^(x+3) − 2^(x+1) = 96 tenglamada qavsdan 2^(x+1) ni chiqarib, so'ngra ildizni hisoblang.",
+      "v": [
+        "x = 5",
+        "x = 4",
+        "x = 32",
+        "x = 6"
+      ],
+      "t": 1,
+      "izoh": "2^(x+3) = 2^(x+1)·2² bo'lgani uchun 2^(x+1)·(4 − 1) = 96. Bundan 2^(x+1)·3 = 96 va 2^(x+1) = 32 = 2⁵. Demak x + 1 = 5, ya'ni x = 4. Javob: x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-kopaytuvchi-ayirma",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#81d1bc3e"
+    },
+    {
+      "q": "2^(x+2) − 2^(x−1) = 112 tenglamaning ildizini toping. Manfiy ko'rsatkichli had umumiy ko'paytuvchi bo'lib olinadi.",
+      "v": [
+        "x = 5",
+        "x = 4",
+        "x = 6",
+        "x = 16"
+      ],
+      "t": 0,
+      "izoh": "Eng kichik daraja 2^(x−1) ni qavsdan chiqaramiz: 2^(x−1)·(2³ − 1) = 112. Qavs ichi 7 ga teng, shuning uchun 2^(x−1) = 16 = 2⁴. Bundan x − 1 = 4 va x = 5. Javob: x = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-kopaytuvchi-ayirma",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#ee82cf5c"
+    },
+    {
+      "q": "3^(x+2) = 2^(x+2) tenglamada asoslar har xil, ammo ko'rsatkichlar bir xil. Tenglamaning ildizini toping.",
+      "v": [
+        "x = −2",
+        "x = 2",
+        "x = 0",
+        "x = −1"
+      ],
+      "t": 0,
+      "izoh": "Ikkala tomonni 2^(x+2) ga bo'lamiz: (3/2)^(x+2) = 1. Birdan katta asosning darajasi faqat nolinchi ko'rsatkichda birga teng. Demak x + 2 = 0 va x = −2. Javob: x = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "turli-asos-nisbatga-keltirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#f9ab337a"
+    },
+    {
+      "q": "5^(2x−1) = 4^(2x−1) tenglamada har ikkala tomonning ko'rsatkichi bir xil ifoda. Noma'lumni toping.",
+      "v": [
+        "x = 1",
+        "x = 0,5",
+        "x = −0,5",
+        "x = 0"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni 4^(2x−1) ga bo'lsak, (5/4)^(2x−1) = 1 hosil bo'ladi. Asos birga teng emas, shuning uchun ko'rsatkich nolga teng bo'lishi shart: 2x − 1 = 0. Bundan x = 0,5. Javob: x = 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "turli-asos-nisbatga-keltirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#d3c0ea6e"
+    },
+    {
+      "q": "18^x = 2^x·6561 tenglamada chap va o'ng tomondagi 2 asosli darajalarni qisqartirib, x ni toping.",
+      "v": [
+        "x = 2",
+        "x = 8",
+        "x = 4",
+        "x = 16"
+      ],
+      "t": 2,
+      "izoh": "18^x = (9·2)^x = 9^x·2^x. Ikkala tomonni 2^x ga bo'lamiz: 9^x = 6561. 6561 = 9⁴ bo'lgani uchun x = 4. Agar 6561 = 3⁸ deb 3 asosida yozilsa, javobni 8 deb xato olish mumkin. Javob: x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "turli-asos-nisbatga-keltirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#596e7a76"
+    },
+    {
+      "q": "15^x = 5^x·243 tenglamani yeching. Chap tomondagi asosni ikki ko'paytuvchiga ajratish kifoya.",
+      "v": [
+        "x = 4",
+        "x = 6",
+        "x = 10",
+        "x = 5"
+      ],
+      "t": 3,
+      "izoh": "15^x = (3·5)^x = 3^x·5^x. Ikkala tomonni 5^x ga qisqartiramiz: 3^x = 243. 243 = 3⁵ bo'lgani uchun x = 5. Javob: x = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "turli-asos-nisbatga-keltirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#e3424d01"
+    },
+    {
+      "q": "2^x·5^x = 1000 tenglamada bir xil ko'rsatkichli ikki darajani bitta asosga birlashtiring va ildizni toping.",
+      "v": [
+        "x = 2",
+        "x = 3",
+        "x = 5",
+        "x = 10"
+      ],
+      "t": 1,
+      "izoh": "Bir xil ko'rsatkichli darajalar ko'paytmasi: 2^x·5^x = (2·5)^x = 10^x. Demak 10^x = 1000 = 10³. Asoslar teng bo'lgani uchun x = 3. Javob: x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asoslar-kopaytmasi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#ab1ed4d1"
+    },
+    {
+      "q": "15^x : 3^x = 625 tenglamada bo'linma bitta asosga keltiriladi. Noma'lum ko'rsatkichning qiymatini toping.",
+      "v": [
+        "x = 4",
+        "x = 5",
+        "x = 12",
+        "x = 3"
+      ],
+      "t": 0,
+      "izoh": "Bir xil ko'rsatkichli darajalar bo'linmasi: 15^x : 3^x = (15 : 3)^x = 5^x. Demak 5^x = 625 = 5⁴, ya'ni x = 4. Asoslarni bo'lish o'rniga ayirib, 15 − 3 = 12 ni javob deb yozish keng tarqalgan xato: bo'linmada asoslar bo'linadi, 15 : 3 = 5. Javob: x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asoslar-kopaytmasi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#47a87f36"
+    },
+    {
+      "q": "4^x·25^x = 10000 tenglamada ikkala asosni ko'paytirib, bitta daraja hosil qiling va x ni aniqlang.",
+      "v": [
+        "x = 4",
+        "x = 1",
+        "x = 2",
+        "x = 8"
+      ],
+      "t": 2,
+      "izoh": "4^x·25^x = (4·25)^x = 100^x. O'ng tomon 10000 = 100². Demak 100^x = 100² va x = 2. Agar o'ng tomon 10⁴ deb olinsa, javob xato ravishda 4 chiqadi. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asoslar-kopaytmasi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#3085cbd0"
+    },
+    {
+      "q": "18^x = 9^x·2^(x−3) tenglamani tekshiring va uning ildizlari haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "x = 3",
+        "x = −3",
+        "x = 0",
+        "Tenglamaning ildizi yo'q"
+      ],
+      "t": 3,
+      "izoh": "18^x = (9·2)^x = 9^x·2^x. Ikkala tomonni 9^x ga bo'lamiz: 2^x = 2^(x−3). Ko'rsatkichlarni tenglashtirsak x = x − 3, ya'ni 0 = −3 nomuvofiqlik chiqadi. Demak tenglama biror ildizga ega emas. Javob: tenglamaning ildizi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asoslar-kopaytmasi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#87811d1a"
+    },
+    {
+      "q": "4^x − 5·2^x + 4 = 0 tenglamada 2^x = t almashtirish kiritib, tenglamaning barcha ildizlarini toping.",
+      "v": [
+        "x = 1 va x = 4",
+        "x = 2",
+        "x = 0 va x = 2",
+        "x = 0 va x = 4"
+      ],
+      "t": 2,
+      "izoh": "4^x = (2^x)² bo'lgani uchun 2^x = t deb belgilaymiz: t² − 5t + 4 = 0. Bu kvadrat tenglamaning ildizlari t = 1 va t = 4. Endi orqaga qaytamiz: 2^x = 1 dan x = 0, 2^x = 4 dan x = 2. Almashtirish ildizlarini x deb olish keng tarqalgan xato. Javob: x = 0 va x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-kvadrat",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#ee856312"
+    },
+    {
+      "q": "9^x − 4·3^x + 3 = 0 tenglamani yechish uchun 3^x = t almashtirish kiritiladi. Ildizlarni aniqlang.",
+      "v": [
+        "x = 0 va x = 1",
+        "x = 1 va x = 3",
+        "x = 1",
+        "x = 0 va x = 3"
+      ],
+      "t": 0,
+      "izoh": "9^x = (3^x)² ekanini hisobga olib t = 3^x deymiz: t² − 4t + 3 = 0. Viyet teoremasi bo'yicha t = 1 va t = 3. Qaytamiz: 3^x = 1 dan x = 0, 3^x = 3 dan x = 1. Javob: x = 0 va x = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-kvadrat",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#8a4fd5ea"
+    },
+    {
+      "q": "2^(2x) − 12·2^x + 32 = 0 tenglamaning ildizlar to'plamini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "x = 4 va x = 8",
+        "x = 2 va x = 4",
+        "x = 3",
+        "x = 2 va x = 3"
+      ],
+      "t": 3,
+      "izoh": "2^(2x) = (2^x)², shuning uchun t = 2^x almashtirish qulay: t² − 12t + 32 = 0. Diskriminant D = 144 − 128 = 16, ildizlar t = 4 va t = 8. Demak 2^x = 4 dan x = 2, 2^x = 8 dan x = 3. Javob: x = 2 va x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-kvadrat",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#428e02d3"
+    },
+    {
+      "q": "4^x − 3·2^x − 4 = 0 tenglamada almashtirishdan keyin hosil bo'lgan ildizlardan qaysi biri yaroqli ekanini aniqlang va javobni toping.",
+      "v": [
+        "x = 2 va x = −1",
+        "x = 2",
+        "x = 4",
+        "x = −1 va x = 4"
+      ],
+      "t": 1,
+      "izoh": "t = 2^x deb olamiz, bunda t > 0 bo'lishi shart. Tenglama t² − 3t − 4 = 0 ko'rinishini oladi, ildizlari t = 4 va t = −1. Manfiy qiymat 2^x uchun mumkin emas, shuning uchun u chiqarib tashlanadi. Qolgan 2^x = 4 dan x = 2. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-kvadrat",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#60b88bdc"
+    },
+    {
+      "q": "3^x + 27·3^(−x) = 12 tenglamada manfiy ko'rsatkichli had bor. Almashtirish kiritib ildizlarni toping.",
+      "v": [
+        "x = 1 va x = 2",
+        "x = 3 va x = 9",
+        "x = 1",
+        "x = 0 va x = 3"
+      ],
+      "t": 0,
+      "izoh": "3^(−x) = 1/3^x bo'lgani uchun t = 3^x belgilash bilan t + 27/t = 12 hosil bo'ladi. Ikkala tomonni t ga ko'paytiramiz: t² − 12t + 27 = 0, ildizlari t = 3 va t = 9. Demak 3^x = 3 dan x = 1, 3^x = 9 dan x = 2. Javob: x = 1 va x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-teskari-had",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#dea1740c"
+    },
+    {
+      "q": "5^x − 5^(1−x) = 4 tenglamani yeching. Ko'rsatkichdagi 1 − x ni ikki darajaning bo'linmasi sifatida yozing.",
+      "v": [
+        "x = 5",
+        "x = −1 va x = 5",
+        "x = 1",
+        "x = 0 va x = 1"
+      ],
+      "t": 2,
+      "izoh": "5^(1−x) = 5 : 5^x, shuning uchun t = 5^x belgilash bilan t − 5/t = 4 chiqadi. t ga ko'paytirsak t² − 4t − 5 = 0, ildizlari t = 5 va t = −1. Manfiy ildiz daraja qiymati bo'la olmaydi. 5^x = 5 dan x = 1. Javob: x = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-teskari-had",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#e3646434"
+    },
+    {
+      "q": "4^x + 4^(−x) = 2,5 tenglamaning ildizlarini toping. Javobni o'nli kasr ko'rinishida yozing.",
+      "v": [
+        "x = 0,5",
+        "x = −0,5 va x = 0,5",
+        "x = 2 va x = 0,5",
+        "x = −1 va x = 1"
+      ],
+      "t": 1,
+      "izoh": "t = 4^x deb olsak, t + 1/t = 2,5 bo'ladi. t ga ko'paytiramiz: 2t² − 5t + 2 = 0, ildizlari t = 2 va t = 0,5. Endi 4^x = 2 dan x = 0,5, 4^x = 0,5 dan x = −0,5. Ikkinchi ildizni yo'qotib qo'yish tipik xato. Javob: x = −0,5 va x = 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-teskari-had",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#a069fb92"
+    },
+    {
+      "q": "2^(x+2) + 2^(2−x) = 17 tenglamada ikkala hadni 2^x orqali ifodalab, barcha ildizlarni toping.",
+      "v": [
+        "x = 2",
+        "x = 4 va x = 0,25",
+        "x = −2",
+        "x = −2 va x = 2"
+      ],
+      "t": 3,
+      "izoh": "2^(x+2) = 4·2^x va 2^(2−x) = 4 : 2^x. t = 2^x belgilash bilan 4t + 4/t = 17 hosil bo'ladi. t ga ko'paytirsak 4t² − 17t + 4 = 0, ildizlari t = 4 va t = 0,25. Demak 2^x = 4 dan x = 2, 2^x = 0,25 dan x = −2. Javob: x = −2 va x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-teskari-had",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#0b2adfbe"
+    },
+    {
+      "q": "4^x + 6^x = 2·9^x bir jinsli tenglamada barcha hadlarni 9^x ga bo'lib, ildizni toping.",
+      "v": [
+        "x = 1",
+        "x = 0",
+        "x = −2",
+        "x = 0 va x = 1"
+      ],
+      "t": 1,
+      "izoh": "Har uch had ikkinchi darajali bir jinsli: 4^x = (2²)^x, 6^x = 2^x·3^x. Barcha hadni 9^x ga bo'lamiz va t = (2/3)^x deymiz: t² + t = 2, ya'ni t² + t − 2 = 0. Ildizlar t = 1 va t = −2, manfiysi yaroqsiz. (2/3)^x = 1 dan x = 0. Javob: x = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-jinsli-tenglama",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#e4c3c342"
+    },
+    {
+      "q": "10·25^x − 29·10^x + 10·4^x = 0 tenglamani 4^x ga bo'lib, hosil bo'lgan kvadrat tenglama orqali ildizlarni toping.",
+      "v": [
+        "x = 1",
+        "x = 0 va x = 1",
+        "x = −1",
+        "x = −1 va x = 1"
+      ],
+      "t": 3,
+      "izoh": "Barcha hadni 4^x ga bo'lamiz va t = (5/2)^x deb belgilaymiz: 10t² − 29t + 10 = 0. Diskriminant D = 841 − 400 = 441, ildizlar t = 2,5 va t = 0,4. (5/2)^x = 2,5 dan x = 1, (5/2)^x = 0,4 dan x = −1. Javob: x = −1 va x = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-jinsli-tenglama",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#4b102c20"
+    },
+    {
+      "q": "4·4^x − 13·6^x + 9·9^x = 0 tenglamaning ildizlarini bir jinsli tenglama usuli bilan toping.",
+      "v": [
+        "x = −2 va x = 0",
+        "x = 0 va x = 2",
+        "x = 0",
+        "x = −2"
+      ],
+      "t": 0,
+      "izoh": "Hamma hadni 9^x ga bo'lamiz va t = (2/3)^x deymiz: 4t² − 13t + 9 = 0. Diskriminant D = 169 − 144 = 25, ildizlar t = 1 va t = 2,25. (2/3)^x = 1 dan x = 0. (2/3)^x = 9/4 = (2/3)^(−2) dan x = −2. Javob: x = −2 va x = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-jinsli-tenglama",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#dddde302"
+    },
+    {
+      "q": "2·4^x − 5·6^x + 3·9^x = 0 tenglamada 9^x ga bo'lish orqali almashtirish kiriting va ildizlarni aniqlang.",
+      "v": [
+        "x = 0 va x = 1",
+        "x = −1",
+        "x = −1 va x = 0",
+        "x = 0"
+      ],
+      "t": 2,
+      "izoh": "Tenglamaning barcha hadi bir jinsli, uni 9^x ga bo'lamiz: 2t² − 5t + 3 = 0, bunda t = (2/3)^x. Diskriminant D = 25 − 24 = 1, ildizlar t = 1 va t = 1,5. (2/3)^x = 1 dan x = 0, (2/3)^x = 3/2 dan x = −1. Javob: x = −1 va x = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-jinsli-tenglama",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#975d9f9b"
+    },
+    {
+      "q": "4^x − 10·2^x + 16 = 0 tenglamaning ildizlari x₁ va x₂ bo'lsa, ularning yig'indisini hisoblang.",
+      "v": [
+        "x₁ + x₂ = 10",
+        "x₁ + x₂ = 3",
+        "x₁ + x₂ = 16",
+        "x₁ + x₂ = 4"
+      ],
+      "t": 3,
+      "izoh": "t = 2^x almashtirish t² − 10t + 16 = 0 ni beradi, ildizlari t = 2 va t = 8. Demak 2^x = 2 dan x₁ = 1, 2^x = 8 dan x₂ = 3. Ildizlar yig'indisi 1 + 3 = 4. Almashtirish ildizlarining yig'indisi 10 ni javob deb olish xato. Javob: x₁ + x₂ = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-yigindisi-kopaytmasi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#c1492973"
+    },
+    {
+      "q": "9^x − 12·3^x + 27 = 0 tenglamaning ildizlari ko'paytmasi nechaga teng ekanini aniqlang.",
+      "v": [
+        "x₁·x₂ = 27",
+        "x₁·x₂ = 2",
+        "x₁·x₂ = 3",
+        "x₁·x₂ = 12"
+      ],
+      "t": 1,
+      "izoh": "t = 3^x deb olsak, t² − 12t + 27 = 0 va t = 3, t = 9. Bundan 3^x = 3 uchun x₁ = 1, 3^x = 9 uchun x₂ = 2. Ildizlar ko'paytmasi 1·2 = 2. 27 — bu t ildizlarining ko'paytmasi, ya'ni javob emas. Javob: x₁·x₂ = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-yigindisi-kopaytmasi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#07a596d5"
+    },
+    {
+      "q": "2^(2x) − 20·2^x + 64 = 0 tenglamaning ildizlari yig'indisini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "x₁ + x₂ = 20",
+        "x₁ + x₂ = 8",
+        "x₁ + x₂ = 6",
+        "x₁ + x₂ = 64"
+      ],
+      "t": 2,
+      "izoh": "t = 2^x almashtirishdan keyin t² − 20t + 64 = 0 hosil bo'ladi. Diskriminant D = 400 − 256 = 144, ildizlar t = 4 va t = 16. Demak x₁ = 2 va x₂ = 4, ularning yig'indisi 6. Ko'paytma 8 ni yig'indi bilan chalkashtirmang. Javob: x₁ + x₂ = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-yigindisi-kopaytmasi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#707a9292"
+    },
+    {
+      "q": "3^(2x) − 30·3^x + 81 = 0 tenglamaning ildizlari ko'paytmasi qanday songa teng bo'ladi?",
+      "v": [
+        "x₁·x₂ = 3",
+        "x₁·x₂ = 81",
+        "x₁·x₂ = 4",
+        "x₁·x₂ = 30"
+      ],
+      "t": 0,
+      "izoh": "t = 3^x deb belgilaymiz: t² − 30t + 81 = 0. Diskriminant D = 900 − 324 = 576, ildizlar t = 3 va t = 27. Demak x₁ = 1 va x₂ = 3, ko'paytmasi 3 ga teng. Yig'indi 4 ni javob deb olish tipik xato. Javob: x₁·x₂ = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-yigindisi-kopaytmasi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#6f29124b"
+    },
+    {
+      "q": "4^x − 2^x − 6 = 0 tenglama nechta haqiqiy ildizga ega ekanini aniqlang va xulosani tanlang.",
+      "v": [
+        "Ikkita ildiz",
+        "Ildizi yo'q",
+        "Bitta ildiz",
+        "Uchta ildiz"
+      ],
+      "t": 2,
+      "izoh": "t = 2^x almashtirish t² − t − 6 = 0 ni beradi, ildizlari t = 3 va t = −2. Ko'rsatkichli funksiya faqat musbat qiymat qabul qiladi, shuning uchun t = −2 yaroqsiz. Faqat 2^x = 3 qoladi, u bitta ildiz beradi. Javob: bitta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-soni-tahlil",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#daf707ed"
+    },
+    {
+      "q": "9^x + 3^x + 1 = 0 tenglamaning ildizlari haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "Bitta ildiz bor",
+        "Ikkita ildiz bor",
+        "Cheksiz ko'p ildiz bor",
+        "Haqiqiy ildizi yo'q"
+      ],
+      "t": 3,
+      "izoh": "t = 3^x belgilash bilan t² + t + 1 = 0 hosil bo'ladi. Uning diskriminanti D = 1 − 4 = −3, ya'ni manfiy, demak haqiqiy t yo'q. Bundan tashqari t > 0 bo'lganda chap tomon doim birdan katta. Javob: haqiqiy ildizi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-soni-tahlil",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#37767300"
+    },
+    {
+      "q": "9^x − 10·3^x + 9 = 0 tenglama nechta ildizga ega ekanini toping.",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "0 ta",
+        "4 ta"
+      ],
+      "t": 0,
+      "izoh": "t = 3^x deb olamiz: t² − 10t + 9 = 0, ildizlari t = 1 va t = 9. Ikkala qiymat ham musbat, shuning uchun ikkalasi ham yaroqli. 3^x = 1 dan x = 0, 3^x = 9 dan x = 2 kelib chiqadi. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-soni-tahlil",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#05db1a41"
+    },
+    {
+      "q": "Quyidagi ko'rsatkichli tenglamalardan qaysi birining haqiqiy ildizi yo'q?",
+      "v": [
+        "2^x = 5",
+        "3^x = 0",
+        "4^x = 1/2",
+        "5^x = √5"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichli funksiya a^x har doim noldan katta qiymat qabul qiladi, u nolga teng bo'la olmaydi. Shu sababli 3^x = 0 tenglamaning ildizi mavjud emas. Qolganlari yechiladi: 4^x = 1/2 dan x = −0,5, 5^x = √5 dan x = 0,5, 2^x = 5 dan esa musbat kasr ildiz chiqadi. Javob: 3^x = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-soni-tahlil",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#e85b5e4b"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni har 3 soatda 2 barobar ortadi. Kuzatuv boshida 500 ta bakteriya bo'lgan. Ularning soni 16 000 taga yetishi uchun necha soat kerak?",
+      "v": [
+        "5 soat",
+        "32 soat",
+        "12 soat",
+        "15 soat"
+      ],
+      "t": 3,
+      "izoh": "Bakteriyalar soni 500·2^(t/3) formula bilan o'sadi. Shartga ko'ra 500·2^(t/3) = 16 000, ya'ni 2^(t/3) = 32. 32 = 2⁵ bo'lgani uchun t/3 = 5. Demak t = 15 soat. Bu yerda 5 — bosqichlar soni, soat emas. Javob: 15 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-osish-bakteriya",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#a83976e5"
+    },
+    {
+      "q": "Ahmadning bloguga obuna bo'lganlar soni har haftada 3 barobar ortmoqda. Hozir uning 40 ta obunachisi bor. Obunachilar 3240 taga yetishi uchun necha hafta o'tadi?",
+      "v": [
+        "81 hafta",
+        "4 hafta",
+        "3 hafta",
+        "5 hafta"
+      ],
+      "t": 1,
+      "izoh": "Obunachilar soni 40·3^n ko'rinishida ortadi, bunda n — haftalar soni. Tenglama: 40·3^n = 3240, bundan 3^n = 81. 81 = 3⁴ bo'lgani uchun n = 4. Javob: 4 hafta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-osish-bakteriya",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#7e51ccba"
+    },
+    {
+      "q": "Ko'lda suvo'tlar qoplagan maydon har 4 kunda ikki barobar kengayadi. Dastlab u 3 m² edi. Maydon 96 m² ga yetishi uchun necha kun o'tishi kerak?",
+      "v": [
+        "20 kun",
+        "5 kun",
+        "24 kun",
+        "16 kun"
+      ],
+      "t": 0,
+      "izoh": "Maydon 3·2^(t/4) qonuniyat bilan o'sadi. Tenglamani tuzamiz: 3·2^(t/4) = 96, bundan 2^(t/4) = 32 = 2⁵. Demak t/4 = 5 va t = 20 kun. Javob: 20 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-osish-bakteriya",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#2ac8e7bf"
+    },
+    {
+      "q": "Bir tur mikroorganizm soni N = 200·2^(t/2) formula bo'yicha o'zgaradi, bunda t — soatlarda o'lchanadigan vaqt. Ularning soni qachon 12 800 taga yetadi?",
+      "v": [
+        "6 soat",
+        "64 soat",
+        "12 soat",
+        "24 soat"
+      ],
+      "t": 2,
+      "izoh": "Shartga ko'ra 200·2^(t/2) = 12 800 bo'lishi kerak. Ikkala tomonni 200 ga bo'lamiz: 2^(t/2) = 64. 64 = 2⁶ bo'lgani uchun t/2 = 6, ya'ni t = 12 soat. Ko'rsatkichdagi ikkiga bo'lishni unutish 6 soat degan xato javob beradi. Javob: 12 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-osish-bakteriya",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#4fcd7c2f"
+    },
+    {
+      "q": "Dori vositasining qondagi miqdori har 6 soatda ikki barobar kamayadi. Ukol qilingan payt 240 mg bo'lgan edi. Qachon dori miqdori 15 mg ga tushadi?",
+      "v": [
+        "4 soat",
+        "24 soat",
+        "16 soat",
+        "30 soat"
+      ],
+      "t": 1,
+      "izoh": "Miqdor 240 : 2^(t/6) qonuniyat bilan kamayadi. Tenglama: 240 : 2^(t/6) = 15, bundan 2^(t/6) = 16. 16 = 2⁴ bo'lgani uchun t/6 = 4, demak t = 24 soat. Javob: 24 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-yarim-yemirilish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#f7b2eeca"
+    },
+    {
+      "q": "Radioaktiv moddaning yarim yemirilish davri 8 kun. Namunaning boshlang'ich massasi 64 g edi. Massasi 2 g ga kamayishi uchun necha kun kerak bo'ladi?",
+      "v": [
+        "5 kun",
+        "32 kun",
+        "40 kun",
+        "16 kun"
+      ],
+      "t": 2,
+      "izoh": "Har 8 kunda massa ikki barobar kamayadi: 64 : 2^(t/8) = 2. Bundan 2^(t/8) = 32 = 2⁵, ya'ni t/8 = 5. Demak t = 40 kun. 32 — bu massalar nisbati, kun emas. Javob: 40 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-yarim-yemirilish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#ba606f8b"
+    },
+    {
+      "q": "Havo tozalagich har o'tkazishda changning miqdorini 3 marta kamaytiradi. Boshida havoda 4860 ta zarra bor edi, oxirida 20 ta qoldi. Havo necha marta o'tkazilgan?",
+      "v": [
+        "3 marta",
+        "243 marta",
+        "6 marta",
+        "5 marta"
+      ],
+      "t": 3,
+      "izoh": "Har o'tkazishdan keyin zarralar soni 3 marta kamayadi: 4860 : 3^n = 20. Bundan 3^n = 243. 243 = 3⁵ bo'lgani uchun n = 5. Javob: 5 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-yarim-yemirilish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#09c26cf4"
+    },
+    {
+      "q": "Birinchi namunaning massasi 800 g bo'lib, har 5 yilda ikki barobar kamayadi. Ikkinchi namunaning 100 g massasi esa o'zgarmaydi. Massalar necha yildan keyin tenglashadi?",
+      "v": [
+        "15 yil",
+        "3 yil",
+        "8 yil",
+        "20 yil"
+      ],
+      "t": 0,
+      "izoh": "Birinchi namuna massasi 800 : 2^(t/5) ga teng. Tenglashish sharti: 800 : 2^(t/5) = 100. Bundan 2^(t/5) = 8 = 2³, ya'ni t/5 = 3. Demak t = 15 yil. Javob: 15 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-yarim-yemirilish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#b4eed383"
+    },
+    {
+      "q": "Bankka qo'yilgan 5 000 000 so'm omonat har yili 20 foizga ortib boradi. Mablag' 8 640 000 so'mga yetishi uchun necha yil kutish kerak?",
+      "v": [
+        "2 yil",
+        "4 yil",
+        "3 yil",
+        "5 yil"
+      ],
+      "t": 2,
+      "izoh": "Har yili mablag' 1,2 marta ortadi: 5 000 000·1,2^n = 8 640 000. Ikkala tomonni bo'lsak, 1,2^n = 1,728. 1,728 = 1,2³ bo'lgani uchun n = 3. Oddiy foiz bilan hisoblansa, javob xato ravishda 4 yil chiqadi. Javob: 3 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-murakkab-foiz",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#291a7b2e"
+    },
+    {
+      "q": "Bir tumanda aholi soni har yili 10 foizga ortmoqda. Hozir u yerda 30 000 kishi yashaydi. Aholi 43 923 kishiga yetishi uchun necha yil o'tadi?",
+      "v": [
+        "3 yil",
+        "5 yil",
+        "10 yil",
+        "4 yil"
+      ],
+      "t": 3,
+      "izoh": "Har yili aholi 1,1 marta ortadi: 30 000·1,1^n = 43 923. Bo'lish natijasida 1,1^n = 1,4641 hosil bo'ladi. 1,4641 = 1,1⁴ bo'lgani uchun n = 4. Javob: 4 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-murakkab-foiz",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#97adfd19"
+    },
+    {
+      "q": "Omonat bo'yicha foiz har yarim yilda hisoblanadi va mablag' har safar 20 foizga ortadi. 2 500 000 so'm qachon 4 320 000 so'mga aylanadi?",
+      "v": [
+        "3 oy",
+        "18 oy",
+        "6 oy",
+        "36 oy"
+      ],
+      "t": 1,
+      "izoh": "Bir bosqich — yarim yil, ya'ni 6 oy. Tenglama: 2 500 000·1,2^n = 4 320 000, bundan 1,2^n = 1,728 = 1,2³ va n = 3 bosqich. Har bosqich 6 oy bo'lgani uchun vaqt 3·6 = 18 oy. Bosqichni oy deb olish tipik xato. Javob: 18 oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-murakkab-foiz",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#1f05959b"
+    },
+    {
+      "q": "Nodira 8 000 000 so'mni biznesga qo'ydi va bu mablag' har yili 50 foizga o'sib bormoqda. Mablag' 60 750 000 so'mga yetishi uchun necha yil kerak bo'ladi?",
+      "v": [
+        "5 yil",
+        "4 yil",
+        "6 yil",
+        "8 yil"
+      ],
+      "t": 0,
+      "izoh": "Har yili mablag' 1,5 marta ortadi: 8 000 000·1,5^n = 60 750 000. Bundan 1,5^n = 7,59375, ya'ni (3/2)^n = 243/32. 243 = 3⁵ va 32 = 2⁵ bo'lgani uchun (3/2)^n = (3/2)⁵ va n = 5. Javob: 5 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-murakkab-foiz",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#fd608dcd"
+    },
+    {
+      "q": "Yangi chiqqan noutbukning narxi har 2 yilda ikki barobar arzonlashadi. Hozir u 12 800 000 so'm turadi. Narxi 400 000 so'mga tushishi uchun necha yil o'tadi?",
+      "v": [
+        "10 yil",
+        "5 yil",
+        "32 yil",
+        "12 yil"
+      ],
+      "t": 0,
+      "izoh": "Narx har arzonlashishda ikkiga bo'linadi. Agar n marta arzonlashsa: 12 800 000 : 2^n = 400 000, bundan 2^n = 32 = 2⁵, ya'ni n = 5. Har arzonlashish 2 yilda ro'y bergani uchun 5·2 = 10 yil o'tadi. Arzonlashishlar sonini (5 ni) javob deb olish xato. Javob: 10 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-qadrsizlanish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#055b4add"
+    },
+    {
+      "q": "Traktorning qiymati har yili 25 foizga kamayadi. Uni 64 000 000 so'mga sotib olishgan edi. Qiymati 27 000 000 so'mga tushishi uchun necha yil kerak bo'ladi?",
+      "v": [
+        "2 yil",
+        "4 yil",
+        "3 yil",
+        "27 yil"
+      ],
+      "t": 2,
+      "izoh": "Har yili qiymat 0,75 marta, ya'ni 3/4 marta kamayadi, shuning uchun n yildan keyin qiymat 64 000 000·(3/4)^n bo'ladi. Shart: 64 000 000·(3/4)^n = 27 000 000, bundan (3/4)^n = 27/64. 27 = 3³ va 64 = 4³ bo'lgani uchun (3/4)^n = (3/4)³, demak n = 3. Javob: 3 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-qadrsizlanish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#6493e1b6"
+    },
+    {
+      "q": "Dasturdagi xatolar soni har sinov bosqichidan keyin 3 marta kamayadi. Boshida 1215 ta xato bor edi, hozir 5 tasi qoldi. Necha bosqich o'tkazilgan?",
+      "v": [
+        "3 bosqich",
+        "243 bosqich",
+        "6 bosqich",
+        "5 bosqich"
+      ],
+      "t": 3,
+      "izoh": "Har bosqichda xatolar soni 3 marta kamayadi: 1215 : 3^n = 5. Bundan 3^n = 243 = 3⁵, ya'ni n = 5. Javob: 5 bosqich.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-qadrsizlanish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#bd0f0949"
+    },
+    {
+      "q": "Birinchi kompyuterning narxi 90 000 000 so'm bo'lib, har yili ikki barobar tushadi. Ikkinchi, eskirgan kompyuterning 1 406 250 so'mlik qiymati o'zgarmaydi. Narxlar qachon tenglashadi?",
+      "v": [
+        "4 yil",
+        "6 yil",
+        "8 yil",
+        "64 yil"
+      ],
+      "t": 1,
+      "izoh": "Birinchi kompyuter narxi 90 000 000 : 2^n ga teng bo'ladi. Tenglashish sharti: 90 000 000 : 2^n = 1 406 250. Bundan 2^n = 64 = 2⁶, demak n = 6. Nisbat 64 ni javob deb olish xato. Javob: 6 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-qadrsizlanish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#d389999f"
+    },
+    {
+      "q": "Idishdagi tuzli eritmadan har safar yarmi to'kilib, o'rniga toza suv quyiladi. Boshida idishda 480 g tuz bor edi. Tuz miqdori 30 g ga tushishi uchun bu amal necha marta bajariladi?",
+      "v": [
+        "5 marta",
+        "16 marta",
+        "3 marta",
+        "4 marta"
+      ],
+      "t": 3,
+      "izoh": "Har amaldan keyin tuz miqdori ikki barobar kamayadi: 480 : 2^n = 30. Bundan 2^n = 16 = 2⁴, ya'ni n = 4. Nisbat 16 ni javob deb yozish keng tarqalgan xato. Javob: 4 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-aralashma-suyultirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#f0c39051"
+    },
+    {
+      "q": "Suv filtri har o'tkazishda zararli moddalar konsentratsiyasini 5 marta kamaytiradi. Dastlab u 6250 mg/l edi. Konsentratsiya 2 mg/l bo'lishi uchun suv nechta filtrdan o'tkaziladi?",
+      "v": [
+        "5 filtr",
+        "4 filtr",
+        "3125 filtr",
+        "6 filtr"
+      ],
+      "t": 0,
+      "izoh": "Har filtrdan keyin konsentratsiya 5 marta kamayadi: 6250 : 5^n = 2. Bundan 5^n = 3125. 3125 = 5⁵ bo'lgani uchun n = 5. Javob: 5 filtr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-aralashma-suyultirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#1e32b0fb"
+    },
+    {
+      "q": "Bo'yoq idishidan har safar aralashmaning to'rtdan bir qismi to'kilib, o'rniga suv quyiladi. Bo'yoq massasi 256 g dan 108 g ga tushishi uchun amal necha marta takrorlanadi?",
+      "v": [
+        "4 marta",
+        "2 marta",
+        "3 marta",
+        "6 marta"
+      ],
+      "t": 2,
+      "izoh": "Har amaldan keyin bo'yoqning 3/4 qismi qoladi: 256·(3/4)^n = 108. Ikkala tomonni 256 ga bo'lamiz: (3/4)^n = 27/64. 27/64 = (3/4)³ bo'lgani uchun n = 3. Javob: 3 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-aralashma-suyultirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#cdd5e629"
+    },
+    {
+      "q": "Har suyultirishdan keyin eritmadagi spirt ulushi oldingi qiymatining 0,8 qismini tashkil etadi. Boshlang'ich ulush 25 foiz edi. Ulush 8,192 foizga tushishi uchun necha marta suyultirish kerak?",
+      "v": [
+        "4 suyultirish",
+        "5 suyultirish",
+        "6 suyultirish",
+        "8 suyultirish"
+      ],
+      "t": 1,
+      "izoh": "Ulush 25·0,8^n qonuniyat bilan kamayadi: 25·0,8^n = 8,192. Bundan 0,8^n = 0,32768. Endi 0,8 ni ketma-ket ko'paytiramiz: 0,8² = 0,64, 0,8³ = 0,512, 0,8⁴ = 0,4096, 0,8⁵ = 0,32768. Demak n = 5. Javob: 5 suyultirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-aralashma-suyultirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#527912e8"
+    },
+    {
+      "q": "2^(x+y) = 32 va 2^(x−y) = 2 sistemani yeching. Ikkala tenglamada ham asos bir xil ekaniga e'tibor bering.",
+      "v": [
+        "x = 2, y = 3",
+        "x = 5, y = 1",
+        "x = 3, y = 2",
+        "x = 4, y = 1"
+      ],
+      "t": 2,
+      "izoh": "Asoslar teng bo'lgani uchun ko'rsatkichlarni tenglashtiramiz: x + y = 5 va x − y = 1. Ikki tenglamani qo'shsak, 2x = 6, ya'ni x = 3. Birinchi tenglamadan y = 5 − 3 = 2. Javob: x = 3, y = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-sistema",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#6452db7a"
+    },
+    {
+      "q": "2^x + 2^y = 12 va x + y = 5 sistemasining yechimini toping. Ikkinchi shartdan darajalar ko'paytmasi kelib chiqadi.",
+      "v": [
+        "x = 1, y = 4 yoki x = 4, y = 1",
+        "x = 4, y = 8",
+        "Sistemaning yechimi yo'q",
+        "x = 2, y = 3 yoki x = 3, y = 2"
+      ],
+      "t": 3,
+      "izoh": "x + y = 5 bo'lgani uchun 2^x·2^y = 2⁵ = 32. Demak 2^x va 2^y sonlarining yig'indisi 12, ko'paytmasi 32. Viyet teoremasi bo'yicha ular t² − 12t + 32 = 0 tenglamaning ildizlari, ya'ni 4 va 8. Bundan 2^x = 4 va 2^y = 8 yoki teskarisi. Javob: x = 2, y = 3 yoki x = 3, y = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-sistema",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#35cee95e"
+    },
+    {
+      "q": "4^x·2^y = 128 va 4^x : 2^y = 2 sistema berilgan. Bu holda x + y yig'indi nechaga teng bo'ladi?",
+      "v": [
+        "x + y = 7",
+        "x + y = 5",
+        "x + y = 4",
+        "x + y = 8"
+      ],
+      "t": 1,
+      "izoh": "4^x = 2^(2x) deb yozamiz. Birinchi tenglamadan 2^(2x+y) = 2⁷, ya'ni 2x + y = 7. Ikkinchisidan 2^(2x−y) = 2¹, ya'ni 2x − y = 1. Qo'shsak 4x = 8, x = 2, so'ng y = 3. Demak x + y = 5. Javob: x + y = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-sistema",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#c4b13870"
+    },
+    {
+      "q": "5^(x+y) = 125 va 5^(x−y) = 1/5 sistemani yeching hamda noma'lumlarning qiymatini ko'rsating.",
+      "v": [
+        "x = 1, y = 2",
+        "x = 2, y = 1",
+        "x = 3, y = 2",
+        "x = −1, y = 2"
+      ],
+      "t": 0,
+      "izoh": "1/5 = 5^(−1) ekanini hisobga olamiz. Ko'rsatkichlarni tenglashtiramiz: x + y = 3 va x − y = −1. Ikkala tenglamani qo'shsak 2x = 2, ya'ni x = 1. Bundan y = 3 − 1 = 2. Javob: x = 1, y = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-sistema",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#777b3f29"
+    },
+    {
+      "q": "Ma'lumki 2^x = 5. Shu shartda 2^(x+3) ifodaning qiymatini hisoblang.",
+      "v": [
+        "15",
+        "125",
+        "13",
+        "40"
+      ],
+      "t": 3,
+      "izoh": "Darajani ko'paytuvchilarga ajratamiz: 2^(x+3) = 2^x·2³. Ma'lumotga ko'ra 2^x = 5, 2³ esa 8 ga teng. Demak qiymat 5·8 = 40. Ko'rsatkichga 3 qo'shishni 5 ga 3 ni ko'paytirish deb tushunish xato. Javob: 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifoda-qiymati-almashtirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#adcd2bf9"
+    },
+    {
+      "q": "Agar 3^x = 7 bo'lsa, 3^(2x) ifodaning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "49",
+        "14",
+        "21",
+        "343"
+      ],
+      "t": 0,
+      "izoh": "3^(2x) = (3^x)² ekanini yozamiz. Berilganiga ko'ra 3^x = 7, demak (3^x)² = 7² = 49. Ko'rsatkichni ikkiga ko'paytirishni asosni ikkiga ko'paytirish bilan almashtirish 14 degan xato javob beradi. Javob: 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifoda-qiymati-almashtirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#43ea8369"
+    },
+    {
+      "q": "5^x = 4 bo'lsa, 5^(x−1) ifodaning qiymatini toping va javobni o'nli kasr ko'rinishida yozing.",
+      "v": [
+        "3",
+        "20",
+        "0,8",
+        "1,25"
+      ],
+      "t": 2,
+      "izoh": "5^(x−1) = 5^x : 5 ekanini ishlatamiz. Berilganiga ko'ra 5^x = 4, demak qiymat 4 : 5 = 0,8. Ko'rsatkichdan 1 ni ayirishni asosdan 1 ni ayirish deb tushunib, 3 degan xato javob olinadi. Javob: 0,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifoda-qiymati-almashtirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#ee97fde2"
+    },
+    {
+      "q": "2^x = 3 va 2^y = 5 bo'lsa, 2^(x+y) ifodaning qiymatini aniqlang.",
+      "v": [
+        "8",
+        "15",
+        "30",
+        "243"
+      ],
+      "t": 1,
+      "izoh": "Bir xil asosli darajalar ko'paytmasida ko'rsatkichlar qo'shiladi: 2^(x+y) = 2^x·2^y. Berilganlarni qo'yamiz: 3·5 = 15. Ko'rsatkichlar qo'shilgani uchun asos qiymatlari qo'shiladi deb o'ylash 8 degan xato javobga olib keladi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifoda-qiymati-almashtirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#0323dceb"
+    },
+    {
+      "q": "y = 2^x funksiya grafigi y = 8 to'g'ri chiziq bilan kesishadi. Kesishish nuqtasining koordinatalarini toping.",
+      "v": [
+        "(8; 3)",
+        "(3; 8)",
+        "(2; 8)",
+        "(3; 6)"
+      ],
+      "t": 1,
+      "izoh": "Kesishish nuqtasida ordinatalar teng: 2^x = 8. 8 = 2³ bo'lgani uchun x = 3. Nuqtaning ordinatasi esa to'g'ri chiziqniki, ya'ni 8. Demak nuqta (3; 8). Koordinatalarni o'rin almashtirib yozish tipik xato. Javob: (3; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-kesishish-nuqtasi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#ffca0fc6"
+    },
+    {
+      "q": "y = 3^x va y = 9^(x−1) funksiyalarning grafiklari qaysi nuqtada kesishadi?",
+      "v": [
+        "(9; 2)",
+        "(1; 3)",
+        "(2; 9)",
+        "(3; 9)"
+      ],
+      "t": 2,
+      "izoh": "Kesishish sharti: 3^x = 9^(x−1). O'ng tomonni 3 asosiga keltiramiz: 9^(x−1) = 3^(2x−2). Ko'rsatkichlar teng: x = 2x − 2, bundan x = 2. Ordinata y = 3² = 9. Javob: (2; 9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-kesishish-nuqtasi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#e5e07547"
+    },
+    {
+      "q": "y = (1/2)^x funksiya grafigi y = 16 to'g'ri chiziqni kesib o'tadi. Kesishish nuqtasining abssissasini toping.",
+      "v": [
+        "x = −4",
+        "x = 4",
+        "x = 16",
+        "x = −2"
+      ],
+      "t": 0,
+      "izoh": "Tenglamani tuzamiz: (1/2)^x = 16. Chap tomonni 2 asosida yozamiz: 2^(−x) = 2⁴. Ko'rsatkichlar teng: −x = 4, demak x = −4. Kamayuvchi funksiya bo'lgani uchun abssissa manfiy chiqadi. Javob: x = −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-kesishish-nuqtasi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#f010f674"
+    },
+    {
+      "q": "y = 4^x va y = 2^(x+3) funksiyalar grafiklarining kesishish nuqtasidagi ordinatani hisoblang.",
+      "v": [
+        "8",
+        "16",
+        "3",
+        "64"
+      ],
+      "t": 3,
+      "izoh": "Kesishish sharti: 4^x = 2^(x+3), ya'ni 2^(2x) = 2^(x+3). Ko'rsatkichlar teng: 2x = x + 3, bundan x = 3. Ordinata y = 4³ = 64 ga teng. Abssissa 3 ni ordinata deb yozish keng tarqalgan xato. Javob: 64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-kesishish-nuqtasi",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#25e9c699"
+    },
+    {
+      "q": "x = −2 soni quyidagi ko'rsatkichli tenglamalardan qaysi birining ildizi bo'ladi?",
+      "v": [
+        "3^(x+3) = 3",
+        "2^x = 4",
+        "5^x = 25",
+        "4^(x+1) = 16"
+      ],
+      "t": 0,
+      "izoh": "Har bir tenglamaga x = −2 ni qo'yib ko'ramiz. 3^(−2+3) = 3¹ = 3 — tenglik bajariladi. 2^(−2) = 1/4, bu 4 ga teng emas. 5^(−2) = 1/25, bu 25 emas. 4^(−1) = 1/4, bu 16 emas. Javob: 3^(x+3) = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizni-tekshirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#61ca46b3"
+    },
+    {
+      "q": "0, 1, 3 va 5 sonlaridan qaysi biri 2^(x+1) + 2^x = 24 tenglamaning ildizi bo'ladi?",
+      "v": [
+        "0",
+        "3",
+        "1",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Chap tomondan umumiy ko'paytuvchini chiqaramiz: 2^x·(2 + 1) = 24, ya'ni 3·2^x = 24. Bundan 2^x = 8 = 2³, demak x = 3. Tekshiramiz: 2⁴ + 2³ = 16 + 8 = 24, tenglik bajarildi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizni-tekshirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#b26b525e"
+    },
+    {
+      "q": "Nodira 2^(2x−1) = 8 tenglamani yechib, javobni x = 1,5 deb yozdi. Uning javobi to'g'rimi va nima uchun?",
+      "v": [
+        "Ha, javob to'g'ri",
+        "Yo'q, to'g'ri javob x = 3",
+        "Yo'q, to'g'ri javob x = 4,5",
+        "Yo'q, to'g'ri javob x = 2"
+      ],
+      "t": 3,
+      "izoh": "O'ng tomonni 2 asosida yozamiz: 8 = 2³. Ko'rsatkichlarni tenglashtiramiz: 2x − 1 = 3, bundan 2x = 4 va x = 2. Nodira 2x − 1 = 3 dan 2x = 3 deb ozod hadni ko'chirishni unutgan. Tekshirish: 2^(2·2−1) = 2³ = 8. Javob: yo'q, to'g'ri javob x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizni-tekshirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#264bf8a4"
+    },
+    {
+      "q": "Sardor 3^(x²) = 3^(3x−2) tenglamani yechib, faqat bitta x = 1 ildizni topdi. U qaysi ildizni tushirib qoldirgan?",
+      "v": [
+        "x = 0",
+        "x = −1",
+        "x = 2",
+        "x = −2"
+      ],
+      "t": 2,
+      "izoh": "Asoslar teng bo'lgani uchun x² = 3x − 2. Barcha hadni chapga o'tkazamiz: x² − 3x + 2 = 0. Viyet teoremasiga ko'ra ildizlar 1 va 2. Sardor kvadrat tenglamaning ikkinchi ildizini yozmagan. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizni-tekshirish",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#94931a08"
+    },
+    {
+      "q": "x va y natural sonlar bo'lib, 2^x·3^y = 432 tenglikni qanoatlantiradi. Ularning ko'paytmasi x·y nechaga teng?",
+      "v": [
+        "7",
+        "24",
+        "12",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "432 sonini tub ko'paytuvchilarga ajratamiz: 432 = 16·27. 16 = 2⁴ va 27 = 3³ bo'lgani uchun x = 4, y = 3. Demak x·y = 4·3 = 12. Yig'indi 7 ni javob deb olish tipik xato. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-vaziyat-tahlil",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#aaeed5cb"
+    },
+    {
+      "q": "2^x = a tenglama musbat ildizga ega bo'lishi uchun a parametr qanoatlantirishi lozim bo'lgan zarur va yetarli shartni ko'rsating.",
+      "v": [
+        "a > 1",
+        "a > 0",
+        "a ≥ 1",
+        "0 < a < 1"
+      ],
+      "t": 0,
+      "izoh": "y = 2^x funksiya o'suvchi va 2⁰ = 1 ga teng. Ildiz musbat, ya'ni x > 0 bo'lsa, 2^x qiymati 2⁰ dan katta bo'ladi, demak a > 1. Teskarisi ham o'rinli: a > 1 bo'lsa, ildiz albatta musbat. a > 0 va a ≥ 1 shartlari yetarli emas: a = 0,5 da ildiz manfiy, a = 1 da esa ildiz nolga teng. Javob: a > 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-vaziyat-tahlil",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#211de924"
+    },
+    {
+      "q": "Birinchi koloniyada 5 ming bakteriya bo'lib, ularning soni har soatda 4 barobar ortadi. Ikkinchisida 320 ming bakteriya bor va soni har soatda 2 barobar ortadi. Sonlar qachon tenglashadi?",
+      "v": [
+        "3 soat",
+        "4 soat",
+        "8 soat",
+        "6 soat"
+      ],
+      "t": 3,
+      "izoh": "Tenglashish sharti: 5·4^n = 320·2^n. Ikkala tomonni 5·2^n ga bo'lamiz: 4^n : 2^n = 64. Chap tomon (4 : 2)^n = 2^n ga teng, demak 2^n = 64 = 2⁶. Bundan n = 6. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-vaziyat-tahlil",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#6159d52a"
+    },
+    {
+      "q": "2^x va 2^y sonlarining yig'indisi 20 ga, ko'paytmasi esa 64 ga teng. Shu shartda x + y yig'indini toping.",
+      "v": [
+        "5",
+        "6",
+        "7",
+        "20"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytmani yozamiz: 2^x·2^y = 2^(x+y) = 64. 64 = 2⁶ bo'lgani uchun x + y = 6. Tekshirish uchun: 2^x va 2^y sonlari 4 va 16, ularning yig'indisi 20, ya'ni shart bajariladi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-vaziyat-tahlil",
+      "id": "matematika_teng_m09-korsatkichli-tenglamalar#a752fc65"
+    }
+  ]
+}

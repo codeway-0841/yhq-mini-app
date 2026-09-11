@@ -1,0 +1,1609 @@
+{
+  "nom": "Kesmada eng katta va eng kichik qiymat",
+  "bolim": "Matematik analiz asoslari",
+  "blok": "anlz",
+  "rasmiyBolim": 5,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Maktab matematika to'garagida f(x) = x² − 6x + 11 funksiya berildi. Uning [0; 5] kesmadagi eng kichik qiymatini toping.",
+      "v": [
+        "2",
+        "6",
+        "11",
+        "−2"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 2x − 6 bo'lib, u x = 3 da nolga aylanadi va bu nuqta [0; 5] ga tegishli. Uch qiymatni solishtiramiz: f(0) = 11, f(3) = 9 − 18 + 11 = 2, f(5) = 25 − 30 + 11 = 6. Eng kichigi 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-uchhad-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#db3c170f"
+    },
+    {
+      "q": "y = −x² + 8x − 7 funksiyaning [1; 6] kesmadagi eng katta qiymati nechaga teng ekanligini aniqlang.",
+      "v": [
+        "0",
+        "9",
+        "5",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "Hosila y' = −2x + 8 bo'lib, x = 4 da nolga aylanadi, bu nuqta kesma ichida yotadi. y(1) = −1 + 8 − 7 = 0, y(4) = −16 + 32 − 7 = 9, y(6) = −36 + 48 − 7 = 5. Eng kattasi 9. 16 esa ozod hadni ayirishni unutgan javob. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-uchhad-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#1fa5d68e"
+    },
+    {
+      "q": "Dilnoza f(x) = x² − 4x + 7 funksiyani [−1; 3] kesmada tekshirmoqda. Shu kesmadagi eng katta qiymat qanday bo'ladi?",
+      "v": [
+        "3",
+        "4",
+        "12",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 2x − 4 = 0 tenglamadan x = 2 chiqadi, u kesmaga tegishli. f(−1) = 1 + 4 + 7 = 12, f(2) = 4 − 8 + 7 = 3, f(3) = 9 − 12 + 7 = 4. Eng katta qiymat chap uchda, ya'ni 12. Chap uchni tashlab ketgan o'quvchi 4 ni tanlaydi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-uchhad-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#99e9b6ac"
+    },
+    {
+      "q": "3x² − 6x + 1 ifoda [0; 3] oraliqda qanday eng kichik qiymatni qabul qilishini aniqlab, to'g'ri javobni belgilang.",
+      "v": [
+        "10",
+        "−3",
+        "1",
+        "−2"
+      ],
+      "t": 3,
+      "izoh": "Hosila 6x − 6 nolga aylanadigan nuqta x = 1, u kesma ichida yotadi. Qiymatlar: f(0) = 1, f(1) = 3 − 6 + 1 = −2, f(3) = 27 − 18 + 1 = 10. Eng kichigi −2. −3 esa ozod hadni tashlab yuborish natijasi. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-uchhad-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#6eca1616"
+    },
+    {
+      "q": "f(x) = x³ − 12x + 5 funksiyaning [0; 3] kesmadagi eng kichik qiymatini hisoblab, uni variantlar orasidan tanlang.",
+      "v": [
+        "−4",
+        "5",
+        "2",
+        "−11"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 3x² − 12 = 0 dan x = 2 va x = −2 chiqadi, kesmaga faqat x = 2 tegishli. f(0) = 5, f(2) = 8 − 24 + 5 = −11, f(3) = 27 − 36 + 5 = −4. Eng kichigi −11. Kritik nuqtani tekshirmagan o'quvchi −4 ni tanlaydi. Javob: −11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kubik-kritik-nuqta",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#19e1beb6"
+    },
+    {
+      "q": "y = x³ − 27x funksiya [−4; 0] kesmada berilgan. Uning eng katta qiymatini hisoblang.",
+      "v": [
+        "44",
+        "0",
+        "54",
+        "−54"
+      ],
+      "t": 2,
+      "izoh": "y' = 3x² − 27 = 0 dan x = 3 va x = −3, kesmada faqat x = −3 yotadi. y(−4) = −64 + 108 = 44, y(−3) = −27 + 81 = 54, y(0) = 0. Eng kattasi 54. Toq darajaning ishorasini chalkashtirgan o'quvchi −54 ni oladi. Javob: 54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kubik-kritik-nuqta",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#bc049589"
+    },
+    {
+      "q": "Nazorat ishida f(x) = 2x³ − 9x² + 12x + 5 funksiyaning [0; 3] kesmadagi eng katta qiymatini topish talab qilindi. U nechaga teng?",
+      "v": [
+        "10",
+        "14",
+        "9",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 6x² − 18x + 12 = 6(x − 1)(x − 2), demak kritik nuqtalar x = 1 va x = 2. f(0) = 5, f(1) = 2 − 9 + 12 + 5 = 10, f(2) = 16 − 36 + 24 + 5 = 9, f(3) = 54 − 81 + 36 + 5 = 14. Eng kattasi 14. 10 — bu faqat lokal maksimum, o'ng uch tekshirilmagan. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kubik-kritik-nuqta",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#508a4a67"
+    },
+    {
+      "q": "Sardor f(x) = x³ − 6x² + 9x + 2 funksiyani [0; 5] kesmada tekshirib, lokal maksimumni javob deb yozdi. Aslida eng katta qiymat qancha?",
+      "v": [
+        "22",
+        "6",
+        "2",
+        "20"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3), kritik nuqtalar x = 1 va x = 3. f(0) = 2, f(1) = 6, f(3) = 2, f(5) = 125 − 150 + 45 + 2 = 22. Lokal maksimum 6 bo'lsa ham, o'ng uchdagi 22 undan katta. 20 esa ozod hadni qo'shishni unutish natijasi. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kubik-kritik-nuqta",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#a4e7c810"
+    },
+    {
+      "q": "f(x) = x³ + 3x + 4 funksiyaning hosilasi hech qayerda nolga aylanmaydi. Uning [−1; 2] kesmadagi eng katta qiymatini toping.",
+      "v": [
+        "18",
+        "0",
+        "15",
+        "14"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² + 3 har doim musbat, demak funksiya butun kesmada o'suvchi. O'suvchi funksiya eng katta qiymatini o'ng uchda oladi: f(2) = 8 + 6 + 4 = 18. 14 — ozod hadni qo'shmaslik xatosi, 15 esa hosilaning x = 2 dagi qiymatini javob deb olish, 0 esa chap uchdagi eng kichik qiymat. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monoton-funksiya-chekkada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#7337b0d3"
+    },
+    {
+      "q": "y = −2x³ − 6x + 5 funksiya [−2; 1] kesmada kamayuvchi ekani ma'lum. Uning eng kichik qiymati qaysi songa teng?",
+      "v": [
+        "3",
+        "5",
+        "−3",
+        "33"
+      ],
+      "t": 2,
+      "izoh": "y' = −6x² − 6 har doim manfiy, ya'ni funksiya kamayuvchi. Kamayuvchi funksiyaning eng kichik qiymati o'ng uchda bo'ladi: y(1) = −2 − 6 + 5 = −3. Chap uchdagi y(−2) = 16 + 12 + 5 = 33 esa eng katta qiymat. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monoton-funksiya-chekkada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#6f3ce0d7"
+    },
+    {
+      "q": "2x⁵ + 5x − 3 ifodaning [−1; 1] kesmadagi eng kichik qiymati qanday bo'lishini aniqlang va javobni belgilang.",
+      "v": [
+        "−6",
+        "−10",
+        "−2",
+        "10"
+      ],
+      "t": 1,
+      "izoh": "Hosila 10x⁴ + 5 har doim musbat, demak ifoda o'suvchi va eng kichik qiymat chap uchda topiladi. x = −1 da: 2·(−1) + 5·(−1) − 3 = −2 − 5 − 3 = −10. Toq darajaning ishorasini yo'qotgan o'quvchi −6 ni, faqat birinchi hadni hisoblagan o'quvchi esa −2 ni oladi. Javob: −10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monoton-funksiya-chekkada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#42861350"
+    },
+    {
+      "q": "Omborda saqlanayotgan kartoshka miqdori M(t) = 480 − 5t² kg qonuniyat bilan kamayadi. Birinchi 8 haftadagi eng kichik miqdorni toping.",
+      "v": [
+        "320 kg",
+        "440 kg",
+        "480 kg",
+        "160 kg"
+      ],
+      "t": 3,
+      "izoh": "M'(t) = −10t bo'lib, t > 0 da manfiy, ya'ni miqdor doim kamayib boradi. Demak eng kichik qiymat kesmaning o'ng uchida: M(8) = 480 − 5·64 = 480 − 320 = 160 kg. 440 kg — kvadratga ko'tarishni unutgan javob, 320 kg esa faqat ayiriluvchining o'zi. Javob: 160 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monoton-funksiya-chekkada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#62dd475b"
+    },
+    {
+      "q": "x² − 2x − 3 kvadrat uchhadning [0; 4] kesmadagi eng katta va eng kichik qiymatlari yig'indisini hisoblang.",
+      "v": [
+        "9",
+        "5",
+        "−4",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "Hosila 2x − 2 nolga x = 1 da aylanadi. f(0) = −3, f(1) = 1 − 2 − 3 = −4, f(4) = 16 − 8 − 3 = 5. Eng kattasi 5, eng kichigi −4, yig'indisi 5 + (−4) = 1. 9 esa yig'indi emas, ayirma. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-eng-kichik-yigindisi",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#6663b8d1"
+    },
+    {
+      "q": "Nodira x³ − 3x² + 5 funksiyaning [−1; 2] kesmadagi eng katta va eng kichik qiymatlarini topib qo'shdi. U qanday natija oldi?",
+      "v": [
+        "7",
+        "6",
+        "5",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Hosila 3x² − 6x = 3x(x − 2), kritik nuqtalar x = 0 va x = 2, ikkalasi ham kesmada. f(−1) = −1 − 3 + 5 = 1, f(0) = 5, f(2) = 8 − 12 + 5 = 1. Eng katta qiymat 5, eng kichigi 1, yig'indi 5 + 1 = 6. 7 esa hisoblangan uchala qiymatni qo'shib yuborish natijasi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-eng-kichik-yigindisi",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#6e2f1ff8"
+    },
+    {
+      "q": "Do'kon foydasi P(x) = −x² + 14x − 24 mln so'm formula bilan hisoblanadi, x — kunlik sotuv soni va x ∈ [3; 10]. Eng katta va eng kichik foydalar yig'indisi qancha?",
+      "v": [
+        "34 mln so'm",
+        "25 mln so'm",
+        "16 mln so'm",
+        "41 mln so'm"
+      ],
+      "t": 0,
+      "izoh": "P'(x) = −2x + 14 = 0 dan x = 7 chiqadi. P(3) = −9 + 42 − 24 = 9, P(7) = −49 + 98 − 24 = 25, P(10) = −100 + 140 − 24 = 16. Eng katta foyda 25, eng kichigi 9, yig'indisi 34 mln so'm. 41 — o'ng uchni eng kichik deb olish xatosi. Javob: 34 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-eng-kichik-yigindisi",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#c1eb78b3"
+    },
+    {
+      "q": "f(x) = x + 9/x funksiyaning [1; 6] kesmadagi eng katta va eng kichik qiymatlari yig'indisini toping.",
+      "v": [
+        "23,5",
+        "17,5",
+        "16",
+        "13,5"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 1 − 9/x² = 0 dan x = 3 chiqadi va u kesmada yotadi. f(1) = 1 + 9 = 10, f(3) = 3 + 3 = 6, f(6) = 6 + 1,5 = 7,5. Eng kattasi 10, eng kichigi 6, yig'indi 16. 13,5 — eng kattani noto'g'ri tanlash, 23,5 esa uchala qiymatni qo'shib yuborish natijasi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-eng-kichik-yigindisi",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#3f1e0c43"
+    },
+    {
+      "q": "x² − 8x + 3 funksiyaning [1; 7] kesmadagi eng katta qiymatidan eng kichigini ayiring. Natija nechaga teng?",
+      "v": [
+        "−9",
+        "−17",
+        "9",
+        "13"
+      ],
+      "t": 2,
+      "izoh": "Hosila 2x − 8 = 0 dan x = 4. f(1) = 1 − 8 + 3 = −4, f(4) = 16 − 32 + 3 = −13, f(7) = 49 − 56 + 3 = −4. Eng katta −4, eng kichik −13, ayirma −4 − (−13) = 9. −17 esa ayirish o'rniga qo'shish xatosi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-eng-kichik-ayirmasi",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#dd161bbc"
+    },
+    {
+      "q": "y = x³ − 12x + 1 funksiya [−3; 3] kesmada qaralmoqda. Uning eng katta va eng kichik qiymatlari orasidagi farqni toping.",
+      "v": [
+        "32",
+        "2",
+        "18",
+        "15"
+      ],
+      "t": 0,
+      "izoh": "y' = 3x² − 12 = 0 dan x = −2 va x = 2, ikkalasi ham kesmada. y(−3) = −27 + 36 + 1 = 10, y(−2) = −8 + 24 + 1 = 17, y(2) = 8 − 24 + 1 = −15, y(3) = 27 − 36 + 1 = −8. Eng katta 17, eng kichik −15, farq 17 − (−15) = 32. 18 — faqat kesma uchlarini solishtirish natijasi. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-eng-kichik-ayirmasi",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#48807bcf"
+    },
+    {
+      "q": "Suv omborida sath S(t) = t² − 10t + 30 metr qonuniyat bilan o'zgaradi. Dastlabki 9 oyda eng yuqori va eng past sathlar farqi qancha?",
+      "v": [
+        "9 m",
+        "21 m",
+        "35 m",
+        "25 m"
+      ],
+      "t": 3,
+      "izoh": "S'(t) = 2t − 10 = 0 dan t = 5 chiqadi va u [0; 9] ichida. S(0) = 30, S(5) = 25 − 50 + 30 = 5, S(9) = 81 − 90 + 30 = 21. Eng yuqori sath 30 m, eng past sath 5 m, farq 25 m. 9 m — kritik nuqtani tekshirmasdan faqat uchlarni olish natijasi. Javob: 25 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-eng-kichik-ayirmasi",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#4fed8f38"
+    },
+    {
+      "q": "Zavodda bir dona mahsulot tannarxi C(x) = x³ − 6x² + 40 ming so'm, bu yerda x ∈ [1; 5] — smena raqami. Eng qimmat va eng arzon tannarx farqi qancha?",
+      "v": [
+        "20 ming so'm",
+        "27 ming so'm",
+        "32 ming so'm",
+        "43 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "C'(x) = 3x² − 12x = 3x(x − 4), kesmada faqat x = 4 yotadi, x = 0 esa undan tashqarida. C(1) = 1 − 6 + 40 = 35, C(4) = 64 − 96 + 40 = 8, C(5) = 125 − 150 + 40 = 15. Eng katta 35, eng kichik 8, farq 27 ming so'm. 32 — kesmaga kirmaydigan x = 0 nuqtani qo'shib yuborish natijasi. Javob: 27 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-eng-kichik-ayirmasi",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#ab1a2853"
+    },
+    {
+      "q": "f(x) = x³ − 3x² − 9x + 5 funksiya [−2; 4] kesmada berilgan. U eng katta qiymatiga qaysi nuqtada erishadi?",
+      "v": [
+        "x = −2",
+        "x = −1",
+        "x = 3",
+        "x = 4"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 3x² − 6x − 9 = 3(x − 3)(x + 1), demak kritik nuqtalar x = −1 va x = 3, ikkalasi ham kesmada. f(−2) = −8 − 12 + 18 + 5 = 3, f(−1) = −1 − 3 + 9 + 5 = 10, f(3) = 27 − 27 − 27 + 5 = −22, f(4) = 64 − 48 − 36 + 5 = −15. Eng katta qiymat 10 bo'lib, u x = −1 da erishiladi. Javob: x = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtani-korsatish",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#df396304"
+    },
+    {
+      "q": "x² − 10x + 21 funksiya [2; 8] kesmada eng kichik qiymatga erishadigan nuqtaning abssissasini ko'rsating.",
+      "v": [
+        "x = 2",
+        "x = 8",
+        "x = 10",
+        "x = 5"
+      ],
+      "t": 3,
+      "izoh": "Hosila 2x − 10 nolga x = 5 da aylanadi va bu nuqta kesma ichida. f(2) = 4 − 20 + 21 = 5, f(5) = 25 − 50 + 21 = −4, f(8) = 64 − 80 + 21 = 5. Eng kichik qiymat −4 bo'lib, u x = 5 da erishiladi. x = 10 — ikkiga bo'lishni unutgan javob. Javob: x = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtani-korsatish",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#0fbcaf57"
+    },
+    {
+      "q": "Fermer xo'jaligida kunlik sut miqdori F(t) = −t² + 18t + 40 litr bilan ifodalanadi, bu yerda t ∈ [0; 12] — kun raqami. Eng ko'p sut qaysi kunda olinadi?",
+      "v": [
+        "9-kunda",
+        "12-kunda",
+        "18-kunda",
+        "4-kunda"
+      ],
+      "t": 0,
+      "izoh": "F'(t) = −2t + 18 = 0 dan t = 9 chiqadi va bu kun kesmaga tegishli. F(0) = 40, F(9) = −81 + 162 + 40 = 121, F(12) = −144 + 216 + 40 = 112. Eng ko'p sut 121 litr bo'lib, u 9-kunda olinadi. 18-kun — hosilani ikkiga bo'lmaslik xatosi. Javob: 9-kunda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtani-korsatish",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#b0eb3d4c"
+    },
+    {
+      "q": "g(x) = x + 4/x funksiyaning [0,5; 4] kesmadagi eng katta qiymatiga erishiladigan nuqtani aniqlang.",
+      "v": [
+        "x = 2",
+        "x = 4",
+        "x = 0,5",
+        "x = 1"
+      ],
+      "t": 2,
+      "izoh": "g'(x) = 1 − 4/x² = 0 dan x = 2 chiqadi va u kesmada yotadi. g(0,5) = 0,5 + 8 = 8,5, g(2) = 2 + 2 = 4, g(4) = 4 + 1 = 5. Eng katta qiymat 8,5 bo'lib, u chap uchda erishiladi. x = 2 esa aksincha, eng kichik qiymat nuqtasi. Javob: x = 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtani-korsatish",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#2de34b81"
+    },
+    {
+      "q": "f(x) = (x² + 4)/x ko'rinishdagi funksiyaning [1; 4] kesmadagi eng kichik qiymatini toping.",
+      "v": [
+        "5",
+        "2",
+        "4",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Kasrni hadma-had bo'lib, f(x) = x + 4/x ko'rinishida yozamiz. f'(x) = 1 − 4/x² = 0 dan x = 2, u kesmada yotadi. f(1) = 1 + 4 = 5, f(2) = 2 + 2 = 4, f(4) = 4 + 1 = 5. Eng kichigi 4. 2 esa nuqta abssissasi, qiymat emas. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-funksiya-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#cf65d6f8"
+    },
+    {
+      "q": "y = 4x/(x² + 4) funksiya [0; 3] kesmada berilgan. Uning eng katta qiymati nechaga teng?",
+      "v": [
+        "1",
+        "12/13",
+        "0",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Kasrning hosilasi y' = (16 − 4x²)/(x² + 4)² bo'lib, u x = 2 da nolga aylanadi. y(0) = 0, y(2) = 8/8 = 1, y(3) = 12/13. 12/13 birdan kichik, shuning uchun eng katta qiymat 1. 2 — bu abssissa, funksiya qiymati emas. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-funksiya-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#2265c2ad"
+    },
+    {
+      "q": "Sexda bir dona buyum tannarxi C(x) = 1200/x + 3x ming so'm, bu yerda x ∈ [10; 40] — partiyadagi buyumlar soni. Eng past tannarx qancha?",
+      "v": [
+        "150 ming so'm",
+        "60 ming so'm",
+        "20 ming so'm",
+        "120 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "C'(x) = −1200/x² + 3 = 0 dan x² = 400, ya'ni x = 20 chiqadi va u kesmada. C(10) = 120 + 30 = 150, C(20) = 60 + 60 = 120, C(40) = 30 + 120 = 150. Eng past tannarx 120 ming so'm. 60 — faqat bitta qo'shiluvchini hisoblash, 20 esa buyumlar soni. Javob: 120 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-funksiya-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#53b24ac1"
+    },
+    {
+      "q": "h(x) = 9/x − x funksiyaning [1; 9] kesmadagi eng katta qiymatini toping.",
+      "v": [
+        "0",
+        "8",
+        "9",
+        "−8"
+      ],
+      "t": 1,
+      "izoh": "h'(x) = −9/x² − 1 ifoda har doim manfiy, demak funksiya kesmada kamayuvchi. Kamayuvchi funksiya eng katta qiymatini chap uchda oladi: h(1) = 9 − 1 = 8. x = 3 da funksiya nolga teng bo'ladi, lekin bu kritik nuqta emas. −8 esa o'ng uchdagi eng kichik qiymat. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-funksiya-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#e446ff34"
+    },
+    {
+      "q": "f(x) = √(25 − x²) funksiyaning [−3; 4] kesmadagi eng kichik qiymati nechaga teng?",
+      "v": [
+        "5",
+        "4",
+        "16",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Ildiz ostidagi 25 − x² ifoda x = 0 da eng katta, kesma uchlarida esa kichik bo'ladi. f(−3) = √16 = 4, f(0) = √25 = 5, f(4) = √9 = 3. Eng kichik qiymat 3 bo'lib, u o'ng uchda erishiladi. 4 — chap uchdagi qiymat, 16 esa ildiz chiqarilmagan qiymat. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-funksiya-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#ab2ab55f"
+    },
+    {
+      "q": "y = 2√x − x funksiya [0; 9] kesmada qaralganda uning eng kichik qiymati qanday bo'ladi?",
+      "v": [
+        "0",
+        "−3",
+        "1",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "y' = 1/√x − 1 = 0 dan √x = 1, ya'ni x = 1. y(0) = 0, y(1) = 2 − 1 = 1, y(9) = 6 − 9 = −3. Eng kichigi −3 bo'lib, u o'ng uchda erishiladi. 1 esa aksincha, eng katta qiymat. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-funksiya-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#55addd79"
+    },
+    {
+      "q": "√(x² − 4x + 13) ifodaning [0; 6] kesmadagi eng katta qiymatini toping.",
+      "v": [
+        "3",
+        "√13",
+        "5",
+        "13"
+      ],
+      "t": 2,
+      "izoh": "Ildiz ostini to'la kvadratga keltiramiz: x² − 4x + 13 = (x − 2)² + 9. Ildiz osti x = 2 da eng kichik, ya'ni 9 bo'ladi; uchlarda esa x = 0 da 13, x = 6 da 16 + 9 = 25. Eng katta qiymat √25 = 5. 3 — bu eng kichik qiymat, 13 esa ildiz ostidagi son. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-funksiya-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#8535c785"
+    },
+    {
+      "q": "Balandligi 3 m ustun uchidan yerdagi nuqtagacha bo'lgan masofa L(x) = √(x² + 9) metrga teng. x ∈ [0; 4] bo'lsa, eng uzoq masofa qancha?",
+      "v": [
+        "5 m",
+        "4 m",
+        "3 m",
+        "25 m"
+      ],
+      "t": 0,
+      "izoh": "Ildiz ostidagi x² + 9 ifoda x o'sgan sari o'sadi, demak L ham o'suvchi va kritik nuqta yo'q. Eng katta qiymat o'ng uchda: L(4) = √(16 + 9) = √25 = 5 m. 3 m — chap uchdagi eng qisqa masofa, 25 m esa ildiz chiqarishni unutgan javob. Javob: 5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-funksiya-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#60fde726"
+    },
+    {
+      "q": "f(x) = 3cosx − 2 funksiyaning [0; π] kesmadagi eng kichik qiymatini aniqlang.",
+      "v": [
+        "−5",
+        "1",
+        "−2",
+        "−1"
+      ],
+      "t": 0,
+      "izoh": "[0; π] kesmada cosx qiymati 1 dan −1 gacha kamayadi, shuning uchun f ham kamayuvchi. Eng kichik qiymat o'ng uchda: f(π) = 3·(−1) − 2 = −5. f(0) = 3 − 2 = 1 esa eng katta qiymat. −2 — kosinusni nolga tenglashtirish, −1 esa ozod hadning ishorasini almashtirish xatosi. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#56f468c6"
+    },
+    {
+      "q": "y = sin2x funksiya [0; π/3] kesmada eng katta qiymatga qaysi nuqtada erishishini aniqlang.",
+      "v": [
+        "x = 0",
+        "x = π/6",
+        "x = π/4",
+        "x = π/3"
+      ],
+      "t": 2,
+      "izoh": "y' = 2cos2x bo'lib, u 2x = π/2, ya'ni x = π/4 da nolga aylanadi va bu nuqta kesmaga tegishli. y(0) = 0, y(π/4) = sin(π/2) = 1, y(π/3) = sin(2π/3) = √3/2. Eng katta qiymat 1 bo'lib, u x = π/4 da erishiladi. Javob: x = π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#ab47029b"
+    },
+    {
+      "q": "sinx + cosx ifodaning [0; π/2] kesmadagi eng katta va eng kichik qiymatlari yig'indisini hisoblang.",
+      "v": [
+        "2",
+        "√2 + 1",
+        "√2",
+        "√2 − 1"
+      ],
+      "t": 1,
+      "izoh": "Ifodani √2·sin(x + π/4) ko'rinishga keltiramiz. Kesmada x + π/4 argumenti π/4 dan 3π/4 gacha o'zgaradi, sinus esa x = π/4 da eng katta 1 qiymatni oladi, ya'ni ifoda √2 ga teng bo'ladi. Uchlarda sin0 + cos0 = 1 va sin(π/2) + cos(π/2) = 1, demak eng kichik qiymat 1. Yig'indi √2 + 1. Javob: √2 + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trigonometrik-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#e0312043"
+    },
+    {
+      "q": "Charxpalak kabinasining yerdan balandligi h(t) = 12 − 10cost metr bilan ifodalanadi. t ∈ [0; π] bo'lganda eng katta balandlik qancha?",
+      "v": [
+        "2 m",
+        "12 m",
+        "10 m",
+        "22 m"
+      ],
+      "t": 3,
+      "izoh": "[0; π] kesmada cost qiymati 1 dan −1 gacha kamayadi, shuning uchun h o'suvchi bo'ladi. Eng katta balandlik o'ng uchda: h(π) = 12 − 10·(−1) = 12 + 10 = 22 m. h(0) = 12 − 10 = 2 m esa eng past holat. Javob: 22 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#c587c943"
+    },
+    {
+      "q": "f(x) = x·e^(−x) funksiyaning [0; 2] kesmadagi eng katta qiymatini toping.",
+      "v": [
+        "2/e²",
+        "1/e",
+        "e",
+        "2e²"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytmaning hosilasi f'(x) = e^(−x) − x·e^(−x) = e^(−x)(1 − x), demak kritik nuqta x = 1. f(0) = 0, f(1) = 1/e ≈ 0,368, f(2) = 2/e² ≈ 0,271. Eng kattasi 1/e, chunki maxrajdagi e² surat 2 dan tezroq o'sadi. 2e² — manfiy ko'rsatkichni e'tibordan chetda qoldirish natijasi. Javob: 1/e.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#506889f2"
+    },
+    {
+      "q": "y = e^x − x funksiya [−1; 1] kesmada berilgan bo'lsa, uning eng kichik qiymati nechaga teng?",
+      "v": [
+        "1",
+        "e − 1",
+        "1/e + 1",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "y' = e^x − 1 = 0 tenglamadan e^x = 1, ya'ni x = 0 chiqadi. y(−1) = 1/e + 1 ≈ 1,37, y(0) = 1 − 0 = 1, y(1) = e − 1 ≈ 1,72. Eng kichigi 1. 0 — bu kritik nuqtaning abssissasi, funksiya qiymati emas. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#ef201241"
+    },
+    {
+      "q": "x²·e^x funksiyaning [−3; 1] kesmadagi eng katta qiymati qaysi variantda to'g'ri ko'rsatilgan?",
+      "v": [
+        "4/e²",
+        "9/e³",
+        "0",
+        "e"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 2x·e^x + x²·e^x = x(x + 2)e^x, demak kritik nuqtalar x = 0 va x = −2. f(−3) = 9/e³ ≈ 0,45, f(−2) = 4/e² ≈ 0,54, f(0) = 0, f(1) = e ≈ 2,72. Eng kattasi e bo'lib, u o'ng uchda erishiladi; lokal maksimum 4/e² undan ancha kichik. Javob: e.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#4d08dc5f"
+    },
+    {
+      "q": "Dori moddasining qondagi miqdori M(t) = 40t·e^(−t) mg qonuniyat bilan o'zgaradi. t ∈ [0; 3] soatda eng katta miqdor qancha bo'ladi?",
+      "v": [
+        "40 mg",
+        "120/e³ mg",
+        "40/e mg",
+        "0 mg"
+      ],
+      "t": 2,
+      "izoh": "M'(t) = 40e^(−t)(1 − t) bo'lib, u t = 1 soatda nolga aylanadi. M(0) = 0, M(1) = 40/e ≈ 14,7 mg, M(3) = 120/e³ ≈ 5,97 mg. Eng katta miqdor 40/e mg. 40 mg — ko'rsatkichli ko'paytuvchini unutgan javob. Javob: 40/e mg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#40427246"
+    },
+    {
+      "q": "f(x) = x − lnx funksiyaning [0,5; 3] kesmadagi eng katta qiymatini toping va javobni belgilang.",
+      "v": [
+        "1",
+        "0,5 + ln2",
+        "3 − ln3",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 1 − 1/x = 0 dan x = 1 chiqadi va u kesmada yotadi. f(0,5) = 0,5 + ln2 ≈ 1,19, f(1) = 1, f(3) = 3 − ln3 ≈ 1,90. Eng kattasi 3 − ln3 bo'lib, u o'ng uchda erishiladi. 1 esa aksincha, eng kichik qiymat. Javob: 3 − ln3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#bcc68eaa"
+    },
+    {
+      "q": "y = lnx − x/2 funksiya [1; 4] kesmada berilgan. Uning eng katta qiymatini aniqlang.",
+      "v": [
+        "ln4 − 2",
+        "−0,5",
+        "ln2",
+        "ln2 − 1"
+      ],
+      "t": 3,
+      "izoh": "y' = 1/x − 1/2 = 0 dan x = 2 chiqadi va u kesmada yotadi. y(1) = 0 − 0,5 = −0,5, y(2) = ln2 − 1 ≈ −0,31, y(4) = ln4 − 2 ≈ −0,61. Uchala son ham manfiy, ularning eng kattasi nolga eng yaqini, ya'ni ln2 − 1. Javob: ln2 − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifmik-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#5515f4e9"
+    },
+    {
+      "q": "x² − 8lnx ifodaning [1; 3] kesmadagi eng kichik qiymatini toping.",
+      "v": [
+        "4 − 8ln2",
+        "9 − 8ln3",
+        "1",
+        "4 − 8ln4"
+      ],
+      "t": 0,
+      "izoh": "Hosila 2x − 8/x = 0 dan x² = 4, ya'ni x = 2 chiqadi va u kesmada. f(1) = 1 − 0 = 1, f(2) = 4 − 8ln2 ≈ −1,55, f(3) = 9 − 8ln3 ≈ 0,21. Eng kichigi 4 − 8ln2. 4 − 8ln4 — x = 2 ni logarifm ostiga ham kvadratlab qo'yish xatosi. Javob: 4 − 8ln2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifmik-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#7f2f65fe"
+    },
+    {
+      "q": "Reklamaga x mln so'm sarflanganda oylik foyda P(x) = 40lnx − 5x mln so'mga teng bo'ladi. x ∈ [2; 10] uchun foyda qaysi xarajatda eng katta?",
+      "v": [
+        "2 mln so'm",
+        "8 mln so'm",
+        "5 mln so'm",
+        "10 mln so'm"
+      ],
+      "t": 1,
+      "izoh": "P'(x) = 40/x − 5 = 0 dan x = 8 chiqadi va u kesmaga tegishli. P(2) = 40ln2 − 10 ≈ 17,7, P(8) = 40ln8 − 40 ≈ 43,2, P(10) = 40ln10 − 50 ≈ 42,1 mln so'm. Eng katta foyda 8 mln so'mlik xarajatda. 10 mln so'm — o'ng uchni tekshirib, kritik nuqtani tashlab ketish natijasi. Javob: 8 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#2fc0b289"
+    },
+    {
+      "q": "f(x) = |x − 4| + 3 funksiyaning [0; 9] kesmadagi eng katta qiymatini toping.",
+      "v": [
+        "7",
+        "8",
+        "3",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Modul x = 4 da nolga aylanadi va shu nuqtada funksiya eng kichik qiymat 3 ni oladi. Kesma uchlarida: f(0) = 4 + 3 = 7, f(9) = 5 + 3 = 8. Eng kattasi 8 bo'lib, u o'ng uchda erishiladi. 7 — chap uchdagi qiymat, 3 esa eng kichik qiymat. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modulli-funksiya-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#329c3d6e"
+    },
+    {
+      "q": "y = |x² − 9| funksiya [−1; 4] kesmada berilgan. Uning eng katta qiymati nechaga teng?",
+      "v": [
+        "8",
+        "7",
+        "9",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "Modul ostidagi ifoda x = 3 da nolga aylanadi, x = 0 da esa modul eng katta bo'lishi mumkin, shuning uchun ikkala nuqta ham tekshiriladi. y(−1) = |1 − 9| = 8, y(0) = 9, y(3) = 0, y(4) = |16 − 9| = 7. Eng kattasi 9 bo'lib, u x = 0 nuqtada erishiladi. 7 — faqat o'ng uchni olish natijasi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modulli-funksiya-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#270d23cf"
+    },
+    {
+      "q": "f(x) = |3x − 12| − x funksiyaning [0; 6] kesmadagi eng kichik qiymatini toping.",
+      "v": [
+        "−4",
+        "0",
+        "8",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Modul x = 4 da ochilish qoidasini o'zgartiradi. x < 4 bo'lganda f(x) = 12 − 3x − x = 12 − 4x, ya'ni kamayuvchi; x > 4 bo'lganda f(x) = 3x − 12 − x = 2x − 12, ya'ni o'suvchi. Demak eng kichik qiymat sinish nuqtasida: f(4) = 0 − 4 = −4. Uchlarda f(0) = 12 va f(6) = 6 − 6 = 0. 8 — 12 − 4x ifodani sinish nuqtasi x = 4 o'rniga x = 1 da hisoblash natijasi: 12 − 4 = 8. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-funksiya-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#830fba0a"
+    },
+    {
+      "q": "|x| + |x − 4| yig'indining [−2; 6] kesmadagi eng katta qiymatini aniqlang.",
+      "v": [
+        "16",
+        "6",
+        "8",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Ifoda x = 0 va x = 4 nuqtalarida sinadi, [0; 4] oralig'ida esa doim 4 ga teng bo'ladi va bu eng kichik qiymat. Kesma uchlarida: f(−2) = 2 + 6 = 8, f(6) = 6 + 2 = 8. Demak eng katta qiymat 8 bo'lib, u ikkala uchda ham erishiladi. 16 — ikkala uchdagi qiymatni qo'shib yuborish natijasi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-funksiya-kesmada",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#9610ff75"
+    },
+    {
+      "q": "f(x) = x² − 12x + 40 funksiyaning [7; 11] kesmadagi eng kichik qiymatini toping.",
+      "v": [
+        "5",
+        "4",
+        "29",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 2x − 12 = 0 dan x = 6 chiqadi, lekin bu nuqta [7; 11] kesmadan tashqarida, shuning uchun hisobga olinmaydi. Kesmada hosila musbat, ya'ni funksiya o'suvchi: f(7) = 49 − 84 + 40 = 5, f(11) = 121 − 132 + 40 = 29. Eng kichigi 5. 4 — kesmaga kirmaydigan x = 6 dagi qiymat. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kritik-nuqta-kesmadan-tashqarida",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#646290e1"
+    },
+    {
+      "q": "y = x³ − 3x² + 4 funksiya [3; 6] kesmada berilgan. Uning eng katta qiymatini hisoblang.",
+      "v": [
+        "4",
+        "0",
+        "112",
+        "108"
+      ],
+      "t": 2,
+      "izoh": "y' = 3x² − 6x = 3x(x − 2), kritik nuqtalar x = 0 va x = 2, ikkalasi ham [3; 6] dan tashqarida. Kesmada hosila musbat, demak funksiya o'suvchi: y(3) = 27 − 27 + 4 = 4, y(6) = 216 − 108 + 4 = 112. Eng kattasi 112. 108 — ozod hadni qo'shishni unutish, 0 esa kesmadan tashqaridagi x = 2 dagi qiymat. Javob: 112.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kritik-nuqta-kesmadan-tashqarida",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#99d771b8"
+    },
+    {
+      "q": "Nasos unumdorligi Q(x) = x² − 16x + 90 litr/minutga teng, bu yerda x ∈ [10; 14] — dvigatel aylanish tezligi darajasi. Eng kichik unumdorlik qancha bo'ladi?",
+      "v": [
+        "26 litr/min",
+        "30 litr/min",
+        "62 litr/min",
+        "90 litr/min"
+      ],
+      "t": 1,
+      "izoh": "Q'(x) = 2x − 16 = 0 dan x = 8 chiqadi, lekin u [10; 14] kesmaga kirmaydi. Kesmada hosila musbat, demak unumdorlik o'sib boradi va eng kichik qiymat chap uchda: Q(10) = 100 − 160 + 90 = 30 litr/min. 26 — kesmadan tashqaridagi x = 8 dagi qiymat, 90 esa x = 0 dagi qiymat. Javob: 30 litr/min.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kritik-nuqta-kesmadan-tashqarida",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#4bde79ad"
+    },
+    {
+      "q": "−x² + 6x + 2 ifodaning [−4; 1] kesmadagi eng katta qiymatini toping.",
+      "v": [
+        "11",
+        "−38",
+        "2",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Hosila −2x + 6 = 0 dan x = 3 chiqadi, lekin bu nuqta [−4; 1] kesmadan o'ngda qolgan. Kesmada hosila musbat, demak ifoda o'suvchi: f(−4) = −16 − 24 + 2 = −38, f(1) = −1 + 6 + 2 = 7. Eng kattasi 7. 11 — kesmaga kirmaydigan x = 3 dagi qiymat. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kritik-nuqta-kesmadan-tashqarida",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#979a7174"
+    },
+    {
+      "q": "Kesmada uzluksiz funksiyaning eng katta qiymatini topish algoritmi qaysi variantda to'g'ri va to'liq bayon qilingan?",
+      "v": [
+        "Faqat kesma uchlaridagi ikkita qiymat solishtiriladi",
+        "Hosilaning kesmadagi eng katta qiymati olinadi",
+        "Hosila nollaridagi qiymatlar solishtiriladi, kesma uchlari hisobga olinmaydi",
+        "Hosila nolga aylanadigan yoki mavjud bo'lmagan nuqtalardan kesmaga tegishlilari tanlanadi va ular bilan kesma uchlaridagi qiymatlar solishtiriladi"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri algoritm uch qadamdan iborat: avval kritik nuqtalar aniqlanadi — bular hosila nolga aylanadigan hamda hosila umuman mavjud bo'lmagan nuqtalar (masalan modulli funksiyaning sinish nuqtasi); so'ng ulardan kesmaga tegishlilari ajratiladi; oxirida shu nuqtalardagi va kesma uchlaridagi qiymatlar solishtirilib, eng kattasi tanlanadi. Uchlarni tashlab ketish ham, kritik nuqtalarni tashlab ketish ham xato javobga olib keladi. Javob: kritik nuqtalar va uchlar birgalikda solishtiriladigan variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "algoritm-nazariya",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#fd34e3b0"
+    },
+    {
+      "q": "Nima uchun kesmadagi eng katta qiymatni izlashda kesma uchlaridagi qiymatlar ham albatta tekshiriladi?",
+      "v": [
+        "Chunki kesma uchlarida hosila har doim nolga aylanadi",
+        "Chunki eng katta qiymat uchda ham erishilishi mumkin, u yerda esa hosila noldan farqli bo'lishi mumkin",
+        "Chunki kesma uchlarida funksiya uzilishga ega bo'ladi",
+        "Chunki uchlarda funksiya hosilasi umuman aniqlanmagan bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Hosilaning nolga aylanishi ekstremumning zaruriy sharti bo'lib, u faqat ichki nuqtalarga tegishli. Kesma uchida funksiya o'sib yoki kamayib turgan bo'lishi mumkin, hosila u yerda noldan farqli bo'ladi, lekin qiymat baribir eng katta chiqadi. Masalan y = x funksiyaning [0; 5] dagi eng katta qiymati x = 5 da, hosila esa hamma joyda 1 ga teng. Javob: ikkinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "algoritm-nazariya",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#f672f291"
+    },
+    {
+      "q": "Funksiya kesmada uzluksiz bo'lmasa, uning eng katta qiymati haqidagi qaysi xulosa to'g'ri bo'ladi?",
+      "v": [
+        "Eng katta qiymat faqat kesma uchlarida bo'ladi",
+        "Eng katta qiymat har doim mavjud, ammo uni topib bo'lmaydi",
+        "Eng katta qiymat umuman mavjud bo'lmasligi mumkin",
+        "Eng katta qiymat hosila nolga aylangan nuqtada bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Veyershtrass teoremasi eng katta va eng kichik qiymatning mavjudligini faqat kesmada uzluksiz funksiya uchun kafolatlaydi. Uzilish bo'lsa, kafolat yo'qoladi: masalan [0; 2] da x < 2 bo'lganda f(x) = x, x = 2 da esa f(2) = 0 deb aniqlangan funksiya eng katta qiymatga ega emas, chunki 2 ga yaqinlashadi, lekin unga erishmaydi. Javob: eng katta qiymat mavjud bo'lmasligi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "algoritm-nazariya",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#dff53b44"
+    },
+    {
+      "q": "y = f(x) funksiyaning hosilasi [2; 9] kesmaning barcha ichki nuqtalarida musbat. Funksiya eng kichik qiymatiga qaysi nuqtada erishadi?",
+      "v": [
+        "x = 2",
+        "x = 9",
+        "x = 5,5",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Hosila musbat bo'lgani uchun funksiya butun kesmada o'suvchi bo'ladi. O'suvchi funksiyaning eng kichik qiymati chap uchda, eng kattasi esa o'ng uchda erishiladi. Demak eng kichik qiymat x = 2 nuqtada. Kesma o'rtasi bu masalada hech qanday rol o'ynamaydi. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "algoritm-nazariya",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#18865b8f"
+    },
+    {
+      "q": "Anvarning do'konida bir dona daftar narxi p ming so'm bo'lganda kuniga (36 − 3p) dona sotiladi. p ∈ [2; 10] bo'lsa, eng katta kunlik daromad qancha?",
+      "v": [
+        "60 ming so'm",
+        "216 ming so'm",
+        "108 ming so'm",
+        "33 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Daromad D(p) = p(36 − 3p) = 36p − 3p². D'(p) = 36 − 6p = 0 dan p = 6 chiqadi va u kesmada yotadi. D(2) = 2·30 = 60, D(6) = 6·18 = 108, D(10) = 10·6 = 60. Eng katta daromad 108 ming so'm. 216 — sotilgan sonni hisobga olmay, 36 ni narxga ko'paytirish xatosi. Javob: 108 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-daromad-maksimum",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#b5eacc8b"
+    },
+    {
+      "q": "Teatrda chipta narxi x ming so'm bo'lsa, tomoshabinlar soni (500 − 5x) nafarni tashkil qiladi. x ∈ [40; 90] oralig'ida daromad qaysi narxda eng katta bo'ladi?",
+      "v": [
+        "40 ming so'm",
+        "90 ming so'm",
+        "100 ming so'm",
+        "50 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Daromad R(x) = x(500 − 5x) = 500x − 5x². R'(x) = 500 − 10x = 0 dan x = 50 chiqadi va u kesmada. R(40) = 40·300 = 12 000, R(50) = 50·250 = 12 500, R(90) = 90·50 = 4500 ming so'm. Eng katta daromad 50 ming so'mlik narxda. 100 — tomoshabinlar sonini nolga tenglashtirish xatosi. Javob: 50 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-daromad-maksimum",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#af095be7"
+    },
+    {
+      "q": "Har gektarga x kg o'g'it solinganda hosildorlik H(x) = 60 + 4x − 0,1x² sentnerni tashkil qiladi. x ∈ [0; 30] uchun eng yuqori hosildorlikni toping.",
+      "v": [
+        "100 sentner",
+        "140 sentner",
+        "90 sentner",
+        "60 sentner"
+      ],
+      "t": 0,
+      "izoh": "H'(x) = 4 − 0,2x = 0 dan x = 20 kg chiqadi va u kesmada yotadi. H(0) = 60, H(20) = 60 + 80 − 40 = 100, H(30) = 60 + 120 − 90 = 90 sentner. Eng yuqori hosildorlik 100 sentner. 140 — oxirgi hadni tashlab ketish natijasi, 90 esa o'ng uchdagi qiymat. Javob: 100 sentner.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-daromad-maksimum",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#4ddb81f5"
+    },
+    {
+      "q": "Kafeda kuniga x porsiya taom tayyorlanganda foyda P(x) = −2x² + 48x − 100 ming so'mga teng. x ∈ [5; 20] bo'lsa, eng katta foyda qancha?",
+      "v": [
+        "90 ming so'm",
+        "188 ming so'm",
+        "60 ming so'm",
+        "−100 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "P'(x) = −4x + 48 = 0 dan x = 12 porsiya chiqadi va u kesmada yotadi. P(5) = −50 + 240 − 100 = 90, P(12) = −288 + 576 − 100 = 188, P(20) = −800 + 960 − 100 = 60. Eng katta foyda 188 ming so'm. −100 — hosilani noto'g'ri yechib x = 24 ni olish natijasi. Javob: 188 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-daromad-maksimum",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#b47301bd"
+    },
+    {
+      "q": "Yuk mashinasi soatiga v km tezlikda yurganda reysning umumiy xarajati C(v) = 6000/v + 15v ming so'm bo'ladi. v ∈ [10; 40] uchun eng kam xarajatni toping.",
+      "v": [
+        "300 ming so'm",
+        "750 ming so'm",
+        "400 ming so'm",
+        "600 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "C'(v) = −6000/v² + 15 = 0 dan v² = 400, ya'ni v = 20 chiqadi va u kesmada. C(10) = 600 + 150 = 750, C(20) = 300 + 300 = 600, C(40) = 150 + 600 = 750. Eng kam xarajat 600 ming so'm. 300 — faqat bitta qo'shiluvchini olish, 400 esa v² qiymatining o'zi. Javob: 600 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-xarajat-minimum",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#e9b9e173"
+    },
+    {
+      "q": "Hajmi 32 dm³ qopqoqsiz kvadrat asosli quti yasalmoqda va asos tomoni x dm bo'lganda sirt yuzasi S(x) = x² + 128/x dm² bo'ladi. x ∈ [2; 8] da eng kichik sirt qancha?",
+      "v": [
+        "68 dm²",
+        "48 dm²",
+        "80 dm²",
+        "64 dm²"
+      ],
+      "t": 1,
+      "izoh": "S'(x) = 2x − 128/x² = 0 dan x³ = 64, ya'ni x = 4 dm chiqadi va u kesmada yotadi. S(2) = 4 + 64 = 68, S(4) = 16 + 32 = 48, S(8) = 64 + 16 = 80 dm². Eng kichik sirt 48 dm². 64 — faqat kub ildiz ostidagi son, 80 esa o'ng uchdagi qiymat. Javob: 48 dm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-xarajat-minimum",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#0cbba552"
+    },
+    {
+      "q": "Sexda bir dona mahsulotga to'g'ri keladigan elektr sarfi E(t) = t² − 14t + 60 kVt·soatga teng, bu yerda t ∈ [2; 10] — ish smenasi davomiyligi. Eng kam solishtirma sarfni toping.",
+      "v": [
+        "11 kVt·soat",
+        "20 kVt·soat",
+        "36 kVt·soat",
+        "14 kVt·soat"
+      ],
+      "t": 0,
+      "izoh": "E'(t) = 2t − 14 = 0 dan t = 7 soat chiqadi va u kesmada yotadi. E(2) = 4 − 28 + 60 = 36, E(7) = 49 − 98 + 60 = 11, E(10) = 100 − 140 + 60 = 20 kVt·soat. Eng kam sarf 11 kVt·soat. 20 — o'ng uchdagi qiymat, u kritik nuqtadagidan katta. Javob: 11 kVt·soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-xarajat-minimum",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#dfb2311b"
+    },
+    {
+      "q": "Ombordan do'konga yuk n marta tashilganda umumiy xarajat C(n) = 250n + 9000/n ming so'mni tashkil qiladi. n ∈ [3; 12] bo'lsa, nechta reysda xarajat eng kam bo'ladi?",
+      "v": [
+        "3 reys",
+        "4 reys",
+        "6 reys",
+        "12 reys"
+      ],
+      "t": 2,
+      "izoh": "C'(n) = 250 − 9000/n² = 0 dan n² = 36, ya'ni n = 6 chiqadi va u kesmada. C(3) = 750 + 3000 = 3750, C(6) = 1500 + 1500 = 3000, C(12) = 3000 + 750 = 3750 ming so'm. Eng kam xarajat 6 reysda bo'ladi. 12 reys — o'ng uchni tanlash xatosi, u eng qimmat variantlardan biri. Javob: 6 reys.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-xarajat-minimum",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#9e1d54fa"
+    },
+    {
+      "q": "Perimetri 40 m bo'lgan to'g'ri to'rtburchak tomorqaning bir tomoni x m va x ∈ [4; 16]. Uning eng katta yuzasini toping.",
+      "v": [
+        "64 m²",
+        "100 m²",
+        "96 m²",
+        "400 m²"
+      ],
+      "t": 1,
+      "izoh": "Perimetr 40 m bo'lgani uchun qo'shni tomon 20 − x ga teng. Yuza S(x) = x(20 − x) = 20x − x², S'(x) = 20 − 2x = 0 dan x = 10 m. S(4) = 4·16 = 64, S(10) = 10·10 = 100, S(16) = 16·4 = 64. Eng katta yuza 100 m². 400 — perimetrni tomon deb olish xatosi, 96 esa x = 8 dagi qiymat. Javob: 100 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-optimizatsiya",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#14cf881c"
+    },
+    {
+      "q": "Devorga tegib turgan to'rtburchak maydonni uch tomondan 60 m to'siq bilan o'rash kerak. Devorga perpendikulyar tomon x m, x ∈ [5; 25]. Eng katta yuza qancha?",
+      "v": [
+        "250 m²",
+        "400 m²",
+        "450 m²",
+        "900 m²"
+      ],
+      "t": 2,
+      "izoh": "Perpendikulyar tomonlar ikkita bo'lgani uchun devorga parallel tomon 60 − 2x ga teng. S(x) = x(60 − 2x) = 60x − 2x², S'(x) = 60 − 4x = 0 dan x = 15 m. S(5) = 5·50 = 250, S(15) = 15·30 = 450, S(25) = 25·10 = 250. Eng katta yuza 450 m². 900 — to'siqni ikki tomonga taqsimlab, 15·60 deb hisoblash xatosi. Javob: 450 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-optimizatsiya",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#7c6dd13e"
+    },
+    {
+      "q": "Tomoni 24 sm kvadrat kartonning burchaklaridan tomoni x sm kvadratchalar qirqib olinib, qopqoqsiz quti yasaladi. x ∈ [1; 10] bo'lsa, hajm qaysi qiymatda eng katta bo'ladi?",
+      "v": [
+        "2 sm",
+        "6 sm",
+        "12 sm",
+        "4 sm"
+      ],
+      "t": 3,
+      "izoh": "Quti asosining tomoni 24 − 2x, balandligi esa x, demak V(x) = x(24 − 2x)². Hosila V'(x) = (24 − 2x)(24 − 6x) bo'lib, u x = 4 va x = 12 da nolga aylanadi; kesmada faqat x = 4 yotadi. V(1) = 484, V(4) = 4·256 = 1024, V(10) = 10·16 = 160 sm³. Eng katta hajm x = 4 sm da. 12 sm — kesmadan tashqaridagi ildiz. Javob: 4 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "geometrik-optimizatsiya",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#96f67180"
+    },
+    {
+      "q": "Yig'indisi 18 ga teng ikki musbat sonning kvadratlari yig'indisi qaraladi. Birinchi son x ∈ [2; 16] bo'lsa, bu yig'indining eng kichik qiymati qancha?",
+      "v": [
+        "162",
+        "260",
+        "324",
+        "81"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi son 18 − x, demak f(x) = x² + (18 − x)². f'(x) = 2x − 2(18 − x) = 4x − 36 = 0 dan x = 9 chiqadi va u kesmada. f(2) = 4 + 256 = 260, f(9) = 81 + 81 = 162, f(16) = 256 + 4 = 260. Eng kichigi 162. 324 — butun yig'indini kvadratlash, 81 esa faqat bitta qo'shiluvchi. Javob: 162.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-optimizatsiya",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#7077b33b"
+    },
+    {
+      "q": "Jismning koordinatasi s(t) = 2t³ − 15t² + 24t + 10 metr qonun bilan o'zgaradi. t ∈ [0; 5] s bo'lsa, eng katta koordinata qancha bo'ladi?",
+      "v": [
+        "−6 m",
+        "10 m",
+        "21 m",
+        "5 m"
+      ],
+      "t": 2,
+      "izoh": "s'(t) = 6t² − 30t + 24 = 6(t − 1)(t − 4), demak kritik nuqtalar t = 1 va t = 4, ikkalasi ham kesmada. s(0) = 10, s(1) = 2 − 15 + 24 + 10 = 21, s(4) = 128 − 240 + 96 + 10 = −6, s(5) = 250 − 375 + 120 + 10 = 5. Eng katta koordinata 21 m. 10 m — faqat boshlang'ich holatni olish xatosi. Javob: 21 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-tezlik",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#0289f341"
+    },
+    {
+      "q": "Avtomobil tezligi v(t) = 12t − 3t² m/s formula bilan berilgan. t ∈ [0; 5] s oralig'ida eng katta tezlikni toping.",
+      "v": [
+        "12 m/s",
+        "9 m/s",
+        "0 m/s",
+        "−15 m/s"
+      ],
+      "t": 0,
+      "izoh": "v'(t) = 12 − 6t = 0 dan t = 2 s chiqadi va u kesmada yotadi. v(0) = 0, v(2) = 24 − 12 = 12, v(5) = 60 − 75 = −15 m/s. Eng katta tezlik 12 m/s. 9 m/s — t = 1 dagi qiymat bo'lib, u kritik nuqta emas. Javob: 12 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harakat-tezlik",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#831d7562"
+    },
+    {
+      "q": "Yuqoriga otilgan toshning balandligi h(t) = 20t − 5t² metrga teng. t ∈ [0; 3] s oralig'ida eng katta balandlikni toping.",
+      "v": [
+        "15 m",
+        "20 m",
+        "25 m",
+        "40 m"
+      ],
+      "t": 1,
+      "izoh": "h'(t) = 20 − 10t = 0 dan t = 2 s chiqadi va u kesmada yotadi. h(0) = 0, h(2) = 40 − 20 = 20, h(3) = 60 − 45 = 15 m. Eng katta balandlik 20 m. 40 m — ikkinchi hadni ayirishni unutish natijasi, 15 m esa o'ng uchdagi qiymat. Javob: 20 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harakat-tezlik",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#f77cbb02"
+    },
+    {
+      "q": "Poyezd tezligi v(t) = t³ − 9t² + 24t km/soat qonun bilan o'zgaradi. t ∈ [0; 6] soat oralig'ida tezlik qaysi paytda eng katta bo'ladi?",
+      "v": [
+        "t = 0",
+        "t = 2",
+        "t = 4",
+        "t = 6"
+      ],
+      "t": 3,
+      "izoh": "v'(t) = 3t² − 18t + 24 = 3(t − 2)(t − 4), kritik nuqtalar t = 2 va t = 4. v(0) = 0, v(2) = 8 − 36 + 48 = 20, v(4) = 64 − 144 + 96 = 16, v(6) = 216 − 324 + 144 = 36. Eng katta tezlik 36 km/soat bo'lib, u kesmaning o'ng uchida erishiladi. Lokal maksimum t = 2 dagi 20 undan kichik. Javob: t = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-tezlik",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#1591722b"
+    },
+    {
+      "q": "f(x) = x² − 6x + a funksiyaning [0; 5] kesmadagi eng kichik qiymati 4 ga teng bo'lsa, a parametrni toping.",
+      "v": [
+        "13",
+        "4",
+        "−5",
+        "22"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 2x − 6 = 0 dan x = 3 chiqadi, u kesmada yotadi va shu nuqtada eng kichik qiymat bo'ladi. f(3) = 9 − 18 + a = a − 9. Shart bo'yicha a − 9 = 4, demak a = 13. −5 — tenglamani a = 4 − 9 deb teskari yechish natijasi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrli-eng-katta",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#6533d86f"
+    },
+    {
+      "q": "f(x) = x³ − 3x + c funksiyaning [0; 2] kesmadagi eng katta qiymati 10 ga teng bo'lsa, c ni toping.",
+      "v": [
+        "12",
+        "10",
+        "18",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 3x² − 3 = 0 dan x = 1 va x = −1, kesmada faqat x = 1 yotadi. f(0) = c, f(1) = 1 − 3 + c = c − 2, f(2) = 8 − 6 + c = c + 2. Ularning eng kattasi c + 2, demak c + 2 = 10 va c = 8. 12 — eng kichik qiymatni tenglashtirish xatosi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrli-eng-katta",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#92ef4994"
+    },
+    {
+      "q": "f(x) = ax² − 20x + 7 funksiya musbat a da [0; 6] kesmada eng kichik qiymatga x = 4 nuqtada erishadi. a ning qiymati qanday?",
+      "v": [
+        "10",
+        "2,5",
+        "0,4",
+        "20"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat funksiya eng kichik qiymatini parabola uchida oladi, uning abssissasi x = 20/(2a) = 10/a. Shart bo'yicha 10/a = 4, demak a = 2,5 va bu nuqta kesmaga tegishli. 10 — maxrajdagi a ni tashlab yuborish, 0,4 esa nisbatni teskari olish natijasi. Javob: 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrli-eng-katta",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#353f8637"
+    },
+    {
+      "q": "Foyda P(x) = −x² + bx − 12 mln so'm funksiyasi [1; 9] kesmada eng katta qiymatga x = 5 da erishadi. b parametr qanday?",
+      "v": [
+        "−10",
+        "10",
+        "20",
+        "2,5"
+      ],
+      "t": 1,
+      "izoh": "P'(x) = −2x + b = 0 dan x = b/2 chiqadi. Shart bo'yicha b/2 = 5, demak b = 10 va bu nuqta [1; 9] ichida yotadi. −10 — hosiladagi minus ishorasini b ga o'tkazib yuborish, 20 esa ikkiga bo'lish o'rniga ko'paytirish xatosi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrli-eng-katta",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#087054e6"
+    },
+    {
+      "q": "x² − 8x + 20 ≥ k tengsizlik [1; 6] kesmaning barcha nuqtalarida bajarilishi uchun k ning eng katta qiymati qancha bo'lishi kerak?",
+      "v": [
+        "13",
+        "8",
+        "20",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Tengsizlik hamma nuqtada bajarilishi uchun k funksiyaning eng kichik qiymatidan oshmasligi kerak. f'(x) = 2x − 8 = 0 dan x = 4 chiqadi. f(1) = 13, f(4) = 16 − 32 + 20 = 4, f(6) = 36 − 48 + 20 = 8. Eng kichigi 4, demak k ning eng katta qiymati 4. 13 — chap uchni eng kichik deb olish xatosi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tengsizlik-va-ildizlar",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#8bc4b31f"
+    },
+    {
+      "q": "f(x) = x³ − 3x² + 2 funksiya uchun f(x) ≤ m tengsizlik [0; 3] kesmada har doim to'g'ri bo'lsin. m ning eng kichik qiymatini toping.",
+      "v": [
+        "−2",
+        "29",
+        "2",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlik hamma joyda bajarilishi uchun m funksiyaning eng katta qiymatidan kichik bo'lmasligi kerak. f'(x) = 3x² − 6x = 3x(x − 2), kritik nuqtalar x = 0 va x = 2. f(0) = 2, f(2) = 8 − 12 + 2 = −2, f(3) = 27 − 27 + 2 = 2. Eng kattasi 2, demak m ning eng kichik qiymati 2. −2 — eng kichik qiymatni olish, 29 esa x = 3 da ayirishni unutib 27 + 2 deb hisoblash xatosi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-va-ildizlar",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#530bf7a3"
+    },
+    {
+      "q": "Uzluksiz f funksiyaning [1; 7] kesmadagi eng katta qiymati 9, eng kichigi −4 ga teng. f(x) = 5 tenglama shu kesmada nechta ildizga ega?",
+      "v": [
+        "Kamida bitta ildizga ega",
+        "Aniq ikkita ildizga ega",
+        "Umuman ildizga ega emas",
+        "Aniq bitta ildizga ega"
+      ],
+      "t": 0,
+      "izoh": "5 soni −4 bilan 9 orasida yotadi. Uzluksiz funksiya o'zining eng kichik va eng katta qiymatlari orasidagi barcha oraliq qiymatlarni albatta qabul qiladi. Demak f(x) = 5 tenglamaning kamida bitta ildizi bor, ammo ularning aniq sonini bu ma'lumotdan aniqlab bo'lmaydi. Javob: kamida bitta ildizga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-va-ildizlar",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#b1d7835e"
+    },
+    {
+      "q": "Uzluksiz g funksiyaning [0; 10] kesmadagi eng katta qiymati 12, eng kichigi 3. Berilgan tenglamalardan qaysi biri shu kesmada ildizga ega emas?",
+      "v": [
+        "g(x) = 7",
+        "g(x) = 15",
+        "g(x) = 12",
+        "g(x) = 3"
+      ],
+      "t": 1,
+      "izoh": "Funksiya qiymatlari [3; 12] oralig'idan chiqmaydi, chunki 3 — eng kichik, 12 — eng katta qiymat. 3, 7 va 12 sonlari shu oraliqqa tegishli, demak ular albatta qabul qilinadi. 15 esa oraliqdan tashqarida, shuning uchun g(x) = 15 tenglamaning ildizi yo'q. Javob: g(x) = 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizlik-va-ildizlar",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#606e708e"
+    },
+    {
+      "q": "Uzluksiz f funksiyaning hosilasi (−2; 1) oraliqda manfiy, (1; 6) oraliqda esa musbat. U [−2; 6] kesmada eng kichik qiymatga qayerda erishadi?",
+      "v": [
+        "x = 1",
+        "x = −2",
+        "x = 6",
+        "Kesma uchlarining birida"
+      ],
+      "t": 0,
+      "izoh": "Hosila manfiy bo'lgan oraliqda funksiya kamayadi, musbat bo'lgan oraliqda esa o'sadi. Demak funksiya x = 1 gacha pasayib boradi, so'ng ko'tariladi va aynan shu nuqtada eng past qiymatga tushadi. Kesma uchlaridagi qiymatlar undan katta bo'ladi. Javob: x = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-belgisi-tahlil",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#ef405e04"
+    },
+    {
+      "q": "f uzluksiz funksiyaning hosilasi (0; 3) da musbat, (3; 8) da manfiy. f(0) = 5, f(3) = 14 va f(8) = 2 bo'lsa, eng katta va eng kichik qiymatlar yig'indisi qancha?",
+      "v": [
+        "19",
+        "12",
+        "16",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Hosila (0; 3) da musbat bo'lgani uchun funksiya o'sadi va x = 3 da eng yuqori nuqtaga chiqadi, keyin (3; 8) da kamayadi. Solishtiriladigan qiymatlar: f(0) = 5, f(3) = 14, f(8) = 2. Eng kattasi 14, eng kichigi 2, ularning yig'indisi 16. 19 — chap uchni eng kichik deb olish natijasi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-belgisi-tahlil",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#dfcb5fdd"
+    },
+    {
+      "q": "f funksiyaning hosilasi f'(x) = (x − 2)(x + 5) ko'rinishda berilgan. Funksiya [0; 4] kesmada eng kichik qiymatga qaysi nuqtada erishadi?",
+      "v": [
+        "x = 0",
+        "x = 2",
+        "x = −5",
+        "x = 4"
+      ],
+      "t": 1,
+      "izoh": "Hosilaning ildizlari x = 2 va x = −5, lekin [0; 4] kesmada faqat x = 2 yotadi. Kesmada x < 2 bo'lganda (x − 2) manfiy, (x + 5) musbat, ya'ni hosila manfiy va funksiya kamayadi; x > 2 da hosila musbat va funksiya o'sadi. Demak eng kichik qiymat x = 2 nuqtada. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-belgisi-tahlil",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#b825b46e"
+    },
+    {
+      "q": "Jadvalda uzluksiz f funksiyaning qiymatlari berilgan: f(1) = 4, f(2) = 9, f(4) = −3, f(6) = 7. Hosila faqat x = 2 va x = 4 da nolga aylanadi. Funksiyaning [1; 6] kesmadagi eng katta qiymati qancha?",
+      "v": [
+        "7",
+        "4",
+        "−3",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "Kesma [1; 6] bo'lib, tekshiriladigan nuqtalar ikkita kritik nuqta (x = 2 va x = 4) hamda ikkita uch (x = 1 va x = 6). Jadvaldagi qiymatlar: 4, 9, −3 va 7. Ularning eng kattasi 9, u x = 2 dagi lokal maksimumda erishiladi. 7 — o'ng uchdagi qiymat bo'lib, u eng katta emas. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-belgisi-tahlil",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#25908619"
+    },
+    {
+      "q": "f(x) funksiya [0; 2] da x², undan keyin [2; 5] da 8 − 2x formulasi bilan berilgan. Uning butun [0; 5] kesmadagi eng kichik qiymatini toping.",
+      "v": [
+        "0",
+        "4",
+        "−2",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Birinchi bo'lakda f(x) = x² o'suvchi: f(0) = 0, f(2) = 4. Ikkinchi bo'lakda f(x) = 8 − 2x kamayuvchi: x = 2 da 4, x = 5 da 8 − 10 = −2. Ikkala bo'lakning eng kichik qiymatlarini solishtiramiz: −2 soni 0 dan kichik. 6 — ikkinchi bo'lakda x ga ko'paytirishni unutib, 8 − 2 deb hisoblash natijasi. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolakli-funksiya",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#fe2f461d"
+    },
+    {
+      "q": "Taksida dastlabki 5 km uchun 15 000 so'm olinadi, keyingi har bir km uchun 2500 so'm qo'shiladi. Yo'l uzunligi [3; 12] km bo'lsa, eng katta to'lov qancha?",
+      "v": [
+        "30 000 so'm",
+        "45 000 so'm",
+        "15 000 so'm",
+        "32 500 so'm"
+      ],
+      "t": 3,
+      "izoh": "To'lov funksiyasi o'suvchi, demak eng katta qiymat kesmaning o'ng uchida, ya'ni 12 km da bo'ladi. Dastlabki 5 km uchun 15 000 so'm, qolgan 7 km uchun 7·2500 = 17 500 so'm to'lanadi. Jami 15 000 + 17 500 = 32 500 so'm. 30 000 — butun masofani 2500 so'mga ko'paytirish xatosi. Javob: 32 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolakli-funksiya",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#23f4d0c0"
+    },
+    {
+      "q": "y = |x² − 6x + 8| funksiya [0; 5] kesmada berilgan. U eng katta qiymatga qaysi nuqtada erishadi?",
+      "v": [
+        "x = 0",
+        "x = 2",
+        "x = 3",
+        "x = 5"
+      ],
+      "t": 0,
+      "izoh": "Modul ostidagi ifoda x = 2 va x = 4 da nolga aylanadi, parabola uchi esa x = 3 da. Tekshirish nuqtalari: y(0) = 8, y(2) = 0, y(3) = 1, y(4) = 0, y(5) = 3. Eng katta qiymat 8 bo'lib, u chap uchda erishiladi. Modul bilan ishlaganda uchlarni unutish eng ko'p uchraydigan xato. Javob: x = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolakli-funksiya",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#38c5d4e4"
+    },
+    {
+      "q": "Elektr uchun oyiga 100 kVt·soatgacha har biri 450 so'm, undan ortig'i uchun 700 so'mdan to'lanadi. Sarf [80; 150] kVt·soat bo'lsa, eng katta to'lov qancha?",
+      "v": [
+        "105 000 so'm",
+        "80 000 so'm",
+        "67 500 so'm",
+        "36 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "To'lov sarf bilan birga o'sadi, demak eng katta qiymat o'ng uchda, ya'ni 150 kVt·soatda. Dastlabki 100 birlik uchun 100·450 = 45 000 so'm, qolgan 50 birlik uchun 50·700 = 35 000 so'm. Jami 45 000 + 35 000 = 80 000 so'm. 105 000 — butun sarfni 700 so'mga ko'paytirish xatosi. Javob: 80 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolakli-funksiya",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#ea1efeb0"
+    },
+    {
+      "q": "Eritmadagi modda konsentratsiyasi K(t) = 20t/(t² + 4) g/l qonuniyat bilan o'zgaradi. t ∈ [0; 5] soatda eng yuqori konsentratsiya qancha bo'ladi?",
+      "v": [
+        "4 g/l",
+        "0 g/l",
+        "10 g/l",
+        "5 g/l"
+      ],
+      "t": 3,
+      "izoh": "Kasrning hosilasi K'(t) = 20(4 − t²)/(t² + 4)² bo'lib, u t = 2 soatda nolga aylanadi. K(0) = 0, K(2) = 40/8 = 5, K(5) = 100/29 ≈ 3,45 g/l. Eng yuqori konsentratsiya 5 g/l. 10 — maxrajni hisobga olmasdan suratdagi 20 ni ikkiga bo'lish xatosi. Javob: 5 g/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konsentratsiya-aralashma",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#1805fc63"
+    },
+    {
+      "q": "Dorining qondagi konsentratsiyasi K(t) = 6t − t² mg/l bo'lib, t ∈ [0; 5] soat oralig'ida qaraladi. Eng yuqori konsentratsiyani toping.",
+      "v": [
+        "9 mg/l",
+        "5 mg/l",
+        "6 mg/l",
+        "18 mg/l"
+      ],
+      "t": 0,
+      "izoh": "K'(t) = 6 − 2t = 0 dan t = 3 soat chiqadi va u kesmada yotadi. K(0) = 0, K(3) = 18 − 9 = 9, K(5) = 30 − 25 = 5 mg/l. Eng yuqori konsentratsiya 9 mg/l. 18 — kvadratni ayirishni unutish natijasi, 5 esa o'ng uchdagi qiymat. Javob: 9 mg/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konsentratsiya-aralashma",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#78bac356"
+    },
+    {
+      "q": "Basseyndagi xlor miqdori X(t) = 40 + 12t − 2t² gramm qonuniyat bilan o'zgaradi. t ∈ [0; 8] soatda eng katta va eng kichik miqdorlar farqi qancha?",
+      "v": [
+        "18 g",
+        "32 g",
+        "50 g",
+        "66 g"
+      ],
+      "t": 2,
+      "izoh": "X'(t) = 12 − 4t = 0 dan t = 3 soat chiqadi va u kesmada. X(0) = 40, X(3) = 40 + 36 − 18 = 58, X(8) = 40 + 96 − 128 = 8 gramm. Eng katta miqdor 58, eng kichigi 8, farq 50 g. 66 — farq o'rniga yig'indi, 32 esa kritik nuqtani tashlab ketish natijasi. Javob: 50 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konsentratsiya-aralashma",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#da87c28c"
+    },
+    {
+      "q": "Sut mahsulotidagi yog' ulushi P(x) = 3 + 0,4x − 0,02x² foizga teng, bu yerda x ∈ [0; 15] — qayta ishlash daqiqasi. Eng yuqori ulush qancha?",
+      "v": [
+        "4,5%",
+        "5%",
+        "7%",
+        "3%"
+      ],
+      "t": 1,
+      "izoh": "P'(x) = 0,4 − 0,04x = 0 dan x = 10 daqiqa chiqadi va u kesmada yotadi. P(0) = 3, P(10) = 3 + 4 − 2 = 5, P(15) = 3 + 6 − 4,5 = 4,5 foiz. Eng yuqori ulush 5 foiz. 7 — oxirgi hadni tashlab ketish natijasi, 4,5 esa o'ng uchdagi qiymat. Javob: 5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konsentratsiya-aralashma",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#8e2ef322"
+    },
+    {
+      "q": "f(x) = x³ − 6x² + 9x funksiyaning [0; a] kesmadagi eng katta qiymati 4 ga teng bo'lishi kerak. a ning eng katta qiymatini toping.",
+      "v": [
+        "3",
+        "4",
+        "1",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3), demak x = 1 da lokal maksimum f(1) = 4, x = 3 da esa lokal minimum f(3) = 0. a < 1 bo'lganda kesmadagi eng katta qiymat f(a) < 4 chiqadi. 1 ≤ a ≤ 4 bo'lganda eng katta qiymat aynan 4 bo'ladi: f(1) = 4 kesmaga kiradi, x = 3 dan keyin funksiya yana o'sadi, lekin f(4) = 64 − 96 + 36 = 4 dan oshmaydi. a > 4 bo'lsa f(a) > 4 chiqadi, masalan f(5) = 125 − 150 + 45 = 20. Demak a ning eng kattasi 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesma-chegarasi-ozgarishi",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#e46d9c6d"
+    },
+    {
+      "q": "x² − 6x + 5 funksiyaning [0; t] kesmadagi eng kichik qiymati −4 ga teng bo'lishi uchun t qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "t ≥ 5",
+        "0 < t ≤ 3",
+        "t = 6",
+        "t ≥ 3"
+      ],
+      "t": 3,
+      "izoh": "Hosila 2x − 6 = 0 dan x = 3 chiqadi va f(3) = 9 − 18 + 5 = −4, ya'ni funksiyaning umumiy eng kichik qiymati aynan −4. Bu qiymatga erishish uchun x = 3 nuqta kesmaga kirishi kerak, demak t ≥ 3. t < 3 bo'lsa funksiya kesmada kamayuvchi bo'lib, eng kichik qiymat −4 dan katta chiqadi. Javob: t ≥ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesma-chegarasi-ozgarishi",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#f7bd6c15"
+    },
+    {
+      "q": "4x − x² funksiyaning [1; m] kesmadagi eng katta qiymati 4 ga teng bo'lishi uchun m ning eng kichik qiymati qancha?",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Hosila 4 − 2x = 0 dan x = 2 chiqadi va f(2) = 8 − 4 = 4, ya'ni funksiyaning umumiy eng katta qiymati 4. Kesmada bu qiymatga erishish uchun x = 2 kesma ichiga tushishi kerak, demak m ≥ 2 va eng kichigi 2. m = 1 bo'lsa kesma nuqtaga aylanib, qiymat f(1) = 3 bo'lib qoladi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesma-chegarasi-ozgarishi",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#90388ac6"
+    },
+    {
+      "q": "f(x) = x² − 4x + 1 funksiyaning [0; 3] kesmadagi eng kichik qiymati bilan [3; 6] kesmadagi eng kichik qiymati yig'indisini toping.",
+      "v": [
+        "−1",
+        "1",
+        "−5",
+        "−3"
+      ],
+      "t": 2,
+      "izoh": "Parabola uchi x = 2 nuqtada. Birinchi kesmada uch ichkarida yotadi: f(2) = 4 − 8 + 1 = −3. Ikkinchi kesmada uch tashqarida qoladi, funksiya o'suvchi bo'ladi va eng kichik qiymat chap uchda: f(3) = 9 − 12 + 1 = −2. Yig'indi −3 + (−2) = −5. −1 — yig'indi o'rniga ayirma hisoblash natijasi. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesma-chegarasi-ozgarishi",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#eaac202f"
+    },
+    {
+      "q": "f(x) = x² − 4x + 3 funksiyaning [0; 5] kesmadagi eng katta qiymati M, eng kichigi esa m. M·m ko'paytmani toping.",
+      "v": [
+        "−8",
+        "8",
+        "7",
+        "−1"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 2x − 4 = 0 dan x = 2 chiqadi va u kesmada. f(0) = 3, f(2) = 4 − 8 + 3 = −1, f(5) = 25 − 20 + 3 = 8. Demak M = 8, m = −1 va M·m = 8·(−1) = −8. 7 — ko'paytma o'rniga yig'indi hisoblash natijasi. Javob: −8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kombinatsiya-M-va-m",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#db3404b1"
+    },
+    {
+      "q": "f(x) = x³ − 3x² − 9x + 1 funksiyaning [−2; 5] kesmadagi eng katta qiymati M va eng kichigi m bo'lsa, 2M + m ifodani hisoblang.",
+      "v": [
+        "−20",
+        "−14",
+        "12",
+        "−26"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 3x² − 6x − 9 = 3(x − 3)(x + 1), kritik nuqtalar x = −1 va x = 3. f(−2) = −8 − 12 + 18 + 1 = −1, f(−1) = 6, f(3) = 27 − 27 − 27 + 1 = −26, f(5) = 125 − 75 − 45 + 1 = 6. Demak M = 6, m = −26 va 2M + m = 12 − 26 = −14. −20 — M ni ikkilantirishni unutish natijasi. Javob: −14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kombinatsiya-M-va-m",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#dd308db5"
+    },
+    {
+      "q": "Bir kunda havo harorati T(t) = 0,5t² − 6t + 28 gradus bilan ifodalanadi, bu yerda t ∈ [0; 12] — soat. Eng yuqori va eng past haroratlarning o'rta arifmetigini toping.",
+      "v": [
+        "18°",
+        "38°",
+        "9°",
+        "19°"
+      ],
+      "t": 3,
+      "izoh": "T'(t) = t − 6 = 0 dan t = 6 soat chiqadi va u kesmada yotadi. T(0) = 28, T(6) = 18 − 36 + 28 = 10, T(12) = 72 − 72 + 28 = 28 gradus. Eng yuqori harorat 28, eng past 10, o'rta arifmetigi (28 + 10) : 2 = 19 gradus. 38 — ikkiga bo'lishni unutish, 9 esa farqning yarmi. Javob: 19°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kombinatsiya-M-va-m",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#d46560bd"
+    },
+    {
+      "q": "f(x) = x⁴ − 8x² + 3 funksiyaning [−1; 3] kesmadagi eng katta qiymati M, eng kichigi m. M − 2m ifodani hisoblang.",
+      "v": [
+        "−14",
+        "25",
+        "38",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 4x³ − 16x = 4x(x − 2)(x + 2), kesmaga x = 0 va x = 2 tegishli. f(−1) = 1 − 8 + 3 = −4, f(0) = 3, f(2) = 16 − 32 + 3 = −13, f(3) = 81 − 72 + 3 = 12. Demak M = 12, m = −13 va M − 2m = 12 + 26 = 38. −14 — ishorani chalkashtirib 12 − 26 deb hisoblash natijasi. Javob: 38.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kombinatsiya-M-va-m",
+      "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng#a18e78d9"
+    }
+  ]
+}

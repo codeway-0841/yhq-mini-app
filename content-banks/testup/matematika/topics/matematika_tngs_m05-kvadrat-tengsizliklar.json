@@ -1,0 +1,1609 @@
+{
+  "nom": "Kvadrat tengsizliklar",
+  "bolim": "Tengsizliklar",
+  "blok": "tngs",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "x² − 7x + 12 < 0 tengsizlikning barcha yechimlaridan iborat to'plamni ko'rsating.",
+      "v": [
+        "(−∞; 3) ∪ (4; +∞)",
+        "[3; 4]",
+        "(3; 4)",
+        "(−4; −3)"
+      ],
+      "t": 2,
+      "izoh": "Avval x² − 7x + 12 = 0 tenglama yechiladi: D = 49 − 48 = 1, ildizlari x₁ = 3 va x₂ = 4. Bosh koeffitsient musbat, demak parabola tarmoqlari yuqoriga qaragan va ifoda faqat ildizlar orasida manfiy bo'ladi. Tengsizlik qat'iy, shuning uchun chegaralar kirmaydi. Javob: (3; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-oraliq-yechim",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#fdda4291"
+    },
+    {
+      "q": "2x² − 11x + 5 ≤ 0 tengsizlikni yechib, yechimlar to'plamini tanlang.",
+      "v": [
+        "[0,5; 5]",
+        "(0,5; 5)",
+        "[−5; −0,5]",
+        "(−∞; 0,5] ∪ [5; +∞)"
+      ],
+      "t": 0,
+      "izoh": "2x² − 11x + 5 = 0 tenglamada D = 121 − 40 = 81, √81 = 9. Ildizlar x = (11 ± 9)/4 formuladan x₁ = 0,5 va x₂ = 5 bo'ladi. a = 2 musbat bo'lgani uchun ifoda ildizlar orasida manfiy. Tengsizlik qat'iy emas, shuning uchun ildizlar ham yechimga kiradi. Javob: [0,5; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-oraliq-yechim",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#d2c2cf55"
+    },
+    {
+      "q": "x² < 5x + 24 tengsizlikni qanoatlantiruvchi x larning to'plamini toping.",
+      "v": [
+        "(−8; 3)",
+        "(−∞; −3) ∪ (8; +∞)",
+        "[−3; 8]",
+        "(−3; 8)"
+      ],
+      "t": 3,
+      "izoh": "Hamma hadni chap tomonga o'tkazamiz: x² − 5x − 24 < 0. Bunda D = 25 + 96 = 121 va √121 = 11, shuning uchun x₁ = (5 − 11)/2 = −3, x₂ = (5 + 11)/2 = 8. Parabola yuqoriga ochilgani uchun manfiy qiymatlar ildizlar orasida joylashadi. Javob: (−3; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-oraliq-yechim",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#5e1b7538"
+    },
+    {
+      "q": "3x² + 5x − 2 ≤ 0 tengsizlikning yechimini oraliq ko'rinishida yozing.",
+      "v": [
+        "(−2; 1/3)",
+        "[−2; 1/3]",
+        "[−1/3; 2]",
+        "(−∞; −2] ∪ [1/3; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Diskriminant D = 25 + 24 = 49, √49 = 7. Ildizlar x = (−5 ± 7)/6 formuladan x₁ = −2 va x₂ = 1/3 bo'ladi. a = 3 musbat, demak ifoda ildizlar orasida manfiy yoki nolga teng. Chegaralar qat'iy bo'lmagani uchun kvadrat qavsda yoziladi. Javob: [−2; 1/3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-oraliq-yechim",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#04a112e7"
+    },
+    {
+      "q": "x² − 6x − 27 > 0 tengsizlik qaysi x larda bajariladi?",
+      "v": [
+        "(−3; 9)",
+        "(−∞; −3) ∪ (9; +∞)",
+        "(−∞; −9) ∪ (3; +∞)",
+        "(−∞; 3) ∪ (9; +∞)"
+      ],
+      "t": 1,
+      "izoh": "x² − 6x − 27 = 0 tenglamada D = 36 + 108 = 144 va √144 = 12. Ildizlar x₁ = (6 − 12)/2 = −3, x₂ = (6 + 12)/2 = 9. Tarmoqlari yuqoriga qaragan parabola ildizlardan tashqarida musbat qiymat oladi. Javob: (−∞; −3) ∪ (9; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-oraliq-yechim",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#f107c048"
+    },
+    {
+      "q": "4x² − 4x − 15 ≥ 0 tengsizlikning yechimlar to'plamini aniqlang.",
+      "v": [
+        "[−1,5; 2,5]",
+        "(−∞; −2,5] ∪ [1,5; +∞)",
+        "(−∞; −1,5) ∪ (2,5; +∞)",
+        "(−∞; −1,5] ∪ [2,5; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Diskriminant D = 16 + 240 = 256, √256 = 16. Ildizlar x = (4 ± 16)/8 dan x₁ = −1,5 va x₂ = 2,5 chiqadi. Bosh koeffitsient musbat, shuning uchun ifoda ildizlardan tashqarida nomanfiy bo'ladi. Tengsizlik qat'iy emas, chegaralar kiritiladi. Javob: (−∞; −1,5] ∪ [2,5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-oraliq-yechim",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#b874fa67"
+    },
+    {
+      "q": "x² + 7x > 0 tengsizlikni ko'paytuvchiga ajratish yo'li bilan yeching.",
+      "v": [
+        "(−∞; −7) ∪ (0; +∞)",
+        "(−7; 0)",
+        "(−∞; 0) ∪ (7; +∞)",
+        "(0; 7)"
+      ],
+      "t": 0,
+      "izoh": "Umumiy ko'paytuvchini qavsdan chiqaramiz: x·(x + 7) > 0. Ifodaning nollari x = 0 va x = −7. Sonlar o'qida uchta oraliq hosil bo'ladi va ko'paytma ildizlardan tashqarida musbat bo'ladi. Javob: (−∞; −7) ∪ (0; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-oraliq-yechim",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#db961e43"
+    },
+    {
+      "q": "5x² ≥ 3x + 2 tengsizlikning yechimini oraliqlar birlashmasi shaklida ko'rsating.",
+      "v": [
+        "[−0,4; 1]",
+        "(−∞; −1] ∪ [0,4; +∞)",
+        "(−∞; −0,4] ∪ [1; +∞)",
+        "(−∞; −0,4) ∪ (1; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlikni 5x² − 3x − 2 ≥ 0 ko'rinishiga keltiramiz. D = 9 + 40 = 49, √49 = 7 bo'lgani uchun x = (3 ± 7)/10, ya'ni x₁ = −0,4 va x₂ = 1. Parabola yuqoriga ochilgan, demak yechim ildizlardan tashqarida va chegaralar bilan birga olinadi. Javob: (−∞; −0,4] ∪ [1; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-oraliq-yechim",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#e4993f1b"
+    },
+    {
+      "q": "−x² + 4x + 5 > 0 tengsizlikni yeching. Bosh koeffitsient manfiy ekaniga alohida e'tibor bering.",
+      "v": [
+        "(−∞; −1) ∪ (5; +∞)",
+        "(−5; 1)",
+        "[−1; 5]",
+        "(−1; 5)"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomonni −1 ga ko'paytiramiz va tengsizlik ishorasini teskarisiga o'zgartiramiz: x² − 4x − 5 < 0. Bu tenglamaning ildizlari x₁ = −1 va x₂ = 5. Endi bosh koeffitsient musbat, shuning uchun yechim ildizlar orasida joylashadi. Javob: (−1; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-bosh-koeffitsient",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#b5742f8d"
+    },
+    {
+      "q": "−2x² + 7x − 3 ≤ 0 tengsizlikning yechimlar to'plamini toping.",
+      "v": [
+        "[0,5; 3]",
+        "(−∞; 0,5] ∪ [3; +∞)",
+        "(−∞; 0,5) ∪ (3; +∞)",
+        "[−3; −0,5]"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni −1 ga ko'paytirib, ishorani almashtiramiz: 2x² − 7x + 3 ≥ 0. D = 49 − 24 = 25, ildizlar x₁ = 0,5 va x₂ = 3. Musbat bosh koeffitsientda ifoda ildizlardan tashqarida nomanfiy bo'ladi. Javob: (−∞; 0,5] ∪ [3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-bosh-koeffitsient",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#825fb346"
+    },
+    {
+      "q": "6 + x − x² ≥ 0 tengsizlik qanoatlantiriladigan x qiymatlarini aniqlang.",
+      "v": [
+        "(−∞; −2] ∪ [3; +∞)",
+        "[−3; 2]",
+        "[−2; 3]",
+        "(−2; 3)"
+      ],
+      "t": 2,
+      "izoh": "Hadlarni tartiblab −x² + x + 6 ≥ 0 ni olamiz, so'ng −1 ga ko'paytirib x² − x − 6 ≤ 0 ga o'tamiz. Ildizlar x₁ = −2 va x₂ = 3. Musbat bosh koeffitsientli parabola ildizlar orasida nomusbat qiymat oladi. Javob: [−2; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-bosh-koeffitsient",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#703bbc6f"
+    },
+    {
+      "q": "−3x² + 12x < 0 tengsizlikning yechimini ko'rsating.",
+      "v": [
+        "(−∞; 0) ∪ (4; +∞)",
+        "(0; 4)",
+        "(−∞; −4) ∪ (0; +∞)",
+        "(−4; 0)"
+      ],
+      "t": 0,
+      "izoh": "Ikkala tomonni −1 ga ko'paytiramiz: 3x² − 12x > 0, ya'ni 3x·(x − 4) > 0. Ifodaning nollari x = 0 va x = 4. Ko'paytma ildizlardan tashqarida musbat bo'lgani uchun yechim shu oraliqlardan iborat. Javob: (−∞; 0) ∪ (4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-bosh-koeffitsient",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#8b4bb06c"
+    },
+    {
+      "q": "x² − 10x + 25 > 0 tengsizlik qaysi haqiqiy sonlarda bajariladi?",
+      "v": [
+        "5 dan boshqa barcha haqiqiy sonlar",
+        "barcha haqiqiy sonlar",
+        "yechimi yo'q",
+        "faqat x = 5"
+      ],
+      "t": 0,
+      "izoh": "Chap tomon to'la kvadrat: x² − 10x + 25 = (x − 5)², chunki D = 100 − 100 = 0. Kvadrat hech qachon manfiy bo'lmaydi va faqat x = 5 da nolga aylanadi. Qat'iy tengsizlik uchun nol qiymat yaramaydi, shuning uchun shu nuqta chiqarib tashlanadi. Javob: 5 dan boshqa barcha haqiqiy sonlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diskriminant-nol-holati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#66e831f8"
+    },
+    {
+      "q": "4x² + 12x + 9 ≤ 0 tengsizlikning yechimlar to'plami nimadan iborat bo'ladi?",
+      "v": [
+        "yechimi yo'q",
+        "barcha haqiqiy sonlar",
+        "faqat x = −1,5",
+        "−1,5 dan boshqa barcha sonlar"
+      ],
+      "t": 2,
+      "izoh": "Chap tomonni yig'ib qo'yamiz: 4x² + 12x + 9 = (2x + 3)². Kvadrat nomanfiy, shuning uchun tengsizlik faqat kvadrat nolga teng bo'lgan holda bajariladi. 2x + 3 = 0 tenglamadan x = −1,5 chiqadi. Javob: faqat x = −1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diskriminant-nol-holati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#585d85b9"
+    },
+    {
+      "q": "x² − 14x + 49 < 0 tengsizlikning yechimi qanday bo'ladi?",
+      "v": [
+        "{7}",
+        "∅",
+        "x ≠ 7",
+        "x ∈ R"
+      ],
+      "t": 1,
+      "izoh": "Ifoda (x − 7)² ko'rinishida yoziladi, chunki D = 196 − 196 = 0. Kvadrat qiymat hech qanday haqiqiy x da manfiy bo'la olmaydi. Demak tengsizlikni qanoatlantiruvchi birorta ham son yo'q. Javob: ∅.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diskriminant-nol-holati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#f92b94f3"
+    },
+    {
+      "q": "9x² − 30x + 25 ≥ 0 tengsizlik qanday x larda o'rinli bo'ladi?",
+      "v": [
+        "faqat x = 5/3",
+        "∅",
+        "x ≠ 5/3",
+        "x ∈ R"
+      ],
+      "t": 3,
+      "izoh": "Chap tomon (3x − 5)² to'la kvadratiga teng, chunki D = 900 − 900 = 0. Har qanday haqiqiy x da kvadrat nomanfiy bo'ladi. Tengsizlik qat'iy bo'lmagani uchun nol qiymat ham yaraydi. Javob: x ∈ R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diskriminant-nol-holati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#4367f451"
+    },
+    {
+      "q": "x² + 3x + 7 > 0 tengsizlikning yechimlar to'plamini diskriminant yordamida aniqlang.",
+      "v": [
+        "yechimi yo'q",
+        "faqat x > 0",
+        "barcha haqiqiy x lar",
+        "x ≠ −1,5"
+      ],
+      "t": 2,
+      "izoh": "D = 9 − 28 = −19 manfiy, demak parabola x o'qini kesmaydi. Bosh koeffitsient musbat bo'lgani uchun parabola butunlay x o'qidan yuqorida joylashadi. Shuning uchun ifoda har qanday x da musbat qiymat oladi. Javob: barcha haqiqiy x lar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diskriminant-manfiy-holati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#21d91f36"
+    },
+    {
+      "q": "2x² − 5x + 6 < 0 tengsizlikni qanoatlantiruvchi x mavjudmi, yechim qanday bo'ladi?",
+      "v": [
+        "∅",
+        "x ∈ R",
+        "faqat x = 1,25",
+        "(0; 1,25)"
+      ],
+      "t": 0,
+      "izoh": "D = 25 − 48 = −23 manfiy, shuning uchun ildiz yo'q. a = 2 musbat bo'lgani uchun ifoda barcha x da musbat qiymat oladi. Musbat ifoda esa hech qachon noldan kichik bo'lmaydi. Javob: ∅.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diskriminant-manfiy-holati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#2c592b53"
+    },
+    {
+      "q": "−x² + 4x − 9 < 0 tengsizlik qaysi x larda bajariladi? Avval diskriminantni tekshiring.",
+      "v": [
+        "∅",
+        "faqat x = 2",
+        "(0; 4)",
+        "barcha haqiqiy x lar"
+      ],
+      "t": 3,
+      "izoh": "D = 16 − 36 = −20 manfiy, demak ildiz yo'q. Bosh koeffitsient manfiy bo'lgani uchun parabola butunlay x o'qidan pastda yotadi. Shuning uchun ifoda har doim manfiy bo'ladi. Javob: barcha haqiqiy x lar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diskriminant-manfiy-holati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#2e21ad56"
+    },
+    {
+      "q": "Quyidagi tengsizliklardan qaysi biri hech qanday haqiqiy x da bajarilmaydi?",
+      "v": [
+        "x² + 2x − 5 < 0",
+        "x² + 2x + 5 < 0",
+        "−x² − x − 3 < 0",
+        "x² − 6x + 9 ≥ 0"
+      ],
+      "t": 1,
+      "izoh": "x² + 2x + 5 uchun D = 4 − 20 = −16 manfiy va a > 0, shuning uchun ifoda doim musbat va noldan kichik bo'la olmaydi. Qolganlarida yechim bor: x² + 2x − 5 da D = 24 > 0, x² − 6x + 9 = (x − 3)² barcha x da nomanfiy, −x² − x − 3 esa D = −11 va a < 0 bo'lgani uchun doim manfiy. Javob: x² + 2x + 5 < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diskriminant-manfiy-holati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#4a364013"
+    },
+    {
+      "q": "x² + 6x + m > 0 tengsizlik barcha haqiqiy x larda bajarilishi uchun m parametr qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "m > 9",
+        "m ≥ 9",
+        "m < 9",
+        "m > 36"
+      ],
+      "t": 0,
+      "izoh": "Bosh koeffitsient musbat, shuning uchun parabola butunlay x o'qidan yuqorida turishi kerak. Bu esa diskriminant manfiy bo'lishini talab qiladi: D = 36 − 4m < 0. Bundan 4m > 36, ya'ni m > 9. m = 9 da parabola o'qqa urinadi va nol qiymat paydo bo'ladi, shuning uchun tenglik olinmaydi. Javob: m > 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "barcha-x-da-bajarilish-parametri",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#e47144e4"
+    },
+    {
+      "q": "x² − 8x + (m + 3) ≥ 0 tengsizlik har qanday haqiqiy x uchun o'rinli bo'ladigan m qiymatlarini toping.",
+      "v": [
+        "m > 13",
+        "m ≤ 13",
+        "m ≥ 13",
+        "m ≥ 16"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlik qat'iy emas, shuning uchun parabola x o'qiga urinishi ham mumkin: D ≤ 0 shart yetarli. D = 64 − 4·(m + 3) ≤ 0 dan 64 ≤ 4m + 12 kelib chiqadi. Bundan 4m ≥ 52 va m ≥ 13. Javob: m ≥ 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "barcha-x-da-bajarilish-parametri",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#0e33ba91"
+    },
+    {
+      "q": "mx² + 4x + m > 0 tengsizlik barcha x larda bajarilishi uchun m qanday bo'lishi kerak?",
+      "v": [
+        "m > 0",
+        "m > 2",
+        "m < −2 yoki m > 2",
+        "m ≥ 2"
+      ],
+      "t": 1,
+      "izoh": "Avvalo m = 0 bo'lsa ifoda 4x + 0 chiziqli bo'lib qoladi va u barcha x da musbat bo'lolmaydi. Demak m ≠ 0 va parabola yuqoriga ochilishi uchun m > 0 bo'lishi shart. Ikkinchi shart D = 16 − 4m² < 0, ya'ni m² > 4. m > 0 bilan birga bu m > 2 ni beradi. Javob: m > 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "barcha-x-da-bajarilish-parametri",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#95aa797e"
+    },
+    {
+      "q": "(m − 1)x² + 2·(m − 1)x + 3 > 0 tengsizlik har qanday x da o'rinli bo'lishi uchun m qanday oraliqda yotadi?",
+      "v": [
+        "1 < m < 4",
+        "m < 1 yoki m > 4",
+        "1 ≤ m ≤ 4",
+        "1 ≤ m < 4"
+      ],
+      "t": 3,
+      "izoh": "Alohida holat: m = 1 bo'lsa ifoda 3 > 0 ga aylanadi va bu har doim to'g'ri, demak m = 1 yaraydi. Qolgan holda m − 1 > 0 va D < 0 kerak: 4·(m − 1)² − 12·(m − 1) < 0. Umumiy ko'paytuvchini chiqarsak 4·(m − 1)·(m − 4) < 0, bundan 1 < m < 4. Ikki holatni birlashtiramiz. Javob: 1 ≤ m < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "barcha-x-da-bajarilish-parametri",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#0f1baf4c"
+    },
+    {
+      "q": "x² + kx + 16 < 0 tengsizlikning bironta ham yechimi bo'lmasligi uchun k qanday qiymat olishi kerak?",
+      "v": [
+        "−8 < k < 8",
+        "k ≤ −8 yoki k ≥ 8",
+        "−8 ≤ k ≤ 8",
+        "k ≥ 8"
+      ],
+      "t": 2,
+      "izoh": "Yechim bo'lmasligi degani ifoda barcha x da nomanfiy bo'lishi kerak. Bosh koeffitsient musbat bo'lgani uchun shart D ≤ 0 ko'rinishini oladi: k² − 64 ≤ 0. Bundan k² ≤ 64, ya'ni −8 ≤ k ≤ 8. Chegaralarda D = 0 bo'lib, ifoda bitta nuqtada nolga teng, lekin manfiy emas. Javob: −8 ≤ k ≤ 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechimi-bosh-toplam-sharti",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#a05d4a56"
+    },
+    {
+      "q": "2x² − 6x + p ≤ 0 tengsizlik yechimga ega bo'lmasligi uchun p ning qiymatlarini aniqlang.",
+      "v": [
+        "p > 4,5",
+        "p ≥ 4,5",
+        "p < 4,5",
+        "p > 9"
+      ],
+      "t": 0,
+      "izoh": "Yechim bo'lmasligi uchun ifoda barcha x da qat'iy musbat bo'lishi kerak. a = 2 > 0, shuning uchun shart D < 0: 36 − 8p < 0. Bundan 8p > 36 va p > 4,5. p = 4,5 da ifoda bitta nuqtada nolga teng bo'lib qoladi, bu esa tengsizlikka yechim beradi. Javob: p > 4,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechimi-bosh-toplam-sharti",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#bbad8c16"
+    },
+    {
+      "q": "−x² + 10x − c > 0 tengsizlikning yechimlar to'plami bo'sh bo'lishi uchun c qanday bo'lsin?",
+      "v": [
+        "c > 25",
+        "c ≤ 25",
+        "c ≥ 50",
+        "c ≥ 25"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomonni −1 ga ko'paytiramiz: x² − 10x + c < 0. Bu tengsizlik yechimsiz bo'lishi uchun x² − 10x + c ifoda barcha x da nomanfiy bo'lishi kerak. Musbat bosh koeffitsientda shart D ≤ 0: 100 − 4c ≤ 0, bundan c ≥ 25. Javob: c ≥ 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechimi-bosh-toplam-sharti",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#5914be5f"
+    },
+    {
+      "q": "x² − 2ax + 9 ≤ 0 tengsizlik faqat bitta yechimga ega bo'lishi uchun a qanday qiymatlarni oladi?",
+      "v": [
+        "a = 3",
+        "a = 3 yoki a = −3",
+        "a = 9 yoki a = −9",
+        "−3 < a < 3"
+      ],
+      "t": 1,
+      "izoh": "Bosh koeffitsient musbat, shuning uchun yechim bitta nuqtadan iborat bo'lishi faqat parabola uchi x o'qida yotganda mumkin. Bu D = 0 shartini beradi: 4a² − 36 = 0. Bundan a² = 9 va a ikkita qiymat oladi. Manfiy ildizni tashlab yuborish tipik xato. Javob: a = 3 yoki a = −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimi-bosh-toplam-sharti",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#c315795e"
+    },
+    {
+      "q": "x² − 6x + 5 < 0 tengsizlikni to'la kvadrat ajratish usuli bilan yeching.",
+      "v": [
+        "(−5; −1)",
+        "(1; 5)",
+        "(−∞; 1) ∪ (5; +∞)",
+        "[1; 5]"
+      ],
+      "t": 1,
+      "izoh": "Chap tomonni to'la kvadratga keltiramiz: x² − 6x + 9 − 4 = (x − 3)² − 4. Tengsizlik (x − 3)² < 4 ko'rinishini oladi. Bundan −2 < x − 3 < 2, ya'ni 1 < x < 5. Javob: (1; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-kvadrat-usuli",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#8636237b"
+    },
+    {
+      "q": "x² + 4x − 12 ≥ 0 tengsizlikni to'la kvadrat yordamida yechib, javobni oraliqlar bilan yozing.",
+      "v": [
+        "[−6; 2]",
+        "(−∞; −2] ∪ [6; +∞)",
+        "(−∞; −6) ∪ (2; +∞)",
+        "(−∞; −6] ∪ [2; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Ifodani (x + 2)² − 16 ko'rinishida yozamiz, chunki x² + 4x + 4 = (x + 2)². Tengsizlik (x + 2)² ≥ 16 ga aylanadi, ya'ni x + 2 ≥ 4 yoki x + 2 ≤ −4. Bundan x ≥ 2 yoki x ≤ −6. Javob: (−∞; −6] ∪ [2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadrat-usuli",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#531d0ea2"
+    },
+    {
+      "q": "x² − 6x + 11 > k tengsizligi barcha haqiqiy x larda bajarilishi uchun k ning eng katta butun qiymati nechaga teng?",
+      "v": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Chap tomonni to'la kvadratga keltiramiz: x² − 6x + 11 = (x − 3)² + 2. Kvadrat nomanfiy, shuning uchun ifodaning eng kichik qiymati x = 3 da 2 ga teng. Tengsizlik qat'iy bo'lgani uchun k < 2 bo'lishi kerak, aks holda x = 3 da tenglik buziladi. Shu shartni qanoatlantiruvchi eng katta butun son 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tola-kvadrat-usuli",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#89a04e0a"
+    },
+    {
+      "q": "4x² + 4x + 1 ≥ 9 tengsizlikni to'la kvadrat orqali yeching va yechimni ko'rsating.",
+      "v": [
+        "[−2; 1]",
+        "(−∞; −1] ∪ [2; +∞)",
+        "(−∞; −2] ∪ [1; +∞)",
+        "(−∞; −2) ∪ (1; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Chap tomon (2x + 1)² to'la kvadratiga teng. Tengsizlik (2x + 1)² ≥ 9 ko'rinishini oladi, bundan 2x + 1 ≥ 3 yoki 2x + 1 ≤ −3. Birinchisidan x ≥ 1, ikkinchisidan x ≤ −2. Javob: (−∞; −2] ∪ [1; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadrat-usuli",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#15385ab5"
+    },
+    {
+      "q": "y = x² − 2x − 8 parabola x o'qini x = −2 va x = 4 nuqtalarda kesadi. Grafikka qarab y < 0 bo'ladigan x larni toping.",
+      "v": [
+        "(−∞; −2) ∪ (4; +∞)",
+        "[−2; 4]",
+        "(−4; 2)",
+        "(−2; 4)"
+      ],
+      "t": 3,
+      "izoh": "Bosh koeffitsient musbat bo'lgani uchun parabola tarmoqlari yuqoriga qaragan. Bunday parabola x o'qidan pastda faqat kesish nuqtalari orasida joylashadi. Demak y < 0 sharti −2 < x < 4 oralig'ida bajariladi. Chegara nuqtalarda y = 0, ular qat'iy tengsizlikka kirmaydi. Javob: (−2; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-grafigidan-oqish",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#704e92f6"
+    },
+    {
+      "q": "Tarmoqlari pastga qaragan parabola x o'qini x = −5 va x = 1 nuqtalarda kesadi. Funksiya qiymati musbat bo'ladigan oraliqni ko'rsating.",
+      "v": [
+        "(−∞; −5) ∪ (1; +∞)",
+        "(−5; 1)",
+        "(−1; 5)",
+        "[−5; 1]"
+      ],
+      "t": 1,
+      "izoh": "Tarmoqlari pastga qaragan parabola uchi yuqorida bo'ladi va grafik x o'qidan yuqoriga faqat ildizlar orasida chiqadi. Ildizlardan tashqarida esa funksiya manfiy qiymat oladi. Shuning uchun musbat qiymatlar oralig'i −5 dan 1 gacha. Javob: (−5; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-grafigidan-oqish",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#9c93edae"
+    },
+    {
+      "q": "y = 2x² + 3x − 5 funksiya grafigi x o'qidan yuqorida joylashgan oraliqni aniqlang.",
+      "v": [
+        "(−2,5; 1)",
+        "(−∞; −1) ∪ (2,5; +∞)",
+        "(−∞; −2,5) ∪ (1; +∞)",
+        "(−1; 2,5)"
+      ],
+      "t": 2,
+      "izoh": "Grafik x o'qidan yuqorida bo'lishi y > 0 degani, ya'ni 2x² + 3x − 5 > 0. D = 9 + 40 = 49 va √49 = 7, ildizlar x = (−3 ± 7)/4, ya'ni x₁ = −2,5 va x₂ = 1. Bosh koeffitsient musbat bo'lgani uchun funksiya ildizlardan tashqarida musbat. Javob: (−∞; −2,5) ∪ (1; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-grafigidan-oqish",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#d65e34e9"
+    },
+    {
+      "q": "Parabolaning uchi (2; −9) nuqtada va u x o'qini x = −1 hamda x = 5 nuqtalarda kesadi. y ≤ 0 shartni qanoatlantiruvchi x larni toping.",
+      "v": [
+        "[−1; 5]",
+        "(−1; 5)",
+        "(−∞; −1] ∪ [5; +∞)",
+        "[−5; 1]"
+      ],
+      "t": 0,
+      "izoh": "Uchi x o'qidan pastda joylashgani va grafik ikki nuqtada kesgani parabola tarmoqlari yuqoriga qaraganini ko'rsatadi. Bunday grafik ildizlar orasida x o'qidan pastda yotadi. Tengsizlik qat'iy emas, shuning uchun ildizlarning o'zi ham javobga kiradi. Javob: [−1; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-grafigidan-oqish",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#7202d53f"
+    },
+    {
+      "q": "x² − 5x − 14 < 0 tengsizlikning nechta butun yechimi bor?",
+      "v": [
+        "8",
+        "9",
+        "10",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "D = 25 + 56 = 81 va √81 = 9, ildizlar x₁ = −2, x₂ = 7. Yechim (−2; 7) oralig'i, chunki bosh koeffitsient musbat. Bu oraliqqa −1, 0, 1, 2, 3, 4, 5, 6 butun sonlari kiradi. Chegaralar qat'iy bo'lgani uchun −2 va 7 hisobga olinmaydi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#06dc9e1c"
+    },
+    {
+      "q": "x² ≤ 4x + 21 tengsizlikni qanoatlantiruvchi butun sonlar nechta?",
+      "v": [
+        "10",
+        "9",
+        "11",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlikni x² − 4x − 21 ≤ 0 ko'rinishiga keltiramiz. D = 16 + 84 = 100, √100 = 10, ildizlar x₁ = −3 va x₂ = 7. Yechim [−3; 7] kesmasi va tengsizlik qat'iy emas, chegaralar ham kiradi. Kesmadagi butun sonlar soni 7 − (−3) + 1 = 11. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#460ba3ba"
+    },
+    {
+      "q": "Anvar shunday butun son o'ylashi kerakki, u uchun x² − 11x + 24 < 0 sharti bajarilsin. Bunday butun sonlar nechta?",
+      "v": [
+        "5",
+        "6",
+        "3",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "D = 121 − 96 = 25, √25 = 5, ildizlar x = (11 ± 5)/2 dan x₁ = 3 va x₂ = 8. Bosh koeffitsient musbat, shuning uchun yechim (3; 8) oralig'i. Unga 4, 5, 6, 7 butun sonlari kiradi. Chegaralar qat'iy tengsizlikka kirmaydi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#9174334f"
+    },
+    {
+      "q": "−x² + 6x + 16 ≥ 0 tengsizlikning eng katta va eng kichik butun yechimlari yig'indisini toping.",
+      "v": [
+        "10",
+        "6",
+        "−6",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni −1 ga ko'paytirib x² − 6x − 16 ≤ 0 ni olamiz. D = 36 + 64 = 100, ildizlar x₁ = −2 va x₂ = 8, yechim [−2; 8] kesmasi. Eng katta butun yechim 8, eng kichigi −2 bo'ladi. Ularning yig'indisi 8 + (−2) = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#33adfaab"
+    },
+    {
+      "q": "x² − 4 > 0 va x² − 9 < 0 tengsizliklardan tuzilgan sistemani yeching.",
+      "v": [
+        "(2; 3)",
+        "(−3; −2) ∪ (2; 3)",
+        "(−3; 3)",
+        "(−2; 2)"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tengsizlikdan x² > 4, ya'ni x < −2 yoki x > 2. Ikkinchisidan x² < 9, ya'ni −3 < x < 3. Sistema yechimi shu ikki to'plamning kesishmasi bo'ladi. Manfiy tomondan −3 < x < −2, musbat tomondan 2 < x < 3 qismlar qoladi. Javob: (−3; −2) ∪ (2; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-tengsizliklar-sistemasi",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#c437546c"
+    },
+    {
+      "q": "x² − 7x + 10 < 0 va x² − 2x − 3 > 0 tengsizliklar sistemasining yechimini toping.",
+      "v": [
+        "(2; 5)",
+        "(2; 3)",
+        "(−1; 5)",
+        "(3; 5)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tengsizlikning ildizlari 2 va 5, bosh koeffitsient musbat, demak yechim (2; 5). Ikkinchisining ildizlari −1 va 3, yechim esa ildizlardan tashqarida: x < −1 yoki x > 3. Ikki to'plamni kesishtiramiz: (2; 5) oralig'idan faqat x > 3 qismi qoladi. Javob: (3; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-tengsizliklar-sistemasi",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#8e5f5026"
+    },
+    {
+      "q": "x² ≤ 16 va x² − 3x > 0 shartlari bir vaqtda bajariladigan x larni aniqlang.",
+      "v": [
+        "[−4; 0) ∪ (3; 4]",
+        "[−4; 4]",
+        "(0; 3)",
+        "(3; 4]"
+      ],
+      "t": 0,
+      "izoh": "Birinchi shartdan −4 ≤ x ≤ 4 kelib chiqadi. Ikkinchisini ko'paytuvchiga ajratamiz: x·(x − 3) > 0, bundan x < 0 yoki x > 3. Kesishmani olamiz: [−4; 4] kesmasidan x < 0 qismi [−4; 0) ni, x > 3 qismi esa (3; 4] ni beradi. Javob: [−4; 0) ∪ (3; 4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-tengsizliklar-sistemasi",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#68eb3aab"
+    },
+    {
+      "q": "x² − x − 20 ≤ 0 va x² − 4x − 5 > 0 tengsizliklar sistemasining yechimlar to'plamini yozing.",
+      "v": [
+        "(−4; −1)",
+        "[−4; 5]",
+        "[−4; −1)",
+        "(5; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tengsizlikning ildizlari −4 va 5, yechim [−4; 5] kesmasi. Ikkinchisining ildizlari −1 va 5, yechim x < −1 yoki x > 5. Kesishmada x > 5 qismi tushib qoladi, chunki [−4; 5] undan katta son bermaydi. Qolgani −4 ≤ x < −1 bo'ladi. Javob: [−4; −1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-tengsizliklar-sistemasi",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#1f1f61d4"
+    },
+    {
+      "q": "x² − 9 ≤ 0 va 2x + 1 > 3 shartlari birgalikda bajariladigan x oralig'ini toping.",
+      "v": [
+        "[1; 3]",
+        "(1; 3)",
+        "[−3; 3]",
+        "(1; 3]"
+      ],
+      "t": 3,
+      "izoh": "Kvadrat tengsizlikdan −3 ≤ x ≤ 3 kelib chiqadi. Chiziqli tengsizlikdan 2x > 2, ya'ni x > 1. Ikki shartning kesishmasi 1 < x ≤ 3 bo'ladi. Chap chegara qat'iy, o'ng chegara esa kesmaga kiradi. Javob: (1; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-va-chiziqli-sistema",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#a34f94f1"
+    },
+    {
+      "q": "x² − 6x + 8 < 0 va x − 3 ≥ 0 sistemasining yechimini ko'rsating.",
+      "v": [
+        "(3; 4)",
+        "[3; 4)",
+        "(2; 4)",
+        "[2; 3]"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat tengsizlikning ildizlari 2 va 4, bosh koeffitsient musbat, demak yechim (2; 4). Chiziqli shartdan x ≥ 3. Kesishmada chap chegara 3 ga ko'chadi va u qat'iy emas. O'ng chegara 4 esa qat'iy bo'lib qoladi. Javob: [3; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-va-chiziqli-sistema",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#5533809d"
+    },
+    {
+      "q": "x² + 2x − 15 < 0 va 3x + 4 ≤ 10 shartlarini bir vaqtda qanoatlantiruvchi x larni toping.",
+      "v": [
+        "(−5; 2)",
+        "(−5; 3)",
+        "(−5; 2]",
+        "[2; 3)"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat tengsizlikning ildizlari −5 va 3, yechim (−5; 3) oralig'i. Chiziqli shartdan 3x ≤ 6, ya'ni x ≤ 2. Kesishmada o'ng chegara 2 ga tushadi va u kesmaga kiradi. Chap chegara o'zgarmaydi va qat'iy qoladi. Javob: (−5; 2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-va-chiziqli-sistema",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#6594854e"
+    },
+    {
+      "q": "Malika o'ylagan butun son x uchun x² < 100 va 4x − 6 > 10 shartlari bajariladi. Shunday butun sonlar nechta?",
+      "v": [
+        "5",
+        "6",
+        "4",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "Birinchi shartdan −10 < x < 10 kelib chiqadi. Ikkinchisidan 4x > 16, ya'ni x > 4. Kesishma (4; 10) oralig'i bo'ladi. Unga 5, 6, 7, 8, 9 butun sonlari kiradi, ya'ni beshta son. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-va-chiziqli-sistema",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#4811b23b"
+    },
+    {
+      "q": "y = √(x² − 5x + 6) funksiyaning aniqlanish sohasini toping.",
+      "v": [
+        "[2; 3]",
+        "(−∞; 2) ∪ (3; +∞)",
+        "(−∞; 2] ∪ [3; +∞)",
+        "(2; 3)"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat ildiz ostidagi ifoda nomanfiy bo'lishi kerak: x² − 5x + 6 ≥ 0. Ildizlar 2 va 3, bosh koeffitsient musbat, demak ifoda ildizlardan tashqarida nomanfiy. Tengsizlik qat'iy emas, shuning uchun ildizlarning o'zi ham sohaga kiradi. Javob: (−∞; 2] ∪ [3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#73f2487e"
+    },
+    {
+      "q": "y = √(12 + 4x − x²) funksiya qaysi x larda qiymatga ega bo'ladi?",
+      "v": [
+        "[−2; 6]",
+        "(−∞; −2] ∪ [6; +∞)",
+        "[−6; 2]",
+        "(−2; 6)"
+      ],
+      "t": 0,
+      "izoh": "Shart 12 + 4x − x² ≥ 0 ko'rinishida yoziladi. Ikkala tomonni −1 ga ko'paytirib x² − 4x − 12 ≤ 0 ni olamiz va ishorani almashtiramiz. Ildizlar −2 va 6, musbat bosh koeffitsientda yechim ildizlar orasida. Javob: [−2; 6].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#9c4c7490"
+    },
+    {
+      "q": "y = 1/√(x² − 4x) ifodaning aniqlanish sohasini aniqlang.",
+      "v": [
+        "(−∞; 0] ∪ [4; +∞)",
+        "(−∞; 0) ∪ (4; +∞)",
+        "(0; 4)",
+        "[0; 4]"
+      ],
+      "t": 1,
+      "izoh": "Ildiz maxrajda turgani uchun ildiz osti ifodasi noldan qat'iy katta bo'lishi kerak: x² − 4x > 0. Ko'paytuvchiga ajratamiz: x·(x − 4) > 0, nollari 0 va 4. Ko'paytma ildizlardan tashqarida musbat bo'ladi. Nol qiymat maxrajni yo'qotgani uchun chegaralar olinmaydi. Javob: (−∞; 0) ∪ (4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#2789bf03"
+    },
+    {
+      "q": "Laboratoriya asbobi ishga tushgandan t soniya o'tgach √(20 + 8t − t²) formula bilan hisoblanadigan qiymatni ko'rsatadi. Asbob qaysi t oralig'ida ish bera oladi?",
+      "v": [
+        "[−2; 10]",
+        "[0; 20]",
+        "(0; 10)",
+        "[0; 10]"
+      ],
+      "t": 3,
+      "izoh": "Ildiz ostidagi ifoda nomanfiy bo'lishi shart: 20 + 8t − t² ≥ 0. Uni t² − 8t − 20 ≤ 0 ko'rinishiga keltiramiz, ildizlari −2 va 10, yechim [−2; 10]. Vaqt manfiy bo'lmaydi, shuning uchun t ≥ 0 shartini ham qo'shamiz. Javob: [0; 10].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#8569cd4e"
+    },
+    {
+      "q": "Toshkentdan chiqqan avtobus v km/soat tezlik bilan harakatlanadi. Ishlab chiqaruvchi dvigatel uchun tavsiya etgan rejim v² − 130v + 3600 < 0 shart bilan beriladi. Tavsiya etilgan tezliklar oralig'ini toping.",
+      "v": [
+        "(40; 90)",
+        "(−∞; 40) ∪ (90; +∞)",
+        "(40; 130)",
+        "[40; 90]"
+      ],
+      "t": 0,
+      "izoh": "Diskriminant D = 16900 − 14400 = 2500 va √2500 = 50. Ildizlar v = (130 ± 50)/2 dan v₁ = 40 va v₂ = 90 chiqadi. Bosh koeffitsient musbat, shuning uchun ifoda faqat ildizlar orasida manfiy bo'ladi. Javob: (40; 90).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-harakat-tezlik",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#b9e57b7c"
+    },
+    {
+      "q": "Poyezd tormozlangandan keyin to'xtaguncha 15 soniya harakatlanadi va shu vaqt ichida t soniyada s = 30t − t² metr masofani bosib o'tadi. Bosib o'tilgan masofa 200 metrdan ortiq bo'ladigan vaqt oralig'ini toping.",
+      "v": [
+        "(10; 20)",
+        "(0; 10)",
+        "(10; 15]",
+        "[10; 15]"
+      ],
+      "t": 2,
+      "izoh": "Shartni tengsizlik ko'rinishida yozamiz: 30t − t² > 200, ya'ni t² − 30t + 200 < 0. Diskriminant D = 900 − 800 = 100 va √100 = 10, ildizlar t = (30 ± 10)/2 dan 10 va 20 chiqadi. Musbat bosh koeffitsientda yechim ildizlar orasida yotadi, lekin formula faqat harakat davom etgan vaqtda, ya'ni t ≤ 15 da amal qiladi. Shuning uchun natijani (0; 15] oralig'i bilan kesishtiramiz: t = 15 da s = 450 − 225 = 225 va bu 200 dan katta, demak chekka nuqta yechimga kiradi. Javob: (10; 15].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harakat-tezlik",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#063bd253"
+    },
+    {
+      "q": "Sayyohlar guruhi kuniga x km yurishni rejalashtirmoqda. Yo'lboshchi x² − 34x + 240 ≤ 0 shart bajarilsa marshrut xavfsiz deb hisoblaydi. Xavfsiz kunlik masofalar oralig'i qanday?",
+      "v": [
+        "(10; 24)",
+        "[−24; −10]",
+        "(−∞; 10] ∪ [24; +∞)",
+        "[10; 24]"
+      ],
+      "t": 3,
+      "izoh": "Diskriminant D = 1156 − 960 = 196 va √196 = 14. Ildizlar x = (34 ± 14)/2 dan x₁ = 10, x₂ = 24. Bosh koeffitsient musbat bo'lgani uchun ifoda ildizlar orasida nomusbat. Tengsizlik qat'iy emas, chegaralar ham xavfsiz masofa hisoblanadi. Javob: [10; 24].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-harakat-tezlik",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#3a56df8f"
+    },
+    {
+      "q": "Ikki shahar orasidagi 240 km yo'lni avtomobil v km/soat tezlikda bosib o'tadi. Yoqilg'i tejash sharti v² − 110v + 3000 < 0 ko'rinishida berilgan. Tejamkor tezliklar oralig'ini aniqlang.",
+      "v": [
+        "(60; 110)",
+        "(50; 60)",
+        "(0; 50)",
+        "[50; 60]"
+      ],
+      "t": 1,
+      "izoh": "Diskriminant D = 12100 − 12000 = 100 va √100 = 10. Ildizlar v = (110 ± 10)/2 dan v₁ = 50 va v₂ = 60 bo'ladi. Ifoda musbat bosh koeffitsientli, shuning uchun u ildizlar orasida manfiy. Yo'l uzunligi shartga ta'sir qilmaydi, u ortiqcha ma'lumot. Javob: (50; 60).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harakat-tezlik",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#dba9f13c"
+    },
+    {
+      "q": "Do'kon bitta daftarni x ming so'mdan sotadi va kunlik foydasi −x² + 14x − 40 ming so'mga teng bo'ladi. Foyda musbat bo'ladigan narxlar oralig'ini toping.",
+      "v": [
+        "(0; 4)",
+        "(4; 10)",
+        "(10; 14)",
+        "[4; 10]"
+      ],
+      "t": 1,
+      "izoh": "Shart −x² + 14x − 40 > 0 ko'rinishida yoziladi. Ikkala tomonni −1 ga ko'paytiramiz va ishorani almashtiramiz: x² − 14x + 40 < 0. D = 196 − 160 = 36, ildizlar 4 va 10. Musbat bosh koeffitsientda yechim ildizlar orasida. Javob: (4; 10).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-narx-foyda",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#93e8acb7"
+    },
+    {
+      "q": "Korxona x ta mahsulot ishlab chiqarganda foydasi −2x² + 60x − 400 ming so'mni tashkil qiladi. Korxona zarar ko'rmasligi uchun x qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "(10; 20)",
+        "[10; 30]",
+        "[20; 30]",
+        "[10; 20]"
+      ],
+      "t": 3,
+      "izoh": "Zarar ko'rmaslik foydaning nomanfiy bo'lishini bildiradi: −2x² + 60x − 400 ≥ 0. Ikkala tomonni −2 ga bo'lamiz va ishorani almashtiramiz: x² − 30x + 200 ≤ 0. D = 900 − 800 = 100, ildizlar 10 va 20. Javob: [10; 20].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-narx-foyda",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#7fd169f6"
+    },
+    {
+      "q": "Konsert chiptasi x ming so'm bo'lganda tomoshabinlar soni 500 − 10x ga teng bo'ladi. Umumiy tushum 6000 ming so'mdan ko'p bo'lishi uchun narx qanday tanlanadi?",
+      "v": [
+        "[20; 30]",
+        "(0; 20)",
+        "(20; 30)",
+        "(30; 50)"
+      ],
+      "t": 2,
+      "izoh": "Tushum narx bilan tomoshabinlar sonining ko'paytmasi: x·(500 − 10x) > 6000. Qavsni ochamiz: 500x − 10x² > 6000, ikkala tomonni 10 ga bo'lamiz va 50x − x² > 600 ni olamiz. Uni x² − 50x + 600 < 0 ko'rinishiga keltiramiz, D = 2500 − 2400 = 100, ildizlar 20 va 30. Javob: (20; 30).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-narx-foyda",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#ccd62232"
+    },
+    {
+      "q": "Telefon g'ilofi x ming so'mdan sotilganda haftalik daromad −5x² + 120x − 495 ming so'm bo'ladi. Daromad 100 ming so'mdan kam bo'lmasligi uchun narx qanday oraliqda tanlanadi?",
+      "v": [
+        "[7; 17]",
+        "(7; 17)",
+        "[7; 24]",
+        "[−17; −7]"
+      ],
+      "t": 0,
+      "izoh": "Shartni yozamiz: −5x² + 120x − 495 ≥ 100, ya'ni −5x² + 120x − 595 ≥ 0. Ikkala tomonni −5 ga bo'lib ishorani almashtiramiz: x² − 24x + 119 ≤ 0. D = 576 − 476 = 100, ildizlar x = (24 ± 10)/2 dan 7 va 17. Javob: [7; 17].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-narx-foyda",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#c7251540"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi tomorqaning uzunligi enidan 4 m ortiq. Yuzasi 96 m² dan kichik bo'lishi uchun eni x qanday qiymatlar oralig'ida bo'lishi kerak?",
+      "v": [
+        "(−12; 8)",
+        "(0; 12)",
+        "(0; 8)",
+        "(8; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Uzunlik x + 4 ga teng, shuning uchun yuza x·(x + 4) bo'ladi va shart x² + 4x − 96 < 0 ko'rinishini oladi. D = 16 + 384 = 400, √400 = 20, ildizlar x = (−4 ± 20)/2 dan −12 va 8. Tengsizlikning yechimi (−12; 8), lekin en musbat bo'lishi kerak. Javob: (0; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-yuza-olcham",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#f0a59a19"
+    },
+    {
+      "q": "Kvadrat shaklidagi gilamning tomoni x m. Uning tomonini 2 m uzaytirilsa, yuzasi 49 m² dan oshadi. x ning eng kichik butun qiymati nechaga teng?",
+      "v": [
+        "6",
+        "5",
+        "7",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Yangi tomon x + 2, yangi yuza esa (x + 2)² bo'ladi va shart (x + 2)² > 49 ko'rinishida yoziladi. Tomon musbat bo'lgani uchun x + 2 > 7, ya'ni x > 5. Bu tengsizlikni qanoatlantiruvchi eng kichik butun son 6. x = 5 da yuza aynan 49 bo'lib qoladi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-yuza-olcham",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#73a75630"
+    },
+    {
+      "q": "Uzunligi 30 m bo'lgan to'siq bilan devorga tegib turgan to'rtburchak maydon o'raladi, shuning uchun uning yuzasi x·(30 − 2x) m² ga teng. Yuza 100 m² dan katta bo'ladigan x oralig'ini toping.",
+      "v": [
+        "(0; 5)",
+        "(10; 15)",
+        "[5; 10]",
+        "(5; 10)"
+      ],
+      "t": 3,
+      "izoh": "Shart x·(30 − 2x) > 100, qavsni ochsak 30x − 2x² > 100. Ikkala tomonni 2 ga bo'lamiz: 15x − x² > 50, so'ng x² − 15x + 50 < 0 ko'rinishiga keltiramiz. D = 225 − 200 = 25, ildizlar x = (15 ± 5)/2 dan 5 va 10. Javob: (5; 10).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-yuza-olcham",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#ffa8ad1d"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari x sm va (x + 7) sm ga teng. Yuzasi 30 sm² dan kichik bo'lishi uchun x qanday qiymatlar oladi?",
+      "v": [
+        "(0; 12)",
+        "(0; 5)",
+        "(−12; 5)",
+        "(5; +∞)"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri burchakli uchburchak yuzasi katetlar ko'paytmasining yarmiga teng: x·(x + 7)/2 < 30. Ikkala tomonni 2 ga ko'paytiramiz: x² + 7x − 60 < 0. D = 49 + 240 = 289, √289 = 17, ildizlar (−7 ± 17)/2 dan −12 va 5. Katet uzunligi musbat bo'lgani uchun manfiy qism tashlanadi. Javob: (0; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-yuza-olcham",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#9217fc17"
+    },
+    {
+      "q": "Koptok yuqoriga otilgan va t soniyadan keyin uning balandligi h = 20t − 5t² metrga teng. Koptok qaysi vaqt oralig'ida 15 metrdan baland bo'ladi?",
+      "v": [
+        "(1; 3)",
+        "(0; 1)",
+        "(3; 4)",
+        "[1; 3]"
+      ],
+      "t": 0,
+      "izoh": "Shartni yozamiz: 20t − 5t² > 15. Barcha hadni bir tomonga o'tkazib −5t² + 20t − 15 > 0 ni olamiz, so'ng −5 ga bo'lib ishorani almashtiramiz: t² − 4t + 3 < 0. Ildizlar 1 va 3, yechim ildizlar orasida. Javob: (1; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-jism-balandligi",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#4fc7a20c"
+    },
+    {
+      "q": "Raketa modelining balandligi h = 40t − 5t² metr formula bilan beriladi va uchish 0 dan 8 soniyagacha davom etadi. Balandlik 60 metrdan past bo'ladigan vaqt oraliqlarini toping.",
+      "v": [
+        "(2; 6)",
+        "[0; 2] ∪ [6; 8]",
+        "[0; 2) ∪ (6; 8]",
+        "(0; 2) ∪ (6; 8)"
+      ],
+      "t": 2,
+      "izoh": "Shart 40t − 5t² < 60 ko'rinishida yoziladi. Uni −5 ga bo'lib ishorani almashtiramiz: t² − 8t + 12 > 0, ildizlari 2 va 6. Demak t < 2 yoki t > 6. Uchish vaqti 0 dan 8 gacha bo'lgani uchun natijani shu kesma bilan kesishtiramiz, chekka nuqtalarda balandlik nolga teng va shart bajariladi. Javob: [0; 2) ∪ (6; 8].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-jism-balandligi",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#8f5f0b06"
+    },
+    {
+      "q": "Balandligi 45 m bo'lgan bino tomidan tosh qo'yib yuborildi va t soniyadan keyin uning yerdan balandligi 45 − 5t² metrga teng bo'ladi. Tosh yerdan 25 metrdan past bo'lgan vaqt oralig'ini aniqlang.",
+      "v": [
+        "(2; +∞)",
+        "(2; 3]",
+        "[0; 2)",
+        "(2; 3)"
+      ],
+      "t": 1,
+      "izoh": "Shart 45 − 5t² < 25 ko'rinishini oladi, bundan 5t² > 20 va t² > 4. Vaqt manfiy emas, shuning uchun t > 2. Tosh yerga tushganda balandlik nolga aylanadi: 45 − 5t² = 0 dan t = 3. Demak harakat t = 3 da tugaydi va u ham javobga kiradi. Javob: (2; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-jism-balandligi",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#b76e9d00"
+    },
+    {
+      "q": "Purkagichdan otilgan suv tomchisining balandligi h = 12t − 4t² metrga teng va u t = 0 dan t = 3 gacha havoda bo'ladi. Balandlik 8 metrdan kam bo'ladigan vaqt oraliqlarini toping.",
+      "v": [
+        "(1; 2)",
+        "[0; 1] ∪ [2; 3]",
+        "(0; 1) ∪ (2; 3)",
+        "[0; 1) ∪ (2; 3]"
+      ],
+      "t": 3,
+      "izoh": "Shart 12t − 4t² < 8, uni −4t² + 12t − 8 < 0 ko'rinishiga keltiramiz. −4 ga bo'lib ishorani almashtiramiz: t² − 3t + 2 > 0, ildizlari 1 va 2. Demak t < 1 yoki t > 2. Harakat [0; 3] kesmasida bo'lgani uchun chekkalarda balandlik nolga teng va shart bajariladi. Javob: [0; 1) ∪ (2; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-jism-balandligi",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#0bc945e9"
+    },
+    {
+      "q": "Dorixona bir martada x litr eritma tayyorlaydi va x² − 18x + 72 ≤ 0 bo'lganda tayyorlash tejamli hisoblanadi. Tejamli hajmlar oralig'ini toping.",
+      "v": [
+        "(6; 12)",
+        "[6; 18]",
+        "[12; 18]",
+        "[6; 12]"
+      ],
+      "t": 3,
+      "izoh": "Diskriminant D = 324 − 288 = 36 va √36 = 6. Ildizlar x = (18 ± 6)/2 dan x₁ = 6 va x₂ = 12 chiqadi. Bosh koeffitsient musbat, shuning uchun ifoda ildizlar orasida nomusbat bo'ladi. Tengsizlik qat'iy emas, chegara hajmlar ham tejamli. Javob: [6; 12].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ishlab-chiqarish-me-yori",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#b2e2cd14"
+    },
+    {
+      "q": "Sut zavodida bir soatda x tonna mahsulot ishlanadi va uskuna 2x² − 22x + 48 < 0 bo'lganda me'yorda ishlaydi. Me'yordagi unum oralig'ini aniqlang.",
+      "v": [
+        "[3; 8]",
+        "(3; 8)",
+        "(0; 3)",
+        "(8; 11)"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni 2 ga bo'lamiz: x² − 11x + 24 < 0. D = 121 − 96 = 25 va √25 = 5, ildizlar x = (11 ± 5)/2 dan 3 va 8. Musbat bosh koeffitsientda ifoda ildizlar orasida manfiy. Tengsizlik qat'iy, chegaralar kirmaydi. Javob: (3; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ishlab-chiqarish-me-yori",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#f6eebf78"
+    },
+    {
+      "q": "Issiqxonada harorat x °C bo'lganda o'simlik hosildorligi −x² + 44x − 448 birlikka teng bo'ladi. Hosildorlik musbat bo'ladigan harorat oralig'ini toping.",
+      "v": [
+        "(16; 28)",
+        "[16; 28]",
+        "(0; 16)",
+        "(28; 44)"
+      ],
+      "t": 0,
+      "izoh": "Shart −x² + 44x − 448 > 0, uni −1 ga ko'paytirib ishorani almashtiramiz: x² − 44x + 448 < 0. D = 1936 − 1792 = 144 va √144 = 12. Ildizlar x = (44 ± 12)/2 dan 16 va 28 chiqadi. Yechim ildizlar orasida joylashadi. Javob: (16; 28).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ishlab-chiqarish-me-yori",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#7a097a66"
+    },
+    {
+      "q": "Fermer x gektar yerga bug'doy ekadi va agromodel bo'yicha 3x² − 51x + 180 ifoda manfiy bo'lganda yer noto'g'ri taqsimlangan hisoblanadi. Noto'g'ri taqsimot qaysi x larda yuz beradi?",
+      "v": [
+        "(−12; −5)",
+        "[5; 12]",
+        "(5; 12)",
+        "(−∞; 5) ∪ (12; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonni 3 ga bo'lamiz: x² − 17x + 60 < 0. D = 289 − 240 = 49 va √49 = 7, ildizlar x = (17 ± 7)/2 dan 5 va 12. Bosh koeffitsient musbat, demak ifoda ildizlar orasida manfiy. Maydon musbat bo'lgani uchun oraliq to'liq mos keladi. Javob: (5; 12).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ishlab-chiqarish-me-yori",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#24dad853"
+    },
+    {
+      "q": "x² + (k − 2)x + 9 = 0 tenglama haqiqiy ildizga ega bo'lmasligi uchun k qanday oraliqda yotishi kerak?",
+      "v": [
+        "[−4; 8]",
+        "(−4; 8)",
+        "(−8; 4)",
+        "(−∞; −4) ∪ (8; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Haqiqiy ildiz bo'lmasligi sharti D < 0 ko'rinishida yoziladi: (k − 2)² − 36 < 0. Bundan (k − 2)² < 36, ya'ni −6 < k − 2 < 6. Har uch qismga 2 qo'shamiz va −4 < k < 8 ni olamiz. Chegaralarda D = 0 bo'lib, karrali ildiz paydo bo'ladi. Javob: (−4; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-ildiz-soni-sharti",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#e676945c"
+    },
+    {
+      "q": "y = x² − 2mx + (m + 6) parabola x o'qini kesmasligi uchun m ning qiymatlar to'plamini toping.",
+      "v": [
+        "[−2; 3]",
+        "(−3; 2)",
+        "(−∞; −2) ∪ (3; +∞)",
+        "(−2; 3)"
+      ],
+      "t": 3,
+      "izoh": "Parabola x o'qini kesmasligi tenglamaning haqiqiy ildizi yo'qligini bildiradi, ya'ni D < 0. Bu yerda D = 4m² − 4·(m + 6) < 0, ikkala tomonni 4 ga bo'lsak m² − m − 6 < 0. Ildizlar −2 va 3, yechim ular orasida. Javob: (−2; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-ildiz-soni-sharti",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#d32a8797"
+    },
+    {
+      "q": "2x² + 6x + (m − 1) = 0 tenglama ikkita har xil haqiqiy ildizga ega bo'lishi uchun m qanday bo'lishi kerak?",
+      "v": [
+        "m > 5,5",
+        "m ≤ 5,5",
+        "m < 5,5",
+        "m < 4,5"
+      ],
+      "t": 2,
+      "izoh": "Ikkita har xil ildiz sharti D > 0 ko'rinishida yoziladi: 36 − 8·(m − 1) > 0. Qavsni ochamiz: 36 − 8m + 8 > 0, ya'ni 44 > 8m. Bundan m < 5,5 kelib chiqadi. m = 5,5 da diskriminant nolga aylanadi va ildiz bitta bo'lib qoladi. Javob: m < 5,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-ildiz-soni-sharti",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#5b17dd8b"
+    },
+    {
+      "q": "y = −x² + 6x + c parabola to'liq x o'qidan pastda joylashishi uchun c qanday qiymat olishi kerak?",
+      "v": [
+        "c < −9",
+        "c > −9",
+        "c < 9",
+        "c ≤ −9"
+      ],
+      "t": 0,
+      "izoh": "Shart −x² + 6x + c < 0 barcha x da bajarilishini talab qiladi. Ikkala tomonni −1 ga ko'paytiramiz: x² − 6x − c > 0 har qanday x uchun o'rinli bo'lsin. Musbat bosh koeffitsientda bu D < 0 degani: 36 + 4c < 0, bundan c < −9. Tenglik holida parabola o'qqa urinib qolardi. Javob: c < −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-ildiz-soni-sharti",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#98becd34"
+    },
+    {
+      "q": "−3, −2, 5, 7 sonlaridan qaysi biri x² − 4x − 12 < 0 tengsizlikning yechimi bo'ladi?",
+      "v": [
+        "−3",
+        "−2",
+        "5",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Avval ildizlarni topamiz: x² − 4x − 12 = 0 dan x₁ = −2 va x₂ = 6, yechim (−2; 6) oralig'i. Endi berilgan sonlarni tekshiramiz: −3 oraliqdan chapda, −2 chegara nuqta va qat'iy tengsizlikka kirmaydi. 7 esa oraliqdan o'ngda qoladi, 5 soni esa oraliq ichida. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtani-yechimga-tekshirish",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#59999f70"
+    },
+    {
+      "q": "−2, −1, 2, 5 sonlaridan qaysi biri x² − 3x − 4 ≥ 0 tengsizlikni qanoatlantirmaydi?",
+      "v": [
+        "2",
+        "−2",
+        "−1",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Tenglamaning ildizlari −1 va 4, bosh koeffitsient musbat, demak yechim x ≤ −1 yoki x ≥ 4. Bu to'plamga −2 va 5 kiradi, −1 esa chegara bo'lgani uchun tengsizlik qat'iy emasligidan yaraydi. Faqat 2 soni (−1; 4) oralig'ida yotadi va shartni buzadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtani-yechimga-tekshirish",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#5343cc80"
+    },
+    {
+      "q": "x = −4 soni quyidagi tengsizliklardan qaysi birining yechimi bo'ladi?",
+      "v": [
+        "x² − x − 20 < 0",
+        "x² + 5x + 4 ≤ 0",
+        "x² + 3x − 4 > 0",
+        "x² − 16 > 0"
+      ],
+      "t": 1,
+      "izoh": "Har bir ifodaga x = −4 ni qo'yib chiqamiz. x² − x − 20 da 16 + 4 − 20 = 0 hosil bo'ladi, qat'iy tengsizlik buziladi. x² + 3x − 4 da 16 − 12 − 4 = 0 va x² − 16 da 16 − 16 = 0, ikkalasi ham qat'iy shartga mos kelmaydi. x² + 5x + 4 da esa 16 − 20 + 4 = 0 chiqadi va tengsizlik qat'iy bo'lmagani uchun nol yaraydi. Javob: x² + 5x + 4 ≤ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtani-yechimga-tekshirish",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#5944518c"
+    },
+    {
+      "q": "2, 4, 8, 11 sonlarining nechtasi x² − 12x + 32 ≤ 0 tengsizlikning yechimi bo'la oladi?",
+      "v": [
+        "1 ta",
+        "3 ta",
+        "4 ta",
+        "2 ta"
+      ],
+      "t": 3,
+      "izoh": "Diskriminant D = 144 − 128 = 16 va √16 = 4, ildizlar x = (12 ± 4)/2 dan 4 va 8. Yechim [4; 8] kesmasi, chunki tengsizlik qat'iy emas. Berilgan sonlardan 4 va 8 shu kesmaga kiradi, 2 chapda va 11 o'ngda qoladi. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtani-yechimga-tekshirish",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#d6f49f9e"
+    },
+    {
+      "q": "(x + 3)·(x − 5) < 0 tengsizlikni intervallar usuli yordamida yeching.",
+      "v": [
+        "(−3; 5)",
+        "(−∞; −3) ∪ (5; +∞)",
+        "(−5; 3)",
+        "[−3; 5]"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytmaning nollari x = −3 va x = 5, ular sonlar o'qini uchta oraliqqa ajratadi. Qavslarni ochsak x² − 2x − 15 hosil bo'ladi, bosh koeffitsient musbat. Shuning uchun ko'paytma faqat nollar orasida manfiy bo'ladi. Javob: (−3; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytuvchiga-ajratilgan-korinish",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#011bd1a7"
+    },
+    {
+      "q": "(2x − 1)·(x + 4) ≥ 0 tengsizlikning yechimlar to'plamini toping.",
+      "v": [
+        "[−4; 0,5]",
+        "(−∞; −0,5] ∪ [4; +∞)",
+        "(−∞; −4] ∪ [0,5; +∞)",
+        "(−∞; −4) ∪ (0,5; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytmaning nollari 2x − 1 = 0 dan x = 0,5 va x + 4 = 0 dan x = −4. Qavslar ochilganda bosh koeffitsient 2 bo'ladi, ya'ni musbat. Musbat bosh koeffitsientli ifoda nollardan tashqarida nomanfiy. Tengsizlik qat'iy emas, nollar ham javobga kiradi. Javob: (−∞; −4] ∪ [0,5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytuvchiga-ajratilgan-korinish",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#661bb593"
+    },
+    {
+      "q": "(7 − x)·(x + 2) > 0 ko'rinishdagi tengsizlikni yechib, javobni oraliq bilan ifodalang.",
+      "v": [
+        "(−∞; −2) ∪ (7; +∞)",
+        "(−2; 7)",
+        "(−7; 2)",
+        "[−2; 7]"
+      ],
+      "t": 1,
+      "izoh": "Ifodaning nollari x = 7 va x = −2. Qavslar ochilganda x² oldida manfiy koeffitsient qoladi, chunki (7 − x) da x manfiy ishora bilan turibdi. Tarmoqlari pastga qaragan parabola nollar orasida musbat qiymat oladi. Javob: (−2; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytuvchiga-ajratilgan-korinish",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#5624c8d2"
+    },
+    {
+      "q": "x·(x − 6) ≤ 0 tengsizlik qaysi x larda o'rinli bo'lishini aniqlang.",
+      "v": [
+        "(0; 6)",
+        "(−∞; 0] ∪ [6; +∞)",
+        "[−6; 0]",
+        "[0; 6]"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytmaning nollari x = 0 va x = 6. Qavs ochilganda x² − 6x hosil bo'ladi, bosh koeffitsient musbat. Bunday ifoda nollar orasida nomusbat qiymat oladi. Tengsizlik qat'iy emas, shuning uchun 0 va 6 ham yechimga kiradi. Javob: [0; 6].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytuvchiga-ajratilgan-korinish",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#9279ea3d"
+    },
+    {
+      "q": "Yechimlar to'plami (−4; 3) oralig'idan iborat bo'lgan kvadrat tengsizlikni ko'rsating.",
+      "v": [
+        "x² + x − 12 > 0",
+        "x² + x − 12 < 0",
+        "x² − x − 12 < 0",
+        "x² + 7x + 12 < 0"
+      ],
+      "t": 1,
+      "izoh": "Yechim oraliq ko'rinishida bo'lgani uchun bosh koeffitsient musbat va tengsizlik ishorasi kichik bo'lishi kerak. Ildizlari −4 va 3 bo'lgan kvadrat uchhad Viyet teoremasi bo'yicha yig'indi −1 va ko'paytma −12 beradi, ya'ni x² + x − 12. Boshqa variantlarda yo ishora, yo ildizlar mos kelmaydi. Javob: x² + x − 12 < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimdan-tengsizlikni-tiklash",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#b03b6ea3"
+    },
+    {
+      "q": "Bir kvadrat tengsizlikning yechimi (−∞; 2] ∪ [6; +∞) ekanligi ma'lum. Shu tengsizlikni tanlang.",
+      "v": [
+        "x² − 8x + 12 ≤ 0",
+        "x² + 8x + 12 ≥ 0",
+        "x² − 8x + 12 > 0",
+        "x² − 8x + 12 ≥ 0"
+      ],
+      "t": 3,
+      "izoh": "Yechim ildizlardan tashqarida joylashgani bosh koeffitsient musbat va ishora katta ekanini bildiradi. Chegaralar javobga kirgani uchun tengsizlik qat'iy emas. Ildizlari 2 va 6 bo'lgan uchhadda yig'indi 8, ko'paytma 12, ya'ni x² − 8x + 12. Javob: x² − 8x + 12 ≥ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimdan-tengsizlikni-tiklash",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#871ed898"
+    },
+    {
+      "q": "x² + bx + c ≤ 0 tengsizlikning yechimi [−1; 7] kesmasidan iborat bo'lsa, b va c koeffitsientlarni toping.",
+      "v": [
+        "b = −6, c = −7",
+        "b = 6, c = −7",
+        "b = −6, c = 7",
+        "b = −8, c = 7"
+      ],
+      "t": 0,
+      "izoh": "Kesmaning uchlari uchhadning ildizlari bo'ladi: x₁ = −1 va x₂ = 7. Viyet teoremasiga ko'ra ildizlar yig'indisi −b ga teng: −1 + 7 = 6, demak b = −6. Ildizlar ko'paytmasi c ga teng: (−1)·7 = −7, demak c = −7. Javob: b = −6, c = −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimdan-tengsizlikni-tiklash",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#453bd70b"
+    },
+    {
+      "q": "Kvadrat tengsizlikning yechimi faqat x = 4 nuqtadan iborat bo'lsa, u qanday ko'rinishga ega bo'ladi?",
+      "v": [
+        "(x − 4)² ≥ 0",
+        "(x − 4)² < 0",
+        "(x − 4)² ≤ 0",
+        "(x + 4)² ≤ 0"
+      ],
+      "t": 2,
+      "izoh": "Yechim bitta nuqta bo'lishi uchun ifoda to'la kvadrat bo'lishi va faqat shu nuqtada nolga aylanishi kerak. (x − 4)² ifodasi x = 4 da nolga teng, qolgan hamma joyda musbat. Shuning uchun (x − 4)² ≤ 0 faqat x = 4 da bajariladi. Qat'iy tengsizlikda ((x − 4)² < 0) yechim umuman bo'lmaydi, ≥ ishorasida esa barcha haqiqiy sonlar (x ∈ R) yechim bo'ladi, chunki kvadrat hech qachon manfiy emas. Javob: (x − 4)² ≤ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechimdan-tengsizlikni-tiklash",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#861b9b2b"
+    },
+    {
+      "q": "2x² − 13x + 15 < 0 tengsizlikning eng katta butun yechimini toping.",
+      "v": [
+        "5",
+        "3",
+        "4",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "Diskriminant D = 169 − 120 = 49 va √49 = 7. Ildizlar x = (13 ± 7)/4 dan x₁ = 1,5 va x₂ = 5. Yechim (1,5; 5) oralig'i, chegaralar qat'iy bo'lgani uchun 5 kirmaydi. Oraliqdagi eng katta butun son 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chekka-butun-yechim",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#645db7f5"
+    },
+    {
+      "q": "x² − 3x − 40 ≤ 0 tengsizlikning eng kichik butun yechimi nechaga teng?",
+      "v": [
+        "−5",
+        "−4",
+        "5",
+        "−8"
+      ],
+      "t": 0,
+      "izoh": "Diskriminant D = 9 + 160 = 169 va √169 = 13. Ildizlar x = (3 ± 13)/2 dan x₁ = −5 va x₂ = 8. Yechim [−5; 8] kesmasi, tengsizlik qat'iy emasligi uchun chegaralar ham kiradi. Kesmadagi eng kichik butun son −5. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chekka-butun-yechim",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#e89bc5d2"
+    },
+    {
+      "q": "Omborga x ta quti joylashtiriladi va joylashtirish sharti x² − 27x + 140 < 0 ko'rinishida berilgan. Omborga joylashtirish mumkin bo'lgan eng ko'p quti sonini toping.",
+      "v": [
+        "20",
+        "18",
+        "7",
+        "19"
+      ],
+      "t": 3,
+      "izoh": "Diskriminant D = 729 − 560 = 169 va √169 = 13. Ildizlar x = (27 ± 13)/2 dan x₁ = 7 va x₂ = 20 chiqadi. Yechim (7; 20) oralig'i va chegaralar qat'iy tengsizlikka kirmaydi. Shuning uchun eng ko'p quti soni 19 bo'ladi. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chekka-butun-yechim",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#af69fe9e"
+    },
+    {
+      "q": "Sinf jamg'armasiga har bir o'quvchi x ming so'mdan tashlaydi va kengash x² − 21x + 90 ≤ 0 shartini qo'ygan. Eng kam qancha ming so'm tashlash mumkin?",
+      "v": [
+        "7",
+        "6",
+        "5",
+        "15"
+      ],
+      "t": 1,
+      "izoh": "Diskriminant D = 441 − 360 = 81 va √81 = 9. Ildizlar x = (21 ± 9)/2 dan x₁ = 6 va x₂ = 15. Yechim [6; 15] kesmasi, tengsizlik qat'iy bo'lmagani uchun 6 ham yaraydi. Demak eng kam summa 6 ming so'm. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chekka-butun-yechim",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#b3d03bff"
+    },
+    {
+      "q": "x² − 4x − 5 < 0 va x² − 9 > 0 tengsizliklar yechimlarining kesishmasida nechta butun son bor?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "yechim yo'q",
+        "1 ta"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tengsizlikning ildizlari −1 va 5, yechim (−1; 5) oralig'i. Ikkinchisidan x² > 9, ya'ni x < −3 yoki x > 3. Kesishma (3; 5) oralig'i bo'ladi, chunki (−1; 5) da −3 dan kichik son yo'q. Bu oraliqqa faqat 4 butun soni kiradi. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechim-toplamlari-munosabati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#dcb7d534"
+    },
+    {
+      "q": "x² − 16 ≤ 0 va x² − 5x + 6 ≥ 0 tengsizliklarning umumiy yechimini toping.",
+      "v": [
+        "[−4; 4]",
+        "[−4; 2] ∪ [3; 4]",
+        "[2; 3]",
+        "[−4; 2]"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tengsizlikdan −4 ≤ x ≤ 4. Ikkinchisining ildizlari 2 va 3, yechim x ≤ 2 yoki x ≥ 3. Kesishmani olamiz: [−4; 4] kesmasidan x ≤ 2 qismi [−4; 2] ni, x ≥ 3 qismi esa [3; 4] ni beradi. Javob: [−4; 2] ∪ [3; 4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-toplamlari-munosabati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#1b85bf43"
+    },
+    {
+      "q": "A = {x : x² − 2x − 8 ≤ 0} va B = {x : x² − x − 6 > 0} to'plamlar berilgan. A ∩ B to'plamni aniqlang.",
+      "v": [
+        "[−2; 4]",
+        "(3; 4)",
+        "(3; 4]",
+        "[3; 4]"
+      ],
+      "t": 2,
+      "izoh": "A to'plam uchun ildizlar −2 va 4, demak A = [−2; 4]. B to'plam uchun ildizlar −2 va 3, yechim x < −2 yoki x > 3. Kesishmada x < −2 qismi hech narsa bermaydi, chunki A ning chap chegarasi −2. Qolgani 3 < x ≤ 4 bo'ladi. Javob: (3; 4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-toplamlari-munosabati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#e18d3999"
+    },
+    {
+      "q": "x² + x − 6 < 0 va x² − 2x − 3 < 0 tengsizliklar yechimlarining birlashmasini toping.",
+      "v": [
+        "(−3; 3)",
+        "(−1; 2)",
+        "(−3; 2)",
+        "(−1; 3)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tengsizlikning ildizlari −3 va 2, yechim (−3; 2). Ikkinchisining ildizlari −1 va 3, yechim (−1; 3). Bu ikki oraliq kesishadi, shuning uchun birlashma chap chegarasi eng kichik, o'ng chegarasi eng katta bo'lgan yagona oraliq bo'ladi. Javob: (−3; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-toplamlari-munosabati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#6fd22ef9"
+    },
+    {
+      "q": "Zavodda tayyorlangan podshipnikning diametri d mm bo'lib, sifat nazorati d² − 50d + 624 ≤ 0 shartini qo'yadi. Yaroqli diametrlar oralig'ini toping.",
+      "v": [
+        "[24; 26]",
+        "(24; 26)",
+        "[24; 50]",
+        "[26; 50]"
+      ],
+      "t": 0,
+      "izoh": "Diskriminant D = 2500 − 2496 = 4 va √4 = 2. Ildizlar d = (50 ± 2)/2 dan d₁ = 24 va d₂ = 26 chiqadi. Bosh koeffitsient musbat, shuning uchun ifoda ildizlar orasida nomusbat. Tengsizlik qat'iy emas, chegaraviy diametrlar ham yaroqli. Javob: [24; 26].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-sifat-nazorati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#91a92c86"
+    },
+    {
+      "q": "Sport maktabi yugurish yo'lakchasiga yangi qoplama yotqizmoqda. Qoplama qalinligi t mm bo'lishi va t² − 29t + 208 < 0 shartini qanoatlantirishi kerak. Ruxsat etilgan qalinliklar oralig'ini aniqlang.",
+      "v": [
+        "[13; 16]",
+        "(0; 13)",
+        "(13; 16)",
+        "(16; 29)"
+      ],
+      "t": 2,
+      "izoh": "Diskriminant D = 841 − 832 = 9 va √9 = 3. Ildizlar t = (29 ± 3)/2 dan t₁ = 13 va t₂ = 16. Musbat bosh koeffitsientli ifoda ildizlar orasida manfiy bo'ladi. Tengsizlik qat'iy, shuning uchun chegaraviy qalinliklar ruxsat etilmaydi. Javob: (13; 16).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-sifat-nazorati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#a2877d5e"
+    },
+    {
+      "q": "Maktabda test natijasi n ball bo'lgan o'quvchilar mukofotlanadi, bunda n² − 175n + 7500 ≤ 0 sharti bajariladi. Mukofotlanadigan eng past ballni toping.",
+      "v": [
+        "100",
+        "70",
+        "80",
+        "75"
+      ],
+      "t": 3,
+      "izoh": "Diskriminant D = 30625 − 30000 = 625 va √625 = 25. Ildizlar n = (175 ± 25)/2 dan n₁ = 75 va n₂ = 100 chiqadi. Yechim [75; 100] kesmasi, tengsizlik qat'iy emasligi uchun chegaralar kiradi. Demak eng past mukofot bali 75. Javob: 75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-sifat-nazorati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#cf0b73e7"
+    },
+    {
+      "q": "Sartaroshxona bir kunda x ta mijozga xizmat ko'rsatadi va rentabellik sharti −x² + 46x − 493 ≥ 0 ko'rinishida. Mumkin bo'lgan eng katta va eng kichik mijozlar sonining ayirmasini toping.",
+      "v": [
+        "46",
+        "12",
+        "17",
+        "29"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni −1 ga ko'paytirib ishorani almashtiramiz: x² − 46x + 493 ≤ 0. D = 2116 − 1972 = 144 va √144 = 12, ildizlar x = (46 ± 12)/2 dan 17 va 29. Yechim [17; 29] kesmasi, ya'ni eng kam 17 va eng ko'p 29 mijoz. Ayirma 29 − 17 = 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-sifat-nazorati",
+      "id": "matematika_tngs_m05-kvadrat-tengsizliklar#796161d9"
+    }
+  ]
+}

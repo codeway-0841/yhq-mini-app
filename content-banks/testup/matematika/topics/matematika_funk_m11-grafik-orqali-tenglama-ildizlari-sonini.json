@@ -1,0 +1,1609 @@
+{
+  "nom": "Grafik orqali tenglama ildizlari sonini parametrga bog'liq aniqlash",
+  "bolim": "Funksiyalar",
+  "blok": "funk",
+  "rasmiyBolim": 4,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "y = |x² − 6x + 5| funksiya grafigi bilan y = 3 gorizontal to'g'ri chizig'i nechta umumiy nuqtaga ega? Modul olinmagan parabolaning uchi (3; −4) nuqtada joylashgan.",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 3,
+      "izoh": "x² − 6x + 5 parabolaning uchi (3; −4) da, ya'ni uning eng kichik qiymati −4. Modul olinganda x o'qi ostidagi qism yuqoriga qaytariladi va grafikda balandligi 4 ga teng tepalik hosil bo'ladi. Gorizontal chiziq 0 bilan 4 orasida yotsa, grafikni to'rt joyda kesadi. 3 soni aynan shu oraliqda. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kvadrat-berilgan-a-ildizlar-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#dec50a67"
+    },
+    {
+      "q": "Nodira |x² − 4x − 5| = 9 tenglamani grafik usulda yechmoqda. U avval x² − 4x − 5 uchhadning eng kichik qiymati −9 ekanini topdi. Tenglama nechta ildizga ega bo'ladi?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "6 ta"
+      ],
+      "t": 1,
+      "izoh": "Uchhadning eng kichik qiymati −9 bo'lgani uchun y = |x² − 4x − 5| grafigidagi tepalikning balandligi 9 ga teng. y = 9 chizig'i aynan tepalik uchidan o'tadi. Bunda ikkita tashqi kesishish va tepalikning o'zidagi bitta nuqta olinadi. Haqiqatan, x² − 4x − 14 = 0 ikkita ildiz, x² − 4x + 4 = 0 esa bitta ildiz beradi. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kvadrat-berilgan-a-ildizlar-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#2890301b"
+    },
+    {
+      "q": "Uchhadning uchi (−1; −16) nuqtada bo'lsa, |x² + 2x − 15| = 20 tenglamaning ildizlari soni qanchaga teng bo'ladi?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "0 ta"
+      ],
+      "t": 0,
+      "izoh": "Modul olingandan keyin grafikdagi tepalikning balandligi 16 ga teng bo'ladi. y = 20 chizig'i tepalikdan yuqorida o'tadi, demak faqat ikkita tashqi shox bilan kesishadi. Tekshiramiz: x² + 2x − 35 = 0 dan x = 5 va x = −7, ikkinchi holda x² + 2x + 5 = 0 ning diskriminanti manfiy. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kvadrat-berilgan-a-ildizlar-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#1eb7846a"
+    },
+    {
+      "q": "Dilnoza y = |x² − 5x + 4| grafigi bilan y = −2 to'g'ri chizig'ining kesishish nuqtalarini daftarida izlamoqda. U jami nechta nuqta topadi?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "0 ta",
+        "4 ta"
+      ],
+      "t": 2,
+      "izoh": "Modul qiymati hech qachon manfiy bo'lmaydi, ya'ni |x² − 5x + 4| ≥ 0. Demak y = |f(x)| grafigi butunlay x o'qidan yuqorida yoki uning ustida yotadi. y = −2 chizig'i esa o'qdan pastda. Ikki chiziq umuman uchrashmaydi. Javob: 0 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kvadrat-berilgan-a-ildizlar-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#fb8aa65b"
+    },
+    {
+      "q": "|x² − 8x + 7| = a tenglama to'rtta har xil haqiqiy ildizga ega bo'lishi uchun a parametr qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "0 < a < 9",
+        "a > 9",
+        "a = 9",
+        "a < 9"
+      ],
+      "t": 0,
+      "izoh": "Uchhadning uchi x = 4 da, qiymati 16 − 32 + 7 = −9. Modul olingach tepalik balandligi 9 bo'ladi. To'rtta ildiz y = a chizig'i x o'qidan yuqorida, lekin tepalik uchidan pastda o'tganda hosil bo'ladi. Demak 0 < a < 9. Javob: 0 < a < 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kvadrat-tort-ildiz-oraligi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#83ca86a4"
+    },
+    {
+      "q": "Tenglama |x² + 6x + 5| = a to'rtta yechimga ega bo'ladigan barcha a qiymatlari to'plamini ko'rsating.",
+      "v": [
+        "a > 4",
+        "a = 4",
+        "0 < a < 4",
+        "−4 < a < 0"
+      ],
+      "t": 2,
+      "izoh": "x² + 6x + 5 ning uchi x = −3 da, qiymati 9 − 18 + 5 = −4. Modul tepaligining balandligi 4 ga teng. To'rt kesishish uchun gorizontal chiziq nol bilan tepalik orasida bo'lishi shart. Shuning uchun 0 < a < 4. Javob: 0 < a < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kvadrat-tort-ildiz-oraligi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#e6ea09c0"
+    },
+    {
+      "q": "Sardor y = |x² − 2x − 24| grafigini chizdi va unga gorizontal y = a chizig'ini qo'ydi. Ular to'rtta nuqtada kesishishi uchun a qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "a > 25",
+        "0 < a < 25",
+        "0 < a < 5",
+        "25 < a < 50"
+      ],
+      "t": 1,
+      "izoh": "Uch nuqtaning abssissasi x = 1, ordinatasi 1 − 2 − 24 = −25. Modul olingandan keyin tepalik 25 balandlikka ko'tariladi. y = a chizig'i 0 dan yuqori va 25 dan past bo'lsa, to'rtta kesishish bo'ladi. Javob: 0 < a < 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kvadrat-tort-ildiz-oraligi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#88ae6ce6"
+    },
+    {
+      "q": "Alisher |x² − 10x + 9| = a tenglama to'rtta har xil ildizga ega bo'lishi uchun a ni qanday tanlash kerakligini aniqlamoqchi. To'g'ri javobni belgilang.",
+      "v": [
+        "a > 16",
+        "0 < a < 4",
+        "−16 < a < 0",
+        "0 < a < 16"
+      ],
+      "t": 3,
+      "izoh": "Uchhadning uchi x = 5 da, u yerda qiymat 25 − 50 + 9 = −16 ga teng. Modul olingach tepalik balandligi 16 bo'ladi. To'rtta ildiz uchun a soni 0 dan katta va 16 dan kichik bo'lishi shart. Javob: 0 < a < 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kvadrat-tort-ildiz-oraligi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#b5d9b4de"
+    },
+    {
+      "q": "|x² − 6x + 8| = a tenglama aynan uchta har xil ildizga ega bo'ladigan a qiymatini toping.",
+      "v": [
+        "a = −1",
+        "a = 0",
+        "a = 1",
+        "a = 3"
+      ],
+      "t": 2,
+      "izoh": "Uchhadning uchi x = 3 da va qiymati 9 − 18 + 8 = −1. Modul olingandan keyin tepalikning balandligi 1 ga teng bo'ladi. Uchta ildiz faqat gorizontal chiziq tepalik uchidan o'tganda hosil bo'ladi. Demak a = 1. Javob: a = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kvadrat-uch-ildiz-qiymati",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#417428fd"
+    },
+    {
+      "q": "Qaysi a qiymatida y = |x² + 4x − 12| grafigi va y = a chizig'i aynan uchta umumiy nuqtaga ega bo'ladi?",
+      "v": [
+        "a = 16",
+        "a = −16",
+        "a = 12",
+        "a = 4"
+      ],
+      "t": 0,
+      "izoh": "Uch nuqtaning abssissasi x = −2, ordinatasi 4 − 8 − 12 = −16. Modul bu tepani 16 balandlikka ko'taradi. Uchta umumiy nuqta gorizontal chiziq aynan tepalik uchidan o'tganda paydo bo'ladi. Javob: a = 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kvadrat-uch-ildiz-qiymati",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#f5397f11"
+    },
+    {
+      "q": "Bekzod |x² − 2x − 8| = a tenglamada a ni o'zgartirib bordi va ildizlar soni to'rtdan ikkiga sakraydigan chegara qiymatni qidirdi. U qaysi sonni topadi?",
+      "v": [
+        "a = 8",
+        "a = −9",
+        "a = 1",
+        "a = 9"
+      ],
+      "t": 3,
+      "izoh": "Uchhadning uchi x = 1 da, qiymati 1 − 2 − 8 = −9. Modul olingach tepalik balandligi 9 ga teng bo'ladi. Chegara qiymatda gorizontal chiziq tepalik uchidan o'tadi va ildizlar soni uchta bo'lib, keyin ikkitaga tushadi. Javob: a = 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kvadrat-uch-ildiz-qiymati",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#0078a52a"
+    },
+    {
+      "q": "Tenglama |x² − 4x − 21| = a ning yechimlari soni aynan uchta bo'lsa, a nechaga teng?",
+      "v": [
+        "a = 25",
+        "a = 21",
+        "a = 5",
+        "a = −25"
+      ],
+      "t": 0,
+      "izoh": "Uchhadning uchi x = 2 da, u yerdagi qiymat 4 − 8 − 21 = −25. Modul olingandan keyin tepalikning balandligi 25 bo'ladi. Uchta yechim faqat a tepalik balandligiga teng bo'lganda chiqadi. Javob: a = 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kvadrat-uch-ildiz-qiymati",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#13203ed6"
+    },
+    {
+      "q": "|x² − 10x + 16| = a tenglama aynan ikkita har xil ildizga ega bo'lishi uchun a ning barcha qiymatlarini ko'rsating.",
+      "v": [
+        "a = 0 yoki a > 9",
+        "a > 9",
+        "0 < a < 9",
+        "a ≥ 9"
+      ],
+      "t": 0,
+      "izoh": "Uchhadning uchi x = 5 da, qiymati 25 − 50 + 16 = −9, demak modul tepaligi 9 balandlikda. Ikkita ildiz ikki xil holatda chiqadi: gorizontal chiziq x o'qining o'zi bo'lsa, ya'ni a = 0, yoki tepalikdan yuqorida o'tsa, ya'ni a > 9. Javob: a = 0 yoki a > 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kvadrat-ikki-ildiz-sharti",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#fd68fb73"
+    },
+    {
+      "q": "y = |x² + 2x − 3| grafigi bilan y = a chizig'i aynan ikkita nuqtada kesishadigan a qiymatlarini toping.",
+      "v": [
+        "a > 4",
+        "a = 0 yoki a > 4",
+        "a = 4",
+        "a ≥ 0"
+      ],
+      "t": 1,
+      "izoh": "Uchhadning uchi x = −1 da, qiymati 1 − 2 − 3 = −4. Modul olingach tepalik balandligi 4 ga teng. Ikkita kesishish a = 0 bo'lganda (chiziq x o'qi bo'ylab, faqat ildizlarda tegadi) va a > 4 bo'lganda (chiziq tepalikdan yuqorida) hosil bo'ladi. Javob: a = 0 yoki a > 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kvadrat-ikki-ildiz-sharti",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#b69220d6"
+    },
+    {
+      "q": "Tenglama |x² − 16x + 63| = a ikkitadan ortiq bo'lmagan, lekin nol bo'lmagan sondagi ildizga ega bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "0 < a < 1",
+        "a = 1",
+        "a = 0 yoki a > 1",
+        "a > 0"
+      ],
+      "t": 2,
+      "izoh": "Uchhadning uchi x = 8 da, qiymat 64 − 128 + 63 = −1, ya'ni modul tepaligi 1 balandlikda. 0 < a < 1 da to'rtta, a = 1 da uchta ildiz bo'ladi. Aynan ikkita ildiz qoladigan holatlar: a = 0 va a > 1. Javob: a = 0 yoki a > 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-kvadrat-ikki-ildiz-sharti",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#3daf0ddd"
+    },
+    {
+      "q": "Malika |x² − 6x − 16| = a tenglamada a ni shunday tanlamoqchiki, tenglama juft sondagi eng kam, ya'ni aynan ikkita ildizga ega bo'lsin. U qanday shart yozishi kerak?",
+      "v": [
+        "a > 25",
+        "a = 0",
+        "0 < a < 25",
+        "a = 0 yoki a > 25"
+      ],
+      "t": 3,
+      "izoh": "Uchhadning uchi x = 3 da, qiymati 9 − 18 − 16 = −25, modul tepaligi 25 balandlikda. Gorizontal chiziq tepalikdan yuqori o'tsa ikkita kesishish bo'ladi, ya'ni a > 25. Bundan tashqari a = 0 da chiziq ikkita ildiz nuqtasida tegadi. Ikkala holat birlashtiriladi. Javob: a = 0 yoki a > 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-kvadrat-ikki-ildiz-sharti",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#d6251f17"
+    },
+    {
+      "q": "|x² − 4x + 7| = a tenglama umuman yechimga ega bo'lmasligi uchun a ning qiymatlari qanday bo'lishi kerak? Uchhadning diskriminanti manfiy ekaniga e'tibor bering.",
+      "v": [
+        "a > 3",
+        "a < 3",
+        "a = 3",
+        "a ≤ 0"
+      ],
+      "t": 1,
+      "izoh": "D = 16 − 28 = −12 < 0, demak x² − 4x + 7 hamma joyda musbat va modul uni o'zgartirmaydi. Uchhadning eng kichik qiymati x = 2 da 4 − 8 + 7 = 3 ga teng. Gorizontal chiziq shu eng past nuqtadan pastda bo'lsa kesishish bo'lmaydi. Demak a < 3. Javob: a < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-diskriminant-parabola-va-chiziq",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#bf7b8b83"
+    },
+    {
+      "q": "y = |x² + 6x + 13| grafigi va y = a to'g'ri chizig'i faqat bitta umumiy nuqtaga ega bo'lsa, a nechaga teng bo'ladi?",
+      "v": [
+        "a = 13",
+        "a = 0",
+        "a = −4",
+        "a = 4"
+      ],
+      "t": 3,
+      "izoh": "D = 36 − 52 = −16 < 0, shuning uchun uchhad har doim musbat va modul grafikni o'zgartirmaydi. Eng past nuqta x = −3 da, qiymati 9 − 18 + 13 = 4. Gorizontal chiziq aynan shu nuqtadan o'tsa, yagona umumiy nuqta bo'ladi. Javob: a = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-diskriminant-parabola-va-chiziq",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#da8edec4"
+    },
+    {
+      "q": "|x² − 2x + 6| = a tenglamaning ikkita har xil ildizi bo'lishi uchun a qanday shartni qanoatlantirsin?",
+      "v": [
+        "a = 5",
+        "0 < a < 5",
+        "a > 5",
+        "a > 6"
+      ],
+      "t": 2,
+      "izoh": "Diskriminant 4 − 24 = −20 manfiy, demak parabola butunlay x o'qidan yuqorida va modul hech narsani o'zgartirmaydi. Uning eng kichik qiymati x = 1 da 1 − 2 + 6 = 5. Chiziq shu qiymatdan yuqorida o'tsa, parabolani ikki joyda kesadi. Javob: a > 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-diskriminant-parabola-va-chiziq",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#a3a36d95"
+    },
+    {
+      "q": "Umid |x² − 12x + 43| = a tenglama hech bo'lmaganda bitta yechimga ega bo'lishini xohlaydi. a ning eng kichik butun qiymati nechaga teng?",
+      "v": [
+        "7",
+        "6",
+        "0",
+        "43"
+      ],
+      "t": 0,
+      "izoh": "Diskriminant 144 − 172 = −28 manfiy, uchhad hamma joyda musbat. Eng past nuqta x = 6 da, qiymati 36 − 72 + 43 = 7 ga teng. Yechim bo'lishi uchun a shu eng past qiymatdan kichik bo'lmasligi kerak, ya'ni a ≥ 7. Eng kichik butun qiymat 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "manfiy-diskriminant-parabola-va-chiziq",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#a6ec089a"
+    },
+    {
+      "q": "y = |2x − 6| funksiya grafigi bilan y = a gorizontal to'g'ri chizig'i aynan ikkita nuqtada kesishishi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a > 0",
+        "a ≥ 0",
+        "a > 6",
+        "a ≠ 0"
+      ],
+      "t": 0,
+      "izoh": "y = |2x − 6| grafigi uchi (3; 0) nuqtada bo'lgan V shaklidagi siniq chiziq. Gorizontal chiziq uch nuqtadan yuqorida o'tsa, V ning ikkala shoxini kesadi. a = 0 da faqat bitta nuqta, a < 0 da esa umuman kesishish bo'lmaydi. Javob: a > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-modul-V-tahlil",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#b870994a"
+    },
+    {
+      "q": "Jasur |3x + 12| = a tenglamaning yagona ildizga ega bo'lishini xohlaydi. Buning uchun a qanday qiymat olishi kerak?",
+      "v": [
+        "a = 12",
+        "a = 4",
+        "a = 0",
+        "a = −4"
+      ],
+      "t": 2,
+      "izoh": "y = |3x + 12| grafigi uchi (−4; 0) nuqtada bo'lgan V chiziq. Gorizontal chiziq V ning aynan uchidan o'tgandagina bitta umumiy nuqta bo'ladi. Uch nuqtaning ordinatasi nolga teng. Demak a = 0, bunda x = −4. Javob: a = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-modul-V-tahlil",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#d76e7bb4"
+    },
+    {
+      "q": "y = |x − 7| + 2 siniq chiziq bilan y = a gorizontal chizig'i faqat bitta umumiy nuqtaga ega bo'lishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "a = 7",
+        "a = 0",
+        "a = 9",
+        "a = 2"
+      ],
+      "t": 3,
+      "izoh": "|x − 7| ning eng kichik qiymati nolga teng, u x = 7 da erishiladi. Unga 2 qo'shilgani uchun butun grafik ikki birlik yuqoriga ko'tariladi va uch nuqta (7; 2) bo'ladi. Yagona umumiy nuqta gorizontal chiziq aynan uchdan o'tganda bo'ladi. Javob: a = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-modul-V-tahlil",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#fe583ccc"
+    },
+    {
+      "q": "Bekzod y = |5 − x| grafigini chizdi va unga y = 4 to'g'ri chizig'ini qo'shdi. Hosil bo'lgan kesishish nuqtalari abssissalarining yig'indisi nechaga teng?",
+      "v": [
+        "4",
+        "10",
+        "5",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "|5 − x| = 4 tenglamadan 5 − x = 4 yoki 5 − x = −4 kelib chiqadi. Birinchisidan x = 1, ikkinchisidan x = 9. Ikkala nuqta ham V chizig'ining shoxlarida yotadi. Abssissalar yig'indisi 1 + 9 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-modul-V-tahlil",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#4a360ed5"
+    },
+    {
+      "q": "||x| − 3| = 1 tenglama nechta har xil ildizga ega? Bu funksiyaning grafigi uch marta sinadigan W shaklidagi siniq chiziqdan iborat.",
+      "v": [
+        "ikkita",
+        "uchta",
+        "to'rtta",
+        "oltita"
+      ],
+      "t": 2,
+      "izoh": "||x| − 3| = 1 dan |x| − 3 = 1 yoki |x| − 3 = −1 hosil bo'ladi. Birinchisidan |x| = 4, ikkinchisidan |x| = 2. Har bir tenglama ikkitadan ildiz beradi: x = ±4 va x = ±2. Jami to'rtta har xil ildiz. Javob: to'rtta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-qavat-modul-W-grafik",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#af3bf2b8"
+    },
+    {
+      "q": "Tenglama ||x| − 5| = 5 ning ildizlari sonini aniqlang. Bu yerda gorizontal chiziq W shaklidagi grafikning o'rtadagi eng baland cho'qqisidan o'tadi.",
+      "v": [
+        "uchta",
+        "to'rtta",
+        "ikkita",
+        "beshta"
+      ],
+      "t": 0,
+      "izoh": "Tenglamadan |x| − 5 = 5 yoki |x| − 5 = −5 chiqadi. Birinchisi |x| = 10 ni beradi, bundan x = 10 va x = −10. Ikkinchisi |x| = 0 ni beradi, bundan faqat x = 0. Jami uchta ildiz. Javob: uchta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-qavat-modul-W-grafik",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#0ba7293a"
+    },
+    {
+      "q": "||x| − 6| = a tenglama to'rtta har xil ildizga ega bo'lishi uchun a parametr qanday oraliqda yotishi kerak?",
+      "v": [
+        "a > 6",
+        "a = 6",
+        "−6 < a < 6",
+        "0 < a < 6"
+      ],
+      "t": 3,
+      "izoh": "W shaklidagi grafikda ikkita chuqurlik nol balandlikda, o'rtadagi cho'qqi esa 6 balandlikda joylashgan. Gorizontal chiziq nol bilan 6 orasida o'tsa, u to'rtta shoxni kesadi. a = 6 da uchta, a > 6 da esa ikkita ildiz qoladi. Javob: 0 < a < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-qavat-modul-W-grafik",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#1eaa6cb1"
+    },
+    {
+      "q": "Gulnora ||x| − 7| = a tenglamaning aynan uchta ildizga ega bo'lishini xohlaydi. U a ni qanday tanlashi kerak?",
+      "v": [
+        "a = 0",
+        "a = 7",
+        "a = 14",
+        "a = 3,5"
+      ],
+      "t": 1,
+      "izoh": "Uchta ildiz gorizontal chiziq W grafikning o'rta cho'qqisidan o'tganda hosil bo'ladi. Cho'qqi balandligi 7 ga teng, ya'ni a = 7. Tekshiramiz: |x| = 14 dan x = ±14, |x| = 0 dan x = 0, jami uchta ildiz. Javob: a = 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-qavat-modul-W-grafik",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#40fe7c5c"
+    },
+    {
+      "q": "|x − 2| + |x − 6| = a tenglama aynan ikkita ildizga ega bo'lishi uchun a qanday bo'lishi kerak? Bu funksiyaning grafigi tubi tekis idish shaklida.",
+      "v": [
+        "a > 4",
+        "a = 4",
+        "a < 4",
+        "a ≥ 4"
+      ],
+      "t": 0,
+      "izoh": "Ikki masofa yig'indisi eng kichik qiymatini [2; 6] kesmada oladi va u kesma uzunligiga, ya'ni 4 ga teng. Grafikning tubi tekis, uning balandligi 4. Gorizontal chiziq tubdan yuqori o'tsa, chapda va o'ngda bittadan kesishish beradi. Javob: a > 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-modul-yigindisi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#31e9cb72"
+    },
+    {
+      "q": "Tenglama |x − 1| + |x + 5| = a cheksiz ko'p yechimga ega bo'ladigan a qiymatini aniqlang.",
+      "v": [
+        "a = 4",
+        "a = 5",
+        "a = 0",
+        "a = 6"
+      ],
+      "t": 3,
+      "izoh": "Nuqtalar 1 va −5, ular orasidagi masofa 1 − (−5) = 6. Grafikning tekis tubi aynan 6 balandlikda va u [−5; 1] kesma ustida yotadi. Gorizontal chiziq shu tubning ustiga tushsa, butun kesma yechim bo'ladi. Javob: a = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-modul-yigindisi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#f4c51729"
+    },
+    {
+      "q": "Anvar |x − 3| + |x − 8| = 4 tenglamani yechmoqchi bo'ldi. Grafikning eng past qismi 5 balandlikda joylashganini hisobga olsak, u qanday natijaga keladi?",
+      "v": [
+        "Bitta yechim",
+        "Yechimi yo'q",
+        "Ikkita yechim",
+        "Cheksiz ko'p yechim"
+      ],
+      "t": 1,
+      "izoh": "Chap tomonning eng kichik qiymati 3 va 8 orasidagi masofaga, ya'ni 5 ga teng. Demak |x − 3| + |x − 8| ≥ 5 har qanday x uchun. 4 soni 5 dan kichik bo'lgani uchun gorizontal chiziq grafikdan pastda qoladi. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-modul-yigindisi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#b76c71a1"
+    },
+    {
+      "q": "Toshkent–Chirchiq yo'lida A bekat 4-kilometr belgisida, B bekat esa 12-kilometr belgisida joylashgan. Yo'lovchi shunday joyda turmoqchiki, undan ikkala bekatgacha masofalar yig'indisi a km bo'lsin. a ning qanday qiymatida bunday joylar cheksiz ko'p bo'ladi?",
+      "v": [
+        "a = 12",
+        "a = 4",
+        "a = 8",
+        "a = 16"
+      ],
+      "t": 2,
+      "izoh": "Yo'lovchi ikki bekat orasida turganda masofalar yig'indisi doim bekatlar orasidagi masofaga teng bo'ladi. Bu masofa 12 − 4 = 8 km. Demak a = 8 bo'lsa, [4; 12] oralig'idagi har bir nuqta shartni qanoatlantiradi. Javob: a = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-modul-yigindisi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#23375ac4"
+    },
+    {
+      "q": "|x − 2| − |x − 9| = 3 tenglamaning yechimlari soni haqidagi to'g'ri xulosani tanlang. Bu funksiyaning qiymatlari −7 dan 7 gacha o'zgaradi.",
+      "v": [
+        "Bitta ildiz",
+        "Ikkita ildiz",
+        "Ildizi yo'q",
+        "Cheksiz ko'p ildiz"
+      ],
+      "t": 0,
+      "izoh": "Ayirma funksiyasi x ≤ 2 da −7 ga, x ≥ 9 da 7 ga teng, oraliqda esa o'suvchi to'g'ri chiziq. 3 soni −7 bilan 7 orasida yotgani uchun chiziq faqat qiya bo'lakda kesiladi. Tenglama 2x − 11 = 3 dan x = 7 chiqadi va u [2; 9] ichida. Javob: bitta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-modul-ayirmasi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#be3860d7"
+    },
+    {
+      "q": "Tenglama |x + 1| − |x − 4| = 5 uchun yechimlar to'plami qanday bo'ladi? Ayirma funksiyasining eng katta qiymati 5 ga teng.",
+      "v": [
+        "Bitta yechim bor",
+        "Ikkita yechim bor",
+        "Cheksiz ko'p yechim bor",
+        "Yechim yo'q"
+      ],
+      "t": 2,
+      "izoh": "Nuqtalar −1 va 4, ular orasidagi masofa 5. Ayirma funksiyasi x ≥ 4 bo'lgan barcha nuqtalarda o'zining eng katta qiymati 5 ni oladi va u yerda gorizontal bo'lib qoladi. Chiziq y = 5 shu gorizontal bo'lak bilan ustma-ust tushadi. Javob: cheksiz ko'p yechim bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-modul-ayirmasi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#e2d4e148"
+    },
+    {
+      "q": "Shohruh |x − 3| − |x + 2| = 8 tenglamani yechayotib, chap tomonning qiymatlari faqat −5 bilan 5 orasida o'zgarishini payqadi. U qanday xulosaga keladi?",
+      "v": [
+        "Bitta yechim",
+        "Yechim yo'q",
+        "Ikkita yechim",
+        "Cheksiz ko'p"
+      ],
+      "t": 1,
+      "izoh": "Nuqtalar 3 va −2 orasidagi masofa 5 ga teng, shuning uchun ayirma −5 dan kichik va 5 dan katta bo'la olmaydi. 8 soni bu oraliqdan tashqarida yotadi. Gorizontal chiziq y = 8 grafikdan butunlay yuqorida qoladi. Javob: yechim yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-modul-ayirmasi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#db0c7f04"
+    },
+    {
+      "q": "|x − 5| − |x − 11| = a tenglama aynan bitta ildizga ega bo'lishi uchun a qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "a = 6",
+        "a > 6",
+        "−6 ≤ a ≤ 6",
+        "−6 < a < 6"
+      ],
+      "t": 3,
+      "izoh": "Nuqtalar 5 va 11 orasidagi masofa 6, shuning uchun funksiya −6 dan 6 gacha qiymat oladi. Chekka qiymatlarda grafik gorizontal bo'lak bo'lib qoladi va cheksiz ko'p yechim beradi. Faqat qiya bo'lakda kesilganda yagona ildiz chiqadi. Javob: −6 < a < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-modul-ayirmasi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#79cec443"
+    },
+    {
+      "q": "y = x² − 6|x| + 5 juft funksiya grafigi y o'qini (0; 5) nuqtada kesadi, uning ikkita eng past nuqtasi esa −4 balandlikda. Bu grafik y = a chizig'i bilan to'rtta nuqtada kesishishi uchun a qanday bo'lsin?",
+      "v": [
+        "−4 < a < 5",
+        "0 < a < 5",
+        "a > 5",
+        "−5 < a < 4"
+      ],
+      "t": 0,
+      "izoh": "Juft funksiya grafigi y o'qiga nisbatan simmetrik va ikkita chuqurchaga ega. Chuqurchalar tubi −4, o'rtadagi 'do'ngchik' esa (0; 5) nuqtada. Gorizontal chiziq shu ikki daraja orasida o'tsa, har bir tomondan ikkitadan kesishish beradi. Javob: −4 < a < 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-funksiya-tort-ildiz",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#48d888be"
+    },
+    {
+      "q": "Tenglama x² − 8|x| + 12 = a to'rtta har xil ildizga ega bo'ladigan barcha a qiymatlarini toping.",
+      "v": [
+        "0 < a < 12",
+        "−4 < a < 12",
+        "a > 12",
+        "−12 < a < 4"
+      ],
+      "t": 1,
+      "izoh": "x ≥ 0 da funksiya x² − 8x + 12 ga teng, uning uchi x = 4 da va qiymati 16 − 32 + 12 = −4. x = 0 da funksiya 12 ga teng. Grafik y o'qiga nisbatan simmetrik ikki chuqurchali chiziq. To'rtta kesishish −4 bilan 12 orasida bo'ladi. Javob: −4 < a < 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-funksiya-tort-ildiz",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#252c3437"
+    },
+    {
+      "q": "Feruza y = x² − 4|x| + 3 grafigini chizdi. Gorizontal y = a chizig'i bu grafikni to'rt joyda kesishi uchun a qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "a > 3",
+        "0 < a < 3",
+        "−1 < a < 3",
+        "−3 < a < 1"
+      ],
+      "t": 2,
+      "izoh": "Musbat x larda funksiya x² − 4x + 3 ko'rinishida, uning uchi x = 2 da va qiymati 4 − 8 + 3 = −1. y o'qidagi qiymat esa 3 ga teng. Simmetrik grafikda gorizontal chiziq −1 dan yuqori va 3 dan past o'tsa to'rtta nuqta chiqadi. Javob: −1 < a < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-funksiya-tort-ildiz",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#9dbcd689"
+    },
+    {
+      "q": "y = x² − 10|x| + 21 grafigi ikkita chuqurchali simmetrik chiziqdan iborat. Bu grafik y = a to'g'ri chizig'i bilan aynan to'rtta nuqtada kesishishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "0 < a < 21",
+        "a > 21",
+        "−21 < a < 4",
+        "−4 < a < 21"
+      ],
+      "t": 3,
+      "izoh": "x ≥ 0 da funksiya x² − 10x + 21 bo'lib, uchi x = 5 da, qiymati 25 − 50 + 21 = −4. Nolda funksiya 21 ga teng, bu o'rtadagi cho'qqining balandligi. Chiziq chuqurcha tubi bilan o'rta cho'qqi orasida o'tsa to'rtta kesishish beradi. Javob: −4 < a < 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-funksiya-tort-ildiz",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#1ad35afd"
+    },
+    {
+      "q": "y = x² − 6|x| + 8 grafigi bilan y = a gorizontal chizig'i aynan uchta umumiy nuqtaga ega bo'lishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "a = 8",
+        "a = −1",
+        "a = 0",
+        "a = 3"
+      ],
+      "t": 0,
+      "izoh": "Juft funksiya grafigi y o'qiga nisbatan simmetrik, shuning uchun uchta nuqta faqat ulardan biri y o'qida yotganda chiqadi. Bu esa gorizontal chiziq (0; 8) nuqtadan o'tishini bildiradi. Tekshiramiz: x² − 6x = 0 dan x = 0 va x = 6, simmetriya bilan x = −6 qo'shiladi. Javob: a = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-funksiya-uch-ildiz",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#cba00f7d"
+    },
+    {
+      "q": "Tenglama x² − 12|x| + 20 = a ning ildizlari soni aynan uchta bo'lsa, a nechaga teng bo'ladi?",
+      "v": [
+        "a = −16",
+        "a = 6",
+        "a = 0",
+        "a = 20"
+      ],
+      "t": 3,
+      "izoh": "Grafik simmetrik bo'lgani uchun ildizlar juft-juft bo'lib keladi, toq son faqat x = 0 ildiz bo'lganda hosil bo'ladi. x = 0 ni qo'ysak, 0 − 0 + 20 = a, ya'ni a = 20. Bu qiymatda x² − 12x = 0 dan x = 0 va x = 12, ularga x = −12 qo'shiladi. Javob: a = 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-funksiya-uch-ildiz",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#0b44dce1"
+    },
+    {
+      "q": "Qaysi a qiymatida y = x² − 2|x| − 15 grafigi va y = a to'g'ri chizig'i aynan uchta nuqtada uchrashadi?",
+      "v": [
+        "a = −16",
+        "a = −15",
+        "a = 15",
+        "a = 0"
+      ],
+      "t": 1,
+      "izoh": "Toq sondagi kesishish uchun nuqtalardan biri simmetriya o'qi, ya'ni y o'qi ustida bo'lishi shart. x = 0 da funksiya qiymati −15 ga teng, demak a = −15. Bunda x² − 2x = 0 dan x = 0 va x = 2, simmetriya bilan x = −2 ham ildiz. Javob: a = −15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-funksiya-uch-ildiz",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#39994cd0"
+    },
+    {
+      "q": "Zamira x² − 14|x| + 24 = a tenglamaning aynan uchta ildizga ega bo'lishini xohlaydi. U a ni qanday tanlashi kerak?",
+      "v": [
+        "a = −25",
+        "a = 7",
+        "a = 24",
+        "a = 12"
+      ],
+      "t": 2,
+      "izoh": "Funksiya juft bo'lgani uchun nolga teng bo'lmagan har bir ildizga uning qarama-qarshisi juft bo'ladi. Toq son chiqishi uchun x = 0 ildiz bo'lishi kerak, bu esa a = 24 ni beradi. Bu qiymatda x² − 14x = 0 dan x = 0 va x = 14, hamda x = −14 hosil bo'ladi. Javob: a = 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-funksiya-uch-ildiz",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#b45b17f4"
+    },
+    {
+      "q": "y = x² − 8|x| + 7 grafigining eng past nuqtalari −9 balandlikda, y o'qidagi qiymati esa 7 ga teng. Bu grafik y = 4 chizig'i bilan nechta nuqtada kesishadi?",
+      "v": [
+        "Ikki nuqtada",
+        "Uch nuqtada",
+        "To'rt nuqtada",
+        "Kesishmaydi"
+      ],
+      "t": 2,
+      "izoh": "Simmetrik grafikda chuqurcha tubi −9, o'rtadagi cho'qqi esa 7 balandlikda. To'rtta kesishish gorizontal chiziq shu ikki daraja orasida o'tganda bo'ladi. 4 soni −9 bilan 7 orasida yotadi. Javob: to'rt nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-funksiya-berilgan-a-nuqtalar",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#3d4e43cb"
+    },
+    {
+      "q": "y = x² − 6|x| + 4 grafigi bilan y = 7 to'g'ri chizig'i nechta nuqtada uchrashadi? Grafik y o'qini (0; 4) nuqtada kesadi.",
+      "v": [
+        "Ikki nuqtada",
+        "Uch nuqtada",
+        "To'rt nuqtada",
+        "Besh nuqtada"
+      ],
+      "t": 0,
+      "izoh": "O'rtadagi cho'qqi balandligi 4 ga teng. 7 soni undan katta, demak gorizontal chiziq cho'qqidan yuqorida o'tadi va faqat tashqi shoxlarni kesadi. Tekshiramiz: x ≥ 0 da x² − 6x − 3 = 0 ning faqat bitta musbat ildizi bor, simmetriya bilan ikkita nuqta chiqadi. Javob: ikki nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-funksiya-berilgan-a-nuqtalar",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#00afb9b6"
+    },
+    {
+      "q": "y = x² − 4|x| − 5 grafigi va y = −9 chizig'i nechta umumiy nuqtaga ega? Grafikning ikkala eng past nuqtasi aynan −9 balandlikda joylashgan.",
+      "v": [
+        "Kesishmaydi",
+        "Bir nuqtada",
+        "Uch nuqtada",
+        "Ikki nuqtada"
+      ],
+      "t": 3,
+      "izoh": "Gorizontal chiziq chuqurchalarning aynan tubidan o'tmoqda. Simmetrik grafikda ikkita chuqurcha bor, ular x = 2 va x = −2 da joylashgan. Chiziq har bir chuqurchaga bittadan tegadi, boshqa kesishish yo'q. Javob: ikki nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-funksiya-berilgan-a-nuqtalar",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#d540ef2f"
+    },
+    {
+      "q": "Shahzod y = x² − 10|x| + 9 grafigiga y = −20 to'g'ri chizig'ini qo'shdi. Grafikning eng past nuqtasi −16 ekanini bilgan holda, u nechta kesishish nuqtasini topadi?",
+      "v": [
+        "Bir nuqtada",
+        "Kesishmaydi",
+        "Ikki nuqtada",
+        "To'rt nuqtada"
+      ],
+      "t": 1,
+      "izoh": "Funksiyaning eng kichik qiymati −16 ga teng, ya'ni grafik hech qachon −16 dan pastga tushmaydi. y = −20 chizig'i esa undan pastda o'tadi. Ikki chiziq umuman uchrashmaydi. Javob: kesishmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-funksiya-berilgan-a-nuqtalar",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#3333b5a0"
+    },
+    {
+      "q": "|x² − 6x − 7| = a tenglama to'rtta har xil ildizga ega bo'ladigan a ning nechta butun qiymati mavjud?",
+      "v": [
+        "16 ta",
+        "15 ta",
+        "14 ta",
+        "17 ta"
+      ],
+      "t": 1,
+      "izoh": "Uchhadning uchi x = 3 da, qiymati 9 − 18 − 7 = −16, demak modul tepaligi 16 balandlikda. To'rtta ildiz 0 < a < 16 shartida bo'ladi. Bu oraliqdagi butun sonlar 1 dan 15 gacha. Ular 15 ta. Javob: 15 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-a-qiymatlari-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#2a0490a8"
+    },
+    {
+      "q": "y = x² − 12|x| + 11 grafigi va y = a chizig'i to'rtta nuqtada kesishadigan a ning nechta butun qiymati bor?",
+      "v": [
+        "36 ta",
+        "34 ta",
+        "37 ta",
+        "35 ta"
+      ],
+      "t": 3,
+      "izoh": "Musbat x larda uch nuqta x = 6 da, qiymati 36 − 72 + 11 = −25. Nolda funksiya 11 ga teng. To'rtta kesishish −25 < a < 11 shartida bo'ladi. Butun sonlar −24 dan 10 gacha, ularning soni 10 − (−24) + 1 = 35. Javob: 35 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-a-qiymatlari-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#ffa6c3f3"
+    },
+    {
+      "q": "|x² + 4x − 21| = a tenglama ikkitadan ortiq ildizga ega bo'ladigan a ning nechta butun qiymati mavjud?",
+      "v": [
+        "25 ta",
+        "24 ta",
+        "26 ta",
+        "23 ta"
+      ],
+      "t": 0,
+      "izoh": "Uchhadning uchi x = −2 da, qiymati 4 − 8 − 21 = −25, tepalik balandligi 25. To'rtta ildiz 0 < a < 25 da, uchta ildiz esa a = 25 da bo'ladi. Demak ikkitadan ko'p ildiz 0 < a ≤ 25 shartida chiqadi. Butun sonlar 1 dan 25 gacha, jami 25 ta. Javob: 25 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-a-qiymatlari-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#39665032"
+    },
+    {
+      "q": "Nazokat |x² − 10x + 16| = a tenglamaga a ning natural qiymatlarini navbat bilan qo'yib chiqmoqchi. Tenglama to'rtta ildizga ega bo'ladigan nechta natural a mavjud?",
+      "v": [
+        "7 ta",
+        "9 ta",
+        "8 ta",
+        "10 ta"
+      ],
+      "t": 2,
+      "izoh": "Uchhadning uchi x = 5 da, qiymati 25 − 50 + 16 = −9, ya'ni tepalik 9 balandlikda. To'rtta ildiz 0 < a < 9 shartida hosil bo'ladi. Natural sonlar 1 dan 8 gacha. Ularning soni 8 ta. Javob: 8 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-a-qiymatlari-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#5ae21b53"
+    },
+    {
+      "q": "|x² − 10x + 9| = a tenglama uchta ildizga ega bo'lgandagi a qiymati bilan |x² + 6x + 8| = b tenglama uchta ildizga ega bo'lgandagi b qiymatining yig'indisini toping.",
+      "v": [
+        "15",
+        "17",
+        "18",
+        "14"
+      ],
+      "t": 1,
+      "izoh": "Birinchi uchhadning uchi x = 5 da, qiymati 25 − 50 + 9 = −16, demak a = 16. Ikkinchi uchhadning uchi x = −3 da, qiymati 9 − 18 + 8 = −1, demak b = 1. Ikkalasi ham modul tepaligining balandligi. Yig'indi 16 + 1 = 17. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kritik-a-qiymatlari-arifmetikasi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#4efed415"
+    },
+    {
+      "q": "y = x² − 8|x| + 12 grafigi y = a chizig'i bilan uchta nuqtada kesishadigan a qiymati va shu grafik bilan ikkita umumiy nuqtaga ega bo'ladigan eng kichik a qiymatining yig'indisi nechaga teng?",
+      "v": [
+        "16",
+        "4",
+        "8",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Uchta umumiy nuqta y o'qidagi qiymatda, ya'ni a = 12 da bo'ladi. Grafikning eng past nuqtasi 16 − 32 + 12 = −4 balandlikda: shu qiymatda chiziq ikkala chuqurcha tubiga tegib, aynan ikkita umumiy nuqta beradi, undan pastda esa umumiy nuqta umuman qolmaydi. Demak ikkinchi son −4. Yig'indi 12 + (−4) = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kritik-a-qiymatlari-arifmetikasi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#e22ba4be"
+    },
+    {
+      "q": "|x² − 14x + 45| = a tenglama uchta ildizga ega bo'lgandagi a bilan x² − 14|x| + 45 = b tenglama uchta ildizga ega bo'lgandagi b ning yig'indisi nechaga teng?",
+      "v": [
+        "49",
+        "41",
+        "45",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Birinchi holda modul tepaligining balandligi kerak: uch x = 7 da, qiymati 49 − 98 + 45 = −4, demak a = 4. Ikkinchi holda juft funksiya uchun y o'qidagi qiymat kerak: b = 45. Ikki mezon butunlay boshqacha ekaniga e'tibor bering. Yig'indi 4 + 45 = 49. Javob: 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kritik-a-qiymatlari-arifmetikasi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#8aa39ec3"
+    },
+    {
+      "q": "Sanjar ikkita tenglamani taqqosladi: |x² − 6x| = a va x² − 6|x| = b. Birinchisi uchta ildizga ega bo'lgandagi a bilan ikkinchisi uchta ildizga ega bo'lgandagi b ning ayirmasi a − b nechaga teng?",
+      "v": [
+        "0",
+        "−9",
+        "3",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "Birinchi funksiyaning uchi x = 3 da, qiymati 9 − 18 = −9, modul tepaligi 9 balandlikda, demak a = 9. Ikkinchisi juft funksiya, uning uchun y o'qidagi qiymat kerak: b = 0. Bunda |x|(|x| − 6) = 0 dan x = 0 va x = ±6, ya'ni uchta ildiz. Ayirma 9 − 0 = 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kritik-a-qiymatlari-arifmetikasi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#024c2a4e"
+    },
+    {
+      "q": "|x² − 8x + 12| = a tenglama to'rtta har xil ildizga ega bo'lishi uchun a ning eng katta butun qiymati nechaga teng bo'ladi?",
+      "v": [
+        "3",
+        "4",
+        "2",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Uchhadning uchi x = 4 da, qiymati 16 − 32 + 12 = −4, modul tepaligi 4 balandlikda. To'rtta ildiz 0 < a < 4 shartida bo'ladi. a = 4 da ildizlar soni uchtaga tushadi, shuning uchun u yaramaydi. Oraliqdagi eng katta butun son 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegaraviy-butun-a",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#4dfc24da"
+    },
+    {
+      "q": "y = x² − 4|x| − 12 grafigi bilan y = a chizig'i to'rtta nuqtada kesishishi uchun a ning eng kichik butun qiymati qanday bo'ladi?",
+      "v": [
+        "−16",
+        "−12",
+        "−15",
+        "−13"
+      ],
+      "t": 2,
+      "izoh": "Musbat x larda uch x = 2 da, qiymati 4 − 8 − 12 = −16. Nolda funksiya −12 ga teng. To'rtta kesishish −16 < a < −12 shartida bo'ladi, chegaralarning o'zi yaramaydi. Bu oraliqdagi eng kichik butun son −15. Javob: −15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegaraviy-butun-a",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#68a979e2"
+    },
+    {
+      "q": "|x² + 10x + 21| = a tenglama aynan ikkita ildizga ega bo'lishi uchun a ning eng kichik natural qiymati nechaga teng?",
+      "v": [
+        "4",
+        "1",
+        "6",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Uchhadning uchi x = −5 da, qiymati 25 − 50 + 21 = −4, tepalik balandligi 4. Ikkita ildiz a = 0 da yoki a > 4 da bo'ladi, lekin nol natural son emas. a = 4 da uchta ildiz chiqadi, shuning uchun u ham yaramaydi. Eng kichik mos natural son 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegaraviy-butun-a",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#1de680fc"
+    },
+    {
+      "q": "|x² − 16x + 60| = a tenglama uchta ildizga ega bo'ladigan a qiymati topildi, so'ng undan 5 ta kichik son olinib tenglamaga qo'yildi. Yangi tenglama nechta ildizga ega bo'ladi?",
+      "v": [
+        "Ikki ta",
+        "Nol ta",
+        "To'rt ta",
+        "Uch ta"
+      ],
+      "t": 1,
+      "izoh": "Uchhadning uchi x = 8 da, qiymati 64 − 128 + 60 = −4, demak uchta ildiz a = 4 da bo'ladi. Undan 5 ta kichik son 4 − 5 = −1 ga teng. Modul manfiy qiymat qabul qilmaydi, shuning uchun tenglama yechimsiz. Javob: nol ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegaraviy-butun-a",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#7bf3f2d9"
+    },
+    {
+      "q": "Bir funksiyaning y = |f(x)| grafigi x o'qiga (1; 0) va (5; 0) nuqtalarda tegib o'tadi, ular orasidagi eng baland nuqtasi (3; 8), chetlarda esa grafik yuqoriga cheksiz ko'tariladi. y = a chizig'i bu grafikni to'rtta nuqtada kesishi uchun a qanday bo'lsin?",
+      "v": [
+        "0 < a < 8",
+        "a > 8",
+        "0 ≤ a ≤ 8",
+        "a = 8"
+      ],
+      "t": 0,
+      "izoh": "Grafik ikkita tashqi shox va ular orasidagi bitta tepalikdan iborat. Gorizontal chiziq tepalik uchidan pastda, lekin x o'qidan yuqorida o'tsa, ikkita tashqi va ikkita ichki kesishish beradi. a = 0 da faqat ikkita tegish nuqtasi, a = 8 da esa uchta nuqta bo'ladi. Javob: 0 < a < 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-tavsifidan-a-oraligi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#34d59a7c"
+    },
+    {
+      "q": "y = |g(x)| grafigi x o'qiga (−4; 0) va (2; 0) nuqtalarda tegadi, ular orasidagi cho'qqisi (−1; 12) nuqtada joylashgan, chetlarda esa grafik yuqoriga cheksiz ko'tariladi. y = 12 to'g'ri chizig'i bu grafik bilan nechta umumiy nuqtaga ega bo'ladi?",
+      "v": [
+        "2 ta nuqta",
+        "3 ta nuqta",
+        "4 ta nuqta",
+        "1 ta nuqta"
+      ],
+      "t": 1,
+      "izoh": "Gorizontal chiziq aynan cho'qqining ordinatasidan o'tmoqda. Cho'qqining o'zi bitta umumiy nuqta beradi. Bundan tashqari chiziq ikkita tashqi shoxni ham kesib o'tadi, chunki shoxlar yuqoriga cheksiz ko'tariladi. Jami uchta nuqta. Javob: 3 ta nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-tavsifidan-a-oraligi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#f0642709"
+    },
+    {
+      "q": "y = h(|x|) juft funksiya haqida shu ma'lum: h(0) = 9, uning musbat yarim o'qdagi eng kichik qiymati x = 4 da −7 ga teng, boshqa burilish nuqtasi yo'q va chetlarda grafik yuqoriga cheksiz ko'tariladi. y = a chizig'i grafikni to'rtta nuqtada kesishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a > 9",
+        "−9 < a < 7",
+        "−7 < a < 9",
+        "0 < a < 9"
+      ],
+      "t": 2,
+      "izoh": "Juft funksiya grafigi y o'qiga nisbatan simmetrik, ya'ni ikkita chuqurcha va o'rtada bitta do'nglik bor. Chuqurchalar tubi −7, o'rtadagi do'nglikning balandligi esa 9. Gorizontal chiziq shu ikki daraja orasida o'tsa har tomondan ikkitadan kesishish beradi. Javob: −7 < a < 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-tavsifidan-a-oraligi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#e46b3551"
+    },
+    {
+      "q": "Ilmiy loyihada y = |p(x)| grafigi chizildi: u x o'qiga (2; 0), (6; 0) va (10; 0) nuqtalarda tegadi, ikkala oraliq cho'qqisining balandligi 5 ga teng, chetlarda esa grafik yuqoriga ketadi. y = 3 chizig'i bu grafik bilan nechta nuqtada kesishadi?",
+      "v": [
+        "4 ta nuqta",
+        "5 ta nuqta",
+        "3 ta nuqta",
+        "6 ta nuqta"
+      ],
+      "t": 3,
+      "izoh": "Grafik chapdan pasayib (2; 0) ga tushadi, keyin ikkita bir xil balandlikdagi tepalik hosil qiladi va (10; 0) dan keyin yana ko'tariladi. y = 3 chizig'i chap shoxni bir marta, har bir tepalikni ikki martadan, o'ng shoxni yana bir marta kesadi. Jami 1 + 2 + 2 + 1 = 6 nuqta. Javob: 6 ta nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-tavsifidan-a-oraligi",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#5ac20e35"
+    },
+    {
+      "q": "|x³ − 3x| = 1 tenglama nechta har xil yechimga ega? Bu yerda y = x³ − 3x funksiyaning lokal maksimumi 2 ga, lokal minimumi esa −2 ga teng.",
+      "v": [
+        "4 ta yechim",
+        "6 ta yechim",
+        "3 ta yechim",
+        "2 ta yechim"
+      ],
+      "t": 1,
+      "izoh": "Modulli tenglama ikkita oddiy tenglamaga ajraladi: x³ − 3x = 1 va x³ − 3x = −1. Kubik funksiya −2 bilan 2 orasidagi har bir qiymatni uch marta qabul qiladi. 1 va −1 sonlari shu oraliqda yotadi, demak har bir tenglama uchtadan ildiz beradi. Jami 3 + 3 = 6 yechim. Javob: 6 ta yechim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-kubik-ildizlar-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#82252068"
+    },
+    {
+      "q": "Tenglama |x³ − 3x| = 2 ning har xil ildizlari soni qanchaga teng? Kubik funksiyaning ekstremum qiymatlari 2 va −2 ga teng ekanini hisobga oling.",
+      "v": [
+        "6 ta yechim",
+        "3 ta yechim",
+        "2 ta yechim",
+        "4 ta yechim"
+      ],
+      "t": 3,
+      "izoh": "Tenglama x³ − 3x = 2 va x³ − 3x = −2 ga ajraladi. Har bir qiymat aynan ekstremum darajasida bo'lgani uchun kubik funksiya ularni ikkitadan har xil nuqtada qabul qiladi: birinchisi x = −1 va x = 2, ikkinchisi x = 1 va x = −2. Takrorlanish yo'q, jami to'rtta har xil ildiz. Javob: 4 ta yechim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modulli-kubik-ildizlar-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#12d1e410"
+    },
+    {
+      "q": "|x³ − 12x| = a tenglama oltita har xil ildizga ega bo'lishi uchun a qanday oraliqda bo'lishi kerak? Kubik funksiyaning lokal maksimumi 16, lokal minimumi −16 ga teng.",
+      "v": [
+        "0 < a < 16",
+        "0 < a < 12",
+        "a > 16",
+        "−16 < a < 16"
+      ],
+      "t": 0,
+      "izoh": "Tenglama x³ − 12x = a va x³ − 12x = −a ga ajraladi. Har biri uchtadan ildiz berishi uchun o'ng tomon −16 bilan 16 orasida yotishi kerak. a musbat bo'lgani va ikkala qiymat ham shartni qanoatlantirishi kerakligi uchun 0 < a < 16 chiqadi. a = 0 da esa ikkala tenglama ustma-ust tushib, atigi uchta ildiz qoladi. Javob: 0 < a < 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modulli-kubik-ildizlar-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#4bfaeba4"
+    },
+    {
+      "q": "|x³ − 3x| = a tenglama aynan ikkita ildizga ega bo'lishi uchun a qanday shartni qanoatlantirsin?",
+      "v": [
+        "a = 2",
+        "0 < a < 2",
+        "a > 2",
+        "a ≥ 2"
+      ],
+      "t": 2,
+      "izoh": "Kubik funksiya 2 dan katta qiymatni faqat bitta nuqtada qabul qiladi, xuddi shunday −2 dan kichik qiymatni ham bitta nuqtada. a > 2 bo'lganda x³ − 3x = a bitta va x³ − 3x = −a yana bitta ildiz beradi. a = 2 da esa ildizlar soni to'rtta bo'lib qoladi. Javob: a > 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modulli-kubik-ildizlar-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#0cb8351f"
+    },
+    {
+      "q": "|sin x| = a tenglama [0; 2π] kesmada aynan to'rtta ildizga ega bo'lishi uchun a qanday qiymat olishi kerak?",
+      "v": [
+        "0 < a < 1",
+        "a = 1",
+        "0 ≤ a ≤ 1",
+        "a > 1"
+      ],
+      "t": 0,
+      "izoh": "y = |sin x| grafigi [0; 2π] da ikkita bir xil gumbazdan iborat, gumbazlarning balandligi 1 ga teng. Gorizontal chiziq nol bilan 1 orasida o'tsa, har bir gumbazni ikki joydan kesadi. a = 1 da faqat ikkita cho'qqi nuqtasi, a = 0 da esa uchta nuqta qoladi. Javob: 0 < a < 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modulli-trigonometrik-ildizlar",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#a04114cf"
+    },
+    {
+      "q": "Ravshan y = |cos x| grafigini [0; 2π] kesmada chizdi va unga y = 1 to'g'ri chizig'ini qo'shdi. Ular nechta nuqtada uchrashadi?",
+      "v": [
+        "2 ta ildiz",
+        "4 ta ildiz",
+        "3 ta ildiz",
+        "1 ta ildiz"
+      ],
+      "t": 2,
+      "izoh": "|cos x| = 1 tenglama cos x = 1 yoki cos x = −1 degani. Birinchisi [0; 2π] da x = 0 va x = 2π ni beradi, ikkinchisi esa x = π ni. Grafik shu uch nuqtada 1 balandlikka ko'tariladi. Jami uchta nuqta. Javob: 3 ta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modulli-trigonometrik-ildizlar",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#6180f3ea"
+    },
+    {
+      "q": "|sin x| = 0,5 tenglamaning [0; 2π] kesmadagi ildizlari soni nechaga teng bo'ladi?",
+      "v": [
+        "2 ta ildiz",
+        "4 ta ildiz",
+        "6 ta ildiz",
+        "3 ta ildiz"
+      ],
+      "t": 1,
+      "izoh": "0,5 soni nol bilan 1 orasida yotadi, demak gorizontal chiziq ikkala gumbazni ham kesib o'tadi. Har bir gumbaz ikkitadan kesishish beradi. Ildizlar: π/6, 5π/6, 7π/6, 11π/6. Jami to'rtta. Javob: 4 ta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modulli-trigonometrik-ildizlar",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#b0388d50"
+    },
+    {
+      "q": "|cos x| = a tenglama [0; 2π] kesmada aynan ikkita ildizga ega bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a = 1",
+        "0 < a < 1",
+        "a > 1",
+        "a = 0"
+      ],
+      "t": 3,
+      "izoh": "y = |cos x| grafigi [0; 2π] da 1 balandlikdan boshlanadi, ikki marta x o'qiga tushadi va yana 1 ga ko'tariladi. Gorizontal chiziq nol bilan 1 orasida bo'lsa to'rtta, a = 1 bo'lsa uchta nuqta chiqadi. Aynan ikkita nuqta esa chiziq x o'qi bo'ylab o'tganda, ya'ni a = 0 da bo'ladi. Javob: a = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modulli-trigonometrik-ildizlar",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#c3c4f5a9"
+    },
+    {
+      "q": "y = −x² + 6|x| grafigi ikkita cho'qqiga ega M shaklidagi chiziqdan iborat, cho'qqilarning balandligi 9 ga teng. Bu grafik y = 5 chizig'i bilan nechta nuqtada kesishadi?",
+      "v": [
+        "Ikkita nuqta",
+        "To'rtta nuqta",
+        "Uchta nuqta",
+        "Bitta nuqta"
+      ],
+      "t": 1,
+      "izoh": "Grafik y o'qiga nisbatan simmetrik va koordinata boshida 0 qiymatga tushadi, cho'qqilari esa 9 balandlikda. Gorizontal chiziq 0 bilan 9 orasida o'tsa, har bir cho'qqini ikki joydan kesadi. 5 soni aynan shu oraliqda yotadi. Javob: to'rtta nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tepasi-pastga-juft-funksiya",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#ff7db300"
+    },
+    {
+      "q": "Tenglama −x² + 10|x| = a to'rtta har xil ildizga ega bo'lishi uchun a qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "0 < a < 25",
+        "a > 25",
+        "−25 < a < 0",
+        "0 < a < 5"
+      ],
+      "t": 0,
+      "izoh": "|x| = u deb belgilaymiz, u ≥ 0. Shunda −u² + 10u = a bo'ladi, uning eng katta qiymati u = 5 da 25 ga teng. To'rtta ildiz uchun u bo'yicha ikkita musbat yechim kerak, bu esa 0 < a < 25 da bo'ladi. a = 0 da u = 0 ham chiqib, ildizlar soni uchtaga tushadi. Javob: 0 < a < 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tepasi-pastga-juft-funksiya",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#f8190bac"
+    },
+    {
+      "q": "y = −x² + 8|x| grafigi va y = a to'g'ri chizig'i aynan uchta umumiy nuqtaga ega bo'lsa, a nechaga teng bo'ladi?",
+      "v": [
+        "a = 16",
+        "a = 8",
+        "a = 0",
+        "a = 4"
+      ],
+      "t": 2,
+      "izoh": "Grafik juft funksiyaniki, shuning uchun toq sondagi kesishish faqat nuqtalardan biri y o'qida yotganda bo'ladi. x = 0 da funksiya qiymati nolga teng, demak a = 0. Tekshiramiz: |x|(8 − |x|) = 0 dan x = 0, x = 8 va x = −8. Javob: a = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tepasi-pastga-juft-funksiya",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#c884b356"
+    },
+    {
+      "q": "Anvar −x² + 12|x| = a tenglamaning aynan ikkita ildizga ega bo'lishini xohlaydi. U a uchun qanday shart yozishi kerak?",
+      "v": [
+        "a = 36",
+        "a < 0",
+        "a > 36",
+        "a = 36 yoki a < 0"
+      ],
+      "t": 3,
+      "izoh": "|x| = u almashtirishdan keyin u² − 12u + a = 0 hosil bo'ladi, uning ildizlari u = 6 ± √(36 − a). a = 36 da yagona musbat u = 6 chiqadi va bu ikkita x qiymatini beradi. a < 0 da esa ildizlardan biri manfiy bo'lib tushib qoladi, yana bitta musbat u qoladi. Javob: a = 36 yoki a < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tepasi-pastga-juft-funksiya",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#7e3a30b6"
+    },
+    {
+      "q": "Ustaxonada tayyorlangan detal uzunligi x sm bo'lganda uning me'yordan chetlanishi d = |x − 24| sm formula bilan hisoblanadi. Chetlanish aynan 3 sm bo'lgan detal uzunliklarining yig'indisi necha santimetr?",
+      "v": [
+        "48",
+        "24",
+        "3",
+        "27"
+      ],
+      "t": 0,
+      "izoh": "|x − 24| = 3 tenglamani yechamiz: x − 24 = 3 yoki x − 24 = −3. Bundan x = 27 va x = 21 kelib chiqadi, ya'ni V shaklidagi grafik y = 3 chizig'ini ikki joyda kesadi. Ikkala uzunlik ham me'yordan bir xil uzoqlikda. Yig'indi 27 + 21 = 48. Javob: 48.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-chetlanish-modeli",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#960698d9"
+    },
+    {
+      "q": "Suv omborida sath farqi f(x) = x² − 10x + 16 metr bilan ifodalanadi, bu yerda x — kuz boshidan o'tgan hafta soni. Sathning me'yordan mutlaq chetlanishi aynan 9 metr bo'lgan paytlar soni nechta?",
+      "v": [
+        "2 marta",
+        "4 marta",
+        "3 marta",
+        "1 marta"
+      ],
+      "t": 2,
+      "izoh": "Mutlaq chetlanish |x² − 10x + 16| bo'lgani uchun |f(x)| = 9 tenglamani yechamiz. Uchhadning uchi x = 5 da, qiymati 25 − 50 + 16 = −9, demak modul tepaligining balandligi 9 ga teng. Gorizontal chiziq aynan tepalik uchidan o'tadi: x² − 10x + 7 = 0 ikkita, x² − 10x + 25 = 0 esa bitta yechim beradi. Javob: 3 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-chetlanish-modeli",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#98ae0506"
+    },
+    {
+      "q": "Do'kondagi mahsulot narxining rejadan chetlanishi ming so'mda |x² − 22x + 85| ifoda bilan beriladi, bu yerda x — savdo mavsumi boshidan o'tgan kunlar soni. Chetlanish qiymati a ga teng bo'ladigan to'rtta har xil x mavjud bo'lishi uchun a qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "0 < a < 85",
+        "0 < a < 36",
+        "a > 36",
+        "0 < a < 6"
+      ],
+      "t": 1,
+      "izoh": "Uchhadning uchi x = 11 da, qiymati 121 − 242 + 85 = −36. Modul olingandan keyin grafikda balandligi 36 bo'lgan tepalik hosil bo'ladi. To'rtta har xil x uchun gorizontal chiziq x o'qidan yuqorida va tepalik uchidan pastda o'tishi kerak. Ildizlar 11 ± √(36 + a) va 11 ± √(36 − a) bo'lib, eng kichigi 11 − √72 ≈ 2,5 dan kichik emas, ya'ni to'rtala kun raqami musbat. Javob: 0 < a < 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-chetlanish-modeli",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#222456fe"
+    },
+    {
+      "q": "Poyezd A stansiyadan x km uzoqlashganda jadvaldan chetlanishi d = |x − 45| daqiqaga teng bo'ladi. Chetlanish 12 daqiqa bo'lgan ikkita nuqta orasidagi masofa necha kilometr?",
+      "v": [
+        "12 km",
+        "45 km",
+        "33 km",
+        "24 km"
+      ],
+      "t": 3,
+      "izoh": "|x − 45| = 12 tenglamadan x = 57 va x = 33 chiqadi, ya'ni V shaklidagi grafik gorizontal chiziqni ikki joyda kesadi. Bu ikki nuqta 45 dan bir xil uzoqlikda joylashgan. Ular orasidagi masofa 57 − 33 = 24 km. Javob: 24 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-chetlanish-modeli",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#e6508f5f"
+    },
+    {
+      "q": "Meteorologiya stansiyasida havo haroratining me'yordan chetlanishi |x² − 10x + 21| daraja bilan tasvirlanadi, bu yerda x — oy boshidan o'tgan kunlar soni. Chetlanish aynan 3 daraja bo'lgan paytlar soni nechta?",
+      "v": [
+        "2 ta paytda",
+        "3 ta paytda",
+        "4 ta paytda",
+        "5 ta paytda"
+      ],
+      "t": 2,
+      "izoh": "Uchhadning uchi x = 5 da, qiymati 25 − 50 + 21 = −4, demak modul tepaligining balandligi 4 ga teng. 3 soni nol bilan 4 orasida yotadi, ya'ni gorizontal chiziq tepalikdan pastda o'tadi. Bunday holatda grafik chiziqni to'rt joyda kesadi. Javob: 4 ta paytda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-mutlaq-chetlanish-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#ce3ef9b9"
+    },
+    {
+      "q": "Issiqxonada namlikning me'yordan chetlanishi |x² − 8x + 12| foiz bilan o'lchanadi va x soatlar sonini bildiradi. Chetlanish aynan 4 foiz bo'lgan paytlar soni qanchaga teng?",
+      "v": [
+        "3 ta paytda",
+        "2 ta paytda",
+        "4 ta paytda",
+        "1 ta paytda"
+      ],
+      "t": 0,
+      "izoh": "Uchhadning uchi x = 4 da, qiymati 16 − 32 + 12 = −4, ya'ni tepalik balandligi 4 foiz. Gorizontal chiziq aynan tepalik uchidan o'tmoqda. Bunda tepalikning o'zi bitta, tashqi shoxlar esa ikkita nuqta beradi. Javob: 3 ta paytda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-mutlaq-chetlanish-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#27a67ad1"
+    },
+    {
+      "q": "Elektr tarmog'ida kuchlanishning nominal qiymatdan chetlanishi |x² − 16x + 55| volt bilan ifodalanadi, bu yerda x — kuzatuv boshidan o'tgan soatlar soni. Chetlanish 15 volt bo'lgan paytlar soni nechta bo'ladi?",
+      "v": [
+        "4 ta paytda",
+        "3 ta paytda",
+        "1 ta paytda",
+        "2 ta paytda"
+      ],
+      "t": 3,
+      "izoh": "Uchhadning uchi x = 8 da, qiymati 64 − 128 + 55 = −9, demak tepalikning balandligi 9 volt. 15 soni 9 dan katta, ya'ni gorizontal chiziq tepalikdan yuqorida o'tadi va faqat ikkita tashqi shoxni kesadi. Javob: 2 ta paytda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-mutlaq-chetlanish-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#f9305714"
+    },
+    {
+      "q": "Konditsioner o'rnatilgan xonada haroratning belgilangan qiymatdan chetlanishi |x² − 12x + 32| daraja bilan o'lchanadi. Ikki nol orasidagi eng katta chetlanish qanchaga teng va u qaysi paytda kuzatiladi?",
+      "v": [
+        "32 daraja, x = 0 da",
+        "4 daraja, x = 6 da",
+        "4 daraja, x = 4 da",
+        "6 daraja, x = 6 da"
+      ],
+      "t": 1,
+      "izoh": "Uchhad x = 4 va x = 8 da nolga aylanadi, ular orasida esa manfiy qiymat oladi. Modul olingandan keyin bu bo'lak yuqoriga qaytariladi va tepalik hosil bo'ladi. Tepalikning uchi parabolaning uchi bilan bir vertikalda, ya'ni x = 6 da. U yerdagi qiymat |36 − 72 + 32| = 4. Javob: 4 daraja, x = 6 da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-mutlaq-chetlanish-soni",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#d50c8c8d"
+    },
+    {
+      "q": "Kompaniyaning oylik foydasi P = x² − 8|x| + 15 million so'm bilan hisoblanadi, bu yerda x — rejadan chetlanish oylarda. Foyda a ga teng bo'ladigan to'rtta har xil x qiymati mavjud bo'lishi uchun a qanday oraliqda bo'lsin?",
+      "v": [
+        "0 < a < 15",
+        "−1 < a < 15",
+        "a > 15",
+        "−15 < a < 1"
+      ],
+      "t": 1,
+      "izoh": "Musbat x larda funksiya x² − 8x + 15 ko'rinishida, uning uchi x = 4 da va qiymati 16 − 32 + 15 = −1. x = 0 da esa foyda 15 ga teng. Grafik y o'qiga nisbatan simmetrik, ikkita chuqurchali chiziq. To'rtta yechim chuqurcha tubi bilan o'rtadagi do'nglik orasida chiqadi. Javob: −1 < a < 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-juft-model-parametr",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#85946491"
+    },
+    {
+      "q": "Ariq suvining sathi h = x² − 4|x| + 12 santimetr bilan modellashtirilgan, bu yerda x — peshindan hisoblangan soatlar soni va u manfiy ham bo'lishi mumkin. Sath aynan 12 sm bo'ladigan nechta x qiymati bor?",
+      "v": [
+        "2 ta qiymat",
+        "4 ta qiymat",
+        "1 ta qiymat",
+        "3 ta qiymat"
+      ],
+      "t": 3,
+      "izoh": "Funksiya juft, shuning uchun grafik y o'qiga nisbatan simmetrik. x = 0 da sath aynan 12 ga teng, demak gorizontal chiziq o'rtadagi do'nglikning uchidan o'tadi. Musbat tomonda x² − 4x = 0 dan x = 0 va x = 4 chiqadi, simmetriya bilan x = −4 qo'shiladi. Jami uchta qiymat. Javob: 3 ta qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-juft-model-parametr",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#87b2cf95"
+    },
+    {
+      "q": "Yo'l qurilishida relyef balandligi y = x² − 12|x| + 20 metr formula bilan modellashtirilgan, x esa markazdan chapga yoki o'ngga siljish. y = 10 metrli gorizontal sath bu chiziq bilan nechta nuqtada kesishadi?",
+      "v": [
+        "4 ta nuqtada",
+        "2 ta nuqtada",
+        "3 ta nuqtada",
+        "5 ta nuqtada"
+      ],
+      "t": 0,
+      "izoh": "Musbat x larda uch x = 6 da, u yerdagi qiymat 36 − 72 + 20 = −16. Markazda, ya'ni x = 0 da balandlik 20 metr. Demak grafikda ikkita chuqurcha va o'rtada 20 balandlikdagi do'nglik bor. 10 soni −16 bilan 20 orasida, shuning uchun to'rtta kesishish bo'ladi. Javob: 4 ta nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-juft-model-parametr",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#8cf2a632"
+    },
+    {
+      "q": "Firmaning haftalik moliyaviy natijasi F = x² − 14|x| + 40 million so'm bilan ifodalanadi. F = −9 million so'm bo'ladigan nechta x qiymati mavjud?",
+      "v": [
+        "4 ta nuqtada",
+        "3 ta nuqtada",
+        "2 ta nuqtada",
+        "1 ta nuqtada"
+      ],
+      "t": 2,
+      "izoh": "Musbat x larda funksiyaning uchi x = 7 da, qiymati 49 − 98 + 40 = −9. Bu grafikning eng past darajasi, ya'ni chuqurchalarning tubi. Gorizontal chiziq aynan shu tubdan o'tsa, har bir chuqurchaga bittadan tegadi. Simmetriya tufayli ikkita nuqta chiqadi: x = 7 va x = −7. Javob: 2 ta nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-juft-model-parametr",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#20095f89"
+    },
+    {
+      "q": "Toshkent–Samarqand yo'lida Guliston 110-kilometr, Jizzax esa 200-kilometr belgisida joylashgan. Haydovchi shunday joyda to'xtamoqchiki, undan ikkala shaharga qadar masofalar yig'indisi 90 km bo'lsin. Bunday joylar nechta?",
+      "v": [
+        "Bitta nuqta",
+        "Ikkita nuqta",
+        "Cheksiz ko'p nuqta",
+        "Bunday nuqta yo'q"
+      ],
+      "t": 2,
+      "izoh": "Ikki shahar orasidagi masofa 200 − 110 = 90 km. Masofalar yig'indisi funksiyasining grafigi tubi tekis idishga o'xshaydi va tubning balandligi aynan 90 ga teng. Gorizontal chiziq shu tekis tubga ustma-ust tushadi. Demak [110; 200] oralig'idagi har bir nuqta shartni qanoatlantiradi. Javob: cheksiz ko'p nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ikki-masofa-modeli",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#f827352a"
+    },
+    {
+      "q": "Velosiped yo'lida A bekat 15-kilometr, B bekat esa 40-kilometr belgisida joylashgan. Sportchi shunday joyda to'xtadiki, ikkala bekatgacha masofalar yig'indisi 20 km bo'ldi. Bunday joy nechta bo'lishi mumkin?",
+      "v": [
+        "Bunday joy yo'q",
+        "Bitta joy",
+        "Ikkita joy",
+        "Cheksiz ko'p joy"
+      ],
+      "t": 0,
+      "izoh": "Bekatlar orasidagi masofa 40 − 15 = 25 km. Ikki masofa yig'indisi hech qachon 25 dan kichik bo'la olmaydi, chunki grafikning eng past qismi shu balandlikda. 20 soni 25 dan kichik, ya'ni gorizontal chiziq grafikdan pastda qoladi. Javob: bunday joy yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ikki-masofa-modeli",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#8df3394b"
+    },
+    {
+      "q": "A va B qishloqlari bitta to'g'ri yo'lda joylashgan, ular orasidagi masofa 12 km. Sayyoh shunday nuqtada turibdiki, A gacha masofa bilan B gacha masofa ayirmasi aynan 12 km ga teng. Bunday nuqtalar to'plami qanday bo'ladi?",
+      "v": [
+        "Faqat bitta nuqta",
+        "Bunday nuqta yo'q",
+        "Aniq ikkita nuqta",
+        "Nur, ya'ni cheksiz ko'p nuqta"
+      ],
+      "t": 3,
+      "izoh": "Masofalar ayirmasi funksiyasining qiymatlari −12 dan 12 gacha o'zgaradi. Eng katta qiymat 12 ga B dan narida turgan barcha nuqtalarda erishiladi, chunki u yerda grafik gorizontal bo'lak bo'lib qoladi. Gorizontal chiziq shu bo'lak bilan ustma-ust tushadi. Javob: nur, ya'ni cheksiz ko'p nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ikki-masofa-modeli",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#d5c5fe2d"
+    },
+    {
+      "q": "Uy bilan maktab orasidagi masofa 6 km va ikkalasi bitta to'g'ri ko'chada joylashgan. Ota shunday joyda turmoqchiki, uygacha va maktabgacha masofalar yig'indisi a km bo'lsin. a ning qanday qiymatlarida bunday joy aynan ikkita bo'ladi?",
+      "v": [
+        "a = 6",
+        "a > 6",
+        "a < 6",
+        "a ≥ 6"
+      ],
+      "t": 1,
+      "izoh": "Masofalar yig'indisi grafigi tubi tekis idish shaklida bo'lib, tubning balandligi 6 ga teng. a = 6 da butun kesma yechim bo'ladi, ya'ni joylar cheksiz ko'p. a < 6 da esa bitta ham joy topilmaydi. Aynan ikkita joy gorizontal chiziq tubdan yuqorida o'tganda chiqadi. Javob: a > 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ikki-masofa-modeli",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#5e994fcd"
+    },
+    {
+      "q": "|x² − 4x| = 4 va x² − 4|x| = 4 tenglamalarning ildizlari soni mos ravishda qanday bo'ladi? Ikki tenglamada modul har xil joyda turganiga e'tibor bering.",
+      "v": [
+        "3 va 2",
+        "2 va 3",
+        "4 va 2",
+        "3 va 4"
+      ],
+      "t": 0,
+      "izoh": "Birinchisida modul butun uchhadga tegishli: uch x = 2 da, qiymati 4 − 8 = −4, tepalik balandligi 4. Gorizontal chiziq aynan tepalik uchidan o'tgani uchun uchta ildiz chiqadi. Ikkinchisida modul x ga tegishli, funksiya juft va x = 0 dagi qiymati 0. 4 soni 0 dan katta bo'lgani uchun faqat ikkita ildiz qoladi. Javob: 3 va 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-joylashuvini-solishtirish",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#27c63903"
+    },
+    {
+      "q": "Karim ikkita tenglamani yechdi: |x² − 6x + 5| = 4 va x² − 6|x| + 5 = 4. Ularning ildizlari soni mos ravishda qanday bo'ladi?",
+      "v": [
+        "4 va 3",
+        "3 va 4",
+        "2 va 4",
+        "3 va 2"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tenglamada uchhadning uchi (3; −4), modul tepaligining balandligi 4 ga teng va chiziq aynan uchdan o'tadi, demak uchta ildiz. Ikkinchi tenglamada funksiya juft: x = 0 da qiymat 5, chuqurcha tubi esa −4. 4 soni −4 bilan 5 orasida yotgani uchun to'rtta ildiz chiqadi. Javob: 3 va 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-joylashuvini-solishtirish",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#761f0362"
+    },
+    {
+      "q": "Qaysi tenglama ko'proq ildizga ega: |x² − 2x − 3| = 2 yoki x² − 2|x| − 3 = 2? Javobni ildizlar soni bilan birga tanlang.",
+      "v": [
+        "Ikkinchisi, 4 ta ildiz bilan",
+        "Birinchisi, 3 ta ildiz bilan",
+        "Birinchisi, 4 ta ildiz bilan",
+        "Ikkalasi ham teng"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tenglamada uchhadning uchi (1; −4), tepalik balandligi 4 va 2 soni nol bilan 4 orasida, demak to'rtta ildiz. Ikkinchisida juft funksiyaning x = 0 dagi qiymati −3, chuqurcha tubi −4. 2 soni −3 dan katta bo'lgani uchun atigi ikkita ildiz chiqadi. Demak birinchisi ko'proq ildizga ega. Javob: birinchisi, 4 ta ildiz bilan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-joylashuvini-solishtirish",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#0a145469"
+    },
+    {
+      "q": "a = 3 bo'lganda |x² − 8x + 12| = a va x² − 8|x| + 12 = a tenglamalar ildizlari sonlarining yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "6",
+        "7",
+        "4",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tenglamada uchhadning uchi (4; −4), tepalik balandligi 4 va 3 soni nol bilan 4 orasida, shuning uchun to'rtta ildiz. Ikkinchisida juft funksiyaning chuqurcha tubi −4, x = 0 dagi qiymati 12; 3 soni shu ikki daraja orasida, demak yana to'rtta ildiz. Yig'indi 4 + 4 = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-joylashuvini-solishtirish",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#896fe016"
+    },
+    {
+      "q": "|x² − 2x − 8| = a tenglama haqidagi quyidagi mulohazalardan qaysi biri to'g'ri ekanini aniqlang.",
+      "v": [
+        "a = 9 da tenglama to'rtta ildizga ega",
+        "a = 5 da tenglama to'rtta ildizga ega",
+        "a = 0 da tenglama to'rtta ildizga ega",
+        "a = 12 da tenglama uchta ildizga ega"
+      ],
+      "t": 1,
+      "izoh": "Uchhadning uchi x = 1 da, qiymati 1 − 2 − 8 = −9, ya'ni modul tepaligining balandligi 9. To'rtta ildiz faqat 0 < a < 9 shartida bo'ladi, shuning uchun a = 5 to'g'ri keladi. a = 9 da uchta, a = 0 da ikkita, a = 12 da esa ikkita ildiz chiqadi. Javob: a = 5 da tenglama to'rtta ildizga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mulohazalarni-baholash",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#12a3e24c"
+    },
+    {
+      "q": "y = x² − 6|x| + 8 grafigi va y = a to'g'ri chizig'i haqidagi quyidagi mulohazalardan qaysi biri noto'g'ri?",
+      "v": [
+        "a = 8 da uchta umumiy nuqta bor",
+        "a = −1 da ikkita umumiy nuqta bor",
+        "a = 10 da to'rtta umumiy nuqta bor",
+        "a = 0 da to'rtta umumiy nuqta bor"
+      ],
+      "t": 2,
+      "izoh": "Juft funksiyaning x = 0 dagi qiymati 8, musbat tomondagi chuqurcha tubi esa 9 − 18 + 8 = −1. Demak a = 8 da uchta, a = −1 da ikkita, −1 bilan 8 orasidagi a larda esa to'rtta nuqta bo'ladi. 10 soni 8 dan katta, shuning uchun u yerda faqat ikkita nuqta qoladi. Javob: a = 10 da to'rtta umumiy nuqta bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mulohazalarni-baholash",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#755e5519"
+    },
+    {
+      "q": "|x² − 10x + 24| = a tenglamada a nol qiymatdan boshlab asta ortib borsa, ildizlar soni qanday ketma-ketlikda o'zgaradi?",
+      "v": [
+        "2 → 4 → 3 → 2",
+        "2 → 3 → 4 → 2",
+        "4 → 3 → 2 → 0",
+        "0 → 2 → 4 → 3"
+      ],
+      "t": 0,
+      "izoh": "Uchhadning uchi x = 5 da, qiymati 25 − 50 + 24 = −1, demak tepalik balandligi 1. a = 0 da grafik x o'qiga ikki joyda tegadi, ya'ni ikkita ildiz. 0 bilan 1 orasida to'rtta ildiz, a = 1 da uchta, a > 1 da esa yana ikkita ildiz qoladi. Javob: 2 → 4 → 3 → 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mulohazalarni-baholash",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#08dddc4b"
+    },
+    {
+      "q": "f(x) = x² + px + q kvadrat uchhadning diskriminanti D musbat bo'lsin. |f(x)| = a tenglama aynan uchta ildizga ega bo'lishi uchun a nimaga teng bo'lishi kerak?",
+      "v": [
+        "a = D",
+        "a = D/2",
+        "a = √D",
+        "a = D/4"
+      ],
+      "t": 3,
+      "izoh": "Uchhadning uchi x = −p/2 da, u yerdagi qiymat q − p²/4 ga teng. Bu qiymatni umumiy ko'rinishda yozsak, u −(p² − 4q)/4, ya'ni −D/4 bo'ladi. Modul olingandan keyin tepalikning balandligi D/4 ga teng. Uchta ildiz gorizontal chiziq aynan tepalik uchidan o'tganda chiqadi. Javob: a = D/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mulohazalarni-baholash",
+      "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini#d3a0ac20"
+    }
+  ]
+}

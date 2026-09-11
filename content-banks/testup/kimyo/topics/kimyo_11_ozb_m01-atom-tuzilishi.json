@@ -1,0 +1,606 @@
+{
+  "nom": "01-mavzu. Atom tuzilishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Ilk bor atom tuzilishini 1911-yilda taklif etgan va bu nazariya atomning planetar modeli deb atalgan olim kim?",
+      "v": [
+        "E. Rezerford",
+        "N. Bor",
+        "D.I. Mendeleyev",
+        "D.D. Ivanenko"
+      ],
+      "t": 0,
+      "izoh": "1911-yilda E. Rezerford va uning hamkaslari atomning planetar modelini taklif etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#781d06ae"
+    },
+    {
+      "q": "Rezerford modeliga ko'ra atomning markazini nima egallaydi?",
+      "v": [
+        "Musbat zaryadlangan yadro",
+        "Manfiy zaryadlangan yadro",
+        "Zaryadsiz neytronlar to'plami",
+        "Elektronlar buluti"
+      ],
+      "t": 0,
+      "izoh": "Rezerford nazariyasiga ko'ra atom markazini musbat zaryadlangan yadro egallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#55c7734a"
+    },
+    {
+      "q": "Elektron energiyani kvantlar (kichik qismlar) ga bo'lib ajratadi, deb taxmin qilgan daniyalik fizik olim kim?",
+      "v": [
+        "N. Bor",
+        "E. Rezerford",
+        "V. Pauli",
+        "Gund"
+      ],
+      "t": 0,
+      "izoh": "Daniyalik fizik olim N. Bor elektron energiyani kvantlarga bo'lib ajratadi deb taxmin qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#4087fd64"
+    },
+    {
+      "q": "N. Bor nazariyasiga ko'ra yadroga eng yaqin orbita atomning qaysi holatiga to'g'ri keladi?",
+      "v": [
+        "Eng turg'un \"asosiy\" holatiga",
+        "\"Qo'zg'algan\" holatiga",
+        "Ionlangan holatiga",
+        "Nostasionar holatiga"
+      ],
+      "t": 0,
+      "izoh": "Yadroga eng yaqin orbita atomning eng turg'un \"asosiy\" holatiga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#c01cfd98"
+    },
+    {
+      "q": "Atomga energiya berilganda elektronning yuqoriroq energetik darajaga ko'chishi bilan hosil bo'ladigan holat qanday deyiladi?",
+      "v": [
+        "Qo'zg'algan holat",
+        "Asosiy holat",
+        "Turg'un holat",
+        "Ionlangan holat"
+      ],
+      "t": 0,
+      "izoh": "Atomga energiya berilganda elektron yuqoriroq energetik darajaga ko'chadi, bu holat \"qo'zg'algan\" holat deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#46bbd1c5"
+    },
+    {
+      "q": "Atom orbitali deganda nima tushuniladi?",
+      "v": [
+        "Fazoning elektron mavjud bo'lishi mumkinligi 90% ni tashkil qilgan qismi",
+        "Elektronning yadro atrofidagi aniq aylanma orbitasi",
+        "Yadroning o'z ichiga olgan sohasi",
+        "Elektronlar umuman uchramaydigan fazoviy soha"
+      ],
+      "t": 0,
+      "izoh": "Fazoning elektron mavjud bo'lishi mumkinligi 90% ni tashkil qilgan qismi atom orbitali deb nomlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#2aaca01f"
+    },
+    {
+      "q": "s-orbital qanday shaklga ega?",
+      "v": [
+        "Sfera (shar) shakliga",
+        "Gantel shakliga",
+        "Ikkita tutashgan gantel shakliga",
+        "Uchta tutashgan gantel shakliga"
+      ],
+      "t": 0,
+      "izoh": "Sfera (shar) shaklidagi orbital s-orbital, gantel shaklidagi esa p-orbital deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#0fcc3e31"
+    },
+    {
+      "q": "Gantel shaklidagi atom orbitali qanday deyiladi?",
+      "v": [
+        "p-orbital",
+        "s-orbital",
+        "d-orbital",
+        "f-orbital"
+      ],
+      "t": 0,
+      "izoh": "Gantel shaklidagi orbital p-orbital deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#a319e5c0"
+    },
+    {
+      "q": "Ikkita tutashgan gantel shaklidagi atom orbitali qanday deyiladi?",
+      "v": [
+        "d-orbital",
+        "s-orbital",
+        "p-orbital",
+        "f-orbital"
+      ],
+      "t": 0,
+      "izoh": "Ikkita tutashgan gantel shaklidagi orbital d-orbital, uchta tutashgan gantel esa f-orbital deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#a7397f73"
+    },
+    {
+      "q": "Atomda elektronning energiyasini va harakatlanishini ta'riflash uchun nechta kvant soni kiritilgan?",
+      "v": [
+        "To'rtta",
+        "Uchta",
+        "Bitta",
+        "Ikkita"
+      ],
+      "t": 0,
+      "izoh": "Bosh kvant soni n, orbital kvant soni l, magnit kvant soni ml va spin kvant soni ms — to'rtta kvant soni kiritilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#b0ed7502"
+    },
+    {
+      "q": "Bosh kvant son n nimani xarakterlaydi?",
+      "v": [
+        "Elektronning energiyasini, yadrodan uzoqlik darajasini, ya'ni harakat qilib turgan qavatni",
+        "Atom orbitalining shaklini",
+        "Orbitalning tashqi magnit maydonga nisbatan holatini",
+        "Elektronning shaxsiy magnit momentini"
+      ],
+      "t": 0,
+      "izoh": "Bosh kvant son n elektronning energiyasini, yadrodan uzoqlik darajasini, ya'ni qavatni xarakterlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#8d101fce"
+    },
+    {
+      "q": "Bosh kvant son n qanday qiymatlarga ega bo'lishi mumkin?",
+      "v": [
+        "Birdan boshlab barcha butun sonlarga (n = 1, 2, 3 ...)",
+        "0 dan n − 1 gacha barcha butun sonlarga",
+        "Faqat +1/2 va −1/2 ga",
+        "+l dan −l gacha bo'lgan sonlarga"
+      ],
+      "t": 0,
+      "izoh": "Bosh kvant son birdan boshlab barcha butun sonlarga (n = 1, 2, 3 ...) ega bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#9a072a45"
+    },
+    {
+      "q": "Orbital kvant son l nimani ko'rsatadi?",
+      "v": [
+        "Atom orbitalining shaklini",
+        "Elektron qavatining raqamini",
+        "Elektron spini yo'nalishini",
+        "Elektronning yadro bilan tortishish energiyasini"
+      ],
+      "t": 0,
+      "izoh": "Orbital kvant son l atom orbitalining shaklini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#8e6998b1"
+    },
+    {
+      "q": "Orbital kvant son l = 0 bo'lsa, atom orbital qanday shaklga ega bo'ladi?",
+      "v": [
+        "Shar shakliga ega bo'ladi (s-orbital)",
+        "Gantel shaklini oladi (p-orbital)",
+        "Ikkita tutashgan gantel shaklini oladi (d-orbital)",
+        "Uchta tutashgan gantel shaklini oladi (f-orbital)"
+      ],
+      "t": 0,
+      "izoh": "l = 0 bo'lsa, atom orbital shar shakliga ega bo'ladi (s-orbital).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#fff79d50"
+    },
+    {
+      "q": "Pog'onachadagi maksimal elektronlar soni qaysi formula bilan aniqlanadi?",
+      "v": [
+        "2(2l+1)",
+        "2n²",
+        "n²",
+        "n+l"
+      ],
+      "t": 0,
+      "izoh": "Pog'onachadagi maksimal elektronlar soni 2(2l+1) formula bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#891fa6dd"
+    },
+    {
+      "q": "Birinchi energetik pog'onada qanday pog'onacha bo'ladi?",
+      "v": [
+        "Faqat bitta s-pog'onacha",
+        "Bitta s- va uchta p-pog'onacha",
+        "Bitta s-, uchta p- va beshta d-pog'onacha",
+        "Ikkita s-pog'onacha"
+      ],
+      "t": 0,
+      "izoh": "Birinchi pog'onada faqat bitta s-pog'onacha bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#a676c97a"
+    },
+    {
+      "q": "Uchinchi energetik pog'ona qanday orbitallardan tashkil topadi?",
+      "v": [
+        "Bitta s-, uchta p- va beshta d-orbitallardan",
+        "Faqat bitta s-orbitaldan",
+        "Bitta s- va uchta p-orbitallardan",
+        "Bitta s-, uchta p-, beshta d- va yettita f-orbitallardan"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi energetik pog'ona bitta s-, uchta p- va beshta d-orbitallardan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#459a99e2"
+    },
+    {
+      "q": "Uchinchi energetik pog'onada (n=3) jami nechta pog'onacha (orbital) mavjud?",
+      "v": [
+        "9 ta",
+        "3 ta",
+        "16 ta",
+        "18 ta"
+      ],
+      "t": 0,
+      "izoh": "n² formula bo'yicha 3² = 9 ta pog'onacha: 1 ta s-, 3 ta p- va 5 ta d-orbital.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#7c3d0552"
+    },
+    {
+      "q": "Magnit kvant soni ml nimani belgilaydi?",
+      "v": [
+        "Atom orbitalining tashqi magnit yoki elektr maydonlarga nisbatan holatini",
+        "Elektronning energiyasini",
+        "Orbitalning shaklini",
+        "Elektron qavatining raqamini"
+      ],
+      "t": 0,
+      "izoh": "Magnit kvant son ml atom orbitalining tashqi magnit yoki elektr maydonlarga nisbatan holatini belgilaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#e490b7d5"
+    },
+    {
+      "q": "Magnit kvant soni ml qanday qiymatlarga ega bo'ladi?",
+      "v": [
+        "+l dan −l gacha, 0 ga ham teng",
+        "Faqat +1/2 va −1/2",
+        "1 dan n gacha butun sonlar",
+        "Faqat musbat butun sonlar"
+      ],
+      "t": 0,
+      "izoh": "Magnit kvant son qiymatlari +l dan −l gacha bo'lib, 0 ga ham teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#b68ae153"
+    },
+    {
+      "q": "l = 2 bo'lganda magnit kvant soni nechta qiymatga ega bo'ladi?",
+      "v": [
+        "5 ta: +2, +1, 0, −1, −2",
+        "3 ta: −1, 0, +1",
+        "7 ta: +3 dan −3 gacha",
+        "2 ta: +2 va −2"
+      ],
+      "t": 0,
+      "izoh": "l = 2 bo'lganda ml 5 ta qiymatni (+2, +1, 0, −1, −2) qabul qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#394292c3"
+    },
+    {
+      "q": "Spin kvant soni ms qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "Faqat +1/2 va −1/2 ni",
+        "0 dan n−1 gacha butun sonlarni",
+        "+l dan −l gacha sonlarni",
+        "1, 2, 3 ... butun sonlarni"
+      ],
+      "t": 0,
+      "izoh": "Spin kvant son ms faqat +1/2 va −1/2 ga teng ikkita qiymatni qabul qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#2f270cbb"
+    },
+    {
+      "q": "n ning har qaysi qiymati uchun nechta orbital to'g'ri keladi?",
+      "v": [
+        "n² miqdorda",
+        "2n² miqdorda",
+        "2(2l+1) miqdorda",
+        "n + l miqdorda"
+      ],
+      "t": 0,
+      "izoh": "n ning har qaysi qiymati uchun n² miqdorda orbitallar to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#b44d0e90"
+    },
+    {
+      "q": "Elektronlarni orbitallar bo'yab joylashtirishda amal qilinadigan 2 ta asosiy qoida qaysilar?",
+      "v": [
+        "Energiyaning eng kichik qiymatiga ko'ra (Klechkovskiy qoidasi) va Pauli prinsipi",
+        "Gund qoidasi va Oktett qoidasi",
+        "Pauli prinsipi va Oktett qoidasi",
+        "Klechkovskiy qoidasi va Valentlik qoidasi"
+      ],
+      "t": 0,
+      "izoh": "Elektronlarni joylashtirishda Klechkovskiy qoidasi va Pauli prinsipi amal qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#b68aed2c"
+    },
+    {
+      "q": "Pauli prinsipiga ko'ra atomda qanday elektronlar mavjud bo'la olmaydi?",
+      "v": [
+        "To'rttala kvant sonlari bir xil qiymatga ega bo'lgan elektronlar",
+        "Bitta pog'onadagi elektronlar",
+        "Spinlari qarama-qarshi elektronlar",
+        "Tashqi qavatdagi elektronlar"
+      ],
+      "t": 0,
+      "izoh": "Pauli prinsipi: atomda to'rttala kvant sonlari bir xil qiymatga ega bo'lgan elektronlar mavjud bo'la olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#23374e4d"
+    },
+    {
+      "q": "Energetik pog'onadagi elektronlarning maksimal soni N qaysi formula bilan hisoblanadi?",
+      "v": [
+        "N = 2n²",
+        "N = n²",
+        "N = 2(2l+1)",
+        "N = n + l"
+      ],
+      "t": 0,
+      "izoh": "Pauli prinsipi asosida pog'onadagi elektronlarning maksimal soni N = 2n² bilan hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#5e09d709"
+    },
+    {
+      "q": "Klechkovskiy qoidasiga ko'ra ikki holatning qaysi biri uchun (n + l) yig'indisi kichik bo'lsa, o'sha holat birinchi navbatda elektronlar bilan to'la boshlaydi. Agar ikkala holat uchun (n + l) teng bo'lsa-chi?",
+      "v": [
+        "Bosh kvant soni n kichik bo'lgan holat elektronlar bilan to'lib boradi",
+        "Orbital kvant soni l katta bo'lgan holat to'lib boradi",
+        "Magnit kvant soni katta bo'lgan holat to'lib boradi",
+        "Ikkala holat bir vaqtda to'ladi"
+      ],
+      "t": 0,
+      "izoh": "(n+l) yig'indi teng bo'lsa, birinchi navbatda bosh kvant soni n kichik bo'lgan holat elektronlar bilan to'lib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#1fd41b4d"
+    },
+    {
+      "q": "Elektron orbitallarining energiyalari qatorida 3d dan keyin qaysi orbital keladi?",
+      "v": [
+        "4p",
+        "3p",
+        "4d",
+        "5s"
+      ],
+      "t": 0,
+      "izoh": "Energiya qatori: ...4s < 3d < 4p < 5s < 4d... bo'lgani uchun 3d dan keyin 4p keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#3f890c28"
+    },
+    {
+      "q": "Vodorod atomining turg'un holati qanday simvol bilan belgilanadi?",
+      "v": [
+        "1s¹",
+        "2s¹",
+        "1s²",
+        "2p¹"
+      ],
+      "t": 0,
+      "izoh": "Vodorod atomining turg'un holati 1s¹ simvoli bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#420312fb"
+    },
+    {
+      "q": "Geliy atomining elektron formulasini to'g'ri ko'rsating.",
+      "v": [
+        "1s²",
+        "1s¹",
+        "1s²2s¹",
+        "2s²"
+      ],
+      "t": 0,
+      "izoh": "Geliy atomida n+l = 1 bo'lganligi sababli bu holatda ikkita elektron bo'lishi mumkin (N = 2n² = 2), elektron formula 1s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#b4d94993"
+    },
+    {
+      "q": "Litiy atomining turg'un holati qanday formula bilan ifodalanadi?",
+      "v": [
+        "1s² 2s¹",
+        "1s³",
+        "1s² 2p¹",
+        "1s¹ 2s²"
+      ],
+      "t": 0,
+      "izoh": "Litiyning turg'un holati 1s² 2s¹ formula bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#6db1af1a"
+    },
+    {
+      "q": "Turg'un holatdagi litiy atomi nechta juftlashmagan elektronga ega?",
+      "v": [
+        "Bitta",
+        "Ikkita",
+        "Uchta",
+        "Nol"
+      ],
+      "t": 0,
+      "izoh": "Litiy atomida bitta juftlashmagan elektron mavjud, shu sababli u bitta kovalent bog'lanish hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#21caadce"
+    },
+    {
+      "q": "Gund qoidasiga ko'ra energiyalari bir xil bo'lgan orbitallarda elektronlar qanday tartibda joylashadi?",
+      "v": [
+        "Spinlar yig'indisi maksimal qiymatga ega bo'ladigan tartibda",
+        "Spinlar yig'indisi minimal qiymatga ega bo'ladigan tartibda",
+        "Har bir yacheykaga juft-juft joylashadigan tartibda",
+        "Klechkovskiy qoidasiga zid tartibda"
+      ],
+      "t": 0,
+      "izoh": "Gund qoidasi: energiyalari bir xil orbitallarda elektronlar spinlar yig'indisi maksimal bo'ladigan tartibda joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#e615e9bd"
+    },
+    {
+      "q": "Uglerod atomining elektron konfiguratsiyasi to'g'ri ko'rsatilgan qator qaysi?",
+      "v": [
+        "1s² 2s² 2p²",
+        "1s² 2s² 2p⁴",
+        "1s² 2s² 2p⁶",
+        "1s² 2s¹ 2p³"
+      ],
+      "t": 0,
+      "izoh": "Uglerod (z=6) atomining elektron konfiguratsiyasi 1s² 2s² 2p².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#a50bb846"
+    },
+    {
+      "q": "Azot atomining elektron konfiguratsiyasi qanday?",
+      "v": [
+        "1s² 2s² 2p³",
+        "1s² 2s² 2p²",
+        "1s² 2s² 2p⁴",
+        "1s² 2s² 2p⁵"
+      ],
+      "t": 0,
+      "izoh": "Azot (z=7) atomining elektron konfiguratsiyasi 1s² 2s² 2p³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#15096952"
+    },
+    {
+      "q": "Natriy (Na) atomining elektron konfiguratsiyasini to'g'ri ko'rsating.",
+      "v": [
+        "1s² 2s² 2p⁶ 3s¹",
+        "1s² 2s² 2p⁶ 3s²",
+        "1s² 2s² 2p⁵ 3s²",
+        "1s² 2s² 2p⁶ 2d¹"
+      ],
+      "t": 0,
+      "izoh": "Na: 1s² 2s² 2p⁶ 3s¹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#af787042"
+    },
+    {
+      "q": "Kalsiy (z = 20) atomining elektron konfiguratsiyasi qanday?",
+      "v": [
+        "1s² 2s² 2p⁶ 3s² 3p⁶ 4s²",
+        "1s² 2s² 2p⁶ 3s² 3p⁶ 3d²",
+        "1s² 2s² 2p⁶ 3s² 3p⁸",
+        "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ 3d¹"
+      ],
+      "t": 0,
+      "izoh": "Ca: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s². Avval 4s, keyin 3d to'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#080083ec"
+    },
+    {
+      "q": "Skandiy (z = 21) atomining elektron konfiguratsiyasi qanday?",
+      "v": [
+        "1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹ 4s²",
+        "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 4p¹",
+        "1s² 2s² 2p⁶ 3s² 3p⁶ 3d³",
+        "1s² 2s² 2p⁶ 3s² 3p⁶ 4s³"
+      ],
+      "t": 0,
+      "izoh": "Sc: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹ 4s². Kalsiy uchun (n+l)=4, skandiy uchun (n+l)=5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#3157fffd"
+    },
+    {
+      "q": "4-davr qaysi element bilan tugaydi?",
+      "v": [
+        "Kripton bilan",
+        "Argon bilan",
+        "Ksenon bilan",
+        "Neon bilan"
+      ],
+      "t": 0,
+      "izoh": "4-davr 4p-orbital elektronlariga umumiy soni 6 ga teng bo'lganligi uchun kripton bilan tugaydi (Kr ...4s² 4p⁶).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#962f84a1"
+    },
+    {
+      "q": "2pₓ, 2pᵧ, 2pz simvollari nimani ko'rsatadi?",
+      "v": [
+        "2p-orbitalning fazoda x, y, z o'qlaridagi yo'nalishini",
+        "Uch xil kvant son qiymatini",
+        "2p-pog'onadagi elektronlar sonini",
+        "2p-orbitalning energiya darajalarini"
+      ],
+      "t": 0,
+      "izoh": "2pₓ, 2pᵧ, 2pz simvollari bilan 2p-orbitalning fazoda x, y, z o'qlaridagi yo'nalishi ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m01-atom-tuzilishi#b2d4ad72"
+    }
+  ]
+}

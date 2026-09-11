@@ -1,0 +1,1609 @@
+{
+  "nom": "Parametrli tengsizliklar",
+  "bolim": "Tengsizliklar",
+  "blok": "tngs",
+  "rasmiyBolim": 3,
+  "sertifikat": false,
+  "savollar": [
+    {
+      "q": "x² − 6x + m > 0 tengsizlik barcha haqiqiy x qiymatlarida bajarilishi uchun m qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "m > 9",
+        "m < 9",
+        "m ≥ 9",
+        "m > 36"
+      ],
+      "t": 0,
+      "izoh": "Bosh koeffitsient 1 musbat, demak parabola tarmoqlari yuqoriga qaragan. Ifoda hamma joyda musbat bo'lishi uchun uchhadning haqiqiy ildizi bo'lmasligi, ya'ni D < 0 bo'lishi kerak. D = (−6)² − 4·1·m = 36 − 4m. 36 − 4m < 0 dan 4m > 36 va m > 9 kelib chiqadi. Javob: m > 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "barcha-x-uchun-musbat",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#5c9b2b93"
+    },
+    {
+      "q": "2x² + 4x + p ifodasi har qanday haqiqiy x da musbat qiymat qabul qilishi uchun p qanday bo'lishi kerak?",
+      "v": [
+        "p > 4",
+        "p > 2",
+        "p < 2",
+        "p ≥ 2"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda a = 2 musbat, shuning uchun faqat D < 0 shartini tekshirish yetarli. D = 4² − 4·2·p = 16 − 8p. 16 − 8p < 0 tengsizlikdan 8p > 16, demak p > 2. Agar 4a o'rniga 4 olinsa, xato bo'lib p > 4 chiqadi. Javob: p > 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "barcha-x-uchun-musbat",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#f7993cdc"
+    },
+    {
+      "q": "Sardorning korxonasida x ming dona mahsulot tayyorlash xarajati S(x) = x² − 14x + b million so'mga teng. Xarajat har qanday x da musbat bo'lishi uchun b ning eng kichik butun qiymatini toping.",
+      "v": [
+        "49",
+        "50",
+        "197",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "Xarajat hech qachon nolga tushmasligi uchun uchhad ildizga ega bo'lmasligi kerak: D < 0. D = (−14)² − 4·1·b = 196 − 4b, demak 196 − 4b < 0 va b > 49. Qat'iy tengsizlik bo'lgani uchun b = 49 yaramaydi, eng kichik butun qiymat 50 bo'ladi. Javob: 50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "barcha-x-uchun-musbat",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#152d42e8"
+    },
+    {
+      "q": "Quyidagi qiymatlardan qaysi birida 3x² − 6x + k ifodasi barcha haqiqiy x larda musbat bo'ladi: k = 1, k = 2, k = 3, k = 4?",
+      "v": [
+        "k = 1",
+        "k = 2",
+        "k = 3",
+        "k = 4"
+      ],
+      "t": 3,
+      "izoh": "Shart D < 0 ko'rinishida yoziladi: D = (−6)² − 4·3·k = 36 − 12k. 36 − 12k < 0 tengsizlikdan k > 3 chiqadi. k = 3 da D = 0 bo'lib, uchhad bir nuqtada nolga aylanadi, demak u yaramaydi. Berilganlardan faqat k = 4 shartni qanoatlantiradi. Javob: k = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "barcha-x-uchun-musbat",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#760ff616"
+    },
+    {
+      "q": "−x² + 4x + a < 0 tengsizlik barcha haqiqiy x uchun o'rinli bo'lishi uchun a qanday shartni qanoatlantiradi?",
+      "v": [
+        "a < −4",
+        "a > −4",
+        "a ≤ −4",
+        "a < 4"
+      ],
+      "t": 0,
+      "izoh": "Bosh koeffitsient −1 manfiy, demak parabola tarmoqlari pastga qaragan va uchhad butunlay o'qdan pastda yotishi mumkin. Buning uchun D < 0 bo'lsin: D = 4² − 4·(−1)·a = 16 + 4a. 16 + 4a < 0 dan 4a < −16, ya'ni a < −4. Javob: a < −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "barcha-x-uchun-manfiy",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#08d9176b"
+    },
+    {
+      "q": "−2x² + 6x + n uchhadi har qanday x da manfiy qiymat olishi uchun n ning eng katta butun qiymati nechaga teng?",
+      "v": [
+        "−5",
+        "−4",
+        "−10",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "a = −2 < 0 bo'lgani uchun faqat D < 0 talab qilinadi. D = 6² − 4·(−2)·n = 36 + 8n, demak 36 + 8n < 0 va n < −4,5. Bu oraliqdagi eng katta butun son −5. Tekshiramiz: n = −4 da D = 36 − 32 = 4 > 0, ya'ni uchhad musbat qiymat ham oladi. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "barcha-x-uchun-manfiy",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#7d871c6f"
+    },
+    {
+      "q": "Muzlatgich kamerasidagi havo harorati T(t) = −t² + 8t + c formula bilan beriladi, bu yerda t — sovutish boshlangandan keyin o'tgan soatlar soni (0 ≤ t ≤ 8). Harorat butun shu oraliqda noldan past bo'lishi uchun c qanday bo'lishi kerak?",
+      "v": [
+        "c > −16",
+        "c < 16",
+        "c < −16",
+        "c ≤ −16"
+      ],
+      "t": 2,
+      "izoh": "Tarmoqlar pastga qaragan, shuning uchun eng katta harorat parabola uchida bo'ladi: t = −8/(2·(−1)) = 4, bu nuqta [0; 8] oralig'ida yotadi. T(4) = −16 + 32 + c = 16 + c. Harorat doim manfiy bo'lishi uchun eng kattasi ham manfiy bo'lsin: 16 + c < 0, ya'ni c < −16. Xuddi shu shart D = 8² − 4·(−1)·c = 64 + 4c < 0 dan ham kelib chiqadi. Javob: c < −16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "barcha-x-uchun-manfiy",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#96626921"
+    },
+    {
+      "q": "ax² − 4x − 1 < 0 tengsizlik barcha haqiqiy x larda bajarilishi uchun a ning qiymatlari to'plamini ko'rsating.",
+      "v": [
+        "a < 0",
+        "a < −4",
+        "−4 < a < 0",
+        "a > −4"
+      ],
+      "t": 1,
+      "izoh": "Ikki shart birga bajarilishi kerak: tarmoqlar pastga qarashi uchun a < 0 va ildiz bo'lmasligi uchun D < 0. D = (−4)² − 4·a·(−1) = 16 + 4a, demak 16 + 4a < 0 va a < −4. Bu shart a < 0 ni ham o'z ichiga oladi. Javob: a < −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "barcha-x-uchun-manfiy",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#b1fba504"
+    },
+    {
+      "q": "(a − 3)x > 12 tengsizlikning yechimlar to'plami x > 4 nuridan iborat bo'lishi uchun a ning qiymati nechaga teng?",
+      "v": [
+        "4",
+        "6",
+        "15",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Yechim x > 4 ko'rinishida chiqishi uchun tengsizlikni musbat songa bo'lish kerak, ya'ni a − 3 > 0. U holda x > 12/(a − 3) bo'ladi va bu 4 ga teng bo'lishi shart. 12/(a − 3) = 4 dan a − 3 = 3, demak a = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-parametrli-yechim",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#ddff3da3"
+    },
+    {
+      "q": "(2 − k)x < 10 tengsizlikning yechimlar to'plami x > −5 bo'lsa, k ning qiymatini toping.",
+      "v": [
+        "−2",
+        "0",
+        "4",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlik belgisi teskarisiga o'zgargan, demak koeffitsient manfiy: 2 − k < 0. Bo'lgandan keyin x > 10/(2 − k) hosil bo'ladi va bu −5 ga teng. 10/(2 − k) = −5 dan 2 − k = −2, demak k = 4. Koeffitsientning o'zini javob deb olish tipik xato. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-parametrli-yechim",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#9f7a46a5"
+    },
+    {
+      "q": "Nodira tikuvchilik sexida bir kunda (k − 3) ta ko'ylak tikadi. U 12 ish kunida 96 tadan ko'p ko'ylak tikishi uchun k qanday bo'lishi kerak?",
+      "v": [
+        "k > 8",
+        "k > 99",
+        "k > 11",
+        "k ≥ 11"
+      ],
+      "t": 2,
+      "izoh": "12 kunda tikilgan ko'ylaklar soni 12·(k − 3) ta bo'ladi va u 96 dan katta bo'lishi kerak. 12·(k − 3) > 96 tengsizlikni 12 ga bo'lamiz: k − 3 > 8. Bundan k > 11 kelib chiqadi. 96 ga 3 ni qo'shib qo'yish tipik xato. Javob: k > 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-parametrli-yechim",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#102bfa29"
+    },
+    {
+      "q": "(m² − 4)x ≥ 0 tengsizlik barcha haqiqiy x qiymatlarida bajarilishi uchun m qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "m = 2",
+        "m > 2",
+        "m = −2 yoki m = 2",
+        "m ∈ (−2; 2)"
+      ],
+      "t": 2,
+      "izoh": "Agar m² − 4 > 0 bo'lsa, manfiy x larda chap tomon manfiy chiqadi va tengsizlik buziladi. Agar m² − 4 < 0 bo'lsa, musbat x larda buziladi. Demak yagona imkoniyat m² − 4 = 0, ya'ni m² = 4. Bundan m = −2 yoki m = 2. Javob: m = −2 yoki m = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-parametrli-yechim",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#555707e4"
+    },
+    {
+      "q": "x² + mx + 9 > 0 tengsizlik barcha haqiqiy x larda bajariladigan m ning nechta butun qiymati mavjud?",
+      "v": [
+        "13 ta",
+        "12 ta",
+        "10 ta",
+        "11 ta"
+      ],
+      "t": 3,
+      "izoh": "Tarmoqlar yuqoriga qaragan, shuning uchun shart D < 0. D = m² − 4·1·9 = m² − 36, demak m² < 36 va −6 < m < 6. Bu oraliqdagi butun sonlar −5 dan 5 gacha, ularning soni 11 ta. Chegaralarni ham qo'shib yuborish 13 ta degan xato javobga olib keladi. Javob: 11 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrning-butun-qiymatlari",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#1f1a2d81"
+    },
+    {
+      "q": "4x² − mx + 1 > 0 tengsizlik barcha x uchun o'rinli bo'lsin. Shu shartni qanoatlantiruvchi m ning butun qiymatlari yig'indisini toping.",
+      "v": [
+        "7",
+        "4",
+        "28",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "Shart D < 0: D = (−m)² − 4·4·1 = m² − 16. m² < 16 dan −4 < m < 4 kelib chiqadi. Butun qiymatlar: −3, −2, −1, 0, 1, 2, 3. Ularning yig'indisi qarama-qarshi sonlar juftlashgani uchun nolga teng. Qiymatlar sonini javob deb olish tipik xato. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrning-butun-qiymatlari",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#db851d8b"
+    },
+    {
+      "q": "Bir zavodda x tonna xomashyodan olinadigan sof daromad R(x) = x² − 8x + n million so'mga teng. Daromad har qanday x da musbat bo'lishi uchun n ning 20 dan kichik nechta natural qiymati mos keladi?",
+      "v": [
+        "4 ta",
+        "2 ta",
+        "16 ta",
+        "3 ta"
+      ],
+      "t": 3,
+      "izoh": "Daromad hech qachon nolga tushmasligi sharti D < 0 ko'rinishida yoziladi. D = (−8)² − 4·1·n = 64 − 4n, demak 64 − 4n < 0 va n > 16. Shartga ko'ra n < 20, ya'ni n qiymatlari 17, 18 va 19. Bu uchta son. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrning-butun-qiymatlari",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#2a46be21"
+    },
+    {
+      "q": "x² − 2(a + 1)x + a + 7 > 0 tengsizlik barcha haqiqiy x larda o'rinli bo'lsin. a ning nechta butun qiymati bu shartni qanoatlantiradi?",
+      "v": [
+        "4 ta",
+        "6 ta",
+        "5 ta",
+        "3 ta"
+      ],
+      "t": 0,
+      "izoh": "Juft koeffitsient uchun D/4 = (a + 1)² − (a + 7) formuladan foydalanamiz. Bu ifoda a² + 2a + 1 − a − 7 = a² + a − 6 ga teng. a² + a − 6 < 0 tengsizlikni yechamiz: (a + 3)(a − 2) < 0, demak −3 < a < 2. Butun qiymatlar −2, −1, 0, 1, ya'ni 4 ta. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrning-butun-qiymatlari",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#ce4bb66c"
+    },
+    {
+      "q": "x² − 8x + c ≥ 0 tengsizlik barcha haqiqiy x larda bajarilishi uchun c ning eng kichik qiymati nechaga teng?",
+      "v": [
+        "17",
+        "64",
+        "16",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Nomanfiylik talab qilinganda uchhad o'qqa urinishi mumkin, shuning uchun shart D ≤ 0. D = (−8)² − 4·1·c = 64 − 4c, demak 64 − 4c ≤ 0 va c ≥ 16. Eng kichik qiymat chegaraning o'zi, ya'ni 16 bo'ladi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomanfiylik-sharti",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#8c731e38"
+    },
+    {
+      "q": "9x² + 12x + t ≥ 0 tengsizligi barcha x uchun bajarilsin. t ning eng kichik butun qiymatini aniqlang.",
+      "v": [
+        "5",
+        "3",
+        "36",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Bosh koeffitsient musbat, demak yetarli shart D ≤ 0. D = 12² − 4·9·t = 144 − 36t. 144 − 36t ≤ 0 dan 36t ≥ 144 va t ≥ 4. Tenglik ruxsat etilgani uchun eng kichik qiymat 4 ga teng. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomanfiylik-sharti",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#9449e0af"
+    },
+    {
+      "q": "Osma ko'prikning tashuvchi trosidagi nuqtaning yo'l sathidan balandligi h(x) = 2x² − 12x + q metrga teng, bu yerda x — tayanchdan gorizontal masofa. Balandlik hech qanday x da manfiy bo'lmasligi uchun q ning eng kichik qiymatini toping.",
+      "v": [
+        "36",
+        "18",
+        "6",
+        "72"
+      ],
+      "t": 1,
+      "izoh": "Balandlik nomanfiy bo'lishi uchun D ≤ 0 bo'lishi kerak. D = (−12)² − 4·2·q = 144 − 8q, demak 144 − 8q ≤ 0 va q ≥ 18. Bosh koeffitsientdagi 2 ni hisobga olmaslik 36 degan xato javobni beradi. Eng kichik qiymat 18. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomanfiylik-sharti",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#1456ea2f"
+    },
+    {
+      "q": "a ning qanday qiymatlarida ax² + 6x + 3 ≥ 0 tengsizligi barcha haqiqiy x larda o'rinli bo'ladi?",
+      "v": [
+        "a > 3",
+        "a ≤ 3",
+        "a ≥ 3",
+        "a ≥ 12"
+      ],
+      "t": 2,
+      "izoh": "Avvalo tarmoqlar yuqoriga qarashi kerak, ya'ni a > 0. Ikkinchi shart D ≤ 0: D = 6² − 4·a·3 = 36 − 12a. 36 − 12a ≤ 0 dan a ≥ 3 chiqadi va bu a > 0 shartini ham qamrab oladi. Javob: a ≥ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomanfiylik-sharti",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#45e14eee"
+    },
+    {
+      "q": "Quyidagi ifodalardan qaysi biri barcha haqiqiy x larda musbat qiymat qabul qiladi: x² − 5x + 4, x² − 4x + 5, x² + 3x − 1, −x² + 2x + 3?",
+      "v": [
+        "x² − 5x + 4",
+        "x² − 4x + 5",
+        "x² + 3x − 1",
+        "−x² + 2x + 3"
+      ],
+      "t": 1,
+      "izoh": "Har birining diskriminantini sanaymiz: birinchisida 25 − 16 = 9 musbat, ikkinchisida 16 − 20 = −4 manfiy, uchinchisida 9 + 4 = 13 musbat. To'rtinchisining bosh koeffitsienti manfiy, demak u katta x larda manfiy bo'ladi. Faqat ikkinchi uchhadda a > 0 va D < 0 birga bajariladi. Javob: x² − 4x + 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doimiy-ishorali-uchhadni-tanlash",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#e7aaeb84"
+    },
+    {
+      "q": "Berilgan uchhadlardan qaysi biri barcha haqiqiy x larda manfiy: −x² + 6x − 10, −x² + 4x − 3, x² − 2x + 7, −2x² + 8x − 8?",
+      "v": [
+        "−x² + 6x − 10",
+        "−x² + 4x − 3",
+        "x² − 2x + 7",
+        "−2x² + 8x − 8"
+      ],
+      "t": 0,
+      "izoh": "Doimiy manfiylik uchun a < 0 va D < 0 kerak. Birinchisida D = 36 − 40 = −4, shart bajariladi. Ikkinchisida D = 16 − 12 = 4 musbat, uchhad musbat qiymat ham oladi. Uchinchisining bosh koeffitsienti musbat. To'rtinchisida D = 64 − 64 = 0, ya'ni x = 2 da ifoda nolga teng, qat'iy manfiy emas. Javob: −x² + 6x − 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doimiy-ishorali-uchhadni-tanlash",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#a2cbc363"
+    },
+    {
+      "q": "Nazorat ishida to'rt o'quvchi x² + bx + 16 uchhadini barcha x larda musbat qiladigan b ni tanladi: Anvar b = −8, Dilnoza b = 8, Kamola b = 7, Bekzod b = 9. Kimning tanlovi to'g'ri?",
+      "v": [
+        "Anvar",
+        "Dilnoza",
+        "Kamola",
+        "Bekzod"
+      ],
+      "t": 2,
+      "izoh": "Bosh koeffitsient 1 musbat, demak shart D < 0. D = b² − 4·1·16 = b² − 64, bundan b² < 64 va −8 < b < 8. Anvar va Dilnoza tanlagan qiymatlarda D = 0 bo'lib, uchhad nolga aylanadi. Bekzodning 9 soni oraliqdan tashqarida. Faqat 7 soni oraliqqa tushadi. Javob: Kamola.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doimiy-ishorali-uchhadni-tanlash",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#4d2a1972"
+    },
+    {
+      "q": "x² + 2x + 1 − k ifodasi barcha haqiqiy x larda qat'iy musbat bo'lishi uchun k qanday bo'lishi kerak?",
+      "v": [
+        "k > 0",
+        "k < 0",
+        "k ≤ 0",
+        "k < 1"
+      ],
+      "t": 1,
+      "izoh": "Ozod had 1 − k ga teng, shuning uchun D = 2² − 4·1·(1 − k) = 4 − 4 + 4k = 4k. Qat'iy musbatlik sharti D < 0, ya'ni 4k < 0 va k < 0. Buni to'la kvadrat orqali ham ko'rish mumkin: ifoda (x + 1)² − k ko'rinishida, eng kichik qiymati −k va u musbat bo'lishi kerak. Javob: k < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doimiy-ishorali-uchhadni-tanlash",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#4554ddf4"
+    },
+    {
+      "q": "x² − 4x + a < 0 tengsizlik birorta ham haqiqiy yechimga ega bo'lmasligi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a ≥ 4",
+        "a > 4",
+        "a ≤ 4",
+        "a ≥ 16"
+      ],
+      "t": 0,
+      "izoh": "Tengsizlik yechimga ega bo'lmasligi degani, uchhad hech qayerda manfiy emas, ya'ni barcha x larda x² − 4x + a ≥ 0. Tarmoqlar yuqoriga qaragan, shuning uchun shart D ≤ 0. D = 16 − 4a, demak 16 − 4a ≤ 0 va a ≥ 4. Javob: a ≥ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimga-ega-emaslik-sharti",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#df46234c"
+    },
+    {
+      "q": "2x² + 8x + c ≤ 0 tengsizlik yechimga ega bo'lmasligi uchun c ning eng kichik butun qiymati nechaga teng?",
+      "v": [
+        "8",
+        "9",
+        "17",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "Yechim bo'lmasligi uchun uchhad hamma joyda qat'iy musbat bo'lishi, ya'ni D < 0 bo'lishi kerak. D = 8² − 4·2·c = 64 − 8c, bundan 64 − 8c < 0 va c > 8. Tengsizlik qat'iy bo'lgani uchun c = 8 yaramaydi, eng kichik butun qiymat 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimga-ega-emaslik-sharti",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#f5ad56f8"
+    },
+    {
+      "q": "Sug'urta kompaniyasi kutilayotgan zararni Z(x) = x² − 10x + d modeli bilan baholaydi. Model hech qachon manfiy qiymat bermasligi uchun d ning eng kichik qiymatini toping.",
+      "v": [
+        "100",
+        "26",
+        "25",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Model nomanfiy bo'lishi, ya'ni Z(x) < 0 tengsizligi yechimsiz bo'lishi kerak. Bu D ≤ 0 shartiga teng: D = (−10)² − 4·1·d = 100 − 4d. 100 − 4d ≤ 0 dan d ≥ 25 kelib chiqadi. Tenglik ruxsat etilgani uchun eng kichik qiymat 25. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimga-ega-emaslik-sharti",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#48e81bb2"
+    },
+    {
+      "q": "−x² + bx − 9 > 0 tengsizlik hech qanday haqiqiy yechimga ega bo'lmasligi uchun b qanday shartni qanoatlantiradi?",
+      "v": [
+        "b ≤ −6 yoki b ≥ 6",
+        "−6 < b < 6",
+        "−6 ≤ b ≤ 6",
+        "b ≥ 6"
+      ],
+      "t": 2,
+      "izoh": "Yechim bo'lmasligi uchun barcha x larda −x² + bx − 9 ≤ 0 bo'lsin. Ikki tomonni −1 ga ko'paytirib, x² − bx + 9 ≥ 0 hosil qilamiz. Tarmoqlar yuqoriga qaragan, shart D ≤ 0: b² − 36 ≤ 0. Bundan b² ≤ 36 va −6 ≤ b ≤ 6. Javob: −6 ≤ b ≤ 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimga-ega-emaslik-sharti",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#14be75d1"
+    },
+    {
+      "q": "x² − 2x + a > 0 tengsizlik [0; 3] kesmaning barcha nuqtalarida bajarilishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a > 0",
+        "a > 3",
+        "a > 1",
+        "a ≥ 1"
+      ],
+      "t": 2,
+      "izoh": "Parametrni ajratamiz: a > −x² + 2x. O'ng tomondagi g(x) = −x² + 2x funksiyaning [0; 3] dagi eng katta qiymatini topamiz. Uning uchi x = 1 da, g(1) = 1, chetlarda esa g(0) = 0 va g(3) = −3. Demak eng katta qiymat 1 va a > 1 bo'lishi kerak. Javob: a > 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqda-bajarilish-parametrni-ajratish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#b3d3b17f"
+    },
+    {
+      "q": "Suv omborida sath h(t) = t² − 6t + a metrga teng, kuzatuv 0 dan 5 soatgacha davom etadi. Shu oraliqda sath doim musbat bo'lishi uchun a ning eng kichik butun qiymati nechaga teng?",
+      "v": [
+        "9",
+        "10",
+        "6",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Kesmadagi eng kichik sathni topamiz: t² − 6t ifodaning uchi t = 3 da, qiymati 9 − 18 = −9. Bu nuqta [0; 5] oraliq ichida. Demak eng kichik sath a − 9 ga teng va u musbat bo'lishi kerak: a > 9. Butun qiymatlardan eng kichigi 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqda-bajarilish-parametrni-ajratish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#4942050b"
+    },
+    {
+      "q": "x² + ax + 1 > 0 tengsizlik x ning barcha musbat qiymatlarida bajarilishi uchun a qanday shartni qanoatlantiradi?",
+      "v": [
+        "a ≥ −2",
+        "a > 2",
+        "a < 2",
+        "a > −2"
+      ],
+      "t": 3,
+      "izoh": "x > 0 bo'lgani uchun tengsizlikni x ga bo'lish mumkin: x + a + 1/x > 0, bundan a > −(x + 1/x). O'rta arifmetik va o'rta geometrik tengsizligiga ko'ra x + 1/x ≥ 2, tenglik x = 1 da. Demak −(x + 1/x) ning eng katta qiymati −2 va a > −2 bo'lishi kerak. Javob: a > −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqda-bajarilish-parametrni-ajratish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#0c11c487"
+    },
+    {
+      "q": "2x − a < 0 tengsizlik [1; 4] kesmaning har bir nuqtasida bajarilishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a > 2",
+        "a ≥ 8",
+        "a > 4",
+        "a > 8"
+      ],
+      "t": 3,
+      "izoh": "Tengsizlikni a > 2x ko'rinishida yozamiz. U kesmaning hamma nuqtasida o'rinli bo'lishi uchun a o'ng tomonning eng katta qiymatidan katta bo'lsin. 2x funksiya o'suvchi, uning [1; 4] dagi eng katta qiymati 2·4 = 8. Demak a > 8. Javob: a > 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqda-bajarilish-parametrni-ajratish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#ce4e2a1b"
+    },
+    {
+      "q": "Sexda t soatda tayyorlanadigan buyumlar soni n(t) = 5t − a formula bilan hisoblanadi. Ish 2 soatdan 6 soatgacha davom etsa, shu oraliqda ishlab chiqarish doim musbat bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a < 30",
+        "a > 10",
+        "a ≤ 10",
+        "a < 10"
+      ],
+      "t": 3,
+      "izoh": "Shart 5t − a > 0, ya'ni a < 5t ko'rinishida yoziladi. Bu tengsizlik [2; 6] dagi hamma t uchun bajarilishi kerak, demak a o'ng tomonning eng kichik qiymatidan kichik bo'lsin. 5t ning eng kichik qiymati t = 2 da, u 10 ga teng. Javob: a < 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqda-bajarilish-parametrni-ajratish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#dc085c5f"
+    },
+    {
+      "q": "x² − 6x + m uchhadning ildizlari orasida x = 1 nuqta yotishi uchun m qanday bo'lishi kerak?",
+      "v": [
+        "m < 5",
+        "m > 5",
+        "m < 9",
+        "m > −5"
+      ],
+      "t": 0,
+      "izoh": "Tarmoqlari yuqoriga qaragan parabola faqat ildizlari orasida manfiy qiymat oladi. Demak shart f(1) < 0. f(1) = 1 − 6 + m = m − 5, ya'ni m − 5 < 0 va m < 5. Bu holda D = 36 − 4m ham avtomatik musbat bo'ladi. Javob: m < 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtaning-ildizlarga-nisbatan-joylashuvi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#d8cdcae2"
+    },
+    {
+      "q": "m = 6 bo'lganda x² − mx + 5 uchhadning x = 2 nuqtadagi qiymati qanday ishoraga ega va bundan qanday xulosa chiqadi?",
+      "v": [
+        "Musbat, x = 2 ildizlardan tashqarida",
+        "Manfiy, x = 2 ikki ildiz orasida",
+        "Nolga teng, x = 2 uchhadning ildizi",
+        "Manfiy, uchhadning haqiqiy ildizi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Avval m ni qo'yamiz: uchhad x² − 6x + 5 ko'rinishga keladi. Endi x = 2 ni qo'yamiz: 4 − 12 + 5 = −3, ya'ni qiymat manfiy. Tarmoqlar yuqoriga qaragan parabola manfiy qiymatni faqat ildizlari orasida oladi. Haqiqatan ham ildizlar 1 va 5, x = 2 esa ular orasida. Javob: manfiy, x = 2 ikki ildiz orasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtaning-ildizlarga-nisbatan-joylashuvi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#791ee706"
+    },
+    {
+      "q": "x² + 2x + k uchhadning ikkala ildizi ham x = 1 dan kichik bo'lishi uchun k qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "k ≤ 1",
+        "k > −3",
+        "−3 ≤ k < 1",
+        "−3 < k ≤ 1"
+      ],
+      "t": 3,
+      "izoh": "Uchta shart birga tekshiriladi. Birinchidan ildizlar mavjud bo'lsin: D = 4 − 4k ≥ 0, bundan k ≤ 1. Ikkinchidan x = 1 ildizlardan o'ngda bo'lsin: f(1) = 1 + 2 + k > 0, bundan k > −3. Uchinchidan parabola uchi x = −1 chapda yotadi, bu har doim bajariladi. Uchala shart birlashtirilsa −3 < k ≤ 1. Javob: −3 < k ≤ 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqtaning-ildizlarga-nisbatan-joylashuvi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#540a0160"
+    },
+    {
+      "q": "Anvar x² − 8x + c uchhadning x = 2 dagi qiymatini hisobladi va u manfiy chiqdi. Bundan c haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "c > 12",
+        "c < 4",
+        "c < 12",
+        "c < −12"
+      ],
+      "t": 2,
+      "izoh": "x = 2 ni qo'yamiz: 2² − 8·2 + c = 4 − 16 + c = c − 12. Shartga ko'ra bu ifoda manfiy, ya'ni c − 12 < 0. Bundan c < 12 kelib chiqadi. −16 hadini hisobga olmay c < 4 deb yozish tipik xato. Bu shart bir vaqtning o'zida uchhadning ikkita ildizi borligini va x = 2 ular orasida yotishini ham bildiradi. Javob: c < 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtaning-ildizlarga-nisbatan-joylashuvi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#2d92e798"
+    },
+    {
+      "q": "|x − 3| < a ko'rinishdagi tengsizlik hech bo'lmaganda bitta haqiqiy yechimga ega bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a > 0",
+        "a ≥ 0",
+        "a > 3",
+        "a < 0"
+      ],
+      "t": 0,
+      "izoh": "Modul har doim nomanfiy qiymat oladi va eng kichik qiymati nolga teng, u x = 3 da erishiladi. Tengsizlik yechimga ega bo'lishi uchun o'ng tomon shu eng kichik qiymatdan katta bo'lishi kerak. Demak a > 0. a = 0 da tengsizlik 0 < 0 ko'rinishiga keladi va bajarilmaydi. Javob: a > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modulli-parametrli-tengsizlik",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#98bd9b5a"
+    },
+    {
+      "q": "|x − 5| ≤ b tengsizlikning yechimlar to'plami uzunligi 9 ga teng bo'lsa, b nechaga teng?",
+      "v": [
+        "4,5",
+        "9",
+        "2,25",
+        "18"
+      ],
+      "t": 0,
+      "izoh": "Modulli tengsizlikni oraliq ko'rinishida yozamiz: −b ≤ x − 5 ≤ b, bundan 5 − b ≤ x ≤ 5 + b. Oraliqning uzunligi (5 + b) − (5 − b) = 2b ga teng. Shartga ko'ra 2b = 9, demak b = 4,5. Uzunlikning o'zini javob deb olish tipik xato. Javob: 4,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modulli-parametrli-tengsizlik",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#b186439e"
+    },
+    {
+      "q": "Zavodda tayyorlangan valning diametri d mm bo'lib, yaroqlilik sharti |d − 40| ≤ p ko'rinishida yozilgan. Yaroqli diametrlar 38,5 mm dan 41,5 mm gacha bo'lsa, p nechaga teng?",
+      "v": [
+        "3",
+        "0,75",
+        "38,5",
+        "1,5"
+      ],
+      "t": 3,
+      "izoh": "Shartdan 40 − p ≤ d ≤ 40 + p kelib chiqadi. Berilgan oraliqning chap chegarasi 38,5, demak 40 − p = 38,5 va p = 1,5. O'ng chegara ham tasdiqlaydi: 40 + 1,5 = 41,5. Oraliqning to'liq kengligi 3 ni javob deb olish tipik xato. Javob: 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-parametrli-tengsizlik",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#33a8d97d"
+    },
+    {
+      "q": "(x − 2)(x − a) < 0 tengsizlikning yechimlar to'plami (2; 7) oralig'idan iborat bo'lsa, a nechaga teng?",
+      "v": [
+        "7",
+        "5",
+        "2",
+        "−7"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytma manfiy bo'ladigan oraliq ikki ildiz orasida yotadi. Ildizlar 2 va a, berilgan oraliqning chegaralari esa 2 va 7. Demak ikkinchi ildiz 7 ga teng, ya'ni a = 7. Oraliq uzunligi 5 ni javob deb olish tipik xato. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechim-toplami-boyicha-parametrni-topish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#f3232d77"
+    },
+    {
+      "q": "x² − 8x + c < 0 tengsizlikning yechimlar to'plami (3; 5) oralig'i bo'lsa, c ning qiymatini toping.",
+      "v": [
+        "8",
+        "15",
+        "2",
+        "−15"
+      ],
+      "t": 1,
+      "izoh": "Yechim oralig'ining chegaralari uchhadning ildizlari bo'ladi, ya'ni ildizlar 3 va 5. Viyet teoremasiga ko'ra ildizlar yig'indisi 8, bu berilgan koeffitsientga mos keladi. Ildizlar ko'paytmasi esa ozod hadga teng: 3·5 = 15, demak c = 15. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechim-toplami-boyicha-parametrni-topish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#c337d4e4"
+    },
+    {
+      "q": "Do'kondagi mahsulot narxi x ming so'm bo'lganda savdo foydali bo'lish sharti x² − 26x + q < 0 tengsizlik bilan ifodalanadi. Savdo 8 ming so'mdan 18 ming so'mgacha narxlarda foydali bo'lsa, q nechaga teng?",
+      "v": [
+        "26",
+        "10",
+        "144",
+        "−144"
+      ],
+      "t": 2,
+      "izoh": "Foydalilik oralig'ining chegaralari uchhadning ildizlari, ya'ni 8 va 18. Ularning yig'indisi 26 bo'lib, tengsizlikdagi koeffitsientni tasdiqlaydi. Viyet teoremasiga ko'ra ozod had ildizlar ko'paytmasiga teng: 8·18 = 144. Javob: 144.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-toplami-boyicha-parametrni-topish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#d99e5a78"
+    },
+    {
+      "q": "x² + px + 12 ≤ 0 tengsizlikning yechimlar to'plami [2; 6] kesmadan iborat bo'lsa, p nechaga teng?",
+      "v": [
+        "8",
+        "12",
+        "−12",
+        "−8"
+      ],
+      "t": 3,
+      "izoh": "Kesmaning uchlari uchhadning ildizlari: 2 va 6. Ularning ko'paytmasi 12 bo'lib, ozod hadga mos keladi. Ildizlar yig'indisi 8 ga teng, Viyet teoremasiga ko'ra u −p ga teng bo'lishi kerak. Demak p = −8. Ishorani tushirib qoldirish tipik xato. Javob: −8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-toplami-boyicha-parametrni-topish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#5b76a56d"
+    },
+    {
+      "q": "f(x) = x² − 4x + a funksiyaning eng kichik qiymati 5 dan katta bo'lishi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a > 9",
+        "a > 5",
+        "a > 1",
+        "a ≥ 9"
+      ],
+      "t": 0,
+      "izoh": "Ifodani to'la kvadratga keltiramiz: x² − 4x + a = (x − 2)² + a − 4. Kvadrat nomanfiy bo'lgani uchun eng kichik qiymat x = 2 da erishiladi va u a − 4 ga teng. Shartga ko'ra a − 4 > 5, demak a > 9. Javob: a > 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-kvadrat-orqali-eng-kichik-qiymat",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#f889f29a"
+    },
+    {
+      "q": "x² + 6x + k > 2 tengsizlik barcha haqiqiy x larda bajarilishi uchun k ning eng kichik butun qiymati nechaga teng?",
+      "v": [
+        "11",
+        "12",
+        "13",
+        "44"
+      ],
+      "t": 1,
+      "izoh": "Hamma hadni chap tomonga o'tkazamiz: x² + 6x + k − 2 > 0. Doimiy musbatlik sharti D < 0, bu yerda D = 36 − 4·(k − 2) = 44 − 4k. 44 − 4k < 0 dan k > 11 kelib chiqadi, demak eng kichik butun qiymat 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadrat-orqali-eng-kichik-qiymat",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#bda7467e"
+    },
+    {
+      "q": "Basseyndagi suv harorati 0 dan 10 soatgacha bo'lgan oraliqda w(t) = t² − 10t + a formula bilan o'zgaradi. Harorat hech qachon 4 darajadan pastga tushmasligi uchun a ning eng kichik qiymatini toping.",
+      "v": [
+        "25",
+        "21",
+        "29",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "To'la kvadratga keltiramiz: t² − 10t + a = (t − 5)² + a − 25. Eng past harorat t = 5 da bo'ladi va bu nuqta [0; 10] oralig'ida yotadi, u a − 25 ga teng. Shartga ko'ra a − 25 ≥ 4, bundan a ≥ 29. Eng kichik qiymat 29 bo'ladi. Javob: 29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tola-kvadrat-orqali-eng-kichik-qiymat",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#191521c5"
+    },
+    {
+      "q": "−x² + 8x + m funksiyaning eng katta qiymati 3 dan kichik bo'lishi uchun m qanday bo'lishi kerak?",
+      "v": [
+        "m < 3",
+        "m < −16",
+        "m > −13",
+        "m < −13"
+      ],
+      "t": 3,
+      "izoh": "Ifodani −(x² − 8x) + m = −(x − 4)² + 16 + m ko'rinishga keltiramiz. Tarmoqlar pastga qaragani uchun eng katta qiymat x = 4 da va u m + 16 ga teng. Shartga ko'ra m + 16 < 3, demak m < −13. Javob: m < −13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tola-kvadrat-orqali-eng-kichik-qiymat",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#aef4d01e"
+    },
+    {
+      "q": "a musbat son bo'lganda x² − 2ax + a² ≤ 0 tengsizlikning yagona yechimi nimaga teng bo'ladi?",
+      "v": [
+        "x = a",
+        "x = −a",
+        "x = a²",
+        "Yechim yo'q"
+      ],
+      "t": 0,
+      "izoh": "Chap tomon to'la kvadrat: x² − 2ax + a² = (x − a)². Kvadrat hech qachon manfiy bo'lmaydi, shuning uchun tengsizlik faqat kvadrat nolga teng bo'lganda bajariladi. (x − a)² = 0 dan x = a kelib chiqadi. Javob: x = a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yagona-yechim-sharti",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#cf2ff341"
+    },
+    {
+      "q": "x² − 14x + c ≤ 0 tengsizlik faqat bitta haqiqiy yechimga ega bo'lishi uchun c nechaga teng bo'lishi kerak?",
+      "v": [
+        "7",
+        "49",
+        "196",
+        "−49"
+      ],
+      "t": 1,
+      "izoh": "Tarmoqlari yuqoriga qaragan parabola uchun tengsizlik ildizlar orasidagi kesmani beradi. Bu kesma bitta nuqtaga aylanishi uchun ildizlar ustma-ust tushsin, ya'ni D = 0. D = (−14)² − 4·1·c = 196 − 4c, demak 196 − 4c = 0 va c = 49. Javob: 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yagona-yechim-sharti",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#f45a5324"
+    },
+    {
+      "q": "Traktor bir kunda x gektar yer haydaydi. Agronom tuzgan 4x² − 24x + a ≤ 0 sharti faqat bitta x qiymatida bajarilsa, a nechaga teng?",
+      "v": [
+        "24",
+        "144",
+        "36",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "Yagona yechim bo'lishi uchun kvadrat uchhadning diskriminanti nolga teng bo'lsin. D = (−24)² − 4·4·a = 576 − 16a. 576 − 16a = 0 tenglamadan 16a = 576 va a = 36. Bosh koeffitsientdagi 4 ni unutish 144 degan xato javobga olib keladi. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yagona-yechim-sharti",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#0a14f718"
+    },
+    {
+      "q": "x² + (a − 1)x + 1 > 0 tengsizlikning yechimlar to'plami butun sonlar o'qidan iborat bo'lishi uchun a qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "−2 < a < 2",
+        "1 < a < 3",
+        "−3 < a < 1",
+        "−1 < a < 3"
+      ],
+      "t": 3,
+      "izoh": "Yechim butun o'q bo'lishi degani, uchhad hamma joyda musbat, ya'ni D < 0. D = (a − 1)² − 4·1·1 = (a − 1)² − 4. (a − 1)² < 4 dan −2 < a − 1 < 2 kelib chiqadi. Hamma tomonga 1 qo'shsak −1 < a < 3 hosil bo'ladi. Javob: −1 < a < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yagona-yechim-sharti",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#ab4e94bd"
+    },
+    {
+      "q": "x > 3 va x < a tengsizliklar sistemasi kamida bitta yechimga ega bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a > 3",
+        "a ≥ 3",
+        "a < 3",
+        "a > 0"
+      ],
+      "t": 0,
+      "izoh": "Sistemaning yechimi (3; a) oralig'idan iborat bo'ladi. Bu oraliq bo'sh bo'lmasligi uchun o'ng chegara chap chegaradan katta bo'lishi kerak. Demak a > 3. a = 3 da oraliq bo'sh, chunki x bir vaqtda 3 dan katta va kichik bo'la olmaydi. Javob: a > 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrli-tengsizliklar-sistemasi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#fdbfb3d5"
+    },
+    {
+      "q": "x ≥ a va x ≤ 12 sistemasining yechimlari uzunligi 7 ga teng kesmani tashkil qilsa, a nechaga teng?",
+      "v": [
+        "7",
+        "5",
+        "19",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Sistemaning yechimi [a; 12] kesma bo'ladi. Kesma uzunligi 12 − a ga teng va u 7 bo'lishi kerak. 12 − a = 7 tenglamadan a = 5 kelib chiqadi. Uzunlikni chegaraga qo'shib yuborish 19 degan xato javobni beradi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrli-tengsizliklar-sistemasi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#22fe9aa9"
+    },
+    {
+      "q": "Olimpiada shartiga ko'ra o'quvchi 15 tadan ko'p, lekin n tadan kam masala yechishi kerak. Shartni qanoatlantiruvchi masalalar soni 6 xil bo'lsa, n nechaga teng?",
+      "v": [
+        "21",
+        "23",
+        "22",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Shartni qanoatlantiruvchi butun sonlar 16 dan boshlanadi va n − 1 gacha davom etadi. Ularning soni (n − 1) − 16 + 1 = n − 16 ga teng. Shartga ko'ra n − 16 = 6, demak n = 22. Tekshiramiz: 16, 17, 18, 19, 20, 21 — roppa-rosa 6 ta son. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrli-tengsizliklar-sistemasi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#08729f89"
+    },
+    {
+      "q": "2x − a > 0 va x − 5 < 0 tengsizliklar sistemasi hech qanday yechimga ega bo'lmasligi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a > 10",
+        "a ≤ 10",
+        "a ≥ 5",
+        "a ≥ 10"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tengsizlikdan x > a/2, ikkinchisidan x < 5 kelib chiqadi. Sistema yechimi (a/2; 5) oralig'i bo'ladi. U bo'sh bo'lishi uchun chap chegara o'ng chegaradan kichik bo'lmasligi kerak: a/2 ≥ 5, demak a ≥ 10. a = 10 da oraliq bo'sh, shuning uchun tenglik ham kiradi. Javob: a ≥ 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrli-tengsizliklar-sistemasi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#88f11cf1"
+    },
+    {
+      "q": "(x² + 2x + 5)/(x² + ax + 4) kasrning maxraji hech qanday x da nolga aylanmasligi uchun a qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "−4 < a < 4",
+        "a < 4",
+        "−2 < a < 2",
+        "a > 4"
+      ],
+      "t": 0,
+      "izoh": "Maxraj nolga aylanmasligi uchun x² + ax + 4 = 0 tenglamaning haqiqiy ildizi bo'lmasligi kerak. Bu shart D < 0 ko'rinishida yoziladi: D = a² − 4·1·4 = a² − 16. a² < 16 dan −4 < a < 4 kelib chiqadi. Javob: −4 < a < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-maxraji-va-parametr",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#3b740dfd"
+    },
+    {
+      "q": "(3x + 1)/(x² − 6x + m) kasr barcha haqiqiy x larda aniqlangan bo'lishi uchun m ning eng kichik butun qiymati nechaga teng?",
+      "v": [
+        "9",
+        "10",
+        "36",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Kasr hamma joyda aniqlangan bo'lishi uchun maxraj nolga aylanmasin, ya'ni D < 0. D = (−6)² − 4·1·m = 36 − 4m, bundan 36 − 4m < 0 va m > 9. Qat'iy tengsizlik bo'lgani uchun m = 9 yaramaydi, eng kichik butun qiymat 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-maxraji-va-parametr",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#1695a960"
+    },
+    {
+      "q": "Korxona rentabelligi R = 100/(x² − 4x + k) formula bilan hisoblanadi, bu yerda x — ishlab chiqarish hajmi. Formula har qanday x da ma'noga ega va rentabellik musbat bo'lishi uchun k qanday bo'lishi kerak?",
+      "v": [
+        "k > 2",
+        "k ≥ 4",
+        "k > 4",
+        "k > 16"
+      ],
+      "t": 2,
+      "izoh": "Kasr musbat bo'lishi uchun surat musbat bo'lgani holda maxraj ham musbat bo'lishi kerak. Demak x² − 4x + k > 0 tengsizligi barcha x larda bajarilsin. Bosh koeffitsient musbat, shuning uchun shart D < 0: 16 − 4k < 0, bundan k > 4. Javob: k > 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-maxraji-va-parametr",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#ad8127d2"
+    },
+    {
+      "q": "(x² − 3x + a)/(x² + 1) > 0 tengsizlik barcha haqiqiy x larda bajarilishi uchun a qanday shartni qanoatlantiradi?",
+      "v": [
+        "a > 9",
+        "a > 1,5",
+        "a ≥ 2,25",
+        "a > 2,25"
+      ],
+      "t": 3,
+      "izoh": "Maxraj x² + 1 har qanday x da musbat, chunki x² nomanfiy. Demak kasrning ishorasi faqat suratga bog'liq va x² − 3x + a > 0 barcha x larda bajarilishi kerak. Bu shart D < 0 ni beradi: 9 − 4a < 0, bundan a > 2,25. Javob: a > 2,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-maxraji-va-parametr",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#d7cd300e"
+    },
+    {
+      "q": "x² − 5x + a < 0 tengsizlikning yechimlar to'plami [1; 2] kesmani butunlay o'z ichiga olishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a < 4",
+        "a < 6",
+        "a > 4",
+        "a < 10"
+      ],
+      "t": 0,
+      "izoh": "Tarmoqlari yuqoriga qaragan parabola uchun kesmadagi eng katta qiymat uning uchlarida bo'ladi. Shuning uchun f(1) < 0 va f(2) < 0 shartlarini yozamiz. f(1) = 1 − 5 + a = a − 4 < 0 dan a < 4, f(2) = 4 − 10 + a = a − 6 < 0 dan a < 6. Ikkalasi birga bajarilishi uchun a < 4. Javob: a < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliq-yechimlar-toplamiga-tegishli",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#332e8dd9"
+    },
+    {
+      "q": "x² − ax + 3 < 0 tengsizlik hech bo'lmaganda x = 2 nuqtada bajarilishi uchun a qanday shartni qanoatlantiradi?",
+      "v": [
+        "a > 7",
+        "a > 3,5",
+        "a < 3,5",
+        "a > 2"
+      ],
+      "t": 1,
+      "izoh": "x = 2 ni tengsizlikka qo'yamiz: 2² − a·2 + 3 < 0, ya'ni 4 − 2a + 3 < 0. Soddalashtirsak 7 − 2a < 0 hosil bo'ladi, bundan 2a > 7 va a > 3,5. Ikki tomonni 2 ga bo'lishni unutish a > 7 degan xato javobga olib keladi. Javob: a > 3,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-yechimlar-toplamiga-tegishli",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#e1877978"
+    },
+    {
+      "q": "Dorining qondagi miqdori C(t) = −t² + 6t + p mg/l formula bilan beriladi, t — qabuldan keyingi soatlar. Dori 5-soatda hali ham musbat miqdorda bo'lishi uchun p qanday bo'lishi kerak?",
+      "v": [
+        "p > 5",
+        "p < −5",
+        "p > −5",
+        "p > −30"
+      ],
+      "t": 2,
+      "izoh": "Shartga ko'ra C(5) > 0 bo'lishi kerak. C(5) = −5² + 6·5 + p = −25 + 30 + p = 5 + p. Demak 5 + p > 0 va bundan p > −5 kelib chiqadi. Ishorani almashtirib yuborish p > 5 degan xato javobni beradi. Javob: p > −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-yechimlar-toplamiga-tegishli",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#4a391aad"
+    },
+    {
+      "q": "(a − 1)x² + 2x + 3 > 0 tengsizlik x = 1 nuqtada bajarilishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a > 1",
+        "a < −4",
+        "a > −6",
+        "a > −4"
+      ],
+      "t": 3,
+      "izoh": "x = 1 ni qo'yamiz: (a − 1)·1 + 2·1 + 3 > 0, ya'ni a − 1 + 5 > 0. Soddalashtirsak a + 4 > 0 hosil bo'ladi va bundan a > −4. Bu yerda bosh koeffitsientning ishorasi haqidagi shart kerak emas, chunki faqat bitta nuqta tekshirilmoqda. Javob: a > −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-yechimlar-toplamiga-tegishli",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#6a299d8b"
+    },
+    {
+      "q": "y = x² + 4 parabola y = kx to'g'ri chiziqdan barcha nuqtalarda yuqorida yotishi uchun k qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "−4 < k < 4",
+        "k < 4",
+        "−2 < k < 2",
+        "k > 4"
+      ],
+      "t": 0,
+      "izoh": "Shart barcha x lar uchun x² + 4 > kx ko'rinishida yoziladi. Hamma hadni chapga o'tkazsak x² − kx + 4 > 0 hosil bo'ladi. Tarmoqlar yuqoriga qaragan, shuning uchun shart D < 0: k² − 16 < 0. Bundan k² < 16 va −4 < k < 4. Javob: −4 < k < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-va-togri-chiziqning-joylashuvi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#2065f728"
+    },
+    {
+      "q": "y = 2x + b to'g'ri chiziq y = x² parabola bilan umuman kesishmasligi uchun b qanday bo'lishi kerak?",
+      "v": [
+        "b > −1",
+        "b < −1",
+        "b < 1",
+        "b < −4"
+      ],
+      "t": 1,
+      "izoh": "Kesishish nuqtalarini topish uchun x² = 2x + b tenglamani yozamiz, ya'ni x² − 2x − b = 0. Kesishish bo'lmasligi uchun bu tenglamaning haqiqiy ildizi bo'lmasin: D < 0. D = (−2)² − 4·1·(−b) = 4 + 4b, demak 4 + 4b < 0 va b < −1. Javob: b < −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-va-togri-chiziqning-joylashuvi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#56644a28"
+    },
+    {
+      "q": "Suv purkagichdan otilgan suv oqimi y = −x² + 6x parabola bo'ylab harakatlanadi. Oqim balandligi c metr bo'lgan gorizontal to'siqqa tegmasligi uchun c qanday bo'lishi kerak?",
+      "v": [
+        "c > 6",
+        "c < 9",
+        "c > 9",
+        "c ≥ 9"
+      ],
+      "t": 2,
+      "izoh": "Tegish nuqtasi bo'lsa, −x² + 6x = c tenglama yechimga ega bo'lardi. Uni x² − 6x + c = 0 ko'rinishga keltiramiz. Tegish bo'lmasligi uchun D < 0 bo'lsin: 36 − 4c < 0, bundan c > 9. Ya'ni to'siq oqimning eng yuqori nuqtasi 9 metrdan balandroqda bo'lishi kerak. Javob: c > 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parabola-va-togri-chiziqning-joylashuvi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#aba2f119"
+    },
+    {
+      "q": "Sun'iy ko'lning ko'ndalang kesimi y = x² − 4x + m parabola bilan ifodalanadi. Kesim suv sathi chizig'ini roppa-rosa ikki nuqtada kesib o'tishi uchun m qanday bo'lishi kerak?",
+      "v": [
+        "m > 4",
+        "m ≤ 4",
+        "m < 16",
+        "m < 4"
+      ],
+      "t": 3,
+      "izoh": "Suv sathi chizig'i abssissa o'qi vazifasini bajaradi, demak x² − 4x + m = 0 tenglamaning ikkita har xil ildizi bo'lishi kerak. Bu shart D > 0 ko'rinishida yoziladi: 16 − 4m > 0. Bundan 4m < 16 va m < 4. Tenglik holatida parabola o'qqa faqat urinadi. Javob: m < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-va-togri-chiziqning-joylashuvi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#a4383322"
+    },
+    {
+      "q": "4^x − a·2^x + 4 > 0 tengsizlik barcha haqiqiy x larda bajarilishi uchun a ning eng katta butun qiymati nechaga teng?",
+      "v": [
+        "3",
+        "4",
+        "2",
+        "−4"
+      ],
+      "t": 0,
+      "izoh": "t = 2^x almashtirishni kiritamiz, bunda t > 0 va tengsizlik t² − at + 4 > 0 ko'rinishga keladi. Agar a ≤ 0 bo'lsa, uchhad t > 0 da doim musbat. Agar a > 0 bo'lsa, eng kichik qiymat t = a/2 da bo'lib, u 4 − a²/4 ga teng va musbat bo'lishi kerak: a² < 16, ya'ni a < 4. Eng katta butun qiymat 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-bilan-kvadratga-keltirish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#b86abc01"
+    },
+    {
+      "q": "x⁴ − 10x² + m > 0 tengsizlik barcha haqiqiy x larda bajarilishi uchun m ning eng kichik butun qiymati nechaga teng?",
+      "v": [
+        "25",
+        "26",
+        "10",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "t = x² almashtirish kiritamiz, bunda t ≥ 0 va tengsizlik t² − 10t + m > 0 ko'rinishga keladi. Uchhadning uchi t = 5 da, bu qiymat ruxsat etilgan oraliqqa tegishli. Eng kichik qiymat 25 − 50 + m = m − 25 bo'lib, u musbat bo'lishi kerak: m > 25. Eng kichik butun qiymat 26. Javob: 26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-bilan-kvadratga-keltirish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#6df1895f"
+    },
+    {
+      "q": "Laboratoriyada o'lchanadigan ko'rsatkich 9^t − b·3^t + 9 ifoda bilan hisoblanadi va u har qanday t da musbat bo'lishi shart. b ning eng katta butun qiymatini toping.",
+      "v": [
+        "9",
+        "3",
+        "5",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "u = 3^t almashtirishni kiritamiz, bunda u > 0 va ifoda u² − bu + 9 ko'rinishga keladi. b ≤ 0 bo'lganda ifoda u > 0 da doim musbat. b > 0 bo'lganda eng kichik qiymat u = b/2 da bo'lib, 9 − b²/4 > 0 shartidan b² < 36 va b < 6 chiqadi. Eng katta butun qiymat 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-bilan-kvadratga-keltirish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#5bf5f0a1"
+    },
+    {
+      "q": "(log₂x)² − 4log₂x + a > 0 tengsizlik x ning barcha musbat qiymatlarida bajarilishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a > 2",
+        "a ≥ 4",
+        "a > 16",
+        "a > 4"
+      ],
+      "t": 3,
+      "izoh": "t = log₂x almashtirishni kiritamiz. x musbat sonlar bo'ylab o'zgarganda t barcha haqiqiy qiymatlarni oladi. Demak t² − 4t + a > 0 tengsizligi butun sonlar o'qida bajarilishi kerak, ya'ni D < 0. D = 16 − 4a, bundan 16 − 4a < 0 va a > 4. Javob: a > 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-bilan-kvadratga-keltirish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#fb07a6d9"
+    },
+    {
+      "q": "(a − 2)x² + 2(a − 2)x + 3 > 0 tengsizlik barcha haqiqiy x larda bajarilishi uchun a qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "2 ≤ a < 5",
+        "2 < a < 5",
+        "a > 2",
+        "2 ≤ a ≤ 5"
+      ],
+      "t": 0,
+      "izoh": "Avval a = 2 holatini alohida qaraymiz: tengsizlik 3 > 0 ko'rinishiga keladi va har doim to'g'ri. Endi a ≠ 2 bo'lsin, u holda a − 2 > 0 va D < 0 kerak. D ning to'rtdan biri (a − 2)² − 3(a − 2) = (a − 2)(a − 5) ga teng, u manfiy bo'lishi uchun 2 < a < 5. Ikki holni birlashtiramiz. Javob: 2 ≤ a < 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bosh-koeffitsientning-nolga-aylanishi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#8c630d98"
+    },
+    {
+      "q": "ax² + 6x + 2 > 0 tengsizlik barcha haqiqiy x larda bajarilishi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a > 18",
+        "a > 4,5",
+        "a ≥ 4,5",
+        "a > 0"
+      ],
+      "t": 1,
+      "izoh": "a = 0 bo'lsa ifoda 6x + 2 chiziqli bo'lib qoladi va katta manfiy x larda manfiy bo'ladi, demak bu hol yaramaydi. a > 0 bo'lishi va D < 0 bajarilishi kerak: D = 36 − 4·a·2 = 36 − 8a. 36 − 8a < 0 dan a > 4,5. Javob: a > 4,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bosh-koeffitsientning-nolga-aylanishi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#5e22631c"
+    },
+    {
+      "q": "O'quvchi (m + 1)x² − 2x + 1 > 0 tengsizlik barcha x larda bajarilishi uchun faqat D < 0 shartini yozdi. Uning yechimida qaysi hol tekshirilmay qolgan?",
+      "v": [
+        "Diskriminantni to'g'ri hisoblashni",
+        "Ozod hadning ishorasini",
+        "Bosh koeffitsient m + 1 = 0 bo'lgan holni",
+        "Tengsizlik belgisini o'zgartirishni"
+      ],
+      "t": 2,
+      "izoh": "Parametr bosh koeffitsientda turgani uchun ifoda kvadrat bo'lmasligi ham mumkin. m + 1 = 0, ya'ni m = −1 bo'lganda ifoda −2x + 1 chiziqli ko'rinishga keladi va D umuman ma'noga ega bo'lmaydi. Bunday hollarda avval a = 0 hol alohida tekshiriladi, keyin a ≠ 0 uchun a > 0 va D < 0 shartlari yoziladi. Javob: bosh koeffitsient m + 1 = 0 bo'lgan holni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bosh-koeffitsientning-nolga-aylanishi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#b9670b7f"
+    },
+    {
+      "q": "(k − 3)x² + (k − 3)x + 1 > 0 tengsizlik barcha haqiqiy x larda o'rinli bo'ladigan k ning nechta butun qiymati mavjud?",
+      "v": [
+        "3 ta",
+        "5 ta",
+        "Cheksiz ko'p",
+        "4 ta"
+      ],
+      "t": 3,
+      "izoh": "k = 3 bo'lganda tengsizlik 1 > 0 ko'rinishiga keladi va doim to'g'ri, demak bu qiymat yaraydi. k ≠ 3 bo'lsa k − 3 > 0 va D < 0 kerak: D = (k − 3)² − 4(k − 3) = (k − 3)(k − 7) < 0, bundan 3 < k < 7. Ikki holni birlashtirsak 3 ≤ k < 7 hosil bo'ladi. Butun qiymatlar 3, 4, 5, 6 — jami 4 ta. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bosh-koeffitsientning-nolga-aylanishi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#3a8e3adf"
+    },
+    {
+      "q": "|x| < a tengsizlikning butun yechimlari soni roppa-rosa 7 ta bo'lishi uchun a qaysi oraliqda yotishi kerak?",
+      "v": [
+        "3 < a ≤ 4",
+        "3 ≤ a < 4",
+        "a = 4",
+        "2 < a ≤ 3"
+      ],
+      "t": 0,
+      "izoh": "Tengsizlikning yechimi (−a; a) oralig'idan iborat. Unda 7 ta butun son bo'lishi uchun ular −3 dan 3 gacha bo'lishi kerak. Demak 3 oraliqqa tushsin, ya'ni a > 3, ammo 4 oraliqqa tushmasin, ya'ni a ≤ 4. Natijada 3 < a ≤ 4. Tekshiramiz: a = 4 da yechim (−4; 4) va butun sonlar −3 dan 3 gacha. Javob: 3 < a ≤ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-yechimlar-sonini-boshqarish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#62cde37b"
+    },
+    {
+      "q": "Kvadrat xonaning tomoni x metr bo'lib, yuzasi m dan kichik. Tomon uzunligining mumkin bo'lgan butun qiymatlari 3 xil bo'lsa, m qaysi oraliqda yotadi?",
+      "v": [
+        "9 ≤ m < 16",
+        "9 < m ≤ 16",
+        "m = 16",
+        "4 < m ≤ 9"
+      ],
+      "t": 1,
+      "izoh": "Shart x² < m, tomon musbat bo'lgani uchun 0 < x < √m. Butun qiymatlar 1, 2, 3 bo'lishi kerak, demak 3 oraliqqa kirsin: √m > 3. Shu bilan birga 4 kirmasin: √m ≤ 4. Ikkalasini kvadratga ko'tarsak 9 < m ≤ 16 hosil bo'ladi. Javob: 9 < m ≤ 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-yechimlar-sonini-boshqarish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#963bdad4"
+    },
+    {
+      "q": "a butun son va a < 8 bo'lsin. (x − a)(x − 8) < 0 tengsizlikning yechimlari orasida roppa-rosa 4 ta butun son bo'lishi uchun a nechaga teng?",
+      "v": [
+        "5",
+        "2",
+        "3",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytma ildizlar orasida manfiy bo'ladi, demak yechim (a; 8) oralig'i. Undagi butun sonlar a + 1 dan 7 gacha, ularning soni 7 − a ga teng. Shartga ko'ra 7 − a = 4, bundan a = 3. Tekshiramiz: (3; 8) oralig'ida 4, 5, 6, 7 — roppa-rosa 4 ta son. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechimlar-sonini-boshqarish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#6e25166f"
+    },
+    {
+      "q": "Do'kon bir kunda 2 tadan ko'p, a tadan kam sovg'a qutisi sotadi. Mumkin bo'lgan qutilar sonlarining yig'indisi 18 ga teng bo'lsa, a qaysi oraliqda yotadi?",
+      "v": [
+        "6 ≤ a < 7",
+        "a = 7",
+        "5 < a ≤ 6",
+        "6 < a ≤ 7"
+      ],
+      "t": 3,
+      "izoh": "Sotuvlar soni 2 < x < a shartini qanoatlantiruvchi butun sonlar, ya'ni 3 dan boshlanadi. Yig'indi 18 bo'lishi uchun 3 + 4 + 5 + 6 = 18 kombinatsiyasi mos keladi, demak eng katta son 6. U holda 6 oraliqqa kirsin: a > 6, lekin 7 kirmasin: a ≤ 7. Javob: 6 < a ≤ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-yechimlar-sonini-boshqarish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#a331b96d"
+    },
+    {
+      "q": "Suv quvuridagi bosim p bar bo'lib, |p − a| ≤ 5 shartini qanoatlantirishi kerak. Ruxsat etilgan bosim 4 bardan 14 bargacha bo'lsa, a nechaga teng?",
+      "v": [
+        "9",
+        "5",
+        "10",
+        "19"
+      ],
+      "t": 0,
+      "izoh": "Modulli shartni oraliq ko'rinishida yozamiz: a − 5 ≤ p ≤ a + 5. Berilgan oraliqning chegaralari 4 va 14, demak a − 5 = 4 va a + 5 = 14. Ikkala tenglama ham a = 9 ni beradi. Oraliqning kengligi 10 ni javob deb olish tipik xato. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-parametrli-tengsizlik",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#de9ccbe4"
+    },
+    {
+      "q": "|2x − a| < 8 tengsizlikning yechimlar to'plami (−1; 7) oralig'i bo'lsa, a nechaga teng?",
+      "v": [
+        "3",
+        "6",
+        "8",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "Modulni ochamiz: −8 < 2x − a < 8, bundan (a − 8)/2 < x < (a + 8)/2. Oraliqning o'rtasi a/2 ga teng. Berilgan oraliqning o'rtasi esa (−1 + 7)/2 = 3. Demak a/2 = 3 va a = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-parametrli-tengsizlik",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#33fc82cb"
+    },
+    {
+      "q": "Ombordagi mahsulot og'irligi x tonna bo'lib, x² − 6x + a ≤ 0 shartini qanoatlantiradi. Mumkin bo'lgan og'irliklar kesmasining uzunligi 4 tonna bo'lsa, a nechaga teng?",
+      "v": [
+        "13",
+        "−5",
+        "5",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "Kesmaning uchlari uchhadning ildizlari, ular x = 3 ± √(9 − a) ko'rinishida. Kesma uzunligi ildizlar ayirmasiga, ya'ni 2√(9 − a) ga teng. 2√(9 − a) = 4 dan √(9 − a) = 2, bundan 9 − a = 4 va a = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-kesmasining-uzunligi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#1a3b9e34"
+    },
+    {
+      "q": "Yo'l qurilishi muddati x kun bo'lib, 2x² − 16x + b ≤ 0 shartini qanoatlantiradi. Mumkin bo'lgan muddatlar oralig'ining uzunligi 6 kun bo'lsa, b nechaga teng?",
+      "v": [
+        "7",
+        "32",
+        "28",
+        "14"
+      ],
+      "t": 3,
+      "izoh": "Ildizlar ayirmasi √D/a formula bilan topiladi, bu yerda D = 256 − 8b va a = 2. Demak √(256 − 8b)/2 = 6, bundan √(256 − 8b) = 12 va 256 − 8b = 144. Shundan 8b = 112 va b = 14. Diskriminantni nolga tenglashtirish 32 degan xato javobni beradi. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechim-kesmasining-uzunligi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#72d23607"
+    },
+    {
+      "q": "Yerto'la haroratini modellashtiruvchi x² + 2x + m ifoda manfiy bo'ladigan oraliqning uzunligi 8 birlikka teng bo'lsa, m nechaga teng?",
+      "v": [
+        "−15",
+        "15",
+        "−17",
+        "−8"
+      ],
+      "t": 0,
+      "izoh": "Ifoda ildizlari orasida manfiy bo'ladi, ildizlar esa x = −1 ± √(1 − m). Oraliq uzunligi 2√(1 − m) ga teng va u 8 ga teng bo'lishi kerak. Bundan √(1 − m) = 4, so'ng 1 − m = 16 va m = −15. Ishorani almashtirish 15 degan xato javobga olib keladi. Javob: −15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechim-kesmasining-uzunligi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#b4a05cc6"
+    },
+    {
+      "q": "To'garakdagi o'quvchilar soni x bo'lib, x² − ax + 15 < 0 shartini qanoatlantiradi va a musbat son. Mumkin bo'lgan sonlar oralig'ining uzunligi 2 bo'lsa, a nechaga teng?",
+      "v": [
+        "−8",
+        "8",
+        "64",
+        "15"
+      ],
+      "t": 1,
+      "izoh": "Ildizlar ayirmasi √D ga teng, bu yerda D = a² − 4·1·15 = a² − 60. Shartga ko'ra √(a² − 60) = 2, bundan a² − 60 = 4 va a² = 64. a musbat bo'lgani uchun a = 8. Tekshiramiz: x² − 8x + 15 < 0 ning yechimi (3; 5), uzunligi 2. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechim-kesmasining-uzunligi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#47d0aa32"
+    },
+    {
+      "q": "x² + 3x + 5 > 2x + a tengsizlik barcha haqiqiy x larda bajarilishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a > 4,75",
+        "a < 5",
+        "a < 4,75",
+        "a ≤ 4,75"
+      ],
+      "t": 2,
+      "izoh": "Hamma hadni chap tomonga o'tkazamiz: x² + x + 5 − a > 0. Bosh koeffitsient musbat, shuning uchun shart D < 0 bo'ladi. D = 1 − 4·(5 − a) = 4a − 19, demak 4a − 19 < 0 va a < 4,75. Javob: a < 4,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ifodani-barcha-x-uchun-taqqoslash",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#cc4c7015"
+    },
+    {
+      "q": "Ikki firmaning xarajati A(x) = x² + 6x + 20 va B(x) = 4x + k million so'mga teng. Birinchi firmaning xarajati har qanday x da ikkinchisidan katta bo'lishi uchun k qanday bo'lishi kerak?",
+      "v": [
+        "k > 19",
+        "k < 20",
+        "k ≤ 19",
+        "k < 19"
+      ],
+      "t": 3,
+      "izoh": "Shart x² + 6x + 20 > 4x + k ko'rinishida yoziladi. Hamma hadni chapga o'tkazsak x² + 2x + 20 − k > 0 hosil bo'ladi. Bu barcha x larda bajarilishi uchun D < 0: D = 4 − 4·(20 − k) = 4k − 76. 4k − 76 < 0 dan k < 19. Javob: k < 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-ifodani-barcha-x-uchun-taqqoslash",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#9fa3525f"
+    },
+    {
+      "q": "2x² + 8 ≥ ax tengsizlik barcha haqiqiy x qiymatlarida bajarilishi uchun a qanday oraliqda yotishi kerak?",
+      "v": [
+        "−8 ≤ a ≤ 8",
+        "−8 < a < 8",
+        "a ≤ 8",
+        "−4 ≤ a ≤ 4"
+      ],
+      "t": 0,
+      "izoh": "Hamma hadni chapga yig'amiz: 2x² − ax + 8 ≥ 0. Bosh koeffitsient musbat, nomanfiylik sharti esa D ≤ 0. D = a² − 4·2·8 = a² − 64, demak a² ≤ 64 va −8 ≤ a ≤ 8. Tenglik ruxsat etilgani uchun chegaralar ham kiradi. Javob: −8 ≤ a ≤ 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ifodani-barcha-x-uchun-taqqoslash",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#0b67da5e"
+    },
+    {
+      "q": "Anvarning omboridagi zaxira x² + a ifoda bilan baholanadi va u har qanday x da 2x dan ko'p bo'lishi kerak. a qanday shartni qanoatlantiradi?",
+      "v": [
+        "a > 2",
+        "a > 1",
+        "a ≥ 1",
+        "a > 4"
+      ],
+      "t": 1,
+      "izoh": "Shart x² + a > 2x ko'rinishida yoziladi, uni x² − 2x + a > 0 ga keltiramiz. Barcha x larda bajarilishi uchun D < 0 bo'lsin: D = 4 − 4a. 4 − 4a < 0 dan a > 1 kelib chiqadi. Buni to'la kvadrat orqali ham ko'rish mumkin: (x − 1)² + a − 1 > 0. Javob: a > 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ifodani-barcha-x-uchun-taqqoslash",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#9eefcf45"
+    },
+    {
+      "q": "a = 0 bo'lganda ax > 5 tengsizlikning yechimlar to'plami qanday bo'ladi?",
+      "v": [
+        "Barcha haqiqiy sonlar",
+        "x > 5",
+        "Yechimi yo'q",
+        "x < 5"
+      ],
+      "t": 2,
+      "izoh": "a = 0 ni qo'ysak, chap tomon nolga aylanadi va tengsizlik 0 > 5 ko'rinishiga keladi. Bu tasdiq hech qanday x da to'g'ri emas, chunki x umuman qatnashmaydi. Demak yechimlar to'plami bo'sh. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-qiymatiga-qarab-yechim-turi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#5d415953"
+    },
+    {
+      "q": "(a − 4)x < 6 tengsizlik a ning qanday qiymatida barcha haqiqiy x lar uchun bajariladi?",
+      "v": [
+        "a > 4",
+        "a < 4",
+        "Bunday a yo'q",
+        "a = 4"
+      ],
+      "t": 3,
+      "izoh": "Agar a − 4 ≠ 0 bo'lsa, tengsizlik x ni bir tomondan chegaralaydi va barcha x larni qamrab ololmaydi. Demak koeffitsient nolga teng bo'lishi kerak: a − 4 = 0, ya'ni a = 4. Bu holda tengsizlik 0 < 6 ko'rinishiga keladi va har doim to'g'ri. Javob: a = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-qiymatiga-qarab-yechim-turi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#713e4a90"
+    },
+    {
+      "q": "ax ≥ 0 tengsizlik faqat nomanfiy x larda bajarilishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a > 0",
+        "a ≥ 0",
+        "a < 0",
+        "a = 0"
+      ],
+      "t": 0,
+      "izoh": "a musbat bo'lsa, tengsizlikni a ga bo'lish mumkin va x ≥ 0 hosil bo'ladi, bu talab bilan mos. a manfiy bo'lsa, bo'lishda ishora almashadi va x ≤ 0 chiqadi. a = 0 bo'lsa tengsizlik 0 ≥ 0 ko'rinishiga keladi va barcha x larda to'g'ri. Demak faqat a > 0 yaraydi. Javob: a > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-qiymatiga-qarab-yechim-turi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#1096f545"
+    },
+    {
+      "q": "(a − 7)x > 2 tengsizlikning yechimi x < 2/(a − 7) ko'rinishida bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a > 7",
+        "a < 7",
+        "a = 7",
+        "a > 2"
+      ],
+      "t": 1,
+      "izoh": "Tengsizlikni koeffitsientga bo'lganda belgi teskarisiga o'zgargan, bu esa faqat manfiy songa bo'lishda sodir bo'ladi. Demak a − 7 < 0, ya'ni a < 7. a = 7 da tengsizlik 0 > 2 ko'rinishiga keladi va yechimi bo'lmaydi. Javob: a < 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-qiymatiga-qarab-yechim-turi",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#3c02b7b6"
+    },
+    {
+      "q": "a = 7 bo'lganda x² − ax + 12 kvadrat uchhad (3; 4) oralig'ida qanday ishoraga ega bo'ladi?",
+      "v": [
+        "Musbat",
+        "Nolga teng",
+        "Manfiy",
+        "Ishorasini o'zgartiradi"
+      ],
+      "t": 2,
+      "izoh": "a = 7 ni qo'yamiz va x² − 7x + 12 uchhadni hosil qilamiz. Uni ko'paytuvchilarga ajratamiz: (x − 3)(x − 4). Ildizlar 3 va 4, tarmoqlar esa yuqoriga qaragan. Yuqoriga qaragan parabola ildizlari orasida manfiy qiymat oladi, (3; 4) esa aynan shu oraliq. Javob: manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqdagi-ishorani-parametr-orqali-tekshirish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#11fe6512"
+    },
+    {
+      "q": "Sifat nazoratchisi k = 2 deb olib, x² + kx − 8 ifodaning [0; 2] kesmadagi ishorasini tekshirmoqchi. Natija qanday bo'ladi?",
+      "v": [
+        "Butun kesmada musbat",
+        "Butun kesmada manfiy",
+        "Kesmada ishorasini ikki marta o'zgartiradi",
+        "Kesma ichida manfiy, x = 2 da nolga teng"
+      ],
+      "t": 3,
+      "izoh": "k = 2 da ifoda x² + 2x − 8 ko'rinishga keladi, uni (x + 4)(x − 2) deb yozamiz. Ildizlar −4 va 2, ular orasida uchhad manfiy. [0; 2] kesma shu oraliqning o'ng qismida yotadi, x = 2 esa ildizning o'zi. Demak kesma ichida qiymat manfiy, o'ng uchida nolga aylanadi. Javob: kesma ichida manfiy, x = 2 da nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-ishorani-parametr-orqali-tekshirish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#38880c13"
+    },
+    {
+      "q": "Zavod detalining chetlanishi x² − 9x + c mikron bilan baholanadi. Nazoratchi c = 20 deb olsa, chetlanish qaysi oraliqda manfiy bo'ladi?",
+      "v": [
+        "(4; 5)",
+        "(−∞; 4)",
+        "(5; +∞)",
+        "(0; 4)"
+      ],
+      "t": 0,
+      "izoh": "c = 20 ni qo'yamiz: x² − 9x + 20. Ildizlarni topamiz, ular ko'paytmasi 20, yig'indisi 9 bo'lgan sonlar, ya'ni 4 va 5. Uchhad (x − 4)(x − 5) ko'rinishga keladi. Yuqoriga qaragan parabola faqat ildizlari orasida manfiy. Javob: (4; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-ishorani-parametr-orqali-tekshirish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#ffe4e98f"
+    },
+    {
+      "q": "x² + px + 9 uchhad hech qayerda manfiy bo'lmasligi va faqat bitta nuqtada nolga aylanishi uchun p qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "p = 6",
+        "p = −6 yoki p = 6",
+        "p = 3",
+        "p = 9"
+      ],
+      "t": 1,
+      "izoh": "Uchhad manfiy bo'lmasligi uchun D ≤ 0, faqat bitta nolga aylanishi uchun esa aynan D = 0 bo'lishi kerak. D = p² − 4·1·9 = p² − 36, demak p² = 36. Bundan p = −6 yoki p = 6 kelib chiqadi. Ikkala holda ham uchhad to'la kvadratga aylanadi. Javob: p = −6 yoki p = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-ishorani-parametr-orqali-tekshirish",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#ce1aebdd"
+    },
+    {
+      "q": "y = ax² + bx + c parabolaning uchi abssissa o'qidan yuqorida joylashgan va tarmoqlari yuqoriga qaragan. Bu holda ax² + bx + c > 0 tengsizlikning yechimlar to'plami qanday bo'ladi?",
+      "v": [
+        "Bo'sh to'plam",
+        "Ildizlar orasidagi oraliq",
+        "Barcha haqiqiy sonlar",
+        "Faqat bitta nuqta"
+      ],
+      "t": 2,
+      "izoh": "Tarmoqlar yuqoriga qaragan va uch abssissa o'qidan yuqorida bo'lsa, parabola o'qni umuman kesib o'tmaydi. Bu diskriminant manfiy ekanini bildiradi. Demak uchhad hamma joyda musbat qiymat oladi va tengsizlik istalgan x da bajariladi. Javob: barcha haqiqiy sonlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-eskiz-boyicha-parametrni-baholash",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#ec832021"
+    },
+    {
+      "q": "y = x² + bx + 9 parabola abssissa o'qiga faqat urinadi va urinish nuqtasi musbat yarim o'qda yotadi. b nechaga teng?",
+      "v": [
+        "6",
+        "−3",
+        "9",
+        "−6"
+      ],
+      "t": 3,
+      "izoh": "Urinish sharti D = 0, ya'ni b² − 36 = 0 va b = −6 yoki b = 6. Urinish nuqtasining abssissasi parabola uchi, u x = −b/2 ga teng. Bu son musbat bo'lishi uchun −b/2 > 0, ya'ni b manfiy bo'lishi kerak. Demak b = −6. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-eskiz-boyicha-parametrni-baholash",
+      "id": "matematika_tngs_m14-parametrli-tengsizliklar#183ba4b3"
+    }
+  ]
+}

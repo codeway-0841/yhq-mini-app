@@ -1,0 +1,531 @@
+{
+  "nom": "30-mavzu. Elektr Tokining Ishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektr zanjirining ichki qismida qanday jarayon sodir bo'ladi?",
+      "v": [
+        "Tok manbaida boshqa turdagi energiyalar elektr energiyaga aylanadi",
+        "Elektr energiya mexanik energiyaga aylanadi",
+        "Elektr energiya issiqlik energiyaga aylanadi",
+        "Elektr energiya yorug'lik energiyaga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Zanjirning ichki qismi — tok manbaida boshqa turdagi energiyalar, masalan, galvanik elementda kimyoviy energiya elektr energiyaga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#a0942b23"
+    },
+    {
+      "q": "Zanjirning tashqi qismida elektr energiya qanday energiyalarga aylanishi mumkin?",
+      "v": [
+        "Mexanik, issiqlik, yorug'lik va boshqa turdagi energiyalarga",
+        "Faqat mexanik energiyaga",
+        "Faqat issiqlik energiyaga",
+        "Faqat kimyoviy energiyaga"
+      ],
+      "t": 0,
+      "izoh": "Zanjirning iste'molchi ulangan tashqi qismida elektr energiya mexanik, issiqlik, yorug'lik va boshqa turdagi energiyalarga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#089cc44a"
+    },
+    {
+      "q": "Zanjirga ulangan elektr dvigatelda elektr energiya qanday energiyaga aylanadi?",
+      "v": [
+        "Mexanik energiyaga",
+        "Issiqlik energiyaga",
+        "Yorug'lik energiyaga",
+        "Kimyoviy energiyaga"
+      ],
+      "t": 0,
+      "izoh": "Elektr dvigatelda elektr energiya mexanik energiyaga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#78bbead5"
+    },
+    {
+      "q": "Lampochkada elektr energiya qanday energiyaga aylanadi?",
+      "v": [
+        "Issiqlik energiyasiga",
+        "Mexanik energiyaga",
+        "Kimyoviy energiyaga",
+        "Ovoz energiyasiga"
+      ],
+      "t": 0,
+      "izoh": "Lampochkada elektr energiya issiqlik energiyasiga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#dbb574be"
+    },
+    {
+      "q": "Iste'molchilarda elektr energiya boshqa turdagi energiyaga aylanishida zanjirdagi tok nima qiladi?",
+      "v": [
+        "Ish bajaradi",
+        "Qarshilik hosil qiladi",
+        "Kuchlanishni yo'q qiladi",
+        "Zaryadni yo'qotadi"
+      ],
+      "t": 0,
+      "izoh": "Iste'molchilarda elektr energiya boshqa turdagi energiyaga aylanishida zanjirdagi tok ish bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#4f67b69e"
+    },
+    {
+      "q": "Elektr kuchlanishning ta'rifi qaysi ifodada to'g'ri berilgan?",
+      "v": [
+        "U = A/q",
+        "U = A·q",
+        "U = q/A",
+        "U = A/t"
+      ],
+      "t": 0,
+      "izoh": "Elektr kuchlanish U = A/q ifodasi bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#6e0b392a"
+    },
+    {
+      "q": "Tokning bajargan ishini kuchlanish va zaryad orqali ifodalovchi formula qaysi?",
+      "v": [
+        "A = U·q",
+        "A = U/q",
+        "A = q/U",
+        "A = U·I"
+      ],
+      "t": 0,
+      "izoh": "U = A/q ifodasidan tokning bajargan ishi A = U·q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#793d6f8d"
+    },
+    {
+      "q": "Tok kuchining ta'rifi qaysi ifodada berilgan?",
+      "v": [
+        "I = q/t",
+        "I = q·t",
+        "I = t/q",
+        "I = U/q"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi I = q/t formulasi bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#e862a44b"
+    },
+    {
+      "q": "Elektr tokining bajargan ishining asosiy formulasi qaysi?",
+      "v": [
+        "A = I·U·t",
+        "A = I·U/t",
+        "A = I·t/U",
+        "A = U·t/I"
+      ],
+      "t": 0,
+      "izoh": "q = It ekanligini inobatga olib, A = IUt ifoda yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#eb7a36b6"
+    },
+    {
+      "q": "Elektr tokining iste'molchida ma'lum vaqt davomida bajargan ishi nimaga teng?",
+      "v": [
+        "Undan o'tayotgan tok kuchining unga qo'yilgan kuchlanish va tokning o'tish vaqti ko'paytmasiga",
+        "Tok kuchining kuchlanishga nisbatiga",
+        "Kuchlanishning vaqtga nisbatiga",
+        "Tok kuchining kvadratiga"
+      ],
+      "t": 0,
+      "izoh": "Elektr tokining iste'molchida ma'lum vaqt davomida bajargan ishi undan o'tayotgan tok kuchining unga qo'yilgan kuchlanish va tokning o'tish vaqti ko'paytmasiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#a3d0e15b"
+    },
+    {
+      "q": "Elektr toki bajargan ishning birligi nima?",
+      "v": [
+        "Joul (J)",
+        "Vatt (V)",
+        "Amper (A)",
+        "Volt (V)"
+      ],
+      "t": 0,
+      "izoh": "Elektr toki bajargan ishning birligi mexanik ish birligi kabi — joul (J) da hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#68d02211"
+    },
+    {
+      "q": "1 J qanday birliklar orqali ifodalanadi?",
+      "v": [
+        "1 A·1 V·1 s",
+        "1 A·1 V·1 soat",
+        "1 V·1 Ω·1 s",
+        "1 A²·1 Ω"
+      ],
+      "t": 0,
+      "izoh": "1 J = 1 A·1 V·1 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#61591e5d"
+    },
+    {
+      "q": "Bir joul qanday ishga teng?",
+      "v": [
+        "Zanjirning kuchlanishi bir volt bo'lgan qismida bir amperga teng bo'lgan tokning bir sekund davomida bajargan ishi",
+        "Bir volt kuchlanishda bir kulon zaryadning bir soatda bajargan ishi",
+        "Bir amper tokning bir volt qarshilikda bajargan ishi",
+        "Bir vatt quvvatli iste'molchining bir soatdagi ishi"
+      ],
+      "t": 0,
+      "izoh": "Zanjirning kuchlanishi bir volt bo'lgan qismida bir amperga teng bo'lgan tokning bir sekund davomida bajargan ishi bir joulga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#79a722ad"
+    },
+    {
+      "q": "Elektr tokining ishini hisoblash uchun qanday asboblar kerak?",
+      "v": [
+        "Voltmetr, ampermetr va soat",
+        "Voltmetr va ampermetr",
+        "Faqat voltmetr",
+        "Ampermetr va sekundomer"
+      ],
+      "t": 0,
+      "izoh": "Elektr tokining ishini hisoblash uchun uchta asbob: voltmetr, ampermetr va soat kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#11e40e0d"
+    },
+    {
+      "q": "Tok ishining bir-biriga ekvivalent uchta ifodasi qaysi javobda to'g'ri ko'rsatilgan?",
+      "v": [
+        "A = IUt = I²Rt = (U²/R)t",
+        "A = IUt = IRt = (U/R)t",
+        "A = IUt = I²R = U²/R",
+        "A = Uq = IRt = U²t"
+      ],
+      "t": 0,
+      "izoh": "Om qonunidan foydalanib, tok ishining ekvivalent ifodalari: A = IUt = I²Rt = (U²/R)t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#b88e4fac"
+    },
+    {
+      "q": "Sarflangan elektr energiya miqdor jihatdan nimaga teng?",
+      "v": [
+        "Elektr tokining bajargan ishiga",
+        "Elektr tokining quvvatiga",
+        "Zanjirdagi kuchlanishga",
+        "Zanjirdagi qarshilikka"
+      ],
+      "t": 0,
+      "izoh": "Sarflangan elektr energiya miqdor jihatdan elektr tokining bajargan ishiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#6a38bdf0"
+    },
+    {
+      "q": "Sarflangan energiya W deb belgilansa, uning ifodasi qanday?",
+      "v": [
+        "W = I·U·t",
+        "W = I·U/t",
+        "W = U·q/t",
+        "W = I²·R"
+      ],
+      "t": 0,
+      "izoh": "Sarflangan energiya W deb belgilansa, u holda W = IUt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#0a6b9557"
+    },
+    {
+      "q": "Iste'molchilarda sarflangan elektr energiya qanday asbob yordamida o'lchanadi?",
+      "v": [
+        "Elektrhisoblagich (schotchik)",
+        "Ampermetr",
+        "Voltmetr",
+        "Ohmmetr"
+      ],
+      "t": 0,
+      "izoh": "Elektr tokining bajargan ishi, ya'ni iste'molchilarda sarflangan elektr energiya maxsus asbob elektrhisoblagich (schotchik) yordamida o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#96566f75"
+    },
+    {
+      "q": "Elektr energiyasini hisoblagichda qanday asboblar birlashtirilgan?",
+      "v": [
+        "Voltmetr, ampermetr va soat",
+        "Faqat ampermetr va voltmetr",
+        "Ampermetr va ohmmetr",
+        "Voltmetr va sekundomer"
+      ],
+      "t": 0,
+      "izoh": "Elektr energiyasini hisoblagichda yuqorida aytilgan uchta asbob (voltmetr, ampermetr, soat) birlashtirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#23820bc7"
+    },
+    {
+      "q": "Elektr energiyasini iste'mol qiluvchi qaysi joylarda hisoblagichlar o'rnatilgan?",
+      "v": [
+        "Zavod, fabrika, ishlab chiqarish korxonalarida va uylarimizda",
+        "Faqat elektr stansiyalarida",
+        "Faqat maktablarda",
+        "Faqat shifoxonalarda"
+      ],
+      "t": 0,
+      "izoh": "Bunday hisoblagichlar elektr energiyani iste'mol qiluvchi barcha joylarda, ya'ni zavod, fabrika, ishlab chiqarish korxonalarida, shuningdek, uyimizda ham o'rnatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#0d5fea12"
+    },
+    {
+      "q": "Galvanik elementda qanday energiya elektr energiyaga aylanadi?",
+      "v": [
+        "Kimyoviy energiya",
+        "Mexanik energiya",
+        "Issiqlik energiya",
+        "Yorug'lik energiya"
+      ],
+      "t": 0,
+      "izoh": "Galvanik elementda kimyoviy energiya elektr energiyaga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#17563045"
+    },
+    {
+      "q": "220 V kuchlanishli tarmoqqa ulangan elektr isitgichdan 3 A tok o'tsa, 0,5 soatda tok qanday ish bajaradi?",
+      "v": [
+        "1188 kJ",
+        "330 kJ",
+        "660 kJ",
+        "2376 kJ"
+      ],
+      "t": 0,
+      "izoh": "A = IUt = 3·220·1800 J = 1188000 J = 1188 kJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#6acca4ef"
+    },
+    {
+      "q": "A = IUt formulasida t qanday birlikda olinishi kerak?",
+      "v": [
+        "Sekundda",
+        "Soatda",
+        "Minutda",
+        "Kunda"
+      ],
+      "t": 0,
+      "izoh": "Ish joulda chiqishi uchun vaqt sekundda olinadi: 0,5 soat = 1800 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#8a3dc6f7"
+    },
+    {
+      "q": "Zanjirning bir qismi uchun Om qonuni yordamida A = IUt dagi kuchlanish tok kuchi orqali qanday ifodalanadi?",
+      "v": [
+        "U = I·R",
+        "U = I/R",
+        "U = R/I",
+        "U = I²·R"
+      ],
+      "t": 0,
+      "izoh": "Om qonuniga ko'ra U = IR, shuning uchun A = I²Rt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#35529685"
+    },
+    {
+      "q": "Tok ishining A = I²Rt ko'rinishidagi ifodasi qanday hosil qilinadi?",
+      "v": [
+        "A = IUt dagi kuchlanishni Om qonuni orqali tok kuchi bilan ifodalash orqali",
+        "Tok kuchini vaqtga ko'paytirish orqali",
+        "Kuchlanishni qarshilikka bo'lish orqali",
+        "Tok kuchini kuchlanishga bo'lish orqali"
+      ],
+      "t": 0,
+      "izoh": "U = IR ni A = IUt ga qo'ysak, A = I²Rt hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#0dc44c2e"
+    },
+    {
+      "q": "Tok ishining A = (U²/R)·t ifodasida tok kuchi qanday ifodalangan?",
+      "v": [
+        "I = U/R",
+        "I = U·R",
+        "I = R/U",
+        "I = U²/R"
+      ],
+      "t": 0,
+      "izoh": "Om qonuniga ko'ra I = U/R, shu asosda A = (U²/R)t yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#8c884e1c"
+    },
+    {
+      "q": "Tok kuchi 2 marta ortsa, qarshilik va vaqt o'zgarmas holde, A = I²Rt formulaga ko'ra tokning bajargan ishi qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ish tok kuchining kvadratiga mutanosib, shuning uchun 2 marta ortgan tokda ish 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#d4d1929d"
+    },
+    {
+      "q": "Kuchlanish 2 marta ortsa, qarshilik o'zgarmas holde, A = (U²/R)t formulaga ko'ra tok ishi qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "4 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ish kuchlanishning kvadratiga mutanosib, demak 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#83c17cda"
+    },
+    {
+      "q": "Elektr zanjiri qanday qismlardan iborat?",
+      "v": [
+        "Ichki va tashqi qismlardan",
+        "Faqat tashqi qismdan",
+        "Faqat ichki qismdan",
+        "Yuqori va pastki qismlardan"
+      ],
+      "t": 0,
+      "izoh": "Elektr zanjir ichki va tashqi qismlardan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#13f340ff"
+    },
+    {
+      "q": "Iste'molchi elektr zanjirning qaysi qismiga ulanadi?",
+      "v": [
+        "Tashqi qismiga",
+        "Ichki qismiga",
+        "Tok manbai ichiga",
+        "Zanjirning hech qaysi qismiga"
+      ],
+      "t": 0,
+      "izoh": "Zanjirning iste'molchi ulangan tashqi qismida elektr energiya boshqa energiyalarga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#3c3eb472"
+    },
+    {
+      "q": "12 V kuchlanishga ulangan o'tkazgichdan 20 mA tok o'tsa, tokning bajargan ishini hisoblashda tok kuchini qanday birlikka o'tkazish kerak?",
+      "v": [
+        "Amperga",
+        "Milliamperda qoldirish kerak",
+        "Kiloamperga",
+        "Voltga"
+      ],
+      "t": 0,
+      "izoh": "Hisoblashda tok kuchi amperlarda ifodalanadi: 20 mA = 0,02 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#a11dc147"
+    },
+    {
+      "q": "Elektr tokining bajargan ishi qaysi kattaliklarga bog'liq?",
+      "v": [
+        "Tok kuchi, kuchlanish va tokning o'tish vaqtiga",
+        "Faqat tok kuchiga",
+        "Faqat kuchlanishga",
+        "Faqat qarshilikka"
+      ],
+      "t": 0,
+      "izoh": "A = IUt formulaga ko'ra ish tok kuchi, kuchlanish va vaqtga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#41aefab2"
+    },
+    {
+      "q": "Lampochkadagi kuchlanish 4,5 V, tok kuchi 0,2 A bo'lsa, 1 sekundda sarflangan elektr energiya qancha?",
+      "v": [
+        "0,9 J",
+        "9 J",
+        "0,45 J",
+        "4,5 J"
+      ],
+      "t": 0,
+      "izoh": "A = IUt = 0,2·4,5·1 = 0,9 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#ee67987e"
+    },
+    {
+      "q": "Tokning bajargan ishi vaqtga qanday bog'liq?",
+      "v": [
+        "To'g'ri mutanosib",
+        "Teskari mutanosib",
+        "Kvadrat mutanosib",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "A = IUt formulaga ko'ra ish vaqtga to'g'ri mutanosib.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#6f87c502"
+    },
+    {
+      "q": "220 V kuchlanishli tarmoqqa ulangan dvigateldan 2 A tok o'tsa, 1 sekundda tok qancha ish bajaradi?",
+      "v": [
+        "440 J",
+        "220 J",
+        "110 J",
+        "880 J"
+      ],
+      "t": 0,
+      "izoh": "A = IUt = 2·220·1 = 440 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m30-elektr-tokining-ishi#e6c03cd9"
+    }
+  ]
+}

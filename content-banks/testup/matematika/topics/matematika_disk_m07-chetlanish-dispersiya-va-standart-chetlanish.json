@@ -1,0 +1,1609 @@
+{
+  "nom": "Chetlanish, dispersiya va standart chetlanish",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Toshkentda bir haftaning kunlik eng yuqori harorati 27, 31, 24, 29, 33, 30 va 26 daraja bo'lgan. Shu qatorning kengligi necha darajaga teng?",
+      "v": [
+        "9 daraja",
+        "10 daraja",
+        "33 daraja",
+        "57 daraja"
+      ],
+      "t": 0,
+      "izoh": "Qator kengligi eng katta va eng kichik qiymatning ayirmasiga teng. Haftadagi eng yuqori harorat 33, eng past harorat 24 daraja. Kenglik = 33 − 24 = 9 daraja. 10 — chegaralarni ham sanab chiqish xatosi, 57 — ayirish o'rniga qo'shish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kenglik-kontekst",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#b2d8a859"
+    },
+    {
+      "q": "Quyidagi sonlar qatorining kengligini toping: 45, 38, 52, 41, 47, 36.",
+      "v": [
+        "52",
+        "88",
+        "16",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "Avval qatorni tartiblaymiz: 36, 38, 41, 45, 47, 52. Eng kichik qiymat 36, eng kattasi 52. Kenglik = 52 − 36 = 16. 9 — birinchi hadni eng katta deb olish xatosi, 52 — faqat maksimumni yozib qo'yish, 88 — ikkala chegarani qo'shish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kenglik-hisob",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#e8e8ad64"
+    },
+    {
+      "q": "Nodira beshta nazorat ishidan 12, 15, 18, 14 va 16 ball to'plagan. Uning 18 ballik natijasining o'rtachadan chetlanishi nechaga teng?",
+      "v": [
+        "−3",
+        "3",
+        "6",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "Avval o'rtachani topamiz: (12 + 15 + 18 + 14 + 16) : 5 = 75 : 5 = 15 ball. Chetlanish qiymatdan o'rtachani ayirish bilan hisoblanadi: 18 − 15 = 3. −3 ishorani teskari olish, 6 esa eng kichik natijadan ayirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chetlanish-bitta",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#d67e6718"
+    },
+    {
+      "q": "Ixtiyoriy sonli qatorda barcha qiymatlarning o'rtachadan chetlanishlari yig'indisi haqida qaysi tasdiq har doim to'g'ri bo'ladi?",
+      "v": [
+        "Har doim musbat son chiqadi",
+        "Qator kengligiga teng bo'ladi",
+        "Dispersiyaga teng bo'ladi",
+        "Har doim nolga teng bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Chetlanishlar yig'indisi Σ(xᵢ − x̄) = Σxᵢ − n·x̄ ko'rinishida yoziladi. O'rtacha ta'rifi bo'yicha Σxᵢ = n·x̄, demak ayirma nolga teng. Shuning uchun tarqoqlikni o'lchashda chetlanishlar kvadratga ko'tariladi, aks holda ular bir-birini yo'qotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetlanish-yigindi",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#0b08bd7a"
+    },
+    {
+      "q": "2, 4, 6, 8, 10 sonlari qatorining dispersiyasini hisoblang.",
+      "v": [
+        "8",
+        "40",
+        "2√2",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha: (2 + 4 + 6 + 8 + 10) : 5 = 6. Chetlanishlar −4, −2, 0, 2, 4 bo'ladi. Ularning kvadratlari yig'indisi 16 + 4 + 0 + 4 + 16 = 40. Dispersiya = 40 : 5 = 8. 40 — hadlar soniga bo'lishni unutish, 2√2 — bu standart chetlanish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dispersiya-kichik-qator",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#7116fd9a"
+    },
+    {
+      "q": "Bir novvoyxonada besh kun davomida 180, 200, 210, 220 va 240 ta non sotildi. Shu ma'lumotlar qatorining standart chetlanishi nechaga teng?",
+      "v": [
+        "400 ta",
+        "20 ta",
+        "60 ta",
+        "210 ta"
+      ],
+      "t": 1,
+      "izoh": "O'rtacha: (180 + 200 + 210 + 220 + 240) : 5 = 1050 : 5 = 210 ta. Chetlanishlar −30, −10, 0, 10, 30. Kvadratlari yig'indisi 900 + 100 + 0 + 100 + 900 = 2000, dispersiya 2000 : 5 = 400. Standart chetlanish √400 = 20 ta. 400 — ildiz olishni unutish, 60 — kenglik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "std-hisob-kontekst",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#d6bb3e6d"
+    },
+    {
+      "q": "Ma'lumotlar qatorining dispersiyasi 49 ga teng bo'lsa, uning standart chetlanishi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "49",
+        "24,5",
+        "7",
+        "2401"
+      ],
+      "t": 2,
+      "izoh": "Standart chetlanish dispersiyaning arifmetik kvadrat ildiziga teng: σ = √D. Demak σ = √49 = 7. 2401 — ildiz olish o'rniga kvadratga ko'tarish, 24,5 — ikkiga bo'lish xatosi, 49 esa dispersiyaning o'zini javob deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "std-dispersiyadan",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#75337de5"
+    },
+    {
+      "q": "Bir partiya qadoqlangan choyning og'irliklari uchun standart chetlanish 6 kg ekani aniqlandi. Shu qatorning dispersiyasi nechaga teng?",
+      "v": [
+        "6 kg²",
+        "12 kg²",
+        "3 kg²",
+        "36 kg²"
+      ],
+      "t": 3,
+      "izoh": "Dispersiya standart chetlanishning kvadratiga teng: D = σ². Demak D = 6² = 36 kg². Dispersiyaning o'lchov birligi ham kvadratga ko'tariladi, shuning uchun javob kg² da yoziladi. 12 — ikkiga ko'paytirish, 3 — ikkiga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dispersiya-stddan",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#f81bc7ce"
+    },
+    {
+      "q": "Bir guruh o'quvchining bo'yi o'lchanganda o'rtacha 162 sm, standart chetlanish esa 8 sm chiqdi. Keyin hamma 3 sm qalinlikdagi taglikda turgani ma'lum bo'lib, har bir o'lchov 3 sm ga kamaytirildi. Yangi standart chetlanish qanday bo'ladi?",
+      "v": [
+        "8 sm",
+        "5 sm",
+        "11 sm",
+        "159 sm"
+      ],
+      "t": 0,
+      "izoh": "Barcha qiymatga bir xil son qo'shilsa yoki ayirilsa, qator butunlay siljiydi, lekin qiymatlar orasidagi masofalar o'zgarmaydi. Chetlanishlar o'sha-o'shaligicha qoladi, demak dispersiya va standart chetlanish ham o'zgarmaydi: 8 sm. 5 sm — standart chetlanishdan 3 ni ayirish, 159 sm — o'rtachaning yangi qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljish-qoshish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#2d114c88"
+    },
+    {
+      "q": "Bir ustaxonada ishchilarning kunlik daromadi o'rtacha 90 000 so'm, standart chetlanishi 12 000 so'm. Barcha ishchining daromadi ikki barobar oshirilsa, yangi standart chetlanish qancha bo'ladi?",
+      "v": [
+        "12 000 so'm",
+        "24 000 so'm",
+        "48 000 so'm",
+        "6 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Barcha qiymat k ga ko'paytirilsa, chetlanishlar ham k ga ko'payadi, demak standart chetlanish |k| marta ortadi. Bu yerda k = 2, shuning uchun σ = 12 000 · 2 = 24 000 so'm. 48 000 — dispersiya qoidasini (k² marta) standart chetlanishga qo'llash xatosi, 12 000 — o'zgarmaydi deb o'ylash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljish-kopaytirish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#673d71d3"
+    },
+    {
+      "q": "A sinfdagi besh o'quvchining bali 70, 72, 74, 76, 78; B sinfdagi besh o'quvchiniki esa 60, 68, 74, 80, 88. Qaysi sinfning natijalari tarqoqroq va nima uchun?",
+      "v": [
+        "A sinf, chunki uning o'rtachasi kattaroq",
+        "Ikkalasi bir xil, chunki o'rtachalari teng",
+        "B sinf, chunki uning dispersiyasi kattaroq",
+        "A sinf, chunki ballari ketma-ket joylashgan"
+      ],
+      "t": 2,
+      "izoh": "Ikkala qatorning o'rtachasi 74 ga teng, shuning uchun taqqoslash faqat tarqoqlik bo'yicha bo'ladi. A sinfda chetlanishlar −4, −2, 0, 2, 4 va dispersiya 40 : 5 = 8. B sinfda chetlanishlar −14, −6, 0, 6, 14 va dispersiya 464 : 5 = 92,8. Dispersiyasi katta bo'lgan B sinf tarqoqroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-ikki-qator",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#6add8e2b"
+    },
+    {
+      "q": "Bir qatorda qiymatlar kvadratining o'rtachasi 58, qiymatlarning o'rtachasi esa 7 ga teng. Shu qatorning dispersiyasini toping.",
+      "v": [
+        "51",
+        "3",
+        "107",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "Dispersiyaning ikkinchi formulasi: D = (x²ning o'rtachasi) − (o'rtachaning kvadrati). Demak D = 58 − 7² = 58 − 49 = 9. 51 — o'rtachani kvadratga ko'tarmasdan ayirish, 107 — ayirish o'rniga qo'shish, 3 — bu standart chetlanish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-kvadratlar",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#bc2e358b"
+    },
+    {
+      "q": "Bir bo'limdagi olti xodimning hammasi kuniga aynan 8 soatdan ishlaydi. Ularning kunlik ish vaqti qatorining dispersiyasi nechaga teng?",
+      "v": [
+        "0",
+        "8",
+        "1",
+        "48"
+      ],
+      "t": 0,
+      "izoh": "Barcha qiymat bir xil bo'lgani uchun o'rtacha ham 8 soatga teng. Har bir chetlanish 8 − 8 = 0, ularning kvadratlari ham nol. Kvadratlar yig'indisini 6 ga bo'lsak, dispersiya 0 chiqadi. Tarqoqlik yo'q qatorda dispersiya har doim nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nol-dispersiya",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#5419625d"
+    },
+    {
+      "q": "Sardorning to'rtta test natijasi 62, 75, x va 58 ball. Shu qatorning kengligi 25 ball bo'lib, x eng katta natija bo'lsa, x nechaga teng?",
+      "v": [
+        "87",
+        "83",
+        "33",
+        "100"
+      ],
+      "t": 1,
+      "izoh": "x eng katta natija bo'lgani uchun eng kichik qiymat 58 ball bo'lib qoladi. Kenglik ta'rifiga ko'ra x − 58 = 25, bundan x = 83 ball. 87 — eng kichik qiymat sifatida 62 ni olish xatosi, 33 — qo'shish o'rniga ayirish, 100 — o'rtadagi qiymatdan hisoblash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-kenglik",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#b9c1b6c6"
+    },
+    {
+      "q": "4, 9, 11, 16 sonlari uchun o'rtacha chiziqli chetlanishni, ya'ni chetlanishlar modullarining o'rtachasini hisoblang.",
+      "v": [
+        "0",
+        "14",
+        "3,5",
+        "18,5"
+      ],
+      "t": 2,
+      "izoh": "O'rtacha: (4 + 9 + 11 + 16) : 4 = 40 : 4 = 10. Chetlanishlar −6, −1, 1, 6, ularning modullari 6, 1, 1, 6. Modullar yig'indisi 14, o'rtacha chiziqli chetlanish 14 : 4 = 3,5. 0 — modulsiz yig'indi, 14 — bo'lishni unutish, 18,5 — dispersiya qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetlanish-modul-ortacha",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#0d0ced15"
+    },
+    {
+      "q": "Bir avtobusdagi o'nta yo'lovchidan beshtasi 12 ming so'mdan, qolgan beshtasi 18 ming so'mdan chipta olgan. Chipta narxlari qatorining standart chetlanishi qanchaga teng?",
+      "v": [
+        "6 ming so'm",
+        "9 ming so'm",
+        "15 ming so'm",
+        "3 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "O'rtacha narx (12 + 18) : 2 = 15 ming so'm, chunki ikkala guruhda yo'lovchi soni teng. Har bir chetlanish moduli 3 ming so'mga teng, kvadrati esa 9. Dispersiya 9, standart chetlanish √9 = 3 ming so'm. 6 — kenglik, 9 — dispersiya, 15 — o'rtacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-qiymatli-qator",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#18b0bc68"
+    },
+    {
+      "q": "Birinchi mahsulotning o'rtacha og'irligi 50 g, standart chetlanishi 5 g; ikkinchisiniki o'rtacha 200 g, standart chetlanishi 16 g. Nisbiy tarqoqlik, ya'ni variatsiya koeffitsienti qaysi mahsulotda kattaroq?",
+      "v": [
+        "Birinchi mahsulotda: 10 foizga qarshi 8 foiz",
+        "Ikkinchi mahsulotda, chunki standart chetlanishi katta",
+        "Ikkalasida ham bir xil",
+        "Aniqlab bo'lmaydi, chunki o'rtachalar har xil"
+      ],
+      "t": 0,
+      "izoh": "Variatsiya koeffitsienti standart chetlanishning o'rtachaga nisbati sifatida hisoblanadi. Birinchi mahsulotda 5 : 50 = 0,1, ya'ni 10 foiz. Ikkinchisida 16 : 200 = 0,08, ya'ni 8 foiz. Nisbiy tarqoqlik birinchi mahsulotda kattaroq, garchi uning standart chetlanishi kichik bo'lsa ham.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "variatsiya-koeffitsienti",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#7318d2f9"
+    },
+    {
+      "q": "6, 6, 6 sonlaridan iborat qatorga 18 soni qo'shildi. Hosil bo'lgan yangi qatorning dispersiyasi nechaga teng?",
+      "v": [
+        "0",
+        "27",
+        "12",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Yangi qator 6, 6, 6, 18 bo'lib, o'rtachasi (6 + 6 + 6 + 18) : 4 = 36 : 4 = 9. Chetlanishlar −3, −3, −3, 9, ularning kvadratlari 9, 9, 9, 81. Yig'indi 108, dispersiya 108 : 4 = 27. 0 — eski dispersiya o'zgarmaydi deb o'ylash, 12 — kenglik, 9 — yangi o'rtacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshimcha-qiymat-tasir",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#6437c31d"
+    },
+    {
+      "q": "Ikki sinfning imtihon ballari o'rtachasi bir xil, lekin birinchi sinfning standart chetlanishi kichikroq chiqdi. Bu natija nimani anglatadi?",
+      "v": [
+        "Birinchi sinfning o'rtacha bali yuqoriroq",
+        "Birinchi sinfda o'quvchilar soni kamroq",
+        "Birinchi sinf ballari o'rtacha atrofida zichroq to'plangan",
+        "Birinchi sinfda eng yuqori ball kattaroq"
+      ],
+      "t": 2,
+      "izoh": "Standart chetlanish qiymatlarning o'rtachadan qanchalik uzoqlashganini o'lchaydi. U kichik bo'lsa, ballar o'rtacha atrofida zich joylashgan, ya'ni sinf bir tekis natija ko'rsatgan. Standart chetlanish o'quvchilar soni haqida ham, o'rtachaning kattaligi haqida ham hech narsa demaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "std-talqin",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#b351ec05"
+    },
+    {
+      "q": "a va 6 sonlaridan tuzilgan qatorning standart chetlanishi 4 ga teng. a soni 6 dan katta bo'lsa, a ning qiymatini toping.",
+      "v": [
+        "10",
+        "22",
+        "−2",
+        "14"
+      ],
+      "t": 3,
+      "izoh": "Ikki hadli qatorda o'rtacha (a + 6) : 2 bo'ladi, har bir chetlanish moduli esa (a − 6) : 2 ga teng. Demak standart chetlanish (a − 6) : 2 = 4, bundan a − 6 = 8 va a = 14. 10 — standart chetlanishni to'g'ridan-to'g'ri ayirma deb olish, 22 — dispersiyani ayirma deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-topish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#a7752ac2"
+    },
+    {
+      "q": "Bir ma'lumotlar qatorida eng katta had 96 ga, qator kengligi esa 41 ga teng. Qatordagi eng kichik had nechaga teng?",
+      "v": [
+        "137",
+        "65",
+        "55",
+        "41"
+      ],
+      "t": 2,
+      "izoh": "Kenglik = eng katta had − eng kichik had. Bundan eng kichik had = 96 − 41 = 55. Tekshiramiz: 96 − 55 = 41, demak shart bajariladi. 137 — ayirish o'rniga qo'shish, 41 — kenglikning o'zini javob deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-kenglik",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#8349c6c8"
+    },
+    {
+      "q": "−7, 3, −12, 5, 0, 8 sonlaridan tuzilgan qatorning kengligini aniqlang.",
+      "v": [
+        "20",
+        "−4",
+        "8",
+        "−12"
+      ],
+      "t": 0,
+      "izoh": "Eng katta had 8, eng kichigi −12. Kenglik = 8 − (−12) = 8 + 12 = 20. Manfiy sonni ayirishda ikki minus qo'shishga aylanadi. −4 — manfiy ishorani e'tiborsiz qoldirib 8 − 12 deb hisoblash, 8 va −12 esa faqat chegaralarni yozib qo'yish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kenglik-hisob",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#05329fd6"
+    },
+    {
+      "q": "Nurafshon shahridagi beshta o'lchov nuqtasida havo ifloslanishi 34, 52, 41, 60 va 45 birlik qayd etildi. Shu qatorning kengligi qanchaga teng?",
+      "v": [
+        "94 birlik",
+        "26 birlik",
+        "60 birlik",
+        "46,4 birlik"
+      ],
+      "t": 1,
+      "izoh": "Eng yuqori ko'rsatkich 60 birlik, eng pasti 34 birlik. Kenglik = 60 − 34 = 26 birlik. 94 — chegaralarni qo'shish, 60 — faqat maksimumni yozish, 46,4 — barcha ko'rsatkichlarning o'rtachasi, u tarqoqlikni emas, markazni ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kenglik-kontekst",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#3772200a"
+    },
+    {
+      "q": "Do'konda to'rt xil olma navining kilogramm narxi 14 000, 18 000, 22 000 va 26 000 so'm. Eng arzon navning o'rtacha narxdan chetlanishi qanchaga teng?",
+      "v": [
+        "6 000 so'm",
+        "−4 000 so'm",
+        "14 000 so'm",
+        "−6 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "O'rtacha narx: (14 000 + 18 000 + 22 000 + 26 000) : 4 = 80 000 : 4 = 20 000 so'm. Eng arzon nav 14 000 so'm, uning chetlanishi 14 000 − 20 000 = −6 000 so'm. Manfiy ishora narx o'rtachadan past ekanini bildiradi. 6 000 — ishorani tushirib qoldirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetlanish-bitta",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#93e1d466"
+    },
+    {
+      "q": "Besh hadli qatordagi chetlanishlardan to'rttasi −5, 2, −1 va 3 ga teng. Beshinchi chetlanish nechaga teng bo'ladi?",
+      "v": [
+        "1",
+        "−1",
+        "11",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Har qanday qatorda chetlanishlar yig'indisi nolga teng bo'ladi. Ma'lum to'rttasining yig'indisi −5 + 2 − 1 + 3 = −1. Demak beshinchisi 1 ga teng, chunki −1 + 1 = 0. 11 — modullarni qo'shish xatosi, −1 esa ishorani almashtirmasdan yozib qo'yish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetlanish-yigindi",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#231f1ab7"
+    },
+    {
+      "q": "1, 3, 5, 7 sonlari qatori uchun dispersiya qiymatini aniqlang.",
+      "v": [
+        "20",
+        "5",
+        "√5",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "O'rtacha: (1 + 3 + 5 + 7) : 4 = 4. Chetlanishlar −3, −1, 1, 3 bo'ladi. Kvadratlari yig'indisi 9 + 1 + 1 + 9 = 20, dispersiya 20 : 4 = 5. 20 — hadlar soniga bo'lishni unutish, √5 — standart chetlanish, 4 — o'rtachaning o'zi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dispersiya-kichik-qator",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#42b07e38"
+    },
+    {
+      "q": "Bir dehqon xo'jaligida to'rtta uchastkadan olingan bug'doy hosili 12, 14, 16 va 18 tonnani tashkil etdi. Shu hosil qatorining dispersiyasi nechaga teng?",
+      "v": [
+        "20 t²",
+        "6 t²",
+        "5 t²",
+        "√5 t²"
+      ],
+      "t": 2,
+      "izoh": "O'rtacha hosil: (12 + 14 + 16 + 18) : 4 = 60 : 4 = 15 tonna. Chetlanishlar −3, −1, 1, 3, kvadratlari yig'indisi 9 + 1 + 1 + 9 = 20. Dispersiya = 20 : 4 = 5 t². 20 — bo'lishni unutish, 6 — kenglik, √5 — standart chetlanish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dispersiya-kontekst",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#b9a809e7"
+    },
+    {
+      "q": "Aziza besh hafta davomida yugurgan masofasini yozib bordi: 12, 16, 18, 20 va 24 km. Uning haftalik masofalari qatorining standart chetlanishi qanchaga teng?",
+      "v": [
+        "4 km",
+        "16 km",
+        "12 km",
+        "18 km"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha masofa: (12 + 16 + 18 + 20 + 24) : 5 = 90 : 5 = 18 km. Chetlanishlar −6, −2, 0, 2, 6, kvadratlari yig'indisi 36 + 4 + 0 + 4 + 36 = 80. Dispersiya 80 : 5 = 16, standart chetlanish √16 = 4 km. 16 — ildiz olishni unutish, 12 — kenglik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "std-hisob-kontekst",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#d46ce844"
+    },
+    {
+      "q": "Ma'lumotlar qatorining dispersiyasi 0,25 ga teng bo'lsa, standart chetlanishi qanday qiymat oladi?",
+      "v": [
+        "0,125",
+        "0,5",
+        "0,0625",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Standart chetlanish dispersiyaning kvadrat ildizi: σ = √0,25 = 0,5. Tekshiruv: 0,5 · 0,5 = 0,25. 0,125 — ikkiga bo'lish, 0,0625 — ildiz o'rniga kvadratga ko'tarish xatosi. Birdan kichik sonning ildizi o'zidan katta chiqishini eslab qolish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "std-dispersiyadan",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#d8632c48"
+    },
+    {
+      "q": "Birinchi qatorning standart chetlanishi 5 sm, ikkinchisiniki 3 sm. Ularning dispersiyalari ayirmasi nechaga teng?",
+      "v": [
+        "16 sm²",
+        "2 sm²",
+        "4 sm²",
+        "34 sm²"
+      ],
+      "t": 0,
+      "izoh": "Dispersiya standart chetlanishning kvadrati: birinchisida 5² = 25 sm², ikkinchisida 3² = 9 sm². Ayirma 25 − 9 = 16 sm². 2 — dispersiyalar o'rniga standart chetlanishlarni ayirish, 4 — avval ayirib keyin kvadratga ko'tarish, 34 — ayirish o'rniga qo'shish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dispersiya-stddan",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#5c19a02b"
+    },
+    {
+      "q": "Beshta sonning yig'indisi 40, o'sha sonlar kvadratlarining yig'indisi esa 370 ga teng. Shu qatorning dispersiyasini hisoblang.",
+      "v": [
+        "66",
+        "306",
+        "74",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "O'rtacha = 40 : 5 = 8, kvadratlarning o'rtachasi = 370 : 5 = 74. Dispersiya formulasi D = 74 − 8² = 74 − 64 = 10. 74 — ikkinchi qadamda to'xtab qolish, 306 — yig'indidan o'rtachaning kvadratini ayirish, 66 — o'rtachani kvadratga ko'tarmaslik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "formula-kvadratlar",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#aac44bc2"
+    },
+    {
+      "q": "Birinchi mashina kuniga 8, 10, 12, 14 tonna, ikkinchisi esa 9, 11, 11, 13 tonna yuk tashidi. Qaysi mashinaning ish hajmi barqarorroq va uning dispersiyasi qancha?",
+      "v": [
+        "Ikkinchi mashina, dispersiyasi 2",
+        "Birinchi mashina, dispersiyasi 5",
+        "Ikkinchi mashina, dispersiyasi 4",
+        "Ikkalasi teng, dispersiyasi 5"
+      ],
+      "t": 0,
+      "izoh": "Ikkala qatorning o'rtachasi 11 tonna. Birinchisida chetlanishlar −3, −1, 1, 3 va dispersiya 20 : 4 = 5. Ikkinchisida chetlanishlar −2, 0, 0, 2 va dispersiya 8 : 4 = 2. Dispersiyasi kichik qator barqarorroq, demak ikkinchi mashina. 4 — bo'lishni chala bajarish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-ikki-qator",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#62194350"
+    },
+    {
+      "q": "Sinf test natijalari qatorining kengligi 18 ball, dispersiyasi 30 ga teng edi. O'qituvchi hamma o'quvchiga qo'shimcha 4 ball qo'shdi. Yangi kenglik va dispersiya qanday bo'ladi?",
+      "v": [
+        "Kenglik 22, dispersiya 34",
+        "Kenglik 18, dispersiya 34",
+        "Kenglik 18, dispersiya 30",
+        "Kenglik 22, dispersiya 30"
+      ],
+      "t": 2,
+      "izoh": "Barcha qiymatga bir xil son qo'shilganda qator o'ngga siljiydi, lekin hadlar orasidagi masofalar saqlanadi. Shuning uchun eng katta va eng kichik hadning ayirmasi ham, chetlanishlar ham o'zgarmaydi. Kenglik 18 ball, dispersiya 30 bo'lib qoladi; faqat o'rtacha 4 ballga ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljish-qoshish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#8d6f0b7c"
+    },
+    {
+      "q": "Ma'lum bir qatorning dispersiyasi 7 ga teng. Qatordagi barcha qiymat 3 ga ko'paytirilsa, yangi dispersiya nechaga teng bo'ladi?",
+      "v": [
+        "21",
+        "63",
+        "10",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "Barcha qiymat k ga ko'paytirilsa, chetlanishlar ham k ga ko'payadi, kvadratlari esa k² marta ortadi. Demak dispersiya k² = 9 marta ortadi: 7 · 9 = 63. 21 — standart chetlanish qoidasini (k marta) dispersiyaga qo'llash, 10 — ko'paytirish o'rniga qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljish-kopaytirish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#8bff536b"
+    },
+    {
+      "q": "Bir qatorning o'rtachasi 20, standart chetlanishi 4 ga teng. Har bir qiymat y = 5x − 3 qoidasi bilan almashtirilsa, yangi qatorning o'rtachasi va standart chetlanishi qanday bo'ladi?",
+      "v": [
+        "O'rtacha 97, standart chetlanish 17",
+        "O'rtacha 100, standart chetlanish 20",
+        "O'rtacha 97, standart chetlanish 100",
+        "O'rtacha 97, standart chetlanish 20"
+      ],
+      "t": 3,
+      "izoh": "O'rtacha chiziqli almashtirishga to'liq bo'ysunadi: 5 · 20 − 3 = 97. Standart chetlanishga esa faqat ko'paytuvchi ta'sir qiladi, siljish ta'sir qilmaydi: 5 · 4 = 20. 17 — siljishni standart chetlanishdan ham ayirish, 100 — koeffitsientni kvadratga ko'tarish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-almashtirish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#b2117202"
+    },
+    {
+      "q": "x, 10, 14 va 20 sonlarining o'rtacha arifmetigi 13 ga teng. Shu to'rtta sonning dispersiyasini toping.",
+      "v": [
+        "84",
+        "12",
+        "21",
+        "13"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi 4 · 13 = 52, demak x = 52 − 44 = 8. Qator 8, 10, 14, 20 ko'rinishida. Chetlanishlar −5, −3, 1, 7, kvadratlari 25, 9, 1, 49 va yig'indisi 84. Dispersiya = 84 : 4 = 21. 84 — bo'lishni unutish, 12 — kenglik, 13 — o'rtacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-topish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#0aa86255"
+    },
+    {
+      "q": "Ma'lumotlar qatorining standart chetlanishi qaysi holatda nolga teng bo'ladi?",
+      "v": [
+        "O'rtacha nolga teng bo'lganda",
+        "Barcha qiymat bir xil bo'lganda",
+        "Qiymatlar soni juft bo'lganda",
+        "Musbat va manfiy hadlar soni teng bo'lganda"
+      ],
+      "t": 1,
+      "izoh": "Standart chetlanish nolga teng bo'lishi uchun barcha chetlanishlar nol bo'lishi shart, ya'ni har bir qiymat o'rtachaga teng bo'lishi kerak. Bu esa faqat hamma qiymat bir xil bo'lgandagina yuz beradi. O'rtachaning nolga teng bo'lishi tarqoqlikni yo'qotmaydi: −5 va 5 qatorining o'rtachasi nol, lekin chetlanishlari bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nol-dispersiya",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#5d854e43"
+    },
+    {
+      "q": "Sinfdagi 20 o'quvchidan 15 tasi masalani 4 daqiqada, qolgan 5 tasi 8 daqiqada yechdi. Yechish vaqti qatorining dispersiyasi nechaga teng?",
+      "v": [
+        "4",
+        "√3",
+        "5",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "O'rtacha vaqt: (15 · 4 + 5 · 8) : 20 = 100 : 20 = 5 daqiqa. Birinchi guruhda chetlanish −1, kvadrati 1, jami 15 · 1 = 15. Ikkinchi guruhda chetlanish 3, kvadrati 9, jami 5 · 9 = 45. Dispersiya = (15 + 45) : 20 = 3. √3 — standart chetlanish, 4 — kenglik, 5 — o'rtacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-qiymatli-qator",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#87174eb0"
+    },
+    {
+      "q": "So'rovda oilalardagi bolalar soni qayd etildi: 1 ta bolali 4 oila, 2 ta bolali 10 oila, 3 ta bolali 6 oila. Shu ma'lumotlarning dispersiyasi nechaga teng?",
+      "v": [
+        "0,7",
+        "0,49",
+        "2,1",
+        "9,8"
+      ],
+      "t": 1,
+      "izoh": "Jami 20 oila, bolalar soni 4 · 1 + 10 · 2 + 6 · 3 = 42, o'rtacha 42 : 20 = 2,1. Chetlanishlar kvadratlari: 4 · 1,21 = 4,84; 10 · 0,01 = 0,1; 6 · 0,81 = 4,86. Yig'indi 9,8, dispersiya 9,8 : 20 = 0,49. 0,7 — standart chetlanish, 2,1 — o'rtacha, 9,8 — bo'lishdan oldingi yig'indi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chastota-jadval",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#5afef4f4"
+    },
+    {
+      "q": "Bolalarning bo'yi santimetrda o'lchanganda standart chetlanish 15 sm chiqdi. O'sha o'lchovlar metrga aylantirilsa, standart chetlanish qanday bo'ladi?",
+      "v": [
+        "15 m",
+        "1,5 m",
+        "0,15 m",
+        "0,0225 m"
+      ],
+      "t": 2,
+      "izoh": "Metrga o'tish har bir qiymatni 100 ga bo'lish demak, ya'ni koeffitsient 0,01. Standart chetlanish ham shu koeffitsientga ko'payadi: 15 · 0,01 = 0,15 m. 1,5 — faqat 10 ga bo'lish, 0,0225 — dispersiya qoidasini standart chetlanishga qo'llash, 15 — birlik o'zgarishini hisobga olmaslik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-ozgarishi",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#4033d92a"
+    },
+    {
+      "q": "Qator hadlari o'sish tartibida berilgan: 13, 19, 24, 31, 37, 42, 49, 58. Shu qatorning kengligini toping.",
+      "v": [
+        "45",
+        "71",
+        "58",
+        "36"
+      ],
+      "t": 0,
+      "izoh": "Hadlar o'sish tartibida bo'lgani uchun eng kichigi birinchisi (13), eng kattasi oxirgisi (58). Kenglik = 58 − 13 = 45. 36 — oxirgi hadning o'rniga undan oldingi 49 ni olish, 71 — chegaralarni qo'shish, 58 — faqat maksimumni yozib qo'yish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kenglik-hisob",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#4428bd19"
+    },
+    {
+      "q": "Bir do'konning besh kunlik tushumi 1 200 000, 950 000, 1 450 000, 1 100 000 va 1 380 000 so'm bo'ldi. Tushumlar qatorining kengligi qanchaga teng?",
+      "v": [
+        "2 400 000 so'm",
+        "500 000 so'm",
+        "1 450 000 so'm",
+        "1 216 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Eng katta tushum 1 450 000 so'm, eng kichigi 950 000 so'm. Kenglik = 1 450 000 − 950 000 = 500 000 so'm. 2 400 000 — chegaralarni ayirish o'rniga qo'shish, 1 216 000 — barcha kunlarning o'rtachasi, u markazni ko'rsatadi, tarqoqlikni emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kenglik-kontekst",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#f77ddb84"
+    },
+    {
+      "q": "Olti ishchi bir kunda 24, 30, 27, 33, 21 va 27 ta detal tayyorladi. Eng unumli ishlagan ishchining natijasi o'rtachadan qanchaga chetlangan?",
+      "v": [
+        "−6 ta",
+        "12 ta",
+        "6 ta",
+        "33 ta"
+      ],
+      "t": 2,
+      "izoh": "O'rtacha: (24 + 30 + 27 + 33 + 21 + 27) : 6 = 162 : 6 = 27 ta. Eng unumli ishchi 33 ta detal tayyorlagan, chetlanish 33 − 27 = 6 ta. 12 — bu qator kengligi, −6 — ishorani teskari qo'yish, 33 — o'rtachani ayirishni unutish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chetlanish-bitta",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#09a15c4c"
+    },
+    {
+      "q": "Bir qatorning o'rtachasi 45 ga teng. Undagi uchta hadning chetlanishlari 7, −3 va −9 bo'lsa, shu uch hadning yig'indisi nechaga teng?",
+      "v": [
+        "130",
+        "135",
+        "154",
+        "−5"
+      ],
+      "t": 0,
+      "izoh": "Har bir had o'rtacha bilan chetlanishning yig'indisiga teng: 45 + 7 = 52, 45 − 3 = 42, 45 − 9 = 36. Ularning yig'indisi 52 + 42 + 36 = 130. Boshqacha aytganda 3 · 45 + (7 − 3 − 9) = 135 − 5 = 130. 135 — chetlanishlarni umuman hisobga olmaslik, 154 — modullarni qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetlanish-yigindi",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#b2548640"
+    },
+    {
+      "q": "5, 7, 8, 9, 11 sonlaridan iborat qatorning dispersiyasini hisoblang.",
+      "v": [
+        "2",
+        "20",
+        "6",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "O'rtacha: (5 + 7 + 8 + 9 + 11) : 5 = 40 : 5 = 8. Chetlanishlar −3, −1, 0, 1, 3, ularning kvadratlari 9, 1, 0, 1, 9 va yig'indisi 20. Dispersiya = 20 : 5 = 4. 20 — bo'lishni unutish, 2 — standart chetlanish, 6 — kenglik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dispersiya-kichik-qator",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#4a10561d"
+    },
+    {
+      "q": "Uch nafar sotuvchining oylik savdo hajmi 40, 46 va 52 million so'mni tashkil etdi. Shu uchta qiymat qatorining dispersiyasi nechaga teng?",
+      "v": [
+        "72",
+        "24",
+        "12",
+        "46"
+      ],
+      "t": 1,
+      "izoh": "O'rtacha: (40 + 46 + 52) : 3 = 138 : 3 = 46. Chetlanishlar −6, 0 va 6 bo'ladi, kvadratlari 36, 0, 36 va yig'indisi 72. Dispersiya = 72 : 3 = 24. 72 — hadlar soniga bo'lishni unutish, 12 — kenglik, 46 — o'rtachaning o'zi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "dispersiya-kontekst",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#46671647"
+    },
+    {
+      "q": "Kutubxonada besh kun ichida 27, 33, 36, 39 va 45 ta kitob berildi. Kunlik berilgan kitoblar qatorining standart chetlanishi nechaga teng?",
+      "v": [
+        "6 ta",
+        "36 ta",
+        "18 ta",
+        "180 ta"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha: (27 + 33 + 36 + 39 + 45) : 5 = 180 : 5 = 36 ta. Chetlanishlar −9, −3, 0, 3, 9, kvadratlari yig'indisi 81 + 9 + 0 + 9 + 81 = 180. Dispersiya 180 : 5 = 36, standart chetlanish √36 = 6 ta. 36 — ildiz olishni unutish, 18 — kenglik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "std-hisob-kontekst",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#8e6175da"
+    },
+    {
+      "q": "Laboratoriya o'lchovlaridagi xatolikning dispersiyasi 2,25 ga teng chiqdi. Shu xatoliklar qatorining standart chetlanishi qanday qiymatga ega?",
+      "v": [
+        "1,125",
+        "1,5",
+        "5,0625",
+        "4,5"
+      ],
+      "t": 1,
+      "izoh": "Standart chetlanish dispersiyaning kvadrat ildizi: σ = √2,25 = 1,5, chunki 1,5 · 1,5 = 2,25. 1,125 — ikkiga bo'lish, 4,5 — ikkiga ko'paytirish, 5,0625 — ildiz olish o'rniga yana kvadratga ko'tarish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "std-dispersiyadan",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#c859b758"
+    },
+    {
+      "q": "Zavodda tayyorlangan podshipniklar diametrini o'lchashda standart chetlanish 0,4 mm ga teng chiqdi. Shu o'lchovlar qatorining dispersiyasi nechaga teng?",
+      "v": [
+        "0,16 mm²",
+        "0,8 mm²",
+        "0,2 mm²",
+        "0,04 mm²"
+      ],
+      "t": 0,
+      "izoh": "Dispersiya standart chetlanishning kvadratiga teng: D = 0,4² = 0,16 mm². Birdan kichik sonni kvadratga ko'targanda natija kichrayadi, shuning uchun 0,16 mantiqan to'g'ri. 0,8 — ikkiga ko'paytirish, 0,2 — ikkiga bo'lish, 0,04 — vergul o'rnini adashtirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dispersiya-stddan",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#615ecbec"
+    },
+    {
+      "q": "Bir qatorda qiymatlar kvadratining o'rtachasi 100, dispersiya esa 19 ga teng. Qiymatlarning o'rtachasi musbat bo'lsa, u nechaga teng?",
+      "v": [
+        "81",
+        "10",
+        "9",
+        "119"
+      ],
+      "t": 2,
+      "izoh": "D = (kvadratlarning o'rtachasi) − (o'rtachaning kvadrati) formulasidan 19 = 100 − x̄². Bundan x̄² = 81 va musbat ildiz x̄ = 9. 81 — kvadratdan ildiz olishni unutish, 10 — dispersiyani hisobga olmay √100 ni olish, 119 — ayirish o'rniga qo'shish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-kvadratlar",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#9314b635"
+    },
+    {
+      "q": "Birinchi g'alla navida o'rtacha hosildorlik 50 sentner, standart chetlanish 6 sentner; ikkinchisida o'rtacha 60 sentner, standart chetlanish yana 6 sentner. Qaysi navning hosildorligi nisbatan barqarorroq?",
+      "v": [
+        "Ikkinchi nav, nisbiy tarqoqligi 10 foiz",
+        "Birinchi nav, chunki o'rtachasi kichikroq",
+        "Ikkalasi bir xil, chunki standart chetlanishlari teng",
+        "Aniqlab bo'lmaydi, ma'lumot yetarli emas"
+      ],
+      "t": 0,
+      "izoh": "Standart chetlanishlar teng bo'lgani uchun taqqoslash nisbiy ko'rsatkich orqali qilinadi. Birinchi navda 6 : 50 = 0,12, ya'ni 12 foiz; ikkinchisida 6 : 60 = 0,1, ya'ni 10 foiz. Nisbiy tarqoqligi kichik bo'lgan ikkinchi nav barqarorroq hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "variatsiya-koeffitsienti",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#8efc2471"
+    },
+    {
+      "q": "Bir guruh talabaning yoshlari qatorida standart chetlanish 2,4 yilga teng edi. Oradan besh yil o'tgach o'sha guruh qayta o'lchandi. Yangi standart chetlanish qanday bo'ladi?",
+      "v": [
+        "7,4 yil",
+        "12 yil",
+        "5 yil",
+        "2,4 yil"
+      ],
+      "t": 3,
+      "izoh": "Besh yil o'tishi bilan har bir talabaning yoshiga bir xil 5 son qo'shiladi. Bir xil siljish o'rtachani 5 yilga oshiradi, lekin talabalar orasidagi yosh farqlarini o'zgartirmaydi. Chetlanishlar o'zgarmagani uchun standart chetlanish 2,4 yilligicha qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljish-qoshish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#97f8752b"
+    },
+    {
+      "q": "Ma'lum bir qatorning standart chetlanishi 9 ga teng. Qatordagi barcha qiymat 3 ga bo'linsa, yangi standart chetlanish nechaga teng bo'ladi?",
+      "v": [
+        "1",
+        "3",
+        "27",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Qiymatlarni k ga bo'lish ularni 1/k ga ko'paytirish demak, standart chetlanish esa shu koeffitsientning moduliga ko'payadi. Demak σ = 9 : 3 = 3. 1 — dispersiya qoidasini, ya'ni k² ga bo'lishni standart chetlanishga qo'llash, 27 — bo'lish o'rniga ko'paytirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljish-kopaytirish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#cbe30404"
+    },
+    {
+      "q": "Qatordagi har bir qiymat avval 6 ga ko'paytirildi, so'ngra natijadan 10 ayirildi. Boshlang'ich dispersiya 5 bo'lsa, yangi dispersiya nechaga teng?",
+      "v": [
+        "30",
+        "170",
+        "180",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Dispersiyaga faqat ko'paytuvchi ta'sir qiladi va u k² marta ortadi; qo'shish yoki ayirish dispersiyani umuman o'zgartirmaydi. Demak D = 5 · 6² = 5 · 36 = 180. 30 — koeffitsientni kvadratga ko'tarmaslik, 170 — siljishni ham ayirish, 5 — hech narsa o'zgarmaydi deb o'ylash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-almashtirish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#51a36d54"
+    },
+    {
+      "q": "Qatordagi to'rtta son 7, 11, 13 va x ko'rinishida berilgan. Ularning o'rtachasi 10 ga teng bo'lsa, qatorning standart chetlanishi nechaga teng?",
+      "v": [
+        "5",
+        "6",
+        "√5",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi 4 · 10 = 40, demak x = 40 − 31 = 9. Qator 7, 9, 11, 13 bo'lib, chetlanishlar −3, −1, 1, 3. Kvadratlari yig'indisi 20, dispersiya 20 : 4 = 5, standart chetlanish √5. 5 — dispersiyada to'xtab qolish, 9 — topilgan x ni javob deb yozish, 6 — kenglik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-topish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#08f72abf"
+    },
+    {
+      "q": "Yetti hadli qatorning dispersiyasi nolga teng va hadlardan biri 23 ga teng ekani ma'lum. Qatorning o'rtachasi va kengligi qanday bo'ladi?",
+      "v": [
+        "O'rtacha 23, kenglik 23",
+        "O'rtacha 23, kenglik 0",
+        "O'rtacha 161, kenglik 0",
+        "O'rtacha 0, kenglik 23"
+      ],
+      "t": 1,
+      "izoh": "Dispersiya nol bo'lsa, barcha chetlanish nol, ya'ni hamma had o'rtachaga teng. Bitta had 23 bo'lgani uchun yetti hadning hammasi 23 ga teng va o'rtacha ham 23. Eng katta va eng kichik had bir xil bo'lgani uchun kenglik 23 − 23 = 0. 161 — hadlar yig'indisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-dispersiya",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#75f66a47"
+    },
+    {
+      "q": "Sinfda qo'yilgan baholar taqsimoti: 3 baho olgan 2 o'quvchi, 4 baho olgan 8 o'quvchi, 5 baho olgan 10 o'quvchi. Baholar qatorining dispersiyasini hisoblang.",
+      "v": [
+        "4,4",
+        "0,66",
+        "8,8",
+        "0,44"
+      ],
+      "t": 3,
+      "izoh": "Jami 20 o'quvchi, baholar yig'indisi 2 · 3 + 8 · 4 + 10 · 5 = 88, o'rtacha 88 : 20 = 4,4. Chetlanishlar kvadratlari: 2 · 1,96 = 3,92; 8 · 0,16 = 1,28; 10 · 0,36 = 3,6. Yig'indi 8,8, dispersiya 8,8 : 20 = 0,44. 0,66 — standart chetlanish, 4,4 — o'rtacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chastota-jadval",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#70ef4867"
+    },
+    {
+      "q": "Mahsulot narxlari ming so'mda ifodalanganda dispersiya 900 ga teng edi. Narxlar so'mga o'tkazilsa, ya'ni har bir qiymat 1000 ga ko'paytirilsa, dispersiya necha marta ortadi?",
+      "v": [
+        "1000 marta",
+        "900 marta",
+        "1 000 000 marta",
+        "100 marta"
+      ],
+      "t": 2,
+      "izoh": "Barcha qiymat k ga ko'paytirilganda dispersiya k² marta ortadi. Bu yerda k = 1000, demak dispersiya 1000² = 1 000 000 marta ortadi. 1000 marta — standart chetlanish qoidasini dispersiyaga qo'llash, 900 — dastlabki dispersiyani ko'rsatkich deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-ozgarishi",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#fbed78e3"
+    },
+    {
+      "q": "Birinchi qator 10, 10, 10, 20, 20, 20 hadlaridan, ikkinchisi esa 10, 14, 14, 16, 16, 20 hadlaridan iborat. Ikkalasining kengligi bir xil bo'lsa ham, qaysi qatorning dispersiyasi katta?",
+      "v": [
+        "Ikkinchi qator, dispersiyasi 9",
+        "Ikkalasi teng, chunki kengliklari bir xil",
+        "Birinchi qator, dispersiyasi 9",
+        "Birinchi qator, dispersiyasi 25"
+      ],
+      "t": 3,
+      "izoh": "Ikkala qatorning o'rtachasi 15 va kengligi 10. Birinchisida chetlanishlar ±5, kvadratlari yig'indisi 150 va dispersiya 150 : 6 = 25. Ikkinchisida chetlanishlar −5, −1, −1, 1, 1, 5, kvadratlari yig'indisi 54 va dispersiya 54 : 6 = 9. Kenglik tengligi tarqoqlikning tengligini bildirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-ikki-qator",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#01dd3b12"
+    },
+    {
+      "q": "Imtihonda o'rtacha ball 62, standart chetlanish esa 8 ga teng. Quyidagi natijalardan qaysi biri o'rtachadan bir standart chetlanishdan uzoqroqda joylashgan?",
+      "v": [
+        "56",
+        "68",
+        "72",
+        "60"
+      ],
+      "t": 2,
+      "izoh": "Bir standart chetlanishlik oraliq o'rtachadan σ masofagacha cho'ziladi: 62 − 8 = 54 dan 62 + 8 = 70 gacha. 56, 60 va 68 shu oraliq ichida yotadi, 72 esa 70 dan katta bo'lgani uchun oraliqdan tashqarida. Demak faqat 72 balli natija o'rtachadan uzoqroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "std-oraliq",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#1d08cf27"
+    },
+    {
+      "q": "Beshta xodimning ish staji 2, 5, 6, 9 va 13 yil. Shu qator uchun o'rtacha chiziqli chetlanishni hisoblang.",
+      "v": [
+        "3,2 yil",
+        "16 yil",
+        "11 yil",
+        "0 yil"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha staj: (2 + 5 + 6 + 9 + 13) : 5 = 35 : 5 = 7 yil. Chetlanishlar −5, −2, −1, 2, 6, ularning modullari 5, 2, 1, 2, 6 va yig'indisi 16. O'rtacha chiziqli chetlanish 16 : 5 = 3,2 yil. 16 — bo'lishni unutish, 0 — modulsiz yig'indi, 11 — kenglik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetlanish-modul-ortacha",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#aaa461c7"
+    },
+    {
+      "q": "Ikki do'kon kunlik tushumining o'rtachasi teng, birinchisining standart chetlanishi 300 ming so'm, ikkinchisiniki 90 ming so'm. Barqaror daromadni afzal ko'rgan investor qaysi do'konni tanlaydi?",
+      "v": [
+        "Birinchisini, chunki standart chetlanishi katta",
+        "Ikkinchisini, chunki tushumi o'rtacha atrofida kam tebranadi",
+        "Birinchisini, chunki tushumi tezroq o'sadi",
+        "Farqi yo'q, chunki o'rtacha tushumlari teng"
+      ],
+      "t": 1,
+      "izoh": "Standart chetlanish kunlik tushumning o'rtachadan qanchalik uzoqlashishini o'lchaydi. Ikkinchi do'konda u uch barobar kichik, demak tushum kundan kunga kam o'zgaradi. Katta standart chetlanish daromadning kattaligini emas, uning beqarorligini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "std-talqin",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#0c1df10b"
+    },
+    {
+      "q": "4, 8, 12, 16, 20 qatoridan eng katta had olib tashlandi. Qolgan to'rtta hadning dispersiyasi nechaga teng bo'ladi?",
+      "v": [
+        "32",
+        "24",
+        "20",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Dastlab o'rtacha 12 va dispersiya 160 : 5 = 32 edi. Had olib tashlangach qator 4, 8, 12, 16 bo'lib, yangi o'rtacha 40 : 4 = 10. Chetlanishlar −6, −2, 2, 6, kvadratlari yig'indisi 80, dispersiya 80 : 4 = 20. 32 — eski dispersiyani saqlab qolish, 24 — o'rtachani yangilashni unutish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshimcha-qiymat-tasir",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#7e51fc9e"
+    },
+    {
+      "q": "Zavodda mahsulot og'irligining o'rtachasi 500 g, standart chetlanishi 12 g. Nazorat bo'limi o'rtachadan ikki standart chetlanishdan chetga chiqqan mahsulotni brak deb belgilaydi. Qaysi mahsulot brak bo'ladi?",
+      "v": [
+        "478 g li mahsulot",
+        "521 g li mahsulot",
+        "526 g li mahsulot",
+        "500 g li mahsulot"
+      ],
+      "t": 2,
+      "izoh": "Ikki standart chetlanish 2 · 12 = 24 g ni beradi, demak yaroqli oraliq 500 − 24 = 476 dan 500 + 24 = 524 gacha. 478 va 521 shu oraliq ichida, 500 esa aynan o'rtachada. Faqat 526 g 524 dan katta bo'lgani uchun oraliqdan chiqadi va brak deb belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "std-oraliq",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#2ef70823"
+    },
+    {
+      "q": "Sinovda sakkizta lampochkadan oltitasi 900 soat, ikkitasi esa 1100 soat ishladi. Ishlash vaqti qatorining dispersiyasi nechaga teng?",
+      "v": [
+        "60 000",
+        "200",
+        "10 000",
+        "7 500"
+      ],
+      "t": 3,
+      "izoh": "O'rtacha: (6 · 900 + 2 · 1100) : 8 = 7600 : 8 = 950 soat. Birinchi guruhda chetlanish −50, kvadrati 2500, jami 6 · 2500 = 15 000. Ikkinchisida chetlanish 150, kvadrati 22 500, jami 2 · 22 500 = 45 000. Dispersiya = 60 000 : 8 = 7 500. 200 — kenglik, 10 000 — guruhlar tengdek deb hisoblash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-qiymatli-qator",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#47a7b885"
+    },
+    {
+      "q": "Qatorning eng kichik hadi 14, kengligi esa 26 ga teng. Qatorga 58 soni qo'shilsa, yangi kenglik nechaga teng bo'ladi?",
+      "v": [
+        "26",
+        "44",
+        "18",
+        "72"
+      ],
+      "t": 1,
+      "izoh": "Dastlabki eng katta had 14 + 26 = 40 edi. Yangi son 58 undan katta, demak endi maksimum 58 bo'ladi, minimum esa 14 bo'lib qoladi. Yangi kenglik = 58 − 14 = 44. 18 — 58 dan eski maksimumni ayirish, 26 — kenglik o'zgarmaydi deb o'ylash, 72 — qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-kenglik",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#13d3284a"
+    },
+    {
+      "q": "Toshkent filialida o'rtacha maosh 6 000 000 so'm va standart chetlanish 900 000 so'm; Samarqand filialida o'rtacha 4 000 000 so'm va standart chetlanish 800 000 so'm. Qaysi filialda maoshlar nisbatan bir tekisroq taqsimlangan?",
+      "v": [
+        "Samarqandda, chunki standart chetlanishi kichik",
+        "Ikkala filialda ham bir xil",
+        "Toshkentda: 15 foizga qarshi 20 foiz",
+        "Samarqandda, chunki o'rtacha maoshi kichik"
+      ],
+      "t": 2,
+      "izoh": "Nisbiy tarqoqlik standart chetlanishning o'rtachaga nisbati bilan o'lchanadi. Toshkentda 900 000 : 6 000 000 = 0,15, ya'ni 15 foiz. Samarqandda 800 000 : 4 000 000 = 0,2, ya'ni 20 foiz. Toshkentda nisbiy ko'rsatkich kichik, demak maoshlar bir tekisroq taqsimlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "variatsiya-koeffitsienti",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#008f6a87"
+    },
+    {
+      "q": "To'rt kunlik havo harorati 18, 22, 26 va 30 daraja bo'ldi. Shu haroratlar qatorining dispersiyasini toping.",
+      "v": [
+        "80 daraja²",
+        "20 daraja²",
+        "12 daraja²",
+        "24 daraja²"
+      ],
+      "t": 1,
+      "izoh": "O'rtacha harorat: (18 + 22 + 26 + 30) : 4 = 96 : 4 = 24 daraja. Chetlanishlar −6, −2, 2, 6, kvadratlari 36, 4, 4, 36 va yig'indisi 80. Dispersiya = 80 : 4 = 20 daraja². 80 — bo'lishni unutish, 12 — kenglik, 24 — o'rtacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dispersiya-kontekst",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#e0aa510d"
+    },
+    {
+      "q": "Do'konda kuniga sotilgan telefon soni qayd etildi: birorta sotilmagan 2 kun, bittadan sotilgan 6 kun, ikkitadan sotilgan 2 kun. Shu ma'lumotlarning dispersiyasi nechaga teng?",
+      "v": [
+        "1",
+        "0,63",
+        "4",
+        "0,4"
+      ],
+      "t": 3,
+      "izoh": "Jami 10 kun, sotilgan telefonlar 2 · 0 + 6 · 1 + 2 · 2 = 10 ta, o'rtacha 10 : 10 = 1 ta. Chetlanishlar kvadratlari: 2 · 1 = 2; 6 · 0 = 0; 2 · 1 = 2. Yig'indi 4, dispersiya 4 : 10 = 0,4. 1 — o'rtachaning o'zi, 0,63 — standart chetlanish, 4 — bo'lishdan oldingi yig'indi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chastota-jadval",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#90a71160"
+    },
+    {
+      "q": "Havo harorati Selsiy shkalasida o'lchanganda standart chetlanish 5 daraja chiqdi. O'lchovlar F = 1,8·C + 32 formulasi bilan Farengeytga o'tkazilsa, standart chetlanish qanday bo'ladi?",
+      "v": [
+        "41 daraja",
+        "9 daraja",
+        "5 daraja",
+        "16,2 daraja"
+      ],
+      "t": 1,
+      "izoh": "Chiziqli almashtirishda standart chetlanishga faqat ko'paytuvchi ta'sir qiladi, qo'shiluvchi esa umuman ta'sir qilmaydi. Demak σ = 1,8 · 5 = 9 daraja. 41 — qo'shiluvchi 32 ni ham qo'shish, 16,2 — koeffitsientni kvadratga ko'tarish, 5 — o'zgarmaydi deb o'ylash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-ozgarishi",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#c61ade72"
+    },
+    {
+      "q": "Bir qatorning kengligi 14, standart chetlanishi 4 ga teng. Har bir qiymat −2 ga ko'paytirilsa, yangi kenglik va standart chetlanish qanday bo'ladi?",
+      "v": [
+        "Kenglik −28, standart chetlanish −8",
+        "Kenglik 28, standart chetlanish 16",
+        "Kenglik 28, standart chetlanish 8",
+        "Kenglik 14, standart chetlanish 8"
+      ],
+      "t": 2,
+      "izoh": "Manfiy songa ko'paytirish qatorni aks ettiradi, lekin masofalarni koeffitsient moduliga ko'paytiradi. Kenglik ham, standart chetlanish ham manfiy bo'la olmaydi: kenglik 14 · 2 = 28, standart chetlanish 4 · 2 = 8. 16 — koeffitsientni kvadratga ko'tarish, manfiy javoblar esa modul olishni unutish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-almashtirish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#27c16de5"
+    },
+    {
+      "q": "Beshta shaharda haftalik suv sarfi 46, 52, 61, 58 va 48 ming kub metrni tashkil etdi. Qaysi shaharning ko'rsatkichi o'rtachadan eng ko'p chetlangan?",
+      "v": [
+        "46 ming sarflagan shahar",
+        "61 ming sarflagan shahar",
+        "48 ming sarflagan shahar",
+        "58 ming sarflagan shahar"
+      ],
+      "t": 1,
+      "izoh": "O'rtacha sarf: (46 + 52 + 61 + 58 + 48) : 5 = 265 : 5 = 53 ming kub metr. Chetlanish modullari mos ravishda 7, 1, 8, 5 va 5. Eng katta chetlanish 8 ga teng va u 61 ming kub metr sarflagan shaharga to'g'ri keladi. Eng katta chetlanish har doim ham eng katta qiymatda bo'lavermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetlanish-eng-katta",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#5ff8e2b4"
+    },
+    {
+      "q": "Qator 20, 22, 24, 26 va 128 hadlaridan iborat. Chetdagi 128 qiymati olib tashlansa, qatorning kengligi qanday o'zgaradi?",
+      "v": [
+        "108 birlikka kamayadi",
+        "6 birlikka kamayadi",
+        "Umuman o'zgarmaydi",
+        "102 birlikka kamayadi"
+      ],
+      "t": 3,
+      "izoh": "Dastlabki kenglik 128 − 20 = 108 edi. 128 olib tashlangach eng katta had 26 bo'ladi va yangi kenglik 26 − 20 = 6. Kamayish 108 − 6 = 102 birlikni tashkil etadi. 108 va 6 — eski va yangi kenglikning o'zini javob deb yozish xatosi; bitta chetdagi qiymat kenglikni keskin oshirib yuboradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "outlier-tasir",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#72c641f2"
+    },
+    {
+      "q": "Uchta sonning o'rtachasi 10, dispersiyasi esa 6 ga teng bo'lishi kerak. Quyidagi qatorlardan qaysi biri shu ikkala shartni bajaradi?",
+      "v": [
+        "8, 10, 12",
+        "7, 10, 13",
+        "4, 10, 16",
+        "9, 10, 11"
+      ],
+      "t": 1,
+      "izoh": "To'rttala qatorning o'rtachasi 10 ga teng, shuning uchun dispersiyani tekshirish kerak. 7, 10, 13 uchun chetlanishlar −3, 0, 3 va dispersiya 18 : 3 = 6. 8, 10, 12 da dispersiya 8 : 3, 4, 10, 16 da 72 : 3 = 24, 9, 10, 11 da esa 2 : 3 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qator-tuzish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#7d71e23f"
+    },
+    {
+      "q": "Birinchi guruhdagi to'rtta o'lchov 10, 10, 20, 20; ikkinchi guruhdagi to'rttasi 30, 30, 40, 40. Har bir guruhning dispersiyasi 25 ga teng. Sakkizta o'lchov birlashtirilsa, umumiy dispersiya nechaga teng bo'ladi?",
+      "v": [
+        "125",
+        "25",
+        "50",
+        "100"
+      ],
+      "t": 0,
+      "izoh": "Umumiy yig'indi: (10 + 10 + 20 + 20) + (30 + 30 + 40 + 40) = 60 + 140 = 200, umumiy o'rtacha 200 : 8 = 25. Chetlanishlar −15, −15, −5, −5, 5, 5, 15, 15 bo'ladi. Kvadratlari yig'indisi 4 · 225 + 4 · 25 = 1000, dispersiya 1000 : 8 = 125. 25 — guruh dispersiyalari o'zgarmaydi deb o'ylash: guruhlar o'rtachalari farq qilgani uchun tarqoqlik keskin ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "dispersiya-birlashtirish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#b60e9171"
+    },
+    {
+      "q": "Qator hadlari quyidagicha: 3,5; 2,8; 4,1; 3,9 va 2,6. Shu qatorning kengligini toping.",
+      "v": [
+        "6,7",
+        "4,1",
+        "1,5",
+        "0,9"
+      ],
+      "t": 2,
+      "izoh": "Eng katta had 4,1, eng kichigi 2,6. Kenglik = 4,1 − 2,6 = 1,5. Kasrlarni ayirishda verguldan keyingi raqamlarni to'g'ri moslashtirish kerak. 6,7 — chegaralarni qo'shish, 0,9 — birinchi hadni maksimum deb olish, 4,1 — faqat maksimumni yozish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kenglik-hisob",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#834f5955"
+    },
+    {
+      "q": "−6, −2, 2, 6, 10 sonlaridan tuzilgan qatorning dispersiyasini hisoblang.",
+      "v": [
+        "160",
+        "16",
+        "√32",
+        "32"
+      ],
+      "t": 3,
+      "izoh": "O'rtacha: (−6 − 2 + 2 + 6 + 10) : 5 = 10 : 5 = 2. Chetlanishlar −8, −4, 0, 4, 8, kvadratlari 64, 16, 0, 16, 64 va yig'indisi 160. Dispersiya = 160 : 5 = 32. 160 — bo'lishni unutish, √32 — standart chetlanish, 16 — kenglik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dispersiya-kichik-qator",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#1661c1f7"
+    },
+    {
+      "q": "Besh nafar o'quvchi matematika testida 60, 68, 72, 76 va 84 ball to'pladi. Shu ballar qatorining standart chetlanishi nechaga teng?",
+      "v": [
+        "64 ball",
+        "24 ball",
+        "8 ball",
+        "72 ball"
+      ],
+      "t": 2,
+      "izoh": "O'rtacha ball: (60 + 68 + 72 + 76 + 84) : 5 = 360 : 5 = 72. Chetlanishlar −12, −4, 0, 4, 12, kvadratlari yig'indisi 144 + 16 + 0 + 16 + 144 = 320. Dispersiya 320 : 5 = 64, standart chetlanish √64 = 8 ball. 64 — ildiz olishni unutish, 24 — kenglik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "std-hisob-kontekst",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#cce78568"
+    },
+    {
+      "q": "Qatorning har bir hadidan 15 ayirilgach, yangi qatorning o'rtachasi 8, standart chetlanishi 3 chiqdi. Dastlabki qatorning o'rtachasi va standart chetlanishi qanday edi?",
+      "v": [
+        "O'rtacha 23, standart chetlanish 18",
+        "O'rtacha 23, standart chetlanish 3",
+        "O'rtacha 8, standart chetlanish 18",
+        "O'rtacha −7, standart chetlanish 3"
+      ],
+      "t": 1,
+      "izoh": "Ayirish amalini teskari qaytarish uchun o'rtachaga 15 qo'shiladi: 8 + 15 = 23. Standart chetlanish esa siljishga bog'liq emas, shuning uchun u dastlab ham 3 ga teng edi. 18 — 15 ni standart chetlanishga ham qo'shish, −7 — teskari yo'nalishda ayirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "siljish-qoshish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#2f6b5204"
+    },
+    {
+      "q": "Birinchi bekatda kutish vaqti 5, 5, 5, 5 va 20 daqiqa, ikkinchisida esa har safar 8 daqiqa bo'ldi. Qaysi bekatda kutish vaqti barqarorroq va nima uchun?",
+      "v": [
+        "Birinchi bekatda, chunki kutish vaqti qisqaroq",
+        "Ikkalasida bir xil, chunki o'rtachalari teng",
+        "Birinchi bekatda, chunki dispersiyasi 36",
+        "Ikkinchi bekatda, chunki dispersiyasi nolga teng"
+      ],
+      "t": 3,
+      "izoh": "Birinchi bekatda o'rtacha (5 + 5 + 5 + 5 + 20) : 5 = 8 daqiqa, chetlanishlar −3, −3, −3, −3, 12 va dispersiya 180 : 5 = 36. Ikkinchi bekatda hamma qiymat 8 ga teng, demak dispersiya nol. O'rtachalari teng bo'lsa ham, tarqoqligi nol bo'lgan ikkinchi bekat barqarorroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-ikki-qator",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#56c65de5"
+    },
+    {
+      "q": "Bir oy davomida valyuta kursining eng past qiymati 12 450 so'm, eng yuqorisi 12 890 so'm bo'ldi. Kurs qatorining kengligi qanchaga teng?",
+      "v": [
+        "440 so'm",
+        "25 340 so'm",
+        "12 890 so'm",
+        "12 670 so'm"
+      ],
+      "t": 0,
+      "izoh": "Kenglik eng yuqori va eng past qiymatning ayirmasiga teng: 12 890 − 12 450 = 440 so'm. 25 340 — ikkala chegarani qo'shish, 12 670 — chegaralarning o'rtasi, ya'ni markaz, 12 890 — faqat maksimumni yozib qo'yish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kenglik-kontekst",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#32fb774a"
+    },
+    {
+      "q": "Yetti kunlik yomg'ir miqdori 4, 9, 6, 12, 8, 5 va 12 mm bo'ldi. Uchinchi kunning ko'rsatkichi o'rtachadan qanchaga chetlangan?",
+      "v": [
+        "−2 mm",
+        "2 mm",
+        "6 mm",
+        "−6 mm"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha: (4 + 9 + 6 + 12 + 8 + 5 + 12) : 7 = 56 : 7 = 8 mm. Uchinchi kunda 6 mm yomg'ir yoqqan, chetlanish 6 − 8 = −2 mm. Manfiy ishora ko'rsatkich o'rtachadan past ekanini bildiradi. 2 — ishorani tushirib qoldirish, 6 — o'rtachani ayirmaslik, −6 — maksimumdan ayirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chetlanish-bitta",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#6fac54fc"
+    },
+    {
+      "q": "Sakkiz hadli qatorda yettita hadning o'rtachadan chetlanishlari yig'indisi 12 ga teng. Sakkizinchi hadning chetlanishi nechaga teng?",
+      "v": [
+        "12",
+        "1,5",
+        "−1,5",
+        "−12"
+      ],
+      "t": 3,
+      "izoh": "Barcha chetlanishlarning yig'indisi har doim nolga teng bo'ladi. Yettitasining yig'indisi 12 bo'lsa, sakkizinchisi shu 12 ni yo'qotishi kerak, ya'ni u −12 ga teng. 12 — ishorani almashtirmaslik, 1,5 va −1,5 — hadlar soniga bo'lish kerak deb o'ylash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetlanish-yigindi",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#f7ab8dbc"
+    },
+    {
+      "q": "Ma'lumotlar qatorining dispersiyasi 144 ga teng. Shu qatorning dispersiyasi bilan standart chetlanishining ayirmasi nechaga teng?",
+      "v": [
+        "132",
+        "156",
+        "12",
+        "−132"
+      ],
+      "t": 0,
+      "izoh": "Avval standart chetlanishni topamiz: σ = √144 = 12. So'ng ayirmani hisoblaymiz: 144 − 12 = 132. 156 — ayirish o'rniga qo'shish, 12 — faqat standart chetlanishni yozib qo'yish, −132 — ayiriluvchi va ayirilmani almashtirib yuborish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "std-dispersiyadan",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#5bc174b3"
+    },
+    {
+      "q": "Tadqiqotda A ko'rsatkichning standart chetlanishi 1,2 va B ko'rsatkichniki 0,9 chiqdi. A ning dispersiyasi B nikidan qanchaga katta?",
+      "v": [
+        "0,3",
+        "0,09",
+        "2,25",
+        "0,63"
+      ],
+      "t": 3,
+      "izoh": "Dispersiyalarni alohida hisoblaymiz: 1,2² = 1,44 va 0,9² = 0,81. Ularning ayirmasi 1,44 − 0,81 = 0,63. 0,3 — dispersiya o'rniga standart chetlanishlarni ayirish, 0,09 — avval ayirib keyin kvadratga ko'tarish, 2,25 — ayirish o'rniga qo'shish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "dispersiya-stddan",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#a5e1b852"
+    },
+    {
+      "q": "Ustaxonada detallar uzunligi o'lchovining standart chetlanishi 0,6 mm edi. Chizma masshtabi kattalashtirilib, barcha o'lchov 5 ga ko'paytirildi. Yangi standart chetlanish qanday bo'ladi?",
+      "v": [
+        "3 mm",
+        "15 mm",
+        "0,12 mm",
+        "0,6 mm"
+      ],
+      "t": 0,
+      "izoh": "Barcha qiymat k ga ko'paytirilganda standart chetlanish |k| marta ortadi: 0,6 · 5 = 3 mm. 15 — dispersiya qoidasini, ya'ni k² marta ortishni standart chetlanishga qo'llash, 0,12 — ko'paytirish o'rniga bo'lish, 0,6 — o'zgarmaydi deb o'ylash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljish-kopaytirish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#2b6394f2"
+    },
+    {
+      "q": "To'rtta sonning o'rtachasi 5, dispersiyasi esa 6 ga teng. Shu to'rtta son kvadratlarining yig'indisi nechaga teng?",
+      "v": [
+        "100",
+        "31",
+        "124",
+        "24"
+      ],
+      "t": 2,
+      "izoh": "D = (kvadratlarning o'rtachasi) − (o'rtachaning kvadrati) formulasidan kvadratlarning o'rtachasi = 6 + 5² = 31. Yig'indini topish uchun uni hadlar soniga ko'paytiramiz: 31 · 4 = 124. 31 — o'rtachada to'xtab qolish, 100 — dispersiyani hisobga olmaslik, 24 — faqat dispersiyani ko'paytirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "formula-kvadratlar",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#fe5ad8c1"
+    },
+    {
+      "q": "Bir ma'lumotlar qatorining kengligi nolga teng ekani ma'lum. Uning dispersiyasi haqida nima deyish mumkin?",
+      "v": [
+        "Musbat, lekin juda kichik bo'ladi",
+        "Kenglikdan katta bo'ladi",
+        "Ma'lumot yetarli emas, aniqlab bo'lmaydi",
+        "U ham nolga teng bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Kenglik nolga teng bo'lsa, eng katta va eng kichik had bir xil, demak qatordagi barcha had teng. Bunday qatorda har bir qiymat o'rtachaga teng va barcha chetlanish nol. Shuning uchun dispersiya ham, standart chetlanish ham nolga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nol-dispersiya",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#a8aceebb"
+    },
+    {
+      "q": "Sinfda eng past ball 42, o'rtacha ball 61, qator kengligi esa 37 ga teng. Eng yuqori ball nechaga teng?",
+      "v": [
+        "79",
+        "98",
+        "24",
+        "37"
+      ],
+      "t": 0,
+      "izoh": "Kenglik ta'rifiga ko'ra eng yuqori ball = eng past ball + kenglik = 42 + 37 = 79. O'rtacha ball bu hisobda umuman ishlatilmaydi, u faqat chalg'ituvchi ma'lumot. 98 — kenglikni o'rtachaga qo'shish, 24 — o'rtachadan kenglikni ayirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-kenglik",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#109557dd"
+    },
+    {
+      "q": "O'nta o'lchovdan oltitasining o'rtachadan chetlanishi 2 birlik, qolgan to'rttasiniki −3 birlikka teng. Shu qator uchun o'rtacha chiziqli chetlanishni toping.",
+      "v": [
+        "24",
+        "0",
+        "2,4",
+        "1,2"
+      ],
+      "t": 2,
+      "izoh": "Avval shartni tekshiramiz: 6 · 2 + 4 · (−3) = 12 − 12 = 0, demak chetlanishlar to'g'ri berilgan. Modullar yig'indisi 6 · 2 + 4 · 3 = 12 + 12 = 24. O'rtacha chiziqli chetlanish 24 : 10 = 2,4. 0 — modul olmasdan qo'shish, 24 — bo'lishni unutish, 1,2 — hadlar sonini ikki barobar deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetlanish-modul-ortacha",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#002cdfa1"
+    },
+    {
+      "q": "Beshta idishning to'rttasida 20 litrdan, bittasida esa 25 litr suv bor. Suv hajmlari qatorining standart chetlanishi nechaga teng?",
+      "v": [
+        "4 litr",
+        "5 litr",
+        "21 litr",
+        "2 litr"
+      ],
+      "t": 3,
+      "izoh": "O'rtacha hajm: (4 · 20 + 25) : 5 = 105 : 5 = 21 litr. To'rtta idishda chetlanish −1, kvadratlari yig'indisi 4 · 1 = 4; bittasida chetlanish 4, kvadrati 16. Dispersiya (4 + 16) : 5 = 4, standart chetlanish √4 = 2 litr. 4 — dispersiyada to'xtash, 5 — kenglik, 21 — o'rtacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-qiymatli-qator",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#1fcfac47"
+    },
+    {
+      "q": "Tayyorlangan mahsulot uzunligining o'rtachasi 80 sm, standart chetlanishi 4 sm. Variatsiya koeffitsienti necha foizni tashkil etadi?",
+      "v": [
+        "5 foiz",
+        "20 foiz",
+        "0,05 foiz",
+        "320 foiz"
+      ],
+      "t": 0,
+      "izoh": "Variatsiya koeffitsienti standart chetlanishning o'rtachaga nisbati sifatida topiladi va foizga aylantiriladi: 4 : 80 = 0,05, ya'ni 5 foiz. 20 foiz — nisbatni teskari olish, 0,05 foiz — foizga aylantirishni unutish, 320 foiz — bo'lish o'rniga ko'paytirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "variatsiya-koeffitsienti",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#71606cff"
+    },
+    {
+      "q": "3, 5, 7, 9 qatoriga uning o'rtachasiga aynan teng bo'lgan yana bitta son qo'shildi. Yangi qatorning dispersiyasi nechaga teng bo'ladi?",
+      "v": [
+        "5",
+        "6",
+        "20",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Dastlabki o'rtacha (3 + 5 + 7 + 9) : 4 = 6, eski dispersiya esa 20 : 4 = 5. Qo'shilgan son ham 6 ga teng, shuning uchun o'rtacha o'zgarmaydi, chetlanishlar kvadratlari yig'indisi ham 20 bo'lib qoladi. Hadlar soni beshtaga chiqqani uchun dispersiya 20 : 5 = 4 ga kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshimcha-qiymat-tasir",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#683968a2"
+    },
+    {
+      "q": "Standart chetlanish haqidagi quyidagi tasdiqlardan qaysi biri har doim to'g'ri bo'ladi?",
+      "v": [
+        "U o'rtachadan har doim kichik bo'ladi",
+        "U dispersiya bilan bir xil o'lchov birligida bo'ladi",
+        "U hech qachon manfiy bo'lmaydi",
+        "U qator kengligidan har doim katta bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Standart chetlanish kvadrat ildiz orqali topilgani uchun u nol yoki musbat bo'ladi, manfiy bo'la olmaydi. Dispersiyaning birligi kvadratga ko'tarilgan bo'ladi, demak birliklari bir xil emas. Standart chetlanish o'rtachadan katta ham bo'lishi mumkin, kenglikdan esa har doim kichik yoki teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "std-talqin",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#1f5744cf"
+    },
+    {
+      "q": "5, 9 va x sonlaridan tuzilgan qatorning dispersiyasi eng kichik bo'lishi uchun x qanday qiymat olishi kerak?",
+      "v": [
+        "7",
+        "0",
+        "14",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "Dispersiya qiymatlarning markazdan tarqoqligini o'lchaydi, demak yangi son ikkala had orasidagi markazga tushsa, tarqoqlik eng kichik bo'ladi. 5 va 9 ning o'rtasi (5 + 9) : 2 = 7. x = 7 da chetlanishlar eng kichik chiqadi. 0 — nol qo'shish dispersiyani kamaytiradi deb o'ylash, 14 — hadlar yig'indisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-topish",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#4908c155"
+    },
+    {
+      "q": "Beshta talabaning oylik stipendiyasi 700, 750, 800, 850 va 900 ming so'm. Stipendiyalar qatorining dispersiyasi nechaga teng?",
+      "v": [
+        "25 000",
+        "5 000",
+        "200",
+        "800"
+      ],
+      "t": 1,
+      "izoh": "O'rtacha stipendiya: (700 + 750 + 800 + 850 + 900) : 5 = 4000 : 5 = 800 ming so'm. Chetlanishlar −100, −50, 0, 50, 100, kvadratlari yig'indisi 10 000 + 2500 + 0 + 2500 + 10 000 = 25 000. Dispersiya = 25 000 : 5 = 5 000. 200 — kenglik, 800 — o'rtacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dispersiya-kontekst",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#79c19d6a"
+    },
+    {
+      "q": "Otishmada beshta o'q 8 ochkodan, uchtasi 9 ochkodan va ikkitasi 10 ochkodan tegdi. O'nta urinish natijasining dispersiyasi nechaga teng?",
+      "v": [
+        "8,7",
+        "6,1",
+        "0,78",
+        "0,61"
+      ],
+      "t": 3,
+      "izoh": "Jami ochko: 5 · 8 + 3 · 9 + 2 · 10 = 87, o'rtacha 87 : 10 = 8,7. Chetlanishlar kvadratlari: 5 · 0,49 = 2,45; 3 · 0,09 = 0,27; 2 · 1,69 = 3,38. Yig'indi 6,1, dispersiya 6,1 : 10 = 0,61. 8,7 — o'rtacha, 0,78 — standart chetlanish, 6,1 — bo'lishdan oldingi yig'indi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chastota-jadval",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#6ef330cb"
+    },
+    {
+      "q": "Tumanda oilalarning oylik xarajati o'rtacha 5 400 000 so'm, standart chetlanishi 600 000 so'm. O'rtachadan bir standart chetlanishlik oraliq qanday chegaralar orasida yotadi?",
+      "v": [
+        "4 800 000 dan 5 400 000 gacha",
+        "5 400 000 dan 6 000 000 gacha",
+        "4 800 000 dan 6 000 000 gacha",
+        "4 200 000 dan 6 600 000 gacha"
+      ],
+      "t": 2,
+      "izoh": "Oraliqning chap chegarasi o'rtachadan standart chetlanishni ayirish bilan topiladi: 5 400 000 − 600 000 = 4 800 000. O'ng chegara esa qo'shish bilan: 5 400 000 + 600 000 = 6 000 000. Oxirgi variant ikki standart chetlanishga to'g'ri keladi, birinchi ikkisi esa oraliqning faqat yarmini oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "std-oraliq",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#72434225"
+    },
+    {
+      "q": "To'rt nafar sportchining uzunlikka sakrash natijasi 4,20; 4,55; 4,80 va 4,05 metrni tashkil etdi. Qaysi natijaning o'rtachadan chetlanishi eng kichik?",
+      "v": [
+        "4,20 m",
+        "4,80 m",
+        "4,55 m",
+        "4,05 m"
+      ],
+      "t": 2,
+      "izoh": "O'rtacha natija: (4,20 + 4,55 + 4,80 + 4,05) : 4 = 17,60 : 4 = 4,40 m. Chetlanish modullari mos ravishda 0,20; 0,15; 0,40 va 0,35. Eng kichigi 0,15 bo'lib, u 4,55 m natijaga to'g'ri keladi. Eng kichik chetlanish o'rtachaga eng yaqin qiymatda bo'ladi, eng kichik natijada emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetlanish-eng-katta",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#57ce6e1d"
+    },
+    {
+      "q": "Do'konning olti kunlik tushumi 14, 18, 20, 22, 26 va 80 million so'm bo'ldi. Bayram kunidagi g'ayrioddiy 80 million hisobdan chiqarilsa, qolgan besh kunlik tushumning standart chetlanishi nechaga teng?",
+      "v": [
+        "16 million so'm",
+        "12 million so'm",
+        "20 million so'm",
+        "4 million so'm"
+      ],
+      "t": 3,
+      "izoh": "80 olib tashlangach qator 14, 18, 20, 22, 26 bo'lib qoladi, uning o'rtachasi 100 : 5 = 20 million so'm. Chetlanishlar −6, −2, 0, 2, 6, kvadratlari yig'indisi 80, dispersiya 80 : 5 = 16. Standart chetlanish √16 = 4 million so'm. 16 — ildiz olishni unutish, 12 — kenglik, 20 — o'rtacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "outlier-tasir",
+      "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish#a4b1d3ed"
+    }
+  ]
+}

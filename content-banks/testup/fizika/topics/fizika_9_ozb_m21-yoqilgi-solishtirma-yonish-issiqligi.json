@@ -1,0 +1,486 @@
+{
+  "nom": "21-mavzu. Yoqilgi Solishtirma Yonish Issiqligi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Yoqilg'ining solishtirma yonish issiqligi deb nimaga aytiladi?",
+      "v": [
+        "1 kg yoqilg'i batamom yonganda undan ajralib chiqadigan issiqlik miqdoriga",
+        "1 kg yoqilg'i yonganda temperaturasining oshishiga",
+        "1 l yoqilg'i yonganda ajraladigan issiqlik miqdoriga",
+        "Yoqilg'i yonganda hosil bo'lgan gazning issiqlik sig'imiga"
+      ],
+      "t": 0,
+      "izoh": "Ta'rif: 1 kg yoqilg'i batamom yonganda ajraladigan issiqlik miqdori — solishtirma yonish issiqligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#c2de72b6"
+    },
+    {
+      "q": "Yoqilg'ining solishtirma yonish issiqligi qaysi harf bilan belgilanadi?",
+      "v": [
+        "q",
+        "Q",
+        "c",
+        "m"
+      ],
+      "t": 0,
+      "izoh": "Solishtirma yonish issiqligi q harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#754cb27a"
+    },
+    {
+      "q": "Massasi m bo'lgan yoqilg'i yonganda ajralib chiqadigan issiqlik miqdori qanday aniqlandi?",
+      "v": [
+        "Q = q·m",
+        "Q = q/m",
+        "Q = m/q",
+        "Q = q·m²"
+      ],
+      "t": 0,
+      "izoh": "Q = q·m — solishtirma yonish issiqligini massaga ko'paytirish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#ed2e982e"
+    },
+    {
+      "q": "Yoqilg'ining solishtirma yonish issiqligining o'lchov birligi nima?",
+      "v": [
+        "J/kg",
+        "J·kg",
+        "J/l",
+        "N/kg"
+      ],
+      "t": 0,
+      "izoh": "[q] = [Q]/[m] = 1 J/1 kg = 1 J/kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#53e6c4a7"
+    },
+    {
+      "q": "Odatdagi yoqilg'ilarning (ko'mir, neft, benzin) tarkibida qaysi atomlar bo'ladi?",
+      "v": [
+        "Uglerod atomlari",
+        "Azot atomlari",
+        "Vodorod atomlari",
+        "Kislorod atomlari"
+      ],
+      "t": 0,
+      "izoh": "Odatdagi yoqilg'ilar tarkibida uglerod atomlari bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#cc4fae3b"
+    },
+    {
+      "q": "Yonish vaqtida uglerod atomi havodagi kislorod molekulasi bilan birikib qanday molekulani hosil qiladi?",
+      "v": [
+        "Karbonat angidrid (CO₂) molekulasini",
+        "Karbonat oksid (CO) molekulasini",
+        "Suv (H₂O) molekulasini",
+        "Metan (CH₄) molekulasini"
+      ],
+      "t": 0,
+      "izoh": "Yonishda uglerod kislorod bilan birikib CO₂ hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#bf1dac7b"
+    },
+    {
+      "q": "Karbonat angidrid molekulasining hosil bo'lish jarayonida energiya qanday o'zgaradi?",
+      "v": [
+        "Issiqlik ajralib chiqadi",
+        "Issiqlik yutiladi",
+        "Energiya o'zgarmaydi",
+        "Avval yutilib, keyin ajraladi"
+      ],
+      "t": 0,
+      "izoh": "Atomlar birikib molekula hosil bo'lishida energiya ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#9b5a0d13"
+    },
+    {
+      "q": "Molekulalarni atomlarga ajratish (bo'linishi) qanday reaksiya deb ataladi?",
+      "v": [
+        "Kimyoviy parchalanish reaksiyasi",
+        "Kimyoviy birikish reaksiyasi",
+        "Yadro reaksiyasi",
+        "Diffuziya hodisasi"
+      ],
+      "t": 0,
+      "izoh": "Molekulalarni atomlarga bo'linishi kimyoviy parchalanish reaksiyasi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#fc8de94d"
+    },
+    {
+      "q": "Molekulani parchalash uchun energiya sarflanishining sababi nima?",
+      "v": [
+        "Molekula tarkibidagi atomlarni bir-biridan ajratish uchun ularning tortishish kuchiga qarshi ish bajarish kerak",
+        "Atomlar bir-birini itarishiga qarshi ish bajarish kerak",
+        "Molekulalar harakatlanish tezligini oshirish kerak",
+        "Molekulalarni sovitish uchun energiya kerak"
+      ],
+      "t": 0,
+      "izoh": "Molekula tarkibidagi atomlar kuchli tortishadi, ularni ajratish uchun energiya sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#c29b9765"
+    },
+    {
+      "q": "Atomlar birikib molekula hosil bo'lishida energiya qanday o'zgaradi?",
+      "v": [
+        "Energiya ajralib chiqadi",
+        "Energiya yutiladi",
+        "Energiya o'zgarmaydi",
+        "Energiya yo'qoladi"
+      ],
+      "t": 0,
+      "izoh": "Atomlar birikib molekula hosil bo'lishida energiya ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#c61d4485"
+    },
+    {
+      "q": "Jadvalga ko'ra, benzining solishtirma yonish issiqligi qancha?",
+      "v": [
+        "46 MJ/kg",
+        "42 MJ/kg",
+        "44 MJ/kg",
+        "29 MJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Benzin uchun q = 46 MJ/kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#b41e85fd"
+    },
+    {
+      "q": "Jadvalga ko'ra, tabiiy gazning solishtirma yonish issiqligi qancha?",
+      "v": [
+        "44 MJ/kg",
+        "46 MJ/kg",
+        "42 MJ/kg",
+        "10 MJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy gaz uchun q = 44 MJ/kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#275127ca"
+    },
+    {
+      "q": "Jadvalga ko'ra, quruq o'tinning solishtirma yonish issiqligi qancha?",
+      "v": [
+        "10 MJ/kg",
+        "29 MJ/kg",
+        "42 MJ/kg",
+        "44 MJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Quruq o'tin uchun q = 10 MJ/kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#16bcb07f"
+    },
+    {
+      "q": "Jadvaldagi yoqilg'ilar orasida solishtirma yonish issiqligi eng katta bo'lgani qaysi?",
+      "v": [
+        "Benzin",
+        "Kerosin",
+        "Tabiiy gaz",
+        "Toshko'mir"
+      ],
+      "t": 0,
+      "izoh": "Benzin — 46 MJ/kg, jadvaldagi eng katta qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#5961d7bf"
+    },
+    {
+      "q": "Jadvalga ko'ra, solishtirma yonish issiqligi bir xil (29 MJ/kg) bo'lgan yoqilg'ilar qaysilar?",
+      "v": [
+        "Toshko'mir va spirt",
+        "Benzin va kerosin",
+        "Quruq o'tin va tabiiy gaz",
+        "Kerosin va spirt"
+      ],
+      "t": 0,
+      "izoh": "Toshko'mir ham, spirt ham 29 MJ/kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#3c6c81ac"
+    },
+    {
+      "q": "Yoqilg'ining solishtirma yonish issiqligi 44 MJ/kg ga teng, degan ibora nimani bildiradi?",
+      "v": [
+        "1 kg bunday yoqilg'i batamom yonganda 44 MJ issiqlik ajralib chiqadi",
+        "1 kg bunday yoqilg'i yonganda temperatura 44 °C ga ko'tariladi",
+        "44 kg yoqilg'i yonganda 1 MJ issiqlik ajraladi",
+        "1 kg yoqilg'i yonishi uchun 44 MJ issiqlik sarflanadi"
+      ],
+      "t": 0,
+      "izoh": "q = 44 MJ/kg — 1 kg yoqilg'i batamom yonganda 44 MJ issiqlik ajralishini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#73802e06"
+    },
+    {
+      "q": "Massasi 2 kg bo'lgan benzin batamom yonganda qancha issiqlik ajraladi? (q = 46 MJ/kg)",
+      "v": [
+        "92 MJ",
+        "46 MJ",
+        "23 MJ",
+        "48 MJ"
+      ],
+      "t": 0,
+      "izoh": "Q = q·m = 46·2 = 92 MJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#15c3d742"
+    },
+    {
+      "q": "Massasi 5 kg quruq o'tin batamom yonganda ajraladigan issiqlik miqdorini toping. (q = 10 MJ/kg)",
+      "v": [
+        "50 MJ",
+        "15 MJ",
+        "2 MJ",
+        "100 MJ"
+      ],
+      "t": 0,
+      "izoh": "Q = 10·5 = 50 MJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#0977d840"
+    },
+    {
+      "q": "Kerosinning solishtirma yonish issiqligi 42 MJ/kg. 84 MJ issiqlik olish uchun qancha kerosin kerak?",
+      "v": [
+        "2 kg",
+        "4 kg",
+        "0,5 kg",
+        "42 kg"
+      ],
+      "t": 0,
+      "izoh": "m = Q/q = 84/42 = 2 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#fc65dd05"
+    },
+    {
+      "q": "Bir xil massadagi benzin va quruq o'tin batamom yonganda benzin necha marta ko'proq issiqlik beradi? (q_b = 46 MJ/kg, q_o = 10 MJ/kg)",
+      "v": [
+        "4,6 marta",
+        "3,6 marta",
+        "46 marta",
+        "2,3 marta"
+      ],
+      "t": 0,
+      "izoh": "46/10 = 4,6 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#6857fec8"
+    },
+    {
+      "q": "Masala yechish namunasida 20 kg toshko'mir yonganda ajraladigan issiqlikka teng issiqlik olish uchun necha kg quruq o'tin kerak deb topilgan?",
+      "v": [
+        "58 kg",
+        "20 kg",
+        "29 kg",
+        "10 kg"
+      ],
+      "t": 0,
+      "izoh": "m₂ = m₁q₁/q₂ = 20·29/10 = 58 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#e048de8c"
+    },
+    {
+      "q": "Azot molekulasi nechta azot atomidan tashkil topgan?",
+      "v": [
+        "Ikkita",
+        "Bitta",
+        "Uchta",
+        "To'rtta"
+      ],
+      "t": 0,
+      "izoh": "Azot molekulasi ikkita azot atomidan hosil bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#c573d900"
+    },
+    {
+      "q": "Yoqilg'i yonganda ajraladigan issiqlik qayerdan olinadi?",
+      "v": [
+        "Atomlar birikib yangi molekulalar hosil bo'lishida ajraladigan energiyadan",
+        "Yoqilg'i molekulalarining tez harakatlanishidan",
+        "Havoning isishidan",
+        "Yoqilg'ining bug'lanishidan"
+      ],
+      "t": 0,
+      "izoh": "Yonishda CO₂ molekulasi hosil bo'lish jarayonida issiqlik ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#ab5a5b79"
+    },
+    {
+      "q": "Q = q·m formulasida m nimani bildiradi?",
+      "v": [
+        "Batamom yongan yoqilg'ining massasini",
+        "Yoqilg'ining hajmini",
+        "Ajralgan issiqlik miqdorini",
+        "Yoqilg'ining zichligini"
+      ],
+      "t": 0,
+      "izoh": "m — yongan yoqilg'ining massasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#1adbf93b"
+    },
+    {
+      "q": "1 MJ/kg necha J/kg ga teng?",
+      "v": [
+        "10⁶ J/kg",
+        "10³ J/kg",
+        "10⁹ J/kg",
+        "10² J/kg"
+      ],
+      "t": 0,
+      "izoh": "1 MJ = 10⁶ J, demak 1 MJ/kg = 10⁶ J/kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#817c3c53"
+    },
+    {
+      "q": "Toshko'mirning solishtirma yonish issiqligi 29 MJ/kg = 29·10⁶ J/kg. Massasi 3 kg toshko'mir yonganda qancha issiqlik ajraladi?",
+      "v": [
+        "87 MJ",
+        "32 MJ",
+        "9,7 MJ",
+        "29 MJ"
+      ],
+      "t": 0,
+      "izoh": "Q = 29·3 = 87 MJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#fa5deabd"
+    },
+    {
+      "q": "Ikki xil yoqilg'idan birinchi va ikkinchisining massalari bir xil, solishtirma yonish issiqliklari esa q₁ > q₂. Qaysi biri yonganda ko'proq issiqlik ajraladi?",
+      "v": [
+        "Birinchi yoqilg'i",
+        "Ikkinchi yoqilg'i",
+        "Ikkalasi bir xil",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Q = q·m da m bir xil bo'lsa, q kattaroq bo'lgan yoqilg'i ko'proq issiqlik beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#8cd5dcf3"
+    },
+    {
+      "q": "Spirtning solishtirma yonish issiqligi jadvalda qancha berilgan?",
+      "v": [
+        "29 MJ/kg",
+        "27 MJ/kg",
+        "44 MJ/kg",
+        "42 MJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Spirt uchun q = 29 MJ/kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#a088ed0c"
+    },
+    {
+      "q": "Kerosinning solishtirma yonish issiqligi jadvalda qancha?",
+      "v": [
+        "42 MJ/kg",
+        "46 MJ/kg",
+        "44 MJ/kg",
+        "29 MJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Kerosin uchun q = 42 MJ/kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#b8943b7d"
+    },
+    {
+      "q": "Yoqilg'i yonganda issiqlik ajralishini molekulyar nuqtai nazardan qanday tushuntirish mumkin?",
+      "v": [
+        "Uglerod atomlari kislorod bilan birikib CO₂ hosil qilganda energiya ajraladi",
+        "Molekulalar parchalanganda energiya ajraladi",
+        "Yoqilg'i bug'langanda issiqlik ajraladi",
+        "Atomlar bir-biridan uzoqlashganda energiya ajraladi"
+      ],
+      "t": 0,
+      "izoh": "Yonishda uglerod atomi kislorod molekulasi bilan birikib CO₂ hosil qiladi, bu jarayonda issiqlik ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#f9db1495"
+    },
+    {
+      "q": "58 kg quruq o'tin yonganda ajraladigan issiqlik miqdori qancha? (q = 10 MJ/kg)",
+      "v": [
+        "580 MJ",
+        "68 MJ",
+        "5,8 MJ",
+        "5800 MJ"
+      ],
+      "t": 0,
+      "izoh": "Q = 10·58 = 580 MJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#95acbca0"
+    },
+    {
+      "q": "Bir xil issiqlik miqdorini olish uchun solishtirma yonish issiqligi kichik bo'lgan yoqilg'idan qanday miqdor kerak?",
+      "v": [
+        "Ko'proq massada",
+        "Kamroq massada",
+        "Bir xil massada",
+        "Massa ahamiyatga ega emas"
+      ],
+      "t": 0,
+      "izoh": "m = Q/q bo'lgani uchun q kichik bo'lsa, ko'proq massa kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi#76c28608"
+    }
+  ]
+}

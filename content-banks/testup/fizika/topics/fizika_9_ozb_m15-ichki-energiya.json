@@ -1,0 +1,486 @@
+{
+  "nom": "15-mavzu. Ichki Energiya",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Termodinamika deganda qanday fan tushuniladi?",
+      "v": [
+        "Fizik jarayon ichidagi munosabatlarni o'rganadigan molekulyar fizikaning bo'limi",
+        "Jismlarning mexanik harakatini o'rganadigan fizika bo'limi",
+        "Yorug'lik hodisalarini o'rganadigan fizika bo'limi",
+        "Elektr tokini o'rganadigan fizika bo'limi"
+      ],
+      "t": 0,
+      "izoh": "Fizik jarayon ichidagi munosabatlarni o'rganadigan molekulyar fizikaning bo'limiga termodinamika deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#4c182d24"
+    },
+    {
+      "q": "Termodinamikada jismlarning xossalari qanday o'rganiladi?",
+      "v": [
+        "Faqat energiya almashinish nuqtayi nazardan, molekulyar tuzilishiga e'tibor berilmasdan",
+        "Faqat molekulyar tuzilishi nuqtayi nazardan",
+        "Faqat jismning shakli va o'lchamlari nuqtayi nazardan",
+        "Faqat jismning elektrik xossalari nuqtayi nazardan"
+      ],
+      "t": 0,
+      "izoh": "Termodinamikada jismlarning xossalari faqat energiya almashinish nuqtayi nazardan o'rganilib, molekulyar tuzilishiga alohida e'tibor berilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#b26f6791"
+    },
+    {
+      "q": "Jismning ichki energiyasi deganda nima tushuniladi?",
+      "v": [
+        "Jismni tashkil qilgan barcha zarralarning kinetik va potensial energiyalari yig'indisi",
+        "Jismning butunlay harakat energiyasi",
+        "Jismning Yer maydonidagi potensial energiyasi",
+        "Jism yuzasining energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Jismni tashkil qilgan barcha zarralarning kinetik va potensial energiyalari yig'indisi jismning ichki energiyasiga tengdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#49f12cf3"
+    },
+    {
+      "q": "Ichki energiya qanday harf bilan belgilanadi?",
+      "v": [
+        "U",
+        "W",
+        "E",
+        "Q"
+      ],
+      "t": 0,
+      "izoh": "Ichki energiya U harfi bilan belgilanadi: U = Eₖ + Eₚ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#9fb28832"
+    },
+    {
+      "q": "Ideal gaz molekulalarining o'zaro ta'sir potensial energiyasi qanday qabul qilinadi?",
+      "v": [
+        "Nolga teng deb olinadi",
+        "Kinetik energiyaga teng deb olinadi",
+        "Cheksiz katta deb olinadi",
+        "Manfiy qiymatga teng deb olinadi"
+      ],
+      "t": 0,
+      "izoh": "Ideal gaz molekulalari bir-biri bilan o'zaro ta'sirlashmasligi sababli ularning o'zaro ta'sir potensial energiyasi nolga teng deb olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#029f2229"
+    },
+    {
+      "q": "Ideal gazning ichki energiyasi nimadan iborat?",
+      "v": [
+        "Uni tashkil qilgan barcha molekulalarning tartibsiz harakati kinetik energiyalarining yig'indisidan",
+        "Molekulalarning potensial energiyalari yig'indisidan",
+        "Gaz hajmi va bosimining yig'indisidan",
+        "Molekulalarning kinetik va potensial energiyalari yig'indisidan"
+      ],
+      "t": 0,
+      "izoh": "Ideal gazning ichki energiyasi uni tashkil qilgan barcha molekulalar tartibsiz harakati kinetik energiyalarining yig'indisidan iborat: U = Eₖ₁ + Eₖ₂ + ... + Eₖₙ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#64c2c4d7"
+    },
+    {
+      "q": "Ideal gaz molekulasining o'rtacha kinetik energiyasi qanday ifodalanadi?",
+      "v": [
+        "Ēₖ = (3/2)kT",
+        "Ēₖ = kT",
+        "Ēₖ = (1/2)kT",
+        "Ēₖ = 3kT"
+      ],
+      "t": 0,
+      "izoh": "Ideal gaz molekulasining o'rtacha kinetik energiyasi Ēₖ = (3/2)kT ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m15-ichki-energiya#84d640df"
+    },
+    {
+      "q": "U = (3/2)NkT formulasidagi N nimani bildiradi?",
+      "v": [
+        "Gazdagi molekulalar sonini",
+        "Modda miqdorini mollarda",
+        "Gazning hajmini",
+        "Avogadro sonini"
+      ],
+      "t": 0,
+      "izoh": "N — gazdagi molekulalar soni, k — Boltsman doimiysi, T — absolyut temperatura.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#6ce78314"
+    },
+    {
+      "q": "Boltsman doimiysi k bilan Avogadro soni Nₐ ko'paytmasi nimaga teng?",
+      "v": [
+        "Universal gaz doimiysi R ga",
+        "Plank doimiysiga",
+        "1 kaloriyaga",
+        "Faradey soniga"
+      ],
+      "t": 0,
+      "izoh": "k·Nₐ = R ekanligi e'tiborga olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m15-ichki-energiya#cac223c5"
+    },
+    {
+      "q": "Gazdagi molekulalar soni N qanday ifodalanadi?",
+      "v": [
+        "N = (m/M)·Nₐ",
+        "N = M·m·Nₐ",
+        "N = (M/m)·Nₐ",
+        "N = Nₐ/(m·M)"
+      ],
+      "t": 0,
+      "izoh": "N = (m/M)·Nₐ, bunda m — gaz massasi, M — molyar massa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m15-ichki-energiya#556eb9b5"
+    },
+    {
+      "q": "Ideal gazning ichki energiyasini hisoblash formulasi qaysi?",
+      "v": [
+        "U = (3/2)(m/M)RT",
+        "U = (m/M)RT",
+        "U = (3/2)MT/m",
+        "U = (2/3)(m/M)RT"
+      ],
+      "t": 0,
+      "izoh": "U = (3/2)(m/M)RT — ideal gazning ichki energiyasini hisoblash imkonini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m15-ichki-energiya#15d93f46"
+    },
+    {
+      "q": "Ideal gazning ichki energiyasi uning massasiga qanday bog'liq?",
+      "v": [
+        "To'g'ri proporsional",
+        "Teskari proporsional",
+        "Bog'liq emas",
+        "Kvadratik bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Ideal gazning ichki energiyasi uning massasi bilan absolyut temperaturasi ko'paytmasiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m15-ichki-energiya#16e77a46"
+    },
+    {
+      "q": "Ideal gazning ichki energiyasi molyar massasiga qanday bog'liq?",
+      "v": [
+        "Teskari proporsional",
+        "To'g'ri proporsional",
+        "Kvadratiga to'g'ri proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "U = (3/2)(m/M)RT formulasidan ko'rinadiki, ichki energiya molyar massaga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m15-ichki-energiya#c052ec2b"
+    },
+    {
+      "q": "Ideal gazning ichki energiyasi absolyut temperaturaga qanday bog'liq?",
+      "v": [
+        "To'g'ri proporsional",
+        "Teskari proporsional",
+        "Temperatura kvadratiga proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Ichki energiya absolyut temperaturaga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m15-ichki-energiya#e12753cc"
+    },
+    {
+      "q": "Ichki energiyaning o'zgarishi qanday ifodalanadi?",
+      "v": [
+        "ΔU = U₂ − U₁",
+        "ΔU = U₁ − U₂",
+        "ΔU = U₂ + U₁",
+        "ΔU = U₂·U₁"
+      ],
+      "t": 0,
+      "izoh": "Ichki energiyaning o'zgarishi sistemaning dastlabki va oxirgi holati ichki energiyalari farqiga teng: ΔU = U₂ − U₁.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#751756a9"
+    },
+    {
+      "q": "ΔU = (3/2)νRΔT formulasidagi ν nimani bildiradi?",
+      "v": [
+        "Modda miqdorini (mol)",
+        "Gaz hajmini",
+        "Molekulalar sonini",
+        "Gaz bosimini"
+      ],
+      "t": 0,
+      "izoh": "ν — modda miqdori, ν = m/M.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#daa19016"
+    },
+    {
+      "q": "ΔU = (3/2)νRΔT formulasidagi R nimani bildiradi?",
+      "v": [
+        "Universal gaz doimiysini",
+        "Gazning zichligini",
+        "Gazning solishtirma issiqlik sig'imini",
+        "Boltsman doimiysini"
+      ],
+      "t": 0,
+      "izoh": "R — universal gaz doimiysi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#1f2987b2"
+    },
+    {
+      "q": "U = (3/2)pV tenglamasi qaysi tenglamadan foydalanib hosil qilingan?",
+      "v": [
+        "Ideal gazning holat tenglamasidan (Mendeleev–Klapeyron)",
+        "Gey-Lyussak qonunidan",
+        "Sharl qonunidan",
+        "Paskal qonunidan"
+      ],
+      "t": 0,
+      "izoh": "pV = (m/M)RT bo'lgani uchun U = (3/2)(m/M)RT = (3/2)pV ko'rinishga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m15-ichki-energiya#d51d937c"
+    },
+    {
+      "q": "U = (3/2)pV tenglamasidan qanday xulosa ko'rinadi?",
+      "v": [
+        "Gazning ichki energiyasi gaz bosimi va hajmiga ham bog'liq ekanligi",
+        "Ichki energiya faqat massaga bog'liq ekanligi",
+        "Ichki energiya hajmga bog'liq emasligi",
+        "Bosim ichki energiyaga ta'sir qilmasligi"
+      ],
+      "t": 0,
+      "izoh": "(7) tenglikdan gazning ichki energiyasi gaz bosimi va hajmiga ham bog'liq ekanligi ko'rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m15-ichki-energiya#5ffdbafa"
+    },
+    {
+      "q": "Gaz sovitilganda uning ichki energiyasi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Avval ortadi, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Temperatura pasayganda ΔU < 0 bo'lib, ichki energiya kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#bc1599e5"
+    },
+    {
+      "q": "Modda suyuq holatdan gaz holatga o'tganda uning ichki energiyasi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Modda suyuq holatdan gaz holatga o'tganda uning ichki energiyasi ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#cc138083"
+    },
+    {
+      "q": "Modda qattiq holatdan suyuq holatga o'tganda jism ichki energiyasi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Avval kamayadi, keyin ortadi"
+      ],
+      "t": 0,
+      "izoh": "Qattiq holatdan suyuq holatga o'tganda jism ichki energiyasi ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#05e63f0a"
+    },
+    {
+      "q": "Modda suyuq holatdan qattiq holatga o'tganda jism ichki energiyasi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Ikki baravar ortadi"
+      ],
+      "t": 0,
+      "izoh": "Suyuq holatdan qattiq holatga o'tganda jism ichki energiyasi kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#41272624"
+    },
+    {
+      "q": "Har qanday jismning ichki energiyasi nimaga bog'liq?",
+      "v": [
+        "Uning issiqlik holatiga",
+        "Faqat uning shakliga",
+        "Faqat uning rangiga",
+        "Faqat uning tezligiga"
+      ],
+      "t": 0,
+      "izoh": "Har qanday jismning ichki energiyasi uning issiqlik holatiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#1223a121"
+    },
+    {
+      "q": "ΔU manfiy qiymatga ega bo'lsa, gaz bilan qanday jarayon sodir bo'lgan?",
+      "v": [
+        "Gaz sovitilgan, ichki energiyasi kamaygan",
+        "Gaz qizdirilgan, ichki energiyasi ortgan",
+        "Gazning temperaturasi o'zgarmagan",
+        "Gaz hajmi oshgan"
+      ],
+      "t": 0,
+      "izoh": "ΔU < 0 bo'lsa, gazning ichki energiyasi kamaygan, ya'ni u sovitilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m15-ichki-energiya#fc4bdc70"
+    },
+    {
+      "q": "Universal gaz doimiysi R ning son qiymati qancha?",
+      "v": [
+        "8,31 J/(mol·K)",
+        "6,02·10²³ mol⁻¹",
+        "1,38·10⁻²³ J/K",
+        "9,81 m/s²"
+      ],
+      "t": 0,
+      "izoh": "R = 8,31 J/(mol·K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m15-ichki-energiya#17fa9ade"
+    },
+    {
+      "q": "Bir atomli gazlar uchun ichki energiya qaysi ko'rinishda yoziladi?",
+      "v": [
+        "U = (3/2)(m/M)RT = (3/2)pV",
+        "U = (m/M)RT = pV",
+        "U = (5/2)(m/M)RT",
+        "U = (1/2)pV"
+      ],
+      "t": 0,
+      "izoh": "(4) va (7) tenglamalarni bir atomli gazlar uchun yozsak: U = (3/2)(m/M)RT = (3/2)pV.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m15-ichki-energiya#677a85ee"
+    },
+    {
+      "q": "Gaz izobarik qizdirilganda uning ichki energiyasi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Izobarik qizdirilganda temperatura va hajm ortadi, demak ichki energiya ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m15-ichki-energiya#fa0113a1"
+    },
+    {
+      "q": "1 mol bir atomli ideal gazning temperaturasi 1 K ga oshganda uning ichki energiyasi qanchaga o'zgaradi?",
+      "v": [
+        "(3/2)R ≈ 12,5 J ga ortadi",
+        "R ≈ 8,31 J ga ortadi",
+        "(1/2)R ≈ 4,15 J ga ortadi",
+        "2R ≈ 16,6 J ga ortadi"
+      ],
+      "t": 0,
+      "izoh": "ΔU = (3/2)·1·R·1 = (3/2)R ≈ 12,5 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m15-ichki-energiya#3ba8eedd"
+    },
+    {
+      "q": "Termodinamikada sistema bir holatdan ikkinchi holatga o'tganda nima muhim hisoblanadi?",
+      "v": [
+        "Uning ichki energiyasining o'zgarishi",
+        "Uning hajmining absolyut qiymati",
+        "Uning shaklining o'zgarishi",
+        "Uning rangining o'zgarishi"
+      ],
+      "t": 0,
+      "izoh": "Termodinamikada sistema bir holatdan ikkinchi holatga o'tganda uning ichki energiyasining o'zgarishi muhim hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#c8e6afeb"
+    },
+    {
+      "q": "Qattiq va suyuq jismlarning ichki energiyasini hisoblash ideal gaznikiga qaraganda qanday?",
+      "v": [
+        "Murakkabroq",
+        "Osonroq",
+        "Bir xil",
+        "Umuman mumkin emas"
+      ],
+      "t": 0,
+      "izoh": "Ideal gazning ichki energiyasini hisoblash qattiq va suyuq jismlarnikidek murakkab emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#b05ea901"
+    },
+    {
+      "q": "Ichki energiyaning o'lchov birligi nima?",
+      "v": [
+        "Joul",
+        "Nyuton",
+        "Paskal",
+        "Vatt"
+      ],
+      "t": 0,
+      "izoh": "Ichki energiya energiya bo'lgani uchun Joul bilan o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m15-ichki-energiya#a4df8871"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Modul qatnashgan ifodalarni soddalashtirish",
+  "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+  "blok": "ayn",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Kamola daftariga |−12| + |5| − |−3| ifodaning qiymatini yozmoqchi. U natijada qanday son olishi kerak?",
+      "v": [
+        "4",
+        "20",
+        "14",
+        "−10"
+      ],
+      "t": 2,
+      "izoh": "Modul har bir sonni manfiy bo'lmagan songa aylantiradi: |−12| = 12, |5| = 5, |−3| = 3. Endi qo'shish va ayirish bajariladi: 12 + 5 − 3 = 14. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonli-modul-hisoblash",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#08d7e0a7"
+    },
+    {
+      "q": "3·|−4| − |6 − 10| ifodani hisoblang; bunda avval modul ichidagi ayirma topilishi esdan chiqmasin.",
+      "v": [
+        "16",
+        "8",
+        "0",
+        "−16"
+      ],
+      "t": 1,
+      "izoh": "Avval modul ichidagi ayirma hisoblanadi: 6 − 10 = −4, demak |6 − 10| = 4. Shuningdek |−4| = 4, ya'ni 3·|−4| = 12. Natijada 12 − 4 = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonli-modul-hisoblash",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#e67ca345"
+    },
+    {
+      "q": "Ravshan |−15| : |−3| + |−2|³ ifodani hisobladi. To'g'ri natija qaysi variantda berilgan?",
+      "v": [
+        "−3",
+        "3",
+        "−13",
+        "13"
+      ],
+      "t": 3,
+      "izoh": "Modullar ochiladi: |−15| = 15, |−3| = 3, |−2| = 2. Bo'linma 15 : 3 = 5 ni beradi, daraja esa 2³ = 8. Yig'indi 5 + 8 = 13. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonli-modul-hisoblash",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#ad4ebe83"
+    },
+    {
+      "q": "|3 − 8| + |8 − 3| yig'indining qiymati nechaga teng bo'lishini aniqlang va javobingizni asoslang.",
+      "v": [
+        "0",
+        "10",
+        "5",
+        "−10"
+      ],
+      "t": 1,
+      "izoh": "Birinchi modul: 3 − 8 = −5, demak |−5| = 5. Ikkinchi modul: 8 − 3 = 5, demak |5| = 5. Ikkala had ham musbat, shuning uchun ular bir-birini yo'qotmaydi: 5 + 5 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonli-modul-hisoblash",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#04470b89"
+    },
+    {
+      "q": "x = −4 bo'lganda |x − 3| + |x + 1| ifodaning qiymatini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "−10",
+        "10",
+        "6",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "x o'rniga −4 qo'yamiz: |−4 − 3| = |−7| = 7 va |−4 + 1| = |−3| = 3. Ikkala natija ham musbat, ularni qo'shamiz: 7 + 3 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtada-qiymat-qoyib-ochish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#ab1057a6"
+    },
+    {
+      "q": "Berilgan ifoda |2x + 5| − |x − 6| ko'rinishida. x = −3 bo'lganda uning qiymati nimaga teng?",
+      "v": [
+        "10",
+        "8",
+        "−8",
+        "−10"
+      ],
+      "t": 2,
+      "izoh": "Avval modul ichidagi qiymatlarni topamiz: 2·(−3) + 5 = −1 va −3 − 6 = −9. Modullar: |−1| = 1, |−9| = 9. Ayirma 1 − 9 = −8 ni beradi. Javob: −8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtada-qiymat-qoyib-ochish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#45bfc370"
+    },
+    {
+      "q": "Sardor a = 2,5 va b = −1,5 qiymatlarni |a − b| − |b − a| ifodaga qo'ydi. U qanday natija oladi?",
+      "v": [
+        "8",
+        "−8",
+        "4",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "a − b = 2,5 − (−1,5) = 4 va b − a = −4 bo'ladi. Modullar teng chiqadi: |4| = 4 va |−4| = 4. Demak ayirma 4 − 4 = 0. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtada-qiymat-qoyib-ochish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#b6dd9942"
+    },
+    {
+      "q": "Muhandis hisobida x = 7 bo'lsa, |x − 10| + |3 − x| ifoda qanday songa aylanishini toping.",
+      "v": [
+        "−7",
+        "−1",
+        "7",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "x = 7 ni qo'yamiz: |7 − 10| = |−3| = 3 va |3 − 7| = |−4| = 4. Ikkala had qo'shiladi: 3 + 4 = 7. Modullar tashlab yuborilsa −7 chiqib, xato bo'lar edi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtada-qiymat-qoyib-ochish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#60d26bd0"
+    },
+    {
+      "q": "x < 2 shart bajarilganda |x − 2| ifodani modulsiz ko'rinishda to'g'ri yozgan variantni tanlang.",
+      "v": [
+        "x − 2",
+        "−x − 2",
+        "x + 2",
+        "2 − x"
+      ],
+      "t": 3,
+      "izoh": "x < 2 bo'lgani uchun x − 2 ayirma manfiy bo'ladi. Manfiy ifodaning moduli uning qarama-qarshisiga teng: |x − 2| = −(x − 2) = 2 − x. Javob: 2 − x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqda-bitta-modul-ochish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#d3f0c6cf"
+    },
+    {
+      "q": "Kompaniya hisobotida t ≥ 5 shart o'rinli ekani aytilgan. Shu holda |5 − t| ifodani modulsiz qanday yozish kerak?",
+      "v": [
+        "5 − t",
+        "t + 5",
+        "t − 5",
+        "−t − 5"
+      ],
+      "t": 2,
+      "izoh": "t ≥ 5 bo'lsa, 5 − t ayirma musbat bo'la olmaydi, ya'ni 5 − t ≤ 0. Manfiy ifodaning moduli ishorasini o'zgartirib olinadi: |5 − t| = −(5 − t) = t − 5. Javob: t − 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqda-bitta-modul-ochish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#3ddce686"
+    },
+    {
+      "q": "Agar a − 6 ayirma manfiy bo'lsa, |a − 6| ifodaga teng kuchli bo'lgan ifodani ko'rsating.",
+      "v": [
+        "a − 6",
+        "6 − a",
+        "|a| − 6",
+        "a + 6"
+      ],
+      "t": 1,
+      "izoh": "Modul ta'rifiga ko'ra manfiy ifodaning moduli unga qarama-qarshi ifodaga teng bo'ladi. a − 6 < 0 bo'lgani uchun |a − 6| = −(a − 6) = 6 − a. Javob: 6 − a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqda-bitta-modul-ochish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#223577f5"
+    },
+    {
+      "q": "Termometr ko'rsatkichi p qiymati 18 dan katta bo'lsa, |18 − p| ifoda qanday sodda ko'rinishga keladi?",
+      "v": [
+        "p − 18",
+        "18 − p",
+        "−p − 18",
+        "p + 18"
+      ],
+      "t": 0,
+      "izoh": "p > 18 bo'lgani uchun 18 − p ayirma manfiy chiqadi. Shuning uchun modul ochilganda ishora almashadi: |18 − p| = p − 18. Bu son haroratning 18 dan qancha oshganini bildiradi. Javob: p − 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqda-bitta-modul-ochish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#d38bbedb"
+    },
+    {
+      "q": "Ifoda |3x − 12| shaklda berilgan va x < 4 ekani ma'lum. Uni modulsiz ko'rinishda yozing.",
+      "v": [
+        "3x − 12",
+        "−3x − 12",
+        "3x + 12",
+        "12 − 3x"
+      ],
+      "t": 3,
+      "izoh": "x < 4 bo'lsa, 3x < 12, ya'ni 3x − 12 < 0. Manfiy ifodaning moduli qarama-qarshisiga teng: |3x − 12| = −(3x − 12) = 12 − 3x. Javob: 12 − 3x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqda-bitta-modul-ochish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#88837be0"
+    },
+    {
+      "q": "2 < x < 5 oraliqda |x − 2| + |x − 5| ifodani modulsiz yozing va imkon boricha soddalashtiring.",
+      "v": [
+        "7 − 2x",
+        "−3",
+        "3",
+        "2x − 7"
+      ],
+      "t": 2,
+      "izoh": "x > 2 bo'lgani uchun x − 2 > 0, demak |x − 2| = x − 2. x < 5 bo'lgani uchun x − 5 < 0, demak |x − 5| = 5 − x. Yig'indi (x − 2) + (5 − x) = 3 bo'ladi, ya'ni x qatnashmaydi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqda-ikki-modul-ochish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#33e02ae6"
+    },
+    {
+      "q": "−1 ≤ x ≤ 4 oraliqda |x + 1| − |x − 4| ifodaning soddalashgan ko'rinishi qanday bo'ladi?",
+      "v": [
+        "−5",
+        "5",
+        "2x − 3",
+        "2x + 5"
+      ],
+      "t": 2,
+      "izoh": "x ≥ −1 bo'lgani uchun x + 1 ≥ 0 va |x + 1| = x + 1. x ≤ 4 bo'lgani uchun x − 4 ≤ 0 va |x − 4| = 4 − x. Ayirma: (x + 1) − (4 − x) = x + 1 − 4 + x = 2x − 3. Javob: 2x − 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqda-ikki-modul-ochish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#d22b36e5"
+    },
+    {
+      "q": "x > 7 bo'lganda |x − 3| + |7 − x| ifoda qanday sodda ko'rinishga kelishini aniqlang.",
+      "v": [
+        "2x − 10",
+        "4",
+        "−4",
+        "10 − 2x"
+      ],
+      "t": 0,
+      "izoh": "x > 7 bo'lsa, x − 3 > 0, demak |x − 3| = x − 3. Shu bilan birga 7 − x < 0, demak |7 − x| = x − 7. Yig'indi (x − 3) + (x − 7) = 2x − 10 ga teng. Javob: 2x − 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqda-ikki-modul-ochish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#4adb7888"
+    },
+    {
+      "q": "Ombor hisobida m < −2 ekani aniqlangan. Shu shartda |m + 2| − |m| ifodani modulsiz yozib soddalashtiring.",
+      "v": [
+        "2m + 2",
+        "2",
+        "−2m − 2",
+        "−2"
+      ],
+      "t": 3,
+      "izoh": "m < −2 bo'lsa, m + 2 < 0 va |m + 2| = −m − 2. Yana m < 0 bo'lgani uchun |m| = −m. Ayirma: (−m − 2) − (−m) = −m − 2 + m = −2. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqda-ikki-modul-ochish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#0b963b51"
+    },
+    {
+      "q": "0 < y < 3 oraliqda |y − 3| − |y| ifodaning soddalashgan ko'rinishini toping.",
+      "v": [
+        "2y − 3",
+        "3 − 2y",
+        "3",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "y < 3 bo'lgani uchun y − 3 < 0, demak |y − 3| = 3 − y. y > 0 bo'lgani uchun |y| = y. Ayirma: (3 − y) − y = 3 − 2y. Javob: 3 − 2y.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqda-ikki-modul-ochish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#72a1d09d"
+    },
+    {
+      "q": "√(a²) ifodani a ning ixtiyoriy haqiqiy qiymatida to'g'ri ifodalaydigan yozuvni tanlang.",
+      "v": [
+        "a",
+        "a²",
+        "±a",
+        "|a|"
+      ],
+      "t": 3,
+      "izoh": "Kvadrat ildizning qiymati hech qachon manfiy bo'lmaydi, a esa manfiy bo'lishi mumkin. Shuning uchun √(a²) = a deb yozish xato. To'g'ri tenglik: √(a²) = |a|. Javob: |a|.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-kvadratdan-modul-asos",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#c5bca97d"
+    },
+    {
+      "q": "√((−9)²) ifodaning qiymatini hisoblang va to'g'ri javobni ko'rsating.",
+      "v": [
+        "−9",
+        "9",
+        "81",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Avval qavs ichi kvadratga ko'tariladi: (−9)² = 81. So'ng ildiz chiqariladi: √81 = 9. Umumiy qoida bo'yicha √(a²) = |a|, ya'ni |−9| = 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-kvadratdan-modul-asos",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#17f9f9ff"
+    },
+    {
+      "q": "a < 0 bo'lganda √(a²) + a yig'indi nimaga teng bo'lishini aniqlang.",
+      "v": [
+        "0",
+        "2a",
+        "−2a",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "a manfiy bo'lgani uchun √(a²) = |a| = −a bo'ladi. Endi yig'indini yozamiz: (−a) + a = 0. Demak natija a ning aniq qiymatiga bog'liq emas. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-kvadratdan-modul-asos",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#b231095a"
+    },
+    {
+      "q": "√(x²) = −x tenglik qaysi x qiymatlarida o'rinli bo'lishini aniqlang.",
+      "v": [
+        "x ≥ 0",
+        "x ≤ 0",
+        "faqat x = 0",
+        "barcha x lar uchun"
+      ],
+      "t": 1,
+      "izoh": "√(x²) = |x| bo'lgani uchun shart |x| = −x ko'rinishga keladi. Modul manfiy bo'lmagani sababli −x ≥ 0, ya'ni x ≤ 0 kelib chiqadi. x = 0 da ham tenglik bajariladi. Javob: x ≤ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-kvadratdan-modul-asos",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#c65669d4"
+    },
+    {
+      "q": "√(x² − 6x + 9) ifodani modul yordamida yozing; bunda ildiz ostidagi uchhad to'la kvadratga keltiriladi.",
+      "v": [
+        "|x − 3|",
+        "x − 3",
+        "|x| − 3",
+        "3 − x"
+      ],
+      "t": 0,
+      "izoh": "Ildiz ostidagi uchhad to'la kvadratga keladi: x² − 6x + 9 = (x − 3)². Endi √((x − 3)²) = |x − 3| bo'ladi, chunki x − 3 manfiy ham bo'lishi mumkin. Javob: |x − 3|.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-tola-kvadrat-uchhad",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#f4e430e9"
+    },
+    {
+      "q": "x > 5 shartida √(x² − 10x + 25) ifodani modulsiz sodda ko'rinishda yozing.",
+      "v": [
+        "−x − 5",
+        "5 − x",
+        "x + 5",
+        "x − 5"
+      ],
+      "t": 3,
+      "izoh": "Ildiz ostidagi uchhad to'la kvadrat: x² − 10x + 25 = (x − 5)². Shuning uchun ildiz |x − 5| ga teng. x > 5 bo'lgani uchun x − 5 > 0 va modul o'zgarishsiz ochiladi. Javob: x − 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-tola-kvadrat-uchhad",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#6ec1d47c"
+    },
+    {
+      "q": "√(4x² + 12x + 9) ifodani modul orqali yozib, so'ng x ≥ 0 bo'lgan holdagi ko'rinishini toping.",
+      "v": [
+        "2x − 3",
+        "2x + 3",
+        "3 − 2x",
+        "−2x − 3"
+      ],
+      "t": 1,
+      "izoh": "Ildiz ostidagi uchhad to'la kvadrat: 4x² + 12x + 9 = (2x + 3)². Demak ildiz |2x + 3| ga teng. x ≥ 0 bo'lganda 2x + 3 ≥ 3, ya'ni ifoda musbat va modul o'zgarishsiz ochiladi. Javob: 2x + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-tola-kvadrat-uchhad",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#1fc1afb2"
+    },
+    {
+      "q": "√(x² + 8x + 16) ifoda x < −4 bo'lganda qanday modulsiz ko'rinishga ega bo'ladi?",
+      "v": [
+        "x + 4",
+        "x − 4",
+        "4 − x",
+        "−x − 4"
+      ],
+      "t": 3,
+      "izoh": "Ildiz ostidagi uchhad to'la kvadrat: x² + 8x + 16 = (x + 4)². Demak ildiz |x + 4| ga teng. x < −4 bo'lganda x + 4 < 0, shuning uchun modul ishorani almashtirib ochiladi: −(x + 4) = −x − 4. Javob: −x − 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-tola-kvadrat-uchhad",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#c8d4d588"
+    },
+    {
+      "q": "√(9 − 6a + a²) ifodani soddalashtiring; hadlar tartibi o'zgargani natijaga qanday ta'sir qilishini ham ayting.",
+      "v": [
+        "3 − a",
+        "a − 3",
+        "|a − 3|",
+        "|a| − 3"
+      ],
+      "t": 2,
+      "izoh": "Hadlarni odatdagi tartibga keltiramiz: a² − 6a + 9 = (a − 3)². Hadlar tartibi ko'phad qiymatini o'zgartirmaydi. Demak ildiz |a − 3| ga teng, chunki a − 3 manfiy bo'lishi mumkin. Javob: |a − 3|.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-tola-kvadrat-uchhad",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#6b999b83"
+    },
+    {
+      "q": "√((2 − √5)²) ifodaning qiymatini toping; bunda √5 ≈ 2,24 ekanini hisobga oling.",
+      "v": [
+        "2 − √5",
+        "√5 + 2",
+        "√5 − 2",
+        "−√5 − 2"
+      ],
+      "t": 2,
+      "izoh": "√5 ≈ 2,24 bo'lgani uchun 2 − √5 < 0. Ildiz ostidagi to'la kvadrat modulga aylanadi: √((2 − √5)²) = |2 − √5|. Manfiy ifodaning moduli qarama-qarshisiga teng, ya'ni √5 − 2. Javob: √5 − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonli-ildiz-kvadrat-irratsional",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#38d2cf92"
+    },
+    {
+      "q": "√((√7 − 3)²) + √7 ifodani soddalashtirilgan holda ko'rsating.",
+      "v": [
+        "3 − 2√7",
+        "2√7 − 3",
+        "3",
+        "√7"
+      ],
+      "t": 2,
+      "izoh": "√7 ≈ 2,65 bo'lgani uchun √7 − 3 < 0. Demak √((√7 − 3)²) = |√7 − 3| = 3 − √7. Endi yig'amiz: (3 − √7) + √7 = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sonli-ildiz-kvadrat-irratsional",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#75522e71"
+    },
+    {
+      "q": "Ifoda √((π − 3)²) ko'rinishida berilgan. Uning qiymatini modulsiz ko'rinishda yozing.",
+      "v": [
+        "π − 3",
+        "3 − π",
+        "π + 3",
+        "−π − 3"
+      ],
+      "t": 0,
+      "izoh": "π ≈ 3,14 bo'lgani uchun π − 3 > 0. To'la kvadratdan ildiz chiqarilganda modul hosil bo'ladi: √((π − 3)²) = |π − 3|. Musbat ifodaning moduli o'zgarmaydi. Javob: π − 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonli-ildiz-kvadrat-irratsional",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#5981e3d6"
+    },
+    {
+      "q": "√((1,5 − 4)²) + √((4 − 1,5)²) ifodaning qiymatini hisoblang va javobni yozing.",
+      "v": [
+        "5",
+        "0",
+        "2,5",
+        "−5"
+      ],
+      "t": 0,
+      "izoh": "Birinchi ildiz modulga aylanadi: |1,5 − 4| = |−2,5| = 2,5. Ikkinchi ildiz ham xuddi shunday: |4 − 1,5| = 2,5. Ikkala had musbat, ular qo'shiladi: 2,5 + 2,5 = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonli-ildiz-kvadrat-irratsional",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#58ad3ebe"
+    },
+    {
+      "q": "Ma'lumki 3 < b < 8 shart bajariladi. Shu holda b − 3 va b − 8 ayirmalarning ishoralari qanday bo'ladi?",
+      "v": [
+        "b − 3 musbat, b − 8 manfiy",
+        "ikkalasi ham musbat",
+        "b − 3 manfiy, b − 8 musbat",
+        "ikkalasi ham manfiy"
+      ],
+      "t": 0,
+      "izoh": "b > 3 bo'lgani uchun b − 3 > 0, ya'ni birinchi ayirma musbat. b < 8 bo'lgani uchun b − 8 < 0, ya'ni ikkinchi ayirma manfiy. Aynan shu ishoralar modullarni ochishda ishlatiladi. Javob: b − 3 musbat, b − 8 manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifoda-ishorasini-aniqlash",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#59cd15ed"
+    },
+    {
+      "q": "x sonining qiymati 2 dan kichik ekani ma'lum. |x − 2| ni ochishda qavs oldiga qanday ishora qo'yiladi?",
+      "v": [
+        "musbat ishora, ya'ni x − 2",
+        "ishora ahamiyatga ega emas",
+        "manfiy ishora, ya'ni 2 − x",
+        "modulni umuman ochib bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "x < 2 bo'lsa, x − 2 ayirma manfiy chiqadi. Manfiy ifodaning moduli olinganda qavs oldiga minus qo'yiladi: |x − 2| = −(x − 2) = 2 − x. Javob: manfiy ishora, ya'ni 2 − x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifoda-ishorasini-aniqlash",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#e2ecc44f"
+    },
+    {
+      "q": "−5 < c < 0 shart berilgan bo'lsa, c va c + 5 ifodalarning ishoralari haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "c musbat, c + 5 manfiy",
+        "c manfiy, c + 5 musbat",
+        "ikkalasi ham manfiy",
+        "ikkalasi ham musbat"
+      ],
+      "t": 1,
+      "izoh": "c < 0 bo'lgani uchun c manfiy son. c > −5 bo'lgani uchun c + 5 > 0, ya'ni ikkinchi ifoda musbat. Demak modullar |c| = −c va |c + 5| = c + 5 ko'rinishda ochiladi. Javob: c manfiy, c + 5 musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-ishorasini-aniqlash",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#335d76d4"
+    },
+    {
+      "q": "n butun son va n ≤ −1 ekani ma'lum. n² − n ifodaning ishorasi qanday bo'lishini aniqlang.",
+      "v": [
+        "n ga qarab o'zgaradi",
+        "har doim manfiy",
+        "har doim nolga teng",
+        "har doim musbat"
+      ],
+      "t": 3,
+      "izoh": "n ≤ −1 bo'lgani uchun n² ≥ 1, ya'ni birinchi had musbat. Ikkinchi had −n bo'lib, n manfiy bo'lgani uchun −n ≥ 1, u ham musbat. Ikki musbat sonning yig'indisi har doim musbat bo'ladi. Javob: har doim musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-ishorasini-aniqlash",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#8b30f4d0"
+    },
+    {
+      "q": "|x − 1| + |x + 4| ifodani modulsiz yozish uchun sonlar o'qi nechta oraliqqa bo'linishini aniqlang.",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "4 ta",
+        "1 ta"
+      ],
+      "t": 0,
+      "izoh": "Modul ostidagi ifodalar nolga aylanadigan nuqtalar topiladi: x − 1 = 0 dan x = 1, x + 4 = 0 dan x = −4. Ikkita nuqta sonlar o'qini uchta qismga ajratadi. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kritik-nuqta-va-oraliqlar",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#d0528f42"
+    },
+    {
+      "q": "|2x − 6| ifodada modul ostidagi ifodaning ishorasi o'zgaradigan nuqta qaysi son ekanini aniqlang.",
+      "v": [
+        "−6",
+        "6",
+        "−3",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Ishora o'zgaradigan nuqta modul ostidagi ifoda nolga teng bo'lgan joyda joylashadi. 2x − 6 = 0 tenglamadan 2x = 6, ya'ni x = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kritik-nuqta-va-oraliqlar",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#f12233f4"
+    },
+    {
+      "q": "|x| + |x − 2| + |x + 5| ifodani ochish uchun kerak bo'ladigan kritik nuqtalar to'plamini ko'rsating.",
+      "v": [
+        "−5; −2; 0",
+        "0; 2; 5",
+        "−5; 0; 2",
+        "−2; 0; 5"
+      ],
+      "t": 2,
+      "izoh": "Har bir modul ostidagi ifoda nolga tenglashtiriladi: x = 0, x − 2 = 0 dan x = 2, x + 5 = 0 dan x = −5. Nuqtalarni o'sish tartibida yozamiz. Javob: −5; 0; 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kritik-nuqta-va-oraliqlar",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#78ec7132"
+    },
+    {
+      "q": "Sonlar o'qi −3 va 4 nuqtalar bilan bo'lingan. |x + 3| − |x − 4| ifoda x < −3 oraliqda qanday ko'rinish oladi?",
+      "v": [
+        "−7",
+        "7",
+        "−2x − 7",
+        "2x + 1"
+      ],
+      "t": 0,
+      "izoh": "x < −3 bo'lgani uchun x + 3 < 0, demak |x + 3| = −x − 3. Shuningdek x − 4 < 0, demak |x − 4| = 4 − x. Ayirma: (−x − 3) − (4 − x) = −x − 3 − 4 + x = −7. Javob: −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kritik-nuqta-va-oraliqlar",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#da74f149"
+    },
+    {
+      "q": "|x − 2| ifodani ochishda x = 2 nuqtaning o'zida qanday qiymat hosil bo'ladi va bu nuqtani qaysi oraliqqa kiritish mumkin?",
+      "v": [
+        "Qiymat aniqlanmagan, nuqta chiqarib tashlanadi",
+        "Qiymat 0 ga teng, lekin nuqta hech qaysi oraliqqa kirmaydi",
+        "Qiymat 0 ga teng, nuqtani istalgan oraliqqa kiritish mumkin",
+        "Qiymat 2 ga teng, nuqta faqat o'ng oraliqqa kiradi"
+      ],
+      "t": 2,
+      "izoh": "x = 2 da modul ostidagi ifoda nolga aylanadi: |2 − 2| = 0. Nolning moduli nol bo'lgani uchun x − 2 formulasi ham, 2 − x formulasi ham shu nuqtada 0 beradi. Demak chegara nuqtasini istalgan oraliqqa qo'shsa bo'ladi. Javob: qiymat 0, nuqtani istalgan oraliqqa kiritish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kritik-nuqta-va-oraliqlar",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#874c18b4"
+    },
+    {
+      "q": "Nodira |x − 1| + |x − 6| ifodani 1 ≤ x ≤ 6 oraliqdagi turli x larda hisobladi va har safar bir xil son chiqdi. Bu qaysi son?",
+      "v": [
+        "5",
+        "7",
+        "2x − 7",
+        "x ga qarab o'zgaruvchi son"
+      ],
+      "t": 0,
+      "izoh": "Oraliqda x ≥ 1 bo'lgani uchun |x − 1| = x − 1, x ≤ 6 bo'lgani uchun |x − 6| = 6 − x. Yig'indi: (x − 1) + (6 − x) = 5. x qisqarib ketgani uchun natija doimiy bo'ladi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-modul-oraliq-doimiy",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#016cc4fa"
+    },
+    {
+      "q": "|x + 2| + |3 − x| ifodaning qiymati −2 ≤ x ≤ 3 oraliqda o'zgarmas ekanini ko'rsating va shu qiymatni toping.",
+      "v": [
+        "1",
+        "−5",
+        "2x − 1",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "x ≥ −2 bo'lgani uchun x + 2 ≥ 0 va |x + 2| = x + 2. x ≤ 3 bo'lgani uchun 3 − x ≥ 0 va |3 − x| = 3 − x. Yig'indi: (x + 2) + (3 − x) = 5, ya'ni x qatnashmaydi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-modul-oraliq-doimiy",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#1d6d6575"
+    },
+    {
+      "q": "Yo'l chizig'ida A nuqta −4 koordinatada, B nuqta esa 6 koordinatada turibdi. Ular orasidagi M nuqta uchun |x + 4| + |x − 6| yig'indi nechaga teng?",
+      "v": [
+        "2x − 2",
+        "2",
+        "10",
+        "M ning o'rniga bog'liq"
+      ],
+      "t": 2,
+      "izoh": "M nuqta A va B orasida bo'lgani uchun −4 ≤ x ≤ 6. Bunda |x + 4| = x + 4 va |x − 6| = 6 − x. Yig'indi: (x + 4) + (6 − x) = 10, bu esa AB kesmaning uzunligi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-modul-oraliq-doimiy",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#befa04a8"
+    },
+    {
+      "q": "|x| + |x − 9| ifoda 0 ≤ x ≤ 9 oraliqda o'zgarmas bo'ladi. Bu oraliqdan tashqarida ifoda qanday xossaga ega bo'ladi?",
+      "v": [
+        "Qiymat 9 dan katta bo'lib ortib boradi",
+        "Qiymat 9 dan kichik bo'lib kamayadi",
+        "Qiymat baribir 9 ga teng qoladi",
+        "Qiymat manfiy songa aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Oraliq ichida yig'indi x + (9 − x) = 9 ga teng. x > 9 bo'lsa yig'indi x + (x − 9) = 2x − 9 bo'lib, 9 dan katta chiqadi. x < 0 bo'lsa (−x) + (9 − x) = 9 − 2x bo'lib, u ham 9 dan katta. Javob: qiymat 9 dan katta bo'lib ortib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-modul-oraliq-doimiy",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#1726031a"
+    },
+    {
+      "q": "x ≥ 5 bo'lganda |x − 5| − |x + 1| ifodaning soddalashgan ko'rinishini toping.",
+      "v": [
+        "−4",
+        "6",
+        "−6",
+        "2x − 4"
+      ],
+      "t": 2,
+      "izoh": "x ≥ 5 bo'lsa, x − 5 ≥ 0, demak |x − 5| = x − 5. Shu bilan birga x + 1 > 0, demak |x + 1| = x + 1. Ayirma: (x − 5) − (x + 1) = −6. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegaradan-tashqarida-soddalashtirish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#fe0d8093"
+    },
+    {
+      "q": "x < −1 shartida |x + 1| + |x − 5| yig'indi qanday sodda ko'rinishga ega bo'lishini aniqlang.",
+      "v": [
+        "4 − 2x",
+        "−6",
+        "2x − 4",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "x < −1 bo'lsa, x + 1 < 0 va |x + 1| = −x − 1. Yana x < 5 bo'lgani uchun |x − 5| = 5 − x. Yig'indi: (−x − 1) + (5 − x) = 4 − 2x. Javob: 4 − 2x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegaradan-tashqarida-soddalashtirish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#3e5f1c3c"
+    },
+    {
+      "q": "Havo harorati t butun kun davomida 3 darajadan yuqori bo'ldi. Shu shartda |t − 3| + |t − 1| ifodani modulsiz yozing.",
+      "v": [
+        "2t − 4",
+        "4",
+        "4 − 2t",
+        "2t + 4"
+      ],
+      "t": 0,
+      "izoh": "t > 3 bo'lgani uchun t − 3 > 0 va |t − 3| = t − 3. Yana t > 3 > 1 bo'lgani uchun t − 1 > 0 va |t − 1| = t − 1. Yig'indi: (t − 3) + (t − 1) = 2t − 4. Javob: 2t − 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegaradan-tashqarida-soddalashtirish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#9fe43c03"
+    },
+    {
+      "q": "x ≤ −2 shart bajarilganda |x + 2| + |x| ifodani soddalashtiring va natijani ko'rsating.",
+      "v": [
+        "−2x − 2",
+        "2x + 2",
+        "−2",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "x ≤ −2 bo'lsa, x + 2 ≤ 0 va |x + 2| = −x − 2. Shuningdek x < 0 bo'lgani uchun |x| = −x. Yig'indi: (−x − 2) + (−x) = −2x − 2. Javob: −2x − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegaradan-tashqarida-soddalashtirish",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#71a153b4"
+    },
+    {
+      "q": "x < 0 bo'lganda |x| : x nisbatning qiymati qanday bo'lishini aniqlang.",
+      "v": [
+        "−1",
+        "1",
+        "0",
+        "x ning qiymatiga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "x manfiy bo'lgani uchun |x| = −x bo'ladi. Nisbatni yozamiz: (−x) : x = −1. Bu natija x ning aniq qiymatiga emas, faqat ishorasiga bog'liq. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kasr-belgi",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#5074b37f"
+    },
+    {
+      "q": "a ≠ 0 bo'lsa, |a|/a ifoda faqat ikkita qiymat qabul qiladi. Bu qiymatlar qaysilar ekanini toping.",
+      "v": [
+        "0 va 1",
+        "1 va −1",
+        "−1 va 0",
+        "faqat 1"
+      ],
+      "t": 1,
+      "izoh": "a > 0 bo'lganda |a| = a, demak |a|/a = 1. a < 0 bo'lganda |a| = −a, demak |a|/a = −1. Uchinchi hol yo'q, chunki a nolga teng emas. Javob: 1 va −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kasr-belgi",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#d789e2cd"
+    },
+    {
+      "q": "b < 0 bo'lganda (|b| + b)/2 ifodaning qiymatini toping va javobingizni asoslang.",
+      "v": [
+        "b",
+        "−b",
+        "0",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "b manfiy bo'lgani uchun |b| = −b. Suratni hisoblaymiz: (−b) + b = 0. Nolni 2 ga bo'lsak yana 0 hosil bo'ladi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kasr-belgi",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#ba0f4dc3"
+    },
+    {
+      "q": "x > 0 va y < 0 bo'lsa, |x|/x + |y|/y yig'indining qiymatini hisoblang.",
+      "v": [
+        "2",
+        "0",
+        "−2",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "x musbat bo'lgani uchun |x| = x va |x|/x = 1. y manfiy bo'lgani uchun |y| = −y va |y|/y = −1. Yig'indi: 1 + (−1) = 0. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kasr-belgi",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#3119134d"
+    },
+    {
+      "q": "|−3·7| va |−3|·|7| ifodalarni hisoblab, modulning ko'paytmaga oid xossasi haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "Ikkalasi ham −21 ga teng",
+        "Birinchisi 21, ikkinchisi −21 ga teng",
+        "Ikkalasi 21 ga teng, xossa har doim o'rinli",
+        "Xossa faqat musbat sonlar uchun o'rinli"
+      ],
+      "t": 2,
+      "izoh": "Birinchi ifodada avval ko'paytma topiladi: −3·7 = −21, uning moduli 21. Ikkinchi ifodada modullar ko'paytiriladi: 3·7 = 21. Natijalar teng chiqdi, bu |a·b| = |a|·|b| xossasining namoyishi. Javob: ikkalasi 21, xossa har doim o'rinli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-xossalari",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#81d00271"
+    },
+    {
+      "q": "|a + b| = |a| + |b| tenglik qaysi hollarda o'rinli bo'lishini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "barcha a va b lar uchun",
+        "a·b ≤ 0 bo'lganda",
+        "faqat a = b bo'lganda",
+        "a·b ≥ 0 bo'lganda"
+      ],
+      "t": 3,
+      "izoh": "Agar a va b bir xil ishorali bo'lsa yoki ulardan biri nol bo'lsa, yig'indi modulda o'zgarishsiz qoladi. Bu shart a·b ≥ 0 ko'rinishida yoziladi. Qarama-qarshi ishorali sonlarda esa |a + b| < |a| + |b| bo'ladi. Javob: a·b ≥ 0 bo'lganda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-xossalari",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#a7ab44c0"
+    },
+    {
+      "q": "|a − b| va |b − a| ifodalar orasidagi munosabatni to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "Birinchisi doim kattaroq",
+        "Ular qarama-qarshi sonlar",
+        "Ular har doim o'zaro teng",
+        "Munosabat a va b ga bog'liq"
+      ],
+      "t": 2,
+      "izoh": "b − a = −(a − b) bo'lgani uchun bu ikki ifoda qarama-qarshi. Qarama-qarshi sonlarning modullari esa bir xil bo'ladi, chunki |−k| = |k|. Demak |a − b| = |b − a| har doim to'g'ri. Javob: ular har doim o'zaro teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-xossalari",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#28ce88c4"
+    },
+    {
+      "q": "|a|² ifodani a² bilan taqqoslang va ular haqidagi to'g'ri xulosani belgilang.",
+      "v": [
+        "a² doim kattaroq bo'ladi",
+        "a < 0 bo'lganda ular farq qiladi",
+        "|a|² doim kattaroq bo'ladi",
+        "Ular barcha a lar uchun teng"
+      ],
+      "t": 3,
+      "izoh": "|a| soni a ga yoki −a ga teng bo'ladi. Har ikkala holda ham kvadratga ko'tarilganda a² hosil bo'ladi, chunki (−a)² = a². Demak |a|² = a² barcha haqiqiy a lar uchun o'rinli. Javob: ular barcha a lar uchun teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-xossalari",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#5636f63c"
+    },
+    {
+      "q": "Bir ifoda |x| ≥ x ko'rinishida yozilgan. Bu tengsizlik qaysi x lar uchun tenglikka aylanishini aniqlang.",
+      "v": [
+        "x ≤ 0",
+        "x ≥ 0",
+        "faqat x = 0",
+        "hech qanday x da"
+      ],
+      "t": 1,
+      "izoh": "x ≥ 0 bo'lganda |x| = x, ya'ni tenglik bajariladi. x < 0 bo'lganda esa |x| = −x bo'lib, u x dan katta chiqadi va qat'iy tengsizlik qoladi. Javob: x ≥ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-xossalari",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#e9ab7070"
+    },
+    {
+      "q": "|x − 7| = 7 − x tenglik qaysi x qiymatlarida o'rinli bo'lishini aniqlang.",
+      "v": [
+        "x ≥ 7",
+        "x ≤ 7",
+        "faqat x = 7",
+        "barcha x lar uchun"
+      ],
+      "t": 1,
+      "izoh": "Modul o'z ichidagi ifodaning qarama-qarshisiga faqat shu ifoda manfiy yoki nol bo'lganda teng bo'ladi. Demak x − 7 ≤ 0, ya'ni x ≤ 7 bo'lishi kerak. Javob: x ≤ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglik-orinli-oraliq",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#c52a7cde"
+    },
+    {
+      "q": "√((x − 2)²) = x − 2 tenglik bajarilishi uchun x qanday shartni qanoatlantirishi kerakligini toping.",
+      "v": [
+        "x ≥ 2",
+        "x ≤ 2",
+        "x ≠ 2",
+        "har qanday x uchun bajariladi"
+      ],
+      "t": 0,
+      "izoh": "To'la kvadratdan ildiz chiqarilganda √((x − 2)²) = |x − 2| hosil bo'ladi. Modul o'z ichidagi ifodaga teng bo'lishi uchun x − 2 ≥ 0 bo'lishi kerak. Bundan x ≥ 2. Javob: x ≥ 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglik-orinli-oraliq",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#a677d649"
+    },
+    {
+      "q": "|3 − x| + |x − 3| = 2(3 − x) tenglik qaysi shartda to'g'ri bo'lishini aniqlang.",
+      "v": [
+        "x ≥ 3",
+        "x ≤ 3",
+        "faqat x = 3",
+        "hech qanday x da"
+      ],
+      "t": 1,
+      "izoh": "|3 − x| va |x − 3| o'zaro teng, shuning uchun chap tomon 2·|x − 3| ga teng. Tenglik 2|x − 3| = 2(3 − x) ko'rinishga keladi, ya'ni |x − 3| = 3 − x. Bu esa x − 3 ≤ 0, ya'ni x ≤ 3 da bajariladi. Javob: x ≤ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglik-orinli-oraliq",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#daad30da"
+    },
+    {
+      "q": "|x| + x = 0 shart nechta yechimga ega va ular qanday to'plamni tashkil qilishini ko'rsating.",
+      "v": [
+        "Ikkita, ya'ni x = 0 va x = 1",
+        "Faqat bitta, ya'ni x = 0",
+        "Cheksiz ko'p, ya'ni x ≤ 0 to'plam",
+        "Yechimi umuman yo'q"
+      ],
+      "t": 2,
+      "izoh": "Shartni |x| = −x ko'rinishga keltiramiz. Modul manfiy bo'lmaydi, shuning uchun −x ≥ 0, ya'ni x ≤ 0. Bu oraliqdagi har bir son shartni qanoatlantiradi. Javob: cheksiz ko'p, x ≤ 0 to'plam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglik-orinli-oraliq",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#afa1f2d3"
+    },
+    {
+      "q": "x > 10 bo'lganda ||x − 4| − 3| ifodani modulsiz ko'rinishda yozing.",
+      "v": [
+        "7 − x",
+        "x − 1",
+        "x − 7",
+        "x + 7"
+      ],
+      "t": 2,
+      "izoh": "x > 10 bo'lgani uchun x − 4 > 0, demak ichki modul |x − 4| = x − 4. Endi tashqi modul ostida x − 4 − 3 = x − 7 qoladi. x > 10 bo'lgani uchun x − 7 > 0 va modul o'zgarishsiz ochiladi. Javob: x − 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ichida-modul",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#19e71905"
+    },
+    {
+      "q": "0 ≤ x ≤ 2 oraliqda ||x − 5| − 1| ifodaning soddalashgan ko'rinishini toping.",
+      "v": [
+        "6 − x",
+        "x − 4",
+        "4 − x",
+        "x − 6"
+      ],
+      "t": 2,
+      "izoh": "Oraliqda x ≤ 2 bo'lgani uchun x − 5 < 0 va ichki modul |x − 5| = 5 − x. Tashqi modul ostida 5 − x − 1 = 4 − x qoladi. x ≤ 2 bo'lgani uchun 4 − x ≥ 2, ya'ni musbat, modul o'zgarishsiz ochiladi. Javob: 4 − x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ichida-modul",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#a43621b8"
+    },
+    {
+      "q": "Ifoda ||a| − a| ko'rinishida berilgan va a < 0 ekani ma'lum. Uni modulsiz yozing.",
+      "v": [
+        "2a",
+        "−2a",
+        "0",
+        "−a"
+      ],
+      "t": 1,
+      "izoh": "a < 0 bo'lgani uchun ichki modul |a| = −a. Tashqi modul ostida −a − a = −2a qoladi. a manfiy bo'lgani uchun −2a musbat, demak modul o'zgarishsiz ochiladi. Javob: −2a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ichida-modul",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#9354f74b"
+    },
+    {
+      "q": "||x| − 6| ifodaning qiymati x = −2 bo'lganda nechaga teng bo'lishini hisoblang.",
+      "v": [
+        "2",
+        "8",
+        "−4",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Avval ichki modul hisoblanadi: |−2| = 2. So'ng tashqi modul ostidagi ifoda: 2 − 6 = −4. Nihoyat tashqi modul olinadi: |−4| = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ichida-modul",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#96b4a16b"
+    },
+    {
+      "q": "|x − 3| + |x − 11| yig'indining eng kichik qiymatini va u erishiladigan x lar to'plamini aniqlang.",
+      "v": [
+        "8, ya'ni faqat x = 7 nuqtada",
+        "8, ya'ni 3 ≤ x ≤ 11 oraliqda",
+        "14, ya'ni faqat x = 0 nuqtada",
+        "0, ya'ni faqat x = 7 nuqtada"
+      ],
+      "t": 1,
+      "izoh": "3 ≤ x ≤ 11 oraliqda yig'indi (x − 3) + (11 − x) = 8 bo'lib, doimiy qoladi. Oraliqdan tashqarida esa yig'indi 8 dan katta chiqadi. Demak eng kichik qiymat 8 va u butun oraliqda erishiladi. Javob: 8, 3 ≤ x ≤ 11 oraliqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-kichik-qiymat-tahlil",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#87683371"
+    },
+    {
+      "q": "Uchta moduldan iborat |x − 2| + |x − 6| + |x − 10| yig'indi eng kichik qiymatga qaysi x da erishishini aniqlang.",
+      "v": [
+        "x = 6",
+        "x = 2",
+        "x = 10",
+        "x = 4"
+      ],
+      "t": 0,
+      "izoh": "Chetki ikki had |x − 2| + |x − 10| yig'indisi 2 ≤ x ≤ 10 oraliqda 8 ga teng bo'lib doimiy qoladi. Qolgan |x − 6| had esa x = 6 da nolga aylanadi. Demak eng kichik qiymat x = 6 da bo'ladi va u 8 ga teng. Javob: x = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-kichik-qiymat-tahlil",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#8818b0f0"
+    },
+    {
+      "q": "|x − 4| − |x + 2| ifoda qabul qila oladigan eng katta qiymatni toping.",
+      "v": [
+        "6",
+        "−6",
+        "2",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "x ≤ −2 bo'lganda ifoda (4 − x) − (−x − 2) = 6 ga teng. −2 < x < 4 oraliqda u 2 − 2x ko'rinishida bo'lib, 6 dan kichik. x ≥ 4 bo'lganda esa ifoda −6 ga teng. Demak eng katta qiymat 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-kichik-qiymat-tahlil",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#8b4ffab7"
+    },
+    {
+      "q": "Ikki ombor sonlar o'qida 2 va 9 nuqtalarda joylashgan. Yuk mashinasi x nuqtada turib ikkala omborgacha masofalar yig'indisi eng kichik bo'lishi uchun x qanday tanlanadi?",
+      "v": [
+        "Faqat ikki ombor o'rtasidagi nuqta, yig'indi 7",
+        "2 ≤ x ≤ 9 oraliqdagi istalgan nuqta, yig'indi 7",
+        "Faqat x = 2 nuqta, yig'indi 9",
+        "Faqat x = 0 nuqta, yig'indi 11"
+      ],
+      "t": 1,
+      "izoh": "Masofalar yig'indisi |x − 2| + |x − 9| ko'rinishida yoziladi. 2 ≤ x ≤ 9 oraliqda u (x − 2) + (9 − x) = 7 ga teng bo'lib, o'zgarmaydi. Oraliqdan tashqarida yig'indi 7 dan katta bo'ladi. Javob: 2 ≤ x ≤ 9 oraliqdagi istalgan nuqta, yig'indi 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-kichik-qiymat-tahlil",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#f134a8a2"
+    },
+    {
+      "q": "|x − 1| + |x − 5| = 4 tenglikni qanoatlantiruvchi barcha x lar to'plamini aniqlang.",
+      "v": [
+        "faqat x = 3",
+        "1 ≤ x ≤ 5",
+        "x ≤ 1 yoki x ≥ 5",
+        "faqat x = 1 va x = 5"
+      ],
+      "t": 1,
+      "izoh": "1 ≤ x ≤ 5 oraliqda yig'indi (x − 1) + (5 − x) = 4 bo'lib, tenglik bajariladi. Oraliqdan tashqarida yig'indi 4 dan katta chiqadi, demak boshqa yechim yo'q. Javob: 1 ≤ x ≤ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-qiymat-tahlil",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#36b12fa0"
+    },
+    {
+      "q": "Nonvoyxonada bir dona nonning me'yoriy massasi 500 g. Nazoratchi chetlanishni |m − 500| ifoda bilan o'lchaydi. Massasi 486 g bo'lgan non uchun bu ifoda qanday qiymat beradi?",
+      "v": [
+        "486",
+        "−14",
+        "986",
+        "14"
+      ],
+      "t": 3,
+      "izoh": "Chetlanish |m − 500| formula bilan topiladi. m = 486 ni qo'yamiz: |486 − 500| = |−14| = 14. Modul ayirmani musbat qiladi, chunki chetlanish kattaligi manfiy bo'lmaydi. Javob: 14 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chetlanish-olchov-nazorat",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#79a96906"
+    },
+    {
+      "q": "Zavodda podshipnik diametri 24 mm bo'lishi kerak. Nazoratchi |d − 24| ≤ 0,3 shartni tekshiradi. Diametri 23,8 mm bo'lgan detal shartni qanoatlantiradimi?",
+      "v": [
+        "Yo'q, chetlanish −0,2 mm, ya'ni manfiy",
+        "Ha, chetlanish 0,2 mm bo'lib, 0,3 dan kichik",
+        "Yo'q, chetlanish 0,4 mm bo'lib, 0,3 dan katta",
+        "Ha, chetlanish aynan 0 mm ga teng"
+      ],
+      "t": 1,
+      "izoh": "Chetlanishni hisoblaymiz: |d − 24| = |23,8 − 24| = |−0,2| = 0,2 mm. Modul ayirmaning ishorasini yo'qotadi, shuning uchun manfiy javob bo'lmaydi. 0,2 son 0,3 dan kichik, demak detal shartni qanoatlantiradi. Javob: ha, chetlanish 0,2 mm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetlanish-olchov-nazorat",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#a566bb20"
+    },
+    {
+      "q": "Sut idishiga 1000 ml quyilishi rejalashtirilgan edi, amalda esa 1012 ml quyildi. Chetlanishni modul bilan to'g'ri yozgan va hisoblagan variantni tanlang.",
+      "v": [
+        "1012 − 1000 = −12",
+        "|1000 − 1012| = −12",
+        "|1012 + 1000| = 2012",
+        "|1012 − 1000| = 12"
+      ],
+      "t": 3,
+      "izoh": "Chetlanish amaldagi va rejadagi hajm ayirmasining moduli sifatida yoziladi: |1012 − 1000|. Qavs ichidagi ayirma 12 ga teng, uning moduli ham 12. Modul qiymati hech qachon manfiy bo'lmagani uchun −12 javob bo'la olmaydi. Javob: |1012 − 1000| = 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chetlanish-olchov-nazorat",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#f8f03ce5"
+    },
+    {
+      "q": "Anvarning imtihon balli 68, guruh o'rtachasi esa 74 ga teng. |68 − 74| ifoda qanday ma'noni anglatadi va nechaga teng?",
+      "v": [
+        "O'rtachadan ortiqcha olingan ball, ya'ni 6 ball",
+        "O'rtachadan chetlanish kattaligi, ya'ni 6 ball",
+        "Ikki ballning yig'indisi, ya'ni 142 ball",
+        "Chetlanish, ya'ni −6 ball"
+      ],
+      "t": 1,
+      "izoh": "Ifodani hisoblaymiz: |68 − 74| = |−6| = 6. Modul ayirmaning ishorasini emas, balki kattaligini beradi. Demak Anvarning bali o'rtachadan 6 ballga farq qiladi, lekin modul qaysi tomonga ekanini ko'rsatmaydi. Javob: chetlanish kattaligi, 6 ball.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chetlanish-olchov-nazorat",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#6aa3b010"
+    },
+    {
+      "q": "Toshkent yo'nalishidagi yo'lda kilometr belgilari bor. Avtomobil x-kilometrda, xizmat shoxobchasi esa 120-kilometrda joylashgan. Ular orasidagi masofa modul bilan qanday yoziladi?",
+      "v": [
+        "|x − 120|",
+        "x − 120",
+        "120 − x",
+        "|x| − 120"
+      ],
+      "t": 0,
+      "izoh": "Sonlar o'qida ikki nuqta orasidagi masofa ularning ayirmasi moduli bilan topiladi. Bu yerda nuqtalar x va 120, demak masofa |x − 120| ga teng. Modulsiz yozilsa, avtomobil 120-kilometrdan oldinda bo'lganda manfiy son chiqib qolardi. Javob: |x − 120|.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-sonlar-oqida",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#97096dbb"
+    },
+    {
+      "q": "Sonlar o'qida A nuqta −3 sonini, B nuqta esa 5 sonini ifodalaydi. AB kesmaning uzunligini modul yordamida hisoblang.",
+      "v": [
+        "2",
+        "8",
+        "−8",
+        "15"
+      ],
+      "t": 1,
+      "izoh": "Kesma uzunligi AB = |5 − (−3)| formula bo'yicha topiladi. Qavs ichidagi ayirma: 5 + 3 = 8. Modul olinadi: |8| = 8. Javob: 8 birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-sonlar-oqida",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#243c002d"
+    },
+    {
+      "q": "M nuqtaning koordinatasi x, N nuqtaniki 7 ga teng. MN = 4 shart |x − 7| = 4 ko'rinishida yozildi; x ning qanday qiymatlari mos keladi?",
+      "v": [
+        "11 va 28",
+        "−4 va 4",
+        "3 va 4",
+        "3 va 11"
+      ],
+      "t": 3,
+      "izoh": "|x − 7| = 4 shart x − 7 = 4 yoki x − 7 = −4 degani. Birinchi holda x = 11, ikkinchi holda x = 3 chiqadi. Ya'ni N nuqtadan chapda va o'ngda bittadan nuqta bor. Javob: 3 va 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masofa-sonlar-oqida",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#12476d2d"
+    },
+    {
+      "q": "Sonlar o'qida 2 nuqtadan uzoqligi 6 birlikdan oshmaydigan nuqtalar to'plamini modul yordamida yozing va oraliqni toping.",
+      "v": [
+        "|x − 2| ≥ 6, ya'ni x ≥ 8",
+        "|x + 2| ≤ 6, ya'ni −8 ≤ x ≤ 4",
+        "|x − 6| ≤ 2, ya'ni 4 ≤ x ≤ 8",
+        "|x − 2| ≤ 6, ya'ni −4 ≤ x ≤ 8"
+      ],
+      "t": 3,
+      "izoh": "x nuqtadan 2 gacha bo'lgan masofa |x − 2| ko'rinishida yoziladi. Masofa 6 dan oshmasligi sharti |x − 2| ≤ 6 ni beradi. Bundan −6 ≤ x − 2 ≤ 6, har uch qismga 2 qo'shsak −4 ≤ x ≤ 8. Javob: |x − 2| ≤ 6, ya'ni −4 ≤ x ≤ 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masofa-sonlar-oqida",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#9e968281"
+    },
+    {
+      "q": "Issiqxonada kunduzgi harorat 26 daraja, tungisi esa 14 daraja bo'ldi. |26 − 14| ifoda nimani bildiradi va uning qiymati qancha?",
+      "v": [
+        "Haroratlar yig'indisi, ya'ni 40",
+        "Haroratlar farqi kattaligi, ya'ni 12",
+        "Farq, ya'ni −12",
+        "O'rtacha harorat, ya'ni 20"
+      ],
+      "t": 1,
+      "izoh": "Ifodani hisoblaymiz: |26 − 14| = |12| = 12. Modul ikki qiymat orasidagi farqning kattaligini beradi. Demak kunduzgi va tungi harorat 12 darajaga farq qiladi. Javob: haroratlar farqi kattaligi, 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harorat-chetlanishi",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#66cd017e"
+    },
+    {
+      "q": "Muzlatkichda harorat −18 daraja bo'lishi kerak, o'lchov esa −21 daraja ko'rsatdi. Chetlanishni |−21 − (−18)| ifoda bilan hisoblang.",
+      "v": [
+        "−39",
+        "−3",
+        "39",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Avval qavslarni ochamiz: −21 − (−18) = −21 + 18 = −3. Endi modul olinadi: |−3| = 3. Demak harorat me'yordan 3 darajaga chetlangan. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harorat-chetlanishi",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#ecec948e"
+    },
+    {
+      "q": "Meteorolog sutkalik harorat uchun |t − 20| ≤ 4 shartni yozdi. Bu shart haroratning qanday oraliqda bo'lishini bildirishini aniqlang.",
+      "v": [
+        "−24 ≤ t ≤ 24",
+        "20 ≤ t ≤ 24",
+        "16 ≤ t ≤ 24",
+        "4 ≤ t ≤ 20"
+      ],
+      "t": 2,
+      "izoh": "|t − 20| ≤ 4 sharti t − 20 ayirmaning kattaligi 4 dan oshmasligini bildiradi. Bundan −4 ≤ t − 20 ≤ 4 kelib chiqadi. Har uch qismga 20 qo'shsak, 16 ≤ t ≤ 24 hosil bo'ladi. Javob: 16 ≤ t ≤ 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harorat-chetlanishi",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#9b3dc788"
+    },
+    {
+      "q": "Kun davomida harorat 20 darajadan past bo'lgan. Shu shartda |t − 20| ifodani modulsiz yozing va uning ma'nosini tushuntiring.",
+      "v": [
+        "t + 20",
+        "t − 20",
+        "20 − t",
+        "−t − 20"
+      ],
+      "t": 2,
+      "izoh": "Shartga ko'ra t < 20, demak t − 20 ayirma manfiy. Manfiy ifodaning moduli qarama-qarshisiga teng: |t − 20| = 20 − t. Bu son haroratning 20 darajadan qancha pastligini bildiradi. Javob: 20 − t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harorat-chetlanishi",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#537ac069"
+    },
+    {
+      "q": "Do'kon oyiga 12 mln so'm daromad rejalashtirgan. Amaldagi daromad d bo'lsa, chetlanish |d − 12| bilan o'lchanadi; d = 9,5 bo'lganda chetlanish qancha?",
+      "v": [
+        "9,5 mln so'm",
+        "−2,5 mln so'm",
+        "21,5 mln so'm",
+        "2,5 mln so'm"
+      ],
+      "t": 3,
+      "izoh": "Chetlanish |d − 12| formula bilan topiladi. d = 9,5 ni qo'yamiz: |9,5 − 12| = |−2,5| = 2,5. Modul ayirmani musbat qiladi, shuning uchun manfiy javob mos emas. Javob: 2,5 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "byudjet-reja-farqi",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#6fbc5c0c"
+    },
+    {
+      "q": "Oilaviy byudjetda oziq-ovqatga 1 500 000 so'm ajratilgan, sarflangani esa s. |s − 1500000| ifodaning qiymati nolga teng bo'lsa, bu nimani anglatadi?",
+      "v": [
+        "Sarf rejaga aynan teng bo'lgan",
+        "Sarf rejadan ancha ko'p bo'lgan",
+        "Sarf rejadan ancha kam bo'lgan",
+        "Umuman xarajat qilinmagan"
+      ],
+      "t": 0,
+      "izoh": "Modul faqat modul ostidagi ifoda nolga teng bo'lgandagina nol bo'ladi. Demak s − 1500000 = 0, ya'ni s = 1500000. Bu esa sarflangan mablag' rejaga aynan mos kelganini bildiradi. Javob: sarf rejaga aynan teng bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "byudjet-reja-farqi",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#822b5d15"
+    },
+    {
+      "q": "Firmaning oylik xarajati x mln so'm, reja esa 40 mln so'm. Chetlanish 5 mln so'mdan oshmasligi kerak; bu shartni modul yordamida yozing.",
+      "v": [
+        "|x + 40| ≤ 5",
+        "|x − 5| ≤ 40",
+        "|x − 40| ≤ 5",
+        "|40 − 5| ≤ x"
+      ],
+      "t": 2,
+      "izoh": "Chetlanish amaldagi xarajat bilan reja ayirmasining moduli, ya'ni |x − 40|. Bu chetlanish 5 dan oshmasligi kerak, demak |x − 40| ≤ 5. Ochib yozilsa 35 ≤ x ≤ 45 oraliq hosil bo'ladi. Javob: |x − 40| ≤ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "byudjet-reja-farqi",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#9bbd96ea"
+    },
+    {
+      "q": "Sotuvchining kunlik savdo rejasi 3 mln so'm. Bir hafta davomida savdo har kuni rejadan kam bo'ldi; shunda har bir |s − 3| ifoda qanday soddalashadi?",
+      "v": [
+        "Har biri s − 3 ko'rinishga keladi",
+        "Har biri 3 − s ko'rinishga keladi",
+        "Har biri s + 3 ko'rinishga keladi",
+        "Modul umuman ochilmaydi"
+      ],
+      "t": 1,
+      "izoh": "Savdo har kuni rejadan kam bo'lgani uchun s < 3, ya'ni s − 3 < 0. Manfiy ifodaning moduli qarama-qarshisiga teng: |s − 3| = 3 − s. Demak haftaning barcha kunlari uchun modul bir xil ko'rinishda ochiladi. Javob: har biri 3 − s ko'rinishga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "byudjet-reja-farqi",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#2655621c"
+    },
+    {
+      "q": "Quyidagi ifodalardan qaysi biri barcha haqiqiy x lar uchun |x| ga teng: √(x²), x², √x yoki −x?",
+      "v": [
+        "−x",
+        "x²",
+        "√x",
+        "√(x²)"
+      ],
+      "t": 3,
+      "izoh": "√(x²) ildizining qiymati manfiy emas va u x ning kattaligini beradi, ya'ni √(x²) = |x|. x² esa kvadrat, |x| ga teng emas. √x manfiy x larda umuman aniqlanmagan, −x esa faqat x ≤ 0 da mos keladi. Javob: √(x²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-kuchli-ifoda-tanlash",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#7c1371e7"
+    },
+    {
+      "q": "|x − 5| ifodaga teng kuchli bo'lgan ildizli yozuvni tanlang va tanlovingizni asoslang.",
+      "v": [
+        "(x − 5)²",
+        "√(x² − 5)",
+        "√(x²) − 5",
+        "√((x − 5)²)"
+      ],
+      "t": 3,
+      "izoh": "√(t²) = |t| qoidasini t = x − 5 uchun qo'llaymiz. Natijada √((x − 5)²) = |x − 5| hosil bo'ladi. Qolgan yozuvlarda ildiz ostidagi ifoda to'la kvadrat emas yoki modul umuman hosil bo'lmaydi. Javob: √((x − 5)²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-kuchli-ifoda-tanlash",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#97b03435"
+    },
+    {
+      "q": "√(x⁴) ifodani soddalashtiring va natijada modul belgisi kerak bo'ladimi degan savolga javob bering.",
+      "v": [
+        "x², chunki x² har doim manfiy emas",
+        "|x|, chunki ildiz manfiy bo'lmaydi",
+        "|x⁴| ga teng, modul saqlanadi",
+        "−x², chunki ishora noma'lum"
+      ],
+      "t": 0,
+      "izoh": "x⁴ = (x²)² bo'lgani uchun √(x⁴) = |x²| ko'rinishga keladi. Lekin x² har qanday haqiqiy x da manfiy emas, shuning uchun |x²| = x². Demak natijada modul belgisi kerak emas. Javob: x², chunki x² har doim manfiy emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-kuchli-ifoda-tanlash",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#8f9a9b9c"
+    },
+    {
+      "q": "√(x⁶) ifodani modul yordamida to'g'ri yozgan variantni ko'rsating.",
+      "v": [
+        "x²",
+        "x³",
+        "|x³|",
+        "−x³"
+      ],
+      "t": 2,
+      "izoh": "x⁶ = (x³)² bo'lgani uchun √(x⁶) = |x³| bo'ladi. Bu yerda modulni tashlab yuborib bo'lmaydi, chunki x manfiy bo'lganda x³ ham manfiy chiqadi, ildiz esa manfiy bo'lmaydi. Javob: |x³|.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-kuchli-ifoda-tanlash",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#6bc09835"
+    },
+    {
+      "q": "0 < x < 3 oraliqda |x| + |x − 3| + |x + 3| ifodani modulsiz yozing va soddalashtiring.",
+      "v": [
+        "x + 6",
+        "3x",
+        "x − 6",
+        "6 − x"
+      ],
+      "t": 0,
+      "izoh": "x > 0 bo'lgani uchun |x| = x. x < 3 bo'lgani uchun x − 3 < 0 va |x − 3| = 3 − x. x + 3 > 0 bo'lgani uchun |x + 3| = x + 3. Yig'indi: x + (3 − x) + (x + 3) = x + 6. Javob: x + 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-modul-oraliqda",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#9a9a19da"
+    },
+    {
+      "q": "x > 4 bo'lganda |x − 1| + |x − 4| − |x + 2| ifodaning sodda ko'rinishini toping.",
+      "v": [
+        "x − 3",
+        "x + 7",
+        "3x − 3",
+        "x − 7"
+      ],
+      "t": 3,
+      "izoh": "x > 4 bo'lgani uchun uchala modul ostidagi ifoda ham musbat. Demak |x − 1| = x − 1, |x − 4| = x − 4, |x + 2| = x + 2. Hisoblaymiz: (x − 1) + (x − 4) − (x + 2) = x − 7. Javob: x − 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-modul-oraliqda",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#15744a07"
+    },
+    {
+      "q": "−2 < x < 0 oraliqda |x| − |x + 2| + |x − 1| ifodani modulsiz yozib soddalashtiring.",
+      "v": [
+        "x − 1",
+        "−x − 1",
+        "3x + 1",
+        "−3x − 1"
+      ],
+      "t": 3,
+      "izoh": "x < 0 bo'lgani uchun |x| = −x. x > −2 bo'lgani uchun x + 2 > 0 va |x + 2| = x + 2. x < 1 bo'lgani uchun x − 1 < 0 va |x − 1| = 1 − x. Hisoblaymiz: (−x) − (x + 2) + (1 − x) = −3x − 1. Javob: −3x − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-modul-oraliqda",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#397669bb"
+    },
+    {
+      "q": "Barcha x < −5 qiymatlar uchun |x + 5| + |x| + |x − 5| ifoda qanday ko'rinishga kelishini aniqlang.",
+      "v": [
+        "3x",
+        "−3x",
+        "−3x − 10",
+        "−x"
+      ],
+      "t": 1,
+      "izoh": "x < −5 bo'lgani uchun uchala modul ostidagi ifoda ham manfiy. Demak |x + 5| = −x − 5, |x| = −x, |x − 5| = 5 − x. Yig'indi: (−x − 5) + (−x) + (5 − x) = −3x. Javob: −3x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-modul-oraliqda",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#6fac06f6"
+    },
+    {
+      "q": "y = |x − 2| funksiya x ≥ 2 va x < 2 oraliqlarda qanday bo'lakli formula bilan yozilishini ko'rsating.",
+      "v": [
+        "x ≥ 2 da y = x − 2, x < 2 da y = 2 − x",
+        "x ≥ 2 da y = 2 − x, x < 2 da y = x − 2",
+        "Ikkala oraliqda ham y = x − 2",
+        "Ikkala oraliqda ham y = 2 − x"
+      ],
+      "t": 0,
+      "izoh": "x ≥ 2 bo'lganda x − 2 ≥ 0, shuning uchun modul o'zgarishsiz ochiladi va y = x − 2. x < 2 bo'lganda x − 2 < 0, shuning uchun ishora almashadi va y = 2 − x. Demak funksiya ikki bo'lakdan iborat: x ≥ 2 da y = x − 2, x < 2 da y = 2 − x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-grafik-bolakli",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#09d6ad3f"
+    },
+    {
+      "q": "y = |x| + x funksiya x < 0 oraliqda qanday sodda ko'rinishga ega bo'lishini aniqlang.",
+      "v": [
+        "y = 0",
+        "y = 2x",
+        "y = −2x",
+        "y = x"
+      ],
+      "t": 0,
+      "izoh": "x < 0 bo'lgani uchun |x| = −x. Formulaga qo'yamiz: y = (−x) + x = 0. Demak grafik bu oraliqda abssissa o'qi bilan ustma-ust tushadi. Javob: y = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-grafik-bolakli",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#1a02cadb"
+    },
+    {
+      "q": "Taksi hisoblagichi qo'shimcha haqni y = |s − 5| formula bilan hisoblaydi, bunda s bosib o'tilgan masofa. s < 5 bo'lganda formula qanday ko'rinish oladi?",
+      "v": [
+        "y = s − 5",
+        "y = 5 − s",
+        "y = s + 5",
+        "y = 5 − 2s"
+      ],
+      "t": 1,
+      "izoh": "s < 5 bo'lgani uchun s − 5 ayirma manfiy chiqadi. Manfiy ifodaning moduli qarama-qarshisiga teng: |s − 5| = 5 − s. Demak bu holda formula y = 5 − s ko'rinishga keladi. Javob: y = 5 − s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-grafik-bolakli",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#bf6bfb27"
+    },
+    {
+      "q": "Kvadrat shaklidagi bog' yuzasi S = (a − 7)² kvadrat metrga teng. Tomon uzunligi √S ga teng bo'lsa, u qanday ifodalanadi?",
+      "v": [
+        "a² − 7",
+        "a − 7",
+        "7 − a",
+        "|a − 7|"
+      ],
+      "t": 3,
+      "izoh": "Tomon uzunligi √S = √((a − 7)²) ga teng, bu esa |a − 7| ni beradi. Modul kerak, chunki uzunlik manfiy bo'la olmaydi, a − 7 ayirma esa manfiy bo'lishi mumkin. Javob: |a − 7|.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-modul-hayotiy",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#940c2005"
+    },
+    {
+      "q": "Fizika masalasida tezlik v = √(t² − 12t + 36) formula bilan berilgan. t < 6 bo'lganda formulani modulsiz ko'rinishda yozing.",
+      "v": [
+        "v = 6 − t",
+        "v = t − 6",
+        "v = t + 6",
+        "v = 36 − t"
+      ],
+      "t": 0,
+      "izoh": "Ildiz ostidagi uchhad to'la kvadrat: t² − 12t + 36 = (t − 6)². Demak v = |t − 6| bo'ladi. t < 6 bo'lgani uchun t − 6 < 0 va modul ishorani almashtiradi: v = 6 − t. Javob: v = 6 − t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-modul-hayotiy",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#a15e1879"
+    },
+    {
+      "q": "Dizayner √((x − 9)²) + √((x − 4)²) ifodani 4 ≤ x ≤ 9 oraliqda soddalashtirdi. U qanday natija olgan?",
+      "v": [
+        "2x − 13",
+        "13",
+        "5",
+        "13 − 2x"
+      ],
+      "t": 2,
+      "izoh": "Ikkala ildiz ham modulga aylanadi: |x − 9| + |x − 4|. Oraliqda x ≤ 9 bo'lgani uchun |x − 9| = 9 − x, x ≥ 4 bo'lgani uchun |x − 4| = x − 4. Yig'indi: (9 − x) + (x − 4) = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-modul-hayotiy",
+      "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish#75672cef"
+    }
+  ]
+}

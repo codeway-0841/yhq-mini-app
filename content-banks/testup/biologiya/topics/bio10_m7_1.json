@@ -1,0 +1,981 @@
+{
+  "nom": "Biologiya-10, 7.1. Evolyutsiyani harakatlantiruvchi omillari",
+  "bolim": "VII BOB. Evolyutsiya",
+  "savollar": [
+    {
+      "q": "Morfologik, fiziologik, etologik, genetik, biokimyoviy xususiyatlari bilan oʻxshash, erkin chatishib nasl beradigan, maʼlum yashash sharoitiga moslashgan hamda oʻz arealiga ega boʻlgan organizmlardan iborat populyatsiyalar yigʻindisi nima deb ataladi?",
+      "v": [
+        "Tur",
+        "Populyatsiya",
+        "Genofond",
+        "Areal"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tur — oʻxshash xususiyatli, erkin chatishib nasl beradigan, oʻz arealiga ega populyatsiyalar yigʻindisidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#856aa1f6"
+    },
+    {
+      "q": "Evolyutsion taʼlimotda markaziy oʻrinda turadigan muammo qaysi?",
+      "v": [
+        "Tur muammosi",
+        "Genofond muammosi",
+        "Mutatsiya muammosi",
+        "Areal muammosi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tur muammosi evolyutsion taʼlimotda markaziy oʻrinda turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m7_1#704fcb1e"
+    },
+    {
+      "q": "Turning tuzilish birligi nima hisoblanadi?",
+      "v": [
+        "Populyatsiya",
+        "Genofond",
+        "Oila",
+        "Areal"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra populyatsiya turning tuzilish birligi boʻlib, oʻxshash organizmlar birlashib populyatsiyani hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m7_1#619e92b0"
+    },
+    {
+      "q": "Bir-biriga yaqin boʻlgan populyatsiyalar nimani hosil qiladi?",
+      "v": [
+        "Biologik turni",
+        "Genofondni",
+        "Arealni",
+        "Galani"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bir-biriga yaqin boʻlgan populyatsiyalar biologik turni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#0b64dedf"
+    },
+    {
+      "q": "Tur arealida maʼlum hududni egallagan, bir-biri bilan erkin chatisha oladigan yoki boshqa populyatsiyalardan alohidalashgan, bir turga kiruvchi organizmlar guruhi nima deb ataladi?",
+      "v": [
+        "Populyatsiya",
+        "Tur",
+        "Genofond",
+        "Areal"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra populyatsiya — tur arealida maʼlum hududni egallagan, bir turga kiruvchi organizmlar guruhidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#33442f2f"
+    },
+    {
+      "q": "Populyatsiya doirasida organizmlar qanday guruhlarda yashaydi?",
+      "v": [
+        "Oila, gala, poda boʻlib",
+        "Faqat yakka holda",
+        "Faqat juft boʻlib",
+        "Faqat koloniya boʻlib"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra populyatsiya doirasida organizmlar oila, gala, poda boʻlib yashaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m7_1#f2714f8b"
+    },
+    {
+      "q": "Xulosaga koʻra populyatsiya nimaning boshlangʻich birligi hisoblanadi?",
+      "v": [
+        "Turning tuzilish va evolyutsiyaning",
+        "Faqat arealning",
+        "Faqat genofondning",
+        "Faqat mutatsiyaning"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra populyatsiya turning tuzilish va evolyutsiyaning boshlangʻich birligi hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#97639217"
+    },
+    {
+      "q": "Keng areal va sharoiti xilma-xil joylardagi turlarda populyatsiyalar soni qanday boʻladi?",
+      "v": [
+        "Koʻp",
+        "Kam",
+        "Doim bitta",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra keng areal va xilma-xil sharoitli joylardagi turlarda populyatsiyalar soni koʻp boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#aafc95da"
+    },
+    {
+      "q": "Tor arealda tarqalgan turlarda populyatsiyalar soni qanday boʻladi?",
+      "v": [
+        "Kam",
+        "Koʻp",
+        "Cheksiz",
+        "Har doim yuzlab"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tor arealda tarqalgan turlarda populyatsiyalar soni kam boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#b7b8dcda"
+    },
+    {
+      "q": "Hayvonlarda arealning hajmi asosan nimaga bogʻliq?",
+      "v": [
+        "Harakatlanish tezligiga",
+        "Changlanish masofasiga",
+        "Gul tuzilishiga",
+        "Yorugʻlikka"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra areal hajmi hayvonlarning harakatlanish tezligiga bogʻliq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#020de77d"
+    },
+    {
+      "q": "Oʻsimliklarda arealning hajmi asosan nimaga bogʻliq?",
+      "v": [
+        "Chetdan changlanish masofasiga",
+        "Harakatlanish tezligiga",
+        "Xatti-harakatiga",
+        "Jinsiy organlariga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻsimliklarning areal hajmi ularning chetdan changlanish masofasiga bogʻliq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#59541938"
+    },
+    {
+      "q": "Tok shilliqqurtining (Helix pomacea) faollik radiusi qanchaga teng?",
+      "v": [
+        "Bir necha oʻn metr",
+        "Bir necha yuz kilometr",
+        "Bir necha ming kilometr",
+        "Bir necha yuz metr"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tok shilliqqurtining faollik radiusi bir necha oʻn metrni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#e92b4d2e"
+    },
+    {
+      "q": "Ondatraning (Ondatra zibethica) harakatlanish radiusi qanchaga choʻziladi?",
+      "v": [
+        "Bir necha yuz kilometrdan ortiq",
+        "Bir necha oʻn metr",
+        "Bir necha metr",
+        "Bir necha yuz metr"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ondatraning harakatlanish radiusi bir necha yuz kilometrdan ortiq arealga choʻziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#91c424cf"
+    },
+    {
+      "q": "Seld baligʻining (Clupea harengus) faollik radiusi qanchaga teng?",
+      "v": [
+        "Bir necha yuz kilometr",
+        "Bir necha oʻn metr",
+        "Bir necha metr",
+        "Bir necha yuz metr"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra seld baligʻining faollik radiusi bir necha yuz kilometrni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#d57edccd"
+    },
+    {
+      "q": "Tishsiz kitlarning (Mysticeti) faollik radiusi qanchaga teng?",
+      "v": [
+        "Bir necha ming kilometr",
+        "Bir necha yuz kilometr",
+        "Bir necha oʻn metr",
+        "Bir necha yuz metr"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tishsiz kitlarning faollik radiusi bir necha ming kilometrni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#b0817bf0"
+    },
+    {
+      "q": "Eman (dub, Quercus petraea) changining tarqalish radiusi qanchaga teng?",
+      "v": [
+        "Bir necha yuz metr",
+        "Bir necha ming kilometr",
+        "Bir necha oʻn metr",
+        "Bir necha yuz kilometr"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra dub (eman) changining tarqalish radiusi bir necha yuz metrni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#8f6b1623"
+    },
+    {
+      "q": "Shimol tulkisining (Alopex lagopus) faollik radiusi qanchaga teng?",
+      "v": [
+        "Bir necha yuz kilometr",
+        "Bir necha metr",
+        "Bir necha oʻn metr",
+        "Bir necha yuz metr"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi jadvalga koʻra shimol tulkisining faollik radiusi bir necha yuz kilometrni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#c1a2fd42"
+    },
+    {
+      "q": "Shimol bugʻusining (Rangifer tarandus) faollik radiusi qanchaga teng?",
+      "v": [
+        "Bir necha metr",
+        "Bir necha yuz kilometr",
+        "Bir necha oʻn metr",
+        "Bir necha ming kilometr"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi jadvalga koʻra shimol bugʻusining faollik radiusi bir necha metrni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#74a82fb3"
+    },
+    {
+      "q": "Hayvonlar bilan oʻsimliklarning individual aktivlik radiusi jadvali kimlar boʻyicha keltirilgan?",
+      "v": [
+        "A. V. Yablokov va A. G. Yusufov",
+        "S. Rayt",
+        "Ch. Darvin",
+        "K. Linney"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra individual aktivlik radiusi jadvali A. V. Yablokov va A. G. Yusufov boʻyicha keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#0850662f"
+    },
+    {
+      "q": "Koʻp hollarda bitta tur nechta mahalliy populyatsiyani oʻz ichiga oladi?",
+      "v": [
+        "Yuzlab, hatto minglab",
+        "Faqat bittani",
+        "Faqat ikkitani",
+        "Doim 300-400 tani"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ayrim hollardagina tur yagona populyatsiyadan iborat, koʻp hollarda esa yuzlab, hatto minglab mahalliy populyatsiyalarni oʻz ichiga oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#24636d3d"
+    },
+    {
+      "q": "Uzoq Sharqda tarqalgan yoʻlbars populyatsiyasi nechta individdan iborat?",
+      "v": [
+        "300-400 ta",
+        "3000-4000 ta",
+        "30-40 ta",
+        "Millionlab"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Uzoq Sharqda tarqalgan yoʻlbars populyatsiyasi 300-400 ta individdan iborat xolos.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#c76cc1b0"
+    },
+    {
+      "q": "Ayrim hasharotlar populyatsiyalari individlar soni jihatidan qanday boʻlishi mumkin?",
+      "v": [
+        "Yuz minglab, hatto millionlab",
+        "Doim 300-400 ta",
+        "Faqat oʻnlab",
+        "Faqat bitta"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ayrim hasharotlarning populyatsiyalari yuz minglab, hatto millionlab individlardan iborat boʻlishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#97f47be3"
+    },
+    {
+      "q": "Populyatsiyani tashkil etuvchi individlar oʻrtasida qanday oʻzaro munosabatlar mavjud?",
+      "v": [
+        "Oziq va yashash joyi uchun raqobat yoki dushmandan birgalikda himoyalanish",
+        "Faqat oʻzaro befarqlik",
+        "Faqat doimiy tinchlik",
+        "Faqat bir tomonlama parazitlik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra individlar oziq resurslari va yashash joyi uchun raqobatda boʻladi yoki dushmandan birgalikda himoyalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#a09bd6e6"
+    },
+    {
+      "q": "Populyatsiyadagi jismoniy zaif, kasal individlarning oʻlimi qanday oqibatga olib keladi?",
+      "v": [
+        "Populyatsiya tarkibiy sifatini yaxshilaydi",
+        "Populyatsiyani butunlay yoʻqotadi",
+        "Arealni kengaytiradi",
+        "Mutatsiyani toʻxtatadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra zaif va kasal individlarning oʻlimi populyatsiya tarkibiy sifatini yaxshilaydi va yashovchanligini oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#2ff68f92"
+    },
+    {
+      "q": "Populyatsiya doirasida toʻxtovsiz genlar almashinuvi nima tufayli sodir boʻladi?",
+      "v": [
+        "Jinsiy koʻpayish tufayli",
+        "Mutatsiya tufayli",
+        "Alohidalanish tufayli",
+        "Tabiiy ofat tufayli"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra jinsiy koʻpayish tufayli populyatsiya doirasida toʻxtovsiz genlar almashinuvi sodir boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#d0a63d4c"
+    },
+    {
+      "q": "Har bir populyatsiya oʻziga xos nimasi bilan tavsiflanadi?",
+      "v": [
+        "Genlar toʻplami — genofondi bilan",
+        "Areali bilan",
+        "Xatti-harakati bilan",
+        "Rangi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra har bir populyatsiya oʻziga xos genlar toʻplami — genofondi bilan tavsiflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#34e28bf3"
+    },
+    {
+      "q": "Yangi turlarning paydo boʻlish jarayoni nimadan boshlanadi?",
+      "v": [
+        "Populyatsiya genofondining oʻzgarishidan",
+        "Arealning kengayishidan",
+        "Individlar sonining ortishidan",
+        "Gala hosil boʻlishidan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yangi turlarning paydo boʻlish jarayoni populyatsiya genofondining oʻzgarishidan boshlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#8ea8e929"
+    },
+    {
+      "q": "Populyatsiya genofondining oʻzgarishiga olib keladigan jarayonlarga qaysilar kiradi?",
+      "v": [
+        "Mutatsiya, genlar dreyfi, populyatsiya toʻlqini, alohidalanish",
+        "Fotosintez, nafas olish, oʻsish",
+        "Mitoz, meyoz, amitoz",
+        "Osmos, diffuziya, transport"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genofond oʻzgarishiga mutatsiya, genlar dreyfi, populyatsiya toʻlqini va alohidalanish kabilar kiritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#999c359f"
+    },
+    {
+      "q": "Irsiy materialning oʻzgarishi nima deb ataladi?",
+      "v": [
+        "Mutatsiya",
+        "Genofond",
+        "Alohidalanish",
+        "Dreyf"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra irsiy materialning oʻzgarishiga mutatsiya deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m7_1#9ea639c3"
+    },
+    {
+      "q": "Mutatsiyalar nima tufayli nasldan naslga beriladi?",
+      "v": [
+        "Kombinativ oʻzgaruvchanlik tufayli",
+        "Fotosintez tufayli",
+        "Alohidalanish tufayli",
+        "Tabiiy ofat tufayli"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsiyalar kombinativ oʻzgaruvchanlik tufayli nasldan naslga beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#5d470fc0"
+    },
+    {
+      "q": "Koʻpchilik mutatsiyalar retsessiv boʻlgani uchun geterozigotalar fenotipida qanday holatda boʻladi?",
+      "v": [
+        "Namoyon boʻlmaydi, yashirin saqlanadi",
+        "Har doim namoyon boʻladi",
+        "Darhol yoʻqoladi",
+        "Dominantga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻpchilik mutatsiyalar retsessiv boʻlgani uchun geterozigotalar fenotipida namoyon boʻlmay, yashirin saqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#88bbec3e"
+    },
+    {
+      "q": "Evolyutsion jarayonlar uchun material boʻlib nima xizmat qiladi?",
+      "v": [
+        "Mutatsiya",
+        "Areal",
+        "Gala",
+        "Poda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsiya evolyutsion jarayonlar uchun material boʻlib xizmat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#f4bd5e63"
+    },
+    {
+      "q": "Irsiyatning moddiy asoslarini oʻzgarishiga qarab mutatsiyalar qanday xillarga boʻlinadi?",
+      "v": [
+        "Gen, xromosoma, genom va sitoplazmatik",
+        "Faqat gen va xromosoma",
+        "Foydali va zararli",
+        "Dominant va retsessiv"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsiyalar irsiyatning moddiy asoslariga qarab gen, xromosoma, genom va sitoplazmatik xillarga boʻlinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#324d760e"
+    },
+    {
+      "q": "Zararli mutatsiyalar populyatsiyada qanday yoʻl bilan bartaraf etiladi?",
+      "v": [
+        "Tabiiy tanlanish orqali",
+        "Genlar dreyfi orqali",
+        "Populyatsiya toʻlqini orqali",
+        "Changlanish orqali"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mutatsiyalarning koʻpchiligi zararli boʻlib, tabiiy tanlanish orqali bartaraf etiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#b15f45b0"
+    },
+    {
+      "q": "Konkret sharoitda foydali boʻlgan mutatsiyalar populyatsiyada qanday oʻzgaradi?",
+      "v": [
+        "Nasldan naslga oʻtib toʻplana boradi",
+        "Darhol yoʻqoladi",
+        "Faqat bir avlodda qoladi",
+        "Zararliga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra foydali mutatsiyalar koʻpayish orqali kelgusi boʻgʻinlarga oʻtib, populyatsiyada toʻplana boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#37c3f941"
+    },
+    {
+      "q": "Bir necha avlod davomida gen allellarining populyatsiyada uchrash ehtimolining tasodifiy oʻzgarishi nima deb ataladi?",
+      "v": [
+        "Genlar dreyfi",
+        "Mutatsiya",
+        "Populyatsiya toʻlqini",
+        "Alohidalanish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genlar dreyfi (genetik-avtomatik jarayonlar) — allellarning uchrash ehtimolining tasodifiy oʻzgarishidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#9aac8123"
+    },
+    {
+      "q": "Genlar dreyfi yana qanday nom bilan ataladi?",
+      "v": [
+        "Genetik-avtomatik jarayonlar",
+        "Kombinativ oʻzgaruvchanlik",
+        "Tabiiy tanlanish",
+        "Populyatsiya toʻlqini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genlar dreyfi genetik-avtomatik jarayonlar deb ham ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#277d9c88"
+    },
+    {
+      "q": "Genlar dreyfi mexanizmini nima orqali tushunish mumkin?",
+      "v": [
+        "Koʻpayish davrida hosil boʻlgan gametalarning hammasi ham zigota hosil qilishda ishtirok etmasligi orqali",
+        "Barcha gametalarning albatta zigota hosil qilishi orqali",
+        "Faqat mutatsiyalar orqali",
+        "Faqat changlanish orqali"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻpayish davrida hosil boʻladigan gametalarning hammasi ham zigota hosil qilishda ishtirok etmasligi orqali genlar dreyfi mexanizmini tushunish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#07a5274e"
+    },
+    {
+      "q": "Genlar dreyfi ayniqsa qanday populyatsiyada aniqroq namoyon boʻladi?",
+      "v": [
+        "Kichik populyatsiyada",
+        "Faqat katta populyatsiyada",
+        "Faqat oʻsimlik populyatsiyasida",
+        "Faqat dengiz populyatsiyasida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra kichik populyatsiyada ayrim individlar tasodifiy sabablarga koʻra avlod qoldirishi yoki qoldirmasligi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#842f5c26"
+    },
+    {
+      "q": "Genlar dreyfi natijasida populyatsiyada nima roʻy beradi?",
+      "v": [
+        "Ayrim allellar saqlanib, boshqasi yoʻqoladi",
+        "Barcha allellar bir xilda saqlanadi",
+        "Yangi organoidlar paydo boʻladi",
+        "Areal doim kengayadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genlar chastotalarining tasodifiy oʻzgarishi tufayli ayrim allellar saqlanib qoladi, boshqalari yoʻqoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#377e5fad"
+    },
+    {
+      "q": "Genlar dreyfini kim oʻrgangan?",
+      "v": [
+        "Amerikalik genetik S. Rayt",
+        "A. V. Yablokov",
+        "A. G. Yusufov",
+        "Ch. Darvin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genlar dreyfi amerikalik genetik S. Rayt tomonidan oʻrganilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#8d08e15e"
+    },
+    {
+      "q": "S. Rayt oʻz tajribasida qaysi organizmlar ustida kuzatish oʻtkazgan?",
+      "v": [
+        "Drozofilalar",
+        "Kalamushlar",
+        "Baqalar",
+        "Arilar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra S. Rayt A geni boʻyicha geterozigota drozofilalar ustida kuzatish oʻtkazgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#832c9bf7"
+    },
+    {
+      "q": "S. Rayt tajribasida har bir probirkaga qanday drozofilalar joylashtirilgan?",
+      "v": [
+        "A geni boʻyicha geterozigota ikkitadan erkak va urgʻochi",
+        "Faqat gomozigota dominantlar",
+        "Faqat urgʻochilar",
+        "Faqat mutant erkaklar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Rayt probirkaga A geni boʻyicha geterozigota ikkitadan erkak va urgʻochi drozofilalarni joylashtirgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#25982870"
+    },
+    {
+      "q": "S. Rayt tajribasida bir necha boʻgʻindan soʻng probirkalardagi drozofilalar tekshirilganda nima aniqlandi?",
+      "v": [
+        "Baʼzi populyatsiyada faqat mutant gomozigota, boshqasida umuman uchramasligi, uchinchisida dominant va retsessiv allellar borligi",
+        "Barcha probirkalarda faqat dominant gomozigota borligi",
+        "Barcha probirkalarda faqat urgʻochilar qolgani",
+        "Barcha individlar mutatsiyasiz ekani"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra baʼzi populyatsiyada faqat mutant gomozigota, boshqasida u tamoman uchramasligi, uchinchilarida esa dominant va retsessiv allel formalar borligi aniqlandi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#e92ed780"
+    },
+    {
+      "q": "Genlar dreyfi tabiatda qaysi holatda aniq namoyon boʻladi?",
+      "v": [
+        "Populyatsiya individlari soni keskin kamayganda",
+        "Individlar soni doim koʻpayganda",
+        "Areal kengayganda",
+        "Changlanish kuchayganda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genlar dreyfi tabiiy ofatlar, suv toshqini, zararkunandalar tufayli individlar soni keskin kamayganda aniq namoyon boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#ad47f7db"
+    },
+    {
+      "q": "Populyatsiyani tashkil etgan individlar sonining davriy oʻzgarib turish hodisasi nima deb ataladi?",
+      "v": [
+        "Populyatsiya toʻlqini",
+        "Genlar dreyfi",
+        "Mutatsiya",
+        "Alohidalanish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra populyatsiya toʻlqini — individlar sonining davriy oʻzgarib turish hodisasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#1cf91da1"
+    },
+    {
+      "q": "Bahorda yogʻin-sochin koʻp boʻlgan yillarda qaysi oʻsimliklar avj olib oʻsadi?",
+      "v": [
+        "Boychechak, yaltirbosh, qoʻngʻirbosh, qoqioʻt, ituzum",
+        "Faqat kaktuslar",
+        "Faqat ignabargli daraxtlar",
+        "Faqat suv oʻtlari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bahorda yogʻin koʻp boʻlgan yillarda boychechak, yaltirbosh, qoʻngʻirbosh, qoqioʻt, ituzum avj olib oʻsib koʻp urugʻ beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#6140ea11"
+    },
+    {
+      "q": "Hasharotlar va oʻtxoʻr hayvonlarning koʻpayishi oʻz navbatida nimaga olib keladi?",
+      "v": [
+        "Hasharotxoʻr qushlar va yirtqichlar sonining ortishiga",
+        "Oʻsimliklarning yoʻqolishiga",
+        "Arealning qisqarishiga",
+        "Mutatsiyaning toʻxtashiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra hasharotlar va oʻtxoʻrlarning koʻpayishi hasharotxoʻr qushlar, yirtqich hayvonlar sonining ortishiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#001771e4"
+    },
+    {
+      "q": "Individlar sonining haddan tashqari ortishi koʻpincha nimaga sabab boʻladi?",
+      "v": [
+        "Kasalliklarning tarqalishi va sonning kamayishiga",
+        "Arealning cheksiz kengayishiga",
+        "Mutatsiyaning yoʻqolishiga",
+        "Changlanishning toʻxtashiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra individlar sonining ortishi ular orasida kasalliklar tarqalishiga va sonning kamayishiga sabab boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#78a34f18"
+    },
+    {
+      "q": "Populyatsiya toʻlqini qanday omillar tufayli yuz berishi mumkin?",
+      "v": [
+        "Harorat, namlik, yorugʻlikning mavsumiy oʻzgarishi, oziq miqdori, tabiiy ofatlar",
+        "Faqat mutatsiyalar",
+        "Faqat changlanish",
+        "Faqat genlar dreyfi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra populyatsiya toʻlqini harorat, namlik, yorugʻlikning mavsumiy oʻzgarishi, oziq miqdori va tabiiy ofatlar tufayli yuz beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#5bbab10f"
+    },
+    {
+      "q": "Populyatsiya toʻlqinida halok boʻlgan individlardagi genlar bilan nima yuz beradi?",
+      "v": [
+        "Populyatsiya doirasida yoʻqolib boradi",
+        "Boshqa turga oʻtadi",
+        "Kuchayib namoyon boʻladi",
+        "Mutatsiyaga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra halok boʻlgan individlardagi genlar va ularga mos belgilar populyatsiya doirasida yoʻqolib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#dd94ae29"
+    },
+    {
+      "q": "Populyatsiya toʻlqinidan soʻng yashab qolgan individlarning genofondi bilan nima yuz beradi?",
+      "v": [
+        "Saqlanib qoladi",
+        "Butunlay yoʻqoladi",
+        "Boshqa turga oʻtadi",
+        "Mutatsiyaga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra populyatsiya toʻlqinida yashab qolgan individlarning genofondi saqlanib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#0f71bed5"
+    },
+    {
+      "q": "Har xil populyatsiyalar individlarining qisman yoki toʻliq chatishmasligi nima deb ataladi?",
+      "v": [
+        "Alohidalanish",
+        "Genlar dreyfi",
+        "Mutatsiya",
+        "Populyatsiya toʻlqini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra alohidalanish — har xil populyatsiyalar individlarining qisman yoki toʻliq chatishmasligidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#02c3e142"
+    },
+    {
+      "q": "Tabiatda populyatsiyalarning aralashib ketishiga qaysi alohidalanishlar toʻsqinlik qiladi?",
+      "v": [
+        "Geografik, biologik, ekologik va boshqalar",
+        "Faqat mutatsion",
+        "Faqat kombinativ",
+        "Faqat morfologik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra populyatsiyalarning aralashib ketishiga geografik, biologik, ekologik va boshqa alohidalanishlar toʻsqinlik qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#a10dc438"
+    },
+    {
+      "q": "Populyatsiyalar orasida genlar oqimi boʻlib turganda ularda nima kuzatiladi?",
+      "v": [
+        "Genetik farqlar toʻplanmaydi",
+        "Genetik farqlar tez toʻplanadi",
+        "Yangi tur paydo boʻladi",
+        "Mutatsiya toʻxtaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra populyatsiyalar orasida genlar oqimi boʻlib turganda ularda genetik farqlar toʻplanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#cc972397"
+    },
+    {
+      "q": "Alohidalanish populyatsiyaga qanday taʼsir koʻrsatadi?",
+      "v": [
+        "Irsiy axborot almashinuvini toʻxtatib, yangi mustaqil genetik tuzilmaga aylantiradi",
+        "Individlar sonini koʻpaytiradi",
+        "Genlar oqimini kuchaytiradi",
+        "Arealni kengaytiradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra alohidalanish irsiy axborot almashinuvini toʻxtatadi va populyatsiyani yangi mustaqil genetik tuzilmaga aylantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#bc07976e"
+    },
+    {
+      "q": "Daryolar, togʻlar va boshqa geografik toʻsiqlarning paydo boʻlishi natijasidagi alohidalanish qanday nomlanadi?",
+      "v": [
+        "Geografik alohidalanish",
+        "Ekologik alohidalanish",
+        "Biologik alohidalanish",
+        "Etologik alohidalanish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra geografik alohidalanish daryolar, togʻlar va boshqa geografik toʻsiqlar paydo boʻlishi natijasida yuzaga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#e3ce5fda"
+    },
+    {
+      "q": "Bir turning populyatsiyalari arealning turli qismlarida turli muhitda yashashi natijasidagi alohidalanish qanday nomlanadi?",
+      "v": [
+        "Ekologik alohidalanish",
+        "Geografik alohidalanish",
+        "Biologik alohidalanish",
+        "Etologik alohidalanish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekologik alohidalanish populyatsiyalar arealning turli qismlarida turli muhitda yashashi natijasida yuzaga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#885012a0"
+    },
+    {
+      "q": "Individlarning jinsiy organlaridagi tafovutlar va oʻsimliklarda gul tuzilishidagi farqlar natijasidagi alohidalanish qanday nomlanadi?",
+      "v": [
+        "Biologik alohidalanish",
+        "Geografik alohidalanish",
+        "Ekologik alohidalanish",
+        "Etologik alohidalanish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra biologik alohidalanish jinsiy organlardagi tafovutlar va gul tuzilishidagi farqlar natijasida chatishmaslikka olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#19c1ace9"
+    },
+    {
+      "q": "Hayvonlarning xatti-harakati bilan aloqador alohidalanish qanday nomlanadi?",
+      "v": [
+        "Etologik alohidalanish",
+        "Geografik alohidalanish",
+        "Ekologik alohidalanish",
+        "Biologik alohidalanish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra etologik alohidalanish hayvonlarning xatti-harakati bilan aloqador.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#ede823cb"
+    },
+    {
+      "q": "Qaysi hodisa etologik alohidalanishga yorqin misol boʻladi?",
+      "v": [
+        "Baʼzi qushlarning oʻziga xos sayrashi bilan bir-biridan farq qilishi",
+        "Togʻlarning paydo boʻlishi",
+        "Gul tuzilishidagi farq",
+        "Daryoning oqishi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra baʼzi qushlarning oʻziga xos sayrashi va urgʻochisini jalb qilishi etologik alohidalanishga yorqin misoldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#3c954499"
+    },
+    {
+      "q": "Xulosaga koʻra populyatsiya genofondining oʻzgarishiga sababchi boʻladigan jarayonlarga qaysilar kiradi?",
+      "v": [
+        "Mutatsiya, genlar dreyfi, populyatsiya toʻlqini, alohidalanish, tabiiy tanlanish",
+        "Fotosintez, nafas olish, transpiratsiya",
+        "Mitoz, meyoz, urugʻlanish",
+        "Osmos, diffuziya, faol transport"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genofond oʻzgarishiga mutatsiya, genlar dreyfi, populyatsiya toʻlqini, alohidalanish va tabiiy tanlanish kiritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#6ff1d0c8"
+    },
+    {
+      "q": "Populyatsiya darajasida sodir boʻladigan oʻzgarishlar nimani belgilaydi?",
+      "v": [
+        "Evolyutsiyaning tezligi va yoʻnalishini",
+        "Faqat arealning hajmini",
+        "Faqat individlarning rangini",
+        "Faqat gul tuzilishini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra populyatsiya darajasidagi oʻzgarishlar evolyutsiyaning tezligi va yoʻnalishini belgilaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#25f3e09b"
+    },
+    {
+      "q": "Populyatsiyalar oʻrtasidagi alohidalanishlar organizmlarning oʻzaro chatishishiga qanday taʼsir qiladi?",
+      "v": [
+        "Chatishish ehtimolini kamaytiradi",
+        "Chatishish ehtimolini oshiradi",
+        "Umuman taʼsir qilmaydi",
+        "Faqat oʻsimliklarda oshiradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra populyatsiyalar oʻrtasidagi alohidalanishlar tufayli har xil populyatsiyaga mansub organizmlarning oʻzaro chatishish ehtimoli kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m7_1#07a48aee"
+    },
+    {
+      "q": "Populyatsiya darajasining mavjudligi turning qanday xususiyatini taʼminlaydi?",
+      "v": [
+        "Xilma-xilligi bilan bir qatorda turgʻunligini",
+        "Faqat rangini",
+        "Faqat arealini",
+        "Faqat harakat tezligini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra hayot populyatsiya darajasi tur tarkibining xilma-xilligi bilan bir qatorda turning turgʻunligini ham taʼminlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m7_1#931656c3"
+    }
+  ]
+}

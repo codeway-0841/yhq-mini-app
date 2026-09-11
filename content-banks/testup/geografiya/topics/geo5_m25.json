@@ -1,0 +1,681 @@
+{
+  "nom": "Geografiya-5, 25-§. Havoning namligi va yogʻinlar, 84-87-bet",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Troposferada doimo nima mavjud boʻladi?",
+      "v": [
+        "Suv bugʻi",
+        "Toza kislorod",
+        "Azot",
+        "Karbonat angidrid"
+      ],
+      "t": 0,
+      "izoh": "Troposferada doimo suv bugʻi boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m25#a3cdc3f0"
+    },
+    {
+      "q": "Suv bugʻi havoga qayerdan koʻtariladi?",
+      "v": [
+        "Okean va dengizlardan, quruqlikdagi suvlardan, tuproq va oʻsimliklar tarkibidagi suvning bugʻlanishidan",
+        "Yer osti konlaridan",
+        "Togʻ jinslaridan",
+        "Atmosferaning yuqori qatlamlaridan"
+      ],
+      "t": 0,
+      "izoh": "Suv bugʻi havoga okean va dengizlardan, quruqlikdagi suvlardan, tuproq va oʻsimliklar tarkibidagi suvning bugʻlanishidan koʻtariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#77ade56b"
+    },
+    {
+      "q": "Suv bugʻi koʻzga koʻrinadimi va havodan qanday?",
+      "v": [
+        "Koʻzga koʻrinmaydi, havodan yengil boʻladi",
+        "Koʻzga aniq koʻrinadi, havodan ogʻir boʻladi",
+        "Kechasi koʻrinadi",
+        "Havo bilan bir xil zichlikda boʻladi"
+      ],
+      "t": 0,
+      "izoh": "Suv bugʻi koʻzga koʻrinmaydi. Havodan yengil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#d870cc2e"
+    },
+    {
+      "q": "Havoning qancha suv bugʻini tutib turishi nimaga bogʻliq?",
+      "v": [
+        "Havo haroratiga",
+        "Havo bosimiga",
+        "Shamol tezligiga",
+        "Yer relyefiga"
+      ],
+      "t": 0,
+      "izoh": "Havoning qancha suv bugʻini tutib turishi havo haroratiga bogʻliq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#b3cccfc8"
+    },
+    {
+      "q": "Havo harorati 0°C boʻlsa, 1 m3 havo oʻzida qancha suv bugʻini tutib tura oladi?",
+      "v": [
+        "5 gramm",
+        "9 gramm",
+        "17 gramm",
+        "30 gramm"
+      ],
+      "t": 0,
+      "izoh": "Agar havo harorati 0 °C boʻlsa, 1 m3 havo oʻzida 5 g suv bugʻini tutib tura oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#23dad3a1"
+    },
+    {
+      "q": "Havo harorati +30°C boʻlsa, 1 m3 havo qancha suv bugʻini tutib tura oladi?",
+      "v": [
+        "30 gramm",
+        "5 gramm",
+        "9 gramm",
+        "17 gramm"
+      ],
+      "t": 0,
+      "izoh": "+30 °C boʻlsa, 1 m3 havo 30 g suv bugʻini tutib tura oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#2ed3cc96"
+    },
+    {
+      "q": "Havo qanchalik sovuq boʻlsa va qanchalik issiq boʻlsa, suv bugʻini qanday tutadi?",
+      "v": [
+        "Sovuq boʻlsa kam, issiq boʻlsa koʻp suv bugʻini tutadi",
+        "Sovuq boʻlsa koʻp, issiq boʻlsa kam suv bugʻini tutadi",
+        "Haroratdan qatʼiy nazar bir xil miqdorda tutadi",
+        "Sovuq boʻlsa umuman tutmaydi"
+      ],
+      "t": 0,
+      "izoh": "Havo qanchalik sovuq boʻlsa, shuncha kam va qanchalik issiq boʻlsa, shuncha koʻp suv bugʻini ushlab tura oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#5459844f"
+    },
+    {
+      "q": "Mutlaq namlik nima?",
+      "v": [
+        "1 m3 havoda mavjud boʻlgan va gramm hisobida oʻlchanadigan suv bugʻlari miqdori",
+        "Havodagi suv bugʻi miqdorining foizdagi koʻrsatkichi",
+        "Havoning umumiy ogʻirligi",
+        "Yogʻin miqdori"
+      ],
+      "t": 0,
+      "izoh": "1 m3 havoda mavjud boʻlgan va gramm hisobida oʻlchanadigan suv bugʻlari miqdori mutlaq namlik deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#914fa403"
+    },
+    {
+      "q": "Toʻyingan havo nima?",
+      "v": [
+        "Havo oʻzida mavjud boʻlgan suv bugʻidan ortiqcha namni sigʻdira olmaydigan holat",
+        "Havoda suv bugʻi umuman boʻlmagan holat",
+        "Havo harorati eng yuqori boʻlgan holat",
+        "Havo bosimi eng past boʻlgan holat"
+      ],
+      "t": 0,
+      "izoh": "Agar havo oʻzida mavjud boʻlgan suv bugʻidan ortiqcha namni sigʻdira olmasa, u namga toʻyingan havo deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#1f799e11"
+    },
+    {
+      "q": "Havoning nisbiy namligi 50% deyilganda nima nazarda tutiladi?",
+      "v": [
+        "Havoda mavjud suv bugʻi shu haroratda sigʻdira oladigan miqdorining yarmiga teng",
+        "Havoda umuman suv bugʻi yoʻq",
+        "Havo butunlay quruq",
+        "Havo bosimi 50% ga kamaygan"
+      ],
+      "t": 0,
+      "izoh": "Masalan, harorat +30 °C boʻlganda havoda 15 g, yaʼni havo oʻzida sigʻdirishi mumkin boʻlgan suv bugʻining yarmi mavjud. Bunda havoning nisbiy namligi 50% deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo5_m25#8d12f9ed"
+    },
+    {
+      "q": "Namga toʻyingan havoda nisbiy namlik necha foiz boʻladi?",
+      "v": [
+        "100 %",
+        "50 %",
+        "0 %",
+        "75 %"
+      ],
+      "t": 0,
+      "izoh": "Namga toʻyingan havoda nisbiy namlik 100% boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#5b888458"
+    },
+    {
+      "q": "Meteorologik stansiyalarda havo namligi qanday asbob yordamida oʻlchanadi?",
+      "v": [
+        "Gigrometr",
+        "Barometr",
+        "Termometr",
+        "Anemometr"
+      ],
+      "t": 0,
+      "izoh": "Meteorologik stansiyalarda havo namligi maxsus gigrometr asbobi yordamida oʻlchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#4c502448"
+    },
+    {
+      "q": "Bulut qanday hosil boʻladi?",
+      "v": [
+        "Iliq havo sovisa, namga toʻyinib, ortiqcha suv bugʻlari mayda suv tomchilariga aylanadi",
+        "Havo quriganda, suv bugʻlari yoʻqolib ketganda",
+        "Shamol esganda",
+        "Havo bosimi oshganda"
+      ],
+      "t": 0,
+      "izoh": "Iliq havo sovisa, u namga toʻyinib, ortiqcha suv bugʻlari juda mayda suv tomchilariga aylanadi. Havo yer yuzida isib, yuqoriga koʻtariladi. Yuqorida issiq havo soviganda bugʻ mayda suv tomchilariga aylanib, bulutni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#1ad338d0"
+    },
+    {
+      "q": "Agar yuqorida harorat 0°C dan past boʻlsa, bulut nimadan iborat boʻladi?",
+      "v": [
+        "Muz zarrachalaridan",
+        "Suv tomchilaridan",
+        "Changlardan",
+        "Gazdan"
+      ],
+      "t": 0,
+      "izoh": "Agar yuqorida harorat 0 °C dan past boʻlsa, bulut muz zarrachalaridan iborat boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#49645a75"
+    },
+    {
+      "q": "Bulutlarning asosan nechta turi bor?",
+      "v": [
+        "Uch turi: toʻp-toʻp, qat-qat va patsimon",
+        "Ikki turi: quyuq va yupqa",
+        "Toʻrt turi: past, oʻrta, baland va juda baland",
+        "Bitta turi, farqi yoʻq"
+      ],
+      "t": 0,
+      "izoh": "Bulutlarning, asosan, uch turi boʻladi: toʻp-toʻp, qat-qat va patsimon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#b8b63b74"
+    },
+    {
+      "q": "Toʻp-toʻp bulut qachon hosil boʻladi?",
+      "v": [
+        "Isigan havo yer yuzasidan yuqoriga tez koʻtarilayotganda",
+        "Havo sekin sovib, tekis yoyilganda",
+        "Kechasi, havo soviganda",
+        "Qishda, havo muzlaganda"
+      ],
+      "t": 0,
+      "izoh": "Isigan havo yer yuzasidan yuqoriga tez koʻtarilayotganda toʻp-toʻp bulut hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#32ee7e4a"
+    },
+    {
+      "q": "Yomgʻirli toʻp-toʻp bulutning tag qismi qanday koʻrinadi?",
+      "v": [
+        "Qorayadi va hozir yomgʻir yogʻib yuboradigandek tuyuladi",
+        "Oqarib, yorugʻ koʻrinadi",
+        "Shaffof boʻlib qoladi",
+        "Rangsiz boʻlib qoladi"
+      ],
+      "t": 0,
+      "izoh": "Tag qismi qorayadi va hozir yomgʻir yogʻib yuboradigandek tuyuladi. Bunday bulut yomgʻirli toʻp-toʻp bulut deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#0bc5fe82"
+    },
+    {
+      "q": "Toʻp-toʻp bulutlar mamlakatimiz osmonida qachon koʻp boʻladi?",
+      "v": [
+        "Bahor va yoz boshida",
+        "Kuz va qish oxirida",
+        "Qishda",
+        "Yoz oxirida"
+      ],
+      "t": 0,
+      "izoh": "Toʻp-toʻp bulutlar mamlakatimiz osmonida bahor va yoz boshida koʻp boʻladi. Bunday bulutlardan qattiq yomgʻir, jala quyadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#f01c8477"
+    },
+    {
+      "q": "Qat-qat bulutlar qanday koʻrinishga ega?",
+      "v": [
+        "Havoni baʼzan qatlamli bir tekis bulut qoplaydi",
+        "Yumaloq, doʻmboqsimon shaklda boʻladi",
+        "Egri, patga oʻxshash yengil chiziq shaklida",
+        "Kichik nuqtalar shaklida"
+      ],
+      "t": 0,
+      "izoh": "Havoni baʼzan qatlamli bir tekis bulut qoplaydi. Bular qat-qat bulutlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#772bda08"
+    },
+    {
+      "q": "Patsimon bulutlar qanday koʻrinishga ega?",
+      "v": [
+        "Juda balandda, oq tolalarga oʻxshagan yupqa bulutlar, soyasi boʻlmaydi",
+        "Yumaloq, doʻmboqsimon shaklda, tag qismi qora",
+        "Qatlamli, bir tekis, past balandlikda",
+        "Katta va quyuq, yerga yaqin"
+      ],
+      "t": 0,
+      "izoh": "Quyoshli kunlarda juda balandda baʼzan oq tolalarga oʻxshagan yupqa bulutlarni koʻrish mumkin. Ularning soyasi ham boʻlmaydi. Bunday bulutlar patsimon bulutlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#22d28932"
+    },
+    {
+      "q": "Patsimon bulutlar nimadan darak beradi?",
+      "v": [
+        "Ob-havo aynib kelayotganini bildiradi",
+        "Ob-havo doim ochiq boʻlishini bildiradi",
+        "Kuchli shamol boʻlishini bildiradi",
+        "Hech narsani bildirmaydi"
+      ],
+      "t": 0,
+      "izoh": "Patsimon bulutlar ob-havo aynib kelayotganini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#098b1a67"
+    },
+    {
+      "q": "Yogʻinlar nima?",
+      "v": [
+        "Havodan yer yuzasiga suyuq yoki qattiq holatda tushadigan suvlar",
+        "Bulutlarning oʻzi",
+        "Havodagi barcha gazlar",
+        "Tumandagi suv zarralari"
+      ],
+      "t": 0,
+      "izoh": "Havodan yer yuzasiga suyuq yoki qattiq holatda tushadigan suvlarga yogʻinlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m25#6b70ca90"
+    },
+    {
+      "q": "Yomgʻir qanday hosil boʻladi?",
+      "v": [
+        "Bulutdagi mayda suv tomchilari bir-biri bilan qoʻshilib, yirik tomchilarga aylanadi",
+        "Suv bugʻlari toʻgʻridan-toʻgʻri muzlashidan",
+        "Shamol taʼsirida",
+        "Havo bosimi oshishidan"
+      ],
+      "t": 0,
+      "izoh": "Bulutdagi mayda suv tomchilari maʼlum sharoitda bir-biri bilan qoʻshilib, yirik tomchilarga aylanadi va yirik tomchilar yerga yomgʻir boʻlib tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#2cf349e4"
+    },
+    {
+      "q": "Doʻl qanday hosil boʻladi?",
+      "v": [
+        "Yomgʻir tomchilari harorat 0°C dan past boʻlgan balandlikka olib chiqib ketilib, muzlab qolishidan",
+        "Toʻgʻridan-toʻgʻri havodagi changlar muzlashidan",
+        "Qish faslida qor tomchilarining yigʻilishidan",
+        "Tuman zichlashishidan"
+      ],
+      "t": 0,
+      "izoh": "Baʼzan iliq havo yuqoriga tez koʻtarilib, toʻp-toʻp bulutlarni harorat 0 °C dan past boʻlgan balandlikka olib chiqib ketadi. Bu balandlikda yomgʻir tomchilari muzlab doʻlga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#b698bb44"
+    },
+    {
+      "q": "Qor qanday hosil boʻladi?",
+      "v": [
+        "Havo harorati 0°C dan pasayganda bulut juda mayda ninasimon muzlardan iborat boʻlib, ular qoʻshilib qor uchqunlarini hosil qiladi",
+        "Yomgʻir tomchilari yerga tushgandan keyin muzlashidan",
+        "Bulutlar yoʻqolib ketishidan",
+        "Havo bosimi koʻtarilishidan"
+      ],
+      "t": 0,
+      "izoh": "Havo harorati 0 °C dan pasayib ketganda bulut suv tomchilaridan emas, juda mayda ninasimon muzlardan iborat boʻladi. Ular bir-birlari bilan qoʻshilib, qor uchqunlarini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#198f3775"
+    },
+    {
+      "q": "Yogʻin faqat bulutdan yogʻadimi?",
+      "v": [
+        "Yoʻq, ochiq havodan ham yogʻadi (masalan, shudring)",
+        "Ha, faqat bulutdan yogʻadi",
+        "Qor bulutlardan, yomgʻir ochiq havodan yogʻadi",
+        "Yogʻin umuman bulutsiz yogʻmaydi"
+      ],
+      "t": 0,
+      "izoh": "Yogʻin faqat bulutdan emas, ochiq havodan ham yogʻadi. Siz bahor, kuz oylarida ertalab shudring tushganini koʻrgansiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#7569e17d"
+    },
+    {
+      "q": "Shudring qanday hosil boʻladi?",
+      "v": [
+        "Kunduzi isigan yer va oʻsimliklar kechqurun Quyosh botishi bilan tezda soviydi, suv bugʻlari tomchilarga aylanib yerga tushadi",
+        "Yomgʻir yerga tushgandan keyin qolgan suvdan",
+        "Qish kunlari sovuqdan",
+        "Togʻlarda muz erishidan"
+      ],
+      "t": 0,
+      "izoh": "Shudring hosil boʻlishiga sabab shuki, kunduzi isigan yer va oʻsimliklar kechqurun Quyosh botishi bilan tezda soviydi. Suv bugʻlari tomchilarga aylanib yerga va oʻsimliklarga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#e02d9476"
+    },
+    {
+      "q": "Qish kunlari suv tomchilari muzlab, shudring oʻrniga nima hosil boʻladi?",
+      "v": [
+        "Qirov",
+        "Doʻl",
+        "Muz",
+        "Tuman"
+      ],
+      "t": 0,
+      "izoh": "Qish kunlari suv tomchilari muzlab, shudring emas, qirov hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#25982a9c"
+    },
+    {
+      "q": "Yer yuzasiga yogʻgan yogʻin miqdori qanday asbob bilan aniqlanadi?",
+      "v": [
+        "Yogʻin oʻlchagich",
+        "Gigrometr",
+        "Barometr",
+        "Termometr"
+      ],
+      "t": 0,
+      "izoh": "Yer yuzasiga yogʻgan yogʻin miqdori yogʻin oʻlchagich asbobi bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#e2eb9983"
+    },
+    {
+      "q": "Qor qalinligi qanday oʻlchanadi?",
+      "v": [
+        "Santimetrlarga boʻlingan maxsus reyka bilan",
+        "Yogʻin oʻlchagich bilan",
+        "Termometr bilan",
+        "Gigrometr bilan"
+      ],
+      "t": 0,
+      "izoh": "Qor qalinligi santimetrlarga boʻlingan maxsus reyka bilan oʻlchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#23f94928"
+    },
+    {
+      "q": "Bir oy davomida yogʻgan yogʻin yigʻindisi nima deb ataladi?",
+      "v": [
+        "Oylik yogʻin",
+        "Yillik yogʻin",
+        "Kunlik yogʻin",
+        "Mutlaq yogʻin"
+      ],
+      "t": 0,
+      "izoh": "Bir oy davomida yogʻgan yogʻin yigʻindisi oylik yogʻin boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#b6a5e506"
+    },
+    {
+      "q": "Yil davomidagi yogʻin miqdori qoʻshilib nima deb ataladi?",
+      "v": [
+        "Yillik yogʻin miqdori",
+        "Oylik yogʻin",
+        "Namlanish darajasi",
+        "Mutlaq namlik"
+      ],
+      "t": 0,
+      "izoh": "Yil davomidagi yogʻin miqdori qoʻshilib, yillik yogʻin miqdorini tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#5e03d157"
+    },
+    {
+      "q": "Toshkentda bir yil davomida oʻrtacha qancha yogʻin yogʻadi?",
+      "v": [
+        "400 mm ga yaqin",
+        "200 mm ga yaqin",
+        "800 mm ga yaqin",
+        "14400 mm ga yaqin"
+      ],
+      "t": 0,
+      "izoh": "Masalan, Toshkentda bir yil davomida oʻrtacha hisobda 400 mm ga yaqin yogʻin yogʻadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#c62ccf2e"
+    },
+    {
+      "q": "Toshkentda eng koʻp yogʻin qaysi oylarga toʻgʻri keladi?",
+      "v": [
+        "Fevral, mart oylariga",
+        "Iyun, iyul oylariga",
+        "Sentabr, oktabr oylariga",
+        "Dekabr, yanvar oylariga"
+      ],
+      "t": 0,
+      "izoh": "Eng koʻp yogʻin fevral, mart oylariga toʻgʻri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#fc30beaf"
+    },
+    {
+      "q": "Ekvator atroflarida yogʻingarchilik qanday davom etadi?",
+      "v": [
+        "Yil boʻyi davom etadi",
+        "Yozda boʻladi",
+        "Qishda boʻladi",
+        "Umuman boʻlmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ekvator atroflarida esa yogʻingarchilik yil boʻyi davom etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#ea9298a2"
+    },
+    {
+      "q": "Yer yuzida eng koʻp yogʻin qayerda yogʻadi?",
+      "v": [
+        "Tinch okeandagi Gavayi orollarida",
+        "Amazoniya oʻrmonlarida",
+        "Antarktida qirgʻoqlarida",
+        "Sahroi Kabirda"
+      ],
+      "t": 0,
+      "izoh": "Eng koʻp yogʻin Tinch okeandagi Gavayi orollarida yogʻadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#1301f03e"
+    },
+    {
+      "q": "Gavayi orollarida yillik yogʻin miqdori qancha?",
+      "v": [
+        "14400 mm ga teng",
+        "400 mm ga teng",
+        "900 mm ga teng",
+        "1600 mm ga teng"
+      ],
+      "t": 0,
+      "izoh": "Yillik yogʻin miqdori 14400 mm ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#4aedfc70"
+    },
+    {
+      "q": "Yogʻinning koʻp yoki kam yogʻishi nimalarga bogʻliq?",
+      "v": [
+        "Joyning dengizlardan uzoq-yaqinligiga hamda koʻp esadigan shamollarga",
+        "Yer relyefiga",
+        "Aholi soniga",
+        "Tuproq turiga"
+      ],
+      "t": 0,
+      "izoh": "Yogʻinning koʻp yoki kam yogʻishi joyning dengizlardan uzoq-yaqinligiga hamda koʻp esadigan shamollarga bogʻliq. Togʻlarning nam shamollarga roʻpara yonbagʻirlariga ham yogʻin koʻp yogʻadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#dd3c9020"
+    },
+    {
+      "q": "Oʻzbekistonda yogʻin nega kam yogʻadi?",
+      "v": [
+        "Okean va dengizlardan uzoqda joylashganligi uchun",
+        "Aholi zich joylashgani uchun",
+        "Togʻlari koʻp boʻlgani uchun",
+        "Yaqinida katta koʻllar boʻlgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Bizning Vatanimiz — Oʻzbekiston okean va dengizlardan uzoqda boʻlganligi uchun yogʻin kam yogʻadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#26f0bd86"
+    },
+    {
+      "q": "Oʻzbekistonning gʻarbiy, shimoli-gʻarbiy tekislik qismlarida yillik yogʻin miqdori qancha?",
+      "v": [
+        "200 mm atrofida",
+        "400 mm atrofida",
+        "800-900 mm gacha",
+        "14400 mm gacha"
+      ],
+      "t": 0,
+      "izoh": "Mamlakatimizning gʻarbiy, shimoli-gʻarbiy tekislik qismlarida yogʻin juda kam. Bir yillik yogʻin miqdori bor-yoʻgʻi 200 mm atrofida boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#6d10a86e"
+    },
+    {
+      "q": "Oʻzbekistonning sharqiy va janubi-sharqiy togʻli hududlarida yogʻin miqdori qancha?",
+      "v": [
+        "800-900 mm gacha",
+        "200 mm atrofida",
+        "400 mm atrofida",
+        "14400 mm gacha"
+      ],
+      "t": 0,
+      "izoh": "Mamlakatimizning sharqiy va janubi-sharqiy qismidagi togʻli hududlarda yogʻin ancha koʻp — 800-900 mm gacha yogʻadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#c7a9c08b"
+    },
+    {
+      "q": "Namlanish darajasi nima?",
+      "v": [
+        "Yillik yogʻin miqdorining yillik mumkin boʻlgan bugʻlanish miqdoriga nisbati",
+        "Havodagi mutlaq namlik miqdori",
+        "Yillik oʻrtacha harorat",
+        "Havoning nisbiy namligi foizda"
+      ],
+      "t": 0,
+      "izoh": "Namlanish darajasi deb yillik yogʻin miqdorining yillik mumkin boʻlgan bugʻlanish miqdoriga nisbatiga aytiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo5_m25#d6a5c182"
+    },
+    {
+      "q": "Toshkent shahrida namlanish darajasi qancha (yillik yogʻin 400 mm, mumkin boʻlgan bugʻlanish 1600 mm boʻlganda)?",
+      "v": [
+        "0,25",
+        "1,0",
+        "4,0",
+        "0,5"
+      ],
+      "t": 0,
+      "izoh": "Namlanish darajasi 400 mm : 1600 mm = 0,25. Demak, Toshkent shahrida namlik sharoiti qulay emas, nam yetishmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo5_m25#d46dfc0e"
+    },
+    {
+      "q": "Oʻsimliklar uchun namlanish darajasi qancha boʻlganda eng qulay sharoit hisoblanadi?",
+      "v": [
+        "1,1 dan 0,9 gacha",
+        "0,25 dan past",
+        "2,0 dan yuqori",
+        "0,1 dan 0,05 gacha"
+      ],
+      "t": 0,
+      "izoh": "Odatda, oʻsimliklar uchun namlanish darajasi 1,1 dan 0,9 gacha boʻlganda eng qulay sharoit boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#713a89cc"
+    },
+    {
+      "q": "25-§ oxiridagi tayanch soʻz va tushunchalar qatorida qanday atamalar keltirilgan?",
+      "v": [
+        "Havoning namligi, Mutlaq namlik, Nisbiy namlik, Toʻp-toʻp bulut, Qat-qat bulut, Patsimon bulut, Shudring, Qirov, Tuman, Namlanish darajasi",
+        "Havo harorati, Termometr, Havo bosimi, Amplituda, Barometr",
+        "Briz shamollari, Passat shamollari, Anemometr, Musson shamollari",
+        "Ob-havo, Beqaror ob-havo, Barqaror ob-havo, Iqlim"
+      ],
+      "t": 0,
+      "izoh": "25-§ oxiridagi tayanch soʻz va tushunchalar: Havoning namligi, Mutlaq namlik, Nisbiy namlik, Toʻp-toʻp bulut, Qat-qat bulut, Patsimon bulut, Shudring, Qirov, Tuman, Namlanish darajasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m25#5121b41e"
+    }
+  ]
+}

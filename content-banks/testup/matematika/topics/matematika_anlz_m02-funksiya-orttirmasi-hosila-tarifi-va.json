@@ -1,0 +1,1609 @@
+{
+  "nom": "Funksiya orttirmasi, hosila ta'rifi va taqribiy hisoblash",
+  "bolim": "Matematik analiz asoslari",
+  "blok": "anlz",
+  "rasmiyBolim": 5,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Anvar avtomobilda ketayotib yo'l vaqtini qayd qilmoqda: kuzatuv t₀ = 4 soatdan t = 4,25 soatgacha davom etdi. Argument orttirmasi Δt nechaga teng?",
+      "v": [
+        "4,25 soat",
+        "0,75 soat",
+        "0,25 soat",
+        "8,25 soat"
+      ],
+      "t": 2,
+      "izoh": "Argument orttirmasi Δt = t − t₀ formula bilan topiladi. Bu yerda Δt = 4,25 − 4 = 0,25 soat. 4,25 soat — argumentning yangi qiymati, orttirma emas; 8,25 soat esa ikki vaqtning yig'indisi. Javob: 0,25 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "argument-orttirmasi",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#d656ccf5"
+    },
+    {
+      "q": "Grafik ustidagi nuqtaning abssissasi x₀ = 7 dan x = 5,5 ga siljidi. Argument orttirmasi Δx nechaga teng va ishorasi qanday?",
+      "v": [
+        "−1,5",
+        "1,5",
+        "12,5",
+        "−5,5"
+      ],
+      "t": 0,
+      "izoh": "Δx = x − x₀ = 5,5 − 7 = −1,5 chiqadi. Nuqta chapga siljigani uchun orttirma manfiy bo'ladi. 1,5 — ishorani hisobga olmaslik xatosi, 12,5 esa ayirish o'rniga qo'shish natijasi. Javob: −1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "argument-orttirmasi",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#fb20f1f1"
+    },
+    {
+      "q": "Nilufar tajriba daftariga argument orttirmasi Δx = 0,4 va argumentning oxirgi qiymati x = 3,1 deb yozib qo'ydi. Boshlang'ich qiymat x₀ nechaga teng?",
+      "v": [
+        "3,5",
+        "2,7",
+        "0,4",
+        "−0,9"
+      ],
+      "t": 1,
+      "izoh": "Δx = x − x₀ tenglikdan x₀ = x − Δx kelib chiqadi. Demak x₀ = 3,1 − 0,4 = 2,7 bo'ladi. 3,5 — ayirish o'rniga qo'shib yuborish xatosi, 0,4 esa orttirmaning o'zi. Javob: 2,7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-orttirmasi",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#7ef5fd0a"
+    },
+    {
+      "q": "Poyezd harakati t₀ = 1,5 soatdan t = 2,75 soatgacha kuzatildi. Kuzatuv davomiyligini, ya'ni Δt orttirmasini daqiqalarda ifodalang.",
+      "v": [
+        "125 daqiqa",
+        "45 daqiqa",
+        "75 daqiqa",
+        "105 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Avval Δt = 2,75 − 1,5 = 1,25 soat topiladi. So'ng soat daqiqaga aylantiriladi: 1,25 · 60 = 75 daqiqa. 125 daqiqa — kasrni bevosita daqiqa deb o'qish xatosi, 45 daqiqa esa faqat 0,75 soatlik qismni olish natijasi. Javob: 75 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-orttirmasi",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#c9240441"
+    },
+    {
+      "q": "f(x) = x² funksiya uchun x₀ = 3 nuqtada argument orttirmasi Δx = 0,1 berilgan. Funksiya orttirmasi Δy ni hisoblang.",
+      "v": [
+        "0,6",
+        "0,61",
+        "9,61",
+        "0,1"
+      ],
+      "t": 1,
+      "izoh": "Δy = f(x₀ + Δx) − f(x₀) formuladan foydalanamiz. f(3,1) = 9,61 va f(3) = 9, demak Δy = 9,61 − 9 = 0,61. 0,6 — faqat 2x₀·Δx ni olish, ya'ni taqribiy qiymat; 9,61 esa funksiyaning yangi qiymati. Javob: 0,61.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "funksiya-orttirmasi-hisoblash",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#1d2c8971"
+    },
+    {
+      "q": "Chiziqli f(x) = 3x + 5 funksiyada x₀ = 2 nuqtadan boshlab argument 0,5 ga ortdi. Funksiya orttirmasi Δy nechaga teng?",
+      "v": [
+        "1,5",
+        "0,5",
+        "12,5",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "f(2,5) = 3 · 2,5 + 5 = 12,5 va f(2) = 3 · 2 + 5 = 11. Demak Δy = 12,5 − 11 = 1,5. Chiziqli funksiyada Δy = k·Δx, ya'ni 3 · 0,5 = 1,5 ham xuddi shu natijani beradi. 12,5 — yangi qiymat, 3 esa burchak koeffitsienti. Javob: 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "funksiya-orttirmasi-hisoblash",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#876c68b4"
+    },
+    {
+      "q": "f(x) = x² − 4x funksiyada x₀ = 5 nuqtada argument orttirmasi Δx = −0,2 bo'lsa, funksiya orttirmasi Δy nechaga teng?",
+      "v": [
+        "3,84",
+        "−1,16",
+        "1,16",
+        "−1,2"
+      ],
+      "t": 1,
+      "izoh": "f(4,8) = 23,04 − 19,2 = 3,84 va f(5) = 25 − 20 = 5. Demak Δy = 3,84 − 5 = −1,16. 3,84 — yangi qiymatning o'zi, −1,2 esa hosila orqali olingan taqribiy baho, chunki f'(5) = 6 va 6 · (−0,2) = −1,2. Javob: −1,16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "funksiya-orttirmasi-hisoblash",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#eed91f2b"
+    },
+    {
+      "q": "Nodiraning akvariumiga suv quyilmoqda va quyilgan suv miqdori V(t) = 2t² litr qonuniyat bilan o'sadi. t₀ = 3 soatdan t = 3,5 soatgacha akvariumga qancha suv qo'shildi?",
+      "v": [
+        "24,5 litr",
+        "6 litr",
+        "0,5 litr",
+        "6,5 litr"
+      ],
+      "t": 3,
+      "izoh": "Qo'shilgan suv miqdori — funksiya orttirmasi ΔV. V(3,5) = 2 · 12,25 = 24,5 va V(3) = 2 · 9 = 18 litr. Demak ΔV = 24,5 − 18 = 6,5 litr. 24,5 litr — akvariumdagi umumiy miqdor, 6 litr — hosila orqali olingan taqribiy baho (V'(3) · 0,5 = 12 · 0,5), 0,5 litr esa argument orttirmasi Δt ni javob deb olish xatosi. Javob: 6,5 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "funksiya-orttirmasi-kontekstda",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#01af0acd"
+    },
+    {
+      "q": "f(x) = 1/x funksiyada x₀ = 2 nuqtada argument 0,5 ga ortsa, funksiya orttirmasi Δy qanday qiymat oladi?",
+      "v": [
+        "0,1",
+        "0,4",
+        "−0,125",
+        "−0,1"
+      ],
+      "t": 3,
+      "izoh": "f(2,5) = 1 : 2,5 = 0,4 va f(2) = 0,5. Demak Δy = 0,4 − 0,5 = −0,1. Funksiya kamayayotgani uchun orttirma manfiy chiqadi. −0,125 — hosila orqali olingan taqribiy qiymat, 0,4 esa yangi qiymat. Javob: −0,1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "funksiya-orttirmasi-hisoblash",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#b03783e9"
+    },
+    {
+      "q": "f(x) = x² funksiyada x₀ = 1 nuqtada Δx = 0,5 bo'lsa, orttirmalar nisbati Δy/Δx nechaga teng?",
+      "v": [
+        "1,25",
+        "2",
+        "2,5",
+        "0,5"
+      ],
+      "t": 2,
+      "izoh": "Avval Δy = f(1,5) − f(1) = 2,25 − 1 = 1,25 topiladi. Nisbat Δy/Δx = 1,25 : 0,5 = 2,5 bo'ladi. 1,25 — faqat funksiya orttirmasi, 2 esa Δx nolga intilgandagi limit, ya'ni hosila qiymati. Javob: 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orttirmalar-nisbati",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#603d797f"
+    },
+    {
+      "q": "Meteostansiyada soat 6 da havo harorati 12 °C, soat 10 da esa 20 °C bo'ldi. Shu oraliqda haroratning o'rtacha o'zgarish tezligi, ya'ni ΔT/Δt nisbati nechaga teng?",
+      "v": [
+        "8 °C/soat",
+        "2 °C/soat",
+        "4 °C/soat",
+        "0,5 °C/soat"
+      ],
+      "t": 1,
+      "izoh": "Harorat orttirmasi ΔT = 20 − 12 = 8 °C, vaqt orttirmasi Δt = 10 − 6 = 4 soat. Nisbat ΔT/Δt = 8 : 4 = 2 °C/soat. 8 °C/soat — faqat harorat orttirmasi, 0,5 °C/soat esa nisbatni teskari olish natijasi. Javob: 2 °C/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orttirmalar-nisbati",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#164215a9"
+    },
+    {
+      "q": "f(x) = x³ funksiya uchun x₀ = 2 va Δx = 0,1 bo'lganda orttirmalar nisbatining qiymatini toping.",
+      "v": [
+        "12",
+        "1,261",
+        "12,61",
+        "0,1261"
+      ],
+      "t": 2,
+      "izoh": "f(2,1) = 9,261 va f(2) = 8, demak Δy = 1,261 chiqadi. Nisbat 1,261 : 0,1 = 12,61 bo'ladi. 12 — Δx nolga intilgandagi limit qiymati, 1,261 esa nisbat emas, orttirmaning o'zi. Javob: 12,61.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orttirmalar-nisbati",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#cb8d994c"
+    },
+    {
+      "q": "Zavodda x dona mahsulot tayyorlash xarajati C(x) = 0,5x² + 40 ming so'mga teng. Ishlab chiqarish 20 donadan 24 donaga oshirilganda bitta qo'shimcha donaga to'g'ri keladigan o'rtacha xarajat qancha bo'ladi?",
+      "v": [
+        "22 ming so'm",
+        "88 ming so'm",
+        "20 ming so'm",
+        "4 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "C(24) = 0,5 · 576 + 40 = 328 va C(20) = 0,5 · 400 + 40 = 240 ming so'm. Orttirma ΔC = 88 ming so'm, argument orttirmasi esa Δx = 4 dona. Nisbat 88 : 4 = 22 ming so'm. 88 — butun oshim, 20 esa hosila orqali olingan taqribiy baho. Javob: 22 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orttirmalar-nisbati",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#6cdb680c"
+    },
+    {
+      "q": "f(x) = √x funksiya x₀ = 9 nuqtadan x = 16 nuqtagacha o'zgarganda orttirmalar nisbati qanday songa teng?",
+      "v": [
+        "4/3",
+        "1",
+        "1/7",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Funksiya orttirmasi Δy = √16 − √9 = 4 − 3 = 1, argument orttirmasi esa Δx = 16 − 9 = 7. Nisbat Δy/Δx = 1/7 bo'ladi. 4/3 — orttirmalar o'rniga qiymatlarni bo'lish xatosi, 1 esa faqat funksiya orttirmasi. Javob: 1/7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orttirmalar-nisbati",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#29cef468"
+    },
+    {
+      "q": "f(x) = x² funksiyaning orttirmasi Δy ni x₀ va Δx orqali ifodalovchi to'g'ri yozuvni tanlang.",
+      "v": [
+        "x₀² + (Δx)²",
+        "2x₀·Δx",
+        "(x₀ + Δx)²",
+        "2x₀·Δx + (Δx)²"
+      ],
+      "t": 3,
+      "izoh": "Ta'rif bo'yicha Δy = (x₀ + Δx)² − x₀² bo'ladi. Qavsni ochsak x₀² + 2x₀·Δx + (Δx)² − x₀² qoladi, ya'ni Δy = 2x₀·Δx + (Δx)². 2x₀·Δx — kichik (Δx)² qo'shiluvchini tashlab ketish xatosi, (x₀ + Δx)² esa yangi qiymatning o'zi. Javob: 2x₀·Δx + (Δx)².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orttirma-umumiy-ifoda",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#05a673c0"
+    },
+    {
+      "q": "Kub funksiya f(x) = x³ uchun Δy orttirmasi qavslar ochilgandan keyin qanday ko'rinishga keladi?",
+      "v": [
+        "3x₀²·Δx + 3x₀·(Δx)² + (Δx)³",
+        "x₀³ + (Δx)³",
+        "3x₀²·Δx",
+        "3x₀·(Δx)² + (Δx)³"
+      ],
+      "t": 0,
+      "izoh": "Δy = (x₀ + Δx)³ − x₀³ deb yozamiz. Kub yig'indi formulasiga ko'ra x₀³ + 3x₀²·Δx + 3x₀·(Δx)² + (Δx)³ − x₀³ qoladi. Demak Δy = 3x₀²·Δx + 3x₀·(Δx)² + (Δx)³. 3x₀²·Δx — faqat birinchi hadni olib qolish, ya'ni taqribiy formulaga o'tib ketish xatosi. Javob: 3x₀²·Δx + 3x₀·(Δx)² + (Δx)³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orttirma-umumiy-ifoda",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#8ec01895"
+    },
+    {
+      "q": "Ixtiyoriy x₀ nuqtada f(x) = 5x − 2 funksiyaning orttirmasi Δy qanday kattalikka bog'liq bo'ladi?",
+      "v": [
+        "Faqat x₀ ga: Δy = 5x₀",
+        "Faqat Δx ga: Δy = 5·Δx",
+        "Ikkalasiga: Δy = 5x₀ + Δx",
+        "Hech nimaga: Δy = −2"
+      ],
+      "t": 1,
+      "izoh": "Δy = (5(x₀ + Δx) − 2) − (5x₀ − 2) ni ochamiz: 5x₀ + 5Δx − 2 − 5x₀ + 2 = 5·Δx. Ko'rinib turibdiki x₀ qisqarib ketadi va orttirma faqat Δx ga bog'liq qoladi. Aynan shuning uchun chiziqli funksiyaning hosilasi barcha nuqtada bir xil. Javob: faqat Δx ga, Δy = 5·Δx.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orttirma-umumiy-ifoda",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#868a5f53"
+    },
+    {
+      "q": "f(x) = 1/x funksiyaning x₀ nuqtadagi orttirmasi Δy ni bitta kasr ko'rinishida yozing.",
+      "v": [
+        "Δx/(x₀·(x₀ + Δx))",
+        "1/Δx",
+        "−1/(x₀ + Δx)",
+        "−Δx/(x₀·(x₀ + Δx))"
+      ],
+      "t": 3,
+      "izoh": "Δy = 1/(x₀ + Δx) − 1/x₀ ayirmani umumiy maxrajga keltiramiz va (x₀ − (x₀ + Δx))/(x₀·(x₀ + Δx)) hosil bo'ladi. Suratda x₀ − x₀ − Δx = −Δx qoladi. Demak Δy = −Δx/(x₀·(x₀ + Δx)) va musbat Δx da orttirma manfiy, ya'ni funksiya kamayadi. Javob: −Δx/(x₀·(x₀ + Δx)).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orttirma-umumiy-ifoda",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#ca46e4de"
+    },
+    {
+      "q": "Ta'rif bo'yicha hisoblang: f(x) = x² funksiyaning x₀ = 3 nuqtadagi hosilasi f'(3) nechaga teng?",
+      "v": [
+        "6",
+        "9",
+        "3",
+        "0,6"
+      ],
+      "t": 0,
+      "izoh": "Orttirmalar nisbatini tuzamiz: ((3 + Δx)² − 9)/Δx = (6Δx + (Δx)²)/Δx = 6 + Δx. Δx nolga intilganda bu ifoda 6 ga intiladi, demak f'(3) = 6. 9 — funksiyaning shu nuqtadagi qiymati, 0,6 esa Δx = 0,1 dagi taqribiy orttirma. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-tarif-boyicha-hisoblash",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#50d562b5"
+    },
+    {
+      "q": "f(x) = x² − 3x funksiyaning x₀ = 4 nuqtadagi hosilasini hosila ta'rifidan foydalanib toping.",
+      "v": [
+        "4",
+        "8",
+        "5",
+        "11"
+      ],
+      "t": 2,
+      "izoh": "f(4 + Δx) = 16 + 8Δx + (Δx)² − 12 − 3Δx = 4 + 5Δx + (Δx)², f(4) = 4. Demak Δy = 5Δx + (Δx)² va nisbat 5 + Δx bo'ladi. Δx nolga intilganda natija 5 ga teng. 8 — ikkinchi hadni unutib faqat 2x₀ ni olish, 11 esa ishorani almashtirish xatosi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-tarif-boyicha-hisoblash",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#d94778cd"
+    },
+    {
+      "q": "f(x) = √x funksiyaning x₀ = 4 nuqtadagi hosilasini hosila ta'rifidan foydalanib hisoblang.",
+      "v": [
+        "0,5",
+        "0,25",
+        "2",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Nisbatni tuzamiz: (√(4 + Δx) − 2)/Δx. Surat va maxrajni birgalikda √(4 + Δx) + 2 qo'shma ifodaga ko'paytiramiz: suratda (4 + Δx) − 4 = Δx qoladi va u maxrajdagi Δx bilan qisqaradi, natijada nisbat 1/(√(4 + Δx) + 2) ko'rinishga keladi. Δx nolga intilganda maxraj 4 ga intiladi, demak f'(4) = 0,25. 0,5 — maxrajda faqat bitta √4 ni qoldirish xatosi, 2 esa funksiyaning qiymati. Javob: 0,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-tarif-boyicha-hisoblash",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#8efd995a"
+    },
+    {
+      "q": "Ta'rif bo'yicha f(x) = 1/x funksiyaning x₀ = 3 nuqtadagi hosilasini toping.",
+      "v": [
+        "1/9",
+        "−1/3",
+        "−1/9",
+        "−1/6"
+      ],
+      "t": 2,
+      "izoh": "Orttirma Δy = 1/(3 + Δx) − 1/3 = −Δx/(3(3 + Δx)) bo'ladi. Nisbat Δy/Δx = −1/(3(3 + Δx)) ko'rinishda va Δx nolga intilganda −1/9 ga intiladi. 1/9 — ishorani hisobga olmaslik, −1/3 esa maxrajni kvadratga ko'tarmaslik xatosi. Javob: −1/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-tarif-boyicha-hisoblash",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#ff4ba80f"
+    },
+    {
+      "q": "Quyidagi limitlardan qaysi biri f funksiyaning x₀ nuqtadagi hosilasi ta'rifini to'g'ri ifodalaydi?",
+      "v": [
+        "Δx → 0 da (f(x₀ + Δx) + f(x₀))/Δx",
+        "Δx → 0 da (f(x₀) − f(x₀ + Δx))/Δx",
+        "Δx → 0 da (f(x₀ + Δx) − f(x₀))/Δy",
+        "Δx → 0 da (f(x₀ + Δx) − f(x₀))/Δx"
+      ],
+      "t": 3,
+      "izoh": "Hosila — Δx nolga intilgandagi orttirmalar nisbatining limiti, ya'ni Δy/Δx da Δy = f(x₀ + Δx) − f(x₀) bo'ladi. Surat ayirma, maxraj esa argument orttirmasi Δx bo'lishi shart. Yig'indi olingan variant orttirma bermaydi, ayirma tartibi almashgani esa hosilaning ishorasini teskari qiladi. Javob: (f(x₀ + Δx) − f(x₀))/Δx.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-tarifining-shakllari",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#d7244908"
+    },
+    {
+      "q": "f(x) = x² bo'lsa, x → 3 dagi (f(x) − f(3))/(x − 3) limit nimani anglatadi va qanday qiymatga ega?",
+      "v": [
+        "f'(3) = 6",
+        "f(3) = 9",
+        "f'(3) = 3",
+        "f'(9) = 18"
+      ],
+      "t": 0,
+      "izoh": "Bu ifoda hosila ta'rifining ikkinchi ko'rinishi: unda Δx o'rniga x − 3 yozilgan. Suratni yoyamiz: (x² − 9)/(x − 3) = x + 3, x → 3 da bu 6 ga intiladi. Demak limit f'(3) ni beradi va u 6 ga teng. 9 — funksiyaning qiymati, hosila emas. Javob: f'(3) = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-tarifining-shakllari",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#f75d92c0"
+    },
+    {
+      "q": "x → 2 dagi (x³ − 8)/(x − 2) limitni hosila ta'rifi orqali hisoblang.",
+      "v": [
+        "6",
+        "8",
+        "4",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Bu limit f(x) = x³ funksiyaning x₀ = 2 nuqtadagi hosilasi ta'rifi, chunki f(2) = 8. Ko'paytuvchilarga ajratsak (x³ − 8)/(x − 2) = x² + 2x + 4 bo'ladi. x → 2 da bu 4 + 4 + 4 = 12 ga teng. 8 — funksiyaning qiymati, 6 esa 3 · 2 shaklidagi noto'g'ri hisob. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-tarifining-shakllari",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#6fc5795f"
+    },
+    {
+      "q": "Jamshid velosipedda ketmoqda va bosib o'tgan yo'li s(t) = t² + 3t km formula bilan beriladi. t = 2 soatdan t = 2,5 soatgacha bo'lgan oraliqda uning o'rtacha tezligi qancha?",
+      "v": [
+        "3,75 km/soat",
+        "13,75 km/soat",
+        "7,5 km/soat",
+        "7 km/soat"
+      ],
+      "t": 2,
+      "izoh": "s(2) = 4 + 6 = 10 km, s(2,5) = 6,25 + 7,5 = 13,75 km. Yo'l orttirmasi Δs = 3,75 km, vaqt orttirmasi Δt = 0,5 soat. O'rtacha tezlik Δs/Δt = 3,75 : 0,5 = 7,5 km/soat. 3,75 — faqat bosib o'tilgan yo'l, 7 km/soat esa t = 2 dagi oniy tezlik. Javob: 7,5 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-ozgarish-tezligi",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#5a6298fd"
+    },
+    {
+      "q": "Balandlikdan tashlangan tosh h(t) = 5t² metr qonun bilan tushadi. Hosila ta'rifidan foydalanib t = 3 s dagi oniy tezlikni toping.",
+      "v": [
+        "45 m/s",
+        "15 m/s",
+        "10 m/s",
+        "30 m/s"
+      ],
+      "t": 3,
+      "izoh": "Δh = 5(3 + Δt)² − 45 = 30Δt + 5(Δt)², demak nisbat 30 + 5Δt bo'ladi. Δt nolga intilganda oniy tezlik 30 m/s ga teng. 45 — uch soniyada bosib o'tilgan yo'l, 15 m/s esa shu yo'lni vaqtga bo'lib olingan o'rtacha tezlik. Javob: 30 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oniy-tezlik-tarif-boyicha",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#4fe6f92c"
+    },
+    {
+      "q": "Moddiy nuqtaning harakat qonuni s(t) = 4t² + t metr bilan berilgan. Orttirmalar nisbatini tuzib, t₀ = 2 s dagi oniy tezlikni aniqlang.",
+      "v": [
+        "18 m/s",
+        "16 m/s",
+        "9 m/s",
+        "17 m/s"
+      ],
+      "t": 3,
+      "izoh": "s(2 + Δt) = 4(4 + 4Δt + (Δt)²) + 2 + Δt = 18 + 17Δt + 4(Δt)², s(2) = 18. Demak Δs = 17Δt + 4(Δt)² va nisbat 17 + 4Δt. Δt nolga intilganda tezlik 17 m/s. 16 m/s — ikkinchi qo'shiluvchini unutish, 18 m/s esa bosib o'tilgan yo'l qiymati. Javob: 17 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oniy-tezlik-tarif-boyicha",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#369a8635"
+    },
+    {
+      "q": "Nozima f funksiya uchun x₀ = 1 nuqtada orttirmalar nisbatini hisobladi: Δx = 0,1 da 3,1 va Δx = 0,01 da 3,01 chiqdi. Shu jadvalga ko'ra f'(1) nechaga teng?",
+      "v": [
+        "3,1",
+        "3,01",
+        "3",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "Hosila — Δx nolga intilgandagi nisbatning limiti, ya'ni jadval qiymatlari yaqinlashayotgan son. Qiymatlar 3,1 dan 3,01 ga o'tib, 3 ga yaqinlashmoqda. Demak f'(1) = 3. 3,01 — faqat oxirgi taqribiy qiymat, 0 esa Δx ning limiti bilan chalkashtirish natijasi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-jadvalidan-hosila",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#fc1f37ed"
+    },
+    {
+      "q": "Tajribada orttirmalar nisbati Δx kichraygan sari avval −1,9, keyin esa −1,99 qiymatni oldi. Funksiyaning shu nuqtadagi hosilasi nechaga teng?",
+      "v": [
+        "−1,9",
+        "−1,99",
+        "−2",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "Nisbat qiymatlari manfiy tomondan −2 ga yaqinlashib bormoqda, ya'ni limit −2 ga teng. Demak hosila −2 bo'ladi va funksiya bu nuqtada kamayadi. 2 — ishorani tushirib qoldirish xatosi, −1,99 esa faqat oxirgi taqribiy qiymat. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-jadvalidan-hosila",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#c706a89f"
+    },
+    {
+      "q": "f(x) = |x| funksiyada x₀ = 0 nuqtadagi orttirmalar nisbati Δx ning ishorasiga qarab qanday bo'ladi va hosila mavjudmi?",
+      "v": [
+        "Musbat Δx da 1, manfiy Δx da −1 bo'ladi; hosila mavjud emas",
+        "Har doim 1 bo'ladi; hosila 1 ga teng",
+        "Har doim 0 bo'ladi; hosila 0 ga teng",
+        "Musbat Δx da 0, manfiy Δx da 1 bo'ladi; hosila 0 ga teng"
+      ],
+      "t": 0,
+      "izoh": "Bu yerda Δy = |0 + Δx| − 0 = |Δx|, demak nisbat |Δx|/Δx ko'rinishda. Musbat Δx da bu 1, manfiy Δx da esa −1 qiymat beradi. Bir tomonlama limitlar teng emas, shuning uchun umumiy limit yo'q va hosila mavjud emas. Javob: nisbat 1 va −1 qiymatlarni oladi, hosila mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-mavjudligi-tahlili",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#0fad555e"
+    },
+    {
+      "q": "Zilola f(x) = |x − 3| funksiyaning x₀ = 3 nuqtadagi hosilasini ta'rif bo'yicha topmoqchi. U qanday xulosaga kelishi kerak?",
+      "v": [
+        "Hosila 1 ga teng",
+        "Hosila 0 ga teng",
+        "Hosila mavjud emas, chunki bir tomonlama limitlar har xil",
+        "Hosila −1 ga teng"
+      ],
+      "t": 2,
+      "izoh": "f(3) = 0 va f(3 + Δx) = |Δx|, demak nisbat |Δx|/Δx bo'ladi. O'ngdan yaqinlashganda u 1 ga, chapdan yaqinlashganda −1 ga intiladi. Ikki tomonlama limit mavjud bo'lmagani uchun bu nuqtada hosila yo'q, grafikda esa burchak hosil bo'ladi. Javob: hosila mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-mavjudligi-tahlili",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#70812840"
+    },
+    {
+      "q": "y = x² parabolada A(1; 1) va B(3; 9) nuqtalardan o'tuvchi kesuvchining burchak koeffitsientini x₀ = 1 dagi urinma koeffitsienti bilan solishtiring.",
+      "v": [
+        "Kesuvchi 4, urinma 2",
+        "Kesuvchi 2, urinma 4",
+        "Kesuvchi 8, urinma 2",
+        "Kesuvchi 4, urinma 4"
+      ],
+      "t": 0,
+      "izoh": "Kesuvchining burchak koeffitsienti — orttirmalar nisbati: (9 − 1)/(3 − 1) = 8 : 2 = 4. Urinmaniki esa Δx nolga intilgandagi limit, ya'ni f'(1) = 2. Kesuvchi 4, urinma 2 bo'ladi. 8 — faqat funksiya orttirmasini olish, ya'ni Δx ga bo'lishni unutish xatosi. Javob: kesuvchi 4, urinma 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesuvchi-va-urinma",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#384cb768"
+    },
+    {
+      "q": "y = x² grafigida x₀ = 2 nuqtadan chiqqan kesuvchining burchak koeffitsienti 4 + Δx ga teng. Δx nolga intilganda kesuvchi qanday to'g'ri chiziqqa aylanadi?",
+      "v": [
+        "Burchak koeffitsienti 2 bo'lgan urinmaga",
+        "Burchak koeffitsienti 4 bo'lgan urinmaga",
+        "Abssissa o'qiga parallel chiziqqa",
+        "Burchak koeffitsienti 8 bo'lgan urinmaga"
+      ],
+      "t": 1,
+      "izoh": "Δx nolga intilganda 4 + Δx ifoda 4 ga intiladi, ya'ni limit 4 ga teng. Kesuvchining limitdagi holati — urinma, demak urinmaning burchak koeffitsienti 4 bo'ladi. Bu f'(2) = 4 natijasi bilan bir xil. Abssissa o'qiga parallel chiziq koeffitsienti 0 bo'lardi, bu esa noto'g'ri. Javob: burchak koeffitsienti 4 bo'lgan urinmaga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesuvchi-va-urinma",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#ee90d482"
+    },
+    {
+      "q": "f(x) = 4x + 1 funksiyada funksiya orttirmasi Δy = 3 bo'lishi uchun argument orttirmasi Δx qanday qiymatga ega bo'lishi kerak?",
+      "v": [
+        "12",
+        "0,75",
+        "3",
+        "0,6"
+      ],
+      "t": 1,
+      "izoh": "Chiziqli funksiyada Δy = 4·Δx, chunki ozod had qisqarib ketadi. Demak 4·Δx = 3 tenglamadan Δx = 3 : 4 = 0,75. 12 — bo'lish o'rniga ko'paytirish, 0,6 esa maxrajga ozod hadni ham qo'shib yuborish xatosi. Javob: 0,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orttirmadan-teskari-masala",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#22c505c4"
+    },
+    {
+      "q": "Do'kon egasi Dilnoza sotuv hajmi q ta bo'lganda daromadi D(q) = 15q ming so'm ekanini biladi. Daromad orttirmasi 90 ming so'm bo'lishi uchun sotuv hajmi qanchaga ortishi kerak?",
+      "v": [
+        "90 ta",
+        "6 ta",
+        "1350 ta",
+        "15 ta"
+      ],
+      "t": 1,
+      "izoh": "Daromad chiziqli o'zgargani uchun ΔD = 15·Δq bo'ladi. Shartga ko'ra 15·Δq = 90, bundan Δq = 90 : 15 = 6 ta. 1350 — bo'lish o'rniga ko'paytirish natijasi, 90 ta esa daromad orttirmasini sotuv soni deb olish xatosi. Javob: 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orttirmadan-teskari-masala",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#b3fafd3f"
+    },
+    {
+      "q": "f(x) = x² funksiyada Δx = 0,1 bo'lganda funksiya orttirmasi Δy = 1,01 chiqdi. Boshlang'ich nuqta x₀ nechaga teng?",
+      "v": [
+        "10,1",
+        "5,05",
+        "5",
+        "1,01"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat funksiya uchun Δy = 2x₀·Δx + (Δx)², ya'ni 0,2x₀ + 0,01 = 1,01. Bundan 0,2x₀ = 1 va x₀ = 5. 5,05 — kichik (Δx)² qo'shiluvchini tashlab yuborish xatosi, 10,1 esa Δy/Δx nisbatini x₀ deb olish. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orttirmadan-teskari-masala",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#f6cfa9cb"
+    },
+    {
+      "q": "f(x) = 2x² + 1 funksiyaning x₀ = −1 nuqtadagi hosilasini ta'rif bo'yicha hisoblang.",
+      "v": [
+        "−4",
+        "4",
+        "−2",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "f(−1 + Δx) = 2(1 − 2Δx + (Δx)²) + 1 = 3 − 4Δx + 2(Δx)², f(−1) = 3. Demak Δy = −4Δx + 2(Δx)² va nisbat −4 + 2Δx bo'ladi. Δx nolga intilganda hosila −4 ga teng. 4 — ishorani almashtirish, 3 esa funksiyaning qiymati. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-tarif-boyicha-hisoblash",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#435db55c"
+    },
+    {
+      "q": "Tumanda aholi soni P(t) = 0,2t² + 5t + 120 ming kishi qonuniyat bilan o'zgaradi, bunda t — yillar soni. 2 yildan 6 yilgacha aholining o'rtacha yillik o'sishi qancha bo'ladi?",
+      "v": [
+        "26,4 ming kishi",
+        "6,6 ming kishi",
+        "5,8 ming kishi",
+        "9,3 ming kishi"
+      ],
+      "t": 1,
+      "izoh": "P(2) = 0,8 + 10 + 120 = 130,8 va P(6) = 7,2 + 30 + 120 = 157,2 ming kishi. Orttirma ΔP = 157,2 − 130,8 = 26,4 ming kishi, oraliq esa Δt = 4 yil. O'rtacha o'sish 26,4 : 4 = 6,6 ming kishi. 26,4 — to'rt yillik umumiy o'sish, 5,8 esa t = 2 dagi oniy o'sish tezligi, ya'ni P'(2) = 0,4 · 2 + 5. Javob: 6,6 ming kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-ozgarish-tezligi",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#6ffca50a"
+    },
+    {
+      "q": "Kvadrat shaklidagi tomorqaning tomoni 20 m dan 20,5 m ga uzaytirildi. Tomorqa maydonining orttirmasi ΔS aniq qanchaga teng?",
+      "v": [
+        "20 m²",
+        "420,25 m²",
+        "0,25 m²",
+        "20,25 m²"
+      ],
+      "t": 3,
+      "izoh": "Maydon S(a) = a², demak S(20,5) = 420,25 va S(20) = 400 m². Orttirma ΔS = 420,25 − 400 = 20,25 m². 20 m² — hosila orqali olingan taqribiy baho 2 · 20 · 0,5, 0,25 m² esa faqat (Δa)² qo'shiluvchisi. Javob: 20,25 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "funksiya-orttirmasi-kontekstda",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#0f45e81c"
+    },
+    {
+      "q": "Kichik Δx uchun f(x₀ + Δx) qiymatini taqriban hisoblash formulasi qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "f(x₀) + f'(x₀)",
+        "f'(x₀) + f(x₀)·Δx",
+        "f(x₀) + f'(x₀)·Δx",
+        "f(x₀)·f'(x₀)·Δx"
+      ],
+      "t": 2,
+      "izoh": "Kichik Δx da funksiya grafigi o'z urinmasi bilan deyarli ustma-ust tushadi. Urinma ordinatasi f(x₀) + f'(x₀)·Δx bo'lgani uchun f(x₀ + Δx) ≈ f(x₀) + f'(x₀)·Δx bo'ladi. Hosilani Δx ga ko'paytirmaslik eng ko'p uchraydigan xato, funksiya bilan hosilaning o'rnini almashtirish esa formulani butunlay buzadi. Javob: f(x₀) + f'(x₀)·Δx.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-formula-asoslari",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#0e137689"
+    },
+    {
+      "q": "Taqribiy hisoblash formulasidan foydalanib √4,02 ifodaning qiymatini toping.",
+      "v": [
+        "2,005",
+        "2,01",
+        "2,02",
+        "2,05"
+      ],
+      "t": 0,
+      "izoh": "f(x) = √x, x₀ = 4 va Δx = 0,02 deb olamiz, chunki √4 = 2 aniq ma'lum. Hosila f'(x) = 1/(2√x), demak f'(4) = 0,25. Taqribiy qiymat 2 + 0,25 · 0,02 = 2,005. 2,01 — hosila o'rniga 0,5 ni olish, 2,02 esa Δx ni to'g'ridan-to'g'ri qo'shib yuborish xatosi. Javob: 2,005.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-kvadrat-ildiz",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#0b9516aa"
+    },
+    {
+      "q": "Chizmachilik ishida Sanjar √9,06 ni kalkulyatorsiz baholashi kerak bo'lib qoldi. Taqribiy formulaga ko'ra u qanday qiymat oladi?",
+      "v": [
+        "3,06",
+        "3,03",
+        "3,01",
+        "3,02"
+      ],
+      "t": 2,
+      "izoh": "Eng yaqin aniq ildiz √9 = 3, demak x₀ = 9 va Δx = 0,06. f'(9) = 1/(2 · 3) = 1/6 bo'lgani uchun orttirma 0,06 : 6 = 0,01. Taqribiy qiymat 3 + 0,01 = 3,01. 3,03 — maxrajda 2 ni qoldirish, 3,02 esa 3 ga bo'lish xatosi. Javob: 3,01.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-kvadrat-ildiz",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#f3813365"
+    },
+    {
+      "q": "Kvadrat shaklidagi yer maydonining yuzasi 25,3 m² ekani o'lchandi. Uning tomoni taqriban necha metrga teng?",
+      "v": [
+        "5,3 m",
+        "5,03 m",
+        "5,15 m",
+        "5,006 m"
+      ],
+      "t": 1,
+      "izoh": "Tomon a = √S, ya'ni √25,3 ni baholash kerak. x₀ = 25 olamiz, chunki √25 = 5; bunda Δx = 0,3 va f'(25) = 1/(2 · 5) = 0,1. Demak a ≈ 5 + 0,1 · 0,3 = 5,03 m. 5,3 m — Δx ni bevosita qo'shish, 5,15 m esa hosila o'rniga 0,5 ni olish xatosi. Javob: 5,03 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-kvadrat-ildiz",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#27944172"
+    },
+    {
+      "q": "√16,08 ifodaning taqribiy qiymatini hosila yordamida hisoblang va natijani yuzdan bir aniqlikda ko'rsating.",
+      "v": [
+        "4,08",
+        "4,04",
+        "4,02",
+        "4,01"
+      ],
+      "t": 3,
+      "izoh": "x₀ = 16 va Δx = 0,08 deb olamiz, chunki √16 = 4. f'(16) = 1/(2 · 4) = 0,125 bo'lgani uchun qo'shimcha 0,125 · 0,08 = 0,01. Natija 4 + 0,01 = 4,01. 4,04 — 2 ga bo'lish, 4,02 esa 4 ga bo'lish xatosidan chiqadi. Javob: 4,01.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-kvadrat-ildiz",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#a2384f5e"
+    },
+    {
+      "q": "Naim √99 ni taqribiy formuladan foydalanib hisobladi. U qanday natijaga keldi?",
+      "v": [
+        "9,95",
+        "9,9",
+        "9,5",
+        "10,05"
+      ],
+      "t": 0,
+      "izoh": "Eng yaqin qulay nuqta x₀ = 100, chunki √100 = 10; bunda Δx = −1 manfiy bo'ladi. f'(100) = 1/(2 · 10) = 0,05, demak √99 ≈ 10 + 0,05 · (−1) = 9,95. 10,05 — manfiy orttirmaning ishorasini e'tiborsiz qoldirish, 9,9 esa hosilani 0,1 deb olish xatosi. Javob: 9,95.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-kvadrat-ildiz",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#38a1dab5"
+    },
+    {
+      "q": "Bank omonatiga har yili 2 foiz foyda qo'shiladi, ya'ni besh yilda mablag' 1,02⁵ marta ko'payadi. Bu ko'rsatkichni taqribiy formula bilan baholang.",
+      "v": [
+        "1,08 marta",
+        "1,1 marta",
+        "1,02 marta",
+        "1,2 marta"
+      ],
+      "t": 1,
+      "izoh": "f(x) = x⁵ funksiyani x₀ = 1 nuqtada qaraymiz, Δx = 0,02 bo'ladi. f'(1) = 5 · 1⁴ = 5, demak 1,02⁵ ≈ 1 + 5 · 0,02 = 1,1. 1,08 marta — ko'rsatkichni 4 deb olish, 1,02 marta esa darajaga ko'tarishni umuman hisobga olmaslik xatosi. Javob: 1,1 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-daraja",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#0de3442e"
+    },
+    {
+      "q": "Qirrasi 2,01 m bo'lgan kub shaklidagi idishning hajmini taqribiy formula yordamida hisoblang.",
+      "v": [
+        "8,12 m³",
+        "8,01 m³",
+        "8,06 m³",
+        "12,01 m³"
+      ],
+      "t": 0,
+      "izoh": "Hajm V(a) = a³, x₀ = 2 va Δa = 0,01 deb olinadi, chunki 2³ = 8. V'(a) = 3a², ya'ni V'(2) = 12. Demak V ≈ 8 + 12 · 0,01 = 8,12 m³. 8,01 — orttirmani bevosita qo'shish, 8,06 esa hosilani 3a deb olish xatosi. Javob: 8,12 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-daraja",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#a7ae7336"
+    },
+    {
+      "q": "Uskunaning qiymati har yili 2 foizga tushadi, shuning uchun to'rt yildan keyingi koeffitsient 0,98⁴ ga teng bo'ladi. Taqribiy formula bu koeffitsientni qanday baholaydi?",
+      "v": [
+        "0,98",
+        "0,94",
+        "0,92",
+        "0,96"
+      ],
+      "t": 2,
+      "izoh": "f(x) = x⁴ va x₀ = 1 olamiz, bunda Δx = −0,02 manfiy. f'(1) = 4, demak 0,98⁴ ≈ 1 + 4 · (−0,02) = 0,92. 0,94 — ko'rsatkichni 3 deb olish, 0,96 esa faqat ikki yilni hisoblash xatosi. Javob: 0,92.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqribiy-daraja",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#24a0530b"
+    },
+    {
+      "q": "Tomoni 3,02 sm bo'lgan kvadratning yuzasini taqribiy formula yordamida toping.",
+      "v": [
+        "9,02 sm²",
+        "9,06 sm²",
+        "6,04 sm²",
+        "9,12 sm²"
+      ],
+      "t": 3,
+      "izoh": "S(a) = a² funksiyada x₀ = 3 va Δa = 0,02 deb olamiz. S'(a) = 2a bo'lgani uchun S'(3) = 6, demak S ≈ 9 + 6 · 0,02 = 9,12 sm². 9,06 — hosilani 3 deb olish, 6,04 esa hosilaning o'zini javob deb yozish xatosi. Javob: 9,12 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-daraja",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#03617842"
+    },
+    {
+      "q": "Shahar aholisi har yili 0,3 foizga ortadi, ya'ni o'n yillik o'sish koeffitsienti 1,003¹⁰ ga teng. Uni taqriban hisoblang.",
+      "v": [
+        "1,003",
+        "1,03",
+        "1,3",
+        "1,0003"
+      ],
+      "t": 1,
+      "izoh": "f(x) = x¹⁰ funksiyani x₀ = 1 nuqtada olamiz, Δx = 0,003 bo'ladi. f'(1) = 10, demak koeffitsient ≈ 1 + 10 · 0,003 = 1,03. 1,003 — darajani hisobga olmaslik, 1,3 esa vergul o'rnini adashtirish xatosi. Javob: 1,03.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqribiy-daraja",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#1bc8af5a"
+    },
+    {
+      "q": "∛8,12 ning taqribiy qiymatini hosila yordamida hisoblang.",
+      "v": [
+        "2,12",
+        "2,04",
+        "2,01",
+        "2,02"
+      ],
+      "t": 2,
+      "izoh": "x₀ = 8 va Δx = 0,12 olamiz, chunki ∛8 = 2. Kub ildiz hosilasi 1/(3·∛(x²)), ya'ni f'(8) = 1/(3 · 4) = 1/12. Demak natija 2 + 0,12 : 12 = 2,01. 2,04 — maxrajda faqat 3 ni qoldirish, 2,02 esa 6 ga bo'lish xatosi. Javob: 2,01.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-kub-ildiz",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#680a25a9"
+    },
+    {
+      "q": "Kub shaklidagi buyumning hajmi 27,54 sm³ ekani aniqlandi. Uning qirrasi taqriban necha santimetrga teng?",
+      "v": [
+        "3,54 sm",
+        "3,06 sm",
+        "3,18 sm",
+        "3,02 sm"
+      ],
+      "t": 3,
+      "izoh": "Qirra a = ∛V, demak ∛27,54 ni baholaymiz. x₀ = 27 va Δx = 0,54, chunki ∛27 = 3; hosila f'(27) = 1/(3 · 9) = 1/27. Orttirma 0,54 : 27 = 0,02, ya'ni qirra ≈ 3,02 sm. 3,18 sm — 3 ga bo'lish, 3,06 sm esa 9 ga bo'lish xatosi. Javob: 3,02 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-kub-ildiz",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#faee13ec"
+    },
+    {
+      "q": "Feruza ∛64,96 ni taqribiy formula bilan hisobladi va javobini daftariga yozdi. U qanday qiymat oldi?",
+      "v": [
+        "4,02",
+        "4,96",
+        "4,06",
+        "4,01"
+      ],
+      "t": 0,
+      "izoh": "x₀ = 64 va Δx = 0,96 olamiz, chunki ∛64 = 4. Hosila f'(64) = 1/(3 · 16) = 1/48, demak orttirma 0,96 : 48 = 0,02. Natija 4 + 0,02 = 4,02. 4,96 — Δx ni bevosita qo'shish, 4,06 esa 16 ga bo'lish xatosi. Javob: 4,02.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-kub-ildiz",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#56e27465"
+    },
+    {
+      "q": "∛125,75 qiymatini taqribiy hisoblab, javobni yuzdan bir aniqlikda yozing.",
+      "v": [
+        "5,75",
+        "5,05",
+        "5,01",
+        "5,15"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda x₀ = 125 va Δx = 0,75, chunki ∛125 = 5. Hosila f'(125) = 1/(3 · 25) = 1/75, orttirma esa 0,75 : 75 = 0,01. Demak natija 5 + 0,01 = 5,01. 5,15 — 5 ga bo'lish, 5,05 esa 15 ga bo'lish xatosidan chiqadi. Javob: 5,01.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-kub-ildiz",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#23758ce5"
+    },
+    {
+      "q": "1/2,02 kasrning taqribiy qiymatini hosila yordamida toping.",
+      "v": [
+        "0,505",
+        "0,48",
+        "0,52",
+        "0,495"
+      ],
+      "t": 3,
+      "izoh": "f(x) = 1/x, x₀ = 2 va Δx = 0,02 deb olamiz. Hosila f'(x) = −1/x², ya'ni f'(2) = −0,25. Demak 1/2,02 ≈ 0,5 − 0,25 · 0,02 = 0,495. 0,505 — hosilaning manfiy ishorasini unutish, 0,48 esa Δx ni bevosita ayirish xatosi. Javob: 0,495.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-teskari-kasr",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#a7c77480"
+    },
+    {
+      "q": "Ishlab chiqarish hajmi 2 foizga kamayganda mahsulot tannarxi 1/0,98 marta ortadi. Shu ko'rsatkichni taqriban baholang.",
+      "v": [
+        "1,02 marta",
+        "0,98 marta",
+        "1,2 marta",
+        "1,04 marta"
+      ],
+      "t": 0,
+      "izoh": "f(x) = 1/x funksiyani x₀ = 1 nuqtada olamiz, bunda Δx = −0,02. f'(1) = −1, demak 1/0,98 ≈ 1 + (−1) · (−0,02) = 1,02. Ikki manfiyning ko'paytmasi musbat bo'lgani uchun natija birdan katta chiqadi. 0,98 marta — ishorani noto'g'ri olish, 1,04 marta esa ikki barobar ortiqcha baho. Javob: 1,02 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqribiy-teskari-kasr",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#c67c11d0"
+    },
+    {
+      "q": "1/5,1 ifodani x₀ = 5 nuqtaga tayangan taqribiy formula bilan hisoblang.",
+      "v": [
+        "0,204",
+        "0,196",
+        "0,19",
+        "0,198"
+      ],
+      "t": 1,
+      "izoh": "f(x) = 1/x va f'(5) = −1/25 = −0,04, bunda Δx = 0,1. Demak 1/5,1 ≈ 0,2 − 0,04 · 0,1 = 0,196. 0,204 — ishorani almashtirish (0,2 + 0,04 · 0,1), 0,19 — hosila o'rniga −0,1 ni olish (0,2 − 0,1 · 0,1), 0,198 esa hosila o'rniga −0,02 ni olish natijasi (0,2 − 0,02 · 0,1). Javob: 0,196.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-teskari-kasr",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#b7192a49"
+    },
+    {
+      "q": "Elektr zanjiridagi qarshilik 9,9 om bo'lsa, o'tkazuvchanlik 1/9,9 ifoda bilan topiladi. Uning taqribiy qiymati qancha?",
+      "v": [
+        "0,099",
+        "0,101",
+        "0,11",
+        "0,1"
+      ],
+      "t": 1,
+      "izoh": "x₀ = 10 va Δx = −0,1 deb olamiz, chunki 1 : 10 = 0,1 aniq hisoblanadi. f'(10) = −1/100 = −0,01, demak natija 0,1 + (−0,01) · (−0,1) = 0,101. Qarshilik kamaygani uchun o'tkazuvchanlik biroz ortishi kerak, ya'ni javob 0,1 dan katta. 0,099 — ishorani teskari olish natijasi. Javob: 0,101.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqribiy-teskari-kasr",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#d1866c43"
+    },
+    {
+      "q": "Ma'lumki f(3) = 7 va f'(3) = 0,4. Taqribiy formulaga ko'ra f(3,2) qiymati nechaga teng bo'ladi?",
+      "v": [
+        "7,4",
+        "7,08",
+        "7,2",
+        "6,92"
+      ],
+      "t": 1,
+      "izoh": "Taqribiy formula f(x₀ + Δx) ≈ f(x₀) + f'(x₀)·Δx ni qo'llaymiz, bunda Δx = 0,2. Demak f(3,2) ≈ 7 + 0,4 · 0,2 = 7,08. 7,4 — hosilani Δx ga ko'paytirmasdan qo'shish, 7,2 esa faqat Δx ni qo'shish xatosi. Javob: 7,08.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-berilgan-hosila-bilan",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#d764f897"
+    },
+    {
+      "q": "Burchak radianda berilgan: sin 0,02 ning taqribiy qiymatini x₀ = 0 nuqtaga tayanib hisoblang.",
+      "v": [
+        "0,02",
+        "1,02",
+        "0,002",
+        "0,04"
+      ],
+      "t": 0,
+      "izoh": "f(x) = sin x uchun f(0) = 0 va f'(x) = cos x, ya'ni f'(0) = 1. Taqribiy formula sin 0,02 ≈ 0 + 1 · 0,02 = 0,02 natijani beradi. 1,02 — sinus o'rniga kosinus qiymatini boshlang'ich deb olish, 0,002 esa vergul o'rnini adashtirish xatosi. Javob: 0,02.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-trigonometrik",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#f154a9c1"
+    },
+    {
+      "q": "Radianda berilgan kichik burchak uchun cos 0,04 ning taqribiy qiymatini toping.",
+      "v": [
+        "0,96",
+        "1",
+        "1,04",
+        "0,04"
+      ],
+      "t": 1,
+      "izoh": "f(x) = cos x da f(0) = 1 va f'(x) = −sin x, demak f'(0) = 0. Taqribiy formula cos 0,04 ≈ 1 + 0 · 0,04 = 1 natijani beradi, ya'ni kichik burchakda kosinus deyarli o'zgarmaydi. 0,96 va 1,04 — hosilani 1 yoki −1 deb olish xatosi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-trigonometrik",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#bbf9e032"
+    },
+    {
+      "q": "Geodezist kichik burchakni radianda o'lchab tg 0,03 qiymatini baholashi kerak. Taqribiy formula qanday natija beradi?",
+      "v": [
+        "1,03",
+        "0,3",
+        "0,03",
+        "0,06"
+      ],
+      "t": 2,
+      "izoh": "f(x) = tg x uchun f(0) = 0 va f'(x) = 1/cos²x, ya'ni f'(0) = 1. Demak tg 0,03 ≈ 0 + 1 · 0,03 = 0,03. Kichik burchaklarda tangens burchakning o'ziga deyarli teng bo'ladi. 1,03 — boshlang'ich qiymatni 1 deb olish, 0,3 esa vergul xatosi. Javob: 0,03.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-trigonometrik",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#e2a566e7"
+    },
+    {
+      "q": "√3 ≈ 1,732 deb olib, sin(π/6 + 0,02) ifodaning taqribiy qiymatini hisoblang.",
+      "v": [
+        "0,483",
+        "0,51",
+        "0,5",
+        "0,517"
+      ],
+      "t": 3,
+      "izoh": "Bu yerda x₀ = π/6, chunki sin(π/6) = 0,5 aniq ma'lum, Δx = 0,02. Hosila cos(π/6) = √3/2 ≈ 0,866, demak orttirma 0,866 · 0,02 ≈ 0,017. Natija 0,5 + 0,017 = 0,517. 0,483 — orttirmani qo'shish o'rniga ayirish xatosi (0,5 − 0,866 · 0,02), 0,51 esa hosila o'rniga sinusning qiymatini ishlatish xatosi (0,5 + 0,5 · 0,02). Javob: 0,517.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqribiy-trigonometrik",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#1da6e1f8"
+    },
+    {
+      "q": "Iqtisodiy hisob-kitobda ln(1,02) qiymati kerak bo'lib qoldi. Taqribiy formuladan foydalanib uni baholang.",
+      "v": [
+        "1,02",
+        "0,01",
+        "0,2",
+        "0,02"
+      ],
+      "t": 3,
+      "izoh": "f(x) = ln x funksiyada x₀ = 1 olamiz, chunki ln 1 = 0; bunda Δx = 0,02. Hosila f'(x) = 1/x, ya'ni f'(1) = 1. Demak ln(1,02) ≈ 0 + 1 · 0,02 = 0,02. 1,02 — logarifm o'rniga argumentning o'zini yozish, 0,01 esa ikkiga bo'lish xatosi. Javob: 0,02.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-logarifm-eksponenta",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#f358c476"
+    },
+    {
+      "q": "Radioaktiv parchalanish hisobida e^(0,03) qiymati talab qilinadi. Uni taqribiy formula yordamida baholang.",
+      "v": [
+        "0,03",
+        "1,03",
+        "1,3",
+        "1,003"
+      ],
+      "t": 1,
+      "izoh": "f(x) = eˣ funksiyani x₀ = 0 nuqtada olamiz: f(0) = 1 va f'(0) = 1. Demak e^(0,03) ≈ 1 + 1 · 0,03 = 1,03. 0,03 — boshlang'ich qiymat 1 ni qo'shishni unutish, 1,3 esa vergul o'rnini adashtirish xatosi. Javob: 1,03.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-logarifm-eksponenta",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#f3d21507"
+    },
+    {
+      "q": "Narx 3 foizga tushganda logarifmik o'zgarish ko'rsatkichi ln(0,97) bilan o'lchanadi. Uning taqribiy qiymati qancha?",
+      "v": [
+        "0,03",
+        "0,97",
+        "−0,03",
+        "−0,3"
+      ],
+      "t": 2,
+      "izoh": "x₀ = 1 va Δx = −0,03 deb olamiz, chunki ln 1 = 0 va f'(1) = 1. Demak ln(0,97) ≈ 0 + 1 · (−0,03) = −0,03. Argument birdan kichik bo'lgani uchun logarifm manfiy chiqishi kerak. 0,03 — ishorani hisobga olmaslik, 0,97 esa argumentni javob deb yozish xatosi. Javob: −0,03.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-logarifm-eksponenta",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#5357565d"
+    },
+    {
+      "q": "ln 2 ≈ 0,693 ekani ma'lum. Shu qiymatdan foydalanib ln(2,02) ni taqriban hisoblang.",
+      "v": [
+        "0,713",
+        "0,703",
+        "0,695",
+        "0,693"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda x₀ = 2 va Δx = 0,02, hosila esa f'(2) = 1/2 = 0,5. Orttirma 0,5 · 0,02 = 0,01, demak ln(2,02) ≈ 0,693 + 0,01 = 0,703. 0,713 — hosilani 1 deb olib Δx ni to'liq qo'shish, 0,693 esa orttirmani umuman hisobga olmaslik xatosi. Javob: 0,703.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqribiy-logarifm-eksponenta",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#f51ea65e"
+    },
+    {
+      "q": "Qirrasi 5 m bo'lgan kub shaklidagi omborning har bir qirrasi 0,02 m ga uzaytirildi. Hajmning taqribiy orttirmasi qanchaga teng?",
+      "v": [
+        "0,2 m³",
+        "0,5 m³",
+        "1,5 m³",
+        "0,02 m³"
+      ],
+      "t": 2,
+      "izoh": "V(a) = a³ va V'(a) = 3a², demak V'(5) = 75. Taqribiy orttirma ΔV ≈ 75 · 0,02 = 1,5 m³. 0,5 m³ — hosila o'rniga a² ni olish, 0,2 m³ esa 2a ni olish xatosi. Javob: 1,5 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kichik-ozgarish-geometrik-olcham",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#13be94f3"
+    },
+    {
+      "q": "Kvadrat shaklidagi maydonning tomoni 40 m deb o'lchandi, o'lchov xatosi esa 0,1 m gacha bo'lishi mumkin. Yuzani hisoblashdagi xato taqriban qanchaga yetadi?",
+      "v": [
+        "4 m²",
+        "0,1 m²",
+        "8 m²",
+        "16 m²"
+      ],
+      "t": 2,
+      "izoh": "S(a) = a² va S'(a) = 2a, demak S'(40) = 80. Yuzadagi xato ΔS ≈ 80 · 0,1 = 8 m². 4 m² — hosilani a deb olish, 16 m² esa 2a o'rniga 4a ishlatish xatosi. O'lchov xatosi kichik bo'lsa ham yuzadagi xato tomonga nisbatan ancha katta chiqadi. Javob: 8 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kichik-ozgarish-geometrik-olcham",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#e5b20527"
+    },
+    {
+      "q": "Doira shaklidagi disk radiusi 10 sm dan 10,1 sm ga kattalashtirildi. π ≈ 3,14 deb, yuzaning taqribiy orttirmasini toping.",
+      "v": [
+        "3,14 sm²",
+        "6,28 sm²",
+        "62,8 sm²",
+        "0,1 sm²"
+      ],
+      "t": 1,
+      "izoh": "S(r) = πr² va S'(r) = 2πr, demak S'(10) = 2 · 3,14 · 10 = 62,8. Orttirma ΔS ≈ 62,8 · 0,1 = 6,28 sm². 62,8 sm² — Δr ga ko'paytirishni unutish, 3,14 sm² esa hosilani πr deb olish xatosi. Javob: 6,28 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kichik-ozgarish-geometrik-olcham",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#28a7e496"
+    },
+    {
+      "q": "Metall shar qizdirilganda uning radiusi 6 sm dan 6,02 sm ga kattalashdi. π ≈ 3,14 deb, hajmning taqribiy ortishini hisoblang.",
+      "v": [
+        "9,04 sm³",
+        "2,26 sm³",
+        "4,52 sm³",
+        "0,02 sm³"
+      ],
+      "t": 0,
+      "izoh": "Shar hajmi V(r) = 4πr³/3, hosilasi esa V'(r) = 4πr². Demak V'(6) = 4 · 3,14 · 36 = 452,16 va ΔV ≈ 452,16 · 0,02 ≈ 9,04 sm³. 2,26 sm³ — hosilada 4 koeffitsientini tushirib qoldirish, 4,52 sm³ esa uni 2 deb olish xatosi. Javob: 9,04 sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kichik-ozgarish-geometrik-olcham",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#c61d8c9f"
+    },
+    {
+      "q": "Kvadratning tomoni 1 foizga uzaytirilsa, uning yuzasi taqriban necha foizga ortadi?",
+      "v": [
+        "1 foizga",
+        "2 foizga",
+        "4 foizga",
+        "0,5 foizga"
+      ],
+      "t": 1,
+      "izoh": "S = a² bo'lgani uchun ΔS ≈ 2a·Δa, nisbiy o'zgarish esa ΔS/S ≈ 2·Δa/a. Tomon 1 foizga ortsa, ya'ni Δa/a = 0,01 bo'lsa, yuza 0,02 ga, ya'ni 2 foizga ortadi. 1 foizga — daraja ko'rsatkichini hisobga olmaslik, 4 foizga esa foizni ham kvadratga ko'tarish xatosi. Javob: 2 foizga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbiy-xato-foizda",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#fba05fe3"
+    },
+    {
+      "q": "Kubning qirrasi 0,5 foizga uzaytirilsa, uning hajmi taqriban necha foizga ortadi?",
+      "v": [
+        "0,5 foizga",
+        "1 foizga",
+        "1,5 foizga",
+        "0,15 foizga"
+      ],
+      "t": 2,
+      "izoh": "V = a³ dan ΔV ≈ 3a²·Δa, demak nisbiy o'zgarish ΔV/V ≈ 3·Δa/a bo'ladi. Qirra 0,5 foizga ortganda hajm 3 · 0,5 = 1,5 foizga ortadi. 1 foizga — kvadrat funksiya koeffitsienti 2 ni ishlatish, 0,5 foizga esa daraja ko'rsatkichini umuman hisobga olmaslik xatosi. Javob: 1,5 foizga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbiy-xato-foizda",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#376e8abf"
+    },
+    {
+      "q": "Korxonaning x dona mahsulot ishlab chiqarish xarajati C(x) = 0,1x² + 20x + 500 ming so'mni tashkil qiladi. 100 dona tayyorlangandan keyin yana bitta dona taxminan qancha qo'shimcha xarajat talab qiladi?",
+      "v": [
+        "40 ming so'm",
+        "20 ming so'm",
+        "30 ming so'm",
+        "3500 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "Qo'shimcha xarajat ΔC ≈ C'(100) · 1 formula bilan baholanadi. C'(x) = 0,2x + 20, demak C'(100) = 20 + 20 = 40 ming so'm. 20 ming so'm — faqat chiziqli hadning koeffitsientini olish, 3500 ming so'm esa 100 dona uchun umumiy xarajat. Javob: 40 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "marjinal-tahlil-iqtisod",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#f9ac680c"
+    },
+    {
+      "q": "Do'kon q dona tovar sotganda daromadi R(q) = 500q − 0,5q² ming so'mga teng bo'ladi. 200 dona sotilgandan keyin qo'shimcha bitta dona taxminan qancha daromad keltiradi?",
+      "v": [
+        "500 ming so'm",
+        "400 ming so'm",
+        "80 000 ming so'm",
+        "300 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Qo'shimcha daromad ΔR ≈ R'(200) · 1 bilan baholanadi. R'(q) = 500 − q, demak R'(200) = 500 − 200 = 300 ming so'm. 500 ming so'm — ikkinchi hadning hosilasini unutish, 80 000 ming so'm esa 200 donadan olingan umumiy daromad. Javob: 300 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "marjinal-tahlil-iqtisod",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#518928bf"
+    },
+    {
+      "q": "Usta t soat ishlaganda Q(t) = 12t − 0,2t² dona detal tayyorlaydi. Ish boshlanganidan 5 soat o'tgan paytdagi oniy ish unumi qancha?",
+      "v": [
+        "12 dona/soat",
+        "55 dona/soat",
+        "10 dona/soat",
+        "11 dona/soat"
+      ],
+      "t": 2,
+      "izoh": "Oniy ish unumi — Q(t) ning hosilasi: Q'(t) = 12 − 0,4t. Demak Q'(5) = 12 − 2 = 10 dona/soat. 55 dona/soat — besh soatda tayyorlangan umumiy detallar soni, 11 dona/soat esa shu sonni vaqtga bo'lib olingan o'rtacha unum. Javob: 10 dona/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "marjinal-tahlil-iqtisod",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#de16e80e"
+    },
+    {
+      "q": "Bakdagi suv miqdori V(t) = 100 − 2t² litr qonuniyat bilan kamaymoqda. t = 3 daqiqadan keyingi 0,1 daqiqa ichida suv taqriban qanchaga kamayadi?",
+      "v": [
+        "1,2 litr",
+        "0,2 litr",
+        "12 litr",
+        "2,4 litr"
+      ],
+      "t": 0,
+      "izoh": "V'(t) = −4t, demak V'(3) = −12 litr/daqiqa. Taqribiy o'zgarish ΔV ≈ −12 · 0,1 = −1,2 litr, ya'ni suv 1,2 litrga kamayadi. 12 litr — hosilaning o'zini javob deb olish, 0,2 litr esa koeffitsientni 2 deb qoldirish xatosi. Javob: 1,2 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "marjinal-tahlil-iqtisod",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#0ff991a9"
+    },
+    {
+      "q": "f(x) = x² funksiyada x₀ = 4 va Δx = 0,2 bo'lganda aniq orttirma bilan taqribiy orttirma orasidagi farq qanchaga teng?",
+      "v": [
+        "0,04",
+        "0,2",
+        "1,64",
+        "1,6"
+      ],
+      "t": 0,
+      "izoh": "Aniq orttirma Δy = 4,2² − 16 = 17,64 − 16 = 1,64, taqribiysi esa f'(4)·Δx = 8 · 0,2 = 1,6. Farq 1,64 − 1,6 = 0,04, bu esa aynan (Δx)² ga teng. Demak taqribiy formulada tashlab yuboriladigan had (Δx)² dir. Javob: 0,04.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniq-va-taqribiy-solishtirish",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#b3fc4b8f"
+    },
+    {
+      "q": "Taqribiy formula f(x₀ + Δx) ≈ f(x₀) + f'(x₀)·Δx qaysi shart bajarilganda yetarlicha aniq natija beradi?",
+      "v": [
+        "Δx qanday bo'lishidan qat'i nazar",
+        "x₀ butun son bo'lganda",
+        "f'(x₀) noldan katta bo'lganda",
+        "Δx moduli yetarlicha kichik bo'lganda"
+      ],
+      "t": 3,
+      "izoh": "Formula grafikni urinma bilan almashtirishga asoslangan, urinma esa faqat urinish nuqtasi yaqinida grafikka yaqin turadi. Tashlab yuboriladigan qismning kattaligi Δx ning kvadrati tartibida bo'ladi, ya'ni Δx kichraygan sari xato tezroq kamayadi. Shuning uchun asosiy shart — Δx modulining kichik bo'lishi. x₀ ning butunligi yoki hosilaning ishorasi aniqlikka ta'sir qilmaydi. Javob: Δx moduli yetarlicha kichik bo'lganda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-formula-asoslari",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#93647b8c"
+    },
+    {
+      "q": "Issiqxonada ko'chat balandligi h(t) = 0,5t² + 3t sm qonuniyat bilan o'sadi, bunda t — haftalar soni. To'rtinchi haftadan beshinchi haftagacha ko'chat necha santimetrga o'sdi?",
+      "v": [
+        "27,5 sm",
+        "7 sm",
+        "7,5 sm",
+        "1 sm"
+      ],
+      "t": 2,
+      "izoh": "O'sish — funksiya orttirmasi Δh. h(4) = 8 + 12 = 20 sm va h(5) = 12,5 + 15 = 27,5 sm. Demak Δh = 27,5 − 20 = 7,5 sm. 27,5 sm — ko'chatning umumiy balandligi, 7 sm esa hosila orqali olingan taqribiy baho, chunki h'(4) = 7. Javob: 7,5 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "funksiya-orttirmasi-kontekstda",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#4b76b0a7"
+    },
+    {
+      "q": "Hosila ta'rifida Δx nolga intilishi sharti nima uchun qo'yiladi?",
+      "v": [
+        "Δy nolga teng bo'lishi uchun",
+        "Kesuvchi urinmaga aylanishi uchun",
+        "Funksiya uzluksiz bo'lishi uchun",
+        "Nisbat butun son chiqishi uchun"
+      ],
+      "t": 1,
+      "izoh": "Orttirmalar nisbati ikki nuqtadan o'tuvchi kesuvchining burchak koeffitsientini beradi. Δx kichraygan sari ikkinchi nuqta birinchisiga yaqinlashadi va kesuvchi urinma holatiga o'tadi. Aynan shu limit hosila deb ataladi. Δy ning nolga intilishi uzluksiz funksiyada avtomatik bajariladi, lekin ta'rifning maqsadi bu emas. Javob: kesuvchi urinmaga aylanishi uchun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-tarifining-shakllari",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#903614be"
+    },
+    {
+      "q": "Sovutgichga qo'yilgan mahsulot harorati T(t) = 25 − 3t + 0,2t² °C qonun bilan o'zgaradi. 2 soatdan 5 soatgacha haroratning o'rtacha o'zgarish tezligi qancha?",
+      "v": [
+        "−4,8 °C/soat",
+        "−1,6 °C/soat",
+        "−2,2 °C/soat",
+        "1,6 °C/soat"
+      ],
+      "t": 1,
+      "izoh": "T(2) = 25 − 6 + 0,8 = 19,8 va T(5) = 25 − 15 + 5 = 15 °C. Harorat orttirmasi ΔT = 15 − 19,8 = −4,8, vaqt orttirmasi esa Δt = 3 soat. O'rtacha tezlik −4,8 : 3 = −1,6 °C/soat. −4,8 — uch soatdagi to'liq pasayish, −2,2 esa t = 2 dagi oniy o'zgarish tezligi. Javob: −1,6 °C/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-ozgarish-tezligi",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#3399719e"
+    },
+    {
+      "q": "Yo'lovchi avtobusi soat 9 da yo'lning 40-kilometrida, soat 12 da esa 190-kilometrida bo'ldi. Uning shu oraliqdagi o'rtacha tezligi qancha?",
+      "v": [
+        "150 km/soat",
+        "3 km/soat",
+        "63 km/soat",
+        "50 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Yo'l orttirmasi Δs = 190 − 40 = 150 km, vaqt orttirmasi Δt = 12 − 9 = 3 soat. O'rtacha tezlik Δs/Δt = 150 : 3 = 50 km/soat. 150 km/soat — bosib o'tilgan yo'lni tezlik deb olish, 63 km/soat esa boshlang'ich belgini hisobga olmay 190 ni 3 ga bo'lish xatosi. Javob: 50 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-ozgarish-tezligi",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#e94a5ebb"
+    },
+    {
+      "q": "Raketa modelining balandligi h(t) = 20t − 5t² metr bilan beriladi. Ta'rif bo'yicha t = 1 s dagi oniy tezlikni toping.",
+      "v": [
+        "15 m/s",
+        "10 m/s",
+        "20 m/s",
+        "5 m/s"
+      ],
+      "t": 1,
+      "izoh": "h(1 + Δt) = 20 + 20Δt − 5(1 + 2Δt + (Δt)²) = 15 + 10Δt − 5(Δt)², h(1) = 15. Demak Δh = 10Δt − 5(Δt)² va nisbat 10 − 5Δt bo'ladi. Δt nolga intilganda tezlik 10 m/s. 15 m/s — shu paytdagi balandlik, 20 m/s esa boshlang'ich tezlik. Javob: 10 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oniy-tezlik-tarif-boyicha",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#c716f142"
+    },
+    {
+      "q": "Zarracha to'g'ri chiziq bo'ylab x(t) = t³ − 2t qonun bilan harakatlanadi. Uning t = 3 s dagi oniy tezligini ta'rif bo'yicha aniqlang.",
+      "v": [
+        "21 m/s",
+        "27 m/s",
+        "25 m/s",
+        "7 m/s"
+      ],
+      "t": 2,
+      "izoh": "Orttirmalar nisbatining limiti x'(t) = 3t² − 2 ni beradi, demak x'(3) = 27 − 2 = 25 m/s. 21 m/s — zarrachaning koordinatasi, chunki x(3) = 27 − 6 = 21. 27 m/s — ikkinchi hadni tushirib qoldirish, 7 m/s esa koordinatani vaqtga bo'lib olingan o'rtacha tezlik. Javob: 25 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oniy-tezlik-tarif-boyicha",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#267ed9ff"
+    },
+    {
+      "q": "Talaba orttirmalar nisbatini Δx = 0,5 da 5,5, Δx = 0,2 da 5,2, Δx = 0,1 da 5,1 deb hisobladi. Funksiyaning shu nuqtadagi hosilasi nechaga teng?",
+      "v": [
+        "5,1",
+        "5",
+        "5,5",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "Nisbat qiymatlari Δx kichraygan sari 5 ga yaqinlashib bormoqda, ya'ni limit 5 ga teng. Demak hosila 5 bo'ladi. 5,1 — faqat oxirgi taqribiy qiymat, 5,5 esa eng qo'pol yaqinlashish. Jadval hosilani bevosita bermaydi, u faqat limitni ko'rsatadi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-jadvalidan-hosila",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#09b05cf2"
+    },
+    {
+      "q": "Kompyuter dasturi orttirmalar nisbatini ketma-ket 0,49, keyin 0,499, so'ng 0,4999 deb chiqardi. Funksiyaning bu nuqtadagi hosilasi nechaga teng?",
+      "v": [
+        "0,4999",
+        "0,49",
+        "0,5",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "Qiymatlar 0,5 ga pastdan yaqinlashmoqda, demak nisbatning limiti 0,5 ga teng. Shuning uchun hosila 0,5 bo'ladi. 0,4999 — hisoblashning oxirgi qadami, hosilaning o'zi emas. Hosila har doim aniq limit qiymati bilan yoziladi. Javob: 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-jadvalidan-hosila",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#068824e3"
+    },
+    {
+      "q": "f funksiya x ≤ 1 bo'lganda x² ga, x > 1 bo'lganda esa 2x − 1 ga teng. Bu funksiyaning x₀ = 1 nuqtadagi hosilasi haqida nima deyish mumkin?",
+      "v": [
+        "Hosila mavjud va 2 ga teng",
+        "Hosila mavjud emas",
+        "Hosila mavjud va 1 ga teng",
+        "Hosila mavjud va 0 ga teng"
+      ],
+      "t": 0,
+      "izoh": "Avval uzluksizlikni tekshiramiz: chapdan 1² = 1, o'ngdan 2 − 1 = 1, qiymatlar mos tushadi. Chapdan orttirmalar nisbati (1 + Δx)² − 1 ni Δx ga bo'lib 2 + Δx ni beradi va 2 ga intiladi. O'ngdan esa nisbat aynan 2 ga teng. Ikki tomonlama limit bir xil bo'lgani uchun hosila mavjud va u 2 ga teng. Javob: hosila mavjud, 2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-mavjudligi-tahlili",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#14797d1e"
+    },
+    {
+      "q": "f(x) = ∛x funksiyaning x₀ = 0 nuqtadagi orttirmalar nisbati Δx nolga intilganda qanday holatga keladi?",
+      "v": [
+        "Nolga intiladi, hosila 0 ga teng",
+        "1 ga intiladi, hosila 1 ga teng",
+        "−1 ga intiladi, hosila manfiy",
+        "Cheksiz o'sadi, hosila mavjud emas"
+      ],
+      "t": 3,
+      "izoh": "Bu yerda Δy = ∛(Δx), demak nisbat ∛(Δx)/Δx ko'rinishda bo'ladi. Uni soddalashtirsak 1/∛((Δx)²) hosil bo'ladi, maxraj esa Δx nolga intilganda nolga intiladi. Shuning uchun nisbat cheksiz o'sadi va chekli limit yo'q, ya'ni hosila mavjud emas. Grafikda bu nuqtada urinma vertikal bo'ladi. Javob: cheksiz o'sadi, hosila mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-mavjudligi-tahlili",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#75ca0fa2"
+    },
+    {
+      "q": "y = x³ egri chizig'ida A(1; 1) va B(2; 8) nuqtalardan o'tuvchi kesuvchining burchak koeffitsientini toping.",
+      "v": [
+        "3",
+        "12",
+        "7",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Kesuvchining burchak koeffitsienti — orttirmalar nisbati: (8 − 1)/(2 − 1) = 7 : 1 = 7. 3 — x₀ = 1 dagi urinmaning koeffitsienti, ya'ni limitga o'tib yuborish xatosi. 12 esa x = 2 dagi urinmaning koeffitsienti. Kesuvchi ikki nuqtaga tayanadi, urinma esa bitta nuqtaga. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesuvchi-va-urinma",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#4a82989a"
+    },
+    {
+      "q": "Taqribiy formulaga ko'ra f(x) = x² funksiyaning orttirmasi Δx = 0,2 da 2,4 ga teng chiqdi. Ish qaysi nuqtada olib borilgan?",
+      "v": [
+        "12",
+        "3",
+        "2,4",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Taqribiy orttirma f'(x₀)·Δx = 2x₀·Δx ko'rinishda bo'ladi. Demak 2x₀ · 0,2 = 2,4, bundan 0,4x₀ = 2,4 va x₀ = 6. 12 — hosilaning qiymatini x₀ deb olish, ya'ni 2 ga bo'lishni unutish xatosi. 2,4 esa orttirmaning o'zi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orttirmadan-teskari-masala",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#d8770d9d"
+    },
+    {
+      "q": "y = f(x) grafigiga x₀ nuqtada o'tkazilgan urinma taqribiy hisoblash formulasi bilan qanday bog'lanadi?",
+      "v": [
+        "Taqribiy formula — urinmaning x₀ + Δx nuqtadagi ordinatasi",
+        "Taqribiy formula — kesuvchining ordinatasi",
+        "Ular o'zaro bog'liq emas",
+        "Taqribiy formula urinmaning burchak koeffitsientiga teng"
+      ],
+      "t": 0,
+      "izoh": "Urinma tenglamasi y = f(x₀) + f'(x₀)(x − x₀) ko'rinishda yoziladi. Unda x = x₀ + Δx deb qo'ysak, o'ng tomon aynan f(x₀) + f'(x₀)·Δx bo'ladi. Demak taqribiy formula funksiyaning x₀ + Δx dagi qiymatini urinmaning aynan shu nuqtadagi ordinatasi bilan almashtirish demakdir. Burchak koeffitsienti esa faqat f'(x₀) ga teng, butun formulaga emas. Javob: taqribiy formula — urinmaning x₀ + Δx nuqtadagi ordinatasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-formula-asoslari",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#9ca349f0"
+    },
+    {
+      "q": "Qaysi funksiya uchun taqribiy hisoblash formulasi Δx ning ixtiyoriy qiymatida ham aniq natija beradi?",
+      "v": [
+        "f(x) = x²",
+        "f(x) = √x",
+        "f(x) = 2x + 7",
+        "f(x) = 1/x"
+      ],
+      "t": 2,
+      "izoh": "Taqribiy formula funksiyani urinma bilan almashtiradi, xato esa grafik urinmadan qanchalik uzoqlashishiga bog'liq. Chiziqli funksiyaning grafigi to'g'ri chiziq bo'lib, urinma shu chiziqning o'zi hisoblanadi. Shuning uchun f(x) = 2x + 7 uchun formula har qanday Δx da aniq qiymat beradi. Qolgan uchtasining grafigi egri, ya'ni urinmadan chetlashadi. Javob: f(x) = 2x + 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqribiy-formula-asoslari",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#a8a65294"
+    },
+    {
+      "q": "Ma'lumki g(5) = 12 va g'(5) = −0,6. Taqribiy formuladan foydalanib g(4,9) qiymatini baholang.",
+      "v": [
+        "11,94",
+        "12,06",
+        "12,6",
+        "11,4"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda Δx = 4,9 − 5 = −0,1 manfiy bo'ladi. Taqribiy qiymat 12 + (−0,6) · (−0,1) = 12 + 0,06 = 12,06. Ikki manfiyning ko'paytmasi musbat, shuning uchun natija 12 dan katta chiqadi. 11,94 — ishorani noto'g'ri olish, 11,4 esa hosilani Δx ga ko'paytirmasdan ayirish xatosi. Javob: 12,06.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-berilgan-hosila-bilan",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#1b9a1886"
+    },
+    {
+      "q": "Zavodda tannarx C(x) funksiya bilan berilgan: C(50) = 800 ming so'm va C'(50) = 6 ming so'm. 53 dona ishlab chiqarilganda tannarx taqriban qancha bo'ladi?",
+      "v": [
+        "803 ming so'm",
+        "818 ming so'm",
+        "806 ming so'm",
+        "830 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Argument orttirmasi Δx = 53 − 50 = 3 dona. Taqribiy formulaga ko'ra C(53) ≈ 800 + 6 · 3 = 818 ming so'm. 803 ming so'm — hosilani hisobga olmay faqat Δx ni qo'shish, 806 ming so'm esa Δx ni 1 deb olish xatosi. Javob: 818 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-berilgan-hosila-bilan",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#8a7763fb"
+    },
+    {
+      "q": "Sharning radiusi 2 foizga uzaytirilsa, uning hajmi taqriban necha foizga ortadi?",
+      "v": [
+        "2 foizga",
+        "4 foizga",
+        "6 foizga",
+        "8 foizga"
+      ],
+      "t": 2,
+      "izoh": "Shar hajmi V = 4πr³/3, ya'ni radiusning kubiga proporsional. Kub funksiyada nisbiy o'zgarish uch barobar kuchayadi: ΔV/V ≈ 3·Δr/r. Radius 2 foizga ortganda hajm 3 · 2 = 6 foizga ortadi. 2 foizga — daraja ko'rsatkichini hisobga olmaslik, 4 foizga esa kvadrat funksiya koeffitsienti 2 ni ishlatish xatosi. Javob: 6 foizga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbiy-xato-foizda",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#76292ac8"
+    },
+    {
+      "q": "Doira radiusini o'lchashda 1 foiz xatoga yo'l qo'yildi. Yuzani hisoblashdagi nisbiy xato taqriban qanchaga yetadi?",
+      "v": [
+        "2 foiz",
+        "1 foiz",
+        "3 foiz",
+        "0,5 foiz"
+      ],
+      "t": 0,
+      "izoh": "Doira yuzasi S = πr², demak ΔS ≈ 2πr·Δr va nisbiy xato ΔS/S ≈ 2·Δr/r bo'ladi. Radiusdagi 1 foiz xato yuzada taxminan 2 foiz xatoga aylanadi. 1 foiz — xatoni o'zgarmaydi deb hisoblash, 0,5 foiz esa aksincha, ikkiga bo'lish xatosi. O'lchov xatosi darajaga ko'tarilganda kuchayishini yodda tutish kerak. Javob: 2 foiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbiy-xato-foizda",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#a1fe5227"
+    },
+    {
+      "q": "f(x) = x³ funksiyada x₀ = 2 va Δx = 0,1 bo'lganda aniq orttirma taqribiy orttirmadan qanchaga farq qiladi?",
+      "v": [
+        "0,061",
+        "0,01",
+        "1,2",
+        "1,261"
+      ],
+      "t": 0,
+      "izoh": "Aniq orttirma Δy = 2,1³ − 8 = 9,261 − 8 = 1,261 ga teng. Taqribiysi esa f'(2)·Δx = 12 · 0,1 = 1,2. Farq 1,261 − 1,2 = 0,061, ya'ni tashlab yuborilgan 3x₀·(Δx)² + (Δx)³ qismi. 1,261 va 1,2 — orttirmalarning o'zlari, farq emas. Javob: 0,061.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniq-va-taqribiy-solishtirish",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#529358f1"
+    },
+    {
+      "q": "Taqribiy formulada Δx ikki barobar kattalashtirilsa, hisoblash xatosi taxminan qanday o'zgaradi?",
+      "v": [
+        "Ikki barobar ortadi",
+        "O'zgarmaydi",
+        "Ikki barobar kamayadi",
+        "Taxminan to'rt barobar ortadi"
+      ],
+      "t": 3,
+      "izoh": "Taqribiy formulada tashlab yuboriladigan asosiy qism (Δx)² bilan o'lchanadi, masalan f(x) = x² da bu aynan (Δx)² ga teng. Δx ikki barobar oshsa, uning kvadrati to'rt barobar ortadi. Demak xato ham taxminan to'rt barobar kattalashadi. Shu sababli taqribiy formula faqat kichik Δx da ishonchli natija beradi. Javob: taxminan to'rt barobar ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniq-va-taqribiy-solishtirish",
+      "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va#db8436b6"
+    }
+  ]
+}

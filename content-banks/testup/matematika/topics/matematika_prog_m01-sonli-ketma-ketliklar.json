@@ -1,0 +1,1609 @@
+{
+  "nom": "Sonli ketma-ketliklar",
+  "bolim": "Ketma-ketliklar va progressiyalar",
+  "blok": "prog",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "aₙ = 3n + 4 umumiy had formulasi bilan berilgan ketma-ketlikning yettinchi hadi nechaga teng?",
+      "v": [
+        "21",
+        "25",
+        "28",
+        "22"
+      ],
+      "t": 1,
+      "izoh": "Umumiy had formulasiga n = 7 ni qo'yamiz: a₇ = 3·7 + 4. Avval 3·7 = 21 hisoblanadi, keyin unga 4 qo'shiladi. Demak a₇ = 25. 21 — 4 ni qo'shishni unutish, 28 — sakkizinchi hadning qiymati. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-had-qiymati",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#f00541bc"
+    },
+    {
+      "q": "aₙ = n² − 5n umumiy had formulasi berilgan. Shu ketma-ketlikning to'qqizinchi hadini hisoblang.",
+      "v": [
+        "24",
+        "126",
+        "−36",
+        "36"
+      ],
+      "t": 3,
+      "izoh": "n = 9 ni formulaga qo'yamiz: a₉ = 9² − 5·9 = 81 − 45 = 36. 24 — sakkizinchi hadning qiymati, −36 esa ayirishni teskari tartibda bajarish natijasi. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-had-qiymati",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#5dab0cdf"
+    },
+    {
+      "q": "aₙ = 2ⁿ − n formula bilan berilgan ketma-ketlikda beshinchi had qanday qiymatga ega bo'ladi?",
+      "v": [
+        "27",
+        "5",
+        "11",
+        "32"
+      ],
+      "t": 0,
+      "izoh": "n = 5 bo'lganda 2⁵ = 32 bo'ladi va undan n = 5 ayiriladi: 32 − 5 = 27. 5 — darajani 2n deb chalkashtirish, 32 — ayirishni tashlab ketish, 11 — darajada n o'rniga n − 1 ni olish (2⁴ − 5) xatosi. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-had-qiymati",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#7e278555"
+    },
+    {
+      "q": "Toshkentdagi bir kafe har kuni tayyorlaydigan somsa soni aₙ = 40 + 6n formula bilan aniqlanadi, bu yerda n — oy boshidan hisoblangan kun tartib raqami. Oyning 12-kuni nechta somsa tayyorlanadi?",
+      "v": [
+        "112 ta",
+        "106 ta",
+        "118 ta",
+        "72 ta"
+      ],
+      "t": 0,
+      "izoh": "Kun raqami n = 12 ni formulaga qo'yamiz: a₁₂ = 40 + 6·12 = 40 + 72 = 112. 106 — o'n birinchi kunning natijasi, 72 esa doimiy 40 ni qo'shishni unutish xatosi. Javob: 112 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-had-qiymati",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#7ec05da4"
+    },
+    {
+      "q": "aₙ = (n² + n)/2 umumiy had formulasi bilan berilgan ketma-ketlikning o'ninchi hadini toping.",
+      "v": [
+        "45",
+        "50",
+        "55",
+        "66"
+      ],
+      "t": 2,
+      "izoh": "n = 10 da surat 10² + 10 = 110 bo'ladi, uni 2 ga bo'lamiz: 110 : 2 = 55. 45 — to'qqizinchi had, 66 — o'n birinchi had, 50 esa suratda n ni qo'shishni unutish natijasi. Javob: 55.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-had-qiymati",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#e539e332"
+    },
+    {
+      "q": "aₙ = 4n − 7 formula bilan berilgan ketma-ketlikning dastlabki to'rtta hadini to'g'ri yozgan variantni tanlang.",
+      "v": [
+        "−7, −3, 1, 5",
+        "−3, 1, 5, 9",
+        "1, 5, 9, 13",
+        "−3, 2, 7, 12"
+      ],
+      "t": 1,
+      "izoh": "n ni ketma-ket 1, 2, 3, 4 deb olamiz: 4·1 − 7 = −3; 4·2 − 7 = 1; 4·3 − 7 = 5; 4·4 − 7 = 9. Birinchi variant n = 0 dan boshlash xatosi, uchinchisi esa n = 2 dan boshlash xatosi. Javob: −3, 1, 5, 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-had-dastlabki-hadlar",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#0a8bab69"
+    },
+    {
+      "q": "aₙ = n² − 4n + 5 formula bilan berilgan ketma-ketlikning dastlabki uchta hadi qanday bo'ladi?",
+      "v": [
+        "2, 1, 2",
+        "2, 1, 0",
+        "5, 2, 1",
+        "2, 2, 1"
+      ],
+      "t": 0,
+      "izoh": "n = 1 da 1 − 4 + 5 = 2, n = 2 da 4 − 8 + 5 = 1, n = 3 da 9 − 12 + 5 = 2. Ketma-ketlik avval kamayib, keyin yana ortadi. Uchinchi variant n = 0 dan boshlash xatosidan chiqadi. Javob: 2, 1, 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-had-dastlabki-hadlar",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#ac1e1c4f"
+    },
+    {
+      "q": "Navoiydagi bir kutubxonaga har hafta keladigan yangi kitoblar soni aₙ = 3n + 5 formula bilan hisoblanadi. Dastlabki uch haftada nechtadan kitob keladi?",
+      "v": [
+        "5, 8, 11",
+        "3, 6, 9",
+        "8, 11, 14",
+        "8, 11, 15"
+      ],
+      "t": 2,
+      "izoh": "Hafta raqamlarini navbat bilan qo'yamiz: 3·1 + 5 = 8; 3·2 + 5 = 11; 3·3 + 5 = 14. Har haftada kitoblar soni 3 taga ortib boradi. Birinchi variant n = 0 dan boshlash xatosi. Javob: 8, 11, 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-had-dastlabki-hadlar",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#aef1de39"
+    },
+    {
+      "q": "aₙ = 2^(n−1) + 1 formula bilan berilgan ketma-ketlikning dastlabki to'rt hadini ko'rsating.",
+      "v": [
+        "1, 2, 4, 8",
+        "3, 5, 9, 17",
+        "2, 4, 8, 16",
+        "2, 3, 5, 9"
+      ],
+      "t": 3,
+      "izoh": "n = 1 da 2⁰ + 1 = 2; n = 2 da 2¹ + 1 = 3; n = 3 da 2² + 1 = 5; n = 4 da 2³ + 1 = 9. 3, 5, 9, 17 — darajani n deb olish, 1, 2, 4, 8 — birni qo'shishni unutish, 2, 4, 8, 16 — ikkala xatoni birga qilish (2ⁿ) natijasi. Javob: 2, 3, 5, 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-had-dastlabki-hadlar",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#bce388c0"
+    },
+    {
+      "q": "aₙ = (2n + 1)/(n + 3) umumiy had formulasi bilan berilgan ketma-ketlikning oltinchi hadini toping.",
+      "v": [
+        "11/8",
+        "13/9",
+        "4/3",
+        "3/2"
+      ],
+      "t": 1,
+      "izoh": "n = 6 ni qo'yamiz: surat 2·6 + 1 = 13, maxraj esa 6 + 3 = 9. Demak a₆ = 13/9 va bu kasr qisqarmaydi. 11/8 — beshinchi had, 4/3 esa suratda birni qo'shishni unutish natijasi. Javob: 13/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-had-kasrli",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#4c67f55a"
+    },
+    {
+      "q": "aₙ = n/(n² + 1) formula bilan berilgan ketma-ketlikning to'rtinchi hadi qaysi kasrga teng?",
+      "v": [
+        "3/10",
+        "4/15",
+        "5/26",
+        "4/17"
+      ],
+      "t": 3,
+      "izoh": "n = 4 da maxraj 4² + 1 = 17 bo'ladi, surat esa 4 ga teng. Demak a₄ = 4/17. 4/15 — maxrajda birni qo'shish o'rniga ayirish, 3/10 — uchinchi had, 5/26 — beshinchi had. Javob: 4/17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-had-kasrli",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#ea0c8207"
+    },
+    {
+      "q": "Bir sport klubida n-oy oxirida faol a'zolarning ulushi aₙ = (n − 1)/(n + 1) kasr bilan ifodalanadi. To'qqizinchi oy oxirida bu ulush nechaga teng bo'ladi?",
+      "v": [
+        "4/5",
+        "5/4",
+        "7/9",
+        "9/11"
+      ],
+      "t": 0,
+      "izoh": "n = 9 ni qo'yamiz: surat 9 − 1 = 8, maxraj 9 + 1 = 10. 8/10 kasrni 2 ga qisqartirsak 4/5 hosil bo'ladi. 7/9 — sakkizinchi oyning ulushi, 5/4 esa kasrni ag'darib yuborish xatosi. Javob: 4/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-had-kasrli",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#98ea6f21"
+    },
+    {
+      "q": "aₙ = (3n − 2)/(2n + 5) formula bilan berilgan ketma-ketlikning o'n birinchi hadini hisoblang.",
+      "v": [
+        "11/9",
+        "31/22",
+        "31/27",
+        "28/27"
+      ],
+      "t": 2,
+      "izoh": "n = 11 da surat 3·11 − 2 = 31, maxraj 2·11 + 5 = 27. Demak a₁₁ = 31/27. 11/9 — suratda 2 ni ayirishni unutib 33/27 ni qisqartirish, 31/22 — maxrajda 5 ni qo'shmaslik natijasi. Javob: 31/27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-had-kasrli",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#0b0ae32c"
+    },
+    {
+      "q": "3, 7, 15, 31, 63 ketma-ketligida har bir had oldingisidan qanday hosil bo'lishini aniqlab, keyingi hadni yozing.",
+      "v": [
+        "64",
+        "95",
+        "126",
+        "127"
+      ],
+      "t": 3,
+      "izoh": "Qo'shni hadlar ayirmasi 4, 8, 16, 32 bo'lib, har safar ikki baravar ortadi; keyingi ayirma 64 bo'ladi. Demak 63 + 64 = 127. Xuddi shu natijani aₙ₊₁ = 2aₙ + 1 qoidasi ham beradi. 126 — faqat ikkilantirish, 95 — ayirmani 32 deb takrorlash xatosi. Javob: 127.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qonuniyat-keyingi-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#26f7f2ce"
+    },
+    {
+      "q": "2, 6, 12, 20, 30 sonlari ma'lum qonuniyat bo'yicha tuzilgan. Shu qonuniyatga ko'ra oltinchi had nechaga teng bo'ladi?",
+      "v": [
+        "36",
+        "40",
+        "42",
+        "56"
+      ],
+      "t": 2,
+      "izoh": "Ayirmalar 4, 6, 8, 10 bo'lib, har safar 2 taga ortadi, demak keyingi ayirma 12. Shunday qilib 30 + 12 = 42. Bu aₙ = n(n + 1) formulasiga ham mos: a₆ = 6·7 = 42. 40 — ayirmani 10 deb takrorlash, 56 — yettinchi had. Javob: 42.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qonuniyat-keyingi-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#934df61c"
+    },
+    {
+      "q": "1, 2, 4, 7, 11, 16 ketma-ketligining qonuniyatini aniqlang va yettinchi hadni ko'rsating.",
+      "v": [
+        "21",
+        "22",
+        "24",
+        "32"
+      ],
+      "t": 1,
+      "izoh": "Ayirmalar 1, 2, 3, 4, 5 tartibida ortib boradi, demak keyingi ayirma 6 bo'ladi: 16 + 6 = 22. 21 — oxirgi ayirmani 5 deb takrorlash, 32 — ketma-ketlikni geometrik deb o'ylash xatosi. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qonuniyat-keyingi-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#b4417f05"
+    },
+    {
+      "q": "Ozoda kitobni birinchi kuni 5 sahifa, ikkinchi kuni 8 sahifa, uchinchi kuni 12 sahifa, to'rtinchi kuni 17 sahifa o'qidi. Shu qonuniyat saqlansa, beshinchi kuni nechta sahifa o'qiydi?",
+      "v": [
+        "21 sahifa",
+        "22 sahifa",
+        "23 sahifa",
+        "24 sahifa"
+      ],
+      "t": 2,
+      "izoh": "Kunlik o'sish 3, 4, 5 sahifa bo'lgan, ya'ni har kuni bittaga ortmoqda. Beshinchi kunda o'sish 6 sahifa bo'ladi: 17 + 6 = 23. 22 — o'sishni 5 deb qoldirish, 21 — o'sishni 4 deb olish xatosi. Javob: 23 sahifa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qonuniyat-keyingi-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#702b591e"
+    },
+    {
+      "q": "5, 10, 30, 120 ketma-ketligida har bir had oldingisiga qaysi songa ko'paytirilganini aniqlab, beshinchi hadni toping.",
+      "v": [
+        "600",
+        "360",
+        "480",
+        "720"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytuvchilar ketma-ket 2, 3, 4 bo'lgan, demak keyingi ko'paytuvchi 5 bo'ladi: 120·5 = 600. 480 — ko'paytuvchini 4 deb takrorlash, 720 — uni 6 deb olish, 360 — 3 ga ko'paytirish xatosi. Javob: 600.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qonuniyat-keyingi-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#3f09e5ef"
+    },
+    {
+      "q": "2, 5, 11, ?, 47, 95 ketma-ketligida savol belgisi o'rnida qanday son turishi kerak?",
+      "v": [
+        "22",
+        "23",
+        "24",
+        "29"
+      ],
+      "t": 1,
+      "izoh": "Har bir had oldingisining ikki baravaridan bitta ortiq: 2·2 + 1 = 5 va 2·5 + 1 = 11. Demak 2·11 + 1 = 23, tekshiramiz: 2·23 + 1 = 47. 22 — faqat ikkilantirish, 29 — qo'shni hadlarning o'rta arifmetigini olish xatosi. Javob: 23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qonuniyat-tushib-qolgan-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#70307299"
+    },
+    {
+      "q": "4, 9, 16, ?, 36, 49 ketma-ketligidagi tushib qolgan hadni qonuniyat asosida aniqlang.",
+      "v": [
+        "20",
+        "24",
+        "26",
+        "25"
+      ],
+      "t": 3,
+      "izoh": "Bu sonlar 2, 3, 4, 5, 6, 7 sonlarining kvadratlari, demak bo'sh o'rinda 5² = 25 turadi. 26 — qo'shni hadlarning o'rtachasini olish, 24 — ayirmani 8 deb olish xatosi. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qonuniyat-tushib-qolgan-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#0113290d"
+    },
+    {
+      "q": "Bir do'konda mevaning bir kilogramm narxi ketma-ket oylarda 12, 15, ?, 24, 30 ming so'm bo'ldi. Har oydagi o'sish oldingi o'sishdan 1 ming so'mga ko'p. Tushib qolgan narxni toping.",
+      "v": [
+        "18 ming so'm",
+        "19 ming so'm",
+        "20 ming so'm",
+        "21 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Birinchi o'sish 3 ming so'm bo'lgan, keyingisi 4 ming so'm bo'lishi kerak: 15 + 4 = 19. Tekshiramiz: 19 + 5 = 24 va 24 + 6 = 30, qonuniyat to'liq mos keladi. 18 — o'sishni 3 deb takrorlash xatosi. Javob: 19 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qonuniyat-tushib-qolgan-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#a51e0af3"
+    },
+    {
+      "q": "1, 3, 6, 10, ?, 21, 28 uchburchakli sonlar ketma-ketligida tushib qolgan hadni aniqlang.",
+      "v": [
+        "14",
+        "16",
+        "15",
+        "20"
+      ],
+      "t": 2,
+      "izoh": "Ayirmalar 2, 3, 4 tartibida ortib boradi, demak keyingi ayirma 5 bo'ladi: 10 + 5 = 15. Tekshiramiz: 15 + 6 = 21 va 21 + 7 = 28. 14 — ayirmani 4 deb takrorlash, 20 — hadni ikkilantirish xatosi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qonuniyat-tushib-qolgan-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#aad624bf"
+    },
+    {
+      "q": "3, 8, 15, 24, 35 ketma-ketligining umumiy had formulasini aniqlab, sakkizinchi hadni hisoblang.",
+      "v": [
+        "80",
+        "48",
+        "63",
+        "99"
+      ],
+      "t": 0,
+      "izoh": "Ayirmalar 5, 7, 9, 11 — ketma-ket toq sonlar, shuning uchun aₙ = n² + 2n = n(n + 2). Sakkizinchi had a₈ = 8·10 = 80. 63 — yettinchi had, 99 — to'qqizinchi had, 48 — oltinchi had. Javob: 80.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qonuniyat-ayirma-orqali",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#c2b563bf"
+    },
+    {
+      "q": "Sardor haftalik mashq vaqtini oshirib bormoqda: 20, 26, 33, 41 daqiqa. Har haftadagi o'sish oldingisidan bir daqiqaga ko'p. Oltinchi haftada u necha daqiqa mashq qiladi?",
+      "v": [
+        "50 daqiqa",
+        "59 daqiqa",
+        "71 daqiqa",
+        "60 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "O'sishlar 6, 7, 8 daqiqa bo'lgan; beshinchi haftada o'sish 9, oltinchi haftada 10 daqiqa bo'ladi. Demak 41 + 9 = 50 va 50 + 10 = 60 daqiqa. 50 — beshinchi haftada to'xtash, 59 — o'sishni 9 deb takrorlash xatosi. Javob: 60 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qonuniyat-ayirma-orqali",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#7157f6aa"
+    },
+    {
+      "q": "Ketma-ketlikning birinchi hadi 5 ga teng, qo'shni hadlar ayirmalari esa 2, 4, 6, 8 tartibida ortib boradi. Oltinchi hadni toping.",
+      "v": [
+        "25",
+        "30",
+        "35",
+        "47"
+      ],
+      "t": 2,
+      "izoh": "Oltinchi hadga yetish uchun beshta ayirma qo'shiladi: 2 + 4 + 6 + 8 + 10 = 30. Demak a₆ = 5 + 30 = 35. 25 — to'rtta ayirma qo'shish, ya'ni bir qadam kam bajarish; 47 — yettinchi had. Javob: 35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qonuniyat-ayirma-orqali",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#59568d81"
+    },
+    {
+      "q": "Ketma-ketlikda qo'shni hadlarning ayirmasi doimo 7 ga teng va to'rtinchi had 19 ni tashkil qiladi. O'ninchi hadni hisoblang.",
+      "v": [
+        "54",
+        "61",
+        "68",
+        "70"
+      ],
+      "t": 1,
+      "izoh": "To'rtinchi haddan o'ninchisiga o'tish uchun 10 − 4 = 6 marta 7 qo'shiladi. Demak a₁₀ = 19 + 6·7 = 19 + 42 = 61. 68 — yetti marta qo'shish, 54 — besh marta qo'shish xatosi. Javob: 61.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qonuniyat-ayirma-orqali",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#97a385a7"
+    },
+    {
+      "q": "a₁ = 2 va aₙ₊₁ = 3aₙ − 1 rekurrent shart bilan berilgan ketma-ketlikning to'rtinchi hadini toping.",
+      "v": [
+        "14",
+        "42",
+        "122",
+        "41"
+      ],
+      "t": 3,
+      "izoh": "Hadlarni ketma-ket hisoblaymiz: a₂ = 3·2 − 1 = 5, a₃ = 3·5 − 1 = 14, a₄ = 3·14 − 1 = 41. 14 — uchinchi hadda to'xtab qolish, 122 — bitta ortiqcha qadam bajarish, 42 — oxirgi qadamda birni ayirishni unutish xatosi. Javob: 41.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "rekurrent-bir-hadli",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#326d0c30"
+    },
+    {
+      "q": "a₁ = 64 va aₙ₊₁ = aₙ/2 + 4 shart bilan berilgan ketma-ketlikda to'rtinchi had nechaga teng bo'ladi?",
+      "v": [
+        "15",
+        "11",
+        "13",
+        "22"
+      ],
+      "t": 0,
+      "izoh": "a₂ = 64 : 2 + 4 = 36, a₃ = 36 : 2 + 4 = 22, a₄ = 22 : 2 + 4 = 15. 22 — uchinchi hadda to'xtash, 11 — oxirgi qadamda 4 ni qo'shishni unutish, 13 — avval 4 qo'shib keyin bo'lish xatosi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rekurrent-bir-hadli",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#65c32608"
+    },
+    {
+      "q": "Zilola birinchi oyda 300 000 so'm jamg'ardi. Har keyingi oyda u oldingi oydagidan ikki baravar ko'p va yana 50 000 so'm ortiq jamg'aradi. Uchinchi oyda qancha jamg'aradi?",
+      "v": [
+        "650 000 so'm",
+        "1 300 000 so'm",
+        "1 350 000 so'm",
+        "2 750 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi oy: 2·300 000 + 50 000 = 650 000 so'm. Uchinchi oy: 2·650 000 + 50 000 = 1 350 000 so'm. 650 000 — ikkinchi oyda to'xtash, 1 300 000 — oxirgi qadamda 50 000 ni qo'shmaslik, 2 750 000 — to'rtinchi oyning summasi. Javob: 1 350 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rekurrent-bir-hadli",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#4348c027"
+    },
+    {
+      "q": "a₁ = 1 va aₙ₊₁ = aₙ + 2n rekurrent formula bilan berilgan ketma-ketlikning beshinchi hadi nechaga teng?",
+      "v": [
+        "13",
+        "21",
+        "29",
+        "31"
+      ],
+      "t": 1,
+      "izoh": "a₂ = 1 + 2·1 = 3, a₃ = 3 + 2·2 = 7, a₄ = 7 + 2·3 = 13, a₅ = 13 + 2·4 = 21. 13 — to'rtinchi hadda to'xtash, 29 — n ni yangi hadning raqami deb olish, 31 — oltinchi had. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rekurrent-bir-hadli",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#0c64f931"
+    },
+    {
+      "q": "a₁ = 3 va aₙ₊₁ = aₙ² − 2aₙ shart bilan berilgan ketma-ketlikning uchinchi hadi qanday qiymatga ega?",
+      "v": [
+        "0",
+        "3",
+        "9",
+        "63"
+      ],
+      "t": 1,
+      "izoh": "a₂ = 3² − 2·3 = 9 − 6 = 3, ya'ni had o'zgarmadi. Shuning uchun a₃ = 3² − 2·3 = 3 va butun ketma-ketlik doimiy bo'lib qoladi. 9 — ikkinchi qo'shiluvchini tashlab ketish, 63 — a₂ ni 9 deb olib davom ettirish xatosi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "rekurrent-bir-hadli",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#a3864116"
+    },
+    {
+      "q": "a₁ = 2, a₂ = 5 va aₙ₊₂ = aₙ₊₁ + aₙ shart bilan berilgan ketma-ketlikning oltinchi hadini toping.",
+      "v": [
+        "19",
+        "24",
+        "50",
+        "31"
+      ],
+      "t": 3,
+      "izoh": "Hadlarni ketma-ket yozamiz: a₃ = 5 + 2 = 7, a₄ = 7 + 5 = 12, a₅ = 12 + 7 = 19, a₆ = 19 + 12 = 31. 19 — beshinchi hadda to'xtash, 50 — yettinchi had, 24 — oxirgi hadni ikkilantirish xatosi. Javob: 31.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "rekurrent-ikki-hadli",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#1b398237"
+    },
+    {
+      "q": "Bir fermada quyonlar soni har oy oldingi ikki oydagi sonlar yig'indisiga teng bo'lib bormoqda. Yanvarda 3 ta, fevralda 4 ta quyon bo'lgan bo'lsa, iyunda nechta bo'ladi?",
+      "v": [
+        "18 ta",
+        "22 ta",
+        "29 ta",
+        "47 ta"
+      ],
+      "t": 2,
+      "izoh": "Mart: 3 + 4 = 7 ta. Aprel: 4 + 7 = 11 ta. May: 7 + 11 = 18 ta. Iyun: 11 + 18 = 29 ta. 18 — may oyida to'xtash, 47 — iyul oyining soni, 22 — oxirgi sonni ikkilantirish xatosi. Javob: 29 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rekurrent-ikki-hadli",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#394b6d54"
+    },
+    {
+      "q": "a₁ = 1, a₂ = 4 va aₙ₊₂ = 2aₙ₊₁ − aₙ bo'lsa, shu ketma-ketlikning yettinchi hadi nechaga teng?",
+      "v": [
+        "19",
+        "13",
+        "16",
+        "22"
+      ],
+      "t": 0,
+      "izoh": "Formula bo'yicha a₃ = 8 − 1 = 7, a₄ = 14 − 4 = 10, a₅ = 20 − 7 = 13, a₆ = 26 − 10 = 16, a₇ = 32 − 13 = 19. Ko'rinib turibdiki ayirma doimo 3 ga teng. 16 — oltinchi hadda to'xtash, 22 — sakkizinchi had. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "rekurrent-ikki-hadli",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#f3d99b91"
+    },
+    {
+      "q": "a₁ = 5, a₂ = 2 va har bir keyingi had oldingi ikki hadning ko'paytmasiga teng bo'lsa, beshinchi hadni toping.",
+      "v": [
+        "40",
+        "100",
+        "400",
+        "200"
+      ],
+      "t": 3,
+      "izoh": "a₃ = 5·2 = 10, a₄ = 2·10 = 20, a₅ = 10·20 = 200. 40 — a₄ ni a₂ ga ko'paytirish, 400 — a₄ ni kvadratga ko'tarish, 100 — a₃ ni kvadratga ko'tarish xatosi. Javob: 200.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rekurrent-ikki-hadli",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#dfae8c94"
+    },
+    {
+      "q": "4, 11, 25, 53 ketma-ketligining har bir hadi oldingisidan qanday hosil bo'ladi? To'g'ri rekurrent formulani tanlang.",
+      "v": [
+        "aₙ₊₁ = 2aₙ + 3",
+        "aₙ₊₁ = 3aₙ − 1",
+        "aₙ₊₁ = aₙ + 7",
+        "aₙ₊₁ = 2aₙ + 4"
+      ],
+      "t": 0,
+      "izoh": "Tekshiramiz: 2·4 + 3 = 11, 2·11 + 3 = 25, 2·25 + 3 = 53 — uchala qadam ham mos keladi. 3aₙ − 1 birinchi qadamda to'g'ri chiqadi, ammo 3·11 − 1 = 32 bo'lib, ikkinchi qadamda buziladi. Javob: aₙ₊₁ = 2aₙ + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rekurrent-formulani-tanlash",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#38b01f8a"
+    },
+    {
+      "q": "2, 6, 14, 30, 62 ketma-ketligini qaysi rekurrent munosabat to'liq ifodalaydi?",
+      "v": [
+        "aₙ₊₁ = 3aₙ",
+        "aₙ₊₁ = 2aₙ + 2",
+        "aₙ₊₁ = aₙ + 4n",
+        "aₙ₊₁ = 2aₙ + n"
+      ],
+      "t": 1,
+      "izoh": "2·2 + 2 = 6, 2·6 + 2 = 14, 2·14 + 2 = 30, 2·30 + 2 = 62 — hamma qadam mos. aₙ₊₁ = aₙ + 4n dastlabki ikki qadamda to'g'ri, lekin uchinchisida 30 o'rniga 26 berib xato bo'ladi. 3aₙ esa ikkinchi qadamda 14 emas, 18 chiqaradi. Javob: aₙ₊₁ = 2aₙ + 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rekurrent-formulani-tanlash",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#70116c8c"
+    },
+    {
+      "q": "Ilhomning idishida dastlab 80 litr suv bor. Har kuni idishdagi suvning yarmi ishlatiladi va ustiga 10 litr yangi suv quyiladi. Bu jarayonni qaysi formula ifodalaydi?",
+      "v": [
+        "aₙ₊₁ = (aₙ + 10)/2",
+        "aₙ₊₁ = aₙ/2 − 10",
+        "aₙ₊₁ = aₙ/2 + 10",
+        "aₙ₊₁ = 2aₙ + 10"
+      ],
+      "t": 2,
+      "izoh": "Avval idishda aₙ/2 litr suv qoladi, keyin ustiga 10 litr qo'shiladi, ya'ni aₙ₊₁ = aₙ/2 + 10. Birinchi variantda amallar tartibi teskari olingan, ikkinchisida suv qo'shish o'rniga ayirilgan. Javob: aₙ₊₁ = aₙ/2 + 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rekurrent-formulani-tanlash",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#ea316246"
+    },
+    {
+      "q": "1, 2, 6, 24, 120 ketma-ketligida har bir keyingi had qanday hosil qilingan? Mos rekurrent formulani ko'rsating.",
+      "v": [
+        "aₙ₊₁ = n·aₙ",
+        "aₙ₊₁ = 2n·aₙ",
+        "aₙ₊₁ = aₙ + n²",
+        "aₙ₊₁ = (n + 1)·aₙ"
+      ],
+      "t": 3,
+      "izoh": "n = 1 da 2·1 = 2, n = 2 da 3·2 = 6, n = 3 da 4·6 = 24, n = 4 da 5·24 = 120. Demak ko'paytuvchi har safar n + 1 ga teng. n·aₙ formulasi birinchi qadamdayoq 1 berib xato qiladi. Javob: aₙ₊₁ = (n + 1)·aₙ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "rekurrent-formulani-tanlash",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#ca421e3a"
+    },
+    {
+      "q": "aₙ = 3n + 5 formula bilan berilgan ketma-ketlikda 68 soni uchraydimi? Uchrasa, uning tartib raqamini ko'rsating.",
+      "v": [
+        "Ha, 21-had",
+        "Ha, 22-had",
+        "Ha, 23-had",
+        "Yo'q, bunday had mavjud emas"
+      ],
+      "t": 0,
+      "izoh": "3n + 5 = 68 tenglamani yechamiz: 3n = 63, demak n = 21. Tartib raqami butun va musbat chiqdi, shuning uchun 68 — ketma-ketlikning 21-hadi. 22-had esa 71 ga teng. Javob: Ha, 21-had.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-ketma-ketlik-hadimi",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#5fd841af"
+    },
+    {
+      "q": "aₙ = n² + 2n formula bilan berilgan ketma-ketlik hadlari orasida 100 soni bormi? Javobingizni asoslang.",
+      "v": [
+        "Ha, 9-had",
+        "Yo'q, chunki n butun son chiqmaydi",
+        "Ha, 10-had",
+        "Ha, 12-had"
+      ],
+      "t": 1,
+      "izoh": "n² + 2n = 100, ya'ni n² + 2n − 100 = 0 tenglamani yechamiz: n = −1 + √101 ≈ 9,05 chiqadi va bu butun son emas. Haqiqatan a₉ = 99, a₁₀ = 120, demak 100 ular orasida yo'q. Javob: Yo'q, chunki n butun son chiqmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "son-ketma-ketlik-hadimi",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#ee5d7735"
+    },
+    {
+      "q": "Xorazmdagi bir zavod birinchi kuni 120 dona mahsulot ishlab chiqardi va har kuni ishlab chiqarish 45 donaga ortmoqda. Qaysidir kuni ishlab chiqarish aynan 750 donaga tengmi?",
+      "v": [
+        "Ha, 14-kuni",
+        "Ha, 16-kuni",
+        "Ha, 15-kuni",
+        "Yo'q, bunday kun bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "120 + 45(n − 1) = 750 tenglamani yechamiz: 45(n − 1) = 630, demak n − 1 = 14 va n = 15. 14-kuni ishlab chiqarish 705 dona, 16-kuni esa 795 dona bo'ladi. Javob: Ha, 15-kuni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-ketma-ketlik-hadimi",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#9b9ac5b5"
+    },
+    {
+      "q": "aₙ = 2ⁿ + 3 ketma-ketligida 131 soni had bo'la oladimi? Bo'lsa, uning tartib raqamini toping.",
+      "v": [
+        "Ha, 6-had",
+        "Ha, 8-had",
+        "Yo'q, 131 bu ketma-ketlikning hadi emas",
+        "Ha, 7-had"
+      ],
+      "t": 3,
+      "izoh": "2ⁿ + 3 = 131 tenglamadan 2ⁿ = 128 kelib chiqadi. 128 = 2⁷ bo'lgani uchun n = 7. Tekshiramiz: 2⁷ + 3 = 128 + 3 = 131. 6-had 67 ga, 8-had 259 ga teng. Javob: Ha, 7-had.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-ketma-ketlik-hadimi",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#74cbfab6"
+    },
+    {
+      "q": "aₙ = n(n + 3)/2 ketma-ketlik hadlari orasida 27 soni bormi? Bo'lsa, u nechanchi o'rinda turadi?",
+      "v": [
+        "Ha, 5-had",
+        "Ha, 6-had",
+        "Ha, 7-had",
+        "Yo'q, 27 had bo'la olmaydi"
+      ],
+      "t": 1,
+      "izoh": "n(n + 3)/2 = 27 tenglamadan n² + 3n − 54 = 0 hosil bo'ladi, uning musbat ildizi n = 6, chunki 36 + 18 = 54. Tekshiramiz: 6·9 : 2 = 27. 5-had 20 ga, 7-had 35 ga teng. Javob: Ha, 6-had.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "son-ketma-ketlik-hadimi",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#b6b7d66d"
+    },
+    {
+      "q": "aₙ = 7n − 12 formula bilan berilgan ketma-ketlikning nechanchi hadi 128 ga teng bo'ladi?",
+      "v": [
+        "20",
+        "16",
+        "19",
+        "21"
+      ],
+      "t": 0,
+      "izoh": "7n − 12 = 128 tenglamani yechamiz: 7n = 140, demak n = 20. 19-had 121 ga, 21-had 135 ga teng. 16 esa 128 ni 8 ga bo'lish natijasi bo'lib, formulaga aloqasi yo'q. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "had-nomerini-topish",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#bae1ba72"
+    },
+    {
+      "q": "Samarqanddagi mehmonxonada birinchi kuni 32 nafar mehmon qabul qilindi va har keyingi kuni mehmonlar soni 9 nafarga ortmoqda. Nechanchi kuni mehmonlar soni 149 nafar bo'ladi?",
+      "v": [
+        "13-kuni",
+        "14-kuni",
+        "16-kuni",
+        "17-kuni"
+      ],
+      "t": 1,
+      "izoh": "32 + 9(n − 1) = 149 tenglamadan 9(n − 1) = 117 va n − 1 = 13 kelib chiqadi, demak n = 14. 13-kuni mehmonlar soni 140 nafar bo'ladi. 16-kuni mehmonlar soni 167 nafar, 17-kuni esa 176 nafar bo'ladi. Javob: 14-kuni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "had-nomerini-topish",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#c8e17fdc"
+    },
+    {
+      "q": "aₙ = n² − 3n formula bilan berilgan ketma-ketlikning qaysi hadi 88 ga teng bo'ladi?",
+      "v": [
+        "8",
+        "10",
+        "11",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "n² − 3n = 88, ya'ni n² − 3n − 88 = 0 tenglamani yechamiz. Ildizlari n = 11 va n = −8; tartib raqami musbat bo'lgani uchun n = 11. Tekshiramiz: 121 − 33 = 88. 10-had 70 ga, 12-had 108 ga teng. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "had-nomerini-topish",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#437a3131"
+    },
+    {
+      "q": "aₙ = 5·2ⁿ formula bilan berilgan ketma-ketlikning nechanchi hadi 320 ga teng bo'ladi?",
+      "v": [
+        "5",
+        "6",
+        "7",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "5·2ⁿ = 320 tenglamadan 2ⁿ = 64 hosil bo'ladi. 64 = 2⁶ bo'lgani uchun n = 6. 5-had 160 ga, 7-had esa 640 ga teng. 64 — daraja qiymatini tartib raqami deb olish xatosi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "had-nomerini-topish",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#13f118d6"
+    },
+    {
+      "q": "5, 8, 11, 14, 17 ketma-ketligining umumiy had formulasini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "aₙ = 3n + 5",
+        "aₙ = 3n − 2",
+        "aₙ = 3n + 2",
+        "aₙ = 2n + 3"
+      ],
+      "t": 2,
+      "izoh": "Qo'shni hadlar ayirmasi 3 ga teng, demak formula 3n + c ko'rinishida bo'ladi. n = 1 da 3 + c = 5, ya'ni c = 2. Shunday qilib aₙ = 3n + 2 va tekshiruv: a₅ = 15 + 2 = 17. Javob: aₙ = 3n + 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hadlar-orqali-formula-tanlash",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#6f90ab22"
+    },
+    {
+      "q": "0, 3, 8, 15, 24 ketma-ketligining umumiy hadini ifodalovchi formulani tanlang.",
+      "v": [
+        "aₙ = n² − 1",
+        "aₙ = n² + 1",
+        "aₙ = (n − 1)²",
+        "aₙ = 2n − 2"
+      ],
+      "t": 0,
+      "izoh": "Har bir hadga 1 qo'shsak 1, 4, 9, 16, 25 hosil bo'ladi — bular n ning kvadratlari. Demak aₙ = n² − 1. (n − 1)² formulasi 0, 1, 4, 9 berib ikkinchi haddan boshlab mos kelmaydi. Javob: aₙ = n² − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadlar-orqali-formula-tanlash",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#401338a6"
+    },
+    {
+      "q": "1/2, 2/3, 3/4, 4/5 ketma-ketligining umumiy hadi qaysi formula bilan beriladi?",
+      "v": [
+        "aₙ = (n − 1)/n",
+        "aₙ = n/(n + 2)",
+        "aₙ = (n + 1)/n",
+        "aₙ = n/(n + 1)"
+      ],
+      "t": 3,
+      "izoh": "Har bir kasrda surat had tartib raqamiga teng, maxraj esa suratdan bitta katta. Demak aₙ = n/(n + 1) va n = 1 da 1/2 hosil bo'ladi. (n − 1)/n formulasi birinchi hadda 0 beradi, (n + 1)/n esa kasrni ag'darib yuboradi. Javob: aₙ = n/(n + 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hadlar-orqali-formula-tanlash",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#6b6857a4"
+    },
+    {
+      "q": "Bir taksi xizmatida birinchi kilometr uchun 6000 so'm, har keyingi kilometr uchun 2500 so'mdan olinadi. n kilometr yo'l uchun to'lov formulasi qanday bo'ladi?",
+      "v": [
+        "2500n so'm",
+        "3500 + 2500n so'm",
+        "6000 + 2500n so'm",
+        "6000n + 2500 so'm"
+      ],
+      "t": 1,
+      "izoh": "Birinchi kilometr 6000 so'm, qolgan n − 1 kilometr esa 2500(n − 1) so'm turadi. Yig'indi 6000 + 2500n − 2500 = 3500 + 2500n. Tekshiramiz: n = 1 da 6000 so'm chiqadi. 6000 + 2500n birinchi kilometrni ikki marta hisoblaydi. Javob: 3500 + 2500n so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hadlar-orqali-formula-tanlash",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#2ff1d3dc"
+    },
+    {
+      "q": "aₙ = (−1)ⁿ·(2n + 1) formula bilan berilgan ketma-ketlikning yettinchi hadini toping.",
+      "v": [
+        "−15",
+        "15",
+        "−14",
+        "17"
+      ],
+      "t": 0,
+      "izoh": "n = 7 toq son bo'lgani uchun (−1)⁷ = −1 bo'ladi. Qavs ichida 2·7 + 1 = 15. Demak a₇ = −15. 15 — ishorani hisobga olmaslik, −14 — qavsda birni qo'shishni unutish, 17 — sakkizinchi hadning qiymati. Javob: −15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishora-almashuvchi-ketma-ketlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#7e19aba3"
+    },
+    {
+      "q": "−3, 6, −12, 24 ketma-ketligidagi qonuniyatni aniqlab, uning oltinchi hadini yozing.",
+      "v": [
+        "−96",
+        "48",
+        "−48",
+        "96"
+      ],
+      "t": 3,
+      "izoh": "Har bir had oldingisining −2 ga ko'paytmasiga teng: 6 = −3·(−2), −12 = 6·(−2). Beshinchi had 24·(−2) = −48, oltinchisi esa −48·(−2) = 96. −48 — beshinchi hadda to'xtash, −96 — ishorani noto'g'ri belgilash xatosi. Javob: 96.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishora-almashuvchi-ketma-ketlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#68d743c6"
+    },
+    {
+      "q": "aₙ = (−1)ⁿ·n² ketma-ketligining to'rtinchi va beshinchi hadlari yig'indisini hisoblang.",
+      "v": [
+        "9",
+        "41",
+        "−9",
+        "−41"
+      ],
+      "t": 2,
+      "izoh": "n = 4 juft bo'lgani uchun a₄ = 16, n = 5 toq bo'lgani uchun a₅ = −25. Yig'indi 16 + (−25) = −9. 41 — ishoralarni e'tiborsiz qoldirib qo'shish, 9 — ayirishni teskari bajarish xatosi. Javob: −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishora-almashuvchi-ketma-ketlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#8047e4f3"
+    },
+    {
+      "q": "Bir korxonaning n-oydagi foydasi million so'mda aₙ = 120 + (−1)ⁿ·5n formula bilan hisoblanadi. Oltinchi oyda foyda qancha bo'ladi?",
+      "v": [
+        "90 mln so'm",
+        "95 mln so'm",
+        "145 mln so'm",
+        "150 mln so'm"
+      ],
+      "t": 3,
+      "izoh": "n = 6 juft son, shuning uchun (−1)⁶ = 1 va qo'shiluvchi 5·6 = 30 bo'ladi. Demak a₆ = 120 + 30 = 150. 90 — ishorani manfiy deb olish, 95 — beshinchi oyning foydasi, 145 — n ni 5 deb olib qo'shish xatosi. Javob: 150 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishora-almashuvchi-ketma-ketlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#631f7d07"
+    },
+    {
+      "q": "aₙ = (n + 2)/(n + 1) ketma-ketlik o'suvchimi yoki kamayuvchimi? To'g'ri javobni tanlang.",
+      "v": [
+        "O'suvchi",
+        "Kamayuvchi",
+        "Doimiy",
+        "Monoton emas"
+      ],
+      "t": 1,
+      "izoh": "Kasrni ajratamiz: (n + 2)/(n + 1) = 1 + 1/(n + 1). n ortgan sari 1/(n + 1) kamayadi, demak butun ifoda ham kamayadi. Masalan a₁ = 3/2, a₂ = 4/3, a₃ = 5/4. Javob: Kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlik-va-chegaralanganlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#b6bb5d9b"
+    },
+    {
+      "q": "aₙ = 3n/(n + 4) ketma-ketligining o'sishi va chegaralanganligi haqidagi qaysi fikr to'g'ri?",
+      "v": [
+        "Kamayuvchi va quyidan 0 bilan chegaralangan",
+        "O'suvchi, lekin chegaralanmagan",
+        "O'suvchi va yuqoridan 3 bilan chegaralangan",
+        "Monoton emas, ammo chegaralangan"
+      ],
+      "t": 2,
+      "izoh": "Ifodani 3 − 12/(n + 4) ko'rinishida yozamiz. n ortganda 12/(n + 4) kamayadi, demak had ortadi. Ayni paytda 12/(n + 4) doimo musbat, shuning uchun had hech qachon 3 ga yetmaydi. Javob: O'suvchi va yuqoridan 3 bilan chegaralangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monotonlik-va-chegaralanganlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#10f43ff2"
+    },
+    {
+      "q": "Bemorning qonidagi dori miqdori har soatda aₙ = 200/(n + 1) mg formula bilan o'zgaradi. Bu ketma-ketlik haqida qaysi xulosa to'g'ri?",
+      "v": [
+        "Har soatda kamayadi va nolga yaqinlashadi",
+        "Har soatda bir xil miqdorda kamayadi",
+        "Avval ortib, keyin kamayadi",
+        "Miqdor 200 mg atrofida o'zgarmay qoladi"
+      ],
+      "t": 0,
+      "izoh": "n ortgan sari maxraj kattalashadi, shuning uchun kasr kamayadi: a₁ = 100, a₃ = 50, a₉ = 20 mg. Kamayish miqdori bir xil emas, ammo hadlar cheksiz nolga yaqinlashadi. Javob: Har soatda kamayadi va nolga yaqinlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlik-va-chegaralanganlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#3bc2b04a"
+    },
+    {
+      "q": "aₙ = (2n − 7)/n ketma-ketlik qanday o'zgaradi va uning hadlari qaysi songa yaqinlashadi?",
+      "v": [
+        "Kamayadi va 2 ga yaqinlashadi",
+        "O'sadi va 7 ga yaqinlashadi",
+        "O'sadi va 2 ga yaqinlashadi",
+        "Kamayadi va 0 ga yaqinlashadi"
+      ],
+      "t": 2,
+      "izoh": "Kasrni bo'lib yozamiz: (2n − 7)/n = 2 − 7/n. n ortganda 7/n kamayadi, demak had ortib boradi va 2 dan kichik qolgan holda unga yaqinlashadi. Tekshiruv: a₁ = −5, a₇ = 1. Javob: O'sadi va 2 ga yaqinlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monotonlik-va-chegaralanganlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#a125aed2"
+    },
+    {
+      "q": "2, 5, 9, 2, 5, 9 tartibida takrorlanuvchi ketma-ketlikning yuzinchi hadi nechaga teng bo'ladi?",
+      "v": [
+        "2",
+        "5",
+        "9",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ketlik davri uchta haddan iborat. 100 ni 3 ga bo'lganda 100 = 3·33 + 1, ya'ni qoldiq 1 chiqadi. Demak yuzinchi had davrning birinchi hadiga teng. 16 — davr hadlarining yig'indisi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-ketma-ketlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#fc45f7f5"
+    },
+    {
+      "q": "3ⁿ sonining oxirgi raqamlaridan tuzilgan ketma-ketlikda ellikinchi had qaysi raqamga teng bo'ladi?",
+      "v": [
+        "1",
+        "3",
+        "7",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "3 ning darajalari oxirgi raqami 3, 9, 7, 1 tartibida takrorlanadi, davr uzunligi 4 ga teng. 50 = 4·12 + 2 bo'lgani uchun qoldiq 2, demak davrning ikkinchi raqami olinadi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davriy-ketma-ketlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#54a6a125"
+    },
+    {
+      "q": "Bir do'kon to'rt kunlik tsikl bilan ishlaydi: birinchi kuni 30, ikkinchi kuni 45, uchinchi kuni 20, to'rtinchi kuni 0 dona mahsulot sotiladi. 43-kuni nechta mahsulot sotiladi?",
+      "v": [
+        "0 dona",
+        "20 dona",
+        "30 dona",
+        "45 dona"
+      ],
+      "t": 1,
+      "izoh": "43 ni 4 ga bo'lamiz: 43 = 4·10 + 3, qoldiq 3 ga teng. Demak 43-kun tsiklning uchinchi kuniga to'g'ri keladi, o'sha kuni esa 20 dona sotiladi. 45 — ikkinchi kunning natijasi. Javob: 20 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-ketma-ketlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#a1635736"
+    },
+    {
+      "q": "a₁ = 4 va aₙ₊₁ = |aₙ − 5| shart bilan berilgan ketma-ketlikning yigirma beshinchi hadini toping.",
+      "v": [
+        "1",
+        "5",
+        "4",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "a₂ = |4 − 5| = 1, a₃ = |1 − 5| = 4, a₄ = 1 — ketma-ketlik 4 va 1 ni almashtirib takrorlaydi. Toq o'rinlarda 4, juft o'rinlarda 1 turadi, 25 esa toq son. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davriy-ketma-ketlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#ca219acc"
+    },
+    {
+      "q": "Ketma-ketlikning dastlabki n ta hadi yig'indisi Sₙ = n² + 3n formula bilan berilgan. Beshinchi hadni toping.",
+      "v": [
+        "12",
+        "13",
+        "28",
+        "40"
+      ],
+      "t": 0,
+      "izoh": "Beshinchi had a₅ = S₅ − S₄ ga teng. S₅ = 25 + 15 = 40, S₄ = 16 + 12 = 28. Demak a₅ = 40 − 28 = 12. 40 — yig'indini had deb olish, 13 — umumiy hadni 2n + 3 deb chalkashtirish xatosi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#2cad82e1"
+    },
+    {
+      "q": "Dastlabki n ta had yig'indisi Sₙ = 2n² − n bo'lsa, shu ketma-ketlikning yettinchi hadi nechaga teng?",
+      "v": [
+        "27",
+        "25",
+        "66",
+        "91"
+      ],
+      "t": 1,
+      "izoh": "a₇ = S₇ − S₆ formulasidan foydalanamiz. S₇ = 2·49 − 7 = 91, S₆ = 2·36 − 6 = 66. Demak a₇ = 91 − 66 = 25. Bu yerda umumiy had aₙ = 4n − 3 ko'rinishida. 91 — yig'indining o'zini javob deb olish, 27 — umumiy hadni 4n − 1 deb chalkashtirish xatosi. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#c72b517b"
+    },
+    {
+      "q": "Bir ustaxonada n kun ichida tayyorlangan buyumlarning umumiy soni Sₙ = n² + 6n formula bilan hisoblanadi. To'qqizinchi kuni nechta buyum tayyorlangan?",
+      "v": [
+        "23 dona",
+        "24 dona",
+        "112 dona",
+        "135 dona"
+      ],
+      "t": 0,
+      "izoh": "To'qqizinchi kunning mahsuloti a₉ = S₉ − S₈ ga teng. S₉ = 81 + 54 = 135, S₈ = 64 + 48 = 112. Demak a₉ = 135 − 112 = 23 dona. 135 — to'qqiz kunlik umumiy son, 112 — sakkiz kunlik umumiy son. Javob: 23 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#88012ba9"
+    },
+    {
+      "q": "Dastlabki n ta had yig'indisi Sₙ = 3ⁿ − 1 formula bilan berilgan bo'lsa, to'rtinchi hadni hisoblang.",
+      "v": [
+        "26",
+        "54",
+        "80",
+        "81"
+      ],
+      "t": 1,
+      "izoh": "a₄ = S₄ − S₃ bo'ladi. S₄ = 3⁴ − 1 = 80, S₃ = 3³ − 1 = 26. Demak a₄ = 80 − 26 = 54. 81 — birni ayirishni unutish, 80 — yig'indini had deb olish xatosi. Javob: 54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#d1e6218f"
+    },
+    {
+      "q": "aₙ = 4n + 1 va bₘ = 6m + 3 ketma-ketliklarning ikkalasida ham uchraydigan eng kichik son qaysi?",
+      "v": [
+        "9",
+        "15",
+        "21",
+        "33"
+      ],
+      "t": 0,
+      "izoh": "4n + 1 hadlari 5, 9, 13, 17, 21, 25; 6m + 3 hadlari esa 9, 15, 21, 27. Ikkala ro'yxatda birinchi bo'lib 9 uchraydi (n = 2 va m = 1). 21 ham umumiy son, ammo u eng kichigi emas. 15 faqat ikkinchi ketma-ketlikda bor. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-ketma-ketlik-kesishuvi",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#77db1058"
+    },
+    {
+      "q": "3, 7, 11, 15 va 4, 9, 14, 19 ketma-ketliklarining ikkalasida ham uchraydigan, 50 dan kichik eng katta sonni toping.",
+      "v": [
+        "19",
+        "29",
+        "39",
+        "49"
+      ],
+      "t": 2,
+      "izoh": "Birinchi ketma-ketlik 4n − 1, ikkinchisi 5m − 1 ko'rinishida. Umumiy sonlar 20 ga bo'lganda 19 qoldiq beradi: 19, 39, 59. 50 dan kichiklari orasida eng kattasi 39. 49 faqat ikkinchi ketma-ketlikka tegishli. Javob: 39.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-ketma-ketlik-kesishuvi",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#356ca8d3"
+    },
+    {
+      "q": "Bekatdan birinchi avtobus har 12 daqiqada, ikkinchisi har 18 daqiqada yo'lga chiqadi va ular ertalab birga jo'nadi. Ular yana qancha vaqtdan keyin birga jo'naydi?",
+      "v": [
+        "6 daqiqadan keyin",
+        "30 daqiqadan keyin",
+        "36 daqiqadan keyin",
+        "216 daqiqadan keyin"
+      ],
+      "t": 2,
+      "izoh": "Birinchi avtobusning jo'nash vaqtlari 12, 24, 36, 48 daqiqa, ikkinchisiniki 18, 36, 54 daqiqa. Birinchi umumiy qiymat 36 daqiqa, ya'ni 12 va 18 ning eng kichik umumiy karralisi. 216 — ikki sonning ko'paytmasi, 6 — ularning eng katta umumiy bo'luvchisi. Javob: 36 daqiqadan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ketma-ketlik-kesishuvi",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#133841b2"
+    },
+    {
+      "q": "aₙ = 3n + 2 va bₙ = 5n − 3 ketma-ketliklarining har ikkalasida uchraydigan, 100 dan kichik eng katta son qaysi?",
+      "v": [
+        "77",
+        "87",
+        "97",
+        "92"
+      ],
+      "t": 3,
+      "izoh": "Birinchi ketma-ketlik hadlari 3 ga bo'lganda 2 qoldiq beradi, ikkinchisiniki 5 ga bo'lganda 2 qoldiq beradi. Demak umumiy sonlar 15 ga bo'lganda 2 qoldiq qoldiradi: 17, 32, 47, 62, 77, 92. 100 dan kichiklari orasida eng kattasi 92 (n = 30 va n = 19). Javob: 92.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-ketma-ketlik-kesishuvi",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#c7e20abe"
+    },
+    {
+      "q": "aₙ = n² − 12n + 40 ketma-ketlikning eng kichik hadi nechanchi o'rinda turadi va nechaga teng?",
+      "v": [
+        "5-had, 5 ga teng",
+        "6-had, 4 ga teng",
+        "6-had, 40 ga teng",
+        "12-had, 40 ga teng"
+      ],
+      "t": 1,
+      "izoh": "Ifodani to'la kvadratga keltiramiz: n² − 12n + 40 = (n − 6)² + 4. Kvadrat n = 6 da nolga aylanadi, demak eng kichik had a₆ = 4. Qo'shni hadlar a₅ = 5 va a₇ = 5 bo'lib, undan katta. Javob: 6-had, 4 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-eng-kichik-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#8bdab855"
+    },
+    {
+      "q": "aₙ = 20n − n² formula bilan berilgan ketma-ketlikning eng katta hadi nechaga teng bo'ladi?",
+      "v": [
+        "19",
+        "96",
+        "99",
+        "100"
+      ],
+      "t": 3,
+      "izoh": "Ifodani 100 − (n − 10)² ko'rinishida yozamiz. Kvadrat n = 10 da nolga teng bo'ladi, shuning uchun eng katta had a₁₀ = 100. 99 — cho'qqi yonidagi a₉ va a₁₁ hadlari, 96 — a₈ va a₁₂ hadlari, 19 — birinchi hadning qiymati. Javob: 100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-eng-kichik-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#f01f0875"
+    },
+    {
+      "q": "Bir firmaning n-oydagi foydasi million so'mda aₙ = 48n − 3n² formula bilan hisoblanadi. Eng katta foyda nechanchi oyda olinadi?",
+      "v": [
+        "6-oyda",
+        "8-oyda",
+        "16-oyda",
+        "24-oyda"
+      ],
+      "t": 1,
+      "izoh": "Foydani 3n(16 − n) ko'rinishida yozamiz; u n = 0 va n = 16 da nolga aylanadi. Parabola cho'qqisi shu ikki nuqta o'rtasida, ya'ni n = 8 da bo'ladi. Tekshiramiz: a₈ = 384 − 192 = 192, a₇ = 336 − 147 = 189. 16 — foyda nolga tushadigan oy. Javob: 8-oyda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-eng-kichik-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#15c2fda4"
+    },
+    {
+      "q": "aₙ = n + 36/n formula bilan berilgan ketma-ketlikning eng kichik hadi qaysi songa teng?",
+      "v": [
+        "6",
+        "13",
+        "12",
+        "36"
+      ],
+      "t": 2,
+      "izoh": "Hadlarni hisoblaymiz: a₄ = 4 + 9 = 13, a₅ = 5 + 7,2 = 12,2, a₆ = 6 + 6 = 12, a₇ = 7 + 36/7 ≈ 12,14. Eng kichik qiymat n = 6 da, ya'ni 12. 13 — to'rtinchi hadning qiymati, 6 esa faqat birinchi qo'shiluvchi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-eng-kichik-had",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#75891800"
+    },
+    {
+      "q": "Kitob do'konida daftar narxi har oy 1200 so'mga oshib bormoqda. Yanvarda narx 8500 so'm bo'lgan bo'lsa, iyunda qancha bo'ladi?",
+      "v": [
+        "13 300 so'm",
+        "14 500 so'm",
+        "15 700 so'm",
+        "20 500 so'm"
+      ],
+      "t": 1,
+      "izoh": "Yanvardan iyungacha 5 ta oy o'tadi, demak narx 5 marta oshadi: 5·1200 = 6000 so'm. Shunday qilib a₆ = 8500 + 6000 = 14 500 so'm. 15 700 — olti marta qo'shish, 13 300 — to'rt marta qo'shish xatosi. Javob: 14 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-narx-ketma-ketlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#9d1d7503"
+    },
+    {
+      "q": "Dilnoza telefon uchun birinchi oyda 900 000 so'm to'ladi va har keyingi oyda oldingi oydagidan 50 000 so'm kam to'laydi. To'rtinchi oyda qancha to'laydi?",
+      "v": [
+        "750 000 so'm",
+        "700 000 so'm",
+        "800 000 so'm",
+        "850 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Birinchi oydan to'rtinchi oyga o'tishda kamayish uch marta bo'ladi: 3·50 000 = 150 000 so'm. Demak a₄ = 900 000 − 150 000 = 750 000 so'm. 700 000 — to'rt marta ayirish, 800 000 — ikki marta ayirish xatosi. Javob: 750 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-narx-ketma-ketlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#80c22759"
+    },
+    {
+      "q": "Bir mahsulot narxi har hafta oldingi haftadagidan 10 foizga oshadi. Birinchi haftada narx 20 000 so'm bo'lsa, uchinchi hafta narxi qancha bo'ladi?",
+      "v": [
+        "22 000 so'm",
+        "24 000 so'm",
+        "24 200 so'm",
+        "26 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi hafta narxi 20 000 + 2000 = 22 000 so'm bo'ladi. Uchinchi hafta narxi esa 22 000 + 2200 = 24 200 so'm. 24 000 — foizni har safar dastlabki narxdan olish, 26 000 — bir yo'la 30 foiz qo'shish xatosi. Javob: 24 200 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-narx-ketma-ketlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#b342269a"
+    },
+    {
+      "q": "Bozorda bir kilogramm olma narxi ketma-ket kunlarda 9000, 9600, 10 200, 10 800 so'm bo'ldi. Shu qonuniyat saqlansa, sakkizinchi kuni narx qancha bo'ladi?",
+      "v": [
+        "11 400 so'm",
+        "12 600 so'm",
+        "13 800 so'm",
+        "13 200 so'm"
+      ],
+      "t": 3,
+      "izoh": "Kunlik o'sish 600 so'mni tashkil qiladi. Sakkizinchi kunga yetish uchun boshlang'ich narxga yetti marta qo'shamiz: 7·600 = 4200 so'm. Demak a₈ = 9000 + 4200 = 13 200 so'm. 13 800 — sakkiz marta qo'shish, 12 600 — yettinchi kunning narxi. Javob: 13 200 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-narx-ketma-ketlik",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#4109071c"
+    },
+    {
+      "q": "Bir brigada birinchi kuni 18 metr yo'l qurdi va har keyingi kuni oldingi kundagidan 4 metr ko'proq quradi. Yettinchi kuni necha metr yo'l quriladi?",
+      "v": [
+        "38 m",
+        "42 m",
+        "46 m",
+        "28 m"
+      ],
+      "t": 1,
+      "izoh": "Yettinchi kunga yetish uchun 6 marta 4 metr qo'shiladi: 6·4 = 24 metr. Demak a₇ = 18 + 24 = 42 metr. 46 — yetti marta qo'shish, 38 — besh marta qo'shish xatosi. Javob: 42 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ish-unumi",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#3c78abd5"
+    },
+    {
+      "q": "Bir tikuvchilik sexi har oy oldingi oydagidan 1,5 baravar ko'p ko'ylak tikadi. Birinchi oyda 200 ta tikkan bo'lsa, uchinchi oyda nechta tikadi?",
+      "v": [
+        "300 ta",
+        "600 ta",
+        "450 ta",
+        "675 ta"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi oyda 200·1,5 = 300 ta, uchinchi oyda 300·1,5 = 450 ta ko'ylak tikiladi. 300 — ikkinchi oyda to'xtash, 675 — to'rtinchi oyning natijasi, 600 — o'sishni har oy 200 taga qo'shish xatosi. Javob: 450 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ish-unumi",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#ab065f53"
+    },
+    {
+      "q": "Nodira birinchi soatda 24 ta, ikkinchi soatda 21 ta, uchinchi soatda 18 ta test yechdi. Shu qonuniyat bilan u nechanchi soatda 6 ta test yechadi?",
+      "v": [
+        "6-soatda",
+        "7-soatda",
+        "8-soatda",
+        "9-soatda"
+      ],
+      "t": 1,
+      "izoh": "Har soatda yechilgan testlar soni 3 taga kamayadi, ya'ni aₙ = 27 − 3n. 27 − 3n = 6 tenglamadan 3n = 21 va n = 7 chiqadi. Oltinchi soatda 9 ta, sakkizinchi soatda esa 3 ta test yechiladi. Javob: 7-soatda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ish-unumi",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#eeae6128"
+    },
+    {
+      "q": "Zavoddagi robot birinchi minutda 5 ta detal yasaydi va har keyingi minutda oldingisidan ikki baravar ko'p yasaydi. Oltinchi minutda nechta detal yasaydi?",
+      "v": [
+        "60 ta",
+        "80 ta",
+        "160 ta",
+        "320 ta"
+      ],
+      "t": 2,
+      "izoh": "Har minutda son ikki baravar ortadi: 5, 10, 20, 40, 80, 160. Oltinchi minutda 5·2⁵ = 5·32 = 160 ta detal yasaladi. 80 — beshinchi minutning natijasi, 320 — yettinchi minut, 60 — 5 ni 12 ga ko'paytirish xatosi. Javob: 160 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ish-unumi",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#b38e6561"
+    },
+    {
+      "q": "Alisher birinchi kuni 6 km yugurdi va har kuni yugurish masofasini 1,5 km ga oshirib bordi. Nechanchi kuni u 21 km yuguradi?",
+      "v": [
+        "10-kuni",
+        "11-kuni",
+        "12-kuni",
+        "14-kuni"
+      ],
+      "t": 1,
+      "izoh": "6 + 1,5(n − 1) = 21 tenglamani yechamiz: 1,5(n − 1) = 15, demak n − 1 = 10 va n = 11. 14 — 21 ni to'g'ridan-to'g'ri 1,5 ga bo'lish, 10 — birinchi kunni hisobga olmaslik xatosi. Javob: 11-kuni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-masofa-harakat",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#d6162a84"
+    },
+    {
+      "q": "Koptok birinchi sakrashda 240 sm balandlikka ko'tarildi, har keyingi sakrashda esa oldingi balandlikning 3/4 qismicha ko'tariladi. Uchinchi sakrash balandligi qancha?",
+      "v": [
+        "101,25 sm",
+        "120 sm",
+        "135 sm",
+        "180 sm"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi sakrash balandligi 240·3/4 = 180 sm, uchinchisi esa 180·3/4 = 135 sm. 180 — ikkinchi sakrashda to'xtash, 101,25 — to'rtinchi sakrash balandligi, 120 — balandlikni yarimlatish xatosi. Javob: 135 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-masofa-harakat",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#a97199b7"
+    },
+    {
+      "q": "Poyezd birinchi soatda 45 km yurdi va har keyingi soatda oldingi soatdagidan 8 km ko'p yurmoqda. Beshinchi soatda qancha masofa bosadi?",
+      "v": [
+        "69 km",
+        "73 km",
+        "85 km",
+        "77 km"
+      ],
+      "t": 3,
+      "izoh": "Beshinchi soatga yetish uchun 4 marta 8 km qo'shiladi: 4·8 = 32 km. Demak a₅ = 45 + 32 = 77 km. 85 — besh marta qo'shish, 69 — uch marta qo'shish, 73 — 28 km qo'shish xatosi. Javob: 77 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-masofa-harakat",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#a45abc0b"
+    },
+    {
+      "q": "Velosipedchi har kuni oldingi kundagidan 3 km kam yurmoqda va oltinchi kuni 14 km yurdi. Birinchi kuni u qancha masofa bosgan?",
+      "v": [
+        "26 km",
+        "29 km",
+        "32 km",
+        "44 km"
+      ],
+      "t": 1,
+      "izoh": "Birinchi kundan oltinchi kunga o'tishda kamayish besh marta bo'lgan: 5·3 = 15 km. Demak a₁ = 14 + 15 = 29 km. 32 — olti marta qo'shish, 26 — to'rt marta qo'shish, 44 — kamayishni 30 km deb olish xatosi. Javob: 29 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-masofa-harakat",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#975b5f43"
+    },
+    {
+      "q": "Bir qishloq aholisi har yili 120 kishiga ortib bormoqda. 2020-yilda aholi 3400 kishi bo'lgan bo'lsa, 2027-yilda nechta bo'ladi?",
+      "v": [
+        "4120 kishi",
+        "4200 kishi",
+        "4240 kishi",
+        "4360 kishi"
+      ],
+      "t": 2,
+      "izoh": "2020-yildan 2027-yilgacha 7 yil o'tadi, demak o'sish 7·120 = 840 kishini tashkil qiladi. Aholi 3400 + 840 = 4240 kishi bo'ladi. 4120 — olti yil deb hisoblash, 4360 — sakkiz yil deb hisoblash xatosi. Javob: 4240 kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-aholi-osish",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#c749cebe"
+    },
+    {
+      "q": "Bir sahifaning obunachilari soni har hafta ikki baravar ortmoqda. Birinchi haftada 150 nafar bo'lgan bo'lsa, beshinchi haftada nechta bo'ladi?",
+      "v": [
+        "1200 nafar",
+        "1500 nafar",
+        "4800 nafar",
+        "2400 nafar"
+      ],
+      "t": 3,
+      "izoh": "Har haftada son ikkiga ko'payadi: 150, 300, 600, 1200, 2400. Beshinchi haftada 150·2⁴ = 150·16 = 2400 nafar bo'ladi. 1200 — to'rtinchi haftaning soni, 4800 — oltinchi hafta, 1500 — 150 ni 10 ga ko'paytirish xatosi. Javob: 2400 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-aholi-osish",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#bc8360ea"
+    },
+    {
+      "q": "Bir tumanda maktabga qabul qilinganlar soni ketma-ket yillarda 640, 700, 764, 832 nafar bo'ldi. Shu qonuniyat davom etsa, beshinchi yili nechta bo'ladi?",
+      "v": [
+        "896 nafar",
+        "900 nafar",
+        "904 nafar",
+        "908 nafar"
+      ],
+      "t": 2,
+      "izoh": "Yillik o'sish 60, 64, 68 nafar bo'lib, har safar 4 taga ortadi, demak keyingi o'sish 72 nafar bo'ladi. Shunday qilib 832 + 72 = 904 nafar. 900 — o'sishni 68 deb takrorlash, 896 — o'sishni 64 deb olish xatosi. Javob: 904 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-aholi-osish",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#31362d1f"
+    },
+    {
+      "q": "Bir shaharda elektromobillar soni birinchi yilda 80 ta edi va har yili 1,5 baravar ortib bormoqda. To'rtinchi yilda nechta bo'ladi?",
+      "v": [
+        "270 ta",
+        "180 ta",
+        "240 ta",
+        "405 ta"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi yil 80·1,5 = 120 ta, uchinchi yil 120·1,5 = 180 ta, to'rtinchi yil 180·1,5 = 270 ta bo'ladi. 180 — uchinchi yilda to'xtash, 405 — beshinchi yilning soni, 240 — sonni uch baravarlash xatosi. Javob: 270 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-aholi-osish",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#8186a81b"
+    },
+    {
+      "q": "Hovuzga birinchi soatda 250 litr suv quyildi va har keyingi soatda oldingi soatdagidan 30 litr kam quyilmoqda. Sakkizinchi soatda necha litr quyiladi?",
+      "v": [
+        "10 litr",
+        "40 litr",
+        "70 litr",
+        "100 litr"
+      ],
+      "t": 1,
+      "izoh": "Sakkizinchi soatga yetish uchun 7 marta 30 litr ayiriladi: 7·30 = 210 litr. Demak a₈ = 250 − 210 = 40 litr. 70 — yettinchi soatning qiymati, 100 — oltinchi soat, 10 — to'qqizinchi soat. Javob: 40 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olchov-idish",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#6c6bd56e"
+    },
+    {
+      "q": "Idishda 640 ml dori bor va har kuni undagi dorining yarmi ishlatiladi. Nechanchi kun boshida idishda 40 ml dori qoladi?",
+      "v": [
+        "4-kun",
+        "5-kun",
+        "6-kun",
+        "16-kun"
+      ],
+      "t": 1,
+      "izoh": "Kunlar boshidagi miqdorlar ketma-ket 640, 320, 160, 80, 40 ml bo'ladi. Demak 40 ml beshinchi kun boshida qoladi. 16 — 640 ni 40 ga bo'lish natijasi bo'lib, kunlar soniga aloqasi yo'q. Javob: 5-kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olchov-idish",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#32105d3b"
+    },
+    {
+      "q": "Bir koloniyaning massasi har 3 soatda ikki baravar ortadi. Boshlang'ich massa 0,5 g bo'lsa, 12 soatdan keyin massa qancha bo'ladi?",
+      "v": [
+        "4 g",
+        "6 g",
+        "8 g",
+        "16 g"
+      ],
+      "t": 2,
+      "izoh": "12 soat ichida ikkilanish 12 : 3 = 4 marta sodir bo'ladi. Demak massa 0,5·2⁴ = 0,5·16 = 8 g ga yetadi. 4 — uch marta ikkilanish, 16 — boshlang'ich massani hisobga olmaslik, 6 — massani 12 ga ko'paytirish xatosi. Javob: 8 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-olchov-idish",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#72c98af4"
+    },
+    {
+      "q": "Sovutgichdagi mahsulot harorati har 10 daqiqada 4 gradusga pasayadi. Boshlanishida harorat 26 gradus bo'lgan bo'lsa, 50 daqiqadan keyin qancha bo'ladi?",
+      "v": [
+        "2 gradus",
+        "6 gradus",
+        "10 gradus",
+        "22 gradus"
+      ],
+      "t": 1,
+      "izoh": "50 daqiqada 50 : 10 = 5 ta oraliq o'tadi, demak harorat 5·4 = 20 gradusga pasayadi. Qolgan harorat 26 − 20 = 6 gradus. 10 — to'rtta oraliq, 2 — oltita oraliq, 22 — bitta oraliq deb hisoblash xatosi. Javob: 6 gradus.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olchov-idish",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#85a06fd6"
+    },
+    {
+      "q": "aₙ = 5n − 2 formula bilan berilgan ketma-ketlikning nechta hadi 300 dan kichik bo'ladi?",
+      "v": [
+        "58",
+        "59",
+        "60",
+        "61"
+      ],
+      "t": 2,
+      "izoh": "5n − 2 < 300 tengsizlikni yechamiz: 5n < 302, demak n < 60,4. Butun qiymatlar n = 1 dan 60 gacha, ya'ni 60 ta had. Tekshiramiz: a₆₀ = 298, a₆₁ = 303. 61 — chegarani noto'g'ri yaxlitlash xatosi. Javob: 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadlar-sonini-aniqlash",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#a858cb05"
+    },
+    {
+      "q": "aₙ = n² − 20n formula bilan berilgan ketma-ketlikning nechta hadi manfiy qiymatga ega bo'ladi?",
+      "v": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "t": 1,
+      "izoh": "n² − 20n = n(n − 20) ko'paytmasi n < 20 bo'lganda manfiy bo'ladi, chunki birinchi ko'paytuvchi musbat. Butun n uchun bu 1 dan 19 gacha, ya'ni 19 ta had. a₂₀ = 0 bo'lib, manfiy emas. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hadlar-sonini-aniqlash",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#c9f55ff1"
+    },
+    {
+      "q": "Kutubxonada hozir 210 ta kitob bor va har oy 35 tadan yangi kitob keladi. Nechanchi oydan boshlab kitoblar soni 1000 tadan oshadi?",
+      "v": [
+        "22-oydan",
+        "23-oydan",
+        "24-oydan",
+        "29-oydan"
+      ],
+      "t": 1,
+      "izoh": "210 + 35n > 1000 tengsizlikdan 35n > 790 va n > 22,57 kelib chiqadi, demak eng kichik butun qiymat n = 23. Tekshiramiz: 22-oyda 980 ta, 23-oyda 1015 ta kitob bo'ladi. 29 — 1000 ni 35 ga bo'lish xatosi. Javob: 23-oydan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hadlar-sonini-aniqlash",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#26a75f54"
+    },
+    {
+      "q": "aₙ = 100 − 7n formula bilan berilgan ketma-ketlikning nechta hadi musbat qiymatga ega bo'ladi?",
+      "v": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "100 − 7n > 0 tengsizlikdan 7n < 100 va n < 14,28 chiqadi. Butun qiymatlar n = 1 dan 14 gacha, ya'ni 14 ta had. Tekshiramiz: a₁₄ = 2, a₁₅ = −5. 15 — chegarani yuqoriga yaxlitlash xatosi. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hadlar-sonini-aniqlash",
+      "id": "matematika_prog_m01-sonli-ketma-ketliklar#9f934be6"
+    }
+  ]
+}

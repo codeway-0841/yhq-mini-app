@@ -1,0 +1,456 @@
+{
+  "nom": "02-mavzu. Tokli Ramka Aylantiruvchi Moment",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Magnit maydonning tokli o'tkazgichlar atrofida ham hosil bo'lishini kim tajribalarida ko'rsatgan?",
+      "v": [
+        "Ersted",
+        "Amper",
+        "Tesla",
+        "Lorens"
+      ],
+      "t": 0,
+      "izoh": "Tokli o'tkazgichlar atrofida magnit maydon hosil bo'lishini Ersted tajribalarida ko'rsatib bergan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#89b93e4d"
+    },
+    {
+      "q": "Magnit maydonga tokli kontur kiritilsa, uni qanday hodisa kuzatiladi?",
+      "v": [
+        "Kontur biror burchakka buriladi",
+        "Kontur eriydi",
+        "Kontur cho'ziladi",
+        "Kontur qiziydi"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydonga tokli kontur yoki magnit strelkasi kiritilsa, uning burilishi kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#578808db"
+    },
+    {
+      "q": "Konturdagi tok yo'nalishi teskariga o'zgartirilsa, kontur qanday buriladi?",
+      "v": [
+        "Teskari yo'nalishda",
+        "O'sha yo'nalishda",
+        "Burilmaydi",
+        "Ikki marta katta burchakka"
+      ],
+      "t": 0,
+      "izoh": "Tok yo'nalishi teskariga o'zgarganda kontur teskari yo'nalishda buriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#c70159a6"
+    },
+    {
+      "q": "Magnit maydonga tik joylashgan ramkaning l uzunlikdagi qismidan I tok o'tganda unga ta'sir qiluvchi Amper kuchi qanday ifodalanadi?",
+      "v": [
+        "F = I·B·l",
+        "F = I·B/l",
+        "F = B·l/I",
+        "F = I·l/B"
+      ],
+      "t": 0,
+      "izoh": "Amper kuchi FA = I·B·l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#33c10391"
+    },
+    {
+      "q": "Tokli ramkaga magnit maydon tomonidan qanday kuch ta'sir qiladi?",
+      "v": [
+        "Juft kuch",
+        "Yagona kuch",
+        "Markazga intilma kuch",
+        "Ishqalanish kuchi"
+      ],
+      "t": 0,
+      "izoh": "Ramkaning qarama-qarshi tomonlariga modullari teng, yo'nalishlari qarama-qarshi kuchlar — juft kuch ta'sir qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#4a38b36b"
+    },
+    {
+      "q": "Tokli ramkaga ta'sir qiluvchi to'la aylantiruvchi moment formulasi qaysi?",
+      "v": [
+        "M = I·B·S·sinα",
+        "M = I·B·S·cosα",
+        "M = I·B/(S·sinα)",
+        "M = B·S/(I·sinα)"
+      ],
+      "t": 0,
+      "izoh": "M = I·B·S·sinα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#7612cfb9"
+    },
+    {
+      "q": "Aylantiruvchi moment quyidagi kattaliklarning qaysi biriga to'g'ri proporsional EMAS?",
+      "v": [
+        "Ramka simining uzunligiga",
+        "Ramkadan o'tayotgan tok kuchiga",
+        "Kontur yuzasiga",
+        "Magnit induksiyasiga"
+      ],
+      "t": 0,
+      "izoh": "M tok kuchiga, yuzaga, induksiyaga va sinα ga to'g'ri proporsional; sim uzunligiga esa bog'liq emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#bc18d15e"
+    },
+    {
+      "q": "Aylantiruvchi moment qachon maksimal qiymatga erishadi?",
+      "v": [
+        "α = 90° bo'lganda",
+        "α = 0° bo'lganda",
+        "α = 30° bo'lganda",
+        "α = 45° bo'lganda"
+      ],
+      "t": 0,
+      "izoh": "α = 90° da sinα = 1 bo'lib, M = Mmax = B·I·S.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#18786dc4"
+    },
+    {
+      "q": "Aylantiruvchi momentning maksimal qiymati qanday ifodalanadi?",
+      "v": [
+        "Mmax = B·I·S",
+        "Mmax = B·I·S·sinα",
+        "Mmax = B·I/S",
+        "Mmax = I·S/B"
+      ],
+      "t": 0,
+      "izoh": "α = 90° bo'lganda Mmax = B·I·S.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#5d746422"
+    },
+    {
+      "q": "α = 0° bo'lganda tokli ramkaga ta'sir qiluvchi aylantiruvchi moment nimaga teng?",
+      "v": [
+        "Nolga",
+        "Maksimal qiymatga",
+        "B·I·S ga",
+        "B·I·S/2 ga"
+      ],
+      "t": 0,
+      "izoh": "sin0° = 0 bo'lgani uchun M = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#82a2386b"
+    },
+    {
+      "q": "Magnit maydon induksiyasini aylantiruvchi moment orqali ifodalash mumkinmi?",
+      "v": [
+        "Ha, B = Mmax/(I·S)",
+        "Yo'q, mumkin emas",
+        "Ha, B = Mmax·I·S",
+        "Ha, B = I·S/Mmax"
+      ],
+      "t": 0,
+      "izoh": "Mmax = B·I·S tenglikdan B = Mmax/(I·S).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#6934c867"
+    },
+    {
+      "q": "Asbob elektr zanjiriga qanday ulanadi va bu holda u nima sifatida ishlaydi?",
+      "v": [
+        "Ketma-ket ulanadi, ampermetr sifatida ishlaydi",
+        "Parallel ulanadi, voltmetr sifatida ishlaydi",
+        "Ketma-ket ulanadi, voltmetr sifatida ishlaydi",
+        "Parallel ulanadi, ampermetr sifatida ishlaydi"
+      ],
+      "t": 0,
+      "izoh": "Asbob zanjirga ketma-ket ulanganda strelkaning burilish burchagi tok kuchiga proporsional bo'ladi — ampermetr sifatida ishlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#98585f01"
+    },
+    {
+      "q": "Ramkaning yuzasi ikki marta oshirilsa (boshqa shartlar o'zgarmasa), aylantiruvchi moment qanday o'zgaradi?",
+      "v": [
+        "Ikki marta ortadi",
+        "Ikki marta kamayadi",
+        "O'zgarmaydi",
+        "To'rt marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "M = I·B·S·sinα da M yuzaga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#c533f7c5"
+    },
+    {
+      "q": "Ramkadan o'tayotgan tok ikki marta kamaytirilsa, aylantiruvchi moment qanday o'zgaradi?",
+      "v": [
+        "Ikki marta kamayadi",
+        "Ikki marta ortadi",
+        "O'zgarmaydi",
+        "To'rt marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "M tok kuchiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#165879d7"
+    },
+    {
+      "q": "α = 30° bo'lganda aylantiruvchi moment maksimal qiymatining qanday qismini tashkil etadi?",
+      "v": [
+        "Yarmini (sin30° = 0,5)",
+        "To'rtdan birini",
+        "Chorak qismini emas, to'liq",
+        "0,71 qismini"
+      ],
+      "t": 0,
+      "izoh": "M = Mmax·sin30° = 0,5·Mmax.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#5edb8ae2"
+    },
+    {
+      "q": "Elektr o'lchov asbobida tok kuchi oshirilsa, strelkaning burilish burchagi qanday o'zgaradi?",
+      "v": [
+        "Tok kuchiga proporsional ravishda ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Kvadratik ortadi"
+      ],
+      "t": 0,
+      "izoh": "Strelkaning burilish burchagi tok kuchiga proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#ff0f9c24"
+    },
+    {
+      "q": "Yuzasi 20 sm², o'ramlar soni 100 ta bo'lgan ramkada maksimal moment formulasi qanday yoziladi?",
+      "v": [
+        "Mmax = N·I·B·S",
+        "Mmax = I·B·S/N",
+        "Mmax = I·B·S",
+        "Mmax = N·B/(I·S)"
+      ],
+      "t": 0,
+      "izoh": "N o'ramli ramka uchun Mmax = N·I·B·S (kitobdagi masala namunasi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#2ae64817"
+    },
+    {
+      "q": "O'ramlar soni N ta bo'lgan ramkada aylantiruvchi moment bitta o'ramli ramkanikidan qanday farq qiladi?",
+      "v": [
+        "N marta katta bo'ladi",
+        "N marta kichik bo'ladi",
+        "Bir xil bo'ladi",
+        "N² marta katta bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Har bir o'ramga moment ta'sir qilgani uchun M = N·I·B·S·sinα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#f9c34b74"
+    },
+    {
+      "q": "Tokli ramkaga ta'sir qiluvchi juft kuchlar momentini avtomobil ruli misolida qanday tushuntirish mumkin?",
+      "v": [
+        "Rulga ikki qo'l bilan qarama-qarshi yo'nalishda qo'yilgan kuchlar uni aylantiradi",
+        "Rul bitta kuch bilan aylanadi",
+        "Rulga kuch ta'sir qilmaydi",
+        "Rul faqat tortish bilan aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Rulga ikki qo'l bilan qo'yilgan qarama-qarshi kuchlar juft kuch hosil qilib aylantiradi — ramkadagi holga o'xshash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#31166ceb"
+    },
+    {
+      "q": "Aylantiruvchi moment qaysi fizik kattaliklar ko'paytmasiga teng?",
+      "v": [
+        "I·B·S·sinα",
+        "I·B·S·cosα",
+        "I·R·t",
+        "q·u·B"
+      ],
+      "t": 0,
+      "izoh": "M = I·B·S·sinα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#b4e32449"
+    },
+    {
+      "q": "Galvanometr turidagi asbobda ramka burilganda prujinalar qanday holatga keladi?",
+      "v": [
+        "Siqila boradi (deformatsiyalanadi)",
+        "Bo'shashadi",
+        "O'zgarishsiz qoladi",
+        "Uzilib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Ramka burilganda prujinalar siqila boradi va elastiklik kuchi hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#c1e67bb6"
+    },
+    {
+      "q": "Kuch yelkasi deganda nima tushuniladi?",
+      "v": [
+        "Kuch ta'sir chizig'idan aylanish o'qigacha bo'lgan eng qisqa masofa",
+        "Kuchning moduli",
+        "Ramkaning eni",
+        "Aylanish o'qining uzunligi"
+      ],
+      "t": 0,
+      "izoh": "Ramkaning AD = BC = d qismidagi kuchning yelkasi d/2·sinα ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#b928d38c"
+    },
+    {
+      "q": "Har bir kuchning momenti M1 = M2 qanday ifodalanadi?",
+      "v": [
+        "M1 = M2 = FA·(d/2)·sinα",
+        "M1 = M2 = FA·d·cosα",
+        "M1 = M2 = FA/(d·sinα)",
+        "M1 = M2 = 2·FA·d"
+      ],
+      "t": 0,
+      "izoh": "Har bir kuch momenti kuch bilan yelka ko'paytmasiga teng: FA·(d/2)·sinα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#350306f6"
+    },
+    {
+      "q": "To'la aylantiruvchi moment har bir kuch momentlarining qanday kombinatsiyasiga teng?",
+      "v": [
+        "Yig'indisiga: M = M1 + M2",
+        "Ayirmasiga",
+        "Ko'paytmasiga",
+        "Katta bo'lganiga"
+      ],
+      "t": 0,
+      "izoh": "M = M1 + M2 = FA·d·sinα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#a63171df"
+    },
+    {
+      "q": "l·d ko'paytma ramka uchun nimani ifodalaydi?",
+      "v": [
+        "Ramkaning yuzasi S",
+        "Ramkaning perimetri",
+        "Ramkaning qarshiligi",
+        "Ramkaning massasi"
+      ],
+      "t": 0,
+      "izoh": "l·d = S — ramka yuzasi; shu bois M = I·B·S·sinα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#34a18b80"
+    },
+    {
+      "q": "Ramka induksiya chiziqlariga parallel tekislikda joylashganda (normal chiziqlarga tik) moment qanday bo'ladi?",
+      "v": [
+        "Maksimal",
+        "Nol",
+        "Yarim qiymat",
+        "Manfiy"
+      ],
+      "t": 0,
+      "izoh": "Bu holatda α = 90°, sinα = 1 va moment maksimal.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#606691d3"
+    },
+    {
+      "q": "Elektr o'lchov asbobining ishlash prinsipida qaysi ikki kuch muvozanati muhim?",
+      "v": [
+        "Amper kuchlari va prujinaning elastiklik kuchi",
+        "Og'irlik va Amper kuchi",
+        "Ishqalanish va Amper kuchi",
+        "Kulon va elastiklik kuchi"
+      ],
+      "t": 0,
+      "izoh": "Ramka burilishi prujina elastiklik kuchi va Amper kuchlari tenglashgunga qadar davom etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#c92484cf"
+    },
+    {
+      "q": "Ampermetr sifatida ishlaydigan asbobda strelka burilish burchagi nimaga proporsional?",
+      "v": [
+        "Zanjirdan o'tayotgan tok kuchiga",
+        "Kuchlanishga",
+        "Qarshilikka",
+        "Vaqtga"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanganda zanjir va g'altak toklari teng bo'lgani uchun burilish burchagi tok kuchiga proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#24c05b71"
+    },
+    {
+      "q": "Aylantiruvchi moment formulasi M = I·B·S·sinα qaysi kattalikdan kelib chiqadi?",
+      "v": [
+        "Amper kuchi FA = I·B·l dan",
+        "Om qonunidan",
+        "Kulon qonunidan",
+        "Joule-Lenz qonunidan"
+      ],
+      "t": 0,
+      "izoh": "Amper kuchi formulasini (1–5) ifodaga qo'yib M = I·B·l·d·sinα = I·B·S·sinα olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#c600cf6c"
+    },
+    {
+      "q": "Magnit maydonga kiritilgan tokli konturga ta'sir qiluvchi kuch momenti (M) qaysi kattaliklarga to'g'ri proporsional?",
+      "v": [
+        "Tok kuchiga, kontur yuzasiga, sinα ga va magnit induksiyasiga",
+        "Faqat tok kuchiga",
+        "Faqat yuzaga",
+        "Faqat induksiyaga"
+      ],
+      "t": 0,
+      "izoh": "M tok kuchiga, yuzaga, burchak sinusiga va induksiyaga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment#06bd09ec"
+    }
+  ]
+}

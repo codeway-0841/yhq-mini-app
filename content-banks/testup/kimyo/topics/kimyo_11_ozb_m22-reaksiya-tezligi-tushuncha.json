@@ -1,0 +1,546 @@
+{
+  "nom": "22-mavzu. Reaksiya tezligi haqida tushuncha",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kimyoviy reaksiya deb nimaga aytiladi?",
+      "v": [
+        "Zarrachalar (molekula, atom, ionlar)dan yangi zarrachalar hosil bo'lishiga",
+        "Moddalarning bir holatdan boshqa holatga o'tishiga",
+        "Moddalarning faqat aralashishiga",
+        "Atomlarning yadrosining o'zgarishiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikda kimyoviy reaksiya zarrachalardan yangi zarrachalar hosil bo'lishi deb ta'riflangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#22ef881d"
+    },
+    {
+      "q": "Darslikda juda tez boruvchi reaksiyalarga misol qilib qaysi jarayonlar keltirilgan?",
+      "v": [
+        "Poroxning yonishi va ichki yonuv dvigateli silindrida havo-benzin aralashmasining yonishi",
+        "Temirning zanglashi va misning yashil qatlam bo'lishi",
+        "Suvning muzlashi va erishi",
+        "Ohakning erishi va cho'kishi"
+      ],
+      "t": 0,
+      "izoh": "Porox yonishi va dvigatel silindridagi yonish juda tez reaksiyalarga misol qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#12e209da"
+    },
+    {
+      "q": "Ichki yonuv dvigateli silindrida havo va benzin qanday nisbatda aralashtiriladi?",
+      "v": [
+        "15:1",
+        "1:15",
+        "10:1",
+        "5:1"
+      ],
+      "t": 0,
+      "izoh": "Darslikda havo va benzin 15:1 nisbatda aralashtirilishi aytilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#401694ca"
+    },
+    {
+      "q": "BaCl2 va H2SO4 eritmalari aralashtirilganda qanday hodisa kuzatiladi?",
+      "v": [
+        "Oq cho'kma juda tez fursatda hosil bo'ladi",
+        "Gaz ajralib chiqadi",
+        "Eritma rangi o'zgaradi, lekin cho'kma bo'lmaydi",
+        "Reaksiya bir necha kun davom etadi"
+      ],
+      "t": 0,
+      "izoh": "BaCl2 + H2SO4 = BaSO4 + 2HCl reaksiyasida oq cho'kma juda tez hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#85b9f317"
+    },
+    {
+      "q": "Temir korroziyasi reaksiyasining tenglamasi qaysi?",
+      "v": [
+        "4Fe + 6H2O + 3O2 = 4Fe(OH)3",
+        "2Fe + 3H2O = Fe2O3 + 3H2",
+        "Fe + 2H2O = Fe(OH)2 + H2",
+        "4Fe + 3O2 = 2Fe2O3"
+      ],
+      "t": 0,
+      "izoh": "Darslikda temir korroziyasi 4Fe + 6H2O + 3O2 = 4Fe(OH)3 ko'rinishida berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#b4e5d913"
+    },
+    {
+      "q": "Temir korroziyasi qanday tezlikda kechadi?",
+      "v": [
+        "Juda sekin, mahsulotni ko'rish uchun ancha uzoq vaqt kutish kerak",
+        "Juda tez, bir necha sekundda",
+        "Bir necha daqiqada to'liq tugaydi",
+        "Faqat qizdirilgandagina boshlanadi va darhol tugaydi"
+      ],
+      "t": 0,
+      "izoh": "Temir korroziyasi juda sekin kechishi darslikda ta'kidlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#328e8660"
+    },
+    {
+      "q": "Reaksiyaning o'rtacha tezligi deb nimaga aytiladi?",
+      "v": [
+        "Reaksiyaga kirishayotgan moddalarning yoki hosil bo'layotgan mahsulotning konsentratsiyasini ma'lum vaqt birligi ichida o'zgarishiga",
+        "Reaksiya mahsulotlarining umumiy massasiga",
+        "Reaksiya uchun sarflangan umumiy vaqtga",
+        "Reaksiyada ajralgan issiqlik miqdoriga"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha tezlik — konsentratsiyaning vaqt birligidagi o'zgarishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#c222a4e1"
+    },
+    {
+      "q": "Reaksiya o'rtacha tezligini aniqlash formulasida C1 nimani bildiradi?",
+      "v": [
+        "Reaksiya boshlanishidan oldingi moddaning konsentratsiyasini (mol/l)",
+        "Reaksiya tugagandan keyingi moddaning konsentratsiyasini",
+        "Idishning hajmini (l)",
+        "Reaksiyaga sarflangan vaqtni"
+      ],
+      "t": 0,
+      "izoh": "C1 — reaksiya boshlanishidan oldingi konsentratsiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#6ea2faf2"
+    },
+    {
+      "q": "v = ΔC/Δt formulasida Δt nimani anglatadi?",
+      "v": [
+        "Reaksiyani amalga oshirish uchun sarflangan vaqtni (minut, sekund, soat)",
+        "Modda miqdorlarining tafavutini (mol)",
+        "Idish hajmini (l)",
+        "Konsentratsiyalar tafavutini (mol/l)"
+      ],
+      "t": 0,
+      "izoh": "Δt — reaksiya uchun sarflangan vaqt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#6016d20f"
+    },
+    {
+      "q": "Reaksiyaning o'rtacha tezligi qaysi birliklarda o'lchanadi?",
+      "v": [
+        "mol/l·sekund, mol/l·minut, mol/l·soat",
+        "mol/l, mol/kg, mol/m3",
+        "l/mol, ml/mol",
+        "kj/mol, j/mol"
+      ],
+      "t": 0,
+      "izoh": "Tezlik mol/l·sekund, mol/l·minut, mol/l·soat birliklarida o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#563ceb14"
+    },
+    {
+      "q": "ΔC = Δn/V formulasida V nimani bildiradi?",
+      "v": [
+        "Reaksiya o'tkazilgan idish hajmini (l)",
+        "Modda miqdorini (mol)",
+        "Reaksiya vaqtini (sekund)",
+        "Tezlik konstantasini"
+      ],
+      "t": 0,
+      "izoh": "V — reaksiya o'tkazilgan idish hajmi, litrda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#4f7f91c9"
+    },
+    {
+      "q": "Modda miqdorining hajmga bo'lgan nisbati nimani ifodalaydi?",
+      "v": [
+        "Molyar konsentratsiyani",
+        "Massa ulushni",
+        "Tezlik konstantasini",
+        "Molyar massani"
+      ],
+      "t": 0,
+      "izoh": "Modda miqdorining hajmga nisbati molyar konsentratsiyani ifodalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#69ca3339"
+    },
+    {
+      "q": "Kimyoda reaksiya tezligi asosan qaysi birliklarda o'lchanishi darslikda alohida ta'kidlangan?",
+      "v": [
+        "mol/litr·minut yoki mol/litr·sekund",
+        "mol/litr·soat yoki mol/litr·kun",
+        "gramm/sekund",
+        "litr/minut"
+      ],
+      "t": 0,
+      "izoh": "Darslikda tezlik \"mol/litr·minut\" yoki \"mol/litr·sekund\" birliklarida o'lchanadi deb aytilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#215718e5"
+    },
+    {
+      "q": "Reaksiya tezligini aniqlash uchun quyidagilardan qaysi biri kerak bo'lmaydi?",
+      "v": [
+        "Reaksiyada ajralgan issiqlik miqdorini bilish",
+        "Reaksiyada necha mol modda hosil bo'lishi yoki sarflanishini bilish",
+        "Reaksiya qancha vaqt davom etishini bilish",
+        "Reaksiya o'tkaziladigan idish hajmini bilish"
+      ],
+      "t": 0,
+      "izoh": "Tezlikni aniqlash uchun mol miqdori, vaqt va idish hajmi kerak; issiqlik kerak emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#b4a65b80"
+    },
+    {
+      "q": "Reaksiya tezligiga ta'sir etuvchi omillardan birinchisi qaysi?",
+      "v": [
+        "Modda tabiati",
+        "Harorat",
+        "Bosim",
+        "Katalizator"
+      ],
+      "t": 0,
+      "izoh": "Darslikda birinchi omil sifatida modda tabiati keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#42af2087"
+    },
+    {
+      "q": "Kaliy suv bilan reaksiyaga kirishganda vodorod qanday ajralib chiqadi?",
+      "v": [
+        "Juda tez sur'atda ajralib chiqadi va hattoki yonib ketadi",
+        "Sekin-asta, mayda pufakchalar hosil qilib",
+        "Umuman ajralmaydi",
+        "Faqat qizdirilganda ajraladi"
+      ],
+      "t": 0,
+      "izoh": "Kaliyda vodorod juda tez ajraladi va yonib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#e86a73dd"
+    },
+    {
+      "q": "Litiy suv bilan reaksiyasida vodorod qanday ajraladi?",
+      "v": [
+        "Sekin-asta, mayda pufakchalar hosil qilib ajrala boshlaydi",
+        "Juda tez, yonib ketib",
+        "Portlash bilan",
+        "Umuman ajralmaydi"
+      ],
+      "t": 0,
+      "izoh": "Litiyda vodorod sekin-asta, mayda pufakchalar bilan ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#8f8843b3"
+    },
+    {
+      "q": "Kaliy va litiyning suv bilan har xil tezlikda reaksiyaga kirishishi nima bilan izohlanadi?",
+      "v": [
+        "Ularning tabiati, ya'ni elektron berish xossasi bilan",
+        "Suvning harorati bilan",
+        "Metallarning massasi bilan",
+        "Idishning hajmi bilan"
+      ],
+      "t": 0,
+      "izoh": "Farq ularning elektron berish xossasi, ya'ni modda tabiati bilan izohlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#2a846353"
+    },
+    {
+      "q": "Kaliy atomi elektronni litiyga nisbatan tezroq beradi, chunki...",
+      "v": [
+        "kaliy atomining radiusi kattaroq",
+        "kaliy atomining massasi kichikroq",
+        "kaliy suvda erimaydi",
+        "kaliy qattiqroq metall"
+      ],
+      "t": 0,
+      "izoh": "Kaliy atomi radiusi kattaroq bo'lgani uchun uni elektronni berishi litiyga nisbatan tezroq amalga oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#7d5ee688"
+    },
+    {
+      "q": "Kaliyning suv bilan reaksiya tenglamasi qaysi?",
+      "v": [
+        "2K + 2H2O = 2KOH + H2",
+        "K + H2O = KOH + H2",
+        "2K + H2O = K2O + H2",
+        "K + 2H2O = K(OH)2 + H2"
+      ],
+      "t": 0,
+      "izoh": "2K + 2H2O = 2KOH + H2 darslikda keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#0d10ae42"
+    },
+    {
+      "q": "Litiyning suv bilan reaksiya tenglamasi qaysi?",
+      "v": [
+        "2Li + 2H2O = 2LiOH + H2",
+        "Li + H2O = LiOH + H2",
+        "2Li + 2H2O = 2LiH + O2",
+        "Li + 2H2O = Li(OH)2 + H2"
+      ],
+      "t": 0,
+      "izoh": "2Li + 2H2O = 2LiOH + H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#80b1096e"
+    },
+    {
+      "q": "Konsentratsiyaning tezlikka ta'sirini ko'rsatish tajribasida qaysi moddalar ishlatilgan?",
+      "v": [
+        "Tiosulfat kislota eritmasi va sulfat kislota",
+        "Tuz kislota va natriy gidroksid",
+        "Suv va kaliy",
+        "Ammiak va kislorod"
+      ],
+      "t": 0,
+      "izoh": "Tajribada tiosulfat kislota eritmasiga sulfat kislota qo'shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#572944eb"
+    },
+    {
+      "q": "Tiosulfat kislota va sulfat kislota reaksiyasining tenglamasi qaysi?",
+      "v": [
+        "Na2S2O3 + H2SO4 = Na2SO4 + S + SO2 + H2O",
+        "Na2SO3 + H2SO4 = Na2SO4 + H2O + SO2",
+        "Na2S2O3 + 2HCl = 2NaCl + S + SO2 + H2O",
+        "Na2S + H2SO4 = Na2SO4 + H2S"
+      ],
+      "t": 0,
+      "izoh": "Na2S2O3 + H2SO4 = Na2SO4 + S + SO2 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#829e70de"
+    },
+    {
+      "q": "Tiosulfat kislota tajribasida eng avval qaysi probirkada loyqalanish kuzatiladi?",
+      "v": [
+        "Tiosulfat kislota konsentratsiyasi eng yuqori bo'lgan probirkada",
+        "Eng ko'p suv qo'shilgan probirkada",
+        "Eng kam sulfat kislota qo'shilgan probirkada",
+        "Barchasida bir vaqtda"
+      ],
+      "t": 0,
+      "izoh": "Konsentratsiya yuqori bo'lgan probirkada reaksiya tezroq boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#7a236c7f"
+    },
+    {
+      "q": "Modda konsentratsiyasi yuqori bo'lgan joyda reaksiya tezroq boradi, chunki...",
+      "v": [
+        "molekulalar soni ko'p bo'lib, ularning to'qnashuvlariga ozroq vaqt kerak bo'ladi",
+        "molekulalar kattaroq bo'ladi",
+        "idish hajmi kichik bo'ladi",
+        "harorat yuqori bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Molekulalar soni ko'p bo'lsa, to'qnashuvlar tez-tez sodir bo'lib, reaksiya tezlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#afe4363e"
+    },
+    {
+      "q": "aA + bB = cC + dD reaksiyada C va D moddalardan A va B moddalarning hosil bo'lish reaksiyasi nima deyiladi?",
+      "v": [
+        "Teskari reaksiya",
+        "To'g'ri reaksiya",
+        "Qaytmas reaksiya",
+        "Katalitik reaksiya"
+      ],
+      "t": 0,
+      "izoh": "Mahsulotlardan boshlang'ich moddalar hosil bo'lishi teskari reaksiya deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#257eb19c"
+    },
+    {
+      "q": "v = k · CA^a · CB^b formulasida k nima?",
+      "v": [
+        "Tezlik konstantasi",
+        "Muvozanat konstantasi",
+        "Harorat koeffitsiyenti",
+        "Molyar konsentratsiya"
+      ],
+      "t": 0,
+      "izoh": "k — tezlik konstantasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#3b8d9664"
+    },
+    {
+      "q": "Reaksiya tezligi moddalar konsentratsiyalarining qanday qiymatlari ko'paytmasiga to'g'ri proporsional?",
+      "v": [
+        "Shu modda koeffitsiyentiga teng bo'lgan darajadagi qiymatlarining",
+        "Kvadrat ildizlarining",
+        "Moddalarning molyar massalarining",
+        "Moddalarning atom massalarining"
+      ],
+      "t": 0,
+      "izoh": "Tezlik konsentratsiyalarning koeffitsiyentga teng darajadagi qiymatlari ko'paytmasiga proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#5acdb4c6"
+    },
+    {
+      "q": "v = k · CA^a · CB^b formulasi qanday moddalar uchun taalluqli?",
+      "v": [
+        "Faqat gaz moddalar uchun",
+        "Faqat suyuq moddalar uchun",
+        "Faqat qattiq moddalar uchun",
+        "Barcha agregat holatdagi moddalar uchun"
+      ],
+      "t": 0,
+      "izoh": "Ushbu formula faqat gaz moddalar uchun taalluqli; qattiq moddalar konsentratsiyasi hisobga olinmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#f5784da4"
+    },
+    {
+      "q": "Qattiq moddalar uchun konsentratsiya nima uchun hisobga olinmaydi?",
+      "v": [
+        "Ular reaksiyaga butun yuzasi bilan emas, faqat ta'sirlashuv yuzasi (sirtqi qavat) bilan qatnashadi",
+        "Qattiq moddalar reaksiyaga umuman kirmaydi",
+        "Qattiq moddalarning massasi o'lchanmaydi",
+        "Qattiq moddalar konsentratsiyaga ega emas"
+      ],
+      "t": 0,
+      "izoh": "Qattiq moddalar faqat sirtqi qavati bilan reaksiyada qatnashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#529d6436"
+    },
+    {
+      "q": "C(qattiq) + O2(gaz) = CO2(gaz) reaksiyasi uchun tezlik formulasining to'g'ri ko'rinishi qaysi?",
+      "v": [
+        "v = k · C(O2)",
+        "v = k · C(C) · C(O2)",
+        "v = k · C(C)",
+        "v = k · C(CO2)"
+      ],
+      "t": 0,
+      "izoh": "Ko'mir qattiq bo'lgani uchun uning konsentratsiyasi hisobga olinmaydi: v = k·C(O2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#1e9409e3"
+    },
+    {
+      "q": "Ko'mir bo'lagini yaxshilab maydalash reaksiyani qanday tezlashtiradi?",
+      "v": [
+        "Sirt yuzasini oshirish hisobiga",
+        "Konsentratsiyani oshirish hisobiga",
+        "Haroratni ko'tarish hisobiga",
+        "Bosimni oshirish hisobiga"
+      ],
+      "t": 0,
+      "izoh": "Ko'mirni maydalab sirt yuzasini oshirish hisobiga reaksiyani tezlatish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#04394ada"
+    },
+    {
+      "q": "1-masalada: hajmi 3 litr idishda ammiak miqdori 11,5 moldan 2,5 molgacha 90 sekundda kamaydi. Reaksiyaning o'rtacha tezligi (mol/litr·min) qancha?",
+      "v": [
+        "2 mol/litr·min",
+        "3 mol/litr·min",
+        "1,5 mol/litr·min",
+        "4,5 mol/litr·min"
+      ],
+      "t": 0,
+      "izoh": "Δn = 9 mol; 90 sek = 1,5 min; v = 9/(3·1,5) = 2 mol/litr·min.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#8b8f72bc"
+    },
+    {
+      "q": "2-masalada hajmni litrga o'tkazish uchun 0,005 m3 ni qanday ifodalash kerak?",
+      "v": [
+        "5 litr",
+        "0,5 litr",
+        "50 litr",
+        "500 litr"
+      ],
+      "t": 0,
+      "izoh": "1 m3 = 1000 litr, 0,005 m3 = 5 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#fdc68b5d"
+    },
+    {
+      "q": "4-masalada: kislorod konsentratsiyasi 7 mol/litrdan 2 mol/litrgacha kamaygan, tezlik 4 mol/litr·min bo'lsa, reaksiya davomiyligi qancha?",
+      "v": [
+        "75 sekund",
+        "1,25 sekund",
+        "20 sekund",
+        "5 minut"
+      ],
+      "t": 0,
+      "izoh": "ΔC = 5 mol/litr; t = 5/4 = 1,25 minut = 75 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#c2018c53"
+    },
+    {
+      "q": "3-masalada azot miqdori 104 moldan 8 molgacha kamaygan bo'lsa, reaksiyaga kirishgan azot miqdori qancha?",
+      "v": [
+        "96 mol",
+        "112 mol",
+        "104 mol",
+        "8 mol"
+      ],
+      "t": 0,
+      "izoh": "104 - 8 = 96 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m22-reaksiya-tezligi-tushuncha#36189c16"
+    }
+  ]
+}

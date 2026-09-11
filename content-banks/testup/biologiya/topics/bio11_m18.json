@@ -1,0 +1,666 @@
+{
+  "nom": "Biologiya-11, 18-§. Ekologik piramida qoidasi. Biomassa va energiya piramidasi",
+  "bolim": "II BOB. Hayotning ekosistema darajasidagi umumbiologik qonuniyatlari",
+  "savollar": [
+    {
+      "q": "Har qanday ekologik tizimning asosini nima tashkil etadi?",
+      "v": [
+        "Oziq zanjiri",
+        "Faqat produtsentlar",
+        "Faqat redutsentlar",
+        "Abiotik omillar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra har qanday ekologik tizimning asosini oziq zanjiri tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m18#8ebffa22"
+    },
+    {
+      "q": "Ekologik sistemalardagi oziq zanjiri qaysi uch guruhdan iborat?",
+      "v": [
+        "Produtsentlar, konsumentlar va redutsentlar",
+        "Faqat produtsentlar va konsumentlar",
+        "Avtotroflar, geterotroflar va simbiontlar",
+        "Yirtqichlar, oʻljalar va parazitlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekologik sistemalardagi oziq zanjiri produtsentlar, konsumentlar va redutsentlardan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m18#6eb93d5c"
+    },
+    {
+      "q": "Oziq zanjiridagi produtsentlarni qanday organizmlar tashkil etadi?",
+      "v": [
+        "Fotosintez va xemosintezni amalga oshiradigan avtotrof organizmlar",
+        "Organik qoldiqlarni parchalaydigan saprofitlar",
+        "Oʻsimlikxoʻr hayvonlar",
+        "Yirtqich hayvonlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oziq zanjiridagi produtsentlarni fotosintez va xemosintezni amalga oshiradigan avtotrof organizmlar tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#d2fc20cc"
+    },
+    {
+      "q": "Konsumentlar nimaga koʻra tavsiflanadi?",
+      "v": [
+        "Oziqlanish tarkibiga koʻra",
+        "Tana harorati boʻyicha",
+        "Koʻpayish usuliga koʻra",
+        "Yashash muhitiga koʻra"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra konsumentlar oziqlanish tarkibiga koʻra tavsiflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#25025a6b"
+    },
+    {
+      "q": "Konsumentlarning 1-tartibini qaysi organizmlar tashkil etadi?",
+      "v": [
+        "Oʻsimlikxoʻr hayvonlar (birlamchi isteʼmolchilar)",
+        "Goʻshtxoʻr hayvonlar (ikkilamchi isteʼmolchilar)",
+        "Saprofit organizmlar",
+        "Fotosintez qiluvchi oʻsimliklar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra konsumentlarning 1-tartibini oʻsimlikxoʻr hayvonlar, yaʼni birlamchi isteʼmolchilar tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#47e381d2"
+    },
+    {
+      "q": "Konsumentlarning 2- va 3-tartibini qaysi organizmlar tashkil etadi?",
+      "v": [
+        "Goʻshtxoʻr hayvonlar (ikkilamchi va uchlamchi isteʼmolchilar)",
+        "Oʻsimlikxoʻr hayvonlar",
+        "Avtotrof produtsentlar",
+        "Organik qoldiqlarni parchalovchi saprofitlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra konsumentlarning 2- va 3-tartibini goʻshtxoʻr hayvonlar, yaʼni ikkilamchi va uchlamchi isteʼmolchilar tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#21bfe6ed"
+    },
+    {
+      "q": "Redutsentlarni qanday organizmlar tashkil etadi?",
+      "v": [
+        "Organik qoldiqlarni mineral moddalargacha parchalaydigan saprofit organizmlar",
+        "Fotosintez qiluvchi avtotroflar",
+        "Birlamchi isteʼmolchi oʻsimlikxoʻrlar",
+        "Uchlamchi tartib yirtqichlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra redutsentlarni organik qoldiqlarni mineral moddalargacha parchalaydigan saprofit organizmlar tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#427590eb"
+    },
+    {
+      "q": "Isteʼmol qilingan oziqning koʻp qismi organizmda nimaga sarflanadi?",
+      "v": [
+        "Nafas olish, harakatlanish, koʻpayish va tana haroratini saqlashga",
+        "Faqat tananing oʻsishiga",
+        "Faqat biomassa toʻplashga",
+        "Faqat keyingi trofik darajaga oʻtishga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra isteʼmol qilingan oziqning koʻp qismi tirik organizmning nafas olish, harakatlanish, koʻpayish, tana haroratini saqlash kabi hayotiy jarayonlariga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#c60209d8"
+    },
+    {
+      "q": "Oziqning hazm boʻlmagan qismi organizmdan qanday jarayon orqali tashqi muhitga chiqariladi?",
+      "v": [
+        "Ekskretsiya",
+        "Fotosintez",
+        "Xemosintez",
+        "Diffuziya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oziqning hazm boʻlmagan qismi tashqi muhitga chiqariladi va bu jarayon ekskretsiya deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#73e5f633"
+    },
+    {
+      "q": "Oziqning oʻzlashtirilganlik darajasi qancha foizni tashkil etadi?",
+      "v": [
+        "12–75%",
+        "5–20%",
+        "50–90%",
+        "80–100%"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oziqning oʻzlashtirilganlik darajasi oziq tarkibi va organizmning biologik xususiyatlariga bogʻliq boʻlib, 12–75% ni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m18#683fc468"
+    },
+    {
+      "q": "Oziq zanjirining har bir trofik darajasida energiyaning necha foizi yoʻqoladi?",
+      "v": [
+        "90%",
+        "10%",
+        "50%",
+        "25%"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oziq zanjirining har bir trofik darajasida energiyaning 90% i yoʻqoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m18#d119cc73"
+    },
+    {
+      "q": "Oziq zanjirida bir trofik darajadan keyingisiga energiyaning necha foizi oʻtadi?",
+      "v": [
+        "10%",
+        "90%",
+        "50%",
+        "1%"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oziq zanjirida faqat 10% energiya keyingi darajaga oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m18#02c5fd9a"
+    },
+    {
+      "q": "Energiyaning trofik darajada 90% yoʻqolishi qonuniyatini qaysi olim '10% qoidasi' deb taʼrifladi?",
+      "v": [
+        "R. Lindeman",
+        "Ch. Elton",
+        "V. Vernadskiy",
+        "Ch. Darvin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra amerikalik ekolog olim R. Lindeman ushbu qonuniyatni '10% qoidasi' deb taʼrifladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m18#d8b90c92"
+    },
+    {
+      "q": "R. Lindeman qaysi mamlakat ekolog olimi?",
+      "v": [
+        "Amerikalik",
+        "Angliyalik",
+        "Rossiyalik",
+        "Fransiyalik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra '10% qoidasi'ni taʼriflagan R. Lindeman amerikalik ekolog olimdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#318b515a"
+    },
+    {
+      "q": "Agar produtsentlar 1000 kJ energiyaga ega boʻlsa, 10% qoidasiga koʻra birinchi tartib konsumentlarga qancha energiya oʻtadi?",
+      "v": [
+        "100 kJ",
+        "10 kJ",
+        "1000 kJ",
+        "500 kJ"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi misolga koʻra produtsentlar 1000 kJ boʻlsa, birinchi tartib konsumentlarga 10% i, yaʼni 100 kJ oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#5da2780c"
+    },
+    {
+      "q": "Darslikdagi misolga koʻra uchinchi tartib konsumentlarga qancha energiya oʻtadi (produtsentlar 1000 kJ)?",
+      "v": [
+        "1 kJ",
+        "10 kJ",
+        "100 kJ",
+        "1000 kJ"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi misolga koʻra 1000 kJ → 100 kJ → 10 kJ ketma-ketligida uchinchi tartib konsumentlarga 1 kJ oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m18#ea8a7346"
+    },
+    {
+      "q": "Oʻsimliklar jamgʻargan modda va energiya tezda sarflanib ketishi nimaga sabab boʻladi?",
+      "v": [
+        "Oziq zanjiri uzun boʻlmasligiga",
+        "Oziq zanjiri juda uzun boʻlishiga",
+        "Produtsentlar sonining koʻpayishiga",
+        "Piramida teskari boʻlishiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻsimliklar jamgʻargan modda va energiya tezda sarflanib ketgani uchun oziq zanjiri uzun boʻlmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#670015fd"
+    },
+    {
+      "q": "Ekologik piramida qoidasini ilk bor qaysi olim aniqlagan?",
+      "v": [
+        "Ch. Elton",
+        "R. Lindeman",
+        "K. Linney",
+        "E. Gekkel"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekologik piramida qoidasini ilk bor angliyalik ekolog olim Ch. Elton aniqlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m18#8e6585a6"
+    },
+    {
+      "q": "Ch. Elton ekologik piramida qoidasini qaysi yilda aniqlagan?",
+      "v": [
+        "1927-yil",
+        "1917-yil",
+        "1937-yil",
+        "1900-yil"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekologik piramida qoidasini 1927-yilda Ch. Elton aniqlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m18#3d555843"
+    },
+    {
+      "q": "Ch. Elton qaysi mamlakat ekolog olimi?",
+      "v": [
+        "Angliyalik",
+        "Amerikalik",
+        "Germaniyalik",
+        "Rossiyalik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekologik piramida qoidasini aniqlagan Ch. Elton angliyalik ekolog olimdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#e9263b3a"
+    },
+    {
+      "q": "Ekologik piramida nimani aks ettiruvchi grafik tasvirdir?",
+      "v": [
+        "Produtsentlar va har xil darajadagi konsumentlarning oʻzaro nisbatini",
+        "Faqat produtsentlar sonini",
+        "Ekosistemadagi abiotik omillarni",
+        "Organizmlar tana haroratini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekologik piramida ekosistemadagi produtsentlar va har xil darajadagi konsumentlar (oʻtxoʻrlar, yirtqichlar)ning oʻzaro nisbatini aks ettiruvchi grafik tasvirdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#2702826d"
+    },
+    {
+      "q": "Ekologik piramidaning asosini qaysi trofik daraja tashkil etadi?",
+      "v": [
+        "Birinchi trofik daraja – produtsentlar",
+        "Ikkinchi trofik daraja – konsumentlar",
+        "Uchinchi trofik daraja – yirtqichlar",
+        "Redutsentlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekologik piramida asosini birinchi trofik daraja – produtsentlar tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#9f910ba2"
+    },
+    {
+      "q": "Bir trofik darajadan keyingisiga oʻtgan sari individlarning tana oʻlchami qanday oʻzgaradi?",
+      "v": [
+        "Kattalashib boradi",
+        "Kichraya boradi",
+        "Oʻzgarmaydi",
+        "Avval kichrayadi, keyin kattalashadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bir trofik darajadan keyingisiga oʻtgan sari individlar soni kamayadi, lekin ularning tana oʻlchami kattalashib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#e756e73e"
+    },
+    {
+      "q": "Nima uchun ekologik piramidaning asosi keng, yuqorisi choʻqqili oʻtkir boʻladi?",
+      "v": [
+        "Bir darajadan keyingisiga faqat 10% energiya oʻtgani uchun",
+        "Har bir darajaga energiya koʻpayib borgani uchun",
+        "Individlar soni ortib borgani uchun",
+        "Redutsentlar koʻp boʻlgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bir darajadan keyingisiga 10% energiya oʻtgani uchun ekologik piramidaning asosi keng, yuqorisi choʻqqili oʻtkir boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#30723b17"
+    },
+    {
+      "q": "Tabiatda uchraydigan ekologik piramidalarning qaysi turlari bor?",
+      "v": [
+        "Sonlar, biomassa va energiya piramidalari",
+        "Faqat sonlar va energiya piramidalari",
+        "Statik, dinamik va tipik piramidalar",
+        "Quruqlik, suv va havo piramidalari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tabiatda sonlar piramidasi, biomassa piramidasi va energiya piramidasi uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#b044856d"
+    },
+    {
+      "q": "Sonlar piramidasi nimani aks ettiradi?",
+      "v": [
+        "Har bir trofik darajadagi individlar sonini",
+        "Tirik moddaning quruq massasini",
+        "Trofik darajalardagi energiya oqimini",
+        "Organizmlar tana haroratini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sonlar piramidasi har bir trofik darajada individlar sonini aks ettiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m18#524c2e6c"
+    },
+    {
+      "q": "Biomassa piramidasi nimani aks ettiradi?",
+      "v": [
+        "Har bir trofik darajadagi tirik moddaning umumiy quruq massasini",
+        "Individlar umumiy sonini",
+        "Trofik darajalardagi energiya oqimini",
+        "Organizmlarning yoshini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra biomassa piramidasi har bir trofik darajadagi tirik moddaning umumiy quruq massasini aks ettiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#4d1aea9a"
+    },
+    {
+      "q": "Energiya piramidasi nimani aks ettiradi?",
+      "v": [
+        "Trofik darajalardagi energiya oqimini",
+        "Individlarning umumiy sonini",
+        "Organizmlar quruq massasini",
+        "Ekosistemadagi turlar sonini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra energiya piramidasi trofik darajalarda energiya oqimini aks ettiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#8a408f61"
+    },
+    {
+      "q": "Yirtqich hayvon uchun nima uchun bir qancha miqdordagi oʻlja kerak boʻladi?",
+      "v": [
+        "Yirtqich tanasi oʻljasidan ancha yirik va hayotini taʼminlashi kerak boʻlgani uchun",
+        "Yirtqich oʻljadan kichik boʻlgani uchun",
+        "Oʻljalar soni yirtqichlardan kam boʻlgani uchun",
+        "Yirtqichlar fotosintez qilmagani uchun"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yirtqichlar tanasi oʻljalaridan ancha yirik va yirtqich hayotini taʼminlash uchun bir qancha miqdordagi oʻlja kerak boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#4ddb17aa"
+    },
+    {
+      "q": "Oʻrmon ekosistemalarida sonlar piramidasi nima uchun teskari boʻladi?",
+      "v": [
+        "Konsumentlar (oʻsimlikxoʻr hasharotlar) soni produtsentlardan (daraxtlardan) koʻp boʻlgani uchun",
+        "Produtsentlar soni konsumentlardan koʻp boʻlgani uchun",
+        "Redutsentlar butunlay yoʻq boʻlgani uchun",
+        "Energiya kamaymay borgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻrmon ekosistemalarida produtsentlarni daraxtlar, konsumentlarni oʻsimlikxoʻr hasharotlar tashkil etib, konsumentlar soni produtsentlardan koʻp boʻlgani uchun sonlar piramidasi teskari (asosi ingichka, yuqorisi keng) boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m18#a671f6cc"
+    },
+    {
+      "q": "Quruqlik ekosistemalarida qaysi trofik darajaning umumiy biomassasi eng koʻp boʻladi?",
+      "v": [
+        "Produtsentlarning",
+        "Birinchi tartib konsumentlarning",
+        "Ikkinchi tartib konsumentlarning",
+        "Uchinchi tartib konsumentlarning"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra quruqlik ekosistemalarida produtsentlarning umumiy biomassasi oziq zanjirining boshqa trofik darajalari biomassasidan koʻp boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#ee0f8380"
+    },
+    {
+      "q": "Organizmlar tana oʻlchamlari bir-biridan juda katta farq qilmasa, qanday biomassa piramidasi hosil boʻladi?",
+      "v": [
+        "Odatdagi tipik piramida",
+        "Teskari piramida",
+        "Sonlar piramidasi",
+        "Energiya piramidasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra organizmlar tanasining oʻlchamlari bir-biridan juda katta farq qilmasa, odatdagi tipik piramida hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#1f5f0e98"
+    },
+    {
+      "q": "Suv havzalari ekosistemalarida biomassa piramidasi nima uchun teskari boʻladi?",
+      "v": [
+        "Produtsentlar (fitoplankton) tana oʻlchami kichik boʻlib, umumiy biomassasi birinchi tartib konsumentlaridan kam boʻlgani uchun",
+        "Fitoplankton biomassasi juda katta boʻlgani uchun",
+        "Konsumentlar soni butunlay yoʻq boʻlgani uchun",
+        "Energiya kamaymay borgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra suv havzalarida produtsentlar (fitoplankton) tana oʻlchami kichik, hayot sikli qisqa, mahsuldorligi yuqori, lekin umumiy biomassasi birinchi tartib konsumentlari biomassasidan har doim kam boʻlgani uchun teskari piramida hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m18#ba8d7520"
+    },
+    {
+      "q": "Fitoplanktonning darslikda keltirilgan xususiyatlari qaysilar?",
+      "v": [
+        "Tana oʻlchami kichik, hayot sikli qisqa, mahsuldorligi yuqori",
+        "Tana oʻlchami katta, hayot sikli uzun, mahsuldorligi past",
+        "Faqat quruqlikda yashaydi",
+        "Yirtqich hayvon hisoblanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fitoplankton tana oʻlchami ancha kichik, hayot sikli qisqa, mahsuldorligi yuqori boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#72ffd282"
+    },
+    {
+      "q": "Sonlar va biomassa piramidalari ekosistemaning qanday holatini aks ettiradi?",
+      "v": [
+        "Turgʻun (statik) holatini",
+        "Dinamik holatini",
+        "Faqat energiya oqimini",
+        "Kimyoviy tarkibini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sonlar va biomassa piramidalari ekosistemaning turgʻun (statik) holatini, yaʼni organizmlar soni va biomassasining maʼlum vaqt oraligʻidagi holatini aks ettiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#ba97ec72"
+    },
+    {
+      "q": "Sonlar piramidasi qanday amaliy vazifani hal etishga imkon beradi?",
+      "v": [
+        "Ov mavsumida qancha baliq yoki hayvon ovlash mumkinligini hisoblashga",
+        "Energiya oqimi dinamikasini oʻlchashga",
+        "Fotosintez tezligini aniqlashga",
+        "Iqlim oʻzgarishini bashorat qilishga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sonlar piramidasi ov mavsumida baliq yoki boshqa hayvonlarni salbiy oqibatlarsiz qancha miqdorda ovlash mumkinligini hisoblashga imkon beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#5f9e09ae"
+    },
+    {
+      "q": "Ekologik piramidalarning qaysi turi ekosistemaning funksional holati haqida toʻliq maʼlumot beradi?",
+      "v": [
+        "Energiya piramidasi",
+        "Sonlar piramidasi",
+        "Biomassa piramidasi",
+        "Statik piramida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ekologik piramidalar orasida energiya piramidalari ekosistemaning funksional holati haqida toʻliq maʼlumot beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#6267864c"
+    },
+    {
+      "q": "Energiya piramidasi ekosistemada nimani aks ettiradi (sonlar va biomassa piramidasidan farqli oʻlaroq)?",
+      "v": [
+        "Oziq zanjiri orqali energiyaning oʻtish dinamikasini",
+        "Faqat organizmlar sonini",
+        "Faqat statik biomassani",
+        "Organizmlar tana haroratini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra statik holatni ifodalovchi son va biomassa piramidalaridan farqli oʻlaroq, energiya piramidalari oziq zanjiri orqali energiyaning oʻtish dinamikasini aks ettiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m18#5b88e6f0"
+    },
+    {
+      "q": "Energiya piramidasiga qaysi omillar taʼsir etmaydi?",
+      "v": [
+        "Organizmlarning tana oʻlchamlari va metabolizm intensivligi",
+        "Trofik darajalar soni",
+        "Energiya manbalari",
+        "Oziq tarkibidagi energiya miqdori"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra energiya piramidasiga organizmlarning tana oʻlchamlari va metabolizm jarayonlarining intensivligi taʼsir etmaydi, shuning uchun energiya manbalari toʻgʻri hisobga olinsa, piramida tipik shaklga ega boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m18#3ab5ab1a"
+    },
+    {
+      "q": "10% qoidasiga koʻra oziq zanjiridagi trofik darajalarning umumiy soni nechtadan oshmaydi?",
+      "v": [
+        "Oltitadan",
+        "Uchtadan",
+        "Oʻntadan",
+        "Beshtadan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra quyi trofik darajadan yuqori darajaga energiyaning 10% i oʻtishini hisobga olsak, oziq zanjiridagi trofik darajalarning umumiy soni oltitadan oshmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m18#f4f63346"
+    },
+    {
+      "q": "Ekologik piramida qanday hosil boʻladi?",
+      "v": [
+        "Trofik darajadagi individlar soni, biomassa yoki energiya miqdori bir xil kattalikdagi toʻrtburchaklar shaklida ustma-ust qoʻyilsa",
+        "Faqat produtsentlar bir joyga toʻplansa",
+        "Konsumentlar aylana shaklda joylashsa",
+        "Redutsentlar asosga qoʻyilsa"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra trofik darajadagi individlar soni yoki biomassasi yoki energiya miqdori bir xil kattalikdagi toʻgʻri toʻrtburchaklar shaklida ifodalanib ustma-ust qoʻyib chiqilsa, ekologik piramida hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#0a5b2f8b"
+    },
+    {
+      "q": "Ekologik piramida qoidasi nimani aks ettiruvchi qonuniyatdir?",
+      "v": [
+        "Oziq darajalarida moddalar va energiyaning progressiv kamaya borishini",
+        "Energiyaning har darajada ortib borishini",
+        "Individlar sonining oʻzgarmasligini",
+        "Biomassaning doimiy koʻpayishini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, ekologik piramida qoidasi oziq darajalarida moddalar va energiyaning progressiv kamaya borishini aks ettiruvchi qonuniyatdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#226a8882"
+    },
+    {
+      "q": "Isteʼmolchiga oldingi trofik darajadan modda va energiyaning qaysi qismi oʻtadi?",
+      "v": [
+        "Avvalgi trofik daraja biomassasiga qoʻshilgan qismgina",
+        "Butun isteʼmol qilingan oziq",
+        "Faqat hazm boʻlmagan qism",
+        "Energiyaning 90% i"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra isteʼmolchiga modda va energiyaning oʻzidan avvalgi trofik daraja biomassasiga qoʻshilgan qismigina oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m18#349a7b9a"
+    },
+    {
+      "q": "Oʻzlashtirilgan oziqning bir qismi qanday maqsadga sarflanadi?",
+      "v": [
+        "Tananing qurilishiga va oʻsishiga",
+        "Faqat ekskretsiyaga",
+        "Faqat fotosintezga",
+        "Faqat tashqi muhitga chiqarilishiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻzlashtirilgan oziqning asosiy qismi hayotiy jarayonlarga, bir qismi esa tananing qurilishiga va oʻsishiga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m18#8ef8bd58"
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "nom": "Greetings (Salomlashish)",
+  "bolim": "Tuzilma",
+  "savollar": [
+    {
+      "q": "Someone says 'Hello!'. You say: ___",
+      "v": [
+        "Hello!",
+        "Apple",
+        "Table",
+        "Blue"
+      ],
+      "t": 0,
+      "izoh": "'Hello' — salomlashish uchun ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#1a2cd11a"
+    },
+    {
+      "q": "In the morning you say: ___ ☀️",
+      "v": [
+        "Good morning",
+        "Good night",
+        "Goodbye",
+        "Thank you"
+      ],
+      "t": 0,
+      "izoh": "Ertalab 'Good morning' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#6b704cf1"
+    },
+    {
+      "q": "How are you? — ___",
+      "v": [
+        "I'm fine, thank you",
+        "A red car",
+        "Two dogs",
+        "On the table"
+      ],
+      "t": 0,
+      "izoh": "'How are you?' savoliga 'I'm fine, thank you' deb javob beramiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#af11383a"
+    },
+    {
+      "q": "You go to sleep. You say: ___ 🌙",
+      "v": [
+        "Good night",
+        "Good morning",
+        "Hello",
+        "Good afternoon"
+      ],
+      "t": 0,
+      "izoh": "Uxlashdan oldin 'Good night' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#82f8aeb4"
+    },
+    {
+      "q": "Your friend is leaving. You say: ___ 👋",
+      "v": [
+        "Goodbye",
+        "Good morning",
+        "I'm fine",
+        "Hello"
+      ],
+      "t": 0,
+      "izoh": "Xayrlashganda 'Goodbye' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#2f763d4a"
+    },
+    {
+      "q": "At 3 o'clock in the day you say: ___",
+      "v": [
+        "Good afternoon",
+        "Good night",
+        "Good morning",
+        "Goodbye"
+      ],
+      "t": 0,
+      "izoh": "Tushdan keyin 'Good afternoon' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#10bedd24"
+    },
+    {
+      "q": "What is your name? — ___",
+      "v": [
+        "My name is Ali",
+        "I am ten",
+        "A big dog",
+        "Yes, it is"
+      ],
+      "t": 0,
+      "izoh": "Ismni aytishda 'My name is ...' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#d2ae3370"
+    },
+    {
+      "q": "Someone says 'Thank you!'. You say: ___",
+      "v": [
+        "You're welcome",
+        "Good night",
+        "Hello",
+        "A cat"
+      ],
+      "t": 0,
+      "izoh": "'Thank you' ga javoban 'You're welcome' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#9d9f1079"
+    },
+    {
+      "q": "In the evening you say: ___ 🌆",
+      "v": [
+        "Good evening",
+        "Good morning",
+        "Good afternoon",
+        "Hello dog"
+      ],
+      "t": 0,
+      "izoh": "Kechqurun 'Good evening' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#8c8f0f33"
+    },
+    {
+      "q": "Nice to meet you! — ___",
+      "v": [
+        "Nice to meet you, too",
+        "A blue ball",
+        "Good night",
+        "No, it isn't"
+      ],
+      "t": 0,
+      "izoh": "Tanishganda 'Nice to meet you, too' deb javob beramiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#5c41155f"
+    },
+    {
+      "q": "What do you say in the morning?",
+      "v": [
+        "Good morning",
+        "Good night",
+        "Goodbye",
+        "Thank you"
+      ],
+      "t": 0,
+      "izoh": "Ertalab \"Good morning\" deyiladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#1cc59f85"
+    },
+    {
+      "q": "What do you say before you sleep?",
+      "v": [
+        "Good night",
+        "Good morning",
+        "Hello",
+        "Please"
+      ],
+      "t": 0,
+      "izoh": "Uyquga yotishdan oldin \"Good night\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#9f28edb3"
+    },
+    {
+      "q": "Someone asks: \"How are you?\" What do you say?",
+      "v": [
+        "I'm fine, thank you",
+        "My name is Ali",
+        "See you later",
+        "Happy birthday"
+      ],
+      "t": 0,
+      "izoh": "\"How are you?\" savoliga javob.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#032a8034"
+    },
+    {
+      "q": "Someone asks: \"What's your name?\" What do you say?",
+      "v": [
+        "My name is Ali",
+        "I'm fine",
+        "Good night",
+        "You're welcome"
+      ],
+      "t": 0,
+      "izoh": "Ismini aytish uchun \"My name is...\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#336e1188"
+    },
+    {
+      "q": "You meet a new friend. What do you say?",
+      "v": [
+        "Nice to meet you",
+        "Good night",
+        "Sorry",
+        "Goodbye"
+      ],
+      "t": 0,
+      "izoh": "Yangi tanishganda \"Nice to meet you\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#439209ea"
+    },
+    {
+      "q": "Your friend says \"Thank you.\" What do you say?",
+      "v": [
+        "You're welcome",
+        "Good morning",
+        "Please",
+        "Sorry"
+      ],
+      "t": 0,
+      "izoh": "\"Thank you\"ga javob: \"You're welcome\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#344b8d6f"
+    },
+    {
+      "q": "You are leaving. What do you say?",
+      "v": [
+        "Goodbye",
+        "Hello",
+        "Good morning",
+        "Thank you"
+      ],
+      "t": 0,
+      "izoh": "Ketayotganda \"Goodbye\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#f2cc6c2d"
+    },
+    {
+      "q": "What is a short word for \"hello\"?",
+      "v": [
+        "Hi",
+        "Bye",
+        "Please",
+        "Sorry"
+      ],
+      "t": 0,
+      "izoh": "\"Hello\"ning qisqasi — \"Hi\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#15e2af06"
+    },
+    {
+      "q": "What do you say in the evening?",
+      "v": [
+        "Good evening",
+        "Good morning",
+        "Good afternoon",
+        "Good night"
+      ],
+      "t": 0,
+      "izoh": "Kechqurun \"Good evening\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#08ed6a88"
+    },
+    {
+      "q": "What do you say after 12 o'clock in the day?",
+      "v": [
+        "Good afternoon",
+        "Good morning",
+        "Good night",
+        "Goodbye"
+      ],
+      "t": 0,
+      "izoh": "Tushdan keyin \"Good afternoon\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#77c19a53"
+    },
+    {
+      "q": "You want a pencil. What is the polite word?",
+      "v": [
+        "Please",
+        "Sorry",
+        "Bye",
+        "Hi"
+      ],
+      "t": 0,
+      "izoh": "Iltimos so'zi — \"Please\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#5f2c765d"
+    },
+    {
+      "q": "You made a mistake. What do you say?",
+      "v": [
+        "Sorry",
+        "Thank you",
+        "Hello",
+        "Good night"
+      ],
+      "t": 0,
+      "izoh": "Xato qilganda \"Sorry\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#4d5ff744"
+    },
+    {
+      "q": "What is a short word for \"goodbye\"?",
+      "v": [
+        "Bye",
+        "Hi",
+        "Please",
+        "Sorry"
+      ],
+      "t": 0,
+      "izoh": "\"Goodbye\"ning qisqasi — \"Bye\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#2b7582db"
+    },
+    {
+      "q": "It is your friend's birthday. What do you say?",
+      "v": [
+        "Happy birthday!",
+        "Good night",
+        "Sorry",
+        "See you later"
+      ],
+      "t": 0,
+      "izoh": "Tug'ilgan kunda \"Happy birthday!\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#e6d219d9"
+    },
+    {
+      "q": "Your friend gives you a gift. What do you say?",
+      "v": [
+        "Thank you",
+        "Goodbye",
+        "Good morning",
+        "Please"
+      ],
+      "t": 0,
+      "izoh": "Sovg'a olganda \"Thank you\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#76ce0742"
+    },
+    {
+      "q": "You see your friend at school. What do you say?",
+      "v": [
+        "Hello",
+        "Good night",
+        "Sorry",
+        "You're welcome"
+      ],
+      "t": 0,
+      "izoh": "Uchrashganda \"Hello\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#902320de"
+    },
+    {
+      "q": "Someone says \"Nice to meet you.\" What do you say?",
+      "v": [
+        "Nice to meet you too",
+        "Good night",
+        "Sorry",
+        "Please"
+      ],
+      "t": 0,
+      "izoh": "Javob: \"Nice to meet you too\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#a260be4c"
+    },
+    {
+      "q": "You will see your friend soon. What do you say?",
+      "v": [
+        "See you later",
+        "Good morning",
+        "Sorry",
+        "Thank you"
+      ],
+      "t": 0,
+      "izoh": "Tez orada ko'rishganda \"See you later\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#a5ea5a5c"
+    },
+    {
+      "q": "Someone helps you. What do you say?",
+      "v": [
+        "Thank you",
+        "Good night",
+        "Hello",
+        "Bye"
+      ],
+      "t": 0,
+      "izoh": "Yordam berganda \"Thank you\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#7a9e2e08"
+    },
+    {
+      "q": "Which one is a greeting?",
+      "v": [
+        "Hi",
+        "Book",
+        "Apple",
+        "Cat"
+      ],
+      "t": 0,
+      "izoh": "\"Hi\" — salomlashish so'zi.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#6b225c14"
+    },
+    {
+      "q": "Someone asks: \"How are you?\" A good answer is...",
+      "v": [
+        "I'm fine",
+        "My name is Sara",
+        "It is a cat",
+        "Good night"
+      ],
+      "t": 0,
+      "izoh": "\"How are you?\"ga \"I'm fine\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#eac00e64"
+    },
+    {
+      "q": "When do you say \"Good morning\"?",
+      "v": [
+        "In the morning",
+        "At night",
+        "In the evening",
+        "Never"
+      ],
+      "t": 0,
+      "izoh": "\"Good morning\" — ertalab.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#3898f930"
+    },
+    {
+      "q": "When do you say \"Good night\"?",
+      "v": [
+        "At night",
+        "In the morning",
+        "At noon",
+        "In the afternoon"
+      ],
+      "t": 0,
+      "izoh": "\"Good night\" — kechasi.",
+      "qiy": "oson",
+      "id": "ing_kids_m1#220e9e31"
+    },
+    {
+      "q": "Your name is Aziz. Someone asks your name. You say...",
+      "v": [
+        "My name is Aziz",
+        "Good morning",
+        "Thank you",
+        "Sorry"
+      ],
+      "t": 0,
+      "izoh": "Ismni aytish: \"My name is Aziz\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#4ff0b9d7"
+    },
+    {
+      "q": "Which word do you use when you ask for something politely?",
+      "v": [
+        "Please",
+        "Bye",
+        "Hello",
+        "Night"
+      ],
+      "t": 0,
+      "izoh": "Muloyim so'rash uchun \"Please\".",
+      "qiy": "oson",
+      "id": "ing_kids_m1#8c2fc0f9"
+    }
+  ]
+}

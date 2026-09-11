@@ -9,7 +9,7 @@
  *
  * available: false → "Tez kunda" holatida ko'rsatiladi (locked).
  */
-import { Car, Zap, FlaskConical, Globe, BookOpen, Dna, Languages, type LucideIcon, type LucideProps } from 'lucide-react'
+import { Car, Zap, FlaskConical, Globe, BookOpen, Dna, Languages, Compass, Feather, BookMarked, type LucideIcon, type LucideProps } from 'lucide-react'
 import { forwardRef } from 'react'
 import { SUBJECT_BASES, DEFAULT_SUBJECT_ID, type SubjectId, type SubjectBase } from '../../../shared/subjects'
 
@@ -58,6 +58,9 @@ const UI_MAP: Record<SubjectId, { icon: LucideIcon; color: string; colorDark: st
   ingliz:     { icon: Globe,        color: '#b96b34', colorDark: '#96552a' },
   tarix:      { icon: BookOpen,     color: '#a8453c', colorDark: '#87372f' },
   biologiya:  { icon: Dna,          color: '#5f7a3c', colorDark: '#4c6230' },
+  geografiya: { icon: Compass,      color: '#2d8473', colorDark: '#22695c' },
+  onatili:    { icon: BookMarked,   color: '#3274a1', colorDark: '#275c80' },
+  adabiyot:   { icon: Feather,      color: '#a04870', colorDark: '#7f3858' },
 }
 
 export const SUBJECTS: SubjectConfig[] = (SUBJECT_BASES as readonly SubjectBase[]).map((s) => {

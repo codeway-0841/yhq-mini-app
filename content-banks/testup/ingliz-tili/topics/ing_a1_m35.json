@@ -1,0 +1,1306 @@
+{
+  "nom": "Countries & nationalities (Davlat-millat)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "People from France are ___.",
+      "v": [
+        "France",
+        "French",
+        "Frenchish",
+        "Francian"
+      ],
+      "t": 1,
+      "izoh": "Fransiyaliklar - 'French'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#82f8a05e"
+    },
+    {
+      "q": "People from Japan are ___.",
+      "v": [
+        "Japanese",
+        "Japan",
+        "Japanish",
+        "Japaner"
+      ],
+      "t": 0,
+      "izoh": "Yaponiyaliklar - 'Japanese'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#6d2ac811"
+    },
+    {
+      "q": "People from Uzbekistan are ___.",
+      "v": [
+        "Uzbekish",
+        "Uzbek",
+        "Uzbeki",
+        "Uzbekland"
+      ],
+      "t": 1,
+      "izoh": "O'zbekistonliklar - 'Uzbek'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#26b151f0"
+    },
+    {
+      "q": "People from England are ___.",
+      "v": [
+        "English",
+        "Englandish",
+        "Englander",
+        "Britainish"
+      ],
+      "t": 0,
+      "izoh": "Angliyaliklar - 'English'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#1cce90e7"
+    },
+    {
+      "q": "People from America are ___.",
+      "v": [
+        "Americ",
+        "American",
+        "Americish",
+        "Americar"
+      ],
+      "t": 1,
+      "izoh": "Amerikaliklar - 'American'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#693cfe59"
+    },
+    {
+      "q": "People from Germany are ___.",
+      "v": [
+        "German",
+        "Germanish",
+        "Germeny",
+        "Germen"
+      ],
+      "t": 0,
+      "izoh": "Germaniyaliklar - 'German'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#b3833412"
+    },
+    {
+      "q": "People from Italy are ___.",
+      "v": [
+        "Italish",
+        "Italy",
+        "Italian",
+        "Italiano"
+      ],
+      "t": 2,
+      "izoh": "Italiyaliklar - 'Italian'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#b438d8b6"
+    },
+    {
+      "q": "People from Spain are ___.",
+      "v": [
+        "Spanish",
+        "Spainish",
+        "Spainer",
+        "Spainland"
+      ],
+      "t": 0,
+      "izoh": "Ispaniyaliklar - 'Spanish'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#5fe9931f"
+    },
+    {
+      "q": "People from Russia are ___.",
+      "v": [
+        "Russish",
+        "Russian",
+        "Russ",
+        "Russland"
+      ],
+      "t": 1,
+      "izoh": "Rossiyaliklar - 'Russian'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#03a73c20"
+    },
+    {
+      "q": "People from China are ___.",
+      "v": [
+        "Chinese",
+        "Chinish",
+        "Chinan",
+        "Chinaish"
+      ],
+      "t": 0,
+      "izoh": "Xitoyliklar - 'Chinese'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#f257e30b"
+    },
+    {
+      "q": "People from Turkey are ___.",
+      "v": [
+        "Turkey",
+        "Turkish",
+        "Turker",
+        "Turkash"
+      ],
+      "t": 1,
+      "izoh": "Turkiyaliklar - 'Turkish'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#91df91d4"
+    },
+    {
+      "q": "People from Korea are ___.",
+      "v": [
+        "Korean",
+        "Koreaish",
+        "Korer",
+        "Koreanish"
+      ],
+      "t": 0,
+      "izoh": "Koreyaliklar - 'Korean'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#8a9488d1"
+    },
+    {
+      "q": "Tokyo is in ___.",
+      "v": [
+        "China",
+        "Japan",
+        "Korea",
+        "Turkey"
+      ],
+      "t": 1,
+      "izoh": "Tokio - Yaponiya poytaxti.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#57a9a2f8"
+    },
+    {
+      "q": "Rome is in ___.",
+      "v": [
+        "Italy",
+        "Spain",
+        "France",
+        "Germany"
+      ],
+      "t": 0,
+      "izoh": "Rim - Italiya poytaxti.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#789301cf"
+    },
+    {
+      "q": "Paris is in ___.",
+      "v": [
+        "Italy",
+        "France",
+        "Spain",
+        "England"
+      ],
+      "t": 1,
+      "izoh": "Parij - Fransiya poytaxti.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#12449517"
+    },
+    {
+      "q": "Madrid is in ___.",
+      "v": [
+        "Spain",
+        "Italy",
+        "France",
+        "Germany"
+      ],
+      "t": 0,
+      "izoh": "Madrid - Ispaniya poytaxti.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#078d7139"
+    },
+    {
+      "q": "Berlin is in ___.",
+      "v": [
+        "France",
+        "Germany",
+        "Italy",
+        "Russia"
+      ],
+      "t": 1,
+      "izoh": "Berlin - Germaniya poytaxti.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#b7bb002f"
+    },
+    {
+      "q": "Tashkent is in ___.",
+      "v": [
+        "Russia",
+        "Turkey",
+        "Uzbekistan",
+        "China"
+      ],
+      "t": 2,
+      "izoh": "Toshkent - O'zbekiston poytaxti.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#05ef24ad"
+    },
+    {
+      "q": "Moscow is in ___.",
+      "v": [
+        "Russia",
+        "Uzbekistan",
+        "China",
+        "Korea"
+      ],
+      "t": 0,
+      "izoh": "Moskva - Rossiya poytaxti.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#54959171"
+    },
+    {
+      "q": "Beijing is in ___.",
+      "v": [
+        "Japan",
+        "Korea",
+        "China",
+        "Turkey"
+      ],
+      "t": 2,
+      "izoh": "Pekin - Xitoy poytaxti.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#bd25680a"
+    },
+    {
+      "q": "London is in ___.",
+      "v": [
+        "England",
+        "America",
+        "France",
+        "Italy"
+      ],
+      "t": 0,
+      "izoh": "London - Angliya poytaxti.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#dc98f93e"
+    },
+    {
+      "q": "Istanbul is in ___.",
+      "v": [
+        "Spain",
+        "Turkey",
+        "Russia",
+        "Korea"
+      ],
+      "t": 1,
+      "izoh": "Istanbul - Turkiya shahri.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#bf35d503"
+    },
+    {
+      "q": "Seoul is in ___.",
+      "v": [
+        "Korea",
+        "Japan",
+        "China",
+        "Turkey"
+      ],
+      "t": 0,
+      "izoh": "Seul - Koreya poytaxti.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#5c7a74c0"
+    },
+    {
+      "q": "Which one is a country?",
+      "v": [
+        "German",
+        "Germany",
+        "Germanic",
+        "Germen"
+      ],
+      "t": 1,
+      "izoh": "'Germany' - davlat, 'German' - millat.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#224b80c7"
+    },
+    {
+      "q": "Which one is a nationality?",
+      "v": [
+        "Italy",
+        "Italian",
+        "Rome",
+        "Milan"
+      ],
+      "t": 1,
+      "izoh": "'Italian' - millat, 'Italy' - davlat.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#18c6fde7"
+    },
+    {
+      "q": "I am from Uzbekistan. I am ___.",
+      "v": [
+        "Uzbekistan",
+        "Uzbek",
+        "Uzbekland",
+        "Uzbekish"
+      ],
+      "t": 1,
+      "izoh": "Millat: 'Uzbek'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#86edd8af"
+    },
+    {
+      "q": "She is from France. She speaks ___.",
+      "v": [
+        "French",
+        "France",
+        "Frenchland",
+        "Franch"
+      ],
+      "t": 0,
+      "izoh": "Fransiya tili - 'French'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#1b849132"
+    },
+    {
+      "q": "They are from China. They speak ___.",
+      "v": [
+        "China",
+        "Chinese",
+        "Chinish",
+        "Chines"
+      ],
+      "t": 1,
+      "izoh": "Xitoy tili - 'Chinese'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#204e9647"
+    },
+    {
+      "q": "He is from Japan. He speaks ___.",
+      "v": [
+        "Japanese",
+        "Japan",
+        "Japanish",
+        "Japaner"
+      ],
+      "t": 0,
+      "izoh": "Yaponiya tili - 'Japanese'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#0130f2a3"
+    },
+    {
+      "q": "Find the correct sentence.",
+      "v": [
+        "He is German.",
+        "He is Germany.",
+        "He is Germanish.",
+        "He is Germen."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: 'He is German.'",
+      "qiy": "oson",
+      "id": "ing_a1_m35#4d0df7ab"
+    },
+    {
+      "q": "I am ___. I live in Tashkent.",
+      "v": [
+        "Uzbekistan",
+        "Uzbek",
+        "Uzbeker",
+        "Uzbekish"
+      ],
+      "t": 1,
+      "izoh": "Millat 'Uzbek' bo'ladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#65ce02c4"
+    },
+    {
+      "q": "Where are you ___? - I'm from Italy.",
+      "v": [
+        "from",
+        "in",
+        "at",
+        "of"
+      ],
+      "t": 0,
+      "izoh": "'Where are you from?' - qayerdansiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#5d211d19"
+    },
+    {
+      "q": "Pizza and pasta are famous foods from ___.",
+      "v": [
+        "Russia",
+        "Italy",
+        "Korea",
+        "England"
+      ],
+      "t": 1,
+      "izoh": "Pitsa va pasta - Italiya taomlari.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#92c74b91"
+    },
+    {
+      "q": "Sushi is a famous food from ___.",
+      "v": [
+        "Japan",
+        "France",
+        "Spain",
+        "Turkey"
+      ],
+      "t": 0,
+      "izoh": "Sushi - Yaponiya taomi.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#1d56d629"
+    },
+    {
+      "q": "Which language do people speak in Spain?",
+      "v": [
+        "Spanish",
+        "Spain",
+        "Spainish",
+        "Espaniol"
+      ],
+      "t": 0,
+      "izoh": "Ispaniyada 'Spanish' tilida gaplashadi.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#ed8a9e28"
+    },
+    {
+      "q": "Which language do people speak in Russia?",
+      "v": [
+        "Russia",
+        "Russian",
+        "Russ",
+        "Rossian"
+      ],
+      "t": 1,
+      "izoh": "Rossiyada 'Russian' tilida gaplashadi.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#3d51f0fa"
+    },
+    {
+      "q": "The Great Wall is in ___.",
+      "v": [
+        "China",
+        "Japan",
+        "Korea",
+        "Turkey"
+      ],
+      "t": 0,
+      "izoh": "Buyuk devor - Xitoyda.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#8b46b545"
+    },
+    {
+      "q": "Match: Turkey - ___.",
+      "v": [
+        "Turkish",
+        "Turkey",
+        "Turker",
+        "Turkland"
+      ],
+      "t": 0,
+      "izoh": "Turkiya millati - 'Turkish'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#4946b59a"
+    },
+    {
+      "q": "Match: Korea - ___.",
+      "v": [
+        "Korea",
+        "Korean",
+        "Korer",
+        "Koreish"
+      ],
+      "t": 1,
+      "izoh": "Koreya millati - 'Korean'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#4adaa3a0"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She is American.",
+        "She is America.",
+        "She is an America.",
+        "She American is."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: 'She is American.'",
+      "qiy": "oson",
+      "id": "ing_a1_m35#9a16dc9c"
+    },
+    {
+      "q": "Anna is from Germany. Anna is ___.",
+      "v": [
+        "Germany",
+        "German",
+        "Germanish",
+        "a Germany"
+      ],
+      "t": 1,
+      "izoh": "Millat: 'German'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#0f59f800"
+    },
+    {
+      "q": "Choose the country, not the nationality.",
+      "v": [
+        "French",
+        "France",
+        "Frenchman",
+        "Frenchy"
+      ],
+      "t": 1,
+      "izoh": "'France' - davlat, 'French' - millat.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#3fb96e68"
+    },
+    {
+      "q": "My friend is ___. He lives in London.",
+      "v": [
+        "England",
+        "English",
+        "Englandish",
+        "Englisher"
+      ],
+      "t": 1,
+      "izoh": "Angliyalik odam - 'English'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#44e315cf"
+    },
+    {
+      "q": "People in America speak ___.",
+      "v": [
+        "American",
+        "English",
+        "America",
+        "Americanish"
+      ],
+      "t": 1,
+      "izoh": "Amerikada 'English' (ingliz) tilida gaplashadi.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#35c1a88e"
+    },
+    {
+      "q": "Choose the correct spelling of the nationality.",
+      "v": [
+        "Chineese",
+        "Chinees",
+        "Chinese",
+        "Chinise"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri yozilishi: 'Chinese'.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#319810dd"
+    },
+    {
+      "q": "The capital of France is ___.",
+      "v": [
+        "Paris",
+        "London",
+        "Rome",
+        "Madrid"
+      ],
+      "t": 0,
+      "izoh": "Fransiya poytaxti — Paris.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#af21dea2"
+    },
+    {
+      "q": "She is from Uzbekistan. She is ___.",
+      "v": [
+        "Uzbek",
+        "Uzbekish",
+        "Uzbekland",
+        "Uzbekistanic"
+      ],
+      "t": 0,
+      "izoh": "Ozbekistonlik — Uzbek.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#b0394797"
+    },
+    {
+      "q": "People in Germany speak ___.",
+      "v": [
+        "German",
+        "French",
+        "Dutch",
+        "Spanish"
+      ],
+      "t": 0,
+      "izoh": "Germaniyada nemis tili — German.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#cdfcc75e"
+    },
+    {
+      "q": "Italy is a ___.",
+      "v": [
+        "country",
+        "nationality",
+        "language",
+        "hobby"
+      ],
+      "t": 0,
+      "izoh": "Italiya — davlat (country).",
+      "qiy": "oson",
+      "id": "ing_a1_m35#5e991077"
+    },
+    {
+      "q": "The capital of England is ___.",
+      "v": [
+        "London",
+        "Paris",
+        "Berlin",
+        "Rome"
+      ],
+      "t": 0,
+      "izoh": "Angliya poytaxti — London.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#fe072d57"
+    },
+    {
+      "q": "The capital of Japan is ___.",
+      "v": [
+        "Tokyo",
+        "Beijing",
+        "Seoul",
+        "Bangkok"
+      ],
+      "t": 0,
+      "izoh": "Yaponiya poytaxti — Tokyo.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#66b8f2a9"
+    },
+    {
+      "q": "People from Spain speak ___.",
+      "v": [
+        "Spanish",
+        "Italian",
+        "French",
+        "Portuguese"
+      ],
+      "t": 0,
+      "izoh": "Ispaniyada ispan tili — Spanish.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#44b6d489"
+    },
+    {
+      "q": "He lives in Tashkent. Tashkent is in ___.",
+      "v": [
+        "Uzbekistan",
+        "Kazakhstan",
+        "Turkey",
+        "Russia"
+      ],
+      "t": 0,
+      "izoh": "Toshkent — Ozbekistonda.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#a59e847a"
+    },
+    {
+      "q": "The capital of Russia is ___.",
+      "v": [
+        "Moscow",
+        "Kiev",
+        "Minsk",
+        "Warsaw"
+      ],
+      "t": 0,
+      "izoh": "Rossiya poytaxti — Moscow.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#d774ec70"
+    },
+    {
+      "q": "The capital of Italy is ___.",
+      "v": [
+        "Rome",
+        "Milan",
+        "Venice",
+        "Naples"
+      ],
+      "t": 0,
+      "izoh": "Italiya poytaxti — Rome.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#934319ca"
+    },
+    {
+      "q": "People in China speak ___.",
+      "v": [
+        "Chinese",
+        "Japanese",
+        "Korean",
+        "Thai"
+      ],
+      "t": 0,
+      "izoh": "Xitoyda xitoy tili — Chinese.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#c4ab3775"
+    },
+    {
+      "q": "The capital of Germany is ___.",
+      "v": [
+        "Berlin",
+        "Munich",
+        "Hamburg",
+        "Bonn"
+      ],
+      "t": 0,
+      "izoh": "Germaniya poytaxti — Berlin.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#08aa444f"
+    },
+    {
+      "q": "Which one is a nationality?",
+      "v": [
+        "French",
+        "France",
+        "Paris",
+        "Europe"
+      ],
+      "t": 0,
+      "izoh": "'French' — millat, 'France' — davlat.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#18c6fde7~2"
+    },
+    {
+      "q": "Which one is a country?",
+      "v": [
+        "Egypt",
+        "Egyptian",
+        "Cairo",
+        "Arabic"
+      ],
+      "t": 0,
+      "izoh": "'Egypt' — davlat, 'Egyptian' — millat.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#224b80c7~2"
+    },
+    {
+      "q": "The capital of Spain is ___.",
+      "v": [
+        "Madrid",
+        "Barcelona",
+        "Seville",
+        "Valencia"
+      ],
+      "t": 0,
+      "izoh": "Ispaniya poytaxti — Madrid.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#8f242963"
+    },
+    {
+      "q": "People in France speak ___.",
+      "v": [
+        "French",
+        "German",
+        "English",
+        "Italian"
+      ],
+      "t": 0,
+      "izoh": "Fransiyada fransuz tili — French.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#0bc0c47b"
+    },
+    {
+      "q": "The capital of China is ___.",
+      "v": [
+        "Beijing",
+        "Shanghai",
+        "Tokyo",
+        "Seoul"
+      ],
+      "t": 0,
+      "izoh": "Xitoy poytaxti — Beijing.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#42ec0c37"
+    },
+    {
+      "q": "People from Egypt are ___.",
+      "v": [
+        "Egyptian",
+        "Egypt",
+        "Egyptish",
+        "Egypter"
+      ],
+      "t": 0,
+      "izoh": "Misrlik — Egyptian.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#90cb12cc"
+    },
+    {
+      "q": "She speaks Italian. She is from ___.",
+      "v": [
+        "Italy",
+        "Spain",
+        "France",
+        "Germany"
+      ],
+      "t": 0,
+      "izoh": "Italyan tilida — Italiyadan.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#92039681"
+    },
+    {
+      "q": "The capital of Turkey is ___.",
+      "v": [
+        "Ankara",
+        "Istanbul",
+        "Izmir",
+        "Bursa"
+      ],
+      "t": 0,
+      "izoh": "Turkiya poytaxti — Ankara.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#a5199eb5"
+    },
+    {
+      "q": "People from Brazil are ___.",
+      "v": [
+        "Brazilian",
+        "Brazil",
+        "Brazilish",
+        "Braziler"
+      ],
+      "t": 0,
+      "izoh": "Braziliyalik — Brazilian.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#20d15a25"
+    },
+    {
+      "q": "People in Japan speak ___.",
+      "v": [
+        "Japanese",
+        "Chinese",
+        "Korean",
+        "English"
+      ],
+      "t": 0,
+      "izoh": "Yaponiyada yapon tili — Japanese.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#1dbd3489"
+    },
+    {
+      "q": "The capital of Uzbekistan is ___.",
+      "v": [
+        "Tashkent",
+        "Samarkand",
+        "Bukhara",
+        "Andijan"
+      ],
+      "t": 0,
+      "izoh": "Ozbekiston poytaxti — Toshkent.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#e57a72f5"
+    },
+    {
+      "q": "People from India are ___.",
+      "v": [
+        "Indian",
+        "India",
+        "Indish",
+        "Indianer"
+      ],
+      "t": 0,
+      "izoh": "Hindistonlik — Indian.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#f7dca235"
+    },
+    {
+      "q": "He is from Germany, so he is ___.",
+      "v": [
+        "German",
+        "Germany",
+        "Germanish",
+        "Germen"
+      ],
+      "t": 0,
+      "izoh": "Germaniyalik — German.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#56be97d5"
+    },
+    {
+      "q": "The capital of Korea is ___.",
+      "v": [
+        "Seoul",
+        "Busan",
+        "Tokyo",
+        "Beijing"
+      ],
+      "t": 0,
+      "izoh": "Janubiy Koreya poytaxti — Seoul.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#cabc65fd"
+    },
+    {
+      "q": "People from Canada are ___.",
+      "v": [
+        "Canadian",
+        "Canada",
+        "Canadish",
+        "Canadaer"
+      ],
+      "t": 0,
+      "izoh": "Kanadalik — Canadian.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#56768fd1"
+    },
+    {
+      "q": "People in Russia speak ___.",
+      "v": [
+        "Russian",
+        "Polish",
+        "Ukrainian",
+        "German"
+      ],
+      "t": 0,
+      "izoh": "Rossiyada rus tili — Russian.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#0e92fb78"
+    },
+    {
+      "q": "The capital of Egypt is ___.",
+      "v": [
+        "Cairo",
+        "Alexandria",
+        "Giza",
+        "Luxor"
+      ],
+      "t": 0,
+      "izoh": "Misr poytaxti — Cairo.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#a608643c"
+    },
+    {
+      "q": "He is from Italy. He is ___.",
+      "v": [
+        "Italian",
+        "Italy",
+        "Italish",
+        "Italiener"
+      ],
+      "t": 0,
+      "izoh": "Italiyalik — Italian.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#78688f69"
+    },
+    {
+      "q": "The capital of Brazil is ___.",
+      "v": [
+        "Brasilia",
+        "Rio de Janeiro",
+        "Sao Paulo",
+        "Salvador"
+      ],
+      "t": 0,
+      "izoh": "Braziliya poytaxti — Brasilia.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#e942d448"
+    },
+    {
+      "q": "People in Turkey speak ___.",
+      "v": [
+        "Turkish",
+        "Arabic",
+        "Persian",
+        "Greek"
+      ],
+      "t": 0,
+      "izoh": "Turkiyada turk tili — Turkish.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#4f4165f4"
+    },
+    {
+      "q": "Which one is a language?",
+      "v": [
+        "Korean",
+        "Korea",
+        "Seoul",
+        "Asia"
+      ],
+      "t": 0,
+      "izoh": "'Korean' — til (va millat).",
+      "qiy": "oson",
+      "id": "ing_a1_m35#027d7e0c"
+    },
+    {
+      "q": "The capital of India is ___.",
+      "v": [
+        "New Delhi",
+        "Mumbai",
+        "Kolkata",
+        "Chennai"
+      ],
+      "t": 0,
+      "izoh": "Hindiston poytaxti — New Delhi.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#93565fa0"
+    },
+    {
+      "q": "She is from China. She is ___.",
+      "v": [
+        "Chinese",
+        "China",
+        "Chinish",
+        "Chinaer"
+      ],
+      "t": 0,
+      "izoh": "Xitoylik — Chinese.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#55c54761"
+    },
+    {
+      "q": "The capital of Canada is ___.",
+      "v": [
+        "Ottawa",
+        "Toronto",
+        "Vancouver",
+        "Montreal"
+      ],
+      "t": 0,
+      "izoh": "Kanada poytaxti — Ottawa.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#358aed26"
+    },
+    {
+      "q": "People in Korea speak ___.",
+      "v": [
+        "Korean",
+        "Japanese",
+        "Chinese",
+        "Thai"
+      ],
+      "t": 0,
+      "izoh": "Koreyada koreys tili — Korean.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#95a855dd"
+    },
+    {
+      "q": "'Uzbek' is the nationality of which country?",
+      "v": [
+        "Uzbekistan",
+        "Ukraine",
+        "Turkey",
+        "Kazakhstan"
+      ],
+      "t": 0,
+      "izoh": "'Uzbek' — Ozbekiston millati.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#2df6a03f"
+    },
+    {
+      "q": "The capital of the USA is ___.",
+      "v": [
+        "Washington, D.C.",
+        "New York",
+        "Los Angeles",
+        "Chicago"
+      ],
+      "t": 0,
+      "izoh": "AQSh poytaxti — Washington, D.C.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#2babe1c3"
+    },
+    {
+      "q": "People in Italy speak ___.",
+      "v": [
+        "Italian",
+        "Spanish",
+        "French",
+        "Latin"
+      ],
+      "t": 0,
+      "izoh": "Italiyada italyan tili — Italian.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#e67dd66b"
+    },
+    {
+      "q": "He speaks Russian. He is ___.",
+      "v": [
+        "Russian",
+        "Russia",
+        "Russish",
+        "Russiar"
+      ],
+      "t": 0,
+      "izoh": "Rus tilida — Russian.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#fbebaddb"
+    },
+    {
+      "q": "Which is a country, not a nationality?",
+      "v": [
+        "Spain",
+        "Spanish",
+        "Madrid",
+        "Europe"
+      ],
+      "t": 0,
+      "izoh": "'Spain' — davlat.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#95a5783a"
+    },
+    {
+      "q": "The Eiffel Tower is in ___.",
+      "v": [
+        "France",
+        "Italy",
+        "Spain",
+        "Germany"
+      ],
+      "t": 0,
+      "izoh": "Eyfel minorasi — Fransiyada.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#9dc43e8c"
+    },
+    {
+      "q": "People from Uzbekistan speak ___.",
+      "v": [
+        "Uzbek",
+        "Turkish",
+        "Russian",
+        "Persian"
+      ],
+      "t": 0,
+      "izoh": "Ozbekistonda ozbek tili — Uzbek.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#3d9b7948"
+    },
+    {
+      "q": "The pyramids are in ___.",
+      "v": [
+        "Egypt",
+        "Iraq",
+        "India",
+        "Turkey"
+      ],
+      "t": 0,
+      "izoh": "Piramidalar — Misrda.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#74a04f4e"
+    },
+    {
+      "q": "He is American. He is from ___.",
+      "v": [
+        "the USA",
+        "England",
+        "Canada",
+        "Australia"
+      ],
+      "t": 0,
+      "izoh": "American — AQShdan.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#61c256b3"
+    },
+    {
+      "q": "Which is correct?",
+      "v": [
+        "I am from Japan.",
+        "I am from Japanese.",
+        "I am Japan.",
+        "I from Japan."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: I am from Japan.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#bc249275"
+    },
+    {
+      "q": "Which is correct?",
+      "v": [
+        "She is Turkish.",
+        "She is from Turkish.",
+        "She is Turkey.",
+        "She Turkish."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: She is Turkish.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#bc249275~2"
+    },
+    {
+      "q": "People in England speak ___.",
+      "v": [
+        "English",
+        "British",
+        "England",
+        "Englandish"
+      ],
+      "t": 0,
+      "izoh": "Angliyada ingliz tili — English.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#291aef51"
+    },
+    {
+      "q": "The capital of ___ is Rome.",
+      "v": [
+        "Italy",
+        "Spain",
+        "Greece",
+        "France"
+      ],
+      "t": 0,
+      "izoh": "Rim — Italiya poytaxti.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#edc3fd40"
+    },
+    {
+      "q": "Sushi is a food from ___.",
+      "v": [
+        "Japan",
+        "China",
+        "Korea",
+        "Thailand"
+      ],
+      "t": 0,
+      "izoh": "Sushi — Yaponiya taomi.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#02634970"
+    },
+    {
+      "q": "Pizza and pasta come from ___.",
+      "v": [
+        "Italy",
+        "Spain",
+        "France",
+        "Greece"
+      ],
+      "t": 0,
+      "izoh": "Pitsa va pasta — Italiyadan.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#ec0d5ef0"
+    },
+    {
+      "q": "A person from Canada speaks English or ___.",
+      "v": [
+        "French",
+        "German",
+        "Spanish",
+        "Italian"
+      ],
+      "t": 0,
+      "izoh": "Kanadada ingliz yoki fransuz tili.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#f4cce569"
+    },
+    {
+      "q": "Which nationality matches Brazil?",
+      "v": [
+        "Brazilian",
+        "Brazil",
+        "Brazilish",
+        "Braziler"
+      ],
+      "t": 0,
+      "izoh": "Braziliya millati — Brazilian.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#23edfbcd"
+    },
+    {
+      "q": "The capital of ___ is Tokyo.",
+      "v": [
+        "Japan",
+        "China",
+        "Korea",
+        "Vietnam"
+      ],
+      "t": 0,
+      "izoh": "Tokio — Yaponiya poytaxti.",
+      "qiy": "oson",
+      "id": "ing_a1_m35#6ab20561"
+    }
+  ]
+}

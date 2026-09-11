@@ -1,0 +1,486 @@
+{
+  "nom": "39-mavzu. Solishtirma Erish Issiqligi Amorf Jismlar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Moddaning solishtirma erish issiqligi deb nimaga aytiladi?",
+      "v": [
+        "Erish temperaturasida turgan 1 kg kristall moddani to'liq eritish uchun zarur bo'lgan issiqlik miqdoriga",
+        "1 kg moddani 1 °C ga qizdirish uchun zarur issiqlik miqdoriga",
+        "1 kg suyuqlikni bug'ga aylantirish uchun zarur issiqlik miqdoriga",
+        "Istalgan massali jismni eritish uchun zarur issiqlik miqdoriga"
+      ],
+      "t": 0,
+      "izoh": "Erish temperaturasida turgan 1 kg kristall moddani to'liq eritish uchun zarur bo'lgan issiqlik miqdoriga solishtirma erish issiqligi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#3327efcb"
+    },
+    {
+      "q": "Solishtirma erish issiqligi qanday harf bilan belgilanadi?",
+      "v": [
+        "λ (lyamda)",
+        "r",
+        "c",
+        "q"
+      ],
+      "t": 0,
+      "izoh": "Solishtirma erish issiqligi λ (lyamda) bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#f6eaf16d"
+    },
+    {
+      "q": "Solishtirma erish issiqligining formulasi qanday ifodalanadi?",
+      "v": [
+        "λ = Qₑ/m",
+        "λ = Qₑ·m",
+        "λ = m/Qₑ",
+        "λ = Qₑ/(m·ΔT)"
+      ],
+      "t": 0,
+      "izoh": "Ta'rifga ko'ra λ = Qₑ/m, bunda Qₑ — erish temperaturasida moddani suyuqlikka aylantirish uchun zarur issiqlik miqdori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#c818a90d"
+    },
+    {
+      "q": "Solishtirma erish issiqligi qanday birliklarda o'lchanadi?",
+      "v": [
+        "J/kg va kJ/kg",
+        "J/(kg·K)",
+        "J/soat",
+        "N/kg"
+      ],
+      "t": 0,
+      "izoh": "λ asosan J/kg va kJ/kg birliklarda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#7036e12d"
+    },
+    {
+      "q": "Solishtirma erish issiqligi λ bo'lgan m massali jismni erish temperaturasida eritish uchun zarur issiqlik miqdori qanday topiladi?",
+      "v": [
+        "Qₑ = λ·m",
+        "Qₑ = λ/m",
+        "Qₑ = m/λ",
+        "Qₑ = λ·m·ΔT"
+      ],
+      "t": 0,
+      "izoh": "Qₑ = λ·m formula orqali hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#af59f2c6"
+    },
+    {
+      "q": "Berilgan massali kristall jismni erish temperaturasida suyuqlikka aylantirish uchun qancha issiqlik sarflansa, qotishda qancha issiqlik ajraladi?",
+      "v": [
+        "Shu temperaturada suyuq holatdan qattiq holatga aylanishida shuncha issiqlik ajralib chiqadi",
+        "Ikki baravar ko'p issiqlik ajraladi",
+        "Yarim baravar kam issiqlik ajraladi",
+        "Issiqlik umuman ajralmaydi"
+      ],
+      "t": 0,
+      "izoh": "Eritish uchun qancha issiqlik sarflangan bo'lsa, qotishda shuncha issiqlik miqdori ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#8fd6d9a6"
+    },
+    {
+      "q": "Jadvalga ko'ra, muzning solishtirma erish issiqligi qancha?",
+      "v": [
+        "334 kJ/kg",
+        "336 kJ/kg",
+        "385 kJ/kg",
+        "266 kJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda muz uchun λ = 334 kJ/kg berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#c0ded0f7"
+    },
+    {
+      "q": "Jadvalga ko'ra, qaysi moddaning solishtirma erish issiqligi eng katta?",
+      "v": [
+        "Alyuminiy (385 kJ/kg)",
+        "Muz (334 kJ/kg)",
+        "Temir (266 kJ/kg)",
+        "Mis (205 kJ/kg)"
+      ],
+      "t": 0,
+      "izoh": "Alyuminiyning solishtirma erish issiqligi 385 kJ/kg — jadvaldagi eng katta qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#ce9f9900"
+    },
+    {
+      "q": "Jadvalga ko'ra, simobning solishtirma erish issiqligi qancha?",
+      "v": [
+        "12 kJ/kg",
+        "25 kJ/kg",
+        "60 kJ/kg",
+        "84 kJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Simob uchun λ = 12 kJ/kg (qo'rg'oshin 25, qalay 60, po'lat 84 kJ/kg).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#330362f1"
+    },
+    {
+      "q": "Jadvalga ko'ra, qo'rg'oshin va qalayning solishtirma erish issiqliklari qanday?",
+      "v": [
+        "Qo'rg'oshin — 25 kJ/kg, qalay — 60 kJ/kg",
+        "Qo'rg'oshin — 60 kJ/kg, qalay — 25 kJ/kg",
+        "Qo'rg'oshin — 12 kJ/kg, qalay — 64 kJ/kg",
+        "Qo'rg'oshin — 84 kJ/kg, qalay — 105 kJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Qo'rg'oshin uchun 25 kJ/kg, qalay uchun 60 kJ/kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#131b4701"
+    },
+    {
+      "q": "Jadvalga ko'ra, mis va temirning solishtirma erish issiqliklari qanday?",
+      "v": [
+        "Mis — 205 kJ/kg, temir — 266 kJ/kg",
+        "Mis — 266 kJ/kg, temir — 205 kJ/kg",
+        "Mis — 105 kJ/kg, temir — 385 kJ/kg",
+        "Mis — 64 kJ/kg, temir — 84 kJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Mis uchun 205 kJ/kg, temir uchun 266 kJ/kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#d81589d4"
+    },
+    {
+      "q": "Amorf jismga issiqlik berilganda uning temperaturasi dastlab qanday o'zgaradi (54-rasm grafikning O–A qismi)?",
+      "v": [
+        "Bir tekis ortib boradi, issiqlik molekulalarning kinetik energiyasini oshirishga sarflanadi",
+        "O'zgarmay qoladi",
+        "Pasayib boradi",
+        "To'xtovsiz tebranadi"
+      ],
+      "t": 0,
+      "izoh": "O–A qismida temperatura bir tekis ortadi, issiqlik molekulalarning tebranishlarini kuchaytirishga, ya'ni kinetik energiyani oshirishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#04670cab"
+    },
+    {
+      "q": "54-rasm grafikning A–B qismida amorf jismda qanday jarayon kechadi?",
+      "v": [
+        "Temperatura ortishi sekinlashadi, jism yumshab suyuqlasha boradi",
+        "Temperatura keskin ko'tariladi",
+        "Jism kristallanadi",
+        "Jism bug'lanadi"
+      ],
+      "t": 0,
+      "izoh": "A–B qismida issiqlik molekulalarning kinetik va o'zaro ta'sir potensial energiyasini oshirishga sarflanadi, bog'lanish mustahkamligi kamayib, jism yumshab suyuqlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#fb997ebc"
+    },
+    {
+      "q": "Amorf jism to'liq suyuqlikka aylangandan keyin berilgan issiqlik nimaga sarflanadi (grafikning B–C qismi)?",
+      "v": [
+        "Molekulalarning harakat tezligini oshirishga, ya'ni kinetik energiyaning ortishiga",
+        "Kristall panjarani parchalashga",
+        "Molekulalar orasidagi bog'lanishni mustahkamlashga",
+        "Jismning qotishiga"
+      ],
+      "t": 0,
+      "izoh": "B–C qismida issiqlik molekulalarning kinetik energiyasini oshirishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#aa416ac2"
+    },
+    {
+      "q": "Amorf jismlarning erishi haqida qaysi fikr to'g'ri?",
+      "v": [
+        "Amorf jismlar aniq erish temperaturasiga ega emas; issiqlik berilganda avval yumshaydi, so'ngra suyuqlikka o'tadi",
+        "Amorf jismlar aniq erish temperaturasida darhol suyuqlanadi",
+        "Amorf jismlar umuman ermaydi",
+        "Amorf jismlar faqat qaynaganda eriydi"
+      ],
+      "t": 0,
+      "izoh": "Amorf jismlar aniq erish temperaturasiga ega emas; ular avval asta-sekin yumshaydi, so'ngra suyuqlikka o'ta boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#cc2cc603"
+    },
+    {
+      "q": "Amorf jismning qotish jarayoni uning erish jarayoniga nisbatan qanday?",
+      "v": [
+        "Qotishi erish jarayoniga teskari bo'ladi va grafiklari ustma-ust tushadi",
+        "Qotish grafigi erish grafigidan butunlay farq qiladi",
+        "Qotish faqat aniq temperaturada sodir bo'ladi",
+        "Qotishda issiqlik ajralmaydi"
+      ],
+      "t": 0,
+      "izoh": "Amorf jismning qotishi erish jarayoniga teskari; kristall jismg'i kabi grafiklar ustma-ust tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#f17b0bec"
+    },
+    {
+      "q": "Amorf jism erish jarayonida (A–B qismi) berilgan issiqlik qaysi energiyalarni oshirishga sarflanadi?",
+      "v": [
+        "Molekulalarning kinetik energiyasini va molekulalarning o'zaro ta'sir potensial energiyasini oshirishga",
+        "Faqat potensial energiyani kamaytirishga",
+        "Faqat molekular massani oshirishga",
+        "Yadro energiyasini oshirishga"
+      ],
+      "t": 0,
+      "izoh": "A–B qismida issiqlik molekulalarning kinetik energiyasi va o'zaro ta'sir potensial energiyasini oshirishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#c65bdae2"
+    },
+    {
+      "q": "Erish jarayonini o'rganish qaysi sohalarda muhim ahamiyatga ega?",
+      "v": [
+        "Tabiatda (qor va muzning erishi), fan va texnikada (sof metallar, qotishmalar olish, kavsharlash)",
+        "Faqat astronomiyada",
+        "Faqat tibbiyotda",
+        "Faqat qurilishda"
+      ],
+      "t": 0,
+      "izoh": "Erish jarayonini o'rganish tabiatda, sof metallar va qotishmalarni olishda, kavsharlashda muhim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#f240f1fa"
+    },
+    {
+      "q": "Masala yechish namunasida 20 °C dagi 4 kg suvga solingan 0 °C li muz butunlay erishi uchun uning massasi ko'pi bilan qanday bo'lishi kerak deb topilgan?",
+      "v": [
+        "1 kg",
+        "2 kg",
+        "0,5 kg",
+        "4 kg"
+      ],
+      "t": 0,
+      "izoh": "m₂ = m₁c(t₁−t₂)/λ = 4·4200·20/336000 = 1 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#8de17e74"
+    },
+    {
+      "q": "Masala namunasida issiqlik balansi qanday formulaga asoslangan?",
+      "v": [
+        "Q₁ = Q₂, bunda Q₁ = m₁c(t₁−t₂) va Q₂ = λm₂",
+        "Q₁ = Q₂, bunda Q₁ = λm₁ va Q₂ = m₂cΔt",
+        "Q = rm",
+        "Q = cm²"
+      ],
+      "t": 0,
+      "izoh": "Suv bergan issiqlik m₁c(t₁−t₂) muzni eritishga ketadigan λm₂ ga tenglashtirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#0c66b2de"
+    },
+    {
+      "q": "Solishtirma erish issiqligi katta bo'lgan moddani eritish uchun nima deyish mumkin?",
+      "v": [
+        "Xuddi shu massadagi moddani eritish uchun ko'proq issiqlik kerak",
+        "Kamroq issiqlik kerak",
+        "Issiqlik umuman kerak emas",
+        "Faqat bosim kerak"
+      ],
+      "t": 0,
+      "izoh": "λ = Qₑ/m ga ko'ra, λ qancha katta bo'lsa, bir xil massani eritishga shuncha ko'p issiqlik zarur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#e3a08a38"
+    },
+    {
+      "q": "Jadvalga ko'ra, oltin va po'latning solishtirma erish issiqliklari qanday?",
+      "v": [
+        "Oltin — 64 kJ/kg, po'lat — 84 kJ/kg",
+        "Oltin — 84 kJ/kg, po'lat — 64 kJ/kg",
+        "Oltin — 105 kJ/kg, po'lat — 205 kJ/kg",
+        "Oltin — 25 kJ/kg, po'lat — 12 kJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Oltin uchun 64 kJ/kg, po'lat uchun 84 kJ/kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#7b422c17"
+    },
+    {
+      "q": "Jadvalga ko'ra, kumushning solishtirma erish issiqligi qancha?",
+      "v": [
+        "105 kJ/kg",
+        "64 kJ/kg",
+        "205 kJ/kg",
+        "84 kJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Kumush uchun λ = 105 kJ/kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#6c0003ad"
+    },
+    {
+      "q": "1 kg alyuminiy bilan 1 kg qo'rg'oshinni erish temperaturasida eritish uchun zarur issiqlik miqdorlarini solishtiring.",
+      "v": [
+        "Alyuminiyga ko'proq issiqlik kerak, chunki uning λ si kattaroq (385 > 25 kJ/kg)",
+        "Qo'rg'oshinga ko'proq issiqlik kerak",
+        "Bir xil issiqlik kerak",
+        "Ikkalasiga ham issiqlik kerak emas"
+      ],
+      "t": 0,
+      "izoh": "λ(alyuminiy)=385 kJ/kg > λ(qo'rg'oshin)=25 kJ/kg, demak alyuminiyga ko'proq issiqlik sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#ea251625"
+    },
+    {
+      "q": "Qₑ = λ·m formuladagi Qₑ nimani anglatadi?",
+      "v": [
+        "Erish temperaturasida moddani suyuqlikka aylantirish uchun zarur bo'ladigan issiqlik miqdorini",
+        "Jismning ichki energiyasini",
+        "Jismni qizdirish uchun zarur issiqlikni",
+        "Suyuqlikni bug'lash uchun zarur issiqlikni"
+      ],
+      "t": 0,
+      "izoh": "Qₑ — erish temperaturasida moddani suyuqlikka aylantirish uchun zarur bo'ladigan issiqlik miqdori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#ab981f21"
+    },
+    {
+      "q": "Amorf jismda molekulalar orasidagi bog'lanish mustahkamligi kamayishi natijasida nima sodir bo'ladi?",
+      "v": [
+        "Jism yumshab suyuqlasha boradi",
+        "Jism qotadi",
+        "Jism kristallanadi",
+        "Jismning temperaturasi pasayadi"
+      ],
+      "t": 0,
+      "izoh": "Molekulalar orasidagi bog'lanish mustahkamligi kamayishi natijasida jism yumshab suyuqlasha boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#afd1e89e"
+    },
+    {
+      "q": "Kristall va amorf jismlarning erish jarayonidagi asosiy farq nimada?",
+      "v": [
+        "Kristall jism aniq erish temperaturasida eriydi, amorf jism esa asta-sekin yumshab suyuqlanadi",
+        "Amorf jism aniq temperaturada eriydi, kristall yumshaydi",
+        "Ikkalasi ham aniq temperaturada eriydi",
+        "Ikkalasi ham erish temperaturasiga ega emas"
+      ],
+      "t": 0,
+      "izoh": "Kristall jism aniq erish temperaturasiga ega, amorf jismlar esa aniq erish temperaturasiga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#6463e53c"
+    },
+    {
+      "q": "Masala namunasida muzning solishtirma erish issiqligi qanday qiymatda olingan?",
+      "v": [
+        "336 kJ/kg",
+        "334 kJ/kg",
+        "420 kJ/kg",
+        "230 kJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Masala shartida muzning solishtirma erish issiqligi 336 kJ/kg deb olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#2a023d16"
+    },
+    {
+      "q": "Solishtirma erish issiqligi λ = 334 kJ/kg bo'lgan muzdan 2 kg ni eritish uchun zarur issiqlik miqdorini Qₑ = λ·m formula bilan ifodalang.",
+      "v": [
+        "Qₑ = 668 kJ",
+        "Qₑ = 167 kJ",
+        "Qₑ = 334 kJ",
+        "Qₑ = 1336 kJ"
+      ],
+      "t": 0,
+      "izoh": "Qₑ = 334·2 = 668 kJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#d8eec5dd"
+    },
+    {
+      "q": "Qotish jarayonida ajraladigan issiqlik miqdori qaysi kattalikka bog'liq?",
+      "v": [
+        "Moddaning solishtirma erish issiqligiga va massasiga",
+        "Faqat jismning hajmiga",
+        "Faqat tashqi bosimga",
+        "Faqat jismning rangiga"
+      ],
+      "t": 0,
+      "izoh": "Qotishda ajraladigan issiqlik Q = λ·m ga teng, ya'ni λ va massaga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#68842ff2"
+    },
+    {
+      "q": "54-rasmda amorf jismning issiqlik grafigi kristall jismniki bilan solishtirganda qanday farq qiladi?",
+      "v": [
+        "Amorf jism grafikida temperaturaning o'zgarmas qoladigan gorizontal qismi yo'q",
+        "Amorf jism grafikida temperatura umuman ortmaydi",
+        "Ikkala grafik aynan bir xil",
+        "Amorf jism grafikida temperatura faqat pasayadi"
+      ],
+      "t": 0,
+      "izoh": "Amorf jismda aniq erish temperaturasi bo'lmagani uchun grafikda gorizontal (temperatura o'zgarmas) erish qismi yo'q, yumshash va suyuqlashish asta-sekin kechadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#f5cbe592"
+    },
+    {
+      "q": "m massali qalayni erish temperaturasida to'liq eritishga 10 kJ issiqlik sarflangan bo'lsa, massani topish uchun qaysi ifodadan foydalaniladi (λ = 60 kJ/kg)?",
+      "v": [
+        "m = Qₑ/λ",
+        "m = λ·Qₑ",
+        "m = λ/Qₑ",
+        "m = Qₑ·λ/100"
+      ],
+      "t": 0,
+      "izoh": "Qₑ = λ·m dan m = Qₑ/λ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar#216a8fd0"
+    }
+  ]
+}

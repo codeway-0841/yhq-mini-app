@@ -1,0 +1,1609 @@
+{
+  "nom": "Bir noma'lumli chiziqli tenglamalar",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "7x = 91 chiziqli tenglama berilgan. Uning yagona ildizini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "13",
+        "84",
+        "637",
+        "98"
+      ],
+      "t": 0,
+      "izoh": "ax = b ko'rinishidagi tenglamada x = b : a bo'ladi. Demak x = 91 : 7 = 13. Ayirish natijasi 84, ko'paytirish natijasi 637 — ikkalasi ham noto'g'ri amal. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-ax-b-yechish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#c225c375"
+    },
+    {
+      "q": "−6x = 42 tenglamasi berilgan bo'lsa, noma'lum x ning qiymatini hisoblang.",
+      "v": [
+        "7",
+        "−7",
+        "36",
+        "−252"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni −6 ga bo'lamiz: x = 42 : (−6) = −7. Musbat son manfiy songa bo'linganda natija manfiy chiqadi, shuning uchun 7 emas, −7 to'g'ri. Javob: −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-ax-b-yechish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#092220fa"
+    },
+    {
+      "q": "(2/3)x = 18 tenglamani yeching va x ning qiymatini ko'rsating.",
+      "v": [
+        "12",
+        "36",
+        "27",
+        "54"
+      ],
+      "t": 2,
+      "izoh": "Kasr koeffitsientdan qutulish uchun ikkala tomonni teskari kasr 3/2 ga ko'paytiramiz: x = 18 · 3/2 = 27. 18 ni 2/3 ga ko'paytirgan o'quvchi 12 ni oladi, bu teskari amal. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-ax-b-yechish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#152a511e"
+    },
+    {
+      "q": "0,4x = 6,8 tenglamada noma'lum x ning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "2,72",
+        "6,4",
+        "27,2",
+        "17"
+      ],
+      "t": 3,
+      "izoh": "x = 6,8 : 0,4 amalini bajaramiz. O'nli kasrlardan qutulish uchun ikkalasini 10 ga ko'paytiramiz: 68 : 4 = 17. Ko'paytirish natijasi 2,72 bo'lib, u teskari amaldan kelib chiqadi. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sodda-ax-b-yechish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#d321aa69"
+    },
+    {
+      "q": "3(x − 4) = 21 tenglamani yechganda x qanday qiymat qabul qiladi?",
+      "v": [
+        "3",
+        "11",
+        "7",
+        "25"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni 3 ga bo'lamiz: x − 4 = 7. Endi 4 ni o'ng tomonga o'tkazamiz: x = 7 + 4 = 11. Ko'pchilik 7 da to'xtab qoladi, u esa faqat oraliq natija. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qavs-ochib-yechish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#7e964e75"
+    },
+    {
+      "q": "9 − 2(x − 5) = 3 tenglamada qavsni ochib, noma'lumning qiymatini aniqlang.",
+      "v": [
+        "8",
+        "−8",
+        "−2",
+        "11"
+      ],
+      "t": 0,
+      "izoh": "Qavs oldida minus turgani uchun 9 − 2x + 10 = 3 hosil bo'ladi. Bundan 19 − 2x = 3, ya'ni 2x = 16 va x = 8. Ishorani ichkariga to'g'ri tarqatmagan o'quvchi −2 ni oladi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qavs-ochib-yechish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#b7b02130"
+    },
+    {
+      "q": "4(x + 3) − 2(x − 5) = 30 tenglamani yeching va ildizni ko'rsating.",
+      "v": [
+        "8",
+        "14",
+        "26",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Qavslarni ochamiz: 4x + 12 − 2x + 10 = 30. O'xshash hadlarni yig'amiz: 2x + 22 = 30, demak 2x = 8 va x = 4. Ikkinchi qavs oldidagi minusni hisobga olmagan o'quvchi 14 ni oladi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qavs-ochib-yechish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#9afa3eca"
+    },
+    {
+      "q": "−2(5 − x) + 9 = 31 tenglamaning ildizi qaysi son ekanini aniqlang.",
+      "v": [
+        "−16",
+        "11",
+        "16",
+        "32"
+      ],
+      "t": 2,
+      "izoh": "Qavsni ochamiz: −10 + 2x + 9 = 31, ya'ni 2x − 1 = 31. Bundan 2x = 32 va x = 16. Bo'lish qadamini tashlab ketgan o'quvchi 32 javobini beradi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qavs-ochib-yechish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#8b3183c8"
+    },
+    {
+      "q": "7x − 12 = 4x + 15 tenglamada noma'lumli hadlarni bir tomonga yig'ib, x ni toping.",
+      "v": [
+        "−9",
+        "1",
+        "9",
+        "27"
+      ],
+      "t": 2,
+      "izoh": "Noma'lumlarni chapga, sonlarni o'ngga o'tkazamiz: 7x − 4x = 15 + 12. Demak 3x = 27 va x = 9. 27 — bu 3x ning qiymati, oxirgi bo'lish qadami bajarilmagan. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-tarafda-nomalum",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#1f8bcb8e"
+    },
+    {
+      "q": "5(x + 2) = 3x + 22 tenglamaning yechimini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "1,5",
+        "10",
+        "12",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Chap tomondagi qavsni ochamiz: 5x + 10 = 3x + 22. Noma'lumlarni ajratamiz: 2x = 12, demak x = 6. Qavsni ochmay 5x + 2 deb yozgan o'quvchi 10 ni oladi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-tarafda-nomalum",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#424a136f"
+    },
+    {
+      "q": "8 − 3x = 2x − 17 tenglamada x ning qiymati nimaga teng bo'ladi?",
+      "v": [
+        "5",
+        "−5",
+        "−1,8",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "Noma'lumlarni o'ngga, sonlarni chapga yig'amiz: 8 + 17 = 2x + 3x. Demak 25 = 5x va x = 5. Sonlarni ayirib yuborgan o'quvchi −9 : 5 = −1,8 ni oladi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tarafda-nomalum",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#1ea5bc62"
+    },
+    {
+      "q": "4(x − 3) = 2(x + 5) + 8 tenglamaning ildizini hisoblang.",
+      "v": [
+        "3",
+        "15",
+        "5",
+        "30"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonda qavslarni ochamiz: 4x − 12 = 2x + 10 + 8. O'ng tomon 2x + 18 ga teng, demak 2x = 30 va x = 15. 30 — bu 2x, bo'lish qadami qolib ketgan. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tarafda-nomalum",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#2c97bba7"
+    },
+    {
+      "q": "x/4 + x/6 = 5 tenglamani umumiy maxrajga keltirib yeching.",
+      "v": [
+        "1",
+        "50",
+        "60",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Umumiy maxraj 12 ga teng, shuning uchun ikkala tomonni 12 ga ko'paytiramiz: 3x + 2x = 60. Bundan 5x = 60 va x = 12. Maxrajlarni qo'shib yuborgan o'quvchi 50 ni oladi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-tenglama-umumiy-maxraj",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#c185aa8f"
+    },
+    {
+      "q": "(x − 3)/4 = (x + 5)/6 proporsiyani yeching va noma'lumning qiymatini toping.",
+      "v": [
+        "−21",
+        "−1",
+        "19",
+        "38"
+      ],
+      "t": 2,
+      "izoh": "Krest ko'paytirish qoidasi bo'yicha 6(x − 3) = 4(x + 5). Qavslarni ochamiz: 6x − 18 = 4x + 20, demak 2x = 38 va x = 19. Ko'paytiruvchilarni almashtirib yuborgan o'quvchi −21 ni oladi. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-tenglama-umumiy-maxraj",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#468d2b5d"
+    },
+    {
+      "q": "(2x + 1)/5 − (x − 3)/2 = 1 tenglamaning yechimi qaysi son bo'ladi?",
+      "v": [
+        "−23",
+        "7",
+        "−7",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni 10 ga ko'paytiramiz: 2(2x + 1) − 5(x − 3) = 10. Qavslarni ochamiz: 4x + 2 − 5x + 15 = 10, ya'ni 17 − x = 10 va x = 7. O'ng tomonni ko'paytirishni unutgan o'quvchi 16 ni oladi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-tenglama-umumiy-maxraj",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#3548108a"
+    },
+    {
+      "q": "x/2 − (x − 1)/3 = 2 tenglamada x ning qiymatini aniqlang.",
+      "v": [
+        "10",
+        "0",
+        "12",
+        "14"
+      ],
+      "t": 0,
+      "izoh": "Ikkala tomonni 6 ga ko'paytiramiz: 3x − 2(x − 1) = 12. Qavsni ochamiz: 3x − 2x + 2 = 12, demak x + 2 = 12 va x = 10. Minusni ichkariga noto'g'ri tarqatgan o'quvchi 14 ni oladi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-tenglama-umumiy-maxraj",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#9f432eab"
+    },
+    {
+      "q": "0,6x + 1,2 = 3 tenglamaning ildizini toping va javobni belgilang.",
+      "v": [
+        "3",
+        "1,08",
+        "1,8",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "Avval 1,2 ni o'ng tomonga o'tkazamiz: 0,6x = 1,8. Endi ikkala tomonni 0,6 ga bo'lamiz va x = 3 hosil bo'ladi. 1,8 — bu 0,6x ning qiymati, oxirgi qadam bajarilmagan. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "onli-kasr-koeffitsiyentli-tenglama",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#c6f61010"
+    },
+    {
+      "q": "1,3x − 2,5 = 0,5x + 3,5 tenglamada noma'lumni toping.",
+      "v": [
+        "1,25",
+        "4,8",
+        "6",
+        "7,5"
+      ],
+      "t": 3,
+      "izoh": "Noma'lumlarni chapga, sonlarni o'ngga yig'amiz: 1,3x − 0,5x = 3,5 + 2,5. Demak 0,8x = 6 va x = 6 : 0,8 = 7,5. 6 da to'xtab qolish — eng ko'p uchraydigan xato. Javob: 7,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "onli-kasr-koeffitsiyentli-tenglama",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#24a2ecd1"
+    },
+    {
+      "q": "0,25(x + 6) = 8 tenglamani yechib, x ning qiymatini ko'rsating.",
+      "v": [
+        "8",
+        "26",
+        "32",
+        "38"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni 0,25 ga bo'lamiz, ya'ni 4 ga ko'paytiramiz: x + 6 = 32. Bundan x = 32 − 6 = 26 chiqadi. 32 da to'xtab qolish keng tarqalgan xato. Javob: 26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "onli-kasr-koeffitsiyentli-tenglama",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#95d01614"
+    },
+    {
+      "q": "2,5x = 0,5x + 9 tenglamaning ildizi qanday qiymatga ega?",
+      "v": [
+        "3",
+        "9",
+        "4,5",
+        "18"
+      ],
+      "t": 2,
+      "izoh": "0,5x ni chap tomonga o'tkazamiz: 2,5x − 0,5x = 9, ya'ni 2x = 9. Demak x = 4,5 bo'ladi. Koeffitsientlarni qo'shib yuborgan o'quvchi 3 ni oladi. Javob: 4,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "onli-kasr-koeffitsiyentli-tenglama",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#d2d574e6"
+    },
+    {
+      "q": "3(x − 2) + 4 = 3x − 2 tenglama nechta yechimga ega?",
+      "v": [
+        "Yechimi yo'q",
+        "Bitta yechim: x = 2",
+        "Cheksiz ko'p yechim",
+        "Bitta yechim: x = 0"
+      ],
+      "t": 2,
+      "izoh": "Chap tomonni soddalashtiramiz: 3x − 6 + 4 = 3x − 2. Ikkala tomon aynan bir xil ifodaga aylandi, ya'ni 0 · x = 0 hosil bo'ldi. Bunday tenglik istalgan x da o'rinli, demak cheksiz ko'p yechim bor. Javob: cheksiz ko'p yechim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimlar-soni-parametrsiz",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#7098eb19"
+    },
+    {
+      "q": "5x + 7 = 5x − 3 tenglamaning yechimlari soni haqida nima deyish mumkin?",
+      "v": [
+        "Bitta yechim bor",
+        "Ikkita yechim bor",
+        "Cheksiz ko'p yechim",
+        "Yechimga ega emas"
+      ],
+      "t": 3,
+      "izoh": "5x hadini ikkala tomondan ayiramiz va 7 = −3 tengligi qoladi. Bu yolg'on tenglik, chunki tenglama 0 · x = −10 ko'rinishiga keldi. Hech qanday x uni to'g'ri qila olmaydi. Javob: yechimga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimlar-soni-parametrsiz",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#ebb55ae0"
+    },
+    {
+      "q": "2(3x − 1) = 6x + 5 tenglama uchun quyidagi tasdiqlardan qaysi biri to'g'ri?",
+      "v": [
+        "Ildizi yo'q",
+        "x = 7 yagona ildiz",
+        "Ixtiyoriy x yechim bo'ladi",
+        "x = −7 yagona ildiz"
+      ],
+      "t": 0,
+      "izoh": "Qavsni ochamiz: 6x − 2 = 6x + 5. 6x hadini ikkala tomondan ayirsak −2 = 5 chiqadi. Noma'lum butunlay qisqarib ketdi va yolg'on tenglik qoldi, demak ildiz yo'q. Javob: ildizi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimlar-soni-parametrsiz",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#9798b1d3"
+    },
+    {
+      "q": "4(x + 1) − 2 = 2(2x + 1) tenglama qanday xususiyatga ega ekanini aniqlang.",
+      "v": [
+        "Faqat x = 1 da bajariladi",
+        "Har qanday haqiqiy x da bajariladi",
+        "Hech qanday x da bajarilmaydi",
+        "Faqat x = 0 da bajariladi"
+      ],
+      "t": 1,
+      "izoh": "Chap tomonni soddalashtiramiz: 4x + 4 − 2 = 4x + 2. O'ng tomon ham 4x + 2 ga teng. Ikkala tomon bir xil bo'lgani uchun tenglama ayniyatga aylanadi. Javob: har qanday haqiqiy x da bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimlar-soni-parametrsiz",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#92b428c8"
+    },
+    {
+      "q": "(a − 3)x = 7 tenglama a parametrning qaysi qiymatida yechimga ega bo'lmaydi?",
+      "v": [
+        "a = 0",
+        "a = 7",
+        "a = −3",
+        "a = 3"
+      ],
+      "t": 3,
+      "izoh": "ax = b tenglama a = 0 va b ≠ 0 bo'lganda yechimga ega bo'lmaydi. Bu yerda koeffitsient a − 3 ga teng, demak a − 3 = 0 va a = 3. O'ng tomondagi 7 noldan farqli bo'lgani uchun yechim yo'q. Javob: a = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrli-yechimlar-soni",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#d948019a"
+    },
+    {
+      "q": "(m − 5)x = m − 5 tenglama m ning qaysi qiymatida cheksiz ko'p yechimga ega bo'ladi?",
+      "v": [
+        "m = 0",
+        "m = 1",
+        "m = 5",
+        "m = −5"
+      ],
+      "t": 2,
+      "izoh": "Cheksiz ko'p yechim uchun koeffitsient ham, ozod had ham nolga aylanishi kerak. Bu yerda ikkalasi ham m − 5 ifodasi, demak m − 5 = 0 va m = 5. Natijada 0 · x = 0 ayniyati hosil bo'ladi. Javob: m = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrli-yechimlar-soni",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#7953697f"
+    },
+    {
+      "q": "(k² − 9)x = k + 3 tenglama k ning qaysi qiymatida cheksiz ko'p ildizga ega bo'ladi?",
+      "v": [
+        "k = 3",
+        "k = −3",
+        "k = 9",
+        "k = 0"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsient nolga aylanishi uchun k² − 9 = 0, bundan k = 3 yoki k = −3. Cheksiz yechim uchun o'ng tomon ham nol bo'lsin: k + 3 = 0, ya'ni k = −3. k = 3 da esa 0 · x = 6 bo'lib, yechim umuman bo'lmaydi. Javob: k = −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrli-yechimlar-soni",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#f4284506"
+    },
+    {
+      "q": "5x − 2 = ax + 7 tenglama a ning qaysi qiymatida birorta ham ildizga ega bo'lmaydi?",
+      "v": [
+        "a = 5",
+        "a = −5",
+        "a = 9",
+        "a = 7"
+      ],
+      "t": 0,
+      "izoh": "Noma'lumli hadlarni chapga yig'amiz: (5 − a)x = 9. Ildiz bo'lmasligi uchun koeffitsient nolga, o'ng tomon esa noldan farqli bo'lishi kerak. 5 − a = 0 dan a = 5 chiqadi, 9 ≠ 0 sharti esa o'z-o'zidan bajariladi. Javob: a = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrli-yechimlar-soni",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#ad73527f"
+    },
+    {
+      "q": "x = 4 soni 3x − a = 5 tenglamaning ildizi bo'lsa, a parametrning qiymatini toping.",
+      "v": [
+        "7",
+        "17",
+        "−7",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Ildizni tenglamaga qo'yamiz: 3 · 4 − a = 5, ya'ni 12 − a = 5. Bundan a = 12 − 5 = 7 chiqadi. Ishorani chalkashtirgan o'quvchi 12 + 5 = 17 ni oladi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilgan-ildiz-orqali-parametr",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#1df5d1de"
+    },
+    {
+      "q": "5x + b = 2x − 6 tenglamaning ildizi x = −1 ga teng. b koeffitsientni aniqlang.",
+      "v": [
+        "3",
+        "−3",
+        "−13",
+        "13"
+      ],
+      "t": 1,
+      "izoh": "x = −1 ni ikkala tomonga qo'yamiz: −5 + b = −2 − 6, ya'ni −5 + b = −8. Bundan b = −8 + 5 = −3. Manfiy ildizni qo'yishda ishorani unutgan o'quvchi 3 ni tanlaydi. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilgan-ildiz-orqali-parametr",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#02380479"
+    },
+    {
+      "q": "(x + 2)/3 − (x − c)/2 = 1 tenglamaning ildizi x = 4 ekani ma'lum. c ning qiymatini toping.",
+      "v": [
+        "6",
+        "−2",
+        "2",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "x = 4 ni qo'yamiz: (4 + 2)/3 − (4 − c)/2 = 1, ya'ni 2 − (4 − c)/2 = 1. Bundan (4 − c)/2 = 1 va 4 − c = 2, demak c = 2. Kasrni yo'qotishda ishorani chalkashtirgan o'quvchi 6 ni oladi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "berilgan-ildiz-orqali-parametr",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#780e21ab"
+    },
+    {
+      "q": "0,5x + p = 3,5 tenglamaning ildizi x = 5 bo'lsa, p ning qiymatini hisoblang.",
+      "v": [
+        "1,5",
+        "−1",
+        "2,5",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "x = 5 ni qo'yamiz: 0,5 · 5 + p = 3,5, ya'ni 2,5 + p = 3,5. Bundan p = 3,5 − 2,5 = 1 chiqadi. 2,5 — bu 0,5x ning qiymati, javob emas. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilgan-ildiz-orqali-parametr",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#93ed57f3"
+    },
+    {
+      "q": "2x − 7 = 5 va n(x + 1) = 21 tenglamalar bir xil ildizga ega. n ning qiymatini toping.",
+      "v": [
+        "3,5",
+        "3",
+        "6",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "Avval birinchi tenglamani yechamiz: 2x = 12, demak x = 6. Bu ildizni ikkinchisiga qo'yamiz: n(6 + 1) = 21, ya'ni 7n = 21 va n = 3. Qavsdagi qo'shiluvchi 1 ni unutgan o'quvchi 3,5 ni oladi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-ildizli-tenglamalar",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#06c45035"
+    },
+    {
+      "q": "3(x − 1) = x + 11 va 4x − k = 10 tenglamalarning ildizlari teng bo'lsa, k nechaga teng?",
+      "v": [
+        "−18",
+        "38",
+        "10",
+        "18"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tenglamani yechamiz: 3x − 3 = x + 11, ya'ni 2x = 14 va x = 7. Uni ikkinchisiga qo'yamiz: 28 − k = 10, demak k = 28 − 10 = 18. Ishorani almashtirgan o'quvchi −18 ni oladi. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-ildizli-tenglamalar",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#ff04843d"
+    },
+    {
+      "q": "x/3 + 2 = 5 tenglamaning ildizi 2x − a = 3a tenglamani ham qanoatlantiradi. a ning qiymati qanday?",
+      "v": [
+        "6",
+        "18",
+        "4,5",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tenglamadan x/3 = 3, demak x = 9. Ikkinchisiga qo'yamiz: 18 − a = 3a, ya'ni 4a = 18 va a = 4,5. Chap tomondagi −a ni unutgan o'quvchi 3a = 18 dan 6 ni oladi. Javob: 4,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-ildizli-tenglamalar",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#231ee47f"
+    },
+    {
+      "q": "5x + 3 = 2x + 18 tenglamaning ildizi (x + m)/2 = 6 tenglamaniki bilan bir xil. m qanday?",
+      "v": [
+        "7",
+        "12",
+        "−7",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tenglamadan 3x = 15 va x = 5 chiqadi. Uni ikkinchisiga qo'yamiz: (5 + m)/2 = 6, ya'ni 5 + m = 12 va m = 7. 12 da to'xtash — maxrajni yo'qotgandan keyingi oraliq natija. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-ildizli-tenglamalar",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#70a7bfd6"
+    },
+    {
+      "q": "(x − 6)/5 = a tenglamaning ildizi musbat bo'ladigan a ning barcha qiymatlari to'plamini ko'rsating.",
+      "v": [
+        "a > −1,2",
+        "a < −1,2",
+        "a > 6",
+        "a > −6"
+      ],
+      "t": 0,
+      "izoh": "Tenglamadan x = 5a + 6 hosil bo'ladi. Ildiz musbat bo'lishi uchun 5a + 6 > 0 sharti bajarilsin. Bundan 5a > −6 va a > −1,2. a < −1,2 da ildiz manfiy chiqadi, a > 6 esa barcha qiymatlarning faqat bir qismi. Javob: a > −1,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-sharti-parametr",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#29b2ccfc"
+    },
+    {
+      "q": "12x = 60 + k tenglamaning ildizi natural son bo'lishi uchun k ning eng kichik musbat qiymati qanday?",
+      "v": [
+        "6",
+        "1",
+        "12",
+        "60"
+      ],
+      "t": 2,
+      "izoh": "Ildiz x = (60 + k) : 12 ko'rinishida bo'ladi. U natural bo'lishi uchun 60 + k soni 12 ga qoldiqsiz bo'linishi kerak. 60 ning o'zi 12 ga bo'linadi, shuning uchun k ham 12 ga karrali bo'lsin va eng kichigi 12 ga teng. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-sharti-parametr",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#8add83de"
+    },
+    {
+      "q": "3x + a = 2x + 9 tenglamaning ildizi manfiy bo'lishi uchun a qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "a < 9",
+        "a > 0",
+        "a < −9",
+        "a > 9"
+      ],
+      "t": 3,
+      "izoh": "Noma'lumlarni ajratamiz: 3x − 2x = 9 − a, ya'ni x = 9 − a. Ildiz manfiy bo'lishi uchun 9 − a < 0 shart kerak, bundan a > 9. Tengsizlik ishorasini almashtirmagan o'quvchi a < 9 ni tanlaydi. Javob: a > 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-sharti-parametr",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#89b516aa"
+    },
+    {
+      "q": "8x = 3m + 5 tenglamaning ildizi butun son bo'lishi uchun m ning qaysi qiymati mos keladi?",
+      "v": [
+        "m = 2",
+        "m = 1",
+        "m = 4",
+        "m = 5"
+      ],
+      "t": 1,
+      "izoh": "Ildiz x = (3m + 5) : 8 ko'rinishida bo'ladi va u butun bo'lishi uchun 3m + 5 soni 8 ga bo'linsin. m = 1 da 3 + 5 = 8 chiqadi, 8 : 8 = 1 esa butun son. Qolgan qiymatlarda 11, 17 va 20 hosil bo'lib, ular 8 ga bo'linmaydi. Javob: m = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-sharti-parametr",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#078eefcd"
+    },
+    {
+      "q": "Anvar 3 ta bir xil daftar va bitta ruchka sotib oldi. Ruchka narxi 4 000 so'm, kassadagi jami to'lov 25 000 so'm. Daftar narxini x deb belgilasak, qaysi tenglama masalaga mos keladi?",
+      "v": [
+        "3x + 4 000 = 25 000",
+        "3x − 4 000 = 25 000",
+        "x + 3 · 4 000 = 25 000",
+        "3(x + 4 000) = 25 000"
+      ],
+      "t": 0,
+      "izoh": "Uchta daftarning narxi 3x so'm bo'ladi, unga ruchkaning 4 000 so'mi qo'shiladi. Yig'indi jami to'lovga teng: 3x + 4 000 = 25 000. Qavsga olish esa ruchkani uch marta olishni bildirardi. Javob: 3x + 4 000 = 25 000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matndan-tenglama-tuzish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#6cad9822"
+    },
+    {
+      "q": "Avtobusda x nafar yo'lovchi bor edi. Bekatda 7 nafar yo'lovchi avtobusdan tushdi, so'ng 12 nafar yo'lovchi avtobusga chiqdi va avtobusda 45 nafar yo'lovchi qoldi. Vaziyatga mos tenglamani tanlang.",
+      "v": [
+        "x + 7 − 12 = 45",
+        "x − 7 + 12 = 45",
+        "x − 7 − 12 = 45",
+        "x + 7 + 12 = 45"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich yo'lovchilar soni x ga teng. Tushganlar ayiriladi, yangi chiqqanlar esa qo'shiladi: x − 7 + 12. Bu ifoda oxirgi holatga tenglashtiriladi: x − 7 + 12 = 45. Javob: x − 7 + 12 = 45.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matndan-tenglama-tuzish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#f7bf634c"
+    },
+    {
+      "q": "Sardor besh kun davomida har kuni bir xil x km masofani yugurdi, oltinchi kuni esa atigi 3 km yugurdi. Olti kunda jami 33 km bo'lgan bo'lsa, qaysi tenglama to'g'ri tuzilgan?",
+      "v": [
+        "6x + 3 = 33",
+        "5x − 3 = 33",
+        "5x + 3 = 33",
+        "5(x + 3) = 33"
+      ],
+      "t": 2,
+      "izoh": "Besh kunda yugurilgan masofa 5x km ni tashkil qiladi. Unga oltinchi kundagi 3 km qo'shiladi va jami 33 km chiqadi: 5x + 3 = 33. Oltinchi kun alohida berilgani uchun 6x deb yozish xato bo'ladi. Javob: 5x + 3 = 33.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matndan-tenglama-tuzish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#de534056"
+    },
+    {
+      "q": "Dehqon x kg olma yig'di. Uning yarmini bozorga chiqardi, 18 kg ni qo'shnilariga berdi va omborda 22 kg qoldi. Masalaga mos tenglamani ko'rsating.",
+      "v": [
+        "x/2 + 18 = 22",
+        "(x − 18)/2 = 22",
+        "2x − 18 = 22",
+        "x − x/2 − 18 = 22"
+      ],
+      "t": 3,
+      "izoh": "Yig'ilgan olma x kg, bozorga chiqarilgani x/2 kg, qo'shnilarga berilgani 18 kg. Omborda qolgan miqdor x − x/2 − 18 ifodasi bilan beriladi va u 22 kg ga teng. Javob: x − x/2 − 18 = 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matndan-tenglama-tuzish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#aba9c8f6"
+    },
+    {
+      "q": "Kamola do'kondan 4 ta bir xil daftar va 12 000 so'mlik qalamdon sotib oldi. Kassada jami 32 000 so'm to'lagan bo'lsa, bitta daftar necha so'm turadi?",
+      "v": [
+        "8 000 so'm",
+        "5 000 so'm",
+        "11 000 so'm",
+        "20 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Daftar narxini x deb olamiz: 4x + 12 000 = 32 000. Qalamdon narxini ayiramiz va 4x = 20 000 hosil bo'ladi. Ikkala tomonni 4 ga bo'lsak x = 5 000 so'm. 20 000 — bu to'rtta daftarning umumiy narxi. Javob: 5 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-va-xarid",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#eb517440"
+    },
+    {
+      "q": "Nodira 3 kg go'sht va 2 kg guruch uchun 195 000 so'm to'ladi. Guruchning bir kilosi 15 000 so'm bo'lsa, go'shtning bir kilosi qancha turadi?",
+      "v": [
+        "55 000 so'm",
+        "65 000 so'm",
+        "75 000 so'm",
+        "40 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Go'shtning kilosini x deb olamiz: 3x + 2 · 15 000 = 195 000. Guruchga 30 000 so'm ketgan, uni ayiramiz: 3x = 165 000. Bundan x = 55 000 so'm. Umumiy summani shunchaki 3 ga bo'lgan o'quvchi 65 000 ni oladi. Javob: 55 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-va-xarid",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#3dc4b467"
+    },
+    {
+      "q": "Do'konda choynak narxi piyola narxidan 4 marta qimmat. Bitta choynak va 6 ta piyoladan iborat to'plam 90 000 so'm turadi. Bitta piyolaning narxini toping.",
+      "v": [
+        "15 000 so'm",
+        "18 000 so'm",
+        "36 000 so'm",
+        "9 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Piyola narxi x bo'lsin, u holda choynak 4x turadi. To'plam narxi: 4x + 6x = 90 000, ya'ni 10x = 90 000 va x = 9 000 so'm. 36 000 — bu choynakning narxi, savolda esa piyola so'ralgan. Javob: 9 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-va-xarid",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#1be2c009"
+    },
+    {
+      "q": "Bahodir 250 000 so'm bilan bozorga bordi. U 5 ta bir xil non va 39 000 so'mlik sut olib, 171 000 so'm qaytim oldi. Bitta non necha so'm turadi?",
+      "v": [
+        "15 800 so'm",
+        "23 600 so'm",
+        "8 000 so'm",
+        "40 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Sarflangan pul 250 000 − 171 000 = 79 000 so'm. Undan sut narxi 39 000 so'mni ayiramiz, nonlarga 40 000 so'm ketgani ma'lum bo'ladi. Beshta non bo'lgani uchun 5x = 40 000 va x = 8 000 so'm. Javob: 8 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-va-xarid",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#879c1add"
+    },
+    {
+      "q": "Alisher velosipedda 3 soat yurdi, so'ng 2 soat piyoda yurdi. Velosiped tezligi soatiga 18 km edi va u jami 62 km yo'l bosgan bo'lsa, piyoda yurish tezligini toping.",
+      "v": [
+        "8 km/soat",
+        "12,4 km/soat",
+        "4 km/soat",
+        "31 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Velosipedda bosilgan masofa 3 · 18 = 54 km ga teng. Qolgan masofa uchun 2x = 62 − 54 = 8 tenglama tuziladi, demak x = 4 km/soat. 8 — bu ikki soatda piyoda bosilgan masofa, tezlik emas. Javob: 4 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harakat-va-masofa",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#ca5747d3"
+    },
+    {
+      "q": "Ikki shahar orasidagi masofa 240 km. Yengil avtomobil bu masofani yuk mashinasidan 2 soat tez bosadi. Yuk mashinasi yo'lda 5 soat yurgan bo'lsa, yengil avtomobilning tezligi qancha?",
+      "v": [
+        "48 km/soat",
+        "50 km/soat",
+        "120 km/soat",
+        "80 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Yengil avtomobilning vaqtini x deb olamiz: x + 2 = 5, demak x = 3 soat. Tezlik masofani vaqtga bo'lish orqali topiladi: 240 : 3 = 80 km/soat. 48 km/soat — bu yuk mashinasining tezligi. Javob: 80 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harakat-va-masofa",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#7d333a6a"
+    },
+    {
+      "q": "Qayiq daryo oqimi bo'ylab 3 soatda 54 km suzdi. Oqim tezligi soatiga 4 km bo'lsa, qayiqning turg'un suvdagi tezligi nechaga teng?",
+      "v": [
+        "14 km/soat",
+        "18 km/soat",
+        "22 km/soat",
+        "13,5 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Oqim bo'ylab harakatda tezlik x + 4 ga teng bo'ladi. Masofa formulasidan (x + 4) · 3 = 54, ya'ni x + 4 = 18. Bundan x = 14 km/soat. 18 da to'xtagan o'quvchi oqim tezligini ayirishni unutgan. Javob: 14 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harakat-va-masofa",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#350a3e2a"
+    },
+    {
+      "q": "Ikki shahardan bir-biriga qarab bir vaqtda ikkita mashina chiqdi va 3 soatdan keyin uchrashdi. Birinchisining tezligi 70 km/soat, shaharlar orasidagi masofa 390 km. Ikkinchi mashinaning tezligini aniqlang.",
+      "v": [
+        "70 km/soat",
+        "60 km/soat",
+        "130 km/soat",
+        "200 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Uchrashguncha ikkala mashina birgalikda 390 km bosgan. Yaqinlashish tezligi 390 : 3 = 130 km/soat ni tashkil qiladi. Ikkinchi mashina tezligi uchun 70 + x = 130 tenglama tuziladi va x = 60 km/soat. 130 — bu yig'indi tezlik. Javob: 60 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harakat-va-masofa",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#05aed9db"
+    },
+    {
+      "q": "Bir usta devorni 6 kunda, shogirdi esa 12 kunda suvaydi. Ular birgalikda ishlaganda bu devor necha kunda tayyor bo'ladi?",
+      "v": [
+        "9 kun",
+        "18 kun",
+        "6 kun",
+        "4 kun"
+      ],
+      "t": 3,
+      "izoh": "Butun ishni 1 deb olamiz. Usta kuniga 1/6 qismini, shogird 1/12 qismini bajaradi. Birgalikda kuniga 1/6 + 1/12 = 1/4 qism bajariladi, demak butun ish 4 kunda tugaydi. Kunlarni o'rtachalash (9 kun) — keng tarqalgan xato. Javob: 4 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#4630c54f"
+    },
+    {
+      "q": "Ikki nasos hovuzni birgalikda 8 soatda to'ldiradi. Birinchi nasos yolg'iz o'zi hovuzni 24 soatda to'ldirsa, ikkinchisi qancha vaqtda to'ldiradi?",
+      "v": [
+        "16 soat",
+        "32 soat",
+        "12 soat",
+        "6 soat"
+      ],
+      "t": 2,
+      "izoh": "Birgalikdagi unum soatiga 1/8, birinchi nasosniki 1/24 qismni tashkil qiladi. Ikkinchisining unumi 1/8 − 1/24 = 1/12 ga teng bo'ladi. Demak u hovuzni 12 soatda to'ldiradi. Vaqtlarni to'g'ridan-to'g'ri ayirgan o'quvchi 16 soatni oladi. Javob: 12 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#18e53ade"
+    },
+    {
+      "q": "Tikuvchilik sexida bir ishchi kuniga 14 ta ko'ylak tikadi. Buyurtma ustida 5 ishchi 6 kun ishladi va yana 90 ta ko'ylak tikilishi kerak. Buyurtmadagi ko'ylaklar sonini toping.",
+      "v": [
+        "420 ta",
+        "510 ta",
+        "330 ta",
+        "174 ta"
+      ],
+      "t": 1,
+      "izoh": "Bir ishchi olti kunda 14 · 6 = 84 ta ko'ylak tikadi. Besh ishchi esa 5 · 84 = 420 ta tikadi. Buyurtmani x deb olsak, x − 420 = 90 va x = 510 ta. Qolgan 90 tani qo'shmagan o'quvchi 420 da to'xtaydi. Javob: 510 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#2da76b3b"
+    },
+    {
+      "q": "Bir traktor dalani 9 soatda, ikkinchisi esa 18 soatda haydaydi. Ular birga 4 soat ishlagach, birinchi traktor to'xtadi. Dalaning qolgan qismini ikkinchi traktor necha soatda haydaydi?",
+      "v": [
+        "6 soat",
+        "9 soat",
+        "12 soat",
+        "14 soat"
+      ],
+      "t": 0,
+      "izoh": "Birgalikda soatiga 1/9 + 1/18 = 1/6 qism haydaladi. To'rt soatda 4/6, ya'ni 2/3 qism bajariladi va 1/3 qism qoladi. Ikkinchi traktor soatiga 1/18 qismni haydagani uchun qolganiga 6 soat kerak bo'ladi. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#ea2e02d4"
+    },
+    {
+      "q": "Otasining yoshi o'g'lining yoshidan 3 marta katta. Ikkalasining yoshlari yig'indisi 48 ga teng bo'lsa, o'g'li necha yoshda?",
+      "v": [
+        "16 yosh",
+        "12 yosh",
+        "36 yosh",
+        "24 yosh"
+      ],
+      "t": 1,
+      "izoh": "O'g'lining yoshini x deb olamiz, u holda otasiniki 3x bo'ladi. Yig'indi tenglamasi: x + 3x = 48, ya'ni 4x = 48 va x = 12 yosh. 36 — bu otasining yoshi, savolda esa o'g'li so'ralgan. Javob: 12 yosh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-yosh-masalasi",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#23e72359"
+    },
+    {
+      "q": "Hozir onasi qizidan 26 yosh katta. 4 yildan keyin onasining yoshi qizining yoshidan 3 marta ko'p bo'ladi. Qiz hozir necha yoshda?",
+      "v": [
+        "13 yosh",
+        "15 yosh",
+        "9 yosh",
+        "35 yosh"
+      ],
+      "t": 2,
+      "izoh": "Qizning hozirgi yoshi x, onasiniki x + 26 bo'ladi. To'rt yildan keyin: x + 30 = 3(x + 4). Qavsni ochamiz: x + 30 = 3x + 12, demak 2x = 18 va x = 9 yosh. 35 — bu onasining hozirgi yoshi. Javob: 9 yosh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-yosh-masalasi",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#2ccc6cfa"
+    },
+    {
+      "q": "Akasi bilan singlisining yoshlari farqi 7 yil. 5 yil oldin akasining yoshi singlisinikidan 2 marta katta edi. Akasi hozir necha yoshda?",
+      "v": [
+        "19 yosh",
+        "12 yosh",
+        "14 yosh",
+        "24 yosh"
+      ],
+      "t": 0,
+      "izoh": "Singlisining hozirgi yoshi x, akasiniki x + 7 bo'ladi. Besh yil oldin: x + 2 = 2(x − 5). Qavsni ochamiz: x + 2 = 2x − 10, demak x = 12 va akasi 12 + 7 = 19 yoshda. 12 — bu singlisining yoshi. Javob: 19 yosh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-yosh-masalasi",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#4d29b59e"
+    },
+    {
+      "q": "Bugun bobosining yoshi nabirasining yoshidan 5 marta ko'p. 6 yildan keyin bobosi nabirasidan 44 yosh katta bo'ladi. Nabirasi hozir necha yoshda?",
+      "v": [
+        "55 yosh",
+        "8,8 yosh",
+        "17 yosh",
+        "11 yosh"
+      ],
+      "t": 3,
+      "izoh": "Nabirasining yoshi x, bobosiniki 5x bo'lsin. Yoshlar farqi yillar o'tishi bilan o'zgarmaydi, shuning uchun 5x − x = 44. Bundan 4x = 44 va x = 11 yosh. 55 — bu bobosining hozirgi yoshi. Javob: 11 yosh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-yosh-masalasi",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#683d15e7"
+    },
+    {
+      "q": "Idishda 40 litr 15 foizli tuzli eritma bor. Unga necha litr toza suv qo'shilsa, eritmadagi tuz ulushi 10 foizga tushadi?",
+      "v": [
+        "20 litr",
+        "60 litr",
+        "5 litr",
+        "2 litr"
+      ],
+      "t": 0,
+      "izoh": "Eritmadagi tuz miqdori 40 · 0,15 = 6 litr bo'lib, suv qo'shilganda u o'zgarmaydi. Yangi hajm 40 + x bo'lgani uchun 6 = 0,1(40 + x) tenglama tuziladi. Bundan 40 + x = 60 va x = 20 litr. 60 — bu yangi umumiy hajm, qo'shilgan suv emas. Javob: 20 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-aralashma-va-eritma",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#15af8247"
+    },
+    {
+      "q": "Sotuvchi kilosi 24 000 so'mlik quruq mevaga kilosi 16 000 so'mlik mevani aralashtirib, 20 kg aralashma tayyorladi. Aralashmaning bir kilosi 18 000 so'm bo'lsa, qimmat mevadan necha kilogramm olingan?",
+      "v": [
+        "15 kg",
+        "5 kg",
+        "10 kg",
+        "8 kg"
+      ],
+      "t": 1,
+      "izoh": "Qimmat mevadan x kg olingan bo'lsin, arzonidan 20 − x kg. Qiymatlar tengligi: 24 000x + 16 000(20 − x) = 18 000 · 20. Soddalashtiramiz: 8 000x = 360 000 − 320 000 = 40 000, demak x = 5 kg. 15 kg — bu arzon mevaning miqdori. Javob: 5 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-aralashma-va-eritma",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#b895edf5"
+    },
+    {
+      "q": "Bochkadagi sutning uchdan bir qismi olingandan keyin yana 12 litr olindi va bochkada 28 litr sut qoldi. Bochkada dastlab necha litr sut bo'lgan?",
+      "v": [
+        "40 litr",
+        "42 litr",
+        "60 litr",
+        "120 litr"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki miqdorni x deb olamiz: x − x/3 − 12 = 28. Chap tomonda x − x/3 = (2/3)x bo'ladi, demak (2/3)x = 40. Ikkala tomonni 3/2 ga ko'paytiramiz va x = 60 litr chiqadi. 40 — bu 12 litr olinishidan oldingi oraliq qiymat. Javob: 60 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aralashma-va-eritma",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#97a0ddb1"
+    },
+    {
+      "q": "Ikkita idishda jami 84 litr suv bor. Birinchi idishdan 9 litr ikkinchisiga quyilgach, idishlardagi suv miqdori tenglashdi. Birinchi idishda dastlab necha litr suv bo'lgan?",
+      "v": [
+        "42 litr",
+        "33 litr",
+        "60 litr",
+        "51 litr"
+      ],
+      "t": 3,
+      "izoh": "Birinchi idishdagi suv x litr bo'lsin, ikkinchisida 84 − x litr. Quyilgandan keyin: x − 9 = (84 − x) + 9. Soddalashtiramiz: 2x = 102 va x = 51 litr. 42 litr — bu tenglashgandan keyingi miqdor, dastlabkisi emas. Javob: 51 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aralashma-va-eritma",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#5abab78c"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi bog'ning uzunligi kengligidan 7 m ortiq. Bog' perimetri 86 m bo'lsa, uning kengligini toping.",
+      "v": [
+        "25 m",
+        "36 m",
+        "18 m",
+        "21,5 m"
+      ],
+      "t": 2,
+      "izoh": "Kenglikni x, uzunlikni x + 7 deb olamiz. Perimetr formulasidan 2(x + x + 7) = 86, ya'ni 2x + 7 = 43. Bundan 2x = 36 va x = 18 m. 25 m — bu uzunlik, savolda esa kenglik so'ralgan. Javob: 18 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-perimetr-va-olcham",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#5a13fd98"
+    },
+    {
+      "q": "Uchburchakning ikkinchi tomoni birinchisidan 4 sm uzun, uchinchisi esa birinchisidan 2 marta uzun. Perimetri 44 sm bo'lsa, birinchi tomon uzunligini aniqlang.",
+      "v": [
+        "14 sm",
+        "20 sm",
+        "11 sm",
+        "10 sm"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tomon x, ikkinchisi x + 4, uchinchisi 2x bo'ladi. Perimetr tenglamasi: x + (x + 4) + 2x = 44, ya'ni 4x = 40 va x = 10 sm. 14 sm — bu ikkinchi tomonning uzunligi. Javob: 10 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-perimetr-va-olcham",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#29074988"
+    },
+    {
+      "q": "Kvadrat shaklidagi maydonning tomoni 5 m ga uzaytirilganda uning perimetri 104 m bo'ldi. Dastlabki kvadratning tomoni necha metr edi?",
+      "v": [
+        "21 m",
+        "24,75 m",
+        "26 m",
+        "31 m"
+      ],
+      "t": 0,
+      "izoh": "Uzaytirilgandan keyingi tomon x + 5 ga teng va 4(x + 5) = 104 tenglama tuziladi. Bundan x + 5 = 26 va x = 21 m. Qavsni ochmay 4x + 5 = 104 deb yozgan o'quvchi 24,75 ni oladi. Javob: 21 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-perimetr-va-olcham",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#14066d37"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning kengligi 15 sm. Agar uzunligi 6 sm ga qisqartirilsa, perimetri 78 sm bo'ladi. Dastlabki uzunlikni toping.",
+      "v": [
+        "24 sm",
+        "30 sm",
+        "39 sm",
+        "33 sm"
+      ],
+      "t": 1,
+      "izoh": "Qisqartirilgandan keyingi uzunlik x − 6 bo'ladi. Perimetr tenglamasi: 2(15 + x − 6) = 78, ya'ni 9 + x = 39. Bundan x = 30 sm. 24 sm — bu qisqartirilgandan keyingi uzunlik. Javob: 30 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-perimetr-va-olcham",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#acc3ae0a"
+    },
+    {
+      "q": "O'quvchining beshta imtihon natijasi 78, 85, 91, 64 va x ball. Ballarning o'rtacha qiymati 80 ga teng bo'lsa, x nechaga teng?",
+      "v": [
+        "80",
+        "82",
+        "79,5",
+        "400"
+      ],
+      "t": 1,
+      "izoh": "Beshta bahoning yig'indisi 5 · 80 = 400 ball bo'lishi kerak. Ma'lum to'rtta bahoning yig'indisi 78 + 85 + 91 + 64 = 318 ball. Demak x = 400 − 318 = 82. 79,5 — bu to'rtta bahoning o'rtachasi. Javob: 82.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ortacha-qiymat",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#05b3bb65"
+    },
+    {
+      "q": "Do'konda haftaning olti kunida o'rtacha 45 tadan kitob sotildi. Yakshanba savdosi qo'shilganda haftalik o'rtacha 48 taga ko'tarildi. Yakshanba kuni nechta kitob sotilgan?",
+      "v": [
+        "66 ta",
+        "21 ta",
+        "48 ta",
+        "63 ta"
+      ],
+      "t": 0,
+      "izoh": "Olti kunlik jami savdo 6 · 45 = 270 ta kitobni tashkil qiladi. Yetti kunlik jami esa 7 · 48 = 336 ta bo'lishi kerak. Yakshanbadagi savdo 336 − 270 = 66 ta. O'rtachalar farqini (48 − 45 = 3) olti kunga ko'paytirib, uni eski o'rtachaga qo'shgan o'quvchi 45 + 18 = 63 ni oladi; shu farqni yetti kunga ko'paytirgan esa 3 · 7 = 21 ni oladi. Javob: 66 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ortacha-qiymat",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#f6954d3e"
+    },
+    {
+      "q": "Sinfda 24 o'quvchi bor va ularning o'rtacha vazni 42 kg. Yangi o'quvchi qo'shilgach, o'rtacha vazn 42,4 kg bo'ldi. Yangi o'quvchining vaznini toping.",
+      "v": [
+        "42 kg",
+        "42,4 kg",
+        "10 kg",
+        "52 kg"
+      ],
+      "t": 3,
+      "izoh": "Dastlabki jami vazn 24 · 42 = 1 008 kg ni tashkil qiladi. Yangi o'rtacha bo'yicha jami vazn 25 · 42,4 = 1 060 kg bo'lishi kerak. Demak yangi o'quvchining vazni 1 060 − 1 008 = 52 kg. 10 kg — bu o'rtachaning umumiy ortishi. Javob: 52 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ortacha-qiymat",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#6562bd6a"
+    },
+    {
+      "q": "Jasur to'rt kun kitob o'qidi: dastlabki uch kuni kuniga 35 betdan, to'rtinchi kuni esa x bet. Kunlik o'rtacha 41 bet chiqqan bo'lsa, to'rtinchi kuni nechta bet o'qigan?",
+      "v": [
+        "41 bet",
+        "35 bet",
+        "59 bet",
+        "76 bet"
+      ],
+      "t": 2,
+      "izoh": "To'rt kunlik jami hajm 4 · 41 = 164 bet bo'lishi kerak. Uch kunda o'qilgani 3 · 35 = 105 bet. Demak to'rtinchi kuni 164 − 105 = 59 bet o'qigan. 76 bet — o'rtachaga kunlik normani qo'shish xatosidan chiqadi. Javob: 59 bet.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ortacha-qiymat",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#7fcfeaac"
+    },
+    {
+      "q": "Telefon narxi 20 foizga arzonlashib, 3 600 000 so'm bo'ldi. Uning chegirmadan oldingi narxi qancha edi?",
+      "v": [
+        "4 320 000 so'm",
+        "2 880 000 so'm",
+        "900 000 so'm",
+        "4 500 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Chegirmadan keyingi narx dastlabki narxning 80 foizini tashkil qiladi: 0,8x = 3 600 000. Ikkala tomonni 0,8 ga bo'lamiz va x = 4 500 000 so'm chiqadi. Yangi narxga 20 foiz qo'shgan o'quvchi 4 320 000 ni oladi. Javob: 4 500 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-foiz-va-chegirma",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#01fd9c50"
+    },
+    {
+      "q": "Ish haqi 12 foizga oshirilgach, Malika oyiga 4 480 000 so'm ola boshladi. Oshirishdan oldin uning ish haqi qancha bo'lgan?",
+      "v": [
+        "3 942 400 so'm",
+        "5 017 600 so'm",
+        "4 000 000 so'm",
+        "480 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Yangi ish haqi eskisining 112 foiziga teng, ya'ni 1,12x = 4 480 000. Bundan x = 4 480 000 : 1,12 = 4 000 000 so'm. 480 000 so'm — bu ish haqining oshgan qismi, o'zi emas. Javob: 4 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-foiz-va-chegirma",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#439b70e8"
+    },
+    {
+      "q": "Fermer yig'ilgan hosilning 35 foizini sotdi va omborda 5 200 kg bug'doy qoldi. Jami hosil necha kilogramm bo'lgan?",
+      "v": [
+        "7 020 kg",
+        "8 000 kg",
+        "3 380 kg",
+        "2 800 kg"
+      ],
+      "t": 1,
+      "izoh": "Omborda qolgan qism hosilning 65 foizini tashkil qiladi: 0,65x = 5 200. Ikkala tomonni 0,65 ga bo'lamiz va x = 8 000 kg chiqadi. 2 800 kg — bu sotilgan qism, jami hosil emas. Javob: 8 000 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-foiz-va-chegirma",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#f455ae8a"
+    },
+    {
+      "q": "Kitob narxiga avval 10 foiz ustama qo'shildi, keyin yangi narxdan 10 foiz chegirma berildi va kitob 49 500 so'mga sotildi. Kitobning dastlabki narxi qancha edi?",
+      "v": [
+        "50 000 so'm",
+        "49 500 so'm",
+        "45 000 so'm",
+        "55 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Ustamadan keyin narx 1,1x, chegirmadan keyin esa 1,1x · 0,9 = 0,99x bo'ladi. Demak 0,99x = 49 500 va x = 50 000 so'm. Foizlar bir-birini yo'qotadi deb o'ylagan o'quvchi 49 500 ni tanlaydi. Javob: 50 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-foiz-va-chegirma",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#99d8614c"
+    },
+    {
+      "q": "Oilaning oylik daromadining uchdan biri ijaraga, chorak qismi oziq-ovqatga ketadi va 1 750 000 so'm jamg'armaga qoladi. Oilaning oylik daromadini toping.",
+      "v": [
+        "4 200 000 so'm",
+        "3 000 000 so'm",
+        "2 450 000 so'm",
+        "5 250 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Ijara va oziq-ovqat birgalikda x/3 + x/4 = 7x/12 ni tashkil qiladi. Qolgan qism 5x/12 bo'lib, u 1 750 000 so'mga teng. Bundan x = 1 750 000 · 12/5 = 4 200 000 so'm. Qolgan ulushni 7/12 deb olgan o'quvchi 3 000 000 ni oladi. Javob: 4 200 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-byudjet-va-taqsimot",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#17b26027"
+    },
+    {
+      "q": "Uch do'st sayohatga jami 1 380 000 so'm sarfladi. Ikkinchisi birinchisidan 120 000 so'm ko'p, uchinchisi esa birinchisidan 2 marta ko'p sarfladi. Birinchi do'st qancha sarflagan?",
+      "v": [
+        "345 000 so'm",
+        "435 000 so'm",
+        "630 000 so'm",
+        "315 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Birinchi do'stning xarajati x so'm bo'lsin: x + (x + 120 000) + 2x = 1 380 000. Soddalashtiramiz: 4x = 1 260 000, demak x = 315 000 so'm. 435 000 — bu ikkinchi do'stning xarajati. Javob: 315 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-byudjet-va-taqsimot",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#afffdee2"
+    },
+    {
+      "q": "Sinf o'quvchilarining uchdan ikki qismi qizlar. Agar sinfga yana 4 nafar o'g'il bola qo'shilsa, o'g'il bolalar soni qizlarnikiga tenglashadi. Sinfda nechta qiz bor?",
+      "v": [
+        "4 nafar",
+        "8 nafar",
+        "12 nafar",
+        "6 nafar"
+      ],
+      "t": 1,
+      "izoh": "O'g'il bolalar sonini x deb olamiz, u holda qizlar 2x nafar bo'ladi. Shartga ko'ra x + 4 = 2x, demak x = 4 va qizlar soni 2 · 4 = 8 nafar. 4 nafar — bu o'g'il bolalarning dastlabki soni. Javob: 8 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-byudjet-va-taqsimot",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#e06ab86d"
+    },
+    {
+      "q": "Kutubxonadagi kitoblarning 40 foizi badiiy adabiyot. Yana 150 ta badiiy kitob keltirilsa, ular umumiy kitoblarning yarmini tashkil qiladi. Kutubxonada dastlab nechta kitob bo'lgan?",
+      "v": [
+        "1 500 ta",
+        "300 ta",
+        "750 ta",
+        "900 ta"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki kitoblar soni x bo'lsin, badiiylari 0,4x ta. Yangi holat uchun 0,4x + 150 = 0,5(x + 150) tenglama tuziladi. Qavsni ochamiz: 0,4x + 150 = 0,5x + 75, demak 0,1x = 75 va x = 750 ta. O'ng tomonda 150 ni qo'shishni unutgan o'quvchi 1 500 ni oladi. Javob: 750 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-byudjet-va-taqsimot",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#cc9525d8"
+    },
+    {
+      "q": "3(2x − a) = 6x − 15 tenglik x ning barcha qiymatlarida bajarilishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "5",
+        "−5",
+        "15",
+        "45"
+      ],
+      "t": 0,
+      "izoh": "Chap tomonni ochamiz va 6x − 3a ifodasini hosil qilamiz. O'ng tomon 6x − 15 bo'lgani uchun 3a = 15 bo'lishi shart, demak a = 5. Bo'lish qadamini tashlab ketgan o'quvchi 15 ni oladi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyat-koeffitsiyent-taqqoslash",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#7701106e"
+    },
+    {
+      "q": "(b − 2)x + 6 = 7x + 6 tenglik ixtiyoriy x uchun o'rinli bo'lsa, b ning qiymati qanday?",
+      "v": [
+        "5",
+        "9",
+        "7",
+        "15"
+      ],
+      "t": 1,
+      "izoh": "Tenglik ixtiyoriy x da o'rinli bo'lishi uchun x oldidagi koeffitsientlar teng bo'lishi shart: b − 2 = 7, demak b = 9. Ozod hadlar ikkala tomonda ham 6 ga teng va ular shartga ta'sir qilmaydi. Ishorani almashtirgan o'quvchi 5 ni tanlaydi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyat-koeffitsiyent-taqqoslash",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#c72c86f7"
+    },
+    {
+      "q": "2(x + 3) − 4 = 2x + c tenglama cheksiz ko'p yechimga ega bo'lishi uchun c nechaga teng bo'lsin?",
+      "v": [
+        "6",
+        "−2",
+        "2",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "Chap tomonni soddalashtiramiz: 2x + 6 − 4 = 2x + 2. Cheksiz yechim uchun ikkala tomon aynan bir xil bo'lishi kerak, demak c = 2. Qavsni ochib 4 ni ayirishni unutgan o'quvchi 6 ni oladi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-koeffitsiyent-taqqoslash",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#7f879396"
+    },
+    {
+      "q": "5x − (2x + k) = 3x − 8 tenglik barcha x qiymatlarida bajarilsa, k qanday qiymatga ega bo'ladi?",
+      "v": [
+        "−8",
+        "4",
+        "24",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Qavsni ochamiz: 5x − 2x − k = 3x − k. O'ng tomon 3x − 8 bo'lgani uchun −k = −8, ya'ni k = 8. Qavs oldidagi minusni hisobga olmagan o'quvchi −8 ni tanlaydi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayniyat-koeffitsiyent-taqqoslash",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#6ad7c62c"
+    },
+    {
+      "q": "(x + 5)/3 = 4 tenglamaga teng kuchli bo'lgan tenglamani ko'rsating.",
+      "v": [
+        "x + 5 = 4/3",
+        "x + 5 = 12",
+        "x + 15 = 4",
+        "3x + 5 = 12"
+      ],
+      "t": 1,
+      "izoh": "Kasrdan qutulish uchun ikkala tomonni maxraj 3 ga ko'paytiramiz. Chap tomonda x + 5 qoladi, o'ng tomon esa 4 · 3 = 12 bo'ladi. Demak teng kuchli tenglama x + 5 = 12 ko'rinishida. Faqat bitta hadni ko'paytirish tenglamani buzadi. Javob: x + 5 = 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-tenglamaga-keltirish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#5adc3178"
+    },
+    {
+      "q": "0,2x − 0,05 = 0,3 tenglamani butun koeffitsientli ko'rinishga keltirsak, qaysi tenglama hosil bo'ladi?",
+      "v": [
+        "2x − 5 = 3",
+        "20x − 5 = 3",
+        "20x − 5 = 30",
+        "2x − 0,5 = 30"
+      ],
+      "t": 2,
+      "izoh": "Eng kichik o'nli razryad yuzdan bir bo'lgani uchun ikkala tomonni 100 ga ko'paytiramiz. Har bir had ko'paytirilganda 20x − 5 = 30 hosil bo'ladi. Faqat ayrim hadlarni ko'paytirish tenglamani buzadi. Javob: 20x − 5 = 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-tenglamaga-keltirish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#b9bd84a9"
+    },
+    {
+      "q": "6x − 18 = 0 tenglamaning ildizi quyidagi qaysi tenglamaning ildizi bilan bir xil bo'ladi?",
+      "v": [
+        "2x = 9",
+        "x − 3 = 6",
+        "5x = 12",
+        "x/3 = 1"
+      ],
+      "t": 3,
+      "izoh": "Berilgan tenglamadan 6x = 18 va x = 3 chiqadi. Endi variantlarni tekshiramiz: x/3 = 1 tenglamadan ham x = 3 hosil bo'ladi. Qolganlari mos ravishda 4,5, 9 va 2,4 ildizlarini beradi. Javob: x/3 = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-tenglamaga-keltirish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#d0a71371"
+    },
+    {
+      "q": "Quyidagi tenglamalardan qaysi biri x = −4 ildiziga ega ekanini aniqlang.",
+      "v": [
+        "3x + 10 = −2",
+        "2x − 5 = 3",
+        "5x + 8 = −7",
+        "x/2 + 3 = 5"
+      ],
+      "t": 0,
+      "izoh": "Har bir tenglamani alohida yechamiz. Birinchisida 3x = −12 va x = −4, ya'ni shart bajariladi. Qolgan tenglamalar mos ravishda 4, −3 va 4 ildizlarini beradi. Manfiy ishorani e'tibordan chetda qoldirgan o'quvchi ikkinchi variantni tanlaydi. Javob: 3x + 10 = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-tenglamaga-keltirish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#4476823f"
+    },
+    {
+      "q": "Bog'bon 100 tup ko'chatni uch qatorga ekdi. Ikkinchi qatorda birinchisidan 8 tup ko'p, uchinchisida esa birinchisidan 4 tup kam ko'chat bor. Birinchi qatorda nechta ko'chat bor?",
+      "v": [
+        "36 tup",
+        "40 tup",
+        "32 tup",
+        "28 tup"
+      ],
+      "t": 2,
+      "izoh": "Birinchi qatordagi ko'chat soni x bo'lsin: x + (x + 8) + (x − 4) = 100. Soddalashtiramiz: 3x + 4 = 100, demak 3x = 96 va x = 32 tup. 40 tup — bu ikkinchi qatordagi ko'chatlar soni. Javob: 32 tup.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-taqsimlash-masalasi",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#63eddb91"
+    },
+    {
+      "q": "Ikki ishchi birgalikda 78 ta detal tayyorladi. Birinchisi ikkinchisidan 1,6 marta ko'p detal tayyorlagan bo'lsa, ikkinchi ishchi nechta detal tayyorlagan?",
+      "v": [
+        "48 ta",
+        "39 ta",
+        "26 ta",
+        "30 ta"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi ishchi x ta detal tayyorlagan bo'lsin, birinchisi esa 1,6x ta. Jami: x + 1,6x = 78, ya'ni 2,6x = 78 va x = 30 ta. 48 ta — bu birinchi ishchining natijasi. Javob: 30 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-taqsimlash-masalasi",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#93ed798a"
+    },
+    {
+      "q": "Farrux 5 000 000 so'mni ikki bankka qo'ydi. Birinchi bankka ikkinchisidan 800 000 so'm ko'p pul qo'ygan bo'lsa, ikkinchi bankdagi summa qancha?",
+      "v": [
+        "2 100 000 so'm",
+        "2 900 000 so'm",
+        "2 500 000 so'm",
+        "4 200 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi bankdagi summani x deb olamiz, birinchisida x + 800 000 so'm bo'ladi. Yig'indi: 2x + 800 000 = 5 000 000, demak 2x = 4 200 000 va x = 2 100 000 so'm. 2 900 000 — bu birinchi bankdagi summa. Javob: 2 100 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-taqsimlash-masalasi",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#aeffc097"
+    },
+    {
+      "q": "Birinchi qopdagi guruch ikkinchisidagidan 12 kg ko'p. Birinchi qopdan 20 kg guruch olingach, unda ikkinchi qopdagidan 2 marta kam guruch qoldi. Ikkinchi qopda necha kilogramm guruch bor?",
+      "v": [
+        "28 kg",
+        "16 kg",
+        "8 kg",
+        "32 kg"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi qopdagi guruch x kg, birinchisida x + 12 kg. Yigirma kilogramm olingandan keyin: x + 12 − 20 = x/2, ya'ni x − 8 = x/2. Bundan x/2 = 8 va x = 16 kg. 28 kg — bu birinchi qopdagi dastlabki miqdor. Javob: 16 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-taqsimlash-masalasi",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#1bdeb2b0"
+    },
+    {
+      "q": "Uchta ketma-ket natural sonning yig'indisi 96 ga teng. Ushbu sonlarning eng kattasini toping.",
+      "v": [
+        "31",
+        "32",
+        "34",
+        "33"
+      ],
+      "t": 3,
+      "izoh": "Sonlarni x, x + 1 va x + 2 deb olamiz: 3x + 3 = 96, ya'ni 3x = 93 va x = 31. Demak sonlar 31, 32 va 33 bo'lib, eng kattasi 33 ga teng. 32 — bu o'rtadagi son. Javob: 33.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ketma-ket-sonlar",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#c4e8c4bd"
+    },
+    {
+      "q": "Ketma-ket keladigan ikkita juft sonning yig'indisi 74 ga teng. Ulardan kichigini aniqlang.",
+      "v": [
+        "36",
+        "38",
+        "37",
+        "35"
+      ],
+      "t": 0,
+      "izoh": "Kichik juft sonni x deb olamiz, kattasi x + 2 bo'ladi. Yig'indi: 2x + 2 = 74, demak 2x = 72 va x = 36. Sonlar 36 va 38 ekan. 37 — bu ikkalasining o'rtachasi, u juft son emas. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ketma-ket-sonlar",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#3400d0ec"
+    },
+    {
+      "q": "Ikki xonali sonning o'nlar xonasidagi raqami birlar xonasidagidan 3 ta ko'p. Raqamlar yig'indisi 11 ga teng bo'lsa, shu sonni toping.",
+      "v": [
+        "47",
+        "74",
+        "83",
+        "38"
+      ],
+      "t": 1,
+      "izoh": "Birlar xonasidagi raqamni x deb olamiz, o'nlar xonasidagisi x + 3 bo'ladi. Yig'indi tenglamasi: x + (x + 3) = 11, ya'ni 2x = 8 va x = 4. Demak o'nlar raqami 7 va izlangan son 74. 47 — raqamlar o'rni almashtirilgan holat. Javob: 74.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ketma-ket-sonlar",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#8e968790"
+    },
+    {
+      "q": "To'rtta ketma-ket toq sonning yig'indisi 104 ga teng. Ushbu sonlarning eng kichigini toping.",
+      "v": [
+        "26",
+        "29",
+        "23",
+        "25"
+      ],
+      "t": 2,
+      "izoh": "Sonlarni x, x + 2, x + 4 va x + 6 deb olamiz: 4x + 12 = 104, ya'ni 4x = 92 va x = 23. Sonlar 23, 25, 27, 29 bo'lib, eng kichigi 23. 26 — bu yig'indini to'rtga bo'lish natijasi, lekin u toq son emas. Javob: 23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ketma-ket-sonlar",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#68348a55"
+    },
+    {
+      "q": "Tomchilatgich idishga daqiqasiga 15 ml suv quyadi, idish tubidagi teshikdan esa daqiqasiga 9 ml suv oqib chiqadi. Idishda dastlab 120 ml suv bo'lsa, necha daqiqadan keyin unda 300 ml suv bo'ladi?",
+      "v": [
+        "30 daqiqa",
+        "20 daqiqa",
+        "12 daqiqa",
+        "50 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Har daqiqada idishdagi suv 15 − 9 = 6 ml ga ko'payadi. Tenglama 120 + 6t = 300 ko'rinishida bo'ladi, demak 6t = 180 va t = 30 daqiqa. Teshikni hisobga olmagan o'quvchi 180 : 15 = 12 ni oladi. Javob: 30 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-vaziyatda-tenglama-tuzish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#ee073ec6"
+    },
+    {
+      "q": "Taksi xizmatida dastlabki 3 km uchun 12 000 so'm, keyingi har bir kilometr uchun 2 500 so'm olinadi. Yo'lkira 42 000 so'm bo'lgan bo'lsa, yo'lovchi necha kilometr yurgan?",
+      "v": [
+        "12 km",
+        "16,8 km",
+        "15 km",
+        "19,8 km"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki 3 km dan keyingi masofani x deb olamiz: 12 000 + 2 500x = 42 000. Bundan 2 500x = 30 000 va x = 12 km. Umumiy masofa esa 12 + 3 = 15 km bo'ladi. 12 km — bu faqat qo'shimcha qism. Javob: 15 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-vaziyatda-tenglama-tuzish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#31e19d18"
+    },
+    {
+      "q": "Sport zalida ikki xil obuna bor: birinchisida oyiga 60 000 so'm to'lanadi va mashg'ulotlar bepul, ikkinchisida oylik to'lov 20 000 so'm, har bir mashg'ulot esa 5 000 so'm. Necha mashg'ulotda ikkala obunaning oylik xarajati tenglashadi?",
+      "v": [
+        "12 ta",
+        "8 ta",
+        "16 ta",
+        "4 ta"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi obunaning n ta mashg'ulotdagi xarajati 20 000 + 5 000n so'mni tashkil qiladi. Uni birinchisiga tenglashtiramiz: 20 000 + 5 000n = 60 000. Bundan 5 000n = 40 000 va n = 8 ta. 12 ta — oylik to'lovni hisobga olmagan javob. Javob: 8 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "notanish-vaziyatda-tenglama-tuzish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#39d4eb1e"
+    },
+    {
+      "q": "Sayyohlar guruhi birinchi kuni yo'lning 40 foizini, ikkinchi kuni qolgan qismining yarmini bosib o'tdi va yana 36 km yo'l qoldi. Butun yo'lning uzunligini toping.",
+      "v": [
+        "60 km",
+        "90 km",
+        "360 km",
+        "120 km"
+      ],
+      "t": 3,
+      "izoh": "Birinchi kundan keyin yo'lning 60 foizi, ya'ni 0,6x qismi qoladi. Ikkinchi kuni uning yarmi bosib o'tiladi, demak 0,3x qoladi. Tenglama 0,3x = 36 bo'lib, bundan x = 120 km. Ikkinchi kunni hisobga olmagan o'quvchi 60 ni oladi. Javob: 120 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-vaziyatda-tenglama-tuzish",
+      "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar#11ac56a7"
+    }
+  ]
+}

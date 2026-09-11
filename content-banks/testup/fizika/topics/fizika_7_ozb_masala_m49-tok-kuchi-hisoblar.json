@@ -1,0 +1,201 @@
+{
+  "nom": "49-mavzu. Masala. Tok Kuchi Hisoblar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Manbadan o'tkazgich uchlariga 4 V kuchlanish berildi. O'tkazgichda 10 minut davomida 0,5 A tok o'tib tursa, tok manbai zaryadni ko'chirishda qanday ish bajargan?",
+      "v": [
+        "1200 J",
+        "20 J",
+        "120 J",
+        "2400 J"
+      ],
+      "t": 0,
+      "izoh": "t = 10 min = 600 s; A = U·I·t = 4·0,5·600 = 1200 J",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m49-tok-kuchi-hisoblar#78582830"
+    },
+    {
+      "q": "12 V kuchlanishli akkumulyator avtomobilni yurgizishda 50 A tok bermoqda. Avtomobil dvigateli 2 s o'tgach o't olsa, akkumulyator qanday ish bajargan?",
+      "v": [
+        "1200 J",
+        "62 J",
+        "300 J",
+        "12 000 J"
+      ],
+      "t": 0,
+      "izoh": "A = U·I·t = 12·50·2 = 1200 J",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m49-tok-kuchi-hisoblar#2386b123"
+    },
+    {
+      "q": "Elektr lampochkadan ma'lum vaqt davomida 25 C zaryad o'tib, tok manbai 100 J ish bajardi. Lampochka spiraliga qanday kuchlanish berilgan?",
+      "v": [
+        "4 V",
+        "2500 V",
+        "0,25 V",
+        "125 V"
+      ],
+      "t": 0,
+      "izoh": "U = A/q = 100/25 = 4 V",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m49-tok-kuchi-hisoblar#b9048155"
+    },
+    {
+      "q": "Manbaga ulangan iste'molchidan 20 mA tok o'tib turibdi. Tok manbai 2 soat davomida zaryadni ko'chirishda 720 J ish bajargan bo'lsa, iste'molchi uchlariga qanday kuchlanish berilgan?",
+      "v": [
+        "5 V",
+        "0,25 V",
+        "50 V",
+        "2,5 V"
+      ],
+      "t": 0,
+      "izoh": "I = 20 mA = 0,02 A; t = 2 soat = 7200 s; q = I·t = 0,02·7200 = 144 C; U = A/q = 720/144 = 5 V",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m49-tok-kuchi-hisoblar#7febbc7d"
+    },
+    {
+      "q": "Elektr lampochkadan 0,8 A tok o'tmoqda. Uning spirali ko'ndalang kesim yuzasidan 10 minutda o'tgan elektronlarning massasini aniqlang. (mₑ = 9,11·10⁻³¹ kg)",
+      "v": [
+        "2,73·10⁻⁹ kg",
+        "2,73·10⁻⁸ kg",
+        "2,73·10⁻¹⁰ kg",
+        "4,37·10⁻⁷ kg"
+      ],
+      "t": 0,
+      "izoh": "t = 600 s; q = I·t = 0,8·600 = 480 C; N = q/e = 480/1,6·10⁻¹⁹ = 3·10²¹ ta; m = N·mₑ = 3·10²¹·9,11·10⁻³¹ ≈ 2,73·10⁻⁹ kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m49-tok-kuchi-hisoblar#2024b1e7"
+    },
+    {
+      "q": "Tok manbaiga ulangan o'tkazgichdan 3,2 A tok o'tib turibdi. 30 minut davomida o'tkazgich ko'ndalang kesimidan o'tgan jami elektronlarning massasini aniqlang. (mₑ = 9,11·10⁻³¹ kg)",
+      "v": [
+        "3,28·10⁻⁸ kg",
+        "3,28·10⁻⁷ kg",
+        "3,28·10⁻⁹ kg",
+        "5,83·10⁻⁹ kg"
+      ],
+      "t": 0,
+      "izoh": "t = 1800 s; q = I·t = 3,2·1800 = 5760 C; N = 5760/1,6·10⁻¹⁹ = 3,6·10²² ta; m = 3,6·10²²·9,11·10⁻³¹ ≈ 3,28·10⁻⁸ kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m49-tok-kuchi-hisoblar#c393404f"
+    },
+    {
+      "q": "4,5 V kuchlanishli batareyaga ulangan iste'molchidan 0,2 A tok 10 minut davomida o'tdi. Tok manbai qancha ish bajargan?",
+      "v": [
+        "540 J",
+        "0,9 J",
+        "90 J",
+        "54 J"
+      ],
+      "t": 0,
+      "izoh": "t = 10 min = 600 s; A = U·I·t = 4,5·0,2·600 = 540 J",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m49-tok-kuchi-hisoblar#e93d87c3"
+    },
+    {
+      "q": "3 V kuchlanishli zanjirda tok manbai 60 s da 36 J ish bajardi. Zanjirdagi tok kuchi qancha?",
+      "v": [
+        "0,2 A",
+        "5 A",
+        "7,2 A",
+        "6480 A"
+      ],
+      "t": 0,
+      "izoh": "q = A/U = 36/3 = 12 C; I = q/t = 12/60 = 0,2 A",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m49-tok-kuchi-hisoblar#3082a213"
+    },
+    {
+      "q": "12 V kuchlanishli akkumulyator 0,5 A tok berib, 240 J ish bajardi. Tok qancha vaqt o'tgan?",
+      "v": [
+        "40 s",
+        "10 s",
+        "1440 s",
+        "5760 s"
+      ],
+      "t": 0,
+      "izoh": "q = A/U = 240/12 = 20 C; t = q/I = 20/0,5 = 40 s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m49-tok-kuchi-hisoblar#9b9d7e59"
+    },
+    {
+      "q": "Elektr zanjirdagi lampochkadan 0,5 A tok o'tmoqda. Lampochka spirali orqali 4 minutda qancha zaryad va nechta elektron o'tadi?",
+      "v": [
+        "120 C; 7,5·10²⁰ ta",
+        "120 C; 1,92·10²¹ ta",
+        "2 C; 1,25·10¹⁹ ta",
+        "30 C; 1,875·10²⁰ ta"
+      ],
+      "t": 0,
+      "izoh": "t = 4 min = 240 s; q = I·t = 0,5·240 = 120 C; N = q/e = 120/1,6·10⁻¹⁹ = 7,5·10²⁰ ta",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m49-tok-kuchi-hisoblar#8fd8f653"
+    },
+    {
+      "q": "O'tkazgichdan 0,6 A tok o'tmoqda. 20 s da undan qancha zaryad o'tadi?",
+      "v": [
+        "12 C",
+        "33,3 C",
+        "120 C",
+        "0,03 C"
+      ],
+      "t": 0,
+      "izoh": "q = I·t = 0,6·20 = 12 C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m49-tok-kuchi-hisoblar#034702c7"
+    },
+    {
+      "q": "O'tkazgichning ko'ndalang kesimidan 50 s da 100 C zaryad o'tdi. Tok kuchi qanchaga teng?",
+      "v": [
+        "2 A",
+        "5000 A",
+        "0,5 A",
+        "20 A"
+      ],
+      "t": 0,
+      "izoh": "I = q/t = 100/50 = 2 A",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m49-tok-kuchi-hisoblar#af36525f"
+    },
+    {
+      "q": "Zanjirdan 150 mA tok 2 minut davomida o'tib turdi. Bu vaqtda o'tgan zaryad miqdorini toping.",
+      "v": [
+        "18 C",
+        "0,3 C",
+        "300 C",
+        "180 C"
+      ],
+      "t": 0,
+      "izoh": "I = 150 mA = 0,15 A; t = 2 min = 120 s; q = I·t = 0,15·120 = 18 C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m49-tok-kuchi-hisoblar#8ba333ac"
+    }
+  ]
+}

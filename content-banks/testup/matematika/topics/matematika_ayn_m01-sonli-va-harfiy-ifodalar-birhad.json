@@ -1,0 +1,1609 @@
+{
+  "nom": "Sonli va harfiy ifodalar, birhad va ko'phadlar",
+  "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+  "blok": "ayn",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Karim daftariga 3a·(−5a²b)·2b ifodasini yozib qo'ydi. Shu birhadni standart shaklga keltirsangiz, qaysi ko'rinish hosil bo'ladi?",
+      "v": [
+        "30a³b²",
+        "−30a³b",
+        "−30a³b²",
+        "−30a²b²"
+      ],
+      "t": 2,
+      "izoh": "Avval sonli ko'paytuvchilarni ko'paytiramiz: 3·(−5)·2 = −30. So'ng bir xil harflarning ko'rsatkichlarini qo'shamiz: a·a² = a³ va b·b = b². Demak standart shakl −30a³b² bo'ladi. Javob: −30a³b².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birhad-standart-shakl",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#3d28bcb9"
+    },
+    {
+      "q": "(−2x²y)·(−4xy³) ko'paytmani standart shakldagi bitta birhad ko'rinishida yozing va to'g'ri natijani belgilang.",
+      "v": [
+        "8x³y⁴",
+        "−8x³y⁴",
+        "6x³y⁴",
+        "8x²y³"
+      ],
+      "t": 0,
+      "izoh": "Ikkita manfiy sonning ko'paytmasi musbat bo'ladi: (−2)·(−4) = 8. Bir xil asosli darajalarda ko'rsatkichlar qo'shiladi: x²·x = x³ va y·y³ = y⁴. Javob: 8x³y⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birhad-standart-shakl",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#2142920e"
+    },
+    {
+      "q": "Quyidagi ifodalardan qaysi biri standart shaklga keltirilgan birhad hisoblanadi: 5ab·2c, 7x²y, 3m + 2m yoki 4a·a?",
+      "v": [
+        "5ab·2c",
+        "7x²y",
+        "3m + 2m",
+        "4a·a"
+      ],
+      "t": 1,
+      "izoh": "Standart shakldagi birhadda bitta son koeffitsienti va har bir harfning yagona darajasi bo'ladi. 5ab·2c da ikkita son bajarilmay qolgan, 4a·a da a takrorlangan, 3m + 2m esa qo'shish bo'lgani uchun ko'phad. Javob: 7x²y.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birhad-standart-shakl",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#bec581fc"
+    },
+    {
+      "q": "Zilola (1/2)x³y va (−6xy²) birhadlarining ko'paytmasini standart shaklga keltirmoqchi. U qanday natijaga kelishi kerak?",
+      "v": [
+        "3x⁴y³",
+        "−3x³y²",
+        "−6x⁴y³",
+        "−3x⁴y³"
+      ],
+      "t": 3,
+      "izoh": "Koeffitsientlarni ko'paytiramiz: (1/2)·(−6) = −3. Harflarning ko'rsatkichlarini qo'shamiz: x³·x = x⁴ va y·y² = y³. Shunday qilib birhad −3x⁴y³ ko'rinishida bo'ladi. Javob: −3x⁴y³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birhad-standart-shakl",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#21414bda"
+    },
+    {
+      "q": "−7a³b²c⁵ birhadining darajasi nechaga teng ekanini aniqlang va to'g'ri javobni tanlang.",
+      "v": [
+        "5",
+        "7",
+        "10",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Birhadning darajasi barcha harflar ko'rsatkichlarining yig'indisiga teng. Bu yerda 3 + 2 + 5 = 10 chiqadi. Koeffitsientdagi 7 soni darajaga qo'shilmaydi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birhad-darajasi",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#78091ac2"
+    },
+    {
+      "q": "Bir birhadning darajasi 6 ga, ikkinchisiniki esa 4 ga teng. Ularning ko'paytmasi natijasida hosil bo'lgan birhadning darajasi qanday bo'ladi?",
+      "v": [
+        "24",
+        "10",
+        "2",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Birhadlar ko'paytirilganda bir xil harflarning ko'rsatkichlari qo'shiladi, shuning uchun umumiy daraja ham qo'shiladi: 6 + 4 = 10. Ko'paytirish darajalarni ko'paytirmaydi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birhad-darajasi",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#c2537ff1"
+    },
+    {
+      "q": "(2x²y³)³ birhadining darajasi nechaga teng bo'ladi? Avval darajaga ko'tarish amalini bajarib ko'ring.",
+      "v": [
+        "15",
+        "5",
+        "18",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Darajaga ko'taramiz: (2x²y³)³ = 2³·x⁶·y⁹ = 8x⁶y⁹. Endi harf ko'rsatkichlarini qo'shamiz: 6 + 9 = 15. Koeffitsientdagi daraja hisobga olinmaydi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birhad-darajasi",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#bb0d249f"
+    },
+    {
+      "q": "Nodira −x²y³ birhadining koeffitsienti qanday songa tengligini bilmoqchi. Unga to'g'ri javobni ko'rsating.",
+      "v": [
+        "0",
+        "1",
+        "−2",
+        "−1"
+      ],
+      "t": 3,
+      "izoh": "Harf oldida son yozilmagan bo'lsa, koeffitsient 1 ga teng deb olinadi. Oldidagi minus ishorasi uni −1 ga aylantiradi. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birhad-koeffitsienti",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#5a529e54"
+    },
+    {
+      "q": "3a·(−2b)·(−5ab) ko'paytmani standart shaklga keltirgach, hosil bo'lgan birhadning koeffitsienti nechaga teng bo'ladi?",
+      "v": [
+        "−30",
+        "30",
+        "10",
+        "−10"
+      ],
+      "t": 1,
+      "izoh": "Faqat sonli ko'paytuvchilar bilan ishlaymiz: 3·(−2) = −6, so'ng (−6)·(−5) = 30. Ikkita minus ko'paytmada plus beradi. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birhad-koeffitsienti",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#2049c2a3"
+    },
+    {
+      "q": "(−3x²y)² birhadini soddalashtirgandan keyin uning koeffitsienti qanday qiymatga ega bo'ladi?",
+      "v": [
+        "−9",
+        "6",
+        "9",
+        "−6"
+      ],
+      "t": 2,
+      "izoh": "Manfiy son juft darajaga ko'tarilganda musbatga aylanadi: (−3)² = 9. Demak (−3x²y)² = 9x⁴y² va koeffitsient 9 ga teng. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birhad-koeffitsienti",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#64a66147"
+    },
+    {
+      "q": "(−2a³b)⁴ ifodani darajaga ko'tarib, natijani standart shakldagi birhad ko'rinishida yozing.",
+      "v": [
+        "16a¹²b⁴",
+        "−16a¹²b⁴",
+        "16a⁷b⁴",
+        "8a¹²b⁴"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytmani darajaga ko'tarishda har bir ko'paytuvchi alohida darajaga ko'tariladi: (−2)⁴ = 16, (a³)⁴ = a¹², b⁴ = b⁴. Darajani darajaga ko'tarishda ko'rsatkichlar ko'paytiriladi, qo'shilmaydi. Javob: 16a¹²b⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birhadni-darajaga-kotarish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#25b21be8"
+    },
+    {
+      "q": "(3x²y)³ · 2xy² ko'paytmani hisoblang va natijani standart shakldagi birhad sifatida ko'rsating.",
+      "v": [
+        "18x⁷y⁵",
+        "54x⁶y⁵",
+        "54x⁷y⁶",
+        "54x⁷y⁵"
+      ],
+      "t": 3,
+      "izoh": "Avval qavsni darajaga ko'taramiz: (3x²y)³ = 27x⁶y³. So'ng 27x⁶y³ ni 2xy² ga ko'paytiramiz: 27·2 = 54, x⁶·x = x⁷, y³·y² = y⁵. Javob: 54x⁷y⁵.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birhadni-darajaga-kotarish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#a08739cd"
+    },
+    {
+      "q": "Yog'ochdan yasalgan kubning qirrasi 2a²b ga teng. Shu kubning hajmini ifodalovchi birhadni standart shaklda yozing.",
+      "v": [
+        "6a⁶b³",
+        "8a⁶b³",
+        "8a⁵b³",
+        "2a⁶b³"
+      ],
+      "t": 1,
+      "izoh": "Kubning hajmi qirraning kubiga teng: V = (2a²b)³. Har bir ko'paytuvchini kubga ko'taramiz: 2³ = 8, (a²)³ = a⁶, b³ = b³. Javob: 8a⁶b³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birhadni-darajaga-kotarish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#d092670f"
+    },
+    {
+      "q": "(−m²n³)⁵ ifodaning ishorasi qanday bo'ladi va natija qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "m¹⁰n¹⁵",
+        "−m⁷n⁸",
+        "−m¹⁰n¹⁵",
+        "−m¹⁰n⁸"
+      ],
+      "t": 2,
+      "izoh": "Manfiy asos toq darajaga ko'tarilsa, ishora manfiy bo'lib qoladi. Ko'rsatkichlar ko'paytiriladi: (m²)⁵ = m¹⁰ va (n³)⁵ = n¹⁵. Javob: −m¹⁰n¹⁵.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birhadni-darajaga-kotarish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#8b99c2cb"
+    },
+    {
+      "q": "−24a⁵b³ birhadini 6a²b birhadiga bo'lganda qanday natija hosil bo'lishini aniqlang.",
+      "v": [
+        "−4a³b²",
+        "4a³b²",
+        "−4a³b³",
+        "−18a³b²"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsientlarni bo'lamiz: (−24) : 6 = −4. Bir xil asosli darajalarni bo'lishda ko'rsatkichlar ayriladi: a⁵ : a² = a³ va b³ : b = b². Javob: −4a³b².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birhadlarni-bolish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#8443fe7a"
+    },
+    {
+      "q": "36x⁴y⁶ : (−9x²y²) amalning natijasini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "4x²y⁴",
+        "−4x²y⁴",
+        "−4x²y³",
+        "−4x⁶y⁸"
+      ],
+      "t": 1,
+      "izoh": "Ishoralar har xil bo'lgani uchun 36 : (−9) = −4. Darajalarni bo'lishda ko'rsatkichlar ayriladi: x⁴ : x² = x² va y⁶ : y² = y⁴. Javob: −4x²y⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birhadlarni-bolish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#c53606c2"
+    },
+    {
+      "q": "Qandaydir birhadni 3ab² ga ko'paytirganda −12a³b⁵ hosil bo'ldi. Dastlabki birhad qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "−4a³b³",
+        "4a²b³",
+        "−9a²b³",
+        "−4a²b³"
+      ],
+      "t": 3,
+      "izoh": "Noma'lum ko'paytuvchini topish uchun ko'paytmani ma'lum ko'paytuvchiga bo'lamiz: (−12a³b⁵) : (3ab²). Koeffitsient (−12) : 3 = −4, harflar esa a³ : a = a² va b⁵ : b² = b³. Javob: −4a²b³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birhadlarni-bolish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#615c835a"
+    },
+    {
+      "q": "5x² − 3x + 7 − 2x² + 8x − 12 ifodadagi o'xshash hadlarni ixchamlang va soddalashtirilgan natijani belgilang.",
+      "v": [
+        "3x² + 5x + 5",
+        "7x² + 5x − 5",
+        "3x² + 5x − 5",
+        "3x² − 11x − 5"
+      ],
+      "t": 2,
+      "izoh": "O'xshash hadlarni guruhlaymiz: 5x² − 2x² = 3x², keyin −3x + 8x = 5x, oxirida 7 − 12 = −5. Natija 3x² + 5x − 5 bo'ladi. Javob: 3x² + 5x − 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshash-hadlarni-ixchamlash",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#6ff87f5a"
+    },
+    {
+      "q": "7ab − 4a² + 3ab + 9a² − 10ab ifodani soddalashtirgach, a² oldidagi koeffitsient nechaga teng bo'ladi?",
+      "v": [
+        "5",
+        "13",
+        "−5",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Faqat a² li hadlarni yig'amiz: −4a² + 9a² = 5a². ab li hadlar esa 7ab + 3ab − 10ab = 0 bo'lgani uchun javobga ta'sir qilmaydi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshash-hadlarni-ixchamlash",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#5a5f7d7d"
+    },
+    {
+      "q": "Nima uchun 5x² va 3x hadlarini qo'shib, bitta hadga birlashtirib bo'lmaydi? To'g'ri tushuntirishni tanlang.",
+      "v": [
+        "Koeffitsientlari har xil bo'lgani uchun",
+        "Ularning ishorasi bir xil bo'lgani uchun",
+        "Faqat manfiy hadlar qo'shiladi",
+        "Ular o'xshash hadlar emas, chunki x ning darajalari har xil"
+      ],
+      "t": 3,
+      "izoh": "O'xshash hadlar bir xil harflardan va bir xil darajalardan tuzilgan bo'lishi shart. Birinchi hadda x ning darajasi 2, ikkinchisida esa 1, shuning uchun ular ixchamlanmaydi. Javob: ular o'xshash hadlar emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshash-hadlarni-ixchamlash",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#9e2a35a2"
+    },
+    {
+      "q": "Toshkentdagi do'konda bitta daftar d so'm, bitta ruchka esa r so'm turadi. Aziz avval 3 ta daftar bilan 5 ta ruchka, keyin yana 4 ta daftar va 2 ta ruchka oldi. Uning umumiy xarajati qaysi ifoda bilan beriladi?",
+      "v": [
+        "12d + 10r",
+        "7d + 7r",
+        "7d + 10r",
+        "14dr"
+      ],
+      "t": 1,
+      "izoh": "Daftarlar soni 3 + 4 = 7 ta, ruchkalar soni esa 5 + 2 = 7 ta bo'ladi. Xarajat 3d + 5r + 4d + 2r ifodadan o'xshash hadlarni yig'ib topiladi: 7d + 7r. Javob: 7d + 7r so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshash-hadlarni-ixchamlash",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#d4fcf7e9"
+    },
+    {
+      "q": "8a − (3a − 5b + 2) ifodada qavsni oching va soddalashtirilgan ko'rinishini tanlang.",
+      "v": [
+        "5a + 5b − 2",
+        "5a − 5b + 2",
+        "11a − 5b + 2",
+        "5a + 5b + 2"
+      ],
+      "t": 0,
+      "izoh": "Qavs oldida minus turgani uchun ichidagi har bir hadning ishorasi almashadi: 8a − 3a + 5b − 2. Endi o'xshash hadlarni yig'amiz va 5a + 5b − 2 hosil bo'ladi. Javob: 5a + 5b − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qavs-ochish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#677f7df3"
+    },
+    {
+      "q": "−3(2x − 4y) + 5(x + y) ifodani qavslarni ochish yo'li bilan soddalashtiring va natijani belgilang.",
+      "v": [
+        "−x + 7y",
+        "−11x + 17y",
+        "−x + 17y",
+        "x + 17y"
+      ],
+      "t": 2,
+      "izoh": "Har bir qavsni oldidagi ko'paytuvchiga ko'paytiramiz: −3·2x = −6x, −3·(−4y) = 12y, 5·x = 5x, 5·y = 5y. Endi yig'amiz: −6x + 5x = −x va 12y + 5y = 17y. Javob: −x + 17y.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qavs-ochish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#c3c6af37"
+    },
+    {
+      "q": "2(a − 3b) − (4a − b) + 3b ifodaning soddalashtirilgan ko'rinishi qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "−2a − 8b",
+        "−2a − 2b",
+        "6a − 2b",
+        "−2a + 2b"
+      ],
+      "t": 1,
+      "izoh": "Qavslarni ochamiz: 2a − 6b − 4a + b + 3b. Harfli hadlarni alohida yig'amiz: 2a − 4a = −2a hamda −6b + b + 3b = −2b. Javob: −2a − 2b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qavs-ochish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#d3f3371a"
+    },
+    {
+      "q": "x − [2x − (3x − 5)] ifodani ichki qavsdan boshlab bosqichma-bosqich soddalashtiring va to'g'ri natijani ko'rsating.",
+      "v": [
+        "−2x + 5",
+        "2x + 5",
+        "−4x + 5",
+        "2x − 5"
+      ],
+      "t": 3,
+      "izoh": "Ichki qavsdan boshlaymiz: 2x − (3x − 5) = 2x − 3x + 5 = −x + 5. Endi tashqi kvadrat qavsni ochamiz: x − (−x + 5) = x + x − 5 = 2x − 5. Javob: 2x − 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qavs-ochish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#f96f7770"
+    },
+    {
+      "q": "5x²y³ − 7xy + 4x⁴ ko'phadning darajasi nechaga teng ekanini aniqlang va javobni belgilang.",
+      "v": [
+        "5",
+        "4",
+        "9",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Ko'phadning darajasi uning hadlari darajalarining eng kattasiga teng. Hadlar darajasi: birinchisi 2 + 3 = 5, ikkinchisi 1 + 1 = 2, uchinchisi 4. Eng kattasi 5 ekan. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophad-darajasi-va-standart-shakl",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#2eaa8c95"
+    },
+    {
+      "q": "3x + 5x³ − 2 + 7x² ko'phadni darajalari kamayib borish tartibida standart shaklda yozing.",
+      "v": [
+        "−2 + 3x + 7x² + 5x³",
+        "5x³ + 3x + 7x² − 2",
+        "5x³ + 7x² + 3x − 2",
+        "7x² + 5x³ + 3x − 2"
+      ],
+      "t": 2,
+      "izoh": "Standart shaklda hadlar darajasi kamayib boradi. Eng yuqori darajali had 5x³, undan keyin 7x², so'ng 3x va oxirida ozod had −2 keladi. Javob: 5x³ + 7x² + 3x − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophad-darajasi-va-standart-shakl",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#e8fe78db"
+    },
+    {
+      "q": "Ikkita ko'phadning darajalari 3 va 5 ga teng. Ularning yig'indisi natijasida hosil bo'ladigan ko'phadning darajasi qanday bo'ladi?",
+      "v": [
+        "8",
+        "5",
+        "3",
+        "15"
+      ],
+      "t": 1,
+      "izoh": "Qo'shishda darajalar qo'shilmaydi. Ikkinchi ko'phaddagi eng yuqori darajali hadga o'xshash had birinchisida yo'q, shuning uchun u yo'qolmaydi va yig'indi darajasi 5 bo'lib qoladi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kophad-darajasi-va-standart-shakl",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#efa87c03"
+    },
+    {
+      "q": "(4x² − 3x + 6) + (2x² + 7x − 9) yig'indini toping va natijani standart shaklda belgilang.",
+      "v": [
+        "6x² + 4x + 3",
+        "6x² − 4x − 3",
+        "8x² + 4x − 3",
+        "6x² + 4x − 3"
+      ],
+      "t": 3,
+      "izoh": "Qavslar oldida plus turgani uchun ishoralar o'zgarmaydi. O'xshash hadlarni qo'shamiz: 4x² + 2x² = 6x², keyin −3x + 7x = 4x, oxirida 6 − 9 = −3. Javob: 6x² + 4x − 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophadlarni-qoshish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#77972bf4"
+    },
+    {
+      "q": "A = 3a² − 5a va B = −a² + 8a − 4 ko'phadlar berilgan. A + B yig'indini hisoblang va standart shaklda yozing.",
+      "v": [
+        "2a² + 3a − 4",
+        "4a² + 3a − 4",
+        "2a² − 3a − 4",
+        "2a² + 3a + 4"
+      ],
+      "t": 0,
+      "izoh": "O'xshash hadlarni juftlashtiramiz: 3a² + (−a²) = 2a², so'ngra −5a + 8a = 3a. Ozod had faqat B ko'phadda bor, u −4 ga teng. Javob: 2a² + 3a − 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophadlarni-qoshish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#c42cc239"
+    },
+    {
+      "q": "Uchburchakning tomonlari (2x + 3) sm, (3x − 1) sm va (x + 5) sm ga teng. Uning perimetrini ifodalovchi ko'phadni toping.",
+      "v": [
+        "6x + 9",
+        "5x + 7",
+        "6x + 7",
+        "6x − 7"
+      ],
+      "t": 2,
+      "izoh": "Perimetr uchta tomonning yig'indisiga teng: (2x + 3) + (3x − 1) + (x + 5). x li hadlar 2x + 3x + x = 6x, ozod hadlar esa 3 − 1 + 5 = 7 beradi. Javob: (6x + 7) sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophadlarni-qoshish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#f21b1ece"
+    },
+    {
+      "q": "Qaysi ko'phadni 2x² − 5x + 1 ifodaga qo'shsak, natijada 5x² + 2x − 4 ko'phad hosil bo'ladi?",
+      "v": [
+        "3x² − 7x − 5",
+        "3x² + 7x − 5",
+        "3x² + 7x + 5",
+        "7x² − 3x − 3"
+      ],
+      "t": 1,
+      "izoh": "Noma'lum qo'shiluvchi yig'indidan ma'lum qo'shiluvchini ayirish bilan topiladi: (5x² + 2x − 4) − (2x² − 5x + 1). Ikkinchi qavs ishoralari almashadi: 5x² + 2x − 4 − 2x² + 5x − 1 = 3x² + 7x − 5. Javob: 3x² + 7x − 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kophadlarni-qoshish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#dbf601a9"
+    },
+    {
+      "q": "(7y² − 4y + 5) − (3y² + 6y − 2) ayirmani hisoblang va soddalashtirilgan javobni tanlang.",
+      "v": [
+        "4y² − 10y + 7",
+        "4y² + 2y + 3",
+        "4y² − 10y + 3",
+        "10y² − 10y + 7"
+      ],
+      "t": 0,
+      "izoh": "Ayiriluvchi qavs oldidagi minus uning har bir hadi ishorasini almashtiradi: 7y² − 4y + 5 − 3y² − 6y + 2. O'xshash hadlarni yig'amiz: 4y² − 10y + 7. Javob: 4y² − 10y + 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophadlarni-ayirish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#60370ea7"
+    },
+    {
+      "q": "M = 5m − 2n va N = 3m + 7n bo'lsa, M − N ayirmasi qanday ko'rinishda bo'ladi?",
+      "v": [
+        "2m + 5n",
+        "8m + 5n",
+        "2m + 9n",
+        "2m − 9n"
+      ],
+      "t": 3,
+      "izoh": "M − N = (5m − 2n) − (3m + 7n) ko'rinishida yoziladi. Qavsni ochamiz: 5m − 2n − 3m − 7n. O'xshash hadlarni yig'sak, 2m − 9n hosil bo'ladi. Javob: 2m − 9n.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophadlarni-ayirish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#65f97184"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi maydonning perimetri (10a + 6) m, uzunligi esa (3a + 4) m ga teng. Uning enini ifodalovchi ko'phadni toping.",
+      "v": [
+        "2a + 1",
+        "2a − 1",
+        "7a + 2",
+        "4a − 2"
+      ],
+      "t": 1,
+      "izoh": "Perimetrning yarmi uzunlik bilan enning yig'indisiga teng: (10a + 6) : 2 = 5a + 3. Endi undan uzunlikni ayiramiz: (5a + 3) − (3a + 4) = 5a + 3 − 3a − 4 = 2a − 1. Javob: (2a − 1) m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kophadlarni-ayirish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#8784b6e2"
+    },
+    {
+      "q": "3x(2x² − 5x + 4) ifodada qavsni oching va hosil bo'lgan ko'phadni standart shaklda yozing.",
+      "v": [
+        "6x³ − 15x² + 4",
+        "6x² − 15x + 12",
+        "6x³ − 15x² + 12",
+        "6x³ − 15x² + 12x"
+      ],
+      "t": 3,
+      "izoh": "Birhadni qavs ichidagi har bir hadga alohida ko'paytiramiz: 3x·2x² = 6x³, 3x·(−5x) = −15x², 3x·4 = 12x. Oxirgi hadni ham ko'paytirishni unutmaslik kerak. Javob: 6x³ − 15x² + 12x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birhadni-kophadga-kopaytirish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#8a716805"
+    },
+    {
+      "q": "−2a²(3a − 4b + 1) ko'paytmani bajaring va natijadagi hadlarning ishorasiga alohida e'tibor bering.",
+      "v": [
+        "−6a³ − 8a²b + 2a²",
+        "−6a³ + 8a²b + 1",
+        "−6a² + 8ab − 2a",
+        "−6a³ + 8a²b − 2a²"
+      ],
+      "t": 3,
+      "izoh": "Manfiy birhadga ko'paytirganda qavs ichidagi barcha ishoralar teskarisiga o'zgaradi: −2a²·3a = −6a³, −2a²·(−4b) = 8a²b, −2a²·1 = −2a². Javob: −6a³ + 8a²b − 2a².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birhadni-kophadga-kopaytirish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#f0c08173"
+    },
+    {
+      "q": "5x(x − 3) − 2x(x + 4) ifodani soddalashtirib, undagi x oldidagi koeffitsientni aniqlang.",
+      "v": [
+        "−23",
+        "−7",
+        "23",
+        "−15"
+      ],
+      "t": 0,
+      "izoh": "Qavslarni ochamiz: 5x² − 15x va 2x² + 8x. Ikkinchi ko'paytmani ayiramiz: 5x² − 15x − 2x² − 8x = 3x² − 23x. Demak x oldidagi koeffitsient −23. Javob: −23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birhadni-kophadga-kopaytirish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#97891926"
+    },
+    {
+      "q": "Bog'dagi to'g'ri to'rtburchak shaklidagi maydonning eni 5x m, uzunligi esa (2x + 9) m ga teng. Maydon yuzasini ifodalovchi ko'phadni toping.",
+      "v": [
+        "10x² + 45",
+        "14x + 18",
+        "7x + 9",
+        "10x² + 45x"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri to'rtburchak yuzasi en bilan uzunlik ko'paytmasiga teng: 5x·(2x + 9). Qavsni ochamiz: 5x·2x = 10x² va 5x·9 = 45x. Ikkinchi hadni ham x ga ko'paytirish shart. Javob: (10x² + 45x) m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birhadni-kophadga-kopaytirish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#1a11375a"
+    },
+    {
+      "q": "(x + 3)(x − 5) ko'paytmani bajarib, natijani standart shakldagi ko'phad sifatida yozing.",
+      "v": [
+        "x² + 2x − 15",
+        "x² − 2x + 15",
+        "x² − 15",
+        "x² − 2x − 15"
+      ],
+      "t": 3,
+      "izoh": "Birinchi qavsning har bir hadini ikkinchisining har bir hadiga ko'paytiramiz: x·x = x², x·(−5) = −5x, 3·x = 3x, 3·(−5) = −15. O'rtadagi hadlarni yig'amiz: −5x + 3x = −2x. Javob: x² − 2x − 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophadlarni-kopaytirish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#c73f522a"
+    },
+    {
+      "q": "(2a − 3)(3a + 4) ifodani ko'paytirib, hosil bo'lgan ko'phadning standart shaklini belgilang.",
+      "v": [
+        "6a² + a − 12",
+        "6a² − 12",
+        "6a² − a − 12",
+        "6a² − a + 12"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytiramiz: 2a·3a = 6a², 2a·4 = 8a, −3·3a = −9a, −3·4 = −12. O'rtadagi hadlar 8a − 9a = −a beradi. Javob: 6a² − a − 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophadlarni-kopaytirish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#fd0493ac"
+    },
+    {
+      "q": "(x − 4)(x² + 2x − 1) ko'paytmani to'liq ochib, natijaning standart shaklini tanlang.",
+      "v": [
+        "x³ − 2x² − 9x + 4",
+        "x³ + 2x² − 9x + 4",
+        "x³ − 2x² − 7x − 4",
+        "x³ − 2x² − 9x − 4"
+      ],
+      "t": 0,
+      "izoh": "Avval x ni qavsga ko'paytiramiz: x³ + 2x² − x. So'ng −4 ni ko'paytiramiz: −4x² − 8x + 4. Ikkalasini qo'shamiz: x³ + (2 − 4)x² + (−1 − 8)x + 4 = x³ − 2x² − 9x + 4. Javob: x³ − 2x² − 9x + 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kophadlarni-kopaytirish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#e9663241"
+    },
+    {
+      "q": "(a + b)(a − b) ko'paytmani ochganda o'rtadagi hadlar nima uchun yo'qoladi va natija qanday bo'ladi?",
+      "v": [
+        "a² + b²",
+        "a² − b²",
+        "a² − 2ab + b²",
+        "a² − ab − b²"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytiramiz: a·a = a², a·(−b) = −ab, b·a = ab, b·(−b) = −b². O'rtadagi −ab va ab hadlar qarama-qarshi bo'lgani uchun yig'indisi nolga teng. Javob: a² − b².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophadlarni-kopaytirish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#e7532456"
+    },
+    {
+      "q": "(2x + 5)² ifodani ko'phad ko'rinishida yozing va to'g'ri variantni belgilang.",
+      "v": [
+        "4x² + 25",
+        "2x² + 20x + 25",
+        "4x² + 20x + 25",
+        "4x² + 10x + 25"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat ikki bir xil qavs ko'paytmasi demakdir: (2x + 5)(2x + 5). Ochamiz: 4x² + 10x + 10x + 25 = 4x² + 20x + 25. O'rtadagi had ikki marta hosil bo'ladi. Javob: 4x² + 20x + 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophadlarni-kopaytirish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#0481c6ce"
+    },
+    {
+      "q": "(12x⁴ − 18x³ + 6x²) ko'phadni 6x² birhadiga bo'ling va natijani belgilang.",
+      "v": [
+        "2x² − 3x + 1",
+        "2x² − 3x + 6",
+        "2x⁴ − 3x³ + 1",
+        "2x² − 3x"
+      ],
+      "t": 0,
+      "izoh": "Ko'phadni birhadga bo'lishda har bir had alohida bo'linadi: 12x⁴ : 6x² = 2x², 18x³ : 6x² = 3x, 6x² : 6x² = 1. Oxirgi had bir ga teng bo'lib qoladi, u tushib qolmaydi. Javob: 2x² − 3x + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophadni-birhadga-bolish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#83f35723"
+    },
+    {
+      "q": "(15a³b − 20a²b² + 10ab³) : (5ab) amalining natijasi qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "3a² − 4ab + 2b",
+        "3a² − 4ab + 2b²",
+        "3a³ − 4a²b + 2b²",
+        "3a² + 4ab + 2b²"
+      ],
+      "t": 1,
+      "izoh": "Har bir hadni 5ab ga bo'lamiz: 15a³b : 5ab = 3a², 20a²b² : 5ab = 4ab, 10ab³ : 5ab = 2b². Ishoralar saqlanadi. Javob: 3a² − 4ab + 2b².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kophadni-birhadga-bolish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#2654df18"
+    },
+    {
+      "q": "Qandaydir ko'phadni 3x ga bo'lganda 4x² − 5x + 2 hosil bo'ldi. Dastlabki ko'phadni toping.",
+      "v": [
+        "12x³ − 15x² + 2",
+        "12x² − 15x + 6",
+        "12x³ − 15x² + 6",
+        "12x³ − 15x² + 6x"
+      ],
+      "t": 3,
+      "izoh": "Bo'linuvchini topish uchun bo'linmani bo'luvchiga ko'paytiramiz: 3x·(4x² − 5x + 2). Har bir hadni ko'paytiramiz: 12x³ − 15x² + 6x. Oxirgi had ham 3x ga ko'payadi. Javob: 12x³ − 15x² + 6x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kophadni-birhadga-bolish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#d00cfcbf"
+    },
+    {
+      "q": "24m⁵n³ − 16m³n⁴ ikki hadli ko'phadni 8m³n² birhadiga bo'lgandagi natijani toping.",
+      "v": [
+        "3m²n − 2n",
+        "3m²n² − 2n²",
+        "3m²n − 2n²",
+        "3m⁸n⁵ − 2n²"
+      ],
+      "t": 2,
+      "izoh": "Birinchi had: 24 : 8 = 3, m⁵ : m³ = m², n³ : n² = n, ya'ni 3m²n. Ikkinchi had: 16 : 8 = 2, m³ : m³ = 1, n⁴ : n² = n², ya'ni 2n². Javob: 3m²n − 2n².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kophadni-birhadga-bolish",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#a90f71da"
+    },
+    {
+      "q": "(3x − 2)(4x + 5) ko'paytmani to'liq ochmasdan, faqat x oldidagi koeffitsientni aniqlang.",
+      "v": [
+        "23",
+        "7",
+        "−7",
+        "15"
+      ],
+      "t": 1,
+      "izoh": "x li had ikkita ko'paytmadan yig'iladi: 3x·5 = 15x va (−2)·4x = −8x. Ularni qo'shamiz: 15 − 8 = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytmadagi-had-koeffitsienti",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#63d59901"
+    },
+    {
+      "q": "(x² + 2x − 3)(x − 4) ko'paytmada x² li hadning koeffitsienti nechaga teng bo'ladi?",
+      "v": [
+        "−2",
+        "−4",
+        "2",
+        "−6"
+      ],
+      "t": 0,
+      "izoh": "x² li had ikki yo'l bilan hosil bo'ladi: x²·(−4) = −4x² va 2x·x = 2x². Ularni yig'amiz: −4 + 2 = −2. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytmadagi-had-koeffitsienti",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#5493b130"
+    },
+    {
+      "q": "(2a + 1)(a − 3)(a + 2) uchta qavs ko'paytmasida a³ li hadning koeffitsienti qanday bo'ladi?",
+      "v": [
+        "1",
+        "6",
+        "−6",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Eng yuqori darajali had faqat har bir qavsdagi eng katta darajali hadlar ko'paytmasidan chiqadi: 2a·a·a = 2a³. Boshqa birikmalar darajasi pastroq had beradi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytmadagi-had-koeffitsienti",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#bff45a22"
+    },
+    {
+      "q": "(x + 5)(x + k) ko'paytmada x oldidagi koeffitsient 12 ga teng bo'lsa, k qanday qiymatga ega?",
+      "v": [
+        "12",
+        "17",
+        "7",
+        "60"
+      ],
+      "t": 2,
+      "izoh": "Qavslarni ochsak, x li had (5 + k)x ko'rinishida chiqadi. Shartga ko'ra 5 + k = 12, bundan k = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytmadagi-had-koeffitsienti",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#fb4bcd3f"
+    },
+    {
+      "q": "(ax + 3)(2x − 1) = 6x² + bx − 3 tenglik barcha x qiymatlarda o'rinli bo'lsa, a va b larni toping.",
+      "v": [
+        "a = 3, b = 3",
+        "a = 3, b = 9",
+        "a = 6, b = 3",
+        "a = 3, b = −3"
+      ],
+      "t": 0,
+      "izoh": "Chap tomonni ochamiz: 2ax² − ax + 6x − 3, ya'ni 2ax² + (6 − a)x − 3. Bir xil darajali hadlar koeffitsientlarini tenglashtiramiz: 2a = 6 dan a = 3, so'ng b = 6 − 3 = 3. Javob: a = 3, b = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayniyat-shartidan-koeffitsient",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#e802aaca"
+    },
+    {
+      "q": "3x² + px + q ko'phad (x − 2)(3x + 5) ko'paytmaga aynan teng bo'lsa, p va q qiymatlarini aniqlang.",
+      "v": [
+        "p = 1, q = −10",
+        "p = −1, q = −10",
+        "p = −1, q = 10",
+        "p = 11, q = −10"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytmani ochamiz: 3x² + 5x − 6x − 10 = 3x² − x − 10. Endi koeffitsientlarni solishtiramiz: p = −1 va q = −10. Javob: p = −1, q = −10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayniyat-shartidan-koeffitsient",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#4a1be10f"
+    },
+    {
+      "q": "Agar (2x − a)(x + 4) ko'paytmaning ozod hadi −20 ga teng bo'lsa, a ning qiymati nechaga teng?",
+      "v": [
+        "−5",
+        "5",
+        "20",
+        "−20"
+      ],
+      "t": 1,
+      "izoh": "Ozod had qavslardagi son hadlar ko'paytmasidan chiqadi: (−a)·4 = −4a. Shartga ko'ra −4a = −20, bundan a = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyat-shartidan-koeffitsient",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#3adb4357"
+    },
+    {
+      "q": "x = −2 va y = 3 bo'lganda 3x²y − 2xy² ifodaning son qiymatini hisoblang.",
+      "v": [
+        "0",
+        "−72",
+        "72",
+        "36"
+      ],
+      "t": 2,
+      "izoh": "Birinchi had: x² = (−2)² = 4, demak 3x²y = 3·4·3 = 36. Ikkinchi had: 2xy² = 2·(−2)·9 = −36. Ayirma 36 − (−36) = 72 bo'ladi. Javob: 72.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifoda-son-qiymati",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#8f0cc4a9"
+    },
+    {
+      "q": "a = 5 bo'lganda 2a(a − 3) − (a² − 4a) ifodaning qiymatini toping. Avval ifodani soddalashtirib oling.",
+      "v": [
+        "15",
+        "25",
+        "35",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Soddalashtiramiz: 2a² − 6a − a² + 4a = a² − 2a. Endi a = 5 ni qo'yamiz: 25 − 10 = 15. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-son-qiymati",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#c147189d"
+    },
+    {
+      "q": "m = −1 va n = 4 bo'lsa, (m + n)² − (m² + n²) ifodaning son qiymati nechaga teng bo'ladi?",
+      "v": [
+        "8",
+        "−26",
+        "−8",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "Avval qavs ichini hisoblaymiz: m + n = 3, demak (m + n)² = 9. Keyin m² + n² = 1 + 16 = 17. Ayirma 9 − 17 = −8 chiqadi. Javob: −8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-son-qiymati",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#7c1d76b6"
+    },
+    {
+      "q": "b = −3 bo'lganda −b² + 2b − 5 ifodaning qiymatini hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "−2",
+        "−20",
+        "10",
+        "−8"
+      ],
+      "t": 1,
+      "izoh": "b² = (−3)² = 9, lekin ifodada −b² turibdi, ya'ni bu had −9 ga teng. Keyin 2b = 2·(−3) = −6. Hammasini yig'amiz: −9 − 6 − 5 = −20. Javob: −20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-son-qiymati",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#edba34ef"
+    },
+    {
+      "q": "a + b = 7 va ab = 10 bo'lsa, a² + b² ifodaning qiymatini toping.",
+      "v": [
+        "49",
+        "69",
+        "29",
+        "39"
+      ],
+      "t": 2,
+      "izoh": "(a + b)² = a² + 2ab + b² ayniyatidan a² + b² = (a + b)² − 2ab kelib chiqadi. Qiymatlarni qo'yamiz: 49 − 2·10 = 49 − 20 = 29. Javob: 29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shartli-ifoda-qiymati",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#df4cfbaa"
+    },
+    {
+      "q": "x − y = 4 va xy = 12 bo'lganda x² + y² ifoda qanday qiymatga ega bo'ladi?",
+      "v": [
+        "40",
+        "16",
+        "−8",
+        "28"
+      ],
+      "t": 0,
+      "izoh": "(x − y)² = x² − 2xy + y² bo'lgani uchun x² + y² = (x − y)² + 2xy. Qiymatlarni qo'yamiz: 16 + 2·12 = 16 + 24 = 40. Ayirmada ishora plusga aylanishiga e'tibor bering. Javob: 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shartli-ifoda-qiymati",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#609b5ff3"
+    },
+    {
+      "q": "x + y = 9 va x² + y² = 53 bo'lsa, xy ko'paytmaning qiymati nechaga teng?",
+      "v": [
+        "28",
+        "34",
+        "7",
+        "14"
+      ],
+      "t": 3,
+      "izoh": "(x + y)² = x² + 2xy + y² ayniyatiga qiymatlarni qo'yamiz: 81 = 53 + 2xy. Bundan 2xy = 28 va xy = 14. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shartli-ifoda-qiymati",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#827082b7"
+    },
+    {
+      "q": "a + b = 6 va ab = 8 bo'lsa, (a − b)² ifodaning qiymatini aniqlang.",
+      "v": [
+        "68",
+        "4",
+        "20",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "(a − b)² = (a + b)² − 4ab munosabatidan foydalanamiz. Qiymatlarni qo'yamiz: 36 − 4·8 = 36 − 32 = 4. Bu yerda 2ab emas, aynan 4ab ayriladi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shartli-ifoda-qiymati",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#0413d0aa"
+    },
+    {
+      "q": "(2x − 3)⁴ ifodani yoyganda hosil bo'ladigan ko'phadning barcha koeffitsientlari yig'indisini toping.",
+      "v": [
+        "−1",
+        "16",
+        "1",
+        "81"
+      ],
+      "t": 2,
+      "izoh": "Koeffitsientlar yig'indisi ko'phadning x = 1 dagi qiymatiga teng. Shuning uchun (2·1 − 3)⁴ = (−1)⁴ = 1 deb hisoblaymiz. Yoyish shart emas. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsientlar-yigindisi",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#ad939d20"
+    },
+    {
+      "q": "(3x + 1)(x − 4) ko'paytmani yoyganda hosil bo'lgan barcha koeffitsientlar va ozod hadning yig'indisi nechaga teng?",
+      "v": [
+        "−12",
+        "12",
+        "−1",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Ko'phadning x = 1 dagi qiymati koeffitsientlar yig'indisini beradi. Hisoblaymiz: (3 + 1)(1 − 4) = 4·(−3) = −12. Javob: −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsientlar-yigindisi",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#418871af"
+    },
+    {
+      "q": "P(x) = x³ − 2x² + 5x − 1 ko'phadning juft darajali hadlari koeffitsientlari yig'indisi nechaga teng?",
+      "v": [
+        "−2",
+        "3",
+        "−3",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Juft darajali hadlar — x² li had va ozod had, chunki ozod hadning darajasi nolga teng. Ularning koeffitsientlari −2 va −1. Yig'indisi −2 + (−1) = −3. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsientlar-yigindisi",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#e0560d3d"
+    },
+    {
+      "q": "Bir kilogramm olmaning narxi x so'm, bir kilogramm nokning narxi esa undan 2000 so'm qimmat. Malika 3 kg olma va 4 kg nok sotib oldi. Uning xarajati qanday ifoda bilan beriladi?",
+      "v": [
+        "7x + 2000",
+        "7x + 8000",
+        "7x + 6000",
+        "3x + 4x + 2000"
+      ],
+      "t": 1,
+      "izoh": "Nokning bir kilogrammi (x + 2000) so'm turadi. Umumiy xarajat 3x + 4(x + 2000) = 3x + 4x + 8000 ko'rinishida yoziladi. O'xshash hadlarni yig'amiz: 7x + 8000. Javob: 7x + 8000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-va-xarid",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#0226a130"
+    },
+    {
+      "q": "Do'kondagi bitta non a so'm turadi. Zuhra 5 ta non olib, kassaga 20000 so'm berdi. Unga qaytariladigan pulni ifodalovchi ko'phadni toping.",
+      "v": [
+        "5a − 20000",
+        "20000 − a",
+        "20000 − 5a",
+        "15000a"
+      ],
+      "t": 2,
+      "izoh": "Beshta nonning narxi 5a so'mni tashkil qiladi. Qaytim berilgan puldan xariddan qolgan qismi, ya'ni 20000 − 5a so'm bo'ladi. Javob: (20000 − 5a) so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-va-xarid",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#09d188f0"
+    },
+    {
+      "q": "Kitobning narxi 45000 so'm edi. Keyin u p so'mga arzonlashdi, oradan bir oy o'tib yana 5000 so'mga qimmatlashdi. Kitobning hozirgi narxini ifodalang.",
+      "v": [
+        "50000 − p",
+        "40000 − p",
+        "50000 + p",
+        "45000 − p"
+      ],
+      "t": 0,
+      "izoh": "Arzonlashish ayirish, qimmatlashish esa qo'shish bilan yoziladi: 45000 − p + 5000. Sonli hadlarni yig'amiz: 45000 + 5000 = 50000. Javob: (50000 − p) so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-va-xarid",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#a2583026"
+    },
+    {
+      "q": "Ustoz Alisher bir soatlik dars uchun t so'm oladi. U bir haftada 6 soat, keyingi haftada esa 9 soat dars berdi. Ikki haftalik daromadini soddalashtirilgan ko'rinishda yozing.",
+      "v": [
+        "54t",
+        "15t²",
+        "3t",
+        "15t"
+      ],
+      "t": 3,
+      "izoh": "Jami soatlar soni 6 + 9 = 15 ta bo'ladi. Har bir soat t so'm bo'lgani uchun daromad 6t + 9t = 15t so'm. O'xshash hadlar qo'shiladi, koeffitsientlar ko'paytirilmaydi. Javob: 15t so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-va-xarid",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#3b5b516e"
+    },
+    {
+      "q": "Bozorda bir kilogramm guruch g so'm, bir kilogramm loviya l so'm. Dilnoza 2 kg guruch bilan 3 kg loviya, singlisi esa 4 kg guruch va 1 kg loviya sotib oldi. Ikkalasining umumiy xarajati qanday ifodalanadi?",
+      "v": [
+        "8g + 3l",
+        "6g + 3l",
+        "6g + 4l",
+        "10gl"
+      ],
+      "t": 2,
+      "izoh": "Dilnozaning xarajati 2g + 3l, singlisiniki esa 4g + l so'm. Ularni qo'shamiz va o'xshash hadlarni birlashtiramiz: 2g + 4g = 6g hamda 3l + l = 4l. Javob: 6g + 4l so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-va-xarid",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#2aaeb3a5"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi xonaning uzunligi (x + 6) m, eni esa (x − 2) m ga teng. Xona yuzasini ifodalovchi ko'phadni standart shaklda yozing.",
+      "v": [
+        "x² − 4x − 12",
+        "x² + 4x + 12",
+        "2x + 4",
+        "x² + 4x − 12"
+      ],
+      "t": 3,
+      "izoh": "Yuza uzunlik bilan enning ko'paytmasiga teng: (x + 6)(x − 2). Qavslarni ochamiz: x² − 2x + 6x − 12. O'rtadagi hadlarni yig'amiz: −2x + 6x = 4x. Javob: (x² + 4x − 12) m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-geometrik-olcham",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#d4c690c4"
+    },
+    {
+      "q": "Kvadrat shaklidagi gilamning tomoni (2a + 3) dm ga teng. Uning yuzasini ifodalovchi ko'phadni toping.",
+      "v": [
+        "4a² + 12a + 9",
+        "4a² + 9",
+        "4a² + 6a + 9",
+        "8a + 12"
+      ],
+      "t": 0,
+      "izoh": "Kvadrat yuzasi tomonning kvadratiga teng: (2a + 3)². Buni (2a + 3)(2a + 3) deb ochamiz: 4a² + 6a + 6a + 9. O'rtadagi hadlar qo'shilib 12a beradi. Javob: (4a² + 12a + 9) dm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-geometrik-olcham",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#ae9f0ef1"
+    },
+    {
+      "q": "Bog'dagi to'g'ri to'rtburchak maydonning uzunligi 12 m, eni esa x m edi. Uzunlik 3 m ga oshirildi, en 2 m ga kamaytirildi. Yangi maydon yuzasini ifodalang.",
+      "v": [
+        "15x + 30",
+        "15x − 30",
+        "12x − 24",
+        "15x − 2"
+      ],
+      "t": 1,
+      "izoh": "Yangi uzunlik 12 + 3 = 15 m, yangi en esa (x − 2) m bo'ladi. Yuza 15(x − 2) = 15x − 30 ko'rinishida yoziladi. Javob: (15x − 30) m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-geometrik-olcham",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#6aee45cf"
+    },
+    {
+      "q": "Uchburchak shaklidagi bayroqchaning asosi (4x + 2) sm, unga tushirilgan balandligi esa 6 sm. Bayroqcha yuzasini ifodalovchi ko'phadni toping.",
+      "v": [
+        "24x + 12",
+        "12x + 2",
+        "12x + 6",
+        "4x + 8"
+      ],
+      "t": 2,
+      "izoh": "Uchburchak yuzasi asos bilan balandlik ko'paytmasining yarmiga teng. Avval ko'paytiramiz: (4x + 2)·6 = 24x + 12, so'ng ikkiga bo'lamiz: 12x + 6. Yarmini olishni unutmaslik kerak. Javob: (12x + 6) sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-geometrik-olcham",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#4cc6a948"
+    },
+    {
+      "q": "To'g'ri burchakli parallelepiped shaklidagi qutining o'lchamlari 3a sm, 2a sm va (a + 4) sm. Uning hajmini ifodalovchi ko'phadni standart shaklda yozing.",
+      "v": [
+        "6a³ + 24a",
+        "6a³ + 4a²",
+        "6a² + 24a",
+        "6a³ + 24a²"
+      ],
+      "t": 3,
+      "izoh": "Hajm uchta o'lchamning ko'paytmasiga teng: 3a·2a·(a + 4). Avval 3a·2a = 6a² ni topamiz, so'ng 6a²(a + 4) = 6a³ + 24a². Javob: (6a³ + 24a²) sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-geometrik-olcham",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#2c1f925c"
+    },
+    {
+      "q": "Avtobus soatiga v km tezlik bilan 3 soat yurdi, so'ngra tezligini 15 km/soat ga oshirib yana 2 soat yo'l bosdi. Uning umumiy masofasini ifodalang.",
+      "v": [
+        "5v + 30",
+        "5v + 15",
+        "5v + 45",
+        "6v + 30"
+      ],
+      "t": 0,
+      "izoh": "Birinchi qism 3v km, ikkinchi qism esa 2(v + 15) = 2v + 30 km. Ularni qo'shamiz: 3v + 2v + 30 = 5v + 30. Javob: (5v + 30) km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harakat-va-masofa",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#65dd7bfe"
+    },
+    {
+      "q": "Piyoda soatiga 5 km tezlik bilan t soat yurdi, keyin 20 daqiqa dam oldi va yana (t + 1) soat yurdi. Uning bosib o'tgan yo'li qanday ifoda bilan beriladi?",
+      "v": [
+        "10t + 1",
+        "10t + 5",
+        "5t + 5",
+        "10t + 20"
+      ],
+      "t": 1,
+      "izoh": "Dam olish vaqtida masofa ortmaydi, shuning uchun u hisobga olinmaydi. Yo'l 5t + 5(t + 1) = 5t + 5t + 5 = 10t + 5 km bo'ladi. Javob: (10t + 5) km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harakat-va-masofa",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#b935fefa"
+    },
+    {
+      "q": "Mashina 240 km yo'lning 3x km qismini asfaltda, qolgan qismini esa tuproq yo'lda bosib o'tdi. Tuproq yo'l uzunligini ifodalovchi ko'phadni yozing.",
+      "v": [
+        "3x − 240",
+        "3x + 240",
+        "240x − 3",
+        "240 − 3x"
+      ],
+      "t": 3,
+      "izoh": "Qolgan qism umumiy masofadan bosib o'tilgan qismni ayirish orqali topiladi: 240 − 3x. Bu yerda 240 va 3x o'xshash hadlar emas, shuning uchun ular birlashtirilmaydi. Javob: (240 − 3x) km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-harakat-va-masofa",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#24cd7fcb"
+    },
+    {
+      "q": "Qayiq oqim bo'ylab (u + 4) km/soat, oqimga qarshi esa (u − 4) km/soat tezlik bilan suzadi. Qayiq oqim bo'ylab 3 soat, qarshi tomonga 2 soat yursa, umumiy masofa qanday bo'ladi?",
+      "v": [
+        "5u + 20",
+        "5u − 4",
+        "5u + 8",
+        "5u + 4"
+      ],
+      "t": 3,
+      "izoh": "Oqim bo'ylab masofa 3(u + 4) = 3u + 12 km, oqimga qarshi masofa esa 2(u − 4) = 2u − 8 km. Ularni qo'shamiz: 3u + 2u = 5u va 12 − 8 = 4. Javob: (5u + 4) km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harakat-va-masofa",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#b51ba21d"
+    },
+    {
+      "q": "Poyezd soatiga 80 km tezlik bilan bir tekis harakatlanmoqda. U (a + 2) soatda bosib o'tadigan masofadan a soatda bosib o'tgan masofani ayirsak, natija nechaga teng bo'ladi?",
+      "v": [
+        "160",
+        "80",
+        "160a",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Birinchi masofa 80(a + 2) = 80a + 160 km, ikkinchisi esa 80a km. Ayirmani topamiz: 80a + 160 − 80a = 160. Demak natija a ga umuman bog'liq emas. Javob: 160 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harakat-va-masofa",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#50ecfbb1"
+    },
+    {
+      "q": "Usta bir kunda n ta stul yasaydi, shogirdi esa undan 3 ta kam yasaydi. Ikkalasi birgalikda 5 kunda nechta stul yasaydi?",
+      "v": [
+        "10n − 3",
+        "10n − 15",
+        "5n − 15",
+        "10n + 15"
+      ],
+      "t": 1,
+      "izoh": "Shogird kuniga (n − 3) ta stul yasaydi. Ikkalasi bir kunda n + (n − 3) = 2n − 3 ta yasaydi. Besh kunda esa 5(2n − 3) = 10n − 15 ta bo'ladi. Javob: 10n − 15 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#8831b232"
+    },
+    {
+      "q": "Birinchi traktor soatiga 4 gektar, ikkinchisi esa (k + 1) gektar yer haydaydi. Ikkalasi birga 6 soat ishlasa, jami qancha yer haydalgan bo'ladi?",
+      "v": [
+        "6k + 24",
+        "6k + 5",
+        "6k + 30",
+        "6k + 6"
+      ],
+      "t": 2,
+      "izoh": "Bir soatda ikkalasi 4 + (k + 1) = k + 5 gektar yer haydaydi. Olti soat ichida esa 6(k + 5) = 6k + 30 gektar bo'ladi. Javob: (6k + 30) gektar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#2e7d4a7f"
+    },
+    {
+      "q": "Tikuvchi ayol bir kunda x ta ko'ylak tikadi. U shu unum bilan 4 kun ishladi, so'ngra kunlik unumini 2 taga oshirib yana 3 kun ishladi. Jami nechta ko'ylak tikkan?",
+      "v": [
+        "7x + 2",
+        "7x + 8",
+        "12x + 6",
+        "7x + 6"
+      ],
+      "t": 3,
+      "izoh": "Birinchi bosqichda 4x ta, ikkinchi bosqichda 3(x + 2) = 3x + 6 ta ko'ylak tikiladi. Ularni qo'shamiz: 4x + 3x = 7x va ozod had 6. Javob: 7x + 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#56f8a769"
+    },
+    {
+      "q": "Ikki brigada g'isht teradi. Birinchisi kuniga 2m ta, ikkinchisi esa (m + 400) ta g'isht teradi. Birinchi brigada 3 kun, ikkinchisi 2 kun ishlasa, jami nechta g'isht teriladi?",
+      "v": [
+        "8m + 800",
+        "8m + 400",
+        "6m + 800",
+        "8m + 1200"
+      ],
+      "t": 0,
+      "izoh": "Birinchi brigada 3·2m = 6m ta, ikkinchisi 2(m + 400) = 2m + 800 ta g'isht teradi. Yig'indi 6m + 2m + 800 = 8m + 800 ta bo'ladi. Javob: 8m + 800 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#eb8baa20"
+    },
+    {
+      "q": "Idishda 3x litr suv bor edi, unga yana (x + 5) litr suv quyildi, so'ngra 2 litri to'kib yuborildi. Idishdagi suv miqdorini ifodalang.",
+      "v": [
+        "4x + 7",
+        "4x + 3",
+        "2x + 3",
+        "4x − 3"
+      ],
+      "t": 1,
+      "izoh": "Quyilgan suvni qo'shamiz va to'kilganini ayiramiz: 3x + (x + 5) − 2. O'xshash hadlarni birlashtiramiz: 3x + x = 4x va 5 − 2 = 3. Javob: (4x + 3) litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-aralashma-va-olchov",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#64b16e74"
+    },
+    {
+      "q": "Birinchi bochkada a kg un, ikkinchisida esa undan 12 kg ko'p un bor. Birinchi bochkadan 5 kg un olib, ikkinchisiga qo'shildi. Endi ikkinchi bochkada qancha un bo'ladi?",
+      "v": [
+        "a + 7",
+        "a + 12",
+        "a + 17",
+        "2a + 17"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi bochkada dastlab (a + 12) kg un bor edi. Unga yana 5 kg qo'shilgach, (a + 12) + 5 = a + 17 kg bo'ladi. Birinchi bochkadagi o'zgarish savolga ta'sir qilmaydi. Javob: (a + 17) kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aralashma-va-olchov",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#6d3dd71a"
+    },
+    {
+      "q": "Sut va suv aralashmasida s litr sut hamda (2s − 3) litr suv bor. Aralashmaga yana 4 litr sut qo'shilsa, uning umumiy hajmi qanday bo'ladi?",
+      "v": [
+        "3s − 1",
+        "3s + 7",
+        "2s + 1",
+        "3s + 1"
+      ],
+      "t": 3,
+      "izoh": "Umumiy hajm barcha qismlar yig'indisiga teng: s + (2s − 3) + 4. Harfli hadlar s + 2s = 3s, sonli hadlar esa −3 + 4 = 1 beradi. Javob: (3s + 1) litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aralashma-va-olchov",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#3cc82ec1"
+    },
+    {
+      "q": "Ikkita qutidan birinchisida k kg, ikkinchisida esa 3k kg konfet bor. Har bir qutidan 2 kg konfet sotilgach, qolgan konfetlarning umumiy massasi qancha bo'ladi?",
+      "v": [
+        "4k − 4",
+        "4k − 2",
+        "4k + 4",
+        "3k − 4"
+      ],
+      "t": 0,
+      "izoh": "Qutilardagi konfet (k − 2) kg va (3k − 2) kg bo'lib qoladi. Ularni qo'shamiz: k + 3k = 4k va −2 − 2 = −4. Ikkala qutidan ham ayirilishini unutmaslik kerak. Javob: (4k − 4) kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-aralashma-va-olchov",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#f6bf6086"
+    },
+    {
+      "q": "Sinfdagi to'rt o'quvchi yoz davomida (x + 2), (x − 1), (2x + 3) va (x + 4) ta kitob o'qidi. Ular o'qigan kitoblarning umumiy sonini ifodalang.",
+      "v": [
+        "5x + 10",
+        "5x + 8",
+        "4x + 8",
+        "5x + 2"
+      ],
+      "t": 1,
+      "izoh": "Barcha ifodalarni qo'shamiz. x li hadlar: x + x + 2x + x = 5x. Ozod hadlar: 2 − 1 + 3 + 4 = 8. Javob: 5x + 8 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-statistika-va-orta-qiymat",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#8cd479e4"
+    },
+    {
+      "q": "Uch kun davomida do'kon (2n + 90), (3n − 60) va (4n + 60) dona mahsulot sotdi. Kunlik o'rtacha sotuvni ifodalovchi ko'phadni toping.",
+      "v": [
+        "9n + 90",
+        "3n + 90",
+        "3n + 30",
+        "3n + 10"
+      ],
+      "t": 2,
+      "izoh": "Avval uch kunlik sotuvni qo'shamiz: 2n + 3n + 4n = 9n va 90 − 60 + 60 = 90. Yig'indi 9n + 90 bo'ladi. O'rtacha qiymat uchun uchga bo'lamiz: 3n + 30. Javob: 3n + 30 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-statistika-va-orta-qiymat",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#b85b8475"
+    },
+    {
+      "q": "Besh nafar ishchining har birining oyligi (m + 200000) so'mdan iborat. Ularning umumiy oyligini ifodalovchi ko'phadni toping.",
+      "v": [
+        "5m + 200000",
+        "m + 1000000",
+        "5m + 400000",
+        "5m + 1000000"
+      ],
+      "t": 3,
+      "izoh": "Umumiy oylik bitta ishchi oyligining besh barobariga teng: 5(m + 200000). Qavsni ochamiz: 5·m = 5m va 5·200000 = 1000000. Javob: (5m + 1000000) so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-statistika-va-orta-qiymat",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#aae422c5"
+    },
+    {
+      "q": "Sardor hafta davomida har kuni (2d + 5) daqiqadan kitob o'qidi, shanba va yakshanba kunlari esa qo'shimcha 30 daqiqadan o'qidi. Haftalik umumiy vaqtni ifodalang.",
+      "v": [
+        "14d + 95",
+        "14d + 35",
+        "14d + 65",
+        "7d + 95"
+      ],
+      "t": 0,
+      "izoh": "Yetti kunlik asosiy vaqt 7(2d + 5) = 14d + 35 daqiqa. Qo'shimcha vaqt ikki kun uchun 2·30 = 60 daqiqa. Yig'indi 14d + 35 + 60 = 14d + 95 daqiqa. Javob: (14d + 95) daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-statistika-va-orta-qiymat",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#a396258e"
+    },
+    {
+      "q": "Tadbirkor bir dona mahsulotni s so'mga sotib olib, uni (s + 8000) so'mga sotadi. U 150 dona mahsulot sotsa, foydasi qancha bo'ladi?",
+      "v": [
+        "150s + 1200000",
+        "1200000",
+        "8000",
+        "150s"
+      ],
+      "t": 1,
+      "izoh": "Bir donadan foyda (s + 8000) − s = 8000 so'm, ya'ni xarid narxi qisqarib ketadi. Yuz ellik dona uchun foyda 150·8000 = 1200000 so'm bo'ladi. Javob: 1200000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-daromad-va-foyda",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#a1de96db"
+    },
+    {
+      "q": "Sartaroshxonada bitta mijozdan p so'm olinadi. Kuniga o'rtacha 12 mijoz keladi, kunlik xarajat esa 90000 so'm. Kunlik sof foydani ifodalang.",
+      "v": [
+        "12p + 90000",
+        "90000 − 12p",
+        "12p − 90000",
+        "12(p − 90000)"
+      ],
+      "t": 2,
+      "izoh": "Kunlik tushum 12p so'mni tashkil qiladi. Sof foyda tushumdan xarajatni ayirish bilan topiladi: 12p − 90000. Xarajat har bir mijozdan emas, bir kunda bir marta ayriladi. Javob: (12p − 90000) so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-daromad-va-foyda",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#ed049ef8"
+    },
+    {
+      "q": "Fermer q kg pomidorni kilogrammiga 9000 so'mdan, (q − 20) kg bodringni esa kilogrammiga 7000 so'mdan sotdi. Uning umumiy tushumini ifodalang.",
+      "v": [
+        "16000q + 140000",
+        "2000q − 140000",
+        "16000q − 20",
+        "16000q − 140000"
+      ],
+      "t": 3,
+      "izoh": "Pomidordan tushum 9000q so'm, bodringdan esa 7000(q − 20) = 7000q − 140000 so'm. Ularni qo'shamiz: 9000q + 7000q = 16000q va ozod had −140000. Javob: (16000q − 140000) so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-daromad-va-foyda",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#fb4dd9cd"
+    },
+    {
+      "q": "Do'kon bir kunda (5x + 300) ming so'mlik tushum qildi, o'sha kungi xarajati esa (2x − 100) ming so'm bo'ldi. Sof foydani ifodalovchi ko'phadni toping.",
+      "v": [
+        "3x + 400",
+        "3x + 200",
+        "7x + 200",
+        "3x − 400"
+      ],
+      "t": 0,
+      "izoh": "Sof foyda tushum bilan xarajat ayirmasiga teng: (5x + 300) − (2x − 100). Qavsni ochamiz: 5x + 300 − 2x + 100. Natija 3x + 400 bo'ladi. Javob: (3x + 400) ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-daromad-va-foyda",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#8db2a781"
+    },
+    {
+      "q": "Mis simning uzunligi (3a + 50) sm edi. Undan (a − 10) sm uzunlikdagi bo'lak kesib olindi. Qolgan qismning uzunligi necha santimetr bo'ladi?",
+      "v": [
+        "2a + 40",
+        "2a + 60",
+        "4a + 40",
+        "2a − 60"
+      ],
+      "t": 1,
+      "izoh": "Qolgan uzunlik ayirma bilan topiladi: (3a + 50) − (a − 10). Qavsni ochganda ishoralar almashadi: 3a + 50 − a + 10 = 2a + 60. Javob: (2a + 60) sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-olchov-va-birlik",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#de10929e"
+    },
+    {
+      "q": "Bir qopda (4t + 25) kg, ikkinchisida esa (t + 15) kg kartoshka bor. Birinchi qopdagi kartoshka ikkinchisidan necha kilogramm ko'p?",
+      "v": [
+        "5t + 40",
+        "3t + 40",
+        "3t + 10",
+        "3t − 10"
+      ],
+      "t": 2,
+      "izoh": "Farqni topish uchun ayirma tuzamiz: (4t + 25) − (t + 15). Qavsni ochamiz: 4t + 25 − t − 15 = 3t + 10. Javob: (3t + 10) kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-olchov-va-birlik",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#1163acd5"
+    },
+    {
+      "q": "Katta idishning sig'imi (8y + 24) litr. Undagi suv 4 ta bir xil bankaga teng qilib quyildi. Har bir bankadagi suv hajmini ifodalang.",
+      "v": [
+        "2y + 24",
+        "4y + 12",
+        "2y + 20",
+        "2y + 6"
+      ],
+      "t": 3,
+      "izoh": "Ko'phadni birhadga bo'lishda har bir had alohida bo'linadi: 8y : 4 = 2y va 24 : 4 = 6. Ozod hadni ham bo'lish shart. Javob: (2y + 6) litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-olchov-va-birlik",
+      "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad#952e6039"
+    }
+  ]
+}

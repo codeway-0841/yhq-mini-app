@@ -1,0 +1,1609 @@
+{
+  "nom": "Asosiy trigonometrik ayniyatlar",
+  "bolim": "Trigonometriya",
+  "blok": "trig",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Toshkentdagi savdo markazi tomiga o'rnatilgan quyosh paneli burchagi α uchun sin α = 8/17 ekani o'lchandi va α I chorakda yotadi. cos α ni toping.",
+      "v": [
+        "15/17",
+        "−15/17",
+        "9/17",
+        "15/8"
+      ],
+      "t": 0,
+      "izoh": "Asosiy ayniyatdan cos²α = 1 − sin²α = 1 − 64/289 = 225/289. I chorakda kosinus musbat, shuning uchun cos α = 15/17. Bu yerda −15/17 chorak ishorasini e'tiborsiz qoldirish, 9/17 kvadratsiz ayirish xatosi, 15/8 esa ctg α qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak va sin berilgan — cos topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#5363efeb"
+    },
+    {
+      "q": "Sanjar dron uchirayotganda uning yo'nalish burchagi β uchun sin β = 20/29 ekanini qayd etdi, β esa II chorakda joylashgan. cos β ni hisoblang.",
+      "v": [
+        "21/29",
+        "−9/29",
+        "−21/29",
+        "−20/21"
+      ],
+      "t": 2,
+      "izoh": "cos²β = 1 − 400/841 = 441/841 bo'ladi, demak |cos β| = 21/29. II chorakda kosinus manfiy, shuning uchun cos β = −21/29. Bu yerda 21/29 ishorani unutish, −9/29 birdan 20/29 ni ayirish, −20/21 esa tg β.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak va sin berilgan — cos topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#9e0869a3"
+    },
+    {
+      "q": "Asosiy trigonometrik ayniyatdan foydalanib, sin t = −0,6 va t burchak III chorakda yotgani ma'lum bo'lsa, cos t ni toping.",
+      "v": [
+        "0,8",
+        "−0,8",
+        "−0,4",
+        "0,64"
+      ],
+      "t": 1,
+      "izoh": "cos²t = 1 − 0,36 = 0,64 bo'ladi. Ildiz olsak |cos t| = 0,8, III chorakda kosinus manfiy, demak cos t = −0,8. Bu yerda 0,64 ildiz olishni unutish, 0,8 ishora xatosi, −0,4 esa 1 − 0,6 ayirmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak va sin berilgan — cos topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#1b9e7c95"
+    },
+    {
+      "q": "Radar nurining yo'nalish burchagi φ uchun sin φ = 5/13 va φ ∈ (π/2; π) shart bajarilsa, cos φ ning qiymatini toping.",
+      "v": [
+        "12/13",
+        "−8/13",
+        "−5/12",
+        "−12/13"
+      ],
+      "t": 3,
+      "izoh": "cos²φ = 1 − 25/169 = 144/169, ya'ni |cos φ| = 12/13. Berilgan oraliq II chorakni bildiradi, u yerda kosinus manfiy: cos φ = −12/13. Bu yerda −5/12 tg φ qiymati (ctg φ = cos φ : sin φ = −12/5 bo'lar edi), −8/13 esa kvadratsiz ayirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak va sin berilgan — cos topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#673e074a"
+    },
+    {
+      "q": "Kema radarida kuzatilayotgan nuqtaning burchagi θ uchun sin θ = −√5/5 bo'lib, θ IV chorakda yotadi. cos θ ni toping.",
+      "v": [
+        "−2√5/5",
+        "4/5",
+        "√5/5",
+        "2√5/5"
+      ],
+      "t": 3,
+      "izoh": "sin²θ = 5/25 = 1/5, demak cos²θ = 1 − 1/5 = 4/5. Ildiz olsak |cos θ| = 2√5/5 bo'ladi. IV chorakda kosinus musbat, shuning uchun javob 2√5/5. Bu yerda 4/5 ildiz olinmagan qiymat, √5/5 esa sinusning moduli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak va sin berilgan — cos topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#32d5acfa"
+    },
+    {
+      "q": "Nilufar velosiped g'ildiragidagi belgining burchagi α uchun cos α = −7/25 ekanini aniqladi, bunda α II chorakda yotadi. sin α ni toping.",
+      "v": [
+        "−24/25",
+        "24/25",
+        "18/25",
+        "−24/7"
+      ],
+      "t": 1,
+      "izoh": "sin²α = 1 − 49/625 = 576/625, ya'ni |sin α| = 24/25. II chorakda sinus musbat, demak sin α = 24/25. Bu yerda −24/25 ishora xatosi, 18/25 kvadratsiz ayirish, −24/7 esa tg α qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak va cos berilgan — sin topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#d6d64d3b"
+    },
+    {
+      "q": "Kuzatuv minorasidan olingan burchak γ uchun cos γ = 0,28 va γ IV chorakda joylashgan bo'lsa, sin γ ning qiymati nechaga teng?",
+      "v": [
+        "0,96",
+        "−0,72",
+        "−0,96",
+        "−0,9216"
+      ],
+      "t": 2,
+      "izoh": "sin²γ = 1 − 0,0784 = 0,9216 ekanini topamiz. Ildiz olsak |sin γ| = 0,96, IV chorakda sinus manfiy: sin γ = −0,96. Bu yerda −0,9216 ildiz olinmagan qiymat, −0,72 esa 1 − 0,28 ayirmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak va cos berilgan — sin topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#1508bb49"
+    },
+    {
+      "q": "cos x = −0,96 va π < x < 3π/2 shartlar bajarilsa, sin x ning qiymatini o'nli kasr ko'rinishida toping.",
+      "v": [
+        "0,28",
+        "−0,04",
+        "−0,0784",
+        "−0,28"
+      ],
+      "t": 3,
+      "izoh": "sin²x = 1 − 0,9216 = 0,0784, ildiz olsak |sin x| = 0,28. Berilgan oraliq III chorakni bildiradi, u yerda sinus manfiy, demak sin x = −0,28. Bu yerda −0,0784 ildiz olishni unutish, −0,04 esa 1 − 0,96 ayirmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak va cos berilgan — sin topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#ac650e21"
+    },
+    {
+      "q": "Karusel aylanmasining burilish burchagi δ uchun cos δ = 9/41 va δ ∈ (3π/2; 2π) bo'lsa, sin δ ni toping.",
+      "v": [
+        "−40/41",
+        "40/41",
+        "−32/41",
+        "−40/9"
+      ],
+      "t": 0,
+      "izoh": "sin²δ = 1 − 81/1681 = 1600/1681, demak |sin δ| = 40/41. Ko'rsatilgan oraliq IV chorak, u yerda sinus manfiy: sin δ = −40/41. Bu yerda −40/9 tg δ qiymati, −32/41 esa kvadratsiz ayirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak va cos berilgan — sin topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#b023980a"
+    },
+    {
+      "q": "Muhandis loyihada cos β = −2/3 deb oldi va β burchak III chorakda ekanini yozib qo'ydi. sin β ning aniq qiymatini toping.",
+      "v": [
+        "√5/3",
+        "−5/9",
+        "−√5/3",
+        "−1/3"
+      ],
+      "t": 2,
+      "izoh": "sin²β = 1 − 4/9 = 5/9 bo'ladi. Ildiz olsak |sin β| = √5/3, III chorakda sinus manfiy, demak sin β = −√5/3. Bu yerda −5/9 ildiz olinmagan qiymat, −1/3 esa 1 − 2/3 ayirmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak va cos berilgan — sin topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#7a38b533"
+    },
+    {
+      "q": "Alpinist qoyaga chiqish yo'nalishi burchagi ε uchun sin ε = 12/13 ekanini o'lchadi, ε I chorakda yotadi. tg ε ni toping.",
+      "v": [
+        "5/12",
+        "12/5",
+        "12/13",
+        "13/5"
+      ],
+      "t": 1,
+      "izoh": "Avval cos²ε = 1 − 144/169 = 25/169, I chorakda cos ε = 5/13 bo'ladi. Endi tg ε = sin ε : cos ε = (12/13) : (5/13) = 12/5. Bu yerda 5/12 ctg ε, 12/13 esa berilgan sinusning takrori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sin yoki cos berilgan — tg yoki ctg topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#a61968ce"
+    },
+    {
+      "q": "sin z = −15/17 va z burchak III chorakda yotsa, ctg z ning qiymati nimaga teng bo'ladi?",
+      "v": [
+        "−8/15",
+        "15/8",
+        "−15/8",
+        "8/15"
+      ],
+      "t": 3,
+      "izoh": "cos²z = 1 − 225/289 = 64/289, III chorakda cos z = −8/17. Shunda ctg z = cos z : sin z = (−8/17) : (−15/17) = 8/15. Bu yerda 15/8 tg z qiymati, manfiy variantlar esa ishorani noto'g'ri qo'yish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin yoki cos berilgan — tg yoki ctg topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#27f10078"
+    },
+    {
+      "q": "Mashina g'ildiragi izidan olingan burchak u uchun cos u = 4/5 va u IV chorakda bo'lsa, tg u ni toping.",
+      "v": [
+        "3/4",
+        "−4/3",
+        "−3/5",
+        "−3/4"
+      ],
+      "t": 3,
+      "izoh": "sin²u = 1 − 16/25 = 9/25, IV chorakda sin u = −3/5 bo'ladi. Demak tg u = (−3/5) : (4/5) = −3/4. Bu yerda −4/3 ctg u, −3/5 faqat sinus qiymati, 3/4 esa ishora xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sin yoki cos berilgan — tg yoki ctg topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#9b341992"
+    },
+    {
+      "q": "Qayiq oqim yo'nalishiga nisbatan w burchak hosil qiladi; cos w = −√3/2 va w II chorakda ekani ma'lum. tg w ni hisoblang.",
+      "v": [
+        "√3/3",
+        "−√3/3",
+        "−√3",
+        "√3"
+      ],
+      "t": 1,
+      "izoh": "sin²w = 1 − 3/4 = 1/4, II chorakda sin w = 1/2. Shunda tg w = (1/2) : (−√3/2) = −√3/3 bo'ladi. Bu yerda −√3 ctg w qiymati, musbat variantlar esa chorak ishorasini hisobga olmaslik natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin yoki cos berilgan — tg yoki ctg topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#f5a4b548"
+    },
+    {
+      "q": "Nurning sinish burchagi ν uchun sin ν = 7/25 va ν II chorakda ekani ma'lum. ctg ν ning qiymatini toping.",
+      "v": [
+        "24/7",
+        "−7/24",
+        "−24/7",
+        "−25/7"
+      ],
+      "t": 2,
+      "izoh": "cos²ν = 1 − 49/625 = 576/625, II chorakda cos ν = −24/25. Demak ctg ν = (−24/25) : (7/25) = −24/7. Bu yerda −7/24 tg ν, 24/7 ishora xatosi, −25/7 esa gipotenuzani surat o'rniga qo'yish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin yoki cos berilgan — tg yoki ctg topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#cd20de77"
+    },
+    {
+      "q": "Tom qiyaligi tg α = 3/4 bilan berilgan va α o'tkir burchak. Shu tomga tushayotgan yorug'lik hisobida kerak bo'ladigan cos α ni toping.",
+      "v": [
+        "4/5",
+        "3/5",
+        "5/4",
+        "−4/5"
+      ],
+      "t": 0,
+      "izoh": "1 + tg²α = 1/cos²α ayniyatiga ko'ra 1 + 9/16 = 25/16 = 1/cos²α. Demak cos²α = 16/25 va o'tkir burchakda cos α = 4/5. Bu yerda 3/5 sin α, 5/4 teskari qiymat, −4/5 esa ishora xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg yoki ctg berilgan — sin yoki cos topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#47a1561f"
+    },
+    {
+      "q": "tg x = −2√2 va x burchak II chorakda bo'lsa, sin x ning qiymati qanday bo'ladi?",
+      "v": [
+        "2√2/3",
+        "−2√2/3",
+        "1/3",
+        "−1/3"
+      ],
+      "t": 0,
+      "izoh": "1 + tg²x = 1 + 8 = 9 = 1/cos²x, demak cos²x = 1/9. II chorakda cos x = −1/3 bo'ladi. Endi sin x = tg x · cos x = (−2√2) · (−1/3) = 2√2/3. Bu yerda −1/3 kosinus qiymati, sinus emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tg yoki ctg berilgan — sin yoki cos topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#6ee54895"
+    },
+    {
+      "q": "Generator rotorining faza burchagi θ uchun tg θ = 2,4 va θ III chorakda joylashgan. cos θ ni toping.",
+      "v": [
+        "5/13",
+        "−12/13",
+        "−5/13",
+        "−13/5"
+      ],
+      "t": 2,
+      "izoh": "tg θ = 2,4 = 12/5, shuning uchun 1/cos²θ = 1 + 144/25 = 169/25 va cos²θ = 25/169. III chorakda kosinus manfiy: cos θ = −5/13. Bu yerda −12/13 sinus qiymati, −13/5 esa teskari kasr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg yoki ctg berilgan — sin yoki cos topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#5ff9e513"
+    },
+    {
+      "q": "ctg β = −√15 va β burchak IV chorakda ekani berilgan bo'lsa, sin β ni toping.",
+      "v": [
+        "1/4",
+        "−1/4",
+        "−√15/4",
+        "−1/16"
+      ],
+      "t": 1,
+      "izoh": "1 + ctg²β = 1/sin²β ayniyatiga ko'ra 1 + 15 = 16 = 1/sin²β, demak sin²β = 1/16. IV chorakda sinus manfiy: sin β = −1/4. Bu yerda −1/16 ildiz olishni unutish, −√15/4 esa kosinus ishorasini noto'g'ri olish natijasi — aslida cos β = ctg β · sin β = √15/4 va IV chorakda kosinus musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg yoki ctg berilgan — sin yoki cos topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#cf48edf6"
+    },
+    {
+      "q": "Yer usti antennasining azimut burchagi λ uchun tg λ = 5/12 va λ III chorakda. sin λ va cos λ yig'indisi nechaga teng?",
+      "v": [
+        "17/13",
+        "−7/13",
+        "−13/17",
+        "−17/13"
+      ],
+      "t": 3,
+      "izoh": "1/cos²λ = 1 + 25/144 = 169/144, demak cos²λ = 144/169 va III chorakda cos λ = −12/13. Shunda sin λ = tg λ · cos λ = −5/13. Yig'indi −5/13 + (−12/13) = −17/13. Bu yerda −7/13 bitta ishorani noto'g'ri olish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tg yoki ctg berilgan — sin yoki cos topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#27d1ce9e"
+    },
+    {
+      "q": "Amaliyot daftarida tg α = 0,4 deb yozib qo'yilgan. Xuddi shu burchak uchun ctg α ning qiymati nechaga teng?",
+      "v": [
+        "0,6",
+        "−0,4",
+        "0,16",
+        "2,5"
+      ],
+      "t": 3,
+      "izoh": "tg α · ctg α = 1 ayniyatidan ctg α = 1 : tg α kelib chiqadi. Demak ctg α = 1 : 0,4 = 2,5 bo'ladi. Bu yerda 0,6 birdan 0,4 ni ayirish, 0,16 tangensning kvadrati, −0,4 esa ishora xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg va ctg o'zaro teskariligi",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#794c8bdb"
+    },
+    {
+      "q": "Fizika masalasida ctg φ = −1,25 deb berilgan. Shu φ burchak uchun tg φ ning qiymatini toping.",
+      "v": [
+        "0,8",
+        "−0,8",
+        "−0,25",
+        "1,25"
+      ],
+      "t": 1,
+      "izoh": "tg φ = 1 : ctg φ munosabatidan foydalanamiz: tg φ = 1 : (−1,25) = −0,8 bo'ladi. Bu yerda 0,8 ishorani tashlab ketish, −0,25 birdan 1,25 ni ayirish, 1,25 esa berilgan qiymatning takrori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg va ctg o'zaro teskariligi",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#3c99b46d"
+    },
+    {
+      "q": "tg α · ctg α + sin²α + cos²α ifodasining qiymati α ning har qanday ruxsat etilgan qiymatida nechaga teng?",
+      "v": [
+        "1",
+        "0",
+        "2",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "tg α · ctg α = 1 va sin²α + cos²α = 1 ekanini bilamiz. Ikkala qiymatni qo'shsak 1 + 1 = 2 hosil bo'ladi. Bu yerda 1 bitta ayniyatni tashlab ketish, 3 esa ortiqcha birlik qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg va ctg o'zaro teskariligi",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#304cb491"
+    },
+    {
+      "q": "Talaba tg β = 5/6 ekanini topdi. ctg β ni hisoblang va javobni tg β · ctg β = 1 munosabati bilan tekshiring.",
+      "v": [
+        "6/5",
+        "5/6",
+        "1/6",
+        "−6/5"
+      ],
+      "t": 0,
+      "izoh": "Kotangens tangensga teskari qiymat bo'lgani uchun ctg β = 6/5 bo'ladi. Tekshiramiz: (5/6) · (6/5) = 1, demak javob to'g'ri. Bu yerda 1/6 birdan 5/6 ni ayirish xatosi, 5/6 esa berilganning takrori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg va ctg o'zaro teskariligi",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#71b026c3"
+    },
+    {
+      "q": "Agar cos α = 0,5 bo'lsa, 1 + tg²α ifodasining qiymati nechaga teng bo'ladi?",
+      "v": [
+        "4",
+        "2",
+        "1,25",
+        "0,25"
+      ],
+      "t": 0,
+      "izoh": "1 + tg²α = 1/cos²α ayniyatidan foydalanamiz. cos²α = 0,25, demak 1/cos²α = 1 : 0,25 = 4 bo'ladi. Bu yerda 2 teskari kosinus qiymati, 0,25 kosinusning kvadrati, 1,25 esa 1 + 0,25 xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "1 + tg²x = 1/cos²x ayniyatini qo'llash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#f97f6647"
+    },
+    {
+      "q": "Geodezist tg γ = √7 ekanini aniqladi va γ burchak I chorakda yotadi. 1/cos²γ ifodasining qiymati nechaga teng?",
+      "v": [
+        "7",
+        "2√2",
+        "8",
+        "1/8"
+      ],
+      "t": 2,
+      "izoh": "1/cos²γ = 1 + tg²γ ayniyatiga ko'ra qiymat 1 + 7 = 8 ga teng bo'ladi. Bu yerda 7 birni qo'shishni unutish, 1/8 teskari qiymat, 2√2 esa natijadan ortiqcha ildiz olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "1 + tg²x = 1/cos²x ayniyatini qo'llash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#c17e5db2"
+    },
+    {
+      "q": "Nasos qanotining burilish burchagi δ uchun 1/cos²δ = 10 ekani o'lchandi va δ IV chorakda. tg δ ni toping.",
+      "v": [
+        "3",
+        "−3",
+        "−9",
+        "−1/3"
+      ],
+      "t": 1,
+      "izoh": "1 + tg²δ = 10 dan tg²δ = 9 kelib chiqadi, demak |tg δ| = 3. IV chorakda tangens manfiy, shuning uchun tg δ = −3. Bu yerda −9 ildiz olishni unutish, −1/3 esa ctg δ qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "1 + tg²x = 1/cos²x ayniyatini qo'llash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#3c1d8c31"
+    },
+    {
+      "q": "cos x = −2/5 va x III chorakda bo'lsa, 1 + tg²x = 1/cos²x ayniyatidan foydalanib tg x ni toping.",
+      "v": [
+        "−√21/2",
+        "√21/5",
+        "21/4",
+        "√21/2"
+      ],
+      "t": 3,
+      "izoh": "1/cos²x = 1 : (4/25) = 25/4, demak tg²x = 25/4 − 1 = 21/4 bo'ladi. III chorakda tangens musbat, shuning uchun tg x = √21/2. Bu yerda 21/4 ildiz olinmagan qiymat, √21/5 esa |sin x|, ya'ni sinusning moduli — III chorakda sin x = −√21/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "1 + tg²x = 1/cos²x ayniyatini qo'llash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#b7ac1ef7"
+    },
+    {
+      "q": "Elektr zanjiridagi faza burchagi ψ uchun tg ψ = −3/4 va ψ IV chorakda. cos²ψ ning qiymati nechaga teng?",
+      "v": [
+        "9/25",
+        "4/5",
+        "25/16",
+        "16/25"
+      ],
+      "t": 3,
+      "izoh": "1/cos²ψ = 1 + 9/16 = 25/16 bo'ladi. Teskari qiymatni olsak cos²ψ = 16/25 chiqadi. Bu yerda 25/16 teskarilashni unutish, 4/5 kosinusning o'zi, 9/25 esa sinusning kvadrati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "1 + tg²x = 1/cos²x ayniyatini qo'llash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#d261866d"
+    },
+    {
+      "q": "Agar ctg t = 2√6 va t burchak I chorakda bo'lsa, sin t ning qiymatini toping.",
+      "v": [
+        "−1/5",
+        "1/5",
+        "1/25",
+        "2√6/5"
+      ],
+      "t": 1,
+      "izoh": "1 + ctg²t = 1/sin²t ayniyatiga ko'ra 1 + 24 = 25 = 1/sin²t bo'ladi. Demak sin²t = 1/25 va I chorakda sin t = 1/5. Bu yerda 1/25 ildiz olinmagan qiymat, 2√6/5 esa kosinus.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "1 + ctg²x = 1/sin²x ayniyatini qo'llash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#420ba8d6"
+    },
+    {
+      "q": "Aylanma mexanizm valining burilish burchagi ω uchun 1/sin²ω = 17 bo'lsa va ω III chorakda yotsa, ctg ω nimaga teng?",
+      "v": [
+        "−4",
+        "16",
+        "4",
+        "1/4"
+      ],
+      "t": 2,
+      "izoh": "1 + ctg²ω = 17 tenglikdan ctg²ω = 16, ya'ni |ctg ω| = 4 kelib chiqadi. III chorakda sinus ham, kosinus ham manfiy, shuning uchun ctg ω = 4. Bu yerda 16 ildiz olishni unutish, −4 esa ishora xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "1 + ctg²x = 1/sin²x ayniyatini qo'llash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#c42895de"
+    },
+    {
+      "q": "sin y = −3/7 va y burchak III chorakda bo'lsa, 1 + ctg²y ifodasining qiymatini hisoblang.",
+      "v": [
+        "9/49",
+        "40/9",
+        "7/3",
+        "49/9"
+      ],
+      "t": 3,
+      "izoh": "1 + ctg²y = 1/sin²y ayniyatidan foydalanamiz. sin²y = 9/49, demak 1/sin²y = 49/9 bo'ladi. Bu yerda 40/9 faqat ctg²y qiymati, ya'ni birni qo'shmasdan qolgan natija, 9/49 esa teskarilashni unutish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "1 + ctg²x = 1/sin²x ayniyatini qo'llash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#e699696f"
+    },
+    {
+      "q": "Radioantennaning aylanish burchagi ξ uchun ctg ξ = −5/12 va ξ II chorakda. sin ξ ni toping.",
+      "v": [
+        "12/13",
+        "−12/13",
+        "5/13",
+        "−5/13"
+      ],
+      "t": 0,
+      "izoh": "1/sin²ξ = 1 + 25/144 = 169/144, demak sin²ξ = 144/169 bo'ladi. II chorakda sinus musbat, shuning uchun sin ξ = 12/13. Bu yerda −5/13 kosinus qiymati (cos ξ = ctg ξ · sin ξ), 5/13 uning ishorasi noto'g'ri olingan varianti, −12/13 esa chorak ishorasi xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "1 + ctg²x = 1/sin²x ayniyatini qo'llash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#d19d1d12"
+    },
+    {
+      "q": "Masalada sin x + cos x = 1,4 ekani berilgan. Shu shartdan foydalanib sin x · cos x ko'paytmasining qiymatini toping.",
+      "v": [
+        "0,96",
+        "0,4",
+        "0,48",
+        "0,24"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonni kvadratga oshiramiz: 1,96 = sin²x + 2 sin x · cos x + cos²x = 1 + 2 sin x · cos x. Demak 2 sin x · cos x = 0,96 va sin x · cos x = 0,48. Bu yerda 0,96 ikkiga bo'lishni unutish, 0,4 esa 1,4 − 1 ayirmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinx + cosx dan sinx·cosx",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#c998a9c5"
+    },
+    {
+      "q": "sin α + cos α = √6/2 tenglik o'rinli bo'lsa, sin α · cos α ko'paytmasi nechaga teng?",
+      "v": [
+        "1/2",
+        "1/4",
+        "3/2",
+        "−1/4"
+      ],
+      "t": 1,
+      "izoh": "Kvadratga oshirsak 6/4 = 3/2 hosil bo'ladi va bu 1 + 2 sin α · cos α ga teng. Demak 2 sin α · cos α = 1/2, ya'ni sin α · cos α = 1/4. Bu yerda 1/2 ikkiga bo'lmaslik, 3/2 esa kvadratning o'zi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinx + cosx dan sinx·cosx",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#0f401e99"
+    },
+    {
+      "q": "Issiqxona tomining ikki qiyaligi uchun sin β + cos β = 5/4 ekani hisoblab chiqildi. sin β · cos β ko'paytmasini toping.",
+      "v": [
+        "9/16",
+        "1/4",
+        "25/32",
+        "9/32"
+      ],
+      "t": 3,
+      "izoh": "Tenglikni kvadratga oshiramiz: 25/16 = 1 + 2 sin β · cos β. Bundan 2 sin β · cos β = 9/16 va sin β · cos β = 9/32 kelib chiqadi. Bu yerda 9/16 ikkiga bo'lishni unutish, 25/32 esa kvadratni to'g'ridan-to'g'ri ikkiga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinx + cosx dan sinx·cosx",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#0ae801a4"
+    },
+    {
+      "q": "sin x + cos x = 0,2 bo'lsa, 2 sin x · cos x ifodasining qiymati nechaga teng?",
+      "v": [
+        "0,96",
+        "−0,48",
+        "0,04",
+        "−0,96"
+      ],
+      "t": 3,
+      "izoh": "Kvadratga oshirsak 0,04 = 1 + 2 sin x · cos x bo'ladi. Demak 2 sin x · cos x = 0,04 − 1 = −0,96 chiqadi. Bu yerda −0,48 ortiqcha ikkiga bo'lish, 0,04 esa faqat kvadratning qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinx + cosx dan sinx·cosx",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#b810dc97"
+    },
+    {
+      "q": "Harakatdagi jismning burchagi uchun sin φ + cos φ = 1,2 ekani ma'lum. (sin φ − cos φ)² ifodasi nechaga teng?",
+      "v": [
+        "0,44",
+        "0,56",
+        "1,44",
+        "0,22"
+      ],
+      "t": 1,
+      "izoh": "1,44 = 1 + 2 sin φ · cos φ dan 2 sin φ · cos φ = 0,44 chiqadi. Endi (sin φ − cos φ)² = 1 − 2 sin φ · cos φ = 1 − 0,44 = 0,56 bo'ladi. Bu yerda 0,44 oraliq natija, 1,44 esa berilganning kvadrati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinx + cosx dan sinx·cosx",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#cd878e12"
+    },
+    {
+      "q": "sin x − cos x = 1/2 bo'lsa, sin x · cos x ko'paytmasi nechaga teng bo'ladi?",
+      "v": [
+        "−3/8",
+        "3/4",
+        "3/8",
+        "1/8"
+      ],
+      "t": 2,
+      "izoh": "Kvadratga oshiramiz: 1/4 = 1 − 2 sin x · cos x. Bundan 2 sin x · cos x = 3/4 va sin x · cos x = 3/8 kelib chiqadi. Bu yerda 3/4 ikkiga bo'lishni unutish, −3/8 esa ayirmada ishorani chalkashtirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinx − cosx dan sinx·cosx",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#35b680ce"
+    },
+    {
+      "q": "Yuk ko'targich strelasining ikki holati uchun sin θ − cos θ = 0,6 ekani o'lchandi. sin θ · cos θ ni toping.",
+      "v": [
+        "0,32",
+        "0,64",
+        "0,18",
+        "−0,32"
+      ],
+      "t": 0,
+      "izoh": "0,36 = 1 − 2 sin θ · cos θ tenglikdan 2 sin θ · cos θ = 0,64 kelib chiqadi. Demak sin θ · cos θ = 0,32 bo'ladi. Bu yerda 0,64 ikkiga bo'lmaslik, −0,32 esa ishorani noto'g'ri olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinx − cosx dan sinx·cosx",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#2d843955"
+    },
+    {
+      "q": "sin t − cos t = √2/2 tenglik bajarilsa, sin t · cos t ning qiymati nechaga teng?",
+      "v": [
+        "1/4",
+        "1/2",
+        "3/4",
+        "−1/4"
+      ],
+      "t": 0,
+      "izoh": "Kvadratga oshirsak 1/2 = 1 − 2 sin t · cos t bo'ladi. Bundan 2 sin t · cos t = 1/2 va sin t · cos t = 1/4 chiqadi. Bu yerda 1/2 ikkiga bo'lishni unutish, 3/4 esa ayirish o'rniga qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinx − cosx dan sinx·cosx",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#225e22c6"
+    },
+    {
+      "q": "Ikki tomon orasidagi burchak uchun sin α − cos α = −0,8 bo'lsa, (sin α + cos α)² ifodasi nechaga teng?",
+      "v": [
+        "0,64",
+        "1,64",
+        "1,36",
+        "0,36"
+      ],
+      "t": 2,
+      "izoh": "0,64 = 1 − 2 sin α · cos α dan 2 sin α · cos α = 0,36 chiqadi. Endi (sin α + cos α)² = 1 + 0,36 = 1,36 bo'ladi. Bu yerda 0,64 berilganning kvadrati, 1,64 esa ishorani chalkashtirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinx − cosx dan sinx·cosx",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#be7f5009"
+    },
+    {
+      "q": "sin x · cos x = 12/25 va x burchak I chorakda joylashgan bo'lsa, sin x + cos x yig'indisi nechaga teng?",
+      "v": [
+        "−7/5",
+        "7/5",
+        "49/25",
+        "1/5"
+      ],
+      "t": 1,
+      "izoh": "(sin x + cos x)² = 1 + 2 · 12/25 = 49/25 bo'ladi. I chorakda sinus ham, kosinus ham musbat, shuning uchun sin x + cos x = 7/5. Bu yerda 49/25 ildiz olishni unutish, −7/5 esa ishora xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinx·cosx dan sinx ± cosx",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#3f2b8a15"
+    },
+    {
+      "q": "Statistik modelda sin β · cos β = 0,105 va β o'tkir burchak ekani ma'lum. sin β + cos β ni toping.",
+      "v": [
+        "1,21",
+        "0,21",
+        "−1,1",
+        "1,1"
+      ],
+      "t": 3,
+      "izoh": "(sin β + cos β)² = 1 + 2 · 0,105 = 1,21 ekanini topamiz. O'tkir burchakda yig'indi musbat, demak sin β + cos β = 1,1 bo'ladi. Bu yerda 1,21 ildiz olinmagan qiymat, 0,21 esa faqat qo'shiluvchi qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinx·cosx dan sinx ± cosx",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#7cbe0d1a"
+    },
+    {
+      "q": "sin x · cos x = −0,18 va sin x + cos x < 0 bo'lsa, sin x + cos x yig'indisi nechaga teng?",
+      "v": [
+        "0,8",
+        "−0,64",
+        "−0,36",
+        "−0,8"
+      ],
+      "t": 3,
+      "izoh": "(sin x + cos x)² = 1 + 2 · (−0,18) = 0,64 bo'ladi. Shart bo'yicha yig'indi manfiy, shuning uchun sin x + cos x = −0,8. Bu yerda −0,64 ildiz olishni unutish, −0,36 esa qo'shiluvchi qismning qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinx·cosx dan sinx ± cosx",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#b56c1fc9"
+    },
+    {
+      "q": "sin t · cos t = 2/5 bo'lsa, (sin t − cos t)² ifodasining qiymati nechaga teng?",
+      "v": [
+        "9/5",
+        "1/5",
+        "3/5",
+        "−1/5"
+      ],
+      "t": 1,
+      "izoh": "(sin t − cos t)² = 1 − 2 sin t · cos t formulasidan foydalanamiz. Demak qiymat 1 − 4/5 = 1/5 ga teng bo'ladi. Bu yerda 9/5 ishorani plyusga almashtirish, 3/5 esa ikkiga ko'paytirishni unutish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinx·cosx dan sinx ± cosx",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#4ac3b00f"
+    },
+    {
+      "q": "sin α · cos α = 3/8 va α burchak III chorakda yotadi. sin α + cos α ning qiymatini toping.",
+      "v": [
+        "√7/2",
+        "−7/4",
+        "−√7/2",
+        "−1/2"
+      ],
+      "t": 2,
+      "izoh": "(sin α + cos α)² = 1 + 2 · 3/8 = 7/4 bo'ladi. III chorakda ikkala funksiya ham manfiy, shuning uchun sin α + cos α = −√7/2. Bu yerda −7/4 ildiz olinmagan qiymat, √7/2 esa chorak ishorasini hisobga olmaslik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sinx·cosx dan sinx ± cosx",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#43a7c35b"
+    },
+    {
+      "q": "sin x · cos x = 0,3 bo'lsa, sin⁴x + cos⁴x ifodasining qiymati nechaga teng?",
+      "v": [
+        "0,82",
+        "0,91",
+        "0,18",
+        "0,64"
+      ],
+      "t": 0,
+      "izoh": "sin⁴x + cos⁴x = (sin²x + cos²x)² − 2 sin²x · cos²x = 1 − 2 · 0,09 = 0,82. Bu yerda 0,91 ikkiga ko'paytirishni unutish, 0,64 esa 1 − (2 sin x · cos x)² = 1 − 0,36 hisobi, 0,18 esa faqat ayriladigan qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin⁴x + cos⁴x ni topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#3cbb6831"
+    },
+    {
+      "q": "sin α + cos α = √3/2 bo'lsa, sin⁴α + cos⁴α ifodasining qiymatini toping.",
+      "v": [
+        "31/32",
+        "1/32",
+        "5/4",
+        "3/4"
+      ],
+      "t": 0,
+      "izoh": "Avval 3/4 = 1 + 2 sin α · cos α dan sin α · cos α = −1/8 topiladi. Endi sin⁴α + cos⁴α = 1 − 2 · (1/64) = 31/32. Bu yerda 5/4 kvadratlamasdan hisoblash, 1/32 esa faqat ayriladigan qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin⁴x + cos⁴x ni topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#e1637926"
+    },
+    {
+      "q": "Muhandis hisobida sin θ · cos θ = 1/4 chiqdi. sin⁴θ + cos⁴θ ifodasining aniq qiymatini toping.",
+      "v": [
+        "1/8",
+        "1/2",
+        "7/8",
+        "15/16"
+      ],
+      "t": 2,
+      "izoh": "sin⁴θ + cos⁴θ = 1 − 2(sin θ · cos θ)² formulasini qo'llaymiz: 1 − 2 · 1/16 = 7/8. Bu yerda 1/2 kvadratlamasdan hisoblash, 15/16 ikkiga ko'paytirishni unutish, 1/8 esa ayriladigan qismning o'zi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin⁴x + cos⁴x ni topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#8fd85eaf"
+    },
+    {
+      "q": "sin⁴x + cos⁴x = 17/25 bo'lsa, sin x · cos x ko'paytmasining moduli nechaga teng?",
+      "v": [
+        "4/25",
+        "2/5",
+        "8/25",
+        "2√2/5"
+      ],
+      "t": 1,
+      "izoh": "1 − 2(sin x · cos x)² = 17/25 dan 2(sin x · cos x)² = 8/25 kelib chiqadi. Demak (sin x · cos x)² = 4/25 va modul 2/5 ga teng. Bu yerda 4/25 ildiz olishni unutish, 2√2/5 esa ikkiga bo'lishni tashlab ketish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin⁴x + cos⁴x ni topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#280bd02b"
+    },
+    {
+      "q": "Agar sin⁴t + cos⁴t = 1 bo'lsa, sin t · cos t ko'paytmasi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "1",
+        "1/2",
+        "−1",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "1 − 2(sin t · cos t)² = 1 tenglikdan 2(sin t · cos t)² = 0 kelib chiqadi. Demak sin t · cos t = 0 bo'ladi. Bu yerda 1 asosiy ayniyat bilan chalkashtirish, 1/2 esa qo'sh burchak formulasiga adashib o'tish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin⁴x + cos⁴x ni topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#fb7b00e7"
+    },
+    {
+      "q": "sin x + cos x = 1,2 bo'lsa, sin³x + cos³x ifodasining qiymatini toping.",
+      "v": [
+        "1,2",
+        "0,78",
+        "1,728",
+        "0,936"
+      ],
+      "t": 3,
+      "izoh": "Avval 1,44 = 1 + 2 sin x · cos x dan sin x · cos x = 0,22 topamiz. Kublar yig'indisi: sin³x + cos³x = (sin x + cos x)(1 − sin x · cos x) = 1,2 · 0,78 = 0,936. Bu yerda 1,728 berilganning kubi, 0,78 esa oraliq ko'paytuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin³x + cos³x ni topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#ea4e1ac9"
+    },
+    {
+      "q": "Agar sin α + cos α = √2 bo'lsa, sin³α + cos³α ifodasi nechaga teng?",
+      "v": [
+        "√2",
+        "√2/2",
+        "1/2",
+        "2√2"
+      ],
+      "t": 1,
+      "izoh": "2 = 1 + 2 sin α · cos α dan sin α · cos α = 1/2 chiqadi. Shunda sin³α + cos³α = √2 · (1 − 1/2) = √2/2 bo'ladi. Bu yerda √2 ikkinchi ko'paytuvchini tashlab ketish, 1/2 esa faqat ko'paytma qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin³x + cos³x ni topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#3b3b3a4f"
+    },
+    {
+      "q": "Loyihada sin β + cos β = 0,8 ekani aniqlandi. sin³β + cos³β ifodasining qiymati nechaga teng?",
+      "v": [
+        "0,512",
+        "1,18",
+        "0,944",
+        "0,656"
+      ],
+      "t": 2,
+      "izoh": "0,64 = 1 + 2 sin β · cos β dan sin β · cos β = −0,18 kelib chiqadi. Demak sin³β + cos³β = 0,8 · (1 + 0,18) = 0,944 bo'ladi. Bu yerda 0,512 berilganning kubi, 0,656 esa qavs ichida ishorani chalkashtirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin³x + cos³x ni topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#adbbb020"
+    },
+    {
+      "q": "sin t · cos t = 3/8 va sin t + cos t = √7/2 bo'lsa, sin³t + cos³t nechaga teng?",
+      "v": [
+        "5√7/16",
+        "3√7/16",
+        "√7/2",
+        "5/8"
+      ],
+      "t": 0,
+      "izoh": "sin³t + cos³t = (sin t + cos t)(1 − sin t · cos t) formulasini qo'llaymiz. Bu (√7/2) · (1 − 3/8) = (√7/2) · (5/8) = 5√7/16 ga teng. Bu yerda 3√7/16 qavsda birni tashlab ketish, 5/8 esa faqat qavs qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin³x + cos³x ni topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#e78ee921"
+    },
+    {
+      "q": "sin x · cos x = 1/3 bo'lsa, sin⁶x + cos⁶x ifodasining qiymati nechaga teng?",
+      "v": [
+        "2/3",
+        "1/3",
+        "8/9",
+        "1/9"
+      ],
+      "t": 0,
+      "izoh": "sin⁶x + cos⁶x = 1 − 3(sin x · cos x)² formulasidan foydalanamiz. Demak qiymat 1 − 3 · 1/9 = 2/3 ga teng. Bu yerda 1/3 faqat ayriladigan qism, 8/9 koeffitsient uchni tashlab ketish, 1/9 esa ko'paytmaning kvadrati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin⁶x + cos⁶x ni topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#af00937a"
+    },
+    {
+      "q": "sin α + cos α = 1,4 bo'lsa, sin⁶α + cos⁶α ifodasining qiymatini toping.",
+      "v": [
+        "0,7696",
+        "0,6912",
+        "0,3088",
+        "0,04"
+      ],
+      "t": 2,
+      "izoh": "1,96 = 1 + 2 sin α · cos α dan sin α · cos α = 0,48 topiladi. Endi sin⁶α + cos⁶α = 1 − 3 · 0,2304 = 0,3088 bo'ladi. Bu yerda 0,7696 esa koeffitsientni 3 o'rniga 1 deb olish, ya'ni 1 − 0,2304 hisobi, 0,6912 esa faqat ayriladigan qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin⁶x + cos⁶x ni topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#34f893e1"
+    },
+    {
+      "q": "sin⁶x + cos⁶x = 5/8 bo'lsa, sin x · cos x ko'paytmasining kvadrati nechaga teng?",
+      "v": [
+        "3/8",
+        "1/8",
+        "3/16",
+        "√2/4"
+      ],
+      "t": 1,
+      "izoh": "1 − 3(sin x · cos x)² = 5/8 tenglikdan 3(sin x · cos x)² = 3/8 kelib chiqadi. Demak (sin x · cos x)² = 1/8 bo'ladi. Bu yerda 3/8 uchga bo'lishni unutish, 3/16 esa to'rtinchi daraja formulasini adashib qo'llash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin⁶x + cos⁶x ni topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#0672a92b"
+    },
+    {
+      "q": "Tebranish tahlilida sin⁴φ + cos⁴φ = 7/9 ekani topildi. Shu φ uchun sin⁶φ + cos⁶φ nechaga teng?",
+      "v": [
+        "7/9",
+        "8/9",
+        "1/3",
+        "2/3"
+      ],
+      "t": 3,
+      "izoh": "1 − 2(sin φ · cos φ)² = 7/9 dan (sin φ · cos φ)² = 1/9 topiladi. Endi sin⁶φ + cos⁶φ = 1 − 3 · 1/9 = 2/3 bo'ladi. Bu yerda 8/9 koeffitsientni bir deb olish, 1/3 esa ayriladigan qismning o'zi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin⁶x + cos⁶x ni topish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#0aaef88e"
+    },
+    {
+      "q": "(1 − cos²α) · (1 + ctg²α) ko'paytmani asosiy ayniyatlar yordamida soddalashtiring.",
+      "v": [
+        "sin²α",
+        "cos²α",
+        "tg²α",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "Birinchi qavs sin²α ga, ikkinchi qavs esa 1/sin²α ga teng bo'ladi. Ularning ko'paytmasi sin²α · (1/sin²α) = 1 chiqadi. Bu yerda sin²α ikkinchi qavsni e'tiborsiz qoldirish, tg²α esa kotangens bilan tangensni chalkashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifodani soddalashtirish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#200a3fad"
+    },
+    {
+      "q": "sin⁴x − cos⁴x ifodasini asosiy trigonometrik ayniyat yordamida soddalashtirilgan ko'rinishga keltiring.",
+      "v": [
+        "1 − 2sin²x",
+        "1 − 2cos²x",
+        "1",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "Ayirmani ko'paytuvchilarga ajratamiz: (sin²x − cos²x)(sin²x + cos²x) = sin²x − cos²x. Endi sin²x o'rniga 1 − cos²x qo'ysak, natija 1 − 2cos²x bo'ladi. Bu yerda 0 hadlar qisqaradi degan xato, 1 esa asosiy ayniyat bilan chalkashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodani soddalashtirish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#232d7b29"
+    },
+    {
+      "q": "1/(1 + tg²β) + 1/(1 + ctg²β) ifodasining qiymati β ning ruxsat etilgan har qanday qiymatida nechaga teng?",
+      "v": [
+        "2",
+        "0",
+        "1",
+        "1/2"
+      ],
+      "t": 2,
+      "izoh": "1 + tg²β = 1/cos²β bo'lgani uchun birinchi had cos²β ga teng. Xuddi shunday ikkinchi had sin²β ga teng bo'ladi. Yig'indi cos²β + sin²β = 1. Bu yerda 2 har bir hadni bir deb olish, 1/2 esa hadlarni o'rtachalash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifodani soddalashtirish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#4fc8c155"
+    },
+    {
+      "q": "(sin α + cos α)² + (sin α − cos α)² ifodasini soddalashtiring va uning doimiy qiymatini toping.",
+      "v": [
+        "2",
+        "1",
+        "4",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Qavslarni ochsak 1 + 2 sin α · cos α va 1 − 2 sin α · cos α hosil bo'ladi. Ularni qo'shsak qo'sh hadlar qisqaradi va 2 qoladi. Bu yerda 1 bitta qavsni unutish, 4 esa har bir qavsni ikki deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodani soddalashtirish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#4566df5e"
+    },
+    {
+      "q": "Quyidagi tg²γ − sin²γ · tg²γ ifodasini asosiy ayniyatdan foydalanib soddalashtiring va eng sodda ko'rinishini tanlang.",
+      "v": [
+        "sin²γ",
+        "cos²γ",
+        "tg²γ",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Umumiy ko'paytuvchini qavsdan chiqaramiz: tg²γ(1 − sin²γ) = tg²γ · cos²γ. tg²γ = sin²γ/cos²γ bo'lgani uchun natija sin²γ ga teng bo'ladi. Bu yerda cos²γ qisqartirishni noto'g'ri bajarish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifodani soddalashtirish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#ab3db6e8"
+    },
+    {
+      "q": "sin x = 0,6 bo'lsa, 3 sin²x + 3 cos²x + 2 ifodasining qiymati nechaga teng bo'ladi?",
+      "v": [
+        "3",
+        "2",
+        "5",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Uchni qavsdan chiqaramiz: 3(sin²x + cos²x) + 2. Asosiy ayniyatga ko'ra qavs 1 ga teng, demak ifoda 3 + 2 = 5 bo'ladi. Berilgan sinus qiymati bu yerda keraksiz. Bu yerda 3 ikkini qo'shishni unutish, 8 esa uchlarni ham qo'shib yuborish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyat orqali ifoda qiymatini hisoblash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#6a39ba1d"
+    },
+    {
+      "q": "cos α = 1/3 bo'lsa, sin²α ifodasining qiymatini asosiy ayniyat yordamida toping.",
+      "v": [
+        "2/3",
+        "8/9",
+        "1/9",
+        "−8/9"
+      ],
+      "t": 1,
+      "izoh": "sin²α = 1 − cos²α = 1 − 1/9 = 8/9 bo'ladi. Bu yerda 2/3 birdan 1/3 ni ayirish, 1/9 kosinusning kvadrati, −8/9 esa ishora xatosi. Sinusning kvadrati hech qachon manfiy bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat orqali ifoda qiymatini hisoblash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#ec1eaed3"
+    },
+    {
+      "q": "Agar sin β = 0,8 va β o'tkir burchak bo'lsa, 5 cos β − 3 ifodasining qiymati nechaga teng?",
+      "v": [
+        "1",
+        "−3",
+        "0,6",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "cos²β = 1 − 0,64 = 0,36, o'tkir burchakda cos β = 0,6 bo'ladi. Demak ifoda 5 · 0,6 − 3 = 0 ga teng. Bu yerda 1 kosinus o'rniga sinusni qo'yish, −3 kosinusni nol deb olish, 0,6 esa oxirgi qadamni bajarmaslik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyat orqali ifoda qiymatini hisoblash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#f940d845"
+    },
+    {
+      "q": "sin θ + cos θ = 1 bo'lsa, sin θ · cos θ ko'paytmasi va sin⁴θ + cos⁴θ yig'indisi mos ravishda nechaga teng?",
+      "v": [
+        "1 va 1",
+        "0 va 0",
+        "1/2 va 1/2",
+        "0 va 1"
+      ],
+      "t": 3,
+      "izoh": "Kvadratga oshirsak 1 = 1 + 2 sin θ · cos θ, demak sin θ · cos θ = 0. Shunda sin⁴θ + cos⁴θ = 1 − 2 · 0 = 1 bo'ladi. Javob mos ravishda 0 va 1. Bu yerda 0 va 0 ikkinchi ifodada asosiy ayniyatni unutish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayniyat orqali ifoda qiymatini hisoblash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#3bc7da5a"
+    },
+    {
+      "q": "cos²x − sin²x = 0,28 va sin²x + cos²x = 1 bo'lsa, cos²x ning qiymati nechaga teng?",
+      "v": [
+        "0,36",
+        "0,64",
+        "0,28",
+        "1,28"
+      ],
+      "t": 1,
+      "izoh": "Ikki tenglikni hadlab qo'shamiz: 2cos²x = 1,28, demak cos²x = 0,64 bo'ladi. Bu yerda 1,28 ikkiga bo'lishni unutish, 0,36 sinusning kvadrati, 0,28 esa berilgan ayirmaning takrori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyat orqali ifoda qiymatini hisoblash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#7ba7bdbe"
+    },
+    {
+      "q": "Agar tg x + ctg x = 7/2 bo'lsa, sin x · cos x ko'paytmasi nechaga teng?",
+      "v": [
+        "7/2",
+        "1/7",
+        "2/7",
+        "−2/7"
+      ],
+      "t": 2,
+      "izoh": "tg x + ctg x ifodasini umumiy maxrajga keltirsak, u 1/(sin x · cos x) ga teng bo'ladi. Demak sin x · cos x = 1 : (7/2) = 2/7. Bu yerda 7/2 teskarilashni unutish, 1/7 esa maxrajda ortiqcha ikkiga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tgx + ctgx va sinx·cosx bog'lanishi",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#bb66f7e0"
+    },
+    {
+      "q": "sin α · cos α = 1/5 bo'lsa, tg α + ctg α yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "5",
+        "1/5",
+        "2/5",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "tg α + ctg α = (sin²α + cos²α)/(sin α · cos α) = 1/(sin α · cos α) bo'ladi. Demak yig'indi 1 : (1/5) = 5 ga teng. Bu yerda 1/5 teskarilashni unutish, 2/5 ikkiga ko'paytirish, 25 esa kvadratlash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tgx + ctgx va sinx·cosx bog'lanishi",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#f7c2c0bc"
+    },
+    {
+      "q": "Agar tg t + ctg t = 4 bo'lsa, sin t · cos t · (tg t + ctg t) ko'paytmasi nechaga teng?",
+      "v": [
+        "4",
+        "1",
+        "1/4",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "tg t + ctg t = 1/(sin t · cos t) bo'lgani uchun sin t · cos t = 1/4 bo'ladi. Ko'paytma esa (1/4) · 4 = 1 ga teng. Aslida bu ko'paytma har doim birga teng. Bu yerda 4 berilganning takrori, 1/4 esa oraliq natija.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tgx + ctgx va sinx·cosx bog'lanishi",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#6e137473"
+    },
+    {
+      "q": "Elektr tebranishida tg φ + ctg φ = 10/3 ekani ma'lum. Shu holat uchun (sin φ + cos φ)² ifodasining qiymati nechaga teng?",
+      "v": [
+        "2/5",
+        "13/10",
+        "8/5",
+        "16/5"
+      ],
+      "t": 2,
+      "izoh": "Avval sin φ · cos φ = 1 : (10/3) = 3/10 topiladi. Endi (sin φ + cos φ)² = 1 + 2 · 3/10 = 8/5 bo'ladi. Bu yerda 2/5 qo'shish o'rniga ayirish, 13/10 ikkiga ko'paytirishni unutish, 16/5 esa ortiqcha ikkilantirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tgx + ctgx va sinx·cosx bog'lanishi",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#4c93261b"
+    },
+    {
+      "q": "sin x > 0 va tg x < 0 shartlar bir vaqtda bajarilsa, x burchak qaysi chorakda yotadi?",
+      "v": [
+        "I chorak",
+        "II chorak",
+        "III chorak",
+        "IV chorak"
+      ],
+      "t": 1,
+      "izoh": "Sinus musbat bo'lsa, burchak I yoki II chorakda yotadi. Tangens manfiy bo'lishi uchun kosinus manfiy bo'lishi kerak, bu esa faqat II chorakda ro'y beradi. Demak javob II chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishora va chorak aniqlash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#6aba552d"
+    },
+    {
+      "q": "cos α = −0,6 va sin α · cos α > 0 bo'lsa, sin α ning qiymati nechaga teng?",
+      "v": [
+        "0,8",
+        "−0,6",
+        "0,64",
+        "−0,8"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytma musbat, kosinus esa manfiy, demak sinus ham manfiy va burchak III chorakda. sin²α = 1 − 0,36 = 0,64, shuning uchun sin α = −0,8. Bu yerda 0,8 ishora shartini e'tiborsiz qoldirish, 0,64 esa ildiz olmaslik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ishora va chorak aniqlash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#b535f508"
+    },
+    {
+      "q": "Burchak β uchun cos β = 5/13 va tg β < 0 ekani ma'lum bo'lsa, sin β ni toping.",
+      "v": [
+        "12/13",
+        "−5/13",
+        "−13/12",
+        "−12/13"
+      ],
+      "t": 3,
+      "izoh": "Kosinus musbat, tangens manfiy bo'lsa, sinus manfiy va burchak IV chorakda yotadi. sin²β = 1 − 25/169 = 144/169, demak sin β = −12/13. Bu yerda 12/13 ishorani hisobga olmaslik, −5/13 esa kosinusni ko'chirib yozish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishora va chorak aniqlash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#dc6df78c"
+    },
+    {
+      "q": "√(1 − sin²x) = −cos x tenglik o'rinli bo'lgan burchaklar qaysi choraklarda joylashadi?",
+      "v": [
+        "I va II chorak",
+        "II va III chorak",
+        "III va IV chorak",
+        "I va IV chorak"
+      ],
+      "t": 1,
+      "izoh": "1 − sin²x = cos²x bo'lgani uchun chap tomon |cos x| ga teng. |cos x| = −cos x tenglik esa faqat cos x ≤ 0 bo'lganda bajariladi. Kosinus manfiy bo'ladigan joy — II va III choraklar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ishora va chorak aniqlash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#9c563be4"
+    },
+    {
+      "q": "Nogironlar aravachasi uchun qurilgan pandusning ko'tarilish burchagi α uchun tg α = 1/12 me'yorda belgilangan. Shu burchak uchun 1/cos²α nechaga teng?",
+      "v": [
+        "143/144",
+        "144/145",
+        "145/144",
+        "13/12"
+      ],
+      "t": 2,
+      "izoh": "1/cos²α = 1 + tg²α = 1 + 1/144 = 145/144 bo'ladi. Bu yerda 143/144 qo'shish o'rniga ayirish, 144/145 teskarilash xatosi, 13/12 esa tangensni to'g'ridan-to'g'ri birga qo'shish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nishab va qiyalik konteksti",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#53cfbeb7"
+    },
+    {
+      "q": "Tog' yo'lining nishabligi shundayki, sin α = 0,28 va α o'tkir burchak. Yo'lning gorizontal proyeksiyasiga mos cos α qiymatini toping.",
+      "v": [
+        "0,96",
+        "0,72",
+        "0,9216",
+        "−0,96"
+      ],
+      "t": 0,
+      "izoh": "cos²α = 1 − 0,0784 = 0,9216 bo'ladi. O'tkir burchakda kosinus musbat, demak cos α = 0,96. Bu yerda 0,9216 ildiz olishni unutish, 0,72 birdan 0,28 ni ayirish, −0,96 esa ishora xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nishab va qiyalik konteksti",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#f94e635b"
+    },
+    {
+      "q": "Cho'qqiga chiqadigan so'qmoqning og'ish burchagi β uchun ctg β = 2,4 bo'lsa, sin β ni toping va β o'tkir burchak deb hisoblang.",
+      "v": [
+        "5/13",
+        "12/13",
+        "13/5",
+        "5/12"
+      ],
+      "t": 0,
+      "izoh": "ctg β = 2,4 = 12/5, shuning uchun 1/sin²β = 1 + 144/25 = 169/25 bo'ladi. Bundan sin²β = 25/169 va sin β = 5/13. Bu yerda 12/13 kosinus qiymati, 5/12 tangens, 13/5 esa teskari kasr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nishab va qiyalik konteksti",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#e0e7382b"
+    },
+    {
+      "q": "Quyosh nurlarining ufqqa og'ish burchagi α uchun soya uzunligidan tg α = 3/4 topildi. Shu o'tkir burchak uchun sin α ni hisoblang.",
+      "v": [
+        "4/5",
+        "3/4",
+        "3/5",
+        "5/3"
+      ],
+      "t": 2,
+      "izoh": "1/cos²α = 1 + 9/16 = 25/16, demak cos α = 4/5 bo'ladi. Endi sin α = tg α · cos α = (3/4) · (4/5) = 3/5. Bu yerda 4/5 kosinus qiymati, 3/4 berilgan tangensning takrori, 5/3 esa teskari nisbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soya va balandlik konteksti",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#53b7a737"
+    },
+    {
+      "q": "Ustunning soyasidan aniqlangan burchak γ uchun sin γ = 24/25 va γ o'tkir bo'lsa, ctg γ ni toping.",
+      "v": [
+        "24/7",
+        "7/24",
+        "7/25",
+        "25/24"
+      ],
+      "t": 1,
+      "izoh": "cos²γ = 1 − 576/625 = 49/625, o'tkir burchakda cos γ = 7/25 bo'ladi. Demak ctg γ = (7/25) : (24/25) = 7/24. Bu yerda 24/7 tangens qiymati, 7/25 faqat kosinus, 25/24 esa gipotenuza nisbati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soya va balandlik konteksti",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#9d346ea6"
+    },
+    {
+      "q": "Bino devoriga suyalgan narvon bilan yer orasidagi o'tkir burchak θ uchun cos θ = 0,6 ekani o'lchandi. sin θ + cos θ yig'indisi nechaga teng?",
+      "v": [
+        "0,2",
+        "1",
+        "0,48",
+        "1,4"
+      ],
+      "t": 3,
+      "izoh": "sin²θ = 1 − 0,36 = 0,64, o'tkir burchakda sin θ = 0,8 bo'ladi. Yig'indi 0,8 + 0,6 = 1,4 ga teng. Bu yerda 0,2 qo'shish o'rniga ayirish, 0,48 ko'paytma, 1 esa asosiy ayniyat bilan chalkashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soya va balandlik konteksti",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#b1e2374b"
+    },
+    {
+      "q": "Mayatnikning og'ish burchagi φ uchun sin φ = −0,6 va φ IV chorakda ekani qayd etildi. tg φ ni toping.",
+      "v": [
+        "0,75",
+        "−1,25",
+        "−0,6",
+        "−0,75"
+      ],
+      "t": 3,
+      "izoh": "cos²φ = 1 − 0,36 = 0,64, IV chorakda cos φ = 0,8 bo'ladi. Demak tg φ = (−0,6) : 0,8 = −0,75. Bu yerda −1,25 esa −1 : cos φ = −1 : 0,8 hisobi, −0,6 esa berilgan sinusning takrori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tebranish va signal konteksti",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#42c9e050"
+    },
+    {
+      "q": "Kuchlanish tebranishida sin ω · cos ω = −0,375 ekani hisoblandi va sin ω + cos ω manfiy. sin ω + cos ω ni toping.",
+      "v": [
+        "0,5",
+        "−0,5",
+        "−0,25",
+        "−0,75"
+      ],
+      "t": 1,
+      "izoh": "(sin ω + cos ω)² = 1 + 2 · (−0,375) = 0,25 bo'ladi. Shart bo'yicha yig'indi manfiy, demak sin ω + cos ω = −0,5. Bu yerda −0,25 ildiz olishni unutish, −0,75 esa qo'sh ko'paytma qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tebranish va signal konteksti",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#01bb7bc6"
+    },
+    {
+      "q": "Signal tahlilida sin²t − cos²t = −0,36 ekani topildi. Shu t burchak uchun sin²t ning qiymati nechaga teng?",
+      "v": [
+        "0,68",
+        "0,64",
+        "0,32",
+        "0,18"
+      ],
+      "t": 2,
+      "izoh": "Berilgan tenglikni sin²t + cos²t = 1 bilan hadlab qo'shamiz: 2sin²t = 0,64, demak sin²t = 0,32. Bu yerda 0,64 ikkiga bo'lishni unutish, 0,68 kosinusning kvadrati, 0,18 esa ortiqcha bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin²x va cos²x ayirmasi bilan ishlash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#39d0a260"
+    },
+    {
+      "q": "Chambarakda aylanayotgan kabinaning burchagi α uchun cos α = −0,28 va α III chorakda. sin α − cos α ayirmasi nechaga teng?",
+      "v": [
+        "−0,68",
+        "0,68",
+        "−1,24",
+        "−0,96"
+      ],
+      "t": 0,
+      "izoh": "sin²α = 1 − 0,0784 = 0,9216, III chorakda sin α = −0,96 bo'ladi. Ayirma −0,96 − (−0,28) = −0,68 ga teng. Bu yerda −1,24 ayirish o'rniga qo'shish, −0,96 esa faqat sinus qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylanma harakat konteksti",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#92ef3e49"
+    },
+    {
+      "q": "Karusel g'ildiragining bir nuqtasi uchun sin β = −24/25 va β IV chorakda joylashgan. 1 + tg²β ifodasi nechaga teng?",
+      "v": [
+        "625/49",
+        "49/625",
+        "576/49",
+        "25/7"
+      ],
+      "t": 0,
+      "izoh": "cos²β = 1 − 576/625 = 49/625 bo'ladi. 1 + tg²β = 1/cos²β bo'lgani uchun natija 625/49 ga teng. Bu yerda 49/625 teskarilashni unutish, 576/49 faqat tangensning kvadrati, 25/7 esa teskari kosinus.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylanma harakat konteksti",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#e17732d8"
+    },
+    {
+      "q": "Aylanma stolning bir holatidagi burchak γ uchun sin γ · cos γ = 0,22 va sin γ + cos γ musbat ekani ma'lum. sin γ + cos γ ni toping.",
+      "v": [
+        "1,44",
+        "0,44",
+        "1,2",
+        "−1,2"
+      ],
+      "t": 2,
+      "izoh": "(sin γ + cos γ)² = 1 + 2 · 0,22 = 1,44 bo'ladi. Yig'indi musbat, shuning uchun sin γ + cos γ = 1,2. Bu yerda 1,44 ildiz olishni unutish, 0,44 esa faqat qo'sh ko'paytma qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylanma harakat konteksti",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#53f30a30"
+    },
+    {
+      "q": "tg x = 2 bo'lsa, (2 sin x + cos x)/(sin x − 3 cos x) kasrining qiymati nechaga teng?",
+      "v": [
+        "5",
+        "−5",
+        "−1/5",
+        "−7"
+      ],
+      "t": 1,
+      "izoh": "Surat va maxrajni cos x ga bo'lamiz: (2 tg x + 1)/(tg x − 3). Qiymatlarni qo'ysak (4 + 1) : (2 − 3) = −5 chiqadi. Bu yerda 5 maxrajdagi ishorani e'tiborsiz qoldirish, −1/5 kasrni ag'darish, −7 esa koeffitsientni noto'g'ri o'qish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir jinsli kasrni tgx orqali hisoblash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#9af1dd66"
+    },
+    {
+      "q": "ctg α = 4 bo'lsa, (3 cos α − sin α)/(cos α + 2 sin α) ifodasining qiymatini toping.",
+      "v": [
+        "6/11",
+        "13/6",
+        "11/2",
+        "11/6"
+      ],
+      "t": 3,
+      "izoh": "Surat va maxrajni sin α ga bo'lamiz: (3 ctg α − 1)/(ctg α + 2). Qiymatlarni qo'ysak (12 − 1) : (4 + 2) = 11/6 bo'ladi. Bu yerda 6/11 kasrni ag'darish, 13/6 suratda ishorani almashtirish, 11/2 esa maxrajni noto'g'ri o'qish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir jinsli kasrni tgx orqali hisoblash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#06cc3969"
+    },
+    {
+      "q": "Modelda tg θ = −1/2 ekani chiqdi. (sin θ + 2 cos θ)/(3 sin θ − cos θ) kasri nechaga teng?",
+      "v": [
+        "3/5",
+        "−5/3",
+        "−1/5",
+        "−3/5"
+      ],
+      "t": 3,
+      "izoh": "Kasrni cos θ ga bo'lsak (tg θ + 2)/(3 tg θ − 1) ko'rinishga keladi. Qiymat: (−1/2 + 2) : (−3/2 − 1) = (3/2) : (−5/2) = −3/5. Bu yerda −5/3 kasrni ag'darish, 3/5 esa maxraj ishorasini e'tiborsiz qoldirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir jinsli kasrni tgx orqali hisoblash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#da8ecb83"
+    },
+    {
+      "q": "sin x va cos x nolga teng emas hamda tg x = 5 bo'lsa, (sin²x + sin x · cos x)/cos²x ifodasining qiymati nechaga teng?",
+      "v": [
+        "25",
+        "30",
+        "20",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Ifodani hadlab bo'lsak tg²x + tg x hosil bo'ladi. Qiymatlarni qo'ysak 25 + 5 = 30 chiqadi. Bu yerda 25 ikkinchi hadni tashlab ketish, 20 qo'shish o'rniga ayirish, 6 esa tangensga birni qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir jinsli kasrni tgx orqali hisoblash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#8e879379"
+    },
+    {
+      "q": "Quyidagi tengliklardan qaysi biri barcha ruxsat etilgan x qiymatlarida ayniyat bo'la olmaydi?",
+      "v": [
+        "sin²x + cos²x = 1",
+        "1 + tg²x = 1/cos²x",
+        "sin x + cos x = 1",
+        "tg x · ctg x = 1"
+      ],
+      "t": 2,
+      "izoh": "Birinchi, ikkinchi va to'rtinchi tengliklar asosiy trigonometrik ayniyatlar hisoblanadi. sin x + cos x = 1 esa faqat ayrim burchaklarda bajariladi: x = π/2 da to'g'ri, x = π/4 da noto'g'ri chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyatni tanish va tekshirish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#3068400c"
+    },
+    {
+      "q": "Quyidagi ifodalardan qaysi biri ixtiyoriy ruxsat etilgan x uchun sin²x ga aynan teng bo'ladi?",
+      "v": [
+        "1 − cos²x",
+        "1 + cos²x",
+        "cos²x − 1",
+        "1/(1 + tg²x)"
+      ],
+      "t": 0,
+      "izoh": "Asosiy ayniyatdan sin²x = 1 − cos²x kelib chiqadi. 1/(1 + tg²x) ifodasi esa cos²x ga teng, cos²x − 1 manfiy qiymat beradi, 1 + cos²x esa birdan katta bo'lgani uchun sinus kvadratiga teng bo'la olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyatni tanish va tekshirish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#085b20f5"
+    },
+    {
+      "q": "1 + ctg²α ifodasi quyidagi ifodalardan qaysi biriga aynan teng bo'ladi?",
+      "v": [
+        "1/cos²α",
+        "sin²α",
+        "1/sin²α",
+        "1 + tg²α"
+      ],
+      "t": 2,
+      "izoh": "ctg α = cos α/sin α ekanini qo'yamiz: 1 + cos²α/sin²α = (sin²α + cos²α)/sin²α = 1/sin²α. Bu yerda 1/cos²α aslida 1 + tg²α ga teng, ya'ni tangens bilan kotangensni chalkashtirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyatni tanish va tekshirish",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#a24dfa7a"
+    },
+    {
+      "q": "sin x = 0,5 bo'lsa, cos²x − sin²x ifodasining qiymati nechaga teng bo'ladi?",
+      "v": [
+        "−0,5",
+        "0,25",
+        "0,5",
+        "0,75"
+      ],
+      "t": 2,
+      "izoh": "sin²x = 0,25, demak cos²x = 1 − 0,25 = 0,75 bo'ladi. Ayirma 0,75 − 0,25 = 0,5 ga teng. Bu yerda 0,75 faqat kosinus kvadrati, 0,25 sinus kvadrati, −0,5 esa ayirish tartibini almashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sin²x va cos²x ayirmasi bilan ishlash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#f95e59b8"
+    },
+    {
+      "q": "Agar sin⁴x − cos⁴x = 0,4 bo'lsa, sin²x ning qiymati nechaga teng?",
+      "v": [
+        "0,3",
+        "0,7",
+        "0,6",
+        "0,2"
+      ],
+      "t": 1,
+      "izoh": "sin⁴x − cos⁴x = (sin²x − cos²x)(sin²x + cos²x) = sin²x − cos²x = 0,4 bo'ladi. Buni sin²x + cos²x = 1 bilan qo'shsak 2sin²x = 1,4, demak sin²x = 0,7. Bu yerda 0,3 kosinus kvadrati, 0,2 esa bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin²x va cos²x ayirmasi bilan ishlash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#6d4e4972"
+    },
+    {
+      "q": "Tadqiqotda sin²β − cos²β = 1/5 ekani aniqlandi. Shu β uchun sin⁴β + cos⁴β ifodasining qiymatini toping.",
+      "v": [
+        "12/25",
+        "1/25",
+        "17/25",
+        "13/25"
+      ],
+      "t": 3,
+      "izoh": "Berilgan tenglikni sin²β + cos²β = 1 bilan birga yechsak sin²β = 3/5 va cos²β = 2/5 chiqadi. Demak sin⁴β + cos⁴β = 9/25 + 4/25 = 13/25. Bu yerda 12/25 qo'sh ko'paytma, 1/25 esa ayirmaning kvadrati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin²x va cos²x ayirmasi bilan ishlash",
+      "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar#9e31dc03"
+    }
+  ]
+}

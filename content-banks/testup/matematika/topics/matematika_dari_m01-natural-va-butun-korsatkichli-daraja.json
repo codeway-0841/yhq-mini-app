@@ -1,0 +1,1609 @@
+{
+  "nom": "Natural va butun ko'rsatkichli daraja",
+  "bolim": "Daraja, ildiz va logarifm",
+  "blok": "dari",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Doniyor devoriy gazeta uchun (−3)⁴ va −3⁴ ifodalarni alohida hisobladi. U qanday ikki qiymatni yozishi kerak?",
+      "v": [
+        "81 va 81",
+        "−81 va −81",
+        "81 va −81",
+        "−12 va −12"
+      ],
+      "t": 2,
+      "izoh": "(−3)⁴ da asos (−3) bo'lib, u to'rt marta ko'paytiriladi: (−3)·(−3)·(−3)·(−3) = 81. −3⁴ da esa daraja faqat 3 ga tegishli, minus tashqarida qoladi: −(3⁴) = −81. Javob: 81 va −81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-tarifi-va-ishora",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#d554be72"
+    },
+    {
+      "q": "(−2)⁵ · (−2)² ko'paytmaning qiymati qanday songa teng bo'ladi?",
+      "v": [
+        "−128",
+        "128",
+        "1024",
+        "−32"
+      ],
+      "t": 0,
+      "izoh": "Asoslar bir xil bo'lgani uchun ko'rsatkichlar qo'shiladi: (−2)^(5+2) = (−2)⁷. Ko'rsatkich toq, asos manfiy, demak natija manfiy: (−2)⁷ = −128. Javob: −128.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-tarifi-va-ishora",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#9e6e075b"
+    },
+    {
+      "q": "Quyidagi to'rt ifodadan qaysi birining qiymati manfiy son bo'ladi: (−5)², −5², (−5)⁰ yoki (−2)⁴?",
+      "v": [
+        "(−5)²",
+        "−5²",
+        "(−5)⁰",
+        "(−2)⁴"
+      ],
+      "t": 1,
+      "izoh": "(−5)² = 25 musbat, (−5)⁰ = 1 musbat, (−2)⁴ = 16 ham musbat, chunki ko'rsatkich juft. −5² ifodada minus daraja belgisidan tashqarida turibdi: −(5²) = −25. Javob: −5².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-tarifi-va-ishora",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#0f7aafc3"
+    },
+    {
+      "q": "Dastur a = −1 qiymatni qabul qilib, a¹⁰⁰ + a¹⁰¹ ifodani hisoblaydi va natijani ekranga chiqaradi. Qanday son ko'rinadi?",
+      "v": [
+        "2",
+        "−2",
+        "1",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "Manfiy birlikning juft darajasi 1 ga, toq darajasi esa −1 ga teng. Demak a¹⁰⁰ = 1 va a¹⁰¹ = −1. Ularning yig'indisi 1 + (−1) = 0. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daraja-tarifi-va-ishora",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#99c5e662"
+    },
+    {
+      "q": "Darsda o'qituvchi taxtaga 7⁰ + 7¹ + (−7)⁰ ifodani yozdi va uning qiymatini so'radi. Javob nechaga teng?",
+      "v": [
+        "8",
+        "15",
+        "9",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Noldan farqli har qanday sonning nolinchi darajasi 1 ga teng: 7⁰ = 1 va (−7)⁰ = 1. Birinchi daraja esa sonning o'zini beradi: 7¹ = 7. Yig'indi 1 + 7 + 1 = 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nol-korsatkich",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#87b5f1e3"
+    },
+    {
+      "q": "a ≠ 0 va b ≠ 0 shartida (5a²b)⁰ + 5⁰ ifodaning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "2",
+        "1",
+        "6",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "Qavs ichidagi ko'paytma noldan farqli, shuning uchun (5a²b)⁰ = 1. Xuddi shunday 5⁰ = 1 bo'ladi. Ikkisining yig'indisi 1 + 1 = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nol-korsatkich",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#deaeb293"
+    },
+    {
+      "q": "5³ : 5³ bo'linmani ikki xil usulda hisoblash 5⁰ = 1 tengligini qanday asoslaydi?",
+      "v": [
+        "Bo'linma 0 ga teng, demak 5⁰ = 0",
+        "Bo'linma 1 ga teng, ko'rsatkichlar ayirmasi 0 — demak 5⁰ = 1",
+        "Ko'rsatkichlar qo'shiladi, demak 5⁰ = 5⁶",
+        "Bo'linma 5 ga teng, demak 5⁰ = 5"
+      ],
+      "t": 1,
+      "izoh": "Bir tomondan 5³ : 5³ = 125 : 125 = 1 bo'ladi. Ikkinchi tomondan bo'linma xossasiga ko'ra ko'rsatkichlar ayiriladi: 5^(3−3) = 5⁰. Bitta ifodaning ikki yozuvi teng bo'lgani uchun 5⁰ = 1. Javob: Bo'linma 1 ga teng, ko'rsatkichlar ayirmasi 0 — demak 5⁰ = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-korsatkich",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#6e578f0d"
+    },
+    {
+      "q": "Test kitobida x ≠ 0 shartida 3x⁰ ifoda berilgan. Ifodaning qiymati nimaga teng bo'ladi?",
+      "v": [
+        "1",
+        "0",
+        "3",
+        "3x"
+      ],
+      "t": 2,
+      "izoh": "Daraja belgisi faqat x ga tegishli, 3 koeffitsiyent qavs ichida emas. x ≠ 0 bo'lgani uchun x⁰ = 1, demak 3x⁰ = 3·1 = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nol-korsatkich",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#3f492b00"
+    },
+    {
+      "q": "2⁻³ + 3⁻¹ yig'indisini oddiy kasr ko'rinishida yozing va to'g'ri natijani tanlang.",
+      "v": [
+        "11/24",
+        "1/11",
+        "−11",
+        "1/2"
+      ],
+      "t": 0,
+      "izoh": "Manfiy ko'rsatkich sonning teskarisini beradi: 2⁻³ = 1/8 va 3⁻¹ = 1/3. Umumiy maxraj 24 ni olamiz: 3/24 + 8/24 = 11/24. Javob: 11/24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-korsatkich-qiymati",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#4b333e6f"
+    },
+    {
+      "q": "Matematika to'garagida Malika (1/3)⁻³ ifodani hisoblashi kerak. U qanday natija olishi lozim?",
+      "v": [
+        "1/27",
+        "−27",
+        "27",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "Manfiy ko'rsatkichli daraja kasrni ag'daradi: (1/3)⁻³ = 3³. Uchning kubi 27 ga teng, ishora esa o'zgarmaydi. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-korsatkich-qiymati",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#3d9c0ad3"
+    },
+    {
+      "q": "Ustoz a ≠ 0 shartida a⁻³ ifodani manfiy ko'rsatkichsiz yozishni topshirdi. Qaysi yozuv to'g'ri?",
+      "v": [
+        "−a³",
+        "1/a³",
+        "−1/a³",
+        "a³"
+      ],
+      "t": 1,
+      "izoh": "Manfiy ko'rsatkich ishorani emas, balki kasrni beradi: a⁻³ = 1/a³. Bu yerda a ning ishorasi umuman o'zgarmaydi. Javob: 1/a³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-korsatkich-qiymati",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#f123b844"
+    },
+    {
+      "q": "Sardor bir litr sharbatni idishlarga quydi: avval 2⁻¹ qismini, keyin 2⁻² qismini, so'ng 2⁻³ qismini. Jami qancha qism quyildi?",
+      "v": [
+        "1/64",
+        "3/14",
+        "1/8",
+        "7/8"
+      ],
+      "t": 3,
+      "izoh": "Manfiy ko'rsatkichlarni kasrga aylantiramiz: 2⁻¹ = 1/2, 2⁻² = 1/4, 2⁻³ = 1/8. Umumiy maxraj 8 bo'ladi: 4/8 + 2/8 + 1/8 = 7/8. Javob: 7/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-korsatkich-qiymati",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#3c59307a"
+    },
+    {
+      "q": "5³ · 5⁴ : 5⁵ ifodani bitta daraja ko'rinishida qanday yozish kerak?",
+      "v": [
+        "5²",
+        "5¹²",
+        "5⁷",
+        "25²"
+      ],
+      "t": 0,
+      "izoh": "Bir xil asosli darajalar ko'paytirilganda ko'rsatkichlar qo'shiladi, bo'linganda esa ayiriladi. Demak natija 5^(3+4−5) = 5² bo'ladi. Javob: 5².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajalar-kopaytmasi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#4b15c66d"
+    },
+    {
+      "q": "Zarafshon fermer xo'jaligida bir qatorga 3⁴ tup ko'chat ekilgan, jami 3² ta qator bor. Ko'chatlar soni nechta?",
+      "v": [
+        "6561 ta",
+        "90 ta",
+        "729 ta",
+        "81 ta"
+      ],
+      "t": 2,
+      "izoh": "Umumiy son qator soni bilan bir qatordagi tup soni ko'paytmasiga teng: 3⁴ · 3² = 3^(4+2) = 3⁶. Uchning oltinchi darajasi 729 ga teng. Javob: 729 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajalar-kopaytmasi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#8e17e0f5"
+    },
+    {
+      "q": "Malikaning daftarida b ≠ 0 bo'lgan b⁵ · b · b³ ko'paytma yozilgan. Uni bitta daraja shaklida qanday yozish kerak?",
+      "v": [
+        "b⁸",
+        "b⁹",
+        "b¹⁵",
+        "3b⁹"
+      ],
+      "t": 1,
+      "izoh": "Yozilmagan ko'rsatkich birga teng, ya'ni b = b¹. Ko'rsatkichlarni qo'shamiz: 5 + 1 + 3 = 9, demak natija b⁹ bo'ladi. Javob: b⁹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajalar-kopaytmasi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#e997b284"
+    },
+    {
+      "q": "Kompyuter xotirasini hisoblashda 2⁴ · 8 ifoda uchradi. Uni 2 asosli bitta daraja shaklida yozing.",
+      "v": [
+        "2¹²",
+        "2⁵",
+        "2³²",
+        "2⁷"
+      ],
+      "t": 3,
+      "izoh": "Avval sakkizni ikki asosida yozamiz: 8 = 2³. Endi bir xil asosli darajalar ko'paytmasi olinadi: 2⁴ · 2³ = 2^(4+3) = 2⁷. Javob: 2⁷.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajalar-kopaytmasi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#a237ba04"
+    },
+    {
+      "q": "Takrorlash mashg'ulotida 7¹² : 7⁹ bo'linma uchradi. Uning son qiymati nechaga teng?",
+      "v": [
+        "343",
+        "1/343",
+        "7²¹",
+        "49"
+      ],
+      "t": 0,
+      "izoh": "Asoslar bir xil bo'lgani uchun ko'rsatkichlar ayiriladi: 7^(12−9) = 7³. Yettining kubi 343 ga teng. Javob: 343.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajalar-bolinmasi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#a4970b71"
+    },
+    {
+      "q": "Do'konning oylik tushumi 5⁸ ming so'm, oylik ijara haqi esa 5⁶ ming so'm. Tushum ijara haqidan necha marta ko'p?",
+      "v": [
+        "5 marta",
+        "125 marta",
+        "25 marta",
+        "2 marta"
+      ],
+      "t": 2,
+      "izoh": "Necha marta ko'pligini bo'linma ko'rsatadi: 5⁸ : 5⁶ = 5^(8−6) = 5². Beshning kvadrati 25 ga teng. Javob: 25 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajalar-bolinmasi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#096c879b"
+    },
+    {
+      "q": "a ≠ 0 bo'lganda a⁷ : a⁻² bo'linmani soddalashtirgan o'quvchi qanday natijaga kelishi kerak?",
+      "v": [
+        "a⁵",
+        "a⁹",
+        "a⁻¹⁴",
+        "a⁻⁹"
+      ],
+      "t": 1,
+      "izoh": "Bo'linmada ko'rsatkichlar ayiriladi: 7 − (−2) = 7 + 2 = 9. Manfiy sonni ayirish uni qo'shishga teng. Demak natija a⁹ bo'ladi. Javob: a⁹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajalar-bolinmasi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#efda460d"
+    },
+    {
+      "q": "Sinov testida (6⁵ · 6³) : 6⁶ ifoda berilgan. Uning son qiymati qanchaga teng?",
+      "v": [
+        "216",
+        "1296",
+        "6",
+        "36"
+      ],
+      "t": 3,
+      "izoh": "Avval qavs ichidagi ko'paytmani hisoblaymiz: 6⁵ · 6³ = 6⁸. So'ng bo'linmani olamiz: 6⁸ : 6⁶ = 6² = 36. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajalar-bolinmasi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#ca4c1871"
+    },
+    {
+      "q": "Hisoblash mashqida (2³)⁴ ifoda berilgan. Uning qiymati qanday songa teng?",
+      "v": [
+        "4096",
+        "128",
+        "512",
+        "81"
+      ],
+      "t": 0,
+      "izoh": "Darajani darajaga ko'targanda ko'rsatkichlar ko'paytiriladi: (2³)⁴ = 2^(3·4) = 2¹². Ikkining o'n ikkinchi darajasi 4096 ga teng. Javob: 4096.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajani-darajaga-kotarish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#dec8d053"
+    },
+    {
+      "q": "Algebraik ifoda (a²)⁵ · a³ ni bitta daraja ko'rinishiga keltirganda nima hosil bo'ladi?",
+      "v": [
+        "a¹⁰",
+        "a³⁰",
+        "a¹³",
+        "a⁷"
+      ],
+      "t": 2,
+      "izoh": "Avval ichki darajani hisoblaymiz: (a²)⁵ = a^(2·5) = a¹⁰. So'ng ko'paytmada ko'rsatkichlar qo'shiladi: a¹⁰ · a³ = a^(10+3) = a¹³. Javob: a¹³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajani-darajaga-kotarish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#d8f9b421"
+    },
+    {
+      "q": "Dastur ((−5)²)³ ifodani hisoblaydi va natijani ekranga chiqaradi. Qanday son ko'rinadi?",
+      "v": [
+        "−15625",
+        "15625",
+        "−3125",
+        "3125"
+      ],
+      "t": 1,
+      "izoh": "Avval ichki daraja olinadi: (−5)² = 25, ya'ni musbat son. Endi 25³ = (5²)³ = 5⁶ = 15625 bo'ladi. Javob: 15625.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajani-darajaga-kotarish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#11d88b55"
+    },
+    {
+      "q": "(3⁴)² va 3^(4²) ifodalarning qiymatlari bir xil bo'ladimi, ularni taqqoslab ko'ring.",
+      "v": [
+        "Ha, ikkalasi ham 3⁸",
+        "Ha, ikkalasi ham 3¹⁶",
+        "Yo'q, birinchisi 3⁶, ikkinchisi 3⁸",
+        "Yo'q, birinchisi 3⁸, ikkinchisi 3¹⁶"
+      ],
+      "t": 3,
+      "izoh": "Birinchi ifodada ko'rsatkichlar ko'paytiriladi: (3⁴)² = 3⁸. Ikkinchisida esa avval 4² = 16 hisoblanadi va natija 3¹⁶ bo'ladi. 3⁸ ≠ 3¹⁶, demak ifodalar teng emas. Javob: Yo'q, birinchisi 3⁸, ikkinchisi 3¹⁶.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajani-darajaga-kotarish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#a50ade2e"
+    },
+    {
+      "q": "Ko'paytmaning darajasi qoidasidan foydalanib (2a³b)⁴ ifodani soddalashtiring va natijani tanlang.",
+      "v": [
+        "16a¹²b⁴",
+        "8a¹²b⁴",
+        "2a¹²b⁴",
+        "16a⁷b⁴"
+      ],
+      "t": 0,
+      "izoh": "Qavs ichidagi har bir ko'paytuvchi to'rtinchi darajaga ko'tariladi: 2⁴ = 16, (a³)⁴ = a¹², b⁴ o'zgarmaydi. Natija 16a¹²b⁴ bo'ladi. Javob: 16a¹²b⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-va-kasr-darajasi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#3a76a6f4"
+    },
+    {
+      "q": "(3/4)⁻² ifodaning qiymatini oddiy kasr ko'rinishida hisoblang.",
+      "v": [
+        "9/16",
+        "−16/9",
+        "16/9",
+        "4/3"
+      ],
+      "t": 2,
+      "izoh": "Manfiy ko'rsatkich kasrni ag'daradi: (3/4)⁻² = (4/3)². Endi surat va maxraj alohida kvadratga ko'tariladi: 16/9. Javob: 16/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-va-kasr-darajasi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#024cfaab"
+    },
+    {
+      "q": "Hisobni tezlashtirish uchun (0,5)⁴ · 2⁴ ko'paytmani bitta daraja sifatida yozing va qiymatini toping.",
+      "v": [
+        "1/16",
+        "1",
+        "16",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichlar bir xil bo'lgani uchun asoslarni ko'paytirish mumkin: (0,5 · 2)⁴ = 1⁴. Birning har qanday darajasi 1 ga teng. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-va-kasr-darajasi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#d3551a48"
+    },
+    {
+      "q": "Kvadrat shaklidagi gilamning tomoni 2·10² sm ga teng. Uning yuzasi necha kvadrat santimetr bo'ladi?",
+      "v": [
+        "2·10⁴ sm²",
+        "4·10³ sm²",
+        "8·10² sm²",
+        "4·10⁴ sm²"
+      ],
+      "t": 3,
+      "izoh": "Kvadrat yuzasi tomonning kvadratiga teng: (2·10²)² = 2² · (10²)². Koeffitsiyent ham kvadratga ko'tariladi: 4·10⁴. Javob: 4·10⁴ sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-va-kasr-darajasi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#43727d52"
+    },
+    {
+      "q": "(3x²y³)² · (2xy)³ ko'paytmani soddalashtirganda qanday bir had hosil bo'ladi?",
+      "v": [
+        "72x⁷y⁹",
+        "6x⁷y⁹",
+        "17x⁷y⁹",
+        "72x¹²y¹⁸"
+      ],
+      "t": 0,
+      "izoh": "Har bir qavsni alohida ko'taramiz: (3x²y³)² = 9x⁴y⁶ va (2xy)³ = 8x³y³. Ularni ko'paytiramiz: 9·8 = 72, x^(4+3) = x⁷, y^(6+3) = y⁹. Javob: 72x⁷y⁹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harfli-ifodani-soddalashtirish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#425dfd12"
+    },
+    {
+      "q": "a ≠ 0 va b ≠ 0 bo'lganda (a⁵b³) : (a²b⁷) bo'linmani manfiy ko'rsatkichsiz yozing.",
+      "v": [
+        "a³b⁴",
+        "b⁴/a³",
+        "a³/b⁴",
+        "a⁷/b¹⁰"
+      ],
+      "t": 2,
+      "izoh": "Har bir harf uchun ko'rsatkichlar ayiriladi: a^(5−2) = a³ va b^(3−7) = b⁻⁴. Manfiy ko'rsatkichli ko'paytuvchi maxrajga tushadi: a³/b⁴. Javob: a³/b⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harfli-ifodani-soddalashtirish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#92be8b42"
+    },
+    {
+      "q": "x ≠ 0 shartida (x³)⁴ : (x²)⁵ ifodani soddalashtirsak, qanday daraja qoladi?",
+      "v": [
+        "x²²",
+        "x²",
+        "x⁻²",
+        "x⁵"
+      ],
+      "t": 1,
+      "izoh": "Avval qavslarni ochamiz: (x³)⁴ = x¹² va (x²)⁵ = x¹⁰. Bo'linmada ko'rsatkichlar ayiriladi: x^(12−10) = x². Javob: x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harfli-ifodani-soddalashtirish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#b02ff76b"
+    },
+    {
+      "q": "m ≠ 0 bo'lganda (m⁻² · m⁵)³ ifodani soddalashtirib, natijani daraja shaklida yozing.",
+      "v": [
+        "m⁶",
+        "m²⁷",
+        "m⁻³⁰",
+        "m⁹"
+      ],
+      "t": 3,
+      "izoh": "Qavs ichida ko'rsatkichlar qo'shiladi: −2 + 5 = 3, ya'ni m³ hosil bo'ladi. So'ng (m³)³ = m^(3·3) = m⁹. Javob: m⁹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harfli-ifodani-soddalashtirish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#8e08682d"
+    },
+    {
+      "q": "a ≠ 0 bo'lganda (4a²)³ : (2a³)² ifodaning qiymati nimaga teng bo'ladi?",
+      "v": [
+        "16",
+        "32",
+        "16a¹²",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Qavslarni ochamiz: (4a²)³ = 64a⁶ va (2a³)² = 4a⁶. Bo'linmada 64 : 4 = 16, harfiy qism esa a⁶ : a⁶ = a⁰ = 1 bo'ladi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harfli-ifodani-soddalashtirish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#2aa76a7d"
+    },
+    {
+      "q": "a ≠ 0 va b ≠ 0 bo'lganda (a²b⁻³)⁻² ifodani manfiy ko'rsatkichsiz yozing.",
+      "v": [
+        "a⁴/b⁶",
+        "a⁴b⁶",
+        "b⁶/a⁴",
+        "1/(a⁴b⁶)"
+      ],
+      "t": 2,
+      "izoh": "Tashqi ko'rsatkichni har bir ko'paytuvchiga ko'paytiramiz: a^(2·(−2)) = a⁻⁴ va b^((−3)·(−2)) = b⁶. Manfiy ko'rsatkichli a maxrajga o'tadi: b⁶/a⁴. Javob: b⁶/a⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-korsatkichli-ifoda",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#2c827cdf"
+    },
+    {
+      "q": "5⁻³ · 5⁵ : 5⁻¹ ifodaning son qiymati nechaga teng bo'ladi?",
+      "v": [
+        "5",
+        "125",
+        "1/125",
+        "25"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichlar ustida amal bajaramiz: −3 + 5 − (−1) = −3 + 5 + 1 = 3. Demak ifoda 5³ ga, ya'ni 125 ga teng. Javob: 125.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-korsatkichli-ifoda",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#28519925"
+    },
+    {
+      "q": "(2⁻¹ + 4⁻¹)⁻¹ ifodaning qiymatini hisoblang va natijani kasr ko'rinishida bering.",
+      "v": [
+        "4/3",
+        "3/4",
+        "6",
+        "1/6"
+      ],
+      "t": 0,
+      "izoh": "Avval qavs ichini hisoblaymiz: 1/2 + 1/4 = 3/4. Endi butun qavs manfiy birinchi darajaga ko'tariladi, ya'ni kasr ag'dariladi: (3/4)⁻¹ = 4/3. Javob: 4/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "manfiy-korsatkichli-ifoda",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#2c0c0ef8"
+    },
+    {
+      "q": "x ≠ 0 va y ≠ 0 bo'lganda x⁻¹ + y⁻¹ yig'indisini bitta kasr ko'rinishida ifodalang.",
+      "v": [
+        "1/(x+y)",
+        "(xy)/(x+y)",
+        "(x+y)/(xy)",
+        "x+y"
+      ],
+      "t": 2,
+      "izoh": "Manfiy ko'rsatkichni kasrga aylantiramiz: 1/x + 1/y. Umumiy maxraj xy bo'ladi: y/(xy) + x/(xy) = (x+y)/(xy). Javob: (x+y)/(xy).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "manfiy-korsatkichli-ifoda",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#a15b9233"
+    },
+    {
+      "q": "Yer bilan Quyosh orasidagi o'rtacha masofa 149 600 000 km. Bu son standart ko'rinishda qanday yoziladi?",
+      "v": [
+        "14,96·10⁸ km",
+        "1,496·10⁸ km",
+        "1,496·10⁷ km",
+        "1,496·10⁹ km"
+      ],
+      "t": 1,
+      "izoh": "Standart ko'rinishda birinchi ko'paytuvchi 1 dan 10 gacha bo'lishi kerak, ya'ni 1,496 olinadi. Vergul chapga sakkiz xona surilgani uchun daraja 8 bo'ladi. Javob: 1,496·10⁸ km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "standart-korinishga-keltirish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#247f3fc0"
+    },
+    {
+      "q": "Virus zarrasining o'lchami 0,000000045 m ga teng. Uni standart ko'rinishda qanday yozamiz?",
+      "v": [
+        "4,5·10⁻⁷ m",
+        "4,5·10⁻⁹ m",
+        "4,5·10⁸ m",
+        "4,5·10⁻⁸ m"
+      ],
+      "t": 3,
+      "izoh": "Vergulni o'ngga sakkiz xona surib 4,5 sonini olamiz. Berilgan son birdan kichik bo'lgani uchun o'nning darajasi manfiy bo'ladi. Javob: 4,5·10⁻⁸ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "standart-korinishga-keltirish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#7949ad5c"
+    },
+    {
+      "q": "Statistika hisobotida aholi soni 3,7·10⁷ kishi deb ko'rsatilgan. Bu son oddiy yozuvda qanday bo'ladi?",
+      "v": [
+        "37 000 000",
+        "3 700 000",
+        "370 000 000",
+        "37 000"
+      ],
+      "t": 0,
+      "izoh": "10⁷ ko'paytuvchi vergulni o'ngga yetti xona suradi. 3,7 sonida vergul birinchi xonadan keyin turibdi, surgandan keyin 37 000 000 hosil bo'ladi. Javob: 37 000 000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "standart-korinishga-keltirish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#301581be"
+    },
+    {
+      "q": "Bir loyihaga davlat budjetidan 8,4·10¹¹ so'm ajratildi. Bu mablag' qanchani tashkil qiladi?",
+      "v": [
+        "84 mlrd so'm",
+        "8,4 mlrd so'm",
+        "840 mlrd so'm",
+        "8400 mlrd so'm"
+      ],
+      "t": 2,
+      "izoh": "8,4·10¹¹ = 840 000 000 000 so'm bo'ladi. Bir milliard 10⁹ ga teng, demak bu mablag' 840 milliard so'mni tashkil qiladi. Javob: 840 mlrd so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "standart-korinishga-keltirish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#ec7eef6d"
+    },
+    {
+      "q": "Zavodda bir detalning massasi 3·10⁻⁵ kg. 2·10⁸ ta detalning umumiy massasi qancha bo'ladi?",
+      "v": [
+        "600 kg",
+        "6000 kg",
+        "0,006 kg",
+        "5000 kg"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsiyentlar ko'paytiriladi, o'nning darajalari esa qo'shiladi: 3·2 = 6 va 10^(−5+8) = 10³. Natija 6·10³ = 6000 kg. Javob: 6000 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-korinishda-amal",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#95c29246"
+    },
+    {
+      "q": "Viloyatda 6·10⁷ dona g'isht tayyorlandi, bitta uy qurilishiga esa 3·10⁴ dona ketadi. Necha uyga yetadi?",
+      "v": [
+        "20 000 ta",
+        "200 ta",
+        "2·10¹¹ ta",
+        "2000 ta"
+      ],
+      "t": 3,
+      "izoh": "Bo'linmada koeffitsiyentlar bo'linadi, darajalar ayiriladi: 6 : 3 = 2 va 10^(7−4) = 10³. Natija 2·10³ = 2000 uy. Javob: 2000 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-korinishda-amal",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#8760efd0"
+    },
+    {
+      "q": "Ikki shaharning aholisi 1,2·10⁶ va 8·10⁵ kishini tashkil qiladi. Ularning umumiy aholisi qancha?",
+      "v": [
+        "2·10⁶ kishi",
+        "9,2·10⁶ kishi",
+        "1,28·10⁶ kishi",
+        "8,12·10¹¹ kishi"
+      ],
+      "t": 0,
+      "izoh": "Qo'shishdan oldin o'nning darajalarini tenglashtiramiz: 8·10⁵ = 0,8·10⁶. Endi 1,2·10⁶ + 0,8·10⁶ = 2·10⁶ kishi bo'ladi. Javob: 2·10⁶ kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-korinishda-amal",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#dfe3b4ba"
+    },
+    {
+      "q": "Laboratoriyada 4·10³ ta namuna bor, har birida 5·10⁴ ta hujayra mavjud. Hujayralarning umumiy soni qancha?",
+      "v": [
+        "9·10⁷ ta",
+        "2·10¹² ta",
+        "2·10⁸ ta",
+        "2·10⁷ ta"
+      ],
+      "t": 2,
+      "izoh": "Koeffitsiyentlarni ko'paytiramiz: 4·5 = 20, darajalarni qo'shamiz: 10^(3+4) = 10⁷. 20·10⁷ ni standart ko'rinishga keltiramiz: 2·10⁸. Javob: 2·10⁸ ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "standart-korinishda-amal",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#0cc557a8"
+    },
+    {
+      "q": "Katta sonlar bilan ishlaganda 7¹⁰⁰ sonining oxirgi raqamini aniqlash talab qilinadi. U qaysi raqam?",
+      "v": [
+        "7",
+        "1",
+        "9",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Yettining darajalari oxirgi raqami bo'yicha 7, 9, 3, 1 tartibida takrorlanadi, davr uzunligi to'rtga teng. 100 soni 4 ga qoldiqsiz bo'linadi, demak davrning oxirgi raqami olinadi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxirgi-raqam",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#312057c0"
+    },
+    {
+      "q": "2⁵⁰ sonining oxirgi raqamini davriylikdan foydalanib toping.",
+      "v": [
+        "2",
+        "8",
+        "6",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Ikkining darajalari 2, 4, 8, 6 raqamlari bilan tugaydi va davr to'rt qadamdan iborat. 50 ni 4 ga bo'lganda qoldiq 2 chiqadi, demak davrdagi ikkinchi raqam olinadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxirgi-raqam",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#80cd38c7"
+    },
+    {
+      "q": "Dastur birinchi kuni ekranga 3 sonini chiqaradi va har kuni oldingi sonni 3 ga ko'paytiradi. 55-kuni ekrandagi son qaysi raqam bilan tugaydi?",
+      "v": [
+        "7",
+        "3",
+        "9",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Birinchi kuni ekranda 3¹ turadi, shuning uchun 55-kuni son 3⁵⁵ bo'ladi. Uchning darajalari oxirgi raqami 3, 9, 7, 1 ketma-ketligini takrorlaydi, davr to'rt qadam. 55 ni 4 ga bo'lganda qoldiq 3 bo'ladi, demak davrdagi uchinchi raqam olinadi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxirgi-raqam",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#e09b7310"
+    },
+    {
+      "q": "4³³ sonining oxirgi raqami qaysi raqamga teng bo'ladi?",
+      "v": [
+        "6",
+        "2",
+        "4",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "To'rtning darajalari 4 va 6 raqamlari bilan navbatma-navbat tugaydi: toq darajada 4, juft darajada 6. 33 toq son, shuning uchun oxirgi raqam 4 bo'ladi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxirgi-raqam",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#9281b726"
+    },
+    {
+      "q": "Olimpiada masalasida 2¹⁰⁰ + 3¹⁰⁰ yig'indisining oxirgi raqamini topish so'ralgan. Bu qaysi raqam?",
+      "v": [
+        "5",
+        "7",
+        "9",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "2¹⁰⁰ uchun davr 2, 4, 8, 6 va 100 soni 4 ga qoldiqsiz bo'linadi, demak oxirgi raqam 6. 3¹⁰⁰ uchun davr 3, 9, 7, 1 va qoldiq yana nol, demak oxirgi raqam 1. Yig'indi 6 + 1 = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxirgi-raqam",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#8b67a1e1"
+    },
+    {
+      "q": "3¹⁰⁰ sonini 4 ga bo'lganda qanday qoldiq hosil bo'ladi?",
+      "v": [
+        "1",
+        "3",
+        "0",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "3² = 9 ni 4 ga bo'lganda qoldiq 1 chiqadi. Shuning uchun 3¹⁰⁰ = (3²)⁵⁰ sonining 4 ga bo'lgandagi qoldig'i 1⁵⁰ = 1 ga teng. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajaning-qoldigi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#3a2b0aa4"
+    },
+    {
+      "q": "3⁵⁰ sonini 7 ga bo'lgandagi qoldiqni toping va to'g'ri javobni tanlang.",
+      "v": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Uchning darajalarining 7 ga bo'lgandagi qoldiqlari 3, 2, 6, 4, 5, 1 tartibida takrorlanadi, davr olti qadam. 50 ni 6 ga bo'lganda qoldiq 2, demak davrdagi ikkinchi qiymat olinadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajaning-qoldigi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#5e227807"
+    },
+    {
+      "q": "Bugun payshanba kuni. 2⁵⁰ kundan keyin hafta qaysi kuniga to'g'ri keladi?",
+      "v": [
+        "Seshanba",
+        "Chorshanba",
+        "Dushanba",
+        "Yakshanba"
+      ],
+      "t": 2,
+      "izoh": "Hafta kuni 7 ga bo'lgandagi qoldiqqa bog'liq. 2³ = 8 ni 7 ga bo'lganda qoldiq 1, shuning uchun 2⁴⁸ = (2³)¹⁶ ning qoldig'i ham 1 bo'ladi. Qolgan 2² = 4, demak umumiy qoldiq 4. Payshanbadan to'rt kun keyin dushanba keladi. Javob: Dushanba.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajaning-qoldigi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#dfaa6441"
+    },
+    {
+      "q": "n natural son bo'lganda 4ⁿ + 2 yig'indisining 3 ga bo'linishi haqida qanday xulosa to'g'ri?",
+      "v": [
+        "Ha, har qanday natural n uchun bo'linadi",
+        "Yo'q, hech qachon bo'linmaydi",
+        "Faqat n juft bo'lganda bo'linadi",
+        "Faqat n toq bo'lganda bo'linadi"
+      ],
+      "t": 0,
+      "izoh": "4 ni 3 ga bo'lganda qoldiq 1 chiqadi, shuning uchun 4ⁿ ning qoldig'i ham har doim 1 bo'ladi. Unga 2 qo'shilsa qoldiqlar yig'indisi 3 ga aylanadi, ya'ni son 3 ga qoldiqsiz bo'linadi. Javob: Ha, har qanday natural n uchun bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajaning-qoldigi",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#25def8b6"
+    },
+    {
+      "q": "Manfiy ko'rsatkichli darajalarni taqqoslashda 5⁻³ va 5⁻² sonlaridan qaysi biri kattaroq?",
+      "v": [
+        "5⁻³",
+        "5⁻²",
+        "Ikkalasining qiymati bir xil",
+        "Manfiy ko'rsatkichli darajalarni taqqoslab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Bu sonlar 1/125 va 1/25 kasrlariga teng. Maxraji kichik bo'lgan kasr kattaroq, 25 esa 125 dan kichik. Demak 5⁻² katta bo'ladi. Javob: 5⁻².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqqoslash-umumiy-asos",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#ac783c80"
+    },
+    {
+      "q": "(1/2)³ va (1/2)⁵ darajalaridan qaysi biri kattaroq qiymatga ega bo'ladi?",
+      "v": [
+        "(1/2)⁵",
+        "Ular teng",
+        "Har ikkalasi 1 dan katta",
+        "(1/2)³"
+      ],
+      "t": 3,
+      "izoh": "Asos 0 bilan 1 orasida bo'lganda ko'rsatkich ortishi bilan daraja kamayadi: 1/8 kasri 1/32 kasridan katta. Demak (1/2)³ kattaroq. Javob: (1/2)³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqqoslash-umumiy-asos",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#3e21f56d"
+    },
+    {
+      "q": "8¹² va 4¹⁸ sonlarini umumiy asosga keltirib taqqoslang, natija qanday bo'ladi?",
+      "v": [
+        "Ular teng",
+        "8¹² katta",
+        "4¹⁸ katta",
+        "8¹² ikki barobar katta"
+      ],
+      "t": 0,
+      "izoh": "Ikkala sonni 2 asosiga keltiramiz: 8¹² = (2³)¹² = 2³⁶ va 4¹⁸ = (2²)¹⁸ = 2³⁶. Ko'rsatkichlar bir xil chiqdi, demak sonlar teng. Javob: Ular teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-umumiy-asos",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#8c91c418"
+    },
+    {
+      "q": "16¹⁰ va 2³⁵ sonlaridan qaysi biri katta va buni qanday asoslash mumkin?",
+      "v": [
+        "2³⁵ katta, chunki ko'rsatkichi katta",
+        "16¹⁰ = 2²⁰, demak 2³⁵ katta",
+        "16¹⁰ katta, chunki 16¹⁰ = 2⁴⁰",
+        "Ular teng, chunki 16 = 2⁴"
+      ],
+      "t": 2,
+      "izoh": "16 = 2⁴ bo'lgani uchun 16¹⁰ = (2⁴)¹⁰ = 2⁴⁰ bo'ladi. Endi bir xil asosli 2⁴⁰ va 2³⁵ ni taqqoslaymiz: asos birdan katta, shuning uchun ko'rsatkichi katta son kattaroq. Javob: 16¹⁰ katta, chunki 16¹⁰ = 2⁴⁰.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-umumiy-asos",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#a99a6e3c"
+    },
+    {
+      "q": "2³⁰ va 3²⁰ sonlarini taqqoslash uchun ularni umumiy ko'rsatkichga keltiring va xulosa qiling.",
+      "v": [
+        "2³⁰ katta",
+        "3²⁰ katta",
+        "Ular teng",
+        "Umumiy asosga keltirmasdan taqqoslab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichlarni tenglashtiramiz: 2³⁰ = (2³)¹⁰ = 8¹⁰ va 3²⁰ = (3²)¹⁰ = 9¹⁰. Ko'rsatkichlar teng bo'lgach asosi katta son kattaroq bo'ladi: 9¹⁰ > 8¹⁰. Javob: 3²⁰ katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-umumiy-korsatkich",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#b1358c9d"
+    },
+    {
+      "q": "5⁴⁰ va 4⁵⁰ sonlaridan qaysi biri katta, javob asosi bilan ko'rsatilsin.",
+      "v": [
+        "5⁴⁰, chunki asosi kichik bo'lsa ham ko'rsatkichi katta",
+        "Ular teng, chunki 5·40 = 4·50",
+        "5⁴⁰, chunki 5⁴ > 4⁵",
+        "4⁵⁰, chunki 1024¹⁰ > 625¹⁰"
+      ],
+      "t": 3,
+      "izoh": "Ikkala sonni o'ninchi darajaga keltiramiz: 5⁴⁰ = (5⁴)¹⁰ = 625¹⁰ va 4⁵⁰ = (4⁵)¹⁰ = 1024¹⁰. Ko'rsatkichlar teng bo'lgach asoslar taqqoslanadi, 1024 esa 625 dan katta. Javob: 4⁵⁰, chunki 1024¹⁰ > 625¹⁰.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-umumiy-korsatkich",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#959a5a3f"
+    },
+    {
+      "q": "Astronomik hisoblarda 2¹⁰⁰ va 10³⁰ sonlarini taqqoslash kerak bo'ldi. Qaysi biri kattaroq?",
+      "v": [
+        "2¹⁰⁰ katta",
+        "10³⁰ katta",
+        "Ular teng",
+        "Faqat kalkulyator yordamida aniqlanadi"
+      ],
+      "t": 0,
+      "izoh": "Ikkalasini ham o'ninchi darajaga keltiramiz: 2¹⁰⁰ = (2¹⁰)¹⁰ = 1024¹⁰ va 10³⁰ = (10³)¹⁰ = 1000¹⁰. Ko'rsatkichlar teng, asosi katta son kattaroq: 1024 > 1000. Javob: 2¹⁰⁰ katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-umumiy-korsatkich",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#d6f34db3"
+    },
+    {
+      "q": "3¹⁰⁰ va 5⁶⁰ sonlarini yigirmanchi darajali umumiy ko'rsatkich orqali taqqoslang.",
+      "v": [
+        "5⁶⁰ katta",
+        "Ular teng",
+        "3¹⁰⁰ katta",
+        "Har ikkalasi bir xil xonali son"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkichlarni 20 ga keltiramiz: 3¹⁰⁰ = (3⁵)²⁰ = 243²⁰ va 5⁶⁰ = (5³)²⁰ = 125²⁰. Ko'rsatkichlar bir xil bo'lgach asoslar taqqoslanadi: 243 > 125. Javob: 3¹⁰⁰ katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-umumiy-korsatkich",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#4b3dcb0e"
+    },
+    {
+      "q": "2⁴⁰, 3³⁰ va 4²⁰ sonlarini o'sish tartibida to'g'ri joylashtirgan qatorni tanlang.",
+      "v": [
+        "2⁴⁰ < 3³⁰ < 4²⁰",
+        "2⁴⁰ = 4²⁰ < 3³⁰",
+        "4²⁰ < 3³⁰ < 2⁴⁰",
+        "3³⁰ < 2⁴⁰ = 4²⁰"
+      ],
+      "t": 1,
+      "izoh": "Uchala sonni o'ninchi darajaga keltiramiz: 2⁴⁰ = 16¹⁰, 3³⁰ = 27¹⁰ va 4²⁰ = 16¹⁰. Birinchi va uchinchi sonlar teng, 27¹⁰ esa ulardan katta. Javob: 2⁴⁰ = 4²⁰ < 3³⁰.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajalarni-tartiblash",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#48eda4a3"
+    },
+    {
+      "q": "(0,5)³, (0,5)⁰ va (0,5)⁻² darajalarini kamayish tartibida joylashtiring.",
+      "v": [
+        "(0,5)³, (0,5)⁰, (0,5)⁻²",
+        "(0,5)⁰, (0,5)⁻², (0,5)³",
+        "(0,5)⁻², (0,5)³, (0,5)⁰",
+        "(0,5)⁻², (0,5)⁰, (0,5)³"
+      ],
+      "t": 3,
+      "izoh": "Qiymatlarni hisoblaymiz: (0,5)³ = 0,125, (0,5)⁰ = 1 va (0,5)⁻² = 4. Kamayish tartibi eng katta qiymatdan boshlanadi. Javob: (0,5)⁻², (0,5)⁰, (0,5)³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajalarni-tartiblash",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#2d410dd7"
+    },
+    {
+      "q": "a = 2⁻³, b = (−2)³ va c = 3⁻² bo'lsa, bu uchta sonni o'sish tartibida yozing.",
+      "v": [
+        "b < c < a",
+        "b < a < c",
+        "c < a < b",
+        "a < c < b"
+      ],
+      "t": 0,
+      "izoh": "Qiymatlarni topamiz: a = 1/8 = 0,125, b = −8 va c = 1/9 ≈ 0,111. Manfiy son eng kichigi, keyin 0,111 keladi, eng kattasi 0,125. Javob: b < c < a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajalarni-tartiblash",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#129444bb"
+    },
+    {
+      "q": "3ⁿ · 3⁵ = 3¹² tenglik o'rinli bo'lishi uchun n qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "60",
+        "17",
+        "7",
+        "2,4"
+      ],
+      "t": 2,
+      "izoh": "Chap tomonda ko'rsatkichlar qo'shiladi: 3^(n+5). Asoslar teng bo'lgani uchun ko'rsatkichlar tenglashtiriladi: n + 5 = 12, bundan n = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichni-topish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#0f6cc633"
+    },
+    {
+      "q": "Bitta hujayra har soatda ikkiga bo'linadi va oxirida ularning soni 512 taga yetdi. Necha soat o'tgan?",
+      "v": [
+        "8 soat",
+        "9 soat",
+        "10 soat",
+        "256 soat"
+      ],
+      "t": 1,
+      "izoh": "Bitta hujayradan boshlangan bo'linish n soatdan keyin 2ⁿ ta hujayra beradi. Demak 2ⁿ = 512, 512 = 2⁹ bo'lgani uchun n = 9. Javob: 9 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichni-topish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#0c6d610d"
+    },
+    {
+      "q": "(1/5)ⁿ = 125 tenglikni qanoatlantiruvchi n ning qiymatini toping.",
+      "v": [
+        "3",
+        "1/3",
+        "−125",
+        "−3"
+      ],
+      "t": 3,
+      "izoh": "Chap tomonni 5 asosida yozamiz: (1/5)ⁿ = 5⁻ⁿ. O'ng tomonda esa 125 = 5³. Asoslar teng bo'lgach −n = 3, bundan n = −3. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichni-topish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#45fc8cf1"
+    },
+    {
+      "q": "Ko'rsatkichli tenglama 5^(n+1) = 625 berilgan. Undan n ning qiymati nimaga teng?",
+      "v": [
+        "3",
+        "4",
+        "2",
+        "125"
+      ],
+      "t": 0,
+      "izoh": "625 sonini 5 asosida yozamiz: 625 = 5⁴. Asoslar teng bo'lgani uchun n + 1 = 4, bundan n = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichni-topish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#9d45ab11"
+    },
+    {
+      "q": "2^(n+2) + 2ⁿ yig'indisini ko'paytuvchilarga ajratganda qanday ifoda hosil bo'ladi?",
+      "v": [
+        "2·2ⁿ",
+        "4·2ⁿ",
+        "5·2ⁿ",
+        "2^(2n+2)"
+      ],
+      "t": 2,
+      "izoh": "Umumiy ko'paytuvchi 2ⁿ ni qavsdan chiqaramiz: 2^(n+2) = 2ⁿ · 2² = 4·2ⁿ. Demak yig'indi 2ⁿ(4 + 1) = 5·2ⁿ ga teng. Javob: 5·2ⁿ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daraja-ifodasini-kopaytuvchiga-ajratish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#af0122cd"
+    },
+    {
+      "q": "3^(n+1) − 3ⁿ ayirmasi qanday sodda ko'rinishga keladi?",
+      "v": [
+        "3ⁿ",
+        "2·3ⁿ",
+        "3",
+        "3^(2n+1)"
+      ],
+      "t": 1,
+      "izoh": "3^(n+1) = 3ⁿ · 3 ekanini hisobga olamiz. Demak ayirma 3ⁿ · 3 − 3ⁿ = 3ⁿ(3 − 1) = 2·3ⁿ ko'rinishiga keladi. Javob: 2·3ⁿ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daraja-ifodasini-kopaytuvchiga-ajratish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#3b472203"
+    },
+    {
+      "q": "(5¹⁰ − 5⁸) : 5⁸ ifodaning son qiymati nechaga teng bo'ladi?",
+      "v": [
+        "25",
+        "26",
+        "5",
+        "24"
+      ],
+      "t": 3,
+      "izoh": "Suratdan umumiy ko'paytuvchi 5⁸ ni qavsdan chiqaramiz: 5⁸(5² − 1). Bo'lgandan keyin 5² − 1 = 25 − 1 = 24 qoladi. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daraja-ifodasini-kopaytuvchiga-ajratish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#5c7b8e86"
+    },
+    {
+      "q": "2¹⁰ + 2¹⁰ yig'indisi qaysi darajaga teng ekanini aniqlang.",
+      "v": [
+        "2¹¹",
+        "2²⁰",
+        "2¹²",
+        "4²⁰"
+      ],
+      "t": 0,
+      "izoh": "Bir xil qo'shiluvchi ikki marta olingan, demak 2¹⁰ + 2¹⁰ = 2 · 2¹⁰. Endi 2¹ · 2¹⁰ = 2^(1+10) = 2¹¹ bo'ladi. Javob: 2¹¹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-ifodasini-kopaytuvchiga-ajratish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#c166eb31"
+    },
+    {
+      "q": "Bakteriya har 20 daqiqada ikkiga bo'linadi. Boshida 300 ta bo'lsa, 3 soatdan keyin nechta bo'ladi?",
+      "v": [
+        "2700 ta",
+        "5400 ta",
+        "153 600 ta",
+        "76 800 ta"
+      ],
+      "t": 2,
+      "izoh": "3 soat 180 daqiqaga teng, ya'ni 180 : 20 = 9 ta bo'linish sodir bo'ladi. Har bo'linishda son ikki barobar ortadi: 300 · 2⁹ = 300 · 512 = 153 600. Javob: 153 600 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ikkilanish-va-osish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#fd469056"
+    },
+    {
+      "q": "Nilufar bir varaq qog'ozni ikkiga qirqib, bo'laklarni ustma-ust qo'yadi. Bu amalni 10 marta takrorlasa, oxirida nechta qatlam hosil bo'ladi?",
+      "v": [
+        "20 ta",
+        "1024 ta",
+        "100 ta",
+        "512 ta"
+      ],
+      "t": 1,
+      "izoh": "Har qirqishda qatlamlar soni ikki barobar ortadi, boshida esa bitta qatlam bor edi. Demak 10 ta amaldan keyin 2¹⁰ = 1024 ta qatlam hosil bo'ladi. Javob: 1024 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ikkilanish-va-osish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#b1f53401"
+    },
+    {
+      "q": "Shaxmat taxtasining birinchi katagiga 1 dona, har keyingi katakka ikki barobar ko'p don qo'yiladi. 15-katakda nechta don bo'ladi?",
+      "v": [
+        "32 768 ta",
+        "30 ta",
+        "8192 ta",
+        "16 384 ta"
+      ],
+      "t": 3,
+      "izoh": "Birinchi katakda 2⁰ = 1 dona, ikkinchisida 2¹ dona bo'ladi, ya'ni katak raqamidan bittaga kam daraja olinadi. Demak 15-katakda 2¹⁴ = 16 384 dona bo'ladi. Javob: 16 384 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ikkilanish-va-osish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#f60ee336"
+    },
+    {
+      "q": "Ijtimoiy tarmoqdagi video har kuni oldingi kunga nisbatan 3 barobar ko'p ko'riladi. Birinchi kuni 200 marta ko'rilgan bo'lsa, beshinchi kuni qancha bo'ladi?",
+      "v": [
+        "16 200 marta",
+        "48 600 marta",
+        "5400 marta",
+        "3000 marta"
+      ],
+      "t": 0,
+      "izoh": "Birinchi kundan beshinchi kungacha to'rtta ko'payish bo'ladi, ya'ni ko'paytuvchi 3⁴ = 81 ga teng. Demak 200 · 81 = 16 200 marta ko'riladi. Javob: 16 200 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ikkilanish-va-osish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#4bfba381"
+    },
+    {
+      "q": "Kompyuter virusi har soatda zararlangan fayllar sonini 4 barobar oshiradi. Boshida 5 ta fayl zararlangan bo'lsa, 4 soatdan keyin nechta bo'ladi?",
+      "v": [
+        "320 ta",
+        "80 ta",
+        "1280 ta",
+        "5120 ta"
+      ],
+      "t": 2,
+      "izoh": "To'rt soat ichida ko'paytuvchi 4⁴ = 256 ga teng bo'ladi. Demak zararlangan fayllar soni 5 · 256 = 1280 taga yetadi. Javob: 1280 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ikkilanish-va-osish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#f9dec024"
+    },
+    {
+      "q": "Dorining organizmdagi miqdori har 6 soatda ikki barobar kamayadi. Boshida 480 mg bo'lsa, 24 soatdan keyin qancha qoladi?",
+      "v": [
+        "120 mg",
+        "30 mg",
+        "60 mg",
+        "20 mg"
+      ],
+      "t": 1,
+      "izoh": "24 soat ichida 24 : 6 = 4 marta kamayish yuz beradi. Demak miqdor 2⁴ = 16 marta kamayadi: 480 : 16 = 30 mg qoladi. Javob: 30 mg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kamayish-va-yemirilish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#0ae5b38a"
+    },
+    {
+      "q": "Radioaktiv moddaning yarim yemirilish davri 8 kunga teng. 400 g moddadan 32 kundan keyin qancha qoladi?",
+      "v": [
+        "50 g",
+        "100 g",
+        "12,5 g",
+        "25 g"
+      ],
+      "t": 3,
+      "izoh": "32 kunda 32 : 8 = 4 ta yarim yemirilish davri o'tadi. Har davrda massa ikki marta kamayadi, jami 2⁴ = 16 marta: 400 : 16 = 25 g. Javob: 25 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kamayish-va-yemirilish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#d64b635e"
+    },
+    {
+      "q": "Suv filtrining har bosqichi zararli moddaning faqat 1/10 qismini o'tkazadi. To'rt bosqichdan keyin qancha qism qoladi?",
+      "v": [
+        "10⁻⁴ qism",
+        "10⁻¹ qism",
+        "4/10 qism",
+        "10⁴ qism"
+      ],
+      "t": 0,
+      "izoh": "Har bosqich qoldiqni 10 marta kamaytiradi, to'rt bosqich esa 10⁴ marta kamaytiradi. Demak qoladigan ulush (1/10)⁴ = 10⁻⁴ ga teng bo'ladi. Javob: 10⁻⁴ qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-kamayish-va-yemirilish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#d41a048b"
+    },
+    {
+      "q": "Suvda yorug'lik har 3 metr chuqurlikda 2 marta kuchsizlanadi. 15 metr chuqurlikda u necha marta kuchsiz bo'ladi?",
+      "v": [
+        "10 marta",
+        "16 marta",
+        "32 marta",
+        "30 marta"
+      ],
+      "t": 2,
+      "izoh": "15 metrda 15 : 3 = 5 ta qatlam bor va har birida yorug'lik ikki marta kamayadi. Demak jami 2⁵ = 32 marta kuchsizlanadi. Javob: 32 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kamayish-va-yemirilish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#ba0c3a26"
+    },
+    {
+      "q": "Kub shaklidagi suv idishining qirrasi 3 marta uzaytirildi. Uning hajmi necha marta ortadi?",
+      "v": [
+        "9 marta",
+        "27 marta",
+        "3 marta",
+        "6 marta"
+      ],
+      "t": 1,
+      "izoh": "Kubning hajmi qirraning kubiga teng: V = a³. Qirra 3 marta ortsa hajm (3a)³ = 27a³ bo'ladi. Demak hajm 3³ = 27 marta ortadi. Javob: 27 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masshtab-va-hajm",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#5738a455"
+    },
+    {
+      "q": "Kvadrat shaklidagi ekin maydonining tomoni 4 marta qisqartirildi. Uning yuzasi necha marta kamayadi?",
+      "v": [
+        "4 marta",
+        "8 marta",
+        "64 marta",
+        "16 marta"
+      ],
+      "t": 3,
+      "izoh": "Kvadrat yuzasi tomonning kvadratiga teng. Tomon 4 marta kichraysa yuza 4² = 16 marta kamayadi. Javob: 16 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masshtab-va-hajm",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#f8a74228"
+    },
+    {
+      "q": "Sharsimon idishning radiusi 2 marta oshirildi. Uning hajmi necha marta ortadi?",
+      "v": [
+        "8 marta",
+        "2 marta",
+        "4 marta",
+        "6 marta"
+      ],
+      "t": 0,
+      "izoh": "Shar hajmi radiusning kubiga proporsional: V = (4/3)πr³. Radius 2 marta ortsa hajm 2³ = 8 marta ortadi. Javob: 8 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masshtab-va-hajm",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#7fb20248"
+    },
+    {
+      "q": "Kubik shaklidagi qutining qirrasi 10² mm ga teng. Uning hajmi necha kubik millimetr bo'ladi?",
+      "v": [
+        "10⁵ mm³",
+        "3·10² mm³",
+        "10⁶ mm³",
+        "10⁸ mm³"
+      ],
+      "t": 2,
+      "izoh": "Kub hajmi qirraning kubiga teng: (10²)³. Darajani darajaga ko'targanda ko'rsatkichlar ko'paytiriladi: 10^(2·3) = 10⁶. Javob: 10⁶ mm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-masshtab-va-hajm",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#ca906c4c"
+    },
+    {
+      "q": "Xotira hisobida 1 KB = 2¹⁰ bayt deb olinadi. Unda 2⁶ KB necha baytga teng bo'ladi?",
+      "v": [
+        "2⁶⁰ bayt",
+        "2¹⁶ bayt",
+        "2⁴ bayt",
+        "2³⁰ bayt"
+      ],
+      "t": 1,
+      "izoh": "2⁶ KB hajmi 2⁶ · 2¹⁰ bayt bo'ladi. Bir xil asosli darajalar ko'paytmasida ko'rsatkichlar qo'shiladi: 2^(6+10) = 2¹⁶. Javob: 2¹⁶ bayt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-xotira-va-variantlar",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#f830586f"
+    },
+    {
+      "q": "Kompyuterda 1 GB = 2³⁰ bayt va 1 MB = 2²⁰ bayt deb qabul qilingan. Bir gigabayt necha megabaytga teng?",
+      "v": [
+        "10 MB",
+        "100 MB",
+        "512 MB",
+        "1024 MB"
+      ],
+      "t": 3,
+      "izoh": "Gigabaytni megabaytga bo'lamiz: 2³⁰ : 2²⁰ = 2^(30−20) = 2¹⁰. Ikkining o'ninchi darajasi 1024 ga teng. Javob: 1024 MB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-xotira-va-variantlar",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#78874ed3"
+    },
+    {
+      "q": "Xotira 32 ta blokdan iborat va har bir blok 128 bayt joy egallaydi. Umumiy hajmni 2 asosli daraja shaklida yozing.",
+      "v": [
+        "2¹²",
+        "2⁹",
+        "2³⁵",
+        "2¹¹"
+      ],
+      "t": 0,
+      "izoh": "Ikkala sonni 2 asosida yozamiz: 32 = 2⁵ va 128 = 2⁷. Umumiy hajm 2⁵ · 2⁷ = 2^(5+7) = 2¹² bayt bo'ladi. Javob: 2¹².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-xotira-va-variantlar",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#04001048"
+    },
+    {
+      "q": "Velosiped qulfining paroli 4 ta raqamdan iborat, har bir o'ringa 10 ta raqamdan biri qo'yiladi. Nechta parol tuzish mumkin?",
+      "v": [
+        "5040 ta",
+        "40 ta",
+        "10 000 ta",
+        "1000 ta"
+      ],
+      "t": 2,
+      "izoh": "Har bir o'rin uchun 10 ta tanlov bor va o'rinlar soni 4 ta, raqamlar takrorlanishi mumkin. Umumiy variantlar soni 10 · 10 · 10 · 10 = 10⁴ = 10 000. Javob: 10 000 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-xotira-va-variantlar",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#fa57729d"
+    },
+    {
+      "q": "2¹⁰ ≈ 10³ taqribiy tenglikdan foydalanib 2⁵⁰ sonining kattalik tartibini baholang.",
+      "v": [
+        "≈ 10⁵",
+        "≈ 10¹⁵",
+        "≈ 10²⁵",
+        "≈ 10¹⁰"
+      ],
+      "t": 1,
+      "izoh": "2⁵⁰ ni o'ninchi darajaning darajasi sifatida yozamiz: 2⁵⁰ = (2¹⁰)⁵. Har bir 2¹⁰ ni 10³ bilan almashtiramiz: (10³)⁵ = 10¹⁵. Javob: ≈ 10¹⁵.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kattalik-tartibini-baholash",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#b3ee7a26"
+    },
+    {
+      "q": "2¹⁰ = 1024 ekanidan foydalanib 2²⁰ sonining taxminiy qiymatini ayting.",
+      "v": [
+        "≈ 2 million",
+        "≈ 100 ming",
+        "≈ 20 ming",
+        "≈ 1 million"
+      ],
+      "t": 3,
+      "izoh": "2²⁰ = (2¹⁰)² = 1024² bo'ladi. Bu son 1000² = 10⁶ dan bir oz kattaroq, ya'ni taxminan bir millionga teng. Javob: ≈ 1 million.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kattalik-tartibini-baholash",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#c9118869"
+    },
+    {
+      "q": "Xotira hajmini baholashda 2⁴⁰ va 10¹² sonlarini taqqoslash kerak bo'ldi. Qaysi biri kattaroq?",
+      "v": [
+        "2⁴⁰ katta",
+        "10¹² katta",
+        "Ular teng",
+        "Taqqoslash uchun ma'lumot yetarli emas"
+      ],
+      "t": 0,
+      "izoh": "Ikkalasini to'rtinchi darajaga keltiramiz: 2⁴⁰ = (2¹⁰)⁴ = 1024⁴ va 10¹² = (10³)⁴ = 1000⁴. Ko'rsatkichlar bir xil, asos 1024 esa 1000 dan katta. Javob: 2⁴⁰ katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kattalik-tartibini-baholash",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#5e97997d"
+    },
+    {
+      "q": "Quyidagi tengliklardan qaysi biri xato: a⁵ · a³ = a⁸, (a⁵)³ = a¹⁵, a⁵ + a³ = a⁸ yoki a⁵ : a³ = a²?",
+      "v": [
+        "a⁵ · a³ = a⁸",
+        "(a⁵)³ = a¹⁵",
+        "a⁵ + a³ = a⁸",
+        "a⁵ : a³ = a²"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytmada ko'rsatkichlar qo'shiladi, bo'linmada ayiriladi, darajani darajaga ko'targanda ko'paytiriladi — bu uchtasi to'g'ri yozilgan. Qo'shish uchun esa bunday qoida yo'q: a⁵ + a³ ni bitta darajaga aylantirib bo'lmaydi. Javob: a⁵ + a³ = a⁸.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xato-tenglikni-topish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#2f1e2286"
+    },
+    {
+      "q": "Qaysi tenglik noto'g'ri: (2a)³ = 8a³, (a + b)² = a² + b², (a²)⁴ = a⁸ yoki a ≠ 0 bo'lganda a⁰ = 1?",
+      "v": [
+        "(2a)³ = 8a³",
+        "(a + b)² = a² + b²",
+        "(a²)⁴ = a⁸",
+        "a⁰ = 1 (a ≠ 0)"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytmaning darajasi har bir ko'paytuvchiga tarqaladi, lekin yig'indining darajasi shunday tarqalmaydi. To'g'ri formula (a + b)² = a² + 2ab + b² ko'rinishida bo'ladi. Javob: (a + b)² = a² + b².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xato-tenglikni-topish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#5b3b235b"
+    },
+    {
+      "q": "3⁻² darajaning qiymati qaysi yozuvda to'g'ri ko'rsatilgan?",
+      "v": [
+        "3⁻² = −9",
+        "3⁻² = −1/9",
+        "3⁻² = 6",
+        "3⁻² = 1/9"
+      ],
+      "t": 3,
+      "izoh": "Manfiy ko'rsatkich sonni manfiy qilmaydi, balki uning teskarisini oladi: 3⁻² = 1/3². Uchning kvadrati 9 ga teng, demak natija 1/9 bo'ladi. Javob: 3⁻² = 1/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xato-tenglikni-topish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#032260cb"
+    },
+    {
+      "q": "O'quvchi (5³)² ifodani soddalashtirib 5⁵ deb yozdi. Uning xatosi nimadan iborat?",
+      "v": [
+        "Ko'rsatkichlar qo'shilgan, aslida ko'paytirilishi kerak edi",
+        "Asoslar qo'shilgan",
+        "Ko'rsatkichlar ko'paytirilgan, aslida qo'shilishi kerak edi",
+        "Xato yo'q, yozuv to'g'ri"
+      ],
+      "t": 0,
+      "izoh": "Darajani darajaga ko'targanda ko'rsatkichlar ko'paytiriladi, qo'shilmaydi. To'g'ri natija 5^(3·2) = 5⁶ bo'lishi kerak edi. Javob: Ko'rsatkichlar qo'shilgan, aslida ko'paytirilishi kerak edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xato-tenglikni-topish",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#bb4a1f71"
+    },
+    {
+      "q": "Bir varaq qog'ozning qalinligi 10⁻⁴ m ga teng. 500 varaqli dastaning qalinligi necha santimetr bo'ladi?",
+      "v": [
+        "0,5 sm",
+        "50 sm",
+        "5 sm",
+        "0,05 sm"
+      ],
+      "t": 2,
+      "izoh": "Dasta qalinligi 500 · 10⁻⁴ = 5·10⁻² m ga teng. Bir metrda 100 santimetr bor, demak 5·10⁻² m aynan 5 sm bo'ladi. Javob: 5 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-mikro-olcham",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#347ebf90"
+    },
+    {
+      "q": "Bir mikron 10⁻⁶ metrga teng. Chang zarrasining 25 mikronlik o'lchami metrda qanday yoziladi?",
+      "v": [
+        "2,5·10⁻⁷ m",
+        "2,5·10⁻⁵ m",
+        "2,5·10⁻⁴ m",
+        "2,5·10⁻⁶ m"
+      ],
+      "t": 1,
+      "izoh": "25 mikron 25 · 10⁻⁶ m ga teng. Standart ko'rinishga keltiramiz: 25 · 10⁻⁶ = 2,5 · 10⁻⁵ m. Javob: 2,5·10⁻⁵ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-mikro-olcham",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#7424ea72"
+    },
+    {
+      "q": "Qizil qon tanachasining diametri 7·10⁻⁶ m. Ulardan 1000 tasi yonma-yon qo'yilsa, uzunlik necha millimetr bo'ladi?",
+      "v": [
+        "0,7 mm",
+        "70 mm",
+        "0,07 mm",
+        "7 mm"
+      ],
+      "t": 3,
+      "izoh": "1000 soni 10³ ga teng, demak umumiy uzunlik 7·10⁻⁶ · 10³ = 7·10⁻³ m bo'ladi. Bir metrda 1000 millimetr bor, shuning uchun 7·10⁻³ m aynan 7 mm. Javob: 7 mm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-mikro-olcham",
+      "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja#0544ffd3"
+    }
+  ]
+}

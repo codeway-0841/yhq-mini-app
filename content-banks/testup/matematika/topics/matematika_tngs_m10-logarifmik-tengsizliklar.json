@@ -1,0 +1,1609 @@
+{
+  "nom": "Logarifmik tengsizliklar",
+  "bolim": "Tengsizliklar",
+  "blok": "tngs",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Quyidagi log₂(x − 3) < 4 logarifmik tengsizlikni yeching va yechimlar to'plamini oraliq ko'rinishida yozing.",
+      "v": [
+        "(3; 19)",
+        "(−∞; 19)",
+        "(3; 16)",
+        "(19; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Avval aniqlanish sohasi: x − 3 > 0, ya'ni x > 3. Asos 2 > 1 bo'lgani uchun ishora saqlanadi: x − 3 < 2⁴ = 16, bundan x < 19. Ikki shartni kesishtiramiz. Javob: (3; 19).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-katta-1-oddiy",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#9806bb35"
+    },
+    {
+      "q": "log₃(2x + 1) ≥ 2 tengsizlikni yeching va yechim to'plamini oraliq ko'rinishida ifodalang.",
+      "v": [
+        "(4; +∞)",
+        "[2,5; +∞)",
+        "[4; +∞)",
+        "(−0,5; 4]"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi: 2x + 1 > 0, ya'ni x > −0,5. Asos 3 > 1, shuning uchun 2x + 1 ≥ 3² = 9. Bundan 2x ≥ 8 va x ≥ 4. Tengsizlik qat'iy emas, shuning uchun 4 chegara kiritiladi. Javob: [4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-katta-1-oddiy",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#f246f5ae"
+    },
+    {
+      "q": "log₅(3x − 2) ≤ 1 tengsizlikni qanoatlantiruvchi barcha x larning to'plamini toping.",
+      "v": [
+        "(−∞; 7/3]",
+        "(2/3; 7/3]",
+        "[2/3; 7/3]",
+        "(2/3; 5/3]"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi: 3x − 2 > 0, demak x > 2/3 va bu chegara oraliqqa kirmaydi. Asos 5 > 1 bo'lgani uchun 3x − 2 ≤ 5¹ = 5, bundan 3x ≤ 7 va x ≤ 7/3. Ikkalasini birlashtiramiz. Javob: (2/3; 7/3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-katta-1-oddiy",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#cd44e2c2"
+    },
+    {
+      "q": "Laboratoriya o'lchovida olingan kattalik uchun log₄(x + 5) > 3 sharti bajarilishi talab qilinadi. Bu shartni qanoatlantiruvchi x larning oralig'ini ko'rsating.",
+      "v": [
+        "(−5; 59)",
+        "(7; +∞)",
+        "(59; +∞)",
+        "(59; 64)"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi: x + 5 > 0, ya'ni x > −5. Asos 4 > 1, shuning uchun x + 5 > 4³ = 64. Bundan x > 59 kelib chiqadi va bu aniqlanish sohasi ichida yotadi. Javob: (59; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-katta-1-oddiy",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#3f93066a"
+    },
+    {
+      "q": "log₀,₅(x − 1) > 2 tengsizlikni yeching; asos birdan kichik bo'lgani uchun ishora o'zgarishiga alohida e'tibor bering.",
+      "v": [
+        "(1,25; +∞)",
+        "(1; 1,25)",
+        "(1; 2)",
+        "(−∞; 1,25)"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi: x − 1 > 0, ya'ni x > 1. Asos 0,5 birdan kichik, shuning uchun logarifmni yo'qotganda ishora teskarisiga aylanadi: x − 1 < 0,5² = 0,25. Bundan x < 1,25. Javob: (1; 1,25).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-kichik-1-ishora",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#e0a2cb07"
+    },
+    {
+      "q": "log₁/₃(2x − 4) ≥ −1 tengsizlikning yechimini topib, uni oraliq ko'rinishida yozing.",
+      "v": [
+        "(2; 3,5]",
+        "[3,5; +∞)",
+        "(−∞; 3,5]",
+        "Yechimi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi: 2x − 4 > 0, demak x > 2. Asos 1/3 birdan kichik, shuning uchun ishora almashadi: 2x − 4 ≤ (1/3)^(−1) = 3. Bundan 2x ≤ 7 va x ≤ 3,5. Javob: (2; 3,5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-kichik-1-ishora",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#fc60c825"
+    },
+    {
+      "q": "log₀,₂(x + 3) < 1 tengsizlikni qanoatlantiruvchi x larning to'plamini aniqlang.",
+      "v": [
+        "(−3; −2,8)",
+        "(−∞; −2,8)",
+        "(−2,8; +∞)",
+        "(−3; 2)"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi: x + 3 > 0, ya'ni x > −3. Asos 0,2 birdan kichik, shuning uchun ishora teskari bo'ladi: x + 3 > 0,2¹ = 0,2. Bundan x > −2,8, bu esa x > −3 shartini o'z ichiga oladi. Javob: (−2,8; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-kichik-1-ishora",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#75795034"
+    },
+    {
+      "q": "log₇(x² − 9) ifodasi qatnashgan tengsizlik berilgan. Bu logarifm mavjud bo'lishi uchun x qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "(−3; 3)",
+        "(3; +∞)",
+        "(−∞; −3] ∪ [3; +∞)",
+        "(−∞; −3) ∪ (3; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Logarifm ostidagi ifoda qat'iy musbat bo'lishi shart: x² − 9 > 0. Buni (x − 3)(x + 3) > 0 ko'rinishida yozamiz. Intervallar usuli bilan x < −3 yoki x > 3 chiqadi; chegaralar kirmaydi, chunki ularda ifoda nolga teng. Javob: (−∞; −3) ∪ (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#1a80505d"
+    },
+    {
+      "q": "log₂(6 − x) + log₂(x + 2) ifodasining aniqlanish sohasini toping va uni oraliq ko'rinishida yozing.",
+      "v": [
+        "(−6; 2)",
+        "(−2; 6)",
+        "[−2; 6]",
+        "(−∞; −2) ∪ (6; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Har ikkala logarifm ostidagi ifoda musbat bo'lishi kerak. Birinchisidan 6 − x > 0, ya'ni x < 6. Ikkinchisidan x + 2 > 0, ya'ni x > −2. Ikki shartni birga bajarilishini talab qilamiz. Javob: (−2; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#f0b357fe"
+    },
+    {
+      "q": "logₓ₋₂(x + 4) ifodasi ma'noga ega bo'lishi uchun x qanday shartlarni bir vaqtda qanoatlantirishi kerak?",
+      "v": [
+        "(2; +∞)",
+        "(−4; 2) ∪ (2; +∞)",
+        "(2; 3) ∪ (3; +∞)",
+        "(2; 3)"
+      ],
+      "t": 2,
+      "izoh": "Asos uchun uchta shart bor: x − 2 > 0 va x − 2 ≠ 1, ya'ni x > 2 va x ≠ 3. Logarifm ostidagi ifoda uchun x + 4 > 0, ya'ni x > −4, bu esa x > 2 dan avtomatik kelib chiqadi. Barcha shartlarni birlashtiramiz. Javob: (2; 3) ∪ (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#bbcff5e7"
+    },
+    {
+      "q": "log₃(2x − 1) > log₃(x + 4) tengsizlikning yechimlar to'plamini toping va oraliq ko'rinishida yozing.",
+      "v": [
+        "(5; +∞)",
+        "(0,5; 5)",
+        "(−∞; 5)",
+        "(0,5; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi: 2x − 1 > 0 dan x > 0,5, hamda x + 4 > 0 dan x > −4; kuchliroq shart x > 0,5. Asos 3 > 1, shuning uchun logarifmlarni tashlaganda ishora saqlanadi: 2x − 1 > x + 4, bundan x > 5. Javob: (5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-logarifm-a>1",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#e2d8ca21"
+    },
+    {
+      "q": "log₄(x + 7) ≤ log₄(3x − 5) tengsizlikni yeching va yechimni oraliq ko'rinishida ifodalang.",
+      "v": [
+        "(5/3; 6]",
+        "[6; +∞)",
+        "[−7; 6]",
+        "(5/3; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi: 3x − 5 > 0 dan x > 5/3 va x + 7 > 0 dan x > −7; kuchliroq shart x > 5/3. Asos 4 > 1 bo'lgani uchun x + 7 ≤ 3x − 5. Bundan 12 ≤ 2x va x ≥ 6, bu esa aniqlanish sohasiga to'liq kiradi. Javob: [6; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-logarifm-a>1",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#9c4b4dc1"
+    },
+    {
+      "q": "log₀,₃(x + 2) < log₀,₃(5 − x) tengsizlikning barcha yechimlarini aniqlab, oraliq ko'rinishida yozing.",
+      "v": [
+        "(−2; 1,5)",
+        "(1,5; +∞)",
+        "(−2; 5)",
+        "(1,5; 5)"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi: x + 2 > 0 va 5 − x > 0, ya'ni −2 < x < 5. Asos 0,3 birdan kichik, shuning uchun logarifmlarni tashlaganda ishora almashadi: x + 2 > 5 − x. Bundan 2x > 3 va x > 1,5. Aniqlanish sohasi bilan kesishtiramiz. Javob: (1,5; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-logarifm-a<1",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#4b591a27"
+    },
+    {
+      "q": "log₁/₂(3x − 6) ≥ log₁/₂(x + 2) tengsizlikni qanoatlantiruvchi x larning to'plamini toping.",
+      "v": [
+        "[4; +∞)",
+        "(−2; 4]",
+        "(2; 4]",
+        "(2; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi: 3x − 6 > 0 dan x > 2, hamda x + 2 > 0 dan x > −2; kuchliroq shart x > 2. Asos 1/2 birdan kichik, shuning uchun ishora teskarisiga aylanadi: 3x − 6 ≤ x + 2. Bundan 2x ≤ 8 va x ≤ 4. Javob: (2; 4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-logarifm-a<1",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#42f910b7"
+    },
+    {
+      "q": "log₂(x − 1) + log₂(x + 1) < 3 tengsizlikni yeching va yechimni oraliq ko'rinishida yozing.",
+      "v": [
+        "(−3; 3)",
+        "(1; 3)",
+        "(1; 9)",
+        "(−3; −1) ∪ (1; 3)"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi har bir logarifmdan alohida olinadi: x − 1 > 0 va x + 1 > 0, ya'ni x > 1. Yig'indini bitta logarifmga keltiramiz: log₂((x − 1)(x + 1)) < 3, bundan x² − 1 < 2³ = 8. Demak x² < 9 va −3 < x < 3. Aniqlanish sohasi bilan kesishtiramiz. Javob: (1; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-asosga-keltirish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#10c14fa0"
+    },
+    {
+      "q": "log₅(x + 3) + log₅(x − 1) ≤ 1 tengsizlikning yechimlar oralig'ini aniqlang.",
+      "v": [
+        "[−4; 2]",
+        "(1; 2)",
+        "[1; 2]",
+        "(1; 2]"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi: x + 3 > 0 va x − 1 > 0, ya'ni x > 1. Logarifmlar yig'indisini birlashtiramiz: (x + 3)(x − 1) ≤ 5, bundan x² + 2x − 8 ≤ 0. Ko'paytuvchilarga ajratsak (x + 4)(x − 2) ≤ 0, demak −4 ≤ x ≤ 2. Aniqlanish sohasi bilan kesishtirgach chap chegara ochiq qoladi. Javob: (1; 2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-asosga-keltirish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#28122c3b"
+    },
+    {
+      "q": "log₃(x + 6) − log₃(x − 2) > 1 tengsizlikni yeching va yechim to'plamini ko'rsating.",
+      "v": [
+        "(2; 6)",
+        "(6; +∞)",
+        "(−6; 6)",
+        "(2; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi: x + 6 > 0 va x − 2 > 0, ya'ni x > 2. Ayirmani bitta logarifmga keltiramiz: log₃((x + 6)/(x − 2)) > 1, bundan (x + 6)/(x − 2) > 3. Maxraj musbat bo'lgani uchun x + 6 > 3x − 6, ya'ni 2x < 12 va x < 6. Javob: (2; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-asosga-keltirish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#5b265674"
+    },
+    {
+      "q": "(log₂x)² − 5·log₂x + 6 < 0 tengsizlikni t = log₂x almashtirishdan foydalanib yeching.",
+      "v": [
+        "(2; 3)",
+        "(−∞; 4) ∪ (8; +∞)",
+        "(4; 8)",
+        "[4; 8]"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi x > 0. t = log₂x deb belgilaymiz: t² − 5t + 6 < 0, ya'ni (t − 2)(t − 3) < 0 va 2 < t < 3. Endi teskari almashtiramiz: 2 < log₂x < 3. Asos 2 > 1 bo'lgani uchun 2² < x < 2³. Javob: (4; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-almashtirish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#dac6d553"
+    },
+    {
+      "q": "(lg x)² − 3·lg x − 4 ≥ 0 tengsizlikni qanoatlantiruvchi musbat x larning to'plamini toping.",
+      "v": [
+        "[0,1; 10000]",
+        "(0; 0,1) ∪ (10000; +∞)",
+        "[−1; 4]",
+        "(0; 0,1] ∪ [10000; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi x > 0. t = lg x almashtirish: t² − 3t − 4 ≥ 0, ya'ni (t + 1)(t − 4) ≥ 0. Bundan t ≤ −1 yoki t ≥ 4. Birinchi holda lg x ≤ −1, demak 0 < x ≤ 0,1; ikkinchi holda lg x ≥ 4, demak x ≥ 10000. Javob: (0; 0,1] ∪ [10000; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-almashtirish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#f0f7de27"
+    },
+    {
+      "q": "(log₃x)² ≤ 4 tengsizlikning barcha yechimlarini topib, oraliq ko'rinishida yozing.",
+      "v": [
+        "[1/9; 9]",
+        "[−2; 2]",
+        "(0; 9]",
+        "[1/9; 9)"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi x > 0. t = log₃x deb olsak, t² ≤ 4, ya'ni −2 ≤ t ≤ 2. Demak −2 ≤ log₃x ≤ 2. Asos 3 > 1 bo'lgani uchun 3^(−2) ≤ x ≤ 3², ya'ni 1/9 ≤ x ≤ 9. Javob: [1/9; 9].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-almashtirish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#e09471fb"
+    },
+    {
+      "q": "Ilmiy hisob-kitobda (ln x)² − ln x − 2 > 0 shartini qanoatlantiruvchi musbat x qiymatlari kerak bo'ldi; shu shartning yechimini toping.",
+      "v": [
+        "(1/e; e²)",
+        "(0; 1/e) ∪ (e²; +∞)",
+        "(0; e²)",
+        "(−1; 2)"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi x > 0. t = ln x almashtirishdan so'ng t² − t − 2 > 0, ya'ni (t + 1)(t − 2) > 0. Bundan t < −1 yoki t > 2. Birinchi holda ln x < −1, demak 0 < x < e^(−1) = 1/e; ikkinchi holda ln x > 2, demak x > e². Javob: (0; 1/e) ∪ (e²; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-almashtirish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#c1b13aaa"
+    },
+    {
+      "q": "(log₄x)² − 2·log₄x − 3 ≤ 0 tengsizlikning yechim to'plamini oraliq ko'rinishida ko'rsating.",
+      "v": [
+        "[0,25; 64]",
+        "[−1; 3]",
+        "(0; 64]",
+        "[0,25; 64)"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi x > 0. t = log₄x deb olsak, t² − 2t − 3 ≤ 0, ya'ni (t + 1)(t − 3) ≤ 0 va −1 ≤ t ≤ 3. Teskari almashtiramiz: −1 ≤ log₄x ≤ 3. Asos 4 > 1 bo'lgani uchun 4^(−1) ≤ x ≤ 4³, ya'ni 0,25 ≤ x ≤ 64. Javob: [0,25; 64].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-almashtirish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#826ae3cc"
+    },
+    {
+      "q": "lg(2x + 6) ≤ 1 tengsizlikni yeching va yechim to'plamini oraliq ko'rinishida yozing.",
+      "v": [
+        "(−∞; 2]",
+        "[−3; 2]",
+        "(−3; 2]",
+        "(−3; 5]"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi: 2x + 6 > 0, ya'ni x > −3 va bu chegara oraliqqa kirmaydi. O'nlik logarifm asosi 10 > 1, shuning uchun 2x + 6 ≤ 10¹ = 10. Bundan 2x ≤ 4 va x ≤ 2. Javob: (−3; 2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg-oddiy-tengsizlik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#d99a68dd"
+    },
+    {
+      "q": "lg(x² − 3x) < 1 tengsizlikning yechimlar to'plamini aniqlab, ikki oraliq birlashmasi ko'rinishida yozing.",
+      "v": [
+        "(−2; 5)",
+        "(−∞; 0) ∪ (3; +∞)",
+        "(0; 3)",
+        "(−2; 0) ∪ (3; 5)"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi: x² − 3x > 0, ya'ni x < 0 yoki x > 3. Asos 10 > 1 bo'lgani uchun x² − 3x < 10, bundan x² − 3x − 10 < 0 va (x + 2)(x − 5) < 0, demak −2 < x < 5. Ikki natijani kesishtiramiz. Javob: (−2; 0) ∪ (3; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "lg-oddiy-tengsizlik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#92e198aa"
+    },
+    {
+      "q": "Hisob-kitobda lg(5 − 2x) > 0 sharti berilgan; shu shartni qanoatlantiruvchi x larning oralig'ini toping.",
+      "v": [
+        "(2; 2,5)",
+        "(−∞; 2)",
+        "(−∞; 2,5)",
+        "(2; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi: 5 − 2x > 0, ya'ni x < 2,5. Asos 10 > 1, shuning uchun 5 − 2x > 10⁰ = 1. Bundan −2x > −4 va manfiy songa bo'lganda ishora almashib x < 2 chiqadi. Bu natija aniqlanish sohasi ichida yotadi. Javob: (−∞; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lg-oddiy-tengsizlik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#e75d715d"
+    },
+    {
+      "q": "lg(3 − x) ≥ 2 tengsizlikni qanoatlantiruvchi x larning to'plamini oraliq ko'rinishida yozing.",
+      "v": [
+        "[−97; 3)",
+        "(−∞; 97]",
+        "[97; +∞)",
+        "(−∞; −97]"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi: 3 − x > 0, ya'ni x < 3. Asos 10 > 1 bo'lgani uchun 3 − x ≥ 10² = 100. Bundan −x ≥ 97 va manfiy songa ko'paytirganda ishora almashib x ≤ −97 hosil bo'ladi. Bu aniqlanish sohasiga to'liq kiradi. Javob: (−∞; −97].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg-oddiy-tengsizlik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#df35112c"
+    },
+    {
+      "q": "lg(x + 2) + lg(x − 2) < lg 21 tengsizlikni yeching va yechimni oraliq ko'rinishida yozing.",
+      "v": [
+        "(−5; 5)",
+        "(2; 21)",
+        "(2; 5)",
+        "(−5; −2) ∪ (2; 5)"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi har bir logarifmdan olinadi: x + 2 > 0 va x − 2 > 0, ya'ni x > 2. Chap tomonni birlashtiramiz: lg((x + 2)(x − 2)) < lg 21, asos 10 > 1 bo'lgani uchun x² − 4 < 21. Bundan x² < 25 va −5 < x < 5. Aniqlanish sohasi bilan kesishtiramiz. Javob: (2; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-asosga-keltirish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#8061fb81"
+    },
+    {
+      "q": "log₂(x + 3) + log₂(x − 3) ≤ 4 tengsizlikning yechim to'plamini toping.",
+      "v": [
+        "[−5; 5]",
+        "(3; 5)",
+        "(3; 5]",
+        "(−5; −3) ∪ (3; 5)"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi: x + 3 > 0 va x − 3 > 0, demak x > 3. Yig'indini birlashtirsak log₂(x² − 9) ≤ 4, bundan x² − 9 ≤ 2⁴ = 16. Demak x² ≤ 25, ya'ni −5 ≤ x ≤ 5. Aniqlanish sohasi bilan kesishtirgach chap chegara ochiq qoladi. Javob: (3; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-asosga-keltirish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#47e3bf4b"
+    },
+    {
+      "q": "ln(3x − 4) > 0 tengsizlikning yechimini topib, uni oraliq ko'rinishida yozing.",
+      "v": [
+        "(5/3; +∞)",
+        "(4/3; +∞)",
+        "(4/3; 5/3)",
+        "(0; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi: 3x − 4 > 0, ya'ni x > 4/3. Tabiiy logarifm asosi e > 1, shuning uchun 3x − 4 > e⁰ = 1. Bundan 3x > 5 va x > 5/3. Bu natija aniqlanish sohasidan kuchliroq shart. Javob: (5/3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ln-tengsizlik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#8d309c26"
+    },
+    {
+      "q": "Fizika masalasida ln(x + 2) ≤ 1 sharti qo'yilgan; bu shartni qanoatlantiruvchi x larning oralig'ini ko'rsating.",
+      "v": [
+        "(−∞; e − 2]",
+        "[e − 2; +∞)",
+        "(−2; −1]",
+        "(−2; e − 2]"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi: x + 2 > 0, ya'ni x > −2. Asos e > 1 bo'lgani uchun x + 2 ≤ e¹ = e. Bundan x ≤ e − 2, taxminan 0,72. Chap chegara ochiq, o'ng chegara yopiq bo'ladi. Javob: (−2; e − 2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ln-tengsizlik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#a27918cf"
+    },
+    {
+      "q": "ln(x − 5) < 2 tengsizlikning yechimlar to'plamini oraliq ko'rinishida yozing.",
+      "v": [
+        "(−∞; 5 + e²)",
+        "(5; e²)",
+        "(5 + e²; +∞)",
+        "(5; 5 + e²)"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi: x − 5 > 0, ya'ni x > 5. Asos e > 1, shuning uchun x − 5 < e². Bundan x < 5 + e², taxminan 12,39. Chap chegarani aniqlanish sohasi beradi. Javob: (5; 5 + e²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ln-tengsizlik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#cd9b7559"
+    },
+    {
+      "q": "Modelda ln(2x + 1) ≥ ln(x + 6) sharti qo'yilgan; bu shartni qanoatlantiruvchi x larning oralig'ini toping.",
+      "v": [
+        "(−0,5; 5]",
+        "[5; +∞)",
+        "(−6; 5]",
+        "(5; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi: 2x + 1 > 0 dan x > −0,5 va x + 6 > 0 dan x > −6; kuchliroq shart x > −0,5. Asos e > 1 bo'lgani uchun ishora saqlanadi: 2x + 1 ≥ x + 6. Bundan x ≥ 5 kelib chiqadi va bu aniqlanish sohasiga kiradi. Javob: [5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ln-tengsizlik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#6af3e661"
+    },
+    {
+      "q": "log₂(x − 4) < 3 tengsizlikni qanoatlantiruvchi butun sonlar nechta ekanligini aniqlang.",
+      "v": [
+        "8 ta",
+        "6 ta",
+        "7 ta",
+        "11 ta"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi x > 4, tengsizlikdan esa x − 4 < 2³ = 8, ya'ni x < 12. Demak 4 < x < 12. Bu oraliqdagi butun sonlar 5, 6, 7, 8, 9, 10, 11 bo'lib, chegaralar kirmaydi. Javob: 7 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechim-soni",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#6f56bb71"
+    },
+    {
+      "q": "Test shartiga ko'ra log₃(2x + 5) ≤ 3 tengsizlikni qanoatlantiruvchi natural sonlar sanaladi; ular nechta?",
+      "v": [
+        "10 ta",
+        "11 ta",
+        "12 ta",
+        "13 ta"
+      ],
+      "t": 1,
+      "izoh": "Asos 3 > 1 bo'lgani uchun 2x + 5 ≤ 3³ = 27. Bundan 2x ≤ 22 va x ≤ 11; aniqlanish sohasi 2x + 5 > 0 natural sonlar uchun avtomatik bajariladi. Natural sonlar 1 dan 11 gacha bo'lib, 11 ning o'zi ham kiradi. Javob: 11 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechim-soni",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#d6c6494b"
+    },
+    {
+      "q": "lg(x − 3) < 2 tengsizlikni qanoatlantiruvchi butun yechimlar soni nechaga teng?",
+      "v": [
+        "100 ta",
+        "98 ta",
+        "99 ta",
+        "103 ta"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi x > 3, tengsizlikdan x − 3 < 10² = 100, ya'ni x < 103. Demak 3 < x < 103 va butun yechimlar 4 dan 102 gacha. Ularning soni 102 − 4 + 1 = 99 ta. Javob: 99 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechim-soni",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#99936956"
+    },
+    {
+      "q": "Tadqiqotda log₃(2x + 3) ≤ 4 shartini qanoatlantiruvchi musbat butun x qiymatlari sanaladi; ular nechta?",
+      "v": [
+        "40 ta",
+        "39 ta",
+        "12 ta",
+        "38 ta"
+      ],
+      "t": 1,
+      "izoh": "Asos 3 > 1, shuning uchun 2x + 3 ≤ 3⁴ = 81. Bundan 2x ≤ 78 va x ≤ 39. Musbat butun sonlar 1 dan 39 gacha, ya'ni 39 ta qiymat. Javob: 39 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechim-soni",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#282457bc"
+    },
+    {
+      "q": "log₅(x − 2) > 1 tengsizlikni qanoatlantiruvchi eng kichik butun sonni toping.",
+      "v": [
+        "7",
+        "3",
+        "8",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi x > 2. Asos 5 > 1 bo'lgani uchun x − 2 > 5¹ = 5, bundan x > 7. Tengsizlik qat'iy, shuning uchun 7 ning o'zi yechim emas. Undan katta eng kichik butun son 8 bo'ladi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chekka-butun-yechim",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#c45aa08b"
+    },
+    {
+      "q": "log₀,₅(x − 3) ≥ −2 tengsizlikni qanoatlantiruvchi eng katta butun qiymat nechaga teng?",
+      "v": [
+        "7",
+        "6",
+        "4",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi x > 3. Asos 0,5 birdan kichik, shuning uchun ishora almashadi: x − 3 ≤ 0,5^(−2) = 4. Bundan x ≤ 7 va yechim (3; 7] oralig'i. Eng katta butun qiymat 7 bo'ladi, chunki o'ng chegara yopiq. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chekka-butun-yechim",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#09b1f528"
+    },
+    {
+      "q": "log₂(x + 5) < 4 tengsizlikni qanoatlantiruvchi eng katta butun son nechaga teng?",
+      "v": [
+        "11",
+        "10",
+        "16",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi x > −5. Asos 2 > 1, shuning uchun x + 5 < 2⁴ = 16, bundan x < 11. Tengsizlik qat'iy bo'lgani uchun 11 yechim emas. Undan kichik eng katta butun son 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chekka-butun-yechim",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#11b06407"
+    },
+    {
+      "q": "log₀,₂(2x − 1) > −2 tengsizlikni qanoatlantiruvchi eng katta butun yechimni aniqlang.",
+      "v": [
+        "13",
+        "25",
+        "Eng katta yechim mavjud emas",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi: 2x − 1 > 0, ya'ni x > 0,5. Asos 0,2 birdan kichik, shuning uchun ishora almashadi: 2x − 1 < 0,2^(−2) = 25. Bundan 2x < 26 va x < 13. Eng katta butun yechim 12 bo'ladi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chekka-butun-yechim",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#1f7c4ef4"
+    },
+    {
+      "q": "Sexdagi shovqin darajasi L = 10·lg(k) dB formula bilan o'lchanadi, bunda k — tovush intensivligining chegaraviy intensivlikka nisbati. Sanitariya me'yoriga ko'ra L < 80 bo'lishi shart. Nisbat k qanday oraliqda yotishi lozim?",
+      "v": [
+        "(0; 10⁸)",
+        "(0; 8)",
+        "(10⁸; +∞)",
+        "(0; 80)"
+      ],
+      "t": 0,
+      "izoh": "Shartni yozamiz: 10·lg k < 80. Ikkala tomonni 10 ga bo'lsak lg k < 8. O'nlik logarifm asosi 10 > 1, shuning uchun ishora saqlanadi: k < 10⁸. Nisbat musbat bo'lgani uchun quyi chegara nol bo'ladi. Javob: (0; 10⁸).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-tovush-desibel",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#866e2fcd"
+    },
+    {
+      "q": "Konsert zalida tovush darajasi L = 10·lg(I/I₀) dB ga teng va I₀ = 10⁻¹² Vt/m². Quloqqa zarar yetkazadigan holat L ≥ 90 da boshlanadi. Zarar keltiruvchi I qiymatlari qaysi oraliqda yotadi?",
+      "v": [
+        "[10⁻⁹; +∞)",
+        "[10⁻³; +∞)",
+        "(0; 10⁻³]",
+        "[10⁹; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Shart: 10·lg(I/I₀) ≥ 90, bundan lg(I/I₀) ≥ 9. Asos 10 > 1 bo'lgani uchun I/I₀ ≥ 10⁹. Endi I₀ = 10⁻¹² ni o'rniga qo'yamiz: I ≥ 10⁹ · 10⁻¹² = 10⁻³. Javob: [10⁻³; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-tovush-desibel",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#8cd909e9"
+    },
+    {
+      "q": "Ikki xonaning shovqin darajalari orasidagi farq L₁ − L₂ = 10·lg(I₁/I₂) formulaga bo'ysunadi. Birinchi xona ikkinchisidan 30 dB dan ko'proq shovqinli bo'lsa, I₁/I₂ nisbati qanday oraliqda bo'ladi?",
+      "v": [
+        "(3; +∞)",
+        "(30; +∞)",
+        "(1000; +∞)",
+        "(0; 1000)"
+      ],
+      "t": 2,
+      "izoh": "Shart bo'yicha 10·lg(I₁/I₂) > 30. Ikkala tomonni 10 ga bo'lsak lg(I₁/I₂) > 3. Asos 10 birdan katta, shuning uchun ishora saqlanadi va I₁/I₂ > 10³. Demak nisbat mingdan katta bo'ladi. Javob: (1000; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-tovush-desibel",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#45ac0ea4"
+    },
+    {
+      "q": "Ustaxonada quloqchinsiz ishlash uchun shovqin 10·lg(k) ≤ 70 shartini qanoatlantirishi kerak, bunda k — intensivliklar nisbati. Shu shart bajariladigan k qiymatlari to'plamini ko'rsating.",
+      "v": [
+        "(0; 7]",
+        "[10⁷; +∞)",
+        "(0; 70]",
+        "(0; 10⁷]"
+      ],
+      "t": 3,
+      "izoh": "Tengsizlikning ikkala tomonini 10 ga bo'lamiz: lg k ≤ 7. Asos 10 > 1, shuning uchun k ≤ 10⁷. Nisbat musbat bo'lishi shart, shuning uchun quyi chegara nol va u kirmaydi. Javob: (0; 10⁷].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-tovush-desibel",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#fae098cc"
+    },
+    {
+      "q": "Kimyo darsida eritmaning kislotaliligi pH = −lg c formula bilan topiladi, bunda c — vodorod ionlari konsentratsiyasi mol/l da. Eritma kislotali bo'lishi uchun pH < 7 bo'lishi kerak. c qanday oraliqda yotadi?",
+      "v": [
+        "(10⁻⁷; +∞)",
+        "(0; 10⁻⁷)",
+        "(10⁷; +∞)",
+        "(0; 7)"
+      ],
+      "t": 0,
+      "izoh": "Shartni yozamiz: −lg c < 7. Ikkala tomonni −1 ga ko'paytiramiz va ishora almashadi: lg c > −7. Asos 10 > 1 bo'lgani uchun c > 10⁻⁷. Konsentratsiya musbat bo'lgani uchun boshqa cheklov qo'shilmaydi. Javob: (10⁻⁷; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-pH-kislotalilik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#95de368e"
+    },
+    {
+      "q": "Laboratoriyada tayyorlangan eritma uchun 4 ≤ pH ≤ 6 sharti talab qilinadi, bunda pH = −lg c. Vodorod ionlari konsentratsiyasi c qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "[10⁻⁴; 10⁻⁶]",
+        "[10⁻⁶; 10⁻⁴]",
+        "[10⁴; 10⁶]",
+        "[4; 6]"
+      ],
+      "t": 1,
+      "izoh": "Shart: 4 ≤ −lg c ≤ 6. Hamma qismni −1 ga ko'paytiramiz, shunda ikkala ishora ham teskarisiga aylanadi: −6 ≤ lg c ≤ −4. Asos 10 > 1 bo'lgani uchun 10⁻⁶ ≤ c ≤ 10⁻⁴. Chegaralarni to'g'ri tartibda yozish muhim. Javob: [10⁻⁶; 10⁻⁴].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-pH-kislotalilik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#dd552ebc"
+    },
+    {
+      "q": "Bassein suvi pH > 8 bo'lganda ishqoriy hisoblanadi va uni tuzatish talab etiladi, bunda pH = −lg c. Ishqoriy holatga mos c qiymatlari to'plamini toping.",
+      "v": [
+        "(10⁻⁸; +∞)",
+        "(0; 10⁸)",
+        "(0; 10⁻⁸)",
+        "(8; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Shart: −lg c > 8. Ikkala tomonni −1 ga ko'paytirganda ishora almashadi: lg c < −8. Asos 10 > 1 bo'lgani uchun c < 10⁻⁸. Konsentratsiya musbat, shuning uchun oraliq noldan boshlanadi. Javob: (0; 10⁻⁸).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-pH-kislotalilik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#22f80d4b"
+    },
+    {
+      "q": "Oshxona sirkasi uchun kislotalilik ko'rsatkichi 2 < pH < 3 oralig'ida yotadi va pH = −lg c. Sirkadagi vodorod ionlari konsentratsiyasi qaysi oraliqda ekanligini aniqlang.",
+      "v": [
+        "(10⁻²; 10⁻³)",
+        "(10²; 10³)",
+        "(2; 3)",
+        "(10⁻³; 10⁻²)"
+      ],
+      "t": 3,
+      "izoh": "Shart: 2 < −lg c < 3. Hamma qismni −1 ga ko'paytiramiz va ishoralar teskarisiga aylanadi: −3 < lg c < −2. Asos 10 > 1, shuning uchun 10⁻³ < c < 10⁻². Kichik chegara chapda turishi kerak. Javob: (10⁻³; 10⁻²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-pH-kislotalilik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#a2446f22"
+    },
+    {
+      "q": "Zilzila magnitudasi M = lg(A/A₀) formula bilan hisoblanadi, bunda A — to'lqin amplitudasi. Seysmologlar M ≥ 5 bo'lgan silkinishlarni kuchli deb belgilashadi. Kuchli zilzilada A/A₀ nisbati qanday oraliqda?",
+      "v": [
+        "[10⁵; +∞)",
+        "[5; +∞)",
+        "(0; 10⁵]",
+        "[10⁻⁵; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Shartni yozamiz: lg(A/A₀) ≥ 5. O'nlik logarifm asosi 10 birdan katta, shuning uchun ishora saqlanadi. Bundan A/A₀ ≥ 10⁵, ya'ni nisbat yuz mingdan kam emas. Javob: [10⁵; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-zilzila-magnituda",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#181eaf59"
+    },
+    {
+      "q": "Andijondagi seysmik stansiya magnitudani M = lg(A/A₀) formuladan topadi. Aholi sezmaydigan silkinish uchun M < 3 bo'ladi. Bunday hollarda amplitudalar nisbati qaysi oraliqda yotadi?",
+      "v": [
+        "(0; 3)",
+        "(0; 1000)",
+        "(1000; +∞)",
+        "(0; 30)"
+      ],
+      "t": 1,
+      "izoh": "Shart: lg(A/A₀) < 3. Asos 10 > 1 bo'lgani uchun ishora saqlanadi va A/A₀ < 10³ = 1000. Amplitudalar nisbati musbat bo'lgani uchun quyi chegara nol bo'lib, u oraliqqa kirmaydi. Javob: (0; 1000).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-zilzila-magnituda",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#d16e4d92"
+    },
+    {
+      "q": "Ikki zilzila uchun M₁ − M₂ = lg(A₁/A₂) tenglik o'rinli. Birinchi silkinish ikkinchisidan magnituda bo'yicha 2 dan ortiq farq qilsa, amplitudalar nisbati qanday oraliqda bo'ladi?",
+      "v": [
+        "(2; +∞)",
+        "(0; 100)",
+        "(100; +∞)",
+        "(20; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Shart bo'yicha lg(A₁/A₂) > 2. Asos 10 birdan katta, shuning uchun logarifmni yo'qotganda ishora saqlanadi: A₁/A₂ > 10² = 100. Demak birinchi zilzila amplitudasi ikkinchisidan yuz martadan ko'proq katta. Javob: (100; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-zilzila-magnituda",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#2ce9720f"
+    },
+    {
+      "q": "Xalqaro shkalada 6 < M < 7 bo'lgan zilzila binolarga jiddiy zarar yetkazadi, bunda M = lg(A/A₀). Shu holatga mos amplitudalar nisbati oralig'ini ko'rsating.",
+      "v": [
+        "(6; 7)",
+        "(10⁻⁷; 10⁻⁶)",
+        "(60; 70)",
+        "(10⁶; 10⁷)"
+      ],
+      "t": 3,
+      "izoh": "Shart: 6 < lg(A/A₀) < 7. Asos 10 > 1 bo'lgani uchun ikkala ishora ham saqlanadi. Chegaralarni darajaga ko'taramiz: 10⁶ < A/A₀ < 10⁷. Javob: (10⁶; 10⁷).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-zilzila-magnituda",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#ad45ba57"
+    },
+    {
+      "q": "Yangi ishchi t kun mashq qilgach kuniga N = 30 + 12·log₂(t + 1) ta detal tayyorlaydi. Rahbariyat kuniga kamida 66 ta detal talab qiladi. Shart bajarilishi uchun t qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "[7; +∞)",
+        "[8; +∞)",
+        "[3; +∞)",
+        "[36; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Shartni yozamiz: 30 + 12·log₂(t + 1) ≥ 66. Bundan 12·log₂(t + 1) ≥ 36 va log₂(t + 1) ≥ 3. Asos 2 > 1 bo'lgani uchun t + 1 ≥ 2³ = 8, ya'ni t ≥ 7. Javob: [7; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ish-unumi-model",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#57713c28"
+    },
+    {
+      "q": "Tikuvchilik sexida ishchining kunlik mahsuloti N = 5·log₃(2t + 3) ta ko'ylakka teng, bunda t — tajriba oylari soni. N < 10 bo'lgan davr o'rganish davri deyiladi. Bu davr t ning qaysi oralig'ida davom etadi?",
+      "v": [
+        "(−1,5; 3)",
+        "[0; 3)",
+        "[0; 9)",
+        "[3; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Shart: 5·log₃(2t + 3) < 10, bundan log₃(2t + 3) < 2. Asos 3 > 1 bo'lgani uchun 2t + 3 < 3² = 9, ya'ni t < 3. Tajriba oylari manfiy bo'lmaydi, shuning uchun t ≥ 0 shartini ham qo'shamiz. Javob: [0; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-ish-unumi-model",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#350edd32"
+    },
+    {
+      "q": "Zavodda ishlab chiqarish hajmi P = 20·log₅(x + 4) tonna bo'lib, x — qo'shimcha ishchilar soni. Hajm 40 tonnadan oshishi uchun x qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "(25; +∞)",
+        "(2; +∞)",
+        "(21; +∞)",
+        "(−4; 21)"
+      ],
+      "t": 2,
+      "izoh": "Shart: 20·log₅(x + 4) > 40, ikkala tomonni 20 ga bo'lsak log₅(x + 4) > 2. Asos 5 > 1 bo'lgani uchun x + 4 > 5² = 25. Bundan x > 21 kelib chiqadi. Javob: (21; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ish-unumi-model",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#4b3ce43f"
+    },
+    {
+      "q": "Ustaxonada bir kunlik daromad D = 300·log₄(x + 2) ming so'mga teng, bunda x — bajarilgan mayda ta'mirlash ishlari soni. Daromad 900 ming so'mdan kam bo'lmasligi uchun x kamida nechta bo'lishi kerak?",
+      "v": [
+        "64",
+        "62",
+        "3",
+        "60"
+      ],
+      "t": 1,
+      "izoh": "Shart: 300·log₄(x + 2) ≥ 900, bundan log₄(x + 2) ≥ 3. Asos 4 > 1 bo'lgani uchun x + 2 ≥ 4³ = 64. Demak x ≥ 62 va eng kichik mumkin bo'lgan ishlar soni 62 ta. Javob: 62.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ish-unumi-model",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#63931865"
+    },
+    {
+      "q": "Kompaniyaning oylik sotuvi S = 250·lg(x + 1) million so'mga teng, bunda x — reklamaga sarflangan million so'm. Sotuv 500 million so'mdan oshishi uchun reklama xarajati qanday oraliqda bo'lsin?",
+      "v": [
+        "(99; +∞)",
+        "(100; +∞)",
+        "(2; +∞)",
+        "(−1; 99)"
+      ],
+      "t": 0,
+      "izoh": "Shart: 250·lg(x + 1) > 500, ikkala tomonni 250 ga bo'lsak lg(x + 1) > 2. Asos 10 > 1 bo'lgani uchun x + 1 > 10² = 100. Bundan x > 99 million so'm. Javob: (99; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-daromad-reklama",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#c3da614e"
+    },
+    {
+      "q": "Onlayn do'konda kunlik tashriflar soni T = 500 + 200·lg(x + 10) ta bo'lib, x — joylashtirilgan reklama e'lonlari soni. Tashriflar 900 tadan kam bo'lmasligi uchun x qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "[100; +∞)",
+        "[2; +∞)",
+        "[90; +∞)",
+        "[400; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Shart: 500 + 200·lg(x + 10) ≥ 900, bundan 200·lg(x + 10) ≥ 400 va lg(x + 10) ≥ 2. Asos 10 > 1 bo'lgani uchun x + 10 ≥ 100. Demak x ≥ 90 ta e'lon kerak. Javob: [90; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-daromad-reklama",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#db3dd3e5"
+    },
+    {
+      "q": "Kichik korxonaning oylik foydasi F = 8·log₂(x + 6) − 24 million so'mga teng, bunda x — sotilgan uskunalar soni. Foyda manfiy bo'lgan holat zarar deb hisoblanadi. Zarar qaysi x oralig'ida kuzatiladi?",
+      "v": [
+        "(−6; 2)",
+        "[0; 8)",
+        "[0; 3)",
+        "[0; 2)"
+      ],
+      "t": 3,
+      "izoh": "Shart: 8·log₂(x + 6) − 24 < 0, bundan 8·log₂(x + 6) < 24 va log₂(x + 6) < 3. Asos 2 > 1 bo'lgani uchun x + 6 < 2³ = 8, ya'ni x < 2. Sotilgan uskunalar soni manfiy bo'lmaydi, shuning uchun x ≥ 0 shartini ham qo'shamiz. Javob: [0; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-daromad-reklama",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#007ca677"
+    },
+    {
+      "q": "Marketing bo'limi mijozlar sonini M = 40·log₃(x + 3) ta deb baholaydi, bunda x — tarqatilgan varaqalar soni ming donada. Mijozlar soni 120 tadan ko'p bo'lishi uchun x qaysi oraliqda bo'lsin?",
+      "v": [
+        "(24; +∞)",
+        "(27; +∞)",
+        "(3; +∞)",
+        "(−3; 24)"
+      ],
+      "t": 0,
+      "izoh": "Shart: 40·log₃(x + 3) > 120, ikkala tomonni 40 ga bo'lsak log₃(x + 3) > 3. Asos 3 > 1 bo'lgani uchun x + 3 > 3³ = 27. Bundan x > 24 ming dona varaqa kerak. Javob: (24; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-daromad-reklama",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#4ff23256"
+    },
+    {
+      "q": "Bemorga berilgan dorining qondagi miqdori C = 80 − 20·log₂(t + 1) mg/l qonuniyat bilan kamayadi, bunda t — soatlar soni. Miqdor 40 mg/l dan pastga tushganda yangi doza kerak bo'ladi. Bu qaysi t oralig'ida sodir bo'ladi?",
+      "v": [
+        "(3; +∞)",
+        "(0; 3)",
+        "(4; +∞)",
+        "[3; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Shart: 80 − 20·log₂(t + 1) < 40. Bundan −20·log₂(t + 1) < −40 va manfiy songa bo'lganda ishora almashadi: log₂(t + 1) > 2. Asos 2 > 1 bo'lgani uchun t + 1 > 2² = 4, ya'ni t > 3. Javob: (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-dori-konsentratsiya",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#0e5ac80d"
+    },
+    {
+      "q": "Antibiotikning qondagi konsentratsiyasi C = 100 − 25·log₃(t + 1) mg/l ga teng. Konsentratsiya 50 mg/l dan yuqori bo'lgan davr samarali davr hisoblanadi. Samarali davr t ning qaysi oralig'ida davom etadi?",
+      "v": [
+        "(8; +∞)",
+        "[0; 8)",
+        "[0; 9)",
+        "[0; 2)"
+      ],
+      "t": 1,
+      "izoh": "Shart: 100 − 25·log₃(t + 1) > 50, bundan −25·log₃(t + 1) > −50. Manfiy songa bo'lganda ishora almashadi: log₃(t + 1) < 2. Asos 3 > 1 bo'lgani uchun t + 1 < 9, ya'ni t < 8. Vaqt manfiy bo'lmagani uchun t ≥ 0. Javob: [0; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-dori-konsentratsiya",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#0d2d20b7"
+    },
+    {
+      "q": "Dori vositasining ta'sir kuchi E = 60 − 10·log₅(t + 5) shartli birlik bilan o'lchanadi. Ta'sir 40 birlikdan past bo'lsa, dori yaroqsiz deb topiladi. Yaroqsizlik qaysi t qiymatlarida boshlanadi?",
+      "v": [
+        "(25; +∞)",
+        "(0; 20)",
+        "(20; +∞)",
+        "(2; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Shart: 60 − 10·log₅(t + 5) < 40, bundan −10·log₅(t + 5) < −20. Manfiy songa bo'lganda ishora teskarisiga aylanadi: log₅(t + 5) > 2. Asos 5 > 1 bo'lgani uchun t + 5 > 25, ya'ni t > 20. Javob: (20; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-dori-konsentratsiya",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#9106e199"
+    },
+    {
+      "q": "Vaktsina tarkibidagi faol modda miqdori M = 90 − 30·log₂(t + 2) mg bo'lib, t — saqlash haftalari soni. Modda 30 mg dan kam bo'lmasligi uchun saqlash muddati qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "[0; 4]",
+        "[2; +∞)",
+        "[0; 2)",
+        "[0; 2]"
+      ],
+      "t": 3,
+      "izoh": "Shart: 90 − 30·log₂(t + 2) ≥ 30, bundan −30·log₂(t + 2) ≥ −60. Manfiy songa bo'lganda ishora almashadi: log₂(t + 2) ≤ 2. Asos 2 > 1 bo'lgani uchun t + 2 ≤ 4, ya'ni t ≤ 2. Muddat manfiy emas, shuning uchun t ≥ 0. Javob: [0; 2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-dori-konsentratsiya",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#5aba5e9b"
+    },
+    {
+      "q": "Choynakdagi suvning harorati T = 95 − 15·log₂(t + 1) °C qonuniyat bo'yicha pasayadi, bunda t — daqiqalar soni. Harorat 50 °C dan pastga tushgach choy sovuq hisoblanadi. Bu qaysi t oralig'ida yuz beradi?",
+      "v": [
+        "(7; +∞)",
+        "(8; +∞)",
+        "(0; 7)",
+        "(3; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Shart: 95 − 15·log₂(t + 1) < 50, bundan 15·log₂(t + 1) > 45 va log₂(t + 1) > 3. Asos 2 > 1 bo'lgani uchun t + 1 > 2³ = 8. Demak t > 7 daqiqadan keyin suv sovib qoladi. Javob: (7; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harorat-sovish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#faa1645d"
+    },
+    {
+      "q": "Pechdan olingan metall qolipning harorati T = 180 − 40·log₃(t + 1) °C qonuniyat bo'yicha soviydi, bunda t — daqiqalar soni. Qolipni 100 °C dan past bo'lgandagina qo'lqop bilan olish mumkin. Ruxsat etilgan vaqt oralig'ini toping.",
+      "v": [
+        "(9; +∞)",
+        "(8; +∞)",
+        "(0; 8)",
+        "(7; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Shart: 180 − 40·log₃(t + 1) < 100, bundan 40·log₃(t + 1) > 80 va log₃(t + 1) > 2. Asos 3 > 1 bo'lgani uchun t + 1 > 3² = 9, ya'ni t > 8. Javob: (8; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-harorat-sovish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#f5a18bb6"
+    },
+    {
+      "q": "Muzlatgichdan chiqarilgan mahsulot harorati T = −18 + 12·log₂(t + 1) °C bo'yicha ko'tariladi, bunda t — mahsulot tashqarida turgan soatlar soni. Harorat 6 °C dan oshmasligi kerak; ruxsat etilgan vaqt oralig'ini ko'rsating.",
+      "v": [
+        "[0; 4]",
+        "[3; +∞)",
+        "[0; 3]",
+        "[0; 2]"
+      ],
+      "t": 2,
+      "izoh": "Shart: −18 + 12·log₂(t + 1) ≤ 6, bundan 12·log₂(t + 1) ≤ 24 va log₂(t + 1) ≤ 2. Asos 2 > 1 bo'lgani uchun t + 1 ≤ 4, ya'ni t ≤ 3. Vaqt manfiy bo'lmagani uchun t ≥ 0. Javob: [0; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harorat-sovish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#7c2aeecc"
+    },
+    {
+      "q": "Kompyuter parolining variantlari soni N ta bo'lsa, undagi axborot hajmi I = log₂N bit bilan baholanadi. Parol ishonchli bo'lishi uchun I > 10 bo'lishi kerak. N qanday oraliqda bo'lsin?",
+      "v": [
+        "(1024; +∞)",
+        "(10; +∞)",
+        "(0; 1024)",
+        "(20; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Shart: log₂N > 10. Asos 2 birdan katta, shuning uchun logarifmni yo'qotganda ishora saqlanadi va N > 2¹⁰. Ikkining o'ninchi darajasi 1024 ga teng. Variantlar soni musbat butun son bo'lgani uchun boshqa cheklov qo'shilmaydi. Javob: (1024; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-axborot-hajmi",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#af7337ce"
+    },
+    {
+      "q": "Maktab olimpiadasida g'olibni aniqlash uchun kerakli bosqichlar soni I = log₂N formula bilan baholanadi, bunda N — nomzodlar soni. I ≤ 6 bo'lsa, tanlov tez o'tadi. Nomzodlar soni qanday chegarada bo'lsin?",
+      "v": [
+        "(0; 6]",
+        "[64; +∞)",
+        "(0; 12]",
+        "(0; 64]"
+      ],
+      "t": 3,
+      "izoh": "Shart: log₂N ≤ 6. Asos 2 > 1 bo'lgani uchun ishora saqlanadi va N ≤ 2⁶ = 64. Nomzodlar soni musbat bo'lishi kerak, shuning uchun quyi chegara nol bo'lib, u oraliqqa kirmaydi. Javob: (0; 64].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-axborot-hajmi",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#130a0ac4"
+    },
+    {
+      "q": "Ma'lumotlar bazasida yozuvni izlash uchun kerakli qadamlar soni q = log₂n bilan baholanadi, bunda n — yozuvlar soni. Qidiruv 8 qadamdan oshmasligi uchun yozuvlar soni qanday bo'lishi kerak?",
+      "v": [
+        "(0; 128]",
+        "(0; 256]",
+        "(0; 8]",
+        "[256; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Shart: log₂n ≤ 8. Asos 2 birdan katta, shuning uchun n ≤ 2⁸. Ikkining sakkizinchi darajasi 256 ga teng, ya'ni n ≤ 256. Yozuvlar soni musbat bo'lgani uchun oraliq noldan boshlanadi. Javob: (0; 256].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-axborot-hajmi",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#6230fe63"
+    },
+    {
+      "q": "Bankdagi omonatning umumiy o'sishi K = 60·log₂(n + 1) foizga teng, bunda n — omonat yotgan yillar soni. O'sish 180 foizdan oshishi uchun n qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "(8; +∞)",
+        "(3; +∞)",
+        "(7; +∞)",
+        "[7; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Shart: 60·log₂(n + 1) > 180, ikkala tomonni 60 ga bo'lsak log₂(n + 1) > 3. Asos 2 > 1 bo'lgani uchun n + 1 > 2³ = 8, ya'ni n > 7. Demak omonat yetti yildan ortiq yotishi kerak. Javob: (7; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-model-oshish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#df092ebd"
+    },
+    {
+      "q": "Fermer xo'jaligida hosildorlik H = 18 + 6·log₄(x + 1) sentnerga teng, bunda x — solingan o'g'it miqdori kilogrammda. Hosildorlik 30 sentnerdan kam bo'lmasligi uchun o'g'it miqdori qanday bo'lsin?",
+      "v": [
+        "[16; +∞)",
+        "[15; +∞)",
+        "[2; +∞)",
+        "[12; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Shart: 18 + 6·log₄(x + 1) ≥ 30, bundan 6·log₄(x + 1) ≥ 12 va log₄(x + 1) ≥ 2. Asos 4 > 1 bo'lgani uchun x + 1 ≥ 4² = 16, ya'ni x ≥ 15. Javob: [15; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-model-oshish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#5f71fdba"
+    },
+    {
+      "q": "Kutubxonada o'qishga sarflangan vaqt V = 4·log₃(k + 1) soat deb baholanadi, bunda k — o'qilgan boblar soni. Vaqt 12 soatdan kam bo'ladigan k qiymatlari oralig'ini aniqlang.",
+      "v": [
+        "(−1; 26)",
+        "[0; 27)",
+        "[0; 9)",
+        "[0; 26)"
+      ],
+      "t": 3,
+      "izoh": "Shart: 4·log₃(k + 1) < 12, bundan log₃(k + 1) < 3. Asos 3 > 1 bo'lgani uchun k + 1 < 3³ = 27, ya'ni k < 26. Boblar soni manfiy bo'lmaydi, shuning uchun k ≥ 0 shartini qo'shamiz. Javob: [0; 26).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-model-oshish",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#d61ffea7"
+    },
+    {
+      "q": "logₓ(2x + 3) > 1 tengsizlikni yeching; asos noma'lum bo'lgani uchun ikki holni alohida ko'rib chiqing.",
+      "v": [
+        "(1; +∞)",
+        "(0; 1) ∪ (1; +∞)",
+        "(0; 1)",
+        "(−1,5; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi: x > 0, x ≠ 1 va 2x + 3 > 0. Birinchi hol x > 1: asos birdan katta, shuning uchun 2x + 3 > x, ya'ni x > −3 va bu butun holda bajariladi. Ikkinchi hol 0 < x < 1: ishora almashadi va 2x + 3 < x, bundan x < −3 chiqadi, bu holda yechim yo'q. Javob: (1; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ozgaruvchan-asos",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#c69795eb"
+    },
+    {
+      "q": "logₓ(x + 6) ≥ 2 tengsizlikning yechim to'plamini topib, oraliq ko'rinishida yozing.",
+      "v": [
+        "(0; 1) ∪ (1; 3]",
+        "(1; 3]",
+        "[−2; 3]",
+        "(0; 3]"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi: x > 0 va x ≠ 1. Birinchi hol x > 1: x + 6 ≥ x², ya'ni x² − x − 6 ≤ 0 va (x − 3)(x + 2) ≤ 0, bundan −2 ≤ x ≤ 3; shu hol bilan kesishtirsak 1 < x ≤ 3. Ikkinchi hol 0 < x < 1: ishora almashadi va x + 6 ≤ x², bundan x ≤ −2 yoki x ≥ 3 chiqadi, bu oraliqda yechim yo'q. Javob: (1; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ozgaruvchan-asos",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#e70a9f5d"
+    },
+    {
+      "q": "logₓ₋₁(5 − x) > 0 tengsizlikni qanoatlantiruvchi x larning to'plamini aniqlang.",
+      "v": [
+        "(1; 2) ∪ (2; 4)",
+        "(1; 5)",
+        "(2; 4)",
+        "(2; 5)"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi: x − 1 > 0, x − 1 ≠ 1 va 5 − x > 0, ya'ni 1 < x < 5 hamda x ≠ 2. Birinchi hol x > 2: asos birdan katta, shuning uchun 5 − x > 1 va x < 4; bu holdan 2 < x < 4. Ikkinchi hol 1 < x < 2: ishora almashadi va 5 − x < 1, bundan x > 4 chiqadi, bu holda yechim yo'q. Javob: (2; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ozgaruvchan-asos",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#3a48a1e7"
+    },
+    {
+      "q": "logₓ5 > 1 tengsizlikni yeching va yechimni oraliq ko'rinishida yozing.",
+      "v": [
+        "(0; 1) ∪ (5; +∞)",
+        "(0; 5)",
+        "(5; +∞)",
+        "(1; 5)"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi: x > 0 va x ≠ 1. Birinchi hol x > 1: asos birdan katta, shuning uchun 5 > x va bu holdan 1 < x < 5. Ikkinchi hol 0 < x < 1: ishora almashadi va 5 < x bo'lishi kerak, bu esa shu hol bilan ziddiyatli. Javob: (1; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ozgaruvchan-asos",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#428a52e8"
+    },
+    {
+      "q": "|log₂x| < 3 tengsizlikning yechimlar to'plamini oraliq ko'rinishida yozing.",
+      "v": [
+        "(1/8; 8)",
+        "(−3; 3)",
+        "(0; 8)",
+        "[1/8; 8]"
+      ],
+      "t": 0,
+      "izoh": "Modulli tengsizlikni ochamiz: −3 < log₂x < 3. Aniqlanish sohasi x > 0. Asos 2 > 1 bo'lgani uchun har uchala qismni darajaga ko'taramiz: 2^(−3) < x < 2³. Demak 1/8 < x < 8. Javob: (1/8; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-logarifm",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#a0e7e778"
+    },
+    {
+      "q": "|log₃x| ≥ 1 tengsizlikni qanoatlantiruvchi musbat x larning to'plamini toping.",
+      "v": [
+        "[1/3; 3]",
+        "(0; 1/3) ∪ (3; +∞)",
+        "(0; 1/3] ∪ [3; +∞)",
+        "[−1; 1]"
+      ],
+      "t": 2,
+      "izoh": "Modulli tengsizlik ikki holga ajraladi: log₃x ≤ −1 yoki log₃x ≥ 1. Aniqlanish sohasi x > 0. Birinchi holda x ≤ 3^(−1) = 1/3, ikkinchi holda x ≥ 3. Chegaralar tengsizlik qat'iy bo'lmagani uchun kiradi. Javob: (0; 1/3] ∪ [3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-logarifm",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#ce48ff5c"
+    },
+    {
+      "q": "|lg x − 1| < 2 tengsizlikni yeching va javobni oraliq ko'rinishida ifodalang.",
+      "v": [
+        "(−1; 3)",
+        "(0,1; 1000)",
+        "(0; 1000)",
+        "(0,1; 100)"
+      ],
+      "t": 1,
+      "izoh": "Modulni ochamiz: −2 < lg x − 1 < 2. Hamma qismga 1 qo'shsak −1 < lg x < 3. Asos 10 > 1 bo'lgani uchun 10^(−1) < x < 10³, ya'ni 0,1 < x < 1000. Javob: (0,1; 1000).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-logarifm",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#1ac4e23a"
+    },
+    {
+      "q": "(log₂x − 3)/(log₂x + 1) ≤ 0 tengsizlikni t = log₂x almashtirish yordamida yeching.",
+      "v": [
+        "(0,5; 8]",
+        "[−1; 3]",
+        "(−1; 3]",
+        "(0; 8]"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi x > 0. t = log₂x deb belgilaymiz: (t − 3)/(t + 1) ≤ 0. Intervallar usuli bilan −1 < t ≤ 3, chunki maxraj nolga aylanmasligi kerak. Teskari almashtirsak −1 < log₂x ≤ 3, ya'ni 2^(−1) < x ≤ 2³. Javob: (0,5; 8].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-logarifmik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#46ff12d7"
+    },
+    {
+      "q": "(lg x + 2)/(lg x − 1) > 0 tengsizlikning yechim to'plamini toping va oraliqlar birlashmasi ko'rinishida yozing.",
+      "v": [
+        "(0,01; 10)",
+        "(0; 0,01) ∪ (10; +∞)",
+        "(−∞; −2) ∪ (1; +∞)",
+        "(0; 0,01] ∪ [10; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi x > 0. t = lg x almashtirishdan (t + 2)/(t − 1) > 0 hosil bo'ladi, bundan t < −2 yoki t > 1. Birinchi holda lg x < −2, ya'ni 0 < x < 0,01. Ikkinchi holda lg x > 1, ya'ni x > 10. Javob: (0; 0,01) ∪ (10; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-logarifmik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#0cf8a004"
+    },
+    {
+      "q": "2/(log₃x) < 1 tengsizlikni qanoatlantiruvchi musbat x larning to'plamini aniqlang.",
+      "v": [
+        "(9; +∞)",
+        "(0; 9)",
+        "(0; 1) ∪ (9; +∞)",
+        "(1; 9)"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi: x > 0 va log₃x ≠ 0, ya'ni x ≠ 1. t = log₃x deb olsak 2/t < 1, bundan (2 − t)/t < 0 va t < 0 yoki t > 2. Birinchi holda log₃x < 0, ya'ni 0 < x < 1. Ikkinchi holda log₃x > 2, ya'ni x > 9. Javob: (0; 1) ∪ (9; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-logarifmik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#13cad1ff"
+    },
+    {
+      "q": "(log₅x)/(log₅x − 2) ≥ 0 tengsizlikni yeching va javobni oraliq ko'rinishida yozing.",
+      "v": [
+        "[0; 2)",
+        "(0; 1] ∪ [25; +∞)",
+        "(1; 25)",
+        "(0; 1] ∪ (25; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi: x > 0 va log₅x ≠ 2, ya'ni x ≠ 25. t = log₅x bo'lsa t/(t − 2) ≥ 0, bundan t ≤ 0 yoki t > 2. Birinchi holda log₅x ≤ 0, ya'ni 0 < x ≤ 1. Ikkinchi holda log₅x > 2, ya'ni x > 25 va bu chegara kirmaydi. Javob: (0; 1] ∪ (25; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-logarifmik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#8ce998fd"
+    },
+    {
+      "q": "log₂(x − 1) < 3 va log₂(x + 2) > 2 tengsizliklar sistemasining yechimini toping.",
+      "v": [
+        "(2; 9)",
+        "(1; 9)",
+        "(2; +∞)",
+        "(1; 2)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tengsizlik: x − 1 > 0 va x − 1 < 2³ = 8, ya'ni 1 < x < 9. Ikkinchi tengsizlik: x + 2 > 2² = 4, ya'ni x > 2 va aniqlanish sohasi x > −2 avtomatik bajariladi. Sistema yechimi ikki natijaning kesishmasi. Javob: (2; 9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-log-tengsizlik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#3f236d67"
+    },
+    {
+      "q": "lg(x + 4) ≥ 1 va lg(2x − 3) ≤ 2 tengsizliklardan tuzilgan sistemaning yechimini oraliq ko'rinishida yozing.",
+      "v": [
+        "[6; +∞)",
+        "[6; 51,5]",
+        "[1,5; 51,5]",
+        "[10; 51,5]"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tengsizlikdan x + 4 ≥ 10, ya'ni x ≥ 6. Ikkinchi tengsizlikning aniqlanish sohasi 2x − 3 > 0, ya'ni x > 1,5; o'zidan esa 2x − 3 ≤ 100 va x ≤ 51,5. Ikki natijani kesishtiramiz. Javob: [6; 51,5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema-log-tengsizlik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#4ff1deb2"
+    },
+    {
+      "q": "log₅(x − 2) ≤ 1 va log₅(x + 1) ≥ 1 shartlari birgalikda bajarilishi kerak; shu shartlarni qanoatlantiruvchi x larning to'plamini toping.",
+      "v": [
+        "(2; 7]",
+        "[4; +∞)",
+        "[4; 7]",
+        "(2; 4]"
+      ],
+      "t": 2,
+      "izoh": "Birinchi shart: x − 2 > 0 va x − 2 ≤ 5, ya'ni 2 < x ≤ 7. Ikkinchi shart: x + 1 ≥ 5, ya'ni x ≥ 4 va aniqlanish sohasi x > −1 avtomatik bajariladi. Ikkalasining kesishmasini olamiz. Javob: [4; 7].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-log-tengsizlik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#f19cb67a"
+    },
+    {
+      "q": "log₃(x + 1) > 1 va log₀,₅(x − 2) > −3 tengsizliklar sistemasini yeching va yechimni oraliq ko'rinishida yozing.",
+      "v": [
+        "(2; 8)",
+        "(−1; 10)",
+        "(2; +∞)",
+        "(2; 10)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tengsizlik: x + 1 > 3, ya'ni x > 2. Ikkinchisida asos 0,5 birdan kichik, shuning uchun ishora almashadi: x − 2 < 0,5^(−3) = 8 va x < 10; aniqlanish sohasi x > 2. Ikki natijani kesishtiramiz. Javob: (2; 10).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema-log-tengsizlik",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#2f9d4603"
+    },
+    {
+      "q": "log₀,₇a > 0 tengsizlik bajarilishi uchun a soni qanday oraliqda yotishi kerak?",
+      "v": [
+        "(0; 1)",
+        "(1; +∞)",
+        "(0; 0,7)",
+        "(0,7; 1)"
+      ],
+      "t": 0,
+      "izoh": "O'ng tomondagi nolni logarifm ko'rinishida yozamiz: 0 = log₀,₇1. Asos 0,7 birdan kichik bo'lgani uchun logarifmlarni tashlaganda ishora almashadi: a < 1. Logarifm ostidagi ifoda musbat bo'lishi shart, demak a > 0. Javob: (0; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifm-ishorasi-sharti",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#f1c2cb53"
+    },
+    {
+      "q": "log₂(3x − 6) va log₂x ifodalarining ikkalasi ham musbat bo'lishi uchun x qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "(2; +∞)",
+        "(7/3; +∞)",
+        "(1; +∞)",
+        "(3; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Asos 2 birdan katta, shuning uchun logarifm musbat bo'lishi uchun uning ostidagi ifoda birdan katta bo'lishi kerak. Birinchisidan 3x − 6 > 1, ya'ni x > 7/3. Ikkinchisidan x > 1. Ikki shartdan kuchlirog'ini olamiz. Javob: (7/3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifm-ishorasi-sharti",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#3675fc3e"
+    },
+    {
+      "q": "log₀,₆(x + 4) ifodasi manfiy qiymat qabul qilishi uchun x qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "(−4; −3)",
+        "(−4; +∞)",
+        "(−3; +∞)",
+        "(−∞; −3)"
+      ],
+      "t": 2,
+      "izoh": "Shart: log₀,₆(x + 4) < 0, ya'ni log₀,₆(x + 4) < log₀,₆1. Asos 0,6 birdan kichik bo'lgani uchun ishora almashadi: x + 4 > 1. Bundan x > −3 va bu natija aniqlanish sohasi x > −4 ichida yotadi. Javob: (−3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifm-ishorasi-sharti",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#6c8ba47b"
+    },
+    {
+      "q": "log₃(x − 1) ≤ 2 tengsizlikning barcha butun yechimlari yig'indisini hisoblang.",
+      "v": [
+        "54",
+        "55",
+        "44",
+        "45"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi x > 1, tengsizlikdan esa x − 1 ≤ 3² = 9, ya'ni x ≤ 10. Demak yechim 1 < x ≤ 10 oralig'i. Butun yechimlar 2 dan 10 gacha, ular 9 ta. Yig'indi (2 + 10)·9 : 2 = 54. Javob: 54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechimlar-yigindisi",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#26161134"
+    },
+    {
+      "q": "log₀,₅(x − 3) ≥ −2 tengsizlikning butun yechimlari yig'indisi nechaga teng?",
+      "v": [
+        "25",
+        "22",
+        "15",
+        "30"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi x > 3. Asos 0,5 birdan kichik, shuning uchun ishora almashadi: x − 3 ≤ 0,5^(−2) = 4, ya'ni x ≤ 7. Yechim (3; 7] oralig'i, butun yechimlar 4, 5, 6 va 7. Ularning yig'indisi 22. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-yechimlar-yigindisi",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#84a596c6"
+    },
+    {
+      "q": "lg(2x + 1) < 1 tengsizlikni qanoatlantiruvchi natural sonlar yig'indisini toping.",
+      "v": [
+        "6",
+        "15",
+        "10",
+        "14"
+      ],
+      "t": 2,
+      "izoh": "Asos 10 > 1 bo'lgani uchun 2x + 1 < 10, bundan x < 4,5; aniqlanish sohasi natural sonlar uchun bajariladi. Shartga mos natural sonlar 1, 2, 3 va 4. Ularning yig'indisi 10 ga teng. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-yechimlar-yigindisi",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#265f6e38"
+    },
+    {
+      "q": "log₆(x + 2) < 2 tengsizlikning yechim oralig'i uzunligini toping.",
+      "v": [
+        "34",
+        "32",
+        "12",
+        "36"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi x > −2. Asos 6 > 1 bo'lgani uchun x + 2 < 6² = 36, ya'ni x < 34. Yechim (−2; 34) oralig'i. Uzunlik 34 − (−2) = 36. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-uzunligi",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#08893881"
+    },
+    {
+      "q": "log₀,₅(x − 2) > −3 tengsizlikning yechim oralig'i uzunligi nechaga teng?",
+      "v": [
+        "10",
+        "8",
+        "6",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi x > 2. Asos 0,5 birdan kichik, shuning uchun ishora almashadi: x − 2 < 0,5^(−3) = 8. Bundan x < 10 va yechim (2; 10) oralig'i. Uzunlik 10 − 2 = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliq-uzunligi",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#653d3296"
+    },
+    {
+      "q": "log₄(3x + 2) ≤ 2 tengsizlikning yechim oralig'i uzunligini kasr ko'rinishida ifodalang.",
+      "v": [
+        "16/3",
+        "14/3",
+        "6",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi: 3x + 2 > 0, ya'ni x > −2/3. Asos 4 > 1 bo'lgani uchun 3x + 2 ≤ 16, bundan x ≤ 14/3. Yechim (−2/3; 14/3] oralig'i. Uzunlik 14/3 + 2/3 = 16/3. Javob: 16/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliq-uzunligi",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#a14c0bb9"
+    },
+    {
+      "q": "log₆(4x + 1) < log₆(x + 10) tengsizlikning yechimini oraliq ko'rinishida yozing.",
+      "v": [
+        "(−0,25; 3)",
+        "(−∞; 3)",
+        "(−10; 3)",
+        "(3; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi: 4x + 1 > 0 dan x > −0,25 va x + 10 > 0 dan x > −10; kuchliroq shart x > −0,25. Asos 6 > 1 bo'lgani uchun 4x + 1 < x + 10. Bundan 3x < 9 va x < 3. Javob: (−0,25; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-logarifm-a>1",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#ce71c683"
+    },
+    {
+      "q": "log₀,₈(2x + 4) ≤ log₀,₈(x + 9) tengsizlikni qanoatlantiruvchi x larning to'plamini toping.",
+      "v": [
+        "(−2; 5]",
+        "[5; +∞)",
+        "(−9; 5]",
+        "(5; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi: 2x + 4 > 0 dan x > −2 va x + 9 > 0 dan x > −9; kuchliroq shart x > −2. Asos 0,8 birdan kichik bo'lgani uchun ishora teskarisiga aylanadi: 2x + 4 ≥ x + 9. Bundan x ≥ 5 kelib chiqadi. Javob: [5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-logarifm-a<1",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#bc995f73"
+    },
+    {
+      "q": "Nazorat ishida log₈(5x − 3) ≥ 1 tengsizlikni yechish talab qilindi; yechimni oraliq ko'rinishida ko'rsating.",
+      "v": [
+        "(0,6; 2,2]",
+        "[1,6; +∞)",
+        "[2,2; +∞)",
+        "[2,2; 8]"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi: 5x − 3 > 0, ya'ni x > 0,6. Asos 8 > 1 bo'lgani uchun 5x − 3 ≥ 8¹ = 8. Bundan 5x ≥ 11 va x ≥ 2,2. Bu natija aniqlanish sohasi ichida yotadi. Javob: [2,2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-katta-1-oddiy",
+      "id": "matematika_tngs_m10-logarifmik-tengsizliklar#7031c713"
+    }
+  ]
+}

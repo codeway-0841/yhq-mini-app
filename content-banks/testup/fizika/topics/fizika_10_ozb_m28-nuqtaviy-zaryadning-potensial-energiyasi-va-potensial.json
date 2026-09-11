@@ -1,0 +1,576 @@
+{
+  "nom": "28-mavzu. Nuqtaviy Zaryadning Potensial Energiyasi Va Potensial",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektr maydonda q₀ zaryadni bir nuqtadan ikkinchi nuqtaga ko'chirish uchun bajarilgan ish nimaga teng?",
+      "v": [
+        "Shu nuqtalardagi zaryad potensial energiyalarining farqiga",
+        "Zaryad kinetik energiyalarining yig'indisiga",
+        "Maydon kuchlanganliklarining yig'indisiga",
+        "Zaryadning massasi va tezligi ko'paytmasiga"
+      ],
+      "t": 0,
+      "izoh": "A₁₋₂ = –ΔWp = Wp1 – Wp2, ya'ni ish potensial energiyalar farqiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#7d19d56f"
+    },
+    {
+      "q": "Elektr maydonning bajargan ishi hisobiga zaryadning potensial energiyasi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Avval ortib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydonning bajargan ishi hisobiga zaryadning potensial energiyasi kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#225624ac"
+    },
+    {
+      "q": "q₁ va q₂ zaryadlarning o'zaro ta'sir potensial energiyasi qanday ifodalanadi?",
+      "v": [
+        "W = k·q₁·q₂/r",
+        "W = k·q₁·q₂/r²",
+        "W = k·q₁·q₂·r",
+        "W = k·(q₁+q₂)/r"
+      ],
+      "t": 0,
+      "izoh": "q₁ va q₂ zaryadlarning o'zaro ta'sir potensial energiyasi W = k·q₁·q₂/r.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#01b9274e"
+    },
+    {
+      "q": "Elektr maydon potensiali qanday belgilanadi?",
+      "v": [
+        "φ harfi bilan",
+        "E harfi bilan",
+        "W harfi bilan",
+        "A harfi bilan"
+      ],
+      "t": 0,
+      "izoh": "Potensial φ harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#580af698"
+    },
+    {
+      "q": "Elektr maydonning biror nuqtasidagi potensial qanday ta'riflanadi?",
+      "v": [
+        "Maydonning shu nuqtasiga kiritilgan birlik musbat sinov zaryadining potensial energiyasiga son jihatdan teng fizik kattalik",
+        "Maydonning shu nuqtasidagi kuchlanganlikka teng fizik kattalik",
+        "Sinov zaryadiga ta'sir qiluvchi kuchga teng fizik kattalik",
+        "Maydon energiyasining hajmga nisbatiga teng fizik kattalik"
+      ],
+      "t": 0,
+      "izoh": "Potensial — maydonning shu nuqtasiga kiritilgan birlik musbat sinov zaryadining potensial energiyasiga son jihatdan teng bo'lgan fizik kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#e0f2cf3c"
+    },
+    {
+      "q": "Potensialning formula ifodasi qanday?",
+      "v": [
+        "φ = Wp/q₀",
+        "φ = Wp·q₀",
+        "φ = q₀/Wp",
+        "φ = Wp·q₀²"
+      ],
+      "t": 0,
+      "izoh": "φ = Wp/q₀.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#ac0f88ab"
+    },
+    {
+      "q": "Nuqtaviy q zaryad hosil qilgan maydonning biror nuqtasidagi potensial qanday aniqlanadi?",
+      "v": [
+        "φ = k·q/r",
+        "φ = k·q/r²",
+        "φ = k·q·r",
+        "φ = q/(k·r)"
+      ],
+      "t": 0,
+      "izoh": "Nuqtaviy zaryad maydonining potensiali φ = k·q/r.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#96b8ef92"
+    },
+    {
+      "q": "Potensial qanday kattalik hisoblanadi?",
+      "v": [
+        "Skalyar kattalik",
+        "Vektor kattalik",
+        "O'lchovsiz kattalik",
+        "Faqat musbat qiymatli kattalik"
+      ],
+      "t": 0,
+      "izoh": "Energiya ham, zaryad ham skalyar kattalik bo'lgani uchun potensial ham skalyar kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#6d836408"
+    },
+    {
+      "q": "Potensiallar farqi qanday ta'riflanadi?",
+      "v": [
+        "Birlik musbat zaryadni maydonning bir nuqtasidan ikkinchi nuqtasiga ko'chirishda bajarilgan ishga miqdor jihatidan teng fizik kattalik",
+        "Ikki nuqtadagi kuchlanganliklar farqiga teng fizik kattalik",
+        "Ikki zaryad potensial energiyalarining yig'indisiga teng fizik kattalik",
+        "Maydon kuchining zaryadga nisbatiga teng fizik kattalik"
+      ],
+      "t": 0,
+      "izoh": "Potensiallar farqi — birlik musbat zaryadni bir nuqtadan ikkinchi nuqtaga ko'chirishda bajarilgan ishga miqdor jihatidan teng bo'lgan fizik kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#febf45c1"
+    },
+    {
+      "q": "Elektrostatik maydonda q₀ zaryadni ko'chirishda bajariladigan ish potensiallar orqali qanday ifodalanadi?",
+      "v": [
+        "A = q₀·(φ₁ – φ₂)",
+        "A = q₀·(φ₁ + φ₂)",
+        "A = q₀·φ₁·φ₂",
+        "A = (φ₁ – φ₂)/q₀"
+      ],
+      "t": 0,
+      "izoh": "A = q₀·(φ₁ – φ₂).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#548e44c4"
+    },
+    {
+      "q": "Potensiallar farqi formula bilan qanday ifodalanadi?",
+      "v": [
+        "Δφ = A/q₀",
+        "Δφ = A·q₀",
+        "Δφ = q₀/A",
+        "Δφ = A + q₀"
+      ],
+      "t": 0,
+      "izoh": "φ₁ – φ₂ = Δφ = A/q₀.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#2f7cb644"
+    },
+    {
+      "q": "Potensial va potensiallar farqining birligi qanday?",
+      "v": [
+        "Volt (V)",
+        "Joul (J)",
+        "Nyuton (N)",
+        "Kulon (C)"
+      ],
+      "t": 0,
+      "izoh": "Potensial ham, potensiallar farqi ham volt (V) birligida ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#48e0f0e7"
+    },
+    {
+      "q": "1 volt qanday aniqlanadi?",
+      "v": [
+        "1 V = 1 J/1 C",
+        "1 V = 1 C/1 J",
+        "1 V = 1 N/1 C",
+        "1 V = 1 J·1 C"
+      ],
+      "t": 0,
+      "izoh": "[φ] = [W]/[q₀] dan 1 V = 1 J/1 C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#ccf9678e"
+    },
+    {
+      "q": "Zaryadning potensial energiyasi potensial orqali qanday ifodalanadi?",
+      "v": [
+        "Wp = q₀·φ",
+        "Wp = q₀/φ",
+        "Wp = φ/q₀",
+        "Wp = q₀·φ²"
+      ],
+      "t": 0,
+      "izoh": "Wp = q₀·φ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#500546c7"
+    },
+    {
+      "q": "Bir necha zaryadlar sistemasi hosil qilgan maydonning biror nuqtasidagi natijaviy potensial qanday aniqlanadi?",
+      "v": [
+        "Zaryadlarning mustaqil hosil qilgan maydonlar potensiallarining algebraik yig'indisiga teng",
+        "Potensiallarning ko'paytmasiga teng",
+        "Eng katta potensialga teng",
+        "Potensiallarning vektorial yig'indisiga teng"
+      ],
+      "t": 0,
+      "izoh": "φ = φ₁ + φ₂ + ⋯ + φn — maydonlar superpozitsiya prinsipini ifodalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#a3f53f02"
+    },
+    {
+      "q": "Superpozitsiya prinsipi potensiallar uchun qanday yoziladi?",
+      "v": [
+        "φ = φ₁ + φ₂ + ⋯ + φn",
+        "φ = φ₁ · φ₂ · ⋯ · φn",
+        "φ = (φ₁ + φ₂)/2",
+        "φ = φ₁ – φ₂"
+      ],
+      "t": 0,
+      "izoh": "Natijaviy potensial φ = φ₁ + φ₂ + ⋯ + φn.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#3d0a488c"
+    },
+    {
+      "q": "Ekvipotensial sirt deganda nima tushuniladi?",
+      "v": [
+        "Potensiallari bir xil bo'lgan nuqtalarning geometrik o'rni",
+        "Kuchlanganliklari bir xil bo'lgan nuqtalar o'rni",
+        "Zaryadlari bir xil bo'lgan nuqtalar o'rni",
+        "Maydondan teng uzoqlikdagi tasodifiy nuqtalar to'plami"
+      ],
+      "t": 0,
+      "izoh": "Potensiallari bir xil bo'lgan nuqtalarning geometrik o'rni ekvipotensial sirt deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#1f0c0665"
+    },
+    {
+      "q": "Nuqtaviy zaryad maydonining ekvipotensial sirtlari qanday shaklga ega?",
+      "v": [
+        "Markazi zaryadda joylashgan konsentrik sferalar",
+        "Parallel tekisliklar",
+        "Silindrik sirtlar",
+        "O'zaro kesishuvchi tekisliklar"
+      ],
+      "t": 0,
+      "izoh": "Nuqtaviy zaryad maydonining ekvipotensial sirtlari markazi zaryadda joylashgan konsentrik sferalardan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#e902bbb8"
+    },
+    {
+      "q": "Ekvipotensial sirtning istalgan nuqtasida elektr maydon kuch chiziqlari qanday yo'nalgan?",
+      "v": [
+        "Ekvipotensial sirtga perpendikulyar",
+        "Ekvipotensial sirtga parallel",
+        "Sirtga 45° burchak ostida",
+        "Sirt bo'ylab aylanma yo'nalishda"
+      ],
+      "t": 0,
+      "izoh": "Kuch chiziqlari ekvipotensial sirtlarga perpendikulyar ravishda yo'nalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#44beab2e"
+    },
+    {
+      "q": "Elektr maydon kuchlanganligi va potensiallar farqi orasidagi munosabat qanday?",
+      "v": [
+        "E = (φ₁ – φ₂)/d",
+        "E = (φ₁ – φ₂)·d",
+        "E = d/(φ₁ – φ₂)",
+        "E = φ₁·φ₂/d"
+      ],
+      "t": 0,
+      "izoh": "E = (φ₁ – φ₂)/d, bu yerda d — potensiallari φ₁ va φ₂ bo'lgan nuqtalar orasidagi masofa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#85a076b4"
+    },
+    {
+      "q": "E = (φ₁ – φ₂)/d munosabatdan maydon kuchlanganligining qaysi birligi kelib chiqadi?",
+      "v": [
+        "V/m",
+        "J/C",
+        "N/C²",
+        "V·m"
+      ],
+      "t": 0,
+      "izoh": "Bu munosabatdan maydon kuchlanganligi birligi [V/m] ga teng ekanligi kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#26dce2aa"
+    },
+    {
+      "q": "Zaryadlangan metall sfera ichidagi nuqtalarda maydon potensiali qanday aniqlanadi?",
+      "v": [
+        "Sfera sirtidagi potensialga teng, φ = k·q/r",
+        "Nolga teng",
+        "Markazdan masofaga teskari proporsional",
+        "Markazdan masofaning kvadratiga proporsional"
+      ],
+      "t": 0,
+      "izoh": "Masala namunasida sfera ichida va sirtida potensial bir xil: φ = k·q/r.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#de85c8dc"
+    },
+    {
+      "q": "Zaryadlangan metall sferadan tashqaridagi nuqtada maydon potensiali qanday hisoblanadi?",
+      "v": [
+        "φ = k·q/(r + r₂), bu yerda r — sfera radiusi, r₂ — sfera sirtidan nuqtagacha bo'lgan masofa",
+        "φ = k·q/r (faqat sfera radiusi orqali)",
+        "Doimo nolga teng",
+        "φ = k·q·r"
+      ],
+      "t": 0,
+      "izoh": "Sferadan tashqarida potensial sfera markazidan hisoblangan umumiy masofaga qarab φ = k·q/(r + r₂) formula bilan topiladi (darslikdagi masala namunasida 5 sm sirtidan 5 sm uzoqdagi nuqta uchun 2700 V).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#6ce2cc1c"
+    },
+    {
+      "q": "Havoda turgan 5 sm radiusli metall sferaga 30 nC zaryad berilganda sfera sirtidagi potensial qancha bo'ladi? (k = 9·10⁹ N·m²/C²)",
+      "v": [
+        "5400 V",
+        "2700 V",
+        "600 V",
+        "54 V"
+      ],
+      "t": 0,
+      "izoh": "φ = 9·10⁹·30·10⁻⁹/(5·10⁻²) = 5400 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#af0fffae"
+    },
+    {
+      "q": "Yuqori kuchlanishli transformatorlar atrofiga metall to'rli to'siq qanday maqsadda o'rnatiladi?",
+      "v": [
+        "Odamlarni xavfli elektr maydon ta'siridan himoya qilish uchun",
+        "Transformatorni yomg'irdan saqlash uchun",
+        "Maydon kuchlanganligini oshirish uchun",
+        "Transformatorni sovutish uchun"
+      ],
+      "t": 0,
+      "izoh": "Yuqori kuchlanishli (10000 V va undan katta) transformatorlar atrofi xavfli hodisalarning oldini olish uchun metall to'rli to'siq bilan o'rab himoyalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#a6a3d0d9"
+    },
+    {
+      "q": "Elektr maydonga sinov zaryadini kiritishda asosiy zaryad elektr maydoni qanday harakat qiladi?",
+      "v": [
+        "Qarshilik qiladi",
+        "Sinov zaryadini kuchaytiradi",
+        "Hech qanday ta'sir ko'rsatmaydi",
+        "Sinov zaryadini neytrallaydi"
+      ],
+      "t": 0,
+      "izoh": "Sinov zaryadini kiritishga asosiy zaryad elektr maydoni qarshilik qiladi, shunga ko'ra maydon kuchlariga qarshi ish bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#e3ddcbf9"
+    },
+    {
+      "q": "Potensial energiyaning sinov zaryadiga nisbati maydonning ayni nuqtasi uchun qanday kattalik?",
+      "v": [
+        "O'zgarmas fizik kattalik",
+        "Sinov zaryadi miqdoriga bog'liq kattalik",
+        "Tasodifiy o'zgaruvchan kattalik",
+        "Doimo nolga teng kattalik"
+      ],
+      "t": 0,
+      "izoh": "Wp/q₀ nisbati maydonning ayni nuqtasi uchun o'zgarmas bo'lib, u potensial deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#af984a92"
+    },
+    {
+      "q": "Nuqtaviy zaryaddan bir xil uzoqlikda joylashgan nuqtalarning potensiallari qanday bo'ladi?",
+      "v": [
+        "Teng bo'ladi",
+        "Har xil bo'ladi",
+        "Uzoqlikka proporsional o'zgaradi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Nuqtaviy zaryaddan bir xil uzoqlikdagi nuqtalar potensiallari teng bo'ladi — shu nuqtalar ekvipotensial sirt hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#95549431"
+    },
+    {
+      "q": "q zaryaddan r₁ masofada turgan q₀ zaryadni r₂ masofaga ko'chirishda bajarilgan ish qanday topiladi?",
+      "v": [
+        "A = k·q·q₀/r₁ – k·q·q₀/r₂",
+        "A = k·q·q₀/(r₁ + r₂)",
+        "A = k·q·q₀·(r₂ – r₁)",
+        "A = k·q·q₀/r₁²"
+      ],
+      "t": 0,
+      "izoh": "A = k·q·q₀/r₁ – k·q·q₀/r₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#d6ff836b"
+    },
+    {
+      "q": "Elektr maydonning ikki nuqtasi orasidagi potensiallar farqi uchun yana qanday atama ishlatiladi?",
+      "v": [
+        "Potensiallar ayirmasi",
+        "Potensiallar ko'paytmasi",
+        "Potensiallar summasi",
+        "Potensiallar gradienti noli"
+      ],
+      "t": 0,
+      "izoh": "Darslikda potensiallar farqi (ayirmasi) deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#302caeff"
+    },
+    {
+      "q": "Maydon kuchlanganligi katta bo'lgan joyda ekvipotensial sirtlar orasidagi masofa (bir xil potensiallar farqida) qanday bo'ladi?",
+      "v": [
+        "Kichik bo'ladi",
+        "Katta bo'ladi",
+        "Maydon kuchlanganligiga bog'liq emas",
+        "Doimo nolga teng"
+      ],
+      "t": 0,
+      "izoh": "E = (φ₁ – φ₂)/d ga ko'ra, bir xil potensiallar farqida E katta bo'lsa, d kichik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#4c5bc808"
+    },
+    {
+      "q": "Musbat nuqtaviy zaryad maydonida zaryaddan uzoqlashgan sari potensial qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Avval ortib keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "φ = k·q/r ga ko'ra, musbat nuqtaviy zaryaddan uzoqlashgan sari (r oshganda) potensial kamayadi; manfiy zaryadda esa potensial nolga yaqinlashib ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#f9576c94"
+    },
+    {
+      "q": "Ikki nuqta orasidagi potensiallar farqi nolga teng bo'lsa, zaryadni shu nuqtalar orasida ko'chirishda elektr maydonning bajargan ishi qancha?",
+      "v": [
+        "Nolga teng",
+        "Musbat",
+        "Manfiy",
+        "Zaryad miqdoriga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "A = q₀·(φ₁ – φ₂) ga ko'ra, φ₁ = φ₂ bo'lsa A = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#62db5641"
+    },
+    {
+      "q": "Zaryad ekvipotensial sirt bo'ylab ko'chirilsa, elektr maydon bajargan ish qancha bo'ladi?",
+      "v": [
+        "Nolga teng",
+        "Musbat va maksimal",
+        "Manfiy",
+        "Sirt radiusiga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Ekvipotensial sirt bo'ylab potensiallar farqi nol, demak A = q₀·Δφ = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#1968d159"
+    },
+    {
+      "q": "Potensial energiya bilan potensial o'rtasidagi bog'lanish qanday?",
+      "v": [
+        "Potensial — birlik zaryadga to'g'ri keladigan potensial energiya",
+        "Potensial — potensial energiyaning kvadrati",
+        "Potensial — potensial energiyaning zaryadga ko'paytmasi",
+        "Ular orasida bog'lanish yo'q"
+      ],
+      "t": 0,
+      "izoh": "φ = Wp/q₀, ya'ni potensial birlik zaryadga to'g'ri keladigan potensial energiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#d969d082"
+    },
+    {
+      "q": "Bir xil nuqtada joylashgan har xil sinov zaryadlarining potensial energiyalari qanday bo'ladi?",
+      "v": [
+        "Har xil bo'ladi, lekin energiyaning zaryadga nisbati o'zgarmas",
+        "Har doim bir xil bo'ladi",
+        "Nolga teng bo'ladi",
+        "Zaryad ishorasiga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Har xil sinov zaryadlarining potensial energiyalari har xil, lekin Wp/q₀ nisbati o'zgarmas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#0d4d642f"
+    },
+    {
+      "q": "Nuqtaviy zaryad hosil qilgan maydon potensiali masofaga qanday bog'langan?",
+      "v": [
+        "Masofaga teskari proporsional",
+        "Masofaning kvadratiga teskari proporsional",
+        "Masofaga to'g'ri proporsional",
+        "Masofaga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "φ = k·q/r — potensial masofaga teskari proporsional (kuchlanganlik esa r² ga teskari proporsional).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#f97813f9"
+    },
+    {
+      "q": "Elektrostatik maydon kuchlari konservativ bo'lmasa edi, potensial energiyasi tushunchasi mazmunga ega bo'larmidi?",
+      "v": [
+        "Yo'q, chunki potensial energiya faqat konservativ kuchlar uchun aniqlanadi",
+        "Ha, u baribir mavjud bo'lardi",
+        "Faqat musbat zaryadlar uchun bo'lardi",
+        "Faqat bir jinsli maydonlarda bo'lardi"
+      ],
+      "t": 0,
+      "izoh": "Potensial energiya tushunchasi faqat konservativ kuchlar maydoni uchun mazmunga ega, chunki ish trayektoriyaga bog'liq bo'lmasligi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial#11b534cc"
+    }
+  ]
+}

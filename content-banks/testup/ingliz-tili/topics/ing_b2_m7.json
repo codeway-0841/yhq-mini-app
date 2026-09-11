@@ -1,0 +1,1306 @@
+{
+  "nom": "Modals of deduction (past)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "There is mud on the carpet. Someone ___ in with dirty boots.",
+      "v": [
+        "must have come",
+        "must come",
+        "must had come",
+        "must be coming"
+      ],
+      "t": 0,
+      "izoh": "Dalil kuchli, o'tmish — must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#36e28e88"
+    },
+    {
+      "q": "The cake is gone. The children ___ it.",
+      "v": [
+        "must have eaten",
+        "must eat",
+        "must have ate",
+        "can't eat"
+      ],
+      "t": 0,
+      "izoh": "Dalil kuchli — must have eaten.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#20eb3a8d"
+    },
+    {
+      "q": "Find the mistake: 'The children must be exhausted after the trip last week.'",
+      "v": [
+        "The children",
+        "must be",
+        "exhausted",
+        "after the trip last week"
+      ],
+      "t": 1,
+      "izoh": "O'tmish taxmini — must have been (#119).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#25d1d1f3"
+    },
+    {
+      "q": "He ___ the message — his phone was switched off all day.",
+      "v": [
+        "can't read",
+        "mustn't have read",
+        "can't reading",
+        "can't have read"
+      ],
+      "t": 3,
+      "izoh": "Mumkin emas — can't have + V3 (#109: mustn't emas).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#bb6d8c66"
+    },
+    {
+      "q": "Which sentence is about an activity in progress?",
+      "v": [
+        "They must have left at six.",
+        "They must have been waiting for hours.",
+        "They can't have waited long.",
+        "They might have waited outside."
+      ],
+      "t": 1,
+      "izoh": "have been + -ing — jarayon.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#64859f5c"
+    },
+    {
+      "q": "Find the mistake: 'We must of taken the wrong road.'",
+      "v": [
+        "We",
+        "must of",
+        "taken",
+        "the wrong road"
+      ],
+      "t": 1,
+      "izoh": "«must of» yo'q — must have.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#430d301b"
+    },
+    {
+      "q": "Her bag is still here, so she ___ the office.",
+      "v": [
+        "can't leave",
+        "mustn't have left",
+        "might leave",
+        "can't have left"
+      ],
+      "t": 3,
+      "izoh": "Sumka shu yerda — mumkin emas: can't have left.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#ac333501"
+    },
+    {
+      "q": "Where ___ my glasses? They were here a minute ago.",
+      "v": [
+        "could I have put",
+        "could I put",
+        "I could have put",
+        "must I have put"
+      ],
+      "t": 0,
+      "izoh": "Savol — could + ega + have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#31280be1"
+    },
+    {
+      "q": "Find the mistake: 'Somebody must have stole my bike from the yard.'",
+      "v": [
+        "Somebody",
+        "must have",
+        "stole",
+        "from the yard"
+      ],
+      "t": 2,
+      "izoh": "have dan keyin V3: stolen (#91).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#2cb05803"
+    },
+    {
+      "q": "Perhaps she did not hear the alarm. = She ___ the alarm.",
+      "v": [
+        "can't have heard",
+        "mustn't have heard",
+        "might not have heard",
+        "might not hear"
+      ],
+      "t": 2,
+      "izoh": "Ishonchsiz inkor — might not have heard.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#c9ade7ef"
+    },
+    {
+      "q": "The lights were on all night, so someone ___ awake.",
+      "v": [
+        "must be",
+        "must have been",
+        "must to have been",
+        "must have be"
+      ],
+      "t": 1,
+      "izoh": "O'tmish — must have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#413c4d25"
+    },
+    {
+      "q": "Which sentence means «I am sure they were not at home»?",
+      "v": [
+        "They mustn't have been at home.",
+        "They might not have been at home.",
+        "They can't be at home.",
+        "They can't have been at home."
+      ],
+      "t": 3,
+      "izoh": "Qat'iy inkor, o'tmish — can't have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#6b50b351"
+    },
+    {
+      "q": "I don't know where she went. She ___ to the shops.",
+      "v": [
+        "might have gone",
+        "might gone",
+        "must have going",
+        "can have gone"
+      ],
+      "t": 0,
+      "izoh": "Ehtimol — might have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#fb68ab98"
+    },
+    {
+      "q": "He only left five minutes ago, so he ___ the airport yet.",
+      "v": [
+        "can't have reach",
+        "can't have reached",
+        "must have reached",
+        "can't reached"
+      ],
+      "t": 1,
+      "izoh": "Imkonsiz hali — can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#2247d51b"
+    },
+    {
+      "q": "There are muddy footprints inside. A stranger ___ in.",
+      "v": [
+        "must have came",
+        "can't have come",
+        "must have come",
+        "must come"
+      ],
+      "t": 2,
+      "izoh": "must have come.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#5aa0fdd8"
+    },
+    {
+      "q": "I'm not sure who called. It ___ your sister.",
+      "v": [
+        "may been",
+        "must been",
+        "may be",
+        "may have been"
+      ],
+      "t": 3,
+      "izoh": "Ehtimol — may have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#a7d9246e"
+    },
+    {
+      "q": "The window is broken. The children ___ football near the house.",
+      "v": [
+        "must have been playing",
+        "must been playing",
+        "can't have been playing",
+        "must playing"
+      ],
+      "t": 0,
+      "izoh": "Davomiy o'tmish taxmini — must have been + V-ing.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#47cdbd6f"
+    },
+    {
+      "q": "He passed with the top mark, so he ___ the exam.",
+      "v": [
+        "must have failed",
+        "can't have failed",
+        "might have failed",
+        "can't have fail"
+      ],
+      "t": 1,
+      "izoh": "Imkonsiz — can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#3206bb82"
+    },
+    {
+      "q": "Which is grammatically correct?",
+      "v": [
+        "You might have forgot your umbrella.",
+        "You might forgotten your umbrella.",
+        "You might have forgotten your umbrella.",
+        "You might have forget your umbrella."
+      ],
+      "t": 2,
+      "izoh": "might have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#76b3a7ad"
+    },
+    {
+      "q": "Nobody answered the door. They ___ out.",
+      "v": [
+        "must have be",
+        "can't have been",
+        "must been",
+        "must have been"
+      ],
+      "t": 3,
+      "izoh": "must have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#c891ceac"
+    },
+    {
+      "q": "The soup tastes salty. He ___ too much salt.",
+      "v": [
+        "must have added",
+        "must have add",
+        "can't have added",
+        "must add"
+      ],
+      "t": 0,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#c21848b8"
+    },
+    {
+      "q": "She looks exhausted. She ___ well last night.",
+      "v": [
+        "must have slept",
+        "can't have slept",
+        "can't have sleep",
+        "might have slept"
+      ],
+      "t": 1,
+      "izoh": "can't have + V3 (uxlamagan).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#75e8f077"
+    },
+    {
+      "q": "I'm unsure, but the noise ___ the wind.",
+      "v": [
+        "could have be",
+        "must been",
+        "could have been",
+        "could be"
+      ],
+      "t": 2,
+      "izoh": "Ehtimol — could have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#b434f8d4"
+    },
+    {
+      "q": "His hands are covered in paint. He ___ the fence.",
+      "v": [
+        "must painted",
+        "can't have painted",
+        "must have paint",
+        "must have painted"
+      ],
+      "t": 3,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#36088949"
+    },
+    {
+      "q": "They left at dawn, so they ___ home by now.",
+      "v": [
+        "must have arrived",
+        "must have arrive",
+        "can't have arrived",
+        "must arriving"
+      ],
+      "t": 0,
+      "izoh": "Xulosa — must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#29a84245"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "He can't have drove there; he has no licence.",
+        "He can't have driven there; he has no licence.",
+        "He can't drove there; he has no licence.",
+        "He can't have drive there; he has no licence."
+      ],
+      "t": 1,
+      "izoh": "can't have + V3 (driven).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#9a16dc9c"
+    },
+    {
+      "q": "The floor is clean and shiny. Somebody ___ it.",
+      "v": [
+        "must mopped",
+        "can't have mopped",
+        "must have mopped",
+        "must have mop"
+      ],
+      "t": 2,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#aae6e1a5"
+    },
+    {
+      "q": "I can't remember locking the door. I ___ it open.",
+      "v": [
+        "might left",
+        "must have leaving",
+        "may left",
+        "might have left"
+      ],
+      "t": 3,
+      "izoh": "might have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#cc17d315"
+    },
+    {
+      "q": "She hates fish, so she ___ the salmon.",
+      "v": [
+        "can't have ordered",
+        "must have ordered",
+        "might have ordered",
+        "can't have order"
+      ],
+      "t": 0,
+      "izoh": "can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#c0bc7355"
+    },
+    {
+      "q": "The report is full of errors. He ___ it carefully.",
+      "v": [
+        "must have checked",
+        "can't have checked",
+        "can't have check",
+        "might have checked"
+      ],
+      "t": 1,
+      "izoh": "can't have + V3 (tekshirmagan).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#24483c13"
+    },
+    {
+      "q": "There's a strange smell. Something ___ in the oven.",
+      "v": [
+        "must burned",
+        "can't have burned",
+        "must have burned",
+        "must have burn"
+      ],
+      "t": 2,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#5abfcc89"
+    },
+    {
+      "q": "I'm not certain who won, but it ___ the home team.",
+      "v": [
+        "may been",
+        "must been",
+        "may be",
+        "may have been"
+      ],
+      "t": 3,
+      "izoh": "Ehtimol — may have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#d5c8a341"
+    },
+    {
+      "q": "He remembers nothing about the trip. He ___ asleep the whole time.",
+      "v": [
+        "must have been",
+        "must have be",
+        "can't have been",
+        "must been"
+      ],
+      "t": 0,
+      "izoh": "must have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#67c1bf91"
+    },
+    {
+      "q": "Which sentence has no mistake?",
+      "v": [
+        "They must have took the wrong turn.",
+        "They must have taken the wrong turn.",
+        "They must taken the wrong turn.",
+        "They must have take the wrong turn."
+      ],
+      "t": 1,
+      "izoh": "must have + V3 (taken).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#b1c66e15"
+    },
+    {
+      "q": "Your coat is soaking wet. You ___ an umbrella.",
+      "v": [
+        "must have taken",
+        "might have taken",
+        "can't have taken",
+        "can't have took"
+      ],
+      "t": 2,
+      "izoh": "can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#d6df8229"
+    },
+    {
+      "q": "The dog is barking at the gate. Someone ___ outside.",
+      "v": [
+        "must have be",
+        "can't been",
+        "must be",
+        "must have been"
+      ],
+      "t": 3,
+      "izoh": "must have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#d96759cc"
+    },
+    {
+      "q": "I didn't hear the alarm. I ___ through it.",
+      "v": [
+        "must have slept",
+        "must slept",
+        "can't have slept",
+        "must have sleep"
+      ],
+      "t": 0,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#b6de96b7"
+    },
+    {
+      "q": "She isn't sure, but she thinks she ___ the stove on.",
+      "v": [
+        "may left",
+        "may have left",
+        "must have leaving",
+        "may leave"
+      ],
+      "t": 1,
+      "izoh": "may have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#bf2de611"
+    },
+    {
+      "q": "He was with me all evening, so he ___ the money.",
+      "v": [
+        "must have stolen",
+        "might have stolen",
+        "can't have stolen",
+        "can't have stole"
+      ],
+      "t": 2,
+      "izoh": "can't have + V3 (stolen).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#3d0f1060"
+    },
+    {
+      "q": "The plants have grown so much. You ___ them well.",
+      "v": [
+        "must watered",
+        "can't have watered",
+        "must have water",
+        "must have watered"
+      ],
+      "t": 3,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#f6b8623c"
+    },
+    {
+      "q": "I have no idea where he is. He ___ to the gym.",
+      "v": [
+        "might have gone",
+        "might gone",
+        "must have going",
+        "may gone"
+      ],
+      "t": 0,
+      "izoh": "might have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#b94fae1b"
+    },
+    {
+      "q": "There's no signal here, so she ___ your call.",
+      "v": [
+        "must have received",
+        "can't have received",
+        "might have received",
+        "can't have receive"
+      ],
+      "t": 1,
+      "izoh": "can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#6a114626"
+    },
+    {
+      "q": "Choose the correct form.",
+      "v": [
+        "It must have be a difficult decision.",
+        "It must been a difficult decision.",
+        "It must have been a difficult decision.",
+        "It must have being a difficult decision."
+      ],
+      "t": 2,
+      "izoh": "must have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#eed99a6c"
+    },
+    {
+      "q": "The bill is huge. They ___ a lot.",
+      "v": [
+        "must ordered",
+        "can't have ordered",
+        "must have order",
+        "must have ordered"
+      ],
+      "t": 3,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#0f61710b"
+    },
+    {
+      "q": "He arrived without a scratch, so the accident ___ serious.",
+      "v": [
+        "can't have been",
+        "must have been",
+        "might have been",
+        "can't have be"
+      ],
+      "t": 0,
+      "izoh": "can't have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#a093885b"
+    },
+    {
+      "q": "I'm not sure, but they ___ the message.",
+      "v": [
+        "could have misunderstand",
+        "could have misunderstood",
+        "must misunderstood",
+        "could misunderstand"
+      ],
+      "t": 1,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#d4e8358c"
+    },
+    {
+      "q": "Her eyes are red. She ___.",
+      "v": [
+        "must been crying",
+        "can't been crying",
+        "must have been crying",
+        "must have cry"
+      ],
+      "t": 2,
+      "izoh": "must have been + V-ing.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#223dc190"
+    },
+    {
+      "q": "The team practised every day, so they ___ hard.",
+      "v": [
+        "must have train",
+        "can't have trained",
+        "must training",
+        "must have trained"
+      ],
+      "t": 3,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#993f8989"
+    },
+    {
+      "q": "He never studied French, so he ___ the letter.",
+      "v": [
+        "can't have written",
+        "must have written",
+        "might have written",
+        "can't have wrote"
+      ],
+      "t": 0,
+      "izoh": "can't have + V3 (written).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#e41d7e51"
+    },
+    {
+      "q": "The garden is full of weeds. Nobody ___ it for weeks.",
+      "v": [
+        "must have touched",
+        "can't have touched",
+        "might have touched",
+        "can't have touch"
+      ],
+      "t": 1,
+      "izoh": "can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#0cb34e50"
+    },
+    {
+      "q": "There are dishes everywhere. They ___ a party.",
+      "v": [
+        "must have have",
+        "can't have had",
+        "must have had",
+        "must had"
+      ],
+      "t": 2,
+      "izoh": "must have had.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#db63a357"
+    },
+    {
+      "q": "I don't know why he's late. He ___ stuck in traffic.",
+      "v": [
+        "might got",
+        "must have getting",
+        "may got",
+        "might have got"
+      ],
+      "t": 3,
+      "izoh": "might have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#4cb00f88"
+    },
+    {
+      "q": "She's allergic to nuts, so she ___ that cake.",
+      "v": [
+        "can't have eaten",
+        "must have eaten",
+        "might have eaten",
+        "can't have ate"
+      ],
+      "t": 0,
+      "izoh": "can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#55407df5"
+    },
+    {
+      "q": "The road is blocked with snow. It ___ heavily overnight.",
+      "v": [
+        "must snowed",
+        "must have snowed",
+        "can't have snowed",
+        "must have snow"
+      ],
+      "t": 1,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#3d9e124b"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "He may have miss the bus.",
+        "He may missed the bus.",
+        "He may have missed the bus.",
+        "He may have missing the bus."
+      ],
+      "t": 2,
+      "izoh": "may have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#21ac92a9~2"
+    },
+    {
+      "q": "You look shocked. You ___ the news already.",
+      "v": [
+        "must have hear",
+        "can't have heard",
+        "must hearing",
+        "must have heard"
+      ],
+      "t": 3,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#864cff08"
+    },
+    {
+      "q": "They had no map, so they ___ the way easily.",
+      "v": [
+        "can't have found",
+        "must have found",
+        "might have found",
+        "can't have find"
+      ],
+      "t": 0,
+      "izoh": "can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#728df877"
+    },
+    {
+      "q": "I'm not sure, but the parcel ___ yesterday.",
+      "v": [
+        "may arrived",
+        "may have arrived",
+        "must arriving",
+        "may arrive"
+      ],
+      "t": 1,
+      "izoh": "may have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#9896e67c"
+    },
+    {
+      "q": "His car isn't here. He ___ already.",
+      "v": [
+        "must have leave",
+        "can't have left",
+        "must have left",
+        "must leaving"
+      ],
+      "t": 2,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#94f8ff52"
+    },
+    {
+      "q": "The baby is calm and full. Someone ___ her.",
+      "v": [
+        "must have feed",
+        "can't have fed",
+        "must fed",
+        "must have fed"
+      ],
+      "t": 3,
+      "izoh": "must have fed.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#03b5b128"
+    },
+    {
+      "q": "He was abroad in May, so he ___ at the meeting.",
+      "v": [
+        "can't have been",
+        "must have been",
+        "might have been",
+        "can't have be"
+      ],
+      "t": 0,
+      "izoh": "can't have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#bfc4b0eb"
+    },
+    {
+      "q": "I can't find the remote. The kids ___ it.",
+      "v": [
+        "might hidden",
+        "might have hidden",
+        "must have hiding",
+        "may hid"
+      ],
+      "t": 1,
+      "izoh": "might have + V3 (hidden).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#dd940e40"
+    },
+    {
+      "q": "The engine is making a strange noise. Something ___ wrong.",
+      "v": [
+        "must have go",
+        "can't have gone",
+        "must have gone",
+        "must went"
+      ],
+      "t": 2,
+      "izoh": "must have gone.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#c062a08f"
+    },
+    {
+      "q": "Choose the sentence without an error.",
+      "v": [
+        "They can't have finish the project already.",
+        "They can't finished the project already.",
+        "They can't have finishing the project already.",
+        "They can't have finished the project already."
+      ],
+      "t": 3,
+      "izoh": "can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#924ea999"
+    },
+    {
+      "q": "The shop is empty and dark. It ___ hours ago.",
+      "v": [
+        "must have closed",
+        "must closed",
+        "can't have closed",
+        "must have close"
+      ],
+      "t": 0,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#1d637778"
+    },
+    {
+      "q": "I'm not certain, but she ___ the wrong bus.",
+      "v": [
+        "could have catch",
+        "could have caught",
+        "must catching",
+        "could catch"
+      ],
+      "t": 1,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#6071d4e8"
+    },
+    {
+      "q": "He knows nothing about it, so nobody ___ him.",
+      "v": [
+        "must have told",
+        "might have told",
+        "can't have told",
+        "can't have telled"
+      ],
+      "t": 2,
+      "izoh": "can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#2139ec2c"
+    },
+    {
+      "q": "Your keyboard is sticky. You ___ something on it.",
+      "v": [
+        "must spilled",
+        "can't have spilled",
+        "must have spill",
+        "must have spilled"
+      ],
+      "t": 3,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#14a4e345"
+    },
+    {
+      "q": "I have no idea where they went; they ___ home early.",
+      "v": [
+        "may have gone",
+        "may gone",
+        "must going",
+        "may go"
+      ],
+      "t": 0,
+      "izoh": "may have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#31d7d8ac"
+    },
+    {
+      "q": "There were no witnesses, so the police ___ much.",
+      "v": [
+        "must have learned",
+        "can't have learned",
+        "might have learned",
+        "can't have learn"
+      ],
+      "t": 1,
+      "izoh": "can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#7a0a98df"
+    },
+    {
+      "q": "The kettle is hot. Someone ___ tea.",
+      "v": [
+        "must have make",
+        "can't have made",
+        "must have made",
+        "must made"
+      ],
+      "t": 2,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#098c5208"
+    },
+    {
+      "q": "She's not answering emails. She ___ on holiday.",
+      "v": [
+        "might gone",
+        "must going",
+        "may goes",
+        "might have gone"
+      ],
+      "t": 3,
+      "izoh": "might have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#57a24add"
+    },
+    {
+      "q": "He failed his driving test twice, so he ___ nervous.",
+      "v": [
+        "must have felt",
+        "must have feel",
+        "can't have felt",
+        "must feeling"
+      ],
+      "t": 0,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#ca349f57"
+    },
+    {
+      "q": "Which is correct?",
+      "v": [
+        "The thief must have climb through the window.",
+        "The thief must have climbed through the window.",
+        "The thief must climbed through the window.",
+        "The thief must have climbing through the window."
+      ],
+      "t": 1,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#bc249275"
+    },
+    {
+      "q": "There's still food on his plate. He ___ hungry.",
+      "v": [
+        "must have been",
+        "might have been",
+        "can't have been",
+        "can't have be"
+      ],
+      "t": 2,
+      "izoh": "can't have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#26a48a63"
+    },
+    {
+      "q": "I'm not sure, but the flight ___ delayed.",
+      "v": [
+        "may been",
+        "must be",
+        "may being",
+        "may have been"
+      ],
+      "t": 3,
+      "izoh": "may have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#01dbcc7f"
+    },
+    {
+      "q": "The room smells of smoke. Someone ___ in here.",
+      "v": [
+        "must have smoked",
+        "must smoked",
+        "can't have smoked",
+        "must have smoke"
+      ],
+      "t": 0,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#b59b6ea5"
+    },
+    {
+      "q": "She never learned to swim, so she ___ across the river.",
+      "v": [
+        "must have swum",
+        "can't have swum",
+        "might have swum",
+        "can't have swam"
+      ],
+      "t": 1,
+      "izoh": "can't have + V3 (swum).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#1c7ea12e"
+    },
+    {
+      "q": "His story keeps changing. He ___ the truth.",
+      "v": [
+        "must have told",
+        "might have told",
+        "can't have told",
+        "can't have telled"
+      ],
+      "t": 2,
+      "izoh": "can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#7e302581"
+    },
+    {
+      "q": "I don't know how it broke. It ___ during the move.",
+      "v": [
+        "might cracked",
+        "must cracking",
+        "may crack",
+        "might have cracked"
+      ],
+      "t": 3,
+      "izoh": "might have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#c517d8f6"
+    },
+    {
+      "q": "The cake tin is empty and crumbs are everywhere. The children ___ it.",
+      "v": [
+        "must have eaten",
+        "must eaten",
+        "can't have eaten",
+        "must have eat"
+      ],
+      "t": 0,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#ff30c4a1"
+    },
+    {
+      "q": "He's fluent in Arabic, so he ___ in the Middle East.",
+      "v": [
+        "must have live",
+        "must have lived",
+        "can't have lived",
+        "must living"
+      ],
+      "t": 1,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#4a537930"
+    },
+    {
+      "q": "There's no ticket in her bag. She ___ it.",
+      "v": [
+        "might lost",
+        "must have losing",
+        "might have lost",
+        "may lose"
+      ],
+      "t": 2,
+      "izoh": "might have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#c30fd5b7"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "We can't have meet before.",
+        "We can't met before.",
+        "We can't have meeting before.",
+        "We can't have met before."
+      ],
+      "t": 3,
+      "izoh": "can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#9a16dc9c~2"
+    },
+    {
+      "q": "The whole town lost power. There ___ a storm.",
+      "v": [
+        "must have been",
+        "must have be",
+        "can't been",
+        "must be"
+      ],
+      "t": 0,
+      "izoh": "must have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#2e69368f"
+    },
+    {
+      "q": "He's not usually rude, so he ___ it on purpose.",
+      "v": [
+        "must have done",
+        "can't have done",
+        "might have done",
+        "can't have did"
+      ],
+      "t": 1,
+      "izoh": "can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#13a1f239"
+    },
+    {
+      "q": "I'm not certain who paid, but it ___ Sarah.",
+      "v": [
+        "may been",
+        "must be",
+        "may have been",
+        "may being"
+      ],
+      "t": 2,
+      "izoh": "may have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#7c33c768"
+    },
+    {
+      "q": "The suitcase is empty. She ___ everything already.",
+      "v": [
+        "must unpacked",
+        "can't have unpacked",
+        "must have unpack",
+        "must have unpacked"
+      ],
+      "t": 3,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#63b95ae7"
+    },
+    {
+      "q": "They didn't know the code, so they ___ the safe.",
+      "v": [
+        "can't have opened",
+        "must have opened",
+        "might have opened",
+        "can't have open"
+      ],
+      "t": 0,
+      "izoh": "can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#3773f984"
+    },
+    {
+      "q": "His shoes are muddy and wet. He ___ in the rain.",
+      "v": [
+        "must been walking",
+        "must have been walking",
+        "can't been walking",
+        "must have walk"
+      ],
+      "t": 1,
+      "izoh": "must have been + V-ing.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#17f403ad"
+    },
+    {
+      "q": "I have no idea why she's upset. Someone ___ her feelings.",
+      "v": [
+        "must have hurting",
+        "might hurt",
+        "might have hurt",
+        "may hurted"
+      ],
+      "t": 2,
+      "izoh": "might have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#2ba8ca2f"
+    },
+    {
+      "q": "The results came out instantly, so the machine ___ broken.",
+      "v": [
+        "must have been",
+        "might have been",
+        "can't have be",
+        "can't have been"
+      ],
+      "t": 3,
+      "izoh": "can't have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#e515b2aa"
+    },
+    {
+      "q": "The letters are all opened. He ___ them.",
+      "v": [
+        "must have read",
+        "must have readed",
+        "can't have read",
+        "must reading"
+      ],
+      "t": 0,
+      "izoh": "must have + V3 (read).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#dd232c6b"
+    },
+    {
+      "q": "She's not here yet; she ___ the earlier train.",
+      "v": [
+        "might missed",
+        "might have missed",
+        "must have missing",
+        "may miss"
+      ],
+      "t": 1,
+      "izoh": "might have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#dfe8525d"
+    },
+    {
+      "q": "He had no tools, so he ___ the shelf himself.",
+      "v": [
+        "must have built",
+        "might have built",
+        "can't have built",
+        "can't have builded"
+      ],
+      "t": 2,
+      "izoh": "can't have + V3 (built).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#382390e7"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "Someone must have broke the vase.",
+        "Someone must broke the vase.",
+        "Someone must have breaking the vase.",
+        "Someone must have broken the vase."
+      ],
+      "t": 3,
+      "izoh": "must have + V3 (broken).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#21ac92a9~3"
+    },
+    {
+      "q": "The teacher looks pleased. We ___ well in the test.",
+      "v": [
+        "must have done",
+        "must have did",
+        "can't have done",
+        "must doing"
+      ],
+      "t": 0,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#c5f0ea9f"
+    },
+    {
+      "q": "I'm not sure, but they ___ the meeting for Monday.",
+      "v": [
+        "may scheduled",
+        "may have scheduled",
+        "must scheduling",
+        "may schedule"
+      ],
+      "t": 1,
+      "izoh": "may have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#01a07e8e"
+    },
+    {
+      "q": "The streets are bone dry, so it ___ during the night.",
+      "v": [
+        "must have rained",
+        "might have rained",
+        "can't have rained",
+        "can't have rain"
+      ],
+      "t": 2,
+      "izoh": "can't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#0c92b444"
+    },
+    {
+      "q": "He arrived home covered in medals. He ___ the competition.",
+      "v": [
+        "must have win",
+        "can't have won",
+        "must winning",
+        "must have won"
+      ],
+      "t": 3,
+      "izoh": "must have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m7#405b1b8b"
+    }
+  ]
+}

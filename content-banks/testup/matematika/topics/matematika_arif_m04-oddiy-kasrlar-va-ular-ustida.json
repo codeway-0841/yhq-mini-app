@@ -1,0 +1,1609 @@
+{
+  "nom": "Oddiy kasrlar va ular ustida amallar",
+  "bolim": "Sonlar va ular ustida amallar",
+  "blok": "arif",
+  "rasmiyBolim": 1,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Kasrning asosiy xossasiga ko'ra 7/12 kasrni maxraji 60 bo'lgan teng kasr bilan almashtirsak, uning suratida qanday son turadi?",
+      "v": [
+        "35",
+        "55",
+        "5",
+        "84"
+      ],
+      "t": 0,
+      "izoh": "Maxraj 12 dan 60 ga o'tdi, ya'ni 60 : 12 = 5 marta ortdi. Kasrning asosiy xossasiga ko'ra surat ham xuddi shu songa ko'paytiriladi: 7 · 5 = 35. Javob: 35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-asosiy-xossasi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#8cac0cb2"
+    },
+    {
+      "q": "Dilnoza 5/8 kasrning surati va maxrajini bir xil songa ko'paytirib, maxraji 96 bo'lgan kasr hosil qildi. Yangi kasrning surati nechaga teng?",
+      "v": [
+        "12",
+        "60",
+        "93",
+        "40"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytuvchini topamiz: 96 : 8 = 12. Endi surat ham 12 ga ko'paytiriladi: 5 · 12 = 60. Javob: 60. 93 varianti maxrajga qo'shilgan 88 ni suratga ham qo'shish xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-asosiy-xossasi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#25ad4eff"
+    },
+    {
+      "q": "Tenglik to'g'ri bo'lishi uchun 4/9 = 28/x kasrlar tengligida x harfi o'rniga qanday son qo'yish kerak?",
+      "v": [
+        "33",
+        "36",
+        "63",
+        "252"
+      ],
+      "t": 2,
+      "izoh": "Surat 4 dan 28 ga o'tgan, ya'ni 28 : 4 = 7 marta ortgan. Maxraj ham 7 ga ko'paytiriladi: 9 · 7 = 63. Javob: 63. 33 varianti maxrajga 28 va 4 ning ayirmasini qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-asosiy-xossasi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#112bc619"
+    },
+    {
+      "q": "Bir kasrning surati bilan maxraji yig'indisi 91 ga teng. Bu kasr qisqartirilgandan keyin 3/10 hosil bo'ldi. Dastlabki kasrning surati nechaga teng?",
+      "v": [
+        "70",
+        "30",
+        "13",
+        "21"
+      ],
+      "t": 3,
+      "izoh": "Qisqargan kasrda surat va maxraj yig'indisi 3 + 10 = 13. Dastlabki yig'indi 91 bo'lgani uchun ko'paytuvchi 91 : 13 = 7. Demak surat 3 · 7 = 21, maxraj esa 10 · 7 = 70. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-asosiy-xossasi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#cb98601e"
+    },
+    {
+      "q": "Maktab bayramida 96 o'quvchidan 72 tasi qatnashdi. Qatnashganlar sonining barcha o'quvchilar soniga nisbatini qisqarmas kasr ko'rinishida yozing.",
+      "v": [
+        "3/4",
+        "2/3",
+        "5/6",
+        "7/8"
+      ],
+      "t": 0,
+      "izoh": "72 va 96 sonlarining eng katta umumiy bo'luvchisi 24. Ikkala sonni ham shunga bo'lamiz: 72 : 24 = 3, 96 : 24 = 4. Nisbat 3/4 ga teng. 2/3 varianti bo'lish o'rniga ikkala sondan 24 ni ayirish xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-qisqartirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#64a23350"
+    },
+    {
+      "q": "Anvar 156 betlik kitobning 104 betini o'qib chiqdi. O'qilgan betlar butun kitobning qanday qisqarmas kasr ulushini tashkil qiladi?",
+      "v": [
+        "1/2",
+        "2/3",
+        "3/4",
+        "4/5"
+      ],
+      "t": 1,
+      "izoh": "104 va 156 sonlarining eng katta umumiy bo'luvchisi 52. Bo'lamiz: 104 : 52 = 2, 156 : 52 = 3. Ulush 2/3 ga teng. 1/2 varianti ikkala sondan 52 ni ayirish xatosidan hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qisqartirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#00c739ed"
+    },
+    {
+      "q": "231/330 kasr qisqarmas ko'rinishga keltirildi. Hosil bo'lgan yangi kasrning maxraji nechaga teng?",
+      "v": [
+        "7",
+        "30",
+        "110",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytuvchilarga ajratamiz: 231 = 3 · 7 · 11, 330 = 2 · 3 · 5 · 11. Umumiy bo'luvchi 3 · 11 = 33. Endi 231 : 33 = 7, 330 : 33 = 10, ya'ni kasr 7/10. Maxraji 10. 7 varianti surat bilan chalkashtirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qisqartirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#e10c3358"
+    },
+    {
+      "q": "Bahodir kun davomida jami 2 soat 15 daqiqa dam oldi. Bu vaqt bir sutkaning qanday qisqarmas kasr ulushini tashkil qiladi?",
+      "v": [
+        "3/16",
+        "1/12",
+        "3/32",
+        "5/32"
+      ],
+      "t": 2,
+      "izoh": "2 soat 15 daqiqa 135 daqiqaga, bir sutka esa 1440 daqiqaga teng. 135 va 1440 ning eng katta umumiy bo'luvchisi 45: 135 : 45 = 3, 1440 : 45 = 32. Ulush 3/32. 3/16 varianti sutkani 12 soat deb olishdan, 5/32 esa vaqtni 225 daqiqa deb noto'g'ri aylantirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-qisqartirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#6a406472"
+    },
+    {
+      "q": "Do'kondagi 720 kg kartoshkaning 264 kg qismi bir kunda sotildi. Sotilgan kartoshka ulushini qisqarmas kasr bilan ifodalang.",
+      "v": [
+        "19/30",
+        "11/45",
+        "1/3",
+        "11/30"
+      ],
+      "t": 3,
+      "izoh": "264 va 720 sonlarining eng katta umumiy bo'luvchisi 24. Bo'lamiz: 264 : 24 = 11, 720 : 24 = 30, ya'ni ulush 11/30. 19/30 varianti sotilmay qolgan qismning ulushi, 1/3 esa 264 ni 240 ga yaxlitlashdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qisqartirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#980f44e6"
+    },
+    {
+      "q": "12/18, 15/28, 21/49 va 33/44 kasrlaridan qaysi biri qisqarmas kasr hisoblanadi?",
+      "v": [
+        "12/18",
+        "15/28",
+        "21/49",
+        "33/44"
+      ],
+      "t": 1,
+      "izoh": "12/18 kasr 6 ga, 21/49 kasr 7 ga, 33/44 kasr esa 11 ga qisqaradi. 15 = 3 · 5, 28 = 2 · 2 · 7 bo'lgani uchun ularning 1 dan boshqa umumiy bo'luvchisi yo'q. Demak 15/28 qisqarmas kasr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qisqarmas-kasrni-aniqlash",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#9dc96742"
+    },
+    {
+      "q": "14/35, 9/16, 22/33, 25/36, 18/45 va 13/40 kasrlarining nechtasi qisqarmas kasr bo'ladi?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "5 ta"
+      ],
+      "t": 1,
+      "izoh": "14/35 kasr 7 ga, 22/33 kasr 11 ga, 18/45 kasr 9 ga qisqaradi. Qolgan 9/16, 25/36 va 13/40 kasrlarda surat bilan maxrajning umumiy tub bo'luvchisi yo'q. Demak qisqarmas kasrlar soni 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qisqarmas-kasrni-aniqlash",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#9dfcec78"
+    },
+    {
+      "q": "15, 18, 20 va 35 sonlaridan qaysi biri n o'rniga qo'yilganda n/24 kasr qisqarmas bo'lib qoladi?",
+      "v": [
+        "15",
+        "18",
+        "20",
+        "35"
+      ],
+      "t": 3,
+      "izoh": "24 = 2 · 2 · 2 · 3 bo'lgani uchun kasr 2 yoki 3 ga qisqarishi mumkin. 15 soni 3 ga, 18 soni 6 ga, 20 soni 4 ga qisqaradi. 35 = 5 · 7 da bunday umumiy bo'luvchi yo'q, demak 35/24 qisqarmas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qisqarmas-kasrni-aniqlash",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#c1541842"
+    },
+    {
+      "q": "Qisqarmas kasrning surati maxrajidan 3 ga kichik, maxraji esa 12 dan katta emas. Shu shartlarni qanoatlantiruvchi kasrlar nechta?",
+      "v": [
+        "9 ta",
+        "3 ta",
+        "5 ta",
+        "6 ta"
+      ],
+      "t": 3,
+      "izoh": "Maxrajni d bilan belgilasak, surat d − 3 bo'ladi va u musbat bo'lishi shart, demak d 4 dan 12 gacha. d = 6, 9, 12 da kasr 3 ga qisqaradi. Qolgan d = 4, 5, 7, 8, 10, 11 uchun 1/4, 2/5, 4/7, 5/8, 7/10, 8/11 qisqarmas chiqadi. Javob: 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qisqarmas-kasrni-aniqlash",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#8e19223b"
+    },
+    {
+      "q": "5/12 va 7/18 kasrlarini umumiy maxrajga keltirishda eng kichik umumiy maxraj qanday bo'ladi?",
+      "v": [
+        "36",
+        "216",
+        "6",
+        "72"
+      ],
+      "t": 0,
+      "izoh": "12 = 2 · 2 · 3, 18 = 2 · 3 · 3. Eng kichik umumiy karrali har bir tub ko'paytuvchini eng katta darajada oladi: 2 · 2 · 3 · 3 = 36. 216 varianti maxrajlarni shunchaki ko'paytirishdan, 6 esa eng katta umumiy bo'luvchini olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-maxraj-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#3c44bc17"
+    },
+    {
+      "q": "3/8, 5/6 va 7/9 kasrlari bitta umumiy maxrajga keltirildi. Eng kichik umumiy maxraj nechaga teng bo'ladi?",
+      "v": [
+        "24",
+        "432",
+        "72",
+        "144"
+      ],
+      "t": 2,
+      "izoh": "Maxrajlarni ajratamiz: 8 = 2³, 6 = 2 · 3, 9 = 3². Eng kichik umumiy karralida har bir tub ko'paytuvchi eng katta darajasi bilan olinadi: 2³ · 3² = 72. 432 varianti uchala maxrajni ko'paytirishdan, 24 esa faqat 8 va 6 ni hisobga olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-maxraj-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#bc6e8ea3"
+    },
+    {
+      "q": "7/15 va 11/18 kasrlari 90 maxrajiga keltirildi. Bunda 11/18 kasrning yangi surati nechaga teng bo'ladi?",
+      "v": [
+        "55",
+        "42",
+        "83",
+        "66"
+      ],
+      "t": 0,
+      "izoh": "Qo'shimcha ko'paytuvchi 90 : 18 = 5 ga teng, shuning uchun surat ham 5 ga ko'paytiriladi: 11 · 5 = 55. 42 varianti 7/15 kasrning yangi surati, 83 esa 11 ga 72 ni qo'shish xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-maxraj-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#39234fbd"
+    },
+    {
+      "q": "Rustam bir ishning 1/6 qismini, Kamola esa shu ishning 3/10 qismini bajardi. Kasrlarni 30 maxrajiga keltirib, Kamolaning ulushi Rustamnikidan qanchaga ko'p ekanini toping.",
+      "v": [
+        "7/15",
+        "1/2",
+        "2/15",
+        "4/15"
+      ],
+      "t": 2,
+      "izoh": "Umumiy maxrajga keltiramiz: 1/6 = 5/30, 3/10 = 9/30. Ayirma 9/30 − 5/30 = 4/30, uni 2 ga qisqartirsak 2/15 chiqadi. 1/2 varianti suratlar va maxrajlarni alohida ayirishdan, 7/15 esa ayirish o'rniga qo'shishdan hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-maxraj-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#14c82eab"
+    },
+    {
+      "q": "Qaysi son 5/8 kasrga ko'paytirilganda ko'paytma aynan 1 ga teng bo'ladi?",
+      "v": [
+        "8/5",
+        "5/8",
+        "−5/8",
+        "8/13"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytmasi 1 ga teng sonlar o'zaro teskari deyiladi. Teskari son surat bilan maxrajni almashtirishdan topiladi, ya'ni 8/5. Tekshiramiz: 5/8 · 8/5 = 40/40 = 1. −5/8 varianti qarama-qarshi son bilan chalkashtirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-son",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#ca61c455"
+    },
+    {
+      "q": "Nodira 2 3/7 aralash songa bo'lish amalini bajarish uchun uning teskari sonidan foydalanmoqchi. Bu teskari son qaysi?",
+      "v": [
+        "17/7",
+        "7/17",
+        "2 7/3",
+        "1/17"
+      ],
+      "t": 1,
+      "izoh": "Avval aralash son noto'g'ri kasrga aylantiriladi: 2 3/7 = (2 · 7 + 3)/7 = 17/7. Teskari son surat bilan maxrajni almashtirishdan hosil bo'ladi, ya'ni 7/17. 2 7/3 varianti butun qismni saqlab qolib ag'darish xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-son",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#8b0dac93"
+    },
+    {
+      "q": "Birdan kichik qisqarmas kasr o'zining teskari soni bilan qo'shilganda 25/12 hosil bo'ldi. Shu kasrni aniqlang.",
+      "v": [
+        "4/3",
+        "12/25",
+        "3/4",
+        "5/12"
+      ],
+      "t": 2,
+      "izoh": "Kasr a/b bo'lsa, teskarisi b/a va yig'indi (a² + b²)/(ab) ko'rinishda bo'ladi. Demak ab = 12, a² + b² = 25 bo'lishi kerak: bunga a = 3, b = 4 mos keladi. Kasr birdan kichik bo'lgani uchun javob 3/4. 4/3 varianti shu shartni e'tiborsiz qoldirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-son",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#652f37d5"
+    },
+    {
+      "q": "5/9 va 7/12 kasrlaridan qaysi biri kattaroq va bu xulosa qanday asoslanadi?",
+      "v": [
+        "5/9, chunki uning maxraji kichikroq",
+        "Ikkala kasr o'zaro teng",
+        "7/12, chunki 36 maxrajda 21/36 kasr 20/36 dan katta",
+        "Bu kasrlarni taqqoslab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Umumiy maxraj sifatida 36 ni olamiz: 5/9 = 20/36, 7/12 = 21/36. Suratlarni solishtiramiz, 21 soni 20 dan katta, demak 7/12 kasr kattaroq. Maxrajning kichikligiga qarab xulosa chiqarish bu yerda noto'g'ri javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-kasrni-taqqoslash",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#eb8b4a17"
+    },
+    {
+      "q": "Zilola tortning 3/8 qismini, Malika esa shu tortning 2/5 qismini yedi. Ikkalasidan qaysi biri ko'proq tort yegan?",
+      "v": [
+        "Malika, chunki 16/40 kasr 15/40 dan katta",
+        "Zilola, chunki 3/8 kasrning maxraji kichik",
+        "Ikkalasi teng miqdorda yegan",
+        "Berilganlardan aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Umumiy maxraj 40 ni olamiz: 3/8 = 15/40, 2/5 = 16/40. Suratlar taqqoslanadi va 16 soni 15 dan katta, demak Malika ko'proq yegan. Maxraji kichik kasr doim katta degan xato qoida Zilola tomonga olib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-kasrni-taqqoslash",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#57cc0e4e"
+    },
+    {
+      "q": "7/15 va 7/13 kasrlarini taqqoslaganda o'quvchi qanday to'g'ri xulosaga kelishi kerak?",
+      "v": [
+        "7/15 kattaroq, chunki 15 soni 13 dan katta",
+        "Ikkala kasr bir xil qiymatga ega",
+        "Taqqoslash uchun ma'lumot yetarli emas",
+        "7/13 kattaroq, chunki teng suratda kichik maxraj kattaroq kasr beradi"
+      ],
+      "t": 3,
+      "izoh": "Ikkala kasrning surati bir xil, ya'ni 7. Teng suratli kasrlarda maxraj qancha kichik bo'lsa, butun shuncha kam bo'lakka bo'linadi va har bir bo'lak kattaroq chiqadi. 13 soni 15 dan kichik bo'lgani uchun 7/13 kasr 7/15 dan katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-kasrni-taqqoslash",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#22dba42e"
+    },
+    {
+      "q": "9/17 va 10/21 kasrlaridan qaysi biri 1/2 dan katta ekanligini aniqlang.",
+      "v": [
+        "Faqat 10/21",
+        "Ikkalasi ham",
+        "Faqat 9/17",
+        "Ikkalasi ham emas"
+      ],
+      "t": 2,
+      "izoh": "Kasr 1/2 dan katta bo'lishi uchun surat maxrajning yarmidan katta bo'lishi kerak. 17 ning yarmi 8,5 va 9 soni undan katta, demak 9/17 kasr 1/2 dan katta. 21 ning yarmi 10,5, surat esa 10, ya'ni 10/21 kasr 1/2 dan kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrni-yarim-bilan-solishtirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#3238d5e6"
+    },
+    {
+      "q": "Ikki kasr 5/n va n/20 ko'rinishida berilgan. n natural son bo'lib, 5/n kasr n/20 dan kichik. n ning eng kichik qiymati nechaga teng?",
+      "v": [
+        "10",
+        "11",
+        "12",
+        "21"
+      ],
+      "t": 1,
+      "izoh": "5/n kasr n/20 dan kichik bo'lsa, krestiga ko'paytirish qoidasiga ko'ra 5 · 20 ko'paytma n · n dan kichik bo'ladi, ya'ni n² qiymati 100 dan katta. Bundan n soni 10 dan katta ekani kelib chiqadi va natural sonlar ichida eng kichigi 11. 10 varianti tenglik holatini ham qo'shib yuborish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-tengsizlikda-nomalum",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#8b973af9"
+    },
+    {
+      "q": "2/3, 5/8 va 7/12 kasrlarini o'sish tartibida, ya'ni kichigidan kattasiga qarab joylashtiring.",
+      "v": [
+        "7/12, 5/8, 2/3",
+        "2/3, 5/8, 7/12",
+        "5/8, 7/12, 2/3",
+        "7/12, 2/3, 5/8"
+      ],
+      "t": 0,
+      "izoh": "Umumiy maxraj 24 ni olamiz: 2/3 = 16/24, 5/8 = 15/24, 7/12 = 14/24. Suratlarni o'sish tartibida yozsak 14, 15, 16 ketma-ketligi chiqadi. Demak kasrlar tartibi 7/12, 5/8, 2/3 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrlarni-tartiblash",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#92413613"
+    },
+    {
+      "q": "Sardor yo'lning 4/9 qismini, Jasur 5/12 qismini, Otabek esa 3/8 qismini bosib o'tdi. Ulardan qaysi biri eng uzun masofani bosgan?",
+      "v": [
+        "Jasur",
+        "Otabek",
+        "Sardor",
+        "Uchalasi bir xil masofa bosgan"
+      ],
+      "t": 2,
+      "izoh": "Umumiy maxraj 72 ni olamiz: 4/9 = 32/72, 5/12 = 30/72, 3/8 = 27/72. Eng katta surat 32 bo'lib, u Sardorning ulushiga tegishli. Demak eng uzun masofani Sardor bosgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrlarni-tartiblash",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#aba691bb"
+    },
+    {
+      "q": "5/6, 3/4, 11/15 va 7/10 kasrlaridan eng kattasi hamda eng kichigi qaysilar ekanini aniqlang.",
+      "v": [
+        "Eng kattasi 11/15, eng kichigi 3/4",
+        "Eng kattasi 3/4, eng kichigi 5/6",
+        "Eng kattasi 5/6, eng kichigi 11/15",
+        "Eng kattasi 5/6, eng kichigi 7/10"
+      ],
+      "t": 3,
+      "izoh": "Umumiy maxraj 60 ni olamiz: 5/6 = 50/60, 3/4 = 45/60, 11/15 = 44/60, 7/10 = 42/60. Suratlar bo'yicha eng kattasi 50, ya'ni 5/6, eng kichigi esa 42, ya'ni 7/10. Faqat maxrajga qarab hukm chiqarish xato natija beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrlarni-tartiblash",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#d741f8a5"
+    },
+    {
+      "q": "Sinf o'quvchilarining 5/12 qismi shaxmat, 3/8 qismi shashka, 5/24 qismi esa tennis to'garagiga qatnaydi. To'garaklarni qatnashuvchilar ulushi bo'yicha kamayish tartibida yozing.",
+      "v": [
+        "Shashka, shaxmat, tennis",
+        "Shaxmat, shashka, tennis",
+        "Tennis, shashka, shaxmat",
+        "Shaxmat, tennis, shashka"
+      ],
+      "t": 1,
+      "izoh": "Umumiy maxraj 24 ni olamiz: 5/12 = 10/24, 3/8 = 9/24, 5/24 esa o'zgarmaydi. Suratlarni kamayish tartibida yozamiz: 10, 9, 5. Shunga ko'ra tartib shaxmat, shashka, tennis bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrlarni-tartiblash",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#656249b1"
+    },
+    {
+      "q": "3/8 va 5/12 kasrlarining yig'indisini hisoblab, natijani qisqarmas kasr ko'rinishida yozing.",
+      "v": [
+        "8/20",
+        "19/24",
+        "19/20",
+        "1/24"
+      ],
+      "t": 1,
+      "izoh": "Umumiy maxraj 24 ga keltiramiz: 3/8 = 9/24, 5/12 = 10/24. Yig'indi 9/24 + 10/24 = 19/24 bo'ladi va bu kasr qisqarmaydi. 8/20 varianti suratlar bilan maxrajlarni alohida qo'shishdan, 19/20 esa to'g'ri suratga maxrajlar yig'indisini yozishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrlarni-qoshish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#038b7a55"
+    },
+    {
+      "q": "Xolida bir kunda vaqtining 1/4 qismini darslarga, 3/10 qismini esa sportga sarfladi. Bu ikki mashg'ulotga uning vaqtining qanday qismi ketgan?",
+      "v": [
+        "11/20",
+        "4/14",
+        "11/40",
+        "1/20"
+      ],
+      "t": 0,
+      "izoh": "Umumiy maxraj 20 ni olamiz: 1/4 = 5/20, 3/10 = 6/20. Yig'indi 5/20 + 6/20 = 11/20 ga teng. 4/14 varianti suratlar va maxrajlarni alohida qo'shishdan, 1/20 esa qo'shish o'rniga ayirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrlarni-qoshish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#0791d5d5"
+    },
+    {
+      "q": "7/9 sonidan 5/12 sonini ayiring va natijani qisqarmas kasr ko'rinishida ko'rsating.",
+      "v": [
+        "2/3",
+        "13/36",
+        "13/9",
+        "43/36"
+      ],
+      "t": 1,
+      "izoh": "Umumiy maxraj 36 ga keltiramiz: 7/9 = 28/36, 5/12 = 15/36. Ayirma 28/36 − 15/36 = 13/36 bo'ladi. 2/3 varianti suratlar va maxrajlarni alohida ayirishdan, 43/36 esa ayirish o'rniga qo'shishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrlarni-ayirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#169fb41e"
+    },
+    {
+      "q": "Bidonda 7/8 litr sut bor edi, undan 1/3 litri boshqa idishga quyib olindi. Bidonda necha litr sut qoldi?",
+      "v": [
+        "13/24",
+        "6/5",
+        "29/24",
+        "13/5"
+      ],
+      "t": 0,
+      "izoh": "Umumiy maxraj 24 ni olamiz: 7/8 = 21/24, 1/3 = 8/24. Qolgan sut 21/24 − 8/24 = 13/24 litrga teng. 6/5 varianti suratlar va maxrajlarni alohida ayirishdan, 29/24 esa ayirish o'rniga qo'shishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrlarni-ayirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#f2226b5a"
+    },
+    {
+      "q": "Fermer yer maydonining 2/5 qismiga bug'doy, 1/4 qismiga makkajo'xori ekdi, qolgan yer esa bo'sh qoldi. Bo'sh qolgan yer butun maydonning qanday ulushini tashkil qiladi?",
+      "v": [
+        "13/20",
+        "3/20",
+        "1/9",
+        "7/20"
+      ],
+      "t": 3,
+      "izoh": "Butun maydonni 1 deb olib, uni 20/20 ko'rinishida yozamiz. Ekilgan qism 2/5 + 1/4 = 8/20 + 5/20 = 13/20 ga teng. Bo'sh qolgan yer 20/20 − 13/20 = 7/20 bo'ladi. 13/20 varianti ekilgan qismning o'zi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butundan-ayirib-qoldiq",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#5f43a479"
+    },
+    {
+      "q": "Qandolat sexida tayyorlangan xamir og'irligi 4 5/6 kg. Bu miqdorni noto'g'ri kasr ko'rinishida yozing.",
+      "v": [
+        "24/6",
+        "45/6",
+        "29/6",
+        "34/6"
+      ],
+      "t": 2,
+      "izoh": "Aralash sonni noto'g'ri kasrga aylantirishda butun qism maxrajga ko'paytiriladi va ustiga surat qo'shiladi: 4 · 6 + 5 = 29, maxraj esa o'zgarmaydi. Demak 4 5/6 = 29/6. 24/6 varianti suratni qo'shishni unutishdan, 34/6 esa butun qism bilan suratni almashtirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralash-sondan-notogri-kasrga",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#dc4f5132"
+    },
+    {
+      "q": "Novvoyxonada 83/12 kg un ishlatildi. Bu miqdor aralash son ko'rinishida qanday yoziladi?",
+      "v": [
+        "7 1/12",
+        "6 11/12",
+        "6 1/12",
+        "5 11/12"
+      ],
+      "t": 1,
+      "izoh": "83 ni 12 ga qoldiqli bo'lamiz: butun qism 6, chunki 6 · 12 = 72, qoldiq esa 83 − 72 = 11. Demak 83/12 = 6 11/12 kg. 7 1/12 varianti butun qismni ortiqcha olishdan, 5 11/12 esa butun qismni kam olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "notogri-kasrdan-aralash-songa",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#45c5993c"
+    },
+    {
+      "q": "Bir noto'g'ri kasr aralash songa aylantirilganda 3 7/9 hosil bo'ldi. Shu noto'g'ri kasrning surati bilan maxraji yig'indisi nechaga teng?",
+      "v": [
+        "19",
+        "34",
+        "25",
+        "43"
+      ],
+      "t": 3,
+      "izoh": "Aralash sonni noto'g'ri kasrga qaytaramiz: 3 7/9 = (3 · 9 + 7)/9 = 34/9. Endi surat bilan maxrajni qo'shamiz: 34 + 9 = 43. 19 varianti uchala sonni qo'shishdan, 34 esa faqat suratni olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notogri-kasrdan-aralash-songa",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#6dcbc963"
+    },
+    {
+      "q": "1/3, 3/20, 9/40 va 1/6 kasrlaridan qaysi biri 1/5 bilan 1/4 orasida joylashgan?",
+      "v": [
+        "1/3",
+        "3/20",
+        "9/40",
+        "1/6"
+      ],
+      "t": 2,
+      "izoh": "Chegaralarni umumiy maxrajga keltiramiz: 1/5 = 8/40, 1/4 = 10/40. Oraliqdagi kasr 9/40 bo'ladi. 3/20 = 6/40 va 1/6 kasrlar chap chegaradan kichik, 1/3 esa o'ng chegaradan katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-kasr-orasidagi-kasr",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#a428385b"
+    },
+    {
+      "q": "Son o'qida 0 va 1 orasidagi kesma 12 ta teng bo'lakka bo'lingan. Chapdan beshinchi bo'linish nuqtasi qaysi kasrga mos keladi?",
+      "v": [
+        "5/12",
+        "5/11",
+        "7/12",
+        "1/12"
+      ],
+      "t": 0,
+      "izoh": "Kesma 12 ta teng bo'lakka bo'lingani uchun har bir bo'lak 1/12 ga teng. Chapdan beshinchi nuqta noldan 5 ta bo'lak uzoqlikda joylashgan, ya'ni unga 5/12 mos keladi. 5/11 varianti ichki bo'linish nuqtalari sonini maxraj deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-son-oqida",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#38431f04"
+    },
+    {
+      "q": "Maxraji 15 ga teng bo'lgan nechta qisqarmas kasr 1/3 bilan 2/3 orasida joylashgan?",
+      "v": [
+        "4 ta",
+        "3 ta",
+        "5 ta",
+        "2 ta"
+      ],
+      "t": 3,
+      "izoh": "Chegaralarni 15 maxrajiga keltiramiz: 1/3 = 5/15, 2/3 = 10/15. Ular orasida 6/15, 7/15, 8/15, 9/15 kasrlar bor. Ulardan 6/15 va 9/15 kasrlar 3 ga qisqaradi, demak qisqarmas kasrlar faqat 7/15 va 8/15, ya'ni 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-kasr-orasidagi-kasr",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#8d2d9508"
+    },
+    {
+      "q": "Yuk mashinasi birinchi kuni 2 3/4 soat, ikkinchi kuni esa 1 5/6 soat yo'lda bo'ldi. Mashina jami necha soat yo'lda bo'lgan?",
+      "v": [
+        "4 7/12",
+        "3 8/10",
+        "4 1/12",
+        "3 7/12"
+      ],
+      "t": 0,
+      "izoh": "Butun qismlarni qo'shamiz: 2 + 1 = 3. Kasr qismlarni 12 maxrajiga keltiramiz: 3/4 = 9/12, 5/6 = 10/12, ularning yig'indisi 19/12 = 1 7/12. Butun qismga yana 1 qo'shiladi va natija 4 7/12 soat bo'ladi. 3 8/10 varianti kasr qismlarni alohida qo'shishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralash-sonlarni-qoshish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#6f360388"
+    },
+    {
+      "q": "Novvoyxonada 5 1/6 kg un bor edi, shundan 2 3/4 kg i non yopishga ishlatildi. Necha kilogramm un qoldi?",
+      "v": [
+        "3 7/12",
+        "2 5/12",
+        "2 7/12",
+        "3 5/12"
+      ],
+      "t": 1,
+      "izoh": "Kasr qismlarni 12 maxrajiga keltiramiz: 5 1/6 = 5 2/12, 2 3/4 = 2 9/12. 2/12 kasr 9/12 dan kichik bo'lgani uchun butundan bittasini qarzga olamiz: 4 14/12 − 2 9/12 = 2 5/12 kg. 3 7/12 varianti kasr ayirmasini ishorasiz olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralash-sonlarni-ayirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#5e319254"
+    },
+    {
+      "q": "Uch bo'lak matoning uzunliklari 3 2/5 m, 4 7/10 m va 1 1/2 m ga teng. Matolarning umumiy uzunligi qancha bo'ladi?",
+      "v": [
+        "8 3/5",
+        "9 2/5",
+        "9 3/5",
+        "8 10/17"
+      ],
+      "t": 2,
+      "izoh": "Butun qismlar yig'indisi 3 + 4 + 1 = 8. Kasr qismlarni 10 maxrajiga keltiramiz: 4/10 + 7/10 + 5/10 = 16/10 = 1 3/5. Butun qismga 1 qo'shiladi va natija 9 3/5 m bo'ladi. 9 2/5 varianti 2/5 kasrni 10 maxrajiga keltirmasdan 2/10 deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-sonlarni-qoshish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#2f8d823e"
+    },
+    {
+      "q": "Sayohatchi 8 km yo'lning 3 3/8 km ini piyoda bosdi, qolgan qismini avtobusda o'tdi. Avtobusda necha kilometr yurgan?",
+      "v": [
+        "5 5/8",
+        "4 5/8",
+        "4 3/8",
+        "5 3/8"
+      ],
+      "t": 1,
+      "izoh": "Kasrdan ayirish uchun butundan qarz olamiz va 8 ni 7 8/8 ko'rinishida yozamiz. Endi 7 8/8 − 3 3/8 = 4 5/8 km chiqadi. 5 5/8 varianti butun qismni kamaytirishni unutishdan, 5 3/8 esa kasr qismni o'zgarishsiz ko'chirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-sonlarni-ayirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#79c7fb23"
+    },
+    {
+      "q": "Ikki idishda jami 12 1/2 litr suv bor. Birinchi idishda ikkinchisidan 2 1/6 litr ko'p suv bo'lsa, ikkinchi idishda necha litr suv bor?",
+      "v": [
+        "7 1/3",
+        "10 1/3",
+        "6 1/4",
+        "5 1/6"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi idishdagi suvni x deb olsak, birinchisida x + 2 1/6 litr bo'ladi va yig'indi 12 1/2 litrga teng. Demak ikkilangan x qiymati 12 1/2 − 2 1/6 = 75/6 − 13/6 = 62/6, bundan x = 31/6 = 5 1/6 litr. 10 1/3 varianti ikkiga bo'lishni unutishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-son-tenglamali-masala",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#b4a9d748"
+    },
+    {
+      "q": "5/8 va 4/15 kasrlarining ko'paytmasini hisoblab, natijani qisqarmas kasr ko'rinishida yozing.",
+      "v": [
+        "1/6",
+        "9/23",
+        "75/32",
+        "20/23"
+      ],
+      "t": 0,
+      "izoh": "Kasrlar ko'paytirilganda surat surat bilan, maxraj maxraj bilan ko'paytiriladi: (5 · 4)/(8 · 15) = 20/120. Bu kasrni 20 ga qisqartirsak 1/6 hosil bo'ladi. 9/23 varianti suratlar va maxrajlarni qo'shishdan, 75/32 esa ko'paytirish o'rniga bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrlarni-kopaytirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#73372b6c"
+    },
+    {
+      "q": "Bog'dagi 5/6 gektar yerning 3/10 qismiga olma ko'chatlari ekildi. Necha gektar yerga ko'chat ekilgan?",
+      "v": [
+        "8/16",
+        "25/9",
+        "1/5",
+        "1/4"
+      ],
+      "t": 3,
+      "izoh": "Sonning qismini topish uchun ko'paytirish bajariladi: 5/6 · 3/10 = 15/60. Bu kasrni 15 ga qisqartirsak 1/4 gektar chiqadi. 8/16 varianti suratlar va maxrajlarni alohida qo'shishdan, 25/9 esa ko'paytirish o'rniga bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrlarni-kopaytirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#bb2f52dc"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi gilamning bo'yi 2 1/3 m, eni esa 1 5/7 m. Gilamning yuzasi necha kvadrat metrga teng?",
+      "v": [
+        "2 5/21",
+        "4 1/21",
+        "4",
+        "8 2/21"
+      ],
+      "t": 2,
+      "izoh": "Aralash sonlar avval noto'g'ri kasrga aylantiriladi: 2 1/3 = 7/3, 1 5/7 = 12/7. Yuza (7 · 12)/(3 · 7) = 84/21 = 4 kvadrat metr. 2 5/21 varianti butun va kasr qismlarni alohida ko'paytirishdan, 4 1/21 esa ko'paytirish o'rniga qo'shishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrlarni-kopaytirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#5efed04c"
+    },
+    {
+      "q": "Kitobning 3/5 qismi o'qib bo'lindi. Ertaga qolgan qismning 2/3 qismi o'qilsa, butun kitobning qanday ulushi ertaga o'qiladi?",
+      "v": [
+        "4/15",
+        "2/5",
+        "8/15",
+        "2/15"
+      ],
+      "t": 0,
+      "izoh": "O'qilgandan keyin qolgan qism 1 − 3/5 = 2/5 ga teng. Ertaga shu qolgan qismning 2/3 qismi o'qiladi: 2/5 · 2/3 = 4/15. Demak butun kitobning 4/15 ulushi o'qiladi. 2/5 varianti qolgan qismning o'zini javob deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrlarni-kopaytirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#5312c3a3"
+    },
+    {
+      "q": "9/16 kasrni 3/8 kasrga bo'ling va natijani aralash son ko'rinishida yozing.",
+      "v": [
+        "27/128",
+        "2/3",
+        "4 1/2",
+        "1 1/2"
+      ],
+      "t": 3,
+      "izoh": "Kasrga bo'lish uchun ikkinchi kasr ag'dariladi va ko'paytiriladi: 9/16 · 8/3 = 72/48. Bu kasr 24 ga qisqarib 3/2 bo'ladi, aralash son ko'rinishida esa 1 1/2. 27/128 varianti ag'darmasdan ko'paytirishdan, 2/3 esa noto'g'ri kasrni ag'darishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrlarni-bolish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#79ec030e"
+    },
+    {
+      "q": "Usta 5 1/4 m simni 3/4 m uzunlikdagi teng bo'laklarga qirqdi. Nechta bo'lak hosil bo'lgan?",
+      "v": [
+        "7",
+        "3 15/16",
+        "1/7",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Bo'laklar sonini topish uchun umumiy uzunlik bir bo'lak uzunligiga bo'linadi: 5 1/4 : 3/4 = 21/4 · 4/3 = 84/12 = 7. Demak 7 ta bo'lak hosil bo'lgan. 3 15/16 varianti bo'lish o'rniga ko'paytirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrlarni-bolish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#878d3a4a"
+    },
+    {
+      "q": "Kamola bir ishni 5/12 soatda bajardi va bu vaqt do'sti sarflagan vaqtning 5/8 qismini tashkil qiladi. Do'sti bu ishga qancha vaqt sarflagan?",
+      "v": [
+        "25/96",
+        "2/3",
+        "3/2",
+        "25/24"
+      ],
+      "t": 1,
+      "izoh": "Do'stining vaqtini x deb olsak, x · 5/8 = 5/12 tenglama hosil bo'ladi. Bundan x = 5/12 : 5/8 = 5/12 · 8/5 = 40/60 = 2/3 soat. 25/96 varianti bo'lish o'rniga ko'paytirishdan, 3/2 esa kasrlarni almashtirib bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrlarni-bolish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#a90a7cd4"
+    },
+    {
+      "q": "Bir sonning 3/8 qismi 2 1/4 ga teng bo'lsa, shu sonning 5/6 qismi nechaga teng bo'ladi?",
+      "v": [
+        "6",
+        "1 7/8",
+        "7 1/5",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Avval sonning o'zini topamiz: 2 1/4 : 3/8 = 9/4 · 8/3 = 72/12 = 6. Endi shu sonning 5/6 qismini olamiz: 6 · 5/6 = 5. 6 varianti birinchi bosqichda to'xtab qolishdan, 1 7/8 esa 2 1/4 ni to'g'ridan-to'g'ri 5/6 ga ko'paytirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrlarni-bolish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#dd50953d"
+    },
+    {
+      "q": "3/4 + 1/2 · 2/5 ifodaning qiymatini amallar tartibiga rioya qilgan holda hisoblang.",
+      "v": [
+        "1/2",
+        "4/9",
+        "19/20",
+        "31/40"
+      ],
+      "t": 2,
+      "izoh": "Amallar tartibiga ko'ra avval ko'paytirish bajariladi: 1/2 · 2/5 = 2/10 = 1/5. So'ng qo'shamiz: 3/4 + 1/5 = 15/20 + 4/20 = 19/20. 1/2 varianti amallarni chapdan o'ngga bajarishdan, 4/9 esa suratlar va maxrajlarni alohida qo'shishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-amallar-tartibi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#b265d902"
+    },
+    {
+      "q": "(5/6 − 1/3) : 2/9 ifodaning qiymatini hisoblab, to'g'ri javobni belgilang.",
+      "v": [
+        "1/9",
+        "2 1/4",
+        "4/9",
+        "3 5/12"
+      ],
+      "t": 1,
+      "izoh": "Avval qavs ichi hisoblanadi: 5/6 − 1/3 = 5/6 − 2/6 = 3/6 = 1/2. Endi bo'lish bajariladi: 1/2 : 2/9 = 1/2 · 9/2 = 9/4 = 2 1/4. 1/9 varianti bo'lish o'rniga ko'paytirishdan, 4/9 esa kasrlarni almashtirib bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-amallar-tartibi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#b8e413ef"
+    },
+    {
+      "q": "1/2 + 1/3 · (3/4 − 1/6) : 7/12 ifodaning qiymatini bosqichma-bosqich hisoblang.",
+      "v": [
+        "1/3",
+        "1 1/12",
+        "5/6",
+        "2/3"
+      ],
+      "t": 2,
+      "izoh": "Qavs ichi: 3/4 − 1/6 = 9/12 − 2/12 = 7/12. Ko'paytirish va bo'lish chapdan o'ngga bajariladi: 1/3 · 7/12 = 7/36, so'ng 7/36 : 7/12 = 7/36 · 12/7 = 1/3. Oxirida 1/2 + 1/3 = 3/6 + 2/6 = 5/6. 1/3 varianti oxirgi qo'shishni unutishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-amallar-tartibi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#79a581f3"
+    },
+    {
+      "q": "Aziz birinchi kuni kitobning 1/4 qismini, ikkinchi kuni qolgan qismning 2/5 qismini o'qidi. Uchinchi kuni yana qolgan qismning yarmini o'qisa, kitobning qanday qismi o'qilmay qoladi?",
+      "v": [
+        "9/20",
+        "1/2",
+        "9/40",
+        "7/40"
+      ],
+      "t": 2,
+      "izoh": "Birinchi kundan keyin 1 − 1/4 = 3/4 qism qoladi. Ikkinchi kuni 2/5 · 3/4 = 3/10 o'qiladi va qolgan qism 3/4 − 3/10 = 15/20 − 6/20 = 9/20 bo'ladi. Uchinchi kuni uning yarmi o'qilgani uchun o'qilmay qolgani ham 9/40. 9/20 varianti uchinchi kunni hisobga olmaslikdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ketma-ket-ulushlar",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#5603b4fd"
+    },
+    {
+      "q": "(3/4 − 1/2) : (1/2 + 1/8) murakkab kasrning qiymatini hisoblab, javobni tanlang.",
+      "v": [
+        "2/5",
+        "5/32",
+        "5/2",
+        "1/4"
+      ],
+      "t": 0,
+      "izoh": "Avval surat hisoblanadi: 3/4 − 1/2 = 1/4. So'ng maxraj: 1/2 + 1/8 = 5/8. Endi bo'lish bajariladi: 1/4 : 5/8 = 1/4 · 8/5 = 8/20 = 2/5. 5/32 varianti bo'lish o'rniga ko'paytirishdan, 5/2 esa teskari tomonga bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-kasr",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#ae531149"
+    },
+    {
+      "q": "Ko'p qavatli kasr 1 : (2 + 1 : (1 + 1/2)) ko'rinishida berilgan. Uning qiymatini hisoblang.",
+      "v": [
+        "8/3",
+        "3/8",
+        "2/7",
+        "2/3"
+      ],
+      "t": 1,
+      "izoh": "Ichkaridan boshlaymiz: 1 + 1/2 = 3/2, demak 1 : 3/2 = 2/3. Keyin 2 + 2/3 = 8/3 hosil bo'ladi. Oxirida 1 : 8/3 = 3/8. 8/3 varianti oxirgi bo'lishni bajarmaslikdan, 2/3 esa oraliq natijada to'xtab qolishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-kasr",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#1dcebd20"
+    },
+    {
+      "q": "Retseptga ko'ra 2/3 stakan unga 3/4 stakan shakar solinadi. Bir stakan unga necha stakan shakar to'g'ri keladi?",
+      "v": [
+        "1/2",
+        "8/9",
+        "1 5/12",
+        "1 1/8"
+      ],
+      "t": 3,
+      "izoh": "Bir birlikka to'g'ri keladigan miqdorni topish uchun bo'lish bajariladi: 3/4 : 2/3 = 3/4 · 3/2 = 9/8 = 1 1/8 stakan. 1/2 varianti bo'lish o'rniga ko'paytirishdan, 8/9 esa kasrlarni almashtirib bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-birlikka-keltirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#83153106"
+    },
+    {
+      "q": "Sinfdagi 32 nafar o'quvchining 5/8 qismi qizlar. Bu sinfda nechta qiz bola o'qiydi?",
+      "v": [
+        "12",
+        "4",
+        "160",
+        "20"
+      ],
+      "t": 3,
+      "izoh": "Sonning qismini topish uchun son kasrga ko'paytiriladi: 32 · 5/8 = 160/8 = 20. Demak sinfda 20 ta qiz bola o'qiydi. 12 varianti o'g'il bolalar soni, 4 esa faqat 32 : 8 amalining natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonning-qismini-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#3e679df4"
+    },
+    {
+      "q": "Aziza oylik daromadining 3/8 qismini uy ijarasiga sarfladi. Daromadi 4 800 000 so'm bo'lsa, ijaraga qancha pul ketgan?",
+      "v": [
+        "1 800 000 so'm",
+        "3 000 000 so'm",
+        "600 000 so'm",
+        "12 800 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Ijara puli daromadning 3/8 qismiga teng. Avval 4 800 000 : 8 = 600 000 topiladi, so'ng 600 000 · 3 = 1 800 000 so'm hisoblanadi. 3 000 000 varianti qolgan pul, 600 000 esa oraliq natijada to'xtab qolish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonning-qismini-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#141881bd"
+    },
+    {
+      "q": "Suv omborida 720 tonna suv bor edi. Birinchi kuni uning 2/9 qismi, ikkinchi kuni esa 5/12 qismi sarflandi. Ikki kunda jami necha tonna suv sarflangan?",
+      "v": [
+        "260",
+        "140",
+        "240",
+        "460"
+      ],
+      "t": 3,
+      "izoh": "Birinchi kuni 720 · 2/9 = 160 tonna, ikkinchi kuni 720 · 5/12 = 300 tonna suv sarflangan. Jami sarf 160 + 300 = 460 tonna. 260 varianti qolgan suv miqdori, 240 esa kasrlarni suratlar va maxrajlar bo'yicha alohida qo'shishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonning-qismini-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#1ba47ea1"
+    },
+    {
+      "q": "Omborda 540 quti mahsulot bor. Ularning 5/9 qismi do'konga jo'natildi, jo'natilganlarning 3/10 qismi esa nuqsonli chiqdi. Nechta quti nuqsonli bo'lgan?",
+      "v": [
+        "90",
+        "162",
+        "300",
+        "54"
+      ],
+      "t": 0,
+      "izoh": "Do'konga 540 · 5/9 = 300 quti jo'natilgan. Nuqsonlilar shu 300 qutining 3/10 qismi: 300 · 3/10 = 90 quti. 162 varianti 3/10 ni butun 540 dan olishdan, 300 esa birinchi bosqichda to'xtab qolishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonning-qismini-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#e906a0ec"
+    },
+    {
+      "q": "Dala maydonining 5/12 qismiga sabzavot, qolgan qismning 2/7 qismiga esa poliz ekini ekildi. Poliz ekini butun maydonning qanday qismini egallaydi?",
+      "v": [
+        "5/42",
+        "7/12",
+        "1/6",
+        "2/7"
+      ],
+      "t": 2,
+      "izoh": "Sabzavotdan keyin qolgan qism 1 − 5/12 = 7/12 ga teng. Poliz ekini shu qolgan qismning 2/7 qismini egallaydi: 2/7 · 7/12 = 14/84 = 1/6. 5/42 varianti ulushni sabzavot qismidan olishdan, 2/7 esa butun maydondan olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonning-qismini-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#d957c3b4"
+    },
+    {
+      "q": "Qopdagi guruchning 3/7 qismi olingandan keyin qopda 32 kg guruch qoldi. Qopda dastlab necha kilogramm guruch bo'lgan?",
+      "v": [
+        "56",
+        "74 2/3",
+        "24",
+        "96"
+      ],
+      "t": 0,
+      "izoh": "Olingandan keyin qopda 1 − 3/7 = 4/7 qism qolgan va bu 32 kg ga teng. Demak butun miqdor 32 : 4/7 = 32 · 7/4 = 56 kg bo'ladi. 74 2/3 varianti 32 ni qolgan emas, olingan ulushga bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qismi-boyicha-sonni-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#336e6d6f"
+    },
+    {
+      "q": "Talabaning sarflagan puli uning barcha pulining 5/9 qismini tashkil qiladi va bu 45 000 so'mga teng. Talabada dastlab qancha pul bo'lgan?",
+      "v": [
+        "25 000 so'm",
+        "36 000 so'm",
+        "405 000 so'm",
+        "81 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Sarflangan pul butun pulning 5/9 qismi bo'lgani uchun butun pul 45 000 : 5/9 amali bilan topiladi: 45 000 · 9/5 = 81 000 so'm. 25 000 varianti bo'lish o'rniga ko'paytirishdan, 405 000 esa 5 ga bo'lishni unutishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qismi-boyicha-sonni-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#fb7d9f5c"
+    },
+    {
+      "q": "Kitobning 2/5 qismi o'qilgandan keyin yana 84 bet o'qilmagan qoldi. Kitobda jami necha bet bor?",
+      "v": [
+        "210",
+        "140",
+        "56",
+        "420"
+      ],
+      "t": 1,
+      "izoh": "O'qilmagan qism butun kitobning 1 − 2/5 = 3/5 qismi bo'lib, u 84 betga teng. Demak kitobda 84 : 3/5 = 84 · 5/3 = 140 bet bor. 210 varianti 84 ni o'qilgan ulushga bo'lishdan, 56 esa o'qilgan betlar sonidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qismi-boyicha-sonni-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#712dbb69"
+    },
+    {
+      "q": "Sayohatchi yo'lning 7/15 qismini bosib o'tgach, manzilgacha yana 96 km masofa qoldi. Yo'lning to'liq uzunligi qancha?",
+      "v": [
+        "205 5/7",
+        "84",
+        "180",
+        "1440"
+      ],
+      "t": 2,
+      "izoh": "Qolgan masofa butun yo'lning 1 − 7/15 = 8/15 qismi bo'lib, u 96 km ga teng. Demak to'liq uzunlik 96 : 8/15 = 96 · 15/8 = 180 km. 205 5/7 varianti 96 ni bosib o'tilgan ulushga bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qismi-boyicha-sonni-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#397e36ab"
+    },
+    {
+      "q": "Bir sonning 2/3 qismi bilan shu sonning 3/5 qismi orasidagi farq 8 ga teng. Shu sonni toping.",
+      "v": [
+        "16",
+        "24",
+        "120",
+        "40"
+      ],
+      "t": 2,
+      "izoh": "Sonni x deb olsak, 2/3 · x − 3/5 · x = 8 bo'ladi. Kasrlar farqi 2/3 − 3/5 = 10/15 − 9/15 = 1/15, demak sonning 1/15 qismi 8 ga teng va x = 8 · 15 = 120. 16 varianti farqni suratlar va maxrajlar bo'yicha alohida hisoblashdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qismi-boyicha-sonni-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#13960148"
+    },
+    {
+      "q": "Xaridor bozorda pulining 1/3 qismiga go'sht, qolgan pulining 1/4 qismiga esa meva sotib oldi. Uning qo'lida boshlang'ich pulning qanday qismi qoldi?",
+      "v": [
+        "5/12",
+        "1/2",
+        "1/6",
+        "1/12"
+      ],
+      "t": 1,
+      "izoh": "Go'shtdan keyin pulning 1 − 1/3 = 2/3 qismi qoladi. Mevaga shu qoldiqning 1/4 qismi ketadi: 1/4 · 2/3 = 1/6. Qolgan pul 2/3 − 1/6 = 4/6 − 1/6 = 1/2. 5/12 varianti ikkala ulushni ham butundan ayirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-ulush-qoldiq",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#4b9f831e"
+    },
+    {
+      "q": "Avtomobil bakidagi benzinning 3/8 qismi sarflandi, so'ng bakka 12 litr benzin quyilgach u to'lib qoldi. Bakning sig'imi necha litr?",
+      "v": [
+        "32",
+        "96",
+        "20",
+        "4 1/2"
+      ],
+      "t": 0,
+      "izoh": "Quyilgan 12 litr aynan sarflangan qismni to'ldiradi, ya'ni u bakning 3/8 qismiga teng. Demak sig'im 12 : 3/8 = 12 · 8/3 = 32 litr. 96 varianti faqat 8 ga ko'paytirishdan, 4 1/2 esa bo'lish o'rniga ko'paytirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-ulush-qoldiq",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#e91eb660"
+    },
+    {
+      "q": "Ombordagi unning 1/4 qismi birinchi kuni, qolganining 2/3 qismi esa ikkinchi kuni sotildi. Shundan keyin omborda 90 kg un qoldi. Omborda dastlab necha kilogramm un bo'lgan?",
+      "v": [
+        "1080",
+        "270",
+        "360",
+        "120"
+      ],
+      "t": 2,
+      "izoh": "Birinchi kundan keyin 1 − 1/4 = 3/4 qism qoladi. Ikkinchi kuni uning 2/3 qismi sotilgani uchun qolgan qism 3/4 · 1/3 = 1/4 ni tashkil qiladi. Demak 1/4 qism 90 kg ga teng va dastlabki miqdor 90 · 4 = 360 kg. 1080 varianti ikkala ulushni butundan ayirish xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-ulush-qoldiq",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#a6628334"
+    },
+    {
+      "q": "Avtobusdagi yo'lovchilarning 2/5 qismi birinchi bekatda, qolganlarning 1/3 qismi esa ikkinchi bekatda tushib qoldi. Avtobusda dastlabki yo'lovchilarning qanday qismi qoldi?",
+      "v": [
+        "4/15",
+        "1/5",
+        "3/5",
+        "2/5"
+      ],
+      "t": 3,
+      "izoh": "Birinchi bekatdan keyin 1 − 2/5 = 3/5 qism qoladi. Ikkinchi bekatda uning 1/3 qismi tushgani uchun qolganlar 3/5 · 2/3 = 6/15 = 2/5 ni tashkil qiladi. 4/15 varianti ikkala ulushni ham butundan ayirishdan, 3/5 esa ikkinchi bekatni hisobga olmaslikdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-ulush-qoldiq",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#6ff19d1d"
+    },
+    {
+      "q": "Suv havzasining 5/8 qismi to'ldirilgan edi. Yana 750 litr suv quyilgach havza to'lib bo'ldi. Havzaning hajmi necha litr?",
+      "v": [
+        "1200",
+        "2000",
+        "1250",
+        "6000"
+      ],
+      "t": 1,
+      "izoh": "Havzaning to'lmagan qismi 1 − 5/8 = 3/8 bo'lib, unga aynan 750 litr suv sig'gan. Demak hajm 750 : 3/8 = 750 · 8/3 = 2000 litr. 1200 varianti 750 ni to'ldirilgan ulushga bo'lishdan, 6000 esa faqat 8 ga ko'paytirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-ulush-qoldiq",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#cb3e1328"
+    },
+    {
+      "q": "x + 2/5 = 7/10 tenglamaning ildizini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "11/10",
+        "1/2",
+        "3/10",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "Noma'lum qo'shiluvchini topish uchun yig'indidan ma'lum qo'shiluvchi ayiriladi: x = 7/10 − 2/5. Umumiy maxraj 10 ga keltiramiz: 7/10 − 4/10 = 3/10. 1/2 varianti maxrajni keltirmasdan suratni ayirishdan, 11/10 esa ayirish o'rniga qo'shishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrli-tenglama",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#8666c219"
+    },
+    {
+      "q": "2/3 · x = 8/9 tenglamaning ildizini aralash son ko'rinishida ifodalang.",
+      "v": [
+        "1 1/3",
+        "16/27",
+        "2/9",
+        "3/4"
+      ],
+      "t": 0,
+      "izoh": "Noma'lum ko'paytuvchini topish uchun ko'paytma ma'lum ko'paytuvchiga bo'linadi: x = 8/9 : 2/3 = 8/9 · 3/2 = 24/18 = 4/3. Aralash son ko'rinishida bu 1 1/3 bo'ladi. 16/27 varianti bo'lish o'rniga ko'paytirishdan, 3/4 esa kasrlarni almashtirib bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-tenglama",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#bb0195fb"
+    },
+    {
+      "q": "Bog'bon ko'chatlarning 3/7 qismini ekkanda 24 ta ko'chat ekilgan bo'ldi. Barcha ko'chatlar sonini beruvchi tenglama yechimini ko'rsating.",
+      "v": [
+        "72",
+        "56",
+        "10 2/7",
+        "168"
+      ],
+      "t": 1,
+      "izoh": "Shart bo'yicha 3/7 · x = 24 tenglama tuziladi. Bundan x = 24 : 3/7 = 24 · 7/3 = 56 ta ko'chat kelib chiqadi. 168 varianti faqat 7 ga ko'paytirishdan, 10 2/7 esa bo'lish o'rniga ko'paytirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrli-tenglama",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#610ec44b"
+    },
+    {
+      "q": "x/6 + x/9 = 5/12 tenglamada x ning qiymatini topib, mos variantni belgilang.",
+      "v": [
+        "5/18",
+        "2/3",
+        "25/216",
+        "1 1/2"
+      ],
+      "t": 3,
+      "izoh": "Chap tomonni umumiy maxrajga keltiramiz: x/6 + x/9 = 3x/18 + 2x/18 = 5x/18. Demak 5x/18 = 5/12 va x = 5/12 · 18/5 = 90/60 = 3/2, ya'ni 1 1/2. 5/18 varianti koeffitsientda to'xtab qolishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-tenglama",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#a56f971a"
+    },
+    {
+      "q": "Ikki ishchidan biri buyurtmaning 3/8 qismini, ikkinchisi esa qolgan qismning 1/5 qismini bajardi. Birinchi ishchi ikkinchisidan 42 ta detal ko'p tayyorlagan bo'lsa, buyurtmada jami nechta detal bor?",
+      "v": [
+        "336",
+        "168",
+        "112",
+        "210"
+      ],
+      "t": 1,
+      "izoh": "Birinchi ishchi 3/8 qismni bajardi, qolgan qism esa 5/8. Ikkinchisi shu qoldiqning 1/5 qismini, ya'ni 1/5 · 5/8 = 1/8 qismni bajardi. Ulushlar farqi 3/8 − 1/8 = 2/8 = 1/4 bo'lib, u 42 ta detalga to'g'ri keladi, demak jami 42 · 4 = 168 ta. Tekshiramiz: 168 · 3/8 = 63 va 168 · 1/8 = 21, farq esa 63 − 21 = 42 — ikkalasi ham butun son. 336 varianti farqni 1/8 deb olishdan, 112 varianti uni 3/8 deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-tenglama",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#1d747461"
+    },
+    {
+      "q": "Birinchi ishchi bir ishni 6 kunda, ikkinchisi esa 12 kunda bajaradi. Ikkalasi birgalikda ishlasa, bu ish necha kunda tugaydi?",
+      "v": [
+        "9 kun",
+        "18 kun",
+        "4 kun",
+        "6 kun"
+      ],
+      "t": 2,
+      "izoh": "Birinchi ishchi bir kunda ishning 1/6 qismini, ikkinchisi 1/12 qismini bajaradi. Birgalikdagi bir kunlik unum 1/6 + 1/12 = 2/12 + 1/12 = 3/12 = 1/4 ga teng. Butun ish 1 : 1/4 = 4 kunda tugaydi. 9 kun varianti ikki muddatning o'rtachasini olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birgalikda-ish-unumi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#e27da4f9"
+    },
+    {
+      "q": "Birinchi quvur hovuzni 9 soatda, ikkinchi quvur esa 18 soatda to'ldiradi. Ikkala quvur birga ochilsa, hovuz necha soatda to'ladi?",
+      "v": [
+        "27 soat",
+        "13 soat 30 daqiqa",
+        "18 soat",
+        "6 soat"
+      ],
+      "t": 3,
+      "izoh": "Birinchi quvurning bir soatlik unumi 1/9, ikkinchisiniki 1/18 qismni tashkil qiladi. Birgalikda 1/9 + 1/18 = 2/18 + 1/18 = 3/18 = 1/6 qism to'ladi. Demak hovuz 1 : 1/6 = 6 soatda to'ladi. 27 soat varianti muddatlarni qo'shishdan, 18 soat esa unumlarni ayirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birgalikda-ish-unumi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#d89b6190"
+    },
+    {
+      "q": "Anvar bir ishning 3/4 qismini 9 soatda, Sanjar esa shu ishning 1/3 qismini 8 soatda bajaradi. Ikkalasi birgalikda butun ishni necha soatda tugatadi?",
+      "v": [
+        "8 soat",
+        "17 soat",
+        "36 soat",
+        "12 soat"
+      ],
+      "t": 0,
+      "izoh": "Anvar 3/4 qismni 9 soatda bajarsa, butun ishga 9 : 3/4 = 12 soat ketadi va uning unumi 1/12. Sanjar 1/3 qismni 8 soatda bajaradi, demak butun ish uchun 8 : 1/3 = 24 soat kerak, unumi 1/24. Birgalikdagi unum 1/12 + 1/24 = 3/24 = 1/8, ya'ni ish 8 soatda tugaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birgalikda-ish-unumi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#60e1e51c"
+    },
+    {
+      "q": "Ikki bo'yoqchi devorni birgalikda 4 soatda bo'yaydi. Yolg'iz ishlaganda birinchisi bu ishga 6 soat sarflaydi. Ikkinchisi yolg'iz necha soatda tugatadi?",
+      "v": [
+        "2 soat",
+        "12 soat",
+        "10 soat",
+        "24 soat"
+      ],
+      "t": 1,
+      "izoh": "Birgalikdagi bir soatlik unum 1/4, birinchi bo'yoqchiniki esa 1/6 qismga teng. Ikkinchisining unumi 1/4 − 1/6 = 3/12 − 2/12 = 1/12 ni tashkil qiladi. Demak u yolg'iz 1 : 1/12 = 12 soatda tugatadi. 2 soat varianti muddatlarni ayirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birgalikda-ish-unumi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#1a952ff6"
+    },
+    {
+      "q": "Meros ikki aka-ukaga, katta va kichigiga mos ravishda 5 : 3 nisbatda bo'lib berildi. Kichigining ulushi butun merosning qanday kasr qismini tashkil qiladi?",
+      "v": [
+        "3/5",
+        "5/8",
+        "3/8",
+        "5/3"
+      ],
+      "t": 2,
+      "izoh": "Nisbat hadlari yig'indisi 5 + 3 = 8 ta teng ulushni beradi. Shartga ko'ra kattasiga 5 ulush, kichigiga 3 ulush tegadi, ya'ni kichigining ulushi butun merosning 3/8 qismi. 3/5 varianti nisbatni to'g'ridan-to'g'ri kasr deb yozishdan, 5/8 esa kattaning ulushidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbatdan-ulush-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#7345c7b6"
+    },
+    {
+      "q": "84 ta olma uch bolaga 2 : 3 : 2 nisbatda bo'lib berildi. Eng ko'p olma olgan bolaga nechta olma tegdi?",
+      "v": [
+        "36",
+        "24",
+        "12",
+        "28"
+      ],
+      "t": 0,
+      "izoh": "Nisbat hadlari yig'indisi 2 + 3 + 2 = 7 ga teng. Bitta ulush 84 : 7 = 12 ta olmaga to'g'ri keladi. Eng ko'p olma 3 ulushga tegishli: 3 · 12 = 36 ta. 28 varianti olmalarni teng uchga bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbatdan-ulush-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#4f14f5f0"
+    },
+    {
+      "q": "Aralashmada suv bilan sirkaning miqdorlari 7 : 2 nisbatda olingan. Shu aralashmaning 45 litrida necha litr sirka bor?",
+      "v": [
+        "35 litr",
+        "10 litr",
+        "5 litr",
+        "9 litr"
+      ],
+      "t": 1,
+      "izoh": "Nisbat hadlari yig'indisi 7 + 2 = 9, demak bitta ulush 45 : 9 = 5 litrga teng. Sirka 2 ulushni egallaydi: 2 · 5 = 10 litr. 35 litr varianti suv miqdori, 5 litr esa bitta ulushda to'xtab qolish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbatdan-ulush-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#22ada444"
+    },
+    {
+      "q": "Birinchi idishdagi sut ikkala idishdagi umumiy sutning 5/8 qismini tashkil qilardi. Birinchisidan 6 litr sut ikkinchisiga quyilgach, idishlardagi sut teng bo'lib qoldi. Dastlab birinchi idishda necha litr sut bo'lgan?",
+      "v": [
+        "18 litr",
+        "24 litr",
+        "30 litr",
+        "48 litr"
+      ],
+      "t": 2,
+      "izoh": "Birinchi idishda umumiy sutning 5/8 qismi bo'lsa, ikkinchisida qolgan 1 − 5/8 = 3/8 qismi bor. Ularning farqi 5/8 − 3/8 = 2/8 = 1/4 qismga teng. 6 litr quyilganda birinchisi 6 litr kamayadi, ikkinchisi 6 litr ortadi, ya'ni farq 12 litrga qisqarib nolga tushadi. Demak umumiy sutning 1/4 qismi 12 litr, jami esa 48 litr. Birinchi idishda 5/8 · 48 = 30 litr sut bo'lgan. 48 litr varianti umumiy miqdor, 18 litr esa ikkinchi idishning ulushi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ulushlar-farqidan-butunni-topish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#d9b766d3"
+    },
+    {
+      "q": "Bir mashg'ulotning davomiyligi bir soatning 5/12 qismini tashkil qiladi. Mashg'ulot necha daqiqa davom etadi?",
+      "v": [
+        "35 daqiqa",
+        "12 daqiqa",
+        "144 daqiqa",
+        "25 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Bir soat 60 daqiqaga teng, shuning uchun uning 5/12 qismini topamiz. Avval 60 : 12 = 5, so'ng 5 · 5 = 25 daqiqa hisoblanadi. 35 daqiqa varianti qolgan qism, 144 daqiqa esa ko'paytirish o'rniga bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrni-olchov-birligiga-otkazish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#d7cde072"
+    },
+    {
+      "q": "Tarozida bir kilogrammning 7/8 qismi va yana 3/5 kilogramm shakar turibdi. Tarozidagi shakarning umumiy og'irligi necha gramm?",
+      "v": [
+        "1475 g",
+        "875 g",
+        "600 g",
+        "275 g"
+      ],
+      "t": 0,
+      "izoh": "Bir kilogramm 1000 grammga teng. Demak 7/8 kg og'irlik 1000 · 7/8 = 875 g, 3/5 kg esa 1000 · 3/5 = 600 g bo'ladi. Umumiy og'irlik 875 + 600 = 1475 g. 875 g varianti faqat birinchi miqdorni olishdan, 275 g esa ayirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrni-olchov-birligiga-otkazish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#db9e555b"
+    },
+    {
+      "q": "Bir metrning 3/4 qismidan 2/5 metr uzunlikdagi bo'lak qirqib olindi. Qolgan qism necha santimetr?",
+      "v": [
+        "115 sm",
+        "40 sm",
+        "7 sm",
+        "35 sm"
+      ],
+      "t": 3,
+      "izoh": "Bir metr 100 santimetrga teng, demak 3/4 m = 75 sm, 2/5 m = 40 sm bo'ladi. Qolgan qism 75 − 40 = 35 sm. 7 sm varianti kasrlar ayirmasi 7/20 ning suratini to'g'ridan-to'g'ri santimetr deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrni-olchov-birligiga-otkazish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#e7ff271b"
+    },
+    {
+      "q": "Idishdagi 2 1/2 litr sut hajmi 3/8 litr bo'lgan stakanlarga to'ldirib quyildi. Nechta stakan to'liq to'ladi va qancha sut ortib qoladi?",
+      "v": [
+        "6 ta stakan, 2/3 litr ortadi",
+        "7 ta stakan, sut ortmaydi",
+        "6 ta stakan, 1/4 litr ortadi",
+        "6 ta stakan, 1/8 litr ortadi"
+      ],
+      "t": 2,
+      "izoh": "Stakanlar sonini topamiz: 2 1/2 : 3/8 = 5/2 · 8/3 = 20/3 = 6 2/3. Demak 6 ta stakan to'liq to'ladi. Ortgan 2/3 stakan esa 2/3 · 3/8 = 1/4 litr sutga to'g'ri keladi. Natijadagi 2/3 ni to'g'ridan-to'g'ri litr deb olish noto'g'ri javobga olib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrni-olchov-birligiga-otkazish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#569cff86"
+    },
+    {
+      "q": "Kitobning narxi 60 000 so'm edi, sotuvchi uni narxining 1/5 qismiga arzonlashtirdi. Kitobning yangi narxi qancha bo'ldi?",
+      "v": [
+        "12 000 so'm",
+        "48 000 so'm",
+        "72 000 so'm",
+        "300 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Chegirma miqdori narxning 1/5 qismiga teng: 60 000 : 5 = 12 000 so'm. Yangi narx 60 000 − 12 000 = 48 000 so'm bo'ladi. 12 000 varianti faqat chegirma miqdori, 72 000 esa arzonlashtirish o'rniga qimmatlashtirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrli-narx-masalasi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#2ef28b61"
+    },
+    {
+      "q": "Chegirmadan keyin kurtka 96 000 so'mga sotildi va bu narx dastlabki narxning 4/5 qismini tashkil qiladi. Kurtkaning dastlabki narxi qancha edi?",
+      "v": [
+        "120 000 so'm",
+        "76 800 so'm",
+        "24 000 so'm",
+        "480 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Sotuv narxi dastlabki narxning 4/5 qismi bo'lgani uchun dastlabki narx 96 000 : 4/5 amali bilan topiladi: 96 000 · 5/4 = 120 000 so'm. 76 800 varianti bo'lish o'rniga ko'paytirishdan, 24 000 esa chegirma miqdorini javob deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrli-narx-masalasi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#7f8935e9"
+    },
+    {
+      "q": "Bir kilogramm go'shtning narxi 90 000 so'm. Xaridor 2/3 kg go'sht olib, kassaga 100 000 so'm berdi. Unga qancha qaytim qaytariladi?",
+      "v": [
+        "60 000 so'm",
+        "40 000 so'm",
+        "10 000 so'm",
+        "70 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Olingan go'shtning narxi 90 000 · 2/3 = 60 000 so'mga teng. Qaytim esa 100 000 − 60 000 = 40 000 so'm bo'ladi. 60 000 varianti go'shtning narxining o'zi, 10 000 esa bir kilogramm narxidan kelib chiqib hisoblash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrli-narx-masalasi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#4aff6c01"
+    },
+    {
+      "q": "Do'kon mahsulot narxini avval uning 1/4 qismiga oshirdi, so'ng yangi narxni uning 1/5 qismiga tushirdi. Oxirgi narx dastlabki narxga nisbatan qanday bo'ladi?",
+      "v": [
+        "Dastlabki narxning 21/20 qismi",
+        "Dastlabki narxning 19/20 qismi",
+        "Dastlabki narxning 20/21 qismi",
+        "Dastlabki narxga teng bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Dastlabki narxni 1 deb olamiz. Oshirilgandan keyin narx 1 · 5/4 = 5/4 bo'ladi. So'ng bu narx o'zining 1/5 qismiga tushiriladi: 5/4 · 4/5 = 1. Demak oxirgi narx dastlabki narx bilan bir xil. 21/20 varianti ulushlarni to'g'ridan-to'g'ri qo'shib ayirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-narx-masalasi",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#4da7dd94"
+    },
+    {
+      "q": "Qisqarmas a/b kasrning surati va maxrajiga bir xil musbat n soni qo'shildi. Agar a soni b dan kichik bo'lsa, yangi kasr haqida qaysi xulosa to'g'ri?",
+      "v": [
+        "Yangi kasr dastlabkisidan katta bo'ladi",
+        "Yangi kasr dastlabkisidan kichik bo'ladi",
+        "Yangi kasr dastlabkisiga teng bo'ladi",
+        "Natija n ning qiymatiga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri kasrda surat maxrajdan kichik bo'ladi. Masalan 2/5 kasrga n = 1 qo'shsak, 3/6 = 1/2 hosil bo'ladi va u 2/5 dan katta. Umumiy holda yangi kasr bilan eskisining ayirmasi musbat chiqadi, chunki uning surati n(b − a) ko'rinishida bo'lib, b soni a dan katta. Demak bunday qo'shishda to'g'ri kasr har doim ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-xossasini-umumlashtirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#8582eaab"
+    },
+    {
+      "q": "Kasrning surati 3 marta orttirilib, maxraji 2 marta kamaytirilsa, kasrning qiymati qanday o'zgaradi?",
+      "v": [
+        "1,5 marta ortadi",
+        "6 marta kamayadi",
+        "6 marta ortadi",
+        "Qiymati o'zgarmaydi"
+      ],
+      "t": 2,
+      "izoh": "Kasrni a/b deb olamiz. Surat 3 marta ortsa 3a bo'ladi, maxraj 2 marta kamaysa b/2 ga aylanadi. Yangi kasr 3a : (b/2) = 6a/b ko'rinishga keladi, ya'ni dastlabkisidan 6 marta katta. 1,5 marta varianti 3 ni 2 ga bo'lishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-xossasini-umumlashtirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#9eab6bfc"
+    },
+    {
+      "q": "Surat va maxrajga bir xil son qo'shilganda, ikkalasi bir xil songa ko'paytirilganda, faqat surat ikkilanganda yoki faqat maxraj uch marta orttirilganda: qaysi holatda kasr qiymati o'zgarmaydi?",
+      "v": [
+        "Surat va maxrajga bir xil son qo'shilganda",
+        "Surat va maxraj bir xil songa ko'paytirilganda",
+        "Faqat surat ikkilanganda",
+        "Faqat maxraj uch marta orttirilganda"
+      ],
+      "t": 1,
+      "izoh": "Kasrning asosiy xossasiga ko'ra surat va maxraj bir xil noldan farqli songa ko'paytirilsa yoki bo'linsa, kasrning qiymati o'zgarmaydi. Bir xil son qo'shilganda esa qiymat o'zgaradi: 1/2 kasrga 1 qo'shsak 2/3 chiqadi. Faqat suratni yoki faqat maxrajni o'zgartirish ham kasr qiymatini o'zgartiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-xossasini-umumlashtirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#3181143d"
+    },
+    {
+      "q": "7/n kasr 1/3 dan katta va ayni paytda 1/2 dan kichik bo'lishi uchun n natural son qanday qiymatlarni olishi mumkin?",
+      "v": [
+        "14 dan 21 gacha",
+        "15 dan 21 gacha",
+        "14 dan 20 gacha",
+        "15 dan 20 gacha"
+      ],
+      "t": 3,
+      "izoh": "7/n kasr 1/2 dan kichik bo'lishi uchun n soni 14 dan katta, ya'ni kamida 15 bo'lishi kerak. 7/n kasr 1/3 dan katta bo'lishi uchun esa n soni 21 dan kichik, ya'ni ko'pi bilan 20 bo'ladi. Demak n qiymatlari 15 dan 20 gacha bo'lgan natural sonlar. n = 14 va n = 21 da tenglik chiqqani uchun ular kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-xossasini-umumlashtirish",
+      "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida#021eddb0"
+    }
+  ]
+}

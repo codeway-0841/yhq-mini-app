@@ -1,0 +1,501 @@
+{
+  "nom": "53-mavzu. Magnit Maydon Tokli Otkazgich Tasiri",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Magnit maydonning tokli o'tkazgichga ta'sirini tajribada kim va qachon aniqlagan?",
+      "v": [
+        "1820-yilda Amper",
+        "1820-yilda Ersted",
+        "1600-yilda Gilbert",
+        "1900-yilda Tesla"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydonning tokli o'tkazgichga ta'sirini 1820-yilda Amper tajribada aniqlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#56a1b94a"
+    },
+    {
+      "q": "Magnit maydon tomonidan shu maydonda joylashgan tokli o'tkazgich qismiga ta'sir qiluvchi F kuchi nimaga to'g'ri proporsional?",
+      "v": [
+        "Tok kuchi (I), o'tkazgich uzunligi (Δl) va magnit induksiyasiga (B)",
+        "Faqat tok kuchiga",
+        "Faqat magnit induksiyasiga",
+        "O'tkazgichning massasiga"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydon tomonidan tokli o'tkazgich qismiga ta'sir qiluvchi kuch F, tok kuchi (I), o'tkazgich uzunligi (Δl) ga hamda magnit induksiyasiga to'g'ri proporsional bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#0dd4d99a"
+    },
+    {
+      "q": "Amper kuchining formulasi qanday?",
+      "v": [
+        "F = B·I·Δl",
+        "F = B/(I·Δl)",
+        "F = I/(B·Δl)",
+        "F = B·I/Δl"
+      ],
+      "t": 0,
+      "izoh": "F = B·I·Δl. Bu ifoda M.A. Amper sharafiga Amper kuchi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#c688f205"
+    },
+    {
+      "q": "Amper kuchi kimning sharafiga shunday nomlangan?",
+      "v": [
+        "M.A. Amper",
+        "X. Ersted",
+        "N. Tesla",
+        "U. Gilbert"
+      ],
+      "t": 0,
+      "izoh": "Bu ifoda M.A. Amper sharafiga Amper kuchi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#3534a87e"
+    },
+    {
+      "q": "Amper kuchi formulasidan magnit induksiya ifodasi qanday yoziladi?",
+      "v": [
+        "B = F/(I·Δl)",
+        "B = F·I·Δl",
+        "B = I·Δl/F",
+        "B = F·I/Δl"
+      ],
+      "t": 0,
+      "izoh": "F = B·I·Δl dan B = F/(I·Δl) ifoda yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#06b3bb8c"
+    },
+    {
+      "q": "Magnit induksiyaning fizik ma'nosi nima?",
+      "v": [
+        "Magnit maydonida perpendikulyar joylashgan, uzunligi 1 metr va o'tayotgan tok 1 A bo'lgan o'tkazgichga maydon tomonidan ta'sir etayotgan kuchga son qiymati jihatidan teng bo'lgan kattalik",
+        "Magnit maydonining rangi",
+        "O'tkazgichning qarshiligi",
+        "Tokning yo'nalishi"
+      ],
+      "t": 0,
+      "izoh": "Magnit induksiyaning fizik ma'nosi — bu magnit maydonida perpendikulyar joylashgan, uzunligi 1 metr va o'tayotgan tok 1 A bo'lgan o'tkazgichga magnit maydon tomonidan ta'sir etayotgan kuchga son qiymati jihatidan teng bo'lgan kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#165bda8e"
+    },
+    {
+      "q": "Magnit induksiyaning o'lchov birligi qanday ifodalanadi?",
+      "v": [
+        "[B] = 1 N/(1 A·1 m) = 1 T (Tesla)",
+        "[B] = 1 A/(1 N·1 m)",
+        "[B] = 1 N·1 m/1 A",
+        "[B] = 1 A·1 m"
+      ],
+      "t": 0,
+      "izoh": "[B] = 1 N/(1 A·1 m) = 1 T (Tesla).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#d1c718ba"
+    },
+    {
+      "q": "1 Tesla qanday aniqlanadi?",
+      "v": [
+        "1 N kuch 1 A tokli, 1 m uzunlikdagi o'tkazgichga ta'sir qilgandagi magnit induksiya",
+        "1 A tok 1 m uzunlikda 1 V kuchlanish hosil qilganda",
+        "1 C zaryad 1 s da o'tganda",
+        "1 J energiya 1 s da ajralganda"
+      ],
+      "t": 0,
+      "izoh": "[B] = 1 N/(1 A·1 m) = 1 T (Tesla).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#32ab6104"
+    },
+    {
+      "q": "Magnit maydon tomonidan tokli o'tkazgichga ta'sir etuvchi kuchning yo'nalishini aniqlash uchun qanday qoida ishlatiladi?",
+      "v": [
+        "Chap qo'l qoidasi",
+        "O'ng qo'l qoidasi",
+        "Parma qoidasi",
+        "Nyuton qoidasi"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydon tomonidan tokli o'tkazgichga ta'sir etuvchi kuchning yo'nalishini chap qo'l qoidasidan foydalanib aniqlash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#1e734849"
+    },
+    {
+      "q": "Chap qo'l qoidasini to'g'ri ifodalang.",
+      "v": [
+        "Chap qo'lning kaftini unga magnit kuchi chiziqlari tik kiradigan qilib tutib, ochilgan to'rt barmoq tokning yo'nalishi bo'yicha tutib turilsa, 90° ga kerilgan bosh barmoq o'tkazgichga ta'sir etuvchi kuchning yo'nalishini ko'rsatadi",
+        "O'ng qo'l kaftiga kuch chiziqlari kirsin, barmoqlar tokni ko'rsatsin",
+        "Chap qo'l barmoqlari kuch chiziqlari bo'ylab egilsin",
+        "Bosh barmoq tok yo'nalishini, to'rt barmoq kuchni ko'rsatadi"
+      ],
+      "t": 0,
+      "izoh": "Chap qo'lning kaftini unga magnit kuchi chiziqlari tik kiradigan qilib tutib, ochilgan to'rt barmoq tokning yo'nalishi bo'yicha tutib turilsa, 90° ga kerilgan bosh barmoq o'tkazgichga ta'sir etuvchi kuchning yo'nalishini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#2d963991"
+    },
+    {
+      "q": "Amper tajribasida zanjir ulanganda o'tkazgich nima qiladi?",
+      "v": [
+        "Harakatga keladi, ya'ni o'tkazgich magnitga tortiladi",
+        "Harakatsiz qoladi",
+        "Erib ketadi",
+        "Qizib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Zanjir ulanganda o'tkazgich harakatga keladi, ya'ni o'tkazgich magnitga tortiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#4597c91b"
+    },
+    {
+      "q": "Amper tajribasida magnitning qutblari almashtirib o'rnatilsa, o'tkazgich nima qiladi?",
+      "v": [
+        "Magnitdan itariladi",
+        "Magnitga yanada kuchliroq tortiladi",
+        "Harakatsiz qoladi",
+        "Sindirilib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Agar magnitning qutblari almashtirib o'rnatilsa, o'tkazgich magnitdan itariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#b0412279"
+    },
+    {
+      "q": "Metall (Δl = ab) qismi F kuch ta'sirida vertikaldan qanday harakatlanadi?",
+      "v": [
+        "Biror burchakka buriladi",
+        "Gorizontal harakatlanadi",
+        "Aylanma harakat qiladi",
+        "Harakatlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Metall (Δl = ab) qismi F kuch ta'sirida vertikaldan biror burchakka buriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#e5faf52c"
+    },
+    {
+      "q": "Tokli o'tkazgichlar bir-biriga qanday ta'sirlashadi?",
+      "v": [
+        "Xuddi doimiy magnitlardek o'zaro ta'sirlashadi",
+        "Umuman ta'sirlashmaydi",
+        "Faqat itariladi",
+        "Faqat tortiladi"
+      ],
+      "t": 0,
+      "izoh": "Tokli o'tkazgichlar ham xuddi doimiy magnitlardek o'zaro ta'sirlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#16670f5b"
+    },
+    {
+      "q": "Ikkita elastik o'tkazgich qarama-qarshi yo'nalishda tok oqizilsa, ular qanday ta'sirlashadi?",
+      "v": [
+        "Bir-biridan itarilib, orasidagi masofa uzoqlashadi",
+        "Bir-biriga tortiladi",
+        "Bir-biriga ta'sir ko'rsatmaydi",
+        "Bir-biriga yopishadi"
+      ],
+      "t": 0,
+      "izoh": "Agar o'tkazgichlarning yuqori qismini sim orqali ulab, kalitni ulasak, o'tkazgichlardan qarama-qarshi yo'nalishda tok oqadi. Natijada o'tkazgichlar bir-biridan itarilib, orasidagi masofa uzoqlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#e2290bff"
+    },
+    {
+      "q": "Ikkita parallel o'tkazgichdan bir xil yo'nalishda tok o'tganda, ular qanday ta'sirlashadi?",
+      "v": [
+        "Bir-biriga tortiladi",
+        "Bir-biridan itariladi",
+        "Ta'sirlashmaydi",
+        "Bir-biridan uzoqlashadi"
+      ],
+      "t": 0,
+      "izoh": "Agar o'tkazgichlarni parallel ulasak, ya'ni ulardan bir xil yo'nalishda tok o'tganda, o'tkazgichlar bir-biriga tortiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#bf9e5b5c"
+    },
+    {
+      "q": "Amper kuchi quyidagi qaysi kattaliklarga to'g'ri proporsional emas?",
+      "v": [
+        "O'tkazgichning massasiga",
+        "Tok kuchiga (I)",
+        "O'tkazgich uzunligiga (Δl)",
+        "Magnit induksiyasiga (B)"
+      ],
+      "t": 0,
+      "izoh": "Amper kuchi F tok kuchi (I), o'tkazgich uzunligi (Δl) va magnit induksiyasiga (B) to'g'ri proporsional — massaga emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#b39324ad"
+    },
+    {
+      "q": "F = B·I·Δl formulasidagi Δl nimani bildiradi?",
+      "v": [
+        "O'tkazgichning magnit maydonda joylashgan qismining uzunligini",
+        "O'tkazgichning to'liq uzunligini",
+        "Magnitning uzunligini",
+        "Simning qalinligini"
+      ],
+      "t": 0,
+      "izoh": "O'tkazgichning magnit maydonda joylashgan qismining uzunligini Δl deb olamiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#e0cecb36"
+    },
+    {
+      "q": "Chap qo'l qoidasida kaftga tik kiradigan nima?",
+      "v": [
+        "Magnit kuchi chiziqlari",
+        "Elektr tokining yo'nalishi",
+        "Kuchning yo'nalishi",
+        "Zaryadlar oqimi"
+      ],
+      "t": 0,
+      "izoh": "Chap qo'lning kaftini unga magnit kuchi chiziqlari tik kiradigan qilib tutiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#09a97990"
+    },
+    {
+      "q": "Chap qo'l qoidasida ochilgan to'rt barmoq nimani ko'rsatadi?",
+      "v": [
+        "Tokning yo'nalishini",
+        "Kuchning yo'nalishini",
+        "Kuch chiziqlarining yo'nalishini",
+        "Magnitning qutbini"
+      ],
+      "t": 0,
+      "izoh": "Ochilgan to'rt barmoq tokning yo'nalishi bo'yicha tutib turiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#041d2355"
+    },
+    {
+      "q": "Chap qo'l qoidasida 90° ga kerilgan bosh barmoq nimani ko'rsatadi?",
+      "v": [
+        "O'tkazgichga ta'sir etuvchi kuchning yo'nalishini",
+        "Tokning yo'nalishini",
+        "Kuch chiziqlarining yo'nalishini",
+        "Magnit qutbining yo'nalishini"
+      ],
+      "t": 0,
+      "izoh": "90° ga kerilgan bosh barmoq o'tkazgichga ta'sir etuvchi kuchning yo'nalishini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#901ac341"
+    },
+    {
+      "q": "Parallel o'tkazgichlarning o'zaro ta'sirini kuzatish uchun ular qanday holatda tayanchga mahkamlanadi?",
+      "v": [
+        "Vertikal holatda",
+        "Gorizontal holatda",
+        "45° burchak ostida",
+        "Erkin osilgan holatda"
+      ],
+      "t": 0,
+      "izoh": "Ikkita elastik o'tkazgich olib, ularni vertikal holatda tayanchga mahkamlaymiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#308dc16e"
+    },
+    {
+      "q": "Tok kuchi ikki baravar oshirilsa, Amper kuchi qanday o'zgaradi?",
+      "v": [
+        "Ikki baravar oshadi",
+        "Ikki baravar kamayadi",
+        "O'zgarmaydi",
+        "To'rt baravar oshadi"
+      ],
+      "t": 0,
+      "izoh": "Amper kuchi tok kuchiga to'g'ri proporsional bo'lgani uchun, tok kuchi ikki baravar oshsa, kuch ham ikki baravar oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#0b975e2a"
+    },
+    {
+      "q": "Magnit induksiyasi ikki baravar kamaytirilsa, Amper kuchi qanday o'zgaradi?",
+      "v": [
+        "Ikki baravar kamayadi",
+        "Ikki baravar oshadi",
+        "O'zgarmaydi",
+        "To'rt baravar kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Amper kuchi magnit induksiyasiga to'g'ri proporsional bo'lgani uchun, induksiya ikki baravar kamaysa, kuch ham ikki baravar kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#df3e6e7d"
+    },
+    {
+      "q": "Tokli o'tkazgichning magnit maydonida harakatga kelishi nimani isbotlaydi?",
+      "v": [
+        "Magnit maydon tokli o'tkazgichga kuch bilan ta'sir qilishini",
+        "O'tkazgichning yengil ekanini",
+        "Magnitning og'ir ekanini",
+        "Zanjirning yopiq ekanini"
+      ],
+      "t": 0,
+      "izoh": "Zanjir ulanganda o'tkazgich harakatga keladi — demak, magnit maydon tokli o'tkazgichga kuch bilan ta'sir qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#71ebb48b"
+    },
+    {
+      "q": "Amper tajribasida taqasimon doimiy magnit qanday holatda shtativga mahkamlanadi?",
+      "v": [
+        "Gorizontal holda",
+        "Vertikal holda",
+        "45° burchak ostida",
+        "Erkin osilgan holda"
+      ],
+      "t": 0,
+      "izoh": "Taqasimon doimiy magnitni gorizontal holda shtativga mahkamlaymiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#332f4142"
+    },
+    {
+      "q": "Amper tajribasida shtativga osilgan o'tkazgich qayerga joylashtiriladi?",
+      "v": [
+        "Taqasimon magnitning o'rtasiga",
+        "Magnitning tashqarisiga",
+        "Magnitning tagiga",
+        "Magnitning uzoq yoniga"
+      ],
+      "t": 0,
+      "izoh": "Shtativga osilgan o'tkazgichni taqasimon magnitning o'rtasiga joylashtiramiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#48bf3941"
+    },
+    {
+      "q": "Amper kuchining formulasi F = B·I·Δl qaysi sharoit uchun keltirilgan?",
+      "v": [
+        "O'tkazgich magnit maydoniga perpendikulyar joylashgan holda",
+        "O'tkazgich maydon chiziqlariga parallel holda",
+        "Istalgan holda",
+        "Faqat vakuumda"
+      ],
+      "t": 0,
+      "izoh": "Kuch formulasi maydonda perpendikulyar joylashgan o'tkazgich uchun keltirilgan — induksiya ta'rifida ham perpendikulyar joylashgan o'tkazgich olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#1411d693"
+    },
+    {
+      "q": "Tokli o'tkazgichlar qarama-qarshi yo'nalishda tok oqizilganda bir-biridan itarilishi nimaga o'xshaydi?",
+      "v": [
+        "Bir xil qutbli magnitlarning itarilishiga",
+        "Har xil qutbli magnitlarning tortilishiga",
+        "Zaryadlarning zaryadlanishiga",
+        "Suvning oqishiga"
+      ],
+      "t": 0,
+      "izoh": "Qarama-qarshi yo'nalishdagi toklar bir-biridan itariladi — bu bir xil qutbli magnitlarning itarilishiga o'xshaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#642837f0"
+    },
+    {
+      "q": "Tokli o'tkazgichlar bir xil yo'nalishda tok oqizilganda bir-biriga tortilishi nimaga o'xshaydi?",
+      "v": [
+        "Har xil qutbli magnitlarning tortilishiga",
+        "Bir xil qutbli magnitlarning itarilishiga",
+        "Zaryadsiz jismlarning holatiga",
+        "Yorning sochilishiga"
+      ],
+      "t": 0,
+      "izoh": "Bir xil yo'nalishdagi toklar bir-biriga tortiladi — bu har xil qutbli magnitlarning tortilishiga o'xshaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#2408f5dd"
+    },
+    {
+      "q": "Magnit maydonning tokli o'tkazgichga ta'sirini tajribada aniqlagan Amper qaysi davlat fizigi?",
+      "v": [
+        "Fransiya",
+        "Daniya",
+        "Angliya",
+        "Serbiya"
+      ],
+      "t": 0,
+      "izoh": "1820-yilda fransuz fiziklari Andre Mari Amper va Dominik Fransua Arago kuchli magnit maydoni hosil bo'lishini aniqladilar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#6ee925b8"
+    },
+    {
+      "q": "O'tkazgich uzunligi Δl ikki baravar oshirilsa, Amper kuchi qanday o'zgaradi?",
+      "v": [
+        "Ikki baravar oshadi",
+        "Ikki baravar kamayadi",
+        "O'zgarmaydi",
+        "To'rt baravar oshadi"
+      ],
+      "t": 0,
+      "izoh": "Amper kuchi o'tkazgich uzunligiga to'g'ri proporsional bo'lgani uchun, uzunlik ikki baravar oshsa, kuch ham ikki baravar oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#ad6610f6"
+    },
+    {
+      "q": "Amper kuchi qaysi fizik kattalikni xarakterlaydi?",
+      "v": [
+        "Magnit maydonning tokli o'tkazgichga ta'sirini",
+        "Magnit maydonning o'tkazgich uzunligini",
+        "O'tkazgichning qarshiligini",
+        "Tokning kuchlanishini"
+      ],
+      "t": 0,
+      "izoh": "F = B·I·Δl ifoda M.A. Amper sharafiga Amper kuchi deyiladi — u magnit maydonning tokli o'tkazgichga ta'sir kuchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri#6ef5a7ed"
+    }
+  ]
+}

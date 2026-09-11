@@ -1,0 +1,461 @@
+{
+  "nom": "Family (Oila)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "Who is this? 👩 She is your mother.",
+      "v": [
+        "Mum",
+        "Dog",
+        "Ball",
+        "Tree"
+      ],
+      "t": 0,
+      "izoh": "👩 = mum (oyi).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#54fa89b1"
+    },
+    {
+      "q": "Who is this? 👨 He is your father.",
+      "v": [
+        "Cat",
+        "Dad",
+        "Car",
+        "Sun"
+      ],
+      "t": 1,
+      "izoh": "👨 = dad (dada).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#91c13f5d"
+    },
+    {
+      "q": "Your mother's son is your ...?",
+      "v": [
+        "Sister",
+        "Brother",
+        "Aunt",
+        "Uncle"
+      ],
+      "t": 1,
+      "izoh": "Brother = aka/uka.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#86eaa96f"
+    },
+    {
+      "q": "Your mother's daughter is your ...?",
+      "v": [
+        "Sister",
+        "Brother",
+        "Grandpa",
+        "Cousin"
+      ],
+      "t": 0,
+      "izoh": "Sister = opa/singil.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#079c4759"
+    },
+    {
+      "q": "Who is this? 👵 She is your mother's mother.",
+      "v": [
+        "Baby",
+        "Grandma",
+        "Son",
+        "Dad"
+      ],
+      "t": 1,
+      "izoh": "👵 = grandma (buvi).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#54551870"
+    },
+    {
+      "q": "Who is this? 👴 He is your father's father.",
+      "v": [
+        "Grandpa",
+        "Sister",
+        "Mum",
+        "Aunt"
+      ],
+      "t": 0,
+      "izoh": "👴 = grandpa (bobo).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#0ee49ece"
+    },
+    {
+      "q": "A very small child is a ...? 👶",
+      "v": [
+        "Uncle",
+        "Baby",
+        "Dad",
+        "Grandma"
+      ],
+      "t": 1,
+      "izoh": "👶 = baby (chaqaloq).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#79fd43c7"
+    },
+    {
+      "q": "Your mother and father are your ...?",
+      "v": [
+        "Parents",
+        "Friends",
+        "Teachers",
+        "Neighbours"
+      ],
+      "t": 0,
+      "izoh": "Parents = ota-ona.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#252fdf41"
+    },
+    {
+      "q": "Your mum's brother is your ...?",
+      "v": [
+        "Aunt",
+        "Sister",
+        "Uncle",
+        "Cousin"
+      ],
+      "t": 2,
+      "izoh": "Uncle = amaki/tog'a.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#1b396fec"
+    },
+    {
+      "q": "Your dad's sister is your ...?",
+      "v": [
+        "Aunt",
+        "Uncle",
+        "Brother",
+        "Grandpa"
+      ],
+      "t": 0,
+      "izoh": "Aunt = amma/xola.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#de559595"
+    },
+    {
+      "q": "What is \"mum\"?",
+      "v": [
+        "ona",
+        "ota",
+        "aka",
+        "opa"
+      ],
+      "t": 0,
+      "izoh": "mum = ona.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#28a1cbb6"
+    },
+    {
+      "q": "What is \"dad\"?",
+      "v": [
+        "buvi",
+        "ota",
+        "bobo",
+        "uka"
+      ],
+      "t": 1,
+      "izoh": "dad = ota.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#be0c9280"
+    },
+    {
+      "q": "What is \"brother\"?",
+      "v": [
+        "opa",
+        "qiz",
+        "aka",
+        "ona"
+      ],
+      "t": 2,
+      "izoh": "brother = aka/uka.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#6068c1cc"
+    },
+    {
+      "q": "What is \"sister\"?",
+      "v": [
+        "opa",
+        "aka",
+        "ota",
+        "bobo"
+      ],
+      "t": 0,
+      "izoh": "sister = opa/singil.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#d648bbf5"
+    },
+    {
+      "q": "What is \"grandma\"?",
+      "v": [
+        "ona",
+        "buvi",
+        "xola",
+        "qiz"
+      ],
+      "t": 1,
+      "izoh": "grandma = buvi.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#1b2334d2"
+    },
+    {
+      "q": "What is \"grandpa\"?",
+      "v": [
+        "amaki",
+        "ota",
+        "bobo",
+        "aka"
+      ],
+      "t": 2,
+      "izoh": "grandpa = bobo.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#b910c262"
+    },
+    {
+      "q": "What is \"baby\"?",
+      "v": [
+        "chaqaloq",
+        "bola",
+        "o'g'il",
+        "qiz"
+      ],
+      "t": 0,
+      "izoh": "baby = chaqaloq.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#85d0b1db"
+    },
+    {
+      "q": "What is \"uncle\"?",
+      "v": [
+        "xola",
+        "buvi",
+        "amaki",
+        "bobo"
+      ],
+      "t": 2,
+      "izoh": "uncle = amaki/tog'a.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#c4f8823f"
+    },
+    {
+      "q": "What is \"aunt\"?",
+      "v": [
+        "xola",
+        "amaki",
+        "bobo",
+        "ota"
+      ],
+      "t": 0,
+      "izoh": "aunt = xola/amma.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#bcbec71e"
+    },
+    {
+      "q": "What is \"cousin\"?",
+      "v": [
+        "aka",
+        "opa",
+        "amakivachcha",
+        "buvi"
+      ],
+      "t": 2,
+      "izoh": "cousin = amakivachcha.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#556d76f1"
+    },
+    {
+      "q": "What is \"son\"?",
+      "v": [
+        "o'g'il",
+        "qiz",
+        "ona",
+        "ota"
+      ],
+      "t": 0,
+      "izoh": "son = o'g'il.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#5b31ac4c"
+    },
+    {
+      "q": "What is \"daughter\"?",
+      "v": [
+        "o'g'il",
+        "aka",
+        "qiz",
+        "bobo"
+      ],
+      "t": 2,
+      "izoh": "daughter = qiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#7064185c"
+    },
+    {
+      "q": "What is \"parents\"?",
+      "v": [
+        "ota-ona",
+        "aka-uka",
+        "opa-singil",
+        "bobo-buvi"
+      ],
+      "t": 0,
+      "izoh": "parents = ota-ona.",
+      "qiy": "oson",
+      "id": "ing_kids_m9#56bd5e17"
+    },
+    {
+      "q": "Your father's father is your ...?",
+      "v": [
+        "uncle",
+        "grandfather",
+        "brother",
+        "cousin"
+      ],
+      "t": 1,
+      "izoh": "Otaning otasi = grandfather (bobo).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#d0476dd3"
+    },
+    {
+      "q": "Your mother's mother is your ...?",
+      "v": [
+        "grandmother",
+        "aunt",
+        "sister",
+        "mum"
+      ],
+      "t": 0,
+      "izoh": "Onaning onasi = grandmother (buvi).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#4433db41"
+    },
+    {
+      "q": "Your parents' other child (a boy) is your ...?",
+      "v": [
+        "cousin",
+        "uncle",
+        "brother",
+        "son"
+      ],
+      "t": 2,
+      "izoh": "Ota-onangizning o'g'li = brother (aka/uka).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#d8751c07"
+    },
+    {
+      "q": "Your parents' other child (a girl) is your ...?",
+      "v": [
+        "sister",
+        "aunt",
+        "mum",
+        "daughter"
+      ],
+      "t": 0,
+      "izoh": "Ota-onangizning qizi = sister (opa/singil).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#9fde14fc"
+    },
+    {
+      "q": "Your mum and dad together are your ...?",
+      "v": [
+        "parents",
+        "cousins",
+        "grandparents",
+        "children"
+      ],
+      "t": 0,
+      "izoh": "Ona va ota = parents (ota-ona).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#241f8e61"
+    },
+    {
+      "q": "A very young child is a ...?",
+      "v": [
+        "baby",
+        "grandpa",
+        "uncle",
+        "aunt"
+      ],
+      "t": 0,
+      "izoh": "Juda kichkina bola = baby (chaqaloq).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#bf59b38a"
+    },
+    {
+      "q": "Your father's brother is your ...?",
+      "v": [
+        "cousin",
+        "uncle",
+        "grandpa",
+        "brother"
+      ],
+      "t": 1,
+      "izoh": "Otaning ukasi = uncle (amaki).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#b028beb3"
+    },
+    {
+      "q": "Your mother's sister is your ...?",
+      "v": [
+        "aunt",
+        "sister",
+        "grandma",
+        "cousin"
+      ],
+      "t": 0,
+      "izoh": "Onaning singlisi = aunt (xola).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#4ca6d72a"
+    },
+    {
+      "q": "👶 = ?",
+      "v": [
+        "grandpa",
+        "baby",
+        "dad",
+        "brother"
+      ],
+      "t": 1,
+      "izoh": "👶 = baby (chaqaloq).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#eb78a74a"
+    },
+    {
+      "q": "Your uncle and aunt's child is your ...?",
+      "v": [
+        "cousin",
+        "brother",
+        "sister",
+        "son"
+      ],
+      "t": 0,
+      "izoh": "Amaki/xolaning bolasi = cousin (amakivachcha).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#217afc0d"
+    },
+    {
+      "q": "👵 = ?",
+      "v": [
+        "grandmother",
+        "mum",
+        "sister",
+        "aunt"
+      ],
+      "t": 0,
+      "izoh": "👵 = grandmother (buvi).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#5398274f"
+    },
+    {
+      "q": "👴 = ?",
+      "v": [
+        "dad",
+        "uncle",
+        "grandfather",
+        "brother"
+      ],
+      "t": 2,
+      "izoh": "👴 = grandfather (bobo).",
+      "qiy": "oson",
+      "id": "ing_kids_m9#a6219033"
+    }
+  ]
+}

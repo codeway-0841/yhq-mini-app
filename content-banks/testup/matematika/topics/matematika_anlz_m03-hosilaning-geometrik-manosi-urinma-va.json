@@ -1,0 +1,1609 @@
+{
+  "nom": "Hosilaning geometrik ma'nosi, urinma va normal",
+  "bolim": "Matematik analiz asoslari",
+  "blok": "anlz",
+  "rasmiyBolim": 5,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "y = x² − 5x + 7 funksiya grafigiga abssissasi x₀ = 4 bo'lgan nuqtada o'tkazilgan urinmaning burchak koeffitsientini toping.",
+      "v": [
+        "8",
+        "3",
+        "−5",
+        "13"
+      ],
+      "t": 1,
+      "izoh": "Urinmaning burchak koeffitsienti hosilaning shu nuqtadagi qiymatiga teng: k = f'(x₀). Bu yerda f'(x) = 2x − 5. Endi x₀ = 4 ni qo'yamiz: f'(4) = 2·4 − 5 = 8 − 5 = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-burchak-koeffitsienti",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#336847c6"
+    },
+    {
+      "q": "y = x³ − 3x funksiyaning grafigiga x₀ = 2 nuqtada o'tkazilgan urinma qanday burchak koeffitsientiga ega bo'ladi?",
+      "v": [
+        "12",
+        "24",
+        "9",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "Hosilani topamiz: f'(x) = 3x² − 3. Geometrik ma'noga ko'ra k = f'(2). Hisoblaymiz: 3·2² − 3 = 12 − 3 = 9. Bu yerda 3x² dan keyin −3 ni tashlab ketmaslik muhim. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-burchak-koeffitsienti",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#62baae4a"
+    },
+    {
+      "q": "y = √x funksiya grafigining abssissasi 9 ga teng nuqtasida o'tkazilgan urinmaning burchak koeffitsienti nechaga teng?",
+      "v": [
+        "1/6",
+        "1/3",
+        "6",
+        "1/18"
+      ],
+      "t": 0,
+      "izoh": "Ildizli funksiyaning hosilasi f'(x) = 1/(2√x) ko'rinishida bo'ladi. x₀ = 9 uchun √9 = 3, demak f'(9) = 1/(2·3) = 1/6. Urinmaning burchak koeffitsienti aynan shu qiymat. Javob: 1/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-burchak-koeffitsienti",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#700ebcb0"
+    },
+    {
+      "q": "y = 2x³ − x² + 5 funksiya grafigiga x₀ = 1 nuqtada urinma o'tkazildi. Urinmaning burchak koeffitsientini aniqlang.",
+      "v": [
+        "6",
+        "8",
+        "9",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Hosila f'(x) = 6x² − 2x bo'ladi, ozod had 5 ning hosilasi nolga teng. x₀ = 1 da f'(1) = 6·1 − 2·1 = 4. Ozod hadni hosilaga qo'shib yuborish keng tarqalgan xato. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-burchak-koeffitsienti",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#fe98a075"
+    },
+    {
+      "q": "y = x² − 2x funksiya grafigiga abssissasi x₀ = 3 bo'lgan nuqtada o'tkazilgan urinmaning tenglamasini tuzing.",
+      "v": [
+        "y = 4x + 3",
+        "y = 4x − 9",
+        "y = 4x − 12",
+        "y = 3x − 4"
+      ],
+      "t": 1,
+      "izoh": "Avval urinish nuqtasining ordinatasini topamiz: f(3) = 9 − 6 = 3. Keyin f'(x) = 2x − 2, ya'ni f'(3) = 4. Urinma tenglamasi y = f(x₀) + f'(x₀)(x − x₀) = 3 + 4(x − 3) = 4x − 9. Javob: y = 4x − 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-tenglamasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#52a438db"
+    },
+    {
+      "q": "y = x³ kubik parabolaga uning (1; 1) nuqtasida o'tkazilgan urinmaning tenglamasi qaysi javobda to'g'ri berilgan?",
+      "v": [
+        "y = 3x + 1",
+        "y = 3x + 2",
+        "y = 3x − 2",
+        "y = 3x − 3"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 3x² bo'lgani uchun f'(1) = 3, demak urinmaning burchak koeffitsienti 3. Urinma tenglamasi y = 1 + 3(x − 1) ko'rinishida yoziladi. Qavsni ochsak y = 3x − 2 hosil bo'ladi. Javob: y = 3x − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-tenglamasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#61a0efab"
+    },
+    {
+      "q": "y = √x funksiya grafigiga abssissasi 4 ga teng nuqtada o'tkazilgan urinmaning tenglamasini toping.",
+      "v": [
+        "y = x/4 + 1",
+        "y = x/4 + 2",
+        "y = x/4 − 1",
+        "y = 4x − 14"
+      ],
+      "t": 0,
+      "izoh": "Urinish nuqtasi (4; 2), chunki √4 = 2. Hosila f'(x) = 1/(2√x), shuning uchun f'(4) = 1/4. Tenglama y = 2 + (1/4)(x − 4) = 2 + x/4 − 1 = x/4 + 1. Javob: y = x/4 + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-tenglamasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#08ebae15"
+    },
+    {
+      "q": "y = −x² + 4x + 1 parabolaga x₀ = 1 nuqtada o'tkazilgan urinmaning tenglamasi qanday ko'rinishda bo'ladi?",
+      "v": [
+        "y = 4x + 2",
+        "y = 2x − 2",
+        "y = 2x + 4",
+        "y = 2x + 2"
+      ],
+      "t": 3,
+      "izoh": "Ordinata: f(1) = −1 + 4 + 1 = 4. Hosila f'(x) = −2x + 4, demak f'(1) = 2. Urinma y = 4 + 2(x − 1) = 2x + 2 bo'ladi. f(x₀) ni to'g'ridan-to'g'ri ozod had deb olish xato. Javob: y = 2x + 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-tenglamasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#d68a39b6"
+    },
+    {
+      "q": "y = x² parabolaning (2; 4) nuqtasiga o'tkazilgan normalning tenglamasini tuzing va to'g'ri javobni tanlang.",
+      "v": [
+        "y = 4x − 4",
+        "y = −x/4 + 9/2",
+        "y = −x/4 + 4",
+        "y = −4x + 12"
+      ],
+      "t": 1,
+      "izoh": "Normal urinmaga perpendikulyar, shuning uchun uning koeffitsienti k = −1/f'(x₀). f'(x) = 2x va f'(2) = 4, demak normalning koeffitsienti −1/4. Tenglama y = 4 − (1/4)(x − 2) = −x/4 + 9/2. Javob: y = −x/4 + 9/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "normal-tenglamasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#d6008af3"
+    },
+    {
+      "q": "y = x³ − 2x funksiya grafigiga abssissasi x₀ = 1 bo'lgan nuqtada o'tkazilgan normalning tenglamasini toping.",
+      "v": [
+        "y = x − 2",
+        "y = −x − 2",
+        "y = −x",
+        "y = −x + 2"
+      ],
+      "t": 2,
+      "izoh": "Urinish nuqtasi ordinatasi f(1) = 1 − 2 = −1. Hosila f'(x) = 3x² − 2, ya'ni f'(1) = 1. Normalning koeffitsienti −1/1 = −1. Tenglama y = −1 − (x − 1) = −x. Javob: y = −x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "normal-tenglamasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#6c95da7d"
+    },
+    {
+      "q": "y = 4/x giperbolaga abssissasi 2 ga teng nuqtada o'tkazilgan normal qaysi tenglama bilan ifodalanadi?",
+      "v": [
+        "y = x",
+        "y = −x + 4",
+        "y = x + 2",
+        "y = x − 2"
+      ],
+      "t": 0,
+      "izoh": "Nuqta (2; 2), chunki 4/2 = 2. Hosila f'(x) = −4/x², shuning uchun f'(2) = −1. Normalning koeffitsienti −1/(−1) = 1. Tenglama y = 2 + 1·(x − 2) = x. Javob: y = x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "normal-tenglamasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#aa336cff"
+    },
+    {
+      "q": "y = 2x² − 3x funksiya grafigining x₀ = 2 nuqtasidagi normali qaysi tenglama bilan beriladi?",
+      "v": [
+        "y = 5x − 8",
+        "y = −x/5 + 2",
+        "y = −5x + 12",
+        "y = −x/5 + 12/5"
+      ],
+      "t": 3,
+      "izoh": "Ordinata f(2) = 8 − 6 = 2. Hosila f'(x) = 4x − 3, demak f'(2) = 5 va urinmaning koeffitsienti 5. Normal uchun k = −1/5, tenglama y = 2 − (1/5)(x − 2) = −x/5 + 12/5. Javob: y = −x/5 + 12/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "normal-tenglamasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#9a7c6482"
+    },
+    {
+      "q": "y = x² + 3x funksiya grafigiga x₀ = 1 nuqtada o'tkazilgan normalning burchak koeffitsientini toping.",
+      "v": [
+        "5",
+        "−1/5",
+        "−5",
+        "1/5"
+      ],
+      "t": 1,
+      "izoh": "Urinmaning koeffitsienti f'(1) ga teng, f'(x) = 2x + 3 bo'lgani uchun u 5 chiqadi. Normal urinmaga perpendikulyar bo'lgani sababli koeffitsientlar ko'paytmasi −1 ga teng. Demak normalning koeffitsienti −1/5. Javob: −1/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "normal-burchak-koeffitsienti",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#4e49e05e"
+    },
+    {
+      "q": "y = √x funksiya grafigining abssissasi 16 ga teng nuqtasidagi normalning burchak koeffitsienti nechaga teng?",
+      "v": [
+        "8",
+        "1/8",
+        "−8",
+        "−1/8"
+      ],
+      "t": 2,
+      "izoh": "Hosila f'(x) = 1/(2√x), √16 = 4 bo'lgani uchun f'(16) = 1/8. Normalning koeffitsienti −1 ni shu qiymatga bo'lish orqali topiladi: −1 : (1/8) = −8. Kasrni ag'darishni unutish tipik xato. Javob: −8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "normal-burchak-koeffitsienti",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#46c2865c"
+    },
+    {
+      "q": "y = x³ − 6x² + 5 funksiya grafigiga x₀ = 3 nuqtada o'tkazilgan normalning burchak koeffitsientini aniqlang.",
+      "v": [
+        "1/9",
+        "−1/9",
+        "9",
+        "−9"
+      ],
+      "t": 0,
+      "izoh": "Hosila f'(x) = 3x² − 12x, demak f'(3) = 27 − 36 = −9. Normal koeffitsienti −1/(−9) = 1/9 bo'ladi. Manfiy sonning teskarisini olganda ishora musbatga aylanadi. Javob: 1/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "normal-burchak-koeffitsienti",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#379d8745"
+    },
+    {
+      "q": "y = 3x² − x³ funksiya grafigining x₀ = 1 nuqtasida o'tkazilgan normali qanday burchak koeffitsientiga ega?",
+      "v": [
+        "3",
+        "1/3",
+        "−3",
+        "−1/3"
+      ],
+      "t": 3,
+      "izoh": "Hosila f'(x) = 6x − 3x² bo'ladi. x₀ = 1 da f'(1) = 6 − 3 = 3, ya'ni urinmaning koeffitsienti 3. Normal uchun koeffitsient −1/3 ga teng. Javob: −1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "normal-burchak-koeffitsienti",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#134813c8"
+    },
+    {
+      "q": "y = x² − x funksiya grafigiga abssissasi x₀ = 1 bo'lgan nuqtada o'tkazilgan urinma Ox o'qi bilan qanday burchak hosil qiladi?",
+      "v": [
+        "30°",
+        "45°",
+        "60°",
+        "135°"
+      ],
+      "t": 1,
+      "izoh": "Hosilaning geometrik ma'nosiga ko'ra tgα = f'(x₀). Bu yerda f'(x) = 2x − 1, demak f'(1) = 1. tgα = 1 tenglikdan α = 45° kelib chiqadi. Javob: 45°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-ogish-burchagi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#941e0746"
+    },
+    {
+      "q": "y = x² parabolaga abssissasi x₀ = √3/2 bo'lgan nuqtada o'tkazilgan urinmaning Ox o'qiga og'ish burchagini toping.",
+      "v": [
+        "30°",
+        "45°",
+        "60°",
+        "120°"
+      ],
+      "t": 2,
+      "izoh": "Hosila f'(x) = 2x, shuning uchun f'(√3/2) = 2·√3/2 = √3. Demak tgα = √3 bo'ladi. Bu qiymatga [0°; 180°) oraliqda α = 60° mos keladi. Javob: 60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-ogish-burchagi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#5d57d90c"
+    },
+    {
+      "q": "y = 4x − x² funksiya grafigiga abssissasi 2,5 ga teng nuqtada o'tkazilgan urinma Ox o'qi bilan qanday burchak tashkil qiladi?",
+      "v": [
+        "135°",
+        "45°",
+        "150°",
+        "120°"
+      ],
+      "t": 0,
+      "izoh": "Hosila f'(x) = 4 − 2x, demak f'(2,5) = 4 − 5 = −1. tgα = −1 bo'lgani uchun burchak o'tmas bo'lishi shart va α = 135° chiqadi. Manfiy tangensni ko'rib 45° deb javob berish xato. Javob: 135°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-ogish-burchagi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#0f34614d"
+    },
+    {
+      "q": "y = x² − 4x + 7 funksiya grafigiga x₀ = 1 nuqtada o'tkazilgan urinmaning Ox o'qi bilan hosil qilgan burchagi haqida qaysi fikr to'g'ri?",
+      "v": [
+        "O'tmas burchak, tgα = −2",
+        "O'tkir burchak, tgα = 2",
+        "O'tmas burchak, tgα = −4",
+        "O'tkir burchak, tgα = −2"
+      ],
+      "t": 0,
+      "izoh": "Hosila f'(x) = 2x − 4 bo'ladi, x₀ = 1 da f'(1) = 2 − 4 = −2. tgα = −2 manfiy bo'lgani uchun og'ish burchagi o'tmas bo'ladi. Musbat tangens bilan o'tmas burchak yoki manfiy tangens bilan o'tkir burchak bir vaqtda bo'la olmaydi. Javob: o'tmas burchak, tgα = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-ogish-burchagi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#77afde50"
+    },
+    {
+      "q": "y = x² − 3x funksiya grafigining qaysi nuqtasida o'tkazilgan urinma Ox o'qi bilan 45° burchak hosil qiladi? Nuqtaning abssissasini toping.",
+      "v": [
+        "3/2",
+        "2",
+        "4",
+        "−2"
+      ],
+      "t": 1,
+      "izoh": "45° burchak uchun tgα = 1, ya'ni f'(x₀) = 1 bo'lishi kerak. Hosila f'(x) = 2x − 3, demak 2x − 3 = 1 tenglamani yechamiz. Bundan 2x = 4 va x = 2 kelib chiqadi. Ikkiga bo'lishni unutsa 4 chiqib qoladi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilgan-burchakdan-nuqta",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#a3a36a6e"
+    },
+    {
+      "q": "y = x² − 5x + 6 parabolaning qaysi nuqtasidagi urinma Ox o'qi bilan 135° burchak tashkil qiladi?",
+      "v": [
+        "(2; 0)",
+        "(3; 0)",
+        "(5/2; −1/4)",
+        "(2; 4)"
+      ],
+      "t": 0,
+      "izoh": "135° burchak uchun tgα = −1 bo'ladi, demak f'(x₀) = −1. Hosila 2x − 5 ga teng, shuning uchun 2x − 5 = −1 va x = 2. Ordinatani topamiz: f(2) = 4 − 10 + 6 = 0. Javob: (2; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-burchakdan-nuqta",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#0de58275"
+    },
+    {
+      "q": "y = √x funksiya grafigining qaysi nuqtasida o'tkazilgan urinmaning og'ish burchagi 45° ga teng bo'ladi?",
+      "v": [
+        "1",
+        "1/2",
+        "1/4",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Shart bo'yicha f'(x₀) = tg45° = 1. Hosila 1/(2√x) bo'lgani uchun 1/(2√x) = 1 tenglama hosil bo'ladi. Bundan 2√x = 1, ya'ni √x = 1/2 va x = 1/4. Ildizni kvadratga ko'tarishni unutish tipik xato. Javob: 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilgan-burchakdan-nuqta",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#c80353c5"
+    },
+    {
+      "q": "Sardorning qishki chana tepaligi kesimi y = x²/8 egri chizig'i bilan berilgan, bu yerda x va y metrda o'lchanadi. Tepalik yon sirti gorizont bilan 45° burchak hosil qiladigan nuqtaning abssissasini toping.",
+      "v": [
+        "2 m",
+        "8 m",
+        "1 m",
+        "4 m"
+      ],
+      "t": 3,
+      "izoh": "Nishablik tepalik kesimi grafigiga o'tkazilgan urinmaning burchak koeffitsientiga teng. 45° uchun bu koeffitsient tg 45° = 1 bo'ladi. Hosila y' = x/8 emas, x/4 ga teng, chunki (1/8)·2x = x/4. x/4 = 1 dan x = 4 m. Javob: 4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-burchakdan-nuqta",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#2df74210"
+    },
+    {
+      "q": "y = x² − 4x + 1 parabolaga o'tkazilgan urinma y = 2x − 5 to'g'ri chiziqqa parallel bo'lsa, urinish nuqtasining abssissasini toping.",
+      "v": [
+        "1",
+        "3",
+        "6",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Parallel to'g'ri chiziqlarning burchak koeffitsientlari teng, demak f'(x₀) = 2 bo'lishi kerak. Hosila f'(x) = 2x − 4, shuning uchun 2x − 4 = 2 tenglama chiqadi. Bundan 2x = 6 va x = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-parallel-chiziqqa",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#11a52348"
+    },
+    {
+      "q": "y = x³ + x funksiya grafigiga o'tkazilgan urinma y = 4x + 7 to'g'ri chiziqqa parallel bo'ladigan nuqtalar haqida qaysi javob to'g'ri?",
+      "v": [
+        "x = 1 va x = −1",
+        "Faqat x = 1",
+        "x = 3 va x = −3",
+        "Faqat x = −1"
+      ],
+      "t": 0,
+      "izoh": "Parallellik sharti f'(x₀) = 4 ni beradi. Hosila f'(x) = 3x² + 1, demak 3x² + 1 = 4 va 3x² = 3. Bundan x² = 1, ya'ni x = 1 hamda x = −1. Kvadrat tenglamaning ikkinchi ildizini yo'qotib qo'ymaslik kerak. Javob: x = 1 va x = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-parallel-chiziqqa",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#4a5ce65d"
+    },
+    {
+      "q": "y = 4/x giperbolaga o'tkazilgan urinma y = −x + 3 to'g'ri chiziqqa parallel. Musbat abssissali urinish nuqtasidagi urinma tenglamasini toping.",
+      "v": [
+        "y = −x − 4",
+        "y = −x + 2",
+        "y = −x",
+        "y = −x + 4"
+      ],
+      "t": 3,
+      "izoh": "Parallellikdan f'(x₀) = −1. Hosila −4/x² ga teng, demak −4/x² = −1 va x² = 4, ya'ni x = 2 yoki x = −2. Musbat abssissa x = 2, unga f(2) = 2 mos keladi. Urinma y = 2 − (x − 2) = −x + 4. Manfiy nuqta uchun esa y = −x − 4 chiqadi. Javob: y = −x + 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-parallel-chiziqqa",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#2ff2ff5d"
+    },
+    {
+      "q": "y = x² − 6x + 11 parabolaga o'tkazilgan urinma y = −2x + 1 to'g'ri chiziqqa parallel bo'lsa, shu urinmaning tenglamasini tuzing.",
+      "v": [
+        "y = −2x + 3",
+        "y = −2x + 11",
+        "y = −2x + 7",
+        "y = −2x − 1"
+      ],
+      "t": 2,
+      "izoh": "Parallellik sharti f'(x₀) = −2 ni beradi. 2x − 6 = −2 dan x₀ = 2, ordinatasi f(2) = 4 − 12 + 11 = 3. Urinma tenglamasi y = 3 − 2(x − 2) = −2x + 7. Javob: y = −2x + 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-parallel-chiziqqa",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#9280f74e"
+    },
+    {
+      "q": "y = x² + x funksiya grafigiga o'tkazilgan urinma y = −x/5 + 2 to'g'ri chiziqqa perpendikulyar bo'lsa, urinish nuqtasining abssissasini aniqlang.",
+      "v": [
+        "−3",
+        "4",
+        "2",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Perpendikulyarlik shartida koeffitsientlar ko'paytmasi −1 ga teng. Berilgan chiziqning koeffitsienti −1/5, demak urinmaniki 5 bo'ladi. Hosila 2x + 1, shuning uchun 2x + 1 = 5 va x = 2. Koeffitsientni −5 deb olsa −3 chiqib qoladi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-perpendikulyar-chiziqqa",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#7d737de7"
+    },
+    {
+      "q": "y = x³ + 2x funksiya grafigiga o'tkazilgan urinma y = −x/5 + 1 chiziqqa perpendikulyar. Musbat abssissali nuqtadagi urinma tenglamasini toping.",
+      "v": [
+        "y = 5x − 2",
+        "y = 5x + 3",
+        "y = 5x − 5",
+        "y = 5x + 2"
+      ],
+      "t": 0,
+      "izoh": "Perpendikulyarlikdan urinmaning koeffitsienti 5 ga teng bo'ladi. Hosila 3x² + 2, demak 3x² + 2 = 5 va x² = 1. Musbat ildiz x = 1, unga f(1) = 3 mos keladi. Urinma y = 3 + 5(x − 1) = 5x − 2. Javob: y = 5x − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-perpendikulyar-chiziqqa",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#5911d01d"
+    },
+    {
+      "q": "y = √x funksiya grafigiga o'tkazilgan urinma y = −18x + 1 to'g'ri chiziqqa perpendikulyar bo'ladigan nuqtaning abssissasini toping.",
+      "v": [
+        "9",
+        "3",
+        "81",
+        "18"
+      ],
+      "t": 2,
+      "izoh": "Perpendikulyarlik sharti urinma koeffitsientini 1/18 qilib beradi. Hosila 1/(2√x) bo'lgani uchun 1/(2√x) = 1/18 tenglama chiqadi. Bundan 2√x = 18, ya'ni √x = 9 va x = 81. √x ni topib to'xtab qolish keng tarqalgan xato. Javob: 81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-perpendikulyar-chiziqqa",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#ac4a4f42"
+    },
+    {
+      "q": "y = 2x² − x funksiya grafigiga o'tkazilgan urinma y = −x/7 + 4 to'g'ri chiziqqa perpendikulyar bo'lsa, urinish nuqtasining ordinatasi nechaga teng?",
+      "v": [
+        "6",
+        "2",
+        "7",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "Perpendikulyarlik urinma koeffitsientini 7 ga tenglaydi. Hosila 4x − 1, demak 4x − 1 = 7 va x = 2. Endi ordinatani topamiz: f(2) = 2·4 − 2 = 6. Savolda abssissa emas, ordinata so'ralgani e'tibordan qolmasin. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-perpendikulyar-chiziqqa",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#b69d5456"
+    },
+    {
+      "q": "y = x² − 8x + 3 parabolaga o'tkazilgan urinma Ox o'qiga parallel bo'ladigan nuqtaning koordinatalarini toping.",
+      "v": [
+        "(4; −13)",
+        "(4; 3)",
+        "(−4; 51)",
+        "(8; 3)"
+      ],
+      "t": 0,
+      "izoh": "Ox o'qiga parallel urinmaning burchak koeffitsienti nolga teng, demak f'(x₀) = 0. Hosila 2x − 8, shuning uchun 2x − 8 = 0 va x = 4. Ordinata f(4) = 16 − 32 + 3 = −13 bo'ladi. Javob: (4; −13).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#ce31e2f6"
+    },
+    {
+      "q": "y = x³ − 12x funksiya grafigiga necha nuqtada Ox o'qiga parallel urinma o'tkazish mumkin va ular qayerda joylashgan?",
+      "v": [
+        "Bitta: x = 2",
+        "Bitta: x = 0",
+        "Uchta: x = 0, x = 2 va x = −2",
+        "Ikkita: x = 2 va x = −2"
+      ],
+      "t": 3,
+      "izoh": "Gorizontal urinma sharti f'(x₀) = 0 ko'rinishida yoziladi. Hosila 3x² − 12, demak 3x² − 12 = 0 va x² = 4. Bundan x = 2 hamda x = −2, ya'ni ikkita nuqta bor. Javob: ikkita, x = 2 va x = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#88ff14bd"
+    },
+    {
+      "q": "Anvar tik yuqoriga otgan koptokning balandligi h(t) = 20t − 5t² formula bilan beriladi, bu yerda h metrda, t sekundda. Balandlik grafigiga o'tkazilgan urinma gorizontal bo'ladigan vaqtni toping.",
+      "v": [
+        "4 s",
+        "2 s",
+        "20 s",
+        "0,5 s"
+      ],
+      "t": 1,
+      "izoh": "Gorizontal urinma h'(t) = 0 degani, ya'ni koptok eng yuqori nuqtaga chiqqan payt. Hosila h'(t) = 20 − 10t, shuning uchun 20 − 10t = 0 va t = 2 s. t = 4 s esa koptokning yerga tushish vaqti, balandlikning nolga aylanishi. Javob: 2 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorizontal-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#b4cf79bf"
+    },
+    {
+      "q": "y = x³ − 3x² + 3x − 1 funksiya grafigiga Ox o'qiga parallel urinma necha nuqtada o'tkaziladi?",
+      "v": [
+        "Uchta nuqtada",
+        "Ikkita nuqtada: x = 1 va x = 3",
+        "Hech qanday nuqtada",
+        "Bitta nuqtada, x = 1"
+      ],
+      "t": 3,
+      "izoh": "Shart f'(x₀) = 0 ni talab qiladi. Hosila 3x² − 6x + 3 = 3(x − 1)² ko'rinishida to'la kvadratga keladi. 3(x − 1)² = 0 tenglamaning yagona ildizi x = 1. Kubik funksiya bo'lgani uchun ikkita nuqta bo'ladi deb o'ylash xato. Javob: bitta nuqtada, x = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gorizontal-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#fd09c12f"
+    },
+    {
+      "q": "Rasmda y = f(x) funksiya grafigi va uning A nuqtasiga o'tkazilgan urinma tasvirlangan. Urinma (1; 1) va (5; 4) nuqtalardan o'tadi. Urinish nuqtasidagi hosila qiymatini toping.",
+      "v": [
+        "4/3",
+        "3",
+        "−3/4",
+        "3/4"
+      ],
+      "t": 3,
+      "izoh": "Hosilaning geometrik ma'nosiga ko'ra f'(x₀) urinmaning burchak koeffitsientiga teng. Koeffitsient ikki nuqta orqali k = (y₂ − y₁)/(x₂ − x₁) formulasi bilan topiladi. Demak k = (4 − 1)/(5 − 1) = 3/4. Faqat ordinatalar ayirmasini olib 3 deb javob berish xato. Javob: 3/4.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='30' y1='260' x2='288' y2='260' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='40' y1='272' x2='40' y2='48' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='281' y='276' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='24' y='54' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='26' y='276' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Cline x1='80' y1='256' x2='80' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='120' y1='256' x2='120' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='160' y1='256' x2='160' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='200' y1='256' x2='200' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='240' y1='256' x2='240' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='77' y='276' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='157' y='276' font-size='13' fill='%23334155'%3E3%3C/text%3E%3Ctext x='237' y='276' font-size='13' fill='%23334155'%3E5%3C/text%3E%3Cline x1='36' y1='220' x2='44' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='36' y1='180' x2='44' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='36' y1='140' x2='44' y2='140' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='36' y1='100' x2='44' y2='100' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='24' y='225' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='24' y='145' font-size='13' fill='%23334155'%3E3%3C/text%3E%3Ctext x='24' y='105' font-size='13' fill='%23334155'%3E4%3C/text%3E%3Cpolyline points='80,244 120,196 160,160 200,136 240,124 262,138' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='60' y1='235' x2='260' y2='85' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='80' cy='220' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='240' cy='100' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='160' cy='160' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='166' y='176' font-size='13' fill='%23334155'%3EA%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafikdan-hosila-oqish",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#bdd64617"
+    },
+    {
+      "q": "Chizmada y = f(x) grafigiga B nuqtada o'tkazilgan urinma ko'rsatilgan va u (1; 4) hamda (4; 2) nuqtalardan o'tadi. Hosilaning urinish nuqtasidagi qiymati nechaga teng?",
+      "v": [
+        "2/3",
+        "−2/3",
+        "−3/2",
+        "−2"
+      ],
+      "t": 1,
+      "izoh": "Urinmaning burchak koeffitsienti k = (2 − 4)/(4 − 1) = −2/3 ga teng. Hosilaning geometrik ma'nosi bo'yicha f'(x₀) aynan shu koeffitsientdir. Urinma pastga qarab og'gani uchun natija manfiy bo'lishi shart. Kasrni ag'darib −3/2 deb yozish tipik xato. Javob: −2/3.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='30' y1='260' x2='288' y2='260' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='40' y1='272' x2='40' y2='48' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='281' y='276' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='24' y='54' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='26' y='276' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Cline x1='80' y1='256' x2='80' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='120' y1='256' x2='120' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='160' y1='256' x2='160' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='200' y1='256' x2='200' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='240' y1='256' x2='240' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='77' y='276' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='157' y='276' font-size='13' fill='%23334155'%3E3%3C/text%3E%3Ctext x='197' y='276' font-size='13' fill='%23334155'%3E4%3C/text%3E%3Cline x1='36' y1='180' x2='44' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='36' y1='140' x2='44' y2='140' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='36' y1='100' x2='44' y2='100' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='24' y='185' font-size='13' fill='%23334155'%3E2%3C/text%3E%3Ctext x='24' y='145' font-size='13' fill='%23334155'%3E3%3C/text%3E%3Ctext x='24' y='105' font-size='13' fill='%23334155'%3E4%3C/text%3E%3Cpolyline points='80,77 110,114 140,140 170,154 200,157 240,144' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='93' x2='240' y2='207' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='80' cy='100' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='200' cy='180' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='140' cy='140' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='146' y='134' font-size='13' fill='%23334155'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafikdan-hosila-oqish",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#74d8f37b"
+    },
+    {
+      "q": "Rasmda ko'rsatilgan urinma y = f(x) grafigiga C nuqtada o'tkazilgan bo'lib, (2; 5) va (6; 2) nuqtalardan o'tadi. Shu nuqtadagi hosila qiymatini aniqlang.",
+      "v": [
+        "−4/3",
+        "3/4",
+        "−3/4",
+        "−3"
+      ],
+      "t": 2,
+      "izoh": "Ikki nuqta orqali koeffitsient k = (2 − 5)/(6 − 2) = −3/4 topiladi. Hosilaning geometrik ma'nosiga ko'ra f'(x₀) = k. Ayirmalarni teskari tartibda bo'lib −4/3 olish keng tarqalgan xato. Javob: −3/4.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='30' y1='260' x2='294' y2='260' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='40' y1='272' x2='40' y2='40' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='286' y='276' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='24' y='46' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='26' y='276' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Cline x1='120' y1='256' x2='120' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='160' y1='256' x2='160' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='200' y1='256' x2='200' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='240' y1='256' x2='240' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='280' y1='256' x2='280' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='117' y='276' font-size='13' fill='%23334155'%3E2%3C/text%3E%3Ctext x='197' y='276' font-size='13' fill='%23334155'%3E4%3C/text%3E%3Ctext x='277' y='276' font-size='13' fill='%23334155'%3E6%3C/text%3E%3Cline x1='36' y1='180' x2='44' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='36' y1='140' x2='44' y2='140' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='36' y1='100' x2='44' y2='100' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='36' y1='60' x2='44' y2='60' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='24' y='185' font-size='13' fill='%23334155'%3E2%3C/text%3E%3Ctext x='24' y='105' font-size='13' fill='%23334155'%3E4%3C/text%3E%3Ctext x='24' y='65' font-size='13' fill='%23334155'%3E5%3C/text%3E%3Cpolyline points='120,44 160,86 200,120 240,146 280,164' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='112' y1='54' x2='288' y2='186' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='120' cy='60' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='280' cy='180' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='200' cy='120' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='206' y='114' font-size='13' fill='%23334155'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikdan-hosila-oqish",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#352dba26"
+    },
+    {
+      "q": "Chizmadagi urinma y = f(x) grafigiga D nuqtada tegib o'tadi va uning ikkita nuqtasi (1; 2) hamda (6; 4) deb belgilangan. Hosilaning D nuqtadagi qiymatini toping.",
+      "v": [
+        "5/2",
+        "2",
+        "−2/5",
+        "2/5"
+      ],
+      "t": 3,
+      "izoh": "Urinmaning burchak koeffitsienti k = (4 − 2)/(6 − 1) = 2/5 ga teng. Hosilaning geometrik ma'nosi bo'yicha f'(x₀) shu koeffitsientga teng bo'ladi. Bo'linmani teskari yozib 5/2 olish yoki maxrajni tashlab 2 deb javob berish xato. Javob: 2/5.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='30' y1='260' x2='294' y2='260' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='40' y1='272' x2='40' y2='48' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='286' y='276' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='24' y='54' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='26' y='276' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Cline x1='80' y1='256' x2='80' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='120' y1='256' x2='120' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='180' y1='256' x2='180' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='240' y1='256' x2='240' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='280' y1='256' x2='280' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='77' y='276' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='237' y='276' font-size='13' fill='%23334155'%3E5%3C/text%3E%3Ctext x='277' y='276' font-size='13' fill='%23334155'%3E6%3C/text%3E%3Cline x1='36' y1='180' x2='44' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='36' y1='140' x2='44' y2='140' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='36' y1='100' x2='44' y2='100' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='24' y='185' font-size='13' fill='%23334155'%3E2%3C/text%3E%3Ctext x='24' y='145' font-size='13' fill='%23334155'%3E3%3C/text%3E%3Ctext x='24' y='105' font-size='13' fill='%23334155'%3E4%3C/text%3E%3Cpolyline points='80,210 120,175 180,140 240,127 280,130' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='72' y1='183' x2='288' y2='97' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='80' cy='180' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='280' cy='100' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='180' cy='140' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='170' y='134' font-size='13' fill='%23334155'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikdan-hosila-oqish",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#9a7d9b18"
+    },
+    {
+      "q": "Rasmda y = f(x) funksiya grafigi va uning A, B, C nuqtalari ko'rsatilgan. Hosila qaysi nuqtada manfiy qiymatga ega bo'ladi?",
+      "v": [
+        "Faqat A nuqtada",
+        "Faqat B nuqtada",
+        "Faqat C nuqtada",
+        "A va C nuqtalarda"
+      ],
+      "t": 2,
+      "izoh": "Hosila ishorasi urinmaning og'ishiga qarab aniqlanadi. A nuqtada grafik ko'tarilmoqda, demak urinma o'tkir burchak hosil qiladi va hosila musbat. B nuqtada grafik eng yuqori nuqtada, urinma gorizontal va hosila nolga teng. C nuqtada grafik pasaymoqda, shuning uchun hosila manfiy. Javob: faqat C nuqtada.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='30' y1='260' x2='288' y2='260' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='40' y1='272' x2='40' y2='60' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='281' y='276' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='24' y='66' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='26' y='276' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Cline x1='80' y1='256' x2='80' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='160' y1='256' x2='160' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='240' y1='256' x2='240' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='77' y='276' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='157' y='276' font-size='13' fill='%23334155'%3E3%3C/text%3E%3Ctext x='237' y='276' font-size='13' fill='%23334155'%3E5%3C/text%3E%3Cpolyline points='60,200 80,164 120,116 160,100 200,116 240,164 260,200' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='80' cy='164' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='160' cy='100' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='240' cy='164' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='66' y='158' font-size='13' fill='%23334155'%3EA%3C/text%3E%3Ctext x='156' y='92' font-size='13' fill='%23334155'%3EB%3C/text%3E%3Ctext x='248' y='158' font-size='13' fill='%23334155'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafikdan-hosila-ishorasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#30066406"
+    },
+    {
+      "q": "Chizmada o'suvchi y = f(x) grafigining P va Q nuqtalari belgilangan. Hosilaning qaysi nuqtadagi qiymati kattaroq va nima uchun?",
+      "v": [
+        "Q nuqtada, chunki u yerda grafik tikroq ko'tariladi",
+        "P nuqtada, chunki u yerda funksiya qiymati kichikroq",
+        "Ikkalasida bir xil, chunki grafik uzluksiz o'sadi",
+        "P nuqtada, chunki urinma Ox o'qiga yaqinroq"
+      ],
+      "t": 0,
+      "izoh": "Hosila urinmaning burchak koeffitsienti bo'lgani uchun grafik qanchalik tik ko'tarilsa, uning qiymati shunchalik katta bo'ladi. P nuqtada egri chiziq deyarli yotiq, Q nuqtada esa keskin ko'tariladi. Funksiya qiymatining kattaligi hosila kattaligini bildirmaydi. Javob: Q nuqtada, chunki u yerda grafik tikroq ko'tariladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='30' y1='260' x2='294' y2='260' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='40' y1='272' x2='40' y2='60' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='286' y='276' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='24' y='66' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='26' y='276' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Cline x1='120' y1='256' x2='120' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='240' y1='256' x2='240' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='117' y='276' font-size='13' fill='%23334155'%3E2%3C/text%3E%3Ctext x='237' y='276' font-size='13' fill='%23334155'%3E5%3C/text%3E%3Cpolyline points='40,260 80,255 120,240 160,215 200,180 240,135 280,80' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='120' cy='240' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='240' cy='135' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='110' y='232' font-size='13' fill='%23334155'%3EP%3C/text%3E%3Ctext x='248' y='130' font-size='13' fill='%23334155'%3EQ%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafikdan-hosila-ishorasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#dee0cb22"
+    },
+    {
+      "q": "Rasmdagi grafikda K, L va M nuqtalar belgilangan. Shu nuqtalardagi hosila qiymatlarini o'sish tartibida to'g'ri joylashtirgan javobni tanlang.",
+      "v": [
+        "f'(M) < f'(L) < f'(K)",
+        "f'(K) < f'(L) < f'(M)",
+        "f'(L) < f'(K) < f'(M)",
+        "f'(K) = f'(M) < f'(L)"
+      ],
+      "t": 1,
+      "izoh": "K nuqtada grafik pasaymoqda, shuning uchun f'(K) manfiy. L nuqta eng past nuqta bo'lib, u yerda urinma gorizontal va hosila nolga teng. M nuqtada grafik ko'tarilgani uchun hosila musbat. Demak manfiy, nol va musbat tartibda f'(K) < f'(L) < f'(M). Javob: f'(K) < f'(L) < f'(M).",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='30' y1='260' x2='294' y2='260' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='40' y1='272' x2='40' y2='60' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='286' y='276' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='24' y='66' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='26' y='276' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Cline x1='80' y1='256' x2='80' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='160' y1='256' x2='160' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='240' y1='256' x2='240' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='77' y='276' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='157' y='276' font-size='13' fill='%23334155'%3E3%3C/text%3E%3Ctext x='237' y='276' font-size='13' fill='%23334155'%3E5%3C/text%3E%3Cpolyline points='40,112 80,172 120,208 160,220 200,208 240,172 280,112' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='80' cy='172' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='160' cy='220' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='240' cy='172' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='66' y='166' font-size='13' fill='%23334155'%3EK%3C/text%3E%3Ctext x='156' y='238' font-size='13' fill='%23334155'%3EL%3C/text%3E%3Ctext x='248' y='166' font-size='13' fill='%23334155'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikdan-hosila-ishorasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#2582ccff"
+    },
+    {
+      "q": "Chizmada y = f(x) grafigi va E, F, G nuqtalari tasvirlangan. Urinma Ox o'qiga parallel bo'ladigan nuqtani ko'rsating.",
+      "v": [
+        "E nuqtada",
+        "G nuqtada",
+        "Hech qaysi nuqtada",
+        "F nuqtada"
+      ],
+      "t": 3,
+      "izoh": "Urinma Ox o'qiga parallel bo'lishi f'(x₀) = 0 degani. Grafik E va G nuqtalarda tik ko'tarilmoqda, demak u yerda hosila musbat. F nuqta atrofida esa egri chiziq gorizontal bo'lib qoladi: urinma Ox o'qi bilan bir yo'nalishda ketadi va f'(x₀) = 0 bo'ladi. Javob: F nuqtada.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='30' y1='260' x2='288' y2='260' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='40' y1='272' x2='40' y2='50' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='281' y='276' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='24' y='56' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='26' y='276' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Cline x1='80' y1='256' x2='80' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='160' y1='256' x2='160' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='240' y1='256' x2='240' y2='264' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='77' y='276' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='157' y='276' font-size='13' fill='%23334155'%3E3%3C/text%3E%3Ctext x='237' y='276' font-size='13' fill='%23334155'%3E5%3C/text%3E%3Cpolyline points='60,254 80,208 120,160 160,160 200,160 240,112 262,62' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='80' cy='208' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='160' cy='160' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='240' cy='112' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='66' y='202' font-size='13' fill='%23334155'%3EE%3C/text%3E%3Ctext x='156' y='180' font-size='13' fill='%23334155'%3EF%3C/text%3E%3Ctext x='248' y='106' font-size='13' fill='%23334155'%3EG%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafikdan-hosila-ishorasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#4e1f84d8"
+    },
+    {
+      "q": "y = x² − 4x funksiya grafigiga x₀ = 3 nuqtada o'tkazilgan urinma Oy o'qini qaysi nuqtada kesib o'tadi?",
+      "v": [
+        "−9",
+        "−3",
+        "9",
+        "−6"
+      ],
+      "t": 0,
+      "izoh": "Urinish nuqtasi ordinatasi f(3) = 9 − 12 = −3, hosila esa f'(3) = 2·3 − 4 = 2. Urinma tenglamasi y = −3 + 2(x − 3) = 2x − 9. Oy o'qi bilan kesishishda x = 0 bo'ladi, demak y = −9. Javob: −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinmaning-oy-kesmasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#f7d54f7b"
+    },
+    {
+      "q": "y = √x funksiya grafigiga abssissasi 9 ga teng nuqtada o'tkazilgan urinmaning Oy o'qidagi kesmasi nechaga teng?",
+      "v": [
+        "3",
+        "1/6",
+        "3/2",
+        "−3/2"
+      ],
+      "t": 2,
+      "izoh": "Urinish nuqtasi (9; 3), hosila esa f'(9) = 1/(2·3) = 1/6. Urinma tenglamasi y = 3 + (1/6)(x − 9) = x/6 + 3/2 ko'rinishida yoziladi. x = 0 da y = 3/2 chiqadi. Urinish nuqtasining ordinatasi 3 ni kesma deb olish xato. Javob: 3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinmaning-oy-kesmasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#39720834"
+    },
+    {
+      "q": "Zilola y = 12/x giperbolaga abssissasi 3 ga teng nuqtada urinma chizdi. Bu urinma Oy o'qini qaysi ordinatada kesadi?",
+      "v": [
+        "4",
+        "−8",
+        "12",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Urinish nuqtasi (3; 4), chunki 12 : 3 = 4. Hosila f'(x) = −12/x², demak f'(3) = −12/9 = −4/3. Urinma y = 4 − (4/3)(x − 3) = −4x/3 + 8 ko'rinishida bo'ladi. x = 0 qo'yilganda y = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinmaning-oy-kesmasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#72aa68df"
+    },
+    {
+      "q": "y = x³ − 3x + 2 funksiya grafigiga x₀ = 2 nuqtada o'tkazilgan urinmaning Oy o'qini kesish nuqtasini toping.",
+      "v": [
+        "−14",
+        "4",
+        "14",
+        "−18"
+      ],
+      "t": 0,
+      "izoh": "Ordinata f(2) = 8 − 6 + 2 = 4, hosila f'(x) = 3x² − 3 va f'(2) = 9. Urinma y = 4 + 9(x − 2) = 9x − 14. x = 0 bo'lganda y = −14 ga teng. f(x₀) ni qo'shishni unutsa −18 chiqib qoladi. Javob: −14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinmaning-oy-kesmasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#a5da37e4"
+    },
+    {
+      "q": "y = x² parabolaga abssissasi 4 ga teng nuqtada o'tkazilgan urinma Ox o'qini qaysi nuqtada kesib o'tadi?",
+      "v": [
+        "4",
+        "2",
+        "8",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "Urinish nuqtasi (4; 16), hosila f'(4) = 8. Urinma tenglamasi y = 16 + 8(x − 4) = 8x − 16. Ox o'qida y = 0, demak 8x = 16 va x = 2. Parabolaning urinmasi doim x₀ ning yarmida o'qni kesishi shundan kelib chiqadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinmaning-ox-kesmasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#68898e52"
+    },
+    {
+      "q": "y = x² − 2x + 5 funksiya grafigiga x₀ = 3 nuqtada o'tkazilgan urinma Ox o'qi bilan qaysi abssissada kesishadi?",
+      "v": [
+        "−1",
+        "3",
+        "1",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Ordinata f(3) = 9 − 6 + 5 = 8, hosila f'(x) = 2x − 2 va f'(3) = 4. Urinma y = 8 + 4(x − 3) = 4x − 4 bo'ladi. y = 0 dan 4x = 4, ya'ni x = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinmaning-ox-kesmasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#a485d0f5"
+    },
+    {
+      "q": "y = √x funksiya grafigining abssissasi 16 ga teng nuqtasidagi urinma Ox o'qini qayerda kesadi?",
+      "v": [
+        "−16",
+        "16",
+        "−2",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Urinish nuqtasi (16; 4), hosila f'(16) = 1/(2·4) = 1/8. Urinma y = 4 + (1/8)(x − 16) = x/8 + 2. y = 0 dan x/8 = −2 va x = −16. Ildiz funksiyasining urinmasi manfiy yarim o'qni kesishi tabiiy. Javob: −16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinmaning-ox-kesmasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#ee4ca928"
+    },
+    {
+      "q": "Bekzod y = 6/x giperbolaga abssissasi 2 ga teng nuqtada urinma o'tkazdi. Urinma Ox o'qini qaysi nuqtada kesib o'tadi?",
+      "v": [
+        "2",
+        "6",
+        "3",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Urinish nuqtasi (2; 3), chunki 6 : 2 = 3. Hosila f'(x) = −6/x², demak f'(2) = −6/4 = −3/2. Urinma y = 3 − (3/2)(x − 2) = −3x/2 + 6. y = 0 dan 3x/2 = 6, ya'ni x = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinmaning-ox-kesmasi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#72ac2573"
+    },
+    {
+      "q": "y = x² parabolaga (2; 4) nuqtada o'tkazilgan urinma koordinata o'qlari bilan uchburchak hosil qiladi. Shu uchburchakning yuzini toping.",
+      "v": [
+        "4",
+        "2",
+        "8",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Hosila f'(2) = 4, urinma esa y = 4 + 4(x − 2) = 4x − 4. Ox o'qi bilan kesishishi x = 1, Oy o'qi bilan kesishishi y = −4. To'g'ri burchakli uchburchak katetlari 1 va 4, yuzi S = (1/2)·1·4 = 2. Katetlarni ko'paytirib yarmiga bo'lishni unutsa 4 chiqadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-va-oqlar-uchburchagi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#0300da14"
+    },
+    {
+      "q": "y = 9/x giperbolaga abssissasi 3 ga teng nuqtada o'tkazilgan urinma koordinata o'qlari bilan hosil qilgan uchburchakning yuzi nechaga teng?",
+      "v": [
+        "18",
+        "6",
+        "36",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "Urinish nuqtasi (3; 3), hosila f'(3) = −9/9 = −1. Urinma y = 3 − (x − 3) = −x + 6. O'qlarni kesish nuqtalari (6; 0) va (0; 6), demak katetlar 6 va 6. Yuza S = (1/2)·6·6 = 18. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-va-oqlar-uchburchagi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#ad191220"
+    },
+    {
+      "q": "y = √x funksiya grafigiga abssissasi 9 ga teng nuqtada o'tkazilgan urinma koordinata o'qlari bilan uchburchak yasadi. Uning yuzini hisoblang.",
+      "v": [
+        "27/2",
+        "9/2",
+        "27/4",
+        "3/2"
+      ],
+      "t": 2,
+      "izoh": "Urinma tenglamasi y = x/6 + 3/2 ekanligini avval topamiz. Oy o'qidagi kesma 3/2, Ox o'qidagi kesish nuqtasi esa x = −9. Katetlar uzunligi 9 va 3/2 bo'lgani uchun S = (1/2)·9·(3/2) = 27/4. Manfiy abssissa uzunlik sifatida modul bilan olinadi. Javob: 27/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-va-oqlar-uchburchagi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#1985e8d4"
+    },
+    {
+      "q": "y = 5/x giperbolaning ixtiyoriy nuqtasiga urinma o'tkazildi. Urinma va koordinata o'qlari hosil qilgan uchburchakning yuzi haqida nima deyish mumkin?",
+      "v": [
+        "5, urinish nuqtasiga bog'liq emas",
+        "Urinish nuqtasiga bog'liq, yagona qiymat yo'q",
+        "20, urinish nuqtasiga bog'liq emas",
+        "10, urinish nuqtasiga bog'liq emas"
+      ],
+      "t": 3,
+      "izoh": "Urinish nuqtasini (a; 5/a) deb olamiz, hosila esa −5/a² ga teng. Urinma y = 5/a − (5/a²)(x − a) = −5x/a² + 10/a ko'rinishiga keladi. Oy dagi kesma 10/a, Ox dagi kesma esa x = 2a. Yuza S = (1/2)·2a·(10/a) = 10 chiqadi va a qisqarib ketadi. Javob: 10, urinish nuqtasiga bog'liq emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-va-oqlar-uchburchagi",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#f35bbf81"
+    },
+    {
+      "q": "y = x² parabolaga (0; −1) nuqtadan o'tkazilgan urinmalarning tenglamalari qaysi javobda to'g'ri berilgan?",
+      "v": [
+        "y = 2x + 1 va y = −2x + 1",
+        "y = 2x − 1 va y = −2x − 1",
+        "y = x − 1 va y = −x − 1",
+        "Faqat y = −1"
+      ],
+      "t": 1,
+      "izoh": "Urinish nuqtasi abssissasini a deb olsak, urinma y = a² + 2a(x − a) = 2ax − a² bo'ladi. Bu chiziq (0; −1) dan o'tishi uchun −a² = −1, ya'ni a = 1 yoki a = −1. a = 1 da y = 2x − 1, a = −1 da esa y = −2x − 1 hosil bo'ladi. Javob: y = 2x − 1 va y = −2x − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-nuqtadan-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#74d4b271"
+    },
+    {
+      "q": "y = x² parabolaga (2; 3) nuqtadan ikkita urinma o'tkazildi. Urinish nuqtalarining abssissalarini toping.",
+      "v": [
+        "2 va 3",
+        "−1 va 3",
+        "1 va 3",
+        "1 va 4"
+      ],
+      "t": 2,
+      "izoh": "Urinish nuqtasi (a; a²) bo'lsin, urinma tenglamasi y = 2ax − a². U (2; 3) dan o'tsa 3 = 4a − a² bo'ladi. Bundan a² − 4a + 3 = 0 va Viyet bo'yicha a = 1 hamda a = 3. Berilgan nuqta parabolada yotmaydi, shuning uchun abssissasi 2 javob bo'la olmaydi. Javob: 1 va 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-nuqtadan-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#26b55556"
+    },
+    {
+      "q": "y = x² parabolaga (1; 0) nuqtadan o'tkazilgan urinmalarning burchak koeffitsientlari qanday qiymatlarga ega bo'ladi?",
+      "v": [
+        "2 va 4",
+        "0 va 2",
+        "1 va 4",
+        "0 va 4"
+      ],
+      "t": 3,
+      "izoh": "Urinish nuqtasi abssissasi a bo'lsa, urinma y = 2ax − a² ko'rinishida yoziladi. (1; 0) nuqtadan o'tish sharti 0 = 2a − a², ya'ni a(a − 2) = 0. Bundan a = 0 va a = 2 kelib chiqadi. Burchak koeffitsienti k = 2a bo'lgani uchun qiymatlar 0 va 4. Urinish abssissalarini javob deb yozish tipik xato. Javob: 0 va 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tashqi-nuqtadan-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#26fd748a"
+    },
+    {
+      "q": "y = x² + 1 parabolaga koordinata boshidan o'tkazilgan urinmalarning tenglamalarini toping va to'g'ri javobni tanlang.",
+      "v": [
+        "y = x va y = −x",
+        "y = 2x va y = −2x",
+        "y = 2x + 1 va y = −2x + 1",
+        "Faqat y = 2x"
+      ],
+      "t": 1,
+      "izoh": "Urinish nuqtasi (a; a² + 1) bo'lsin, hosila 2a ga teng. Urinma y = a² + 1 + 2a(x − a) = 2ax − a² + 1 ko'rinishiga keladi. Koordinata boshidan o'tishi uchun x = 0 da y = 0, ya'ni 1 − a² = 0. Bundan a = 1 va a = −1, urinmalar esa y = 2x hamda y = −2x. Javob: y = 2x va y = −2x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tashqi-nuqtadan-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#b22db835"
+    },
+    {
+      "q": "y = 6x − 9 to'g'ri chiziq y = x² parabolaga urinma bo'lsa, urinish nuqtasining koordinatalarini toping.",
+      "v": [
+        "(3; 9)",
+        "(6; 36)",
+        "(3; 6)",
+        "(9; 3)"
+      ],
+      "t": 0,
+      "izoh": "Urinish nuqtasi abssissasini a deb olamiz. Urinmaning burchak koeffitsienti f'(a) = 2a ga teng bo'lishi kerak, ya'ni 2a = 6 va a = 3. Ordinata f(3) = 9 bo'ladi va to'g'ri chiziq ham 6·3 − 9 = 9 beradi. Javob: (3; 9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teginish-nuqtasini-topish",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#df5d8816"
+    },
+    {
+      "q": "y = x − 1 to'g'ri chiziq y = x² − 5x + 8 parabolaga urinadi. Urinish nuqtasining abssissasi nechaga teng?",
+      "v": [
+        "1",
+        "2",
+        "5",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Urinma sharti f'(a) = 1 ni beradi, chunki chiziqning burchak koeffitsienti 1. Hosila 2x − 5, demak 2a − 5 = 1 va a = 3. Tekshiramiz: f(3) = 9 − 15 + 8 = 2, chiziqda esa 3 − 1 = 2 — nuqtalar ustma-ust tushdi. Kesishish tenglamasi x² − 5x + 8 = x − 1 ham x² − 6x + 9 = 0, ya'ni (x − 3)² = 0 ko'rinishiga keladi va yagona ildiz beradi — bu haqiqiy urinish. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teginish-nuqtasini-topish",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#0c18f18f"
+    },
+    {
+      "q": "y = 9x − 16 to'g'ri chiziq y = x³ − 3x funksiya grafigiga urinadi. Urinish nuqtasini toping.",
+      "v": [
+        "(−2; −2)",
+        "(2; 2)",
+        "(2; 18)",
+        "(4; 20)"
+      ],
+      "t": 1,
+      "izoh": "Shartdan f'(a) = 9, ya'ni 3a² − 3 = 9 va a² = 4. Bu yerda a = 2 hamda a = −2 nomzod bo'ladi. a = 2 da f(2) = 2 va chiziq 18 − 16 = 2 beradi, mos keladi. a = −2 da esa f(−2) = −2, chiziq esa −34 beradi, demak bu nuqta urinish nuqtasi emas. Javob: (2; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teginish-nuqtasini-topish",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#30da30d2"
+    },
+    {
+      "q": "y = x/10 + 5/2 to'g'ri chiziq y = √x funksiya grafigiga urinma bo'lsa, urinish nuqtasi qayerda joylashgan?",
+      "v": [
+        "(5; 25)",
+        "(100; 10)",
+        "(25; 5)",
+        "(25; 2,5)"
+      ],
+      "t": 2,
+      "izoh": "Chiziqning burchak koeffitsienti 1/10, demak f'(a) = 1/10. Hosila 1/(2√a) bo'lgani uchun 2√a = 10 va √a = 5, ya'ni a = 25. Ordinata √25 = 5 ga teng, chiziq ham 2,5 + 2,5 = 5 beradi. Javob: (25; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teginish-nuqtasini-topish",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#f4d814c5"
+    },
+    {
+      "q": "y = x² + bx + 3 funksiya grafigiga x₀ = 1 nuqtada o'tkazilgan urinmaning burchak koeffitsienti 5 ga teng. b parametrni toping.",
+      "v": [
+        "3",
+        "5",
+        "−3",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "Hosilani topamiz: f'(x) = 2x + b. Shart bo'yicha f'(1) = 5, ya'ni 2·1 + b = 5. Bundan b = 3 kelib chiqadi. Ozod had 3 hosilaga ta'sir qilmasligini unutmaslik kerak. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinmada-parametr",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#14a1513c"
+    },
+    {
+      "q": "y = ax³ + 1 funksiya grafigiga x₀ = 1 nuqtada o'tkazilgan urinma Ox o'qi bilan 45° burchak hosil qilsa, a nechaga teng?",
+      "v": [
+        "3",
+        "1/3",
+        "1",
+        "−1/3"
+      ],
+      "t": 1,
+      "izoh": "45° burchak uchun urinmaning koeffitsienti 1 ga teng bo'ladi. Hosila f'(x) = 3ax², demak f'(1) = 3a. Shartdan 3a = 1 va a = 1/3. Uchga bo'lishni unutib a = 3 deb yozish tipik xato. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinmada-parametr",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#ccff8697"
+    },
+    {
+      "q": "y = x² + c parabola y = 4x to'g'ri chiziqqa urinishi uchun c parametr qanday qiymatga ega bo'lishi kerak?",
+      "v": [
+        "2",
+        "8",
+        "4",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "Urinish nuqtasi abssissasi a bo'lsin, u holda 2a = 4 va a = 2. Shu nuqtada parabola bilan chiziq qiymatlari teng bo'lishi shart: a² + c = 4a. Demak 4 + c = 8 va c = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinmada-parametr",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#55696fc0"
+    },
+    {
+      "q": "y = x² − 6x + m parabola Ox o'qiga urinadi. m parametrning qiymatini aniqlang.",
+      "v": [
+        "6",
+        "3",
+        "−9",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "Ox o'qiga urinish degani urinma gorizontal, ya'ni f'(x₀) = 0. Hosila 2x − 6, demak x₀ = 3. Urinish nuqtasi Ox da yotgani uchun f(3) = 0 bo'lishi kerak: 9 − 18 + m = 0. Bundan m = 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinmada-parametr",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#3786d159"
+    },
+    {
+      "q": "y = x² va y = −x² + 4x − 2 egri chiziqlar bir nuqtada o'zaro urinadi. Shu nuqtadagi umumiy urinmaning tenglamasini toping.",
+      "v": [
+        "y = 2x − 1",
+        "y = 2x + 1",
+        "y = x",
+        "y = 2x"
+      ],
+      "t": 0,
+      "izoh": "Umumiy nuqtani topamiz: x² = −x² + 4x − 2, ya'ni 2x² − 4x + 2 = 0 va (x − 1)² = 0. Demak x = 1, karrali ildiz urinishni bildiradi. Nuqta (1; 1), birinchi egri uchun hosila 2x = 2, ikkinchisi uchun −2x + 4 = 2, ya'ni koeffitsientlar teng. Urinma y = 1 + 2(x − 1) = 2x − 1. Javob: y = 2x − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-egri-umumiy-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#e9a0e39a"
+    },
+    {
+      "q": "y = x² − 3x + 5 va y = −x² + 5x − 3 parabolalar qaysi nuqtada o'zaro urinadi?",
+      "v": [
+        "(1; 3)",
+        "(2; 3)",
+        "(2; 1)",
+        "(3; 5)"
+      ],
+      "t": 1,
+      "izoh": "Qiymatlarni tenglashtiramiz: x² − 3x + 5 = −x² + 5x − 3. Soddalashtirsak 2x² − 8x + 8 = 0, ya'ni x² − 4x + 4 = 0 va (x − 2)² = 0. Karrali ildiz x = 2 urinishni bildiradi. Ordinata f(2) = 4 − 6 + 5 = 3. Hosilalar ham teng: 2·2 − 3 = 1 va −2·2 + 5 = 1. Javob: (2; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-egri-umumiy-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#44ad375f"
+    },
+    {
+      "q": "y = √x egri chizig'i bilan y = x/4 + 1 to'g'ri chizig'ining o'zaro joylashuvi qanday bo'ladi?",
+      "v": [
+        "Ikkita nuqtada kesishadi",
+        "Umuman kesishmaydi",
+        "Bitta nuqtada urinadi",
+        "Uchta umumiy nuqtasi bor"
+      ],
+      "t": 2,
+      "izoh": "Tenglamani yechamiz: √x = x/4 + 1. √x = u belgilash bilan u²/4 − u + 1 = 0, ya'ni u² − 4u + 4 = 0. Bundan (u − 2)² = 0 va u = 2, demak x = 4 yagona karrali yechim. Karrali ildiz kesishish emas, urinishni anglatadi va urinish nuqtasi (4; 2). Javob: bitta nuqtada urinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-egri-umumiy-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#6e4d7463"
+    },
+    {
+      "q": "y = 3x − 2 to'g'ri chiziq y = x³ egri chizig'iga (1; 1) nuqtada urinadi. Ular yana qaysi nuqtada uchrashadi?",
+      "v": [
+        "(2; 8)",
+        "(−1; −1)",
+        "(−2; 8)",
+        "(−2; −8)"
+      ],
+      "t": 3,
+      "izoh": "x³ = 3x − 2 tenglamani yechamiz, ya'ni x³ − 3x + 2 = 0. Urinish nuqtasi x = 1 karrali ildiz bo'lgani uchun ko'phadni (x − 1)²(x + 2) ko'rinishda yozish mumkin. Uchinchi ildiz x = −2, unga y = (−2)³ = −8 mos keladi. Kub darajada ishorani yo'qotib 8 deb yozish tipik xato. Javob: (−2; −8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-egri-umumiy-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#35c1066b"
+    },
+    {
+      "q": "y = x² va y = x³ grafiklari (1; 1) nuqtada kesishadi. Shu nuqtadagi urinmalar orasidagi burchakning tangensini toping.",
+      "v": [
+        "1/7",
+        "1",
+        "5/7",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "Birinchi grafikda hosila 2x, demak k₁ = 2. Ikkinchisida hosila 3x², demak k₂ = 3. Ikki chiziq orasidagi burchak tangensi tgφ = |(k₂ − k₁)/(1 + k₁·k₂)| formulasi bilan topiladi. Hisoblaymiz: |(3 − 2)/(1 + 6)| = 1/7. Javob: 1/7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinmalar-orasidagi-burchak",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#39f3cbfa"
+    },
+    {
+      "q": "y = x² va y = √x egri chiziqlari (1; 1) nuqtada uchrashadi. Shu nuqtadagi urinmalar orasidagi burchak tangensi nechaga teng?",
+      "v": [
+        "4/3",
+        "3/4",
+        "3/2",
+        "1/4"
+      ],
+      "t": 1,
+      "izoh": "Parabola uchun hosila 2x, ya'ni k₁ = 2. Ildiz funksiyasi uchun hosila 1/(2√x), ya'ni k₂ = 1/2. Formula bo'yicha tgφ = |(2 − 1/2)/(1 + 2·(1/2))| = (3/2)/2. Bu esa 3/4 ga teng. Maxrajni 1 deb olib 3/2 yozish keng tarqalgan xato. Javob: 3/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinmalar-orasidagi-burchak",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#889cd8c5"
+    },
+    {
+      "q": "y = x² parabolaga abssissalari 1 va −1 bo'lgan nuqtalarda urinmalar o'tkazildi. Shu ikki urinma orasidagi burchakning tangensini hisoblang.",
+      "v": [
+        "3/4",
+        "4",
+        "4/3",
+        "−4/3"
+      ],
+      "t": 2,
+      "izoh": "Hosila 2x bo'lgani uchun koeffitsientlar k₁ = 2 va k₂ = −2 chiqadi. Burchak tangensi tgφ = |(k₂ − k₁)/(1 + k₁·k₂)| = |(−2 − 2)/(1 − 4)|. Bu |−4/(−3)| = 4/3 ga teng. Burchak tangensi modul bilan olingani uchun manfiy javob bo'la olmaydi. Javob: 4/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinmalar-orasidagi-burchak",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#5bb8d2eb"
+    },
+    {
+      "q": "y = x² va y = 2x² − x parabolalar koordinata boshida kesishadi. Shu nuqtada o'tkazilgan urinmalar orasidagi burchakni toping.",
+      "v": [
+        "30°",
+        "60°",
+        "90°",
+        "45°"
+      ],
+      "t": 3,
+      "izoh": "Koordinata boshida birinchi parabolaning hosilasi 2x = 0, demak urinma gorizontal. Ikkinchisining hosilasi 4x − 1 bo'lib, nolda −1 ga teng. Formula bo'yicha tgφ = |(−1 − 0)/(1 + 0)| = 1, bunga 45° burchak mos keladi. Javob: 45°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinmalar-orasidagi-burchak",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#c29714e9"
+    },
+    {
+      "q": "Shahar avtobusi bosib o'tgan yo'lning vaqtga bog'liqlik grafigiga t = 2 soat nuqtada urinma o'tkazildi. Urinma (1; 40) va (4; 220) nuqtalardan o'tsa, avtobusning shu ondagi tezligini toping.",
+      "v": [
+        "60 km/soat",
+        "180 km/soat",
+        "3 km/soat",
+        "45 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Oniy tezlik yo'l grafigiga o'tkazilgan urinmaning burchak koeffitsientiga teng. Koeffitsient k = (220 − 40)/(4 − 1) formulasi bilan topiladi. Demak k = 180 : 3 = 60 km/soat. Faqat masofalar ayirmasini olib 180 deb javob berish xato. Javob: 60 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tezlik-grafik",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#8483f065"
+    },
+    {
+      "q": "Toshkentdan chiqqan poyezdning yo'l-vaqt grafigiga t = 3 soat nuqtada urinma chizildi va u (2; 100) hamda (5; 340) nuqtalardan o'tdi. Poyezdning shu ondagi tezligi qanday?",
+      "v": [
+        "240 km/soat",
+        "80 km/soat",
+        "68 km/soat",
+        "20 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Urinmaning burchak koeffitsienti oniy tezlikni beradi. Hisoblaymiz: k = (340 − 100)/(5 − 2) = 240 : 3 = 80 km/soat. 340 ni 5 ga bo'lib 68 olish esa o'rtacha tezlik bo'lib, oniy tezlik emas. Javob: 80 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tezlik-grafik",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#1764a74e"
+    },
+    {
+      "q": "Rasmda Malikaning velosipedda bosib o'tgan yo'li (km) va vaqti (soat) orasidagi bog'lanish grafigi tasvirlangan. t = 2 soatdagi urinma (1; 6) va (3; 24) nuqtalardan o'tadi. Uning shu ondagi tezligini toping.",
+      "v": [
+        "18 km/soat",
+        "12 km/soat",
+        "9 km/soat",
+        "6 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Oniy tezlik urinmaning burchak koeffitsientiga teng bo'ladi. Ikki nuqta orqali k = (24 − 6)/(3 − 1) = 18 : 2 = 9 km/soat. 24 ni 2 ga bo'lib 12 olish o'rtacha tezlikni beradi, urinma koeffitsientini emas. Javob: 9 km/soat.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='35' y1='255' x2='285' y2='255' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='45' y1='268' x2='45' y2='45' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='250' y='272' font-size='13' fill='%23334155'%3Et, soat%3C/text%3E%3Ctext x='52' y='42' font-size='13' fill='%23334155'%3Es, km%3C/text%3E%3Ctext x='31' y='271' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Cline x1='100' y1='251' x2='100' y2='259' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='155' y1='251' x2='155' y2='259' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='210' y1='251' x2='210' y2='259' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='97' y='271' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='152' y='271' font-size='13' fill='%23334155'%3E2%3C/text%3E%3Ctext x='207' y='271' font-size='13' fill='%23334155'%3E3%3C/text%3E%3Cline x1='41' y1='216' x2='49' y2='216' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='41' y1='138' x2='49' y2='138' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='41' y1='99' x2='49' y2='99' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='26' y='221' font-size='13' fill='%23334155'%3E6%3C/text%3E%3Ctext x='21' y='143' font-size='13' fill='%23334155'%3E18%3C/text%3E%3Ctext x='21' y='104' font-size='13' fill='%23334155'%3E24%3C/text%3E%3Cpolyline points='45,243 100,208 155,158 210,91 221,76' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='83' y1='234' x2='226' y2='81' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='100' cy='216' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='210' cy='99' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='155' cy='158' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tezlik-grafik",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#90f7a9e9"
+    },
+    {
+      "q": "Yuk mashinasi bosib o'tgan yo'lning vaqtga bog'liqlik grafigiga o'tkazilgan urinma vaqt o'qiga parallel bo'lib qoldi. Bu holat harakat haqida nimani bildiradi?",
+      "v": [
+        "Jism eng katta tezlikda harakatlanmoqda",
+        "Jism orqaga qaytmoqda",
+        "Jism tekis tezlanuvchan harakatlanmoqda",
+        "Shu onda mashina to'xtab turgan"
+      ],
+      "t": 3,
+      "izoh": "Yo'l grafigiga o'tkazilgan urinmaning burchak koeffitsienti oniy tezlikni beradi. Urinma vaqt o'qiga parallel bo'lsa, uning koeffitsienti nolga teng. Demak shu onda tezlik nolga teng va mashina joyidan qimirlamaydi. Eng katta tezlikda urinma aksincha eng tik bo'ladi. Javob: shu onda mashina to'xtab turgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tezlik-grafik",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#e0559ff8"
+    },
+    {
+      "q": "Zavodda x dona mahsulot ishlab chiqarish xarajati C(x) = 0,5x² + 20x + 300 ming so'mga teng. Xarajat grafigiga x = 40 nuqtada o'tkazilgan urinmaning burchak koeffitsientini toping.",
+      "v": [
+        "60 ming so'm",
+        "40 ming so'm",
+        "1900 ming so'm",
+        "20 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "Urinmaning burchak koeffitsienti hosilaning shu nuqtadagi qiymatiga teng. Hosila C'(x) = x + 20 bo'ladi, chunki 0,5x² ning hosilasi x ga teng. Demak C'(40) = 40 + 20 = 60. C(40) = 1900 esa umumiy xarajat, urinmaning koeffitsienti emas. Javob: 60 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-xarajat-marginal",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#6b7074b8"
+    },
+    {
+      "q": "Nonvoyxonada x ta non pishirish xarajati C(x) = 0,02x² + 3x + 500 ming so'm. Xarajat grafigiga o'tkazilgan urinmaning koeffitsienti 7 ming so'm bo'ladigan non sonini toping.",
+      "v": [
+        "175 ta",
+        "100 ta",
+        "4 ta",
+        "250 ta"
+      ],
+      "t": 1,
+      "izoh": "Hosilani topamiz: C'(x) = 0,04x + 3. Shart bo'yicha 0,04x + 3 = 7 tenglama hosil bo'ladi. Bundan 0,04x = 4 va x = 100 ta. Ozod hadni ayirmasdan 7 ni 0,04 ga bo'lsa 175 chiqib qoladi. Javob: 100 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-xarajat-marginal",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#5fa1b6a4"
+    },
+    {
+      "q": "Korxonaning umumiy xarajat grafigiga x = 50 dona nuqtada urinma o'tkazildi va u (20; 900) hamda (80; 2100) nuqtalardan o'tdi. Bitta qo'shimcha mahsulotning taxminiy xarajatini toping.",
+      "v": [
+        "1200 ming so'm",
+        "42 ming so'm",
+        "20 ming so'm",
+        "60 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Qo'shimcha mahsulot xarajati xarajat grafigiga o'tkazilgan urinmaning burchak koeffitsientiga teng. Koeffitsient k = (2100 − 900)/(80 − 20) = 1200 : 60 = 20 ming so'm. 2100 ni 50 ga bo'lib 42 olish o'rtacha xarajatni beradi, oniy o'sishni emas. Javob: 20 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-xarajat-marginal",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#cb039eb8"
+    },
+    {
+      "q": "Zavodning xarajat funksiyasi C(x) = 0,25x² + 10x + 400. O'rtacha xarajat eng kichik bo'lgan hajmda xarajat grafigiga o'tkazilgan urinma koordinata boshidan o'tadi. Shu hajmni toping.",
+      "v": [
+        "20 dona",
+        "80 dona",
+        "1600 dona",
+        "40 dona"
+      ],
+      "t": 3,
+      "izoh": "Urinish nuqtasini a deb olamiz, urinmaning koeffitsienti C'(a) = 0,5a + 10. Urinma koordinata boshidan o'tishi C(a) = a·C'(a) shartini beradi. Yozamiz: 0,25a² + 10a + 400 = 0,5a² + 10a, bundan 0,25a² = 400. Demak a² = 1600 va a = 40 dona. Javob: 40 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-xarajat-marginal",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#19fcb69b"
+    },
+    {
+      "q": "Rezervuardagi suv hajmi V(t) = 200 + 15t − 0,5t² litr formula bilan beriladi, bu yerda t daqiqada. Hajm grafigiga t = 6 daqiqada o'tkazilgan urinmaning burchak koeffitsienti nechaga teng?",
+      "v": [
+        "9 litr/daqiqa",
+        "15 litr/daqiqa",
+        "6 litr/daqiqa",
+        "272 litr/daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Hosila V'(t) = 15 − t ko'rinishida bo'ladi, chunki 0,5t² ning hosilasi t ga teng. t = 6 uchun V'(6) = 15 − 6 = 9. Bu urinmaning burchak koeffitsienti, ya'ni suvning shu ondagi to'lish tezligi. V(6) = 272 esa hajmning o'zi. Javob: 9 litr/daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-suv-sath",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#31361c80"
+    },
+    {
+      "q": "Basseyndagi suv sathi h(t) = 0,4t² + 2t santimetr bilan o'lchanadi, t soatda. Sath grafigiga o'tkazilgan urinmaning koeffitsienti 10 sm/soat bo'ladigan vaqtni aniqlang.",
+      "v": [
+        "12,5 soat",
+        "10 soat",
+        "8 soat",
+        "4 soat"
+      ],
+      "t": 1,
+      "izoh": "Hosila h'(t) = 0,8t + 2 ga teng. Shartdan 0,8t + 2 = 10, ya'ni 0,8t = 8 tenglama chiqadi. Bundan t = 10 soat. Ikkinchi hadni hisobga olmasdan 10 ni 0,8 ga bo'lsa 12,5 chiqib qoladi. Javob: 10 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-suv-sath",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#97e686a9"
+    },
+    {
+      "q": "Suv omboridagi sathning kunlar bo'yicha o'zgarish grafigiga urinma o'tkazildi va u (2; 12) hamda (8; 30) nuqtalardan o'tdi. Sathning shu ondagi ko'tarilish tezligini toping.",
+      "v": [
+        "18 m/kun",
+        "3,75 m/kun",
+        "3 m/kun",
+        "6 m/kun"
+      ],
+      "t": 2,
+      "izoh": "Urinmaning burchak koeffitsienti sathning oniy o'sish tezligini beradi. Hisoblaymiz: k = (30 − 12)/(8 − 2) = 18 : 6 = 3 m/kun. Faqat sathlar ayirmasini olib 18 deb javob berish yoki 30 ni 8 ga bo'lish xato. Javob: 3 m/kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-suv-sath",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#d31002cb"
+    },
+    {
+      "q": "Teshilgan idishdagi suv hajmi V(t) = 600 − 20t + 0,25t² litr, t daqiqada o'lchanadi. Hajm grafigiga o'tkazilgan urinma gorizontal bo'ladigan payt va shu paytdagi hajmni toping.",
+      "v": [
+        "30 daqiqada, 225 litr",
+        "40 daqiqada, 600 litr",
+        "80 daqiqada, 600 litr",
+        "40 daqiqada, 200 litr"
+      ],
+      "t": 3,
+      "izoh": "Gorizontal urinma V'(t) = 0 degani. Hosila V'(t) = −20 + 0,5t, demak −20 + 0,5t = 0 va t = 40 daqiqa. Endi hajmni hisoblaymiz: V(40) = 600 − 800 + 0,25·1600 = 600 − 800 + 400 = 200 litr. Boshlang'ich hajm 600 ni javob deb yozish xato. Javob: 40 daqiqada, 200 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-suv-sath",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#242452b1"
+    },
+    {
+      "q": "Kun davomida havo harorati T(t) = −0,25t² + 6t + 5 gradusga teng, bu yerda t soatda. Harorat grafigiga t = 4 nuqtada o'tkazilgan urinmaning burchak koeffitsientini toping.",
+      "v": [
+        "4 °C/soat",
+        "6 °C/soat",
+        "25 °C/soat",
+        "2 °C/soat"
+      ],
+      "t": 0,
+      "izoh": "Hosila T'(t) = −0,5t + 6 ko'rinishida bo'ladi. t = 4 uchun T'(4) = −2 + 6 = 4. Bu urinmaning burchak koeffitsienti, ya'ni haroratning soatiga o'sishi. T(4) = 25 esa haroratning o'zi, hosila emas. Javob: 4 °C/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-harorat",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#ca2e2c82"
+    },
+    {
+      "q": "Havo harorati T(t) = −0,25t² + 6t + 5 qonuniyat bilan o'zgaradi. Harorat grafigiga o'tkazilgan urinma vaqt o'qiga parallel bo'ladigan, ya'ni eng issiq vaqtni toping.",
+      "v": [
+        "6 soat",
+        "12 soat",
+        "3 soat",
+        "24 soat"
+      ],
+      "t": 1,
+      "izoh": "Urinma vaqt o'qiga parallel bo'lsa uning koeffitsienti nolga teng, ya'ni T'(t) = 0. Hosila −0,5t + 6 bo'lgani uchun −0,5t + 6 = 0 tenglama chiqadi. Bundan 0,5t = 6 va t = 12 soat. Koeffitsient 6 ni to'g'ridan-to'g'ri javob deb yozish xato. Javob: 12 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harorat",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#33f3a6b9"
+    },
+    {
+      "q": "Bemor tanasi haroratining vaqtga bog'liq grafigiga urinma o'tkazildi va u (1; 38,4) hamda (5; 37,2) nuqtalardan o'tdi. Haroratning o'zgarish tezligini aniqlang.",
+      "v": [
+        "0,3 °C/soat",
+        "−1,2 °C/soat",
+        "−0,3 °C/soat",
+        "−0,24 °C/soat"
+      ],
+      "t": 2,
+      "izoh": "Urinmaning burchak koeffitsienti k = (37,2 − 38,4)/(5 − 1) formulasi bilan topiladi. Surat −1,2, maxraj 4 ga teng, demak k = −0,3 °C/soat. Manfiy ishora harorat pasayayotganini bildiradi va uni tushirib qoldirib bo'lmaydi. Javob: −0,3 °C/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harorat",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#19fafc2d"
+    },
+    {
+      "q": "Issiqxonadagi harorat T(t) = 12 + 8t − t² gradusda o'zgaradi, t soatda. Harorat grafigiga o'tkazilgan urinma vaqt o'qi bilan 135° burchak hosil qiladigan paytni toping.",
+      "v": [
+        "3,5 soat",
+        "4 soat",
+        "9 soat",
+        "4,5 soat"
+      ],
+      "t": 3,
+      "izoh": "135° burchak uchun urinmaning koeffitsienti tg135° = −1 ga teng. Hosila T'(t) = 8 − 2t, demak 8 − 2t = −1 tenglama hosil bo'ladi. Bundan 2t = 9 va t = 4,5 soat. Ikkiga bo'lishni unutsa 9 chiqib qoladi, ishorani e'tibordan qoldirsa 3,5 chiqadi. Javob: 4,5 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harorat",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#9ec14989"
+    },
+    {
+      "q": "Tog' yo'lining kesimi y = 0,002x² egri chizig'i bilan tasvirlangan, x va y metrda. Yo'lning x = 50 m nuqtadagi nishabligini, ya'ni urinmaning burchak koeffitsientini toping.",
+      "v": [
+        "0,2",
+        "0,1",
+        "0,004",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Nishablik yo'l profiliga o'tkazilgan urinmaning burchak koeffitsientiga teng. Hosila y' = 0,004x ko'rinishida bo'ladi. x = 50 uchun y' = 0,004·50 = 0,2. Ikkiga ko'paytirishni unutsa 0,1 chiqib qoladi. Javob: 0,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-yol-nishab",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#416f5c41"
+    },
+    {
+      "q": "Chana uchadigan tepalik profili y = 20 − 0,05x² metrda berilgan. Tepalik yon sirti gorizont bilan 45° burchak hosil qiladigan nuqtaning abssissasini toping.",
+      "v": [
+        "1 m",
+        "10 m",
+        "20 m",
+        "0,1 m"
+      ],
+      "t": 1,
+      "izoh": "Pastga qarab tushayotgan yon sirt uchun urinmaning koeffitsienti −1 bo'ladi, chunki og'ish burchagi 45°. Hosila y' = −0,1x, demak −0,1x = −1 tenglama chiqadi. Bundan x = 10 m. Javob: 10 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-yol-nishab",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#8d5247d8"
+    },
+    {
+      "q": "Ko'prik kamarining shakli y = 8 − x²/50 tenglama bilan beriladi, o'lchov birligi metr. Kamarga x = 10 m nuqtada o'tkazilgan urinmaning burchak koeffitsientini hisoblang.",
+      "v": [
+        "0,4",
+        "−0,2",
+        "−0,4",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "Hosilani topamiz: y' = −2x/50 = −x/25. x = 10 uchun y' = −10/25 = −0,4. Manfiy qiymat kamarning shu joyda pasayayotganini ko'rsatadi. Ikkiga ko'paytirishni unutsa −0,2 chiqib qoladi. Javob: −0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-yol-nishab",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#28d8f7d7"
+    },
+    {
+      "q": "To'g'on kesimi y = 15 − x²/40 egri chizig'i shaklida qurilgan, o'lchovlar metrda. To'g'on yuzasi gorizont bilan 45° burchak hosil qiladigan nuqtadagi balandligini toping.",
+      "v": [
+        "10 m",
+        "20 m",
+        "15 m",
+        "5 m"
+      ],
+      "t": 3,
+      "izoh": "45° og'ish uchun urinmaning koeffitsienti moduli 1 ga teng, tushuvchi qismda esa −1. Hosila y' = −x/20, demak −x/20 = −1 va x = 20 m. Balandlikni hisoblaymiz: y = 15 − 400/40 = 15 − 10 = 5 m. Abssissa 20 ni balandlik deb yozish tipik xato. Javob: 5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-yol-nishab",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#6539faa3"
+    },
+    {
+      "q": "Do'konning daromadi D(x) = 80x − 0,2x² ming so'm, bu yerda x sotilgan mahsulot soni. Daromad grafigiga o'tkazilgan urinma gorizontal bo'ladigan sotuv hajmini toping.",
+      "v": [
+        "200 dona",
+        "400 dona",
+        "80 dona",
+        "160 dona"
+      ],
+      "t": 0,
+      "izoh": "Gorizontal urinma D'(x) = 0 shartini beradi. Hosila D'(x) = 80 − 0,4x, demak 80 − 0,4x = 0 tenglama chiqadi. Bundan 0,4x = 80 va x = 200 dona. Koeffitsientni 0,2 deb olib bo'lsa 400 chiqib qoladi. Javob: 200 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-daromad-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#207884e3"
+    },
+    {
+      "q": "Fermer xo'jaligida yig'ilgan hosil H(t) = 30t − 0,5t² sentnerga teng, t kunda. Hosil grafigiga t = 10 kunda o'tkazilgan urinmaning burchak koeffitsientini toping.",
+      "v": [
+        "30 sentner/kun",
+        "20 sentner/kun",
+        "25 sentner/kun",
+        "250 sentner/kun"
+      ],
+      "t": 1,
+      "izoh": "Hosila H'(t) = 30 − t ko'rinishida bo'ladi. t = 10 uchun H'(10) = 30 − 10 = 20 sentner/kun. Bu urinmaning burchak koeffitsienti, ya'ni o'sha kundagi yig'im tezligi. H(10) = 250 esa jami hosil. Javob: 20 sentner/kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-daromad-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#95a5ed58"
+    },
+    {
+      "q": "Onlayn do'konning oylik daromadi grafigiga to'rtinchi oy nuqtasida urinma o'tkazildi va u (2; 18) hamda (6; 42) mln so'm nuqtalardan o'tdi. Daromadning oylik o'sish tezligini toping.",
+      "v": [
+        "24 mln so'm/oy",
+        "10,5 mln so'm/oy",
+        "6 mln so'm/oy",
+        "4 mln so'm/oy"
+      ],
+      "t": 2,
+      "izoh": "Urinmaning burchak koeffitsienti daromadning oniy o'sish tezligini beradi. Hisoblaymiz: k = (42 − 18)/(6 − 2) = 24 : 4 = 6 mln so'm/oy. 42 ni 4 ga bo'lib 10,5 olish o'rtacha ko'rsatkich bo'lib, urinma koeffitsienti emas. Javob: 6 mln so'm/oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-daromad-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#bc1b8449"
+    },
+    {
+      "q": "Kichik korxonaning oylik foydasi F(x) = x³ − 12x² + 36x mln so'mga teng, x ishlab chiqarilgan mahsulot birligi. Foyda grafigiga o'tkazilgan urinma gorizontal bo'ladigan barcha hajmlarni toping.",
+      "v": [
+        "2 va 4",
+        "3 va 6",
+        "6 va 12",
+        "2 va 6"
+      ],
+      "t": 3,
+      "izoh": "Gorizontal urinma sharti F'(x) = 0 ko'rinishida yoziladi. Hosila F'(x) = 3x² − 24x + 36, uni 3 ga qisqartirsak x² − 8x + 12 = 0. Viyet teoremasi bo'yicha ildizlar yig'indisi 8, ko'paytmasi 12, demak x = 2 va x = 6. Ikkala hajmda ham urinma Ox o'qiga, ya'ni hajm o'qiga parallel bo'ladi. Javob: 2 va 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-daromad-urinma",
+      "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va#26e8a687"
+    }
+  ]
+}

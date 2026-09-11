@@ -1,0 +1,531 @@
+{
+  "nom": "13-mavzu. Eruvchanlik",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Erituvchilarda moddalarning erish xususiyati nima deb yuritiladi?",
+      "v": [
+        "Eruvchanlik",
+        "Gidroliz",
+        "Dissotsiatsiya",
+        "Assotsiatsiya"
+      ],
+      "t": 0,
+      "izoh": "Erituvchilarda moddalarning erish xususiyati eruvchanlik deb yuritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#3fcd7792"
+    },
+    {
+      "q": "Eruvchanlik koeffitsiyenti (eruvchanlik) deb nimaga aytiladi?",
+      "v": [
+        "Moddaning 100 g erituvchida ayni haroratda eriy oladigan eng ko'p massasiga",
+        "Moddaning 100 g erituvchida eriy oladigan eng kam massasiga",
+        "Moddaning 100 mg erituvchida eriy oladigan massasiga",
+        "Moddaning 1 g erituvchida eriy oladigan eng ko'p massasiga"
+      ],
+      "t": 0,
+      "izoh": "Moddaning 100 g erituvchida ayni haroratda eriy oladigan eng ko'p massasi shu moddaning eruvchanlik koeffitsiyenti deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#bc1c8372"
+    },
+    {
+      "q": "Eruvchanlik koeffitsiyenti qanday harf bilan belgilanadi?",
+      "v": [
+        "S harfi bilan",
+        "K harfi bilan",
+        "α harfi bilan",
+        "V harfi bilan"
+      ],
+      "t": 0,
+      "izoh": "Eruvchanlik koeffitsiyenti S harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#bc4ac574"
+    },
+    {
+      "q": "NaCl ning 20°C dagi eruvchanligi necha grammga teng va u qanday yoziladi?",
+      "v": [
+        "36 g, S(20°C) = 36",
+        "37,2 g, S(20°C) = 37,2",
+        "41,4 g, S(20°C) = 41,4",
+        "10 g, S(20°C) = 10"
+      ],
+      "t": 0,
+      "izoh": "NaCl ning 20°C dagi eruvchanligi 36 ga teng: S(20°C) = 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#9d3bf158"
+    },
+    {
+      "q": "Moddalar suvda eruvchanligiga qarab nechta guruhga bo'linadi?",
+      "v": [
+        "3 guruhga",
+        "2 guruhga",
+        "4 guruhga",
+        "5 guruhga"
+      ],
+      "t": 0,
+      "izoh": "Moddalar suvda eruvchanligiga qarab 3 guruhga bo'linadi: yaxshi eriydigan, oz eriydigan, amalda erimaydigan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#e8e90b1d"
+    },
+    {
+      "q": "Suvda yaxshi eriydigan moddalar 100 g erituvchida qancha eriydi?",
+      "v": [
+        "10 g dan ko'p",
+        "1 g dan kam",
+        "0,01 g va undan kam",
+        "100 g"
+      ],
+      "t": 0,
+      "izoh": "Yaxshi eriydigan moddalar 100 g erituvchida 10 g dan ko'p eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#dab68b57"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri suvda yaxshi eriydigan moddalar qatoriga kiradi?",
+      "v": [
+        "KCl",
+        "CaCO3",
+        "BaSO4",
+        "Oltin"
+      ],
+      "t": 0,
+      "izoh": "Yaxshi eriydigan moddalar: KCl, NaNO3, shakar, spirt, gazlar (HCl, NH3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#5aa5f527"
+    },
+    {
+      "q": "Suvda oz eriydigan moddalar 100 g erituvchida (H2O) qancha eriydi?",
+      "v": [
+        "1 g dan kam",
+        "10 g dan ko'p",
+        "0,01 g dan ham kam",
+        "50 g"
+      ],
+      "t": 0,
+      "izoh": "Oz eriydigan moddalar 100 g erituvchida 1 g dan kam eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#b27096c9"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri suvda oz eriydigan modda?",
+      "v": [
+        "BaSO4",
+        "NaNO3",
+        "Shakar",
+        "NH3"
+      ],
+      "t": 0,
+      "izoh": "Oz eriydigan moddalar: CaSO4, CaCO3, BaSO4, MgCO3, PbSO4, benzin, gazlar (CH4, N2, H2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#83919d64"
+    },
+    {
+      "q": "Amalda erimaydigan moddalar 100 g erituvchida qancha eriydi?",
+      "v": [
+        "0,01 g va undan kam",
+        "1 g dan kam",
+        "10 g dan ko'p",
+        "5 g"
+      ],
+      "t": 0,
+      "izoh": "Amalda erimaydigan moddalar 100 g erituvchida 0,01 g va undan kam eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#f5b0ab3e"
+    },
+    {
+      "q": "Quyidagilardan qaysilari amalda erimaydigan moddalarga misol?",
+      "v": [
+        "Oltin, kumush, mis",
+        "Kaliy nitrat, ammoniy xlorid",
+        "Shakar, spirt, osh tuzi",
+        "Vodorod xlorid, ammiak, natriy sulfat"
+      ],
+      "t": 0,
+      "izoh": "Amalda erimaydigan moddalar: oltin, kumush, mis.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#aafd2061"
+    },
+    {
+      "q": "Moddalar eruvchanlik xususiyati qanday omillarga bog'liq?",
+      "v": [
+        "Moddaning tabiati va haroratga",
+        "Faqat moddaning rangiga",
+        "Faqat idishning hajmiga",
+        "Faqat yorug'likka"
+      ],
+      "t": 0,
+      "izoh": "Moddalar eruvchanlik xususiyati bir qancha omillarga bog'liq, masalan: moddaning tabiati va haroratga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#d616c730"
+    },
+    {
+      "q": "Qattiq moddalarning ko'pchiligi suvda eruvchanligi harorat ortishi bilan qanday o'zgaradi va nega?",
+      "v": [
+        "Ortadi, chunki ko'pchilik qattiq moddalar eriganda issiqlik yutiladi",
+        "Kamayadi, chunki issiqlik ajraladi",
+        "O'zgarmaydi",
+        "Avval kamayib keyin ortadi"
+      ],
+      "t": 0,
+      "izoh": "Qattiq moddalarning ko'pchiligi suvda eruvchanligi harorat ortishi bilan ortadi, chunki ko'pchilik qattiq moddalar eriganda issiqlik yutiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#a26b3cfb"
+    },
+    {
+      "q": "Gaz moddalarning eruvchanligi harorat ko'tarilganda qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Gaz moddalarni eruvchanligi qattiq moddalardan farq qiladi, ya'ni harorat ko'tarilganda ularning eruvchanligi kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#37119459"
+    },
+    {
+      "q": "Muzlatkichdan olingan suv xona haroratiga qo'yilgandan so'ng stakan devorida pufakchalar ko'rinishi nimani bildiradi?",
+      "v": [
+        "Muzlatkichda bo'lgan vaqtda unda erigan gazlarning yuqoriroq haroratda erimay, yana gaz holatiga o'tib qolganini",
+        "Suvning muzlab qolganini",
+        "Suvning bug'langanini",
+        "Suvning tozalanganini"
+      ],
+      "t": 0,
+      "izoh": "Bu pufakchalar suv muzlatkichda bo'lgan vaqtda unda erigan gazlarning yuqoriroq haroratda erimay, yana gaz holatiga o'tib qolganini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#f02cf89d"
+    },
+    {
+      "q": "Gaz moddalarning eruvchanligiga bosim qanday ta'sir ko'rsatadi?",
+      "v": [
+        "Bosim yuqori bo'lsa eruvchanlik ortadi, bosim pasaysa kamayadi",
+        "Bosim yuqori bo'lsa eruvchanlik kamayadi",
+        "Bosim ta'sir qilmaydi",
+        "Bosim faqat suyuqliklarga ta'sir qiladi"
+      ],
+      "t": 0,
+      "izoh": "Bosim yuqori bo'lsa, gazlarning eruvchanligi ortadi, bosim pasaysa eruvchanlik ham kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#9a417eb7"
+    },
+    {
+      "q": "G'avvos suv ostidan yuqoriga juda tez ko'tarila boshlasa nima sodir bo'ladi?",
+      "v": [
+        "Qonda ajralib chiqqan gazlar o'pka orqali chiqib ketishga ulgurmay, qon tomirlarga tiqilib qoladi va qon aylanishi buziladi",
+        "Hech qanday xavf bo'lmaydi",
+        "Gazlar darhol eriydi",
+        "Qon bosimi ortib yaxshilanadi"
+      ],
+      "t": 0,
+      "izoh": "Tez ko'tarilsa qonda ajralib chiqqan gazlar o'pka orqali chiqib ketishga ulgurmay qoladi va qon tomirlarga tiqilib qoladi, qon aylanishi buziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#b7de12c4"
+    },
+    {
+      "q": "Gazli ichimliklar tayyorlashda gazlarning qanday xususiyatidan foydalaniladi?",
+      "v": [
+        "Yuqori bosim va past haroratda suvda yaxshi erishidan",
+        "Past bosim va yuqori haroratda erishidan",
+        "Suvda umuman erimasligidan",
+        "Suv bilan reaksiyaga kirishidan"
+      ],
+      "t": 0,
+      "izoh": "Gazlar yuqori bosim va past haroratda suvda yaxshi erigani uchun gazli ichimliklarni tayyorlashda shu sharoitdan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#20dbc069"
+    },
+    {
+      "q": "Gazli ichimlik qopqog'i ochilganda nima uchun gazlar ajralib chiqa boshlaydi?",
+      "v": [
+        "Bosim kamayadi va atrofdagi haroratda yuqori bo'lgani uchun ichimlik tarkibida erigan gazlarning eruvchanligi kamayadi",
+        "Bosim ortadi",
+        "Harorat pasayadi",
+        "Ichimlik muzlaydi"
+      ],
+      "t": 0,
+      "izoh": "Qopqoq ochilishi bilan bosim kamayadi va atrofdagi harorat yuqori bo'lgani uchun gazlarning eruvchanligi kamayib, gaz holatiga o'tib chiqa boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#6cf5d182"
+    },
+    {
+      "q": "Gazlar eruvchanligi bosimga va haroratga qanday proportsional?",
+      "v": [
+        "Bosimga to'g'ri, haroratga teskari proportsional",
+        "Bosimga teskari, haroratga to'g'ri proportsional",
+        "Ikkalasiga ham to'g'ri proportsional",
+        "Ikkalasiga ham teskari proportsional"
+      ],
+      "t": 0,
+      "izoh": "Gazlar eruvchanligi bosimga to'g'ri proportsional, haroratga teskari proportsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#4885c67c"
+    },
+    {
+      "q": "Modda eruvchanligini aniqlash uchun stakanga qancha distillangan suv solib olinadi?",
+      "v": [
+        "100 g",
+        "50 g",
+        "200 g",
+        "10 g"
+      ],
+      "t": 0,
+      "izoh": "Eruvchanlikni aniqlash uchun stakanga 100 g distillangan suv solib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#68865252"
+    },
+    {
+      "q": "Ayni haroratda berilgan erituvchida eritilayotgan modda boshqa eriy olmaydigan eritma nima deyiladi?",
+      "v": [
+        "To'yingan eritma",
+        "To'yinmagan eritma",
+        "O'ta to'yingan eritma",
+        "Suyuq eritma"
+      ],
+      "t": 0,
+      "izoh": "Ayni haroratda berilgan erituvchida eritilayotgan modda boshqa eriy olmaydigan eritma to'yingan eritma deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#a6b1107c"
+    },
+    {
+      "q": "Agar biror eritmada ayni haroratda eriyotgan modda yana erishi mumkin bo'lsa, bunday eritma nima deyiladi?",
+      "v": [
+        "To'yinmagan eritma",
+        "To'yingan eritma",
+        "O'ta to'yingan eritma",
+        "Konsentrlangan eritma"
+      ],
+      "t": 0,
+      "izoh": "Agar biror eritmada ayni haroratda eriyotgan modda yana erishi mumkin bo'lsa, bunday eritma to'yinmagan eritma deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#355ba356"
+    },
+    {
+      "q": "O'ta to'yingan eritma deganda qanday eritma tushuniladi?",
+      "v": [
+        "Erigan modda miqdori shu harorat uchun to'yingan eritma tarkibidagi bo'lgan modda miqdoridan ko'proq bo'lgan eritma",
+        "Erigan modda miqdori to'yingan eritmadan kam bo'lgan eritma",
+        "Umuman modda erimagan eritma",
+        "Qaynab turgan eritma"
+      ],
+      "t": 0,
+      "izoh": "O'ta to'yingan eritmada erigan modda miqdori shu harorat uchun to'yingan eritma tarkibidagi bo'lgan modda miqdoridan ko'proq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#9b3f21d7"
+    },
+    {
+      "q": "Ammoniy xloridning 20°C dagi eruvchanligi qanchaga teng?",
+      "v": [
+        "37,2 g",
+        "41,4 g",
+        "36 g",
+        "35 g"
+      ],
+      "t": 0,
+      "izoh": "NH4Cl ning 20°C dagi eruvchanligi 37,2 g: S(20°C) = 37,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#95d1eba6"
+    },
+    {
+      "q": "Ammoniy xloridning 30°C dagi eruvchanligi qanchaga teng?",
+      "v": [
+        "41,4 g",
+        "37,2 g",
+        "36 g",
+        "45 g"
+      ],
+      "t": 0,
+      "izoh": "NH4Cl ning 30°C dagi eruvchanligi 41,4 g: S(30°C) = 41,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#947fad63"
+    },
+    {
+      "q": "20°C da 100 g suvga 35 g NH4Cl solib aralashtirilsa qanday eritma hosil bo'ladi?",
+      "v": [
+        "135 g to'yinmagan eritma",
+        "137,2 g to'yingan eritma",
+        "141,4 g o'ta to'yingan eritma",
+        "100 g to'yingan eritma"
+      ],
+      "t": 0,
+      "izoh": "35 g tuz 20°C ga nisbatan to'yinmagan eritma hosil qiladi, massasi 100+35=135 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#8ca968b5"
+    },
+    {
+      "q": "20°C dagi 135 g to'yinmagan NH4Cl eritmasiga yana 2,2 g NH4Cl solinsa nima hosil bo'ladi?",
+      "v": [
+        "137,2 g to'yingan eritma",
+        "135 g to'yinmagan eritma",
+        "141,4 g o'ta to'yingan eritma",
+        "Cho'kma va to'yinmagan eritma"
+      ],
+      "t": 0,
+      "izoh": "35+2,2=37,2 g tuz eriydi va 20°C uchun 137,2 g to'yingan eritma hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#b06970cd"
+    },
+    {
+      "q": "20°C dagi to'yingan NH4Cl eritmasiga yana 4,2 g NH4Cl qo'shilsa nima kuzatiladi?",
+      "v": [
+        "Tuz erimaydi va 4,2 g cho'kmaga tushadi",
+        "Barcha tuz eriydi",
+        "Eritma qaynaydi",
+        "Eritma muzlaydi"
+      ],
+      "t": 0,
+      "izoh": "20°C da 100 g suvda 37,2 g tuz erishi mumkin, ortiqcha 4,2 g tuz erimay cho'kmaga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#9600632f"
+    },
+    {
+      "q": "Cho'kma holida turgan 4,2 g NH4Cl ni eritish uchun eritma qaysi haroratga qadar isitiladi?",
+      "v": [
+        "30°C ga",
+        "40°C ga",
+        "20°C da qoldiriladi",
+        "100°C ga"
+      ],
+      "t": 0,
+      "izoh": "Harorat 30°C ga yetganda 4,2 g tuz to'liq erib ketadi va 30°C uchun to'yingan eritma (141,4 g) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#d96f6362"
+    },
+    {
+      "q": "30°C dagi 141,4 g to'yingan NH4Cl eritmasi 20°C gacha sovitilsa qanday eritma hosil bo'ladi?",
+      "v": [
+        "141,4 g o'ta to'yingan eritma",
+        "137,2 g to'yingan eritma",
+        "135 g to'yinmagan eritma",
+        "100 g to'yingan eritma"
+      ],
+      "t": 0,
+      "izoh": "20°C gacha sovitilganda ortiqcha 4,2 g tuz hali ham erigan holatda bo'ladi — bu o'ta to'yingan eritma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#5a38f3f5"
+    },
+    {
+      "q": "O'ta to'yingan eritmaga tashqaridan mexanik ta'sir ko'rsatilsa nima sodir bo'ladi?",
+      "v": [
+        "Ortiqcha 4,2 g tuz cho'kmaga tushadi va to'yingan eritma hosil bo'ladi",
+        "Eritma yanada ko'proq tuz eritadi",
+        "Eritma bug'lanadi",
+        "Hech narsa o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Mexanik ta'sir (aralashtirish, shisha tayoqcha bilan idish devoriga ohista urish) ko'rsatilsa, 4,2 g tuz cho'kmaga tushadi hamda to'yingan eritma hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#9d48f460"
+    },
+    {
+      "q": "Suvda yaxshi eriydigan moddalar keltirilgan qatorni aniqlang.",
+      "v": [
+        "Osh tuzi, shakar, vodorod xlorid",
+        "Mis, oltin, kumush",
+        "Magneziy karbonat, benzin",
+        "Azot, vodorod, bariy sulfat"
+      ],
+      "t": 0,
+      "izoh": "Yaxshi eriydigan moddalar: osh tuzi, shakar, vodorod xlorid (KCl, NaNO3, spirt, HCl, NH3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#6c2be30f"
+    },
+    {
+      "q": "Suvda oz eriydigan moddalar keltirilgan qatorni aniqlang.",
+      "v": [
+        "Azot, vodorod, bariy sulfat",
+        "Shakar, ammiak, natriy sulfat",
+        "Kumush, spirt, oltin",
+        "Kaliy nitrat, sulfat kislota"
+      ],
+      "t": 0,
+      "izoh": "Oz eriydigan moddalar: CaSO4, CaCO3, BaSO4, MgCO3, benzin va gazlar (CH4, N2, H2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#5c4bbb8a"
+    },
+    {
+      "q": "Suvda amalda erimaydigan moddalar keltirilgan qatorni aniqlang.",
+      "v": [
+        "Oltin, kumush, mis",
+        "Natriy karbonat, alyuminiy sulfat, ammoniy xlorid",
+        "Sulfat, nitrat va xlorid kislotalar",
+        "Benzin, etil spirti, metan"
+      ],
+      "t": 0,
+      "izoh": "Amalda erimaydigan moddalar: oltin, kumush, mis.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m13-eruvchanlik#903f2981"
+    }
+  ]
+}

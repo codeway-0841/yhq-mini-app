@@ -12,6 +12,12 @@ const PROVIDERS: Record<string, QuestionBankProvider> = {
   russian_db:       new RussianQuestionBankProvider(),
   physics_db:       new PhysicsQuestionBankProvider(),
   math_db:          new DefaultQuestionBankProvider('math_db'),
+  biology_db:       new DefaultQuestionBankProvider('biology_db'),
+  history_db:       new DefaultQuestionBankProvider('history_db'),
+  chemistry_db:     new DefaultQuestionBankProvider('chemistry_db'),
+  geography_db:     new DefaultQuestionBankProvider('geography_db'),
+  onatili_db:       new DefaultQuestionBankProvider('onatili_db'),
+  adabiyot_db:      new DefaultQuestionBankProvider('adabiyot_db'),
 }
 
 export function getProvider(dataSourceId: string): QuestionBankProvider {

@@ -1,0 +1,1609 @@
+{
+  "nom": "Geometrik progressiya hadlari yig'indisi",
+  "bolim": "Ketma-ketliklar va progressiyalar",
+  "blok": "prog",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Geometrik progressiyaning birinchi hadi 3 ga, maxraji 2 ga teng. Dastlabki oltita hadining yig'indisini toping.",
+      "v": [
+        "189",
+        "96",
+        "192",
+        "93"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi formulasi Sₙ = b₁(qⁿ − 1)/(q − 1). Bu yerda b₁ = 3, q = 2, n = 6. Demak S₆ = 3(2⁶ − 1)/(2 − 1) = 3(64 − 1) = 3·63 = 189. 96 — oltinchi hadning o'zi (b₆ = 3·2⁵), yig'indi emas. 192 — qavsdagi birni ayirishni unutish. 93 — beshta hadning yig'indisi. Javob: 189.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-togridan-formula",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#1a427616"
+    },
+    {
+      "q": "b₁ = 5 va q = 3 bo'lgan geometrik progressiyaning dastlabki beshta hadi yig'indisi nechaga teng?",
+      "v": [
+        "405",
+        "605",
+        "1210",
+        "200"
+      ],
+      "t": 1,
+      "izoh": "Sₙ = b₁(qⁿ − 1)/(q − 1) formulasiga qo'yamiz: S₅ = 5(3⁵ − 1)/(3 − 1). 3⁵ = 243, shuning uchun S₅ = 5·242/2 = 5·121 = 605. 405 — beshinchi hadning qiymati 5·81. 1210 — maxrajga bo'lishni unutish. 200 — to'rtta hadning yig'indisi. Javob: 605.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-togridan-formula",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#699b6232"
+    },
+    {
+      "q": "Geometrik progressiyada b₁ = 128, maxraj esa 1/2 ga teng. Dastlabki yettita hadning yig'indisini hisoblang.",
+      "v": [
+        "255",
+        "254",
+        "252",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Hadlar: 128, 64, 32, 16, 8, 4, 2. Formula bilan S₇ = 128(1 − (1/2)⁷)/(1 − 1/2) = 256(1 − 1/128) = 256 − 2 = 254. 255 — sakkizta had olib, 1 ni ham qo'shib yuborish. 252 — oltita hadning yig'indisi. 2 — yettinchi hadning o'zi. Javob: 254.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-togridan-formula",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#bf581865"
+    },
+    {
+      "q": "Maxraji manfiy bo'lgan geometrik progressiyada b₁ = 2, q = −3. Dastlabki beshta hadning yig'indisini toping.",
+      "v": [
+        "−122",
+        "122",
+        "162",
+        "242"
+      ],
+      "t": 1,
+      "izoh": "Hadlar navbatma-navbat ishorasini almashtiradi: 2, −6, 18, −54, 162. Ularning yig'indisi 2 − 6 + 18 − 54 + 162 = 122. Formula bilan ham S₅ = 2((−3)⁵ − 1)/(−3 − 1) = 2(−244)/(−4) = 122. −122 — ikkala ishorani ham noto'g'ri qo'yish. 162 — beshinchi hadning o'zi. 242 — maxrajning ishorasini tashlab, q = 3 deb hisoblash. Javob: 122.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sn-togridan-formula",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#8d90d1bb"
+    },
+    {
+      "q": "Geometrik progressiyaning birinchi hadi 4 ga, ikkinchi hadi 12 ga teng. Dastlabki beshta hadining yig'indisi nechaga teng?",
+      "v": [
+        "324",
+        "968",
+        "160",
+        "484"
+      ],
+      "t": 3,
+      "izoh": "Avval maxrajni topamiz: q = b₂/b₁ = 12/4 = 3. Endi S₅ = 4(3⁵ − 1)/(3 − 1) = 4·242/2 = 4·121 = 484. Tekshiruv: 4 + 12 + 36 + 108 + 324 = 484. 324 — beshinchi hadning o'zi. 968 — 2 ga bo'lishni unutish. 160 — to'rtta hadning yig'indisi. Javob: 484.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sn-togridan-formula",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#061c830a"
+    },
+    {
+      "q": "Geometrik progressiyaning har bir hadi 15 ga teng va progressiyada 12 ta had bor. Barcha hadlarning yig'indisini toping.",
+      "v": [
+        "180",
+        "0",
+        "165",
+        "15"
+      ],
+      "t": 0,
+      "izoh": "Barcha hadlar teng bo'lsa, maxraj q = 1 bo'ladi. Bu holda odatdagi formula maxrajida q − 1 = 0 chiqadi, ya'ni u ishlamaydi. q = 1 uchun Sₙ = n·b₁ formulasi qo'llaniladi: S₁₂ = 12·15 = 180. 0 — formulani zo'rlab qo'llaganda qavs ichida 1 − 1 = 0 chiqishi. 165 — 11 ta hadni qo'shish. Javob: 180.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "q-birga-teng-hol",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#a7f17650"
+    },
+    {
+      "q": "Geometrik progressiyada b₁ = 9 va dastlabki sakkizta hadning yig'indisi 72 ga teng. Progressiyaning maxrajini aniqlang.",
+      "v": [
+        "1",
+        "2",
+        "1/2",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Yig'indini birinchi hadga bo'lamiz: 72 : 9 = 8. Demak 1 + q + q² + … + q⁷ = 8, ya'ni sakkizta had yig'indisi aynan hadlar soniga teng. Bu faqat q = 1 da bajariladi, chunki qo'shiluvchilarning har biri 1 ga aylanadi. Boshqacha aytganda barcha hadlar 9 ga teng va 9·8 = 72. 2 va 1/2 da yig'indi 72 ga teng chiqmaydi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "q-birga-teng-hol",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#3371a853"
+    },
+    {
+      "q": "Bir do'konda har oyda aynan 250 000 so'mlik daftar sotiladi va bu ko'rsatkich butun yil davomida o'zgarmadi. Yil davomida daftardan tushgan umumiy summani toping.",
+      "v": [
+        "2 750 000 so'm",
+        "3 250 000 so'm",
+        "3 000 000 so'm",
+        "1 500 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Oylik tushum o'zgarmagani uchun bu maxraji q = 1 bo'lgan geometrik progressiya. Bunday progressiyada Sₙ = n·b₁. Bir yilda 12 oy bor, demak S₁₂ = 12·250 000 = 3 000 000 so'm. 2 750 000 — 11 oyni hisoblash. 3 250 000 — 13 oyni hisoblash. 1 500 000 — olti oylik tushum. Javob: 3 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "q-birga-teng-hol",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#1e8b11a2"
+    },
+    {
+      "q": "Geometrik progressiyaning barcha hadlari o'zaro teng, hadlar soni esa hadning qiymatidan 2 taga ko'p. Hadlar yig'indisi 48 bo'lsa, birinchi hadni toping.",
+      "v": [
+        "−8",
+        "8",
+        "24",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Hadlar teng bo'lgani uchun q = 1 va Sₙ = n·b₁. Birinchi hadni b deb olsak, hadlar soni b + 2 bo'ladi va b(b + 2) = 48. Bundan b² + 2b − 48 = 0, ildizlari b = 6 va b = −8. Hadlar soni musbat bo'lishi kerak, shuning uchun b = 6, hadlar soni esa 8. Tekshiruv: 6·8 = 48. −8 — chetga chiqadigan ikkinchi ildiz. 8 — hadlar soni, birinchi had emas. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "q-birga-teng-hol",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#7dc66c85"
+    },
+    {
+      "q": "Geometrik progressiyada b₁ = 2 va q = 3. Dastlabki nechta hadning yig'indisi 242 ga teng bo'ladi?",
+      "v": [
+        "4",
+        "7",
+        "5",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Sₙ = 2(3ⁿ − 1)/(3 − 1) = 3ⁿ − 1. Shartga ko'ra 3ⁿ − 1 = 242, demak 3ⁿ = 243. 243 = 3⁵ bo'lgani uchun n = 5. Tekshiruv: 2 + 6 + 18 + 54 + 162 = 242. 4 — 3⁴ = 81 bilan adashish. 6 — daraja ko'rsatkichini n − 1 deb olish. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-n",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#1f95d968"
+    },
+    {
+      "q": "Anvar birinchi kuni 4 ta masala yechdi, keyingi har kuni oldingi kundagidan 2 barobar ko'p masala yechdi. U jami 124 ta masala yechgan bo'lsa, necha kun ishlagan?",
+      "v": [
+        "5 kun",
+        "4 kun",
+        "6 kun",
+        "31 kun"
+      ],
+      "t": 0,
+      "izoh": "Kunlik masalalar soni b₁ = 4, q = 2 bo'lgan geometrik progressiya. Jami: 4(2ⁿ − 1)/(2 − 1) = 124, bundan 2ⁿ − 1 = 31 va 2ⁿ = 32, ya'ni n = 5. Tekshiruv: 4 + 8 + 16 + 32 + 64 = 124. 31 — 2ⁿ − 1 ning qiymatini javob deb olish. 4 va 6 — bir kunga adashish. Javob: 5 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-n",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#65d02a07"
+    },
+    {
+      "q": "b₁ = 1 va q = 4 bo'lgan geometrik progressiyaning dastlabki n ta hadi yig'indisi 1365 ga teng. n ning qiymatini toping.",
+      "v": [
+        "n = 5",
+        "n = 6",
+        "n = 7",
+        "n = 4"
+      ],
+      "t": 1,
+      "izoh": "Sₙ = (4ⁿ − 1)/(4 − 1) = (4ⁿ − 1)/3. Shartdan (4ⁿ − 1)/3 = 1365, demak 4ⁿ − 1 = 4095 va 4ⁿ = 4096. 4096 = 4⁶ bo'lgani uchun n = 6. Tekshiruv: 1 + 4 + 16 + 64 + 256 + 1024 = 1365. n = 5 da yig'indi 341, n = 7 da 5461 chiqadi. Javob: n = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-n",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#5e3cd526"
+    },
+    {
+      "q": "Bir xabar birinchi kuni 3 kishiga yetdi, har keyingi kuni oldingi kundagidan 3 barobar ko'p odamga yetdi. Xabardan jami 120 kishi voqif bo'lgan bo'lsa, necha kun o'tgan?",
+      "v": [
+        "3 kun",
+        "5 kun",
+        "40 kun",
+        "4 kun"
+      ],
+      "t": 3,
+      "izoh": "Bu b₁ = 3, q = 3 bo'lgan geometrik progressiya. Yig'indi: 3(3ⁿ − 1)/(3 − 1) = 120, bundan 3ⁿ − 1 = 80 va 3ⁿ = 81, ya'ni n = 4. Tekshiruv: 3 + 9 + 27 + 81 = 120. 40 — 120 ni oddiy 3 ga bo'lish. 3 va 5 — bir kunga adashish. Javob: 4 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-n",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#43a8c962"
+    },
+    {
+      "q": "Kamayuvchi geometrik progressiyada b₁ = 729, maxraj 1/3 ga teng. Dastlabki nechta hadning yig'indisi 1092 ga teng bo'ladi?",
+      "v": [
+        "5 ta had",
+        "7 ta had",
+        "6 ta had",
+        "8 ta had"
+      ],
+      "t": 2,
+      "izoh": "Hadlarni ketma-ket yozamiz: 729, 243, 81, 27, 9, 3, 1. Ularni birin-ketin qo'shamiz: 729, 972, 1053, 1080, 1089, 1092. Ko'rinib turibdiki 1092 qiymatiga oltinchi hadda erishildi. Formula bilan ham 729(1 − (1/3)ⁿ)/(1 − 1/3) = 1092 tenglamasi n = 6 ni beradi. 5 ta hadda 1089, 7 ta hadda 1093 chiqadi. Javob: 6 ta had.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-n",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#8144bb39"
+    },
+    {
+      "q": "Geometrik progressiyada b₁ = 4 va dastlabki uchta hadning yig'indisi 28 ga teng. Maxrajning musbat qiymatini toping.",
+      "v": [
+        "−3",
+        "2",
+        "3",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "S₃ = b₁(1 + q + q²) bo'lgani uchun 4(1 + q + q²) = 28, ya'ni 1 + q + q² = 7. Bundan q² + q − 6 = 0 kvadrat tenglama chiqadi, uning ildizlari q = 2 va q = −3. Shart musbat qiymatni so'ragani uchun q = 2. Tekshiruv: 4 + 8 + 16 = 28. −3 — shartga zid ikkinchi ildiz. 7 — yig'indini birinchi hadga bo'lishdan chiqqan oraliq son. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-q",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#fa4b0263"
+    },
+    {
+      "q": "Geometrik progressiyaning birinchi hadi 2 ga, dastlabki uchta hadi yig'indisi esa 26 ga teng. Maxrajning manfiy qiymatini aniqlang.",
+      "v": [
+        "3",
+        "4",
+        "−4",
+        "−3"
+      ],
+      "t": 2,
+      "izoh": "2(1 + q + q²) = 26 tenglamadan 1 + q + q² = 13 kelib chiqadi. Uni q² + q − 12 = 0 ko'rinishida yozamiz, ildizlari q = 3 va q = −4. Manfiy qiymat so'ralgani uchun q = −4. Tekshiruv: 2 − 8 + 32 = 26. 3 — musbat ildiz, shartga mos emas. −3 — ildizni noto'g'ri ajratish. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-q",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#f2fd2292"
+    },
+    {
+      "q": "Birinchi hadi 1 ga teng geometrik progressiyaning dastlabki to'rtta hadi yig'indisi 40 ga teng. Progressiyaning maxrajini toping.",
+      "v": [
+        "2",
+        "4",
+        "10",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "b₁ = 1 bo'lgani uchun 1 + q + q² + q³ = 40. Chap tomonni guruhlaymiz: (1 + q)(1 + q²) = 40. q = 3 da (1 + 3)(1 + 9) = 4·10 = 40, demak shart bajariladi. Tekshiruv: 1 + 3 + 9 + 27 = 40. 2 da yig'indi 15, 4 da esa 85 chiqadi. 10 — ko'paytuvchilardan birining qiymatini javob deb olish. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-orqali-q",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#e874ca8d"
+    },
+    {
+      "q": "Bir korxona uch oy davomida ishlab chiqarishni har oy bir xil koeffitsientga oshirib bordi. Birinchi oyda 150 ta, uch oyda jami 1950 ta mahsulot tayyorlangan bo'lsa, oylik o'sish koeffitsientini toping.",
+      "v": [
+        "3 marta",
+        "2 marta",
+        "4 marta",
+        "13 marta"
+      ],
+      "t": 0,
+      "izoh": "Oylik hajmlar geometrik progressiya tashkil etadi: 150, 150q, 150q². Yig'indisi 150(1 + q + q²) = 1950, bundan 1 + q + q² = 13 va q² + q − 12 = 0. Ildizlari q = 3 va q = −4, lekin mahsulot hajmi manfiy bo'lmaydi, shuning uchun q = 3. Tekshiruv: 150 + 450 + 1350 = 1950. 13 — oraliq qiymatni javob deb olish. Javob: 3 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-q",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#3929381a"
+    },
+    {
+      "q": "Geometrik progressiyaning dastlabki ikkita hadi yig'indisi 15 ga, dastlabki to'rtta hadi yig'indisi esa 255 ga teng. Maxrajning kvadratini toping.",
+      "v": [
+        "4",
+        "17",
+        "16",
+        "±4"
+      ],
+      "t": 2,
+      "izoh": "Uchinchi va to'rtinchi hadlar birinchi ikkitasining q² ga ko'paytirilgani: b₃ + b₄ = q²(b₁ + b₂). Demak S₄ = S₂ + q²·S₂ = S₂(1 + q²). Shartdan 255 = 15(1 + q²), ya'ni 1 + q² = 17 va q² = 16. 4 — maxrajning o'zi, savol esa uning kvadratini so'ragan. 17 — birni ayirishni unutish. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-orqali-q",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#4d539e41"
+    },
+    {
+      "q": "Maxraji 1/2 ga teng geometrik progressiyaning dastlabki beshta hadi yig'indisi 62 ga teng. Birinchi hadni toping.",
+      "v": [
+        "31",
+        "2",
+        "64",
+        "32"
+      ],
+      "t": 3,
+      "izoh": "Sₙ = b₁(1 − qⁿ)/(1 − q) formulasiga qo'yamiz: b₁(1 − 1/32)/(1/2) = b₁·(31/32)·2 = 31b₁/16. Bu 62 ga teng, demak b₁ = 62·16/31 = 32. Tekshiruv: 32 + 16 + 8 + 4 + 2 = 62. 31 — cheksiz kamayuvchi progressiya formulasi b₁/(1 − q) ni beshta hadga qo'llash xatosi. 2 — beshinchi hadning qiymati. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-b1",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#dc66eb06"
+    },
+    {
+      "q": "Maxraji 4 ga teng geometrik progressiyaning dastlabki uchta hadi yig'indisi 84 ga teng. Birinchi hadni toping.",
+      "v": [
+        "28",
+        "4",
+        "21",
+        "5,25"
+      ],
+      "t": 1,
+      "izoh": "S₃ = b₁(1 + q + q²) = b₁(1 + 4 + 16) = 21b₁. Shartga ko'ra 21b₁ = 84, demak b₁ = 4. Tekshiruv: 4 + 16 + 64 = 84. 28 — yig'indini hadlar soniga bo'lish, ya'ni maxrajni 1 deb olish. 21 — oraliq koeffitsientning qiymati. 5,25 — yig'indini faqat q² ga bo'lib, uchinchi hadni birinchi deb olish. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-orqali-b1",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#6f917caf"
+    },
+    {
+      "q": "Bir fermer besh yil davomida har yili ekilgan tut ko'chatlari sonini 2 barobar oshirib bordi va besh yilda jami 620 ta ko'chat ekdi. Birinchi yili nechta ko'chat ekkan?",
+      "v": [
+        "124 ta",
+        "20 ta",
+        "40 ta",
+        "31 ta"
+      ],
+      "t": 1,
+      "izoh": "Yillik ko'chatlar soni b₁, 2b₁, 4b₁, 8b₁, 16b₁ ko'rinishida. Yig'indisi b₁(2⁵ − 1)/(2 − 1) = 31b₁ = 620, bundan b₁ = 20. Tekshiruv: 20 + 40 + 80 + 160 + 320 = 620. 124 — 620 ni besh yilga teng taqsimlash. 40 — ikkinchi yilning ko'rsatkichi. 31 — formuladagi oraliq koeffitsient. Javob: 20 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-b1",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#f2117412"
+    },
+    {
+      "q": "Geometrik progressiyaning maxraji −2 ga, dastlabki oltita hadi yig'indisi esa −21 ga teng. Birinchi hadni aniqlang.",
+      "v": [
+        "−1",
+        "1",
+        "3",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "Sₙ = b₁(qⁿ − 1)/(q − 1) formulasiga q = −2 va n = 6 ni qo'yamiz. (−2)⁶ = 64, shuning uchun S₆ = b₁(64 − 1)/(−2 − 1) = 63b₁/(−3) = −21b₁. Shartdan −21b₁ = −21, ya'ni b₁ = 1. Tekshiruv: 1 − 2 + 4 − 8 + 16 − 32 = −21. −1 — maxrajdagi ishorani hisobga olmaslik. 3 va −3 — 63 ni 21 ga bo'lishdan chiqqan oraliq son. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-orqali-b1",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#cbfb66c0"
+    },
+    {
+      "q": "Maxraji musbat geometrik progressiyada uchinchi had 18 ga, dastlabki uchta hadning yig'indisi esa 26 ga teng. Birinchi hadni toping.",
+      "v": [
+        "2",
+        "3",
+        "8",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi hadni yig'indidan ayiramiz: b₁ + b₂ = 26 − 18 = 8, ya'ni b₁(1 + q) = 8. Ikkinchi shart b₁q² = 18. Ikkinchi tenglamani birinchisiga bo'lsak q²/(1 + q) = 18/8, bundan 4q² − 9q − 9 = 0 va q = 3 (musbat ildiz). Demak b₁ = 8/(1 + 3) = 2. Tekshiruv: 2 + 6 + 18 = 26. 3 — maxraj, 6 — ikkinchi had, 8 — dastlabki ikki hadning yig'indisi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-orqali-b1",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#0d2dd81a"
+    },
+    {
+      "q": "Chekli geometrik progressiyada b₁ = 5, maxraj 2 ga, oxirgi had esa 320 ga teng. Barcha hadlarning yig'indisini toping.",
+      "v": [
+        "325",
+        "315",
+        "635",
+        "640"
+      ],
+      "t": 2,
+      "izoh": "Oxirgi had ma'lum bo'lganda S = (bₙ·q − b₁)/(q − 1) formulasi qulay. Demak S = (320·2 − 5)/(2 − 1) = 640 − 5 = 635. Tekshiruv: 5 + 10 + 20 + 40 + 80 + 160 + 320 = 635. 325 — faqat birinchi va oxirgi hadni qo'shish. 315 — ularning ayirmasi. 640 — hisobdan b₁ ni ayirishni unutish. Javob: 635.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxirgi-had-orqali-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#af25c3dd"
+    },
+    {
+      "q": "Geometrik progressiyaning birinchi hadi 2 ga, maxraji 3 ga, oxirgi hadi esa 486 ga teng. Progressiya hadlarining yig'indisi nechaga teng?",
+      "v": [
+        "488",
+        "728",
+        "1456",
+        "484"
+      ],
+      "t": 1,
+      "izoh": "S = (bₙ·q − b₁)/(q − 1) formulasidan foydalanamiz: S = (486·3 − 2)/(3 − 1) = (1458 − 2)/2 = 1456/2 = 728. Tekshiruv: 2 + 6 + 18 + 54 + 162 + 486 = 728. 488 — birinchi va oxirgi hadning yig'indisi. 1456 — maxrajdagi 2 ga bo'lishni unutish. 484 — ularning ayirmasi. Javob: 728.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxirgi-had-orqali-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#00eadb09"
+    },
+    {
+      "q": "Bir ustaxonaga birinchi kuni 6 ta buyurtma tushdi, har keyingi kuni buyurtmalar soni oldingi kundagidan 2 barobar ko'p bo'ldi va oxirgi kuni 96 ta buyurtma tushdi. Jami nechta buyurtma tushgan?",
+      "v": [
+        "102 ta",
+        "90 ta",
+        "186 ta",
+        "192 ta"
+      ],
+      "t": 2,
+      "izoh": "Kunlik buyurtmalar b₁ = 6, q = 2 bo'lgan progressiya, oxirgi hadi 96. S = (96·2 − 6)/(2 − 1) = 192 − 6 = 186. Tekshiruv: 6 + 12 + 24 + 48 + 96 = 186. 102 — birinchi va oxirgi kunni qo'shish. 90 — ularning ayirmasi. 192 — oxirgi hadni ikkilantirib to'xtab qolish. Javob: 186 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxirgi-had-orqali-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#17e1d795"
+    },
+    {
+      "q": "Kamayuvchi geometrik progressiyaning maxraji 1/3 ga, oxirgi hadi 2 ga, barcha hadlari yig'indisi esa 242 ga teng. Birinchi hadni toping.",
+      "v": [
+        "162",
+        "486",
+        "240",
+        "54"
+      ],
+      "t": 0,
+      "izoh": "Oxirgi had qatnashgan formulani qo'llaymiz: S = (b₁ − bₙ·q)/(1 − q). Demak (b₁ − 2/3)/(2/3) = 242, bundan b₁ − 2/3 = 484/3 va b₁ = 486/3 = 162. Tekshiruv: 162 + 54 + 18 + 6 + 2 = 242. 486 — kasrni yo'qotish uchun ko'paytirilgan oraliq son. 240 — yig'indidan oxirgi hadni ayirish. 54 — ikkinchi had. Javob: 162.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxirgi-had-orqali-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#c014af46"
+    },
+    {
+      "q": "Sanjar uch yil davomida har yilning boshida bank hisobiga 2 000 000 so'mdan qo'yib bordi. Bank har yili hisobdagi mablag'ni 10 foizga oshiradi. Uchinchi yil oxirida hisobda qancha pul to'planadi?",
+      "v": [
+        "6 000 000 so'm",
+        "7 282 000 so'm",
+        "6 600 000 so'm",
+        "7 986 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Birinchi badal uch marta, ikkinchisi ikki marta, uchinchisi bir marta o'sadi. Ular teskari tartibda geometrik progressiya hosil qiladi: b₁ = 2 000 000·1,1 = 2 200 000, maxraj 1,1, hadlar soni 3. S₃ = 2 200 000(1,1³ − 1)/(1,1 − 1) = 2 200 000·3,31 = 7 282 000. 6 000 000 — ustamani umuman hisobga olmaslik. 6 600 000 — har badalga bittadan yillik ustama qo'shish. 7 986 000 — hamma badalga uch yillik ustama berish. Javob: 7 282 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-omonat-annuitet",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#ae9323e5"
+    },
+    {
+      "q": "Bir tadbirkorning yillik daromadi har yili 50 foizga ortib bordi. Birinchi yili u 8 million so'm daromad oldi. To'rt yil ichida olgan umumiy daromadini toping.",
+      "v": [
+        "65 million so'm",
+        "27 million so'm",
+        "38 million so'm",
+        "32 million so'm"
+      ],
+      "t": 0,
+      "izoh": "Yillik daromadlar b₁ = 8 va q = 1,5 bo'lgan geometrik progressiya: 8, 12, 18, 27. Yig'indisi S₄ = 8(1,5⁴ − 1)/(1,5 − 1) = 8·4,0625/0,5 = 65. 27 — faqat to'rtinchi yilning daromadi. 38 — dastlabki uch yilning yig'indisi. 32 — o'sishni e'tiborsiz qoldirib 8 ni 4 ga ko'paytirish. Javob: 65 million so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-murakkab-foiz-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#72393ee2"
+    },
+    {
+      "q": "Yangi ochilgan kompaniya birinchi oyda 400 ta mijoz jalb qildi va har oy jalb qilingan yangi mijozlar soni 50 foizga ko'paydi. To'rt oyda jami nechta yangi mijoz jalb qilingan?",
+      "v": [
+        "3250 ta",
+        "1350 ta",
+        "1900 ta",
+        "1600 ta"
+      ],
+      "t": 0,
+      "izoh": "Oylik ko'rsatkichlar: 400, 600, 900, 1350 — bu maxraji 1,5 bo'lgan geometrik progressiya. Yig'indisi S₄ = 400(1,5⁴ − 1)/0,5 = 400·8,125 = 3250. 1350 — faqat to'rtinchi oyning natijasi. 1900 — dastlabki uch oyning yig'indisi. 1600 — o'sishsiz 400 ni 4 ga ko'paytirish. Javob: 3250 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-murakkab-foiz-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#76ea380b"
+    },
+    {
+      "q": "Bir oila birinchi oyda 300 000 so'm jamg'ardi va keyingi har oyda jamg'armasini oldingi oydagiga nisbatan 20 foizga oshirib bordi. Uch oyda jamg'arilgan umumiy summani toping.",
+      "v": [
+        "900 000 so'm",
+        "432 000 so'm",
+        "1 080 000 so'm",
+        "1 092 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Oylik jamg'armalar: 300 000, 360 000, 432 000 — maxraji 1,2 bo'lgan progressiya. Yig'indisi 300 000(1,2³ − 1)/(1,2 − 1) = 300 000·3,64 = 1 092 000 so'm. 900 000 — o'sishni hisobga olmaslik. 432 000 — faqat uchinchi oy. 1 080 000 — 900 000 ga bir marta 20 foiz qo'shish. Javob: 1 092 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-murakkab-foiz-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#394ec936"
+    },
+    {
+      "q": "Bir mahsulotning narxi har oy 25 foizga oshib bormoqda, yanvarda esa u 64 000 so'm turardi. Yanvardan aprelgacha har oyda bittadan mahsulot sotib olingan bo'lsa, jami qancha pul sarflangan?",
+      "v": [
+        "125 000 so'm",
+        "256 000 so'm",
+        "369 000 so'm",
+        "244 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Oylik narxlar: 64 000, 80 000, 100 000, 125 000 — maxraji 1,25 bo'lgan geometrik progressiya. To'rt oylik xarajat S₄ = 64 000(1,25⁴ − 1)/0,25 = 64 000·5,765625 = 369 000 so'm. 125 000 — faqat aprel narxi. 256 000 — narx o'zgarmagan deb hisoblash. 244 000 — martgacha bo'lgan uch oyning summasi. Javob: 369 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-murakkab-foiz-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#0af4db83"
+    },
+    {
+      "q": "Velosipedchi birinchi soatda 24 km yo'l bosdi, keyingi har soatda esa oldingi soatdagi masofaning yarmini bosdi. To'rt soatda u jami qancha masofani bosgan?",
+      "v": [
+        "42 km",
+        "48 km",
+        "3 km",
+        "45 km"
+      ],
+      "t": 3,
+      "izoh": "Soatlik masofalar: 24, 12, 6, 3 — bu maxraji 1/2 bo'lgan kamayuvchi progressiya. Yig'indisi 24(1 − (1/2)⁴)/(1 − 1/2) = 48(1 − 1/16) = 48 − 3 = 45 km. 42 — dastlabki uch soatning masofasi. 48 — cheksiz davom etganda erishiladigan chegara, to'rt soatlik natija emas. 3 — to'rtinchi soatdagi masofa. Javob: 45 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-kamayuvchi-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#5559c593"
+    },
+    {
+      "q": "Sinovda koptok birinchi sakrashda 40 sm balandlikka ko'tarildi, har keyingi sakrashda esa oldingi balandlikning yarmiga chiqdi. Dastlabki beshta sakrash balandliklarining yig'indisini toping.",
+      "v": [
+        "80 sm",
+        "75 sm",
+        "77,5 sm",
+        "2,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Balandliklar: 40, 20, 10, 5 va 2,5 sm. Yig'indisi 40(1 − (1/2)⁵)/(1 − 1/2) = 80(1 − 1/32) = 80 − 2,5 = 77,5 sm. 80 — sakrashlar cheksiz davom etganda chiqadigan chegara. 75 — beshinchi sakrashni qo'shmaslik. 2,5 — beshinchi sakrashning o'zi. Javob: 77,5 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-kamayuvchi-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#0804ed5e"
+    },
+    {
+      "q": "Bir kompaniya birinchi kuni 300 ta e'lon tarqatdi va har kuni tarqatilgan e'lonlar soni oldingi kundagidan 2 barobar ko'p bo'ldi. Olti kunda jami nechta e'lon tarqatilgan?",
+      "v": [
+        "9600 ta",
+        "19 200 ta",
+        "9300 ta",
+        "18 900 ta"
+      ],
+      "t": 3,
+      "izoh": "Bu b₁ = 300, q = 2 bo'lgan progressiya. S₆ = 300(2⁶ − 1)/(2 − 1) = 300·63 = 18 900. Tekshiruv: 300 + 600 + 1200 + 2400 + 4800 + 9600 = 18 900. 9600 — faqat oltinchi kunning ko'rsatkichi. 19 200 — qavsda birni ayirishni unutish. 9300 — besh kunlik natija. Javob: 18 900 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ikkilanish-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#2486a944"
+    },
+    {
+      "q": "Zilola birinchi hafta 7 sahifa kitob o'qidi va har haftada o'qigan sahifalari soni oldingi haftadagidan ikki barobar ortdi. Olti haftada u jami nechta sahifa o'qigan?",
+      "v": [
+        "441 sahifa",
+        "224 sahifa",
+        "448 sahifa",
+        "217 sahifa"
+      ],
+      "t": 0,
+      "izoh": "Haftalik sahifalar: 7, 14, 28, 56, 112, 224. Yig'indini formula bilan topamiz: S₆ = 7(2⁶ − 1)/(2 − 1) = 7·63 = 441. 224 — faqat oltinchi haftaning natijasi. 448 — 7 ni 64 ga ko'paytirib, birni ayirmaslik. 217 — besh haftalik natija. Javob: 441 sahifa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ikkilanish-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#00a8133e"
+    },
+    {
+      "q": "Do'kon aksiyasida birinchi kuni 3 ta sovg'a, har keyingi kuni oldingi kundagidan 2 barobar ko'p sovg'a berildi. Aksiyaga ajratilgan 189 ta sovg'a to'liq tugagan bo'lsa, aksiya necha kun davom etgan va oxirgi kuni nechta sovg'a berilgan?",
+      "v": [
+        "5 kun, 48 ta",
+        "6 kun, 189 ta",
+        "7 kun, 192 ta",
+        "6 kun, 96 ta"
+      ],
+      "t": 3,
+      "izoh": "Sovg'alar soni b₁ = 3, q = 2 bo'lgan progressiya. Yig'indi 3(2ⁿ − 1)/(2 − 1) = 189, bundan 2ⁿ − 1 = 63 va 2ⁿ = 64, ya'ni n = 6. Oxirgi kun soni b₆ = 3·2⁵ = 96. Tekshiruv: 3 + 6 + 12 + 24 + 48 + 96 = 189. 5 kun, 48 ta — bir kun kam olish. 6 kun, 189 ta — yig'indini oxirgi had deb yozish. Javob: 6 kun, 96 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindidan-n-va-oxirgi-had",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#c97eb310"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni har soatda 3 barobar ortadi, kuzatuv boshida esa idishda 20 ta bakteriya bor edi. Dastlabki besh o'lchovda qayd etilgan bakteriyalar sonlarining yig'indisini toping.",
+      "v": [
+        "1620 ta",
+        "800 ta",
+        "2420 ta",
+        "4840 ta"
+      ],
+      "t": 2,
+      "izoh": "O'lchovlar: 20, 60, 180, 540, 1620 — maxraji 3 bo'lgan progressiya. Yig'indisi S₅ = 20(3⁵ − 1)/(3 − 1) = 20·242/2 = 2420. 1620 — faqat beshinchi o'lchov. 800 — dastlabki to'rtta o'lchovning yig'indisi. 4840 — maxrajdagi 2 ga bo'lishni unutish. Javob: 2420 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-bakteriya-kopayish",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#2d09c210"
+    },
+    {
+      "q": "Ikki idishda bakteriyalar kuzatildi: birinchisida ularning soni har soatda 2 barobar, ikkinchisida 3 barobar ortadi. Boshida ikkala idishda ham 10 tadan bakteriya bo'lgan. To'rt o'lchovda qayd etilgan sonlar yig'indilarining ayirmasini toping.",
+      "v": [
+        "400 ta",
+        "190 ta",
+        "150 ta",
+        "250 ta"
+      ],
+      "t": 3,
+      "izoh": "Birinchi idish: 10, 20, 40, 80, yig'indisi 10(2⁴ − 1)/(2 − 1) = 150. Ikkinchi idish: 10, 30, 90, 270, yig'indisi 10(3⁴ − 1)/(3 − 1) = 400. Ayirma 400 − 150 = 250. 400 va 150 — alohida olingan yig'indilarning o'zi. 190 — faqat oxirgi hadlarning ayirmasi 270 − 80. Javob: 250 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-progressiya-yigindisini-taqqoslash",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#2ae9d23a"
+    },
+    {
+      "q": "Geometrik progressiyada dastlabki oltita hadning yig'indisi dastlabki uchta hadning yig'indisidan 9 marta katta. Progressiyaning maxrajini toping.",
+      "v": [
+        "2",
+        "8",
+        "9",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki oltita hadni ikki uchlikka ajratamiz: b₄ + b₅ + b₆ = q³(b₁ + b₂ + b₃). Demak S₆ = S₃(1 + q³) va S₆ : S₃ = 1 + q³. Shartdan 1 + q³ = 9, ya'ni q³ = 8 va q = 2. 8 — maxrajning kubi, maxrajning o'zi emas. 9 — nisbatni to'g'ridan-to'g'ri maxraj deb olish. 4 — maxrajning kvadrati. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-yigindi-nisbati",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#f9cb73b0"
+    },
+    {
+      "q": "Geometrik progressiyada dastlabki to'rtta hadning yig'indisi 5 ga, dastlabki sakkiztasining yig'indisi esa 80 ga teng. Maxrajning to'rtinchi darajasini toping.",
+      "v": [
+        "16",
+        "15",
+        "75",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Keyingi to'rtta had oldingi to'rttasining q⁴ ga ko'paytirilgani, shuning uchun S₈ = S₄(1 + q⁴). Shartdan 80 = 5(1 + q⁴), demak 1 + q⁴ = 16 va q⁴ = 15. 16 — birni ayirishni unutish. 75 — ikkita yig'indining ayirmasi. 2 — q⁴ ni 16 deb olib, maxrajni topib qo'yish. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-yigindi-nisbati",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#9f9a4eff"
+    },
+    {
+      "q": "Geometrik progressiyada dastlabki oltita hadning yig'indisi dastlabki uchtasining yig'indisidan 28 marta katta ekani ma'lum. Maxrajni aniqlang.",
+      "v": [
+        "27",
+        "28",
+        "3",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "S₆ = S₃(1 + q³) munosabatidan S₆ : S₃ = 1 + q³ kelib chiqadi. Shartga ko'ra 1 + q³ = 28, bundan q³ = 27 va q = 3. 27 — maxrajning kubi. 28 — nisbatning o'zi. 9 — maxrajning kvadrati. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-yigindi-nisbati",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#fedef2d7"
+    },
+    {
+      "q": "Geometrik progressiyada dastlabki uchta hadning yig'indisi 9 ga, dastlabki oltitasining yig'indisi 72 ga teng. Dastlabki to'qqizta hadning yig'indisini toping.",
+      "v": [
+        "576",
+        "135",
+        "441",
+        "513"
+      ],
+      "t": 3,
+      "izoh": "Hadlarni uchtalik guruhlarga ajratamiz. Birinchi guruh yig'indisi 9, ikkinchisi 72 − 9 = 63. Guruhlar o'zaro q³ marta farq qiladi: q³ = 63 : 9 = 7. Uchinchi guruh yig'indisi 63·7 = 441. Demak S₉ = 9 + 63 + 441 = 513. 576 — S₉ ni S₆ ga 8 ni ko'paytirib topish. 135 — uchinchi guruhni ikkinchisiga teng deb olish. 441 — faqat uchinchi guruhning yig'indisi. Javob: 513.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-yigindi-nisbati",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#646858f2"
+    },
+    {
+      "q": "b₁ = 1 va q = 3 bo'lgan geometrik progressiyada S₆ va S₄ yig'indilarning ayirmasini hisoblang.",
+      "v": [
+        "324",
+        "243",
+        "404",
+        "81"
+      ],
+      "t": 0,
+      "izoh": "S₆ − S₄ ayirmasi beshinchi va oltinchi hadlarning yig'indisiga teng: b₅ + b₆. Bu yerda b₅ = 3⁴ = 81 va b₆ = 3⁵ = 243, demak ayirma 81 + 243 = 324. Formula bilan tekshiramiz: S₆ = 364, S₄ = 40, ayirma 324. 243 — faqat oltinchi had. 404 — ayirish o'rniga qo'shish. 81 — faqat beshinchi had. Javob: 324.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindilar-ayirmasi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#8b3d5682"
+    },
+    {
+      "q": "Geometrik progressiyaning birinchi hadi 2 ga, maxraji 2 ga teng. Beshinchi, oltinchi va yettinchi hadlarning yig'indisini toping.",
+      "v": [
+        "254",
+        "224",
+        "128",
+        "96"
+      ],
+      "t": 1,
+      "izoh": "So'ralgan yig'indi S₇ − S₄ ayirmasiga teng. S₇ = 2(2⁷ − 1)/(2 − 1) = 254, S₄ = 2(2⁴ − 1) = 30, ayirma 224. Hadlarni bevosita qo'shsak ham b₅ + b₆ + b₇ = 32 + 64 + 128 = 224 chiqadi. 254 — dastlabki yettita hadning to'liq yig'indisi. 128 — faqat yettinchi had. 96 — uchinchi hadni tashlab ketish. Javob: 224.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindilar-ayirmasi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#ca9c20a5"
+    },
+    {
+      "q": "Geometrik progressiyada dastlabki beshta hadning yig'indisi 62 ga, dastlabki sakkiztasiniki esa 510 ga teng. Oltinchi, yettinchi va sakkizinchi hadlarning yig'indisini toping.",
+      "v": [
+        "572",
+        "256",
+        "448",
+        "192"
+      ],
+      "t": 2,
+      "izoh": "Oltinchidan sakkizinchigacha bo'lgan hadlar yig'indisi S₈ − S₅ ayirmasiga teng. Demak 510 − 62 = 448. Tekshiruv: bu progressiyada b₁ = 2, q = 2 bo'lib, hadlar 64 + 128 + 256 = 448 ni beradi. 572 — ayirish o'rniga qo'shish. 256 — faqat sakkizinchi had. 192 — oltinchi va yettinchi hadlargina. Javob: 448.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindilar-ayirmasi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#241d7b91"
+    },
+    {
+      "q": "Bir zavod dastlabki besh oyda jami 155 ta, dastlabki sakkiz oyda esa jami 1275 ta stanok yig'di. Oylik hajm geometrik progressiya bilan o'sgan bo'lsa, oltinchi, yettinchi va sakkizinchi oylardagi umumiy hajmni toping.",
+      "v": [
+        "1430 ta",
+        "640 ta",
+        "480 ta",
+        "1120 ta"
+      ],
+      "t": 3,
+      "izoh": "Oxirgi uch oyning hajmi S₈ − S₅ ayirmasiga teng: 1275 − 155 = 1120 ta. Tekshiruv uchun progressiyani tiklaymiz: b₁ = 5 va q = 2 bo'lganda S₅ = 155, S₈ = 1275, oxirgi uch oy esa 160 + 320 + 640 = 1120. 1430 — ikkita yig'indini qo'shish. 640 — faqat sakkizinchi oy. 480 — sakkizinchi oyni tashlab ketish. Javob: 1120 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindilar-ayirmasi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#c1b7295c"
+    },
+    {
+      "q": "Sakkizta haddan iborat geometrik progressiyada b₁ = 1 va q = 2. Toq nomerli o'rinlarda turgan hadlarning yig'indisini toping.",
+      "v": [
+        "85",
+        "170",
+        "255",
+        "64"
+      ],
+      "t": 0,
+      "izoh": "Hadlar: 1, 2, 4, 8, 16, 32, 64, 128. Toq o'rindagilar b₁, b₃, b₅, b₇ ya'ni 1, 4, 16, 64. Ular o'zi ham maxraji q² = 4 bo'lgan progressiya: yig'indisi (4⁴ − 1)/3 = 255/3 = 85. 170 — juft o'rindagi hadlarning yig'indisi. 255 — barcha sakkizta hadning yig'indisi. 64 — faqat yettinchi had. Javob: 85.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-toq-hadlar-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#3f13ec14"
+    },
+    {
+      "q": "O'nta haddan iborat geometrik progressiyada birinchi had 3 ga, maxraj 2 ga teng. Juft nomerli o'rinlarda turgan hadlarning yig'indisi nechaga teng?",
+      "v": [
+        "1023",
+        "2046",
+        "3069",
+        "1536"
+      ],
+      "t": 1,
+      "izoh": "Juft o'rindagi hadlar b₂ = 6 dan boshlanadi va ular maxraji q² = 4 bo'lgan beshta hadli progressiya hosil qiladi: 6, 24, 96, 384, 1536. Yig'indisi 6(4⁵ − 1)/(4 − 1) = 6·341 = 2046. 1023 — toq o'rindagi hadlarning yig'indisi. 3069 — barcha o'nta hadning yig'indisi. 1536 — faqat o'ninchi had. Javob: 2046.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-toq-hadlar-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#c1ee1307"
+    },
+    {
+      "q": "Chekli geometrik progressiyaning toq nomerli hadlari yig'indisi 91 ga, juft nomerli hadlariki esa 273 ga teng. Progressiyaning maxrajini toping.",
+      "v": [
+        "1/3",
+        "9",
+        "3",
+        "364"
+      ],
+      "t": 2,
+      "izoh": "Har bir juft nomerli had o'zidan oldingi toq nomerli hadning q ga ko'paytirilgani. Shuning uchun juft nomerlilar yig'indisi toq nomerlilar yig'indisining q ga ko'paytirilganiga teng: 273 = 91q. Bundan q = 3. Tekshiruv: 1 + 9 + 81 = 91 va 3 + 27 + 243 = 273. 1/3 — nisbatni teskari olish. 9 — maxrajning kvadrati. 364 — ikkala yig'indining summasi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-toq-hadlar-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#7c6ab05a"
+    },
+    {
+      "q": "Bog'bon birinchi kuni 2 tup gul ekdi va har kuni oldingi kundagidan 3 barobar ko'p tup ekdi. U olti kun ishlagan bo'lsa, toq kunlarda ekilgan tuplar yig'indisini toping.",
+      "v": [
+        "546 tup",
+        "728 tup",
+        "162 tup",
+        "182 tup"
+      ],
+      "t": 3,
+      "izoh": "Kunlik natijalar: 2, 6, 18, 54, 162, 486. Toq kunlar birinchi, uchinchi va beshinchi, ya'ni 2, 18 va 162. Bular maxraji 9 bo'lgan progressiya: yig'indisi 2(9³ − 1)/(9 − 1) = 2·728/8 = 182. 546 — juft kunlarning yig'indisi. 728 — olti kunlik umumiy natija. 162 — faqat beshinchi kun. Javob: 182 tup.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-toq-hadlar-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#bbf9e305"
+    },
+    {
+      "q": "2 + 4 + 8 + 16 + … + 512 yig'indini hisoblang.",
+      "v": [
+        "1022",
+        "1024",
+        "1023",
+        "510"
+      ],
+      "t": 0,
+      "izoh": "Bu b₁ = 2 va q = 2 bo'lgan progressiya. Oxirgi had 512 = 2⁹ bo'lgani uchun hadlar soni 9 ta. Yig'indi S₉ = 2(2⁹ − 1)/(2 − 1) = 2·511 = 1022. 1024 — 2¹⁰ ning qiymati. 1023 — boshiga 1 ni ham qo'shib yuborish. 510 — sakkizta hadgacha to'xtash. Javob: 1022.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajalar-qatori-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#b39b6965"
+    },
+    {
+      "q": "1 + 3 + 9 + 27 + … + 729 yig'indisi nechaga teng?",
+      "v": [
+        "1092",
+        "1093",
+        "2186",
+        "1458"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda b₁ = 1 va q = 3. Oxirgi had 729 = 3⁶, demak hadlar soni 7 ta. S₇ = (3⁷ − 1)/(3 − 1) = (2187 − 1)/2 = 1093. 1092 — birinchi hadni, ya'ni 1 ni qo'shmaslik. 2186 — maxrajdagi 2 ga bo'lishni unutish. 1458 — oxirgi hadni ikkilantirish. Javob: 1093.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajalar-qatori-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#6c7a8f2b"
+    },
+    {
+      "q": "1 + 2 + 2² + 2³ + … + 2¹⁰ yig'indini hisoblang va natijani ko'rsating.",
+      "v": [
+        "2046",
+        "1024",
+        "2047",
+        "4095"
+      ],
+      "t": 2,
+      "izoh": "Qatorda 2⁰ dan 2¹⁰ gacha, ya'ni 11 ta had bor. Yig'indi S = (2¹¹ − 1)/(2 − 1) = 2048 − 1 = 2047. 2046 — boshidagi 1 ni hisobga olmaslik. 1024 — oxirgi hadning o'zi. 4095 — hadlar sonini 12 ta deb olish. Javob: 2047.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajalar-qatori-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#5aef685c"
+    },
+    {
+      "q": "3 + 3² + 3³ + … + 3ⁿ yig'indi 3279 ga teng bo'lsa, n ning qiymatini toping.",
+      "v": [
+        "6",
+        "8",
+        "2187",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Qator b₁ = 3, q = 3 bo'lgan progressiya. Yig'indisi 3(3ⁿ − 1)/(3 − 1) = 3279, bundan 3ⁿ − 1 = 2186 va 3ⁿ = 2187. 2187 = 3⁷ bo'lgani uchun n = 7. 6 va 8 — daraja ko'rsatkichida bir birlikka adashish. 2187 — daraja qiymatini javob deb yozish. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajalar-qatori-tenglamasi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#6a927088"
+    },
+    {
+      "q": "1 + x + x² + x³ = 15 tenglamaning musbat ildizini toping.",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "15"
+      ],
+      "t": 0,
+      "izoh": "Chap tomon maxraji x bo'lgan geometrik progressiyaning to'rtta hadi yig'indisi. Ifodani guruhlaymiz: (1 + x)(1 + x²) = 15. 15 = 3·5 ko'rinishida yoyilsa 1 + x = 3 va 1 + x² = 5, ya'ni x = 2 ikkala shartni ham qanoatlantiradi. Tekshiruv: 1 + 2 + 4 + 8 = 15. 3 da yig'indi 40, 4 da 85 chiqadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qator-korinishidagi-tenglama",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#177e357c"
+    },
+    {
+      "q": "x ning qanday musbat qiymatida 1 + x + x² + x³ + x⁴ ifodaning qiymati 121 ga teng bo'ladi?",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "121"
+      ],
+      "t": 1,
+      "izoh": "Ifoda maxraji x bo'lgan beshta hadli progressiya yig'indisidir. Qiymatlarni sinab ko'ramiz: x = 2 da 1 + 2 + 4 + 8 + 16 = 31, x = 3 da esa 1 + 3 + 9 + 27 + 81 = 121. Demak x = 3. 2 — kichikroq qiymat, u faqat 31 ni beradi. 4 da yig'indi 341 bo'lib ketadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qator-korinishidagi-tenglama",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#f27f13dc"
+    },
+    {
+      "q": "5 + 5² + 5³ + … + 5ⁿ yig'indi 3905 ga teng bo'lsa, hadlar sonini toping.",
+      "v": [
+        "4",
+        "6",
+        "5",
+        "3125"
+      ],
+      "t": 2,
+      "izoh": "Qator b₁ = 5 va q = 5 bo'lgan progressiya. Yig'indi formulasi 5(5ⁿ − 1)/(5 − 1) = 3905, bundan 5ⁿ − 1 = 3124 va 5ⁿ = 3125. 3125 = 5⁵ bo'lgani uchun n = 5. Tekshiruv: 5 + 25 + 125 + 625 + 3125 = 3905. 4 va 6 — bir hadga adashish. 3125 — oxirgi hadning qiymati. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajalar-qatori-tenglamasi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#d149aab9"
+    },
+    {
+      "q": "x + x² + x³ + x⁴ = 120 tenglamaning musbat ildizini aniqlang.",
+      "v": [
+        "2",
+        "4",
+        "120",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Chap tomonni x qavsdan chiqaramiz: x(1 + x + x² + x³) = 120. x = 3 bo'lganda 3 + 9 + 27 + 81 = 120 hosil bo'ladi, demak ildiz x = 3. x = 2 da yig'indi 30, x = 4 da esa 340 chiqadi, ya'ni ular shartni qanoatlantirmaydi. 120 — tenglamaning o'ng tomonini javob deb yozish. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qator-korinishidagi-tenglama",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#ca30f73b"
+    },
+    {
+      "q": "Geometrik progressiyada b₁ = 5 va q = 2. Dastlabki n ta hadning yig'indisi 300 dan katta bo'ladigan eng kichik n ni toping.",
+      "v": [
+        "6",
+        "5",
+        "7",
+        "315"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi Sₙ = 5(2ⁿ − 1)/(2 − 1) = 5(2ⁿ − 1). Ketma-ket hisoblaymiz: S₄ = 75, S₅ = 155, S₆ = 315. Faqat S₆ = 315 qiymati 300 dan katta, S₅ = 155 esa hali yetmaydi. Demak eng kichik n = 6. 5 — chegaradan o'tmagan qiymat. 7 — keraksiz ortiqcha qadam. 315 — yig'indining qiymati, had nomeri emas. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-tengsizlik-eng-kichik-n",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#9a2794a7"
+    },
+    {
+      "q": "Ko'lda o'sayotgan suv o'simligi birinchi haftada 5 m² maydonni egalladi va har hafta yangi egallangan maydon 2 barobar ortdi. Egallangan maydonlar yig'indisi birinchi marta 600 m² dan oshadigan haftani toping.",
+      "v": [
+        "6-hafta",
+        "7-hafta",
+        "8-hafta",
+        "5-hafta"
+      ],
+      "t": 1,
+      "izoh": "Haftalik maydonlar yig'indisi Sₙ = 5(2ⁿ − 1). Beshinchi haftada S₅ = 5·31 = 155 m², oltinchi haftada S₆ = 5·63 = 315 m² — ikkalasi ham 600 dan kichik. Yettinchi haftada esa S₇ = 5·127 = 635 m², bu 600 dan katta. Demak chegara birinchi marta yettinchi haftada oshib ketadi. 5-hafta va 6-hafta — yig'indi hali chegaraga yetmagan. 8-hafta yig'indisi S₈ = 5·255 = 1275 m² ham 600 dan katta, lekin chegara birinchi marta 7-haftada oshadi, shuning uchun u javob emas. Javob: 7-hafta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-tengsizlik-eng-kichik-n",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#8ed85617"
+    },
+    {
+      "q": "Bir startap birinchi oyda 2 million so'm foyda ko'rdi va har oy foydasi 3 barobar ortdi. To'plangan umumiy foyda birinchi marta 200 million so'mdan oshadigan oyni toping.",
+      "v": [
+        "4-oyda",
+        "6-oyda",
+        "5-oyda",
+        "7-oyda"
+      ],
+      "t": 2,
+      "izoh": "Oylik foydalar yig'indisi Sₙ = 2(3ⁿ − 1)/(3 − 1) = 3ⁿ − 1. To'rtinchi oyda S₄ = 81 − 1 = 80 million, beshinchi oyda esa S₅ = 243 − 1 = 242 million so'm. 80 qiymati 200 dan kichik, 242 esa katta — demak chegara birinchi marta beshinchi oyda oshadi. 6-oyda S₆ = 729 − 1 = 728 million, 7-oyda S₇ = 2187 − 1 = 2186 million: bular ham 200 dan katta, lekin chegara allaqachon beshinchi oyda oshib ketgan, shuning uchun ular javob emas. Javob: 5-oyda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-tengsizlik-eng-kichik-n",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#d6614c96"
+    },
+    {
+      "q": "Birinchi hadi 1 ga, maxraji 3 ga teng geometrik progressiyada Sₙ yig'indi 1000 dan kam bo'lmasligi kerak. Shu shartni qanoatlantiruvchi eng kichik n ni toping.",
+      "v": [
+        "6",
+        "8",
+        "1093",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi Sₙ = (3ⁿ − 1)/(3 − 1) = (3ⁿ − 1)/2. Oltinchi qadamda S₆ = (729 − 1)/2 = 364, yettinchi qadamda S₇ = (2187 − 1)/2 = 1093. 364 qiymati 1000 dan kichik, 1093 esa katta. Demak eng kichik n = 7. 1093 — yig'indining o'zi, had nomeri emas. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-tengsizlik-eng-kichik-n",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#bf8c1936"
+    },
+    {
+      "q": "Rivoyatga ko'ra shohmat taxtasining birinchi katagiga 1 dona bug'doy, har keyingisiga oldingisidan 2 barobar ko'p don qo'yilgan. Dastlabki 10 ta katakdagi donlar sonini toping.",
+      "v": [
+        "1023",
+        "1024",
+        "512",
+        "511"
+      ],
+      "t": 0,
+      "izoh": "Kataklardagi donlar b₁ = 1 va q = 2 bo'lgan progressiya. Yig'indi S₁₀ = (2¹⁰ − 1)/(2 − 1) = 1024 − 1 = 1023. 1024 — 2¹⁰ ning qiymati, undan birni ayirish unutilgan. 512 — faqat o'ninchi katakdagi donlar soni. 511 — to'qqizta katakning yig'indisi. Javob: 1023.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shaxmat-ikkilanish-klassik",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#0db5fbb8"
+    },
+    {
+      "q": "Shohmat taxtasining birinchi katagiga 1 dona don, har keyingi katagiga oldingisidan ikki barobar ko'p don qo'yiladi. Dastlabki 20 ta katakdagi donlar yig'indisi qaysi ifoda bilan beriladi?",
+      "v": [
+        "2²⁰",
+        "2²⁰ − 1",
+        "2¹⁹ − 1",
+        "2·(2²⁰ − 1)"
+      ],
+      "t": 1,
+      "izoh": "Bu b₁ = 1 va q = 2 bo'lgan progressiya, hadlar soni 20 ta. Umumiy formuladan Sₙ = (2ⁿ − 1)/(2 − 1) = 2ⁿ − 1, demak S₂₀ = 2²⁰ − 1. 2²⁰ — birni ayirishni unutish. 2¹⁹ − 1 — hadlar sonini 19 ta deb olish. 2·(2²⁰ − 1) — b₁ ni 2 deb qabul qilish. Javob: 2²⁰ − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shaxmat-ikkilanish-klassik",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#df39dcce"
+    },
+    {
+      "q": "Qog'oz varaq bir marta buklanganda 2 qatlam, ikki marta buklanganda 4 qatlam hosil bo'ladi. Birinchi bukishdan o'ninchi bukishgacha bo'lgan qatlamlar sonlarining yig'indisini toping.",
+      "v": [
+        "2047",
+        "1024",
+        "2046",
+        "2048"
+      ],
+      "t": 2,
+      "izoh": "Har bukishdagi qatlamlar soni 2, 4, 8, …, 2¹⁰ ko'rinishida, ya'ni b₁ = 2 va q = 2. Yig'indi S₁₀ = 2(2¹⁰ − 1)/(2 − 1) = 2·1023 = 2046. 2047 — qatorga 1 ni ham qo'shib yuborish. 1024 — faqat o'ninchi bukish natijasi. 2048 — 2¹¹ ning qiymati. Javob: 2046.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shaxmat-ikkilanish-klassik",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#2f7d328d"
+    },
+    {
+      "q": "Tomoni 16 sm bo'lgan kvadratning tomonlari o'rtalari tutashtirilib yangi kvadrat yasaldi, so'ng bu amal yana ikki marta takrorlandi. Hosil bo'lgan to'rtta kvadrat yuzalarining yig'indisini toping.",
+      "v": [
+        "512 sm²",
+        "32 sm²",
+        "448 sm²",
+        "480 sm²"
+      ],
+      "t": 3,
+      "izoh": "Birinchi kvadratning yuzasi 16² = 256 sm². Tomonlar o'rtalarini tutashtirilganda yangi kvadratning yuzasi avvalgisining yarmiga teng bo'ladi, ya'ni maxraj 1/2. Yuzalar: 256, 128, 64, 32. Yig'indisi 256(1 − (1/2)⁴)/(1 − 1/2) = 512 − 32 = 480 sm². 512 — cheksiz davom etganda chiqadigan chegara. 448 — uchta kvadratning yuzasi. 32 — oxirgi kvadratning yuzasi. Javob: 480 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-shakl-tomonlari-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#fdba0350"
+    },
+    {
+      "q": "Tomoni 12 sm bo'lgan teng tomonli uchburchakning tomonlari o'rtalari tutashtirilib yangi uchburchak yasaldi va bu amal yana ikki marta takrorlandi. To'rtta uchburchak perimetrlarining yig'indisini toping.",
+      "v": [
+        "67,5 sm",
+        "72 sm",
+        "63 sm",
+        "4,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Birinchi uchburchakning perimetri 3·12 = 36 sm. O'rta chiziqlar uchburchagining har bir tomoni ikki marta kichik, demak perimetrlar maxraji 1/2 bo'lgan progressiya: 36, 18, 9 va 4,5 sm. Yig'indisi 36(1 − (1/2)⁴)/(1 − 1/2) = 72 − 4,5 = 67,5 sm. 72 — cheksiz jarayonning chegarasi. 63 — uchta perimetrning yig'indisi. Javob: 67,5 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "geometrik-shakl-tomonlari-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#b800ba8b"
+    },
+    {
+      "q": "Qirrasi 8 sm bo'lgan kubdan boshlab har safar qirrasi ikki marta kichik kub yasaladi. Dastlabki uchta kub hajmlarining yig'indisini hisoblang.",
+      "v": [
+        "576 sm³",
+        "584 sm³",
+        "8 sm³",
+        "512 sm³"
+      ],
+      "t": 1,
+      "izoh": "Kublarning qirralari 8, 4 va 2 sm, hajmlari esa 512, 64 va 8 sm³. Qirra ikki marta kichrayganda hajm sakkiz marta kichrayadi, ya'ni maxraj 1/8. Yig'indi 512 + 64 + 8 = 584 sm³. 576 — uchinchi kubni qo'shmaslik. 8 — faqat uchinchi kubning hajmi. 512 — faqat birinchi kubning hajmi. Javob: 584 sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-shakl-tomonlari-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#0551dc16"
+    },
+    {
+      "q": "Bog'da aylana shaklidagi gulzorlar qatori joylashgan: birinchisining radiusi 6 m, har keyingisiniki oldingisining yarmiga teng. Dastlabki uchta gulzor radiuslarining yig'indisini toping.",
+      "v": [
+        "12 m",
+        "9 m",
+        "10,5 m",
+        "1,5 m"
+      ],
+      "t": 2,
+      "izoh": "Radiuslar 6, 3 va 1,5 m, ya'ni maxraji 1/2 bo'lgan geometrik progressiya. Yig'indi 6(1 − (1/2)³)/(1 − 1/2) = 12(1 − 1/8) = 12 − 1,5 = 10,5 m. 12 — gulzorlar cheksiz davom etgandagi chegara. 9 — dastlabki ikkita radius. 1,5 — uchinchi gulzorning radiusi. Javob: 10,5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-shakl-tomonlari-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#34683f78"
+    },
+    {
+      "q": "Karim qarzini shunday to'laydi: birinchi oyda 50 000 so'm, keyingi har oyda oldingi oydagidan 2 barobar ko'p. Olti oyda u jami qancha pul to'lagan?",
+      "v": [
+        "1 600 000 so'm",
+        "3 200 000 so'm",
+        "1 550 000 so'm",
+        "3 150 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Oylik to'lovlar b₁ = 50 000 va q = 2 bo'lgan progressiya. Olti oylik summa S₆ = 50 000(2⁶ − 1)/(2 − 1) = 50 000·63 = 3 150 000 so'm. 1 600 000 — faqat oltinchi oyning to'lovi. 3 200 000 — qavsda birni ayirishni unutish. 1 550 000 — besh oylik summa. Javob: 3 150 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-qarz-tolash-jadvali",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#2755080c"
+    },
+    {
+      "q": "Bir qarzdor birinchi haftada 3000 so'm, keyingi har haftada oldingi haftadagidan 3 barobar ko'p to'laydi. Uning qarzi 1 092 000 so'm bo'lsa, qarzni necha haftada to'liq uzadi?",
+      "v": [
+        "6 hafta",
+        "5 hafta",
+        "7 hafta",
+        "364 hafta"
+      ],
+      "t": 0,
+      "izoh": "Haftalik to'lovlar yig'indisi 3000(3ⁿ − 1)/(3 − 1) = 1 092 000. Ikkala tomonni soddalashtiramiz: 3ⁿ − 1 = 728, demak 3ⁿ = 729 va n = 6. Tekshiruv: 3000 + 9000 + 27 000 + 81 000 + 243 000 + 729 000 = 1 092 000. 364 — qarzni birinchi to'lovga oddiy bo'lish. 5 va 7 — bir haftaga adashish. Javob: 6 hafta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qarz-tolash-jadvali",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#eb5d4332"
+    },
+    {
+      "q": "Bir korxona qarzini kamaytirib to'laydi: birinchi oyda 640 000 so'm, keyingi har oyda oldingi oydagining yarmi. Besh oyda jami qancha summa to'langan?",
+      "v": [
+        "1 280 000 so'm",
+        "1 240 000 so'm",
+        "1 200 000 so'm",
+        "40 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "To'lovlar 640 000, 320 000, 160 000, 80 000 va 40 000 so'm, ya'ni maxraji 1/2 bo'lgan progressiya. Yig'indi 640 000(1 − (1/2)⁵)/(1 − 1/2) = 1 280 000 − 40 000 = 1 240 000 so'm. 1 280 000 — to'lovlar cheksiz davom etgandagi chegara. 1 200 000 — to'rt oylik summa. 40 000 — beshinchi oyning to'lovi. Javob: 1 240 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-qarz-tolash-jadvali",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#7cfc3ebb"
+    },
+    {
+      "q": "Kredit bo'yicha to'lovlar geometrik progressiya tashkil etadi: birinchi to'lov 300 000 so'm, oxirgi to'lov 2 400 000 so'm, maxraj esa 2. Jami to'langan summani toping.",
+      "v": [
+        "2 700 000 so'm",
+        "4 800 000 so'm",
+        "4 500 000 so'm",
+        "2 100 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Oxirgi had ma'lum bo'lgani uchun S = (bₙ·q − b₁)/(q − 1) formulasini qo'llaymiz: S = (2 400 000·2 − 300 000)/(2 − 1) = 4 800 000 − 300 000 = 4 500 000 so'm. Tekshiruv: 300 000 + 600 000 + 1 200 000 + 2 400 000 = 4 500 000. 2 700 000 — birinchi va oxirgi to'lovni qo'shish. 4 800 000 — b₁ ni ayirmaslik. 2 100 000 — ularning ayirmasi. Javob: 4 500 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxirgi-had-orqali-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#36558d88"
+    },
+    {
+      "q": "Sportchi birinchi kuni 4 daqiqa yugurdi va har kuni yugurish vaqtini 1,5 barobar oshirib bordi. To'rt kunda u jami necha daqiqa yugurgan?",
+      "v": [
+        "13,5 daqiqa",
+        "19 daqiqa",
+        "16 daqiqa",
+        "32,5 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Kunlik vaqtlar 4, 6, 9 va 13,5 daqiqa, ya'ni maxraji 1,5 bo'lgan progressiya. Yig'indi S₄ = 4(1,5⁴ − 1)/(1,5 − 1) = 4·4,0625/0,5 = 32,5 daqiqa. 13,5 — faqat to'rtinchi kun. 19 — dastlabki uch kunning yig'indisi. 16 — o'sishni hisobga olmay 4 ni 4 ga ko'paytirish. Javob: 32,5 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-sport-mashq-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#d839bbc5"
+    },
+    {
+      "q": "Og'ir atletikachi birinchi mashg'ulotda 3 marta ko'tarish bajardi va har keyingi mashg'ulotda oldingisidan 2 barobar ko'p ko'tarish qildi. Yetti mashg'ulotda jami nechta ko'tarish bajargan?",
+      "v": [
+        "381 marta",
+        "192 marta",
+        "384 marta",
+        "189 marta"
+      ],
+      "t": 0,
+      "izoh": "Mashg'ulotlardagi ko'tarishlar b₁ = 3, q = 2 bo'lgan progressiya. Yig'indi S₇ = 3(2⁷ − 1)/(2 − 1) = 3·127 = 381. 192 — faqat yettinchi mashg'ulotdagi son. 384 — 3 ni 128 ga ko'paytirib, birni ayirmaslik. 189 — olti mashg'ulotning natijasi. Javob: 381 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-sport-mashq-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#5ebe071a"
+    },
+    {
+      "q": "Suzuvchi birinchi haftada 800 m masofani suzdi va har hafta suzgan masofasini 50 foizga oshirib bordi. To'rt haftada u jami qancha masofani suzgan?",
+      "v": [
+        "2700 m",
+        "6500 m",
+        "3800 m",
+        "3200 m"
+      ],
+      "t": 1,
+      "izoh": "Haftalik masofalar 800, 1200, 1800 va 2700 m, maxraj esa 1,5. Yig'indi S₄ = 800(1,5⁴ − 1)/(1,5 − 1) = 800·8,125 = 6500 m. 2700 — faqat to'rtinchi hafta. 3800 — dastlabki uch haftaning masofasi. 3200 — o'sishni e'tiborsiz qoldirish. Javob: 6500 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-sport-mashq-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#a9a6f873"
+    },
+    {
+      "q": "Geometrik progressiyaning birinchi hadi a ga, maxraji esa 2 ga teng. Dastlabki n ta hadning yig'indisi qanday ifoda bilan beriladi?",
+      "v": [
+        "a·2ⁿ",
+        "a(2ⁿ − 1)/2",
+        "a(2ⁿ − 1)",
+        "2ⁿ − a"
+      ],
+      "t": 2,
+      "izoh": "Umumiy formula Sₙ = b₁(qⁿ − 1)/(q − 1). Bu yerda b₁ = a va q = 2, demak maxraj q − 1 = 1 ga aylanadi. Shuning uchun Sₙ = a(2ⁿ − 1)/1 = a(2ⁿ − 1). a·2ⁿ — qavsda birni ayirishni unutish. a(2ⁿ − 1)/2 — maxrajga q ni qo'yib yuborish. Javob: a(2ⁿ − 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "progressiya-yigindisi-harfli-ifoda",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#8849ef87"
+    },
+    {
+      "q": "Geometrik progressiyaning dastlabki n ta hadi yig'indisi Sₙ = 3ⁿ − 1 formula bilan berilgan. Progressiyaning birinchi hadi va maxrajini aniqlang.",
+      "v": [
+        "b₁ = 3, q = 3",
+        "b₁ = 1, q = 3",
+        "b₁ = 2, q = 2",
+        "b₁ = 2, q = 3"
+      ],
+      "t": 3,
+      "izoh": "Birinchi had S₁ ga teng: b₁ = 3¹ − 1 = 2. Ikkinchi hadni topish uchun S₂ dan S₁ ni ayiramiz: S₂ = 9 − 1 = 8, demak b₂ = 8 − 2 = 6. Maxraj q = b₂/b₁ = 6/2 = 3. Tekshiruv: 2 + 6 + 18 = 26 va S₃ = 27 − 1 = 26. b₁ = 1 — formulani noto'g'ri o'qish. b₁ = 3 — daraja asosini birinchi had deb olish. Javob: b₁ = 2, q = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "progressiya-yigindisi-harfli-ifoda",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#35e79ed7"
+    },
+    {
+      "q": "Nodira to'rt yil davomida har yilning boshida bank hisobiga 1 000 000 so'mdan qo'ydi, bank esa yiliga 20 foiz ustama beradi. To'rtinchi yil oxirida hisobda qancha pul to'planadi?",
+      "v": [
+        "6 441 600 so'm",
+        "4 000 000 so'm",
+        "4 800 000 so'm",
+        "5 368 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Har bir badal o'z muddatiga qarab o'sadi va ular geometrik progressiya hosil qiladi: b₁ = 1 000 000·1,2 = 1 200 000, maxraj 1,2, hadlar soni 4. S₄ = 1 200 000(1,2⁴ − 1)/(1,2 − 1) = 1 200 000·5,368 = 6 441 600 so'm. 4 000 000 — ustamani umuman hisobga olmaslik. 4 800 000 — har badalga faqat bir yillik ustama qo'shish. 5 368 000 — birinchi yillik ustamani tushirib qoldirish. Javob: 6 441 600 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-omonat-annuitet",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#1a764b43"
+    },
+    {
+      "q": "Jamg'arma kassasiga uch yil davomida har yil boshida 500 000 so'mdan qo'yildi, yillik ustama esa 10 foizni tashkil etadi. Uchinchi yil oxirida to'plangan summani toping.",
+      "v": [
+        "1 500 000 so'm",
+        "1 820 500 so'm",
+        "1 650 000 so'm",
+        "1 996 500 so'm"
+      ],
+      "t": 1,
+      "izoh": "Badallar o'sib borib b₁ = 500 000·1,1 = 550 000, q = 1,1 va n = 3 bo'lgan progressiyani beradi. S₃ = 550 000(1,1³ − 1)/(1,1 − 1) = 550 000·3,31 = 1 820 500 so'm. 1 500 000 — ustamasiz summa. 1 650 000 — har badalga bittadan yillik ustama. 1 996 500 — barcha badallarga uch yillik ustama berish. Javob: 1 820 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-omonat-annuitet",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#c102cb7e"
+    },
+    {
+      "q": "Tormozlangan avtomobil birinchi soniyada 27 m yo'l bosdi, keyingi har soniyada esa oldingi soniyadagi masofaning uchdan bir qismini bosdi. To'rt soniyada qancha masofa bosgan?",
+      "v": [
+        "39 m",
+        "40,5 m",
+        "40 m",
+        "1 m"
+      ],
+      "t": 2,
+      "izoh": "Soniyalik masofalar 27, 9, 3 va 1 m, ya'ni maxraji 1/3 bo'lgan kamayuvchi progressiya. Yig'indi 27(1 − (1/3)⁴)/(1 − 1/3) = 40,5(1 − 1/81) = 40,5 − 0,5 = 40 m. 39 — dastlabki uch soniyaning masofasi. 40,5 — harakat cheksiz davom etgandagi chegara. 1 — to'rtinchi soniyadagi masofa. Javob: 40 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-kamayuvchi-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#ef49b809"
+    },
+    {
+      "q": "Bochkadan har kuni ichida qolgan suvning yarmi olinadi. Birinchi kuni 64 litr olingan bo'lsa, olti kunda jami qancha suv olingan?",
+      "v": [
+        "128 litr",
+        "124 litr",
+        "2 litr",
+        "126 litr"
+      ],
+      "t": 3,
+      "izoh": "Kunlik olinadigan hajmlar 64, 32, 16, 8, 4 va 2 litr — maxraji 1/2 bo'lgan progressiya. Yig'indi 64(1 − (1/2)⁶)/(1 − 1/2) = 128(1 − 1/64) = 128 − 2 = 126 litr. 128 — jarayon cheksiz davom etgandagi chegara. 124 — besh kunlik hajm. 2 — oltinchi kuni olingan suv. Javob: 126 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-kamayuvchi-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#94ea7517"
+    },
+    {
+      "q": "Ijtimoiy tarmoqqa joylangan video birinchi kuni 250 marta ko'rildi va har kuni ko'rishlar soni ikki barobar ortdi. Yetti kunda video jami necha marta ko'rilgan?",
+      "v": [
+        "31 750 marta",
+        "16 000 marta",
+        "32 000 marta",
+        "15 750 marta"
+      ],
+      "t": 0,
+      "izoh": "Kunlik ko'rishlar b₁ = 250 va q = 2 bo'lgan progressiya. Yig'indi S₇ = 250(2⁷ − 1)/(2 − 1) = 250·127 = 31 750. 16 000 — faqat yettinchi kunning ko'rsatkichi. 32 000 — 250 ni 128 ga ko'paytirib, birni ayirmaslik. 15 750 — olti kunlik natija. Javob: 31 750 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ikkilanish-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#6a949cc1"
+    },
+    {
+      "q": "Hujayra har 20 daqiqada ikkiga bo'linadi, kuzatuv boshida esa idishda 4 ta hujayra bor edi. Kuzatuv boshidagi o'lchovdan boshlab, ikki soat davomida har 20 daqiqada qayd etilgan yettita ko'rsatkich yig'indisini toping.",
+      "v": [
+        "256 ta",
+        "508 ta",
+        "512 ta",
+        "252 ta"
+      ],
+      "t": 1,
+      "izoh": "Kuzatuv boshidagi o'lchov ham qayd etiladi, undan keyin ikki soat ichida 20 daqiqalik oraliq olti marta o'tadi — jami yettita ko'rsatkich. Sonlar: 4, 8, 16, 32, 64, 128, 256. Yig'indi 4(2⁷ − 1)/(2 − 1) = 4·127 = 508. 256 — faqat oxirgi ko'rsatkich, yig'indi emas. 512 — 4 ni 128 ga ko'paytirish. 252 — kuzatuv boshidagi o'lchovni qo'shib, lekin ikkinchi soat oxiridagi 256 ni tushirib qoldirib, yettita emas oltita ko'rsatkichni qo'shish: 4·63 = 252. Javob: 508 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ikkilanish-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#99f61baf"
+    },
+    {
+      "q": "Geometrik progressiyada b₁ = 2, q = 3 va dastlabki n ta hadning yig'indisi 728 ga teng. Hadlar sonini va oxirgi hadni toping.",
+      "v": [
+        "n = 5, bₙ = 162",
+        "n = 7, bₙ = 1458",
+        "n = 6, bₙ = 486",
+        "n = 6, bₙ = 728"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi formulasi 2(3ⁿ − 1)/(3 − 1) = 3ⁿ − 1 ko'rinishga keladi. Shartdan 3ⁿ − 1 = 728, demak 3ⁿ = 729 va n = 6. Oxirgi had b₆ = 2·3⁵ = 2·243 = 486. Tekshiruv: 2 + 6 + 18 + 54 + 162 + 486 = 728. n = 5 — bir hadga kam olish. bₙ = 728 — yig'indini oxirgi had deb yozish. Javob: n = 6, bₙ = 486.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindidan-n-va-oxirgi-had",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#d10e4078"
+    },
+    {
+      "q": "Kutubxonaga birinchi oyda 4 ta kitob sovg'a qilindi va har oy sovg'alar soni 3 barobar ortdi. Jami 484 ta kitob to'plangan bo'lsa, necha oy o'tgan va oxirgi oyda nechta kitob sovg'a qilingan?",
+      "v": [
+        "4 oy, 108 ta",
+        "5 oy, 484 ta",
+        "6 oy, 972 ta",
+        "5 oy, 324 ta"
+      ],
+      "t": 3,
+      "izoh": "Oylik sovg'alar b₁ = 4, q = 3 bo'lgan progressiya. Yig'indi 4(3ⁿ − 1)/(3 − 1) = 2(3ⁿ − 1) = 484, bundan 3ⁿ − 1 = 242 va 3ⁿ = 243, ya'ni n = 5. Oxirgi oy uchun b₅ = 4·3⁴ = 4·81 = 324. Tekshiruv: 4 + 12 + 36 + 108 + 324 = 484. 4 oy, 108 ta — bir oyga kam olish. 5 oy, 484 ta — yig'indini oxirgi had deb yozish. Javob: 5 oy, 324 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindidan-n-va-oxirgi-had",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#886c15a8"
+    },
+    {
+      "q": "Zamburug' koloniyasidagi sporalar soni har kuni 4 barobar ortadi, birinchi kuni esa 6 ta spora qayd etilgan. Dastlabki to'rt kunda qayd etilgan sonlar yig'indisini toping.",
+      "v": [
+        "510 ta",
+        "384 ta",
+        "126 ta",
+        "1530 ta"
+      ],
+      "t": 0,
+      "izoh": "Kunlik sonlar 6, 24, 96 va 384 — maxraji 4 bo'lgan progressiya. Yig'indi S₄ = 6(4⁴ − 1)/(4 − 1) = 6·255/3 = 510. 384 — faqat to'rtinchi kunning ko'rsatkichi. 126 — dastlabki uch kunning yig'indisi. 1530 — maxrajdagi 3 ga bo'lishni unutish. Javob: 510 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-bakteriya-kopayish",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#75c8d939"
+    },
+    {
+      "q": "Idishdagi bakteriyalar soni har soatda 2 barobar ortadi va uchinchi soatda 40 ta bakteriya qayd etilgan. Birinchi soatdan oltinchi soatgacha qayd etilgan sonlarning yig'indisini toping.",
+      "v": [
+        "320 ta",
+        "630 ta",
+        "310 ta",
+        "2520 ta"
+      ],
+      "t": 1,
+      "izoh": "Uchinchi haddan orqaga qaytamiz: b₃ = 40 va q = 2 bo'lgani uchun b₂ = 20, b₁ = 10. Endi olti hadning yig'indisini topamiz: S₆ = 10(2⁶ − 1)/(2 − 1) = 10·63 = 630. Tekshiruv: 10 + 20 + 40 + 80 + 160 + 320 = 630. 320 — faqat oltinchi soatdagi son. 310 — besh soatlik yig'indi. 2520 — birinchi hadni 40 deb olib hisoblash. Javob: 630 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-bakteriya-kopayish",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#22114ec6"
+    },
+    {
+      "q": "Ikki tadbirkorning oylik daromadi progressiya bilan o'sadi: birinchisiniki 10 million so'mdan boshlanib har oy 2 barobar, ikkinchisiniki 5 million so'mdan boshlanib har oy 3 barobar ortadi. To'rt oyda kimning umumiy daromadi ko'p va farq qancha?",
+      "v": [
+        "Birinchisiniki, 50 million so'mga",
+        "Ikkinchisiniki, 55 million so'mga",
+        "Ikkinchisiniki, 50 million so'mga",
+        "Birinchisiniki, 5 million so'mga"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tadbirkor: 10(2⁴ − 1)/(2 − 1) = 10·15 = 150 million so'm. Ikkinchi tadbirkor: 5(3⁴ − 1)/(3 − 1) = 5·40 = 200 million so'm. Demak ikkinchisining daromadi ko'p va farq 200 − 150 = 50 million so'm. 55 — faqat to'rtinchi oylardagi 135 va 80 ning ayirmasi. 5 — birinchi oylardagi farq. Javob: Ikkinchisiniki, 50 million so'mga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-progressiya-yigindisini-taqqoslash",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#a4a7b3e9"
+    },
+    {
+      "q": "Ikkita geometrik progressiyaning birinchi hadlari 4 ga teng, maxrajlari esa mos ravishda 2 va 4. Ularning dastlabki beshta hadi yig'indilari ayirmasini toping.",
+      "v": [
+        "1364",
+        "124",
+        "1488",
+        "1240"
+      ],
+      "t": 3,
+      "izoh": "Birinchi progressiya: 4(2⁵ − 1)/(2 − 1) = 4·31 = 124. Ikkinchi progressiya: 4(4⁵ − 1)/(4 − 1) = 4·1023/3 = 4·341 = 1364. Ayirma 1364 − 124 = 1240. 1364 va 124 — alohida olingan yig'indilarning o'zi. 1488 — ayirish o'rniga qo'shish. Javob: 1240.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-progressiya-yigindisini-taqqoslash",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#6f1b6b62"
+    },
+    {
+      "q": "Bir shaharda yiliga qurilayotgan uylar soni har yili 20 foizga ortmoqda, birinchi yili esa 500 ta uy qurilgan. Uch yilda jami nechta uy qurilgan?",
+      "v": [
+        "1820 ta",
+        "1500 ta",
+        "720 ta",
+        "1100 ta"
+      ],
+      "t": 0,
+      "izoh": "Yillik ko'rsatkichlar 500, 600 va 720 — maxraji 1,2 bo'lgan progressiya. Yig'indi S₃ = 500(1,2³ − 1)/(1,2 − 1) = 500·3,64 = 1820 ta. 1500 — o'sishni hisobga olmaslik. 720 — faqat uchinchi yilning natijasi. 1100 — dastlabki ikki yilning yig'indisi. Javob: 1820 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-murakkab-foiz-yigindi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#aa46326c"
+    },
+    {
+      "q": "2 + 2² + 2³ + … + 2ⁿ yig'indi 2046 ga teng bo'lsa, n ning qiymatini aniqlang.",
+      "v": [
+        "9",
+        "10",
+        "11",
+        "1024"
+      ],
+      "t": 1,
+      "izoh": "Qator b₁ = 2 va q = 2 bo'lgan progressiya. Yig'indi 2(2ⁿ − 1)/(2 − 1) = 2046, bundan 2ⁿ − 1 = 1023 va 2ⁿ = 1024. 1024 = 2¹⁰ bo'lgani uchun n = 10. 9 va 11 — daraja ko'rsatkichida bir birlikka adashish. 1024 — daraja qiymatining o'zini javob deb yozish. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajalar-qatori-tenglamasi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#97f5c05e"
+    },
+    {
+      "q": "4 + 4² + 4³ + … + 4ⁿ yig'indi 1364 ga teng bo'lsa, hadlar sonini toping.",
+      "v": [
+        "4",
+        "6",
+        "5",
+        "1024"
+      ],
+      "t": 2,
+      "izoh": "Qator b₁ = 4 va q = 4 bo'lgan progressiya. Yig'indi 4(4ⁿ − 1)/(4 − 1) = 1364, bundan 4ⁿ − 1 = 1023 va 4ⁿ = 1024. 1024 = 4⁵ bo'lgani uchun n = 5. Tekshiruv: 4 + 16 + 64 + 256 + 1024 = 1364. 4 va 6 — bir hadga adashish. 1024 — oxirgi hadning qiymati. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajalar-qatori-tenglamasi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#63ab14b8"
+    },
+    {
+      "q": "1/2 + 1/4 + 1/8 + 1/16 + 1/32 + 1/64 yig'indini hisoblang.",
+      "v": [
+        "1",
+        "31/32",
+        "127/128",
+        "63/64"
+      ],
+      "t": 3,
+      "izoh": "Bu b₁ = 1/2 va q = 1/2 bo'lgan oltita hadli progressiya. Yig'indi (1/2)(1 − (1/2)⁶)/(1 − 1/2) = 1 − 1/64 = 63/64. 1 — qator cheksiz davom etgandagi chegara. 31/32 — beshta hadning yig'indisi. 127/128 — yettita hadning yig'indisi. Javob: 63/64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajalar-qatori-yigindisi",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#02398cc8"
+    },
+    {
+      "q": "1 + x + x² + x³ + x⁴ + x⁵ = 63 tenglamaning musbat ildizini toping.",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "63"
+      ],
+      "t": 0,
+      "izoh": "Chap tomon maxraji x bo'lgan oltita hadli progressiya yig'indisi, ya'ni (x⁶ − 1)/(x − 1) = 63. x = 2 ni sinaymiz: 1 + 2 + 4 + 8 + 16 + 32 = 63, shart bajariladi. x = 3 da yig'indi 364, x = 4 da esa 1365 bo'lib ketadi. 63 — tenglamaning o'ng tomonini javob deb yozish. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qator-korinishidagi-tenglama",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#d08a29b2"
+    },
+    {
+      "q": "Geometrik progressiyaning maxraji 1 ga teng va dastlabki 15 ta hadining yig'indisi 105 ni tashkil qiladi. Progressiyaning birinchi hadini toping.",
+      "v": [
+        "7,5",
+        "7",
+        "15",
+        "105"
+      ],
+      "t": 1,
+      "izoh": "Maxraj 1 ga teng bo'lganda barcha hadlar o'zaro teng va Sₙ = n·b₁ formulasi ishlatiladi. Shartdan 15·b₁ = 105, demak b₁ = 7. Tekshiruv: 15 ta ettilik qo'shilganda 105 chiqadi. 7,5 — 105 ni 14 ga, ya'ni n − 1 ga bo'lish xatosi. 15 — hadlar soni. 105 — yig'indining o'zi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "q-birga-teng-hol",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#2ea20a91"
+    },
+    {
+      "q": "Aziz qarzini har oy oldingi oydagining yarmicha to'laydi. Birinchi oyda u 96 000 so'm to'lagan va olti oyda qarzini to'liq uzgan. Qarzning umumiy miqdorini toping.",
+      "v": [
+        "192 000 so'm",
+        "186 000 so'm",
+        "189 000 so'm",
+        "3000 so'm"
+      ],
+      "t": 2,
+      "izoh": "To'lovlar 96 000, 48 000, 24 000, 12 000, 6000 va 3000 so'm — maxraji 1/2 bo'lgan progressiya. Qarz shu oltita to'lovning yig'indisi: 96 000(1 − (1/2)⁶)/(1 − 1/2) = 192 000 − 3000 = 189 000 so'm. 192 000 — to'lovlar cheksiz davom etgandagi chegara. 186 000 — besh oylik summa. 3000 — oxirgi to'lov. Javob: 189 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qarz-tolash-jadvali",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#cafa072e"
+    },
+    {
+      "q": "Birinchi hadi 1 ga, maxraji x ga teng geometrik progressiyaning dastlabki oltita hadi yig'indisini ko'paytuvchilarga ajratilgan ko'rinishda ko'rsating.",
+      "v": [
+        "(1 + x)(1 + x + x²)",
+        "(1 + x²)(1 + x⁴)",
+        "(1 + x)(1 + x⁴)",
+        "(1 + x)(1 + x² + x⁴)"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi S₆ = 1 + x + x² + x³ + x⁴ + x⁵ ko'rinishida. Hadlarni juftlab guruhlaymiz: (1 + x) + x²(1 + x) + x⁴(1 + x) = (1 + x)(1 + x² + x⁴). Tekshiruv uchun x = 2 ni qo'yamiz: yig'indi 63, ko'paytma esa 3·21 = 63. (1 + x)(1 + x + x²) — noto'g'ri guruhlash, x = 2 da 21 beradi. (1 + x²)(1 + x⁴) — x = 2 da 85 beradi. Javob: (1 + x)(1 + x² + x⁴).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "progressiya-yigindisi-harfli-ifoda",
+      "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi#3fd9183a"
+    }
+  ]
+}

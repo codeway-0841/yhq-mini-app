@@ -1,0 +1,1609 @@
+{
+  "nom": "Birgalikda ishlashga doir masalalar",
+  "bolim": "Nisbat, foiz va matnli masalalar",
+  "blok": "foiz",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Mebel ustasi bitta buyurtmani 20 soatda to'liq bajaradi. U bir soat ichida buyurtmaning necha foizini bajaradi?",
+      "v": [
+        "10%",
+        "5%",
+        "20%",
+        "2%"
+      ],
+      "t": 1,
+      "izoh": "Butun ish 100% deb olinadi va u 20 soatga teng taqsimlanadi. Bir soatlik ulush 100% : 20 = 5%. Javob: 5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-ishchi-unumini-topish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#4106be79"
+    },
+    {
+      "q": "Nasos bo'sh hovuzni 8 soatda to'ldiradi. Nasos bir soatda hovuzning qanday qismini to'ldiradi?",
+      "v": [
+        "1/8",
+        "1/4",
+        "1/16",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Butun hovuz 1 deb olinadi. Ish unumi — vaqtga teskari kattalik, ya'ni 1 : 8 = 1/8. Bir soatda hovuzning 1/8 qismi to'ladi. Javob: 1/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-ishchi-unumini-topish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#27a90016"
+    },
+    {
+      "q": "Fermer xo'jaligidagi 45 gektar dalani traktor 9 kunda haydab bo'ladi. Traktorning bir kunlik ish unumi necha gektar?",
+      "v": [
+        "4 gektar",
+        "36 gektar",
+        "5 gektar",
+        "9 gektar"
+      ],
+      "t": 2,
+      "izoh": "Bir kunlik unum umumiy hajmni vaqtga bo'lish orqali topiladi: 45 : 9 = 5. Demak traktor kuniga 5 gektar haydaydi. Javob: 5 gektar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-ishchi-unumini-topish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#080112ba"
+    },
+    {
+      "q": "Sexda bir smenada 480 ta detal tayyorlanadi, smena esa 8 soat davom etadi. Sexning bir soatlik ish unumi nechta detalga teng?",
+      "v": [
+        "48 ta",
+        "80 ta",
+        "240 ta",
+        "60 ta"
+      ],
+      "t": 3,
+      "izoh": "Soatlik unum smenadagi hajmni smena davomiyligiga bo'lish bilan topiladi: 480 : 8 = 60. Sex soatiga 60 ta detal chiqaradi. Javob: 60 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-ishchi-unumini-topish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#6398706e"
+    },
+    {
+      "q": "Anvar xonaning devorlarini 12 soatda suvaydi, Bekzod esa xuddi shu ishni 6 soatda bajaradi. Ikkalasi birga ishlasa, suvash necha soatda tugaydi?",
+      "v": [
+        "9 soat",
+        "4 soat",
+        "18 soat",
+        "6 soat"
+      ],
+      "t": 1,
+      "izoh": "Anvarning soatlik unumi 1/12, Bekzodniki 1/6. Birgalikdagi unum 1/12 + 2/12 = 3/12 = 1/4. Butun ish 1 : (1/4) = 4 soatda bajariladi. Javob: 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-ishchi-birga-vaqt",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#00690c93"
+    },
+    {
+      "q": "Bir tikuvchi buyurtmani 15 kunda, ikkinchisi esa 10 kunda tikib beradi. Ikkalasi birga tiksa, buyurtma necha kunda tayyor bo'ladi?",
+      "v": [
+        "6 kun",
+        "12,5 kun",
+        "25 kun",
+        "5 kun"
+      ],
+      "t": 0,
+      "izoh": "Kunlik unumlar 1/15 va 1/10. Ularni qo'shamiz: 2/30 + 3/30 = 5/30 = 1/6. Butun buyurtma 6 kunda tayyor bo'ladi. Javob: 6 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-ishchi-birga-vaqt",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#0a33a5f9"
+    },
+    {
+      "q": "Birinchi brigada mahalladagi yo'lni 10 kunda, ikkinchisi 40 kunda asfaltlaydi. Ikkala brigada birga ishlasa, yo'l necha kunda tayyor bo'ladi?",
+      "v": [
+        "25 kun",
+        "50 kun",
+        "8 kun",
+        "30 kun"
+      ],
+      "t": 2,
+      "izoh": "Kunlik unumlar 1/10 va 1/40. Yig'indi: 4/40 + 1/40 = 5/40 = 1/8. Demak butun yo'l 8 kunda asfaltlanadi. Javob: 8 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ishchi-birga-vaqt",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#d3baf9f6"
+    },
+    {
+      "q": "Bitta kombayn bug'doy dalasini 14 kunda, ikkinchi kombayn esa 35 kunda o'rib oladi. Ikkalasi birga o'rsa, dala necha kunda o'rib bo'linadi?",
+      "v": [
+        "24,5 kun",
+        "49 kun",
+        "21 kun",
+        "10 kun"
+      ],
+      "t": 3,
+      "izoh": "Unumlarni qo'shamiz: 1/14 + 1/35. Umumiy maxraj 70 bo'ladi: 5/70 + 2/70 = 7/70 = 1/10. Butun dala 10 kunda o'riladi. Javob: 10 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ishchi-birga-vaqt",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#f82f59b9"
+    },
+    {
+      "q": "Bo'yoqchi maktab zalini 45 soatda, uning hamkasbi esa 30 soatda bo'yaydi. Ikkalasi birga bo'yasa, zal necha soatda tayyor bo'ladi?",
+      "v": [
+        "37,5 soat",
+        "75 soat",
+        "18 soat",
+        "15 soat"
+      ],
+      "t": 2,
+      "izoh": "Soatlik unumlar 1/45 va 1/30. Umumiy maxraj 90: 2/90 + 3/90 = 5/90 = 1/18. Demak zal 18 soatda bo'yaladi. Javob: 18 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ishchi-birga-vaqt",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#23444a42"
+    },
+    {
+      "q": "Uch nafar yuk tashuvchi omborni alohida-alohida 6, 12 va 12 soatda bo'shatadi. Uchalasi birga ishlasa, ombor necha soatda bo'shaydi?",
+      "v": [
+        "3 soat",
+        "10 soat",
+        "30 soat",
+        "4 soat"
+      ],
+      "t": 0,
+      "izoh": "Soatlik unumlarni qo'shamiz: 1/6 + 1/12 + 1/12 = 2/12 + 1/12 + 1/12 = 4/12 = 1/3. Butun ish 3 soatda tugaydi. Javob: 3 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-ishchi-birga-vaqt",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#0527aa40"
+    },
+    {
+      "q": "Uchta bog'bon bog'ni alohida 4, 6 va 12 soatda tozalaydi. Uchalasi birga kirishsa, bog' necha soatda tozalanadi?",
+      "v": [
+        "7 soat",
+        "2 soat",
+        "22 soat",
+        "2,4 soat"
+      ],
+      "t": 1,
+      "izoh": "Unumlar 1/4, 1/6 va 1/12. Umumiy maxraj 12: 3/12 + 2/12 + 1/12 = 6/12 = 1/2. Bir soatda ishning yarmi bajariladi, demak 2 soat kerak. Javob: 2 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-ishchi-birga-vaqt",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#c2e51b2d"
+    },
+    {
+      "q": "Uch usta bir xil buyurtmani alohida 20, 30 va 60 kunda bajaradi. Uchalasi birga ishlasa, buyurtma necha kunda tayyor bo'ladi?",
+      "v": [
+        "12 kun",
+        "110 kun",
+        "10 kun",
+        "20 kun"
+      ],
+      "t": 2,
+      "izoh": "Kunlik unumlar 1/20, 1/30 va 1/60. Umumiy maxraj 60: 3/60 + 2/60 + 1/60 = 6/60 = 1/10. Buyurtma 10 kunda tayyor. Javob: 10 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-ishchi-birga-vaqt",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#e554c0a4"
+    },
+    {
+      "q": "Suv omboriga uchta quvur ulangan: ular alohida 8, 12 va 24 soatda to'ldiradi. Uchalasi bir vaqtda ochilsa, ombor necha soatda to'ladi?",
+      "v": [
+        "44 soat",
+        "4,8 soat",
+        "8 soat",
+        "4 soat"
+      ],
+      "t": 3,
+      "izoh": "Quvurlarning soatlik unumi 1/8, 1/12 va 1/24. Umumiy maxraj 24: 3/24 + 2/24 + 1/24 = 6/24 = 1/4. Ombor 4 soatda to'ladi. Javob: 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-ishchi-birga-vaqt",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#3b6d576e"
+    },
+    {
+      "q": "Ikki usta birga ishlab devorni 6 soatda ko'taradi. Birinchi usta yolg'iz o'zi buni 10 soatda uddalaydi. Ikkinchi usta yolg'iz necha soatda ko'taradi?",
+      "v": [
+        "15 soat",
+        "4 soat",
+        "16 soat",
+        "30 soat"
+      ],
+      "t": 0,
+      "izoh": "Birgalikdagi unum 1/6, birinchi ustaniki 1/10. Ikkinchisining unumi 1/6 − 1/10 = 5/30 − 3/30 = 2/30 = 1/15. Demak u yolg'iz 15 soat sarflaydi. Javob: 15 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birga-vaqtdan-ikkinchisini-topish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#3f7bec29"
+    },
+    {
+      "q": "Ikki bog'bon birga ishlab uzumzorni 8 kunda chopiq qiladi. Birinchisi yolg'iz 24 kun sarflaydi. Ikkinchisi yolg'iz necha kunda tugatadi?",
+      "v": [
+        "16 kun",
+        "12 kun",
+        "32 kun",
+        "3 kun"
+      ],
+      "t": 1,
+      "izoh": "Birgalikdagi kunlik unum 1/8, birinchi bog'bonniki 1/24. Ikkinchisi uchun 1/8 − 1/24 = 3/24 − 1/24 = 2/24 = 1/12. U yolg'iz 12 kun ishlaydi. Javob: 12 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birga-vaqtdan-ikkinchisini-topish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#a13ae879"
+    },
+    {
+      "q": "Ikki dasturchi birga loyihani 4 soatda yakunlaydi. Ulardan biri yolg'iz o'zi 12 soat sarflaydi. Ikkinchisi yolg'iz necha soatda yakunlaydi?",
+      "v": [
+        "8 soat",
+        "16 soat",
+        "6 soat",
+        "3 soat"
+      ],
+      "t": 2,
+      "izoh": "Birgalikdagi unum 1/4, ma'lum dasturchiniki 1/12. Ayirma: 3/12 − 1/12 = 2/12 = 1/6. Ikkinchisi loyihani 6 soatda yakunlaydi. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birga-vaqtdan-ikkinchisini-topish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#08fd2f38"
+    },
+    {
+      "q": "Ikki quvur birga ochilganda hovuzcha 12 daqiqada to'ladi. Birinchi quvur yolg'iz uni 20 daqiqada to'ldiradi. Ikkinchi quvur yolg'iz necha daqiqada to'ldiradi?",
+      "v": [
+        "8 daqiqa",
+        "32 daqiqa",
+        "15 daqiqa",
+        "30 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Birgalikdagi unum 1/12, birinchi quvurniki 1/20. Ayirma: 5/60 − 3/60 = 2/60 = 1/30. Ikkinchi quvur yolg'iz 30 daqiqa sarflaydi. Javob: 30 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birga-vaqtdan-ikkinchisini-topish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#24f31803"
+    },
+    {
+      "q": "Ikki yuk mashinasi birga qumni 5 soatda tashib bo'ladi. Ulardan biri yolg'iz 20 soat sarflaydi. Ikkinchisi yolg'iz qancha vaqtda tashiydi?",
+      "v": [
+        "6 soat 40 daqiqa",
+        "15 soat",
+        "25 soat",
+        "4 soat"
+      ],
+      "t": 0,
+      "izoh": "Birgalikdagi unum 1/5, ma'lum mashinaniki 1/20. Ayirma: 4/20 − 1/20 = 3/20. Vaqt 20/3 soat, ya'ni 6 soat va 2/3 soat = 40 daqiqa. Javob: 6 soat 40 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birga-vaqtdan-ikkinchisini-topish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#da5f5d00"
+    },
+    {
+      "q": "Basseyn ikkita quvur bilan to'ldiriladi: birinchisi 15 daqiqada, ikkinchisi 30 daqiqada to'ldiradi. Ikkalasi birga ochilsa, basseyn necha daqiqada to'ladi?",
+      "v": [
+        "22,5 daqiqa",
+        "10 daqiqa",
+        "45 daqiqa",
+        "15 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Daqiqalik unumlar 1/15 va 1/30. Yig'indi: 2/30 + 1/30 = 3/30 = 1/10. Demak basseyn 10 daqiqada to'ladi. Javob: 10 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-quvur-toldirish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#39db89fa"
+    },
+    {
+      "q": "Suv baki birinchi jo'mrakdan 40 daqiqada, ikkinchi jo'mrakdan 24 daqiqada to'ladi. Ikkala jo'mrak birga ochilsa, bak necha daqiqada to'ladi?",
+      "v": [
+        "32 daqiqa",
+        "15 daqiqa",
+        "64 daqiqa",
+        "16 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Unumlar 1/40 va 1/24. Umumiy maxraj 120: 3/120 + 5/120 = 8/120 = 1/15. Bak 15 daqiqada to'ladi. Javob: 15 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-quvur-toldirish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#38583715"
+    },
+    {
+      "q": "Issiqxona sisternasi birinchi quvurdan 9 soatda, ikkinchisidan 6 soatda to'ladi. Ikkala quvur bir vaqtda ochilsa, sisterna qancha vaqtda to'ladi?",
+      "v": [
+        "7 soat 30 daqiqa",
+        "15 soat",
+        "3 soat 36 daqiqa",
+        "3 soat"
+      ],
+      "t": 2,
+      "izoh": "Unumlar 1/9 va 1/6. Umumiy maxraj 18: 2/18 + 3/18 = 5/18. Vaqt 18/5 = 3,6 soat, ya'ni 3 soat va 0,6 soat = 36 daqiqa. Javob: 3 soat 36 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-quvur-toldirish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#3e355096"
+    },
+    {
+      "q": "Bog'dagi hovuzcha bir quvurdan 2 soatda, boshqa quvurdan 3 soatda to'ladi. Ikkalasi birga ishlasa, hovuzcha qancha vaqtda to'ladi?",
+      "v": [
+        "2 soat 30 daqiqa",
+        "5 soat",
+        "1 soat 30 daqiqa",
+        "1 soat 12 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Unumlar 1/2 va 1/3, yig'indisi 3/6 + 2/6 = 5/6. Vaqt 6/5 = 1,2 soat, ya'ni 1 soat va 0,2 soat = 12 daqiqa. Javob: 1 soat 12 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-quvur-toldirish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#84ed42b9"
+    },
+    {
+      "q": "Sug'orish idishi birinchi quvurdan 18 daqiqada, ikkinchisidan 36 daqiqada to'ladi. Ikkalasi birga ochilganda idish necha daqiqada to'ladi?",
+      "v": [
+        "27 daqiqa",
+        "54 daqiqa",
+        "12 daqiqa",
+        "9 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Unumlar 1/18 va 1/36. Umumiy maxraj 36: 2/36 + 1/36 = 3/36 = 1/12. Idish 12 daqiqada to'ladi. Javob: 12 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-quvur-toldirish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#eaa3568b"
+    },
+    {
+      "q": "Hovuzni to'ldiruvchi quvur uni 3 soatda to'ldiradi, tubidagi bo'shatuvchi tuynuk esa to'la hovuzni 5 soatda bo'shatadi. Ikkalasi ham ochiq bo'lsa, bo'sh hovuz qancha vaqtda to'ladi?",
+      "v": [
+        "7 soat 30 daqiqa",
+        "1 soat 52 daqiqa",
+        "2 soat",
+        "8 soat"
+      ],
+      "t": 0,
+      "izoh": "To'ldirish unumi 1/3, bo'shatish unumi 1/5. Sof unum 1/3 − 1/5 = 5/15 − 3/15 = 2/15. Vaqt 15/2 = 7,5 soat, ya'ni 7 soat 30 daqiqa. Javob: 7 soat 30 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toldiruvchi-va-boshatuvchi-quvur",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#4189752c"
+    },
+    {
+      "q": "Akvariumni to'ldiruvchi quvur 9 daqiqada to'ldiradi, drenaj quvuri esa to'lasini 12 daqiqada bo'shatadi. Ikkalasi ochiq holda bo'sh akvarium necha daqiqada to'ladi?",
+      "v": [
+        "3 daqiqa",
+        "36 daqiqa",
+        "21 daqiqa",
+        "4 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Sof unum 1/9 − 1/12 ga teng. Umumiy maxraj 36: 4/36 − 3/36 = 1/36. Demak akvarium 36 daqiqada to'ladi. Javob: 36 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toldiruvchi-va-boshatuvchi-quvur",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#f51454a6"
+    },
+    {
+      "q": "Suv omborining to'ldiruvchi quvuri 6 soatda to'ldiradi, sug'orishga ketadigan quvur esa to'la omborni 8 soatda bo'shatadi. Ikkalasi ochiq bo'lsa, bo'sh ombor necha soatda to'ladi?",
+      "v": [
+        "24 soat",
+        "2 soat",
+        "3 soat 26 daqiqa",
+        "14 soat"
+      ],
+      "t": 0,
+      "izoh": "To'ldirish 1/6, bo'shatish 1/8. Sof unum 1/6 − 1/8 = 4/24 − 3/24 = 1/24. Ombor 24 soatda to'ladi. Javob: 24 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toldiruvchi-va-boshatuvchi-quvur",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#9e91f84e"
+    },
+    {
+      "q": "To'la sisternani bo'shatuvchi nasos 6 daqiqada bo'shatadi, to'ldiruvchi quvur esa uni 18 daqiqada to'ldiradi. To'la sisternada ikkalasi ochilsa, u necha daqiqada bo'shaydi?",
+      "v": [
+        "4 daqiqa 30 soniya",
+        "12 daqiqa",
+        "24 daqiqa",
+        "9 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Bu safar bo'shatish ustun: sof unum 1/6 − 1/18 = 3/18 − 1/18 = 2/18 = 1/9. Demak to'la sisterna 9 daqiqada bo'shaydi. Javob: 9 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toldiruvchi-va-boshatuvchi-quvur",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#bd868459"
+    },
+    {
+      "q": "Duradgor shkaf yasashni 15 kunda tugatadi. U 6 kun ishlagan bo'lsa, ishning qanday qismini bajarib bo'lgan?",
+      "v": [
+        "2/5",
+        "3/5",
+        "2/15",
+        "5/2"
+      ],
+      "t": 0,
+      "izoh": "Bir kunda ishning 1/15 qismi bajariladi. Olti kunda 6 · (1/15) = 6/15 bo'ladi, uni qisqartirsak 2/5 chiqadi. Javob: 2/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vaqt-ichida-bajarilgan-qism",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#acd058d7"
+    },
+    {
+      "q": "Ikki ishchi omborni alohida 12 va 24 soatda taxlaydi. Ular birga 4 soat ishlasa, ishning qanday qismi bajarilgan bo'ladi?",
+      "v": [
+        "1/3",
+        "1/2",
+        "2/3",
+        "1/4"
+      ],
+      "t": 1,
+      "izoh": "Birgalikdagi soatlik unum 1/12 + 1/24 = 2/24 + 1/24 = 3/24 = 1/8. To'rt soatda 4 · (1/8) = 1/2 bajariladi. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vaqt-ichida-bajarilgan-qism",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#f9b56504"
+    },
+    {
+      "q": "Quvur suv omborini 50 daqiqada to'liq to'ldiradi. Quvur 20 daqiqa ochiq turgach, ombor necha foizga to'lgan bo'ladi?",
+      "v": [
+        "20%",
+        "30%",
+        "40%",
+        "60%"
+      ],
+      "t": 2,
+      "izoh": "Ombor 50 daqiqaga to'g'ri kelsa, 20 daqiqadagi ulush 20 : 50 = 0,4 ga teng. Buni foizga aylantirsak 40% chiqadi. Javob: 40%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vaqt-ichida-bajarilgan-qism",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#61040d97"
+    },
+    {
+      "q": "Uch nafar terimchi paxta dalasini alohida 10, 15 va 30 kunda terib bo'ladi. Uchalasi birga 3 kun tersa, dalaning qanday qismi terilgan bo'ladi?",
+      "v": [
+        "2/5",
+        "1/5",
+        "3/10",
+        "3/5"
+      ],
+      "t": 3,
+      "izoh": "Kunlik umumiy unum 3/30 + 2/30 + 1/30 = 6/30 = 1/5. Uch kunda 3 · (1/5) = 3/5 qismi teriladi. Javob: 3/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vaqt-ichida-bajarilgan-qism",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#6f8eae9c"
+    },
+    {
+      "q": "Ikki pardozchi xonani alohida 16 va 24 soatda pardozlaydi. Ular birga 6 soat ishlasa, xonaning qanday qismi pardozlangan bo'ladi?",
+      "v": [
+        "5/8",
+        "3/8",
+        "5/48",
+        "1/2"
+      ],
+      "t": 0,
+      "izoh": "Soatlik umumiy unum 1/16 + 1/24. Umumiy maxraj 48: 3/48 + 2/48 = 5/48. Olti soatda 6 · (5/48) = 30/48 = 5/8 bajariladi. Javob: 5/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vaqt-ichida-bajarilgan-qism",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#80ee5f50"
+    },
+    {
+      "q": "Qurilish brigadasi har kuni ishning 1/8 qismini bajaradi. Brigada 3 kun ishlagach, qolgan ishni tugatishga yana necha kun kerak bo'ladi?",
+      "v": [
+        "3 kun",
+        "5 kun",
+        "8 kun",
+        "4 kun"
+      ],
+      "t": 1,
+      "izoh": "Uch kunda 3 · (1/8) = 3/8 bajariladi, qolgani 1 − 3/8 = 5/8. Har kuni 1/8 bajarilsa, 5/8 uchun 5 kun kerak. Javob: 5 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qolgan-qismni-tugatish-vaqti",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#be35a4ea"
+    },
+    {
+      "q": "Anvar ishni 18 kunda bajaradi. U 6 kun ishlagach ketib qoldi, qolgan qismini Bekzod 8 kunda tugatdi. Bekzod bu ishni yolg'iz necha kunda bajarardi?",
+      "v": [
+        "24 kun",
+        "16 kun",
+        "12 kun",
+        "10 kun"
+      ],
+      "t": 2,
+      "izoh": "Anvar 6 kunda 6/18 = 1/3 qismini bajardi, qolgani 2/3. Bekzod 2/3 ni 8 kunda bajardi, demak kunlik unumi (2/3) : 8 = 1/12. Yolg'iz butun ishga 12 kun ketadi. Javob: 12 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qolgan-qismni-tugatish-vaqti",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#a62cd4d4"
+    },
+    {
+      "q": "Quvur suv idishining 2/5 qismini to'ldirdi. Qolgan qismini to'ldirish uchun yana 18 daqiqa ketsa, bo'sh idish to'lig'icha necha daqiqada to'ladi?",
+      "v": [
+        "45 daqiqa",
+        "25 daqiqa",
+        "12 daqiqa",
+        "30 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Qolgan qism 1 − 2/5 = 3/5 va u 18 daqiqada to'lgan. Demak 1/5 uchun 18 : 3 = 6 daqiqa, butun idish uchun 5 · 6 = 30 daqiqa. Javob: 30 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qolgan-qismni-tugatish-vaqti",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#6c3aafa7"
+    },
+    {
+      "q": "Ikki yig'uvchi birga 4 soat ishlab buyurtmaning 2/3 qismini yig'di. Ular qolgan qismni birga qancha vaqtda tugatadi?",
+      "v": [
+        "3 soat",
+        "6 soat",
+        "2 soat",
+        "1 soat 20 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Agar 2/3 qismga 4 soat ketgan bo'lsa, 1/3 qismga 4 : 2 = 2 soat ketadi. Qolgan qism aynan 1/3 ga teng. Javob: 2 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qolgan-qismni-tugatish-vaqti",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#4b047541"
+    },
+    {
+      "q": "Anvar omborni tartibga solishni 24 kunda bajaradi. U 6 kun yolg'iz ishlagach, Bekzod yordamga keldi; Bekzod bu ishni yolg'iz 12 kunda bajaradi. Qolgan ish ular birga necha kunda tugaydi?",
+      "v": [
+        "6 kun",
+        "8 kun",
+        "18 kun",
+        "12 kun"
+      ],
+      "t": 0,
+      "izoh": "Anvar 6 kunda 6/24 = 1/4 qismini bajardi, qolgani 3/4. Birgalikdagi unum 1/24 + 2/24 = 3/24 = 1/8. Qolgan qism (3/4) : (1/8) = 6 kunda tugaydi. Javob: 6 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kech-qoshilgan-ishchi",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#f33eaef0"
+    },
+    {
+      "q": "Suv omborini birinchi quvur 10 soatda to'ldiradi. U 4 soat yolg'iz ishlagach, ikkinchi quvur ham ochildi; ikkinchisi yolg'iz 30 soatda to'ldiradi. Qolgan qism qancha vaqtda to'ladi?",
+      "v": [
+        "6 soat",
+        "4 soat 30 daqiqa",
+        "7 soat 30 daqiqa",
+        "3 soat"
+      ],
+      "t": 1,
+      "izoh": "Birinchi quvur 4 soatda 4/10 = 2/5 qismini to'ldirdi, qolgani 3/5. Birgalikdagi unum 3/30 + 1/30 = 4/30 = 2/15. Vaqt (3/5) : (2/15) = 4,5 soat, ya'ni 4 soat 30 daqiqa. Javob: 4 soat 30 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kech-qoshilgan-ishchi",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#19b8a72c"
+    },
+    {
+      "q": "Birinchi brigada ko'chadagi yo'lni 20 kunda yotqizadi. U 4 kun ishlagach ikkinchi brigada qo'shildi va qolgan ish yana 8 kunda tugadi. Ikkinchi brigada bu yo'lni yolg'iz necha kunda yotqizadi?",
+      "v": [
+        "10 kun",
+        "30 kun",
+        "20 kun",
+        "16 kun"
+      ],
+      "t": 2,
+      "izoh": "Birinchi brigada 4 kunda 4/20 = 1/5 qismini bajardi, qolgani 4/5. Bu qism 8 kunda tugagan, demak birgalikdagi unum (4/5) : 8 = 1/10. Ikkinchisiniki 1/10 − 1/20 = 1/20, ya'ni 20 kun. Javob: 20 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kech-qoshilgan-ishchi",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#ea4749f6"
+    },
+    {
+      "q": "Karim uyni bo'yashni yolg'iz 30 soatda tugatadi. U 12 soat ishlagach Davron qo'shildi va ish yana 6 soatda bitdi. Davron bu ishni yolg'iz necha soatda bajaradi?",
+      "v": [
+        "10 soat",
+        "20 soat",
+        "18 soat",
+        "15 soat"
+      ],
+      "t": 3,
+      "izoh": "Karim 12 soatda 12/30 = 2/5 qismini bo'yadi, qolgani 3/5. U 6 soatda bitgan, demak birgalikdagi unum (3/5) : 6 = 1/10. Davronniki 1/10 − 1/30 = 2/30 = 1/15, ya'ni 15 soat. Javob: 15 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kech-qoshilgan-ishchi",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#d6e833d5"
+    },
+    {
+      "q": "Ikki usta yog'och panjara yasashni birga boshladi; ular yolg'iz 12 va 24 soatda bajaradi. To'rt soatdan keyin birinchi usta ketdi. Ikkinchisi qolgan ishni necha soatda tugatadi?",
+      "v": [
+        "12 soat",
+        "8 soat",
+        "24 soat",
+        "6 soat"
+      ],
+      "t": 0,
+      "izoh": "Birgalikdagi unum 2/24 + 1/24 = 3/24 = 1/8. To'rt soatda 4/8 = 1/2 bajarildi. Qolgan 1/2 ni ikkinchi usta 1/24 unum bilan bajaradi: (1/2) : (1/24) = 12 soat. Javob: 12 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birga-boshlab-biri-ketgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#c3423d26"
+    },
+    {
+      "q": "Idishga ikki quvur bir vaqtda ochildi; ular alohida 18 va 9 daqiqada to'ldiradi. Uch daqiqadan so'ng birinchi quvur yopildi. Ikkinchisi qolgan qismni qancha vaqtda to'ldiradi?",
+      "v": [
+        "9 daqiqa",
+        "4 daqiqa 30 soniya",
+        "6 daqiqa",
+        "13 daqiqa 30 soniya"
+      ],
+      "t": 1,
+      "izoh": "Birgalikdagi unum 1/18 + 2/18 = 3/18 = 1/6. Uch daqiqada 3/6 = 1/2 to'ldi. Qolgan 1/2 ni ikkinchi quvur 1/9 unum bilan to'ldiradi: (1/2) : (1/9) = 4,5 daqiqa. Javob: 4 daqiqa 30 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birga-boshlab-biri-ketgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#0007353c"
+    },
+    {
+      "q": "Uch nafar yuk tashuvchi vagonni bo'shatishga birga kirishdi; ular yolg'iz 5, 10 va 10 soatda bo'shatadi. Bir soatdan keyin uchinchisi ketdi. Qolgan ikkisi ishni yana necha soatda tugatadi?",
+      "v": [
+        "3 soat",
+        "1 soat 30 daqiqa",
+        "2 soat",
+        "2 soat 30 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Uchalasining unumi 2/10 + 1/10 + 1/10 = 4/10 = 2/5, bir soatda 2/5 bajarildi. Qolgani 3/5, qolgan ikkisining unumi 2/10 + 1/10 = 3/10. Vaqt (3/5) : (3/10) = 2 soat. Javob: 2 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birga-boshlab-biri-ketgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#504d8472"
+    },
+    {
+      "q": "Ikki kombayn dalani o'rishga birga kirishdi; ular yolg'iz 16 va 48 soatda o'radi. Olti soatdan keyin ikkinchi kombayn buzildi. Birinchisi qolgan ishni necha soatda tugatadi?",
+      "v": [
+        "6 soat",
+        "10 soat",
+        "12 soat",
+        "8 soat"
+      ],
+      "t": 3,
+      "izoh": "Birgalikdagi unum 3/48 + 1/48 = 4/48 = 1/12. Olti soatda 6/12 = 1/2 o'rildi. Qolgan 1/2 ni birinchi kombayn 1/16 unum bilan o'radi: (1/2) : (1/16) = 8 soat. Javob: 8 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birga-boshlab-biri-ketgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#d081a5fb"
+    },
+    {
+      "q": "Anvar va Bekzod navbatma-navbat kunlab ishlaydi: Anvar ishni 20 kunda, Bekzod 30 kunda bajaradi. Ketma-ket ikki kunda ular ishning qanday qismini bajaradi?",
+      "v": [
+        "1/12",
+        "1/25",
+        "1/50",
+        "1/10"
+      ],
+      "t": 0,
+      "izoh": "Birinchi kuni Anvar 1/20, ikkinchi kuni Bekzod 1/30 bajaradi. Ikki kunlik ulush 3/60 + 2/60 = 5/60 = 1/12. Javob: 1/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "navbatma-navbat-ishlash",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#1cc0c1e3"
+    },
+    {
+      "q": "Hovuzga ulangan ikki quvur navbatma-navbat bir soatdan ishlaydi: birinchisi hovuzni 6 soatda, ikkinchisi 12 soatda to'ldiradi. Birinchi quvurdan boshlansa, hovuz necha soatda to'ladi?",
+      "v": [
+        "4 soat",
+        "8 soat",
+        "9 soat",
+        "12 soat"
+      ],
+      "t": 1,
+      "izoh": "Har ikki soatda 1/6 + 1/12 = 3/12 = 1/4 qism to'ladi. To'liq to'lish uchun to'rtta shunday juftlik kerak, ya'ni 4 · 2 = 8 soat. Javob: 8 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "navbatma-navbat-ishlash",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#976edba8"
+    },
+    {
+      "q": "Karim va Davron ishni navbatma-navbat kunlab bajaradi. Karim yolg'iz 10 kunda, Davron 15 kunda uddalaydi. Karim birinchi kuni boshlasa, ish necha kunda tugaydi?",
+      "v": [
+        "6 kun",
+        "25 kun",
+        "12 kun",
+        "11 kun"
+      ],
+      "t": 2,
+      "izoh": "Ikki kunlik ulush 1/10 + 1/15 = 3/30 + 2/30 = 1/6. Butun ish uchun oltita juftlik kerak: 6 · 2 = 12 kun. Javob: 12 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "navbatma-navbat-ishlash",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#70769c91"
+    },
+    {
+      "q": "Anvar ishni 12 kunda, Bekzod 24 kunda bajaradi. Ular navbatma-navbat kunlab ishlaydi va Anvar birinchi kuni boshlaydi. Ish necha kunda to'liq tugaydi?",
+      "v": [
+        "15 kun",
+        "18 kun",
+        "8 kun",
+        "16 kun"
+      ],
+      "t": 3,
+      "izoh": "Ikki kunda 2/24 + 1/24 = 3/24 = 1/8 bajariladi. Yetti juftlikdan keyin, ya'ni 14 kunda 7/8 tayyor. 15-kuni Anvar 2/24 qo'shadi va 23/24 bo'ladi, 16-kuni Bekzod 1/24 ni qo'shib ishni yakunlaydi. Javob: 16 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "navbatma-navbat-ishlash",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#115a5fb1"
+    },
+    {
+      "q": "Birinchi ishchining ish unumi ikkinchisinikidan 2 marta yuqori. Ikkalasi birga ishlab buyurtmani 8 kunda bajardi. Ikkinchi ishchi yolg'iz necha kunda bajaradi?",
+      "v": [
+        "24 kun",
+        "12 kun",
+        "16 kun",
+        "36 kun"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchisining unumini r deb olamiz, birinchisiniki 2r bo'ladi. Yig'indi 3r = 1/8, demak r = 1/24. Ikkinchisi yolg'iz 24 kun ishlaydi. Javob: 24 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "unum-nisbati-berilgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#3e64b19b"
+    },
+    {
+      "q": "Usta shogirdiga qaraganda 3 marta tez ishlaydi. Ular birga bir buyumni 6 soatda yasaydi. Usta yolg'iz o'zi buni necha soatda yasaydi?",
+      "v": [
+        "18 soat",
+        "8 soat",
+        "24 soat",
+        "12 soat"
+      ],
+      "t": 1,
+      "izoh": "Shogird unumi r, usta unumi 3r. Yig'indi 4r = 1/6, bundan r = 1/24. Ustaning unumi 3/24 = 1/8, demak u 8 soat sarflaydi. Javob: 8 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "unum-nisbati-berilgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#59c6585b"
+    },
+    {
+      "q": "Ikki quvurning ish unumlari 2 : 3 nisbatda. Ikkalasi birga bakni 12 daqiqada to'ldiradi. Sekinroq quvur yolg'iz bakni necha daqiqada to'ldiradi?",
+      "v": [
+        "20 daqiqa",
+        "24 daqiqa",
+        "30 daqiqa",
+        "36 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Unumlarni 2k va 3k deb olamiz, ularning yig'indisi 5k = 1/12, demak k = 1/60. Sekinrog'ining unumi 2/60 = 1/30, ya'ni 30 daqiqa. Javob: 30 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "unum-nisbati-berilgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#7cd38f7b"
+    },
+    {
+      "q": "Birinchi brigada bir kunda ikkinchi brigadaga qaraganda 4 marta ko'p ish bajaradi. Birinchi brigada yolg'iz ishni 9 kunda tugatadi. Ikkalasi birga necha kunda tugatadi?",
+      "v": [
+        "4,5 kun",
+        "45 kun",
+        "11,25 kun",
+        "7,2 kun"
+      ],
+      "t": 3,
+      "izoh": "Birinchisining unumi 1/9, ikkinchisiniki 4 marta kam, ya'ni 1/36. Yig'indi 4/36 + 1/36 = 5/36. Vaqt 36 : 5 = 7,2 kun. Javob: 7,2 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "unum-nisbati-berilgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#32029bf5"
+    },
+    {
+      "q": "Bir xil unumga ega 6 nafar ishchi buyurtmani 15 kunda bajaradi. Xuddi shunday 10 nafar ishchi bu buyurtmani necha kunda bajaradi?",
+      "v": [
+        "9 kun",
+        "25 kun",
+        "12 kun",
+        "11 kun"
+      ],
+      "t": 0,
+      "izoh": "Umumiy mehnat hajmi 6 · 15 = 90 ishchi-kun. Bu hajmni 10 ishchiga bo'lamiz: 90 : 10 = 9. Javob: 9 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-xil-ishchilar-soni-va-muddat",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#942bc010"
+    },
+    {
+      "q": "Sakkiz nafar g'isht teruvchi devorni 12 soatda ko'taradi. Xuddi shu devorni 6 soatda ko'tarish uchun nechta shunday ishchi kerak bo'ladi?",
+      "v": [
+        "4 ta",
+        "16 ta",
+        "24 ta",
+        "12 ta"
+      ],
+      "t": 1,
+      "izoh": "Ish hajmi 8 · 12 = 96 ishchi-soat. Uni 6 soatga bo'lamiz: 96 : 6 = 16. Demak 16 nafar ishchi kerak. Javob: 16 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-xil-ishchilar-soni-va-muddat",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#2ca6df41"
+    },
+    {
+      "q": "Bir xil quvvatdagi 5 ta nasos hovuzni 18 daqiqada to'ldiradi. Shulardan faqat 3 tasi ishlasa, hovuz necha daqiqada to'ladi?",
+      "v": [
+        "10,8 daqiqa",
+        "54 daqiqa",
+        "30 daqiqa",
+        "15 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Umumiy hajm 5 · 18 = 90 nasos-daqiqa. Uch nasos uchun vaqt 90 : 3 = 30 daqiqa. Nasos kamaysa vaqt ortadi. Javob: 30 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-xil-ishchilar-soni-va-muddat",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#0a605ec6"
+    },
+    {
+      "q": "O'n ikki traktor dalani 7 kunda haydashi rejalashtirilgan edi. Ishga chiqish oldidan 4 ta traktor buzilib qoldi. Qolgan traktorlar dalani necha kunda haydaydi?",
+      "v": [
+        "21 kun",
+        "3 kun",
+        "14 kun",
+        "10,5 kun"
+      ],
+      "t": 3,
+      "izoh": "Ish hajmi 12 · 7 = 84 traktor-kun. Ishlayotgan traktorlar soni 12 − 4 = 8 ta. Vaqt 84 : 8 = 10,5 kun. Javob: 10,5 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-ishchilar-soni-va-muddat",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#1bcc8cc4"
+    },
+    {
+      "q": "Qurilishga 10 nafar ishchi jalb qilinib, ish 24 kunga mo'ljallangan edi. Olti kun o'tgach yana 5 nafar ishchi qo'shildi. Ish boshidan hisoblaganda necha kunda tugaydi?",
+      "v": [
+        "18 kun",
+        "16 kun",
+        "12 kun",
+        "20 kun"
+      ],
+      "t": 0,
+      "izoh": "Umumiy hajm 10 · 24 = 240 ishchi-kun. Birinchi 6 kunda 60 bajarildi, qolgani 180. Endi 15 ishchi ishlaydi: 180 : 15 = 12 kun. Jami 6 + 12 = 18 kun. Javob: 18 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshimcha-ishchi-muddatni-qisqartirish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#aaea9a9f"
+    },
+    {
+      "q": "Sakkiz nafar ishchi buyurtmani 18 kunda bajaradi. Buyurtmani 12 kunda tugatish uchun nechta qo'shimcha ishchi yollash kerak?",
+      "v": [
+        "12 ta",
+        "4 ta",
+        "6 ta",
+        "2 ta"
+      ],
+      "t": 1,
+      "izoh": "Ish hajmi 8 · 18 = 144 ishchi-kun. O'n ikki kunda tugatish uchun 144 : 12 = 12 ishchi kerak. Qo'shimcha ishchi 12 − 8 = 4 ta. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshimcha-ishchi-muddatni-qisqartirish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#f44ec202"
+    },
+    {
+      "q": "Sex kuniga 60 ta detal chiqarib, buyurtmani 15 kunda bajaradi. Agar sex kuniga 90 tadan detal chiqarsa, buyurtma necha kun oldin tugaydi?",
+      "v": [
+        "10 kun",
+        "6 kun",
+        "5 kun",
+        "4 kun"
+      ],
+      "t": 2,
+      "izoh": "Buyurtma hajmi 60 · 15 = 900 ta detal. Yangi muddat 900 : 90 = 10 kun. Tejalgan vaqt 15 − 10 = 5 kun. Javob: 5 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshimcha-ishchi-muddatni-qisqartirish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#d29812bf"
+    },
+    {
+      "q": "Yigirma nafar ishchi ishni 9 kunda tugatishi kerak edi. Uch kun o'tgach 5 nafari boshqa ob'yektga o'tkazildi. Ish boshidan hisoblaganda necha kunda tugaydi?",
+      "v": [
+        "12 kun",
+        "9 kun",
+        "10 kun",
+        "11 kun"
+      ],
+      "t": 3,
+      "izoh": "Umumiy hajm 20 · 9 = 180 ishchi-kun. Uch kunda 60 bajarildi, qolgani 120. Qolgan 15 ishchi uchun 120 : 15 = 8 kun. Jami 3 + 8 = 11 kun. Javob: 11 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshimcha-ishchi-muddatni-qisqartirish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#7ce6cbd9"
+    },
+    {
+      "q": "Anvar ishni yolg'iz 12 kunda, Bekzod 24 kunda bajaradi. Ular birga ishlab 900 000 so'm haq oldi. Haq bajarilgan ish hajmiga qarab bo'linsa, Anvar qancha oladi?",
+      "v": [
+        "600 000 so'm",
+        "450 000 so'm",
+        "300 000 so'm",
+        "500 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Kunlik unumlar 1/12 va 1/24, ularning nisbati 2 : 1. Demak haq uch ulushga bo'linadi va Anvarga ikkitasi tegadi: 900 000 : 3 = 300 000, undan 2 · 300 000 = 600 000. Javob: 600 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-haqini-hissaga-qarab-taqsimlash",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#7e20e619"
+    },
+    {
+      "q": "Ikki usta birga bajargan ish uchun 1 200 000 so'm to'landi. Birinchi usta bu ishni yolg'iz 10 kunda, ikkinchisi 15 kunda bajaradi. Ikkinchi ustaga qancha to'g'ri keladi?",
+      "v": [
+        "720 000 so'm",
+        "480 000 so'm",
+        "600 000 so'm",
+        "400 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Unumlar 1/10 va 1/15, nisbati 3 : 2. Jami besh ulush, bir ulush 1 200 000 : 5 = 240 000 so'm. Ikkinchi ustaga ikki ulush: 2 · 240 000 = 480 000. Javob: 480 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-haqini-hissaga-qarab-taqsimlash",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#5f14a26c"
+    },
+    {
+      "q": "Uch ishchi birga ishladi: ular bu ishni yolg'iz 6, 12 va 12 kunda bajaradi. Jami 840 000 so'm haq bajarilgan hajmga qarab bo'lindi. Birinchi ishchiga qancha tegadi?",
+      "v": [
+        "280 000 so'm",
+        "210 000 so'm",
+        "420 000 so'm",
+        "360 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Unumlar 1/6, 1/12 va 1/12, ularning nisbati 2 : 1 : 1. Jami to'rt ulush, bir ulush 840 000 : 4 = 210 000 so'm. Birinchisiga ikki ulush: 420 000. Javob: 420 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-haqini-hissaga-qarab-taqsimlash",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#66caff7d"
+    },
+    {
+      "q": "Suv omborini ikki quvur birga to'ldirdi: birinchisi yolg'iz 8 soatda, ikkinchisi 24 soatda to'ldiradi. Ombordagi suvning qancha qismini birinchi quvur quygan?",
+      "v": [
+        "1/4",
+        "2/3",
+        "1/2",
+        "3/4"
+      ],
+      "t": 3,
+      "izoh": "Unumlar 1/8 va 1/24, nisbati 3 : 1. Jami to'rt ulushdan uchtasi birinchi quvurga tegadi, ya'ni 3/4. Javob: 3/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-haqini-hissaga-qarab-taqsimlash",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#85708f5f"
+    },
+    {
+      "q": "Ishchi buyurtmani 30 kunda bajaradi. Yangi asbob olgach uning ish unumi 25% ga oshdi. Endi u buyurtmani necha kunda bajaradi?",
+      "v": [
+        "24 kun",
+        "22,5 kun",
+        "37,5 kun",
+        "20 kun"
+      ],
+      "t": 0,
+      "izoh": "Unum 1,25 barobar oshsa, vaqt shuncha marta kamayadi. Demak 30 : 1,25 = 24 kun. Javob: 24 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "unumni-foizga-oshirish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#46ee0ad9"
+    },
+    {
+      "q": "Nasos hovuzni 36 daqiqada to'ldiradi. Filtri ifloslangani uchun nasosning unumi 20% ga pasaydi. Endi hovuz necha daqiqada to'ladi?",
+      "v": [
+        "43,2 daqiqa",
+        "45 daqiqa",
+        "28,8 daqiqa",
+        "40 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Yangi unum eskisining 0,8 qismini tashkil qiladi. Vaqt esa teskari o'zgaradi: 36 : 0,8 = 45 daqiqa. Javob: 45 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "unumni-foizga-oshirish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#cec1ea08"
+    },
+    {
+      "q": "Brigada ishni 40 kunda bajarishi kerak edi. Yangi texnika olingach uning unumi 60% ga oshdi. Brigada necha kun tejaydi?",
+      "v": [
+        "25 kun",
+        "24 kun",
+        "15 kun",
+        "16 kun"
+      ],
+      "t": 2,
+      "izoh": "Unum 1,6 barobar oshdi, demak yangi muddat 40 : 1,6 = 25 kun. Tejalgan vaqt 40 − 25 = 15 kun. Javob: 15 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "unumni-foizga-oshirish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#da727994"
+    },
+    {
+      "q": "Ikki ishchi birga ishlab buyurtmani 10 soatda bajaradi. Agar ikkalasi ham o'z unumini 2 barobar oshirsa, buyurtma necha soatda tayyor bo'ladi?",
+      "v": [
+        "20 soat",
+        "10 soat",
+        "2,5 soat",
+        "5 soat"
+      ],
+      "t": 3,
+      "izoh": "Birgalikdagi unum 1/10 edi, u 2 barobar oshsa 2/10 = 1/5 bo'ladi. Vaqt esa 1 : (1/5) = 5 soat. Javob: 5 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "unumni-foizga-oshirish",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#1318f39b"
+    },
+    {
+      "q": "Birinchi quvur hovuzni 12 soatda, ikkinchisi 6 soatda to'ldiradi. Birinchi quvur 4 soat ishlagach yopildi va o'rniga ikkinchisi ochildi. Ikkinchi quvur qolgan qismni necha soatda to'ldiradi?",
+      "v": [
+        "4 soat",
+        "8 soat",
+        "2 soat",
+        "6 soat"
+      ],
+      "t": 0,
+      "izoh": "Birinchi quvur 4 soatda 4/12 = 1/3 qismini to'ldirdi, qolgani 2/3. Ikkinchisining unumi 1/6, shuning uchun (2/3) : (1/6) = 4 soat kerak. Javob: 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-quvur-navbat-bilan-ishlaydi",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#2dcdbf8f"
+    },
+    {
+      "q": "Bir brigada yo'lning 3/7 qismini yotqizdi va ishni to'xtatdi. Qolgan qismni ikkinchi brigada yolg'iz 8 kunda tugatdi. Ikkinchi brigada butun yo'lni necha kunda yotqizadi?",
+      "v": [
+        "18 kun",
+        "14 kun",
+        "6 kun",
+        "24 kun"
+      ],
+      "t": 1,
+      "izoh": "Qolgan qism 1 − 3/7 = 4/7 va u 8 kunda bajarilgan. Demak 1/7 qismga 8 : 4 = 2 kun ketadi, butun yo'lga 7 · 2 = 14 kun. Javob: 14 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-quvur-navbat-bilan-ishlaydi",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#595a0992"
+    },
+    {
+      "q": "Usta ishning yarmini 9 soatda bajardi, qolgan yarmini esa shogirdi 15 soatda tugatdi. Agar ular boshidan birga ishlaganda, ish qancha vaqtda tugagan bo'lardi?",
+      "v": [
+        "12 soat",
+        "24 soat",
+        "11 soat 15 daqiqa",
+        "5 soat 37 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Usta yarmiga 9 soat sarflagan, demak butun ishga 18 soat kerak; shogirdga esa 30 soat. Birgalikdagi unum 5/90 + 3/90 = 8/90 = 4/45. Vaqt 45 : 4 = 11,25 soat, ya'ni 11 soat 15 daqiqa. Javob: 11 soat 15 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-quvur-navbat-bilan-ishlaydi",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#9cc0a13a"
+    },
+    {
+      "q": "Birinchi quvur 5 soat ishlab suv omborining 1/4 qismini to'ldirdi va yopildi. Qolgan qismni ikkinchi quvur yolg'iz 9 soatda to'ldirdi. Ikkinchi quvur butun omborni necha soatda to'ldiradi?",
+      "v": [
+        "9 soat",
+        "20 soat",
+        "36 soat",
+        "12 soat"
+      ],
+      "t": 3,
+      "izoh": "Qolgan qism 1 − 1/4 = 3/4 va u 9 soatda to'lgan. Demak 1/4 qismga 9 : 3 = 3 soat ketadi, butun omborga 4 · 3 = 12 soat. Javob: 12 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-quvur-navbat-bilan-ishlaydi",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#451030aa"
+    },
+    {
+      "q": "Uch usta bir ishni juft-juft bajaradi: birinchi va ikkinchisi 12 soatda, ikkinchi va uchinchisi 15 soatda, birinchi va uchinchisi 20 soatda tugatadi. Uchalasi birga ishlasa, ish necha soatda tugaydi?",
+      "v": [
+        "10 soat",
+        "5 soat",
+        "16 soat",
+        "20 soat"
+      ],
+      "t": 0,
+      "izoh": "Uchta juftlikning unumini qo'shsak, har bir usta ikki marta hisobga olinadi: 5/60 + 4/60 + 3/60 = 12/60 = 1/5. Bu ikkilangan unum, demak uchalasiniki 1/10. Vaqt 10 soat. Javob: 10 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-juft-berilgan-uch-quvur",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#178edc3f"
+    },
+    {
+      "q": "Uch usta juft-juft ishlaganda ishni 12, 15 va 20 soatda tugatadi (mos ravishda birinchi-ikkinchi, ikkinchi-uchinchi va birinchi-uchinchi juftliklar). Birinchi usta yolg'iz necha soatda tugatadi?",
+      "v": [
+        "20 soat",
+        "30 soat",
+        "60 soat",
+        "24 soat"
+      ],
+      "t": 1,
+      "izoh": "Avval uchalasining unumi topiladi: (5/60 + 4/60 + 3/60) : 2 = 1/10. Ikkinchi va uchinchining unumi 1/15. Birinchisiniki 1/10 − 1/15 = 3/30 − 2/30 = 1/30, ya'ni 30 soat. Javob: 30 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-juft-berilgan-uch-quvur",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#83b464d4"
+    },
+    {
+      "q": "Birinchi va ikkinchi ishchi birga ishni 8 kunda bajaradi, birinchisi yolg'iz esa 12 kunda. Ikkinchi va uchinchi ishchi birga ishni 6 kunda bajaradi. Uchinchi ishchi yolg'iz necha kunda bajaradi?",
+      "v": [
+        "24 kun",
+        "12 kun",
+        "8 kun",
+        "10 kun"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchisining unumi 1/8 − 1/12 = 3/24 − 2/24 = 1/24. Uchinchisiniki 1/6 − 1/24 = 4/24 − 1/24 = 3/24 = 1/8. Demak u yolg'iz 8 kun ishlaydi. Javob: 8 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-juft-berilgan-uch-quvur",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#1558f156"
+    },
+    {
+      "q": "Bakka uchta quvur ulangan. Birinchi va ikkinchisi birga bakni 10 daqiqada, ikkinchi va uchinchisi 12 daqiqada, uchalasi esa 8 daqiqada to'ldiradi. Uchinchi quvur yolg'iz necha daqiqada to'ldiradi?",
+      "v": [
+        "24 daqiqa",
+        "20 daqiqa",
+        "30 daqiqa",
+        "40 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Uchalasining unumi 1/8, birinchi va ikkinchisiniki 1/10. Uchinchisining unumi ularning ayirmasi: 5/40 − 4/40 = 1/40. Demak u yolg'iz 40 daqiqa sarflaydi. Javob: 40 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-juft-berilgan-uch-quvur",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#7a6ce82d"
+    },
+    {
+      "q": "Usta soatiga 12 ta, shogirdi esa soatiga 8 ta detal tayyorlaydi. Ular birga ishlab 300 ta detalni necha soatda tayyorlaydi?",
+      "v": [
+        "15 soat",
+        "20 soat",
+        "25 soat",
+        "12 soat"
+      ],
+      "t": 0,
+      "izoh": "Birgalikdagi soatlik unum 12 + 8 = 20 ta detal. Buyurtma hajmini unumga bo'lamiz: 300 : 20 = 15. Javob: 15 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-hajmi-donada-berilgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#8a6cbe37"
+    },
+    {
+      "q": "Qadoqlash sexida birinchi mashina soatiga 45 ta, ikkinchisi 30 ta qutini to'ldiradi. Ikkala mashina birga ishlab 600 ta qutini qancha vaqtda to'ldiradi?",
+      "v": [
+        "10 soat",
+        "8 soat",
+        "13 soat 20 daqiqa",
+        "20 soat"
+      ],
+      "t": 1,
+      "izoh": "Birgalikdagi unum 45 + 30 = 75 ta quti soatiga. Kerakli vaqt 600 : 75 = 8 soat. Javob: 8 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-hajmi-donada-berilgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#3fed2565"
+    },
+    {
+      "q": "Ikki tikuvchi birga kuniga 35 ta ko'ylak tikadi. Birinchi tikuvchi yolg'iz kuniga 20 ta tiksa, ikkinchisi 420 ta ko'ylakni necha kunda tikadi?",
+      "v": [
+        "21 kun",
+        "12 kun",
+        "28 kun",
+        "14 kun"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi tikuvchining kunlik unumi 35 − 20 = 15 ta ko'ylak. Buyurtma uchun 420 : 15 = 28 kun kerak. Javob: 28 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-hajmi-donada-berilgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#8dd6a3cf"
+    },
+    {
+      "q": "Bir nasos daqiqasiga 40 litr, ikkinchisi 60 litr suv quyadi. Hajmi 3000 litr bo'lgan sisternani ikkalasi birga necha daqiqada to'ldiradi?",
+      "v": [
+        "50 daqiqa",
+        "75 daqiqa",
+        "20 daqiqa",
+        "30 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Nasoslarning umumiy unumi 40 + 60 = 100 litr daqiqasiga. Sisterna uchun 3000 : 100 = 30 daqiqa kerak. Javob: 30 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-hajmi-donada-berilgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#8f8d4d76"
+    },
+    {
+      "q": "Hovuzning 1/3 qismi suvga to'la. Quvur bo'sh hovuzni 24 daqiqada to'ldiradi. Hovuzni to'liq to'ldirish uchun yana necha daqiqa kerak?",
+      "v": [
+        "16 daqiqa",
+        "8 daqiqa",
+        "24 daqiqa",
+        "18 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "To'ldirilishi kerak bo'lgan qism 1 − 1/3 = 2/3. Bu qism uchun 24 · (2/3) = 16 daqiqa kerak. Javob: 16 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hovuz-qisman-toldirilgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#d21bad75"
+    },
+    {
+      "q": "Sisternaning 40% i suvga to'la. Ikki quvur birga bo'sh sisternani 25 daqiqada to'ldiradi. Ular qolgan qismni necha daqiqada to'ldiradi?",
+      "v": [
+        "10 daqiqa",
+        "15 daqiqa",
+        "12,5 daqiqa",
+        "20 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Qolgan qism 100% − 40% = 60%, ya'ni 0,6 ulush. Kerakli vaqt 25 · 0,6 = 15 daqiqa. Javob: 15 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hovuz-qisman-toldirilgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#5b8a4776"
+    },
+    {
+      "q": "Bak yarmigacha to'la. To'ldiruvchi quvur bo'sh bakni 18 daqiqada to'ldiradi, bo'shatuvchisi esa to'lasini 30 daqiqada bo'shatadi. Ikkalasi ochilsa, bak qancha vaqtda to'ladi?",
+      "v": [
+        "45 daqiqa",
+        "24 daqiqa",
+        "22 daqiqa 30 soniya",
+        "11 daqiqa 15 soniya"
+      ],
+      "t": 2,
+      "izoh": "Sof unum 1/18 − 1/30 = 5/90 − 3/90 = 2/90 = 1/45. To'ldirish kerak bo'lgan qism 1/2, demak vaqt 45 · (1/2) = 22,5 daqiqa. Javob: 22 daqiqa 30 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hovuz-qisman-toldirilgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#1d8365a0"
+    },
+    {
+      "q": "Omborning 5/8 qismi g'alla bilan to'ldirilgan. Yuk tashuvchi brigada bo'sh omborni 32 soatda to'ldiradi. Qolgan qismni to'ldirishga necha soat ketadi?",
+      "v": [
+        "20 soat",
+        "8 soat",
+        "15 soat",
+        "12 soat"
+      ],
+      "t": 3,
+      "izoh": "Qolgan qism 1 − 5/8 = 3/8. Kerakli vaqt 32 · (3/8) = 12 soat. Javob: 12 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hovuz-qisman-toldirilgan",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#2762992e"
+    },
+    {
+      "q": "Anvar hovlini tozalashni 18 soatda, Bekzod esa 9 soatda bajaradi. Ular birga ishlasa, Anvarning yolg'iz sarflaydigan vaqtiga nisbatan necha soat tejaladi?",
+      "v": [
+        "12 soat",
+        "6 soat",
+        "3 soat",
+        "9 soat"
+      ],
+      "t": 0,
+      "izoh": "Birgalikdagi unum 1/18 + 2/18 = 3/18 = 1/6, ya'ni birga 6 soat ketadi. Anvar yolg'iz 18 soat sarflaydi, tejalgan vaqt 18 − 6 = 12 soat. Javob: 12 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birga-ishlash-tejalgan-vaqt",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#4be96742"
+    },
+    {
+      "q": "Ikki quvur bakni alohida 21 va 28 daqiqada to'ldiradi. Ikkalasi birga ochilsa, tezroq quvurning yolg'iz vaqtiga nisbatan necha daqiqa tejaladi?",
+      "v": [
+        "12 daqiqa",
+        "9 daqiqa",
+        "16 daqiqa",
+        "7 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Birgalikdagi unum 4/84 + 3/84 = 7/84 = 1/12, ya'ni birga 12 daqiqa ketadi. Tezroq quvur yolg'iz 21 daqiqa sarflaydi, tejalgan vaqt 21 − 12 = 9 daqiqa. Javob: 9 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birga-ishlash-tejalgan-vaqt",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#acd2a79e"
+    },
+    {
+      "q": "Birinchi brigada omborni 24 kunda, ikkinchisi 8 kunda quradi. Birga qurilganda ikkinchi brigadaning yolg'iz muddatiga nisbatan necha kun tejaladi?",
+      "v": [
+        "6 kun",
+        "16 kun",
+        "2 kun",
+        "18 kun"
+      ],
+      "t": 2,
+      "izoh": "Birgalikdagi unum 1/24 + 3/24 = 4/24 = 1/6, ya'ni birga 6 kun ketadi. Ikkinchi brigada yolg'iz 8 kun sarflaydi, tejalgan vaqt 8 − 6 = 2 kun. Javob: 2 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birga-ishlash-tejalgan-vaqt",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#cef4f477"
+    },
+    {
+      "q": "Ikki nasos suv omborini alohida 40 va 60 daqiqada bo'shatadi. Birga ishlaganda ular bu ikki muddatning o'rta arifmetigiga nisbatan necha daqiqa tez bo'shatadi?",
+      "v": [
+        "24 daqiqa",
+        "20 daqiqa",
+        "16 daqiqa",
+        "26 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Birgalikdagi unum 3/120 + 2/120 = 5/120 = 1/24, ya'ni birga 24 daqiqa ketadi. Muddatlarning o'rta arifmetigi (40 + 60) : 2 = 50 daqiqa. Farq 50 − 24 = 26 daqiqa. Javob: 26 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birga-ishlash-tejalgan-vaqt",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#94d7cc94"
+    },
+    {
+      "q": "Bir ustaning ish unumi uch nafar shogirdning umumiy unumiga teng. Usta buyurtmani yolg'iz 12 kunda bajaradi. Bitta shogird buyurtmani yolg'iz necha kunda bajaradi?",
+      "v": [
+        "36 kun",
+        "4 kun",
+        "24 kun",
+        "15 kun"
+      ],
+      "t": 0,
+      "izoh": "Ustaning kunlik unumi 1/12 va u uch shogirdga teng. Demak bitta shogirdning unumi (1/12) : 3 = 1/36. U yolg'iz 36 kun ishlaydi. Javob: 36 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "unumi-teng-ishchilar-ekvivalenti",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#16b223b8"
+    },
+    {
+      "q": "Katta ekskavatorning quvvati ikkita kichik ekskavator quvvatiga teng. Katta ekskavator kotlovanni 15 soatda qaziydi. Bitta katta va bitta kichik ekskavator birga qazisa, necha soat ketadi?",
+      "v": [
+        "7 soat 30 daqiqa",
+        "10 soat",
+        "20 soat",
+        "12 soat"
+      ],
+      "t": 1,
+      "izoh": "Katta ekskavatorning unumi 1/15, kichigi esa ikki marta kam, ya'ni 1/30. Yig'indi 2/30 + 1/30 = 3/30 = 1/10. Vaqt 10 soat. Javob: 10 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "unumi-teng-ishchilar-ekvivalenti",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#af4f4db9"
+    },
+    {
+      "q": "Bitta yirik nasos to'rtta kichik nasosga teng quvvatga ega. Ikki yirik va to'rt kichik nasos birga hovuzni 3 soatda to'ldiradi. Bitta yirik nasos yolg'iz hovuzni necha soatda to'ldiradi?",
+      "v": [
+        "12 soat",
+        "6 soat",
+        "9 soat",
+        "18 soat"
+      ],
+      "t": 2,
+      "izoh": "Hammasini kichik nasos birligida hisoblaymiz: 2 yirik 8 birlikka, 4 kichik 4 birlikka teng, jami 12 birlik. Hovuz hajmi 12 · 3 = 36 birlik-soat. Yirik nasos 4 birlik bo'lgani uchun 36 : 4 = 9 soat. Javob: 9 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "unumi-teng-ishchilar-ekvivalenti",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#99b37e4e"
+    },
+    {
+      "q": "Anvarning ish unumi Bekzodnikidan 1,5 marta yuqori. Anvar buyurtmani yolg'iz 16 kunda bajaradi. Bekzod bu buyurtmani yolg'iz necha kunda bajaradi?",
+      "v": [
+        "32 kun",
+        "20 kun",
+        "12 kun",
+        "24 kun"
+      ],
+      "t": 3,
+      "izoh": "Anvarning kunlik unumi 1/16. Bekzodniki 1,5 marta kam: (1/16) : 1,5 = 1/24. Demak Bekzodga 24 kun kerak. Javob: 24 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "unumi-teng-ishchilar-ekvivalenti",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#20def4b0"
+    },
+    {
+      "q": "Bir xil quvvatdagi uchta nasos hovuzni 12 soatda to'ldiradi. To'ldirish boshlangandan 4 soat o'tgach bitta nasos ishdan chiqdi. Hovuz boshidan hisoblaganda necha soatda to'ladi?",
+      "v": [
+        "16 soat",
+        "18 soat",
+        "14 soat",
+        "20 soat"
+      ],
+      "t": 0,
+      "izoh": "Uch nasosning unumi 1/12, bittasiniki 1/36. To'rt soatda 4/12 = 1/3 to'ldi, qolgani 2/3. Ikki nasosning unumi 2/36 = 1/18, demak qolgan qismga (2/3) · 18 = 12 soat ketadi. Jami 4 + 12 = 16 soat. Javob: 16 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-vaziyat-tahlil",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#11cc4efe"
+    },
+    {
+      "q": "Ikki ishchi birga ishni 15 kunda bajaradi. Agar birinchi ishchi ikki barobar tez ishlaganda, ular ishni 10 kunda tugatgan bo'lardi. Birinchi ishchi yolg'iz necha kunda bajaradi?",
+      "v": [
+        "20 kun",
+        "30 kun",
+        "45 kun",
+        "25 kun"
+      ],
+      "t": 1,
+      "izoh": "Unumlarni a va b deb olamiz: a + b = 1/15, ikkilangan holda 2a + b = 1/10. Ikkinchi tenglikdan birinchisini ayiramiz: a = 1/10 − 1/15 = 3/30 − 2/30 = 1/30. Demak birinchi ishchi 30 kun ishlaydi. Javob: 30 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-vaziyat-tahlil",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#254b1f1a"
+    },
+    {
+      "q": "Ikki quvur birga hovuzni 15 daqiqada to'ldiradi. Birinchi quvur yolg'iz ishlaganda ikkinchisiga qaraganda 16 daqiqa kam vaqt sarflaydi. Birinchi quvur yolg'iz necha daqiqada to'ldiradi?",
+      "v": [
+        "40 daqiqa",
+        "30 daqiqa",
+        "24 daqiqa",
+        "20 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Birinchi quvurning vaqti x, ikkinchisiniki x + 16. Shart bo'yicha 1/x + 1/(x + 16) = 1/15, bundan 15(x + 16) + 15x = x(x + 16). Soddalashtirsak x² − 14x − 240 = 0, D = 1156 va x = (14 + 34) : 2 = 24. Javob: 24 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-vaziyat-tahlil",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#ba6e6b8e"
+    },
+    {
+      "q": "Bir xil unumdagi ikkita brigada ishni 24 kunda bajaradi. Ish boshlangandan 6 kun o'tgach uchinchi shunday brigada qo'shildi. Ish boshidan hisoblaganda necha kunda tugaydi?",
+      "v": [
+        "20 kun",
+        "16 kun",
+        "22 kun",
+        "18 kun"
+      ],
+      "t": 3,
+      "izoh": "Ikki brigadaning unumi 1/24, bittasiniki 1/48. Olti kunda 6/24 = 1/4 bajarildi, qolgani 3/4. Uch brigadaning unumi 3/48 = 1/16, demak qolgan qismga (3/4) · 16 = 12 kun ketadi. Jami 6 + 12 = 18 kun. Javob: 18 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-vaziyat-tahlil",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#63269823"
+    },
+    {
+      "q": "Buyurtmachiga ikki taklif keldi: A brigada ishni 15 kunda 9 000 000 so'mga, B brigada esa 12 kunda 12 000 000 so'mga bajaradi. Kunlik xarajat bo'yicha qaysi taklif arzon va farq qancha?",
+      "v": [
+        "A brigada, 400 000 so'mga arzon",
+        "B brigada, 400 000 so'mga arzon",
+        "A brigada, 3 000 000 so'mga arzon",
+        "B brigada, 250 000 so'mga arzon"
+      ],
+      "t": 0,
+      "izoh": "A brigadaning kunlik xarajati 9 000 000 : 15 = 600 000 so'm. B brigadaniki 12 000 000 : 12 = 1 000 000 so'm. Farq 1 000 000 − 600 000 = 400 000 so'm, arzoni A brigada. Javob: A brigada, 400 000 so'mga arzon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-samarali-tanlov-tahlili",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#dc79eaaf"
+    },
+    {
+      "q": "Uchta nasosdan faqat ikkitasini ulash mumkin: ular hovuzni alohida 20, 30 va 60 soatda to'ldiradi. Eng tez juftlik tanlansa, hovuz necha soatda to'ladi?",
+      "v": [
+        "10 soat",
+        "12 soat",
+        "15 soat",
+        "20 soat"
+      ],
+      "t": 1,
+      "izoh": "Eng tez juftlik unumi eng katta bo'lgani, ya'ni 20 va 30 soatlik nasoslar. Ularning unumi 3/60 + 2/60 = 5/60 = 1/12. Demak hovuz 12 soatda to'ladi. Javob: 12 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-samarali-tanlov-tahlili",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#2666f954"
+    },
+    {
+      "q": "Zavodga ikki variant taklif qilindi: bitta katta stanok kuniga 150 ta detal chiqaradi va ijarasi kuniga 900 000 so'm; uchta kichik stanok esa har biri kuniga 60 tadan chiqaradi va ijarasi har biriga kuniga 400 000 so'm. 1800 ta detal uchun qaysi variant arzon?",
+      "v": [
+        "Kichik stanoklar, 1 200 000 so'mga arzon",
+        "Ikkala variant bir xil",
+        "Katta stanok, 1 200 000 so'mga arzon",
+        "Katta stanok, 2 400 000 so'mga arzon"
+      ],
+      "t": 2,
+      "izoh": "Katta stanok 1800 : 150 = 12 kun ishlaydi va 12 · 900 000 = 10 800 000 so'm turadi. Uchta kichigi kuniga 180 ta chiqaradi, ya'ni 10 kun; ijara 10 · 1 200 000 = 12 000 000 so'm. Farq 1 200 000 so'm, arzoni katta stanok. Javob: katta stanok, 1 200 000 so'mga arzon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-samarali-tanlov-tahlili",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#e6205eb2"
+    },
+    {
+      "q": "Ishni A usta 10 soatda, B usta esa 15 soatda bajaradi. Buyurtmachi ishni 8 soat ichida topshirishni talab qilmoqda. Qaysi yechim muddatga yetadi?",
+      "v": [
+        "A usta yolg'iz, 10 soat",
+        "B usta yolg'iz, 15 soat",
+        "Hech qanday yechim yetmaydi",
+        "Ikkalasi birga, 6 soat"
+      ],
+      "t": 3,
+      "izoh": "A yolg'iz 10 soat, B yolg'iz 15 soat sarflaydi va ikkalasi ham 8 soatdan ko'p. Birgalikdagi unum 3/30 + 2/30 = 5/30 = 1/6, ya'ni 6 soat. Faqat shu variant 8 soatga sig'adi. Javob: ikkalasi birga, 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-samarali-tanlov-tahlili",
+      "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar#8c1f91cd"
+    }
+  ]
+}

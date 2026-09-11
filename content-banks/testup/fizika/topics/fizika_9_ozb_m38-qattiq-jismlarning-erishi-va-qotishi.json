@@ -1,0 +1,486 @@
+{
+  "nom": "38-mavzu. Qattiq Jismlarning Erishi Va Qotishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Erish deb qanday jarayonga aytiladi?",
+      "v": [
+        "Moddaning qattiq holatdan suyuq holatga o'tish jarayoniga",
+        "Moddaning suyuq holatdan gaz holatga o'tish jarayoniga",
+        "Moddaning suyuq holatdan qattiq holatga o'tish jarayoniga",
+        "Moddaning gaz holatdan suyuq holatga o'tish jarayoniga"
+      ],
+      "t": 0,
+      "izoh": "Darslikda moddaning qattiq holatdan suyuq holatga o'tish jarayoni erish deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#b59e3d71"
+    },
+    {
+      "q": "Kristall jismni eritish uchun unga issiqlik berib, uning temperaturasini oshirib boriladi. Kristall jism qachon eriy boshlaydi?",
+      "v": [
+        "Temperaturasi ma'lum (erish) temperaturaga yetganda",
+        "Issiqlik berilishi bilanoq darhol",
+        "Temperaturasi qaynash temperaturasiga yetganda",
+        "Uning massasi kamayganda"
+      ],
+      "t": 0,
+      "izoh": "Kristall jism temperaturasi ma'lum temperaturaga yetganda eriy boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#9c5e241e"
+    },
+    {
+      "q": "Kristall jismning erish temperaturasi deb nimaga aytiladi?",
+      "v": [
+        "Kristall jismning erish jarayonidagi temperaturasiga",
+        "Kristall jism qaynay boshlagan temperaturaga",
+        "Kristall jism soviy boshlagan temperaturaga",
+        "Kristall jism eng yuqori qizdirilgan temperaturaga"
+      ],
+      "t": 0,
+      "izoh": "Kristall jismning erish jarayonidagi temperaturasi shu kristallning erish temperaturasi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#3c453cad"
+    },
+    {
+      "q": "Qo'rg'oshinning erish temperaturasi qancha?",
+      "v": [
+        "327 °C (600 K)",
+        "232 °C",
+        "420 °C",
+        "660 °C"
+      ],
+      "t": 0,
+      "izoh": "Qo'rg'oshin temperaturasi 327 °C (600 K) ga yetganda eriy boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#17fcc186"
+    },
+    {
+      "q": "Erish issiqligi deb qanday issiqlikka aytiladi?",
+      "v": [
+        "Erish temperaturasidagi kristall jismni butunlay suyuqlikka aylantirish uchun sarf bo'lgan issiqlik miqdoriga",
+        "Jismni qaynash temperaturasiga yetkazish uchun sarf bo'lgan issiqlikka",
+        "Jismni xonaning temperaturasigacha qizdirish uchun sarf bo'lgan issiqlikka",
+        "Suyuqlikni bug'ga aylantirish uchun sarf bo'lgan issiqlikka"
+      ],
+      "t": 0,
+      "izoh": "Erish temperaturasidagi kristall jismni butunlay suyuqlikka aylantirish uchun sarf bo'lgan issiqlik miqdori erish issiqligi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#30725ad5"
+    },
+    {
+      "q": "Darslikdagi misolda 0,1 kg qo'rg'oshinni 27 °C dan 327 °C gacha qizdirish uchun qancha issiqlik sarflangan?",
+      "v": [
+        "3,9 kJ",
+        "6,4 kJ",
+        "1,3 kJ",
+        "0,39 kJ"
+      ],
+      "t": 0,
+      "izoh": "Q = cm(T₂−T₁) = 130·0,1·(600−300) = 3900 J = 3,9 kJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#f83937a4"
+    },
+    {
+      "q": "53-rasmdagi grafikning A–B qismida qanday jarayon sodir bo'ladi?",
+      "v": [
+        "Qo'rg'oshin eriydi, temperaturasi o'zgarmaydi",
+        "Qo'rg'oshin qiziydi, temperaturasi ortadi",
+        "Suyuq qo'rg'oshin qiziydi",
+        "Qo'rg'oshin qotadi"
+      ],
+      "t": 0,
+      "izoh": "A–B qismida berilgan issiqlik kristall panjarani yemiradi, kristall eriydi, temperatura o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#078f93dc"
+    },
+    {
+      "q": "Erish jarayonida (grafikning A–B qismida) berilgan issiqlik nimaga sarflanadi?",
+      "v": [
+        "Kristall panjarani parchalashga, atomlar orasidagi o'zaro ta'sirni kamaytirishga",
+        "Atomlarning harakat tezligini oshirishga",
+        "Jismning hajmini kichraytirishga",
+        "Jismni atrof-muhitdan izolyatsiya qilishga"
+      ],
+      "t": 0,
+      "izoh": "Bu energiya kristall panjarasini parchalashga, atomlari orasidagi o'zaro ta'sirni kamaytirishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#334972d4"
+    },
+    {
+      "q": "53-rasm grafikning B–C qismida berilgan issiqlik nimaga sarflanadi?",
+      "v": [
+        "Suyuq holatdagi qo'rg'oshin atomlarining harakat tezligini oshirishga, ya'ni kinetik energiyasini oshirishga",
+        "Kristall panjarani parchalashga",
+        "Jismni qotirishga",
+        "Atomlarning potensial energiyasini kamaytirishga"
+      ],
+      "t": 0,
+      "izoh": "Qo'rg'oshin suyuqlikka to'liq aylanib bo'lgandan keyin berilgan issiqlik atomlarning kinetik energiyasini oshirishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#26afebff"
+    },
+    {
+      "q": "Suyuq qo'rg'oshin soviy borib 327 °C ga yetganda nima sodir bo'ladi?",
+      "v": [
+        "Temperaturasi o'zgarmay qoladi, qo'rg'oshindan issiqlik ajralib chiqishi davom etadi",
+        "Temperaturasi darhol pasaya boshlaydi",
+        "Qo'rg'oshin qaynay boshlaydi",
+        "Issiqlik almashinuvi to'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "327 °C qo'rg'oshinning qotish temperaturasi; bu temperaturada u o'zgarmay qolib, issiqlik ajralishda davom etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#b598b061"
+    },
+    {
+      "q": "Moddaning qotishi yoki kristallanishi deb qanday jarayonga aytiladi?",
+      "v": [
+        "Suyuq jism atomlarining kinetik energiyasi kamayib, atomlar tartibli joylasha boshlagan jarayonga",
+        "Qattiq jismning suyuqlikka aylanish jarayoniga",
+        "Suyuqlikning bug'lanish jarayoniga",
+        "Gazning suyuqlikka aylanish jarayoniga"
+      ],
+      "t": 0,
+      "izoh": "Qotishda atomlarning kinetik energiyasi kamayadi va atomlar tartibli joylasha boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#2a9d4ca2"
+    },
+    {
+      "q": "Kristall jismning erish va qotish temperaturalari haqida qanday xulosa to'g'ri?",
+      "v": [
+        "Erish va qotish temperaturalari bir xil bo'ladi",
+        "Qotish temperaturasi erish temperaturasidan yuqori bo'ladi",
+        "Erish temperaturasi qotish temperaturasidan ikki baravar yuqori bo'ladi",
+        "Ular bir-biriga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Kristall jismning erish va qotish temperaturalari bir xil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#9d01e326"
+    },
+    {
+      "q": "Kristall jism erish jarayonida tashqaridan olgan issiqlik miqdori va qotish jarayonida bergan issiqlik miqdori orasida qanday munosabat bor?",
+      "v": [
+        "Erishda qancha issiqlik olinsa, qotishda shuncha issiqlik beradi",
+        "Qotishda ko'proq issiqlik ajraladi",
+        "Erishda ko'proq issiqlik yutiladi",
+        "Qotishda issiqlik ajralmaydi"
+      ],
+      "t": 0,
+      "izoh": "Kristall jism erish jarayonida tashqaridan qancha issiqlik olsa, qotish jarayonida tashqariga shuncha issiqlik beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#1e70f3b2"
+    },
+    {
+      "q": "Kristall jismning erish va qotish jarayonlarini ifodalovchi issiqlik grafiklari bir-biriga nisbatan qanday joylashadi?",
+      "v": [
+        "Ustma-ust tushadi",
+        "Parallel, lekin bir-biridan uzoqda bo'ladi",
+        "To'g'ri burchak ostida kesishadi",
+        "Bir-biriga umuman aloqasi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Erish va qotish jarayonlarini ifodalovchi issiqlik grafiklari ustma-ust tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#4bdf57a4"
+    },
+    {
+      "q": "Suyuq holatdagi qo'rg'oshinni qizdiruvchi olov o'chirilganda nima sodir bo'ladi?",
+      "v": [
+        "U soviy boshlaydi, atomlarning kinetik energiyasi kamayadi, ichki energiyasi kamayadi",
+        "Uning temperaturasi ko'tarilaveradi",
+        "U darhol bug'lanib ketadi",
+        "Uning ichki energiyasi ortadi"
+      ],
+      "t": 0,
+      "izoh": "Energiya berilishi to'xtatilsa, qo'rg'oshin soviydi, atomlarning kinetik energiyasi va moddaning ichki energiyasi kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#b056c4bc"
+    },
+    {
+      "q": "Qo'rg'oshin qattiq holatga o'tib bo'lgandan keyin uning temperaturasi nima uchun pasayishda davom etadi?",
+      "v": [
+        "Atomlarning kinetik energiyasi kamayishi hisobiga ichki energiyasi kamayadi",
+        "Kristall panjara parchalanishi hisobiga",
+        "Tashqaridan issiqlik olishi hisobiga",
+        "Atomlarning massasi kamayishi hisobiga"
+      ],
+      "t": 0,
+      "izoh": "Qotib bo'lgach atomlarning kinetik energiyasi kamayishi hisobiga ichki energiya kamayadi va temperatura pasayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#03eb6d07"
+    },
+    {
+      "q": "0,1 kg qo'rg'oshin to'liq kristall holatga qaytib, 327 °C dan 27 °C gacha soviguncha undan qancha issiqlik ajralib chiqadi?",
+      "v": [
+        "3,9 kJ",
+        "6,4 kJ",
+        "1,95 kJ",
+        "13 kJ"
+      ],
+      "t": 0,
+      "izoh": "Qizdirishga sarflangan miqdorga teng — 3,9 kJ issiqlik ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#71dc482c"
+    },
+    {
+      "q": "53-rasmdagi grafikda abssissa o'qiga va ordinata o'qiga qanday kattaliklar olingan?",
+      "v": [
+        "Abssissaga berilayotgan issiqlik miqdori, ordinataga kristall temperaturasining o'zgarishi",
+        "Abssissaga vaqt, ordinataga massa",
+        "Abssissaga temperatura, ordinataga issiqlik miqdori",
+        "Abssissaga hajm, ordinataga bosim"
+      ],
+      "t": 0,
+      "izoh": "Abssissa o'qiga qo'rg'oshinga berilayotgan issiqlik miqdori, ordinata o'qiga kristall temperaturasining o'zgarishi olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#87b54aa3"
+    },
+    {
+      "q": "Jadvalga ko'ra, quyidagi moddalardan qaysi birining erish temperaturasi eng past?",
+      "v": [
+        "Simob (−39 °C)",
+        "Muz (0 °C)",
+        "Qalay (232 °C)",
+        "Rux (420 °C)"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda simobning erish temperaturasi −39 °C bo'lib, eng past.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#a6b29eae"
+    },
+    {
+      "q": "Jadvalga ko'ra, erish temperaturasi eng yuqori modda qaysi?",
+      "v": [
+        "Volfram (3410 °C)",
+        "Platina (1769 °C)",
+        "Temir (1539 °C)",
+        "Cho'yan (1220 °C)"
+      ],
+      "t": 0,
+      "izoh": "Volframning erish temperaturasi 3410 °C — jadvaldagi eng yuqori qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#f3f98fa9"
+    },
+    {
+      "q": "Jadvalga ko'ra, misning erish temperaturasi qancha?",
+      "v": [
+        "1083 °C",
+        "1064 °C",
+        "1220 °C",
+        "660 °C"
+      ],
+      "t": 0,
+      "izoh": "Mis 1083 °C da eriydi (oltin 1064 °C, cho'yan 1220 °C, alyuminiy 660 °C).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#6ad1e7b9"
+    },
+    {
+      "q": "Jadvalga ko'ra, alyuminiyning erish temperaturasi qancha?",
+      "v": [
+        "660 °C",
+        "420 °C",
+        "327 °C",
+        "1064 °C"
+      ],
+      "t": 0,
+      "izoh": "Alyuminiyning erish temperaturasi 660 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#34b1d8d5"
+    },
+    {
+      "q": "Jadvalga ko'ra, temir va cho'yannning erish temperaturalari qanday?",
+      "v": [
+        "Temir — 1539 °C, cho'yan — 1220 °C",
+        "Temir — 1220 °C, cho'yan — 1539 °C",
+        "Temir — 1769 °C, cho'yan — 1083 °C",
+        "Temir — 1083 °C, cho'yan — 660 °C"
+      ],
+      "t": 0,
+      "izoh": "Temir 1539 °C da, cho'yan 1220 °C da eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#1ba2e8b4"
+    },
+    {
+      "q": "Erish jarayonida kristall suyuqlikka to'liq aylanib bo'lmaguncha uning temperaturasi qanday bo'ladi?",
+      "v": [
+        "O'zgarmaydi",
+        "To'g'ri proporsional ortadi",
+        "Sekin pasayadi",
+        "Davriy ravishda tebranadi"
+      ],
+      "t": 0,
+      "izoh": "Erish jarayonida kristall suyuqlikka to'liq aylanib bo'lmaguncha temperaturasi o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#8d90a61d"
+    },
+    {
+      "q": "Qotish jarayonida qo'rg'oshin atomlarining kinetik energiyasi qanday o'zgaradi?",
+      "v": [
+        "Kamaya boradi",
+        "Orta boradi",
+        "O'zgarmaydi",
+        "Avval ortib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Qotishda qo'rg'oshin atomlarining kinetik energiyasi kamaya boradi va atomlar tartibli joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#0584cf94"
+    },
+    {
+      "q": "Jadvalga ko'ra, qalayning erish temperaturasi qancha?",
+      "v": [
+        "232 °C",
+        "327 °C",
+        "420 °C",
+        "0 °C"
+      ],
+      "t": 0,
+      "izoh": "Qalay 232 °C da eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#5bdad713"
+    },
+    {
+      "q": "Erish jarayonida qo'rg'oshinga berilayotgan issiqlik uning qaysi energiyasini o'zgartiradi?",
+      "v": [
+        "Ichki energiyasini oshiradi",
+        "Faqat kinetik energiyasini oshiradi",
+        "Energiyasini o'zgartirmaydi",
+        "Mexanik energiyasini kamaytiradi"
+      ],
+      "t": 0,
+      "izoh": "Qo'rg'oshinga berilgan issiqlik uning ichki energiyasini oshirishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#0d651a71"
+    },
+    {
+      "q": "Qo'rg'oshin soviganda undan issiqlik ajralib chiqishi natijasida nima kuzatiladi?",
+      "v": [
+        "Qo'rg'oshindan issiqlik ajralib chiqadi, ya'ni u atrof-muhitga issiqlik uzatadi",
+        "Qo'rg'oshin atrof-muhitdan issiqlik yutadi",
+        "Qo'rg'oshin temperaturasi ko'tariladi",
+        "Qo'rg'oshin bug'lanadi"
+      ],
+      "t": 0,
+      "izoh": "Soviganda qo'rg'oshindan issiqlik ajralib chiqadi, u atrof-muhitga issiqlik uzatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#a79e7f0e"
+    },
+    {
+      "q": "Jadvalga ko'ra, oltin va platinaning erish temperaturalari qanday?",
+      "v": [
+        "Oltin — 1064 °C, platina — 1769 °C",
+        "Oltin — 1769 °C, platina — 1064 °C",
+        "Oltin — 1083 °C, platina — 1539 °C",
+        "Oltin — 960 °C, platina — 3410 °C"
+      ],
+      "t": 0,
+      "izoh": "Oltin 1064 °C da, platina 1769 °C da eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#cd5e80b2"
+    },
+    {
+      "q": "53-rasm grafikning O–A qismida qanday jarayon aks etgan?",
+      "v": [
+        "Qattiq qo'rg'oshinning qizishi (issish va sovish chizig'ining issish qismi)",
+        "Qo'rg'oshinning erishi",
+        "Suyuq qo'rg'oshinning qaynashi",
+        "Qo'rg'oshinning qotishi"
+      ],
+      "t": 0,
+      "izoh": "O–A qismida qattiq holatdagi qo'rg'oshin qizdirilib, temperaturasi erish temperaturasiga yetkaziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#a2794e81"
+    },
+    {
+      "q": "Boshqa kristall jismlarning erish va qotish jarayonlari qo'rg'oshinnikiga qanday munosabatda?",
+      "v": [
+        "Barcha kristall jismlarning erish va qotish jarayonlari qo'rg'oshin kabi bo'ladi",
+        "Har bir kristall jism butunlay boshqa qonuniyat bilan eriydi",
+        "Faqat metallar qo'rg'oshin kabi eriydi",
+        "Boshqa kristall jismlar erish temperaturasiga ega emas"
+      ],
+      "t": 0,
+      "izoh": "Boshqa barcha kristall jismlarning erish va qotish jarayonlari qo'rg'oshin kabi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#063157dc"
+    },
+    {
+      "q": "Erish temperaturasida 0,1 kg qo'rg'oshin suyuqlikka to'liq aylangandan keyin unga beriladigan issiqlik yana nimani oshiradi?",
+      "v": [
+        "Suyuq qo'rg'oshin temperaturasini (atomlarning kinetik energiyasini) oshiradi",
+        "Yana kristall panjara parchalaydi",
+        "Qo'rg'oshin massasini oshiradi",
+        "Qo'rg'oshin hajmini kamaytiradi"
+      ],
+      "t": 0,
+      "izoh": "To'liq erigandan keyin (B–C qismi) berilgan issiqlik suyuq qo'rg'oshin atomlarining kinetik energiyasini, ya'ni temperaturasini oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi#e60c2df8"
+    }
+  ]
+}

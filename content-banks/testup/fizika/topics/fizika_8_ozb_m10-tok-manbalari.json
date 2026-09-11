@@ -1,0 +1,606 @@
+{
+  "nom": "10-mavzu. Tok Manbalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "O'tkazgichga ulangan lampochka yonib turishi uchun o'tkazgichda nima bo'lishi zarur?",
+      "v": [
+        "Muntazam elektr tokini hosil qilib turuvchi manba, ya'ni tok manbai",
+        "Faqat elektr maydon",
+        "Faqat magnit maydon",
+        "Faqat kalit"
+      ],
+      "t": 0,
+      "izoh": "Lampochka yonib turishi uchun o'tkazgichda muntazam elektr tokini hosil qilib turuvchi manba — tok manbai bo'lishi zarur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#5b1a7bb7"
+    },
+    {
+      "q": "Tok manbaida qanday kuchlar ish bajarib, musbat va manfiy zaryadli zarralarni bir-biridan ajratadi?",
+      "v": [
+        "Elektrostatik tabiatga ega bo'lmagan kuchlar",
+        "Elektrostatik kuchlar",
+        "Gravitatsiya kuchlari",
+        "Magnit kuchlari"
+      ],
+      "t": 0,
+      "izoh": "Tok manbaida elektrostatik tabiatga ega bo'lmagan kuchlar ish bajarib, zaryadli zarralarni bir-biridan ajratadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#9eeb0beb"
+    },
+    {
+      "q": "Tok manbaida ajratilgan qarama-qarshi ishorali zarralar qayerda to'planadi?",
+      "v": [
+        "Tok manbaining qutblarida",
+        "Tok manbaining o'rtasida",
+        "O'tkazgichning tashqi yuzasida",
+        "Kalitda"
+      ],
+      "t": 0,
+      "izoh": "Ajratilgan qarama-qarshi ishorali zarralar tok manbaining qutblarida to'planadi va elektr maydonni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#ce09a896"
+    },
+    {
+      "q": "Tok manbalarida musbat va manfiy zaryadli zarralarni ajratish jarayonida qanday energiyalar elektr energiyaga aylanadi?",
+      "v": [
+        "Mexanik, kimyoviy va boshqa turdagi energiyalar",
+        "Faqat yorug'lik energiyasi",
+        "Faqat issiqlik energiyasi",
+        "Faqat yadro energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Tok manbalarida mexanik, kimyoviy va boshqa turdagi energiyalar elektr energiyaga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#ea2acbdb"
+    },
+    {
+      "q": "Elektrofor mashinasida qanday energiya elektr energiyaga aylanadi?",
+      "v": [
+        "Mexanik energiya",
+        "Kimyoviy energiya",
+        "Yorug'lik energiyasi",
+        "Issiqlik energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Elektrofor mashina ham tok manbaidir; unda mexanik energiya elektr energiyaga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#14dc9117"
+    },
+    {
+      "q": "O'tkazmas tok deb nimaga aytiladi?",
+      "v": [
+        "Zaryadli zarralarning o'zgarmas me'yordagi oqimi",
+        "Zaryadli zarralarning o'zgaruvchan oqimi",
+        "Zarralarning tartibsiz harakati",
+        "O'tkazgichdagi elektronlarning tebranishi"
+      ],
+      "t": 0,
+      "izoh": "Zaryadli zarralarning o'zgarmas me'yordagi oqimi o'zgarmas tok deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#4d9ce01e"
+    },
+    {
+      "q": "O'tkazmas tok manbai deb qanday manbaga aytiladi?",
+      "v": [
+        "Musbat va manfiy qutbga ega bo'lgan va o'zgarmas tokni hosil qiladigan manbaga",
+        "Faqat bitta qutbga ega bo'lgan manbaga",
+        "Faqat o'zgaruvchan tok hosil qiladigan manbaga",
+        "Qutblari almashinib turadigan manbaga"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas tok manbai deb musbat va manfiy qutbga ega bo'lgan va o'zgarmas tokni hosil qiladigan manbaga aytiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#47b65ea9"
+    },
+    {
+      "q": "Agar o'tkazgich ichida elektr maydon o'zgarmas bo'lsa, o'tkazgichning ko'ndalang kesimidan teng vaqtlar ichida o'tgan zaryad miqdori qanday bo'ladi?",
+      "v": [
+        "Bir xil bo'ladi",
+        "Har safar ortib boradi",
+        "Har safar kamayadi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydon o'zgarmas bo'lsa, teng vaqtlar ichida o'tgan zaryad miqdori bir xil bo'lib, o'tkazgich orqali o'zgarmas tok oqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m10-tok-manbalari#406bb94f"
+    },
+    {
+      "q": "Elektron soat, televizor va avtoulou pulti kabi asboblarda elektr manbai sifatida nimadan foydalaniladi?",
+      "v": [
+        "Galvanik elementlardan",
+        "Elektrofor mashinasidan",
+        "Transformatorlardan",
+        "Generatorlardan"
+      ],
+      "t": 0,
+      "izoh": "Elektron soat, televizor va avtoulou pulti kabi asboblarda galvanik elementlardan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#247361f2"
+    },
+    {
+      "q": "Galvanik elementda qanday energiya elektr energiyaga aylanadi?",
+      "v": [
+        "Kimyoviy energiya",
+        "Mexanik energiya",
+        "Yorug'lik energiyasi",
+        "Issiqlik energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Galvanik elementda kimyoviy energiya elektr energiyaga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#17563045"
+    },
+    {
+      "q": "Eng sodda galvanik element qanday qurilmadir?",
+      "v": [
+        "Sulfat kislotaning suvdagi eritmasiga botirilgan rux (Zn) va mis (Cu) plastinkalardan iborat qurilma",
+        "Ikkita mis plastinkadan iborat qurilma",
+        "Ikkita rux plastinkadan iborat qurilma",
+        "Faqat bitta metall plastinkadan iborat qurilma"
+      ],
+      "t": 0,
+      "izoh": "Eng sodda galvanik element — sulfat kislota eritmasiga botirilgan rux va mis plastinkalardan iborat qurilma (31-rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#d48a7680"
+    },
+    {
+      "q": "Volta galvanik elementida rux plastinka kislota bilan reaksiyaga kirishganda qanday zaryadlanadi?",
+      "v": [
+        "Manfiy zaryadlanadi",
+        "Musbat zaryadlanadi",
+        "Neytral qoladi",
+        "Avval musbat, keyin manfiy zaryadlanadi"
+      ],
+      "t": 0,
+      "izoh": "Rux plastinka erib, musbat zaryadli ionlarini eritmaga beradi va o'zi manfiy zaryadlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m10-tok-manbalari#4cde6f2d"
+    },
+    {
+      "q": "Volta galvanik elementida musbat ionlar qayerda to'planadi?",
+      "v": [
+        "Mis plastinkada",
+        "Rux plastinkada",
+        "Eritma sirtida",
+        "Idish devorida"
+      ],
+      "t": 0,
+      "izoh": "Musbat ionlar mis plastinkada to'planadi, zaryadlangan plastinkalar orasida elektr maydon hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#6d204ca7"
+    },
+    {
+      "q": "Galvanik element qutblari o'tkazgich orqali lampochkaga ulansa, nima yuz beradi?",
+      "v": [
+        "O'tkazgichdan tok o'tadi va lampochka yonadi",
+        "Lampochka o'chadi",
+        "Eritma qaynaydi",
+        "Plastinkalar eriydi"
+      ],
+      "t": 0,
+      "izoh": "Mis va rux qoplamalari, ya'ni galvanik element qutblari lampochkaga ulansa, o'tkazgichdan tok o'tadi va lampochka yonadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#3bfdc81f"
+    },
+    {
+      "q": "Eng sodda galvanik elementni kim kashf etgan?",
+      "v": [
+        "Italyalik olim Alessandro Volta",
+        "Nemis fizigi Georg Simon Om",
+        "Fransuz fizigi Andre Mari Amper",
+        "Angliyalik olim Maykl Faradey"
+      ],
+      "t": 0,
+      "izoh": "Bunday eng sodda galvanik elementni italiyalik olim Alessandro Volta kashf etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#6a7cd479"
+    },
+    {
+      "q": "Alessandro Volta qaysi yillarda yashagan?",
+      "v": [
+        "1745–1827",
+        "1775–1836",
+        "1787–1854",
+        "1800–1880"
+      ],
+      "t": 0,
+      "izoh": "Alessandro Volta (1745–1827) — buyuk italyan fizik va ximigi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#15f94409"
+    },
+    {
+      "q": "Alessandro Volta galvanik element (batareya)ni qaysi yilda ixtiro qilgani uchun Napoleon tomonidan graf unvoni bilan taqdirlangan?",
+      "v": [
+        "1800-yilda",
+        "1791-yilda",
+        "1827-yilda",
+        "1775-yilda"
+      ],
+      "t": 0,
+      "izoh": "1800-yilda galvanik elementni ixtiro qilgani uchun Napoleon tomonidan graf unvoni berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#4938f70d"
+    },
+    {
+      "q": "Quruq galvanik elementning asosiy qismi nimadan iborat?",
+      "v": [
+        "Rux (Zn) idishdan va unga solingan ko'mir (C) sterjendan",
+        "Mis idishdan va temir sterjendan",
+        "Qo'rg'oshin plastinkalardan",
+        "Nikellangan po'lat plastinkalardan"
+      ],
+      "t": 0,
+      "izoh": "Quruq galvanik elementning asosiy qismi rux (Zn) idishdan va unga solingan ko'mir (C) sterjendan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#d7796af9"
+    },
+    {
+      "q": "Quruq galvanik elementda xaltachaga solingan manganes oksidi (MnO2) va ko'mir aralashmasidan tayyorlangan qorishma nimani o'rab turadi?",
+      "v": [
+        "Ko'mir sterjenni",
+        "Rux idishni",
+        "Mis plastinkani",
+        "Tashqi qoplamani"
+      ],
+      "t": 0,
+      "izoh": "Xaltachaga solingan manganes oksidi va ko'mir aralashmasidan tayyorlangan qorishma ko'mir sterjenni o'rab turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#a6051cec"
+    },
+    {
+      "q": "Quruq galvanik elementda kimyoviy reaksiya jarayonida musbat zaryadlar qayerda, manfiy zaryadlar qayerda to'planadi?",
+      "v": [
+        "Musbat zaryadlar ko'mir sterjenda, manfiy zaryadlar rux sterjenda (idishda)",
+        "Musbat zaryadlar rux idishda, manfiy zaryadlar ko'mir sterjenda",
+        "Ikkala zaryad ham ko'mir sterjenda",
+        "Ikkala zaryad ham rux idishda"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy reaksiya jarayonida ko'mir sterjenda musbat, rux sterjenda manfiy zaryadlar to'planadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m10-tok-manbalari#b63f2c73"
+    },
+    {
+      "q": "Galvanik elementlardan olinadigan quvvatni oshirish uchun ular bir-biri bilan qanday ulanadi?",
+      "v": [
+        "Ketma-ket ulanadi",
+        "Parallel ulanadi",
+        "Aralash ulanadi",
+        "Ulanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Galvanik elementlardan olinadigan quvvatni oshirish uchun ular bir-biri bilan ketma-ket ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#d0f30ed5"
+    },
+    {
+      "q": "Ketma-ket ulangan galvanik elementlar tizimi nima deyiladi?",
+      "v": [
+        "Galvanik elementlar batareyasi",
+        "Galvanik elementlar zanjiri",
+        "Akkmulyator",
+        "Elektr sxema"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulangan elementlar tizimi galvanik elementlar batareyasi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#47264583"
+    },
+    {
+      "q": "Ko'chma radio, televizor va sovitgich pulti kabi asboblarga nima qo'yiladi?",
+      "v": [
+        "Galvanik elementlar batareyasi",
+        "Kislotali akkmulyator",
+        "Elektrofor mashina",
+        "Generator"
+      ],
+      "t": 0,
+      "izoh": "Ko'chma radio, televizor va sovitgich pulti kabi asboblarga galvanik elementlar batareyasi qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#024932bb"
+    },
+    {
+      "q": "«Akkmulyator» so'zi qaysi tildan olingan va qanday ma'noni anglatadi?",
+      "v": [
+        "Lotinchadan olingan, «to'plovchi» ma'noni anglatadi",
+        "Yunonchadan olingan, «saqlovchi» ma'noni anglatadi",
+        "Ruschadan olingan, «manba» ma'noni anglatadi",
+        "Inglizchadan olingan, «quvvat» ma'noni anglatadi"
+      ],
+      "t": 0,
+      "izoh": "«Akkmulyator» so'zi lotinchadan olingan bo'lib, «to'plovchi» degan ma'noni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#05b1296a"
+    },
+    {
+      "q": "Galvanik elementlarning ishlashi davomida ulardagi elektrodlar va eritma qanday o'zgaradi?",
+      "v": [
+        "Elektrodlar yemiriladi, eritma kuchsizlanib qoladi",
+        "Elektrodlar kuchayadi, eritma to'yinadi",
+        "Hech qanday o'zgarish bo'lmaydi",
+        "Eritma qaynab ketadi"
+      ],
+      "t": 0,
+      "izoh": "Galvanik elementlar ishlashi davomida elektrodlar yemiriladi, eritma kuchsizlanib qoladi va element ishga yaroqsiz bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#7d52ddee"
+    },
+    {
+      "q": "Akkmulyatorning galvanik elementdan asosiy farqi nimada?",
+      "v": [
+        "Akkmulyatorni boshqa tok manbai yordamida zaryadlab, qayta ishlatish mumkin",
+        "Akkmulyator kichikroq bo'ladi",
+        "Akkmulyatorda eritma bo'lmaydi",
+        "Akkmulyator faqat bir marta ishlaydi"
+      ],
+      "t": 0,
+      "izoh": "Akkmulyatorda kimyoviy reaksiyaning kuchi tugasa, uni boshqa tok manbai elektr tarmog'idan maxsus asboblar yordamida zaryadlab, qayta ishlatish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#4c8a259c"
+    },
+    {
+      "q": "Akkmulyatorni zaryadlash uchun uning musbat qutbi qayerga ulanadi?",
+      "v": [
+        "Boshqa tok manbaining musbat qutbiga",
+        "Boshqa tok manbaining manfiy qutbiga",
+        "Yerga",
+        "Lampochkaga"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlashda akkmulyatorning musbat qutbi boshqa tok manbaining musbat qutbiga, manfiy qutbi esa o'sha manbaning manfiy qutbiga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#8daa7ac3"
+    },
+    {
+      "q": "Texnikada akkmulyatorning qaysi turlari keng qo'llaniladi?",
+      "v": [
+        "Kislotali va ishqorli akkmulyatorlar",
+        "Quruq va nam akkmulyatorlar",
+        "Kichik va katta akkmulyatorlar",
+        "Mis va rux akkmulyatorlar"
+      ],
+      "t": 0,
+      "izoh": "Texnikada akkmulyatorning ikki turi: kislotali va ishqorli akkmulyatorlar keng qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#fcaa4236"
+    },
+    {
+      "q": "Kislotali akkmulyator qanday tuzilgan?",
+      "v": [
+        "Sulfat kislota eritmasiga botirilgan ikkita qo'rg'oshin plastinadan iborat",
+        "Rux idish va ko'mir sterjendan iborat",
+        "Mis va rux plastinkalardan iborat",
+        "Nikellangan po'lat plastinkalardan iborat"
+      ],
+      "t": 0,
+      "izoh": "Kislotali akkmulyator sulfat kislota eritmasiga botirilgan ikkita qo'rg'oshin plastinadan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#b9df1740"
+    },
+    {
+      "q": "Kislotali akkmulyatorda toza qo'rg'oshindan iborat plastina qanday zaryadlarni o'ziga yig'adi?",
+      "v": [
+        "Manfiy zaryadlarni",
+        "Musbat zaryadlarni",
+        "Zaryadlarni yig'maydi",
+        "Ikkala turdagi zaryadlarni teng"
+      ],
+      "t": 0,
+      "izoh": "Plastinalardan biri toza qo'rg'oshindan bo'lib, u o'ziga manfiy zaryadlarni yig'adi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#ce5d6933"
+    },
+    {
+      "q": "Kislotali akkmulyatorning ikkinchi qo'rg'oshin plastinasi nima bilan qoplangan va qanday zaryadlarni yig'adi?",
+      "v": [
+        "Qo'rg'oshin oksidi bilan qoplangan va musbat zaryadlarni yig'adi",
+        "Manganes oksidi bilan qoplangan va manfiy zaryadlarni yig'adi",
+        "Nikelli qoplama bilan qoplangan va musbat zaryadlarni yig'adi",
+        "Hech narsa bilan qoplanmagan va zaryad yig'maydi"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi qo'rg'oshin plastinaning usti qo'rg'oshin oksidi bilan qoplanganligi uchun u o'ziga musbat zaryadlarni yig'adi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m10-tok-manbalari#599c740c"
+    },
+    {
+      "q": "Ishqorli akkmulyatorlarda plastinalardan biri qanday bo'lib, qanday zaryadni yig'adi?",
+      "v": [
+        "Nikellangan po'lat bo'lib, musbat zaryadni yig'adi",
+        "Oksidlangan temir bo'lib, musbat zaryadni yig'adi",
+        "Toza qo'rg'oshin bo'lib, manfiy zaryadni yig'adi",
+        "Rux plastina bo'lib, manfiy zaryadni yig'adi"
+      ],
+      "t": 0,
+      "izoh": "Ishqorli akkmulyatorlarda plastinalardan biri nikellangan po'lat bo'lib, u o'ziga musbat zaryadni yig'adi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#6a67a5fe"
+    },
+    {
+      "q": "Ishqorli akkmulyatorning ikkinchi plastinasi qanday bo'lib, qanday zaryadni yig'adi?",
+      "v": [
+        "Oksidlangan temir bo'lib, manfiy zaryadni yig'adi",
+        "Nikellangan po'lat bo'lib, musbat zaryadni yig'adi",
+        "Qo'rg'oshin oksidi bilan qoplangan bo'lib, musbat zaryadni yig'adi",
+        "Ko'mir sterjen bo'lib, musbat zaryadni yig'adi"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi plastina oksidlangan temir bo'lib, u o'ziga manfiy zaryadni yig'adi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#abc82803"
+    },
+    {
+      "q": "Zanjir so'zi qanday ma'noni beradi?",
+      "v": [
+        "Bir necha bo'laklardan tashkil topgan qismlarning ulanishi (yig'ilishi)",
+        "Bitta butun qism",
+        "Faqat simlarning to'plami",
+        "Faqat tok manbai"
+      ],
+      "t": 0,
+      "izoh": "Zanjir so'zi bir necha bo'laklardan tashkil topgan qismlarning ulanishi (yig'ilishi) ma'nosini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#b004721d"
+    },
+    {
+      "q": "Eng sodda elektr zanjirini nimalar tashkil etadi?",
+      "v": [
+        "Tok manbai, o'tkazgich (ulovchi simlar), elektr iste'molchi va kalit",
+        "Faqat tok manbai va lampochka",
+        "Faqat simlar va kalit",
+        "Tok manbai, voltmetr va ampermetr"
+      ],
+      "t": 0,
+      "izoh": "Tok manbai, o'tkazgich (ulovchi simlar), elektr iste'molchi va kalit eng sodda elektr zanjirini tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#b4309c0f"
+    },
+    {
+      "q": "Zanjirda elektr toki hosil bo'lishi uchun u qanday bo'lishi kerak?",
+      "v": [
+        "Berk bo'lishi kerak",
+        "Ochiq bo'lishi kerak",
+        "Qisqa bo'lishi kerak",
+        "Uzun bo'lishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Zanjirda elektr toki hosil bo'lishi uchun u berk bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#98c81c20"
+    },
+    {
+      "q": "Elektr zanjirdagi elementlarning ulanish usullari tasvirlangan chizmalar nima deb ataladi?",
+      "v": [
+        "Elektr sxema",
+        "Elektr chizma",
+        "Elektr grafik",
+        "Elektr jadval"
+      ],
+      "t": 0,
+      "izoh": "Elektr zanjirdagi elementlarning ulanish usullari tasvirlangan chizmalar elektr sxema deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#dadb4e4f"
+    },
+    {
+      "q": "Kalitning ulangan holati zanjirning qanday holatini bildiradi?",
+      "v": [
+        "Berk holatini",
+        "Ochiq holatini",
+        "Qisqa tutashuv holatini",
+        "Ishlamas holatini"
+      ],
+      "t": 0,
+      "izoh": "38-a rasmda kalitning ulangan holati, ya'ni zanjirning berk holati keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#1ee8db14"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri elektr iste'molchi hisoblanadi?",
+      "v": [
+        "Elektr lampochka",
+        "Tok manbai",
+        "Kalit",
+        "Ulovchi sim"
+      ],
+      "t": 0,
+      "izoh": "Elektr lampochka iste'molchi hisoblanadi. Xonadonimizdagi radio, televizor, muzlatgich, elektr isitgichlar ham elektr iste'molchilardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#3b8f763b"
+    },
+    {
+      "q": "Maktab fizika xonalarida tajriba va laboratoriya ishlarini o'tkazish uchun ishlatiladigan turli xil o'zgarmas tok manbalari qanday hosil qilinadi?",
+      "v": [
+        "Elektr tarmog'iga ulangan maxsus asboblar yordamida",
+        "Galvanik elementlardan",
+        "Faqat akkmulyatorlardan",
+        "Elektrofor mashinasidan"
+      ],
+      "t": 0,
+      "izoh": "Maktabdagi o'zgarmas tok manbalari elektr tarmog'iga ulangan maxsus asboblar yordamida hosil qilinadi (35-rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m10-tok-manbalari#588af421"
+    }
+  ]
+}

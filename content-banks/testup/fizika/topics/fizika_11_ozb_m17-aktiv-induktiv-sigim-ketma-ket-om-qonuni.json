@@ -1,0 +1,486 @@
+{
+  "nom": "17-mavzu. Aktiv Induktiv Sigim Ketma Ket Om Qonuni",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Rezistor, induktiv g'altak va kondensator ketma-ket ulangan o'zgaruvchan tok zanjirida ulardan o'tuvchi tok kuchlari qanday bo'ladi?",
+      "v": [
+        "Barcha iste'molchilarda bir xil bo'ladi",
+        "Rezistorda eng katta bo'ladi",
+        "Kondensatorda eng katta bo'ladi",
+        "G'altakda eng katta bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulangan elementlardan o'tuvchi tok kuchi bir xil: i = Im·cos ωt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#c70bde84"
+    },
+    {
+      "q": "Ketma-ket ulangan rezistor, g'altak va kondensatordan iborat zanjirda umumiy kuchlanish qanday aniqlanadi?",
+      "v": [
+        "Iste'molchilardagi kuchlanish tushuvlari vektorlarining yig'indisi sifatida",
+        "Eng katta kuchlanish tushuvi sifatida",
+        "Kuchlanish tushuvlarining arifmetik yig'indisi sifatida",
+        "Kuchlanish tushuvlarining o'rta arifmetigi sifatida"
+      ],
+      "t": 0,
+      "izoh": "Umumiy kuchlanish U vektori UR, UL va UC vektorlarining yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#618b709d"
+    },
+    {
+      "q": "Aktiv qarshilikdagi kuchlanish tebranishlari fazasi tok kuchi tebranishlari fazasiga nisbatan qanday?",
+      "v": [
+        "Mos keladi (bir xil fazada)",
+        "π/2 ga oldinda",
+        "π/2 ga orqada",
+        "π ga orqada"
+      ],
+      "t": 0,
+      "izoh": "Aktiv qarshilikda kuchlanish va tok kuchi tebranishlari bir fazada bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#f230c437"
+    },
+    {
+      "q": "Kondensatordagi kuchlanish tebranishlari tok kuchi tebranishlaridan faza jihatidan qanchaga farq qiladi?",
+      "v": [
+        "π/2 ga orqada",
+        "π/2 ga oldinda",
+        "π ga orqada",
+        "Fazalar bir xil"
+      ],
+      "t": 0,
+      "izoh": "Kondensatordagi kuchlanish tokdan π/2 ga orqada qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#6ef233ff"
+    },
+    {
+      "q": "Induktiv g'altakdagi kuchlanish tebranishlari tok kuchi tebranishlaridan faza jihatidan qanchaga farq qiladi?",
+      "v": [
+        "π/2 ga oldinda",
+        "π/2 ga orqada",
+        "π ga oldinda",
+        "Fazalar bir xil"
+      ],
+      "t": 0,
+      "izoh": "G'altakda kuchlanish tebranishi tokdan π/2 ga oldinda yuradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#92520d48"
+    },
+    {
+      "q": "Ketma-ket RLC zanjirning vektor diagrammasida g'altak va kondensator kuchlanishlari qanday yo'nalishda bo'ladi?",
+      "v": [
+        "Qarama-qarshi yo'nalishda",
+        "Bir xil yo'nalishda",
+        "O'zaro 45° burchak ostida",
+        "O'zaro 60° burchak ostida"
+      ],
+      "t": 0,
+      "izoh": "UL va UC vektorlari qarama-qarshi yo'nalishda bo'lib, natijaviy kuchlanish ULC = UL − UC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#8d8eb2fa"
+    },
+    {
+      "q": "Ketma-ket RLC zanjirda g'altak va kondensator kuchlanishlarining natijaviy qiymati qanday ifodalanadi?",
+      "v": [
+        "ULC = UL − UC",
+        "ULC = UL + UC",
+        "ULC = UL · UC",
+        "ULC = UC / UL"
+      ],
+      "t": 0,
+      "izoh": "UL va UC qarama-qarshi yo'nalganligi sababli ULC = UL − UC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#034e3355"
+    },
+    {
+      "q": "O'zgaruvchan tokning to'liq zanjiri uchun Om qonuni qanday ko'rinishda yoziladi?",
+      "v": [
+        "Imax = Um / √(R² + (XL − XC)²)",
+        "Imax = Um / (R + XL + XC)",
+        "Imax = Um · √(R² + (XL − XC)²)",
+        "Imax = Um / √(R² + XL² + XC²)"
+      ],
+      "t": 0,
+      "izoh": "(3–23) formula: Imax = Um/√(R² + (XL − XC)²) — to'liq zanjir uchun Om qonuni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#c7a0b19e"
+    },
+    {
+      "q": "O'zgaruvchan tok zanjirining to'la qarshiligi Z qanday ifodalanadi?",
+      "v": [
+        "Z = √(R² + (XL − XC)²)",
+        "Z = R + XL + XC",
+        "Z = √(R² + XL² + XC²)",
+        "Z = R + (XL − XC)"
+      ],
+      "t": 0,
+      "izoh": "(3–24) formula: Z = √(R² + (XL − XC)²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#c6c6fd58"
+    },
+    {
+      "q": "Reaktiv qarshilik qanday ifodalanadi?",
+      "v": [
+        "XL − XC = ωL − 1/(ωC)",
+        "XL + XC = ωL + 1/(ωC)",
+        "XL · XC = L/C",
+        "XC − XL = 1/(ωC) − ωL faqat"
+      ],
+      "t": 0,
+      "izoh": "XL − XC = ωL − 1/(ωC) kattalik reaktiv qarshilik deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#f2d0d18d"
+    },
+    {
+      "q": "Ketma-ket RLC zanjirda tok va kuchlanish orasidagi fazalar farqining tangensi qanday aniqlanadi?",
+      "v": [
+        "tgφ = (XL − XC)/R",
+        "tgφ = R/(XL − XC)",
+        "tgφ = (XL + XC)/R",
+        "tgφ = R/XL"
+      ],
+      "t": 0,
+      "izoh": "(3–25) formula: tgφ = (UL − UC)/UR = (XL − XC)/R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#398b5678"
+    },
+    {
+      "q": "O'zgaruvchan tok zanjirida generatordan olingan energiya qayerda issiqlik energiyasi sifatida ajralib chiqadi?",
+      "v": [
+        "Faqat aktiv qarshilikda",
+        "Faqat g'altakda",
+        "Faqat kondensatorda",
+        "Barcha elementlarda teng"
+      ],
+      "t": 0,
+      "izoh": "Energiya faqat aktiv qarshilikda issiqlik ko'rinishida ajraladi; reaktiv qarshilikda energiya ajralmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#de4403e4"
+    },
+    {
+      "q": "Reaktiv qarshilikda energiya nima uchun ajralmaydi?",
+      "v": [
+        "Elektr maydon energiyasi magnit maydon energiyasiga va aksincha davriy aylanib turadi",
+        "Unda tok umuman o'tmaydi",
+        "Uning qarshiligi nolga teng",
+        "Energiya unda issiqlikka aylanmay qoladi"
+      ],
+      "t": 0,
+      "izoh": "Reaktiv qarshilikda energiya elektr va magnit maydonlari orasida davriy almashinadi, issiqlik ajralmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#8edc1f2f"
+    },
+    {
+      "q": "Davrning birinchi choragida kondensator zaryadlanayotganda energiya qanday ko'rinishda to'planadi?",
+      "v": [
+        "Elektr maydon energiyasi tarzida",
+        "Magnit maydon energiyasi tarzida",
+        "Issiqlik energiyasi tarzida",
+        "Mexanik energiya tarzida"
+      ],
+      "t": 0,
+      "izoh": "Kondensator zaryadlanganda energiya elektr maydon energiyasi ko'rinishida to'planadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#8815194e"
+    },
+    {
+      "q": "Ketma-ket RLC zanjirning vektor diagrammasida tok kuchi amplitudasi vektori odatda qanday yo'nalishda olinadi?",
+      "v": [
+        "Gorizontal o'q bo'ylab",
+        "Vertikal o'q bo'ylab",
+        "45° burchak ostida",
+        "Aylanma yo'nalishda"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi amplitudasi gorizontal o'q bo'ylab yo'nalgan vektor ko'rinishida olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#54fb4e84"
+    },
+    {
+      "q": "Kondensatordagi kuchlanishning amplitudaviy qiymati qanday ifodalanadi?",
+      "v": [
+        "UC = Imax/(ωC)",
+        "UC = Imax·ωC",
+        "UC = Imax·ωL",
+        "UC = Imax·R"
+      ],
+      "t": 0,
+      "izoh": "UC = (1/ωC)·Imax = XC·Imax.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#b2ac74e8"
+    },
+    {
+      "q": "G'altakdagi kuchlanishning amplitudaviy qiymati qanday ifodalanadi?",
+      "v": [
+        "UL = ωL·Imax",
+        "UL = Imax/(ωL)",
+        "UL = Imax·R",
+        "UL = Imax/(ωC)"
+      ],
+      "t": 0,
+      "izoh": "UL = ωL·Imax = XL·Imax.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#cc2df169"
+    },
+    {
+      "q": "Umumiy kuchlanishning maksimal qiymati uchun qaysi munosabat to'g'ri?",
+      "v": [
+        "Um² = UR² + (UL − UC)²",
+        "Um = UR + UL + UC",
+        "Um² = UR² + UL² + UC²",
+        "Um = UR + (UL − UC)"
+      ],
+      "t": 0,
+      "izoh": "Vektor diagrammadan: Um = √(UR² + ULC²), bunda ULC = UL − UC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#b9f0c46b"
+    },
+    {
+      "q": "Agar zanjirda faqat aktiv qarshilik va g'altak bo'lsa (kondensator yo'q), tok amplitudasi qanday ifodalanadi?",
+      "v": [
+        "Imax = Um/√(R² + ω²L²)",
+        "Imax = Um/(R + ωL)",
+        "Imax = Um/√(R² + 1/(ωC)²)",
+        "Imax = Um/R"
+      ],
+      "t": 0,
+      "izoh": "XC = 0 bo'lganda Z = √(R² + (ωL)²) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#46692df2"
+    },
+    {
+      "q": "Agar zanjirda faqat aktiv qarshilik va kondensator bo'lsa, fazalar farqi qanday aniqlanadi?",
+      "v": [
+        "tgφ = −1/(ωCR)",
+        "tgφ = ωL/R",
+        "tgφ = R/(ωC)",
+        "tgφ = ωCR"
+      ],
+      "t": 0,
+      "izoh": "XL = 0 bo'lganda tgφ = (XL − XC)/R = −1/(ωCR); kuchlanish tokdan orqada qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#a4ae8518"
+    },
+    {
+      "q": "XL > XC bo'lgan zanjirda fazalar farqi φ qanday ishoraga ega va zanjir qanday xarakterga ega bo'ladi?",
+      "v": [
+        "φ > 0, zanjir induktiv xarakterga ega",
+        "φ < 0, zanjir sig'im xarakterga ega",
+        "φ = 0, zanjir aktiv xarakterga ega",
+        "φ = π, zanjir rezonans holatida"
+      ],
+      "t": 0,
+      "izoh": "XL > XC bo'lsa tgφ > 0, kuchlanish tokdan oldinda yuradi — zanjir induktiv xarakterga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#8b974777"
+    },
+    {
+      "q": "To'la qarshilik Z ning o'lchov birligi nima?",
+      "v": [
+        "Om (Ω)",
+        "Vatt (W)",
+        "Genri (H)",
+        "Farad (F)"
+      ],
+      "t": 0,
+      "izoh": "To'la qarshilik qarshilik bo'lgani uchun Om (Ω) da o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#5f6eebe6"
+    },
+    {
+      "q": "Induktiv qarshilik XL qanday kattaliklarga bog'liq?",
+      "v": [
+        "Tokning siklik chastotasi va g'altakning induktivligiga",
+        "Kondensator sig'imiga",
+        "Aktiv qarshilikka",
+        "Zanjirdagi kuchlanish amplitudasiga"
+      ],
+      "t": 0,
+      "izoh": "XL = ωL — siklik chastota va induktivlikka bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#aada1510"
+    },
+    {
+      "q": "Zanjirdagi tok chastotasi orttirilsa, to'la qarshilik Z (XL > XC bo'lganda) qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Avval kamayib keyin ortadi"
+      ],
+      "t": 0,
+      "izoh": "XL = ωL ortib, XC = 1/(ωC) kamayadi; XL > XC holatda (XL − XC) ortadi, Z ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#1ac8c05e"
+    },
+    {
+      "q": "Ketma-ket RLC zanjirda R = 200 Ω, XL = 251,2 Ω, XC = 318,5 Ω bo'lsa, to'la qarshilik taxminan nechaga teng?",
+      "v": [
+        "211 Ω",
+        "770 Ω",
+        "67 Ω",
+        "200 Ω"
+      ],
+      "t": 0,
+      "izoh": "Z = √(200² + (251,2 − 318,5)²) = √(40000 + 4529) ≈ 211 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#966d5683"
+    },
+    {
+      "q": "Reaktiv qarshilikda davrning ikkinchi choragida to'plangan energiya nima bo'ladi?",
+      "v": [
+        "Manbaga qaytadi",
+        "Issiqlikka aylanadi",
+        "Zanjirda saqlanib qoladi",
+        "Aktiv qarshilikni qizdiradi"
+      ],
+      "t": 0,
+      "izoh": "Davrning keyingi choragida energiya magnit (yoki elektr) maydondan qaytadan manbaga beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#3e9959b6"
+    },
+    {
+      "q": "O'zgaruvchan tok zanjirida tok kuchi tebranishlari bilan kuchlanish tebranishlari orasida faza siljishi nimadan vujudga keladi?",
+      "v": [
+        "Zanjirda reaktiv elementlar (g'altak, kondensator) mavjudligidan",
+        "Simlarning uzunligidan",
+        "Tok kuchining kattaligidan",
+        "Generator quvvatidan"
+      ],
+      "t": 0,
+      "izoh": "Faza siljishi reaktiv qarshiliklar (induktivlik va sig'im) tufayli paydo bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#44307840"
+    },
+    {
+      "q": "Vektor diagrammada UR vektori tok vektoriga nisbatan qanday joylashadi?",
+      "v": [
+        "Tok vektori bilan bir yo'nalishda",
+        "Tok vektoriga tik yuqorida",
+        "Tok vektoriga tik pastda",
+        "Tok vektoriga qarama-qarshi"
+      ],
+      "t": 0,
+      "izoh": "Aktiv qarshilikda kuchlanish tok bilan bir fazada, shuning uchun UR vektori tok vektori bilan bir yo'nalishda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#513415fd"
+    },
+    {
+      "q": "Vektor diagrammada UL vektori tok vektoriga nisbatan qanday joylashadi?",
+      "v": [
+        "Tokdan 90° oldinda (yuqoriga perpendicular)",
+        "Tokdan 90° orqada (pastga perpendicular)",
+        "Tok bilan bir yo'nalishda",
+        "Tokga qarama-qarshi"
+      ],
+      "t": 0,
+      "izoh": "G'altakdagi kuchlanish tokdan π/2 ga oldinda yuradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#2f05f9e6"
+    },
+    {
+      "q": "Zanjirdagi aktiv qarshilik nolga teng bo'lsa, to'la qarshilik nimaga teng bo'ladi?",
+      "v": [
+        "Reaktiv qarshilik moduliga |XL − XC|",
+        "Nolga",
+        "Aktiv qarshilikka",
+        "Cheksizlikka"
+      ],
+      "t": 0,
+      "izoh": "R = 0 bo'lsa Z = |XL − XC| bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#55a44bb1"
+    },
+    {
+      "q": "O'zgaruvchan tokning to'liq zanjirida XL = XC bo'lib qolsa, Z qanday qiymatga tenglashadi?",
+      "v": [
+        "Z = R (minimal qiymat)",
+        "Z = 0",
+        "Z = 2XL",
+        "Z = ∞"
+      ],
+      "t": 0,
+      "izoh": "XL − XC = 0 bo'lganda Z = √(R²) = R — minimal qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#1a16a8ca"
+    },
+    {
+      "q": "tgφ = (XL − XC)/R formulaga ko'ra, R orttirilsa fazalar farqi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi (modul jihatdan)",
+        "Ortadi",
+        "O'zgarmaydi",
+        "π ga tenglashadi"
+      ],
+      "t": 0,
+      "izoh": "R ortsa tgφ moduli kamayadi, fazalar farqi kichrayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni#4ae68197"
+    }
+  ]
+}

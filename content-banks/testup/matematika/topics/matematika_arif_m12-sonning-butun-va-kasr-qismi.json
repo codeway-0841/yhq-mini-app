@@ -1,0 +1,1609 @@
+{
+  "nom": "Sonning butun va kasr qismi",
+  "bolim": "Sonlar va ular ustida amallar",
+  "blok": "arif",
+  "rasmiyBolim": 1,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Meteorologiya stansiyasi kunduzgi haroratni 24,8 daraja deb qayd etdi. Shu sonning butun qismi [24,8] nechaga teng?",
+      "v": [
+        "24",
+        "25",
+        "0,8",
+        "24,8"
+      ],
+      "t": 0,
+      "izoh": "Ta'rifga ko'ra [x] — x dan katta bo'lmagan eng katta butun son. 24 ≤ 24,8 < 25 bo'lgani uchun [24,8] = 24. 25 — eng yaqin butunga yaxlitlash xatosi, 0,8 esa butun qism emas, kasr qism. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-qism-musbat-hisoblash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#3b614207"
+    },
+    {
+      "q": "Qishki tunda Qo'ng'irotda harorat −7,3 darajagacha tushdi. Shu qiymatning butun qismi [−7,3] qanday songa teng?",
+      "v": [
+        "−7",
+        "−0,3",
+        "−8",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Manfiy sonda butun qism sondan chapdagi butunga qarab olinadi. −8 ≤ −7,3 < −7 bo'lgani uchun [−7,3] = −8. −7 — vergulni shunchaki kesib tashlash xatosi, 8 esa ishorani unutish natijasi. Javob: −8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-qism-manfiy-hisoblash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#d9e5e439"
+    },
+    {
+      "q": "Do'kondagi elektron tarozi olma vaznini 3,45 kg deb ko'rsatdi. Shu sonning kasr qismi {3,45} nechaga teng?",
+      "v": [
+        "45",
+        "0,45",
+        "3",
+        "0,55"
+      ],
+      "t": 1,
+      "izoh": "Kasr qism {x} = x − [x] formulasi bilan topiladi. Bu yerda [3,45] = 3, demak {3,45} = 3,45 − 3 = 0,45. 45 — o'nlik xonalarni raqam deb o'qish, 3 — butun qism, 0,55 esa 1 dan ayirish xatosi. Javob: 0,45.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-qism-hisoblash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#61e2786e"
+    },
+    {
+      "q": "Sardor {−2,6} ni hisoblaganda javobi 0,6 chiqdi. Ta'rifga ko'ra {x} = x − [x] bo'lsa, to'g'ri qiymat qanday?",
+      "v": [
+        "0,6",
+        "−0,6",
+        "0",
+        "0,4"
+      ],
+      "t": 3,
+      "izoh": "Avval butun qism topiladi: −3 ≤ −2,6 < −2, demak [−2,6] = −3. Endi {−2,6} = −2,6 − (−3) = 0,4. Sardor ishorani e'tiborsiz qoldirib, verguldan keyingi raqamni javob deb olgan. Javob: 0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qism-manfiy",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#80a23113"
+    },
+    {
+      "q": "Ma'lumki har qanday haqiqiy son uchun [x] + {x} = x tenglik o'rinli. Agar [x] = 12 va {x} = 0,35 bo'lsa, x nechaga teng?",
+      "v": [
+        "12,65",
+        "12,035",
+        "12,35",
+        "4,2"
+      ],
+      "t": 2,
+      "izoh": "Ayniyatga ko'ra x = [x] + {x}. O'rniga qo'yamiz: x = 12 + 0,35 = 12,35. Tekshiramiz: [12,35] = 12 va {12,35} = 0,35, ya'ni shart bajarildi. 4,2 — qo'shish o'rniga ko'paytirish xatosi. Javob: 12,35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-yigindi",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#348d18cc"
+    },
+    {
+      "q": "Kvadrat shaklidagi maydonning yuzasi 50 m² ga teng. Uning tomoni √50 m bo'lsa, [√50] qiymati nechaga teng?",
+      "v": [
+        "7",
+        "8",
+        "25",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "√49 = 7 va √64 = 8 bo'lgani uchun 7 < √50 < 8. Demak √50 ning butun qismi 7 ga teng. 8 — yuqoriga yaxlitlash, 25 — yuzani ikkiga bo'lish, 5 — √25 bilan chalkashtirish xatosi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-butun-qismi",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#13012500"
+    },
+    {
+      "q": "[4,9] + {2,3} ifodaning qiymatini hisoblang va natijani o'nli kasr ko'rinishida ko'rsating.",
+      "v": [
+        "5,3",
+        "7,2",
+        "6",
+        "4,3"
+      ],
+      "t": 3,
+      "izoh": "Alohida hisoblaymiz: [4,9] = 4, chunki 4 ≤ 4,9 < 5. So'ng {2,3} = 2,3 − 2 = 0,3. Yig'indi 4 + 0,3 = 4,3. 5,3 — 4,9 ni 5 ga yaxlitlash, 7,2 — belgilarni e'tiborsiz qoldirib sonlarni qo'shish, 6 — kasr qism o'rniga butun qismni olish. Javob: 4,3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-hisoblash-aralash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#2ee65f0c"
+    },
+    {
+      "q": "[x] = 5 tenglamani qanoatlantiruvchi barcha x sonlar to'plamini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "5 < x < 6",
+        "5 ≤ x < 6",
+        "5 < x ≤ 6",
+        "x = 5"
+      ],
+      "t": 1,
+      "izoh": "[x] = 5 bo'lishi uchun x soni 5 dan kichik bo'lmasligi va 6 ga yetmasligi kerak. Ya'ni 5 ≤ x < 6. Chap chegara qo'shiladi, chunki [5] = 5, o'ng chegara qo'shilmaydi, chunki [6] = 6. Javob: 5 ≤ x < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglama-butun-qism-oddiy",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#43cac609"
+    },
+    {
+      "q": "{x} = 0,25 va [x] = 3 shartlarni bir vaqtda qanoatlantiruvchi yagona x sonini toping.",
+      "v": [
+        "0,25",
+        "3,25",
+        "3,75",
+        "4,25"
+      ],
+      "t": 1,
+      "izoh": "x = [x] + {x} ayniyatidan foydalanamiz. Demak x = 3 + 0,25 = 3,25. Tekshiruv: [3,25] = 3 va {3,25} = 0,25, ikkala shart ham bajarildi. 3,75 — kasr qismni 1 dan ayirish, 4,25 — butun qismni bittaga oshirish xatosi. Javob: 3,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglama-kasr-qism",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#be9fb70b"
+    },
+    {
+      "q": "Anvar [x] ≤ 2 tengsizlikni yechmoqda. Bu tengsizlikni qanoatlantiruvchi x sonlar to'plami qanday ko'rinishga ega?",
+      "v": [
+        "x ≤ 2",
+        "x ≤ 3",
+        "2 ≤ x < 3",
+        "x < 3"
+      ],
+      "t": 3,
+      "izoh": "Butun qism 2 dan katta bo'lmasligi kerak, ya'ni [x] qiymati 2, 1, 0, −1 va hokazo bo'lishi mumkin. Eng katta ruxsat etilgan butun qism 2, unga x < 3 mos keladi. Agar x = 3 bo'lsa [x] = 3 chiqadi va shart buziladi. Javob: x < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-butun-qism",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#4b7e30a3"
+    },
+    {
+      "q": "Dilnozaning hamyonida 47 000 so'm bor. Bitta daftar 6 000 so'm turadi. U ko'pi bilan nechta daftar sotib ola oladi?",
+      "v": [
+        "7",
+        "8",
+        "7,8",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Daftarlar soni butun bo'lgani uchun bo'linmaning butun qismi olinadi: 47 000 : 6 000 ≈ 7,83. Demak [7,83] = 7 ta daftar. Tekshiramiz: 7 · 6 000 = 42 000 so'm, qolgan 5 000 so'm yana bitta daftarga yetmaydi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-narx-nechta",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#0b3af6ba"
+    },
+    {
+      "q": "Fermer xo'jaligida 950 ta tuxum bor va har bir lotokka 30 tadan joylanadi. To'liq to'lgan lotoklar soni nechta bo'ladi?",
+      "v": [
+        "32",
+        "20",
+        "31",
+        "31,7"
+      ],
+      "t": 2,
+      "izoh": "To'liq lotoklar soni 950 : 30 bo'linmaning butun qismiga teng. 950 : 30 ≈ 31,67, demak [31,67] = 31 ta lotok to'liq to'ladi. 30 · 31 = 930, qolgan 20 ta tuxum lotokni to'ldirmaydi. 32 — chala lotokni ham sanash xatosi. Javob: 31.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-qadoq-quti",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#c897464e"
+    },
+    {
+      "q": "Marafonchi masofani 227 daqiqada bosib o'tdi. Bu vaqt necha to'liq soatni tashkil qiladi, ya'ni [227/60] nechaga teng?",
+      "v": [
+        "4",
+        "3,8",
+        "47",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Bir soat 60 daqiqa, shuning uchun 227 : 60 ≈ 3,78 soat bo'ladi. To'liq soatlar soni bu sonning butun qismi, ya'ni 3. Qolgan 227 − 180 = 47 daqiqa to'liq soat hosil qilmaydi. 4 — yuqoriga yaxlitlash xatosi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-vaqt-soat",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#f1e6dc23"
+    },
+    {
+      "q": "Quyidagi tasdiqlardan qaysi biri barcha haqiqiy x sonlar uchun har doim to'g'ri bo'ladi?",
+      "v": [
+        "[x] < x ≤ [x] + 1",
+        "[x] ≤ x < [x] + 1",
+        "[−x] = −[x]",
+        "{x} + {−x} = 1"
+      ],
+      "t": 1,
+      "izoh": "Butun qism ta'rifining o'zi [x] ≤ x < [x] + 1 ko'rinishida yoziladi. Birinchi variant x butun bo'lganda buziladi, chunki u holda [x] = x. Uchinchi variant x = 2,5 da noto'g'ri: [−2,5] = −3, lekin −[2,5] = −2. To'rtinchi variant butun x da 0 beradi. Javob: [x] ≤ x < [x] + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-qism-xossasi-tekshirish",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#07435f73"
+    },
+    {
+      "q": "Kasr qism {x} qanday oraliqda qiymat qabul qilishini ko'rsatgan to'g'ri javobni tanlang.",
+      "v": [
+        "0 < {x} < 1",
+        "0 < {x} ≤ 1",
+        "0 ≤ {x} < 1",
+        "−1 < {x} < 1"
+      ],
+      "t": 2,
+      "izoh": "Ta'rifga ko'ra {x} = x − [x] va [x] ≤ x < [x] + 1. Bu tengsizlikdan 0 ≤ x − [x] < 1 kelib chiqadi. Nol qiymat butun sonlarda erishiladi, masalan {7} = 0, birga esa hech qachon yetilmaydi. Javob: 0 ≤ {x} < 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-qism-diapazon",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#16aa363e"
+    },
+    {
+      "q": "Ikki son berilgan: a = −4,2 va b = 4,2. Shu sonlarning butun qismlari [a] va [b] yig'indisi nechaga teng?",
+      "v": [
+        "−1",
+        "0",
+        "1",
+        "−9"
+      ],
+      "t": 0,
+      "izoh": "Musbat son uchun [4,2] = 4. Manfiy son uchun butun qism chapdagi butunga olinadi: [−4,2] = −5. Yig'indi −5 + 4 = −1. 0 — manfiy sonda vergulni kesib tashlash xatosi, −9 — ikkala songa ham manfiy ishora qo'yish. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-solishtirish",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#a96e0a9d"
+    },
+    {
+      "q": "[2x − 1] = 3 tenglamaning yechimlari to'plamini to'g'ri ko'rsatgan javobni belgilang.",
+      "v": [
+        "2 ≤ x < 2,5",
+        "2 < x < 2,5",
+        "1,5 ≤ x < 2",
+        "2 ≤ x < 3"
+      ],
+      "t": 0,
+      "izoh": "Butun qism ta'rifi bo'yicha 3 ≤ 2x − 1 < 4. Hamma qismga 1 qo'shamiz: 4 ≤ 2x < 5. Endi ikkiga bo'lamiz: 2 ≤ x < 2,5. Chap chegara qo'shiladi, o'ng chegara qo'shilmaydi. Javob: 2 ≤ x < 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglama-butun-qism-ichida-ifoda",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#d441c6f0"
+    },
+    {
+      "q": "Avtomobil bakida 38 litr benzin bor va u har 100 km ga 9 litr sarflaydi. To'liq necha marta yuz kilometr yo'l bosa oladi?",
+      "v": [
+        "5",
+        "4,2",
+        "4",
+        "422"
+      ],
+      "t": 2,
+      "izoh": "Har yuz kilometrga 9 litr ketadi, demak 38 : 9 ≈ 4,22 marta yuz kilometr chiqadi. To'liq marta soni butun qism, ya'ni 4 ga teng. 422 — umumiy masofa kilometrda, so'ralgan son emas. 5 — yuqoriga yaxlitlash xatosi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-masofa-yoqilgi",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#7c44da66"
+    },
+    {
+      "q": "S = [1,3] + [2,7] + [3,5] + [4,9] yig'indining qiymatini hisoblang.",
+      "v": [
+        "14",
+        "10",
+        "12,4",
+        "2,4"
+      ],
+      "t": 1,
+      "izoh": "Har bir qo'shiluvchining butun qismini alohida olamiz: 1, 2, 3 va 4. Ularning yig'indisi 1 + 2 + 3 + 4 = 10. 12,4 — butun qismni olmasdan sonlarni qo'shish, 14 — har birini yuqoriga yaxlitlash, 2,4 esa kasr qismlar yig'indisi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-qator",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#7b06e4f2"
+    },
+    {
+      "q": "Sinfdagi 7 ta o'quvchining bir haftada o'qigan kitob soni jami 30 ta bo'ldi. O'rtacha qiymatning butun qismi nechaga teng?",
+      "v": [
+        "5",
+        "4,3",
+        "2",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "O'rtacha qiymat 30 : 7 ≈ 4,29 ta kitobni tashkil qiladi. Uning butun qismi [4,29] = 4 ga teng. 2 — qoldiq, chunki 7 · 4 = 28 va 30 − 28 = 2. 5 — o'rtachani yuqoriga yaxlitlash xatosi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-statistika-ortacha",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#4af7cedf"
+    },
+    {
+      "q": "Yuk mashinasining og'irligi elektron tarozida 6,95 tonna deb o'lchandi. Shu sonning butun qismi [6,95] qanday qiymatga ega?",
+      "v": [
+        "7",
+        "0,95",
+        "6",
+        "6,9"
+      ],
+      "t": 2,
+      "izoh": "Butun qism sondan oshib ketmasligi kerak, shuning uchun 6 ≤ 6,95 < 7 dan [6,95] = 6 kelib chiqadi. 7 — eng yaqin butunga yaxlitlash, 0,95 — kasr qism, 6,9 esa oxirgi raqamni tashlash xatosi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-qism-musbat-hisoblash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#927a0225"
+    },
+    {
+      "q": "Erta bahorda tongdagi harorat −0,4 daraja bo'ldi. Shu sonning butun qismini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "−1",
+        "0",
+        "−0,4",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Butun qism sondan katta bo'lmagan eng katta butun sondir. Bu yerda −1 ≤ −0,4 < 0, demak [−0,4] = −1. Ko'p o'quvchi vergul oldidagi nolni ko'rib javobni 0 deb yozadi, lekin 0 soni −0,4 dan katta. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-qism-manfiy-hisoblash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#2771fb3d"
+    },
+    {
+      "q": "Dehqon bozorga 12,08 tonna kartoshka olib keldi. Shu sonning kasr qismi {12,08} qanday qiymatga teng?",
+      "v": [
+        "0,8",
+        "8",
+        "12",
+        "0,08"
+      ],
+      "t": 3,
+      "izoh": "Butun qism [12,08] = 12 bo'ladi. Demak {12,08} = 12,08 − 12 = 0,08. 0,8 — o'nlik xonasini noto'g'ri o'qish, 8 — verguldan keyingi raqamlarni butun son deb olish, 12 esa butun qism. Javob: 0,08.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-qism-hisoblash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#1df07dd0"
+    },
+    {
+      "q": "Manfiy son berilgan: x = −5,25. Shu sonning kasr qismi {x} ni ta'rif bo'yicha hisoblang va to'g'ri variantni tanlang.",
+      "v": [
+        "0,25",
+        "0,75",
+        "−0,25",
+        "−0,75"
+      ],
+      "t": 1,
+      "izoh": "Avval butun qism topiladi: −6 ≤ −5,25 < −5, demak [−5,25] = −6. So'ng {−5,25} = −5,25 − (−6) = 0,75. Kasr qism hech qachon manfiy bo'lmaydi, shuning uchun −0,25 va −0,75 variantlari ta'rifga zid. Javob: 0,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qism-manfiy",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#67eadf06"
+    },
+    {
+      "q": "x sonining kasr qismi 0,6 ga teng, butun qismi esa kasr qismidan 10 marta katta songa teng. x nechaga teng?",
+      "v": [
+        "10,6",
+        "6,6",
+        "6,06",
+        "6,4"
+      ],
+      "t": 1,
+      "izoh": "Butun qism [x] = 10 · 0,6 = 6 bo'ladi. Ayniyat bo'yicha x = [x] + {x} = 6 + 0,6 = 6,6. 10,6 — 10 sonini butun qism deb olish xatosi, 6,4 esa kasr qismni 1 dan ayirish. Javob: 6,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyat-yigindi",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#cbb450a3"
+    },
+    {
+      "q": "[√30] + [√7] ifodaning qiymatini toping. Hisoblashda kalkulyatorsiz, faqat kvadratlar orqali chegaralang.",
+      "v": [
+        "8",
+        "9",
+        "6",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "25 < 30 < 36 bo'lgani uchun 5 < √30 < 6, demak [√30] = 5. Yana 4 < 7 < 9 dan 2 < √7 < 3, demak [√7] = 2. Yig'indi 5 + 2 = 7. 6 — ildiz ostidagi sonlarni qo'shib [√37] ni hisoblash xatosi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-butun-qismi",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#fd86b509"
+    },
+    {
+      "q": "[−1,5] · {3,5} ko'paytmaning qiymatini hisoblang va natijani o'nli kasr ko'rinishida yozing.",
+      "v": [
+        "−1",
+        "−0,5",
+        "0,5",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Manfiy son uchun [−1,5] = −2, chunki −2 ≤ −1,5 < −1. Musbat son uchun {3,5} = 3,5 − 3 = 0,5. Ko'paytma −2 · 0,5 = −1. −0,5 — butun qismni −1 deb olish xatosi, 1 esa ishorani yo'qotish. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-hisoblash-aralash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#86a19c4d"
+    },
+    {
+      "q": "[x] = −3 tenglamaning yechimlari qaysi oraliqda joylashganini ko'rsatgan javobni tanlang.",
+      "v": [
+        "−4 < x ≤ −3",
+        "−3 < x < −2",
+        "−3 ≤ x < −2",
+        "x = −3"
+      ],
+      "t": 2,
+      "izoh": "Butun qism ta'rifiga ko'ra [x] = −3 bo'lsa, −3 ≤ x < −2 bo'ladi. Chap chegara qo'shiladi, chunki [−3] = −3. O'ng chegara qo'shilmaydi, chunki [−2] = −2. Manfiy sonlarda oraliq chapga emas, o'ngga cho'ziladi. Javob: −3 ≤ x < −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglama-butun-qism-oddiy",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#8d8dc709"
+    },
+    {
+      "q": "{x} = 0,4 tenglamani qanoatlantiruvchi va 5 dan katta bo'lmagan eng katta x sonini toping.",
+      "v": [
+        "5,4",
+        "4,6",
+        "5",
+        "4,4"
+      ],
+      "t": 3,
+      "izoh": "Kasr qismi 0,4 bo'lgan sonlar ketma-ketligi: … 3,4; 4,4; 5,4; 6,4 … Bulardan 5 dan katta bo'lmaganlarining eng kattasi 4,4. 5,4 soni 5 dan katta, shuning uchun shartga to'g'ri kelmaydi. 5 sonining kasr qismi esa nol. Javob: 4,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglama-kasr-qism",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#fcf5871a"
+    },
+    {
+      "q": "1 ≤ [x] < 4 qo'sh tengsizlikni qanoatlantiruvchi barcha x sonlar to'plamini toping.",
+      "v": [
+        "1 ≤ x < 5",
+        "1 ≤ x < 4",
+        "1 < x < 4",
+        "1 ≤ x ≤ 4"
+      ],
+      "t": 1,
+      "izoh": "Butun qism butun son bo'lgani uchun [x] faqat 1, 2 yoki 3 qiymatlarini oladi. [x] = 1 ga 1 ≤ x < 2, [x] = 2 ga 2 ≤ x < 3, [x] = 3 ga 3 ≤ x < 4 mos keladi. Bularning birlashmasi 1 ≤ x < 4. Javob: 1 ≤ x < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-butun-qism",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#b5b52cf5"
+    },
+    {
+      "q": "Bir quti sut 11 500 so'm turadi. Kamolaning 100 000 so'mi bor. U eng ko'pi bilan nechta quti sut sotib ola oladi?",
+      "v": [
+        "9",
+        "8,7",
+        "8",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Qutilar soni butun bo'lgani uchun 100 000 : 11 500 ≈ 8,7 bo'linmaning butun qismini olamiz. [8,7] = 8 ta quti chiqadi. Tekshiramiz: 8 · 11 500 = 92 000 so'm, qolgan 8 000 so'm yana bitta qutiga yetmaydi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-narx-nechta",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#3decf129"
+    },
+    {
+      "q": "Kitob do'konida 512 ta kitobni har biriga 24 tadan sig'adigan tokchalarga joylashtirmoqchi. To'liq to'ladigan tokchalar soni nechta?",
+      "v": [
+        "21",
+        "22",
+        "20",
+        "21,3"
+      ],
+      "t": 0,
+      "izoh": "512 : 24 ≈ 21,33, demak to'liq tokchalar soni [21,33] = 21 ta. Ular 24 · 21 = 504 ta kitobni oladi, qolgan 8 ta kitob tokchani to'ldirmaydi. 22 — chala tokchani ham to'liq deb sanash xatosi. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-qadoq-quti",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#27c94ecd"
+    },
+    {
+      "q": "Konsert 100 daqiqa davom etdi. Shu vaqt ichida nechta to'liq soat o'tganini aniqlang.",
+      "v": [
+        "1",
+        "2",
+        "1,7",
+        "40"
+      ],
+      "t": 0,
+      "izoh": "Bir soatda 60 daqiqa bor, shuning uchun 100 : 60 ≈ 1,67 soat bo'ladi. To'liq soatlar soni bu sonning butun qismi, ya'ni 1 ga teng. Qolgan 100 − 60 = 40 daqiqa yangi to'liq soat hosil qilmaydi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-vaqt-soat",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#22dedead"
+    },
+    {
+      "q": "n butun son, x esa ixtiyoriy haqiqiy son bo'lsa, quyidagi tengliklardan qaysi biri har doim o'rinli bo'ladi?",
+      "v": [
+        "[x + n] = [x] + [n] + 1",
+        "{x + n} = {x} + n",
+        "[x + n] = [x] + n",
+        "[n · x] = n · [x]"
+      ],
+      "t": 2,
+      "izoh": "Butun sonni butun qism belgisidan tashqariga chiqarish mumkin: [x + n] = [x] + n, chunki butun son qo'shilganda kasr qism o'zgarmaydi. Birinchi variant noto'g'ri, chunki n butun bo'lgani uchun [n] = n va ortiqcha +1 qo'shiladi (masalan x = 0,5, n = 2 da chap tomon 2, o'ng tomon 3). Ikkinchi variant ham noto'g'ri: {x + n} = {x} bo'ladi, n qo'shilmaydi. To'rtinchi tenglik x = 0,5 va n = 2 da buziladi: [2 · 0,5] = 1, lekin 2 · [0,5] = 0. Javob: [x + n] = [x] + n.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-qism-xossasi-tekshirish",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#a258e789"
+    },
+    {
+      "q": "Agar x = 7,3 bo'lsa, {x} + {−x} yig'indi qanday songa teng ekanini hisoblang.",
+      "v": [
+        "0",
+        "1",
+        "0,6",
+        "1,4"
+      ],
+      "t": 1,
+      "izoh": "Musbat son uchun {7,3} = 0,3. Manfiy son uchun [−7,3] = −8, demak {−7,3} = −7,3 + 8 = 0,7. Yig'indi 0,3 + 0,7 = 1. 0 — kasr qismni toq funksiya deb o'ylash xatosi, 0,6 va 1,4 esa bir xil kasr qismni ikki marta qo'shish. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-qism-diapazon",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#ea6ba37c"
+    },
+    {
+      "q": "a = 3,9 va b = 4,1 sonlari uchun [b] − [a] ayirmani b − a ayirma bilan solishtiring va to'g'ri xulosani tanlang.",
+      "v": [
+        "[b] − [a] = b − a",
+        "[b] − [a] < b − a",
+        "[b] − [a] = 0",
+        "[b] − [a] > b − a"
+      ],
+      "t": 3,
+      "izoh": "Butun qismlar [4,1] = 4 va [3,9] = 3, ularning ayirmasi 4 − 3 = 1. Sonlarning o'z ayirmasi esa 4,1 − 3,9 = 0,2. 1 soni 0,2 dan katta, demak [b] − [a] > b − a. Bu butun qism funksiyasining sakrash xossasini ko'rsatadi. Javob: [b] − [a] > b − a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-solishtirish",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#48e428c2"
+    },
+    {
+      "q": "[x/3] = 2 tenglamaning yechimlari to'plamini to'g'ri ko'rsatgan javobni belgilang.",
+      "v": [
+        "6 < x < 9",
+        "2 ≤ x < 3",
+        "6 ≤ x < 9",
+        "6 ≤ x ≤ 9"
+      ],
+      "t": 2,
+      "izoh": "Butun qism ta'rifidan 2 ≤ x/3 < 3 hosil bo'ladi. Barcha qismni 3 ga ko'paytiramiz: 6 ≤ x < 9. Chap chegara qo'shiladi, chunki x = 6 da [6/3] = 2. O'ng chegara qo'shilmaydi, chunki x = 9 da [9/3] = 3. Javob: 6 ≤ x < 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglama-butun-qism-ichida-ifoda",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#853fc391"
+    },
+    {
+      "q": "Traktor bir gektar yerni haydashga 14 litr yoqilg'i sarflaydi. Omborda 200 litr yoqilg'i bo'lsa, to'liq necha gektar haydaladi?",
+      "v": [
+        "14",
+        "15",
+        "14,3",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Haydaladigan gektarlar soni 200 : 14 ≈ 14,29 bo'linmaning butun qismiga teng, ya'ni 14 gektar. Bunga 14 · 14 = 196 litr ketadi, qolgan 4 litr butun gektarga yetmaydi. 15 — yuqoriga yaxlitlash xatosi. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-masofa-yoqilgi",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#17ef80e5"
+    },
+    {
+      "q": "[7/2] + [9/2] + [11/2] + [13/2] yig'indining qiymatini hisoblang.",
+      "v": [
+        "20",
+        "22",
+        "2",
+        "18"
+      ],
+      "t": 3,
+      "izoh": "Har bir kasrni o'nli ko'rinishga keltiramiz: 3,5; 4,5; 5,5 va 6,5. Ularning butun qismlari 3, 4, 5 va 6. Yig'indi 3 + 4 + 5 + 6 = 18. 20 — butun qismni olmasdan qo'shish, 22 — har birini yuqoriga yaxlitlash, 2 esa kasr qismlar yig'indisi. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-qator",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#8140b446"
+    },
+    {
+      "q": "Bir haftada do'konga kirgan mijozlar soni jami 269 ta bo'ldi. Kunlik o'rtacha mijozlar sonining butun qismi nechaga teng?",
+      "v": [
+        "39",
+        "38",
+        "38,4",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Haftada 7 kun bor, shuning uchun o'rtacha 269 : 7 ≈ 38,43 mijoz to'g'ri keladi. Uning butun qismi [38,43] = 38 ga teng. 3 — qoldiq, chunki 7 · 38 = 266 va 269 − 266 = 3. 39 — o'rtachani yuqoriga yaxlitlash. Javob: 38.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-statistika-ortacha",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#41ea9262"
+    },
+    {
+      "q": "Aviachipta narxi 1 875 400 so'mni tashkil etadi. Bu summa necha million so'mni to'liq tashkil qilishini aniqlang.",
+      "v": [
+        "2",
+        "1",
+        "1,8",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "Summani millionda yozamiz: 1 875 400 so'm = 1,8754 million so'm. To'liq millionlar soni bu sonning butun qismi, ya'ni [1,8754] = 1. 2 — yuqoriga yaxlitlash, 1,8 — butun qismni olmaslik, 18 esa vergulni bir xona siljitish xatosi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-qism-musbat-hisoblash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#3d97b37b"
+    },
+    {
+      "q": "[−9] + [−9,1] yig'indining qiymatini hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "−18",
+        "−20",
+        "−19,1",
+        "−19"
+      ],
+      "t": 3,
+      "izoh": "−9 sonining o'zi butun, shuning uchun [−9] = −9. Ikkinchi qo'shiluvchida −10 ≤ −9,1 < −9, demak [−9,1] = −10. Yig'indi −9 + (−10) = −19. −18 — ikkala qo'shiluvchini ham −9 deb olish, −20 — ikkalasini −10 deb olish xatosi. Javob: −19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-qism-manfiy-hisoblash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#e4a18612"
+    },
+    {
+      "q": "Marafon masofasi 42,195 km ga teng. Shu sonning kasr qismini kilometrda hisoblab ko'rsating.",
+      "v": [
+        "0,195",
+        "0,805",
+        "195",
+        "42"
+      ],
+      "t": 0,
+      "izoh": "Butun qism [42,195] = 42 km. Kasr qism {42,195} = 42,195 − 42 = 0,195 km. 0,805 — kasr qismni 1 dan ayirish xatosi, 195 — metrni kilometr bilan chalkashtirish, 42 esa butun qism. Javob: 0,195.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-qism-hisoblash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#26c739cc"
+    },
+    {
+      "q": "Agar x = −3,8 bo'lsa, [x] + {x} yig'indining qiymati nechaga teng ekanini asoslab toping.",
+      "v": [
+        "−4,2",
+        "−3,6",
+        "−3,8",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "Manfiy son uchun [−3,8] = −4, chunki −4 ≤ −3,8 < −3. Kasr qism {−3,8} = −3,8 + 4 = 0,2. Yig'indi −4 + 0,2 = −3,8, ya'ni sonning o'zi. Bu [x] + {x} = x ayniyatining manfiy sonlarda ham ishlashini ko'rsatadi. Javob: −3,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qism-manfiy",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#158189b5"
+    },
+    {
+      "q": "Bir sonning butun qismi bilan kasr qismining yig'indisi 8,35 ga teng. Shu sonning butun qismi nechaga teng?",
+      "v": [
+        "9",
+        "0,35",
+        "8,35",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "[x] + {x} = x ayniyatiga ko'ra sonning o'zi 8,35 ga teng. Endi butun qismini olamiz: 8 ≤ 8,35 < 9, demak [8,35] = 8. 9 — eng yaqin butunga yaxlitlash, 0,35 esa kasr qism. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-yigindi",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#c8570573"
+    },
+    {
+      "q": "n natural son bo'lsa, [√n] = 4 tenglik o'rinli bo'ladigan n larning eng kichigi va eng kattasini toping.",
+      "v": [
+        "16 va 25",
+        "16 va 24",
+        "17 va 24",
+        "15 va 24"
+      ],
+      "t": 1,
+      "izoh": "[√n] = 4 bo'lishi uchun 4 ≤ √n < 5 bo'lishi kerak. Ikkala tomonni kvadratga ko'taramiz: 16 ≤ n < 25. Natural n uchun bu 16 dan 24 gacha bo'lgan sonlar. 25 kiritilmaydi, chunki [√25] = 5. Javob: 16 va 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-butun-qismi",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#edcf54e3"
+    },
+    {
+      "q": "{7,2} + {−7,2} + [7,2] ifodaning qiymatini bosqichma-bosqich hisoblang va javobni tanlang.",
+      "v": [
+        "7",
+        "6,4",
+        "8",
+        "7,4"
+      ],
+      "t": 2,
+      "izoh": "Birinchi qo'shiluvchi {7,2} = 0,2. Ikkinchisi uchun [−7,2] = −8, demak {−7,2} = −7,2 + 8 = 0,8. Uchinchisi [7,2] = 7. Jami 0,2 + 0,8 + 7 = 8. 7 — {−7,2} ni −0,2 deb olish, 6,4 esa uni −0,8 deb olish xatosi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-hisoblash-aralash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#3ab834c0"
+    },
+    {
+      "q": "[x] = 0 tenglamaning yechimlari orasida manfiy son bormi degan savolga to'g'ri javobni tanlang.",
+      "v": [
+        "Yo'q, chunki 0 ≤ x < 1",
+        "Ha, masalan x = −0,5",
+        "Ha, barcha manfiy sonlar mos keladi",
+        "Yo'q, chunki faqat x = 0 yechim"
+      ],
+      "t": 0,
+      "izoh": "[x] = 0 shartidan 0 ≤ x < 1 kelib chiqadi, ya'ni yechimlar nolda boshlanadi. Manfiy sonlar bu oraliqqa tushmaydi: masalan [−0,5] = −1, nol emas. Oraliqda faqat x = 0 emas, balki 0,3 yoki 0,99 kabi cheksiz ko'p son bor. Javob: yo'q, chunki 0 ≤ x < 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglama-butun-qism-oddiy",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#125fda9b"
+    },
+    {
+      "q": "{x} = 0,75 va −4 < x < −3 shartlarni bir vaqtda qanoatlantiruvchi x sonini toping.",
+      "v": [
+        "−3,25",
+        "−3,75",
+        "−4,75",
+        "−4,25"
+      ],
+      "t": 0,
+      "izoh": "Berilgan oraliqda butun qism [x] = −4 bo'ladi. Ayniyatdan x = [x] + {x} = −4 + 0,75 = −3,25. Tekshiramiz: −4 < −3,25 < −3 va {−3,25} = −3,25 + 4 = 0,75. −3,75 — kasr qismni ayirish xatosi. Javob: −3,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglama-kasr-qism",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#52e647d8"
+    },
+    {
+      "q": "[x] > 2 tengsizlikni qanoatlantiruvchi x sonlarning eng kichik chegarasini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "x > 2",
+        "x > 3",
+        "x ≥ 3",
+        "x ≥ 2"
+      ],
+      "t": 2,
+      "izoh": "Butun qism butun son bo'lgani uchun [x] > 2 sharti [x] ≥ 3 bilan bir xil. Bunga esa x ≥ 3 mos keladi. x = 2,5 bo'lsa [x] = 2 chiqadi va shart bajarilmaydi, shuning uchun x > 2 javobi noto'g'ri. Javob: x ≥ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-butun-qism",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#79510d0b"
+    },
+    {
+      "q": "Bir dona g'isht 1 350 so'm turadi. Quruvchida 500 000 so'm bor va yetkazib berishga 45 000 so'm ajratdi. Nechta g'isht ola oladi?",
+      "v": [
+        "370",
+        "337",
+        "338",
+        "337,04"
+      ],
+      "t": 1,
+      "izoh": "Avval g'ishtga qoladigan pulni topamiz: 500 000 − 45 000 = 455 000 so'm. So'ng 455 000 : 1 350 ≈ 337,04 va butun qismini olamiz. Demak 337 dona g'isht chiqadi. 370 — yetkazib berish xarajatini ayirmaslik xatosi. Javob: 337.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-narx-nechta",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#1328f997"
+    },
+    {
+      "q": "Zavodda 1 000 litr sharbat bor va har bir shishaga 0,75 litrdan quyiladi. To'liq to'ladigan shishalar soni nechta?",
+      "v": [
+        "1334",
+        "750",
+        "1333,3",
+        "1333"
+      ],
+      "t": 3,
+      "izoh": "Shishalar soni 1 000 : 0,75 ≈ 1333,33 bo'linmaning butun qismiga teng, ya'ni 1333 ta. Ular 0,75 · 1333 = 999,75 litr sharbatni oladi, qolgan 0,25 litr shishani to'ldirmaydi. 750 — bo'lish o'rniga ko'paytirish xatosi. Javob: 1333.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-qadoq-quti",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#8f5541d0"
+    },
+    {
+      "q": "Poyezd yo'lda 1 000 daqiqa yurdi. Bu vaqt necha to'liq sutkani va necha to'liq soatni tashkil qiladi?",
+      "v": [
+        "1 sutka va 16 soat",
+        "0 sutka va 17 soat",
+        "0 sutka va 16 soat",
+        "1 sutka va 6 soat"
+      ],
+      "t": 2,
+      "izoh": "Bir sutkada 1 440 daqiqa bor, 1 000 : 1 440 ≈ 0,69, demak to'liq sutka yo'q. Soatlar uchun 1 000 : 60 ≈ 16,67 va butun qismi 16. Demak 0 sutka va 16 soat. 17 — soatni yuqoriga yaxlitlash xatosi. Javob: 0 sutka va 16 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-vaqt-soat",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#02310d5f"
+    },
+    {
+      "q": "Quyidagi tasdiqlardan qaysi biri noto'g'ri ekanini aniqlang va o'sha variantni belgilang.",
+      "v": [
+        "[x] har doim x dan kichik",
+        "{x} har doim manfiy bo'lmagan son",
+        "[x] har doim butun son",
+        "x butun bo'lsa {x} = 0 bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "x butun son bo'lganda [x] = x bo'ladi, masalan [6] = 6. Demak butun qism har doim sondan kichik degan tasdiq noto'g'ri, to'g'risi [x] ≤ x. Qolgan uch tasdiq ta'rifdan bevosita kelib chiqadi va har doim bajariladi. Javob: [x] har doim x dan kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-qism-xossasi-tekshirish",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#e0dd31c8"
+    },
+    {
+      "q": "{x} = 1,2 tenglama nechta yechimga ega ekanini aniqlang va sababini ko'rsating.",
+      "v": [
+        "Bitta yechim, x = 1,2",
+        "Cheksiz ko'p yechim bor",
+        "Ikkita yechim bor",
+        "Yechimi yo'q, chunki {x} < 1"
+      ],
+      "t": 3,
+      "izoh": "Kasr qism ta'rifiga ko'ra 0 ≤ {x} < 1 bo'ladi, ya'ni u hech qachon 1 ga yetmaydi. 1,2 soni bu oraliqdan tashqarida, shuning uchun tenglamaning yechimi yo'q. x = 1,2 ni tekshirsak {1,2} = 0,2 chiqadi, 1,2 emas. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-qism-diapazon",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#8b6256bc"
+    },
+    {
+      "q": "[2,9], [−2,9], {2,9} va {−2,9} qiymatlarining ichida eng kattasi qaysi biri ekanini aniqlang.",
+      "v": [
+        "{2,9}",
+        "[2,9]",
+        "[−2,9]",
+        "{−2,9}"
+      ],
+      "t": 1,
+      "izoh": "Hisoblaymiz: [2,9] = 2 va [−2,9] = −3. Kasr qismlar {2,9} = 0,9 hamda {−2,9} = −2,9 + 3 = 0,1. To'rt qiymatni solishtiramiz: −3 < 0,1 < 0,9 < 2. Eng kattasi 2, ya'ni [2,9]. Javob: [2,9].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-solishtirish",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#bc3b4ab6"
+    },
+    {
+      "q": "[3x] = 5 tenglamaning yechimlari orasidagi x ning eng kichik qiymatini toping.",
+      "v": [
+        "5/2",
+        "5/3",
+        "2",
+        "3/5"
+      ],
+      "t": 1,
+      "izoh": "Butun qism ta'rifidan 5 ≤ 3x < 6 hosil bo'ladi. Barcha qismni 3 ga bo'lamiz: 5/3 ≤ x < 2. Chap chegara oraliqqa kiradi, shuning uchun eng kichik qiymat 5/3 ga teng. 2 — o'ng chegarani olish xatosi, u esa oraliqqa kirmaydi. Javob: 5/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglama-butun-qism-ichida-ifoda",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#cb9ad664"
+    },
+    {
+      "q": "Uzunligi 7,4 metr bo'lgan simdan 0,9 metrli bo'laklar kesilmoqda. Nechta to'liq bo'lak hosil bo'ladi?",
+      "v": [
+        "9",
+        "8,2",
+        "0,2",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Bo'laklar soni 7,4 : 0,9 ≈ 8,22 bo'linmaning butun qismiga teng, ya'ni 8 ta. Ularga 0,9 · 8 = 7,2 metr sim ketadi, qolgan 0,2 metr to'liq bo'lakka yetmaydi. 9 — chala bo'lakni ham sanash xatosi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olchov-kesish",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#9c1c40dc"
+    },
+    {
+      "q": "[x] = 4 tenglamaning yechimlari orasida nechta butun son borligini aniqlang.",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "Cheksiz ko'p",
+        "Bunday butun son yo'q"
+      ],
+      "t": 0,
+      "izoh": "[x] = 4 shartidan yechimlar oralig'i 4 ≤ x < 5 ekani chiqadi. Bu oraliqda cheksiz ko'p haqiqiy son bor, lekin butun son faqat bittasi, ya'ni 4. 5 soni oraliqqa kirmaydi, chunki [5] = 5. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-son-sanash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#69c61603"
+    },
+    {
+      "q": "x musbat son bo'lib, uning kasr qismi butun qismining choragiga teng. Butun qismi 3 bo'lsa, x nechaga teng?",
+      "v": [
+        "3,25",
+        "0,75",
+        "3,75",
+        "4,75"
+      ],
+      "t": 2,
+      "izoh": "Kasr qism butun qismning choragi, ya'ni {x} = 3 : 4 = 0,75. Bu qiymat 1 dan kichik, demak ta'rifga mos. Ayniyat bo'yicha x = 3 + 0,75 = 3,75. 3,25 — chorakni 0,25 deb olish xatosi. Javob: 3,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-kasr-munosabat-tenglama",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#2a850641"
+    },
+    {
+      "q": "Nurafshon shahridagi suv hisoblagichi 156,7 m³ ko'rsatdi. To'liq sarflangan kub metrlar soni nechaga teng?",
+      "v": [
+        "157",
+        "0,7",
+        "1567",
+        "156"
+      ],
+      "t": 3,
+      "izoh": "To'liq kub metrlar soni ko'rsatkichning butun qismiga teng. 156 ≤ 156,7 < 157 bo'lgani uchun [156,7] = 156. 157 — hisobni yuqoriga yaxlitlash, 0,7 — kasr qism, 1567 esa vergulni tashlab yuborish xatosi. Javob: 156.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-qism-musbat-hisoblash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#322757ef"
+    },
+    {
+      "q": "Dengiz sathidan pastda −23,4 metr chuqurlikdagi nuqta belgilandi. Shu sonning butun qismi qanday bo'ladi?",
+      "v": [
+        "−23",
+        "−24",
+        "−23,4",
+        "24"
+      ],
+      "t": 1,
+      "izoh": "Manfiy sonda butun qism songa chapdan yaqin butun qiymatga olinadi. −24 ≤ −23,4 < −23 bo'lgani uchun [−23,4] = −24. −23 — vergulni kesib tashlash xatosi, 24 esa ishorani unutish. Javob: −24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-qism-manfiy-hisoblash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#a31b0393"
+    },
+    {
+      "q": "Bir sonning kasr qismi 0,6 ga teng. Shu sonni 5 ga ko'paytirsak, hosil bo'lgan sonning kasr qismi nechaga teng?",
+      "v": [
+        "0,6",
+        "3",
+        "0",
+        "0,3"
+      ],
+      "t": 2,
+      "izoh": "Sonni x = n + 0,6 ko'rinishida yozamiz, bu yerda n butun son. U holda 5x = 5n + 3, ya'ni butun sonlar yig'indisi. Butun sonning kasr qismi esa nolga teng, demak {5x} = 0. 3 — ko'paytmadagi butun qo'shiluvchi, javob emas. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-qism-hisoblash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#fc3581ef"
+    },
+    {
+      "q": "{−0,3} va {0,3} qiymatlarining ayirmasi qanday songa teng ekanini hisoblang.",
+      "v": [
+        "0,4",
+        "−0,6",
+        "0",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Musbat son uchun {0,3} = 0,3. Manfiy son uchun [−0,3] = −1, demak {−0,3} = −0,3 + 1 = 0,7. Ayirma 0,7 − 0,3 = 0,4. −0,6 — kasr qismni −0,3 deb olish xatosi, 0 esa ikkalasini teng deb o'ylash. Javob: 0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-qism-manfiy",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#05eda4e1"
+    },
+    {
+      "q": "Agar [x] = 2 · {x} + 5 va {x} = 0,5 bo'lsa, x sonining qiymatini toping.",
+      "v": [
+        "6,5",
+        "5,5",
+        "6",
+        "6,05"
+      ],
+      "t": 0,
+      "izoh": "Avval butun qismni hisoblaymiz: [x] = 2 · 0,5 + 5 = 6. Bu butun son, demak shart ziddiyatsiz. Endi ayniyatdan x = [x] + {x} = 6 + 0,5 = 6,5. 5,5 — butun qismni 5 deb olish, 6 esa kasr qismni qo'shishni unutish xatosi. Javob: 6,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayniyat-yigindi",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#6248d498"
+    },
+    {
+      "q": "[√80] va [∛80] qiymatlarining yig'indisini hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "13",
+        "14",
+        "12",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "64 < 80 < 81 bo'lgani uchun 8 < √80 < 9, demak [√80] = 8. Kub ildiz uchun 64 < 80 < 125, ya'ni 4 < ∛80 < 5 va [∛80] = 4. Yig'indi 8 + 4 = 12. 13 va 14 — ildizlarni yuqoriga yaxlitlash, 16 esa kub ildizni kvadrat ildiz bilan chalkashtirish. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-butun-qismi",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#bf2bcd44"
+    },
+    {
+      "q": "[6,4] · {6,4} ko'paytmani hisoblang va natijani o'nli kasr ko'rinishida yozing.",
+      "v": [
+        "2,56",
+        "2,4",
+        "6,4",
+        "25,6"
+      ],
+      "t": 1,
+      "izoh": "Butun qism [6,4] = 6, kasr qism {6,4} = 6,4 − 6 = 0,4. Ko'paytma 6 · 0,4 = 2,4. 2,56 — sonning o'zini kasr qismga ko'paytirish xatosi (6,4 · 0,4 = 2,56), 25,6 esa kasr qismdagi vergulni e'tiborsiz qoldirib, 6,4 ni 4 ga ko'paytirish xatosi (6,4 · 4 = 25,6). Javob: 2,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-hisoblash-aralash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#324e88c4"
+    },
+    {
+      "q": "[x] = 7 va [y] = 2 bo'lsa, x + y yig'indi qanday oraliqda yotishini aniqlang.",
+      "v": [
+        "9 ≤ x + y < 10",
+        "9 < x + y < 11",
+        "10 ≤ x + y < 11",
+        "9 ≤ x + y < 11"
+      ],
+      "t": 3,
+      "izoh": "Shartlardan 7 ≤ x < 8 va 2 ≤ y < 3 kelib chiqadi. Tengsizliklarni qo'shamiz: 7 + 2 ≤ x + y < 8 + 3, ya'ni 9 ≤ x + y < 11. Chap chegara erishiladi, masalan x = 7 va y = 2 da. O'ng chegara esa erishilmaydi. Javob: 9 ≤ x + y < 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglama-butun-qism-oddiy",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#92a1f200"
+    },
+    {
+      "q": "{x} = 0,2 tenglamaning 0 ≤ x ≤ 3 oraliqdagi barcha yechimlarini toping.",
+      "v": [
+        "0,2; 1,2; 2,2; 3,2",
+        "faqat 0,2",
+        "0,2; 1,2; 2,2",
+        "0,2 va 2,2"
+      ],
+      "t": 2,
+      "izoh": "Kasr qismi 0,2 bo'lgan sonlar x = n + 0,2 ko'rinishida bo'ladi, bu yerda n butun. Oraliq shartidan n qiymatlari 0, 1 va 2 chiqadi. Demak yechimlar 0,2; 1,2 va 2,2. 3,2 soni 3 dan katta, shuning uchun oraliqqa kirmaydi. Javob: 0,2; 1,2; 2,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglama-kasr-qism",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#fdb0b195"
+    },
+    {
+      "q": "[x] ≥ 4 va x < 6 shartlar bir vaqtda bajarilsa, x qanday oraliqda joylashadi?",
+      "v": [
+        "4 ≤ x < 6",
+        "4 < x < 6",
+        "5 ≤ x < 6",
+        "4 ≤ x ≤ 6"
+      ],
+      "t": 0,
+      "izoh": "Butun qism butun son bo'lgani uchun [x] ≥ 4 sharti x ≥ 4 bilan bir xil. Ikkinchi shart x < 6 ni qo'shsak, 4 ≤ x < 6 hosil bo'ladi. x = 4 mos keladi, chunki [4] = 4 va shart bajariladi. Javob: 4 ≤ x < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-butun-qism",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#fdd1c5c0"
+    },
+    {
+      "q": "Bir kilogramm go'sht 89 000 so'm turadi. Oilaviy byudjetdan go'shtga 620 000 so'm ajratilgan. Necha to'liq kilogramm olinadi va qancha pul ortadi?",
+      "v": [
+        "7 kg va 3 000 so'm",
+        "6 kg va 96 000 so'm",
+        "6 kg va 8 600 so'm",
+        "6 kg va 86 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Bo'linmani hisoblaymiz: 620 000 : 89 000 ≈ 6,97, butun qismi 6 kilogramm. Sarf 89 000 · 6 = 534 000 so'm bo'ladi. Ortadigan pul 620 000 − 534 000 = 86 000 so'm. 7 kg olishga pul yetmaydi, chunki 89 000 · 7 = 623 000. Javob: 6 kg va 86 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-narx-nechta",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#3d421ba3"
+    },
+    {
+      "q": "Non zavodi bir smenada 2 450 ta non yopadi va har bir yashikka 18 tadan joylanadi. To'liq yashiklar soni nechta?",
+      "v": [
+        "137",
+        "136",
+        "2",
+        "136,1"
+      ],
+      "t": 1,
+      "izoh": "2 450 : 18 ≈ 136,11 bo'lgani uchun to'liq yashiklar soni [136,11] = 136 ta. Ularga 18 · 136 = 2 448 ta non joylanadi. Qolgan 2 ta non yangi yashikni to'ldirmaydi, shuning uchun 137 javobi noto'g'ri. Javob: 136.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-qadoq-quti",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#9ea26b0f"
+    },
+    {
+      "q": "Videodars 9 500 sekund davom etadi. Bu vaqt necha to'liq soatni tashkil qilishini aniqlang.",
+      "v": [
+        "3",
+        "2",
+        "2,6",
+        "158"
+      ],
+      "t": 1,
+      "izoh": "Bir soatda 3 600 sekund bor, demak 9 500 : 3 600 ≈ 2,64 soat. To'liq soatlar soni butun qism, ya'ni 2. 158 — vaqtning daqiqadagi qiymati, so'ralgan kattalik emas. 3 — yuqoriga yaxlitlash xatosi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-vaqt-soat",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#553e15a6"
+    },
+    {
+      "q": "x va y ixtiyoriy haqiqiy sonlar bo'lsa, [x + y] va [x] + [y] orasidagi munosabat qanday bo'ladi?",
+      "v": [
+        "[x + y] ≤ [x] + [y]",
+        "[x + y] = [x] + [y]",
+        "[x + y] > [x] + [y]",
+        "[x + y] ≥ [x] + [y]"
+      ],
+      "t": 3,
+      "izoh": "x = [x] + {x} va y = [y] + {y} deb yozamiz. Kasr qismlar yig'indisi 0 dan 2 gacha bo'lgani uchun [x + y] = [x] + [y] yoki undan bitta ko'p bo'ladi. Masalan x = 0,6 va y = 0,7 da chap tomon 1, o'ng tomon 0. Demak [x + y] ≥ [x] + [y]. Javob: [x + y] ≥ [x] + [y].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-qism-xossasi-tekshirish",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#ebbc00bb"
+    },
+    {
+      "q": "a = 5,5 soni uchun [a] · {a} ko'paytmani sonning o'zi bilan solishtiring va to'g'ri xulosani belgilang.",
+      "v": [
+        "Ko'paytma a dan kichik",
+        "Ko'paytma a ga teng",
+        "Ko'paytma a dan katta",
+        "Ko'paytma nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Butun qism [5,5] = 5, kasr qism {5,5} = 0,5. Ko'paytma 5 · 0,5 = 2,5. Sonning o'zi esa 5,5, demak 2,5 < 5,5. Kasr qism birdan kichik bo'lgani uchun bunday ko'paytma musbat sonda har doim sondan kichik chiqadi. Javob: ko'paytma a dan kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-solishtirish",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#5673ce67"
+    },
+    {
+      "q": "[x + 0,5] = 3 tenglamaning yechimlar to'plamini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "2,5 < x ≤ 3,5",
+        "3 ≤ x < 4",
+        "2,5 ≤ x < 3,5",
+        "2,5 ≤ x < 4"
+      ],
+      "t": 2,
+      "izoh": "Butun qism ta'rifiga ko'ra 3 ≤ x + 0,5 < 4. Barcha qismdan 0,5 ni ayiramiz: 2,5 ≤ x < 3,5. Chap chegara kiradi, chunki x = 2,5 da [3] = 3. O'ng chegara kirmaydi, chunki x = 3,5 da [4] = 4. Javob: 2,5 ≤ x < 3,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglama-butun-qism-ichida-ifoda",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#3d856721"
+    },
+    {
+      "q": "Avtobus 100 km ga 22 litr dizel sarflaydi. Bakida 65 litr bor, yo'lda zaxira uchun 10 litr qoldiriladi. To'liq necha marta yuz kilometr yuradi?",
+      "v": [
+        "3",
+        "2,5",
+        "2,9",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Sarflash mumkin bo'lgan yoqilg'i 65 − 10 = 55 litr. Bo'linma 55 : 22 = 2,5 va uning butun qismi 2. Demak avtobus to'liq ikki marta yuz kilometr yura oladi. 2,9 — zaxirani ayirmaslik xatosi, chunki 65 : 22 ≈ 2,95. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-masofa-yoqilgi",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#0c92c547"
+    },
+    {
+      "q": "{1,5} + {2,25} + {3,125} + {4,0625} yig'indini hisoblang va natijani ko'rsating.",
+      "v": [
+        "10,9375",
+        "0,9375",
+        "10",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Har bir qo'shiluvchining kasr qismini olamiz: 0,5; 0,25; 0,125 va 0,0625. Ularni qo'shamiz: 0,5 + 0,25 = 0,75, so'ng 0,75 + 0,125 = 0,875 va 0,875 + 0,0625 = 0,9375. 10,9375 — sonlarning o'zini qo'shish, 10 esa butun qismlar yig'indisi. Javob: 0,9375.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-qator",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#ff5d8c75"
+    },
+    {
+      "q": "Beshta talabaning imtihon ballari 68, 74, 81, 59 va 90 ga teng. O'rtacha balning butun qismi nechaga teng?",
+      "v": [
+        "75",
+        "74,4",
+        "74",
+        "372"
+      ],
+      "t": 2,
+      "izoh": "Ballar yig'indisi 68 + 74 + 81 + 59 + 90 = 372. O'rtacha bal 372 : 5 = 74,4 ni tashkil qiladi. Uning butun qismi [74,4] = 74. 372 — yig'indi, o'rtacha emas, 75 esa o'rtachani yuqoriga yaxlitlash xatosi. Javob: 74.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-statistika-ortacha",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#47f7078b"
+    },
+    {
+      "q": "Rulondagi mato uzunligi 23,6 metr, bir ko'ylakka esa 2,4 metr ketadi. Nechta butun ko'ylak tikish mumkin?",
+      "v": [
+        "9",
+        "10",
+        "9,8",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Bo'linma 23,6 : 2,4 ≈ 9,83 ni beradi, uning butun qismi 9. Demak 9 ta ko'ylak tikiladi va unga 2,4 · 9 = 21,6 metr mato ketadi. Qolgan 2 metr yangi ko'ylakka yetmaydi. 10 — chala bo'lakni ham sanash xatosi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olchov-kesish",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#fe7b2c62"
+    },
+    {
+      "q": "Uzunligi 20 metr bo'lgan taxtadan 1,4 metrli bo'laklar kesiladi va har kesishda 5 sm chiqindi ketadi. Nechta to'liq bo'lak chiqadi?",
+      "v": [
+        "13",
+        "14",
+        "13,8",
+        "14,3"
+      ],
+      "t": 0,
+      "izoh": "Bitta bo'lak taxtadan 1,4 + 0,05 = 1,45 metr joy oladi. Bo'linma 20 : 1,45 ≈ 13,79 va uning butun qismi 13. Tekshiramiz: 1,45 · 13 = 18,85 metr, 14 ta bo'lakka esa 20,3 metr kerak bo'lardi. 14 — chiqindini hisobga olmaslik xatosi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-olchov-kesish",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#f37be71d"
+    },
+    {
+      "q": "1 dan 100 gacha bo'lgan natural sonlar orasida [√n] = 9 tenglikni qanoatlantiruvchi nechta n mavjud?",
+      "v": [
+        "20",
+        "18",
+        "19",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "[√n] = 9 shartidan 9 ≤ √n < 10 kelib chiqadi. Kvadratga ko'tarsak 81 ≤ n < 100 bo'ladi, ya'ni n qiymatlari 81 dan 99 gacha. Bunday sonlar soni 99 − 81 + 1 = 19 ta. 100 kiritilmaydi, chunki [√100] = 10. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-son-sanash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#bd9b5889"
+    },
+    {
+      "q": "{x} = 0,5 tenglamaning −3 < x < 3 oraliqdagi yechimlari soni nechta ekanini aniqlang.",
+      "v": [
+        "5 ta",
+        "6 ta",
+        "7 ta",
+        "12 ta"
+      ],
+      "t": 1,
+      "izoh": "Kasr qismi 0,5 bo'lgan sonlar x = n + 0,5 ko'rinishida bo'ladi. Oraliq shartidan n butun qiymatlari −3 dan 2 gacha chiqadi. Yechimlar: −2,5; −1,5; −0,5; 0,5; 1,5 va 2,5, jami 6 ta. Chetki −3 va 3 sonlari oraliqqa kirmaydi. Javob: 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-son-sanash",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#880582bb"
+    },
+    {
+      "q": "Musbat x sonining butun qismi bilan kasr qismining ayirmasi 5,6 ga teng. Shu x sonini toping.",
+      "v": [
+        "5,6",
+        "6,6",
+        "5,4",
+        "6,4"
+      ],
+      "t": 3,
+      "izoh": "[x] − {x} = 5,6 deb yozamiz. Butun qism butun son, kasr qism esa 0 dan 1 gacha bo'lgani uchun [x] faqat 6 bo'la oladi. U holda {x} = 6 − 5,6 = 0,4 va x = 6 + 0,4 = 6,4. Tekshiruv: 6 − 0,4 = 5,6, shart bajarildi. Javob: 6,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-kasr-munosabat-tenglama",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#d0086b5a"
+    },
+    {
+      "q": "Bir sonning butun qismi 9 ga, kasr qismi esa butun qismining o'ndan biriga teng. Shu sonni toping.",
+      "v": [
+        "9,1",
+        "10,9",
+        "9,9",
+        "9,09"
+      ],
+      "t": 2,
+      "izoh": "Kasr qism butun qismning o'ndan biri, ya'ni {x} = 9 : 10 = 0,9. Bu qiymat 1 dan kichik, demak ta'rifga mos keladi. Ayniyatdan x = 9 + 0,9 = 9,9. 9,1 — kasr qismni 0,1 deb olish, 9,09 esa vergul o'rnini adashtirish xatosi. Javob: 9,9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-kasr-munosabat-tenglama",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#ac52091c"
+    },
+    {
+      "q": "y = [x] funksiyaning x = 2,999 va x = 3 nuqtalardagi qiymatlarini toping va ularni o'zaro solishtiring.",
+      "v": [
+        "2 va 3, farq 1 ga teng",
+        "3 va 3, farq nolga teng",
+        "2 va 2, farq nolga teng",
+        "3 va 4, farq 1 ga teng"
+      ],
+      "t": 0,
+      "izoh": "2 ≤ 2,999 < 3 bo'lgani uchun [2,999] = 2. Uchning o'zi butun son, shuning uchun [3] = 3. Qiymatlar farqi 3 − 2 = 1. Argument atigi 0,001 ga o'zgargani holda funksiya butun birga sakraydi, bu butun qism funksiyasining uzilishini ko'rsatadi. Javob: 2 va 3, farq 1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-funksiya-qiymat",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#b11f743a"
+    },
+    {
+      "q": "y = [x] funksiya 0 ≤ x < 4 oraliqda nechta har xil qiymat qabul qilishini aniqlang.",
+      "v": [
+        "3 ta",
+        "5 ta",
+        "Cheksiz ko'p qiymat",
+        "4 ta"
+      ],
+      "t": 3,
+      "izoh": "Oraliqni birlik bo'laklarga ajratamiz. 0 ≤ x < 1 da funksiya 0 ga, 1 ≤ x < 2 da 1 ga, 2 ≤ x < 3 da 2 ga, 3 ≤ x < 4 da esa 3 ga teng. Demak jami to'rt xil qiymat chiqadi. Argumentlar cheksiz ko'p bo'lsa ham qiymatlar soni chekli. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-funksiya-qiymat",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#2120cff5"
+    },
+    {
+      "q": "y = {x} funksiyaning eng katta qiymati bormi degan savolga to'g'ri javobni tanlang va asoslang.",
+      "v": [
+        "Eng katta qiymati 1 ga teng",
+        "Eng katta qiymati yo'q, chunki {x} < 1",
+        "Eng katta qiymati 0,99 ga teng",
+        "Eng katta qiymati 0 ga teng"
+      ],
+      "t": 1,
+      "izoh": "Kasr qism 0 ≤ {x} < 1 shartni qanoatlantiradi, ya'ni birga hech qachon yetmaydi. Har qanday 0,99 qiymatidan keyin 0,999 kabi undan kattasini topish mumkin. Shuning uchun funksiyaning eng katta qiymati mavjud emas, faqat yuqori chegarasi bor. Javob: eng katta qiymati yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-funksiya-qiymat",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#a321e138"
+    },
+    {
+      "q": "Bir dollar kursi 12 850 so'mga teng. Sanjarda 500 000 so'm bor va u eng ko'pi bilan nechta dollar sotib ola oladi?",
+      "v": [
+        "39",
+        "38",
+        "38,9",
+        "40"
+      ],
+      "t": 1,
+      "izoh": "Almashtiriladigan dollarlar soni butun bo'lgani uchun 500 000 : 12 850 ≈ 38,91 bo'linmaning butun qismini olamiz. Demak 38 dollar chiqadi va bunga 12 850 · 38 = 488 300 so'm ketadi. Qolgan 11 700 so'm yana bitta dollarga yetmaydi. Javob: 38.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-valyuta-pul",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#269b4c5b"
+    },
+    {
+      "q": "Turistda 220 evro bor, mehmonxonada bir kecha 47 evro turadi. U necha to'liq kecha qola oladi va qancha evro ortadi?",
+      "v": [
+        "5 kecha va 15 evro",
+        "4 kecha va 42 evro",
+        "4 kecha va 3 evro",
+        "4 kecha va 32 evro"
+      ],
+      "t": 3,
+      "izoh": "Bo'linma 220 : 47 ≈ 4,68 bo'lgani uchun to'liq kechalar soni 4 ga teng. Yashash uchun 47 · 4 = 188 evro to'lanadi. Ortib qoladigan pul 220 − 188 = 32 evro. Beshinchi kechaga 235 evro kerak bo'lardi, ya'ni pul yetmaydi. Javob: 4 kecha va 32 evro.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-valyuta-pul",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#01877b90"
+    },
+    {
+      "q": "Oylik ish haqi 4 780 000 so'm. Uni to'liq 400 000 so'mlik konvertlarga ajratsa, nechta konvert to'ladi?",
+      "v": [
+        "11",
+        "12",
+        "11,9",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "Konvertlar soni 4 780 000 : 400 000 ≈ 11,95 bo'linmaning butun qismiga teng, ya'ni 11 ta. Ularga 400 000 · 11 = 4 400 000 so'm joylanadi. Qolgan 380 000 so'm to'liq konvertni to'ldirmaydi, shuning uchun 12 javobi noto'g'ri. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-valyuta-pul",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#88da2933"
+    },
+    {
+      "q": "[19/4] + [23/6] ifodaning qiymatini hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "9",
+        "8,58",
+        "7",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Kasrlarni o'nli ko'rinishga keltiramiz: 19/4 = 4,75 va 23/6 ≈ 3,83. Butun qismlar mos ravishda 4 va 3 ga teng. Yig'indi 4 + 3 = 7. 8,58 — butun qismni olmasdan qo'shish, 9 esa ikkala kasrni ham yuqoriga yaxlitlash xatosi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-ifoda-butun-qismi",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#4af13d45"
+    },
+    {
+      "q": "[−7/2] qiymatini toping va uni −[7/2] qiymati bilan solishtirib, to'g'ri xulosani belgilang.",
+      "v": [
+        "−3 va −3, ular teng",
+        "−4 va −4, ular teng",
+        "−3 va −4, ular teng emas",
+        "−4 va −3, ular teng emas"
+      ],
+      "t": 3,
+      "izoh": "Birinchisida −7/2 = −3,5 va manfiy son uchun [−3,5] = −4. Ikkinchisida 7/2 = 3,5, [3,5] = 3, demak −[3,5] = −3. Qiymatlar −4 va −3, ular teng emas. Bu minus belgisini butun qism belgisidan tashqariga chiqarib bo'lmasligini ko'rsatadi. Javob: −4 va −3, ular teng emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-ifoda-butun-qismi",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#45396a2a"
+    },
+    {
+      "q": "Oddiy kasr ko'rinishida berilgan 100/7 sonining butun va kasr qismlari qanday bo'ladi?",
+      "v": [
+        "14 va 0,2",
+        "14 va 2/7",
+        "15 va 2/7",
+        "14 va 2/100"
+      ],
+      "t": 1,
+      "izoh": "7 · 14 = 98 va 7 · 15 = 105 bo'lgani uchun 14 < 100/7 < 15, demak butun qism 14 ga teng. Kasr qism {100/7} = 100/7 − 14 = (100 − 98)/7 = 2/7. Bu taxminan 0,2857 ga teng, shuning uchun 0,2 javobi aniq emas. Javob: 14 va 2/7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-ifoda-butun-qismi",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#65bf6fbb"
+    },
+    {
+      "q": "Ekskursiyaga 143 o'quvchi boradi va har bir avtobusda 32 o'rin bor. Nechta avtobus to'liq to'ladi?",
+      "v": [
+        "5",
+        "4,5",
+        "4",
+        "15"
+      ],
+      "t": 2,
+      "izoh": "To'liq to'ladigan avtobuslar soni 143 : 32 ≈ 4,47 bo'linmaning butun qismiga teng, ya'ni 4 ta. Ularga 32 · 4 = 128 o'quvchi joylashadi. Qolgan 15 o'quvchi beshinchi avtobusni to'ldirmaydi, shuning uchun 5 javobi noto'g'ri. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-transport-sigim",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#adc743ae"
+    },
+    {
+      "q": "Bir liftga eng ko'pi 400 kg yuk ortiladi. O'rtacha og'irligi 68 kg bo'lgan odamlardan nechtasi bir vaqtda chiqa oladi?",
+      "v": [
+        "5",
+        "6",
+        "5,8",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Odamlar soni 400 : 68 ≈ 5,88 bo'linmaning butun qismiga teng, ya'ni 5 kishi. Ularning og'irligi 68 · 5 = 340 kg bo'lib, chegaradan oshmaydi. Olti kishi esa 408 kg beradi va bu 400 kg dan katta. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-transport-sigim",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#dd27bd23"
+    },
+    {
+      "q": "To'yga 87 nafar mehmon keladi va har bir stolga 8 kishi o'tiradi. To'liq band bo'ladigan stollar soni nechta?",
+      "v": [
+        "10",
+        "11",
+        "10,8",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "Bo'linma 87 : 8 ≈ 10,875 bo'lgani uchun to'liq stollar soni [10,875] = 10 ta. Ularga 8 · 10 = 80 mehmon o'tiradi. Qolgan 7 mehmon o'n birinchi stolni to'ldirmaydi, ya'ni u to'liq band bo'lmaydi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-transport-sigim",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#6dc22631"
+    },
+    {
+      "q": "{x} ≥ 0,5 va 2 ≤ x < 3 shartlar bir vaqtda bajarilsa, x qanday oraliqda yotadi?",
+      "v": [
+        "2 ≤ x < 2,5",
+        "2,5 < x < 3",
+        "2,5 ≤ x < 3",
+        "0,5 ≤ x < 3"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi shartdan [x] = 2 ekani chiqadi, demak {x} = x − 2. Birinchi shartga qo'yamiz: x − 2 ≥ 0,5, ya'ni x ≥ 2,5. Ikkala shartni birlashtirsak 2,5 ≤ x < 3 hosil bo'ladi. Chegara x = 2,5 kiradi, chunki {2,5} = 0,5. Javob: 2,5 ≤ x < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-kasr-qism",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#cc48d9be"
+    },
+    {
+      "q": "{x} < 0,25 tengsizlikning 0 ≤ x < 2 oraliqdagi yechimlari to'plamini toping.",
+      "v": [
+        "0 ≤ x < 0,25",
+        "0 ≤ x < 0,25 va 1 ≤ x < 1,25",
+        "0 ≤ x < 1,25",
+        "0,25 ≤ x < 1,25"
+      ],
+      "t": 1,
+      "izoh": "Oraliqni ikkiga ajratamiz. 0 ≤ x < 1 da {x} = x, demak x < 0,25 va yechim 0 ≤ x < 0,25. 1 ≤ x < 2 da {x} = x − 1, demak x − 1 < 0,25 va yechim 1 ≤ x < 1,25. Ikkala bo'lakni birlashtirsak to'liq javob chiqadi. Javob: 0 ≤ x < 0,25 va 1 ≤ x < 1,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tengsizlik-kasr-qism",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#b7c80223"
+    },
+    {
+      "q": "Suv hisoblagichi ko'rsatkichining kasr qismi 0,8 dan katta bo'lsa, xizmat ko'rsatuvchi keyingi butun songa yaxlitlaydi. Ko'rsatkich 154,85 bo'lsa, hisob qaysi songa qo'yiladi?",
+      "v": [
+        "154",
+        "154,85",
+        "156",
+        "155"
+      ],
+      "t": 3,
+      "izoh": "Avval kasr qismni topamiz: {154,85} = 154,85 − 154 = 0,85. Bu qiymat 0,8 dan katta, demak yaxlitlash qoidasi ishlaydi. Keyingi butun son esa [154,85] + 1 = 155. Agar kasr qism 0,8 dan kichik bo'lganda hisob 154 da qolar edi. Javob: 155.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tengsizlik-kasr-qism",
+      "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi#70f412d6"
+    }
+  ]
+}

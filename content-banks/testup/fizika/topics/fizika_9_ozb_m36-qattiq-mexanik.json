@@ -1,0 +1,516 @@
+{
+  "nom": "36-mavzu. Qattiq Mexanik",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Deformatsiya deb nimaga aytiladi?",
+      "v": [
+        "Jismning tashqi kuch ta'sirida o'z shaklini yoki o'lchamini o'zgartirishiga",
+        "Jismning harakat tezligini o'zgartirishiga",
+        "Jismning haroratini o'zgartirishiga",
+        "Jismning rangini o'zgartirishiga"
+      ],
+      "t": 0,
+      "izoh": "Jismning tashqi kuch ta'sirida o'z shaklini yoki o'lchamini o'zgartirishi deformatsiya deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#0637b0df"
+    },
+    {
+      "q": "Deformatsiya qanday turlarga bo'linadi?",
+      "v": [
+        "Elastik va plastik deformatsiyaga",
+        "Katta va kichik deformatsiyaga",
+        "Doimiy va vaqtinchalik bosimga",
+        "Ichki va tashqi deformatsiyaga"
+      ],
+      "t": 0,
+      "izoh": "Deformatsiya elastik yoki plastik bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#4be10ec8"
+    },
+    {
+      "q": "Elastik deformatsiya deganda nima tushuniladi?",
+      "v": [
+        "Tashqi kuchlarning ta'siri to'xtatilgandan keyin jism shakli yoki o'lchami o'zining dastlabki holatiga qaytishi",
+        "Deformatsiya butunlay yo'qolmay qolishi",
+        "Jismning sinib ketishi",
+        "Jismning erib ketishi"
+      ],
+      "t": 0,
+      "izoh": "Tashqi kuchlarning ta'siri to'xtatilgandan keyin jism shakli yoki o'lchami o'zining dastlabki holatiga qaytsa, bunday deformatsiyaga elastik deformatsiya deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#cacc23e5"
+    },
+    {
+      "q": "Plastik deformatsiya deganda nima tushuniladi?",
+      "v": [
+        "Jismga qo'yilgan tashqi ta'sir to'xtatilgandan so'ng deformatsiya butunlay yo'qolmasligi",
+        "Jismning dastlabki holatiga qaytishi",
+        "Jismning elastik cho'zilishi",
+        "Jismning qattiqlashishi"
+      ],
+      "t": 0,
+      "izoh": "Jismga qo'yilgan tashqi ta'sir to'xtatilgandan so'ng deformatsiya butunlay yo'qolmasa, bunday deformatsiya plastik deformatsiya deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#44d42b04"
+    },
+    {
+      "q": "Rezina arqon tortilganda sodir bo'ladigan deformatsiya qanday turga kiradi?",
+      "v": [
+        "Elastik deformatsiyaga",
+        "Plastik deformatsiyaga",
+        "Sinuvchan deformatsiyaga",
+        "Amorf deformatsiyaga"
+      ],
+      "t": 0,
+      "izoh": "Rezina arqon tortilganda cho'ziladi, kuchlarning ta'siri to'xtatilgandan keyin boshlang'ich holatiga qaytadi — bu elastik deformatsiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#a3a05880"
+    },
+    {
+      "q": "Plastilinni barmoqlar bilan ezilganda qanday deformatsiya kuzatiladi?",
+      "v": [
+        "Plastik deformatsiya — plastilin dastlabki shaklini tiklay olmaydi",
+        "Elastik deformatsiya — plastilin eski shakliga qaytadi",
+        "Hech qanday deformatsiya bo'lmaydi",
+        "Plastilin sinib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Bir parcha plastilinni barmoqlar bilan ezilsa, barmoqlar plastilindan olingandan so'ng u dastlabki shaklini tiklay olmaydi — plastik deformatsiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#d614e660"
+    },
+    {
+      "q": "Plastik deformatsiyalanadigan jismlarga misollar qaysilar?",
+      "v": [
+        "Loy, mum, qo'rg'oshin",
+        "Rezina, po'lat prujina",
+        "Olmos, grafit",
+        "Shisha, smola"
+      ],
+      "t": 0,
+      "izoh": "Loy, mum, qo'rg'oshin kabi jismlar shunday xossaga ega bo'lib, ular plastik deformatsiyalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#c5c1919e"
+    },
+    {
+      "q": "Presslar yordamida po'lat buyumlarni shtampovka qilishda po'latning qaysi xossasidan foydalaniladi?",
+      "v": [
+        "Plastiklik xossasidan",
+        "Elastiklik xossasidan",
+        "Sinuvchanlik xossasidan",
+        "Magnit xossasidan"
+      ],
+      "t": 0,
+      "izoh": "Juda katta kuch hosil qiladigan presslar yordamida po'lat buyumlarni shtampovka qilishda po'latning plastiklik xossasidan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#1a12d3bb"
+    },
+    {
+      "q": "Absolyut uzayish deb nimaga aytiladi?",
+      "v": [
+        "Deformatsiyalangan sterjen uzunligining dastlabki uzunlikdan ayirmasiga (Δl)",
+        "Sterjenning dastlabki uzunligiga",
+        "Kuchning kesim yuzasiga nisbatiga",
+        "Nisbiy uzayishning yarmiga"
+      ],
+      "t": 0,
+      "izoh": "F kuch bilan ta'sir etilsa, sterjen Δl ga uzayadi; Δl absolyut uzayish deb ataladi: Δl = l − l₀.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#c352463f"
+    },
+    {
+      "q": "Absolyut uzayishning formulasi qaysi?",
+      "v": [
+        "Δl = l − l₀",
+        "Δl = l₀ − l",
+        "Δl = l · l₀",
+        "Δl = l/l₀"
+      ],
+      "t": 0,
+      "izoh": "Δl = l − l₀, bu yerda l — deformatsiyalangandan keyingi uzunlik, l₀ — dastlabki uzunlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#f8569783"
+    },
+    {
+      "q": "Nisbiy uzayish nima uchun kiritilgan?",
+      "v": [
+        "O'zgarmas kuch ta'sirida absolyut uzayish sterjenning dastlabki uzunligi l₀ ga bog'liq bo'lgani uchun",
+        "Kuchlarni taqqoslash qiyin bo'lgani uchun",
+        "Kesim yuzasi noma'lum bo'lgani uchun",
+        "Materiallar zichligi har xil bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas kuch ta'sirida absolyut uzayish sterjenning dastlabki uzunligi l₀ ga bog'liq bo'ladi; shuning uchun nisbiy uzayish degan tushuncha ham kiritilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#213729a3"
+    },
+    {
+      "q": "Nisbiy uzayish qanday ifodalanadi?",
+      "v": [
+        "ε = Δl/l₀ yoki ε = (Δl/l₀)·100%",
+        "ε = F/S",
+        "ε = l₀/Δl",
+        "ε = σ/E"
+      ],
+      "t": 0,
+      "izoh": "Sterjenning nisbiy uzayishi ε = Δl/l₀ yoki ε = (Δl/l₀)·100% tarzida ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#5c1f9047"
+    },
+    {
+      "q": "Qattiq jismlarning mexanik xossalari deganda nima tushuniladi?",
+      "v": [
+        "Qattiq jismlarning tashqi mexanik kuchlar ta'siri ostida deformatsiyalanishi va shu kuchlar ta'siridagi yemirilishga bardosh berish qobiliyatini belgilovchi xossalari",
+        "Jismlarning faqat haroratga chidamliligi",
+        "Jismlarning faqat og'irligi",
+        "Jismlarning elektr o'tkazuvchanligi"
+      ],
+      "t": 0,
+      "izoh": "Qattiq jismlarning mexanik xossalari deganda qattiq jismlarning tashqi mexanik kuchlar ta'siri ostida deformatsiyalanishi va shu kuchlar ta'siridagi yemirilishga bardosh berish qobiliyatini belgilovchi xossalari tushuniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#601c9fe4"
+    },
+    {
+      "q": "Mexanik kuchlanish deb nimaga aytiladi?",
+      "v": [
+        "Deformatsiyalangan jismning birlik ko'ndalang kesim yuzasiga ta'sir qilayotgan deformatsiyalovchi kuchga son jihatidan teng bo'lgan fizik kattalikka",
+        "Jismning birlik hajmiga to'g'ri keladigan massaga",
+        "Jismning birlik yuzasiga tushadigan bosimga",
+        "Jismning tezlanishiga"
+      ],
+      "t": 0,
+      "izoh": "Deformatsiyalangan jismning birlik ko'ndalang kesim yuzasiga ta'sir qilayotgan deformatsiyalovchi kuchga son jihatidan teng bo'lgan fizik kattalik mexanik kuchlanish deyiladi va σ harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#15480cb0"
+    },
+    {
+      "q": "Mexanik kuchlanish qanday harf bilan belgilanadi?",
+      "v": [
+        "σ harfi bilan",
+        "ε harfi bilan",
+        "E harfi bilan",
+        "F harfi bilan"
+      ],
+      "t": 0,
+      "izoh": "Mexanik kuchlanish σ harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#2ff18dba"
+    },
+    {
+      "q": "Mexanik kuchlanishning formulasi qaysi?",
+      "v": [
+        "σ = F/S",
+        "σ = F·S",
+        "σ = S/F",
+        "σ = E·ε"
+      ],
+      "t": 0,
+      "izoh": "Ta'rifga ko'ra mexanik kuchlanish: σ = F/S.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#c3fe5326"
+    },
+    {
+      "q": "Guk qonunini kim va qanday aniqlagan?",
+      "v": [
+        "Golland olimi Guk tajribada elastik deformatsiyada mexanik kuchlanish nisbiy uzayishga to'g'ri proportsional ekanini aniqlagan",
+        "Nyuton kuch va tezlanish bog'liqligini aniqlagan",
+        "Galiley erkin tushish qonunini aniqlagan",
+        "Arximed suyuqlikdagi kuchni aniqlagan"
+      ],
+      "t": 0,
+      "izoh": "Golland olimi Guk tajribada elastik deformatsiyada mexanik kuchlanish nisbiy uzayishga to'g'ri proportsional bo'lishini aniqladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#4350b736"
+    },
+    {
+      "q": "Guk qonunining matematik ifodasi qaysi?",
+      "v": [
+        "σ = E·|ε|",
+        "σ = F·S",
+        "F = m·a",
+        "ε = Δl·l₀"
+      ],
+      "t": 0,
+      "izoh": "Guk qonuni: σ = E·|ε|, bu yerda E — elastiklik moduli (Yung moduli).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#b5f9d3ab"
+    },
+    {
+      "q": "Guk qonunidagi E koeffitsiyenti nima deb ataladi?",
+      "v": [
+        "Elastiklik moduli yoki Yung moduli",
+        "Sirt taranglik koeffitsiyenti",
+        "Ishqalanish koeffitsiyenti",
+        "Bosim koeffitsiyenti"
+      ],
+      "t": 0,
+      "izoh": "Bu ifodada qatnashgan proportsionallik koeffitsiyenti E ga elastiklik moduli yoki Yung moduli deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#63738015"
+    },
+    {
+      "q": "Mexanik kuchlanish va Yung modulining birligi Xalqaro birliklar sistemasida qanday?",
+      "v": [
+        "Paskal (Pa)",
+        "Nyuton (N)",
+        "Joul (J)",
+        "Vatt (Vt)"
+      ],
+      "t": 0,
+      "izoh": "Xalqaro birliklar sistemasida mexanik kuchlanish va Yung modulining birligi, xuddi bosim birligi kabi, Paskal qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#bab9b830"
+    },
+    {
+      "q": "Yung moduli E qanchalik katta bo'lsa, material qanday deformatsiyalanadi?",
+      "v": [
+        "Material shuncha kam deformatsiyalanadi",
+        "Material shuncha ko'p deformatsiyalanadi",
+        "Material tez sinadi",
+        "Material yumshaydi"
+      ],
+      "t": 0,
+      "izoh": "Yung moduli E qanchalik katta bo'lsa, material shuncha kam deformatsiyalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#c81e0dcc"
+    },
+    {
+      "q": "Jadval bo'yicha elastiklik moduli eng katta bo'lgan modda qaysi?",
+      "v": [
+        "Nikel (2,1·10¹¹ Pa)",
+        "Po'lat (1,9·10¹¹ Pa)",
+        "Mis (1,1·10¹¹ Pa)",
+        "Alyuminiy (7·10¹⁰ Pa)"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda eng katta qiymat nikel uchun: E = 2,1·10¹¹ Pa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#abde1910"
+    },
+    {
+      "q": "Jadval bo'yicha elastiklik moduli eng kichik bo'lgan modda qaysi?",
+      "v": [
+        "Qo'rg'oshin (1,1·10¹⁰ Pa)",
+        "Beton (1,6·10¹⁰ Pa)",
+        "Alyuminiy (7·10¹⁰ Pa)",
+        "Mis (1,1·10¹¹ Pa)"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda eng kichik qiymat qo'rg'oshin uchun: E = 1,1·10¹⁰ Pa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#cc158bf2"
+    },
+    {
+      "q": "Po'latning elastiklik moduli qancha?",
+      "v": [
+        "1,9·10¹¹ Pa",
+        "1,1·10¹¹ Pa",
+        "7·10¹⁰ Pa",
+        "2,1·10¹¹ Pa"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga ko'ra po'lat uchun E = 1,9·10¹¹ Pa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#480ac4fa"
+    },
+    {
+      "q": "σ = F/S va ε = Δl/l₀ ifodalarni Guk qonuniga qo'yilsa, qanday ifoda hosil bo'ladi?",
+      "v": [
+        "F/S = E·|Δl|/l₀",
+        "F = m·a",
+        "σ = ρ·g·h",
+        "F = k·x²"
+      ],
+      "t": 0,
+      "izoh": "Mexanik kuchlanishning σ = F/S va nisbiy uzayishning ε = Δl/l₀ ifodalarini Guk qonuni ifodasiga qo'yib, F/S = E·|Δl|/l₀ ifodani hosil qilamiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#2013204d"
+    },
+    {
+      "q": "F = E·S·|Δl|/l₀ ifodada E·S/l₀ = k deb belgilansa, formula qanday ko'rinish oladi?",
+      "v": [
+        "F = k·|Δl|",
+        "F = k/|Δl|",
+        "F = k·|Δl|²",
+        "F = k·l₀"
+      ],
+      "t": 0,
+      "izoh": "Agar E·S/l₀ = k deb belgilasak, F = k·|Δl| tarzida yozish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#4f906ec0"
+    },
+    {
+      "q": "Guk qonuni qanday deformatsiya uchun o'rinli?",
+      "v": [
+        "Elastik deformatsiya uchun",
+        "Plastik deformatsiya uchun",
+        "Har qanday deformatsiya uchun",
+        "Faqat sinish uchun"
+      ],
+      "t": 0,
+      "izoh": "Guk tajribada elastik deformatsiyada mexanik kuchlanish nisbiy uzayishga to'g'ri proportsional bo'lishini aniqladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#6102c12f"
+    },
+    {
+      "q": "Sterjenga pastga yo'nalgan F kuch ta'sir ettirilganda u qanday deformatsiyalanadi?",
+      "v": [
+        "Cho'zilish deformatsiyasiga uchraydi",
+        "Siqilish deformatsiyasiga uchraydi",
+        "Egilish deformatsiyasiga uchraydi",
+        "Burama deformatsiyaga uchraydi"
+      ],
+      "t": 0,
+      "izoh": "Sterjenning yuqori uchi shtativga mahkamlangan bo'lib, pastki uchiga pastga yo'nalgan F kuch ta'sir etilsa, sterjen Δl ga uzayadi — cho'zilish deformatsiyasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#028dc9c1"
+    },
+    {
+      "q": "Yung moduli katta bo'lgan materialni cho'zish qiyinmi yoki osonmi?",
+      "v": [
+        "Qiyin, chunki katta E da material kam deformatsiyalanadi",
+        "Oson, chunki katta E da kuch kam kerak",
+        "Bir xil, E ning ahamiyati yo'q",
+        "Faqat material zichligiga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Yung moduli E qanchalik katta bo'lsa, material shuncha kam deformatsiyalanadi, ya'ni uni cho'zish qiyinroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#1ae19891"
+    },
+    {
+      "q": "Qo'rg'oshin (E = 1,1·10¹⁰ Pa) va po'lat (E = 1,9·10¹¹ Pa) dan qaysi biri bir xil kuchda ko'proq uzayadi?",
+      "v": [
+        "Qo'rg'oshin, chunki uning Yung moduli kichikroq",
+        "Po'lat, chunki uning Yung moduli kattaroq",
+        "Ikkalasi bir xil uzayadi",
+        "Faqat kesim yuzasiga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Yung moduli kichik bo'lgan material ko'proq deformatsiyalanadi; qo'rg'oshinning E si po'latnikidan kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#19a52f4e"
+    },
+    {
+      "q": "Pallaga yuklar qo'yilib taranglashgan po'lat sim misolida qaysi tushuncha o'rganiladi?",
+      "v": [
+        "Mustahkamlik chegarasi",
+        "Elastiklik moduli",
+        "Sirt taranglik",
+        "Nisbiy uzayish"
+      ],
+      "t": 0,
+      "izoh": "Bir uchi osmaga mahkamlangan po'lat simning ikkinchi uchiga pallachani ilib yuk qo'yilsa, po'lat sim taranglashadi — bu mustahkamlik chegarasi mavzusining boshlanishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#2c2b47fd"
+    },
+    {
+      "q": "k = E·S/l₀ kattalik nimani ifodalaydi?",
+      "v": [
+        "Jismning qattiqlik koeffitsiyentini (qattiqligini)",
+        "Jismning zichligini",
+        "Jismning massasini",
+        "Jismning kesim yuzasini"
+      ],
+      "t": 0,
+      "izoh": "E·S/l₀ = k deb belgilanganda, F = k·|Δl| formuladagi k — qattiqlik koeffitsiyenti (material, kesim va uzunlikka bog'liq).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#693713a8"
+    },
+    {
+      "q": "Nisbiy uzayish ε ning birligi qanday?",
+      "v": [
+        "Birliksiz kattalik (yoki foizda ifodalanadi)",
+        "Nyutonda",
+        "Paskalda",
+        "Metrda"
+      ],
+      "t": 0,
+      "izoh": "ε = Δl/l₀ — ikki uzunlikning nisbati bo'lgani uchun birliksiz; foizda ham ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#d7a50557"
+    },
+    {
+      "q": "Qattiq jismlar o'z-o'zidan shaklini o'zgartiradimi?",
+      "v": [
+        "Yo'q, faqat tashqi ta'sir berilsa o'z shaklini o'zgartirishi mumkin",
+        "Ha, vaqt o'tishi bilan o'zgaradi",
+        "Harorat tufayli doimiy o'zgaradi",
+        "Gravitatsiya tufayli o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Qattiq jismlar o'z-o'zidan shaklini o'zgartirmaydi; agar qattiq jismga tashqi ta'sir berilsa, u o'z shaklini o'zgartirishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m36-qattiq-mexanik#a6feb165"
+    }
+  ]
+}

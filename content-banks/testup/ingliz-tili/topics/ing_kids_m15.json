@@ -1,0 +1,526 @@
+{
+  "nom": "House & rooms (Uy)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "What is this? 🏠",
+      "v": [
+        "house",
+        "door",
+        "window",
+        "bed"
+      ],
+      "t": 0,
+      "izoh": "🏠 = house (uy).",
+      "qiy": "oson",
+      "id": "ing_kids_m15#eb219b17"
+    },
+    {
+      "q": "What is this? 🚪",
+      "v": [
+        "window",
+        "door",
+        "chair",
+        "table"
+      ],
+      "t": 1,
+      "izoh": "🚪 = door (eshik).",
+      "qiy": "oson",
+      "id": "ing_kids_m15#fcc67301"
+    },
+    {
+      "q": "What is this? 🛏️",
+      "v": [
+        "chair",
+        "table",
+        "bed",
+        "door"
+      ],
+      "t": 2,
+      "izoh": "🛏️ = bed (karavot).",
+      "qiy": "oson",
+      "id": "ing_kids_m15#cbf10130"
+    },
+    {
+      "q": "What is this? 🪑",
+      "v": [
+        "chair",
+        "bed",
+        "window",
+        "house"
+      ],
+      "t": 0,
+      "izoh": "🪑 = chair (stul).",
+      "qiy": "oson",
+      "id": "ing_kids_m15#556b9f44"
+    },
+    {
+      "q": "Where do we cook food? 🍳",
+      "v": [
+        "bedroom",
+        "kitchen",
+        "bathroom",
+        "garden"
+      ],
+      "t": 1,
+      "izoh": "🍳 = kitchen (oshxona).",
+      "qiy": "oson",
+      "id": "ing_kids_m15#7b26d86a"
+    },
+    {
+      "q": "Where do we sleep? 😴",
+      "v": [
+        "kitchen",
+        "garden",
+        "bedroom",
+        "bathroom"
+      ],
+      "t": 2,
+      "izoh": "😴 = bedroom (yotoqxona).",
+      "qiy": "oson",
+      "id": "ing_kids_m15#29ebf691"
+    },
+    {
+      "q": "Where do we wash? 🛁",
+      "v": [
+        "bathroom",
+        "kitchen",
+        "bedroom",
+        "garden"
+      ],
+      "t": 0,
+      "izoh": "🛁 = bathroom (hammom).",
+      "qiy": "oson",
+      "id": "ing_kids_m15#207e0cc5"
+    },
+    {
+      "q": "What is this? 🪟",
+      "v": [
+        "door",
+        "window",
+        "bed",
+        "chair"
+      ],
+      "t": 1,
+      "izoh": "🪟 = window (deraza).",
+      "qiy": "oson",
+      "id": "ing_kids_m15#e6d95ef6"
+    },
+    {
+      "q": "What is this? 🌳",
+      "v": [
+        "kitchen",
+        "bed",
+        "garden",
+        "door"
+      ],
+      "t": 2,
+      "izoh": "🌳 = garden (bog').",
+      "qiy": "oson",
+      "id": "ing_kids_m15#b90f95f4"
+    },
+    {
+      "q": "What is this? 🛋️",
+      "v": [
+        "sofa",
+        "window",
+        "door",
+        "bath"
+      ],
+      "t": 0,
+      "izoh": "🛋️ = sofa (divan).",
+      "qiy": "oson",
+      "id": "ing_kids_m15#615c55f0"
+    },
+    {
+      "q": "Where do we wash ourselves?",
+      "v": [
+        "Kitchen",
+        "Garden",
+        "Bedroom",
+        "Bathroom"
+      ],
+      "t": 3,
+      "izoh": "Yuvinadigan xona — hammom.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#b9ca4e75"
+    },
+    {
+      "q": "🏠",
+      "v": [
+        "Door",
+        "House",
+        "Bed",
+        "Cup"
+      ],
+      "t": 1,
+      "izoh": "🏠 — uy.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#9e0036b0"
+    },
+    {
+      "q": "🧊 We keep food cold in the ...",
+      "v": [
+        "Lamp",
+        "Fridge",
+        "Sofa",
+        "Clock"
+      ],
+      "t": 1,
+      "izoh": "🧊 — muzlatgich.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#25c78458"
+    },
+    {
+      "q": "We eat food from this.",
+      "v": [
+        "Plate",
+        "Lamp",
+        "Roof",
+        "Window"
+      ],
+      "t": 0,
+      "izoh": "Ovqat yeymiz — tarelka.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#b6d9850d"
+    },
+    {
+      "q": "We drink tea or water from this.",
+      "v": [
+        "Plate",
+        "Chair",
+        "Door",
+        "Cup"
+      ],
+      "t": 3,
+      "izoh": "Choy/suv ichamiz — piyola.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#0050e565"
+    },
+    {
+      "q": "The top of a house is the ...",
+      "v": [
+        "Roof",
+        "Floor",
+        "Wall",
+        "Door"
+      ],
+      "t": 0,
+      "izoh": "Uyning tepasi — tom.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#1ed2d918"
+    },
+    {
+      "q": "We walk on this in a room.",
+      "v": [
+        "Roof",
+        "Window",
+        "Floor",
+        "Lamp"
+      ],
+      "t": 2,
+      "izoh": "Ustida yuramiz — pol.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#69ec492d"
+    },
+    {
+      "q": "We hang pictures on this.",
+      "v": [
+        "Wall",
+        "Floor",
+        "Cup",
+        "Plate"
+      ],
+      "t": 0,
+      "izoh": "Rasm osamiz — devor.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#054be5c3"
+    },
+    {
+      "q": "We grow flowers and plants here.",
+      "v": [
+        "Kitchen",
+        "Garden",
+        "Bathroom",
+        "Bedroom"
+      ],
+      "t": 1,
+      "izoh": "Gul o'sadigan joy — bog'.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#1b643776"
+    },
+    {
+      "q": "We put our food on this to eat.",
+      "v": [
+        "Table",
+        "Bed",
+        "Roof",
+        "Window"
+      ],
+      "t": 0,
+      "izoh": "Ustiga ovqat qo'yamiz — stol.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#11498b03"
+    },
+    {
+      "q": "We open this to go into a room.",
+      "v": [
+        "Window",
+        "Wall",
+        "Door",
+        "Roof"
+      ],
+      "t": 2,
+      "izoh": "Xonaga kirish uchun — eshik.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#729a2599"
+    },
+    {
+      "q": "We open this to let in fresh air and light.",
+      "v": [
+        "Window",
+        "Wall",
+        "Floor",
+        "Door"
+      ],
+      "t": 0,
+      "izoh": "Havo va yorug'lik uchun — deraza.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#55bb3465"
+    },
+    {
+      "q": "We sit on this soft seat to watch TV.",
+      "v": [
+        "Sofa",
+        "Bed",
+        "Table",
+        "Wall"
+      ],
+      "t": 0,
+      "izoh": "Yumshoq o'rindiq — divan.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#db5a7dbc"
+    },
+    {
+      "q": "We sleep on this at night.",
+      "v": [
+        "Chair",
+        "Table",
+        "Lamp",
+        "Bed"
+      ],
+      "t": 3,
+      "izoh": "Uxlaymiz — karavot.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#7b84aa36"
+    },
+    {
+      "q": "This gives us light in a dark room.",
+      "v": [
+        "Lamp",
+        "Plate",
+        "Door",
+        "Wall"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik beradi — chiroq.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#c968eb27"
+    },
+    {
+      "q": "We look at this to know the time.",
+      "v": [
+        "Cup",
+        "Clock",
+        "Sofa",
+        "Plate"
+      ],
+      "t": 1,
+      "izoh": "Vaqtni bilamiz — soat.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#26df188d"
+    },
+    {
+      "q": "🍳 We use this in the ...",
+      "v": [
+        "Bedroom",
+        "Kitchen",
+        "Garden",
+        "Bathroom"
+      ],
+      "t": 1,
+      "izoh": "🍳 — oshxonada.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#bfc6fde4"
+    },
+    {
+      "q": "Which room has a bath and a sink?",
+      "v": [
+        "Bathroom",
+        "Kitchen",
+        "Bedroom",
+        "Garden"
+      ],
+      "t": 0,
+      "izoh": "Vanna bor xona — hammom.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#fae89363"
+    },
+    {
+      "q": "Where do we usually keep the fridge?",
+      "v": [
+        "Kitchen",
+        "Bathroom",
+        "Bedroom",
+        "Garden"
+      ],
+      "t": 0,
+      "izoh": "Muzlatgich odatda — oshxonada.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#36fe24c3"
+    },
+    {
+      "q": "We sit on this at the table to eat.",
+      "v": [
+        "Chair",
+        "Roof",
+        "Window",
+        "Lamp"
+      ],
+      "t": 0,
+      "izoh": "Stol yonida o'tiramiz — stul.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#0a000ebc"
+    },
+    {
+      "q": "Where do we cook food?",
+      "v": [
+        "Bedroom",
+        "Bathroom",
+        "Kitchen",
+        "Garden"
+      ],
+      "t": 2,
+      "izoh": "Ovqat pishiriladigan xona — oshxona.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#2e4cc999"
+    },
+    {
+      "q": "Where do we sleep?",
+      "v": [
+        "Bedroom",
+        "Kitchen",
+        "Garden",
+        "Bathroom"
+      ],
+      "t": 0,
+      "izoh": "Uxlaydigan xona — yotoqxona.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#baec1e19"
+    },
+    {
+      "q": "🚪",
+      "v": [
+        "Door",
+        "Window",
+        "Wall",
+        "Roof"
+      ],
+      "t": 0,
+      "izoh": "🚪 — eshik.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#93702da3"
+    },
+    {
+      "q": "🪟",
+      "v": [
+        "Door",
+        "Lamp",
+        "Window",
+        "Floor"
+      ],
+      "t": 2,
+      "izoh": "🪟 — deraza.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#2afbea1e"
+    },
+    {
+      "q": "🛏️",
+      "v": [
+        "Bed",
+        "Chair",
+        "Table",
+        "Sofa"
+      ],
+      "t": 0,
+      "izoh": "🛏️ — karavot.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#4e531d0c"
+    },
+    {
+      "q": "🪑",
+      "v": [
+        "Bed",
+        "Chair",
+        "Table",
+        "Lamp"
+      ],
+      "t": 1,
+      "izoh": "🪑 — stul.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#15676c60"
+    },
+    {
+      "q": "🛋️",
+      "v": [
+        "Bed",
+        "Chair",
+        "Table",
+        "Sofa"
+      ],
+      "t": 3,
+      "izoh": "🛋️ — divan.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#0e832a9c"
+    },
+    {
+      "q": "💡",
+      "v": [
+        "Lamp",
+        "Clock",
+        "Cup",
+        "Plate"
+      ],
+      "t": 0,
+      "izoh": "💡 — chiroq.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#76bf0cfe"
+    },
+    {
+      "q": "📺",
+      "v": [
+        "Lamp",
+        "Clock",
+        "TV",
+        "Cup"
+      ],
+      "t": 2,
+      "izoh": "📺 — televizor.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#3c3f1480"
+    },
+    {
+      "q": "🕰️",
+      "v": [
+        "Clock",
+        "Lamp",
+        "Plate",
+        "Cup"
+      ],
+      "t": 0,
+      "izoh": "🕰️ — soat.",
+      "qiy": "oson",
+      "id": "ing_kids_m15#ee320d74"
+    }
+  ]
+}

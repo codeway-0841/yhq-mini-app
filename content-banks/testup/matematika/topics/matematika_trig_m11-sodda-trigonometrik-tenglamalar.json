@@ -1,0 +1,1609 @@
+{
+  "nom": "Sodda trigonometrik tenglamalar",
+  "bolim": "Trigonometriya",
+  "blok": "trig",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Sinf ishida sin x = 1/2 tenglama berilgan. Uning barcha yechimlarini bitta umumiy formula bilan to'g'ri ifodalagan javobni tanlang.",
+      "v": [
+        "x = (−1)ⁿ·π/6 + πn, n ∈ Z",
+        "x = ±π/6 + 2πn, n ∈ Z",
+        "x = π/6 + 2πn, n ∈ Z",
+        "x = π/6 + πn, n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "sin x = a tenglamaning umumiy yechimi x = (−1)ⁿ·arcsin a + πn ko'rinishida bo'ladi. Bu yerda arcsin(1/2) = π/6. Demak x = (−1)ⁿ·π/6 + πn, n ∈ Z. Kosinusdagidek ± belgisi qo'yilmaydi, davr esa 2πn emas, πn bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinx-umumiy-yechim",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#3ce59c71"
+    },
+    {
+      "q": "sin x = −√2/2 tenglamaning umumiy yechimi qanday ko'rinishda yoziladi?",
+      "v": [
+        "x = (−1)ⁿ·π/4 + πn, n ∈ Z",
+        "x = (−1)ⁿ⁺¹·π/4 + πn, n ∈ Z",
+        "x = ±3π/4 + 2πn, n ∈ Z",
+        "x = −π/4 + 2πn, n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "Avval arcsin(−√2/2) topiladi: arksinus toq funksiya bo'lgani uchun u −π/4 ga teng. Umumiy formulaga qo'yamiz: x = (−1)ⁿ·(−π/4) + πn. Minusni (−1)ⁿ ichiga kiritsak x = (−1)ⁿ⁺¹·π/4 + πn, n ∈ Z hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinx-umumiy-yechim",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#629c830e"
+    },
+    {
+      "q": "Nodira daftariga sin x = √3/2 tenglamani yozdi va uning barcha ildizlarini qamrab oladigan formulani izlamoqda. Qaysi yozuv to'g'ri?",
+      "v": [
+        "x = ±π/3 + 2πn, n ∈ Z",
+        "x = (−1)ⁿ·π/6 + πn, n ∈ Z",
+        "x = (−1)ⁿ·π/3 + πn, n ∈ Z",
+        "x = π/3 + 2πn, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "arcsin(√3/2) = π/3, chunki sin(π/3) = √3/2 va π/3 kesma [−π/2; π/2] ichida yotadi. Sinus uchun umumiy formula x = (−1)ⁿ·arcsin a + πn. Demak x = (−1)ⁿ·π/3 + πn, n ∈ Z. ± belgisi kosinusga tegishli, π/6 esa kosinusning burchagi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinx-umumiy-yechim",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#1f79539b"
+    },
+    {
+      "q": "sin x = −1/2 tenglamaning umumiy yechimini ifodalovchi to'g'ri formulani belgilang.",
+      "v": [
+        "x = (−1)ⁿ·π/6 + πn, n ∈ Z",
+        "x = ±5π/6 + 2πn, n ∈ Z",
+        "x = −π/6 + 2πn, n ∈ Z",
+        "x = (−1)ⁿ⁺¹·π/6 + πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "arcsin(−1/2) = −π/6, chunki arksinus toq funksiya. Formulaga qo'yamiz: x = (−1)ⁿ·(−π/6) + πn. Minus ishorasini darajaga o'tkazamiz va x = (−1)ⁿ⁺¹·π/6 + πn, n ∈ Z ni olamiz. Bitta seriya yozish ildizlarning yarmini yo'qotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinx-umumiy-yechim",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#6266242f"
+    },
+    {
+      "q": "cos x = √2/2 tenglamaning barcha ildizlarini ifodalovchi umumiy formulani tanlang.",
+      "v": [
+        "x = ±π/4 + 2πn, n ∈ Z",
+        "x = (−1)ⁿ·π/4 + πn, n ∈ Z",
+        "x = π/4 + 2πn, n ∈ Z",
+        "x = ±π/4 + πn, n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "cos x = a tenglama x = ±arccos a + 2πn formulasi bilan yechiladi. arccos(√2/2) = π/4 bo'lgani uchun x = ±π/4 + 2πn, n ∈ Z. Kosinus juft funksiya, shuning uchun ± belgisi shart; davr esa 2π, ya'ni πn yozilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cosx-umumiy-yechim",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#270d209a"
+    },
+    {
+      "q": "cos x = −1/2 bo'lsa, x ning umumiy qiymati qanday yoziladi?",
+      "v": [
+        "x = ±π/3 + 2πn, n ∈ Z",
+        "x = ±2π/3 + 2πn, n ∈ Z",
+        "x = (−1)ⁿ·2π/3 + πn, n ∈ Z",
+        "x = ±2π/3 + πn, n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "Manfiy argument uchun arccos(−a) = π − arccos a qoidasi ishlaydi: arccos(−1/2) = π − π/3 = 2π/3. Umumiy formula x = ±arccos a + 2πn. Demak x = ±2π/3 + 2πn, n ∈ Z. ±π/3 yozish arkkosinusni toq funksiya deb hisoblash xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cosx-umumiy-yechim",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#4e986191"
+    },
+    {
+      "q": "Ustoz doskaga cos x = −√3/2 tenglamasini yozdi va yechimni yozishni so'radi. O'quvchilardan qaysi biri umumiy yechimni to'g'ri yozgan?",
+      "v": [
+        "x = ±π/6 + 2πn, n ∈ Z",
+        "x = 5π/6 + 2πn, n ∈ Z",
+        "x = ±5π/6 + 2πn, n ∈ Z",
+        "x = (−1)ⁿ·5π/6 + πn, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "arccos(−√3/2) = π − arccos(√3/2) = π − π/6 = 5π/6. Kosinusli tenglamaning umumiy yechimi x = ±arccos a + 2πn bo'lgani uchun x = ±5π/6 + 2πn, n ∈ Z. Faqat musbat seriyani yozish ikkinchi yarim ildizlarni yo'qotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cosx-umumiy-yechim",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#e0a82f12"
+    },
+    {
+      "q": "cos x = 1/2 tenglama uchun to'g'ri umumiy yechim qaysi qatorda berilgan?",
+      "v": [
+        "x = ±π/6 + 2πn, n ∈ Z",
+        "x = ±π/3 + πn, n ∈ Z",
+        "x = (−1)ⁿ·π/3 + πn, n ∈ Z",
+        "x = ±π/3 + 2πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "arccos(1/2) = π/3, chunki cos(π/3) = 1/2 va π/3 kesma [0; π] ichida. Umumiy yechim x = ±arccos a + 2πn ko'rinishida, ya'ni x = ±π/3 + 2πn, n ∈ Z. Kosinusning davri 2π, shuning uchun πn qo'shish noto'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cosx-umumiy-yechim",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#36695341"
+    },
+    {
+      "q": "tg x = 1 tenglamaning umumiy yechimini to'g'ri ko'rsatgan javobni belgilang.",
+      "v": [
+        "x = π/4 + 2πn, n ∈ Z",
+        "x = π/4 + πn, n ∈ Z",
+        "x = ±π/4 + πn, n ∈ Z",
+        "x = (−1)ⁿ·π/4 + πn, n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "Tangensli tenglama x = arctg a + πn formulasi bilan yechiladi, chunki tangensning davri π ga teng. arctg 1 = π/4 bo'lgani uchun x = π/4 + πn, n ∈ Z. Bu yerda ± yoki (−1)ⁿ ko'paytuvchisi umuman ishlatilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tgx-umumiy-yechim",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#e2ee958c"
+    },
+    {
+      "q": "tg x = −√3 tenglama yechimlarining umumiy ko'rinishi qanday bo'ladi?",
+      "v": [
+        "x = π/3 + πn, n ∈ Z",
+        "x = ±π/3 + πn, n ∈ Z",
+        "x = −π/3 + πn, n ∈ Z",
+        "x = −π/3 + 2πn, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "arktangens toq funksiya, shuning uchun arctg(−√3) = −arctg√3 = −π/3. Tangensning davri π bo'lgani uchun umumiy yechim x = −π/3 + πn, n ∈ Z. Ishorani tushirib qoldirish yoki davrni 2π deb olish tipik xatolardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tgx-umumiy-yechim",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#49050c3c"
+    },
+    {
+      "q": "tg x = √3/3 tenglamaning barcha yechimlarini o'z ichiga olgan formulani tanlang.",
+      "v": [
+        "x = π/3 + πn, n ∈ Z",
+        "x = π/6 + 2πn, n ∈ Z",
+        "x = ±π/6 + πn, n ∈ Z",
+        "x = π/6 + πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "√3/3 soni 1/√3 ga teng, tg(π/6) esa aynan shu qiymatni beradi, ya'ni arctg(√3/3) = π/6. Tangens davri π, demak x = π/6 + πn, n ∈ Z. π/3 javobi tg(π/3) = √3 bilan chalkashtirishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tgx-umumiy-yechim",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#f928850a"
+    },
+    {
+      "q": "tg x = 0 tenglamaning yechimlari to'plamini to'g'ri ifodalagan variantni toping.",
+      "v": [
+        "x = πn, n ∈ Z",
+        "x = π/2 + πn, n ∈ Z",
+        "x = 2πn, n ∈ Z",
+        "x = π/2 + 2πn, n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "Tangens nolga aylanishi uchun sinus nolga teng bo'lishi kerak, chunki tg x = sin x : cos x. sin x = 0 tenglamaning ildizlari x = πn. Bu nuqtalarda kosinus noldan farqli, demak yechim x = πn, n ∈ Z. π/2 + πn to'plami aksincha, tangens aniqlanmaydigan nuqtalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tgx-umumiy-yechim",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#95221aea"
+    },
+    {
+      "q": "Sinus funksiyasi nolga aylanadigan barcha burchaklar to'plamini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "x = 2πn, n ∈ Z",
+        "x = π + 2πn, n ∈ Z",
+        "x = πn, n ∈ Z",
+        "x = πn/2, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "Birlik aylanada sinus ordinataga teng, u esa Ox o'qidagi nuqtalarda nolga aylanadi. Bu nuqtalar 0 va π burchaklar bo'lib, ular bir-biridan π masofada joylashgan. Shuning uchun sin x = 0 tenglamaning yechimi x = πn, n ∈ Z bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xususiy-hol-sin",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#730f5ee4"
+    },
+    {
+      "q": "sin x = 1 tenglamaning yechimlari qaysi formulada to'g'ri berilgan?",
+      "v": [
+        "x = π/2 + πn, n ∈ Z",
+        "x = ±π/2 + 2πn, n ∈ Z",
+        "x = 2πn, n ∈ Z",
+        "x = π/2 + 2πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Sinus eng katta qiymati 1 ni faqat aylananing yuqori nuqtasida qabul qiladi, bu esa π/2 burchagi. Sinusning davri 2π bo'lgani uchun barcha ildizlar x = π/2 + 2πn, n ∈ Z. Bu xususiy hol umumiy formulaga muhtoj emas, chunki bitta seriya yetarli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xususiy-hol-sin",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#733d9ae4"
+    },
+    {
+      "q": "sin x = −1 tenglamaning umumiy yechimi qanday yoziladi?",
+      "v": [
+        "x = −π/2 + 2πn, n ∈ Z",
+        "x = π/2 + 2πn, n ∈ Z",
+        "x = −π/2 + πn, n ∈ Z",
+        "x = 3π/2 + πn, n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "Sinus eng kichik qiymati −1 ga aylananing quyi nuqtasida erishadi, unga −π/2 burchagi mos keladi. Davr 2π bo'lgani uchun barcha ildizlar x = −π/2 + 2πn, n ∈ Z ko'rinishida bo'ladi. Davrni πn deb olish ortiqcha, noto'g'ri ildizlar qo'shib yuboradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xususiy-hol-sin",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#499f661e"
+    },
+    {
+      "q": "Malika sin x = −1 tenglamani yechib javobini x = 3π/2 + 2πn deb yozdi, ustozi esa x = −π/2 + 2πn deb yozdi. Kim haqli?",
+      "v": [
+        "Faqat Malika haqli, ustozning yozuvi xato",
+        "Ikkala yozuv ham bir xil ildizlar to'plamini beradi",
+        "Faqat ustoz haqli, Malikaning yozuvi xato",
+        "Ikkalasi ham xato, to'g'risi x = 3π/2 + πn"
+      ],
+      "t": 1,
+      "izoh": "3π/2 va −π/2 burchaklari orasidagi farq 3π/2 − (−π/2) = 2π ga teng, ya'ni ular aynan bitta davrga farq qiladi. Shuning uchun 3π/2 + 2πn to'plami −π/2 + 2πn to'plami bilan aynan ustma-ust tushadi. Ikkala yozuv ham to'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xususiy-hol-sin",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#76ed87f5"
+    },
+    {
+      "q": "cos x = 0 tenglamaning barcha yechimlarini beruvchi formulani tanlang.",
+      "v": [
+        "x = π/2 + 2πn, n ∈ Z",
+        "x = πn, n ∈ Z",
+        "x = π + 2πn, n ∈ Z",
+        "x = π/2 + πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Kosinus birlik aylanada abssissaga teng, u esa Oy o'qidagi nuqtalarda nolga aylanadi. Bu nuqtalar π/2 va −π/2 bo'lib, ular bir-biridan π masofada turadi. Demak yechim x = π/2 + πn, n ∈ Z. Faqat 2πn yozish ildizlarning yarmini yo'qotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xususiy-hol-cos",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#edf3ba06"
+    },
+    {
+      "q": "cos x = 1 tenglamaning yechimlari qanday ko'rinishda yoziladi?",
+      "v": [
+        "x = 2πn, n ∈ Z",
+        "x = πn, n ∈ Z",
+        "x = π + 2πn, n ∈ Z",
+        "x = π/2 + 2πn, n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "Kosinus eng katta qiymati 1 ga aylananing o'ng nuqtasida, ya'ni 0 burchakda erishadi. Kosinusning davri 2π bo'lgani uchun barcha ildizlar x = 2πn, n ∈ Z. Agar πn yozilsa, javobga cos x = −1 nuqtalari ham noto'g'ri qo'shilib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xususiy-hol-cos",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#7b05dca7"
+    },
+    {
+      "q": "cos x = −1 tenglamaning umumiy yechimini toping.",
+      "v": [
+        "x = 2πn, n ∈ Z",
+        "x = π + 2πn, n ∈ Z",
+        "x = πn, n ∈ Z",
+        "x = π/2 + πn, n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "Kosinus eng kichik qiymati −1 ga aylananing chap nuqtasida erishadi, unga π burchagi mos keladi. Davr 2π bo'lgani uchun ildizlar x = π + 2πn, n ∈ Z ko'rinishida yoziladi. 2πn to'plami esa aksincha, cos x = 1 tenglamaning yechimidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xususiy-hol-cos",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#c45b62bd"
+    },
+    {
+      "q": "Chizmachilik darsida Anvar kosinusi nolga teng bo'lgan eng kichik musbat burchakni izlayapti. U necha gradusni topishi kerak?",
+      "v": [
+        "0°",
+        "45°",
+        "90°",
+        "180°"
+      ],
+      "t": 2,
+      "izoh": "cos x = 0 tenglamaning yechimlari x = 90° + 180°·n ko'rinishida bo'ladi. Musbat ildizlar 90°, 270°, 450° va hokazo. Ular orasida eng kichigi 90°. 0° da kosinus 1 ga, 180° da −1 ga, 45° da esa √2/2 ga teng bo'lgani uchun ular javob emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xususiy-hol-cos",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#043a8c9c"
+    },
+    {
+      "q": "sin x = 1,4 tenglamaning haqiqiy yechimlari haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Yechimi yo'q, chunki sinus qiymati [−1; 1] oralig'idan chiqmaydi",
+        "Tenglamaning bitta yechimi bor",
+        "Tenglamaning cheksiz ko'p yechimi bor",
+        "Tenglamaning ikkita yechimi bor"
+      ],
+      "t": 0,
+      "izoh": "Sinus funksiyasining qiymatlar to'plami [−1; 1] kesmasidan iborat. 1,4 soni bu kesmadan tashqarida yotadi, ya'ni hech qanday burchakning sinusi 1,4 bo'la olmaydi. Shuning uchun tenglamaning haqiqiy ildizi mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimga-ega-emas",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#8e382732"
+    },
+    {
+      "q": "Bir o'quvchi masalani yechish jarayonida cos x = 5/4 tenglamasiga keldi va davom etolmay qoldi. Bu holatda qanday xulosa qilish kerak?",
+      "v": [
+        "x = arccos(5/4) + 2πn deb yozish kerak",
+        "Bu bosqichda yechim yo'q, chunki 5/4 soni 1 dan katta",
+        "x = ±5π/4 + 2πn deb yozish kerak",
+        "x = 5/4 + 2πn deb yozish kerak"
+      ],
+      "t": 1,
+      "izoh": "5/4 = 1,25 bo'lib, bu son 1 dan katta. Kosinusning qiymatlar to'plami esa [−1; 1] kesmasi. Demak cos x = 5/4 tenglama hech qanday x da bajarilmaydi va arccos(5/4) ifodasining o'zi ham aniqlanmagan. Masalaning bu shoxobchasi yechimsiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechimga-ega-emas",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#45d87c50"
+    },
+    {
+      "q": "a parametrning qanday qiymatlarida sin x = a tenglama haqiqiy yechimga ega bo'ladi?",
+      "v": [
+        "a > 0 bo'lganda",
+        "0 ≤ a ≤ 1 bo'lganda",
+        "−1 ≤ a ≤ 1 bo'lganda",
+        "a ning har qanday haqiqiy qiymatida"
+      ],
+      "t": 2,
+      "izoh": "Sinus funksiyasi eng kichik qiymati −1, eng katta qiymati 1 bo'lgan barcha oraliq sonlarni qabul qiladi. Shuning uchun sin x = a tenglama aynan −1 ≤ a ≤ 1 shart bajarilganda yechimga ega. Manfiy a lar ham mumkin, shuning uchun 0 ≤ a ≤ 1 javobi chala.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimga-ega-emas",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#24e2f38f"
+    },
+    {
+      "q": "tg x = 7 tenglamasi yechimga egami? To'g'ri javobni sababi bilan birga tanlang.",
+      "v": [
+        "Yo'q, chunki 7 soni 1 dan katta",
+        "Yo'q, chunki tangens faqat [−1; 1] oralig'ida aniqlangan",
+        "Ha, lekin tenglamaning atigi bitta ildizi bor",
+        "Ha, chunki tangensning qiymatlar to'plami barcha haqiqiy sonlardan iborat"
+      ],
+      "t": 3,
+      "izoh": "Sinus va kosinusdan farqli ravishda tangensning qiymatlar to'plami cheklanmagan, u har qanday haqiqiy sonni qabul qiladi. Shuning uchun tg x = 7 tenglamaning yechimi bor va u x = arctg7 + πn ko'rinishida yoziladi. Davr π bo'lgani uchun ildizlar cheksiz ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechimga-ega-emas",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#9d8b6d85"
+    },
+    {
+      "q": "sin x = 1/2 tenglamaning [−π/2; π/2] kesmadagi ildizi x, cos y = 1/2 tenglamaning [0; π] kesmadagi ildizi y bo'lsa, x + y yig'indisini toping.",
+      "v": [
+        "π/6",
+        "π/2",
+        "π/3",
+        "2π/3"
+      ],
+      "t": 1,
+      "izoh": "Birinchi kesmada sinusi 1/2 bo'lgan yagona burchak x = π/6. Ikkinchi kesmada kosinusi 1/2 bo'lgan yagona burchak y = π/3. Yig'indi π/6 + π/3 = π/6 + 2π/6 = 3π/6 = π/2. Javob: π/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "arkfunksiya-asosiy-oraliq",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#2a552bb5"
+    },
+    {
+      "q": "cos x = −√2/2 tenglamaning [0; π] kesmaga tegishli yagona ildizini toping.",
+      "v": [
+        "π/4",
+        "−π/4",
+        "3π/4",
+        "5π/4"
+      ],
+      "t": 2,
+      "izoh": "Kesma [0; π] da kosinus monoton kamayadi, shuning uchun ildiz yagona. arccos(−√2/2) = π − arccos(√2/2) = π − π/4 = 3π/4. Tekshiramiz: cos(3π/4) = −√2/2. 5π/4 ham tenglamani qanoatlantiradi, lekin u berilgan kesmadan tashqarida yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arkfunksiya-asosiy-oraliq",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#cc299140"
+    },
+    {
+      "q": "tg x = −1 tenglamaning (−π/2; π/2) intervalga tegishli yagona ildizini aniqlang.",
+      "v": [
+        "π/4",
+        "3π/4",
+        "−3π/4",
+        "−π/4"
+      ],
+      "t": 3,
+      "izoh": "Berilgan intervalda tangens monoton o'sadi va har bir qiymatni bir marta qabul qiladi. arctg(−1) = −arctg1 = −π/4, ya'ni ildiz x = −π/4. 3π/4 soni ham tg x = −1 ni qanoatlantiradi, lekin u intervaldan tashqarida joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "arkfunksiya-asosiy-oraliq",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#1824d1c9"
+    },
+    {
+      "q": "sin x = −√3/2 tenglamaning [−π/2; π/2] kesmadagi ildizini toping.",
+      "v": [
+        "−π/3",
+        "π/3",
+        "−π/6",
+        "4π/3"
+      ],
+      "t": 0,
+      "izoh": "Bu kesmada sinus monoton o'sadi, demak ildiz yagona va u arcsin(−√3/2) ga teng. Arksinus toq funksiya bo'lgani uchun arcsin(−√3/2) = −arcsin(√3/2) = −π/3. Tekshirish: sin(−π/3) = −√3/2, shart bajarildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arkfunksiya-asosiy-oraliq",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#e6257bd2"
+    },
+    {
+      "q": "Imtihon topshirig'ida sin x = 1/2 tenglamaning [0; 4π] kesmadagi ildizlari sonini aniqlash so'ralgan. To'g'ri javobni tanlang.",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "8 ta"
+      ],
+      "t": 2,
+      "izoh": "Bitta 2π uzunlikdagi davrda sinusi 1/2 bo'lgan ikkita burchak bor: π/6 va 5π/6. Kesma [0; 4π] ikkita to'liq davrdan iborat, demak ildizlar π/6, 5π/6, 13π/6 va 17π/6. Ularning hammasi 4π ≈ 12,57 dan kichik. Jami 4 ta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-ildizlar-soni",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#a4c901bd"
+    },
+    {
+      "q": "cos x = √3/2 tenglama [0; 3π] kesmada nechta ildizga ega ekanligini aniqlang.",
+      "v": [
+        "2 ta",
+        "4 ta",
+        "6 ta",
+        "3 ta"
+      ],
+      "t": 3,
+      "izoh": "Yechim x = ±π/6 + 2πn. Musbat ildizlarni tartib bilan yozamiz: π/6 ≈ 0,52; 2π − π/6 = 11π/6 ≈ 5,76; 2π + π/6 = 13π/6 ≈ 6,81. Keyingisi 4π − π/6 = 23π/6 ≈ 12,04 bo'lib, u 3π ≈ 9,42 dan katta. Demak 3 ta ildiz bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-ildizlar-soni",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#9f74649e"
+    },
+    {
+      "q": "sin x = 0 tenglamaning [−3π; 3π] kesmadagi ildizlari nechta ekanligini toping.",
+      "v": [
+        "7 ta",
+        "6 ta",
+        "5 ta",
+        "4 ta"
+      ],
+      "t": 0,
+      "izoh": "Yechim x = πn ko'rinishida bo'ladi. Kesmaga tushadigan n larni sanaymiz: n = −3, −2, −1, 0, 1, 2, 3. Ularga mos ildizlar −3π, −2π, −π, 0, π, 2π, 3π. Nolni ham hisobga olish kerak, shuning uchun jami 7 ta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-ildizlar-soni",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#26391b0f"
+    },
+    {
+      "q": "cos x = −1 tenglama [0; 10π] kesmada nechta ildizga ega bo'lishini hisoblang.",
+      "v": [
+        "10 ta",
+        "5 ta",
+        "6 ta",
+        "4 ta"
+      ],
+      "t": 1,
+      "izoh": "cos x = −1 tenglamaning yechimi x = π + 2πn, ya'ni ildizlar 2π qadam bilan joylashgan. Kesmaga tushadiganlari: π, 3π, 5π, 7π, 9π. Keyingisi 11π bo'lib, u 10π dan katta. Demak 5 ta ildiz bor, davr π emas, 2π ekanini unutmaslik kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-ildizlar-soni",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#ebadfa24"
+    },
+    {
+      "q": "cos x = 1/2 tenglamaning [0; 2π] kesmadagi barcha ildizlari yig'indisini hisoblang.",
+      "v": [
+        "π/3",
+        "5π/3",
+        "π",
+        "2π"
+      ],
+      "t": 3,
+      "izoh": "Kesmada ikkita ildiz bor: birinchisi arccos(1/2) = π/3, ikkinchisi 2π − π/3 = 5π/3. Ularning yig'indisi π/3 + 5π/3 = 6π/3 = 2π. Ikkinchi ildizni 2π/3 deb olish sinus bilan chalkashtirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-ildizlar-yigindisi",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#8d334597"
+    },
+    {
+      "q": "sin x = √2/2 tenglamaning [0; 2π] oraliqdagi ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "π",
+        "π/4",
+        "3π/4",
+        "2π"
+      ],
+      "t": 0,
+      "izoh": "Sinusi √2/2 bo'lgan burchaklar birinchi va ikkinchi choraklarda yotadi: x = π/4 va x = π − π/4 = 3π/4. Ularning yig'indisi π/4 + 3π/4 = 4π/4 = π. Faqat bitta ildizni olish yig'indini ikki barobar kamaytirib yuboradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqdagi-ildizlar-yigindisi",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#0c7c029b"
+    },
+    {
+      "q": "tg x = 1 tenglamaning [0; 2π] oraliqdagi ildizlari yig'indisini hisoblang.",
+      "v": [
+        "π/2",
+        "3π/2",
+        "π/4",
+        "5π/4"
+      ],
+      "t": 1,
+      "izoh": "Tangensning davri π, shuning uchun [0; 2π] da ikkita ildiz bo'ladi: x = π/4 va x = π/4 + π = 5π/4. Yig'indi π/4 + 5π/4 = 6π/4 = 3π/2. Davrni 2π deb olsak, ikkinchi ildiz butunlay tushib qolar edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-ildizlar-yigindisi",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#bbb2e008"
+    },
+    {
+      "q": "Anvar sin x = −1/2 tenglamaning [0; 2π] oraliqdagi ildizlarini topib, ularning yig'indisini hisobladi. U qanday natija olishi kerak?",
+      "v": [
+        "π",
+        "7π/6",
+        "3π",
+        "2π"
+      ],
+      "t": 2,
+      "izoh": "Sinusi manfiy bo'lgan burchaklar uchinchi va to'rtinchi choraklarda yotadi: x = π + π/6 = 7π/6 va x = 2π − π/6 = 11π/6. Yig'indi 7π/6 + 11π/6 = 18π/6 = 3π. Ishorani e'tibordan qochirib π/6 va 5π/6 ni olish yig'indini π qilib yuboradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-ildizlar-yigindisi",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#bff44ffd"
+    },
+    {
+      "q": "Sevara cos x = −1/2 tenglamani yechib, uning eng kichik musbat ildizini topmoqchi. U qaysi qiymatni yozishi kerak?",
+      "v": [
+        "2π/3",
+        "π/3",
+        "4π/3",
+        "π/6"
+      ],
+      "t": 0,
+      "izoh": "Yechim x = ±2π/3 + 2πn ko'rinishida. Musbat ildizlarni o'sish tartibida yozamiz: 2π/3 ≈ 2,09 va 2π − 2π/3 = 4π/3 ≈ 4,19. Eng kichigi 2π/3. π/3 javobi arkkosinusni toq funksiya deb hisoblash xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-kichik-musbat-ildiz",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#65a98240"
+    },
+    {
+      "q": "sin x = −√3/2 tenglamaning musbat ildizlari orasida eng kichigini aniqlang.",
+      "v": [
+        "π/3",
+        "4π/3",
+        "5π/3",
+        "2π/3"
+      ],
+      "t": 1,
+      "izoh": "Sinus manfiy bo'lgani uchun ildizlar uchinchi va to'rtinchi choraklarda yotadi. Ular x = π + π/3 = 4π/3 va x = 2π − π/3 = 5π/3. Bulardan kichigi 4π/3 ≈ 4,19. π/3 javobi manfiy ishorani hisobga olmaslikdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-musbat-ildiz",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#ed7e05ac"
+    },
+    {
+      "q": "tg x = √3 tenglamaning eng kichik musbat ildizi necha radianga teng?",
+      "v": [
+        "π/6",
+        "2π/3",
+        "π/3",
+        "π/4"
+      ],
+      "t": 2,
+      "izoh": "arctg√3 = π/3, chunki tg(π/3) = √3. Umumiy yechim x = π/3 + πn bo'lgani uchun musbat ildizlar π/3, 4π/3, 7π/3 va hokazo. Ular orasida eng kichigi π/3. π/6 esa tg x = √3/3 tenglamaga tegishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-kichik-musbat-ildiz",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#4cb51026"
+    },
+    {
+      "q": "sin x = 1/2 tenglamaning 2π dan katta bo'lgan eng kichik ildizini toping va uni to'g'ri ko'rsating.",
+      "v": [
+        "π/6",
+        "17π/6",
+        "25π/6",
+        "13π/6"
+      ],
+      "t": 3,
+      "izoh": "Ildizlar ikkita seriyadan iborat: π/6 + 2πn va 5π/6 + 2πn. 2π ≈ 6,28 dan katta birinchi qiymatlarni topamiz: π/6 + 2π = 13π/6 ≈ 6,81 va 5π/6 + 2π = 17π/6 ≈ 8,90. Ikkalasidan kichigi 13π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-kichik-musbat-ildiz",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#1369eea8"
+    },
+    {
+      "q": "sin x = 1/2 tenglamaning eng katta manfiy ildizini toping.",
+      "v": [
+        "−11π/6",
+        "−7π/6",
+        "−π/6",
+        "−5π/6"
+      ],
+      "t": 1,
+      "izoh": "Ildiz seriyalari π/6 + 2πn va 5π/6 + 2πn. n = −1 da ular π/6 − 2π = −11π/6 ≈ −5,76 va 5π/6 − 2π = −7π/6 ≈ −3,67 bo'ladi. Manfiylardan eng kattasi nolga eng yaqini, ya'ni −7π/6. Shunchaki ishorani almashtirib −π/6 deb yozish xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-manfiy-ildiz",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#47abca77"
+    },
+    {
+      "q": "cos x = √2/2 tenglamaning eng katta manfiy ildizi qaysi qiymatga teng?",
+      "v": [
+        "−7π/4",
+        "−9π/4",
+        "−π/4",
+        "−3π/4"
+      ],
+      "t": 2,
+      "izoh": "Yechim x = ±π/4 + 2πn. Manfiy ildizlarni yozamiz: −π/4 ≈ −0,79, keyin π/4 − 2π = −7π/4 ≈ −5,50 va −π/4 − 2π = −9π/4. Nolga eng yaqin manfiy qiymat −π/4. Davrni ortiqcha ayirish keraksiz kichik ildizlarga olib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-manfiy-ildiz",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#6ef73395"
+    },
+    {
+      "q": "tg x = 1 tenglamaning eng katta manfiy ildizini aniqlang.",
+      "v": [
+        "−π/4",
+        "−7π/4",
+        "−5π/4",
+        "−3π/4"
+      ],
+      "t": 3,
+      "izoh": "Umumiy yechim x = π/4 + πn, davr π ga teng. n = −1 da x = π/4 − π = −3π/4 ≈ −2,36, n = −2 da esa −7π/4. Nolga eng yaqin manfiy ildiz −3π/4. −π/4 soni tg x = −1 tenglamaga tegishli, bu yerda javob bo'la olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-manfiy-ildiz",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#43300991"
+    },
+    {
+      "q": "cos x = −1 tenglamaning eng katta manfiy ildizini toping.",
+      "v": [
+        "−π",
+        "−2π",
+        "−3π",
+        "−π/2"
+      ],
+      "t": 0,
+      "izoh": "Yechim x = π + 2πn ko'rinishida. n = −1 da x = π − 2π = −π, n = −2 da esa −3π. Nolga eng yaqin manfiy ildiz −π. −2π soni cos x = 1 tenglamaning ildizi, shuning uchun mos kelmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-manfiy-ildiz",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#45bcb714"
+    },
+    {
+      "q": "sin 2x = 1/2 tenglamaning umumiy yechimini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "x = (−1)ⁿ·π/6 + πn, n ∈ Z",
+        "x = (−1)ⁿ·π/12 + πn, n ∈ Z",
+        "x = (−1)ⁿ·π/12 + πn/2, n ∈ Z",
+        "x = (−1)ⁿ·π/6 + πn/2, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "Avval 2x ni yangi noma'lum deb qaraymiz: 2x = (−1)ⁿ·π/6 + πn. So'ng ikkala tomonni 2 ga bo'lamiz. Bunda faqat burchak emas, davr ham bo'linadi: x = (−1)ⁿ·π/12 + πn/2, n ∈ Z. Davrni bo'lishni unutish eng ko'p uchraydigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "argument-koeffitsientli",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#80ea44c4"
+    },
+    {
+      "q": "cos 3x = 1 tenglamaning barcha yechimlarini bitta formula bilan ko'rsating.",
+      "v": [
+        "x = 2πn, n ∈ Z",
+        "x = πn/3, n ∈ Z",
+        "x = 6πn, n ∈ Z",
+        "x = 2πn/3, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "cos t = 1 tenglamaning yechimi t = 2πn. Bu yerda t = 3x, demak 3x = 2πn. Ikkala tomonni 3 ga bo'lsak x = 2πn/3, n ∈ Z. Bo'lish natijasida ildizlar tez-tez joylashadi, ya'ni davr 2π dan 2π/3 ga qisqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-koeffitsientli",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#0fe13d7f"
+    },
+    {
+      "q": "tg 4x = 0 tenglamaning barcha yechimlarini bitta formula bilan ifodalang.",
+      "v": [
+        "x = πn/4, n ∈ Z",
+        "x = πn, n ∈ Z",
+        "x = 4πn, n ∈ Z",
+        "x = πn/2, n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "tg t = 0 tenglamaning yechimi t = πn. Bu yerda t = 4x, shuning uchun 4x = πn. Ikkala tomonni 4 ga bo'lamiz va x = πn/4, n ∈ Z ni olamiz. Argument oldidagi koeffitsient kattalashsa, ildizlar shuncha zichroq joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-koeffitsientli",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#9a9a4ae8"
+    },
+    {
+      "q": "cos(x/2) = 0 tenglamada argument yarim burchak bo'lgani uchun yechim qanday o'zgaradi? To'g'ri formulani tanlang.",
+      "v": [
+        "x = π/2 + πn, n ∈ Z",
+        "x = π + 2πn, n ∈ Z",
+        "x = π/4 + πn/2, n ∈ Z",
+        "x = π + πn, n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "cos t = 0 tenglamaning yechimi t = π/2 + πn. Bu yerda t = x/2, demak x/2 = π/2 + πn. Ikkala tomonni 2 ga ko'paytiramiz: x = π + 2πn, n ∈ Z. Argument kichraytirilgani uchun ildizlar aksincha siyraklashadi, davr 2π bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-koeffitsientli",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#a27fae1e"
+    },
+    {
+      "q": "sin(x − π/6) = 1 tenglamaning umumiy yechimini toping.",
+      "v": [
+        "x = π/3 + 2πn, n ∈ Z",
+        "x = π/2 + 2πn, n ∈ Z",
+        "x = 2π/3 + πn, n ∈ Z",
+        "x = 2π/3 + 2πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "sin t = 1 xususiy hol bo'lgani uchun t = π/2 + 2πn. Bu yerda t = x − π/6, demak x − π/6 = π/2 + 2πn. Ikkala tomonga π/6 qo'shamiz: x = π/2 + π/6 + 2πn = 3π/6 + π/6 + 2πn = 2π/3 + 2πn, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-siljishli",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#825d3adb"
+    },
+    {
+      "q": "cos(x + π/4) = 1/2 tenglamaning umumiy yechimini to'g'ri ifodalagan javobni belgilang.",
+      "v": [
+        "x = ±π/3 − π/4 + 2πn, n ∈ Z",
+        "x = ±π/3 + π/4 + 2πn, n ∈ Z",
+        "x = ±π/6 − π/4 + 2πn, n ∈ Z",
+        "x = ±π/3 − π/4 + πn, n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "cos t = 1/2 dan t = ±π/3 + 2πn kelib chiqadi, chunki arccos(1/2) = π/3. Bu yerda t = x + π/4, shuning uchun x + π/4 = ±π/3 + 2πn. π/4 ni o'ng tomonga ayirib o'tkazamiz: x = ±π/3 − π/4 + 2πn, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "argument-siljishli",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#5fee99e3"
+    },
+    {
+      "q": "tg(x + π/3) = 1 tenglamaning umumiy yechimi qanday bo'ladi?",
+      "v": [
+        "x = π/12 + πn, n ∈ Z",
+        "x = −π/12 + πn, n ∈ Z",
+        "x = 7π/12 + πn, n ∈ Z",
+        "x = −π/12 + 2πn, n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "tg t = 1 dan t = π/4 + πn. Bu yerda t = x + π/3, demak x + π/3 = π/4 + πn. Bundan x = π/4 − π/3 + πn. Umumiy maxraj 12: 3π/12 − 4π/12 = −π/12. Demak x = −π/12 + πn, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-siljishli",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#0dbed1fc"
+    },
+    {
+      "q": "sin(2x + π/3) = 0 tenglamaning umumiy yechimini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "x = −π/3 + πn, n ∈ Z",
+        "x = −π/6 + πn, n ∈ Z",
+        "x = −π/6 + πn/2, n ∈ Z",
+        "x = π/6 + πn/2, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "sin t = 0 dan t = πn. Bu yerda t = 2x + π/3, shuning uchun 2x + π/3 = πn, ya'ni 2x = −π/3 + πn. Ikkala tomonni 2 ga bo'lamiz: x = −π/6 + πn/2, n ∈ Z. Davrni ham bo'lish shart, aks holda ildizlarning yarmi yo'qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "argument-siljishli",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#8f1be9b0"
+    },
+    {
+      "q": "x = 5π/6 soni sin x = 1/2 tenglamaning ildizi bo'ladimi? Javobingizni asoslang.",
+      "v": [
+        "Ha, chunki sin(5π/6) = 1/2",
+        "Yo'q, chunki sin(5π/6) = −1/2",
+        "Yo'q, chunki sin(5π/6) = √3/2",
+        "Ha, lekin faqat n = 1 bo'lgandagina"
+      ],
+      "t": 0,
+      "izoh": "5π/6 burchagi ikkinchi chorakda yotadi, u yerda sinus musbat. Keltirish formulasi bo'yicha sin(5π/6) = sin(π − π/6) = sin(π/6) = 1/2. Demak berilgan son tenglamani qanoatlantiradi va uning ildizi hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-ildizmi-tekshirish",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#8beb4d21"
+    },
+    {
+      "q": "Quyidagi sonlardan qaysi biri cos x = −√2/2 tenglamaning ildizi emas: 3π/4, 7π/4, 5π/4, 11π/4?",
+      "v": [
+        "3π/4",
+        "7π/4",
+        "5π/4",
+        "11π/4"
+      ],
+      "t": 1,
+      "izoh": "cos(3π/4) = −√2/2 va cos(5π/4) = −√2/2, ya'ni ikkalasi ildiz. 11π/4 dan bitta davrni ayiramiz: 11π/4 − 2π = 3π/4, demak u ham ildiz. 7π/4 esa to'rtinchi chorakda yotadi va cos(7π/4) = √2/2 musbat chiqadi, shuning uchun u ildiz emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-ildizmi-tekshirish",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#3f69c792"
+    },
+    {
+      "q": "x = π/3 + πn, n ∈ Z formulasi quyidagi tenglamalardan qaysi birining yechimi bo'la oladi?",
+      "v": [
+        "sin x = √3/2",
+        "cos x = 1/2",
+        "tg x = √3",
+        "tg x = √3/3"
+      ],
+      "t": 2,
+      "izoh": "Formuladagi davr π ga teng, sinus va kosinusning davri esa 2π. Demak bu faqat tangensli tenglama bo'lishi mumkin. arctg qiymati π/3 bo'lgani uchun tg(π/3) = √3, ya'ni tenglama tg x = √3. tg x = √3/3 bo'lganda burchak π/6 bo'lar edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-ildizmi-tekshirish",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#f4db53b6"
+    },
+    {
+      "q": "Kamola sin x = √2/2 tenglamaning yechimini x = π/4 + 2πn deb yozib qo'ydi. Uning yozuvi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Yozuv to'liq va to'g'ri",
+        "Yozuv noto'g'ri, chunki davr πn bo'lishi kerak",
+        "Yozuv noto'g'ri, chunki ildiz π/3 + 2πn bo'ladi",
+        "Yozuv chala: x = 3π/4 + 2πn seriyasi tushib qolgan"
+      ],
+      "t": 3,
+      "izoh": "Sinusi √2/2 bo'lgan burchaklar bitta davrda ikkita: π/4 birinchi chorakda va 3π/4 ikkinchi chorakda. Kamola faqat birinchisini yozgan, ikkinchi seriya esa tushib qolgan. To'liq javob (−1)ⁿ·π/4 + πn yoki ikkita seriya birgalikda yozilishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "son-ildizmi-tekshirish",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#73303f9a"
+    },
+    {
+      "q": "Bog'dagi aylanma g'ildirakda kabinaning yerdan balandligi h = 25 − 20·cos(πt/10) metr formulasi bilan beriladi, bunda t — daqiqada o'lchangan vaqt. Kabina eng past nuqtaga qaytadigan eng kichik musbat t ni toping.",
+      "v": [
+        "10 daqiqa",
+        "20 daqiqa",
+        "5 daqiqa",
+        "40 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Balandlik eng kichik bo'lishi uchun ayiriluvchi eng katta, ya'ni cos(πt/10) = 1 bo'lishi kerak. Bundan πt/10 = 2πn, ya'ni t = 20n. Musbat qiymatlar 20, 40, 60 daqiqa. Eng kichigi 20 daqiqa. 10 daqiqada esa kabina aksincha eng yuqori nuqtada bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylanma-harakat-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#e5f838a0"
+    },
+    {
+      "q": "Ko'rgazma maydonchasidagi aylanma g'ildirakda kabina balandligi h = 18 + 15·sin(πt/12) metr, bunda t daqiqada o'lchanadi. Kabina eng yuqori nuqtaga birinchi marta necha daqiqada chiqadi?",
+      "v": [
+        "12 daqiqa",
+        "3 daqiqa",
+        "6 daqiqa",
+        "24 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Balandlik eng katta bo'lishi uchun sin(πt/12) = 1 bo'lishi kerak. Bundan πt/12 = π/2 + 2πn, ya'ni t/12 = 1/2 + 2n va t = 6 + 24n. Musbat qiymatlarning eng kichigi t = 6 daqiqa. 12 daqiqa esa kabina yana o'rta balandlikka tushadigan payt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylanma-harakat-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#20787f9c"
+    },
+    {
+      "q": "Suv chig'irig'ining bir qanotidagi belgilangan nuqtaning suv sathidan balandligi h = 3·sin(πt/4) metr bilan ifodalanadi, bunda t soniyada. Nuqta birinchi marta qachon suv sathiga tushadi?",
+      "v": [
+        "1 soniya",
+        "2 soniya",
+        "8 soniya",
+        "4 soniya"
+      ],
+      "t": 3,
+      "izoh": "Nuqta suv sathida bo'lishi h = 0 degani, ya'ni sin(πt/4) = 0. Bundan πt/4 = πn, demak t = 4n. Musbat qiymatlar 4, 8, 12 soniya bo'lib, eng kichigi 4 soniya. 2 soniyada nuqta aksincha eng yuqori holatda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylanma-harakat-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#54018a28"
+    },
+    {
+      "q": "Karuselda otchada o'tirgan bolaning markaziy o'qdan yon tomonga siljishi s = 4·cos(πt/8) metr formulasi bilan beriladi. Bola markaziy o'qdan birinchi marta qachon o'tadi?",
+      "v": [
+        "4 soniya",
+        "8 soniya",
+        "2 soniya",
+        "16 soniya"
+      ],
+      "t": 0,
+      "izoh": "Markaziy o'qdan o'tish s = 0 degani, ya'ni cos(πt/8) = 0. Bundan πt/8 = π/2 + πn, demak t = 4 + 8n. Musbat qiymatlar 4, 12, 20 soniya. Eng kichigi 4 soniya. 8 soniya esa bola qarama-qarshi chekka nuqtaga yetadigan vaqt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylanma-harakat-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#b77b2a3d"
+    },
+    {
+      "q": "Samarqandda kunduz uzunligi taxminan L = 12 + 3·sin(2π(d − 80)/365) soat formulasi bilan modellashtiriladi, bunda d — yil boshidan hisoblangan kun raqami. Kunduz aynan 12 soat bo'lishi qaysi sodda tenglamaga olib keladi?",
+      "v": [
+        "sin(2π(d − 80)/365) = 1",
+        "sin(2π(d − 80)/365) = −1",
+        "sin(2π(d − 80)/365) = 0",
+        "sin(2π(d − 80)/365) = 12"
+      ],
+      "t": 2,
+      "izoh": "L = 12 shartini formulaga qo'yamiz: 12 = 12 + 3·sin(2π(d − 80)/365). Ikkala tomondan 12 ni ayiramiz va 3·sin(...) = 0 hosil bo'ladi. Uchga bo'lsak sin(2π(d − 80)/365) = 0 chiqadi. Sinusning qiymati 12 bo'la olmasligini ham eslash kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mavsumiy-model-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#3423c7ce"
+    },
+    {
+      "q": "Bir shaharda o'rtacha oylik harorat T = 15 + 14·sin(π(m − 4)/6) daraja formulasi bilan taxminlanadi, bunda m — oy raqami. Harorat 29 darajaga yetadigan oyni aniqlang.",
+      "v": [
+        "1-oy (yanvar)",
+        "4-oy (aprel)",
+        "10-oy (oktabr)",
+        "7-oy (iyul)"
+      ],
+      "t": 3,
+      "izoh": "29 = 15 + 14·sin(π(m − 4)/6) tenglamadan sin(π(m − 4)/6) = 1 kelib chiqadi. Bundan π(m − 4)/6 = π/2 + 2πn, ya'ni (m − 4)/6 = 1/2 + 2n va m − 4 = 3 + 12n. Demak m = 7, ya'ni iyul oyi. Aprelda esa harorat 15 daraja bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mavsumiy-model-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#de18da7c"
+    },
+    {
+      "q": "Do'kondagi muzqaymoq savdosi S = 200 + 150·cos(π(m − 6)/6) dona formulasi bo'yicha o'zgaradi, bunda m — oy raqami. Savdo eng kam bo'ladigan oyni toping.",
+      "v": [
+        "12-oy (dekabr)",
+        "6-oy (iyun)",
+        "3-oy (mart)",
+        "9-oy (sentabr)"
+      ],
+      "t": 0,
+      "izoh": "Savdo eng kam bo'lishi uchun cos(π(m − 6)/6) = −1 bo'lishi kerak. Bundan π(m − 6)/6 = π + 2πn, ya'ni m − 6 = 6 + 12n va m = 12 + 12n. Oy raqami sifatida m = 12, ya'ni dekabr. Iyunda esa aksincha kosinus 1 ga teng va savdo eng ko'p bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mavsumiy-model-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#d87223ab"
+    },
+    {
+      "q": "Paxta terimi mavsumida kunlik yig'im hajmi Q = 40 − 25·cos(πt/12) tonna formulasi bilan beriladi, bunda t — mavsum boshidan hisoblangan kun. Hajm aynan 40 tonna bo'ladigan eng kichik musbat t ni toping.",
+      "v": [
+        "12 kun",
+        "6 kun",
+        "3 kun",
+        "24 kun"
+      ],
+      "t": 1,
+      "izoh": "40 = 40 − 25·cos(πt/12) tenglamadan cos(πt/12) = 0 kelib chiqadi. Bundan πt/12 = π/2 + πn, ya'ni t = 6 + 12n. Musbat qiymatlar 6, 18, 30 kun bo'lib, eng kichigi 6 kun. 12 kunda esa kosinus −1 ga teng va hajm eng katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mavsumiy-model-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#8083137d"
+    },
+    {
+      "q": "Chorvoq suv omborida sath h = 6 + 2·sin(πt/6) metr formulasi bilan o'zgaradi, bunda t soatda o'lchanadi. Sath 8 metrga birinchi marta qachon yetadi?",
+      "v": [
+        "1,5 soat",
+        "6 soat",
+        "12 soat",
+        "3 soat"
+      ],
+      "t": 3,
+      "izoh": "8 = 6 + 2·sin(πt/6) tenglamadan sin(πt/6) = 1 chiqadi. Bundan πt/6 = π/2 + 2πn, ya'ni t/6 = 1/2 + 2n va t = 3 + 12n. Musbat qiymatlarning eng kichigi 3 soat. 6 soatda esa sinus nolga qaytadi va sath 6 metr bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "suv-sathi-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#800d5934"
+    },
+    {
+      "q": "Dengiz bo'yidagi kuzatuv stansiyasida suv sathi h = 4 + 3·cos(πt/8) metr formulasi bilan qayd etiladi, bunda t soatda. Sath aynan 4 metrga teng bo'ladigan eng kichik musbat t qiymati qancha?",
+      "v": [
+        "4 soat",
+        "8 soat",
+        "2 soat",
+        "16 soat"
+      ],
+      "t": 0,
+      "izoh": "4 = 4 + 3·cos(πt/8) tenglamadan cos(πt/8) = 0 kelib chiqadi. Bundan πt/8 = π/2 + πn, ya'ni t = 4 + 8n. Musbat qiymatlar 4, 12, 20 soat. Eng kichigi 4 soat. 8 soatda kosinus −1 ga teng bo'lib, sath 1 metrga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suv-sathi-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#55de8887"
+    },
+    {
+      "q": "Kanaldagi suv sathi h = 5 + 1,5·sin(πt/4) metr formulasi bilan berilgan, bunda t soatda o'lchanadi. Sath eng past bo'ladigan birinchi musbat t ni toping.",
+      "v": [
+        "2 soat",
+        "6 soat",
+        "4 soat",
+        "8 soat"
+      ],
+      "t": 1,
+      "izoh": "Sath eng past bo'lishi uchun sin(πt/4) = −1 bo'lishi kerak. Bundan πt/4 = −π/2 + 2πn, ya'ni t/4 = −1/2 + 2n va t = −2 + 8n. n = 1 da t = 6 soat, bu birinchi musbat qiymat. 2 soatda esa aksincha sinus 1 ga teng va sath eng baland bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "suv-sathi-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#f43d411f"
+    },
+    {
+      "q": "Baliqchilik hovuzidagi suv sathi h = 3 − 2·cos(πt/5) metr formulasi bilan o'zgaradi, bunda t soatda. Hovuzda suv eng ko'p bo'ladigan eng kichik musbat t nechaga teng?",
+      "v": [
+        "10 soat",
+        "2,5 soat",
+        "5 soat",
+        "20 soat"
+      ],
+      "t": 2,
+      "izoh": "Sath eng katta bo'lishi uchun ayiriluvchi eng kichik, ya'ni cos(πt/5) = −1 bo'lishi kerak. Bundan πt/5 = π + 2πn, ya'ni t = 5 + 10n. Musbat qiymatlar 5, 15, 25 soat. Eng kichigi 5 soat. 10 soatda kosinus 1 ga qaytadi va sath eng past bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suv-sathi-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#eaeecf93"
+    },
+    {
+      "q": "Prujinaga osilgan yukning muvozanat holatidan chetlanishi x = 8·sin(πt/5) santimetr formulasi bilan beriladi, bunda t soniyada. Yuk muvozanat holatidan birinchi marta qachon o'tadi?",
+      "v": [
+        "5 soniya",
+        "2,5 soniya",
+        "10 soniya",
+        "1 soniya"
+      ],
+      "t": 0,
+      "izoh": "Muvozanat holati chetlanish nolga teng bo'lgan payt, ya'ni sin(πt/5) = 0. Bundan πt/5 = πn, demak t = 5n. Musbat qiymatlar 5, 10, 15 soniya bo'lib, eng kichigi 5 soniya. 2,5 soniyada esa chetlanish aksincha eng katta qiymatga yetadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tebranish-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#5266c490"
+    },
+    {
+      "q": "Mayatnikning vertikaldan og'ish burchagi α = 12·cos(πt/2) gradus formulasi bilan beriladi, bunda t soniyada. Mayatnik eng chap chekka nuqtaga birinchi marta necha soniyada keladi?",
+      "v": [
+        "4 soniya",
+        "2 soniya",
+        "1 soniya",
+        "6 soniya"
+      ],
+      "t": 1,
+      "izoh": "Eng chap chekka nuqta og'ish burchagi −12 gradus bo'lgan holat, ya'ni cos(πt/2) = −1. Bundan πt/2 = π + 2πn, demak t = 2 + 4n. Musbat qiymatlar 2, 6, 10 soniya. Eng kichigi 2 soniya. 4 soniyada esa mayatnik boshlang'ich o'ng chekkaga qaytadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tebranish-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#037deeb9"
+    },
+    {
+      "q": "Musiqa asbobi torining tebranishida nuqtaning siljishi y = 0,4·sin(200πt) millimetr formulasi bilan beriladi, bunda t soniyada. Siljish nolga aylanadigan eng kichik musbat t ni toping.",
+      "v": [
+        "0,01 s",
+        "0,0025 s",
+        "0,005 s",
+        "0,02 s"
+      ],
+      "t": 2,
+      "izoh": "Siljish nol bo'lishi uchun sin(200πt) = 0 bo'lishi kerak. Bundan 200πt = πn, ya'ni t = n/200. Musbat qiymatlarning eng kichigi t = 1/200 = 0,005 soniya. To'liq davr esa 2π : 200π = 0,01 soniya, ya'ni nolga aylanish davrning yarmida yuz beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tebranish-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#48dba71e"
+    },
+    {
+      "q": "Zilzila datchigi qayd etgan tebranish u = 6·cos(πt/10) millimetr formulasi bilan ifodalanadi, bunda t soniyada. Datchik ko'rsatkichi birinchi marta nolga tushadigan vaqtni aniqlang.",
+      "v": [
+        "10 soniya",
+        "2,5 soniya",
+        "20 soniya",
+        "5 soniya"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkich nol bo'lishi uchun cos(πt/10) = 0 bo'lishi kerak. Bundan πt/10 = π/2 + πn, ya'ni t = 5 + 10n. Musbat qiymatlar 5, 15, 25 soniya bo'lib, eng kichigi 5 soniya. 10 soniyada esa kosinus −1 ga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tebranish-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#41d16437"
+    },
+    {
+      "q": "Maishiy elektr tarmog'idagi kuchlanish u = 310·sin(100πt) volt formulasi bilan o'zgaradi, bunda t soniyada. Kuchlanish nolga aylanadigan eng kichik musbat t ni toping.",
+      "v": [
+        "0,02 s",
+        "0,01 s",
+        "0,005 s",
+        "0,04 s"
+      ],
+      "t": 1,
+      "izoh": "Kuchlanish nol bo'lishi uchun sin(100πt) = 0 bo'lishi kerak. Bundan 100πt = πn, ya'ni t = n/100. Eng kichik musbat qiymat t = 0,01 soniya. To'liq davr 2π : 100π = 0,02 soniya, demak nolga aylanish har yarim davrda takrorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kuchlanish-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#97a0a164"
+    },
+    {
+      "q": "Generator ishlab chiqaradigan tok kuchi i = 5·cos(20πt) amper formulasi bilan beriladi, bunda t soniyada o'lchanadi. Tok kuchi birinchi marta nolga aylanadigan vaqtni hisoblang.",
+      "v": [
+        "0,05 s",
+        "0,1 s",
+        "0,025 s",
+        "0,0125 s"
+      ],
+      "t": 2,
+      "izoh": "Tok nol bo'lishi uchun cos(20πt) = 0 bo'lishi kerak. Bundan 20πt = π/2 + πn, ya'ni t = 1/40 + n/20. Eng kichik musbat qiymat t = 0,025 soniya. To'liq davr 2π : 20π = 0,1 soniya, kosinus esa davrning chorak qismida nolga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kuchlanish-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#075f2568"
+    },
+    {
+      "q": "O'zgaruvchan tok manbaida kuchlanish u = 180·sin(10πt) volt formulasi bilan beriladi. Kuchlanish o'zining eng katta qiymatiga birinchi marta qachon yetadi?",
+      "v": [
+        "0,1 s",
+        "0,025 s",
+        "0,2 s",
+        "0,05 s"
+      ],
+      "t": 3,
+      "izoh": "Kuchlanish eng katta bo'lishi uchun sin(10πt) = 1 bo'lishi kerak. Bundan 10πt = π/2 + 2πn, ya'ni t = 1/20 + n/5. Eng kichik musbat qiymat t = 0,05 soniya. To'liq davr 2π : 10π = 0,2 soniya, cho'qqi esa davrning chorak qismida yuz beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kuchlanish-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#dac70c22"
+    },
+    {
+      "q": "Past chastotali signal kuchlanishi u = 9·sin(4πt) millivolt formulasi bilan o'zgaradi, bunda t soniyada. Kuchlanish eng kichik qiymatga birinchi marta qachon erishadi?",
+      "v": [
+        "0,375 s",
+        "0,125 s",
+        "0,25 s",
+        "0,5 s"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish eng kichik bo'lishi uchun sin(4πt) = −1 bo'lishi kerak. Bundan 4πt = 3π/2 + 2πn, ya'ni t = 3/8 + n/2. Eng kichik musbat qiymat t = 0,375 soniya. 0,125 soniyada esa aksincha sinus 1 ga teng bo'lib, kuchlanish eng katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kuchlanish-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#19b1513f"
+    },
+    {
+      "q": "Quyoshning ufqdan balandlik burchagi kun davomida h = 60·sin(π(t − 6)/12) gradus formulasi bilan taxminlanadi, bunda t — sutkadagi soat. Quyosh aynan ufq chizig'ida bo'ladigan vaqtlarni toping.",
+      "v": [
+        "soat 12 va soat 24",
+        "soat 0 va soat 12",
+        "soat 6 va soat 18",
+        "soat 6 va soat 12"
+      ],
+      "t": 2,
+      "izoh": "Ufq chizig'ida h = 0, ya'ni sin(π(t − 6)/12) = 0. Bundan π(t − 6)/12 = πn, demak t − 6 = 12n va t = 6 + 12n. Sutka ichidagi qiymatlar t = 6 va t = 18. Bu quyosh chiqishi va botishi vaqtlariga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soya-quyosh-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#5d9c5ac0"
+    },
+    {
+      "q": "Maydondagi ustun soyasining uzunligi L = 5 − 3·cos(π(t − 12)/12) metr formulasi bilan beriladi, bunda t — sutkadagi soat. Soya eng qisqa bo'ladigan vaqtni aniqlang.",
+      "v": [
+        "soat 6 da",
+        "soat 18 da",
+        "soat 24 da",
+        "soat 12 da"
+      ],
+      "t": 3,
+      "izoh": "Uzunlik eng kichik bo'lishi uchun ayiriluvchi eng katta, ya'ni cos(π(t − 12)/12) = 1 bo'lishi kerak. Bundan π(t − 12)/12 = 2πn, demak t = 12 + 24n. Sutka ichida t = 12, ya'ni tush payti. Soat 6 va 18 da esa kosinus nolga teng bo'lib, soya o'rtacha uzunlikda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "soya-quyosh-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#91252e96"
+    },
+    {
+      "q": "Issiqxona tomiga tushayotgan yorug'lik burchagi φ = 35·cos(π(t − 13)/12) gradus formulasi bilan berilgan. Burchak eng katta qiymatga erishadigan soatni toping.",
+      "v": [
+        "soat 13 da",
+        "soat 10 da",
+        "soat 3 da",
+        "soat 23 da"
+      ],
+      "t": 0,
+      "izoh": "Burchak eng katta bo'lishi uchun cos(π(t − 13)/12) = 1 bo'lishi kerak. Bundan π(t − 13)/12 = 2πn, demak t − 13 = 24n va t = 13 + 24n. Sutka ichidagi yagona mos qiymat t = 13. Soat 3 va 23 da kosinus −1 ga yaqin (taxminan −0,87) bo'lib, burchak eng kichik qiymatga yaqinlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soya-quyosh-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#10078a59"
+    },
+    {
+      "q": "Quyosh panelining quvvati P = 500·sin(π(t − 7)/11) vatt formulasi bilan beriladi va panel faqat 7 ≤ t ≤ 18 oralig'ida ishlaydi. Quvvat nolga teng bo'ladigan vaqtlarni ko'rsating.",
+      "v": [
+        "soat 7 va soat 11",
+        "soat 7 va soat 18",
+        "soat 11 va soat 18",
+        "soat 12 va soat 18"
+      ],
+      "t": 1,
+      "izoh": "Quvvat nol bo'lishi uchun sin(π(t − 7)/11) = 0 bo'lishi kerak. Bundan π(t − 7)/11 = πn, ya'ni t = 7 + 11n. Berilgan oraliqqa t = 7 va t = 18 tushadi. Bular panel ishlay boshlaydigan va to'xtaydigan chegara vaqtlaridir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soya-quyosh-konteksti",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#a5fd52c5"
+    },
+    {
+      "q": "a parametrning qanday qiymatida x = π/6 soni sin x = a tenglamaning ildizi bo'ladi?",
+      "v": [
+        "√3/2",
+        "√2/2",
+        "√3/3",
+        "1/2"
+      ],
+      "t": 3,
+      "izoh": "Ildiz bo'lishi uchun berilgan sonni tenglamaga qo'yish kifoya: a = sin(π/6). Jadval qiymatiga ko'ra sin(π/6) = 1/2, demak a = 1/2. √3/2 javobi cos(π/6) qiymati bilan chalkashtirishdan, √3/3 esa tg(π/6) bilan chalkashtirishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrni-topish",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#cc8b139e"
+    },
+    {
+      "q": "cos x = a tenglamaning ildizlaridan biri x = 3π/4 bo'lsa, a nechaga teng?",
+      "v": [
+        "−√2/2",
+        "√2/2",
+        "−√3/2",
+        "−1/2"
+      ],
+      "t": 0,
+      "izoh": "Ildizni tenglamaga qo'yamiz: a = cos(3π/4). Bu burchak ikkinchi chorakda yotgani uchun kosinus manfiy. Keltirish formulasi bo'yicha cos(3π/4) = −cos(π/4) = −√2/2. Demak a = −√2/2, ishorani tushirib qoldirish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrni-topish",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#d80f934a"
+    },
+    {
+      "q": "tg x = a tenglama x = 2π/3 nuqtada bajarilsa, a ning qiymati qanday bo'ladi?",
+      "v": [
+        "√3",
+        "−√3",
+        "−√3/3",
+        "−1/2"
+      ],
+      "t": 1,
+      "izoh": "a = tg(2π/3) ni hisoblaymiz. Bu burchak ikkinchi chorakda, u yerda tangens manfiy. Keltirish formulasi bo'yicha tg(2π/3) = −tg(π/3) = −√3. Demak a = −√3. −√3/3 javobi ctg qiymati bilan, −1/2 esa kosinus qiymati bilan chalkashtirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrni-topish",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#8b519ec3"
+    },
+    {
+      "q": "sin x = (a − 1)/3 tenglama yechimga ega bo'lishi uchun a parametr qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "−3 ≤ a ≤ 3",
+        "0 ≤ a ≤ 4",
+        "−2 ≤ a ≤ 4",
+        "−4 ≤ a ≤ 2"
+      ],
+      "t": 2,
+      "izoh": "Sinusning qiymatlar to'plami [−1; 1] bo'lgani uchun −1 ≤ (a − 1)/3 ≤ 1 shart bajarilishi kerak. Barcha qismlarni 3 ga ko'paytiramiz: −3 ≤ a − 1 ≤ 3. Endi hamma joyga 1 qo'shamiz: −2 ≤ a ≤ 4. Birni qo'shishni unutish −3 ≤ a ≤ 3 xatosiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrni-topish",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#19494238"
+    },
+    {
+      "q": "sin x = 0 va cos x = 1 tenglamalarining bir vaqtda bajariladigan umumiy yechimlarini toping.",
+      "v": [
+        "x = 2πn, n ∈ Z",
+        "x = πn, n ∈ Z",
+        "Umumiy yechim mavjud emas",
+        "x = π + 2πn, n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tenglamaning yechimi x = πn, ikkinchisiniki x = 2πn. Ikkinchi to'plam birinchisining ichida to'liq joylashgan, chunki juft n larda πn = 2πk bo'ladi. Kesishma esa kichik to'plam, ya'ni x = 2πn, n ∈ Z. Toq n larda kosinus −1 ga teng bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tenglama-umumiy-ildizi",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#e0f2e6fa"
+    },
+    {
+      "q": "cos x = 0 va sin x = 1 tenglamalari bir vaqtda bajariladigan barcha x larni aniqlang.",
+      "v": [
+        "x = π/2 + πn, n ∈ Z",
+        "x = π/2 + 2πn, n ∈ Z",
+        "Umumiy yechim mavjud emas",
+        "x = −π/2 + 2πn, n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "cos x = 0 dan x = π/2 + πn, sin x = 1 dan esa x = π/2 + 2πn kelib chiqadi. Birinchi to'plamda −π/2 turdagi nuqtalar ham bor, u yerda sinus −1 ga teng. Shuning uchun kesishma x = π/2 + 2πn, n ∈ Z bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tenglama-umumiy-ildizi",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#2a26096c"
+    },
+    {
+      "q": "sin x = 1 va cos x = 1 tenglamalarining umumiy ildizi mavjudmi? To'g'ri javobni sababi bilan tanlang.",
+      "v": [
+        "Ha, x = 2πn nuqtalarda",
+        "Ha, x = π/2 + 2πn nuqtalarda",
+        "Yo'q, chunki u holda sin²x + cos²x = 2 bo'lib qolardi",
+        "Ha, x = π/4 + 2πn nuqtalarda"
+      ],
+      "t": 2,
+      "izoh": "Har qanday x uchun asosiy trigonometrik ayniyat sin²x + cos²x = 1 o'rinli. Agar ikkala funksiya ham bir vaqtda 1 ga teng bo'lsa, chap tomon 1 + 1 = 2 chiqadi. Bu ayniyatga zid, demak bunday x mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-tenglama-umumiy-ildizi",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#e5d14e23"
+    },
+    {
+      "q": "tg x = 1 va sin x = √2/2 tenglamalarining umumiy yechimlarini aniqlang.",
+      "v": [
+        "x = π/4 + πn, n ∈ Z",
+        "x = 3π/4 + 2πn, n ∈ Z",
+        "x = 5π/4 + 2πn, n ∈ Z",
+        "x = π/4 + 2πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "tg x = 1 dan x = π/4 + πn, ya'ni π/4 va 5π/4 turidagi nuqtalar chiqadi. sin x = √2/2 dan esa π/4 va 3π/4 turidagi nuqtalar. Faqat π/4 turi ikkalasida ham bor, chunki 5π/4 da sinus manfiy. Demak umumiy yechim x = π/4 + 2πn, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-tenglama-umumiy-ildizi",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#7209ebea"
+    },
+    {
+      "q": "cos x = 1/2 tenglamaning ketma-ket keladigan musbat ildizlari orasidagi eng kichik masofani toping.",
+      "v": [
+        "4π/3",
+        "2π/3",
+        "2π",
+        "π/3"
+      ],
+      "t": 1,
+      "izoh": "Musbat ildizlarni tartib bilan yozamiz: π/3, 5π/3, 7π/3, 11π/3. Qo'shni ildizlar orasidagi farqlar navbatma-navbat 5π/3 − π/3 = 4π/3 va 7π/3 − 5π/3 = 2π/3 bo'ladi. Ular orasida eng kichigi 2π/3. Davr 2π bo'lsa ham ildizlar tekis joylashmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-orasidagi-masofa",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#9870fc0d"
+    },
+    {
+      "q": "sin x = 1 tenglamaning qo'shni ildizlari orasidagi masofa nechaga teng?",
+      "v": [
+        "π",
+        "π/2",
+        "2π",
+        "4π"
+      ],
+      "t": 2,
+      "izoh": "Bu xususiy holda yechim yagona seriyadan iborat: x = π/2 + 2πn. Qo'shni ildizlar n va n + 1 ga mos keladi, ular orasidagi farq esa 2π. Demak ildizlar tekis, 2π qadam bilan joylashgan. Sinusning davri π emas, aynan 2π ekanini eslash kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-orasidagi-masofa",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#803cd223"
+    },
+    {
+      "q": "tg x = 5 tenglamaning ikkita ketma-ket ildizi orasidagi masofani aniqlang.",
+      "v": [
+        "2π",
+        "π/2",
+        "π/5",
+        "π"
+      ],
+      "t": 3,
+      "izoh": "Tangensli tenglamaning yechimi x = arctg5 + πn ko'rinishida bo'ladi. Qo'shni ildizlar n va n + 1 ga mos kelib, ular orasidagi farq πn ning qadamiga, ya'ni π ga teng. O'ng tomondagi 5 soni masofaga umuman ta'sir qilmaydi, u faqat boshlang'ich burchakni belgilaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-orasidagi-masofa",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#93a3030f"
+    },
+    {
+      "q": "sin x = √3/2 tenglamaning musbat ildizlari orasidagi eng kichik masofani hisoblang.",
+      "v": [
+        "π/3",
+        "2π/3",
+        "5π/3",
+        "2π"
+      ],
+      "t": 0,
+      "izoh": "Musbat ildizlar tartib bilan π/3, 2π/3, 7π/3, 8π/3 ko'rinishida davom etadi. Qo'shni farqlar 2π/3 − π/3 = π/3 va 7π/3 − 2π/3 = 5π/3 bo'lib almashinadi. Ular orasida eng kichigi π/3. Bitta davr ichidagi ikki ildiz bir-biriga eng yaqin joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-orasidagi-masofa",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#060d75ce"
+    },
+    {
+      "q": "cos x = √3/2 tenglamaning [π; 2π] kesmaga tegishli ildizini toping.",
+      "v": [
+        "π/6",
+        "5π/6",
+        "11π/6",
+        "7π/6"
+      ],
+      "t": 2,
+      "izoh": "Umumiy yechim x = ±π/6 + 2πn. Berilgan kesma to'rtinchi chorakni o'z ichiga oladi, u yerda kosinus musbat. n = 1 va manfiy ishorani olsak x = −π/6 + 2π = 11π/6 ≈ 5,76 chiqadi va u [π; 2π] ichida. π/6 esa kesmadan tashqarida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-ildizni-tanlash",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#3995a392"
+    },
+    {
+      "q": "sin x = √2/2 tenglamaning [π/2; π] oraliqqa tegishli ildizini aniqlang.",
+      "v": [
+        "π/4",
+        "5π/4",
+        "2π/3",
+        "3π/4"
+      ],
+      "t": 3,
+      "izoh": "Sinusi √2/2 bo'lgan burchaklar bitta davrda ikkita: π/4 va π − π/4 = 3π/4. Berilgan oraliq ikkinchi chorakni qamraydi, unga 3π/4 ≈ 2,36 tushadi. π/4 birinchi chorakda qolgani uchun mos emas, 5π/4 da esa sinus manfiy bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqdagi-ildizni-tanlash",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#6a017989"
+    },
+    {
+      "q": "Diyora sin x = −√2/2 tenglamaning uchinchi chorakka tegishli ildizini izlayapti. U qaysi qiymatni topishi kerak?",
+      "v": [
+        "5π/4",
+        "7π/4",
+        "3π/4",
+        "π/4"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi chorak π dan 3π/2 gacha bo'lgan burchaklarni o'z ichiga oladi, u yerda sinus manfiy. Bu chorakda sin x = −√2/2 shartini x = π + π/4 = 5π/4 qanoatlantiradi. 7π/4 ham tenglamaning ildizi, lekin u to'rtinchi chorakda yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-ildizni-tanlash",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#eb343447"
+    },
+    {
+      "q": "tg x = √3 tenglamaning (π/2; 3π/2) intervalga tegishli ildizini toping.",
+      "v": [
+        "π/3",
+        "4π/3",
+        "2π/3",
+        "7π/3"
+      ],
+      "t": 1,
+      "izoh": "Umumiy yechim x = π/3 + πn. n = 0 da x = π/3 ≈ 1,05 bo'lib, u intervaldan chapda qoladi. n = 1 da x = π/3 + π = 4π/3 ≈ 4,19 va bu son π/2 ≈ 1,57 bilan 3π/2 ≈ 4,71 orasida yotadi. Demak izlangan ildiz 4π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-ildizni-tanlash",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#04013f2c"
+    },
+    {
+      "q": "Quyidagi tenglamalardan qaysi birining yechimlar to'plami x = πn, n ∈ Z formulasi bilan beriladi?",
+      "v": [
+        "cos x = 0",
+        "sin x = 1",
+        "cos x = 1",
+        "sin x = 0"
+      ],
+      "t": 3,
+      "izoh": "x = πn to'plami 0, π, 2π kabi nuqtalardan iborat va ular Ox o'qida yotadi. Bu nuqtalarda ordinata, ya'ni sinus nolga teng. Demak mos tenglama sin x = 0. cos x = 0 uchun yechim π/2 + πn, cos x = 1 uchun esa 2πn bo'lar edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimlar-toplamini-moslash",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#5c182c42"
+    },
+    {
+      "q": "x = π/2 + πn, n ∈ Z to'plami quyidagi tenglamalardan qaysi birining yechimi hisoblanadi?",
+      "v": [
+        "cos x = 0",
+        "sin x = 0",
+        "sin x = −1",
+        "tg x = 1"
+      ],
+      "t": 0,
+      "izoh": "Berilgan to'plam π/2 va −π/2 turidagi nuqtalardan iborat, ular Oy o'qida yotadi. Bu nuqtalarda abssissa, ya'ni kosinus nolga teng. Demak tenglama cos x = 0. sin x = −1 uchun faqat −π/2 + 2πn, tg x = 1 uchun esa π/4 + πn bo'lar edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimlar-toplamini-moslash",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#611fa240"
+    },
+    {
+      "q": "Ikki o'quvchi sin x = √3/2 tenglamani yechdi. Biri javobni x = (−1)ⁿ·π/3 + πn deb, ikkinchisi esa x = π/3 + 2πn va x = 2π/3 + 2πn deb yozdi. To'g'ri bahoni tanlang.",
+      "v": [
+        "Faqat birinchi o'quvchining yozuvi to'g'ri",
+        "Ikkala yozuv ham bir xil ildizlar to'plamini beradi",
+        "Faqat ikkinchi o'quvchining yozuvi to'g'ri",
+        "Ikkala yozuv ham noto'g'ri"
+      ],
+      "t": 1,
+      "izoh": "Birinchi yozuvda juft n larda x = π/3 + πn, ya'ni π/3 + 2πk chiqadi. Toq n larda esa x = −π/3 + πn bo'lib, n = 1 da π − π/3 = 2π/3 hosil bo'ladi. Demak birinchi formula aynan ikkita seriyani birlashtirib beradi va ikkala yozuv teng kuchli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechimlar-toplamini-moslash",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#856230bb"
+    },
+    {
+      "q": "cos x = −√2/2 tenglamaning yechimini x = ±3π/4 + 2πn ko'rinishida yozish mumkin. Xuddi shu to'plamni yana qaysi formula beradi?",
+      "v": [
+        "x = 3π/4 + πn, n ∈ Z",
+        "x = ±π/4 + 2πn, n ∈ Z",
+        "x = 3π/4 + 2πn yoki x = 5π/4 + 2πn, n ∈ Z",
+        "x = (−1)ⁿ·3π/4 + πn, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "Manfiy seriyani ko'rib chiqamiz: −3π/4 + 2πn nuqtalari 2π ga siljitilganda −3π/4 + 2π = 5π/4 beradi. Demak manfiy seriyani 5π/4 + 2πn ko'rinishida qayta yozish mumkin. Natijada butun to'plam x = 3π/4 + 2πn yoki x = 5π/4 + 2πn ko'rinishiga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechimlar-toplamini-moslash",
+      "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar#fc777c98"
+    }
+  ]
+}

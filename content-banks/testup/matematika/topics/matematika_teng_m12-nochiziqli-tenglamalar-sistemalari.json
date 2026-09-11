@@ -1,0 +1,1609 @@
+{
+  "nom": "Nochiziqli tenglamalar sistemalari",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "y = x + 2 va x² + y² = 34 tenglamalardan iborat sistema berilgan. O'rniga qo'yish usulidan foydalanib, sistemaning barcha yechimlarini toping.",
+      "v": [
+        "(3; 5) va (−5; −3)",
+        "faqat (3; 5)",
+        "(5; 7) va (−3; −1)",
+        "(3; 5) va (5; 3)"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi tenglamaga y = x + 2 ni qo'yamiz: x² + (x + 2)² = 34. Qavsni ochsak 2x² + 4x + 4 = 34, ya'ni x² + 2x − 15 = 0. Bundan x = 3 yoki x = −5. Mos y qiymatlari: y = 5 va y = −3. Javob: (3; 5) va (−5; −3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orniga-qoyish-chiziqli-kvadrat",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#d4b21246"
+    },
+    {
+      "q": "2x − y = 3 va xy = 5 tenglamalar sistemasi berilgan. Sistemaning barcha haqiqiy yechimlarini o'rniga qo'yish usuli bilan aniqlang.",
+      "v": [
+        "(2; 2,5) va (−5; −1)",
+        "faqat (2,5; 2)",
+        "(2,5; 2) va (−1; −5)",
+        "(2,5; −2) va (−1; 5)"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tenglamadan y = 2x − 3 ni ifodalaymiz. Buni ikkinchisiga qo'ysak x(2x − 3) = 5, ya'ni 2x² − 3x − 5 = 0. Diskriminant D = 9 + 40 = 49, shuning uchun x = 2,5 yoki x = −1. Mos ravishda y = 2 va y = −5. Javob: (2,5; 2) va (−1; −5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orniga-qoyish-chiziqli-kvadrat",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#fd846a50"
+    },
+    {
+      "q": "y = 3 − x to'g'ri chiziq va y = x² − 3 parabola kesishadi. Kesishish nuqtalarining koordinatalarini topib, to'g'ri javobni belgilang.",
+      "v": [
+        "(2; 1) va (−3; 0)",
+        "(2; 1) va (−3; 6)",
+        "(−2; 5) va (3; 0)",
+        "(2; 7) va (−3; 6)"
+      ],
+      "t": 1,
+      "izoh": "Kesishish nuqtasida ordinatalar teng bo'ladi: x² − 3 = 3 − x. Hadlarni bir tomonga o'tkazamiz: x² + x − 6 = 0. Viyet teoremasiga ko'ra x = 2 va x = −3. Ordinatalarni to'g'ri chiziq tenglamasidan topamiz: y = 3 − 2 = 1 hamda y = 3 + 3 = 6. Javob: (2; 1) va (−3; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orniga-qoyish-chiziqli-kvadrat",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#1ad833b0"
+    },
+    {
+      "q": "x − 2y = 1 va x² − 4y² = 9 tenglamalar sistemasini kvadratlar ayirmasi formulasidan foydalanib yeching hamda yechimni ko'rsating.",
+      "v": [
+        "(5; 4)",
+        "(9; 4)",
+        "(1; 0)",
+        "(5; 2)"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi tenglamani ko'paytuvchilarga ajratamiz: x² − 4y² = (x − 2y)(x + 2y) = 9. Birinchi tenglamaga ko'ra x − 2y = 1, demak x + 2y = 9. Ikkala chiziqli tenglamani qo'shsak 2x = 10, ya'ni x = 5. Undan 2y = 4, y = 2. Javob: (5; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orniga-qoyish-chiziqli-kvadrat",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#9b2261a9"
+    },
+    {
+      "q": "Bekzod ikkita natural son o'yladi. Bu sonlarning ayirmasi 4 ga, kvadratlarining ayirmasi esa 40 ga teng. Bekzod o'ylagan sonlarni toping.",
+      "v": [
+        "7 va 3",
+        "10 va 6",
+        "8 va 4",
+        "9 va 5"
+      ],
+      "t": 0,
+      "izoh": "Shartni sistema ko'rinishida yozamiz: x − y = 4 va x² − y² = 40. Kvadratlar ayirmasini yoyamiz: (x − y)(x + y) = 40, ya'ni 4(x + y) = 40, bundan x + y = 10. Endi x + y = 10 va x − y = 4 sistemasidan x = 7, y = 3 kelib chiqadi. Javob: 7 va 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orniga-qoyish-chiziqli-kvadrat",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#0c58e3bf"
+    },
+    {
+      "q": "Yig'indisi 9 ga, ko'paytmasi esa 20 ga teng bo'lgan ikkita sonni Viyet teoremasi yordamida aniqlang va yechim juftliklarini ko'rsating.",
+      "v": [
+        "(2; 7) va (7; 2)",
+        "(4; 5) va (5; 4)",
+        "(1; 8) va (8; 1)",
+        "(−4; −5) va (−5; −4)"
+      ],
+      "t": 1,
+      "izoh": "x + y = 9 va xy = 20 bo'lsa, x va y sonlari t² − 9t + 20 = 0 tenglamaning ildizlaridir. Diskriminant D = 81 − 80 = 1, demak t = (9 ± 1)/2. Bundan t = 5 va t = 4. Javob: (4; 5) va (5; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "viyet-yigindi-kopaytma",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#7381402a"
+    },
+    {
+      "q": "Ikki musbat sonning yig'indisi 13 ga, ko'paytmasi esa 40 ga teng. Shu sonlarning kvadratlari yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "129",
+        "249",
+        "89",
+        "169"
+      ],
+      "t": 2,
+      "izoh": "Ayniyatdan foydalanamiz: (x + y)² = x² + 2xy + y². Demak x² + y² = (x + y)² − 2xy. Berilganlarni qo'yamiz: 13² − 2·40 = 169 − 80 = 89. Sonlarni topish shart emas, ayniyat yetarli. Javob: 89.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-yigindi-kopaytma",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#df3bc2bc"
+    },
+    {
+      "q": "x + y = −6 va xy = 8 shartlarini bir vaqtda qanoatlantiruvchi x va y sonlarning barcha juftliklarini toping.",
+      "v": [
+        "(2; 4) va (4; 2)",
+        "(−1; −8) va (−8; −1)",
+        "(−8; 1) va (1; −8)",
+        "(−2; −4) va (−4; −2)"
+      ],
+      "t": 3,
+      "izoh": "Viyet teoremasiga ko'ra bu sonlar t² + 6t + 8 = 0 tenglamaning ildizlari. Diskriminant D = 36 − 32 = 4, shuning uchun t = (−6 ± 2)/2. Bundan t = −2 va t = −4. Ikkala son ham manfiy, chunki yig'indi manfiy, ko'paytma musbat. Javob: (−2; −4) va (−4; −2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-yigindi-kopaytma",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#bf540a61"
+    },
+    {
+      "q": "x + y = 5 va xy = 6 bo'lsa, 1/x + 1/y ifodaning qiymatini sistemani to'liq yechmasdan hisoblang.",
+      "v": [
+        "5/6",
+        "6/5",
+        "11/30",
+        "1/6"
+      ],
+      "t": 0,
+      "izoh": "Kasrlarni umumiy maxrajga keltiramiz: 1/x + 1/y = (y + x)/(xy). Surat x + y = 5, maxraj xy = 6. Demak ifoda 5/6 ga teng. Sonlarning o'zini topish kerak emas. Javob: 5/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-yigindi-kopaytma",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#b227413d"
+    },
+    {
+      "q": "Anvar va Dilnoza yozgi ta'tilda jami 12 ta kitob o'qishdi, o'qigan kitoblari sonining ko'paytmasi esa 35 ga teng. Anvar ko'proq o'qigan bo'lsa, u nechta kitob o'qigan?",
+      "v": [
+        "5",
+        "7",
+        "6",
+        "35"
+      ],
+      "t": 1,
+      "izoh": "Anvar x ta, Dilnoza y ta kitob o'qigan bo'lsin: x + y = 12 va xy = 35. Bu sonlar t² − 12t + 35 = 0 tenglamaning ildizlari. Diskriminant D = 144 − 140 = 4, demak t = (12 ± 2)/2, ya'ni t = 7 va t = 5. Anvar ko'proq o'qigani uchun u 7 ta kitob o'qigan. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "viyet-yigindi-kopaytma",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#7338129e"
+    },
+    {
+      "q": "x + y = 8 va x² + y² = 34 tenglamalar sistemasi berilgan. Avval ko'paytmani topib, so'ngra sistemaning yechimlarini aniqlang.",
+      "v": [
+        "(2; 6) va (6; 2)",
+        "(1; 7) va (7; 1)",
+        "(3; 5) va (5; 3)",
+        "faqat (4; 4)"
+      ],
+      "t": 2,
+      "izoh": "(x + y)² = x² + 2xy + y² ayniyatidan 64 = 34 + 2xy, demak 2xy = 30 va xy = 15. Endi x + y = 8, xy = 15 bo'lgani uchun sonlar t² − 8t + 15 = 0 ning ildizlari. Diskriminant D = 64 − 60 = 4, t = (8 ± 2)/2, ya'ni 5 va 3. Javob: (3; 5) va (5; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratlar-yigindisi-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#5361c28b"
+    },
+    {
+      "q": "x² + y² = 41 va xy = 20 bo'lsa, x + y yig'indi qanday qiymatlarni qabul qilishi mumkin?",
+      "v": [
+        "faqat 9",
+        "81",
+        "1 va −1",
+        "9 va −9"
+      ],
+      "t": 3,
+      "izoh": "(x + y)² = x² + y² + 2xy = 41 + 40 = 81. Kvadrat ildiz olganda ikkita ishora hisobga olinadi: x + y = 9 yoki x + y = −9. Haqiqatan (4; 5) va (−4; −5) juftliklari ikkala shartni ham qanoatlantiradi. Javob: 9 va −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratlar-yigindisi-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#0852ca4a"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari yig'indisi 17 sm, gipotenuzasi esa 13 sm ga teng. Shu uchburchakning yuzasini hisoblang.",
+      "v": [
+        "30 sm²",
+        "60 sm²",
+        "110,5 sm²",
+        "78 sm²"
+      ],
+      "t": 0,
+      "izoh": "Katetlarni a va b deb olsak: a + b = 17 va Pifagor teoremasiga ko'ra a² + b² = 169. (a + b)² = a² + b² + 2ab dan 289 = 169 + 2ab, demak 2ab = 120 va ab = 60. To'g'ri burchakli uchburchak yuzasi S = ab/2 = 30. Javob: 30 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratlar-yigindisi-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#9d0e59d0"
+    },
+    {
+      "q": "x² + y² = 25 va x − y = 1 tenglamalar sistemasining barcha haqiqiy yechimlarini toping va to'g'ri variantni tanlang.",
+      "v": [
+        "faqat (4; 3)",
+        "(4; 3) va (−3; −4)",
+        "(3; 4) va (−4; −3)",
+        "(5; 4) va (−4; −5)"
+      ],
+      "t": 1,
+      "izoh": "(x − y)² = x² + y² − 2xy dan 1 = 25 − 2xy, demak xy = 12. U holda (x + y)² = 25 + 24 = 49, ya'ni x + y = 7 yoki x + y = −7. Birinchi holda x − y = 1 bilan birga x = 4, y = 3. Ikkinchi holda x = −3, y = −4. Javob: (4; 3) va (−3; −4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadratlar-yigindisi-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#3afbe986"
+    },
+    {
+      "q": "x + y + xy = 11 va x + y − xy = −1 sistemasini u = x + y, v = xy almashtirish yordamida yeching.",
+      "v": [
+        "(1; 6) va (6; 1)",
+        "(−2; −3) va (−3; −2)",
+        "(2; 3) va (3; 2)",
+        "(5; 6)"
+      ],
+      "t": 2,
+      "izoh": "u = x + y, v = xy belgilaymiz: u + v = 11 va u − v = −1. Ikki tenglamani qo'shsak 2u = 10, ya'ni u = 5, undan v = 6. Endi x va y — t² − 5t + 6 = 0 ning ildizlari, ya'ni 2 va 3. Diqqat: u va v javob emas, ular faqat yordamchi kattaliklar. Javob: (2; 3) va (3; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-almashtirish",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#9493b1e8"
+    },
+    {
+      "q": "x² + xy + y² = 37 va x + y = 7 sistemasi berilgan. Yordamchi o'zgaruvchi kiritib, sistemaning yechimlarini aniqlang.",
+      "v": [
+        "(2; 5) va (5; 2)",
+        "(1; 6) va (6; 1)",
+        "(7; 12)",
+        "(3; 4) va (4; 3)"
+      ],
+      "t": 3,
+      "izoh": "x² + xy + y² ni (x + y)² − xy ko'rinishida yozamiz. U holda 49 − xy = 37, demak xy = 12. Endi x + y = 7 va xy = 12 bo'lgani uchun x va y — t² − 7t + 12 = 0 ning ildizlari. Diskriminant D = 49 − 48 = 1, t = 4 va t = 3. Javob: (3; 4) va (4; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-almashtirish",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#87467961"
+    },
+    {
+      "q": "xy + x + y = 23 va xy(x + y) = 126 sistemasining butun sonlardan iborat yechimlarini toping.",
+      "v": [
+        "(2; 7) va (7; 2)",
+        "(9; 14) va (14; 9)",
+        "faqat (2; 7)",
+        "(−2; −7) va (−7; −2)"
+      ],
+      "t": 0,
+      "izoh": "u = x + y, v = xy deb belgilaymiz: u + v = 23 va uv = 126. Demak u va v — t² − 23t + 126 = 0 ning ildizlari: t = 14 va t = 9. u = 9, v = 14 holida x va y — t² − 9t + 14 = 0 ning ildizlari, ya'ni 2 va 7. u = 14, v = 9 holida diskriminant 160 bo'lib, butun ildiz chiqmaydi. Javob: (2; 7) va (7; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetrik-almashtirish",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#99f035be"
+    },
+    {
+      "q": "x + y = 8 va x/y + y/x = 10/3 sistemasining yechimlarini toping. Bunda x va y noldan farqli sonlardir.",
+      "v": [
+        "(3; 5) va (5; 3)",
+        "(2; 6) va (6; 2)",
+        "faqat (4; 4)",
+        "(8; 12)"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi tenglamani umumiy maxrajga keltiramiz: (x² + y²)/(xy) = 10/3. Surat (x + y)² − 2xy = 64 − 2v, maxraj v = xy. Demak 3(64 − 2v) = 10v, ya'ni 192 = 16v va v = 12. x + y = 8, xy = 12 dan t² − 8t + 12 = 0, ildizlar 6 va 2. Javob: (2; 6) va (6; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetrik-almashtirish",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#6fafdfa6"
+    },
+    {
+      "q": "x + y = 1 va x²y + xy² = −12 tenglamalar sistemasini yeching hamda yechim juftliklarini ko'rsating.",
+      "v": [
+        "(3; −4) va (−4; 3)",
+        "(4; 3) va (3; 4)",
+        "(4; −3) va (−3; 4)",
+        "(1; −12) va (−12; 1)"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi tenglamada umumiy ko'paytuvchini qavsdan chiqaramiz: xy(x + y) = −12. x + y = 1 bo'lgani uchun xy = −12. Endi x va y — t² − t − 12 = 0 ning ildizlari. Diskriminant D = 1 + 48 = 49, t = (1 ± 7)/2, ya'ni t = 4 va t = −3. Javob: (4; −3) va (−3; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-almashtirish",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#767a6787"
+    },
+    {
+      "q": "Rustam ikkita butun son o'yladi. Ularning yig'indisi 11 ga, kvadratlari yig'indisi esa 65 ga teng. Shu sonlarning ko'paytmasini toping.",
+      "v": [
+        "56",
+        "186",
+        "24",
+        "28"
+      ],
+      "t": 3,
+      "izoh": "(x + y)² = x² + 2xy + y² ayniyatidan foydalanamiz: 11² = 65 + 2xy. Demak 121 − 65 = 2xy, ya'ni 2xy = 56. Ikkala tomonni ikkiga bo'lsak xy = 28. Tekshirish uchun sonlar 4 va 7 ekanini ko'rish mumkin. Javob: 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratlar-yigindisi-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#08ec3683"
+    },
+    {
+      "q": "x − y = 5 va xy = 14 tenglamalar sistemasining barcha haqiqiy yechimlarini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "(7; 2) va (−2; −7)",
+        "faqat (7; 2)",
+        "(2; 7) va (−7; −2)",
+        "(7; 2) va (2; 7)"
+      ],
+      "t": 0,
+      "izoh": "(x + y)² = (x − y)² + 4xy ayniyatidan foydalanamiz: (x + y)² = 25 + 56 = 81. Demak x + y = 9 yoki x + y = −9. Birinchi holda x − y = 5 bilan birga x = 7, y = 2. Ikkinchi holda x = −2, y = −7. Javob: (7; 2) va (−2; −7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-kopaytma-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#821aa2dc"
+    },
+    {
+      "q": "x − y = 3 va xy = 40 sistemasi berilgan. Sistemaning barcha yechimlarini topib, ularni to'liq ko'rsatgan variantni tanlang.",
+      "v": [
+        "(13; 10) va (−10; −13)",
+        "(8; 5) va (−5; −8)",
+        "(5; 8) va (−8; −5)",
+        "faqat (8; 5)"
+      ],
+      "t": 1,
+      "izoh": "(x + y)² = (x − y)² + 4xy = 9 + 160 = 169, demak x + y = 13 yoki x + y = −13. x + y = 13 va x − y = 3 dan x = 8, y = 5. x + y = −13 va x − y = 3 dan x = −5, y = −8. Javob: (8; 5) va (−5; −8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-kopaytma-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#82bf13a6"
+    },
+    {
+      "q": "Sport maktabida ikki guruh mashg'ulot o'tkazadi. Guruhlardagi bolalar sonining ayirmasi 6 ga, ko'paytmasi esa 187 ga teng. Har bir guruhda nechtadan bola bor?",
+      "v": [
+        "19 va 13",
+        "22 va 16",
+        "17 va 11",
+        "28 va 22"
+      ],
+      "t": 2,
+      "izoh": "Guruhlardagi bolalar soni x va y bo'lsin: x − y = 6 va xy = 187. (x + y)² = 36 + 4·187 = 36 + 748 = 784, demak x + y = 28. Soni musbat bo'lgani uchun manfiy ildiz tashlanadi. x + y = 28 va x − y = 6 dan x = 17, y = 11. Javob: 17 va 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-kopaytma-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#b3fa0b62"
+    },
+    {
+      "q": "x − y = 4 va xy = 45 bo'lsa, x² + y² ifodaning qiymatini sistemani yechmasdan hisoblang.",
+      "v": [
+        "61",
+        "196",
+        "−74",
+        "106"
+      ],
+      "t": 3,
+      "izoh": "(x − y)² = x² − 2xy + y² ayniyatini yozamiz, bundan x² + y² = (x − y)² + 2xy. Qiymatlarni qo'yamiz: 4² + 2·45 = 16 + 90 = 106. Diqqat: 4xy emas, 2xy qo'shiladi, chunki bizga yig'indining kvadrati emas, kvadratlar yig'indisi kerak. Javob: 106.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-kopaytma-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#9bf72920"
+    },
+    {
+      "q": "x² − 3xy + 2y² = 0 va x + y = 9 sistemasi berilgan. Bir jinsli tenglamani ko'paytuvchilarga ajratib, barcha yechimlarni toping.",
+      "v": [
+        "(4,5; 4,5) va (6; 3)",
+        "faqat (6; 3)",
+        "(3; 6) va (4,5; 4,5)",
+        "(6; 3) va (9; 0)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tenglamani ko'paytuvchilarga ajratamiz: x² − 3xy + 2y² = (x − y)(x − 2y) = 0. Demak x = y yoki x = 2y. x = y bo'lsa x + y = 9 dan x = y = 4,5. x = 2y bo'lsa 3y = 9, ya'ni y = 3 va x = 6. Ikkala hol ham yechim beradi. Javob: (4,5; 4,5) va (6; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-jinsli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#09082235"
+    },
+    {
+      "q": "2x² − 5xy + 3y² = 0 va x − y = 2 sistemasi berilgan. Sistemaning yechimini aniqlang.",
+      "v": [
+        "(4; 6)",
+        "(6; 4)",
+        "(3; 2)",
+        "(4; 2)"
+      ],
+      "t": 1,
+      "izoh": "Bir jinsli tenglamani yoyamiz: 2x² − 5xy + 3y² = (2x − 3y)(x − y) = 0. Demak x = y yoki 2x = 3y. x = y holi x − y = 2 shartiga zid, shuning uchun tashlanadi. 2x = 3y dan x = 1,5y, u holda 1,5y − y = 2, ya'ni 0,5y = 2 va y = 4, x = 6. Javob: (6; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-jinsli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#eb1e8fe3"
+    },
+    {
+      "q": "x² − 2xy − 3y² = 0 va xy = 12 tenglamalar sistemasining barcha haqiqiy yechimlarini toping.",
+      "v": [
+        "(2; 6) va (−2; −6)",
+        "faqat (6; 2)",
+        "(6; 2) va (−6; −2)",
+        "(3; 4) va (−3; −4)"
+      ],
+      "t": 2,
+      "izoh": "Bir jinsli tenglama x² − 2xy − 3y² = (x − 3y)(x + y) = 0 ko'rinishida yoyiladi. Demak x = 3y yoki x = −y. x = −y bo'lsa xy = −y² = 12 bo'lib qoladi, bu esa mumkin emas. x = 3y bo'lsa 3y² = 12, ya'ni y = 2 yoki y = −2, mos ravishda x = 6 va x = −6. Javob: (6; 2) va (−6; −2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-jinsli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#2b9ec2e7"
+    },
+    {
+      "q": "3x² − 8xy + 4y² = 0 va x + 2y = 16 sistemasi berilgan. Ikkala nisbatni ham hisobga olib, yechimlarni to'liq yozing.",
+      "v": [
+        "faqat (8; 4)",
+        "(4; 8) va (6; 4)",
+        "(8; 4) va (6; 4)",
+        "(8; 4) va (4; 6)"
+      ],
+      "t": 3,
+      "izoh": "Bir jinsli tenglamani yoyamiz: 3x² − 8xy + 4y² = (3x − 2y)(x − 2y) = 0. Birinchi hol x = 2y: 2y + 2y = 16 dan y = 4, x = 8. Ikkinchi hol 3x = 2y, ya'ni y = 1,5x: x + 3x = 16 dan x = 4, y = 6. Ikkala juftlik ham sistemani qanoatlantiradi. Javob: (8; 4) va (4; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-jinsli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#bead5be0"
+    },
+    {
+      "q": "x² − 5xy + 6y² = 0 va x + y = 12 sistemasini bir jinsli tenglamani y² ga bo'lish g'oyasidan foydalanib yeching.",
+      "v": [
+        "(8; 4) va (9; 3)",
+        "faqat (8; 4)",
+        "(4; 8) va (3; 9)",
+        "(8; 4), (9; 3) va (6; 6)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tenglamani y² ga bo'lsak va t = x/y desak, t² − 5t + 6 = 0 hosil bo'ladi, bundan t = 2 va t = 3. t = 2, ya'ni x = 2y bo'lganda 3y = 12, y = 4, x = 8. t = 3, ya'ni x = 3y bo'lganda 4y = 12, y = 3, x = 9. x = y hol yechim emas, chunki t = 1 ildiz emas. Javob: (8; 4) va (9; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-jinsli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#0333a0f4"
+    },
+    {
+      "q": "2^(x+y) = 32 va 2^(x−y) = 2 tenglamalar sistemasini yeching hamda (x; y) juftligini ko'rsating.",
+      "v": [
+        "(2; 3)",
+        "(3; 2)",
+        "(5; 1)",
+        "(4; 1)"
+      ],
+      "t": 1,
+      "izoh": "Asoslar bir xil bo'lgani uchun ko'rsatkichlarni tenglashtiramiz: x + y = 5 va x − y = 1. Ikki tenglamani qo'shsak 2x = 6, ya'ni x = 3. Undan y = 5 − 3 = 2. Diqqat: 5 va 1 sonlari ko'rsatkichlar, javob emas. Javob: (3; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#afa1edd6"
+    },
+    {
+      "q": "2^x + 2^y = 20 va x + y = 6 sistemasi berilgan. Yangi o'zgaruvchi kiritish yo'li bilan barcha yechimlarni toping.",
+      "v": [
+        "(3; 3)",
+        "(16; 4) va (4; 16)",
+        "(4; 2) va (2; 4)",
+        "faqat (4; 2)"
+      ],
+      "t": 2,
+      "izoh": "a = 2^x va b = 2^y deylik. U holda a·b = 2^(x+y) = 2⁶ = 64 va a + b = 20. Demak a va b — t² − 20t + 64 = 0 ning ildizlari: t = 16 va t = 4. 2^x = 16 dan x = 4, 2^y = 4 dan y = 2 yoki aksincha. Javob: (4; 2) va (2; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#1371f994"
+    },
+    {
+      "q": "3^(x+2y) = 81 va 3^(x−y) = 3 sistemasini yeching va topilgan (x; y) juftligini ko'rsating.",
+      "v": [
+        "(4; 1)",
+        "(1; 2)",
+        "(3; 1)",
+        "(2; 1)"
+      ],
+      "t": 3,
+      "izoh": "Asoslar teng bo'lgani uchun ko'rsatkichlar tenglashtiriladi: x + 2y = 4 va x − y = 1. Birinchisidan ikkinchisini ayirsak 3y = 3, ya'ni y = 1. Undan x = 1 + y = 2. Javob: (2; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#b5944cf7"
+    },
+    {
+      "q": "4^x = 8^y va x + y = 15 tenglamalar sistemasi berilgan. Ikkala darajani bir xil asosga keltirib, yechimni toping.",
+      "v": [
+        "(9; 6)",
+        "(6; 9)",
+        "(7,5; 7,5)",
+        "(10; 5)"
+      ],
+      "t": 0,
+      "izoh": "4 va 8 ni 2 asosida yozamiz: 2^(2x) = 2^(3y), demak 2x = 3y. Bundan x = 1,5y. Ikkinchi tenglamaga qo'ysak 1,5y + y = 15, ya'ni 2,5y = 15 va y = 6, x = 9. Javob: (9; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#7fdcd25a"
+    },
+    {
+      "q": "2^x + 2^y = 12 va 2^(x+y) = 32 sistemasining yechimlarini yangi o'zgaruvchi kiritish usuli bilan aniqlang.",
+      "v": [
+        "(8; 4) va (4; 8)",
+        "(3; 2) va (2; 3)",
+        "(6; 6)",
+        "faqat (3; 2)"
+      ],
+      "t": 1,
+      "izoh": "a = 2^x, b = 2^y belgilaymiz: a + b = 12 va ab = 32. Bu sonlar t² − 12t + 32 = 0 ning ildizlari, ya'ni t = 8 va t = 4. 2^x = 8 dan x = 3, 2^y = 4 dan y = 2, yoki aksincha. Javob: (3; 2) va (2; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#195daae7"
+    },
+    {
+      "q": "x + y = 10 va lg x + lg y = lg 21 sistemasi berilgan. Logarifm xossalaridan foydalanib, sistemani yeching.",
+      "v": [
+        "(1; 21) va (21; 1)",
+        "(2; 8) va (8; 2)",
+        "(3; 7) va (7; 3)",
+        "(10; 21)"
+      ],
+      "t": 2,
+      "izoh": "lg x + lg y = lg(xy) bo'lgani uchun lg(xy) = lg 21, demak xy = 21. Endi x + y = 10 va xy = 21 sistemasini yechamiz: t² − 10t + 21 = 0, ildizlari t = 7 va t = 3. Ikkala son ham musbat, shuning uchun aniqlanish sohasi buzilmaydi. Javob: (3; 7) va (7; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#459d3bcf"
+    },
+    {
+      "q": "log₂x + log₂y = 5 va x − y = 4 sistemasi berilgan. Aniqlanish sohasini hisobga olgan holda yechimni toping.",
+      "v": [
+        "(4; 8)",
+        "(32; 28)",
+        "(16; 12)",
+        "(8; 4)"
+      ],
+      "t": 3,
+      "izoh": "Logarifmlar yig'indisini birlashtiramiz: log₂(xy) = 5, demak xy = 2⁵ = 32. x = y + 4 ni qo'ysak y(y + 4) = 32, ya'ni y² + 4y − 32 = 0. Diskriminant D = 16 + 128 = 144, y = (−4 + 12)/2 = 4 (manfiy ildiz aniqlanish sohasiga to'g'ri kelmaydi). U holda x = 8. Javob: (8; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#3c68d4db"
+    },
+    {
+      "q": "log₃x − log₃y = 2 va x + y = 20 tenglamalar sistemasini yeching hamda (x; y) juftligini ko'rsating.",
+      "v": [
+        "(18; 2)",
+        "(2; 18)",
+        "(9; 11)",
+        "(15; 5)"
+      ],
+      "t": 0,
+      "izoh": "Logarifmlar ayirmasini bo'linma logarifmiga aylantiramiz: log₃(x/y) = 2, demak x/y = 3² = 9 va x = 9y. Ikkinchi tenglamaga qo'ysak 9y + y = 20, ya'ni 10y = 20 va y = 2, x = 18. Javob: (18; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#ba96aeca"
+    },
+    {
+      "q": "lg(xy) = 3 va lg x − lg y = 1 sistemasi berilgan. Logarifm ta'rifini qo'llab, musbat yechimni toping.",
+      "v": [
+        "(10; 100)",
+        "(100; 10)",
+        "(1000; 100)",
+        "(50; 20)"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tenglamadan xy = 10³ = 1000. Ikkinchisidan lg(x/y) = 1, ya'ni x/y = 10 va x = 10y. Buni birinchisiga qo'ysak 10y² = 1000, demak y² = 100 va y = 10 (manfiy qiymat logarifm sohasiga kirmaydi). U holda x = 100. Javob: (100; 10).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#1a1fa33c"
+    },
+    {
+      "q": "log₃(x + y) = 3 va log₂x − log₂y = 1 sistemasi berilgan. Har bir tenglamani logarifmsiz ko'rinishga keltirib yeching.",
+      "v": [
+        "(9; 18)",
+        "(20; 7)",
+        "(18; 9)",
+        "(24; 3)"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tenglamadan x + y = 3³ = 27. Ikkinchisidan log₂(x/y) = 1, demak x/y = 2 va x = 2y. Qo'ysak 2y + y = 27, ya'ni 3y = 27 va y = 9, x = 18. Ikkala qiymat musbat, aniqlanish sohasi bajariladi. Javob: (18; 9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifmik-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#221d760d"
+    },
+    {
+      "q": "3^x = 9^y va log₃(x + y) = 2 sistemasi berilgan. Ko'rsatkichli va logarifmik tenglamalarni birgalikda yechib, (x; y) juftligini toping.",
+      "v": [
+        "(3; 6)",
+        "(4,5; 4,5)",
+        "(9; 3)",
+        "(6; 3)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tenglamani 3 asosiga keltiramiz: 3^x = 3^(2y), demak x = 2y. Ikkinchi tenglamadan x + y = 3² = 9. Bu ikki shartdan 2y + y = 9, ya'ni y = 3 va x = 6. Logarifm ostidagi ifoda musbat, shart bajariladi. Javob: (6; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-korsatkichli-logarifmik",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#cfc072c6"
+    },
+    {
+      "q": "log₂x = y va xy = 24 sistemasi berilgan. Butun sonlardan iborat yechimni tanlash usuli bilan toping.",
+      "v": [
+        "(8; 3)",
+        "(3; 8)",
+        "(4; 6)",
+        "(24; 1)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tenglamadan x = 2^y kelib chiqadi. Buni ikkinchisiga qo'ysak 2^y·y = 24 bo'ladi. y = 3 da 8·3 = 24, ya'ni shart bajariladi va x = 8. y ortganda chap tomon tez o'sadi, kamayganda kichrayadi, shuning uchun boshqa musbat yechim yo'q. Javob: (8; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-korsatkichli-logarifmik",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#7b87c4b5"
+    },
+    {
+      "q": "5^(x−y) = 25 va lg x + lg y = lg 35 sistemasi berilgan. Ikki xil turdagi tenglamani birlashtirib yechimni toping.",
+      "v": [
+        "(5; 7)",
+        "(7; 5)",
+        "(35; 33)",
+        "(9; 7)"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tenglamada asoslar teng: x − y = 2. Ikkinchisidan lg(xy) = lg 35, demak xy = 35. x = y + 2 ni qo'ysak y² + 2y − 35 = 0, diskriminant D = 4 + 140 = 144. Bundan y = (−2 + 12)/2 = 5 va x = 7. Manfiy ildiz logarifm sohasiga kirmaydi. Javob: (7; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-korsatkichli-logarifmik",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#c1cf6cfc"
+    },
+    {
+      "q": "3^x = 27^y va log₃x + log₃y = 3 sistemasi berilgan. Aniqlanish sohasini unutmagan holda yechimni ko'rsating.",
+      "v": [
+        "(3; 9)",
+        "(27; 1)",
+        "(9; 3)",
+        "(9; 3) va (−9; −3)"
+      ],
+      "t": 2,
+      "izoh": "27 = 3³ bo'lgani uchun 3^x = 3^(3y), demak x = 3y. Ikkinchi tenglamani birlashtiramiz: log₃(xy) = 3, ya'ni xy = 27. Qo'ysak 3y² = 27, bundan y² = 9 va y = 3 yoki y = −3. Logarifm ta'rifiga ko'ra x va y qat'iy musbat bo'lishi shart, shuning uchun y = −3 hol tashlanadi. Qolgan y = 3 da x = 9. Javob: (9; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-korsatkichli-logarifmik",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#826b6d19"
+    },
+    {
+      "q": "x² + y² = 16 va y = x + 6 sistemasi nechta haqiqiy yechimga ega ekanligini diskriminant orqali aniqlang.",
+      "v": [
+        "2 ta yechim",
+        "1 ta yechim",
+        "cheksiz ko'p yechim",
+        "yechimi yo'q"
+      ],
+      "t": 3,
+      "izoh": "y = x + 6 ni birinchi tenglamaga qo'yamiz: x² + (x + 6)² = 16. Qavsni ochsak 2x² + 12x + 36 = 16, ya'ni x² + 6x + 10 = 0. Diskriminant D = 36 − 40 = −4 manfiy, demak haqiqiy ildiz yo'q. Geometrik ma'noda to'g'ri chiziq radiusi 4 bo'lgan aylanadan uzoqda joylashgan. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimlar-soni",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#0b7c1ee4"
+    },
+    {
+      "q": "x² + y² = 25 va x + y = 7 tenglamalar sistemasi nechta haqiqiy yechim juftligiga ega bo'ladi?",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "4 ta",
+        "yechimi yo'q"
+      ],
+      "t": 0,
+      "izoh": "(x + y)² = x² + y² + 2xy dan 49 = 25 + 2xy, demak xy = 12. x va y sonlari t² − 7t + 12 = 0 ning ildizlari, diskriminant D = 49 − 48 = 1 musbat. Ildizlar 3 va 4, ular ikkita tartiblangan juftlik beradi: (3; 4) va (4; 3). Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimlar-soni",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#b15a725c"
+    },
+    {
+      "q": "xy = 9 va x + y = 6 sistemasi nechta yechimga ega ekanini diskriminant yordamida aniqlang.",
+      "v": [
+        "yechimi yo'q",
+        "1 ta",
+        "2 ta",
+        "3 ta"
+      ],
+      "t": 1,
+      "izoh": "Viyet teoremasiga ko'ra x va y sonlari t² − 6t + 9 = 0 tenglamaning ildizlari. Diskriminant D = 36 − 36 = 0, demak yagona ildiz t = 3. Bu holda x = y = 3 bo'ladi va sistema faqat bitta juftlik beradi. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimlar-soni",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#b14c76ac"
+    },
+    {
+      "q": "x² − y² = 0 va x² + y² = 8 sistemasi nechta haqiqiy yechimga ega? Barcha ishoralarni hisobga oling.",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "4 ta",
+        "8 ta"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tenglamadan (x − y)(x + y) = 0, ya'ni x = y yoki x = −y. Ikkala holda ham x² = y², shuning uchun ikkinchi tenglama 2y² = 8 ko'rinishini oladi va y = 2 yoki y = −2. Har bir y uchun x ikki xil ishorada bo'lishi mumkin, natijada (2; 2), (−2; −2), (2; −2), (−2; 2) juftliklari hosil bo'ladi. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimlar-soni",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#a8f05e97"
+    },
+    {
+      "q": "Bog'bon perimetri 20 m va yuzasi 28 m² bo'lgan to'g'ri to'rtburchak shaklidagi gulzor qurmoqchi. Bunday gulzor qurish mumkinmi?",
+      "v": [
+        "Mumkin, tomonlari 4 m va 7 m",
+        "Mumkin, tomonlari 14 m va 2 m",
+        "Mumkin, faqat kvadrat shaklida",
+        "Mumkin emas, sistema haqiqiy yechimga ega emas"
+      ],
+      "t": 3,
+      "izoh": "Tomonlarni x va y deb olamiz: perimetrdan x + y = 10, yuzadan xy = 28. Bu sonlar t² − 10t + 28 = 0 ning ildizlari bo'lishi kerak. Diskriminant D = 100 − 112 = −12 manfiy, demak haqiqiy tomonlar mavjud emas. Perimetri 20 m bo'lgan to'g'ri to'rtburchakning eng katta yuzasi kvadratda, ya'ni 25 m² ga teng. Javob: mumkin emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechimlar-soni",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#ca7e436f"
+    },
+    {
+      "q": "y = x² va y = x + a sistemasi yagona haqiqiy yechimga ega bo'ladigan a parametrning qiymatini toping.",
+      "v": [
+        "−0,25",
+        "0,25",
+        "0",
+        "−4"
+      ],
+      "t": 0,
+      "izoh": "Ikkala ifodani tenglashtiramiz: x² = x + a, ya'ni x² − x − a = 0. Yagona yechim diskriminant nolga teng bo'lgandagina bo'ladi: D = 1 + 4a = 0. Bundan 4a = −1 va a = −0,25. Bu holda parabola bilan to'g'ri chiziq urinma bo'ladi. Javob: −0,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrli-yechim-soni",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#4d669b71"
+    },
+    {
+      "q": "x² + y² = 100 va y = m sistemasi aynan ikkita haqiqiy yechimga ega bo'lishi uchun m qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "m > 10",
+        "−10 < m < 10",
+        "m = 10 yoki m = −10",
+        "−10 ≤ m ≤ 10"
+      ],
+      "t": 1,
+      "izoh": "y = m ni qo'ysak x² = 100 − m² hosil bo'ladi. Ikkita har xil x qiymati chiqishi uchun 100 − m² > 0 bo'lishi shart, ya'ni m² < 100. Bundan −10 < m < 10. Chegaraviy m = 10 va m = −10 da esa faqat bitta yechim bo'ladi, chunki x = 0. Javob: −10 < m < 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrli-yechim-soni",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#9588d8e0"
+    },
+    {
+      "q": "x + y = 6 va xy = a sistemasi haqiqiy yechimga ega bo'lishi uchun a ning eng katta qiymati nechaga teng?",
+      "v": [
+        "3",
+        "6",
+        "9",
+        "36"
+      ],
+      "t": 2,
+      "izoh": "x va y sonlari t² − 6t + a = 0 tenglamaning ildizlari bo'ladi. Haqiqiy ildiz mavjud bo'lishi uchun D = 36 − 4a ≥ 0, ya'ni a ≤ 9. Demak eng katta qiymat a = 9 bo'lib, unda x = y = 3. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrli-yechim-soni",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#cf7f3fbd"
+    },
+    {
+      "q": "y = x² − 4 va y = c sistemasi birorta ham haqiqiy yechimga ega bo'lmasligi uchun c qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "c > −4",
+        "c = −4",
+        "c > 4",
+        "c < −4"
+      ],
+      "t": 3,
+      "izoh": "Tenglashtirsak x² − 4 = c, ya'ni x² = c + 4. Kvadrat manfiy bo'la olmaydi, shuning uchun yechim yo'qligi uchun c + 4 < 0 bo'lishi kerak. Bundan c < −4. Grafik tilida: gorizontal chiziq parabolaning eng past nuqtasidan pastda o'tadi. Javob: c < −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrli-yechim-soni",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#c2dc6d69"
+    },
+    {
+      "q": "Markazi koordinata boshida bo'lgan x² + y² = 20 aylana va y = 2x to'g'ri chiziqning kesishish nuqtalarini toping.",
+      "v": [
+        "(2; 4) va (−2; −4)",
+        "faqat (2; 4)",
+        "(4; 2) va (−4; −2)",
+        "(2; 4) va (2; −4)"
+      ],
+      "t": 0,
+      "izoh": "y = 2x ni aylana tenglamasiga qo'yamiz: x² + 4x² = 20, ya'ni 5x² = 20 va x² = 4. Bundan x = 2 yoki x = −2. Mos ordinatalar y = 4 va y = −4. To'g'ri chiziq markazdan o'tgani uchun aylanani ikkita nuqtada kesadi. Javob: (2; 4) va (−2; −4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-togri-chiziq-kesishuvi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#412a932d"
+    },
+    {
+      "q": "x² + y² = 25 aylana bilan x + y = 5 to'g'ri chiziq nechta va qanday nuqtalarda kesishishini aniqlang.",
+      "v": [
+        "(3; 4) va (4; 3)",
+        "(0; 5) va (5; 0)",
+        "faqat (5; 0)",
+        "(0; 5), (5; 0) va (3; 4)"
+      ],
+      "t": 1,
+      "izoh": "(x + y)² = x² + y² + 2xy ayniyatidan 25 = 25 + 2xy, demak xy = 0. Ko'paytma nol bo'lgani uchun x = 0 yoki y = 0. x = 0 bo'lsa y = 5, y = 0 bo'lsa x = 5. Demak to'g'ri chiziq aylanani koordinata o'qlaridagi ikki nuqtada kesadi. Javob: (0; 5) va (5; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-togri-chiziq-kesishuvi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#c7793817"
+    },
+    {
+      "q": "Radiolokatorning kuzatuv doirasi markazi koordinata boshida bo'lib, radiusi 13 km. Samolyot y = x + 7 to'g'ri chiziq bo'ylab uchmoqda. Samolyot kuzatuv doirasi chegarasini qaysi nuqtalarda kesib o'tadi?",
+      "v": [
+        "(12; 5) va (−5; −12)",
+        "faqat (5; 12)",
+        "(5; 12) va (−12; −5)",
+        "(5; 12) va (12; 5)"
+      ],
+      "t": 2,
+      "izoh": "Doira chegarasi x² + y² = 169 tenglama bilan beriladi. y = x + 7 ni qo'ysak x² + (x + 7)² = 169, ya'ni 2x² + 14x − 120 = 0 yoki x² + 7x − 60 = 0. Diskriminant D = 49 + 240 = 289, √289 = 17, demak x = 5 yoki x = −12. Mos ordinatalar y = 12 va y = −5. Javob: (5; 12) va (−12; −5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylana-togri-chiziq-kesishuvi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#6f2ffa51"
+    },
+    {
+      "q": "y = x + b to'g'ri chiziq x² + y² = 8 aylanaga urinma bo'lishi, ya'ni sistema yagona yechimga ega bo'lishi uchun b qanday bo'lishi kerak?",
+      "v": [
+        "faqat 4",
+        "2 va −2",
+        "8 va −8",
+        "4 va −4"
+      ],
+      "t": 3,
+      "izoh": "y = x + b ni qo'yamiz: x² + (x + b)² = 8, ya'ni 2x² + 2bx + b² − 8 = 0. Yagona yechim uchun diskriminant nolga teng: (2b)² − 4·2·(b² − 8) = 0. Soddalashtirsak 4b² − 8b² + 64 = 0, ya'ni 4b² = 64 va b² = 16. Bundan b = 4 yoki b = −4, chunki urinma aylananing ikki tomonidan o'tishi mumkin. Javob: 4 va −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylana-togri-chiziq-kesishuvi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#e7d0ef9b"
+    },
+    {
+      "q": "x + y = 6 va x³ + y³ = 72 sistemasini kublar yig'indisi formulasidan foydalanib yeching.",
+      "v": [
+        "(2; 4) va (4; 2)",
+        "(1; 5) va (5; 1)",
+        "faqat (2; 4)",
+        "(6; 8)"
+      ],
+      "t": 0,
+      "izoh": "x³ + y³ = (x + y)³ − 3xy(x + y) ayniyatini qo'llaymiz: 72 = 216 − 3xy·6. Bundan 18xy = 144, ya'ni xy = 8. Endi x + y = 6 va xy = 8 dan t² − 6t + 8 = 0, ildizlari 2 va 4. Javob: (2; 4) va (4; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kublar-simmetrik-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#6aa7bd55"
+    },
+    {
+      "q": "x − y = 2 va x³ − y³ = 26 sistemasi berilgan. Kublar ayirmasi formulasini qo'llab, barcha haqiqiy yechimlarni toping.",
+      "v": [
+        "faqat (3; 1)",
+        "(3; 1) va (−1; −3)",
+        "(1; 3) va (−3; −1)",
+        "(3; 1) va (13; 11)"
+      ],
+      "t": 1,
+      "izoh": "x³ − y³ = (x − y)(x² + xy + y²) bo'lgani uchun 2(x² + xy + y²) = 26, ya'ni x² + xy + y² = 13. (x − y)² = 4 dan x² + y² = 4 + 2xy. Qo'ysak 4 + 3xy = 13, demak xy = 3. Endi (x + y)² = x² + y² + 2xy = 10 + 6 = 16, ya'ni x + y = 4 yoki x + y = −4. Birinchisidan x = 3, y = 1; ikkinchisidan x = −1, y = −3. Javob: (3; 1) va (−1; −3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kublar-simmetrik-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#bdb6cc44"
+    },
+    {
+      "q": "x + y = 5 va xy = 4 bo'lsa, x³ + y³ ifodaning qiymatini sistemani to'liq yechmasdan hisoblang.",
+      "v": [
+        "125",
+        "105",
+        "65",
+        "185"
+      ],
+      "t": 2,
+      "izoh": "Kublar yig'indisi ayniyatini yozamiz: x³ + y³ = (x + y)³ − 3xy(x + y). Qiymatlarni qo'yamiz: 5³ − 3·4·5 = 125 − 60 = 65. Koeffitsient 3 ni tushirib qoldirish eng ko'p uchraydigan xato. Javob: 65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kublar-simmetrik-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#08ccb498"
+    },
+    {
+      "q": "1/x + 1/y = 11/30 va xy = 30 sistemasi berilgan. Kasrlarni umumiy maxrajga keltirib, sistemani yeching.",
+      "v": [
+        "(11; 30) va (30; 11)",
+        "faqat (5; 6)",
+        "(2; 15) va (15; 2)",
+        "(5; 6) va (6; 5)"
+      ],
+      "t": 3,
+      "izoh": "1/x + 1/y = (x + y)/(xy) bo'lgani uchun (x + y)/30 = 11/30, demak x + y = 11. Endi x + y = 11 va xy = 30 sistemasidan t² − 11t + 30 = 0 hosil bo'ladi. Diskriminant D = 121 − 120 = 1, ildizlar t = 6 va t = 5. Javob: (5; 6) va (6; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-qiymatlar-sistemasi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#c4af90eb"
+    },
+    {
+      "q": "1/x + 1/y = 5/12 va 1/x − 1/y = 1/12 sistemasini yangi o'zgaruvchi kiritish yo'li bilan yeching.",
+      "v": [
+        "(4; 6)",
+        "(6; 4)",
+        "(12; 5)",
+        "(2; 3)"
+      ],
+      "t": 0,
+      "izoh": "a = 1/x va b = 1/y deb belgilaymiz: a + b = 5/12 va a − b = 1/12. Ikki tenglamani qo'shsak 2a = 6/12, ya'ni a = 1/4 va x = 4. Ayirsak 2b = 4/12, ya'ni b = 1/6 va y = 6. Diqqat: javob a va b emas, ularning teskarisi. Javob: (4; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-qiymatlar-sistemasi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#60599689"
+    },
+    {
+      "q": "x + y = 7 va 1/x + 1/y = 7/10 sistemasi berilgan. Ikkala tenglamani bog'lab, barcha yechimlarni toping.",
+      "v": [
+        "(1; 6) va (6; 1)",
+        "(2; 5) va (5; 2)",
+        "(10; 7)",
+        "faqat (2; 5)"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi tenglamani umumiy maxrajga keltiramiz: (x + y)/(xy) = 7/10. Surat 7 ga teng bo'lgani uchun 7/(xy) = 7/10, demak xy = 10. Endi x + y = 7 va xy = 10 dan t² − 7t + 10 = 0, ildizlari 5 va 2. Javob: (2; 5) va (5; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-qiymatlar-sistemasi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#6ca761c9"
+    },
+    {
+      "q": "1/x − 1/y = 1/6 va xy = 48 sistemasining barcha haqiqiy yechimlarini toping va to'liq variantni tanlang.",
+      "v": [
+        "faqat (4; 12)",
+        "(12; 4) va (−4; −12)",
+        "(4; 12) va (−12; −4)",
+        "(6; 8) va (−8; −6)"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tenglamani umumiy maxrajga keltiramiz: (y − x)/(xy) = 1/6. xy = 48 bo'lgani uchun (y − x)/48 = 1/6, demak y − x = 8. y = x + 8 ni xy = 48 ga qo'ysak x² + 8x − 48 = 0. Diskriminant D = 64 + 192 = 256, ildizlar x = 4 va x = −12. Mos y qiymatlari 12 va −4. Javob: (4; 12) va (−12; −4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-qiymatlar-sistemasi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#e94cf9ad"
+    },
+    {
+      "q": "Maktab hovlisidagi to'g'ri to'rtburchak shaklidagi voleybol maydonchasining perimetri 46 m, yuzasi esa 120 m². Maydoncha tomonlarining uzunligini toping.",
+      "v": [
+        "23 m va 12 m",
+        "20 m va 6 m",
+        "10 m va 12 m",
+        "15 m va 8 m"
+      ],
+      "t": 3,
+      "izoh": "Tomonlarni x va y deb olamiz. Perimetrdan 2(x + y) = 46, ya'ni x + y = 23; yuzadan xy = 120. Bu sonlar t² − 23t + 120 = 0 ning ildizlari. Diskriminant D = 529 − 480 = 49, demak t = (23 ± 7)/2, ya'ni 15 va 8. Javob: 15 m va 8 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-perimetr-yuza",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#1a4b91bc"
+    },
+    {
+      "q": "Dilfuza to'g'ri to'rtburchak shaklidagi rasm ramkasini yasamoqchi. Ramkaning diagonali 25 sm, yuzasi esa 168 sm² bo'lishi kerak. Ramka tomonlari qanday?",
+      "v": [
+        "24 sm va 7 sm",
+        "20 sm va 15 sm",
+        "21 sm va 8 sm",
+        "12 sm va 14 sm"
+      ],
+      "t": 0,
+      "izoh": "Tomonlar x va y bo'lsin. Pifagor teoremasiga ko'ra x² + y² = 625, yuzadan xy = 168. (x + y)² = 625 + 2·168 = 961, demak x + y = 31. Endi t² − 31t + 168 = 0 tenglamani yechamiz: D = 961 − 672 = 289, √289 = 17, t = (31 ± 17)/2. Ildizlar 24 va 7. Javob: 24 sm va 7 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-perimetr-yuza",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#b0cd102b"
+    },
+    {
+      "q": "Fermer to'g'ri to'rtburchak shaklidagi issiqxona qurdi. Uning bo'yi enidan 5 m uzun, yuzasi esa 84 m². Issiqxonaning perimetrini hisoblang.",
+      "v": [
+        "34 m",
+        "38 m",
+        "19 m",
+        "46 m"
+      ],
+      "t": 1,
+      "izoh": "Enni y deb olsak, bo'yi y + 5 bo'ladi va y(y + 5) = 84. Yoyib yozsak y² + 5y − 84 = 0, diskriminant D = 25 + 336 = 361, √361 = 19. Bundan y = (−5 + 19)/2 = 7, demak bo'yi 12 m. Perimetr P = 2(12 + 7) = 38 m. Javob: 38 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-perimetr-yuza",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#17da62f6"
+    },
+    {
+      "q": "Ustaxonada ikkita kvadrat shaklidagi metall plastinka bor. Ularning yuzalari yig'indisi 169 sm², tomonlari yig'indisi esa 17 sm. Plastinkalarning tomonlarini toping.",
+      "v": [
+        "13 sm va 4 sm",
+        "10 sm va 7 sm",
+        "12 sm va 5 sm",
+        "11 sm va 6 sm"
+      ],
+      "t": 2,
+      "izoh": "Tomonlar a va b bo'lsin: a² + b² = 169 va a + b = 17. (a + b)² = a² + b² + 2ab dan 289 = 169 + 2ab, demak ab = 60. Endi a va b — t² − 17t + 60 = 0 ning ildizlari, D = 289 − 240 = 49. Ildizlar t = (17 ± 7)/2, ya'ni 12 va 5. Javob: 12 sm va 5 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-perimetr-yuza",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#c30c193d"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning perimetri 40 sm. Uning bir tomoni 2 sm ga uzaytirilib, ikkinchisi 3 sm ga qisqartirilsa, yuza 6 sm² ga kamayadi. Boshlang'ich tomonlarni toping.",
+      "v": [
+        "14 sm va 6 sm",
+        "16 sm va 4 sm",
+        "11 sm va 9 sm",
+        "8 sm va 12 sm"
+      ],
+      "t": 3,
+      "izoh": "Tomonlar a va b bo'lsin, perimetrdan a + b = 20. Shartga ko'ra (a + 2)(b − 3) = ab − 6. Chap tomonni yoysak ab − 3a + 2b − 6 = ab − 6, bundan 2b = 3a. a + 1,5a = 20 dan a = 8, demak b = 12. Tekshirish: 10·9 = 90, dastlabki yuza 96, farq aynan 6. Javob: 8 sm va 12 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-perimetr-yuza",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#77e2012f"
+    },
+    {
+      "q": "Nodira 24 000 so'mga bir necha dona daftar sotib oldi. Agar har bir daftar 400 so'm arzon bo'lganda, u xuddi shu pulga 3 ta ko'p daftar olardi. Nodira nechta daftar sotib olgan?",
+      "v": [
+        "12 ta",
+        "15 ta",
+        "10 ta",
+        "8 ta"
+      ],
+      "t": 0,
+      "izoh": "Daftarlar soni n, bir dona narxi p bo'lsin: n·p = 24000 va (n + 3)(p − 400) = 24000. Ikkinchisini yoyib, birinchisini ayiramiz: −400n + 3p − 1200 = 0. Bundan p = (400n + 1200)/3 va uni n·p = 24000 ga qo'ysak n² + 3n − 180 = 0. Diskriminant D = 9 + 720 = 729, √729 = 27, n = (−3 + 27)/2 = 12. Javob: 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-miqdor",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#61671dcf"
+    },
+    {
+      "q": "Talabalar guruhi ekskursiyaga jami 1 800 000 so'm to'ladi. Guruhga yana 5 ta talaba qo'shilganda, har birining ulushi 30 000 so'mga kamaydi. Dastlab guruhda nechta talaba bor edi?",
+      "v": [
+        "12 ta",
+        "15 ta",
+        "20 ta",
+        "10 ta"
+      ],
+      "t": 1,
+      "izoh": "Talabalar soni n, ulush p bo'lsin: n·p = 1800000 va (n + 5)(p − 30000) = 1800000. Ikkinchisini yoyib soddalashtirsak −30000n + 5p − 150000 = 0, ya'ni p = 6000n + 30000. Buni birinchisiga qo'ysak 6000n² + 30000n − 1800000 = 0, ya'ni n² + 5n − 300 = 0. Diskriminant D = 25 + 1200 = 1225, √1225 = 35, n = (−5 + 35)/2 = 15. Javob: 15 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-miqdor",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#b89385ab"
+    },
+    {
+      "q": "Do'konda bir dona sovg'a qutisining ming so'mdagi narxi va sotilgan qutilar soni yig'indisi 34 ga teng. Kunlik tushum 288 ming so'm bo'lib, narx sotilgan qutilar sonidan katta. Bir qutining narxini toping.",
+      "v": [
+        "16 ming so'm",
+        "20 ming so'm",
+        "18 ming so'm",
+        "14 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Narxni p, sonni n deb olamiz: p + n = 34 va p·n = 288. Bu sonlar t² − 34t + 288 = 0 ning ildizlari. Diskriminant D = 1156 − 1152 = 4, demak t = (34 ± 2)/2, ya'ni 18 va 16. Narx sondan katta bo'lgani uchun p = 18, n = 16. Javob: 18 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-narx-miqdor",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#46d2c408"
+    },
+    {
+      "q": "Do'konda bir xil narxdagi ko'ylaklar jami 1 620 000 so'mga sotildi. Sotilgan ko'ylaklar soni bitta ko'ylakning ming so'mdagi narxidan 9 ta kam. Nechta ko'ylak sotilgan?",
+      "v": [
+        "45 ta",
+        "40 ta",
+        "30 ta",
+        "36 ta"
+      ],
+      "t": 3,
+      "izoh": "Narxni p ming so'm, sonni n deb olamiz: n = p − 9 va n·p = 1620. Birinchisini ikkinchisiga qo'ysak p(p − 9) = 1620, ya'ni p² − 9p − 1620 = 0. Diskriminant D = 81 + 6480 = 6561, √6561 = 81, p = (9 + 81)/2 = 45. Demak n = 45 − 9 = 36. Javob: 36 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-miqdor",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#666e87c1"
+    },
+    {
+      "q": "Sardor 60 000 so'mga bir necha dona ruchka sotib oldi. Agar har bir ruchka 500 so'mga qimmat bo'lganda, u xuddi shu pulga 4 ta kam ruchka olardi. Bir ruchkaning narxini toping.",
+      "v": [
+        "2500 so'm",
+        "3000 so'm",
+        "2000 so'm",
+        "1500 so'm"
+      ],
+      "t": 0,
+      "izoh": "Ruchkalar soni n, narxi p bo'lsin: n·p = 60000 va (n − 4)(p + 500) = 60000. Ikkinchisini yoyib birinchisini ayiramiz: 500n − 4p − 2000 = 0. p = 60000/n ni qo'ysak 500n² − 2000n − 240000 = 0, ya'ni n² − 4n − 480 = 0. Diskriminant D = 16 + 1920 = 1936, √1936 = 44, n = (4 + 44)/2 = 24. Demak p = 60000 : 24 = 2500. Javob: 2500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-miqdor",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#d479e594"
+    },
+    {
+      "q": "Yuk mashinasi 240 km yo'lni bosib o'tdi. Agar uning tezligi 20 km/soat ortiq bo'lganda, yo'lga 1 soat kam vaqt ketardi. Mashinaning haqiqiy tezligini toping.",
+      "v": [
+        "50 km/soat",
+        "60 km/soat",
+        "80 km/soat",
+        "40 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Tezlikni v deb olamiz: 240/v − 240/(v + 20) = 1. Umumiy maxrajga keltirsak 240(v + 20) − 240v = v(v + 20), ya'ni 4800 = v² + 20v. Bundan v² + 20v − 4800 = 0, diskriminant D = 400 + 19200 = 19600, √19600 = 140. Musbat ildiz v = (−20 + 140)/2 = 60. Javob: 60 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tezlik-vaqt",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#fb7e0110"
+    },
+    {
+      "q": "Velosipedchi 60 km masofani bosib o'tdi. Qaytishda tezligini 4 km/soat oshirgani uchun yo'lga 30 daqiqa kam vaqt sarfladi. Velosipedchining dastlabki tezligini toping.",
+      "v": [
+        "16 km/soat",
+        "24 km/soat",
+        "20 km/soat",
+        "12 km/soat"
+      ],
+      "t": 2,
+      "izoh": "30 daqiqa 0,5 soatga teng. Tenglama: 60/v − 60/(v + 4) = 0,5. Umumiy maxrajga keltirsak 240 = 0,5·v(v + 4), ya'ni v² + 4v − 480 = 0. Diskriminant D = 16 + 1920 = 1936, √1936 = 44, musbat ildiz v = (−4 + 44)/2 = 20. Javob: 20 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tezlik-vaqt",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#4cf652ff"
+    },
+    {
+      "q": "Qayiq daryoda 36 km ni oqim bo'ylab, shuncha masofani esa oqimga qarshi suzdi va bunga jami 5 soat sarfladi. Oqim tezligi 3 km/soat bo'lsa, qayiqning turg'un suvdagi tezligini toping.",
+      "v": [
+        "12 km/soat",
+        "18 km/soat",
+        "9 km/soat",
+        "15 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Qayiqning turg'un suvdagi tezligi v bo'lsin. Oqim bo'ylab tezlik v + 3, qarshi v − 3. Tenglama: 36/(v + 3) + 36/(v − 3) = 5. Umumiy maxrajga keltirsak 36·2v = 5(v² − 9), ya'ni 5v² − 72v − 45 = 0. Diskriminant D = 5184 + 900 = 6084, √6084 = 78, v = (72 + 78)/10 = 15. Javob: 15 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tezlik-vaqt",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#0d7d3abd"
+    },
+    {
+      "q": "Ikki shahar orasidagi masofa 300 km. Birinchi avtobus ikkinchisidan 10 km/soat tez yuradi va bu masofani 1 soat oldin bosib o'tadi. Sekinroq avtobusning tezligini toping.",
+      "v": [
+        "50 km/soat",
+        "60 km/soat",
+        "40 km/soat",
+        "75 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Sekin avtobus tezligi v bo'lsin, tez avtobusniki v + 10. Vaqtlar farqi: 300/v − 300/(v + 10) = 1. Umumiy maxrajdan 3000 = v(v + 10), ya'ni v² + 10v − 3000 = 0. Diskriminant D = 100 + 12000 = 12100, √12100 = 110, v = (−10 + 110)/2 = 50. Javob: 50 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tezlik-vaqt",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#fe34639a"
+    },
+    {
+      "q": "Ikki usta birgalikda ishlab, buyurtmani 6 kunda bajaradi. Yolg'iz ishlaganda birinchi usta ikkinchisidan 5 kun tez tugatadi. Har bir usta yolg'iz necha kunda bajaradi?",
+      "v": [
+        "12 kun va 17 kun",
+        "10 kun va 15 kun",
+        "6 kun va 11 kun",
+        "8 kun va 13 kun"
+      ],
+      "t": 1,
+      "izoh": "Birinchi usta x kunda, ikkinchisi x + 5 kunda bajarsin. Kunlik unum: 1/x + 1/(x + 5) = 1/6. Umumiy maxrajga keltirsak 6(x + 5) + 6x = x(x + 5), ya'ni x² − 7x − 30 = 0. Diskriminant D = 49 + 120 = 169, √169 = 13, x = (7 + 13)/2 = 10. Demak ikkinchi usta 15 kunda bajaradi. Javob: 10 kun va 15 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#c1bacb18"
+    },
+    {
+      "q": "Ikkita quvur hovuzni birgalikda 4 soatda to'ldiradi. Birinchi quvur yolg'iz o'zi ikkinchisidan 6 soat tez to'ldiradi. Har bir quvur alohida necha soatda to'ldiradi?",
+      "v": [
+        "8 soat va 14 soat",
+        "5 soat va 11 soat",
+        "6 soat va 12 soat",
+        "4 soat va 10 soat"
+      ],
+      "t": 2,
+      "izoh": "Birinchi quvur x soatda, ikkinchisi x + 6 soatda to'ldirsin. Soatlik unumlar yig'indisi: 1/x + 1/(x + 6) = 1/4. Umumiy maxrajga keltirsak 4(x + 6) + 4x = x(x + 6), ya'ni x² − 2x − 24 = 0. Diskriminant D = 4 + 96 = 100, x = (2 + 10)/2 = 6. Ikkinchi quvur 12 soatda to'ldiradi. Javob: 6 soat va 12 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#5135ea43"
+    },
+    {
+      "q": "Ikki traktor dalani birgalikda 12 soatda haydaydi. Alohida ishlaganda ular sarflaydigan vaqtlar yig'indisi 50 soat. Har bir traktor yolg'iz necha soatda haydaydi?",
+      "v": [
+        "24 soat va 26 soat",
+        "15 soat va 35 soat",
+        "25 soat va 25 soat",
+        "20 soat va 30 soat"
+      ],
+      "t": 3,
+      "izoh": "Vaqtlarni x va y deb olamiz: 1/x + 1/y = 1/12 va x + y = 50. Birinchi tenglamadan (x + y)/(xy) = 1/12, ya'ni 50/(xy) = 1/12 va xy = 600. Endi t² − 50t + 600 = 0 tenglamani yechamiz: D = 2500 − 2400 = 100, t = (50 ± 10)/2. Ildizlar 30 va 20. Javob: 20 soat va 30 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#3feb5a4b"
+    },
+    {
+      "q": "Ikki kotib hujjatlar to'plamini birgalikda 8 soatda tayyorlaydi. Yolg'iz ishlaganda birinchi kotib ikkinchisidan 12 soat kam vaqt sarflaydi. Har biri yolg'iz necha soatda tayyorlaydi?",
+      "v": [
+        "12 soat va 24 soat",
+        "10 soat va 22 soat",
+        "16 soat va 28 soat",
+        "8 soat va 20 soat"
+      ],
+      "t": 0,
+      "izoh": "Birinchi kotib x soatda, ikkinchisi x + 12 soatda tayyorlasin. Soatlik unumlar yig'indisi: 1/x + 1/(x + 12) = 1/8. Umumiy maxrajga keltirsak 8(x + 12) + 8x = x(x + 12), ya'ni x² − 4x − 96 = 0. Diskriminant D = 16 + 384 = 400, x = (4 + 20)/2 = 12. Ikkinchi kotib 24 soatda tayyorlaydi. Javob: 12 soat va 24 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#d37c7a12"
+    },
+    {
+      "q": "Karim ikki xonali son o'yladi. Uning raqamlari yig'indisi 12, ko'paytmasi esa 35 ga teng. O'nlar raqami birlar raqamidan katta bo'lsa, Karim o'ylagan sonni toping.",
+      "v": [
+        "57",
+        "75",
+        "93",
+        "84"
+      ],
+      "t": 1,
+      "izoh": "O'nlar raqamini a, birlar raqamini b deb olamiz: a + b = 12 va ab = 35. Bu raqamlar t² − 12t + 35 = 0 ning ildizlari, diskriminant D = 144 − 140 = 4. Ildizlar t = (12 ± 2)/2, ya'ni 7 va 5. O'nlar raqami katta bo'lgani uchun a = 7, b = 5. Javob: 75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-xonali-son-sistemasi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#92663297"
+    },
+    {
+      "q": "Ikki xonali sonning raqamlari ko'paytmasi 18 ga teng. Agar raqamlar o'rni almashtirilsa, hosil bo'lgan son dastlabkisidan 27 ga katta bo'ladi. Dastlabki sonni toping.",
+      "v": [
+        "63",
+        "18",
+        "36",
+        "69"
+      ],
+      "t": 2,
+      "izoh": "Son 10a + b ko'rinishida bo'lsin: ab = 18 va (10b + a) − (10a + b) = 27. Ikkinchi shartni soddalashtirsak 9(b − a) = 27, ya'ni b − a = 3. b = a + 3 ni birinchisiga qo'ysak a² + 3a − 18 = 0, diskriminant D = 9 + 72 = 81. Bundan a = (−3 + 9)/2 = 3 va b = 6. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-xonali-son-sistemasi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#2cfa27b0"
+    },
+    {
+      "q": "Ikki xonali sonning raqamlari kvadratlari yig'indisi 58, raqamlari ko'paytmasi esa 21 ga teng. Birlar raqami o'nlar raqamidan katta bo'lsa, sonni toping.",
+      "v": [
+        "73",
+        "57",
+        "21",
+        "37"
+      ],
+      "t": 3,
+      "izoh": "Raqamlarni a va b deb olamiz: a² + b² = 58 va ab = 21. (a + b)² = 58 + 2·21 = 100, demak a + b = 10 (raqamlar musbat). Endi t² − 10t + 21 = 0 dan ildizlar 7 va 3. Birlar raqami kattaroq bo'lgani uchun o'nlar raqami 3, birlar raqami 7. Javob: 37.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-xonali-son-sistemasi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#27e6f9cf"
+    },
+    {
+      "q": "Zilolaning uy raqami ikki xonali son bo'lib, raqamlari yig'indisi 9 ga, ko'paytmasi esa 20 ga teng. Bu son juft ekanini bilgan holda uy raqamini toping.",
+      "v": [
+        "54",
+        "45",
+        "36",
+        "63"
+      ],
+      "t": 0,
+      "izoh": "Raqamlar a va b bo'lsin: a + b = 9 va ab = 20. Ular t² − 9t + 20 = 0 ning ildizlari, diskriminant D = 81 − 80 = 1. Ildizlar 5 va 4, demak son 45 yoki 54 bo'lishi mumkin. Son juft bo'lishi uchun birlar raqami 4 bo'lishi kerak. Javob: 54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-xonali-son-sistemasi",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#b292a5ae"
+    },
+    {
+      "q": "xy = 6, yz = 12 va xz = 8 sistemasining musbat yechimini topib, (x; y; z) uchligini ko'rsating.",
+      "v": [
+        "(3; 2; 4)",
+        "(2; 3; 4)",
+        "(6; 12; 8)",
+        "(4; 3; 2)"
+      ],
+      "t": 1,
+      "izoh": "Uchala tenglamani ko'paytiramiz: (xyz)² = 6·12·8 = 576, demak musbat holda xyz = 24. Endi har bir nomalumni topamiz: x = 24 : (yz) = 24 : 12 = 2, y = 24 : (xz) = 24 : 8 = 3, z = 24 : (xy) = 24 : 6 = 4. Tekshirish barcha tenglamani qanoatlantiradi. Javob: (2; 3; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-nomalumli-nochiziqli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#1675fc62"
+    },
+    {
+      "q": "x + y + z = 6, xy + yz + zx = 11 va xyz = 6 sistemasi berilgan. Shu uchta nomalum sonni aniqlang.",
+      "v": [
+        "2, 3 va 4",
+        "1, 1 va 4",
+        "1, 2 va 3",
+        "6, 11 va 6"
+      ],
+      "t": 2,
+      "izoh": "Viyet teoremasining kubik tenglama uchun ko'rinishidan foydalanamiz: x, y, z sonlari t³ − 6t² + 11t − 6 = 0 ning ildizlari. t = 1 ni qo'ysak 1 − 6 + 11 − 6 = 0, demak t = 1 ildiz. Bo'lgandan keyin t² − 5t + 6 = 0 qoladi, uning ildizlari 2 va 3. Javob: 1, 2 va 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-nomalumli-nochiziqli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#1c6b817b"
+    },
+    {
+      "q": "To'g'ri burchakli parallelepipedning bir uchida uchrashadigan uchta yog'i yuzalari 12 sm², 18 sm² va 24 sm² ga teng. Parallelepipedning hajmini toping.",
+      "v": [
+        "54 sm³",
+        "144 sm³",
+        "36 sm³",
+        "72 sm³"
+      ],
+      "t": 3,
+      "izoh": "Qirralarni a, b, c deb olamiz: ab = 12, bc = 18, ac = 24. Uchala tenglikni ko'paytiramiz: (abc)² = 12·18·24 = 5184. Kvadrat ildiz olsak abc = 72, bu esa hajmning o'zi. Qirralarni alohida topish shart emas. Javob: 72 sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-nomalumli-nochiziqli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#d32e84b5"
+    },
+    {
+      "q": "x + y = 5, y + z = 9 va xz = 12 sistemasining barcha komponentlari musbat bo'lgan yechimini toping.",
+      "v": [
+        "(2; 3; 6)",
+        "(3; 2; 6)",
+        "(−6; 11; −2)",
+        "(2; 3; 4)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi ikki tenglamadan x = 5 − y va z = 9 − y. Uchinchisiga qo'yamiz: (5 − y)(9 − y) = 12, ya'ni y² − 14y + 33 = 0. Diskriminant D = 196 − 132 = 64, ildizlar y = 11 va y = 3. y = 11 da x = −6, z = −2 chiqadi, bu musbatlik shartiga zid. y = 3 da x = 2 va z = 6. Javob: (2; 3; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-nomalumli-nochiziqli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#531cb08a"
+    },
+    {
+      "q": "x/y + y/x = 10/3 va x + y = 12 sistemasini t = x/y almashtirish orqali yeching va yechimlarni ko'rsating.",
+      "v": [
+        "(6; 6)",
+        "(9; 3) va (3; 9)",
+        "(10; 3) va (3; 10)",
+        "faqat (9; 3)"
+      ],
+      "t": 1,
+      "izoh": "t = x/y desak birinchi tenglama t + 1/t = 10/3 ko'rinishini oladi, ya'ni 3t² − 10t + 3 = 0. Diskriminant D = 100 − 36 = 64, ildizlar t = 3 va t = 1/3. t = 3 da x = 3y, u holda 4y = 12, y = 3 va x = 9. t = 1/3 da y = 3x, u holda 4x = 12, x = 3 va y = 9. Javob: (9; 3) va (3; 9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yangi-ozgaruvchi-kiritish",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#adba93e0"
+    },
+    {
+      "q": "x² + y² = 34 va x² − y² = 16 sistemasini a = x², b = y² almashtirish yordamida yeching va musbat yechimni toping.",
+      "v": [
+        "(25; 9)",
+        "(3; 5)",
+        "(5; 3)",
+        "(9; 25)"
+      ],
+      "t": 2,
+      "izoh": "a = x², b = y² belgilaymiz: a + b = 34 va a − b = 16. Ikki tenglamani qo'shsak 2a = 50, ya'ni a = 25; ayirsak 2b = 18, ya'ni b = 9. Endi x² = 25 va y² = 9, demak musbat holda x = 5 va y = 3. Diqqat: 25 va 9 javob emas, ular kvadratlar. Javob: (5; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yangi-ozgaruvchi-kiritish",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#4177e068"
+    },
+    {
+      "q": "2/x + 5/y = 2 va 1/x − 1/y = 3/10 sistemasini a = 1/x, b = 1/y almashtirish yordamida yeching.",
+      "v": [
+        "(5; 2)",
+        "(1/2; 1/5)",
+        "(10; 3)",
+        "(2; 5)"
+      ],
+      "t": 3,
+      "izoh": "a = 1/x va b = 1/y desak sistema chiziqli bo'ladi: 2a + 5b = 2 va a − b = 3/10. Ikkinchisidan a = b + 3/10, buni birinchisiga qo'ysak 2b + 3/5 + 5b = 2, ya'ni 7b = 7/5 va b = 1/5. U holda a = 1/5 + 3/10 = 1/2. Teskarisiga o'tsak x = 2 va y = 5. Javob: (2; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yangi-ozgaruvchi-kiritish",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#5a8b0b57"
+    },
+    {
+      "q": "(x + y)² − 3(x + y) = 10 va xy = 4 sistemasini u = x + y almashtirish bilan yeching.",
+      "v": [
+        "(1; 4) va (4; 1)",
+        "(2; 2)",
+        "(5; 4)",
+        "(1; 4), (4; 1) va (−2; 2)"
+      ],
+      "t": 0,
+      "izoh": "u = x + y desak u² − 3u − 10 = 0, diskriminant D = 9 + 40 = 49. Ildizlar u = 5 va u = −2. u = 5 va xy = 4 bo'lganda t² − 5t + 4 = 0, ildizlari 1 va 4. u = −2 va xy = 4 bo'lganda t² + 2t + 4 = 0 ning diskriminanti −12, haqiqiy ildiz yo'q. Javob: (1; 4) va (4; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yangi-ozgaruvchi-kiritish",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#84f8e402"
+    },
+    {
+      "q": "√x + √y = 7 va x + y = 25 sistemasini yangi o'zgaruvchi kiritish orqali yeching va yechimlarni ko'rsating.",
+      "v": [
+        "(3; 4) va (4; 3)",
+        "(9; 16) va (16; 9)",
+        "faqat (9; 16)",
+        "(12; 13)"
+      ],
+      "t": 1,
+      "izoh": "a = √x, b = √y desak a + b = 7 va a² + b² = 25. (a + b)² = a² + b² + 2ab dan 49 = 25 + 2ab, demak ab = 12. Endi a va b — t² − 7t + 12 = 0 ning ildizlari, ya'ni 4 va 3. Kvadratga ko'tarsak x = 16, y = 9 yoki aksincha. Javob: (9; 16) va (16; 9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#db0e2b04"
+    },
+    {
+      "q": "√x·√y = 6 va x + y = 13 sistemasining barcha yechimlarini toping. Bunda x va y manfiy bo'lmagan sonlardir.",
+      "v": [
+        "(6; 7)",
+        "(36; 13)",
+        "(4; 9) va (9; 4)",
+        "faqat (4; 9)"
+      ],
+      "t": 2,
+      "izoh": "√x·√y = √(xy) bo'lgani uchun √(xy) = 6, demak xy = 36. Endi x + y = 13 va xy = 36 sistemasini yechamiz: t² − 13t + 36 = 0. Diskriminant D = 169 − 144 = 25, ildizlar t = (13 ± 5)/2, ya'ni 9 va 4. Ikkalasi ham manfiy emas. Javob: (4; 9) va (9; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#fa9d6d56"
+    },
+    {
+      "q": "√(x + y) = 4 va x − y = 6 sistemasi berilgan. Ildizdan qutulib, sistemani yeching va (x; y) juftligini toping.",
+      "v": [
+        "(5; 11)",
+        "(16; 10)",
+        "(10; 4)",
+        "(11; 5)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tenglamaning ikkala tomonini kvadratga ko'taramiz: x + y = 16. Endi x + y = 16 va x − y = 6 chiziqli sistemasi qoldi. Ikkalasini qo'shsak 2x = 22, ya'ni x = 11, undan y = 5. Tekshirish: √16 = 4, shart bajariladi. Javob: (11; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#5afea54a"
+    },
+    {
+      "q": "√x − √y = 1 va x − y = 9 sistemasi berilgan. Kvadratlar ayirmasi ayniyatidan foydalanib, yechimni toping.",
+      "v": [
+        "(25; 16)",
+        "(16; 25)",
+        "(9; 1)",
+        "(10; 1)"
+      ],
+      "t": 0,
+      "izoh": "x − y ni ildizlar orqali yozamiz: x − y = (√x − √y)(√x + √y) = 9. Birinchi shartga ko'ra √x − √y = 1, demak √x + √y = 9. Ikki tenglikni qo'shsak 2√x = 10, ya'ni √x = 5 va x = 25. Undan √y = 4 va y = 16. Javob: (25; 16).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizli-sistema",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#ce32fbbe"
+    },
+    {
+      "q": "(4; 1), (5; 2), (2; 5) va (5; −2) juftliklaridan qaysi biri x² + y² = 29 hamda x − y = 3 sistemasining yechimi bo'ladi?",
+      "v": [
+        "(4; 1)",
+        "(5; 2)",
+        "(2; 5)",
+        "(5; −2)"
+      ],
+      "t": 1,
+      "izoh": "Har bir juftlikni ikkala tenglamaga qo'yib tekshiramiz. (4; 1) uchun 16 + 1 = 17, birinchi shart buziladi. (2; 5) uchun ayirma 2 − 5 = −3, ikkinchi shart buziladi. (5; −2) uchun 25 + 4 = 29 to'g'ri, ammo 5 + 2 = 7, ayirma shartiga mos emas. (5; 2) uchun esa 25 + 4 = 29 va 5 − 2 = 3, ikkala shart ham bajariladi. Javob: (5; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimni-tekshirish",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#7b657ff8"
+    },
+    {
+      "q": "(3; −2) juftligi quyida keltirilgan sistemalardan qaysi birining yechimi bo'ladi? Qiymatlarni har bir tenglamaga qo'yib tekshiring.",
+      "v": [
+        "x + y = 1 va xy = 6",
+        "xy = 6 va x − y = 5",
+        "x² + y² = 13 va x + y = 1",
+        "x² − y² = 5 va x + y = 5"
+      ],
+      "t": 2,
+      "izoh": "x = 3, y = −2 ni qo'yamiz. Birinchi variantda x + y = 1 to'g'ri, lekin xy = −6, demak mos emas. Ikkinchisida ham xy = −6 bo'lgani uchun mos emas. Uchinchisida x² + y² = 9 + 4 = 13 va x + y = 3 − 2 = 1, ikkala shart bajariladi. To'rtinchisida x² − y² = 5 to'g'ri, ammo x + y = 1, 5 emas. Javob: x² + y² = 13 va x + y = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimni-tekshirish",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#64819be5"
+    },
+    {
+      "q": "x² + y² = 25 va xy = 12 sistemasining yechimlari to'plamiga quyidagi juftliklardan qaysi biri kirmaydi?",
+      "v": [
+        "(3; 4)",
+        "(−4; −3)",
+        "(4; 3)",
+        "(−3; 4)"
+      ],
+      "t": 3,
+      "izoh": "Sistemani yechamiz: (x + y)² = 25 + 24 = 49 va (x − y)² = 25 − 24 = 1. Bundan x + y = ±7 va x − y = ±1, natijada (3; 4), (4; 3), (−3; −4) va (−4; −3) juftliklari chiqadi. (−3; 4) juftligida x² + y² = 25 to'g'ri bo'lsa-da, xy = −12 bo'lib, ikkinchi shart buziladi. Javob: (−3; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimni-tekshirish",
+      "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari#feb603d6"
+    }
+  ]
+}

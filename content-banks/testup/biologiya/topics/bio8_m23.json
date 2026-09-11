@@ -1,0 +1,456 @@
+{
+  "nom": "Biologiya-8, 23-§. Nafas olish organlarining tuzilishi, 70-73-bet",
+  "bolim": "VI BOB. Nafas olish sistemasi",
+  "savollar": [
+    {
+      "q": "Nafas olish nima?",
+      "v": [
+        "Tashqi muhitdan kislorod olib, karbonat angidrid chiqarish",
+        "Faqat oziqni hazm qilish",
+        "Faqat suv chiqarish",
+        "Faqat energiya sarflash"
+      ],
+      "t": 0,
+      "izoh": "Nafas olish odamning tashqi muhitdan kislorod olib, karbonat angidrid chiqarishidan iborat; kislorod taʼsirida organik moddalar parchalanib, energiya ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio8_m23#1d9dcdfc"
+    },
+    {
+      "q": "Nafas olish sistemasi qaysi organlardan iborat?",
+      "v": [
+        "Havo oʻtkazuvchi yoʻllar (burun, halqum, hiqildoq, kekirdak, bronxlar) va oʻpka",
+        "Faqat oʻpka",
+        "Yurak va qon tomirlar",
+        "Oshqozon va ichak"
+      ],
+      "t": 0,
+      "izoh": "Nafas olish sistemasi havo oʻtkazuvchi yoʻllar (burun boʻshligʻi, halqum, hiqildoq, kekirdak, bronxlar) va gaz almashinuv organi — oʻpkadan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#2c486a4b"
+    },
+    {
+      "q": "Burun boʻshligʻidagi tuklar qanday vazifani bajaradi?",
+      "v": [
+        "Havodagi chang zarrachalarini tutib qoladi",
+        "Havoni isitadi",
+        "Ovoz hosil qiladi",
+        "Kislorodni qonga oʻtkazadi"
+      ],
+      "t": 0,
+      "izoh": "Burun boʻshligʻi shilliq pardasidagi tuklar nafas olinayotgan havodagi chang zarrachalarini tutib qoladi; bezlar shilimshiq modda ishlab chiqarib mikroblarni zararsizlantiradi, havo namlanadi va iliydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#16031fd4"
+    },
+    {
+      "q": "Ovoz paylari qayerda joylashgan?",
+      "v": [
+        "Hiqildoqning ichki devoridagi togʻaylar oʻrtasida",
+        "Burun boʻshligʻida",
+        "Kekirdakda",
+        "Oʻpkada"
+      ],
+      "t": 0,
+      "izoh": "Hiqildoqning ichki devorida joylashgan togʻaylar oʻrtasida ovoz paylari joylashgan; paylar orasidagi teshik ovoz teshigi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#eb33e163"
+    },
+    {
+      "q": "Tovush qanday hosil boʻladi?",
+      "v": [
+        "Nafas chiqarilganda havo ovoz paylarini tebratadi",
+        "Nafas olinganda",
+        "Yutinganda",
+        "Kekirdak qisqarganda"
+      ],
+      "t": 0,
+      "izoh": "Nafas chiqarilganida ovoz teshiklaridan oʻtadigan havo ovoz paylarini tebratib tovush hosil qiladi; oʻpkadan chiqayotgan havo ovoz paylariga tegib ularni tebratganida ovoz paydo boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#38d5de7e"
+    },
+    {
+      "q": "Ovozning balandligi nimaga bogʻliq?",
+      "v": [
+        "Ovoz paylarining uzunligiga",
+        "Oʻpka hajmiga",
+        "Burun kattaligiga",
+        "Tishlar soniga"
+      ],
+      "t": 0,
+      "izoh": "Ovozning balandligi ovoz paylarining uzunligiga bogʻliq: paylar qancha kalta boʻlsa, tebranish soni shuncha koʻp, ovoz tembri baland boʻladi. Ayol va bolalarning paylari kalta boʻlgani uchun ovozi baland.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#0e06d3a2"
+    },
+    {
+      "q": "Yutinish paytida hiqildoq yoʻlini nima berkitadi?",
+      "v": [
+        "Hiqildoqusti togʻayi",
+        "Ovoz paylari",
+        "Til",
+        "Kekirdak"
+      ],
+      "t": 0,
+      "izoh": "Yutinish paytida hiqildoq yoʻlini hiqildoqusti togʻayi berkitadi, shu tufayli ovqat nafas yoʻliga tushmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#f09a85d3"
+    },
+    {
+      "q": "Ikkala oʻpkada taxminan nechta alveola boʻladi?",
+      "v": [
+        "750 mln atrofida",
+        "1000 ta",
+        "100 mln",
+        "10 mln"
+      ],
+      "t": 0,
+      "izoh": "Ikkala oʻpkada 750 mln atrofida alveola boʻladi; ularning umumiy yuzasi 100 m² ga teng keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio8_m23#b8a10c4a"
+    },
+    {
+      "q": "Alveola devori qanday tuzilgan?",
+      "v": [
+        "Bir qavat epiteliy hujayralaridan iborat, kapillyarlar bilan qoplangan",
+        "Uch qavatli va qalin",
+        "Muskulli",
+        "Togʻaydan iborat"
+      ],
+      "t": 0,
+      "izoh": "Alveolalar devori bir qavat epiteliy hujayralaridan iborat boʻlib, mayda kapillyarlar toʻri bilan qoplangan; bu gaz almashinuvini taʼminlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#76e15eba"
+    },
+    {
+      "q": "Nafas olish va chiqarishni qaysi miya boʻlimi boshqaradi?",
+      "v": [
+        "Uzunchoq miyadagi nafas olish markazi",
+        "Bosh miya poʻstlogʻi",
+        "Miyacha",
+        "Orqa miya"
+      ],
+      "t": 0,
+      "izoh": "Nafas olish va nafas chiqarishning almashinishi uzunchoq miyada joylashgan nafas olish markazi tomonidan boshqarib turiladi; undan nerv impulslari qovurgʻalar oraligʻi va diafragma muskullariga uzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#95d89656"
+    },
+    {
+      "q": "Nafas olishda ko‘krak qafasi bilan nima roʻy beradi?",
+      "v": [
+        "Kengayadi, undagi bosim pasayadi va havo oʻpkaga soʻriladi",
+        "Kichrayadi",
+        "Bosim ortadi",
+        "Havo chiqadi"
+      ],
+      "t": 0,
+      "izoh": "Nafas olishda tashqi qovurgʻalararo va diafragma muskullari qisqarib, qovurgʻalar koʻtariladi, koʻkrak qafasi kengayadi; undagi bosim pasayib, havo oʻpkaga soʻriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#5d2a6fc9"
+    },
+    {
+      "q": "Odam tinch holatda bir minutda necha marta nafas oladi?",
+      "v": [
+        "16–18 marta",
+        "70 marta",
+        "5 marta",
+        "40 marta"
+      ],
+      "t": 0,
+      "izoh": "Odam tinch oʻtirganida bir minutda 16–18 marta nafas olib, nafas chiqaradi; harakatlanganda nafas olish tezlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#83e00aa3"
+    },
+    {
+      "q": "Kekirdakning oldingi va orqa devori qanday tuzilgan?",
+      "v": [
+        "Oldingi devori yarim halqa togʻaydan, orqa devori yumshoq toʻqimadan",
+        "Ikkala devori ham togʻaydan",
+        "Ikkala devori ham muskuldan",
+        "Suyakdan"
+      ],
+      "t": 0,
+      "izoh": "Kekirdak oldingi devori yarim halqa togʻaydan, orqa devori qiziloʻngachga yopishib turadigan yumshoq toʻqimadan iborat; yumshoq toʻqima yutilgan ovqatning qiziloʻngachdan oʻtishiga xalaqit bermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#0b4718e6"
+    },
+    {
+      "q": "Kislorod taʼsirida hujayralardagi organik moddalar nimagacha parchalanadi?",
+      "v": [
+        "Suv va karbonat angidridgacha",
+        "Faqat kislorodgacha",
+        "Oqsil va yogʻgacha",
+        "Mineral tuzlargacha"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, kislorod taʼsirida hujayralardagi organik moddalar suv va karbonat angidridgacha parchalanib, koʻp miqdorda energiya ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#35429ad7"
+    },
+    {
+      "q": "Nafas olishda organik moddalar parchalanganda ajralib chiqadigan energiya nimaga sarflanadi?",
+      "v": [
+        "Organlarning ishlashi, hujayraning koʻpayishi va oʻsishiga",
+        "Faqat tana haroratini pasaytirishga",
+        "Ovqatni hazm qilishga",
+        "Qonni tozalashga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, ajralib chiqqan energiya organlarning ishlashi, hujayraning koʻpayishi va oʻsishi uchun sarf boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#d6061c11"
+    },
+    {
+      "q": "Burun boʻshligʻi qanday toʻsiq bilan chap va oʻng qismga ajralgan?",
+      "v": [
+        "Suyak va togʻay toʻsiq bilan",
+        "Faqat muskul toʻsiq bilan",
+        "Shilliq parda toʻsigʻi bilan",
+        "Tuklar bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, burun boʻshligʻi suyak va togʻay toʻsiq bilan chap va oʻng qismga ajralgan; devoridagi ilonizi yoʻllar uning yuzasini kengaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#b7e3dfd2"
+    },
+    {
+      "q": "Burun boʻshligʻining devori nima bilan qoplangan?",
+      "v": [
+        "Shilliq parda bilan",
+        "Togʻay bilan",
+        "Suyak plastinka bilan",
+        "Muskul qavati bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, burun boʻshligʻi devori shilliq parda bilan qoplangan; shilliq pardada koʻp tuklar, bezlar, kapillar qon tomirlari va nerv tolalari boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#4d04f4dd"
+    },
+    {
+      "q": "Burun bezlari ishlab chiqaradigan shilimshiq modda qanday vazifani bajaradi?",
+      "v": [
+        "Mikroblarni zararsizlantiradi",
+        "Havoni sovutadi",
+        "Ovoz hosil qiladi",
+        "Kislorodni qonga oʻtkazadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, burun boʻshligʻi bezlari ishlab chiqaradigan shilimshiq modda mikroblarni zararsizlantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#96d692ec"
+    },
+    {
+      "q": "Nafas olinganda burun boʻshligʻidan oʻtayotgan havoga nima boʻladi?",
+      "v": [
+        "Namlanadi va iliydi",
+        "Soviydi va quriydi",
+        "Faqat quriydi",
+        "Oʻzgarishsiz qoladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, nafas olinganda burun boʻshligʻidan oʻtayotgan havo namlanadi va iliydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#0eed3279"
+    },
+    {
+      "q": "Havo burun boʻshligʻidan qaysi organ orqali hiqildoqqa oʻtadi?",
+      "v": [
+        "Halqum orqali",
+        "Kekirdak orqali",
+        "Bronxlar orqali",
+        "Oʻpka orqali"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, havo burun boʻshligʻidan halqum orqali hiqildoqqa oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#bf68d6c6"
+    },
+    {
+      "q": "Hiqildoq devori nimadan iborat?",
+      "v": [
+        "Muskullar va bir necha togʻaydan",
+        "Faqat suyakdan",
+        "Yumshoq shilliq pardadan",
+        "Bir qavat epiteliydan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, hiqildoq devori muskullar va bir necha togʻaydan iborat; ichki devoridagi togʻaylar oʻrtasida ovoz paylari joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#59b638ee"
+    },
+    {
+      "q": "Odam baland ovozda gaplashganda yoki ashula aytganda ovoz teshigi qanday holatda boʻladi?",
+      "v": [
+        "Deyarli yopiq",
+        "Keng ochiq",
+        "Yarim ochiq",
+        "Butunlay yoʻqoladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, ovoz teshigi gapirmasdan turganda keng ochilgan, pichirlashganda yarim ochiq, baland ovozda gaplashganda yoki ashula aytganda deyarli yopiq boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#9a6ea66e"
+    },
+    {
+      "q": "Odamning ovoz paylari bir sekundda necha marta tebranishi mumkin?",
+      "v": [
+        "80 dan 10 000 martagacha",
+        "1 dan 10 martagacha",
+        "100 dan 200 martagacha",
+        "1 mln martagacha"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, odamning ovoz paylari bir sekundda 80 dan 10 000 martagacha tebranishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio8_m23#98815acf"
+    },
+    {
+      "q": "Oʻgʻil bolalarning ovozi oʻsmirlik davrida nega doʻrillab qoladi?",
+      "v": [
+        "Ovoz paylari qiz bolalarnikiga nisbatan koʻproq oʻsganidan",
+        "Oʻpkasi kichrayganidan",
+        "Tishlari toʻkilganidan",
+        "Havo yetishmaganidan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, ovoz paylari oʻsmirlik davrida oʻgʻil bolalarda qiz bolalarga nisbatan koʻproq oʻsganidan, ularning ovozi doʻrillab qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#abd781ab"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri ovoz paylarining zararlanishiga sabab boʻladi?",
+      "v": [
+        "Nafas yoʻllarining surunkali shamollashi, chekish va spirtli ichimliklar",
+        "Sof havoda yurish",
+        "Koʻp suv ichish",
+        "Yengil jismoniy mashqlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, nafas yoʻllarining surunkali shamollashi, chekish va spirtli ichimliklarni tez-tez isteʼmol qilish ovoz paylarining zararlanishiga sabab boʻladi; koʻp chekadigan va ichadigan odamning ovozi boʻgʻiq chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#9c1750bd"
+    },
+    {
+      "q": "Ovoz qanday omillar taʼsirida maʼnoli nutqqa aylanadi?",
+      "v": [
+        "Lablar, til va pastki jagʻ holatining oʻzgarishi taʼsirida",
+        "Faqat oʻpka hajmi oʻzgarishi bilan",
+        "Faqat yurak urishi bilan",
+        "Faqat diafragma harakati bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, ovoz lablar, til va pastki jagʻ holatining oʻzgarishi taʼsirida ogʻiz, hiqildoq va burun boʻshliqlarida maʼnoli nutqqa aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#c1fa20ce"
+    },
+    {
+      "q": "Kekirdak nechta bronxga ajralib oʻpkaga kiradi?",
+      "v": [
+        "Ikkita",
+        "Bitta",
+        "Uchta",
+        "Toʻrtta"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, kekirdak ikkita bronxga ajralib, oʻpkaga kiradi; bronxlar ham kekirdakka oʻxshash yarim halqa naydan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#33de7043"
+    },
+    {
+      "q": "Bronxlar oʻpkaga kirgandan soʻng nima hosil qiladi?",
+      "v": [
+        "Koʻp marta shoxlanib, uchi alveolalar bilan tugaydigan ingichka naychalarni",
+        "Bitta yirik boʻshliqni",
+        "Muskulli xaltalarni",
+        "Suyak naychalarni"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, bronxlar oʻpkalarga kirgach koʻp marta ketma-ket shoxlanib ingichka naychalarni hosil qiladi; naychalar uchi yupqa devorli mayda xaltachalar — alveolalar bilan tugaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#9357359f"
+    },
+    {
+      "q": "Oʻpkadagi barcha alveolalarning umumiy yuzasi qanchaga teng?",
+      "v": [
+        "100 m²",
+        "10 m²",
+        "1 m²",
+        "1000 m²"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, ikkala oʻpkada 750 mln atrofida alveola boʻlib, ularning umumiy yuzasi 100 m² ga teng keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio8_m23#030d2fce"
+    },
+    {
+      "q": "Oʻpkalar nima bilan qoplangan?",
+      "v": [
+        "Ikki qavat plevra parda bilan",
+        "Bir qavat epiteliy bilan",
+        "Togʻay parda bilan",
+        "Muskul qavati bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, oʻpkalar biriktiruvchi toʻqimadan iborat ikki qavat plevra bilan qoplangan; sirtqi qavati koʻkrak qafasi devorini ichki tomondan, ichki plevra esa oʻpkani oʻraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m23#de71ce97"
+    }
+  ]
+}

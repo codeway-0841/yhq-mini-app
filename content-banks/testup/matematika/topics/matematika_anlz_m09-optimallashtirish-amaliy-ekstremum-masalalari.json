@@ -1,0 +1,1609 @@
+{
+  "nom": "Optimallashtirish (amaliy ekstremum) masalalari",
+  "bolim": "Matematik analiz asoslari",
+  "blok": "anlz",
+  "rasmiyBolim": 5,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Uzunligi 68 m bo'lgan to'siq bilan to'rtburchak shaklidagi maydon o'raladi. Maydon yuzasi eng katta bo'lishi uchun uning yuzasi qanchaga teng bo'ladi?",
+      "v": [
+        "272 m²",
+        "288 m²",
+        "1156 m²",
+        "289 m²"
+      ],
+      "t": 3,
+      "izoh": "Tomonlari x va 34 − x bo'lsin, chunki yarim perimetr 68 : 2 = 34. Yuza S(x) = x(34 − x) = 34x − x². Hosila S′(x) = 34 − 2x, u nolga aylanganda x = 17. Demak tomonlar 17 m va 17 m, S = 17·17 = 289 m². Javob: 289 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perimetr-berilgan-max-yuza",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#d79e7be1"
+    },
+    {
+      "q": "Anvar 92 m simto'r bilan to'rtburchak hovli o'rab olmoqchi. Hovli yuzasi eng katta bo'lishi uchun tomonlari qanday bo'lishi kerak?",
+      "v": [
+        "20 m va 26 m",
+        "18 m va 28 m",
+        "46 m va 46 m",
+        "23 m va 23 m"
+      ],
+      "t": 3,
+      "izoh": "Yarim perimetr 92 : 2 = 46, shuning uchun tomonlar x va 46 − x. S(x) = 46x − x², S′(x) = 46 − 2x = 0 dan x = 23. Ikkinchi tomon ham 46 − 23 = 23 m. Yuza eng katta bo'lgan to'rtburchak — kvadrat. Javob: 23 m va 23 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perimetr-berilgan-max-yuza",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#5baade6c"
+    },
+    {
+      "q": "Perimetri 56 sm bo'lgan to'rtburchaklar orasida yuzasi eng katta bo'lganining yuzasini toping.",
+      "v": [
+        "192 sm²",
+        "195 sm²",
+        "784 sm²",
+        "196 sm²"
+      ],
+      "t": 3,
+      "izoh": "Tomonlar yig'indisi 56 : 2 = 28 sm. S(x) = x(28 − x), S′(x) = 28 − 2x = 0 dan x = 14. Tomonlari 14 sm va 14 sm bo'lgan kvadrat chiqadi: S = 196 sm². 192 va 195 — kvadratga yaqin, lekin teng bo'lmagan tomonlar natijasi. Javob: 196 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perimetr-berilgan-max-yuza",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#b26c41c0"
+    },
+    {
+      "q": "Bog'bon 124 m panjara bilan to'rtburchak gulzor o'raydi. Gulzorning erishish mumkin bo'lgan eng katta yuzasi qancha?",
+      "v": [
+        "930 m²",
+        "960 m²",
+        "961 m²",
+        "3844 m²"
+      ],
+      "t": 2,
+      "izoh": "Yarim perimetr 62 m, shuning uchun S(x) = x(62 − x) = 62x − x². S′(x) = 62 − 2x = 0 bo'lganda x = 31. Ikkinchi tomon ham 31 m, S = 31² = 961 m². 3844 — 62² olib, perimetrni ikkiga bo'lishni unutgan xato. Javob: 961 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perimetr-berilgan-max-yuza",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#88688eb4"
+    },
+    {
+      "q": "Dala bir tomoni bilan uzun devorga tegib turadi va qolgan uch tomoni 120 m to'siq bilan o'raladi. Dalaning eng katta yuzasi qancha bo'ladi?",
+      "v": [
+        "900 m²",
+        "1600 m²",
+        "1800 m²",
+        "3600 m²"
+      ],
+      "t": 2,
+      "izoh": "Devorga perpendikulyar ikki tomon y, devorga parallel tomon x bo'lsin: x + 2y = 120, ya'ni x = 120 − 2y. Yuza S(y) = y(120 − 2y) = 120y − 2y². S′(y) = 120 − 4y = 0 dan y = 30, x = 60. S = 60·30 = 1800 m². 1600 — to'siqni uchga teng bo'lish xatosi. Javob: 1800 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "devor-yonida-uch-tomon-max-yuza",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#43ef6f22"
+    },
+    {
+      "q": "Ferma egasi 84 m to'r bilan omborning tekis devoriga tegib turadigan to'rtburchak qo'ra qurmoqchi. Qo'raning eng katta yuzasi qanchaga teng?",
+      "v": [
+        "784 m²",
+        "441 m²",
+        "1764 m²",
+        "882 m²"
+      ],
+      "t": 3,
+      "izoh": "Devorga tik ikki tomon y, parallel tomon x: x + 2y = 84 va S = xy = y(84 − 2y). S′(y) = 84 − 4y = 0 bo'lganda y = 21, x = 84 − 42 = 42. Yuza S = 42·21 = 882 m². 1764 — 42² olib ikkinchi o'lchamni chalkashtirish natijasi. Javob: 882 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "devor-yonida-uch-tomon-max-yuza",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#1e6dff02"
+    },
+    {
+      "q": "Yuzasi 512 m² bo'lgan to'rtburchak maydonning bir tomoni bino devoridan iborat, qolgan uch tomoni to'siladi. Eng kam to'siq uzunligi qancha?",
+      "v": [
+        "48 m",
+        "80 m",
+        "96 m",
+        "64 m"
+      ],
+      "t": 3,
+      "izoh": "Devorga parallel tomon x, tik tomonlar y bo'lsin: xy = 512, to'siq F = x + 2y = 512/y + 2y. F′(y) = −512/y² + 2 = 0 dan y² = 256, y = 16, x = 32. F = 32 + 2·16 = 64 m. 96 — to'rt tomonni ham hisoblash, 48 — bitta y ni tashlab ketish xatosi. Javob: 64 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "devor-yonida-min-tosiq",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#50a26ff5"
+    },
+    {
+      "q": "To'rtburchak hovli o'rtasidan bir tomonga parallel to'siq bilan ikkiga bo'linadi. Jami 180 m to'siq ishlatilsa, hovlining eng katta yuzasi qancha?",
+      "v": [
+        "1200 m²",
+        "900 m²",
+        "2025 m²",
+        "1350 m²"
+      ],
+      "t": 3,
+      "izoh": "Bo'luvchi to'siqqa parallel tomon uzunligi y bo'lsa, uch marta y va ikki marta x ketadi: 2x + 3y = 180. Bundan x = (180 − 3y)/2 va S = xy = 90y − 1,5y². S′(y) = 90 − 3y = 0 dan y = 30, x = 45. S = 45·30 = 1350 m². 2025 — to'siqni to'rtga bo'lish xatosi. Javob: 1350 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "boluvchi-tosiqli-max-yuza",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#66fc065d"
+    },
+    {
+      "q": "Tomoni 36 sm bo'lgan kvadrat kartonning burchaklaridan bir xil kvadratchalar kesib olinib, qopqoqsiz quti yasaladi. Qutining eng katta hajmi qancha?",
+      "v": [
+        "2916 sm³",
+        "5400 sm³",
+        "1728 sm³",
+        "3456 sm³"
+      ],
+      "t": 3,
+      "izoh": "Kesilgan kvadratcha tomoni x bo'lsa, V(x) = x(36 − 2x)². Hosilani hisoblaymiz: V′(x) = (36 − 2x)² − 4x(36 − 2x) = (36 − 2x)(36 − 6x). Nolga aylanish nuqtasi x = 6 (x = 18 da hajm nolga teng). V = 6·24² = 3456 sm³. Javob: 3456 sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-kartondan-quti-hajm",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#bb510869"
+    },
+    {
+      "q": "Tomoni 24 sm bo'lgan kvadrat qog'ozning to'rt burchagidan kvadratcha kesib olib quti yasaladi. Hajm eng katta bo'lishi uchun kvadratcha tomoni qancha bo'lsin?",
+      "v": [
+        "3 sm",
+        "6 sm",
+        "8 sm",
+        "4 sm"
+      ],
+      "t": 3,
+      "izoh": "Hajm V(x) = x(24 − 2x)² ko'rinishida bo'ladi. V′(x) = (24 − 2x)(24 − 6x) bo'lgani uchun ildizlar x = 4 va x = 12. x = 12 da asos yo'qoladi, shuning uchun x = 4 sm olinadi. Bu yerda V = 4·16² = 1024 sm³. Javob: 4 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-kartondan-quti-hajm",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#9df357ab"
+    },
+    {
+      "q": "Tomoni 48 sm kvadrat tunuka varag'ining burchaklaridan kvadratchalar kesilib, chetlari yuqoriga bukiladi. Hosil bo'lgan qopqoqsiz idishning eng katta hajmini toping.",
+      "v": [
+        "2048 sm³",
+        "6912 sm³",
+        "8192 sm³",
+        "12800 sm³"
+      ],
+      "t": 2,
+      "izoh": "V(x) = x(48 − 2x)², V′(x) = (48 − 2x)(48 − 6x) = 0 dan x = 8 yoki x = 24. x = 24 da asos tomoni nolga teng bo'lib qoladi, demak x = 8 sm. V = 8·32² = 8192 sm³. 12800 — asosni 48 − x deb olish, 2048 — hajmni x²(48 − 2x) deb yozish xatosi. Javob: 8192 sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-kartondan-quti-hajm",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#17392c9b"
+    },
+    {
+      "q": "O'lchamlari 16 sm va 10 sm bo'lgan to'rtburchak kartonning burchaklaridan kvadratchalar kesib olinib quti yasaladi. Qutining eng katta hajmi qanchaga teng?",
+      "v": [
+        "112 sm³",
+        "120 sm³",
+        "144 sm³",
+        "224 sm³"
+      ],
+      "t": 2,
+      "izoh": "V(x) = x(16 − 2x)(10 − 2x) = 4x³ − 52x² + 160x. V′(x) = 12x² − 104x + 160 = 0, ya'ni 3x² − 26x + 40 = 0. Ildizlari x = 2 va x = 20/3; ikkinchisi 5 dan katta bo'lgani uchun yaramaydi. V(2) = 2·12·6 = 144 sm³. 224 — chetlarni 16 − x va 10 − x deb olish xatosi. Javob: 144 sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tortburchak-kartondan-quti-hajm",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#ade0b900"
+    },
+    {
+      "q": "Hajmi 54π sm³ bo'lgan yopiq silindr shaklidagi banka eng kam tunuka sarflab yasaladi. Banka asosining radiusi qancha bo'lishi kerak?",
+      "v": [
+        "4 sm",
+        "6 sm",
+        "9 sm",
+        "3 sm"
+      ],
+      "t": 3,
+      "izoh": "Hajmdan h = 54/r² kelib chiqadi. To'la sirt S = 2πr² + 2πrh = 2πr² + 108π/r. S′(r) = 4πr − 108π/r² = 0 dan r³ = 27, ya'ni r = 3 sm. Bunda h = 54/9 = 6 sm, ya'ni balandlik diametrga teng. 6 — balandlikni radius deb olish xatosi. Javob: 3 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "silindr-min-material",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#a4d308e3"
+    },
+    {
+      "q": "Hajmi 64π sm³ bo'lgan qopqoqsiz silindrik idish eng kam material bilan yasalmoqchi. Uning radiusi va balandligi qanday bo'ladi?",
+      "v": [
+        "r = 2 sm, h = 16 sm",
+        "r = 4 sm, h = 8 sm",
+        "r = 8 sm, h = 1 sm",
+        "r = 4 sm, h = 4 sm"
+      ],
+      "t": 3,
+      "izoh": "Hajmdan h = 64/r². Qopqoq yo'q, shuning uchun S = πr² + 2πrh = πr² + 128π/r. S′(r) = 2πr − 128π/r² = 0 dan r³ = 64, r = 4 sm va h = 64/16 = 4 sm. Qopqoqsiz idishda balandlik radiusga teng bo'ladi. Javob: r = 4 sm, h = 4 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "silindr-min-material",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#66caf399"
+    },
+    {
+      "q": "To'la sirti 96π sm² bo'lgan yopiq silindrlar orasida hajmi eng katta bo'lganining hajmini toping.",
+      "v": [
+        "64π sm³",
+        "96π sm³",
+        "128π sm³",
+        "192π sm³"
+      ],
+      "t": 2,
+      "izoh": "Sirt shartidan 2πr² + 2πrh = 96π, ya'ni r² + rh = 48 va h = (48 − r²)/r. Hajm V = πr²h = π(48r − r³). V′ = π(48 − 3r²) = 0 dan r = 4, h = (48 − 16)/4 = 8. V = π·16·8 = 128π sm³. Javob: 128π sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "silindr-max-hajm",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#a1105302"
+    },
+    {
+      "q": "Berilgan hajmga ega yopiq silindrik idish eng kam material sarflab yasalganda uning o'lchamlari orasidagi bog'lanish qanday bo'ladi?",
+      "v": [
+        "Balandlik radiusga teng",
+        "Balandlik radiusdan uch marta katta",
+        "Balandlik radiusning yarmiga teng",
+        "Balandlik diametrga teng"
+      ],
+      "t": 3,
+      "izoh": "S = 2πr² + 2V/r funksiyaning hosilasi 4πr − 2V/r² nolga aylanganda 2πr³ = V bo'ladi. Hajm V = πr²h bo'lgani uchun πr²h = 2πr³, bundan h = 2r. Demak balandlik diametrga teng. Qopqoqsiz idishda esa h = r chiqadi. Javob: balandlik diametrga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "optimal-shart-nazariy",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#1161abd3"
+    },
+    {
+      "q": "Yuzasi 196 m² bo'lgan to'rtburchak yer uchastkasi eng kam devor bilan o'ralmoqchi. Devorning eng kichik uzunligi qancha?",
+      "v": [
+        "50 m",
+        "70 m",
+        "98 m",
+        "56 m"
+      ],
+      "t": 3,
+      "izoh": "Tomonlari x va 196/x bo'lsin, perimetr P(x) = 2x + 392/x. P′(x) = 2 − 392/x² = 0 dan x² = 196, x = 14 m. Ikkinchi tomon ham 196 : 14 = 14 m, demak P = 4·14 = 56 m. 70 — tomonlarni 28 va 7 deb olish natijasi. Javob: 56 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-berilgan-min-perimetr",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#8e342b8d"
+    },
+    {
+      "q": "Yuzasi 324 m² bo'lgan to'rtburchak sport maydonchasining perimetri eng kichik bo'lganda u nechaga teng bo'ladi?",
+      "v": [
+        "78 m",
+        "90 m",
+        "162 m",
+        "72 m"
+      ],
+      "t": 3,
+      "izoh": "P(x) = 2x + 648/x, chunki ikkinchi tomon 324/x ga teng. P′(x) = 2 − 648/x² = 0 dan x² = 324 va x = 18 m. Maydoncha kvadrat bo'ladi, P = 4·18 = 72 m. 78 — tomonlarni 12 va 27 deb olish, 162 — perimetr o'rniga yuzaning yarmini (324 : 2) javob deb yozish xatosi. Javob: 72 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-berilgan-min-perimetr",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#3fba61b6"
+    },
+    {
+      "q": "Yuzasi 121 m² bo'lgan to'rtburchak hovlini o'rash uchun kamida necha metr panjara kerak bo'ladi?",
+      "v": [
+        "22 m",
+        "88 m",
+        "244 m",
+        "44 m"
+      ],
+      "t": 3,
+      "izoh": "Tomonlari x va 121/x, perimetr P(x) = 2x + 242/x. P′(x) = 2 − 242/x² nolga aylanganda x² = 121, x = 11 m. Har ikki tomon 11 m, demak P = 4·11 = 44 m. 244 — tomonlarni 121 va 1 deb olish, 22 — faqat ikki tomonni qo'shish xatosi. Javob: 44 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-berilgan-min-perimetr",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#cfc96748"
+    },
+    {
+      "q": "Yuzasi bir xil bo'lgan to'rtburchaklar orasida qaysi birining perimetri eng kichik bo'ladi va bu qanday isbotlanadi?",
+      "v": [
+        "Tomonlari 1 : 2 nisbatdagi to'rtburchak, chunki u ixchamroq",
+        "Tomonlari 1 : 3 nisbatdagi to'rtburchak, chunki bo'yi kichrayadi",
+        "Uzun va ingichka to'rtburchak, chunki bir tomoni juda qisqa",
+        "Kvadrat, chunki P(x) = 2x + 2S/x hosilasi x = √S da nolga aylanadi"
+      ],
+      "t": 3,
+      "izoh": "Yuza S berilgan bo'lsa, tomonlari x va S/x, perimetr P(x) = 2x + 2S/x. Hosila P′(x) = 2 − 2S/x² nolga aylanganda x² = S, ya'ni x = √S. Ikkinchi tomon ham S : √S = √S chiqadi, demak shakl kvadrat bo'ladi. Javob: kvadrat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "optimal-shart-nazariy",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#e7b244a2"
+    },
+    {
+      "q": "Ikkita musbat sonning yig'indisi 40 ga teng. Ularning ko'paytmasi eng katta bo'lganda bu ko'paytma nechaga teng bo'ladi?",
+      "v": [
+        "375",
+        "396",
+        "400",
+        "800"
+      ],
+      "t": 2,
+      "izoh": "Sonlar x va 40 − x bo'lsin, ko'paytma f(x) = 40x − x². Hosila f′(x) = 40 − 2x nolga aylanganda x = 20, ikkinchi son ham 20. Demak ko'paytma 20·20 = 400. 396 — 18 va 22 juftligi, 375 — 15 va 25 juftligi natijasi. Javob: 400.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-son-max-kopaytma",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#e7e6cfee"
+    },
+    {
+      "q": "Yig'indisi 30 ga teng bo'lgan ikkita sonning kvadratlari yig'indisi eng kichik bo'lganda u qanday qiymatga ega?",
+      "v": [
+        "450",
+        "458",
+        "468",
+        "900"
+      ],
+      "t": 0,
+      "izoh": "f(x) = x² + (30 − x)² = 2x² − 60x + 900 deb yozamiz. f′(x) = 4x − 60 = 0 dan x = 15, ikkinchi son ham 15. Kvadratlar yig'indisi 225 + 225 = 450. 458 — 13 va 17 juftligi, 468 — 12 va 18 juftligi natijasi. Javob: 450.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-son-min-kvadratlar-yigindisi",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#3f4f7f5c"
+    },
+    {
+      "q": "Ikkita musbat sonning ko'paytmasi 64 ga teng bo'lsa, ularning yig'indisi eng kichik bo'lgan holda nechaga teng bo'ladi?",
+      "v": [
+        "16",
+        "20",
+        "34",
+        "65"
+      ],
+      "t": 0,
+      "izoh": "Sonlar x va 64/x bo'lsin, yig'indi s(x) = x + 64/x. Hosila s′(x) = 1 − 64/x² nolga aylanganda x² = 64, ya'ni x = 8 va ikkinchi son ham 8. Yig'indi 8 + 8 = 16. 20 — 4 va 16 juftligi, 65 — 1 va 64 juftligi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-berilgan-min-yigindi",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#a9b4801f"
+    },
+    {
+      "q": "x va y musbat sonlarning yig'indisi 24 ga teng. x²y ko'paytma eng katta bo'lganda u qanday qiymat oladi?",
+      "v": [
+        "1024",
+        "1728",
+        "1944",
+        "2048"
+      ],
+      "t": 3,
+      "izoh": "y = 24 − x qo'yamiz: f(x) = x²(24 − x) = 24x² − x³. f′(x) = 48x − 3x² = 3x(16 − x), demak x = 16 va y = 8. Bunda f = 256·8 = 2048. 1728 — ikkala sonni 12 dan teng olish, 1024 — x va y ni almashtirib yuborish xatosi. Javob: 2048.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-son-vaznli-max-kopaytma",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#c214251a"
+    },
+    {
+      "q": "Do'konda mahsulot 40 000 so'mdan sotilganda oyiga 200 dona ketadi. Narx har 1000 so'm tushirilganda xaridor 10 taga ortadi. Tushum eng katta bo'ladigan narxni toping.",
+      "v": [
+        "20 000 so'm",
+        "25 000 so'm",
+        "30 000 so'm",
+        "35 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Narx n marta tushirilsa, tushum T(n) = (40000 − 1000n)(200 + 10n) = 8 000 000 + 200 000n − 10 000n². T′(n) = 200 000 − 20 000n = 0 dan n = 10. Demak narx 40 000 − 10 000 = 30 000 so'm, sotuv 300 dona, tushum 9 000 000 so'm. Javob: 30 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-tushirish-max-tushum",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#acab13af"
+    },
+    {
+      "q": "Mehmonxonada 60 xona bor va narx 200 000 so'm bo'lganda hammasi band bo'ladi. Narx har 20 000 so'm oshirilganda 2 ta xona bo'sh qoladi. Kunlik eng katta tushum qancha?",
+      "v": [
+        "12 000 000 so'm",
+        "15 000 000 so'm",
+        "16 000 000 so'm",
+        "24 000 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Narx k marta oshirilsa T(k) = (200 000 + 20 000k)(60 − 2k) = 12 000 000 + 800 000k − 40 000k². T′(k) = 800 000 − 80 000k = 0 dan k = 10, narx 400 000 so'm, band xona 40 ta. Tushum 400 000·40 = 16 000 000 so'm. 24 000 000 — bo'sh xonalarni hisobga olmaslik xatosi. Javob: 16 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-oshirish-max-tushum",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#83f299e1"
+    },
+    {
+      "q": "Teatr zalida 500 o'rin bor va chipta 12 000 so'm bo'lganda barcha o'rinlar sotiladi. Narx har 1000 so'm oshsa, 25 o'rin bo'sh qoladi. Tushum eng katta bo'ladigan chipta narxi qancha?",
+      "v": [
+        "14 000 so'm",
+        "15 000 so'm",
+        "16 000 so'm",
+        "18 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "T(k) = (12 000 + 1000k)(500 − 25k) = 6 000 000 + 200 000k − 25 000k². Hosila T′(k) = 200 000 − 50 000k = 0 bo'lganda k = 4. Chipta narxi 12 000 + 4000 = 16 000 so'm, sotilgan o'rin 400 ta, tushum 6 400 000 so'm. Javob: 16 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-oshirish-max-tushum",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#4a3274fa"
+    },
+    {
+      "q": "Mahsulot narxi talabga bog'liq ravishda p = 90 − 3x ming so'mga teng, bunda x — sotilgan dona soni. Tushum eng katta bo'lishi uchun nechta dona sotilishi kerak?",
+      "v": [
+        "15 dona",
+        "10 dona",
+        "30 dona",
+        "45 dona"
+      ],
+      "t": 0,
+      "izoh": "Tushum T(x) = x·p = x(90 − 3x) = 90x − 3x². Hosila T′(x) = 90 − 6x nolga aylanganda x = 15. Bunda narx 90 − 45 = 45 ming so'm, tushum 675 ming so'm. 30 — tushum nolga aylanadigan chegara, 45 — narx qiymati. Javob: 15 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "talab-funksiyasi-max-tushum",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#3fb9fae2"
+    },
+    {
+      "q": "Sexda x dona mahsulot ishlab chiqarilganda daromad 60x, xarajat esa x² + 12x + 400 ming so'mga teng. Eng katta foyda qancha bo'ladi?",
+      "v": [
+        "24 ming so'm",
+        "140 ming so'm",
+        "176 ming so'm",
+        "576 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Foyda F(x) = 60x − (x² + 12x + 400) = −x² + 48x − 400. F′(x) = −2x + 48 = 0 dan x = 24 dona. F(24) = −576 + 1152 − 400 = 176 ming so'm. 24 — mahsulot sonini javob deb yozish, 576 — doimiy 400 ni ayirishni unutish xatosi. Javob: 176 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foyda-funksiyasi-max",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#20983b1c"
+    },
+    {
+      "q": "Ustaxonada bir kunda x ta buyum yasalganda foyda F(x) = 108x − x³ ming so'mga teng bo'ladi. Foyda eng katta bo'lishi uchun nechta buyum yasash kerak?",
+      "v": [
+        "6 ta",
+        "9 ta",
+        "12 ta",
+        "36 ta"
+      ],
+      "t": 0,
+      "izoh": "F′(x) = 108 − 3x² ni nolga tenglaymiz: 3x² = 108, x² = 36, musbat ildiz x = 6. Hosila x < 6 da musbat, x > 6 da manfiy, demak bu maksimum nuqtasi. Foyda F(6) = 648 − 216 = 432 ming so'm. 36 — kvadrat ildiz olishni unutish xatosi. Javob: 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foyda-funksiyasi-max",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#4fbf9724"
+    },
+    {
+      "q": "Korxona x ming dona mahsulot sotganda daromadi 40x − x², xarajati esa 10x + 75 mln so'mga teng. Eng katta oylik foydani toping.",
+      "v": [
+        "125 mln so'm",
+        "225 mln so'm",
+        "375 mln so'm",
+        "150 mln so'm"
+      ],
+      "t": 3,
+      "izoh": "Foyda F(x) = (40x − x²) − (10x + 75) = −x² + 30x − 75. F′(x) = −2x + 30 = 0 dan x = 15 ming dona. F(15) = −225 + 450 − 75 = 150 mln so'm. 225 — doimiy xarajat 75 ni tashlab ketish, 375 — x² hadini yo'qotish xatosi. Javob: 150 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "foyda-funksiyasi-max",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#9808d4ec"
+    },
+    {
+      "q": "Ishlab chiqarish hajmi o'zgarganda foyda eng katta qiymatga erishishi uchun daromad va xarajat funksiyalari qanday shartni qanoatlantiradi?",
+      "v": [
+        "Daromadning hosilasi xarajatning hosilasiga teng bo'ladi",
+        "Daromad xarajatga teng bo'ladi",
+        "Xarajatning hosilasi nolga teng bo'ladi",
+        "Daromadning hosilasi nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Foyda F(x) = D(x) − C(x) bo'lgani uchun F′(x) = D′(x) − C′(x). Ekstremumda F′(x) = 0, demak D′(x) = C′(x), ya'ni chegaraviy daromad chegaraviy xarajatga teng. Daromadning o'zi xarajatga teng bo'lganda foyda nolga teng bo'ladi, bu maksimum emas. Javob: D′(x) = C′(x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "optimal-shart-nazariy",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#863f1d12"
+    },
+    {
+      "q": "Hajmi 32 dm³ bo'lgan kvadrat asosli qopqoqsiz idish eng kam material sarflab yasaladi. Idish sirtining eng kichik yuzasi qancha?",
+      "v": [
+        "32 dm²",
+        "64 dm²",
+        "96 dm²",
+        "48 dm²"
+      ],
+      "t": 3,
+      "izoh": "Asos tomoni a, balandligi h bo'lsa a²h = 32 va h = 32/a². Sirt S = a² + 4ah = a² + 128/a. S′(a) = 2a − 128/a² = 0 dan a³ = 64, a = 4 dm, h = 2 dm. S = 16 + 4·4·2 = 48 dm². Javob: 48 dm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-asosli-idish-min-sirt",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#732791ab"
+    },
+    {
+      "q": "Hajmi 343 sm³ bo'lgan kvadrat asosli yopiq quti eng kam karton sarflab yasalmoqchi. Uning asos tomoni qanday bo'lishi kerak?",
+      "v": [
+        "6 sm",
+        "10 sm",
+        "14 sm",
+        "7 sm"
+      ],
+      "t": 3,
+      "izoh": "h = 343/a² bo'lgani uchun to'la sirt S = 2a² + 4ah = 2a² + 1372/a. S′(a) = 4a − 1372/a² = 0 dan a³ = 343, ya'ni a = 7 sm. Bunda h = 343 : 49 = 7 sm, quti kub shaklida chiqadi. Yopiq qutida eng tejamli shakl — kub. Javob: 7 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-asosli-idish-min-sirt",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#f8b0f33e"
+    },
+    {
+      "q": "Hajmi 27 dm³ bo'lgan kvadrat asosli qopqoqsiz quti yasaladi. Asos materiali 1 dm² uchun 4000 so'm, yon devor materiali 2000 so'm turadi. Eng kam xarajat qancha?",
+      "v": [
+        "54 000 so'm",
+        "118 000 so'm",
+        "124 000 so'm",
+        "108 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "h = 27/a² bo'lsin. Xarajat X(a) = 4000a² + 2000·4ah = 4000a² + 216 000/a. X′(a) = 8000a − 216 000/a² = 0 dan a³ = 27, a = 3 dm va h = 3 dm. X = 4000·9 + 2000·4·3·3 = 36 000 + 72 000 = 108 000 so'm. 54 000 — to'rtta yon devor o'rniga bittasini hisoblash xatosi. Javob: 108 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "har-xil-narxli-yoq-min-xarajat",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#7fbc8d1e"
+    },
+    {
+      "q": "Uzunligi 60 sm bo'lgan sim ikki bo'lakka bo'linib, har biridan kvadrat yasaladi. Ikki kvadrat yuzalari yig'indisi eng kichik bo'lganda u nechaga teng?",
+      "v": [
+        "56,25 sm²",
+        "225 sm²",
+        "450 sm²",
+        "112,5 sm²"
+      ],
+      "t": 3,
+      "izoh": "Bo'laklar x va 60 − x bo'lsa, kvadrat tomonlari x/4 va (60 − x)/4. Yuzalar yig'indisi S(x) = (x² + (60 − x)²)/16. S′(x) = (4x − 120)/16 = 0 dan x = 30, ya'ni sim teng ikkiga bo'linadi. Tomonlar 7,5 sm, S = 2·56,25 = 112,5 sm². Javob: 112,5 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simni-ikkiga-bolish-min-yuza",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#ca4eedb0"
+    },
+    {
+      "q": "Avtobusning 1 km yo'lga sarflaydigan xarajati tezlikka bog'liq: X(v) = v/20 + 45/v ming so'm. Xarajat eng kam bo'ladigan tezlikni toping.",
+      "v": [
+        "20 km/soat",
+        "45 km/soat",
+        "60 km/soat",
+        "30 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Hosilani olamiz: X′(v) = 1/20 − 45/v². Uni nolga tenglaymiz: v² = 45·20 = 900, demak v = 30 km/soat. v < 30 da hosila manfiy, v > 30 da musbat, ya'ni bu minimum nuqtasi. Javob: 30 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlik-min-xarajat",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#6fcd4d06"
+    },
+    {
+      "q": "Kema soatiga (0,02v² + 32) ming so'm sarflaydi va 200 km masofani bosib o'tadi. Butun yo'lga ketadigan xarajat eng kam bo'ladigan tezlik qancha?",
+      "v": [
+        "25 km/soat",
+        "32 km/soat",
+        "40 km/soat",
+        "80 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Yo'lda ketgan vaqt 200/v soat, shuning uchun X(v) = (0,02v² + 32)·200/v = 4v + 6400/v. X′(v) = 4 − 6400/v² = 0 dan v² = 1600 va v = 40 km/soat. Bunda xarajat 160 + 160 = 320 ming so'm. Javob: 40 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlik-min-xarajat",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#0f49eb60"
+    },
+    {
+      "q": "Poyezd 360 km yo'lni bosadi va soatlik xarajati (0,5v² + 200) ming so'mga teng. Butun safarning eng kam xarajati qancha bo'ladi?",
+      "v": [
+        "3600 ming so'm",
+        "9000 ming so'm",
+        "14 400 ming so'm",
+        "7200 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Safar vaqti 360/v soat, umumiy xarajat X(v) = (0,5v² + 200)·360/v = 180v + 72 000/v. X′(v) = 180 − 72 000/v² = 0 dan v² = 400, v = 20 km/soat. X = 180·20 + 72 000 : 20 = 3600 + 3600 = 7200 ming so'm. 3600 — ikki qo'shiluvchidan bittasini yozish xatosi. Javob: 7200 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlik-min-xarajat",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#7781bcf9"
+    },
+    {
+      "q": "Umumiy xarajat X(v) = av + b/v ko'rinishida berilgan bo'lsa, u eng kichik qiymatga erishgan tezlikda qanday tenglik o'rinli bo'ladi?",
+      "v": [
+        "av = b/v, ya'ni ikki qo'shiluvchi teng bo'ladi",
+        "av = b, ya'ni birinchi had doimiyga teng bo'ladi",
+        "v = a·b, ya'ni tezlik ko'paytmaga teng bo'ladi",
+        "av + b/v = 0, ya'ni xarajat nolga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "X′(v) = a − b/v² ni nolga tenglasak, v² = b/a va v = √(b/a). Shu tezlikda birinchi qo'shiluvchi av = a√(b/a) = √(ab), ikkinchisi b/v = b√(a/b) = √(ab). Demak ikkala qo'shiluvchi teng bo'ladi va eng kam xarajat 2√(ab) ga teng. Javob: av = b/v.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "optimal-shart-nazariy",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#74a19a7b"
+    },
+    {
+      "q": "y = x² parabolaning A(3; 0) nuqtaga eng yaqin joylashgan nuqtasi qaysi koordinatalarga ega?",
+      "v": [
+        "(1; 1)",
+        "(2; 4)",
+        "(3; 9)",
+        "(0; 0)"
+      ],
+      "t": 0,
+      "izoh": "Parabolaning nuqtasi (x; x²) bo'lsin. Masofa kvadrati d²(x) = (x − 3)² + x⁴. Hosila 2(x − 3) + 4x³ = 0, ya'ni 2x³ + x − 3 = 0 va bu tenglamaning ildizi x = 1. Demak eng yaqin nuqta (1; 1), masofa √5. Javob: (1; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "egrida-eng-yaqin-nuqta",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#6ac6bb3a"
+    },
+    {
+      "q": "Ikki kema bir vaqtda yo'lga chiqdi: birinchisi ikkinchisidan 100 km g'arbda bo'lib sharqqa 6 km/soat, ikkinchisi shimolga 8 km/soat tezlik bilan suzadi. Ular orasidagi eng kichik masofa qancha bo'ladi?",
+      "v": [
+        "48 km",
+        "64 km",
+        "100 km",
+        "80 km"
+      ],
+      "t": 3,
+      "izoh": "t soatdan keyin birinchi kema kesishish nuqtasidan 100 − 6t km, ikkinchisi 8t km uzoqda bo'ladi. d²(t) = (100 − 6t)² + 64t² = 100t² − 1200t + 10 000. Hosila 200t − 1200 = 0 dan t = 6 soat. Bunda d² = 64² + 48² = 6400, d = 80 km. Javob: 80 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harakatdagi-jismlar-min-masofa",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#33a754d3"
+    },
+    {
+      "q": "y = 2x to'g'ri chiziqda A(5; 0) nuqtaga eng yaqin nuqtagacha bo'lgan masofani toping.",
+      "v": [
+        "2√5",
+        "√5",
+        "5",
+        "√29"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri chiziq nuqtasi (x; 2x) bo'ladi, shuning uchun d²(x) = (x − 5)² + 4x² = 5x² − 10x + 25. Hosila 10x − 10 = 0 dan x = 1, ya'ni nuqta (1; 2). Masofa √(16 + 4) = √20 = 2√5. 5 — chiziqdagi (2; 4) nuqtani eng yaqin deb olish xatosi, √29 — masofani koordinatalar ayirmasiz √(5² + 2²) deb hisoblash natijasi. Javob: 2√5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-chiziqda-eng-yaqin-nuqta",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#e14d4706"
+    },
+    {
+      "q": "Qutqaruvchi tekis qirg'oqning A nuqtasida turibdi, cho'kayotgan odam esa qirg'oqdan 4 km narida va A dan 10 km berida. U qirg'oq bo'ylab 10 km/soat, suvda 6 km/soat harakatlanadi. Qirg'oq bo'ylab necha km yugursin?",
+      "v": [
+        "3 km",
+        "5 km",
+        "7 km",
+        "10 km"
+      ],
+      "t": 2,
+      "izoh": "Suvga kirish nuqtasi cho'kayotgan odamning qirg'oqdagi proyeksiyasidan x km narida bo'lsin. T(x) = (10 − x)/10 + √(x² + 16)/6. Hosila −1/10 + x/(6√(x² + 16)) = 0 dan 10x = 6√(x² + 16), 64x² = 576, x = 3. Demak qirg'oq bo'ylab 10 − 3 = 7 km yuguradi. Javob: 7 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "min-vaqt-ikki-tezlik",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#8fc78d72"
+    },
+    {
+      "q": "Qirg'oqdan 4 km uzoqlikdagi orolga kabel tortiladi. Suv ostida 1 km 5 mln so'm, quruqlikda 3 mln so'm turadi. Elektr stansiyasi orol proyeksiyasidan 12 km narida bo'lsa, eng kam xarajat qancha?",
+      "v": [
+        "52 mln so'm",
+        "56 mln so'm",
+        "60 mln so'm",
+        "63 mln so'm"
+      ],
+      "t": 0,
+      "izoh": "Suvga kirish nuqtasi orol proyeksiyasidan x km narida bo'lsin: X(x) = 5√(x² + 16) + 3(12 − x). Hosila 5x/√(x² + 16) − 3 = 0 dan 25x² = 9x² + 144, x = 3. X = 5·5 + 3·9 = 25 + 27 = 52 mln so'm. 56 — to'g'ri proyeksiyagacha quruqlikdan borish, 63 — hammasini suv ostidan tortish natijasi. Javob: 52 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "min-xarajat-ikki-narx",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#5fdb76f9"
+    },
+    {
+      "q": "Qishloq to'g'ri yo'ldan 6 km uzoqda. Piyoda dalada 4 km/soat, yo'lda 5 km/soat yuradi va yo'ldagi 20 km narida joylashgan bekatga bormoqchi. U dala bo'ylab necha km yuradi?",
+      "v": [
+        "6 km",
+        "8 km",
+        "10 km",
+        "12 km"
+      ],
+      "t": 2,
+      "izoh": "Yo'lga chiqish nuqtasi qishloq proyeksiyasidan x km narida bo'lsin: T(x) = √(x² + 36)/4 + (20 − x)/5. Hosila x/(4√(x² + 36)) − 1/5 = 0 dan 5x = 4√(x² + 36), 9x² = 576, x = 8. Dalada bosilgan yo'l √(64 + 36) = 10 km. 8 — yo'l bo'ylab siljish, 6 — eng qisqa perpendikulyar. Javob: 10 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "min-vaqt-ikki-tezlik",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#71ad3069"
+    },
+    {
+      "q": "Eni 36 sm bo'lgan tunuka tasmaning ikki cheti tik bukilib, to'rtburchak kesimli novcha yasaladi. Kesim yuzasi eng katta bo'lganda u nechaga teng?",
+      "v": [
+        "162 sm²",
+        "144 sm²",
+        "81 sm²",
+        "324 sm²"
+      ],
+      "t": 0,
+      "izoh": "Bukilgan chetlar balandligi x bo'lsa, novcha tubi 36 − 2x bo'ladi. Kesim yuzasi S(x) = x(36 − 2x) = 36x − 2x². S′(x) = 36 − 4x = 0 dan x = 9 sm, tub 18 sm. S = 9·18 = 162 sm². 144 — chetni 12 sm olish, ya'ni tasmani uch teng bo'lakka bo'lish natijasi. Javob: 162 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "novcha-max-kesim",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#73f3e97a"
+    },
+    {
+      "q": "Eni 24 sm bo'lgan uzun metall tasmadan chetlarini tik bukib ariq yasaladi. Kesim yuzasi eng katta bo'lishi uchun chetlar necha sm ga bukilsin?",
+      "v": [
+        "4 sm",
+        "6 sm",
+        "8 sm",
+        "12 sm"
+      ],
+      "t": 1,
+      "izoh": "S(x) = x(24 − 2x) = 24x − 2x² deb yozamiz. Hosila S′(x) = 24 − 4x nolga aylanganda x = 6 sm. Bunda tub 24 − 12 = 12 sm, kesim yuzasi 72 sm². 12 — tasmani teng ikkiga bo'lish, 8 — uchga bo'lish xatosi. Javob: 6 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "novcha-max-kesim",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#491d89db"
+    },
+    {
+      "q": "Katetlari 12 sm va 16 sm bo'lgan to'g'ri burchakli uchburchakka tomonlari katetlar bo'ylab yotgan to'rtburchak ichki chizilgan. Uning eng katta yuzasi qancha?",
+      "v": [
+        "48 sm²",
+        "24 sm²",
+        "64 sm²",
+        "96 sm²"
+      ],
+      "t": 0,
+      "izoh": "To'rtburchakning bir tomoni x bo'lsa, o'xshashlikdan ikkinchi tomoni 12(1 − x/16) bo'ladi. S(x) = 12x − 0,75x², S′(x) = 12 − 1,5x = 0 dan x = 8 va ikkinchi tomon 6. S = 8·6 = 48 sm². 96 — uchburchakning o'z yuzasi. Javob: 48 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchakka-ichki-tortburchak",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#93ec7874"
+    },
+    {
+      "q": "Asosi 20 sm, balandligi 12 sm bo'lgan uchburchakka bir tomoni asosda yotgan to'rtburchak ichki chizilgan. Yuzasi eng katta to'rtburchakning o'lchamlari qanday?",
+      "v": [
+        "10 sm va 6 sm",
+        "20 sm va 6 sm",
+        "10 sm va 12 sm",
+        "5 sm va 3 sm"
+      ],
+      "t": 0,
+      "izoh": "To'rtburchak balandligi y bo'lsa, o'xshashlikdan uning asosdagi tomoni 20(1 − y/12). S(y) = 20y − (5/3)y², S′(y) = 20 − (10/3)y = 0 dan y = 6 sm va tomon 10 sm. Yuza 60 sm², bu uchburchak yuzasining yarmi. Javob: 10 sm va 6 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchakka-ichki-tortburchak",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#d68b3c5e"
+    },
+    {
+      "q": "Katetlari 9 sm va 15 sm bo'lgan to'g'ri burchakli uchburchakka ichki chizilgan eng katta yuzali to'rtburchakning perimetri qanchaga teng?",
+      "v": [
+        "12 sm",
+        "24 sm",
+        "33,75 sm",
+        "48 sm"
+      ],
+      "t": 1,
+      "izoh": "Eng katta yuzali to'rtburchakning tomonlari katetlarning yarmiga teng bo'ladi: 4,5 sm va 7,5 sm. Buni S(x) = 9x(1 − x/15) funksiyaning hosilasi 9 − 1,2x = 0 dan x = 7,5 deb topamiz. Perimetr P = 2(4,5 + 7,5) = 24 sm. 33,75 — yuza qiymati. Javob: 24 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchakka-ichki-tortburchak",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#04923116"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan yarim doiraga asosi diametrda yotgan to'rtburchak ichki chizilgan. Uning eng katta yuzasi nechaga teng?",
+      "v": [
+        "50 sm²",
+        "100 sm²",
+        "150 sm²",
+        "200 sm²"
+      ],
+      "t": 1,
+      "izoh": "To'rtburchak asosining yarmi x bo'lsa, balandlik √(100 − x²) va S(x) = 2x√(100 − x²). S² = 4x²(100 − x²) = 400x² − 4x⁴ ni maksimallashtiramiz: hosilasi 800x − 16x³ = 16x(50 − x²) nolga aylanganda x² = 50, ya'ni x = 5√2. Balandlik √(100 − 50) = 5√2, demak S = 2·5√2·5√2 = 100 sm². 200 — diametrni radiusga ko'paytirish xatosi. Javob: 100 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yarim-doiraga-ichki-tortburchak",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#4b7a658b"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan yarim doiraga ichki chizilgan eng katta yuzali to'rtburchakning balandligi qanday bo'ladi?",
+      "v": [
+        "3√2 sm",
+        "6√2 sm",
+        "3 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Asos yarmi x bo'lsa, balandlik h = √(36 − x²) va yuza S = 2x√(36 − x²). S² = 4x²(36 − x²) = 144x² − 4x⁴, uning hosilasi 288x − 16x³ = 16x(18 − x²) nolga aylanganda x² = 18, ya'ni x = 3√2. Balandlik h = √(36 − 18) = √18 = 3√2 sm. Javob: 3√2 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yarim-doiraga-ichki-tortburchak",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#0e78aa9b"
+    },
+    {
+      "q": "Yasovchisining uzunligi 6√3 sm bo'lgan konuslar orasida hajmi eng katta bo'lganining hajmini toping.",
+      "v": [
+        "144π sm³",
+        "72π sm³",
+        "108π sm³",
+        "216π sm³"
+      ],
+      "t": 0,
+      "izoh": "Yasovchi l bo'lsa r² = l² − h² = 108 − h². Hajm V = (1/3)πr²h = (π/3)(108h − h³). Hosila (π/3)(108 − 3h²) = 0 dan h = 6 sm, r² = 72. V = (1/3)π·72·6 = 144π sm³. Javob: 144π sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konus-max-hajm",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#93dfa3bc"
+    },
+    {
+      "q": "Yasovchisi 9 sm bo'lgan konusning hajmi eng katta bo'lganda uning balandligi qanchaga teng bo'ladi?",
+      "v": [
+        "3√3 sm",
+        "3√2 sm",
+        "4,5 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "V(h) = (π/3)(81h − h³) bo'lgani uchun V′(h) = (π/3)(81 − 3h²). Uni nolga tenglaymiz: h² = 27, h = 3√3 sm. Umumiy qoida: hajm eng katta bo'lganda balandlik yasovchining √3 ga bo'lgan qismiga teng. 4,5 — yasovchining yarmi. Javob: 3√3 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konus-max-hajm",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#cee4f282"
+    },
+    {
+      "q": "Asos radiusi 12 sm, balandligi 9 sm bo'lgan konusga ichki chizilgan silindrning eng katta hajmi qancha?",
+      "v": [
+        "144π sm³",
+        "192π sm³",
+        "288π sm³",
+        "432π sm³"
+      ],
+      "t": 1,
+      "izoh": "Silindr radiusi r bo'lsa, o'xshashlikdan balandligi h = 9(1 − r/12). Hajm V = πr²·9(1 − r/12) = 9πr² − 0,75πr³. V′ = 18πr − 2,25πr² = 0 dan r = 8, h = 3. V = π·64·3 = 192π sm³. 432π — konusning o'z hajmi. Javob: 192π sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konusga-ichki-silindr",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#5f237759"
+    },
+    {
+      "q": "Do'kon yiliga 3600 dona mahsulot sotadi. Har bir buyurtma uchun 50 000 so'm to'lanadi, bitta donani yil davomida saqlash 4000 so'm turadi. Umumiy xarajat eng kam bo'ladigan partiya hajmi qancha?",
+      "v": [
+        "150 dona",
+        "300 dona",
+        "600 dona",
+        "900 dona"
+      ],
+      "t": 1,
+      "izoh": "Bir partiyada x dona bo'lsa, yiliga 3600/x buyurtma beriladi va o'rtacha x/2 dona saqlanadi. X(x) = 180 000 000/x + 2000x. X′(x) = −180 000 000/x² + 2000 = 0 dan x² = 90 000, x = 300 dona. Javob: 300 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "optimal-partiya-hajmi",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#dfd904f7"
+    },
+    {
+      "q": "Omborga yiliga 2000 dona tovar keladi, bitta buyurtma 20 000 so'm, bitta donani saqlash yiliga 2000 so'm turadi. Eng tejamli partiya nechta donadan iborat bo'ladi?",
+      "v": [
+        "100 dona",
+        "160 dona",
+        "200 dona",
+        "400 dona"
+      ],
+      "t": 2,
+      "izoh": "Xarajat X(x) = (2000/x)·20 000 + (x/2)·2000 = 40 000 000/x + 1000x. Hosila X′(x) = −40 000 000/x² + 1000 nolga aylanganda x² = 40 000, ya'ni x = 200 dona. Bunda buyurtma xarajati ham, saqlash xarajati ham 200 000 so'mdan bo'ladi. Javob: 200 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "optimal-partiya-hajmi",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#26159b03"
+    },
+    {
+      "q": "Hajmi 500 m³ bo'lgan kvadrat asosli ochiq basseyn eng kam beton sarflab quriladi. Uning chuqurligi qanday bo'lishi kerak?",
+      "v": [
+        "5 m",
+        "2,5 m",
+        "10 m",
+        "20 m"
+      ],
+      "t": 0,
+      "izoh": "Asos tomoni a bo'lsa, chuqurlik h = 500/a² va sirt S = a² + 4ah = a² + 2000/a. S′(a) = 2a − 2000/a² = 0 dan a³ = 1000, a = 10 m. Chuqurlik h = 500 : 100 = 5 m, ya'ni asos tomonining yarmi. 10 — asos tomonini javob deb yozish xatosi. Javob: 5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-asosli-idish-min-sirt",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#b5c8d65b"
+    },
+    {
+      "q": "Perimetri 36 sm bo'lgan teng yonli uchburchaklar orasida yuzasi eng katta bo'lganining yuzasi nechaga teng?",
+      "v": [
+        "36√3 sm²",
+        "54 sm²",
+        "64√3 sm²",
+        "72 sm²"
+      ],
+      "t": 0,
+      "izoh": "Asos a, yon tomon b bo'lsa a + 2b = 36. Yuza S = (a/4)√(4b² − a²) funksiyani tekshirsak, ekstremum a = b = 12 da, ya'ni teng tomonli uchburchakda erishiladi. S = (√3/4)·12² = 36√3 sm². 72 — asos va balandlikni 12 dan deb olish xatosi. Javob: 36√3 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perimetr-berilgan-max-uchburchak",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#e458c369"
+    },
+    {
+      "q": "Tik yuqoriga otilgan tosh h(t) = 30t − 5t² qonun bo'yicha ko'tariladi. Toshning erishadigan eng katta balandligi qancha?",
+      "v": [
+        "25 m",
+        "30 m",
+        "45 m",
+        "90 m"
+      ],
+      "t": 2,
+      "izoh": "Balandlik hosilasi h′(t) = 30 − 10t tezlikni beradi. Eng yuqori nuqtada tezlik nolga teng: 30 − 10t = 0, ya'ni t = 3 s. h(3) = 90 − 45 = 45 m. 90 — 5t² hadini ayirishni unutish, 30 — boshlang'ich tezlikni javob deb yozish xatosi. Javob: 45 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tik-otilgan-jism-max-balandlik",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#8480a22c"
+    },
+    {
+      "q": "Koptok h(t) = 40t − 5t² qonun bilan yuqoriga uchdi. U eng yuqori nuqtaga necha soniyadan keyin yetadi?",
+      "v": [
+        "4 s",
+        "5 s",
+        "8 s",
+        "40 s"
+      ],
+      "t": 0,
+      "izoh": "h′(t) = 40 − 10t bo'ladi va eng yuqori nuqtada hosila nolga teng. 40 − 10t = 0 tenglamadan t = 4 s. 8 — koptokning yerga tushish vaqti, ya'ni h(t) = 0 ning ildizi. Eng katta balandlik esa h(4) = 160 − 80 = 80 m. Javob: 4 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tik-otilgan-jism-max-balandlik",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#5a3079eb"
+    },
+    {
+      "q": "Darvozabon to'pni qo'lidan yuqoriga otganda uning balandligi h(t) = 2 + 10t − 5t² metrga teng bo'ladi. To'p eng ko'pi bilan qanday balandlikka ko'tariladi?",
+      "v": [
+        "12 m",
+        "7 m",
+        "2 m",
+        "10 m"
+      ],
+      "t": 1,
+      "izoh": "h′(t) = 10 − 10t ni nolga tenglaymiz: t = 1 s. Bu paytda h(1) = 2 + 10 − 5 = 7 m. 12 — 5t² hadini tashlab ketish, 2 — boshlang'ich balandlikni, 10 — boshlang'ich tezlikni javob deb yozish xatosi. Javob: 7 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tik-otilgan-jism-max-balandlik",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#0516d749"
+    },
+    {
+      "q": "Otilgan jismning balandligi h(t) = 1,5 + 20t − 5t² formula bilan beriladi. Uning eng katta balandligi nechaga teng?",
+      "v": [
+        "18,5 m",
+        "20 m",
+        "21,5 m",
+        "41,5 m"
+      ],
+      "t": 2,
+      "izoh": "h′(t) = 20 − 10t = 0 dan t = 2 s. Balandlik h(2) = 1,5 + 40 − 20 = 21,5 m. 18,5 — boshlang'ich balandlikni qo'shish o'rniga ayirish, 41,5 — 5t² hadini hisobga olmaslik xatosi. Javob: 21,5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tik-otilgan-jism-max-balandlik",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#977d98c2"
+    },
+    {
+      "q": "Sexning x dona mahsulot ishlab chiqarishga sarflaydigan xarajati X(x) = x² + 8x + 400 ming so'm. Bitta mahsulotga to'g'ri keladigan xarajat eng kam bo'lishi uchun nechta dona ishlab chiqarilsin?",
+      "v": [
+        "10 dona",
+        "20 dona",
+        "40 dona",
+        "400 dona"
+      ],
+      "t": 1,
+      "izoh": "O'rtacha xarajat o'(x) = X(x)/x = x + 8 + 400/x. Hosila o′(x) = 1 − 400/x² nolga aylanganda x² = 400, ya'ni x = 20 dona. Bunda bitta mahsulot 20 + 8 + 20 = 48 ming so'mga tushadi. Javob: 20 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-xarajat-min",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#621602f4"
+    },
+    {
+      "q": "Korxona xarajati X(x) = 2x² + 5x + 288 ming so'mga teng. Bitta mahsulotning eng arzon tannarxi qancha bo'ladi?",
+      "v": [
+        "29 ming so'm",
+        "48 ming so'm",
+        "53 ming so'm",
+        "65 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "O'rtacha xarajat o'(x) = 2x + 5 + 288/x. o′(x) = 2 − 288/x² = 0 dan x² = 144, x = 12 dona. Tannarx o'(12) = 24 + 5 + 24 = 53 ming so'm. 29 — 288/x qo'shiluvchisini tashlab ketish xatosi. Javob: 53 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-xarajat-min",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#16bc90fc"
+    },
+    {
+      "q": "Bitta mahsulotga to'g'ri keladigan o'rtacha xarajat eng kichik bo'lgan nuqtada qanday tenglik bajariladi?",
+      "v": [
+        "O'rtacha xarajat chegaraviy xarajatga teng bo'ladi",
+        "O'rtacha xarajat nolga teng bo'ladi",
+        "Chegaraviy xarajat nolga teng bo'ladi",
+        "Umumiy xarajat eng kichik bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "o'(x) = X(x)/x funksiyaning hosilasi (X′(x)·x − X(x))/x². Uni nolga tenglasak X′(x)·x = X(x), ya'ni X′(x) = X(x)/x. Chap tomon — chegaraviy xarajat, o'ng tomon — o'rtacha xarajat, demak ular tenglashadi. Javob: o'rtacha xarajat chegaraviy xarajatga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "optimal-shart-nazariy",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#5d497af9"
+    },
+    {
+      "q": "Perimetri 40 m bo'lgan to'rtburchakning bir tomoni x m. Uning yuzasini qaysi funksiya to'g'ri ifodalaydi?",
+      "v": [
+        "S(x) = x(20 − x)",
+        "S(x) = x(40 − x)",
+        "S(x) = x(20 + x)",
+        "S(x) = 40x − x"
+      ],
+      "t": 0,
+      "izoh": "Perimetr 40 m bo'lsa, qo'shni ikki tomon yig'indisi 40 : 2 = 20 m. Demak ikkinchi tomon 20 − x va yuza S(x) = x(20 − x). x(40 − x) — perimetrni ikkiga bo'lishni unutgan xato. Bu funksiyaning maksimumi x = 10 da bo'ladi. Javob: S(x) = x(20 − x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "model-funksiyasini-tuzish",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#d9f17557"
+    },
+    {
+      "q": "Bir tomoni devordan iborat to'rtburchak maydon 100 m to'siq bilan o'raladi. Devorga tik tomon x bo'lsa, yuza funksiyasi qanday yoziladi?",
+      "v": [
+        "S(x) = x(100 − 2x)",
+        "S(x) = x(100 − x)",
+        "S(x) = 2x(100 − x)",
+        "S(x) = x(50 − 2x)"
+      ],
+      "t": 0,
+      "izoh": "Devorga tik ikkita tomon x dan bo'lgani uchun ularga 2x metr to'siq ketadi. Devorga parallel tomonga qolgan 100 − 2x metr sarflanadi. Demak S(x) = x(100 − 2x). Bu funksiya x = 25 da eng katta qiymat oladi. Javob: S(x) = x(100 − 2x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "model-funksiyasini-tuzish",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#562ede9e"
+    },
+    {
+      "q": "Hajmi 64 sm³ bo'lgan kvadrat asosli qopqoqsiz idishning sirt yuzasi asos tomoni a orqali qanday ifodalanadi?",
+      "v": [
+        "S(a) = a² + 256/a",
+        "S(a) = a² + 64/a",
+        "S(a) = 2a² + 256/a",
+        "S(a) = 4a² + 64/a"
+      ],
+      "t": 0,
+      "izoh": "Balandlik h = 64/a² bo'ladi. Qopqoq yo'q, shuning uchun sirt asos a² va to'rtta yon devor 4ah dan iborat: S = a² + 4a·64/a² = a² + 256/a. 2a² + 256/a — yopiq idishga tegishli formula. Javob: S(a) = a² + 256/a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-funksiyasini-tuzish",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#edc05a50"
+    },
+    {
+      "q": "Tomoni 30 sm bo'lgan kvadrat kartonning burchaklaridan tomoni x bo'lgan kvadratchalar kesib olinadi. Yasalgan qopqoqsiz qutining hajmi qanday funksiya bilan beriladi?",
+      "v": [
+        "V(x) = x(30 − 2x)²",
+        "V(x) = x(30 − x)²",
+        "V(x) = x²(30 − 2x)",
+        "V(x) = 2x(30 − x)²"
+      ],
+      "t": 0,
+      "izoh": "Har tomondan x dan ikki marta kesiladi, shuning uchun asos tomoni 30 − 2x bo'ladi. Balandlik esa kesilgan kvadratcha tomoni x ga teng. Demak V(x) = x(30 − 2x)². x²(30 − 2x) — asos va balandlikni almashtirib yuborish xatosi. Javob: V(x) = x(30 − 2x)².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "model-funksiyasini-tuzish",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#1529b13b"
+    },
+    {
+      "q": "Bog'da bir gektarga 40 tup ko'chat ekilsa, har biridan 500 kg hosil olinadi. Har qo'shimcha tup har bir tupning hosilini 5 kg kamaytiradi. Eng ko'p hosil uchun nechta tup ekilsin?",
+      "v": [
+        "40 tup",
+        "55 tup",
+        "70 tup",
+        "100 tup"
+      ],
+      "t": 2,
+      "izoh": "Qo'shimcha n tup ekilsa, hosil H(n) = (40 + n)(500 − 5n) = 20 000 + 300n − 5n². H′(n) = 300 − 10n = 0 dan n = 30, ya'ni jami 70 tup. Bunda har tupdan 350 kg, umumiy hosil 24 500 kg bo'ladi. 100 — qo'shimcha tuplar sonini jami son deb chalkashtirish xatosi, hosil aslida 140 tupda nolga aylanadi. Javob: 70 tup.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekish-zichligi-max-hosil",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#bfc14e4d"
+    },
+    {
+      "q": "Bog'dagi 30 ta olma daraxtining har biri 400 tadan meva beradi. Har qo'shimcha daraxt har bir daraxtning hosilini 10 taga kamaytiradi. Eng ko'p meva soni qancha bo'ladi?",
+      "v": [
+        "12 000 ta",
+        "12 250 ta",
+        "12 500 ta",
+        "14 000 ta"
+      ],
+      "t": 1,
+      "izoh": "n ta daraxt qo'shilsa H(n) = (30 + n)(400 − 10n) = 12 000 + 100n − 10n². H′(n) = 100 − 20n = 0 dan n = 5, jami 35 daraxt. Har biri 400 − 50 = 350 tadan beradi, umumiy hosil 35·350 = 12 250 ta. 12 000 — hozirgi hosil, ya'ni o'zgarishsiz holat. Javob: 12 250 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekish-zichligi-max-hosil",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#3a0657f6"
+    },
+    {
+      "q": "Hovuzga n ta baliq qo'yilganda ularning har biri (5 − 0,01n) kg ga yetadi. Umumiy vazn eng katta bo'lishi uchun nechta baliq qo'yish kerak?",
+      "v": [
+        "200 ta",
+        "250 ta",
+        "300 ta",
+        "500 ta"
+      ],
+      "t": 1,
+      "izoh": "Umumiy vazn V(n) = n(5 − 0,01n) = 5n − 0,01n². Hosila V′(n) = 5 − 0,02n nolga aylanganda n = 250 ta. Bunda har bir baliq 5 − 2,5 = 2,5 kg, umumiy vazn 625 kg bo'ladi. 500 — har bir baliq vazni nolga aylanadigan chegara. Javob: 250 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekish-zichligi-max-hosil",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#a42f5fa6"
+    },
+    {
+      "q": "Brigadada x ta ishchi bo'lganda kunlik mahsulot M(x) = 48x − 3x² donaga teng bo'ladi. Ishlab chiqarish eng yuqori bo'lishi uchun nechta ishchi kerak?",
+      "v": [
+        "6 ta",
+        "8 ta",
+        "16 ta",
+        "24 ta"
+      ],
+      "t": 1,
+      "izoh": "M′(x) = 48 − 6x ni nolga tenglaymiz: 6x = 48, x = 8 ta ishchi. Hosila x < 8 da musbat, x > 8 da manfiy, demak bu maksimum. Kunlik mahsulot M(8) = 384 − 192 = 192 dona. 16 — mahsulot nolga tushadigan chegara. Javob: 8 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-unumi-max",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#99a27bde"
+    },
+    {
+      "q": "Uzunligi atigi 20 m bo'lgan devorga tegib turadigan to'rtburchak maydon 60 m to'siq bilan o'raladi. Maydonning eng katta yuzasi qancha bo'ladi?",
+      "v": [
+        "300 m²",
+        "400 m²",
+        "450 m²",
+        "500 m²"
+      ],
+      "t": 1,
+      "izoh": "Devorga parallel tomon x ≤ 20, tik tomonlar (60 − x)/2. S(x) = x(60 − x)/2 funksiyaning erkin maksimumi x = 30 da, lekin devor faqat 20 m. S(x) [0; 20] kesmada o'suvchi, shuning uchun eng katta qiymat chekkada: x = 20, tik tomon 20 m, S = 400 m². 450 — devor cheklovini e'tiborsiz qoldirish xatosi. Javob: 400 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cheklov-chegarasidagi-ekstremum",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#a70a88ff"
+    },
+    {
+      "q": "Ustaxonaning foydasi F(x) = 75x − x³ ming so'm, lekin uskuna kuniga ko'pi bilan 3 ta buyum yasashga imkon beradi. Eng katta kunlik foyda qancha?",
+      "v": [
+        "144 ming so'm",
+        "198 ming so'm",
+        "216 ming so'm",
+        "250 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "F′(x) = 75 − 3x² = 0 dan x = 5, lekin bu qiymat ruxsat etilgan [0; 3] oraliqdan tashqarida. Hosila x < 5 da musbat, demak funksiya [0; 3] da o'sadi va eng katta qiymat x = 3 da bo'ladi. F(3) = 225 − 27 = 198 ming so'm. 250 — cheklovni unutib x = 5 ni olish xatosi. Javob: 198 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cheklov-chegarasidagi-ekstremum",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#b8906cc0"
+    },
+    {
+      "q": "Fermerda bugun 800 kg hosil bor va u har kuni 20 kg ortadi. Bugungi narx 1 kg uchun 6000 so'm bo'lib, har kuni 100 so'mga tushadi. Eng katta tushum uchun necha kundan keyin sotilsin?",
+      "v": [
+        "5 kun",
+        "10 kun",
+        "15 kun",
+        "20 kun"
+      ],
+      "t": 1,
+      "izoh": "t kundan keyin tushum T(t) = (800 + 20t)(6000 − 100t) = 4 800 000 + 40 000t − 2000t². T′(t) = 40 000 − 4000t = 0 dan t = 10 kun. Bunda hosil 1000 kg, narx 5000 so'm, tushum 5 000 000 so'm. Javob: 10 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sotish-vaqtini-tanlash",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#d040679f"
+    },
+    {
+      "q": "Qo'yning vazni hozir 40 kg va har hafta 2 kg ortadi. Hozirgi narx 1 kg uchun 40 000 so'm bo'lib, har hafta 1000 so'mga tushadi. Sotuvdan olinadigan eng katta pul qancha?",
+      "v": [
+        "1 600 000 so'm",
+        "1 800 000 so'm",
+        "2 000 000 so'm",
+        "2 400 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "t haftadan keyin P(t) = (40 + 2t)(40 000 − 1000t) = 1 600 000 + 40 000t − 2000t². P′(t) = 40 000 − 4000t = 0 dan t = 10 hafta. Vazn 60 kg, narx 30 000 so'm, pul 1 800 000 so'm. 1 600 000 — hozir sotish natijasi. Javob: 1 800 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sotish-vaqtini-tanlash",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#6ac651aa"
+    },
+    {
+      "q": "Hajmi 24π sm³ bo'lgan qopqoqsiz silindrik idishda tub materiali yon devor materialidan uch marta qimmat. Xarajat eng kam bo'lgan radiusni toping.",
+      "v": [
+        "2 sm",
+        "3 sm",
+        "4 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Yon devor narxi 1 birlik bo'lsa, xarajat X = 3πr² + 2πrh va h = 24/r². Demak X(r) = 3πr² + 48π/r. X′(r) = 6πr − 48π/r² = 0 dan r³ = 8, r = 2 sm va h = 6 sm. Tub qimmat bo'lgani uchun idish tor va baland chiqadi. Javob: 2 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "har-xil-narxli-yoq-min-xarajat",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#72721476"
+    },
+    {
+      "q": "Maydonning yuzasi S(x) = 24x − x² kvadrat metr formula bilan berilgan. Uning eng katta qiymati qanchaga teng?",
+      "v": [
+        "12 m²",
+        "144 m²",
+        "288 m²",
+        "576 m²"
+      ],
+      "t": 1,
+      "izoh": "S′(x) = 24 − 2x ni nolga tenglaymiz: x = 12. Hosila chapda musbat, o'ngda manfiy, demak bu maksimum nuqtasi. S(12) = 288 − 144 = 144 m². 288 — x² hadini ayirishni unutish, 12 — x qiymatini javob deb yozish xatosi. Javob: 144 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tayyor-model-max-yuza",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#87b46bf6"
+    },
+    {
+      "q": "Gulzor yuzasi S(x) = 36x − 3x² kvadrat metrga teng. Gulzorning erishish mumkin bo'lgan eng katta yuzasini toping.",
+      "v": [
+        "54 m²",
+        "108 m²",
+        "216 m²",
+        "324 m²"
+      ],
+      "t": 1,
+      "izoh": "Hosila S′(x) = 36 − 6x nolga aylanganda x = 6 m. Shu nuqtada S(6) = 216 − 108 = 108 m². 216 — faqat birinchi hadni hisoblash, 324 — x = 6 ni noto'g'ri qo'yish natijasi. Javob: 108 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tayyor-model-max-yuza",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#60ea6193"
+    },
+    {
+      "q": "Devor yonidagi maydon yuzasi S(x) = x(48 − 2x) kvadrat metr. Yuza eng katta bo'ladigan x qiymatini toping.",
+      "v": [
+        "8 m",
+        "12 m",
+        "16 m",
+        "24 m"
+      ],
+      "t": 1,
+      "izoh": "Qavslarni ochamiz: S(x) = 48x − 2x². Hosila S′(x) = 48 − 4x nolga aylanganda x = 12 m. Bunda ikkinchi o'lcham 48 − 24 = 24 m, yuza 288 m². 24 — yuza nolga aylanadigan chegara qiymati. Javob: 12 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tayyor-model-max-yuza",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#b4e2e186"
+    },
+    {
+      "q": "Yuk tashish xarajati X(x) = 5x + 720/x ming so'mga teng. Xarajatning eng kichik qiymati qancha bo'ladi?",
+      "v": [
+        "60 ming so'm",
+        "120 ming so'm",
+        "144 ming so'm",
+        "240 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "X′(x) = 5 − 720/x² ni nolga tenglaymiz: x² = 144, x = 12. X(12) = 60 + 60 = 120 ming so'm. 60 — ikki qo'shiluvchidan bittasini yozish, 144 — x² qiymatini javob deb olish xatosi. Javob: 120 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tayyor-model-min-xarajat",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#c6cc1608"
+    },
+    {
+      "q": "Zavodning kunlik xarajati smenalar soniga bog'liq: X(n) = 2n + 50/n mln so'm. Xarajat eng kam bo'lishi uchun necha smena tashkil etilsin?",
+      "v": [
+        "4 ta",
+        "5 ta",
+        "10 ta",
+        "25 ta"
+      ],
+      "t": 1,
+      "izoh": "X′(n) = 2 − 50/n² ni nolga tenglaymiz: n² = 25, ya'ni n = 5 ta smena. Bunda xarajat 10 + 10 = 20 mln so'm bo'ladi. 25 — n² qiymatini javob deb yozish xatosi. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tayyor-model-min-xarajat",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#e7215cb3"
+    },
+    {
+      "q": "Ta'mirlash ishining xarajati X(t) = 3t + 300/t ming so'm, bunda t — ishga sarflangan soatlar. Ish necha soatda bajarilsa xarajat eng kam bo'ladi?",
+      "v": [
+        "5 soat",
+        "10 soat",
+        "15 soat",
+        "100 soat"
+      ],
+      "t": 1,
+      "izoh": "Hosila X′(t) = 3 − 300/t² nolga aylanganda t² = 100, ya'ni t = 10 soat. Xarajat X(10) = 30 + 30 = 60 ming so'm. 100 — t² ning qiymatidan ildiz olishni unutish xatosi. Javob: 10 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tayyor-model-min-xarajat",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#fb8514d9"
+    },
+    {
+      "q": "Do'konning kunlik tushumi T(x) = 120x − 2x² ming so'mga teng, bunda x — sotilgan dona soni. Eng katta tushum qancha?",
+      "v": [
+        "900 ming so'm",
+        "1800 ming so'm",
+        "2400 ming so'm",
+        "3600 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "T′(x) = 120 − 4x ni nolga tenglaymiz: x = 30 dona. T(30) = 3600 − 1800 = 1800 ming so'm. 3600 — x = 30 da ikkinchi hadni ayirishni unutish, 2400 — x = 20 deb olib, ustiga 2x² hadini ham ayirmaslik natijasi (120·20 = 2400). Javob: 1800 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "talab-funksiyasi-max-tushum",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#f4d58bb9"
+    },
+    {
+      "q": "Kichik korxonaning foydasi F(x) = 200x − 5x² − 1200 ming so'm formula bilan hisoblanadi. Eng katta oylik foyda qancha bo'ladi?",
+      "v": [
+        "800 ming so'm",
+        "1200 ming so'm",
+        "2000 ming so'm",
+        "2800 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "F′(x) = 200 − 10x = 0 dan x = 20 dona. F(20) = 4000 − 2000 − 1200 = 800 ming so'm. 2000 — doimiy 1200 ni ayirishni unutish, 2800 — 5x² hadini yo'qotish xatosi. Javob: 800 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foyda-funksiyasi-max",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#7d88dcd4"
+    },
+    {
+      "q": "Quti hajmining hosilasi V′(x) = (24 − 2x)(24 − 6x) ko'rinishida chiqdi. Hajm qaysi x qiymatida eng katta bo'ladi?",
+      "v": [
+        "4 sm",
+        "6 sm",
+        "12 sm",
+        "24 sm"
+      ],
+      "t": 0,
+      "izoh": "Hosila nolga aylanadigan nuqtalar x = 12 va x = 4. x = 12 da asos tomoni 24 − 24 = 0 bo'lib, hajm yo'qoladi. x = 4 da esa hosila musbatdan manfiyga o'tadi, demak maksimum shu yerda. Javob: 4 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kritik-nuqtani-tekshirish",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#cbe75263"
+    },
+    {
+      "q": "Yuza funksiyasining hosilasi S′(x) = 40 − 4x ga teng. x = 10 nuqta aynan maksimum ekanini nima tasdiqlaydi?",
+      "v": [
+        "Hosila x = 10 dan o'tganda musbatdan manfiyga o'zgaradi",
+        "Hosila x = 10 da nolga teng bo'lgani",
+        "Hosila x = 10 dan o'tganda manfiydan musbatga o'zgaradi",
+        "Funksiya x = 10 da musbat qiymat olgani"
+      ],
+      "t": 0,
+      "izoh": "Hosilaning nolga aylanishi faqat kritik nuqtani ko'rsatadi, uning turini aniqlamaydi. S′(x) = 40 − 4x ifoda x < 10 da musbat, x > 10 da manfiy. Demak funksiya avval o'sib, keyin kamayadi, ya'ni x = 10 da maksimumga erishadi. Javob: hosila musbatdan manfiyga o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kritik-nuqtani-tekshirish",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#5de513f5"
+    },
+    {
+      "q": "Tomoni 30 sm kvadrat kartondan quti yasashda hosilaning ildizlari x = 5 va x = 15 chiqdi. Qaysi ildiz masalaga to'g'ri kelmaydi va nima uchun?",
+      "v": [
+        "x = 5, chunki quti juda past bo'lib qoladi",
+        "x = 15, chunki asos tomoni nolga aylanadi",
+        "x = 15, chunki balandlik manfiy chiqadi",
+        "Ikkalasi ham to'g'ri keladi"
+      ],
+      "t": 1,
+      "izoh": "Asos tomoni 30 − 2x ga teng. x = 15 bo'lganda 30 − 30 = 0, ya'ni asos yo'qoladi va hajm nolga teng bo'ladi. Shuning uchun faqat x = 5 qabul qilinadi va hajm V = 5·20² = 2000 sm³. Javob: x = 15, chunki asos tomoni nolga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kritik-nuqtani-tekshirish",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#9c0d9a49"
+    },
+    {
+      "q": "To'g'ri yo'lda joylashgan ikkita qishloq orasi 36 km. Quduq ikki qishloqqacha bo'lgan masofalar kvadratlari yig'indisi eng kichik bo'ladigan joyga qaziladi. U birinchi qishloqdan necha km narida bo'ladi?",
+      "v": [
+        "12 km",
+        "18 km",
+        "24 km",
+        "36 km"
+      ],
+      "t": 1,
+      "izoh": "Quduq birinchi qishloqdan x km narida bo'lsin: f(x) = x² + (36 − x)² = 2x² − 72x + 1296. Hosila f′(x) = 4x − 72 nolga aylanganda x = 18 km, ya'ni quduq o'rtada bo'ladi. Bunda yig'indi 324 + 324 = 648 ga teng. Javob: 18 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "min-masofalar-kvadratlari",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#2cd02aa0"
+    },
+    {
+      "q": "Ikki qishloq orasi 30 km. Ikkinchi qishloqda aholi ikki barobar ko'p, shuning uchun undagi masofa kvadrati ikki hissa og'irlik bilan olinadi. Maktab birinchi qishloqdan necha km narida qurilsin?",
+      "v": [
+        "10 km",
+        "15 km",
+        "20 km",
+        "24 km"
+      ],
+      "t": 2,
+      "izoh": "Og'irliklarni hisobga olgan funksiya f(x) = x² + 2(30 − x)². Uni ochamiz: f(x) = 3x² − 120x + 1800. Hosila f′(x) = 6x − 120 nolga aylanganda x = 20 km. Maktab aholi ko'p bo'lgan qishloqqa yaqinroq siljiydi. 15 — og'irlikni hisobga olmaslik xatosi. Javob: 20 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "min-masofalar-kvadratlari",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#02d03021"
+    },
+    {
+      "q": "Dori qabul qilingandan keyin uning qondagi miqdori C(t) = 12t/(t² + 9) mg/l qonun bilan o'zgaradi. Miqdor qaysi soatda eng katta bo'ladi?",
+      "v": [
+        "2 soat",
+        "3 soat",
+        "6 soat",
+        "9 soat"
+      ],
+      "t": 1,
+      "izoh": "Kasrning hosilasi C′(t) = 12(t² + 9) − 12t·2t hisobidan (108 − 12t²)/(t² + 9)² ga teng. Surat nolga aylanganda t² = 9, ya'ni t = 3 soat. Bunda C(3) = 36 : 18 = 2 mg/l. 9 — t² qiymatini javob deb olish xatosi. Javob: 3 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-model-max-qiymat",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#84c8e2b3"
+    },
+    {
+      "q": "Ko'chatzordagi o'simliklar soni N(t) = 100t/(t² + 25) ming donaga teng. Ularning eng katta soni qancha bo'ladi?",
+      "v": [
+        "4 ming",
+        "5 ming",
+        "10 ming",
+        "20 ming"
+      ],
+      "t": 2,
+      "izoh": "Hosila surati 100(t² + 25) − 100t·2t = 2500 − 100t² ko'rinishida bo'ladi. U nolga aylanganda t² = 25, ya'ni t = 5. N(5) = 500 : 50 = 10 ming dona. 5 — vaqt qiymatini javob deb yozish xatosi. Javob: 10 ming.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-model-max-qiymat",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#3fe0fe8a"
+    },
+    {
+      "q": "Qurilmaning quvvati P(x) = 36x/(x² + 4) vatt formula bilan beriladi. Quvvatning eng katta qiymatini toping.",
+      "v": [
+        "4,5 vatt",
+        "6 vatt",
+        "9 vatt",
+        "18 vatt"
+      ],
+      "t": 2,
+      "izoh": "P′(x) surati 36(x² + 4) − 36x·2x = 144 − 36x² ga teng va u nolga aylanganda x² = 4, x = 2. P(2) = 72 : 8 = 9 vatt. 18 — maxrajni hisobga olmay 36 : 2 deb hisoblash xatosi. Javob: 9 vatt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-model-max-qiymat",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#b0b5fd2a"
+    },
+    {
+      "q": "Kvadrat asosli to'g'ri prizmaning barcha qirralari uzunligi yig'indisi 36 sm. Prizmaning erishish mumkin bo'lgan eng katta hajmi qancha?",
+      "v": [
+        "18 sm³",
+        "27 sm³",
+        "36 sm³",
+        "54 sm³"
+      ],
+      "t": 1,
+      "izoh": "Asos tomoni a, balandligi h bo'lsa 8a + 4h = 36, ya'ni h = 9 − 2a. Hajm V(a) = a²(9 − 2a) = 9a² − 2a³. V′(a) = 18a − 6a² = 6a(3 − a) = 0 dan a = 3, h = 3. Prizma kub bo'lib chiqadi, V = 27 sm³. Javob: 27 sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qirralar-yigindisi-max-hajm",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#6a4bb11d"
+    },
+    {
+      "q": "Kvadrat asosli to'g'ri prizmada asos perimetri bilan balandlik yig'indisi 30 sm. Hajm eng katta bo'lganda balandlik nechaga teng bo'ladi?",
+      "v": [
+        "5 sm",
+        "7,5 sm",
+        "10 sm",
+        "15 sm"
+      ],
+      "t": 2,
+      "izoh": "Shartga ko'ra 4a + h = 30, demak h = 30 − 4a va V(a) = a²(30 − 4a). V′(a) = 60a − 12a² = 12a(5 − a) = 0 dan a = 5 sm, h = 30 − 20 = 10 sm. Hajm V = 25·10 = 250 sm³. 7,5 — yig'indini to'rtga bo'lish xatosi. Javob: 10 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qirralar-yigindisi-max-hajm",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#ba2a23eb"
+    },
+    {
+      "q": "Gipotenuzasi 10 sm bo'lgan to'g'ri burchakli uchburchaklar orasida yuzasi eng katta bo'lganining yuzasi qancha?",
+      "v": [
+        "20 sm²",
+        "25 sm²",
+        "50 sm²",
+        "100 sm²"
+      ],
+      "t": 1,
+      "izoh": "Katetlar a va √(100 − a²) bo'lsin, yuza S = a√(100 − a²)/2. S² = a²(100 − a²)/4 ifodaning hosilasi (200a − 4a³)/4 nolga aylanganda a² = 50. Bunda ikkinchi katet ham √50, S = 50/2 = 25 sm². 50 — ikkiga bo'lishni unutish xatosi. Javob: 25 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gipotenuza-berilgan-max-yuza",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#805f3a23"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari yig'indisi 14 sm ga teng. Uning eng katta yuzasi nechaga teng bo'ladi?",
+      "v": [
+        "24,5 sm²",
+        "28 sm²",
+        "49 sm²",
+        "98 sm²"
+      ],
+      "t": 0,
+      "izoh": "Katetlar x va 14 − x bo'lsa, yuza S(x) = x(14 − x)/2 = 7x − 0,5x². Hosila S′(x) = 7 − x nolga aylanganda x = 7, ikkinchi katet ham 7 sm. S = 49 : 2 = 24,5 sm². 49 — yuzani ikkiga bo'lishni unutish xatosi. Javob: 24,5 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "katetlar-yigindisi-max-yuza",
+      "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari#a9c0318f"
+    }
+  ]
+}

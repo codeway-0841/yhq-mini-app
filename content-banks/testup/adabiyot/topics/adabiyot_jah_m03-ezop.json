@@ -1,0 +1,1506 @@
+{
+  "nom": "Ezop masallari",
+  "bolim": "Antik va qadimgi davr",
+  "savollar": [
+    {
+      "q": "Quyidagi asarlardan qaysi biri Ezop qalamiga mansub?",
+      "v": [
+        "«Akatsiya gullagan joyda»",
+        "«Kalila va Dimna»",
+        "«Chumoli va chigirtka»",
+        "«Kechir, yurtim!»"
+      ],
+      "t": 2,
+      "izoh": "«Chumoli va chigirtka» — Ezop asari. Bu — masal. Mehnat va beparvolikning oqibati qiyoslanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_jah_m03-ezop#c7573290"
+    },
+    {
+      "q": "«Bo'ri va qo'zichoq» qaysi janrga mansub?",
+      "v": [
+        "hikoya",
+        "poema",
+        "kitob",
+        "masal"
+      ],
+      "t": 3,
+      "izoh": "«Bo'ri va qo'zichoq» — masal. Kuchli kimsa bahona topib zaifni ezishi tasvirlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_jah_m03-ezop#2f0fd01e"
+    },
+    {
+      "q": "«Burgut, zag'cha va cho'pon» qaysi janrga mansub?",
+      "v": [
+        "tarixiy roman",
+        "g'azal",
+        "she'riy devon",
+        "masal"
+      ],
+      "t": 3,
+      "izoh": "«Burgut, zag'cha va cho'pon» — masal. O'z kuchini bilmay chiranishning oqibati haqida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_jah_m03-ezop#e45dacd8"
+    },
+    {
+      "q": "«Yovvoyi echkilar bilan cho'pon» qaysi janrga mansub?",
+      "v": [
+        "lug'at",
+        "masal",
+        "to'plam",
+        "roman"
+      ],
+      "t": 1,
+      "izoh": "«Yovvoyi echkilar bilan cho'pon» — masal. Yangi do'stni eskisidan afzal tutgan kishi haqidagi ibratli hikoyat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_jah_m03-ezop#edae676f"
+    },
+    {
+      "q": "«Ustiga tuz ortilgan eshak» qaysi janrga mansub?",
+      "v": [
+        "libretto",
+        "to'plam",
+        "ertak-qissa",
+        "masal"
+      ],
+      "t": 3,
+      "izoh": "«Ustiga tuz ortilgan eshak» — masal. Hiyla-nayrangning o'z boshiga yetishi ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_jah_m03-ezop#8dfbb4c3"
+    },
+    {
+      "q": "Baqalar obrazi qaysi asarda uchraydi?",
+      "v": [
+        "«Baskervillar iti»",
+        "«Eshak bilan baqalar»",
+        "«Darvesh hikoyati»",
+        "«Nemis tilining lug'ati»"
+      ],
+      "t": 1,
+      "izoh": "Baqalar — «Eshak bilan baqalar» asari qahramoni. Asarda hayotiy saboq beruvchilar sifatida keladi. Botqoqda umr kechirgani uchun boshqaning nolasini ortiqcha deb bilgan jonivorlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#13758b83"
+    },
+    {
+      "q": "Toshbaqa obrazi qaysi asarda uchraydi?",
+      "v": [
+        "«Toshbaqa va quyon»",
+        "«Bulbul va atirgul»",
+        "«Quyosh ham chiqadi»",
+        "«Ordenli millionerlar»"
+      ],
+      "t": 0,
+      "izoh": "Toshbaqa — «Toshbaqa va quyon» asari qahramoni. Asarda sabr timsoli sifatida keladi. Sekin, ammo to'xtamay yurib musobaqada g'olib chiqqan jonivor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#81088393"
+    },
+    {
+      "q": "Yovvoyi echkilar obrazi qaysi asarda uchraydi?",
+      "v": [
+        "«Yovvoyi echkilar bilan cho'pon»",
+        "«Mening oltin Bengaliyam»",
+        "«Chippolinoning sarguzashtlari»",
+        "«Qo'ng'iroq kim uchun chalinadi»"
+      ],
+      "t": 0,
+      "izoh": "Yovvoyi echkilar — «Yovvoyi echkilar bilan cho'pon» asari qahramoni. Asarda saboq beruvchilar sifatida keladi. Yangi do'stni eskisidan afzal ko'rgan boquvchidan qochib ketgan tog' jonivorlari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#2ba41dcd"
+    },
+    {
+      "q": "Kiyik obrazi qaysi asarda uchraydi?",
+      "v": [
+        "«Kassandra tamg'asi»",
+        "«Kiyik bilan tokzor»",
+        "«Darvesh hikoyati»",
+        "«Belkin qissalari»"
+      ],
+      "t": 1,
+      "izoh": "Kiyik — «Kiyik bilan tokzor» asari qahramoni. Asarda bosh qahramon sifatida keladi. Ovchilardan yashiringan joyining barglarini yeb, qilmishi uchun jazolangan jonivor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#d28fc062"
+    },
+    {
+      "q": "Zag'cha obrazi qaysi asarda uchraydi?",
+      "v": [
+        "«Gilgamish haqida doston»",
+        "«Burgut, zag'cha va cho'pon»",
+        "«Havo sharida besh hafta»",
+        "«Hurishni eplolmagan kuchukcha»"
+      ],
+      "t": 1,
+      "izoh": "Zag'cha — «Burgut, zag'cha va cho'pon» asari qahramoni. Asarda maqtanchoq timsoli sifatida keladi. Yirtqich qushga taqlid qilib qo'chqorga tashlangan, oxiri qanotlaridan ayrilgan qush.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#6f6ce4f8"
+    },
+    {
+      "q": "Quyidagi tavsif qaysi adabiy qahramonga tegishli? Yeta olmagan mevani nordon deb, o'z ojizligini yashirmoqchi bo'lgan jonivor",
+      "v": [
+        "Laylak",
+        "Rama",
+        "Tulki",
+        "Mishel"
+      ],
+      "t": 2,
+      "izoh": "Bu — Tulki, «Tulki va uzum» asari qahramoni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#3004a36a"
+    },
+    {
+      "q": "Quyidagi tavsif qaysi adabiy qahramonga tegishli? Jonivorni ovchi ko'zidan yashirib qolgan, ammo o'sha jonivor tomonidan payhon qilingan panoh",
+      "v": [
+        "Jamol",
+        "Sobitjon",
+        "Layli",
+        "Tokzor"
+      ],
+      "t": 3,
+      "izoh": "Bu — Tokzor, «Kiyik bilan tokzor» asari qahramoni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#71347a8e"
+    },
+    {
+      "q": "Quyidagi tavsif qaysi adabiy qahramonga tegishli? Yirtqich qushga taqlid qilib qo'chqorga tashlangan, oxiri qanotlaridan ayrilgan qush",
+      "v": [
+        "Zag'cha",
+        "Gulruxor",
+        "Arjuna",
+        "Kreont"
+      ],
+      "t": 0,
+      "izoh": "Bu — Zag'cha, «Burgut, zag'cha va cho'pon» asari qahramoni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#c0411b56"
+    },
+    {
+      "q": "Quyidagi tavsif qaysi adabiy qahramonga tegishli? Sekin, ammo to'xtamay yurib musobaqada g'olib chiqqan jonivor",
+      "v": [
+        "Shuxashini",
+        "Toshbaqa",
+        "Bankir",
+        "Baqalar"
+      ],
+      "t": 1,
+      "izoh": "Bu — Toshbaqa, «Toshbaqa va quyon» asari qahramoni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#669f6bf8"
+    },
+    {
+      "q": "Quyidagi tavsif qaysi adabiy qahramonga tegishli? Botqoqda umr kechirgani uchun boshqaning nolasini ortiqcha deb bilgan jonivorlar",
+      "v": [
+        "Baqalar",
+        "Blanka",
+        "Polifem",
+        "Gerkules"
+      ],
+      "t": 0,
+      "izoh": "Bu — Baqalar, «Eshak bilan baqalar» asari qahramoni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#cd80567f"
+    },
+    {
+      "q": "«Kiyik bilan tokzor» asarining asosiy g'oyasi qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "O'ziga yaxshilik qilganga yomonlik sog'ingan kishi albatta jazoga yo'liqishi ko'rsatilgan",
+        "Notanish kimsaga ishonib, ogohlikni unutgan bola qanday xavfga duch kelishi uqtirilgan",
+        "Shafqatsiz tabiat qarshisida inson irodasi va o'zaro sadoqat sinovdan o'tishi tasvirlangan",
+        "Ikki timsol bahsi orqali zamona ahvoli va shaxs qadri ramziy yo'sinda ochib berilgan asar"
+      ],
+      "t": 0,
+      "izoh": "«Kiyik bilan tokzor»da o'ziga yaxshilik qilganga yomonlik sog'ingan kishi albatta jazoga yo'liqishi ko'rsatilgan. Masal ayni paytda nafs balosidan asranishga ham da'vat etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#eed2acb9"
+    },
+    {
+      "q": "«Tulki va uzum» asarining asosiy g'oyasi qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "Front bilan vayron shahar oralig'idagi qisqa baxt urush shafqatsizligi fonida yanada o'tkir tasvirlangan",
+        "Egasiga keraksiz bo'lib qolgan jonivorlar birlashib o'ziga joy topishi hamjihatlik kuchini ko'rsatgan",
+        "Qo'li yetmagan narsani yomonlab, o'z ojizligini yashirmoqchi bo'lgan kishi kulgili holga tushishi ko'rsatilgan",
+        "Kitobdan olingan bilim hayotga bog'lanmasa, insonni to'g'ri xulosaga emas, hayotdan uzilishga eltishi ko'rsatilgan"
+      ],
+      "t": 2,
+      "izoh": "«Tulki va uzum»da qo'li yetmagan narsani yomonlab, o'z ojizligini yashirmoqchi bo'lgan kishi kulgili holga tushishi ko'rsatilgan. Masal nomi maqolga aylanib ketgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#f2df7551"
+    },
+    {
+      "q": "«Burgut, zag'cha va cho'pon» asarining asosiy g'oyasi qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "Inson va jonivor taqdirining qiyosi orqali umr o'tkinchiligi va sadoqat mavzusi ochilgan",
+        "El birligi va yakdilligi yurt obodligining bosh omili ekani iftixor bilan tarannum etilgan",
+        "O'zidan kuchliroq bilan bellashaman deb chiranish kulgiga qolish bilan tugashi uqtiriladi",
+        "Mansab tafovuti eski do'stlikni bir zumda mensimaslikka aylantirishi kinoya bilan ochilgan"
+      ],
+      "t": 2,
+      "izoh": "«Burgut, zag'cha va cho'pon»da o'zidan kuchliroq bilan bellashaman deb chiranish kulgiga qolish bilan tugashi uqtiriladi. «Ko'rpangga qarab oyoq uzat» maqoli shu masaldan anglashiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#0b6a77fa"
+    },
+    {
+      "q": "«Toshbaqa va quyon» asarining asosiy g'oyasi qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "Tug'ma qobiliyatga suyanib dangasalik qilgan kishini sabrli mehnatkash ortda qoldirishi ko'rsatilgan",
+        "Bosqinchiga taslim bo'lishdan ko'ra o'limni afzal ko'rgan shahar aholisining jasorati ulug'langan",
+        "Turkiy tilning fors tilidan qolishmasligi va u bilan ham yuksak she'r bitish mumkinligi amalda isbotlangan",
+        "Yetim va g'aribga shirin so'z, bek uchun saxovat, shoh uchun adolat eng oliy fazilat ekani uqtirilgan"
+      ],
+      "t": 0,
+      "izoh": "«Toshbaqa va quyon»da tug'ma qobiliyatga suyanib dangasalik qilgan kishini sabrli mehnatkash ortda qoldirishi ko'rsatilgan. G'alaba tezlikka emas, izchillikka bog'liqligi aytiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#3384d94f"
+    },
+    {
+      "q": "«Chumoli va chigirtka» asarining asosiy g'oyasi qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "Urushdan keyingi avlodning ichki bo'shlig'i va yo'nalish izlashi tasvirlangan",
+        "Urush ko'rgan o'smirlar taqdiri va bir-biriga oqibat mavzusi ochilgan",
+        "Urush yillaridagi qishloq hayotining mashaqqati samimiy yumor bilan yumshatib berilgan",
+        "Kelajakni o'ylab mehnat qilgan kishi qiyin kunda kam bo'lmasligi uqtiriladi"
+      ],
+      "t": 3,
+      "izoh": "«Chumoli va chigirtka»da kelajakni o'ylab mehnat qilgan kishi qiyin kunda kam bo'lmasligi uqtiriladi. Masal mehnat va g'amxo'rlikni ulug'laydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#4b4e2b49"
+    },
+    {
+      "q": "Quyidagi parcha qaysi asardan olingan? Qilmish — qidirmish: tok meni qutqargandi, men esa uni nobud qilishga qasdlandim.",
+      "v": [
+        "«Izg'irin bolalari»",
+        "«Kiyik bilan tokzor»",
+        "«Surgundagi qirollar»",
+        "«Bremen musiqachilari»"
+      ],
+      "t": 1,
+      "izoh": "Parcha «Kiyik bilan tokzor» asaridan. Yaradorlangan jonivorning afsus-nadomati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#960bfcc4"
+    },
+    {
+      "q": "Quyidagi parcha qaysi asardan olingan? Alqissa, o'zingdan zo'rroqlar bilan bellashaman deb chiranganing bilan hech ish chiqarolmaysan.",
+      "v": [
+        "«Shoir bo'lsang, xabar ber»",
+        "«Burgut, zag'cha va cho'pon»",
+        "«Jiddiy bo'lish zarurati»",
+        "«G'amzasin sevding, ko'ngul»"
+      ],
+      "t": 1,
+      "izoh": "Parcha «Burgut, zag'cha va cho'pon» asaridan. Masalning yakunidagi o'git.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#5eab4b5e"
+    },
+    {
+      "q": "Quyidagi parcha qaysi asardan olingan? Alqissa, ayrimlar ishlatgan hiyla-nayrang ularning o'z boshiga yetarkan.",
+      "v": [
+        "«Ustiga tuz ortilgan eshak»",
+        "«Hurishni eplolmagan kuchukcha»",
+        "«Telefonda aytilgan ertaklar»",
+        "«Akatsiya gullagan joyda»"
+      ],
+      "t": 0,
+      "izoh": "Parcha «Ustiga tuz ortilgan eshak» asaridan. Masal shu xulosa bilan yakunlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#7560df7d"
+    },
+    {
+      "q": "Quyidagi parcha qaysi asardan olingan? Alqissa, kimki o'ziga yaxshilik qilganlarga yomonlik sog'insa, u, albatta, jazoga yo'liqqay.",
+      "v": [
+        "«Kiyik bilan tokzor»",
+        "«Rahmat sizga, xonim»",
+        "«Sizga qanday yoqadi»",
+        "«Buloqlar qaynaydi»"
+      ],
+      "t": 0,
+      "izoh": "Parcha «Kiyik bilan tokzor» asaridan. Masalning yakuniy hikmati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#8bc89be9"
+    },
+    {
+      "q": "Ezop hayoti bilan bog'liq voqealarning ketma-ketligi to'g'ri tartibda qaysi javobda berilgan?",
+      "v": [
+        "Frigiyada tug'ilishi → Samos orolida Ksanfga sotilishi → Delfada halok bo'lishi → Krez saroyida xizmat qilishi → qul qilib Yunonistonga keltirilishi",
+        "Samos orolida Ksanfga sotilishi → Delfada halok bo'lishi → qul qilib Yunonistonga keltirilishi → Krez saroyida xizmat qilishi → Frigiyada tug'ilishi",
+        "Frigiyada tug'ilishi → qul qilib Yunonistonga keltirilishi → Samos orolida Ksanfga sotilishi → Krez saroyida xizmat qilishi → Delfada halok bo'lishi",
+        "qul qilib Yunonistonga keltirilishi → Samos orolida Ksanfga sotilishi → Frigiyada tug'ilishi → Krez saroyida xizmat qilishi → Delfada halok bo'lishi"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri tartib: Frigiyada tug'ilishi → qul qilib Yunonistonga keltirilishi → Samos orolida Ksanfga sotilishi → Krez saroyida xizmat qilishi → Delfada halok bo'lishi. Ma'lumotlar qadimgi tarixchilar yozib qoldirgan rivoyatlar orqali yetib kelgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#9f1b0314"
+    },
+    {
+      "q": "«Ustiga tuz ortilgan eshak» masalidagi voqealar ketma-ketligi to'g'ri tartibda qaysi javobda berilgan?",
+      "v": [
+        "yukning yengillashib qolishi → keyingi safar ataylab yiqilish → tuz ortilgan holda tasodifan suvga yiqilish → suvga cho'kib ketish",
+        "keyingi safar ataylab yiqilish → tuz ortilgan holda tasodifan suvga yiqilish → yukning yengillashib qolishi → suvga cho'kib ketish",
+        "tuz ortilgan holda tasodifan suvga yiqilish → yukning yengillashib qolishi → keyingi safar ataylab yiqilish → suvga cho'kib ketish",
+        "suvga cho'kib ketish → tuz ortilgan holda tasodifan suvga yiqilish → yukning yengillashib qolishi → keyingi safar ataylab yiqilish"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri tartib: tuz ortilgan holda tasodifan suvga yiqilish → yukning yengillashib qolishi → keyingi safar ataylab yiqilish → suvga cho'kib ketish. Hiyla qahramonning o'z boshiga yetadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#e6a3bef3"
+    },
+    {
+      "q": "Ezopning halokatiga nima sabab bo'lgani aytiladi?",
+      "v": [
+        "haqgo'yligi va achchiq tili",
+        "boyligi va ochko'zligi",
+        "jangovarligi va qaysarligi",
+        "qo'rqoqligi va sotqinligi"
+      ],
+      "t": 0,
+      "izoh": "Alamzada dushmanlari uni shu sabab yo'q qilishgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#72e22e48"
+    },
+    {
+      "q": "«Burgut, zag'cha va cho'pon» masaliga qaysi o'zbek maqoli hamohang?",
+      "v": [
+        "Ko'rpangga qarab oyoq uzat",
+        "Bir yiqilgan besh chiqar",
+        "Mehnat — mehnatning tagi rohat",
+        "Bilim — quvvat manbayi"
+      ],
+      "t": 0,
+      "izoh": "Har kim o'z o'rnini bilishi kerakligi uqtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#6cf6fa59"
+    },
+    {
+      "q": "Masal qanday shaklda yozilishi mumkin?",
+      "v": [
+        "faqat she'riy shaklda",
+        "faqat dramatik shaklda",
+        "nasriy yoki she'riy shaklda",
+        "faqat nasriy shaklda"
+      ],
+      "t": 2,
+      "izoh": "Ikkala shakl ham masalchilikda keng qo'llanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#2d5652de"
+    },
+    {
+      "q": "Rivoyatga ko'ra Ezop qaysi shaharda halok bo'lgan?",
+      "v": [
+        "Korinfda",
+        "Spartada",
+        "Delfada",
+        "Afinada"
+      ],
+      "t": 2,
+      "izoh": "Hasadgo'y dushmanlari uni tog' qoyasidan otib yuborishgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#579d83df"
+    },
+    {
+      "q": "Ezopga nisbat beriladigan masallarning taxminiy soni qancha?",
+      "v": [
+        "besh yuzga yaqin",
+        "o'n mingga yaqin",
+        "ikki mingga yaqin",
+        "ellikka yaqin"
+      ],
+      "t": 0,
+      "izoh": "Ular qadim davrlardayoq bir kitobga jamlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#c8741eed"
+    },
+    {
+      "q": "«Chumoli va chigirtka» masalida chigirtka nima uchun qishda qiynaladi?",
+      "v": [
+        "uyi buzilgani uchun",
+        "yoz bo'yi hech nima g'amlamagani uchun",
+        "yo'lni adashtirgani uchun",
+        "do'stlaridan ayrilgani uchun"
+      ],
+      "t": 1,
+      "izoh": "Masal kelajakni o'ylab yashashga undaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_jah_m03-ezop#5ea55c54"
+    },
+    {
+      "q": "«Burgut, zag'cha va cho'pon» masalida zag'cha kimga taqlid qilmoqchi bo'ladi?",
+      "v": [
+        "laylakka",
+        "burgutga",
+        "qarg'aga",
+        "bulbulga"
+      ],
+      "t": 1,
+      "izoh": "Uning panjalari qo'chqorning qalin juniga o'ralashib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#9b78b709"
+    },
+    {
+      "q": "Ezop hayoti haqidagi rivoyatlarga ko'ra u qanday ijtimoiy tabaqadan chiqqan?",
+      "v": [
+        "saroy a'yonlari orasidan",
+        "savdogarlar orasidan",
+        "qullar orasidan",
+        "kohinlar orasidan"
+      ],
+      "t": 2,
+      "izoh": "Uning donishmandligi shu og'ir sharoitda namoyon bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_jah_m03-ezop#3a919483"
+    },
+    {
+      "q": "Ezop masallari o'quv dasturida qaysi bo'limda o'rganiladi?",
+      "v": [
+        "hikmat durdonalari bo'limida",
+        "she'riyat namunalari bo'limida",
+        "ertaklar olamida bo'limida",
+        "jahon romanchiligi bo'limida"
+      ],
+      "t": 0,
+      "izoh": "Bo'limga hadislar, maqol va topishmoqlar ham kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#5fb82891"
+    },
+    {
+      "q": "Quyidagi ta'rif qaysi ijodkorga tegishli? Quldorlik zamonida qul bo'lib yashagan, jonivorlar tilidan ibratli hikoyatlar to'qigan qadimgi yunon donishmandi",
+      "v": [
+        "Fuzuliy",
+        "Jyul Vern",
+        "Ezop",
+        "Abay"
+      ],
+      "t": 2,
+      "izoh": "Bu — Ezop — quldorlik zamonida qul bo'lib yashagan, jonivorlar tilidan ibratli hikoyatlar to'qigan qadimgi yunon donishmandi. Asosiy asari — «Yovvoyi echkilar bilan cho'pon».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#f5308b3a"
+    },
+    {
+      "q": "«Tulki va uzum» asari qahramoni qaysi javobda berilgan?",
+      "v": [
+        "Arjuna",
+        "Tulki",
+        "Frans",
+        "Priam"
+      ],
+      "t": 1,
+      "izoh": "Tulki — «Tulki va uzum» qahramoni. U asarda ayyorlik timsoli sifatida keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#4628b2bc"
+    },
+    {
+      "q": "«Kiyik bilan tokzor» asari qahramoni qaysi javobda berilgan?",
+      "v": [
+        "Kiyik",
+        "Baqalar",
+        "Darvesh",
+        "Hamlet"
+      ],
+      "t": 0,
+      "izoh": "Kiyik — «Kiyik bilan tokzor» qahramoni. U asarda bosh qahramon sifatida keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#93b549bf"
+    },
+    {
+      "q": "«Toshbaqa va quyon» asari qahramoni qaysi javobda berilgan?",
+      "v": [
+        "Eshak",
+        "Bitti",
+        "Frans",
+        "Quyon"
+      ],
+      "t": 3,
+      "izoh": "Quyon — «Toshbaqa va quyon» qahramoni. U asarda mag'rurlik timsoli sifatida keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#90a9f26a"
+    },
+    {
+      "q": "Tulki — «Tulki va uzum» asarining qanday obrazi?",
+      "v": [
+        "asosiy raqib",
+        "raqib timsoli",
+        "ikkinchi darajali obraz",
+        "ayyorlik timsoli"
+      ],
+      "t": 3,
+      "izoh": "Yeta olmagan mevani nordon deb, o'z ojizligini yashirmoqchi bo'lgan jonivor. Shu bois u asarda ayyorlik timsoli sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#974c4b66"
+    },
+    {
+      "q": "Chigirtka — «Chumoli va chigirtka» asarining qanday obrazi?",
+      "v": [
+        "kulgili obraz",
+        "asosiy raqib",
+        "beparvolik timsoli",
+        "bosh qahramon"
+      ],
+      "t": 2,
+      "izoh": "Yoz bo'yi kuylab yurib, qish kelganda och qolgan beparvo jonivor. Shu bois u asarda beparvolik timsoli sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#f10b6489"
+    },
+    {
+      "q": "Yovvoyi echkilar — «Yovvoyi echkilar bilan cho'pon» asarining qanday obrazi?",
+      "v": [
+        "qo'shni bola",
+        "bosh qahramon",
+        "saboq beruvchilar",
+        "ikkinchi darajali obraz"
+      ],
+      "t": 2,
+      "izoh": "Yangi do'stni eskisidan afzal ko'rgan boquvchidan qochib ketgan tog' jonivorlari. Shu bois u asarda saboq beruvchilar sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#b454d55a"
+    },
+    {
+      "q": "Laylak — «Bo'ri bilan laylak» asarining qanday obrazi?",
+      "v": [
+        "yaxshilik qiluvchi",
+        "kulgili obraz",
+        "qo'shni bola",
+        "bosh qahramon"
+      ],
+      "t": 0,
+      "izoh": "Yirtqichning bo'g'zidan suyakni chiqarib olgan, ammo va'da qilingan mukofotni ololmagan qush. Shu bois u asarda yaxshilik qiluvchi sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#4404e253"
+    },
+    {
+      "q": "Kiyik — «Kiyik bilan tokzor» asarining qanday obrazi?",
+      "v": [
+        "ramziy obraz",
+        "asosiy raqib",
+        "bosh qahramon",
+        "kulgili obraz"
+      ],
+      "t": 2,
+      "izoh": "Ovchilardan yashiringan joyining barglarini yeb, qilmishi uchun jazolangan jonivor. Shu bois u asarda bosh qahramon sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#0b9c32c0"
+    },
+    {
+      "q": "«Kiyik bilan tokzor» haqidagi qaysi ma'lumot to'g'ri?",
+      "v": [
+        "Yaxshilikka yomonlik qilishning oqibati tasvirlangan.",
+        "Shoirning she'riy va ilmiy izlanishlari jamlangan kitob.",
+        "Adibga jahon shuhratini keltirgan ilk hikoyalar to'plami.",
+        "Deraza ostidagi qayin qish libosida tasvirlangan mashhur she'r."
+      ],
+      "t": 0,
+      "izoh": "«Kiyik bilan tokzor» — Yaxshilikka yomonlik qilishning oqibati tasvirlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#9369249b"
+    },
+    {
+      "q": "«Tulki va uzum» haqidagi qaysi ma'lumot to'g'ri?",
+      "v": [
+        "Shoirning ona yurti haqidagi eng mashhur asari.",
+        "Shoirning dunyo yuzini ko'rgan birinchi asari.",
+        "Qo'li yetmagan narsani yomonlash odati fosh etilgan.",
+        "Antik Rim tarixidagi suiqasd voqealari asosida yozilgan asar."
+      ],
+      "t": 2,
+      "izoh": "«Tulki va uzum» — Qo'li yetmagan narsani yomonlash odati fosh etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#2bedef94"
+    },
+    {
+      "q": "«Eshak bilan baqalar» haqidagi qaysi ma'lumot to'g'ri?",
+      "v": [
+        "Adibning sahna asarlari jamlangan kitob.",
+        "Kichik qiyinchilikdan esankiragan kishi haqida.",
+        "Chidam va mashaqqat bilan ilm egallashga da'vat etuvchi asar.",
+        "Qarz, shafqat va adolat masalalari ko'tarilgan sahna asari."
+      ],
+      "t": 1,
+      "izoh": "«Eshak bilan baqalar» — Kichik qiyinchilikdan esankiragan kishi haqida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#2ad3f5e7"
+    },
+    {
+      "q": "«Bo'ri va qo'zichoq» haqidagi qaysi ma'lumot to'g'ri?",
+      "v": [
+        "Kuchli kimsa bahona topib zaifni ezishi tasvirlangan.",
+        "Adibning o'z iti va uning sadoqati haqidagi hikoyasi.",
+        "Qirq to'rt bo'limdan iborat; asl nomi «Naqliya so'zlar».",
+        "O'zbek tiliga o'girilgan ijtimoiy mavzudagi hikoya."
+      ],
+      "t": 0,
+      "izoh": "«Bo'ri va qo'zichoq» — Kuchli kimsa bahona topib zaifni ezishi tasvirlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#201cbe39"
+    },
+    {
+      "q": "«Bo'ri bilan laylak» haqidagi qaysi ma'lumot to'g'ri?",
+      "v": [
+        "Badfe'l kimsaning yaxshilikni qadrlamasligi haqida.",
+        "Shoirning o'zbek tilidagi kitoblaridan biri.",
+        "Shoirning yirik she'riy kitoblaridan biri.",
+        "Qamoqxonadagi og'ir kunlar taassurotida bitilgan she'riy asar."
+      ],
+      "t": 0,
+      "izoh": "«Bo'ri bilan laylak» — Badfe'l kimsaning yaxshilikni qadrlamasligi haqida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#64079936"
+    },
+    {
+      "q": "Quyidagi parcha nimani anglatadi? Men-ku buning zag'chaligini bilaman-a, biroq uning o'zi o'zini burgut hisoblaydi-da!",
+      "v": [
+        "Qadrdon go'sha yurakka kenglik bag'ishlaydi.",
+        "Do'sti undan yuz o'girgan lavhadagi tasvir.",
+        "Bog'dagi tortishuvda aytilgan gap.",
+        "Cho'ponning bolalariga bergan javobi."
+      ],
+      "t": 3,
+      "izoh": "«Burgut, zag'cha va cho'pon» asaridagi bu parchada cho'ponning bolalariga bergan javobi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#c2b70175"
+    },
+    {
+      "q": "Quyidagi parcha nimani anglatadi? Alqissa, kimki o'ziga yaxshilik qilganlarga yomonlik sog'insa, u, albatta, jazoga yo'liqqay.",
+      "v": [
+        "Romanning yakuniy sahifasidan.",
+        "Masal shu xulosa bilan yakunlanadi.",
+        "Dashtdagi tun manzarasi tasviri.",
+        "Masalning yakuniy hikmati."
+      ],
+      "t": 3,
+      "izoh": "«Kiyik bilan tokzor» asaridagi bu parchada masalning yakuniy hikmati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#4be7f351"
+    },
+    {
+      "q": "Quyidagi parcha nimani anglatadi? Alqissa, yangi do'stlarni eskilardan afzal tutuvchilar bilan do'stlashishga shoshilmang.",
+      "v": [
+        "Masalning yakunidagi xulosa shu jumla bilan beriladi.",
+        "She'rning birinchi bandi shu manzara bilan boshlanadi.",
+        "G'urbat holati eng ta'sirchan ifodalangan misralar.",
+        "Shu sabab bolalar qizdan hayiqib, u bilan o'ynamas edi."
+      ],
+      "t": 0,
+      "izoh": "«Yovvoyi echkilar bilan cho'pon» asaridagi bu parchada masalning yakunidagi xulosa shu jumla bilan beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#68a5f5e5"
+    },
+    {
+      "q": "Quyidagi parcha nimani anglatadi? Birodar, botqoqqa endigina yiqilganing holda shunchalar nola chekasan, bizga o'xshab umring shu yerda o'tganida nima qilarding?!",
+      "v": [
+        "Botqoq egalarining javobi masalning xulosasini beradi.",
+        "Adib Moskvadagi Oliy adabiyot kursi haqida shunday degan.",
+        "Qahramon o'z zimmasidagi og'ir yukni shunday izohlaydi.",
+        "Muallim aybni faqat bolalarga emas, o'ziga ham yuklaydi."
+      ],
+      "t": 0,
+      "izoh": "«Eshak bilan baqalar» asaridagi bu parchada botqoq egalarining javobi masalning xulosasini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#f9f007a1"
+    },
+    {
+      "q": "Quyidagi parcha nimani anglatadi? Alqissa, ayrimlar ishlatgan hiyla-nayrang ularning o'z boshiga yetarkan.",
+      "v": [
+        "Shoirning o'gitlari axloqiy poklikka chorlaydi.",
+        "Mashhur maktubning boshlanish satri.",
+        "Do'sti undan yuz o'girgan lavhadagi tasvir.",
+        "Masal shu xulosa bilan yakunlanadi."
+      ],
+      "t": 3,
+      "izoh": "«Ustiga tuz ortilgan eshak» asaridagi bu parchada masal shu xulosa bilan yakunlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#27c6e449"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Kelajakni o'ylab mehnat qilgan kishi qiyin kunda kam bo'lmasligi uqtiriladi",
+      "v": [
+        "«Chumoli va chigirtka»",
+        "«G'amzasin sevding, ko'ngul»",
+        "«Sehrli nog'ora»",
+        "«Romeo va Juletta»"
+      ],
+      "t": 0,
+      "izoh": "Bu — «Chumoli va chigirtka» asarining bosh g'oyasi. Masal mehnat va g'amxo'rlikni ulug'laydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#2609c032"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Mehnatdan qochib hiyla ishlatgan kishining nayrangi oxiri o'z boshiga yetishi ko'rsatilgan",
+      "v": [
+        "«Ustiga tuz ortilgan eshak»",
+        "«G'amzasin sevding, ko'ngul»",
+        "«Rahmat sizga, xonim»",
+        "«Akatsiya gullagan joyda»"
+      ],
+      "t": 0,
+      "izoh": "Bu — «Ustiga tuz ortilgan eshak» asarining bosh g'oyasi. Yengil yo'l bilan qo'lga kiritilgan narsa barakali bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#e3459846"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? Qo'li yetmagan narsani yomonlab, o'z ojizligini yashirmoqchi bo'lgan kishi kulgili holga tushishi ko'rsatilgan",
+      "v": [
+        "«Okopdan xatlar»",
+        "«Alvido, qurol!»",
+        "«Tulki va uzum»",
+        "«Martin Iden»"
+      ],
+      "t": 2,
+      "izoh": "Bu — «Tulki va uzum» asarining bosh g'oyasi. Masal nomi maqolga aylanib ketgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#76a0997d"
+    },
+    {
+      "q": "Quyidagi g'oya qaysi asarda ilgari surilgan? O'ziga yaxshilik qilganga yomonlik sog'ingan kishi albatta jazoga yo'liqishi ko'rsatilgan",
+      "v": [
+        "«Xat tashuvchi»",
+        "«Kiyik bilan tokzor»",
+        "«Qutbdagi gunafsha»",
+        "«Qiyiq qizning quyulishi»"
+      ],
+      "t": 1,
+      "izoh": "Bu — «Kiyik bilan tokzor» asarining bosh g'oyasi. Masal ayni paytda nafs balosidan asranishga ham da'vat etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#81ce9e95"
+    },
+    {
+      "q": "«Bo'ri bilan laylak» qaysi janrga mansub?",
+      "v": [
+        "ertak-qissa",
+        "masal",
+        "drama",
+        "komediya"
+      ],
+      "t": 1,
+      "izoh": "«Bo'ri bilan laylak» — masal. Badfe'l kimsaning yaxshilikni qadrlamasligi haqida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_jah_m03-ezop#cb233ffc"
+    },
+    {
+      "q": "«Tulki va uzum» qaysi janrga mansub?",
+      "v": [
+        "roman",
+        "masal",
+        "opera",
+        "doston"
+      ],
+      "t": 1,
+      "izoh": "«Tulki va uzum» — masal. Qo'li yetmagan narsani yomonlash odati fosh etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_jah_m03-ezop#201d7f98"
+    },
+    {
+      "q": "«Eshak bilan baqalar» qaysi janrga mansub?",
+      "v": [
+        "kitob",
+        "opera",
+        "she'r",
+        "masal"
+      ],
+      "t": 3,
+      "izoh": "«Eshak bilan baqalar» — masal. Kichik qiyinchilikdan esankiragan kishi haqida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_jah_m03-ezop#465e526a"
+    },
+    {
+      "q": "«Kiyik bilan tokzor» qaysi janrga mansub?",
+      "v": [
+        "hikoya",
+        "drama",
+        "pandnoma",
+        "masal"
+      ],
+      "t": 3,
+      "izoh": "«Kiyik bilan tokzor» — masal. Yaxshilikka yomonlik qilishning oqibati tasvirlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_jah_m03-ezop#756eb940"
+    },
+    {
+      "q": "«Chumoli va chigirtka» qaysi janrga mansub?",
+      "v": [
+        "she'riy kitob",
+        "libretto",
+        "masal",
+        "lug'at"
+      ],
+      "t": 2,
+      "izoh": "«Chumoli va chigirtka» — masal. Mehnat va beparvolikning oqibati qiyoslanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_jah_m03-ezop#ec97df4d"
+    },
+    {
+      "q": "«Toshbaqa va quyon» qaysi janrga mansub?",
+      "v": [
+        "doston",
+        "opera",
+        "masal",
+        "hikoya"
+      ],
+      "t": 2,
+      "izoh": "«Toshbaqa va quyon» — masal. Sabr bilan qilingan mehnat tezkor beparvolikdan ustun kelishi haqida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_jah_m03-ezop#03594f1e"
+    },
+    {
+      "q": "Laylak obrazi qaysi asarda uchraydi?",
+      "v": [
+        "«Yuksak yulduzlar»",
+        "«Mosart va Salyeri»",
+        "«Daryo ko'rmagan qul hikoyati»",
+        "«Bo'ri bilan laylak»"
+      ],
+      "t": 3,
+      "izoh": "Laylak — «Bo'ri bilan laylak» asari qahramoni. Asarda yaxshilik qiluvchi sifatida keladi. Yirtqichning bo'g'zidan suyakni chiqarib olgan, ammo va'da qilingan mukofotni ololmagan qush.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#e8ab4ccd"
+    },
+    {
+      "q": "Tulki obrazi qaysi asarda uchraydi?",
+      "v": [
+        "«Anor uyi»",
+        "«Qirol Lir»",
+        "«Tulki va uzum»",
+        "«Yovvoyi yo'rg'a»"
+      ],
+      "t": 2,
+      "izoh": "Tulki — «Tulki va uzum» asari qahramoni. Asarda ayyorlik timsoli sifatida keladi. Yeta olmagan mevani nordon deb, o'z ojizligini yashirmoqchi bo'lgan jonivor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#4053a812"
+    },
+    {
+      "q": "Quyon obrazi qaysi asarda uchraydi?",
+      "v": [
+        "«Toshbaqa va quyon»",
+        "«Shifoyi vasl qadrin»",
+        "«Koinot sovg'asi»",
+        "«Yovvoyi yo'rg'a»"
+      ],
+      "t": 0,
+      "izoh": "Quyon — «Toshbaqa va quyon» asari qahramoni. Asarda mag'rurlik timsoli sifatida keladi. Tezligiga ishonib yo'l o'rtasida uxlab qolgani uchun yutqazgan jonivor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#3df949e2"
+    },
+    {
+      "q": "Tokzor obrazi qaysi asarda uchraydi?",
+      "v": [
+        "«Tog'lar qulaganda»",
+        "«Kiyik bilan tokzor»",
+        "«Sizga qanday yoqadi»",
+        "«Baxtli shahzoda»"
+      ],
+      "t": 1,
+      "izoh": "Tokzor — «Kiyik bilan tokzor» asari qahramoni. Asarda ramziy obraz sifatida keladi. Jonivorni ovchi ko'zidan yashirib qolgan, ammo o'sha jonivor tomonidan payhon qilingan panoh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#654c54fa"
+    },
+    {
+      "q": "Quyidagi tavsif qaysi adabiy qahramonga tegishli? Yoz bo'yi kuylab yurib, qish kelganda och qolgan beparvo jonivor",
+      "v": [
+        "Chigirtka",
+        "Qari Tom",
+        "Temirbulat",
+        "Yakkashox"
+      ],
+      "t": 0,
+      "izoh": "Bu — Chigirtka, «Chumoli va chigirtka» asari qahramoni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#ed25735a"
+    },
+    {
+      "q": "Quyidagi tavsif qaysi adabiy qahramonga tegishli? Tezligiga ishonib yo'l o'rtasida uxlab qolgani uchun yutqazgan jonivor",
+      "v": [
+        "Axill",
+        "Layli",
+        "Jamol",
+        "Quyon"
+      ],
+      "t": 3,
+      "izoh": "Bu — Quyon, «Toshbaqa va quyon» asari qahramoni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#c13094b0"
+    },
+    {
+      "q": "Quyidagi tavsif qaysi adabiy qahramonga tegishli? Yangi do'stni eskisidan afzal ko'rgan boquvchidan qochib ketgan tog' jonivorlari",
+      "v": [
+        "Robert Lokamp",
+        "Senyor Molteni",
+        "Patritsiya Holman",
+        "Yovvoyi echkilar"
+      ],
+      "t": 3,
+      "izoh": "Bu — Yovvoyi echkilar, «Yovvoyi echkilar bilan cho'pon» asari qahramoni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#66382853"
+    },
+    {
+      "q": "Quyidagi tavsif qaysi adabiy qahramonga tegishli? Ovchilardan yashiringan joyining barglarini yeb, qilmishi uchun jazolangan jonivor",
+      "v": [
+        "Enkidu",
+        "Paris",
+        "Laert",
+        "Kiyik"
+      ],
+      "t": 3,
+      "izoh": "Bu — Kiyik, «Kiyik bilan tokzor» asari qahramoni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#86b6fe93"
+    },
+    {
+      "q": "Quyidagi tavsif qaysi adabiy qahramonga tegishli? Yoz bo'yi mehnat qilib qish uchun g'amlagan, beparvo qo'shnisiga saboq bergan jonivor",
+      "v": [
+        "Xumbaba",
+        "Talaba",
+        "Chumoli",
+        "Santyago"
+      ],
+      "t": 2,
+      "izoh": "Bu — Chumoli, «Chumoli va chigirtka» asari qahramoni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#22fa590b"
+    },
+    {
+      "q": "Quyidagi tavsif qaysi adabiy qahramonga tegishli? Yirtqichning bo'g'zidan suyakni chiqarib olgan, ammo va'da qilingan mukofotni ololmagan qush",
+      "v": [
+        "Gulruxor",
+        "Fayro'za",
+        "Laylak",
+        "Hans"
+      ],
+      "t": 2,
+      "izoh": "Bu — Laylak, «Bo'ri bilan laylak» asari qahramoni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#3eb70643"
+    },
+    {
+      "q": "«Eshak bilan baqalar» asarining asosiy g'oyasi qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "Lof va xayolparastlik bilan yashagan odamning haqiqiy sinov oldidagi holati kulgili yo'sinda ochilgan",
+        "Mehnat bilan yuksalgan iste'dod egasining jamiyat bilan to'qnashuvi va ma'naviy yolg'izligi ochilgan",
+        "Burchga sodiqlik, bergan so'zda turish va oilaviy vafo har qanday sinovdan ustun turishi ulug'lanadi",
+        "Kichik qiyinchilikdan esankiragan kishi o'zidan og'irroq ahvoldagilarni ko'rib shukr qilishi kerakligi aytiladi"
+      ],
+      "t": 3,
+      "izoh": "«Eshak bilan baqalar»da kichik qiyinchilikdan esankiragan kishi o'zidan og'irroq ahvoldagilarni ko'rib shukr qilishi kerakligi aytiladi. «Birni ko'rib shukur qil» maqoli shu masalga hamohang.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#3b8c1297"
+    },
+    {
+      "q": "«Ustiga tuz ortilgan eshak» asarining asosiy g'oyasi qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "Kuch emas, aql va topqirlik insonni eng xatarli sinovlardan omon olib chiqishi ko'rsatilgan",
+        "Mehnatdan qochib hiyla ishlatgan kishining nayrangi oxiri o'z boshiga yetishi ko'rsatilgan",
+        "Aqlli mashina yaratgan inson uning xatti-harakati uchun ham javob berishi kerakligi aytilgan",
+        "Hasad va yovuzlik o'z egasiga qaytishi, poklik esa panoh topishi ertak yo'sinida ochilgan"
+      ],
+      "t": 1,
+      "izoh": "«Ustiga tuz ortilgan eshak»da mehnatdan qochib hiyla ishlatgan kishining nayrangi oxiri o'z boshiga yetishi ko'rsatilgan. Yengil yo'l bilan qo'lga kiritilgan narsa barakali bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#36fc8e9a"
+    },
+    {
+      "q": "«Bo'ri bilan laylak» asarining asosiy g'oyasi qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "Insonning qadri boylik yoki libosda emas, ilm, odob va hunarda ekani uqtiriladi",
+        "Har bir mavjudot o'zligini tanimaguncha hayotda o'z o'rnini topa olmasligi uqtirilgan",
+        "Badfe'l kimsalar yomonlik qilmaganining o'zini yaxshilikka yo'yishi fosh etiladi",
+        "Xalq qo'shig'i ohangi orqali oddiy odamning dardi va yolg'izligi ifodalangan"
+      ],
+      "t": 2,
+      "izoh": "«Bo'ri bilan laylak»da badfe'l kimsalar yomonlik qilmaganining o'zini yaxshilikka yo'yishi fosh etiladi. Yaxshilikni qadrini biladigan odamga qilish kerakligi uqtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#c8adfb31"
+    },
+    {
+      "q": "«Yovvoyi echkilar bilan cho'pon» asarining asosiy g'oyasi qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "Badfe'l kimsalar yomonlik qilmaganining o'zini yaxshilikka yo'yishi fosh etiladi",
+        "Aybini tan olgan kishiga shafqat qilish ham adolatning bir ko'rinishi ekani ochilgan",
+        "Jamiyatdagi tabaqaviy tafovut va uning bolalar taqdiriga ta'siri ko'rsatilgan",
+        "Yangi do'stni eskisidan afzal ko'radigan kishiga ishonib bo'lmasligi uqtiriladi"
+      ],
+      "t": 3,
+      "izoh": "«Yovvoyi echkilar bilan cho'pon»da yangi do'stni eskisidan afzal ko'radigan kishiga ishonib bo'lmasligi uqtiriladi. Masal do'stlikda sadoqat mezonini eslatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#e134feb2"
+    },
+    {
+      "q": "Quyidagi parcha qaysi asardan olingan? Ha, azizim, bo'rining og'zidan boshing omon chiqqani kammi, yana mukofot deysan-a?!",
+      "v": [
+        "«Bulbul va atirgul»",
+        "«Hadiqat us-suado»",
+        "«Bo'ri bilan laylak»",
+        "«Sarvqomat dilbarim»"
+      ],
+      "t": 2,
+      "izoh": "Parcha «Bo'ri bilan laylak» asaridan. Badfe'l kimsaning javobi masalning mag'zini ochadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#8354f95a"
+    },
+    {
+      "q": "Quyidagi parcha qaysi asardan olingan? Birodar, botqoqqa endigina yiqilganing holda shunchalar nola chekasan, bizga o'xshab umring shu yerda o'tganida nima qilarding?!",
+      "v": [
+        "«Yovvoyi yo'rg'a»",
+        "«Eshak bilan baqalar»",
+        "«Kapitan Grant bolalari»",
+        "«Suhbat ul-asmor»"
+      ],
+      "t": 1,
+      "izoh": "Parcha «Eshak bilan baqalar» asaridan. Botqoq egalarining javobi masalning xulosasini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#1683293c"
+    },
+    {
+      "q": "Quyidagi parcha qaysi asardan olingan? Alqissa, yangi do'stlarni eskilardan afzal tutuvchilar bilan do'stlashishga shoshilmang.",
+      "v": [
+        "«Ko'kka sovurilgan yillar»",
+        "«Yovvoyi echkilar bilan cho'pon»",
+        "«Kapitan Grant bolalari»",
+        "«Shoir bo'lsang, xabar ber»"
+      ],
+      "t": 1,
+      "izoh": "Parcha «Yovvoyi echkilar bilan cho'pon» asaridan. Masalning yakunidagi xulosa shu jumla bilan beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#9c0f2d64"
+    },
+    {
+      "q": "Quyidagi parcha qaysi asardan olingan? Men-ku buning zag'chaligini bilaman-a, biroq uning o'zi o'zini burgut hisoblaydi-da!",
+      "v": [
+        "«O'n besh yoshli kapitan»",
+        "«Mening oltin Bengaliyam»",
+        "«Redingdagi qamoqxona balladasi»",
+        "«Burgut, zag'cha va cho'pon»"
+      ],
+      "t": 3,
+      "izoh": "Parcha «Burgut, zag'cha va cho'pon» asaridan. Cho'ponning bolalariga bergan javobi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#768ce690"
+    },
+    {
+      "q": "Ezop masallari ta'sirida ijod qilgan fransuz masalnavisi kim?",
+      "v": [
+        "Onore de Balzak",
+        "Viktor Gyugo",
+        "Alfons Dode",
+        "Jan Lafonten"
+      ],
+      "t": 3,
+      "izoh": "U masallarni qayta ishlab, o'z davriga moslagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#ec26ddae"
+    },
+    {
+      "q": "Ezop Samos orolida kimga sotilgani hikoya qilinadi?",
+      "v": [
+        "Krezga",
+        "Ksanfga",
+        "Likurgga",
+        "Solonga"
+      ],
+      "t": 1,
+      "izoh": "U shu xo'jayinini eng og'ir vaziyatlardan qutqarib turgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#c560cf7f"
+    },
+    {
+      "q": "O'zbek adabiyotida masalchilikni rivojlantirgan «Zarbulmasal» asari muallifi kim?",
+      "v": [
+        "Muhammadsharif Gulxaniy",
+        "Muhammad Rizo Ogahiy",
+        "Zokirjon Furqat",
+        "Boborahim Mashrab"
+      ],
+      "t": 0,
+      "izoh": "Asar majoziy hikoyat an'anasini o'zbek zaminida davom ettirgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#8028ed33"
+    },
+    {
+      "q": "«Toshbaqa va quyon» masalida g'alaba kimga nasib qiladi?",
+      "v": [
+        "eng tez yuguradigan jonivorga",
+        "eng ayyor jonivorga",
+        "sekin, ammo to'xtamay yurgan jonivorga",
+        "eng kuchli jonivorga"
+      ],
+      "t": 2,
+      "izoh": "Masal izchillikni tezlikdan ustun qo'yadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "adabiyot_jah_m03-ezop#ec375cdb"
+    },
+    {
+      "q": "Ezop masallarini qayta ishlab rus adabiyotida masalchilikni rivojlantirgan adib kim?",
+      "v": [
+        "Aleksandr Pushkin",
+        "Nikolay Nekrasov",
+        "Ivan Krilov",
+        "Mixail Lermontov"
+      ],
+      "t": 2,
+      "izoh": "Uning masallari o'zbek tiliga ham ko'p bor o'girilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#7b13145e"
+    },
+    {
+      "q": "Fikrni ochiq aytmay, ishora va kinoya bilan bildirish usuli qanday ataladi?",
+      "v": [
+        "ilmiy uslub",
+        "Ezop tili",
+        "notiqlik san'ati",
+        "she'riy nutq"
+      ],
+      "t": 1,
+      "izoh": "Ibora aynan masalnavis nomi bilan bog'liq holda paydo bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#db85fc0c"
+    },
+    {
+      "q": "Alisher Navoiy ijodida majoziy hikoyat an'anasi eng yorqin ko'ringan doston qaysi?",
+      "v": [
+        "«Lison ut-tayr»",
+        "«Farhod va Shirin»",
+        "«Sab'ai sayyor»",
+        "«Saddi Iskandariy»"
+      ],
+      "t": 0,
+      "izoh": "Dostonda qushlar tilidan ramziy hikoyatlar keltiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#f5854e8f"
+    },
+    {
+      "q": "Ezop garovda yordam berganidan keyin xo'jayinidan nima so'raydi?",
+      "v": [
+        "boylik",
+        "mansab",
+        "uy-joy",
+        "ozodlik"
+      ],
+      "t": 3,
+      "izoh": "Xo'jayin esa uni kaltaklashga buyuradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#07d02fc4"
+    },
+    {
+      "q": "Rivoyatga ko'ra Ezop qullikdan xalos bo'lgach kimning saroyida xizmat qilgan?",
+      "v": [
+        "Makedoniya shohi Filippning",
+        "Fors shohi Kirning",
+        "Misr fir'avni Ramzesning",
+        "Lidiya shohi Krezning"
+      ],
+      "t": 3,
+      "izoh": "Keyinchalik u xazinabon darajasiga ko'tarilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#a68e5b15"
+    },
+    {
+      "q": "«Ustiga tuz ortilgan eshak» masalida eshakning ikkinchi safar ustiga nima ortilgan edi?",
+      "v": [
+        "g'alla",
+        "temir",
+        "yuvg'ich",
+        "sopol idish"
+      ],
+      "t": 2,
+      "izoh": "Yuvg'ich suvni shimib olib, yuk yanada og'irlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "adabiyot_jah_m03-ezop#2a30f31e"
+    },
+    {
+      "q": "Sharq adabiyotida hayvonlar tilidan aytilgan ibratli hikoyatlar to'plami sifatida qaysi asar tilga olinadi?",
+      "v": [
+        "«Boburnoma»",
+        "«Qutadg'u bilig»",
+        "«Devonu lug'otit turk»",
+        "«Kalila va Dimna»"
+      ],
+      "t": 3,
+      "izoh": "U qadim hind adabiyotining nodir namunasidan o'sib chiqqan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#f331d0b3"
+    },
+    {
+      "q": "Ezop qaysi mamlakatdan kelib chiqqani rivoyat qilinadi?",
+      "v": [
+        "Frigiyadan",
+        "Lidiyadan",
+        "Makedoniyadan",
+        "Frakiyadan"
+      ],
+      "t": 0,
+      "izoh": "U urushlar natijasida qul qilib Yunonistonga keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#5f9db44f"
+    },
+    {
+      "q": "Masalning asosiy vazifasi nimadan iborat?",
+      "v": [
+        "tarixiy voqeani hujjatlash",
+        "tabiat manzarasini chizish",
+        "tarbiyaviy maqsadga xizmat qilish",
+        "qahramonlik jangini kuylash"
+      ],
+      "t": 2,
+      "izoh": "Masal doim ibrat va xulosa bilan yakunlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#49a1c48c"
+    },
+    {
+      "q": "Baqalar — «Eshak bilan baqalar» asarining qanday obrazi?",
+      "v": [
+        "hayotiy saboq beruvchilar",
+        "kulgili obraz",
+        "ikkinchi darajali obraz",
+        "bosh qahramon"
+      ],
+      "t": 0,
+      "izoh": "Botqoqda umr kechirgani uchun boshqaning nolasini ortiqcha deb bilgan jonivorlar. Shu bois u asarda hayotiy saboq beruvchilar sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#62a07cc5"
+    },
+    {
+      "q": "Quyon — «Toshbaqa va quyon» asarining qanday obrazi?",
+      "v": [
+        "bosh qahramon",
+        "raqib timsoli",
+        "mag'rurlik timsoli",
+        "kulgili obraz"
+      ],
+      "t": 2,
+      "izoh": "Tezligiga ishonib yo'l o'rtasida uxlab qolgani uchun yutqazgan jonivor. Shu bois u asarda mag'rurlik timsoli sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#7af2f984"
+    },
+    {
+      "q": "Zag'cha — «Burgut, zag'cha va cho'pon» asarining qanday obrazi?",
+      "v": [
+        "ikkinchi darajali obraz",
+        "maqtanchoq timsoli",
+        "kulgili obraz",
+        "raqib timsoli"
+      ],
+      "t": 1,
+      "izoh": "Yirtqich qushga taqlid qilib qo'chqorga tashlangan, oxiri qanotlaridan ayrilgan qush. Shu bois u asarda maqtanchoq timsoli sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#b048c194"
+    },
+    {
+      "q": "Toshbaqa — «Toshbaqa va quyon» asarining qanday obrazi?",
+      "v": [
+        "qo'shni bola",
+        "sabr timsoli",
+        "asosiy raqib",
+        "ramziy obraz"
+      ],
+      "t": 1,
+      "izoh": "Sekin, ammo to'xtamay yurib musobaqada g'olib chiqqan jonivor. Shu bois u asarda sabr timsoli sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#0f4db060"
+    },
+    {
+      "q": "Tokzor — «Kiyik bilan tokzor» asarining qanday obrazi?",
+      "v": [
+        "asosiy raqib",
+        "kulgili obraz",
+        "ramziy obraz",
+        "qo'shni bola"
+      ],
+      "t": 2,
+      "izoh": "Jonivorni ovchi ko'zidan yashirib qolgan, ammo o'sha jonivor tomonidan payhon qilingan panoh. Shu bois u asarda ramziy obraz sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "adabiyot_jah_m03-ezop#586772a7"
+    }
+  ]
+}

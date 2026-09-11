@@ -1,0 +1,531 @@
+{
+  "nom": "45-mavzu. Yoruglikning Qaytish Va Sinish Qonunlari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Yorug'lik nuri deb nimaga aytiladi?",
+      "v": [
+        "Yo'nalishlari fazoning ixtiyoriy nuqtasida yorug'lik energiyasining ko'chish yo'nalishi bilan ustma-ust tushgan geometrik chiziqqa",
+        "Yorug'lik manbayidan chiqadigan har qanday ingichka nur dastasiga",
+        "Yorug'likning eng tez tarqaladigan yo'liga",
+        "Ikki muhit chegarasida sinadigan nurga"
+      ],
+      "t": 0,
+      "izoh": "Yo'nalishlari fazoning ixtiyoriy nuqtasida yorug'lik energiyasining ko'chish yo'nalishi bilan ustma-ust tushgan geometrik chiziq yorug'lik nuri deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#1272a3fd"
+    },
+    {
+      "q": "Yorug'likning tarqalish qonunlarini o'rganadigan optika bo'limi qanday ataladi?",
+      "v": [
+        "Geometrik optika",
+        "To'lqin optikasi",
+        "Kvant optikasi",
+        "Nur tolalar optikasi"
+      ],
+      "t": 0,
+      "izoh": "Yorug'likning tarqalish qonunlarini o'rganadigan bo'lim geometrik optika deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#69970eca"
+    },
+    {
+      "q": "Geometrik optika nechta qonunga asoslangan?",
+      "v": [
+        "To'rtta qonunga",
+        "Ikkita qonunga",
+        "Uchta qonunga",
+        "Beshta qonunga"
+      ],
+      "t": 0,
+      "izoh": "Geometrik optika to'rtta qonunga asoslangan: to'g'ri chiziq bo'ylab tarqalish, mustaqillik, qaytish va sinish qonunlari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#e21e47b4"
+    },
+    {
+      "q": "Quyoshli kunda daraxt va binolarning soyasi qaysi qonunning natijasida hosil bo'ladi?",
+      "v": [
+        "Yorug'likning to'g'ri chiziq bo'ylab tarqalishi",
+        "Yorug'likning qaytish qonuni",
+        "Yorug'likning sinish qonuni",
+        "Yorug'likning mustaqillik qonuni"
+      ],
+      "t": 0,
+      "izoh": "Soyalar yorug'likning to'g'ri chiziq bo'ylab tarqalishi natijasida hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#0e1f3c60"
+    },
+    {
+      "q": "Yorug'lik nurlari o'zaro kesishganda bir-biriga qanday ta'sir ko'rsatadi?",
+      "v": [
+        "Hech qanday ta'sir ko'rsatmaydi",
+        "Bir-birini so'ndiradi",
+        "Bir-birining yo'nalishini o'zgartiradi",
+        "Bir-birini kuchaytiradi"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik nurlari o'zaro kesishganda bir-biriga hech qanday ta'sir ko'rsatmaydi — bu yorug'lik nurining mustaqillik tamoyili.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#62719d27"
+    },
+    {
+      "q": "Yorug'likning tarqoq (diffuz) qaytishi qanday sirtdan kuzatiladi?",
+      "v": [
+        "G'adir-budur, silliqlanmagan sirtdan",
+        "Tekis silliqlangan sirtdan",
+        "Yassi ko'zgu sirtdan",
+        "Shaffof shisha sirtdan"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik silliqlanmagan, ya'ni g'adir-budur sirtdan tarqoq (diffuz) qaytadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#f14d2253"
+    },
+    {
+      "q": "Ko'zgu deb qanday sirtdirga aytiladi?",
+      "v": [
+        "Yorug'likni yaxshi qaytaruvchi silliq sirtdirga",
+        "Yorug'likni yaxshi yutuvchi qora sirtdirga",
+        "Yorug'likni o'tkazuvchi shaffof sirtdirga",
+        "Yorug'likni tarqoq qaytaruvchi sirtdirga"
+      ],
+      "t": 0,
+      "izoh": "Yorug'likni yaxshi qaytaruvchi silliq sirtdirga ko'zgu deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#05bde85d"
+    },
+    {
+      "q": "Yassi ko'zguga tushgan parallel nurlar dastasi qaytgandan keyin qanday bo'ladi?",
+      "v": [
+        "Yana parallel nurlar dastasi ko'rinishida qoladi",
+        "Bitta nuqtaga yig'iladi",
+        "Turli yo'nalishlarda sochiladi",
+        "To'liq yutiladi"
+      ],
+      "t": 0,
+      "izoh": "Yassi ko'zguga tushgan parallel nurlar dastasi qaytgandan keyin ham parallel nurlar dastasi ko'rinishida qoladi — bu ko'zgusimon qaytish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#138c5b87"
+    },
+    {
+      "q": "Tekis qaytish yana qanday ataladi?",
+      "v": [
+        "Ko'zgusimon qaytish",
+        "Diffuz qaytish",
+        "To'la ichki qaytish",
+        "Tarqoq qaytish"
+      ],
+      "t": 0,
+      "izoh": "Tekis silliqlangan sirtdan qaytish tekis qaytish yoki ko'zgusimon qaytish deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#137ddc91"
+    },
+    {
+      "q": "Yorug'likning qaytish qonunining birinchi qismi nimadan iborat?",
+      "v": [
+        "Tushgan nur, qaytgan nur va ikki muhit chegarasiga nurning tushish nuqtasiga o'tkazilgan perpendikulyar bir tekislikda yotadi",
+        "Qaytish burchagi tushish burchagidan ikki marta katta",
+        "Tushgan nur va qaytgan nur o'zaro perpendikulyar bo'ladi",
+        "Qaytgan nur tushgan nurga qarama-qarshi yo'naladi"
+      ],
+      "t": 0,
+      "izoh": "Qaytish qonunining birinchi qismi: tushgan nur, qaytgan nur va tushish nuqtasiga o'tkazilgan perpendikulyar bir tekislikda yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#d0f9acad"
+    },
+    {
+      "q": "Yorug'likning qaytish qonuni qanday ifodalanadi?",
+      "v": [
+        "α = γ",
+        "α = 2γ",
+        "α + γ = 90°",
+        "α = γ/2"
+      ],
+      "t": 0,
+      "izoh": "Qaytish burchagi γ tushish burchagi α ga teng: α = γ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#7ebd42c7"
+    },
+    {
+      "q": "Yassi ko'zgu orqali buyumning aksini ko'rish qaysi qonunga asoslangan?",
+      "v": [
+        "Yorug'likning qaytish qonuniga",
+        "Yorug'likning sinish qonuniga",
+        "Yorug'likning mustaqillik qonuniga",
+        "Yorug'likning to'g'ri chiziq bo'ylab tarqalishiga"
+      ],
+      "t": 0,
+      "izoh": "Yassi ko'zgu orqali buyumning ko'zgudagi aksini ko'rish yorug'likning qaytish qonuniga asoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#c13aa844"
+    },
+    {
+      "q": "Nisbiy nur sindirish ko'rsatkichi qanday ifodalanadi?",
+      "v": [
+        "n₂₁ = sin α / sin β",
+        "n₂₁ = sin β / sin α",
+        "n₂₁ = α / β",
+        "n₂₁ = υ₁ / υ₂"
+      ],
+      "t": 0,
+      "izoh": "Nisbiy nur sindirish ko'rsatkichi n₂₁ = sin α / sin β, bunda α — tushish, β — sinish burchagi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#1bad34f0"
+    },
+    {
+      "q": "Moddaning absolut nur sindirish ko'rsatkichi qanday ifodalanadi?",
+      "v": [
+        "n = c/υ",
+        "n = υ/c",
+        "n = c·υ",
+        "n = sin α/sin β"
+      ],
+      "t": 0,
+      "izoh": "Absolut nur sindirish ko'rsatkichi n = c/υ, bunda c — vakuumdagi, υ — moddadagi yorug'lik tezligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#0cf20214"
+    },
+    {
+      "q": "Suvning absolut nur sindirish ko'rsatkichi qancha?",
+      "v": [
+        "1,33",
+        "1,31",
+        "1,5",
+        "1,54"
+      ],
+      "t": 0,
+      "izoh": "Jadval bo'yicha suv (20°C) uchun n = 1,33.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#5d617e22"
+    },
+    {
+      "q": "Shishaning absolut nur sindirish ko'rsatkichi qancha?",
+      "v": [
+        "1,5",
+        "1,33",
+        "1,31",
+        "2,42"
+      ],
+      "t": 0,
+      "izoh": "Jadval bo'yicha shisha uchun n = 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#3124aa90"
+    },
+    {
+      "q": "Quyidagi moddalardan qaysi birida yorug'lik eng sekin tarqaladi?",
+      "v": [
+        "Olmosda (n = 2,42)",
+        "Shishada (n = 1,5)",
+        "Suvda (n = 1,33)",
+        "Muzda (n = 1,31)"
+      ],
+      "t": 0,
+      "izoh": "n = c/υ bo'lgani uchun sindirish ko'rsatkichi eng katta bo'lgan moddada yorug'lik tezligi eng kichik — bu olmos (n = 2,42).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#db7038a8"
+    },
+    {
+      "q": "Muzda yorug'likning tarqalish tezligi qancha?",
+      "v": [
+        "2,29·10⁸ m/s",
+        "2,25·10⁸ m/s",
+        "2,0·10⁸ m/s",
+        "1,24·10⁸ m/s"
+      ],
+      "t": 0,
+      "izoh": "Jadval bo'yicha muzda υ = 2,29·10⁸ m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#f8df45ff"
+    },
+    {
+      "q": "Amalda moddalarning nur sindirish ko'rsatkichi nimaga nisbatan olinadi?",
+      "v": [
+        "Havoga nisbatan",
+        "Vakuumga nisbatan",
+        "Suvga nisbatan",
+        "Shishaga nisbatan"
+      ],
+      "t": 0,
+      "izoh": "Yorug'likning havodagi tezligi vakuumdagiga taxminan teng bo'lgani uchun amalda sindirish ko'rsatkichi havoga nisbatan olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#4232a75d"
+    },
+    {
+      "q": "Sinish qonunining to'liq ko'rinishi (5-formula) qanday?",
+      "v": [
+        "n₂/n₁ = sin α / sin β",
+        "n₁/n₂ = sin α / sin β",
+        "n₂·n₁ = sin α · sin β",
+        "n₂ − n₁ = sin α − sin β"
+      ],
+      "t": 0,
+      "izoh": "Sinish qonuni n₂/n₁ = sin α/sin β ko'rinishda ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#a2389c39"
+    },
+    {
+      "q": "Yorug'lik nuri sindirish ko'rsatkichi kichik muhitdan katta muhitga o'tganda sinish burchagi tushish burchagidan qanday bo'ladi?",
+      "v": [
+        "Kichik bo'ladi",
+        "Katta bo'ladi",
+        "Teng bo'ladi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Sindirish ko'rsatkichi kichik muhitdan katta muhitga o'tganda sinish burchagi tushish burchagidan kichik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#98b6c334"
+    },
+    {
+      "q": "Ikki muhit chegarasiga nur perpendikulyar tushganda nima bo'ladi?",
+      "v": [
+        "Nur sinmaydi, chunki α = 0° va β = 0° bo'ladi",
+        "Nur to'liq qaytadi",
+        "Nur 90° ga sinadi",
+        "Nur chegarada yo'qoladi"
+      ],
+      "t": 0,
+      "izoh": "Perpendikulyar tushganda tushish burchagi α = 0° va sinish burchagi β = 0° bo'ladi, nur sinmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#234efc0a"
+    },
+    {
+      "q": "Yorug'lik nuri havodan shishaga α burchak ostida tushib, yana havoga chiqsa, shishadan chiqishdagi sinish burchagi qancha bo'ladi?",
+      "v": [
+        "α ga teng",
+        "α dan katta",
+        "α dan kichik",
+        "90° ga teng"
+      ],
+      "t": 0,
+      "izoh": "Nur shishadan havoga o'tishdagi sinish burchagi ham α ga teng bo'ladi (69-rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#5fe5f3f4"
+    },
+    {
+      "q": "Sinishing fizik sababi nima?",
+      "v": [
+        "Yorug'likning turli muhitlarda turlicha tezlikda tarqalishi",
+        "Yorug'lik nurlarining bir-biriga ta'siri",
+        "Muhit chegarasining notekisligi",
+        "Yorug'lik manbaining siljishi"
+      ],
+      "t": 0,
+      "izoh": "Sinish yorug'likning har bir muhitda turli tezlikda tarqalishi bilan bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#948f8543"
+    },
+    {
+      "q": "Nisbiy nur sindirish ko'rsatkichi n₂₁ ikki muhitdagi tezliklar orqali qanday ifodalanadi?",
+      "v": [
+        "n₂₁ = υ₁/υ₂",
+        "n₂₁ = υ₂/υ₁",
+        "n₂₁ = υ₁·υ₂",
+        "n₂₁ = c/υ₂"
+      ],
+      "t": 0,
+      "izoh": "n₂/n₁ = υ₁/υ₂ munosabatdan n₂₁ = n₂/n₁ = υ₁/υ₂ kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#fab96bf7"
+    },
+    {
+      "q": "Yoqutning absolut nur sindirish ko'rsatkichi qancha?",
+      "v": [
+        "1,76",
+        "1,54",
+        "1,5",
+        "2,42"
+      ],
+      "t": 0,
+      "izoh": "Jadval bo'yicha yoqut uchun n = 1,76.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#16fe0126"
+    },
+    {
+      "q": "Yorug'lik nuri g'adir-budur sirtdan qaytganda nima uchun turli yo'nalishlarda tarqaladi?",
+      "v": [
+        "Sirtning turli qismlarida perpendikulyarlar turlicha yo'nalgan",
+        "Nurlar bir-birini itarib yuboradi",
+        "Sirt nurlarning bir qismini yutadi",
+        "Nurlar sirt ichida sinib chiqadi"
+      ],
+      "t": 0,
+      "izoh": "Notekis sirtda tushish nuqtalaridagi perpendikulyarlar turli yo'nalgani uchun qaytgan nurlar turli yo'nalishlarda tarqaladi — diffuz qaytish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#6a3d47a8"
+    },
+    {
+      "q": "S nuqtaviy manba oldidagi A jismning ekrandagi soyasi qanday shaklda bo'ladi?",
+      "v": [
+        "Kesik konus shaklida",
+        "Silindr shaklida",
+        "Shar shaklida",
+        "Tekis doira shaklida"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik to'g'ri chiziq bo'ylab tarqalgani uchun jism orqasida kesik konus shaklidagi soya hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#9296fdcc"
+    },
+    {
+      "q": "Kvars moddasining nur sindirish ko'rsatkichi qancha?",
+      "v": [
+        "1,54",
+        "1,76",
+        "1,5",
+        "1,33"
+      ],
+      "t": 0,
+      "izoh": "Jadval bo'yicha kvars uchun n = 1,54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#3d328e0b"
+    },
+    {
+      "q": "Absolut nur sindirish ko'rsatkichining fizik ma'nosi nimada?",
+      "v": [
+        "Yorug'likning vakuumdagi tezligi moddadagi tezligidan necha marta kattaligini ko'rsatadi",
+        "Moddaning zichligini ko'rsatadi",
+        "Nurning qancha burchakka sinishini ko'rsatadi",
+        "Moddaning shaffoflik darajasini ko'rsatadi"
+      ],
+      "t": 0,
+      "izoh": "n = c/υ bo'lgani uchun absolut sindirish ko'rsatkichi yorug'likning vakuumdagi tezligi moddadagidan necha marta katta ekanini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#c3e1f192"
+    },
+    {
+      "q": "Suv quyilgan stakan tubidagi tanga suv sathi ortishi bilan ko'tarilgandek ko'rinishining sababi nima?",
+      "v": [
+        "Tangadan kelgan nurlarning suv-havo chegarasida sinishi",
+        "Suvning tangani ko'tarib yuborishi",
+        "Tanganing suvda erib kichrayishi",
+        "Nurlarning suv sirtidan to'liq qaytishi"
+      ],
+      "t": 0,
+      "izoh": "Tanga nurining suv-havo chegarasida sinishi tufayli tanga haqiqiy o'rnidan yuqoriroqda ko'rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#9a1ca30d"
+    },
+    {
+      "q": "Nur sindirish ko'rsatkichi n = 2 bo'lgan muhitda yorug'lik qanday tezlik bilan tarqaladi?",
+      "v": [
+        "1,5·10⁸ m/s",
+        "3·10⁸ m/s",
+        "6·10⁸ m/s",
+        "2·10⁸ m/s"
+      ],
+      "t": 0,
+      "izoh": "υ = c/n = 3·10⁸/2 = 1,5·10⁸ m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#c9abc3f0"
+    },
+    {
+      "q": "Yorug'lik nur dastasi shisha, suv kabi shaffof moddalar sirtidan nima qiladi?",
+      "v": [
+        "Ham qaytadi, ham sinib ikkinchi muhitga o'tadi",
+        "Faqat qaytadi",
+        "Faqat sinadi",
+        "To'liq yutiladi"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik nuri shaffof moddalar sirtidan ham qaytadi, ham sinib ikkinchi muhitga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#5eee715c"
+    },
+    {
+      "q": "Sinf xonasidagi bir nechta chiroqlarning nurlari kesishganda soya hosil bo'lmasligi qaysi tamoyilni ko'rsatadi?",
+      "v": [
+        "Yorug'lik nurlarining mustaqillik tamoyilini",
+        "Yorug'likning qaytish qonunini",
+        "Yorug'likning sinish qonunini",
+        "Yorug'likning to'g'ri chiziq bo'ylab tarqalishini"
+      ],
+      "t": 0,
+      "izoh": "Nurlar kesishganda bir-biriga ta'sir ko'rsatmasligi yorug'lik nurining mustaqillik tamoyilini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#7278f810"
+    },
+    {
+      "q": "Yorug'likning sinish qonunining birinchi qismi nimani bildiradi?",
+      "v": [
+        "Tushgan nur, singan nur va chegaraga tushish nuqtasiga o'tkazilgan perpendikulyar bir tekislikda yotishini",
+        "Tushish va sinish burchaklarining tengligini",
+        "Sinish burchagining tushish burchagidan kattaligini",
+        "Nurning chegaradan qaytmasligini"
+      ],
+      "t": 0,
+      "izoh": "Sinish qonunining birinchi qismi: tushgan nur, singan nur va tushish nuqtasiga o'tkazilgan perpendikulyar bir tekislikda yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari#0ce52086"
+    }
+  ]
+}

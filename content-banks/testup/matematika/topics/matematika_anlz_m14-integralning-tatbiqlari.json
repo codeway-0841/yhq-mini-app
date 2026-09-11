@@ -1,0 +1,1609 @@
+{
+  "nom": "Integralning tatbiqlari",
+  "bolim": "Matematik analiz asoslari",
+  "blok": "anlz",
+  "rasmiyBolim": 5,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "y = x² parabola, Ox o'qi hamda x = 0 va x = 3 to'g'ri chiziqlar bilan chegaralangan egri chiziqli trapetsiyaning yuzasini toping.",
+      "v": [
+        "27",
+        "9",
+        "4,5",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Egri chiziqli trapetsiya yuzasi S = ∫₀³x²dx. x² ning boshlang'ich funksiyasi x³/3. Nyuton-Leybnits formulasi bo'yicha S = 3³/3 − 0³/3 = 27/3 = 9. 27 — 3 ga bo'lishni unutgan javob, 4,5 — x²/2 ni boshlang'ich funksiya deb olish, 6 esa hosila (2x) ni qo'llash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-egri-trapetsiya-daraja",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#17f58ac6"
+    },
+    {
+      "q": "y = x³ egri chizig'i, Ox o'qi va x = 1, x = 2 to'g'ri chiziqlar bilan chegaralangan shaklning yuzasi nechaga teng?",
+      "v": [
+        "3,75",
+        "15",
+        "7,5",
+        "0,25"
+      ],
+      "t": 0,
+      "izoh": "x³ ning boshlang'ich funksiyasi x⁴/4. S = 2⁴/4 − 1⁴/4 = 4 − 0,25 = 3,75. 15 — natijani 4 ga bo'lishni unutish, 7,5 — 4 o'rniga 2 ga bo'lish, 0,25 esa chegaralar ayirmasini (2 − 1) formulaga qo'yish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-egri-trapetsiya-daraja",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#a8247526"
+    },
+    {
+      "q": "y = √x funksiya grafigi, Ox o'qi va x = 4 to'g'ri chiziq bilan chegaralangan egri chiziqli trapetsiyaning yuzasini hisoblang.",
+      "v": [
+        "16/3",
+        "8/3",
+        "32/3",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "√x = x^(1/2) ning boshlang'ich funksiyasi (2/3)x^(3/2). S = (2/3)·4^(3/2) − 0 = (2/3)·8 = 16/3. 32/3 — 4^(3/2) ni 16 deb hisoblash, 8/3 — 2/3 o'rniga 1/3 koeffitsiyentini olish, 16 esa bo'linmani umuman qoldirmaslik xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-egri-trapetsiya-daraja",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#f59ff05d"
+    },
+    {
+      "q": "y = 3x² + 2 funksiya grafigi, Ox o'qi va x = 0, x = 2 chiziqlari bilan chegaralangan shakl yuzasini toping.",
+      "v": [
+        "8",
+        "12",
+        "24",
+        "28"
+      ],
+      "t": 1,
+      "izoh": "3x² + 2 ning boshlang'ich funksiyasi x³ + 2x. S = (2³ + 2·2) − 0 = 8 + 4 = 12. 8 — o'zgarmas 2 hadini tashlab ketish, 24 — faqat 3x³ hadini olish, 28 esa 3x² uchun 3x³ boshlang'ich funksiyani ishlatib 24 + 4 ni chiqarish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-egri-trapetsiya-daraja",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#42106884"
+    },
+    {
+      "q": "y = x² + 1 egri chizig'i, Ox o'qi va x = −1, x = 2 vertikal chiziqlar bilan chegaralangan shakl yuzasi qanchaga teng?",
+      "v": [
+        "3",
+        "10/3",
+        "6",
+        "14/3"
+      ],
+      "t": 2,
+      "izoh": "Boshlang'ich funksiya x³/3 + x. Yuqori chegarada 8/3 + 2 = 14/3, quyi chegarada −1/3 − 1 = −4/3. S = 14/3 − (−4/3) = 18/3 = 6. 14/3 — manfiy oraliqni umuman hisoblamaslik, 10/3 — quyi chegarada ishorani noto'g'ri qo'yish, 3 esa +1 hadini unutish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-egri-trapetsiya-daraja",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#836ba59a"
+    },
+    {
+      "q": "y = 4 − x² parabolasi va Ox o'qi bilan chegaralangan shaklning yuzasini toping (parabola Ox o'qini x = −2 va x = 2 nuqtalarda kesadi).",
+      "v": [
+        "16/3",
+        "32/3",
+        "16",
+        "64/3"
+      ],
+      "t": 1,
+      "izoh": "S = ∫₋₂²(4 − x²)dx = [4x − x³/3] ayirmasi. Yuqori chegarada 8 − 8/3 = 16/3, quyi chegarada −8 + 8/3 = −16/3. S = 16/3 + 16/3 = 32/3. 16 — x³/3 hadini tashlab ketish, 16/3 — faqat yarim shaklni hisoblash, 64/3 esa simmetriyani ikki marta qo'llash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-parabola-ox-ildizlar",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#85c8a50f"
+    },
+    {
+      "q": "y = x² − 5x + 6 parabola va Ox o'qi bilan chegaralangan shaklning yuzasi nechaga teng?",
+      "v": [
+        "1/6",
+        "−1/6",
+        "1/3",
+        "1/12"
+      ],
+      "t": 0,
+      "izoh": "Ildizlari x = 2 va x = 3. Bu oraliqda parabola Ox dan pastda yotadi. F(x) = x³/3 − 5x²/2 + 6x bo'lsa, F(3) = 4,5 va F(2) = 14/3, ya'ni integral −1/6. Yuza modul bilan olinadi: 1/6. −1/6 — modul olinmagani, 1/3 esa (b − a)³/6 o'rniga (b − a)³/3 formulasini ishlatish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-parabola-ox-ildizlar",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#ef80c9dd"
+    },
+    {
+      "q": "Shahar bog'ida gulzorning chegarasi y = 9 − x² parabola va Ox o'qi bilan berilgan, o'lchov birligi metrda. Gulzorning yuzasi qancha?",
+      "v": [
+        "18 m²",
+        "36 m²",
+        "54 m²",
+        "72 m²"
+      ],
+      "t": 1,
+      "izoh": "Parabola Ox o'qini x = −3 va x = 3 nuqtalarda kesadi. S = ∫₋₃³(9 − x²)dx, boshlang'ich funksiya 9x − x³/3. Yuqorida 27 − 9 = 18, quyida −27 + 9 = −18, demak S = 36 m². 54 — x³/3 hadini tashlab ketish, 18 — faqat yarim gulzor, 72 esa simmetriyani ortiqcha qo'llash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-parabola-ox-ildizlar",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#4d356dc7"
+    },
+    {
+      "q": "y = 2x − x² parabola va Ox o'qi bilan chegaralangan shaklning yuzasini hisoblang, javobni oddiy kasr ko'rinishida yozing.",
+      "v": [
+        "2/3",
+        "8/3",
+        "−4/3",
+        "4/3"
+      ],
+      "t": 3,
+      "izoh": "2x − x² = 0 tenglamadan x = 0 va x = 2. S = ∫₀²(2x − x²)dx = 4 − 8/3 = 4/3. Xuddi shu natija (b − a)³/6 = 8/6 formulasidan ham chiqadi. 8/3 — 6 o'rniga 3 ga bo'lish, 2/3 — 12 ga bo'lish, −4/3 esa ayirish tartibini almashtirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-parabola-ox-ildizlar",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#af6799ba"
+    },
+    {
+      "q": "y = x³ − x kubik funksiya grafigi va Ox o'qi hosil qilgan ikkita shaklning umumiy yuzasini toping.",
+      "v": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/2"
+      ],
+      "t": 2,
+      "izoh": "Ildizlar: x = −1, x = 0 va x = 1. ∫₀¹(x³ − x)dx = 1/4 − 1/2 = −1/4, demak o'ng bo'lakning yuzasi 1/4. Funksiya toq bo'lgani uchun chap bo'lak ham 1/4, jami 1/2. 0 — ∫₋₁¹ ni to'g'ridan-to'g'ri hisoblash, 3/2 esa x ni x² deb integrallash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-parabola-ox-ildizlar",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#c5493ac2"
+    },
+    {
+      "q": "y = x² parabola va y = 3x to'g'ri chiziq bilan chegaralangan shakl yuzasini toping (chiziqlar x = 0 va x = 3 nuqtalarda kesishadi).",
+      "v": [
+        "9",
+        "13,5",
+        "22,5",
+        "4,5"
+      ],
+      "t": 3,
+      "izoh": "Kesishish nuqtalari x² = 3x dan x = 0 va x = 3. Bu oraliqda to'g'ri chiziq yuqorida. S = ∫₀³(3x − x²)dx = 27/2 − 9 = 4,5. 13,5 — faqat to'g'ri chiziq ostidagi yuza, 9 — faqat parabola ostidagi yuza, 22,5 esa ularni ayirish o'rniga qo'shish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-tugri-chiziq-parabola",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#9c747f08"
+    },
+    {
+      "q": "y = 6 − x² parabola va y = x to'g'ri chiziq bilan chegaralangan shaklning yuzasi nechaga teng?",
+      "v": [
+        "25/6",
+        "125/12",
+        "125/3",
+        "125/6"
+      ],
+      "t": 3,
+      "izoh": "6 − x² = x tenglamadan x² + x − 6 = 0, ya'ni x = −3 va x = 2. Ayirma −(x + 3)(x − 2) ko'rinishida bo'lgani uchun S = |a|·(x₂ − x₁)³/6 = 5³/6 = 125/6. 125/3 — 6 o'rniga 3 ga bo'lish, 25/6 — kub o'rniga kvadrat olish, 125/12 esa 12 ga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-tugri-chiziq-parabola",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#e6b42242"
+    },
+    {
+      "q": "Ustaxonada metall plastina y = 2x² parabola va y = 8 gorizontal chiziq orasidagi shakl bo'yicha qirqiladi, o'lchamlar santimetrda. Plastina yuzasi qancha?",
+      "v": [
+        "32 sm²",
+        "32/3 sm²",
+        "128/3 sm²",
+        "64/3 sm²"
+      ],
+      "t": 3,
+      "izoh": "2x² = 8 dan x = −2 va x = 2. S = ∫₋₂²(8 − 2x²)dx, boshlang'ich funksiya 8x − 2x³/3. Yuqorida 16 − 16/3 = 32/3, quyida −32/3, demak S = 64/3 sm². 32 — kub hadini tashlab ketish, 32/3 — faqat yarim plastina, 128/3 esa simmetriyani ikki marta qo'llash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-tugri-chiziq-parabola",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#0552ee40"
+    },
+    {
+      "q": "y = 2x² parabola va y = 2x + 12 to'g'ri chiziq bilan chegaralangan shaklning yuzasini hisoblang.",
+      "v": [
+        "25/3",
+        "125/6",
+        "125/3",
+        "250/3"
+      ],
+      "t": 2,
+      "izoh": "2x² = 2x + 12 dan x² − x − 6 = 0, ya'ni x = −2 va x = 3. Ayirma −2(x + 2)(x − 3) bo'lgani uchun S = 2·5³/6 = 125/3. 125/6 — old koeffitsiyent 2 ni hisobga olmaslik, 25/3 — kub o'rniga kvadrat olish, 250/3 esa natijani ortiqcha ikkilantirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-tugri-chiziq-parabola",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#efb78355"
+    },
+    {
+      "q": "Birinchi chorakda y = √x va y = x² egri chiziqlari bilan chegaralangan shaklning yuzasini toping.",
+      "v": [
+        "−1/3",
+        "1/3",
+        "2/3",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "√x = x² tenglamadan x = 0 va x = 1. Bu oraliqda √x yuqorida yotadi. S = ∫₀¹(√x − x²)dx = 2/3 − 1/3 = 1/3. 2/3 — faqat √x ostidagi yuzani olish, 1 — ayirish o'rniga qo'shish, −1/3 esa ayirish tartibini almashtirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-tugri-chiziq-parabola",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#5b8c7914"
+    },
+    {
+      "q": "y = x² va y = 18 − x² parabolalari bilan chegaralangan shaklning yuzasini toping (ular x = −3 va x = 3 nuqtalarda kesishadi).",
+      "v": [
+        "36",
+        "108",
+        "144",
+        "72"
+      ],
+      "t": 3,
+      "izoh": "x² = 18 − x² dan x = ±3. S = ∫₋₃³(18 − 2x²)dx, boshlang'ich funksiya 18x − 2x³/3. Yuqorida 54 − 18 = 36, quyida −36, demak S = 72. 36 — faqat yarim shakl, 108 — 2x³/3 hadini tashlab ketish, 144 esa simmetriyani ortiqcha qo'llash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-ikki-parabola",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#bb3c4842"
+    },
+    {
+      "q": "y = x² va y = 4x − x² parabolalari bilan chegaralangan shaklning yuzasi nechaga teng?",
+      "v": [
+        "4/3",
+        "8/3",
+        "16/3",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "x² = 4x − x² dan 2x² − 4x = 0, ya'ni x = 0 va x = 2. S = ∫₀²(4x − 2x²)dx = 8 − 16/3 = 8/3. 4/3 — old koeffitsiyent 2 ni hisobga olmaslik, 8 — faqat 4x hadini integrallash, 16/3 esa natijani ortiqcha ikkilantirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-ikki-parabola",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#48ddcd4f"
+    },
+    {
+      "q": "Bog'da barg shaklidagi gulzor y = 2x² − 8 va y = 8 − 2x² parabolalar orasida joylashgan, o'lchamlar metrda. Gulzorning yuzasini toping.",
+      "v": [
+        "64/3 m²",
+        "64 m²",
+        "128/3 m²",
+        "256/3 m²"
+      ],
+      "t": 2,
+      "izoh": "2x² − 8 = 8 − 2x² dan 4x² = 16, ya'ni x = ±2. S = ∫₋₂²(16 − 4x²)dx, boshlang'ich funksiya 16x − 4x³/3. Yuqorida 32 − 32/3 = 64/3, quyida −64/3, demak S = 128/3 m². 64 — kub hadini unutish, 64/3 — faqat yarim gulzor, 256/3 esa ortiqcha ikkilantirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-ikki-parabola",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#5f4a7d85"
+    },
+    {
+      "q": "y = x² va y = −2x² + 15x − 12 parabolalar bilan chegaralangan shaklning yuzasini hisoblang.",
+      "v": [
+        "4,5",
+        "6,75",
+        "13,5",
+        "27"
+      ],
+      "t": 2,
+      "izoh": "Kesishish: x² = −2x² + 15x − 12 dan 3x² − 15x + 12 = 0, ya'ni x = 1 va x = 4. Funksiyalar ayirmasi −3(x − 1)(x − 4) ko'rinishida, shuning uchun S = 3·(4 − 1)³/6 = 3·27/6 = 13,5. 4,5 — koeffitsiyent 3 ni tashlab ketish, 27 — 6 o'rniga 3 ga bo'lish, 6,75 esa ortiqcha ikkiga bo'lish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-ikki-parabola",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#ba91755e"
+    },
+    {
+      "q": "y = x² va y = −4x² + 35x − 50 parabolalar bilan chegaralangan shaklning yuzasini toping.",
+      "v": [
+        "22,5",
+        "45",
+        "11,25",
+        "4,5"
+      ],
+      "t": 0,
+      "izoh": "x² = −4x² + 35x − 50 dan 5x² − 35x + 50 = 0, ya'ni x = 2 va x = 5. Funksiyalar ayirmasi −5(x − 2)(x − 5), demak S = 5·(5 − 2)³/6 = 5·27/6 = 22,5. 4,5 — koeffitsiyent 5 ni unutish, 45 — 6 o'rniga 3 ga bo'lish, 11,25 esa natijani ortiqcha yarmiga bo'lish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-ikki-parabola",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#85d404ea"
+    },
+    {
+      "q": "y = sinx egri chizig'i va Ox o'qi bilan [0; π] oraliqda chegaralangan shaklning yuzasini toping.",
+      "v": [
+        "1",
+        "−2",
+        "2",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "sinx ning boshlang'ich funksiyasi −cosx. S = (−cosπ) − (−cos0) = 1 + 1 = 2. −2 — sinx uchun boshlang'ich funksiyani cosx deb olish, 1 — quyi chegarani qo'yishni unutish, 0 esa oraliqni [0; 2π] deb tasavvur qilish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-trigonometrik-grafik",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#afa56bea"
+    },
+    {
+      "q": "y = cosx funksiya grafigi, Ox o'qi va x = 0, x = π/3 chiziqlari bilan chegaralangan egri chiziqli trapetsiyaning yuzasi qanday?",
+      "v": [
+        "1/2",
+        "√3",
+        "−√3/2",
+        "√3/2"
+      ],
+      "t": 3,
+      "izoh": "cosx ning boshlang'ich funksiyasi sinx. S = sin(π/3) − sin0 = √3/2 − 0 = √3/2. −√3/2 — cosx uchun −sinx ni olish, 1/2 — sin(π/3) o'rniga cos(π/3) ni qo'yish, √3 esa maxrajni tushirib qoldirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-trigonometrik-grafik",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#d8a601b2"
+    },
+    {
+      "q": "y = sinx egri chizig'i va Ox o'qi bilan [0; 2π] oraliqda hosil bo'lgan ikkita shaklning umumiy yuzasi nechaga teng?",
+      "v": [
+        "0",
+        "2",
+        "4",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "[0; π] oraliqda sinx musbat va bo'lakning yuzasi 2. [π; 2π] da funksiya manfiy, integral −2 ga teng, yuza esa yana 2. Jami yuza 4. 0 — butun oraliqdagi integralni to'g'ridan-to'g'ri javob deb olish, 2 — faqat birinchi bo'lakni hisoblash, 8 esa ortiqcha ikkilantirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-trigonometrik-grafik",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#ddc01db4"
+    },
+    {
+      "q": "y = sinx va y = cosx grafiklari hamda Oy o'qi bilan [0; π/4] oraliqda chegaralangan shaklning yuzasini toping.",
+      "v": [
+        "√2 − 1",
+        "1 − √2",
+        "√2 + 1",
+        "√2"
+      ],
+      "t": 0,
+      "izoh": "Bu oraliqda cosx ≥ sinx, demak S = ∫(cosx − sinx)dx va boshlang'ich funksiya sinx + cosx. S = (√2/2 + √2/2) − (0 + 1) = √2 − 1. 1 − √2 — ayirish tartibini almashtirish, √2 + 1 — quyi chegarada ishorani noto'g'ri qo'yish, √2 esa quyi chegarani hisobga olmaslik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-trigonometrik-grafik",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#70042803"
+    },
+    {
+      "q": "y = sin2x egri chizig'i va Ox o'qi bilan [0; π/2] oraliqda chegaralangan shaklning yuzasi nechaga teng?",
+      "v": [
+        "2",
+        "1/2",
+        "0",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "sin2x ning boshlang'ich funksiyasi −cos2x/2, chunki ichki hosila 2 ga bo'linadi. S = (−cosπ)/2 − (−cos0)/2 = 1/2 + 1/2 = 1. 2 — ichki hosilaga bo'lishni unutish, 1/2 — faqat bitta chegarani qo'yish, 0 esa oraliqni [0; π] deb olish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-trigonometrik-grafik",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#7cbba18e"
+    },
+    {
+      "q": "y = eˣ funksiya grafigi, Ox o'qi va x = 0, x = 1 to'g'ri chiziqlar bilan chegaralangan shaklning yuzasini toping.",
+      "v": [
+        "e",
+        "e − 1",
+        "e + 1",
+        "1 − e"
+      ],
+      "t": 1,
+      "izoh": "eˣ ning boshlang'ich funksiyasi ham eˣ. S = e¹ − e⁰ = e − 1. e — quyi chegarada e⁰ = 1 ni ayirishni unutish, e + 1 — ayirish o'rniga qo'shish, 1 − e esa chegaralarni almashtirib yuborish natijasi (yuza manfiy bo'la olmaydi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-korsatkichli-logarifmik",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#3e3eace5"
+    },
+    {
+      "q": "y = 1/x giperbola, Ox o'qi va x = 2, x = 8 to'g'ri chiziqlar bilan chegaralangan shaklning yuzasi nimaga teng?",
+      "v": [
+        "ln6",
+        "3",
+        "2ln2",
+        "3ln2"
+      ],
+      "t": 2,
+      "izoh": "1/x ning boshlang'ich funksiyasi ln|x|. S = ln8 − ln2 = ln(8 : 2) = ln4 = 2ln2. ln6 — logarifmlar ayirmasini argumentlar ayirmasi deb olish, 3ln2 — quyi chegarani qo'yishni unutish, 3 esa ln8 ni ln2 ga bo'lib yuborish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-korsatkichli-logarifmik",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#470cd78b"
+    },
+    {
+      "q": "y = eˣ egri chizig'i, Ox o'qi va x = −1, x = 0 chiziqlari bilan chegaralangan egri chiziqli trapetsiyaning yuzasini hisoblang.",
+      "v": [
+        "1/e − 1",
+        "e − 1",
+        "1/e",
+        "1 − 1/e"
+      ],
+      "t": 3,
+      "izoh": "S = e⁰ − e^(−1) = 1 − 1/e ≈ 0,63. 1/e − 1 — chegaralarni almashtirib yuborish, natijasi manfiy chiqadi. e − 1 — chegaralarni 0 va 1 deb olish, 1/e esa yuqori chegaradagi qiymatni ayirishni unutish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-korsatkichli-logarifmik",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#9ecce220"
+    },
+    {
+      "q": "y = 2ˣ ko'rsatkichli funksiya grafigi, Ox o'qi va x = 0, x = 3 chiziqlari bilan chegaralangan shaklning yuzasini toping.",
+      "v": [
+        "7/ln2",
+        "8/ln2",
+        "7ln2",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "aˣ ning boshlang'ich funksiyasi aˣ/lna. S = (2³ − 2⁰)/ln2 = (8 − 1)/ln2 = 7/ln2. 8/ln2 — quyi chegarada 2⁰ = 1 ni ayirishni unutish, 7ln2 — bo'lish o'rniga ko'paytirish, 7 esa maxrajni umuman tushirib qoldirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-korsatkichli-logarifmik",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#db40d6c3"
+    },
+    {
+      "q": "y = x² parabola, Ox o'qi va x = a to'g'ri chiziq bilan chegaralangan shaklning yuzasi 72 ga teng, bunda a > 0. a ning qiymatini toping.",
+      "v": [
+        "6",
+        "12",
+        "24",
+        "216"
+      ],
+      "t": 0,
+      "izoh": "S = ∫₀ᵃx²dx = a³/3. a³/3 = 72 dan a³ = 216, demak a = 6. 216 — kub ildiz olishni unutish, 12 — boshlang'ich funksiyani x²/2 deb olib a² = 144 dan a = 12 ni chiqarish, 24 esa yuzani 3 ga bo'lib qo'yish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-boyicha-parametr-topish",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#0ad18172"
+    },
+    {
+      "q": "∫₁ᵏ2x dx = 24 tenglik o'rinli bo'ladigan k ning qiymatini toping, bunda k > 1.",
+      "v": [
+        "13",
+        "5",
+        "25",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "2x ning boshlang'ich funksiyasi x². Shartdan k² − 1² = 24, ya'ni k² = 25 va k = 5. 25 — kvadrat ildiz olishni unutish, 13 — integral o'rniga hosilani qo'llab 2k − 2 = 24 ni yechish, 12 esa 24 ni shunchaki 2 ga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-boyicha-parametr-topish",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#0b843b81"
+    },
+    {
+      "q": "y = x² parabola va y = a gorizontal to'g'ri chiziq bilan chegaralangan shaklning yuzasi 36 ga teng. a ning qiymatini toping.",
+      "v": [
+        "3",
+        "27",
+        "9",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Kesishish nuqtalari x = ±√a. Simmetriya bo'yicha S = 2∫₀^√a(a − x²)dx = (4/3)·a^(3/2). (4/3)·a^(3/2) = 36 dan a^(3/2) = 27, demak a = 9. 3 — a^(3/2) = 27 dan kub ildiz olish, 27 — a^(3/2) ni a deb hisoblash, 12 esa yuzani 3 ga bo'lish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-boyicha-parametr-topish",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#ca5a09f4"
+    },
+    {
+      "q": "∫₀ᵃcosx dx = 1/2 tenglik bajariladigan a ning [0; π/2] oraliqdagi qiymatini toping.",
+      "v": [
+        "π/6",
+        "π/4",
+        "π/3",
+        "π/2"
+      ],
+      "t": 0,
+      "izoh": "cosx ning boshlang'ich funksiyasi sinx, shuning uchun sina − sin0 = sina = 1/2. Berilgan oraliqda buni faqat a = π/6 qanoatlantiradi. π/3 — sina o'rniga cosa = 1/2 ni yechish, π/4 — 1/2 ni √2/2 bilan chalkashtirish, π/2 esa sina = 1 holatiga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-boyicha-parametr-topish",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#cd11ddf7"
+    },
+    {
+      "q": "y = 2x + 1 to'g'ri chiziq, Ox o'qi va x = 0, x = b chiziqlari bilan chegaralangan trapetsiyaning yuzasi 12 ga teng. b ni toping.",
+      "v": [
+        "−4",
+        "3",
+        "4",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "S = ∫₀ᵇ(2x + 1)dx = b² + b. Demak b² + b − 12 = 0, ildizlari b = 3 va b = −4. b = −4 da to'g'ri chiziq x = −0,5 nuqtada Ox o'qini kesib o'tadi va hosil bo'lgan shakl trapetsiya emas — ikkita uchburchak bo'lib, ularning umumiy yuzasi 12,25 + 0,25 = 12,5 ga teng. Shuning uchun shartga faqat b = 3 mos keladi, ya'ni chegara Oy o'qining o'ng tomonida yotadi. −4 — geometrik shartni tekshirmay ikkinchi ildizni olish, 4 — tenglamani noto'g'ri yechish, 12 esa yuzani javob deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-boyicha-parametr-topish",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#0f190384"
+    },
+    {
+      "q": "y = |x| funksiya grafigi, Ox o'qi va x = −2, x = 3 to'g'ri chiziqlar bilan chegaralangan shaklning yuzasini toping.",
+      "v": [
+        "2,5",
+        "6,5",
+        "12,5",
+        "13"
+      ],
+      "t": 1,
+      "izoh": "Shakl ikkita to'g'ri burchakli uchburchakdan iborat. [−2; 0] da katetlari 2 va 2, yuzasi 2. [0; 3] da katetlari 3 va 3, yuzasi 4,5. Jami 6,5. 2,5 — modulni e'tiborsiz qoldirib ∫x dx ni hisoblash, 12,5 — butun oraliqni bitta uchburchak deb olish, 13 esa ortiqcha ikkilantirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-modulli-funksiya",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#c42b654b"
+    },
+    {
+      "q": "y = |x² − 4| funksiya grafigi, Ox o'qi va x = 0, x = 3 chiziqlari bilan chegaralangan shaklning yuzasini hisoblang.",
+      "v": [
+        "3",
+        "7/3",
+        "16/3",
+        "23/3"
+      ],
+      "t": 3,
+      "izoh": "[0; 2] oraliqda x² − 4 manfiy, shuning uchun yuza ∫₀²(4 − x²)dx = 8 − 8/3 = 16/3. [2; 3] da ifoda musbat: ∫₂³(x² − 4)dx = (9 − 12) − (8/3 − 8) = 7/3. Jami 23/3. 3 — modulni tashlab ∫₀³(x² − 4)dx ni olish, 16/3 va 7/3 esa faqat bitta bo'lakni hisoblash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-modulli-funksiya",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#1c4fe4b7"
+    },
+    {
+      "q": "y = |3 − x| funksiya grafigi, Ox o'qi va x = 0, x = 7 to'g'ri chiziqlar bilan chegaralangan shakl yuzasi nechaga teng?",
+      "v": [
+        "3,5",
+        "8",
+        "12,5",
+        "24,5"
+      ],
+      "t": 2,
+      "izoh": "Funksiya x = 3 nuqtada nolga aylanadi. [0; 3] da uchburchak katetlari 3 va 3, yuzasi 4,5. [3; 7] da katetlari 4 va 4, yuzasi 8. Jami 12,5. 3,5 — modulsiz ∫₀⁷(3 − x)dx = 21 − 24,5 ni olish, 8 — faqat ikkinchi uchburchak, 24,5 esa 7²/2 ni butun shakl deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-modulli-funksiya",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#53efd5ef"
+    },
+    {
+      "q": "x = 2y to'g'ri chiziq, Oy o'qi va y = 1, y = 4 gorizontal chiziqlar bilan chegaralangan shaklning yuzasini toping.",
+      "v": [
+        "15",
+        "16",
+        "7,5",
+        "30"
+      ],
+      "t": 0,
+      "izoh": "Shakl Oy o'qiga tayangani uchun integrallash y bo'yicha olib boriladi: S = ∫₁⁴2y dy. Boshlang'ich funksiya y², demak S = 16 − 1 = 15. 16 — quyi chegarani qo'yishni unutish, 7,5 — boshlang'ich funksiyani y²/2 deb olish, 30 esa natijani ortiqcha ikkilantirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-Oy-oqi-boyicha",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#7e74e525"
+    },
+    {
+      "q": "y = lnx egri chizig'i, Oy o'qi va y = 0, y = 2 gorizontal chiziqlar bilan chegaralangan shaklning yuzasini toping.",
+      "v": [
+        "e²",
+        "e² − 1",
+        "e² − e",
+        "2e"
+      ],
+      "t": 1,
+      "izoh": "y = lnx tenglikdan x = eʸ. Shakl Oy o'qiga tayangani uchun S = ∫₀²eʸ dy = e² − e⁰ = e² − 1. e² — quyi chegarada 1 ni ayirishni unutish, e² − e — chegaralarni 1 va 2 deb olish, 2e esa eʸ ni chiziqli funksiya deb hisoblash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-Oy-oqi-boyicha",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#9539683e"
+    },
+    {
+      "q": "Sopol idishning devor chizig'i x = y²/9 tenglama bilan berilgan, o'lchamlar detsimetrda. Devor chizig'i, Oy o'qi va y = 6 to'g'ri chizig'i bilan chegaralangan shaklning yuzasini toping.",
+      "v": [
+        "4 dm²",
+        "24 dm²",
+        "12 dm²",
+        "8 dm²"
+      ],
+      "t": 3,
+      "izoh": "S = ∫₀⁶(y²/9)dy, boshlang'ich funksiya y³/27. S = 216/27 − 0 = 8 dm². 24 — 9 ga bo'lishni unutib 216/9 ni olish, 12 — y³ ni 3 o'rniga 2 ga bo'lish, 4 esa natijani ortiqcha yarmiga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-Oy-oqi-boyicha",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#1b54b54a"
+    },
+    {
+      "q": "y = x to'g'ri chiziq, Ox o'qi va x = 3 chizig'i bilan chegaralangan uchburchak Ox o'qi atrofida aylantirildi. Hosil bo'lgan jismning hajmini toping.",
+      "v": [
+        "3π",
+        "9π",
+        "27π",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "V = π∫₀³x²dx = π·(3³/3) = 9π. Buni konus formulasi ham tasdiqlaydi: radius 3, balandlik 3, ya'ni (1/3)π·9·3 = 9π. 27π — 3 ga bo'lishni unutish, 3π — funksiyani kvadratga oshirmay ∫x dx ni olish, 9 esa π ko'paytuvchisini tushirib qoldirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-aylanish-Ox-atrofida",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#7c151a28"
+    },
+    {
+      "q": "y = √x egri chizig'i, Ox o'qi va x = 4 to'g'ri chiziq bilan chegaralangan shakl Ox atrofida aylantirilganda hosil bo'lgan jism hajmi nechaga teng?",
+      "v": [
+        "16π/3",
+        "8π",
+        "16π",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "V = π∫₀⁴(√x)²dx = π∫₀⁴x dx = π·(4²/2) = 8π. 16π/3 — funksiyani kvadratga oshirmay ∫√x dx = 16/3 ni olish, 16π — x ning boshlang'ich funksiyasini x² deb olish, 8 esa π ni tushirib qoldirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-aylanish-Ox-atrofida",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#341a654d"
+    },
+    {
+      "q": "y = x² parabola, Ox o'qi va x = 2 to'g'ri chiziq bilan chegaralangan egri chiziqli trapetsiya Ox atrofida aylantirildi. Jismning hajmini toping.",
+      "v": [
+        "8π/3",
+        "32π",
+        "32π/5",
+        "16π/5"
+      ],
+      "t": 2,
+      "izoh": "V = π∫₀²(x²)²dx = π∫₀²x⁴dx = π·(2⁵/5) = 32π/5. 8π/3 — kvadratga oshirishni unutib ∫x²dx = 8/3 ni olish, 32π — 5 ga bo'lishni unutish, 16π/5 esa 2⁵ o'rniga 2⁴ ni chegaraga qo'yish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-aylanish-Ox-atrofida",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#420e8bc1"
+    },
+    {
+      "q": "y = 4 − x to'g'ri chiziq, Ox va Oy o'qlari bilan chegaralangan uchburchak Ox o'qi atrofida aylantirilganda hosil bo'lgan konusning hajmini toping.",
+      "v": [
+        "64π",
+        "8π",
+        "32π/3",
+        "64π/3"
+      ],
+      "t": 3,
+      "izoh": "V = π∫₀⁴(4 − x)²dx, boshlang'ich funksiya −(4 − x)³/3. V = π(0 + 64/3) = 64π/3, bu (1/3)π·4²·4 konus formulasiga mos. 64π — 3 ga bo'lishni unutish, 8π — kvadratga oshirmay ∫(4 − x)dx = 8 ni olish, 32π/3 esa ortiqcha yarmiga bo'lish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-aylanish-Ox-atrofida",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#cdea4fc5"
+    },
+    {
+      "q": "y = 1/x giperbola, Ox o'qi va x = 1, x = 4 chiziqlari bilan chegaralangan shakl Ox atrofida aylantirildi. Jism hajmini toping.",
+      "v": [
+        "3π/4",
+        "πln4",
+        "−3π/4",
+        "π/4"
+      ],
+      "t": 0,
+      "izoh": "V = π∫₁⁴x⁻²dx, boshlang'ich funksiya −1/x. V = π(−1/4 + 1) = 3π/4. πln4 — kvadratga oshirmay ∫(1/x)dx ni olish, −3π/4 — chegaralarni almashtirib ishorani buzish, π/4 esa quyi chegarani qo'yishni unutish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-aylanish-Ox-atrofida",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#fabfcdea"
+    },
+    {
+      "q": "Guldonning ichki devori y = √x egri chizig'i bilan berilgan va shakl Ox o'qi atrofida x = 0 dan x = 9 gacha aylantirilgan, o'lchamlar detsimetrda. Guldon hajmini toping.",
+      "v": [
+        "18π dm³",
+        "40,5π dm³",
+        "81π dm³",
+        "27π dm³"
+      ],
+      "t": 1,
+      "izoh": "V = π∫₀⁹(√x)²dx = π∫₀⁹x dx = π·(81/2) = 40,5π dm³. 18π — kvadratga oshirmay ∫√x dx = 18 ni olish, 81π — 2 ga bo'lishni unutish, 27π esa konus formulasi (1/3)π·3²·9 ni noo'rin qo'llash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-hayotiy-buyum",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#b65f9d5d"
+    },
+    {
+      "q": "Suv idishining o'q kesimi y = 0,5x + 1 to'g'ri chiziq bilan berilgan; shakl Ox o'qi atrofida x = 0 dan x = 4 gacha aylantirilgan, o'lchamlar metrda. Idish hajmi qancha?",
+      "v": [
+        "52π/3 m³",
+        "26π/3 m³",
+        "52π m³",
+        "8π m³"
+      ],
+      "t": 0,
+      "izoh": "V = π∫₀⁴(0,5x + 1)²dx. Boshlang'ich funksiya (0,5x + 1)³ : 1,5 ga teng, demak V = π(3³ − 1³) : 1,5 = 52π/3 m³. 26π/3 — ichki hosila 0,5 ga bo'lishni unutish, 52π — 3 ga bo'lmaslik, 8π esa kvadratga oshirmay ∫(0,5x + 1)dx = 8 ni olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-hayotiy-buyum",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#afd23ab0"
+    },
+    {
+      "q": "Zavodda detal y = x²/3 egri chizig'ini Ox o'qi atrofida x = 0 dan x = 3 gacha aylantirish bilan yasaladi, o'lchamlar santimetrda. Detal hajmini toping.",
+      "v": [
+        "3π sm³",
+        "9π sm³",
+        "27π/5 sm³",
+        "243π/5 sm³"
+      ],
+      "t": 2,
+      "izoh": "V = π∫₀³(x²/3)²dx = π∫₀³(x⁴/9)dx = π·243 : (5·9) = 27π/5 sm³. 3π — kvadratga oshirmay ∫(x²/3)dx = 3 ni olish, 243π/5 — 9 ga bo'lishni unutish, 9π esa x⁵/5 o'rniga x⁴ ni chegaraga qo'yib 81/9 ni chiqarish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-hayotiy-buyum",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#46771e1c"
+    },
+    {
+      "q": "Yog'och buyumning (yo'nilgan tayoqchaning) yon chizig'i y = 4 − 0,25x² parabola bilan berilgan va u Ox o'qi atrofida x = 0 dan x = 4 gacha aylantiriladi, o'lchamlar detsimetrda. Buyum hajmini toping.",
+      "v": [
+        "32π/3 dm³",
+        "256π/15 dm³",
+        "512π/5 dm³",
+        "512π/15 dm³"
+      ],
+      "t": 3,
+      "izoh": "Avval kvadratga oshiramiz: (4 − 0,25x²)² = 16 − 2x² + 0,0625x⁴. [0; 4] da integral 64 − 128/3 + 64/5 = (960 − 640 + 192)/15 = 512/15, demak V = π·512/15 = 512π/15 dm³. 32π/3 dm³ — kvadratga oshirmaslik, 512π/5 dm³ — 15 o'rniga 5 ga bo'lish, 256π/15 dm³ esa ortiqcha yarmiga bo'lish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajm-hayotiy-buyum",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#bb07385f"
+    },
+    {
+      "q": "Chelakning o'q kesimi y = 1 + 0,25x qonun bo'yicha kengayadi va shakl x = 0 dan x = 4 gacha Ox atrofida aylantiriladi. Chelak hajmini toping.",
+      "v": [
+        "6π",
+        "7π/3",
+        "28π/3",
+        "28π"
+      ],
+      "t": 2,
+      "izoh": "Boshlang'ich funksiya (1 + 0,25x)³ : 0,75. V = π(2³ − 1³) : 0,75 = π·7·4/3 = 28π/3. 7π/3 — ichki hosila 0,25 ga bo'lishni unutish, 28π — 3 ga bo'lmaslik, 6π esa kvadratga oshirmay ∫(1 + 0,25x)dx = 6 ni olish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-hayotiy-buyum",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#d3009d07"
+    },
+    {
+      "q": "Radiusi 5 sm bo'lgan shar y = √(25 − x²) yarim aylanani Ox o'qi atrofida aylantirish orqali hosil qilinadi. Sharning hajmini integral yordamida toping.",
+      "v": [
+        "500π/3 sm³",
+        "250π/3 sm³",
+        "125π/3 sm³",
+        "500π sm³"
+      ],
+      "t": 0,
+      "izoh": "V = π∫₋₅⁵(25 − x²)dx, boshlang'ich funksiya 25x − x³/3. Yuqori chegarada 125 − 125/3 = 250/3, quyida −250/3, demak V = 500π/3 sm³. 250π/3 — faqat yarim sharni olish, 500π — 3 ga bo'lmaslik, 125π/3 esa 4/3 o'rniga 1/3 koeffitsiyentini ishlatish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-standart-jism-chiqarish",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#320a8f53"
+    },
+    {
+      "q": "Asosining radiusi 4 sm, balandligi 9 sm bo'lgan konus y = 4x/9 to'g'ri chiziqni Ox atrofida aylantirish orqali hosil qilingan. Uning hajmini toping.",
+      "v": [
+        "24π sm³",
+        "48π sm³",
+        "108π sm³",
+        "144π sm³"
+      ],
+      "t": 1,
+      "izoh": "V = π∫₀⁹(4x/9)²dx = π·(16/81)·(9³/3) = π·(16/81)·243 = 48π sm³. 144π — konus formulasida 1/3 ni unutish, 108π — radius va balandlikni almashtirib (1/3)π·9²·4 ni olish, 24π esa natijani ortiqcha ikkiga bo'lish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-standart-jism-chiqarish",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#b9cb86be"
+    },
+    {
+      "q": "Parabolik idishning kesimi y² = 4x tenglama bilan berilgan. Bu chiziq Ox o'qi atrofida x = 0 dan x = 5 gacha aylantirilsa, hosil bo'lgan jism hajmi qancha?",
+      "v": [
+        "12,5π",
+        "25π",
+        "100π",
+        "50π"
+      ],
+      "t": 3,
+      "izoh": "Aylanish jismi hajmida y² kerak, u shartda tayyor berilgan: V = π∫₀⁵4x dx = π·4·(25/2) = 50π. 12,5π — koeffitsiyent 4 ni tushirib qoldirish, 100π — 2 ga bo'lishni unutish, 25π esa 4 ni unutib, ustiga x ning boshlang'ich funksiyasini x² deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-standart-jism-chiqarish",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#0e1c35ba"
+    },
+    {
+      "q": "Asos radiuslari 5 sm va 2 sm, balandligi 6 sm bo'lgan kesik konusning hajmini aylanish jismi sifatida integral yordamida hisoblang.",
+      "v": [
+        "39π sm³",
+        "58π sm³",
+        "78π sm³",
+        "234π sm³"
+      ],
+      "t": 2,
+      "izoh": "Yon chiziq y = 2 + 0,5x (x = 0 da 2, x = 6 da 5). V = π∫₀⁶(2 + 0,5x)²dx = π(5³ − 2³) : 1,5 = π·117 : 1,5 = 78π sm³. Bu (πh/3)(R² + Rr + r²) formulasiga mos. 234π — h/3 o'rniga h ni olish, 58π — Rr hadini tashlab ketish, 39π esa 2 ga ko'paytirmaslik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajm-standart-jism-chiqarish",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#a628b9ed"
+    },
+    {
+      "q": "y = x va y = x² chiziqlar bilan chegaralangan shakl Ox o'qi atrofida aylantirildi. Hosil bo'lgan jismning hajmini toping.",
+      "v": [
+        "2π/15",
+        "π/30",
+        "π/6",
+        "4π/15"
+      ],
+      "t": 0,
+      "izoh": "Kesishish nuqtalari x = 0 va x = 1, bu oraliqda x ≥ x². V = π∫₀¹(x² − x⁴)dx = π(1/3 − 1/5) = 2π/15. π/30 — avval ayirmani olib keyin kvadratga oshirish (bu usul noto'g'ri), π/6 — yuzani hisoblab π ga ko'paytirish, 4π/15 esa ortiqcha ikkilantirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajm-ikki-grafik-orasi",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#5be6936b"
+    },
+    {
+      "q": "y = x² parabola, y = 4 gorizontal chiziq va Oy o'qi bilan birinchi chorakda chegaralangan shakl Ox atrofida aylantirilsa, jism hajmi qanday bo'ladi?",
+      "v": [
+        "32π/5",
+        "64π/5",
+        "256π/15",
+        "128π/5"
+      ],
+      "t": 3,
+      "izoh": "Chegaralar x = 0 dan x = 2 gacha, tashqi radius 4, ichki radius x². V = π∫₀²(16 − x⁴)dx = π(32 − 32/5) = 128π/5. 256π/15 — avval ayirmani olib keyin kvadratga oshirish, 32π/5 — faqat x⁴ hadini hisoblash, 64π/5 esa ortiqcha yarmiga bo'lish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajm-ikki-grafik-orasi",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#968741ce"
+    },
+    {
+      "q": "Uzunligi 12 sm bo'lgan quvurning tashqi radiusi 3 sm, ichki radiusi 2 sm. Quvur devorining hajmini aylanish jismi sifatida hisoblang.",
+      "v": [
+        "12π sm³",
+        "60π sm³",
+        "108π sm³",
+        "156π sm³"
+      ],
+      "t": 1,
+      "izoh": "Halqasimon kesim uchun V = π∫₀¹²(3² − 2²)dx = π·5·12 = 60π sm³. 12π — radiuslarni avval ayirib keyin kvadratga oshirish, ya'ni π(3 − 2)²·12 ni olish, 108π — ichki bo'shliqni ayirishni unutish, 156π esa kvadratlarni ayirish o'rniga qo'shish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-ikki-grafik-orasi",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#0f325f70"
+    },
+    {
+      "q": "x = y² egri chizig'i, Oy o'qi va y = 3 gorizontal chiziq bilan chegaralangan shakl Oy o'qi atrofida aylantirildi. Jism hajmini toping.",
+      "v": [
+        "9π",
+        "81π/5",
+        "243π/5",
+        "243π"
+      ],
+      "t": 2,
+      "izoh": "Oy atrofida aylantirishda kesim radiusi x, integral esa y bo'yicha olinadi: V = π∫₀³(y²)²dy = π·(3⁵/5) = 243π/5. 9π — kvadratga oshirmay ∫y²dy = 9 ni olish, 243π — 5 ga bo'lishni unutish, 81π/5 esa 3⁵ o'rniga 3⁴ ni qo'yish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-aylanish-Oy-atrofida",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#899966ab"
+    },
+    {
+      "q": "y = x² parabola, y = 6 gorizontal chiziq va Oy o'qi bilan chegaralangan shakl Oy o'qi atrofida aylantirilsa, jismning hajmi nechaga teng?",
+      "v": [
+        "18π",
+        "6π",
+        "9π",
+        "36π"
+      ],
+      "t": 0,
+      "izoh": "y = x² dan x² = y, demak kesim yuzasi πy ga teng va V = π∫₀⁶y dy = π·(36/2) = 18π. 36π — 2 ga bo'lishni unutish, 6π — kesim radiusi kvadrati o'rniga chegara uzunligini olish, 9π esa natijani ortiqcha yarmiga bo'lish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-aylanish-Oy-atrofida",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#429c9f40"
+    },
+    {
+      "q": "Shisha idishning devori x = 1 + y²/4 tenglama bilan berilgan va shakl Oy o'qi atrofida y = 0 dan y = 2 gacha aylantiriladi, o'lchamlar detsimetrda. Idish hajmini toping.",
+      "v": [
+        "12π/5 dm³",
+        "8π/3 dm³",
+        "112π/15 dm³",
+        "56π/15 dm³"
+      ],
+      "t": 3,
+      "izoh": "(1 + y²/4)² = 1 + y²/2 + y⁴/16. [0; 2] oraliqda integral 2 + 4/3 + 2/5 = 56/15 ni beradi, demak V = 56π/15 dm³. 8π/3 — kvadratga oshirmay ∫(1 + y²/4)dy = 8/3 ni olish, 12π/5 — o'rta hadni tushirib qoldirish, 112π/15 esa ortiqcha ikkilantirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajm-aylanish-Oy-atrofida",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#5f96ecc9"
+    },
+    {
+      "q": "Moddiy nuqta to'g'ri chiziq bo'ylab v(t) = 3t² m/s qonun bilan harakatlanadi. Uning birinchi 4 soniyada bosib o'tgan yo'lini toping.",
+      "v": [
+        "64 m",
+        "48 m",
+        "192 m",
+        "32 m"
+      ],
+      "t": 0,
+      "izoh": "Bosib o'tilgan yo'l tezlikning vaqt bo'yicha integraliga teng: s = ∫₀⁴3t²dt = t³ ayirmasi = 64 m. 48 — v(4) = 48 ni yo'l deb olish, 192 — boshlang'ich funksiyani 3t³ deb olish, 32 esa natijani ortiqcha yarmiga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yol-tezlik-integrali",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#85439516"
+    },
+    {
+      "q": "Jism v(t) = 2t + 3 m/s tezlik bilan harakatlanmoqda. U t = 1 s dan t = 4 s gacha bo'lgan vaqtda qancha yo'l bosadi?",
+      "v": [
+        "28 m",
+        "24 m",
+        "11 m",
+        "15 m"
+      ],
+      "t": 1,
+      "izoh": "s = ∫₁⁴(2t + 3)dt, boshlang'ich funksiya t² + 3t. Yuqori chegarada 16 + 12 = 28, quyida 1 + 3 = 4, demak s = 24 m. 28 — quyi chegarani ayirishni unutish, 11 — v(4) = 11 ni yo'l deb olish, 15 esa 3 hadini tashlab faqat t² ni hisoblash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yol-tezlik-integrali",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#f7cc427c"
+    },
+    {
+      "q": "Jismning tezligi v(t) = 6 − 2t m/s qonun bilan o'zgaradi. Uning birinchi 5 soniyada bosib o'tgan to'la yo'lini toping.",
+      "v": [
+        "5 m",
+        "9 m",
+        "13 m",
+        "18 m"
+      ],
+      "t": 2,
+      "izoh": "Tezlik t = 3 da nolga aylanadi va keyin manfiy bo'ladi, ya'ni jism orqaga qaytadi. [0; 3] da s₁ = 18 − 9 = 9 m, [3; 5] da integral (30 − 25) − 9 = −4, demak s₂ = 4 m. To'la yo'l 13 m. 5 — butun oraliqdagi integral (bu ko'chish), 9 — faqat to'xtaguncha, 18 esa 6t hadini yolg'iz olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yol-tezlik-integrali",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#5d97bb96"
+    },
+    {
+      "q": "Moddiy nuqta v(t) = t² m/s tezlik bilan harakatlanadi. t = 2 s dan t = 5 s gacha bosib o'tilgan yo'l qanchaga teng?",
+      "v": [
+        "117 m",
+        "25 m",
+        "9 m",
+        "39 m"
+      ],
+      "t": 3,
+      "izoh": "s = ∫₂⁵t²dt = (5³ − 2³)/3 = 117/3 = 39 m. 117 — natijani 3 ga bo'lishni unutish, 25 — v(5) = 25 ni yo'l deb olish, 9 esa chegaralar ayirmasini (5 − 2)³/3 ko'rinishida formulaga qo'yish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yol-tezlik-integrali",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#f6351725"
+    },
+    {
+      "q": "Jism v(t) = 3√t m/s tezlik bilan harakatlanmoqda. U harakat boshlanganidan 4 soniya o'tgach qancha yo'l bosgan bo'ladi?",
+      "v": [
+        "6 m",
+        "8 m",
+        "16 m",
+        "32 m"
+      ],
+      "t": 2,
+      "izoh": "s = ∫₀⁴3√t dt, boshlang'ich funksiya 3·(2/3)t^(3/2) = 2t^(3/2). Demak s = 2·4^(3/2) = 2·8 = 16 m. 6 — v(4) = 6 ni yo'l deb olish, 32 — 4^(3/2) ni 16 deb hisoblash, 8 esa t^(3/2) o'rniga t ni qo'yish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yol-tezlik-integrali",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#c6aed18f"
+    },
+    {
+      "q": "Anvarning avtomobili tezlanmoqda va uning tezligi v(t) = 20 + 4t m/s qonun bilan o'sadi. U birinchi 6 soniyada qancha masofani bosib o'tadi?",
+      "v": [
+        "192 m",
+        "120 m",
+        "264 m",
+        "44 m"
+      ],
+      "t": 0,
+      "izoh": "s = ∫₀⁶(20 + 4t)dt = 20·6 + 2·6² = 120 + 72 = 192 m. 120 — tezlanishni hisobga olmay faqat 20 m/s bilan hisoblash, 264 — 4t uchun boshlang'ich funksiyani 4t² deb olish, 44 esa v(6) = 44 ni masofa deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yol-hayotiy-harakat",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#809df69e"
+    },
+    {
+      "q": "Poyezd tormozlanmoqda, uning tezligi v(t) = 24 − 1,2t m/s. Tormozlash boshlanganidan keyingi 10 soniyada poyezd qancha yo'l bosadi?",
+      "v": [
+        "240 m",
+        "180 m",
+        "120 m",
+        "12 m"
+      ],
+      "t": 1,
+      "izoh": "s = ∫₀¹⁰(24 − 1,2t)dt = 24·10 − 0,6·10² = 240 − 60 = 180 m. 240 — tormozlashni hisobga olmaslik, 120 — 1,2t uchun boshlang'ich funksiyani 1,2t² deb olish, 12 esa v(10) = 12 ni yo'l deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yol-hayotiy-harakat",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#0f93dd16"
+    },
+    {
+      "q": "Metro poyezdi stansiyadan jo'nab, tezligini v(t) = 0,8t m/s qonun bo'yicha oshiradi. 25 soniyada u qancha masofani bosib o'tadi?",
+      "v": [
+        "125 m",
+        "500 m",
+        "20 m",
+        "250 m"
+      ],
+      "t": 3,
+      "izoh": "s = ∫₀²⁵0,8t dt = 0,4·25² = 0,4·625 = 250 m. 500 — 2 ga bo'lishni unutish, 20 — v(25) = 20 ni masofa deb olish, 125 esa koeffitsiyentni 0,4 o'rniga 0,2 deb olish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yol-hayotiy-harakat",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#b77e53b4"
+    },
+    {
+      "q": "Yuk mashinasi dastlabki 10 soniyada v = 3t m/s tezlik bilan tezlandi, so'ng 20 soniya davomida o'zgarmas 30 m/s tezlikda yurdi. U jami qancha yo'l bosdi?",
+      "v": [
+        "750 m",
+        "600 m",
+        "900 m",
+        "1350 m"
+      ],
+      "t": 0,
+      "izoh": "Birinchi bosqich: ∫₀¹⁰3t dt = 1,5·100 = 150 m. Ikkinchi bosqich: 30·20 = 600 m. Jami 750 m. 600 — faqat ikkinchi bosqichni olish, 900 — butun 30 soniyani o'zgarmas 30 m/s deb hisoblash, 1350 esa butun vaqtga 3t qonunini qo'llash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yol-hayotiy-harakat",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#365267ed"
+    },
+    {
+      "q": "Sardor motorli qayiq (kater) motorini o'chirdi, shundan keyin qayiq tezligi v(t) = 12 − 0,75t² m/s bo'ldi. Qayiq to'liq to'xtaguncha qancha yo'l bosadi?",
+      "v": [
+        "4 m",
+        "16 m",
+        "32 m",
+        "48 m"
+      ],
+      "t": 2,
+      "izoh": "Avval to'xtash payti topiladi: 12 − 0,75t² = 0 dan t² = 16, ya'ni t = 4 s. So'ng s = ∫₀⁴(12 − 0,75t²)dt = 48 − 0,25·64 = 32 m. 48 — ikkinchi hadni tashlab ketish, 16 — faqat ikkinchi hadni olish, 4 esa to'xtash vaqtini yo'l deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yol-hayotiy-harakat",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#1b91979a"
+    },
+    {
+      "q": "Jism o'zgarmas a = 6 m/s² tezlanish bilan harakatlanadi, boshlang'ich tezligi esa 4 m/s. U 5 soniyada qancha yo'l bosadi?",
+      "v": [
+        "34 m",
+        "75 m",
+        "170 m",
+        "95 m"
+      ],
+      "t": 3,
+      "izoh": "Avval tezlik: v(t) = 4 + ∫6dt = 4 + 6t. So'ng s = ∫₀⁵(4 + 6t)dt = 20 + 3·25 = 95 m. 75 — boshlang'ich tezlikni unutish, 170 — 6t uchun boshlang'ich funksiyani 6t² deb olish, 34 esa v(5) = 34 ni yo'l deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-tezlik-yol",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#9035d5a1"
+    },
+    {
+      "q": "Jismning tezlanishi a(t) = 2t m/s² qonun bilan berilgan, boshlang'ich tezligi nolga teng. U birinchi 6 soniyada qancha yo'l bosadi?",
+      "v": [
+        "72 m",
+        "12 m",
+        "36 m",
+        "216 m"
+      ],
+      "t": 0,
+      "izoh": "Avval v(t) = ∫2t dt = t², chunki v(0) = 0. So'ng s = ∫₀⁶t²dt = 216/3 = 72 m. 36 — v(6) = 36 ni yo'l deb olish, 216 — 3 ga bo'lishni unutish, 12 esa a(6) = 12 ni javob deb olish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-tezlik-yol",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#5d31cbfa"
+    },
+    {
+      "q": "Raketa modelining tezlanishi a(t) = 12 − 2t m/s², boshlang'ich tezligi nolga teng. Uchirilgandan 5 soniya keyin uning tezligi qanday bo'ladi?",
+      "v": [
+        "2 m/s",
+        "35 m/s",
+        "60 m/s",
+        "85 m/s"
+      ],
+      "t": 1,
+      "izoh": "Tezlik tezlanishning integrali: v(t) = ∫(12 − 2t)dt = 12t − t², chunki v(0) = 0. Demak v(5) = 60 − 25 = 35 m/s. 2 — a(5) = 2 ni tezlik deb olish, 60 — −2t hadini tashlab ketish, 85 esa ikkinchi haddagi ishorani musbat deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-tezlik-yol",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#44b7ce5b"
+    },
+    {
+      "q": "Tosh 5 m/s boshlang'ich tezlik bilan pastga otildi, tezlanish 10 m/s² ga teng. Tosh 3 soniyada qancha masofani bosib o'tadi?",
+      "v": [
+        "35 m",
+        "45 m",
+        "60 m",
+        "105 m"
+      ],
+      "t": 2,
+      "izoh": "v(t) = 5 + 10t, demak s = ∫₀³(5 + 10t)dt = 15 + 5·9 = 60 m. 45 — boshlang'ich tezlikni hisobga olmaslik, 105 — 10t uchun boshlang'ich funksiyani 10t² deb olish, 35 esa v(3) = 35 ni masofa deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlanish-tezlik-yol",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#48a761a6"
+    },
+    {
+      "q": "Jismning tezlanishi a(t) = 3t² m/s², boshlang'ich tezligi 2 m/s ga teng. U dastlabki 2 soniyada qancha yo'l bosadi?",
+      "v": [
+        "4 m",
+        "10 m",
+        "20 m",
+        "8 m"
+      ],
+      "t": 3,
+      "izoh": "v(t) = ∫3t²dt = t³ + C, v(0) = 2 dan C = 2, ya'ni v(t) = t³ + 2. So'ng s = ∫₀²(t³ + 2)dt = 16/4 + 4 = 8 m. 4 — boshlang'ich tezlik hadini tashlab ketish, 10 — v(2) = 10 ni yo'l deb olish, 20 esa t⁴ ni 4 ga bo'lishni unutish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlanish-tezlik-yol",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#ad3e2d0e"
+    },
+    {
+      "q": "Nasos suv omboriga q(t) = 20 + 3t litr/minut tezlik bilan suv quymoqda. 10 minut ichida omborga qancha suv tushadi?",
+      "v": [
+        "350 litr",
+        "50 litr",
+        "200 litr",
+        "500 litr"
+      ],
+      "t": 0,
+      "izoh": "Yig'ilgan hajm oqim tezligining integraliga teng: V = ∫₀¹⁰(20 + 3t)dt = 200 + 1,5·100 = 350 litr. 200 — oqimning o'sishini hisobga olmaslik, 500 — 3t uchun boshlang'ich funksiyani 3t² deb olish, 50 esa q(10) = 50 ni hajm deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqim-tezligi-jamgarma",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#feeb7ccd"
+    },
+    {
+      "q": "Sexda mahsulot ishlab chiqarish tezligi r(t) = 60 − 2t dona/soat qonun bilan pasayadi. 8 soatlik smenada nechta mahsulot tayyorlanadi?",
+      "v": [
+        "352 dona",
+        "416 dona",
+        "44 dona",
+        "480 dona"
+      ],
+      "t": 1,
+      "izoh": "N = ∫₀⁸(60 − 2t)dt = 480 − 64 = 416 dona. 480 — pasayishni hisobga olmay 60 dona/soat bilan hisoblash, 352 — 2t uchun boshlang'ich funksiyani 2t² deb olish, 44 esa r(8) = 44 ni jami mahsulot deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqim-tezligi-jamgarma",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#53822575"
+    },
+    {
+      "q": "Yomg'ir suvi idishga q(t) = 4t + 5 litr/minut tezlik bilan oqib tushmoqda. 6 minutda idishda qancha suv yig'iladi?",
+      "v": [
+        "29 litr",
+        "72 litr",
+        "102 litr",
+        "30 litr"
+      ],
+      "t": 2,
+      "izoh": "V = ∫₀⁶(4t + 5)dt = 2·36 + 5·6 = 72 + 30 = 102 litr. 72 — o'zgarmas 5 hadini tashlab ketish, 30 — faqat 5 hadini hisoblash, 29 esa q(6) = 29 ni jami hajm deb olish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqim-tezligi-jamgarma",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#5fe49d55"
+    },
+    {
+      "q": "Isitgichning quvvati P(t) = 2t kilovatt qonun bilan o'sadi. U uzluksiz 5 soat ishlaganda sarflangan energiya qancha bo'ladi?",
+      "v": [
+        "25 kVt·soat",
+        "10 kVt·soat",
+        "12,5 kVt·soat",
+        "50 kVt·soat"
+      ],
+      "t": 0,
+      "izoh": "Energiya quvvatning vaqt bo'yicha integrali: E = ∫₀⁵2t dt = t² ayirmasi = 25 kVt·soat. 50 — 2 ga bo'lishni unutish, 10 — P(5) = 10 ni energiya deb olish, 12,5 esa koeffitsiyentni 1 o'rniga 0,5 deb olish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqim-tezligi-jamgarma",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#6781450d"
+    },
+    {
+      "q": "Idishga birinchi 4 minutda q(t) = 6t litr/minut tezlik bilan suv quyildi, keyingi 6 minutda esa o'zgarmas 24 litr/minut tezlik bilan. Jami qancha suv quyilgan?",
+      "v": [
+        "144 litr",
+        "240 litr",
+        "300 litr",
+        "192 litr"
+      ],
+      "t": 3,
+      "izoh": "Birinchi bosqich: ∫₀⁴6t dt = 3·16 = 48 litr. Ikkinchi bosqich: 24·6 = 144 litr. Jami 192 litr. 144 — faqat ikkinchi bosqichni olish, 240 — butun 10 minutni 24 litr/minut deb hisoblash, 300 esa butun vaqtga 6t qonunini qo'llash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oqim-tezligi-jamgarma",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#926ead25"
+    },
+    {
+      "q": "Jismga uning ko'chishi yo'nalishida F(x) = 6x N kuch ta'sir etadi. Jism x = 0 dan x = 4 m gacha ko'chganda bajarilgan ishni toping.",
+      "v": [
+        "48 J",
+        "24 J",
+        "96 J",
+        "12 J"
+      ],
+      "t": 0,
+      "izoh": "O'zgaruvchi kuchning ishi kuchning ko'chish bo'yicha integraliga teng: A = ∫₀⁴6x dx = 3x² ayirmasi = 48 J. 24 — F(4) = 24 ni ishning o'zi deb olish, 96 — 2 ga bo'lishni unutish, 12 esa o'rtacha kuch 12 N ni ish deb qabul qilish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-ozgaruvchi-kuch",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#351956b4"
+    },
+    {
+      "q": "F(x) = 3x² + 2 N kuch jismni x = 0 dan x = 3 m gacha ko'chirdi. Kuchning bajargan ishini hisoblang.",
+      "v": [
+        "27 J",
+        "29 J",
+        "33 J",
+        "87 J"
+      ],
+      "t": 2,
+      "izoh": "A = ∫₀³(3x² + 2)dx, boshlang'ich funksiya x³ + 2x. Demak A = 27 + 6 = 33 J. 27 — o'zgarmas 2 hadini tashlab ketish, 29 — F(3) = 29 ni ish deb olish, 87 esa 3x² uchun 3x³ boshlang'ich funksiyani ishlatib 81 + 6 ni chiqarish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-ozgaruvchi-kuch",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#e7fcbaf6"
+    },
+    {
+      "q": "Sardor arqonni tortmoqda, tortish kuchi masofaga qarab F(x) = 50 − 2x N qonun bilan kamayadi. U 10 m tortganda qancha ish bajaradi?",
+      "v": [
+        "30 J",
+        "300 J",
+        "500 J",
+        "400 J"
+      ],
+      "t": 3,
+      "izoh": "A = ∫₀¹⁰(50 − 2x)dx = 50·10 − 10² = 500 − 100 = 400 J. 500 — kuchning kamayishini hisobga olmaslik, 300 — 2x uchun boshlang'ich funksiyani 2x² deb olish, 30 esa F(10) = 30 ni ish deb olish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-ozgaruvchi-kuch",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#2c56935a"
+    },
+    {
+      "q": "Jismga F(x) = 8/x² N kuch ta'sir etadi. Jism x = 1 m dan x = 4 m gacha ko'chganda bajarilgan ish qanchaga teng?",
+      "v": [
+        "0,5 J",
+        "6 J",
+        "−6 J",
+        "8ln4 J"
+      ],
+      "t": 1,
+      "izoh": "8x⁻² ning boshlang'ich funksiyasi −8/x. A = (−8/4) − (−8/1) = −2 + 8 = 6 J. −6 — chegaralarni almashtirib ishorani buzish, 8ln4 — 1/x² ni 1/x deb integrallash, 0,5 esa F(4) = 0,5 ni ish deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ish-ozgaruvchi-kuch",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#ad49921f"
+    },
+    {
+      "q": "Kuch ko'chish davomida F(x) = √x N qonun bilan o'zgaradi. Jism x = 0 dan x = 9 m gacha ko'chganda bajarilgan ishni toping.",
+      "v": [
+        "3 J",
+        "9 J",
+        "27 J",
+        "18 J"
+      ],
+      "t": 3,
+      "izoh": "A = ∫₀⁹√x dx = (2/3)x^(3/2) ayirmasi = (2/3)·27 = 18 J. 27 — 2/3 koeffitsiyentini tushirib qoldirish, 3 — F(9) = 3 ni ish deb olish, 9 esa 2/3 o'rniga 1/3 koeffitsiyentini olish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-ozgaruvchi-kuch",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#3b52c6c8"
+    },
+    {
+      "q": "Bikrligi 200 N/m bo'lgan prujinani muvozanat holatidan 0,1 m ga cho'zish uchun qancha ish bajarish kerak?",
+      "v": [
+        "0,5 J",
+        "1 J",
+        "2 J",
+        "20 J"
+      ],
+      "t": 1,
+      "izoh": "Guk qonuniga ko'ra F(x) = 200x, demak A = ∫(200x)dx = 100x² va A = 100·0,01 = 1 J. 2 — 2 ga bo'lishni unutish, 20 — cho'zilgan holatdagi kuch 20 N ni ish deb olish, 0,5 esa ortiqcha yana 2 ga bo'lish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-prujina-Guk-qonuni",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#107c10d8"
+    },
+    {
+      "q": "Bikrligi 500 N/m bo'lgan prujina muvozanat holatidan 0,02 m dan 0,06 m gacha cho'zildi. Shu jarayonda bajarilgan ishni toping.",
+      "v": [
+        "0,8 J",
+        "0,9 J",
+        "1,6 J",
+        "20 J"
+      ],
+      "t": 0,
+      "izoh": "A = ∫(500x)dx = 250x², demak A = 250·(0,06² − 0,02²) = 250·0,0032 = 0,8 J. 0,9 — quyi chegarani nol deb olish, 1,6 — 2 ga bo'lishni unutish, 20 esa kuchni o'zgarmas deb 500·0,04 ni hisoblash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-prujina-Guk-qonuni",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#949140c6"
+    },
+    {
+      "q": "Prujinani muvozanat holatidan 0,2 m ga cho'zish uchun 8 J ish sarflandi. Prujinaning bikrlik koeffitsiyentini toping.",
+      "v": [
+        "40 N/m",
+        "200 N/m",
+        "400 N/m",
+        "800 N/m"
+      ],
+      "t": 2,
+      "izoh": "A = kx²/2 formulasidan k = 2A : x² = 16 : 0,04 = 400 N/m. 200 — 2 ga ko'paytirishni unutish, 40 — ishni ko'chishga bo'lib 8 : 0,2 ni olish, 800 esa natijani ortiqcha ikkilantirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-prujina-Guk-qonuni",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#fb773da1"
+    },
+    {
+      "q": "Prujinani muvozanatdan 0,1 m gacha cho'zishda A₁, keyin 0,1 m dan 0,2 m gacha cho'zishda A₂ ish bajariladi. A₂ ning A₁ ga nisbatini toping.",
+      "v": [
+        "1 : 1",
+        "2 : 1",
+        "4 : 1",
+        "3 : 1"
+      ],
+      "t": 3,
+      "izoh": "A = kx²/2 bo'lgani uchun A₁ = k·0,01/2, A₂ esa k·(0,04 − 0,01)/2 = k·0,03/2. Demak A₂ : A₁ = 3 : 1. 1 : 1 — cho'zilish uzunligi bir xil deb o'ylash, 2 : 1 — kvadratik emas, chiziqli bog'lanish olish, 4 : 1 esa 0,04 : 0,01 nisbatini javob deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ish-prujina-Guk-qonuni",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#b6d9c20a"
+    },
+    {
+      "q": "Uzunligi 12 m, har bir metrining massasi 3 kg bo'lgan zanjir bino tomiga to'liq tortib chiqarildi. g = 10 m/s² bo'lsa, bajarilgan ish qancha?",
+      "v": [
+        "2160 J",
+        "360 J",
+        "1080 J",
+        "4320 J"
+      ],
+      "t": 0,
+      "izoh": "x — hali osilib turgan zanjir uzunligi bo'lsin (dastlab x = 12 m, oxirida x = 0). Osilib turgan qismning og'irligi 3·10·x = 30x N; uni dx ga tortishda 30x·dx ish bajariladi. Demak A = ∫₀¹²30x dx = 15·144 = 2160 J. Bu massa markazining 6 m ko'tarilishiga mos keladi. 4320 — butun massani 12 m ga ko'tarish, 360 — balandlikni hisobga olmaslik, 1080 esa ortiqcha yarmiga bo'lish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ish-suyuqlik-va-zanjir",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#62195c89"
+    },
+    {
+      "q": "Asosining yuzasi 3 m², balandligi 4 m bo'lgan bak suvga to'la. Suvni bak tepasigacha chiqarish uchun qancha ish kerak, agar ρ = 1000 kg/m³ va g = 10 m/s² bo'lsa?",
+      "v": [
+        "80 kJ",
+        "120 kJ",
+        "240 kJ",
+        "480 kJ"
+      ],
+      "t": 2,
+      "izoh": "Balandligi y bo'lgan qatlamni (4 − y) ga ko'tarish kerak: A = 1000·10·3·∫₀⁴(4 − y)dy = 30000·8 = 240000 J, ya'ni 240 kJ. 480 — har bir qatlamni to'liq 4 m ga ko'tarish, 80 — asos yuzasini hisobga olmaslik, 120 esa ortiqcha yarmiga bo'lish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ish-suyuqlik-va-zanjir",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#dedfe3d1"
+    },
+    {
+      "q": "Quduqdan chelak ko'tarilmoqda; arqon qisqargani sari kuch F(x) = 60 − 0,5x N qonun bilan kamayadi, bunda x — ko'tarilish balandligi. 20 m ko'tarishda bajarilgan ish qancha?",
+      "v": [
+        "50 J",
+        "1000 J",
+        "1200 J",
+        "1100 J"
+      ],
+      "t": 3,
+      "izoh": "A = ∫₀²⁰(60 − 0,5x)dx = 60·20 − 0,25·400 = 1200 − 100 = 1100 J. 1200 — arqon og'irligini hisobga olmaslik, 1000 — 0,5x uchun boshlang'ich funksiyani 0,5x² deb olish, 50 esa F(20) = 50 ni ish deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-suyuqlik-va-zanjir",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#e16ea0f6"
+    },
+    {
+      "q": "Silindrdagi gazning porshenga ta'sir kuchi F(x) = 400/x N qonun bilan berilgan. Porshen x = 1 m dan x = 3 m gacha siljiganda gaz qancha ish bajaradi?",
+      "v": [
+        "400ln2 J",
+        "400ln3 J",
+        "800 J",
+        "1200 J"
+      ],
+      "t": 1,
+      "izoh": "A = ∫₁³(400/x)dx = 400(ln3 − ln1) = 400ln3 ≈ 439 J. 400ln2 — logarifmlar ayirmasini argumentlar ayirmasi deb olish, 800 — kuchni o'zgarmas 400 N deb 2 m ga ko'paytirish, 1200 esa 400 N ni 3 m ga ko'paytirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ish-suyuqlik-va-zanjir",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#add66681"
+    },
+    {
+      "q": "[2; 6] oraliqda f(x) ≥ g(x) ≥ 0 va ∫₂⁶f(x)dx = 47, ∫₂⁶g(x)dx = 19 ekani ma'lum. Ikki grafik orasidagi shakl yuzasini toping.",
+      "v": [
+        "14",
+        "28",
+        "66",
+        "−28"
+      ],
+      "t": 1,
+      "izoh": "Ikki grafik orasidagi yuza yuqori funksiyadan pastkisini ayirib topiladi: S = ∫₂⁶(f(x) − g(x))dx = 47 − 19 = 28. 66 — ayirish o'rniga qo'shish, −28 — ayirish tartibini almashtirish, 14 esa natijani ortiqcha yarmiga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "integral-xossalari-tatbiqda",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#70e05aa3"
+    },
+    {
+      "q": "[0; 4] oraliqda f(x) ≤ 0 va ∫₀⁴f(x)dx = −10 ekani ma'lum. Grafik bilan Ox o'qi orasidagi shaklning yuzasi qanday?",
+      "v": [
+        "10",
+        "−10",
+        "5",
+        "40"
+      ],
+      "t": 0,
+      "izoh": "Funksiya Ox o'qidan pastda yotganda aniq integral manfiy chiqadi, yuza esa uning moduliga teng: S = |−10| = 10. −10 — modul olishni unutish, 40 — integralni oraliq uzunligiga ko'paytirish, 5 esa natijani ortiqcha yarmiga bo'lish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "integral-xossalari-tatbiqda",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#f2df28d2"
+    },
+    {
+      "q": "Uzluksiz f(x) ≥ 0 funksiya grafigi va Ox o'qi orasidagi yuza [1; 4] oraliqda 20 ga, [4; 7] oraliqda 9 ga teng. Shu grafik ostidagi [1; 7] oraliqqa mos umumiy yuzani toping.",
+      "v": [
+        "11",
+        "14,5",
+        "29",
+        "180"
+      ],
+      "t": 2,
+      "izoh": "Yuza additiv kattalik: qo'shni oraliqlardagi bo'laklar qo'shiladi, chunki ∫₁⁴f(x)dx + ∫₄⁷f(x)dx = ∫₁⁷f(x)dx. Demak S = 20 + 9 = 29. 11 — qo'shish o'rniga ayirish, 180 — ikkalasini ko'paytirish, 14,5 esa o'rta arifmetigini olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "integral-xossalari-tatbiqda",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#0cd9ecab"
+    },
+    {
+      "q": "Nasosning oqim tezligi f(t) litr/minut bo'lib, ∫₀²f(t)dt = 7 litr ekani ma'lum. Nasos quvvati 3 barobar oshirilib, ustiga o'zgarmas 2 litr/minut qo'shimcha oqim ulansa, dastlabki 2 minutda qancha suv yig'iladi?",
+      "v": [
+        "9 litr",
+        "23 litr",
+        "42 litr",
+        "25 litr"
+      ],
+      "t": 3,
+      "izoh": "Yangi oqim tezligi 3f(t) + 2 litr/minut bo'ladi, yig'ilgan suv esa ∫₀²(3f(t) + 2)dt. Chiziqlilik xossasi bo'yicha bu 3∫₀²f(t)dt + ∫₀²2dt = 3·7 + 2·(2 − 0) = 21 + 4 = 25 litr. 23 litr — o'zgarmas 2 ni oraliq uzunligiga ko'paytirmaslik, 9 litr — koeffitsiyentlarni qo'llamay 7 + 2 ni olish, 42 litr esa 3·7·2 ni hisoblash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "integral-xossalari-tatbiqda",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#3054becf"
+    },
+    {
+      "q": "Uzluksiz f(x) ≥ 0 funksiya grafigi, Ox o'qi va x = a, x = b to'g'ri chiziqlar bilan chegaralangan shakl Ox atrofida aylantirilganda hosil bo'lgan jism hajmi qaysi formula bilan topiladi?",
+      "v": [
+        "V = π∫ₐᵇf²(x)dx",
+        "V = ∫ₐᵇf²(x)dx",
+        "V = π∫ₐᵇf(x)dx",
+        "V = 2π∫ₐᵇf(x)dx"
+      ],
+      "t": 0,
+      "izoh": "Aylanish jismining ko'ndalang kesimi radiusi f(x) bo'lgan doira, uning yuzasi πf²(x) ga teng. Shu yuzalarni jamlash hajmni beradi: V = π∫ₐᵇf²(x)dx. π siz variant kesim doirasini unutadi, kvadratsiz variantlar esa doira yuzasi o'rniga radiusni oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tatbiq-formulasini-tanlash",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#7a1c591e"
+    },
+    {
+      "q": "[a; b] oraliqda f(x) ≥ g(x) bo'lsa, ikki grafik orasidagi shaklning yuzasi qaysi formula bilan hisoblanadi?",
+      "v": [
+        "∫ₐᵇ(f(x) + g(x))dx",
+        "∫ₐᵇ(f(x) − g(x))dx",
+        "∫ₐᵇ(g(x) − f(x))dx",
+        "π∫ₐᵇ(f(x) − g(x))dx"
+      ],
+      "t": 1,
+      "izoh": "Yuza yuqorida yotgan chiziqdan pastdagisini ayirib topiladi: S = ∫ₐᵇ(f(x) − g(x))dx. Qo'shishli variant ikkala yuzani jamlaydi, teskari tartib manfiy natija beradi, π li variant esa yuzaga emas, aylanish jismi hajmiga tegishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tatbiq-formulasini-tanlash",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#736f59c4"
+    },
+    {
+      "q": "Aniq integralning tatbiqlari haqidagi quyidagi to'rtta mulohazadan qaysi biri noto'g'ri hisoblanadi?",
+      "v": [
+        "Tezlik grafigi ostidagi yuza, v(t) ≥ 0 bo'lganda, bosib o'tilgan yo'lga teng",
+        "O'zgaruvchi kuchning ishi kuchning ko'chish bo'yicha aniq integraliga teng",
+        "Aylanish jismining hajmi π∫ₐᵇf(x)dx ga teng",
+        "f(x) ≤ 0 bo'lganda egri chiziq va Ox orasidagi yuza integralning moduliga teng"
+      ],
+      "t": 2,
+      "izoh": "Aylanish jismi hajmida funksiya albatta kvadratga oshiriladi: V = π∫ₐᵇf²(x)dx, chunki kesim doirasining yuzasi πf²(x). Kvadratsiz yozuv doira yuzasi o'rniga radiusni qo'yadi, shuning uchun uchinchi mulohaza noto'g'ri. Qolgan uchtasi — yo'l, ish va manfiy funksiya yuzasi haqidagi mulohazalar — to'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tatbiq-formulasini-tanlash",
+      "id": "matematika_anlz_m14-integralning-tatbiqlari#d034494c"
+    }
+  ]
+}

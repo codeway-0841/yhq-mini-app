@@ -1,0 +1,1609 @@
+{
+  "nom": "Ko'p bosqichli va aralash matnli masalalar",
+  "bolim": "Nisbat, foiz va matnli masalalar",
+  "blok": "foiz",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Telefon narxi 4 000 000 so'm edi. Avval u 20% ga arzonlashtirildi, keyin yangi narxdan yana 15% ga arzonlashtirildi. Telefonning oxirgi narxini toping.",
+      "v": [
+        "2 600 000 so'm",
+        "3 200 000 so'm",
+        "2 720 000 so'm",
+        "3 400 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi chegirmadan keyin narx 4 000 000 · 0,8 = 3 200 000 so'm bo'ladi. Ikkinchi chegirma endi shu yangi narxdan olinadi: 3 200 000 · 0,85 = 2 720 000 so'm. 2 600 000 so'm — ikki foizni qo'shib 35% deb hisoblash xatosi. Javob: 2 720 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-marta-foiz-ozgarish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#17750cbf"
+    },
+    {
+      "q": "Kitob narxi avval 25% ga qimmatlashdi, oradan bir oy o'tgach yangi narxdan 20% ga arzonlashdi. Yakuniy narx dastlabki narxga nisbatan qanday o'zgargan?",
+      "v": [
+        "O'zgarmadi",
+        "5% ga oshdi",
+        "5% ga kamaydi",
+        "1% ga oshdi"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki narxni 1 deb olamiz. Qimmatlashgach 1 · 1,25 = 1,25 bo'ladi. Arzonlashgach 1,25 · 0,8 = 1 chiqadi. Ko'paytma 1 ga teng, demak narx dastlabki holatiga qaytgan. 5% ga oshdi — foizlarni oddiy ayirish xatosi. Javob: o'zgarmadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-marta-foiz-ozgarish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#ab902f4b"
+    },
+    {
+      "q": "Zavod mahsulotining narxi ketma-ket ikki marta bir xil foizga oshdi va natijada jami 21% ga ko'paydi. Har safar narx necha foizga oshgan?",
+      "v": [
+        "10,5%",
+        "10%",
+        "11%",
+        "21%"
+      ],
+      "t": 1,
+      "izoh": "Oshish koeffitsientini (1 + x) deb belgilaymiz. Ikki marta oshgani uchun (1 + x)² = 1,21 tenglama hosil bo'ladi. Bundan 1 + x = 1,1, ya'ni x = 0,1 = 10%. 10,5% — 21 ni ikkiga bo'lish xatosi, chunki foizlar ustma-ust ishlaydi. Javob: 10%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-marta-foiz-ozgarish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#a49e011e"
+    },
+    {
+      "q": "Do'konda ko'ylak 180 000 so'm turadi. Bayramda unga 10% chegirma, chegirmali narxdan esa yana 10% chegirma berildi. Xaridor dastlabki narxga nisbatan jami qancha tejaydi?",
+      "v": [
+        "36 000 so'm",
+        "18 000 so'm",
+        "145 800 so'm",
+        "34 200 so'm"
+      ],
+      "t": 3,
+      "izoh": "Birinchi chegirmadan keyin 180 000 · 0,9 = 162 000 so'm. Ikkinchi chegirmadan keyin 162 000 · 0,9 = 145 800 so'm. Tejalgan pul 180 000 − 145 800 = 34 200 so'm. 36 000 so'm — 20% ni bir yo'la ayirish xatosi. Javob: 34 200 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-marta-foiz-ozgarish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#d2bd57df"
+    },
+    {
+      "q": "Ishchining oylik maoshi avval 30% ga oshirildi, keyin ish hajmi kamayib, yangi maoshdan 30% ga kamaytirildi. Maosh dastlabkiga nisbatan qanday bo'ldi?",
+      "v": [
+        "O'zgarmadi",
+        "9% ga oshdi",
+        "9% ga kamaydi",
+        "60% ga kamaydi"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki maosh 1 bo'lsin. Oshgandan keyin 1,3, kamaygandan keyin 1,3 · 0,7 = 0,91 bo'ladi. 1 − 0,91 = 0,09, ya'ni maosh 9% ga kamaygan. Oshish katta bazadan emas, kichik bazadan hisoblangani uchun teng foizlar bir-birini qoplamaydi. Javob: 9% ga kamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-marta-foiz-ozgarish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#6eec1c8a"
+    },
+    {
+      "q": "Do'kon avval 20% chegirma, so'ng chegirmali narxdan yana 25% chegirma e'lon qildi. Bu ikki chegirma o'rniga bitta chegirma qo'yilsa, u necha foiz bo'ladi?",
+      "v": [
+        "40%",
+        "45%",
+        "50%",
+        "5%"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich narx 1 bo'lsin. Ikki chegirmadan keyin narx 1 · 0,8 · 0,75 = 0,6 bo'ladi. Demak narxning 0,4 qismi, ya'ni 40% i tushgan. 45% — chegirmalarni oddiy qo'shish xatosi, bu esa ikkinchi chegirma kichikroq summadan olinishini hisobga olmaydi. Javob: 40%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ketma-ket-chegirmani-birlashtirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#0ab4a0ed"
+    },
+    {
+      "q": "Buyumga avval 10%, keyin qolgan narxdan 30% chegirma qo'llanildi. Shu ikki chegirmaga teng bo'lgan yagona chegirma necha foizni tashkil qiladi?",
+      "v": [
+        "40%",
+        "37%",
+        "63%",
+        "3%"
+      ],
+      "t": 1,
+      "izoh": "Narx 1 · 0,9 · 0,7 = 0,63 ga tushadi. Chegirma esa 1 − 0,63 = 0,37, ya'ni 37%. 63% — to'langan ulushni chegirma deb olish xatosi, 40% esa foizlarni qo'shish xatosi. Javob: 37%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-chegirmani-birlashtirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#d64942ab"
+    },
+    {
+      "q": "Mahsulotga avval 25% chegirma berildi. Yakuniy chegirma 40% bo'lishi uchun chegirmali narxdan yana necha foiz chegirma qilish kerak?",
+      "v": [
+        "15%",
+        "25%",
+        "16%",
+        "20%"
+      ],
+      "t": 3,
+      "izoh": "Yakuniy narx dastlabkining 0,6 qismi bo'lishi kerak. Birinchi chegirmadan keyin narx 0,75 ga tushdi. Ikkinchi koeffitsient 0,6 : 0,75 = 0,8, demak chegirma 20%. 15% — 40 dan 25 ni ayirish xatosi. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-chegirmani-birlashtirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#4b7d920d"
+    },
+    {
+      "q": "Kompyuter narxi 8 500 000 so'm. Unga avval 12% yetkazib berish haqi qo'shildi, so'ng umumiy summadan 5% chegirma berildi. Xaridor qancha to'laydi?",
+      "v": [
+        "9 095 000 so'm",
+        "9 520 000 so'm",
+        "9 044 000 so'm",
+        "8 075 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Yetkazib berish bilan summa 8 500 000 · 1,12 = 9 520 000 so'm bo'ladi. Chegirma shu summadan olinadi: 9 520 000 · 0,95 = 9 044 000 so'm. 9 095 000 so'm — 12% dan 5% ni ayirib, 7% qo'shish xatosi. Javob: 9 044 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-chegirmani-birlashtirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#557328a0"
+    },
+    {
+      "q": "Idishda 40 kg 15% li tuz eritmasi bor. Unga avval 10 kg, so'ng yana 10 kg toza suv quyildi. Yakuniy eritmada tuz necha foizni tashkil qiladi?",
+      "v": [
+        "10%",
+        "12%",
+        "15%",
+        "6%"
+      ],
+      "t": 0,
+      "izoh": "Sof tuz miqdori 40 · 0,15 = 6 kg va suv qo'shilganda u o'zgarmaydi. Eritmaning yakuniy massasi 40 + 10 + 10 = 60 kg. Konsentratsiya 6 : 60 = 0,1 = 10%. 12% — faqat bitta suv qo'shishni hisoblash xatosi. Javob: 10%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-marta-suyultirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#842decb7"
+    },
+    {
+      "q": "30 litr 20% li eritmadan 6 litr olib tashlanib, o'rniga shuncha suv quyildi. Keyin xuddi shu amal yana bir marta takrorlandi. Eritmadagi modda ulushi qancha bo'ldi?",
+      "v": [
+        "16%",
+        "12,8%",
+        "12%",
+        "10,24%"
+      ],
+      "t": 1,
+      "izoh": "Har bir amaldan keyin eritmaning 24 : 30 = 0,8 qismi qoladi, chunki 6 litr olinganda modda ham shu nisbatda ketadi. Ikki amaldan keyin 20% · 0,8 · 0,8 = 12,8%. 16% — faqat bir marta takrorlash, 10,24% — uch marta takrorlash xatosi. Javob: 12,8%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-marta-suyultirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#353056d4"
+    },
+    {
+      "q": "Dilshod avtomobilidagi 5 litr 60% li antifriz eritmasidan 1 litr to'kib, o'rniga suv quydi. Keyin yana 1 litr to'kib, yana suv quydi. Antifriz ulushi qanday bo'ldi?",
+      "v": [
+        "48%",
+        "40%",
+        "30,72%",
+        "38,4%"
+      ],
+      "t": 3,
+      "izoh": "Har safar eritmaning 4 : 5 = 0,8 qismi saqlanadi. Ikki marta takrorlangach 60% · 0,8 · 0,8 = 38,4% qoladi. 48% — faqat birinchi amalning natijasi. 40% — har safar 10% dan kamayadi deb noto'g'ri o'ylash. Javob: 38,4%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-marta-suyultirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#65b3bf1f"
+    },
+    {
+      "q": "24 litr 25% li sirka eritmasi bor. Unga suv qo'shib avval 15% li, so'ng 10% li eritma tayyorlanadi. Ikkinchi bosqichda yana necha litr suv qo'shish kerak?",
+      "v": [
+        "16 litr",
+        "36 litr",
+        "20 litr",
+        "60 litr"
+      ],
+      "t": 2,
+      "izoh": "Sof sirka miqdori 24 · 0,25 = 6 litr va u o'zgarmaydi. 15% bo'lishi uchun hajm 6 : 0,15 = 40 litr, ya'ni 16 litr suv qo'shiladi. 10% bo'lishi uchun hajm 6 : 0,1 = 60 litr, demak yana 60 − 40 = 20 litr kerak. Javob: 20 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-marta-suyultirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#cfe5c725"
+    },
+    {
+      "q": "50 litr eritmada 12% spirt bor. Undan bir qism olinib o'rniga suv quyilgach spirt 9% bo'ldi. Xuddi shuncha hajm yana olinib suv quyilsa, spirt ulushi qanday bo'ladi?",
+      "v": [
+        "6,75%",
+        "6%",
+        "4,5%",
+        "5,0625%"
+      ],
+      "t": 0,
+      "izoh": "Birinchi amaldan keyin ulush 9 : 12 = 0,75 marta kamaygan, ya'ni har safar eritmaning 0,75 qismi saqlanadi. Ikkinchi amaldan keyin 9% · 0,75 = 6,75%. 6% — har safar 3% dan kamayadi deb o'ylash xatosi. Javob: 6,75%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-marta-suyultirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#fafe59a1"
+    },
+    {
+      "q": "60 kg sharbatda quruq modda 12% ni tashkil qiladi. Sharbat qaynatilib quruq modda ulushi 20% ga yetkazildi. Qancha suv bug'lantirilgan?",
+      "v": [
+        "36 kg",
+        "24 kg",
+        "8 kg",
+        "48 kg"
+      ],
+      "t": 1,
+      "izoh": "Quruq modda massasi 60 · 0,12 = 7,2 kg va qaynatishda u o'zgarmaydi. Yangi massa 7,2 : 0,2 = 36 kg. Bug'langan suv 60 − 36 = 24 kg. 36 kg — qolgan massani javob deb olish xatosi. Javob: 24 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bugtatib-quyultirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#4a81b169"
+    },
+    {
+      "q": "40 kg 10% li tuz eritmasiga qancha toza tuz qo'shilsa, eritmadagi tuz ulushi 25% ga yetadi?",
+      "v": [
+        "6 kg",
+        "10 kg",
+        "8 kg",
+        "48 kg"
+      ],
+      "t": 2,
+      "izoh": "Boshda tuz 40 · 0,1 = 4 kg. Qo'shilgan tuz x bo'lsa, (4 + x) : (40 + x) = 0,25 tenglama chiqadi. Bundan 4 + x = 10 + 0,25x, ya'ni 0,75x = 6 va x = 8 kg. 6 kg — umumiy massa o'zgarmaydi deb hisoblash xatosi. Javob: 8 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bugtatib-quyultirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#863ea154"
+    },
+    {
+      "q": "Fermer yangi o'rilgan 30 kg makkajo'xori donini quritishga qo'ydi, donning namligi 25% edi. Quritishdan keyin namlik 10% ga tushdi. Quritilgan donning massasi qancha bo'ldi?",
+      "v": [
+        "25 kg",
+        "27 kg",
+        "22,5 kg",
+        "4,5 kg"
+      ],
+      "t": 0,
+      "izoh": "Quruq modda 30 · 0,75 = 22,5 kg va quritishda o'zgarmaydi. Yangi massada quruq modda 90% ni tashkil etadi: 22,5 : 0,9 = 25 kg. 27 kg — 10% ni to'g'ridan-to'g'ri dastlabki massadan ayirish xatosi. Javob: 25 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bugtatib-quyultirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#8981cc62"
+    },
+    {
+      "q": "48 kg mahsulot namligi 40% edi. Avval namlik 25% ga, so'ng 10% ga tushirildi. Birinchi bosqichda bug'langan suv ikkinchisidan necha kg ko'p?",
+      "v": [
+        "16 kg",
+        "9,6 kg",
+        "6,4 kg",
+        "3,2 kg"
+      ],
+      "t": 3,
+      "izoh": "Quruq modda 48 · 0,6 = 28,8 kg, u ikki bosqichda ham o'zgarmaydi. Birinchi bosqichdan keyin massa 28,8 : 0,75 = 38,4 kg, bug'langan suv 48 − 38,4 = 9,6 kg. Ikkinchi bosqichdan keyin 28,8 : 0,9 = 32 kg, bug'langan suv 38,4 − 32 = 6,4 kg. Ayirma 9,6 − 6,4 = 3,2 kg. Javob: 3,2 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bugtatib-quyultirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#4340df4f"
+    },
+    {
+      "q": "Laborant 12 litr 30% li eritma bilan 18 litr 20% li eritmani bir idishda aralashtirdi. Hosil bo'lgan eritmaning konsentratsiyasini toping.",
+      "v": [
+        "25%",
+        "24%",
+        "50%",
+        "7,2%"
+      ],
+      "t": 1,
+      "izoh": "Birinchi eritmadagi sof modda 12 · 0,3 = 3,6 litr, ikkinchisida 18 · 0,2 = 3,6 litr. Jami modda 7,2 litr, jami hajm 12 + 18 = 30 litr. Konsentratsiya 7,2 : 30 = 0,24 = 24%. 25% — hajmlarni hisobga olmay foizlarning o'rta arifmetigini olish xatosi. Javob: 24%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-eritmani-aralashtirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#323fd588"
+    },
+    {
+      "q": "40% li va 15% li eritmalardan foydalanib 50 litr 25% li eritma tayyorlanmoqda. 40% li eritmadan qancha olish kerak?",
+      "v": [
+        "20 litr",
+        "30 litr",
+        "25 litr",
+        "10 litr"
+      ],
+      "t": 0,
+      "izoh": "40% li eritmadan x litr olinsa, ikkinchisidan 50 − x litr olinadi. Sof modda bo'yicha 0,4x + 0,15(50 − x) = 0,25 · 50 tenglama tuziladi. Bundan 0,25x + 7,5 = 12,5, ya'ni x = 20 litr. 30 litr — ikkinchi eritmaning miqdori. Javob: 20 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-eritmani-aralashtirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#9102e845"
+    },
+    {
+      "q": "10 litr 50% li eritmaga 10 litr suv quyildi, so'ng ustiga 20 litr 20% li eritma qo'shildi. Yakuniy aralashmadagi modda ulushi qancha?",
+      "v": [
+        "25%",
+        "35%",
+        "22,5%",
+        "45%"
+      ],
+      "t": 2,
+      "izoh": "Boshlang'ich moddaning miqdori 10 · 0,5 = 5 litr. Suv qo'shilgach hajm 20 litr bo'ladi, modda esa 5 litrligicha qoladi. Ikkinchi eritmadan 20 · 0,2 = 4 litr modda qo'shiladi. Jami 9 litr modda va 40 litr hajm: 9 : 40 = 22,5%. 25% — oraliq natijani javob deb olish xatosi. Javob: 22,5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-eritmani-aralashtirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#8d634141"
+    },
+    {
+      "q": "35% li va 10% li ikki eritma 3 : 2 nisbatda aralashtirildi. Hosil bo'lgan eritmaning konsentratsiyasini aniqlang.",
+      "v": [
+        "22,5%",
+        "20%",
+        "45%",
+        "25%"
+      ],
+      "t": 3,
+      "izoh": "Nisbatga ko'ra 3 qism birinchi va 2 qism ikkinchi eritma olinadi, jami 5 qism. Sof modda (3 · 35 + 2 · 10) : 5 = (105 + 20) : 5 = 25%. 20% — nisbatni teskari qo'llash, ya'ni 35% ga 2, 10% ga 3 og'irlik berish xatosi. Javob: 25%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-eritmani-aralashtirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#bd3b6494"
+    },
+    {
+      "q": "Avtobus ma'lum yo'lni 5 soatda bosib o'tadi. Haydovchi tezlikni 25% ga oshirsa, shu yo'lni qancha vaqtda bosib o'tadi?",
+      "v": [
+        "4 soat",
+        "3 soat 45 daqiqa",
+        "4 soat 15 daqiqa",
+        "6 soat 15 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Yo'l o'zgarmagani uchun tezlik va vaqt teskari proporsional. Tezlik 1,25 marta oshsa, vaqt 1,25 marta kamayadi: 5 : 1,25 = 4 soat. 3 soat 45 daqiqa — vaqtni 25% ga kamaytirish xatosi, bu esa teskari proporsionallikni buzadi. Javob: 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlikni-foizga-ozgartirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#eeb34040"
+    },
+    {
+      "q": "Karim avtomobilda 60 km/soat tezlik bilan ketayotgan edi. Yomg'ir boshlangach tezlikni 20% ga kamaytirdi. Qolgan 96 km yo'lni qancha vaqtda bosadi?",
+      "v": [
+        "1 soat 36 daqiqa",
+        "2 soat",
+        "2 soat 24 daqiqa",
+        "1 soat 20 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Yangi tezlik 60 · 0,8 = 48 km/soat bo'ladi. Vaqt 96 : 48 = 2 soat. 1 soat 36 daqiqa — eski tezlik bilan hisoblash, 2 soat 24 daqiqa esa tezlikni 40 km/soat deb olish xatosi. Javob: 2 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlikni-foizga-ozgartirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#cf142e1d"
+    },
+    {
+      "q": "Poyezd 3 soat davomida 80 km/soat tezlik bilan yurdi, keyin tezligi 25% ga oshdi va shu tezlikda yana 2 soat harakatlandi. Butun yo'ldagi o'rtacha tezligini toping.",
+      "v": [
+        "90 km/soat",
+        "100 km/soat",
+        "88 km/soat",
+        "80 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Birinchi qismda yo'l 80 · 3 = 240 km. Yangi tezlik 80 · 1,25 = 100 km/soat, ikkinchi qismda yo'l 100 · 2 = 200 km. Jami 440 km va 5 soat, o'rtacha tezlik 440 : 5 = 88 km/soat. 90 km/soat — vaqtlarni hisobga olmay tezliklarning o'rta arifmetigini olish xatosi. Javob: 88 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlikni-foizga-ozgartirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#674a1791"
+    },
+    {
+      "q": "Yuk mashinasi yo'lning 30% ini 50 km/soat, qolgan qismini 70 km/soat tezlik bilan bosdi. Butun yo'ldagi o'rtacha tezligi qanday?",
+      "v": [
+        "64 km/soat",
+        "60 km/soat",
+        "70 km/soat",
+        "62,5 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Butun yo'lni 1 deb olamiz. Birinchi qismga sarflangan vaqt 0,3 : 50 = 0,006, ikkinchisiga 0,7 : 70 = 0,01. Jami vaqt 0,016, o'rtacha tezlik 1 : 0,016 = 62,5 km/soat. 64 km/soat — tezliklarni yo'l ulushiga ko'paytirib qo'shish xatosi, o'rtacha tezlik esa vaqt orqali topiladi. Javob: 62,5 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlikni-foizga-ozgartirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#e8d4c475"
+    },
+    {
+      "q": "A va B pristanlari orasi 60 km. Ikki qayiq bir vaqtda bir-biriga qarab 12 va 18 km/soat tezlikda jo'nadi, manzilga yetgach darhol qaytdi. Ular ikkinchi marta qachon uchrashadi?",
+      "v": [
+        "6 soat",
+        "4 soat",
+        "2 soat",
+        "8 soat"
+      ],
+      "t": 0,
+      "izoh": "Birinchi uchrashuvda ular birgalikda 60 km bosadi. Ikkinchi uchrashuvgacha esa birgalikda 3 · 60 = 180 km bosishadi, chunki har biri manzilga yetib qaytadi. Tezliklar yig'indisi 12 + 18 = 30 km/soat, demak vaqt 180 : 30 = 6 soat. 2 soat — birinchi uchrashuv vaqti. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-marta-uchrashish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#0f34d064"
+    },
+    {
+      "q": "A va B stansiyalari orasi 480 km. A dan 50 km/soat, B dan 70 km/soat tezlikda poyezdlar bir vaqtda qarama-qarshi jo'nadi, manzilga yetgach to'xtamay qaytdi. Ikkinchi uchrashuv A stansiyadan necha km uzoqda bo'ladi?",
+      "v": [
+        "200 km",
+        "360 km",
+        "240 km",
+        "280 km"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi uchrashuvgacha ular birgalikda 3 · 480 = 1440 km bosadi, tezliklar yig'indisi 120 km/soat, demak vaqt 12 soat. A dan chiqqan poyezd 50 · 12 = 600 km yurgan: 480 km borib, 120 km qaytgan. Uning A dan uzoqligi 480 − 120 = 360 km. 200 km — birinchi uchrashuv joyi. Javob: 360 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-marta-uchrashish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#f437c446"
+    },
+    {
+      "q": "Uzunligi 400 m bo'lgan doiraviy yo'lda ikki yuguruvchi bir nuqtadan qarama-qarshi yo'nalishda 5 m/s va 3 m/s tezlikda yugurdi. Ular ikkinchi marta necha soniyadan keyin uchrashadi?",
+      "v": [
+        "50 soniya",
+        "200 soniya",
+        "100 soniya",
+        "400 soniya"
+      ],
+      "t": 2,
+      "izoh": "Qarama-qarshi yugurganda ular har uchrashuvda birgalikda bitta doira, ya'ni 400 m bosadi. Yaqinlashish tezligi 5 + 3 = 8 m/s, bitta uchrashuvga 400 : 8 = 50 soniya ketadi. Ikkinchi uchrashuv 2 · 50 = 100 soniyada bo'ladi. 200 soniya — bir yo'nalishda yugurish holatiga mos keladi. Javob: 100 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-marta-uchrashish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#c0fc920d"
+    },
+    {
+      "q": "Ikki avtomobil A va B shaharlaridan bir-biriga qarab bir vaqtda jo'nadi. Uchrashgandan keyin birinchisi B ga 4 soatda, ikkinchisi A ga 9 soatda yetdi. Ular necha soatdan keyin uchrashgan?",
+      "v": [
+        "6,5 soat",
+        "13 soat",
+        "2,25 soat",
+        "6 soat"
+      ],
+      "t": 3,
+      "izoh": "Uchrashuvgacha o'tgan vaqtni t deb olamiz. Birinchi avtomobil t soatda ikkinchisining 9 soatlik yo'lini bosgani uchun tezliklar nisbati t : 9 va 4 : t ga teng bo'ladi. Demak t² = 4 · 9 = 36 va t = 6 soat. 6,5 soat — vaqtlarning o'rta arifmetigini olish xatosi. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-marta-uchrashish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#ccc37638"
+    },
+    {
+      "q": "Velosipedchi 15 km/soat tezlikda jo'nadi. Oradan 2 soat o'tgach shu yo'ldan mototsiklchi 45 km/soat tezlik bilan quvib ketdi. U velosipedchini necha soatda quvib yetadi?",
+      "v": [
+        "1 soat",
+        "1,5 soat",
+        "2 soat",
+        "3 soat"
+      ],
+      "t": 0,
+      "izoh": "Mototsiklchi jo'naganda velosipedchi 15 · 2 = 30 km oldinda bo'ladi. Yaqinlashish tezligi 45 − 15 = 30 km/soat. Quvib yetish vaqti 30 : 30 = 1 soat. 2 soat — kechikish vaqtini javob deb olish xatosi. Javob: 1 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvib-yetish-ikki-bosqich",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#63e30a6e"
+    },
+    {
+      "q": "Yuk mashinasi bazadan 40 km/soat tezlikda chiqdi. 1,5 soatdan keyin xuddi shu yo'ldan yengil avtomobil 70 km/soat bilan jo'nadi. Quvib yetish nuqtasi bazadan qancha uzoqlikda bo'ladi?",
+      "v": [
+        "80 km",
+        "140 km",
+        "60 km",
+        "105 km"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich ustunlik, ya'ni oradagi masofa 40 · 1,5 = 60 km. Yaqinlashish tezligi 70 − 40 = 30 km/soat, quvib yetish vaqti 60 : 30 = 2 soat. Bazadan uzoqlik 70 · 2 = 140 km. 60 km — faqat oradagi boshlang'ich masofani javob deb olish xatosi. Javob: 140 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvib-yetish-ikki-bosqich",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#b7a1b19b"
+    },
+    {
+      "q": "Avtobus 345 km yo'lga 60 km/soat tezlikda chiqdi. Ikki soat yurgach 30 daqiqa to'xtadi, so'ng tezligini 25% ga oshirib yo'lni tugatdi. Butun safar necha soat davom etgan?",
+      "v": [
+        "5 soat",
+        "5,75 soat",
+        "5,5 soat",
+        "6 soat"
+      ],
+      "t": 2,
+      "izoh": "Birinchi qismda 60 · 2 = 120 km bosilgan, qolgan yo'l 345 − 120 = 225 km. Yangi tezlik 60 · 1,25 = 75 km/soat, unga 225 : 75 = 3 soat ketadi. Jami vaqt 2 + 0,5 + 3 = 5,5 soat. 5 soat — to'xtash vaqtini hisobga olmaslik xatosi. Javob: 5,5 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quvib-yetish-ikki-bosqich",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#f0efa47b"
+    },
+    {
+      "q": "Ali va Bekzod bir vaqtda bir nuqtadan 8 km/soat va 6 km/soat tezlikda yugurdi. Ikki soatdan keyin Bekzod tezligini 50% ga oshirdi. Bekzod tezligini oshirgandan keyin Alini necha soatda quvib yetadi?",
+      "v": [
+        "2 soat",
+        "6 soat",
+        "8 soat",
+        "4 soat"
+      ],
+      "t": 3,
+      "izoh": "Ikki soatda Ali 16 km, Bekzod 12 km yugurgan, ular orasidagi masofa 4 km. Bekzodning yangi tezligi 6 · 1,5 = 9 km/soat, yaqinlashish tezligi 9 − 8 = 1 km/soat. Quvib yetish uchun 4 : 1 = 4 soat kerak. 6 soat — sanoqni safar boshidan boshlash xatosi. Javob: 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quvib-yetish-ikki-bosqich",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#d25cfd04"
+    },
+    {
+      "q": "Birinchi poyezd stansiyadan 54 km/soat tezlikda jo'nadi. 20 daqiqadan keyin shu yo'nalishda ikkinchi poyezd 72 km/soat bilan chiqdi. Ikkinchi poyezd birinchisidan 36 km o'zib ketishi uchun qancha vaqt kerak?",
+      "v": [
+        "3 soat",
+        "2 soat",
+        "1 soat",
+        "3 soat 20 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "20 daqiqa 1/3 soatga teng, shu vaqtda birinchi poyezd 54 : 3 = 18 km yuradi. Ikkinchi poyezd avval shu 18 km ni yopishi, so'ng 36 km o'zishi kerak, jami 54 km ustunlik. Yaqinlashish tezligi 72 − 54 = 18 km/soat, demak 54 : 18 = 3 soat. Javob: 3 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvib-yetish-ikki-bosqich",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#b4530fa7"
+    },
+    {
+      "q": "Qayiqning turg'un suvdagi tezligi 18 km/soat, daryo oqimining tezligi 3 km/soat. Qayiq 42 km oqim bo'ylab suzib borib, o'sha yo'ldan qaytdi. Yo'lga jami qancha vaqt ketgan?",
+      "v": [
+        "4 soat 48 daqiqa",
+        "4 soat",
+        "5 soat 36 daqiqa",
+        "4 soat 40 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Oqim bo'ylab tezlik 18 + 3 = 21 km/soat, borishga 42 : 21 = 2 soat ketadi. Oqimga qarshi tezlik 18 − 3 = 15 km/soat, qaytishga 42 : 15 = 2,8 soat ketadi. Jami 4,8 soat, ya'ni 4 soat 48 daqiqa. 4 soat 40 daqiqa — oqimni umuman hisobga olmaslik xatosi. Javob: 4 soat 48 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daryo-oqimi-borish-qaytish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#083d8421"
+    },
+    {
+      "q": "Qayiq oqim bo'ylab 36 km ni 2 soatda, oqimga qarshi shuncha masofani 3 soatda bosdi. Daryo oqimining tezligini toping.",
+      "v": [
+        "6 km/soat",
+        "3 km/soat",
+        "15 km/soat",
+        "30 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Oqim bo'ylab tezlik 36 : 2 = 18 km/soat, qarshi tezlik 36 : 3 = 12 km/soat. Oqim tezligi shu ikkisining yarim ayirmasiga teng: (18 − 12) : 2 = 3 km/soat. 6 km/soat — ayirmani ikkiga bo'lishni unutish xatosi. Javob: 3 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daryo-oqimi-borish-qaytish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#a97c7afb"
+    },
+    {
+      "q": "Qayiqning turg'un suvdagi tezligi 10 km/soat. U 24 km yo'lni oqimga qarshi bosishga oqim bo'ylab borishdan 1 soat ko'proq vaqt sarfladi. Oqim tezligi qancha?",
+      "v": [
+        "1 km/soat",
+        "4 km/soat",
+        "2 km/soat",
+        "3 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Oqim tezligini v deb olamiz: 24 : (10 − v) − 24 : (10 + v) = 1 tenglama hosil bo'ladi. Kasrlarni birlashtirsak 48v = 100 − v², ya'ni v² + 48v − 100 = 0. Bundan v = 2 km/soat. 1 km/soat — vaqt farqini ikki yo'nalishga bo'lish xatosi. Javob: 2 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daryo-oqimi-borish-qaytish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#1275242c"
+    },
+    {
+      "q": "Kema A dan B ga oqim bo'ylab 5 soatda, B dan A ga qaytishga 7 soat sarfladi. Motorsiz sol shu masofani oqim bilan necha soatda bosadi?",
+      "v": [
+        "12 soat",
+        "17,5 soat",
+        "70 soat",
+        "35 soat"
+      ],
+      "t": 3,
+      "izoh": "Kema tezligi u, oqim tezligi c bo'lsin: 5(u + c) = 7(u − c) tenglamadan 12c = 2u, ya'ni u = 6c chiqadi. Masofa 5(6c + c) = 35c ga teng. Sol faqat oqim tezligi bilan suzadi, demak 35c : c = 35 soat kerak. 12 soat — vaqtlarni oddiy qo'shish xatosi. Javob: 35 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daryo-oqimi-borish-qaytish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#162bc389"
+    },
+    {
+      "q": "Birinchi ishchi ma'lum ishni 12 kunda, ikkinchisi shu ishni 24 kunda bajaradi. Ikkalasi birgalikda ishlasa, ish necha kunda tugaydi?",
+      "v": [
+        "8 kun",
+        "18 kun",
+        "36 kun",
+        "6 kun"
+      ],
+      "t": 0,
+      "izoh": "Birinchisining bir kunlik unumi 1/12, ikkinchisiniki 1/24. Birgalikdagi unum 1/12 + 1/24 = 3/24 = 1/8 qismni tashkil qiladi. Demak butun ishga 8 kun ketadi. 18 kun — muddatlarning o'rta arifmetigini olish xatosi. Javob: 8 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birgalikda-ishlash-bosqichli",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#f158eed6"
+    },
+    {
+      "q": "Birinchi ishchi ishni 15 kunda, ikkinchisi 30 kunda bajaradi. Ular birga 6 kun ishlagach birinchisi ketdi. Ikkinchisi qolgan ishni necha kunda tugatadi?",
+      "v": [
+        "18 kun",
+        "12 kun",
+        "10 kun",
+        "4 kun"
+      ],
+      "t": 1,
+      "izoh": "Birgalikdagi kunlik unum 1/15 + 1/30 = 1/10. Olti kunda ular ishning 6/10 = 0,6 qismini bajaradi, qolgani 0,4. Ikkinchisining unumi 1/30, demak unga 0,4 : (1/30) = 12 kun kerak. 10 kun — birgalikda butun ishga ketadigan muddat. Javob: 12 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birgalikda-ishlash-bosqichli",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#7e017e6d"
+    },
+    {
+      "q": "Anvar hovli devorini 9 soatda, Botir 18 soatda bo'yab chiqadi. Ular birga 4 soat ishlagach Anvar ketishga majbur bo'ldi. Botir qolgan ishni qancha vaqtda tugatadi?",
+      "v": [
+        "2 soat",
+        "14 soat",
+        "6 soat",
+        "12 soat"
+      ],
+      "t": 2,
+      "izoh": "Birgalikdagi soatlik unum 1/9 + 1/18 = 1/6. To'rt soatda ular ishning 4/6 = 2/3 qismini bajaradi, qolgani 1/3. Botirning unumi 1/18, unga 18 : 3 = 6 soat kerak. 14 soat — 18 dan 4 ni ayirish xatosi. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birgalikda-ishlash-bosqichli",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#92beb880"
+    },
+    {
+      "q": "Uch usta bir ishni alohida-alohida 20, 30 va 60 kunda bajaradi. Uchalasi birgalikda ishlasa, ish qancha kunda tugaydi?",
+      "v": [
+        "110 kun",
+        "36 kun",
+        "20 kun",
+        "10 kun"
+      ],
+      "t": 3,
+      "izoh": "Kunlik unumlar 1/20, 1/30 va 1/60. Yig'indisi 3/60 + 2/60 + 1/60 = 6/60 = 1/10 ga teng. Demak butun ish 10 kunda tugaydi. 110 kun — muddatlarni qo'shish xatosi, birgalikdagi muddat esa har doim eng tez ustanikidan kichik bo'ladi. Javob: 10 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birgalikda-ishlash-bosqichli",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#05c6df94"
+    },
+    {
+      "q": "Birinchi brigada obyektni 20 kunda, ikkinchisi 30 kunda quradi. Avval birinchi brigada yolg'iz 5 kun ishladi, so'ng ikkinchisi qo'shildi. Qurilish jami necha kun davom etgan?",
+      "v": [
+        "14 kun",
+        "9 kun",
+        "12 kun",
+        "17 kun"
+      ],
+      "t": 0,
+      "izoh": "Birinchi brigada 5 kunda ishning 5/20 = 1/4 qismini bajaradi, qolgani 3/4. Birgalikdagi kunlik unum 1/20 + 1/30 = 1/12. Qolgan qismga (3/4) · 12 = 9 kun ketadi. Jami 5 + 9 = 14 kun. 9 kun — faqat birgalikdagi bosqichni javob deb olish xatosi. Javob: 14 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birgalikda-ishlash-bosqichli",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#a01e30fc"
+    },
+    {
+      "q": "Ishchi kuniga 40 ta detal tayyorlaydi. Yangi dastgohda uning kunlik unumi 25% ga oshdi. Endi u 300 ta detalni necha kunda tayyorlaydi?",
+      "v": [
+        "7,5 kun",
+        "6 kun",
+        "5 kun",
+        "10 kun"
+      ],
+      "t": 1,
+      "izoh": "Yangi kunlik unum 40 · 1,25 = 50 ta detal. Kerakli kunlar soni 300 : 50 = 6 kun. 7,5 kun — eski unum bilan hisoblash, 10 kun esa unumni 25% ga kamaytirish xatosi. Javob: 6 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-unumini-foizga-ozgartirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#1f2c457b"
+    },
+    {
+      "q": "Brigada rejani 20 kunda bajarishi kerak edi. 8 kun ishlagach kunlik unumini 20% ga oshirdi. Reja jami necha kunda bajarilgan?",
+      "v": [
+        "16 kun",
+        "10 kun",
+        "18 kun",
+        "20 kun"
+      ],
+      "t": 2,
+      "izoh": "Kunlik unum 1/20, sakkiz kunda ishning 0,4 qismi bajarilgan, qolgani 0,6. Yangi kunlik unum (1/20) · 1,2 = 0,06. Qolgan qismga 0,6 : 0,06 = 10 kun ketadi, jami 8 + 10 = 18 kun. 16 kun — butun muddatni 20% ga qisqartirish xatosi. Javob: 18 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-unumini-foizga-ozgartirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#54da6604"
+    },
+    {
+      "q": "Non zavodi kuniga 1200 ta non yopar edi. Yangi pech o'rnatilgach unumdorlik 15% ga, xodimlar qo'shilgach yana 20% ga oshdi. Zavod endi kuniga nechta non yopadi?",
+      "v": [
+        "1620 ta",
+        "1380 ta",
+        "1440 ta",
+        "1656 ta"
+      ],
+      "t": 3,
+      "izoh": "Birinchi o'sishdan keyin 1200 · 1,15 = 1380 ta bo'ladi. Ikkinchi o'sish shu yangi songa qo'llanadi: 1380 · 1,2 = 1656 ta. 1620 ta — ikki foizni qo'shib 35% deb olish xatosi. Javob: 1656 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-unumini-foizga-ozgartirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#173e6ae2"
+    },
+    {
+      "q": "Ikki ishchidan birinchisining kunlik unumi ikkinchisinikidan 25% yuqori. Birgalikda ular ishni 20 kunda bajaradi. Ikkinchi ishchi yolg'iz necha kunda bajaradi?",
+      "v": [
+        "45 kun",
+        "36 kun",
+        "40 kun",
+        "25 kun"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchisining kunlik unumi r bo'lsa, birinchisiniki 1,25r bo'ladi. Yig'indisi 2,25r = 1/20, bundan r = 1 : 45. Demak ikkinchisi yolg'iz 45 kunda bajaradi. 36 kun — birinchi ishchining muddati, 25 kun esa birgalikdagi muddatni to'g'ridan-to'g'ri 25% ga oshirish xatosi. Javob: 45 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ish-unumini-foizga-ozgartirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#f3ac970e"
+    },
+    {
+      "q": "Birinchi quvur basseynni 6 soatda, ikkinchisi 12 soatda to'ldiradi. Ikkala quvur birdan ochilsa, basseyn qancha vaqtda to'ladi?",
+      "v": [
+        "9 soat",
+        "4 soat",
+        "18 soat",
+        "3 soat"
+      ],
+      "t": 1,
+      "izoh": "Birinchi quvurning soatlik unumi 1/6, ikkinchisiniki 1/12. Yig'indisi 2/12 + 1/12 = 3/12 = 1/4 qism. Demak basseyn 4 soatda to'ladi. 9 soat — vaqtlarning o'rta arifmetigini olish xatosi. Javob: 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvur-toldirish-boshatish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#8fcb358b"
+    },
+    {
+      "q": "Quvur basseynni 8 soatda to'ldiradi, tagidagi teshik esa to'la basseynni 24 soatda bo'shatadi. Teshik yopilmasa, basseyn necha soatda to'ladi?",
+      "v": [
+        "6 soat",
+        "16 soat",
+        "12 soat",
+        "32 soat"
+      ],
+      "t": 2,
+      "izoh": "To'ldirish unumi 1/8, bo'shatish unumi 1/24 va u ayiriladi. Sof unum 3/24 − 1/24 = 2/24 = 1/12 qism. Demak basseyn 12 soatda to'ladi. 6 soat — bo'shatish unumini ayirish o'rniga qo'shish xatosi. Javob: 12 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvur-toldirish-boshatish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#5a37f04c"
+    },
+    {
+      "q": "Basseyn avval faqat birinchi quvur bilan 3 soat to'ldirildi, so'ng ikkinchi quvur ham ochildi. Birinchisi basseynni 9 soatda, ikkinchisi 18 soatda to'ldiradi. Basseyn jami necha soatda to'ladi?",
+      "v": [
+        "6 soat",
+        "4 soat",
+        "9 soat",
+        "7 soat"
+      ],
+      "t": 3,
+      "izoh": "Uch soatda birinchi quvur basseynning 3/9 = 1/3 qismini to'ldiradi, qolgani 2/3. Birgalikdagi unum 1/9 + 1/18 = 1/6. Qolgan qismga (2/3) · 6 = 4 soat ketadi, jami 3 + 4 = 7 soat. 4 soat — faqat ikkinchi bosqichni javob deb olish xatosi. Javob: 7 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvur-toldirish-boshatish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#48a0dc50"
+    },
+    {
+      "q": "Ikki quvur birgalikda basseynni 4 soatda to'ldiradi. Birinchi quvur yolg'iz ikkinchisidan 6 soat tez to'ldiradi. Birinchi quvur yolg'iz necha soatda to'ldiradi?",
+      "v": [
+        "6 soat",
+        "12 soat",
+        "8 soat",
+        "10 soat"
+      ],
+      "t": 0,
+      "izoh": "Birinchi quvurning vaqti x bo'lsa, ikkinchisiniki x + 6 bo'ladi: 1/x + 1 : (x + 6) = 1/4. Kasrlarni keltirsak x² − 2x − 24 = 0, bundan x = 6 soat. 10 soat — 4 va 6 ni oddiy qo'shish xatosi. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quvur-toldirish-boshatish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#b86669ba"
+    },
+    {
+      "q": "Tadbirkor mahsulotni 250 000 so'mga sotib oldi, narxiga 40% ustama qo'ydi, so'ng aksiyada shu narxdan 10% chegirma bilan sotdi. Uning foydasi qancha?",
+      "v": [
+        "75 000 so'm",
+        "65 000 so'm",
+        "100 000 so'm",
+        "315 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Ustama bilan narx 250 000 · 1,4 = 350 000 so'm bo'ladi. Chegirmadan keyin sotuv narxi 350 000 · 0,9 = 315 000 so'm. Foyda 315 000 − 250 000 = 65 000 so'm. 75 000 so'm — 40% dan 10% ni ayirib, 30% foyda deb hisoblash xatosi. Javob: 65 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sotib-olish-sotish-foyda",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#8811525d"
+    },
+    {
+      "q": "Tovar tannarxiga 25% ustama qo'yib narx belgilandi, keyin shu narxdan 20% chegirma bilan sotildi. Sotuvchining foydasi necha foiz bo'ldi?",
+      "v": [
+        "5%",
+        "45%",
+        "0%",
+        "20%"
+      ],
+      "t": 2,
+      "izoh": "Tannarx 1 bo'lsin. Ustama bilan narx 1,25, chegirmadan keyin 1,25 · 0,8 = 1 bo'ladi. Sotuv narxi tannarxga teng, demak foyda 0%. 5% — foizlarni oddiy ayirish xatosi, chunki chegirma kattaroq summadan olinadi. Javob: 0%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sotib-olish-sotish-foyda",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#d17c8933"
+    },
+    {
+      "q": "Do'kon 60 ta ko'ylakni donasi 90 000 so'mdan sotib oldi. Ulardan 40 tasini 30% ustama bilan, qolganini tannarxida sotdi. Do'konning umumiy foydasi qancha?",
+      "v": [
+        "1 620 000 so'm",
+        "4 680 000 so'm",
+        "1 800 000 so'm",
+        "1 080 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Faqat 40 ta ko'ylakdan foyda olingan, har biridan 90 000 · 0,3 = 27 000 so'm. Umumiy foyda 40 · 27 000 = 1 080 000 so'm. Qolgan 20 ta tannarxida sotilgani uchun foyda bermaydi. 1 620 000 so'm — ustamani hamma ko'ylakka qo'llash xatosi. Javob: 1 080 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sotib-olish-sotish-foyda",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#60fc7963"
+    },
+    {
+      "q": "Mahsulot 20% chegirma bilan 144 000 so'mga sotildi va shunda ham sotuvchi tannarxdan 20% foyda ko'rdi. Mahsulotning tannarxi qancha?",
+      "v": [
+        "120 000 so'm",
+        "115 200 so'm",
+        "180 000 so'm",
+        "172 800 so'm"
+      ],
+      "t": 0,
+      "izoh": "Chegirmadan keyingi 144 000 so'm — bu tannarxning 120% i. Demak tannarx 144 000 : 1,2 = 120 000 so'm. 172 800 so'm — 20% ni ayirish o'rniga qo'shish, 180 000 so'm esa chegirma foizini foyda foizi bilan chalkashtirish xatosi. Javob: 120 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sotib-olish-sotish-foyda",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#ac6b7676"
+    },
+    {
+      "q": "Savdogar ikki xalatni 96 000 so'mdan sotdi. Biriga 20% foyda, ikkinchisiga 20% zarar ko'rdi. Ikki savdo natijasida u yutdimi yoki yutqazdimi?",
+      "v": [
+        "8 000 so'm foyda",
+        "8 000 so'm zarar",
+        "Foyda ham, zarar ham yo'q",
+        "4 000 so'm zarar"
+      ],
+      "t": 1,
+      "izoh": "Birinchi xalat tannarxi 96 000 : 1,2 = 80 000 so'm, ikkinchisiniki 96 000 : 0,8 = 120 000 so'm. Jami tannarx 200 000 so'm, jami tushum 192 000 so'm. Demak 8 000 so'm zarar. Teng foizlar bir-birini qoplamaydi, chunki zarar kattaroq tannarxdan hisoblanadi. Javob: 8 000 so'm zarar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sotib-olish-sotish-foyda",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#894504ea"
+    },
+    {
+      "q": "Xodimning hisoblangan oylik maoshi 5 000 000 so'm. Undan avval 12% daromad solig'i, qolgan summadan yana 1% kasaba uyushmasi badali ushlandi. Xodim qo'liga qancha oladi?",
+      "v": [
+        "4 350 000 so'm",
+        "4 400 000 so'm",
+        "4 356 000 so'm",
+        "4 950 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Soliqdan keyin 5 000 000 · 0,88 = 4 400 000 so'm qoladi. Badal shu qoldiqdan olinadi: 4 400 000 · 0,99 = 4 356 000 so'm. 4 350 000 so'm — ikki foizni qo'shib 13% deb olish xatosi. Javob: 4 356 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maosh-va-soliq-bosqichli",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#405ee2dd"
+    },
+    {
+      "q": "Xodim soliq ushlangandan keyin qo'liga 3 168 000 so'm oldi. Undan 12% daromad solig'i ushlangan bo'lsa, hisoblangan maosh qancha edi?",
+      "v": [
+        "3 548 160 so'm",
+        "2 787 840 so'm",
+        "3 960 000 so'm",
+        "3 600 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Qo'lga tegadigan pul maoshning 88% ini tashkil qiladi. Demak maosh 3 168 000 : 0,88 = 3 600 000 so'm. 3 548 160 so'm — qoldiqqa 12% qo'shish xatosi, bunda foiz kichikroq bazadan olinib qolgan. Javob: 3 600 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maosh-va-soliq-bosqichli",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#6fdc6b1f"
+    },
+    {
+      "q": "Repetitor bir oyda 40 ta dars berdi, har bir dars uchun 60 000 so'm oldi. Daromadining 15% ini xona ijarasiga, qolganining 20% ini reklamaga sarfladi. Qancha pul qoldi?",
+      "v": [
+        "1 632 000 so'm",
+        "1 560 000 so'm",
+        "2 040 000 so'm",
+        "1 920 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Oylik daromad 40 · 60 000 = 2 400 000 so'm. Ijaradan keyin 2 400 000 · 0,85 = 2 040 000 so'm qoladi. Reklamadan keyin 2 040 000 · 0,8 = 1 632 000 so'm. 1 560 000 so'm — ikki foizni qo'shib 35% ni bir yo'la ayirish xatosi. Javob: 1 632 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maosh-va-soliq-bosqichli",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#f262e12f"
+    },
+    {
+      "q": "Bir mamlakatda daromadning birinchi 3 000 000 so'midan 7%, undan ortiq qismidan 15% soliq olinadi. Daromadi 8 000 000 so'm bo'lgan kishi qancha soliq to'laydi?",
+      "v": [
+        "1 200 000 so'm",
+        "960 000 so'm",
+        "560 000 so'm",
+        "1 760 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Birinchi bosqichdan 3 000 000 · 0,07 = 210 000 so'm soliq olinadi. Ikkinchi bosqichga 8 000 000 − 3 000 000 = 5 000 000 so'm tushadi, undan 5 000 000 · 0,15 = 750 000 so'm. Jami 210 000 + 750 000 = 960 000 so'm. 1 200 000 so'm — butun daromaddan 15% olish xatosi. Javob: 960 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maosh-va-soliq-bosqichli",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#46849f04"
+    },
+    {
+      "q": "Omonatga 5 000 000 so'm yillik 10% dan ikki yilga qo'yildi, hisoblangan foiz har yili asosiy summaga qo'shiladi. Ikki yildan keyin hisobda qancha pul bo'ladi?",
+      "v": [
+        "6 000 000 so'm",
+        "5 500 000 so'm",
+        "6 050 000 so'm",
+        "6 655 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi yil oxirida 5 000 000 · 1,1 = 5 500 000 so'm bo'ladi. Ikkinchi yilda foiz shu yangi summadan hisoblanadi: 5 500 000 · 1,1 = 6 050 000 so'm. 6 000 000 so'm — foizni har yili faqat dastlabki summadan olish, ya'ni sodda foiz xatosi. Javob: 6 050 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bank-murakkab-foiz",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#ac3a8508"
+    },
+    {
+      "q": "Sarvar 2 000 000 so'mni yillik 20% li omonatga qo'ydi. Har yil oxirida u faqat foizni yechib oldi, asosiy summa esa hisobda qoldi. Ikki yilda u qancha foiz pul oladi?",
+      "v": [
+        "880 000 so'm",
+        "480 000 so'm",
+        "400 000 so'm",
+        "800 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Foiz har yili faqat 2 000 000 so'mdan hisoblanadi, chunki u hisobga qo'shilmaydi. Bir yillik foiz 2 000 000 · 0,2 = 400 000 so'm. Ikki yilda 2 · 400 000 = 800 000 so'm. 880 000 so'm — foizni qayta qo'shiladigan, ya'ni murakkab foiz deb hisoblash xatosi. Javob: 800 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bank-murakkab-foiz",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#07ee81eb"
+    },
+    {
+      "q": "Tadbirkor 12 000 000 so'm kredit oldi, unga oyiga 2% ustama yoziladi va ustama qarzga qo'shiladi. Ikki oy davomida hech qanday to'lov qilinmasa, qarz qanchaga yetadi?",
+      "v": [
+        "12 484 800 so'm",
+        "12 480 000 so'm",
+        "12 240 000 so'm",
+        "14 880 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Birinchi oydan keyin qarz 12 000 000 · 1,02 = 12 240 000 so'm bo'ladi. Ikkinchi oyda ustama yangi qarzdan olinadi: 12 240 000 · 1,02 = 12 484 800 so'm. 12 480 000 so'm — ikki oy uchun 4% ni bir yo'la qo'shish xatosi. Javob: 12 484 800 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bank-murakkab-foiz",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#1cec1658"
+    },
+    {
+      "q": "Omonat ikki yil saqlangach 4 000 000 so'mdan 4 410 000 so'mga yetdi. Foiz har yili hisobga qo'shilgan bo'lsa, yillik foiz stavkasi qancha?",
+      "v": [
+        "10,25%",
+        "5%",
+        "5,125%",
+        "10%"
+      ],
+      "t": 1,
+      "izoh": "Ikki yillik o'sish koeffitsienti 4 410 000 : 4 000 000 = 1,1025 ga teng. Yillik koeffitsient uning kvadrat ildizi: √1,1025 = 1,05, ya'ni 5%. 10,25% — ikki yillik umumiy o'sishni yillik stavka deb olish xatosi. Javob: 5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bank-murakkab-foiz",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#c021e881"
+    },
+    {
+      "q": "Shahar aholisi hozir 250 000 kishi va har yili 8% ga ko'payib bormoqda. Ikki yildan keyin shahar aholisi qancha bo'ladi?",
+      "v": [
+        "290 000 kishi",
+        "270 000 kishi",
+        "291 600 kishi",
+        "314 928 kishi"
+      ],
+      "t": 2,
+      "izoh": "Birinchi yildan keyin 250 000 · 1,08 = 270 000 kishi bo'ladi. Ikkinchi yilda o'sish yangi sondan hisoblanadi: 270 000 · 1,08 = 291 600 kishi. 290 000 kishi — ikki yil uchun 16% ni bir yo'la qo'shish xatosi. Javob: 291 600 kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-yillik-osish-kamayish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#b61dfc71"
+    },
+    {
+      "q": "Zavodning ishlab chiqarish hajmi birinchi yili 20% ga oshdi, ikkinchi yili esa 10% ga kamaydi. Ikki yil ichida hajm qanday o'zgargan?",
+      "v": [
+        "10% ga oshdi",
+        "8% ga kamaydi",
+        "30% ga oshdi",
+        "8% ga oshdi"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich hajm 1 bo'lsin. Ikki yildan keyin u 1 · 1,2 · 0,9 = 1,08 bo'ladi. Demak hajm 8% ga oshgan. 10% ga oshdi — foizlarni oddiy ayirish xatosi, chunki kamayish kattaroq bazadan hisoblanadi. Javob: 8% ga oshdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-yillik-osish-kamayish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#925ab65b"
+    },
+    {
+      "q": "Yangi avtomobil 180 000 000 so'm turadi va uning qiymati har yili 15% ga tushadi. Ikki yildan keyin avtomobil qanchaga baholanadi?",
+      "v": [
+        "130 050 000 so'm",
+        "126 000 000 so'm",
+        "153 000 000 so'm",
+        "110 542 500 so'm"
+      ],
+      "t": 0,
+      "izoh": "Birinchi yildan keyin 180 000 000 · 0,85 = 153 000 000 so'm bo'ladi. Ikkinchi yilda kamayish shu qiymatdan olinadi: 153 000 000 · 0,85 = 130 050 000 so'm. 126 000 000 so'm — ikki yil uchun 30% ni bir yo'la ayirish xatosi. Javob: 130 050 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-yillik-osish-kamayish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#0765ae44"
+    },
+    {
+      "q": "Ustaxonada ishlab chiqarish ikki yilda 500 tadan 720 taga yetdi, har yili bir xil foizga oshgan. Ikkinchi yilda mahsulot soni nechtaga ko'paygan?",
+      "v": [
+        "100 ta",
+        "120 ta",
+        "110 ta",
+        "220 ta"
+      ],
+      "t": 1,
+      "izoh": "Ikki yillik o'sish koeffitsienti 720 : 500 = 1,44 ga teng, yillik koeffitsient √1,44 = 1,2, ya'ni 20%. Birinchi yildan keyin 500 · 1,2 = 600 ta bo'lgan, ikkinchi yilda 720 − 600 = 120 ta qo'shilgan. 100 ta — birinchi yildagi o'sish. Javob: 120 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-yillik-osish-kamayish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#5eb6aee0"
+    },
+    {
+      "q": "Tovar narxi birinchi yili ma'lum foizga oshdi, ikkinchi yili xuddi shu foizga tushdi va natijada dastlabkidan 4% arzon bo'ldi. Bu foizni toping.",
+      "v": [
+        "4%",
+        "2%",
+        "20%",
+        "40%"
+      ],
+      "t": 2,
+      "izoh": "Izlanayotgan ulushni p deb olamiz: (1 + p)(1 − p) = 0,96 tenglama hosil bo'ladi. Chap tomon 1 − p² ga teng, demak p² = 0,04 va p = 0,2, ya'ni 20%. 4% — natijadagi kamayishni izlanayotgan foiz deb olish xatosi. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-yillik-osish-kamayish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#ae6c8a3b"
+    },
+    {
+      "q": "Sayyoh birinchi kuni butun yo'lning 30% ini, ikkinchi kuni esa qolgan yo'lning 40% ini bosdi. Yo'lning necha foizi bosilmay qoldi?",
+      "v": [
+        "42%",
+        "30%",
+        "28%",
+        "70%"
+      ],
+      "t": 0,
+      "izoh": "Birinchi kundan keyin yo'lning 0,7 qismi qoladi. Ikkinchi kuni shu qoldiqning 40% i bosilgani uchun 0,7 · 0,6 = 0,42 qismi qoladi. Demak 42% qolgan. 30% — ikki foizni qo'shib 70% bosilgan deb hisoblash xatosi. Javob: 42%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qolgan-qismning-foizi",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#64dcb30b"
+    },
+    {
+      "q": "Kitob 480 betdan iborat. Zilola birinchi hafta kitobning 25% ini, ikkinchi hafta qolgan betlarning 30% ini o'qidi. Necha bet o'qilmay qoldi?",
+      "v": [
+        "216 bet",
+        "252 bet",
+        "360 bet",
+        "108 bet"
+      ],
+      "t": 1,
+      "izoh": "Birinchi haftadan keyin 480 · 0,75 = 360 bet qoladi. Ikkinchi haftada shu 360 betning 30% i o'qiladi, ya'ni 360 · 0,7 = 252 bet qoladi. 216 bet — 55% ni bir yo'la ayirish xatosi. Javob: 252 bet.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qolgan-qismning-foizi",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#e26360ef"
+    },
+    {
+      "q": "Yuk mashinasi yukning 40% ini birinchi omborga, qolgan yukning 25% ini ikkinchi omborga tushirdi. Mashinada 27 tonna yuk qoldi. Boshda qancha yuk bor edi?",
+      "v": [
+        "45 tonna",
+        "36 tonna",
+        "60 tonna",
+        "54 tonna"
+      ],
+      "t": 2,
+      "izoh": "Birinchi ombordan keyin yukning 0,6 qismi qoladi, ikkinchisidan keyin 0,6 · 0,75 = 0,45 qismi. Demak 27 : 0,45 = 60 tonna. 45 tonna — faqat birinchi bosqichni hisobga olish, 36 tonna esa faqat ikkinchisini hisobga olish xatosi. Javob: 60 tonna.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qolgan-qismning-foizi",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#f43eddae"
+    },
+    {
+      "q": "Ishchi birinchi kuni ishning 1/5 qismini, ikkinchi kuni qolganining 25% ini, uchinchi kuni yana qolganining yarmini bajardi. Ishning qancha qismi qoldi?",
+      "v": [
+        "5%",
+        "40%",
+        "20%",
+        "30%"
+      ],
+      "t": 3,
+      "izoh": "Birinchi kundan keyin 0,8 qismi qoladi, ikkinchi kundan keyin 0,8 · 0,75 = 0,6 qismi. Uchinchi kundan keyin 0,6 · 0,5 = 0,3 qismi, ya'ni 30% qoladi. 5% — foizlarni qo'shib 95% bajarilgan deb hisoblash xatosi. Javob: 30%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qolgan-qismning-foizi",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#ca3831d8"
+    },
+    {
+      "q": "Poyezd 60 km yo'lni belgilangan vaqtda bosishi kerak edi. U jo'nashda 30 daqiqaga kechikdi, shuning uchun tezligini rejadagidan 10 km/soat oshirdi va manzilga o'z vaqtida yetdi. Rejadagi tezlik qancha edi?",
+      "v": [
+        "30 km/soat",
+        "40 km/soat",
+        "25 km/soat",
+        "120 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Rejadagi tezlik v bo'lsa, yo'lga 60 : v soat mo'ljallangan. Kechikkanidan keyin poyezd 60 : (v + 10) soat yurdi va 60 : v − 60 : (v + 10) = 0,5 tenglama chiqadi. Uni soddalashtirsak v² + 10v − 1200 = 0, bundan v = 30 km/soat. Tekshiramiz: reja 60 : 30 = 2 soat, amalda 0,5 + 60 : 40 = 0,5 + 1,5 = 2 soat. Javob: 30 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kechikish-va-tezlashtirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#f13388b5"
+    },
+    {
+      "q": "Talaba maktabga 5 km/soat tezlik bilan yursa 6 daqiqaga kechikadi, 6 km/soat bilan yursa 4 daqiqa oldin yetib boradi. Uyidan maktabgacha masofa qancha?",
+      "v": [
+        "3 km",
+        "5 km",
+        "2 km",
+        "10 km"
+      ],
+      "t": 1,
+      "izoh": "Ikki holatdagi vaqt farqi 6 + 4 = 10 daqiqa, ya'ni 1/6 soat. Masofani S deb olsak S/5 − S/6 = 1/6, chap tomon S/30 ga teng. Demak S = 5 km. 3 km — vaqt farqini 10 emas, 6 daqiqa deb olish xatosi. Javob: 5 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kechikish-va-tezlashtirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#b72f5436"
+    },
+    {
+      "q": "Avtomobil A dan B ga 90 km/soat tezlikda borishi kerak edi, lekin 75 km/soat bilan yurib 40 daqiqaga kechikdi. A va B orasidagi masofani toping.",
+      "v": [
+        "60 km",
+        "50 km",
+        "300 km",
+        "450 km"
+      ],
+      "t": 2,
+      "izoh": "Kechikish 40 daqiqa, ya'ni 2/3 soat. Masofa S bo'lsa S/75 − S/90 = 2/3 tenglama chiqadi. Chap tomonni keltirsak S : 450 = 2/3, bundan S = 300 km. 50 km — kechikish vaqtida bosiladigan yo'lni javob deb olish xatosi. Javob: 300 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kechikish-va-tezlashtirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#2994339d"
+    },
+    {
+      "q": "Yo'lovchi reja bo'yicha yo'lni 8 soatda bosishi kerak edi. U yo'lning yarmini rejadagi tezlikdan 20% sekin, qolgan yarmini 20% tez bosdi. Safar qancha davom etgan?",
+      "v": [
+        "8 soat",
+        "10 soat",
+        "6 soat 40 daqiqa",
+        "8 soat 20 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Reja tezligini v desak, butun yo'l 8v ga teng, har bir yarmi 4v. Birinchi yarmiga 4v : (0,8v) = 5 soat, ikkinchisiga 4v : (1,2v) = 10/3 soat ketadi. Jami 5 + 3 soat 20 daqiqa = 8 soat 20 daqiqa. 8 soat — sekinlashish va tezlashish bir-birini qoplaydi deb o'ylash xatosi. Javob: 8 soat 20 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kechikish-va-tezlashtirish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#b32b8c1d"
+    },
+    {
+      "q": "Birinchi idishda 40 litr, ikkinchisida 24 litr suv bor. Birinchi idishdan ikkinchisiga qancha suv quyilsa, ikkalasidagi suv teng bo'ladi?",
+      "v": [
+        "8 litr",
+        "16 litr",
+        "32 litr",
+        "64 litr"
+      ],
+      "t": 0,
+      "izoh": "Jami suv 40 + 24 = 64 litr, teng bo'lganda har birida 32 litrdan bo'ladi. Birinchi idishdan 40 − 32 = 8 litr quyish kerak. 16 litr — idishlardagi farqni to'liq quyish xatosi, bunda idishlar o'rin almashadi. Javob: 8 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "idishlar-orasida-quyish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#37acecca"
+    },
+    {
+      "q": "Ikki qopda jami 90 kg un bor. Birinchi qopdan 12 kg un ikkinchisiga o'tkazilgach ulardagi un teng bo'ldi. Boshda birinchi qopda qancha un bor edi?",
+      "v": [
+        "45 kg",
+        "57 kg",
+        "33 kg",
+        "51 kg"
+      ],
+      "t": 1,
+      "izoh": "O'tkazishdan keyin har bir qopda 90 : 2 = 45 kg bo'ladi. Birinchi qopdan 12 kg chiqqani uchun boshda 45 + 12 = 57 kg bo'lgan. 45 kg — tenglashgandan keyingi qiymatni javob deb olish xatosi. Javob: 57 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "idishlar-orasida-quyish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#d43b8f63"
+    },
+    {
+      "q": "Birinchi idishda 30 litr, ikkinchisida 18 litr sut bor edi. Avval birinchisidan ikkinchisiga 6 litr quyildi, so'ng ikkinchi idishdagi sutning yarmi birinchisiga qaytarildi. Ikkinchi idishda qancha sut qoldi?",
+      "v": [
+        "24 litr",
+        "36 litr",
+        "12 litr",
+        "9 litr"
+      ],
+      "t": 2,
+      "izoh": "Birinchi quyishdan keyin idishlarda 24 va 24 litrdan bo'ladi. Ikkinchi idishdagi 24 litrning yarmi, ya'ni 12 litr qaytariladi. Demak ikkinchi idishda 24 − 12 = 12 litr qoladi. 9 litr — yarmini dastlabki 18 litrdan olish xatosi. Javob: 12 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "idishlar-orasida-quyish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#8dab16ee"
+    },
+    {
+      "q": "Birinchi idishdagi suvning 1/4 qismi ikkinchisiga quyildi, so'ng ikkinchi idishdagi suvning 1/5 qismi birinchisiga qaytarildi. Natijada idishlarda 38 va 32 litr qoldi. Boshda birinchi idishda qancha suv bor edi?",
+      "v": [
+        "38 litr",
+        "30 litr",
+        "46 litr",
+        "40 litr"
+      ],
+      "t": 3,
+      "izoh": "Qaytarishdan keyin ikkinchi idishda 32 litr, bu uning 4/5 qismi, demak qaytarishdan oldin 40 litr bo'lgan va 8 litr qaytarilgan. Unda birinchi idishda qaytarishdan oldin 38 − 8 = 30 litr bo'lgan, bu esa dastlabki miqdorning 3/4 qismi. Demak boshda 30 : 0,75 = 40 litr bo'lgan. Javob: 40 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "idishlar-orasida-quyish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#870e4e03"
+    },
+    {
+      "q": "Sinfda o'g'il va qizlar soni 3 : 2 nisbatda. O'g'illarning 20% i, qizlarning 25% i sport to'garagiga qatnaydi. Sinfning necha foizi to'garakka qatnaydi?",
+      "v": [
+        "22%",
+        "22,5%",
+        "45%",
+        "20%"
+      ],
+      "t": 0,
+      "izoh": "Sinfni 5 qismga bo'lamiz: 3 qism o'g'il, 2 qism qiz. To'garakka 3 · 0,2 + 2 · 0,25 = 0,6 + 0,5 = 1,1 qism qatnaydi. Bu butun sinfning 1,1 : 5 = 0,22, ya'ni 22% i. 22,5% — nisbatni hisobga olmay foizlarning o'rtachasini olish xatosi. Javob: 22%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-va-foiz-birga",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#e1cb8a66"
+    },
+    {
+      "q": "Fermer xo'jaligida qo'y va echkilar 5 : 3 nisbatda bo'lib, jami 320 ta. Qo'ylarning 10% i, echkilarning 20% i sotildi. Jami nechta hayvon sotilgan?",
+      "v": [
+        "48 ta",
+        "44 ta",
+        "32 ta",
+        "40 ta"
+      ],
+      "t": 1,
+      "izoh": "Bir qism 320 : 8 = 40 taga teng, demak qo'ylar 200 ta, echkilar 120 ta. Sotilganlar 200 · 0,1 + 120 · 0,2 = 20 + 24 = 44 ta. 48 ta — foizlarning o'rtachasi 15% ni butun podaga qo'llash xatosi. Javob: 44 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-va-foiz-birga",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#5af6482e"
+    },
+    {
+      "q": "Korxonada ishchilar va muhandislar soni 7 : 3 nisbatda. Ishchining oyligi 4 000 000, muhandisniki 7 000 000 so'm. Korxona bo'yicha o'rtacha oylik qancha?",
+      "v": [
+        "5 500 000 so'm",
+        "6 100 000 so'm",
+        "4 900 000 so'm",
+        "4 000 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Har 10 xodimdan 7 tasi ishchi, 3 tasi muhandis. Umumiy fond 7 · 4 000 000 + 3 · 7 000 000 = 49 000 000 so'm. O'rtacha oylik 49 000 000 : 10 = 4 900 000 so'm. 6 100 000 so'm — nisbatni teskari qo'llash, 5 500 000 so'm esa oddiy o'rta arifmetik olish xatosi. Javob: 4 900 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-va-foiz-birga",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#06b6f76e"
+    },
+    {
+      "q": "Qotishmadagi mis va rux massalari 3 : 2 nisbatda. Unga 10 kg mis qo'shilgach nisbat 2 : 1 bo'ldi. Dastlabki qotishma massasi qancha edi?",
+      "v": [
+        "30 kg",
+        "20 kg",
+        "60 kg",
+        "50 kg"
+      ],
+      "t": 3,
+      "izoh": "Mis 3x, rux 2x bo'lsin. Mis qo'shilgach (3x + 10) : (2x) = 2 tenglama chiqadi, ya'ni 3x + 10 = 4x va x = 10. Dastlabki massa 5x = 50 kg. 30 kg — faqat misning massasini javob deb olish xatosi. Javob: 50 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-va-foiz-birga",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#e351a528"
+    },
+    {
+      "q": "O'ylangan songa 15 qo'shildi, natija 4 ga ko'paytirildi va undan 20 ayirildi. Oxirida 100 hosil bo'lgan bo'lsa, o'ylangan son nechaga teng?",
+      "v": [
+        "15",
+        "5",
+        "45",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "Teskari yo'nalishda boramiz: 100 ga 20 ni qaytarib qo'shamiz, 120 bo'ladi. Uni 4 ga bo'lsak 30 chiqadi, undan 15 ni ayiramiz va 15 hosil bo'ladi. 5 — oxirgi qadamda 20 ni qo'shish o'rniga ayirish xatosi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bosqichlarni-teskari-yurish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#069f6b81"
+    },
+    {
+      "q": "Anvar pulining yarmiga kitob oldi, qolganidan 20 000 so'mga ruchka oldi, undan keyin qolgan pulning 3/4 qismini ukasiga berdi va 15 000 so'm qoldi. Boshda qancha puli bor edi?",
+      "v": [
+        "80 000 so'm",
+        "160 000 so'm",
+        "140 000 so'm",
+        "70 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Oxirgi 15 000 so'm — ukasiga bergandan keyingi 1/4 qism, demak berishdan oldin 60 000 so'm bo'lgan. Ruchkadan oldin 60 000 + 20 000 = 80 000 so'm bo'lgan, bu esa pulning yarmi. Demak boshda 160 000 so'm bo'lgan. 80 000 so'm — oxirgi qadamda yarimni ikkilantirishni unutish xatosi. Javob: 160 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bosqichlarni-teskari-yurish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#234b2aa7"
+    },
+    {
+      "q": "Avtobusdan birinchi bekatda yo'lovchilarning uchdan bir qismi, ikkinchi bekatda qolganlarning 40% i tushdi va salonda 36 kishi qoldi. Boshda nechta yo'lovchi bor edi?",
+      "v": [
+        "60 kishi",
+        "54 kishi",
+        "90 kishi",
+        "72 kishi"
+      ],
+      "t": 2,
+      "izoh": "Birinchi bekatdan keyin 2/3 qismi qoladi, ikkinchisidan keyin (2/3) · 0,6 = 0,4 qismi. Demak boshda 36 : 0,4 = 90 kishi bo'lgan. 60 kishi — faqat ikkinchi bekatni hisobga olish, 54 kishi esa faqat birinchisini hisobga olish xatosi. Javob: 90 kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bosqichlarni-teskari-yurish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#3c231564"
+    },
+    {
+      "q": "Idishdagi suvning chorak qismi to'kildi, so'ng qolganining uchdan biri, undan keyin yana qolganining yarmi to'kildi va 18 litr suv qoldi. Boshda idishda qancha suv bor edi?",
+      "v": [
+        "54 litr",
+        "36 litr",
+        "108 litr",
+        "72 litr"
+      ],
+      "t": 3,
+      "izoh": "Har bosqichdan keyin qoladigan ulushlarni ko'paytiramiz: (3/4) · (2/3) · (1/2) = 1/4. Demak oxirgi 18 litr dastlabki hajmning chorak qismi, ya'ni 18 · 4 = 72 litr bo'lgan. 36 litr — faqat oxirgi bosqichni teskari bajarish xatosi. Javob: 72 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bosqichlarni-teskari-yurish",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#f51c9db3"
+    },
+    {
+      "q": "Guruhdagi 12 o'quvchining nazorat ishi bo'yicha o'rtacha bahosi 4,0 ga teng. Keyin o'rtacha bahosi 3,5 bo'lgan 8 o'quvchi qo'shildi. Yigirma o'quvchining o'rtacha bahosi qancha?",
+      "v": [
+        "3,8",
+        "3,75",
+        "3,7",
+        "7,5"
+      ],
+      "t": 0,
+      "izoh": "Birinchi guruhning ballari yig'indisi 12 · 4 = 48, ikkinchisiniki 8 · 3,5 = 28. Umumiy yig'indi 76, o'quvchilar soni 20 ta, o'rtacha 76 : 20 = 3,8. 3,75 — guruhlar sonini hisobga olmay ikki o'rtachaning o'rtachasini olish xatosi. Javob: 3,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-qiymatning-ozgarishi",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#d151336c"
+    },
+    {
+      "q": "Do'kon birinchi 3 kunda kuniga o'rtacha 1 200 000 so'mlik, keyingi 2 kunda kuniga o'rtacha 1 700 000 so'mlik savdo qildi. Besh kunlik o'rtacha kunlik savdo qancha?",
+      "v": [
+        "1 450 000 so'm",
+        "1 400 000 so'm",
+        "1 500 000 so'm",
+        "7 000 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Birinchi davr tushumi 3 · 1 200 000 = 3 600 000 so'm, ikkinchisi 2 · 1 700 000 = 3 400 000 so'm. Jami 7 000 000 so'm, uni 5 kunga bo'lamiz: 1 400 000 so'm. 1 450 000 so'm — kunlar sonini hisobga olmaslik xatosi. Javob: 1 400 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-qiymatning-ozgarishi",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#b2a1f89b"
+    },
+    {
+      "q": "Sinfdagi 24 o'quvchining o'rtacha bo'yi 160 sm edi. Yangi o'quvchi kelgach o'rtacha bo'y 161 sm bo'ldi. Yangi kelgan o'quvchining bo'yi qancha?",
+      "v": [
+        "161 sm",
+        "184 sm",
+        "185 sm",
+        "186 sm"
+      ],
+      "t": 2,
+      "izoh": "Avvalgi bo'ylar yig'indisi 24 · 160 = 3840 sm. Yangi holatda 25 o'quvchi bor: 25 · 161 = 4025 sm. Yangi o'quvchining bo'yi 4025 − 3840 = 185 sm. 184 sm — o'rtachaga o'quvchilar sonini emas, avvalgi sonni qo'shish xatosi. Javob: 185 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-qiymatning-ozgarishi",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#ca75c9d1"
+    },
+    {
+      "q": "Sinf o'quvchilarining 60% i qizlar. Qizlarning o'rtacha bahosi 4,2, o'g'illarniki 3,7. Butun sinfning o'rtacha bahosi qanday?",
+      "v": [
+        "3,95",
+        "3,9",
+        "7,9",
+        "4,0"
+      ],
+      "t": 3,
+      "izoh": "Sinfni 1 deb olsak, qizlar ulushi 0,6 va o'g'illar ulushi 0,4. O'rtacha baho 0,6 · 4,2 + 0,4 · 3,7 = 2,52 + 1,48 = 4,0. 3,95 — ulushlarni hisobga olmay ikki bahoning o'rtachasini olish, 3,9 esa ulushlarni almashtirib qo'yish xatosi. Javob: 4,0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-qiymatning-ozgarishi",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#fbe5b646"
+    },
+    {
+      "q": "Fermer 8 gektar yerdan gektariga 45 sentnerdan hosil oldi. Tashishda hosilning 4% i, saqlashda qolganining 5% i nobud bo'ldi. Sotuvga qancha hosil chiqdi?",
+      "v": [
+        "328,32 sentner",
+        "327,6 sentner",
+        "345,6 sentner",
+        "342 sentner"
+      ],
+      "t": 0,
+      "izoh": "Umumiy hosil 8 · 45 = 360 sentner. Tashishdan keyin 360 · 0,96 = 345,6 sentner qoladi. Saqlashdan keyin 345,6 · 0,95 = 328,32 sentner. 327,6 sentner — ikki yo'qotishni qo'shib 9% ni bir yo'la ayirish xatosi. Javob: 328,32 sentner.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bosqichli-yoqotish-hosil",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#b9276149"
+    },
+    {
+      "q": "Omborga 500 kg olma keltirildi. Saralashda uning 12% i chiqindiga chiqdi, qadoqlashda esa qolganining 10% i yaroqsiz deb topildi. Sotuvga necha kg olma tayyorlandi?",
+      "v": [
+        "390 kg",
+        "396 kg",
+        "440 kg",
+        "450 kg"
+      ],
+      "t": 1,
+      "izoh": "Saralashdan keyin 500 · 0,88 = 440 kg qoladi. Qadoqlashdan keyin 440 · 0,9 = 396 kg qoladi. 390 kg — ikki foizni qo'shib 22% ni bir yo'la ayirish xatosi, 440 kg esa ikkinchi bosqichni tashlab ketish xatosi. Javob: 396 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bosqichli-yoqotish-hosil",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#4c43a98a"
+    },
+    {
+      "q": "Zavodga kelgan paxta xom ashyosining 40% i tolaga aylanadi, tolaning 10% i esa sifatsiz chiqadi. 252 tonna sifatli tola olish uchun qancha xom ashyo kerak?",
+      "v": [
+        "630 tonna",
+        "560 tonna",
+        "700 tonna",
+        "840 tonna"
+      ],
+      "t": 2,
+      "izoh": "Xom ashyoning sifatli tolaga aylanadigan ulushi 0,4 · 0,9 = 0,36. Demak kerakli xom ashyo 252 : 0,36 = 700 tonna. 630 tonna — sifatsiz chiqindini hisobga olmaslik, 560 tonna esa ikki foizni qo'shib 45% deb olish xatosi. Javob: 700 tonna.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bosqichli-yoqotish-hosil",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#5800b19c"
+    },
+    {
+      "q": "Ikki traktor dalani birgalikda 6 kunda haydaydi. Birinchi traktor yolg'iz shu dalani 10 kunda haydaydi. Ikkinchi traktor yolg'iz necha kunda haydaydi?",
+      "v": [
+        "4 kun",
+        "16 kun",
+        "12 kun",
+        "15 kun"
+      ],
+      "t": 3,
+      "izoh": "Birgalikdagi kunlik unum 1/6, birinchi traktorniki 1/10. Ikkinchisining unumi 1/6 − 1/10 = 5/30 − 3/30 = 1/15. Demak u yolg'iz 15 kunda haydaydi. 4 kun — muddatlarni ayirish xatosi, unumlar ayiriladi, muddatlar emas. Javob: 15 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-va-harakat-aralash",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#6b77bb30"
+    },
+    {
+      "q": "Piyoda ishga 4 km/soat tezlik bilan yurib 45 daqiqada boradi. Shu yo'lni velosipedda 20 daqiqada bosib o'tsa, velosipedning tezligi qancha bo'ladi?",
+      "v": [
+        "9 km/soat",
+        "12 km/soat",
+        "6 km/soat",
+        "3 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Avval masofani topamiz: 45 daqiqa 0,75 soatga teng, demak yo'l 4 · 0,75 = 3 km. Velosipedda 20 daqiqa, ya'ni 1/3 soat sarflanadi: 3 : (1/3) = 9 km/soat. 3 km/soat — masofani tezlik deb olish xatosi. Javob: 9 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-va-harakat-aralash",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#19517889"
+    },
+    {
+      "q": "Brigada yo'lning 3 km lik qismini 5 kunda qurdi. Texnika yangilangach kunlik unum 25% ga oshdi. Qolgan 9 km yo'lni brigada necha kunda quradi?",
+      "v": [
+        "15 kun",
+        "12 kun",
+        "11,25 kun",
+        "20 kun"
+      ],
+      "t": 1,
+      "izoh": "Dastlabki kunlik unum 3 : 5 = 0,6 km. Yangilangandan keyin u 0,6 · 1,25 = 0,75 km bo'ladi. Qolgan yo'lga 9 : 0,75 = 12 kun ketadi. 15 kun — unum oshganini hisobga olmaslik, 20 kun esa butun 12 km ni eski unum bilan hisoblash xatosi. Javob: 12 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ish-va-harakat-aralash",
+      "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli#7ac30d96"
+    }
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "nom": "11-mavzu. Erkin Elektromagnit Tebranishlar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Oddiy elektromagnit tebranishlarni hosil qilish uchun qanday elektr zanjiri zarur?",
+      "v": [
+        "Kondensator va induktiv g'altakdan iborat elektr zanjiri",
+        "Rezistor va lampochkadan iborat elektr zanjiri",
+        "Faqat induktiv g'altakdan iborat elektr zanjiri",
+        "Faqat kondensatordan iborat elektr zanjiri"
+      ],
+      "t": 0,
+      "izoh": "Oddiy elektromagnit tebranishlar kondensator va induktiv g'altakdan iborat elektr zanjirida hosil qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#9fc10588"
+    },
+    {
+      "q": "Tebranish konturi deb nimaga aytiladi?",
+      "v": [
+        "G'altak (L) va kondensator (C)dan iborat bo'lib, elektromagnit tebranishlar hosil bo'ladigan berk zanjirga",
+        "Ochiq holatdagi har qanday elektr zanjiriga",
+        "Faqat tok manbayi va rezistordan iborat zanjirga",
+        "Bir nechta kondensator ketma-ket ulangan zanjirga"
+      ],
+      "t": 0,
+      "izoh": "Elektromagnit tebranishlar hosil bo'layotgan g'altak (L) va kondensator (C)dan iborat berk zanjir tebranish konturi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#6f573903"
+    },
+    {
+      "q": "Tebranish konturida dastlab manbadan olingan energiya qanday ko'rinishda to'planadi?",
+      "v": [
+        "Kondensator qoplamalari orasidagi elektr maydon energiyasi sifatida",
+        "G'altak atrofidagi magnit maydon energiyasi sifatida",
+        "Rezistorda issiqlik energiyasi sifatida",
+        "Tok manbayining ichki energiyasi sifatida"
+      ],
+      "t": 0,
+      "izoh": "Dastlab kondensator zaryadlanadi va energiya kondensator qoplamalari orasidagi elektr maydon energiyasi sifatida to'planadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#b1a6e403"
+    },
+    {
+      "q": "Tebranish konturida energiya qanday o'zgarib turadi?",
+      "v": [
+        "Elektr maydon energiyasi magnit maydon energiyasiga va aksincha davriy aylanib turadi",
+        "Energiya doimiy ravishda issiqlikka aylanib kamayadi",
+        "Magnit maydon energiyasi faqat o'sib boradi",
+        "Elektr maydon energiyasi doimiy o'zgarib turmagan qoladi"
+      ],
+      "t": 0,
+      "izoh": "Konturda elektr maydon energiyasi magnit maydon energiyasiga, so'ngra magnit maydon energiyasi elektr maydon energiyasiga davriy ravishda aylanib turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#02f4417d"
+    },
+    {
+      "q": "Tebranish konturida elektromagnit tebranishlar davri formulasini kim aniqlagan?",
+      "v": [
+        "Ingliz fizigi U. Tomson",
+        "N. Tesla",
+        "M. Faradey",
+        "X. Gerks"
+      ],
+      "t": 0,
+      "izoh": "Tebranish konturida hosil bo'layotgan elektromagnit tebranishlar davri (chastotasi)ni aniqlash formulasi ingliz fizigi U. Tomson tomonidan aniqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#9085e8b7"
+    },
+    {
+      "q": "Tomson formulasi qanday ko'rinishga ega?",
+      "v": [
+        "T = 2π√(LC)",
+        "T = 2π√(L/C)",
+        "T = √(2πLC)",
+        "T = 1/(2π√(LC))"
+      ],
+      "t": 0,
+      "izoh": "Tebranish konturining davri T = 2π√(LC) (Tomson formulasi) bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#42b825b1"
+    },
+    {
+      "q": "Tebranish konturining chastotasi qanday ifodalanadi?",
+      "v": [
+        "v = 1/(2π√(LC))",
+        "v = 2π√(LC)",
+        "v = √(LC)/(2π)",
+        "v = 2π/√(LC)"
+      ],
+      "t": 0,
+      "izoh": "Chastota v = 1/T = 1/(2π√(LC)) bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#270b5cae"
+    },
+    {
+      "q": "Tebranishlar chastotasining o'lchov birligi nima?",
+      "v": [
+        "Gers (1/s)",
+        "Sekund",
+        "Volt",
+        "Amper"
+      ],
+      "t": 0,
+      "izoh": "Tebranishlar chastotasi 1/s = 1 Gz da o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#d38f0ef0"
+    },
+    {
+      "q": "Ideal tebranish konturida to'la energiya qanday o'zgaradi?",
+      "v": [
+        "Saqlanib qoladi va const ga teng bo'ladi",
+        "Vaqt o'tishi bilan kamayadi",
+        "Vaqt o'tishi bilan ortadi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Ideal tebranish konturida energiya sarfi bo'lmaganligi sababli tebranishlar so'nmaydi, to'la energiya saqlanib qoladi: W = q²/(2C) + Li²/2 = const.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#58472d7d"
+    },
+    {
+      "q": "Kondensatorning sig'imi C, undagi zaryad q bo'lsa, elektr maydon energiyasi qanday ifodalanadi?",
+      "v": [
+        "W = q²/(2C)",
+        "W = qC²/2",
+        "W = q²C/2",
+        "W = 2q²C"
+      ],
+      "t": 0,
+      "izoh": "Kondensatordagi elektr maydon energiyasi W = q²/(2C) bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#2b0114c5"
+    },
+    {
+      "q": "G'altakning induktivligi L, undan o'tuvchi tok i bo'lsa, magnit maydon energiyasi qanday ifodalanadi?",
+      "v": [
+        "W = Li²/2",
+        "W = L²i/2",
+        "W = 2Li²",
+        "W = Li/2"
+      ],
+      "t": 0,
+      "izoh": "G'altak atrofidagi magnit maydon energiyasi W = Li²/2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#b28d0187"
+    },
+    {
+      "q": "Konturda tok maksimal qiymatga erishgan paytda kondensatordagi elektr maydon energiyasi qanday bo'ladi?",
+      "v": [
+        "Nolgacha kamayadi",
+        "Maksimal qiymatga erishadi",
+        "O'zgarishsiz qoladi",
+        "Salbiy qiymatga ega bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Tok maksimal bo'lganida kondensator qoplamalari orasidagi elektr maydon energiyasi nolgacha kamayadi, magnit maydon energiyasi esa maksimalga erishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#7c618f6a"
+    },
+    {
+      "q": "Kondensator va g'altakdan iborat zanjirda bir marta manbadan kondensatorga berilgan zaryad berk zanjirda nimani hosil qiladi?",
+      "v": [
+        "O'zgaruvchan tokni",
+        "O'zgarmas tokni",
+        "Doimiy kuchlanishni",
+        "Issiqlikni"
+      ],
+      "t": 0,
+      "izoh": "Bir marta o'zgarmas tok manbayidan kondensatorga berilgan zaryad berk zanjirda o'zgaruvchan tokni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#e6740a06"
+    },
+    {
+      "q": "Mexanik tebranishlardagi koordinata (x) ga elektromagnit tebranishlarda qaysi kattalik mos keladi?",
+      "v": [
+        "Zaryad (q)",
+        "Tok kuchi (i)",
+        "Kuchlanish (U)",
+        "Induktivlik (L)"
+      ],
+      "t": 0,
+      "izoh": "Mexanik kattaliklar va elektr kattaliklarning o'xshashligida koordinata x ga zaryad q mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#0349d803"
+    },
+    {
+      "q": "Mexanik tebranishlardagi tezlik (v) ga elektromagnit tebranishlarda qaysi kattalik mos keladi?",
+      "v": [
+        "Tok kuchi (i)",
+        "Zaryad (q)",
+        "Sig'im (C)",
+        "Induktivlik (L)"
+      ],
+      "t": 0,
+      "izoh": "Tezlik v ga tok kuchi i mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#d37769f2"
+    },
+    {
+      "q": "Mexanik tebranishlardagi massa (m) ga elektromagnit tebranishlarda qaysi kattalik mos keladi?",
+      "v": [
+        "Induktivlik (L)",
+        "Sig'im (C)",
+        "Zaryad (q)",
+        "Kuchlanish (U)"
+      ],
+      "t": 0,
+      "izoh": "Massa m ga induktivlik L mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#33c2383d"
+    },
+    {
+      "q": "Prujinaning bikrligi (k) ga elektromagnit tebranishlarda qaysi kattalik mos keladi?",
+      "v": [
+        "Sig'imga teskari bo'lgan kattalik (1/C)",
+        "Induktivlik (L)",
+        "Sig'im (C)",
+        "Tok kuchi (i)"
+      ],
+      "t": 0,
+      "izoh": "Bikrlik k ga sig'imga teskari bo'lgan kattalik 1/C mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#841e8fd0"
+    },
+    {
+      "q": "Prujinali mayatnikdagi kinetik energiya (mv²/2) ga konturda qaysi ifoda mos keladi?",
+      "v": [
+        "Magnit maydon energiyasi Li²/2",
+        "Elektr maydon energiyasi q²/(2C)",
+        "Potensial energiya kx²/2",
+        "To'la energiya W"
+      ],
+      "t": 0,
+      "izoh": "Kinetik energiya mv²/2 ga magnit maydon energiyasi Li²/2 mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#19fbcf64"
+    },
+    {
+      "q": "Elektromagnit va mexanik tebranishlar orasidagi bog'liqlik haqida to'g'ri xulosani ko'rsating:",
+      "v": [
+        "Ular turli tabiatga ega bo'lsa-da, o'xshash tenglamalar bilan ifodalanadi",
+        "Ularning tabiati bir xil, faqat birliklari turlicha",
+        "Ular orasida hech qanday o'xshashlik yo'q",
+        "Ikkalasi ham faqat mexanik jarayonlardir"
+      ],
+      "t": 0,
+      "izoh": "Elektromagnit va mexanik tebranishlar turli tabiatga ega bo'lsa-da, o'xshash tenglamalar bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#0d69f7af"
+    },
+    {
+      "q": "G'altakning induktivligi 4 marta ortirilsa, tebranishlar davri qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "4 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "T = 2π√(LC) bo'lgani uchun L 4 marta ortsa, davri √4 = 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#b11f646d"
+    },
+    {
+      "q": "Kondensatorning sig'imi 4 marta kamaytirilsa, tebranishlar chastotasi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "4 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "v = 1/(2π√(LC)) bo'lgani uchun C 4 marta kamaysa, chastota √4 = 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#80f3ddbc"
+    },
+    {
+      "q": "G'altakdan o'tayotgan tok g'altakning induktivligi tufayli qanday o'zgaradi?",
+      "v": [
+        "Asta-sekin ortib, o'zining maksimal qiymatiga erishadi",
+        "Birdaniga maksimal qiymatga erishadi",
+        "Birdaniga nolga tushadi",
+        "Doimiy o'zgarishsiz qoladi"
+      ],
+      "t": 0,
+      "izoh": "G'altakning induktivligi tufayli tok asta-sekin ortib, o'zining maksimal qiymatiga erishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#99cd92c1"
+    },
+    {
+      "q": "Tok kuchi kamayib borayotganda induksion kuchlanish kondensatorni qanday zaryadlaydi?",
+      "v": [
+        "Avvalgisiga nisbatan teskari ishorada",
+        "Avvalgisi bilan bir xil ishorada",
+        "Zaryadlamaydi",
+        "Faqat musbat ishorada"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi kamayib borib, induksion kuchlanish kondensatorni avvalgisiga nisbatan teskari ishorada zaryadlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#25a757d4"
+    },
+    {
+      "q": "Ideal tebranish konturida tebranishlar nega so'nmaydi?",
+      "v": [
+        "Energiya sarfi bo'lmaydi",
+        "Zanjirda aktiv qarshilik katta",
+        "Kondensator sig'imi juda kichik",
+        "G'altak induktivligi nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Ideal tebranish konturida energiya sarfi bo'lmaganligi sababli tebranishlar so'nmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#ac151278"
+    },
+    {
+      "q": "Tebranish konturi xususiy tebranishlarining davri nimaga bog'liq?",
+      "v": [
+        "Faqat konturdagi L va C ga",
+        "Faqat tok manbayi kuchlanishiga",
+        "Faqat ulanish simlari uzunligiga",
+        "Faqat kondensatordagi maksimal zaryadga"
+      ],
+      "t": 0,
+      "izoh": "Tomson formulasi T = 2π√(LC) ga ko'ra davr faqat induktivlik va sig'imga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#e2a4da62"
+    },
+    {
+      "q": "Kondensatordagi maksimal kuchlanish U, sig'imi C bo'lsa, konturdagi maksimal energiya qanday ifodalanadi?",
+      "v": [
+        "W = CU²/2",
+        "W = CU/2",
+        "W = C²U/2",
+        "W = 2CU²"
+      ],
+      "t": 0,
+      "izoh": "q = CU ekanligi hisobga olinsa, W = q²/(2C) = CU²/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#331c8a86"
+    },
+    {
+      "q": "Tebranish konturining to'la energiyasi istalgan paytda qanday ifodalanadi?",
+      "v": [
+        "W = q²/(2C) + Li²/2",
+        "W = q²/(2C) − Li²/2",
+        "W = q²C + Li²",
+        "W = qU + Li"
+      ],
+      "t": 0,
+      "izoh": "Konturda to'la energiya W = q²/(2C) + Li²/2 = const.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#80e47f75"
+    },
+    {
+      "q": "Konturdagi magnit maydon energiyasi maksimal qiymatga erishgan paytda tok qanday qiymatga ega?",
+      "v": [
+        "Maksimal (Im) qiymatga",
+        "Nolga",
+        "O'rtacha qiymatga",
+        "Salbiy qiymatga"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydon energiyasi Wm = LIm²/2 bo'lgani uchun u maksimal bo'lganda tok maksimal Im ga erishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#9062f4af"
+    },
+    {
+      "q": "Konturda tok kuchi 2 marta oshirilsa, g'altakdagi magnit maydon energiyasi qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "W = Li²/2 bo'lgani uchun tok 2 marta oshsa energiya 2² = 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#7bb30324"
+    },
+    {
+      "q": "Kondensatordagi zaryad 2 marta kamaytirilsa, elektr maydon energiyasi qanday o'zgaradi?",
+      "v": [
+        "4 marta kamayadi",
+        "2 marta kamayadi",
+        "2 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "W = q²/(2C) bo'lgani uchun zaryad 2 marta kamaysa energiya 4 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#8ecb67ca"
+    },
+    {
+      "q": "Kondensator sig'imini oshirib, g'altak induktivligini shuncha kamaytirsak (LC hosilasi o'zgarmasa), kontur davri qanday o'zgaradi?",
+      "v": [
+        "O'zgarmaydi",
+        "Ortadi",
+        "Kamayadi",
+        "Nolga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "T = 2π√(LC) faqat LC hosilasiga bog'liq, u o'zgarmasa davr ham o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#dbf5c660"
+    },
+    {
+      "q": "Konturda energiya jarayonini qaysi mexanik tizimga qiyoslash mumkin?",
+      "v": [
+        "Prujinali mayatnikga",
+        "Erkin tushuvchi jismga",
+        "Aylanuvchi g'ildirakka",
+        "Silliq sirpanuvchi jismga"
+      ],
+      "t": 0,
+      "izoh": "Konturdagi elektr va magnit maydon energiyalarining aylanishini prujinali mayatnikdagi potensial va kinetik energiyalar aylanishiga qiyoslash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#439c6385"
+    },
+    {
+      "q": "Tomson formulasida T qanday birlikda o'lchanadi?",
+      "v": [
+        "Sekundda",
+        "Gersda",
+        "Volt sekundda",
+        "Amper sekundda"
+      ],
+      "t": 0,
+      "izoh": "T – tebranishlar davri sekundlarda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#5cfa8d54"
+    },
+    {
+      "q": "Konturdagi chastota 2 marta kamayishi uchun induktivlikni qanday o'zgartirish kerak?",
+      "v": [
+        "4 marta orttirish",
+        "2 marta orttirish",
+        "2 marta kamaytirish",
+        "4 marta kamaytirish"
+      ],
+      "t": 0,
+      "izoh": "v ∝ 1/√L bo'lgani uchun chastotani 2 marta kamaytirish uchun L ni 4 marta orttirish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#ea6b361f"
+    },
+    {
+      "q": "Kondensator qoplamalari orasida energiyasi maksimal bo'lgan elektr maydon qachon hosil bo'ladi?",
+      "v": [
+        "Kondensator to'liq zaryadlanganida (q = qm)",
+        "Kondensator zaryadsiz holatda",
+        "Tok maksimal bo'lganida",
+        "G'altak magnit maydoni nol bo'lganida"
+      ],
+      "t": 0,
+      "izoh": "Kondensator to'liq zaryadlanganida (zaryad maksimal qm) elektr maydon energiyasi maksimal: We = qm²/(2C).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#f2db21a5"
+    },
+    {
+      "q": "Konturdagi tok o'suvchi bo'lsa, qaysi energiya o'sib boradi?",
+      "v": [
+        "G'altak atrofidagi magnit maydon energiyasi",
+        "Kondensatordagi elektr maydon energiyasi",
+        "Ikkalasi bir vaqtda",
+        "Hech qaysisi"
+      ],
+      "t": 0,
+      "izoh": "Tok o'sayotganida g'altak atrofidagi magnit maydon energiyasi ortib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar#2c0106e6"
+    }
+  ]
+}

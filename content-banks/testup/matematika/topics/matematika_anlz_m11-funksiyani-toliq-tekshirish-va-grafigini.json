@@ -1,0 +1,1609 @@
+{
+  "nom": "Funksiyani to'liq tekshirish va grafigini yasash",
+  "bolim": "Matematik analiz asoslari",
+  "blok": "anlz",
+  "rasmiyBolim": 5,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Grafigini yasash uchun f(x) = (2x + 5)/(x² − 9) funksiya tekshirilmoqda. Birinchi qadamda aniqlanish sohasi topiladi. U qanday bo'ladi?",
+      "v": [
+        "x ≠ 3",
+        "x ≠ −3 va x ≠ 3",
+        "x ≠ 9 va x ≠ −9",
+        "x ≠ −2,5"
+      ],
+      "t": 1,
+      "izoh": "Kasr funksiyaning maxraji nolga aylanmasligi shart: x² − 9 ≠ 0. Bundan x² ≠ 9, ya'ni x ≠ 3 va x ≠ −3. Faqat x ≠ 3 deyish ikkinchi ildizni yo'qotish, x ≠ −2,5 esa surat ildizini maxraj ildizi deb olish xatosi. Javob: x ≠ −3 va x ≠ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-kasr",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#69a2cc93"
+    },
+    {
+      "q": "f(x) = (x − 4)/(x² + 2x) funksiyaning grafigini qurishdan oldin aniqlanish sohasi belgilanadi. Qaysi qiymatlarda funksiya aniqlanmagan?",
+      "v": [
+        "x = 0 va x = −2",
+        "x = 0 va x = 2",
+        "faqat x = 4",
+        "faqat x = −2"
+      ],
+      "t": 0,
+      "izoh": "Maxrajni ko'paytuvchilarga ajratamiz: x² + 2x = x(x + 2). Bu ifoda x = 0 va x = −2 da nolga aylanadi. Surat noli x = 4 aniqlanish sohasini cheklamaydi, u faqat Ox o'qi bilan kesishishni beradi. Javob: x = 0 va x = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-kasr",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#154a69a1"
+    },
+    {
+      "q": "Abituriyent f(x) = 3x/(x² − 5x + 6) funksiyani tekshirmoqda. Aniqlanish sohasidan chiqarib tashlanadigan nuqtalar qaysilar?",
+      "v": [
+        "x = 6",
+        "x = −2 va x = −3",
+        "x = 2 va x = 3",
+        "x = 0"
+      ],
+      "t": 2,
+      "izoh": "Maxrajni nolga tenglaymiz: x² − 5x + 6 = 0. Viyet teoremasi bo'yicha ildizlar yig'indisi 5, ko'paytmasi 6, demak ildizlar x = 2 va x = 3. Ishorani almashtirib −2 va −3 olish tipik xato, x = 0 esa surat noli. Javob: x = 2 va x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-kasr",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#2419aa52"
+    },
+    {
+      "q": "f(x) = (x² + 1)/(x² + 4) funksiyaning aniqlanish sohasi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "x ≠ 2 va x ≠ −2",
+        "x ≠ −4",
+        "aniqlanish sohasi butun haqiqiy sonlar to'plami",
+        "x ≠ 0"
+      ],
+      "t": 2,
+      "izoh": "Maxraj x² + 4 har qanday x da musbat, chunki x² ≥ 0 va unga 4 qo'shiladi. Demak maxraj hech qachon nolga aylanmaydi. x² + 4 = 0 tenglamaning haqiqiy ildizi yo'q, shuning uchun x = ±2 ni chiqarib tashlash noto'g'ri. Javob: aniqlanish sohasi butun haqiqiy sonlar to'plami.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-kasr",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#6eb8ea60"
+    },
+    {
+      "q": "Injener f(x) = √(x − 3) + 1/(x − 7) ko'rinishidagi model funksiyani tekshirmoqda. Uning aniqlanish sohasini toping.",
+      "v": [
+        "[3; +∞)",
+        "[3; 7) ∪ (7; +∞)",
+        "(3; 7) ∪ (7; +∞)",
+        "(−∞; 3]"
+      ],
+      "t": 1,
+      "izoh": "Ildiz ostidagi ifoda manfiy bo'lmasligi kerak: x − 3 ≥ 0, ya'ni x ≥ 3. Kasr maxraji nolga teng bo'lmasin: x ≠ 7. Ikkala shartni birlashtiramiz — x = 3 sohaga kiradi, x = 7 esa chiqib ketadi. Javob: [3; 7) ∪ (7; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-ildiz-logarifm",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#49fe132f"
+    },
+    {
+      "q": "y = lg(x² − 4x) funksiyaning grafigi qaysi oraliqlarda mavjud bo'ladi?",
+      "v": [
+        "(0; 4)",
+        "(−∞; 0] ∪ [4; +∞)",
+        "(4; +∞)",
+        "(−∞; 0) ∪ (4; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Logarifm ostidagi ifoda qat'iy musbat bo'lishi kerak: x² − 4x > 0. Ko'paytuvchilarga ajratamiz: x(x − 4) > 0. Intervallar usuli bo'yicha yechim x < 0 yoki x > 4. Tengsizlik qat'iy bo'lgani uchun chegaralar kiritilmaydi. Javob: (−∞; 0) ∪ (4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-ildiz-logarifm",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#897333a8"
+    },
+    {
+      "q": "f(x) = √(9 − x²)/(x + 1) funksiyaning grafigi son o'qining qaysi qismida joylashadi?",
+      "v": [
+        "[−3; 3]",
+        "(−∞; −3] ∪ [3; +∞)",
+        "[−3; −1) ∪ (−1; 3]",
+        "[−1; 3]"
+      ],
+      "t": 2,
+      "izoh": "Ildiz osti sharti: 9 − x² ≥ 0, ya'ni x² ≤ 9 va −3 ≤ x ≤ 3. Maxraj sharti: x + 1 ≠ 0, ya'ni x ≠ −1. Demak kesmadan bitta ichki nuqta olib tashlanadi. Tengsizlik ishorasini teskari o'girish tashqi oraliqni berib qo'yadi. Javob: [−3; −1) ∪ (−1; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-ildiz-logarifm",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#ce545577"
+    },
+    {
+      "q": "f(x) = ln(x + 2)/(x − 5) funksiyani to'liq tekshirishda aniqlanish sohasi ikki shartdan chiqadi. U qanday?",
+      "v": [
+        "(−2; +∞)",
+        "[−2; 5) ∪ (5; +∞)",
+        "(−2; 5) ∪ (5; +∞)",
+        "(−∞; −2)"
+      ],
+      "t": 2,
+      "izoh": "Birinchi shart logarifmdan keladi: x + 2 > 0, ya'ni x > −2. Ikkinchi shart maxrajdan: x − 5 ≠ 0, ya'ni x ≠ 5. Nuqta x = −2 sohaga kirmaydi, chunki logarifm nolda aniqlanmagan. Javob: (−2; 5) ∪ (5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-ildiz-logarifm",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#3fc9ed97"
+    },
+    {
+      "q": "f(x) = x⁴ − 3x² + 5 funksiyaning juft-toqligini aniqlang va grafik simmetriyasi haqida xulosa chiqaring.",
+      "v": [
+        "juft, grafigi Oy o'qiga nisbatan simmetrik",
+        "toq, grafigi koordinata boshiga nisbatan simmetrik",
+        "ham juft, ham toq",
+        "umumiy ko'rinishdagi funksiya"
+      ],
+      "t": 0,
+      "izoh": "Argument o'rniga −x qo'yamiz: f(−x) = (−x)⁴ − 3(−x)² + 5 = x⁴ − 3x² + 5. Demak f(−x) = f(x), ya'ni funksiya juft. Juft funksiyaning grafigi Oy o'qiga nisbatan simmetrik, shuning uchun uni faqat x ≥ 0 da yasab, keyin aks ettirish kifoya. Javob: juft, grafigi Oy o'qiga nisbatan simmetrik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-toqlik-aniqlash",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#4398fd4a"
+    },
+    {
+      "q": "f(x) = x³ − 4x funksiya uchun f(−x) ifodasi hisoblandi. Bundan qanday xulosa kelib chiqadi?",
+      "v": [
+        "f(−x) = f(x), funksiya juft",
+        "f(−x) = −f(x), funksiya toq",
+        "f(−x) ifodasi f(x) ga ham, −f(x) ga ham teng emas",
+        "f(−x) = 0, funksiya o'zgarmas"
+      ],
+      "t": 1,
+      "izoh": "Hisoblaymiz: f(−x) = (−x)³ − 4(−x) = −x³ + 4x. Bu ifodani −(x³ − 4x) ko'rinishida yozish mumkin, ya'ni f(−x) = −f(x). Demak funksiya toq va grafigi koordinata boshiga nisbatan simmetrik. Javob: f(−x) = −f(x), funksiya toq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-toqlik-aniqlash",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#409da66c"
+    },
+    {
+      "q": "f(x) = x² + 2x + 3 funksiyaning simmetriyasi tekshirilganda qanday natijaga kelinadi?",
+      "v": [
+        "juft funksiya",
+        "toq funksiya",
+        "na juft, na toq funksiya",
+        "koordinata boshiga nisbatan simmetrik"
+      ],
+      "t": 2,
+      "izoh": "Hisoblaymiz: f(−x) = x² − 2x + 3. Bu ifoda f(x) = x² + 2x + 3 ga ham, −f(x) ga ham teng emas, chunki 2x hadining ishorasi buzilgan. Demak funksiya na juft, na toq. Grafigi parabola bo'lib, uning simmetriya o'qi x = −1 to'g'ri chiziq, Oy o'qi emas. Javob: na juft, na toq funksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-toqlik-aniqlash",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#389b3891"
+    },
+    {
+      "q": "x⁵ − x, x⁴ + 2, x³ + 1 va x² + x ifodalari berilgan. Qaysi biri toq funksiya bo'lib, grafigi koordinata boshiga nisbatan simmetrik?",
+      "v": [
+        "x⁴ + 2",
+        "x³ + 1",
+        "x² + x",
+        "x⁵ − x"
+      ],
+      "t": 3,
+      "izoh": "Toq funksiyada barcha darajalar toq bo'lishi va ozod had bo'lmasligi kerak. Ifoda x⁴ + 2 da juft daraja bor, x³ + 1 da ozod had 1 turibdi, x² + x da darajalar aralash. Qolgan ifoda uchun f(−x) = −x⁵ + x = −f(x). Javob: x⁵ − x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-toqlik-aniqlash",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#6229edaa"
+    },
+    {
+      "q": "f(x) = x² − 5x + 6 parabolaning koordinata o'qlari bilan kesishish nuqtalarini toping.",
+      "v": [
+        "(2; 0), (3; 0) va (0; 6)",
+        "(−2; 0), (−3; 0) va (0; 6)",
+        "(2; 0), (3; 0) va (6; 0)",
+        "(0; 2), (0; 3) va (6; 0)"
+      ],
+      "t": 0,
+      "izoh": "Ox o'qi bilan kesishish uchun y = 0 deb olamiz: x² − 5x + 6 = 0, ildizlari x = 2 va x = 3. Oy o'qi bilan kesishish uchun x = 0 qo'yamiz: f(0) = 6. Nuqtalarning koordinatalarini almashtirib yozish tipik xato. Javob: (2; 0), (3; 0) va (0; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqlar-bilan-kesishish",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#e0e6dd73"
+    },
+    {
+      "q": "f(x) = (x² − 16)/(x + 1) funksiyaning grafigi Oy o'qini qaysi nuqtada kesib o'tadi?",
+      "v": [
+        "(0; 16)",
+        "(−16; 0)",
+        "(0; −1)",
+        "(0; −16)"
+      ],
+      "t": 3,
+      "izoh": "Oy o'qi bilan kesishishda x = 0 qo'yiladi: f(0) = (0 − 16)/(0 + 1) = −16. Demak izlangan nuqta (0; −16). Ishorani tushirib qoldirish (0; 16) ni, koordinatalarni almashtirish (−16; 0) ni beradi. Javob: (0; −16).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqlar-bilan-kesishish",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#ebe9465c"
+    },
+    {
+      "q": "f(x) = x³ − 4x² + 3x funksiyaning grafigi Ox o'qini nechta nuqtada kesadi va bu nuqtalarning abssissalari qanday?",
+      "v": [
+        "uchta: 0, 1 va 3",
+        "ikkita: 1 va 3",
+        "uchta: 0, −1 va −3",
+        "bitta: faqat 0"
+      ],
+      "t": 0,
+      "izoh": "Tenglama x³ − 4x² + 3x = 0 ni yechamiz. Umumiy ko'paytuvchi x ni qavsdan chiqaramiz: x(x² − 4x + 3) = 0. Kvadrat uch hadning ildizlari 1 va 3. Umumiy ko'paytuvchini qisqartirib yuborsak, x = 0 ildizi yo'qoladi. Javob: uchta: 0, 1 va 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqlar-bilan-kesishish",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#c7d9f0c7"
+    },
+    {
+      "q": "y = 2ˣ − 8 ko'rsatkichli funksiyaning grafigi koordinata o'qlarini qaysi nuqtalarda kesadi?",
+      "v": [
+        "x = 3 da va y = −8 da",
+        "x = 4 da va y = −7 da",
+        "x = 8 da va y = −7 da",
+        "x = 3 da va y = −7 da"
+      ],
+      "t": 3,
+      "izoh": "Ox o'qi uchun 2ˣ − 8 = 0, ya'ni 2ˣ = 8 = 2³, bundan x = 3. Oy o'qi uchun x = 0 qo'yamiz: 2⁰ − 8 = 1 − 8 = −7. Nolinchi daraja birga tengligini unutib −8 olish tipik xato. Javob: x = 3 da va y = −7 da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqlar-bilan-kesishish",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#fcaab15d"
+    },
+    {
+      "q": "f(x) = (x + 2)/(x − 5) funksiyaning vertikal asimptotasi tenglamasini yozing.",
+      "v": [
+        "x = −2",
+        "y = 5",
+        "x = −5",
+        "x = 5"
+      ],
+      "t": 3,
+      "izoh": "Vertikal asimptota maxraj nolga aylanadigan, surat esa noldan farqli bo'lgan nuqtada hosil bo'ladi. Tenglama x − 5 = 0 dan x = 5, bu yerda surat 7 ga teng. Surat nolini olib x = −2 deyish yoki asimptotani y = 5 ko'rinishida yozish tipik xato. Javob: x = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#247d78b9"
+    },
+    {
+      "q": "f(x) = (x² − 1)/(x² − 4) funksiyaning nechta vertikal asimptotasi bor va ular qaysi to'g'ri chiziqlar?",
+      "v": [
+        "bitta: x = 2",
+        "ikkita: x = 2 va x = −2",
+        "ikkita: x = 1 va x = −1",
+        "vertikal asimptotasi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Maxrajni nolga tenglaymiz: x² − 4 = 0, bundan x = 2 va x = −2. Bu nuqtalarda surat x² − 1 qiymati 3 ga teng, ya'ni noldan farqli. Demak ikkala to'g'ri chiziq ham vertikal asimptota bo'ladi. Surat nollarini asimptota deb olish tipik xato. Javob: ikkita: x = 2 va x = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#6e764244"
+    },
+    {
+      "q": "O'quvchi f(x) = (x² − 9)/(x − 3) funksiyada x = 3 vertikal asimptota deb yozdi. Uning bu xulosasi to'g'rimi?",
+      "v": [
+        "to'g'ri, x = 3 vertikal asimptota",
+        "noto'g'ri, x = 3 da grafikda faqat teshik bor",
+        "noto'g'ri, asimptota x = −3 bo'ladi",
+        "noto'g'ri, asimptota y = 3 bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Suratni yoyamiz: x² − 9 = (x − 3)(x + 3). Kasr qisqargach f(x) = x + 3 bo'ladi, lekin x ≠ 3 sharti saqlanadi. Funksiya x = 3 ga yaqinlashganda cheksizlikka emas, 6 ga intiladi. Demak bu yerda grafik uzilgan to'g'ri chiziq, ya'ni bitta teshik bor. Javob: noto'g'ri, x = 3 da grafikda faqat teshik bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vertikal-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#48ef140f"
+    },
+    {
+      "q": "f(x) = (2x + 1)/(x² + x − 6) funksiya grafigining vertikal asimptotalari qaysi to'g'ri chiziqlar bo'ladi?",
+      "v": [
+        "x = 2 va x = −3",
+        "x = −2 va x = 3",
+        "x = 6 va x = −6",
+        "x = −0,5"
+      ],
+      "t": 0,
+      "izoh": "Maxrajni nolga tenglaymiz: x² + x − 6 = 0. Viyet teoremasiga ko'ra ildizlar yig'indisi −1, ko'paytmasi −6, demak x = 2 va x = −3. Har ikkalasida surat noldan farqli, shuning uchun ikkalasi ham vertikal asimptota. Surat noli x = −0,5 esa grafikning Ox bilan kesishish nuqtasi. Javob: x = 2 va x = −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#a08cc2bd"
+    },
+    {
+      "q": "f(x) = (3x + 5)/(x − 2) funksiya grafigining gorizontal asimptotasi qaysi to'g'ri chiziq bo'ladi?",
+      "v": [
+        "y = 3",
+        "y = 2",
+        "y = 0",
+        "x = 3"
+      ],
+      "t": 0,
+      "izoh": "Surat va maxrajning darajalari teng, ikkalasi ham birinchi darajali. Bunday holda gorizontal asimptota bosh koeffitsientlar nisbatiga teng: 3 : 1 = 3. Demak y = 3. Maxraj nolini olib y = 2 deyish yoki asimptotani x = 3 ko'rinishida yozish tipik xato. Javob: y = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#4c6fae45"
+    },
+    {
+      "q": "f(x) = (4x − 1)/(x² + 3) funksiya uchun x cheksizlikka intilganda grafik qaysi to'g'ri chiziqqa yaqinlashadi?",
+      "v": [
+        "y = 4",
+        "y = 0",
+        "y = 4/3",
+        "gorizontal asimptota yo'q"
+      ],
+      "t": 1,
+      "izoh": "Maxrajning darajasi (ikkinchi) suratnikidan (birinchi) yuqori. Surat va maxrajni x² ga bo'lsak, surat nolga, maxraj birga intiladi. Demak kasr nolga intiladi va gorizontal asimptota Ox o'qining o'zi. Bosh koeffitsientlar nisbatini olib y = 4 deyish tipik xato. Javob: y = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#bc7fe715"
+    },
+    {
+      "q": "f(x) = (2x² + 7)/(5x² − x) funksiyaning gorizontal asimptotasini toping.",
+      "v": [
+        "y = 2",
+        "y = 2,5",
+        "y = 0,4",
+        "y = 0"
+      ],
+      "t": 2,
+      "izoh": "Surat va maxraj darajalari teng, ikkalasi ham ikkinchi darajali. Gorizontal asimptota bosh koeffitsientlar nisbatiga teng: 2 : 5 = 0,4. Nisbatni ag'darib 2,5 olish yoki faqat suratning bosh koeffitsientini yozish tipik xato. Javob: y = 0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#bd73baa9"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni N(t) = 5000t/(t + 12) formula bilan o'zgaradi, bu yerda t — soatlarda o'lchangan vaqt. Vaqt uzoq davom etganda bakteriyalar soni qaysi qiymatga yaqinlashadi?",
+      "v": [
+        "12 ta",
+        "cheksiz ortadi",
+        "0 ga yaqinlashadi",
+        "5000 ta"
+      ],
+      "t": 3,
+      "izoh": "Surat va maxrajni t ga bo'lamiz: N(t) = 5000/(1 + 12/t). Vaqt ortganda 12/t kasr nolga intiladi va maxraj birga yaqinlashadi. Demak N(t) qiymati 5000 ga intiladi, ya'ni N = 5000 gorizontal asimptota va koloniyaning to'yinish chegarasi. Javob: 5000 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-toyinish-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#04202ddc"
+    },
+    {
+      "q": "f(x) = (x² + 3x + 1)/x funksiyaning og'ma asimptotasi tenglamasini yozing.",
+      "v": [
+        "y = x + 3",
+        "y = x",
+        "y = x + 1",
+        "y = 3x"
+      ],
+      "t": 0,
+      "izoh": "Kasrni hadma-had bo'lamiz: (x² + 3x + 1)/x = x + 3 + 1/x. Argument cheksizlikka intilganda 1/x qoldiq nolga intiladi. Demak grafik y = x + 3 to'g'ri chiziqqa yaqinlashadi. Qoldiqni tashlab yubormaslik, ozod hadni saqlab qolish kerak. Javob: y = x + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ogma-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#ef3f296c"
+    },
+    {
+      "q": "f(x) = (x² + 5)/(x − 2) funksiya grafigi cheksizlikda qaysi to'g'ri chiziqqa yaqinlashadi?",
+      "v": [
+        "y = x − 2",
+        "y = x + 2",
+        "y = x",
+        "y = 2x"
+      ],
+      "t": 1,
+      "izoh": "Suratni maxrajga burchakli bo'lamiz: x² + 5 = (x − 2)(x + 2) + 9. Demak f(x) = x + 2 + 9/(x − 2). Cheksizlikda oxirgi qoldiq nolga intiladi, grafik esa y = x + 2 chiziqqa yopishadi. Bo'linmaning ishorasini adashtirib y = x − 2 olish tipik xato. Javob: y = x + 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ogma-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#3ba6c849"
+    },
+    {
+      "q": "f(x) = (2x² + x − 3)/(x − 2) funksiyaning og'ma asimptotasini toping.",
+      "v": [
+        "y = 2x − 5",
+        "y = 2x + 1",
+        "y = 2x + 5",
+        "y = 2x"
+      ],
+      "t": 2,
+      "izoh": "Burchakli bo'lish bajaramiz: 2x² + x − 3 ni x − 2 ga bo'lsak, bo'linma 2x + 5, qoldiq 7 bo'ladi. Ya'ni f(x) = 2x + 5 + 7/(x − 2). Cheksizlikda qoldiq nolga intiladi. Bo'lishda ikkinchi qadamdagi ishorani adashtirish 2x − 5 ni beradi. Javob: y = 2x + 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ogma-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#70a77726"
+    },
+    {
+      "q": "Berilgan to'rt kasr funksiyadan qaysi birida og'ma asimptota mavjud bo'ladi va nima uchun?",
+      "v": [
+        "(x + 1)/(x − 3)",
+        "(x³ + 1)/(x − 3)",
+        "(x² + 1)/(x² − 3)",
+        "(x² + 1)/(x − 3)"
+      ],
+      "t": 3,
+      "izoh": "Og'ma asimptota surat darajasi maxraj darajasidan aynan bitta ortiq bo'lgandagina paydo bo'ladi. Birinchi va uchinchi kasrlarda darajalar teng — ular gorizontal asimptotaga ega. Ikkinchi kasrda daraja ikkitaga ortiq, u parabolik asimptota beradi. Faqat oxirgi kasrda daraja bittaga ortiq. Javob: (x² + 1)/(x − 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ogma-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#18e5c1b8"
+    },
+    {
+      "q": "f(x) = x³ − 3x² + 1 funksiyaning o'sish va kamayish oraliqlarini hosila yordamida aniqlang.",
+      "v": [
+        "(0; 2) da o'sadi, qolgan joyda kamayadi",
+        "(−∞; 0) va (2; +∞) da o'sadi, (0; 2) da kamayadi",
+        "butun aniqlanish sohasida o'sadi",
+        "(−∞; 2) da kamayadi, (2; +∞) da o'sadi"
+      ],
+      "t": 1,
+      "izoh": "Hosilani topamiz: f'(x) = 3x² − 6x = 3x(x − 2). Hosila nollari x = 0 va x = 2. Parabola tarmoqlari yuqoriga yo'nalgani uchun hosila nollardan tashqarida musbat, orasida manfiy. Demak funksiya (−∞; 0) va (2; +∞) da o'sadi, (0; 2) da kamayadi. Javob: (−∞; 0) va (2; +∞) da o'sadi, (0; 2) da kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlik-oraligi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#bbfffb4f"
+    },
+    {
+      "q": "f(x) = x² − 8x + 5 funksiyaning monotonlik oraliqlarini ko'rsating.",
+      "v": [
+        "(−∞; 4) da kamayadi, (4; +∞) da o'sadi",
+        "(−∞; 4) da o'sadi, (4; +∞) da kamayadi",
+        "butun sonlar o'qida o'sadi",
+        "(−∞; 8) da kamayadi, (8; +∞) da o'sadi"
+      ],
+      "t": 0,
+      "izoh": "Hosila f'(x) = 2x − 8 bo'ladi va u x = 4 da nolga aylanadi. x < 4 da hosila manfiy, x > 4 da musbat. Demak funksiya avval kamayadi, keyin o'sadi va x = 4 minimum nuqtasi. Hosilani nolga tenglamay, koeffitsient 8 ni burilish deb olish tipik xato. Javob: (−∞; 4) da kamayadi, (4; +∞) da o'sadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-oraligi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#0459b9db"
+    },
+    {
+      "q": "Suv omborida suv sathi h(t) = 0,1t³ − 0,9t² + 2,4t + 15 metr qonun bilan o'zgardi, bu yerda t — sutkalarda hisoblangan vaqt va 0 < t < 7. Suv sathi qaysi oraliqda pasaygan?",
+      "v": [
+        "(0; 2) oralig'ida",
+        "(4; 7) oralig'ida",
+        "(2; 4) oralig'ida",
+        "kuzatuv davomida faqat ko'tarilgan"
+      ],
+      "t": 2,
+      "izoh": "Hosilani hisoblaymiz: h'(t) = 0,3t² − 1,8t + 2,4 = 0,3(t − 2)(t − 4). Ko'paytma ildizlar orasida manfiy, tashqarisida musbat. Demak sath (0; 2) da ko'tarilgan, (2; 4) da pasaygan, (4; 7) da yana ko'tarilgan. Boshlang'ich sath 15 m, eng yuqori nuqtada 17 m, kuzatuv oxirida 22 m ni tashkil etadi. Javob: (2; 4) oralig'ida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlik-oraligi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#95883afc"
+    },
+    {
+      "q": "f(x) = x/(x² + 1) funksiyaning o'sish oralig'ini toping.",
+      "v": [
+        "(−1; 1) da kamayadi, tashqarisida o'sadi",
+        "butun sonlar o'qida o'sadi",
+        "faqat (0; +∞) da o'sadi",
+        "(−1; 1) da o'sadi, tashqarisida kamayadi"
+      ],
+      "t": 3,
+      "izoh": "Kasr hosilasi formulasi bo'yicha f'(x) = ((x² + 1) − x·2x)/(x² + 1)² = (1 − x²)/(x² + 1)². Maxraj doim musbat, shuning uchun ishora suratga bog'liq. Ifoda 1 − x² faqat −1 < x < 1 da musbat. Demak funksiya shu oraliqda o'sadi, tashqarisida kamayadi. Javob: (−1; 1) da o'sadi, tashqarisida kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monotonlik-oraligi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#888dbb3a"
+    },
+    {
+      "q": "f(x) = x³ − 6x² + 9x + 2 funksiyaning ekstremum nuqtalarini va ularning turini aniqlang.",
+      "v": [
+        "x = 1 da maksimum, x = 3 da minimum",
+        "x = 1 da minimum, x = 3 da maksimum",
+        "x = 3 da maksimum, x = 1 da burilish",
+        "ekstremum nuqtasi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Hosila f'(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3). Ildizlardan chapda hosila musbat, ular orasida manfiy, o'ngda yana musbat. Musbatdan manfiyga o'tish maksimumni, manfiydan musbatga o'tish minimumni beradi. Javob: x = 1 da maksimum, x = 3 da minimum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstremum-nuqtasi-turi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#eb8e41bf"
+    },
+    {
+      "q": "f(x) = x⁴ − 8x² + 3 funksiyaning nechta ekstremum nuqtasi bor va ular qaysi abssissalarda joylashgan?",
+      "v": [
+        "ikkita: x = −2 va x = 2",
+        "uchta: x = −2, x = 0 va x = 2",
+        "bitta: x = 0",
+        "ekstremum nuqtasi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Hosila f'(x) = 4x³ − 16x = 4x(x − 2)(x + 2), uning nollari −2, 0 va 2. Ishora ketma-ketligi manfiy, musbat, manfiy, musbat tarzida almashadi. Har uch nuqtada ishora o'zgargani uchun uchtasi ham ekstremum: chetkilar minimum, o'rtadagisi maksimum. Javob: uchta: x = −2, x = 0 va x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstremum-nuqtasi-turi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#7c7dd6a4"
+    },
+    {
+      "q": "f(x) = x³ + 3x² + 3x + 7 funksiyada f'(x) = 0 tenglama ildizga ega. Bu nuqta ekstremum beradimi?",
+      "v": [
+        "x = −1 da minimum bo'ladi",
+        "x = −1 da maksimum bo'ladi",
+        "ekstremum nuqtasi yo'q, funksiya hamma joyda o'sadi",
+        "ikkita ekstremum nuqtasi bor"
+      ],
+      "t": 2,
+      "izoh": "Hosila f'(x) = 3x² + 6x + 3 = 3(x + 1)². To'la kvadrat bo'lgani uchun hosila x = −1 dan boshqa hamma joyda musbat, x = −1 da esa nolga teng. Ishora o'zgarmagani uchun bu nuqta ekstremum emas. Hosila nolga aylanishining o'zi ekstremum uchun yetarli emas. Javob: ekstremum nuqtasi yo'q, funksiya hamma joyda o'sadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremum-nuqtasi-turi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#e3b45c2a"
+    },
+    {
+      "q": "f(x) = x + 4/x funksiyaning ekstremum nuqtalarini va ularning turini aniqlang.",
+      "v": [
+        "x = 2 da maksimum, x = −2 da minimum",
+        "faqat x = 2 da minimum bor",
+        "x = 0 da minimum bo'ladi",
+        "x = 2 da minimum, x = −2 da maksimum"
+      ],
+      "t": 3,
+      "izoh": "Hosila f'(x) = 1 − 4/x², u x = 2 va x = −2 da nolga aylanadi. Nuqta x = 2 atrofida hosila manfiydan musbatga o'tadi, demak bu minimum. Nuqta x = −2 atrofida musbatdan manfiyga o'tadi, demak bu maksimum. Nuqta x = 0 aniqlanish sohasiga kirmaydi. Javob: x = 2 da minimum, x = −2 da maksimum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstremum-nuqtasi-turi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#816234ac"
+    },
+    {
+      "q": "f(x) = x³ − 3x + 5 funksiyani to'liq tekshirish yakunida maksimum nuqta (−1; 7), minimum nuqta (1; 3) ekani aniqlandi. Grafik qavariqlik yo'nalishini o'zgartiradigan nuqtani toping.",
+      "v": [
+        "(0; 5)",
+        "(5; 0)",
+        "(0; 0)",
+        "(1; 3)"
+      ],
+      "t": 0,
+      "izoh": "Qavariqlik yo'nalishi ikkinchi hosila ishorasi almashadigan nuqtada o'zgaradi. Hisoblaymiz: f'(x) = 3x² − 3, f''(x) = 6x. Tenglama 6x = 0 dan x = 0, va bu nuqtada f'' manfiydan musbatga o'tadi. Ordinatani topamiz: f(0) = 5. Demak burilish nuqtasi (0; 5). Berilgan minimum nuqta (1; 3) ni yoki koordinatalari almashtirilgan (5; 0) ni tanlash tipik xato. Javob: (0; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burilish-nuqtasi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#d22d80ae"
+    },
+    {
+      "q": "f(x) = 2x³ − 9x² + 12x − 4 funksiyaning minimum qiymatini hisoblang.",
+      "v": [
+        "1",
+        "0",
+        "2",
+        "−4"
+      ],
+      "t": 1,
+      "izoh": "Hosila f'(x) = 6x² − 18x + 12 = 6(x − 1)(x − 2). Nuqta x = 2 da hosila manfiydan musbatga o'tadi, demak u minimum nuqtasi. Qiymatni hisoblaymiz: f(2) = 16 − 36 + 24 − 4 = 0. Maksimum qiymat f(1) = 1 ni javob deb olish tipik xato. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstremum-qiymati",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#e6c66cb5"
+    },
+    {
+      "q": "f(x) = x/(x² + 4) funksiyaning eng katta qiymati nechaga teng?",
+      "v": [
+        "0,5",
+        "2",
+        "0,25",
+        "−0,25"
+      ],
+      "t": 2,
+      "izoh": "Hosila f'(x) = (4 − x²)/(x² + 4)², uning suratidagi ifoda x = 2 da nolga aylanadi va shu yerda musbatdan manfiyga o'tadi. Demak x = 2 maksimum nuqtasi. Qiymat f(2) = 2/(4 + 4) = 0,25. Maxrajga 4 ni qo'shishni unutib 0,5 olish tipik xato. Javob: 0,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstremum-qiymati",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#200396e2"
+    },
+    {
+      "q": "f(x) = ln x − x funksiyaning eng katta qiymati qanday songa teng?",
+      "v": [
+        "0",
+        "1",
+        "e",
+        "−1"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi x > 0. Hosila f'(x) = 1/x − 1 va u x = 1 da nolga aylanadi. Kichik x larda hosila musbat, katta x larda manfiy, demak x = 1 maksimum nuqtasi. Qiymat f(1) = ln 1 − 1 = 0 − 1 = −1. Ekstremum nuqtasining abssissasi 1 ni javob deb olish tipik xato. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremum-qiymati",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#b176491e"
+    },
+    {
+      "q": "f(x) = x³ − 6x² + 5 funksiyaning grafigi qaysi oraliqda pastga qavariq, ya'ni f''(x) > 0 bo'ladi?",
+      "v": [
+        "(2; +∞)",
+        "(−∞; 2)",
+        "(4; +∞)",
+        "(−∞; 0) ∪ (4; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi hosila f'(x) = 3x² − 12x, ikkinchi hosila f''(x) = 6x − 12. Tengsizlik 6x − 12 > 0 dan x > 2 chiqadi. Demak grafik (2; +∞) da pastga qavariq. Ikkinchi hosila o'rniga birinchi hosilaning nollari 0 va 4 ni ishlatish tipik xato. Javob: (2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qavariqlik-oraligi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#acdd0bb8"
+    },
+    {
+      "q": "f(x) = x⁴ − 6x² + 2x funksiyaning grafigi qaysi oraliqda yuqoriga qavariq bo'ladi?",
+      "v": [
+        "(−∞; −1) ∪ (1; +∞)",
+        "(−1; 1)",
+        "(0; +∞)",
+        "(−√3; √3)"
+      ],
+      "t": 1,
+      "izoh": "Birinchi hosila f'(x) = 4x³ − 12x + 2, ikkinchi hosila f''(x) = 12x² − 12 = 12(x² − 1). Yuqoriga qavariqlik uchun f''(x) < 0, ya'ni x² < 1 va −1 < x < 1. Tengsizlik ishorasini teskari olish tashqi oraliqni beradi. Javob: (−1; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qavariqlik-oraligi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#4b018eed"
+    },
+    {
+      "q": "f(x) = 1/x giperbolaning grafigi qaysi qismida pastga qavariq bo'ladi?",
+      "v": [
+        "x < 0 bo'lganda",
+        "butun aniqlanish sohasida",
+        "x > 0 bo'lganda",
+        "hech qanday oraliqda"
+      ],
+      "t": 2,
+      "izoh": "Birinchi hosila f'(x) = −1/x², ikkinchi hosila f''(x) = 2/x³. Bu ifoda x > 0 da musbat, x < 0 da manfiy. Demak o'ng tarmoq pastga qavariq, chap tarmoq esa yuqoriga qavariq. Giperbolaning ikki tarmog'i qavariqlik yo'nalishi bo'yicha bir xil emas. Javob: x > 0 bo'lganda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qavariqlik-oraligi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#1f23bbc8"
+    },
+    {
+      "q": "f(x) = 2x³ + 9x² − 5 funksiya grafigining qavariqlik yo'nalishi qaysi nuqtada va qanday o'zgaradi?",
+      "v": [
+        "x = −1,5 da: chapda pastga, o'ngda yuqoriga qavariq",
+        "x = −3 da yo'nalish o'zgaradi",
+        "yo'nalish umuman o'zgarmaydi",
+        "x = −1,5 da: chapda yuqoriga, o'ngda pastga qavariq"
+      ],
+      "t": 3,
+      "izoh": "Birinchi hosila f'(x) = 6x² + 18x, ikkinchi hosila f''(x) = 12x + 18. Tenglama 12x + 18 = 0 dan x = −1,5. Chapda ikkinchi hosila manfiy, demak grafik yuqoriga qavariq; o'ngda musbat, demak pastga qavariq. Birinchi hosila noli x = −3 ni burilish deb olish tipik xato. Javob: x = −1,5 da: chapda yuqoriga, o'ngda pastga qavariq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qavariqlik-oraligi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#22ef0b90"
+    },
+    {
+      "q": "f(x) = x³ − 3x² + 2x + 1 funksiya grafigining burilish nuqtasi koordinatalarini toping.",
+      "v": [
+        "(1; 1)",
+        "(1; 0)",
+        "(0; 1)",
+        "(2; 1)"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi hosilani topamiz: f'(x) = 3x² − 6x + 2, f''(x) = 6x − 6. Tenglama 6x − 6 = 0 dan x = 1, bu nuqtada f'' ishorasi manfiydan musbatga o'tadi. Ordinatani hisoblaymiz: f(1) = 1 − 3 + 2 + 1 = 1. Faqat abssissani yozib qo'yish chala javob. Javob: (1; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burilish-nuqtasi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#56b13279"
+    },
+    {
+      "q": "f(x) = x⁴ − 12x² funksiyaning nechta burilish nuqtasi bor va ular qayerda joylashgan?",
+      "v": [
+        "bitta: x = 0",
+        "ikkita: x = −√2 va x = √2",
+        "uchta: x = −√2, x = 0 va x = √2",
+        "burilish nuqtasi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Hosilalarni topamiz: f'(x) = 4x³ − 24x, f''(x) = 12x² − 24. Tenglama 12x² − 24 = 0 dan x² = 2, ya'ni x = ±√2. Ikkala nuqtada ham ikkinchi hosila ishorasini almashtiradi. Nuqta x = 0 esa birinchi hosila noli, u minimum beradi. Javob: ikkita: x = −√2 va x = √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burilish-nuqtasi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#773be51c"
+    },
+    {
+      "q": "O'quvchi f(x) = x⁴ funksiyada f''(0) = 0 bo'lgani uchun x = 0 burilish nuqtasi deb yozdi. Bu xulosa to'g'rimi?",
+      "v": [
+        "to'g'ri, chunki ikkinchi hosila nolga teng",
+        "noto'g'ri: burilish nuqtasi x = 1 da bo'ladi",
+        "noto'g'ri: f'' ishorasi o'zgarmaydi, x = 0 minimum nuqtasi",
+        "noto'g'ri: bu funksiyaning ikkinchi hosilasi mavjud emas"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi hosila f''(x) = 12x², u haqiqatan ham x = 0 da nolga aylanadi. Lekin 12x² ifoda noldan boshqa hamma joyda musbat, ya'ni ishora o'zgarmaydi. Burilish uchun esa f'' ishorasi almashishi shart. Demak grafik hamma joyda pastga qavariq, x = 0 esa minimum nuqtasi. Javob: noto'g'ri: f'' ishorasi o'zgarmaydi, x = 0 minimum nuqtasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burilish-nuqtasi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#b681bfc0"
+    },
+    {
+      "q": "Yangi mobil ilova foydalanuvchilari soni N(t) = −t³ + 30t² + 100t formula bilan o'sdi, bu yerda t — haftalar soni. Foydalanuvchilar sonining o'sish sur'ati qaysi haftadan boshlab sekinlasha boshlaydi?",
+      "v": [
+        "5-haftadan",
+        "20-haftadan",
+        "30-haftadan",
+        "10-haftadan"
+      ],
+      "t": 3,
+      "izoh": "O'sish sur'ati birinchi hosila: N'(t) = −3t² + 60t + 100. Uning eng katta qiymati N''(t) = −6t + 60 nolga aylanganda, ya'ni t = 10 da bo'ladi. Shu paytgacha sur'at ortadi, keyin kamayadi. Bu nuqta grafikning burilish nuqtasi. Javob: 10-haftadan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-burilish-surat",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#d6a3c2b0"
+    },
+    {
+      "q": "f'(x) grafigi (−∞; 2) oralig'ida Ox o'qidan yuqorida, (2; +∞) da esa pastida joylashgan. f(x) funksiya haqida nima deyish mumkin?",
+      "v": [
+        "(−∞; 2) da o'sadi, (2; +∞) da kamayadi, x = 2 maksimum nuqtasi",
+        "(−∞; 2) da kamayadi, (2; +∞) da o'sadi, x = 2 minimum nuqtasi",
+        "butun sonlar o'qida o'sadi",
+        "x = 2 burilish nuqtasi bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Hosila grafigi Ox o'qidan yuqorida bo'lsa f'(x) > 0, demak funksiya o'sadi. O'qdan pastda f'(x) < 0, demak funksiya kamayadi. Nuqta x = 2 da hosila musbatdan manfiyga o'tadi, bu esa maksimum belgisi. Hosila grafigining o'zini funksiya grafigi deb o'qish tipik xato. Javob: (−∞; 2) da o'sadi, (2; +∞) da kamayadi, x = 2 maksimum nuqtasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-grafigidan-monotonlik",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#b0b378c8"
+    },
+    {
+      "q": "Funksiyaning hosilasi f'(x) = (x − 1)(x − 4)(x − 6) ko'rinishida berilgan. f(x) qaysi oraliqlarda o'sadi?",
+      "v": [
+        "(−∞; 1) va (4; 6)",
+        "(1; 4) va (6; +∞)",
+        "(1; 6) oralig'ida",
+        "faqat (6; +∞) da"
+      ],
+      "t": 1,
+      "izoh": "Hosila nollari 1, 4 va 6. Uchta chiziqli ko'paytma bo'lgani uchun ishora har bir nolda almashadi. Eng o'ngda uchala qavs musbat, demak (6; +∞) da hosila musbat. Chapga qarab ishoralar navbatma-navbat almashadi: (4; 6) manfiy, (1; 4) musbat, (−∞; 1) manfiy. Javob: (1; 4) va (6; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-grafigidan-monotonlik",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#0e2c2a0a"
+    },
+    {
+      "q": "Hosila grafigi x = −3 da Ox o'qini kesib musbatdan manfiyga o'tadi, x = 5 da esa o'qqa urinib qaytadi va ishora saqlanadi. f(x) nechta ekstremum nuqtasiga ega?",
+      "v": [
+        "ikkita: x = −3 va x = 5",
+        "bitta, x = 5 da minimum",
+        "bitta, x = −3 da maksimum",
+        "ekstremum nuqtasi yo'q"
+      ],
+      "t": 2,
+      "izoh": "Ekstremum uchun hosilaning nolga aylanishi emas, ishorasini almashtirishi kerak. Nuqta x = −3 da hosila musbatdan manfiyga o'tgan, demak bu maksimum. Nuqta x = 5 da grafik o'qqa faqat urinib qaytgan, ishora o'zgarmagan, shuning uchun u ekstremum bermaydi. Javob: bitta, x = −3 da maksimum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-grafigidan-ekstremum",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#90b0cfd9"
+    },
+    {
+      "q": "Yuk mashinasining boshlang'ich nuqtaga nisbatan koordinatasi s(t) funksiya bilan berilgan. Uning tezligi v(t) = s'(t) dastlabki uch soatda musbat, uchinchi soatdan beshinchi soatgacha manfiy bo'lgan. Mashina boshlang'ich nuqtadan qachon eng uzoqda bo'lgan?",
+      "v": [
+        "5-soatda",
+        "harakat boshida, t = 0 da",
+        "4-soatda",
+        "3-soatda"
+      ],
+      "t": 3,
+      "izoh": "Tezlik musbat bo'lganda koordinata ortadi va mashina uzoqlashadi, manfiy bo'lganda koordinata kamayadi va mashina orqaga qaytadi. Demak dastlabki uch soatda mashina uzoqlashgan, keyin qaytgan. Eng katta uzoqlik tezlik ishorasi musbatdan manfiyga o'tgan paytda, ya'ni uchinchi soatda bo'lgan. Bu s(t) funksiyaning maksimum nuqtasi. Javob: 3-soatda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-grafigidan-ekstremum",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#30d36999"
+    },
+    {
+      "q": "f'(x) funksiya (−∞; 1) oralig'ida kamayuvchi, (1; +∞) da esa o'suvchi. f(x) grafigi haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "x = 1 burilish nuqtasi: chapda yuqoriga, o'ngda pastga qavariq",
+        "x = 1 minimum nuqtasi bo'ladi",
+        "x = 1 maksimum nuqtasi bo'ladi",
+        "grafik hamma joyda pastga qavariq"
+      ],
+      "t": 0,
+      "izoh": "Hosilaning kamayishi f''(x) < 0 ekanini, o'sishi esa f''(x) > 0 ekanini bildiradi. Demak x = 1 da ikkinchi hosila ishorasi manfiydan musbatga o'tadi. Bu burilish nuqtasi belgisi: chapda grafik yuqoriga qavariq, o'ngda pastga qavariq. Hosilaning o'zini funksiya deb o'qib minimum deyish tipik xato. Javob: x = 1 burilish nuqtasi: chapda yuqoriga, o'ngda pastga qavariq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-grafigidan-qavariqlik",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#bc9f291b"
+    },
+    {
+      "q": "Funksiyaning hosilasi f'(x) = 3x² + 12 ko'rinishida bo'lsa, funksiyaning o'zi haqida nima deyish mumkin?",
+      "v": [
+        "x = 0 da minimumga erishadi",
+        "butun sonlar o'qida o'sadi, ekstremumi yo'q",
+        "butun sonlar o'qida kamayadi",
+        "ikkita ekstremum nuqtasi bor"
+      ],
+      "t": 1,
+      "izoh": "Ifoda 3x² manfiy bo'lmaydi, unga 12 qo'shilgani uchun hosila hamma joyda musbat va kamida 12 ga teng. Hosila hech qachon nolga aylanmaydi, demak ekstremum nuqtasi yo'q. Musbat hosila esa funksiyaning butun sonlar o'qida o'sishini bildiradi. Javob: butun sonlar o'qida o'sadi, ekstremumi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-grafigidan-qavariqlik",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#1a2c1b73"
+    },
+    {
+      "q": "Funksiyaning hosilasi f'(x) = x² − 6x + 8 bo'lsa, f(x) ning maksimum va minimum nuqtalari qaysilar?",
+      "v": [
+        "x = 2 minimum, x = 4 maksimum",
+        "x = 8 da maksimum bo'ladi",
+        "x = 2 maksimum, x = 4 minimum",
+        "ekstremum nuqtasi yo'q"
+      ],
+      "t": 2,
+      "izoh": "Hosila nollari: x² − 6x + 8 = 0 dan x = 2 va x = 4. Parabola tarmoqlari yuqoriga qaragani uchun hosila ildizlar orasida manfiy, tashqarisida musbat. Demak x = 2 da musbatdan manfiyga o'tish — maksimum, x = 4 da manfiydan musbatga o'tish — minimum. Javob: x = 2 maksimum, x = 4 minimum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-grafigidan-qavariqlik",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#86ace7b4"
+    },
+    {
+      "q": "Fermer xo'jaligining omboridagi don zaxirasi Z(t) funksiya bilan beriladi. Z'(t) qiymati oltinchi kungacha manfiy, undan keyin musbat bo'lgan. Zaxira qachon eng kam bo'lgan?",
+      "v": [
+        "kuzatuv boshida",
+        "kuzatuv oxirida",
+        "zaxira eng kam qiymatga umuman erishmagan",
+        "6-kuni"
+      ],
+      "t": 3,
+      "izoh": "Hosila manfiy bo'lgan davrda zaxira kamayib borgan, musbat bo'lgan davrda esa ortgan. Ishora manfiydan musbatga o'tgan nuqta minimum nuqtasidir. Bu o'tish oltinchi kunda ro'y bergan. Demak eng kam zaxira aynan shu kuni qayd etilgan. Javob: 6-kuni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-hosila-ishorasi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#065d4f8a"
+    },
+    {
+      "q": "Jadvalda f'(x) ishorasi berilgan: (−∞; −2) da musbat, (−2; 3) da manfiy, (3; +∞) da yana musbat. f(x) ning ekstremum nuqtalari va turlari qanday?",
+      "v": [
+        "x = −2 maksimum, x = 3 minimum",
+        "x = −2 minimum, x = 3 maksimum",
+        "ikkalasi ham minimum nuqtasi",
+        "ekstremum nuqtasi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Hosila musbatdan manfiyga o'tgan nuqtada funksiya o'sishdan kamayishga o'tadi, bu maksimum. Manfiydan musbatga o'tgan nuqtada esa minimum bo'ladi. Demak x = −2 maksimum, x = 3 minimum nuqtasi. Ishoralar tartibini teskari o'qish tipik xato. Javob: x = −2 maksimum, x = 3 minimum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-ishora-jadvali",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#84352571"
+    },
+    {
+      "q": "f'(x) = 0 tenglama ildizlari x = 0, x = 2 va x = 5. Hosila ishorasi chapdan o'ngga manfiy, musbat, musbat, manfiy tartibida almashadi. f(x) nechta maksimum nuqtasiga ega?",
+      "v": [
+        "ikkita maksimum nuqtasi",
+        "bitta maksimum, x = 5 da",
+        "bitta maksimum, x = 2 da",
+        "maksimum nuqtasi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Nuqta x = 0 da ishora manfiydan musbatga o'tadi — bu minimum. Nuqta x = 2 da hosila musbatdan yana musbatga o'tadi, ya'ni ishora o'zgarmaydi va ekstremum bermaydi. Nuqta x = 5 da musbatdan manfiyga o'tish bor — bu maksimum. Demak faqat bitta maksimum nuqtasi bor. Javob: bitta maksimum, x = 5 da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-ishora-jadvali",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#6909c5ff"
+    },
+    {
+      "q": "f(x) = x³ − 12x + 1 funksiya uchun hosilaning ishorasi qaysi nuqtalarda almashadi?",
+      "v": [
+        "faqat x = 2 da",
+        "x = −4 va x = 4 da",
+        "x = −2 va x = 2 da",
+        "faqat x = 0 da"
+      ],
+      "t": 2,
+      "izoh": "Hosila f'(x) = 3x² − 12 = 3(x² − 4). Tenglama x² = 4 dan x = 2 va x = −2. Manfiy ildizni yo'qotib faqat x = 2 ni yozish tipik xato. Har ikkala nuqtada parabola Ox o'qini kesib o'tadi, demak ishora ikkalasida ham almashadi. Javob: x = −2 va x = 2 da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-ishora-jadvali",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#9ac093a2"
+    },
+    {
+      "q": "Bir mahsulotning narxi yil davomida doim o'sib bordi, lekin o'sish sur'ati har oy sekinlashdi. Narx funksiyasi P(t) uchun qaysi shartlar bajariladi?",
+      "v": [
+        "P'(t) > 0 va P''(t) > 0",
+        "P'(t) < 0 va P''(t) < 0",
+        "P'(t) < 0 va P''(t) > 0",
+        "P'(t) > 0 va P''(t) < 0"
+      ],
+      "t": 3,
+      "izoh": "Narxning o'sishi birinchi hosilaning musbatligini bildiradi: P'(t) > 0. O'sish sur'atining sekinlashuvi esa hosilaning kamayishini, ya'ni ikkinchi hosilaning manfiyligini bildiradi: P''(t) < 0. Bunday grafik o'suvchi va yuqoriga qavariq bo'ladi. Javob: P'(t) > 0 va P''(t) < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-ishora-jadvali",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#dd50d21c"
+    },
+    {
+      "q": "Issiqxonadagi harorat H(t) = t³ − 9t² + 24t + 10 qonuniga bo'ysunadi, bu yerda t — soatlarda o'lchangan vaqt va 0 ≤ t ≤ 6. Shu davrda eng yuqori harorat qanday bo'lgan?",
+      "v": [
+        "46°",
+        "30°",
+        "26°",
+        "10°"
+      ],
+      "t": 0,
+      "izoh": "Hosila H'(t) = 3t² − 18t + 24 = 3(t − 2)(t − 4) nollari t = 2 va t = 4. Kesmadagi eng katta qiymatni topish uchun kritik nuqtalar bilan birga chegaralar ham tekshiriladi: H(0) = 10, H(2) = 30, H(4) = 26, H(6) = 46. Eng kattasi kesma o'ng chegarasida chiqdi. Faqat lokal maksimum 30 ni javob deb olish tipik xato. Javob: 46°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmada-eng-katta-kichik",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#8f6f8b5b"
+    },
+    {
+      "q": "f(x) funksiyani to'liq tekshirishda aniqlanish sohasi x ≠ 1, vertikal asimptota x = 1, gorizontal asimptota y = 2 ekani aniqlandi va funksiya har ikkala oraliqda kamayishi ko'rsatildi. Grafik eskizi qanday ko'rinishda bo'ladi?",
+      "v": [
+        "bitta uzluksiz o'suvchi egri chiziq",
+        "ikkita tarmoq: har biri chapdan o'ngga pasayadi va x = 1 hamda y = 2 chiziqlariga yaqinlashadi",
+        "ikkita tarmoq: har biri chapdan o'ngga ko'tariladi",
+        "parabolaga o'xshash yagona yopiq egri chiziq"
+      ],
+      "t": 1,
+      "izoh": "Vertikal asimptota x = 1 grafikni ikkita alohida tarmoqqa ajratadi: bu chiziqqa yaqinlashganda qiymatlar cheksizlikka ketadi, shuning uchun grafik uzluksiz bo'la olmaydi. Gorizontal asimptota y = 2 esa argument cheksizlikka intilganda grafik shu chiziqqa yopishishini bildiradi. Har ikkala oraliqda hosila manfiy bo'lgani uchun tarmoqlar chapdan o'ngga pasayib boradi. Javob: ikkita tarmoq — har biri pasayadi va x = 1 hamda y = 2 chiziqlariga yaqinlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-eskizini-tanlash",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#7ac4bb1d"
+    },
+    {
+      "q": "O'quvchi f(x) = (x² − 1)/(x − 3) funksiyani to'liq tekshirishni darrov hosilani hisoblashdan boshladi va ekstremumlarni izladi. Umumiy tekshirish sxemasi bo'yicha birinchi qadam nima bo'lishi kerak edi?",
+      "v": [
+        "hosiladan boshlash to'g'ri, qadamlar tartibi ahamiyatsiz",
+        "avval ikkinchi hosilani topib, qavariqlikni aniqlash",
+        "avval aniqlanish sohasini topish",
+        "avval grafik eskizini chizib olish"
+      ],
+      "t": 2,
+      "izoh": "To'liq tekshirish sxemasi aniqlanish sohasidan boshlanadi: funksiya qayerda umuman mavjudligini bilmasdan turib, hosila nollarini sharhlash mumkin emas. Bu misolda maxraj x = 3 da nolga aylanadi, ya'ni bu nuqta sohaga kirmaydi va u yerda na ekstremum, na qiymat izlanadi. Sxema tartibi shunday: soha, juft-toqlik, o'qlar bilan kesishish, asimptotalar, birinchi hosila va ekstremumlar, ikkinchi hosila va burilish, so'ngra grafik. Javob: avval aniqlanish sohasini topish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekshirish-sxemasi-tartibi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#56fb9414"
+    },
+    {
+      "q": "Do'konda kunlik sotuv S(x) = −2x² + 40x − 120 dona, bu yerda x — mahsulot narxi ming so'mda va 5 ≤ x ≤ 12. Sotuv eng ko'p bo'ladigan narxni aniqlang.",
+      "v": [
+        "12 ming so'm",
+        "5 ming so'm",
+        "20 ming so'm",
+        "10 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Hosila S'(x) = −4x + 40 nolga aylanadi, bundan x = 10 va bu qiymat berilgan kesmaga tegishli. Chegaralarni ham tekshiramiz: S(5) = 30, S(10) = 80, S(12) = 72. Eng katta sotuv 10 ming so'mlik narxda. Hosilani noto'g'ri olib x = 20 deyish kesmadan chiqib ketadi. Javob: 10 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmada-eng-katta-kichik",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#492333fc"
+    },
+    {
+      "q": "f(x) = x³ + ax² − 36x + 1 funksiya x = 2 nuqtada ekstremumga ega bo'lsa, a parametrning qiymati nechaga teng?",
+      "v": [
+        "6",
+        "12",
+        "−6",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Ekstremum nuqtasida hosila nolga aylanadi. Hosila f'(x) = 3x² + 2ax − 36 bo'lib, f'(2) = 12 + 4a − 36 = 4a − 24. Tenglama 4a − 24 = 0 dan a = 6. Tekshiramiz: f'(x) = 3x² + 12x − 36 = 3(x + 6)(x − 2), demak x = 2 da ishora almashadi va bu haqiqiy ekstremum. Kvadrat had hosilasidagi 2 ko'paytuvchini unutib 12 + 2a − 36 = 0 deb yozsak, noto'g'ri a = 12 chiqadi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrni-topish",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#3afb0200"
+    },
+    {
+      "q": "f(x) = ax³ − 3x² + 5 funksiyaning ekstremum nuqtasi x = 2 bo'lishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "2",
+        "1",
+        "0,5",
+        "−1"
+      ],
+      "t": 1,
+      "izoh": "Hosilani topamiz: f'(x) = 3ax² − 6x. Shart f'(2) = 0, ya'ni 3a · 4 − 12 = 12a − 12 = 0, bundan a = 1. Agar x = 2 ni hosilaga qo'yganda uni kvadratga ko'tarish unutilsa, 3a · 2 − 12 = 6a − 12 = 0 deb yozilib, noto'g'ri a = 2 chiqadi. Tekshiruv: f'(x) = 3x(x − 2), x = 2 da ishora almashadi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrni-topish",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#b9bf3a60"
+    },
+    {
+      "q": "y = x² + bx + c parabolaning uchi (3; −4) nuqtada joylashgan bo'lsa, b va c koeffitsientlar qanday?",
+      "v": [
+        "b = 6, c = 5",
+        "b = −6, c = −4",
+        "b = −6, c = 5",
+        "b = −3, c = 5"
+      ],
+      "t": 2,
+      "izoh": "Uch abssissasi x = −b/2 formuladan topiladi: −b/2 = 3, bundan b = −6. Endi uch ordinatasini qo'yamiz: 9 − 18 + c = −4, ya'ni c = 5. Tekshirish uchun to'la kvadrat ajratamiz: y = (x − 3)² − 4. Uch ordinatasini to'g'ridan-to'g'ri c deb olish tipik xato. Javob: b = −6, c = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrni-topish",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#2fa6ed3f"
+    },
+    {
+      "q": "f(x) = x³ − 3ax + 1 funksiya butun sonlar o'qida o'suvchi bo'lishi uchun a parametr qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a ≥ 0",
+        "a > 1",
+        "a ≠ 0",
+        "a ≤ 0"
+      ],
+      "t": 3,
+      "izoh": "Funksiya o'suvchi bo'lishi uchun barcha x larda f'(x) ≥ 0 bo'lishi kerak. Hosila f'(x) = 3x² − 3a, ya'ni 3x² ≥ 3a barcha x uchun bajarilsin. Chap tomonning eng kichik qiymati x = 0 da nolga teng, demak 3a ≤ 0 va a ≤ 0. Tengsizlik yo'nalishini teskari olish tipik xato. Javob: a ≤ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrni-topish",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#cfa8999c"
+    },
+    {
+      "q": "Qandolatxonaning kunlik foydasi F(x) = −x² + 120x − 2000 ming so'mni tashkil qiladi, bu yerda x — sotilgan tort soni. Eng katta kunlik foyda qancha bo'ladi?",
+      "v": [
+        "1600 ming so'm",
+        "60 ming so'm",
+        "2000 ming so'm",
+        "3600 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "Hosila F'(x) = −2x + 120 nolga aylanadi, bundan x = 60 ta tort. Bu nuqtada hosila musbatdan manfiyga o'tadi, demak maksimum. Foydani hisoblaymiz: F(60) = −3600 + 7200 − 2000 = 1600 ming so'm, ya'ni har bir tortdan taxminan 27 ming so'm sof foyda. Tort sonini foyda deb yozish tipik xato. Javob: 1600 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-foyda-maksimum",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#cb144fb5"
+    },
+    {
+      "q": "Sartaroshxonada soch olish narxi p ming so'm bo'lganda kunlik mijozlar soni (50 − p) ta bo'ladi. Kunlik daromad eng ko'p bo'lishi uchun narx qanday belgilanishi kerak?",
+      "v": [
+        "50 ming so'm",
+        "25 ming so'm",
+        "20 ming so'm",
+        "12,5 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Daromad narx bilan mijozlar sonining ko'paytmasi: D(p) = p(50 − p) = 50p − p². Hosila D'(p) = 50 − 2p nolga aylanadi, bundan p = 25. Bu nuqtada hosila musbatdan manfiyga o'tadi, demak daromad maksimal. Bunda kuniga 25 ta mijoz keladi va daromad 625 ming so'm. Javob: 25 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-foyda-maksimum",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#166b00c4"
+    },
+    {
+      "q": "Zavod x ta stanok ishlatganda oylik foydasi F(x) = 12x − 0,2x² mln so'mga teng bo'ladi. Foyda eng katta bo'lishi uchun nechta stanok ishlatilishi kerak?",
+      "v": [
+        "60 ta",
+        "24 ta",
+        "30 ta",
+        "12 ta"
+      ],
+      "t": 2,
+      "izoh": "Hosilani topamiz: F'(x) = 12 − 0,4x. Uni nolga tenglaymiz: 0,4x = 12, bundan x = 30. Hosila bu nuqtadan chapda musbat, o'ngda manfiy, demak foyda maksimal. Foyda qiymati F(30) = 360 − 180 = 180 mln so'm. Koeffitsientni 0,2 deb bo'lib 60 olish tipik xato. Javob: 30 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-foyda-maksimum",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#ae1e81ab"
+    },
+    {
+      "q": "Korxonaning ishlab chiqarish xarajati C(x) = x³ − 15x² + 80x mln so'm, bu yerda x — ming donada ifodalangan mahsulot hajmi. Xarajatning o'sish tezligi qaysi hajmda eng kichik bo'ladi?",
+      "v": [
+        "10 ming dona",
+        "15 ming dona",
+        "8 ming dona",
+        "5 ming dona"
+      ],
+      "t": 3,
+      "izoh": "O'sish tezligi birinchi hosila: C'(x) = 3x² − 30x + 80. Uning eng kichik qiymatini topish uchun ikkinchi hosilani olamiz: C''(x) = 6x − 30. Tenglama 6x − 30 = 0 dan x = 5. Chapda C'' manfiy, o'ngda musbat, demak tezlik shu yerda minimal. Bu nuqta C(x) grafigining burilish nuqtasi. Javob: 5 ming dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-foyda-maksimum",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#88fe5aa6"
+    },
+    {
+      "q": "f(x) = (x − 2)/(x + 4) funksiyani to'liq tekshirishda uning grafigi koordinata o'qlarini kesib o'tadigan nuqtalar va vertikal asimptotasi topildi. Ular qanday?",
+      "v": [
+        "(2; 0), (0; −0,5) va vertikal asimptota x = −4",
+        "(−2; 0), (0; 0,5) va vertikal asimptota x = 4",
+        "(2; 0), (0; −2) va vertikal asimptota x = 4",
+        "(0; 2), (−0,5; 0) va vertikal asimptota x = −4"
+      ],
+      "t": 0,
+      "izoh": "Ox o'qi bilan kesishish uchun surat nolga tenglanadi: x − 2 = 0, bundan x = 2 va nuqta (2; 0). Oy o'qi bilan kesishish uchun x = 0 qo'yiladi: f(0) = −2/4 = −0,5, ya'ni nuqta (0; −0,5). Vertikal asimptota maxraj noli x = −4 da hosil bo'ladi, chunki u yerda surat −6 ga teng, ya'ni noldan farqli. Surat va maxraj nollarining o'rnini almashtirish tipik xato. Javob: (2; 0), (0; −0,5) va vertikal asimptota x = −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xarakterli-nuqtalar-jamlanmasi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#66989ea6"
+    },
+    {
+      "q": "Avtomobilning to'g'ri chiziq bo'ylab koordinatasi s(t) = t³ − 6t² + 9t metr qonun bilan o'zgaradi, bu yerda t — sekundlarda vaqt. Avtomobil tezligi qaysi paytlarda nolga aylanadi?",
+      "v": [
+        "t = 3 s va t = 9 s",
+        "t = 1 s va t = 3 s",
+        "faqat t = 2 s",
+        "t = 0 s va t = 4 s"
+      ],
+      "t": 1,
+      "izoh": "Tezlik koordinataning vaqt bo'yicha hosilasi: v(t) = 3t² − 12t + 9 = 3(t − 1)(t − 3). Uni nolga tenglaymiz va t = 1 hamda t = 3 ni olamiz. Bu paytlarda avtomobil to'xtab, harakat yo'nalishini o'zgartiradi. Harakat qonunidagi koeffitsientlarni javob deb olish tipik xato. Javob: t = 1 s va t = 3 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harakat-tezlik",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#ff4e076b"
+    },
+    {
+      "q": "Dronning balandligi H(t) = −t³ + 12t² − 36t + 50 metr, bu yerda t — daqiqalarda vaqt va 0 < t < 8. Dron qaysi oraliqlarda pastga tushgan?",
+      "v": [
+        "(2; 6) oralig'ida",
+        "faqat (0; 2) oralig'ida",
+        "(0; 2) va (6; 8) oraliqlarida",
+        "kuzatuv davomida faqat pastga tushgan"
+      ],
+      "t": 2,
+      "izoh": "Hosila H'(t) = −3t² + 24t − 36 = −3(t − 2)(t − 6). Minus ko'paytuvchi tufayli hosila ildizlar orasida musbat, tashqarisida manfiy. Demak dron (2; 6) da ko'tarilgan, (0; 2) va (6; 8) da esa pasaygan. Minus ishorani hisobga olmaslik javobni teskari qilib qo'yadi. Javob: (0; 2) va (6; 8) oraliqlarida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-harakat-tezlik",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#d4d29bfd"
+    },
+    {
+      "q": "Poyezdning tezligi v(t) = 0,6t² − 12t + 80 km/soat, bu yerda t — harakat boshlanganidan o'tgan daqiqalar soni. Tezlik qachon eng kichik bo'lgan va u qanchani tashkil etgan?",
+      "v": [
+        "10-daqiqada, 80 km/soat",
+        "12-daqiqada, 20 km/soat",
+        "6-daqiqada, 50 km/soat",
+        "10-daqiqada, 20 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Tezlik funksiyasining hosilasi v'(t) = 1,2t − 12. Uni nolga tenglaymiz: 1,2t = 12, bundan t = 10 daqiqa. Hosila chapda manfiy, o'ngda musbat, demak minimum. Tezlik v(10) = 60 − 120 + 80 = 20 km/soat. Boshlang'ich tezlik 80 ni javob deb olish tipik xato. Javob: 10-daqiqada, 20 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harakat-tezlik",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#050f0c57"
+    },
+    {
+      "q": "Sexda x dona buyum ishlab chiqarish xarajati C(x) = 500000 + 12000x so'm. Bir donaga to'g'ri keladigan o'rtacha xarajat A(x) = C(x)/x ishlab chiqarish hajmi juda katta bo'lganda qaysi qiymatga yaqinlashadi?",
+      "v": [
+        "12000 so'm",
+        "500000 so'm",
+        "0 so'm",
+        "512000 so'm"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha xarajatni yozamiz: A(x) = 500000/x + 12000. Hajm ortganda birinchi qo'shiluvchi nolga intiladi, chunki doimiy xarajat ko'p donaga taqsimlanadi. Demak A(x) qiymati 12000 so'mga yaqinlashadi va A = 12000 gorizontal asimptota bo'ladi. Bitta buyum uchun xarajat 512000 so'm ni javob deb olish tipik xato. Javob: 12000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-uzoq-muddat-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#20947b96"
+    },
+    {
+      "q": "Dorining qondagi konsentratsiyasi C(t) = 8t/(t² + 4) mg/l formula bilan beriladi. Juda uzoq vaqt o'tgach konsentratsiya qanday qiymatga intiladi va bu grafikda nimani bildiradi?",
+      "v": [
+        "2 ga intiladi, y = 2 gorizontal asimptota",
+        "0 ga intiladi, y = 0 gorizontal asimptota",
+        "8 ga intiladi, y = 8 gorizontal asimptota",
+        "cheksiz ortadi, gorizontal asimptota yo'q"
+      ],
+      "t": 1,
+      "izoh": "Maxrajning darajasi suratnikidan yuqori, shuning uchun kasr nolga intiladi. Buni ko'rish uchun surat va maxrajni t² ga bo'lish yetarli. Demak dori asta-sekin qondan chiqib ketadi va grafik Ox o'qiga yopishadi. Eng yuqori konsentratsiya 2 mg/l ni chegara qiymat deb olish tipik xato. Javob: 0 ga intiladi, y = 0 gorizontal asimptota.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-uzoq-muddat-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#b5d4d087"
+    },
+    {
+      "q": "Havzaga tuz eritmasi quyilganda konsentratsiya K(t) = (20 + 3t)/(100 + t) foizga teng bo'ladi. Juda uzoq vaqt quyilsa konsentratsiya qaysi darajaga yaqinlashadi?",
+      "v": [
+        "20%",
+        "0,2%",
+        "3%",
+        "0%"
+      ],
+      "t": 2,
+      "izoh": "Surat va maxraj darajalari teng, ikkalasi ham birinchi darajali. Cheksizlikdagi chegara bosh koeffitsientlar nisbatiga teng: 3 : 1 = 3. Demak konsentratsiya 3 foizga yaqinlashadi va K = 3 gorizontal asimptota. Boshlang'ich konsentratsiya 0,2 foizni javob deb olish tipik xato. Javob: 3%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-uzoq-muddat-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#b64cd830"
+    },
+    {
+      "q": "Shahar aholisi P(t) = 240/(1 + 3·2^(−t)) ming kishi qonun bilan o'sib boradi, bu yerda t — yillar soni. Aholi soni qaysi songa yaqinlashadi?",
+      "v": [
+        "60 ming kishi",
+        "80 ming kishi",
+        "cheksiz ortadi",
+        "240 ming kishi"
+      ],
+      "t": 3,
+      "izoh": "Yillar ortganda 2^(−t) daraja nolga intiladi, chunki asos birdan katta va ko'rsatkich manfiy. Shunda maxraj birga yaqinlashadi va P(t) qiymati 240 ming kishiga intiladi. Demak P = 240 gorizontal asimptota, ya'ni shaharning to'yinish chegarasi. Boshlang'ich son P(0) = 60 ni javob deb olish tipik xato. Javob: 240 ming kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-uzoq-muddat-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#68553d8e"
+    },
+    {
+      "q": "Onlayn kurs obunachilari soni A(t) = t³ − 24t² + 200t formula bilan o'zgardi, bu yerda t — oylar soni. Obunachilar sonining o'sish tezligi qaysi oyda eng past bo'lgan?",
+      "v": [
+        "8-oyda",
+        "16-oyda",
+        "24-oyda",
+        "4-oyda"
+      ],
+      "t": 0,
+      "izoh": "O'sish tezligi birinchi hosila: A'(t) = 3t² − 48t + 200. Bu parabolaning eng kichik qiymati uch nuqtasida bo'ladi, uni ikkinchi hosiladan topamiz: A''(t) = 6t − 48 = 0, bundan t = 8. Chapda ikkinchi hosila manfiy, o'ngda musbat, demak tezlik shu oyda eng past. Javob: 8-oyda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-osish-surati-burilish",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#e4d29b88"
+    },
+    {
+      "q": "Yangi mahsulot sotuvi S(t) = −2t³ + 36t² + 90t dona bo'lib o'sdi, bu yerda t — haftalar soni. Haftalik sotuv o'sishi qaysi haftadan keyin sekinlasha boshlaydi?",
+      "v": [
+        "12-haftadan keyin",
+        "6-haftadan keyin",
+        "3-haftadan keyin",
+        "9-haftadan keyin"
+      ],
+      "t": 1,
+      "izoh": "Haftalik o'sish birinchi hosila bilan o'lchanadi: S'(t) = −6t² + 72t + 90. Uning o'zgarishini ikkinchi hosila belgilaydi: S''(t) = −12t + 72. Tenglama −12t + 72 = 0 dan t = 6. Shu paytgacha o'sish tezlashgan, keyin sekinlasha boshlagan. Javob: 6-haftadan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-osish-surati-burilish",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#a03d6c1f"
+    },
+    {
+      "q": "Kompaniya daromadi grafigi o'suvchi va ayni paytda pastga qavariq. Bu grafik shakli kompaniya haqida nimani anglatadi?",
+      "v": [
+        "daromad ortmoqda, lekin o'sish sur'ati sekinlashmoqda",
+        "daromad kamaymoqda va tobora tezroq kamaymoqda",
+        "daromad ortmoqda va o'sish sur'ati ham tezlashmoqda",
+        "daromad o'zgarmas bo'lib qolgan"
+      ],
+      "t": 2,
+      "izoh": "Grafikning o'suvchiligi birinchi hosilaning musbatligini bildiradi, ya'ni daromad ortib bormoqda. Pastga qavariqlik esa ikkinchi hosilaning musbatligini, ya'ni birinchi hosilaning o'sishini bildiradi. Demak har oydagi qo'shimcha daromad avvalgisidan katta bo'lmoqda. Javob: daromad ortmoqda va o'sish sur'ati ham tezlashmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-shaklini-talqin",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#67b1028a"
+    },
+    {
+      "q": "Choynakdagi suv harorati T(t) = 100 − 80·2^(−t/5) daraja qonun bilan ortadi, bu yerda t — daqiqalarda vaqt. Grafikning gorizontal asimptotasi qaysi va u fizik ma'noda nimani bildiradi?",
+      "v": [
+        "T = 80, harorat 80 darajada to'xtaydi",
+        "T = 20, bu boshlang'ich harorat",
+        "T = 0, suv butunlay soviydi",
+        "T = 100, harorat 100 darajaga yaqinlashadi"
+      ],
+      "t": 3,
+      "izoh": "Vaqt ortganda 2^(−t/5) daraja nolga intiladi, chunki ko'rsatkich manfiy tomonga cheksiz o'sadi. Shunda T(t) qiymati 100 ga yaqinlashadi, lekin unga hech qachon yetmaydi. Boshlang'ich harorat T(0) = 100 − 80 = 20 daraja, u asimptota emas. Javob: T = 100, harorat 100 darajaga yaqinlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-uzoq-muddat-asimptota",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#ddd3383e"
+    },
+    {
+      "q": "Funksiya juft, x = 0 nuqtada maksimumga erishadi va gorizontal asimptotasi y = 0. Qaysi funksiya bu uch shartni bir vaqtda qanoatlantiradi?",
+      "v": [
+        "y = 1/(x² + 1)",
+        "y = x/(x² + 1)",
+        "y = 1/(x − 1)",
+        "y = x² + 1"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi funksiya toq, chunki suratda x turibdi. Uchinchisi na juft, na toq va vertikal asimptotaga ega. To'rtinchisining gorizontal asimptotasi yo'q, u cheksiz o'sadi va x = 0 da minimum beradi. Birinchi funksiya esa juft, x = 0 da eng katta qiymat 1 ni oladi va cheksizlikda nolga intiladi. Javob: y = 1/(x² + 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xossalardan-funksiyani-tanlash",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#779868c5"
+    },
+    {
+      "q": "Vertikal asimptotasi x = 2, gorizontal asimptotasi esa y = 1 bo'lgan funksiyani tanlang.",
+      "v": [
+        "y = (2x + 3)/(x − 2)",
+        "y = (x + 3)/(x − 2)",
+        "y = 1/(x − 2)",
+        "y = (x + 3)/(x + 2)"
+      ],
+      "t": 1,
+      "izoh": "Vertikal asimptota maxraj nolidan chiqadi, demak maxraj x − 2 bo'lishi kerak — oxirgi variant shu sababli chiqib ketadi. Gorizontal asimptota bosh koeffitsientlar nisbatiga teng bo'lishi kerak. Birinchi variantda bu nisbat 2, uchinchi variantda esa maxraj darajasi yuqori bo'lgani uchun nisbat 0. Faqat ikkinchi variantda nisbat 1 : 1 = 1. Javob: y = (x + 3)/(x − 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xossalardan-funksiyani-tanlash",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#f6bd5a8a"
+    },
+    {
+      "q": "Grafigi koordinata boshiga nisbatan simmetrik, Ox o'qini uchta nuqtada kesadigan va ikkita ekstremumga ega funksiyani ko'rsating.",
+      "v": [
+        "y = x³ + 4x",
+        "y = x⁴ − 4x²",
+        "y = x³ − 4x",
+        "y = x³ − 4"
+      ],
+      "t": 2,
+      "izoh": "Koordinata boshiga nisbatan simmetriya toq funksiyani talab qiladi, shuning uchun juft y = x⁴ − 4x² va toq bo'lmagan y = x³ − 4 chiqib ketadi. Funksiya y = x³ + 4x toq, lekin uning hosilasi 3x² + 4 hech qachon nolga aylanmaydi va Ox o'qini faqat bitta nuqtada kesadi. Qolgan funksiya x(x − 2)(x + 2) ko'rinishida yoyiladi, uning uchta noli va ikkita ekstremumi bor. Javob: y = x³ − 4x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xossalardan-funksiyani-tanlash",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#5a745260"
+    },
+    {
+      "q": "f(x) funksiya juft, (−∞; 0) oralig'ida kamayadi, (0; +∞) da o'sadi va f(0) = −4. Qaysi formula bu tavsifga mos keladi?",
+      "v": [
+        "y = −x² − 4",
+        "y = x³ − 4",
+        "y = 4 − x²",
+        "y = x² − 4"
+      ],
+      "t": 3,
+      "izoh": "Kub funksiya toq hadga ega, u juft bo'la olmaydi, shuning uchun ikkinchi variant chiqib ketadi. Birinchi va uchinchi variantlarda x² oldida minus turibdi, ular avval o'sib, keyin kamayadi. Bundan tashqari uchinchi variantda f(0) = 4 bo'lib, shart buziladi. Faqat oxirgi variantda uch nuqta (0; −4) va tarmoqlar yuqoriga yo'nalgan. Javob: y = x² − 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xossalardan-funksiyani-tanlash",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#e172af9c"
+    },
+    {
+      "q": "f(x) = (x² + 2x)/(x² − 1) funksiya grafigining barcha asimptotalarini toping.",
+      "v": [
+        "x = 1, x = −1 va y = 1",
+        "x = 1, x = −1 va y = 0",
+        "faqat x = 1 va x = −1",
+        "x = 1 va y = 2"
+      ],
+      "t": 0,
+      "izoh": "Maxraj x² − 1 = 0 dan x = 1 va x = −1. Bu nuqtalarda surat mos ravishda 3 va −1 ga teng, ya'ni noldan farqli, demak ikkalasi ham vertikal asimptota. Surat va maxraj darajalari teng bo'lgani uchun gorizontal asimptota bosh koeffitsientlar nisbati 1 : 1 = 1 ga teng. Gorizontal asimptotani unutib qo'yish javobni chala qoldiradi. Javob: x = 1, x = −1 va y = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asimptotalar-toplami",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#d7156bba"
+    },
+    {
+      "q": "f(x) = (2x² − 3)/(x + 1) funksiya nechta asimptotaga ega va ular qaysi to'g'ri chiziqlar?",
+      "v": [
+        "ikkita: x = −1 va y = 2",
+        "ikkita: x = −1 va y = 2x − 2",
+        "bitta: x = −1",
+        "ikkita: x = 1 va y = 2x + 2"
+      ],
+      "t": 1,
+      "izoh": "Maxraj noli x = −1, unda surat −1 ga teng, demak x = −1 vertikal asimptota. Surat darajasi maxrajdan bittaga ortiq, shuning uchun og'ma asimptota bor. Bo'lishni bajaramiz: 2x² − 3 = (x + 1)(2x − 2) − 1, ya'ni f(x) = 2x − 2 − 1/(x + 1). Darajalar teng deb o'ylab y = 2 gorizontal asimptota deyish tipik xato. Javob: ikkita: x = −1 va y = 2x − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asimptotalar-toplami",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#2f6f7ccc"
+    },
+    {
+      "q": "f(x) = 3/(x² + 2x + 5) funksiyaning asimptotalari haqida to'g'ri fikrni tanlang.",
+      "v": [
+        "ikkita vertikal asimptota bor",
+        "bitta vertikal asimptota x = −5 da",
+        "vertikal asimptotasi yo'q, faqat y = 0 gorizontal asimptota bor",
+        "gorizontal asimptotasi y = 3 bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Maxrajning diskriminanti D = 4 − 20 = −16 manfiy, demak x² + 2x + 5 hech qachon nolga aylanmaydi. Shuning uchun vertikal asimptota umuman yo'q. Maxraj darajasi suratdan yuqori bo'lgani uchun cheksizlikda kasr nolga intiladi. Javob: vertikal asimptotasi yo'q, faqat y = 0 gorizontal asimptota bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asimptotalar-toplami",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#4161afbf"
+    },
+    {
+      "q": "f(x) = (x² − 4)/(x² + x − 6) funksiyani tekshirganda asimptotalar va uzilish nuqtalari qanday bo'ladi?",
+      "v": [
+        "vertikal x = −3 va x = 2, gorizontal y = 1",
+        "vertikal x = 2, gorizontal y = 0",
+        "faqat gorizontal y = 1",
+        "vertikal x = −3, gorizontal y = 1, x = 2 da teshik"
+      ],
+      "t": 3,
+      "izoh": "Suratni va maxrajni ko'paytuvchilarga ajratamiz: (x − 2)(x + 2) va (x + 3)(x − 2). Umumiy ko'paytuvchi x − 2 qisqaradi va f(x) = (x + 2)/(x + 3) bo'ladi, lekin x ≠ 2 sharti qoladi. Demak x = 2 da cheksizlik emas, balki teshik bor, vertikal asimptota esa faqat x = −3. Darajalar teng bo'lgani uchun gorizontal asimptota y = 1. Javob: vertikal x = −3, gorizontal y = 1, x = 2 da teshik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asimptotalar-toplami",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#89633bcf"
+    },
+    {
+      "q": "f(x) = x³ − 3x² funksiyani tekshirishda x = 0 da maksimum, x = 2 da minimum topildi. Grafikning burilish nuqtasi qayerda joylashgan?",
+      "v": [
+        "(1; −2)",
+        "(1; 0)",
+        "(0; 0)",
+        "(2; −4)"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi hosilani topamiz: f'(x) = 3x² − 6x, f''(x) = 6x − 6. Tenglama 6x − 6 = 0 dan x = 1 va bu nuqtada f'' ishorasi manfiydan musbatga o'tadi. Ordinatani hisoblaymiz: f(1) = 1 − 3 = −2. Minimum nuqtasi (2; −4) ni burilish deb olish tipik xato. Javob: (1; −2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toliq-tekshirish-xulosasi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#b51ec639"
+    },
+    {
+      "q": "f(x) = x/(x − 3) funksiya to'liq tekshirildi. Quyidagi to'rt xulosadan qaysi biri noto'g'ri?",
+      "v": [
+        "gorizontal asimptotasi y = 1 to'g'ri chiziq",
+        "funksiya butun aniqlanish sohasida o'sadi",
+        "vertikal asimptotasi x = 3 to'g'ri chiziq",
+        "grafik koordinata boshidan o'tadi"
+      ],
+      "t": 1,
+      "izoh": "Hosilani hisoblaymiz: f'(x) = ((x − 3) − x)/(x − 3)² = −3/(x − 3)². Maxraj kvadrat bo'lgani uchun musbat, surat esa manfiy, demak hosila hamma joyda manfiy va funksiya kamayadi. Qolgan uch xulosa to'g'ri: darajalar teng bo'lgani uchun y = 1, maxraj noli x = 3 va f(0) = 0. Javob: funksiya butun aniqlanish sohasida o'sadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toliq-tekshirish-xulosasi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#9757c188"
+    },
+    {
+      "q": "f(x) = x⁴ − 2x² funksiya grafigi haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "toq funksiya, bitta minimum nuqtasi bor",
+        "juft funksiya, x = 0 da minimumga erishadi",
+        "juft funksiya; x = −1 va x = 1 da minimum, x = 0 da maksimum",
+        "ekstremum nuqtasi umuman yo'q"
+      ],
+      "t": 2,
+      "izoh": "Barcha darajalar juft, demak f(−x) = f(x) va funksiya juft. Hosila f'(x) = 4x³ − 4x = 4x(x − 1)(x + 1), nollari −1, 0 va 1. Ishora manfiy, musbat, manfiy, musbat tarzida almashadi, shuning uchun chetkilar minimum, o'rtadagisi maksimum. Qiymatlar: f(±1) = −1 va f(0) = 0. Javob: juft funksiya; x = −1 va x = 1 da minimum, x = 0 da maksimum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toliq-tekshirish-xulosasi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#61df878a"
+    },
+    {
+      "q": "Talaba y = (x − 1)/(x + 2) funksiyani tekshirib, grafik Ox o'qini x = −2 da kesadi deb yozdi. Xatoni toping va to'g'ri xulosani ko'rsating.",
+      "v": [
+        "Ox o'qini x = −1 da kesadi",
+        "Ox o'qini x = 2 da kesadi",
+        "grafik Ox o'qini umuman kesmaydi",
+        "Ox o'qini x = 1 da kesadi, x = −2 esa vertikal asimptota"
+      ],
+      "t": 3,
+      "izoh": "Grafik Ox o'qini kesgan nuqtada funksiya qiymati nolga teng, ya'ni surat nolga aylanadi: x − 1 = 0 va x = 1. Maxraj noli x = −2 da esa funksiya aniqlanmagan, u yerda vertikal asimptota bo'ladi. Talaba surat va maxraj rolini almashtirib yuborgan. Javob: Ox o'qini x = 1 da kesadi, x = −2 esa vertikal asimptota.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toliq-tekshirish-xulosasi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#b697f3db"
+    },
+    {
+      "q": "f(x) = (x² − 4)/x funksiya to'liq tekshirilmoqda. Uning juft-toqligi, vertikal asimptotasi va og'ma asimptotasi haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "toq funksiya; vertikal asimptota x = 0, og'ma asimptota y = x",
+        "juft funksiya; vertikal asimptota x = 0, gorizontal asimptota y = 1",
+        "toq funksiya; vertikal asimptotalar x = 2 va x = −2, og'ma asimptota y = x",
+        "umumiy ko'rinishdagi funksiya; yagona og'ma asimptota y = x − 4"
+      ],
+      "t": 0,
+      "izoh": "Kasrni hadma-had bo'lamiz: f(x) = x − 4/x. Argument o'rniga −x qo'yamiz: f(−x) = −x + 4/x = −f(x), demak funksiya toq va grafigi koordinata boshiga nisbatan simmetrik. Maxraj x = 0 da nolga aylanadi, surat esa −4 ga teng, shuning uchun x = 0 vertikal asimptota. Cheksizlikda 4/x qoldiq nolga intiladi va grafik y = x to'g'ri chiziqqa yopishadi. Surat nollari 2 va −2 esa Ox o'qi bilan kesishish nuqtalari, asimptota emas. Javob: toq funksiya; vertikal asimptota x = 0, og'ma asimptota y = x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xarakterli-nuqtalar-jamlanmasi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#32c51d2a"
+    },
+    {
+      "q": "f(x) = x³ + 3x² − 4 funksiyani to'liq tekshirishda birinchi hosila nollari, burilish nuqtasining abssissasi va Oy o'qi bilan kesishish nuqtasi topildi. Bu uch natija qanday?",
+      "v": [
+        "hosila nollari x = 0 va x = 3; burilish x = −1; Oy bilan (0; −4)",
+        "hosila nollari x = 0 va x = −2; burilish x = −1; Oy bilan (0; −4)",
+        "hosila nollari x = 0 va x = −2; burilish x = 1; Oy bilan (0; 4)",
+        "hosila nollari x = −1 va x = 2; burilish x = 0; Oy bilan (−4; 0)"
+      ],
+      "t": 1,
+      "izoh": "Birinchi hosila f'(x) = 3x² + 6x = 3x(x + 2), uning nollari x = 0 va x = −2. Ikkinchi hosila f''(x) = 6x + 6, uning noli x = −1 va shu nuqtada ishora manfiydan musbatga almashadi, demak burilish x = −1 da. Oy o'qi bilan kesishish uchun x = 0 qo'yamiz: f(0) = −4, ya'ni nuqta (0; −4). Ikkinchi hosila noli o'rniga birinchi hosila nolini burilish deb olish tipik xato. Javob: hosila nollari x = 0 va x = −2; burilish x = −1; Oy bilan (0; −4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xarakterli-nuqtalar-jamlanmasi",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#f527b683"
+    },
+    {
+      "q": "To'liq tekshirish natijasida f(x) funksiya butun sonlar o'qida aniqlangani, toq ekani hamda x = −1 da maksimumga, x = 1 da minimumga erishishi ma'lum bo'ldi. Grafik eskizi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "grafik Oy o'qiga nisbatan simmetrik va (0; 0) nuqtadan o'tadi",
+        "grafik (−1; 1) oralig'ida o'sadi, tashqarisida kamayadi",
+        "grafik koordinata boshiga nisbatan simmetrik, (0; 0) dan o'tadi va (−1; 1) oralig'ida kamayadi",
+        "grafik ikkita uzilgan tarmoqdan iborat bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Toq funksiyaning grafigi koordinata boshiga nisbatan simmetrik. Aniqlanish sohasi butun sonlar o'qi bo'lgani uchun f(0) = −f(0) tenglikdan f(0) = 0 kelib chiqadi, demak grafik koordinata boshidan o'tadi. Nuqta x = −1 maksimum, x = 1 esa minimum bo'lgani uchun ular orasida funksiya kamayadi, chetki oraliqlarda esa o'sadi. Uzilish nuqtasi yo'q, shuning uchun grafik yaxlit bitta egri chiziq. Toq funksiyani Oy o'qiga nisbatan simmetrik deb olish tipik xato. Javob: grafik koordinata boshiga nisbatan simmetrik, (0; 0) dan o'tadi va (−1; 1) oralig'ida kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-eskizini-tanlash",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#50425f46"
+    },
+    {
+      "q": "Abituriyent y = (x² + 1)/(x − 1) funksiyani tekshirib, uning gorizontal asimptotasi y = 1 deb yozdi. Xatoni aniqlab, to'g'ri xulosani ko'rsating.",
+      "v": [
+        "gorizontal asimptota y = 1 emas, y = 0 bo'ladi",
+        "funksiyaning asimptotasi umuman yo'q",
+        "gorizontal asimptota to'g'ri topilgan, xato yo'q",
+        "gorizontal asimptota yo'q: grafik y = x + 1 og'ma va x = 1 vertikal asimptotaga ega"
+      ],
+      "t": 3,
+      "izoh": "Gorizontal asimptota surat darajasi maxraj darajasidan katta bo'lmagandagina mavjud. Bu yerda surat ikkinchi, maxraj birinchi darajali, ya'ni daraja aynan bittaga ortiq — demak gorizontal emas, og'ma asimptota izlanadi. Bo'lish bajaramiz: x² + 1 = (x − 1)(x + 1) + 2, ya'ni f(x) = x + 1 + 2/(x − 1). Cheksizlikda qoldiq nolga intiladi va grafik y = x + 1 chizig'iga yopishadi. Maxraj noli x = 1 esa vertikal asimptota beradi. Bosh koeffitsientlar nisbatini olib y = 1 deyish tipik xato. Javob: gorizontal asimptota yo'q; grafik y = x + 1 og'ma va x = 1 vertikal asimptotaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekshirish-xatosini-topish",
+      "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini#4bb7b80e"
+    }
+  ]
+}

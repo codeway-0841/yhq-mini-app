@@ -1,0 +1,2984 @@
+{
+  "fan": "fizika",
+  "nom": "Fizika",
+  "emoji": "⚛️",
+  "jamiSavol": 7845,
+  "jamiMavzu": 263,
+  "qiy": {
+    "oson": 5261,
+    "orta": 1649,
+    "qiyin": 935
+  },
+  "sinflar": [
+    {
+      "sinf": 7,
+      "savol": 1971,
+      "mavzu": 80,
+      "kitoblar": [
+        {
+          "nom": "Fizika",
+          "savol": 1548,
+          "mavzu": 50,
+          "mavzular": [
+            {
+              "id": "fizika_7_ozb_m01-orta-osiyo-olimlari",
+              "nom": "01-mavzu. O‘rta Osiyo olimlari",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 23,
+                "orta": 7,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m02-ozbek-fizik-olimlari",
+              "nom": "02-mavzu. O‘zbek fizik olimlari",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 25,
+                "orta": 5,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m03-fizik-kattaliklar-si",
+              "nom": "03-mavzu. Fizik kattaliklar SI",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 24,
+                "orta": 8,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m04-tadqiqot-metodlari",
+              "nom": "04-mavzu. Tadqiqot metodlari",
+              "bolim": "",
+              "savol": 28,
+              "qiy": {
+                "oson": 25,
+                "orta": 2,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar",
+              "nom": "05-mavzu. Skalyar vektor kattaliklar",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 22,
+                "orta": 5,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m07-mexanik-harakat",
+              "nom": "07-mavzu. Mexanik harakat",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 22,
+                "orta": 7,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m08-kinematika-tushunchalari",
+              "nom": "08-mavzu. Kinematika tushunchalari",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 23,
+                "orta": 5,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m09-tekis-harakat-tezlik",
+              "nom": "09-mavzu. Tekis harakat tezlik",
+              "bolim": "",
+              "savol": 33,
+              "qiy": {
+                "oson": 24,
+                "orta": 8,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m11-notekis-harakat",
+              "nom": "11-mavzu. Notekis harakat",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 20,
+                "orta": 5,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m12-laboratoriya-ortacha-tezlik",
+              "nom": "12-mavzu. Laboratoriya o‘rtacha tezlik",
+              "bolim": "",
+              "savol": 25,
+              "qiy": {
+                "oson": 23,
+                "orta": 2,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m14-aylana-harakati",
+              "nom": "14-mavzu. Aylana harakati",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 22,
+                "orta": 2,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m16-massa",
+              "nom": "16-mavzu. Massa",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 22,
+                "orta": 7,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m17-zichlik",
+              "nom": "17-mavzu. Zichlik",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 26,
+                "orta": 9,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m18-laboratoriya-zichlik",
+              "nom": "18-mavzu. Laboratoriya zichlik",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 19,
+                "orta": 7,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m19-kuch",
+              "nom": "19-mavzu. Kuch",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 27,
+                "orta": 8,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m20-bosim",
+              "nom": "20-mavzu. Bosim",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 24,
+                "orta": 8,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m22-paskal-qonuni",
+              "nom": "22-mavzu. Paskal qonuni",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 28,
+                "orta": 3,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m23-gidrostatik-bosim",
+              "nom": "23-mavzu. Gidrostatik bosim",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 20,
+                "orta": 10,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m25-atmosfera-bosimi",
+              "nom": "25-mavzu. Atmosfera bosimi",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 29,
+                "orta": 3,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m26-mexanik-ish",
+              "nom": "26-mavzu. Mexanik ish",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 20,
+                "orta": 8,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m27-energiya-turlari",
+              "nom": "27-mavzu. Energiya turlari",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 24,
+                "orta": 6,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m29-quvvat",
+              "nom": "29-mavzu. Quvvat",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 17,
+                "orta": 13,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m31-ichki-energiya",
+              "nom": "31-mavzu. Ichki energiya",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 28,
+                "orta": 2,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m32-issiqlik-miqdori",
+              "nom": "32-mavzu. Issiqlik miqdori",
+              "bolim": "",
+              "savol": 31,
+              "qiy": {
+                "oson": 22,
+                "orta": 9,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m34-issiqlik-almashinuvi-amaliy",
+              "nom": "34-mavzu. Issiqlik almashinuvi amaliy",
+              "bolim": "",
+              "savol": 25,
+              "qiy": {
+                "oson": 19,
+                "orta": 6,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m35-yoqilgi-yonish-issiqligi",
+              "nom": "35-mavzu. Yoqilg‘i yonish issiqligi",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 21,
+                "orta": 9,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m36-buglanish-qaynash",
+              "nom": "36-mavzu. Bug‘lanish qaynash",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 27,
+                "orta": 5,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m37-erish-qotish",
+              "nom": "37-mavzu. Erish qotish",
+              "bolim": "",
+              "savol": 34,
+              "qiy": {
+                "oson": 29,
+                "orta": 5,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m39-elektrlanish",
+              "nom": "39-mavzu. Elektrlanish",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 27,
+                "orta": 3,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m40-elektr-zaryad",
+              "nom": "40-mavzu. Elektr zaryad",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 29,
+                "orta": 6,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m41-elektroskop-elektrometr",
+              "nom": "41-mavzu. Elektroskop elektrometr",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 29,
+                "orta": 1,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m42-otkazgich-dielektrik",
+              "nom": "42-mavzu. O‘tkazgich dielektrik",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 29,
+                "orta": 1,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m43-zaryad-ozaro-tasir",
+              "nom": "43-mavzu. Zaryad o‘zaro ta’sir",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 29,
+                "orta": 1,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi",
+              "nom": "44-mavzu. Zaryad taqsimlanishi",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 29,
+                "orta": 1,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m45-tabiat-elektr-hodisalar",
+              "nom": "45-mavzu. Tabiat elektr hodisalar",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 27,
+                "orta": 3,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m46-elektr-toki",
+              "nom": "46-mavzu. Elektr toki",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 32,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m47-tok-manbalari",
+              "nom": "47-mavzu. Tok manbalari",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 31,
+                "orta": 1,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m48-elektr-kuchlanish",
+              "nom": "48-mavzu. Elektr kuchlanish",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 22,
+                "orta": 7,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m49-tok-kuchi",
+              "nom": "49-mavzu. Tok kuchi",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 18,
+                "orta": 9,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m51-laboratoriya-tok-kuchi-kuchlanish",
+              "nom": "51-mavzu. Laboratoriya tok kuchi kuchlanish",
+              "bolim": "",
+              "savol": 25,
+              "qiy": {
+                "oson": 25,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m52-elektr-qarshilik",
+              "nom": "52-mavzu. Elektr qarshilik",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 26,
+                "orta": 6,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m53-rezistorlar-reostatlar",
+              "nom": "53-mavzu. Rezistorlar reostatlar",
+              "bolim": "",
+              "savol": 36,
+              "qiy": {
+                "oson": 35,
+                "orta": 1,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m54-om-qonuni",
+              "nom": "54-mavzu. Om qonuni",
+              "bolim": "",
+              "savol": 36,
+              "qiy": {
+                "oson": 21,
+                "orta": 15,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat",
+              "nom": "56-mavzu. Amaliy mashg‘ulot reostat",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 23,
+                "orta": 2,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m57-laboratoriya-om-qonuni",
+              "nom": "57-mavzu. Laboratoriya Om qonuni",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 25,
+                "orta": 0,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m58-yoruglik-togri-chiziq-boylab-tarqalishi",
+              "nom": "58-mavzu. Yorug‘lik to‘g‘ri chiziq bo‘ylab tarqalishi",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 32,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi",
+              "nom": "59-mavzu. Quyosh va Oy tutilishi",
+              "bolim": "",
+              "savol": 31,
+              "qiy": {
+                "oson": 31,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m60-yoruglikning-qaytishi-va-sinishi",
+              "nom": "60-mavzu. Yoruglikning qaytishi va sinishi",
+              "bolim": "",
+              "savol": 38,
+              "qiy": {
+                "oson": 35,
+                "orta": 3,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m61-linza",
+              "nom": "61-mavzu. Linza",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 24,
+                "orta": 10,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish",
+              "nom": "62-mavzu. Amaliy mashg‘ulot ko‘zgudan qaytish",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 22,
+                "orta": 4,
+                "qiyin": 0
+              }
+            }
+          ]
+        },
+        {
+          "nom": "Masalalar",
+          "savol": 423,
+          "mavzu": 30,
+          "mavzular": [
+            {
+              "id": "fizika_7_ozb_masala_m03-fizik-kattaliklar-si",
+              "nom": "03-mavzu. Masala. fizik kattaliklar SI",
+              "bolim": "",
+              "savol": 15,
+              "qiy": {
+                "oson": 4,
+                "orta": 8,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m05-skalyar-vektor-kattaliklar",
+              "nom": "05-mavzu. Masala. skalyar vektor kattaliklar",
+              "bolim": "",
+              "savol": 13,
+              "qiy": {
+                "oson": 4,
+                "orta": 6,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m07-mexanik-harakat",
+              "nom": "07-mavzu. Masala. mexanik harakat",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 4,
+                "orta": 7,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m08-kinematika-tushunchalari",
+              "nom": "08-mavzu. Masala. kinematika tushunchalari",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 4,
+                "orta": 8,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m09-tekis-harakat-tezlik-yol",
+              "nom": "09-mavzu. Masala. tekis harakat tezlik yo‘l",
+              "bolim": "",
+              "savol": 15,
+              "qiy": {
+                "oson": 3,
+                "orta": 8,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m11-ortacha-tezlik",
+              "nom": "11-mavzu. Masala. o‘rtacha tezlik",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 4,
+                "orta": 6,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m14-aylana-harakat",
+              "nom": "14-mavzu. Masala. aylana harakat",
+              "bolim": "",
+              "savol": 15,
+              "qiy": {
+                "oson": 5,
+                "orta": 8,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m16-massa",
+              "nom": "16-mavzu. Masala. massa",
+              "bolim": "",
+              "savol": 13,
+              "qiy": {
+                "oson": 5,
+                "orta": 8,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m17-zichlik",
+              "nom": "17-mavzu. Masala. zichlik",
+              "bolim": "",
+              "savol": 15,
+              "qiy": {
+                "oson": 4,
+                "orta": 9,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m19-kuch",
+              "nom": "19-mavzu. Masala. kuch",
+              "bolim": "",
+              "savol": 15,
+              "qiy": {
+                "oson": 6,
+                "orta": 9,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m20-bosim",
+              "nom": "20-mavzu. Masala. bosim",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 4,
+                "orta": 7,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m22-paskal-qonuni",
+              "nom": "22-mavzu. Masala. Paskal qonuni",
+              "bolim": "",
+              "savol": 13,
+              "qiy": {
+                "oson": 4,
+                "orta": 6,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim",
+              "nom": "23-mavzu. Masala. gidrostatik bosim",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 5,
+                "orta": 5,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m25-atmosfera-bosimi",
+              "nom": "25-mavzu. Masala. atmosfera bosimi",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 4,
+                "orta": 6,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m26-mexanik-ish",
+              "nom": "26-mavzu. Masala. mexanik ish",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 3,
+                "orta": 7,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m27-energiya-turlari",
+              "nom": "27-mavzu. Masala. energiya turlari",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 4,
+                "orta": 5,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m29-mexanik-quvvat",
+              "nom": "29-mavzu. Masala. mexanik quvvat",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 3,
+                "orta": 8,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m31-ichki-energiya",
+              "nom": "31-mavzu. Masala. ichki energiya",
+              "bolim": "",
+              "savol": 13,
+              "qiy": {
+                "oson": 4,
+                "orta": 7,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori",
+              "nom": "32-mavzu. Masala. issiqlik miqdori",
+              "bolim": "",
+              "savol": 15,
+              "qiy": {
+                "oson": 5,
+                "orta": 7,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m35-yonish-issiqligi",
+              "nom": "35-mavzu. Masala. yonish issiqligi",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 4,
+                "orta": 6,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m36-buglanish-qaynash",
+              "nom": "36-mavzu. Masala. bug‘lanish qaynash",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 3,
+                "orta": 7,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m37-erish-qotish",
+              "nom": "37-mavzu. Masala. erish qotish",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 5,
+                "orta": 6,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m40-elektr-zaryad",
+              "nom": "40-mavzu. Masala. elektr zaryad",
+              "bolim": "",
+              "savol": 15,
+              "qiy": {
+                "oson": 4,
+                "orta": 8,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m46-elektr-toki",
+              "nom": "46-mavzu. Masala. elektr toki",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 4,
+                "orta": 6,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m48-kuchlanish",
+              "nom": "48-mavzu. Masala. kuchlanish",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 4,
+                "orta": 7,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m49-tok-kuchi-hisoblar",
+              "nom": "49-mavzu. Masala. tok kuchi hisoblar",
+              "bolim": "",
+              "savol": 13,
+              "qiy": {
+                "oson": 3,
+                "orta": 6,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m52-elektr-qarshilik",
+              "nom": "52-mavzu. Masala. elektr qarshilik",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 1,
+                "orta": 10,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m54-om-qonuni",
+              "nom": "54-mavzu. Masala. Om qonuni",
+              "bolim": "",
+              "savol": 15,
+              "qiy": {
+                "oson": 3,
+                "orta": 9,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m60-qaytish-burchaklari",
+              "nom": "60-mavzu. Masala. qaytish burchaklari",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 5,
+                "orta": 9,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_7_ozb_masala_m61-linza",
+              "nom": "61-mavzu. Masala. linza",
+              "bolim": "",
+              "savol": 14,
+              "qiy": {
+                "oson": 5,
+                "orta": 9,
+                "qiyin": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": 8,
+      "savol": 1541,
+      "mavzu": 48,
+      "kitoblar": [
+        {
+          "nom": "Fizika",
+          "savol": 1541,
+          "mavzu": 48,
+          "mavzular": [
+            {
+              "id": "fizika_8_ozb_m01-jismlarning-zaryadlanishi",
+              "nom": "01-mavzu. Jismlarning zaryadlanishi",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 28,
+                "orta": 7,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m02-elektr-zaryad",
+              "nom": "02-mavzu. Elektr zaryad",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 20,
+                "orta": 9,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m03-kulon-qonuni",
+              "nom": "03-mavzu. Kulon qonuni",
+              "bolim": "",
+              "savol": 36,
+              "qiy": {
+                "oson": 19,
+                "orta": 11,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m05-elektr-maydon",
+              "nom": "05-mavzu. Elektr maydon",
+              "bolim": "",
+              "savol": 37,
+              "qiy": {
+                "oson": 22,
+                "orta": 10,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi",
+              "nom": "06-mavzu. Otkazgichlarda zaryadlarning taqsimlanishi",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 20,
+                "orta": 10,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m08-tabiatdagi-elektr-hodisalar",
+              "nom": "08-mavzu. Tabiatdagi elektr hodisalar",
+              "bolim": "",
+              "savol": 34,
+              "qiy": {
+                "oson": 27,
+                "orta": 6,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m09-elektr-toki-haqida-tushuncha",
+              "nom": "09-mavzu. Elektr toki haqida tushuncha",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 25,
+                "orta": 0,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m10-tok-manbalari",
+              "nom": "10-mavzu. Tok manbalari",
+              "bolim": "",
+              "savol": 40,
+              "qiy": {
+                "oson": 36,
+                "orta": 0,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash",
+              "nom": "11-mavzu. Elektr kuchlanish va uni o‘lchash",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 23,
+                "orta": 7,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m12-tok-kuchi-va-uni-olchash",
+              "nom": "12-mavzu. Tok kuchi va uni o‘lchash",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 20,
+                "orta": 6,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish",
+              "nom": "14-mavzu. Laboratoriya elektr zanjirni yig‘ish",
+              "bolim": "",
+              "savol": 25,
+              "qiy": {
+                "oson": 20,
+                "orta": 0,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m15-elektr-qarshilik",
+              "nom": "15-mavzu. Elektr qarshilik",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 23,
+                "orta": 4,
+                "qiyin": 8
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m16-rezistorlar-reostatlar-potensiometrlar",
+              "nom": "16-mavzu. Rezistorlar reostatlar potensiometrlar",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 29,
+                "orta": 4,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni",
+              "nom": "17-mavzu. Zanjirning bir qismi uchun Om qonuni",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 23,
+                "orta": 9,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m19-laboratoriya-om-qonunini-urganish",
+              "nom": "19-mavzu. Laboratoriya Om qonunini o‘rganish",
+              "bolim": "",
+              "savol": 25,
+              "qiy": {
+                "oson": 18,
+                "orta": 4,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash",
+              "nom": "20-mavzu. Amaliy reostat tok kuchini rostlash",
+              "bolim": "",
+              "savol": 25,
+              "qiy": {
+                "oson": 19,
+                "orta": 4,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash",
+              "nom": "21-mavzu. Istemolchilarni ketma ket ulash",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 20,
+                "orta": 8,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash",
+              "nom": "22-mavzu. Istemolchilarni parallel ulash",
+              "bolim": "",
+              "savol": 34,
+              "qiy": {
+                "oson": 19,
+                "orta": 9,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m23-tok-manbalarini-ulash",
+              "nom": "23-mavzu. Tok manbalarini ulash",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 22,
+                "orta": 4,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya",
+              "nom": "24-mavzu. Ketma-ket va parallel ulash laboratoriya",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 30,
+                "orta": 2,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash",
+              "nom": "25-mavzu. Istemolchilarni aralash ulash",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 13,
+                "orta": 8,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar",
+              "nom": "27-mavzu. Elektr sig‘imi kondensatorlar",
+              "bolim": "",
+              "savol": 34,
+              "qiy": {
+                "oson": 27,
+                "orta": 5,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash",
+              "nom": "28-mavzu. Kondensatorlarni parallel va ketma-ket ulash",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 15,
+                "orta": 11,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m30-elektr-tokining-ishi",
+              "nom": "30-mavzu. Elektr tokining ishi",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 24,
+                "orta": 8,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m31-elektr-tokining-quvvati",
+              "nom": "31-mavzu. Elektr tokining quvvati",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 21,
+                "orta": 10,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash",
+              "nom": "33-mavzu. Laboratoriya lampochkaning elektr quvvatini aniqlash",
+              "bolim": "",
+              "savol": 27,
+              "qiy": {
+                "oson": 23,
+                "orta": 2,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m34-elektr-toki-tasirida-otkazgichlarning-qizishi",
+              "nom": "34-mavzu. Elektr toki ta’sirida o‘tkazgichlarning qizishi",
+              "bolim": "",
+              "savol": 34,
+              "qiy": {
+                "oson": 28,
+                "orta": 3,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m36-joul-lens-qonunining-amaliy-tatbiqlari",
+              "nom": "36-mavzu. Joul Lens qonunining amaliy tatbiqlari",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 27,
+                "orta": 0,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m37-xonadonlardagi-elektr-zanjirlar-va-ulashlar",
+              "nom": "37-mavzu. Xonadonlardagi elektr zanjirlar va ulashlar",
+              "bolim": "",
+              "savol": 39,
+              "qiy": {
+                "oson": 37,
+                "orta": 0,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m38-elektr-xavfsizlik-choralari",
+              "nom": "38-mavzu. Elektr xavfsizlik choralari",
+              "bolim": "",
+              "savol": 34,
+              "qiy": {
+                "oson": 31,
+                "orta": 0,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m40-metallarda-elektr-toki",
+              "nom": "40-mavzu. Metallarda elektr toki",
+              "bolim": "",
+              "savol": 34,
+              "qiy": {
+                "oson": 27,
+                "orta": 5,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m41-suyuqliklarda-elektr-toki",
+              "nom": "41-mavzu. Suyuqliklarda elektr toki",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 23,
+                "orta": 6,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m42-elektroliz-faradey-birinchi-qonun",
+              "nom": "42-mavzu. Elektroliz Faradey birinchi qonun",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 23,
+                "orta": 5,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m43-faradeyning-ikkinchi-qonuni",
+              "nom": "43-mavzu. Faradeyning ikkinchi qonuni",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 21,
+                "orta": 6,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish",
+              "nom": "45-mavzu. Elektrolizdan turmushda va texnikada foydalanish",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 27,
+                "orta": 0,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m46-vakuumda-elektr-toki",
+              "nom": "46-mavzu. Vakuumda elektr toki",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 24,
+                "orta": 2,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m47-gazlarda-elektr-toki",
+              "nom": "47-mavzu. Gazlarda elektr toki",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 22,
+                "orta": 6,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish",
+              "nom": "48-mavzu. Elektr razryadlarning turlari va foydalanish",
+              "bolim": "",
+              "savol": 36,
+              "qiy": {
+                "oson": 28,
+                "orta": 3,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m49-magnit-maydon-doimiy-magnit",
+              "nom": "49-mavzu. Magnit maydon doimiy magnit",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 34,
+                "orta": 0,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m50-magnit-maydon-parametrlari",
+              "nom": "50-mavzu. Magnit maydon parametrlari",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 27,
+                "orta": 0,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m51-yerning-magnit-maydoni",
+              "nom": "51-mavzu. Yerning magnit maydoni",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 15,
+                "orta": 6,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m52-tokning-magnit-maydoni",
+              "nom": "52-mavzu. Tokning magnit maydoni",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 32,
+                "orta": 0,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m53-magnit-maydon-tokli-otkazgich-tasiri",
+              "nom": "53-mavzu. Magnit maydon tokli o‘tkazgich ta’siri",
+              "bolim": "",
+              "savol": 33,
+              "qiy": {
+                "oson": 21,
+                "orta": 6,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m55-tokli-ramka",
+              "nom": "55-mavzu. Tokli ramka",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 27,
+                "orta": 4,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m56-lorens-kuchi",
+              "nom": "56-mavzu. Lorens kuchi",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 20,
+                "orta": 8,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m57-elektromagnit-rele",
+              "nom": "57-mavzu. Elektromagnit rele",
+              "bolim": "",
+              "savol": 34,
+              "qiy": {
+                "oson": 30,
+                "orta": 0,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m58-laboratoriya-elektromagnit",
+              "nom": "58-mavzu. Laboratoriya elektromagnit",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 19,
+                "orta": 7,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_8_ozb_m59-ozgarmas-tok-dvigateli",
+              "nom": "59-mavzu. Ozgarmas tok dvigateli",
+              "bolim": "",
+              "savol": 33,
+              "qiy": {
+                "oson": 31,
+                "orta": 2,
+                "qiyin": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": 9,
+      "savol": 1398,
+      "mavzu": 45,
+      "kitoblar": [
+        {
+          "nom": "Fizika",
+          "savol": 1398,
+          "mavzu": 45,
+          "mavzular": [
+            {
+              "id": "fizika_9_ozb_m01-modda-tuzilishi-mkn",
+              "nom": "01-mavzu. Modda tuzilishi MKN",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 24,
+                "orta": 5,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m02-molekula-massasi-olchami",
+              "nom": "02-mavzu. Molekula massasi o‘lchami",
+              "bolim": "",
+              "savol": 34,
+              "qiy": {
+                "oson": 26,
+                "orta": 6,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m03-modda-miqdori",
+              "nom": "03-mavzu. Modda miqdori",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 13,
+                "orta": 12,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m05-ideal-gaz",
+              "nom": "05-mavzu. Ideal gaz",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 14,
+                "orta": 10,
+                "qiyin": 8
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m06-temperatura",
+              "nom": "06-mavzu. Temperatura",
+              "bolim": "",
+              "savol": 36,
+              "qiy": {
+                "oson": 25,
+                "orta": 8,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi",
+              "nom": "07-mavzu. Gaz molekulalari harakat tezligi",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 26,
+                "orta": 3,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari",
+              "nom": "09-mavzu. Ideal gaz holati tenglamalari",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 22,
+                "orta": 8,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m10-izotermik-jarayon",
+              "nom": "10-mavzu. Izotermik jarayon",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 21,
+                "orta": 4,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m11-izobarik-jarayon",
+              "nom": "11-mavzu. Izobarik jarayon",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 16,
+                "orta": 7,
+                "qiyin": 9
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m12-izoxorik-jarayon",
+              "nom": "12-mavzu. Izoxorik jarayon",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 17,
+                "orta": 4,
+                "qiyin": 9
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m13-molekula-olchamini-baholash",
+              "nom": "13-mavzu. Molekula o‘lchamini baholash",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 23,
+                "orta": 3,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m15-ichki-energiya",
+              "nom": "15-mavzu. Ichki energiya",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 18,
+                "orta": 8,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m16-termodinamik-ish",
+              "nom": "16-mavzu. Termodinamik ish",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 17,
+                "orta": 8,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m17-issiqlik-miqdori",
+              "nom": "17-mavzu. Issiqlik miqdori",
+              "bolim": "",
+              "savol": 36,
+              "qiy": {
+                "oson": 25,
+                "orta": 8,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m19-issiqlik-muvozanati-amaliy",
+              "nom": "19-mavzu. Issiqlik muvozanati amaliy",
+              "bolim": "",
+              "savol": 25,
+              "qiy": {
+                "oson": 21,
+                "orta": 0,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab",
+              "nom": "20-mavzu. Solishtirma issiqlik sig‘imi lab",
+              "bolim": "",
+              "savol": 25,
+              "qiy": {
+                "oson": 20,
+                "orta": 1,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m21-yoqilgi-solishtirma-yonish-issiqligi",
+              "nom": "21-mavzu. Yoqilg‘i solishtirma yonish issiqligi",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 15,
+                "orta": 13,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni",
+              "nom": "22-mavzu. Termodinamikaning birinchi qonuni",
+              "bolim": "",
+              "savol": 34,
+              "qiy": {
+                "oson": 18,
+                "orta": 13,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi",
+              "nom": "24-mavzu. Issiqlik jarayonlarining qaytmasligi",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 14,
+                "orta": 9,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish",
+              "nom": "25-mavzu. Laboratoriya suv aralashtirish",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 14,
+                "orta": 9,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m26-ichki-yonuv-dvigatellari",
+              "nom": "26-mavzu. Ichki yonuv dvigatellari",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 23,
+                "orta": 5,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi",
+              "nom": "27-mavzu. Issiqlik dvigatellarining ishlash prinsipi",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 16,
+                "orta": 11,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m29-issiqlik-mashinalari-va-tabiatni-muhofaza",
+              "nom": "29-mavzu. Issiqlik mashinalari va tabiatni muhofaza",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 28,
+                "orta": 3,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m31-suyuqlik-xossalari",
+              "nom": "31-mavzu. Suyuqlik xossalari",
+              "bolim": "",
+              "savol": 40,
+              "qiy": {
+                "oson": 27,
+                "orta": 12,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m32-hollash-kapillyar",
+              "nom": "32-mavzu. Hollash kapillyar",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 21,
+                "orta": 7,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m34-lab-sirt-taranglik",
+              "nom": "34-mavzu. Lab sirt taranglik",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 14,
+                "orta": 7,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m35-kristall-amorf",
+              "nom": "35-mavzu. Kristall amorf",
+              "bolim": "",
+              "savol": 40,
+              "qiy": {
+                "oson": 35,
+                "orta": 3,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m36-qattiq-mexanik",
+              "nom": "36-mavzu. Qattiq mexanik",
+              "bolim": "",
+              "savol": 34,
+              "qiy": {
+                "oson": 19,
+                "orta": 10,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m38-qattiq-jismlarning-erishi-va-qotishi",
+              "nom": "38-mavzu. Qattiq jismlarning erishi va qotishi",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 29,
+                "orta": 2,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m39-solishtirma-erish-issiqligi-amorf-jismlar",
+              "nom": "39-mavzu. Solishtirma erish issiqligi amorf jismlar",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 20,
+                "orta": 6,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya",
+              "nom": "40-mavzu. Bug‘lanish va kondensatsiya",
+              "bolim": "",
+              "savol": 34,
+              "qiy": {
+                "oson": 26,
+                "orta": 4,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m41-atmosferadagi-hodisalar",
+              "nom": "41-mavzu. Atmosferadagi hodisalar",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 24,
+                "orta": 5,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash",
+              "nom": "42-mavzu. Laboratoriya havoning nisbiy namligini aniqlash",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 14,
+                "orta": 5,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash",
+              "nom": "44-mavzu. Yorug‘lik tezligini aniqlash",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 22,
+                "orta": 6,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m45-yoruglikning-qaytish-va-sinish-qonunlari",
+              "nom": "45-mavzu. Yoruglikning qaytish va sinish qonunlari",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 22,
+                "orta": 7,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m47-tola-ichki-qaytish",
+              "nom": "47-mavzu. Tola ichki qaytish",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 18,
+                "orta": 7,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m49-laboratoriya-shishaning-nur-sindirish-korsatkichini-aniqlash",
+              "nom": "49-mavzu. Laboratoriya shishaning nur sindirish ko‘rsatkichini aniqlash",
+              "bolim": "",
+              "savol": 25,
+              "qiy": {
+                "oson": 15,
+                "orta": 6,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m50-linzalar",
+              "nom": "50-mavzu. Linzalar",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 21,
+                "orta": 7,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m51-yupqa-linza-tasvir",
+              "nom": "51-mavzu. Yupqa linza tasvir",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 16,
+                "orta": 5,
+                "qiyin": 9
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab",
+              "nom": "53-mavzu. Linza optik kuchi lab",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 14,
+                "orta": 7,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m54-optik-asboblar",
+              "nom": "54-mavzu. Optik asboblar",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 21,
+                "orta": 6,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m55-koz-va-korish",
+              "nom": "55-mavzu. Koz va ko‘rish",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 24,
+                "orta": 4,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m57-geliotexnika",
+              "nom": "57-mavzu. Geliotexnika",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 30,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m58-olam-fizik-manzarasi",
+              "nom": "58-mavzu. Olam fizik manzarasi",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 24,
+                "orta": 3,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_9_ozb_m59-fizika-texnika-taraqqiyoti",
+              "nom": "59-mavzu. Fizika texnika taraqqiyoti",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 28,
+                "orta": 0,
+                "qiyin": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": 10,
+      "savol": 1467,
+      "mavzu": 45,
+      "kitoblar": [
+        {
+          "nom": "Fizika",
+          "savol": 1467,
+          "mavzu": 45,
+          "mavzular": [
+            {
+              "id": "fizika_10_ozb_m01-kuchlarni-qoshish",
+              "nom": "01-mavzu. Kuchlarni qo‘shish",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 17,
+                "orta": 7,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m02-markazga-intilma-kuch",
+              "nom": "02-mavzu. Markazga intilma kuch",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 14,
+                "orta": 9,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat",
+              "nom": "03-mavzu. Gravitatsiya maydonidagi harakat",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 19,
+                "orta": 5,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi",
+              "nom": "05-mavzu. Jism og‘irligining harakat turiga bog‘liqligi",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 20,
+                "orta": 7,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati",
+              "nom": "06-mavzu. Jismning bir nechta kuch ta’siridagi harakati",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 13,
+                "orta": 10,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m08-jismning-qiya-tekislikdagi-harakati",
+              "nom": "08-mavzu. Jismning qiya tekislikdagi harakati",
+              "bolim": "",
+              "savol": 33,
+              "qiy": {
+                "oson": 10,
+                "orta": 11,
+                "qiyin": 12
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m09-qiya-tekislik-fiki",
+              "nom": "09-mavzu. Qiya tekislik FIK i",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 12,
+                "orta": 13,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki",
+              "nom": "11-mavzu. Laboratoriya qiya tekislik FIK i",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 18,
+                "orta": 3,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti",
+              "nom": "12-mavzu. Massa markazi muvozanat kuch momenti",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 21,
+                "orta": 4,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar",
+              "nom": "13-mavzu. Momentlar qoidasiga asoslangan mexanizmlar",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 18,
+                "orta": 6,
+                "qiyin": 8
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m15-mexanik-tebranishlar",
+              "nom": "15-mavzu. Mexanik tebranishlar",
+              "bolim": "",
+              "savol": 40,
+              "qiy": {
+                "oson": 29,
+                "orta": 9,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar",
+              "nom": "16-mavzu. Prujinali matematik mayatniklar",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 14,
+                "orta": 10,
+                "qiyin": 11
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish",
+              "nom": "17-mavzu. Laboratoriya erkin tushish",
+              "bolim": "",
+              "savol": 27,
+              "qiy": {
+                "oson": 11,
+                "orta": 12,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m18-mexanik-tolqinlar",
+              "nom": "18-mavzu. Mexanik to‘lqinlar",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 20,
+                "orta": 3,
+                "qiyin": 9
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m19-tovush-tolqinlari",
+              "nom": "19-mavzu. Tovush to‘lqinlari",
+              "bolim": "",
+              "savol": 45,
+              "qiy": {
+                "oson": 34,
+                "orta": 6,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati",
+              "nom": "21-mavzu. Suyuqlik gaz harakati",
+              "bolim": "",
+              "savol": 33,
+              "qiy": {
+                "oson": 23,
+                "orta": 8,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m22-bosim-tezlik-texnikada",
+              "nom": "22-mavzu. Bosim tezlik texnikada",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 20,
+                "orta": 8,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m24-maydon-superpozitsiya",
+              "nom": "24-mavzu. Maydon superpozitsiya",
+              "bolim": "",
+              "savol": 33,
+              "qiy": {
+                "oson": 20,
+                "orta": 9,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m25-zaryadlangan-shar-maydoni",
+              "nom": "25-mavzu. Zaryadlangan shar maydoni",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 21,
+                "orta": 5,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi",
+              "nom": "27-mavzu. Elektrostatik maydonda zaryadni ko‘chirish ishi",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 20,
+                "orta": 12,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m28-nuqtaviy-zaryadning-potensial-energiyasi-va-potensial",
+              "nom": "28-mavzu. Nuqtaviy zaryadning potensial energiyasi va potensial",
+              "bolim": "",
+              "savol": 38,
+              "qiy": {
+                "oson": 19,
+                "orta": 12,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi",
+              "nom": "29-mavzu. Elektr maydon energiyasi",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 19,
+                "orta": 8,
+                "qiyin": 8
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m30-amaliy-mashgulot-energiyaning-aylanishi",
+              "nom": "30-mavzu. Amaliy mashg‘ulot energiyaning aylanishi",
+              "bolim": "",
+              "savol": 27,
+              "qiy": {
+                "oson": 26,
+                "orta": 1,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m32-tok-kuchi-va-tok-zichligi",
+              "nom": "32-mavzu. Tok kuchi va tok zichligi",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 26,
+                "orta": 3,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m33-toliq-zanjir-uchun-om-qonuni",
+              "nom": "33-mavzu. Toliq zanjir uchun Om qonuni",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 28,
+                "orta": 1,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m35-laboratoriya-eyk-va-ichki-qarshilik",
+              "nom": "35-mavzu. Laboratoriya EYK va ichki qarshilik",
+              "bolim": "",
+              "savol": 27,
+              "qiy": {
+                "oson": 20,
+                "orta": 0,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi",
+              "nom": "36-mavzu. Metall qarshiligining temperaturaga bog‘liqligi",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 23,
+                "orta": 6,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m38-suyuqliklarda-elektr-toki",
+              "nom": "38-mavzu. Suyuqliklarda elektr toki",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 18,
+                "orta": 11,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m39-faradey-qonunlari",
+              "nom": "39-mavzu. Faradey qonunlari",
+              "bolim": "",
+              "savol": 38,
+              "qiy": {
+                "oson": 13,
+                "orta": 16,
+                "qiyin": 9
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m41-elektrolizdan-turmushda-va-texnikada-foydalanish",
+              "nom": "41-mavzu. Elektrolizdan turmushda va texnikada foydalanish",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 18,
+                "orta": 10,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m42-gazlarda-elektr-toki-vakuumda-elektr-toki",
+              "nom": "42-mavzu. Gazlarda elektr toki vakuumda elektr toki",
+              "bolim": "",
+              "savol": 38,
+              "qiy": {
+                "oson": 22,
+                "orta": 9,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi",
+              "nom": "43-mavzu. Yarimotkazgichlar va metallardan farqi",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 25,
+                "orta": 5,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m44-yarimotkazgichlarning-elektr-otkazuvchanligi",
+              "nom": "44-mavzu. Yarimotkazgichlarning elektr o‘tkazuvchanligi",
+              "bolim": "",
+              "savol": 36,
+              "qiy": {
+                "oson": 25,
+                "orta": 10,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m45-yarimotkazgichli-asboblar-va-texnikada-qollanishi",
+              "nom": "45-mavzu. Yarimotkazgichli asboblar va texnikada qo‘llanishi",
+              "bolim": "",
+              "savol": 37,
+              "qiy": {
+                "oson": 24,
+                "orta": 10,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi",
+              "nom": "46-mavzu. Laboratoriya diodning Volt Amper tavsifi",
+              "bolim": "",
+              "savol": 25,
+              "qiy": {
+                "oson": 20,
+                "orta": 3,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m47-magnit-maydon-induksiyasi",
+              "nom": "47-mavzu. Magnit maydon induksiyasi",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 22,
+                "orta": 6,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri",
+              "nom": "48-mavzu. Magnit maydonning tokli o‘tkazgichga ta’siri",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 21,
+                "orta": 7,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m49-tokli-otkazgichlarning-ozaro-tasiri",
+              "nom": "49-mavzu. Tokli o‘tkazgichlarning o‘zaro ta’siri",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 20,
+                "orta": 2,
+                "qiyin": 8
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish",
+              "nom": "50-mavzu. Tokli o‘tkazgichni ko‘chirishdagi ish",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 18,
+                "orta": 6,
+                "qiyin": 8
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m51-lorens-kuchi",
+              "nom": "51-mavzu. Lorens kuchi",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 18,
+                "orta": 5,
+                "qiyin": 12
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m52-elektr-dvigateli",
+              "nom": "52-mavzu. Elektr dvigateli",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 25,
+                "orta": 3,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m54-elektromagnit-induksiya",
+              "nom": "54-mavzu. Elektromagnit induksiya",
+              "bolim": "",
+              "savol": 33,
+              "qiy": {
+                "oson": 26,
+                "orta": 3,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m55-amaliy-mashgulot-emi",
+              "nom": "55-mavzu. Amaliy mashg‘ulot EMI",
+              "bolim": "",
+              "savol": 28,
+              "qiy": {
+                "oson": 23,
+                "orta": 0,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m56-ozinduksiya-induktivlik",
+              "nom": "56-mavzu. O‘zinduksiya induktivlik",
+              "bolim": "",
+              "savol": 33,
+              "qiy": {
+                "oson": 18,
+                "orta": 9,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi",
+              "nom": "58-mavzu. Magnit maydon energiyasi",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 28,
+                "orta": 6,
+                "qiyin": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": 11,
+      "savol": 1468,
+      "mavzu": 45,
+      "kitoblar": [
+        {
+          "nom": "Fizika",
+          "savol": 1468,
+          "mavzu": 45,
+          "mavzular": [
+            {
+              "id": "fizika_11_ozb_m01-magnit-maydon",
+              "nom": "01-mavzu. Magnit maydon",
+              "bolim": "",
+              "savol": 34,
+              "qiy": {
+                "oson": 23,
+                "orta": 7,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m02-tokli-ramka-aylantiruvchi-moment",
+              "nom": "02-mavzu. Tokli ramka aylantiruvchi moment",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 12,
+                "orta": 9,
+                "qiyin": 9
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m03-tokli-otkazgich-halqa-galtak-maydoni",
+              "nom": "03-mavzu. Tokli o‘tkazgich halqa g‘altak maydoni",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 16,
+                "orta": 7,
+                "qiyin": 9
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m04-tokli-otkazgichni-kochirishdagi-ish",
+              "nom": "04-mavzu. Tokli o‘tkazgichni ko‘chirishdagi ish",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 17,
+                "orta": 3,
+                "qiyin": 10
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri",
+              "nom": "05-mavzu. Tokli o‘tkazgichlarning o‘zaro ta’siri",
+              "bolim": "",
+              "savol": 31,
+              "qiy": {
+                "oson": 18,
+                "orta": 5,
+                "qiyin": 8
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m06-lorens-kuchi",
+              "nom": "06-mavzu. Lorens kuchi",
+              "bolim": "",
+              "savol": 33,
+              "qiy": {
+                "oson": 20,
+                "orta": 6,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m07-elektromagnit-induksiya",
+              "nom": "07-mavzu. Elektromagnit induksiya",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 18,
+                "orta": 8,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m08-ozinduksiya-induktivlik",
+              "nom": "08-mavzu. O‘zinduksiya induktivlik",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 16,
+                "orta": 8,
+                "qiyin": 8
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m09-moddalarning-magnit-xossalari",
+              "nom": "09-mavzu. Moddalarning magnit xossalari",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 19,
+                "orta": 6,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi",
+              "nom": "10-mavzu. Magnit maydon energiyasi",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 15,
+                "orta": 7,
+                "qiyin": 8
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m11-erkin-elektromagnit-tebranishlar",
+              "nom": "11-mavzu. Erkin elektromagnit tebranishlar",
+              "bolim": "",
+              "savol": 36,
+              "qiy": {
+                "oson": 24,
+                "orta": 6,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash",
+              "nom": "12-mavzu. Tebranishlarni grafik tasvirlash",
+              "bolim": "",
+              "savol": 38,
+              "qiy": {
+                "oson": 29,
+                "orta": 6,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m13-tranzistorli-generator",
+              "nom": "13-mavzu. Tranzistorli generator",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 23,
+                "orta": 6,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m14-aktiv-qarshilik",
+              "nom": "14-mavzu. Aktiv qarshilik",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 18,
+                "orta": 8,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m15-zanjirdagi-kondensator",
+              "nom": "15-mavzu. Zanjirdagi kondensator",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 16,
+                "orta": 5,
+                "qiyin": 9
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m16-induktiv-galtak",
+              "nom": "16-mavzu. Induktiv g‘altak",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 14,
+                "orta": 7,
+                "qiyin": 9
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m17-aktiv-induktiv-sigim-ketma-ket-om-qonuni",
+              "nom": "17-mavzu. Aktiv induktiv sig‘im ketma ket Om qonuni",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 15,
+                "orta": 11,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans",
+              "nom": "18-mavzu. O‘zgaruvchan tok zanjirida rezonans",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 13,
+                "orta": 10,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish",
+              "nom": "19-mavzu. Laboratoriya rezonans hodisasini o‘rganish",
+              "bolim": "",
+              "savol": 25,
+              "qiy": {
+                "oson": 16,
+                "orta": 4,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi",
+              "nom": "20-mavzu. O‘zgaruvchan tokning ishi quvvati cos φ",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 14,
+                "orta": 10,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m21-elektromagnit-to-lqin-tezligi",
+              "nom": "21-mavzu. Elektromagnit to‘lqin tezligi",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 23,
+                "orta": 5,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari",
+              "nom": "22-mavzu. To‘lqin umumiy xossalari",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 18,
+                "orta": 8,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m23-radioaloqa-radiolokatsiya",
+              "nom": "23-mavzu. Radioaloqa radiolokatsiya",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 27,
+                "orta": 6,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m24-teleko-rsatuvlar",
+              "nom": "24-mavzu. Teleko‘rsatuvlar",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 29,
+                "orta": 5,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m25-yoruglik-interferensiyasi-va-difraksiyasi",
+              "nom": "25-mavzu. Yorug‘lik interferensiyasi va difraksiyasi",
+              "bolim": "",
+              "savol": 38,
+              "qiy": {
+                "oson": 23,
+                "orta": 8,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m26-lab-difraksion-panjara-tolqin-uzunligi",
+              "nom": "26-mavzu. Lab difraksion panjara to‘lqin uzunligi",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 16,
+                "orta": 5,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m27-yoruglik-dispersiyasi-spektral-analiz",
+              "nom": "27-mavzu. Yorug‘lik dispersiyasi spektral analiz",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 21,
+                "orta": 8,
+                "qiyin": 6
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi",
+              "nom": "28-mavzu. Yoruglikning qutblanishi",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 20,
+                "orta": 8,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m29-infraqizil-ultrabinafsha-rentgen-nurlanish",
+              "nom": "29-mavzu. Infraqizil ultrabinafsha Rentgen nurlanish",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 29,
+                "orta": 4,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni",
+              "nom": "30-mavzu. Yorug‘lik oqimi yorug‘lik kuchi yoritilganlik qonuni",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 13,
+                "orta": 14,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi",
+              "nom": "31-mavzu. Laboratoriya yoritilganlikning yorug‘lik kuchiga bog‘liqligi",
+              "bolim": "",
+              "savol": 26,
+              "qiy": {
+                "oson": 10,
+                "orta": 9,
+                "qiyin": 7
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m32-maxsus-nisbiylik-nazariyasi-asoslari-tezliklarni-qoshish",
+              "nom": "32-mavzu. Maxsus nisbiylik nazariyasi asoslari tezliklarni qo‘shish",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 18,
+                "orta": 10,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya",
+              "nom": "33-mavzu. Massaning tezlikka bog‘liqligi relyativistik dinamika massa energiya",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 8,
+                "orta": 12,
+                "qiyin": 12
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m34-kvant-fizikasining-paydo-bolishi",
+              "nom": "34-mavzu. Kvant fizikasining paydo bo‘lishi",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 25,
+                "orta": 5,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar",
+              "nom": "35-mavzu. Fotoelektrik effekt fotonlar",
+              "bolim": "",
+              "savol": 40,
+              "qiy": {
+                "oson": 27,
+                "orta": 10,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada",
+              "nom": "36-mavzu. Foton impulsi yorug‘lik bosimi fotoeffekt texnikada",
+              "bolim": "",
+              "savol": 38,
+              "qiy": {
+                "oson": 28,
+                "orta": 6,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m37-atomning-bor-modeli",
+              "nom": "37-mavzu. Atomning Bor modeli",
+              "bolim": "",
+              "savol": 40,
+              "qiy": {
+                "oson": 25,
+                "orta": 12,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari",
+              "nom": "38-mavzu. Lazer va ularning turlari",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 19,
+                "orta": 11,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m39-atom-yadrosining-tarkibi",
+              "nom": "39-mavzu. Atom yadrosining tarkibi",
+              "bolim": "",
+              "savol": 40,
+              "qiy": {
+                "oson": 21,
+                "orta": 15,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish",
+              "nom": "40-mavzu. Radioaktiv nurlanishni qayd qilish",
+              "bolim": "",
+              "savol": 35,
+              "qiy": {
+                "oson": 19,
+                "orta": 14,
+                "qiyin": 2
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m41-radioaktiv-yemirilish",
+              "nom": "41-mavzu. Radioaktiv yemirilish",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 18,
+                "orta": 11,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m42-yadro-reaksiyalari",
+              "nom": "42-mavzu. Yadro reaksiyalari",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 15,
+                "orta": 13,
+                "qiyin": 4
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m43-elementar-zarralar",
+              "nom": "43-mavzu. Elementar zarralar",
+              "bolim": "",
+              "savol": 34,
+              "qiy": {
+                "oson": 16,
+                "orta": 13,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m44-atom-energetikasi",
+              "nom": "44-mavzu. Atom energetikasi",
+              "bolim": "",
+              "savol": 32,
+              "qiy": {
+                "oson": 18,
+                "orta": 13,
+                "qiyin": 1
+              }
+            },
+            {
+              "id": "fizika_11_ozb_m45-ozbekistonda-yadro-fizikasi",
+              "nom": "45-mavzu. Ozbekistonda yadro fizikasi",
+              "bolim": "",
+              "savol": 30,
+              "qiy": {
+                "oson": 24,
+                "orta": 6,
+                "qiyin": 0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

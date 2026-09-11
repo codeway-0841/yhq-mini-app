@@ -1,0 +1,486 @@
+{
+  "nom": "33-mavzu. Massaning Tezlikka Bogliqligi Relyativistik Dinamika Massa Energiya",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Eynshteynning nisbiylik tamoyili tabiat qonunlari tenglamalari uchun qanday talab qo'yadi?",
+      "v": [
+        "Ular Lorens almashtirishlariga nisbatan invariant bo'lishi kerak",
+        "Ular Galiley almashtirishlariga nisbatan invariant bo'lishi kerak",
+        "Ular faqat qo'zg'almas sistemada to'g'ri bo'lishi kerak",
+        "Ular vaqtga bog'liq bo'lmasligi kerak"
+      ],
+      "t": 0,
+      "izoh": "Barcha tabiat qonunlarini ifodalovchi tenglamalar Lorens almashtirishlariga nisbatan invariant bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#c48d2cf6"
+    },
+    {
+      "q": "Nyuton mexanikasi tenglamalari Lorens almashtirishlariga nisbatan qanday?",
+      "v": [
+        "Invariant emas",
+        "Invariant",
+        "Faqat statikada invariant",
+        "Faqat katta tezliklarda invariant"
+      ],
+      "t": 0,
+      "izoh": "Nyuton mexanikasining tenglamalari Lorens almashtirishlariga invariant emas — shu sababli relyativistik dinamika yaratilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#7b2c93cd"
+    },
+    {
+      "q": "Relyativistik dinamikaning asosiy qonuni (Nyutonning ikkinchi qonuni) qanday ko'rinishda saqlanadi?",
+      "v": [
+        "F = Δp/Δt, bunda p — relyativistik impuls",
+        "F = ma, massa doimiy deb olingan holda",
+        "F = mυ²/r",
+        "F = −kx"
+      ],
+      "t": 0,
+      "izoh": "Katta tezliklarda ham F = Δp/Δt ko'rinishi saqlanadi, faqat impuls relyativistik hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#4730ec36"
+    },
+    {
+      "q": "Tinch turgan jism massasi m₀ bo'lsa, υ tezlik bilan harakatlanayotgandagi massasi qaysi formula bilan aniqlanadi?",
+      "v": [
+        "m = m₀/√(1−β²), bunda β = υ/c",
+        "m = m₀·√(1−β²)",
+        "m = m₀·(1−β²)",
+        "m = m₀ + β²"
+      ],
+      "t": 0,
+      "izoh": "Relyativistik massa: m = m₀/√(1−β²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#f8ff39d3"
+    },
+    {
+      "q": "Jismning tezligi yorug'lik tezligidan juda kichik bo'lganda uning massasi qanday bo'ladi?",
+      "v": [
+        "m ≈ m₀ — tinchlikdagi massaga teng",
+        "m ≈ 0",
+        "m ≈ 2m₀",
+        "m cheksiz katta bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "υ << c bo'lganda √(1−υ²/c²) birdan juda kam farq qiladi va m ≈ m₀.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#03ad1cf8"
+    },
+    {
+      "q": "Massaning tezlikka bog'liqlik grafigiga ko'ra, tezlik c ga yaqinlashganda massa qanday o'zgaradi?",
+      "v": [
+        "Cheksiz ortib boradi",
+        "Nolga kamayadi",
+        "Doimiy qoladi",
+        "Avval kamayib, keyin ortadi"
+      ],
+      "t": 0,
+      "izoh": "Tezlik c ga yaqinlashganda maxraj nolga intiladi va massa keskin (cheksiz) ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#08a8d341"
+    },
+    {
+      "q": "Eynshteynning massa-energiya bog'lanish qonuni qanday yoziladi?",
+      "v": [
+        "E = mc²",
+        "E = mυ²/2",
+        "E = mgh",
+        "E = mc"
+      ],
+      "t": 0,
+      "izoh": "Jismning to'la energiyasi E = mc² — massa va energiyaning o'zaro bog'lanish qonuni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#72bef508"
+    },
+    {
+      "q": "Jismning tinchlikdagi energiyasi qaysi formula bilan aniqlanadi?",
+      "v": [
+        "E₀ = m₀c²",
+        "E₀ = m₀υ²/2",
+        "E₀ = mc²/2",
+        "E₀ = m₀c"
+      ],
+      "t": 0,
+      "izoh": "Tinchlikdagi energiya E₀ = m₀c².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#4344a7ed"
+    },
+    {
+      "q": "Jismning to'la energiyasi qanday kattaliklarning yig'indisiga teng?",
+      "v": [
+        "Tinchlikdagi energiya va kinetik energiya yig'indisiga: E = m₀c² + Ek",
+        "Potensial va kinetik energiya yig'indisiga",
+        "Ichki va mexanik energiya yig'indisiga",
+        "Issiqlik va elektr energiyasi yig'indisiga"
+      ],
+      "t": 0,
+      "izoh": "To'la energiya E = m₀c² + Ek.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#32f3b86a"
+    },
+    {
+      "q": "Nisbiylik nazariyasida jismning kinetik energiyasi qanday aniqlanadi?",
+      "v": [
+        "Ek = mc² − m₀c²",
+        "Ek = mυ²/2",
+        "Ek = m₀υ²/2",
+        "Ek = m₀c²"
+      ],
+      "t": 0,
+      "izoh": "Ek = E − E₀ = mc² − m₀c².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#ba206bc3"
+    },
+    {
+      "q": "Jismning kinetik energiyasi ortib, massasi Δm ga o'zgarganda, bu massa ortishi qanday bog'lanadi?",
+      "v": [
+        "Δm = ΔEk/c²",
+        "Δm = ΔEk·c²",
+        "Δm = ΔEk/c",
+        "Δm = ΔEk·υ²"
+      ],
+      "t": 0,
+      "izoh": "Kinetik energiya ortishi massaning ortishiga keltiradi: Δm = ΔEk/c².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#e1b26f9c"
+    },
+    {
+      "q": "Tinchlikdagi massaga ega zarralar tinchlikdagi massasi nolga teng zarraga aylanganda, ularning tinchlikdagi energiyasi nimga aylanadi?",
+      "v": [
+        "Yangi paydo bo'lgan zarraning kinetik energiyasiga",
+        "Issiqlik energiyasiga",
+        "Potensial energiyaga",
+        "Yoqoladi"
+      ],
+      "t": 0,
+      "izoh": "Tinchlikdagi energiya yangi zarraning kinetik energiyasiga aylanadi — bu tinchlikdagi energiya mavjudligining amaliy isbotidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#cb3ed918"
+    },
+    {
+      "q": "Energiya bilan impuls orasidagi bog'lanish qaysi formula bilan ifodalanadi?",
+      "v": [
+        "E² = (m₀c²)² + (pc)²",
+        "E = pc + m₀c",
+        "E² = m₀c² − pc",
+        "E = p²/2m₀"
+      ],
+      "t": 0,
+      "izoh": "E² = (m₀c²)² + (p·c)² formulani keltirib chiqarish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#1f5bc445"
+    },
+    {
+      "q": "Agar jism tinch holatda bo'lsa (p = 0), uning to'la energiyasi nimaga teng?",
+      "v": [
+        "E = E₀ = m₀c²",
+        "E = 0",
+        "E = pc",
+        "E = mυ²/2"
+      ],
+      "t": 0,
+      "izoh": "p = 0 bo'lganda E² = (m₀c²)², ya'ni to'la energiya tinchlikdagi energiyaga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#791b0b6e"
+    },
+    {
+      "q": "Tinchlikdagi massasi nolga teng bo'lgan zarra uchun energiya va impuls orasidagi bog'liqlik qanday?",
+      "v": [
+        "E = p·c",
+        "E = m₀c²",
+        "E = p²/2m",
+        "E = 0"
+      ],
+      "t": 0,
+      "izoh": "m₀ = 0 bo'lganda E = p·c; bunday zarralar massasiz zarralar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#a8b371d0"
+    },
+    {
+      "q": "Massasiz zarralarga qaysi misol keltiriladi?",
+      "v": [
+        "Foton",
+        "Elektron",
+        "Proton",
+        "Neytron"
+      ],
+      "t": 0,
+      "izoh": "Fotonning tinchlikdagi massasi nolga teng, lekin u impulsga ham, energiyaga ham ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#df04be31"
+    },
+    {
+      "q": "Massasiz zarralar qanday harakatlanadi?",
+      "v": [
+        "Tinch holda mavjud emas; barcha inersial sanoq sistemalarida chegaraviy c tezlik bilan harakatlanadi",
+        "Ixtiyoriy tezlik bilan harakatlanishi mumkin",
+        "Faqat qo'zg'almas sistemada tinch bo'ladi",
+        "Yorug'likdan sekin harakatlanadi"
+      ],
+      "t": 0,
+      "izoh": "Massasiz zarralar tinch holda mavjud emas va barcha inersial sistemalarda c tezlik bilan harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#7157a9e8"
+    },
+    {
+      "q": "Relyativistik impuls qanday ifodalanadi?",
+      "v": [
+        "p = m₀υ/√(1−υ²/c²)",
+        "p = m₀υ",
+        "p = m₀c²",
+        "p = m₀υ²/2"
+      ],
+      "t": 0,
+      "izoh": "Relyativistik impuls p = m₀υ/√(1−υ²/c²) = mυ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#f441d90b"
+    },
+    {
+      "q": "Klassik mexanikada jism massasi tezlikka qanday bog'liq deb qaraladi?",
+      "v": [
+        "Tezlikka bog'liq emas (doimiy)",
+        "Tezlikka to'g'ri proporsional",
+        "Tezlikning kvadratiga proporsional",
+        "Tezlik ortganda kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Nyuton tavsiflagan jismning massasi tezlikka bog'liq emas deb qaraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#d727c1c6"
+    },
+    {
+      "q": "Relyativistik mexanikada energiyaning saqlanish qonuni bajariladimi?",
+      "v": [
+        "Ha, xuddi klassik mexanikadagi kabi bajariladi",
+        "Yo'q, bajarilmaydi",
+        "Faqat kichik tezliklarda bajariladi",
+        "Faqat massasiz zarralar uchun bajariladi"
+      ],
+      "t": 0,
+      "izoh": "Relyativistik mexanikada energiyaning saqlanish qonuni xuddi klassik mexanikadagi kabi bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#7c1c9132"
+    },
+    {
+      "q": "Ikkita kosmik kema Yerdan qarama-qarshi tomonga 0,5c tezlik bilan harakat qilsa, birinchi kemaning ikkinchisiga nisbatan tezligi qancha?",
+      "v": [
+        "0,8c",
+        "1,0c",
+        "0,5c",
+        "0,25c"
+      ],
+      "t": 0,
+      "izoh": "Relyativistik formulaga ko'ra u = (0,5c+0,5c)/(1+0,25) = 0,8c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#304dd7a4"
+    },
+    {
+      "q": "Qaysi biri ko'p energiyaga ega: 1 kg suv, 1 kg ko'mir yoki 1 kg benzin (to'la energiya nuqtai nazaridan)?",
+      "v": [
+        "Uchalasining to'la energiyasi teng: E₁ = E₂ = E₃",
+        "Benzin ko'p energiyaga ega",
+        "Ko'mir ko'p energiyaga ega",
+        "Suv ko'p energiyaga ega"
+      ],
+      "t": 0,
+      "izoh": "E = mc² bo'lgani uchun massalari teng bo'lgan jismlarning to'la energiyasi teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#b43a7f07"
+    },
+    {
+      "q": "0,6c tezlik bilan harakatlanayotgan zarraning kinetik energiyasi uning tinchlikdagi energiyasidan necha marta kichik?",
+      "v": [
+        "4 marta",
+        "2 marta",
+        "3 marta",
+        "1,25 marta"
+      ],
+      "t": 0,
+      "izoh": "β = 0,6 da γ = 1,25; Ek = (γ−1)m₀c² = 0,25E₀, ya'ni tinchlikdagi energiya kinetikdan 4 marta katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#983a806f"
+    },
+    {
+      "q": "Zarraning tezligi 0,6c bo'lganda uning massasi tinchlikdagi massasidan necha marta katta?",
+      "v": [
+        "1,25 marta",
+        "1,67 marta",
+        "2 marta",
+        "1,1 marta"
+      ],
+      "t": 0,
+      "izoh": "γ = 1/√(1−0,36) = 1/0,8 = 1,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#56c1b4cd"
+    },
+    {
+      "q": "m massali ko'mir qanday (to'la) energiyaga ega? (c — yorug'lik tezligi, q — solishtirma yonish issiqligi, λ — solishtirma erish issiqligi)",
+      "v": [
+        "mc²",
+        "mq",
+        "mλ",
+        "mc²/2"
+      ],
+      "t": 0,
+      "izoh": "Har qanday m massali jismning to'la energiyasi E = mc².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#5e088552"
+    },
+    {
+      "q": "Jismning energiyasi o'zgarishi uning massasi o'zgarishiga qanday bog'langan?",
+      "v": [
+        "Δm = ΔE/c²",
+        "Δm = ΔE·c²",
+        "Δm = ΔE/c",
+        "Δm = ΔE"
+      ],
+      "t": 0,
+      "izoh": "Jism energiyasi o'zgarishining massa o'zgarishiga bog'liqligi: Δm = ΔE/c².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#098a453e"
+    },
+    {
+      "q": "Quyoshning nurlanish quvvati 3,78·10²⁶ W bo'lsa, u 1 sekundda nurlanish natijasida qanday massa yo'qotadi?",
+      "v": [
+        "4,3·10⁹ kg",
+        "4,3·10⁶ kg",
+        "1,3·10⁹ kg",
+        "3,78·10²⁶ kg"
+      ],
+      "t": 0,
+      "izoh": "Δm = E/c² = 3,78·10²⁶/(9·10¹⁶) ≈ 4,3·10⁹ kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#fe1aef40"
+    },
+    {
+      "q": "Massa-energiya bog'lanish qonunining fizikaviy mohiyati nimadan iborat?",
+      "v": [
+        "Massa energiyaning bir turiga aylanishi mumkinligi va har qanday massaning o'ziga xos energiya zaxirasiga ega ekanligi",
+        "Massa va energiya bir-biridan mustaqil kattaliklar ekanligi",
+        "Energiya faqat harakatda mavjudligi",
+        "Massa faqat tortishishda namoyon bo'lishi"
+      ],
+      "t": 0,
+      "izoh": "E = mc² qonuni massa bilan energiyaning o'zaro bog'liqligini — massaning energiya zaxirasi ekanligini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#71a30803"
+    },
+    {
+      "q": "Zarraning kinetik energiyasi uning tinchlikdagi energiyasiga teng bo'lganda massasi tinchlikdagi massadan necha marta katta?",
+      "v": [
+        "2 marta",
+        "1,5 marta",
+        "3 marta",
+        "4 marta"
+      ],
+      "t": 0,
+      "izoh": "Ek = E₀ bo'lganda E = 2E₀, ya'ni m = 2m₀.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#efde9784"
+    },
+    {
+      "q": "Elektronning 0,87c tezlikda massasi tinchlikdagi massasidan taxminan necha marta katta?",
+      "v": [
+        "2 marta",
+        "1,25 marta",
+        "0,5 marta",
+        "4 marta"
+      ],
+      "t": 0,
+      "izoh": "γ = 1/√(1−0,87²) ≈ 1/0,5 = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#84dc16c8"
+    },
+    {
+      "q": "Katta tezliklarda F = Δp/Δt tenglamada nima o'zgaradi?",
+      "v": [
+        "Faqat massa o'zgaradi, tenglamaning shakli o'zgarmaydi",
+        "Faqat vaqt o'zgaradi",
+        "Tenglama butunlay yaroqsiz bo'ladi",
+        "Kuch nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Katta tezliklarda tenglama o'z shaklini o'zgartirmaydi, faqat massa o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#9994bffa"
+    },
+    {
+      "q": "Relyativistik dinamikaning asosiy qonuni qanday ifodalanadi?",
+      "v": [
+        "F = Δp/Δt, bunda p — relyativistik impuls mυ",
+        "F = m₀a — massa doimiy",
+        "F = G·m₁m₂/r²",
+        "F = k·Δl"
+      ],
+      "t": 0,
+      "izoh": "Relyativistik dinamikaning asosiy qonuni F = Δp/Δt ko'rinishida yoziladi, bunda impuls relyativistik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m33-massaning-tezlikka-bogliqligi-relyativistik-dinamika-massa-energiya#455187e9"
+    }
+  ]
+}

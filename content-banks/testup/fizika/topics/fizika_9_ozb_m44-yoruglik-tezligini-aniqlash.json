@@ -1,0 +1,456 @@
+{
+  "nom": "44-mavzu. Yoruglik Tezligini Aniqlash",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Yorug'lik tezligini birinchi bo'lib o'lchagan olim kim?",
+      "v": [
+        "Daniyalik olim Olaf Ryomer",
+        "Fransuz fizigi Arman Fizo",
+        "Fransuz fizigi Jan Fuko",
+        "Amerikalik fizik Albert Maykelson"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik tezligini birinchi bo'lib 1676-yilda daniyalik olim Olaf Ryomer o'lchagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#cca00fac"
+    },
+    {
+      "q": "Ryomer yorug'lik tezligini qaysi usul bilan aniqlagan?",
+      "v": [
+        "Astronomik usul bilan",
+        "Tishli g'ildirak yordamida",
+        "Aylanuvchi ko'zgular yordamida",
+        "Laboratoriyada sekundomer bilan"
+      ],
+      "t": 0,
+      "izoh": "Ryomer yorug'lik tezligini astronomik kuzatishlar asosida aniqlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#9452cd8d"
+    },
+    {
+      "q": "Ryomer yorug'lik tezligini aniqlashda Yupiterning qaysi yo'ldoshidan foydalangan?",
+      "v": [
+        "«Io» yo'ldoshidan",
+        "«Yevropa» yo'ldoshidan",
+        "«Ganimed» yo'ldoshidan",
+        "«Kallisto» yo'ldoshidan"
+      ],
+      "t": 0,
+      "izoh": "Ryomer Yupiterning «Io» yo'ldoshining Yupiter soyasiga kirishi va chiqishini kuzatgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#3c569e5e"
+    },
+    {
+      "q": "Ryomer yorug'lik tezligini qachon o'lchagan?",
+      "v": [
+        "1676-yilda",
+        "1849-yilda",
+        "1862-yilda",
+        "1927-yilda"
+      ],
+      "t": 0,
+      "izoh": "Ryomer yorug'lik tezligini 1676-yilda o'lchagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#6d82b0b5"
+    },
+    {
+      "q": "Ryomerning kuzatishlarida Io yo'ldoshining tutilishi Yerga eng yaqin va eng uzoq holatlar orasida taxminan qancha vaqt farq qilgan?",
+      "v": [
+        "22 minut",
+        "11 minut",
+        "33 minut",
+        "44 minut"
+      ],
+      "t": 0,
+      "izoh": "Yer Yupiterga eng yaqin bo'lganda tutilish 11 minut oldin, eng uzoq bo'lganda 11 minut keyin boshlangan, jami t = 11 + 11 = 22 minut.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#a5d1019c"
+    },
+    {
+      "q": "Ryomer t = 22 minut vaqtni nima deb tushuntirgan?",
+      "v": [
+        "Yorug'likning Yer orbitasi diametrini kesib o'tishiga ketgan vaqt deb",
+        "Yorug'likning Yupiterdan Yerga yetib kelishiga ketgan vaqt deb",
+        "Io yo'ldoshining Yupiter atrofini aylanish davri deb",
+        "Yerning Quyosh atrofida aylanish davri deb"
+      ],
+      "t": 0,
+      "izoh": "Ryomer bu vaqtni yorug'likning Yer orbitasini (diametrini) kesib o'tishi uchun ketgan vaqt deb tushuntirgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#453d5146"
+    },
+    {
+      "q": "Ryomer hisoblashlarida Yerning Quyosh atrofidagi orbitasi diametri qanday qabul qilingan?",
+      "v": [
+        "D = 284 000 000 km",
+        "D = 149 600 000 km",
+        "D = 384 000 km",
+        "D = 778 300 000 km"
+      ],
+      "t": 0,
+      "izoh": "Ryomer Yer orbitasi diametrini D = 284 000 000 km deb olgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#48a06ce3"
+    },
+    {
+      "q": "Ryomer yorug'lik tezligini qaysi formula bilan aniqlagan?",
+      "v": [
+        "c = D/t",
+        "c = 4Nlν",
+        "c = D·t",
+        "c = n/υ"
+      ],
+      "t": 0,
+      "izoh": "Ryomer c = D/t ifodadan foydalangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#e6f2bb42"
+    },
+    {
+      "q": "Ryomer aniqlagan yorug'lik tezligining qiymati taxminan qancha bo'lgan?",
+      "v": [
+        "215 000 000 m/s",
+        "313 300 000 m/s",
+        "298 000 000 m/s",
+        "299 792 458 m/s"
+      ],
+      "t": 0,
+      "izoh": "Ryomer aniqlagan qiymat taxminan 215 000 000 m/s ga teng bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#2c5bfd35"
+    },
+    {
+      "q": "Ryomerning ishlarining ahamiyati nimadan iborat?",
+      "v": [
+        "Yorug'lik cheklangan, ammo nihoyatda katta tezlikka ega ekanini tajribada isbotlashidan",
+        "Yorug'likning cheksiz tezlikka ega ekanini isbotlashidan",
+        "Yorug'lik to'lqin tabiatiga ega ekanini kashf etishidan",
+        "Yorug'likning sinish qonunini kashf etishidan"
+      ],
+      "t": 0,
+      "izoh": "Ryomer yorug'lik cheklangan tezlikka ega ekanini tajribada isbotladi va bu tezlik nihoyatda katta ekanini aniqladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#00f7d1a6"
+    },
+    {
+      "q": "Fizo tajribasi qachon o'tkazilgan?",
+      "v": [
+        "1849-yilda",
+        "1676-yilda",
+        "1862-yilda",
+        "1927-yilda"
+      ],
+      "t": 0,
+      "izoh": "Arman Fizo 1849-yilda tajriba yo'li bilan yorug'lik tezligini aniqroq o'lchashga erishgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#67b2e14b"
+    },
+    {
+      "q": "Fizo tajribasida aylanuvchi qismli asosiy detal nima?",
+      "v": [
+        "Tishli g'ildirak",
+        "Aylanuvchi ko'zgu",
+        "Shisha prizma",
+        "Yig'uvchi linza"
+      ],
+      "t": 0,
+      "izoh": "Fizo tajribasida nur yig'iladigan nuqtaga tishli g'ildirak o'rnatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#a210b98e"
+    },
+    {
+      "q": "Fizo tajribasida qaytgan nur kuzatuvchiga ko'rinmay qolishining sababi nima?",
+      "v": [
+        "G'ildirak tishlari orasidan o'tgan nur qaytib kelguncha tishlar burilib, nur yo'lini to'sib qo'yadi",
+        "Ko'zgu nur dastasini yutib yuboradi",
+        "Linza nurlarni boshqa yo'nalishga burib yuboradi",
+        "Nur havoda so'nib qoladi"
+      ],
+      "t": 0,
+      "izoh": "G'ildirak aylanishi ma'lum tezlikka erishganda nur qaytib kelguncha tishlar ma'lum burchakka burilib, nur yo'lini to'sib qo'yadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#8f63ee5e"
+    },
+    {
+      "q": "Fizo tajribasida g'ildirak aylanish chastotasi qancha bo'lgan?",
+      "v": [
+        "ν = 12,67 s⁻¹",
+        "ν = 8,6 s⁻¹",
+        "ν = 720 s⁻¹",
+        "ν = 22 s⁻¹"
+      ],
+      "t": 0,
+      "izoh": "Fizo tajribasida g'ildirakning aylanish chastotasi ν = 12,67 s⁻¹ edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#020c5346"
+    },
+    {
+      "q": "Fizo tajribasidagi g'ildirakda nechta tish bo'lgan?",
+      "v": [
+        "720 ta",
+        "360 ta",
+        "100 ta",
+        "1000 ta"
+      ],
+      "t": 0,
+      "izoh": "Fizo g'ildiragidagi tishlar soni N = 720.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#f1fd3f0f"
+    },
+    {
+      "q": "Fizo tajribasida g'ildirakdan ko'zgugacha bo'lgan masofa qancha bo'lgan?",
+      "v": [
+        "l = 8,6 km",
+        "l = 22 km",
+        "l = 8,6 m",
+        "l = 284 km"
+      ],
+      "t": 0,
+      "izoh": "G'ildirakdan ko'zgugacha bo'lgan masofa l = 8,6 km bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#f5882de9"
+    },
+    {
+      "q": "Fizo yorug'lik tezligini qaysi ifoda bo'yicha aniqlagan?",
+      "v": [
+        "c = 4Nlν",
+        "c = D/t",
+        "c = 2Nlν",
+        "c = Nl/ν"
+      ],
+      "t": 0,
+      "izoh": "Fizo yorug'lik tezligini c = 4Nlν ifodaga ko'ra aniqlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#1594a5c9"
+    },
+    {
+      "q": "Fizo tajribasida yorug'lik tezligi qancha bo'lib chiqqan?",
+      "v": [
+        "313 300 000 m/s",
+        "299 792 458 m/s",
+        "298 000 000 m/s",
+        "215 000 000 m/s"
+      ],
+      "t": 0,
+      "izoh": "Fizo tajribasida yorug'lik tezligi 313 300 000 m/s ga teng bo'lib chiqqan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#266eca99"
+    },
+    {
+      "q": "Jan Fuko yorug'lik tezligini aniqlashda Fizo tajribasidagi tishli g'ildirak o'rniga nimani o'rnatgan?",
+      "v": [
+        "Aylanuvchi ko'zgularni",
+        "Aylanuvchi prizmani",
+        "Yarim shaffof plastinani",
+        "Tirqishli to'siqni"
+      ],
+      "t": 0,
+      "izoh": "1862-yilda Fuko tishli g'ildirak o'rniga aylanuvchi ko'zgular o'rnatib yorug'lik tezligini aniqlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#bc6548e5"
+    },
+    {
+      "q": "Fuko tajribasida olingan yorug'lik tezligi qiymati qancha?",
+      "v": [
+        "298 000 000 m/s",
+        "313 300 000 m/s",
+        "299 796 000 m/s",
+        "215 000 000 m/s"
+      ],
+      "t": 0,
+      "izoh": "Fuko yorug'lik tezligining 298 000 000 m/s ga teng qiymatini olgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#db3c1841"
+    },
+    {
+      "q": "Albert Maykelson yorug'lik tezligi uchun qanday qiymat olgan?",
+      "v": [
+        "299 796 000 m/s",
+        "299 792 458 m/s",
+        "298 000 000 m/s",
+        "313 300 000 m/s"
+      ],
+      "t": 0,
+      "izoh": "Maykelson 1927-yilda Fuko tajribasini takomillashtirib 299 796 000 m/s qiymatni olgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#1a586c8d"
+    },
+    {
+      "q": "Hozirgi paytdagi ma'lumotlarga ko'ra yorug'likning vakuumdagi tezligi qancha?",
+      "v": [
+        "299 792 458 m/s",
+        "299 796 000 m/s",
+        "300 000 000 m/s",
+        "313 300 000 m/s"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi aniq qiymat c = 299 792 458 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#ad1bdfa2"
+    },
+    {
+      "q": "Yorug'lik tezligini yaxlitlab qanday qiymat deb olinadi?",
+      "v": [
+        "c = 3·10⁸ m/s",
+        "c = 3·10⁶ m/s",
+        "c = 3·10¹⁰ m/s",
+        "c = 3·10⁵ m/s"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik tezligini yaxlitlab c = 3·10⁸ m/s deb olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#f470033f"
+    },
+    {
+      "q": "1983-yilda qabul qilingan metrning yangi ta'rifi nimaga asoslangan?",
+      "v": [
+        "Yorug'likning vakuumda 1/299792458 s vaqt intervalida o'tgan yo'l uzunligiga",
+        "Platina-iridiy etaloning uzunligiga",
+        "Yer meridianining qirq milliondan bir qismiga",
+        "Kripton atomi chiqaradigan nurlanish to'lqin uzunligiga"
+      ],
+      "t": 0,
+      "izoh": "Metr — yorug'likning vakuumda 1/299792458 s vaqt intervalida o'tgan yo'l uzunligiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#f90dc33b"
+    },
+    {
+      "q": "Yorug'likning vakuumdagi tarqalish tezligi qaysi harf bilan belgilanadi va bu belgi qayerdan kelib chiqqan?",
+      "v": [
+        "c harfi bilan, lotincha celeritas — tezlik so'zidan",
+        "v harfi bilan, lotincha velocitas so'zidan",
+        "l harfi bilan, lotincha lux — yorug'lik so'zidan",
+        "s harfi bilan, lotincha spatium — masofa so'zidan"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik tezligi lotin harfi c bilan belgilanadi (lotincha celeritas — tezlik).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#29e3f2ec"
+    },
+    {
+      "q": "Olamda hech bir jism qanday tezlikdan katta tezlik bilan harakatlana olmaydi?",
+      "v": [
+        "Yorug'likning vakuumdagi tezligidan",
+        "Ovozning havodagi tezligidan",
+        "Yerning orbital tezligidan",
+        "Raketaning kosmik tezligidan"
+      ],
+      "t": 0,
+      "izoh": "Olamda hech bir jism yorug'likning vakuumdagi tezligidan katta tezlik bilan harakatlana olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#e1e8a128"
+    },
+    {
+      "q": "Yorug'lik tezligining aniqlanishi nimaga yordam berdi?",
+      "v": [
+        "Yorug'likning tabiatini bilishga",
+        "Yerning massasini aniqlashga",
+        "Quyoshning haroratini o'lchashga",
+        "Yulduzlarning tarkibini aniqlashga"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik tezligining aniqlanishi uning tabiatini bilishga yordam berdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#7ba3c9e7"
+    },
+    {
+      "q": "Fizo tajribasida g'ildirak tez aylantirilganda qaytgan nur yana ko'rinishining sababi nima?",
+      "v": [
+        "Nur qaytib kelguncha g'ildirakning keyingi tishi oldingi tish o'rniga yetib keladi",
+        "G'ildirak tezligi ortishi bilan nur tezligi ham ortadi",
+        "Ko'zgu tez aylanib nurni kuchaytirib yuboradi",
+        "Tishlar orasidagi tirqishlar kengayib qoladi"
+      ],
+      "t": 0,
+      "izoh": "G'ildirak ma'lum ω burchak tezlikka erishganda qaytgan nur qaytib kelguncha 1-tish o'rnini 2-tish egallaydi va nur 2- va 3-tishlar orasidan o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#ee6bfa91"
+    },
+    {
+      "q": "Maykelson qaysi olimning tajribasini takomillashtirgan?",
+      "v": [
+        "Fukoning tajribasini",
+        "Fizoning tajribasini",
+        "Ryomerning tajribasini",
+        "Nyutonning tajribasini"
+      ],
+      "t": 0,
+      "izoh": "Maykelson 1927-yilda Fuko tajribasini takomillashtirgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#7c2bc1a7"
+    },
+    {
+      "q": "Yorug'lik tezligini o'lchash usullari kashf etilishidan oldin nima uchun uni oddiy usulda o'lchab bo'lmas edi?",
+      "v": [
+        "Yorug'lik tezligi nihoyatda katta bo'lgani uchun qo'lda vaqtni o'lchaydigan asbob bilan uni o'lchab bo'lmaydi",
+        "Yorug'lik ko'zga ko'rinmagani uchun uni kuzatib bo'lmaydi",
+        "Yorug'lik faqat tunda tarqalgani uchun tajriba qilish qiyin",
+        "Yorug'lik nurining yo'nalishini o'zgartirib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Qo'lda vaqtni o'lchaydigan asbob (sekundomer) bo'lsa-da, yorug'likning tarqalish tezligi juda katta bo'lgani uchun oddiy usulda o'lchab bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m44-yoruglik-tezligini-aniqlash#da5b07b4"
+    }
+  ]
+}

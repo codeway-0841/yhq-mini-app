@@ -1,0 +1,1609 @@
+{
+  "nom": "Chiziqli tengsizliklar va ularning sistemalari",
+  "bolim": "Tengsizliklar",
+  "blok": "tngs",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "5x − 12 > 23 tengsizlikning yechimlar to'plamini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "x > 35",
+        "x > 7",
+        "x > 2,2",
+        "x < 7"
+      ],
+      "t": 1,
+      "izoh": "Avval −12 ni o'ng tomonga o'tkazamiz: 5x > 23 + 12, ya'ni 5x > 35. Endi ikkala tomonni musbat 5 ga bo'lamiz, koeffitsient musbat bo'lgani uchun ishora saqlanadi: x > 7. Agar 12 ni qo'shish o'rniga ayirilsa, xato ravishda x > 2,2 chiqadi. Javob: x > 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-tengsizlik-yechish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#4817ab45"
+    },
+    {
+      "q": "8x + 12 ≤ 60 shartni qanoatlantiruvchi x sonlari qaysi tengsizlik bilan ifodalanadi?",
+      "v": [
+        "x ≤ 9",
+        "x ≥ 6",
+        "x ≤ 48",
+        "x ≤ 6"
+      ],
+      "t": 3,
+      "izoh": "12 ni o'ng tomonga ayirib o'tkazamiz: 8x ≤ 60 − 12, ya'ni 8x ≤ 48. Ikkala tomonni 8 ga bo'lsak x ≤ 6 hosil bo'ladi. 8 musbat son bo'lgani uchun tengsizlik ishorasi o'zgarmaydi. Javob: x ≤ 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-tengsizlik-yechish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#29576be3"
+    },
+    {
+      "q": "3x > 12, 4x > 12, 2x > 12, 5x > 12 tengsizliklaridan qaysi birining yechimi x > 4 bo'ladi?",
+      "v": [
+        "3x > 12",
+        "4x > 12",
+        "2x > 12",
+        "5x > 12"
+      ],
+      "t": 0,
+      "izoh": "Har birini alohida yechamiz: 3x > 12 dan x > 4; 4x > 12 dan x > 3; 2x > 12 dan x > 6; 5x > 12 dan x > 2,4. Demak faqat birinchisining yechimi x > 4 ga teng. Javob: 3x > 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-tengsizlik-yechish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#5befb099"
+    },
+    {
+      "q": "13x ≥ 91 tengsizlikni yechib, natijani sonli oraliq ko'rinishida yozing.",
+      "v": [
+        "(−∞; 7]",
+        "[91; +∞)",
+        "[7; +∞)",
+        "(7; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonni musbat 13 ga bo'lamiz: x ≥ 91 : 13, ya'ni x ≥ 7. Tengsizlik qat'iy emas, shuning uchun 7 ning o'zi ham yechim bo'ladi va chegara yopiq kvadrat qavs bilan yoziladi. Javob: [7; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-tengsizlik-yechish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#fec94a77"
+    },
+    {
+      "q": "−4x > 20 tengsizlikning yechimlar to'plamini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "x > −5",
+        "x > 5",
+        "x < −5",
+        "x < 5"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonni manfiy (−4) ga bo'lamiz. Manfiy songa bo'lganda tengsizlik ishorasi teskarisiga aylanadi: x < 20 : (−4), ya'ni x < −5. Ishorani almashtirmagan o'quvchi xato ravishda x > −5 deb yozadi. Javob: x < −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-koeffitsient-ishora-almashish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#66bfeb28"
+    },
+    {
+      "q": "15 − 3x ≤ 6 tengsizlikni yechganda x uchun qanday shart hosil bo'ladi?",
+      "v": [
+        "x ≥ 3",
+        "x ≤ 3",
+        "x ≥ −3",
+        "x ≤ 7"
+      ],
+      "t": 0,
+      "izoh": "15 ni o'ng tomonga o'tkazamiz: −3x ≤ 6 − 15, ya'ni −3x ≤ −9. Endi ikkala tomonni (−3) ga bo'lamiz va ishorani almashtiramiz: x ≥ 3. Ishora almashtirilmasa x ≤ 3 degan xato javob chiqadi. Javob: x ≥ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-koeffitsient-ishora-almashish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#ad3e8a15"
+    },
+    {
+      "q": "Malika −7x + 5 > 33 tengsizlikni yecha turib, (−7) ga bo'lganda tengsizlik ishorasini o'zgartirmadi. To'g'ri yechim qanday bo'ladi?",
+      "v": [
+        "x > −4",
+        "x > 4",
+        "x < 4",
+        "x < −4"
+      ],
+      "t": 3,
+      "izoh": "5 ni o'ng tomonga o'tkazsak −7x > 28 bo'ladi. Manfiy koeffitsientga bo'lishda ishora almashadi: x < 28 : (−7), ya'ni x < −4. Malika ishorani saqlab qolgani uchun x > −4 degan xato natijaga kelgan. Javob: x < −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-koeffitsient-ishora-almashish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#253e36d6"
+    },
+    {
+      "q": "−12x ≥ −60 tengsizlikning yechimi qaysi oraliqni beradi? Ikkala tomon manfiy songa bo'linishiga e'tibor bering.",
+      "v": [
+        "x ≥ 5",
+        "x ≤ 5",
+        "x ≤ −5",
+        "x ≥ −5"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni (−12) ga bo'lamiz va ishorani almashtiramiz: x ≤ (−60) : (−12). Ikki manfiy sonning bo'linmasi musbat bo'ladi, demak x ≤ 5. Bo'linmani manfiy deb olgan o'quvchi x ≤ −5 deb xato qiladi. Javob: x ≤ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-koeffitsient-ishora-almashish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#ed590b0c"
+    },
+    {
+      "q": "3(x − 4) + 2 > 5(x − 6) tengsizlikni qavslarni ochib yeching.",
+      "v": [
+        "x > 10",
+        "x < −2",
+        "x > −2",
+        "x < 10"
+      ],
+      "t": 3,
+      "izoh": "Qavslarni ochamiz: 3x − 12 + 2 > 5x − 30, ya'ni 3x − 10 > 5x − 30. x li hadlarni chapga, sonlarni o'ngga yig'amiz: −2x > −20. Manfiy koeffitsientga bo'lganda ishora almashadi: x < 10. O'ng qavsda 5 ni faqat x ga ko'paytirsa, xato ravishda x < −2 chiqadi. Javob: x < 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qavsli-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#95fab949"
+    },
+    {
+      "q": "2(3x + 1) ≤ 4(x + 5) tengsizlikda x ning qaysi qiymatlari shartni qanoatlantiradi?",
+      "v": [
+        "x ≤ 11",
+        "x ≤ 9",
+        "x ≤ 18",
+        "x ≥ 9"
+      ],
+      "t": 1,
+      "izoh": "Qavslarni ochsak 6x + 2 ≤ 4x + 20 bo'ladi. 4x ni chapga, 2 ni o'ngga o'tkazamiz: 2x ≤ 18. Ikkala tomonni 2 ga bo'lamiz: x ≤ 9. 2 ga bo'lishni unutgan o'quvchi x ≤ 18 deb javob beradi. Javob: x ≤ 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qavsli-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#613beabf"
+    },
+    {
+      "q": "4(2x − 5) < 2(3x + 4) tengsizlikni yechishda hosil bo'ladigan to'g'ri natijani ko'rsating.",
+      "v": [
+        "x > 14",
+        "x < −6",
+        "x < 14",
+        "x < 12"
+      ],
+      "t": 2,
+      "izoh": "Qavslarni ochamiz: 8x − 20 < 6x + 8. 6x ni chapga, −20 ni o'ngga o'tkazamiz: 2x < 28, bundan x < 14. Agar 2 ni faqat 3x ga ko'paytirib, 4 ni o'zgarishsiz qoldirsa, xato ravishda x < 12 chiqadi. Javob: x < 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qavsli-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#ee68d554"
+    },
+    {
+      "q": "6 − 2(x + 3) ≥ 4(1 − x) tengsizlikning yechimlar to'plami qanday bo'ladi?",
+      "v": [
+        "x ≥ 2",
+        "x ≤ 2",
+        "x ≥ −4",
+        "x ≤ −4"
+      ],
+      "t": 0,
+      "izoh": "Chap tomonni soddalashtiramiz: 6 − 2x − 6 = −2x. O'ng tomon esa 4 − 4x bo'ladi. Demak −2x ≥ 4 − 4x. 4x ni chapga o'tkazamiz: 2x ≥ 4, bundan x ≥ 2. Bu yerda koeffitsient musbat chiqqani uchun ishora almashtirilmaydi. Javob: x ≥ 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qavsli-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#fea227d1"
+    },
+    {
+      "q": "(2x − 1)/3 > 5 tengsizlikni maxrajdan qutulgan holda yeching va javobni tanlang.",
+      "v": [
+        "x > 8",
+        "x > 3",
+        "x > 16",
+        "x < 8"
+      ],
+      "t": 0,
+      "izoh": "Ikkala tomonni 3 ga ko'paytiramiz: 2x − 1 > 15. So'ng −1 ni o'ngga o'tkazamiz: 2x > 16 va ikkala tomonni 2 ga bo'lamiz: x > 8. O'ng tomonni 3 ga ko'paytirishni unutgan o'quvchi x > 3 deb javob beradi. Javob: x > 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#c9afbe1d"
+    },
+    {
+      "q": "x/4 + x/6 ≤ 5 tengsizlikni umumiy maxrajga keltirib yeching.",
+      "v": [
+        "x ≤ 50",
+        "x ≤ 60",
+        "x ≤ 12",
+        "x ≥ 12"
+      ],
+      "t": 2,
+      "izoh": "Maxrajlarning eng kichik umumiy karralisi 12. Ikkala tomonni 12 ga ko'paytiramiz: 3x + 2x ≤ 60, ya'ni 5x ≤ 60. Bundan x ≤ 12. Maxrajlarni qo'shib x/10 ≤ 5 deb olgan o'quvchi x ≤ 50 deb xato qiladi. Javob: x ≤ 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#9a8e8666"
+    },
+    {
+      "q": "(3x + 2)/5 − (x − 4)/2 ≥ 1 tengsizlikning to'g'ri yechimi qaysi variantda berilgan?",
+      "v": [
+        "x ≥ 26",
+        "x ≥ −14",
+        "x ≤ −14",
+        "x ≥ 14"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni 10 ga ko'paytiramiz: 2(3x + 2) − 5(x − 4) ≥ 10. Qavslarni ochamiz: 6x + 4 − 5x + 20 ≥ 10, chunki ikkinchi qavs oldidagi minus barcha hadlar ishorasini almashtiradi. Soddalashtirsak x + 24 ≥ 10, demak x ≥ −14. Ikkinchi qavsda ishorani almashtirmagan o'quvchi x ≥ 26 deb xato qiladi. Javob: x ≥ −14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#d71c7ca0"
+    },
+    {
+      "q": "(x − 3)/2 < (x + 1)/4 tengsizlikni yeching. Maxrajlarni yo'qotish uchun ikkala tomonni 4 ga ko'paytiring.",
+      "v": [
+        "x < 4",
+        "x > 7",
+        "x < −5",
+        "x < 7"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomonni 4 ga ko'paytiramiz: 2(x − 3) < x + 1. Qavsni ochamiz: 2x − 6 < x + 1. x ni chapga, −6 ni o'ngga o'tkazamiz: x < 7. Qavsni ochishda 2 ni faqat x ga ko'paytirgan o'quvchi 2x − 3 < x + 1 dan x < 4 deb xato qiladi. Javob: x < 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#a8204481"
+    },
+    {
+      "q": "9x − 4 > 5x + 16 tengsizlikda noma'lum ikkala tomonda qatnashadi. Uning yechimini toping.",
+      "v": [
+        "x > 3",
+        "x > 5",
+        "x > 20",
+        "x < 5"
+      ],
+      "t": 1,
+      "izoh": "5x ni chapga, −4 ni o'ngga o'tkazamiz: 9x − 5x > 16 + 4, ya'ni 4x > 20. Ikkala tomonni 4 ga bo'lsak x > 5. 4 ni qo'shish o'rniga ayirgan o'quvchi 4x > 12 dan x > 3 deb xato qiladi. Javob: x > 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-tomonda-nomalum",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#106d0586"
+    },
+    {
+      "q": "4x + 19 ≤ 9x − 21 tengsizlikni yechib, x uchun to'g'ri shartni belgilang.",
+      "v": [
+        "x ≥ 8",
+        "x ≤ 8",
+        "x ≥ 40",
+        "x ≥ −8"
+      ],
+      "t": 0,
+      "izoh": "Noma'lumni koeffitsienti kattaroq tomonga yig'ish qulay: 19 + 21 ≤ 9x − 4x, ya'ni 40 ≤ 5x. Ikkala tomonni 5 ga bo'lsak 8 ≤ x, ya'ni x ≥ 8. 5 ga bo'lishni unutgan o'quvchi x ≥ 40 deb javob beradi. Javob: x ≥ 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tomonda-nomalum",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#d697d8a2"
+    },
+    {
+      "q": "2x − 7 < 5x + 11 tengsizlikning yechimini toping va to'g'ri variantni tanlang.",
+      "v": [
+        "x < −6",
+        "x > 6",
+        "x < 6",
+        "x > −6"
+      ],
+      "t": 3,
+      "izoh": "5x ni chapga o'tkazamiz: 2x − 5x − 7 < 11, ya'ni −3x < 18. Manfiy koeffitsientga bo'lganda ishora almashadi: x > −6. Ishorani saqlab qolgan o'quvchi x < −6 deb xato javob beradi. Javob: x > −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tomonda-nomalum",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#0326243e"
+    },
+    {
+      "q": "9x − 5 ≥ 4x + 20 tengsizlikni yeching va javobni tengsizlik ko'rinishida yozing.",
+      "v": [
+        "x ≥ 25",
+        "x ≥ 3",
+        "x ≥ 5",
+        "x ≤ 5"
+      ],
+      "t": 2,
+      "izoh": "4x ni chapga, −5 ni o'ngga o'tkazamiz: 9x − 4x ≥ 20 + 5, ya'ni 5x ≥ 25. Ikkala tomonni 5 ga bo'lsak x ≥ 5. 5 ni qo'shish o'rniga ayirgan o'quvchi 5x ≥ 15 dan x ≥ 3 deb xato qiladi. Javob: x ≥ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-tomonda-nomalum",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#d2fa6856"
+    },
+    {
+      "q": "ax > 6 tengsizlik berilgan. a < 0 bo'lganda uning yechimi qanday ko'rinishda bo'ladi?",
+      "v": [
+        "x > 6/a",
+        "x > 6a",
+        "x < 6/a",
+        "x < 6a"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonni a ga bo'lamiz. a < 0 bo'lgani uchun manfiy songa bo'lish tengsizlik ishorasini teskarisiga aylantiradi: x < 6/a. Ishora almashtirilmasa x > 6/a degan xato javob chiqadi. Bo'lish o'rniga ko'paytirish esa 6a ko'rinishidagi xatoga olib keladi. Javob: x < 6/a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-koeffitsient-ishorasi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#83b775f6"
+    },
+    {
+      "q": "(a − 3)x > 12 tengsizlik x < 12/(a − 3) ko'rinishidagi yechimga ega bo'lishi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a > 3",
+        "a < 3",
+        "a ≠ 3",
+        "a > 12"
+      ],
+      "t": 1,
+      "izoh": "Tengsizlikni (a − 3) ga bo'lganda ishora faqat shu ko'paytuvchi manfiy bo'lgandagina almashadi. Demak a − 3 < 0, bundan a < 3. a > 3 bo'lsa ishora saqlanib, x > 12/(a − 3) chiqadi. a = 3 holida esa tengsizlik 0 > 12 ko'rinishiga keladi va yechimi bo'lmaydi. Javob: a < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-koeffitsient-ishorasi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#1ccd0e9c"
+    },
+    {
+      "q": "ax ≤ 0 tengsizlikning yechimi barcha haqiqiy sonlardan iborat bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a > 0",
+        "a < 0",
+        "a ≠ 0",
+        "a = 0"
+      ],
+      "t": 3,
+      "izoh": "a > 0 bo'lsa yechim x ≤ 0, a < 0 bo'lsa x ≥ 0 bo'ladi — ikkalasi ham sonlar o'qining faqat yarmini qamraydi. a = 0 bo'lganda tengsizlik 0 ≤ 0 ko'rinishiga keladi va bu har qanday x uchun to'g'ri. Javob: a = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-koeffitsient-ishorasi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#28ffb76e"
+    },
+    {
+      "q": "kx < 20 tengsizlikning yechimi x > −4 bo'lsa, k koeffitsient nechaga teng?",
+      "v": [
+        "−5",
+        "−80",
+        "5",
+        "−4"
+      ],
+      "t": 0,
+      "izoh": "Yechimda ishora teskariga aylangan, demak k manfiy son. Ikkala tomonni k ga bo'lsak x > 20/k bo'ladi, ya'ni 20/k = −4. Bundan k = 20 : (−4) = −5. Tekshiramiz: −5x < 20 dan x > −4 chiqadi. Bo'lish o'rniga ko'paytirgan o'quvchi −80 deb xato qiladi. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-koeffitsient-ishorasi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#1e004a24"
+    },
+    {
+      "q": "3x − 5 > 7 va 2x + 1 ≤ 15 tengsizliklardan iborat sistemaning yechimi qaysi oraliq bo'ladi?",
+      "v": [
+        "4 < x ≤ 7",
+        "x > 4",
+        "x ≤ 7",
+        "4 ≤ x < 7"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tengsizlikdan 3x > 12, ya'ni x > 4. Ikkinchisidan 2x ≤ 14, ya'ni x ≤ 7. Sistema yechimi ikki to'plamning kesishmasi bo'lgani uchun 4 < x ≤ 7. Faqat bitta tengsizlikni yechib to'xtagan o'quvchi x > 4 yoki x ≤ 7 deb javob beradi. Javob: 4 < x ≤ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-ikki-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#d4953c12"
+    },
+    {
+      "q": "5x + 2 ≥ 17 va 4x − 3 < 21 sistemasini yechib, natijani oraliq ko'rinishida yozing.",
+      "v": [
+        "(3; 6]",
+        "[3; 6]",
+        "(3; 6)",
+        "[3; 6)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tengsizlikdan 5x ≥ 15, ya'ni x ≥ 3 va bu chegara yechimga kiradi. Ikkinchisidan 4x < 24, ya'ni x < 6 va bu chegara kirmaydi. Kesishma [3; 6) oralig'ini beradi. Yopiq va ochiq qavslarni chalkashtirish bu yerdagi eng ko'p uchraydigan xato. Javob: [3; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-ikki-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#6eb8b8c1"
+    },
+    {
+      "q": "x + 4 > 1 va 2x − 9 < 5 tengsizliklar sistemasi qaysi sonlar to'plamida bir vaqtda bajariladi?",
+      "v": [
+        "x > −3",
+        "−3 < x < 7",
+        "x < 7",
+        "−7 < x < 3"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tengsizlikdan x > −3. Ikkinchisidan 2x < 14, ya'ni x < 7. Ikkala shart bir vaqtda bajarilishi kerak, shuning uchun yechim −3 < x < 7 oralig'i. Chegaralarning ishorasini almashtirib yuborgan o'quvchi −7 < x < 3 deb xato qiladi. Javob: −3 < x < 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-ikki-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#db83a70d"
+    },
+    {
+      "q": "7 − x ≥ 2 va 3x + 4 > 10 tengsizliklar sistemasining yechimini toping.",
+      "v": [
+        "2 ≤ x < 5",
+        "x > 2",
+        "2 < x ≤ 5",
+        "x ≤ 5"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tengsizlikdan −x ≥ −5 hosil bo'ladi va (−1) ga bo'lganda ishora almashadi: x ≤ 5. Ikkinchisidan 3x > 6, ya'ni x > 2. Kesishma 2 < x ≤ 5 bo'ladi. Qat'iy va qat'iy bo'lmagan chegaralarni almashtirib yuborish tipik xato. Javob: 2 < x ≤ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-ikki-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#ef04034a"
+    },
+    {
+      "q": "x > −1, 2x ≤ 12 va x + 3 > 4 uchta tengsizlikdan iborat sistemaning yechimini aniqlang.",
+      "v": [
+        "−1 < x ≤ 6",
+        "1 < x ≤ 6",
+        "1 < x < 6",
+        "x > 1"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi tengsizlikdan x ≤ 6, uchinchisidan x > 1. Kesishmada x > −1 sharti x > 1 ga singib ketadi, chunki 1 dan katta har bir son −1 dan ham katta. Demak yechim 1 < x ≤ 6. Eng kuchli quyi chegarani tanlamagan o'quvchi −1 < x ≤ 6 deb xato qiladi. Javob: 1 < x ≤ 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-uch-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#b160a43c"
+    },
+    {
+      "q": "3x ≥ −6, 5 − x > 0 va 4x < 16 sistemasining barcha shartlarini qanoatlantiruvchi x qiymatlari qaysi oraliqda yotadi?",
+      "v": [
+        "[−2; 5)",
+        "(−2; 4)",
+        "[−2; 4)",
+        "[−2; 4]"
+      ],
+      "t": 2,
+      "izoh": "Birinchi shartdan x ≥ −2, ikkinchisidan 5 > x ya'ni x < 5, uchinchisidan x < 4. Yuqori chegara sifatida ikkitasidan kichigi, ya'ni 4 olinadi va u yechimga kirmaydi. Yechim [−2; 4) oralig'i. Uchinchi shartni e'tibordan qochirgan o'quvchi [−2; 5) deb javob beradi. Javob: [−2; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-uch-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#25852a3c"
+    },
+    {
+      "q": "Uchta shart bir vaqtda bajarilishi kerak: x − 1 ≥ 0, x + 2 < 9 va 2x ≤ 10. Yechim oralig'ini toping.",
+      "v": [
+        "1 ≤ x ≤ 5",
+        "1 ≤ x < 7",
+        "0 ≤ x ≤ 5",
+        "1 < x ≤ 5"
+      ],
+      "t": 0,
+      "izoh": "Birinchi shartdan x ≥ 1, ikkinchisidan x < 7, uchinchisidan x ≤ 5. Yuqori chegaralardan kichigi 5 tanlanadi va u yechimga kiradi. Demak yechim 1 ≤ x ≤ 5. Uchinchi shartni tashlab ketgan o'quvchi 1 ≤ x < 7 deb xato qiladi. Javob: 1 ≤ x ≤ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-uch-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#3850e8be"
+    },
+    {
+      "q": "2x − 1 > 5, 3x > 21 va x < 12 sistemasini yeching. Qaysi tengsizlik ortiqcha ekaniga e'tibor bering.",
+      "v": [
+        "3 < x < 12",
+        "3 < x < 7",
+        "x > 7",
+        "7 < x < 12"
+      ],
+      "t": 3,
+      "izoh": "Birinchi shartdan 2x > 6, ya'ni x > 3. Ikkinchisidan x > 7. Uchinchisi x < 12. x > 7 sharti x > 3 dan kuchliroq, shuning uchun birinchi tengsizlik ortiqcha bo'lib qoladi. Yechim 7 < x < 12. Javob: 7 < x < 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema-uch-tengsizlik",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#fb9d3014"
+    },
+    {
+      "q": "x + 5 > 12 va 3x < 15 tengsizliklar sistemasining yechimi qanday bo'ladi?",
+      "v": [
+        "5 < x < 7",
+        "x > 7",
+        "x < 5",
+        "Yechim yo'q (∅)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tengsizlikdan x > 7, ikkinchisidan x < 5. Bir vaqtda 7 dan katta va 5 dan kichik son mavjud emas, chunki bu oraliqlar kesishmaydi. Demak sistema yechimga ega emas. Chegaralarni o'rin almashtirib 5 < x < 7 deb yozish tipik xato. Javob: Yechim yo'q (∅).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-yechimsizligi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#70080999"
+    },
+    {
+      "q": "Anvar 2x − 3 ≥ 9 va 4x + 1 < 17 sistemasini yechdi. U javob sifatida nima yozishi kerak?",
+      "v": [
+        "Sistema yechimga ega emas",
+        "x ≥ 6",
+        "x < 4",
+        "4 ≤ x < 6"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tengsizlikdan 2x ≥ 12, ya'ni x ≥ 6. Ikkinchisidan 4x < 16, ya'ni x < 4. 6 dan katta va ayni paytda 4 dan kichik son bo'lmaydi. Chegaralarni teskari tartibda yozib 4 ≤ x < 6 deyish xato, chunki bu oraliqda birinchi shart bajarilmaydi. Javob: Sistema yechimga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-yechimsizligi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#317b7fb9"
+    },
+    {
+      "q": "3x ≥ 12 va 5x ≤ 20 sistemasini qanoatlantiruvchi x sonlari qanday to'plamni tashkil qiladi?",
+      "v": [
+        "Yechim yo'q",
+        "x ≥ 4",
+        "Faqat x = 4",
+        "x ≤ 4"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tengsizlikdan x ≥ 4, ikkinchisidan x ≤ 4. Bu ikki shart faqat x = 4 nuqtada bir vaqtda bajariladi. Demak yechim bitta sondan iborat to'plam bo'ladi. Kesishmani bo'sh deb hisoblash bu yerda xato. Javob: Faqat x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema-yechimsizligi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#b2acfd16"
+    },
+    {
+      "q": "x > a va x < 5 sistemasi hech qanday yechimga ega bo'lmasligi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a > 5",
+        "a ≥ 5",
+        "a ≤ 5",
+        "a < 5"
+      ],
+      "t": 1,
+      "izoh": "Yechim bo'lishi uchun a < x < 5 oralig'i bo'sh bo'lmasligi, ya'ni a < 5 bo'lishi kerak. Demak yechim bo'lmasligi uchun a ≥ 5. a = 5 holini alohida tekshiramiz: x > 5 va x < 5 bir vaqtda bajarilmaydi, shuning uchun bu qiymat ham javobga kiradi. Javob: a ≥ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema-yechimsizligi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#2527a3ce"
+    },
+    {
+      "q": "−7 < 2x − 1 ≤ 9 qo'shaloq tengsizlikni yeching va x uchun oraliqni toping.",
+      "v": [
+        "−3 ≤ x < 5",
+        "−4 < x ≤ 4",
+        "−3 < x ≤ 5",
+        "−3 < x ≤ 10"
+      ],
+      "t": 2,
+      "izoh": "Uchala qismga 1 ni qo'shamiz: −6 < 2x ≤ 10. Endi uchala qismni musbat 2 ga bo'lamiz, ishoralar o'zgarmaydi: −3 < x ≤ 5. 1 ni qo'shish o'rniga ayirgan o'quvchi −4 < x ≤ 4 deb xato qiladi. Javob: −3 < x ≤ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshaloq-tengsizlik-yechish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#d762fbd8"
+    },
+    {
+      "q": "2 ≤ (3x + 5)/4 < 5 qo'shaloq tengsizlikni qanoatlantiruvchi x qiymatlari oralig'ini toping.",
+      "v": [
+        "3 ≤ x < 15",
+        "1 < x ≤ 5",
+        "−4 ≤ x < 0",
+        "1 ≤ x < 5"
+      ],
+      "t": 3,
+      "izoh": "Uchala qismni 4 ga ko'paytiramiz: 8 ≤ 3x + 5 < 20. So'ng uchala qismdan 5 ni ayiramiz: 3 ≤ 3x < 15. Nihoyat 3 ga bo'lamiz: 1 ≤ x < 5. Oxirgi bo'lishni unutgan o'quvchi 3 ≤ x < 15 deb javob beradi. Javob: 1 ≤ x < 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshaloq-tengsizlik-yechish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#9d7f625d"
+    },
+    {
+      "q": "−3 ≤ 4 − x < 6 qo'shaloq tengsizlikda x ni ajratib oling va yechimini ko'rsating.",
+      "v": [
+        "−7 ≤ x < 2",
+        "−2 < x ≤ 7",
+        "−2 ≤ x < 7",
+        "1 ≤ x < 10"
+      ],
+      "t": 1,
+      "izoh": "Uchala qismdan 4 ni ayiramiz: −7 ≤ −x < 2. Endi uchala qismni (−1) ga ko'paytiramiz va ikkala ishorani teskarisiga aylantiramiz: 7 ≥ x > −2, ya'ni −2 < x ≤ 7. Ishoralarni almashtirmagan o'quvchi −7 ≤ x < 2 deb xato qiladi. Javob: −2 < x ≤ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshaloq-tengsizlik-yechish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#6f8e3941"
+    },
+    {
+      "q": "x > −5 va x ≤ 3 shartlarini bitta qo'shaloq tengsizlik ko'rinishida qanday yozish mumkin?",
+      "v": [
+        "−5 < x ≤ 3",
+        "−5 ≤ x < 3",
+        "−5 < x < 3",
+        "x < −5 yoki x ≥ 3"
+      ],
+      "t": 0,
+      "izoh": "Qo'shaloq tengsizlikda kichik chegara chapga, katta chegara o'ngga yoziladi. x > −5 shartini −5 < x ko'rinishida yozamiz va uni x ≤ 3 bilan birlashtiramiz: −5 < x ≤ 3. Har bir chegaradagi qat'iylik o'zgarishsiz saqlanadi. Javob: −5 < x ≤ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshaloq-tengsizlik-yechish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#0d96eb3e"
+    },
+    {
+      "q": "2 < x < 5 bo'lsa, 3x + 1 ifodaning qiymati qaysi oraliqda yotadi?",
+      "v": [
+        "7 < 3x + 1 < 16",
+        "6 < 3x + 1 < 15",
+        "7 < 3x + 1 < 15",
+        "3 < 3x + 1 < 6"
+      ],
+      "t": 0,
+      "izoh": "Avval uchala qismni musbat 3 ga ko'paytiramiz: 6 < 3x < 15. So'ng uchala qismga 1 ni qo'shamiz: 7 < 3x + 1 < 16. 1 ni qo'shishni butunlay unutgan o'quvchi 6 < 3x + 1 < 15 deb, faqat chap chegaraga qo'shgan esa 7 < 3x + 1 < 15 deb xato qiladi. Javob: 7 < 3x + 1 < 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodani-oraliqda-baholash",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#33352dea"
+    },
+    {
+      "q": "−1 ≤ x ≤ 4 bo'lganda 5 − 2x ifoda qanday chegaralar orasida o'zgaradi?",
+      "v": [
+        "3 ≤ 5 − 2x ≤ 7",
+        "−8 ≤ 5 − 2x ≤ 2",
+        "−3 ≤ 5 − 2x ≤ 7",
+        "−3 ≤ 5 − 2x ≤ 3"
+      ],
+      "t": 2,
+      "izoh": "Uchala qismni (−2) ga ko'paytiramiz va ishoralarni teskarisiga aylantiramiz: −8 ≤ −2x ≤ 2. Endi uchala qismga 5 ni qo'shamiz: −3 ≤ 5 − 2x ≤ 7. Tekshiruv: x = −1 da ifoda 7 ga, x = 4 da esa −3 ga teng. 5 ni qo'shishni unutgan o'quvchi −8 ≤ 5 − 2x ≤ 2 deb xato qiladi. Javob: −3 ≤ 5 − 2x ≤ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifodani-oraliqda-baholash",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#6545da4c"
+    },
+    {
+      "q": "1 < a < 3 va 2 < b < 6 bo'lsa, a + b yig'indisi qaysi oraliqda bo'ladi?",
+      "v": [
+        "5 < a + b < 7",
+        "3 < a + b < 9",
+        "3 < a + b < 8",
+        "4 < a + b < 9"
+      ],
+      "t": 1,
+      "izoh": "Bir xil yo'nalishdagi tengsizliklarni hadma-had qo'shish mumkin: chap chegaralar 1 + 2 = 3, o'ng chegaralar 3 + 6 = 9. Demak 3 < a + b < 9. Chegaralarni qarama-qarshi juftlab 1 + 6 va 3 + 2 deb olgan o'quvchi 5 < a + b < 7 deb, o'ng chegarada 3 + 6 o'rniga 3 + 5 deb hisoblagan 3 < a + b < 8 deb, chap chegarada 1 + 2 o'rniga 2 + 2 deb qo'shgan esa 4 < a + b < 9 deb xato qiladi. Javob: 3 < a + b < 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifodani-oraliqda-baholash",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#865fbab9"
+    },
+    {
+      "q": "0 < x < 4 shart berilgan. 12 − 3x ifodaning qiymati qanday oraliqda o'zgaradi?",
+      "v": [
+        "9 < 12 − 3x < 12",
+        "−12 < 12 − 3x < 0",
+        "0 < 12 − 3x < 9",
+        "0 < 12 − 3x < 12"
+      ],
+      "t": 3,
+      "izoh": "Uchala qismni (−3) ga ko'paytiramiz va ishoralarni almashtiramiz: −12 < −3x < 0. Endi hamma qismga 12 ni qo'shamiz: 0 < 12 − 3x < 12. Tekshiruv: x nolga yaqinlashganda ifoda 12 ga, x to'rtga yaqinlashganda esa nolga intiladi. Ko'paytirmasdan faqat 3 ni ayirgan o'quvchi 9 < 12 − 3x < 12 deb, oxirida 12 ni qo'shishni unutgan esa −12 < 12 − 3x < 0 deb xato qiladi. Javob: 0 < 12 − 3x < 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodani-oraliqda-baholash",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#4c8d190d"
+    },
+    {
+      "q": "2x + 3 > −5 va x ≤ 6 sistemasining nechta butun yechimi bor?",
+      "v": [
+        "11",
+        "9",
+        "12",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tengsizlikdan 2x > −8, ya'ni x > −4. Ikkinchisi x ≤ 6. Demak −4 < x ≤ 6. Bu oraliqdagi butun sonlar: −3, −2, −1, 0, 1, 2, 3, 4, 5 va 6 — jami 10 ta. Chap chegara qat'iy bo'lgani uchun −4 kirmaydi; uni ham sanagan o'quvchi 11 deb xato qiladi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#d130ef07"
+    },
+    {
+      "q": "5 ≤ 3x − 1 < 20 qo'shaloq tengsizligini qanoatlantiruvchi butun x sonlari nechta?",
+      "v": [
+        "6 ta",
+        "5 ta",
+        "4 ta",
+        "7 ta"
+      ],
+      "t": 1,
+      "izoh": "Uchala qismga 1 ni qo'shamiz: 6 ≤ 3x < 21. So'ng uchala qismni 3 ga bo'lamiz: 2 ≤ x < 7. Bu oraliqdagi butun sonlar 2, 3, 4, 5 va 6, ya'ni 5 ta. O'ng chegara qat'iy bo'lgani uchun 7 kirmaydi; uni sanagan o'quvchi 6 ta deb xato qiladi. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#24151bb0"
+    },
+    {
+      "q": "(4x + 6)/2 ≤ 9 va x > −3 shartlarini bir vaqtda qanoatlantiruvchi butun sonlar sonini toping.",
+      "v": [
+        "7 ta",
+        "5 ta",
+        "6 ta",
+        "8 ta"
+      ],
+      "t": 2,
+      "izoh": "Kasrni soddalashtiramiz: (4x + 6)/2 = 2x + 3, demak 2x + 3 ≤ 9, bundan 2x ≤ 6 va x ≤ 3. Ikkinchi shart x > −3. Yechim oralig'i −3 < x ≤ 3 bo'lib, undagi butun sonlar −2, −1, 0, 1, 2 va 3 — jami 6 ta. −3 ni ham qo'shgan o'quvchi 7 ta deb xato qiladi. Javob: 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#5f56dcd3"
+    },
+    {
+      "q": "3(x − 2) ≤ x + 4 va 2x + 7 > 1 sistemasi nechta butun yechimga ega?",
+      "v": [
+        "8 ta",
+        "9 ta",
+        "7 ta",
+        "10 ta"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tengsizlikda qavsni ochamiz: 3x − 6 ≤ x + 4, bundan 2x ≤ 10 va x ≤ 5. Ikkinchisidan 2x > −6, ya'ni x > −3. Yechim oralig'i −3 < x ≤ 5 bo'lib, undagi butun sonlar −2 dan 5 gacha, jami 8 ta. Ikkala chegarani ham qo'shib yuborgan o'quvchi 9 yoki 10 ta deb xato qiladi. Javob: 8 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#729fa91f"
+    },
+    {
+      "q": "4x − 9 < 23 tengsizlikning eng katta butun yechimini toping.",
+      "v": [
+        "8",
+        "9",
+        "7",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlikni yechamiz: 4x < 32, bundan x < 8. Yechimlar 8 dan qat'iy kichik, shuning uchun 8 ning o'zi javob bo'la olmaydi. Eng katta butun yechim 7 bo'ladi. Qat'iy ishorani e'tibordan qochirgan o'quvchi 8 deb xato qiladi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-eng-kichik-butun-yechim",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#0c640d7e"
+    },
+    {
+      "q": "6x + 5 ≥ −31 tengsizlikning eng kichik butun yechimi qanday songa teng?",
+      "v": [
+        "−6",
+        "−5",
+        "−7",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "5 ni o'ng tomonga o'tkazamiz: 6x ≥ −36. Ikkala tomonni musbat 6 ga bo'lamiz: x ≥ −6. Ishora qat'iy emas, shuning uchun −6 ning o'zi ham yechim va u eng kichigi. Ishorani qat'iy deb o'ylagan o'quvchi −5 deb xato qiladi. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-eng-kichik-butun-yechim",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#4d3874ec"
+    },
+    {
+      "q": "−15 ≤ 5 − 4x tengsizlikning eng katta butun yechimini aniqlang.",
+      "v": [
+        "4",
+        "−5",
+        "6",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "5 ni chap tomonga o'tkazamiz: −20 ≤ −4x. Ikkala tomonni (−4) ga bo'lamiz va ishorani almashtiramiz: 5 ≥ x, ya'ni x ≤ 5. Ishora qat'iy bo'lmagani uchun eng katta butun yechim 5. Ishorani almashtirmagan o'quvchi manfiy chegaraga kelib qoladi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-eng-kichik-butun-yechim",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#28c5a357"
+    },
+    {
+      "q": "Karim x ni shunday tanlamoqchiki, 3x + 1 > 10 va 2x < 19 shartlarning ikkalasi ham bajarilsin. Eng katta butun x nechaga teng?",
+      "v": [
+        "10",
+        "9",
+        "8",
+        "9,5"
+      ],
+      "t": 1,
+      "izoh": "Birinchi shartdan 3x > 9, ya'ni x > 3. Ikkinchisidan x < 9,5. Demak 3 < x < 9,5 va bu oraliqdagi eng katta butun son 9. Butunlik talabini unutgan o'quvchi 9,5 deb, chegarani qat'iy emas deb o'ylagan esa 10 deb xato qiladi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-eng-kichik-butun-yechim",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#179092b1"
+    },
+    {
+      "q": "5x − 3 < 27 tengsizlikning barcha natural yechimlari yig'indisini toping.",
+      "v": [
+        "21",
+        "15",
+        "10",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Tengsizlikdan 5x < 30, ya'ni x < 6. Natural yechimlar 1, 2, 3, 4 va 5 bo'ladi. Ularning yig'indisi 1 + 2 + 3 + 4 + 5 = 15. Chegara qat'iy bo'lgani uchun 6 kirmaydi; uni ham qo'shgan o'quvchi 21 deb xato qiladi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "natural-yechimlar-yigindisi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#e4c849d7"
+    },
+    {
+      "q": "2x + 1 ≤ 15 tengsizlikni qanoatlantiruvchi natural sonlar nechta va ularning yig'indisi qancha?",
+      "v": [
+        "7 ta, yig'indisi 21",
+        "6 ta, yig'indisi 21",
+        "8 ta, yig'indisi 36",
+        "7 ta, yig'indisi 28"
+      ],
+      "t": 3,
+      "izoh": "Tengsizlikdan 2x ≤ 14, ya'ni x ≤ 7. Natural yechimlar 1 dan 7 gacha, ya'ni 7 ta son. Ularning yig'indisi 7·8 : 2 = 28. Chegara yechimga kirishini sezmagan o'quvchi 6 ta va 21 deb xato qiladi. Javob: 7 ta, yig'indisi 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "natural-yechimlar-yigindisi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#668b2c20"
+    },
+    {
+      "q": "x + 5 > 8 va 2x ≤ 18 sistemasining barcha natural yechimlari yig'indisi nechaga teng?",
+      "v": [
+        "39",
+        "42",
+        "45",
+        "30"
+      ],
+      "t": 0,
+      "izoh": "Birinchi shartdan x > 3, ikkinchisidan x ≤ 9. Natural yechimlar 4, 5, 6, 7, 8 va 9. Ularning yig'indisi 4 + 5 + 6 + 7 + 8 + 9 = 39. 3 ni ham qo'shgan o'quvchi 42, birdan boshlab hisoblagan esa 45 deb xato qiladi. Javob: 39.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "natural-yechimlar-yigindisi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#fc6e4fe2"
+    },
+    {
+      "q": "7 − 2x > 0 tengsizlikning natural yechimlari yig'indisi nechaga teng?",
+      "v": [
+        "10",
+        "3",
+        "6",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlikdan −2x > −7 va ishorani almashtirib x < 3,5 hosil qilamiz. Natural yechimlar 1, 2 va 3, ularning yig'indisi 6. Chegarani yuqoriga yaxlitlab 4 ni ham qo'shgan o'quvchi 10 deb, yechimlar sonini yig'indi deb olgan esa 3 deb xato qiladi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "natural-yechimlar-yigindisi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#499c7b89"
+    },
+    {
+      "q": "Dilnoza bozorga 150 000 so'm bilan bordi. U 40 000 so'mga go'sht oldi, qolgan pulga esa har biri 12 000 so'mdan turadigan idishlardan olmoqchi. Ko'pi bilan nechta idish sotib ola oladi?",
+      "v": [
+        "10 ta",
+        "12 ta",
+        "8 ta",
+        "9 ta"
+      ],
+      "t": 3,
+      "izoh": "Go'shtdan keyin 150 000 − 40 000 = 110 000 so'm qoladi. Idishlar soni n uchun 12 000n ≤ 110 000 tengsizlik tuziladi, bundan n ≤ 9,16. Idish soni butun bo'lgani uchun pastga yaxlitlanadi: 9 ta. Go'sht narxini hisobga olmagan o'quvchi 12 ta deb xato qiladi. Javob: 9 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-byudjet-xarid",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#8c00cfdf"
+    },
+    {
+      "q": "Bektemirning 85 000 so'mi bor. Har bir daftar 7 500 so'm turadi, shuningdek u 20 000 so'mlik ruchka to'plamini ham olishi shart. U nechta daftar sotib ola oladi?",
+      "v": [
+        "9 ta",
+        "11 ta",
+        "8 ta",
+        "7 ta"
+      ],
+      "t": 2,
+      "izoh": "Ruchka to'plamidan keyin 85 000 − 20 000 = 65 000 so'm qoladi. Daftarlar soni uchun 7 500n ≤ 65 000, bundan n ≤ 8,66. Butun songa yaxlitlab n = 8 ni olamiz. Ruchkani hisobga olmagan o'quvchi 85 000 ni 7 500 ga bo'lib 11 ta deb xato qiladi. Javob: 8 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-byudjet-xarid",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#771fcb03"
+    },
+    {
+      "q": "Bir guruh o'quvchi ekskursiyaga bormoqchi. Avtobus ijarasi 480 000 so'm bo'lib, har bir o'quvchidan 35 000 so'mdan yig'ilmoqda. Ijara puli to'lanishi uchun kamida nechta o'quvchi qatnashishi kerak?",
+      "v": [
+        "14 ta",
+        "13 ta",
+        "15 ta",
+        "12 ta"
+      ],
+      "t": 0,
+      "izoh": "Shart 35 000n ≥ 480 000 ko'rinishida yoziladi. Ikkala tomonni 35 000 ga bo'lamiz: n ≥ 13,71. O'quvchilar soni butun bo'lgani uchun uni yuqoriga yaxlitlaymiz va n = 14 ni olamiz. Pastga yaxlitlagan o'quvchi 13 deb xato qiladi, chunki 13 ta o'quvchi ijarani qoplay olmaydi. Javob: 14 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-byudjet-xarid",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#4cb517f9"
+    },
+    {
+      "q": "Nodira 6 kg olma va bir necha kilogramm uzum olmoqchi. Olmaning kilogrammi 14 000 so'm, uzumniki 22 000 so'm. Uning 250 000 so'mi bo'lsa, ko'pi bilan necha kilogramm uzum ola oladi?",
+      "v": [
+        "8 kg",
+        "7 kg",
+        "11 kg",
+        "6 kg"
+      ],
+      "t": 1,
+      "izoh": "Olmaga 6·14 000 = 84 000 so'm ketadi, qolgan pul 250 000 − 84 000 = 166 000 so'm. Uzum massasi m uchun 22 000m ≤ 166 000, bundan m ≤ 7,54. Butun kilogramm sifatida 7 kg olinadi. Olma xarajatini unutgan o'quvchi 250 000 ni 22 000 ga bo'lib 11 kg deb xato qiladi. Javob: 7 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-byudjet-xarid",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#9df31aa1"
+    },
+    {
+      "q": "Sanjar 3 ta bir xil futbolka va 65 000 so'mlik shim olmoqchi. Uning 200 000 so'mi bor. Bitta futbolkaning narxi ko'pi bilan qancha bo'lishi mumkin?",
+      "v": [
+        "66 667 so'm",
+        "88 333 so'm",
+        "135 000 so'm",
+        "45 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Futbolka narxini p deb olamiz va shartni yozamiz: 3p + 65 000 ≤ 200 000. 65 000 ni o'ng tomonga o'tkazamiz: 3p ≤ 135 000. Ikkala tomonni 3 ga bo'lamiz: p ≤ 45 000. Shim narxini hisobga olmagan o'quvchi 200 000 : 3 dan 66 667 deb, 3 ga bo'lishni unutgan esa 135 000 deb xato qiladi. Javob: 45 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-byudjet-xarid",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#75aa23da"
+    },
+    {
+      "q": "Jasur velosipedda 18 km/soat tezlik bilan bir tekis harakatlanmoqda. U 45 km dan uzoq masofani bosib o'tishi uchun t vaqtga qanday shart qo'yiladi?",
+      "v": [
+        "t > 2,5",
+        "t < 2,5",
+        "t > 810",
+        "t > 0,4"
+      ],
+      "t": 0,
+      "izoh": "Bosib o'tilgan masofa 18t ga teng va u 45 dan katta bo'lishi kerak: 18t > 45. Ikkala tomonni musbat 18 ga bo'lamiz, ishora o'zgarmaydi: t > 2,5 soat. Bo'lish o'rniga ko'paytirgan o'quvchi 810 ni, bo'linuvchi bilan bo'luvchini almashtirgan esa 0,4 ni oladi. Javob: t > 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masofa-tezlik-vaqt",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#63ce0410"
+    },
+    {
+      "q": "Avtomobil Toshkentdan Samarqandgacha bo'lgan 320 km yo'lni 4 soatdan kam vaqtda bosib o'tishi kerak. Uning o'rtacha tezligi qanday bo'lishi lozim?",
+      "v": [
+        "v ≥ 80 km/soat",
+        "v < 80 km/soat",
+        "v > 80 km/soat",
+        "v > 1280 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Yo'lda sarflangan vaqt 320/v ga teng va u 4 dan kichik bo'lishi kerak: 320/v < 4. Ikkala tomonni musbat v ga ko'paytiramiz: 320 < 4v, bundan v > 80 km/soat. Tezlik aynan 80 bo'lganda yo'l roppa-rosa 4 soat davom etadi va shart bajarilmaydi, shuning uchun chegara kirmaydi. Javob: v > 80 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masofa-tezlik-vaqt",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#a46e7cc4"
+    },
+    {
+      "q": "Aziz 12 km masofani 50 daqiqadan kam vaqtda yugurib o'tdi. Uning o'rtacha tezligi qanday shartni qanoatlantiradi?",
+      "v": [
+        "v < 14,4 km/soat",
+        "v > 14,4 km/soat",
+        "v > 0,24 km/soat",
+        "v > 600 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Avval vaqtni soatga aylantiramiz: 50 daqiqa = 5/6 soat. Tezlik uchun shart v > 12 : (5/6) ko'rinishida bo'ladi, ya'ni v > 12·6/5 = 14,4 km/soat. Daqiqani soatga aylantirmagan o'quvchi 12 : 50 dan 0,24 deb, ko'paytirgan esa 600 deb xato qiladi. Javob: v > 14,4 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-masofa-tezlik-vaqt",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#040aa094"
+    },
+    {
+      "q": "Yuk mashinasi 270 km yo'lni bosib o'tishi va yo'lga 3 soatdan ko'p vaqt sarflamasligi kerak. Uning tezligi qanday bo'lishi shart?",
+      "v": [
+        "v > 90 km/soat",
+        "v ≥ 90 km/soat",
+        "v ≤ 90 km/soat",
+        "v ≥ 810 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Shart 270/v ≤ 3 ko'rinishida yoziladi. Ikkala tomonni musbat v ga ko'paytiramiz: 270 ≤ 3v, bundan v ≥ 90 km/soat. Aynan 90 km/soat tezlikda yo'l 3 soat davom etadi va bu shartni buzmaydi, shuning uchun chegara yechimga kiradi. Javob: v ≥ 90 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masofa-tezlik-vaqt",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#c7202a88"
+    },
+    {
+      "q": "Zavodda kuniga 150 ta detal tayyorlanadi, omborda esa allaqachon 300 ta detal bor. Buyurtmadagi 2 400 ta detal to'planishi uchun zavod kamida necha kun ishlashi kerak?",
+      "v": [
+        "16 kun",
+        "18 kun",
+        "14 kun",
+        "13 kun"
+      ],
+      "t": 2,
+      "izoh": "Kunlar sonini d deb olamiz: 300 + 150d ≥ 2 400. 300 ni o'ng tomonga o'tkazamiz: 150d ≥ 2 100, bundan d ≥ 14. Demak kamida 14 kun ishlash kerak. Ombordagi detallarni hisobga olmagan o'quvchi 16 kun deb, ularni ayirish o'rniga qo'shgan esa 18 kun deb xato qiladi. Javob: 14 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi-reja",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#cc796877"
+    },
+    {
+      "q": "Shirin ustaxonada yasagan har bir stul uchun 45 000 so'm oladi. Oyiga kamida 1 350 000 so'm ishlashi uchun u nechta stul yasashi kerak?",
+      "v": [
+        "30 ta",
+        "29 ta",
+        "31 ta",
+        "300 ta"
+      ],
+      "t": 0,
+      "izoh": "Stullar sonini s deb olamiz: 45 000s ≥ 1 350 000. Ikkala tomonni 45 000 ga bo'lamiz: s ≥ 30. Demak kamida 30 ta stul kerak bo'ladi. 29 ta stulda daromad 1 305 000 so'm bo'lib, talab qilingan summaga yetmaydi. Javob: 30 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ish-unumi-reja",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#ebc66487"
+    },
+    {
+      "q": "Yo'l brigadasi 36 m asfalt yotqizib bo'ldi va endi kuniga 12 m dan qo'shmoqda. Jami uzunlik 180 m dan oshishi uchun yana kamida necha kun ishlashi kerak?",
+      "v": [
+        "15 kun",
+        "18 kun",
+        "12 kun",
+        "13 kun"
+      ],
+      "t": 3,
+      "izoh": "Shart 36 + 12d > 180 ko'rinishida yoziladi. 36 ni o'ng tomonga o'tkazamiz: 12d > 144, bundan d > 12. Kunlar soni butun bo'lgani uchun eng kichik mos qiymat 13. Tayyor 36 m ni hisobga olmagan o'quvchi 15 kun deb, uni qo'shib yuborgan esa 18 kun deb xato qiladi. Javob: 13 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ish-unumi-reja",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#d59feb7d"
+    },
+    {
+      "q": "Do'kon sotuvchisi oyiga 1 200 000 so'm maosh va har bir sotilgan telefon uchun 80 000 so'm mukofot oladi. Oylik daromadi 2 800 000 so'mdan oshishi uchun kamida nechta telefon sotishi kerak?",
+      "v": [
+        "21 ta",
+        "20 ta",
+        "35 ta",
+        "50 ta"
+      ],
+      "t": 0,
+      "izoh": "Daromad 1 200 000 + 80 000n ga teng va u 2 800 000 dan katta bo'lishi kerak. Maoshni o'ng tomonga o'tkazamiz: 80 000n > 1 600 000, bundan n > 20. Butun son sifatida eng kichigi 21 ta. Maoshni hisobga olmagan o'quvchi 35 ta deb, uni qo'shib yuborgan esa 50 ta deb xato qiladi. Javob: 21 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi-reja",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#25aa0dc3"
+    },
+    {
+      "q": "Liftning ko'tarish quvvati 400 kg. Unga og'irligi 72 kg bo'lgan usta chiqadi va har biri 25 kg dan keladigan qoplarni yuklamoqchi. Ko'pi bilan nechta qop yuklash mumkin?",
+      "v": [
+        "14 ta",
+        "16 ta",
+        "12 ta",
+        "13 ta"
+      ],
+      "t": 3,
+      "izoh": "Usta chiqqach 400 − 72 = 328 kg zaxira qoladi. Qoplar soni n uchun 25n ≤ 328 tengsizlik tuziladi, bundan n ≤ 13,12. Butun son sifatida 13 ta qop yuklanadi. Ustaning og'irligini hisobga olmagan o'quvchi 400 : 25 dan 16 ta deb xato qiladi. Javob: 13 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-yuk-sigim-chegara",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#2639edce"
+    },
+    {
+      "q": "Yuk mashinasining ruxsat etilgan yuki 3 500 kg. Kuzovga avval 620 kg li idish, so'ng har biri 45 kg dan keladigan qoplar ortiladi. Nechta qop ortish mumkin?",
+      "v": [
+        "65 ta",
+        "64 ta",
+        "77 ta",
+        "63 ta"
+      ],
+      "t": 1,
+      "izoh": "Idish ortilgach 3 500 − 620 = 2 880 kg zaxira qoladi. Qoplar soni uchun 45n ≤ 2 880, bundan n ≤ 64. Bo'linma butun chiqqani uchun aynan 64 ta qop sig'adi. Idish og'irligini unutgan o'quvchi 3 500 ni 45 ga bo'lib 77 ta deb xato qiladi. Javob: 64 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-yuk-sigim-chegara",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#6dff7702"
+    },
+    {
+      "q": "Qayiq ko'pi bilan 320 kg yukni ko'tara oladi. Qayiqchining og'irligi 68 kg, har bir yo'lovchiniki esa o'rtacha 63 kg. Qayiqqa qo'shimcha nechta yo'lovchi chiqishi mumkin?",
+      "v": [
+        "5 ta",
+        "6 ta",
+        "4 ta",
+        "3 ta"
+      ],
+      "t": 2,
+      "izoh": "Qayiqchidan keyin 320 − 68 = 252 kg zaxira qoladi. Yo'lovchilar soni uchun 63n ≤ 252, bundan n ≤ 4. Demak qayiqqa 4 ta yo'lovchi chiqishi mumkin. Qayiqchini hisobga olmagan o'quvchi 320 : 63 dan 5 ta deb, uni sig'imga qo'shgan esa 6 ta deb xato qiladi. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-yuk-sigim-chegara",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#4651e9ed"
+    },
+    {
+      "q": "Omborda har bir quti 26 kg gacha mahsulot ko'taradi. 500 kg mahsulotni to'liq joylashtirish uchun kamida nechta quti kerak bo'ladi?",
+      "v": [
+        "19 ta",
+        "26 ta",
+        "20 ta",
+        "21 ta"
+      ],
+      "t": 2,
+      "izoh": "Qutilar soni n uchun 26n ≥ 500 tengsizlik tuziladi, bundan n ≥ 19,23. Quti soni butun bo'lgani uchun natija yuqoriga yaxlitlanadi: 20 ta. 19 ta qutiga faqat 494 kg sig'adi, ya'ni mahsulotning bir qismi joysiz qoladi. Javob: 20 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-yuk-sigim-chegara",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#d9f84bb2"
+    },
+    {
+      "q": "Zuhra to'rtta imtihonda 78, 85, 91 va 82 ball to'pladi. Beshinchi imtihondan keyin o'rtacha ball 85 dan kam bo'lmasligi uchun u kamida necha ball olishi kerak?",
+      "v": [
+        "85 ball",
+        "89 ball",
+        "88 ball",
+        "90 ball"
+      ],
+      "t": 1,
+      "izoh": "To'rtta imtihon yig'indisi 78 + 85 + 91 + 82 = 336. Shart (336 + x) : 5 ≥ 85 ko'rinishida yoziladi, ya'ni 336 + x ≥ 425. Bundan x ≥ 89 ball. O'rtachaning o'zini javob deb olgan o'quvchi 85 ball deb xato qiladi. Javob: 89 ball.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ortacha-qiymat",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#7ad3fb07"
+    },
+    {
+      "q": "Otabek beshta nazorat ishida o'rtacha 78 ball to'pladi. Oltinchi nazoratdan so'ng o'rtacha ball 80 dan kam bo'lmasligi uchun u kamida necha ball olishi kerak?",
+      "v": [
+        "80 ball",
+        "82 ball",
+        "88 ball",
+        "90 ball"
+      ],
+      "t": 3,
+      "izoh": "Beshta ishning yig'indisi 5·78 = 390 ball. Oltita ish uchun kerakli yig'indi esa 6·80 = 480 ball. Demak oltinchi ishda kamida 480 − 390 = 90 ball olish kerak. Yetishmovchilikni beshta ishga taqsimlab 78 + 10 = 88 deb hisoblagan o'quvchi xato qiladi, chunki o'rtacha oltita ish bo'yicha olinadi. Javob: 90 ball.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ortacha-qiymat",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#05fd6efe"
+    },
+    {
+      "q": "Kamola bir haftadagi o'rtacha kunlik o'qishi 25 betdan kam bo'lmasligini xohlaydi. Dastlabki 5 kunda u 110 bet o'qidi. Qolgan 2 kunda kamida necha bet o'qishi kerak?",
+      "v": [
+        "65 bet",
+        "50 bet",
+        "15 bet",
+        "175 bet"
+      ],
+      "t": 0,
+      "izoh": "Bir haftada kerakli umumiy hajm 7·25 = 175 bet. Dastlabki besh kunda 110 bet o'qilgan, demak qolgan ikki kunda 175 − 110 = 65 bet kerak. Qolgan kunlarga ham 25 betdan yetadi deb o'ylagan o'quvchi 50 bet deb, besh kunlik me'yorni olgan esa 15 bet deb xato qiladi. Javob: 65 bet.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ortacha-qiymat",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#db0415dc"
+    },
+    {
+      "q": "Guruhdagi 9 ta o'quvchining o'rtacha yoshi 16 dan oshmasligi kerak. Sakkiztasining yoshlari yig'indisi 126 bo'lsa, to'qqizinchisining yoshi ko'pi bilan qancha bo'ladi?",
+      "v": [
+        "18 yosh",
+        "16 yosh",
+        "15,75 yosh",
+        "17 yosh"
+      ],
+      "t": 0,
+      "izoh": "To'qqiz o'quvchining yoshlari yig'indisi 9·16 = 144 dan oshmasligi kerak. Sakkiztasiniki 126 bo'lgani uchun to'qqizinchisining yoshi 144 − 126 = 18 dan katta bo'la olmaydi. Sakkiztasining o'rtachasini javob deb olgan o'quvchi 126 : 8 = 15,75 deb xato qiladi. Javob: 18 yosh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ortacha-qiymat",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#7dbf0f04"
+    },
+    {
+      "q": "Birinchi taksi xizmati 8 000 so'm chaqiruv haqi va har km uchun 2 500 so'm oladi. Ikkinchisida chaqiruv 14 000 so'm, har km esa 2 000 so'm. Ikkinchisi arzonroq bo'lishi uchun masofa qanday bo'lishi kerak?",
+      "v": [
+        "12 km dan kam",
+        "12 km dan ortiq",
+        "3 km dan ortiq",
+        "2,4 km dan ortiq"
+      ],
+      "t": 1,
+      "izoh": "Masofani x deb olib tengsizlik tuzamiz: 14 000 + 2 000x < 8 000 + 2 500x. O'xshash hadlarni yig'amiz: 6 000 < 500x, bundan x > 12 km. Chaqiruv haqlari farqini kilometr narxlaridan biriga bo'lgan o'quvchi 3 km yoki 2,4 km deb xato qiladi. Javob: 12 km dan ortiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tarif-solishtirish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#732865b8"
+    },
+    {
+      "q": "Sport zaliga bir marta kirish 25 000 so'm, oylik abonement esa 300 000 so'm turadi. Abonement olish foydali bo'lishi uchun oyiga kamida necha marta borish kerak?",
+      "v": [
+        "12 marta",
+        "14 marta",
+        "13 marta",
+        "11 marta"
+      ],
+      "t": 2,
+      "izoh": "Bir martalik to'lovlar yig'indisi abonement narxidan katta bo'lishi kerak: 25 000n > 300 000. Bundan n > 12, ya'ni eng kichik butun qiymat 13 marta. Aynan 12 marta borilganda ikkala variant ham 300 000 so'm bo'lib, hech qanday foyda bo'lmaydi. Javob: 13 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tarif-solishtirish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#561167ed"
+    },
+    {
+      "q": "A tarifida oylik abonent to'lovi 30 000 so'm va har bir daqiqa 250 so'm. B tarifida to'lov 54 000 so'm, daqiqasi esa 150 so'm. A tarifi arzonroq bo'lishi uchun oylik suhbat qancha bo'lishi kerak?",
+      "v": [
+        "240 daqiqadan ko'p",
+        "96 daqiqadan kam",
+        "160 daqiqadan kam",
+        "240 daqiqadan kam"
+      ],
+      "t": 3,
+      "izoh": "Tengsizlik 30 000 + 250t < 54 000 + 150t ko'rinishida tuziladi. 150t ni chapga, 30 000 ni o'ngga o'tkazamiz: 100t < 24 000, bundan t < 240 daqiqa. To'lovlar farqini 250 yoki 150 ga bo'lgan o'quvchi 96 yoki 160 daqiqa deb xato qiladi. Javob: 240 daqiqadan kam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tarif-solishtirish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#0bd0f61f"
+    },
+    {
+      "q": "Suv yetkazish xizmatida A kompaniya har bir ballonni 12 000 so'mdan sotadi va yetkazish bepul. B kompaniyada ballon 9 000 so'm, lekin yetkazish uchun 21 000 so'm to'lanadi. B qachon arzonroq bo'ladi?",
+      "v": [
+        "7 tadan kam ballonda",
+        "7 tadan ortiq ballonda",
+        "2 tadan ortiq ballonda",
+        "1 tadan ortiq ballonda"
+      ],
+      "t": 1,
+      "izoh": "Ballonlar sonini n deb olamiz va tengsizlik tuzamiz: 9 000n + 21 000 < 12 000n. 9 000n ni o'ng tomonga o'tkazamiz: 21 000 < 3 000n, bundan n > 7. Demak sakkiz va undan ortiq ballon olinganda B kompaniya arzonroq chiqadi. Yetkazish haqini bitta ballon narxiga bo'lgan o'quvchi 2 yoki 1 deb xato qiladi. Javob: 7 tadan ortiq ballonda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tarif-solishtirish",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#f0d351fa"
+    },
+    {
+      "q": "Rasmda sonlar o'qining bo'yalgan qismi ko'rsatilgan. Bu tasvir qaysi tengsizlikning yechimlar to'plamiga mos keladi?",
+      "v": [
+        "x < −2",
+        "x ≥ −2",
+        "x ≤ −2",
+        "x > −2"
+      ],
+      "t": 2,
+      "izoh": "Bo'yalgan qism −2 nuqtadan chapga cho'zilgan, demak yechimlar −2 dan kichik sonlar. −2 dagi doiracha to'ldirilgan, ya'ni bu nuqta ham to'plamga kiradi va ishora qat'iy emas. Shuning uchun yechim x ≤ −2 ko'rinishida yoziladi. Doirachani bo'sh deb o'qigan o'quvchi x < −2 deb xato qiladi. Javob: x ≤ −2.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='110' viewBox='0 0 300 110'%3E%3Crect width='300' height='110' fill='%23ffffff'/%3E%3Cline x1='20' y1='60' x2='280' y2='60' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='272,54 280,60 272,66' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='60' y1='54' x2='60' y2='66' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='110' y1='54' x2='110' y2='66' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='160' y1='54' x2='160' y2='66' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='210' y1='54' x2='210' y2='66' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='110' y1='60' x2='26' y2='60' stroke='%235b4bc4' stroke-width='4'/%3E%3Ccircle cx='110' cy='60' r='5' fill='%235b4bc4' stroke='%235b4bc4' stroke-width='2'/%3E%3Ctext x='60' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3E−4%3C/text%3E%3Ctext x='110' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3E−2%3C/text%3E%3Ctext x='160' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3E0%3C/text%3E%3Ctext x='210' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3E2%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonlar-oqida-tasvir",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#7f5e40ec"
+    },
+    {
+      "q": "Rasmdagi bo'yalgan kesma qaysi qo'shaloq tengsizlikni ifodalaydi? Chegaralardagi doirachalarga alohida e'tibor bering.",
+      "v": [
+        "1 ≤ x < 5",
+        "1 ≤ x ≤ 5",
+        "1 < x < 5",
+        "1 < x ≤ 5"
+      ],
+      "t": 3,
+      "izoh": "Kesma 1 dan 5 gacha bo'yalgan. 1 dagi doiracha bo'sh, demak bu chegara to'plamga kirmaydi va u yerda ishora qat'iy bo'ladi. 5 dagi doiracha to'ldirilgan, demak u yechimga kiradi. Shuning uchun to'plam 1 < x ≤ 5 ko'rinishida yoziladi. Javob: 1 < x ≤ 5.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='110' viewBox='0 0 300 110'%3E%3Crect width='300' height='110' fill='%23ffffff'/%3E%3Cline x1='20' y1='60' x2='280' y2='60' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='272,54 280,60 272,66' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='60' y1='54' x2='60' y2='66' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='95' y1='54' x2='95' y2='66' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='130' y1='54' x2='130' y2='66' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='165' y1='54' x2='165' y2='66' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='200' y1='54' x2='200' y2='66' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='235' y1='54' x2='235' y2='66' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='95' y1='60' x2='235' y2='60' stroke='%235b4bc4' stroke-width='4'/%3E%3Ccircle cx='95' cy='60' r='5' fill='%23ffffff' stroke='%235b4bc4' stroke-width='2'/%3E%3Ccircle cx='235' cy='60' r='5' fill='%235b4bc4' stroke='%235b4bc4' stroke-width='2'/%3E%3Ctext x='60' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3E0%3C/text%3E%3Ctext x='95' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3E1%3C/text%3E%3Ctext x='130' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='165' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='200' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='235' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3E5%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonlar-oqida-tasvir",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#5e9f11c2"
+    },
+    {
+      "q": "x ≥ −4 va x < 2 shartlarining kesishmasi sonli oraliq ko'rinishida qanday yoziladi?",
+      "v": [
+        "[−4; 2)",
+        "(−4; 2]",
+        "(−4; 2)",
+        "[−4; 2]"
+      ],
+      "t": 0,
+      "izoh": "Birinchi shartda −4 chegarasi yechimga kiradi, shuning uchun chap tomonda yopiq kvadrat qavs qo'yiladi. Ikkinchi shartda 2 kirmaydi, shuning uchun o'ng tomonda ochiq qavs bo'ladi. Kesishma [−4; 2) oralig'ini beradi. Qavslarni almashtirib yozish bu mavzudagi eng ko'p uchraydigan xato. Javob: [−4; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechim-toplami-yozuvi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#7ace5483"
+    },
+    {
+      "q": "Rasmda sonlar o'qining bo'yalgan qismi ko'rsatilgan. Bu tasvir qaysi shartga mos keladi?",
+      "v": [
+        "−1 < x < 4",
+        "x < −1 va x > 4",
+        "x ≤ −1 yoki x ≥ 4",
+        "x < −1 yoki x > 4"
+      ],
+      "t": 3,
+      "izoh": "Bo'yalgan qism ikki nurdan iborat: −1 dan chapga cho'zilgan nur va 4 dan o'ngga cho'zilgan nur. Ikki oraliqning birlashmasi 'yoki' bog'lovchisi bilan yoziladi, chunki son ular ichidan bittasiga tegishli bo'lsa yetarli. −1 va 4 dagi doirachalar bo'sh, ya'ni bu chegaralar to'plamga kirmaydi va ishoralar qat'iy bo'ladi. Demak shart x < −1 yoki x > 4. 'Va' bog'lovchisini qo'ygan o'quvchi bo'sh to'plamga ega bo'ladi. Javob: x < −1 yoki x > 4.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='110' viewBox='0 0 300 110'>%3Crect width='300' height='110' fill='%23ffffff'/>%3Cline x1='20' y1='60' x2='280' y2='60' stroke='%23334155' stroke-width='2'/>%3Cpolyline points='272,54 280,60 272,66' fill='none' stroke='%23334155' stroke-width='2'/>%3Cline x1='50' y1='54' x2='50' y2='66' stroke='%23334155' stroke-width='2'/>%3Cline x1='78' y1='54' x2='78' y2='66' stroke='%23334155' stroke-width='2'/>%3Cline x1='106' y1='54' x2='106' y2='66' stroke='%23334155' stroke-width='2'/>%3Cline x1='134' y1='54' x2='134' y2='66' stroke='%23334155' stroke-width='2'/>%3Cline x1='162' y1='54' x2='162' y2='66' stroke='%23334155' stroke-width='2'/>%3Cline x1='190' y1='54' x2='190' y2='66' stroke='%23334155' stroke-width='2'/>%3Cline x1='218' y1='54' x2='218' y2='66' stroke='%23334155' stroke-width='2'/>%3Cline x1='246' y1='54' x2='246' y2='66' stroke='%23334155' stroke-width='2'/>%3Cline x1='78' y1='60' x2='26' y2='60' stroke='%235b4bc4' stroke-width='4'/>%3Cline x1='218' y1='60' x2='266' y2='60' stroke='%235b4bc4' stroke-width='4'/>%3Ccircle cx='78' cy='60' r='5' fill='%23ffffff' stroke='%235b4bc4' stroke-width='2'/>%3Ccircle cx='218' cy='60' r='5' fill='%23ffffff' stroke='%235b4bc4' stroke-width='2'/>%3Ctext x='50' y='84' font-size='13' fill='%23334155' text-anchor='middle'>−2%3C/text>%3Ctext x='78' y='84' font-size='13' fill='%23334155' text-anchor='middle'>−1%3C/text>%3Ctext x='106' y='84' font-size='13' fill='%23334155' text-anchor='middle'>0%3C/text>%3Ctext x='134' y='84' font-size='13' fill='%23334155' text-anchor='middle'>1%3C/text>%3Ctext x='162' y='84' font-size='13' fill='%23334155' text-anchor='middle'>2%3C/text>%3Ctext x='190' y='84' font-size='13' fill='%23334155' text-anchor='middle'>3%3C/text>%3Ctext x='218' y='84' font-size='13' fill='%23334155' text-anchor='middle'>4%3C/text>%3Ctext x='246' y='84' font-size='13' fill='%23334155' text-anchor='middle'>5%3C/text>%3C/svg>",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonlar-oqida-tasvir",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#2ce666b1"
+    },
+    {
+      "q": "7x − 3 ≥ 4x + 12 tengsizlikning yechimini sonli oraliq ko'rinishida yozing.",
+      "v": [
+        "[5; +∞)",
+        "(5; +∞)",
+        "(−∞; 5]",
+        "[15; +∞)"
+      ],
+      "t": 0,
+      "izoh": "4x ni chapga, −3 ni o'ngga o'tkazamiz: 3x ≥ 15, bundan x ≥ 5. Ishora qat'iy bo'lmagani uchun chegara yopiq kvadrat qavs bilan yoziladi va oraliq [5; +∞) bo'ladi. 3 ga bo'lishni unutgan o'quvchi [15; +∞) deb xato qiladi. Javob: [5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechim-toplami-yozuvi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#cef7c7cb"
+    },
+    {
+      "q": "0·x > 3, 0·x ≥ 0, 2x > 2x, x > x + 1 tengsizliklaridan qaysi birining yechimi barcha haqiqiy sonlardan iborat?",
+      "v": [
+        "0·x > 3",
+        "0·x ≥ 0",
+        "2x > 2x",
+        "x > x + 1"
+      ],
+      "t": 1,
+      "izoh": "Har birini alohida tekshiramiz. 0·x > 3 har qanday x da 0 > 3 degan yolg'on munosabatni beradi. 2x > 2x hech qachon bajarilmaydi, x > x + 1 esa 0 > 1 ga keltiriladi. 0·x ≥ 0 tengsizlik 0 ≥ 0 ko'rinishiga keladi va bu har qanday x uchun to'g'ri. Javob: 0·x ≥ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechim-toplami-yozuvi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#a000116b"
+    },
+    {
+      "q": "3x < 12, x + 4 ≥ 8, 3x ≤ 12, 5x ≤ 25 tengsizliklaridan qaysi birining yechimlar to'plami (−∞; 4] oralig'iga teng?",
+      "v": [
+        "3x < 12",
+        "x + 4 ≥ 8",
+        "3x ≤ 12",
+        "5x ≤ 25"
+      ],
+      "t": 2,
+      "izoh": "(−∞; 4] oralig'i x ≤ 4 shartini bildiradi, ya'ni 4 ning o'zi ham yechim. 3x < 12 dan x < 4 chiqadi va chegara kirmaydi. x + 4 ≥ 8 dan x ≥ 4, bunda yo'nalish teskari. 5x ≤ 25 dan x ≤ 5, chegara boshqa. Faqat 3x ≤ 12 dan x ≤ 4 hosil bo'ladi. Javob: 3x ≤ 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechim-toplami-yozuvi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#b4dadb3a"
+    },
+    {
+      "q": "x > 2 va x < a sistemasi aynan 4 ta butun yechimga ega bo'lishi uchun a qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "6 < a ≤ 7",
+        "6 ≤ a < 7",
+        "a = 7",
+        "5 < a ≤ 6"
+      ],
+      "t": 0,
+      "izoh": "2 dan katta butun sonlar 3, 4, 5, 6, 7 tartibida boradi. To'rttasi qolishi uchun 3, 4, 5, 6 yechim bo'lib, 7 kirmasligi kerak. Demak a soni 6 dan katta va 7 dan katta emas: 6 < a ≤ 7. a = 6 bo'lganda faqat 3, 4, 5 qoladi, ya'ni yechimlar soni uchtaga tushadi. Javob: 6 < a ≤ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-butun-yechim-shart",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#5322c352"
+    },
+    {
+      "q": "−1 ≤ x ≤ m sistemasining butun yechimlari soni 5 ta bo'lsa, m ning eng kichik qiymati nechaga teng?",
+      "v": [
+        "4",
+        "3",
+        "2",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Yechimlar −1 dan boshlanadi: −1, 0, 1, 2, 3 — bular beshta butun son. Beshinchisi 3 bo'lgani uchun m kamida 3 ga teng bo'lishi kerak. m = 2 bo'lsa yechimlar to'rttaga tushadi, m = 4 esa oltinchi sonni qo'shib yuboradi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-butun-yechim-shart",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#b269f0b4"
+    },
+    {
+      "q": "2x > k va x < 5 sistemasi hech bo'lmaganda bitta yechimga ega bo'lishi uchun k qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "k > 10",
+        "k ≤ 10",
+        "k < 10",
+        "k < 5"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tengsizlikdan x > k/2 hosil bo'ladi. Sistema yechimga ega bo'lishi uchun k/2 < 5 shart bajarilishi kerak, bundan k < 10. k = 10 bo'lganda x > 5 va x < 5 sistemasi bo'sh to'plam beradi. 2 ga bo'lishni unutgan o'quvchi k < 5 deb xato qiladi. Javob: k < 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-butun-yechim-shart",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#82ad905e"
+    },
+    {
+      "q": "x ≥ 3 va x ≤ b sistemasining yechimi faqat bitta sondan iborat bo'lishi uchun b nechaga teng bo'lishi kerak?",
+      "v": [
+        "b = 4",
+        "b = 2",
+        "b ≥ 3",
+        "b = 3"
+      ],
+      "t": 3,
+      "izoh": "Sistemaning yechimi 3 ≤ x ≤ b oralig'i bo'ladi. Bu oraliq bitta sondan iborat bo'lishi uchun chegaralar ustma-ust tushishi, ya'ni b = 3 bo'lishi kerak. b = 4 bo'lganda oraliqda cheksiz ko'p son bor, b = 2 bo'lganda esa yechim umuman yo'q. Javob: b = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-butun-yechim-shart",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#29bfce48"
+    },
+    {
+      "q": "Muzlatgichdagi harorat −4 °C dan past bo'lmasligi va 2 °C dan yuqori bo'lmasligi kerak. Bu shart qanday qo'shaloq tengsizlik bilan yoziladi?",
+      "v": [
+        "−4 < t < 2",
+        "t ≤ −4 yoki t ≥ 2",
+        "−4 ≤ t ≤ 2",
+        "−2 ≤ t ≤ 4"
+      ],
+      "t": 2,
+      "izoh": "Past bo'lmasligi degani t ≥ −4 shartini, yuqori bo'lmasligi esa t ≤ 2 shartini beradi. Ikkala shart bir vaqtda bajarilgani uchun ular bitta qo'shaloq tengsizlikka birlashtiriladi: −4 ≤ t ≤ 2. Chegaralar ruxsat etilgan qiymatlar bo'lgani uchun ishoralar qat'iy emas. Javob: −4 ≤ t ≤ 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-harorat-oraliq",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#9ee727d5"
+    },
+    {
+      "q": "Vaktsina 2 °C dan 8 °C gacha bo'lgan haroratda saqlanadi. Muzlatgich harorati t = 2x + 1 formula bilan boshqarilsa, x qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "1 ≤ x ≤ 3,5",
+        "0,5 ≤ x ≤ 4",
+        "1,5 ≤ x ≤ 4,5",
+        "0,5 ≤ x ≤ 3,5"
+      ],
+      "t": 3,
+      "izoh": "Shartni qo'shaloq tengsizlik bilan yozamiz: 2 ≤ 2x + 1 ≤ 8. Uchala qismdan 1 ni ayiramiz: 1 ≤ 2x ≤ 7. Endi uchala qismni musbat 2 ga bo'lamiz: 0,5 ≤ x ≤ 3,5. 1 ni faqat bitta chegaradan ayirgan o'quvchi noto'g'ri oraliqqa kelib qoladi. Javob: 0,5 ≤ x ≤ 3,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harorat-oraliq",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#9d5713a1"
+    },
+    {
+      "q": "Kun davomida havo harorati 68 °F dan 86 °F gacha o'zgardi. Aylantirish formulasi C = (F − 32) : 1,8 bo'lsa, Selsiy shkalasida bu qanday oraliq bo'ladi?",
+      "v": [
+        "20 °C dan 30 °C gacha",
+        "18 °C dan 28 °C gacha",
+        "36 °C dan 54 °C gacha",
+        "100 °C dan 118 °C gacha"
+      ],
+      "t": 0,
+      "izoh": "Chegaralarni formulaga qo'yamiz: (68 − 32) : 1,8 = 20 va (86 − 32) : 1,8 = 30. Demak harorat 20 °C dan 30 °C gacha oraliqda o'zgargan. 1,8 ga bo'lishni unutgan o'quvchi 36 va 54 ni, ayirish o'rniga qo'shgan esa 100 va 118 ni oladi. Javob: 20 °C dan 30 °C gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harorat-oraliq",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#dd369c1d"
+    },
+    {
+      "q": "Sport zalida harorat 18 °C dan past bo'lmasligi kerak. Hozir 15 °C va isitgich har 10 daqiqada haroratni 1 °C ga oshiradi. Kamida necha daqiqadan keyin shart bajariladi?",
+      "v": [
+        "3 daqiqa",
+        "30 daqiqa",
+        "18 daqiqa",
+        "180 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Harorat t daqiqadan keyin 15 + t : 10 ga teng bo'ladi. Shart 15 + t : 10 ≥ 18 ko'rinishida yoziladi, bundan t : 10 ≥ 3 va t ≥ 30 daqiqa. Faqat harorat farqini yozgan o'quvchi 3 daqiqa deb, 18 ni 10 ga ko'paytirgan esa 180 daqiqa deb xato qiladi. Javob: 30 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harorat-oraliq",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#f61042e5"
+    },
+    {
+      "q": "Bir sonning uch baravaridan 7 ni ayirganda hosil bo'lgan natija 20 dan katta bo'ladi. Bu son qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "x > 13/3",
+        "x > 27",
+        "x < 9",
+        "x > 9"
+      ],
+      "t": 3,
+      "izoh": "Sonni x deb belgilaymiz va shartni yozamiz: 3x − 7 > 20. 7 ni o'ng tomonga o'tkazamiz: 3x > 27, bundan x > 9. 7 ni qo'shish o'rniga ayirgan o'quvchi 3x > 13 dan x > 13/3 deb, 3 ga bo'lishni unutgan esa x > 27 deb xato qiladi. Javob: x > 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-son-va-olcham-masalasi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#65c360d3"
+    },
+    {
+      "q": "Ketma-ket kelgan uchta butun sonning yig'indisi 60 dan kichik. Bu sonlarning eng kattasi ko'pi bilan nechaga teng bo'lishi mumkin?",
+      "v": [
+        "19",
+        "20",
+        "21",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "Sonlarni n, n + 1 va n + 2 deb belgilaymiz. Yig'indi uchun 3n + 3 < 60, bundan 3n < 57 va n < 19. Butun son sifatida n ning eng kattasi 18, demak eng katta son n + 2 = 20 bo'ladi. Tekshiramiz: 18 + 19 + 20 = 57 va bu 60 dan kichik. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-son-va-olcham-masalasi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#373cead5"
+    },
+    {
+      "q": "Ikkita sonning yig'indisi 40 ga teng. Kattasi kichigidan kamida 12 ta ortiq bo'lsa, kichik son ko'pi bilan nechaga teng bo'ladi?",
+      "v": [
+        "14",
+        "12",
+        "26",
+        "20"
+      ],
+      "t": 0,
+      "izoh": "Kichik sonni x desak, kattasi 40 − x bo'ladi. Shart (40 − x) − x ≥ 12 ko'rinishida yoziladi, ya'ni 40 − 2x ≥ 12. Bundan 2x ≤ 28 va x ≤ 14. Demak kichik son ko'pi bilan 14 ga teng. Katta sonni javob deb olgan o'quvchi 26 deb, sonlarni teng bo'lgan esa 20 deb xato qiladi. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-son-va-olcham-masalasi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#3c415c4c"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi tomorqaning bo'yi 24 m. Uning perimetri 90 m dan oshmasligi kerak bo'lsa, eni ko'pi bilan qancha bo'ladi?",
+      "v": [
+        "45 m",
+        "33 m",
+        "21 m",
+        "42 m"
+      ],
+      "t": 2,
+      "izoh": "Perimetr P = 2(24 + x) formula bilan hisoblanadi va shart 2(24 + x) ≤ 90 ko'rinishida yoziladi. Ikkala tomonni 2 ga bo'lamiz: 24 + x ≤ 45, bundan x ≤ 21 m. Bo'yni faqat bir marta ayirgan o'quvchi (90 − 24) : 2 dan 33 m deb, 2 ga bo'lishni unutgan esa 42 m deb xato qiladi. Javob: 21 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-son-va-olcham-masalasi",
+      "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari#daf1f7fc"
+    }
+  ]
+}

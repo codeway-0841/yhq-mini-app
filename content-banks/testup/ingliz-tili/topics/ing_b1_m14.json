@@ -1,0 +1,1306 @@
+{
+  "nom": "Gerunds & infinitives",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "My father enjoys ___ in the mountains.",
+      "v": [
+        "to hike",
+        "hiking",
+        "hike",
+        "hiked"
+      ],
+      "t": 1,
+      "izoh": "enjoy → -ing (#107).",
+      "qiy": "orta",
+      "id": "ing_b1_m14#71929fd0"
+    },
+    {
+      "q": "She wants ___ a nurse.",
+      "v": [
+        "to become",
+        "becoming",
+        "become",
+        "became"
+      ],
+      "t": 0,
+      "izoh": "want → to.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#bc3fddfd"
+    },
+    {
+      "q": "Would you mind ___ the door?",
+      "v": [
+        "closing",
+        "to close",
+        "close",
+        "closed"
+      ],
+      "t": 0,
+      "izoh": "mind → -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#91f6fb6e"
+    },
+    {
+      "q": "We decided ___ a new car.",
+      "v": [
+        "buying",
+        "buy",
+        "bought",
+        "to buy"
+      ],
+      "t": 3,
+      "izoh": "decide → to.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#bf86f8db"
+    },
+    {
+      "q": "My cousin is bad at ___ early.",
+      "v": [
+        "to wake",
+        "wake",
+        "waking",
+        "wakes"
+      ],
+      "t": 2,
+      "izoh": "Predlog (at) → -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#6feaf528"
+    },
+    {
+      "q": "I hope ___ you soon.",
+      "v": [
+        "seeing",
+        "to see",
+        "see",
+        "saw"
+      ],
+      "t": 1,
+      "izoh": "hope → to.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#b3a4aaea"
+    },
+    {
+      "q": "They finished ___ the puzzle at midnight.",
+      "v": [
+        "to do",
+        "do",
+        "did",
+        "doing"
+      ],
+      "t": 3,
+      "izoh": "finish → -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#626956ea"
+    },
+    {
+      "q": "Which sentence about reading is correct?",
+      "v": [
+        "I enjoy to read.",
+        "I enjoy reading.",
+        "I enjoy read.",
+        "I am enjoy reading."
+      ],
+      "t": 1,
+      "izoh": "enjoy → -ing: I enjoy reading.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#58aa9506"
+    },
+    {
+      "q": "Which word is in the wrong form? 'She suggested to go fishing.'",
+      "v": [
+        "suggested",
+        "to go",
+        "fishing",
+        "She"
+      ],
+      "t": 1,
+      "izoh": "suggest → -ing: suggested going.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#b0d8f55b"
+    },
+    {
+      "q": "Before ___ to bed, I read for ten minutes.",
+      "v": [
+        "going",
+        "go",
+        "to go",
+        "went"
+      ],
+      "t": 0,
+      "izoh": "Predlog (before) → -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#a062245b"
+    },
+    {
+      "q": "I'm looking forward to ___ my cousins.",
+      "v": [
+        "see",
+        "to see",
+        "saw",
+        "seeing"
+      ],
+      "t": 3,
+      "izoh": "look forward to + -ing (bu to — predlog).",
+      "qiy": "orta",
+      "id": "ing_b1_m14#51ddc2a8"
+    },
+    {
+      "q": "Keep ___ — you're almost there!",
+      "v": [
+        "to go",
+        "go",
+        "going",
+        "went"
+      ],
+      "t": 2,
+      "izoh": "keep → -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#41c48f7f"
+    },
+    {
+      "q": "We are looking forward to ___ you again.",
+      "v": [
+        "seeing",
+        "see",
+        "to see",
+        "saw"
+      ],
+      "t": 0,
+      "izoh": "'looking forward to' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#63764197"
+    },
+    {
+      "q": "She's interested in ___ Spanish.",
+      "v": [
+        "learning",
+        "to learn",
+        "learn",
+        "learned"
+      ],
+      "t": 0,
+      "izoh": "Predlog 'in' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#657154d4"
+    },
+    {
+      "q": "He apologised for ___ late.",
+      "v": [
+        "being",
+        "to be",
+        "be",
+        "been"
+      ],
+      "t": 0,
+      "izoh": "Predlog 'for' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#0cfcca86"
+    },
+    {
+      "q": "They can't afford ___ a car this year.",
+      "v": [
+        "to buy",
+        "buying",
+        "buy",
+        "bought"
+      ],
+      "t": 0,
+      "izoh": "'afford' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#82f3c84a"
+    },
+    {
+      "q": "I can't stand ___ in long queues.",
+      "v": [
+        "waiting",
+        "to wait",
+        "wait",
+        "waited"
+      ],
+      "t": 0,
+      "izoh": "'can't stand' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#1359a3ed"
+    },
+    {
+      "q": "She offered ___ me to the station.",
+      "v": [
+        "to drive",
+        "driving",
+        "drive",
+        "drove"
+      ],
+      "t": 0,
+      "izoh": "'offer' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#08aae40d"
+    },
+    {
+      "q": "Do you fancy ___ out for dinner?",
+      "v": [
+        "going",
+        "to go",
+        "go",
+        "went"
+      ],
+      "t": 0,
+      "izoh": "'fancy' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#9105bcd4"
+    },
+    {
+      "q": "He refused ___ the money.",
+      "v": [
+        "to accept",
+        "accepting",
+        "accept",
+        "accepted"
+      ],
+      "t": 0,
+      "izoh": "'refuse' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#6d748e03"
+    },
+    {
+      "q": "I don't mind ___ the dishes.",
+      "v": [
+        "washing",
+        "to wash",
+        "wash",
+        "washed"
+      ],
+      "t": 0,
+      "izoh": "'mind' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#9526844e"
+    },
+    {
+      "q": "We plan ___ abroad next summer.",
+      "v": [
+        "to travel",
+        "travelling",
+        "travel",
+        "travelled"
+      ],
+      "t": 0,
+      "izoh": "'plan' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#9d6ea0cf"
+    },
+    {
+      "q": "She kept ___ even though she was tired.",
+      "v": [
+        "running",
+        "to run",
+        "run",
+        "ran"
+      ],
+      "t": 0,
+      "izoh": "'keep' dan keyin -ing (davom etish).",
+      "qiy": "orta",
+      "id": "ing_b1_m14#61f081f2"
+    },
+    {
+      "q": "They expect ___ the project on time.",
+      "v": [
+        "to finish",
+        "finishing",
+        "finish",
+        "finished"
+      ],
+      "t": 0,
+      "izoh": "'expect' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#221d2363"
+    },
+    {
+      "q": "He gave up ___ two years ago.",
+      "v": [
+        "smoking",
+        "to smoke",
+        "smoke",
+        "smoked"
+      ],
+      "t": 0,
+      "izoh": "'give up' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#b9df8e6a"
+    },
+    {
+      "q": "I would love ___ to Paris one day.",
+      "v": [
+        "to go",
+        "going",
+        "go",
+        "went"
+      ],
+      "t": 0,
+      "izoh": "'would love' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#d0969f98"
+    },
+    {
+      "q": "She practises ___ the piano every day.",
+      "v": [
+        "playing",
+        "to play",
+        "play",
+        "played"
+      ],
+      "t": 0,
+      "izoh": "'practise' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#46922e24"
+    },
+    {
+      "q": "We managed ___ the last train.",
+      "v": [
+        "to catch",
+        "catching",
+        "catch",
+        "caught"
+      ],
+      "t": 0,
+      "izoh": "'manage' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#509f2b32"
+    },
+    {
+      "q": "Please stop ___ so much noise.",
+      "v": [
+        "making",
+        "to make",
+        "make",
+        "made"
+      ],
+      "t": 0,
+      "izoh": "'stop' + -ing (harakatni to'xtatish).",
+      "qiy": "orta",
+      "id": "ing_b1_m14#10638622"
+    },
+    {
+      "q": "He seems ___ very happy today.",
+      "v": [
+        "to be",
+        "being",
+        "be",
+        "been"
+      ],
+      "t": 0,
+      "izoh": "'seem' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#f047203a"
+    },
+    {
+      "q": "They are afraid of ___ in the dark.",
+      "v": [
+        "walking",
+        "to walk",
+        "walk",
+        "walked"
+      ],
+      "t": 0,
+      "izoh": "Predlog 'of' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#ec9c2a27"
+    },
+    {
+      "q": "I learned ___ when I was seven.",
+      "v": [
+        "to swim",
+        "swimming",
+        "swim",
+        "swam"
+      ],
+      "t": 0,
+      "izoh": "'learn' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#0a8abd6f"
+    },
+    {
+      "q": "She admitted ___ the vase.",
+      "v": [
+        "breaking",
+        "to break",
+        "break",
+        "broke"
+      ],
+      "t": 0,
+      "izoh": "'admit' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#aaaf2e38"
+    },
+    {
+      "q": "We hope ___ from you soon.",
+      "v": [
+        "to hear",
+        "hearing",
+        "hear",
+        "heard"
+      ],
+      "t": 0,
+      "izoh": "'hope' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#28fd54e1"
+    },
+    {
+      "q": "He's tired of ___ the same thing every day.",
+      "v": [
+        "doing",
+        "to do",
+        "do",
+        "did"
+      ],
+      "t": 0,
+      "izoh": "Predlog 'of' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#ec5c51ab"
+    },
+    {
+      "q": "The teacher told us ___ our books.",
+      "v": [
+        "to open",
+        "opening",
+        "open",
+        "opened"
+      ],
+      "t": 0,
+      "izoh": "'tell someone' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#c56bb9f6"
+    },
+    {
+      "q": "I miss ___ my grandparents in the village.",
+      "v": [
+        "visiting",
+        "to visit",
+        "visit",
+        "visited"
+      ],
+      "t": 0,
+      "izoh": "'miss' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#34a4720b"
+    },
+    {
+      "q": "She threatened ___ the police.",
+      "v": [
+        "to call",
+        "calling",
+        "call",
+        "called"
+      ],
+      "t": 0,
+      "izoh": "'threaten' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#da69018a"
+    },
+    {
+      "q": "Would you mind not ___ here?",
+      "v": [
+        "smoking",
+        "to smoke",
+        "smoke",
+        "smoked"
+      ],
+      "t": 0,
+      "izoh": "'mind' dan keyin -ing (inkorda 'not smoking').",
+      "qiy": "orta",
+      "id": "ing_b1_m14#fa15e240"
+    },
+    {
+      "q": "They insisted on ___ for the meal.",
+      "v": [
+        "paying",
+        "to pay",
+        "pay",
+        "paid"
+      ],
+      "t": 0,
+      "izoh": "Predlog 'on' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#74fe4fec"
+    },
+    {
+      "q": "I've decided ___ a healthier lifestyle.",
+      "v": [
+        "to start",
+        "starting",
+        "start",
+        "started"
+      ],
+      "t": 0,
+      "izoh": "'decide' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#51936628"
+    },
+    {
+      "q": "Imagine ___ on a beautiful island.",
+      "v": [
+        "living",
+        "to live",
+        "live",
+        "lived"
+      ],
+      "t": 0,
+      "izoh": "'imagine' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#39470fee"
+    },
+    {
+      "q": "We were warned ___ that road at night.",
+      "v": [
+        "not to use",
+        "not using",
+        "to not use",
+        "using"
+      ],
+      "t": 0,
+      "izoh": "'warn' dan keyin to-infinitive; inkor 'not to use'.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#cdedc75e"
+    },
+    {
+      "q": "She's thinking about ___ her own business.",
+      "v": [
+        "starting",
+        "to start",
+        "start",
+        "started"
+      ],
+      "t": 0,
+      "izoh": "Predlog 'about' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#1df44a85"
+    },
+    {
+      "q": "He agreed ___ us at the airport.",
+      "v": [
+        "to meet",
+        "meeting",
+        "meet",
+        "met"
+      ],
+      "t": 0,
+      "izoh": "'agree' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#26e56f02"
+    },
+    {
+      "q": "Do you enjoy ___ new places?",
+      "v": [
+        "visiting",
+        "to visit",
+        "visit",
+        "visited"
+      ],
+      "t": 0,
+      "izoh": "'enjoy' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#a4b92d75"
+    },
+    {
+      "q": "I forgot ___ the door this morning.",
+      "v": [
+        "to lock",
+        "locking",
+        "lock",
+        "locked"
+      ],
+      "t": 0,
+      "izoh": "'forget to do' — qilishni unutdi.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#6aa7357d"
+    },
+    {
+      "q": "They chose ___ at home instead of going out.",
+      "v": [
+        "to stay",
+        "staying",
+        "stay",
+        "stayed"
+      ],
+      "t": 0,
+      "izoh": "'choose' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#3478a083"
+    },
+    {
+      "q": "She's used to ___ up early.",
+      "v": [
+        "getting",
+        "get",
+        "to get",
+        "got"
+      ],
+      "t": 0,
+      "izoh": "'be used to' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#8738d52d"
+    },
+    {
+      "q": "We arranged ___ at six o'clock.",
+      "v": [
+        "to meet",
+        "meeting",
+        "meet",
+        "met"
+      ],
+      "t": 0,
+      "izoh": "'arrange' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#55e4422a"
+    },
+    {
+      "q": "He denied ___ the window.",
+      "v": [
+        "breaking",
+        "to break",
+        "break",
+        "broke"
+      ],
+      "t": 0,
+      "izoh": "'deny' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#5c3ac72d"
+    },
+    {
+      "q": "I need ___ some new shoes.",
+      "v": [
+        "to buy",
+        "buying",
+        "buy",
+        "bought"
+      ],
+      "t": 0,
+      "izoh": "'need' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#dca6fee5"
+    },
+    {
+      "q": "She's not very good at ___ pictures.",
+      "v": [
+        "drawing",
+        "to draw",
+        "draw",
+        "drew"
+      ],
+      "t": 0,
+      "izoh": "Predlog 'at' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#20d60d77"
+    },
+    {
+      "q": "They pretended ___ asleep.",
+      "v": [
+        "to be",
+        "being",
+        "be",
+        "been"
+      ],
+      "t": 0,
+      "izoh": "'pretend' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#99a5f157"
+    },
+    {
+      "q": "Would you consider ___ to another city?",
+      "v": [
+        "moving",
+        "to move",
+        "move",
+        "moved"
+      ],
+      "t": 0,
+      "izoh": "'consider' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#1b490f48"
+    },
+    {
+      "q": "He promised ___ late again.",
+      "v": [
+        "not to be",
+        "not being",
+        "to not be",
+        "being"
+      ],
+      "t": 0,
+      "izoh": "'promise' + inkor: 'not to be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#edf61df6"
+    },
+    {
+      "q": "I'm looking forward to ___ my exams.",
+      "v": [
+        "finishing",
+        "finish",
+        "to finish",
+        "finished"
+      ],
+      "t": 0,
+      "izoh": "'looking forward to' + -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#72c975d0"
+    },
+    {
+      "q": "She helped me ___ the problem.",
+      "v": [
+        "to solve",
+        "solving",
+        "solved",
+        "solves"
+      ],
+      "t": 0,
+      "izoh": "'help' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#2c33adbe"
+    },
+    {
+      "q": "We should practise ___ English every day.",
+      "v": [
+        "speaking",
+        "to speak",
+        "speak",
+        "spoke"
+      ],
+      "t": 0,
+      "izoh": "'practise' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#7db906b8"
+    },
+    {
+      "q": "He decided against ___ the old car.",
+      "v": [
+        "buying",
+        "to buy",
+        "buy",
+        "bought"
+      ],
+      "t": 0,
+      "izoh": "Predlog 'against' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#1e8a0581"
+    },
+    {
+      "q": "I'd prefer ___ at home tonight.",
+      "v": [
+        "to stay",
+        "staying",
+        "stay",
+        "stayed"
+      ],
+      "t": 0,
+      "izoh": "'would prefer' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#71c3b01a"
+    },
+    {
+      "q": "They kept on ___ despite the rain.",
+      "v": [
+        "walking",
+        "to walk",
+        "walk",
+        "walked"
+      ],
+      "t": 0,
+      "izoh": "'keep on' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#ee0414cb"
+    },
+    {
+      "q": "She agreed ___ the truth.",
+      "v": [
+        "to tell",
+        "telling",
+        "tell",
+        "told"
+      ],
+      "t": 0,
+      "izoh": "'agree' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#ef996ed6"
+    },
+    {
+      "q": "Do you mind ___ me a hand?",
+      "v": [
+        "giving",
+        "to give",
+        "give",
+        "gave"
+      ],
+      "t": 0,
+      "izoh": "'mind' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#151f74cf"
+    },
+    {
+      "q": "He wants his children ___ hard at school.",
+      "v": [
+        "to work",
+        "working",
+        "work",
+        "worked"
+      ],
+      "t": 0,
+      "izoh": "'want someone to do' strukturasi.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#e1b544af"
+    },
+    {
+      "q": "I can't help ___ when I watch that film.",
+      "v": [
+        "laughing",
+        "to laugh",
+        "laugh",
+        "laughed"
+      ],
+      "t": 0,
+      "izoh": "'can't help' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#c82327e5"
+    },
+    {
+      "q": "We hope ___ you at the party.",
+      "v": [
+        "to see",
+        "seeing",
+        "see",
+        "saw"
+      ],
+      "t": 0,
+      "izoh": "'hope' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#beb36f53"
+    },
+    {
+      "q": "She's afraid of ___ her keys.",
+      "v": [
+        "losing",
+        "to lose",
+        "lose",
+        "lost"
+      ],
+      "t": 0,
+      "izoh": "Predlog 'of' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#a5c1b316"
+    },
+    {
+      "q": "The doctor advised him ___ more water.",
+      "v": [
+        "to drink",
+        "drinking",
+        "drink",
+        "drank"
+      ],
+      "t": 0,
+      "izoh": "'advise someone' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#2a5631ca"
+    },
+    {
+      "q": "I really don't feel like ___ out tonight.",
+      "v": [
+        "going",
+        "to go",
+        "go",
+        "went"
+      ],
+      "t": 0,
+      "izoh": "'feel like' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#09c94b6a"
+    },
+    {
+      "q": "They expect ___ soon.",
+      "v": [
+        "to arrive",
+        "arriving",
+        "arrive",
+        "arrived"
+      ],
+      "t": 0,
+      "izoh": "'expect' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#66a5202f"
+    },
+    {
+      "q": "He's responsible for ___ the accounts.",
+      "v": [
+        "checking",
+        "to check",
+        "check",
+        "checked"
+      ],
+      "t": 0,
+      "izoh": "Predlog 'for' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#848df900"
+    },
+    {
+      "q": "She learned ___ a car last year.",
+      "v": [
+        "to drive",
+        "driving",
+        "drive",
+        "drove"
+      ],
+      "t": 0,
+      "izoh": "'learn' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#3daae9a1"
+    },
+    {
+      "q": "We enjoyed ___ on the beach all day.",
+      "v": [
+        "relaxing",
+        "to relax",
+        "relax",
+        "relaxed"
+      ],
+      "t": 0,
+      "izoh": "'enjoy' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#b08de20f"
+    },
+    {
+      "q": "He offered ___ the bill.",
+      "v": [
+        "to pay",
+        "paying",
+        "pay",
+        "paid"
+      ],
+      "t": 0,
+      "izoh": "'offer' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#b27cd9ba"
+    },
+    {
+      "q": "I suggest ___ a break now.",
+      "v": [
+        "taking",
+        "to take",
+        "take",
+        "took"
+      ],
+      "t": 0,
+      "izoh": "'suggest' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#b572be1b"
+    },
+    {
+      "q": "She managed ___ the difficult exercise.",
+      "v": [
+        "to finish",
+        "finishing",
+        "finish",
+        "finished"
+      ],
+      "t": 0,
+      "izoh": "'manage' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#84a7f3ba"
+    },
+    {
+      "q": "Thank you for ___ me.",
+      "v": [
+        "inviting",
+        "to invite",
+        "invite",
+        "invited"
+      ],
+      "t": 0,
+      "izoh": "Predlog 'for' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#9bf30a6b"
+    },
+    {
+      "q": "He tends ___ everything at the last minute.",
+      "v": [
+        "to do",
+        "doing",
+        "do",
+        "did"
+      ],
+      "t": 0,
+      "izoh": "'tend' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#fdc7c31a"
+    },
+    {
+      "q": "We avoided ___ during rush hour.",
+      "v": [
+        "driving",
+        "to drive",
+        "drive",
+        "drove"
+      ],
+      "t": 0,
+      "izoh": "'avoid' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#ca07ac81"
+    },
+    {
+      "q": "She wants me ___ her tomorrow.",
+      "v": [
+        "to call",
+        "calling",
+        "call",
+        "called"
+      ],
+      "t": 0,
+      "izoh": "'want someone to do' strukturasi.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#ad6f5c56"
+    },
+    {
+      "q": "I'm bored with ___ the same food.",
+      "v": [
+        "eating",
+        "to eat",
+        "eat",
+        "ate"
+      ],
+      "t": 0,
+      "izoh": "Predlog 'with' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#9d5342c6"
+    },
+    {
+      "q": "They chose ___ nothing about it.",
+      "v": [
+        "to say",
+        "saying",
+        "say",
+        "said"
+      ],
+      "t": 0,
+      "izoh": "'choose' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#f6d9a72d"
+    },
+    {
+      "q": "He admitted ___ a mistake.",
+      "v": [
+        "making",
+        "to make",
+        "make",
+        "made"
+      ],
+      "t": 0,
+      "izoh": "'admit' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#866c0f0e"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "I enjoy reading books.",
+        "I enjoy to read books.",
+        "I enjoy read books.",
+        "I enjoy readed books."
+      ],
+      "t": 0,
+      "izoh": "'enjoy' dan keyin -ing shakli to'g'ri.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#21ac92a9"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "She decided to leave early.",
+        "She decided leaving early.",
+        "She decided leave early.",
+        "She decided left early."
+      ],
+      "t": 0,
+      "izoh": "'decide' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#21ac92a9~2"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "He avoided answering the question.",
+        "He avoided to answer the question.",
+        "He avoided answer the question.",
+        "He avoided answered the question."
+      ],
+      "t": 0,
+      "izoh": "'avoid' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#21ac92a9~3"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "They agreed to help us.",
+        "They agreed helping us.",
+        "They agreed help us.",
+        "They agreed helped us."
+      ],
+      "t": 0,
+      "izoh": "'agree' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#21ac92a9~4"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "I'm good at cooking.",
+        "I'm good at to cook.",
+        "I'm good at cook.",
+        "I'm good at cooked."
+      ],
+      "t": 0,
+      "izoh": "Predlogdan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#21ac92a9~5"
+    },
+    {
+      "q": "Find the sentence with a mistake.",
+      "v": [
+        "We hope seeing you soon.",
+        "We hope to see you soon.",
+        "We enjoy seeing you.",
+        "We want to see you."
+      ],
+      "t": 0,
+      "izoh": "'hope' to-infinitive oladi, '-ing' xato.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#33cce192"
+    },
+    {
+      "q": "Find the sentence with a mistake.",
+      "v": [
+        "She suggested to go home.",
+        "She suggested going home.",
+        "She wanted to go home.",
+        "She avoided going home."
+      ],
+      "t": 0,
+      "izoh": "'suggest' -ing oladi, 'to go' xato.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#33cce192~2"
+    },
+    {
+      "q": "Find the sentence with a mistake.",
+      "v": [
+        "He finished to write the letter.",
+        "He finished writing the letter.",
+        "He decided to write the letter.",
+        "He enjoyed writing the letter."
+      ],
+      "t": 0,
+      "izoh": "'finish' -ing oladi, 'to write' xato.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#33cce192~3"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "We decided to stay home.",
+        "We decided stay to home.",
+        "We to decided stay home.",
+        "We stay decided to home."
+      ],
+      "t": 0,
+      "izoh": "'decide' + to-infinitive: 'decided to stay'.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#3c9917c0"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "She enjoys reading novels.",
+        "She enjoys to read novels.",
+        "She reading enjoys novels.",
+        "She enjoys novels reading."
+      ],
+      "t": 0,
+      "izoh": "'enjoy' + -ing: 'enjoys reading'.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#3c9917c0~2"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "He is good at swimming.",
+        "He is good swimming at.",
+        "He at is good swimming.",
+        "He is at good swimming."
+      ],
+      "t": 0,
+      "izoh": "Predlog + -ing: 'good at swimming'.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#3c9917c0~3"
+    },
+    {
+      "q": "Find the sentence with a mistake.",
+      "v": [
+        "I'm interested in learn history.",
+        "I'm interested in learning history.",
+        "I enjoy learning history.",
+        "I want to learn history."
+      ],
+      "t": 0,
+      "izoh": "Predlogdan keyin -ing kerak: 'in learning'.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#33cce192~4"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "Would you mind waiting a moment?",
+        "Would you mind to wait a moment?",
+        "Would you mind wait a moment?",
+        "Would you mind waited a moment?"
+      ],
+      "t": 0,
+      "izoh": "'mind' dan keyin -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#21ac92a9~6"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "He promised to call me.",
+        "He promised calling me.",
+        "He promised call me.",
+        "He promised called me."
+      ],
+      "t": 0,
+      "izoh": "'promise' dan keyin to-infinitive.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#21ac92a9~7"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "We look forward to seeing you.",
+        "We look forward to see you.",
+        "We look to forward seeing you.",
+        "We forward look to seeing you."
+      ],
+      "t": 0,
+      "izoh": "'look forward to' + -ing.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#3c9917c0~4"
+    },
+    {
+      "q": "Find the sentence with a mistake.",
+      "v": [
+        "She kept to talk during the film.",
+        "She kept talking during the film.",
+        "She avoided talking during the film.",
+        "She stopped talking during the film."
+      ],
+      "t": 0,
+      "izoh": "'keep' -ing oladi: 'kept talking'.",
+      "qiy": "orta",
+      "id": "ing_b1_m14#33cce192~5"
+    }
+  ]
+}

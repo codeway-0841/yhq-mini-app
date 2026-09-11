@@ -1,0 +1,531 @@
+{
+  "nom": "61-mavzu. Linza",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Bir yoki ikki tomoni sferik sirt bilan chegaralangan shaffof jism nima deb ataladi?",
+      "v": [
+        "Linza",
+        "Koʻzgu",
+        "Prizma",
+        "Ekran"
+      ],
+      "t": 0,
+      "izoh": "Linza ta’rifi shu.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#028fff74"
+    },
+    {
+      "q": "Linzalar qanday turlarga bo‘linadi?",
+      "v": [
+        "Qavariq va botiq",
+        "Yassi va sferik",
+        "Katta va kichik",
+        "Qalin va yupqa"
+      ],
+      "t": 0,
+      "izoh": "Linzalar qavariq yoki botiq bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#873a6f4d"
+    },
+    {
+      "q": "O‘rta qismi chetki qismlariga nisbatan qalin bo‘lsa, qanday linza deyiladi?",
+      "v": [
+        "Qavariq",
+        "Botiq",
+        "Yassi",
+        "Sferik"
+      ],
+      "t": 0,
+      "izoh": "O‘rtasi qalin – qavariq linza.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#94ada9c5"
+    },
+    {
+      "q": "O‘rta qismi chetki qismlariga nisbatan yupqa bo‘lsa, qanday linza deyiladi?",
+      "v": [
+        "Botiq",
+        "Qavariq",
+        "Yassi",
+        "Sferik"
+      ],
+      "t": 0,
+      "izoh": "O‘rtasi yupqa – botiq linza.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#4fa1172f"
+    },
+    {
+      "q": "Linzaning markazi O nuqtadan o‘tgan to‘g‘ri chiziq nima deb ataladi?",
+      "v": [
+        "Bosh optik o‘q",
+        "Fokus o‘qi",
+        "Asosiy o‘q",
+        "Optik markaz"
+      ],
+      "t": 0,
+      "izoh": "Bu linzaning bosh optik o‘qi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#0c32ee14"
+    },
+    {
+      "q": "Qavariq linzaga uning bosh optik o‘qiga parallel yo‘naltirilgan nurlar linzadan o‘tgach qayerda yig‘iladi?",
+      "v": [
+        "Bosh optik o‘q ustidagi F nuqtada",
+        "Linza markazida",
+        "Chekka qismda",
+        "Yig‘ilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Parallel nurlar F nuqtada (fokusda) yig‘iladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#45040ac8"
+    },
+    {
+      "q": "Qavariq linza nima deb ham ataladi?",
+      "v": [
+        "Yig‘uvchi linza",
+        "Sochuvchi linza",
+        "Yassi linza",
+        "Sferik linza"
+      ],
+      "t": 0,
+      "izoh": "Qavariq linza yig‘uvchi linza.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#38353f29"
+    },
+    {
+      "q": "Botiq linzaga parallel nurlar yo‘naltirilsa, linzadan o‘tgan nurlar qanday bo‘ladi?",
+      "v": [
+        "Bir tekis sochiladi",
+        "Yig‘iladi",
+        "Parallel qoladi",
+        "Yo‘qoladi"
+      ],
+      "t": 0,
+      "izoh": "Botiq linzada nurlar sochiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#d16b33c6"
+    },
+    {
+      "q": "Botiq linza nima deb ham ataladi?",
+      "v": [
+        "Sochuvchi linza",
+        "Yig‘uvchi linza",
+        "Yassi linza",
+        "Sferik linza"
+      ],
+      "t": 0,
+      "izoh": "Botiq linza sochuvchi linza.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#3416a640"
+    },
+    {
+      "q": "Sochuvchi linzadan o‘tgan nurlar teskari tomonga davom ettirilsa, ular qayerda kesishadi?",
+      "v": [
+        "Bosh optik o‘qning bitta nuqtasida",
+        "Linza markazida",
+        "Chekka qismda",
+        "Kesishmaydi"
+      ],
+      "t": 0,
+      "izoh": "Mavhum fokusda kesishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#ab952c6d"
+    },
+    {
+      "q": "Botiq linzaning mavhum fokusi qanday hosil bo‘ladi?",
+      "v": [
+        "Sochuvchi linzadan o‘tgan nurlar teskari davom ettirilganda",
+        "Nurlar linzadan o‘tgach yig‘ilganda",
+        "Nurlar parallel bo‘lganda",
+        "Nurlar qaytganda"
+      ],
+      "t": 0,
+      "izoh": "Teskari davom ettirilganda kesishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#bf9433a0"
+    },
+    {
+      "q": "Linzalar bosh optik o‘qda nechta fokusga ega?",
+      "v": [
+        "Ikkita",
+        "Bitta",
+        "Uchta",
+        "To‘rtta"
+      ],
+      "t": 0,
+      "izoh": "Ikkita fokusga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#d8c34de5"
+    },
+    {
+      "q": "Linzaning fokuslari linzaning ikki tomonida markazidan qanday masofada yotadi?",
+      "v": [
+        "Bir xil masofada",
+        "Turli masofada",
+        "Nol masofada",
+        "Cheksiz masofada"
+      ],
+      "t": 0,
+      "izoh": "Bir xil masofada yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#1ef03ca7"
+    },
+    {
+      "q": "Linza markazidan fokusigacha bo‘lgan masofa nima deyiladi?",
+      "v": [
+        "Fokus masofasi",
+        "Optik kuch",
+        "Bosh o‘q",
+        "Linza diametri"
+      ],
+      "t": 0,
+      "izoh": "Bu fokus masofasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#7db80f39"
+    },
+    {
+      "q": "Fokus masofasi qanday harf bilan belgilanadi?",
+      "v": [
+        "F",
+        "D",
+        "O",
+        "L"
+      ],
+      "t": 0,
+      "izoh": "F harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m61-linza#6813a75f"
+    },
+    {
+      "q": "Fokus masofasiga teskari kattalik nima deyiladi?",
+      "v": [
+        "Linzaning optik kuchi",
+        "Fokus masofasi",
+        "Bosh optik o‘q",
+        "Linza qalinligi"
+      ],
+      "t": 0,
+      "izoh": "Fokus masofasiga teskari – optik kuch.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#e304bdde"
+    },
+    {
+      "q": "Linzaning optik kuchi qanday harf bilan belgilanadi?",
+      "v": [
+        "D",
+        "F",
+        "O",
+        "L"
+      ],
+      "t": 0,
+      "izoh": "D harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m61-linza#9c0d5983"
+    },
+    {
+      "q": "Linzaning optik kuchi qanday formula bilan ifodalanadi?",
+      "v": [
+        "D = 1/F",
+        "D = F",
+        "D = 2F",
+        "D = F²"
+      ],
+      "t": 0,
+      "izoh": "D = 1/F.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m61-linza#0dcc98e2"
+    },
+    {
+      "q": "Linzaning fokus masofasi qanchalik kichik bo‘lsa, uning optik kuchi qanday bo‘ladi?",
+      "v": [
+        "Katta",
+        "Kichik",
+        "O‘zgarmas",
+        "Nol"
+      ],
+      "t": 0,
+      "izoh": "Fokus masofasi kichik bo‘lsa optik kuch katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#6e712e91"
+    },
+    {
+      "q": "Optik kuchning birligi SI sistemasida nima?",
+      "v": [
+        "Dioptriya (dptr)",
+        "Metr",
+        "Vatt",
+        "Nyuton"
+      ],
+      "t": 0,
+      "izoh": "Optik kuch dioptriyada o‘lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#de96d481"
+    },
+    {
+      "q": "Fokus masofasi 1 m bo‘lgan linzaning optik kuchi necha dptr ga teng?",
+      "v": [
+        "1 dptr",
+        "0,5 dptr",
+        "2 dptr",
+        "10 dptr"
+      ],
+      "t": 0,
+      "izoh": "1 dptr = 1/m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m61-linza#e95ccd6b"
+    },
+    {
+      "q": "1 dptr nimaga teng?",
+      "v": [
+        "1/m",
+        "1 m",
+        "1 s",
+        "1 kg"
+      ],
+      "t": 0,
+      "izoh": "1 dptr = 1/m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#bf46a58f"
+    },
+    {
+      "q": "Yig‘uvchi linzada optik kuch va fokus masofa qanday ishorali?",
+      "v": [
+        "Musbat",
+        "Manfiy",
+        "Nol",
+        "Aniqlanmagan"
+      ],
+      "t": 0,
+      "izoh": "Yig‘uvchi linzada musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#e8b48f52"
+    },
+    {
+      "q": "Sochuvchi linzada optik kuch qanday ishorali?",
+      "v": [
+        "Manfiy",
+        "Musbat",
+        "Nol",
+        "Aniqlanmagan"
+      ],
+      "t": 0,
+      "izoh": "Sochuvchi linzada optik kuch manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#c0abe105"
+    },
+    {
+      "q": "Fokus masofasi 50 cm bo‘lgan linzaning optik kuchi necha dptr?",
+      "v": [
+        "2 dptr",
+        "5 dptr",
+        "0,5 dptr",
+        "50 dptr"
+      ],
+      "t": 0,
+      "izoh": "D=1/0,5=2 dptr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m61-linza#6e57bdd9"
+    },
+    {
+      "q": "Fokus masofasi 20 cm bo‘lgan linzaning optik kuchi necha dptr?",
+      "v": [
+        "5 dptr",
+        "2 dptr",
+        "20 dptr",
+        "0,2 dptr"
+      ],
+      "t": 0,
+      "izoh": "D=1/0,2=5 dptr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m61-linza#d29e46e9"
+    },
+    {
+      "q": "Fokus masofasi 12,5 cm bo‘lgan linzaning optik kuchi necha dptr?",
+      "v": [
+        "8 dptr",
+        "12,5 dptr",
+        "4 dptr",
+        "0,125 dptr"
+      ],
+      "t": 0,
+      "izoh": "D=1/0,125=8 dptr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m61-linza#b07473b6"
+    },
+    {
+      "q": "Fokus masofasi –10 cm bo‘lgan linzaning optik kuchi necha dptr?",
+      "v": [
+        "–10 dptr",
+        "10 dptr",
+        "0,1 dptr",
+        "–0,1 dptr"
+      ],
+      "t": 0,
+      "izoh": "D=1/–0,1=–10 dptr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m61-linza#e44a0108"
+    },
+    {
+      "q": "Optik kuchi +4 dptr bo‘lgan linzaning fokus masofasi qancha?",
+      "v": [
+        "0,25 m",
+        "4 m",
+        "0,4 m",
+        "25 m"
+      ],
+      "t": 0,
+      "izoh": "F=1/4=0,25 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m61-linza#4e44584f"
+    },
+    {
+      "q": "Optik kuchi 2,5 dptr bo‘lgan linzaning fokus masofasi qancha?",
+      "v": [
+        "0,4 m",
+        "0,25 m",
+        "2,5 m",
+        "4 m"
+      ],
+      "t": 0,
+      "izoh": "F=1/2,5=0,4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m61-linza#78987e8b"
+    },
+    {
+      "q": "Optik kuchi 8 dptr bo‘lgan linzaning fokus masofasi qancha?",
+      "v": [
+        "0,125 m",
+        "0,8 m",
+        "8 m",
+        "12,5 m"
+      ],
+      "t": 0,
+      "izoh": "F=1/8=0,125 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m61-linza#53166b6c"
+    },
+    {
+      "q": "Koʻzoynak, mikroskop va teleskop kabi jihozlarda qanday umumiylik bor?",
+      "v": [
+        "Ularda linzalar ishlatiladi",
+        "Ularda faqat ko‘zgu bor",
+        "Ularda faqat prizma bor",
+        "Ularda optik tola bor"
+      ],
+      "t": 0,
+      "izoh": "Bu jihozlarda linzalar ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#f4b2aa19"
+    },
+    {
+      "q": "Qavariq linza nurlarni bitta nuqtaga yig‘ish xususiyatiga ega bo‘lgani uchun u qanday linza deb ataladi?",
+      "v": [
+        "Yig‘uvchi",
+        "Sochuvchi",
+        "Yassi",
+        "Sferik"
+      ],
+      "t": 0,
+      "izoh": "Yig‘uvchi linza.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#a989a85e"
+    },
+    {
+      "q": "Linzaning optik kuchi qanchalik katta bo‘lsa, fokus masofasi qanday bo‘ladi?",
+      "v": [
+        "Kichik",
+        "Katta",
+        "O‘zgarmas",
+        "Cheksiz"
+      ],
+      "t": 0,
+      "izoh": "Optik kuch katta bo‘lsa fokus masofasi kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#41aae0f5"
+    },
+    {
+      "q": "Silindrsimon shaffof idishga suv quyilganda uning orqasidagi rasm qanday ko‘rinadi?",
+      "v": [
+        "Rasm o‘zgaradi (kattalashadi yoki siljiydi)",
+        "Rasm umuman o‘zgarmaydi",
+        "Rasm yo‘qolib ketadi",
+        "Rasm teskari aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Suv quyilganda rasm o‘zgarishi kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m61-linza#59aef53d"
+    }
+  ]
+}

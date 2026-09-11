@@ -1,0 +1,1306 @@
+{
+  "nom": "Media & news (OAV)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "\"newspaper\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "gazeta",
+        "veb-sayt",
+        "jurnal",
+        "reklama"
+      ],
+      "t": 0,
+      "izoh": "\"newspaper\" — gazeta.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#571b7151"
+    },
+    {
+      "q": "\"journalist\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "intervyu / suhbat",
+        "jurnalist",
+        "shoshilinch yangilik",
+        "reklama"
+      ],
+      "t": 1,
+      "izoh": "\"journalist\" — jurnalist.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#0b0d5b83"
+    },
+    {
+      "q": "\"headline\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "tomoshabin (TV)",
+        "veb-sayt",
+        "sarlavha",
+        "gazeta"
+      ],
+      "t": 2,
+      "izoh": "\"headline\" — sarlavha.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#f53fcafe"
+    },
+    {
+      "q": "\"article\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "post joylamoq",
+        "tomoshabin (TV)",
+        "ijtimoiy tarmoqlar",
+        "maqola"
+      ],
+      "t": 3,
+      "izoh": "\"article\" — maqola.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#5fb51b7d"
+    },
+    {
+      "q": "\"broadcast\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "efirga uzatmoq / eshittirish",
+        "tomoshabin (TV)",
+        "auditoriya / tomoshabinlar",
+        "ijtimoiy tarmoqlar"
+      ],
+      "t": 0,
+      "izoh": "\"broadcast\" — efirga uzatmoq / eshittirish.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#ce746859"
+    },
+    {
+      "q": "\"channel\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "tomoshabin (TV)",
+        "telekanal",
+        "shoshilinch yangilik",
+        "post joylamoq"
+      ],
+      "t": 1,
+      "izoh": "\"channel\" — telekanal.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#65b60209"
+    },
+    {
+      "q": "\"advertisement\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "gazeta",
+        "telekanal",
+        "reklama",
+        "auditoriya / tomoshabinlar"
+      ],
+      "t": 2,
+      "izoh": "\"advertisement\" — reklama.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#f800e861"
+    },
+    {
+      "q": "\"social media\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "efirga uzatmoq / eshittirish",
+        "post joylamoq",
+        "reklama",
+        "ijtimoiy tarmoqlar"
+      ],
+      "t": 3,
+      "izoh": "\"social media\" — ijtimoiy tarmoqlar.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#32b51352"
+    },
+    {
+      "q": "\"website\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "veb-sayt",
+        "ijtimoiy tarmoqlar",
+        "reklama",
+        "intervyu / suhbat"
+      ],
+      "t": 0,
+      "izoh": "\"website\" — veb-sayt.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#144016a5"
+    },
+    {
+      "q": "\"report\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "intervyu / suhbat",
+        "xabar / hisobot",
+        "post joylamoq",
+        "reklama"
+      ],
+      "t": 1,
+      "izoh": "\"report\" — xabar / hisobot.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#30127cd4"
+    },
+    {
+      "q": "\"interview\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "ijtimoiy tarmoqlar",
+        "obuna bo'lmoq",
+        "intervyu / suhbat",
+        "sarlavha"
+      ],
+      "t": 2,
+      "izoh": "\"interview\" — intervyu / suhbat.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#a6d48fe6"
+    },
+    {
+      "q": "\"magazine\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "gazeta",
+        "shoshilinch yangilik",
+        "jurnalist",
+        "jurnal"
+      ],
+      "t": 3,
+      "izoh": "\"magazine\" — jurnal.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#43088d6b"
+    },
+    {
+      "q": "\"subscribe\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "obuna bo'lmoq",
+        "post joylamoq",
+        "sarlavha",
+        "efirga uzatmoq / eshittirish"
+      ],
+      "t": 0,
+      "izoh": "\"subscribe\" — obuna bo'lmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#b3109a1f"
+    },
+    {
+      "q": "\"breaking news\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "jurnal",
+        "shoshilinch yangilik",
+        "jurnalist",
+        "gazeta"
+      ],
+      "t": 1,
+      "izoh": "\"breaking news\" — shoshilinch yangilik.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#751c9276"
+    },
+    {
+      "q": "\"viewer\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "sarlavha",
+        "ulashmoq",
+        "tomoshabin (TV)",
+        "maqola"
+      ],
+      "t": 2,
+      "izoh": "\"viewer\" — tomoshabin (TV).",
+      "qiy": "orta",
+      "id": "ing_b1_m23#8825ff1f"
+    },
+    {
+      "q": "\"audience\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "jurnal",
+        "telekanal",
+        "efirga uzatmoq / eshittirish",
+        "auditoriya / tomoshabinlar"
+      ],
+      "t": 3,
+      "izoh": "\"audience\" — auditoriya / tomoshabinlar.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#30c95629"
+    },
+    {
+      "q": "\"post\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "post joylamoq",
+        "jurnal",
+        "efirga uzatmoq / eshittirish",
+        "telekanal"
+      ],
+      "t": 0,
+      "izoh": "\"post\" — post joylamoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#7f12b4e2"
+    },
+    {
+      "q": "\"share\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "maqola",
+        "ulashmoq",
+        "intervyu / suhbat",
+        "gazeta"
+      ],
+      "t": 1,
+      "izoh": "\"share\" — ulashmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#b8bf7195"
+    },
+    {
+      "q": "\"gazeta\" so'zining inglizchasi qaysi?",
+      "v": [
+        "advertisement",
+        "broadcast",
+        "newspaper",
+        "viewer"
+      ],
+      "t": 2,
+      "izoh": "\"gazeta\" ingliz tilida \"newspaper\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#051036bf"
+    },
+    {
+      "q": "\"jurnalist\" so'zining inglizchasi qaysi?",
+      "v": [
+        "share",
+        "magazine",
+        "report",
+        "journalist"
+      ],
+      "t": 3,
+      "izoh": "\"jurnalist\" ingliz tilida \"journalist\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#bf931b62"
+    },
+    {
+      "q": "\"sarlavha\" so'zining inglizchasi qaysi?",
+      "v": [
+        "headline",
+        "journalist",
+        "interview",
+        "breaking news"
+      ],
+      "t": 0,
+      "izoh": "\"sarlavha\" ingliz tilida \"headline\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#39062913"
+    },
+    {
+      "q": "\"maqola\" so'zining inglizchasi qaysi?",
+      "v": [
+        "post",
+        "article",
+        "newspaper",
+        "audience"
+      ],
+      "t": 1,
+      "izoh": "\"maqola\" ingliz tilida \"article\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#01e1741a"
+    },
+    {
+      "q": "\"efirga uzatmoq / eshittirish\" so'zining inglizchasi qaysi?",
+      "v": [
+        "post",
+        "advertisement",
+        "broadcast",
+        "newspaper"
+      ],
+      "t": 2,
+      "izoh": "\"efirga uzatmoq / eshittirish\" ingliz tilida \"broadcast\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#9f736571"
+    },
+    {
+      "q": "\"telekanal\" so'zining inglizchasi qaysi?",
+      "v": [
+        "article",
+        "report",
+        "interview",
+        "channel"
+      ],
+      "t": 3,
+      "izoh": "\"telekanal\" ingliz tilida \"channel\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#8d754e7c"
+    },
+    {
+      "q": "\"reklama\" so'zining inglizchasi qaysi?",
+      "v": [
+        "advertisement",
+        "social media",
+        "broadcast",
+        "magazine"
+      ],
+      "t": 0,
+      "izoh": "\"reklama\" ingliz tilida \"advertisement\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#8c7d191a"
+    },
+    {
+      "q": "\"ijtimoiy tarmoqlar\" so'zining inglizchasi qaysi?",
+      "v": [
+        "broadcast",
+        "social media",
+        "website",
+        "newspaper"
+      ],
+      "t": 1,
+      "izoh": "\"ijtimoiy tarmoqlar\" ingliz tilida \"social media\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#a25d9eb9"
+    },
+    {
+      "q": "\"veb-sayt\" so'zining inglizchasi qaysi?",
+      "v": [
+        "interview",
+        "post",
+        "website",
+        "channel"
+      ],
+      "t": 2,
+      "izoh": "\"veb-sayt\" ingliz tilida \"website\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#4dfb9ff1"
+    },
+    {
+      "q": "\"xabar / hisobot\" so'zining inglizchasi qaysi?",
+      "v": [
+        "social media",
+        "journalist",
+        "post",
+        "report"
+      ],
+      "t": 3,
+      "izoh": "\"xabar / hisobot\" ingliz tilida \"report\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#c4229ad7"
+    },
+    {
+      "q": "\"intervyu / suhbat\" so'zining inglizchasi qaysi?",
+      "v": [
+        "interview",
+        "website",
+        "subscribe",
+        "share"
+      ],
+      "t": 0,
+      "izoh": "\"intervyu / suhbat\" ingliz tilida \"interview\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#860ca310"
+    },
+    {
+      "q": "\"jurnal\" so'zining inglizchasi qaysi?",
+      "v": [
+        "audience",
+        "magazine",
+        "journalist",
+        "channel"
+      ],
+      "t": 1,
+      "izoh": "\"jurnal\" ingliz tilida \"magazine\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#89edb1be"
+    },
+    {
+      "q": "\"obuna bo'lmoq\" so'zining inglizchasi qaysi?",
+      "v": [
+        "newspaper",
+        "audience",
+        "subscribe",
+        "social media"
+      ],
+      "t": 2,
+      "izoh": "\"obuna bo'lmoq\" ingliz tilida \"subscribe\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#87f2e0a1"
+    },
+    {
+      "q": "\"shoshilinch yangilik\" so'zining inglizchasi qaysi?",
+      "v": [
+        "viewer",
+        "post",
+        "headline",
+        "breaking news"
+      ],
+      "t": 3,
+      "izoh": "\"shoshilinch yangilik\" ingliz tilida \"breaking news\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#f2541094"
+    },
+    {
+      "q": "\"tomoshabin (TV)\" so'zining inglizchasi qaysi?",
+      "v": [
+        "viewer",
+        "social media",
+        "share",
+        "audience"
+      ],
+      "t": 0,
+      "izoh": "\"tomoshabin (TV)\" ingliz tilida \"viewer\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#32fb57b9"
+    },
+    {
+      "q": "\"auditoriya / tomoshabinlar\" so'zining inglizchasi qaysi?",
+      "v": [
+        "share",
+        "audience",
+        "subscribe",
+        "channel"
+      ],
+      "t": 1,
+      "izoh": "\"auditoriya / tomoshabinlar\" ingliz tilida \"audience\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#9a7bdaf5"
+    },
+    {
+      "q": "\"post joylamoq\" so'zining inglizchasi qaysi?",
+      "v": [
+        "audience",
+        "magazine",
+        "post",
+        "report"
+      ],
+      "t": 2,
+      "izoh": "\"post joylamoq\" ingliz tilida \"post\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#8faeecb7"
+    },
+    {
+      "q": "\"ulashmoq\" so'zining inglizchasi qaysi?",
+      "v": [
+        "report",
+        "advertisement",
+        "newspaper",
+        "share"
+      ],
+      "t": 3,
+      "izoh": "\"ulashmoq\" ingliz tilida \"share\".",
+      "qiy": "orta",
+      "id": "ing_b1_m23#260c251b"
+    },
+    {
+      "q": "Every morning my father reads the ____ with his tea.",
+      "v": [
+        "newspaper",
+        "breaking news",
+        "interview",
+        "channel"
+      ],
+      "t": 0,
+      "izoh": "Bu gapga \"newspaper\" (gazeta) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#eb00f382"
+    },
+    {
+      "q": "The ____ asked the minister several difficult questions.",
+      "v": [
+        "advertisement",
+        "journalist",
+        "website",
+        "headline"
+      ],
+      "t": 1,
+      "izoh": "Bu gapga \"journalist\" (jurnalist) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#5a416c3f"
+    },
+    {
+      "q": "The ____ on the front page was about the elections.",
+      "v": [
+        "viewer",
+        "magazine",
+        "headline",
+        "article"
+      ],
+      "t": 2,
+      "izoh": "Bu gapga \"headline\" (sarlavha) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#b2b8deb5"
+    },
+    {
+      "q": "She wrote an ____ about climate change for the magazine.",
+      "v": [
+        "report",
+        "advertisement",
+        "viewer",
+        "article"
+      ],
+      "t": 3,
+      "izoh": "Bu gapga \"article\" (maqola) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#d94568d7"
+    },
+    {
+      "q": "The match will be ____ live on TV tonight.",
+      "v": [
+        "broadcast",
+        "advertisement",
+        "audience",
+        "article"
+      ],
+      "t": 0,
+      "izoh": "Bu gapga \"broadcast\" (efirga uzatmoq / eshittirish) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#3b3e6719"
+    },
+    {
+      "q": "Can you change the ____? I want to watch the news.",
+      "v": [
+        "report",
+        "channel",
+        "post",
+        "broadcast"
+      ],
+      "t": 1,
+      "izoh": "Bu gapga \"channel\" (telekanal) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#f3411bfa"
+    },
+    {
+      "q": "There was an ____ for a new phone during the break.",
+      "v": [
+        "website",
+        "share",
+        "advertisement",
+        "headline"
+      ],
+      "t": 2,
+      "izoh": "Bu gapga \"advertisement\" (reklama) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#f6636b47"
+    },
+    {
+      "q": "Many young people get their news from ____ today.",
+      "v": [
+        "broadcast",
+        "headline",
+        "interview",
+        "social media"
+      ],
+      "t": 3,
+      "izoh": "Bu gapga \"social media\" (ijtimoiy tarmoqlar) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#be567671"
+    },
+    {
+      "q": "You can read the full story on our ____.",
+      "v": [
+        "website",
+        "channel",
+        "newspaper",
+        "journalist"
+      ],
+      "t": 0,
+      "izoh": "Bu gapga \"website\" (veb-sayt) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#150dac81"
+    },
+    {
+      "q": "The reporter gave a live ____ from the scene.",
+      "v": [
+        "broadcast",
+        "report",
+        "post",
+        "subscribe"
+      ],
+      "t": 1,
+      "izoh": "Bu gapga \"report\" (xabar / hisobot) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#67a5dc58"
+    },
+    {
+      "q": "The singer gave an ____ about her new album.",
+      "v": [
+        "audience",
+        "advertisement",
+        "interview",
+        "headline"
+      ],
+      "t": 2,
+      "izoh": "Bu gapga \"interview\" (intervyu / suhbat) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#0e4364fd"
+    },
+    {
+      "q": "She bought a fashion ____ at the airport.",
+      "v": [
+        "viewer",
+        "audience",
+        "subscribe",
+        "magazine"
+      ],
+      "t": 3,
+      "izoh": "Bu gapga \"magazine\" (jurnal) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#db09a40a"
+    },
+    {
+      "q": "Please ____ to our channel to see new videos.",
+      "v": [
+        "subscribe",
+        "advertisement",
+        "website",
+        "report"
+      ],
+      "t": 0,
+      "izoh": "Bu gapga \"subscribe\" (obuna bo'lmoq) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#e56bb3f1"
+    },
+    {
+      "q": "We interrupt this programme for some ____.",
+      "v": [
+        "interview",
+        "breaking news",
+        "newspaper",
+        "article"
+      ],
+      "t": 1,
+      "izoh": "Bu gapga \"breaking news\" (shoshilinch yangilik) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#c16c9015"
+    },
+    {
+      "q": "Millions of ____ watched the final match.",
+      "v": [
+        "subscribe",
+        "advertisement",
+        "viewer",
+        "social media"
+      ],
+      "t": 2,
+      "izoh": "Bu gapga \"viewer\" (tomoshabin (TV)) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#8da7e932"
+    },
+    {
+      "q": "The ____ clapped loudly after the show.",
+      "v": [
+        "report",
+        "subscribe",
+        "breaking news",
+        "audience"
+      ],
+      "t": 3,
+      "izoh": "Bu gapga \"audience\" (auditoriya / tomoshabinlar) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#301e9ca3"
+    },
+    {
+      "q": "She wrote a ____ about her holiday on Instagram.",
+      "v": [
+        "post",
+        "broadcast",
+        "newspaper",
+        "breaking news"
+      ],
+      "t": 0,
+      "izoh": "Bu gapga \"post\" (post joylamoq) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#9abccb8b"
+    },
+    {
+      "q": "If you like the video, please ____ it with your friends.",
+      "v": [
+        "website",
+        "share",
+        "social media",
+        "audience"
+      ],
+      "t": 1,
+      "izoh": "Bu gapga \"share\" (ulashmoq) mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#f399c950"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"a printed publication with news, sold daily or weekly\"?",
+      "v": [
+        "social media",
+        "audience",
+        "newspaper",
+        "share"
+      ],
+      "t": 2,
+      "izoh": "\"newspaper\" — gazeta.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#19c495e5"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"a person whose job is to write news stories\"?",
+      "v": [
+        "advertisement",
+        "subscribe",
+        "share",
+        "journalist"
+      ],
+      "t": 3,
+      "izoh": "\"journalist\" — jurnalist.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#7a48bbbb"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"the title of a news story printed in large letters\"?",
+      "v": [
+        "headline",
+        "broadcast",
+        "breaking news",
+        "article"
+      ],
+      "t": 0,
+      "izoh": "\"headline\" — sarlavha.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#37bcc0be"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"a piece of writing about a topic in a newspaper or magazine\"?",
+      "v": [
+        "viewer",
+        "article",
+        "breaking news",
+        "share"
+      ],
+      "t": 1,
+      "izoh": "\"article\" — maqola.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#2a5bd0bc"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"to send out a programme on television or radio\"?",
+      "v": [
+        "interview",
+        "audience",
+        "broadcast",
+        "journalist"
+      ],
+      "t": 2,
+      "izoh": "\"broadcast\" — efirga uzatmoq / eshittirish.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#e8fa1917"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"a television or radio station\"?",
+      "v": [
+        "headline",
+        "journalist",
+        "audience",
+        "channel"
+      ],
+      "t": 3,
+      "izoh": "\"channel\" — telekanal.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#5cfd1cf8"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"a notice that tries to persuade people to buy something\"?",
+      "v": [
+        "advertisement",
+        "viewer",
+        "social media",
+        "channel"
+      ],
+      "t": 0,
+      "izoh": "\"advertisement\" — reklama.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#013e3152"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"websites and apps where people share messages and photos\"?",
+      "v": [
+        "breaking news",
+        "social media",
+        "newspaper",
+        "interview"
+      ],
+      "t": 1,
+      "izoh": "\"social media\" — ijtimoiy tarmoqlar.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#0832180c"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"a set of pages on the internet\"?",
+      "v": [
+        "article",
+        "channel",
+        "website",
+        "viewer"
+      ],
+      "t": 2,
+      "izoh": "\"website\" — veb-sayt.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#0c363ec4"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"a spoken or written account of an event or news\"?",
+      "v": [
+        "newspaper",
+        "breaking news",
+        "magazine",
+        "report"
+      ],
+      "t": 3,
+      "izoh": "\"report\" — xabar / hisobot.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#001c7011"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"a meeting where someone is asked questions\"?",
+      "v": [
+        "interview",
+        "article",
+        "post",
+        "report"
+      ],
+      "t": 0,
+      "izoh": "\"interview\" — intervyu / suhbat.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#ad6c3a20"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"a thin book published weekly or monthly with articles and pictures\"?",
+      "v": [
+        "website",
+        "magazine",
+        "post",
+        "broadcast"
+      ],
+      "t": 1,
+      "izoh": "\"magazine\" — jurnal.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#e62ec41c"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"to pay or sign up to receive something regularly\"?",
+      "v": [
+        "post",
+        "report",
+        "subscribe",
+        "broadcast"
+      ],
+      "t": 2,
+      "izoh": "\"subscribe\" — obuna bo'lmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#c7f78d9e"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"very recent important news just received\"?",
+      "v": [
+        "website",
+        "post",
+        "audience",
+        "breaking news"
+      ],
+      "t": 3,
+      "izoh": "\"breaking news\" — shoshilinch yangilik.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#925fda7d"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"a person who watches television\"?",
+      "v": [
+        "viewer",
+        "social media",
+        "subscribe",
+        "channel"
+      ],
+      "t": 0,
+      "izoh": "\"viewer\" — tomoshabin (TV).",
+      "qiy": "orta",
+      "id": "ing_b1_m23#0d530728"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"the group of people who watch or listen to something\"?",
+      "v": [
+        "article",
+        "audience",
+        "headline",
+        "advertisement"
+      ],
+      "t": 1,
+      "izoh": "\"audience\" — auditoriya / tomoshabinlar.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#ba4ca42f"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"a message or picture put on social media\"?",
+      "v": [
+        "newspaper",
+        "share",
+        "post",
+        "channel"
+      ],
+      "t": 2,
+      "izoh": "\"post\" — post joylamoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#1799fe92"
+    },
+    {
+      "q": "Qaysi so'z shu ma'noni bildiradi: \"to send something to other people online\"?",
+      "v": [
+        "magazine",
+        "article",
+        "website",
+        "share"
+      ],
+      "t": 3,
+      "izoh": "\"share\" — ulashmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#b615007b"
+    },
+    {
+      "q": "\"newspaper\" so'zi nimani anglatadi?",
+      "v": [
+        "a printed publication with news, sold daily or weekly",
+        "to send out a programme on television or radio",
+        "a notice that tries to persuade people to buy something",
+        "websites and apps where people share messages and photos"
+      ],
+      "t": 0,
+      "izoh": "\"newspaper\" degani gazeta.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#d51faf27"
+    },
+    {
+      "q": "\"journalist\" so'zi nimani anglatadi?",
+      "v": [
+        "a printed publication with news, sold daily or weekly",
+        "a person whose job is to write news stories",
+        "a set of pages on the internet",
+        "a thin book published weekly or monthly with articles and pictures"
+      ],
+      "t": 1,
+      "izoh": "\"journalist\" degani jurnalist.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#b5194b97"
+    },
+    {
+      "q": "\"headline\" so'zi nimani anglatadi?",
+      "v": [
+        "a message or picture put on social media",
+        "a television or radio station",
+        "the title of a news story printed in large letters",
+        "a set of pages on the internet"
+      ],
+      "t": 2,
+      "izoh": "\"headline\" degani sarlavha.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#ce7deeb7"
+    },
+    {
+      "q": "\"article\" so'zi nimani anglatadi?",
+      "v": [
+        "a person who watches television",
+        "very recent important news just received",
+        "the title of a news story printed in large letters",
+        "a piece of writing about a topic in a newspaper or magazine"
+      ],
+      "t": 3,
+      "izoh": "\"article\" degani maqola.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#00a6a784"
+    },
+    {
+      "q": "\"broadcast\" so'zi nimani anglatadi?",
+      "v": [
+        "to send out a programme on television or radio",
+        "a spoken or written account of an event or news",
+        "the group of people who watch or listen to something",
+        "a notice that tries to persuade people to buy something"
+      ],
+      "t": 0,
+      "izoh": "\"broadcast\" degani efirga uzatmoq / eshittirish.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#56ad7bce"
+    },
+    {
+      "q": "\"channel\" so'zi nimani anglatadi?",
+      "v": [
+        "to pay or sign up to receive something regularly",
+        "a television or radio station",
+        "a person who watches television",
+        "a person whose job is to write news stories"
+      ],
+      "t": 1,
+      "izoh": "\"channel\" degani telekanal.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#864dd7c3"
+    },
+    {
+      "q": "\"advertisement\" so'zi nimani anglatadi?",
+      "v": [
+        "to send out a programme on television or radio",
+        "a person who watches television",
+        "a notice that tries to persuade people to buy something",
+        "a message or picture put on social media"
+      ],
+      "t": 2,
+      "izoh": "\"advertisement\" degani reklama.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#1d639458"
+    },
+    {
+      "q": "\"social media\" so'zi nimani anglatadi?",
+      "v": [
+        "very recent important news just received",
+        "a spoken or written account of an event or news",
+        "a set of pages on the internet",
+        "websites and apps where people share messages and photos"
+      ],
+      "t": 3,
+      "izoh": "\"social media\" degani ijtimoiy tarmoqlar.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#4579ab09"
+    },
+    {
+      "q": "\"website\" so'zi nimani anglatadi?",
+      "v": [
+        "a set of pages on the internet",
+        "to send something to other people online",
+        "a piece of writing about a topic in a newspaper or magazine",
+        "the group of people who watch or listen to something"
+      ],
+      "t": 0,
+      "izoh": "\"website\" degani veb-sayt.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#946664ad"
+    },
+    {
+      "q": "\"report\" so'zi nimani anglatadi?",
+      "v": [
+        "to send something to other people online",
+        "a spoken or written account of an event or news",
+        "a thin book published weekly or monthly with articles and pictures",
+        "a notice that tries to persuade people to buy something"
+      ],
+      "t": 1,
+      "izoh": "\"report\" degani xabar / hisobot.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#2d5a1d90"
+    },
+    {
+      "q": "\"interview\" so'zi nimani anglatadi?",
+      "v": [
+        "to pay or sign up to receive something regularly",
+        "a person who watches television",
+        "a meeting where someone is asked questions",
+        "a thin book published weekly or monthly with articles and pictures"
+      ],
+      "t": 2,
+      "izoh": "\"interview\" degani intervyu / suhbat.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#b478ee5d"
+    },
+    {
+      "q": "\"magazine\" so'zi nimani anglatadi?",
+      "v": [
+        "a piece of writing about a topic in a newspaper or magazine",
+        "a television or radio station",
+        "very recent important news just received",
+        "a thin book published weekly or monthly with articles and pictures"
+      ],
+      "t": 3,
+      "izoh": "\"magazine\" degani jurnal.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#69d89d1e"
+    },
+    {
+      "q": "\"subscribe\" so'zi nimani anglatadi?",
+      "v": [
+        "to pay or sign up to receive something regularly",
+        "a thin book published weekly or monthly with articles and pictures",
+        "the title of a news story printed in large letters",
+        "a piece of writing about a topic in a newspaper or magazine"
+      ],
+      "t": 0,
+      "izoh": "\"subscribe\" degani obuna bo'lmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#a2254a26"
+    },
+    {
+      "q": "\"breaking news\" so'zi nimani anglatadi?",
+      "v": [
+        "a piece of writing about a topic in a newspaper or magazine",
+        "very recent important news just received",
+        "a spoken or written account of an event or news",
+        "a printed publication with news, sold daily or weekly"
+      ],
+      "t": 1,
+      "izoh": "\"breaking news\" degani shoshilinch yangilik.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#7b84488a"
+    },
+    {
+      "q": "\"viewer\" so'zi nimani anglatadi?",
+      "v": [
+        "a meeting where someone is asked questions",
+        "websites and apps where people share messages and photos",
+        "a person who watches television",
+        "a piece of writing about a topic in a newspaper or magazine"
+      ],
+      "t": 2,
+      "izoh": "\"viewer\" degani tomoshabin (TV).",
+      "qiy": "orta",
+      "id": "ing_b1_m23#0e10c9f0"
+    },
+    {
+      "q": "\"audience\" so'zi nimani anglatadi?",
+      "v": [
+        "the title of a news story printed in large letters",
+        "a piece of writing about a topic in a newspaper or magazine",
+        "a message or picture put on social media",
+        "the group of people who watch or listen to something"
+      ],
+      "t": 3,
+      "izoh": "\"audience\" degani auditoriya / tomoshabinlar.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#287a8497"
+    },
+    {
+      "q": "\"post\" so'zi nimani anglatadi?",
+      "v": [
+        "a message or picture put on social media",
+        "to pay or sign up to receive something regularly",
+        "a meeting where someone is asked questions",
+        "the title of a news story printed in large letters"
+      ],
+      "t": 0,
+      "izoh": "\"post\" degani post joylamoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#4477d0c1"
+    },
+    {
+      "q": "\"share\" so'zi nimani anglatadi?",
+      "v": [
+        "a spoken or written account of an event or news",
+        "to send something to other people online",
+        "websites and apps where people share messages and photos",
+        "a set of pages on the internet"
+      ],
+      "t": 1,
+      "izoh": "\"share\" degani ulashmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m23#5018816a"
+    },
+    {
+      "q": "This ____ has good sports pages on Mondays.",
+      "v": [
+        "headline",
+        "channel",
+        "newspaper",
+        "breaking news"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob \"newspaper\" (gazeta).",
+      "qiy": "orta",
+      "id": "ing_b1_m23#6c49b555"
+    },
+    {
+      "q": "She works as a ____ for a national TV company.",
+      "v": [
+        "interview",
+        "share",
+        "breaking news",
+        "journalist"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob \"journalist\" (jurnalist).",
+      "qiy": "orta",
+      "id": "ing_b1_m23#3014f9e6"
+    },
+    {
+      "q": "I only read the ____ and not the whole story.",
+      "v": [
+        "headline",
+        "article",
+        "journalist",
+        "social media"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob \"headline\" (sarlavha).",
+      "qiy": "orta",
+      "id": "ing_b1_m23#11f2e10e"
+    },
+    {
+      "q": "This ____ explains how to save money.",
+      "v": [
+        "interview",
+        "article",
+        "audience",
+        "headline"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob \"article\" (maqola).",
+      "qiy": "orta",
+      "id": "ing_b1_m23#4ddec9a7"
+    },
+    {
+      "q": "The radio station will ____ the concert at nine.",
+      "v": [
+        "magazine",
+        "report",
+        "broadcast",
+        "share"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob \"broadcast\" (efirga uzatmoq / eshittirish).",
+      "qiy": "orta",
+      "id": "ing_b1_m23#7b330d2b"
+    },
+    {
+      "q": "There is a new ____ that shows only films.",
+      "v": [
+        "report",
+        "broadcast",
+        "subscribe",
+        "channel"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob \"channel\" (telekanal).",
+      "qiy": "orta",
+      "id": "ing_b1_m23#f804f367"
+    },
+    {
+      "q": "That ____ on the wall is for a coffee shop.",
+      "v": [
+        "advertisement",
+        "report",
+        "website",
+        "interview"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob \"advertisement\" (reklama).",
+      "qiy": "orta",
+      "id": "ing_b1_m23#fc51f5a1"
+    },
+    {
+      "q": "He spends too much time on ____ every night.",
+      "v": [
+        "newspaper",
+        "social media",
+        "advertisement",
+        "report"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob \"social media\" (ijtimoiy tarmoqlar).",
+      "qiy": "orta",
+      "id": "ing_b1_m23#6d5a1ab8"
+    },
+    {
+      "q": "The school has a new ____ with all the timetables.",
+      "v": [
+        "channel",
+        "article",
+        "website",
+        "breaking news"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob \"website\" (veb-sayt).",
+      "qiy": "orta",
+      "id": "ing_b1_m23#a898af9a"
+    },
+    {
+      "q": "We watched a ____ about the flood on the news.",
+      "v": [
+        "headline",
+        "social media",
+        "interview",
+        "report"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob \"report\" (xabar / hisobot).",
+      "qiy": "orta",
+      "id": "ing_b1_m23#62a8dedf"
+    }
+  ]
+}

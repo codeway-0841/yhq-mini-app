@@ -1,0 +1,396 @@
+{
+  "nom": "Yes / No answers",
+  "bolim": "Tuzilma",
+  "savollar": [
+    {
+      "q": "Is it a dog? 🐶 — ___",
+      "v": [
+        "Yes, it is",
+        "No, they aren't",
+        "I like",
+        "This is"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri bo'lsa 'Yes, it is' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m4#4cf657db"
+    },
+    {
+      "q": "Is it a cat? 🐶 — ___",
+      "v": [
+        "No, it isn't",
+        "Yes, it is",
+        "These are",
+        "Good night"
+      ],
+      "t": 0,
+      "izoh": "Noto'g'ri bo'lsa 'No, it isn't' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m4#a6c16b96"
+    },
+    {
+      "q": "Are they cats? 🐱🐱 — ___",
+      "v": [
+        "Yes, they are",
+        "No, it isn't",
+        "I don't like",
+        "Hello"
+      ],
+      "t": 0,
+      "izoh": "Ko'plikda to'g'ri bo'lsa 'Yes, they are' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m4#bbca012d"
+    },
+    {
+      "q": "Are they birds? 🐶🐶 — ___",
+      "v": [
+        "No, they aren't",
+        "Yes, it is",
+        "This is",
+        "Goodbye"
+      ],
+      "t": 0,
+      "izoh": "Ko'plikda noto'g'ri bo'lsa 'No, they aren't' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m4#c85d6f64"
+    },
+    {
+      "q": "Is it an apple? 🍎 — ___",
+      "v": [
+        "Yes, it is",
+        "No, they aren't",
+        "I like",
+        "Good morning"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri bo'lsa 'Yes, it is' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m4#519dffe3"
+    },
+    {
+      "q": "Is it a ball? 🍎 — ___",
+      "v": [
+        "No, it isn't",
+        "Yes, they are",
+        "These are",
+        "Hello"
+      ],
+      "t": 0,
+      "izoh": "Noto'g'ri bo'lsa 'No, it isn't' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m4#fc2e5712"
+    },
+    {
+      "q": "Are they dogs? 🐶🐶 — ___",
+      "v": [
+        "Yes, they are",
+        "No, it isn't",
+        "I don't like",
+        "Good night"
+      ],
+      "t": 0,
+      "izoh": "Ko'plikda to'g'ri bo'lsa 'Yes, they are' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m4#0f3789a3"
+    },
+    {
+      "q": "Is it a fish? 🐦 — ___",
+      "v": [
+        "No, it isn't",
+        "Yes, it is",
+        "This is",
+        "Thank you"
+      ],
+      "t": 0,
+      "izoh": "Noto'g'ri bo'lsa 'No, it isn't' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m4#e2fe3ba1"
+    },
+    {
+      "q": "Are they flowers? 🌸🌸 — ___",
+      "v": [
+        "Yes, they are",
+        "No, it isn't",
+        "I like",
+        "Goodbye"
+      ],
+      "t": 0,
+      "izoh": "Ko'plikda to'g'ri bo'lsa 'Yes, they are' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m4#bc06161e"
+    },
+    {
+      "q": "Is it a car? 🚗 — ___",
+      "v": [
+        "Yes, it is",
+        "No, they aren't",
+        "These are",
+        "Hello"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri bo'lsa 'Yes, it is' deymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m4#947024f2"
+    },
+    {
+      "q": "Are they apples? 🍎🍎",
+      "v": [
+        "Yes, they are",
+        "No, they aren't",
+        "Yes, it is",
+        "No, it isn't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos: \"Yes, they are\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#0e8fa831"
+    },
+    {
+      "q": "Are they books? 📚📚",
+      "v": [
+        "Yes, they are",
+        "No, they aren't",
+        "Yes, it is",
+        "No, it isn't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos: \"Yes, they are\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#989c1572"
+    },
+    {
+      "q": "Are they stars? 🍌🍌",
+      "v": [
+        "No, they aren't",
+        "Yes, they are",
+        "Yes, it is",
+        "No, it isn't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos emas: \"No, they aren't\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#01d61e78"
+    },
+    {
+      "q": "Is it a bird? 🐦",
+      "v": [
+        "Yes, it is",
+        "No, it isn't",
+        "Yes, they are",
+        "No, they aren't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos: \"Yes, it is\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#406c8b6a"
+    },
+    {
+      "q": "Is it a pencil? 🖊️",
+      "v": [
+        "No, it isn't",
+        "Yes, it is",
+        "Yes, they are",
+        "No, they aren't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos emas: \"No, it isn't\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#689ab6fc"
+    },
+    {
+      "q": "Are they eggs? 🥚🥚🥚",
+      "v": [
+        "Yes, they are",
+        "No, they aren't",
+        "Yes, it is",
+        "No, it isn't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos: \"Yes, they are\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#6052c122"
+    },
+    {
+      "q": "Are they balloons? 🚗🚗",
+      "v": [
+        "No, they aren't",
+        "Yes, they are",
+        "Yes, it is",
+        "No, it isn't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos emas: \"No, they aren't\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#0097a31b"
+    },
+    {
+      "q": "Is it a star? ⭐",
+      "v": [
+        "Yes, it is",
+        "No, it isn't",
+        "Yes, they are",
+        "No, they aren't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos: \"Yes, it is\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#6210e988"
+    },
+    {
+      "q": "Is it an elephant? 🐘",
+      "v": [
+        "Yes, it is",
+        "No, it isn't",
+        "Yes, they are",
+        "No, they aren't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos: \"Yes, it is\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#6c60551d"
+    },
+    {
+      "q": "Are they cookies? 🍪🍪",
+      "v": [
+        "Yes, they are",
+        "No, they aren't",
+        "Yes, it is",
+        "No, it isn't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos: \"Yes, they are\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#e812a28e"
+    },
+    {
+      "q": "Are they cars? 🍎🍎🍎",
+      "v": [
+        "No, they aren't",
+        "Yes, they are",
+        "Yes, it is",
+        "No, it isn't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos emas: \"No, they aren't\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#00294ec3"
+    },
+    {
+      "q": "Is it a dog? 🐶",
+      "v": [
+        "Yes, it is",
+        "No, it isn't",
+        "Yes, they are",
+        "No, they aren't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos: \"Yes, it is\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#d1010628"
+    },
+    {
+      "q": "Is it a cat? 🐶",
+      "v": [
+        "No, it isn't",
+        "Yes, it is",
+        "Yes, they are",
+        "No, they aren't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos emas: \"No, it isn't\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#9ab8d03c"
+    },
+    {
+      "q": "Are they cats? 🐶🐶",
+      "v": [
+        "No, they aren't",
+        "Yes, they are",
+        "Yes, it is",
+        "No, it isn't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos emas: \"No, they aren't\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#17340de1"
+    },
+    {
+      "q": "Is it a ball? 🏀",
+      "v": [
+        "Yes, it is",
+        "No, it isn't",
+        "Yes, they are",
+        "No, they aren't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos: \"Yes, it is\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#b4533f40"
+    },
+    {
+      "q": "Is it a fish? 🐦",
+      "v": [
+        "No, it isn't",
+        "Yes, it is",
+        "Yes, they are",
+        "No, they aren't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos emas: \"No, it isn't\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#df88b130"
+    },
+    {
+      "q": "Is it an apple? 🍎",
+      "v": [
+        "Yes, it is",
+        "No, it isn't",
+        "Yes, they are",
+        "No, they aren't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos: \"Yes, it is\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#aaf5f2e3"
+    },
+    {
+      "q": "Is it a car? 🐱",
+      "v": [
+        "No, it isn't",
+        "Yes, it is",
+        "Yes, they are",
+        "No, they aren't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos emas: \"No, it isn't\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#5e010023"
+    },
+    {
+      "q": "Are they flowers? 🌸🌸🌸",
+      "v": [
+        "Yes, they are",
+        "No, they aren't",
+        "Yes, it is",
+        "No, it isn't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos: \"Yes, they are\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#9bae155b"
+    },
+    {
+      "q": "Are they dogs? 🐟🐟",
+      "v": [
+        "No, they aren't",
+        "Yes, they are",
+        "Yes, it is",
+        "No, it isn't"
+      ],
+      "t": 0,
+      "izoh": "Rasm mos emas: \"No, they aren't\".",
+      "qiy": "oson",
+      "id": "ing_kids_m4#78fff6fc"
+    }
+  ]
+}

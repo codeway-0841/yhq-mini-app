@@ -1,0 +1,1306 @@
+{
+  "nom": "Education (Ta'lim)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "'Subject' so'zining ma'nosi qaysi?",
+      "v": [
+        "fan (o'quv predmeti)",
+        "sinf xonasi",
+        "imtihon",
+        "baho"
+      ],
+      "t": 0,
+      "izoh": "Subject = o'quv fani, masalan matematika yoki tarix.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#6316a8e0"
+    },
+    {
+      "q": "My favourite ___ at school is history.",
+      "v": [
+        "subject",
+        "degree",
+        "deadline",
+        "tuition"
+      ],
+      "t": 0,
+      "izoh": "Subject = o'quv fani.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#e6c9adf0"
+    },
+    {
+      "q": "Qaysi so'z 'o'quv fani' ma'nosini beradi?",
+      "v": [
+        "subject",
+        "pupil",
+        "lecture",
+        "term"
+      ],
+      "t": 0,
+      "izoh": "Subject = fan.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#fc77266b"
+    },
+    {
+      "q": "She studies six ___ this year, including biology and English.",
+      "v": [
+        "subjects",
+        "degrees",
+        "exams",
+        "terms"
+      ],
+      "t": 0,
+      "izoh": "Subjects = fanlar.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#93107bda"
+    },
+    {
+      "q": "Which word means an area of study like maths or physics?",
+      "v": [
+        "subject",
+        "scholarship",
+        "semester",
+        "graduate"
+      ],
+      "t": 0,
+      "izoh": "Subject = o'rganiladigan soha/fan.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#147accbc"
+    },
+    {
+      "q": "'Degree' (universitet) so'zining ma'nosi?",
+      "v": [
+        "diplom/ilmiy daraja",
+        "dars",
+        "muddat",
+        "o'quvchi"
+      ],
+      "t": 0,
+      "izoh": "Degree = universitet diplomi yoki ilmiy daraja.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#f22c3d0b"
+    },
+    {
+      "q": "After four years of study he got a ___ in economics.",
+      "v": [
+        "degree",
+        "pupil",
+        "lecture",
+        "litter"
+      ],
+      "t": 0,
+      "izoh": "Degree = universitet darajasi/diplomi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#4ab77de2"
+    },
+    {
+      "q": "Qaysi so'z 'universitet diplomi' ma'nosini beradi?",
+      "v": [
+        "degree",
+        "term",
+        "note",
+        "waste"
+      ],
+      "t": 0,
+      "izoh": "Degree = diplom/daraja.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#b712e12a"
+    },
+    {
+      "q": "She is studying for a master's ___.",
+      "v": [
+        "degree",
+        "exam",
+        "school",
+        "subject"
+      ],
+      "t": 0,
+      "izoh": "Master's degree = magistr darajasi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#21f3cbf1"
+    },
+    {
+      "q": "A university qualification you get after finishing your studies is a ___.",
+      "v": [
+        "degree",
+        "deadline",
+        "pupil",
+        "lecture"
+      ],
+      "t": 0,
+      "izoh": "Degree = universitetni tugatgach olinadigan daraja.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#2e7aef69"
+    },
+    {
+      "q": "'Graduate' (fe'l) so'zining ma'nosi?",
+      "v": [
+        "universitetni tamomlamoq",
+        "darsga kirmoq",
+        "imtihon topshirmoq",
+        "kitob o'qimoq"
+      ],
+      "t": 0,
+      "izoh": "Graduate = o'quv yurtini bitirmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#5ee6a89b"
+    },
+    {
+      "q": "She will ___ from university next summer.",
+      "v": [
+        "graduate",
+        "revise",
+        "recycle",
+        "protect"
+      ],
+      "t": 0,
+      "izoh": "Graduate = bitirmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#2763f078"
+    },
+    {
+      "q": "Qaysi so'z 'o'quv yurtini bitirgan kishi' ma'nosini beradi?",
+      "v": [
+        "graduate",
+        "pupil",
+        "tuition",
+        "term"
+      ],
+      "t": 0,
+      "izoh": "Graduate = bitiruvchi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#f9394b5a"
+    },
+    {
+      "q": "After I ___, I want to become a teacher.",
+      "v": [
+        "graduate",
+        "fail",
+        "litter",
+        "waste"
+      ],
+      "t": 0,
+      "izoh": "Graduate = o'qishni tugatmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#82742f6d"
+    },
+    {
+      "q": "A person who has completed a university degree is a ___.",
+      "v": [
+        "graduate",
+        "lecture",
+        "deadline",
+        "subject"
+      ],
+      "t": 0,
+      "izoh": "Graduate = bitiruvchi/diplomli kishi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#1c0483fd"
+    },
+    {
+      "q": "'University' so'zining ma'nosi?",
+      "v": [
+        "universitet",
+        "boshlang'ich maktab",
+        "kutubxona",
+        "imtihon"
+      ],
+      "t": 0,
+      "izoh": "University = oliy o'quv yurti.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#502e0fe8"
+    },
+    {
+      "q": "He hopes to study medicine at ___.",
+      "v": [
+        "university",
+        "litter",
+        "term",
+        "waste"
+      ],
+      "t": 0,
+      "izoh": "University = universitet.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#38340307"
+    },
+    {
+      "q": "Qaysi so'z 'oliy o'quv yurti' ma'nosini beradi?",
+      "v": [
+        "university",
+        "pupil",
+        "lecture",
+        "note"
+      ],
+      "t": 0,
+      "izoh": "University = universitet.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#c61d6b5c"
+    },
+    {
+      "q": "Students at a ___ can earn a degree.",
+      "v": [
+        "university",
+        "deadline",
+        "scholarship",
+        "subject"
+      ],
+      "t": 0,
+      "izoh": "University = daraja olinadigan oliy o'quv yurti.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#5301a070"
+    },
+    {
+      "q": "A place of higher education for adults is a ___.",
+      "v": [
+        "university",
+        "primary school",
+        "exam",
+        "term"
+      ],
+      "t": 0,
+      "izoh": "University = kattalar uchun oliy ta'lim maskani.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#7af60575"
+    },
+    {
+      "q": "'Lecture' so'zining ma'nosi?",
+      "v": [
+        "ma'ruza",
+        "imtihon",
+        "diplom",
+        "muddat"
+      ],
+      "t": 0,
+      "izoh": "Lecture = universitetdagi ma'ruza.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#dccd3ec7"
+    },
+    {
+      "q": "The professor gave an interesting ___ about ancient Rome.",
+      "v": [
+        "lecture",
+        "deadline",
+        "pupil",
+        "waste"
+      ],
+      "t": 0,
+      "izoh": "Lecture = ma'ruza.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#e8cb77c0"
+    },
+    {
+      "q": "Qaysi so'z 'ma'ruza' ma'nosini beradi?",
+      "v": [
+        "lecture",
+        "term",
+        "degree",
+        "litter"
+      ],
+      "t": 0,
+      "izoh": "Lecture = ma'ruza.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#12327702"
+    },
+    {
+      "q": "Hundreds of students listened to the ___ in the big hall.",
+      "v": [
+        "lecture",
+        "exam",
+        "school",
+        "scholarship"
+      ],
+      "t": 0,
+      "izoh": "Lecture = katta zaldagi ma'ruza.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#2441ca10"
+    },
+    {
+      "q": "A formal talk given to students by a teacher at university is a ___.",
+      "v": [
+        "lecture",
+        "subject",
+        "deadline",
+        "tuition"
+      ],
+      "t": 0,
+      "izoh": "Lecture = o'qituvchi bergan rasmiy ma'ruza.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#b5d55b53"
+    },
+    {
+      "q": "'Term' (maktab) so'zining ma'nosi?",
+      "v": [
+        "o'quv chorak/muddat",
+        "imtihon",
+        "o'quvchi",
+        "diplom"
+      ],
+      "t": 0,
+      "izoh": "Term = o'quv chorak yoki davr.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#139957ba"
+    },
+    {
+      "q": "The school year is divided into three ___.",
+      "v": [
+        "terms",
+        "lectures",
+        "degrees",
+        "pupils"
+      ],
+      "t": 0,
+      "izoh": "Terms = o'quv choraklari.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#c414573b"
+    },
+    {
+      "q": "Qaysi so'z 'o'quv davri/chorak' ma'nosini beradi?",
+      "v": [
+        "term",
+        "waste",
+        "litter",
+        "subject"
+      ],
+      "t": 0,
+      "izoh": "Term = o'quv davri.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#4f5488a1"
+    },
+    {
+      "q": "We have a long holiday at the end of the ___.",
+      "v": [
+        "term",
+        "exam",
+        "note",
+        "scholarship"
+      ],
+      "t": 0,
+      "izoh": "Term = chorak oxirida ta'til.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#b03a8766"
+    },
+    {
+      "q": "A period of the school year, often three per year in the UK, is a ___.",
+      "v": [
+        "term",
+        "graduate",
+        "lecture",
+        "deadline"
+      ],
+      "t": 0,
+      "izoh": "Term = o'quv yilidagi davr.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#02b146e0"
+    },
+    {
+      "q": "'Semester' so'zining ma'nosi?",
+      "v": [
+        "o'quv semestri (yarim yil)",
+        "imtihon",
+        "o'quvchi",
+        "ma'ruza"
+      ],
+      "t": 0,
+      "izoh": "Semester = o'quv yilining yarmi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#0325f390"
+    },
+    {
+      "q": "The first ___ ends in January.",
+      "v": [
+        "semester",
+        "pupil",
+        "litter",
+        "degree"
+      ],
+      "t": 0,
+      "izoh": "Semester = semestr.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#bfa18239"
+    },
+    {
+      "q": "Qaysi so'z 'universitet yarim yili' ma'nosini beradi?",
+      "v": [
+        "semester",
+        "term paper",
+        "waste",
+        "subject"
+      ],
+      "t": 0,
+      "izoh": "Semester = yarim o'quv yili.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#88372222"
+    },
+    {
+      "q": "Universities often divide the year into two ___.",
+      "v": [
+        "semesters",
+        "deadlines",
+        "lectures",
+        "pupils"
+      ],
+      "t": 0,
+      "izoh": "Semesters = ikki semestr.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#fe494fd4"
+    },
+    {
+      "q": "A half of an academic year is called a ___.",
+      "v": [
+        "semester",
+        "exam",
+        "scholarship",
+        "note"
+      ],
+      "t": 0,
+      "izoh": "Semester = o'quv yilining yarmi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#7988a4a8"
+    },
+    {
+      "q": "'Exam' so'zining ma'nosi?",
+      "v": [
+        "imtihon",
+        "dars",
+        "diplom",
+        "ta'til"
+      ],
+      "t": 0,
+      "izoh": "Exam = imtihon.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#9531d925"
+    },
+    {
+      "q": "I studied all night before the maths ___.",
+      "v": [
+        "exam",
+        "term",
+        "litter",
+        "pupil"
+      ],
+      "t": 0,
+      "izoh": "Exam = imtihon.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#3b520cde"
+    },
+    {
+      "q": "Qaysi so'z 'imtihon' ma'nosini beradi?",
+      "v": [
+        "exam",
+        "lecture",
+        "waste",
+        "degree"
+      ],
+      "t": 0,
+      "izoh": "Exam = imtihon.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#1bd91817"
+    },
+    {
+      "q": "If you want to pass, you must prepare for the ___.",
+      "v": [
+        "exam",
+        "deadline",
+        "subject",
+        "scholarship"
+      ],
+      "t": 0,
+      "izoh": "Exam = imtihon.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#d719a4c3"
+    },
+    {
+      "q": "A test of knowledge, usually written, is an ___.",
+      "v": [
+        "exam",
+        "graduate",
+        "term",
+        "note"
+      ],
+      "t": 0,
+      "izoh": "Exam = bilim sinovi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#7df2c1c9"
+    },
+    {
+      "q": "'Revise' (o'qish) so'zining ma'nosi?",
+      "v": [
+        "takrorlamoq (imtihonga)",
+        "yozmoq",
+        "bitirmoq",
+        "topshirmoq"
+      ],
+      "t": 0,
+      "izoh": "Revise = imtihon uchun takrorlab o'rganmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#2fd44a8d"
+    },
+    {
+      "q": "I need to ___ my notes before the test tomorrow.",
+      "v": [
+        "revise",
+        "recycle",
+        "pollute",
+        "graduate"
+      ],
+      "t": 0,
+      "izoh": "Revise = takrorlamoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#46c86c82"
+    },
+    {
+      "q": "Qaysi so'z 'darsni takrorlab o'rganmoq' ma'nosini beradi?",
+      "v": [
+        "revise",
+        "hand in",
+        "fail",
+        "litter"
+      ],
+      "t": 0,
+      "izoh": "Revise = takrorlamoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#c09d8c65"
+    },
+    {
+      "q": "She spent the weekend revising for her ___.",
+      "v": [
+        "exam",
+        "litter",
+        "waste",
+        "pupil"
+      ],
+      "t": 0,
+      "izoh": "Revise for exam = imtihonga takrorlamoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#e0342fd0"
+    },
+    {
+      "q": "To study your lessons again before a test is to ___.",
+      "v": [
+        "revise",
+        "graduate",
+        "protect",
+        "recycle"
+      ],
+      "t": 0,
+      "izoh": "Revise = qayta o'rganib takrorlamoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#30df1ec1"
+    },
+    {
+      "q": "'Pass an exam' iborasining ma'nosi?",
+      "v": [
+        "imtihondan o'tmoq",
+        "imtihonda yiqilmoq",
+        "darsga kirmoq",
+        "diplom olmoq"
+      ],
+      "t": 0,
+      "izoh": "Pass = imtihondan muvaffaqiyatli o'tmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#18e0e7c2"
+    },
+    {
+      "q": "Congratulations! You ___ all your exams.",
+      "v": [
+        "passed",
+        "failed",
+        "revised",
+        "littered"
+      ],
+      "t": 0,
+      "izoh": "Passed = o'tdi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#8301d431"
+    },
+    {
+      "q": "Qaysi so'z 'imtihondan o'tmoq' ma'nosini beradi?",
+      "v": [
+        "pass",
+        "fail",
+        "hand in",
+        "waste"
+      ],
+      "t": 0,
+      "izoh": "Pass = o'tmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#cab6842d"
+    },
+    {
+      "q": "If your score is high enough, you ___ the test.",
+      "v": [
+        "pass",
+        "fail",
+        "recycle",
+        "graduate"
+      ],
+      "t": 0,
+      "izoh": "Pass = o'tmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#b869dcbd"
+    },
+    {
+      "q": "To be successful in an exam means to ___ it.",
+      "v": [
+        "pass",
+        "fail",
+        "revise",
+        "protect"
+      ],
+      "t": 0,
+      "izoh": "Pass = muvaffaqiyatli topshirmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#1f5c95c1"
+    },
+    {
+      "q": "'Fail an exam' iborasining ma'nosi?",
+      "v": [
+        "imtihonda yiqilmoq",
+        "imtihondan o'tmoq",
+        "diplom olmoq",
+        "takrorlamoq"
+      ],
+      "t": 0,
+      "izoh": "Fail = imtihondan o'ta olmaslik.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#91811e97"
+    },
+    {
+      "q": "He didn't study, so he ___ the exam.",
+      "v": [
+        "failed",
+        "passed",
+        "revised",
+        "graduated"
+      ],
+      "t": 0,
+      "izoh": "Failed = yiqildi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#7cdbb3d2"
+    },
+    {
+      "q": "Qaysi so'z 'muvaffaqiyatsizlikka uchramoq' ma'nosini beradi?",
+      "v": [
+        "fail",
+        "pass",
+        "recycle",
+        "note"
+      ],
+      "t": 0,
+      "izoh": "Fail = yiqilmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#1c5cb414"
+    },
+    {
+      "q": "If you don't get enough marks, you ___ the test.",
+      "v": [
+        "fail",
+        "pass",
+        "protect",
+        "graduate"
+      ],
+      "t": 0,
+      "izoh": "Fail = yiqilmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#d2e9cc14"
+    },
+    {
+      "q": "The opposite of 'pass' in an exam is to ___.",
+      "v": [
+        "fail",
+        "revise",
+        "hand in",
+        "litter"
+      ],
+      "t": 0,
+      "izoh": "Fail = 'pass' ning teskarisi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#26981b23"
+    },
+    {
+      "q": "'Scholarship' so'zining ma'nosi?",
+      "v": [
+        "stipendiya/grant",
+        "imtihon",
+        "diplom",
+        "ma'ruza"
+      ],
+      "t": 0,
+      "izoh": "Scholarship = o'qish uchun beriladigan pul yordami.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#e5bf1492"
+    },
+    {
+      "q": "She won a ___ to study at a top university.",
+      "v": [
+        "scholarship",
+        "deadline",
+        "litter",
+        "waste"
+      ],
+      "t": 0,
+      "izoh": "Scholarship = grant/stipendiya.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#b525fd01"
+    },
+    {
+      "q": "Qaysi so'z 'o'qish uchun moliyaviy yordam' ma'nosini beradi?",
+      "v": [
+        "scholarship",
+        "tuition",
+        "pupil",
+        "term"
+      ],
+      "t": 0,
+      "izoh": "Scholarship = bepul o'qish granti.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#08066b8f"
+    },
+    {
+      "q": "Because his family was poor, the ___ paid for his studies.",
+      "v": [
+        "scholarship",
+        "exam",
+        "subject",
+        "note"
+      ],
+      "t": 0,
+      "izoh": "Scholarship = o'qishni to'lab beruvchi grant.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#5d1b82e1"
+    },
+    {
+      "q": "Money given to a good student to help pay for education is a ___.",
+      "v": [
+        "scholarship",
+        "deadline",
+        "lecture",
+        "degree"
+      ],
+      "t": 0,
+      "izoh": "Scholarship = a'lochi talabaga beriladigan pul yordami.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#9fd0ed1b"
+    },
+    {
+      "q": "'Tuition (fee)' so'zining ma'nosi?",
+      "v": [
+        "o'qish to'lovi",
+        "stipendiya",
+        "diplom",
+        "ta'til"
+      ],
+      "t": 0,
+      "izoh": "Tuition = o'qish uchun to'lanadigan pul.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#9c01c4a1"
+    },
+    {
+      "q": "University ___ fees are very expensive these days.",
+      "v": [
+        "tuition",
+        "litter",
+        "waste",
+        "term"
+      ],
+      "t": 0,
+      "izoh": "Tuition fees = o'qish to'lovi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#be44ef47"
+    },
+    {
+      "q": "Qaysi so'z 'o'qish uchun to'lov' ma'nosini beradi?",
+      "v": [
+        "tuition",
+        "scholarship",
+        "pupil",
+        "exam"
+      ],
+      "t": 0,
+      "izoh": "Tuition = o'qish to'lovi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#93338535"
+    },
+    {
+      "q": "Her parents pay her ___ every year.",
+      "v": [
+        "tuition",
+        "deadline",
+        "lecture",
+        "subject"
+      ],
+      "t": 0,
+      "izoh": "Tuition = o'qish haqi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#ca1c1558"
+    },
+    {
+      "q": "The money you pay to study at a school or university is ___.",
+      "v": [
+        "tuition",
+        "degree",
+        "note",
+        "litter"
+      ],
+      "t": 0,
+      "izoh": "Tuition = o'qish to'lovi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#f78561a2"
+    },
+    {
+      "q": "'Pupil' so'zining ma'nosi?",
+      "v": [
+        "o'quvchi (maktab)",
+        "o'qituvchi",
+        "diplom",
+        "imtihon"
+      ],
+      "t": 0,
+      "izoh": "Pupil = maktab o'quvchisi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#c37e209c"
+    },
+    {
+      "q": "There are thirty ___ in her class.",
+      "v": [
+        "pupils",
+        "lectures",
+        "degrees",
+        "terms"
+      ],
+      "t": 0,
+      "izoh": "Pupils = o'quvchilar.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#4741b540"
+    },
+    {
+      "q": "Qaysi so'z 'maktab o'quvchisi' ma'nosini beradi?",
+      "v": [
+        "pupil",
+        "tuition",
+        "waste",
+        "subject"
+      ],
+      "t": 0,
+      "izoh": "Pupil = o'quvchi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#ba84638c"
+    },
+    {
+      "q": "The teacher asked a ___ to read aloud.",
+      "v": [
+        "pupil",
+        "deadline",
+        "litter",
+        "degree"
+      ],
+      "t": 0,
+      "izoh": "Pupil = o'quvchi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#7927c839"
+    },
+    {
+      "q": "A child who is taught at school is a ___.",
+      "v": [
+        "pupil",
+        "graduate",
+        "lecture",
+        "scholarship"
+      ],
+      "t": 0,
+      "izoh": "Pupil = maktabda o'qiydigan bola.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#bb5111be"
+    },
+    {
+      "q": "'Primary school' iborasining ma'nosi?",
+      "v": [
+        "boshlang'ich maktab",
+        "oliy o'quv yurti",
+        "kollej",
+        "bog'cha"
+      ],
+      "t": 0,
+      "izoh": "Primary school = boshlang'ich maktab.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#177c56a5"
+    },
+    {
+      "q": "Children usually start ___ at the age of six or seven.",
+      "v": [
+        "primary school",
+        "university",
+        "a lecture",
+        "a degree"
+      ],
+      "t": 0,
+      "izoh": "Primary school = boshlang'ich maktab.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#d30a6440"
+    },
+    {
+      "q": "Qaysi ibora 'boshlang'ich maktab' ma'nosini beradi?",
+      "v": [
+        "primary school",
+        "secondary school",
+        "term",
+        "exam"
+      ],
+      "t": 0,
+      "izoh": "Primary school = kichik yoshlar maktabi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#df57bbd6"
+    },
+    {
+      "q": "Young children between 5 and 11 go to ___.",
+      "v": [
+        "primary school",
+        "university",
+        "scholarship",
+        "tuition"
+      ],
+      "t": 0,
+      "izoh": "Primary school = 5-11 yoshlilar maktabi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#f7a1d718"
+    },
+    {
+      "q": "The first level of school for young children is called ___.",
+      "v": [
+        "primary school",
+        "secondary school",
+        "a lecture",
+        "a semester"
+      ],
+      "t": 0,
+      "izoh": "Primary school = maktabning birinchi bosqichi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#fa0e93c1"
+    },
+    {
+      "q": "'Secondary school' iborasining ma'nosi?",
+      "v": [
+        "o'rta maktab (katta yoshlar)",
+        "boshlang'ich maktab",
+        "universitet",
+        "bog'cha"
+      ],
+      "t": 0,
+      "izoh": "Secondary school = o'rta ta'lim maktabi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#e381945d"
+    },
+    {
+      "q": "After primary school, students move to ___.",
+      "v": [
+        "secondary school",
+        "university",
+        "a degree",
+        "a lecture"
+      ],
+      "t": 0,
+      "izoh": "Secondary school = keyingi bosqich maktab.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#56cef002"
+    },
+    {
+      "q": "Qaysi ibora 'o'rta maktab' ma'nosini beradi?",
+      "v": [
+        "secondary school",
+        "primary school",
+        "tuition",
+        "waste"
+      ],
+      "t": 0,
+      "izoh": "Secondary school = o'rta maktab.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#e202767c"
+    },
+    {
+      "q": "Teenagers usually study at a ___.",
+      "v": [
+        "secondary school",
+        "primary school",
+        "scholarship",
+        "term"
+      ],
+      "t": 0,
+      "izoh": "Secondary school = o'smirlar maktabi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#34e643d9"
+    },
+    {
+      "q": "The school for older children, usually aged 11 to 18, is ___.",
+      "v": [
+        "secondary school",
+        "primary school",
+        "university",
+        "a pupil"
+      ],
+      "t": 0,
+      "izoh": "Secondary school = 11-18 yoshlilar maktabi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#4957d0e6"
+    },
+    {
+      "q": "'Take notes' iborasining ma'nosi?",
+      "v": [
+        "qaydlar yozib olmoq",
+        "imtihon topshirmoq",
+        "diplom olmoq",
+        "dam olmoq"
+      ],
+      "t": 0,
+      "izoh": "Take notes = eng muhim narsalarni yozib olmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#e0c821e0"
+    },
+    {
+      "q": "It is a good idea to ___ during a lecture.",
+      "v": [
+        "take notes",
+        "fail",
+        "recycle",
+        "graduate"
+      ],
+      "t": 0,
+      "izoh": "Take notes = qaydlar olmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#c7620589"
+    },
+    {
+      "q": "Qaysi ibora 'yozib borish' ma'nosini beradi?",
+      "v": [
+        "take notes",
+        "hand in",
+        "save energy",
+        "litter"
+      ],
+      "t": 0,
+      "izoh": "Take notes = qayd qilmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#35eeb6f0"
+    },
+    {
+      "q": "She always ___ so she can revise later.",
+      "v": [
+        "takes notes",
+        "fails",
+        "pollutes",
+        "litters"
+      ],
+      "t": 0,
+      "izoh": "Takes notes = qaydlar yozadi.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#b78e073a"
+    },
+    {
+      "q": "To write down important points during a class is to ___.",
+      "v": [
+        "take notes",
+        "hand in",
+        "pass",
+        "recycle"
+      ],
+      "t": 0,
+      "izoh": "Take notes = muhim fikrlarni yozib olmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#2bcbbfd7"
+    },
+    {
+      "q": "'Hand in' iborasining ma'nosi?",
+      "v": [
+        "topshirmoq (ish/vazifa)",
+        "olmoq",
+        "yiqilmoq",
+        "takrorlamoq"
+      ],
+      "t": 0,
+      "izoh": "Hand in = uy vazifasi yoki ishni topshirmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#4ceacd3d"
+    },
+    {
+      "q": "You must ___ your homework by Friday.",
+      "v": [
+        "hand in",
+        "revise",
+        "recycle",
+        "protect"
+      ],
+      "t": 0,
+      "izoh": "Hand in = topshirmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#c96736d4"
+    },
+    {
+      "q": "Qaysi ibora 'vazifani topshirmoq' ma'nosini beradi?",
+      "v": [
+        "hand in",
+        "take notes",
+        "pass",
+        "litter"
+      ],
+      "t": 0,
+      "izoh": "Hand in = topshirmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#19771b7b"
+    },
+    {
+      "q": "Please ___ your essays to the teacher now.",
+      "v": [
+        "hand in",
+        "graduate",
+        "fail",
+        "waste"
+      ],
+      "t": 0,
+      "izoh": "Hand in = topshirmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#2d9858b5"
+    },
+    {
+      "q": "To give your completed work to a teacher is to ___ it.",
+      "v": [
+        "hand in",
+        "revise",
+        "save energy",
+        "recycle"
+      ],
+      "t": 0,
+      "izoh": "Hand in = tayyor ishni topshirmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#a0973922"
+    },
+    {
+      "q": "'Deadline' so'zining ma'nosi?",
+      "v": [
+        "oxirgi muddat",
+        "imtihon",
+        "diplom",
+        "dars"
+      ],
+      "t": 0,
+      "izoh": "Deadline = ish tugatilishi kerak bo'lgan oxirgi vaqt.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#24a0f88a"
+    },
+    {
+      "q": "The ___ for the project is next Monday.",
+      "v": [
+        "deadline",
+        "pupil",
+        "litter",
+        "lecture"
+      ],
+      "t": 0,
+      "izoh": "Deadline = oxirgi muddat.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#ea95cd44"
+    },
+    {
+      "q": "Qaysi so'z 'topshirishning oxirgi muddati' ma'nosini beradi?",
+      "v": [
+        "deadline",
+        "term",
+        "waste",
+        "degree"
+      ],
+      "t": 0,
+      "izoh": "Deadline = oxirgi muddat.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#a0d50201"
+    },
+    {
+      "q": "I must finish this essay before the ___.",
+      "v": [
+        "deadline",
+        "scholarship",
+        "note",
+        "subject"
+      ],
+      "t": 0,
+      "izoh": "Deadline = belgilangan oxirgi vaqt.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#5fb13a1d"
+    },
+    {
+      "q": "The last time by which you must complete something is a ___.",
+      "v": [
+        "deadline",
+        "semester",
+        "pupil",
+        "lecture"
+      ],
+      "t": 0,
+      "izoh": "Deadline = ish tugatilishi shart bo'lgan vaqt.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#034a728e"
+    },
+    {
+      "q": "'Qualification' so'zining ma'nosi?",
+      "v": [
+        "malaka/diplom guvohnomasi",
+        "imtihon xonasi",
+        "ta'til",
+        "o'quvchi"
+      ],
+      "t": 0,
+      "izoh": "Qualification = ta'lim yoki malakani tasdiqlovchi hujjat.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#7231ba28"
+    },
+    {
+      "q": "You need the right ___ to become a doctor.",
+      "v": [
+        "qualifications",
+        "litter",
+        "waste",
+        "pupils"
+      ],
+      "t": 0,
+      "izoh": "Qualifications = malaka hujjatlari.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#3d49aed8"
+    },
+    {
+      "q": "Qaysi so'z 'malaka guvohnomasi' ma'nosini beradi?",
+      "v": [
+        "qualification",
+        "deadline",
+        "lecture",
+        "term"
+      ],
+      "t": 0,
+      "izoh": "Qualification = malaka hujjati.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#ef43228b"
+    },
+    {
+      "q": "A degree is a type of ___ that helps you get a job.",
+      "v": [
+        "qualification",
+        "litter",
+        "waste",
+        "note"
+      ],
+      "t": 0,
+      "izoh": "Qualification = ishga yordam beruvchi hujjat.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#484fa651"
+    },
+    {
+      "q": "An official record that you have passed an exam or course is a ___.",
+      "v": [
+        "qualification",
+        "scholarship",
+        "pupil",
+        "lecture"
+      ],
+      "t": 0,
+      "izoh": "Qualification = kursni tugatganlik hujjati.",
+      "qiy": "orta",
+      "id": "ing_b1_m21#77815afb"
+    }
+  ]
+}

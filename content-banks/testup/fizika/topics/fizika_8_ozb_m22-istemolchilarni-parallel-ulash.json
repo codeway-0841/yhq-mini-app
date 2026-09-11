@@ -1,0 +1,516 @@
+{
+  "nom": "22-mavzu. Istemolchilarni Parallel Ulash",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Xonadondagi barcha elektr asboblar (lampochkalar, televizor, muzlatgich) bir-biriga qanday ulanadi?",
+      "v": [
+        "Parallel",
+        "Ketma-ket",
+        "Aralash",
+        "Deyarli barchasi izolyatsiya qilingan"
+      ],
+      "t": 0,
+      "izoh": "Xonadonlarda barcha iste'molchilar bir-biriga parallel ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#7e0d9b90"
+    },
+    {
+      "q": "Agar xonadondagi asboblar ketma-ket ulanganida kuchlanish ular orasida qanday bo'lardi?",
+      "v": [
+        "Taqsimlangan bo'lardi",
+        "Barchasida bir xil bo'lardi",
+        "Nolga teng bo'lardi",
+        "Har birida ikki baravar bo'lardi"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanganda kuchlanish iste'molchilar orasida taqsimlanardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#a5cf06f4"
+    },
+    {
+      "q": "Nima sababdan xonadon va avtomobillarning elektr simlarini ulashda ketma-ket ulashdan foydalanilmaydi?",
+      "v": [
+        "Ketma-ket ulanganda kuchlanish pasayib ketadi va bir iste'molchi o'chirilsa, boshqalari ham o'chadi",
+        "Ketma-ket ulash juda qimmatga tushadi",
+        "Ketma-ket ulashda simlar tez kuyib ketadi",
+        "Ketma-ket ulashda tok umuman hosil bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanganda kuchlanish taqsimlanib, asboblar ishlolmaydi; bir iste'molchi o'chirilsa, boshqalari ham o'chadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#a13c6f2d"
+    },
+    {
+      "q": "67-rasmdagi tajribada ikkita parallel ulangan lampochkaga parallel ulangan voltmetr qanday kuchlanishni ko'rsatdi?",
+      "v": [
+        "4 V",
+        "2 V",
+        "6 V",
+        "8 V"
+      ],
+      "t": 0,
+      "izoh": "Tajribada voltmetr 4 V kuchlanishni ko'rsatdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#66abac6c"
+    },
+    {
+      "q": "Parallel ulangan ikkita lampochkadagi kuchlanishlar orasidagi munosabat qanday ifodalanadi?",
+      "v": [
+        "U₁ = U₂ = U",
+        "U = U₁ + U₂",
+        "U₁ = 2U₂",
+        "U = U₁ − U₂"
+      ],
+      "t": 0,
+      "izoh": "Parallel ulanganda ikkala lampochkadagi kuchlanish bir xil bo'lib, zanjirdagi to'liq kuchlanishga teng: U₁ = U₂ = U.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#8fda07f0"
+    },
+    {
+      "q": "Iste'molchilar parallel ulanganda, har bir o'tkazgich uchlari orasidagi kuchlanish qanday bo'ladi?",
+      "v": [
+        "Bir xil bo'ladi",
+        "Har birida turlicha bo'ladi",
+        "Nolga teng bo'ladi",
+        "To'liq kuchlanishning yarmiga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Iste'molchilar parallel ulanganda, har bir o'tkazgich uchlari orasidagi kuchlanish bir xil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#b72339b8"
+    },
+    {
+      "q": "Zanjirga n ta lampochka parallel ulanganda ulardagi kuchlanishlar qanday bo'ladi?",
+      "v": [
+        "U₁ = U₂ = U₃ = ... = Uₙ",
+        "U = U₁ + U₂ + ... + Uₙ",
+        "U₁ = U₂/2 = U₃/3",
+        "Uₙ = nU₁"
+      ],
+      "t": 0,
+      "izoh": "n ta lampochka parallel ulanganda ulardagi kuchlanishlar teng: U₁ = U₂ = U₃ = ... = Uₙ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#236619a9"
+    },
+    {
+      "q": "67-rasmdagi tajribada kalit ulanganda birinchi ampermetr qanday qiymatni ko'rsatdi?",
+      "v": [
+        "I₁ = 0,6 A",
+        "I₁ = 0,4 A",
+        "I₁ = 1 A",
+        "I₁ = 0,2 A"
+      ],
+      "t": 0,
+      "izoh": "Birinchi ampermetr I₁ = 0,6 A ni ko'rsatdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#e2bb618c"
+    },
+    {
+      "q": "67-rasmdagi tajribada kalit ulanganda ikkinchi ampermetr qanday qiymatni ko'rsatdi?",
+      "v": [
+        "I₂ = 0,4 A",
+        "I₂ = 0,6 A",
+        "I₂ = 1 A",
+        "I₂ = 0,8 A"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi ampermetr I₂ = 0,4 A ni ko'rsatdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#39c77682"
+    },
+    {
+      "q": "67-rasmdagi tajribada zanjirning tarmoqlanmagan qismidagi ampermetr qanday qiymatni ko'rsatdi?",
+      "v": [
+        "I = 1 A",
+        "I = 0,2 A",
+        "I = 0,6 A",
+        "I = 2 A"
+      ],
+      "t": 0,
+      "izoh": "Tarmoqlanmagan qismdagi ampermetr I = 1 A ni ko'rsatdi (0,6 + 0,4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#d2fb6726"
+    },
+    {
+      "q": "Parallel ulangan zanjirdagi to'liq tok kuchi nimaga teng?",
+      "v": [
+        "Har bir iste'molchidagi tok kuchining yig'indisiga",
+        "Har bir iste'molchidagi tok kuchining ayirmasiga",
+        "Eng kichik tarmoqdagi tok kuchiga",
+        "Har bir iste'molchidagi tok kuchining ko'paytmasiga"
+      ],
+      "t": 0,
+      "izoh": "Parallel ulanganda zanjirdagi to'liq tok kuchi har bir iste'molchidagi tok kuchining yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#6e3b91b4"
+    },
+    {
+      "q": "Ikkita parallel ulangan lampochka uchun to'liq tok kuchi formulasi qanday?",
+      "v": [
+        "I = I₁ + I₂",
+        "I = I₁ − I₂",
+        "I = I₁ · I₂",
+        "I = I₁ / I₂"
+      ],
+      "t": 0,
+      "izoh": "I = I₁ + I₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#92be5f97"
+    },
+    {
+      "q": "n ta lampochka parallel ulanganda zanjirdagi to'liq tok kuchi qanday ifodalanadi?",
+      "v": [
+        "I = I₁ + I₂ + I₃ + ... + Iₙ",
+        "I = I₁ · I₂ · ... · Iₙ",
+        "I = I₁ = I₂ = ... = Iₙ",
+        "I = Iₙ / n"
+      ],
+      "t": 0,
+      "izoh": "I = I₁ + I₂ + I₃ + ... + Iₙ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#9e105060"
+    },
+    {
+      "q": "Parallel ulangan zanjirda birinchi lampochkadan o'tayotgan tok kuchi Om qonuniga binoan qanday ifodalanadi?",
+      "v": [
+        "I₁ = U/R₁",
+        "I₁ = U·R₁",
+        "I₁ = R₁/U",
+        "I₁ = U²/R₁"
+      ],
+      "t": 0,
+      "izoh": "Om qonuniga binoan I₁ = U/R₁.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#79075589"
+    },
+    {
+      "q": "Ikkita parallel ulangan iste'molchi uchun zanjir to'liq qarshiligining teskari kattaligi qanday ifodalanadi?",
+      "v": [
+        "1/R = 1/R₁ + 1/R₂",
+        "R = R₁ + R₂",
+        "1/R = 1/R₁ − 1/R₂",
+        "R = R₁ · R₂"
+      ],
+      "t": 0,
+      "izoh": "1/R = 1/R₁ + 1/R₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#ff000895"
+    },
+    {
+      "q": "Iste'molchilar parallel ulanganda, zanjir to'liq qarshiligining teskari kattaligi nimaga teng?",
+      "v": [
+        "Har bir iste'molchi qarshiligining teskari kattaliklari yig'indisiga",
+        "Har bir iste'molchi qarshiliklarining yig'indisiga",
+        "Eng katta qarshilikka",
+        "Qarshiliklar ko'paytmasiga"
+      ],
+      "t": 0,
+      "izoh": "Zanjir to'liq qarshiligining teskari kattaligi har bir iste'molchi qarshiligining teskari kattaliklari yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#4a83574d"
+    },
+    {
+      "q": "n ta lampochka parallel ulanganda zanjirdagi to'liq qarshilikning teskari kattaligi qanday ifodalanadi?",
+      "v": [
+        "1/R = 1/R₁ + 1/R₂ + 1/R₃ + ... + 1/Rₙ",
+        "R = R₁ + R₂ + ... + Rₙ",
+        "1/R = 1/(R₁·R₂·...·Rₙ)",
+        "R = (R₁+R₂+...+Rₙ)/n"
+      ],
+      "t": 0,
+      "izoh": "1/R = 1/R₁ + 1/R₂ + 1/R₃ + ... + 1/Rₙ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#f69f66e4"
+    },
+    {
+      "q": "Ikkita iste'molchi parallel ulangan holatlarda to'liq qarshilikni hisoblash uchun qulay formula qaysi?",
+      "v": [
+        "R = R₁·R₂/(R₁ + R₂)",
+        "R = R₁ + R₂",
+        "R = (R₁ + R₂)/(R₁·R₂)",
+        "R = R₁·R₂"
+      ],
+      "t": 0,
+      "izoh": "Ikkita parallel iste'molchi uchun R = R₁·R₂/(R₁ + R₂) formulasidan foydalanish qulay.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#e19ec386"
+    },
+    {
+      "q": "Parallel ulangan iste'molchidagi tok kuchi bir xil bo'ladimi?",
+      "v": [
+        "Yo'q, tok kuchi iste'molchilarning qarshiligiga bog'liq",
+        "Ha, har doim bir xil bo'ladi",
+        "Ha, chunki kuchlanish bir xil",
+        "Faqat ikkita iste'molchi bo'lganda bir xil bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Parallel ulanganda kuchlanish bir xil, lekin tok kuchi har bir iste'molchining qarshiligiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#1f68b168"
+    },
+    {
+      "q": "Qarshiliklari 3 Ω va 6 Ω bo'lgan ikkita iste'molchi parallel ulangan. Zanjir qismining to'liq qarshiligi qancha?",
+      "v": [
+        "2 Ω",
+        "9 Ω",
+        "4,5 Ω",
+        "18 Ω"
+      ],
+      "t": 0,
+      "izoh": "R = R₁·R₂/(R₁+R₂) = 3·6/(3+6) = 18/9 = 2 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#4e2c44e4"
+    },
+    {
+      "q": "Qarshiliklari 10 Ω, 15 Ω va 30 Ω bo'lgan uchta iste'molchi parallel ulangan. To'liq qarshilik qancha?",
+      "v": [
+        "5 Ω",
+        "55 Ω",
+        "10 Ω",
+        "15 Ω"
+      ],
+      "t": 0,
+      "izoh": "1/R = 1/10 + 1/15 + 1/30 = 3/30 + 2/30 + 1/30 = 6/30 = 1/5, demak R = 5 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#f35b3db5"
+    },
+    {
+      "q": "Qandilda o'zaro parallel ulangan 5 ta bir xil lampochka yonib turibdi. Qandil simida 4 A tok o'tayotgan bo'lsa, har bir lampochkadan qanday tok o'tadi?",
+      "v": [
+        "0,8 A",
+        "4 A",
+        "20 A",
+        "1,25 A"
+      ],
+      "t": 0,
+      "izoh": "Bir xil lampochkalar parallel ulanganda tok teng taqsimlanadi: 4 A / 5 = 0,8 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#595f16a0"
+    },
+    {
+      "q": "Qarshiligi 40 Ω va 60 Ω bo'lgan ikkita lampochka parallel ulangan. Zanjirning shu qismidagi to'liq qarshilik qancha?",
+      "v": [
+        "24 Ω",
+        "100 Ω",
+        "50 Ω",
+        "20 Ω"
+      ],
+      "t": 0,
+      "izoh": "R = 40·60/(40+60) = 2400/100 = 24 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#deda36e2"
+    },
+    {
+      "q": "Qarshiligi 40 Ω va 60 Ω bo'lgan ikkita lampochka parallel ulangan, ularning uchlaridagi kuchlanish 36 V. Zanjirdagi to'liq tok kuchi qancha?",
+      "v": [
+        "1,5 A",
+        "0,9 A",
+        "0,6 A",
+        "3 A"
+      ],
+      "t": 0,
+      "izoh": "R = 24 Ω, I = U/R = 36/24 = 1,5 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#b7e1401c"
+    },
+    {
+      "q": "Parallel ulangan R₁ = 30 Ω li o'tkazgichdan I₁ = 0,6 A tok o'tmoqda. R₂ = 10 Ω li o'tkazgichdan qanday tok o'tadi?",
+      "v": [
+        "1,8 A",
+        "0,6 A",
+        "0,2 A",
+        "0,3 A"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish bir xil: U = I₁R₁ = 0,6·30 = 18 V; I₂ = U/R₂ = 18/10 = 1,8 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#4d2a33f9"
+    },
+    {
+      "q": "220 V kuchlanishli tarmoqqa parallel ulangan lampochkadan 0,5 A, muzlatgichdan 0,4 A va televizordan 1 A tok o'tsa, tarmoqdan olinadigan to'liq tok kuchi qancha?",
+      "v": [
+        "1,9 A",
+        "0,9 A",
+        "1,4 A",
+        "2,9 A"
+      ],
+      "t": 0,
+      "izoh": "I = I₁ + I₂ + I₃ = 0,5 + 0,4 + 1 = 1,9 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#e7192c95"
+    },
+    {
+      "q": "220 V kuchlanishli tarmoqqa parallel ulangan lampochkadan 0,5 A tok o'tsa, uning qarshiligi qancha?",
+      "v": [
+        "440 Ω",
+        "110 Ω",
+        "220 Ω",
+        "110,5 Ω"
+      ],
+      "t": 0,
+      "izoh": "R₁ = U/I₁ = 220/0,5 = 440 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#9957c845"
+    },
+    {
+      "q": "220 V kuchlanishli tarmoqqa parallel ulangan muzlatgichdan 0,4 A tok o'tsa, uning qarshiligi qancha?",
+      "v": [
+        "550 Ω",
+        "88 Ω",
+        "440 Ω",
+        "220 Ω"
+      ],
+      "t": 0,
+      "izoh": "R₂ = U/I₂ = 220/0,4 = 550 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#39046c37"
+    },
+    {
+      "q": "220 V kuchlanishli tarmoqqa parallel ulangan televizordan 1 A tok o'tsa, uning qarshiligi qancha?",
+      "v": [
+        "220 Ω",
+        "440 Ω",
+        "110 Ω",
+        "550 Ω"
+      ],
+      "t": 0,
+      "izoh": "R₃ = U/I₃ = 220/1 = 220 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#e3e8d3c0"
+    },
+    {
+      "q": "220 V tarmoqqa parallel ulangan lampochka (0,5 A), muzlatgich (0,4 A) va televizordan (1 A) tashkil topgan zanjirning to'liq qarshiligi taxminan qancha?",
+      "v": [
+        "116 Ω",
+        "1210 Ω",
+        "220 Ω",
+        "330 Ω"
+      ],
+      "t": 0,
+      "izoh": "R = U/I = 220/1,9 ≈ 116 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#9e15955e"
+    },
+    {
+      "q": "Parallel ulangan iste'molchilar soni ko'paytirilsa, zanjirning to'liq qarshiligi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Oshadi",
+        "O'zgarmaydi",
+        "Avval oshib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Parallel ulanganda 1/R ga musbat qo'shiluvchilar qo'shiladi, demak to'liq qarshilik kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#628db851"
+    },
+    {
+      "q": "Parallel ulangan zanjirning to'liq qarshiligi har bir alohida tarmoq qarshiligidan qanday bo'ladi?",
+      "v": [
+        "Eng kichik tarmoq qarshiligidan ham kichik",
+        "Eng katta tarmoq qarshiligidan katta",
+        "Tarmoqlar qarshiliklarining o'rtacha qiymatiga teng",
+        "Barcha tarmoqlar qarshiligi yig'indisiga teng"
+      ],
+      "t": 0,
+      "izoh": "Parallel ulanganda to'liq qarshilik eng kichik tarmoq qarshiligidan ham kichik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#e2550046"
+    },
+    {
+      "q": "Kuchlanishni o'lchash uchun voltmetr parallel ulangan iste'molchilarga qanday ulanadi?",
+      "v": [
+        "Iste'molchilarga parallel",
+        "Iste'molchilarga ketma-ket",
+        "Faqat tok manbaiga ketma-ket",
+        "Zanjirning istalgan joyiga ketma-ket"
+      ],
+      "t": 0,
+      "izoh": "Voltmetr kuchlanishi o'lchanadigan qismga parallel ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#b4fbd690"
+    },
+    {
+      "q": "Zanjirning tarmoqlanmagan qismidan o'tayotgan tok kuchi nimani ifodalaydi?",
+      "v": [
+        "Zanjirdagi to'liq tok kuchini",
+        "Faqat birinchi tarmoqdagi tokni",
+        "Eng kichik tarmoqdagi tokni",
+        "Kuchlanish manbai qarshiligini"
+      ],
+      "t": 0,
+      "izoh": "Tarmoqlanmagan qismdan o'tadigan tok zanjirdagi to'liq tok kuchiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m22-istemolchilarni-parallel-ulash#cef77669"
+    }
+  ]
+}

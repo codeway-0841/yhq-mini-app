@@ -1,0 +1,1306 @@
+{
+  "nom": "This / That / These / Those",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "___ book here is mine.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va birlik -> this.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#08b38338"
+    },
+    {
+      "q": "___ car there is red.",
+      "v": [
+        "That",
+        "This",
+        "These",
+        "Those"
+      ],
+      "t": 0,
+      "izoh": "Uzoq va birlik -> that.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#88f7e973"
+    },
+    {
+      "q": "___ shoes here are new.",
+      "v": [
+        "These",
+        "Those",
+        "This",
+        "That"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va ko'plik -> these.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#77deba34"
+    },
+    {
+      "q": "___ birds there are big.",
+      "v": [
+        "Those",
+        "These",
+        "This",
+        "That"
+      ],
+      "t": 0,
+      "izoh": "Uzoq va ko'plik -> those.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#0e4f2a93"
+    },
+    {
+      "q": "Look at ___ pen in my hand.",
+      "v": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ],
+      "t": 0,
+      "izoh": "Qo'ldagi, yaqin, birlik -> this.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#f356ceae"
+    },
+    {
+      "q": "___ house over there is old.",
+      "v": [
+        "That",
+        "This",
+        "These",
+        "Those"
+      ],
+      "t": 0,
+      "izoh": "Uzoq va birlik -> that.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#94c9e8b8"
+    },
+    {
+      "q": "___ apples here are sweet.",
+      "v": [
+        "These",
+        "Those",
+        "This",
+        "That"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va ko'plik -> these.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#b2e86141"
+    },
+    {
+      "q": "___ mountains far away are high.",
+      "v": [
+        "Those",
+        "These",
+        "This",
+        "That"
+      ],
+      "t": 0,
+      "izoh": "Uzoq va ko'plik -> those.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#43ca6ca5"
+    },
+    {
+      "q": "Is ___ your bag here?",
+      "v": [
+        "this",
+        "these",
+        "those",
+        "that"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va birlik -> this.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#f81d56f0"
+    },
+    {
+      "q": "___ children there are happy.",
+      "v": [
+        "Those",
+        "These",
+        "This",
+        "That"
+      ],
+      "t": 0,
+      "izoh": "Uzoq va ko'plik -> those.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#38f48a14"
+    },
+    {
+      "q": "I like ___ flower here.",
+      "v": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va birlik -> this.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#5b586e2d"
+    },
+    {
+      "q": "___ men there are tall.",
+      "v": [
+        "Those",
+        "These",
+        "This",
+        "That"
+      ],
+      "t": 0,
+      "izoh": "Uzoq va ko'plik -> those.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#b1fda2cc"
+    },
+    {
+      "q": "___ table here is small.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va birlik -> this.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#d1d5b4c2"
+    },
+    {
+      "q": "Give me ___ cups here.",
+      "v": [
+        "these",
+        "those",
+        "this",
+        "that"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va ko'plik -> these.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#d7993682"
+    },
+    {
+      "q": "___ dog there is friendly.",
+      "v": [
+        "That",
+        "This",
+        "These",
+        "Those"
+      ],
+      "t": 0,
+      "izoh": "Uzoq va birlik -> that.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#eda3291b"
+    },
+    {
+      "q": "___ book here is new.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 0,
+      "izoh": "Bu yerda + birlik = this.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#999405e5"
+    },
+    {
+      "q": "___ books over there are old.",
+      "v": [
+        "These",
+        "Those",
+        "This",
+        "That"
+      ],
+      "t": 1,
+      "izoh": "U yerda + ko'plik = those.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#17e509a2"
+    },
+    {
+      "q": "___ apples here are red.",
+      "v": [
+        "That",
+        "Those",
+        "These",
+        "This"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda + ko'plik = these.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#47038ed2"
+    },
+    {
+      "q": "___ car there is fast.",
+      "v": [
+        "This",
+        "These",
+        "Those",
+        "That"
+      ],
+      "t": 3,
+      "izoh": "U yerda + birlik = that.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#e4289b23"
+    },
+    {
+      "q": "Look at ___ dog here.",
+      "v": [
+        "these",
+        "this",
+        "that",
+        "those"
+      ],
+      "t": 1,
+      "izoh": "Yaqin + birlik = this.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#58c14134"
+    },
+    {
+      "q": "Look at ___ stars there in the sky.",
+      "v": [
+        "this",
+        "that",
+        "those",
+        "these"
+      ],
+      "t": 2,
+      "izoh": "Uzoq + ko'plik = those.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#f499c1ac"
+    },
+    {
+      "q": "___ is my pen. It is here.",
+      "v": [
+        "That",
+        "These",
+        "This",
+        "Those"
+      ],
+      "t": 2,
+      "izoh": "Yaqin + birlik = this.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#702271d0"
+    },
+    {
+      "q": "___ are my shoes. They are here.",
+      "v": [
+        "These",
+        "This",
+        "That",
+        "Those"
+      ],
+      "t": 0,
+      "izoh": "Yaqin + ko'plik = these.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#6a1f663f"
+    },
+    {
+      "q": "___ house over there is big.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 1,
+      "izoh": "Uzoq + birlik = that.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#68d14f84"
+    },
+    {
+      "q": "I like ___ flowers here.",
+      "v": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda + ko'plik = these.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#28a7f192"
+    },
+    {
+      "q": "Do you see ___ bird there?",
+      "v": [
+        "this",
+        "these",
+        "that",
+        "those"
+      ],
+      "t": 2,
+      "izoh": "U yerda + birlik = that.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#ddd4ea28"
+    },
+    {
+      "q": "Do you see ___ birds there?",
+      "v": [
+        "these",
+        "this",
+        "those",
+        "that"
+      ],
+      "t": 2,
+      "izoh": "U yerda + ko'plik = those.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#68669861"
+    },
+    {
+      "q": "___ pen in my hand is blue.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 0,
+      "izoh": "Qo'limda + birlik = this.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#97389017"
+    },
+    {
+      "q": "Give me ___ cup here, please.",
+      "v": [
+        "that",
+        "this",
+        "these",
+        "those"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda + birlik = this.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#0e70b01d"
+    },
+    {
+      "q": "Give me ___ cups here, please.",
+      "v": [
+        "this",
+        "these",
+        "that",
+        "those"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda + ko'plik = these.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#4fbace0d"
+    },
+    {
+      "q": "___ boy there is my friend.",
+      "v": [
+        "These",
+        "That",
+        "This",
+        "Those"
+      ],
+      "t": 1,
+      "izoh": "U yerda + birlik = that.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#4cc8b7b7"
+    },
+    {
+      "q": "___ girls there are my sisters.",
+      "v": [
+        "This",
+        "Those",
+        "These",
+        "That"
+      ],
+      "t": 1,
+      "izoh": "U yerda + ko'plik = those.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#706cf2ee"
+    },
+    {
+      "q": "Whose is ___ bag here?",
+      "v": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ],
+      "t": 0,
+      "izoh": "Bu yerda + birlik = this.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#8eebf82b"
+    },
+    {
+      "q": "Whose are ___ bags here?",
+      "v": [
+        "that",
+        "these",
+        "this",
+        "those"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda + ko'plik = these.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#4b39b0bb"
+    },
+    {
+      "q": "___ chair over there is broken.",
+      "v": [
+        "This",
+        "That",
+        "Those",
+        "These"
+      ],
+      "t": 1,
+      "izoh": "Uzoq + birlik = that.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#981e6298"
+    },
+    {
+      "q": "___ chairs over there are broken.",
+      "v": [
+        "These",
+        "Those",
+        "This",
+        "That"
+      ],
+      "t": 1,
+      "izoh": "Uzoq + ko'plik = those.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#d315bb95"
+    },
+    {
+      "q": "Try ___ cake here. It is sweet.",
+      "v": [
+        "this",
+        "these",
+        "that",
+        "those"
+      ],
+      "t": 0,
+      "izoh": "Bu yerda + birlik = this.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#7af55282"
+    },
+    {
+      "q": "Try ___ sweets here. They are nice.",
+      "v": [
+        "this",
+        "these",
+        "those",
+        "that"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda + ko'plik = these.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#9b5a231f"
+    },
+    {
+      "q": "___ man there is a doctor.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 1,
+      "izoh": "U yerda + birlik = that.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#07fae3d5"
+    },
+    {
+      "q": "___ women there are teachers.",
+      "v": [
+        "These",
+        "Those",
+        "This",
+        "That"
+      ],
+      "t": 1,
+      "izoh": "U yerda + ko'plik = those.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#a7ae3e10"
+    },
+    {
+      "q": "I want ___ ball here in my hand.",
+      "v": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ],
+      "t": 0,
+      "izoh": "Qo'limda + birlik = this.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#1d7a1047"
+    },
+    {
+      "q": "I want ___ balls here in my hands.",
+      "v": [
+        "this",
+        "these",
+        "that",
+        "those"
+      ],
+      "t": 1,
+      "izoh": "Qo'limda + ko'plik = these.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#00a5ef69"
+    },
+    {
+      "q": "___ book here in my hand is new.",
+      "v": [
+        "This",
+        "These",
+        "Those",
+        "Them"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va bitta narsa uchun 'this' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#f7ba9127"
+    },
+    {
+      "q": "___ pen here in my hand is new.",
+      "v": [
+        "This",
+        "These",
+        "Those",
+        "Them"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va bitta narsa uchun 'this' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#653ef01d"
+    },
+    {
+      "q": "___ cup here in my hand is new.",
+      "v": [
+        "This",
+        "These",
+        "Those",
+        "Them"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va bitta narsa uchun 'this' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#c36521af"
+    },
+    {
+      "q": "___ chair here in my hand is new.",
+      "v": [
+        "This",
+        "These",
+        "Those",
+        "Them"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va bitta narsa uchun 'this' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#8b205566"
+    },
+    {
+      "q": "___ apple here in my hand is new.",
+      "v": [
+        "This",
+        "These",
+        "Those",
+        "Them"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va bitta narsa uchun 'this' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#4478b322"
+    },
+    {
+      "q": "___ phone here in my hand is new.",
+      "v": [
+        "This",
+        "These",
+        "Those",
+        "Them"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va bitta narsa uchun 'this' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#2b2ba996"
+    },
+    {
+      "q": "___ bag here in my hand is new.",
+      "v": [
+        "This",
+        "These",
+        "Those",
+        "Them"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va bitta narsa uchun 'this' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#d93364a6"
+    },
+    {
+      "q": "___ dog here in my hand is new.",
+      "v": [
+        "This",
+        "These",
+        "Those",
+        "Them"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va bitta narsa uchun 'this' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#a23ee967"
+    },
+    {
+      "q": "___ cat here in my hand is new.",
+      "v": [
+        "This",
+        "These",
+        "Those",
+        "Them"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va bitta narsa uchun 'this' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#9b6fc01f"
+    },
+    {
+      "q": "___ car here in my hand is new.",
+      "v": [
+        "This",
+        "These",
+        "Those",
+        "Them"
+      ],
+      "t": 0,
+      "izoh": "Yaqin va bitta narsa uchun 'this' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#6024064e"
+    },
+    {
+      "q": "___ books here next to me are mine.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 2,
+      "izoh": "Yaqin va ko'plik uchun 'these' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#d344aa2c"
+    },
+    {
+      "q": "___ pens here next to me are mine.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 2,
+      "izoh": "Yaqin va ko'plik uchun 'these' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#bdc5ca3a"
+    },
+    {
+      "q": "___ cups here next to me are mine.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 2,
+      "izoh": "Yaqin va ko'plik uchun 'these' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#4788f93a"
+    },
+    {
+      "q": "___ chairs here next to me are mine.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 2,
+      "izoh": "Yaqin va ko'plik uchun 'these' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#cb7b952c"
+    },
+    {
+      "q": "___ apples here next to me are mine.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 2,
+      "izoh": "Yaqin va ko'plik uchun 'these' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#d721e34f"
+    },
+    {
+      "q": "___ phones here next to me are mine.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 2,
+      "izoh": "Yaqin va ko'plik uchun 'these' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#8db26516"
+    },
+    {
+      "q": "___ bags here next to me are mine.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 2,
+      "izoh": "Yaqin va ko'plik uchun 'these' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#742ceb3f"
+    },
+    {
+      "q": "___ dogs here next to me are mine.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 2,
+      "izoh": "Yaqin va ko'plik uchun 'these' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#d69a3699"
+    },
+    {
+      "q": "___ cats here next to me are mine.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 2,
+      "izoh": "Yaqin va ko'plik uchun 'these' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#2e146b8f"
+    },
+    {
+      "q": "___ cars here next to me are mine.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 2,
+      "izoh": "Yaqin va ko'plik uchun 'these' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#4327fb52"
+    },
+    {
+      "q": "___ house over there is very big.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 1,
+      "izoh": "Uzoq va bitta narsa uchun 'that' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#85b1ecf5"
+    },
+    {
+      "q": "___ tree over there is very big.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 1,
+      "izoh": "Uzoq va bitta narsa uchun 'that' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#541d5a0d"
+    },
+    {
+      "q": "___ mountain over there is very big.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 1,
+      "izoh": "Uzoq va bitta narsa uchun 'that' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#53946e8a"
+    },
+    {
+      "q": "___ bird over there is very big.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 1,
+      "izoh": "Uzoq va bitta narsa uchun 'that' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#4c603d9c"
+    },
+    {
+      "q": "___ bridge over there is very big.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 1,
+      "izoh": "Uzoq va bitta narsa uchun 'that' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#c6554529"
+    },
+    {
+      "q": "___ cloud over there is very big.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 1,
+      "izoh": "Uzoq va bitta narsa uchun 'that' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#4905b4ff"
+    },
+    {
+      "q": "___ boy over there is very big.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 1,
+      "izoh": "Uzoq va bitta narsa uchun 'that' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#1efb20fe"
+    },
+    {
+      "q": "___ girl over there is very big.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 1,
+      "izoh": "Uzoq va bitta narsa uchun 'that' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#7afee626"
+    },
+    {
+      "q": "___ shop over there is very big.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 1,
+      "izoh": "Uzoq va bitta narsa uchun 'that' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#a389eb35"
+    },
+    {
+      "q": "___ school over there is very big.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 1,
+      "izoh": "Uzoq va bitta narsa uchun 'that' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#3fa8f698"
+    },
+    {
+      "q": "___ houses over there are beautiful.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 3,
+      "izoh": "Uzoq va ko'plik uchun 'those' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#47fae9bb"
+    },
+    {
+      "q": "___ trees over there are beautiful.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 3,
+      "izoh": "Uzoq va ko'plik uchun 'those' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#75231385"
+    },
+    {
+      "q": "___ birds over there are beautiful.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 3,
+      "izoh": "Uzoq va ko'plik uchun 'those' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#cd0ba81c"
+    },
+    {
+      "q": "___ bridges over there are beautiful.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 3,
+      "izoh": "Uzoq va ko'plik uchun 'those' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#89f175fa"
+    },
+    {
+      "q": "___ clouds over there are beautiful.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 3,
+      "izoh": "Uzoq va ko'plik uchun 'those' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#f7ab0f2c"
+    },
+    {
+      "q": "___ boys over there are beautiful.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 3,
+      "izoh": "Uzoq va ko'plik uchun 'those' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#d82661ac"
+    },
+    {
+      "q": "___ girls over there are beautiful.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 3,
+      "izoh": "Uzoq va ko'plik uchun 'those' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#2793a659"
+    },
+    {
+      "q": "___ shops over there are beautiful.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 3,
+      "izoh": "Uzoq va ko'plik uchun 'those' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#06752c57"
+    },
+    {
+      "q": "___ stars over there are beautiful.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 3,
+      "izoh": "Uzoq va ko'plik uchun 'those' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#6910bcd6"
+    },
+    {
+      "q": "___ boats over there are beautiful.",
+      "v": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "t": 3,
+      "izoh": "Uzoq va ko'plik uchun 'those' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#7aa3d494"
+    },
+    {
+      "q": "Choose the correct sentence (near, one pen in my hand):",
+      "v": [
+        "This pen is red.",
+        "These pen is red.",
+        "Those pen is red.",
+        "This pens is red."
+      ],
+      "t": 0,
+      "izoh": "Yaqin va bitta: 'this' + birlik ot.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#28214302"
+    },
+    {
+      "q": "Choose the correct sentence (far, many birds in the sky):",
+      "v": [
+        "This birds are small.",
+        "Those birds are small.",
+        "That birds are small.",
+        "These bird are small."
+      ],
+      "t": 1,
+      "izoh": "Uzoq va ko'plik: 'those' + ko'plik ot.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#1f2fecd2"
+    },
+    {
+      "q": "Choose the correct sentence (near, two cats beside me):",
+      "v": [
+        "This cats are black.",
+        "That cats are black.",
+        "These cats are black.",
+        "Those cat are black."
+      ],
+      "t": 2,
+      "izoh": "Yaqin va ko'plik: 'these' + ko'plik ot.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#d6c9c210"
+    },
+    {
+      "q": "Choose the correct sentence (far, one tree on the hill):",
+      "v": [
+        "That tree is tall.",
+        "These tree is tall.",
+        "This tree are tall.",
+        "Those tree is tall."
+      ],
+      "t": 0,
+      "izoh": "Uzoq va bitta: 'that' + birlik ot.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#0c097c82"
+    },
+    {
+      "q": "Choose the correct sentence (near, one apple here):",
+      "v": [
+        "These apple is sweet.",
+        "This apple is sweet.",
+        "Those apple is sweet.",
+        "That apples is sweet."
+      ],
+      "t": 1,
+      "izoh": "Yaqin va bitta uchun 'this'.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#7b81c061"
+    },
+    {
+      "q": "Choose the correct sentence (far, many houses far away):",
+      "v": [
+        "This houses are old.",
+        "These houses are old.",
+        "Those houses are old.",
+        "That houses are old."
+      ],
+      "t": 2,
+      "izoh": "Uzoq va ko'plik uchun 'those'.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#0e064f02"
+    },
+    {
+      "q": "Choose the correct sentence (near, many flowers here):",
+      "v": [
+        "That flowers are nice.",
+        "This flowers are nice.",
+        "Those flowers are nice.",
+        "These flowers are nice."
+      ],
+      "t": 3,
+      "izoh": "Yaqin va ko'plik uchun 'these'.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#d55c93da"
+    },
+    {
+      "q": "Choose the correct sentence (far, one car in the street):",
+      "v": [
+        "That car is fast.",
+        "This car is fast.",
+        "These car is fast.",
+        "Those car is fast."
+      ],
+      "t": 0,
+      "izoh": "Uzoq va bitta uchun 'that'.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#d049099d"
+    },
+    {
+      "q": "Find the mistake: 'These book is on the desk.'",
+      "v": [
+        "These",
+        "book",
+        "is",
+        "desk"
+      ],
+      "t": 0,
+      "izoh": "'book' birlik, shuning uchun 'This' bo'lishi kerak, 'These' emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#be32cef1"
+    },
+    {
+      "q": "Find the mistake: 'This shoes are new.'",
+      "v": [
+        "This",
+        "shoes",
+        "are",
+        "new"
+      ],
+      "t": 0,
+      "izoh": "'shoes' ko'plik, to'g'risi 'These shoes'.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#8bc167a9"
+    },
+    {
+      "q": "Find the mistake: 'That children are happy.'",
+      "v": [
+        "That",
+        "children",
+        "are",
+        "happy"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik 'children' uchun 'Those children' to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#a75c2141"
+    },
+    {
+      "q": "Find the mistake: 'Those boy is my friend.'",
+      "v": [
+        "Those",
+        "boy",
+        "is",
+        "friend"
+      ],
+      "t": 0,
+      "izoh": "'boy' birlik, to'g'risi 'That boy'.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#0527d453"
+    },
+    {
+      "q": "Find the mistake: 'This are my keys.'",
+      "v": [
+        "This",
+        "are",
+        "my",
+        "keys"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik 'keys' uchun 'These are my keys'.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#d924f1f9"
+    },
+    {
+      "q": "Find the mistake: 'That are big houses.'",
+      "v": [
+        "That",
+        "are",
+        "big",
+        "houses"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik uchun 'Those are big houses'.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#1c1f3264"
+    },
+    {
+      "q": "Find the mistake: 'These is a good idea.'",
+      "v": [
+        "These",
+        "is",
+        "good",
+        "idea"
+      ],
+      "t": 0,
+      "izoh": "Birlik uchun 'This is a good idea'.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#8e60ce08"
+    },
+    {
+      "q": "Find the mistake: 'Those is my pen.'",
+      "v": [
+        "Those",
+        "is",
+        "my",
+        "pen"
+      ],
+      "t": 0,
+      "izoh": "Birlik uchun 'That is my pen'.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#c92c6f44"
+    },
+    {
+      "q": "Put in order: is / this / my / book",
+      "v": [
+        "This is my book.",
+        "Is this my book.",
+        "My book this is.",
+        "This my book is."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri tartib: This is my book.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#a4189dde"
+    },
+    {
+      "q": "Put in order: are / these / red / apples",
+      "v": [
+        "These apples are red.",
+        "Are these red apples.",
+        "These are red apples.",
+        "Red apples these are."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri tartib: These apples are red.",
+      "qiy": "oson",
+      "id": "ing_a1_m9#1330f48e"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Arifmetik progressiya hadlari yig'indisi",
+  "bolim": "Ketma-ketliklar va progressiyalar",
+  "blok": "prog",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Arifmetik progressiyada birinchi had 7 ga, o'n ikkinchi had esa 40 ga teng. Dastlabki 12 ta hadning yig'indisini toping.",
+      "v": [
+        "282",
+        "564",
+        "198",
+        "141"
+      ],
+      "t": 0,
+      "izoh": "Birinchi va oxirgi had ma'lum bo'lsa, Sₙ = n·(a₁ + aₙ)/2 formulasi qo'llaniladi. Bu yerda n = 12, a₁ = 7, a₁₂ = 40. Demak S₁₂ = 12·(7 + 40)/2 = 12·47/2 = 6·47 = 282. Javob: 282.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-birinchi-oxirgi-formula",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#e80c428f"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi −8, yigirmanchi hadi 49 ga teng bo'lsa, birinchi 20 ta hadning yig'indisi nechaga teng?",
+      "v": [
+        "820",
+        "570",
+        "205",
+        "410"
+      ],
+      "t": 3,
+      "izoh": "Sₙ = n·(a₁ + aₙ)/2 formulasidan foydalanamiz. Avval qavs ichini hisoblaymiz: a₁ + a₂₀ = −8 + 49 = 41. So'ng S₂₀ = 20·41/2 = 10·41 = 410. Javob: 410.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-birinchi-oxirgi-formula",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#5b2b8c43"
+    },
+    {
+      "q": "Arifmetik progressiyada a₁ = 15 va a₂₅ = 111 bo'lsa, shu progressiyaning dastlabki 25 ta hadi yig'indisini hisoblang.",
+      "v": [
+        "1512",
+        "1575",
+        "3150",
+        "1200"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi formulasi: S₂₅ = 25·(a₁ + a₂₅)/2. Qavs ichi: 15 + 111 = 126. Demak S₂₅ = 25·126/2 = 25·63 = 1575. Javob: 1575.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-birinchi-oxirgi-formula",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#4ab5c89f"
+    },
+    {
+      "q": "Kutubxonada kitoblar shunday joylashtirilganki, birinchi javonda 6 ta, oxirgi o'ttizinchi javonda 93 ta kitob turibdi va javondagi kitoblar soni arifmetik progressiya tashkil qiladi. Jami nechta kitob bor?",
+      "v": [
+        "2970",
+        "1305",
+        "1485",
+        "1782"
+      ],
+      "t": 2,
+      "izoh": "Javondagi kitoblar soni arifmetik progressiya bo'lgani uchun jami soni Sₙ = n·(a₁ + aₙ)/2 ga teng. n = 30, a₁ = 6, a₃₀ = 93. Qavs ichi: 6 + 93 = 99. S₃₀ = 30·99/2 = 15·99 = 1485. Javob: 1485 ta kitob.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-birinchi-oxirgi-formula",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#d3ad3b52"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi 4, ayirmasi 6 ga teng. Dastlabki 15 ta hadning yig'indisini toping.",
+      "v": [
+        "690",
+        "735",
+        "660",
+        "1380"
+      ],
+      "t": 0,
+      "izoh": "Oxirgi had noma'lum bo'lgani uchun Sₙ = n·(2a₁ + (n − 1)·d)/2 formulasini olamiz. Qavs ichi: 2·4 + 14·6 = 8 + 84 = 92. Demak S₁₅ = 15·92/2 = 15·46 = 690. Javob: 690.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-a1-d-formula",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#62fc1d4f"
+    },
+    {
+      "q": "Arifmetik progressiyada a₁ = 25, d = −3 bo'lsa, uning dastlabki 20 ta hadi yig'indisi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "70",
+        "1070",
+        "−140",
+        "−70"
+      ],
+      "t": 3,
+      "izoh": "S₂₀ = 20·(2a₁ + 19d)/2 formulasiga qiymatlarni qo'yamiz: 2·25 = 50 va 19·(−3) = −57. Qavs ichi 50 − 57 = −7 bo'ladi. Demak S₂₀ = 20·(−7)/2 = 10·(−7) = −70. Ayirma manfiy bo'lgani uchun yig'indi ham manfiy chiqdi. Javob: −70.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-a1-d-formula",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#cbcc79e6"
+    },
+    {
+      "q": "Birinchi hadi −12, ayirmasi 5 ga teng bo'lgan arifmetik progressiyaning dastlabki 18 ta hadi yig'indisini hisoblang.",
+      "v": [
+        "594",
+        "1098",
+        "657",
+        "549"
+      ],
+      "t": 3,
+      "izoh": "Sₙ = n·(2a₁ + (n − 1)d)/2 formulasida n = 18 bo'lgani uchun (n − 1) = 17 olinadi. Qavs ichi: 2·(−12) + 17·5 = −24 + 85 = 61. Demak S₁₈ = 18·61/2 = 9·61 = 549. Javob: 549.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-a1-d-formula",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#97aefa6f"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi 100, ayirmasi −7 ga teng. Uning dastlabki 24 ta hadining yig'indisini toping.",
+      "v": [
+        "468",
+        "384",
+        "936",
+        "4332"
+      ],
+      "t": 0,
+      "izoh": "S₂₄ = 24·(2·100 + 23·(−7))/2 ko'rinishida yozamiz. Avval 23·(−7) = −161 topiladi, keyin qavs ichi 200 − 161 = 39 bo'ladi. Demak S₂₄ = 24·39/2 = 12·39 = 468. Javob: 468.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-a1-d-formula",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#18fa936b"
+    },
+    {
+      "q": "Dilnoza yanvar oyida 120 000 so'm jamg'ardi va har oy oldingi oyga qaraganda 15 000 so'm ko'proq yig'ishga qaror qildi. Bir yil davomida u jami qancha mablag' jamg'aradi?",
+      "v": [
+        "2 520 000 so'm",
+        "2 430 000 so'm",
+        "3 420 000 so'm",
+        "4 860 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Oylik jamg'armalar arifmetik progressiya: a₁ = 120 000, d = 15 000, n = 12. Qavs ichini hisoblaymiz: 2·120 000 + 11·15 000 = 240 000 + 165 000 = 405 000. Demak S₁₂ = 12·405 000/2 = 6·405 000 = 2 430 000. Javob: 2 430 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-jamgarma-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#450a8c8a"
+    },
+    {
+      "q": "Akmal kitob o'qishni birinchi kuni 45 betdan boshladi va har kuni oldingi kunidan 3 bet ko'p o'qidi. Yigirma kun ichida u jami nechta bet o'qigan bo'ladi?",
+      "v": [
+        "1470 bet",
+        "1500 bet",
+        "1020 bet",
+        "2940 bet"
+      ],
+      "t": 0,
+      "izoh": "Kunlik betlar arifmetik progressiya bo'lib, a₁ = 45, d = 3, n = 20. Qavs ichi: 2·45 + 19·3 = 90 + 57 = 147. Demak S₂₀ = 20·147/2 = 10·147 = 1470. Javob: 1470 bet.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-jamgarma-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#7d78da0f"
+    },
+    {
+      "q": "Maishiy texnika do'konida birinchi haftada 8 ta muzlatgich sotildi va har haftada sotuv oldingisidan 2 taga oshib bordi. O'n besh hafta davomida jami nechta muzlatgich sotilgan?",
+      "v": [
+        "345",
+        "540",
+        "330",
+        "660"
+      ],
+      "t": 2,
+      "izoh": "Haftalik sotuvlar arifmetik progressiya: a₁ = 8, d = 2, n = 15. Qavs ichi: 2·8 + 14·2 = 16 + 28 = 44. Demak S₁₅ = 15·44/2 = 15·22 = 330. Javob: 330 ta muzlatgich.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-jamgarma-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#0273b834"
+    },
+    {
+      "q": "Nodira mashg'ulotning birinchi kunida 12 daqiqa yugurdi va har kuni yugurish vaqtini 4 daqiqaga oshirib bordi. O'n to'rt kun davomida u jami qancha vaqt yugurgan?",
+      "v": [
+        "560 daqiqa",
+        "448 daqiqa",
+        "1064 daqiqa",
+        "532 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Kunlik vaqtlar arifmetik progressiya: a₁ = 12, d = 4, n = 14. Qavs ichi: 2·12 + 13·4 = 24 + 52 = 76. Demak S₁₄ = 14·76/2 = 7·76 = 532. Javob: 532 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-jamgarma-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#fdb01635"
+    },
+    {
+      "q": "Zavod birinchi oyda 240 dona uskuna ishlab chiqardi va har oy ishlab chiqarishni 35 donaga oshirdi. O'n oy davomida zavod jami nechta uskuna ishlab chiqargan?",
+      "v": [
+        "3975 dona",
+        "4150 dona",
+        "2775 dona",
+        "7950 dona"
+      ],
+      "t": 0,
+      "izoh": "Oylik ishlab chiqarish arifmetik progressiya: a₁ = 240, d = 35, n = 10. Qavs ichi: 2·240 + 9·35 = 480 + 315 = 795. Demak S₁₀ = 10·795/2 = 5·795 = 3975. Javob: 3975 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ishlab-chiqarish-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#faeb85e2"
+    },
+    {
+      "q": "Farg'onadagi ustaxona birinchi kuni 18 juft poyabzal tikdi va har kuni oldingi kundan 5 juft ko'p tikdi. O'n olti kunda ustaxona jami nechta juft poyabzal tikkan?",
+      "v": [
+        "928 juft",
+        "744 juft",
+        "1776 juft",
+        "888 juft"
+      ],
+      "t": 3,
+      "izoh": "Kunlik natijalar arifmetik progressiya: a₁ = 18, d = 5, n = 16. Qavs ichi: 2·18 + 15·5 = 36 + 75 = 111. Demak S₁₆ = 16·111/2 = 8·111 = 888. Javob: 888 juft.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ishlab-chiqarish-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#dab706f8"
+    },
+    {
+      "q": "Terimchi birinchi kuni 65 kg paxta terdi va har kuni oldingi kunga nisbatan 8 kg ko'p terishga erishdi. Yigirma ikki kun davomida u jami qancha paxta tergan?",
+      "v": [
+        "3366 kg",
+        "2563 kg",
+        "6556 kg",
+        "3278 kg"
+      ],
+      "t": 3,
+      "izoh": "Kunlik terim arifmetik progressiya: a₁ = 65, d = 8, n = 22. Qavs ichi: 2·65 + 21·8 = 130 + 168 = 298. Demak S₂₂ = 22·298/2 = 11·298 = 3278. Javob: 3278 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ishlab-chiqarish-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#fcda451c"
+    },
+    {
+      "q": "Qurilish brigadasi birinchi kuni 34 metr devor terdi va har kuni tergan devori 6 metrga uzayib bordi. O'n uch kun ichida brigada jami necha metr devor tergan?",
+      "v": [
+        "910 m",
+        "949 m",
+        "689 m",
+        "1820 m"
+      ],
+      "t": 0,
+      "izoh": "Kunlik natijalar arifmetik progressiya: a₁ = 34, d = 6, n = 13. Qavs ichi: 2·34 + 12·6 = 68 + 72 = 140. Demak S₁₃ = 13·140/2 = 13·70 = 910. Javob: 910 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ishlab-chiqarish-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#8f54b6a5"
+    },
+    {
+      "q": "Teatr zalining birinchi qatorida 14 o'rindiq bor va har keyingi qatorda o'rindiqlar soni 3 taga ortadi. Zalda 24 ta qator bo'lsa, jami nechta o'rindiq bor?",
+      "v": [
+        "1200",
+        "1164",
+        "996",
+        "2328"
+      ],
+      "t": 1,
+      "izoh": "Qatorlardagi o'rindiqlar arifmetik progressiya: a₁ = 14, d = 3, n = 24. Qavs ichi: 2·14 + 23·3 = 28 + 69 = 97. Demak S₂₄ = 24·97/2 = 12·97 = 1164. Javob: 1164 ta o'rindiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-qator-oturgich",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#da2755fc"
+    },
+    {
+      "q": "Stadion sektorining birinchi qatorida 20 o'rindiq joylashgan, har keyingi qatorda esa 4 taga ko'p o'rindiq bor. Sektorda 18 qator bo'lsa, undagi o'rindiqlar sonini toping.",
+      "v": [
+        "1008 ta",
+        "792 ta",
+        "972 ta",
+        "1944 ta"
+      ],
+      "t": 2,
+      "izoh": "a₁ = 20, d = 4, n = 18 bo'lgan arifmetik progressiya yig'indisini topamiz. Qavs ichi: 2·20 + 17·4 = 40 + 68 = 108. Demak S₁₈ = 18·108/2 = 9·108 = 972. Javob: 972 ta o'rindiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qator-oturgich",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#2dfbb846"
+    },
+    {
+      "q": "Amfiteatrning birinchi qatorida 25 o'rindiq, oxirgi yigirmanchi qatorida esa 101 o'rindiq bor va qatorlar arifmetik progressiya bo'yicha ortib boradi. Amfiteatrdagi o'rindiqlar sonini aniqlang.",
+      "v": [
+        "2520",
+        "1197",
+        "760",
+        "1260"
+      ],
+      "t": 3,
+      "izoh": "Birinchi va oxirgi qator ma'lum bo'lgani uchun Sₙ = n·(a₁ + aₙ)/2 formulasi qulay. Qavs ichi: 25 + 101 = 126, qatorlar soni n = 20. Demak S₂₀ = 20·126/2 = 10·126 = 1260. Javob: 1260 ta o'rindiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qator-oturgich",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#af471e40"
+    },
+    {
+      "q": "Piramida shaklida terilgan g'ishtlarning eng pastki qatorida 47 ta g'isht bor, har keyingi qatorda esa g'ishtlar soni 3 taga kamayadi. Terilgan 14 ta qatordagi g'ishtlarning umumiy sonini toping.",
+      "v": [
+        "364 ta",
+        "385 ta",
+        "931 ta",
+        "770 ta"
+      ],
+      "t": 1,
+      "izoh": "G'ishtlar soni kamayuvchi arifmetik progressiya: a₁ = 47, d = −3, n = 14. Qavs ichi: 2·47 + 13·(−3) = 94 − 39 = 55. Demak S₁₄ = 14·55/2 = 7·55 = 385. Javob: 385 ta g'isht.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qator-oturgich",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#263990b4"
+    },
+    {
+      "q": "Arifmetik progressiyada a₁ = 5, d = 3 va dastlabki n ta hadning yig'indisi 440 ga teng. Hadlar sonini toping.",
+      "v": [
+        "11",
+        "15",
+        "17",
+        "16"
+      ],
+      "t": 3,
+      "izoh": "Sₙ = n·(2a₁ + (n − 1)d)/2 da qavs ichi 10 + 3n − 3 = 3n + 7 bo'ladi. Shunday qilib n·(3n + 7)/2 = 440, ya'ni 3n² + 7n − 880 = 0. Diskriminant D = 49 + 10560 = 10609 = 103², shuning uchun n = (−7 + 103)/6 = 16. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindidan-n-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#660a10a3"
+    },
+    {
+      "q": "Karim birinchi oyda 20 000 so'm jamg'ardi va har oy jamg'armasini 5 000 so'mga oshirib bordi. Jami 570 000 so'm to'plash uchun unga necha oy kerak bo'ladi?",
+      "v": [
+        "12 oy",
+        "11 oy",
+        "13 oy",
+        "15 oy"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi formulasi: Sₙ = n·(2·20 000 + (n − 1)·5 000)/2 = 2500n² + 17 500n. Buni 570 000 ga tenglab, ikkala tomonni 2500 ga bo'lamiz: n² + 7n − 228 = 0. D = 49 + 912 = 961 = 31², demak n = (−7 + 31)/2 = 12. Javob: 12 oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindidan-n-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#c11290cd"
+    },
+    {
+      "q": "Birinchi hadi 2, ayirmasi 5 bo'lgan arifmetik progressiyaning dastlabki n ta hadi yig'indisi 483 ga teng bo'lsa, n nechaga teng?",
+      "v": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "Qavs ichi 2a₁ + (n − 1)d = 4 + 5n − 5 = 5n − 1 ko'rinishga keladi. Demak n·(5n − 1)/2 = 483, ya'ni 5n² − n − 966 = 0. D = 1 + 19320 = 19321 = 139², shuning uchun n = (1 + 139)/10 = 14. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindidan-n-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#a0ea4a2b"
+    },
+    {
+      "q": "Avtoparkda birinchi kuni 40 nafar yo'lovchi tashildi va har kuni yo'lovchilar soni 10 taga ortdi. Jami 1300 nafar yo'lovchi tashilishi uchun necha kun o'tishi kerak?",
+      "v": [
+        "11 kun",
+        "12 kun",
+        "13 kun",
+        "14 kun"
+      ],
+      "t": 2,
+      "izoh": "Kunlik yo'lovchilar arifmetik progressiya: Sₙ = n·(80 + 10(n − 1))/2 = 5n² + 35n. Tenglama 5n² + 35n = 1300, uni 5 ga bo'lsak n² + 7n − 260 = 0. D = 49 + 1040 = 1089 = 33², demak n = (−7 + 33)/2 = 13. Javob: 13 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindidan-n-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#4520cd09"
+    },
+    {
+      "q": "Arifmetik progressiyada a₁ = 30, d = −4 bo'lib, dastlabki n ta had yig'indisi 126 ga teng. n ning barcha mumkin bo'lgan qiymatlarini ko'rsating.",
+      "v": [
+        "Faqat n = 7",
+        "Faqat n = 9",
+        "n = 7 va n = 8",
+        "n = 7 va n = 9"
+      ],
+      "t": 3,
+      "izoh": "Sₙ = n·(60 − 4(n − 1))/2 = n·(64 − 4n)/2 = 32n − 2n². Tenglama 32n − 2n² = 126 ni soddalashtirsak n² − 16n + 63 = 0 hosil bo'ladi. Uning ildizlari n = 7 va n = 9. Ayirma manfiy bo'lgani uchun 8-hadan keyin hadlar manfiy bo'ladi va yig'indi qaytadan 126 ga tushadi. Javob: n = 7 va n = 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindidan-n-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#f6afb7f3"
+    },
+    {
+      "q": "Arifmetik progressiyaning ayirmasi 4 ga teng va dastlabki 10 ta hadining yig'indisi 310 ni tashkil qiladi. Progressiyaning birinchi hadini toping.",
+      "v": [
+        "13",
+        "11",
+        "31",
+        "49"
+      ],
+      "t": 0,
+      "izoh": "S₁₀ = 10·(2a₁ + 9·4)/2 = 5·(2a₁ + 36) = 10a₁ + 180 ko'rinishida yoziladi. Bu ifoda 310 ga teng, demak 10a₁ = 130 va a₁ = 13. Tekshiramiz: 10·13 + 180 = 310. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindidan-a1-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#3f0bcf8c"
+    },
+    {
+      "q": "Kamayuvchi arifmetik progressiyaning ayirmasi −2, dastlabki 15 ta hadining yig'indisi esa 105 ga teng. Birinchi hadni aniqlang.",
+      "v": [
+        "7",
+        "−7",
+        "21",
+        "35"
+      ],
+      "t": 2,
+      "izoh": "Sₙ = n·a₁ + d·n·(n − 1)/2 ko'rinishidan foydalanamiz: 15a₁ + (−2)·15·14/2 = 15a₁ − 210. Bu 105 ga teng, demak 15a₁ = 315 va a₁ = 21. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindidan-a1-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#9d93ce7f"
+    },
+    {
+      "q": "Yangi ishga kirgan Sherzodning oylik maoshi har oy 150 000 so'mga oshib boradi. Sakkiz oyda u jami 12 400 000 so'm olgan bo'lsa, birinchi oydagi maoshi qancha edi?",
+      "v": [
+        "1 550 000 so'm",
+        "950 000 so'm",
+        "2 075 000 so'm",
+        "1 025 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Maoshlar arifmetik progressiya: S₈ = 8a₁ + 150 000·8·7/2 = 8a₁ + 4 200 000. Bu ifoda 12 400 000 ga teng, demak 8a₁ = 8 200 000 va a₁ = 1 025 000. Javob: 1 025 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindidan-a1-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#824a4fd1"
+    },
+    {
+      "q": "Arifmetik progressiyada d = 3 va dastlabki 21 ta hadning yig'indisi 525 ga teng bo'lsa, birinchi had qanday qiymatga ega?",
+      "v": [
+        "25",
+        "−5",
+        "5",
+        "−35"
+      ],
+      "t": 1,
+      "izoh": "S₂₁ = 21a₁ + 3·21·20/2 = 21a₁ + 630 bo'ladi. Bu 525 ga teng, demak 21a₁ = −105 va a₁ = −5. Tekshirish: S₂₁ = 21·(−10 + 60)/2 = 21·25 = 525. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindidan-a1-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#0e73e2ac"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi 3 ga teng va dastlabki 10 ta hadining yig'indisi 480 ni tashkil etadi. Progressiyaning ayirmasini toping.",
+      "v": [
+        "5",
+        "9",
+        "20",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Sₙ = n·a₁ + d·n·(n − 1)/2 formulasiga qo'yamiz: 10·3 + d·10·9/2 = 30 + 45d. Bu 480 ga teng, demak 45d = 450 va d = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindidan-d-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#9fed8f0f"
+    },
+    {
+      "q": "Velosiped do'koni birinchi oyda 60 ta velosiped sotgan va sotuv har oy bir xil miqdorda ortib borgan. Sakkiz oyda jami 816 ta velosiped sotilgan bo'lsa, oylik o'sish qancha?",
+      "v": [
+        "6 ta",
+        "12 ta",
+        "42 ta",
+        "24 ta"
+      ],
+      "t": 1,
+      "izoh": "S₈ = 8·60 + d·8·7/2 = 480 + 28d ko'rinishida bo'ladi. Bu 816 ga teng, demak 28d = 336 va d = 12. Har oyda sotuv 12 taga ortgan. Javob: 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindidan-d-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#511e18a4"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi 100, dastlabki 9 ta hadining yig'indisi esa 684 ga teng. Progressiyaning ayirmasini aniqlang.",
+      "v": [
+        "−3",
+        "6",
+        "−24",
+        "−6"
+      ],
+      "t": 3,
+      "izoh": "S₉ = 9·100 + d·9·8/2 = 900 + 36d bo'ladi. Bu ifoda 684 ga teng, demak 36d = −216 va d = −6. Ayirma manfiy, ya'ni progressiya kamayuvchi. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindidan-d-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#39f6228b"
+    },
+    {
+      "q": "Issiqxonada birinchi kuni 250 litr suv sarflandi, keyingi kunlarda esa sarf bir xil miqdorda kamayib bordi. O'n ikki kunda jami 2340 litr suv sarflangan bo'lsa, kunlik o'zgarish qanday?",
+      "v": [
+        "5 litrga kamaygan",
+        "10 litrga kamaygan",
+        "55 litrga kamaygan",
+        "10 litrga ortgan"
+      ],
+      "t": 1,
+      "izoh": "S₁₂ = 12·250 + d·12·11/2 = 3000 + 66d ko'rinishida yoziladi. Bu 2340 ga teng, demak 66d = −660 va d = −10. Manfiy ishora sarf har kuni 10 litrga kamayganini bildiradi. Javob: 10 litrga kamaygan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindidan-d-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#0c675ef9"
+    },
+    {
+      "q": "1 dan 60 gacha bo'lgan barcha ketma-ket natural sonlarning yig'indisini hisoblang.",
+      "v": [
+        "1830",
+        "1800",
+        "1770",
+        "3660"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket natural sonlar arifmetik progressiya bo'lib, yig'indisi 1 + 2 + … + n = n·(n + 1)/2 formulasi bilan topiladi. Bu yerda n = 60, demak S = 60·61/2 = 30·61 = 1830. Javob: 1830.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "natural-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#ac896eb2"
+    },
+    {
+      "q": "Sinf jurnalidagi 45 nafar o'quvchi 1 dan 45 gacha raqamlangan. Barcha raqamlarning yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "2070",
+        "990",
+        "1035",
+        "1081"
+      ],
+      "t": 2,
+      "izoh": "1 dan 45 gacha sonlar yig'indisi n·(n + 1)/2 formulasi bilan topiladi. n = 45 bo'lgani uchun S = 45·46/2 = 45·23 = 1035. Javob: 1035.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "natural-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#abb1a5bf"
+    },
+    {
+      "q": "Bekzod mashg'ulotning birinchi kuni 1 km, ikkinchi kuni 2 km yugurdi va shu tartibda har kuni bir kilometr qo'shib bordi. Yigirma to'rt kunda u jami qancha masofa yugurgan?",
+      "v": [
+        "276 km",
+        "300 km",
+        "325 km",
+        "600 km"
+      ],
+      "t": 1,
+      "izoh": "Kunlik masofalar 1, 2, 3, …, 24 ketma-ketligini hosil qiladi. Ularning yig'indisi n·(n + 1)/2 = 24·25/2 = 12·25 = 300. Javob: 300 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "natural-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#a7df96aa"
+    },
+    {
+      "q": "Birdan boshlab ketma-ket natural sonlar qo'shib borildi va yig'indi aynan 780 ga teng bo'ldi. Oxirgi qo'shilgan son nechaga teng?",
+      "v": [
+        "38",
+        "39",
+        "40",
+        "78"
+      ],
+      "t": 1,
+      "izoh": "Shart n·(n + 1)/2 = 780 ko'rinishida yoziladi, ya'ni n² + n − 1560 = 0. Diskriminant D = 1 + 6240 = 6241 = 79², demak n = (−1 + 79)/2 = 39. Tekshirish: 39·40/2 = 780. Javob: 39.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "natural-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#28b3cb20"
+    },
+    {
+      "q": "1 dan 100 gacha bo'lgan natural sonlar orasida 7 ga karrali bo'lganlarining yig'indisini toping.",
+      "v": [
+        "735",
+        "840",
+        "637",
+        "1470"
+      ],
+      "t": 0,
+      "izoh": "7 ga karrali sonlar 7, 14, …, 98 arifmetik progressiyani tashkil qiladi, chunki 105 soni 100 dan katta. Hadlar soni n = 98 : 7 = 14. Demak S = 14·(7 + 98)/2 = 7·105 = 735. Javob: 735.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "karrali-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#526a4665"
+    },
+    {
+      "q": "50 dan 200 gacha bo'lgan butun sonlar orasidan 9 ga karrali bo'lganlari tanlab olindi. Shu sonlarning yig'indisi nechaga teng?",
+      "v": [
+        "2268",
+        "1944",
+        "4284",
+        "2142"
+      ],
+      "t": 3,
+      "izoh": "Oraliqdagi birinchi karrali son 54, oxirgisi esa 198 bo'ladi. Hadlar soni n = (198 − 54) : 9 + 1 = 16 + 1 = 17. Demak S = 17·(54 + 198)/2 = 17·126 = 2142. Javob: 2142.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "karrali-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#959e670a"
+    },
+    {
+      "q": "Omborda qutilar 4 ga karrali sonlar bilan belgilangan bo'lib, belgilar 1 dan 60 gacha oraliqda joylashgan. Belgilar yig'indisini hisoblang.",
+      "v": [
+        "420",
+        "480",
+        "544",
+        "960"
+      ],
+      "t": 1,
+      "izoh": "4 ga karrali sonlar 4, 8, …, 60 progressiyasini beradi, hadlar soni n = 60 : 4 = 15. Yig'indi S = 15·(4 + 60)/2 = 15·32 = 480. Javob: 480.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "karrali-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#f11fe710"
+    },
+    {
+      "q": "Bank tizimida 100 dan 300 gacha bo'lgan hisob raqamlari ichida 25 ga karrali bo'lganlari ajratildi. Ajratilgan raqamlarning yig'indisini toping.",
+      "v": [
+        "2000",
+        "1800",
+        "1500",
+        "3600"
+      ],
+      "t": 1,
+      "izoh": "25 ga karrali sonlar 100, 125, …, 300 progressiyasini beradi. Hadlar soni n = (300 − 100) : 25 + 1 = 8 + 1 = 9. Demak S = 9·(100 + 300)/2 = 9·200 = 1800. Javob: 1800.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "karrali-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#a6370c7a"
+    },
+    {
+      "q": "Dastlabki 25 ta toq natural sonning yig'indisi qanday qiymatga teng bo'ladi?",
+      "v": [
+        "625",
+        "650",
+        "576",
+        "1250"
+      ],
+      "t": 0,
+      "izoh": "Toq sonlar 1, 3, 5, … progressiyasida a₁ = 1, d = 2. Sₙ = n·(2 + (n − 1)·2)/2 = n·2n/2 = n². Demak dastlabki 25 ta toq son yig'indisi 25² = 625 ga teng. Javob: 625.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toq-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#2f6d7cb5"
+    },
+    {
+      "q": "1 + 3 + 5 + … + 61 ko'rinishidagi yig'indi nechaga teng ekanligini aniqlang.",
+      "v": [
+        "992",
+        "900",
+        "961",
+        "1922"
+      ],
+      "t": 2,
+      "izoh": "Toq sonlar progressiyasida oxirgi had 61 bo'lsa, hadlar soni n = (61 + 1)/2 = 31 bo'ladi. Dastlabki n ta toq sonning yig'indisi n² ga teng, demak S = 31² = 961. Javob: 961.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toq-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#2cdc5eae"
+    },
+    {
+      "q": "Ko'chaning bir tomonidagi uylar 1, 3, 5 tartibida toq raqamlar bilan belgilangan va oxirgi uy 39-raqamli. Uy raqamlarining yig'indisini hisoblang.",
+      "v": [
+        "420",
+        "361",
+        "800",
+        "400"
+      ],
+      "t": 3,
+      "izoh": "Uy raqamlari toq sonlar progressiyasi, oxirgi had 39. Hadlar soni n = (39 + 1)/2 = 20 ta uy. Dastlabki n ta toq son yig'indisi n² bo'lgani uchun S = 20² = 400. Javob: 400.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toq-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#dd391ad6"
+    },
+    {
+      "q": "Birdan boshlab ketma-ket toq sonlar qo'shilganda yig'indi 784 ga teng bo'ldi. Nechta toq son qo'shilgan?",
+      "v": [
+        "27",
+        "28",
+        "29",
+        "392"
+      ],
+      "t": 1,
+      "izoh": "Dastlabki n ta toq sonning yig'indisi n² formulasi bilan topiladi. Demak n² = 784 tenglamani yechamiz: n = √784 = 28. Javob: 28 ta toq son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toq-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#f0a6d775"
+    },
+    {
+      "q": "Dastlabki 30 ta juft natural sonning yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "900",
+        "465",
+        "930",
+        "1860"
+      ],
+      "t": 2,
+      "izoh": "Juft sonlar 2, 4, 6, … progressiyasida a₁ = 2, d = 2 bo'ladi. Sₙ = n·(4 + (n − 1)·2)/2 = n·(2n + 2)/2 = n·(n + 1). Demak S = 30·31 = 930. Javob: 930.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#18019e01"
+    },
+    {
+      "q": "2 + 4 + 6 + … + 48 yig'indisining qiymatini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "576",
+        "600",
+        "300",
+        "1200"
+      ],
+      "t": 1,
+      "izoh": "Oxirgi juft son 48 bo'lgani uchun hadlar soni n = 48 : 2 = 24. Dastlabki n ta juft sonning yig'indisi n·(n + 1) ga teng, demak S = 24·25 = 600. Javob: 600.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#a0236f00"
+    },
+    {
+      "q": "Stadionning juft raqamli sektorlari 2 dan 44 gacha ketma-ket belgilangan. Shu sektor raqamlarining yig'indisi qanchaga teng?",
+      "v": [
+        "484",
+        "253",
+        "1012",
+        "506"
+      ],
+      "t": 3,
+      "izoh": "Sektor raqamlari 2, 4, …, 44 juft sonlar progressiyasi, hadlar soni n = 44 : 2 = 22. Yig'indi n·(n + 1) = 22·23 = 506 ga teng. Javob: 506.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#f0646ee5"
+    },
+    {
+      "q": "Ikkidan boshlab ketma-ket juft sonlar qo'shildi va yig'indi 420 ga teng bo'ldi. Nechta juft son qo'shilgan?",
+      "v": [
+        "19",
+        "20",
+        "21",
+        "210"
+      ],
+      "t": 1,
+      "izoh": "Dastlabki n ta juft son yig'indisi n·(n + 1) formulasi bilan topiladi, demak n·(n + 1) = 420. Bu n² + n − 420 = 0 tenglamani beradi, D = 1 + 1680 = 1681 = 41². Shuning uchun n = (−1 + 41)/2 = 20. Javob: 20 ta juft son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#32c68977"
+    },
+    {
+      "q": "25 dan 75 gacha bo'lgan barcha butun sonlarning yig'indisini toping, chegaradagi sonlar ham hisobga olinsin.",
+      "v": [
+        "2550",
+        "2500",
+        "2450",
+        "5100"
+      ],
+      "t": 0,
+      "izoh": "Chegaradagi sonlar ham kirgani uchun hadlar soni n = 75 − 25 + 1 = 51 ta. Yig'indi S = 51·(25 + 75)/2 = 51·50 = 2550. Javob: 2550.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqdagi-butun-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#29cb9aaf"
+    },
+    {
+      "q": "38 dan 92 gacha bo'lgan butun sonlarning barchasi qo'shildi. Hosil bo'lgan yig'indi nechaga teng?",
+      "v": [
+        "3575",
+        "3510",
+        "3640",
+        "7150"
+      ],
+      "t": 0,
+      "izoh": "Hadlar soni n = 92 − 38 + 1 = 55 ta bo'ladi. Yig'indi formulasi bo'yicha S = 55·(38 + 92)/2 = 55·65 = 3575. Javob: 3575.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-butun-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#607517f1"
+    },
+    {
+      "q": "Mehmonxonaning 101-xonadan 160-xonagacha bo'lgan xonalari ketma-ket raqamlangan. Shu xonalar raqamlarining yig'indisini hisoblang.",
+      "v": [
+        "7729",
+        "7930",
+        "15660",
+        "7830"
+      ],
+      "t": 3,
+      "izoh": "Xonalar soni n = 160 − 101 + 1 = 60 ta. Yig'indi S = 60·(101 + 160)/2 = 30·261 = 7830. Javob: 7830.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-butun-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#e7344356"
+    },
+    {
+      "q": "Barcha ikki xonali natural sonlarning yig'indisi nechaga teng ekanligini aniqlang.",
+      "v": [
+        "4950",
+        "5050",
+        "4905",
+        "9810"
+      ],
+      "t": 2,
+      "izoh": "Ikki xonali sonlar 10 dan 99 gacha, ya'ni n = 99 − 10 + 1 = 90 ta son bor. Yig'indi S = 90·(10 + 99)/2 = 45·109 = 4905. Javob: 4905.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-butun-sonlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#7af6c923"
+    },
+    {
+      "q": "Arifmetik progressiyada a₁ = 3, d = 4 bo'lsa, dastlabki 20 ta had orasidagi juft nomerli hadlarning yig'indisini toping.",
+      "v": [
+        "430",
+        "390",
+        "250",
+        "820"
+      ],
+      "t": 0,
+      "izoh": "Juft nomerli hadlar a₂, a₄, …, a₂₀ ning o'zi arifmetik progressiya bo'lib, uning birinchi hadi a₂ = 7, ayirmasi esa 2d = 8 ga teng, hadlar soni 10 ta. Demak S = 10·(14 + 9·8)/2 = 5·86 = 430. Javob: 430.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-nomerli-hadlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#eaab9c24"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi −5, ayirmasi 6 ga teng. Dastlabki 30 ta had ichidagi juft nomerli hadlar yig'indisi nechaga teng?",
+      "v": [
+        "1185",
+        "2460",
+        "1275",
+        "645"
+      ],
+      "t": 2,
+      "izoh": "Juft nomerli hadlar yangi progressiya hosil qiladi: birinchi hadi a₂ = −5 + 6 = 1, ayirmasi 2d = 12, hadlar soni 15 ta. Demak S = 15·(2 + 14·12)/2 = 15·170/2 = 15·85 = 1275. Javob: 1275.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-nomerli-hadlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#4b320f38"
+    },
+    {
+      "q": "Zalda 40 ta qator bor, birinchi qatorda 12 o'rindiq va har keyingi qatorda 2 taga ko'p. Juft raqamli qatorlardagi o'rindiqlar sonini toping.",
+      "v": [
+        "1000",
+        "1040",
+        "2040",
+        "660"
+      ],
+      "t": 1,
+      "izoh": "Juft raqamli qatorlar alohida progressiya beradi: birinchi hadi 12 + 2 = 14, ayirmasi 2·2 = 4, hadlar soni 20 ta. Demak S = 20·(28 + 19·4)/2 = 10·104 = 1040. Javob: 1040 ta o'rindiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-nomerli-hadlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#7f2cdfc0"
+    },
+    {
+      "q": "Arifmetik progressiyaning dastlabki 24 ta hadi yig'indisi 1200 ga teng, juft nomerli hadlar yig'indisi esa toq nomerlilarnikidan 60 ga ortiq. Juft nomerli hadlar yig'indisini toping.",
+      "v": [
+        "570",
+        "600",
+        "630",
+        "660"
+      ],
+      "t": 2,
+      "izoh": "Juft nomerli hadlar yig'indisini x, toq nomerlilarnikini y deb olamiz. Shartga ko'ra x + y = 1200 va x − y = 60. Ikki tenglamani qo'shsak 2x = 1260, demak x = 630. Javob: 630.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-nomerli-hadlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#5f9dac6c"
+    },
+    {
+      "q": "Arifmetik progressiyada a₁ = 8 va d = 3 bo'lganda, dastlabki 16 ta had orasidagi juft nomerli hadlarning yig'indisi qanchaga teng?",
+      "v": [
+        "232",
+        "488",
+        "172",
+        "256"
+      ],
+      "t": 3,
+      "izoh": "Juft nomerli hadlar a₂ = 11 dan boshlanadi, ularning ayirmasi 2d = 6, soni esa 8 ta. Demak S = 8·(22 + 7·6)/2 = 4·64 = 256. Javob: 256.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-nomerli-hadlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#11915d02"
+    },
+    {
+      "q": "Arifmetik progressiyada a₁ = 4, d = 5 bo'lsa, dastlabki 20 ta had ichidagi toq nomerli hadlarning yig'indisi nechaga teng?",
+      "v": [
+        "540",
+        "1030",
+        "265",
+        "490"
+      ],
+      "t": 3,
+      "izoh": "Toq nomerli hadlar a₁, a₃, …, a₁₉ ham progressiya bo'lib, birinchi hadi 4, ayirmasi 2d = 10 va hadlar soni 10 ta. Demak S = 10·(8 + 9·10)/2 = 5·98 = 490. Javob: 490.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toq-nomerli-hadlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#892bf986"
+    },
+    {
+      "q": "Ko'p qavatli binoning birinchi qavatida 6 ta kvartira bor, har keyingi qavatda esa 3 taga ko'p. Bino 18 qavatli bo'lsa, toq qavatlardagi kvartiralar soni qancha?",
+      "v": [
+        "297",
+        "567",
+        "270",
+        "162"
+      ],
+      "t": 2,
+      "izoh": "Toq qavatlar 1-, 3-, …, 17-qavatlar, ya'ni 9 ta qavat. Ular progressiya hosil qiladi: birinchi hadi 6, ayirmasi 2·3 = 6. Demak S = 9·(12 + 8·6)/2 = 9·60/2 = 9·30 = 270. Javob: 270 ta kvartira.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toq-nomerli-hadlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#15d96243"
+    },
+    {
+      "q": "Arifmetik progressiyada a₁ = 2 va d = 7 bo'lsa, dastlabki 26 ta had orasidagi toq nomerli hadlarning yig'indisini toping.",
+      "v": [
+        "1209",
+        "1118",
+        "2327",
+        "572"
+      ],
+      "t": 1,
+      "izoh": "Toq nomerli hadlar a₁, a₃, …, a₂₅ bo'lib, ular yangi progressiya hosil qiladi: birinchi hadi 2, ayirmasi 2d = 14, hadlar soni 13 ta. Demak S = 13·(4 + 12·14)/2 = 13·172/2 = 13·86 = 1118. Javob: 1118.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toq-nomerli-hadlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#8ec5b10a"
+    },
+    {
+      "q": "Arifmetik progressiyaning dastlabki 20 ta hadi ichida toq nomerlilarining yig'indisi 250, juft nomerlilariniki esa 340 ga teng. Progressiyaning ayirmasini toping.",
+      "v": [
+        "9",
+        "18",
+        "45",
+        "90"
+      ],
+      "t": 0,
+      "izoh": "Har bir juft nomerli had o'zidan oldingi toq nomerli haddan d ga katta: a₂ − a₁ = d, a₄ − a₃ = d va hokazo. Bunday juftliklar 10 ta bo'lgani uchun 340 − 250 = 10d. Demak 10d = 90 va d = 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toq-nomerli-hadlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#1048b1c2"
+    },
+    {
+      "q": "Bog'da 15 qator daraxt ekilgan, birinchi qatorda 9 ta daraxt bor va har keyingi qatorda 4 taga ko'p. Toq raqamli qatorlardagi daraxtlar sonini hisoblang.",
+      "v": [
+        "259",
+        "555",
+        "296",
+        "184"
+      ],
+      "t": 2,
+      "izoh": "Toq raqamli qatorlar 1-, 3-, …, 15-qatorlar, ya'ni 8 ta qator. Ular progressiya beradi: birinchi hadi 9, ayirmasi 2·4 = 8. Demak S = 8·(18 + 7·8)/2 = 4·74 = 296. Javob: 296 ta daraxt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toq-nomerli-hadlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#0ac8886d"
+    },
+    {
+      "q": "Arifmetik progressiyada a₁ = 5 va d = 3 bo'lsa, o'n birinchi haddan yigirmanchi hadgacha bo'lgan hadlar yig'indisini toping.",
+      "v": [
+        "485",
+        "670",
+        "185",
+        "450"
+      ],
+      "t": 0,
+      "izoh": "Izlanayotgan yig'indi S₂₀ − S₁₀ ga teng. S₂₀ = 20·(10 + 19·3)/2 = 10·67 = 670, S₁₀ = 10·(10 + 9·3)/2 = 5·37 = 185. Demak farq 670 − 185 = 485. Javob: 485.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-hadlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#7e15e4f8"
+    },
+    {
+      "q": "Birinchi hadi −4, ayirmasi 6 bo'lgan arifmetik progressiyaning sakkizinchi hadidan o'n beshinchi hadigacha bo'lgan hadlari yig'indisi nechaga teng?",
+      "v": [
+        "570",
+        "434",
+        "472",
+        "98"
+      ],
+      "t": 2,
+      "izoh": "Bu yig'indi S₁₅ − S₇ ga teng. S₁₅ = 15·(−8 + 14·6)/2 = 15·38 = 570, S₇ = 7·(−8 + 6·6)/2 = 7·14 = 98. Demak izlanayotgan qiymat 570 − 98 = 472. Javob: 472.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-hadlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#6a112ce0"
+    },
+    {
+      "q": "Sex birinchi kuni 24 dona mahsulot chiqardi va har kuni ishlab chiqarish 6 donaga ortdi. Sakkizinchi kundan o'n to'rtinchi kungacha jami nechta mahsulot tayyorlangan?",
+      "v": [
+        "882 dona",
+        "294 dona",
+        "522 dona",
+        "588 dona"
+      ],
+      "t": 3,
+      "izoh": "Kerakli miqdor S₁₄ − S₇ ga teng. S₁₄ = 14·(48 + 13·6)/2 = 7·126 = 882, S₇ = 7·(48 + 6·6)/2 = 7·42 = 294. Demak 882 − 294 = 588. Javob: 588 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-hadlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#ffb10b01"
+    },
+    {
+      "q": "Arifmetik progressiyada S₅ = 85 va S₁₂ = 498 ekani ma'lum. Oltinchi haddan o'n ikkinchi hadgacha bo'lgan hadlarning yig'indisini aniqlang.",
+      "v": [
+        "583",
+        "413",
+        "375",
+        "498"
+      ],
+      "t": 1,
+      "izoh": "Oltinchi haddan boshlangani uchun birinchi beshta had chiqarib tashlanadi, ya'ni izlanayotgan yig'indi S₁₂ − S₅ ga teng. Demak 498 − 85 = 413. Javob: 413.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliq-hadlar-yigindisi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#544ecff9"
+    },
+    {
+      "q": "Arifmetik progressiyada dastlabki o'nta hadning yig'indisi 250, dastlabki to'qqiztasiniki esa 198 ga teng. O'ninchi hadni toping.",
+      "v": [
+        "52",
+        "25",
+        "22",
+        "448"
+      ],
+      "t": 0,
+      "izoh": "Har qanday hadni aₙ = Sₙ − Sₙ₋₁ ayirmasi orqali topish mumkin, chunki S₁₀ ichida S₉ to'liq mavjud. Demak a₁₀ = 250 − 198 = 52. Javob: 52.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-dan-had-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#7c9ca1b5"
+    },
+    {
+      "q": "Arifmetik progressiyaning dastlabki n ta hadi yig'indisi Sₙ = n² + 4n formula bilan berilgan. Beshinchi hadni toping.",
+      "v": [
+        "45",
+        "13",
+        "9",
+        "32"
+      ],
+      "t": 1,
+      "izoh": "Avval S₅ = 25 + 20 = 45 va S₄ = 16 + 16 = 32 ni hisoblaymiz. Beshinchi had a₅ = S₅ − S₄ = 45 − 32 = 13 ga teng. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-dan-had-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#b0f727c9"
+    },
+    {
+      "q": "Dastlabki n ta had yig'indisi Sₙ = 2n² − n ko'rinishida berilgan bo'lsa, progressiyaning o'ninchi hadi nechaga teng?",
+      "v": [
+        "190",
+        "19",
+        "37",
+        "153"
+      ],
+      "t": 2,
+      "izoh": "S₁₀ = 2·100 − 10 = 190 va S₉ = 2·81 − 9 = 153 bo'ladi. Demak a₁₀ = S₁₀ − S₉ = 190 − 153 = 37. Javob: 37.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-dan-had-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#8ad188be"
+    },
+    {
+      "q": "Do'kon n kun ichida jami Sₙ = 4n² + 5n dona mahsulot sotadi. Sakkizinchi kuni do'konda nechta mahsulot sotilgan?",
+      "v": [
+        "296 dona",
+        "65 dona",
+        "37 dona",
+        "231 dona"
+      ],
+      "t": 1,
+      "izoh": "Sakkizinchi kundagi sotuv S₈ va S₇ ayirmasiga teng. S₈ = 4·64 + 40 = 296, S₇ = 4·49 + 35 = 231. Demak sakkizinchi kuni 296 − 231 = 65 dona sotilgan. Javob: 65 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sn-dan-had-topish",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#4201c7e9"
+    },
+    {
+      "q": "Arifmetik progressiyaning yig'indisi Sₙ = 3n² + 2n formula bilan ifodalangan. Shu progressiyaning ayirmasini toping.",
+      "v": [
+        "3",
+        "5",
+        "6",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "a₁ = S₁ = 3 + 2 = 5 va S₂ = 12 + 4 = 16, demak a₂ = 16 − 5 = 11. Ayirma d = a₂ − a₁ = 11 − 5 = 6 ga teng. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-kvadratik-ifoda",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#2b6a6d18"
+    },
+    {
+      "q": "Arifmetik progressiyaning dastlabki n ta hadi yig'indisi Sₙ = 2n² + 5n bo'lsa, uning birinchi hadi nechaga teng?",
+      "v": [
+        "7",
+        "5",
+        "2",
+        "11"
+      ],
+      "t": 0,
+      "izoh": "Birinchi had yig'indining n = 1 dagi qiymatiga teng, chunki S₁ = a₁. Demak a₁ = 2·1 + 5 = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-kvadratik-ifoda",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#923be3bb"
+    },
+    {
+      "q": "Yig'indisi Sₙ = n² + 6n formulasi bilan berilgan arifmetik progressiyaning o'n ikkinchi hadini hisoblang.",
+      "v": [
+        "216",
+        "187",
+        "29",
+        "18"
+      ],
+      "t": 2,
+      "izoh": "S₁₂ = 144 + 72 = 216 va S₁₁ = 121 + 66 = 187 bo'ladi. Demak a₁₂ = 216 − 187 = 29. Javob: 29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sn-kvadratik-ifoda",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#26b5e8ac"
+    },
+    {
+      "q": "Arifmetik progressiyaning yig'indisi Sₙ = 5n² − 3n ko'rinishida berilgan. Uning birinchi hadi va ayirmasi qanday?",
+      "v": [
+        "a₁ = 2, d = 5",
+        "a₁ = 5, d = −3",
+        "a₁ = 7, d = 10",
+        "a₁ = 2, d = 10"
+      ],
+      "t": 3,
+      "izoh": "a₁ = S₁ = 5 − 3 = 2 bo'ladi. S₂ = 20 − 6 = 14, demak a₂ = 14 − 2 = 12 va d = 12 − 2 = 10. Javob: a₁ = 2, d = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sn-kvadratik-ifoda",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#99ae176f"
+    },
+    {
+      "q": "Arifmetik progressiya 20 ta haddan iborat va uning hadlarining o'rta arifmetigi 34 ga teng. Barcha hadlarning yig'indisini toping.",
+      "v": [
+        "680",
+        "340",
+        "1360",
+        "646"
+      ],
+      "t": 0,
+      "izoh": "Hadlarning o'rta arifmetigi yig'indini hadlar soniga bo'lgandagi natijaga teng. Demak S = 34·20 = 680. Javob: 680.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-had-orqali-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#2c26eae7"
+    },
+    {
+      "q": "Laboratoriyada 25 ta o'lchov natijasi arifmetik progressiya tashkil qiladi, birinchi natija 12, oxirgisi esa 84 birlikni tashkil etadi. Natijalarning o'rtacha qiymati qancha?",
+      "v": [
+        "96",
+        "48",
+        "36",
+        "1200"
+      ],
+      "t": 1,
+      "izoh": "Arifmetik progressiyada barcha hadlarning o'rtachasi birinchi va oxirgi hadning o'rtachasiga teng. Demak o'rtacha qiymat (12 + 84)/2 = 96/2 = 48 ga teng. Javob: 48.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-had-orqali-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#dc67a139"
+    },
+    {
+      "q": "Arifmetik progressiyaning dastlabki 15 ta hadi yig'indisi 660 ga teng bo'lsa, uning o'rtadagi hadi, ya'ni sakkizinchi hadi nechaga teng?",
+      "v": [
+        "88",
+        "44",
+        "22",
+        "330"
+      ],
+      "t": 1,
+      "izoh": "Toq sondagi hadlarda o'rtadagi had barcha hadlarning o'rtachasiga teng bo'ladi. S₁₅ = 15·a₈ munosabatidan a₈ = 660 : 15 = 44 kelib chiqadi. Javob: 44.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-had-orqali-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#c27d4c4b"
+    },
+    {
+      "q": "Do'kon to'qqiz kun ishladi va kunlik daromadlari arifmetik progressiya tashkil qildi, jami daromad esa 4 500 000 so'm bo'ldi. Beshinchi kundagi daromadni toping.",
+      "v": [
+        "1 000 000 so'm",
+        "250 000 so'm",
+        "500 000 so'm",
+        "900 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "To'qqizta had ichida beshinchisi o'rtadagi had bo'lib, u barcha hadlarning o'rtachasiga teng. Demak a₅ = 4 500 000 : 9 = 500 000. Javob: 500 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-had-orqali-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#77267187"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi 24, ayirmasi −3 ga teng. Dastlabki nechta hadning yig'indisi nolga teng bo'ladi?",
+      "v": [
+        "9",
+        "16",
+        "17",
+        "18"
+      ],
+      "t": 2,
+      "izoh": "Sₙ = n·(48 − 3(n − 1))/2 = n·(51 − 3n)/2 ko'rinishga keladi. Yig'indi nolga teng bo'lishi uchun 51 − 3n = 0 bo'lishi kerak, chunki n ≠ 0. Bundan n = 17 kelib chiqadi. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-nolga-teng",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#0ef69dc1"
+    },
+    {
+      "q": "Kamayuvchi arifmetik progressiyada a₁ = 21 va d = −3. Sₙ = 0 tenglikni qanoatlantiruvchi n ning qiymatini toping.",
+      "v": [
+        "8",
+        "14",
+        "15",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi Sₙ = n·(42 − 3(n − 1))/2 = n·(45 − 3n)/2 ko'rinishga keladi. Ko'paytma nolga teng bo'lishi uchun 45 − 3n = 0 bo'lishi kerak, chunki hadlar soni n noldan farqli. Bundan n = 15 kelib chiqadi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-nolga-teng",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#9951a8ff"
+    },
+    {
+      "q": "Suv sathi birinchi kuni 18 sm ko'tarildi, keyingi kunlarda esa o'zgarish har kuni 2 sm ga kamayib bordi va keyin sath pasaya boshladi. Nechanchi kunda umumiy o'zgarish yana nolga qaytadi?",
+      "v": [
+        "10 kun",
+        "18 kun",
+        "19 kun",
+        "20 kun"
+      ],
+      "t": 2,
+      "izoh": "Kunlik o'zgarishlar a₁ = 18, d = −2 bo'lgan progressiya. Umumiy o'zgarish Sₙ = n·(36 − 2(n − 1))/2 = n·(38 − 2n)/2 ga teng. Bu nolga aylanishi uchun 38 − 2n = 0, ya'ni n = 19 bo'lishi kerak. Javob: 19 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-nolga-teng",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#96b07fb4"
+    },
+    {
+      "q": "Arifmetik progressiyaning birinchi hadi −18, ayirmasi 4 ga teng bo'lsa, dastlabki nechta hadning yig'indisi nolni beradi?",
+      "v": [
+        "9",
+        "10",
+        "11",
+        "20"
+      ],
+      "t": 1,
+      "izoh": "Sₙ = n·(−36 + 4(n − 1))/2 = n·(4n − 40)/2 ko'rinishida yoziladi. Yig'indi nol bo'lishi uchun 4n − 40 = 0, demak n = 10. Manfiy hadlar musbat hadlar bilan o'zaro yo'qoladi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-nolga-teng",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#4f5fe18f"
+    },
+    {
+      "q": "Arifmetik progressiyada a₁ = 45 va d = −4. Dastlabki n ta hadning yig'indisi eng katta bo'lishi uchun n qanday bo'lishi kerak?",
+      "v": [
+        "11",
+        "12",
+        "13",
+        "24"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi hadlar musbat bo'lgunicha ortadi, shuning uchun aₙ ≥ 0 shartini yozamiz: 45 − 4(n − 1) ≥ 0, ya'ni 49 ≥ 4n va n ≤ 12,25. Butun qiymat n = 12. Tekshirish: S₁₂ = 276, S₁₃ = 273, demak eng katta yig'indi 12-hadda erishiladi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-maksimum",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#fe2f6f1f"
+    },
+    {
+      "q": "Birinchi hadi 60, ayirmasi −7 ga teng bo'lgan arifmetik progressiyada hadlar yig'indisining eng katta qiymatini toping.",
+      "v": [
+        "284",
+        "285",
+        "288",
+        "540"
+      ],
+      "t": 2,
+      "izoh": "Avval musbat hadlar sonini aniqlaymiz: 60 − 7(n − 1) ≥ 0 dan 67 ≥ 7n va n ≤ 9,57 chiqadi, demak n = 9. S₉ = 9·(120 − 8·7)/2 = 9·64/2 = 9·32 = 288. Qo'shni qiymatlar S₈ = 284 va S₁₀ = 285 undan kichik. Javob: 288.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-maksimum",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#1975d009"
+    },
+    {
+      "q": "Kompaniya birinchi oyda 120 mln so'm foyda oldi, ammo har oy foyda 14 mln so'mga kamayib bormoqda. Umumiy foyda eng katta bo'lishi uchun kompaniya necha oy ishlashi kerak?",
+      "v": [
+        "8 oy",
+        "9 oy",
+        "10 oy",
+        "17 oy"
+      ],
+      "t": 1,
+      "izoh": "Umumiy foyda oylik foyda musbat bo'lgunicha ortadi. Shart: 120 − 14(n − 1) ≥ 0, ya'ni 134 ≥ 14n va n ≤ 9,57. Butun qiymat n = 9, ya'ni to'qqizinchi oydan keyin foyda manfiy bo'lib, umumiy natijani kamaytiradi. Javob: 9 oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-maksimum",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#3eec5191"
+    },
+    {
+      "q": "Arifmetik progressiyada a₁ = 100 va d = −6 bo'lsa, uning dastlabki hadlari yig'indisi erishishi mumkin bo'lgan eng katta qiymat nechaga teng?",
+      "v": [
+        "880",
+        "882",
+        "1700",
+        "884"
+      ],
+      "t": 3,
+      "izoh": "Musbat hadlar soni 100 − 6(n − 1) ≥ 0 shartidan topiladi: 106 ≥ 6n, demak n ≤ 17,67 va n = 17. S₁₇ = 17·(200 − 16·6)/2 = 17·104/2 = 17·52 = 884. Javob: 884.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-maksimum",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#51926e99"
+    },
+    {
+      "q": "Poyezd birinchi soatda 42 km yo'l bosdi va har soatda bosib o'tgan masofasi 6 km ga ortdi. To'qqiz soatda poyezd qancha masofa bosgan?",
+      "v": [
+        "594 km",
+        "621 km",
+        "405 km",
+        "1188 km"
+      ],
+      "t": 0,
+      "izoh": "Soatlik masofalar arifmetik progressiya: a₁ = 42, d = 6, n = 9. Qavs ichi: 2·42 + 8·6 = 84 + 48 = 132. Demak S₉ = 9·132/2 = 9·66 = 594. Javob: 594 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masofa-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#65ac0e62"
+    },
+    {
+      "q": "Erkin tushayotgan jism birinchi sekundda 5 m, keyingi har sekundda esa oldingisidan 10 m ko'proq masofani bosib o'tadi. Yetti sekundda jism qancha masofani bosadi?",
+      "v": [
+        "280 m",
+        "245 m",
+        "455 m",
+        "490 m"
+      ],
+      "t": 1,
+      "izoh": "Sekundlik masofalar arifmetik progressiya: a₁ = 5, d = 10, n = 7. Qavs ichi: 2·5 + 6·10 = 10 + 60 = 70. Demak S₇ = 7·70/2 = 7·35 = 245. Javob: 245 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masofa-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#79f65a77"
+    },
+    {
+      "q": "Velosipedchi mashg'ulotning birinchi kuni 18 km yurdi va har kuni masofani 4 km ga oshirdi. O'n bir kunda u jami qancha masofa bosgan?",
+      "v": [
+        "440 km",
+        "319 km",
+        "418 km",
+        "836 km"
+      ],
+      "t": 2,
+      "izoh": "Kunlik masofalar arifmetik progressiya: a₁ = 18, d = 4, n = 11. Qavs ichi: 2·18 + 10·4 = 36 + 40 = 76. Demak S₁₁ = 11·76/2 = 11·38 = 418. Javob: 418 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masofa-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#d3b3eb75"
+    },
+    {
+      "q": "Tormozlangan avtomobil birinchi sekundda 28 m yurdi, keyingi har sekundda esa 4 m kam masofa bosdi va yetti sekunddan so'ng to'xtadi. Tormoz yo'li qancha?",
+      "v": [
+        "196 m",
+        "98 m",
+        "112 m",
+        "224 m"
+      ],
+      "t": 2,
+      "izoh": "Sekundlik masofalar kamayuvchi progressiya: a₁ = 28, d = −4, n = 7. Qavs ichi: 2·28 − 6·4 = 56 − 24 = 32. Demak S₇ = 7·32/2 = 7·16 = 112. Javob: 112 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-masofa-yigindi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#8ea202ab"
+    },
+    {
+      "q": "Qarzni uzish rejasiga ko'ra birinchi oyda 500 000 so'm to'lanadi va har oy to'lov 50 000 so'mga oshib boradi. O'n oyda jami qancha mablag' to'lanadi?",
+      "v": [
+        "7 250 000 so'm",
+        "7 500 000 so'm",
+        "5 000 000 so'm",
+        "14 500 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "To'lovlar arifmetik progressiya: a₁ = 500 000, d = 50 000, n = 10. Qavs ichi: 2·500 000 + 9·50 000 = 1 000 000 + 450 000 = 1 450 000. Demak S₁₀ = 10·1 450 000/2 = 5·1 450 000 = 7 250 000. Javob: 7 250 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tolov-rejasi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#347f3f83"
+    },
+    {
+      "q": "Kredit shartiga ko'ra birinchi oydagi to'lov 1 200 000 so'm bo'lib, keyingi har oyda to'lov 30 000 so'mga kamayadi. Yigirma to'rt oyda jami qancha to'lov amalga oshiriladi?",
+      "v": [
+        "20 160 000 so'm",
+        "20 520 000 so'm",
+        "28 800 000 so'm",
+        "41 040 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "To'lovlar kamayuvchi progressiya: a₁ = 1 200 000, d = −30 000, n = 24. Qavs ichi: 2 400 000 − 23·30 000 = 2 400 000 − 690 000 = 1 710 000. Demak S₂₄ = 24·1 710 000/2 = 12·1 710 000 = 20 520 000. Javob: 20 520 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tolov-rejasi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#a9279df0"
+    },
+    {
+      "q": "Sug'urta badali birinchi yili 800 000 so'm bo'lib, keyingi har yili 120 000 so'mga ortib boradi. Olti yil davomida jami qancha badal to'lanadi?",
+      "v": [
+        "6 960 000 so'm",
+        "4 800 000 so'm",
+        "6 600 000 so'm",
+        "13 200 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Badallar arifmetik progressiya: a₁ = 800 000, d = 120 000, n = 6. Qavs ichi: 1 600 000 + 5·120 000 = 1 600 000 + 600 000 = 2 200 000. Demak S₆ = 6·2 200 000/2 = 3·2 200 000 = 6 600 000. Javob: 6 600 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tolov-rejasi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#a329c6df"
+    },
+    {
+      "q": "Ijara haqi har oy 40 000 so'mga oshib boradi va bir yilda jami 9 120 000 so'm to'langan. Birinchi oydagi ijara haqi qancha bo'lgan?",
+      "v": [
+        "760 000 so'm",
+        "520 000 so'm",
+        "540 000 so'm",
+        "980 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Yig'indini S₁₂ = 12a₁ + 40 000·12·11/2 = 12a₁ + 2 640 000 ko'rinishida yozamiz. Bu 9 120 000 ga teng, demak 12a₁ = 6 480 000 va a₁ = 540 000. Javob: 540 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tolov-rejasi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#87170f8d"
+    },
+    {
+      "q": "Talaba kontrakt pulini bo'lib to'laydi: birinchi to'lov 900 000 so'm, har keyingisi 100 000 so'mga ortiq. Jami 13 500 000 so'm to'lash uchun nechta to'lov qilishi kerak?",
+      "v": [
+        "9 ta",
+        "10 ta",
+        "11 ta",
+        "12 ta"
+      ],
+      "t": 1,
+      "izoh": "Sₙ = n·(1 800 000 + 100 000(n − 1))/2 = 50 000n² + 850 000n bo'ladi. Uni 13 500 000 ga tenglab, 50 000 ga bo'lamiz: n² + 17n − 270 = 0. D = 289 + 1080 = 1369 = 37², demak n = (−17 + 37)/2 = 10. Javob: 10 ta to'lov.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tolov-rejasi",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#b1fd3794"
+    },
+    {
+      "q": "Arifmetik progressiyada dastlabki o'nta hadning yig'indisi 260, dastlabki yigirmatasiniki esa 920 ga teng. Progressiyaning birinchi hadini toping.",
+      "v": [
+        "4",
+        "8",
+        "16",
+        "26"
+      ],
+      "t": 1,
+      "izoh": "S₁₀ = 5·(2a₁ + 9d) = 260 dan 2a₁ + 9d = 52, S₂₀ = 10·(2a₁ + 19d) = 920 dan 2a₁ + 19d = 92 hosil bo'ladi. Ikkinchisidan birinchisini ayirsak 10d = 40, demak d = 4. Endi 2a₁ = 52 − 36 = 16 va a₁ = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-yigindi-munosabati",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#ba5ebb3c"
+    },
+    {
+      "q": "Arifmetik progressiyada S₆ = 189 va S₁₂ = 774 ekani ma'lum bo'lsa, progressiyaning ayirmasi nechaga teng?",
+      "v": [
+        "11",
+        "22",
+        "33",
+        "66"
+      ],
+      "t": 0,
+      "izoh": "S₆ = 3·(2a₁ + 5d) = 189 dan 2a₁ + 5d = 63, S₁₂ = 6·(2a₁ + 11d) = 774 dan 2a₁ + 11d = 129 chiqadi. Ayirmani olamiz: 6d = 129 − 63 = 66, demak d = 11. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-yigindi-munosabati",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#09a05266"
+    },
+    {
+      "q": "Arifmetik progressiyada Sₙ = 40 va S₂ₙ = 140 ekani ma'lum. Har uch blokdagi yig'indilar ham progressiya hosil qilishini hisobga olib, S₃ₙ ni toping.",
+      "v": [
+        "180",
+        "240",
+        "300",
+        "420"
+      ],
+      "t": 2,
+      "izoh": "Birinchi blok Sₙ = 40, ikkinchi blok S₂ₙ − Sₙ = 100, ular orasidagi farq 60. Bloklar o'zi arifmetik progressiya bo'lgani uchun uchinchi blok 100 + 60 = 160 ga teng. Demak S₃ₙ = 140 + 160 = 300. Javob: 300.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-yigindi-munosabati",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#7d6132cf"
+    },
+    {
+      "q": "Arifmetik progressiya uchun S₁₀ = 3·S₅ tenglik o'rinli bo'lsa, birinchi had bilan ayirma orasidagi bog'lanishni ko'rsating.",
+      "v": [
+        "a₁ = 2d",
+        "a₁ = 3d",
+        "a₁ = 5d",
+        "d = 3a₁"
+      ],
+      "t": 1,
+      "izoh": "S₁₀ = 10·(2a₁ + 9d)/2 = 5·(2a₁ + 9d) va S₅ = 5·(2a₁ + 4d)/2 bo'ladi. Shartga ko'ra 5·(2a₁ + 9d) = 3·5·(2a₁ + 4d)/2, ikkala tomonni 5 ga bo'lib 2 ga ko'paytiramiz: 4a₁ + 18d = 6a₁ + 12d. Bundan 6d = 2a₁, ya'ni a₁ = 3d. Javob: a₁ = 3d.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-yigindi-munosabati",
+      "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi#0852adef"
+    }
+  ]
+}

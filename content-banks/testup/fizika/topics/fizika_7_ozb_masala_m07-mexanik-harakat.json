@@ -1,0 +1,216 @@
+{
+  "nom": "07-mavzu. Masala. Mexanik Harakat",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Koordinatasi x₀ = 5 bo'lgan nuqtadan bola o'ngga qarab 8 birlikka harakatlandi. Bolaning keyingi koordinatasi qanday bo'ladi?",
+      "v": [
+        "13",
+        "3",
+        "8",
+        "-3"
+      ],
+      "t": 0,
+      "izoh": "x = x₀ + Δx = 5 + 8 = 13",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m07-mexanik-harakat#5c55a827"
+    },
+    {
+      "q": "Koordinatasi x₀ = 5 bo'lgan nuqtadan bola chapga qarab 7 birlikka harakatlandi. Bolaning keyingi koordinatasi qanday bo'ladi?",
+      "v": [
+        "-2",
+        "12",
+        "2",
+        "-12"
+      ],
+      "t": 0,
+      "izoh": "x = x₀ − 7 = 5 − 7 = −2",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m07-mexanik-harakat#184db52f"
+    },
+    {
+      "q": "Bola sharqqa qarab 50 m yurdi va shu yo'nalishda yana 100 m yugurib, finishga yetib keldi. Bola bosib o'tgan masofa qancha?",
+      "v": [
+        "150 m",
+        "100 m",
+        "50 m",
+        "15 m"
+      ],
+      "t": 0,
+      "izoh": "s = 50 m + 100 m = 150 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m07-mexanik-harakat#59862067"
+    },
+    {
+      "q": "Koordinatasi x₀ = 10 bo'lgan nuqtadan jism chapga qarab 12 birlikka ko'chdi. Jismning keyingi koordinatasini toping.",
+      "v": [
+        "-2",
+        "22",
+        "2",
+        "-22"
+      ],
+      "t": 0,
+      "izoh": "x = x₀ − 12 = 10 − 12 = −2",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m07-mexanik-harakat#f7a0aedd"
+    },
+    {
+      "q": "Jismning koordinatasi x₀ = 20 dan x = 55 ga o'zgardi. Koordinataning o'zgarishi Δx nimaga teng?",
+      "v": [
+        "35",
+        "75",
+        "-35",
+        "55"
+      ],
+      "t": 0,
+      "izoh": "Δx = x − x₀ = 55 − 20 = 35",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m07-mexanik-harakat#8fb6eb29"
+    },
+    {
+      "q": "Jismning koordinatasi x₀ = −10 dan x = 15 ga o'zgardi. Koordinataning o'zgarishi Δx ni toping.",
+      "v": [
+        "25",
+        "5",
+        "-25",
+        "-5"
+      ],
+      "t": 0,
+      "izoh": "Δx = x − x₀ = 15 − (−10) = 25",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m07-mexanik-harakat#e254670e"
+    },
+    {
+      "q": "Jismning koordinatasi x₀ = 8 dan x = 3 ga o'zgardi. Koordinataning o'zgarishi Δx nimaga teng?",
+      "v": [
+        "-5",
+        "5",
+        "11",
+        "-11"
+      ],
+      "t": 0,
+      "izoh": "Δx = x − x₀ = 3 − 8 = −5",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m07-mexanik-harakat#d42b20ac"
+    },
+    {
+      "q": "Bola x₀ = 3 koordinatadagi nuqtadan avval o'ngga 6 birlikka, so'ng chapga 10 birlikka harakatlandi. Bolaning oxirgi koordinatasi qanday?",
+      "v": [
+        "-1",
+        "1",
+        "19",
+        "13"
+      ],
+      "t": 0,
+      "izoh": "x = 3 + 6 − 10 = −1",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m07-mexanik-harakat#701161da"
+    },
+    {
+      "q": "Sportchi turgan joyidan dastlab 40 m sharqqa, so'ng 30 m g'arbga yugurdi. Sportchining bosib o'tgan yo'li qancha?",
+      "v": [
+        "70 m",
+        "10 m",
+        "40 m",
+        "30 m"
+      ],
+      "t": 0,
+      "izoh": "s = 40 m + 30 m = 70 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m07-mexanik-harakat#3c58f167"
+    },
+    {
+      "q": "Sportchi turgan joyidan dastlab 40 m sharqqa, so'ng 30 m g'arbga yugurdi. Sportchining ko'chish moduli qancha?",
+      "v": [
+        "10 m",
+        "70 m",
+        "40 m",
+        "30 m"
+      ],
+      "t": 0,
+      "izoh": "|s⃗| = 40 m − 30 m = 10 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m07-mexanik-harakat#a6cbbdbd"
+    },
+    {
+      "q": "Jism boshlang'ich nuqtadan 60 m sharqqa, so'ng 20 m g'arbga harakatlandi. Jismning ko'chish moduli nimaga teng?",
+      "v": [
+        "40 m",
+        "80 m",
+        "60 m",
+        "20 m"
+      ],
+      "t": 0,
+      "izoh": "|s⃗| = 60 m − 20 m = 40 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m07-mexanik-harakat#d878225b"
+    },
+    {
+      "q": "Jism x₀ = −5 koordinatadagi nuqtadan o'ngga qarab 20 birlikka ko'chdi. Jismning keyingi koordinatasini toping.",
+      "v": [
+        "15",
+        "25",
+        "-15",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "x = x₀ + 20 = −5 + 20 = 15",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m07-mexanik-harakat#2c0dc9c8"
+    },
+    {
+      "q": "Bola x₀ = 2 koordinatadagi nuqtadan avval sharqqa 12 birlikka, so'ng g'arbga 5 birlikka, yana sharqqa 3 birlikka harakatlandi. Bolaning oxirgi koordinatasi qanday bo'ladi?",
+      "v": [
+        "12",
+        "22",
+        "8",
+        "-8"
+      ],
+      "t": 0,
+      "izoh": "x = 2 + 12 − 5 + 3 = 12",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m07-mexanik-harakat#e6f4ca96"
+    },
+    {
+      "q": "Jismning koordinatasi x₀ = 10 m dan x = −10 m ga o'zgardi. Koordinataning o'zgarishi Δx ni toping.",
+      "v": [
+        "-20 m",
+        "20 m",
+        "0 m",
+        "-10 m"
+      ],
+      "t": 0,
+      "izoh": "Δx = x − x₀ = −10 − 10 = −20 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m07-mexanik-harakat#12b14461"
+    }
+  ]
+}

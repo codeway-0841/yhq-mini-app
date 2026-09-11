@@ -1,0 +1,606 @@
+{
+  "nom": "15-mavzu. Mexanik Tebranishlar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Muayyan vaqt oralig'larida vaziyati davriy ravishda takrorlanib turadigan harakatga nima deyiladi?",
+      "v": [
+        "Tebranma harakat yoki tebranishlar",
+        "Aylanma harakat",
+        "Tekis to'g'ri chiziqli harakat",
+        "Erkin tushish"
+      ],
+      "t": 0,
+      "izoh": "Darslikda: muayyan vaqt oralig'larida vaziyati davriy ravishda takrorlanadigan harakat tebranma harakat deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#05c53b4b"
+    },
+    {
+      "q": "Tebranma harakatning qanday turlari mavjud?",
+      "v": [
+        "Erkin va majburiy tebranishlar",
+        "Bo'ylama va ko'ndalang tebranishlar",
+        "Silliq va notekis tebranishlar",
+        "Garmonik va anharmonik tebranishlar"
+      ],
+      "t": 0,
+      "izoh": "Tebranma harakatning ikki turi: erkin tebranishlar va majburiy tebranishlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#0ab5b02d"
+    },
+    {
+      "q": "Erkin tebranishlar qanday yuzaga keladi?",
+      "v": [
+        "Muvozanat vaziyatidan chiqarilib, qo'yib yuborilgach jismning ichki kuchlar ta'sirida tebranishi hisobiga",
+        "Tashqi davriy kuchning doimiy ta'siri hisobiga",
+        "Faqat og'irlik kuchi ta'sirida",
+        "Faqat ishqalanish kuchi ta'sirida"
+      ],
+      "t": 0,
+      "izoh": "Erkin tebranishlar — jismning ichki kuchlar ta'siridagi tebranma harakati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#8a917528"
+    },
+    {
+      "q": "Quyidagilarning qaysi biri erkin tebranishga misol bo'ladi?",
+      "v": [
+        "Prujinaga yoki ipga osilgan yukning tebranishi",
+        "Radiokarnay membranasining tebranishi",
+        "Soat mayatnigining doimiy tebranishi",
+        "Motor pistonining harakati"
+      ],
+      "t": 0,
+      "izoh": "Prujinaga yoki ipga osilgan yukning tebranishi erkin tebranishga misol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#5c035a93"
+    },
+    {
+      "q": "Majburiy tebranishlar deb nimaga aytiladi?",
+      "v": [
+        "Tashqi davriy kuch ta'sirida bo'ladigan tebranishlarga",
+        "Ichki kuchlar ta'sirida so'nuvchi tebranishlarga",
+        "Amplitudasi o'zgaruvchan tebranishlarga",
+        "Sinus qonuni bo'yicha sodir bo'ladigan tebranishlarga"
+      ],
+      "t": 0,
+      "izoh": "Tashqi davriy kuch ta'sirida bo'ladigan tebranishlar majburiy tebranishlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#265a6a3d"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri majburiy tebranishga misol?",
+      "v": [
+        "Radiokarnay membranasining undan o'tuvchi majburlovchi tok ta'sirida tebranishi",
+        "Qo'yib yuborilgan ip mayatnikining tebranishi",
+        "Prujinaga osilgan yukning erkin tebranishi",
+        "Daraxt shoxining shamolda so'nib boruvchi tebranishi"
+      ],
+      "t": 0,
+      "izoh": "Radiokarnay membranasi majburlovchi tok ta'sirida majburiy tebranadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#534f9dcb"
+    },
+    {
+      "q": "Erkin tebranishlar vaqt o'tishi bilan nima uchun so'nadi?",
+      "v": [
+        "Muhitning qarshilik kuchi tebranma harakatni so'ndirgani uchun",
+        "Amplituda avtomatik ravishda nolga aylangani uchun",
+        "Og'irlik kuchi yo'qolgani uchun",
+        "Tebranish davri kichrayib ketgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Har qanday tebranuvchi jismga muhit qarshilik kuchi ta'sir qilib tebranishni so'ndiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#e7f73537"
+    },
+    {
+      "q": "Tebranishlar so'nmasligi uchun nima kerak?",
+      "v": [
+        "Sistemaga davriy ravishda tashqi kuch ta'sir etib turishi kerak",
+        "Amplitudani kichraytirish kerak",
+        "Muhitni vakuum qilish kerak",
+        "Siklik chastotani oshirish kerak"
+      ],
+      "t": 0,
+      "izoh": "Tebranishlar so'nmasligi uchun davriy tashqi kuch ta'sir etib turishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#01a4f141"
+    },
+    {
+      "q": "Tebranma harakat qilayotgan jismning bir marta to'liq tebranishi uchun ketgan vaqt nima deb ataladi?",
+      "v": [
+        "Tebranish davri",
+        "Tebranish chastotasi",
+        "Siklik chastota",
+        "Boshlang'ich faza"
+      ],
+      "t": 0,
+      "izoh": "Bir to'liq tebranish uchun ketgan vaqt — tebranish davri (T).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#8a9792a0"
+    },
+    {
+      "q": "Tebranish davri qanday harf bilan belgilanadi?",
+      "v": [
+        "T harfi bilan",
+        "ν harfi bilan",
+        "ω harfi bilan",
+        "A harfi bilan"
+      ],
+      "t": 0,
+      "izoh": "Tebranish davri T harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#353b750b"
+    },
+    {
+      "q": "Vaqt birligidagi tebranishlar soniga teng bo'lgan fizik kattalik nima deyiladi?",
+      "v": [
+        "Tebranish chastotasi",
+        "Tebranish davri",
+        "Siklik chastota",
+        "Tebranish amplitudasi"
+      ],
+      "t": 0,
+      "izoh": "Vaqt birligidagi tebranishlar soni — tebranish chastotasi (ν).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#79e41b73"
+    },
+    {
+      "q": "Tebranish davrining XBSdagi birligi nima?",
+      "v": [
+        "Sekund (s)",
+        "Gers (Hz)",
+        "Radian/sekund (rad/s)",
+        "Metr (m)"
+      ],
+      "t": 0,
+      "izoh": "Tebranish davri XBSda sekundda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#e1a29d4c"
+    },
+    {
+      "q": "Tebranish davri qaysi formula bilan hisoblanadi?",
+      "v": [
+        "T = t/N",
+        "T = N/t",
+        "T = 2πν",
+        "T = N·t"
+      ],
+      "t": 0,
+      "izoh": "T = t/N — davr vaqtning tebranishlar soniga nisbati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#bf81b3bd"
+    },
+    {
+      "q": "Tebranish chastotasi qaysi formula bilan hisoblanadi?",
+      "v": [
+        "ν = N/t",
+        "ν = t/N",
+        "ν = 2π/T",
+        "ν = T·t"
+      ],
+      "t": 0,
+      "izoh": "ν = N/t — chastota tebranishlar sonining vaqtga nisbati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#d128f5cc"
+    },
+    {
+      "q": "Tebranish davri va chastotasi o'rtasida qanday munosabat bor?",
+      "v": [
+        "Ular bir-biriga teskari munosabatda",
+        "Ular bir-biriga to'g'ri proporsional",
+        "Ular bir-biriga bog'liq emas",
+        "Ikkalasi ham doimiy kattaliklar"
+      ],
+      "t": 0,
+      "izoh": "Davr va chastota bir-biriga teskari: ν = 1/T.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#32c91563"
+    },
+    {
+      "q": "Chastotaning birligi gers (Hz) kimning sharafiga nomlangan?",
+      "v": [
+        "Nemis fizigi Henri Hers sharafiga",
+        "Italiyaning fizigi Galiley sharafiga",
+        "Angliya fizigi Nyuton sharafiga",
+        "Golland fizigi Gyuygens sharafiga"
+      ],
+      "t": 0,
+      "izoh": "Gers birligi nemis fizigi Henri Hers sharafiga nomlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#661e6eb3"
+    },
+    {
+      "q": "1 gers (Hz) nimani anglatadi?",
+      "v": [
+        "Sekundiga bitta tebranish (1 s⁻¹)",
+        "Daqiqasiga bitta tebranish",
+        "Sekundiga 2π tebranish",
+        "Soatiga bitta tebranish"
+      ],
+      "t": 0,
+      "izoh": "1 Hz = 1 s⁻¹, ya'ni sekundiga bir tebranish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#d5bda6f9"
+    },
+    {
+      "q": "Jismning 2π sekunddagi tebranishlari soni bilan tavsiflanadigan kattalik nima deyiladi?",
+      "v": [
+        "Siklik chastota",
+        "Tebranish chastotasi",
+        "Tebranish davri",
+        "Tebranish fazasi"
+      ],
+      "t": 0,
+      "izoh": "2π sekunddagi tebranishlar soni — siklik chastota (ω).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#59b3aa16"
+    },
+    {
+      "q": "Siklik chastota qanday harf bilan belgilanadi va XBSdagi birligi nima?",
+      "v": [
+        "ω harfi bilan, rad/s",
+        "ν harfi bilan, Hz",
+        "T harfi bilan, s",
+        "A harfi bilan, m"
+      ],
+      "t": 0,
+      "izoh": "Siklik chastota ω bilan belgilanadi, birligi rad/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#2aff1188"
+    },
+    {
+      "q": "Siklik chastotaning davr va chastota bilan bog'liqligini ifodalovchi formula qaysi?",
+      "v": [
+        "ω = 2π/T = 2πν",
+        "ω = T/2π",
+        "ω = 1/(2πν)",
+        "ω = T·ν"
+      ],
+      "t": 0,
+      "izoh": "ω = 2π/T = 2πν.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#bebe6698"
+    },
+    {
+      "q": "Tebranayotgan jismning muvozanat vaziyatidan uzoqlashish masofasi nima deyiladi?",
+      "v": [
+        "Siljish",
+        "Amplituda",
+        "Davr",
+        "Faza"
+      ],
+      "t": 0,
+      "izoh": "Muvozanat vaziyatidan uzoqlashish masofasi — siljish (x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#5f26adc1"
+    },
+    {
+      "q": "Tebranish amplitudasi deb nimaga aytiladi?",
+      "v": [
+        "Muvozanat vaziyatidan eng katta siljishga (uzoqlashishga)",
+        "Bir to'liq tebranishdagi yo'lga",
+        "Ikkala chetki vaziyat orasidagi masofaga",
+        "Sekundiga bosilgan yo'lga"
+      ],
+      "t": 0,
+      "izoh": "Amplituda — muvozanat vaziyatidan eng katta siljish, A yoki xmax bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#60540c6e"
+    },
+    {
+      "q": "Amplituda qanday belgilanadi?",
+      "v": [
+        "A yoki xmax ko'rinishda",
+        "T harfi bilan",
+        "ω harfi bilan",
+        "φ harfi bilan"
+      ],
+      "t": 0,
+      "izoh": "Amplituda A yoki xmax bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#435f2844"
+    },
+    {
+      "q": "Avtotebranishlar deb nimaga aytiladi?",
+      "v": [
+        "Tashqi davriy kuch ta'sirisiz ichki manba energiyasi hisobiga yuzaga keladigan so'nmas tebranishlarga",
+        "Tashqi davriy kuch ta'siridagi so'nmas tebranishlarga",
+        "Muhit qarshiligida so'nuvchi tebranishlarga",
+        "Sinusoidal qonun bilan o'zgaradigan tebranishlarga"
+      ],
+      "t": 0,
+      "izoh": "Avtotebranishlar — ichki energiya manbai hisobiga so'nmaydigan tebranishlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#f53dffa5"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri avtotebranishli sistema emas?",
+      "v": [
+        "Qo'yib yuborilgach so'nib boradigan ip mayatnigi",
+        "Elektr energiyasi bilan ishlaydigan soat",
+        "Elektr qo'ng'iroq",
+        "Insonning yuragi va o'pkasi"
+      ],
+      "t": 0,
+      "izoh": "So'nuvchi ip mayatnigida ichki energiya manbai yo'q, u avtotebranishli sistema emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#e191257a"
+    },
+    {
+      "q": "Rezonans hodisasi qanday sodir bo'ladi?",
+      "v": [
+        "Tashqi kuch chastotasi sistemaning xususiy tebranish chastotasiga tenglashganda majburiy tebranish amplitudasi keskin ortadi",
+        "Tashqi kuch chastotasi xususiy chastotadan juda kichik bo'lganda",
+        "Amplituda nolga teng bo'lganda",
+        "Muhit qarshiligi nol bo'lganda"
+      ],
+      "t": 0,
+      "izoh": "Tashqi kuch chastotasi xususiy chastotaga tenglashganda amplituda keskin ortishi — rezonans.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#8b688f1c"
+    },
+    {
+      "q": "Radiopriyomnik va televizorlarning ishlashi qaysi hodisaga asoslangan?",
+      "v": [
+        "Rezonans hodisasiga",
+        "Diffuziya hodisasiga",
+        "Inertsiya hodisasiga",
+        "Issiqlik o'tkazuvchanligiga"
+      ],
+      "t": 0,
+      "izoh": "Radiopriyomnik va televizorlarning ishlashi rezonans hodisasiga asoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#542fff3b"
+    },
+    {
+      "q": "1940-yilda Takoma ko'prigining qulashiga nima sabab bo'lgan?",
+      "v": [
+        "Shamol tufayli yuzaga kelgan rezonans hodisasi",
+        "Erkin tushish tezlanishining ortishi",
+        "Materiallarning yorilish kuchi",
+        "Yer silkinishi"
+      ],
+      "t": 0,
+      "izoh": "Takoma ko'prigi shamol tezligi 65 km/h ga yetganda rezonans sababli qulagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#b98d894c"
+    },
+    {
+      "q": "Parametrlari sinus yoki kosinus qonuniyati bo'yicha o'zgaruvchi tebranma harakat nima deyiladi?",
+      "v": [
+        "Garmonik tebranishlar",
+        "Avtotebranishlar",
+        "So'nuvchi tebranishlar",
+        "Tasodifiy tebranishlar"
+      ],
+      "t": 0,
+      "izoh": "Sinus yoki kosinus qonuni bo'yicha o'zgaradigan tebranishlar — garmonik tebranishlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#a766400b"
+    },
+    {
+      "q": "Garmonik tebranishda jismning siljishi qaysi ifoda bilan hisoblanadi?",
+      "v": [
+        "x = Asin(ωt+φ₀) yoki x = Acos(ωt+φ₀)",
+        "x = A·t²",
+        "x = ω/A",
+        "x = 2πν·t²"
+      ],
+      "t": 0,
+      "izoh": "Garmonik tebranishda x = Asin(ωt+φ₀) yoki x = Acos(ωt+φ₀).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#001e0701"
+    },
+    {
+      "q": "x = Acos(ωt+φ₀) formulasida φ₀ nimani bildiradi?",
+      "v": [
+        "Boshlang'ich fazani",
+        "Amplitudani",
+        "Siklik chastotani",
+        "Tebranish davrini"
+      ],
+      "t": 0,
+      "izoh": "φ₀ — boshlang'ich faza.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#96bab598"
+    },
+    {
+      "q": "Garmonik tebranma harakatda siljishning vaqt bo'yicha grafigi qanday ko'rinishga ega?",
+      "v": [
+        "Sinusoida grafigidan iborat",
+        "To'g'ri chiziqdan iborat",
+        "Paraboladan iborat",
+        "Giperboladan iborat"
+      ],
+      "t": 0,
+      "izoh": "Garmonik tebranish grafigi — sinusoida; ikki qo'shni do'nglik orasidagi vaqt davrga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#952b6eec"
+    },
+    {
+      "q": "x = 0,06cos(100πt) tenglamaga ega moddiy nuqtaning tebranish amplitudasi qancha?",
+      "v": [
+        "0,06 m",
+        "100π m",
+        "0,03 m",
+        "6 m"
+      ],
+      "t": 0,
+      "izoh": "Tenglama x = Acos(ωt) ko'rinishida bo'lib, amplituda A = 0,06 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#32cf418f"
+    },
+    {
+      "q": "x = 0,06cos(100πt) tebranishning siklik chastotasi va davri qanday?",
+      "v": [
+        "ω = 100π rad/s, T = 0,02 s",
+        "ω = 100π rad/s, T = 0,01 s",
+        "ω = 50π rad/s, T = 0,02 s",
+        "ω = 0,06 rad/s, T = 2 s"
+      ],
+      "t": 0,
+      "izoh": "ω = 100π rad/s; T = 2π/ω = 2π/100π = 0,02 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#cd33fe00"
+    },
+    {
+      "q": "Jism 20 s davomida 40 marta tebrangan bo'lsa, uning tebranish davri va chastotasi qancha?",
+      "v": [
+        "T = 0,5 s, ν = 2 Hz",
+        "T = 2 s, ν = 0,5 Hz",
+        "T = 0,5 s, ν = 0,5 Hz",
+        "T = 2 s, ν = 2 Hz"
+      ],
+      "t": 0,
+      "izoh": "T = t/N = 20/40 = 0,5 s; ν = 1/T = 2 Hz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#c3871339"
+    },
+    {
+      "q": "Soat mayatnigining harakati qanday tebranishga misol?",
+      "v": [
+        "Mexanik tebranishga",
+        "Elektromagnit tebranishga",
+        "Issiqlik tebranishiga",
+        "Optik tebranishga"
+      ],
+      "t": 0,
+      "izoh": "Soat mayatnigi — mexanik tebranish; elektr toki yo'nalishining o'zgarishi esa elektromagnit tebranish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#13b2d05e"
+    },
+    {
+      "q": "Tebranish chastotasi 5 Hz bo'lgan jismning tebranish davri qancha?",
+      "v": [
+        "0,2 s",
+        "5 s",
+        "0,5 s",
+        "2 s"
+      ],
+      "t": 0,
+      "izoh": "T = 1/ν = 1/5 = 0,2 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#d5c426f0"
+    },
+    {
+      "q": "Qarshilik kuchi elastiklik kuchidan juda kichik bo'lsa, prujinaga mahkamlangan jism harakati qanday bo'ladi?",
+      "v": [
+        "Teng vaqtlar oralig'ida takrorlanadi",
+        "Tez so'nib qoladi",
+        "To'xtab qoladi",
+        "Tekis sekinlanuvchan bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik kuchi kichik bo'lsa, harakat teng vaqtlar oralig'ida takrorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#e5ed9a84"
+    },
+    {
+      "q": "Rezonans hodisasining zararli oqibatiga misol qaysi?",
+      "v": [
+        "Dastgoh qismlarining aylanishi natijasida fundamentlarning parchalanishi",
+        "Radiopriyomnikning ishni boshlashi",
+        "Televizorning tasvir ko'rsatishi",
+        "Soat mayatnigining tebranishi"
+      ],
+      "t": 0,
+      "izoh": "Rezonans tufayli dastgoh fundamentlari parchalanishi — zararli oqibat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#73314d39"
+    },
+    {
+      "q": "Rezonans hodisasidan qaysi sohalarda foydalaniladi?",
+      "v": [
+        "Mexanik hodisalarda, elektrotexnikada, optikada va yadro fizikasida",
+        "Faqat mexanikada",
+        "Faqat termodinamikada",
+        "Faqat astronomiyada"
+      ],
+      "t": 0,
+      "izoh": "Rezonansdan mexanika, elektrotexnika, optika va yadro fizikasida foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m15-mexanik-tebranishlar#91b49554"
+    }
+  ]
+}

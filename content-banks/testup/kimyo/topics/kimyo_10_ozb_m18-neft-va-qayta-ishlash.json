@@ -1,0 +1,606 @@
+{
+  "nom": "18-mavzu. Uglevodorodlarning tabiiy manbalari. Neft va neftni qayta ishlash mahsulotlari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Uglevodorodlarning eng muhim tabiiy manbalari qaysilar?",
+      "v": [
+        "neft, tabiiy gaz, neftning yo'ldosh gazlari va toshko'mir",
+        "suv, ohaktosh va qum",
+        "torf, tosh tuz va gips",
+        "ohak, marmar va granit"
+      ],
+      "t": 0,
+      "izoh": "Eng muhim tabiiy manbalar — neft, tabiiy gaz, neftning yo'ldosh gazlari va toshko'mir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#408c51ea"
+    },
+    {
+      "q": "Neft nima?",
+      "v": [
+        "Gazsimon, suyuq va qattiq uglevodorodlarning aralashmasidan iborat moysimon, suvdan yengil suyuqlik",
+        "Suvda yaxshi eriydigan kislotali suyuqlik",
+        "Faqat metandan iborat sof gaz",
+        "Metallarning uglerodli birikmalari"
+      ],
+      "t": 0,
+      "izoh": "Neft — gazsimon, suyuq va qattiq uglevodorodlar aralashmasidan iborat moysimon suyuqlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#e21ce96e"
+    },
+    {
+      "q": "Neftning rangi qanday bo'ladi?",
+      "v": [
+        "sariq yoki och-qo'ng'ir rangdan qora ranggacha",
+        "doimo rangsiz",
+        "doimo yashil",
+        "doimo ko'k"
+      ],
+      "t": 0,
+      "izoh": "Neftning rangi sariq yoki och-qo'ng'irdan qora ranggacha bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#77853061"
+    },
+    {
+      "q": "Neft suvga nisbatan qanday xususiyatga ega?",
+      "v": [
+        "suvdan yengil va suvda erimaydi",
+        "suvdan og'ir va suvda eriydi",
+        "suvdan yengil va suvda eriydi",
+        "suv bilan bir xil og'irlikda"
+      ],
+      "t": 0,
+      "izoh": "Neft suvdan biroz yengil bo'lib, amalda suvda erimaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#63027e93"
+    },
+    {
+      "q": "Neftning tarkibida uglevodorodlardan tashqari yana qanday birikmalar bo'lishi mumkin?",
+      "v": [
+        "kislorodli, oltingugurtli va azotli birikmalar",
+        "faqat suv va tuzlar",
+        "faqat metallar",
+        "faqat nodir gazlar"
+      ],
+      "t": 0,
+      "izoh": "Neft tarkibida ba'zan kislorodli, oltingugurtli va azotli birikmalar ham bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#81b4ac09"
+    },
+    {
+      "q": "Tarkibida, asosan, suyuq uglevodorodlar bo'lgan neft qanday ataladi?",
+      "v": [
+        "parafin asosli neft",
+        "asfalt asosli neft",
+        "gudron asosli neft",
+        "mazut asosli neft"
+      ],
+      "t": 0,
+      "izoh": "Suyuq uglevodorodli neft parafin asosli neft deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#72e4ce5c"
+    },
+    {
+      "q": "Qattiq uglevodorodlar bo'lgan neft qanday ataladi?",
+      "v": [
+        "asfalt asosli neft",
+        "parafin asosli neft",
+        "benzin asosli neft",
+        "kerosin asosli neft"
+      ],
+      "t": 0,
+      "izoh": "Qattiq uglevodorodli neft asfalt asosli neft deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#488984a5"
+    },
+    {
+      "q": "Ba'zi olimlar neft qanday paydo bo'lgan deb taxmin qiladi?",
+      "v": [
+        "metall karbidga suv ta'sir etishidan paydo bo'lgan",
+        "tog' jinslarining sovushidan paydo bo'lgan",
+        "havodagi gazlarning zichlanishidan paydo bo'lgan",
+        "dengiz suvi bug'lanishidan paydo bo'lgan"
+      ],
+      "t": 0,
+      "izoh": "Ba'zi olimlar neft metall karbidga suv ta'sir etishidan paydo bo'lgan deb taxmin qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#d2675886"
+    },
+    {
+      "q": "Boshqa olimlarning taxminicha, neft qanday hosil bo'lgan?",
+      "v": [
+        "yer ostida qolib ketgan o'simlik va hayvonlarning chirishidan hosil bo'lgan",
+        "vulqon otilishidan hosil bo'lgan",
+        "metallar erishidan hosil bo'lgan",
+        "tog' jinslarining yemirilishidan hosil bo'lgan"
+      ],
+      "t": 0,
+      "izoh": "Boshqa olimlar neft o'simlik va hayvonlarning chirishidan hosil bo'lgan deb taxmin qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#91782277"
+    },
+    {
+      "q": "Neftning aniq qaynash harorati nima uchun bo'lmaydi?",
+      "v": [
+        "u turli uglevodorodlar aralashmasi bo'lgani uchun",
+        "u juda yopishqoq bo'lgani uchun",
+        "u suvda erimaganligi uchun",
+        "uning rangi qorong'i bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Neft turli uglevodorodlar aralashmasi bo'lgani uchun aniq qaynash harorati bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#17d87970"
+    },
+    {
+      "q": "Neft tarkibidagi mahsulotlarni ajratib olish uchun eng muhim usul qaysi?",
+      "v": [
+        "neftni fraksion haydash",
+        "neftni muzlatish",
+        "neftni suv bilan aralashtirish",
+        "neftni quyoshda quritish"
+      ],
+      "t": 0,
+      "izoh": "Eng muhim usul — neftni fraksion haydash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#41de4e71"
+    },
+    {
+      "q": "Neft fraksion haydalganda mahsulotlar qanday ajralib chiqadi?",
+      "v": [
+        "qaynash haroratiga qarab birin-ketin ajralib chiqadi",
+        "mol massasiga qarab teskari tartibda ajralib chiqadi",
+        "tasodifiy tartibda ajralib chiqadi",
+        "faqat rangiga qarab ajralib chiqadi"
+      ],
+      "t": 0,
+      "izoh": "Fraksion haydashda mahsulotlar qaynash haroratiga qarab birin-ketin ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#1490f2db"
+    },
+    {
+      "q": "Neft haydalganda avvalo qaysi qismi ajralib chiqadi?",
+      "v": [
+        "eng yengil qismi — gazsimon uglevodorodlar",
+        "eng og'ir qismi — mazut",
+        "qattiq qism — parafin",
+        "suyuq qism — kerosin"
+      ],
+      "t": 0,
+      "izoh": "Avvalo eng yengil qism — gazsimon uglevodorodlar ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#9816b514"
+    },
+    {
+      "q": "Gazolin (benzinlar) fraksiyasi qanday haroratgacha ajralib olinadi?",
+      "v": [
+        "150 °C gacha",
+        "300 °C gacha",
+        "100 °C gacha",
+        "500 °C gacha"
+      ],
+      "t": 0,
+      "izoh": "Gazolin fraksiyasi 150 °C gacha ajralib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#1ff4f35c"
+    },
+    {
+      "q": "Kerosin fraksiyasi qanday harorat oralig'ida ajralib olinadi?",
+      "v": [
+        "150 °C dan 300 °C gacha",
+        "100 °C dan 150 °C gacha",
+        "300 °C dan 400 °C gacha",
+        "50 °C dan 100 °C gacha"
+      ],
+      "t": 0,
+      "izoh": "Kerosin fraksiyasi 150 °C dan 300 °C gacha ajralib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#937378ec"
+    },
+    {
+      "q": "300 °C dan yuqorida ajralib qoladigan neft qoldig'i nima deb ataladi?",
+      "v": [
+        "qoramoy (mazut)",
+        "gazolin",
+        "kerosin",
+        "petroley efiri"
+      ],
+      "t": 0,
+      "izoh": "300 °C dan yuqorida qolgan qoldiq — qoramoy (mazut).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#be7ac040"
+    },
+    {
+      "q": "Gazolin (benzinlar) fraksiyasiga kiruvchi uglevodorodlar molekulasida uglerod atomlari soni nechta bo'ladi?",
+      "v": [
+        "5 dan 9 tagacha",
+        "9 dan 16 tagacha",
+        "16 va undan ortiq",
+        "1 dan 4 tagacha"
+      ],
+      "t": 0,
+      "izoh": "Gazolin fraksiyasi C5–C9 uglevodorodlardan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#11f6266b"
+    },
+    {
+      "q": "Yengil benzin gazolini qanday nom bilan ham ataladi va u nima uchun ishlatiladi?",
+      "v": [
+        "petroley efiri, asosan erituvchi sifatida",
+        "ligroin, dizel yonilg'isi sifatida",
+        "mazut, koks olish uchun",
+        "gudron, asfalt tayyorlash uchun"
+      ],
+      "t": 0,
+      "izoh": "Yengil benzin — petroley efiri bo'lib, asosan erituvchi sifatida ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#d7f424a5"
+    },
+    {
+      "q": "Og'ir benzin qanday nom bilan ataladi va u qayerda ishlatiladi?",
+      "v": [
+        "ligroin, dizel dvigatellari uchun yonilg'i sifatida",
+        "petroley efiri, erituvchi sifatida",
+        "mazut, traktor yonilg'isi sifatida",
+        "gudron, asfalt uchun"
+      ],
+      "t": 0,
+      "izoh": "Og'ir benzin — ligroin, dizel dvigatellari uchun yonilg'i sifatida ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#18dd0b50"
+    },
+    {
+      "q": "O'rtacha benzin fraksiyasi texnikada, asosan, qayerda ishlatiladi?",
+      "v": [
+        "ichki yonuv dvigatellarida yonilg'i sifatida",
+        "faqat erituvchi sifatida",
+        "surkov moyi sifatida",
+        "asfalt tayyorlashda"
+      ],
+      "t": 0,
+      "izoh": "O'rta benzin fraksiyasi, asosan, ichki yonuv dvigatellarida yonilg'i sifatida ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#07c75956"
+    },
+    {
+      "q": "Kerosin fraksiyasini tashkil qilgan uglevodorodlar molekulasida uglerod atomlari soni nechta bo'ladi?",
+      "v": [
+        "9 dan 16 tagacha",
+        "5 dan 9 tagacha",
+        "16 va undan ortiq",
+        "1 dan 4 tagacha"
+      ],
+      "t": 0,
+      "izoh": "Kerosin fraksiyasidagi uglevodorodlarda uglerod atomlari soni 9 dan 16 tagacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#69bfa07a"
+    },
+    {
+      "q": "Kerosin fraksiyasi qayerda ishlatiladi?",
+      "v": [
+        "traktor dvigatellarida va uy-ro'zg'orda yonilg'i sifatida",
+        "faqat asfalt tayyorlashda",
+        "koks olishda",
+        "surkov moyi sifatida"
+      ],
+      "t": 0,
+      "izoh": "Kerosin tozalangach, traktor dvigatellarida va uy-ro'zg'orda yonilg'i sifatida ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#2bc65aba"
+    },
+    {
+      "q": "Qoramoy (mazut) fraksiyasidagi uglevodorodlar molekulasida uglerod atomlari soni nechta?",
+      "v": [
+        "16 va undan ortiq",
+        "5 dan 9 tagacha",
+        "9 dan 16 tagacha",
+        "1 dan 4 tagacha"
+      ],
+      "t": 0,
+      "izoh": "Mazutdagi uglevodorodlarda uglerod atomlari soni 16 va undan ortiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#f947a91b"
+    },
+    {
+      "q": "Mazut qanday usulda haydaladi va undan nimalar olinadi?",
+      "v": [
+        "suv bug'i vositasida yoki vakuumda haydalib, solyar moylar, surkov moylari, vazelin, parafin olinadi",
+        "oddiy qaynatib, faqat benzin olinadi",
+        "muzlatib, gazli benzin olinadi",
+        "kuydirilib, koks olinadi"
+      ],
+      "t": 0,
+      "izoh": "Mazut suv bug'i vositasida yoki vakuumda haydaladi; undan solyar moylar, surkov moylari, vazelin, parafin olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#82c0fe59"
+    },
+    {
+      "q": "Qoramoyning turli fraksiyalari haydalib bo'lgach, qolgan qoldiq nima deb ataladi?",
+      "v": [
+        "gudron",
+        "gazolin",
+        "ligroin",
+        "solyar"
+      ],
+      "t": 0,
+      "izoh": "Qolgan qoldiq gudron deb ataladi, undan asfalt tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#a444cbc8"
+    },
+    {
+      "q": "Gudrondan nima tayyorlanadi?",
+      "v": [
+        "asfalt",
+        "benzin",
+        "kerosin",
+        "vazelin"
+      ],
+      "t": 0,
+      "izoh": "Gudrondan asfalt tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#703c1296"
+    },
+    {
+      "q": "«Kreking» so'zi qaysi tildan va nima degan ma'noni anglatadi?",
+      "v": [
+        "inglizcha so'z bo'lib — parchalanish demakdir",
+        "nemischa so'z bo'lib — aralashma demakdir",
+        "fransuzcha so'z bo'lib — qaynash demakdir",
+        "lotincha so'z bo'lib — bug'lanish demakdir"
+      ],
+      "t": 0,
+      "izoh": "«Kreking» inglizcha so'z bo'lib — parchalanish demakdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#b0f23159"
+    },
+    {
+      "q": "Neft krekingining maqsadi nima?",
+      "v": [
+        "benzinning chiqish unumini oshirish",
+        "neft rangini oqartirish",
+        "neftdan suvni tozalash",
+        "neftni qotirish"
+      ],
+      "t": 0,
+      "izoh": "Neft krekingi benzinning chiqish unumini oshirishga imkon beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#496b216f"
+    },
+    {
+      "q": "Kreking jarayoni natijasida nima sodir bo'ladi?",
+      "v": [
+        "yuqori molekulyar uglevodorodlar parchalanib, quyi molekulyar uglevodorodlar hosil bo'ladi",
+        "quyi molekulyar uglevodorodlar qo'shilib, polimerlar hosil bo'ladi",
+        "uglevodorodlar suv bilan aralashadi",
+        "uglevodorodlar metallarga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Krekingda yuqori molekulyar uglevodorodlar parchalanib, quyi molekulyar uglevodorodlar hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#669af8b5"
+    },
+    {
+      "q": "Kreking jarayonida neftdagi uglevodorodlar parchalanishi bilan bir qatorda qanday jarayonlar ro'y beradi?",
+      "v": [
+        "degidrogenlash, sikllanish, izomerlanish, polimerlanish",
+        "faqat erish va muzlash",
+        "faqat bug'lanish",
+        "kristallanish va cho'kish"
+      ],
+      "t": 0,
+      "izoh": "Krekingda degidrogenlash, sikllanish, izomerlanish, polimerlanish kabi jarayonlar ham ro'y beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#2682c848"
+    },
+    {
+      "q": "Neft qanday usullarda krekinglanadi?",
+      "v": [
+        "termik va katalitik usulda",
+        "faqat elektr tokida",
+        "faqat quyosh nurida",
+        "faqat vakuumda sovutib"
+      ],
+      "t": 0,
+      "izoh": "Neft, asosan, ikki xil — termik va katalitik usulda krekinglanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#227e02e0"
+    },
+    {
+      "q": "Termik kreking qanday sharoitda olib boriladi?",
+      "v": [
+        "yuqori temperatura va yuqori bosim ostida",
+        "past temperatura va past bosim ostida",
+        "xona haroratida",
+        "faqat vakuumda"
+      ],
+      "t": 0,
+      "izoh": "Termik kreking yuqori temperatura va yuqori bosim ostida olib boriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#f4c4a5a2"
+    },
+    {
+      "q": "C16H34 krekinglanganda darslikda keltirilgan mahsulotlar qaysi?",
+      "v": [
+        "C8H18 + C8H16",
+        "C4H10 + C4H8",
+        "CH4 + C5H12",
+        "C2H6 + C2H4"
+      ],
+      "t": 0,
+      "izoh": "C16H34 → C8H18 + C8H16 reaksiyasi darslikda keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#d8625e35"
+    },
+    {
+      "q": "Quyidagi moddalardan qaysi biri gazolin (C5–C9) tarkibida uchrashi mumkin?",
+      "v": [
+        "C7H16",
+        "C15H32",
+        "C17H36",
+        "C10H22"
+      ],
+      "t": 0,
+      "izoh": "Gazolin C5–C9 uglevodorodlardan iborat; C7H16 shu oraliqqa kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#6fad7665"
+    },
+    {
+      "q": "Quyidagi moddalardan qaysi biri kerosin (C9–C16) tarkibida uchrashi mumkin?",
+      "v": [
+        "C15H32",
+        "C4H10",
+        "C5H12",
+        "C7H16"
+      ],
+      "t": 0,
+      "izoh": "Kerosinda uglerod atomlari soni 9 dan 16 gacha; C15H32 mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#e56320b6"
+    },
+    {
+      "q": "Quyidagi moddalardan qaysi biri mazut (C16 va undan ortiq) tarkibida uchrashi mumkin?",
+      "v": [
+        "C18H38",
+        "C9H20",
+        "CH4",
+        "C7H16"
+      ],
+      "t": 0,
+      "izoh": "Mazutda uglerod atomlari soni 16 va undan ortiq; C18H38 mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#34498ccb"
+    },
+    {
+      "q": "Termik kreking natijasida hosil bo'lgan quyi molekulyar to'yingan va to'yinmagan uglevodorodlar qaysi fraksiyani beradi?",
+      "v": [
+        "benzin (C5–C9) fraksiyasini",
+        "mazut fraksiyasini",
+        "gudron fraksiyasini",
+        "asfalt fraksiyasini"
+      ],
+      "t": 0,
+      "izoh": "Kreking mahsulotlari benzin (C5–C9) fraksiyasini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#27a68a59"
+    },
+    {
+      "q": "Gekzan (CH3–CH2–CH2–CH2–CH2–CH3) krekinglanganda darslikda keltirilgan mahsulotlar juftligidan biri qaysi?",
+      "v": [
+        "metan va penten-1",
+        "faqat etan va vodorod",
+        "faqat benzol va vodorod",
+        "karbonat angidrid va suv"
+      ],
+      "t": 0,
+      "izoh": "Gekzan krekingida metan va penten-1, etan va buten-1, eten va butan, propan va propen hosil bo'lishi keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#1992154f"
+    },
+    {
+      "q": "Sanotda neftdan olinadigan mahsulotlarga qaysilari kiradi?",
+      "v": [
+        "raketalar uchun, dizel hamda ichki yonuv dvigatellari uchun yonilg'i, surkov moylari, parafin, vazelin",
+        "faqat suv va tuzlar",
+        "faqat koks va ammiak",
+        "faqat spirt va sirka kislota"
+      ],
+      "t": 0,
+      "izoh": "Neftdan yonilg'ilar, surkov moylari, parafin, vazelin va boshqa mahsulotlar olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#e98bbf70"
+    },
+    {
+      "q": "Neftni to'g'ridan-to'g'ri haydashda benzin hosil bo'ladi, lekin reaksiya unumi qanday bo'ladi?",
+      "v": [
+        "past",
+        "juda yuqori",
+        "100 % ga teng",
+        "nolga teng"
+      ],
+      "t": 0,
+      "izoh": "To'g'ridan-to'g'ri haydashda benzin unumi past bo'ladi, shuning uchun kreking qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m18-neft-va-qayta-ishlash#32cc7381"
+    }
+  ]
+}

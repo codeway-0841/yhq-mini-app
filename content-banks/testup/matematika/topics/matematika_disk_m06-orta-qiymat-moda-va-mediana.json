@@ -1,0 +1,1609 @@
+{
+  "nom": "O'rta qiymat, moda va mediana",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Dilnoza bir hafta davomida kuniga quyidagicha sahifa o'qidi: 25, 31, 18, 26, 35, 22, 32. Uning bir kunda o'qigan sahifalarining o'rta arifmetigini toping.",
+      "v": [
+        "27 ta",
+        "26 ta",
+        "26,5 ta",
+        "31,5 ta"
+      ],
+      "t": 0,
+      "izoh": "Avval yetti kunlik sahifalar yig'indisi topiladi: 25 + 31 + 18 + 26 + 35 + 22 + 32 = 189. O'rta arifmetik yig'indini elementlar soniga bo'lish bilan hisoblanadi: 189 : 7 = 27. 26 — bu qatorning medianasi, 31,5 esa yig'indini 6 ga bo'lish xatosi. Javob: 27 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-arifmetik-hisoblash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#1a4a3ab1"
+    },
+    {
+      "q": "Do'konda beshta xil nonning narxi: 4500 so'm, 5000 so'm, 3800 so'm, 6200 so'm va 5700 so'm. Non narxining o'rtacha qiymatini hisoblang.",
+      "v": [
+        "5000 so'm",
+        "5040 so'm",
+        "5350 so'm",
+        "6300 so'm"
+      ],
+      "t": 1,
+      "izoh": "Narxlar yig'indisi: 4500 + 5000 + 3800 + 6200 + 5700 = 25200 so'm. Nonlar soni 5 ta bo'lgani uchun o'rtacha narx 25200 : 5 = 5040 so'm. 5000 so'm — qatorning medianasi, 6300 so'm esa yig'indini 4 ga bo'lish natijasi. Javob: 5040 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-arifmetik-hisoblash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#1396351f"
+    },
+    {
+      "q": "Bir dehqon xo'jaligida olti kunlik sut sog'imi litrda quyidagicha bo'ldi: 84, 92, 78, 96, 88, 72. Kunlik o'rtacha sog'im qancha litrni tashkil etadi?",
+      "v": [
+        "86 litr",
+        "84 litr",
+        "102 litr",
+        "85 litr"
+      ],
+      "t": 3,
+      "izoh": "Olti kunlik sog'im yig'indisi: 84 + 92 + 78 + 96 + 88 + 72 = 510 litr. Kunlar soni 6 ta, demak o'rtacha sog'im 510 : 6 = 85 litr. 86 litr — medianani o'rtacha deb olish xatosi, 102 litr esa 6 o'rniga 5 ga bo'lishdan chiqadi. Javob: 85 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-arifmetik-hisoblash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#23c11fb2"
+    },
+    {
+      "q": "To'rtta idishdagi suv miqdori: 2,5 litr, 1800 ml, 3 litr va 700 ml. Bir idishga to'g'ri keladigan o'rtacha suv miqdorini millilitrda toping.",
+      "v": [
+        "762,5 ml",
+        "2750 ml",
+        "2000 ml",
+        "8000 ml"
+      ],
+      "t": 2,
+      "izoh": "Avval barcha miqdorlar bitta birlikka keltiriladi: 2,5 litr = 2500 ml, 3 litr = 3000 ml. Yig'indi 2500 + 1800 + 3000 + 700 = 8000 ml bo'ladi. To'rtta idish bo'lgani uchun o'rtacha 8000 : 4 = 2000 ml. 762,5 ml — litrni 100 ga ko'paytirish xatosi, 8000 ml esa bo'lishni unutishdir. Javob: 2000 ml.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-arifmetik-hisoblash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#54295389"
+    },
+    {
+      "q": "Sinf o'quvchilarining oyoq kiyimi o'lchamlari qayd etildi: 38, 40, 39, 41, 40, 38, 40, 42, 39, 40. Ushbu qatorning modasini aniqlang.",
+      "v": [
+        "40",
+        "42",
+        "4",
+        "39,7"
+      ],
+      "t": 0,
+      "izoh": "Moda — qatorda eng ko'p uchraydigan qiymat. Sanaymiz: 38 ikki marta, 39 ikki marta, 41 va 42 bir martadan, 40 esa to'rt marta uchraydi. Demak moda 40 ga teng. 4 — modaning takrorlanish soni, 39,7 esa o'rta arifmetik. Javob: 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "moda-topish",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#2732a48d"
+    },
+    {
+      "q": "Do'konda bir kunda sotilgan ko'ylaklarning o'lchamlari: S, M, L, M, XL, M, L, S, M, L. Eng ko'p sotilgan o'lcham, ya'ni ushbu qatorning modasi qaysi?",
+      "v": [
+        "S",
+        "L",
+        "M",
+        "XL"
+      ],
+      "t": 2,
+      "izoh": "Moda sonli bo'lmagan ma'lumotlarda ham topiladi — u eng ko'p takrorlangan variant. Sanaymiz: S ikki marta, M to'rt marta, L uch marta, XL bir marta uchraydi. Eng katta chastota M o'lchamida, demak moda M bo'ladi. Javob: M.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "moda-topish",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#c8470ee0"
+    },
+    {
+      "q": "Bir haftada shifokorga murojaat qilgan bemorlarning yoshi: 34, 51, 34, 62, 45, 34, 51, 28, 51, 51. Ushbu ma'lumotlar qatorining modasini toping.",
+      "v": [
+        "34",
+        "44,1",
+        "48",
+        "51"
+      ],
+      "t": 3,
+      "izoh": "Har bir yoshning takrorlanishini sanaymiz: 34 uch marta, 51 to'rt marta, 62, 45 va 28 bir martadan uchraydi. Eng katta chastota 51 yoshda, demak moda 51. 34 — ikkinchi o'rindagi chastota, 44,1 — o'rta arifmetik, 48 esa mediana. Javob: 51.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "moda-topish",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#947b7cae"
+    },
+    {
+      "q": "Avtoturargohda turgan mashinalarning rangi qayd etildi: oq, qora, oq, kulrang, oq, qora, oq, ko'k, kulrang, oq, qora. Ushbu ma'lumotlarning modasini aniqlang.",
+      "v": [
+        "qora",
+        "oq",
+        "kulrang",
+        "ko'k"
+      ],
+      "t": 1,
+      "izoh": "Ranglarni sanaymiz: oq besh marta, qora uch marta, kulrang ikki marta, ko'k bir marta uchraydi. Moda — chastotasi eng katta bo'lgan qiymat, ya'ni oq rang. Qora rang ikkinchi o'rinda tursa ham, u moda bo'la olmaydi. Javob: oq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "moda-topish",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#798ff7fc"
+    },
+    {
+      "q": "Jamshid haftaning yetti kunida quyidagi masofalarni yugurdi (km): 5, 9, 3, 12, 6, 4, 10. Ushbu qatorning medianasini toping.",
+      "v": [
+        "12 km",
+        "7 km",
+        "6 km",
+        "7,5 km"
+      ],
+      "t": 2,
+      "izoh": "Medianani topish uchun sonlar avval o'sish tartibida yoziladi: 3, 4, 5, 6, 9, 10, 12. Yetti ta son bor, demak mediana o'rtadagi, ya'ni 4-o'rindagi son — 6 km. 12 km — tartiblamasdan berilgan qatorning o'rtasidagi son, 7 km esa o'rta arifmetik. Javob: 6 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mediana-toq-son",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#1e8c573d"
+    },
+    {
+      "q": "Beshta binoning balandligi metrda quyidagicha: 27, 42, 19, 35, 24. Ushbu ma'lumotlar qatorining medianasini toping.",
+      "v": [
+        "27 m",
+        "19 m",
+        "29,4 m",
+        "30,5 m"
+      ],
+      "t": 0,
+      "izoh": "Balandliklarni o'sish tartibida yozamiz: 19, 24, 27, 35, 42. Beshta son bo'lgani uchun mediana uchinchi o'rindagi son, ya'ni 27 m. 19 m — tartiblamay turib qatorning o'rtasidan olingan son, 29,4 m — o'rta arifmetik, 30,5 m esa eng kichik va eng katta qiymat o'rtachasi. Javob: 27 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mediana-toq-son",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#1037702d"
+    },
+    {
+      "q": "To'qqiz nafar talabaning testda to'plagan ballari: 62, 78, 55, 91, 70, 84, 66, 73, 88. Ushbu ballar qatorining medianasini aniqlang.",
+      "v": [
+        "70 ball",
+        "73 ball",
+        "74,1 ball",
+        "78 ball"
+      ],
+      "t": 1,
+      "izoh": "Ballarni o'sish tartibida joylashtiramiz: 55, 62, 66, 70, 73, 78, 84, 88, 91. To'qqizta son bor, mediana 5-o'rindagi son bo'ladi, ya'ni 73 ball. 70 ball — tartiblanmagan qatorning 5-o'rnidagi son, 74,1 ball — o'rta arifmetik, 78 ball esa 6-o'rin. Javob: 73 ball.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-toq-son",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#8503c65a"
+    },
+    {
+      "q": "Bir qatorda 15 ta son o'sish tartibida joylashgan. Eng katta son yana 5 taga oshirilsa va eng kichigi 3 taga kamaytirilsa, qatorning medianasi qanday o'zgaradi?",
+      "v": [
+        "2 taga ortadi",
+        "1 taga ortadi",
+        "2 taga kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 3,
+      "izoh": "15 ta sonning medianasi — tartiblangan qatorning 8-o'rindagi soni. Eng katta son yana kattalashadi, eng kichigi yana kichiklashadi, shuning uchun sonlarning tartibi buzilmaydi va 8-o'rinda o'sha sonning o'zi qoladi. Faqat o'rta arifmetik o'zgaradi, mediana esa o'zgarishsiz qoladi. Javob: o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-toq-son",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#553481c8"
+    },
+    {
+      "q": "Sakkiz nafar sotuvchining bir kunlik savdo tushumi (ming so'mda): 120, 95, 140, 110, 130, 85, 105, 150. Ushbu qatorning medianasini toping.",
+      "v": [
+        "110 ming so'm",
+        "115 ming so'm",
+        "117,5 ming so'm",
+        "120 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Tushumlarni o'sish tartibida yozamiz: 85, 95, 105, 110, 120, 130, 140, 150. Elementlar soni juft, shuning uchun mediana o'rtadagi ikki sonning o'rta arifmetigi: (110 + 120) : 2 = 115 ming so'm. Faqat 4-o'rindagi yoki faqat 5-o'rindagi sonni olish keng tarqalgan xato. Javob: 115 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mediana-juft-son",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#63430b73"
+    },
+    {
+      "q": "O'nta tuxumning massasi grammda o'lchandi: 58, 62, 55, 67, 60, 64, 57, 61, 63, 59. Ushbu qatorning medianasini hisoblang.",
+      "v": [
+        "60 g",
+        "60,6 g",
+        "60,5 g",
+        "61 g"
+      ],
+      "t": 2,
+      "izoh": "Massalarni o'sish tartibida yozamiz: 55, 57, 58, 59, 60, 61, 62, 63, 64, 67. O'nta son bor, mediana 5- va 6-o'rindagi sonlarning o'rtachasi: (60 + 61) : 2 = 60,5 g. 60,6 g — o'rta arifmetik qiymat, 60 g va 61 g esa faqat bitta markaziy sonni olish xatosi. Javob: 60,5 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-juft-son",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#8c496193"
+    },
+    {
+      "q": "Malika olti oy davomida quyidagicha jamg'arma qildi (ming so'mda): 250, 180, 320, 210, 290, 240. Uning oylik jamg'armalarining medianasini toping.",
+      "v": [
+        "240 ming so'm",
+        "248,3 ming so'm",
+        "250 ming so'm",
+        "245 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Jamg'armalarni tartiblaymiz: 180, 210, 240, 250, 290, 320. Oltita son juft songa teng, shuning uchun mediana 3- va 4-o'rindagi sonlar o'rtachasi: (240 + 250) : 2 = 245 ming so'm. 248,3 ming so'm — o'rta arifmetik, 250 ming so'm esa chetki qiymatlar o'rtachasi. Javob: 245 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-juft-son",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#0fcbf068"
+    },
+    {
+      "q": "Bir qatorda 12 ta son bor va uning medianasi 46 ga teng. Qatorga barcha mavjud sonlardan kichik yana ikkita son qo'shilsa, yangi mediana haqida nima deyish mumkin?",
+      "v": [
+        "46 dan katta bo'lmaydi",
+        "Albatta 46 ga teng qoladi",
+        "Albatta 46 dan ortadi",
+        "46 dan kichik bo'la olmaydi"
+      ],
+      "t": 0,
+      "izoh": "12 ta sonning medianasi 6- va 7-o'rindagi sonlar o'rtachasi bo'lib, u 46 ga teng. Barcha sonlardan kichik ikkita son qo'shilsa, qatorda 14 ta son bo'ladi va mediana 7- va 8-o'rindagi sonlar o'rtachasiga aylanadi; bular esa eski qatorning 5- va 6-o'rindagi sonlari. Ular eskilaridan katta bo'la olmaydi, demak yangi mediana 46 dan oshmaydi. Javob: 46 dan katta bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-juft-son",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#24cfe323"
+    },
+    {
+      "q": "Do'kondagi sotuvchilarning ish staji yillarda: 3, 7, 5, 3, 9, 3, 7, 11, 5. Ushbu qatorning modasi va medianasi mos ravishda nechaga teng?",
+      "v": [
+        "moda 5, mediana 3",
+        "moda 3, mediana 7",
+        "moda 3, mediana 5",
+        "moda 5, mediana 5"
+      ],
+      "t": 2,
+      "izoh": "Avval tartiblaymiz: 3, 3, 3, 5, 5, 7, 7, 9, 11. To'qqizta son bor, mediana 5-o'rindagi son, ya'ni 5. Modani chastota bo'yicha topamiz: 3 uch marta, 5 va 7 ikki martadan uchraydi, demak moda 3. Modani mediana bilan almashtirib qo'yish tipik xato. Javob: moda 3, mediana 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "moda-va-mediana-birga",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#e8e26cbe"
+    },
+    {
+      "q": "Kutubxonadan sakkiz kun davomida kunlik olingan kitoblar soni: 12, 8, 15, 8, 20, 8, 14, 10. Ushbu ma'lumotlarning medianasi bilan modasi orasidagi farqni toping.",
+      "v": [
+        "2",
+        "8",
+        "11",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Tartiblangan qator: 8, 8, 8, 10, 12, 14, 15, 20. Sakkizta son bor, mediana (10 + 12) : 2 = 11 ga teng. Moda esa uch marta uchragan 8. Izlanayotgan farq 11 − 8 = 3. 2 — medianani 10 deb olish xatosi, 8 va 11 esa alohida ko'rsatkichlarning o'zi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "moda-va-mediana-birga",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#33fc477a"
+    },
+    {
+      "q": "Yetti nafar bolaning yoshi: 6, 9, 6, 12, 15, 6, 9. Ularga yana bitta 9 yoshli bola qo'shilsa, hosil bo'lgan qatorning modasi va medianasi qanday bo'ladi?",
+      "v": [
+        "moda 6, mediana 9",
+        "moda 6 va 9, mediana 9",
+        "moda 9, mediana 9",
+        "moda 6 va 9, mediana 6"
+      ],
+      "t": 1,
+      "izoh": "Yangi qatorni tartiblaymiz: 6, 6, 6, 9, 9, 9, 12, 15. Endi 6 ham, 9 ham uch martadan uchraydi, ya'ni qatorda ikkita moda bor. Sakkizta son bo'lgani uchun mediana 4- va 5-o'rindagi sonlar o'rtachasi: (9 + 9) : 2 = 9. Javob: moda 6 va 9, mediana 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "moda-va-mediana-birga",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#841986c4"
+    },
+    {
+      "q": "Guruhdagi olti nafar o'quvchining bo'yi santimetrda: 152, 160, 148, 160, 165, 155. Ushbu qatorning modasi medianasidan necha santimetr katta?",
+      "v": [
+        "2,5 sm",
+        "3,3 sm",
+        "5 sm",
+        "12 sm"
+      ],
+      "t": 0,
+      "izoh": "Bo'ylarni tartiblaymiz: 148, 152, 155, 160, 160, 165. Oltita son bor, mediana (155 + 160) : 2 = 157,5 sm. Moda — ikki marta uchragan 160 sm. Farq 160 − 157,5 = 2,5 sm. 5 sm — medianani 155 deb olishdan, 3,3 sm — o'rta arifmetikdan ayirishdan chiqadi. Javob: 2,5 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "moda-va-mediana-birga",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#830b7b91"
+    },
+    {
+      "q": "Beshta sonning o'rta arifmetigi 26 ga teng. Ulardan to'rttasi 18, 27, 31 va 20 bo'lsa, beshinchi sonni toping.",
+      "v": [
+        "8",
+        "24",
+        "34",
+        "26"
+      ],
+      "t": 2,
+      "izoh": "Sonlar yig'indisi o'rtacha bilan sonlar sonining ko'paytmasiga teng: 26 · 5 = 130. Ma'lum to'rt sonning yig'indisi 18 + 27 + 31 + 20 = 96. Demak beshinchi son 130 − 96 = 34 ga teng. 8 — ko'paytirishda 5 o'rniga 4 olish xatosi, 24 esa 96 : 4 natijasidir. Javob: 34.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomalum-element-ortacha-boyicha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#5a27a4c4"
+    },
+    {
+      "q": "Rustamning oltita fandan o'rtacha bahosi 4,5 ga teng. Beshta fandan u 5, 4, 5, 4 va 5 baho olgan bo'lsa, oltinchi fandan qanday baho olgan?",
+      "v": [
+        "4",
+        "5",
+        "3",
+        "4,5"
+      ],
+      "t": 0,
+      "izoh": "Oltita bahoning yig'indisi 4,5 · 6 = 27 ga teng bo'lishi kerak. Ma'lum beshta baho yig'indisi 5 + 4 + 5 + 4 + 5 = 23. Demak oltinchi baho 27 − 23 = 4 bo'ladi. 4,5 — o'rtachaning o'zini javob deb olish, 5 esa eng ko'p uchragan bahoni tanlash xatosi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomalum-element-ortacha-boyicha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#419576c5"
+    },
+    {
+      "q": "Uchta quti olmaning o'rtacha massasi 8 kg. Birinchi qutida 6,5 kg, ikkinchisida 9,2 kg olma bo'lsa, uchinchi qutining massasini toping.",
+      "v": [
+        "7,85 kg",
+        "8,3 kg",
+        "8 kg",
+        "15,7 kg"
+      ],
+      "t": 1,
+      "izoh": "Uchta qutining umumiy massasi 8 · 3 = 24 kg. Ma'lum ikki qutining massasi 6,5 + 9,2 = 15,7 kg. Demak uchinchi quti 24 − 15,7 = 8,3 kg. 7,85 kg — faqat ikki qutining o'rtachasi, 15,7 kg esa ularning yig'indisi. Javob: 8,3 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-element-ortacha-boyicha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#4a7df66b"
+    },
+    {
+      "q": "Yetti nafar ishchining o'rtacha kunlik ish haqi 145 ming so'm edi. Ulardan biri bo'shab, o'rniga kuniga 195 ming so'm oladigan ishchi kelgach o'rtacha ish haqi 152 ming so'mga yetdi. Bo'shagan ishchining kunlik ish haqi qancha edi?",
+      "v": [
+        "188 ming so'm",
+        "152 ming so'm",
+        "145 ming so'm",
+        "146 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Avvalgi umumiy ish haqi 145 · 7 = 1015 ming so'm, yangisi 152 · 7 = 1064 ming so'm. Umumiy summa 1064 − 1015 = 49 ming so'mga ortdi, bu ortish yangi ishchi bilan eskisining farqidan kelib chiqadi. Demak bo'shagan ishchining ish haqi 195 − 49 = 146 ming so'm. 188 ming so'm — 7 ga ko'paytirishni unutib, 195 − 7 deb hisoblash xatosi. Javob: 146 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nomalum-element-ortacha-boyicha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#8e2811b3"
+    },
+    {
+      "q": "Sanjar to'rtta imtihonda o'rtacha 76 ball to'plagan. Beshinchi imtihonda 91 ball olsa, beshta imtihon bo'yicha o'rtacha bali qanday bo'ladi?",
+      "v": [
+        "83,5 ball",
+        "98,75 ball",
+        "79 ball",
+        "76 ball"
+      ],
+      "t": 2,
+      "izoh": "To'rtta imtihondagi ballar yig'indisi 76 · 4 = 304. Beshinchi imtihon bilan birga yig'indi 304 + 91 = 395 bo'ladi. Endi imtihonlar soni 5 ta, demak o'rtacha ball 395 : 5 = 79. 83,5 — ikki sonning oddiy o'rtachasi, 98,75 esa 4 ga bo'lish xatosi. Javob: 79 ball.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yangi-element-ortachaga-tasiri",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#83023c85"
+    },
+    {
+      "q": "Guruhdagi 9 nafar o'quvchining o'rtacha bo'yi 158 sm. Guruhga bo'yi 168 sm bo'lgan yangi o'quvchi qo'shilsa, o'rtacha bo'y necha santimetrga ortadi?",
+      "v": [
+        "10 sm",
+        "1 sm",
+        "1,1 sm",
+        "5 sm"
+      ],
+      "t": 1,
+      "izoh": "Avvalgi bo'ylar yig'indisi 158 · 9 = 1422 sm. Yangi o'quvchi bilan yig'indi 1422 + 168 = 1590 sm, o'quvchilar soni esa 10 ta. Yangi o'rtacha 1590 : 10 = 159 sm, ya'ni o'rtacha 159 − 158 = 1 sm ga ortadi. 10 sm — shunchaki bo'ylar farqi, 1,1 sm esa farqni 9 ga bo'lish xatosi. Javob: 1 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yangi-element-ortachaga-tasiri",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#c480fbda"
+    },
+    {
+      "q": "Do'kon olti kun davomida kuniga o'rtacha 1200 ming so'mlik savdo qildi. Yettinchi kuni savdo 1620 ming so'm bo'lsa, yetti kunlik o'rtacha savdo qancha bo'ladi?",
+      "v": [
+        "1260 ming so'm",
+        "1410 ming so'm",
+        "1200 ming so'm",
+        "1470 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "Olti kunlik savdo 1200 · 6 = 7200 ming so'm. Yettinchi kunni qo'shsak, yig'indi 7200 + 1620 = 8820 ming so'm bo'ladi. Kunlar soni 7 ta, demak o'rtacha savdo 8820 : 7 = 1260 ming so'm. 1410 ming so'm — ikki sonning oddiy o'rtachasi, 1470 ming so'm esa 6 ga bo'lish xatosi. Javob: 1260 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yangi-element-ortachaga-tasiri",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#6f55c335"
+    },
+    {
+      "q": "Qatordagi n ta sonning o'rta arifmetigi 15 ga teng edi. Qatorga 39 soni qo'shilgandan keyin o'rta arifmetik 18 bo'ldi. n ning qiymatini toping.",
+      "v": [
+        "13",
+        "8",
+        "24",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "n ta sonning yig'indisi 15n ga teng. 39 qo'shilgach elementlar soni n + 1, yig'indi esa 15n + 39 bo'ladi va yangi o'rtacha 18 ga teng: 15n + 39 = 18(n + 1). Qavsni ochamiz: 15n + 39 = 18n + 18, bundan 3n = 21 va n = 7. 13 — o'ng tomonda n + 1 o'rniga n yozish xatosi, 8 esa yangi qatordagi elementlar soni. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yangi-element-ortachaga-tasiri",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#a3e63cbd"
+    },
+    {
+      "q": "Beshta sonning o'rta arifmetigi 32 ga teng. Qatordan 40 soni chiqarib tashlansa, qolgan to'rtta sonning o'rta arifmetigi nechaga teng bo'ladi?",
+      "v": [
+        "30",
+        "28",
+        "32",
+        "24"
+      ],
+      "t": 0,
+      "izoh": "Beshta sonning yig'indisi 32 · 5 = 160. 40 chiqarilgach yig'indi 160 − 40 = 120, sonlar soni esa 4 ta bo'lib qoladi. Yangi o'rtacha 120 : 4 = 30. 24 — bo'luvchini 5 ligicha qoldirish xatosi, 32 esa o'rtacha o'zgarmaydi deb o'ylashdir. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "element-olib-tashlash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#6be523d0"
+    },
+    {
+      "q": "Yetti nafar sportchining o'rtacha vazni 68 kg. Vazni 80 kg bo'lgan sportchi jamoadan chiqib ketsa, qolgan olti sportchining o'rtacha vazni qancha bo'ladi?",
+      "v": [
+        "68 kg",
+        "70 kg",
+        "66 kg",
+        "56,6 kg"
+      ],
+      "t": 2,
+      "izoh": "Yetti sportchining umumiy vazni 68 · 7 = 476 kg. Bir sportchi chiqib ketgach yig'indi 476 − 80 = 396 kg, sportchilar soni 6 ta bo'ladi. Yangi o'rtacha 396 : 6 = 66 kg. 70 kg — og'ir sportchi chiqqanda o'rtacha ortadi deb xato o'ylash, 56,6 kg esa 7 ga bo'lish natijasidir. Javob: 66 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "element-olib-tashlash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#9a56bb2c"
+    },
+    {
+      "q": "O'nta qutining o'rtacha massasi 15,4 kg. Eng og'ir quti olib tashlangach qolgan to'qqizta qutining o'rtacha massasi 14,8 kg bo'ldi. Olib tashlangan qutining massasini toping.",
+      "v": [
+        "6 kg",
+        "20,8 kg",
+        "0,6 kg",
+        "15,4 kg"
+      ],
+      "t": 1,
+      "izoh": "O'nta qutining umumiy massasi 15,4 · 10 = 154 kg. Qolgan to'qqiztasining massasi 14,8 · 9 = 133,2 kg. Olib tashlangan quti bu ikki yig'indining farqiga teng: 154 − 133,2 = 20,8 kg. 0,6 kg — o'rtachalar farqi, 6 kg esa ikkinchi yig'indini ham 10 ga ko'paytirish xatosi. Javob: 20,8 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "element-olib-tashlash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#fc546b38"
+    },
+    {
+      "q": "Qatordagi 20 ta sonning o'rta arifmetigi 45 ga teng. Qatordan aynan o'rta arifmetikka teng bo'lgan uchta son olib tashlansa, qolgan sonlarning o'rta arifmetigi qanday bo'ladi?",
+      "v": [
+        "38,25",
+        "42",
+        "52,9",
+        "45"
+      ],
+      "t": 3,
+      "izoh": "Barcha sonlar yig'indisi 45 · 20 = 900. Har biri 45 ga teng uchta son olib tashlansa, yig'indi 900 − 135 = 765, sonlar soni esa 17 ta bo'ladi. Yangi o'rtacha 765 : 17 = 45, ya'ni o'zgarmaydi. O'rtachaga teng elementni olib tashlash o'rtachani hech qachon o'zgartirmaydi. 38,25 — bo'luvchini 20 ligicha qoldirish, 52,9 esa yig'indini kamaytirmaslik xatosi. Javob: 45.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "element-olib-tashlash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#44e1b98b"
+    },
+    {
+      "q": "A guruhdagi 10 nafar o'quvchining o'rtacha bahosi 4,2, B guruhdagi 15 nafar o'quvchiniki esa 3,8. Ikkala guruhdagi barcha o'quvchilarning umumiy o'rtacha bahosini toping.",
+      "v": [
+        "4",
+        "4,04",
+        "3,96",
+        "4,95"
+      ],
+      "t": 2,
+      "izoh": "A guruhdagi baholar yig'indisi 4,2 · 10 = 42, B guruhdagi baholar yig'indisi 3,8 · 15 = 57. Umumiy yig'indi 42 + 57 = 99, o'quvchilar soni 10 + 15 = 25 ta. Umumiy o'rtacha 99 : 25 = 3,96. 4 — ikki o'rtachaning oddiy o'rtachasi, 4,04 esa guruh sonlarini almashtirib qo'yish natijasidir. Javob: 3,96.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-guruh-birlashgan-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#a2337c71"
+    },
+    {
+      "q": "Zavodda 12 nafar ishchi kuniga o'rtacha 45 tadan, boshqa 8 nafari esa o'rtacha 60 tadan detal tayyorlaydi. Bir ishchiga to'g'ri keladigan o'rtacha detal sonini toping.",
+      "v": [
+        "51 ta",
+        "52,5 ta",
+        "54 ta",
+        "56,7 ta"
+      ],
+      "t": 0,
+      "izoh": "Birinchi guruh kuniga 45 · 12 = 540 ta, ikkinchisi 60 · 8 = 480 ta detal tayyorlaydi. Jami 540 + 480 = 1020 ta detal va 12 + 8 = 20 nafar ishchi bor. O'rtacha 1020 : 20 = 51 ta. 52,5 ta — ishchilar sonini hisobga olmay olingan oddiy o'rtacha, 54 ta esa guruhlar sonini almashtirish xatosi. Javob: 51 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-guruh-birlashgan-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#12047621"
+    },
+    {
+      "q": "Aralashmaning 3 kg qismi kilogrammi 24 ming so'mlik yong'oqdan, 5 kg qismi esa kilogrammi 16 ming so'mlik mayizdan iborat. Aralashmaning bir kilogrammi o'rtacha qanchaga tushadi?",
+      "v": [
+        "20 ming so'm",
+        "19 ming so'm",
+        "21 ming so'm",
+        "152 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Yong'oqning qiymati 24 · 3 = 72 ming so'm, mayizniki 16 · 5 = 80 ming so'm. Aralashmaning umumiy qiymati 72 + 80 = 152 ming so'm, umumiy massasi esa 3 + 5 = 8 kg. Bir kilogramm narxi 152 : 8 = 19 ming so'm. 20 ming so'm — massalarni hisobga olmagan oddiy o'rtacha, 21 ming so'm esa massalarni almashtirib qo'yish natijasi. Javob: 19 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-guruh-birlashgan-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#0b46e981"
+    },
+    {
+      "q": "Sinfda o'g'il bolalarning o'rtacha bo'yi 165 sm, qizlarniki 155 sm, butun sinfning o'rtacha bo'yi esa 161 sm. O'g'il bolalar sonining qizlar soniga nisbatini toping.",
+      "v": [
+        "2 : 3",
+        "3 : 5",
+        "5 : 3",
+        "3 : 2"
+      ],
+      "t": 3,
+      "izoh": "O'g'il bolalar soni b, qizlar soni q bo'lsin. Umumiy bo'ylar yig'indisi 165b + 155q, o'quvchilar soni b + q. Shartga ko'ra 165b + 155q = 161(b + q). Qavsni ochamiz: 165b + 155q = 161b + 161q, bundan 4b = 6q, ya'ni b : q = 6 : 4 = 3 : 2. 2 : 3 — teskari nisbat, 3 : 5 esa o'g'illarning jamiga nisbati. Javob: 3 : 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-guruh-birlashgan-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#df40cf08"
+    },
+    {
+      "q": "Sinfdagi 24 nafar o'quvchining kunlik o'rtacha cho'ntak puli 12 ming so'm. Sinfdagi barcha o'quvchilarning bir kunlik cho'ntak puli jami qanchani tashkil etadi?",
+      "v": [
+        "36 ming so'm",
+        "288 ming so'm",
+        "2 ming so'm",
+        "144 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "O'rta arifmetik ta'rifiga ko'ra yig'indi o'rtacha bilan elementlar sonining ko'paytmasiga teng. Demak jami pul 12 · 24 = 288 ming so'm. 36 ming so'm — sonlarni ko'paytirish o'rniga qo'shish, 2 ming so'm — bo'lish, 144 ming so'm esa 12 ni o'ziga ko'paytirish xatosi. Javob: 288 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortachadan-yigindi-topish",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#0ee0355d"
+    },
+    {
+      "q": "Mehmonxonada avgust oyining 31 kunida kuniga o'rtacha 46 nafar mehmon yashadi. Oy davomida jami necha nafar mehmon qayd etilgan?",
+      "v": [
+        "77 nafar",
+        "1380 nafar",
+        "1426 nafar",
+        "1472 nafar"
+      ],
+      "t": 2,
+      "izoh": "Jami mehmonlar soni kunlik o'rtacha bilan kunlar sonining ko'paytmasiga teng: 46 · 31 = 1426 nafar. 1380 nafar — avgustni 30 kun deb olish xatosi, 1472 nafar — 32 kunga ko'paytirish, 77 nafar esa ko'paytirish o'rniga qo'shish natijasi. Javob: 1426 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortachadan-yigindi-topish",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#125b6bc1"
+    },
+    {
+      "q": "Nodira olti kun davomida kuniga o'rtacha 45 daqiqadan mashq qildi. Yetti kunlik o'rtacha 50 daqiqaga chiqishi uchun yettinchi kuni necha daqiqa mashq qilishi kerak?",
+      "v": [
+        "80 daqiqa",
+        "55 daqiqa",
+        "50 daqiqa",
+        "95 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Yetti kunlik o'rtacha 50 daqiqa bo'lishi uchun umumiy vaqt 50 · 7 = 350 daqiqa bo'lishi kerak. Olti kunda u 45 · 6 = 270 daqiqa mashq qilgan. Demak yettinchi kuni 350 − 270 = 80 daqiqa kerak. 55 daqiqa — farqni oddiygina qo'shish, 95 daqiqa esa ikki o'rtachani qo'shish xatosi. Javob: 80 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortachadan-yigindi-topish",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#39c2c21b"
+    },
+    {
+      "q": "Kitobning birinchi 8 bobida o'rtacha 24 betdan, keyingi 5 bobida esa o'rtacha 32 betdan bor. Butun kitob 620 betdan iborat bo'lsa, qolgan boblarga jami necha bet to'g'ri keladi?",
+      "v": [
+        "428 bet",
+        "460 bet",
+        "352 bet",
+        "268 bet"
+      ],
+      "t": 3,
+      "izoh": "Birinchi qismdagi betlar soni 24 · 8 = 192, ikkinchi qismdagisi 32 · 5 = 160 bet. Ikkala qism birgalikda 192 + 160 = 352 bet. Qolgan boblarga 620 − 352 = 268 bet to'g'ri keladi. 428 bet — faqat birinchi qismni ayirish, 460 bet — faqat ikkinchisini ayirish, 352 bet esa oxirgi qadamni tashlab ketish xatosi. Javob: 268 bet.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortachadan-yigindi-topish",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#fafcf3c5"
+    },
+    {
+      "q": "Quyidagi sonli qator berilgan: 4, 6, 6, 7, 12, 25. Ushbu qatorning o'rta arifmetigi, modasi va medianasi orasidagi qaysi munosabat to'g'ri?",
+      "v": [
+        "moda < mediana < o'rtacha",
+        "o'rtacha < mediana < moda",
+        "mediana < moda < o'rtacha",
+        "moda < o'rtacha < mediana"
+      ],
+      "t": 0,
+      "izoh": "O'rta arifmetik: (4 + 6 + 6 + 7 + 12 + 25) : 6 = 60 : 6 = 10. Qator allaqachon tartiblangan, oltita son bor, demak mediana (6 + 7) : 2 = 6,5. Moda — ikki marta uchragan 6. Shunday qilib 6 < 6,5 < 10. Javob: moda < mediana < o'rtacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchala-korsatkich-taqqoslash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#57f9cb67"
+    },
+    {
+      "q": "Kichik korxonadagi oylik maoshlar (ming so'mda): 3000, 3200, 3400, 3900, 15500. Ushbu ma'lumotlarda o'rta arifmetik medianadan necha ming so'mga katta?",
+      "v": [
+        "2150 ming so'm",
+        "3850 ming so'm",
+        "2400 ming so'm",
+        "12100 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Maoshlar yig'indisi 3000 + 3200 + 3400 + 3900 + 15500 = 29000 ming so'm, o'rta arifmetik 29000 : 5 = 5800 ming so'm. Beshta son tartiblangan, mediana uchinchi o'rindagi 3400 ming so'm. Farq 5800 − 3400 = 2400 ming so'm. 2150 — medianani (3400 + 3900) : 2 deb olish, 3850 esa 5 o'rniga 4 ga bo'lish xatosi. Javob: 2400 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchala-korsatkich-taqqoslash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#99fc3dd0"
+    },
+    {
+      "q": "Mahalladagi oilalarning oylik daromadi tahlil qilinganda o'rta arifmetik medianadan ancha katta chiqdi. Bu natija ma'lumotlar qatori haqida nimani ko'rsatadi?",
+      "v": [
+        "Barcha daromadlar bir-biriga juda yaqin",
+        "Qatorda juda katta bir nechta daromad bor va u o'rtachani yuqoriga tortgan",
+        "Qatorda moda umuman bo'lmaydi",
+        "Oilalarning yarmidan ko'pi o'rtachadan yuqori daromad oladi"
+      ],
+      "t": 1,
+      "izoh": "Mediana faqat qiymatlarning tartibiga bog'liq, o'rta arifmetik esa har bir qiymatning kattaligiga bog'liq. Shuning uchun bir nechta juda katta daromad yig'indini keskin oshiradi va o'rtachani yuqoriga tortadi, mediana esa deyarli o'zgarmaydi. Daromadlar bir-biriga yaqin bo'lganda bu ikki ko'rsatkich bir-biriga yaqin chiqadi. Javob: qatorda juda katta bir nechta daromad bor va u o'rtachani yuqoriga tortgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchala-korsatkich-taqqoslash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#90efb664"
+    },
+    {
+      "q": "Beshta sondan iborat qatorda o'rta arifmetik, moda va mediana bitta songa teng. Quyidagi qatorlardan qaysi biri shu shartni qanoatlantiradi?",
+      "v": [
+        "3, 5, 7, 7, 10",
+        "1, 4, 4, 8, 9",
+        "2, 3, 5, 5, 9",
+        "2, 4, 6, 6, 12"
+      ],
+      "t": 3,
+      "izoh": "Oxirgi qatorni tekshiramiz: yig'indi 2 + 4 + 6 + 6 + 12 = 30, o'rta arifmetik 30 : 5 = 6. Beshta son tartiblangan, mediana uchinchi o'rindagi 6, moda esa ikki marta uchragan 6. Uchala ko'rsatkich ham 6 ga teng. Qolgan qatorlarda o'rta arifmetik mos ravishda 6,4 va 5,2 va 4,8 chiqadi, modasi va medianasi esa 7, 4 va 5. Javob: 2, 4, 6, 6, 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchala-korsatkich-taqqoslash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#3612f0f9"
+    },
+    {
+      "q": "Quyidagi qator berilgan: 12, 15, 18, 21, 24, 27. Ushbu qatorning modasi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Modasi 12 ga teng",
+        "Qatorda moda yo'q",
+        "Modasi 19,5 ga teng",
+        "Modasi 27 ga teng"
+      ],
+      "t": 1,
+      "izoh": "Moda — qatorda boshqalardan ko'proq uchraydigan qiymat. Bu qatorda oltala son ham faqat bir martadan uchraydi, ya'ni hech bir qiymatning chastotasi boshqalarnikidan katta emas. Shuning uchun qatorda moda mavjud emas. 19,5 — o'rta arifmetik qiymat, 12 va 27 esa chetki sonlar. Javob: qatorda moda yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "moda-yoq-yoki-ikki-moda",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#bef1cc74"
+    },
+    {
+      "q": "Do'kondan bir kunda sotilgan sharbat idishlarining hajmi (litr): 1, 2, 1, 3, 2, 5, 2, 1, 4. Ushbu qatorning modasi haqida nima deyish mumkin?",
+      "v": [
+        "Qatorda ikkita moda bor: 1 va 2",
+        "Modasi faqat 2 ga teng",
+        "Modasi 3 ga teng",
+        "Qatorda moda yo'q"
+      ],
+      "t": 0,
+      "izoh": "Chastotalarni sanaymiz: 1 uch marta, 2 uch marta, 3 bir marta, 4 bir marta, 5 bir marta uchraydi. Eng katta chastota 3 ga teng va u ikkita qiymatda — 1 va 2 da kuzatiladi. Demak qatorda ikkita moda bor. 3 — modaning o'zi emas, balki takrorlanish soni. Javob: qatorda ikkita moda bor: 1 va 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "moda-yoq-yoki-ikki-moda",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#7a433036"
+    },
+    {
+      "q": "Sinf jurnalidan olingan baholar: 3, 4, 5, 3, 4, 5, 3, 4, 5, 3, 4, 2. Ushbu qatorda nechta moda bor va ular qaysi baholardan iborat?",
+      "v": [
+        "Bitta moda: 5",
+        "Uchta moda: 3, 4 va 5",
+        "Ikkita moda: 3 va 4",
+        "Moda yo'q"
+      ],
+      "t": 2,
+      "izoh": "Baholarni sanaymiz: 3 to'rt marta, 4 to'rt marta, 5 uch marta, 2 bir marta uchraydi. Eng katta chastota 4 ga teng va u 3 hamda 4 baholarida kuzatiladi. Demak qatorda ikkita moda bor. 5 bahosining chastotasi kichikroq bo'lgani uchun u moda emas. Javob: ikkita moda: 3 va 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "moda-yoq-yoki-ikki-moda",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#db0792c5"
+    },
+    {
+      "q": "Yetti nafar o'quvchining to'plagan ballari: 14, 18, 14, 22, 18, 25 va x. x ning qaysi qiymatida qatorda yagona moda hosil bo'ladi?",
+      "v": [
+        "20",
+        "25",
+        "30",
+        "14"
+      ],
+      "t": 3,
+      "izoh": "x dan tashqari qismda 14 ikki marta, 18 ikki marta, 22 va 25 bir martadan uchraydi, ya'ni hozircha ikkita moda bor. x = 20 yoki x = 30 bo'lsa, yangi qiymat bir marta uchraydi va ikkita moda saqlanib qoladi. x = 25 bo'lsa 25 ham ikki marta uchrab, modalar soni uchtaga chiqadi. Faqat x = 14 bo'lganda 14 uch marta uchraydi va yagona moda hosil bo'ladi. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "moda-yoq-yoki-ikki-moda",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#94f1c2f4"
+    },
+    {
+      "q": "Nazorat ishi baholari quyidagicha taqsimlandi: 3 baho — 4 nafar, 4 baho — 10 nafar, 5 baho — 6 nafar o'quvchida. Sinfning o'rtacha bahosini toping.",
+      "v": [
+        "4,1",
+        "4",
+        "3,9",
+        "4,3"
+      ],
+      "t": 0,
+      "izoh": "Har bir bahoni o'z chastotasiga ko'paytiramiz: 3 · 4 = 12, 4 · 10 = 40, 5 · 6 = 30. Baholar yig'indisi 12 + 40 + 30 = 82, o'quvchilar soni esa 4 + 10 + 6 = 20 nafar. O'rtacha baho 82 : 20 = 4,1. 4 — chastotani hisobga olmay (3 + 4 + 5) : 3 deb hisoblash, 3,9 esa chastotalarni almashtirib qo'yish xatosi. Javob: 4,1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chastota-jadvalidan-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#e032deb3"
+    },
+    {
+      "q": "So'rovda oilalardagi bolalar soni aniqlandi: 1 bola — 8 oila, 2 bola — 12 oila, 3 bola — 6 oila, 4 bola — 4 oila. Bir oilaga to'g'ri keladigan o'rtacha bola sonini toping.",
+      "v": [
+        "2,5",
+        "2,2",
+        "2,8",
+        "7,5"
+      ],
+      "t": 1,
+      "izoh": "Bolalar umumiy soni 1 · 8 + 2 · 12 + 3 · 6 + 4 · 4 = 8 + 24 + 18 + 16 = 66 ta. Oilalar soni 8 + 12 + 6 + 4 = 30 ta. O'rtacha 66 : 30 = 2,2 bola. 2,5 — chastotasiz (1 + 2 + 3 + 4) : 4 hisobi, 2,8 — chastotalarni teskari yozish, 7,5 esa oilalar sonini turlar soniga bo'lish xatosi. Javob: 2,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chastota-jadvalidan-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#626362e4"
+    },
+    {
+      "q": "Bekatda 40 kishining kutish vaqti qayd etildi: 2 daqiqa — 9 kishi, 5 daqiqa — 14 kishi, 8 daqiqa — 11 kishi, 12 daqiqa — 6 kishi. O'rtacha kutish vaqtini toping.",
+      "v": [
+        "6,75 daqiqa",
+        "5 daqiqa",
+        "6,2 daqiqa",
+        "62 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Umumiy kutish vaqti 2 · 9 + 5 · 14 + 8 · 11 + 12 · 6 = 18 + 70 + 88 + 72 = 248 daqiqa. Odamlar soni 9 + 14 + 11 + 6 = 40 kishi. O'rtacha vaqt 248 : 40 = 6,2 daqiqa. 6,75 daqiqa — chastotasiz olingan oddiy o'rtacha, 5 daqiqa — moda, 62 daqiqa esa 40 o'rniga 4 ga bo'lish xatosi. Javob: 6,2 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chastota-jadvalidan-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#10e2eed3"
+    },
+    {
+      "q": "25 nafar o'quvchidan 6 nafari 2 tadan, 9 nafari 3 tadan, k nafari 4 tadan, qolganlari 5 tadan kitob o'qidi. O'rtacha 3,4 ta kitob o'qilgan bo'lsa, k ning qiymatini toping.",
+      "v": [
+        "3",
+        "5",
+        "6",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "5 ta kitob o'qiganlar soni 25 − 6 − 9 − k = 10 − k nafar. Kitoblar yig'indisi 2 · 6 + 3 · 9 + 4k + 5(10 − k) = 12 + 27 + 4k + 50 − 5k = 89 − k. O'rtacha shartidan (89 − k) : 25 = 3,4, ya'ni 89 − k = 85 va k = 4. Tekshiramiz: 12 + 27 + 16 + 30 = 85, 85 : 25 = 3,4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chastota-jadvalidan-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#bcb44b3c"
+    },
+    {
+      "q": "11 nafar o'quvchidan 3 nafari 2 tadan, 5 nafari 3 tadan, 3 nafari 5 tadan daftar keltirdi. Keltirilgan daftarlar sonining medianasini toping.",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "3,3 ta",
+        "3,5 ta"
+      ],
+      "t": 1,
+      "izoh": "Ma'lumotlarni o'sish tartibida yozamiz: 2, 2, 2, 3, 3, 3, 3, 3, 5, 5, 5. Jami 11 ta qiymat bor, demak mediana 6-o'rindagi son. Dastlabki uchta o'rin 2 ga, keyingi beshtasi 3 ga tegishli, shuning uchun 6-o'rindagi qiymat 3 ta. 3,3 ta — o'rta arifmetik, 3,5 ta esa chetki qiymatlar o'rtachasi. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chastota-jadvalidan-mediana",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#aa9bf087"
+    },
+    {
+      "q": "30 nafar respondentdan 5 nafari 1 marta, 7 nafari 2 marta, 12 nafari 3 marta, 6 nafari 4 marta kinoga borgan. Ushbu ma'lumotlarning medianasini toping.",
+      "v": [
+        "2 marta",
+        "2,5 marta",
+        "3 marta",
+        "2,6 marta"
+      ],
+      "t": 2,
+      "izoh": "Chastotalarni to'plab boramiz: 1 marta borganlar dastlabki 5 o'rinni, 2 marta borganlar 12-o'ringacha, 3 marta borganlar 24-o'ringacha egallaydi. 30 ta qiymat juft bo'lgani uchun mediana 15- va 16-o'rindagi qiymatlar o'rtachasi, ikkalasi ham 3 marta guruhiga tushadi. Demak mediana 3 marta. 2,6 marta — o'rta arifmetik qiymat. Javob: 3 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chastota-jadvalidan-mediana",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#a863fbc5"
+    },
+    {
+      "q": "Do'konda sotilgan 21 juft poyabzal o'lchamlari: 37 o'lcham — 4 juft, 38 o'lcham — 6 juft, 39 o'lcham — 5 juft, 40 o'lcham — 6 juft. Sotilgan poyabzallar o'lchamining medianasini toping.",
+      "v": [
+        "39",
+        "38",
+        "38,5",
+        "40"
+      ],
+      "t": 0,
+      "izoh": "Chastotalarni to'playmiz: 37 o'lcham 4-o'ringacha, 38 o'lcham 10-o'ringacha, 39 o'lcham 15-o'ringacha davom etadi. Jami 21 ta qiymat toq son bo'lgani uchun mediana 11-o'rindagi qiymat, u esa 39 o'lchamga tushadi. 38 — 10-o'rindagi qiymat, 38,5 esa juft son deb o'ylab ikki qiymat o'rtachasini olish xatosi. Javob: 39.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chastota-jadvalidan-mediana",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#b23b8b55"
+    },
+    {
+      "q": "40 nafar o'quvchidan 9 nafari bitta, 7 nafari ikkita, m nafari uchta, qolganlari to'rtta chet tilini o'rganadi. Medianasi 3 ga teng bo'lishi uchun m eng kamida nechaga teng bo'lishi kerak?",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "40 ta qiymat juft son bo'lgani uchun mediana 20- va 21-o'rindagi qiymatlar o'rtachasi. Bitta til o'rganuvchilar dastlabki 9 o'rinni, ikkita til o'rganuvchilar 16-o'ringacha bo'lgan o'rinlarni egallaydi. Mediana 3 chiqishi uchun 20- va 21-o'rindagi qiymatlar ham 3 bo'lishi, ya'ni uchta til o'rganuvchilar 21-o'ringacha yetishi kerak: 16 + m ≥ 21, bundan m ≥ 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chastota-jadvalidan-mediana",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#b1f12007"
+    },
+    {
+      "q": "x, x + 4, x + 8 va x + 12 sonlarining o'rta arifmetigi 21 ga teng bo'lsa, x ning qiymatini toping.",
+      "v": [
+        "21",
+        "9",
+        "15",
+        "27"
+      ],
+      "t": 2,
+      "izoh": "To'rtta sonning yig'indisi x + (x + 4) + (x + 8) + (x + 12) = 4x + 24 ga teng. O'rta arifmetik shartidan (4x + 24) : 4 = 21, ya'ni 4x + 24 = 84 va 4x = 60, bundan x = 15. Tekshiramiz: 15, 19, 23, 27 sonlarining yig'indisi 84 va 84 : 4 = 21. 9 — faqat oxirgi hadga qarab x + 12 = 21 deb yechish xatosi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "algebraik-elementli-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#06ff91da"
+    },
+    {
+      "q": "2x, 3x + 5, x + 1 va 4x − 2 ifodalarning o'rta arifmetigi 16 ga teng bo'lsa, x ning qiymatini toping.",
+      "v": [
+        "6",
+        "6,4",
+        "1,2",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Ifodalar yig'indisini soddalashtiramiz: 2x + (3x + 5) + (x + 1) + (4x − 2) = 10x + 4. O'rta arifmetik shartidan (10x + 4) : 4 = 16, ya'ni 10x + 4 = 64 va 10x = 60, bundan x = 6. 6,4 — o'ng tomondagi 4 ni ayirishni unutish, 1,2 esa 16 ni 4 ga ko'paytirmaslik xatosi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "algebraik-elementli-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#9aa5caa9"
+    },
+    {
+      "q": "Uchta ketma-ket juft sonning o'rta arifmetigi 34 ga teng ekanligi ma'lum. Ushbu sonlar orasidagi eng kattasini toping.",
+      "v": [
+        "32",
+        "36",
+        "34",
+        "38"
+      ],
+      "t": 1,
+      "izoh": "Ketma-ket juft sonlarni n − 2, n va n + 2 ko'rinishida yozamiz. Ularning yig'indisi 3n, o'rta arifmetigi esa (3n) : 3 = n bo'ladi, ya'ni o'rtadagi son o'rta arifmetikka teng: n = 34. Demak sonlar 32, 34 va 36 bo'lib, eng kattasi 36. 34 — o'rtadagi sonni javob deb olish, 38 esa n + 4 xatosidir. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "algebraik-elementli-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#d074452c"
+    },
+    {
+      "q": "Yetti nafar o'quvchining yoshi ketma-ket natural sonlar bilan ifodalanadi va ularning o'rta arifmetigi 15 ga teng. Eng katta va eng kichik yoshdagi o'quvchilar yoshining yig'indisini toping.",
+      "v": [
+        "33",
+        "36",
+        "27",
+        "30"
+      ],
+      "t": 3,
+      "izoh": "Yettita ketma-ket natural son simmetrik joylashgani uchun ularning o'rta arifmetigi o'rtadagi, ya'ni to'rtinchi songa teng bo'ladi: u 15 ga teng. Demak yoshlar 12, 13, 14, 15, 16, 17 va 18. Eng kattasi 18, eng kichigi 12, ularning yig'indisi 18 + 12 = 30. 33 — o'rtacha bilan eng katta yoshni qo'shish, 36 esa eng katta yoshni ikkilantirish xatosi. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "algebraik-elementli-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#30861752"
+    },
+    {
+      "q": "Qatordagi sonlar: 12, 14, 15, 16, 18. Qatorga 90 soni qo'shilsa, uning o'rta arifmetigi va medianasi qanday o'zgaradi?",
+      "v": [
+        "O'rtacha 12,5 ga, mediana 0,5 ga ortadi",
+        "O'rtacha ham, mediana ham 12,5 ga ortadi",
+        "O'rtacha 0,5 ga, mediana 12,5 ga ortadi",
+        "Ikkala ko'rsatkich ham o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki qatorda yig'indi 75, o'rta arifmetik 75 : 5 = 15, mediana esa uchinchi o'rindagi 15. 90 qo'shilgach yig'indi 165, elementlar soni 6 ta bo'ladi: yangi o'rtacha 165 : 6 = 27,5, ya'ni 12,5 ga ortadi. Yangi mediana (15 + 16) : 2 = 15,5, ya'ni atigi 0,5 ga ortadi. Chetdagi katta qiymat o'rtachani kuchli, medianani esa juda kam o'zgartiradi. Javob: o'rtacha 12,5 ga, mediana 0,5 ga ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetdagi-qiymat-tasiri",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#785adfb7"
+    },
+    {
+      "q": "Yetti nafar ishchining kunlik daromadi (ming so'mda): 90, 95, 100, 105, 110, 115, 700. Odatdagi ishchi daromadini qaysi ko'rsatkich ishonchli tavsiflaydi va u nechaga teng?",
+      "v": [
+        "O'rta arifmetik, 187,9 ming so'm",
+        "Mediana, 110 ming so'm",
+        "Mediana, 105 ming so'm",
+        "O'rta arifmetik, 105 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Daromadlar yig'indisi 1315 ming so'm, o'rta arifmetik 1315 : 7 ≈ 187,9 ming so'm. Lekin yetti ishchidan oltitasining daromadi 115 ming so'mdan oshmaydi, ya'ni bu qiymat hech kimni tavsiflamaydi — uni 700 ming so'mlik chetdagi qiymat ko'targan. Qator tartiblangan, mediana esa 4-o'rindagi 105 ming so'm bo'lib, u odatdagi daromadga yaqin. Javob: mediana, 105 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetdagi-qiymat-tasiri",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#4c5911c9"
+    },
+    {
+      "q": "O'nta har xil sondan iborat qatorda eng katta son yana ham kattalashtirildi. Quyidagi ko'rsatkichlardan qaysi biri o'zgarmay qoladi?",
+      "v": [
+        "O'rta arifmetik",
+        "Mediana",
+        "Sonlar yig'indisi",
+        "Eng katta va eng kichik son ayirmasi"
+      ],
+      "t": 1,
+      "izoh": "O'nta son bo'lgani uchun mediana 5- va 6-o'rindagi sonlar o'rtachasi. Eng katta son yana kattalashsa, u baribir oxirgi o'rinda qoladi va o'rtadagi ikki son o'zgarmaydi, demak mediana ham o'zgarmaydi. Yig'indi ortadi, shu bilan o'rta arifmetik ham ortadi, eng katta va eng kichik son ayirmasi esa kengayadi. Javob: mediana.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetdagi-qiymat-tasiri",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#c35b1e8e"
+    },
+    {
+      "q": "Sakkizta sonning o'rta arifmetigi 20 ga teng. Qatordagi eng katta son 60 dan 100 ga oshirilsa, yangi o'rta arifmetik nechaga teng bo'ladi?",
+      "v": [
+        "40",
+        "20",
+        "60",
+        "25"
+      ],
+      "t": 3,
+      "izoh": "Sakkizta sonning yig'indisi 20 · 8 = 160. Eng katta son 100 − 60 = 40 ga oshgani uchun yangi yig'indi 160 + 40 = 200 bo'ladi. Elementlar soni o'zgarmagan, demak yangi o'rtacha 200 : 8 = 25. 40 — shunchaki sonlar ayirmasi, 60 esa ayirmani eski o'rtachaga qo'shish xatosi. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chetdagi-qiymat-tasiri",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#078c5a94"
+    },
+    {
+      "q": "Beshta sonning o'rta arifmetigi 12 ga teng. Har bir songa 7 qo'shilsa, yangi qatorning o'rta arifmetigi nechaga teng bo'ladi?",
+      "v": [
+        "19",
+        "12",
+        "84",
+        "13,4"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki yig'indi 12 · 5 = 60. Har bir songa 7 qo'shilsa, yig'indi 5 · 7 = 35 ga ortadi va 95 bo'ladi. Yangi o'rtacha 95 : 5 = 19, ya'ni o'rtacha ham aynan 7 ga ortadi. 13,4 — 7 ni faqat bitta songa qo'shish, 84 esa o'rtachani 7 ga ko'paytirish xatosi. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "barcha-elementga-amal-qollash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#47df61d0"
+    },
+    {
+      "q": "Bir qatordagi sonlarning medianasi 24 ga teng. Har bir son 3 ga ko'paytirilsa, yangi qatorning medianasi nechaga teng bo'ladi?",
+      "v": [
+        "27",
+        "72",
+        "24",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Barcha sonlar bir xil musbat songa ko'paytirilganda ularning o'sish tartibi buzilmaydi, ya'ni o'rtadagi element o'z o'rnida qoladi. Shuning uchun yangi mediana eski medianani 3 ga ko'paytirish bilan topiladi: 24 · 3 = 72. 27 — ko'paytirish o'rniga qo'shish, 8 — bo'lish, 24 esa o'zgarmaydi deb o'ylash xatosi. Javob: 72.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "barcha-elementga-amal-qollash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#85336be1"
+    },
+    {
+      "q": "Do'kondagi barcha mahsulotlar narxining o'rtachasi 18 ming so'm edi. Har bir mahsulot narxi 15 foizga oshirilsa, yangi o'rtacha narx qancha bo'ladi?",
+      "v": [
+        "18,15 ming so'm",
+        "33 ming so'm",
+        "20,7 ming so'm",
+        "2,7 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Har bir narx 1,15 koeffitsientga ko'paytirilsa, yig'indi ham 1,15 marta ortadi, mahsulotlar soni esa o'zgarmaydi. Demak yangi o'rtacha 18 · 1,15 = 20,7 ming so'm. 2,7 ming so'm — faqat o'sish miqdori, 33 ming so'm — foizni so'm deb qo'shish, 18,15 ming so'm esa foizni yuzdan bir deb qo'shish xatosi. Javob: 20,7 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "barcha-elementga-amal-qollash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#236cf828"
+    },
+    {
+      "q": "Qatordagi har bir son avval 2 ga ko'paytirildi, so'ng natijadan 5 ayirildi. Dastlabki qatorning o'rta arifmetigi 17 bo'lsa, yangi qatorning o'rta arifmetigi nechaga teng?",
+      "v": [
+        "12",
+        "34",
+        "39",
+        "29"
+      ],
+      "t": 3,
+      "izoh": "Har bir son 2 ga ko'paytirilganda yig'indi ham 2 marta ortadi, demak o'rtacha 17 · 2 = 34 bo'ladi. Keyin har bir sondan 5 ayirilgani uchun o'rtacha yana 5 ga kamayadi: 34 − 5 = 29. 34 — ikkinchi amalni tashlab ketish, 39 — ayirish o'rniga qo'shish, 12 esa ko'paytirishni unutish xatosi. Javob: 29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "barcha-elementga-amal-qollash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#7e7313cb"
+    },
+    {
+      "q": "5, 8, x, 14, 19 sonlari o'sish tartibida yozilgan va ushbu qatorning medianasi 11 ga teng. x ning qiymatini toping.",
+      "v": [
+        "11",
+        "11,4",
+        "12",
+        "9,5"
+      ],
+      "t": 0,
+      "izoh": "Qatorda beshta son bor va ular allaqachon o'sish tartibida yozilgan. Toq sondagi elementlar uchun mediana o'rtadagi, ya'ni uchinchi o'rindagi son bo'ladi — bu esa x. Shartga ko'ra mediana 11, demak x = 11. Qiymat 8 bilan 14 orasida yotgani uchun tartib buzilmaydi. 11,4 — o'rta arifmetik, 12 esa chetki sonlar o'rtachasi. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mediana-orqali-nomalum",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#5df5e2ff"
+    },
+    {
+      "q": "4, 7, y, 15 sonlari o'sish tartibida berilgan va qatorning medianasi 10 ga teng bo'lsa, y ning qiymatini toping.",
+      "v": [
+        "10",
+        "13",
+        "3",
+        "20"
+      ],
+      "t": 1,
+      "izoh": "Qatorda to'rtta son bor, shuning uchun mediana o'rtadagi ikki sonning o'rtachasiga teng: (7 + y) : 2 = 10. Bundan 7 + y = 20 va y = 13. Qiymat 7 bilan 15 orasida yotadi, demak o'sish tartibi saqlanadi. 20 — ikkinchi qadamda 7 ni ayirishni unutish, 3 esa 10 − 7 deb hisoblash xatosi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mediana-orqali-nomalum",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#a53b2b81"
+    },
+    {
+      "q": "Yettita har xil sondan iborat qatorning medianasi 30 ga teng. Qatorga medianadan kichik yana ikkita son qo'shilsa, yangi qatorning medianasi qanday bo'ladi?",
+      "v": [
+        "30 ga teng qoladi",
+        "30 dan katta bo'ladi",
+        "30 dan kichik bo'ladi",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Yettita sonda mediana 4-o'rindagi son, ya'ni 30. Sonlar har xil bo'lgani uchun undan kichik aynan uchta son bor edi; ikkita yangi kichik son qo'shilgach 30 dan kichik qiymatlar soni beshtaga yetadi. Endi qatorda 9 ta son bor va mediana 5-o'rindagi son bo'ladi, u esa aynan o'sha beshta kichik qiymatning eng kattasi. Demak yangi mediana 30 dan kichik. Javob: 30 dan kichik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-orqali-nomalum",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#28497355"
+    },
+    {
+      "q": "O'nta sondan iborat qatorning medianasi 18 ga teng ekanligi ma'lum. Quyidagi mulohazalardan qaysi biri albatta to'g'ri bo'ladi?",
+      "v": [
+        "Qatorda 18 soni albatta uchraydi",
+        "Sonlarning o'rta arifmetigi ham 18 ga teng",
+        "Qatordagi eng katta son 18 dan katta bo'ladi",
+        "Sonlarning kamida yarmi 18 dan katta emas"
+      ],
+      "t": 3,
+      "izoh": "O'nta son uchun mediana 5- va 6-o'rindagi sonlar o'rtachasi bo'lib, u 18 ga teng. Demak 5-o'rindagi son 18 dan katta bo'la olmaydi, shu bilan birga undan oldingi to'rtta son ham 18 dan katta emas — jami kamida beshta son, ya'ni yarmi. Qatorda 18 soni bo'lmasligi mumkin (masalan 17 va 19), barcha sonlar 18 ga teng bo'lsa esa eng kattasi ham 18 bo'ladi. Javob: sonlarning kamida yarmi 18 dan katta emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-orqali-nomalum",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#789f8fca"
+    },
+    {
+      "q": "7, 9, 7, 12, a va 9 sonlaridan iborat qatorning yagona modasi 9 bo'lishi uchun a qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "9",
+        "7",
+        "12",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "a dan tashqari qismda 7 ikki marta, 9 ikki marta, 12 esa bir marta uchraydi. a = 7 bo'lsa moda 7 ga aylanadi, a = 8 yoki a = 12 bo'lsa 7 va 9 chastotasi tenglashib qolib, ikkita moda hosil bo'ladi. Faqat a = 9 bo'lganda 9 uch marta uchrab, yagona moda bo'ladi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "moda-orqali-nomalum",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#5a4d9a25"
+    },
+    {
+      "q": "Qatordagi sonlar: 15, 20, 15, 25, 20, b, 30. Qatorning yagona modasi ham, medianasi ham 20 ga teng bo'lishi uchun b nechaga teng bo'lishi kerak?",
+      "v": [
+        "15",
+        "20",
+        "25",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "b dan tashqari qismda 15 ikki marta, 20 ikki marta, 25 va 30 bir martadan uchraydi. b = 15 bo'lsa moda 15 bo'lib qoladi, b = 25 yoki b = 18 bo'lsa ikkita moda saqlanadi. b = 20 bo'lganda 20 uch marta uchraydi va yagona moda bo'ladi. Tekshiramiz: tartiblangan qator 15, 15, 20, 20, 20, 25, 30 bo'lib, 4-o'rindagi son 20, ya'ni mediana ham 20. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "moda-orqali-nomalum",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#418c7aa6"
+    },
+    {
+      "q": "Beshta butun sonning yagona modasi 6, medianasi 8, o'rta arifmetigi esa 9 ga teng. Ushbu sonlarning eng kattasi ko'pi bilan nechaga teng bo'lishi mumkin?",
+      "v": [
+        "17",
+        "25",
+        "16",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Sonlar yig'indisi 9 · 5 = 45. Mediana 8 bo'lgani uchun tartiblangan qatorda uchinchi son 8 ga teng. Moda 6 va u 8 dan kichik, shuning uchun dastlabki ikkita son 6 ga teng bo'lishi kerak. Qolgan ikki sonning yig'indisi 45 − 6 − 6 − 8 = 25. Ular teng bo'lsa yana bir moda paydo bo'ladi, shuning uchun eng kichigi kamida 9 bo'ladi va eng kattasi 25 − 9 = 16 dan oshmaydi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "moda-orqali-nomalum",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#c03be817"
+    },
+    {
+      "q": "To'rtta sonning yagona modasi 5, o'rta arifmetigi esa 7 ga teng. Sonlardan biri 12 bo'lsa, qolgan noma'lum sonni toping.",
+      "v": [
+        "5",
+        "7",
+        "11",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "To'rtta sonning yig'indisi 7 · 4 = 28. Moda 5 bo'lishi uchun 5 kamida ikki marta uchrashi kerak, ya'ni sonlar 5, 5, 12 va noma'lum sondan iborat. Demak noma'lum son 28 − 5 − 5 − 12 = 6. 11 — faqat bitta 5 ni hisobga olish, 5 va 7 esa modani yoki o'rtachani javob deb olish xatosi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "moda-orqali-nomalum",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#ae36c703"
+    },
+    {
+      "q": "Ikki sotuvchining natijasi solishtirilmoqda: Akmalning kunlik o'rtacha savdosi 640 ming so'm, Bekzod esa besh kunda jami 3350 ming so'mlik savdo qildi. Kim kuniga o'rtacha ko'proq savdo qilgan va necha ming so'mga?",
+      "v": [
+        "Bekzod, 30 ming so'mga",
+        "Akmal, 30 ming so'mga",
+        "Bekzod, 150 ming so'mga",
+        "Akmal, 2710 ming so'mga"
+      ],
+      "t": 0,
+      "izoh": "Bekzodning kunlik o'rtacha savdosi 3350 : 5 = 670 ming so'm. Akmalniki 640 ming so'm, demak Bekzod kuniga 670 − 640 = 30 ming so'mga ko'proq savdo qilgan. 150 ming so'm — farqni yana 5 ga ko'paytirish, 2710 ming so'm esa besh kunlik jamini bir kunlik o'rtacha bilan solishtirish xatosi. Javob: Bekzod, 30 ming so'mga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-boyicha-qaror",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#c3a44071"
+    },
+    {
+      "q": "Ikki guruh test topshirdi. Birinchi guruhning o'rtacha bali 68, medianasi 72; ikkinchi guruhning o'rtacha bali 72, medianasi esa 68. Qaysi guruhda juda past ball olganlarning ta'siri kuchliroq sezilgan?",
+      "v": [
+        "Ikkinchi guruhda",
+        "Birinchi guruhda",
+        "Ikkala guruhda bir xil",
+        "Berilganlar bo'yicha xulosa chiqarib bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "O'rta arifmetik har bir qiymatning kattaligiga sezgir, mediana esa faqat tartibga bog'liq. Bir nechta juda past ball yig'indini kamaytiradi va o'rtachani medianadan pastga tushiradi. Birinchi guruhda aynan shunday: o'rtacha 68, mediana 72, ya'ni o'rtacha medianadan kichik. Ikkinchi guruhda esa aksincha, juda yuqori ballar o'rtachani tepaga tortgan. Javob: birinchi guruhda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-boyicha-qaror",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#e6797a2b"
+    },
+    {
+      "q": "Oila ikkita telefon tarifidan birini tanlamoqchi. A tarifda oxirgi olti oy to'lovi (ming so'mda) 45, 52, 48, 60, 55, 50 bo'lgan, B tarifda esa har oy qat'iy 52 ming so'm to'lanadi. O'rtacha to'lov bo'yicha qaysi tarif arzonroq?",
+      "v": [
+        "B tarif, chunki A ning o'rtacha to'lovi 53 ming so'm",
+        "Ikkala tarifning o'rtacha to'lovi teng",
+        "A tarif, chunki uning o'rtacha to'lovi 51,7 ming so'm",
+        "A tarif, chunki uning o'rtacha to'lovi 51 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "A tarifdagi to'lovlar yig'indisi 45 + 52 + 48 + 60 + 55 + 50 = 310 ming so'm. Oylar soni 6 ta, demak o'rtacha to'lov 310 : 6 ≈ 51,7 ming so'm. Bu qiymat B tarifning 52 ming so'midan kichik, shuning uchun A tarif arzonroq. 51 ming so'm — o'rtacha o'rniga medianani hisoblash xatosi. Javob: A tarif, chunki uning o'rtacha to'lovi 51,7 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-boyicha-qaror",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#d72a6df4"
+    },
+    {
+      "q": "Ikki nomzoddan biri ishga olinadi. Birinchisining sinov ballari 70, 72, 74, 76, 78; ikkinchisiniki 40, 65, 75, 85, 105. O'rtacha ballari teng bo'lsa ham birinchi nomzod tanlandi. Bu qarorning matematik asosi nima?",
+      "v": [
+        "Birinchi nomzodning o'rtacha bali yuqori",
+        "Birinchi nomzodning medianasi yuqori",
+        "Birinchi nomzodda moda mavjud",
+        "Birinchi nomzodning natijalari tarqoqligi kichik, ya'ni u barqarorroq"
+      ],
+      "t": 3,
+      "izoh": "Ikkala qatorning ham yig'indisi 370, demak o'rtacha ball 370 : 5 = 74 va ular teng. Medianalar esa 74 va 75, ya'ni birinchi nomzodniki hatto biroz pastroq. Ikkala qatorda ham takrorlanuvchi qiymat yo'q, shuning uchun moda ham mavjud emas. Farq faqat tarqoqlikda: birinchi nomzodning ballari 70 bilan 78 orasida, ikkinchisiniki 40 bilan 105 orasida joylashgan. Javob: birinchi nomzodning natijalari tarqoqligi kichik, ya'ni u barqarorroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-boyicha-qaror",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#e8509e92"
+    },
+    {
+      "q": "O'nta o'quvchining o'rtacha bali 74 deb hisoblangan edi. Keyinchalik bir o'quvchining bali 58 emas, balki 85 ekanligi aniqlandi. To'g'rilangan o'rtacha ball nechaga teng?",
+      "v": [
+        "76,7",
+        "74",
+        "77",
+        "101"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki ballar yig'indisi 74 · 10 = 740. Xato tuzatilganda yig'indi 85 − 58 = 27 ga ortadi va 767 bo'ladi. O'quvchilar soni o'zgarmagani uchun yangi o'rtacha 767 : 10 = 76,7. 101 — farqni to'g'ridan-to'g'ri o'rtachaga qo'shish, 74 esa o'rtacha o'zgarmaydi deb o'ylash xatosi. Javob: 76,7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xato-qayd-tuzatilgan-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#ae29ad80"
+    },
+    {
+      "q": "Sakkizta o'lchov natijasining o'rtachasi 12,5 kg deb chiqarilgan. Tekshiruvda bitta o'lchov 9,4 kg emas, 5,4 kg ekanligi ma'lum bo'ldi. To'g'rilangan o'rtacha qiymat nechaga teng?",
+      "v": [
+        "12,5 kg",
+        "12 kg",
+        "8,5 kg",
+        "13 kg"
+      ],
+      "t": 1,
+      "izoh": "O'lchovlar yig'indisi 12,5 · 8 = 100 kg edi. Xato qiymat 9,4 − 5,4 = 4 kg ga kamayadi, demak yangi yig'indi 96 kg. O'lchovlar soni o'zgarmagan, shuning uchun yangi o'rtacha 96 : 8 = 12 kg. 8,5 kg — 4 ni to'g'ridan-to'g'ri o'rtachadan ayirish, 13 kg esa ishorani almashtirish xatosi. Javob: 12 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xato-qayd-tuzatilgan-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#6f9dbe26"
+    },
+    {
+      "q": "Ro'yxatdagi 16 nafar o'quvchining o'rtacha bo'yi 164 sm deb e'lon qilingan edi. Keyin bo'yi 176 sm bo'lgan o'quvchi ro'yxatga ikki marta kiritilgani aniqlanib, ortiqcha yozuv o'chirildi. Guruhning to'g'ri o'rtacha bo'yini toping.",
+      "v": [
+        "164 sm",
+        "162,3 sm",
+        "163,2 sm",
+        "163 sm"
+      ],
+      "t": 2,
+      "izoh": "Ro'yxatdagi bo'ylar yig'indisi 164 · 16 = 2624 sm. Ortiqcha yozuv o'chirilganda yig'indidan bitta 176 sm chiqadi: 2624 − 176 = 2448 sm, o'quvchilar soni esa 15 nafar bo'ladi. Yangi o'rtacha 2448 : 15 = 163,2 sm. 162,3 sm — ikkala yozuvni ham o'chirib yuborish xatosi. Javob: 163,2 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xato-qayd-tuzatilgan-ortacha",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#fff16ca9"
+    },
+    {
+      "q": "Yigirma nafar o'quvchining o'rtacha bali 66 ga teng. Ulardan 8 nafarining o'rtacha bali 75 bo'lsa, qolgan 12 nafarining o'rtacha balini toping.",
+      "v": [
+        "57",
+        "90",
+        "70,5",
+        "60"
+      ],
+      "t": 3,
+      "izoh": "Barcha o'quvchilarning umumiy bali 66 · 20 = 1320. Sakkiz nafarning bali 75 · 8 = 600 ga teng, demak qolganlarniki 1320 − 600 = 720. Ular 12 nafar bo'lgani uchun o'rtacha ball 720 : 12 = 60. 90 — qoldiqni 8 ga bo'lish, 70,5 — ikki o'rtachaning oddiy o'rtachasi, 57 esa farqni o'rtachadan ayirish xatosi. Javob: 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qolgan-elementlar-ortachasi",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#8d1d217f"
+    },
+    {
+      "q": "Sinfdagi 25 nafar o'quvchining matematikadan o'rtacha bahosi 3,8 ga teng. Qizlar soni 10 nafar va ularning o'rtacha bahosi 4,4 bo'lsa, o'g'il bolalarning o'rtacha bahosini toping.",
+      "v": [
+        "3,4",
+        "3,2",
+        "4,1",
+        "3,8"
+      ],
+      "t": 0,
+      "izoh": "Sinfdagi baholar yig'indisi 3,8 · 25 = 95. Qizlarning baholari yig'indisi 4,4 · 10 = 44, demak o'g'il bolalarniki 95 − 44 = 51. O'g'il bolalar soni 25 − 10 = 15 nafar, shuning uchun ularning o'rtacha bahosi 51 : 15 = 3,4. 4,1 — ikki o'rtachaning oddiy o'rtachasi, 3,2 esa farqni ayirish xatosi. Javob: 3,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qolgan-elementlar-ortachasi",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#ddb06fff"
+    },
+    {
+      "q": "Sinfda 30 nafar o'quvchi bor. Ularning uchdan bir qismining o'rtacha bo'yi 172 sm, qolganlariniki esa 160 sm bo'lsa, sinfning umumiy o'rtacha bo'yini toping.",
+      "v": [
+        "166 sm",
+        "164 sm",
+        "168 sm",
+        "160 sm"
+      ],
+      "t": 1,
+      "izoh": "Uchdan bir qism 30 : 3 = 10 nafarni, qolgani 20 nafarni tashkil etadi. Bo'ylar yig'indisi 172 · 10 + 160 · 20 = 1720 + 3200 = 4920 sm. Umumiy o'rtacha 4920 : 30 = 164 sm. 166 sm — sonlarni hisobga olmagan oddiy o'rtacha, 168 sm esa guruhlar sonini almashtirib qo'yish natijasi. Javob: 164 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qolgan-elementlar-ortachasi",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#8bec6ad7"
+    },
+    {
+      "q": "Beshta musbat butun sonning o'rta arifmetigi 20 ga teng. Ushbu sonlardan eng kattasi ko'pi bilan nechaga teng bo'lishi mumkin?",
+      "v": [
+        "20",
+        "80",
+        "96",
+        "99"
+      ],
+      "t": 2,
+      "izoh": "Beshta sonning yig'indisi 20 · 5 = 100. Bitta son eng katta bo'lishi uchun qolgan to'rttasi imkon qadar kichik, ya'ni har biri 1 ga teng bo'lishi kerak. U holda eng katta son 100 − 4 · 1 = 96 bo'ladi. 99 — faqat bitta sonni ayirish, 80 esa yig'indidan o'rtachani ayirish xatosi. Javob: 96.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-orqali-chegara-baholash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#b67ddc85"
+    },
+    {
+      "q": "Yettita sonning o'rta arifmetigi 15 ga teng va ularning har biri 9 dan kichik emas. Qatordagi eng katta son ko'pi bilan nechaga teng bo'lishi mumkin?",
+      "v": [
+        "96",
+        "60",
+        "42",
+        "51"
+      ],
+      "t": 3,
+      "izoh": "Yettita sonning yig'indisi 15 · 7 = 105. Bitta son imkon qadar katta bo'lishi uchun qolgan oltitasi eng kichik ruxsat etilgan qiymatni, ya'ni 9 ni olishi kerak: 9 · 6 = 54. Demak eng katta son 105 − 54 = 51 dan oshmaydi. 96 — faqat bitta 9 ni ayirish, 42 esa yettita 9 ni ayirib, izlanayotgan sonni ham hisobga olib yuborish xatosi. Javob: 51.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-orqali-chegara-baholash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#d4ee94f8"
+    },
+    {
+      "q": "Oltita sonning o'rta arifmetigi 25 ga teng. Ulardan beshtasining har biri 28 dan katta emas bo'lsa, oltinchi son eng kamida nechaga teng bo'lishi mumkin?",
+      "v": [
+        "10",
+        "3",
+        "25",
+        "38"
+      ],
+      "t": 0,
+      "izoh": "Oltita sonning yig'indisi 25 · 6 = 150. Oltinchi son eng kichik bo'lishi uchun qolgan beshtasi imkon qadar katta, ya'ni har biri 28 bo'lishi kerak: 28 · 5 = 140. Demak oltinchi son 150 − 140 = 10 dan kichik bo'la olmaydi. 38 — beshta o'rniga to'rtta sonni hisobga olish, 3 esa shunchaki 28 bilan 25 ayirmasi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-orqali-chegara-baholash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#5626c19c"
+    },
+    {
+      "q": "Bir hafta davomida kunlik harorat quyidagicha bo'ldi: 28, 31, 26, 33, 30, 29, 33 daraja. Necha kunda harorat haftalik o'rtachadan yuqori bo'lgan?",
+      "v": [
+        "2 kun",
+        "3 kun",
+        "4 kun",
+        "5 kun"
+      ],
+      "t": 1,
+      "izoh": "Haroratlar yig'indisi 28 + 31 + 26 + 33 + 30 + 29 + 33 = 210 daraja, kunlar soni 7 ta. O'rtacha harorat 210 : 7 = 30 daraja. Endi undan qat'iy katta kunlarni sanaymiz: 31, 33 va 33 — jami 3 kun. 30 darajali kun o'rtachaga teng, shuning uchun u sanalmaydi. Javob: 3 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortachadan-yuqori-elementlar-soni",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#d116a9b5"
+    },
+    {
+      "q": "O'nta xodimning oylik maoshi (ming so'mda): 2800, 3200, 3000, 9000, 2900, 3100, 2700, 3300, 2600, 3400. Necha nafar xodimning maoshi o'rtachadan past?",
+      "v": [
+        "5 nafar",
+        "10 nafar",
+        "9 nafar",
+        "1 nafar"
+      ],
+      "t": 2,
+      "izoh": "Maoshlar yig'indisi 36000 ming so'm, xodimlar soni 10 nafar, demak o'rtacha maosh 36000 : 10 = 3600 ming so'm. Faqat 9000 ming so'm bu qiymatdan katta, qolgan to'qqiztasi esa undan past. 5 nafar — medianadan past bo'lganlar soni, 1 nafar esa o'rtachadan yuqori bo'lganlar soni. Javob: 9 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortachadan-yuqori-elementlar-soni",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#d44be00b"
+    },
+    {
+      "q": "Bir qatorda 9 ta har xil son berilgan va ular o'sish tartibida tartiblangan. Ushbu sonlardan nechtasi medianadan katta bo'ladi?",
+      "v": [
+        "3 ta",
+        "5 ta",
+        "Buni aniqlab bo'lmaydi",
+        "4 ta"
+      ],
+      "t": 3,
+      "izoh": "To'qqizta son uchun mediana tartiblangan qatorning 5-o'rnidagi son bo'ladi. Undan keyin 6-, 7-, 8- va 9-o'rinlar, ya'ni to'rtta son turadi. Sonlar har xil bo'lgani uchun ularning barchasi medianadan qat'iy katta. 5 ta — medianani ham sanab yuborish xatosi. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortachadan-yuqori-elementlar-soni",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#229c7580"
+    },
+    {
+      "q": "Ikki shaharning bir haftalik harorati solishtirilmoqda. Buxoroda 30, 34, 33, 35, 32, 36, 31; Samarqandda esa 28, 30, 29, 32, 31, 27, 33 daraja qayd etildi. O'rtacha haroratlarning ayirmasini toping.",
+      "v": [
+        "3 daraja",
+        "21 daraja",
+        "33 daraja",
+        "30 daraja"
+      ],
+      "t": 0,
+      "izoh": "Buxoro haroratlari yig'indisi 231, o'rtacha 231 : 7 = 33 daraja. Samarqandniki 210, o'rtacha 210 : 7 = 30 daraja. Ayirma 33 − 30 = 3 daraja. 21 daraja — o'rtachalar o'rniga yig'indilarni ayirish, 33 va 30 daraja esa ayirmani hisoblamay bitta shahar o'rtachasini javob deb olish xatosi. Javob: 3 daraja.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-qator-korsatkichlarini-taqqoslash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#ea48b6e9"
+    },
+    {
+      "q": "Ikki do'konning haftalik savdosi (mln so'mda) taqqoslanmoqda: birinchisida 5, 7, 6, 8, 9, 7, 4; ikkinchisida 6, 6, 7, 7, 6, 8, 6. Qaysi do'konning medianasi katta va necha birlikka?",
+      "v": [
+        "Ikkinchisi, 1 birlikka",
+        "Birinchisi, 1 birlikka",
+        "Birinchisi, 2 birlikka",
+        "Medianalari teng"
+      ],
+      "t": 1,
+      "izoh": "Birinchi do'kon qatorini tartiblaymiz: 4, 5, 6, 7, 7, 8, 9 — mediana 4-o'rindagi 7. Ikkinchisiniki: 6, 6, 6, 6, 7, 7, 8 — mediana 6. Demak birinchi do'konning medianasi 7 − 6 = 1 birlikka katta. Qizig'i shundaki, ikkala qatorning yig'indisi ham 46 ga teng, ya'ni o'rta arifmetiklari bir xil. Javob: birinchisi, 1 birlikka.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-qator-korsatkichlarini-taqqoslash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#aa5ea413"
+    },
+    {
+      "q": "Nazorat ishida 9-A sinfdagi 20 nafar o'quvchining o'rtacha bali 72, 9-B sinfdagi 25 nafar o'quvchiniki esa 76 ga teng. Ikkala sinf bo'yicha umumiy o'rtacha balni toping.",
+      "v": [
+        "74",
+        "73,8",
+        "74,2",
+        "75,9"
+      ],
+      "t": 2,
+      "izoh": "Birinchi sinfdagi ballar yig'indisi 72 · 20 = 1440, ikkinchisiniki 76 · 25 = 1900. Umumiy yig'indi 1440 + 1900 = 3340, o'quvchilar soni esa 20 + 25 = 45 nafar. Umumiy o'rtacha 3340 : 45 ≈ 74,2. 74 — o'quvchilar sonini hisobga olmagan oddiy o'rtacha, 73,8 esa sinf sonlarini almashtirib qo'yish natijasi. Javob: 74,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-qator-korsatkichlarini-taqqoslash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#e26edc4d"
+    },
+    {
+      "q": "Ikki qatorning har birida 5 tadan son bor: birinchisining o'rta arifmetigi 14, ikkinchisiniki 20. Qatorlar birlashtirilib, hosil bo'lgan qatordan bitta son olib tashlanganda qolganlarining yig'indisi 148 bo'ldi. Olib tashlangan son nechaga teng?",
+      "v": [
+        "6",
+        "17",
+        "34",
+        "22"
+      ],
+      "t": 3,
+      "izoh": "Birinchi qatordagi sonlar yig'indisi 14 · 5 = 70, ikkinchisiniki 20 · 5 = 100. Birlashtirilgan qatorning yig'indisi 70 + 100 = 170. Bitta son olib tashlangach 148 qolgan, demak olib tashlangan son 170 − 148 = 22. 6 — o'rtachalar ayirmasi, 17 — ularning o'rtachasi, 34 esa o'rtachalar yig'indisi. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-qator-korsatkichlarini-taqqoslash",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#a4241b7e"
+    },
+    {
+      "q": "Poyabzal do'koni keyingi oyda qaysi o'lchamdagi mahsulotdan ko'proq buyurtma berishni rejalashtirmoqda. Sotuvlar ma'lumotining qaysi ko'rsatkichiga tayanish maqsadga muvofiq?",
+      "v": [
+        "Moda",
+        "O'rta arifmetik",
+        "Mediana",
+        "Eng katta va eng kichik o'lcham ayirmasi"
+      ],
+      "t": 0,
+      "izoh": "Do'konga qaysi o'lcham eng ko'p sotilgani kerak, ya'ni eng katta chastotali qiymat izlanmoqda — bu esa modaning ta'rifi. O'rta arifmetik bu yerda umuman mavjud bo'lmagan o'lcham berishi mumkin, masalan 39,4 o'lcham. Mediana o'rtadagi o'lchamni ko'rsatadi, lekin talab eng ko'p bo'lganini emas. Javob: moda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qaysi-korsatkich-kerak",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#8d213b47"
+    },
+    {
+      "q": "Tumandagi oilalar daromadi haqida hisobot tayyorlanmoqda va aholi orasida bir nechta juda yuqori daromadli oila bor. Odatdagi oila daromadini ko'rsatish uchun qaysi ko'rsatkich to'g'ri bo'ladi?",
+      "v": [
+        "O'rta arifmetik",
+        "Mediana",
+        "Moda",
+        "Daromadlar yig'indisi"
+      ],
+      "t": 1,
+      "izoh": "Bir nechta juda yuqori daromad yig'indini keskin oshiradi va o'rta arifmetikni haqiqiy holatdan ancha tepaga tortadi. Mediana esa faqat qiymatlarning tartibiga bog'liq bo'lgani uchun bunday chetdagi qiymatlarga deyarli sezgir emas va aholining o'rtasidagi oilani tavsiflaydi. Javob: mediana.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qaysi-korsatkich-kerak",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#0f0aa32e"
+    },
+    {
+      "q": "Sport maktabida 40 nafar shogirdga bir oyda sarflangan umumiy mablag'ni topish kerak, bir shogirdga sarflangan tipik xarajat esa ma'lum. Buning uchun qaysi ko'rsatkich bevosita kerak bo'ladi?",
+      "v": [
+        "Moda",
+        "Mediana",
+        "O'rta arifmetik",
+        "Eng katta xarajat"
+      ],
+      "t": 2,
+      "izoh": "O'rta arifmetikning ta'rifiga ko'ra yig'indi o'rtacha bilan elementlar sonining ko'paytmasiga teng, ya'ni umumiy mablag' o'rtacha xarajatni 40 ga ko'paytirish bilan topiladi. Moda va mediana bilan bunday hisob-kitob qilib bo'lmaydi, chunki ular yig'indi bilan bevosita bog'lanmagan. Javob: o'rta arifmetik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qaysi-korsatkich-kerak",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#27792ebf"
+    },
+    {
+      "q": "Korxonadagi 50 nafar ishchi maoshi bo'yicha quyidagi ma'lumot berilgan: o'rta arifmetik 6 mln so'm, mediana 4 mln so'm, moda 3,5 mln so'm. Ish qidirayotgan nomzod uchun eng to'g'ri xulosa qaysi?",
+      "v": [
+        "Ishchilarning ko'pchiligi 6 mln so'm atrofida maosh oladi",
+        "Korxonada eng ko'p uchraydigan maosh 6 mln so'm",
+        "Barcha maoshlar 3,5 mln so'm bilan 6 mln so'm orasida yotadi",
+        "Ishchilarning yarmi 4 mln so'mdan ortiq olmaydi, yuqori o'rtachani bir nechta katta maosh hosil qilgan"
+      ],
+      "t": 3,
+      "izoh": "Mediana 4 mln so'm bo'lgani uchun ishchilarning kamida yarmining maoshi 4 mln so'mdan oshmaydi. O'rta arifmetikning 6 mln so'm chiqishi esa yuqori maoshlar yig'indini ko'targanini bildiradi. Eng ko'p uchraydigan maosh moda, ya'ni 3,5 mln so'm, 6 mln so'm emas. Chetdagi katta qiymatlar borligi uchun barcha maoshlar 3,5 va 6 orasida deyish ham noto'g'ri. Javob: ishchilarning yarmi 4 mln so'mdan ortiq olmaydi, yuqori o'rtachani bir nechta katta maosh hosil qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qaysi-korsatkich-kerak",
+      "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana#fcc7ece5"
+    }
+  ]
+}

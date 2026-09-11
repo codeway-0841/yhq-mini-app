@@ -1,0 +1,1609 @@
+{
+  "nom": "Murakkab funksiya",
+  "bolim": "Funksiyalar",
+  "blok": "funk",
+  "rasmiyBolim": 4,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "f(x) = 3x + 5 va g(x) = x² − 2 funksiyalari berilgan. f(g(3)) murakkab funksiyaning qiymatini hisoblang.",
+      "v": [
+        "194",
+        "32",
+        "26",
+        "21"
+      ],
+      "t": 2,
+      "izoh": "Murakkab funksiyada avval ichki funksiya hisoblanadi: g(3) = 3² − 2 = 7. Topilgan 7 soni tashqi funksiyaga qo'yiladi: f(7) = 3·7 + 5 = 26. Javob: 26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "fgx-son-qiymati",
+      "id": "matematika_funk_m13-murakkab-funksiya#01c8b52c"
+    },
+    {
+      "q": "f(x) = x² + 1 va g(x) = 2x − 7 bo'lsa, f(g(5)) ifodaning qiymati nechaga teng?",
+      "v": [
+        "10",
+        "45",
+        "9",
+        "26"
+      ],
+      "t": 0,
+      "izoh": "Ichkaridan boshlaymiz: g(5) = 2·5 − 7 = 3. So'ng bu qiymat tashqi funksiyaga qo'yiladi: f(3) = 3² + 1 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "fgx-son-qiymati",
+      "id": "matematika_funk_m13-murakkab-funksiya#be6a889b"
+    },
+    {
+      "q": "f(x) = √(x + 4) va g(x) = x² + 5 funksiyalar uchun f(g(4)) qiymatini toping.",
+      "v": [
+        "13",
+        "25",
+        "21",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Avval ichki funksiya: g(4) = 4² + 5 = 21. Endi tashqi funksiya: f(21) = √(21 + 4) = √25 = 5. Ildiz chiqarish qadami tashlab ketilmasligi kerak. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "fgx-son-qiymati",
+      "id": "matematika_funk_m13-murakkab-funksiya#d1e02ed4"
+    },
+    {
+      "q": "Bahodir omborda t soatda yig'ilgan qutilar sonini n(t) = 40 + 12t, ularning umumiy og'irligini esa m(n) = 3n + 25 kg formula bilan hisoblaydi. 5 soatdan keyin umumiy og'irlik qancha bo'ladi?",
+      "v": [
+        "100 kg",
+        "325 kg",
+        "40 kg",
+        "300 kg"
+      ],
+      "t": 1,
+      "izoh": "Birinchi qadamda qutilar soni topiladi: n(5) = 40 + 12·5 = 100 ta. Ikkinchi qadamda shu son og'irlik formulasiga qo'yiladi: m(100) = 3·100 + 25 = 325 kg. Javob: 325 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "fgx-son-qiymati",
+      "id": "matematika_funk_m13-murakkab-funksiya#6e20ee1c"
+    },
+    {
+      "q": "f(x) = 2x + 1 va g(x) = x² − 3 funksiyalari berilgan bo'lsa, g(f(4)) qiymatini hisoblang.",
+      "v": [
+        "27",
+        "78",
+        "81",
+        "13"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda ichki funksiya f, tashqi funksiya g. Avval f(4) = 2·4 + 1 = 9. So'ng g(9) = 9² − 3 = 81 − 3 = 78. Javob: 78.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kompozitsiya-tartibi-muhimligi",
+      "id": "matematika_funk_m13-murakkab-funksiya#11f9ea3a"
+    },
+    {
+      "q": "f(x) = 5 − x va g(x) = x³ funksiyalar uchun g(f(2)) va f(g(2)) qiymatlarining ayirmasini toping.",
+      "v": [
+        "24",
+        "−30",
+        "30",
+        "35"
+      ],
+      "t": 2,
+      "izoh": "Birinchi ifoda: f(2) = 5 − 2 = 3, so'ng g(3) = 3³ = 27. Ikkinchi ifoda: g(2) = 2³ = 8, so'ng f(8) = 5 − 8 = −3. Ayirma: 27 − (−3) = 30. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompozitsiya-tartibi-muhimligi",
+      "id": "matematika_funk_m13-murakkab-funksiya#d7f45d7e"
+    },
+    {
+      "q": "Do'konda mahsulotga avval 20% chegirma, so'ng 10 000 so'mlik kupon qo'llanadi. Boshlang'ich narx 150 000 so'm bo'lsa, ikki amalning tartibini almashtirsak, to'lovlar farqi qancha bo'ladi?",
+      "v": [
+        "2 000 so'm",
+        "10 000 so'm",
+        "8 000 so'm",
+        "0 so'm"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tartib: 150 000·0,8 = 120 000, so'ng 120 000 − 10 000 = 110 000 so'm. Ikkinchi tartib: 150 000 − 10 000 = 140 000, so'ng 140 000·0,8 = 112 000 so'm. Farq: 112 000 − 110 000 = 2 000 so'm. Demak kompozitsiyada tartib muhim. Javob: 2 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kompozitsiya-tartibi-muhimligi",
+      "id": "matematika_funk_m13-murakkab-funksiya#53e7fc6e"
+    },
+    {
+      "q": "f(x) = x/2 + 7 va g(x) = 4x − 6 funksiyalari uchun g(f(10)) ni hisoblang.",
+      "v": [
+        "24",
+        "42",
+        "48",
+        "34"
+      ],
+      "t": 1,
+      "izoh": "Ichki funksiya f: f(10) = 10/2 + 7 = 12. Endi tashqi funksiya g: g(12) = 4·12 − 6 = 42. Agar tartib almashtirilsa, f(g(10)) = f(34) = 24 chiqadi, bu esa boshqa son. Javob: 42.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompozitsiya-tartibi-muhimligi",
+      "id": "matematika_funk_m13-murakkab-funksiya#3c717b23"
+    },
+    {
+      "q": "f(x) = 2x + 3 va g(x) = x² − 1 bo'lsa, f(g(x)) murakkab funksiyaning formulasini toping.",
+      "v": [
+        "4x² + 12x + 8",
+        "2x² + 1",
+        "2x² + 5",
+        "2x² − 2"
+      ],
+      "t": 1,
+      "izoh": "f funksiyaning argumenti o'rniga g(x) qo'yiladi: f(g(x)) = 2·(x² − 1) + 3. Qavsni ochamiz: 2x² − 2 + 3 = 2x² + 1. Javob: 2x² + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "fgx-formula-tuzish",
+      "id": "matematika_funk_m13-murakkab-funksiya#21fe4f8b"
+    },
+    {
+      "q": "f(x) = x² + 4x va g(x) = x − 3 funksiyalar berilgan. f(g(x)) ifodani soddalashtirilgan ko'rinishda yozing.",
+      "v": [
+        "x² − 2x − 3",
+        "x² − 2x + 21",
+        "x² + 4x − 3",
+        "x² − 6x + 9"
+      ],
+      "t": 0,
+      "izoh": "f ning har bir x i o'rniga (x − 3) qo'yiladi: (x − 3)² + 4(x − 3). Qavslarni ochamiz: x² − 6x + 9 + 4x − 12. O'xshash hadlarni yig'amiz: x² − 2x − 3. Javob: x² − 2x − 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "fgx-formula-tuzish",
+      "id": "matematika_funk_m13-murakkab-funksiya#d5e6b136"
+    },
+    {
+      "q": "f(x) = 1/(x + 2) va g(x) = 3x − 1 funksiyalar uchun f(g(x)) formulasini toping.",
+      "v": [
+        "3/(x + 2) − 1",
+        "1/(3x − 1)",
+        "1/(3x − 3)",
+        "1/(3x + 1)"
+      ],
+      "t": 3,
+      "izoh": "f ning maxrajidagi x o'rniga g(x) qo'yiladi: f(g(x)) = 1/((3x − 1) + 2). Maxrajni soddalashtiramiz: 3x − 1 + 2 = 3x + 1. Demak natija 1/(3x + 1). Javob: 1/(3x + 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "fgx-formula-tuzish",
+      "id": "matematika_funk_m13-murakkab-funksiya#8270f4e2"
+    },
+    {
+      "q": "Zavodda t soatda ishlab chiqarilgan detallar soni d(t) = 25t + 40, ularni tekshirishga ketadigan vaqt esa v(d) = 2d + 15 daqiqa. Tekshirish vaqtini t orqali ifodalovchi formulani toping.",
+      "v": [
+        "50t + 55",
+        "25t + 55",
+        "50t + 95",
+        "50t + 80"
+      ],
+      "t": 2,
+      "izoh": "v formulasidagi d o'rniga d(t) ifodasi qo'yiladi: v(d(t)) = 2·(25t + 40) + 15. Qavsni ochamiz: 50t + 80 + 15 = 50t + 95. 40 ni ham 2 ga ko'paytirish esdan chiqmasligi kerak. Javob: 50t + 95.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "fgx-formula-tuzish",
+      "id": "matematika_funk_m13-murakkab-funksiya#487e9b11"
+    },
+    {
+      "q": "f(x) = x + 5 va g(x) = x² − 3x funksiyalari uchun g(f(x)) formulasini soddalashtiring.",
+      "v": [
+        "x² + 7x + 10",
+        "x² + 7x + 40",
+        "x² − 3x + 5",
+        "x² + 10x + 25"
+      ],
+      "t": 0,
+      "izoh": "g ning har bir x i o'rniga (x + 5) qo'yiladi: (x + 5)² − 3(x + 5). Yoyamiz: x² + 10x + 25 − 3x − 15. O'xshash hadlar: x² + 7x + 10. Javob: x² + 7x + 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gfx-formula-tuzish",
+      "id": "matematika_funk_m13-murakkab-funksiya#8fc18b96"
+    },
+    {
+      "q": "f(x) = 2x − 1 va g(x) = 3x + 4 chiziqli funksiyalar uchun g(f(x)) ifodani toping.",
+      "v": [
+        "5x + 3",
+        "6x + 7",
+        "6x + 1",
+        "6x² + 5x − 4"
+      ],
+      "t": 2,
+      "izoh": "g dagi x o'rniga f(x) qo'yiladi: g(f(x)) = 3·(2x − 1) + 4 = 6x − 3 + 4 = 6x + 1. Kompozitsiya funksiyalarni qo'shish yoki ko'paytirish emas, birini ikkinchisining argumentiga qo'yishdir. Javob: 6x + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gfx-formula-tuzish",
+      "id": "matematika_funk_m13-murakkab-funksiya#64943187"
+    },
+    {
+      "q": "f(x) = √x va g(x) = x² + 6x funksiyalar berilgan. x ≥ 0 bo'lganda g(f(x)) ifodani soddalashtiring.",
+      "v": [
+        "√(x² + 6x)",
+        "x + 6√x",
+        "7x",
+        "x² + 6√x"
+      ],
+      "t": 1,
+      "izoh": "g dagi x o'rniga √x qo'yiladi: (√x)² + 6·√x. x ≥ 0 bo'lgani uchun (√x)² = x. Demak natija x + 6√x. Javob: x + 6√x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gfx-formula-tuzish",
+      "id": "matematika_funk_m13-murakkab-funksiya#60e429d8"
+    },
+    {
+      "q": "Do'kon x dona mahsulot narxini n(x) = 4500x so'm deb hisoblaydi, so'ng chek summasiga 2% xizmat haqi qo'shiladi: q(n) = 1,02n. Umumiy to'lovni x orqali ifodalovchi formulani ko'rsating.",
+      "v": [
+        "4502x so'm",
+        "4500x + 1,02 so'm",
+        "4410x so'm",
+        "4590x so'm"
+      ],
+      "t": 3,
+      "izoh": "q formulasidagi n o'rniga n(x) qo'yiladi: q(n(x)) = 1,02·4500x. Ko'paytiramiz: 1,02·4500 = 4590. Demak umumiy to'lov 4590x so'm. Foizni qo'shimcha so'm deb olish tipik xato. Javob: 4590x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gfx-formula-tuzish",
+      "id": "matematika_funk_m13-murakkab-funksiya#cae53c57"
+    },
+    {
+      "q": "f(x) = 3x − 4 funksiya uchun f(f(x)) ifodani soddalashtirilgan ko'rinishda yozing.",
+      "v": [
+        "9x − 16",
+        "9x − 8",
+        "6x − 8",
+        "9x − 12"
+      ],
+      "t": 0,
+      "izoh": "f ning argumenti o'rniga f(x) ning o'zi qo'yiladi: f(f(x)) = 3·(3x − 4) − 4. Qavsni ochamiz: 9x − 12 − 4 = 9x − 16. f(f(x)) bu 2f(x) emas. Javob: 9x − 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ffx-formula-tuzish",
+      "id": "matematika_funk_m13-murakkab-funksiya#20268a18"
+    },
+    {
+      "q": "f(x) = x² + 2 funksiya berilgan. f(f(x)) ifodani yoyilgan ko'rinishda yozing.",
+      "v": [
+        "x⁴ + 4x² + 4",
+        "x⁴ + 6",
+        "x⁴ + 4x² + 6",
+        "2x² + 4"
+      ],
+      "t": 2,
+      "izoh": "f(f(x)) = (x² + 2)² + 2. Kvadratni yoyamiz: (x² + 2)² = x⁴ + 4x² + 4. Endi 2 ni qo'shamiz: x⁴ + 4x² + 4 + 2 = x⁴ + 4x² + 6. O'rta hadni tashlab ketmaslik kerak. Javob: x⁴ + 4x² + 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ffx-formula-tuzish",
+      "id": "matematika_funk_m13-murakkab-funksiya#ecda1a41"
+    },
+    {
+      "q": "f(x) = 1/x (x ≠ 0) funksiya uchun f(f(f(x))) ifodani soddalashtiring.",
+      "v": [
+        "x",
+        "1/x³",
+        "3/x",
+        "1/x"
+      ],
+      "t": 3,
+      "izoh": "Avval ikki marta qo'llaymiz: f(f(x)) = 1/(1/x) = x. Endi uchinchi marta qo'llaymiz: f(x) = 1/x. Demak funksiya ikki qadamda o'ziga qaytadi, uchinchi qadam esa yana 1/x beradi. Javob: 1/x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ffx-formula-tuzish",
+      "id": "matematika_funk_m13-murakkab-funksiya#9629be88"
+    },
+    {
+      "q": "Shaharda aholi soni har yili p(n) = 1,05n qoidasi bo'yicha o'sadi. Hozir 40 000 kishi yashasa, p(p(40 000)) qiymati nimani anglatadi va u nechaga teng?",
+      "v": [
+        "44 100 — ikki yildan keyingi aholi",
+        "42 000 — bir yildan keyingi aholi",
+        "44 000 — ikki yildan keyingi aholi",
+        "84 000 — ikki yildan keyingi aholi"
+      ],
+      "t": 0,
+      "izoh": "Funksiyani ikki marta qo'llash ikki yilni bildiradi. Birinchi yil: 1,05·40 000 = 42 000. Ikkinchi yil: 1,05·42 000 = 44 100. Foizlar qo'shilmaydi, ular ketma-ket ko'paytiriladi. Javob: 44 100 kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ffx-formula-tuzish",
+      "id": "matematika_funk_m13-murakkab-funksiya#e0e47925"
+    },
+    {
+      "q": "f(x) = 2x − 3 funksiya berilgan bo'lsa, f(f(f(1))) qiymatini hisoblang.",
+      "v": [
+        "−13",
+        "−5",
+        "−1",
+        "13"
+      ],
+      "t": 0,
+      "izoh": "Funksiyani ketma-ket uch marta qo'llaymiz. Birinchi qadam: f(1) = 2·1 − 3 = −1. Ikkinchi qadam: f(−1) = 2·(−1) − 3 = −5. Uchinchi qadam: f(−5) = 2·(−5) − 3 = −13. Javob: −13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "takroriy-qollash-son",
+      "id": "matematika_funk_m13-murakkab-funksiya#d07141df"
+    },
+    {
+      "q": "f(x) = x + 4 va g(x) = 2x funksiyalari berilgan. h(x) = f(g(f(x))) bo'lsa, h(3) ning qiymatini toping.",
+      "v": [
+        "14",
+        "18",
+        "22",
+        "11"
+      ],
+      "t": 1,
+      "izoh": "Eng ichkaridan boshlaymiz: f(3) = 3 + 4 = 7. Keyingi qatlam: g(7) = 2·7 = 14. Eng tashqi qatlam: f(14) = 14 + 4 = 18. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "takroriy-qollash-son",
+      "id": "matematika_funk_m13-murakkab-funksiya#cd4982d7"
+    },
+    {
+      "q": "Sexda har bir tekshiruvdan keyin brakli detallar soni b(n) = n/2 + 10 qoidasi bo'yicha o'zgaradi. Boshida 60 ta brak bo'lsa, uchinchi tekshiruvdan keyin nechta brak qoladi?",
+      "v": [
+        "40",
+        "30",
+        "20",
+        "25"
+      ],
+      "t": 3,
+      "izoh": "Funksiya uch marta ketma-ket qo'llanadi. Birinchi tekshiruv: 60/2 + 10 = 40. Ikkinchi tekshiruv: 40/2 + 10 = 30. Uchinchi tekshiruv: 30/2 + 10 = 25. Javob: 25 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "takroriy-qollash-son",
+      "id": "matematika_funk_m13-murakkab-funksiya#e688e88c"
+    },
+    {
+      "q": "Sardor jamg'armasini har oy j(m) = 1,2m + 50 000 so'm qoidasi bo'yicha to'ldiradi, bu yerda m — o'tgan oydagi summa. Boshida 200 000 so'm bo'lsa, ikki oydan keyin qancha bo'ladi?",
+      "v": [
+        "398 000 so'm",
+        "290 000 so'm",
+        "338 000 so'm",
+        "388 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Birinchi oy: 1,2·200 000 + 50 000 = 290 000 so'm. Ikkinchi oy uchun shu natija formulaga qayta qo'yiladi: 1,2·290 000 + 50 000 = 348 000 + 50 000 = 398 000 so'm. Javob: 398 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "takroriy-qollash-son",
+      "id": "matematika_funk_m13-murakkab-funksiya#aaf5bc73"
+    },
+    {
+      "q": "y = √(3x + 7) murakkab funksiyani ichki u = g(x) va tashqi y = f(u) funksiyalarga to'g'ri ajratgan javobni tanlang.",
+      "v": [
+        "g(x) = 3x + 7, f(u) = √u",
+        "g(x) = √x, f(u) = 3u + 7",
+        "g(x) = 3x + 7, f(u) = u²",
+        "g(x) = √(3x), f(u) = u + 7"
+      ],
+      "t": 0,
+      "izoh": "Ichki funksiya — ildiz ostidagi ifoda, ya'ni g(x) = 3x + 7. Tashqi funksiya esa shu ifodadan ildiz chiqaradi: f(u) = √u. Tekshiramiz: f(g(x)) = √(3x + 7), shart bajarildi. Javob: birinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-tashqi-ajratish",
+      "id": "matematika_funk_m13-murakkab-funksiya#16d3e64a"
+    },
+    {
+      "q": "y = (2x − 5)⁴ murakkab funksiyada ichki funksiya sifatida qaysi ifoda olinadi?",
+      "v": [
+        "u = x⁴",
+        "u = 2x − 5",
+        "u = 2x",
+        "u = (2x)⁴"
+      ],
+      "t": 1,
+      "izoh": "Amallar tartibiga qaraymiz: avval 2x − 5 hisoblanadi, keyin natija to'rtinchi darajaga ko'tariladi. Birinchi bajariladigan amal ichki funksiya bo'ladi, demak u = 2x − 5. Javob: u = 2x − 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-tashqi-ajratish",
+      "id": "matematika_funk_m13-murakkab-funksiya#8fc7f0ad"
+    },
+    {
+      "q": "y = sin(x² + 1) murakkab funksiyaning tashqi funksiyasini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "f(u) = u² + 1",
+        "f(u) = sin u + 1",
+        "f(u) = sin u",
+        "f(u) = u²"
+      ],
+      "t": 2,
+      "izoh": "Ichki funksiya u = x² + 1, chunki u avval hisoblanadi. Undan keyin natijaning sinusi olinadi, demak tashqi funksiya f(u) = sin u. Tekshiruv: f(u(x)) = sin(x² + 1). Javob: f(u) = sin u.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-tashqi-ajratish",
+      "id": "matematika_funk_m13-murakkab-funksiya#d68734d5"
+    },
+    {
+      "q": "Quyidagi to'rt funksiyadan qaysi biri murakkab funksiya hisoblanmaydi, ya'ni turli tipdagi funksiyalar (ildiz, daraja, logarifm) kompozitsiyasi emas?",
+      "v": [
+        "y = √(x + 1)",
+        "y = 2x + 9",
+        "y = lg(5x)",
+        "y = (x − 3)³"
+      ],
+      "t": 1,
+      "izoh": "Birinchi funksiya — ildiz bilan x + 1 ning, uchinchisi — logarifm bilan 5x ning, to'rtinchisi — kub daraja bilan x − 3 ning kompozitsiyasi. y = 2x + 9 esa oddiy chiziqli funksiya: unda bunday tashqi funksiya umuman yo'q. Javob: y = 2x + 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-tashqi-ajratish",
+      "id": "matematika_funk_m13-murakkab-funksiya#34981d79"
+    },
+    {
+      "q": "f(x) = √x va g(x) = 2x − 10 funksiyalar berilgan. f(g(x)) murakkab funksiyaning aniqlanish sohasini toping.",
+      "v": [
+        "x ≥ 10",
+        "x ≥ 0",
+        "x ≤ 5",
+        "x ≥ 5"
+      ],
+      "t": 3,
+      "izoh": "Ildiz ostidagi ifoda manfiy bo'lmasligi kerak: 2x − 10 ≥ 0. Tengsizlikni yechamiz: 2x ≥ 10, demak x ≥ 5. Ichki funksiyaning o'zi barcha x da aniqlangan, shuning uchun yagona shart shu. Javob: x ≥ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-ildiz",
+      "id": "matematika_funk_m13-murakkab-funksiya#814e794a"
+    },
+    {
+      "q": "f(u) = √u va u = 9 − x² bo'lsa, hosil bo'lgan murakkab funksiyaning aniqlanish sohasini toping.",
+      "v": [
+        "[−3; 3]",
+        "(−∞; 3]",
+        "[3; +∞)",
+        "(−3; 3)"
+      ],
+      "t": 0,
+      "izoh": "Shart: 9 − x² ≥ 0, ya'ni x² ≤ 9. Bundan |x| ≤ 3, demak −3 ≤ x ≤ 3. Chegaralarda ildiz nolga teng bo'lgani uchun ular ham sohaga kiradi. Javob: [−3; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-ildiz",
+      "id": "matematika_funk_m13-murakkab-funksiya#d9d54ea6"
+    },
+    {
+      "q": "Tibbiy asbobning ko'rsatkichi P(t) = √(48 − 3t) formula bilan hisoblanadi, bu yerda t — sinov boshlangandan keyingi soatlar soni. Ko'rsatkich qaysi vaqt oralig'ida aniqlangan?",
+      "v": [
+        "t ≥ 16",
+        "0 ≤ t ≤ 16",
+        "0 ≤ t ≤ 48",
+        "t ≤ 45"
+      ],
+      "t": 1,
+      "izoh": "Ildiz ostidagi ifoda manfiy bo'lmasligi kerak: 48 − 3t ≥ 0, bundan 3t ≤ 48 va t ≤ 16. Vaqt manfiy bo'lmagani uchun t ≥ 0 sharti ham qo'shiladi. Demak 0 ≤ t ≤ 16. Javob: 0 ≤ t ≤ 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-ildiz",
+      "id": "matematika_funk_m13-murakkab-funksiya#3c9dffdc"
+    },
+    {
+      "q": "f(x) = √(x − 2) va g(x) = x² funksiyalar uchun f(g(x)) murakkab funksiya qaysi x larda aniqlangan?",
+      "v": [
+        "x ≥ √2",
+        "−√2 ≤ x ≤ √2",
+        "x ≤ −√2 yoki x ≥ √2",
+        "x ≥ 2"
+      ],
+      "t": 2,
+      "izoh": "Shart: g(x) − 2 ≥ 0, ya'ni x² − 2 ≥ 0. Bundan x² ≥ 2, demak |x| ≥ √2. Modulli tengsizlik ikkita nurga ajraladi: x ≤ −√2 yoki x ≥ √2. Manfiy tarmoqni unutish tipik xato. Javob: x ≤ −√2 yoki x ≥ √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi-ildiz",
+      "id": "matematika_funk_m13-murakkab-funksiya#ade8c5ef"
+    },
+    {
+      "q": "f(x) = 1/x va g(x) = x − 7 funksiyalar berilgan. f(g(x)) murakkab funksiyaning aniqlanish sohasini ko'rsating.",
+      "v": [
+        "x ≠ 7",
+        "x ≠ 0",
+        "x ≠ −7",
+        "x > 7"
+      ],
+      "t": 0,
+      "izoh": "f(g(x)) = 1/(x − 7) ko'rinishga keladi. Kasr maxraji nolga teng bo'lmasligi kerak: x − 7 ≠ 0. Demak x ≠ 7, qolgan barcha haqiqiy sonlar sohaga kiradi. Javob: x ≠ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-kasr",
+      "id": "matematika_funk_m13-murakkab-funksiya#b8a6249f"
+    },
+    {
+      "q": "f(x) = 3/(x + 1) va g(x) = x² − 5 bo'lsa, f(g(x)) funksiya qaysi qiymatlarda aniqlanmaydi?",
+      "v": [
+        "x = −1",
+        "x = 2 va x = −2",
+        "x = 4 va x = −4",
+        "x = √5 va x = −√5"
+      ],
+      "t": 1,
+      "izoh": "Maxrajni yozamiz: g(x) + 1 = x² − 5 + 1 = x² − 4. Funksiya maxraj nolga aylangan nuqtalarda aniqlanmaydi: x² − 4 = 0, ya'ni x² = 4. Bundan x = 2 va x = −2. Kvadratdan ildiz chiqarishda ikkala ishorani ham olish kerak. Javob: x = 2 va x = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-kasr",
+      "id": "matematika_funk_m13-murakkab-funksiya#329638ad"
+    },
+    {
+      "q": "Reysdagi chiptaning o'rtacha narxi n(k) = 900 000/k so'm, bu yerda k — yo'lovchilar soni. Yo'lovchilar soni esa k(t) = 4t − 20 kishi, t — chipta sotuvi boshlangandan keyingi soatlar soni. n(k(t)) kompozitsiyada maxraj qaysi t qiymatida nolga aylanadi?",
+      "v": [
+        "t = 20",
+        "t = 0",
+        "t = 5",
+        "t = −5"
+      ],
+      "t": 2,
+      "izoh": "Kasr maxraji k(t) ga teng, uni nolga tenglaymiz: 4t − 20 = 0. Bundan 4t = 20 va t = 5. Demak t = 5 da yo'lovchilar soni nol bo'lib, o'rtacha narx aniqlanmaydi. Qolgan qiymatlarda maxraj noldan farqli. Javob: t = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-kasr",
+      "id": "matematika_funk_m13-murakkab-funksiya#15f718de"
+    },
+    {
+      "q": "f(x) = (x + 3)/(x − 4) va g(x) = 2x + 1 funksiyalar uchun f(g(x)) ni soddalashtiring va aniqlanmaydigan nuqtani ko'rsating.",
+      "v": [
+        "(2x + 4)/(2x − 3), x = 1,5 da aniqlanmaydi",
+        "(2x + 4)/(2x − 3), x = 3 da aniqlanmaydi",
+        "(2x + 4)/(2x − 3), x = 4 da aniqlanmaydi",
+        "(2x + 1)/(2x − 4), x = 2 da aniqlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "f dagi x o'rniga 2x + 1 qo'yamiz: surat 2x + 1 + 3 = 2x + 4, maxraj 2x + 1 − 4 = 2x − 3. Maxraj nolga aylangan nuqtada funksiya aniqlanmaydi: 2x − 3 = 0, bundan x = 1,5. Ichki funksiyaning o'zi hamma yerda aniqlangan. Javob: (2x + 4)/(2x − 3), x = 1,5 da aniqlanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi-kasr",
+      "id": "matematika_funk_m13-murakkab-funksiya#4c51d0a0"
+    },
+    {
+      "q": "f(x) = lg x va g(x) = 6 − 2x funksiyalar uchun f(g(x)) murakkab funksiyaning aniqlanish sohasini toping.",
+      "v": [
+        "x > 3",
+        "x < 3",
+        "x < 6",
+        "x ≤ 3"
+      ],
+      "t": 1,
+      "izoh": "Logarifm ostidagi ifoda qat'iy musbat bo'lishi shart: 6 − 2x > 0. Tengsizlikni yechamiz: 2x < 6, demak x < 3. Tenglik holati kiritilmaydi, chunki lg 0 aniqlanmagan. Javob: x < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-logarifm",
+      "id": "matematika_funk_m13-murakkab-funksiya#48a5f7c5"
+    },
+    {
+      "q": "y = log₂(x² − 9) murakkab funksiya qaysi x qiymatlarida aniqlangan bo'ladi?",
+      "v": [
+        "x < −3 yoki x > 3",
+        "−3 < x < 3",
+        "x > 3",
+        "x > 9"
+      ],
+      "t": 0,
+      "izoh": "Shart: x² − 9 > 0, ya'ni x² > 9. Bundan |x| > 3, demak x < −3 yoki x > 3. Manfiy tarmoqni tushirib qoldirish keng tarqalgan xato. Javob: x < −3 yoki x > 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-logarifm",
+      "id": "matematika_funk_m13-murakkab-funksiya#4325a68b"
+    },
+    {
+      "q": "Eritmaning pH ko'rsatkichi p(c) = −lg c formula bilan topiladi. Tajribada konsentratsiya c(t) = 0,004 − 0,0005t bo'lsa, formula qaysi t larda ma'noga ega?",
+      "v": [
+        "0 ≤ t < 8",
+        "t > 8",
+        "t < 8",
+        "t ≤ 8"
+      ],
+      "t": 0,
+      "izoh": "Logarifm ostidagi konsentratsiya musbat bo'lishi kerak: 0,004 − 0,0005t > 0. Bundan 0,0005t < 0,004, ya'ni t < 8. Chegara nuqtasi kiritilmaydi, chunki u yerda konsentratsiya nolga teng. Vaqt manfiy bo'lmagani uchun t ≥ 0 sharti ham qo'shiladi. Demak 0 ≤ t < 8. Javob: 0 ≤ t < 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-logarifm",
+      "id": "matematika_funk_m13-murakkab-funksiya#069c46a8"
+    },
+    {
+      "q": "f(x) = ln x va g(x) = x² − 4x + 3 funksiyalar uchun f(g(x)) murakkab funksiyaning aniqlanish sohasini toping.",
+      "v": [
+        "1 < x < 3",
+        "x > 3",
+        "x ≠ 1 va x ≠ 3",
+        "x < 1 yoki x > 3"
+      ],
+      "t": 3,
+      "izoh": "Shart: x² − 4x + 3 > 0. Kvadrat uchhadni ko'paytuvchilarga ajratamiz: (x − 1)(x − 3) > 0. Parabola tarmoqlari yuqoriga qaragani uchun ifoda ildizlardan tashqarida musbat bo'ladi. Demak x < 1 yoki x > 3. Javob: x < 1 yoki x > 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi-logarifm",
+      "id": "matematika_funk_m13-murakkab-funksiya#a3fc2a96"
+    },
+    {
+      "q": "f(x) = 2x + 5 va f(g(x)) = 2x² + 11 bo'lsa, ichki funksiya g(x) ni toping.",
+      "v": [
+        "x² + 3",
+        "x² + 6",
+        "2x² + 6",
+        "x² + 8"
+      ],
+      "t": 0,
+      "izoh": "f ta'rifiga ko'ra f(g(x)) = 2·g(x) + 5. Demak 2g(x) + 5 = 2x² + 11. Har ikki tomondan 5 ni ayiramiz: 2g(x) = 2x² + 6. Ikkiga bo'lamiz: g(x) = x² + 3. Javob: x² + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-funksiyani-topish",
+      "id": "matematika_funk_m13-murakkab-funksiya#18d34cee"
+    },
+    {
+      "q": "f(x) = x² va f(g(x)) = 9x² − 24x + 16 bo'lsa, bosh koeffitsienti musbat bo'lgan chiziqli g(x) funksiyani aniqlang.",
+      "v": [
+        "3x + 4",
+        "3x − 4",
+        "9x − 16",
+        "3x² − 4"
+      ],
+      "t": 1,
+      "izoh": "f(g(x)) = (g(x))² bo'lgani uchun 9x² − 24x + 16 to'la kvadrat bo'lishi kerak: 9x² − 24x + 16 = (3x − 4)². Demak g(x) = 3x − 4, uning bosh koeffitsienti 3 musbat. Tekshiruv: o'rta had 2·3x·(−4) = −24x, mos keladi. Eslatma: g(x) = 4 − 3x ham kvadratga ko'tarilganda ayni ifodani beradi, lekin bosh koeffitsienti manfiy bo'lgani uchun shartga mos kelmaydi. Javob: 3x − 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-funksiyani-topish",
+      "id": "matematika_funk_m13-murakkab-funksiya#46575dac"
+    },
+    {
+      "q": "Do'kondagi umumiy to'lov T(x) = 1,15·q(x) so'm, bu yerda q(x) — chegirmadan keyingi narx. Agar T(x) = 46 000x so'm bo'lsa, q(x) formulasi qanday bo'ladi?",
+      "v": [
+        "41 400x so'm",
+        "52 900x so'm",
+        "40 000x so'm",
+        "46 000x − 1,15 so'm"
+      ],
+      "t": 2,
+      "izoh": "Shartga ko'ra 1,15·q(x) = 46 000x. Har ikki tomonni 1,15 ga bo'lamiz: q(x) = 46 000x : 1,15 = 40 000x. Tekshiruv: 1,15·40 000 = 46 000, mos keladi. Javob: 40 000x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-funksiyani-topish",
+      "id": "matematika_funk_m13-murakkab-funksiya#0d2d334e"
+    },
+    {
+      "q": "f(x) = √x va f(g(x)) = √(5x + 20) bo'lsa, ichki funksiyaning g(4) qiymati nechaga teng?",
+      "v": [
+        "√40",
+        "20",
+        "24",
+        "40"
+      ],
+      "t": 3,
+      "izoh": "f(g(x)) = √(g(x)) bo'lgani uchun g(x) = 5x + 20. Endi x = 4 ni qo'yamiz: g(4) = 5·4 + 20 = 40. Ildizni yana bir marta qo'llash kerak emas, chunki g ning o'zi so'ralgan. Javob: 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-funksiyani-topish",
+      "id": "matematika_funk_m13-murakkab-funksiya#8599cdd1"
+    },
+    {
+      "q": "g(x) = x − 2 va f(g(x)) = x² − 4x + 9 bo'lsa, tashqi funksiya f(x) ni toping.",
+      "v": [
+        "x² + 5",
+        "x² − 4x + 9",
+        "x² + 4x + 5",
+        "x² − 5"
+      ],
+      "t": 0,
+      "izoh": "u = x − 2 belgilash kiritamiz, bundan x = u + 2. Shu ifodani qo'yamiz: (u + 2)² − 4(u + 2) + 9 = u² + 4u + 4 − 4u − 8 + 9 = u² + 5. Demak f(x) = x² + 5. Javob: x² + 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tashqi-funksiyani-topish",
+      "id": "matematika_funk_m13-murakkab-funksiya#3b5b737b"
+    },
+    {
+      "q": "g(x) = 3x va f(g(x)) = 9x² + 6x bo'lsa, tashqi funksiya f(x) ning formulasi qanday?",
+      "v": [
+        "f(x) = 9x² + 6x",
+        "f(x) = x² + 2x",
+        "f(x) = 3x² + 2x",
+        "f(x) = x² + 6x"
+      ],
+      "t": 1,
+      "izoh": "u = 3x deb olamiz, bundan x = u/3. O'rniga qo'yamiz: 9·(u/3)² + 6·(u/3) = 9·u²/9 + 2u = u² + 2u. Demak f(x) = x² + 2x. Tekshiruv: f(3x) = 9x² + 6x. Javob: x² + 2x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tashqi-funksiyani-topish",
+      "id": "matematika_funk_m13-murakkab-funksiya#bfaa0d1f"
+    },
+    {
+      "q": "Zavodda t soatlik ish uchun xarajat X(t) = 1 200 000 + 90 000t so'm, ishlab chiqarilgan mahsulot soni esa m(t) = 30t dona. Xarajatni mahsulot soni orqali ifodalovchi formulani toping.",
+      "v": [
+        "1 200 000 + 90 000m",
+        "1 200 000 + 2 700 000m",
+        "1 200 000 + 3 000m",
+        "40 000 + 3 000m"
+      ],
+      "t": 2,
+      "izoh": "m = 30t bo'lgani uchun t = m/30. Bu ifodani xarajat formulasiga qo'yamiz: 1 200 000 + 90 000·(m/30). Ko'paytuvchini soddalashtiramiz: 90 000 : 30 = 3 000. Demak X(m) = 1 200 000 + 3 000m. Javob: 1 200 000 + 3 000m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-funksiyani-topish",
+      "id": "matematika_funk_m13-murakkab-funksiya#4dcb3a8a"
+    },
+    {
+      "q": "g(x) = x + 1 va f(g(x)) = 2x + 9 bo'lsa, tashqi funksiya f(x) ni toping.",
+      "v": [
+        "2x + 9",
+        "2x + 11",
+        "2x + 8",
+        "2x + 7"
+      ],
+      "t": 3,
+      "izoh": "u = x + 1 belgilaymiz, bundan x = u − 1. O'rniga qo'yamiz: 2(u − 1) + 9 = 2u − 2 + 9 = 2u + 7. Demak f(x) = 2x + 7. Tekshiruv: f(x + 1) = 2x + 2 + 7 = 2x + 9. Javob: 2x + 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-funksiyani-topish",
+      "id": "matematika_funk_m13-murakkab-funksiya#3c5ac984"
+    },
+    {
+      "q": "f(x) = x + 6 va g(x) = 2x − 1 bo'lsa, f(g(x)) = 15 tenglamaning ildizini toping.",
+      "v": [
+        "2",
+        "10",
+        "5",
+        "4,5"
+      ],
+      "t": 2,
+      "izoh": "Avval kompozitsiyani tuzamiz: f(g(x)) = (2x − 1) + 6 = 2x + 5. Tenglama: 2x + 5 = 15. Bundan 2x = 10 va x = 5. Javob: x = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kompozitsiya-tenglamasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#11445562"
+    },
+    {
+      "q": "f(x) = x² va g(x) = x − 3 bo'lsa, f(g(x)) = 49 tenglamaning ildizlari yig'indisini toping.",
+      "v": [
+        "10",
+        "14",
+        "6",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "Kompozitsiya: (x − 3)² = 49. Ildiz chiqaramiz: x − 3 = 7 yoki x − 3 = −7. Bundan x = 10 va x = −4. Yig'indi: 10 + (−4) = 6. Ikkinchi ildizni unutmaslik kerak. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompozitsiya-tenglamasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#1c910981"
+    },
+    {
+      "q": "Suv isitgichda t daqiqadan keyingi harorat H(t) = 3t + 18 daraja, sarflangan energiya esa E(H) = 2H − 6 birlik. Energiya sarfi 84 birlikka yetganda necha daqiqa o'tgan bo'ladi?",
+      "v": [
+        "14",
+        "22",
+        "7",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "Kompozitsiyani tuzamiz: E(H(t)) = 2(3t + 18) − 6 = 6t + 36 − 6 = 6t + 30. Tenglama: 6t + 30 = 84. Bundan 6t = 54 va t = 9. Javob: 9 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompozitsiya-tenglamasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#13a87a49"
+    },
+    {
+      "q": "f(x) = √(x + 5) va g(x) = x² − 1 bo'lsa, f(g(x)) = 3 tenglamani yeching.",
+      "v": [
+        "x = ±√5",
+        "x = ±2",
+        "x = ±√10",
+        "x = ±3"
+      ],
+      "t": 0,
+      "izoh": "Kompozitsiya: √(x² − 1 + 5) = √(x² + 4). Tenglama: √(x² + 4) = 3. Ikkala tomonni kvadratga ko'taramiz: x² + 4 = 9, bundan x² = 5. Demak x = √5 yoki x = −√5. Javob: x = ±√5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kompozitsiya-tenglamasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#7cbf9f5f"
+    },
+    {
+      "q": "f(x) = 3x − 6 va g(x) = (x + 6)/3 funksiyalar berilgan. f(g(x)) ifoda nimaga teng bo'ladi?",
+      "v": [
+        "x",
+        "x + 12",
+        "x − 12",
+        "3x"
+      ],
+      "t": 0,
+      "izoh": "f dagi x o'rniga g(x) qo'yamiz: 3·((x + 6)/3) − 6. Uchlar qisqaradi: x + 6 − 6 = x. Demak bu funksiyalar bir-biriga teskari. Javob: x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-funksiya-kompozitsiyasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#ceda76e0"
+    },
+    {
+      "q": "Quyidagi funksiya juftliklaridan qaysi biri uchun f(g(x)) = x ayniyati barcha aniqlanish sohasida bajariladi?",
+      "v": [
+        "f(x) = 2x + 1, g(x) = (x − 1)/2",
+        "f(x) = x + 4, g(x) = x − 5",
+        "f(x) = x², g(x) = √(x + 1)",
+        "f(x) = 5x, g(x) = x/5 + 1"
+      ],
+      "t": 0,
+      "izoh": "Birinchi juftlikni tekshiramiz: 2·((x − 1)/2) + 1 = x − 1 + 1 = x, ayniyat bajarildi. Ikkinchisi x − 1 beradi, uchinchisi x + 1 beradi, to'rtinchisi x + 5 beradi. Javob: birinchi juftlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-funksiya-kompozitsiyasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#10b8d0fd"
+    },
+    {
+      "q": "Haroratni o'tkazishda C(F) = 5(F − 32)/9 va F(C) = 9C/5 + 32 formulalar ishlatiladi. C(F(20)) qiymati nechaga teng bo'ladi?",
+      "v": [
+        "68",
+        "20",
+        "36",
+        "−6,7"
+      ],
+      "t": 1,
+      "izoh": "Avval ichki funksiya: F(20) = 9·20/5 + 32 = 36 + 32 = 68. Endi tashqi funksiya: C(68) = 5·(68 − 32)/9 = 5·36/9 = 20. Bu funksiyalar teskari bo'lgani uchun natija boshlang'ich songa qaytdi. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-funksiya-kompozitsiyasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#443a7222"
+    },
+    {
+      "q": "f(x) = x³ + 1 va g(x) = ∛(x − 1) funksiyalar berilgan bo'lsa, g(f(2)) qiymatini hisoblang.",
+      "v": [
+        "9",
+        "8",
+        "−2",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Ichki funksiya: f(2) = 2³ + 1 = 9. Tashqi funksiya: g(9) = ∛(9 − 1) = ∛8 = 2. Natija boshlang'ich songa teng chiqdi, chunki g funksiya f ga teskari. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-funksiya-kompozitsiyasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#174a2e7b"
+    },
+    {
+      "q": "Kitob narxi 85 000 so'm. Do'kon avval 20% chegirma beradi, so'ng qolgan summaga 10% xizmat haqi qo'shadi. Xaridor yakunda qancha to'laydi?",
+      "v": [
+        "74 800 so'm",
+        "76 500 so'm",
+        "68 000 so'm",
+        "93 500 so'm"
+      ],
+      "t": 0,
+      "izoh": "Chegirmadan keyingi narx: 85 000·0,8 = 68 000 so'm. Xizmat haqi shu yangi summadan olinadi: 68 000·1,1 = 74 800 so'm. Foizlar bir-biridan ayirilmaydi, ular ketma-ket qo'llanadi. Javob: 74 800 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-chegirma-soliq",
+      "id": "matematika_funk_m13-murakkab-funksiya#9e4997ee"
+    },
+    {
+      "q": "Dilnoza 240 000 so'mlik mahsulotga avval 15% soliq qo'shdi, keyin ustiga 15% chegirma oldi. U dastlabki narxga nisbatan qancha kam yoki ko'p to'laydi?",
+      "v": [
+        "0 so'm, narx o'zgarmaydi",
+        "5 400 so'm kam",
+        "5 400 so'm ko'p",
+        "36 000 so'm kam"
+      ],
+      "t": 1,
+      "izoh": "Soliqdan keyin: 240 000·1,15 = 276 000 so'm. Chegirmadan keyin: 276 000·0,85 = 234 600 so'm. Farq: 240 000 − 234 600 = 5 400 so'm kam. Sabab: 1,15·0,85 = 0,9775, ya'ni birdan kichik. Javob: 5 400 so'm kam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-chegirma-soliq",
+      "id": "matematika_funk_m13-murakkab-funksiya#73f3c00a"
+    },
+    {
+      "q": "Elektr to'lovi ikki bosqichda hisoblanadi: avval iste'mol qiymati k(x) = 450x so'm topiladi, so'ng 12% qo'shimcha yig'im qo'shiladi. Otabek 160 kVt·soat ishlatgan bo'lsa, qancha to'laydi?",
+      "v": [
+        "72 000 so'm",
+        "8 640 so'm",
+        "63 360 so'm",
+        "80 640 so'm"
+      ],
+      "t": 3,
+      "izoh": "Iste'mol qiymati: 450·160 = 72 000 so'm. Yig'im bilan birga to'lov: 72 000·1,12 = 80 640 so'm. Faqat yig'imning o'zi 8 640 so'm bo'ladi, lekin savolda umumiy to'lov so'ralgan. Javob: 80 640 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-chegirma-soliq",
+      "id": "matematika_funk_m13-murakkab-funksiya#6829dbb9"
+    },
+    {
+      "q": "Mahsulot narxi ketma-ket ikki marta 25% ga tushirildi. Boshlang'ich narxga nisbatan umumiy chegirma necha foizni tashkil qiladi?",
+      "v": [
+        "50%",
+        "56,25%",
+        "43,75%",
+        "25%"
+      ],
+      "t": 2,
+      "izoh": "Har bir tushirishdan keyin narxning 0,75 qismi qoladi. Ikki marta qo'llasak: 0,75·0,75 = 0,5625, ya'ni narxning 56,25% i qoladi. Demak chegirma 100% − 56,25% = 43,75%. Foizlar oddiy qo'shilmaydi. Javob: 43,75%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-chegirma-soliq",
+      "id": "matematika_funk_m13-murakkab-funksiya#392a74e1"
+    },
+    {
+      "q": "Bank dollarni so'mga o'tkazishda k(d) = 12 600d formulasidan foydalanadi, so'ng olingan summadan 1% komissiya ushlab qoladi. Mijoz 250 dollar almashtirsa, qo'liga qancha tegadi?",
+      "v": [
+        "3 150 000 so'm",
+        "31 500 so'm",
+        "3 181 500 so'm",
+        "3 118 500 so'm"
+      ],
+      "t": 3,
+      "izoh": "Avval so'mdagi summa topiladi: 250·12 600 = 3 150 000 so'm. Komissiyadan keyin summaning 99% i qoladi: 3 150 000·0,99 = 3 118 500 so'm. Komissiya qo'shilmaydi, balki ayiriladi. Javob: 3 118 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-valyuta-komissiya",
+      "id": "matematika_funk_m13-murakkab-funksiya#d1143841"
+    },
+    {
+      "q": "Zilola so'mni avval yevroga, keyin yevroni funtga almashtirdi. Kurslar: 1 yevro = 13 500 so'm, 1 funt = 1,2 yevro. 810 000 so'm necha funt bo'ladi?",
+      "v": [
+        "60 funt",
+        "72 funt",
+        "50 funt",
+        "48 funt"
+      ],
+      "t": 2,
+      "izoh": "Birinchi almashtirish: 810 000 : 13 500 = 60 yevro. Ikkinchi almashtirish: 60 : 1,2 = 50 funt. Funt yevrodan qimmat bo'lgani uchun natija kamayadi, ko'paymaydi. Javob: 50 funt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-valyuta-komissiya",
+      "id": "matematika_funk_m13-murakkab-funksiya#24f126aa"
+    },
+    {
+      "q": "Onlayn do'kon xorijiy narxni s(p) = 12 600p so'mga aylantiradi, so'ng 50 400 so'm yetkazib berish qo'shadi. Umumiy to'lov 504 000 so'm bo'lsa, mahsulot necha dollar turgan?",
+      "v": [
+        "40 dollar",
+        "44 dollar",
+        "36 dollar",
+        "4 dollar"
+      ],
+      "t": 2,
+      "izoh": "Umumiy to'lov formulasi: 12 600p + 50 400 = 504 000. Yetkazib berish narxini ayiramiz: 12 600p = 453 600. Bo'lamiz: p = 453 600 : 12 600 = 36 dollar. Yetkazib berishni ayirmaslik tipik xato (u holda 40 chiqadi). Javob: 36 dollar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-valyuta-komissiya",
+      "id": "matematika_funk_m13-murakkab-funksiya#479d2c13"
+    },
+    {
+      "q": "Pul o'tkazmasida avval 2% komissiya ushlanadi, so'ng qolgan summadan 5 000 so'mlik sobit yig'im olinadi. Jasur 350 000 so'm yuborsa, qabul qiluvchiga qancha yetib boradi?",
+      "v": [
+        "343 000 so'm",
+        "345 000 so'm",
+        "338 100 so'm",
+        "338 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Komissiyadan keyin: 350 000·0,98 = 343 000 so'm. Sobit yig'imdan keyin: 343 000 − 5 000 = 338 000 so'm. Agar tartib almashtirilsa, natija 338 100 so'm bo'lardi, ya'ni tartib muhim. Javob: 338 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-valyuta-komissiya",
+      "id": "matematika_funk_m13-murakkab-funksiya#1577fe23"
+    },
+    {
+      "q": "Sexda s ta smenada ishlab chiqarilgan buyumlar soni b(s) = 18s dona, olingan foyda esa f(b) = 7 500b − 90 000 so'm. To'rt smenada qancha foyda olinadi?",
+      "v": [
+        "540 000 so'm",
+        "−60 000 so'm",
+        "450 000 so'm",
+        "360 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Buyumlar soni: b(4) = 18·4 = 72 dona. Foyda: f(72) = 7 500·72 − 90 000 = 540 000 − 90 000 = 450 000 so'm. Smenalar sonini to'g'ridan-to'g'ri foyda formulasiga qo'yish xato. Javob: 450 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ishlab-chiqarish-xarajat",
+      "id": "matematika_funk_m13-murakkab-funksiya#6a87b476"
+    },
+    {
+      "q": "Zavod n dona mahsulot uchun m(n) = 3n + 25 kg xomashyo sarflaydi, xomashyoning narxi esa x(m) = 18 000m so'm. 45 dona mahsulot uchun xomashyoga qancha pul ketadi?",
+      "v": [
+        "2 430 000 so'm",
+        "2 880 000 so'm",
+        "810 000 so'm",
+        "450 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Xomashyo miqdori: m(45) = 3·45 + 25 = 160 kg. Narxi: 18 000·160 = 2 880 000 so'm. Doimiy 25 kg ni tushirib qoldirsak, natija 2 430 000 chiqadi, bu esa noto'g'ri. Javob: 2 880 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ishlab-chiqarish-xarajat",
+      "id": "matematika_funk_m13-murakkab-funksiya#780060dd"
+    },
+    {
+      "q": "Fermer xo'jaligida g gektar yerdan h(g) = 4,5g tonna hosil olinadi, hosilni sotishdan tushadigan daromad esa d(h) = 3 200 000h so'm. 12 gektardan qancha daromad olinadi?",
+      "v": [
+        "38 400 000 so'm",
+        "144 000 000 so'm",
+        "54 tonna",
+        "172 800 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Hosil miqdori: h(12) = 4,5·12 = 54 tonna. Daromad: 3 200 000·54 = 172 800 000 so'm. Gektar sonini to'g'ridan-to'g'ri daromad formulasiga qo'yish tipik xato. Javob: 172 800 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ishlab-chiqarish-xarajat",
+      "id": "matematika_funk_m13-murakkab-funksiya#87c21733"
+    },
+    {
+      "q": "Kompaniyaning xarajati X(q) = 200 000q + 3 000 000 so'm, t soatda ishlab chiqarilgan hajm esa q(t) = 5t + 15 dona. Xarajat 14 000 000 so'mga yetganda necha soat ishlangan bo'ladi?",
+      "v": [
+        "11 soat",
+        "55 soat",
+        "8 soat",
+        "14 soat"
+      ],
+      "t": 2,
+      "izoh": "Kompozitsiyani tuzamiz: X(q(t)) = 200 000(5t + 15) + 3 000 000 = 1 000 000t + 3 000 000 + 3 000 000. Demak X(t) = 1 000 000t + 6 000 000. Tenglama: 1 000 000t + 6 000 000 = 14 000 000, bundan t = 8. Javob: 8 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-ishlab-chiqarish-xarajat",
+      "id": "matematika_funk_m13-murakkab-funksiya#c2d56b37"
+    },
+    {
+      "q": "Masofa metrda m(k) = 1000k formula bilan, qadamlar soni esa q(m) = m/0,75 formula bilan hisoblanadi. Sardor 6 km yursa, necha qadam tashlaydi?",
+      "v": [
+        "4 500 qadam",
+        "8 000 qadam",
+        "6 000 qadam",
+        "80 000 qadam"
+      ],
+      "t": 1,
+      "izoh": "Avval kilometrni metrga aylantiramiz: m(6) = 1000·6 = 6 000 metr. Endi qadam soni: 6 000 : 0,75 = 8 000 qadam. Bir qadam bir metrdan kalta bo'lgani uchun qadamlar soni metrdan ko'p chiqadi. Javob: 8 000 qadam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-birlik-almashtirish",
+      "id": "matematika_funk_m13-murakkab-funksiya#9a63b5f2"
+    },
+    {
+      "q": "Sut hajmi litrda h(s) = 0,25s formula bilan topiladi, uning og'irligi esa m(h) = 1,03h kg. 48 stakan sutning og'irligini hisoblang.",
+      "v": [
+        "12 kg",
+        "49,44 kg",
+        "11,64 kg",
+        "12,36 kg"
+      ],
+      "t": 3,
+      "izoh": "Hajm: h(48) = 0,25·48 = 12 litr. Og'irlik: m(12) = 1,03·12 = 12,36 kg. Stakanlar sonini to'g'ridan-to'g'ri og'irlik formulasiga qo'yish 49,44 kg beradi, bu esa xato. Javob: 12,36 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-birlik-almashtirish",
+      "id": "matematika_funk_m13-murakkab-funksiya#5f423eaa"
+    },
+    {
+      "q": "Havo bosimi nisbiy birlikda a(h) = 1 − h/8000, paskalda esa p(a) = 100 000a formula bilan hisoblanadi. 2 400 metr balandlikda bosim necha paskal bo'ladi?",
+      "v": [
+        "30 000 Pa",
+        "70 000 Pa",
+        "130 000 Pa",
+        "100 000 Pa"
+      ],
+      "t": 1,
+      "izoh": "Nisbiy bosim: a = 1 − 2 400/8 000 = 1 − 0,3 = 0,7. Paskaldagi qiymat: 100 000·0,7 = 70 000 Pa. Balandlik ortganda bosim kamayadi, shuning uchun natija 100 000 dan kichik bo'lishi kerak. Javob: 70 000 Pa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-birlik-almashtirish",
+      "id": "matematika_funk_m13-murakkab-funksiya#6f9aacbf"
+    },
+    {
+      "q": "Kub shaklidagi metall bo'lakning hajmi V(a) = a³ sm³, massasi esa m(V) = 2,7V/1000 kg formula bilan topiladi. Qirrasi 10 sm bo'lgan kubning massasini toping.",
+      "v": [
+        "27 kg",
+        "2 700 kg",
+        "2,7 kg",
+        "0,27 kg"
+      ],
+      "t": 2,
+      "izoh": "Hajm: V(10) = 10³ = 1 000 sm³. Massa: m(1 000) = 2,7·1 000/1000 = 2,7 kg. Bo'luvchi 1000 ni tushirib qoldirsak, 2 700 kg kabi haqiqatga zid natija chiqadi. Javob: 2,7 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-birlik-almashtirish",
+      "id": "matematika_funk_m13-murakkab-funksiya#50ba821c"
+    },
+    {
+      "q": "Silindr shaklidagi idishga suv quyilmoqda: t daqiqada V(t) = 15t litr. Suv sathining balandligi h(V) = V/6 sm. 24 daqiqadan keyin sath balandligi qancha bo'ladi?",
+      "v": [
+        "360 sm",
+        "4 sm",
+        "2 160 sm",
+        "60 sm"
+      ],
+      "t": 3,
+      "izoh": "Quyilgan suv hajmi: V(24) = 15·24 = 360 litr. Sath balandligi: h(360) = 360 : 6 = 60 sm. Vaqtni to'g'ridan-to'g'ri balandlik formulasiga qo'yish 4 sm beradi, bu xato. Javob: 60 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-suv-hajm-sath",
+      "id": "matematika_funk_m13-murakkab-funksiya#62ea749b"
+    },
+    {
+      "q": "Hovuzga nasos t soatda V(t) = 45t m³ suv quyadi. Hovuzning to'lish darajasi f(V) = 100V/900 foiz bilan o'lchanadi. Nasos 12 soat ishlaganda hovuz necha foizga to'ladi?",
+      "v": [
+        "540%",
+        "1,3%",
+        "60%",
+        "167%"
+      ],
+      "t": 2,
+      "izoh": "Quyilgan hajm: V(12) = 45·12 = 540 m³. To'lish darajasi: 100·540/900 = 60%. Hajm qiymatini foiz deb olish yoki nisbatni teskari olish tipik xatolar. Javob: 60%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-suv-hajm-sath",
+      "id": "matematika_funk_m13-murakkab-funksiya#8fb5ae4f"
+    },
+    {
+      "q": "Suv omborida sath h(t) = 24 − 0,6t metr qonuniyat bilan pasayadi, suv hajmi esa V(h) = 5 000 000h m³. 15 kundan keyin ombordagi suv hajmini toping.",
+      "v": [
+        "120 000 000 m³",
+        "45 000 000 m³",
+        "75 000 000 m³",
+        "7 500 000 m³"
+      ],
+      "t": 2,
+      "izoh": "Sath: h(15) = 24 − 0,6·15 = 24 − 9 = 15 metr. Hajm: 5 000 000·15 = 75 000 000 m³. Boshlang'ich sathni ishlatsak 120 000 000 chiqadi, pasayish miqdorini ishlatsak 45 000 000 chiqadi. Javob: 75 000 000 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-suv-hajm-sath",
+      "id": "matematika_funk_m13-murakkab-funksiya#ed36b201"
+    },
+    {
+      "q": "Ochiq idishdagi suv har soatda 20% ga bug'lanadi, ya'ni q(v) = 0,8v. Boshida 500 litr suv bo'lsa, uch soatdan keyin necha litr qoladi?",
+      "v": [
+        "320 l",
+        "200 l",
+        "400 l",
+        "256 l"
+      ],
+      "t": 3,
+      "izoh": "Funksiya uch marta ketma-ket qo'llanadi. Birinchi soat: 500·0,8 = 400 litr. Ikkinchi soat: 400·0,8 = 320 litr. Uchinchi soat: 320·0,8 = 256 litr. Foizlar qo'shilmaydi, koeffitsientlar ko'paytiriladi. Javob: 256 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-suv-hajm-sath",
+      "id": "matematika_funk_m13-murakkab-funksiya#6c5a2d3c"
+    },
+    {
+      "q": "Jadvalda qiymatlar berilgan: f(1) = 4, f(2) = 1, f(3) = 5, f(4) = 2 va g(1) = 3, g(2) = 4, g(3) = 1, g(4) = 2. Shu jadval bo'yicha f(g(2)) ni toping.",
+      "v": [
+        "2",
+        "4",
+        "1",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Avval ichki funksiya qiymatini jadvaldan o'qiymiz: g(2) = 4. Endi shu son bilan tashqi funksiyaga kiramiz: f(4) = 2. Demak f(g(2)) = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-orqali-kompozitsiya",
+      "id": "matematika_funk_m13-murakkab-funksiya#e098a076"
+    },
+    {
+      "q": "Jadvalga ko'ra f(1) = 5, f(2) = 3, f(3) = 6, f(4) = 1 va g(1) = 4, g(2) = 2, g(3) = 3, g(4) = 5. g(f(4)) qiymatini aniqlang.",
+      "v": [
+        "1",
+        "4",
+        "5",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda ichki funksiya f: jadvaldan f(4) = 1 ni o'qiymiz. Endi tashqi funksiya g ga kiramiz: g(1) = 4. Demak g(f(4)) = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-orqali-kompozitsiya",
+      "id": "matematika_funk_m13-murakkab-funksiya#e2b2d754"
+    },
+    {
+      "q": "Anvarning haftalik transport xarajati: birinchi haftada 40 000, ikkinchi haftada 65 000, uchinchi haftada 52 000, to'rtinchi haftada 78 000 so'm. x(n) — n-haftadagi xarajat, h(k) = 2k bo'lsa, x(h(2)) qancha?",
+      "v": [
+        "40 000 so'm",
+        "65 000 so'm",
+        "52 000 so'm",
+        "78 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Avval hafta raqamini topamiz: h(2) = 2·2 = 4. Endi jadvaldan to'rtinchi haftaning xarajatini o'qiymiz: x(4) = 78 000 so'm. Ikkinchi haftaning qiymatini olish tipik xato. Javob: 78 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-orqali-kompozitsiya",
+      "id": "matematika_funk_m13-murakkab-funksiya#f93ee485"
+    },
+    {
+      "q": "Jadvalda f(0) = 2, f(1) = 0, f(2) = 3, f(3) = 1 qiymatlari berilgan. Shu funksiyani uch marta ketma-ket qo'llab, f(f(f(1))) ni toping.",
+      "v": [
+        "2",
+        "0",
+        "3",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "Birinchi qadam: f(1) = 0. Ikkinchi qadam: f(0) = 2. Uchinchi qadam: f(2) = 3. Har qadamda avvalgi natija yangi argument bo'ladi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-orqali-kompozitsiya",
+      "id": "matematika_funk_m13-murakkab-funksiya#47bdb409"
+    },
+    {
+      "q": "f(x) bo'lakli berilgan: x < 2 bo'lganda f(x) = x + 3, x ≥ 2 bo'lganda f(x) = x². g(x) = x − 4 bo'lsa, f(g(5)) ni toping.",
+      "v": [
+        "1",
+        "25",
+        "21",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Avval ichki funksiya: g(5) = 5 − 4 = 1. Endi 1 sonini qaysi bo'lak qamrashini tekshiramiz: 1 < 2, demak birinchi bo'lak ishlaydi. f(1) = 1 + 3 = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolakli-funksiya-kompozitsiyasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#73e6b05f"
+    },
+    {
+      "q": "f(x) funksiya x ≤ 0 bo'lganda f(x) = 2x, x > 0 bo'lganda f(x) = x + 5 ko'rinishda berilgan. f(f(−3)) qiymatini hisoblang.",
+      "v": [
+        "−6",
+        "−1",
+        "7",
+        "−12"
+      ],
+      "t": 3,
+      "izoh": "Birinchi qadam: −3 ≤ 0 bo'lgani uchun f(−3) = 2·(−3) = −6. Ikkinchi qadamda argument −6, u ham noldan kichik: f(−6) = 2·(−6) = −12. Har qadamda bo'lak qaytadan tanlanadi. Javob: −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolakli-funksiya-kompozitsiyasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#7b632bff"
+    },
+    {
+      "q": "Taksi narxi: dastlabki 5 km uchun 20 000 so'm, undan keyingi har bir km uchun 3 000 so'm qo'shiladi. Yo'l uzunligi l(t) = 0,8t km bo'lsa, 15 daqiqalik safar qancha turadi?",
+      "v": [
+        "41 000 so'm",
+        "56 000 so'm",
+        "50 000 so'm",
+        "36 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Avval masofani topamiz: l(15) = 0,8·15 = 12 km. Endi narx bo'lakli funksiyasini qo'llaymiz: dastlabki 5 km uchun 20 000 so'm, qolgan 12 − 5 = 7 km uchun 7·3 000 = 21 000 so'm. Jami: 20 000 + 21 000 = 41 000 so'm. Javob: 41 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolakli-funksiya-kompozitsiyasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#77b39597"
+    },
+    {
+      "q": "f(x) = |x| va g(x) = x − 7 funksiyalar berilgan. f(g(x)) = 4 tenglama ildizlarining yig'indisini toping.",
+      "v": [
+        "11",
+        "3",
+        "14",
+        "−14"
+      ],
+      "t": 2,
+      "izoh": "Kompozitsiya: |x − 7| = 4. Modul ta'rifiga ko'ra x − 7 = 4 yoki x − 7 = −4. Bundan x = 11 va x = 3. Yig'indi: 11 + 3 = 14. Ikkinchi ildizni unutish tipik xato. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolakli-funksiya-kompozitsiyasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#6009dfa4"
+    },
+    {
+      "q": "f(x) = x² + 1 va g(x) = 3 − x funksiyalar uchun f(g(x)) murakkab funksiyaning eng kichik qiymatini toping.",
+      "v": [
+        "0",
+        "1",
+        "10",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Kompozitsiyani tuzamiz: f(g(x)) = (3 − x)² + 1. Kvadrat hech qachon manfiy bo'lmaydi, uning eng kichik qiymati nol va u x = 3 da erishiladi. Demak eng kichik qiymat 0 + 1 = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kompozitsiya-qiymatlar-sohasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#94c730bb"
+    },
+    {
+      "q": "g(x) = x² va f(x) = 5 − x funksiyalar berilgan. f(g(x)) murakkab funksiyaning qiymatlar to'plamini toping.",
+      "v": [
+        "[5; +∞)",
+        "[0; +∞)",
+        "(−∞; 5]",
+        "(−∞; 5)"
+      ],
+      "t": 2,
+      "izoh": "Kompozitsiya: f(g(x)) = 5 − x². x² ≥ 0 bo'lgani uchun 5 − x² ≤ 5. Eng katta qiymat x = 0 da erishiladi va u 5 ga teng, quyidan chegara yo'q. Demak qiymatlar to'plami (−∞; 5]. Javob: (−∞; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompozitsiya-qiymatlar-sohasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#d01cd10c"
+    },
+    {
+      "q": "Avtobusdagi yo'lovchilar soni y(t) = 60 − 4(t − 6)² kishi, chiptadan tushgan daromad esa d(y) = 1 700y so'm. Bu yerda t — soat 9:00 dan keyin o'tgan soatlar soni va 3 ≤ t ≤ 9. Shu oraliqda eng katta daromad qancha bo'ladi?",
+      "v": [
+        "60 yo'lovchi",
+        "10 200 so'm",
+        "1 700 so'm",
+        "102 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Yo'lovchilar soni eng katta bo'lganda daromad ham eng katta bo'ladi. (t − 6)² ≥ 0 bo'lgani uchun y ning eng katta qiymati t = 6 da, bu qiymat berilgan oraliqda yotadi: y = 60 kishi. Daromad: 1 700·60 = 102 000 so'm. Javob: 102 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompozitsiya-qiymatlar-sohasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#ff9eb9aa"
+    },
+    {
+      "q": "f(x) = √x va g(x) = x² − 6x + 13 funksiyalar uchun f(g(x)) murakkab funksiyaning eng kichik qiymati nechaga teng?",
+      "v": [
+        "4",
+        "13",
+        "√13",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Ichki funksiyani to'la kvadratga keltiramiz: x² − 6x + 13 = (x − 3)² + 4. Uning eng kichik qiymati x = 3 da 4 ga teng. √ funksiya o'suvchi bo'lgani uchun kompozitsiyaning eng kichik qiymati √4 = 2. Ildiz olish qadamini tashlab ketmaslik kerak. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kompozitsiya-qiymatlar-sohasi",
+      "id": "matematika_funk_m13-murakkab-funksiya#ed011037"
+    },
+    {
+      "q": "f(x) = 1/(1 − x) funksiya berilgan. f(f(f(x))) ifodani soddalashtiring.",
+      "v": [
+        "x",
+        "1/x",
+        "(x − 1)/x",
+        "1/(1 − x)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi qadam: f(f(x)) = 1/(1 − 1/(1 − x)). Maxrajni umumiy maxrajga keltiramiz: 1 − 1/(1 − x) = (−x)/(1 − x), demak f(f(x)) = (1 − x)/(−x) = (x − 1)/x. Ikkinchi qadam: f((x − 1)/x) = 1/(1 − (x − 1)/x) = 1/(1/x) = x. Javob: x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davriy-kompozitsiya",
+      "id": "matematika_funk_m13-murakkab-funksiya#39537c15"
+    },
+    {
+      "q": "f(x) = 1/(1 − x) funksiyani ketma-ket 2026 marta qo'llasak, ya'ni f²⁰²⁶(x) ifoda nimaga teng bo'ladi?",
+      "v": [
+        "1/(1 − x)",
+        "(x − 1)/x",
+        "x",
+        "x − 1"
+      ],
+      "t": 0,
+      "izoh": "Avval davrni aniqlaymiz: f(x) = 1/(1 − x), f²(x) = (x − 1)/x, f³(x) = x. Demak qo'llash davri 3 ga teng. Endi 2026 ni 3 ga bo'lamiz: 2026 = 3·675 + 1, qoldiq 1. Qoldiq 1 bo'lgani uchun natija birinchi qadamdagi funksiyaga teng. Javob: 1/(1 − x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davriy-kompozitsiya",
+      "id": "matematika_funk_m13-murakkab-funksiya#12ff7b0a"
+    },
+    {
+      "q": "f(x) = (x + 1)/(x − 1) funksiya x ≠ 1 da aniqlangan. f(f(x)) ifoda nimaga teng?",
+      "v": [
+        "1/x",
+        "x",
+        "−x",
+        "(x + 1)/(x − 1)"
+      ],
+      "t": 1,
+      "izoh": "f ning argumenti o'rniga f(x) ni qo'yamiz: surat (x + 1)/(x − 1) + 1 = (x + 1 + x − 1)/(x − 1) = 2x/(x − 1). Maxraj: (x + 1)/(x − 1) − 1 = (x + 1 − x + 1)/(x − 1) = 2/(x − 1). Ikkalasini bo'lamiz: (2x/(x − 1)) : (2/(x − 1)) = x. Javob: x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davriy-kompozitsiya",
+      "id": "matematika_funk_m13-murakkab-funksiya#7ea447d9"
+    },
+    {
+      "q": "Dastur kodni p(n) = 7 − n qoidasi bilan yangilaydi, bu yerda n — kod raqami va u 1 dan 6 gacha qiymat oladi. Boshlang'ich kod 2 bo'lsa, qoida 9 marta qo'llangandan keyin kod qanday bo'ladi?",
+      "v": [
+        "2",
+        "5",
+        "7",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Birinchi qo'llash: p(2) = 7 − 2 = 5. Ikkinchi qo'llash: p(5) = 7 − 5 = 2. Demak kod ikki qadamda takrorlanadi, davr 2 ga teng. 9 toq son bo'lgani uchun natija birinchi qadamdagi qiymatga teng. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kompozitsiya",
+      "id": "matematika_funk_m13-murakkab-funksiya#69531397"
+    },
+    {
+      "q": "f(x) toq funksiya, g(x) esa juft funksiya bo'lsa, f(g(x)) murakkab funksiya qanday bo'ladi?",
+      "v": [
+        "Juft",
+        "Toq",
+        "Na juft, na toq",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "g juft bo'lgani uchun g(−x) = g(x). Demak f(g(−x)) = f(g(x)), ya'ni argument ishorasi almashganda kompozitsiya qiymati o'zgarmaydi. Bu esa juft funksiya ta'rifi. Tashqi funksiyaning toqligi bu yerda hech narsani o'zgartirmaydi. Javob: juft.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kompozitsiyaning-juft-toqligi",
+      "id": "matematika_funk_m13-murakkab-funksiya#a526b9fa"
+    },
+    {
+      "q": "f(x) va g(x) funksiyalarning ikkalasi ham toq bo'lsa, f(g(x)) kompozitsiyaning xossasi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Juft funksiya bo'ladi",
+        "Na juft, na toq bo'ladi",
+        "Har doim o'suvchi bo'ladi",
+        "Toq funksiya bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "g toq bo'lgani uchun g(−x) = −g(x). Buni tashqi funksiyaga qo'yamiz: f(g(−x)) = f(−g(x)). f ham toq bo'lgani uchun f(−g(x)) = −f(g(x)). Demak kompozitsiya toq funksiya bo'ladi. Javob: toq funksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kompozitsiyaning-juft-toqligi",
+      "id": "matematika_funk_m13-murakkab-funksiya#feb03fe0"
+    },
+    {
+      "q": "f(x) = x³ va g(x) = x² − 5 bo'lsa, h(x) = f(g(x)) funksiyaning h(−2) va h(2) qiymatlari orasidagi munosabatni aniqlang.",
+      "v": [
+        "h(−2) = −h(2), qarama-qarshi sonlar",
+        "h(−2) = h(2) = −1",
+        "h(−2) = 1 va h(2) = −1",
+        "h(−2) = −27 va h(2) = 27"
+      ],
+      "t": 1,
+      "izoh": "Ichki funksiya juft: g(−2) = 4 − 5 = −1 va g(2) = 4 − 5 = −1, ikkalasi bir xil. Endi tashqi funksiyani qo'llaymiz: f(−1) = (−1)³ = −1. Demak h(−2) = h(2) = −1, ya'ni kompozitsiya juft funksiya. Javob: h(−2) = h(2) = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kompozitsiyaning-juft-toqligi",
+      "id": "matematika_funk_m13-murakkab-funksiya#70ee456e"
+    },
+    {
+      "q": "f(x) = 2x + 3 va g(x) = x + 5 funksiyalar berilgan. f(g(x)) = g(f(x)) tenglik qaysi x qiymatlarida bajariladi?",
+      "v": [
+        "Hech qanday x da bajarilmaydi",
+        "Barcha x larda bajariladi",
+        "Faqat x = 5 da",
+        "Faqat x = 0 da"
+      ],
+      "t": 0,
+      "izoh": "Chap tomon: f(g(x)) = 2(x + 5) + 3 = 2x + 13. O'ng tomon: g(f(x)) = (2x + 3) + 5 = 2x + 8. Tenglama 2x + 13 = 2x + 8 ko'rinishga keladi, bundan 13 = 8 kelib chiqadi. Bu yolg'on tenglik, demak yechim yo'q. Javob: hech qanday x da bajarilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "fgx-va-gfx-tengligi",
+      "id": "matematika_funk_m13-murakkab-funksiya#6997df9e"
+    },
+    {
+      "q": "f(x) = 3x va g(x) = x + a funksiyalar uchun f(g(x)) = g(f(x)) tenglik barcha x larda bajarilishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "1",
+        "0",
+        "3",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "Chap tomon: f(g(x)) = 3(x + a) = 3x + 3a. O'ng tomon: g(f(x)) = 3x + a. Tenglik barcha x larda bajarilishi uchun ozod hadlar teng bo'lishi kerak: 3a = a. Bundan 2a = 0, ya'ni a = 0. Javob: a = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "fgx-va-gfx-tengligi",
+      "id": "matematika_funk_m13-murakkab-funksiya#f9e8a877"
+    },
+    {
+      "q": "f(x) = x² va g(x) = x + 4 funksiyalar berilgan. f(g(x)) = g(f(x)) tenglamani yeching.",
+      "v": [
+        "x = −2",
+        "x = 1,5",
+        "x = 0",
+        "x = −1,5"
+      ],
+      "t": 3,
+      "izoh": "Chap tomon: f(g(x)) = (x + 4)² = x² + 8x + 16. O'ng tomon: g(f(x)) = x² + 4. Tenglama: x² + 8x + 16 = x² + 4. Kvadratlar qisqaradi: 8x + 16 = 4, bundan 8x = −12 va x = −1,5. Javob: x = −1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "fgx-va-gfx-tengligi",
+      "id": "matematika_funk_m13-murakkab-funksiya#070578a2"
+    },
+    {
+      "q": "f(x) = ax + b va g(x) = 2x − 1 funksiyalar uchun f(g(x)) = 6x − 7 bo'lsa, a va b koeffitsientlarni toping.",
+      "v": [
+        "a = 3, b = −4",
+        "a = 3, b = −7",
+        "a = 6, b = −7",
+        "a = 3, b = −10"
+      ],
+      "t": 0,
+      "izoh": "Kompozitsiyani tuzamiz: f(g(x)) = a(2x − 1) + b = 2ax − a + b. Buni 6x − 7 bilan solishtiramiz. x oldidagi koeffitsientlar: 2a = 6, demak a = 3. Ozod hadlar: −a + b = −7, ya'ni −3 + b = −7 va b = −4. Javob: a = 3, b = −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-kompozitsiya-koeffitsienti",
+      "id": "matematika_funk_m13-murakkab-funksiya#7c917dc2"
+    },
+    {
+      "q": "f(x) = 5x + c va g(x) = x + 2 funksiyalar berilgan. g(f(x)) − f(g(x)) ayirmasi nechaga teng bo'ladi?",
+      "v": [
+        "8",
+        "−8",
+        "2c − 8",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "Birinchi kompozitsiya: g(f(x)) = (5x + c) + 2 = 5x + c + 2. Ikkinchi kompozitsiya: f(g(x)) = 5(x + 2) + c = 5x + 10 + c. Ayirma: (5x + c + 2) − (5x + 10 + c) = 2 − 10 = −8. Ayirma c ga bog'liq emas va nolga teng emas. Javob: −8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-kompozitsiya-koeffitsienti",
+      "id": "matematika_funk_m13-murakkab-funksiya#851250b1"
+    }
+  ]
+}

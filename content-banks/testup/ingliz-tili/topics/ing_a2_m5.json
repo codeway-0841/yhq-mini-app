@@ -1,0 +1,1462 @@
+{
+  "nom": "Quantifiers: some / any / much / many",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "How ___ sugar do you need for the cake?",
+      "v": [
+        "much",
+        "many",
+        "a few",
+        "a lot"
+      ],
+      "t": 0,
+      "izoh": "sugar — sanalmaydigan ot, shuning uchun `How much`.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#2985cd61"
+    },
+    {
+      "q": "How ___ people are there in your family?",
+      "v": [
+        "many",
+        "much",
+        "a little",
+        "a lot"
+      ],
+      "t": 0,
+      "izoh": "people — sanaladigan (ko’plik), shuning uchun `How many`.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#797eb1d0"
+    },
+    {
+      "q": "There isn’t ___ time before the bus leaves.",
+      "v": [
+        "much",
+        "many",
+        "a few",
+        "a lot"
+      ],
+      "t": 0,
+      "izoh": "time — sanalmaydigan; inkor gapda `much` ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#3ff1b2c7"
+    },
+    {
+      "q": "I have only ___ money — I can’t buy the bag.",
+      "v": [
+        "a little",
+        "a few",
+        "many",
+        "much"
+      ],
+      "t": 0,
+      "izoh": "money — sanalmaydigan, «ozgina» ma’nosida `a little`.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#027239e5"
+    },
+    {
+      "q": "There are only ___ apples left in the box.",
+      "v": [
+        "a few",
+        "a little",
+        "much",
+        "many"
+      ],
+      "t": 0,
+      "izoh": "apples — sanaladigan, «bir nechta» ma’nosida `a few`.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#ca717050"
+    },
+    {
+      "q": "My brother has ___ friends at his new school.",
+      "v": [
+        "a lot of",
+        "much",
+        "a little",
+        "a lot"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda `a lot of` — undan keyin ot keladi, `of` tushirilmaydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#adfe6a4c"
+    },
+    {
+      "q": "How ___ does this bag cost?",
+      "v": [
+        "much",
+        "many",
+        "a lot",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Narx doim `How much` bilan so’raladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#62a6cc27"
+    },
+    {
+      "q": "We don’t have ___ chairs for all the guests.",
+      "v": [
+        "many",
+        "much",
+        "a little",
+        "a lot"
+      ],
+      "t": 0,
+      "izoh": "chairs — sanaladigan; inkor gapda `many`.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#6a6c164d"
+    },
+    {
+      "q": "I drink ___ tea every day — five or six cups.",
+      "v": [
+        "a lot of",
+        "many",
+        "a few",
+        "a lot"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda `a lot of` sanaladigan otga ham, sanalmaydiganiga ham qo’shiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#c847341d"
+    },
+    {
+      "q": "How ___ hours do you sleep at night?",
+      "v": [
+        "many",
+        "much",
+        "a little",
+        "a lot"
+      ],
+      "t": 0,
+      "izoh": "hours — sanaladigan (ko’plik), shuning uchun `How many`.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#1ff670b0"
+    },
+    {
+      "q": "There isn’t ___ milk in the fridge — only a little.",
+      "v": [
+        "much",
+        "many",
+        "a few",
+        "a lot"
+      ],
+      "t": 0,
+      "izoh": "milk — sanalmaydigan; inkor gapda `much`.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#1a27ab18"
+    },
+    {
+      "q": "Only ___ students came to the lesson today.",
+      "v": [
+        "a few",
+        "a little",
+        "much",
+        "a lot"
+      ],
+      "t": 0,
+      "izoh": "students — sanaladigan, «bir nechta» ma’nosida `a few`.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#01c6150d"
+    },
+    {
+      "q": "There is ___ milk in the fridge.",
+      "v": [
+        "many",
+        "some",
+        "any",
+        "few"
+      ],
+      "t": 1,
+      "izoh": "Tasdiq gapda → some.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#d355520e"
+    },
+    {
+      "q": "I don't have ___ money with me today.",
+      "v": [
+        "some",
+        "many",
+        "any",
+        "much"
+      ],
+      "t": 2,
+      "izoh": "Inkor gapda → any.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#ad2e1b60"
+    },
+    {
+      "q": "How ___ apples do you want?",
+      "v": [
+        "much",
+        "many",
+        "some",
+        "any"
+      ],
+      "t": 1,
+      "izoh": "Sanaladigan so'z (apples) bilan → many.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#f5c74ab7"
+    },
+    {
+      "q": "How ___ water do you drink every day?",
+      "v": [
+        "many",
+        "some",
+        "much",
+        "any"
+      ],
+      "t": 2,
+      "izoh": "Sanalmaydigan so'z (water) bilan → much.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#92db6de4"
+    },
+    {
+      "q": "Are there ___ eggs in the box?",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "a"
+      ],
+      "t": 1,
+      "izoh": "Savol gapda → any.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#29f0040f"
+    },
+    {
+      "q": "Would you like ___ tea?",
+      "v": [
+        "any",
+        "many",
+        "some",
+        "much"
+      ],
+      "t": 2,
+      "izoh": "Taklif (offer) bo'lsa → some.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#9b5fb3ac"
+    },
+    {
+      "q": "There aren't ___ students in the classroom.",
+      "v": [
+        "some",
+        "much",
+        "any",
+        "a"
+      ],
+      "t": 2,
+      "izoh": "Inkor gapda → any.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#2866a030"
+    },
+    {
+      "q": "We have ___ homework this weekend.",
+      "v": [
+        "many",
+        "a lot of",
+        "an",
+        "few"
+      ],
+      "t": 1,
+      "izoh": "'homework' sanalmaydi, tasdiqda → a lot of.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#176d0baa"
+    },
+    {
+      "q": "I bought ___ oranges at the market.",
+      "v": [
+        "much",
+        "some",
+        "any",
+        "a"
+      ],
+      "t": 1,
+      "izoh": "Tasdiq gap + sanaladigan so'z → some.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#ba064930"
+    },
+    {
+      "q": "She doesn't eat ___ meat.",
+      "v": [
+        "many",
+        "some",
+        "much",
+        "a"
+      ],
+      "t": 2,
+      "izoh": "Inkor + sanalmaydigan (meat) → much.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#5ddd27ec"
+    },
+    {
+      "q": "I have ___ water.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#f46fafb2"
+    },
+    {
+      "q": "I don't have ___ water.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#9388414d"
+    },
+    {
+      "q": "Do you have ___ water?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#3109c0bb"
+    },
+    {
+      "q": "We need ___ milk.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#a4cd7cc4"
+    },
+    {
+      "q": "We haven't got ___ milk.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#ef17242a"
+    },
+    {
+      "q": "Have you got ___ milk?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#51627368"
+    },
+    {
+      "q": "She has ___ bread.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#259dc62d"
+    },
+    {
+      "q": "There isn't ___ bread today.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#37f9c2f9"
+    },
+    {
+      "q": "Is there ___ bread?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#f168e78b"
+    },
+    {
+      "q": "There is ___ money here.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#e942300b"
+    },
+    {
+      "q": "He doesn't want ___ money.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#0eb033cd"
+    },
+    {
+      "q": "Do we need ___ money?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#c4502090"
+    },
+    {
+      "q": "I want ___ time.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#eab0dd62"
+    },
+    {
+      "q": "She hasn't got ___ time.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#8a777591"
+    },
+    {
+      "q": "Would you like ___ time?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#1ac65307"
+    },
+    {
+      "q": "I have ___ sugar.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#9c0df5c1"
+    },
+    {
+      "q": "I don't have ___ sugar.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#ccf2c674"
+    },
+    {
+      "q": "Do you have ___ sugar?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#049889b8"
+    },
+    {
+      "q": "We need ___ rice.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#04e25595"
+    },
+    {
+      "q": "We haven't got ___ rice.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#4c7f7868"
+    },
+    {
+      "q": "Have you got ___ rice?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#56cfb1aa"
+    },
+    {
+      "q": "She has ___ coffee.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#34881423"
+    },
+    {
+      "q": "There isn't ___ coffee today.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#0e30ff7a"
+    },
+    {
+      "q": "Is there ___ coffee?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#c8a78987"
+    },
+    {
+      "q": "There is ___ tea here.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#8292c654"
+    },
+    {
+      "q": "He doesn't want ___ tea.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#1f82583b"
+    },
+    {
+      "q": "Do we need ___ tea?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#99aa8959"
+    },
+    {
+      "q": "I want ___ juice.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#ae5ce48c"
+    },
+    {
+      "q": "She hasn't got ___ juice.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#b902212b"
+    },
+    {
+      "q": "Would you like ___ juice?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#d1a524bb"
+    },
+    {
+      "q": "I have ___ cheese.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#27a42009"
+    },
+    {
+      "q": "I don't have ___ cheese.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#3af4a329"
+    },
+    {
+      "q": "Do you have ___ cheese?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#369d3bad"
+    },
+    {
+      "q": "We need ___ salt.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#7b470779"
+    },
+    {
+      "q": "We haven't got ___ salt.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#1c4aaf84"
+    },
+    {
+      "q": "Have you got ___ salt?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#18aa4628"
+    },
+    {
+      "q": "She has ___ music.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#0633c8d9"
+    },
+    {
+      "q": "There isn't ___ music today.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#e759b02e"
+    },
+    {
+      "q": "Is there ___ music?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#ea7ecee1"
+    },
+    {
+      "q": "There is ___ homework here.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#029bb61f"
+    },
+    {
+      "q": "He doesn't want ___ homework.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#79ef8bd8"
+    },
+    {
+      "q": "Do we need ___ homework?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#a7986b5d"
+    },
+    {
+      "q": "I want ___ information.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#71ebb56b"
+    },
+    {
+      "q": "She hasn't got ___ information.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#9dfe5e02"
+    },
+    {
+      "q": "Would you like ___ information?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#65451159"
+    },
+    {
+      "q": "I have ___ help.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#dabd89db"
+    },
+    {
+      "q": "I don't have ___ help.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#0aa8c134"
+    },
+    {
+      "q": "Do you have ___ help?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#8eb39f1b"
+    },
+    {
+      "q": "We need ___ soup.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#f21c46d5"
+    },
+    {
+      "q": "We haven't got ___ soup.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#e680efc0"
+    },
+    {
+      "q": "Have you got ___ soup?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#b007a0b8"
+    },
+    {
+      "q": "She has ___ paper.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#1f3e910c"
+    },
+    {
+      "q": "There isn't ___ paper today.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#331851d4"
+    },
+    {
+      "q": "Is there ___ paper?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#3a606e50"
+    },
+    {
+      "q": "There is ___ honey here.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#bd5a6309"
+    },
+    {
+      "q": "He doesn't want ___ honey.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#da02de17"
+    },
+    {
+      "q": "Do we need ___ honey?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#0247d849"
+    },
+    {
+      "q": "I want ___ butter.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#8fea4753"
+    },
+    {
+      "q": "She hasn't got ___ butter.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#dbc58ead"
+    },
+    {
+      "q": "Would you like ___ butter?",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a few"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#ac998958"
+    },
+    {
+      "q": "I have ___ apples.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#9f27a911"
+    },
+    {
+      "q": "I don't have ___ apples.",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#8a5a834d"
+    },
+    {
+      "q": "Do you have ___ apples?",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#7e7af0ee"
+    },
+    {
+      "q": "We need ___ books.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#99a99de6"
+    },
+    {
+      "q": "We haven't got ___ books.",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#6af20b09"
+    },
+    {
+      "q": "Have you got ___ books?",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#d535831c"
+    },
+    {
+      "q": "She has ___ friends.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#690d05ca"
+    },
+    {
+      "q": "There aren't ___ friends today.",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#ba38f005"
+    },
+    {
+      "q": "Are there ___ friends?",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#e9a240fd"
+    },
+    {
+      "q": "There are ___ pens here.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#526f386f"
+    },
+    {
+      "q": "He doesn't want ___ pens.",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#317b7f30"
+    },
+    {
+      "q": "Do we need ___ pens?",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#00adc432"
+    },
+    {
+      "q": "I can see ___ chairs.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#3f434e4c"
+    },
+    {
+      "q": "I can't see ___ chairs.",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#0a12c2a9"
+    },
+    {
+      "q": "Can you see ___ chairs?",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#e1dd7092"
+    },
+    {
+      "q": "I have ___ cars.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#ca6c1622"
+    },
+    {
+      "q": "I don't have ___ cars.",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#252edea3"
+    },
+    {
+      "q": "Do you have ___ cars?",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#cf278da3"
+    },
+    {
+      "q": "We need ___ eggs.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#dadfd8c7"
+    },
+    {
+      "q": "We haven't got ___ eggs.",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#d0722947"
+    },
+    {
+      "q": "Have you got ___ eggs?",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#2a2190df"
+    },
+    {
+      "q": "She has ___ oranges.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#e0277c76"
+    },
+    {
+      "q": "There aren't ___ oranges today.",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#4a41ca92"
+    },
+    {
+      "q": "Are there ___ oranges?",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#2cbc3587"
+    },
+    {
+      "q": "There are ___ bananas here.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#82223993"
+    },
+    {
+      "q": "He doesn't want ___ bananas.",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#de5f5020"
+    },
+    {
+      "q": "Do we need ___ bananas?",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#edc3e9a5"
+    },
+    {
+      "q": "I can see ___ students.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishli gapda 'some' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#fb6aa451"
+    },
+    {
+      "q": "I can't see ___ students.",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#411d620a"
+    },
+    {
+      "q": "Can you see ___ students?",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a little"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishsiz va so'roq gaplarda 'any' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m5#2b419a0b"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Kollinear vektorlar va vektorni yoyish",
+  "bolim": "Koordinatalar va vektorlar",
+  "blok": "vekt",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "a(6; −9) va b(−4; 6) vektorlar berilgan. Ular kollinear bo'ladimi va buni qanday tekshirish mumkin?",
+      "v": [
+        "Ha, kollinear: 6·6 − (−4)·(−9) = 0",
+        "Yo'q, chunki koordinatalari teng emas",
+        "Yo'q, chunki ishoralari har xil",
+        "Ha, lekin faqat uzunliklari teng bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Ikki vektorning kollinearlik sharti x₁·y₂ − x₂·y₁ = 0 ko'rinishida yoziladi. Bu yerda 6·6 − (−4)·(−9) = 36 − 36 = 0. Demak vektorlar kollinear. Koeffitsient k = −4 : 6 = −2/3 manfiy, ya'ni ular qarama-qarshi yo'nalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinatada-kollinearlik-tekshirish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#14dedd9e"
+    },
+    {
+      "q": "Quyidagi juftliklardan qaysi biri kollinear vektorlardan iborat: m(2; 5) va n(4; 9), yoki p(3; −6) va q(−2; 4)?",
+      "v": [
+        "Faqat m va n juftligi",
+        "Ikkala juftlik ham kollinear",
+        "Faqat p va q juftligi",
+        "Ikkala juftlik ham kollinear emas"
+      ],
+      "t": 2,
+      "izoh": "m va n uchun 2·9 − 4·5 = 18 − 20 = −2 chiqadi, bu nol emas, demak ular kollinear emas. p va q uchun 3·4 − (−2)·(−6) = 12 − 12 = 0, shart bajarildi. Shuning uchun faqat p va q juftligi kollinear.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinatada-kollinearlik-tekshirish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#f647bf3a"
+    },
+    {
+      "q": "c(−3; 12) vektorga quyidagilardan qaysi biri kollinear bo'ladi: d(1; 4), e(2; −8) yoki f(−6; 20)?",
+      "v": [
+        "d(1; 4)",
+        "e(2; −8)",
+        "f(−6; 20)",
+        "Ularning hech biri kollinear emas"
+      ],
+      "t": 1,
+      "izoh": "Har bir juftlik uchun x₁·y₂ − x₂·y₁ hisoblanadi. d bilan: −3·4 − 1·12 = −24. e bilan: −3·(−8) − 2·12 = 24 − 24 = 0. f bilan: −3·20 − (−6)·12 = −60 + 72 = 12. Faqat e uchun natija nolga teng, demak e kollinear.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinatada-kollinearlik-tekshirish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#1e407af2"
+    },
+    {
+      "q": "Kurerlik xizmati xaritada ikki yo'nalish vektorini belgiladi: birinchisi u(8; −12), ikkinchisi v(−6; 9). Bu ikki yo'nalish bitta to'g'ri chiziq bo'ylabmi?",
+      "v": [
+        "Yo'q, ular kesishuvchi yo'nalishlar",
+        "Ha, bitta to'g'ri chiziq bo'ylab va bir tomonga qaragan",
+        "Yo'q, chunki uzunliklari har xil",
+        "Ha, bitta to'g'ri chiziq bo'ylab, lekin qarama-qarshi tomonga"
+      ],
+      "t": 3,
+      "izoh": "Kollinearlik shartini tekshiramiz: 8·9 − (−6)·(−12) = 72 − 72 = 0, demak yo'nalishlar kollinear. Endi koeffitsientni topamiz: −6 : 8 = −0,75 va 9 : (−12) = −0,75. Koeffitsient manfiy bo'lgani uchun vektorlar qarama-qarshi tomonga qaragan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinatada-kollinearlik-tekshirish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#6302d2d9"
+    },
+    {
+      "q": "a(2; 6) va b(5; y) vektorlar kollinear bo'lishi uchun y qanday qiymatga ega bo'lishi kerak?",
+      "v": [
+        "9",
+        "30",
+        "15",
+        "−15"
+      ],
+      "t": 2,
+      "izoh": "Kollinearlik sharti 2·y − 5·6 = 0 ko'rinishida yoziladi. Bundan 2y = 30 va y = 15 chiqadi. Tekshiramiz: b = 2,5·a, chunki 5 = 2,5·2 va 15 = 2,5·6. Ko'p uchraydigan xato — koordinatalar ayirmasini tenglashtirib 9 deb olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kollinearlik-shartidan-nomalum",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#494e94c8"
+    },
+    {
+      "q": "Dehqon Sanjar dalasiga ikkita parallel ariq qazimoqchi. Birinchisining yo'nalish vektori a(9; 12), ikkinchisiniki b(x; −8) deb belgilangan. x nechaga teng bo'lishi kerak?",
+      "v": [
+        "−6",
+        "6",
+        "−11",
+        "−72"
+      ],
+      "t": 0,
+      "izoh": "Ariqlar parallel bo'lishi uchun yo'nalish vektorlari kollinear bo'lsin: 9·(−8) − x·12 = 0. Bundan 12x = −72 va x = −6. Agar 12 ga bo'lish unutilsa −72, koordinatalar ayirmasi tenglashtirilsa −11 xatosi chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kollinearlik-shartidan-nomalum",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#7ad41b71"
+    },
+    {
+      "q": "m(t; 3) va n(8; −12) vektorlar kollinear bo'lsa, t ning qiymatini toping.",
+      "v": [
+        "2",
+        "−32",
+        "−24",
+        "−2"
+      ],
+      "t": 3,
+      "izoh": "Shartga ko'ra t·(−12) − 8·3 = 0, ya'ni −12t = 24 va t = −2. Boshqacha aytganda n = k·m bo'lsa, 3k = −12 dan k = −4 va t = 8 : (−4) = −2. Ishorani tashlab yuborish 2, k ga ko'paytirish esa −32 xatosini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kollinearlik-shartidan-nomalum",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#d98d9304"
+    },
+    {
+      "q": "p(x; x + 3) vektor q(4; 10) vektorga kollinear bo'lsa, x ning qiymatini aniqlang.",
+      "v": [
+        "−2",
+        "2",
+        "12",
+        "0,5"
+      ],
+      "t": 1,
+      "izoh": "Kollinearlik sharti x·10 − 4·(x + 3) = 0 tenglamani beradi. Qavsni ochamiz: 10x − 4x − 12 = 0, ya'ni 6x = 12 va x = 2. Demak p(2; 5) va haqiqatan q = 2·p. Qavs oldidagi minusni unutish −2 xatosiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kollinearlik-shartidan-nomalum",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#7c2bfca8"
+    },
+    {
+      "q": "Quruvchi Zilola devorga bir xil qiyalikdagi ikkita tayanch o'rnatmoqchi. Chizmada birinchi tayanch vektori (15; 25), ikkinchisi (m; 10) ko'rinishida. m nechaga teng bo'ladi?",
+      "v": [
+        "0",
+        "6",
+        "150",
+        "37,5"
+      ],
+      "t": 1,
+      "izoh": "Qiyaliklar bir xil bo'lishi uchun vektorlar kollinear bo'ladi: 15·10 − m·25 = 0. Bundan 25m = 150 va m = 6. Ikkinchi vektor birinchisidan 2,5 marta kichik, ya'ni koeffitsient 0,4: 6 = 0,4·15 va 10 = 0,4·25. Nisbatni ag'darib yuborish 37,5 xatosini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kollinearlik-shartidan-nomalum",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#f58f0114"
+    },
+    {
+      "q": "a(−4; 10) va b(6; −15) vektorlar kollinear ekani ma'lum. b = k·a tenglikdagi k koeffitsientini toping.",
+      "v": [
+        "3/2",
+        "−2/3",
+        "2/3",
+        "−3/2"
+      ],
+      "t": 3,
+      "izoh": "b = k·a tenglikdan birinchi koordinatalar bo'yicha 6 = k·(−4), demak k = −3/2. Ikkinchi koordinata buni tasdiqlaydi: −3/2 ni 10 ga ko'paytirsak −15 chiqadi. Kasrni ag'darish −2/3, ishorani tashlash esa 3/2 xatosiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kollinearlik-koeffitsienti",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#867221be"
+    },
+    {
+      "q": "c(21; −14) vektor d(−3; 2) vektorga kollinear bo'lsa, c = k·d tenglikdagi k soni nechaga teng?",
+      "v": [
+        "−7",
+        "7",
+        "1/7",
+        "−1/7"
+      ],
+      "t": 0,
+      "izoh": "Birinchi koordinatalarni solishtiramiz: 21 = k·(−3), demak k = −7. Ikkinchi koordinata ham mos keladi, chunki −7·2 = −14. Ishora e'tibordan chetda qolsa 7, teskari nisbat olinsa −1/7 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kollinearlik-koeffitsienti",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#8a18fe51"
+    },
+    {
+      "q": "Ustaxonada Dilshod bir xil shakldagi ikki o'lchamdagi belgi yasadi. Kichigining yo'nalish vektori (3; −5), kattasiniki (−12; 20). Katta belgi kichigidan qanday farq qiladi?",
+      "v": [
+        "4 marta katta va bir xil yo'nalgan",
+        "16 marta katta va qarama-qarshi yo'nalgan",
+        "4 marta katta va qarama-qarshi yo'nalgan",
+        "4 marta kichik va qarama-qarshi yo'nalgan"
+      ],
+      "t": 2,
+      "izoh": "Katta vektorni kichigiga bo'lamiz: −12 : 3 = −4 va 20 : (−5) = −4. Koeffitsient bir xil chiqdi, demak vektorlar kollinear. Uning moduli 4 uzunlik 4 marta ortganini, manfiyligi esa yo'nalish teskari ekanini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kollinearlik-koeffitsienti",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#98ba470d"
+    },
+    {
+      "q": "Agar a vektor nolmas va b = −0,4·a bo'lsa, bu ikki vektor haqida qaysi tasdiq to'g'ri?",
+      "v": [
+        "Kollinear va bir xil yo'nalgan, |b| = 0,4·|a|",
+        "Kollinear emas, chunki koeffitsient kasr",
+        "Kollinear va |b| = 2,5·|a|",
+        "Kollinear va qarama-qarshi yo'nalgan, |b| = 0,4·|a|"
+      ],
+      "t": 3,
+      "izoh": "b = k·a ko'rinishdagi tenglik vektorlarning kollinearligini bildiradi. Bu yerda k = −0,4 manfiy, shuning uchun yo'nalishlar qarama-qarshi. Uzunlik esa |b| = |k|·|a| = 0,4·|a|, ya'ni b qisqaroq. Koeffitsientni ag'darib 2,5 deb olish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kollinearlik-koeffitsienti",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#d9bf556a"
+    },
+    {
+      "q": "a(6; −8) vektorga bir xil yo'nalgan birlik vektorning koordinatalarini toping.",
+      "v": [
+        "(−0,6; 0,8)",
+        "(0,6; −0,8)",
+        "(6; −8)",
+        "(0,6; 0,8)"
+      ],
+      "t": 1,
+      "izoh": "Avval uzunlik topiladi: |a| = √(6² + (−8)²) = √100 = 10. Birlik vektor e = a : |a| bo'lgani uchun har bir koordinata 10 ga bo'linadi. Natija (0,6; −0,8). Ishorani o'zgartirish qarama-qarshi yo'nalgan vektorni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-vektor-topish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#2397e81b"
+    },
+    {
+      "q": "b(−5; 12) vektorning uzunligini hisoblab, unga bir xil yo'nalgan birlik vektorni ko'rsating.",
+      "v": [
+        "|b| = 7, e(−5/7; 12/7)",
+        "|b| = 17, e(−5/17; 12/17)",
+        "|b| = 13, e(−5/13; 12/13)",
+        "|b| = 13, e(5/13; 12/13)"
+      ],
+      "t": 2,
+      "izoh": "Uzunlik Pifagor formulasi bilan topiladi: |b| = √((−5)² + 12²) = √169 = 13. Birlik vektor har bir koordinatani 13 ga bo'lish orqali olinadi. Koordinatalarni qo'shib 17 yoki ayirib 7 deb olish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-vektor-topish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#1cd7cf4c"
+    },
+    {
+      "q": "Quruvchilar guruhi xarita ustida (9; 12) vektor bo'ylab harakatlanmoqda. Shu yo'nalishda uzunligi 1 birlikka teng vektor qanday koordinatalarga ega bo'ladi?",
+      "v": [
+        "(0,6; 0,8)",
+        "(0,75; 1)",
+        "(3/7; 4/7)",
+        "(1,5; 2)"
+      ],
+      "t": 0,
+      "izoh": "Vektor uzunligi √(9² + 12²) = √225 = 15 ga teng. Birlik vektor uchun koordinatalar 15 ga bo'linadi: 9 : 15 = 0,6 va 12 : 15 = 0,8. Koordinatalar yig'indisi 21 ga bo'lish yoki kattaroq koordinataga bo'lish noto'g'ri natija beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-vektor-topish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#61ab2263"
+    },
+    {
+      "q": "c(−1; 1) vektorga kollinear va uzunligi 1 ga teng bo'lgan vektorlar nechta hamda ular qanday?",
+      "v": [
+        "Ikkita: (−√2/2; √2/2) va (√2/2; −√2/2)",
+        "Bitta: (−√2/2; √2/2)",
+        "Ikkita: (−1/2; 1/2) va (1/2; −1/2)",
+        "Cheksiz ko'p vektor mavjud"
+      ],
+      "t": 0,
+      "izoh": "Uzunlik |c| = √((−1)² + 1²) = √2 ga teng. Birlik vektor koordinatalarni √2 ga bo'lish bilan olinadi va (−√2/2; √2/2) chiqadi. Kollinearlik teskari yo'nalishga ham ruxsat beradi, shuning uchun ikkinchi javob (√2/2; −√2/2). Jami ikkita vektor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-vektor-topish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#52fc1a24"
+    },
+    {
+      "q": "Chavandoz maydonda (−7; 24) vektor bo'ylab yo'l oldi. Uning yo'nalishini saqlagan holda uzunligi 5 birlikka teng vektorni ko'rsating.",
+      "v": [
+        "(−35; 120)",
+        "(−0,28; 0,96)",
+        "(−1,4; 4,8)",
+        "(1,4; −4,8)"
+      ],
+      "t": 2,
+      "izoh": "Vektor uzunligi √((−7)² + 24²) = √625 = 25. Birlik vektor (−0,28; 0,96) bo'ladi, uni 5 ga ko'paytiramiz va (−1,4; 4,8) hosil bo'ladi. Boshidan 5 ga ko'paytirish (−35; 120) xatosini, birlikda to'xtash esa oxirgi qadamni tashlab ketishni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-uzunlikdagi-kollinear-vektor",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#69250870"
+    },
+    {
+      "q": "Stanokda detal d(3; −4) yo'nalishida siljiydi. Uni xuddi shu chiziq bo'ylab teskari tomonga 15 birlik siljitish kerak. Siljish vektori qanday?",
+      "v": [
+        "(9; −12)",
+        "(−9; 12)",
+        "(−45; 60)",
+        "(−0,6; 0,8)"
+      ],
+      "t": 1,
+      "izoh": "Avval birlik vektor topiladi: |d| = √(3² + (−4)²) = 5 va e = (0,6; −0,8). Teskari yo'nalish uchun ishoralar almashadi: (−0,6; 0,8). Uni 15 ga ko'paytiramiz va (−9; 12) chiqadi. Dastlabki vektorni to'g'ridan-to'g'ri 15 ga ko'paytirish noto'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-uzunlikdagi-kollinear-vektor",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#e574db0e"
+    },
+    {
+      "q": "Haydovchi Otabek (8; 15) vektor yo'nalishi bo'yicha 34 km yo'l bosdi. Uning ko'chish vektori qanday koordinatalarga ega bo'ladi?",
+      "v": [
+        "(272; 510)",
+        "(8; 15)",
+        "(30; 16)",
+        "(16; 30)"
+      ],
+      "t": 3,
+      "izoh": "Yo'nalish vektorining uzunligi √(8² + 15²) = √289 = 17 birlik. Kerakli uzunlik 34 bo'lgani uchun koeffitsient 34 : 17 = 2. Demak ko'chish vektori (16; 30) va uning uzunligi √(16² + 30²) = 34 km ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-uzunlikdagi-kollinear-vektor",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#e1058ea1"
+    },
+    {
+      "q": "f(−6; 8) vektorga kollinear va uzunligi 25 ga teng bo'lgan barcha vektorlarni ko'rsating.",
+      "v": [
+        "Faqat (−15; 20)",
+        "(−150; 200) va (150; −200)",
+        "(−15; 20) va (15; −20)",
+        "Faqat (15; −20)"
+      ],
+      "t": 2,
+      "izoh": "Uzunlik |f| = √((−6)² + 8²) = 10, birlik vektor esa (−0,6; 0,8). Uni 25 ga ko'paytirsak (−15; 20) chiqadi. Kollinearlik teskari yo'nalishni ham qamraydi, shuning uchun ikkinchi vektor (15; −20). Ikkalasining uzunligi 25 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "berilgan-uzunlikdagi-kollinear-vektor",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#36ebe9f4"
+    },
+    {
+      "q": "A(1; 2), B(4; 8) va C(7; 14) nuqtalar bitta to'g'ri chiziqda yotadimi, buni qanday asoslash mumkin?",
+      "v": [
+        "Ha, chunki AB va AC vektorlar kollinear",
+        "Yo'q, chunki AB va AC uzunliklari har xil",
+        "Yo'q, chunki nuqtalar orasidagi masofalar teng emas",
+        "Buni vektorlar yordamida aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "AB vektor (4 − 1; 8 − 2) = (3; 6), AC vektor esa (7 − 1; 14 − 2) = (6; 12). Kollinearlik sharti 3·12 − 6·6 = 36 − 36 = 0 bajariladi. Bir nuqtadan chiqqan ikki vektor kollinear bo'lsa, uchala nuqta bitta to'g'ri chiziqda yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-nuqta-kollinearligi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#e2ee464e"
+    },
+    {
+      "q": "M(−2; 5), N(1; −1) va P(4; k) nuqtalar bitta to'g'ri chiziqda yotishi uchun k qanday bo'lishi kerak?",
+      "v": [
+        "5",
+        "7",
+        "−13",
+        "−7"
+      ],
+      "t": 3,
+      "izoh": "MN vektor (3; −6) ga teng, NP vektor esa (3; k + 1). Kollinearlik sharti 3·(k + 1) − 3·(−6) = 0 tenglamani beradi, ya'ni 3k + 21 = 0 va k = −7. Har qadamda ordinata 6 birlik kamayadi: 5, so'ng −1, so'ng −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-nuqta-kollinearligi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#8b2adb51"
+    },
+    {
+      "q": "Uchta bekat xaritada A(2; 3), B(6; 9) va C(10; 14) nuqtalarda joylashgan. Ular bitta to'g'ri liniyada yotadimi?",
+      "v": [
+        "Ha, chunki AB va AC vektorlar kollinear",
+        "Yo'q, chunki AB va AC vektorlar kollinear emas",
+        "Ha, chunki uchala nuqta ham o'ngga siljigan",
+        "Yo'q, chunki bekatlar orasidagi masofalar teng emas"
+      ],
+      "t": 1,
+      "izoh": "AB vektor (4; 6), AC vektor esa (8; 11) bo'ladi. Kollinearlik shartini tekshiramiz: 4·11 − 8·6 = 44 − 48 = −4. Natija noldan farqli, demak vektorlar kollinear emas va uchala bekat bitta to'g'ri chiziqqa tushmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-nuqta-kollinearligi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#dfbcffaf"
+    },
+    {
+      "q": "K(0; −3) va L(2; 1) nuqtalar orqali o'tgan to'g'ri chiziqda qaysi nuqta yotadi: (3; 4), (4; 5), (6; 8) yoki (−1; −4)?",
+      "v": [
+        "(3; 4)",
+        "(4; 5)",
+        "(6; 8)",
+        "(−1; −4)"
+      ],
+      "t": 1,
+      "izoh": "KL vektor (2; 4) ga teng, uni (1; 2) ko'rinishida qisqartirish mumkin. Nuqta chiziqda yotsa, K dan unga chiqqan vektor ham shunga kollinear bo'ladi. (4; 5) uchun vektor (4; 8) va 2·8 − 4·4 = 0. Qolgan uchtasida shart bajarilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-nuqta-kollinearligi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#09d3e8a9"
+    },
+    {
+      "q": "ABC uchburchakda AB = c va AC = b. M va N mos ravishda AB va AC tomonlarning o'rtalari bo'lsa, MN vektorni ifodalang.",
+      "v": [
+        "(c − b)/2",
+        "b − c",
+        "(b + c)/2",
+        "(b − c)/2"
+      ],
+      "t": 3,
+      "izoh": "M nuqta AB ning o'rtasi bo'lgani uchun AM = 0,5·c. Xuddi shunday AN = 0,5·b. MN vektor AN dan AM ni ayirish orqali topiladi: MN = 0,5·b − 0,5·c = (b − c)/2. Ayirish tartibini almashtirish ishorani teskari qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-vektor",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#1c1082f8"
+    },
+    {
+      "q": "Usta ABC uchburchak shaklidagi ramka yasab, AB tomon o'rtasi M ni AC tomon o'rtasi N bilan reyka orqali birlashtirdi. BC = a bo'lsa, MN reyka vektori nimaga teng?",
+      "v": [
+        "0,5·a",
+        "a",
+        "2·a",
+        "−0,5·a"
+      ],
+      "t": 0,
+      "izoh": "MN = AN − AM tenglikdan foydalanamiz: AM = 0,5·AB va AN = 0,5·AC. Demak MN = 0,5·(AC − AB) = 0,5·BC = 0,5·a. Boshi M (AB o'rtasi), oxiri N (AC o'rtasi) bo'lgani uchun yo'nalish BC bilan bir xil va ishora musbat. Boshi bilan oxirini almashtirsak −0,5·a chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-vektor",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#cc73c235"
+    },
+    {
+      "q": "ABC uchburchakda M — AB tomonning o'rtasi, N — BC tomonning o'rtasi. MN vektor AC vektor bilan qanday bog'langan?",
+      "v": [
+        "MN = AC",
+        "MN = 2·AC",
+        "MN = 0,5·AC",
+        "MN = −0,5·AC"
+      ],
+      "t": 2,
+      "izoh": "MN = BN − BM tenglikdan foydalanamiz: BN = 0,5·BC va BM = 0,5·BA. Demak MN = 0,5·(BC − BA) = 0,5·(BC + AB) = 0,5·AC. Ya'ni o'rta chiziq vektori AC ning yarmiga teng va u bilan bir xil yo'nalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-vektor",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#dce9f2d2"
+    },
+    {
+      "q": "ABCD trapetsiyada BC ∥ AD, AD = a va BC = b. Yon tomonlar o'rtalarini birlashtiruvchi MN vektorni yozing.",
+      "v": [
+        "0,5·a",
+        "a + b",
+        "(b − a)/2",
+        "(a + b)/2"
+      ],
+      "t": 3,
+      "izoh": "M — AB ning o'rtasi, N — CD ning o'rtasi bo'lsin. Bu holda MN = 0,5·(AD + BC) tenglik o'rinli, u trapetsiya o'rta chizig'ining vektor ko'rinishi. Demak MN = (a + b)/2. Uzunlik jihatidan bu asoslar yig'indisining yarmiga mos keladi. 0,5·a — o'rta chiziqni faqat katta asosning yarmi deb olish xatosi; a + b — ikkiga bo'lishni unutish; (b − a)/2 — yig'indi o'rniga ayirmani olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-chiziq-vektor",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#7c5c6e69"
+    },
+    {
+      "q": "ABC uchburchakda AB = a va AC = b berilgan. BC tomonga o'tkazilgan AM medianani a va b orqali ifodalang.",
+      "v": [
+        "(a − b)/2",
+        "(a + b)/2",
+        "(b − a)/2",
+        "a + b"
+      ],
+      "t": 1,
+      "izoh": "M nuqta BC ning o'rtasi, shuning uchun AM = AB + BM = a + 0,5·BC. BC = b − a bo'lgani uchun AM = a + 0,5·b − 0,5·a = 0,5·(a + b). Median vektori tomon vektorlarining yarim yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "medianani-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#e2c87932"
+    },
+    {
+      "q": "ABC uchburchakda AB = a va AC = b. M nuqta AC tomonning o'rtasi bo'lsa, BM medianani yoying.",
+      "v": [
+        "a − 0,5·b",
+        "0,5·(a + b)",
+        "0,5·b − a",
+        "0,5·a − b"
+      ],
+      "t": 2,
+      "izoh": "BM vektorni ikki bosqichda yozamiz: BM = BA + AM. Bu yerda BA = −a, chunki yo'nalish AB ga teskari. AM = 0,5·b, chunki M nuqta AC ning o'rtasi. Demak BM = 0,5·b − a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "medianani-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#033319b0"
+    },
+    {
+      "q": "Uchburchakning C uchidan AB tomonga tushirilgan CK medianasini CA = m va CB = n orqali ifodalang.",
+      "v": [
+        "0,5·(m + n)",
+        "0,5·(n − m)",
+        "m + n",
+        "0,5·m + n"
+      ],
+      "t": 0,
+      "izoh": "K nuqta AB tomonning o'rtasi. CK = CA + AK bo'ladi, bu yerda AK = 0,5·AB = 0,5·(n − m). Demak CK = m + 0,5·n − 0,5·m = 0,5·(m + n). Median vektori uchdan chiqqan ikki tomon vektorining yarim yig'indisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "medianani-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#80015583"
+    },
+    {
+      "q": "Uchburchak shaklidagi bog'chaning burchaklarida A, B va C ustunlar bor. Bog'bon A ustundan BC tomonning o'rtasiga so'qmoq soldi. AB = p va AC = q bo'lsa, so'qmoq vektori qanday?",
+      "v": [
+        "0,5·(p + q)",
+        "p + q",
+        "0,5·(q − p)",
+        "0,5·p + q"
+      ],
+      "t": 0,
+      "izoh": "So'qmoq A uchidan BC tomonning o'rtasiga boradi, ya'ni bu median. Median vektori AB va AC vektorlarining yarim yig'indisiga teng: 0,5·(p + q). Agar 0,5 koeffitsient unutilsa, natija ikki barobar katta chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "medianani-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#173dcb44"
+    },
+    {
+      "q": "ABC uchburchakda AM va BN medianalar o'tkazilgan. AB = c va AC = b bo'lsa, AM + BN yig'indisi nimaga teng?",
+      "v": [
+        "b + 0,5·c",
+        "0,5·b − c",
+        "b − 0,5·c",
+        "1,5·b − 0,5·c"
+      ],
+      "t": 2,
+      "izoh": "AM = 0,5·(b + c), chunki M nuqta BC ning o'rtasi. N nuqta AC ning o'rtasi bo'lgani uchun BN = BA + AN = −c + 0,5·b. Ikkalasini qo'shamiz: 0,5·b + 0,5·c − c + 0,5·b = b − 0,5·c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "medianani-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#8a10aa9b"
+    },
+    {
+      "q": "ABCD parallelogrammda AB = a va AD = b. AC diagonal vektorini a va b orqali ifodalang.",
+      "v": [
+        "a − b",
+        "a + b",
+        "b − a",
+        "0,5·(a + b)"
+      ],
+      "t": 1,
+      "izoh": "Parallelogrammda AC = AB + BC tenglik o'rinli. BC vektor AD ga teng, chunki bu tomonlar parallel va uzunliklari bir xil. Demak AC = a + b. Bu parallelogramm qoidasining to'g'ridan-to'g'ri natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelogramm-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#1631f897"
+    },
+    {
+      "q": "ABCD parallelogrammda AB = a va AD = b bo'lsa, BD diagonal vektori qanday yoziladi?",
+      "v": [
+        "a + b",
+        "a − b",
+        "−a − b",
+        "b − a"
+      ],
+      "t": 3,
+      "izoh": "BD vektorni BA va AD orqali yozamiz: BD = BA + AD. Bu yerda BA = −a, chunki u AB ga teskari yo'nalgan. Demak BD = −a + b = b − a. Ayirish tartibini chalkashtirish a − b xatosini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelogramm-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#149ddb36"
+    },
+    {
+      "q": "Darvoza ramkasi parallelogramm shaklida yasalgan. Usta AB = m va AD = n deb belgiladi. Diagonallar kesishgan nuqta O bo'lsa, AO vektor nimaga teng?",
+      "v": [
+        "m + n",
+        "0,5·(n − m)",
+        "0,5·(m + n)",
+        "m + 0,5·n"
+      ],
+      "t": 2,
+      "izoh": "Parallelogramm diagonallari kesishgan nuqtada teng ikkiga bo'linadi. AC = m + n bo'lgani uchun O nuqta AC diagonalning o'rtasi hisoblanadi. Demak AO = 0,5·AC = 0,5·(m + n). m + n — diagonalni ikkiga bo'lishni unutish; m + 0,5·n — faqat bitta vektorni yarimlash xatosi; 0,5·(n − m) — AC o'rniga BD diagonalning yarmini olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelogramm-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#06d345da"
+    },
+    {
+      "q": "ABCD parallelogrammda AC = p va BD = q berilgan. AB tomon vektorini p va q orqali ifodalang.",
+      "v": [
+        "(p − q)/2",
+        "(p + q)/2",
+        "(q − p)/2",
+        "p − q"
+      ],
+      "t": 0,
+      "izoh": "AC = AB + AD va BD = AD − AB tengliklarni yozamiz. Birinchisidan ikkinchisini ayirsak p − q = 2·AB chiqadi, demak AB = (p − q)/2. Ularni qo'shsak esa AD = (p + q)/2 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallelogramm-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#9a9e82ea"
+    },
+    {
+      "q": "ABCD parallelogrammda M nuqta BC tomonning o'rtasi. AB = a va AD = b bo'lsa, AM vektorni yoying.",
+      "v": [
+        "0,5·a + b",
+        "0,5·(a + b)",
+        "a + b",
+        "a + 0,5·b"
+      ],
+      "t": 3,
+      "izoh": "AM = AB + BM tenglikdan boshlaymiz. BM = 0,5·BC, BC vektor esa AD ga, ya'ni b ga teng. Demak BM = 0,5·b va AM = a + 0,5·b. Yarim koeffitsientni noto'g'ri vektorga qo'yish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelogramm-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#56352c00"
+    },
+    {
+      "q": "Yo'lakning A va B chetlari orasidagi vektor AB = a. P nuqta yo'lakda AP : PB = 2 : 3 nisbatda joylashgan bo'lsa, AP vektor nimaga teng?",
+      "v": [
+        "0,6·a",
+        "0,4·a",
+        "(2/3)·a",
+        "0,5·a"
+      ],
+      "t": 1,
+      "izoh": "AP : PB = 2 : 3 bo'lsa, kesma 5 ta teng bo'lakka bo'linadi, chunki 2 + 3 = 5. AP shu bo'laklardan ikkitasi: AP = (2/5)·a = 0,4·a. Nisbatni to'g'ridan-to'g'ri kasr deb olish (2/3)·a xatosini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmani-nisbatda-bolish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#c2838d4f"
+    },
+    {
+      "q": "M nuqta CD kesmani C uchidan boshlab 3 : 1 nisbatda bo'ladi. CD = v bo'lsa, MD vektor nimaga teng?",
+      "v": [
+        "0,75·v",
+        "0,25·v",
+        "(1/3)·v",
+        "0,5·v"
+      ],
+      "t": 1,
+      "izoh": "Nisbat CM : MD = 3 : 1 bo'lgani uchun kesma 4 ta teng bo'lakka bo'linadi. MD shu bo'laklarning bittasi, ya'ni MD = 0,25·v. CM esa uchtasi bo'lib, 0,75·v ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesmani-nisbatda-bolish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#d013ba9f"
+    },
+    {
+      "q": "Uzunligi 60 metr bo'lgan ko'prikda nazorat ustuni A chetidan boshlab 2 : 1 nisbatda o'rnatilgan. Ko'prik vektori AB = s bo'lsa, AK vektor va uning uzunligi qanday?",
+      "v": [
+        "(1/3)·s va 20 m",
+        "0,5·s va 30 m",
+        "2·s va 120 m",
+        "(2/3)·s va 40 m"
+      ],
+      "t": 3,
+      "izoh": "AK : KB = 2 : 1 bo'lgani uchun ko'prik 3 ta teng bo'lakka bo'linadi. AK ulardan ikkitasi, ya'ni AK = (2/3)·s. Uzunligi 60 : 3 · 2 = 40 metr. Nisbatni teskari olish 20 metr xatosiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmani-nisbatda-bolish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#35a6042a"
+    },
+    {
+      "q": "O — ixtiyoriy nuqta, C nuqta esa AB kesmaning o'rtasi. OC vektorni OA va OB vektorlar orqali ifodalang.",
+      "v": [
+        "0,5·(OA + OB)",
+        "OA + OB",
+        "0,5·(OB − OA)",
+        "0,5·OA + OB"
+      ],
+      "t": 0,
+      "izoh": "OC = OA + AC va AC = 0,5·AB = 0,5·(OB − OA). Demak OC = OA + 0,5·OB − 0,5·OA = 0,5·(OA + OB). Bu formula kesma o'rtasining radius vektori uchun asosiy natija hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmani-nisbatda-bolish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#e6b7e173"
+    },
+    {
+      "q": "AB kesmada N nuqta AN : NB = 1 : 4 nisbatda yotadi. Ixtiyoriy O nuqta uchun ON vektorni OA va OB orqali yozing.",
+      "v": [
+        "0,2·OA + 0,8·OB",
+        "0,25·OA + 0,75·OB",
+        "0,8·OA + 0,2·OB",
+        "0,5·(OA + OB)"
+      ],
+      "t": 2,
+      "izoh": "AN = (1/5)·AB, chunki 1 + 4 = 5. Shundan ON = OA + AN = OA + 0,2·(OB − OA). Qavsni ochamiz va ON = 0,8·OA + 0,2·OB hosil bo'ladi. Koeffitsientlarni almashtirib yuborish eng ko'p uchraydigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmani-nisbatda-bolish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#0f164516"
+    },
+    {
+      "q": "a(1; 2) va b(3; −1) vektorlar berilgan. c(11; 1) vektorni c = x·a + y·b ko'rinishida yoying.",
+      "v": [
+        "x = 3, y = 2",
+        "x = −2, y = 3",
+        "x = 2, y = −3",
+        "x = 2, y = 3"
+      ],
+      "t": 3,
+      "izoh": "Koordinatalar bo'yicha sistema tuziladi: x + 3y = 11 va 2x − y = 1. Ikkinchisidan y = 2x − 1 ni birinchisiga qo'yamiz: x + 6x − 3 = 11, ya'ni 7x = 14 va x = 2. Bundan y = 3. Tekshiruv: 2·(1; 2) + 3·(3; −1) = (11; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinatada-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#869184dd"
+    },
+    {
+      "q": "a(2; 3) va b(−1; 4) vektorlar orqali c(8; 1) vektor c = m·a + n·b ko'rinishida yoyilgan. m va n ni toping.",
+      "v": [
+        "m = −2, n = 3",
+        "m = 3, n = −2",
+        "m = 3, n = 2",
+        "m = 2, n = −3"
+      ],
+      "t": 1,
+      "izoh": "Sistema quyidagicha: 2m − n = 8 va 3m + 4n = 1. Birinchisidan n = 2m − 8 ni ikkinchisiga qo'yamiz: 3m + 8m − 32 = 1, ya'ni 11m = 33 va m = 3. Demak n = −2. Tekshiruv: 3·(2; 3) − 2·(−1; 4) = (8; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinatada-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#6179b17b"
+    },
+    {
+      "q": "Do'konda ikki xil quruq aralashma bor: birinchisining tarkibi a(3; 1), ikkinchisiniki b(1; 2) vektor bilan yozilgan. Kerakli aralashma c(9; 8) bo'lsa, qanday nisbatda olinadi?",
+      "v": [
+        "3 : 2",
+        "1 : 3",
+        "2 : 3",
+        "3 : 1"
+      ],
+      "t": 2,
+      "izoh": "Yoyilma c = x·a + y·b dan sistema chiqadi: 3x + y = 9 va x + 2y = 8. Birinchisidan y = 9 − 3x ni ikkinchisiga qo'yamiz: x + 18 − 6x = 8, ya'ni 5x = 10 va x = 2, y = 3. Demak nisbat 2 : 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinatada-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#82110e36"
+    },
+    {
+      "q": "p(4; −2) va q(−1; 3) vektorlar bo'yicha r(4; 8) yoyilganda hosil bo'lgan koeffitsientlar ayirmasi x − y nechaga teng?",
+      "v": [
+        "−2",
+        "2",
+        "6",
+        "−6"
+      ],
+      "t": 0,
+      "izoh": "Sistema: 4x − y = 4 va −2x + 3y = 8. Birinchisidan y = 4x − 4 ni ikkinchisiga qo'yamiz: −2x + 12x − 12 = 8, ya'ni 10x = 20 va x = 2, so'ng y = 4. Ayirma x − y = 2 − 4 = −2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinatada-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#ac29aec5"
+    },
+    {
+      "q": "a(1; 1) va b(1; −1) vektorlar bazis sifatida olingan. c(5; 3) vektorning shu bazisdagi yoyilmasini yozing.",
+      "v": [
+        "c = 4·a + b",
+        "c = a + 4·b",
+        "c = 4·a − b",
+        "c = 3·a + 2·b"
+      ],
+      "t": 0,
+      "izoh": "Yoyilma c = x·a + y·b dan x + y = 5 va x − y = 3 sistemasi chiqadi. Tenglamalarni qo'shsak 2x = 8 va x = 4, ayirsak 2y = 2 va y = 1. Demak c = 4·a + b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinatada-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#efef5dfc"
+    },
+    {
+      "q": "Qaysi juftlik tekislikda bazis bo'la oladi: a(2; 4) va b(1; 2), yoki m(3; 1) va n(6; 5)?",
+      "v": [
+        "Faqat a va b juftligi",
+        "Ikkala juftlik ham bazis bo'la oladi",
+        "Faqat m va n juftligi",
+        "Hech qaysi juftlik bazis bo'la olmaydi"
+      ],
+      "t": 2,
+      "izoh": "Bazis uchun vektorlar kollinear bo'lmasligi kerak. a va b uchun 2·2 − 1·4 = 0, ya'ni ular kollinear va bazis bo'la olmaydi. m va n uchun 3·5 − 6·1 = 9 chiqadi, noldan farqli, demak ular bazis hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bazis-tekshirish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#be5ca731"
+    },
+    {
+      "q": "Nima uchun kollinear ikki vektor tekislikda bazis vazifasini bajara olmaydi?",
+      "v": [
+        "Chunki ularning uzunliklari doim teng bo'ladi",
+        "Chunki ular bilan faqat o'sha to'g'ri chiziqqa parallel vektorlarni ifodalash mumkin",
+        "Chunki ularning yig'indisi har doim nol vektor",
+        "Chunki kollinear vektorlarning biri albatta nol vektor"
+      ],
+      "t": 1,
+      "izoh": "Kollinear a va b uchun b = k·a bo'ladi. Shuning uchun x·a + y·b = (x + y·k)·a, ya'ni yoyilma har doim a ga kollinear vektor beradi. Bunday juftlik butun tekislikni qoplay olmaydi va bazis bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bazis-tekshirish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#808afc76"
+    },
+    {
+      "q": "k ning qanday qiymatida a(k; 6) va b(3; 9) vektorlar bazis hosil qila olmaydi?",
+      "v": [
+        "4,5",
+        "−2",
+        "18",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Bazis bo'lmasligi uchun vektorlar kollinear bo'lishi kerak: k·9 − 3·6 = 0. Bundan 9k = 18 va k = 2. Tekshiruv: a(2; 6) va b(3; 9) uchun b = 1,5·a. Nisbatni ag'darib olish 4,5 xatosini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bazis-tekshirish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#53ef40fe"
+    },
+    {
+      "q": "Loyihachi Nodira ikkita yo'nalish vektorini tanlab, ular yordamida barcha siljishlarni ifodalamoqchi. U (4; 6) va (−6; −9) juftligini tanladi. Rejasi ishlaydimi?",
+      "v": [
+        "Ha, chunki vektorlar har xil ishoraga ega",
+        "Ha, chunki ularning uzunliklari har xil",
+        "Yo'q, chunki tanlangan vektorlar kollinear",
+        "Yo'q, chunki ikkalasi ham nol vektor"
+      ],
+      "t": 2,
+      "izoh": "Tekshiramiz: 4·(−9) − (−6)·6 = −36 + 36 = 0. Shart bajarildi, demak vektorlar kollinear va (−6; −9) = −1,5·(4; 6). Kollinear juftlik bazis bo'la olmaydi, shuning uchun ular bilan barcha siljishlarni ifodalab bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bazis-tekshirish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#1a129897"
+    },
+    {
+      "q": "Tekislikda kollinear bo'lmagan a va b vektorlar berilgan. Ixtiyoriy c vektor uchun c = x·a + y·b yoyilma haqida nima deyish mumkin?",
+      "v": [
+        "Har doim mavjud va yagona",
+        "Mavjud, lekin cheksiz ko'p usulda yozish mumkin",
+        "Faqat c vektor a ga kollinear bo'lganda mavjud",
+        "Umuman mavjud bo'lmasligi ham mumkin"
+      ],
+      "t": 0,
+      "izoh": "Tekislikda vektorni yoyish teoremasiga ko'ra kollinear bo'lmagan ikki vektor bazis hosil qiladi. Har qanday c vektor shu bazis bo'yicha yoyiladi va koeffitsientlar yagona aniqlanadi. Yagonalik ikki yoyilma ayirmasini nolga tenglashtirish orqali isbotlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilma-yagonaligi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#b35ddf18"
+    },
+    {
+      "q": "a va b vektorlar kollinear emas. c = 3·a − 2·b va shu bilan birga c = x·a + y·b bo'lsa, x va y nimaga teng?",
+      "v": [
+        "x = −2, y = 3",
+        "x = 3, y = 2",
+        "Bir nechta har xil javob bo'lishi mumkin",
+        "x = 3, y = −2"
+      ],
+      "t": 3,
+      "izoh": "Yoyilma yagona bo'lgani uchun bitta vektorning ikki xil yozuvidagi koeffitsientlar mos ravishda teng bo'ladi. Demak x = 3 va y = −2. Agar a va b kollinear bo'lganida yoyilma yagona bo'lmas edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilma-yagonaligi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#4a6dd34a"
+    },
+    {
+      "q": "Nol vektorni kollinear bo'lmagan a va b vektorlar bo'yicha yoyganda koeffitsientlar qanday bo'ladi?",
+      "v": [
+        "x = 1 va y = −1",
+        "x = 0 va y = 0",
+        "x = 0, y esa ixtiyoriy",
+        "Nol vektorni umuman yoyib bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Agar x·a + y·b = 0 va y noldan farqli bo'lsa, b = −(x/y)·a chiqadi, ya'ni vektorlar kollinear bo'lib qoladi. Bu shartga zid. Demak y = 0, so'ng x·a = 0 va a nolmas bo'lgani uchun x = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyilma-yagonaligi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#6c57ec7b"
+    },
+    {
+      "q": "Nol vektor har qanday vektorga kollinear deb hisoblanadimi va bu qanday asoslanadi?",
+      "v": [
+        "Yo'q, chunki uning aniq yo'nalishi yo'q",
+        "Ha, chunki nol vektor 0·a ko'rinishida yozilishi istalgan a uchun o'rinli",
+        "Faqat boshqa nol vektorga kollinear bo'ladi",
+        "Faqat birlik vektorlarga kollinear bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Kelishuvga ko'ra nol vektor istalgan vektorga kollinear deb qabul qilinadi. Sababi shundaki, b = k·a shartning k = 0 dagi holati nol vektorni beradi. Bu kelishuv formulalarni istisnosiz qoldiradi va isbotlarni soddalashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilma-yagonaligi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#0af88b8f"
+    },
+    {
+      "q": "a va b vektorlar kollinear, b = 3·a va |a| = 4 ga teng. |a + b| hamda |a − b| qiymatlarini toping.",
+      "v": [
+        "8 va 16",
+        "12 va 4",
+        "16 va 4",
+        "16 va 8"
+      ],
+      "t": 3,
+      "izoh": "b = 3·a bo'lgani uchun a + b = 4·a va uning uzunligi 4·4 = 16. Xuddi shunday a − b = a − 3·a = −2·a, uzunligi esa 2·4 = 8. Uzunlik olinganda koeffitsientning moduli qaraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kollinear-vektorlar-amallar",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#ac53f3c0"
+    },
+    {
+      "q": "Ikki tros yukni bitta to'g'ri chiziq bo'ylab tortmoqda: biri 240 N kuch bilan, ikkinchisi qarama-qarshi tomonga 150 N kuch bilan. Natijaviy kuch qanday?",
+      "v": [
+        "90 N, 240 N li kuch tomoniga yo'nalgan",
+        "390 N, 240 N li kuch tomoniga yo'nalgan",
+        "90 N, 150 N li kuch tomoniga yo'nalgan",
+        "0 N, ya'ni yuk qo'zg'almaydi"
+      ],
+      "t": 0,
+      "izoh": "Kuch vektorlari kollinear, lekin qarama-qarshi yo'nalgan. Bunday holda yig'indi modullar ayirmasiga teng: 240 − 150 = 90 N. Yo'nalish kattaroq kuch tomonida qoladi. Modullarni qo'shib 390 deb olish faqat bir tomonga yo'nalganda to'g'ri bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kollinear-vektorlar-amallar",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#1167869b"
+    },
+    {
+      "q": "m(−3; 6) va n(2; −4) vektorlar uchun 2·m + 3·n natijasi m vektorga kollinear bo'ladimi?",
+      "v": [
+        "Ha, natija (−12; 24) va u m ga kollinear",
+        "Yo'q, natija m ga kollinear emas",
+        "Natija nol vektor, u esa har qanday vektorga kollinear",
+        "Natija (0; 24) bo'lib, m ga kollinear emas"
+      ],
+      "t": 2,
+      "izoh": "Avval hisoblaymiz: 2·m = (−6; 12) va 3·n = (6; −12). Ularni qo'shamiz: (−6 + 6; 12 − 12) = (0; 0). Bu nol vektor. Kelishuvga ko'ra nol vektor barcha vektorlarga, jumladan m ga ham kollinear hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kollinear-vektorlar-amallar",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#7ead31cd"
+    },
+    {
+      "q": "p va q vektorlar kollinear, p = −2·q va |q| = 5 bo'lsa, |3·p + q| nimaga teng?",
+      "v": [
+        "35",
+        "5",
+        "30",
+        "25"
+      ],
+      "t": 3,
+      "izoh": "p = −2·q ekanini qo'yamiz: 3·p + q = −6·q + q = −5·q. Uzunlik esa 5·|q| = 5·5 = 25. Modullarni alohida qo'shib 30 + 5 = 35 deb olish tipik xato, chunki vektorlar qarama-qarshi yo'nalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kollinear-vektorlar-amallar",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#2c508355"
+    },
+    {
+      "q": "Qayiq daryoda (6; 8) tezlik vektori bilan suzardi. Motor kuchaytirilgach tezlik vektori (9; 12) bo'ldi. Yo'nalish va tezlik qanday o'zgardi?",
+      "v": [
+        "Yo'nalish o'zgardi, tezlik 1,5 marta ortdi",
+        "Yo'nalish o'zgarmadi, tezlik 1,5 marta ortdi",
+        "Yo'nalish o'zgarmadi, tezlik 3 marta ortdi",
+        "Yo'nalish o'zgarmadi, tezlik 2 marta ortdi"
+      ],
+      "t": 1,
+      "izoh": "Kollinearlikni tekshiramiz: 6·12 − 9·8 = 72 − 72 = 0, demak yo'nalish saqlangan. Koeffitsient 9 : 6 = 1,5 va u musbat. Uzunliklar √(6² + 8²) = 10 hamda √(9² + 12²) = 15, nisbati 15 : 10 = 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-tezlik-yonalish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#9020aac4"
+    },
+    {
+      "q": "Dron A nuqtadan (12; −5) vektor bo'ylab uchdi. So'ng aynan shu yo'nalishda 2,6 marta uzunroq masofani bosib o'tdi. Ikkinchi ko'chish vektori qanday?",
+      "v": [
+        "(14,6; −2,4)",
+        "(31,2; 13)",
+        "(31,2; −13)",
+        "(2,6; 2,6)"
+      ],
+      "t": 2,
+      "izoh": "Bir xil yo'nalishdagi uzunroq vektor musbat koeffitsientga ko'paytirish bilan olinadi. Har bir koordinatani 2,6 ga ko'paytiramiz: 12·2,6 = 31,2 va −5·2,6 = −13. Demak vektor (31,2; −13). Koordinataga 2,6 ni qo'shish noto'g'ri amal.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-tezlik-yonalish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#2d71d6b7"
+    },
+    {
+      "q": "Piyoda har 10 daqiqada (0,6; 0,8) km ga ko'chadi va yo'nalishini o'zgartirmaydi. Bir soatda uning ko'chish vektori va bosgan yo'li qanday bo'ladi?",
+      "v": [
+        "(3,6; 4,8) va 6 km",
+        "(0,6; 0,8) va 1 km",
+        "(3,6; 4,8) va 8,4 km",
+        "(6; 8) va 10 km"
+      ],
+      "t": 0,
+      "izoh": "Bir soatda 10 daqiqalik oraliq 6 marta takrorlanadi, demak ko'chish vektori 6 ga ko'paytiriladi va (3,6; 4,8) chiqadi. Yo'l uzunligi √(3,6² + 4,8²) = 6 km. Buni √(0,6² + 0,8²) = 1 km ni 6 ga ko'paytirib ham topsa bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-tezlik-yonalish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#9330cc2f"
+    },
+    {
+      "q": "Ikki samolyot bir vaqtda uchdi: birinchisining yo'nalish vektori (5; −12), ikkinchisiniki (−10; 24). Ular qanday uchmoqda?",
+      "v": [
+        "Bitta to'g'ri chiziq bo'ylab qarama-qarshi tomonga",
+        "Bitta to'g'ri chiziq bo'ylab bir tomonga",
+        "Bir-biriga perpendikulyar yo'nalishda",
+        "Yo'nalishlari kesishib burchak hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Kollinearlik sharti: 5·24 − (−10)·(−12) = 120 − 120 = 0. Demak yo'nalishlar bitta to'g'ri chiziq bo'ylab. Koeffitsient −10 : 5 = −2 manfiy, shuning uchun samolyotlar qarama-qarshi tomonga uchmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-tezlik-yonalish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#837f98a9"
+    },
+    {
+      "q": "Xaritada A shahardan B ga ko'chish vektori (3; 4) santimetr bilan berilgan, masshtab esa 1 : 200000. Haqiqiy ko'chish vektori va masofa qancha?",
+      "v": [
+        "(3; 4) km va 5 km",
+        "(6; 8) km va 14 km",
+        "(6; 8) km va 10 km",
+        "(600; 800) km va 1000 km"
+      ],
+      "t": 2,
+      "izoh": "Masshtab 1 : 200000 bo'lsa, chizmadagi 1 santimetr haqiqatda 200000 santimetrga, ya'ni 2 km ga teng. Demak vektor (3·2; 4·2) = (6; 8) km. Masofa √(6² + 8²) = 10 km. Koordinatalarni qo'shib 14 deb olish uzunlikni noto'g'ri hisoblash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masshtab-xarita",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#d6767187"
+    },
+    {
+      "q": "Reja chizmasida devor vektori (2; 5) santimetr, haqiqatda esa (8; 20) metr. Chizmada masshtab bir xil saqlanganmi?",
+      "v": [
+        "Yo'q, chunki koordinatalar mos kelmaydi",
+        "Ha, ikkala vektor kollinear va koeffitsient 4 ga teng",
+        "Ha, lekin koeffitsient 10 ga teng",
+        "Yo'q, chunki o'lchov birliklari har xil"
+      ],
+      "t": 1,
+      "izoh": "Masshtab saqlanishi uchun vektorlar kollinear bo'lishi kerak: 2·20 − 8·5 = 40 − 40 = 0. Shart bajarildi. Koeffitsient 8 : 2 = 4 va 20 : 5 = 4, ya'ni chizmadagi 1 santimetr haqiqatdagi 4 metrga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtab-xarita",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#074b4989"
+    },
+    {
+      "q": "Yer uchastkasi chizmasidagi (5; 12) santimetrli vektor haqiqatdagi 65 metrlik chegaraga to'g'ri keladi. Chizmadagi 1 santimetr necha metrga teng?",
+      "v": [
+        "13 metr",
+        "12 metr",
+        "65 metr",
+        "5 metr"
+      ],
+      "t": 3,
+      "izoh": "Chizmadagi vektor uzunligi √(5² + 12²) = √169 = 13 santimetr. Bu 65 metrga mos keladi, demak 1 santimetr 65 : 13 = 5 metrni bildiradi. Koordinatalardan birini uzunlik deb olish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtab-xarita",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#e66900cd"
+    },
+    {
+      "q": "Turistik xaritada so'qmoq vektori (9; −12) millimetr. Xuddi shu yo'nalishdagi 3 marta uzunroq so'qmoqning vektori va uzunligi qanday?",
+      "v": [
+        "(27; −36) va 15 mm",
+        "(12; −15) va 45 mm",
+        "(27; −36) va 45 mm",
+        "(3; −4) va 5 mm"
+      ],
+      "t": 2,
+      "izoh": "Uzunroq so'qmoq vektori 3 ga ko'paytirish bilan olinadi: (27; −36). Uning uzunligi √(27² + 36²) = 45 millimetr. Buni dastlabki uzunlik √(9² + 12²) = 15 ni 3 ga ko'paytirib ham topish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtab-xarita",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#03f9c0c2"
+    },
+    {
+      "q": "ABCD to'rtburchakda AB = a, BC = b va CD = c berilgan. AD vektorni shu uch vektor orqali ifodalang.",
+      "v": [
+        "a + b + c",
+        "a + b − c",
+        "a − b + c",
+        "−a − b − c"
+      ],
+      "t": 0,
+      "izoh": "Vektorlarni qo'shishning uchburchak qoidasiga ko'ra AD = AB + BC + CD. Ketma-ket qo'shilgan vektorlar zanjiri boshi va oxirini birlashtiruvchi vektorni beradi. Demak AD = a + b + c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopburchak-yigindi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#a7ee7d60"
+    },
+    {
+      "q": "ABCDE beshburchakda AB + BC + CD + DE + EA yig'indisi nimaga teng bo'ladi?",
+      "v": [
+        "AE vektorga teng",
+        "AB vektorga teng",
+        "Beshburchak perimetriga teng uzunlikdagi vektor",
+        "Nol vektorga teng"
+      ],
+      "t": 3,
+      "izoh": "Ketma-ket qo'shilgan vektorlar zanjiri A nuqtadan chiqib yana A nuqtaga qaytadi. Boshlanish va tugash nuqtasi ustma-ust tushgani uchun natija nol vektor bo'ladi. Yopiq siniq chiziq vektorlari yig'indisi har doim nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopburchak-yigindi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#2937bee1"
+    },
+    {
+      "q": "Hovli ABCD to'rtburchak shaklida. Bola A burchakdan B ga, keyin C ga, so'ng D ga yugurib, oxirida A ga qaytdi. AB = a, BC = b va CD = c bo'lsa, oxirgi bo'lak DA vektorini a, b, c orqali yoying.",
+      "v": [
+        "a + b + c",
+        "−a − b − c",
+        "a + b − c",
+        "Nol vektor"
+      ],
+      "t": 1,
+      "izoh": "Bola yopiq zanjir bo'ylab yurdi, ya'ni AB + BC + CD + DA = 0. Bundan DA = −(AB + BC + CD) = −a − b − c. Ishorani tushirib qoldirish a + b + c ni beradi, lekin bu AD vektor, DA emas. Nol vektor esa butun zanjir yig'indisi, alohida DA bo'lagi emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopburchak-yigindi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#6dd6f368"
+    },
+    {
+      "q": "ABCD parallelogrammda AB + AD + CB + CD yig'indisini soddalashtiring va natijani ko'rsating.",
+      "v": [
+        "2·AC vektor",
+        "Nol vektor",
+        "AC vektor",
+        "2·BD vektor"
+      ],
+      "t": 1,
+      "izoh": "Parallelogramm qoidasiga ko'ra AB + AD = AC. Xuddi shunday CB + CD = CA, chunki C uchidan chiqqan ikki tomon yig'indisi CA diagonalni beradi. Demak yig'indi AC + CA ko'rinishiga keladi va nol vektorga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopburchak-yigindi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#d1615dd9"
+    },
+    {
+      "q": "ABCDEF muntazam olti burchakda AB = a va BC = b. AD katta diagonal vektorini a va b orqali ifodalang.",
+      "v": [
+        "a + b",
+        "a + 2·b",
+        "2·a + b",
+        "2·b"
+      ],
+      "t": 3,
+      "izoh": "Muntazam olti burchakda AD diagonal markazdan o'tadi va uzunligi tomonning ikki barobariga teng. Koordinatalarda A(0; 0), B(1; 0), C(1,5; √3/2), D(1; √3) deb olsak, AD = (1; √3) va BC = (0,5; √3/2). Bundan ko'rinadiki AD = 2·b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopburchak-yigindi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#d7c232eb"
+    },
+    {
+      "q": "ABC uchburchakda medianalar M nuqtada kesishadi. AB = c va AC = b bo'lsa, AM vektorni yoying.",
+      "v": [
+        "(b + c)/3",
+        "(b + c)/2",
+        "2·(b + c)/3",
+        "(b − c)/3"
+      ],
+      "t": 0,
+      "izoh": "A uchidan chiqqan median vektori 0,5·(b + c) ga teng. Medianalar kesishgan nuqta uni uchdan ikki qismda bo'ladi, shuning uchun AM = (2/3)·0,5·(b + c) = (b + c)/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ogirlik-markazi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#f21f227d"
+    },
+    {
+      "q": "O — ixtiyoriy nuqta, G — ABC uchburchak medianalari kesishgan nuqta. OG vektorni OA, OB va OC orqali yozing.",
+      "v": [
+        "(OA + OB + OC)/2",
+        "OA + OB + OC",
+        "(OA + OB + OC)/3",
+        "(OA + OB − OC)/3"
+      ],
+      "t": 2,
+      "izoh": "OG = OA + AG bo'lib, AG = (1/3)·(AB + AC). AB = OB − OA va AC = OC − OA bo'lgani uchun AG = (1/3)·(OB + OC − 2·OA). Ularni qo'shsak OG = (OA + OB + OC)/3 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ogirlik-markazi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#126f1ee7"
+    },
+    {
+      "q": "Uch ustunli chodirning og'irlik markazi ustunlar hosil qilgan uchburchak medianalari kesishgan nuqtada. Ustunlar A(0; 0), B(6; 0) va C(3; 9) nuqtalarda bo'lsa, markaz qayerda?",
+      "v": [
+        "(3; 4,5)",
+        "(4,5; 4,5)",
+        "(9; 9)",
+        "(3; 3)"
+      ],
+      "t": 3,
+      "izoh": "Og'irlik markazining radius vektori (OA + OB + OC)/3 formulasi bilan topiladi. Abssissa (0 + 6 + 3) : 3 = 3, ordinata esa (0 + 0 + 9) : 3 = 3. Demak markaz (3; 3) nuqtada. Koordinatalarni 3 o'rniga 2 ga bo'lish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ogirlik-markazi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#e36544c1"
+    },
+    {
+      "q": "G nuqta ABC uchburchakning og'irlik markazi bo'lsa, GA + GB + GC yig'indisi nimaga teng?",
+      "v": [
+        "3·GA vektor",
+        "Nol vektor",
+        "AB + BC yig'indisiga teng",
+        "AG vektor"
+      ],
+      "t": 1,
+      "izoh": "Og'irlik markazi uchun OG = (OA + OB + OC)/3 formulasi o'rinli. O nuqta o'rniga G ni olsak, chap tomonda GG, ya'ni nol vektor turadi. Demak GA + GB + GC yig'indisi ham nol vektorga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ogirlik-markazi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#07e015d4"
+    },
+    {
+      "q": "y = 2x + 5 to'g'ri chiziqning yo'nalish vektori bo'la oladigan vektorni tanlang: (2; 1), (2; −1), (1; 2) yoki (−1; 2)?",
+      "v": [
+        "(2; 1)",
+        "(2; −1)",
+        "(1; 2)",
+        "(−1; 2)"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri chiziqda abssissa bir birlikka ortganda ordinata ikki birlikka ortadi, chunki burchak koeffitsienti 2 ga teng. Demak yo'nalish vektori (1; 2). Koordinatalarni almashtirib (2; 1) deb olish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "togri-chiziq-yonalish-vektori",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#c27af719"
+    },
+    {
+      "q": "Ikki to'g'ri chiziqning yo'nalish vektorlari (4; −6) va (−6; 9) ga teng. Bu chiziqlar o'zaro qanday joylashgan?",
+      "v": [
+        "Parallel yoki ustma-ust tushadi",
+        "Faqat bitta nuqtada kesishadi",
+        "O'zaro perpendikulyar joylashgan",
+        "Berilgan ma'lumot yetarli emas"
+      ],
+      "t": 0,
+      "izoh": "Yo'nalish vektorlarining kollinearligini tekshiramiz: 4·9 − (−6)·(−6) = 36 − 36 = 0. Vektorlar kollinear, demak to'g'ri chiziqlar parallel. Agar ularning umumiy nuqtasi bo'lsa, chiziqlar ustma-ust tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-chiziq-yonalish-vektori",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#730cee60"
+    },
+    {
+      "q": "Ikki ko'chaning yo'nalish vektorlari xaritada (10; 4) va (15; a) ko'rinishida berilgan. Ko'chalar parallel bo'lishi uchun a nechaga teng bo'ladi?",
+      "v": [
+        "6",
+        "9",
+        "1,5",
+        "60"
+      ],
+      "t": 0,
+      "izoh": "Parallellik uchun yo'nalish vektorlari kollinear bo'lsin: 10·a − 15·4 = 0. Bundan 10a = 60 va a = 6. Koeffitsient 15 : 10 = 1,5 bo'lgani uchun a = 4·1,5 = 6. Koordinatalar ayirmasini tenglashtirish 9 xatosini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-chiziq-yonalish-vektori",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#6ba33968"
+    },
+    {
+      "q": "A(1; −2) va B(5; 4) nuqtalar orqali o'tgan to'g'ri chiziqqa parallel yo'nalish vektorini tanlang: (3; 2), (4; 5), (2; 3) yoki (−2; 3)?",
+      "v": [
+        "(3; 2)",
+        "(4; 5)",
+        "(2; 3)",
+        "(−2; 3)"
+      ],
+      "t": 2,
+      "izoh": "AB vektor (5 − 1; 4 − (−2)) = (4; 6) ga teng. Uni 2 ga qisqartirsak (2; 3) chiqadi va bu kollinear vektor. Tekshiruv: 4·3 − 2·6 = 0. Koordinatalarning o'rnini almashtirish (3; 2) xatosiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-chiziq-yonalish-vektori",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#681f4350"
+    },
+    {
+      "q": "a(12; −16) va b(−3; 4) kollinear vektorlarning uzunliklari nisbati |a| : |b| nechaga teng?",
+      "v": [
+        "1 : 4",
+        "4 : 1",
+        "2 : 1",
+        "16 : 3"
+      ],
+      "t": 1,
+      "izoh": "Uzunliklarni hisoblaymiz: |a| = √(12² + 16²) = √400 = 20 va |b| = √(3² + 4²) = √25 = 5. Nisbat 20 : 5, ya'ni 4 : 1. Koeffitsient ham buni tasdiqlaydi, chunki a = −4·b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzunliklar-nisbati",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#3b7b5a31"
+    },
+    {
+      "q": "Agar |a| = 6 va b = −2,5·a bo'lsa, b vektorning uzunligi nimaga teng bo'ladi?",
+      "v": [
+        "−15",
+        "8,5",
+        "2,4",
+        "15"
+      ],
+      "t": 3,
+      "izoh": "Vektorni songa ko'paytirganda uzunlik shu sonning moduliga ko'payadi: |b| = 2,5·6 = 15. Uzunlik manfiy bo'la olmaydi, shuning uchun −15 javob emas. Sonlarni qo'shish yoki bo'lish ham noto'g'ri natija beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzunliklar-nisbati",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#6bc20740"
+    },
+    {
+      "q": "Meteostansiyada shamol vektori soat 9 da (4; 3), soat 12 da esa (12; 9) deb qayd etildi. Shamol qanday o'zgargan?",
+      "v": [
+        "Yo'nalish o'zgarib, tezlik 3 marta ortdi",
+        "Yo'nalish saqlanib, tezlik 8 marta ortdi",
+        "Yo'nalish saqlanib, tezlik 3 marta ortdi",
+        "Tezlik o'zgarmadi, faqat yo'nalish burildi"
+      ],
+      "t": 2,
+      "izoh": "Kollinearlikni tekshiramiz: 4·9 − 12·3 = 36 − 36 = 0, demak yo'nalish saqlangan. Uzunliklar √(4² + 3²) = 5 va √(12² + 9²) = 15. Nisbat 15 : 5 = 3, ya'ni tezlik 3 marta ortgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzunliklar-nisbati",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#ce61884e"
+    },
+    {
+      "q": "a va b vektorlar kollinear, |a| = 9 va |b| = 6 hamda ular qarama-qarshi yo'nalgan. b ni a orqali ifodalang.",
+      "v": [
+        "b = −(2/3)·a",
+        "b = (2/3)·a",
+        "b = −1,5·a",
+        "b = −3·a"
+      ],
+      "t": 0,
+      "izoh": "Kollinear vektorlar uchun b = k·a. Uzunliklar nisbati |k| = 6 : 9 = 2/3 ni beradi. Yo'nalishlar qarama-qarshi bo'lgani uchun k manfiy, ya'ni k = −2/3. Nisbatni ag'darib olish −1,5 xatosiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzunliklar-nisbati",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#ab6b7eda"
+    },
+    {
+      "q": "a(3; −1) va b(−2; 5) vektorlar berilgan. c = 2·a + 3·b vektorning koordinatalarini toping.",
+      "v": [
+        "(1; 4)",
+        "(0; −13)",
+        "(12; 4)",
+        "(0; 13)"
+      ],
+      "t": 3,
+      "izoh": "Avval har bir vektorni songa ko'paytiramiz: 2·a = (6; −2) va 3·b = (−6; 15). So'ng mos koordinatalarni qo'shamiz: (6 − 6; −2 + 15) = (0; 13). Koeffitsientlarni e'tibordan chetda qoldirish (1; 4) xatosini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilmadan-vektor-topish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#3db31303"
+    },
+    {
+      "q": "Robot qo'lining ikki asosiy siljishi m(1; −2) va n(4; 3) vektorlar bilan berilgan. p = m − 2·n natijasi m ga kollinear bo'ladimi?",
+      "v": [
+        "Ha, chunki p = −7·m tenglik o'rinli",
+        "Yo'q, chunki 1·(−8) va (−7)·(−2) ko'paytmalar teng emas",
+        "Ha, chunki ikkala koordinata ham manfiy",
+        "Buni koordinatalar orqali aniqlab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Avval p ni topamiz: p = (1 − 8; −2 − 6) = (−7; −8). Kollinearlik shartini tekshiramiz: 1·(−8) − (−7)·(−2) = −8 − 14 = −22. Natija noldan farqli, demak p vektor m ga kollinear emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilmadan-vektor-topish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#83a3e385"
+    },
+    {
+      "q": "Stanokda detal siljishi u(2; 5) va v(3; −1) vektorlar bilan boshqariladi. Operator 4·u − 2·v buyrug'ini berdi. Detal qanday siljiydi?",
+      "v": [
+        "(14; 18)",
+        "(2; 22)",
+        "(2; 18)",
+        "(8; 20)"
+      ],
+      "t": 1,
+      "izoh": "Avval 4·u = (8; 20) va 2·v = (6; −2) ni hisoblaymiz. Ayirish mos koordinatalar bo'yicha bajariladi: (8 − 6; 20 − (−2)) = (2; 22). Ikkinchi koordinatada ikki minus qo'shishga aylanadi, buni unutish (2; 18) xatosini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilmadan-vektor-topish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#29792cd0"
+    },
+    {
+      "q": "a(2; −3) va b(−4; 6) vektorlar uchun x·a + y·b = (6; −9) tenglama qanday yechimga ega?",
+      "v": [
+        "Yagona yechim: x = 3 va y = 0",
+        "Umuman yechimga ega emas",
+        "Yagona yechim: x = 1 va y = 1",
+        "Cheksiz ko'p yechim, chunki a va b kollinear"
+      ],
+      "t": 3,
+      "izoh": "Avval b = −2·a ekanini payqaymiz, ya'ni vektorlar kollinear va bazis emas. O'ng tomon (6; −9) = 3·a bo'lgani uchun tenglama x − 2y = 3 shartiga keladi. Bu shartni qanoatlantiruvchi juftliklar cheksiz ko'p, masalan (3; 0) va (1; −1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyilmadan-vektor-topish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#29a125bf"
+    },
+    {
+      "q": "ABC uchburchakda AB = a va AC = b. D nuqta BC tomonda BD : DC = 1 : 2 nisbatda yotadi. AD vektorni yoying.",
+      "v": [
+        "(2·a + b)/3",
+        "(a + 2·b)/3",
+        "(a + b)/3",
+        "(a + b)/2"
+      ],
+      "t": 0,
+      "izoh": "AD = AB + BD va BD = (1/3)·BC, chunki BD : DC = 1 : 2. BC = b − a bo'lgani uchun AD = a + (1/3)·(b − a) = (2·a + b)/3. Nisbatni teskari olish koeffitsientlarni almashtirib yuboradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tomondagi-nuqtani-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#19be8e1f"
+    },
+    {
+      "q": "ABCD parallelogrammda K nuqta CD tomonda DK : KC = 1 : 3 nisbatda joylashgan. AB = a va AD = b bo'lsa, AK ni yoying.",
+      "v": [
+        "0,75·a + b",
+        "a + 0,25·b",
+        "0,25·a + b",
+        "0,25·(a + b)"
+      ],
+      "t": 2,
+      "izoh": "AK = AD + DK ko'rinishida yozamiz. DC vektor AB ga teng, ya'ni a. DK : KC = 1 : 3 bo'lgani uchun DK = 0,25·a. Demak AK = b + 0,25·a hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tomondagi-nuqtani-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#7f0b30c1"
+    },
+    {
+      "q": "Uchburchak maydonchada A burchakdan chiqib, BC tomonning C ga yaqin uchdan bir qismiga borish kerak. AB = p va AC = q bo'lsa, yo'l vektori qanday?",
+      "v": [
+        "(2·p + q)/3",
+        "(p + q)/3",
+        "(p + q)/2",
+        "(p + 2·q)/3"
+      ],
+      "t": 3,
+      "izoh": "Kerakli D nuqta uchun BD : DC = 2 : 1, chunki u C ga yaqin joylashgan. AD = p + (2/3)·(q − p) bo'ladi. Qavsni ochsak AD = (1/3)·p + (2/3)·q, ya'ni (p + 2·q)/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tomondagi-nuqtani-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#f36d76ee"
+    },
+    {
+      "q": "ABC uchburchakda M — AB ning o'rtasi, N nuqta esa AC da AN : NC = 2 : 1 nisbatda. AB = c va AC = b bo'lsa, MN ni yoying.",
+      "v": [
+        "0,5·c − (2/3)·b",
+        "(2/3)·b − 0,5·c",
+        "(2/3)·b + 0,5·c",
+        "(1/3)·b − 0,5·c"
+      ],
+      "t": 1,
+      "izoh": "AM = 0,5·c, chunki M nuqta AB ning o'rtasi. AN = (2/3)·b, chunki AN : NC = 2 : 1. MN = AN − AM bo'lgani uchun MN = (2/3)·b − 0,5·c. Ayirish tartibini almashtirish natijani teskari ishorali qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tomondagi-nuqtani-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#003a3bfa"
+    },
+    {
+      "q": "Kollinear vektorlar ta'rifiga ko'ra, ikkita nolmas vektor qachon kollinear deb ataladi?",
+      "v": [
+        "Uzunliklari teng bo'lganda",
+        "Bir xil boshlanish nuqtasiga ega bo'lganda",
+        "Bitta to'g'ri chiziqda yoki parallel to'g'ri chiziqlarda yotganda",
+        "Yo'nalishlari qarama-qarshi bo'lganda"
+      ],
+      "t": 2,
+      "izoh": "Ta'rifga ko'ra vektorlar bitta to'g'ri chiziqda yoki o'zaro parallel to'g'ri chiziqlarda yotsa kollinear deyiladi. Uzunliklar teng bo'lishi ham, yo'nalish bir xil bo'lishi ham shart emas. Koordinatalarda bu b = k·a tenglik bilan tekshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kollinearlik-nazariyasi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#da932b73"
+    },
+    {
+      "q": "a(x₁; y₁) va b(x₂; y₂) vektorlarning kollinearlik sharti koordinatalarda qanday yoziladi?",
+      "v": [
+        "x₁·y₂ − x₂·y₁ = 0",
+        "x₁·x₂ + y₁·y₂ = 0",
+        "x₁ + y₁ = x₂ + y₂",
+        "x₁·x₂ − y₁·y₂ = 0"
+      ],
+      "t": 0,
+      "izoh": "Kollinearlik b = k·a tenglikni bildiradi, ya'ni x₂ = k·x₁ va y₂ = k·y₁. Bundan koordinatalar proporsional bo'lib, x₁·y₂ = x₂·y₁ tenglik chiqadi. Odatda u x₁·y₂ − x₂·y₁ = 0 ko'rinishida yoziladi. Ikkinchi variant esa perpendikulyarlik sharti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kollinearlik-nazariyasi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#e8f50df4"
+    },
+    {
+      "q": "Kollinear vektorlar haqidagi quyidagi tasdiqlardan qaysi biri noto'g'ri ekanini aniqlang.",
+      "v": [
+        "Kollinear vektorlar har doim o'zaro teng bo'ladi",
+        "Teng vektorlar har doim kollinear bo'ladi",
+        "Kollinear vektorlar bitta tekislikka parallel bo'ladi",
+        "Kollinear vektorlarning uzunliklari har xil bo'lishi mumkin"
+      ],
+      "t": 0,
+      "izoh": "Teng vektorlar bir xil yo'nalgan va bir xil uzunlikda, shuning uchun ular albatta kollinear bo'ladi. Kollinear vektorlar esa har xil uzunlikda va hatto qarama-qarshi yo'nalishda bo'lishi mumkin. Demak ularning tengligi haqidagi tasdiq noto'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kollinearlik-nazariyasi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#a0c9fa36"
+    },
+    {
+      "q": "a va b vektorlar kollinear, b va c vektorlar ham kollinear, b esa nolmas. a va c haqida nima deyish mumkin?",
+      "v": [
+        "Ular albatta o'zaro teng bo'ladi",
+        "Ular kollinear bo'lmasligi ham mumkin",
+        "Ular albatta kollinear bo'ladi",
+        "Ular o'zaro perpendikulyar bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Shartdan a = m·b va c = n·b yozish mumkin, chunki b nolmas vektor. Agar m noldan farqli bo'lsa, c ni a orqali ifodalash mumkin va ular kollinear. Agar m = 0 bo'lsa, a nol vektorga aylanadi va u ham hamma vektorga kollinear hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kollinearlik-nazariyasi",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#05f697fc"
+    },
+    {
+      "q": "Rassomda ikki tayyor bo'yoq bor: qizil aralashma r(5; 2), ko'k aralashma k(2; 5) tarkib bilan yozilgan. U t(16; 19) tarkibli bo'yoq tayyorlamoqchi. Qanday nisbatda aralashtiradi?",
+      "v": [
+        "3 qism qizil va 2 qism ko'k",
+        "2 qism qizil va 3 qism ko'k",
+        "1 qism qizil va 4 qism ko'k",
+        "4 qism qizil va 1 qism ko'k"
+      ],
+      "t": 1,
+      "izoh": "Yoyilmadan sistema chiqadi: 5x + 2y = 16 va 2x + 5y = 19. Birinchisini 5 ga, ikkinchisini 2 ga ko'paytirib ayiramiz: 21x = 42, ya'ni x = 2. Bundan y = 3. Demak 2 qism qizil va 3 qism ko'k bo'yoq kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-aralashma-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#a23be8a4"
+    },
+    {
+      "q": "a(1; 3) va b(2; −1) bazisda c(8; 3) vektor yoyilganda koeffitsientlar ko'paytmasi nechaga teng?",
+      "v": [
+        "5",
+        "−6",
+        "8",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Sistema x + 2y = 8 va 3x − y = 3 ko'rinishida bo'ladi. Ikkinchisidan y = 3x − 3 ni birinchisiga qo'yamiz: x + 6x − 6 = 8, ya'ni 7x = 14 va x = 2, so'ng y = 3. Koeffitsientlar ko'paytmasi 2·3 = 6. Yig'indi bilan chalkashtirish 5 xatosini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-aralashma-yoyish",
+      "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish#7322d95a"
+    }
+  ]
+}

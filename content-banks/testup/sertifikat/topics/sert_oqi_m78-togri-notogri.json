@@ -1,0 +1,4434 @@
+{
+  "nom": "To'g'ri va noto'g'ri hukmlarni ajratish",
+  "bolim": "Ilmiy-ommabop matn",
+  "savollar": [
+    {
+      "id": "sert_oqi_m78-togri-notogri#1ee5dc81",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 1, 2, 3; b) 4, 5",
+        "a) 1, 2; b) 3, 4, 5",
+        "a) 3; b) 1, 2, 4, 5",
+        "a) 1, 2, 4; b) 3, 5"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2, 3 — to'g'ri hukm. Qolganlari: 4 — inkor: «tanachalarining oval shakli va cho'ziluvchan pardasi ularni yorilishdan saqlaydi» -> «tanachalari suv birdan kirganda tezda yorilib, keyin qayta tiklanadi»; 5 — inkor: «davomida o'zgarib» -> «bo'yi o'zgarmay».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuya",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuya",
+        "hukmlar": [
+          "1. Zaxira kamayganda o'rkachning tashqi ko'rinishi o'zgaradi va hayvonning holatini bildiradi",
+          "2. Nafas chiqarilayotganda burun bo'shlig'i havodagi namni ushlab qoladi",
+          "3. Hujayra ikki yarim baravar shishganda ham butunligini saqlab qoladi",
+          "4. Qizil qon tanachalari suv birdan kirganda tezda yorilib, keyin qayta tiklanadi",
+          "5. Tana haroratining kun bo'yi o'zgarmay turishi terlash zaruratini kamaytiradi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#b1deefd9",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 2, 3, 4, 5; b) 1",
+        "a) 3, 4, 5; b) 1, 2",
+        "a) 2, 4, 5; b) 1, 3",
+        "a) 3, 4; b) 1, 2, 5"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 4, 5 — to'g'ri hukm. Qolganlari: 1 — bo'rttirish: «o'ttiz olti» -> «uch yuz»; 2 — almashtirish: «Hujayra ikki yarim baravar shishganda ham» -> «Hujayraning», «saqlab qoladi» -> «uning qattiq va qalin pardasi ta'minlaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuya",
+        "buzish/borttirish",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuya",
+        "hukmlar": [
+          "1. Bir o'rkachli tuyada yog' zaxirasi uch yuz kilogrammgacha yetadi",
+          "2. Hujayraning butunligini uning qattiq va qalin pardasi ta'minlaydi",
+          "3. Tovondagi keng yostiqcha og'irlikni yoyib, oyoqning qumga botishiga to'sqinlik qiladi",
+          "4. Tana haroratining kun davomida o'zgarib turishi terlash zaruratini kamaytiradi",
+          "5. Bir marta to'xtaganda qabul qilinadigan suv miqdori yuz litrga yetishi mumkin"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#a568c0c3",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 2, 3, 4, 5; b) 1",
+        "a) 1, 2, 5; b) 3, 4",
+        "a) 2, 5; b) 1, 3, 4",
+        "a) 2, 4; b) 1, 3, 5"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 5 — to'g'ri hukm. Qolganlari: 1 — bo'rttirish: «yuz» -> «ming», «yetishi mumkin» -> «yetadi»; 3 — bo'rttirish: «o'ttiz olti» -> «uch yuz»; 4 — almashtirish: «to'planadigan modda» tushirilgan, «emas, balki» -> «ham,», «hisoblanadi» -> «ham teng miqdorda birga to'planadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuya",
+        "buzish/borttirish",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuya",
+        "hukmlar": [
+          "1. Bir marta to'xtaganda qabul qilinadigan suv miqdori ming litrga yetadi",
+          "2. Qalin jun kunduzi issiqlikni qaytaradi, tunda esa sovuqdan himoya qiladi",
+          "3. Bir o'rkachli tuyada yog' zaxirasi uch yuz kilogrammgacha yetadi",
+          "4. O'rkachda suv ham, yog' ham teng miqdorda birga to'planadi",
+          "5. Zaxira kamayganda o'rkachning tashqi ko'rinishi o'zgaradi va hayvonning holatini bildiradi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#4a6afeca",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 1, 2, 3, 4; b) 5",
+        "a) 3, 4; b) 1, 2, 5",
+        "a) 1, 3, 4; b) 2, 5",
+        "a) 3, 4, 5; b) 1, 2"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3, 4 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «kunduzi» tushirilgan, «qaytaradi, tunda esa sovuqdan himoya qiladi» -> «ichkariga o'tkazib, tana haroratini ko'taradi»; 5 — almashtirish: «havodagi namni ushlab qoladi» -> «faqat qumni to'sib turadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuya",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuya",
+        "hukmlar": [
+          "1. Tana haroratining kun davomida o'zgarib turishi terlash zaruratini kamaytiradi",
+          "2. Qalin jun issiqlikni ichkariga o'tkazib, tana haroratini ko'taradi",
+          "3. Tovondagi keng yostiqcha og'irlikni yoyib, oyoqning qumga botishiga to'sqinlik qiladi",
+          "4. Cho'lda kunduzgi va tungi harorat o'rtasidagi farq juda katta bo'ladi",
+          "5. Nafas chiqarilayotganda burun bo'shlig'i faqat qumni to'sib turadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#25c497fb",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 3, 4; b) 1, 2, 5",
+        "a) 3, 5; b) 1, 2, 4",
+        "a) 2, 3, 4; b) 1, 5",
+        "a) 2, 4; b) 1, 3, 5"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 4 — to'g'ri hukm. Qolganlari: 1 — inkor: «davomida o'zgarib» -> «bo'yi o'zgarmay»; 2 — almashtirish: «to'planadigan modda» tushirilgan, «emas, balki» -> «ham,», «hisoblanadi» -> «ham teng miqdorda birga to'planadi»; 5 — almashtirish: «Tovondagi keng yostiqcha og'irlikni yoyib,» tushirilgan, «botishiga to'sqinlik qiladi» -> «botmasligini tirnoqlarning uzunligi va qattiqligi ta'minlaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuya",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuya",
+        "hukmlar": [
+          "1. Tana haroratining kun bo'yi o'zgarmay turishi terlash zaruratini kamaytiradi",
+          "2. O'rkachda suv ham, yog' ham teng miqdorda birga to'planadi",
+          "3. Nafas chiqarilayotganda burun bo'shlig'i havodagi namni ushlab qoladi",
+          "4. Hujayra ikki yarim baravar shishganda ham butunligini saqlab qoladi",
+          "5. Oyoqning qumga botmasligini tirnoqlarning uzunligi va qattiqligi ta'minlaydi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#f8715e20",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 5; b) 1, 2, 3, 4",
+        "a) 1, 2, 4, 5; b) 3",
+        "a) 4, 5; b) 1, 2, 3",
+        "a) 3, 5; b) 1, 2, 4"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 4, 5 — to'g'ri hukm. Qolganlari: 1 — inkor: «suv keltirib, qanot yelpishi bilan haroratni pasaytiradi» -> «uni tashlab, salqinroq joyga birgalikda ko'chadi»; 2 — almashtirish: «yil bo'yi» -> «faqat yozda», «daraja atrofida saqlanadi» -> «darajaga chiqadi»; 3 — inkor: «zich to'plangan» -> «bir-biridan uzoqlashib, harakatsiz», «mushak titrog'i orqali issiqlik hosil qiladi» -> «alohida qotadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/asalari",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "asalari",
+        "hukmlar": [
+          "1. Uya isib ketganda arilar uni tashlab, salqinroq joyga birgalikda ko'chadi",
+          "2. Uyaning ichki harorati faqat yozda o'ttiz besh darajaga chiqadi",
+          "3. Sovuqda arilar bir-biridan uzoqlashib, harakatsiz holda alohida qotadi",
+          "4. Ishchi arining yozdagi umri olti hafta atrofida davom etadi",
+          "5. Bitta uyada yozning o'rtasida ellik minggacha hasharot yashaydi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#ee55c969",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 1, 2; b) 3, 4, 5",
+        "a) 1, 2, 4; b) 3, 5",
+        "a) 1, 2, 3; b) 4, 5",
+        "a) 1, 2, 4, 5; b) 3"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2 — to'g'ri hukm. Qolganlari: 3 — almashtirish: «yaqinligini» -> «uzoqligini»; 4 — inkor: «suv keltirib, qanot yelpishi bilan haroratni pasaytiradi» -> «uni tashlab, salqinroq joyga birgalikda ko'chadi»; 5 — inkor: «zich to'plangan» -> «bir-biridan uzoqlashib, harakatsiz», «mushak titrog'i orqali issiqlik hosil qiladi» -> «alohida qotadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/asalari",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "asalari",
+        "hukmlar": [
+          "1. Uyaning ichki harorati yil bo'yi o'ttiz besh daraja atrofida saqlanadi",
+          "2. Raqsning qancha davom etishi manbagacha bo'lgan masofani bildiradi",
+          "3. Aylana bo'ylab yugurish oziq manbaining uzoqligini anglatadi",
+          "4. Uya isib ketganda arilar uni tashlab, salqinroq joyga birgalikda ko'chadi",
+          "5. Sovuqda arilar bir-biridan uzoqlashib, harakatsiz holda alohida qotadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#d51f5fc5",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 1, 5; b) 2, 3, 4",
+        "a) 1, 2, 4, 5; b) 3",
+        "a) 1, 4; b) 2, 3, 5",
+        "a) 1, 4, 5; b) 2, 3"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 4, 5 — to'g'ri hukm. Qolganlari: 2 — inkor: «Raqsdagi» -> «Raqsda», «quyoshning osmondagi holatiga nisbatan o'lchanadi» -> «ko'rsatilmaydi, faqat masofa haqida xabar beriladi»; 3 — almashtirish: «manbagacha bo'lgan masofani» -> «topilgan gulning turini».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/asalari",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "asalari",
+        "hukmlar": [
+          "1. Uyaning ichki harorati yil bo'yi o'ttiz besh daraja atrofida saqlanadi",
+          "2. Raqsda yo'nalish ko'rsatilmaydi, faqat masofa haqida xabar beriladi",
+          "3. Raqsning qancha davom etishi topilgan gulning turini bildiradi",
+          "4. Bitta uyada yozning o'rtasida ellik minggacha hasharot yashaydi",
+          "5. Oziq-ovqat ekinlarining sezilarli qismi hasharotlar changlatishiga bog'liq"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#8eece1fa",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 4; b) 1, 2, 3, 5",
+        "a) 1, 4; b) 2, 3, 5",
+        "a) 1, 2, 3, 4; b) 5",
+        "a) 1, 2, 4; b) 3, 5"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2, 4 — to'g'ri hukm. Qolganlari: 3 — almashtirish: «umri davomida bir necha marta almashadi» -> «tug'ilishida belgilanib, keyin o'zgarmaydi»; 5 — inkor: «Oziq-ovqat ekinlarining» -> «Changlatishning hosildorlik miqdoriga», «qismi hasharotlar changlatishiga bog'liq» -> «aloqasi kuzatilmaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/asalari",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "asalari",
+        "hukmlar": [
+          "1. Uyadan tashqariga chiqish arining eng kechki vazifasi hisoblanadi",
+          "2. Raqsdagi yo'nalish quyoshning osmondagi holatiga nisbatan o'lchanadi",
+          "3. Ishchi arining vazifasi tug'ilishida belgilanib, keyin o'zgarmaydi",
+          "4. Sovuqda arilar zich to'plangan holda mushak titrog'i orqali issiqlik hosil qiladi",
+          "5. Changlatishning hosildorlik miqdoriga sezilarli aloqasi kuzatilmaydi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#a9452e6f",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 3; b) 1, 2, 4, 5",
+        "a) 1, 3; b) 2, 4, 5",
+        "a) 1, 2; b) 3, 4, 5",
+        "a) 1; b) 2, 3, 4, 5"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «yil bo'yi» -> «faqat yozda», «daraja atrofida saqlanadi» -> «darajaga chiqadi»; 4 — inkor: «Raqsdagi» -> «Raqsda», «quyoshning osmondagi holatiga nisbatan o'lchanadi» -> «ko'rsatilmaydi, faqat masofa haqida xabar beriladi»; 5 — almashtirish: «manbagacha bo'lgan masofani» -> «topilgan gulning turini».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/asalari",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "asalari",
+        "hukmlar": [
+          "1. Mum ishlab chiqaruvchi bezlar arining umrida ma'lum bir davrda faollashadi",
+          "2. Uyaning ichki harorati faqat yozda o'ttiz besh darajaga chiqadi",
+          "3. Bitta uyada yozning o'rtasida ellik minggacha hasharot yashaydi",
+          "4. Raqsda yo'nalish ko'rsatilmaydi, faqat masofa haqida xabar beriladi",
+          "5. Raqsning qancha davom etishi topilgan gulning turini bildiradi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#a595f52b",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 2, 5; b) 1, 3, 4",
+        "a) 2; b) 1, 3, 4, 5",
+        "a) 1, 2; b) 3, 4, 5",
+        "a) 2, 4, 5; b) 1, 3"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «vaznidan ortiq tuproqni qayta» -> «vaznining ozgina qismini»; 3 — almashtirish: «havo va suvning pastga o'tishini osonlashtiradi» -> «o'simlik ildizlariga zarar yetkazadi»; 4 — almashtirish: «Yerdagi odamlar sonidan ko'p» -> «bir necha yuztadan oshmaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuproq",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuproq",
+        "hukmlar": [
+          "1. Yomg'ir chuvalchangi bir kunda o'z vaznining ozgina qismini ishlaydi",
+          "2. Chirindi qora rangli murakkab organik modda hisoblanadi",
+          "3. Chuvalchang qazigan yo'llar o'simlik ildizlariga zarar yetkazadi",
+          "4. Bir chimdim tuproqdagi jonzotlar soni bir necha yuztadan oshmaydi",
+          "5. Dukkakli ekinlar ildizidagi bakteriyalar havo azotini tuproqqa o'tkazadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#5a65b030",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 2, 3, 4, 5; b) 1",
+        "a) 2, 3, 5; b) 1, 4",
+        "a) 5; b) 1, 2, 3, 4",
+        "a) 2, 5; b) 1, 3, 4"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 3, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «Chirindi kamayganda yer qattiqlashadi va yomg'ir suvi shimilmay oqadi» -> «Chirindining kamayishi faqat tuproq rangini o'zgartirib qo'yadi»; 4 — almashtirish: «Chuvalchang yo'llari» tushirilgan, «tayyor iz vazifasini o'taydi» -> «yo'lni faqat yumshoq qum qatlami ochadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuproq",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuproq",
+        "hukmlar": [
+          "1. Chirindining kamayishi faqat tuproq rangini o'zgartirib qo'yadi",
+          "2. Chuvalchang qazigan yo'llar havo va suvning pastga o'tishini osonlashtiradi",
+          "3. Chirindiga boy tuproq namni uzoq vaqt ushlab turadi",
+          "4. O'simlik ildizlari uchun yo'lni faqat yumshoq qum qatlami ochadi",
+          "5. Chirindi qora rangli murakkab organik modda hisoblanadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#4fcf8900",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 4; b) 1, 2, 3, 5",
+        "a) 2, 3, 4; b) 1, 5",
+        "a) 3, 4; b) 1, 2, 5",
+        "a) 3, 5; b) 1, 2, 4"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 4 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «vaznidan ortiq tuproqni qayta» -> «vaznining ozgina qismini»; 2 — almashtirish: «Dukkakli ekinlar ildizidagi bakteriyalar havo azotini» -> «Havodagi azotni», «o'tkazadi» -> «faqat kimyoviy o'g'itlar bog'lab beradi»; 5 — almashtirish: «havo va suvning pastga o'tishini osonlashtiradi» -> «o'simlik ildizlariga zarar yetkazadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuproq",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuproq",
+        "hukmlar": [
+          "1. Yomg'ir chuvalchangi bir kunda o'z vaznining ozgina qismini ishlaydi",
+          "2. Havodagi azotni tuproqqa faqat kimyoviy o'g'itlar bog'lab beradi",
+          "3. Chirindi kamayganda yer qattiqlashadi va yomg'ir suvi shimilmay oqadi",
+          "4. Tuproqning har bir chimdimida son-sanoqsiz mikroorganizm yashaydi",
+          "5. Chuvalchang qazigan yo'llar o'simlik ildizlariga zarar yetkazadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#a53a246c",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 4, 5; b) 2, 3",
+        "a) 4, 5; b) 1, 2, 3",
+        "a) 1, 3, 4, 5; b) 2",
+        "a) 4; b) 1, 2, 3, 5"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 4, 5 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «Chirindi kamayganda yer qattiqlashadi va yomg'ir suvi shimilmay oqadi» -> «Chirindining kamayishi faqat tuproq rangini o'zgartirib qo'yadi»; 3 — almashtirish: «Dukkakli ekinlar ildizidagi bakteriyalar havo azotini» -> «Havodagi azotni», «o'tkazadi» -> «faqat kimyoviy o'g'itlar bog'lab beradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuproq",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuproq",
+        "hukmlar": [
+          "1. Shamol va suv unumdor qatlamni juda qisqa muddatda olib ketishi mumkin",
+          "2. Chirindining kamayishi faqat tuproq rangini o'zgartirib qo'yadi",
+          "3. Havodagi azotni tuproqqa faqat kimyoviy o'g'itlar bog'lab beradi",
+          "4. Chirindi qora rangli murakkab organik modda hisoblanadi",
+          "5. Tuproqning har bir chimdimida son-sanoqsiz mikroorganizm yashaydi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#a670f161",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 2, 3, 4, 5; b) 1",
+        "a) 1, 2, 4, 5; b) 3",
+        "a) 1, 4, 5; b) 2, 3",
+        "a) 2, 4, 5; b) 1, 3"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 4, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «qora» -> «oq», «murakkab organik» -> «oddiy mineral»; 3 — almashtirish: «Chuvalchang yo'llari» tushirilgan, «tayyor iz vazifasini o'taydi» -> «yo'lni faqat yumshoq qum qatlami ochadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuproq",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuproq",
+        "hukmlar": [
+          "1. Chirindi oq rangli oddiy mineral modda hisoblanadi",
+          "2. Chirindi kamayganda yer qattiqlashadi va yomg'ir suvi shimilmay oqadi",
+          "3. O'simlik ildizlari uchun yo'lni faqat yumshoq qum qatlami ochadi",
+          "4. Tuproqning har bir chimdimida son-sanoqsiz mikroorganizm yashaydi",
+          "5. Chirindiga boy tuproq namni uzoq vaqt ushlab turadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#5a0d9f62",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 3, 5; b) 2, 4",
+        "a) 1, 4, 5; b) 2, 3",
+        "a) 2, 4, 5; b) 1, 3",
+        "a) 1, 4; b) 2, 3, 5"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 4, 5 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «o'lchami bo'yicha ikkinchi» -> «eng kichik», «hisoblanadi» -> «hisoblanib keladi»; 3 — almashtirish: «Halqalarning barcha bo'laklari alohida orbita bo'ylab aylanadi» -> «Halqalar suyuq holatdagi moddadan hosil bo'lgan yaxlit qatlamdir».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/saturn",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "saturn",
+        "hukmlar": [
+          "1. Halqalarning qalinligi ularning kengligiga nisbatan juda kichik",
+          "2. Saturn Quyosh tizimidagi eng kichik sayyora hisoblanib keladi",
+          "3. Halqalar suyuq holatdagi moddadan hosil bo'lgan yaxlit qatlamdir",
+          "4. Halqalar orasidagi bo'sh oraliqlarni yo'ldoshlarning tortishishi hosil qiladi",
+          "5. Yaqin bo'laklarni chetga suradigan kichik yo'ldoshlar cho'pon deb ataladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#056e81aa",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 3, 5; b) 1, 2, 4",
+        "a) 1, 3; b) 2, 4, 5",
+        "a) 1, 4; b) 2, 3, 5",
+        "a) 1, 3, 4; b) 2, 5"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «Bo'lakning o'lchami» -> «Bo'laklarning barchasi chang zarrasidek», «zarradan yirik parchagacha o'zgarib turadi» -> «holda uchraydi»; 4 — almashtirish: «Halqalarning barcha bo'laklari alohida orbita bo'ylab aylanadi» -> «Halqalar suyuq holatdagi moddadan hosil bo'lgan yaxlit qatlamdir»; 5 — almashtirish: «bir necha» qo'shilgan, «minglab kilometrga cho'zilgan» -> «kilometrni tashkil etadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/saturn",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "saturn",
+        "hukmlar": [
+          "1. Muz bo'laklari asta-sekin sayyora atmosferasiga tushib bormoqda",
+          "2. Bo'laklarning barchasi chang zarrasidek mayda holda uchraydi",
+          "3. Halqalar qirra tomoni bilan kelganda Yerdan ko'rinmay qoladi",
+          "4. Halqalar suyuq holatdagi moddadan hosil bo'lgan yaxlit qatlamdir",
+          "5. Halqalar tizimining kengligi bir necha yuz kilometrni tashkil etadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#a612bce6",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 2, 4; b) 1, 3, 5",
+        "a) 3, 5; b) 1, 2, 4",
+        "a) 3, 4; b) 1, 2, 5",
+        "a) 2, 3, 4; b) 1, 5"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 4 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «muzdan» -> «qumdan»; 2 — inkor: «sayyora atmosferasiga tushib» -> «sayyoradan uzoqlashib»; 5 — inkor: «Yerdan ko'rinmay qoladi» -> «ayniqsa yaxshi ko'rinadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/saturn",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "saturn",
+        "hukmlar": [
+          "1. Halqa bo'laklarining asosiy tarkibi qumdan iborat",
+          "2. Muz bo'laklari asta-sekin sayyoradan uzoqlashib bormoqda",
+          "3. Halqalarning qalinligi ularning kengligiga nisbatan juda kichik",
+          "4. Halqalar tizimining kengligi yuz minglab kilometrga cho'zilgan",
+          "5. Halqalar qirra tomoni bilan kelganda ayniqsa yaxshi ko'rinadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#f49d1c99",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 5; b) 1, 2, 3, 4",
+        "a) 2, 4, 5; b) 1, 3",
+        "a) 1, 3, 4; b) 2, 5",
+        "a) 3, 4, 5; b) 1, 2"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 4, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «o'lchami bo'yicha ikkinchi» -> «eng kichik», «hisoblanadi» -> «hisoblanib keladi»; 2 — inkor: «Yerdan ko'rinmay qoladi» -> «ayniqsa yaxshi ko'rinadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/saturn",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "saturn",
+        "hukmlar": [
+          "1. Saturn Quyosh tizimidagi eng kichik sayyora hisoblanib keladi",
+          "2. Halqalar qirra tomoni bilan kelganda ayniqsa yaxshi ko'rinadi",
+          "3. Yaqin bo'laklarni chetga suradigan kichik yo'ldoshlar cho'pon deb ataladi",
+          "4. Halqalarning qalinligi ularning kengligiga nisbatan juda kichik",
+          "5. Halqa bo'laklarining asosiy tarkibi muzdan iborat"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#aacd9748",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 1, 2, 5; b) 3, 4",
+        "a) 1, 2, 4; b) 3, 5",
+        "a) 2, 5; b) 1, 3, 4",
+        "a) 1, 3, 5; b) 2, 4"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2, 5 — to'g'ri hukm. Qolganlari: 3 — almashtirish: «Halqalar orasidagi» tushirilgan, «yo'ldoshlarning tortishishi hosil qiladi» -> «sayyoraning kuchli magnit maydoni yaratib beradi»; 4 — inkor: «tezroq» -> «sekinroq».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/saturn",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "saturn",
+        "hukmlar": [
+          "1. Halqalarning umri sayyoraning umriga nisbatan juda qisqa hisoblanadi",
+          "2. Halqalarning barcha bo'laklari alohida orbita bo'ylab aylanadi",
+          "3. Bo'sh oraliqlarni sayyoraning kuchli magnit maydoni yaratib beradi",
+          "4. Sayyoraga yaqinroq bo'laklar uzoqdagilardan sekinroq aylanadi",
+          "5. Yaqin bo'laklarni chetga suradigan kichik yo'ldoshlar cho'pon deb ataladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#68521906",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 4; b) 1, 2, 3, 5",
+        "a) 3, 5; b) 1, 2, 4",
+        "a) 3, 4; b) 1, 2, 5",
+        "a) 1, 2, 3, 4; b) 5"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 4 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «Aniq manzilni topish malakasi» -> «Takroriy», «takrorlangani sari yaxshilanadi» -> «qushning yo'ldagi xatoliklarini ko'paytiradi»; 2 — inkor: «turlarning to'xtash joyini yaqinlashtirmoqda» -> «turlarni yanada uzoqroqqa uchishga majburlaydi»; 5 — inkor: «kattalarning hamrohligisiz ham to'g'ri yo'nalishni topadi» -> «faqat kattalar ortidan ergashib yo'l topa biladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/qaldirgoch",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "qaldirgoch",
+        "hukmlar": [
+          "1. Takroriy safarlar qushning yo'ldagi xatoliklarini ko'paytiradi",
+          "2. Iliq qishlar ayrim turlarni yanada uzoqroqqa uchishga majburlaydi",
+          "3. Qaytish vaqti hasharotlarga mos kelmasa, jo'jalar ozuqasiz qolishi mumkin",
+          "4. Kuzgi ko'chishda qushlar minglab kilometr masofani bosib o'tadi",
+          "5. Yosh qushlar faqat kattalar ortidan ergashib yo'l topa biladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#d9fbcf28",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 3, 5; b) 1, 2, 4",
+        "a) 1, 3; b) 2, 4, 5",
+        "a) 2, 3, 5; b) 1, 4",
+        "a) 3, 4, 5; b) 1, 2"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 5 — to'g'ri hukm. Qolganlari: 1 — inkor: «turlarning to'xtash joyini yaqinlashtirmoqda» -> «turlarni yanada uzoqroqqa uchishga majburlaydi»; 2 — inkor: «Ko'pchilik qaldirg'och avvalgi mavsumdagi uyasini topib qaytadi» -> «Qaldirg'ochlar har bahorda boshqacha yangi joydan uya quradi»; 4 — almashtirish: «Eskirgan» tushirilgan, «yangilanishi havodagi qarshilikni kamaytiradi» -> «holati uchish qulayligiga sezilarli ta'sir qilmaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/qaldirgoch",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "qaldirgoch",
+        "hukmlar": [
+          "1. Iliq qishlar ayrim turlarni yanada uzoqroqqa uchishga majburlaydi",
+          "2. Qaldirg'ochlar har bahorda boshqacha yangi joydan uya quradi",
+          "3. Uchishdan oldin qush tana vaznini ataylab oshiradi",
+          "4. Patlarning holati uchish qulayligiga sezilarli ta'sir qilmaydi",
+          "5. Yulduzlar bo'yicha yo'l topishda osmonning aylanish markazi ishlatiladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#85efd87a",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 2, 4, 5; b) 1, 3",
+        "a) 1, 2, 3, 5; b) 4",
+        "a) 2, 3, 5; b) 1, 4",
+        "a) 1, 3, 5; b) 2, 4"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 3, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «Uchishdan oldin qush» -> «Qushning», «vaznini ataylab oshiradi» -> «vazni yil bo'yi o'zgarmay qolaveradi»; 4 — almashtirish: «Bulutli kunlarda Yerning» tushirilgan, «maydoni yordamchi ko'rsatkich bo'ladi» -> «maydon faqat ochiq va bulutsiz kunlarda ishlab turadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/qaldirgoch",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "qaldirgoch",
+        "hukmlar": [
+          "1. Qushning tana vazni yil bo'yi o'zgarmay qolaveradi",
+          "2. Eskirgan patlarning yangilanishi havodagi qarshilikni kamaytiradi",
+          "3. Aniq manzilni topish malakasi safarlar takrorlangani sari yaxshilanadi",
+          "4. Magnit maydon faqat ochiq va bulutsiz kunlarda ishlab turadi",
+          "5. Ko'pchilik qaldirg'och avvalgi mavsumdagi uyasini topib qaytadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#a39b7929",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 3, 4; b) 2, 5",
+        "a) 2, 3, 4; b) 1, 5",
+        "a) 4; b) 1, 2, 3, 5",
+        "a) 2, 3, 4, 5; b) 1"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 3, 4 — to'g'ri hukm. Qolganlari: 1 — inkor: «Ko'pchilik qaldirg'och avvalgi mavsumdagi uyasini topib qaytadi» -> «Qaldirg'ochlar har bahorda boshqacha yangi joydan uya quradi»; 5 — almashtirish: «Uchishdan oldin qush» -> «Qushning», «vaznini ataylab oshiradi» -> «vazni yil bo'yi o'zgarmay qolaveradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/qaldirgoch",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "qaldirgoch",
+        "hukmlar": [
+          "1. Qaldirg'ochlar har bahorda boshqacha yangi joydan uya quradi",
+          "2. To'plangan yog' uzoq safarda asosiy energiya manbai bo'lib xizmat qiladi",
+          "3. Aniq manzilni topish malakasi safarlar takrorlangani sari yaxshilanadi",
+          "4. Eskirgan patlarning yangilanishi havodagi qarshilikni kamaytiradi",
+          "5. Qushning tana vazni yil bo'yi o'zgarmay qolaveradi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#a0106f6f",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 1, 4; b) 2, 3, 5",
+        "a) 4, 5; b) 1, 2, 3",
+        "a) 3, 5; b) 1, 2, 4",
+        "a) 2, 4, 5; b) 1, 3"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 4, 5 — to'g'ri hukm. Qolganlari: 1 — bo'rttirish: «minglab» -> «millionlab», «bosib o'tadi» -> «bosadi»; 2 — almashtirish: «Eskirgan» tushirilgan, «yangilanishi havodagi qarshilikni kamaytiradi» -> «holati uchish qulayligiga sezilarli ta'sir qilmaydi»; 3 — almashtirish: «Aniq manzilni topish malakasi» -> «Takroriy», «takrorlangani sari yaxshilanadi» -> «qushning yo'ldagi xatoliklarini ko'paytiradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/qaldirgoch",
+        "buzish/borttirish",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "qaldirgoch",
+        "hukmlar": [
+          "1. Kuzgi ko'chishda qushlar millionlab kilometr masofani bosadi",
+          "2. Patlarning holati uchish qulayligiga sezilarli ta'sir qilmaydi",
+          "3. Takroriy safarlar qushning yo'ldagi xatoliklarini ko'paytiradi",
+          "4. Ko'pchilik qaldirg'och avvalgi mavsumdagi uyasini topib qaytadi",
+          "5. Bulutli kunlarda Yerning magnit maydoni yordamchi ko'rsatkich bo'ladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#b9281972",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 1, 5; b) 2, 3, 4",
+        "a) 1, 3, 5; b) 2, 4",
+        "a) 1, 4; b) 2, 3, 5",
+        "a) 1, 4, 5; b) 2, 3"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 4, 5 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «Ko'pchilik moddalar sovuganda zichlashib, qattiq holatda og'irroq bo'ladi» -> «Moddalarning zichligi harorat o'zgarishiga bevosita bog'liq bo'lmaydi»; 3 — almashtirish: «Muz va suvning» qo'shilgan, «muz suvga qaraganda kattaroq hajmni egallaydi» -> «hajmi doim teng bo'lib chiqadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/muz",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "muz",
+        "hukmlar": [
+          "1. Kuzda sovigan yuza qatlam og'irlashib pastga cho'kib boradi",
+          "2. Moddalarning zichligi harorat o'zgarishiga bevosita bog'liq bo'lmaydi",
+          "3. Muz va suvning bir xil massadagi hajmi doim teng bo'lib chiqadi",
+          "4. Muz cho'kadigan bo'lganda havzalar tubigacha muzlab, tirik jonzot qolmasdi",
+          "5. Suvning zichligi to'rt daraja atrofida eng katta qiymatga yetadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#f3462603",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 2, 3, 4; b) 5",
+        "a) 3; b) 1, 2, 4, 5",
+        "a) 1, 2, 3, 5; b) 4",
+        "a) 1, 2, 3; b) 4, 5"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2, 3 — to'g'ri hukm. Qolganlari: 4 — almashtirish: «Ko'pchilik moddalar sovuganda zichlashib, qattiq holatda og'irroq bo'ladi» -> «Moddalarning zichligi harorat o'zgarishiga bevosita bog'liq bo'lmaydi»; 5 — inkor: «muntazam panjara hosil qilib,» -> «zichroq joylashib,», «qoldiradi» -> «qoldirmaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/muz",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "muz",
+        "hukmlar": [
+          "1. Muzning suzib yurishi uning suvdan kichik zichlikka egaligi bilan izohlanadi",
+          "2. To'rt darajadan keyin sovigan suv yengillashib yuzada qolaveradi",
+          "3. Kuzda sovigan yuza qatlam og'irlashib pastga cho'kib boradi",
+          "4. Moddalarning zichligi harorat o'zgarishiga bevosita bog'liq bo'lmaydi",
+          "5. Muzlash paytida molekulalar zichroq joylashib, orada bo'shliq qoldirmaydi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#257632b9",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 2, 4; b) 1, 3, 5",
+        "a) 2, 5; b) 1, 3, 4",
+        "a) 2, 3, 5; b) 1, 4",
+        "a) 2, 4, 5; b) 1, 3"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 4, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «Muz cho'kadigan bo'lganda havzalar» -> «Havzalarning», «muzlab, tirik jonzot qolmasdi» -> «muzlashi muzning zichligiga bog'liq emas»; 3 — inkor: «ko'pchilik moddalardan farqli ravishda yengillashadi» -> «boshqa barcha moddalar kabi og'irlashib boradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/muz",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "muz",
+        "hukmlar": [
+          "1. Havzalarning tubigacha muzlashi muzning zichligiga bog'liq emas",
+          "2. Yuzadagi muz qavati issiqlikni yomon o'tkazgani uchun pastdagi suvni himoya qiladi",
+          "3. Suv qattiq holatga o'tganda boshqa barcha moddalar kabi og'irlashib boradi",
+          "4. Yoriqqa kirgan suv muzlaganda kengayib, tosh jinsini ichkaridan yoradi",
+          "5. Bir xil massadagi muz suvga qaraganda kattaroq hajmni egallaydi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#89ef91fc",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 2, 3, 4; b) 1, 5",
+        "a) 2; b) 1, 3, 4, 5",
+        "a) 2, 3, 4, 5; b) 1",
+        "a) 2, 3; b) 1, 4, 5"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 3, 4 — to'g'ri hukm. Qolganlari: 1 — inkor: «Muzning» -> «Muz», «yemirishi tuproq hosil bo'lishining birinchi bosqichi» -> «yemirmaydi, aksincha ularni mustahkamlab turadi»; 5 — inkor: «kengayib, tosh jinsini ichkaridan yoradi» -> «torayib, toshni mustahkamlab qo'yadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/muz",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "muz",
+        "hukmlar": [
+          "1. Muz tog' jinslarini yemirmaydi, aksincha ularni mustahkamlab turadi",
+          "2. Ko'pchilik moddalar sovuganda zichlashib, qattiq holatda og'irroq bo'ladi",
+          "3. Kuzda sovigan yuza qatlam og'irlashib pastga cho'kib boradi",
+          "4. Suvning zichligi to'rt daraja atrofida eng katta qiymatga yetadi",
+          "5. Yoriqqa kirgan suv muzlaganda torayib, toshni mustahkamlab qo'yadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#af623f87",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 4; b) 2, 3, 5",
+        "a) 2, 4, 5; b) 1, 3",
+        "a) 1, 2, 4; b) 3, 5",
+        "a) 1, 2, 3, 4; b) 5"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2, 4 — to'g'ri hukm. Qolganlari: 3 — almashtirish: «Muz va suvning» qo'shilgan, «muz suvga qaraganda kattaroq hajmni egallaydi» -> «hajmi doim teng bo'lib chiqadi»; 5 — inkor: «ko'pchilik moddalardan farqli ravishda yengillashadi» -> «boshqa barcha moddalar kabi og'irlashib boradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/muz",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "muz",
+        "hukmlar": [
+          "1. Yuzadagi muz qavati issiqlikni yomon o'tkazgani uchun pastdagi suvni himoya qiladi",
+          "2. Muz cho'kadigan bo'lganda havzalar tubigacha muzlab, tirik jonzot qolmasdi",
+          "3. Muz va suvning bir xil massadagi hajmi doim teng bo'lib chiqadi",
+          "4. To'rt darajadan keyin sovigan suv yengillashib yuzada qolaveradi",
+          "5. Suv qattiq holatga o'tganda boshqa barcha moddalar kabi og'irlashib boradi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#9198befa",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 2, 3, 4; b) 1, 5",
+        "a) 3, 4; b) 1, 2, 5",
+        "a) 4; b) 1, 2, 3, 5",
+        "a) 1, 2, 3, 4; b) 5"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 3, 4 — to'g'ri hukm. Qolganlari: 1 — inkor: «qaysi modda kirishi va chiqishini nazorat qiladi» -> «barcha moddani tanlamasdan bir xil o'tkazadi»; 5 — bo'rttirish: «metrga yaqin» -> «kilometrga teng».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/hujayra",
+        "buzish/inkor",
+        "buzish/borttirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "hujayra",
+        "hukmlar": [
+          "1. Hujayra pardasi barcha moddani tanlamasdan bir xil o'tkazadi",
+          "2. Irsiy ma'lumot yadroda ipsimon molekulalarda saqlanadi",
+          "3. Bo'linishdan oldin irsiy ip nusxalanadi, keyin qutblarga tortiladi",
+          "4. Faol ishlaydigan hujayralarda energiya tuzilmalari soni mingdan oshadi",
+          "5. Bitta hujayradagi irsiy iplarning umumiy uzunligi ikki kilometrga teng"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#3cfd6d2e",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 5; b) 1, 2, 3, 4",
+        "a) 2, 4, 5; b) 1, 3",
+        "a) 1, 2, 4, 5; b) 3",
+        "a) 4, 5; b) 1, 2, 3"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 4, 5 — to'g'ri hukm. Qolganlari: 1 — inkor: «soni mingdan oshadi» -> «juda kam bo'ladi»; 2 — inkor: «qaysi modda kirishi va chiqishini nazorat qiladi» -> «barcha moddani tanlamasdan bir xil o'tkazadi»; 3 — inkor: «tuzilmalarning o'z» -> «tuzilmalarda», «materiali bor» -> «material bo'lmaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/hujayra",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "hujayra",
+        "hukmlar": [
+          "1. Faol ishlaydigan hujayralarda energiya tuzilmalari juda kam bo'ladi",
+          "2. Hujayra pardasi barcha moddani tanlamasdan bir xil o'tkazadi",
+          "3. Energiya ishlab chiqaruvchi tuzilmalarda irsiy material bo'lmaydi",
+          "4. Irsiy ma'lumot yadroda ipsimon molekulalarda saqlanadi",
+          "5. Oqsilning vazifasini uning buklanib olgan shakli belgilaydi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#85ee1c5a",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 2, 4; b) 3, 5",
+        "a) 2, 4, 5; b) 1, 3",
+        "a) 2; b) 1, 3, 4, 5",
+        "a) 3, 4, 5; b) 1, 2"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 4, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «buklanib olgan shakli belgilaydi» -> «umumiy og'irligi belgilab beradi»; 3 — inkor: «maxsus dastur bo'yicha» tushirilgan, «qiladi» -> «qilmay, to'planib qolaveradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/hujayra",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "hujayra",
+        "hukmlar": [
+          "1. Oqsilning vazifasini uning umumiy og'irligi belgilab beradi",
+          "2. Hujayra kattalashsa, yuza maydoni hajmga nisbatan kamayib boradi",
+          "3. Eskirgan hujayra o'zini yo'q qilmay, to'planib qolaveradi",
+          "4. Bitta hujayradagi irsiy iplarning umumiy uzunligi ikki metrga yaqin",
+          "5. Faol ishlaydigan hujayralarda energiya tuzilmalari soni mingdan oshadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#a34b0961",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 3, 4, 5; b) 2",
+        "a) 4, 5; b) 1, 2, 3",
+        "a) 3, 4, 5; b) 1, 2",
+        "a) 3, 4; b) 1, 2, 5"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 4, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «Har bo'linishda» tushirilgan, «qisqaradi» -> «bo'linishda o'zgarmaydi»; 2 — almashtirish: «Bo'linishdan oldin» -> «Bo'linish paytida», «nusxalanadi, keyin qutblarga tortiladi» -> «o'rtasidan teng ikkiga kesiladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/hujayra",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "hujayra",
+        "hukmlar": [
+          "1. Irsiy ipning uchidagi himoya qismi bo'linishda o'zgarmaydi",
+          "2. Bo'linish paytida irsiy ip o'rtasidan teng ikkiga kesiladi",
+          "3. Bitta hujayradagi irsiy iplarning umumiy uzunligi ikki metrga yaqin",
+          "4. Energiya ishlab chiqaruvchi tuzilmalarning o'z irsiy materiali bor",
+          "5. Irsiy ma'lumot yadroda ipsimon molekulalarda saqlanadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#c81d4035",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 3, 4, 5; b) 2",
+        "a) 1, 3; b) 2, 4, 5",
+        "a) 1, 3, 5; b) 2, 4",
+        "a) 3, 5; b) 1, 2, 4"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «Bo'linishdan oldin» -> «Bo'linish paytida», «nusxalanadi, keyin qutblarga tortiladi» -> «o'rtasidan teng ikkiga kesiladi»; 4 — inkor: «tuzilmalarning o'z» -> «tuzilmalarda», «materiali bor» -> «material bo'lmaydi»; 5 — almashtirish: «Har bo'linishda» tushirilgan, «qisqaradi» -> «bo'linishda o'zgarmaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/hujayra",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "hujayra",
+        "hukmlar": [
+          "1. Hujayra kattalashsa, yuza maydoni hajmga nisbatan kamayib boradi",
+          "2. Bo'linish paytida irsiy ip o'rtasidan teng ikkiga kesiladi",
+          "3. O'simlik hujayrasidagi suv bo'shlig'i devorga bosim berib turadi",
+          "4. Energiya ishlab chiqaruvchi tuzilmalarda irsiy material bo'lmaydi",
+          "5. Irsiy ipning uchidagi himoya qismi bo'linishda o'zgarmaydi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#959c0c16",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 2, 3, 4, 5; b) 1",
+        "a) 1, 4; b) 2, 3, 5",
+        "a) 2, 4, 5; b) 1, 3",
+        "a) 4, 5; b) 1, 2, 3"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 4, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «tez bug'lanib, uzoq turolmaydi» -> «bir zumda muzlab qoladi»; 2 — almashtirish: «minus yetmish darajagacha tushadi» -> «nol daraja atrofida saqlanadi»; 3 — almashtirish: «suv muzi va» -> «faqat».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/mars",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "mars",
+        "hukmlar": [
+          "1. Siyrak havoda suyuq suv bir zumda muzlab qoladi",
+          "2. Tunda Marsda harorat nol daraja atrofida saqlanadi",
+          "3. Qutb qoplami faqat muzlagan karbonat angidriddan iborat",
+          "4. Yuzadagi tarmoqlangan izlar qadimda suv oqqanini ko'rsatadi",
+          "5. Mars atmosferasining bosimi Yerdagidan yuz baravardan ko'p past"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#98c446a5",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 3, 4; b) 2, 5",
+        "a) 3, 4; b) 1, 2, 5",
+        "a) 1, 4; b) 2, 3, 5",
+        "a) 1; b) 2, 3, 4, 5"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3, 4 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «qadimda suv oqqanini ko'rsatadi» -> «shamol ta'sirida hosil bo'lgan»; 5 — almashtirish: «tez bug'lanib, uzoq turolmaydi» -> «bir zumda muzlab qoladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/mars",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "mars",
+        "hukmlar": [
+          "1. Yirik relyef shakllarining saqlanishi plita harakati yo'qligidan",
+          "2. Yuzadagi tarmoqlangan izlar shamol ta'sirida hosil bo'lgan",
+          "3. Sutkalik harorat farqining sababi atmosferaning siyrakligida",
+          "4. Qutb qoplami suv muzi va muzlagan karbonat angidriddan iborat",
+          "5. Siyrak havoda suyuq suv bir zumda muzlab qoladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#c6ba1a35",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 2; b) 3, 4, 5",
+        "a) 1, 2, 3, 5; b) 4",
+        "a) 1, 2, 3; b) 4, 5",
+        "a) 1, 2, 4; b) 3, 5"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2, 3 — to'g'ri hukm. Qolganlari: 4 — almashtirish: «atmosferaning siyrakligida» -> «sayyoraning tezligida»; 5 — inkor: «tuproqdagi temir birikmalaridan kelib chiqqan» -> «tuproq tarkibiga umuman bog'liq emas».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/mars",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "mars",
+        "hukmlar": [
+          "1. Chang bo'roni siyrak havoda inshootni ag'dara olmaydi",
+          "2. Marsning ikkala qutbida katta muz qoplamalari mavjud",
+          "3. Yirik relyef shakllarining saqlanishi plita harakati yo'qligidan",
+          "4. Sutkalik harorat farqining sababi sayyoraning tezligida",
+          "5. Marsning qizg'ish rangi tuproq tarkibiga umuman bog'liq emas"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#84038d56",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 3, 4, 5; b) 1, 2",
+        "a) 3; b) 1, 2, 4, 5",
+        "a) 2, 3, 4, 5; b) 1",
+        "a) 2, 4, 5; b) 1, 3"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 4, 5 — to'g'ri hukm. Qolganlari: 1 — inkor: «tuproqdagi temir birikmalaridan kelib chiqqan» -> «tuproq tarkibiga umuman bog'liq emas»; 2 — almashtirish: «qadimda suv oqqanini ko'rsatadi» -> «shamol ta'sirida hosil bo'lgan».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/mars",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "mars",
+        "hukmlar": [
+          "1. Marsning qizg'ish rangi tuproq tarkibiga umuman bog'liq emas",
+          "2. Yuzadagi tarmoqlangan izlar shamol ta'sirida hosil bo'lgan",
+          "3. Sutkalik harorat farqining sababi atmosferaning siyrakligida",
+          "4. Siyrak havoda suyuq suv tez bug'lanib, uzoq turolmaydi",
+          "5. Marsning ikkala qutbida katta muz qoplamalari mavjud"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#90c817fb",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 3, 5; b) 2, 4",
+        "a) 1, 4, 5; b) 2, 3",
+        "a) 1, 3, 4, 5; b) 2",
+        "a) 2, 4, 5; b) 1, 3"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 4, 5 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «shakllarining saqlanishi plita harakati yo'qligidan» -> «shakllari kuchli shamol ta'sirida saqlanadi»; 3 — inkor: «yuz baravardan ko'p past» -> «bir necha barobar yuqori».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/mars",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "mars",
+        "hukmlar": [
+          "1. Sutkalik harorat farqining sababi atmosferaning siyrakligida",
+          "2. Yirik relyef shakllari kuchli shamol ta'sirida saqlanadi",
+          "3. Mars atmosferasining bosimi Yerdagidan bir necha barobar yuqori",
+          "4. Marsdagi eng baland vulqon balandligi yigirma kilometrdan oshadi",
+          "5. Marsning qizg'ish rangi tuproqdagi temir birikmalaridan kelib chiqqan"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#640eb159",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 2, 3; b) 1, 4, 5",
+        "a) 3; b) 1, 2, 4, 5",
+        "a) 1, 3; b) 2, 4, 5",
+        "a) 1, 2, 3, 5; b) 4"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 3 — to'g'ri hukm. Qolganlari: 1 — inkor: «ham kuchli» qo'shilgan, «bermaydi, u atrofni sezishga xizmat» -> «berib, o'ljani shol»; 4 — almashtirish: «mushak» -> «nerv»; 5 — inkor: «o'ljaning mushaklarini bir zumda qisqartiradi» -> «o'ljaga sezilarli ta'sir ko'rsatmay o'tadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/baliq",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "baliq",
+        "hukmlar": [
+          "1. Kuchsiz maydon ham kuchli zarba berib, o'ljani shol qiladi",
+          "2. Bu baliqlar ustidagi tajribalar nerv impulsi tabiatini ochdi",
+          "3. Ichki a'zolarni o'ragan yog' qatlami tokni yomon o'tkazadi",
+          "4. Elektr organ nerv to'qimasidan kelib chiqqan",
+          "5. Zarba o'ljaga sezilarli ta'sir ko'rsatmay o'tadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#8701eaac",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 1, 2; b) 3, 4, 5",
+        "a) 2, 3, 4, 5; b) 1",
+        "a) 3, 5; b) 1, 2, 4",
+        "a) 2, 5; b) 1, 3, 4"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «mushak» -> «nerv»; 3 — inkor: «maydonni buzadi va baliq buni sezadi» -> «maydonga hech qanday ta'sir qilmaydi»; 4 — inkor: «yaxshiroq» -> «yomonroq».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/baliq",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "baliq",
+        "hukmlar": [
+          "1. Elektr organ nerv to'qimasidan kelib chiqqan",
+          "2. Hujayralar ketma-ket ulangani uchun kuchlanishlar qo'shiladi",
+          "3. Yaqinlashgan jism maydonga hech qanday ta'sir qilmaydi",
+          "4. Sho'r suv chuchuk suvga qaraganda tokni yomonroq o'tkazadi",
+          "5. Bu baliqlar ustidagi tajribalar nerv impulsi tabiatini ochdi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#a74d4363",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 1, 3, 4; b) 2, 5",
+        "a) 1, 4; b) 2, 3, 5",
+        "a) 1, 2; b) 3, 4, 5",
+        "a) 1, 3; b) 2, 4, 5"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3 — to'g'ri hukm. Qolganlari: 2 — inkor: «yomon» -> «yaxshi»; 4 — inkor: «ustidagi tajribalar nerv impulsi tabiatini ochdi» -> «fan uchun hech qanday ahamiyat kasb etmagan»; 5 — almashtirish: «bir necha marta mustaqil paydo bo'lgan» -> «barcha baliqlarga xos xususiyat».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/baliq",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "baliq",
+        "hukmlar": [
+          "1. Kuchsiz maydon zarba bermaydi, u atrofni sezishga xizmat qiladi",
+          "2. Ichki a'zolarni o'ragan yog' qatlami tokni yaxshi o'tkazadi",
+          "3. Yaqinlashgan jism maydonni buzadi va baliq buni sezadi",
+          "4. Bu baliqlar fan uchun hech qanday ahamiyat kasb etmagan",
+          "5. Elektr hosil qilish qobiliyati barcha baliqlarga xos xususiyat"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#5cdfb171",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 2; b) 1, 3, 4, 5",
+        "a) 4, 5; b) 1, 2, 3",
+        "a) 2, 4, 5; b) 1, 3",
+        "a) 3, 4, 5; b) 1, 2"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 4, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «Ko'pchilik elektr baliq turi» -> «Kuchli va», «maydon hosil qiladi» -> «turlar soni bir-biriga deyarli teng»; 3 — inkor: «yaxshiroq» -> «yomonroq».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/baliq",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "baliq",
+        "hukmlar": [
+          "1. Kuchli va kuchsiz turlar soni bir-biriga deyarli teng",
+          "2. Elektr organ mushak to'qimasidan kelib chiqqan",
+          "3. Sho'r suv chuchuk suvga qaraganda tokni yomonroq o'tkazadi",
+          "4. Zarba o'ljaning mushaklarini bir zumda qisqartiradi",
+          "5. Kuchsiz maydon zarba bermaydi, u atrofni sezishga xizmat qiladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#f95f12bb",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 1, 3, 4, 5; b) 2",
+        "a) 1; b) 2, 3, 4, 5",
+        "a) 1, 3, 4; b) 2, 5",
+        "a) 1, 4; b) 2, 3, 5"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3, 4 — to'g'ri hukm. Qolganlari: 2 — inkor: «o'ljaning mushaklarini bir zumda qisqartiradi» -> «o'ljaga sezilarli ta'sir ko'rsatmay o'tadi»; 5 — inkor: «ustidagi tajribalar nerv impulsi tabiatini ochdi» -> «fan uchun hech qanday ahamiyat kasb etmagan».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/baliq",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "baliq",
+        "hukmlar": [
+          "1. Ko'pchilik elektr baliq turi kuchsiz maydon hosil qiladi",
+          "2. Zarba o'ljaga sezilarli ta'sir ko'rsatmay o'tadi",
+          "3. Kuchsiz maydon zarba bermaydi, u atrofni sezishga xizmat qiladi",
+          "4. Hujayralar ketma-ket ulangani uchun kuchlanishlar qo'shiladi",
+          "5. Bu baliqlar fan uchun hech qanday ahamiyat kasb etmagan"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#846fb687",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 2, 3, 4, 5; b) 1",
+        "a) 2, 3, 5; b) 1, 4",
+        "a) 2, 3; b) 1, 4, 5",
+        "a) 3, 5; b) 1, 2, 4"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 3, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «qizil» -> «oq»; 4 — inkor: «yirikroq» -> «kichikroq».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tog",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tog",
+        "hukmlar": [
+          "1. Baland joyda uzoq turgan kishining qonida oq tanachalar ortadi",
+          "2. Har ming metrga ko'tarilganda harorat olti daraja atrofida pasayadi",
+          "3. Tizmaning shamolga qaragan tomoni nam, orqa tomoni quruq bo'ladi",
+          "4. Tog' hayvonlarining yuragi va o'pkasi tekislikdagidan kichikroq",
+          "5. O'rmon kesilgan yonbag'irda ko'chki xavfi yanada ortadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#2d87496f",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 1, 3, 4; b) 2, 5",
+        "a) 3, 4; b) 1, 2, 5",
+        "a) 4; b) 1, 2, 3, 5",
+        "a) 2, 3, 4; b) 1, 5"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 3, 4 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «faqat plitalarning» qo'shilgan, «va yemirilish o'rtasidagi muvozanatga» -> «tezligiga»; 5 — inkor: «topilishi mumkin» -> «topilmaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tog",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tog",
+        "hukmlar": [
+          "1. Tog' balandligi faqat plitalarning ko'tarilish tezligiga bog'liq",
+          "2. Zinapoyasimon maydonchalar tuproqning yuvilishiga yo'l qo'ymaydi",
+          "3. Har ming metrga ko'tarilganda harorat olti daraja atrofida pasayadi",
+          "4. Baland joyda uzoq turgan kishining qonida qizil tanachalar ortadi",
+          "5. Baland cho'qqilardan dengiz jonivorlari qoldiqlari topilmaydi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#d13346d3",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 1, 3, 5; b) 2, 4",
+        "a) 1; b) 2, 3, 4, 5",
+        "a) 1, 3, 4; b) 2, 5",
+        "a) 3, 4, 5; b) 1, 2"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3, 4 — to'g'ri hukm. Qolganlari: 2 — inkor: «yirikroq» -> «kichikroq»; 5 — almashtirish: «tuproqning yuvilishiga yo'l qo'ymaydi» -> «shamoldan himoya uchun quriladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tog",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tog",
+        "hukmlar": [
+          "1. Ikki plita bir-biriga qarab siljiganda qatlamlar siqilib, burmaga yig'iladi",
+          "2. Tog' hayvonlarining yuragi va o'pkasi tekislikdagidan kichikroq",
+          "3. Plitalarning harakat tezligi yiliga bir necha santimetrni tashkil etadi",
+          "4. Balandlikda kislorod ulushi o'zgarmaydi, olinadigan miqdori kamayadi",
+          "5. Zinapoyasimon maydonchalar shamoldan himoya uchun quriladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#b9a2050b",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 1, 2, 5; b) 3, 4",
+        "a) 1, 5; b) 2, 3, 4",
+        "a) 1, 2; b) 3, 4, 5",
+        "a) 1, 2, 4, 5; b) 3"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2, 5 — to'g'ri hukm. Qolganlari: 3 — inkor: «soviydi» -> «qiziydi», «yog'in beradi» -> «quruq qoladi»; 4 — inkor: «topilishi mumkin» -> «topilmaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tog",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tog",
+        "hukmlar": [
+          "1. Ikki plita bir-biriga qarab siljiganda qatlamlar siqilib, burmaga yig'iladi",
+          "2. O'rmon kesilgan yonbag'irda ko'chki xavfi yanada ortadi",
+          "3. Nam havo yonbag'ir bo'ylab ko'tarilganda qiziydi va quruq qoladi",
+          "4. Baland cho'qqilardan dengiz jonivorlari qoldiqlari topilmaydi",
+          "5. Tog' balandligi ko'tarilish va yemirilish o'rtasidagi muvozanatga bog'liq"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#a7e70d27",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 2, 5; b) 1, 3, 4",
+        "a) 3, 5; b) 1, 2, 4",
+        "a) 2, 3, 5; b) 1, 4",
+        "a) 1, 2; b) 3, 4, 5"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «faqat plitalarning» qo'shilgan, «va yemirilish o'rtasidagi muvozanatga» -> «tezligiga»; 3 — almashtirish: «qizil» -> «oq»; 4 — almashtirish: «shamolga qaragan tomoni nam, orqa» -> «ikkala», «quruq bo'ladi» -> «ham bir xil namlikda bo'lib qoladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tog",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tog",
+        "hukmlar": [
+          "1. Tog' balandligi faqat plitalarning ko'tarilish tezligiga bog'liq",
+          "2. Baland cho'qqilardan dengiz jonivorlari qoldiqlari topilishi mumkin",
+          "3. Baland joyda uzoq turgan kishining qonida oq tanachalar ortadi",
+          "4. Tizmaning ikkala tomoni ham bir xil namlikda bo'lib qoladi",
+          "5. Balandlikda kislorod ulushi o'zgarmaydi, olinadigan miqdori kamayadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#ba30ef97",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 1, 3; b) 2, 4, 5",
+        "a) 1, 2, 3, 5; b) 4",
+        "a) 1, 3, 4, 5; b) 2",
+        "a) 1, 3, 5; b) 2, 4"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3, 5 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «tortishish» -> «aylanish», «ichki bosim» -> «magnit kuchi»; 4 — inkor: «aslida bir-biridan uzoqda» -> «doim bir-biriga juda yaqin», «bo'lishi mumkin» -> «bo'ladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/yulduz",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "yulduz",
+        "hukmlar": [
+          "1. Yulduzlar ko'rinadigan nurdan tashqari boshqa nurlarni ham chiqaradi",
+          "2. Yulduz aylanish va magnit kuchi muvozanatida turadi",
+          "3. Yorug'lik yili — yorug'lik bir yilda bosib o'tadigan masofa",
+          "4. Turkumdagi yulduzlar doim bir-biriga juda yaqin joylashgan bo'ladi",
+          "5. Yulduz markazida yengil yadrolar birikib, og'irroq yadro hosil qiladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#47690956",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 1; b) 2, 3, 4, 5",
+        "a) 1, 4, 5; b) 2, 3",
+        "a) 1, 2, 4, 5; b) 3",
+        "a) 2, 4, 5; b) 1, 3"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 4, 5 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «Yoqilg'i tugay boshlaganda yulduzning» -> «Yulduz», «faqat tashqi to'qnashuvdan» qo'shilgan; 3 — almashtirish: «Yulduzlar ko'rinadigan nurdan tashqari boshqa nurlarni ham chiqaradi» -> «Yulduzlardan keladigan barcha nur turlari bir xil ma'lumot beradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/yulduz",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "yulduz",
+        "hukmlar": [
+          "1. Yirik yulduz yoqilg'isini tez sarflagani uchun umri qisqa bo'ladi",
+          "2. Yulduz muvozanati faqat tashqi to'qnashuvdan buziladi",
+          "3. Yulduzlardan keladigan barcha nur turlari bir xil ma'lumot beradi",
+          "4. Ko'kimtir yulduzlar qizg'ishlariga qaraganda issiqroq hisoblanadi",
+          "5. Yirik yulduz portlashidan qolgan modda yangi yulduzlarga xomashyo bo'ladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#ad1f29ee",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 3, 4; b) 2, 5",
+        "a) 1, 3, 5; b) 2, 4",
+        "a) 1, 2, 4; b) 3, 5",
+        "a) 1, 3; b) 2, 4, 5"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3, 4 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «Yoqilg'i tugay boshlaganda yulduzning» -> «Yulduz», «faqat tashqi to'qnashuvdan» qo'shilgan; 5 — almashtirish: «Yulduzlar ko'rinadigan nurdan tashqari boshqa nurlarni ham chiqaradi» -> «Yulduzlardan keladigan barcha nur turlari bir xil ma'lumot beradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/yulduz",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "yulduz",
+        "hukmlar": [
+          "1. Yorug'lik yili — yorug'lik bir yilda bosib o'tadigan masofa",
+          "2. Yulduz muvozanati faqat tashqi to'qnashuvdan buziladi",
+          "3. Yirik yulduz portlashidan qolgan modda yangi yulduzlarga xomashyo bo'ladi",
+          "4. Yulduz markazida yengil yadrolar birikib, og'irroq yadro hosil qiladi",
+          "5. Yulduzlardan keladigan barcha nur turlari bir xil ma'lumot beradi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#84f94324",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 3; b) 2, 4, 5",
+        "a) 2, 3; b) 1, 4, 5",
+        "a) 1, 3, 5; b) 2, 4",
+        "a) 1, 2, 3; b) 4, 5"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «yorug'lik» -> «yulduz»; 4 — inkor: «yulduz ichida va portlash paytida hosil bo'lgan» -> «yulduzlar bilan hech qanday aloqador emas»; 5 — inkor: «aslida bir-biridan uzoqda» -> «doim bir-biriga juda yaqin», «bo'lishi mumkin» -> «bo'ladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/yulduz",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "yulduz",
+        "hukmlar": [
+          "1. Yirik yulduz portlashidan qolgan modda yangi yulduzlarga xomashyo bo'ladi",
+          "2. Yorug'lik yili — yulduz bir yilda bosib o'tadigan masofa",
+          "3. Yulduzning rangi uning yuza haroratini bildiradi",
+          "4. Og'ir elementlar yulduzlar bilan hech qanday aloqador emas",
+          "5. Turkumdagi yulduzlar doim bir-biriga juda yaqin joylashgan bo'ladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#9a17dc25",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 2, 4; b) 1, 3, 5",
+        "a) 3; b) 1, 2, 4, 5",
+        "a) 3, 4; b) 1, 2, 5",
+        "a) 3, 4, 5; b) 1, 2"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 4 — to'g'ri hukm. Qolganlari: 1 — inkor: «yangi yulduzlarga xomashyo bo'ladi» -> «butunlay yo'q bo'lib ketadi»; 2 — almashtirish: «yoqilg'isining taxminan yarmini sarflagan hisoblanadi» -> «yoqilg'ini umuman sarflamay, uni to'plab bormoqda»; 5 — almashtirish: «yengil yadrolar birikib, og'irroq yadro hosil qiladi» -> «gaz yonib, kimyoviy energiya ajralib chiqadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/yulduz",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "yulduz",
+        "hukmlar": [
+          "1. Yirik yulduz portlashidan qolgan modda butunlay yo'q bo'lib ketadi",
+          "2. Quyosh yoqilg'ini umuman sarflamay, uni to'plab bormoqda",
+          "3. Yulduz tortishish va ichki bosim muvozanatida turadi",
+          "4. Yoqilg'i tugay boshlaganda yulduzning muvozanati buziladi",
+          "5. Yulduz markazida gaz yonib, kimyoviy energiya ajralib chiqadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#5cc4a43c",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 2, 3; b) 4, 5",
+        "a) 3, 5; b) 1, 2, 4",
+        "a) 1, 3; b) 2, 4, 5",
+        "a) 1, 4; b) 2, 3, 5"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3 — to'g'ri hukm. Qolganlari: 2 — inkor: «oziq-ovqatni saqlash imkonini bergani uchun qimmat» -> «arzon va hamma joyda topiladigan mahsulot»; 4 — inkor: «mikroblarni o'ldirmaydi, u» tushirilgan, «suvni o'ziga tortadi» -> «mikroblarni to'g'ridan-to'g'ri o'ldirib yuboradi»; 5 — almashtirish: «qurib qolgan dengizlarning qoldig'i hisoblanadi» -> «vulqon otilishi natijasida hosil bo'lgan».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuz",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuz",
+        "hukmlar": [
+          "1. Osh tuziga yod qo'shish yetishmovchilikning oldini olish uchun qilinadi",
+          "2. Qadimda tuz arzon va hamma joyda topiladigan mahsulot bo'lgan",
+          "3. Suvsiz muhitda bakteriya ko'payish imkonini yo'qotadi",
+          "4. Tuz mahsulotdagi mikroblarni to'g'ridan-to'g'ri o'ldirib yuboradi",
+          "5. Yer ostidagi tuz konlari vulqon otilishi natijasida hosil bo'lgan"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#086a47a4",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 3; b) 2, 4, 5",
+        "a) 1, 2, 3, 4; b) 5",
+        "a) 1, 4; b) 2, 3, 5",
+        "a) 1, 3, 4; b) 2, 5"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 4 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «ikki element alohida holda» -> «elementlar birikkanda», «hisoblanadi» -> «modda beradi»; 3 — almashtirish: «atrofdagi o'simliklarga ziyon yetkazadi» -> «faqat yo'l qoplamasini yemiradi»; 5 — inkor: «impulsi tuz zarralarining harakati orqali uzatiladi» -> «impulsining uzatilishi tuzga umuman bog'liq emas».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuz",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuz",
+        "hukmlar": [
+          "1. Sho'rlangan yerda ildiz suvni tortib ola olmaydi",
+          "2. Tuzni tashkil etuvchi elementlar birikkanda xavfli modda beradi",
+          "3. Yo'llarga sepilgan tuz faqat yo'l qoplamasini yemiradi",
+          "4. Yer ostidagi tuz konlari qurib qolgan dengizlarning qoldig'i hisoblanadi",
+          "5. Nerv impulsining uzatilishi tuzga umuman bog'liq emas"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#aa3d3525",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 2, 3; b) 1, 4, 5",
+        "a) 2, 3, 4; b) 1, 5",
+        "a) 2, 4; b) 1, 3, 5",
+        "a) 1, 2, 3, 5; b) 4"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 3 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «qurib qolgan dengizlarning qoldig'i hisoblanadi» -> «vulqon otilishi natijasida hosil bo'lgan»; 4 — inkor: «oziq-ovqatni saqlash imkonini bergani uchun qimmat» -> «arzon va hamma joyda topiladigan mahsulot»; 5 — almashtirish: «qo'shish yetishmovchilikning oldini olish» -> «uning ta'mi va rangini yaxshilash», «qilinadi» -> «qo'shiladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuz",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuz",
+        "hukmlar": [
+          "1. Yer ostidagi tuz konlari vulqon otilishi natijasida hosil bo'lgan",
+          "2. Tuz zarralari hujayra ichi va tashqarisidagi muvozanatni ushlab turadi",
+          "3. Nerv impulsi tuz zarralarining harakati orqali uzatiladi",
+          "4. Qadimda tuz arzon va hamma joyda topiladigan mahsulot bo'lgan",
+          "5. Osh tuziga yod uning ta'mi va rangini yaxshilash uchun qo'shiladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#01213bdc",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 5; b) 2, 3, 4",
+        "a) 2, 5; b) 1, 3, 4",
+        "a) 2, 3, 5; b) 1, 4",
+        "a) 2, 4, 5; b) 1, 3"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 5 — to'g'ri hukm. Qolganlari: 1 — inkor: «suv zichligi katta bo'lgani uchun» tushirilgan, «cho'kmaydi» -> «oddiy suvdagidek tez cho'kib ketadi»; 3 — almashtirish: «ikki element alohida holda» -> «elementlar birikkanda», «hisoblanadi» -> «modda beradi»; 4 — inkor: «pasaytiradi» -> «ko'taradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuz",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuz",
+        "hukmlar": [
+          "1. Juda sho'r ko'lda odam oddiy suvdagidek tez cho'kib ketadi",
+          "2. Osh tuziga yod qo'shish yetishmovchilikning oldini olish uchun qilinadi",
+          "3. Tuzni tashkil etuvchi elementlar birikkanda xavfli modda beradi",
+          "4. Tuz suvning muzlash haroratini ko'taradi",
+          "5. Qadimda tuz oziq-ovqatni saqlash imkonini bergani uchun qimmat bo'lgan"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#c8d7f0e4",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 2, 3, 4; b) 5",
+        "a) 3, 4, 5; b) 1, 2",
+        "a) 1, 3; b) 2, 4, 5",
+        "a) 1, 3, 4; b) 2, 5"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3, 4 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «qo'shish yetishmovchilikning oldini olish» -> «uning ta'mi va rangini yaxshilash», «qilinadi» -> «qo'shiladi»; 5 — inkor: «impulsi tuz zarralarining harakati orqali uzatiladi» -> «impulsining uzatilishi tuzga umuman bog'liq emas».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/tuz",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "tuz",
+        "hukmlar": [
+          "1. Tuz zarralari hujayra ichi va tashqarisidagi muvozanatni ushlab turadi",
+          "2. Osh tuziga yod uning ta'mi va rangini yaxshilash uchun qo'shiladi",
+          "3. Tuz suvning muzlash haroratini pasaytiradi",
+          "4. Suvsiz muhitda bakteriya ko'payish imkonini yo'qotadi",
+          "5. Nerv impulsining uzatilishi tuzga umuman bog'liq emas"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#cabf6dfa",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 3, 5; b) 1, 2, 4",
+        "a) 1, 4; b) 2, 3, 5",
+        "a) 1, 3; b) 2, 4, 5",
+        "a) 1, 3, 5; b) 2, 4"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3 — to'g'ri hukm. Qolganlari: 2 — inkor: «iliq havo oqimidan foydalanib,» -> «balandlikka faqat tinmay», «qoqmasdan ko'tariladi» -> «qoqib ko'tarila oladi»; 4 — inkor: «yuqori» -> «past»; 5 — inkor: «ikki ko'zi oldinga qaragani uchun» tushirilgan, «baholaydi» -> «baholay olmaydi va tez-tez xato qiladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/burgut",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "burgut",
+        "hukmlar": [
+          "1. Bir juftlik ko'p yillar davomida bitta uyani ishlatib keladi",
+          "2. Burgut balandlikka faqat tinmay qanot qoqib ko'tarila oladi",
+          "3. Tuxumlar bir necha kun oralatib qo'yilgani uchun jo'jalar teng emas",
+          "4. Burgut ko'zidagi sezgir hujayralar zichligi odamnikidan past",
+          "5. Burgut masofani aniq baholay olmaydi va tez-tez xato qiladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#b526af77",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 1, 2, 3; b) 4, 5",
+        "a) 1, 4; b) 2, 3, 5",
+        "a) 2, 4; b) 1, 3, 5",
+        "a) 1, 2, 4; b) 3, 5"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2, 4 — to'g'ri hukm. Qolganlari: 3 — inkor: «yuqori» -> «past»; 5 — almashtirish: «burgutning tezligi yuz kilometrdan oshadi» -> «burgut tezligini ataylab pasaytiradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/burgut",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "burgut",
+        "hukmlar": [
+          "1. Burgut iliq havo oqimidan foydalanib, qanot qoqmasdan ko'tariladi",
+          "2. Burgut urg'ochisi odatda erkagidan yirikroq bo'ladi",
+          "3. Burgut ko'zidagi sezgir hujayralar zichligi odamnikidan past",
+          "4. Oziq kam mavsumda burgut o'lgan hayvon go'shtidan ham foydalanadi",
+          "5. Pastga tashlanganda burgut tezligini ataylab pasaytiradi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#a027d5a6",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 1, 3, 4; b) 2, 5",
+        "a) 1, 2, 4; b) 3, 5",
+        "a) 1, 3, 4, 5; b) 2",
+        "a) 3, 4, 5; b) 1, 2"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3, 4 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «burgutning tezligi yuz kilometrdan oshadi» -> «burgut tezligini ataylab pasaytiradi»; 5 — almashtirish: «odatda erkagidan yirikroq» -> «va erkagi bir xil o'lchamda».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/burgut",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "burgut",
+        "hukmlar": [
+          "1. Burgut ikki ko'zi oldinga qaragani uchun masofani aniq baholaydi",
+          "2. Pastga tashlanganda burgut tezligini ataylab pasaytiradi",
+          "3. Tuxumlar bir necha kun oralatib qo'yilgani uchun jo'jalar teng emas",
+          "4. Oziq kam mavsumda burgut o'lgan hayvon go'shtidan ham foydalanadi",
+          "5. Burgut urg'ochisi va erkagi bir xil o'lchamda bo'ladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#2d947894",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 1, 3; b) 2, 4, 5",
+        "a) 1, 2, 3; b) 4, 5",
+        "a) 1, 2, 3, 4; b) 5",
+        "a) 3; b) 1, 2, 4, 5"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2, 3 — to'g'ri hukm. Qolganlari: 4 — inkor: «ko'p yillar davomida bitta uyani ishlatib keladi» -> «har yili yangi joyda yangi uya qurib chiqadi»; 5 — inkor: «kamaytiradi» -> «oshiradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/burgut",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "burgut",
+        "hukmlar": [
+          "1. Oziq kam mavsumda burgut o'lgan hayvon go'shtidan ham foydalanadi",
+          "2. Burgut iliq havo oqimidan foydalanib, qanot qoqmasdan ko'tariladi",
+          "3. Burgutning voyaga yetishi to'rt-besh yil davom etadi",
+          "4. Bir juftlik har yili yangi joyda yangi uya qurib chiqadi",
+          "5. Qanotlarni tanaga yopishtirish havo qarshiligini oshiradi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#859f062c",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 2, 4, 5; b) 1, 3",
+        "a) 2, 3, 5; b) 1, 4",
+        "a) 3, 4, 5; b) 1, 2",
+        "a) 2, 4; b) 1, 3, 5"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 4, 5 — to'g'ri hukm. Qolganlari: 1 — inkor: «iliq havo oqimidan foydalanib,» -> «balandlikka faqat tinmay», «qoqmasdan ko'tariladi» -> «qoqib ko'tarila oladi»; 3 — inkor: «ko'p yillar davomida bitta uyani ishlatib keladi» -> «har yili yangi joyda yangi uya qurib chiqadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/burgut",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "burgut",
+        "hukmlar": [
+          "1. Burgut balandlikka faqat tinmay qanot qoqib ko'tarila oladi",
+          "2. Ov hududining kengligi undagi oziq miqdoriga bog'liq bo'ladi",
+          "3. Bir juftlik har yili yangi joyda yangi uya qurib chiqadi",
+          "4. Burgut urg'ochisi odatda erkagidan yirikroq bo'ladi",
+          "5. Burgut ikki ko'zi oldinga qaragani uchun masofani aniq baholaydi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#cdfab8ff",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 2, 4; b) 3, 5",
+        "a) 2, 4; b) 1, 3, 5",
+        "a) 1, 2, 4, 5; b) 3",
+        "a) 2, 4, 5; b) 1, 3"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 4 — to'g'ri hukm. Qolganlari: 1 — bo'rttirish: «qirq» -> «to'qson»; 3 — inkor: «spiral» -> «tasodifiy»; 5 — inkor: «sharqqa» -> «g'arbga».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/kungaboqar",
+        "buzish/borttirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "kungaboqar",
+        "hukmlar": [
+          "1. Kungaboqar urug'ida yog' miqdori to'qson foizdan oshadi",
+          "2. Kungaboqar ildizi ikki metrdan chuqurdan namlik tortib oladi",
+          "3. Gulchalarning tasodifiy joylashuvi maydondan to'liq foydalantiradi",
+          "4. Kungaboqar Yevropaga dastlab manzarali o'simlik sifatida keltirilgan",
+          "5. Yetilgan bosh doimiy ravishda g'arbga qarab qoladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#eb0738f9",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 1, 3, 5; b) 2, 4",
+        "a) 5; b) 1, 2, 3, 4",
+        "a) 1, 5; b) 2, 3, 4",
+        "a) 1, 2, 5; b) 3, 4"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 5 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «ildizi ayrim» -> «barglari»; 3 — almashtirish: «ikki metrdan chuqurdan» -> «faqat yuza qatlamdan»; 4 — inkor: «hasharotni chaqiradi,» -> «ham,», «ham» qo'shilgan, «beradi» -> «hosil qilmaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/kungaboqar",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "kungaboqar",
+        "hukmlar": [
+          "1. Kungaboqarning boshi mingdan ortiq mayda gulchadan iborat",
+          "2. Kungaboqar barglari og'ir metallarni o'ziga tortib oladi",
+          "3. Kungaboqar ildizi faqat yuza qatlamdan namlik tortib oladi",
+          "4. Chetdagi gulchalar ham, ichkaridagilari ham urug' hosil qilmaydi",
+          "5. Yosh kungaboqar kun davomida boshini quyosh ortidan buradi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#097cc6ce",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 3, 4; b) 1, 2, 5",
+        "a) 1, 3, 4, 5; b) 2",
+        "a) 3, 4, 5; b) 1, 2",
+        "a) 2, 3, 4, 5; b) 1"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 4, 5 — to'g'ri hukm. Qolganlari: 1 — inkor: «sharqqa» -> «g'arbga»; 2 — inkor: «Yevropaga dastlab manzarali» -> «Yevropada qadimdan o'sib kelgan mahalliy», «sifatida keltirilgan» tushirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/kungaboqar",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "kungaboqar",
+        "hukmlar": [
+          "1. Yetilgan bosh doimiy ravishda g'arbga qarab qoladi",
+          "2. Kungaboqar Yevropada qadimdan o'sib kelgan mahalliy o'simlik",
+          "3. Kungaboqar ildizi ikki metrdan chuqurdan namlik tortib oladi",
+          "4. Ertalabki quyosh gulni isitadi va hasharot ko'proq qo'nadi",
+          "5. Poyaning quyosh tushmagan tomoni tezroq o'sadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#5b174ab7",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 3, 4, 5; b) 1, 2",
+        "a) 3, 4; b) 1, 2, 5",
+        "a) 5; b) 1, 2, 3, 4",
+        "a) 3, 5; b) 1, 2, 4"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 5 — to'g'ri hukm. Qolganlari: 1 — bo'rttirish: «mingdan» -> «milliondan», «mayda» tushirilgan; 2 — almashtirish: «Ertalabki» -> «Kechki»; 4 — almashtirish: «ildizi ayrim» -> «barglari».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/kungaboqar",
+        "buzish/borttirish",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "kungaboqar",
+        "hukmlar": [
+          "1. Kungaboqarning boshi milliondan ortiq gulchadan iborat",
+          "2. Kechki quyosh gulni isitadi va hasharot ko'proq qo'nadi",
+          "3. Chetdagi gulchalar hasharotni chaqiradi, ichkaridagilari urug' beradi",
+          "4. Kungaboqar barglari og'ir metallarni o'ziga tortib oladi",
+          "5. Gul to'liq ochilgach, quyosh ortidan burilish to'xtaydi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#31b82d28",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 1, 2, 3, 5; b) 4",
+        "a) 1, 5; b) 2, 3, 4",
+        "a) 1, 2, 5; b) 3, 4",
+        "a) 1, 2, 4; b) 3, 5"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2, 5 — to'g'ri hukm. Qolganlari: 3 — inkor: «Yevropaga dastlab manzarali» -> «Yevropada qadimdan o'sib kelgan mahalliy», «sifatida keltirilgan» tushirilgan; 4 — almashtirish: «Yosh» -> «Yetilgan».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/kungaboqar",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "kungaboqar",
+        "hukmlar": [
+          "1. Gul to'liq ochilgach, quyosh ortidan burilish to'xtaydi",
+          "2. Poyaning quyosh tushmagan tomoni tezroq o'sadi",
+          "3. Kungaboqar Yevropada qadimdan o'sib kelgan mahalliy o'simlik",
+          "4. Yetilgan kungaboqar kun davomida boshini quyosh ortidan buradi",
+          "5. Kungaboqarning boshi mingdan ortiq mayda gulchadan iborat"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#737cda18",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 4, 5; b) 1, 2, 3",
+        "a) 2, 3, 4, 5; b) 1",
+        "a) 1, 2, 4, 5; b) 3",
+        "a) 3, 4, 5; b) 1, 2"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 4, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «umri davomida to'xtovsiz» -> «faqat yosh davrida», «turadi» -> «boradi»; 2 — almashtirish: «deyarli aylana bo'ylab ko'rish» -> «masofani aniq baholash»; 3 — almashtirish: «ikki marta hazm qilinadi» -> «oshqozonda uzoq saqlanadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/quyon",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "quyon",
+        "hukmlar": [
+          "1. Quyonning tishlari faqat yosh davrida o'sib boradi",
+          "2. Yon joylashgan ko'z masofani aniq baholash imkonini beradi",
+          "3. Quyonning ovqati oshqozonda uzoq saqlanadi",
+          "4. Yumshoq ozuqa tishning haddan tashqari uzayishiga olib keladi",
+          "5. Quyon soni kamayganda uni ovlaydigan yirtqichlar soni ham kamayadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#99c27abe",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 2, 5; b) 1, 3, 4",
+        "a) 1, 3; b) 2, 4, 5",
+        "a) 5; b) 1, 2, 3, 4",
+        "a) 3, 5; b) 1, 2, 4"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 5 — to'g'ri hukm. Qolganlari: 1 — inkor: «orqa oyog'i bilan yerni uradi» -> «hech qanday belgi bermay qoladi»; 2 — inkor: «oqsilni yo'qotmaslikka yordam beradi» -> «oqsil yo'qotilishiga olib keladi»; 4 — almashtirish: «ikki marta hazm qilinadi» -> «oshqozonda uzoq saqlanadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/quyon",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "quyon",
+        "hukmlar": [
+          "1. Xavf sezgan quyon hech qanday belgi bermay qoladi",
+          "2. Qayta yeyish vitamin va oqsil yo'qotilishiga olib keladi",
+          "3. Issiq o'lkalarda yashovchi quyon turlarining qulog'i uzunroq bo'ladi",
+          "4. Quyonning ovqati oshqozonda uzoq saqlanadi",
+          "5. Quloqdagi qon tomirlari ortiqcha issiqlikni tashqariga chiqaradi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#55fd569d",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 2, 5; b) 3, 4",
+        "a) 1, 2; b) 3, 4, 5",
+        "a) 1; b) 2, 3, 4, 5",
+        "a) 2; b) 1, 3, 4, 5"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2 — to'g'ri hukm. Qolganlari: 3 — inkor: «ortiqcha» -> «tashqi», «tashqariga chiqaradi» -> «ichkariga kiritadi»; 4 — inkor: «kun uzunligi bilan boshqariladi» -> «hech narsaga bog'liq bo'lmaydi»; 5 — inkor: «oqsilni yo'qotmaslikka yordam beradi» -> «oqsil yo'qotilishiga olib keladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/quyon",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "quyon",
+        "hukmlar": [
+          "1. Yumshoq ozuqa tishning haddan tashqari uzayishiga olib keladi",
+          "2. Issiq o'lkalarda yashovchi quyon turlarining qulog'i uzunroq bo'ladi",
+          "3. Quloqdagi qon tomirlari tashqi issiqlikni ichkariga kiritadi",
+          "4. Mavsumiy rang almashinuvi hech narsaga bog'liq bo'lmaydi",
+          "5. Qayta yeyish vitamin va oqsil yo'qotilishiga olib keladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#c3f4caa4",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 1, 2, 4; b) 3, 5",
+        "a) 1, 2, 4, 5; b) 3",
+        "a) 2, 5; b) 1, 3, 4",
+        "a) 1, 2, 5; b) 3, 4"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2, 5 — to'g'ri hukm. Qolganlari: 3 — almashtirish: «umri davomida to'xtovsiz» -> «faqat yosh davrida», «turadi» -> «boradi»; 4 — inkor: «ortiqcha» -> «tashqi», «tashqariga chiqaradi» -> «ichkariga kiritadi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/quyon",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "quyon",
+        "hukmlar": [
+          "1. Quyonning ko'zlari boshning ikki yonida joylashgan",
+          "2. Qochayotgan quyon keskin burilib, izini chalkashtiradi",
+          "3. Quyonning tishlari faqat yosh davrida o'sib boradi",
+          "4. Quloqdagi qon tomirlari tashqi issiqlikni ichkariga kiritadi",
+          "5. Issiq o'lkalarda yashovchi quyon turlarining qulog'i uzunroq bo'ladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#a4951e57",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 1, 2, 3; b) 4, 5",
+        "a) 4; b) 1, 2, 3, 5",
+        "a) 1, 4; b) 2, 3, 5",
+        "a) 1, 2, 4; b) 3, 5"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2, 4 — to'g'ri hukm. Qolganlari: 3 — almashtirish: «Issiq» -> «Sovuq»; 5 — inkor: «haddan tashqari uzayishiga» -> «tez yeyilib ketishiga».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/quyon",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "quyon",
+        "hukmlar": [
+          "1. Quyon soni kamayganda uni ovlaydigan yirtqichlar soni ham kamayadi",
+          "2. Quyonning ko'zlari boshning ikki yonida joylashgan",
+          "3. Sovuq o'lkalarda yashovchi quyon turlarining qulog'i uzunroq bo'ladi",
+          "4. Xavf sezgan quyon orqa oyog'i bilan yerni uradi",
+          "5. Yumshoq ozuqa tishning tez yeyilib ketishiga olib keladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#26ac3e3b",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 2, 3, 4, 5; b) 1",
+        "a) 3, 4; b) 1, 2, 5",
+        "a) 2, 3, 4; b) 1, 5",
+        "a) 1, 3, 4; b) 2, 5"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 3, 4 — to'g'ri hukm. Qolganlari: 1 — bo'rttirish: «bir» -> «yuz»; 5 — almashtirish: «issiqlikni» -> «quyosh nurini», «atmosferada saqlab qoladi» -> «yuzaga yetkazmaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/atmosfera",
+        "buzish/borttirish",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "atmosfera",
+        "hukmlar": [
+          "1. Har kvadrat santimetr yuzaga yuz kilogrammga yaqin havo bosadi",
+          "2. Kosmik jismlar havoga kirganda ishqalanishdan qizib yonadi",
+          "3. Iqlim uzoq yillar davomidagi o'rtacha holatni bildiradi",
+          "4. Quruqlik suvdan tezroq isiydi va tezroq soviydi",
+          "5. Ayrim gazlar quyosh nurini yutib, yuzaga yetkazmaydi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#db922a8e",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 3, 4, 5; b) 1, 2",
+        "a) 1, 3, 4; b) 2, 5",
+        "a) 3, 5; b) 1, 2, 4",
+        "a) 2, 3, 4, 5; b) 1"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 4, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «ishqalanishdan qizib» -> «magnit maydondan»; 2 — almashtirish: «bosimining» -> «namligining».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/atmosfera",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "atmosfera",
+        "hukmlar": [
+          "1. Kosmik jismlar havoga kirganda magnit maydondan yonadi",
+          "2. Shamol havo namligining farqidan kelib chiqadi",
+          "3. Havoning asosiy qismini azot tashkil qiladi",
+          "4. Iqlim uzoq yillar davomidagi o'rtacha holatni bildiradi",
+          "5. Kislorod havoning beshdan bir qismini tashkil qiladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#7cf8e166",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 2, 4, 5; b) 1, 3",
+        "a) 1; b) 2, 3, 4, 5",
+        "a) 1, 4, 5; b) 2, 3",
+        "a) 1, 5; b) 2, 3, 4"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 4, 5 — to'g'ri hukm. Qolganlari: 2 — inkor: «eng pastki qatlamida sodir bo'ladi» -> «barcha qatlamlarida bir xil kechadi»; 3 — almashtirish: «uzoq yillar davomidagi o'rtacha holatni bildiradi» -> «ma'lum bir kundagi havo holatini bildirib beradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/atmosfera",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "atmosfera",
+        "hukmlar": [
+          "1. Kosmik jismlar havoga kirganda ishqalanishdan qizib yonadi",
+          "2. Ob-havo hodisalari atmosferaning barcha qatlamlarida bir xil kechadi",
+          "3. Iqlim ma'lum bir kundagi havo holatini bildirib beradi",
+          "4. Fazoda havo bo'lmagani uchun u yerda tovush tarqalmaydi",
+          "5. Ayrim gazlar issiqlikni yutib, atmosferada saqlab qoladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#2dadca0e",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 4, 5; b) 1, 2, 3",
+        "a) 1, 4; b) 2, 3, 5",
+        "a) 1; b) 2, 3, 4, 5",
+        "a) 4; b) 1, 2, 3, 5"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 4 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «bosimining» -> «namligining»; 3 — almashtirish: «issiqlikni» -> «quyosh nurini», «atmosferada saqlab qoladi» -> «yuzaga yetkazmaydi»; 5 — almashtirish: «uzoq yillar davomidagi o'rtacha holatni bildiradi» -> «ma'lum bir kundagi havo holatini bildirib beradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/atmosfera",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "atmosfera",
+        "hukmlar": [
+          "1. Havoning asosiy qismini azot tashkil qiladi",
+          "2. Shamol havo namligining farqidan kelib chiqadi",
+          "3. Ayrim gazlar quyosh nurini yutib, yuzaga yetkazmaydi",
+          "4. Quruqlik suvdan tezroq isiydi va tezroq soviydi",
+          "5. Iqlim ma'lum bir kundagi havo holatini bildirib beradi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#12fafc7d",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 1, 4, 5; b) 2, 3",
+        "a) 2, 4, 5; b) 1, 3",
+        "a) 3, 4, 5; b) 1, 2",
+        "a) 2, 5; b) 1, 3, 4"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 4, 5 — to'g'ri hukm. Qolganlari: 1 — inkor: «ushlab qoladi» -> «o'tkazib yuboradi»; 3 — almashtirish: «havo bo'lmagani uchun u yerda» tushirilgan, «tarqalmaydi» -> «havo o'rniga yorug'lik orqali tarqaladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/atmosfera",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "atmosfera",
+        "hukmlar": [
+          "1. Ozon qatlami quyoshning zararli nurini o'tkazib yuboradi",
+          "2. Ob-havo hodisalari atmosferaning eng pastki qatlamida sodir bo'ladi",
+          "3. Fazoda tovush havo o'rniga yorug'lik orqali tarqaladi",
+          "4. Kosmik jismlar havoga kirganda ishqalanishdan qizib yonadi",
+          "5. Havoning asosiy qismini azot tashkil qiladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#50e38a1e",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 2; b) 1, 3, 4, 5",
+        "a) 2, 3, 4, 5; b) 1",
+        "a) 2, 3, 5; b) 1, 4",
+        "a) 2, 3, 4; b) 1, 5"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 3, 4 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «kichik zilzilalar soni ortib boradi» -> «atrofdagi havo harorati keskin pasayadi»; 5 — inkor: «juda unumdor» -> «umuman unumsiz».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/vulqon",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "vulqon",
+        "hukmlar": [
+          "1. Otilish oldidan atrofdagi havo harorati keskin pasayadi",
+          "2. Otilish shakli magmaning quyuqligiga bog'liq bo'ladi",
+          "3. Magma atrofidagi qattiq jinsdan yengilroq bo'lgani uchun yuqoriga intiladi",
+          "4. Vulqonlarning ko'pchiligi plitalar chegarasida joylashgan",
+          "5. Vulqon kulidan hosil bo'lgan tuproq umuman unumsiz hisoblanadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#6c454262",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 3, 4; b) 1, 2, 5",
+        "a) 3, 4, 5; b) 1, 2",
+        "a) 3, 5; b) 1, 2, 4",
+        "a) 4, 5; b) 1, 2, 3"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 4, 5 — to'g'ri hukm. Qolganlari: 1 — inkor: «ushlab qolgani» -> «oson chiqargani», «ortadi» -> «pasayadi»; 2 — inkor: «magmaning quyuqligiga» -> «magma xossalariga», «bo'ladi» -> «bo'lmaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/vulqon",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "vulqon",
+        "hukmlar": [
+          "1. Quyuq magma gazni oson chiqargani uchun bosim pasayadi",
+          "2. Otilish shakli magma xossalariga bog'liq bo'lmaydi",
+          "3. Yuqoriga chiqqan mayda zarralar quyosh nurini qaytaradi",
+          "4. Otilish oldidan kichik zilzilalar soni ortib boradi",
+          "5. Otilish shkalasida har bosqich oldingisidan o'n barobar kuchli"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#97956ca1",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 2, 3, 4, 5; b) 1",
+        "a) 1, 2, 3, 5; b) 4",
+        "a) 2; b) 1, 3, 4, 5",
+        "a) 2, 3; b) 1, 4, 5"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 3 — to'g'ri hukm. Qolganlari: 1 — inkor: «shkalasida har bosqich oldingisidan o'n barobar kuchli» -> «shkalasidagi bosqichlar bir xil kuchni bildiradi»; 4 — almashtirish: «yuzasiga chiqqan» -> «ostida turgan»; 5 — inkor: «ko'proq» -> «kamroq».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/vulqon",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "vulqon",
+        "hukmlar": [
+          "1. Otilish shkalasidagi bosqichlar bir xil kuchni bildiradi",
+          "2. Quyuq magma gazni ushlab qolgani uchun bosim ortadi",
+          "3. Otilish shakli magmaning quyuqligiga bog'liq bo'ladi",
+          "4. Yer ostida turgan magma lava deb yuritiladi",
+          "5. Suv ostidagi vulqonlar soni quruqlikdagidan kamroq bo'ladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#f953315d",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 2, 3; b) 1, 4, 5",
+        "a) 3, 4; b) 1, 2, 5",
+        "a) 2, 4; b) 1, 3, 5",
+        "a) 2; b) 1, 3, 4, 5"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 4 — to'g'ri hukm. Qolganlari: 1 — inkor: «ushlab qolgani» -> «oson chiqargani», «ortadi» -> «pasayadi»; 3 — inkor: «qaytaradi» -> «yutib oladi»; 5 — inkor: «plitalar chegarasida» -> «plita o'rtasida tasodifan».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/vulqon",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "vulqon",
+        "hukmlar": [
+          "1. Quyuq magma gazni oson chiqargani uchun bosim pasayadi",
+          "2. Yer yuzasiga chiqqan magma lava deb yuritiladi",
+          "3. Yuqoriga chiqqan mayda zarralar quyosh nurini yutib oladi",
+          "4. Suv ostidagi vulqonlar soni quruqlikdagidan ko'proq bo'ladi",
+          "5. Vulqonlarning ko'pchiligi plita o'rtasida tasodifan joylashgan"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#a48d47b5",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 5; b) 1, 2, 3, 4",
+        "a) 2, 4; b) 1, 3, 5",
+        "a) 2, 5; b) 1, 3, 4",
+        "a) 3, 5; b) 1, 2, 4"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 5 — to'g'ri hukm. Qolganlari: 1 — inkor: «ko'proq» -> «kamroq»; 3 — almashtirish: «kichik zilzilalar soni ortib boradi» -> «atrofdagi havo harorati keskin pasayadi»; 4 — almashtirish: «joyida qoladi,» -> «ham,», «esa uning ustidan siljiydi» -> «ham bir yo'nalishda siljib boradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/vulqon",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "vulqon",
+        "hukmlar": [
+          "1. Suv ostidagi vulqonlar soni quruqlikdagidan kamroq bo'ladi",
+          "2. Otilish shakli magmaning quyuqligiga bog'liq bo'ladi",
+          "3. Otilish oldidan atrofdagi havo harorati keskin pasayadi",
+          "4. Issiq nuqta ham, plita ham bir yo'nalishda siljib boradi",
+          "5. Yuqoriga chiqqan mayda zarralar quyosh nurini qaytaradi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#7b416110",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 1, 2, 3; b) 4, 5",
+        "a) 1, 2, 3, 5; b) 4",
+        "a) 2; b) 1, 3, 4, 5",
+        "a) 2, 3; b) 1, 4, 5"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 3 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «geografik qutblarga to'g'ri kelmaydi» -> «ekvator chizig'ida joylashgan bo'ladi»; 4 — almashtirish: «ichki qismdagi suyuq metall harakatidan» -> «yuzadagi temir konlari ta'sirida»; 5 — almashtirish: «kuchini undan o'tayotgan tok bilan boshqarish mumkin» -> «kuchi g'altak rangiga bog'liq bo'lib qoladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/magnit",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "magnit",
+        "hukmlar": [
+          "1. Magnit qutblari ekvator chizig'ida joylashgan bo'ladi",
+          "2. Ko'chib yuruvchi qushlar magnit maydondan yo'nalish olishda foydalanadi",
+          "3. Magnit qutblari yildan yilga sekin siljib boradi",
+          "4. Yerning magnit maydoni yuzadagi temir konlari ta'sirida hosil bo'ladi",
+          "5. Elektromagnitning kuchi g'altak rangiga bog'liq bo'lib qoladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#55aaeeba",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 1, 2, 3, 4; b) 5",
+        "a) 3, 5; b) 1, 2, 4",
+        "a) 2, 4; b) 1, 3, 5",
+        "a) 3, 4; b) 1, 2, 5"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 3, 4 — to'g'ri hukm. Qolganlari: 1 — inkor: «yildan yilga sekin siljib boradi» -> «asrlar davomida joyida qotib turadi»; 2 — inkor: «chetga burib yuboradi» -> «o'ziga tortib oladi»; 5 — almashtirish: «kuchini undan o'tayotgan tok bilan boshqarish mumkin» -> «kuchi g'altak rangiga bog'liq bo'lib qoladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/magnit",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "magnit",
+        "hukmlar": [
+          "1. Magnit qutblari asrlar davomida joyida qotib turadi",
+          "2. Magnit maydon quyoshdan kelgan zarralarni o'ziga tortib oladi",
+          "3. Magnit asboblari yer ostidagi jinslar tarkibini aniqlashga yordam beradi",
+          "4. Qutb yog'dusi zarralarning havo zarralari bilan to'qnashuvidan hosil bo'ladi",
+          "5. Elektromagnitning kuchi g'altak rangiga bog'liq bo'lib qoladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#99442f1a",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 5; b) 1, 2, 3, 4",
+        "a) 2, 5; b) 1, 3, 4",
+        "a) 2, 3, 5; b) 1, 4",
+        "a) 1, 2, 5; b) 3, 4"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 5 — to'g'ri hukm. Qolganlari: 1 — inkor: «tarkibini aniqlashga yordam beradi» -> «haqida ma'lumot bermaydi»; 3 — almashtirish: «magnit maydon yo'qolgach,» tushirilgan, «asta-sekin» -> «kuchli vulqon otilishi tufayli»; 4 — inkor: «atrofida» -> «ham», «bo'ladi» -> «bo'lmaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/magnit",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "magnit",
+        "hukmlar": [
+          "1. Magnit asboblari yer ostidagi jinslar haqida ma'lumot bermaydi",
+          "2. Ko'chib yuruvchi qushlar magnit maydondan yo'nalish olishda foydalanadi",
+          "3. Marsda atmosfera kuchli vulqon otilishi tufayli uchib ketgan",
+          "4. Sim g'altagidan tok o'tkazilsa ham magnit maydon paydo bo'lmaydi",
+          "5. Eski qattiq disklarda ma'lumot magnit holatida yozib qo'yilgan"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#cd4884a9",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 4, 5; b) 1, 2, 3",
+        "a) 3, 4, 5; b) 1, 2",
+        "a) 3, 5; b) 1, 2, 4",
+        "a) 1, 4; b) 2, 3, 5"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 4, 5 — to'g'ri hukm. Qolganlari: 1 — inkor: «tarkibini aniqlashga yordam beradi» -> «haqida ma'lumot bermaydi»; 2 — inkor: «ma'lumot» tushirilgan, «holatida yozib qo'yilgan» -> «umuman ishlatilmagan hisoblanadi»; 3 — almashtirish: «geografik qutblarga to'g'ri kelmaydi» -> «ekvator chizig'ida joylashgan bo'ladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/magnit",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "magnit",
+        "hukmlar": [
+          "1. Magnit asboblari yer ostidagi jinslar haqida ma'lumot bermaydi",
+          "2. Eski qattiq disklarda magnit umuman ishlatilmagan hisoblanadi",
+          "3. Magnit qutblari ekvator chizig'ida joylashgan bo'ladi",
+          "4. Sim g'altagidan tok o'tkazilsa, atrofida magnit maydon paydo bo'ladi",
+          "5. Ko'chib yuruvchi qushlar magnit maydondan yo'nalish olishda foydalanadi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#adfe37d3",
+      "q": "Hukmlarni matnga ko'ra a) to'g'ri va b) noto'g'ri guruhlariga ajrating.",
+      "v": [
+        "a) 2, 3, 4; b) 1, 5",
+        "a) 2, 3; b) 1, 4, 5",
+        "a) 1, 2, 3, 4; b) 5",
+        "a) 3, 4; b) 1, 2, 5"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 3, 4 — to'g'ri hukm. Qolganlari: 1 — inkor: «jinslardagi qoldiq magnitlanishdan bilinadi» -> «haqida hech qanday dalil topilmagan»; 5 — inkor: «atrofida» -> «ham», «bo'ladi» -> «bo'lmaydi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/magnit",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "magnit",
+        "hukmlar": [
+          "1. Qutblarning o'rin almashgani haqida hech qanday dalil topilmagan",
+          "2. Magnit maydon quyoshdan kelgan zarralarni chetga burib yuboradi",
+          "3. Elektromagnitning kuchini undan o'tayotgan tok bilan boshqarish mumkin",
+          "4. Qutb yog'dusi zarralarning havo zarralari bilan to'qnashuvidan hosil bo'ladi",
+          "5. Sim g'altagidan tok o'tkazilsa ham magnit maydon paydo bo'lmaydi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#3e0d3c7f",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 2; b) 1, 3, 4, 5",
+        "a) 2, 4, 5; b) 1, 3",
+        "a) 1, 4, 5; b) 2, 3",
+        "a) 4, 5; b) 1, 2, 3"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 2, 4, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «issiqlikni tez tortib olishidan» -> «uning haroratining pastligidan»; 3 — almashtirish: «uglerod» -> «kislorod».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/metall",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "metall",
+        "hukmlar": [
+          "1. Metallning sovuq tuyulishi uning haroratining pastligidan kelib chiqadi",
+          "2. Bo'yoq metall yuzasini havo bilan aloqadan uzib qo'yadi",
+          "3. Sof temirga oz miqdorda kislorod qo'shilsa, po'lat hosil bo'ladi",
+          "4. Temir yuzasidagi zang qatlami g'ovak bo'lgani uchun himoya bermaydi",
+          "5. Metallda elektronlarning bir qismi erkin harakatlanib yuradi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#f5bccc3f",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 4; b) 1, 2, 3, 5",
+        "a) 1; b) 2, 3, 4, 5",
+        "a) 1, 4, 5; b) 2, 3",
+        "a) 1, 3, 4, 5; b) 2"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 4, 5 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «tabiatda o'z-o'zidan tez parchalanmaydi» -> «tuproqni unumdorroq qilib yuboradi»; 3 — almashtirish: «elektronlarning bir qismi» -> «zaryadni», «harakatlanib» -> «harakatdagi yadrolar tashib».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/metall",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "metall",
+        "hukmlar": [
+          "1. Temir yuzasidagi zang qatlami g'ovak bo'lgani uchun himoya bermaydi",
+          "2. Metall chiqindisi tuproqni unumdorroq qilib yuboradi",
+          "3. Metallda zaryadni erkin harakatdagi yadrolar tashib yuradi",
+          "4. Bo'yoq metall yuzasini havo bilan aloqadan uzib qo'yadi",
+          "5. Qotishmaning xossalari tarkibiy qismlarnikidan farq qiladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#ed85ed2f",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 1, 2, 3, 5; b) 4",
+        "a) 1, 2, 3; b) 4, 5",
+        "a) 2, 3; b) 1, 4, 5",
+        "a) 1, 3; b) 2, 4, 5"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 2, 3 — to'g'ri hukm. Qolganlari: 4 — almashtirish: «ko'pincha boshqa elementlar bilan birikkan holda uchraydi» -> «faqat suyuq holatda uchraydigan moddalar hisoblanadi»; 5 — almashtirish: «tabiatda o'z-o'zidan tez parchalanmaydi» -> «tuproqni unumdorroq qilib yuboradi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/metall",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "metall",
+        "hukmlar": [
+          "1. Xrom hosil qilgan himoya qatlami shikastlansa, o'zi qayta tiklanadi",
+          "2. Metallning sovuq tuyulishi issiqlikni tez tortib olishidan kelib chiqadi",
+          "3. Metallni qayta eritish ruda qazishdan kam energiya talab qiladi",
+          "4. Metallar tabiatda faqat suyuq holatda uchraydigan moddalar hisoblanadi",
+          "5. Metall chiqindisi tuproqni unumdorroq qilib yuboradi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#9d9b4a5c",
+      "q": "Quyidagi hukmlarni matn mazmuniga ko'ra guruhlang: a) to'g'ri, b) noto'g'ri.",
+      "v": [
+        "a) 5; b) 1, 2, 3, 4",
+        "a) 4, 5; b) 1, 2, 3",
+        "a) 2, 4, 5; b) 1, 3",
+        "a) 4; b) 1, 2, 3, 5"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 4, 5 — to'g'ri hukm. Qolganlari: 1 — almashtirish: «uglerod» -> «kislorod»; 2 — almashtirish: «tarkibiy qismlarnikidan» -> «faqat rangi bilan», «qiladi» -> «qilib turadi»; 3 — inkor: «kam» -> «ko'p».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/metall",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "metall",
+        "hukmlar": [
+          "1. Sof temirga oz miqdorda kislorod qo'shilsa, po'lat hosil bo'ladi",
+          "2. Qotishmaning xossalari faqat rangi bilan farq qilib turadi",
+          "3. Metallni qayta eritish ruda qazishdan ko'p energiya talab qiladi",
+          "4. Metallning sovuq tuyulishi issiqlikni tez tortib olishidan kelib chiqadi",
+          "5. Metallar tabiatda ko'pincha boshqa elementlar bilan birikkan holda uchraydi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m78-togri-notogri#d62116d8",
+      "q": "Berilgan hukmlarning qaysilari matn mazmuniga mos (a), qaysilari mos emas (b)?",
+      "v": [
+        "a) 1, 4, 5; b) 2, 3",
+        "a) 3; b) 1, 2, 4, 5",
+        "a) 1, 3, 5; b) 2, 4",
+        "a) 1, 3, 4; b) 2, 5"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Matnga ko'ra 1, 3, 5 — to'g'ri hukm. Qolganlari: 2 — almashtirish: «ko'pincha boshqa elementlar bilan birikkan holda uchraydi» -> «faqat suyuq holatda uchraydigan moddalar hisoblanadi»; 4 — inkor: «o'zi qayta tiklanadi» -> «tiklanmay qoladi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m78-togri-notogri",
+      "teg": [
+        "oqish/moslash",
+        "matn/metall",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "matn",
+        "ref": "metall",
+        "hukmlar": [
+          "1. Metallni qayta eritish ruda qazishdan kam energiya talab qiladi",
+          "2. Metallar tabiatda faqat suyuq holatda uchraydigan moddalar hisoblanadi",
+          "3. Temir yuzasidagi zang qatlami g'ovak bo'lgani uchun himoya bermaydi",
+          "4. Xrom hosil qilgan himoya qatlami shikastlansa, tiklanmay qoladi",
+          "5. Sof temirga oz miqdorda uglerod qo'shilsa, po'lat hosil bo'ladi"
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp ilmiy-ommabop matnlar korpusi (2026)",
+      "ishonch": "B1"
+    }
+  ]
+}

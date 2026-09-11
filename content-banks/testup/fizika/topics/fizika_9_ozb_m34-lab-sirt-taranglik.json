@@ -1,0 +1,396 @@
+{
+  "nom": "34-mavzu. Lab Sirt Taranglik",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Ushbu laboratoriya ishining maqsadi nima?",
+      "v": [
+        "Suyuqlikning sirt taranglik koeffitsiyentini aniqlashni o'rganish",
+        "Suyuqlikning zichligini aniqlash",
+        "Suyuqlikning hajmini o'lchash",
+        "Suyuqlikning haroratini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Ishning maqsadi: suyuqlikning sirt taranglik koeffitsiyentini aniqlashni o'rganish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#a95c201a"
+    },
+    {
+      "q": "Laboratoriya ishida qaysi jihozlar kerak?",
+      "v": [
+        "Sezgir dinamometr, shtativ, uchburchak, kvadrat va aylana shaklidagi simlar, suv solingan idish, chizg'ich, shtangensirkul",
+        "Trazi, tarozi, menzurka, sekundomer",
+        "Barometr, termometr, ampermetr",
+        "Mikroskop, linza, ekran"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar: sezgir dinamometr, shtativ, uchburchak, kvadrat va aylana shaklidagi simlar, suv solingan idish, chizg'ich, shtangensirkul.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#66b1f918"
+    },
+    {
+      "q": "Tajribaning birinchi qadamida nima qilinadi?",
+      "v": [
+        "Dinamometr shtativga o'rnatiladi",
+        "Sim suvga botiriladi",
+        "Simning perimetri o'lchanadi",
+        "Idish pastga tortiladi"
+      ],
+      "t": 0,
+      "izoh": "Ishni bajarish tartibining 1-bandi: dinamometrni shtativga o'rnating.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#0d058f91"
+    },
+    {
+      "q": "Uchburchak shaklidagi simning perimetri l qanday o'lchanadi?",
+      "v": [
+        "Chizg'ich yordamida",
+        "Dinamometr yordamida",
+        "Tarozi yordamida",
+        "Shtangensirkul yordamida"
+      ],
+      "t": 0,
+      "izoh": "Chizg'ich yordamida uchburchak shaklidagi simning perimetri l ni o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#154e8f1a"
+    },
+    {
+      "q": "F₁ kuch nimani bildiradi?",
+      "v": [
+        "Dinamometr pastki halqasiga osilgan uchburchak shaklidagi simning og'irlik kuchini",
+        "Sirt taranglik kuchini",
+        "Suvning og'irlik kuchini",
+        "Idishning og'irlik kuchini"
+      ],
+      "t": 0,
+      "izoh": "Dinamometrning pastki halqasiga uchburchak shaklidagi simni ilib, uning og'irlik kuchi F₁ ni o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#957c79d3"
+    },
+    {
+      "q": "F₂ kuch qachon o'lchanadi?",
+      "v": [
+        "Idishni sekin pastga tortib, simning suvdan uzilishi paytidagi dinamometr ko'rsatishida",
+        "Sim suvga botirilgandan keyin darhol",
+        "Sim quruq holatda osilganida",
+        "Idish yuqoriga ko'tarilganda"
+      ],
+      "t": 0,
+      "izoh": "Idishni sekin pastga tortib, simning suvdan uzilishi paytidagi dinamometrning ko'rsatishi F₂ yozib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#03793ba7"
+    },
+    {
+      "q": "Sirt taranglik kuchi qanday topiladi?",
+      "v": [
+        "F = F₂ − F₁ formula bilan",
+        "F = F₁ + F₂ formula bilan",
+        "F = F₁ · F₂ formula bilan",
+        "F = F₂ / F₁ formula bilan"
+      ],
+      "t": 0,
+      "izoh": "F = F₂ − F₁ formuladan sirt taranglik kuchi topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#6866db53"
+    },
+    {
+      "q": "Bu tajribada suvning sirt taranglik koeffitsiyenti qanday hisoblanadi?",
+      "v": [
+        "σ = F/2l formula bilan",
+        "σ = F·l formula bilan",
+        "σ = F/S formula bilan",
+        "σ = m·g/l formula bilan"
+      ],
+      "t": 0,
+      "izoh": "σ = F/2l formula yordamida suvning sirt taranglik koeffitsiyenti hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#76383416"
+    },
+    {
+      "q": "Nima uchun σ hisoblashda F/2l ishlatiladi, F/l emas?",
+      "v": [
+        "Simning ikki tomonida (ikki sirt qatlamida) sirt taranglik kuchi hosil bo'ladi",
+        "Sim ikki marta suvga botiriladi",
+        "Kuch ikki marta o'lchanadi",
+        "Simning qalinligi ikki baravar"
+      ],
+      "t": 0,
+      "izoh": "Sim suvdan uzilganda suv pardasi simning ikki tomonida hosil bo'ladi, shuning uchun sirt taranglik kuchi σ·2l ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#29255076"
+    },
+    {
+      "q": "Tajriba qaysi shakldagi simlarda bajariladi?",
+      "v": [
+        "Uchburchak, to'rtburchak (kvadrat) va aylana shaklidagi simlarda",
+        "Faqat aylana shaklidagi simda",
+        "Faqat uchburchak simda",
+        "Beshburchak va oltiburchak simlarda"
+      ],
+      "t": 0,
+      "izoh": "Tajribani to'rtburchak va aylana shaklidagi simlarda ham bajarib, σ₂ va σ₃ hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#fac253a1"
+    },
+    {
+      "q": "Sirt taranglik koeffitsiyentining o'rtacha qiymati qanday hisoblanadi?",
+      "v": [
+        "σₒ'ᵣₜ = (σ₁ + σ₂ + σ₃)/3",
+        "σₒ'ᵣₜ = σ₁ · σ₂ · σ₃",
+        "σₒ'ᵣₜ = σ₁ + σ₂ + σ₃",
+        "σₒ'ᵣₜ = (σ₁ + σ₂ + σ₃)/2"
+      ],
+      "t": 0,
+      "izoh": "σₒ'ᵣₜ = (σ₁+σ₂+σ₃)/3 formula yordamida sirt taranglik koeffitsiyentining o'rtacha qiymatini hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#96a0af3d"
+    },
+    {
+      "q": "Tajriba natijalari qayerga yoziladi?",
+      "v": [
+        "O'lchash va hisoblash natijalari jadvalga yoziladi",
+        "Daftarga erkin shaklda yoziladi",
+        "Grafik chiziladi",
+        "Hisobot og'zaki aytiladi"
+      ],
+      "t": 0,
+      "izoh": "Tajriba davomidagi o'lchash va hisoblash natijalarini jadvalga yozish talab etiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#32c20d17"
+    },
+    {
+      "q": "Jadvalda qaysi kattaliklar keltiriladi?",
+      "v": [
+        "m (kg), l (m), σ (N/m), σₒ'ᵣₜ (N/m)",
+        "V (m³), ρ (kg/m³), t (s)",
+        "F (N), a (m/s²), s (m)",
+        "p (Pa), T (K), n (mol)"
+      ],
+      "t": 0,
+      "izoh": "Jadval ustunlari: №, m (kg), l (m), σ (N/m), σₒ'ᵣₜ (N/m).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#85e0cd54"
+    },
+    {
+      "q": "σ ning birligi jadvalda qanday ko'rsatilgan?",
+      "v": [
+        "N/m",
+        "N·m",
+        "J/kg",
+        "Pa·m"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda σ ning birligi N/m sifatida ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#a5cffb86"
+    },
+    {
+      "q": "Dinamometrga osilgan sim suvga qanday tekkiziladi?",
+      "v": [
+        "Idishdagi suvni ko'tarib, dinamometrga osilgan simga tekkiziladi",
+        "Sim suvga tashlanadi",
+        "Suv simga quyiladi",
+        "Dinamometr suvga botiriladi"
+      ],
+      "t": 0,
+      "izoh": "Idishdagi suvni ko'tarib, dinamometrga osilgan simga tekkiziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#47569a21"
+    },
+    {
+      "q": "Simni suvdan ajratib olishda nima uchun kuch kerak bo'ladi?",
+      "v": [
+        "Sirt taranglik kuchini yengish kerak",
+        "Arximed kuchini yengish kerak",
+        "Ishqalanish kuchini yengish kerak",
+        "Havo qarshiligini yengish kerak"
+      ],
+      "t": 0,
+      "izoh": "Simni suvdan ajratishda sirt taranglik kuchini yengish uchun qo'shimcha kuch kerak bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#22a1a3eb"
+    },
+    {
+      "q": "Sirt taranglik kuchi nima ekanligini tushuntiring.",
+      "v": [
+        "Sirt qatlamini chegaralovchi chiziqqa ta'sir qiluvchi, suyuqlik sirtini kichiklashtirishga intiluvchi kuch",
+        "Suyuqlikning pastga tortuvchi kuchi",
+        "Suyuqlikning idish devoriga bosim kuchi",
+        "Suyuqlik molekulalarining kinetik energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Sirt taranglik kuchi — sirt qatlamini chegaralovchi chiziqqa ta'sir qiluvchi, sirtni kichiklashtirishga yo'nalgan kuch.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#b76c0710"
+    },
+    {
+      "q": "Tajribada sezgir dinamometr ishlatilishining sababi nima?",
+      "v": [
+        "Sirt taranglik kuchi juda kichik bo'lgani uchun uni aniq o'lchash kerak",
+        "Dinamometr suvga botirilishi uchun",
+        "Simning massasini o'lchash uchun",
+        "Idishning og'irligini o'lchash uchun"
+      ],
+      "t": 0,
+      "izoh": "Sirt taranglik kuchi kichik kattalik bo'lgani uchun sezgir dinamometr kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#14c680f5"
+    },
+    {
+      "q": "F = F₂ − F₁ formulada F₂ nimani o'z ichiga oladi?",
+      "v": [
+        "Simning og'irlik kuchi va sirt taranglik kuchining yig'indisini",
+        "Faqat sirt taranglik kuchini",
+        "Faqat simning og'irligini",
+        "Suvning og'irlik kuchini"
+      ],
+      "t": 0,
+      "izoh": "Sim suv bilan birga tortilganda dinamometr F₂ = F₁ + F ni ko'rsatadi; bunda F — sirt taranglik kuchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#2bef7860"
+    },
+    {
+      "q": "Agar F₁ = 0,10 N va F₂ = 0,15 N bo'lsa, sirt taranglik kuchi qancha?",
+      "v": [
+        "0,05 N",
+        "0,25 N",
+        "0,15 N",
+        "0,10 N"
+      ],
+      "t": 0,
+      "izoh": "F = F₂ − F₁ = 0,15 − 0,10 = 0,05 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#06d747af"
+    },
+    {
+      "q": "Simning perimetri l = 0,05 m, sirt taranglik kuchi F = 0,0073 N bo'lsa, σ qanchaga teng?",
+      "v": [
+        "0,073 N/m",
+        "0,146 N/m",
+        "0,73 N/m",
+        "0,0073 N/m"
+      ],
+      "t": 0,
+      "izoh": "σ = F/2l = 0,0073/(2·0,05) = 0,073 N/m — suv uchun jadval qiymatiga mos.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#09640090"
+    },
+    {
+      "q": "Tajribada xatolikni kamaytirish uchun nima qilinadi?",
+      "v": [
+        "Bir necha shakldagi simlarda o'lchab, o'rtacha qiymat olinadi",
+        "Faqat bir marta o'lchanadi",
+        "Katta kuch qo'llanadi",
+        "Suv qizdiriladi"
+      ],
+      "t": 0,
+      "izoh": "Tajriba uch xil shakldagi simlarda bajarilib, o'rtacha qiymat hisoblanadi — bu o'lchash xatoligini kamaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#2cabb4a2"
+    },
+    {
+      "q": "Idishni pastga tortish qanday bajarilishi kerak?",
+      "v": [
+        "Sekin pastga tortiladi",
+        "Tez tortiladi",
+        "Yuqoriga ko'tariladi",
+        "Silkinadi"
+      ],
+      "t": 0,
+      "izoh": "Idishni sekin pastga tortib, simning suvdan uzilishi paytidagi ko'rsatish yozib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#93788ca6"
+    },
+    {
+      "q": "Suv uchun kutiladigan sirt taranglik koeffitsiyenti qiymati (20 °C da) qancha?",
+      "v": [
+        "0,073 N/m",
+        "0,47 N/m",
+        "0,022 N/m",
+        "0,033 N/m"
+      ],
+      "t": 0,
+      "izoh": "Suv uchun σ = 0,073 N/m (20 °C da); tajriba natijasi shu qiymatga yaqin bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#e8414a43"
+    },
+    {
+      "q": "Laboratoriya ishida shtangensirkul qaysi jihozlar qatoriga kiradi?",
+      "v": [
+        "Kerakli jihozlar qatoriga",
+        "Kerak emas",
+        "Faqat qo'shimcha jihoz sifatida",
+        "O'lchashdan tashqari jihoz"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar ro'yxatida shtangensirkul ham keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#9cd3332b"
+    },
+    {
+      "q": "σ₁, σ₂, σ₃ qiymatlar bir-biridan biroz farq qilsa, bu nimani bildiradi?",
+      "v": [
+        "O'lchashlarda tasodifiy xatoliklar mavjud",
+        "Suvning turi o'zgardi",
+        "Formulalar noto'g'ri",
+        "Dinamometr buzilgan"
+      ],
+      "t": 0,
+      "izoh": "Har bir tajribada tasodifiy o'lchash xatoliklari bo'ladi, shuning uchun o'rtacha qiymat olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m34-lab-sirt-taranglik#8d64c3dd"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Kvadrat uchhad: ildizlar ishorasi va berilgan songa hamda oraliqqa nisbatan joylashuvi",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Alisher x² − 7x + 12 uchhadni ko'paytuvchilarga ajratmoqchi. Quyidagilardan qaysi biri shu uchhadning to'g'ri yoyilmasi?",
+      "v": [
+        "(x + 3)(x + 4)",
+        "(x − 2)(x − 6)",
+        "(x − 3)(x − 4)",
+        "(x − 1)(x − 12)"
+      ],
+      "t": 2,
+      "izoh": "Viyet teoremasi bo'yicha ildizlar yig'indisi 7 ga, ko'paytmasi 12 ga teng. Bu ikki shartga faqat 3 va 4 sonlari mos keladi. Uchhad a(x − x₁)(x − x₂) ko'rinishida yoyiladi, bu yerda a = 1. Demak x² − 7x + 12 = (x − 3)(x − 4). (x − 2)(x − 6) da ko'paytma 12 bo'lsa ham yig'indi 8, (x − 1)(x − 12) da esa yig'indi 13 chiqadi, (x + 3)(x + 4) da ishoralar noto'g'ri. Javob: (x − 3)(x − 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchhad-kopaytuvchilarga-ajratish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#b6a23f7b"
+    },
+    {
+      "q": "2x² − 5x − 3 uchhadni ko'paytuvchilarga ajratish talab qilinadi. To'g'ri yoyilmani tanlang va bosh koeffitsientni unutmang.",
+      "v": [
+        "(x + 3)(2x − 1)",
+        "(x − 3)(2x + 1)",
+        "(2x − 3)(x + 1)",
+        "(x − 3)(x + 1)"
+      ],
+      "t": 1,
+      "izoh": "Diskriminant D = (−5)² − 4·2·(−3) = 25 + 24 = 49, √D = 7. Ildizlar (5 + 7) : 4 = 3 va (5 − 7) : 4 = −1/2. Yoyilma a(x − x₁)(x − x₂) = 2(x − 3)(x + 1/2) = (x − 3)(2x + 1). (x − 3)(x + 1) da bosh koeffitsient 2 tushib qolgan, (x + 3)(2x − 1) da esa ishoralar almashtirilgan. Javob: (x − 3)(2x + 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchhad-kopaytuvchilarga-ajratish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#d9baa155"
+    },
+    {
+      "q": "x² + 2x − 15 uchhadning ko'paytuvchilarga ajratilgan ko'rinishini toping va ildizlarning ishorasi har xil ekaniga e'tibor bering.",
+      "v": [
+        "(x + 5)(x − 3)",
+        "(x − 5)(x + 3)",
+        "(x + 15)(x − 1)",
+        "(x + 5)(x + 3)"
+      ],
+      "t": 0,
+      "izoh": "Ozod had manfiy bo'lgani uchun ildizlar har xil ishorada bo'ladi. Ildizlar ko'paytmasi −15, yig'indisi esa −2 ga teng, bunga −5 va 3 sonlari mos keladi. Yoyilma (x − x₁)(x − x₂) formulasi bilan tuziladi: (x + 5)(x − 3). Ishorani teskari qo'yib (x − 5)(x + 3) deb yozish tipik xato, u x² − 2x − 15 ni beradi. Javob: (x + 5)(x − 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchhad-kopaytuvchilarga-ajratish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#9b11478a"
+    },
+    {
+      "q": "3x² + 5x − 2 uchhadni ikkita chiziqli ko'paytuvchi ko'paytmasi ko'rinishida yozing va to'g'ri variantni belgilang.",
+      "v": [
+        "(3x + 1)(x − 2)",
+        "(x + 1)(3x − 2)",
+        "(x − 1)(3x + 2)",
+        "(3x − 1)(x + 2)"
+      ],
+      "t": 3,
+      "izoh": "D = 5² − 4·3·(−2) = 25 + 24 = 49, √D = 7. Ildizlar (−5 + 7) : 6 = 1/3 va (−5 − 7) : 6 = −2. Yoyilma 3(x − 1/3)(x + 2) = (3x − 1)(x + 2). Tekshiramiz: (3x − 1)(x + 2) = 3x² + 6x − x − 2 = 3x² + 5x − 2. Javob: (3x − 1)(x + 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchhad-kopaytuvchilarga-ajratish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#76a2d2d1"
+    },
+    {
+      "q": "Bog'bon to'g'ri to'rtburchak shaklidagi gulzor yuzasini x² + 9x + 20 ifoda bilan yozdi. Gulzor tomonlarining uzunligini qaysi juftlik to'g'ri ifodalaydi?",
+      "v": [
+        "x + 4 va x + 5",
+        "x + 2 va x + 10",
+        "x − 4 va x − 5",
+        "x + 1 va x + 20"
+      ],
+      "t": 0,
+      "izoh": "Yuza tomonlar ko'paytmasiga teng, demak uchhadni ko'paytuvchilarga ajratish kerak. Ildizlar ko'paytmasi 20, yig'indisi 9 bo'lgani uchun x² + 9x + 20 = (x + 4)(x + 5). x + 2 va x + 10 juftligida ko'paytma 20 bo'lsa ham yig'indi 12, x + 1 va x + 20 da esa 21 chiqadi. Javob: x + 4 va x + 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchhad-kopaytuvchilarga-ajratish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#cfef4c28"
+    },
+    {
+      "q": "Bir uchhadning yoyilmasi 3(x − 2)(x + 5) ko'rinishida berilgan. Uni standart ax² + bx + c ko'rinishga keltirganda qanday ifoda hosil bo'ladi?",
+      "v": [
+        "3x² − 9x − 30",
+        "3x² + 9x − 30",
+        "x² + 3x − 10",
+        "3x² + 3x − 10"
+      ],
+      "t": 1,
+      "izoh": "Avval qavslarni ko'paytiramiz: (x − 2)(x + 5) = x² + 5x − 2x − 10 = x² + 3x − 10. Endi har bir hadni 3 ga ko'paytiramiz: 3x² + 9x − 30. Ko'p o'quvchi 3 ni faqat birinchi hadga ko'paytirib, 3x² + 3x − 10 deb xato qiladi. Javob: 3x² + 9x − 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilmadan-uchhad-tiklash",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#a4087ed2"
+    },
+    {
+      "q": "Uchhad −(x − 4)(x + 1) ko'rinishida yoyilgan. Uni standart ko'rinishga keltirilgandagi to'g'ri ifodani tanlang.",
+      "v": [
+        "−x² + 3x + 4",
+        "−x² − 3x + 4",
+        "x² − 3x − 4",
+        "−x² + 3x − 4"
+      ],
+      "t": 0,
+      "izoh": "Qavslarni ko'paytiramiz: (x − 4)(x + 1) = x² + x − 4x − 4 = x² − 3x − 4. Oldidagi minus ishorasi barcha hadlarning ishorasini o'zgartiradi: −x² + 3x + 4. Minusni faqat birinchi hadga qo'llash tipik xato hisoblanadi. Javob: −x² + 3x + 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilmadan-uchhad-tiklash",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#0668c98b"
+    },
+    {
+      "q": "f(x) = a(x − 1)(x − 6) kvadrat uchhad f(0) = 18 shartni qanoatlantiradi. Bosh koeffitsient a ning qiymatini toping.",
+      "v": [
+        "−3",
+        "18",
+        "3",
+        "1/3"
+      ],
+      "t": 2,
+      "izoh": "x = 0 ni ifodaga qo'yamiz: f(0) = a·(0 − 1)(0 − 6) = a·(−1)·(−6) = 6a. Shart bo'yicha 6a = 18, bundan a = 3. Ikki manfiy ko'paytuvchining ko'paytmasi musbat bo'lgani uchun a manfiy chiqmaydi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilmadan-uchhad-tiklash",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#2eb07067"
+    },
+    {
+      "q": "Kvadrat uchhadning ildizlari 2 va 5 ga, bosh koeffitsienti esa 4 ga teng. Shu uchhadning ozod hadi nechaga teng bo'ladi?",
+      "v": [
+        "10",
+        "−40",
+        "28",
+        "40"
+      ],
+      "t": 3,
+      "izoh": "Uchhad 4(x − 2)(x − 5) ko'rinishida yoziladi. Qavslarni ochamiz: (x − 2)(x − 5) = x² − 7x + 10. Har bir hadni 4 ga ko'paytiramiz: 4x² − 28x + 40. Ozod had — x siz had, ya'ni 40. Bosh koeffitsientni hisobga olmagan o'quvchi 10 deb javob beradi. Javob: 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilmadan-uchhad-tiklash",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#e4449fa0"
+    },
+    {
+      "q": "(x² − 5x + 6)/(x − 2) kasrni x ≠ 2 shartida qisqartiring va natijani ko'rsating.",
+      "v": [
+        "x − 3",
+        "x + 3",
+        "x − 2",
+        "x − 5"
+      ],
+      "t": 0,
+      "izoh": "Suratdagi uchhadning ildizlari 2 va 3, chunki ularning yig'indisi 5, ko'paytmasi 6. Demak x² − 5x + 6 = (x − 2)(x − 3). Kasr ((x − 2)(x − 3))/(x − 2) ko'rinishga keladi va (x − 2) qisqaradi. Natija x − 3 bo'ladi. Javob: x − 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchhad-orqali-kasrni-qisqartirish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#f317ab32"
+    },
+    {
+      "q": "(2x² + 7x − 4)/(x + 4) kasrni qisqartirganda hosil bo'ladigan ifodani toping, bu yerda x ≠ −4.",
+      "v": [
+        "2x + 1",
+        "2x − 1",
+        "x − 1",
+        "2x − 4"
+      ],
+      "t": 1,
+      "izoh": "Surat uchun D = 7² − 4·2·(−4) = 49 + 32 = 81, √D = 9. Ildizlar (−7 + 9) : 4 = 1/2 va (−7 − 9) : 4 = −4. Yoyilma 2(x − 1/2)(x + 4) = (2x − 1)(x + 4). Kasrdan (x + 4) qisqaradi va 2x − 1 qoladi. Javob: 2x − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchhad-orqali-kasrni-qisqartirish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#b76b52b1"
+    },
+    {
+      "q": "Ustaxonada tayyorlangan to'g'ri to'rtburchak taxtaning yuzasi x² − 11x + 30, eni esa x − 6 ga teng. Taxtaning bo'yi qanday ifoda bilan beriladi?",
+      "v": [
+        "x + 6",
+        "x − 5",
+        "x − 6",
+        "x − 30"
+      ],
+      "t": 1,
+      "izoh": "Bo'yi yuzani enga bo'lish orqali topiladi. Uchhad ildizlari 5 va 6, chunki yig'indisi 11, ko'paytmasi 30. Demak x² − 11x + 30 = (x − 5)(x − 6). Yuzani (x − 6) ga bo'lsak, bo'yi x − 5 chiqadi va u haqiqatan enidan uzun. Javob: x − 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchhad-orqali-kasrni-qisqartirish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#57c2a515"
+    },
+    {
+      "q": "Tenglamani yechmasdan turib, x² + 11x + 24 = 0 tenglama ildizlarining ishorasi haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Ikkalasi ham musbat",
+        "Ishoralari har xil",
+        "Ildizlari yo'q",
+        "Ikkalasi ham manfiy"
+      ],
+      "t": 3,
+      "izoh": "Avval D = 121 − 96 = 25 > 0, demak ikkita haqiqiy ildiz bor. Viyet bo'yicha ko'paytma 24 musbat, shuning uchun ildizlar bir xil ishorada. Yig'indi esa −11, ya'ni manfiy. Bir xil ishorali, yig'indisi manfiy sonlar faqat manfiy bo'la oladi. Javob: ikkalasi ham manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-ishorasini-viyet-orqali-aniqlash",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#042f309c"
+    },
+    {
+      "q": "3x² − 4x − 7 = 0 tenglama ildizlarining ishorasi va modullari haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Ishoralari har xil, moduli kattasi musbat",
+        "Ishoralari har xil, moduli kattasi manfiy",
+        "Ikkala ildiz ham musbat",
+        "Ikkala ildiz ham manfiy"
+      ],
+      "t": 0,
+      "izoh": "Ildizlar ko'paytmasi c/a = −7/3, ya'ni manfiy. Demak ildizlar har xil ishorada. Yig'indi esa −b/a = 4/3 musbat, shuning uchun moduli kattaroq ildiz musbat bo'ladi. Haqiqatan uchhad (3x − 7)(x + 1) ko'rinishida yoyiladi, ildizlari 7/3 va −1. Javob: ishoralari har xil, moduli kattasi musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-ishorasini-viyet-orqali-aniqlash",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#737c02ac"
+    },
+    {
+      "q": "x² − 6x + 10 = 0 tenglamaning ildizlari ishorasi so'ralganda, avvalo qaysi xulosaga kelish kerak?",
+      "v": [
+        "Ikkalasi ham musbat",
+        "Haqiqiy ildizlari yo'q",
+        "Ikkalasi ham manfiy",
+        "Ishoralari har xil"
+      ],
+      "t": 1,
+      "izoh": "Ishorani tekshirishdan oldin diskriminant hisoblanadi: D = (−6)² − 4·1·10 = 36 − 40 = −4. D < 0 bo'lgani uchun tenglamaning haqiqiy ildizi yo'q va ishora haqida gapirishning ma'nosi qolmaydi. Faqat ko'paytma va yig'indiga qarab musbat deb xulosa qilish tipik xato. Javob: haqiqiy ildizlari yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-ishorasini-viyet-orqali-aniqlash",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#e8cd1801"
+    },
+    {
+      "q": "Muhandis 2x² − 9x + 4 = 0 tenglamani yechishdan oldin ildizlar ishorasini baholamoqchi. Uning to'g'ri xulosasi qaysi bo'ladi?",
+      "v": [
+        "Ikkala ildiz ham manfiy",
+        "Bir ildiz musbat, bir ildiz manfiy",
+        "Ikkala ildiz ham musbat",
+        "Ildizlaridan biri nolga teng"
+      ],
+      "t": 2,
+      "izoh": "D = 81 − 32 = 49 > 0, demak ikkita haqiqiy ildiz mavjud. Ko'paytma c/a = 4/2 = 2 musbat, yig'indi −b/a = 9/2 ham musbat. Ko'paytmasi va yig'indisi musbat bo'lgan ikki son faqat musbat bo'ladi. Tekshirish uchun ildizlar 4 va 1/2. Javob: ikkala ildiz ham musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-ishorasini-viyet-orqali-aniqlash",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#cff11df7"
+    },
+    {
+      "q": "x² + 7x − 18 = 0 tenglamaning ildizlari har xil ishorali. Modul jihatidan kattaroq bo'lgan ildizni toping.",
+      "v": [
+        "9",
+        "2",
+        "−2",
+        "−9"
+      ],
+      "t": 3,
+      "izoh": "Ildizlar ko'paytmasi −18 manfiy, demak ishoralari har xil. Yig'indi −7 manfiy, shuning uchun moduli kattasi manfiy ildiz. Uchhad (x + 9)(x − 2) ko'rinishida yoyiladi, ildizlari −9 va 2. Modul jihatidan kattasi −9. Javob: −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-ishorasini-viyet-orqali-aniqlash",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#0365f491"
+    },
+    {
+      "q": "x² − 10x + 21 = 0 tenglama ildizlari orasidagi masofa, ya'ni ularning ayirmasi moduli nechaga teng?",
+      "v": [
+        "4",
+        "10",
+        "16",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Ildizlar ayirmasining moduli √D : |a| formula bilan topiladi. D = 100 − 84 = 16, √16 = 4, a = 1. Demak masofa 4 ga teng. Tekshiramiz: ildizlar 3 va 7, ularning ayirmasi ham 4. Diskriminantning o'zini javob deb olish tipik xato. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-orasidagi-masofa",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#1ef6ba28"
+    },
+    {
+      "q": "2x² − 7x + 3 = 0 tenglamaning ildizlari ayirmasi modulini hisoblang va to'g'ri qiymatni belgilang.",
+      "v": [
+        "5",
+        "5/2",
+        "25/2",
+        "7/2"
+      ],
+      "t": 1,
+      "izoh": "D = (−7)² − 4·2·3 = 49 − 24 = 25, √D = 5. Ayirma moduli √D : |a| = 5 : 2 = 5/2 ga teng. Bosh koeffitsientga bo'lishni unutgan o'quvchi 5 deb javob beradi. Tekshiramiz: ildizlar 3 va 1/2, ayirmasi 5/2. Javob: 5/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-orasidagi-masofa",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#593e50ab"
+    },
+    {
+      "q": "Ikki gulzorning uzunligi (metrda) x² − 14x + 40 uchhadning ildizlariga teng. Uzunroq gulzor qisqasidan necha metr uzun?",
+      "v": [
+        "14 m",
+        "3 m",
+        "6 m",
+        "10 m"
+      ],
+      "t": 2,
+      "izoh": "Uchhad nollarini topamiz: D = 196 − 160 = 36, √36 = 6. Ildizlar (14 + 6) : 2 = 10 va (14 − 6) : 2 = 4. Gulzor uzunliklari 10 m va 4 m, ularning farqi 10 − 4 = 6 m. Ildizlar yig'indisini javob deb olish tipik xato. Javob: 6 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-orasidagi-masofa",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#ffd429a8"
+    },
+    {
+      "q": "x² − 3x + (m − 4) = 0 tenglama har xil ishorali ikkita ildizga ega bo'lishi uchun m qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "m < 4",
+        "m > 4",
+        "m ≤ 4",
+        "m < 0"
+      ],
+      "t": 0,
+      "izoh": "Ildizlar har xil ishorada bo'lishi uchun ularning ko'paytmasi manfiy bo'lishi shart: c/a < 0. Bu yerda a = 1, shuning uchun m − 4 < 0, ya'ni m < 4. Bunda diskriminant ham avtomatik musbat bo'ladi. m = 4 da ozod had nolga aylanib, ildizlardan biri nol bo'lib qoladi, shuning uchun tenglik olinmaydi. Javob: m < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "har-xil-ishorali-ildiz-sharti",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#aa7f1b4e"
+    },
+    {
+      "q": "2x² + 5x + (3k + 6) = 0 tenglamaning ildizlari qarama-qarshi ishorali bo'ladigan k qiymatlari to'plamini ko'rsating.",
+      "v": [
+        "k > −2",
+        "k < −6",
+        "k < 2",
+        "k < −2"
+      ],
+      "t": 3,
+      "izoh": "Ildizlar ko'paytmasi c/a = (3k + 6)/2 manfiy bo'lishi kerak. Maxraj musbat bo'lgani uchun 3k + 6 < 0, bundan 3k < −6 va k < −2. Bo'lishni unutgan o'quvchi to'g'ridan-to'g'ri 3k + 6 < 0 dan noto'g'ri k < −6 ga o'tib xato qiladi. Javob: k < −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "har-xil-ishorali-ildiz-sharti",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#ee5d0255"
+    },
+    {
+      "q": "(m − 1)x² + 4x + 3 = 0 tenglama har xil ishorali ikkita ildizga ega bo'lsa, m qanday oraliqda yotadi?",
+      "v": [
+        "m > 1",
+        "m < 1",
+        "m < 1 va m ≠ 0",
+        "m ≤ 1"
+      ],
+      "t": 1,
+      "izoh": "Tenglama kvadrat bo'lishi uchun m − 1 ≠ 0. Ildizlar har xil ishorada bo'lishi sharti a·c < 0, ya'ni 3(m − 1) < 0. Bundan m − 1 < 0 va m < 1. Bu shart m ≠ 1 ni ham o'z ichiga oladi, m = 0 esa hech qanday cheklov bermaydi. Javob: m < 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "har-xil-ishorali-ildiz-sharti",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#bf45119b"
+    },
+    {
+      "q": "Firma foydasi P(x) = x² − 12x + (a − 9) modeli bilan berilgan va uning ikkita noli har xil ishorada bo'lishi kerak. a ning eng katta butun qiymatini toping.",
+      "v": [
+        "9",
+        "12",
+        "8",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Nollar har xil ishorada bo'lishi uchun ozod had manfiy bo'lishi kerak: a − 9 < 0, ya'ni a < 9. Bu qat'iy tengsizlik, shuning uchun a = 9 olinmaydi. a < 9 shartni qanoatlantiradigan eng katta butun son 8 ga teng. a = 9 da nollardan biri nolga aylanadi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "har-xil-ishorali-ildiz-sharti",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#9c0aa7c9"
+    },
+    {
+      "q": "x² + (k + 2)x + k² − 9 = 0 tenglama har xil ishorali ildizlarga ega bo'ladigan barcha k lar to'plamini toping.",
+      "v": [
+        "−3 < k < 3",
+        "k < −3 yoki k > 3",
+        "−3 ≤ k ≤ 3",
+        "k > 3"
+      ],
+      "t": 0,
+      "izoh": "Shart: ildizlar ko'paytmasi manfiy, ya'ni k² − 9 < 0. Bu tengsizlik (k − 3)(k + 3) < 0 ko'rinishga keladi va yechimi −3 < k < 3. Chegara nuqtalarda k² − 9 = 0 bo'lib, ildizlardan biri nolga aylanadi, shuning uchun ular kirmaydi. Javob: −3 < k < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "har-xil-ishorali-ildiz-sharti",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#f1cd0d4b"
+    },
+    {
+      "q": "x² − 8x + m = 0 tenglamaning ikkala ildizi ham musbat bo'lishi uchun m qanday oraliqda yotishi kerak?",
+      "v": [
+        "m > 0",
+        "0 < m ≤ 16",
+        "0 < m < 16",
+        "m ≤ 16"
+      ],
+      "t": 1,
+      "izoh": "Uchta shart bir vaqtda bajariladi. Birinchidan D ≥ 0: 64 − 4m ≥ 0, bundan m ≤ 16. Ikkinchidan ildizlar ko'paytmasi musbat: m > 0. Uchinchidan yig'indi musbat: 8 > 0, bu doim bajariladi. Uchtasini birlashtiramiz: 0 < m ≤ 16. m = 16 da ikkala ildiz ham 4 ga teng bo'ladi va musbatligicha qoladi. Javob: 0 < m ≤ 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkala-ildiz-musbat-parametr",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#6df79015"
+    },
+    {
+      "q": "x² − (a + 3)x + 4 = 0 tenglamaning har ikkala ildizi ham musbat bo'lishi uchun a uchun to'g'ri shartni tanlang.",
+      "v": [
+        "a > −3",
+        "a ≥ 1 yoki a ≤ −7",
+        "a ≥ 1",
+        "a > 1"
+      ],
+      "t": 2,
+      "izoh": "Ildizlar ko'paytmasi 4 musbat, demak ildizlar bir xil ishorada. Ular musbat bo'lishi uchun yig'indi musbat bo'lsin: a + 3 > 0, ya'ni a > −3. Diskriminant sharti: (a + 3)² − 16 ≥ 0, bundan a + 3 ≥ 4 yoki a + 3 ≤ −4, ya'ni a ≥ 1 yoki a ≤ −7. Ikki shartni kesishtiramiz: a ≥ 1. a = 1 da ildizlar 2 va 2, ular musbat. Javob: a ≥ 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-musbat-parametr",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#bcaa278c"
+    },
+    {
+      "q": "Ikki ishchining bir ishni alohida bajarish vaqtlari (soatda) x² − 15x + c = 0 tenglama ildizlariga teng. Ikkala vaqt ham haqiqiy va musbat bo'lishi uchun c ning eng katta butun qiymatini toping.",
+      "v": [
+        "57",
+        "55",
+        "225",
+        "56"
+      ],
+      "t": 3,
+      "izoh": "Vaqtlar haqiqiy bo'lishi uchun D ≥ 0: 225 − 4c ≥ 0, bundan c ≤ 56,25. Vaqtlar musbat bo'lishi uchun ko'paytma c > 0, yig'indi 15 esa allaqachon musbat. Demak 0 < c ≤ 56,25 va eng katta butun qiymat 56 ga teng. c = 57 da diskriminant manfiy bo'lib, vaqtlar haqiqiy son bo'lmay qoladi. Javob: 56.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-musbat-parametr",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#2d396ffc"
+    },
+    {
+      "q": "3x² − 12x + (2m − 4) = 0 tenglamaning ikkala ildizi ham musbat bo'ladigan m qiymatlarini toping.",
+      "v": [
+        "2 < m ≤ 8",
+        "m > 2",
+        "2 < m < 8",
+        "0 < m ≤ 8"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytma sharti: (2m − 4)/3 > 0, bundan m > 2. Yig'indi 12/3 = 4 musbat, bu shart bajarilgan. Diskriminant: 144 − 12(2m − 4) ≥ 0, ya'ni 144 − 24m + 48 ≥ 0, bundan 24m ≤ 192 va m ≤ 8. Uchala shartni birlashtiramiz: 2 < m ≤ 8. m = 8 da ildizlar teng va 2 ga teng bo'ladi. Javob: 2 < m ≤ 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-musbat-parametr",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#b6404ecb"
+    },
+    {
+      "q": "x² + bx + 9 = 0 tenglamaning ikkala ildizi ham musbat bo'lsa, b ning mumkin bo'lgan qiymatlari to'plami qaysi?",
+      "v": [
+        "b < 0",
+        "b ≤ −6",
+        "b ≥ 6",
+        "−6 ≤ b < 0"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma 9 musbat, demak ildizlar bir xil ishorada. Musbat bo'lishi uchun yig'indi −b > 0, ya'ni b < 0. Diskriminant sharti b² − 36 ≥ 0 bo'lib, undan b ≥ 6 yoki b ≤ −6 kelib chiqadi. b < 0 bilan kesishmasi b ≤ −6. b = −6 da ikkala ildiz ham 3 ga teng. Javob: b ≤ −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkala-ildiz-musbat-parametr",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#6e3de146"
+    },
+    {
+      "q": "x² − kx + 5 = 0 tenglamaning har ikkala ildizi ham manfiy bo'lishi uchun k qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "k ≥ 2√5",
+        "k < 0",
+        "k ≤ −2√5",
+        "−2√5 < k < 0"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytma 5 musbat, demak ildizlar bir xil ishorada. Manfiy bo'lishi uchun yig'indi k < 0 bo'lsin. Diskriminant sharti k² − 20 ≥ 0, bundan |k| ≥ 2√5. Manfiy tomonni olamiz: k ≤ −2√5. Faqat k < 0 deb javob bergan o'quvchi diskriminantni tekshirmagan bo'ladi. Javob: k ≤ −2√5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-manfiy-parametr",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#2c83d7a0"
+    },
+    {
+      "q": "x² + 10x + m = 0 tenglamaning ikkala ildizi ham manfiy bo'ladigan m lar oralig'ini ko'rsating.",
+      "v": [
+        "m ≤ 25",
+        "m > 0",
+        "0 < m < 25",
+        "0 < m ≤ 25"
+      ],
+      "t": 3,
+      "izoh": "Ildizlar yig'indisi −10, u allaqachon manfiy. Ildizlar bir xil ishorada bo'lishi uchun ko'paytma musbat bo'lsin: m > 0. Diskriminant sharti 100 − 4m ≥ 0, bundan m ≤ 25. Ikkalasini birlashtiramiz: 0 < m ≤ 25. m = 25 da ikkala ildiz ham −5 ga teng bo'ladi. Javob: 0 < m ≤ 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkala-ildiz-manfiy-parametr",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#018580ce"
+    },
+    {
+      "q": "2x² + (p − 1)x + 8 = 0 tenglamaning har ikkala ildizi manfiy bo'lsa, p uchun to'g'ri shartni tanlang.",
+      "v": [
+        "p ≥ 9",
+        "p > 1",
+        "p ≤ −7",
+        "1 < p ≤ 9"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytma 8/2 = 4 musbat, demak ildizlar bir xil ishorada. Manfiy bo'lishi uchun yig'indi −(p − 1)/2 < 0, bundan p > 1. Diskriminant sharti (p − 1)² − 64 ≥ 0, ya'ni p − 1 ≥ 8 yoki p − 1 ≤ −8, bundan p ≥ 9 yoki p ≤ −7. p > 1 bilan kesishmasi p ≥ 9. Javob: p ≥ 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-manfiy-parametr",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#846e2d93"
+    },
+    {
+      "q": "Ikki kunlik havo harorati (Selsiyda) x² + 14x + t = 0 tenglama ildizlari bo'lib, ikkalasi ham manfiy chiqdi. t ning mumkin bo'lgan eng katta butun qiymati nechaga teng?",
+      "v": [
+        "48",
+        "49",
+        "50",
+        "14"
+      ],
+      "t": 1,
+      "izoh": "Haroratlar haqiqiy bo'lishi uchun D ≥ 0: 196 − 4t ≥ 0, bundan t ≤ 49. Ikkala harorat manfiy bo'lishi uchun ko'paytma t > 0 bo'lsin, yig'indi −14 esa allaqachon manfiy. Demak 0 < t ≤ 49 va eng katta butun qiymat 49. t = 49 da ikkala harorat ham −7 °C bo'ladi. Javob: 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkala-ildiz-manfiy-parametr",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#b240d2a5"
+    },
+    {
+      "q": "x² + (m − 6)x − 8 = 0 tenglamaning ildizlari qarama-qarshi sonlar bo'lishi uchun m nechaga teng bo'lishi kerak?",
+      "v": [
+        "−6",
+        "0",
+        "6",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Qarama-qarshi sonlarning yig'indisi nolga teng. Viyet bo'yicha yig'indi −(m − 6), demak m − 6 = 0 va m = 6. Bu holda tenglama x² − 8 = 0 ko'rinishga keladi, ildizlari 2√2 va −2√2, ular haqiqatan qarama-qarshi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-ildizlar-sharti",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#000fddef"
+    },
+    {
+      "q": "3x² + (2k + 10)x − 27 = 0 tenglamaning ildizlari moduli bo'yicha teng, ishorasi bo'yicha qarama-qarshi bo'lsa, k ni toping.",
+      "v": [
+        "5",
+        "−10",
+        "10",
+        "−5"
+      ],
+      "t": 3,
+      "izoh": "Moduli teng, ishorasi qarama-qarshi ildizlarning yig'indisi nolga teng. Viyet bo'yicha yig'indi −(2k + 10)/3, demak 2k + 10 = 0 va k = −5. Bu holda tenglama 3x² − 27 = 0 bo'lib, ildizlari 3 va −3. Ishorani almashtirgan o'quvchi 5 deb javob beradi. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-ildizlar-sharti",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#4e324a5e"
+    },
+    {
+      "q": "x² + (a² − 36)x − 20 = 0 tenglamaning ildizlari qarama-qarshi sonlar bo'lsa, a ning musbat qiymatini toping.",
+      "v": [
+        "6",
+        "36",
+        "−6",
+        "18"
+      ],
+      "t": 0,
+      "izoh": "Ildizlar yig'indisi nolga teng bo'lishi kerak, demak a² − 36 = 0. Bundan a² = 36 va a = 6 yoki a = −6. Savolda musbat qiymat so'ralgani uchun javob 6 bo'ladi. Kvadratni ochmasdan 2a − 36 = 0 deb yechgan o'quvchi 18 ni, musbatlik shartini o'qimagan esa −6 ni tanlaydi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarama-qarshi-ildizlar-sharti",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#1cc2ec5c"
+    },
+    {
+      "q": "x² − 5x + (k² − 4k + 3) = 0 tenglamaning ildizlaridan biri nolga teng bo'lsa, k ning barcha qiymatlari yig'indisini toping.",
+      "v": [
+        "3",
+        "4",
+        "1",
+        "−4"
+      ],
+      "t": 1,
+      "izoh": "Ildiz nolga teng bo'lsa, x = 0 ni qo'yganda tenglik bajariladi, ya'ni ozod had nolga teng: k² − 4k + 3 = 0. Bu tenglamaning ildizlari 1 va 3, chunki ularning yig'indisi 4, ko'paytmasi 3. Savolda k larning yig'indisi so'ralgan, u 1 + 3 = 4 ga teng. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-ildiz-sharti",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#8adfce0a"
+    },
+    {
+      "q": "2x² + (m − 7)x + m² − 49 = 0 tenglamaning bitta ildizi nolga, ikkinchisi noldan farqli bo'lsa, m nechaga teng?",
+      "v": [
+        "7",
+        "49",
+        "−7",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "Nol ildiz bo'lishi uchun ozod had nolga teng: m² − 49 = 0, bundan m = 7 yoki m = −7. m = 7 bo'lganda tenglama 2x² = 0 ko'rinishga keladi va ikkala ildiz ham nol bo'lib qoladi, bu shartga zid. m = −7 da tenglama 2x² − 14x = 0 bo'lib, ildizlari 0 va 7. Kvadrat ildizni olmasdan m = 49 deb yozish tipik xato. Javob: −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nol-ildiz-sharti",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#1d40669b"
+    },
+    {
+      "q": "Sotuvchi kunlik foydasini P(x) = x² − 9x + (c − 18) funksiya bilan hisoblaydi. Foyda x = 0 da nolga teng bo'lsa, c nechaga teng?",
+      "v": [
+        "−18",
+        "9",
+        "0",
+        "18"
+      ],
+      "t": 3,
+      "izoh": "x = 0 ni funksiyaga qo'yamiz: P(0) = 0 − 0 + (c − 18) = c − 18. Shart bo'yicha P(0) = 0, demak c − 18 = 0 va c = 18. Bu holda uchhad x² − 9x ko'rinishga keladi, nollari 0 va 9. Ishorani chalkashtirgan o'quvchi −18 deb javob beradi. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nol-ildiz-sharti",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#67bc4538"
+    },
+    {
+      "q": "x² − 13x + 40 = 0 tenglamaning bitta ildizi 5 ga teng ekani ma'lum. Ikkinchi ildizini Viyet teoremasi yordamida toping.",
+      "v": [
+        "8",
+        "5",
+        "−8",
+        "13"
+      ],
+      "t": 0,
+      "izoh": "Viyet teoremasiga ko'ra ildizlar yig'indisi 13 ga teng. Bitta ildiz 5 bo'lsa, ikkinchisi 13 − 5 = 8 bo'ladi. Ko'paytma orqali ham tekshirish mumkin: 40 : 5 = 8. Ishorani noto'g'ri qo'yib −8 deb javob berish tipik xato, chunki ozod had musbat va ildizlar bir xil ishorada. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-ildiz-berilgan-ikkinchisini-topish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#9ca79580"
+    },
+    {
+      "q": "3x² − 11x + 6 = 0 tenglamaning ildizlaridan biri 3 ga teng. Ikkinchi ildiz nechaga teng bo'ladi?",
+      "v": [
+        "3/2",
+        "2/3",
+        "2",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Viyet teoremasi bo'yicha ildizlar ko'paytmasi c/a = 6/3 = 2 ga teng. Bitta ildiz 3 bo'lgani uchun ikkinchisi 2 : 3 = 2/3. Bosh koeffitsientni hisobga olmagan o'quvchi 6 : 3 = 2 deb xato qiladi. Yig'indi bilan tekshiramiz: 3 + 2/3 = 11/3 = −b/a. Javob: 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-ildiz-berilgan-ikkinchisini-topish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#c91f2bbc"
+    },
+    {
+      "q": "Ikki dehqonning yer maydoni (gektarda) x² − 21x + 98 = 0 tenglama ildizlariga teng. Birinchisiniki 14 gektar bo'lsa, ikkinchisining maydoni qancha?",
+      "v": [
+        "8 ga",
+        "84 ga",
+        "7 ga",
+        "14 ga"
+      ],
+      "t": 2,
+      "izoh": "Ildizlar ko'paytmasi 98 ga teng, chunki bosh koeffitsient 1. Bitta ildiz 14 bo'lsa, ikkinchisi 98 : 14 = 7 bo'ladi. Yig'indi bilan tekshiramiz: 14 + 7 = 21, bu −b qiymatiga mos keladi. Ko'paytma o'rniga ayirmani ishlatgan o'quvchi 84 deb xato qiladi. Javob: 7 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-ildiz-berilgan-ikkinchisini-topish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#93f80426"
+    },
+    {
+      "q": "2x² + 9x − 35 = 0 tenglamaning bir ildizi −7 ga teng ekan. Ikkinchi ildizni toping va uning ishorasiga e'tibor bering.",
+      "v": [
+        "−5/2",
+        "5",
+        "7/2",
+        "5/2"
+      ],
+      "t": 3,
+      "izoh": "Ozod had manfiy, demak ildizlar har xil ishorada va ikkinchi ildiz musbat bo'ladi. Ildizlar ko'paytmasi c/a = −35/2. Bitta ildiz −7 bo'lgani uchun ikkinchisi (−35/2) : (−7) = 5/2. Yig'indi bilan tekshiramiz: −7 + 5/2 = −9/2 = −b/a. Javob: 5/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-ildiz-berilgan-ikkinchisini-topish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#7edc0d61"
+    },
+    {
+      "q": "x² + 6x + q = 0 tenglamaning bitta ildizi −2 ga teng bo'lsa, ikkinchi ildizi nechaga teng bo'ladi?",
+      "v": [
+        "−4",
+        "4",
+        "−2",
+        "−8"
+      ],
+      "t": 0,
+      "izoh": "Viyet teoremasiga ko'ra ildizlar yig'indisi −6 ga teng. Bitta ildiz −2 bo'lsa, ikkinchisi −6 − (−2) = −4 bo'ladi. Bu javob mantiqan ham to'g'ri: ozod had q = (−2)·(−4) = 8 musbat va yig'indi manfiy, ya'ni ikkala ildiz manfiy. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-ildiz-berilgan-ikkinchisini-topish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#3bf7488b"
+    },
+    {
+      "q": "x² + px − 24 = 0 tenglamaning ildizlaridan biri 3 ga teng bo'lsa, p koeffitsienti nechaga teng?",
+      "v": [
+        "−5",
+        "5",
+        "8",
+        "−8"
+      ],
+      "t": 1,
+      "izoh": "Ildizni tenglamaga qo'yamiz: 3² + 3p − 24 = 0, ya'ni 9 + 3p − 24 = 0. Bundan 3p = 15 va p = 5. Tekshiramiz: x² + 5x − 24 = 0 tenglamaning ildizlari 3 va −8, ularning ko'paytmasi −24. Ikkinchi ildizni javob deb olish tipik xato. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-ildiz-berilgan-koeffitsient-topish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#aac64db7"
+    },
+    {
+      "q": "5x² + 3x + c = 0 tenglamaning ildizlaridan biri 2 ga teng ekani ma'lum. Ozod had c ni toping.",
+      "v": [
+        "26",
+        "−14",
+        "−26",
+        "14"
+      ],
+      "t": 2,
+      "izoh": "x = 2 ni tenglamaga qo'yamiz: 5·4 + 3·2 + c = 0, ya'ni 20 + 6 + c = 0. Bundan c = −26. Ishorani noto'g'ri ko'chirgan o'quvchi 26 deb javob beradi, 3x hadining ishorasini xato olib 20 − 6 + c = 0 deb yechgan esa −14 ni tanlaydi. Javob: −26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-ildiz-berilgan-koeffitsient-topish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#7c382ce2"
+    },
+    {
+      "q": "Idishdagi suv sathi h(t) = t² − at + 12 model bilan o'zgaradi. Sath t = 2 payti nolga aylansa, a koeffitsienti nechaga teng?",
+      "v": [
+        "−8",
+        "6",
+        "16",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Sath nolga aylanishi h(2) = 0 degani. Qo'yamiz: 4 − 2a + 12 = 0, ya'ni 16 − 2a = 0. Bundan 2a = 16 va a = 8. Tekshiramiz: t² − 8t + 12 uchhadning nollari 2 va 6, ular ham musbat. Ikkinchi nolni javob deb olib 6 ni tanlash tipik xato. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bitta-ildiz-berilgan-koeffitsient-topish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#e0c72976"
+    },
+    {
+      "q": "x² − 12x + m = 0 tenglamaning bitta ildizi ikkinchisidan 3 marta katta bo'lsa, m ning qiymatini toping.",
+      "v": [
+        "27",
+        "36",
+        "9",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Ildizlarni r va 3r deb belgilaymiz. Viyet bo'yicha yig'indi r + 3r = 4r = 12, bundan r = 3. Demak ildizlar 3 va 9. Ko'paytma m = 3·9 = 27. Kattaroq ildizni javob deb olgan o'quvchi 9 ni, ildizlarni 3 va 12 deb qabul qilgan esa 36 ni tanlaydi. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bitta-ildiz-berilgan-koeffitsient-topish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#93d14a61"
+    },
+    {
+      "q": "x² + bx + 18 = 0 tenglamaning ildizlaridan biri 6 ga teng. b koeffitsienti va ikkinchi ildizni to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "b = 9, ikkinchi ildiz 3",
+        "b = −9, ikkinchi ildiz 3",
+        "b = −9, ikkinchi ildiz −3",
+        "b = −3, ikkinchi ildiz 3"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma 18 ga teng, demak ikkinchi ildiz 18 : 6 = 3. Ildizlar yig'indisi 6 + 3 = 9, Viyet bo'yicha esa yig'indi −b ga teng. Demak −b = 9 va b = −9. Ishorani almashtirib b = 9 deb yozish eng ko'p uchraydigan xato. Javob: b = −9, ikkinchi ildiz 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bitta-ildiz-berilgan-koeffitsient-topish",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#f6f4df87"
+    },
+    {
+      "q": "x² − 6x + a = 0 tenglamaning ikkala ildizi ham 1 dan katta bo'lishi uchun a qanday oraliqda yotishi kerak?",
+      "v": [
+        "a > 5",
+        "5 < a < 9",
+        "5 < a ≤ 9",
+        "a ≤ 9"
+      ],
+      "t": 2,
+      "izoh": "Uchta shart tekshiriladi. Diskriminant: 36 − 4a ≥ 0, bundan a ≤ 9. Uchhadning 1 nuqtadagi qiymati musbat bo'lsin: f(1) = 1 − 6 + a > 0, bundan a > 5. Parabola uchining abssissasi 1 dan katta bo'lsin: 6/2 = 3 > 1, bu bajarilgan. Uchtasini birlashtiramiz: 5 < a ≤ 9. a = 9 da ikkala ildiz ham 3 ga teng. Javob: 5 < a ≤ 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-berilgan-sondan-katta",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#6b06693e"
+    },
+    {
+      "q": "x² − 10x + k = 0 tenglamaning ikkala ildizi ham 2 dan katta bo'ladigan k lar to'plamini toping.",
+      "v": [
+        "k > 16",
+        "16 < k < 25",
+        "20 < k ≤ 25",
+        "16 < k ≤ 25"
+      ],
+      "t": 3,
+      "izoh": "Diskriminant sharti: 100 − 4k ≥ 0, bundan k ≤ 25. Nuqtadagi qiymat sharti: f(2) = 4 − 20 + k > 0, bundan k > 16. Uch abssissasi: 10/2 = 5, u 2 dan katta, shart bajarilgan. Demak 16 < k ≤ 25. Diskriminantni tekshirmagan o'quvchi k > 16 deb javob beradi. Javob: 16 < k ≤ 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-berilgan-sondan-katta",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#b38d9817"
+    },
+    {
+      "q": "Zavoddagi ikki stanokning ishlash vaqti (soatda) x² − 11x + n = 0 tenglama ildizlariga teng. Har ikkala stanok 3 soatdan ko'proq ishlagan bo'lsa, n qanday qiymatlarni oladi?",
+      "v": [
+        "24 < n ≤ 30,25",
+        "n > 24",
+        "24 < n < 30",
+        "n ≤ 30,25"
+      ],
+      "t": 0,
+      "izoh": "Vaqtlar haqiqiy bo'lishi uchun D = 121 − 4n ≥ 0, bundan n ≤ 30,25. Ikkala ildiz 3 dan katta bo'lishi uchun f(3) = 9 − 33 + n > 0, ya'ni n > 24. Uch abssissasi 11/2 = 5,5 va u 3 dan katta, shart bajarilgan. Demak 24 < n ≤ 30,25. Javob: 24 < n ≤ 30,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-berilgan-sondan-katta",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#79750f21"
+    },
+    {
+      "q": "Quyida keltirilgan tenglamalardan qaysi birining ikkala ildizi ham 4 dan katta ekanini aniqlang.",
+      "v": [
+        "x² − 9x + 20 = 0",
+        "x² − 13x + 40 = 0",
+        "x² − 7x + 12 = 0",
+        "x² − 12x + 27 = 0"
+      ],
+      "t": 1,
+      "izoh": "Har bir tenglamani Viyet teoremasi bilan tekshiramiz. x² − 9x + 20 ning ildizlari 4 va 5, lekin 4 sonining o'zi 4 dan katta emas. x² − 13x + 40 ning ildizlari 5 va 8 — ikkalasi ham 4 dan katta. x² − 7x + 12 da ildizlar 3 va 4, x² − 12x + 27 da esa 3 va 9 chiqadi, ularda kichik ildiz shartni buzadi. Javob: x² − 13x + 40 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkala-ildiz-berilgan-sondan-katta",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#79e50d50"
+    },
+    {
+      "q": "x² + bx + 25 = 0 tenglamaning ikkala ildizi ham 1 dan katta bo'lishi uchun b qanday shartni qanoatlantiradi?",
+      "v": [
+        "b ≤ −10",
+        "b < −2",
+        "−26 < b ≤ −10",
+        "−10 ≤ b < −2"
+      ],
+      "t": 2,
+      "izoh": "Diskriminant: b² − 100 ≥ 0, demak b ≥ 10 yoki b ≤ −10. Uch abssissasi −b/2 > 1 sharti b < −2 ni beradi, shuning uchun b ≤ −10 tarmog'i qoladi. f(1) = 1 + b + 25 > 0 sharti esa b > −26 ni beradi. Uchtasini birlashtiramiz: −26 < b ≤ −10. Javob: −26 < b ≤ −10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-berilgan-sondan-katta",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#b02840ea"
+    },
+    {
+      "q": "x² + 8x + c = 0 tenglamaning ikkala ildizi ham −1 dan kichik bo'lishi uchun c qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "c > 7",
+        "7 < c < 16",
+        "c ≤ 16",
+        "7 < c ≤ 16"
+      ],
+      "t": 3,
+      "izoh": "Diskriminant sharti: 64 − 4c ≥ 0, bundan c ≤ 16. Uchhadning −1 nuqtadagi qiymati musbat bo'lsin: f(−1) = 1 − 8 + c > 0, bundan c > 7. Uch abssissasi −8/2 = −4 va u −1 dan kichik, shart bajarilgan. Demak 7 < c ≤ 16. Javob: 7 < c ≤ 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkala-ildiz-berilgan-sondan-kichik",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#1d4fdf6d"
+    },
+    {
+      "q": "x² − 4x + m = 0 tenglamaning ikkala ildizi ham 5 dan kichik bo'ladigan m qiymatlarini toping.",
+      "v": [
+        "−5 < m ≤ 4",
+        "m ≤ 4",
+        "m > −5",
+        "0 < m ≤ 4"
+      ],
+      "t": 0,
+      "izoh": "Diskriminant: 16 − 4m ≥ 0, bundan m ≤ 4. Nuqtadagi qiymat: f(5) = 25 − 20 + m > 0, bundan m > −5. Uch abssissasi 4/2 = 2 va u 5 dan kichik, shart bajarilgan. Demak −5 < m ≤ 4. m ning manfiy bo'lishi taqiqlanmagan, chunki ildizlarning musbatligi talab qilinmagan. Javob: −5 < m ≤ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-berilgan-sondan-kichik",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#6fa80941"
+    },
+    {
+      "q": "Ikki avtobusning yo'lda bo'lgan vaqti (soatda) x² − 9x + p = 0 tenglama ildizlari bo'lib, ikkalasi ham 8 soatdan kam. p ning eng kichik butun qiymatini toping.",
+      "v": [
+        "8",
+        "9",
+        "10",
+        "20"
+      ],
+      "t": 1,
+      "izoh": "Vaqtlar haqiqiy bo'lishi uchun D = 81 − 4p ≥ 0, bundan p ≤ 20,25. Ikkala ildiz 8 dan kichik bo'lishi uchun f(8) = 64 − 72 + p > 0, ya'ni p > 8. Uch abssissasi 4,5 va u 8 dan kichik. Demak 8 < p ≤ 20,25 va eng kichik butun qiymat 9. p = 8 da ildizlardan biri aynan 8 ga teng bo'lib qoladi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-berilgan-sondan-kichik",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#f5f44f11"
+    },
+    {
+      "q": "x² − 6x + 11 uchhad ixtiyoriy haqiqiy x da qanday ishoraga ega ekanligini aniqlang.",
+      "v": [
+        "Har doim manfiy",
+        "x = 3 da nolga teng",
+        "Har doim musbat",
+        "Ishorasi x ga qarab o'zgaradi"
+      ],
+      "t": 2,
+      "izoh": "Diskriminantni hisoblaymiz: D = 36 − 44 = −8, u manfiy. Demak uchhadning haqiqiy ildizi yo'q va grafigi Ox o'qini kesmaydi. Bosh koeffitsient 1 musbat bo'lgani uchun parabola tarmoqlari yuqoriga qaragan va uchhad barcha x larda musbat. Uch nuqtasida qiymat 11 − 9 = 2 bo'ladi. Javob: har doim musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchhad-ishorasi-doimiyligi",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#4daa9004"
+    },
+    {
+      "q": "−2x² + 4x − 5 uchhadning qabul qiladigan qiymatlari haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Barcha x larda musbat",
+        "Ikkita haqiqiy ildizga ega",
+        "Faqat x > 1 da manfiy",
+        "Barcha x larda manfiy"
+      ],
+      "t": 3,
+      "izoh": "D = 4² − 4·(−2)·(−5) = 16 − 40 = −24, ya'ni manfiy va ildizlar yo'q. Bosh koeffitsient −2 manfiy, demak parabola tarmoqlari pastga qaragan. Ildiz yo'qligi va tarmoqlar pastga qaraganidan uchhad barcha x larda manfiy ekani kelib chiqadi. Uchdagi eng katta qiymati −2 + 4 − 5 = −3. Javob: barcha x larda manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchhad-ishorasi-doimiyligi",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#91aa2006"
+    },
+    {
+      "q": "x² − 5x + m = 0 tenglamaning ildizlari orasida 2 soni yotishi uchun m qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "m < 6",
+        "m > 6",
+        "m ≤ 6",
+        "m < 0"
+      ],
+      "t": 0,
+      "izoh": "Bosh koeffitsient musbat bo'lgan uchhad ildizlari orasidagi nuqtada manfiy qiymat qabul qiladi. Demak f(2) < 0 bo'lishi kerak: 4 − 10 + m < 0, ya'ni m − 6 < 0 va m < 6. Bu shart bajarilganda diskriminant ham avtomatik musbat bo'ladi, chunki uchhad manfiy qiymat oladi. Javob: m < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilgan-son-ildizlar-orasida",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#6d953fea"
+    },
+    {
+      "q": "x² + 3x + (k − 10) = 0 tenglamaning bir ildizi 1 dan kichik, ikkinchisi 1 dan katta bo'ladigan k qiymatlarini toping.",
+      "v": [
+        "k > 6",
+        "k < 6",
+        "k < 10",
+        "k < −6"
+      ],
+      "t": 1,
+      "izoh": "Shart 1 sonining ildizlar orasida yotishini bildiradi, ya'ni f(1) < 0. Hisoblaymiz: 1 + 3 + k − 10 = k − 6. Demak k − 6 < 0 va k < 6. Ozod hadni nolga tenglashtirib k < 10 deb javob berish tipik xato, chunki bu shart 0 sonining joylashuvini beradi. Javob: k < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilgan-son-ildizlar-orasida",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#3c84121a"
+    },
+    {
+      "q": "Kompaniya zarari Z(x) = x² − 14x + c model bilan berilgan va x = 4 nuqta uning ikki noli orasida joylashgan. c ning eng katta butun qiymatini toping.",
+      "v": [
+        "40",
+        "41",
+        "39",
+        "38"
+      ],
+      "t": 2,
+      "izoh": "Nuqta nollar orasida bo'lishi uchun Z(4) < 0 bo'lsin: 16 − 56 + c < 0, ya'ni c − 40 < 0 va c < 40. Tengsizlik qat'iy bo'lgani uchun c = 40 olinmaydi, unda 4 nolning o'ziga aylanadi. Demak eng katta butun qiymat 39. Javob: 39.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-son-ildizlar-orasida",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#d90dce04"
+    },
+    {
+      "q": "2x² − 7x + (3m + 1) = 0 tenglamaning ildizlari orasida 0 soni yotishi uchun m qanday bo'lishi kerak?",
+      "v": [
+        "m > −1/3",
+        "m < 1/3",
+        "m < −3",
+        "m < −1/3"
+      ],
+      "t": 3,
+      "izoh": "Nuqta ildizlar orasida bo'lish sharti a·f(0) < 0. Bu yerda a = 2 va f(0) = 3m + 1, demak 2(3m + 1) < 0. Bundan 3m + 1 < 0, ya'ni m < −1/3. Bu shart ozod had manfiy, ildizlar esa har xil ishorada ekanini anglatadi. Javob: m < −1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-son-ildizlar-orasida",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#770b5fe5"
+    },
+    {
+      "q": "(m − 2)x² + 3x + 1 = 0 tenglamaning ildizlari orasida −1 soni yotsa, m qanday oraliqda bo'ladi?",
+      "v": [
+        "2 < m < 4",
+        "m < 2 yoki m > 4",
+        "2 ≤ m ≤ 4",
+        "m > 4"
+      ],
+      "t": 0,
+      "izoh": "Bosh koeffitsient ishorasi noma'lum bo'lgani uchun umumiy shart ishlatiladi: a·f(−1) < 0. Bu yerda a = m − 2, f(−1) = (m − 2) − 3 + 1 = m − 4. Demak (m − 2)(m − 4) < 0, uning yechimi 2 < m < 4. Chegaralarda bosh koeffitsient nolga aylanadi yoki −1 ildizga teng bo'lib qoladi. Javob: 2 < m < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "berilgan-son-ildizlar-orasida",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#e20b487a"
+    },
+    {
+      "q": "x² − 7x + m = 0 tenglamaning ikkala ildizi ham (1; 6) oralig'ida yotishi uchun m qanday bo'lishi kerak?",
+      "v": [
+        "m > 6",
+        "6 < m ≤ 12,25",
+        "6 < m < 12",
+        "0 < m ≤ 12,25"
+      ],
+      "t": 1,
+      "izoh": "To'rtta shart tekshiriladi. Diskriminant: 49 − 4m ≥ 0, bundan m ≤ 12,25. Chetlardagi qiymatlar musbat bo'lsin: f(1) = m − 6 > 0 va f(6) = 36 − 42 + m = m − 6 > 0, ikkalasi ham m > 6 ni beradi. Uch abssissasi 3,5 va u oraliq ichida. Demak 6 < m ≤ 12,25. Javob: 6 < m ≤ 12,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-oraliq-ichida",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#f8c2d9cd"
+    },
+    {
+      "q": "x² − 5x + c = 0 tenglamaning ikkala ildizi ham 0 va 4 orasida joylashgan bo'lsa, c uchun to'g'ri shartni tanlang.",
+      "v": [
+        "0 < c ≤ 6,25",
+        "c > 4",
+        "4 < c ≤ 6,25",
+        "4 < c < 6"
+      ],
+      "t": 2,
+      "izoh": "Diskriminant sharti: 25 − 4c ≥ 0, bundan c ≤ 6,25. Chetlarda qiymat musbat bo'lsin: f(0) = c > 0 va f(4) = 16 − 20 + c = c − 4 > 0, ya'ni c > 4. Uch abssissasi 2,5 va u 0 bilan 4 orasida. Uchala shartni birlashtiramiz: 4 < c ≤ 6,25. Javob: 4 < c ≤ 6,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-oraliq-ichida",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#c6465b2f"
+    },
+    {
+      "q": "Ikki mahsulotning narxi (ming so'mda) x² − 18x + t = 0 tenglama ildizlariga teng. Har ikkala narx 5 va 13 orasida bo'lsa, t ning eng kichik butun qiymatini toping.",
+      "v": [
+        "65",
+        "67",
+        "81",
+        "66"
+      ],
+      "t": 3,
+      "izoh": "Diskriminant: 324 − 4t ≥ 0, bundan t ≤ 81. Chetlardagi qiymatlar musbat bo'lsin: f(5) = 25 − 90 + t = t − 65 > 0 va f(13) = 169 − 234 + t = t − 65 > 0, ya'ni t > 65. Uch abssissasi 9 va u oraliq ichida. Demak 65 < t ≤ 81, eng kichik butun qiymat 66. t = 65 da narxlardan biri aynan 5 ga teng bo'lib qoladi. Javob: 66.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-oraliq-ichida",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#5b96ab66"
+    },
+    {
+      "q": "Berilgan tenglamalardan qaysi birining ikkala ildizi ham (2; 9) oralig'ida joylashganini aniqlang.",
+      "v": [
+        "x² − 11x + 24 = 0",
+        "x² − 10x + 16 = 0",
+        "x² − 12x + 27 = 0",
+        "x² − 9x + 8 = 0"
+      ],
+      "t": 0,
+      "izoh": "Har bir tenglamaning ildizlarini topamiz. x² − 11x + 24 ning ildizlari 3 va 8 — ikkalasi ham 2 bilan 9 orasida. x² − 10x + 16 da 2 va 8 chiqadi, lekin 2 chegara nuqtasi bo'lgani uchun ochiq oraliqqa kirmaydi. x² − 12x + 27 da 3 va 9, bu yerda 9 chegara. x² − 9x + 8 da esa 1 va 8, kichigi oraliqdan chetda. Javob: x² − 11x + 24 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkala-ildiz-oraliq-ichida",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#dcda4766"
+    },
+    {
+      "q": "x² − 6x + a = 0 tenglamaning ikkala ildizi ham [0; 5] kesmada yotishi uchun a qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "0 ≤ a ≤ 9",
+        "5 ≤ a ≤ 9",
+        "5 < a < 9",
+        "a ≥ 5"
+      ],
+      "t": 1,
+      "izoh": "Kesma yopiq bo'lgani uchun chetlarda qiymat manfiy bo'lmasligi kerak. Diskriminant: 36 − 4a ≥ 0, bundan a ≤ 9. Chetlar: f(0) = a ≥ 0 va f(5) = 25 − 30 + a = a − 5 ≥ 0, ya'ni a ≥ 5. Uch abssissasi 3 va u kesma ichida. Demak 5 ≤ a ≤ 9. a = 5 da ildizlar 1 va 5, ikkalasi kesmada. Javob: 5 ≤ a ≤ 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkala-ildiz-oraliq-ichida",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#f413e938"
+    },
+    {
+      "q": "x² − 3x + m = 0 tenglama (0; 1) oralig'ida aynan bitta ildizga ega bo'lishi uchun m qanday bo'lishi kerak?",
+      "v": [
+        "m < 0 yoki m > 2",
+        "0 ≤ m ≤ 2",
+        "0 < m < 2",
+        "m > 2"
+      ],
+      "t": 2,
+      "izoh": "Parabolaning uchi x = 1,5 da bo'lib, (0; 1) oralig'idan tashqarida qoladi, shuning uchun oraliqda aynan bitta ildiz bo'lishi uchun uchhad chetlarda qarama-qarshi ishorali qiymat olishi kifoya: f(0)·f(1) < 0. Hisoblaymiz: f(0) = m, f(1) = 1 − 3 + m = m − 2. Demak m(m − 2) < 0 va yechim 0 < m < 2. Chegaralarda ildiz aynan oraliq uchiga tushib qoladi. Javob: 0 < m < 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqda-yagona-ildiz",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#9b670127"
+    },
+    {
+      "q": "x² + 4x + k = 0 tenglamaning aynan bitta ildizi (−1; 3) oralig'ida bo'lishi uchun k qanday qiymatlarni oladi?",
+      "v": [
+        "k < −21 yoki k > 3",
+        "−21 ≤ k ≤ 3",
+        "−3 < k < 21",
+        "−21 < k < 3"
+      ],
+      "t": 3,
+      "izoh": "Shart f(−1)·f(3) < 0 ko'rinishida yoziladi. Hisoblaymiz: f(−1) = 1 − 4 + k = k − 3, f(3) = 9 + 12 + k = k + 21. Demak (k − 3)(k + 21) < 0 va yechim −21 < k < 3. Ko'paytmaning ishorasini teskari qo'ygan o'quvchi tashqi oraliqni tanlaydi. Javob: −21 < k < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqda-yagona-ildiz",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#a5f563a5"
+    },
+    {
+      "q": "Suv sathining balandligi h(x) = x² − 8x + c ifoda bilan berilgan va u (1; 3) oralig'ida faqat bir marta nolga aylanadi. c ning butun qiymatlari nechta?",
+      "v": [
+        "7 ta",
+        "8 ta",
+        "6 ta",
+        "9 ta"
+      ],
+      "t": 0,
+      "izoh": "Parabolaning uchi x = 4 da bo'lib, (1; 3) oralig'idan tashqarida, shuning uchun oraliqda faqat bitta nol bo'lishi sharti h(1)·h(3) < 0. Hisoblaymiz: h(1) = 1 − 8 + c = c − 7, h(3) = 9 − 24 + c = c − 15. Demak (c − 7)(c − 15) < 0 va 7 < c < 15. Bu oraliqdagi butun sonlar 8, 9, 10, 11, 12, 13, 14 bo'lib, ular 7 ta. Chegaralarni qo'shib yuborish tipik xato: c = 7 da ildizlar 1 va 7, c = 15 da 3 va 5 — hech biri (1; 3) ichiga tushmaydi. Javob: 7 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqda-yagona-ildiz",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#d284bc40"
+    },
+    {
+      "q": "y = x² − 8x + 21 uchhadning eng kichik qiymatini va u erishiladigan x ni to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "x = 4 da 21",
+        "x = 4 da 5",
+        "x = −4 da 5",
+        "x = 8 da 5"
+      ],
+      "t": 1,
+      "izoh": "Parabola uchining abssissasi x = −b/(2a) = 8/2 = 4. Uchdagi qiymat: 16 − 32 + 21 = 5. Bosh koeffitsient musbat bo'lgani uchun bu qiymat eng kichigi hisoblanadi. Ozod hadni javob deb olib 21 ni tanlash tipik xato, ishorani chalkashtirgan esa x = −4 ni oladi. Javob: x = 4 da 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchhad-uchi-va-eng-kichik-qiymat",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#2477eac5"
+    },
+    {
+      "q": "2x² − 12x + 23 uchhadning eng kichik qiymatini toping va uning haqiqiy ildizi bor-yo'qligini aniqlang.",
+      "v": [
+        "Eng kichik qiymati 5, ikkita ildizi bor",
+        "Eng kichik qiymati −5, ildizi yo'q",
+        "Eng kichik qiymati 5, haqiqiy ildizi yo'q",
+        "Eng kichik qiymati 23, ildizi yo'q"
+      ],
+      "t": 2,
+      "izoh": "Uch abssissasi x = 12/(2·2) = 3. Uchdagi qiymat: 2·9 − 36 + 23 = 18 − 36 + 23 = 5. Bosh koeffitsient musbat, demak eng kichik qiymat 5 ga teng va u noldan katta. Uchhad hech qachon nolga tushmaydi, ya'ni haqiqiy ildizi yo'q. Buni D = 144 − 184 = −40 ham tasdiqlaydi. Javob: eng kichik qiymati 5, haqiqiy ildizi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchhad-uchi-va-eng-kichik-qiymat",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#c09a2757"
+    },
+    {
+      "q": "Do'konning kunlik zarari Z(x) = x² − 22x + 130 (ming so'm) formula bilan hisoblanadi. Zarar eng kichik bo'ladigan x va o'sha zararni toping.",
+      "v": [
+        "x = 11 da 130 ming so'm",
+        "x = 22 da 9 ming so'm",
+        "x = 11 da −9 ming so'm",
+        "x = 11 da 9 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Uch abssissasi x = 22/2 = 11. Uchdagi qiymat: 121 − 242 + 130 = 9. Demak eng kichik zarar 9 ming so'm bo'lib, u x = 11 da erishiladi. Qiymat musbat chiqqani uchun uchhadning haqiqiy ildizi yo'q, ya'ni zarar hech qachon nolga aylanmaydi. Javob: x = 11 da 9 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchhad-uchi-va-eng-kichik-qiymat",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#b96dbbf4"
+    },
+    {
+      "q": "x² − 2ax + 9 uchhadning eng kichik qiymati 0 ga teng bo'lsa, a ning musbat qiymatini toping.",
+      "v": [
+        "3",
+        "9",
+        "−3",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Uch abssissasi x = 2a/2 = a. Uchdagi qiymat: a² − 2a² + 9 = 9 − a². Eng kichik qiymat nolga teng bo'lsin: 9 − a² = 0, bundan a² = 9 va a = 3 yoki a = −3. Musbat qiymat so'ralgani uchun javob 3. Bu holda uchhad (x − 3)² ko'rinishga keladi va yagona ildizga ega. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchhad-uchi-va-eng-kichik-qiymat",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#5b98997a"
+    },
+    {
+      "q": "f(x) = x² − 7x + 10 uchhad uchun f(3) qiymati hisoblandi. Bu qiymat 3 sonining ildizlarga nisbatan joylashuvi haqida nima deydi?",
+      "v": [
+        "3 soni ikkala ildizdan katta",
+        "3 soni ildizlar orasida",
+        "3 soni ikkala ildizdan kichik",
+        "3 soni ildizga teng"
+      ],
+      "t": 1,
+      "izoh": "Hisoblaymiz: f(3) = 9 − 21 + 10 = −2, ya'ni manfiy. Bosh koeffitsient musbat bo'lgan uchhad faqat ildizlari orasidagi nuqtalarda manfiy qiymat oladi. Demak 3 soni ildizlar orasida yotadi. Tekshiramiz: ildizlar 2 va 5, haqiqatan 2 < 3 < 5. Javob: 3 soni ildizlar orasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtadagi-qiymat-orqali-joylashuv",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#0a71fd87"
+    },
+    {
+      "q": "g(x) = x² − 9x + 20 uchhad uchun g(6) hisoblansin va 6 sonining ildizlarga nisbatan holati aniqlansin.",
+      "v": [
+        "g(6) = 2, 6 ildizlar orasida",
+        "g(6) = −2, 6 ildizlar orasida",
+        "g(6) = 2, 6 ikkala ildizdan katta",
+        "g(6) = 2, 6 ikkala ildizdan kichik"
+      ],
+      "t": 2,
+      "izoh": "Hisoblaymiz: g(6) = 36 − 54 + 20 = 2, u musbat. Musbat qiymat 6 sonining ildizlar oralig'idan tashqarida ekanini bildiradi. Qaysi tomonda ekanini uch abssissasi aytadi: 9/2 = 4,5 va 6 > 4,5, demak 6 ikkala ildizdan katta. Tekshiramiz: ildizlar 4 va 5. Javob: g(6) = 2, 6 ikkala ildizdan katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtadagi-qiymat-orqali-joylashuv",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#2df5df02"
+    },
+    {
+      "q": "Muhandis h(t) = t² − 12t + 32 modelida h(3) ni hisobladi. Natijaga ko'ra t = 3 payti ikki nol nuqtaga nisbatan qayerda joylashgan?",
+      "v": [
+        "h(3) = 5, t = 3 nollar orasida",
+        "h(3) = −5, t = 3 nollar orasida",
+        "h(3) = 5, t = 3 ikkala noldan keyin",
+        "h(3) = 5, t = 3 ikkala nolgacha"
+      ],
+      "t": 3,
+      "izoh": "Hisoblaymiz: h(3) = 9 − 36 + 32 = 5, u musbat. Demak t = 3 nollar oralig'ida emas. Uch abssissasi 12/2 = 6 va 3 < 6, shuning uchun t = 3 ikkala noldan oldin turadi. Tekshiramiz: nollar 4 va 8, haqiqatan 3 < 4. Javob: h(3) = 5, t = 3 ikkala nolgacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtadagi-qiymat-orqali-joylashuv",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#3747efd0"
+    },
+    {
+      "q": "Do'kon foydasi F(x) = −x² + 24x − 108 (ming so'm) formula bilan berilgan, bu yerda x — sotilgan mahsulot soni. Foyda nolga aylanadigan x qiymatlarini toping.",
+      "v": [
+        "6 va 18",
+        "6 va 24",
+        "12 va 18",
+        "−6 va −18"
+      ],
+      "t": 0,
+      "izoh": "Foyda nolga teng bo'lsin: −x² + 24x − 108 = 0. Ikkala tomonni −1 ga ko'paytiramiz: x² − 24x + 108 = 0. Diskriminant D = 576 − 432 = 144, √D = 12. Ildizlar (24 + 12) : 2 = 18 va (24 − 12) : 2 = 6. Ikkala ildiz ham musbat, chunki yig'indi 24, ko'paytma 108. Javob: 6 va 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-va-foyda",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#6d24bcc2"
+    },
+    {
+      "q": "Kitob narxi p ming so'm bo'lganda do'konning kunlik daromadi D(p) = −p² + 30p − 200 ga teng. Daromad musbat bo'ladigan narxlar oralig'ini toping.",
+      "v": [
+        "p < 10 yoki p > 20",
+        "10 < p < 20",
+        "10 ≤ p ≤ 20",
+        "0 < p < 10"
+      ],
+      "t": 1,
+      "izoh": "Avval nollarni topamiz: p² − 30p + 200 = 0, D = 900 − 800 = 100, √D = 10. Ildizlar (30 + 10) : 2 = 20 va (30 − 10) : 2 = 10. Bosh koeffitsient manfiy bo'lgani uchun parabola tarmoqlari pastga qaragan va ifoda faqat ildizlar orasida musbat bo'ladi. Demak 10 < p < 20. Chegaralarda daromad aynan nolga teng. Javob: 10 < p < 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-narx-va-foyda",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#db53d7a0"
+    },
+    {
+      "q": "Sardor narxni x ming so'mga oshirganda foydaning o'zgarishi F(x) = x² − 9x + 14 bo'ladi. Berilgan sonlardan qaysi biri F ning ikki noli orasida yotadi?",
+      "v": [
+        "1",
+        "8",
+        "5",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "Uchhad nollari 2 va 7, chunki ularning yig'indisi 9, ko'paytmasi 14. Nollar orasidagi nuqtada uchhad manfiy qiymat oladi. Tekshiramiz: F(5) = 25 − 45 + 14 = −6, manfiy. Qolganlarida F(1) = 6, F(8) = 6, F(9) = 14, hammasi musbat va ular nollardan tashqarida. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-va-foyda",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#5d94f635"
+    },
+    {
+      "q": "Bir tovarning tannarxi va sotuv narxi (ming so'mda) x² − 25x + 84 = 0 tenglama ildizlariga teng. Tannarx 4 ming so'm bo'lsa, sotuv narxi qancha?",
+      "v": [
+        "80 ming so'm",
+        "25 ming so'm",
+        "29 ming so'm",
+        "21 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Viyet teoremasi bo'yicha ildizlar ko'paytmasi 84 ga teng. Bitta ildiz 4 bo'lsa, ikkinchisi 84 : 4 = 21. Yig'indi bilan tekshiramiz: 4 + 21 = 25, bu −b qiymatiga mos. Yig'indini noto'g'ri tushunib 25 va 4 ni qo'shgan o'quvchi 29 ni, ozod hadni yig'indi deb olib 84 − 4 = 80 deb hisoblagan esa 80 ni tanlaydi. Javob: 21 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-va-foyda",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#e947269b"
+    },
+    {
+      "q": "Ustaxona daromadi D(x) = x² − 20x + c ifoda bilan berilgan va uning ikkala noli ham 3 dan katta. c ning eng kichik butun qiymatini toping.",
+      "v": [
+        "52",
+        "51",
+        "53",
+        "100"
+      ],
+      "t": 0,
+      "izoh": "Nollar haqiqiy bo'lishi uchun D = 400 − 4c ≥ 0, bundan c ≤ 100. Ikkala nol 3 dan katta bo'lishi uchun ifodaning 3 dagi qiymati musbat bo'lsin: 9 − 60 + c > 0, ya'ni c > 51. Uch abssissasi 10 va u 3 dan katta. Demak 51 < c ≤ 100 va eng kichik butun qiymat 52. c = 51 da nollardan biri aynan 3 ga teng bo'lib qoladi. Javob: 52.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-narx-va-foyda",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#c21c3fde"
+    },
+    {
+      "q": "Ikki velosipedchi 60 km yo'lni bosib o'tdi va ularning vaqtlari (soatda) x² − 7x + 12 = 0 tenglama ildizlariga teng. Sekinroq velosipedchining tezligini toping.",
+      "v": [
+        "20 km/soat",
+        "15 km/soat",
+        "12 km/soat",
+        "30 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Tenglama ildizlari 3 va 4, chunki yig'indi 7, ko'paytma 12. Ikkala vaqt ham musbat, bu masalaning ma'nosiga mos. Sekinroq velosipedchi ko'proq vaqt sarflaydi, ya'ni 4 soat. Tezlik masofani vaqtga bo'lish orqali topiladi: 60 : 4 = 15. Tez velosipedchini olib 20 deb javob berish tipik xato. Javob: 15 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harakat-va-vaqt",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#14db7b36"
+    },
+    {
+      "q": "Sharchaning balandligi h = 30 + 5t − 5t² (metrda) qonun bilan o'zgaradi. Sharcha yerga tushadigan paytni soniyada toping.",
+      "v": [
+        "3 s",
+        "−2 s",
+        "6 s",
+        "5 s"
+      ],
+      "t": 0,
+      "izoh": "Yerga tushish payti h = 0 shartidan topiladi: 30 + 5t − 5t² = 0. Ikkala tomonni 5 ga bo'lib, −1 ga ko'paytiramiz: t² − t − 6 = 0. Ozod had manfiy, demak ildizlar har xil ishorada. D = 1 + 24 = 25, √D = 5, ildizlar (1 + 5) : 2 = 3 va (1 − 5) : 2 = −2. Vaqt musbat bo'lgani uchun t = 3. Manfiy ildizni tanlagan o'quvchi −2 ni, ildizlar ko'paytmasi −6 ni vaqt deb olgan 6 ni, diskriminantning ildizini javob deb yozgan esa 5 ni belgilaydi. Javob: 3 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harakat-va-vaqt",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#7d943375"
+    },
+    {
+      "q": "Poyezd va avtobusning yo'lda bo'lgan vaqtlari (soatda) t² − 11t + 28 = 0 tenglama ildizlariga teng. Kattaroq vaqtni aniqlang.",
+      "v": [
+        "4 soat",
+        "11 soat",
+        "28 soat",
+        "7 soat"
+      ],
+      "t": 3,
+      "izoh": "Diskriminant D = 121 − 112 = 9, √D = 3. Ildizlar (11 + 3) : 2 = 7 va (11 − 3) : 2 = 4. Ko'paytma 28 musbat, yig'indi 11 musbat, demak ikkala vaqt ham musbat va masala shartiga mos. Ulardan kattasi 7 soat. Ildizlar yig'indisini javob deb olish tipik xato. Javob: 7 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-harakat-va-vaqt",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#7d07e799"
+    },
+    {
+      "q": "Qayiqning oqim bo'ylab va oqimga qarshi harakat vaqtlari (soatda) 2x² − 15x + 18 = 0 tenglama ildizlariga teng. Oqimga qarshi sarflangan kattaroq vaqtni toping.",
+      "v": [
+        "6 soat",
+        "3/2 soat",
+        "15/2 soat",
+        "9 soat"
+      ],
+      "t": 0,
+      "izoh": "D = 225 − 4·2·18 = 225 − 144 = 81, √D = 9. Ildizlar (15 + 9) : 4 = 6 va (15 − 9) : 4 = 3/2. Ko'paytma 18/2 = 9 va yig'indi 15/2, ikkalasi musbat, demak vaqtlar musbat. Oqimga qarshi harakat sekinroq, ya'ni kattaroq vaqt 6 soat. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harakat-va-vaqt",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#694b9b1c"
+    },
+    {
+      "q": "Bog'dagi ikki uchastkaning eni (metrda) x² − 17x + 66 = 0 tenglama ildizlariga teng. Ikkala en ham 5 metrdan katta ekanini tekshirib, kichigini toping.",
+      "v": [
+        "11 m",
+        "6 m",
+        "5 m",
+        "17 m"
+      ],
+      "t": 1,
+      "izoh": "D = 289 − 264 = 25, √D = 5. Ildizlar (17 + 5) : 2 = 11 va (17 − 5) : 2 = 6. Ikkala en 5 dan katta ekanini tekshiramiz: f(5) = 25 − 85 + 66 = 6 > 0 va uch abssissasi 8,5 > 5, demak shart bajarilgan. Kichik en 6 m. Javob: 6 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-maydon-va-olcham",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#b2e0cb03"
+    },
+    {
+      "q": "Kvadrat shaklidagi hovlining tomoni x metr bo'lib, u x² − 3x − 40 = 0 shartni qanoatlantiradi. Tomon uzunligini toping.",
+      "v": [
+        "5 m",
+        "−5 m",
+        "8 m",
+        "13 m"
+      ],
+      "t": 2,
+      "izoh": "Ozod had manfiy bo'lgani uchun ildizlar har xil ishorada. D = 9 + 160 = 169, √D = 13. Ildizlar (3 + 13) : 2 = 8 va (3 − 13) : 2 = −5. Uzunlik manfiy bo'lolmaydi, shuning uchun manfiy ildiz chiqarib tashlanadi. Javob: 8 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-maydon-va-olcham",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#ac521d03"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning bo'yi enidan 6 sm uzun, yuzasi esa 91 sm². En uchun tuzilgan uchhad ildizlarining ishorasi va enning qiymati qanday?",
+      "v": [
+        "Ikkala ildiz musbat, en 7 sm",
+        "Ildizlari har xil ishorada, en 13 sm",
+        "Ikkala ildiz manfiy, en 7 sm",
+        "Ildizlari har xil ishorada, en 7 sm"
+      ],
+      "t": 3,
+      "izoh": "Enni x deb olsak, bo'yi x + 6 va yuza x(x + 6) = 91, ya'ni x² + 6x − 91 = 0. Ozod had manfiy, demak ildizlar har xil ishorada. D = 36 + 364 = 400, √D = 20. Ildizlar (−6 + 20) : 2 = 7 va (−6 − 20) : 2 = −13. Uzunlik musbat bo'lgani uchun en 7 sm. Javob: ildizlari har xil ishorada, en 7 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-maydon-va-olcham",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#abd3fcb5"
+    },
+    {
+      "q": "Ikki usta bir ishni alohida bajarish muddatlari (kunda) x² − 13x + 36 = 0 tenglama ildizlariga teng. Tezroq ustaning bir kunlik ish unumini toping.",
+      "v": [
+        "1/4 qism",
+        "1/9 qism",
+        "1/13 qism",
+        "4 qism"
+      ],
+      "t": 0,
+      "izoh": "D = 169 − 144 = 25, √D = 5. Ildizlar (13 + 5) : 2 = 9 va (13 − 5) : 2 = 4 kun. Ikkala muddat musbat, chunki ko'paytma 36 va yig'indi 13 musbat. Tezroq usta ishni 4 kunda bajaradi, demak bir kunda ishning 1/4 qismini bajaradi. Javob: 1/4 qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#9e4eec34"
+    },
+    {
+      "q": "Ikki nasos hovuzni alohida to'ldirish vaqtlari (soatda) 3x² − 20x + 12 = 0 tenglama ildizlariga teng. Ikkala vaqtning yig'indisini toping.",
+      "v": [
+        "4 soat",
+        "20/3 soat",
+        "12 soat",
+        "20 soat"
+      ],
+      "t": 1,
+      "izoh": "Viyet teoremasi bo'yicha ildizlar yig'indisi −b/a = 20/3 ga teng, ko'paytma esa 12/3 = 4. Ikkalasi ham musbat, demak vaqtlar haqiqatan musbat. Yig'indini topish uchun ildizlarni alohida hisoblash shart emas. Tekshirish uchun: D = 400 − 144 = 256, ildizlar 6 va 2/3, yig'indisi 20/3. Javob: 20/3 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#ee0df044"
+    },
+    {
+      "q": "Ikki ishchining ish vaqti (soatda) x² − 11x + k = 0 tenglama ildizlariga teng va ikkalasi ham 4 soatdan ko'p. k ning butun qiymatlari nechta?",
+      "v": [
+        "3 ta",
+        "1 ta",
+        "2 ta",
+        "4 ta"
+      ],
+      "t": 2,
+      "izoh": "Vaqtlar haqiqiy bo'lishi uchun D = 121 − 4k ≥ 0, bundan k ≤ 30,25. Ikkala ildiz 4 dan katta bo'lishi uchun f(4) = 16 − 44 + k > 0, ya'ni k > 28. Uch abssissasi 5,5 va u 4 dan katta. Demak 28 < k ≤ 30,25 va butun qiymatlar 29 hamda 30, ya'ni 2 ta. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#4b7381b6"
+    },
+    {
+      "q": "Ikki kunlik havo harorati (Selsiyda) x² + 5x − 24 = 0 tenglama ildizlariga teng. Manfiy haroratni toping va uni to'g'ri ko'rsating.",
+      "v": [
+        "−3 °C",
+        "8 °C",
+        "−5 °C",
+        "−8 °C"
+      ],
+      "t": 3,
+      "izoh": "Ozod had manfiy, demak ildizlar har xil ishorada va bittasi manfiy. D = 25 + 96 = 121, √D = 11. Ildizlar (−5 + 11) : 2 = 3 va (−5 − 11) : 2 = −8. Yig'indi −5 manfiy bo'lgani uchun moduli kattaroq ildiz manfiy, bu −8 ga mos keladi. Javob: −8 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-harorat-va-statistika",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#cb8c8f50"
+    },
+    {
+      "q": "Tadqiqotda olingan ikki o'lchov natijasi x² − 2x − 35 = 0 tenglama ildizlariga teng chiqdi. Ularning ishorasi va musbatini to'g'ri ko'rsating.",
+      "v": [
+        "Har xil ishorada, musbati 7",
+        "Har xil ishorada, musbati 5",
+        "Ikkalasi musbat, kattasi 7",
+        "Har xil ishorada, musbati 35"
+      ],
+      "t": 0,
+      "izoh": "Ildizlar ko'paytmasi −35 manfiy, demak ular har xil ishorada. Yig'indi 2 musbat, shuning uchun moduli kattasi musbat. Uchhad (x − 7)(x + 5) ko'rinishida yoyiladi, ildizlari 7 va −5. Musbat o'lchov 7 ga teng. Javob: har xil ishorada, musbati 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-harorat-va-statistika",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#4f60c30d"
+    },
+    {
+      "q": "Sinfning ikki test bo'yicha o'rtacha ballari x² − 26x + n = 0 tenglama ildizlari bo'lib, ikkalasi ham 10 dan katta va 16 dan kichik. n ning eng kichik butun qiymatini toping.",
+      "v": [
+        "160",
+        "161",
+        "162",
+        "169"
+      ],
+      "t": 1,
+      "izoh": "Ballar haqiqiy bo'lishi uchun D = 676 − 4n ≥ 0, bundan n ≤ 169. Chetlardagi qiymatlar musbat bo'lsin: f(10) = 100 − 260 + n = n − 160 > 0 va f(16) = 256 − 416 + n = n − 160 > 0, ya'ni n > 160. Uch abssissasi 13 va u oraliq ichida. Demak 160 < n ≤ 169 va eng kichik butun qiymat 161. Javob: 161.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harorat-va-statistika",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#9f06daff"
+    },
+    {
+      "q": "Ikki idishdagi tuz eritmasining konsentratsiyasi (foizda) x² − 22x + 96 = 0 tenglama ildizlariga teng. Konsentratsiyalar ayirmasini toping.",
+      "v": [
+        "22 foiz",
+        "16 foiz",
+        "10 foiz",
+        "6 foiz"
+      ],
+      "t": 2,
+      "izoh": "Ayirma moduli √D : |a| formula bilan topiladi. D = 484 − 384 = 100, √D = 10, a = 1, demak ayirma 10 foiz. Tekshiramiz: ildizlar (22 + 10) : 2 = 16 va (22 − 10) : 2 = 6, ularning farqi 10. Ildizlar yig'indisini javob deb olish tipik xato. Javob: 10 foiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aralashma-va-hajm",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#0a351f7c"
+    },
+    {
+      "q": "Aralashmadagi ikki suyuqlikning hajmi (litrda) 2x² − 17x + 21 = 0 tenglama ildizlariga teng. Ikkala hajm musbat ekanini tekshirib, kichigini toping.",
+      "v": [
+        "7 l",
+        "3 l",
+        "2,5 l",
+        "1,5 l"
+      ],
+      "t": 3,
+      "izoh": "Ildizlar ko'paytmasi 21/2 va yig'indisi 17/2, ikkalasi musbat, demak hajmlar musbat. D = 289 − 168 = 121, √D = 11. Ildizlar (17 + 11) : 4 = 7 va (17 − 11) : 4 = 1,5. Kichik hajm 1,5 litr. Bosh koeffitsientni unutgan o'quvchi 3 l deb xato qiladi. Javob: 1,5 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-aralashma-va-hajm",
+      "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va#80f22d1c"
+    }
+  ]
+}

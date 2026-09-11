@@ -1,0 +1,486 @@
+{
+  "nom": "21-mavzu. Istemolchilarni Ketma Ket Ulash",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektr zanjirdagi elektr energiyani iste'mol qiluvchilarni nima deb yuritamiz?",
+      "v": [
+        "Iste'molchi",
+        "O'tkazgich",
+        "Rezistor",
+        "Qarshilik"
+      ],
+      "t": 0,
+      "izoh": "Bundan buyon elektr zanjirdagi elektr energiyani iste'mol qiluvchilarni o'tkazgich emas, balki iste'molchi deb yuritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#42f91409"
+    },
+    {
+      "q": "Iste'molchilar elektr zanjirga qanday usullarda ulanadi?",
+      "v": [
+        "Ketma-ket yoki parallel holda",
+        "Faqat ketma-ket",
+        "Faqat parallel",
+        "Faqat aralash"
+      ],
+      "t": 0,
+      "izoh": "Iste'molchilar o'zaro ketma-ket yoki parallel holda ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#e429917f"
+    },
+    {
+      "q": "21-paragrafda qanday ulangan zanjir qaraladi?",
+      "v": [
+        "Iste'molchilar ketma-ket ulangan elektr zanjir",
+        "Iste'molchilar parallel ulangan zanjir",
+        "Aralash ulangan zanjir",
+        "Qisqa tutashgan zanjir"
+      ],
+      "t": 0,
+      "izoh": "Paragrafda iste'molchilar ketma-ket ulangan elektr zanjir qaraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#78498b5b"
+    },
+    {
+      "q": "65-rasmdagi tajribada ikkita lampochka ketma-ket ulanganda uchala ampermetr nimani ko'rsatadi?",
+      "v": [
+        "Bir xil qiymatni",
+        "Turli qiymatlarni",
+        "Faqat birinchisi tokni ko'rsatadi",
+        "Nolni"
+      ],
+      "t": 0,
+      "izoh": "Bunda zanjirga ulangan uchala ampermetr bir xil qiymatni ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#368022b9"
+    },
+    {
+      "q": "Ketma-ket ulangan zanjirda tok kuchi qanday ifodalanadi?",
+      "v": [
+        "I = I₁ = I₂",
+        "I = I₁ + I₂",
+        "I = I₁ · I₂",
+        "I = I₁ − I₂"
+      ],
+      "t": 0,
+      "izoh": "Zanjirdan o'tayotgan umumiy tok kuchi I, birinchi va ikkinchi lampochkadan o'tayotgan tok kuchlari I₁ va I₂ bir xil: I = I₁ = I₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#c6b196a2"
+    },
+    {
+      "q": "Agar zanjirga n ta lampochka ketma-ket ulangan bo'lsa, ulardan o'tayotgan tok kuchlari qanday bo'ladi?",
+      "v": [
+        "I₁ = I₂ = I₃ = ... = Iₙ — barchasi bir-biriga teng",
+        "Har birida turlicha",
+        "Oxirgisida eng katta",
+        "Birinchisida eng katta"
+      ],
+      "t": 0,
+      "izoh": "Agar zanjirga n ta lampochka ketma-ket ulangan bo'lsa, ulardan o'tayotgan tok kuchlari ham bir-biriga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#883bfc17"
+    },
+    {
+      "q": "Iste'molchilar ketma-ket ulanganda har bir iste'molchidan o'tayotgan tok kuchlari qanday bo'ladi?",
+      "v": [
+        "Bir xil",
+        "Qarshilikka teskari proporsional",
+        "Qarshilikka to'g'ri proporsional",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Iste'molchilar ketma-ket ulanganda, har bir iste'molchidan o'tayotgan tok kuchlari bir xil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#e2d48067"
+    },
+    {
+      "q": "66-rasmdagi elektr zanjir kaliti ulanganda 1-voltmetr nimani ko'rsatadi?",
+      "v": [
+        "4 V ni",
+        "2 V ni",
+        "6 V ni",
+        "8 V ni"
+      ],
+      "t": 0,
+      "izoh": "66-rasmdagi elektr zanjir kaliti ulanganda 1-voltmetr 4 V ni, 2- va 3-voltmetrlar 2 V ni ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#adaed08f"
+    },
+    {
+      "q": "66-rasmdagi tajribada 2- va 3-voltmetrlar qanday qiymat ko'rsatadi?",
+      "v": [
+        "2 V",
+        "4 V",
+        "1 V",
+        "6 V"
+      ],
+      "t": 0,
+      "izoh": "2- va 3-voltmetrlar 2 V ni ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#2f4300f8"
+    },
+    {
+      "q": "Ketma-ket ulangan ikki lampochka uchun zanjirdagi to'liq kuchlanish qanday ifodalanadi?",
+      "v": [
+        "U = U₁ + U₂",
+        "U = U₁ = U₂",
+        "U = U₁ · U₂",
+        "U = U₁ − U₂"
+      ],
+      "t": 0,
+      "izoh": "Zanjirdagi to'liq kuchlanish ketma-ket ulangan ikkala lampochkadagi kuchlanishlarning yig'indisiga teng: U = U₁ + U₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#5fd76fd4"
+    },
+    {
+      "q": "Agar n ta lampochka ketma-ket ulansa, zanjirdagi to'liq kuchlanish qanday bo'ladi?",
+      "v": [
+        "U = U₁ + U₂ + U₃ + ... + Uₙ",
+        "U = U₁ = U₂ = ... = Uₙ",
+        "U = U₁ · U₂ · ... · Uₙ",
+        "U = U₁/n"
+      ],
+      "t": 0,
+      "izoh": "n ta lampochka ketma-ket ulansa, to'liq kuchlanish U = U₁ + U₂ + U₃ + ... + Uₙ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#caa2227c"
+    },
+    {
+      "q": "Iste'molchilar ketma-ket ulanganda zanjirdagi to'liq kuchlanish nimaga teng?",
+      "v": [
+        "Har bir iste'molchidagi kuchlanishlarning yig'indisiga",
+        "Har bir iste'molchidagi kuchlanishga teng",
+        "Eng kichik kuchlanishga",
+        "Eng katta kuchlanishning yarmiga"
+      ],
+      "t": 0,
+      "izoh": "Iste'molchilar ketma-ket ulanganda, zanjirdagi to'liq kuchlanish har bir iste'molchidagi kuchlanishlarning yig'indisiga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#24537f5e"
+    },
+    {
+      "q": "Om qonuniga binoan, 66-rasmdagi zanjirda birinchi va ikkinchi lampochkadagi kuchlanishlar qanday ifodalanadi?",
+      "v": [
+        "U₁ = IR₁, U₂ = IR₂",
+        "U₁ = I/R₁, U₂ = I/R₂",
+        "U₁ = I²R₁, U₂ = I²R₂",
+        "U₁ = U₂ = IR"
+      ],
+      "t": 0,
+      "izoh": "Om qonuniga binoan, birinchi lampochkadagi kuchlanish U₁ = IR₁ ga, ikkinchi lampochkadagi kuchlanish U₂ = IR₂ ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#5ccfee20"
+    },
+    {
+      "q": "Ketma-ket ulangan ikki o'tkazgich uchun to'liq kuchlanishning qarshiliklar orqali ifodasi qanday?",
+      "v": [
+        "U = I(R₁ + R₂)",
+        "U = IR₁R₂",
+        "U = I(R₁ − R₂)",
+        "U = IR₁/R₂"
+      ],
+      "t": 0,
+      "izoh": "U = U₁ + U₂ = IR₁ + IR₂ = I(R₁ + R₂).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#2fd81f64"
+    },
+    {
+      "q": "Ketma-ket ulangan ikkita o'tkazgichning to'liq qarshiligi qanday topiladi?",
+      "v": [
+        "R = R₁ + R₂",
+        "R = R₁ · R₂",
+        "R = R₁R₂/(R₁+R₂)",
+        "R = R₁ − R₂"
+      ],
+      "t": 0,
+      "izoh": "IR = I(R₁ + R₂) dan to'liq qarshilik R = R₁ + R₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#008f29dc"
+    },
+    {
+      "q": "Zanjirga n ta lampochka ketma-ket ulansa, zanjirdagi o'tkazgichlarning to'liq qarshiligi qanday bo'ladi?",
+      "v": [
+        "R = R₁ + R₂ + R₃ + ... + Rₙ",
+        "R = R₁ = R₂ = ... = Rₙ",
+        "R = R₁ · R₂ · ... · Rₙ",
+        "R = R₁/n"
+      ],
+      "t": 0,
+      "izoh": "Agar zanjirga n ta lampochka ketma-ket ulansa, to'liq qarshilik R = R₁ + R₂ + R₃ + ... + Rₙ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#90d94cd5"
+    },
+    {
+      "q": "Iste'molchilar ketma-ket ulanganda zanjirdagi to'liq qarshilik nimaga teng?",
+      "v": [
+        "Har bir iste'molchi qarshiliklari yig'indisiga",
+        "Har bir iste'molchi qarshiligiga",
+        "Eng kichik qarshilikka",
+        "Qarshiliklar ko'paytmasiga"
+      ],
+      "t": 0,
+      "izoh": "Iste'molchilar ketma-ket ulanganda, zanjirdagi to'liq qarshilik har bir iste'molchi qarshiliklari yig'indisiga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#e311ca62"
+    },
+    {
+      "q": "Archaga osib qo'yiladigan lampochkalar shodasida har bir lampochka qanday kuchlanishga mo'ljallangan bo'lishi misolida keltirilgan?",
+      "v": [
+        "U₁ = 3 V",
+        "U₁ = 220 V",
+        "U₁ = 12 V",
+        "U₁ = 1,5 V"
+      ],
+      "t": 0,
+      "izoh": "Masalan, har biri U₁ = 3 V ga mo'ljallangan n = 75 ta lampochka ketma-ket ulangan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#0b35f615"
+    },
+    {
+      "q": "Har biri 3 V li 75 ta lampochka ketma-ket ulangan zanjirga qancha kuchlanish berish mumkin?",
+      "v": [
+        "U = nU₁ = 75 · 3 V = 225 V gacha",
+        "U = 3 V gacha",
+        "U = 220 : 75 ≈ 3 V",
+        "U = 75 V gacha"
+      ],
+      "t": 0,
+      "izoh": "Bunday zanjirga U = nU₁ = 75 · 3 V = 225 V gacha kuchlanish berish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#790a22f6"
+    },
+    {
+      "q": "Archa lampochkalari shodasini 220 V li tarmoqqa nima uchun to'g'ridan-to'g'ri ulash mumkin?",
+      "v": [
+        "Chunki 225 V gacha kuchlanish berish mumkin va 220 V shu chegarada",
+        "Chunki har bir lampochka 220 V ga mo'ljallangan",
+        "Chunki shoda parallel ulangan",
+        "Chunki lampochkalar qarshiligi juda katta"
+      ],
+      "t": 0,
+      "izoh": "Shuning uchun bunday ketma-ket ulangan lampochkalar shodasini 220 V li elektr tarmoqqa to'g'ridan-to'g'ri ulash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#7cf4d266"
+    },
+    {
+      "q": "Ketma-ket ulangan lampochkalar shodasidan bittasi olib qo'yilsa yoki kuyib qolsa nima sodir bo'ladi?",
+      "v": [
+        "Boshqa barcha lampochkalar yonmaydi, chunki zanjir shu joyda uzilgan bo'ladi",
+        "Qolgan lampochkalar yorqinroq yonadi",
+        "Qolgan lampochkalar o'zgarishsiz yonaveradi",
+        "Faqat qo'shni lampochka o'chadi"
+      ],
+      "t": 0,
+      "izoh": "Bunday lampochkalar shodasidan birortasi olib qo'yilsa yoki kuyib qolsa, boshqa barcha lampochkalar yonmaydi, chunki zanjir shu joyda uzilgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#bec1b465"
+    },
+    {
+      "q": "Namunaviy masalada ketma-ket ulangan uchta o'tkazgichning qarshiliklari qanday berilgan?",
+      "v": [
+        "R₁ = 1 Ω, R₂ = 2 Ω, R₃ = 3 Ω",
+        "R₁ = 2 Ω, R₂ = 4 Ω, R₃ = 6 Ω",
+        "R₁ = 1 Ω, R₂ = 1 Ω, R₃ = 1 Ω",
+        "R₁ = 3 Ω, R₂ = 2 Ω, R₃ = 1 Ω"
+      ],
+      "t": 0,
+      "izoh": "Qarshiliklari 1 Ω, 2 Ω va 3 Ω bo'lgan uchta o'tkazgich ketma-ket ulangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#dda07cca"
+    },
+    {
+      "q": "Namunaviy masalada o'tkazgichlardan qanday tok o'tmoqda?",
+      "v": [
+        "1 A",
+        "2 A",
+        "3 A",
+        "0,5 A"
+      ],
+      "t": 0,
+      "izoh": "O'tkazgichlardan 1 A tok o'tmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#4e05d331"
+    },
+    {
+      "q": "Namunaviy masalada har bir o'tkazgichdagi kuchlanishlar qancha deb topilgan?",
+      "v": [
+        "U₁ = 1 V, U₂ = 2 V, U₃ = 3 V",
+        "U₁ = 3 V, U₂ = 2 V, U₃ = 1 V",
+        "U₁ = U₂ = U₃ = 2 V",
+        "U₁ = 6 V, U₂ = 6 V, U₃ = 6 V"
+      ],
+      "t": 0,
+      "izoh": "U₁ = 1 A·1 Ω = 1 V; U₂ = 1 A·2 Ω = 2 V; U₃ = 1 A·3 Ω = 3 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#9b56f59e"
+    },
+    {
+      "q": "Namunaviy masalada zanjirning to'liq qarshiligi va to'liq kuchlanishi qancha?",
+      "v": [
+        "R = 6 Ω, U = 6 V",
+        "R = 6 Ω, U = 1 V",
+        "R = 1 Ω, U = 6 V",
+        "R = 2 Ω, U = 2 V"
+      ],
+      "t": 0,
+      "izoh": "R = 1+2+3 = 6 Ω; U = IR = 1 A·6 Ω = 6 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#1c277d67"
+    },
+    {
+      "q": "Iste'molchilar ketma-ket ulanganda ulardan nima sababdan bir xil tok oqadi?",
+      "v": [
+        "Chunki zanjirning barcha nuqtalarida bir vaqtning o'zida bir xil miqdordagi zaryad o'tadi, zaryad to'planib qolmaydi",
+        "Chunki barcha iste'molchilar qarshiligi bir xil",
+        "Chunki kuchlanish barchasida bir xil",
+        "Chunki tok manbai kuchli"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket zanjirda zaryadning to'planadigan joyi yo'q, shuning uchun barcha iste'molchilardan bir xil tok oqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#9ebd4318"
+    },
+    {
+      "q": "Ketma-ket ulangan zanjirga qo'shimcha iste'molchi ulanganda nima sababdan qarshilik ortadi?",
+      "v": [
+        "Chunki to'liq qarshilik barcha qarshiliklar yig'indisiga teng",
+        "Chunki tok kuchi kamayadi",
+        "Chunki kuchlanish bo'linadi",
+        "Chunki simlar uzayadi"
+      ],
+      "t": 0,
+      "izoh": "To'liq qarshilik R = R₁ + R₂ + ... + Rₙ bo'lgani uchun har bir qo'shimcha iste'molchi umumiy qarshilikni oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#6c35a7c8"
+    },
+    {
+      "q": "220 V kuchlanishga mo'ljallangan ikkita bir xil lampochka ketma-ket 220 V kuchlanishli tarmoqqa ulanganda har bir lampochka qanday kuchlanish ostida yonadi?",
+      "v": [
+        "110 V",
+        "220 V",
+        "440 V",
+        "55 V"
+      ],
+      "t": 0,
+      "izoh": "Bir xil lampochkalar ketma-ket ulanganda kuchlanish teng bo'linadi: 220/2 = 110 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#1b900110"
+    },
+    {
+      "q": "66-rasmdagi tajribada 1-voltmetr (4 V) ko'rsatishi 2- va 3-voltmetrlar (2 V dan) ko'rsatishlari yig'indisiga teng bo'lishi nimani isbotlaydi?",
+      "v": [
+        "To'liq kuchlanish alohida iste'molchilardagi kuchlanishlar yig'indisiga tengligini",
+        "Tok kuchining bir xilligini",
+        "Qarshiliklarning tengligini",
+        "Voltmetrlarning xatoligini"
+      ],
+      "t": 0,
+      "izoh": "4 V = 2 V + 2 V bo'lgani uchun to'liq kuchlanish har bir iste'molchidagi kuchlanishlar yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#97ebb4cf"
+    },
+    {
+      "q": "Ketma-ket ulangan zanjirda qarshiliklari har xil bo'lgan iste'molchilarda kuchlanish qanday taqsimlanadi?",
+      "v": [
+        "Qarshiligi katta bo'lgan iste'molchida kuchlanish ham katta bo'ladi (U = IR, tok bir xil)",
+        "Barchasida kuchlanish bir xil bo'ladi",
+        "Qarshiligi kichikda kuchlanish katta bo'ladi",
+        "Kuchlanish tasodifiy taqsimlanadi"
+      ],
+      "t": 0,
+      "izoh": "Tok bir xil bo'lgani uchun U = IR ga ko'ra kuchlanish qarshilikka to'g'ri proporsional taqsimlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#c444109d"
+    },
+    {
+      "q": "Ketma-ket ulangan ikkita bir xil lampochka yonganda ularning yoritilishi oddiy (bitta) lampochkaga nisbatan qanday bo'ladi?",
+      "v": [
+        "Xiralashadi, chunki har biriga tushadigan kuchlanish kamayadi",
+        "Yorqinlashadi",
+        "O'zgarmaydi",
+        "Bittasi yonib, bittasi o'chadi"
+      ],
+      "t": 0,
+      "izoh": "66-rasm tajribasida kuchlanish bo'lingani uchun lampochkalarning yonishi xiralashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#84e33cc2"
+    },
+    {
+      "q": "Ketma-ket ulangan zanjir uchun qaysi tasdiq to'g'ri?",
+      "v": [
+        "Tok kuchi hamma yerda bir xil, kuchlanish va qarshilik esa yig'indi bo'yicha qoshib boriladi",
+        "Kuchlanish hamma yerda bir xil, tok kuchi qo'shiladi",
+        "Tok kuchi va kuchlanish ikkalasi ham bo'linadi",
+        "Qarshilik kamayib boradi"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulashda I bir xil, U = U₁ + U₂ + ..., R = R₁ + R₂ + ....",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m21-istemolchilarni-ketma-ket-ulash#9430f32d"
+    }
+  ]
+}

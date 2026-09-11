@@ -1,0 +1,576 @@
+{
+  "nom": "39-mavzu. Faradey Qonunlari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektroliz hodisasi qanday ta'riflanadi?",
+      "v": [
+        "Elektrolitdan elektr toki o'tganda elektrodlarda modda ajralib chiqish hodisasi",
+        "Eritmada moddaning ionlarga ajralish hodisasi",
+        "Metallning sirtga yugurtirilishi hodisasi",
+        "Gazning ionlashishi hodisasi"
+      ],
+      "t": 0,
+      "izoh": "Elektrolitdan elektr toki o'tganda elektrodlarda modda ajralib chiqish hodisasiga elektroliz deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#8c376b1d"
+    },
+    {
+      "q": "Mis sulfat tuzi (CuSO4) suvda eriganda qanday ionlar hosil bo'ladi?",
+      "v": [
+        "Cu2+ va SO42− ionlari",
+        "Cu+ va SO4− ionlari",
+        "Na+ va Cl− ionlari",
+        "H+ va OH− ionlari"
+      ],
+      "t": 0,
+      "izoh": "Mis sulfat tuzi suvda dissotsiatsiyalanib Cu2+ va SO42− ionlari hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#2ffd36d1"
+    },
+    {
+      "q": "Cu2+ ioni qanday hosil bo'lgan ion?",
+      "v": [
+        "Tashqi elektron qobig'idagi ikkita elektronini yo'qotgan, musbat 2 elementar zaryadga ega mis ioni",
+        "Ikkita qo'shimcha elektron biriktirgan mis ioni",
+        "Bitta elektronini yo'qotgan mis ioni",
+        "Neytral mis atomi"
+      ],
+      "t": 0,
+      "izoh": "Cu2+ ioni o'zining tashqi elektron qobig'idagi ikkita elektronini yo'qotgan va musbat 2 elementar zaryadga ega mis atomining ionidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#94b155cc"
+    },
+    {
+      "q": "Elektroliz jarayonida Cu2+ kationlar katodga kelganda qanday reaksiya yuz beradi?",
+      "v": [
+        "Cu2+ + 2e− → Cu",
+        "Cu → Cu2+ + 2e−",
+        "Cu2+ → Cu + e−",
+        "Cu + 2e− → Cu2−"
+      ],
+      "t": 0,
+      "izoh": "Cu2+ kationlar katodga kelib, undan 2 ta elektron oladi va neytral Cu atomlariga aylanadi: Cu2+ + 2e− → Cu.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#7bd85153"
+    },
+    {
+      "q": "Elektrolit orqali tok o'tishi bilan katodda qanday modda yig'ilib boradi?",
+      "v": [
+        "Mis atomlari",
+        "Sulfat ionlari",
+        "Kislorod gazi",
+        "Vodorod gazi"
+      ],
+      "t": 0,
+      "izoh": "Elektrolit orqali tok o'tishi bilan katodda mis atomlari yig'ilib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#a7249f3d"
+    },
+    {
+      "q": "CuSO4 eritmasining elektrolizida anodda qanday gaz ajralib chiqadi?",
+      "v": [
+        "Kislorod gazi",
+        "Vodorod gazi",
+        "Xlor gazi",
+        "Azot gazi"
+      ],
+      "t": 0,
+      "izoh": "SO42− ning qurshovida kelgan suv molekulalari parchalanadi va anodda kislorod gazi ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#21d41cb5"
+    },
+    {
+      "q": "Faradeyning birinchi qonuni qanday ta'riflanadi?",
+      "v": [
+        "Elektroliz vaqtida elektrodda ajralib chiqqan modda massasi elektrolitdan o'tgan zaryad miqdoriga to'g'ri proporsional",
+        "Ajralgan modda massasi elektrolit konsentratsiyasiga teskari proporsional",
+        "Ajralgan modda massasi tok kuchlanishiga to'g'ri proporsional",
+        "Ajralgan modda massasi elektrodlar orasidagi masofaga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Elektroliz vaqtida elektrodda ajralib chiqqan modda massasi elektrolitdan o'tgan zaryad miqdoriga to'g'ri proporsional: m ~ q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#2668c869"
+    },
+    {
+      "q": "Faradeyning birinchi qonunining matematik ifodasi qaysi?",
+      "v": [
+        "m = k∙q",
+        "m = q/k",
+        "q = m∙k",
+        "m = k/q"
+      ],
+      "t": 0,
+      "izoh": "Faradeyning birinchi qonuni m = k∙q tenglik orqali ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#a60af795"
+    },
+    {
+      "q": "m = k∙q formuladagi k koeffitsiyent nima deb ataladi?",
+      "v": [
+        "Moddaning elektrokimyoviy ekvivalenti",
+        "Faradey doimiysi",
+        "Moddaning kimyoviy ekvivalenti",
+        "Molyar massa"
+      ],
+      "t": 0,
+      "izoh": "k – proporsionallik koeffitsiyenti bo'lib, moddaning elektrokimyoviy ekvivalenti deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#6ba6a89b"
+    },
+    {
+      "q": "Moddaning elektrokimyoviy ekvivalenti qanday ta'riflanadi?",
+      "v": [
+        "Elektrolitdan bir kulon zaryad o'tganda elektrodda ajralib chiqqan modda massasiga son jihatidan teng kattalik",
+        "Bir mol moddaning massasiga teng kattalik",
+        "Modda molyar massasining valentligiga nisbatiga teng kattalik",
+        "Bir sekundda elektrolitdan o'tgan zaryad miqdoriga teng kattalik"
+      ],
+      "t": 0,
+      "izoh": "Moddaning elektrokimyoviy ekvivalenti elektrolitdan bir kulon zaryad o'tganda elektrodda ajralib chiqqan modda massasiga son jihatidan teng bo'lgan kattalikdir: k = m/q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#62b04a31"
+    },
+    {
+      "q": "XBSda elektrokimyoviy ekvivalentning birligi qanday?",
+      "v": [
+        "kg/C",
+        "C/kg",
+        "kg/mol",
+        "g/mol"
+      ],
+      "t": 0,
+      "izoh": "XBSda elektrokimyoviy ekvivalent birligi [k] = kg/C qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#cf647e98"
+    },
+    {
+      "q": "Kumushning elektrokimyoviy ekvivalenti qanchaga teng?",
+      "v": [
+        "1,118 mg/C",
+        "0,367 mg/C",
+        "0,329 mg/C",
+        "0,094 mg/C"
+      ],
+      "t": 0,
+      "izoh": "Kumush uchun k = 1,118 mg/C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#974282c1"
+    },
+    {
+      "q": "Misning elektrokimyoviy ekvivalenti qanchaga teng?",
+      "v": [
+        "0,329 mg/C",
+        "1,118 mg/C",
+        "0,304 mg/C",
+        "0,367 mg/C"
+      ],
+      "t": 0,
+      "izoh": "Mis uchun k = 0,329 mg/C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#2fe00a5c"
+    },
+    {
+      "q": "Xlorning elektrokimyoviy ekvivalenti qanchaga teng?",
+      "v": [
+        "0,367 mg/C",
+        "0,329 mg/C",
+        "0,304 mg/C",
+        "1,118 mg/C"
+      ],
+      "t": 0,
+      "izoh": "Xlor uchun k = 0,367 mg/C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#a9f159ae"
+    },
+    {
+      "q": "Zaryad miqdorini tok kuchi va vaqt orqali ifodalab, Faradeyning birinchi qonunini qanday yozish mumkin?",
+      "v": [
+        "m = k∙I∙∆t",
+        "m = k∙I/∆t",
+        "m = k∙U∙I",
+        "m = k∙U∙∆t"
+      ],
+      "t": 0,
+      "izoh": "q = I∙∆t ekanligini inobatga olib, m = k∙I∙∆t ifoda hosil qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#6224b949"
+    },
+    {
+      "q": "Faradeyning birinchi qonunini tekshirish tajribasida A, B, C vannalardagi tok kuchlari orasidagi bog'liqlik qanday?",
+      "v": [
+        "IA = IB + IC",
+        "IA = IB = IC",
+        "IA = IB − IC",
+        "IA = IB∙IC"
+      ],
+      "t": 0,
+      "izoh": "A elektrolitik vannadan o'tayotgan IA tok kuchi B va C vannalardan o'tayotgan IB va IC tok kuchlarining yig'indisiga teng: IA = IB + IC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#05e257e8"
+    },
+    {
+      "q": "Faradeyning birinchi qonunini tekshirish tajribasida A, B, C vannalarda ajralgan massalar uchun qanday munosabat tasdiqlangan?",
+      "v": [
+        "mA = mB + mC",
+        "mA = mB = mC",
+        "mA = mB − mC",
+        "mA = 2mB"
+      ],
+      "t": 0,
+      "izoh": "m = k∙I∙∆t formulaga ko'ra mA = mB + mC munosabat o'rinli bo'ladi. Bu tajribada tasdiqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#0b894d8b"
+    },
+    {
+      "q": "Faradey elektrolizning ikkinchi qonunini qachon kashf etgan?",
+      "v": [
+        "1833–1834-yillarda",
+        "1900–1901-yillarda",
+        "1750–1752-yillarda",
+        "1895–1897-yillarda"
+      ],
+      "t": 0,
+      "izoh": "Faradey tajribalar asosida 1833–1834-yillarda elektrolizning ikkinchi qonunini kashf etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#7ac639a7"
+    },
+    {
+      "q": "Valentlik (Z) – bu nima?",
+      "v": [
+        "Element atomlarining kimyoviy bog'lanishlar hosil qilish qobiliyatini ko'rsatuvchi xarakteristika",
+        "Moddaning massasini ko'rsatuvchi kattalik",
+        "Atomdagi elektronlar soni",
+        "Moddaning zichligi"
+      ],
+      "t": 0,
+      "izoh": "Valentlik (Z) – element atomlarining kimyoviy bog'lanishlar hosil qilish qobiliyatini ko'rsatuvchi xarakteristikasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#9aaed75f"
+    },
+    {
+      "q": "Molyar massa (M) qanday ta'riflanadi?",
+      "v": [
+        "Miqdori 1 mol bo'lgan moddaning massasi",
+        "Bir kulon zaryad bilan ajraladigan modda massasi",
+        "0,012 kg ugleroddagi atomlar soni",
+        "Moddaning elektrokimyoviy ekvivalenti"
+      ],
+      "t": 0,
+      "izoh": "Molyar massa (M) – miqdori 1 mol bo'lgan moddaning massasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#84206c20"
+    },
+    {
+      "q": "Moddaning kimyoviy ekvivalenti qanday aniqlanadi?",
+      "v": [
+        "Modda molyar massasining valentligiga nisbati M/Z sifatida",
+        "Modda massasining zaryadga nisbati m/q sifatida",
+        "Modda molyar massasining ionlar soniga nisbati sifatida",
+        "Zaryadning tok kuchiga nisbati sifatida"
+      ],
+      "t": 0,
+      "izoh": "Modda molyar massasining valentligiga nisbati (M/Z) moddaning kimyoviy ekvivalenti deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#87326c9b"
+    },
+    {
+      "q": "Bir valentli moddaning kimyoviy ekvivalenti nimaga son jihatidan teng?",
+      "v": [
+        "Uning molyar massasiga",
+        "Uning valentligiga",
+        "Faradey doimiysiga",
+        "Elementar zaryadga"
+      ],
+      "t": 0,
+      "izoh": "Bir valentli moddaning kimyoviy ekvivalenti son jihatidan uning molyar massasiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#937d1140"
+    },
+    {
+      "q": "Faradeyning ikkinchi qonuni qanday ta'riflanadi?",
+      "v": [
+        "Moddaning elektrokimyoviy ekvivalenti uning kimyoviy ekvivalentiga to'g'ri proporsional",
+        "Ajralgan modda massasi zaryad miqdoriga teskari proporsional",
+        "Elektrokimyoviy ekvivalent tok kuchiga to'g'ri proporsional",
+        "Kimyoviy ekvivalent molyar massaga teskari proporsional"
+      ],
+      "t": 0,
+      "izoh": "Faradeyning ikkinchi qonuni: moddaning elektrokimyoviy ekvivalenti uning kimyoviy ekvivalentiga to'g'ri proporsional: k ~ M/Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#7a3306a9"
+    },
+    {
+      "q": "Faradey doimiysi F ning son qiymati taxminan qanchaga teng?",
+      "v": [
+        "96500 C/mol",
+        "9650 C/mol",
+        "965000 C/mol",
+        "965 C/mol"
+      ],
+      "t": 0,
+      "izoh": "Faradey doimiysi F ≈ 96500 C/mol ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#b0b4f2d2"
+    },
+    {
+      "q": "Faradey doimiysining birligi qanday?",
+      "v": [
+        "C/mol",
+        "kg/C",
+        "mol/C",
+        "J/mol"
+      ],
+      "t": 0,
+      "izoh": "F kattalik Faradey doimiysi deb ataladi va uning qiymati F ≈ 96500 C/mol ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#c853e42b"
+    },
+    {
+      "q": "Faradeyning I va II qonunlarini umumlashtirgan formula qaysi?",
+      "v": [
+        "m = (M/(F∙Z))∙q",
+        "m = k∙q∙F",
+        "m = F∙Z∙q/M",
+        "m = M∙Z∙F/q"
+      ],
+      "t": 0,
+      "izoh": "Faradeyning I va II qonunlarini umumlashtirsak, m = (1/F)∙(M/Z)∙q tenglik hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#2b1d3733"
+    },
+    {
+      "q": "Elektroliz vaqtida valentligi 1 ga teng bo'lgan 1 mol modda ajralishi uchun elektrolit orqali qancha zaryad o'tishi kerak?",
+      "v": [
+        "Son jihatidan Faradey doimiysiga teng 96500 kulon",
+        "9650 kulon",
+        "1 kulon",
+        "965000 kulon"
+      ],
+      "t": 0,
+      "izoh": "Valentligi 1 ga teng 1 mol modda ajralishi uchun elektrolit orqali o'tadigan zaryad miqdori son jihatidan Faradey doimiysiga (96500 kulonga) teng bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#e7b0132b"
+    },
+    {
+      "q": "Elektrolitda valentligi Z ga teng bo'lgan bir mol modda ajralib chiqishi uchun qancha zaryad o'tishi kerak?",
+      "v": [
+        "Z∙96500 kulon",
+        "96500/Z kulon",
+        "Z/96500 kulon",
+        "96500 kulon"
+      ],
+      "t": 0,
+      "izoh": "Valentligi Z ga teng bir mol modda ajralishi uchun elektrolit orqali Z∙96500 kulon zaryad o'tishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#282428c1"
+    },
+    {
+      "q": "Faradeyning ikkinchi qonunini tekshirish tajribasida uchta vannaga qanday eritmalar quyiladi?",
+      "v": [
+        "Natriy xlorid (NaCl), mis sulfat (CuSO4), kumush nitrat (AgNO3)",
+        "Uchalasiga ham mis sulfat (CuSO4)",
+        "Uchalasiga ham natriy xlorid (NaCl)",
+        "Sulfat kislota, distillangan suv, spirt"
+      ],
+      "t": 0,
+      "izoh": "Uchta elektrolitik vannaning birinchisiga NaCl, ikkinchisiga CuSO4, uchinchisiga AgNO3 tuzlarining eritmalari quyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#57663ac9"
+    },
+    {
+      "q": "Ikkinchi qonunni tekshirish tajribasida vannalar qanday ulanadi?",
+      "v": [
+        "Ketma-ket ulanadi",
+        "Parallel ulanadi",
+        "Aralash ulanadi",
+        "Umuman bir-biriga ulanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Elektrolitlarga botirilgan elektrodlar o'tkazgich simlar bilan ketma-ket tutashtirilib, tok manbaiga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#bb675f53"
+    },
+    {
+      "q": "Ikkinchi qonun tajribasida katodlarda ajralgan natriy, mis va kumush massalari nima uchun har xil bo'ladi?",
+      "v": [
+        "Bu moddalarning molyar massalari va valentligi turlicha bo'lgani uchun",
+        "Vannalardan o'tgan tok kuchi turlicha bo'lgani uchun",
+        "Elektrodlar orasidagi masofa turlicha bo'lgani uchun",
+        "Elektrolitlar temperaturasi turlicha bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Na, Cu va Ag ning molyar massalari va valentligi turlicha bo'lgani uchun katodlarda ajralgan massalar har xil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#52a4fe13"
+    },
+    {
+      "q": "Ikkinchi qonun tajribasida birinchi vannaning katodida qanday modda ajralib chiqadi?",
+      "v": [
+        "Natriy (Na)",
+        "Mis (Cu)",
+        "Kumush (Ag)",
+        "Xlor (Cl2)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi vannaning katodida natriy (Na) va anodida xlor (Cl2) ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#b6eb9576"
+    },
+    {
+      "q": "Ikkinchi qonun tajribasida uchunchi vannaning katodida qanday modda ajralib chiqadi?",
+      "v": [
+        "Kumush (Ag)",
+        "Natriy (Na)",
+        "Mis (Cu)",
+        "Kislorod (O2)"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi vannaning katodida kumush (Ag) va anodida kislorod (O2) ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#c71e087f"
+    },
+    {
+      "q": "Elektrolitik vannadagi tuzli eritmadan o'tayotgan tok kuchi 4 marta ortganda katodda vaqt birligida ajraladigan modda massasi qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "O'zgarmaydi",
+        "4 marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "m = k∙I∙∆t ga ko'ra vaqt birligida ajraladigan massa tok kuchiga to'g'ri proporsional, demak 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#4eca7507"
+    },
+    {
+      "q": "Elektroliz hodisasida ajralib chiqadigan modda massasi nimaga bog'liq?",
+      "v": [
+        "Oqib o'tadigan zaryad miqdoriga, modda atomlarining molyar massasi va valentligiga",
+        "Faqat elektrodlarning shakliga",
+        "Faqat elektrolitning hajmiga",
+        "Faqat idishning materialiga"
+      ],
+      "t": 0,
+      "izoh": "Elektroliz hodisasida ajralib chiqadigan modda massasi oqib o'tadigan zaryad miqdoriga, modda atomlarining molyar massasi va valentligiga bog'liq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#69bea5b4"
+    },
+    {
+      "q": "Elektrolitdan elektr tokini o'tkazib nima qilish mumkin?",
+      "v": [
+        "Aralashma moddalar tarkibidan toza modda (metall yoki gaz) ajratib olish",
+        "Moddani butunlay yo'q qilish",
+        "Faqat elektrolitni qizdirish",
+        "Moddaning molyar massasini o'zgartirish"
+      ],
+      "t": 0,
+      "izoh": "Elektrolitdan elektr tokini o'tkazib, aralashma moddalar tarkibidan toza modda (metall yoki gaz) ajratib olish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#a9d2052b"
+    },
+    {
+      "q": "Elektroliz vaqtida ajralib chiqqan moddaning massasi moddaning elektrokimyoviy ekvivalentiga qanday bog'liq?",
+      "v": [
+        "To'g'ri proporsional",
+        "Teskari proporsional",
+        "Kvadratik bog'liq",
+        "Umuman bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Elektroliz vaqtida ajralib chiqqan moddaning massasi moddaning elektrokimyoviy ekvivalenti hamda o'tgan zaryad miqdoriga to'g'ri proporsional bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#2f7c99fd"
+    },
+    {
+      "q": "Nikelning elektrokimyoviy ekvivalenti qanchaga teng?",
+      "v": [
+        "0,304 mg/C",
+        "0,329 mg/C",
+        "0,094 mg/C",
+        "1,118 mg/C"
+      ],
+      "t": 0,
+      "izoh": "Nikel uchun k = 0,304 mg/C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m39-faradey-qonunlari#cff2b5af"
+    }
+  ]
+}

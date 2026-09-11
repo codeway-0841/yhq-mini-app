@@ -1,0 +1,471 @@
+{
+  "nom": "05-mavzu. Tokli Otkazgichlarning Ozaro Tasiri",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Ikki elastik o'tkazgichdan qarama-qarshi yo'nalishda tok o'tganda ular qanday harakat qiladi?",
+      "v": [
+        "Bir-biridan itariladi",
+        "Bir-biriga tortiladi",
+        "Harakatsiz qoladi",
+        "Aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Qarama-qarshi yo'nalishda tok o'tganda o'tkazgichlar bir-biridan itariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#0e94fc3c"
+    },
+    {
+      "q": "Ikki parallel o'tkazgichdan bir xil yo'nalishda tok o'tganda ular qanday ta'sirlashadi?",
+      "v": [
+        "Bir-biriga tortiladi",
+        "Bir-biridan itariladi",
+        "Ta'sirlashmaydi",
+        "Aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Bir xil yo'nalishda tok o'tganda o'tkazgichlar bir-biriga tortiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#7e167d58"
+    },
+    {
+      "q": "Parallel tokli o'tkazgichlar orasidagi o'zaro ta'sir kuchi qaysi qonun yordamida aniqlanadi?",
+      "v": [
+        "Amper qonuni",
+        "Om qonuni",
+        "Kulon qonuni",
+        "Faradey qonuni"
+      ],
+      "t": 0,
+      "izoh": "Amper qonunidan foydalanib o'zaro ta'sir kuchining yo'nalishi va son qiymati aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#578abc11"
+    },
+    {
+      "q": "O'tkazgichlardan o'tayotgan toklarning magnit maydon induksiya chiziqlari qanday shaklga ega?",
+      "v": [
+        "Konsentrik aylanalardan",
+        "To'g'ri chiziqlardan",
+        "Ellipslardan",
+        "Giperbolalardan"
+      ],
+      "t": 0,
+      "izoh": "I1 va I2 toklarning magnit maydon induksiya chiziqlari konsentrik aylanalardan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#ea9f3e0f"
+    },
+    {
+      "q": "Bir-biridan d masofada joylashgan ikki parallel o'tkazgichning o'zaro ta'sir kuchi qanday ifodalanadi?",
+      "v": [
+        "F = (μ0/2π)·(I1·I2·Δl)/d",
+        "F = (μ0/2π)·(I1·I2)/(d·Δl)",
+        "F = μ0·I1·I2·d/(2π·Δl)",
+        "F = (μ0/4π)·(I1·I2)/d²"
+      ],
+      "t": 0,
+      "izoh": "F = μ0·I1·I2·Δl/(2π·d).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#dfd88074"
+    },
+    {
+      "q": "Parallel tokli o'tkazgichlarning birlik uzunligiga ta'sir qiluvchi o'zaro ta'sir kuchi tok kuchlari ko'paytmasiga qanday bog'liq?",
+      "v": [
+        "To'g'ri proporsional",
+        "Teskari proporsional",
+        "Kvadratik bog'liq",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Birlik uzunlikdagi kuch toklar ko'paytmasiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#386a900f"
+    },
+    {
+      "q": "Parallel o'tkazgichlarning o'zaro ta'sir kuchi ular orasidagi masofaga qanday bog'liq?",
+      "v": [
+        "Teskari proporsional",
+        "To'g'ri proporsional",
+        "Kvadratiga teskari proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Kuch orasidagi masofaga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#ca7e64b1"
+    },
+    {
+      "q": "Tok kuchining XBSdagi birligi — amper qaysi hodisa asosida qabul qilingan?",
+      "v": [
+        "Parallel tokli o'tkazgichlarning o'zaro ta'sir kuchi hodisasi asosida",
+        "Elektroliz hodisasi asosida",
+        "Termik ta'sir asosida",
+        "Yorug'lik chiqarish asosida"
+      ],
+      "t": 0,
+      "izoh": "Mazkur hodisa asosida tok kuchining birligi — amper qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#f7b3c733"
+    },
+    {
+      "q": "Amperning ta'rifi qanday?",
+      "v": [
+        "Vakuumda bir-biridan 1 m masofadagi cheksiz uzun parallel o'tkazgichlarning har bir metr uzunligida 2·10⁻⁷ N o'zaro ta'sir kuchi hosil qiladigan o'zgarmas tok kuchi",
+        "1 s da kesimdan 1 C zaryad o'tkazadigan tok",
+        "1 Omqarshilikda 1 V kuchlanish hosil qiladigan tok",
+        "1 s da 1 J issiqlik ajratadigan tok"
+      ],
+      "t": 0,
+      "izoh": "Amper — vakuumda 1 m masofadagi cheksiz uzun parallel o'tkazgichlarning har metr uzunligida 2·10⁻⁷ N kuch hosil qiladigan o'zgarmas tok kuchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#8567b486"
+    },
+    {
+      "q": "Amper ta'rifida o'tkazgichlar orasidagi masofa qancha olinadi?",
+      "v": [
+        "1 m",
+        "1 sm",
+        "10 sm",
+        "1 km"
+      ],
+      "t": 0,
+      "izoh": "Ta'rifda masofa 1 m olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#7befbc21"
+    },
+    {
+      "q": "Amper ta'rifida har bir metr uzunlikda hosil bo'ladigan o'zaro ta'sir kuchi qancha?",
+      "v": [
+        "2·10⁻⁷ N",
+        "2·10⁻⁹ N",
+        "4π·10⁻⁷ N",
+        "10⁻⁷ N"
+      ],
+      "t": 0,
+      "izoh": "Har bir metr uzunligida 2·10⁻⁷ N o'zaro ta'sir kuchi hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#6eeb0d6a"
+    },
+    {
+      "q": "I1 tok pastdan yuqoriga oqayotganda, ikkinchi o'tkazgich nuqtalarida B1 vektor qanday yo'nalgan?",
+      "v": [
+        "Bizdan kitob tekisligi tomon",
+        "Bizga qarab",
+        "Yuqoriga",
+        "Pastga"
+      ],
+      "t": 0,
+      "izoh": "Parma qoidasiga binoan B1 vektor bizdan kitob tekisligi tomon yo'nalgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#bcf2846d"
+    },
+    {
+      "q": "Parallel o'tkazgichlar orasidagi o'zaro ta'sir kuchining yo'nalishi qanday aniqlanadi?",
+      "v": [
+        "Parma qoidasi bilan maydon yo'nalishi, chap qo'l qoidasi bilan kuch yo'nalishi aniqlanadi",
+        "Faqat chap qo'l qoidasi bilan",
+        "Faqat Lenz qoidasi bilan",
+        "Kulon qonuni bilan"
+      ],
+      "t": 0,
+      "izoh": "Avval o'ng parma qoidasi bilan maydon yo'nalishi, keyin chap qo'l qoidasi bilan kuch yo'nalishi topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#cd995d34"
+    },
+    {
+      "q": "Orasidagi masofa 1,6 m bo'lgan ikki simli liniyada 40 A tok o'tganda har metrga to'g'ri keladigan kuch qanday? (namuna)",
+      "v": [
+        "2·10⁻⁴ N",
+        "2·10⁻⁷ N",
+        "2·10⁻⁵ N",
+        "2·10⁻³ N"
+      ],
+      "t": 0,
+      "izoh": "F = μ0·I1·I2·Δl/(2π·d) = 2·10⁻⁷·40·40·1/1,6 = 2·10⁻⁴ N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#7a374b59"
+    },
+    {
+      "q": "Ikki simli uzatish liniyasida simlar orasidagi masofa 2 m, tok 50 A bo'lsa, har metrga to'g'ri keladigan kuch? (1-mashq)",
+      "v": [
+        "0,25 mN",
+        "2,5 mN",
+        "0,025 mN",
+        "25 mN"
+      ],
+      "t": 0,
+      "izoh": "F = 2·10⁻⁷·50·50·1/2 = 2,5·10⁻⁴ N = 0,25 mN.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#ecf12efc"
+    },
+    {
+      "q": "Toklardan birining kuchi ikki marta oshirilsa, o'zaro ta'sir kuchi qanday o'zgaradi?",
+      "v": [
+        "Ikki marta ortadi",
+        "Ikki marta kamayadi",
+        "O'zgarmaydi",
+        "To'rt marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "Kuch toklar ko'paytmasiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#5fbae974"
+    },
+    {
+      "q": "Ikkala tok ham ikki marta oshirilsa, o'zaro ta'sir kuchi qanday o'zgaradi?",
+      "v": [
+        "To'rt marta ortadi",
+        "Ikki marta ortadi",
+        "O'zgarmaydi",
+        "Ikki marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "F ~ I1·I2 bo'lgani uchun kuch 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#91ddf67c"
+    },
+    {
+      "q": "O'tkazgichlar orasidagi masofa ikki marta kamaytirilsa, kuch qanday o'zgaradi?",
+      "v": [
+        "Ikki marta ortadi",
+        "Ikki marta kamayadi",
+        "O'zgarmaydi",
+        "To'rt marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "Kuch masofaga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#b5b42dbc"
+    },
+    {
+      "q": "Ikki parallel o'tkazgichdan bir xil yo'nalishda teng tok o'tganda, ular orasidagi o'rta nuqtada magnit induksiyasi nimaga teng?",
+      "v": [
+        "Nolga",
+        "Maksimal qiymatga",
+        "Bitta o'tkazgich induksiyasiga",
+        "Ikkilangan induksiyaga"
+      ],
+      "t": 0,
+      "izoh": "O'rta nuqtada maydonlar qarama-qarshi va teng — natijaviy induksiya nol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#baf146fa"
+    },
+    {
+      "q": "Elektr zaryadlari kabi tokli o'tkazgichlar orasida ham qanday kuchlar mavjud?",
+      "v": [
+        "O'zaro ta'sir kuchlari",
+        "Faqat tortishish kuchlari",
+        "Faqat itarish kuchlari",
+        "Hech qanday kuch yo'q"
+      ],
+      "t": 0,
+      "izoh": "Xuddi elektr zaryadlari kabi tokli o'tkazgichlar orasida ham o'zaro ta'sir kuchlari mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#343b8210"
+    },
+    {
+      "q": "Amper ta'rifida o'tkazgichlarning ko'ndalang kesimi qanday bo'lishi kerak?",
+      "v": [
+        "Hisobga olmas darajada kichik",
+        "Juda katta",
+        "1 sm²",
+        "Aylanaviy"
+      ],
+      "t": 0,
+      "izoh": "Ta'rifda o'tkazgichlarning ko'ndalang kesim yuzi hisobga olmas darajada kichik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#510ce696"
+    },
+    {
+      "q": "Parallel o'tkazgichlarning tortishishi yoki itarilishi nimaga bog'liq?",
+      "v": [
+        "Toklarning yo'nalishiga",
+        "Toklarning kattaligiga",
+        "O'tkazgichlar materialiga",
+        "Maydon kuchliligiga"
+      ],
+      "t": 0,
+      "izoh": "Tortishish yoki itarilish toklarning o'zaro yo'nalishiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#f68b70b8"
+    },
+    {
+      "q": "Qarama-qarshi yo'nalishdagi toklar uchun o'zaro ta'sir kuchi vektori qanday yo'nalgan?",
+      "v": [
+        "O'tkazgichlarni bir-biridan uzoqlashtiruvchi tomonga",
+        "Bir-biriga yaqinlashtiruvchi tomonga",
+        "Tok yo'nalishida",
+        "Maydon bo'ylab"
+      ],
+      "t": 0,
+      "izoh": "Qarama-qarshi toklarda kuchlar itaruvchi yo'nalishga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#0a57bbe3"
+    },
+    {
+      "q": "μ0 ning son qiymati F = μ0·I1·I2·Δl/(2π·d) formulasida qanday ishlatiladi?",
+      "v": [
+        "μ0 = 4π·10⁻⁷ N/A²",
+        "μ0 = 2·10⁻⁷ N/A²",
+        "μ0 = 10⁻⁷ N/A",
+        "μ0 = 4π·10⁷ N/A²"
+      ],
+      "t": 0,
+      "izoh": "μ0 = 4π·10⁻⁷ N/A²; μ0/(2π) = 2·10⁻⁷ N/A².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#d033044e"
+    },
+    {
+      "q": "Ikki parallel o'tkazgichda bir xil yo'nalishdagi toklar hosil qilgan maydonlar o'zaro qanday joylashadi?",
+      "v": [
+        "O'tkazgichlar orasidagi sohada qarama-qarshi yo'nalgan",
+        "Hamma joyda bir xil yo'nalgan",
+        "Parallel emas",
+        "Tik joylashgan"
+      ],
+      "t": 0,
+      "izoh": "O'tkazgichlar orasidagi sohada maydonlar qarama-qarshi yo'nalgan, shuning uchun o'tkazgichlar tortiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#91aa6b2e"
+    },
+    {
+      "q": "O'zaro ta'sir kuchi formulasidagi Δl nimani anglatadi?",
+      "v": [
+        "Ikkinchi o'tkazgichning magnit maydonda joylashgan qismining uzunligi",
+        "O'tkazgichlar orasidagi masofa",
+        "Tokning o'tish vaqti",
+        "Kesim yuzasi"
+      ],
+      "t": 0,
+      "izoh": "Δl — ikkinchi o'tkazgichning magnit maydonda joylashgan qismining uzunligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#c9280df2"
+    },
+    {
+      "q": "Bir xil yo'nalishdagi parallel toklarning o'zaro ta'sir kuchi qanday xarakterga ega?",
+      "v": [
+        "Tortishish",
+        "Itarish",
+        "Aylantirish",
+        "Nol"
+      ],
+      "t": 0,
+      "izoh": "Bir xil yo'nalishdagi toklar bir-biriga tortiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#8307ccc9"
+    },
+    {
+      "q": "Tajribada ikki elastik o'tkazgich qanday joylashtiriladi?",
+      "v": [
+        "Vertikal holatda tayanchga mahkamlanadi",
+        "Gorizontal osiladi",
+        "Suvga solinadi",
+        "Stolga yotqiziladi"
+      ],
+      "t": 0,
+      "izoh": "Ikki elastik o'tkazgich vertikal holatda tayanchga mahkamlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#6b6d9b5a"
+    },
+    {
+      "q": "Tok kuchi birligi amper qaysi tizimda qabul qilingan?",
+      "v": [
+        "Xalqaro birliklar tizimida (XBS)",
+        "SGS tizimida",
+        "Angliya tizimida",
+        "Faqat amaliy tizimda"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchining Xalqaro birliklar tizimidagi birligi — amper.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#f2b2e749"
+    },
+    {
+      "q": "Tokli o'tkazgichlar o'zaro ta'sirida B1 vektori bilan I2 tok o'zaro qanday joylashadi?",
+      "v": [
+        "Tik joylashadi",
+        "Parallel joylashadi",
+        "45° ostida joylashadi",
+        "Bir tekislikda emas"
+      ],
+      "t": 0,
+      "izoh": "B1 vektor kitob tekisligiga tik yo'nalgan bo'lib, tok bilan o'zaro tik joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#e2a8e1c4"
+    },
+    {
+      "q": "Ikki parallel tokli o'tkazgichning o'zaro ta'sir kuchi qaysi ikki qonunning birgalikda qo'llanilishidan kelib chiqadi?",
+      "v": [
+        "To'g'ri tok induksiyasi formulasi va Amper qonuni",
+        "Om va Joule-Lenz qonunlari",
+        "Kulon va Faradey qonunlari",
+        "Bio-Savar-Laplas va Lenz qonunlari"
+      ],
+      "t": 0,
+      "izoh": "F2 = B1·I2·Δl ga B1 = μ0·I1/(2π·d) qo'yilib F = μ0·I1·I2·Δl/(2π·d) olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m05-tokli-otkazgichlarning-ozaro-tasiri#2239b07f"
+    }
+  ]
+}

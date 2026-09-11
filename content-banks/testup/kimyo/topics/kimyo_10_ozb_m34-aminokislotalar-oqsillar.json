@@ -1,0 +1,591 @@
+{
+  "nom": "34-mavzu. Aminokislotalar va oqsillar. Olinishi va xossalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Aminokislotalar deb qanday birikmalarga aytiladi?",
+      "v": [
+        "Molekulasida amino (-NH2) va karboksil (-COOH) guruhlari bor organik birikmalarga",
+        "Faqat karboksil guruhi bor organik birikmalarga",
+        "Faqat aminoguruh bor organik birikmalarga",
+        "Molekulasida gidroksil va aldegid guruhi bor birikmalarga"
+      ],
+      "t": 0,
+      "izoh": "Aminokislotalar tarkibida amino va karboksil guruhlari bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#13ba975a"
+    },
+    {
+      "q": "Aminokislotalarni organik kislotalarning hosilalari deb qarash mumkin, chunki...",
+      "v": [
+        "Kislota radikalidagi vodorod atomlarining aminoguruhga almashinishi natijasidir",
+        "Karboksil guruhi aminoguruhga aylangandir",
+        "Ular kislotalarning tuzlaridir",
+        "Ular kislotalarning efirlaridir"
+      ],
+      "t": 0,
+      "izoh": "Aminokislotalar — kislota radikalidagi vodorodning aminoguruhga almashinishi natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#244d1ba9"
+    },
+    {
+      "q": "Aminokislotalarning umumiy formulasini ko'rsating.",
+      "v": [
+        "CnH2n(NH2)(COOH)",
+        "CnH2n+1OH",
+        "CnH2nO2",
+        "CnH2n+1NH2"
+      ],
+      "t": 0,
+      "izoh": "Umumiy formula: CnH2n(NH2)(COOH) yoki R-CH(NH2)-COOH.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#95f4db0c"
+    },
+    {
+      "q": "Tarkibida bitta amino va bitta karboksil guruh tutgan aminokislotalar qanday deyiladi?",
+      "v": [
+        "Monoamino monokarbon kislotalar",
+        "Diamino monokarbon kislotalar",
+        "Monoamino dikarbon kislotalar",
+        "Diamino dikarbon kislotalar"
+      ],
+      "t": 0,
+      "izoh": "Bitta NH2 va bitta COOH — monoamino monokarbon kislotalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#7ed0e00b"
+    },
+    {
+      "q": "Molekulada ikkita amino va bitta karboksil guruhlari bo'lgan aminokislotalar qanday ataladi?",
+      "v": [
+        "Diamino monokarbon kislotalar",
+        "Monoamino monokarbon kislotalar",
+        "Monoamino dikarbon kislotalar",
+        "Triamino kislotalar"
+      ],
+      "t": 0,
+      "izoh": "Ikkita NH2, bitta COOH — diamino monokarbon kislotalar (masalan, lizin).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#86492d55"
+    },
+    {
+      "q": "Monoamino dikarbon kislotalarda nechta karboksil va nechta amino guruh bo'ladi?",
+      "v": [
+        "Ikkita karboksil va bitta amino guruh",
+        "Bitta karboksil va ikkita amino guruh",
+        "Bitta karboksil va bitta amino guruh",
+        "Uchta karboksil va bitta amino guruh"
+      ],
+      "t": 0,
+      "izoh": "Monoamino dikarbon kislota: 2 COOH + 1 NH2 (masalan, glutamin kislota).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#dbd512dd"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri monoamino monokarbon kislota hisoblanadi?",
+      "v": [
+        "Alanin",
+        "Lizin",
+        "Glutamin kislota",
+        "Asparagin kislota"
+      ],
+      "t": 0,
+      "izoh": "Alanin va fenilalanin — monoamino monokarbon kislotalarga misol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#b8a3a23c"
+    },
+    {
+      "q": "Diamino monokarbon kislotalarga misol qaysi?",
+      "v": [
+        "Lizin",
+        "Alanin",
+        "Serin",
+        "Glitsin"
+      ],
+      "t": 0,
+      "izoh": "Lizin tarkibida ikkita amino va bitta karboksil guruh bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#707ed928"
+    },
+    {
+      "q": "Glutamin kislota qaysi turdagi aminokislotalarga kiradi?",
+      "v": [
+        "Monoamino dikarbon kislotalarga",
+        "Monoamino monokarbon kislotalarga",
+        "Diamino monokarbon kislotalarga",
+        "Diamino dikarbon kislotalarga"
+      ],
+      "t": 0,
+      "izoh": "Glutamin kislota tarkibida ikkita karboksil va bitta amino guruh bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#1e9d5b85"
+    },
+    {
+      "q": "Tarkibida qo'shimcha funktsional guruh (HS-) tutgan aminokislota qaysi?",
+      "v": [
+        "Sistein",
+        "Serin",
+        "Alanin",
+        "Glitsin"
+      ],
+      "t": 0,
+      "izoh": "Sistein tarkibida HS- guruhi, serinda esa HO- guruhi bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#695fd473"
+    },
+    {
+      "q": "Ratsional nomenklatura bo'yicha aminokislotalarda NH2 guruhning karboksilga nisbatan o'rni qanday ko'rsatiladi?",
+      "v": [
+        "Uglerod atomlari grek alfobosi harflari bilan belgilanadi",
+        "Lotin raqamlari bilan belgilanadi",
+        "Arab raqamlari bilan belgilanadi",
+        "Rim raqamlari bilan belgilanadi"
+      ],
+      "t": 0,
+      "izoh": "Ratsional nomenklaturada uglerod atomlari alfa, beta, gamma... harflari bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#210027a7"
+    },
+    {
+      "q": "Sistematik nomenklatura bo'yicha aminokislotalarni nomlaganda birinchi uglerod deb qaysi uglerod qaraladi?",
+      "v": [
+        "Karbokildagi uglerod",
+        "Aminoguruh birikkan uglerod",
+        "Zanjir oxiridagi uglerod",
+        "Metil guruhidagi uglerod"
+      ],
+      "t": 0,
+      "izoh": "Karbokildagi uglerod birinchi uglerod deb qaraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#0b0ac9ed"
+    },
+    {
+      "q": "2-aminogeksan kislota ratsional nomenklaturada qanday ataladi?",
+      "v": [
+        "alfa-aminogeksan kislota",
+        "beta-aminogeksan kislota",
+        "gamma-aminogeksan kislota",
+        "delta-aminogeksan kislota"
+      ],
+      "t": 0,
+      "izoh": "2-o'rindagi amino guruh alfa-uglerodda — alfa-aminogeksan kislota.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#29ba9f47"
+    },
+    {
+      "q": "Aminokislotalarni olish usullari qaysilar?",
+      "v": [
+        "Oqsillarni gidroliz qilish va xlorsirka kislotaga ammiak ta'sir ettirish",
+        "Spirtlarni oksidlash va aldegidlarni qaytarish",
+        "Alkenlarni gidratlash",
+        "Efirlarni gidroliz qilish"
+      ],
+      "t": 0,
+      "izoh": "Aminokislotalar oqsillarni gidroliz qilib yoki xlorsirka kislotaga ammiak ta'sir ettirib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#a31b0cb5"
+    },
+    {
+      "q": "Cl-CH2COOH + 2NH3 -> NH2-CH2COOH + NH4Cl reaksiyasida qanday aminokislota hosil bo'ladi?",
+      "v": [
+        "Glitsin",
+        "Alanin",
+        "Serin",
+        "Lizin"
+      ],
+      "t": 0,
+      "izoh": "alfa-Xlorsirka kislota ammiak bilan glitsin hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#22a5a80d"
+    },
+    {
+      "q": "alfa-Aminokislotalarning fizik holati qanday?",
+      "v": [
+        "Rangsiz kristall moddalar",
+        "Rangli suyuqliklar",
+        "Gazsimon moddalar",
+        "Yopishqoq suyuqliklar"
+      ],
+      "t": 0,
+      "izoh": "alfa-Aminokislotalar rangsiz kristall moddalar, ko'pchiligi suvda yaxshi eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#bc3879b6"
+    },
+    {
+      "q": "Aminokislotalarning ta'mi ko'pincha qanday bo'ladi?",
+      "v": [
+        "Shirin",
+        "Achchiq",
+        "Sho'r",
+        "Nordon"
+      ],
+      "t": 0,
+      "izoh": "Aminokislotalar ko'pincha shirin ta'mga ega, lekin noxush va achchiq ta'mlilari ham bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#03c2841d"
+    },
+    {
+      "q": "Qaysi aminokislotalar indikator rangini o'zgartirmaydi?",
+      "v": [
+        "Monoaminomonokarbon va diaminodikarbon aminokislotalar",
+        "Diaminomonokarbon aminokislotalar",
+        "Monoaminodikarbon aminokislotalar",
+        "Barcha aminokislotalar"
+      ],
+      "t": 0,
+      "izoh": "Monoaminomonokarbon va diaminodikarbon aminokislotalar indikatorga ta'sir ko'rsatmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#4af4b3e9"
+    },
+    {
+      "q": "Diaminomonokarbon aminokislotalar qanday tabiatga ega?",
+      "v": [
+        "Ishqoriy",
+        "Kislotali",
+        "Neytral",
+        "Amfoter"
+      ],
+      "t": 0,
+      "izoh": "Diaminomonokarbon aminokislotalar ishqoriy, monoaminodikarbon kislotalar esa kislotali tabiatga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#bb0cac15"
+    },
+    {
+      "q": "alfa-Aminokislotalarning amfoterlik xususiyati nimadan kelib chiqadi?",
+      "v": [
+        "Bir vaqtda asosli aminoguruh va kislotali karboksil guruhga ega bo'lishidan",
+        "Suvda yaxshi erishidan",
+        "Kristall tuzilishidan",
+        "Shirin ta'midan"
+      ],
+      "t": 0,
+      "izoh": "Aminokislotalar ham asoslar, ham kislotalar bilan tuz hosil qiladi — amfoter birikmalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#fbf13023"
+    },
+    {
+      "q": "Aminokislota NaOH bilan reaksiyaga kirishganda qaysi guruh qatnashadi?",
+      "v": [
+        "Karboksil guruh",
+        "Aminoguruh",
+        "Ikkalasi ham",
+        "Radikal"
+      ],
+      "t": 0,
+      "izoh": "NaOH bilan karboksil guruh reaksiyaga kirishib R-CH(NH2)-COONa hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#dac8d487"
+    },
+    {
+      "q": "Aminokislota HCl bilan reaksiyaga kirishganda qaysi guruh qatnashadi?",
+      "v": [
+        "Aminoguruh",
+        "Karboksil guruh",
+        "Ikkalasi ham",
+        "Metil guruhi"
+      ],
+      "t": 0,
+      "izoh": "HCl bilan aminoguruh reaksiyaga kirishib [R-CH(NH3+)-COOH]Cl tuz hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#613c61e1"
+    },
+    {
+      "q": "Aminokislotalar organizmda nima uchun eng zarur moddalar hisoblanadi?",
+      "v": [
+        "Organizm oqsilini hosil qilishda ishlatiladi",
+        "Energiya manbai sifatida yonadi",
+        "Qonning rangini beradi",
+        "Suyaklarni mustahkamlaydi"
+      ],
+      "t": 0,
+      "izoh": "Aminokislotalar organizm oqsilini hosil qilishda eng zarur moddalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#7232deee"
+    },
+    {
+      "q": "Darslikka ko'ra, glutamin kislota qaysi kasallikni davolashda ishlatiladi?",
+      "v": [
+        "Asab kasalligini",
+        "Oshqozon yarasi kasalligini",
+        "Qon kamishlikni",
+        "Qandli diabetni"
+      ],
+      "t": 0,
+      "izoh": "Glutamin kislota asab kasalligini, gistidin oshqozon yarasi kasalligini davolashda ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#12a6930c"
+    },
+    {
+      "q": "Gistidin aminokislota qaysi kasallikni davolashda ishlatiladi?",
+      "v": [
+        "Oshqozon yarasi kasalligini",
+        "Asab kasalligini",
+        "Yurak kasalliklarini",
+        "Teri kasalliklarini"
+      ],
+      "t": 0,
+      "izoh": "Gistidin oshqozon yarasi kasalligini davolashda ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#1f6ba64a"
+    },
+    {
+      "q": "Peptid deb qanday moddalarga aytiladi?",
+      "v": [
+        "Oqsillarning asosini tashkil etuvchi ikki yoki undan ortiq aminokislotalarning polikondensatlanishidan hosil bo'lgan moddalarga",
+        "Bitta aminokislota molekulasiga",
+        "Oqsillarning gidroliz mahsulotlariga",
+        "Uglevodlar bilan birikkan oqsillarga"
+      ],
+      "t": 0,
+      "izoh": "Peptid — ikki yoki undan ortiq aminokislota polikondensatlanishidan hosil bo'lgan modda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#ce326582"
+    },
+    {
+      "q": "Ikki aminokislota qoldig'idan tashkil topgan peptid qanday deyiladi?",
+      "v": [
+        "Dipeptid",
+        "Tripeptid",
+        "Polipeptid",
+        "Oligopeptid"
+      ],
+      "t": 0,
+      "izoh": "Ikki qoldiqdan — dipeptid, uchtadan — tripeptid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#6fdb7699"
+    },
+    {
+      "q": "Peptid molekulasining birinchi uchi nima hisobiga azot bilan tugaydi?",
+      "v": [
+        "Amino guruh (-NH2)",
+        "Karboksil guruh (-COOH)",
+        "Gidroksil guruh",
+        "Radikal"
+      ],
+      "t": 0,
+      "izoh": "Birinchi uch amino guruh hisobiga azot bilan, ikkinchi uch karboksil hisobiga uglerod bilan tugaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#e63fef5e"
+    },
+    {
+      "q": "Aminokislotalar soni 50 tagacha bo'lgan yuqori molekulyar birikmalar qanday ataladi?",
+      "v": [
+        "Peptidlar",
+        "Oqsillar",
+        "Fermentlar",
+        "Nuklein kislotalar"
+      ],
+      "t": 0,
+      "izoh": "50 tagacha aminokislotalilar peptidlar, 50 dan ortiqlari shartli ravishda oqsillar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#d7e61d3e"
+    },
+    {
+      "q": "10 gacha aminokislota qoldig'i tutgan peptidlar qanday ataladi?",
+      "v": [
+        "Oligopeptid",
+        "Polipeptid",
+        "Dipeptid",
+        "Oqsil"
+      ],
+      "t": 0,
+      "izoh": "10 gacha bo'lganlari oligopeptid, undan yuqorilari polipeptid deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#b1b68264"
+    },
+    {
+      "q": "Oqsillar tabiatda qayerlarda uchraydi?",
+      "v": [
+        "Hayvonlarning qoni, suti, muskul va tog'ay tarkibida hamda soch, tirnoq, teri, pat, jun, ipak tarkibida",
+        "Faqat o'simlik barglarida",
+        "Faqat mineral suvlar tarkibida",
+        "Faqat tog' jinslarida"
+      ],
+      "t": 0,
+      "izoh": "Oqsillar qon, sut, muskul, tog'ay, soch, tirnoq, teri, pat, jun, ipak va tuxum tarkibida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#56cdef9e"
+    },
+    {
+      "q": "Oqsillar kimyoviy tarkibiga ko'ra qanday turlarga bo'linadi?",
+      "v": [
+        "Oddiy va murakkab oqsillarga",
+        "Tabiiy va sintetik oqsillarga",
+        "Kislotali va ishqoriy oqsillarga",
+        "Eriydigan va erimaydigan oqsillarga"
+      ],
+      "t": 0,
+      "izoh": "Oqsillar tarkibiga ko'ra oddiy (proteinlar) va murakkab (proteidlar) oqsillarga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#3db78269"
+    },
+    {
+      "q": "Murakkab oqsillar (proteidlar) gidrolizlanganda nimalar hosil bo'ladi?",
+      "v": [
+        "Aminokislotalardan tashqari oqsil bo'lmagan moddalar (uglevodlar, fosfat kislota, nuklein kislota va boshqalar)",
+        "Faqat aminokislotalar",
+        "Faqat uglevodlar",
+        "Faqat yog' kislotalar"
+      ],
+      "t": 0,
+      "izoh": "Proteidlar gidrolizda aminokislotalar bilan birga oqsil bo'lmagan moddalar ham hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#9459f3cb"
+    },
+    {
+      "q": "Oqsillar denaturatsiyasi nima?",
+      "v": [
+        "Oqsillar konfiguratsiyasining qizdirish, radiatsiya, kuchli kislota, ishqorlar, og'ir metall tuzlari, kuchli silkish ta'sirida buzilishi",
+        "Oqsillarning suvda erishi",
+        "Oqsillarning gidrolizi",
+        "Oqsillarning tuzlar hosil qilishi"
+      ],
+      "t": 0,
+      "izoh": "Denaturatsiya — ikkilamchi va uchlamchi strukturalarning turli ta'sirlarda buzilishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#4c0f0378"
+    },
+    {
+      "q": "Biuret reaksiyasi nimaga xos reaksiya hisoblanadi?",
+      "v": [
+        "-CO-NH- bog'lar yoki peptid bog'lar uchun",
+        "Karboksil guruh uchun",
+        "Ikki karbonli bog'lar uchun",
+        "Benzol halqasi uchun"
+      ],
+      "t": 0,
+      "izoh": "Biuret reaksiyasi peptid bog'lari uchun xos sifat reaksiyasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#2e8edfde"
+    },
+    {
+      "q": "Biuret reaksiyasida ishqoriy muhitda mis (II) sulfat eritmasi qanday rangga bo'yaladi?",
+      "v": [
+        "Binafsha",
+        "Qizil",
+        "Yashil",
+        "Sariq"
+      ],
+      "t": 0,
+      "izoh": "Biuret reaksiyasida mis (II) sulfat eritmasi binafsha rangga bo'yaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#1344e33a"
+    },
+    {
+      "q": "Biuret reaksiyasida dipeptid, tripeptid va yuqori peptidlar qanday ranglar beradi?",
+      "v": [
+        "Dipeptid — ko'k, tripeptid — binafsha, yuqori peptidlar — qizil",
+        "Dipeptid — qizil, tripeptid — ko'k, yuqori peptidlar — binafsha",
+        "Barchasi bir xil binafsha rang beradi",
+        "Dipeptid — yashil, tripeptid — sariq, yuqori peptidlar — qizil"
+      ],
+      "t": 0,
+      "izoh": "Dipeptid ko'k, tripeptid binafsha, yuqori peptidlar qizil rang beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#1014ed96"
+    },
+    {
+      "q": "37,5 g noma'lum aminokislota natriy ishqori bilan reaksiyada 9 g suv hosil qilsa, bu aminokislota qaysi? (darslikdagi yechilgan masala)",
+      "v": [
+        "Glitsin CH2(NH2)COOH",
+        "Alanin",
+        "Serin",
+        "Lizin"
+      ],
+      "t": 0,
+      "izoh": "9 g suv 0,5 mol; aminokislota 0,5 mol, M=37,5/0,5=75 g/mol — glitsin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#799ee16f"
+    },
+    {
+      "q": "Darslikdagi yechilgan masalada glitsinning molekulyar massasi necha g/mol deb olingan?",
+      "v": [
+        "75 g/mol",
+        "89 g/mol",
+        "56 g/mol",
+        "103 g/mol"
+      ],
+      "t": 0,
+      "izoh": "Glitsin CH2(NH2)COOH molekulyar massasi 75 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m34-aminokislotalar-oqsillar#fa9f491e"
+    }
+  ]
+}

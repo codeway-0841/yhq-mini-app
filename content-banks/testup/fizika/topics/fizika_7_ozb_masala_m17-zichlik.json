@@ -1,0 +1,231 @@
+{
+  "nom": "17-mavzu. Masala. Zichlik",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Hajmi 0,5 m³ bo'lgan suvning massasi qancha? Suvning zichligi 1000 kg/m³.",
+      "v": [
+        "500 kg",
+        "2000 kg",
+        "5000 kg",
+        "50 kg"
+      ],
+      "t": 0,
+      "izoh": "m = ρ·V = 1000·0,5 = 500 kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m17-zichlik#9a9cc5b3"
+    },
+    {
+      "q": "Massasi 2,7 kg bo'lgan alyuminiy detalning hajmi qancha? Alyuminiyning zichligi 2700 kg/m³.",
+      "v": [
+        "1 dm³",
+        "1000 dm³",
+        "0,1 dm³",
+        "10 dm³"
+      ],
+      "t": 0,
+      "izoh": "V = m/ρ = 2,7:2700 = 0,001 m³ = 1 dm³",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m17-zichlik#85be32a1"
+    },
+    {
+      "q": "Hajmi 48 cm³ bo'lgan alyuminiy jismning massasi qancha? Alyuminiyning zichligi 2,7 g/cm³. (10-mashq, 5-masala asosida)",
+      "v": [
+        "129,6 g",
+        "17,7778 g",
+        "1296 g",
+        "12,96 g"
+      ],
+      "t": 0,
+      "izoh": "m = ρ·V = 2,7·48 = 129,6 g",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m17-zichlik#a3ab5d10"
+    },
+    {
+      "q": "Hajmi 1,5 l bo'lgan idishga qancha massali o'simlik yog'i sig'adi? O'simlik yog'ining zichligi 0,93 g/cm³. (10-mashq, 1-masala)",
+      "v": [
+        "1395 g",
+        "1,395 g",
+        "13950 g",
+        "139,5 g"
+      ],
+      "t": 0,
+      "izoh": "V = 1,5 l = 1500 cm³ → m = ρ·V = 0,93·1500 = 1395 g",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m17-zichlik#1ace5f63"
+    },
+    {
+      "q": "Massasi 1800 g bo'lgan muzning hajmini aniqlang. Muzning zichligi 0,9 g/cm³. (10-mashq, 2-masala)",
+      "v": [
+        "2000 cm³",
+        "1620 cm³",
+        "200 cm³",
+        "20000 cm³"
+      ],
+      "t": 0,
+      "izoh": "V = m/ρ = 1800:0,9 = 2000 cm³",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m17-zichlik#98b246f0"
+    },
+    {
+      "q": "Sinf xonasining o'lchamlari: eni 8 m, bo'yi 12 m, balandligi 3 m. Xonadagi havoning massasi qancha? Havoning zichligi 1,29 kg/m³. (10-mashq, 3-masala)",
+      "v": [
+        "371,52 kg",
+        "223,2558 kg",
+        "37,152 kg",
+        "3715,2 kg"
+      ],
+      "t": 0,
+      "izoh": "V = 8·12·3 = 288 m³ → m = ρ·V = 1,29·288 = 371,52 kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m17-zichlik#13fe1a48"
+    },
+    {
+      "q": "Chuqurligi 2 m, eni 1,5 m, bo'yi 3 m bo'lgan idish sement bilan to'ldirilgan. Sementning massasi qancha? Sementning zichligi 1,5 g/cm³. (10-mashq, 4-masala)",
+      "v": [
+        "13,5 t",
+        "135 t",
+        "1,35 t",
+        "13500 t"
+      ],
+      "t": 0,
+      "izoh": "V = 2·1,5·3 = 9 m³; ρ = 1,5 g/cm³ = 1500 kg/m³ → m = 1500·9 = 13500 kg = 13,5 t",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m17-zichlik#31885f6b"
+    },
+    {
+      "q": "Massasi 504 g va zichligi 700 kg/m³ bo'lgan jismning hajmi qancha? (10-mashq, 6-masala)",
+      "v": [
+        "720 cm³",
+        "352,8 cm³",
+        "0,72 cm³",
+        "72 cm³"
+      ],
+      "t": 0,
+      "izoh": "ρ = 700 kg/m³ = 0,7 g/cm³ → V = m/ρ = 504:0,7 = 720 cm³",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m17-zichlik#c3b1e475"
+    },
+    {
+      "q": "2 l sig'imli idishga 2,8 kg asal solinganda u to'lgan. Asalning zichligi qancha? (58-betdagi namunaviy masala asosida)",
+      "v": [
+        "1400 kg/m³",
+        "1,4 kg/m³",
+        "0,0056 kg/m³",
+        "140 kg/m³"
+      ],
+      "t": 0,
+      "izoh": "V = 2 l = 0,002 m³ → ρ = m/V = 2,8:0,002 = 1400 kg/m³",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m17-zichlik#1a0adfcd"
+    },
+    {
+      "q": "Zichligi 1400 kg/m³ bo'lgan asalning 1 l idishdagi massasi qancha? (58-betdagi namunaviy masala asosida)",
+      "v": [
+        "1,4 kg",
+        "14 kg",
+        "1400 kg",
+        "1400000 kg"
+      ],
+      "t": 0,
+      "izoh": "V = 1 l = 0,001 m³ → m = ρ·V = 1400·0,001 = 1,4 kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m17-zichlik#ce3bed07"
+    },
+    {
+      "q": "Menzurkada suv hajmi 60 ml edi. Vint tushirilgach 75 ml bo'ldi. Vintning massasi 117 g bo'lsa, uning zichligi qanday (g/cm³)? (18-laboratoriya ishi asosida)",
+      "v": [
+        "7,8 g/cm³",
+        "1,56 g/cm³",
+        "1,95 g/cm³",
+        "0,8667 g/cm³"
+      ],
+      "t": 0,
+      "izoh": "V = 75 − 60 = 15 cm³ → ρ = m/V = 117:15 = 7,8 g/cm³",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m17-zichlik#51bc022c"
+    },
+    {
+      "q": "Uzunligi 10 cm, eni 5 cm, balandligi 2 cm bo'lgan yog'och brusokning massasi 70 g. Yog'ochning zichligi qancha (g/cm³)? (18-laboratoriya ishi asosida)",
+      "v": [
+        "0,7 g/cm³",
+        "4,1176 g/cm³",
+        "1,4 g/cm³",
+        "1,4286 g/cm³"
+      ],
+      "t": 0,
+      "izoh": "V = a·b·h = 10·5·2 = 100 cm³ → ρ = m/V = 70:100 = 0,7 g/cm³",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m17-zichlik#759b9ed1"
+    },
+    {
+      "q": "Massasi 178 kg bo'lgan mis detalning hajmi necha dm³? Misning zichligi 8,9 g/cm³.",
+      "v": [
+        "20 dm³",
+        "15,842 dm³",
+        "200 dm³",
+        "2 dm³"
+      ],
+      "t": 0,
+      "izoh": "m = 178 kg = 178000 g → V = m/ρ = 178000:8,9 = 20000 cm³ = 20 dm³",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m17-zichlik#bbab977e"
+    },
+    {
+      "q": "Hajmi 200 cm³ bo'lgan temir va shu hajmli alyuminiy jismlarning massalari ayirmasi qancha? Temir 7,8 g/cm³, alyuminiy 2,7 g/cm³.",
+      "v": [
+        "1020 g",
+        "1560 g",
+        "540 g",
+        "2100 g"
+      ],
+      "t": 0,
+      "izoh": "Δm = (7,8 − 2,7)·200 = 5,1·200 = 1020 g",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m17-zichlik#b820f479"
+    },
+    {
+      "q": "Benzin bilan to'lgan 50 l bakdagi benzinning massasi qancha? Benzining zichligi 710 kg/m³.",
+      "v": [
+        "35,5 kg",
+        "355 kg",
+        "35500 kg",
+        "3,55 kg"
+      ],
+      "t": 0,
+      "izoh": "V = 50 l = 0,05 m³ → m = ρ·V = 710·0,05 = 35,5 kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m17-zichlik#25379a72"
+    }
+  ]
+}

@@ -1,0 +1,516 @@
+{
+  "nom": "19-mavzu. Elektroliz va uning amaliy ahamiyati",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektroliz deb nimaga aytiladi?",
+      "v": [
+        "Elektrolit eritmasidan yoki suyuqlantirilgan elektrolitdan doimiy elektr toki o'tkazilganda sodir bo'ladigan oksidlanish-qaytarilish jarayoniga",
+        "Elektrolitning qizdirilganda bug'lanishiga",
+        "Ikki elektrolitning aralashishiga",
+        "Metallning kislotada erishiga"
+      ],
+      "t": 0,
+      "izoh": "Elektrolit eritmasidan yoki suyuqlantirilgan elektrolitdan doimiy tok o'tkazilganda sodir bo'ladigan oksidlanish-qaytarilish jarayoni elektroliz deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#44478013"
+    },
+    {
+      "q": "Elektrolizda katodda qanday jarayon boradi?",
+      "v": [
+        "Qaytarilish jarayoni",
+        "Oksidlanish jarayoni",
+        "Neytrallanish jarayoni",
+        "Bug'lanish jarayoni"
+      ],
+      "t": 0,
+      "izoh": "Elektrolizning mohiyati: katodda qaytarilish, anodda oksidlanish jarayoni boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#4105046c"
+    },
+    {
+      "q": "Elektrolizda eritmadagi musbat ionlar qayoqqa yo'naladi?",
+      "v": [
+        "Katodga tomon borib, elektronlar qabul qiladi",
+        "Anodga tomon borib, elektron beradi",
+        "Eritmada joyidan qimir etmaydi",
+        "Faqat suv molekulalariga yopishadi"
+      ],
+      "t": 0,
+      "izoh": "Musbat ionlar katodga tomon borib elektronlar qabul qiladi va neytral atomlarga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#ccfa479d"
+    },
+    {
+      "q": "CuCl2 eritmasining elektrolizida katodda qanday jarayon sodir bo'ladi?",
+      "v": [
+        "Cu2+ + 2ē = Cu",
+        "2Cl– – 2ē = Cl2",
+        "2H2O + 2ē = H2 + 2OH–",
+        "4OH– – 4ē = 2H2O + O2"
+      ],
+      "t": 0,
+      "izoh": "CuCl2 eritmasi elektrolizida katodda Cu2+ + 2ē = Cu, anodda 2Cl– – 2ē = Cl2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m19-elektroliz#eedb6427"
+    },
+    {
+      "q": "Elektrod potensiali –0,41 ev/atom dan kichik bo'lgan metallarning tuzlari eritmasidan tok o'tkazilganda katodda nima qaytariladi?",
+      "v": [
+        "Suv molekulalari qaytariladi",
+        "Metall ionlari qaytariladi",
+        "Kislota qoldig'i ionlari qaytariladi",
+        "Kislorod ajralib chiqadi"
+      ],
+      "t": 0,
+      "izoh": "Elektrod potensiali –0,41 ev/atom dan kichik metallar tuzlari eritmasi elektrolizida katodda metall ionlari emas, suv molekulalari qaytariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m19-elektroliz#c03fbeb1"
+    },
+    {
+      "q": "NaCl ning suvdagi eritmasi elektrolizida katodda qanday jarayon sodir bo'ladi?",
+      "v": [
+        "2H2O + 2ē = H2 + 2OH–",
+        "Na+ + ē = Na",
+        "2Cl– – 2ē = Cl2",
+        "Cu2+ + 2ē = Cu"
+      ],
+      "t": 0,
+      "izoh": "NaCl suvli eritmasi elektrolizida katodda suv qaytariladi: 2H2O + 2ē = H2 + 2OH–; anodda 2Cl– – 2ē = Cl2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m19-elektroliz#44300397"
+    },
+    {
+      "q": "Suv molekulalari qaysi metallar tuzlarining eritmalari elektroliz qilingandagina qaytariladi?",
+      "v": [
+        "Potensiallar qatorida alyuminiydan oldin joylashgan eng faol metallar tuzlari eritmalarida",
+        "Vodoroddan keyingi metallar tuzlari eritmalarida",
+        "Mis va kumush tuzlari eritmalarida",
+        "Barcha tuzlar eritmalarida"
+      ],
+      "t": 0,
+      "izoh": "Suv molekulalari potensiallar qatorida alyuminiydan oldin joylashgan eng faol metallar tuzlari eritmalari elektrolizidagina qaytariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#5599b3c6"
+    },
+    {
+      "q": "Parchalanish kuchlanishi deb nimaga aytiladi?",
+      "v": [
+        "Elektroliz jarayoni boradigan eng kichik potensiallar ayirmasiga",
+        "Elektrodlar orasidagi eng katta kuchlanishga",
+        "Galvanik elementning e.y.k. siga",
+        "Tok kuchining vaqtga nisbatiga"
+      ],
+      "t": 0,
+      "izoh": "Elektroliz jarayoni boradigan eng kichik potensiallar ayirmasi parchalanish kuchlanishi deyiladi va u galvanik element e.y.k. dan katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#bae20cbb"
+    },
+    {
+      "q": "O'ta kuchlanish (η) qanday ifodalanadi?",
+      "v": [
+        "η = Eparch – E",
+        "η = E + Eparch",
+        "η = E . Eparch",
+        "η = E / Eparch"
+      ],
+      "t": 0,
+      "izoh": "η = Eparch – E, bunda Eparch — parchalanish kuchlanishi, E — galvanik elementning e.y.k.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m19-elektroliz#3986eb33"
+    },
+    {
+      "q": "Eruvchan anodlar deb qanday elektrodlarga aytiladi?",
+      "v": [
+        "Elektroliz vaqtida yemiriladigan, ya'ni eritmaga ionlar holida o'tadigan elektrodlarga",
+        "Elektrolizda umuman o'zgarmaydigan elektrodlarga",
+        "Faqat grafitdan tayyorlangan elektrodlarga",
+        "Faqat platina elektrodlarga"
+      ],
+      "t": 0,
+      "izoh": "Eruvchan anodlar — elektroliz vaqtida yemiriladigan, eritmaga ionlar holida o'tadigan elektrodlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#4f4f8709"
+    },
+    {
+      "q": "CuCl2 eritmasi orqali tok o'tkazilib, anod sifatida mis plastinka olinsa, anodda nima sodir bo'ladi?",
+      "v": [
+        "Mis anoddan Cu2+ ionlari holida eritmaga o'tadi — anod eriydi",
+        "Anodda xlor gazi ajralib chiqadi",
+        "Anodda kislorod ajralib chiqadi",
+        "Anodda suv oksidlanadi"
+      ],
+      "t": 0,
+      "izoh": "Mis atomlari Cl– ionlariga qaraganda elektronini oson beradi, shuning uchun anodning o'zi eriydi, Cu2+ ionlari eritmaga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#7ca84956"
+    },
+    {
+      "q": "Eruvchan anoddan foydalaniladigan elektroliz sanoatda nimaga ishlatiladi?",
+      "v": [
+        "Juda toza moddalar olish va bir metallni boshqa metall qavati bilan qoplash uchun",
+        "Faqat gazlar olish uchun",
+        "Faqat suvni tozalash uchun",
+        "Faqat kislota ishlab chiqarish uchun"
+      ],
+      "t": 0,
+      "izoh": "Eruvchan anodli elektroliz sanoatda juda toza moddalar olish uchun, bir metallni boshqa metall qavati bilan qoplash uchun ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#cf7f08be"
+    },
+    {
+      "q": "Buyumlarni nikellashda elektrodlar qanday tanlanadi?",
+      "v": [
+        "Anod nikeldan tayyorlanadi, nikellanuvchi buyum katod bo'ladi",
+        "Anod grafitdan, katod nikeldan bo'ladi",
+        "Ikkala elektrod ham grafitdan bo'ladi",
+        "Buyum anod, nikel plastinka katod bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Nikellashda anod nikeldan tayyorlanadi, nikellanuvchi buyum katod bo'ladi; ikkalasi nikel tuzi eritmasiga tushiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#41238427"
+    },
+    {
+      "q": "Erimaydigan anodlar odatda nimadan tayyorlanadi?",
+      "v": [
+        "Oltin, platina yoki grafitdan",
+        "Mis, rux yoki temirdan",
+        "Natriy yoki kaliydan",
+        "Qalay yoki qo'rg'oshindan"
+      ],
+      "t": 0,
+      "izoh": "Erimaydigan anodlar, odatda, oltin, platina yoki grafitdan tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#652ca6d5"
+    },
+    {
+      "q": "Elektrolit birmuncha konsentrlangan bo'lsa, qaysi ionlar oson zaryadsizlanadi?",
+      "v": [
+        "Kislorodsiz kislotalarning ionlari: Cl–, Br–, I–, S2–",
+        "Kislorodli kislotalarning ionlari: SO4(2–), PO4(3–), NO3–",
+        "Faqat OH– ionlari",
+        "Faqat H+ ionlari"
+      ],
+      "t": 0,
+      "izoh": "Konsentrlangan elektrolitda kislorodsiz kislotalarning ionlari (Cl–, Br–, I–, S2–) oson zaryadsizlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#22a48aee"
+    },
+    {
+      "q": "Kislorodli kislotalarning anionlari anodda qanday bo'ladi?",
+      "v": [
+        "Zaryadsizlanmaydi",
+        "Oson zaryadsizlanadi",
+        "Metall holida ajralib chiqadi",
+        "Katodga yo'naladi"
+      ],
+      "t": 0,
+      "izoh": "Kislorodli kislotalarning anionlari (SO4(2–), PO4(3–), NO3–) zaryadsizlanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#9b3b3259"
+    },
+    {
+      "q": "Na2SO4 ning suvdagi eritmasi orqali tok yuborilsa, katodda va anodda nima ajralib chiqadi?",
+      "v": [
+        "Katodda vodorod, anodda kislorod",
+        "Katodda natriy, anodda kislorod",
+        "Katodda vodorod, anodda oltingugurt",
+        "Katodda natriy, anodda vodorod"
+      ],
+      "t": 0,
+      "izoh": "Faol metall va kislorodli kislota tuzi eritmasi elektrolizida katodda suv qaytarilib H2, anodda oksidlanib O2 ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#e8b5f6a4"
+    },
+    {
+      "q": "NaCl suyuqlanmasi elektroliz qilinganda katodda qanday jarayon sodir bo'ladi?",
+      "v": [
+        "Na+ + ē = Na",
+        "2H2O + 2ē = H2 + 2OH–",
+        "2Cl– – 2ē = Cl2",
+        "Na+ + Cl– = NaCl"
+      ],
+      "t": 0,
+      "izoh": "NaCl suyuqlanmasida faqat Na+ ionlar musbat zaryadlangan, katodda Na+ + ē = Na jarayoni boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m19-elektroliz#e7ef10e4"
+    },
+    {
+      "q": "Hozirgi vaqtda sanoatda qaysi metallar suyuqlantirilgan birikmalarni elektroliz qilish yo'li bilan olinadi?",
+      "v": [
+        "Al, Mg, Ca, Na va boshqalar",
+        "Cu, Ag, Au, Pt",
+        "Fe, Zn, Pb, Sn",
+        "Ni, Cr, Mn, Co"
+      ],
+      "t": 0,
+      "izoh": "Sanoatda Al, Mg, Ca, Na kabi metallar suyuqlantirilgan birikmalarni elektroliz qilish yo'li bilan olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#d169e072"
+    },
+    {
+      "q": "Elektroliz orqali qaysi metallmas moddalar ham olinadi?",
+      "v": [
+        "Vodorod, kislorod, ftor, xlor, ishqorlar",
+        "Faqat vodorod va kislorod",
+        "Faqat azot va geliy",
+        "Faqat oltingugurt va fosfor"
+      ],
+      "t": 0,
+      "izoh": "Vodorod, kislorod, ftor, xlor, ishqorlar ham elektroliz orqali olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#42d8f47d"
+    },
+    {
+      "q": "Metallarning aktivlik qatorida alyuminiygacha bo'lgan metallar birikmalarining eritmalari elektrolizida katodda nima ajralib chiqadi?",
+      "v": [
+        "Vodorod",
+        "Metall",
+        "Kislorod",
+        "Xlor"
+      ],
+      "t": 0,
+      "izoh": "Alyuminiygacha bo'lgan metallar birikmalari eritmalari elektrolizida katodda vodorod ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#6fa47d67"
+    },
+    {
+      "q": "Metallarning aktivlik qatorida marganesdan boshlab metallar birikmalarining eritmalari elektrolizida katodda nima ajralib chiqadi?",
+      "v": [
+        "Metall ajralib chiqadi",
+        "Faqat vodorod ajralib chiqadi",
+        "Faqat kislorod ajralib chiqadi",
+        "Hech narsa ajralib chiqmaydi"
+      ],
+      "t": 0,
+      "izoh": "Marganesdan boshlab metallar birikmalari eritmalari elektrolizida katodda metall ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#dc592527"
+    },
+    {
+      "q": "Kislorodsiz kislotalar va kislorodsiz kislota qoldig'i tutgan tuzlarning eritmalari elektrolizida anodda nima oksidlanadi?",
+      "v": [
+        "Kislota qoldiqlari oksidlanadi (F ioni istisno)",
+        "Faqat suv molekulalari",
+        "Faqat OH– ionlari",
+        "Metall ionlari"
+      ],
+      "t": 0,
+      "izoh": "Kislorodsiz kislota qoldig'i tutgan eritmalar elektrolizida anodda kislota qoldiqlari oksidlanadi, F ioni bundan istisno.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#cfdc14b2"
+    },
+    {
+      "q": "Kislorodli kislotalar va ularning tuzlari eritmalari elektrolizida anodda qanday jarayon boradi?",
+      "v": [
+        "4OH– – 4ē = 2H2O + O2",
+        "2Cl– – 2ē = Cl2",
+        "Cu – 2ē = Cu2+",
+        "Na+ + ē = Na"
+      ],
+      "t": 0,
+      "izoh": "Kislorodli kislotalar va tuzlari eritmalari elektrolizida anodda OH– ionlari oksidlanib kislorod ajraladi: 4OH– – 4ē = 2H2O + O2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m19-elektroliz#446984cd"
+    },
+    {
+      "q": "CuSO4 eritmasining elektrolizi tugagach, eritmada qanday modda qoladi?",
+      "v": [
+        "H2SO4",
+        "Cu(OH)2",
+        "NaOH",
+        "CuCl2"
+      ],
+      "t": 0,
+      "izoh": "CuSO4 eritmasi elektrolizida katodda Cu, anodda O2 ajraladi, eritmada 2H+ + SO4(2–), ya'ni H2SO4 qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m19-elektroliz#b37b8576"
+    },
+    {
+      "q": "Elektrolizda elektrodlarda ajralib chiqqan moddalarning massasini aniqlash uchun qaysi qonunlardan foydalaniladi?",
+      "v": [
+        "Faradey qonunlaridan",
+        "Beketov qonunlaridan",
+        "Mendeleyev qonunidan",
+        "Avogadro qonunidan"
+      ],
+      "t": 0,
+      "izoh": "Elektrolizda ajralgan modda massasini aniqlash uchun Faradey qonunlaridan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#0644fd1d"
+    },
+    {
+      "q": "Faradey qonuni formulasida m nimani bildiradi?",
+      "v": [
+        "Elektrolizda ajralgan modda massasini",
+        "Tok kuchini",
+        "Elektrodlar orasidagi masofani",
+        "Eritma hajmini"
+      ],
+      "t": 0,
+      "izoh": "m — elektrolizda ajralgan modda massasi; E — modda ekvivalenti; I — tok kuchi; t — vaqt; F — Faradey soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#fd456df6"
+    },
+    {
+      "q": "Vaqt sekundda ifodalanganda Faradey soni qanchaga teng?",
+      "v": [
+        "F = 96500",
+        "F = 1608,33",
+        "F = 26,8",
+        "F = 6,02"
+      ],
+      "t": 0,
+      "izoh": "t sekundda F = 96500; minutda F = 1608,33; soatda F = 26,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m19-elektroliz#1be4b6f3"
+    },
+    {
+      "q": "Vaqt soatda ifodalanganda Faradey soni qanchaga teng?",
+      "v": [
+        "F = 26,8",
+        "F = 96500",
+        "F = 1608,33",
+        "F = 22,4"
+      ],
+      "t": 0,
+      "izoh": "t soatda F = 26,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m19-elektroliz#51836d0f"
+    },
+    {
+      "q": "Natriy gidroksid eritmasi inert elektrodlarda elektroliz qilinganda katodda 11,2 l vodorod ajralganda anodda qancha kislorod hosil bo'ladi?",
+      "v": [
+        "5,6 l",
+        "11,2 l",
+        "22,4 l",
+        "2,8 l"
+      ],
+      "t": 0,
+      "izoh": "2 l H2 ga 1 l O2 to'g'ri keladi; 11,2 l H2 ga 11,2/2 = 5,6 l O2 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m19-elektroliz#b1f7e6fc"
+    },
+    {
+      "q": "NaF tuzi eritmasi elektroliz qilinganda eritmadagi tuz konsentratsiyasi qanday o'zgaradi?",
+      "v": [
+        "Suv elektrolizga uchraydi, suv kamayadi — tuz konsentratsiyasi ortadi",
+        "Tuz miqdori kamayadi — konsentratsiya pasayadi",
+        "Konsentratsiya o'zgarmaydi",
+        "Tuz to'liq parchalanib yo'qoladi"
+      ],
+      "t": 0,
+      "izoh": "NaF eritmasi elektrolizida suv elektrolizga uchraydi, eritmada suv kamayib, NaF konsentratsiyasi ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m19-elektroliz#c5944bda"
+    },
+    {
+      "q": "Nikellash, xromlash, oltin qoplash buyumlarga qanday foyda beradi?",
+      "v": [
+        "Nafaqat chiroyli ko'rinish, balki kimyoviy yemirilishdan (korroziyadan) ham saqlaydi",
+        "Faqat og'irlik qo'shadi",
+        "Faqat elektr o'tkazuvchanlikni yo'qotadi",
+        "Faqat rang beradi"
+      ],
+      "t": 0,
+      "izoh": "Nikel, xrom, oltin qoplama buyumlarga chiroyli ko'rinish berib, ularni korroziyadan ham saqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#c48b872b"
+    },
+    {
+      "q": "Elektrolizda katod elektrning qanday qutbi hisoblanadi?",
+      "v": [
+        "Manfiy qutbi bo'lib, musbat zaryadlangan ionlarni o'ziga tortadi",
+        "Musbat qutbi bo'lib, manfiy ionlarni tortadi",
+        "Neytral qutb",
+        "Hech qanday qutb emas"
+      ],
+      "t": 0,
+      "izoh": "Katod elektrning manfiy qutbi bo'lib, musbat zaryadlangan metall ioniga elektron beradi (qaytarilish).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#463612c0"
+    },
+    {
+      "q": "Elektroliz jarayonida erimaydigan (inert) anod sifatida qaysi materiallardan foydalaniladi?",
+      "v": [
+        "Inert materiallarning plastinkasidan yoki grafitdan",
+        "Mis, nikel, kumushdan",
+        "Natriy va kaliydan",
+        "Faqat temirdan"
+      ],
+      "t": 0,
+      "izoh": "Elektrolizda erimaydigan anod sifatida inert materiallar plastinkasi yoki grafit ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m19-elektroliz#79d65594"
+    }
+  ]
+}

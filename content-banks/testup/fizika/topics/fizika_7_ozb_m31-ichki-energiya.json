@@ -1,0 +1,456 @@
+{
+  "nom": "31-mavzu. Ichki Energiya",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Jismning ichki energiyasi nima?",
+      "v": [
+        "Jismni tashkil qilgan barcha zarralarning kinetik va potensial energiyalari yig'indisi",
+        "Jismning faqat kinetik energiyasi",
+        "Jismning faqat potensial energiyasi",
+        "Jismning tashqi mexanik energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Ichki energiya ta'rifi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#086749e1"
+    },
+    {
+      "q": "Ichki energiya qanday harf bilan belgilanadi?",
+      "v": [
+        "U",
+        "E",
+        "Q",
+        "W"
+      ],
+      "t": 0,
+      "izoh": "U harfi bilan belgilanadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m31-ichki-energiya#9fb28832"
+    },
+    {
+      "q": "Ichki energiya atamasi inglizchada qanday deyiladi?",
+      "v": [
+        "internal energy",
+        "kinetic energy",
+        "potential energy",
+        "thermal energy"
+      ],
+      "t": 0,
+      "izoh": "internal energy",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#129c7b60"
+    },
+    {
+      "q": "Jismni tashkil qilgan zarralar soni N ta bo'lsa, ichki energiya qanday hisoblanadi?",
+      "v": [
+        "U = N·Ek + N·Ep",
+        "U = Ek + Ep",
+        "U = m·c·t",
+        "U = m·g·h"
+      ],
+      "t": 0,
+      "izoh": "U = N·Ek + N·Ep formulasi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#1ae7845c"
+    },
+    {
+      "q": "Jism qizdirilganda uning ichki energiyasi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Zarralar kinetik energiyasi ortadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#9ff6a8dc"
+    },
+    {
+      "q": "Jism sovitilganda uning ichki energiyasi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Ikki baravar oshadi"
+      ],
+      "t": 0,
+      "izoh": "Zarralar kinetik energiyasi kamayadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#41ac27d9"
+    },
+    {
+      "q": "Jismning ichki energiyasini o'zgartirishning nechta usuli bor?",
+      "v": [
+        "Ikki",
+        "Bir",
+        "Uch",
+        "To'rt"
+      ],
+      "t": 0,
+      "izoh": "Ish bajarish va issiqlik uzatish",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#04f2c962"
+    },
+    {
+      "q": "Ichki energiyani o'zgartirishning birinchi usuli qaysi?",
+      "v": [
+        "Ish bajarish yo'li orqali",
+        "Issiqlik uzatish yo'li orqali",
+        "Nurlanish yo'li orqali",
+        "Elektr toki yo'li orqali"
+      ],
+      "t": 0,
+      "izoh": "Mexanik ish bajarish",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#cf97e69b"
+    },
+    {
+      "q": "Ichki energiyani o'zgartirishning ikkinchi usuli qaysi?",
+      "v": [
+        "Issiqlik uzatish yo'li orqali",
+        "Ish bajarish yo'li orqali",
+        "Nurlanish yo'li orqali",
+        "Magnit maydon yo'li orqali"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik uzatish",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#3925ac00"
+    },
+    {
+      "q": "Po'lat simni bir necha bor buklab-ochganda uning buklangan joyi qiziydi. Bu qanday hodisa?",
+      "v": [
+        "Jism ustida ish bajarish yo'li bilan ichki energiyaning ortishi",
+        "Issiqlik uzatish",
+        "Kondensatsiya",
+        "Sublimatsiya"
+      ],
+      "t": 0,
+      "izoh": "Ish bajarish orqali ichki energiya ortadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#863ed629"
+    },
+    {
+      "q": "Issiqlik uzatish deganda nimani tushunasiz?",
+      "v": [
+        "Ish bajarmasdan jism ichki energiyasining o'zgarish jarayonini",
+        "Jism ustida mexanik ish bajarish jarayonini",
+        "Moddaning erish jarayonini",
+        "Moddaning bug'lanish jarayonini"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik uzatish ta'rifi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#d8108ed6"
+    },
+    {
+      "q": "Xonani isitishda qaysi usuldan foydalaniladi?",
+      "v": [
+        "Issiqlik uzatishdan",
+        "Mexanik ish bajarishdan",
+        "Sublimatsiyadan",
+        "Kondensatsiyadan"
+      ],
+      "t": 0,
+      "izoh": "Xonani isitishda issiqlik uzatish",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#676ca795"
+    },
+    {
+      "q": "Ipga osilgan qo'rg'oshin shar qanday energiyaga ega?",
+      "v": [
+        "Potensial energiyaga",
+        "Faqat kinetik energiyaga",
+        "Ichki energiyaga",
+        "Hech qanday energiyaga ega emas"
+      ],
+      "t": 0,
+      "izoh": "Balandlikda turgan shar potensial energiyaga ega",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#125c80f7"
+    },
+    {
+      "q": "Ip uzilib, shar pastga tushayotganda uning potensial energiyasi qanday o'zgaradi?",
+      "v": [
+        "Kamayib boradi",
+        "Ortib boradi",
+        "O'zgarmaydi",
+        "Nolga teng bo'lib qoladi"
+      ],
+      "t": 0,
+      "izoh": "Balandlik kamayadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#944d8698"
+    },
+    {
+      "q": "Shar pastga tushayotganda uning kinetik energiyasi qanday o'zgaradi?",
+      "v": [
+        "Ortib boradi",
+        "Kamayib boradi",
+        "O'zgarmaydi",
+        "Nol bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Tezlik ortadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#dd1339d5"
+    },
+    {
+      "q": "Shar yerga urilib to'xtaganda uning mexanik energiyasi qanday bo'ladi?",
+      "v": [
+        "Nolga teng bo'ladi",
+        "Maksimal bo'ladi",
+        "O'zgarmaydi",
+        "Salbiy bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Kinetik ham, potensial ham nol",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#32dfaca6"
+    },
+    {
+      "q": "Yerga urilgan shar qizigani nimani ko'rsatadi?",
+      "v": [
+        "Mexanik energiya ichki energiyaga aylanganini",
+        "Energiya yo'qolganini",
+        "Shar soviganini",
+        "Shar kinetik energiya olganini"
+      ],
+      "t": 0,
+      "izoh": "Mexanik energiya ichki energiyaga aylanadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#a2226f2a"
+    },
+    {
+      "q": "Jismning mexanik energiyasi yo'qolganda nima bo'ladi?",
+      "v": [
+        "U bir turdan ikkinchi tur energiyaga — ichki energiyaga aylanadi",
+        "U butunlay yo'q bo'lib ketadi",
+        "U potensial energiyaga aylanadi",
+        "U kinetik energiyaga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Energiya saqlanish qonuni",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#91c13cb3"
+    },
+    {
+      "q": "Jismning ichki energiyasi nolga teng bo'lishi mumkinmi?",
+      "v": [
+        "Yo'q, nolga teng emas",
+        "Ha, har doim nol",
+        "Faqat muzlaganda nol",
+        "Faqat qaynaganda nol"
+      ],
+      "t": 0,
+      "izoh": "Zarralar doimiy harakatda",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#3eec19a1"
+    },
+    {
+      "q": "Molekulalar o'rtasida qanday kuchlar mavjud?",
+      "v": [
+        "Tortishish va itarish kuchlari",
+        "Faqat tortishish kuchi",
+        "Faqat itarish kuchi",
+        "Faqat gravitatsiya kuchi"
+      ],
+      "t": 0,
+      "izoh": "Molekulalararo kuchlar",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#1573d7ef"
+    },
+    {
+      "q": "Molekulalar to'xtovsiz harakatda bo'lgani sababli ular qanday energiyaga ega?",
+      "v": [
+        "Kinetik energiyaga",
+        "Potensial energiyaga",
+        "Elektr energiyasiga",
+        "Yorug'lik energiyasiga"
+      ],
+      "t": 0,
+      "izoh": "Harakat energiyasi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#04d9a592"
+    },
+    {
+      "q": "Molekulalarning o'zaro ta'sirlashuvi tufayli ular qanday energiyaga ega?",
+      "v": [
+        "Potensial energiyaga",
+        "Kinetik energiyaga",
+        "Issiqlik energiyasiga",
+        "Yadro energiyasiga"
+      ],
+      "t": 0,
+      "izoh": "O'zaro ta'sir energiyasi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#9d78fd63"
+    },
+    {
+      "q": "Jism temperaturasi o'zgarsa, uning ichki energiyasi...",
+      "v": [
+        "ham o'zgaradi",
+        "o'zgarmaydi",
+        "nolga teng bo'ladi",
+        "kamayib bormaydi"
+      ],
+      "t": 0,
+      "izoh": "Temperatura va ichki energiya bog'liq",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#2474ff58"
+    },
+    {
+      "q": "Issiq jism ustiga sovuq jism qo'yilsa, biroz o'tgach sovuq jism isiydi. Bunda nima sodir bo'ladi?",
+      "v": [
+        "Birinchi jism ikkinchi jismga issiqlik uzatadi",
+        "Ikkinchi jism birinchi jismga issiqlik uzatadi",
+        "Hech qanday energiya almashinuvi bo'lmaydi",
+        "Ikkalasi ham soviydi"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik uzatish jarayoni",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#0048290e"
+    },
+    {
+      "q": "Issiqlik uzatish jarayonida mexanik ish bajariladimi?",
+      "v": [
+        "Yo'q, bajarilmaydi",
+        "Ha, albatta bajariladi",
+        "Faqat ba'zida bajariladi",
+        "Faqat gazlarda bajariladi"
+      ],
+      "t": 0,
+      "izoh": "Ish bajarmasdan energiya uzatiladi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#26233e87"
+    },
+    {
+      "q": "Xona temperaturasida bir dona kislorod molekulasining kinetik energiyasi taxminan qancha?",
+      "v": [
+        "6,2·10⁻²¹ J",
+        "6,2·10²¹ J",
+        "2,7·10²⁵ J",
+        "167,4 kJ"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi qiymat",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#715835ae"
+    },
+    {
+      "q": "Normal atmosfera bosimida 1 m³ hajmda taxminan nechta kislorod molekulasi bo'ladi?",
+      "v": [
+        "2,7·10²⁵ ta",
+        "6,2·10²¹ ta",
+        "167,4 ta",
+        "1000 ta"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi qiymat",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#a155a03f"
+    },
+    {
+      "q": "1 m³ hajmdagi kislorod molekulalarining ichki energiyasi taxminan qancha (Ep=0)?",
+      "v": [
+        "167,4 kJ",
+        "16,74 J",
+        "1,674 kJ",
+        "1674 kJ"
+      ],
+      "t": 0,
+      "izoh": "U = N·Ek hisobi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m31-ichki-energiya#97d0b55c"
+    },
+    {
+      "q": "167,4 kJ energiya massasi 1000 kg jismning yer sirtidan qanday balandlikdagi potensial energiyasiga teng?",
+      "v": [
+        "17 m",
+        "170 m",
+        "1,7 m",
+        "10 m"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi misol",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#9344c19a"
+    },
+    {
+      "q": "Suv muzlaganda uning ichki energiyasi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Nolga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Soviganda ichki energiya kamayadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m31-ichki-energiya#8ee6583c"
+    }
+  ]
+}

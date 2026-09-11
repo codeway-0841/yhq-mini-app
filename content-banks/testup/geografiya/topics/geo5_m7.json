@@ -1,0 +1,411 @@
+{
+  "nom": "Geografiya-5, 7-§. Joy balandligi, 27-29-bet",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Yer yuzasidagi baland-past notekisliklar umumiy nom bilan qanday ataladi?",
+      "v": [
+        "Relyef",
+        "Gorizontal",
+        "Meridian",
+        "Azimut"
+      ],
+      "t": 0,
+      "izoh": "Yer yuzida baland togʻlar, baland-past qirlar, keng tekisliklar mavjud. Yer yuzidagi mana shunday notekisliklar relyef deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m7#44e85440"
+    },
+    {
+      "q": "Dengiz va okeanlar tagi qanday holatda?",
+      "v": [
+        "U yerlarda ham chuqur botiqlar, keng tekisliklar, hatto togʻlar bor, yaʼni u ham notekis",
+        "Dengiz va okeanlar tagi butunlay tekis",
+        "Dengiz va okeanlar tagida faqat qum bor",
+        "Dengiz va okeanlar tagi hech qachon oʻrganilmagan"
+      ],
+      "t": 0,
+      "izoh": "Dengiz va okeanlar tagi notekis — u yerlarda chuqur botiqlar, keng tekisliklar, hatto togʻlar bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#338d0f87"
+    },
+    {
+      "q": "Relyefni plan va xaritalarda tasvirlash uchun avvalo nima zarur boʻladi?",
+      "v": [
+        "Har bir joyning mutlaq va nisbiy balandligini oʻlchash",
+        "Har bir joyning haroratini oʻlchash",
+        "Har bir joyning aholi sonini bilish",
+        "Har bir joyning masshtabini belgilash"
+      ],
+      "t": 0,
+      "izoh": "Yer yuzasidagi notekisliklar (relyef)ni qogʻozda tasvirlash uchun, avvalo, har bir joyning mutlaq va nisbiy balandligini oʻlchash zarur boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#918e6b03"
+    },
+    {
+      "q": "Yer yuzasidagi mutlaq balandliklar nimadan hisoblanadi?",
+      "v": [
+        "Dengiz yuzasidagi suv (sathi)dan",
+        "Yer markazidan",
+        "Ekvatordan",
+        "Eng yaqin togʻ choʻqqisidan"
+      ],
+      "t": 0,
+      "izoh": "Suv yuzasi toʻlqin boʻlmagan vaqtda tekis turadi. Shuning uchun Yer yuzasidagi mutlaq balandliklar dengiz yuzasidagi suv (sathi)dan hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#5e434868"
+    },
+    {
+      "q": "Dengiz sathi balandligi odatda necha deb belgilanadi?",
+      "v": [
+        "0 (nol)",
+        "100 metr",
+        "1000 metr",
+        "-1 metr"
+      ],
+      "t": 0,
+      "izoh": "Odatda dengiz sathi balandligi 0 deb belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m7#4f16ce43"
+    },
+    {
+      "q": "Toshkent shahrining dengiz sathidan oʻrtacha balandligi qancha?",
+      "v": [
+        "400 metr",
+        "100 metr",
+        "4643 metr",
+        "40 metr"
+      ],
+      "t": 0,
+      "izoh": "Oʻzbekiston poytaxti — Toshkent shahrining dengiz sathidan oʻrtacha balandligi 400 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#6c3fd37f"
+    },
+    {
+      "q": "Oʻzbekistondagi eng baland togʻ qaysi va uning balandligi qancha?",
+      "v": [
+        "Hazrati Sulton togʻi, balandligi 4643 metr",
+        "Chimyon togʻi, balandligi 3300 metr",
+        "Zarafshon togʻi, balandligi 4000 metr",
+        "Nurota togʻi, balandligi 2000 metr"
+      ],
+      "t": 0,
+      "izoh": "Oʻzbekistondagi eng baland togʻ — Hazrati Sulton togʻining balandligi 4643 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#d04a00e1"
+    },
+    {
+      "q": "Balandliklar necha xil turga ajratiladi?",
+      "v": [
+        "Ikki xil: mutlaq va nisbiy balandliklar",
+        "Uch xil: mutlaq, nisbiy va oʻrtacha balandliklar",
+        "Bir xil balandlik",
+        "Toʻrt xil balandlik"
+      ],
+      "t": 0,
+      "izoh": "Har bir joyning bir-biridan balandligi turlicha boʻlgani uchun balandliklarni mutlaq va nisbiy balandliklar deb, ikki xil balandlikka ajratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#ea7976ab"
+    },
+    {
+      "q": "Nisbiy balandlik nima deb ataladi?",
+      "v": [
+        "Quruqlikdagi joylarning bir-biriga nisbatan tik balandligi",
+        "Yer yuzidagi joyning dengiz sathidan balandligi",
+        "Yer markazidan hisoblangan balandlik",
+        "Ekvatordan hisoblangan balandlik"
+      ],
+      "t": 0,
+      "izoh": "Quruqlikdagi joylarning bir-biriga nisbatan tik balandligi nisbiy balandlik deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m7#8af73de3"
+    },
+    {
+      "q": "Mutlaq balandlik nima deb ataladi?",
+      "v": [
+        "Yer yuzidagi har bir joyning dengiz sathidan balandligi",
+        "Quruqlikdagi joylarning bir-biriga nisbatan tik balandligi",
+        "Yer markazidan hisoblangan balandlik",
+        "Ikki tepalik orasidagi masofa"
+      ],
+      "t": 0,
+      "izoh": "Yer yuzidagi har bir joyning dengiz sathidan balandligi mutlaq balandlik deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m7#b43fd8f4"
+    },
+    {
+      "q": "Yer yuzasidagi balandliklar qanday asbob bilan oʻlchanadi?",
+      "v": [
+        "Nivelir",
+        "Kompas",
+        "Ruletka",
+        "Sirkul"
+      ],
+      "t": 0,
+      "izoh": "Yer yuzasidagi balandliklar nivelir asbobi bilan oʻlchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m7#13ddddb6"
+    },
+    {
+      "q": "Hozirgi vaqtda Yer yuzasidagi har bir joyning aniq balandligini nima yordamida oʻlchash mumkin?",
+      "v": [
+        "Yerning sunʼiy yoʻldoshlari yordamida",
+        "Qadimgi xaritalar yordamida",
+        "Teleskop yordamida",
+        "Kompas yordamida"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi vaqtda Yerning sunʼiy yoʻldoshlari yordamida Yer yuzasidagi har bir joyning aniq balandligini oʻlchash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#0420f6df"
+    },
+    {
+      "q": "Qoʻlbola nivelir yasash uchun qanday uzunlikdagi toʻgʻri tayoq olinadi?",
+      "v": [
+        "1 metr",
+        "50 santimetr",
+        "2 metr",
+        "20 santimetr"
+      ],
+      "t": 0,
+      "izoh": "Buning uchun uzunligi 1 metr boʻlgan toʻgʻri tayoq olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#de3bc50d"
+    },
+    {
+      "q": "Qoʻlbola nivelir tayogʻining uchiga qanday uzunlikdagi taxtacha qoqiladi?",
+      "v": [
+        "20 santimetr",
+        "1 metr",
+        "50 santimetr",
+        "10 santimetr"
+      ],
+      "t": 0,
+      "izoh": "Uning uchiga uzunligi 20 cm boʻlgan taxtacha qoqiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#832fdf74"
+    },
+    {
+      "q": "Nivelirning tik turganini bilish uchun unga nima osib qoʻyiladi?",
+      "v": [
+        "Shovun",
+        "Kompas",
+        "Sirkul",
+        "Termometr"
+      ],
+      "t": 0,
+      "izoh": "Nivelirning tik turganini bilish uchun unga shovun osib qoʻyiladi. Buning uchun taxtachaning oʻrtasiga kichik mix qoqib, shovun ipi unga bogʻlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#014a386c"
+    },
+    {
+      "q": "Tepalik balandligini oʻlchashda nivelir qayerga tik qilib oʻrnatiladi?",
+      "v": [
+        "Tepalik etagiga",
+        "Tepalikning uchiga",
+        "Tepalikdan bir kilometr uzoqlikka",
+        "Vodiy oʻrtasiga"
+      ],
+      "t": 0,
+      "izoh": "Tepalikning balandligini aniqlash uchun tepalik etagiga nivelirni shovun yordamida tik qilib oʻrnatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#1e14981d"
+    },
+    {
+      "q": "Tepalikning balandligi nima asosida aniqlanadi?",
+      "v": [
+        "Nivelir necha marta koʻchirilgani asosida",
+        "Koʻz bilan taxminlash asosida",
+        "Vaqt hisobi asosida",
+        "Masshtab asosida"
+      ],
+      "t": 0,
+      "izoh": "Nivelir necha marta koʻchirilgan boʻlsa, shu asosda tepalikning balandligi aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#d2de7a99"
+    },
+    {
+      "q": "Bizning mamlakatimizda qaysi shahardagi belgi «0» balandlik deb qabul qilingan?",
+      "v": [
+        "Boltiq dengizidagi orolda joylashgan Kronshtadt shahridagi «futshtok» belgisi",
+        "Toshkentdagi maxsus belgi",
+        "Qora dengizdagi Odessa shahridagi belgi",
+        "Kaspiy dengizidagi Boku shahridagi belgi"
+      ],
+      "t": 0,
+      "izoh": "Bizning mamlakatimizda Boltiq dengizidagi orolda joylashgan Kronshtadt shahrida oʻrnatilgan belgi («futshtok») «0» balandlik deb qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo5_m7#b326669f"
+    },
+    {
+      "q": "Dengiz sathidan past joylarning balandligi qanday belgi bilan yoziladi?",
+      "v": [
+        "Manfiy (—) belgi bilan",
+        "Musbat (+) belgi bilan",
+        "Yulduzcha (*) belgi bilan",
+        "Hech qanday belgisiz"
+      ],
+      "t": 0,
+      "izoh": "Agar quruqlikda dengiz sathidan ham past joylar boʻlsa, ular balandligi raqami oldiga manfiy (—) belgi qoʻyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#840a495b"
+    },
+    {
+      "q": "Mingbuloq botigʻining dengiz sathidan balandligi qancha?",
+      "v": [
+        "-12 metr",
+        "+12 metr",
+        "-120 metr",
+        "0 metr"
+      ],
+      "t": 0,
+      "izoh": "Masalan, Qizilqum choʻlidagi Mingbuloq botigʻining dengiz sathidan balandligi -12 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#7b3cda06"
+    },
+    {
+      "q": "Mingbuloq botigʻi qaysi choʻlda joylashgan?",
+      "v": [
+        "Qizilqum choʻlida",
+        "Qoraqum choʻlida",
+        "Ustyurt choʻlida",
+        "Kichik choʻlda"
+      ],
+      "t": 0,
+      "izoh": "Qizilqum choʻlidagi Mingbuloq botigʻining dengiz sathidan balandligi -12 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#27f472ec"
+    },
+    {
+      "q": "Joy planlarida relyef qanday chiziqlar yordamida tasvirlanadi?",
+      "v": [
+        "Gorizontallar",
+        "Meridianlar",
+        "Parallellar",
+        "Azimutlar"
+      ],
+      "t": 0,
+      "izoh": "Relyef joy planlarida va xaritalarda gorizontallar bilan tasvirlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m7#c7edc88c"
+    },
+    {
+      "q": "Gorizontallar nima deb ataladi?",
+      "v": [
+        "Quruqlik yuzasidagi mutlaq balandligi bir xil boʻlgan nuqtalarni xaritalarda tutashtiruvchi chiziqlar",
+        "Ekvatordan oʻtkazilgan chiziqlar",
+        "Qutblarni tutashtiruvchi chiziqlar",
+        "Azimut koʻrsatuvchi chiziqlar"
+      ],
+      "t": 0,
+      "izoh": "Gorizontallar deb quruqlik yuzasidagi mutlaq balandligi bir xil boʻlgan nuqtalarni xaritalarda tutashtiruvchi chiziqlarga aytiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#be3b944a"
+    },
+    {
+      "q": "Gorizontallarda qiya tomonni koʻrsatuvchi chiziqcha nima deb ataladi?",
+      "v": [
+        "Bergshtrix",
+        "Meridian",
+        "Azimut",
+        "Nivelir"
+      ],
+      "t": 0,
+      "izoh": "Yer yuzasi qaysi tomonga qiya boʻlsa, gorizontallarga qiya tomonni koʻrsatuvchi chiziqcha qoʻyiladi. Bu chiziqcha bergshtrix deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#760edfb3"
+    },
+    {
+      "q": "Bergshtrixga qarab nimalarni ajratib olish mumkin?",
+      "v": [
+        "Chuqur va tepalarni, qiyaliklarni",
+        "Davlat chegaralarini",
+        "Yoʻl turlarini",
+        "Aholi zichligini"
+      ],
+      "t": 0,
+      "izoh": "Bergshtrixga qarab chuqur va tepalar, qiyaliklar ajratib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#62ba4fb3"
+    },
+    {
+      "q": "Juda tik yonbagʻirlar planda qanday tasvirlanadi?",
+      "v": [
+        "Mayda tishlarga oʻxshagan chiziqlar bilan",
+        "Yaxlit qora rang bilan",
+        "Punktir chiziqlar bilan",
+        "Qalin gorizontal chiziqlar bilan"
+      ],
+      "t": 0,
+      "izoh": "Yonbagʻirlar juda tik boʻlsa, planda mayda tishlarga oʻxshagan chiziqlar bilan koʻrsatiladi. Jarlar ham shunday chiziqlar bilan tasvirlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#c9f87e6b"
+    },
+    {
+      "q": "7-§ oxiridagi tayanch soʻz va tushunchalar qatorida qanday atamalar keltirilgan?",
+      "v": [
+        "Shovun, Nisbiy balandlik, Nivelir, Mutlaq balandlik, Botiq, Tepalik",
+        "Kompas, ufq, azimut, Metr, Ruletka",
+        "Globus, Ekvator, Parallel, Meridian",
+        "Masshtab, Nomli masshtab, Sonli masshtab"
+      ],
+      "t": 0,
+      "izoh": "7-§ oxiridagi tayanch soʻz va tushunchalar: Shovun, Nisbiy balandlik, Nivelir, Mutlaq balandlik, Botiq, Tepalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m7#d2a81c67"
+    }
+  ]
+}

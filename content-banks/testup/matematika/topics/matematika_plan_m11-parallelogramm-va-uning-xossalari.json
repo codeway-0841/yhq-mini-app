@@ -1,0 +1,1609 @@
+{
+  "nom": "Parallelogramm va uning xossalari",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Nodira hovlidagi gulzorni parallelogramm shaklida chizdi va uning A uchidagi burchagini 68° qilib oldi. Shu gulzorning C uchidagi burchagi necha gradusga teng?",
+      "v": [
+        "68°",
+        "112°",
+        "34°",
+        "22°"
+      ],
+      "t": 0,
+      "izoh": "Parallelogrammda qarama-qarshi burchaklar o'zaro teng bo'ladi. A va C uchlari qarama-qarshi yotgani uchun ∠C = ∠A = 68°. Qo'shni burchak bilan chalkashtirilsa 112° chiqib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,178.4 224.8,178.4 268,71.6 95.2,71.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 76 178.4 A 24 24 0 0 0 61 156.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='84.3' y='160.6' font-size='13' fill='%23334155' text-anchor='middle'%3E68°%3C/text%3E%3Ctext x='45' y='195.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='231.8' y='195.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='65.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='88.2' y='65.6' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#139dd2a3"
+    },
+    {
+      "q": "Parallelogramm shaklidagi derazacha oynasining bir burchagi 115° ga teng. Shu burchakka qarama-qarshi yotgan burchak necha gradus bo'ladi?",
+      "v": [
+        "25°",
+        "115°",
+        "65°",
+        "57,5°"
+      ],
+      "t": 1,
+      "izoh": "Parallelogrammning qarama-qarshi burchaklari teng. Demak izlanayotgan burchak ham 115°. Qo'shni burchak 180° − 115° = 65° bo'ladi, lekin savolda qarama-qarshisi so'ralgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,175.9 220.5,175.9 268,74.1 99.5,74.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 196.5 175.9 A 24 24 0 0 1 230.6 154.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='199' y='146' font-size='13' fill='%23334155' text-anchor='middle'%3E115°%3C/text%3E%3Ctext x='45' y='192.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='227.5' y='192.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='68.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='92.5' y='68.1' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#4c7bf07f"
+    },
+    {
+      "q": "ABCD parallelogrammda ∠B burchak ∠A burchakdan 3 marta katta. Shu parallelogrammning ∠D burchagi necha gradusga teng?",
+      "v": [
+        "90°",
+        "60°",
+        "135°",
+        "45°"
+      ],
+      "t": 2,
+      "izoh": "∠A va ∠B qo'shni burchaklar, ularning yig'indisi 180°. x + 3x = 180 dan x = 45°, ya'ni ∠B = 135°. ∠D burchak ∠B ga qarama-qarshi, shuning uchun ∠D = 135°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,159.6 198.8,159.6 268,90.4 121.2,90.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 76 159.6 A 24 24 0 0 0 69 142.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='88' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3E∠A%3C/text%3E%3Cpath d='M 215.8 142.6 A 24 24 0 0 0 174.8 159.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='183.9' y='127.6' font-size='13' fill='%23334155' text-anchor='middle'%3E∠B%3C/text%3E%3Ctext x='45' y='176.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='205.8' y='176.6' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='84.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='114.2' y='84.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarama-qarshi-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#048f2486"
+    },
+    {
+      "q": "Usta parallelogramm shaklidagi ramka yasadi. Ramkaning ikkita qarama-qarshi burchagi yig'indisi 130° ni tashkil qiladi. Ramkaning qolgan burchaklaridan biri necha gradus?",
+      "v": [
+        "65°",
+        "50°",
+        "130°",
+        "115°"
+      ],
+      "t": 3,
+      "izoh": "Qarama-qarshi burchaklar teng bo'lgani uchun har biri 130° : 2 = 65°. Qolgan burchak shunga qo'shni, ya'ni 180° − 65° = 115°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,175.9 220.5,175.9 268,74.1 99.5,74.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='45' y='192.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='227.5' y='192.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='68.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='92.5' y='68.1' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarama-qarshi-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#4c2be195"
+    },
+    {
+      "q": "Farhod yo'lakka parallelogramm shaklidagi plitkalarni yotqizmoqda. Har bir plitkaning o'tkir burchagi 52° ga teng. Shu plitkaning o'tmas burchagi necha gradus?",
+      "v": [
+        "128°",
+        "52°",
+        "38°",
+        "148°"
+      ],
+      "t": 0,
+      "izoh": "Parallelogrammning bir tomoniga tegishli ikki burchak qo'shni bo'lib, yig'indisi 180°. Demak o'tmas burchak 180° − 52° = 128°. To'ldiruvchi burchak deb 90° − 52° = 38° olinsa xato bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,162.3 209.7,162.3 268,87.7 110.3,87.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 76 162.3 A 24 24 0 0 0 66.8 143.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='87.1' y='149.2' font-size='13' fill='%23334155' text-anchor='middle'%3E52°%3C/text%3E%3Ctext x='45' y='179.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='216.7' y='179.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='81.7' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='103.3' y='81.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshni-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#637de0b4"
+    },
+    {
+      "q": "Parallelogrammning bir tomoniga tegishli ikki burchagi 2 : 7 nisbatda berilgan. Shu burchaklardan kattasi necha gradusga teng?",
+      "v": [
+        "70°",
+        "140°",
+        "40°",
+        "126°"
+      ],
+      "t": 1,
+      "izoh": "Qo'shni burchaklar yig'indisi 180°, ularni 2x va 7x deb olamiz. 2x + 7x = 180 dan 9x = 180, x = 20°. Katta burchak 7 · 20° = 140° bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,153.5 200,153.5 268,96.5 120,96.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='45' y='170.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='207' y='170.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='90.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113' y='90.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshni-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#6a219e75"
+    },
+    {
+      "q": "Devorga osilgan parallelogramm shaklidagi bezakning bir burchagi o'ziga qo'shni burchakdan 36° kichik. Bezakning kichik burchagi necha gradus?",
+      "v": [
+        "36°",
+        "144°",
+        "72°",
+        "108°"
+      ],
+      "t": 2,
+      "izoh": "Kichik burchakni x deb olsak, qo'shnisi x + 36° bo'ladi va ular 180° ni beradi. x + x + 36 = 180 dan 2x = 144, ya'ni x = 72°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,177 234.2,177 268,73 85.8,73' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='45' y='194' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='241.2' y='194' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='67' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='78.8' y='67' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshni-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#578f5b34"
+    },
+    {
+      "q": "Parallelogrammning o'tmas burchagi uchidan ikki tomonga tushirilgan balandliklar orasidagi burchak 50° ga teng. Shu parallelogrammning o'tmas burchagi necha gradus?",
+      "v": [
+        "50°",
+        "40°",
+        "65°",
+        "130°"
+      ],
+      "t": 3,
+      "izoh": "Balandliklar va ikki tomon to'rtburchak hosil qiladi; undagi ikki burchak 90° bo'lgani uchun qolgan ikkitasining yig'indisi 180°. Demak balandliklar orasidagi burchak parallelogrammning o'tkir burchagiga teng, ya'ni o'tkir burchak 50°. U holda o'tmas burchak 180° − 50° = 130°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshni-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#962b5795"
+    },
+    {
+      "q": "Karim parallelogramm shaklidagi to'shama chetiga hoshiya tikmoqchi. To'shamaning qo'shni tomonlari 45 sm va 30 sm. Hoshiya uchun necha santimetr lenta kerak bo'ladi?",
+      "v": [
+        "150 sm",
+        "75 sm",
+        "90 sm",
+        "1350 sm"
+      ],
+      "t": 0,
+      "izoh": "Parallelogrammning qarama-qarshi tomonlari teng, shuning uchun perimetr P = 2 · (45 + 30) = 2 · 75 = 150 sm. Faqat ikki tomonni qo'shib 75 sm deyish yarim perimetrni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,173.4 216.5,173.4 268,76.6 103.5,76.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='45' y='190.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='223.5' y='190.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='70.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='96.5' y='70.6' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='134.3' y='191.4' font-size='13' fill='%23334155' text-anchor='middle'%3E45 sm%3C/text%3E%3Ctext x='68.8' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E30 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perimetr-tomon",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#d5cbbe5b"
+    },
+    {
+      "q": "Parallelogrammning perimetri 84 sm ga, tomonlaridan biri esa 25 sm ga teng. Shu tomonga qo'shni tomon necha santimetr?",
+      "v": [
+        "34 sm",
+        "17 sm",
+        "59 sm",
+        "21 sm"
+      ],
+      "t": 1,
+      "izoh": "Yarim perimetr ikki qo'shni tomon yig'indisiga teng: 84 : 2 = 42 sm. Demak qo'shni tomon 42 − 25 = 17 sm. Perimetrdan to'g'ridan-to'g'ri ayirsak 59 sm chiqadi, bu xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,172.5 213.2,172.5 268,77.5 106.8,77.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='45' y='189.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='220.2' y='189.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='71.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='99.8' y='71.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='132.6' y='190.5' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Ctext x='70.4' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perimetr-tomon",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#a6065f86"
+    },
+    {
+      "q": "Bog'bon parallelogramm shaklidagi ekin maydonini 96 m simto'r bilan o'radi. Maydonning uzun tomoni qisqa tomonidan 8 m ortiq. Uzun tomon necha metrga teng?",
+      "v": [
+        "24 m",
+        "32 m",
+        "28 m",
+        "20 m"
+      ],
+      "t": 2,
+      "izoh": "Qisqa tomon x bo'lsa, uzuni x + 8. Perimetr 2 · (x + x + 8) = 96, ya'ni 2x + 8 = 48. Bundan x = 20 m, uzun tomon esa 20 + 8 = 28 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,174.2 211.2,174.2 268,75.8 108.8,75.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='45' y='191.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='218.2' y='191.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='69.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='101.8' y='69.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='131.6' y='192.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='71.4' y='129' font-size='13' fill='%23334155' text-anchor='end'%3Ex%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-tomon",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#59c4ae65"
+    },
+    {
+      "q": "Parallelogrammning perimetri 66 sm, qo'shni tomonlari esa 4 : 7 nisbatda. Shu parallelogrammning kichik tomoni necha santimetr?",
+      "v": [
+        "21 sm",
+        "24 sm",
+        "6 sm",
+        "12 sm"
+      ],
+      "t": 3,
+      "izoh": "Tomonlarni 4k va 7k deb olamiz: 2 · (4k + 7k) = 66, ya'ni 22k = 66 va k = 3. Kichik tomon 4 · 3 = 12 sm. Ikkilashni unutib 66 : 11 · 4 = 24 sm deyish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,165.2 217.8,165.2 268,84.8 102.2,84.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='45' y='182.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='224.8' y='182.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='78.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='95.2' y='78.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-tomon",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#aaad7fe4"
+    },
+    {
+      "q": "ABCD parallelogrammning diagonallari O nuqtada kesishadi. AC diagonal 26 sm bo'lsa, AO kesmaning uzunligi necha santimetr?",
+      "v": [
+        "13 sm",
+        "26 sm",
+        "52 sm",
+        "6,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Parallelogrammning diagonallari kesishish nuqtasida teng ikkiga bo'linadi. Demak AO = AC : 2 = 26 : 2 = 13 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,172.5 217.5,172.5 268,77.5 102.5,77.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='172.5' x2='268' y2='77.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='217.5' y1='172.5' x2='102.5' y2='77.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160' cy='125' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='166' y='141' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='45' y='189.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='224.5' y='189.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='71.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='95.5' y='71.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='170' y='117' font-size='13' fill='%23334155' text-anchor='start'%3E26 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diagonal-kesishish",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#e03755cb"
+    },
+    {
+      "q": "Yog'och panjara parallelogramm shaklida yasalgan bo'lib, uning ikki diagonali markazda kesishadi. Bir diagonalning yarmi 18 sm bo'lsa, shu diagonalning to'liq uzunligi necha santimetr?",
+      "v": [
+        "72 sm",
+        "36 sm",
+        "18 sm",
+        "9 sm"
+      ],
+      "t": 1,
+      "izoh": "Kesishish nuqtasi har bir diagonalni teng ikkiga bo'ladi, ya'ni yarmi 18 sm bo'lsa to'liq diagonal 2 · 18 = 36 sm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,168.2 218.2,168.2 268,81.8 101.8,81.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='168.2' x2='268' y2='81.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='218.2' y1='168.2' x2='101.8' y2='81.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160' cy='125' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='166' y='141' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='45' y='185.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='225.2' y='185.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='75.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='94.8' y='75.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diagonal-kesishish",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#3fdbd363"
+    },
+    {
+      "q": "ABCD parallelogrammda diagonallar O nuqtada kesishadi va BO = 3x − 4, OD = x + 10 ekani ma'lum. BD diagonalning uzunligi necha santimetrga teng?",
+      "v": [
+        "7 sm",
+        "24 sm",
+        "34 sm",
+        "17 sm"
+      ],
+      "t": 2,
+      "izoh": "Diagonal kesishish nuqtasida teng ikkiga bo'lingani uchun BO = OD: 3x − 4 = x + 10, bundan 2x = 14 va x = 7. U holda BO = 17 sm, BD = 2 · 17 = 34 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,168.2 218.2,168.2 268,81.8 101.8,81.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='168.2' x2='268' y2='81.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='218.2' y1='168.2' x2='101.8' y2='81.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160' cy='125' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='166' y='141' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='45' y='185.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='225.2' y='185.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='75.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='94.8' y='75.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='117' font-size='13' fill='%23334155' text-anchor='end'%3EBD = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-kesishish",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#2e128f42"
+    },
+    {
+      "q": "ABCD parallelogrammning diagonallari O nuqtada kesishadi: AO = 9 sm, BO = 12 sm, AB = 15 sm. Shu parallelogrammning yuzi necha kvadrat santimetr?",
+      "v": [
+        "432 sm²",
+        "108 sm²",
+        "180 sm²",
+        "216 sm²"
+      ],
+      "t": 3,
+      "izoh": "9² + 12² = 81 + 144 = 225 = 15², demak AOB uchburchak to'g'ri burchakli va diagonallar o'zaro perpendikulyar. U holda AC = 18 sm, BD = 24 sm va yuza S = (18 · 24) : 2 = 216 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='95.2,125 160,211.4 224.8,125 160,38.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='95.2' y1='125' x2='224.8' y2='125' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='160' y1='211.4' x2='160' y2='38.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160' cy='125' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='166' y='118' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='88' y='129' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='160' y='230' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='232' y='129' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='160' y='32' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='130' y='117' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='164' y='146' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='112' y='188' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-kesishish",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#115b2a82"
+    },
+    {
+      "q": "Parallelogrammning qo'shni tomonlari 5 sm va 7 sm ga teng. Shu parallelogramm diagonallari kvadratlarining yig'indisi nechaga teng?",
+      "v": [
+        "148 sm²",
+        "74 sm²",
+        "144 sm²",
+        "296 sm²"
+      ],
+      "t": 0,
+      "izoh": "Parallelogramm uchun d₁² + d₂² = 2 · (a² + b²) tengligi o'rinli. Bu yerda 2 · (25 + 49) = 2 · 74 = 148 sm². Ikkilashni unutgan o'quvchi 74 ni tanlaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,176 213.8,176 268,74 106.2,74' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='176' x2='268' y2='74' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='213.8' y1='176' x2='106.2' y2='74' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45' y='193' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='220.8' y='193' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='68' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='99.2' y='68' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='132.9' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='70.1' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diagonal-kvadratlari",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#c16ffd29"
+    },
+    {
+      "q": "Usta parallelogramm shaklidagi eshik ramkasini yasadi; uning qo'shni tomonlari 60 sm va 80 sm. Ramka diagonallari kvadratlarining yig'indisi necha kvadrat santimetr?",
+      "v": [
+        "40 000 sm²",
+        "20 000 sm²",
+        "10 000 sm²",
+        "14 000 sm²"
+      ],
+      "t": 1,
+      "izoh": "d₁² + d₂² = 2 · (a² + b²) formulasiga qo'yamiz: 2 · (60² + 80²) = 2 · (3600 + 6400) = 2 · 10 000 = 20 000 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,177.9 211.8,177.9 268,72.1 108.2,72.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='177.9' x2='268' y2='72.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='211.8' y1='177.9' x2='108.2' y2='72.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45' y='194.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='218.8' y='194.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='66.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='101.2' y='66.1' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='131.9' y='195.9' font-size='13' fill='%23334155' text-anchor='middle'%3E80 sm%3C/text%3E%3Ctext x='71.1' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E60 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diagonal-kvadratlari",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#06ae2539"
+    },
+    {
+      "q": "Parallelogrammning tomonlari 7 sm va 9 sm, kichik diagonali esa 8 sm ga teng. Uning katta diagonali necha santimetr?",
+      "v": [
+        "196 sm",
+        "16 sm",
+        "14 sm",
+        "√66 sm"
+      ],
+      "t": 2,
+      "izoh": "d₁² + d₂² = 2 · (49 + 81) = 260. Demak d₂² = 260 − 8² = 260 − 64 = 196 va d₂ = √196 = 14 sm. Ikkilash koeffitsientini tushirib qoldirsa √66 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,177.4 207.5,177.4 268,72.6 112.5,72.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='177.4' x2='268' y2='72.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='207.5' y1='177.4' x2='112.5' y2='72.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45' y='194.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='214.5' y='194.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='66.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='105.5' y='66.6' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='129.8' y='195.4' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='73.3' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-kvadratlari",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#aa20d0c7"
+    },
+    {
+      "q": "Sport zalida parallelogramm shaklidagi bayroq tikilmoqda. Bayroq diagonallari 90 sm va 130 sm, bir tomoni esa 50 sm. Uning ikkinchi tomoni necha santimetr?",
+      "v": [
+        "150 sm",
+        "130 sm",
+        "50 sm",
+        "100 sm"
+      ],
+      "t": 3,
+      "izoh": "d₁² + d₂² = 8100 + 16900 = 25000, shuning uchun a² + b² = 25000 : 2 = 12500. Bundan b² = 12500 − 2500 = 10000 va b = 100 sm. Ikkiga bo'lishni unutgan o'quvchi √22500 = 150 ni oladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,164.2 228,164.2 268,85.8 92,85.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='164.2' x2='268' y2='85.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='228' y1='164.2' x2='92' y2='85.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45' y='181.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='235' y='181.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='79.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='85' y='79.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-kvadratlari",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#985f654f"
+    },
+    {
+      "q": "Parallelogrammning perimetri 34 sm, diagonallari kvadratlarining yig'indisi esa 290 sm². Shu parallelogrammning katta tomoni necha santimetr?",
+      "v": [
+        "9 sm",
+        "8 sm",
+        "17 sm",
+        "12 sm"
+      ],
+      "t": 0,
+      "izoh": "a + b = 34 : 2 = 17 va 2 · (a² + b²) = 290 dan a² + b² = 145. (a + b)² = 289 bo'lgani uchun 2ab = 289 − 145 = 144, ya'ni ab = 72. a va b — t² − 17t + 72 = 0 tenglama ildizlari: 8 va 9. Katta tomon 9 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-kvadratlari",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#a384c25b"
+    },
+    {
+      "q": "Dehqon parallelogramm shaklidagi maydonga bug'doy ekmoqchi. Maydonning asosi 24 m, shu asosga tushirilgan balandligi esa 15 m. Maydonning yuzi necha kvadrat metr?",
+      "v": [
+        "78 m²",
+        "360 m²",
+        "180 m²",
+        "720 m²"
+      ],
+      "t": 1,
+      "izoh": "Parallelogramm yuzi asos bilan unga tushirilgan balandlik ko'paytmasiga teng: S = 24 · 15 = 360 m². Uchburchak formulasidagidek ikkiga bo'lish shart emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,175.7 214.1,175.7 268,74.3 105.9,74.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='105.9' y1='74.3' x2='105.9' y2='175.7' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='93.9,175.7 93.9,163.7 105.9,163.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='97.9' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E15 m%3C/text%3E%3Ctext x='45' y='192.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='221.1' y='192.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='68.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='98.9' y='68.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='133.1' y='193.7' font-size='13' fill='%23334155' text-anchor='middle'%3E24 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-asos-balandlik",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#35b20df3"
+    },
+    {
+      "q": "Parallelogrammning yuzi 96 sm², bir tomoniga tushirilgan balandligi esa 8 sm. Shu tomonning uzunligi necha santimetr?",
+      "v": [
+        "6 sm",
+        "88 sm",
+        "12 sm",
+        "24 sm"
+      ],
+      "t": 2,
+      "izoh": "S = a · h formulasidan a = S : h = 96 : 8 = 12 sm. Uchburchak formulasini qo'llab 2 · 96 : 8 = 24 deyish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,178.8 213.1,178.8 268,71.2 106.9,71.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='106.9' y1='71.2' x2='106.9' y2='178.8' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='94.9,178.8 94.9,166.8 106.9,166.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='98.9' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='45' y='195.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='220.1' y='195.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='65.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='99.9' y='65.2' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='132.6' y='196.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-asos-balandlik",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#ed1377bb"
+    },
+    {
+      "q": "Do'kon peshtaxtasidagi parallelogramm shaklidagi reklama taxtasining yuzi 2,4 m², uzun tomoni esa 2 m. Shu tomonga tushirilgan balandlik necha santimetr?",
+      "v": [
+        "12 sm",
+        "1,2 sm",
+        "480 sm",
+        "120 sm"
+      ],
+      "t": 3,
+      "izoh": "Avval balandlikni metrda topamiz: h = 2,4 : 2 = 1,2 m. Endi santimetrga o'tkazamiz: 1,2 m = 120 sm. Birlikni aylantirmaslik eng ko'p uchraydigan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,173.5 212,173.5 268,76.5 108,76.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='108' y1='76.5' x2='108' y2='173.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='96,173.5 96,161.5 108,161.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='100' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='45' y='190.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='219' y='190.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='70.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='101' y='70.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='132' y='191.5' font-size='13' fill='%23334155' text-anchor='middle'%3E2 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-asos-balandlik",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#12eef76b"
+    },
+    {
+      "q": "Sinf xonasi uchun asosi 1,5 m va balandligi 80 sm bo'lgan parallelogramm shaklidagi stend tayyorlandi. Stendni qoplash uchun necha kvadrat metr plyonka kerak bo'ladi?",
+      "v": [
+        "1,2 m²",
+        "120 m²",
+        "0,6 m²",
+        "2,3 m²"
+      ],
+      "t": 0,
+      "izoh": "Avval birliklarni tenglashtiramiz: 80 sm = 0,8 m. So'ng S = 1,5 · 0,8 = 1,2 m². Santimetrni metrga aylantirmasa 120 chiqib ketadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,171.8 214,171.8 268,78.2 106,78.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='106' y1='78.2' x2='106' y2='171.8' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='94,171.8 94,159.8 106,159.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='98' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E80 sm%3C/text%3E%3Ctext x='45' y='188.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='221' y='188.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='72.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='99' y='72.2' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='133' y='189.8' font-size='13' fill='%23334155' text-anchor='middle'%3E1,5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-asos-balandlik",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#499bae8b"
+    },
+    {
+      "q": "Parallelogrammning qo'shni tomonlari 20 sm va 8 sm. Uzun tomonga tushirilgan balandlik 6 sm bo'lsa, qisqa tomonga tushirilgan balandlik necha santimetr?",
+      "v": [
+        "30 sm",
+        "15 sm",
+        "2,4 sm",
+        "6 sm"
+      ],
+      "t": 1,
+      "izoh": "Yuza ikkala juftlik uchun bir xil: S = 20 · 6 = 120 sm². Endi qisqa tomon uchun h = 120 : 8 = 15 sm. Nisbatni teskari qo'ysa 2,4 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,150.6 222.8,150.6 268,99.4 97.2,99.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='97.2' y1='99.4' x2='97.2' y2='150.6' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='85.2,150.6 85.2,138.6 97.2,138.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='89.2' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Ctext x='45' y='167.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='229.8' y='167.6' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='93.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='90.2' y='93.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='137.4' y='168.6' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='65.6' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-asos-balandlik",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#df957542"
+    },
+    {
+      "q": "Parallelogrammning qo'shni tomonlari 12 sm va 9 sm, ular orasidagi burchak 30° ga teng. Shu parallelogrammning yuzi necha kvadrat santimetr?",
+      "v": [
+        "27 sm²",
+        "54√3 sm²",
+        "54 sm²",
+        "108 sm²"
+      ],
+      "t": 2,
+      "izoh": "S = a · b · sin α formulasini qo'llaymiz: S = 12 · 9 · sin 30° = 108 · 0,5 = 54 sm². Sinusni tushirib qoldirsa 108 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,149.6 182.9,149.6 268,100.4 137.1,100.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 76 149.6 A 24 24 0 0 0 72.8 137.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='89.7' y='143.5' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='45' y='166.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='189.9' y='166.6' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='94.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='130.1' y='94.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='117.5' y='167.6' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='85.6' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-tomon-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#8b28dac2"
+    },
+    {
+      "q": "Terlik ustasi tomonlari 40 sm va 25 sm, ular orasidagi burchagi 150° bo'lgan parallelogramm shaklidagi gilamcha to'qidi. Gilamchaning yuzi necha kvadrat santimetr?",
+      "v": [
+        "1000 sm²",
+        "866 sm²",
+        "250 sm²",
+        "500 sm²"
+      ],
+      "t": 3,
+      "izoh": "sin 150° = sin 30° = 0,5 bo'lgani uchun S = 40 · 25 · 0,5 = 500 sm². Sinusni 0,866 deb olsa 866 chiqib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,146.9 192.1,146.9 268,103.1 127.9,103.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 107.1 115.1 A 24 24 0 0 0 151.9 103.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='138' y='144.8' font-size='13' fill='%23334155' text-anchor='middle'%3E150°%3C/text%3E%3Ctext x='45' y='163.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='199.1' y='163.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='97.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='120.9' y='97.1' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='122.1' y='164.9' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3Ctext x='81' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E25 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-tomon-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#e5967fa5"
+    },
+    {
+      "q": "Parallelogrammning yuzi 84 sm², qo'shni tomonlari esa 14 sm va 12 sm. Shu tomonlar orasidagi o'tkir burchak necha gradus?",
+      "v": [
+        "30°",
+        "60°",
+        "150°",
+        "45°"
+      ],
+      "t": 0,
+      "izoh": "S = a · b · sin α dan sin α = 84 : (14 · 12) = 84 : 168 = 0,5. Demak α = 30°, chunki savolda o'tkir burchak so'ralgan; 150° ham sinusi 0,5 bo'lgan, lekin u o'tmas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,151.6 176,151.6 268,98.4 144,98.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 76 151.6 A 24 24 0 0 0 72.8 139.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='89.7' y='145.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='45' y='168.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='183' y='168.6' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='92.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='137' y='92.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='114' y='169.6' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='89' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-tomon-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#4ef084cb"
+    },
+    {
+      "q": "Bog'da qo'shni tomonlari 18 m va 10 m bo'lgan parallelogramm shaklidagi maydoncha loyihalanmoqda. Maydoncha yuzi eng katta bo'lishi uchun tomonlar orasidagi burchak qanday olinadi va bu yuza qanchaga teng bo'ladi?",
+      "v": [
+        "30°, 90 m²",
+        "90°, 180 m²",
+        "60°, 90√3 m²",
+        "45°, 90√2 m²"
+      ],
+      "t": 1,
+      "izoh": "S = 18 · 10 · sin α = 180 · sin α. Sinus eng katta qiymatini α = 90° da oladi va sin 90° = 1. Demak eng katta yuza 180 m², bunda parallelogramm to'g'ri to'rtburchakka aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-tomon-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#f1198f55"
+    },
+    {
+      "q": "Parallelogrammning diagonallari 14 sm va 10 sm bo'lib, ular orasidagi burchak 30° ni tashkil qiladi. Parallelogrammning yuzi necha kvadrat santimetr?",
+      "v": [
+        "140 sm²",
+        "17,5 sm²",
+        "35 sm²",
+        "70 sm²"
+      ],
+      "t": 2,
+      "izoh": "Diagonallar orqali yuza S = (d₁ · d₂ · sin φ) : 2 bilan topiladi. S = (14 · 10 · 0,5) : 2 = 70 : 2 = 35 sm². Ikkiga bo'lishni unutsa 70 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='56.9,65.5 75,125 263.1,184.5 245,125' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56.9' y1='65.5' x2='263.1' y2='184.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='75' y1='125' x2='245' y2='125' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 186 125 A 26 26 0 0 1 182.5 138' stroke='%235b4bc4' stroke-width='1.4' fill='none'/%3E%3Ccircle cx='160' cy='125' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='152' y='140' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='50' y='61' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='68' y='131' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='270' y='190' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='252' y='131' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='208' y='141' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-diagonal",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#943c4116"
+    },
+    {
+      "q": "Rombning diagonallari 16 sm va 30 sm ga teng. Shu rombning yuzi necha kvadrat santimetrga teng bo'ladi?",
+      "v": [
+        "480 sm²",
+        "120 sm²",
+        "46 sm²",
+        "240 sm²"
+      ],
+      "t": 3,
+      "izoh": "Rombda diagonallar perpendikulyar, shuning uchun S = (d₁ · d₂) : 2 = (16 · 30) : 2 = 480 : 2 = 240 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,189.8 198.8,189.8 268,60.2 121.2,60.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='189.8' x2='268' y2='60.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='198.8' y1='189.8' x2='121.2' y2='60.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160' cy='125' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='166' y='141' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='45' y='206.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='205.8' y='206.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='54.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='114.2' y='54.2' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-diagonal",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#6952f067"
+    },
+    {
+      "q": "Hovlida parallelogramm shaklidagi soyabon yopmasi yasaldi; uning diagonallari 2,4 m va 1,5 m bo'lib, o'zaro perpendikulyar. Yopmaning yuzi necha kvadrat metr?",
+      "v": [
+        "1,8 m²",
+        "3,6 m²",
+        "0,9 m²",
+        "3,9 m²"
+      ],
+      "t": 0,
+      "izoh": "Diagonallar perpendikulyar bo'lgani uchun sin 90° = 1 va S = (2,4 · 1,5) : 2 = 3,6 : 2 = 1,8 m². Ikkiga bo'lmasa 3,6 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,192.5 202.2,192.5 268,57.5 117.8,57.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='192.5' x2='268' y2='57.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='202.2' y1='192.5' x2='117.8' y2='57.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160' cy='125' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='166' y='141' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='45' y='209.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='209.2' y='209.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='51.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='110.8' y='51.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-diagonal",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#7e5bbfe5"
+    },
+    {
+      "q": "Parallelogrammning yuzi 96 sm², bir diagonali 24 sm, diagonallar orasidagi burchak esa 30°. Ikkinchi diagonalning uzunligi necha santimetr?",
+      "v": [
+        "24 sm",
+        "16 sm",
+        "8 sm",
+        "4 sm"
+      ],
+      "t": 1,
+      "izoh": "S = (d₁ · d₂ · sin φ) : 2 formulasiga qo'yamiz: 96 = (24 · d · 0,5) : 2 = 6d. Bundan d = 96 : 6 = 16 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-diagonal",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#5467d139"
+    },
+    {
+      "q": "Parallelogrammning yon tomoni 14 sm, shu tomon bilan asos orasidagi burchak esa 30°. Asosga tushirilgan balandlik necha santimetr?",
+      "v": [
+        "14 sm",
+        "28 sm",
+        "7 sm",
+        "7√3 sm"
+      ],
+      "t": 2,
+      "izoh": "Balandlik yon tomonni gipotenuza qilgan to'g'ri burchakli uchburchakning kateti: h = 14 · sin 30° = 14 · 0,5 = 7 sm. Sinusni kosinus bilan almashtirsa 7√3 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,155.1 163.8,155.1 268,94.9 156.2,94.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='156.2' y1='94.9' x2='156.2' y2='155.1' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='144.2,155.1 144.2,143.1 156.2,143.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='148.2' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Cpath d='M 76 155.1 A 24 24 0 0 0 72.8 143.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='89.7' y='149' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='45' y='172.1' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='170.8' y='172.1' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='88.9' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='149.2' y='88.9' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='95.1' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E14 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#8ece66a7"
+    },
+    {
+      "q": "Tomga o'rnatilgan parallelogramm shaklidagi quyosh panelining yon tomoni 2 m, u bilan asos orasidagi burchak 60°. Panelning balandligi necha metrga teng?",
+      "v": [
+        "1 m",
+        "2 m",
+        "2√3 m",
+        "√3 m"
+      ],
+      "t": 3,
+      "izoh": "h = 2 · sin 60° = 2 · (√3 : 2) = √3 m ≈ 1,73 m. Agar 30° ning sinusi olinsa 1 m chiqib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,167.5 218.9,167.5 268,82.5 101.1,82.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='101.1' y1='82.5' x2='101.1' y2='167.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='89.1,167.5 89.1,155.5 101.1,155.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='93.1' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Cpath d='M 76 167.5 A 24 24 0 0 0 64 146.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='85.8' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='45' y='184.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='225.9' y='184.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='76.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='94.1' y='76.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='67.6' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E2 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#feb22f3b"
+    },
+    {
+      "q": "Parallelogrammning o'tmas burchagi 135°, yon tomoni esa 8√2 sm ga teng. Asosga tushirilgan balandlik necha santimetr?",
+      "v": [
+        "8 sm",
+        "8√2 sm",
+        "16 sm",
+        "4√2 sm"
+      ],
+      "t": 0,
+      "izoh": "O'tkir burchak 180° − 135° = 45°. U holda h = 8√2 · sin 45° = 8√2 · (√2 : 2) = 8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,165.4 187.1,165.4 268,84.6 132.9,84.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='132.9' y1='84.6' x2='132.9' y2='165.4' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='120.9,165.4 120.9,153.4 132.9,153.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='124.9' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Cpath d='M 115.9 101.6 A 24 24 0 0 0 156.9 84.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='147.8' y='124.6' font-size='13' fill='%23334155' text-anchor='middle'%3E135°%3C/text%3E%3Ctext x='45' y='182.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='194.1' y='182.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='78.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='125.9' y='78.6' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#d601adcd"
+    },
+    {
+      "q": "Ustaxonada tomonlari 24 sm va 10 sm, o'tkir burchagi 30° bo'lgan parallelogramm shaklidagi metall plastinka kesildi. Katta tomonga tushirilgan balandlik kichik tomonga tushirilganidan necha santimetr kichik?",
+      "v": [
+        "12 sm",
+        "7 sm",
+        "17 sm",
+        "5 sm"
+      ],
+      "t": 1,
+      "izoh": "Yuza S = 24 · 10 · sin 30° = 120 sm². Katta tomonga tushirilgan balandlik 120 : 24 = 5 sm, kichigiga tushirilgani 120 : 10 = 12 sm. Ayirma 12 − 5 = 7 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,141.5 210.7,141.5 268,108.5 109.3,108.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 76 141.5 A 24 24 0 0 0 72.8 129.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='89.7' y='135.4' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='45' y='158.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='217.7' y='158.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='102.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='102.3' y='102.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='131.4' y='159.5' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='71.7' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#ed1f71a3"
+    },
+    {
+      "q": "Quyidagi shartlardan qaysi biri to'rtburchakning parallelogramm ekanini isbotlash uchun YETARLI emas?",
+      "v": [
+        "Diagonallari kesishish nuqtasida teng ikkiga bo'linadi",
+        "Qarama-qarshi burchaklari juft-juft teng",
+        "Diagonallari o'zaro teng",
+        "Qarama-qarshi tomonlari juft-juft parallel"
+      ],
+      "t": 2,
+      "izoh": "Diagonallarning tengligi parallelogramm alomati emas: teng yonli trapetsiyaning ham diagonallari teng. Qolgan uchta shart esa parallelogrammning haqiqiy alomatlari hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelogramm-alomati",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#5672ee69"
+    },
+    {
+      "q": "ABCD to'rtburchakda AB va CD tomonlar parallel hamda uzunliklari teng ekani aniqlandi. Bu to'rtburchak haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "U trapetsiya",
+        "U albatta romb",
+        "Hech qanday xulosa chiqarib bo'lmaydi",
+        "U parallelogramm"
+      ],
+      "t": 3,
+      "izoh": "Agar to'rtburchakning ikki tomoni parallel va teng bo'lsa, u parallelogramm bo'ladi — bu uchinchi alomat. Romb bo'lishi uchun esa barcha tomonlar teng bo'lishi kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,168.2 218.2,168.2 268,81.8 101.8,81.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='45' y='185.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='225.2' y='185.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='75.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='94.8' y='75.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='135.1' y='186.2' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='184.9' y='73.8' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelogramm-alomati",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#ab6a0f75"
+    },
+    {
+      "q": "ABCD to'rtburchakda AB tomon CD tomonga parallel va BC = AD ekani berilgan. Bunday to'rtburchak har doim parallelogramm bo'ladimi?",
+      "v": [
+        "Yo'q, u teng yonli trapetsiya ham bo'lishi mumkin",
+        "Ha, chunki qarama-qarshi tomonlari teng",
+        "Ha, har doim parallelogramm bo'ladi",
+        "Yo'q, u faqat romb bo'lishi mumkin"
+      ],
+      "t": 0,
+      "izoh": "Bir juft tomonning parallelligi va boshqa juft tomonning tengligi yetarli shart emas. Teng yonli trapetsiyada ham asoslar parallel, yon tomonlar esa teng bo'ladi, lekin u parallelogramm emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelogramm-alomati",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#a0e64920"
+    },
+    {
+      "q": "Duradgor to'rtburchak ramka yasadi va diagonallarini o'lchab, ular kesishish nuqtasida teng ikkiga bo'linishini aniqladi. Ramkaning shakli haqida nima deyish mumkin?",
+      "v": [
+        "U kvadrat",
+        "U parallelogramm",
+        "U to'g'ri to'rtburchak",
+        "U trapetsiya"
+      ],
+      "t": 1,
+      "izoh": "Diagonallari kesishish nuqtasida teng ikkiga bo'linsa, to'rtburchak parallelogramm bo'ladi. To'g'ri to'rtburchak yoki kvadrat deyish uchun qo'shimcha shartlar tekshirilishi kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,169.6 220.5,169.6 268,80.4 99.5,80.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='169.6' x2='268' y2='80.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='220.5' y1='169.6' x2='99.5' y2='80.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160' cy='125' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='166' y='141' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='45' y='186.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='227.5' y='186.6' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='74.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='92.5' y='74.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelogramm-alomati",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#1af1b5a9"
+    },
+    {
+      "q": "ABCD to'rtburchakda ∠A = 72°, ∠B = 108° va ∠C = 72° ekani ma'lum. Bu to'rtburchak parallelogramm bo'ladimi?",
+      "v": [
+        "Yo'q, chunki ∠A va ∠B teng emas",
+        "Ha, chunki burchaklar yig'indisi 360° ga teng",
+        "Ha, chunki ∠D = 108° chiqadi va qarama-qarshi burchaklar teng",
+        "Yo'q, chunki ∠D noma'lum bo'lib qolmoqda"
+      ],
+      "t": 2,
+      "izoh": "To'rtburchak burchaklari yig'indisi 360° bo'lgani uchun ∠D = 360° − 72° − 108° − 72° = 108°. Endi ∠A = ∠C = 72° va ∠B = ∠D = 108°, ya'ni qarama-qarshi burchaklar juft-juft teng — bu parallelogramm alomati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallelogramm-alomati",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#a00a8101"
+    },
+    {
+      "q": "ABCD parallelogrammda ∠A burchakning bissektrisasi BC tomonini K nuqtada kesib o'tadi. AB = 7 sm bo'lsa, BK kesmaning uzunligi necha santimetr?",
+      "v": [
+        "3,5 sm",
+        "14 sm",
+        "10,5 sm",
+        "7 sm"
+      ],
+      "t": 3,
+      "izoh": "AD ∥ BC bo'lgani uchun ∠DAK = ∠AKB, bissektrisa esa ∠DAK = ∠KAB beradi. Demak ∠KAB = ∠AKB va ABK uchburchak teng yonli: BK = AB = 7 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='66.9,186 164.9,186 253.2,59.8 155.2,59.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='164.9' y1='186' x2='221.1' y2='105.7' stroke='%235b4bc4' stroke-width='3.4' fill='none'/%3E%3Cline x1='66.9' y1='186' x2='221.1' y2='105.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 94.9 186 A 28 28 0 0 0 91.7 173.1' stroke='%235b4bc4' stroke-width='1.4' fill='none'/%3E%3Cpath d='M 91.7 173.1 A 28 28 0 0 0 83 163.1' stroke='%235b4bc4' stroke-width='1.4' fill='none'/%3E%3Cline x1='91.2' y1='180.1' x2='97' y2='178.6' stroke='%235b4bc4' stroke-width='1.4' fill='none'/%3E%3Cline x1='85.7' y1='169.5' x2='90.2' y2='165.6' stroke='%235b4bc4' stroke-width='1.4' fill='none'/%3E%3Ccircle cx='221.1' cy='105.7' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='59.9' y='203' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='171.9' y='203' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='260.2' y='53.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='148.2' y='53.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='229' y='113' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='115.9' y='203' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='207' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-kesma",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#b0217a4d"
+    },
+    {
+      "q": "ABCD parallelogrammda AB = 6 sm, BC = 10 sm. ∠A burchakning bissektrisasi BC tomonini K nuqtada kessa, KC kesma necha santimetr bo'ladi?",
+      "v": [
+        "4 sm",
+        "6 sm",
+        "5 sm",
+        "16 sm"
+      ],
+      "t": 0,
+      "izoh": "ABK uchburchak teng yonli bo'lgani uchun BK = AB = 6 sm. U holda KC = BC − BK = 10 − 6 = 4 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='70.7,210 180.7,210 249.3,40 139.3,40' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='63.7' y='227' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='187.7' y='227' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='256.3' y='34' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='132.3' y='34' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='125.7' y='228' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='96' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-kesma",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#a984a2f8"
+    },
+    {
+      "q": "Duradgor parallelogramm shaklidagi taxtaning o'tkir burchagidan bissektrisa chizdi va u qarama-qarshi tomonni kesib o'tdi. Taxta perimetri 42 sm, qisqa tomoni 9 sm bo'lsa, bissektrisa uzun tomonni qanday kesmalarga ajratadi?",
+      "v": [
+        "4,5 sm va 7,5 sm",
+        "9 sm va 3 sm",
+        "6 sm va 6 sm",
+        "9 sm va 12 sm"
+      ],
+      "t": 1,
+      "izoh": "Yarim perimetr 21 sm, qisqa tomon 9 sm, demak uzun tomon 12 sm. Bissektrisa teng yonli uchburchak hosil qilgani uchun uzun tomondan qisqa tomonga teng 9 sm kesiladi, qolgani 12 − 9 = 3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52.4,210 191.9,210 267.6,40 128.1,40' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52.4' y1='210' x2='248.7' y2='82.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 80.4 210 A 28 28 0 0 0 75.9 194.8' stroke='%235b4bc4' stroke-width='1.4' fill='none'/%3E%3Cpath d='M 75.9 194.8 A 28 28 0 0 0 63.8 184.4' stroke='%235b4bc4' stroke-width='1.4' fill='none'/%3E%3Cline x1='76.4' y1='202.9' x2='82.1' y2='201.2' stroke='%235b4bc4' stroke-width='1.4' fill='none'/%3E%3Cline x1='68.6' y1='191' x2='72.5' y2='186.4' stroke='%235b4bc4' stroke-width='1.4' fill='none'/%3E%3Ccircle cx='248.7' cy='82.5' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='45.4' y='227' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='198.9' y='227' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='274.6' y='34' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='121.1' y='34' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='258' y='90' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='122.2' y='228' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='81.3' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-kesma",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#1458db97"
+    },
+    {
+      "q": "ABCD parallelogrammda ∠A burchakning bissektrisasi BC tomonini uning o'rtasidan kesib o'tadi. AB = 8 sm bo'lsa, parallelogramm perimetri necha santimetr?",
+      "v": [
+        "24 sm",
+        "64 sm",
+        "48 sm",
+        "32 sm"
+      ],
+      "t": 2,
+      "izoh": "Bissektrisa teng yonli uchburchak beradi: BK = AB = 8 sm. K nuqta BC ning o'rtasi bo'lgani uchun BC = 2 · 8 = 16 sm. Perimetr P = 2 · (8 + 16) = 48 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='79.8,210 171.5,210 240.2,40 148.5,40' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='72.8' y='227' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='178.5' y='227' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='247.2' y='34' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='141.5' y='34' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='125.7' y='228' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-kesma",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#4d67f55d"
+    },
+    {
+      "q": "ABCD parallelogrammda ∠A va ∠B burchaklarning bissektrisalari M nuqtada kesishadi. ∠AMB burchak necha gradusga teng?",
+      "v": [
+        "45°",
+        "120°",
+        "60°",
+        "90°"
+      ],
+      "t": 3,
+      "izoh": "∠A va ∠B qo'shni burchaklar, ularning yig'indisi 180°. Bissektrisalar bu burchaklarni ikkiga bo'lgani uchun ∠MAB + ∠MBA = 180° : 2 = 90°. ABM uchburchakdan ∠AMB = 180° − 90° = 90°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,173.3 220.9,173.3 268,76.7 99.1,76.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='45' y='190.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='227.9' y='190.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='70.7' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='92.1' y='70.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-kesma",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#c3f39def"
+    },
+    {
+      "q": "ABCD parallelogrammda AC diagonal chizilgan. AB = 11 sm, BC = 8 sm va AC = 13 sm bo'lsa, ABC uchburchakning perimetri necha santimetr?",
+      "v": [
+        "32 sm",
+        "38 sm",
+        "19 sm",
+        "64 sm"
+      ],
+      "t": 0,
+      "izoh": "Uchburchak perimetri uning uch tomoni yig'indisiga teng: 11 + 8 + 13 = 32 sm. Parallelogrammning perimetri esa 2 · (11 + 8) = 38 sm, bu boshqa kattalik.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,174.9 210.4,174.9 268,75.1 109.6,75.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='174.9' x2='268' y2='75.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45' y='191.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='217.4' y='191.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='69.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='102.6' y='69.1' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='131.2' y='192.9' font-size='13' fill='%23334155' text-anchor='middle'%3E11 sm%3C/text%3E%3Ctext x='248.2' y='129' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3Ctext x='170' y='117' font-size='13' fill='%23334155' text-anchor='start'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diagonal-uchburchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#babd04eb"
+    },
+    {
+      "q": "Parallelogrammning perimetri 46 sm. Uning bir diagonali chizilganda hosil bo'lgan uchburchakning perimetri 38 sm bo'lsa, shu diagonal necha santimetr?",
+      "v": [
+        "12 sm",
+        "15 sm",
+        "8 sm",
+        "23 sm"
+      ],
+      "t": 1,
+      "izoh": "Diagonal hosil qilgan uchburchakning ikki tomoni parallelogrammning qo'shni tomonlari, ularning yig'indisi 46 : 2 = 23 sm. Demak diagonal 38 − 23 = 15 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,174.9 210.4,174.9 268,75.1 109.6,75.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='174.9' x2='268' y2='75.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45' y='191.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='217.4' y='191.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='69.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='102.6' y='69.1' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='170' y='117' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-uchburchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#1e4e42fd"
+    },
+    {
+      "q": "Bog'chadagi parallelogramm shaklidagi maydonchaning yuzi 72 m². Uni diagonal bo'ylab o'tgan yo'lka ikkiga ajratadi. Yo'lkaning bir tomonidagi qismning yuzi necha kvadrat metr?",
+      "v": [
+        "72 m²",
+        "144 m²",
+        "36 m²",
+        "18 m²"
+      ],
+      "t": 2,
+      "izoh": "Diagonal parallelogrammni ikkita teng uchburchakka ajratadi, chunki ular uch tomoni bo'yicha teng. Demak har bir qismning yuzi 72 : 2 = 36 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,167.2 219.2,167.2 268,82.8 100.8,82.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='167.2' x2='268' y2='82.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45' y='184.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='226.2' y='184.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='76.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='93.8' y='76.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diagonal-uchburchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#628c0572"
+    },
+    {
+      "q": "ABCD parallelogrammda diagonallar O nuqtada kesishadi va AOB uchburchakning yuzi 17 sm² ga teng. Parallelogrammning yuzi necha kvadrat santimetr?",
+      "v": [
+        "34 sm²",
+        "51 sm²",
+        "17 sm²",
+        "68 sm²"
+      ],
+      "t": 3,
+      "izoh": "Diagonallar parallelogrammni yuzlari teng to'rtta uchburchakka ajratadi. Demak S = 4 · 17 = 68 sm². Faqat ikkitasini hisoblasa 34 chiqib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,171.7 218.3,171.7 268,78.3 101.7,78.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='171.7' x2='268' y2='78.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='218.3' y1='171.7' x2='101.7' y2='78.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160' cy='125' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='166' y='141' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='45' y='188.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='225.3' y='188.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='72.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='94.7' y='72.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-uchburchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#9f9b66ca"
+    },
+    {
+      "q": "ABCD parallelogrammda ∠A = 70° va AC diagonal bu burchakdan ∠BAC = 25° ni ajratadi. ∠ACB burchak necha gradusga teng?",
+      "v": [
+        "45°",
+        "25°",
+        "70°",
+        "110°"
+      ],
+      "t": 0,
+      "izoh": "Avval ∠CAD = 70° − 25° = 45°. AD ∥ BC bo'lgani uchun AC kesuvchi hosil qilgan ichki almashinuvchi burchaklar teng: ∠ACB = ∠CAD = 45°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,178 229.4,178 268,72 90.6,72' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='178' x2='268' y2='72' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 76 178 A 24 24 0 0 0 60.2 155.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='83.9' y='159.6' font-size='13' fill='%23334155' text-anchor='middle'%3E70°%3C/text%3E%3Ctext x='45' y='195' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='236.4' y='195' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='66' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='83.6' y='66' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#84e7e684"
+    },
+    {
+      "q": "ABCD parallelogrammda BD diagonal chizilgan va ∠ABD = 40°, ∠ADB = 65° ekani ma'lum. ∠C burchak necha gradus?",
+      "v": [
+        "40°",
+        "75°",
+        "105°",
+        "65°"
+      ],
+      "t": 1,
+      "izoh": "ABD uchburchakdan ∠A = 180° − 40° − 65° = 75°. Qarama-qarshi burchaklar teng bo'lgani uchun ∠C = ∠A = 75°. Qo'shni burchak 105° bilan chalkashtirmaslik kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,182 237.5,182 268,68 82.5,68' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='237.5' y1='182' x2='82.5' y2='68' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45' y='199' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='244.5' y='199' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='62' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='75.5' y='62' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#4178777f"
+    },
+    {
+      "q": "Panjara parallelogramm shaklida yasalgan va uning o'tmas burchagi 120°. Shu burchak uchidan chiqqan diagonal uni 2 : 1 nisbatda bo'lsa, hosil bo'lgan kichik burchak necha gradus?",
+      "v": [
+        "60°",
+        "30°",
+        "40°",
+        "80°"
+      ],
+      "t": 2,
+      "izoh": "Burchak qismlarini 2x va x deb olamiz: 2x + x = 120°, ya'ni 3x = 120° va x = 40°. Demak kichik qism 40°, kattasi esa 80°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,170.2 215.9,170.2 268,79.8 104.1,79.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='215.9' y1='170.2' x2='104.1' y2='79.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 92.1 100.6 A 24 24 0 0 0 128.1 79.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='123.6' y='117.6' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='45' y='187.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='222.9' y='187.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='73.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='97.1' y='73.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#f0beefef"
+    },
+    {
+      "q": "ABCD parallelogrammda BD diagonal AD tomonga perpendikulyar. Agar ∠A = 55° bo'lsa, ∠ABD burchak necha gradusga teng?",
+      "v": [
+        "55°",
+        "90°",
+        "45°",
+        "35°"
+      ],
+      "t": 3,
+      "izoh": "ABD uchburchakda ∠ADB = 90°, chunki BD ⊥ AD. Uchburchak burchaklari yig'indisidan ∠ABD = 180° − 90° − 55° = 35°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,163.3 214.4,163.3 268,86.7 105.6,86.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='214.4' y1='163.3' x2='105.6' y2='86.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45' y='180.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='221.4' y='180.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='80.7' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='98.6' y='80.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-burchak",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#8225e51c"
+    },
+    {
+      "q": "Hovli darvozasi romb shaklidagi panjaralardan yig'ilgan. Bir rombning diagonallari 12 sm va 16 sm bo'lsa, uning tomoni necha santimetr?",
+      "v": [
+        "10 sm",
+        "20 sm",
+        "14 sm",
+        "100 sm"
+      ],
+      "t": 0,
+      "izoh": "Rombda diagonallar perpendikulyar va teng ikkiga bo'linadi, ya'ni yarim diagonallar 6 sm va 8 sm. Pifagor teoremasi bo'yicha tomon √(36 + 64) = √100 = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='56,125 160,203 264,125 160,47' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='56' y1='125' x2='264' y2='125' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='160' y1='203' x2='160' y2='47' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160' cy='125' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='166' y='118' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='49' y='129' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='160' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='271' y='129' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='160' y='41' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='206' y='117' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='154' y='165' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='90' y='179' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-diagonal-tomon",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#098a6404"
+    },
+    {
+      "q": "Romb perimetri 52 sm, uning bir diagonali esa 24 sm ga teng. Rombning ikkinchi diagonali necha santimetr?",
+      "v": [
+        "26 sm",
+        "10 sm",
+        "5 sm",
+        "20 sm"
+      ],
+      "t": 1,
+      "izoh": "Tomon 52 : 4 = 13 sm, birinchi diagonalning yarmi 12 sm. Yarim ikkinchi diagonal √(169 − 144) = 5 sm, demak to'liq diagonal 2 · 5 = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,168.7 177.7,168.7 268,81.3 142.3,81.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='168.7' x2='268' y2='81.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='177.7' y1='168.7' x2='142.3' y2='81.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160' cy='125' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='166' y='141' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='45' y='185.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='184.7' y='185.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='75.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='135.3' y='75.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-diagonal-tomon",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#9fdbb6e8"
+    },
+    {
+      "q": "Rombning o'tkir burchagi 60°, tomoni esa 9 sm ga teng. Shu rombning kichik diagonali necha santimetr bo'ladi?",
+      "v": [
+        "18 sm",
+        "4,5 sm",
+        "9 sm",
+        "9√3 sm"
+      ],
+      "t": 2,
+      "izoh": "O'tkir burchak uchidagi ikki tomon va kichik diagonal uchburchak hosil qiladi. Bu uchburchakda ikki tomon teng va ular orasidagi burchak 60°, demak u teng tomonli: kichik diagonal 9 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,187.4 196,187.4 268,62.6 124,62.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='196' y1='187.4' x2='124' y2='62.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 76 187.4 A 24 24 0 0 0 64 166.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='85.8' y='171.9' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='45' y='204.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='203' y='204.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='56.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='117' y='56.6' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='124' y='205.4' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='175' y='118' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-diagonal-tomon",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#a752b224"
+    },
+    {
+      "q": "Zargar romb shaklidagi kulon yasadi; uning yuzi 96 mm², bir diagonali esa 16 mm. Kulonning tomoni necha millimetrga teng?",
+      "v": [
+        "12 mm",
+        "6 mm",
+        "20 mm",
+        "10 mm"
+      ],
+      "t": 3,
+      "izoh": "S = (d₁ · d₂) : 2 dan d₂ = 2 · 96 : 16 = 12 mm. Yarim diagonallar 8 mm va 6 mm, tomon esa √(64 + 36) = √100 = 10 mm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "romb-diagonal-tomon",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#a4438890"
+    },
+    {
+      "q": "Sinf doskasi to'g'ri to'rtburchak shaklida bo'lib, tomonlari 3 m va 1,6 m. Shu doskaning diagonali necha metrga teng?",
+      "v": [
+        "3,4 m",
+        "4,6 m",
+        "4,8 m",
+        "2,3 m"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri to'rtburchak — burchaklari to'g'ri bo'lgan parallelogramm. Diagonal d = √(3² + 1,6²) = √(9 + 2,56) = √11,56 = 3,4 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,182.6 268,182.6 268,67.4 52,67.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='182.6' x2='268' y2='67.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='64,182.6 64,170.6 52,170.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45' y='199.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='275' y='199.6' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='61.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='45' y='61.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='160' y='200.6' font-size='13' fill='%23334155' text-anchor='middle'%3E3 m%3C/text%3E%3Ctext x='43' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E1,6 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xususiy-hol",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#0ef857dd"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning diagonallari kesishish nuqtasida 60° li burchak hosil qiladi. Kichik tomoni 7 sm bo'lsa, diagonali necha santimetr?",
+      "v": [
+        "14√3 sm",
+        "14 sm",
+        "7 sm",
+        "21 sm"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri to'rtburchakda diagonallar teng va teng ikkiga bo'linadi, shuning uchun yarim diagonallar o'zaro teng. 60° li burchak qarshisidagi uchburchak teng tomonli bo'ladi: yarim diagonal 7 sm, to'liq diagonal 14 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,187.5 268,187.5 268,62.5 52,62.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='187.5' x2='268' y2='62.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='268' y1='187.5' x2='52' y2='62.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160' cy='125' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='166' y='141' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cpolyline points='64,187.5 64,175.5 52,175.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45' y='204.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='275' y='204.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='56.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='45' y='56.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='43' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xususiy-hol",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#39119ee7"
+    },
+    {
+      "q": "Parallelogrammning diagonallari o'zaro teng ekani aniqlandi. Bu parallelogramm qanday to'rtburchak bo'ladi?",
+      "v": [
+        "Trapetsiya",
+        "Har qanday parallelogramm",
+        "To'g'ri to'rtburchak",
+        "Romb"
+      ],
+      "t": 2,
+      "izoh": "Diagonallari teng bo'lgan parallelogramm to'g'ri to'rtburchakdir. Rombning belgisi esa diagonallarning perpendikulyarligi, tenglik emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,193.7 268,193.7 268,56.3 52,56.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='193.7' x2='268' y2='56.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='268' y1='193.7' x2='52' y2='56.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='64,193.7 64,181.7 52,181.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45' y='210.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='275' y='210.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='50.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='45' y='50.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xususiy-hol",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#f21c763b"
+    },
+    {
+      "q": "Parallelogrammning diagonallari o'zaro ham teng, ham perpendikulyar. Bu shakl qanday nomlanadi va tomoni diagonali d bilan qanday bog'langan?",
+      "v": [
+        "Romb, tomoni d/2 ga teng",
+        "To'g'ri to'rtburchak, tomoni d ga teng",
+        "Kvadrat, tomoni d ga teng",
+        "Kvadrat, tomoni d/√2 ga teng"
+      ],
+      "t": 3,
+      "izoh": "Diagonallari teng bo'lsa — to'g'ri to'rtburchak, perpendikulyar bo'lsa — romb. Ikkalasi birga bajarilsa shakl kvadrat bo'ladi. Kvadratda d = a√2, demak a = d/√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xususiy-hol",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#89fabd20"
+    },
+    {
+      "q": "Koordinatalar tekisligida A(1; 2), B(6; 2) va C(8; 6) nuqtalar berilgan. ABCD parallelogramm bo'lishi uchun D uchining koordinatalari qanday bo'lishi kerak?",
+      "v": [
+        "D(3; 6)",
+        "D(13; 6)",
+        "D(3; 2)",
+        "D(5; 4)"
+      ],
+      "t": 0,
+      "izoh": "ABCD da AB va DC tomonlar teng va parallel, shuning uchun D = A + C − B. Koordinatalar bo'yicha: 1 + 8 − 6 = 3 va 2 + 6 − 2 = 6, ya'ni D(3; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-parallelogramm",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#5899b614"
+    },
+    {
+      "q": "ABCD parallelogrammning uchlari A(−2; 1), B(4; 1) va C(6; 5) nuqtalarda joylashgan. Uning diagonallari kesishish nuqtasining koordinatalari qanday?",
+      "v": [
+        "(3; 2)",
+        "(2; 3)",
+        "(4; 6)",
+        "(1; 1)"
+      ],
+      "t": 1,
+      "izoh": "Diagonallar kesishish nuqtasi ularning umumiy o'rtasi, shuning uchun uni AC ning o'rtasi sifatida topamiz: ((−2 + 6) : 2; (1 + 5) : 2) = (2; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-parallelogramm",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#51dcadf9"
+    },
+    {
+      "q": "Geodezist uchastka uchlarini P(0; 0), Q(9; 0) va R(12; 5) deb belgiladi. PQRS parallelogramm bo'lsa, S uchining koordinatalari qanday bo'ladi?",
+      "v": [
+        "S(3; 0)",
+        "S(9; 5)",
+        "S(3; 5)",
+        "S(21; 5)"
+      ],
+      "t": 2,
+      "izoh": "PQRS da PQ va SR tomonlar teng va parallel, demak S = P + R − Q. Hisoblaymiz: 0 + 12 − 9 = 3 va 0 + 5 − 0 = 5, ya'ni S(3; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-parallelogramm",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#45e21b1a"
+    },
+    {
+      "q": "Tekislikda A(1; 1), B(5; 3) va C(4; 7) nuqtalar berilgan. Shu uch nuqta uchi bo'ladigan nechta har xil parallelogramm yasash mumkin?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "4 ta",
+        "3 ta"
+      ],
+      "t": 3,
+      "izoh": "To'rtinchi uch berilgan uchtasidan qaysi biri diagonal qarshisida turishiga qarab tanlanadi. Uchta nuqtaning har biri navbat bilan qarama-qarshi uch bo'lishi mumkin, shuning uchun uchta har xil parallelogramm hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-parallelogramm",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#22f3545d"
+    },
+    {
+      "q": "Parallelogrammning yuzi 84 sm² ga teng va uning diagonallari shaklni to'rtta uchburchakka ajratadi. Har bir uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "21 sm²",
+        "42 sm²",
+        "28 sm²",
+        "12 sm²"
+      ],
+      "t": 0,
+      "izoh": "Diagonallar parallelogrammni yuzlari o'zaro teng to'rtta uchburchakka ajratadi. Demak har birining yuzi 84 : 4 = 21 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,171.7 218.3,171.7 268,78.3 101.7,78.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='171.7' x2='268' y2='78.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='218.3' y1='171.7' x2='101.7' y2='78.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160' cy='125' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='166' y='141' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='45' y='188.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='225.3' y='188.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='72.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='94.7' y='72.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-boluv",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#f812f0e9"
+    },
+    {
+      "q": "ABCD parallelogrammning yuzi 60 sm². M nuqta CD tomonining o'rtasi bo'lsa, ABM uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "12 sm²",
+        "30 sm²",
+        "15 sm²",
+        "20 sm²"
+      ],
+      "t": 1,
+      "izoh": "ABM uchburchakning asosi AB, uchi esa AB ga parallel CD chizig'ida yotadi, shuning uchun balandligi parallelogramm balandligiga teng. S = (AB · h) : 2 = 60 : 2 = 30 sm² — M ning aynan qayerda turishi natijaga ta'sir qilmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,171.7 218.3,171.7 268,78.3 101.7,78.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='171.7' x2='184.9' y2='78.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='218.3' y1='171.7' x2='184.9' y2='78.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='184.9' cy='78.3' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='184.9' y='70.3' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='45' y='188.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='225.3' y='188.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='72.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='94.7' y='72.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-boluv",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#4d89ebd8"
+    },
+    {
+      "q": "ABCD parallelogramm ichida M nuqta olingan. ABM va CDM uchburchaklar yuzlarining yig'indisi 26 sm² bo'lsa, parallelogrammning yuzi necha kvadrat santimetr?",
+      "v": [
+        "13 sm²",
+        "104 sm²",
+        "52 sm²",
+        "26 sm²"
+      ],
+      "t": 2,
+      "izoh": "AB va CD tomonlar teng va parallel, M dan ularga tushirilgan balandliklar yig'indisi parallelogramm balandligiga teng. Shuning uchun ikki uchburchak yuzi yig'indisi doim yarim yuzani beradi: S = 2 · 26 = 52 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,171.7 218.3,171.7 268,78.3 101.7,78.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='171.7' x2='192.4' y2='129.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='218.3' y1='171.7' x2='192.4' y2='129.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='268' y1='78.3' x2='192.4' y2='129.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='101.7' y1='78.3' x2='192.4' y2='129.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='192.4' cy='129.7' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='198.4' y='122.7' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='45' y='188.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='225.3' y='188.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='72.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='94.7' y='72.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-boluv",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#bcefa302"
+    },
+    {
+      "q": "Parallelogramm shaklidagi gul maydonchasining yuzi 48 m². Uni ikki diagonal bilan to'rt bo'lakka ajratib, har biriga alohida gul ekildi. Ikkita qo'shni bo'lakning umumiy yuzi necha kvadrat metr?",
+      "v": [
+        "12 m²",
+        "36 m²",
+        "48 m²",
+        "24 m²"
+      ],
+      "t": 3,
+      "izoh": "Diagonallar hosil qilgan to'rt uchburchakning yuzlari teng: har biri 48 : 4 = 12 m². Ikkita qo'shni bo'lak esa 2 · 12 = 24 m² ni tashkil qiladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,171.7 218.3,171.7 268,78.3 101.7,78.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='171.7' x2='268' y2='78.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='218.3' y1='171.7' x2='101.7' y2='78.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160' cy='125' r='2.5' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='166' y='141' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='45' y='188.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='225.3' y='188.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='72.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='94.7' y='72.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-boluv",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#359206d6"
+    },
+    {
+      "q": "Parallelogrammning to'rtta burchagidan uchtasining yig'indisi 260° ga teng. Uning to'rtinchi burchagi necha gradus?",
+      "v": [
+        "100°",
+        "80°",
+        "130°",
+        "260°"
+      ],
+      "t": 0,
+      "izoh": "To'rtburchak burchaklarining yig'indisi doim 360°. Demak to'rtinchi burchak 360° − 260° = 100°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-yigindi",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#fade134e"
+    },
+    {
+      "q": "Parallelogrammda ikkita o'tkir burchakning yig'indisi 96° ni tashkil qiladi. Shu parallelogrammning o'tmas burchagi necha gradus?",
+      "v": [
+        "96°",
+        "132°",
+        "48°",
+        "84°"
+      ],
+      "t": 1,
+      "izoh": "O'tkir burchaklar qarama-qarshi va o'zaro teng, shuning uchun har biri 96° : 2 = 48°. O'tmas burchak esa unga qo'shni: 180° − 48° = 132°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-yigindi",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#7c766ea2"
+    },
+    {
+      "q": "Bezakchi parallelogramm shaklidagi oyna yasadi va uning o'tmas burchagi o'tkir burchagidan 3 marta katta chiqdi. Oynaning o'tkir burchagi necha gradus?",
+      "v": [
+        "90°",
+        "60°",
+        "45°",
+        "135°"
+      ],
+      "t": 2,
+      "izoh": "O'tkir burchakni x deb olsak, o'tmas burchak 3x va ular qo'shni: x + 3x = 180°. Bundan 4x = 180° va x = 45°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,158.5 201,158.5 268,91.5 119,91.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='45' y='175.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='208' y='175.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='85.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='112' y='85.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-yigindi",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#bb799817"
+    },
+    {
+      "q": "Parallelogrammning bitta burchagi qolgan uchta burchak yig'indisining beshdan bir qismiga teng. Shu burchak necha gradusga teng?",
+      "v": [
+        "72°",
+        "90°",
+        "120°",
+        "60°"
+      ],
+      "t": 3,
+      "izoh": "Izlanayotgan burchak x bo'lsa, qolgan uchtasi 360° − x. Shartga ko'ra x = (360° − x) : 5, ya'ni 5x = 360° − x. Bundan 6x = 360° va x = 60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-yigindi",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#ced0de5c"
+    },
+    {
+      "q": "Parallelogrammning qo'shni tomonlari 5 sm va 8 sm, ular orasidagi burchak 60°. Shu parallelogrammning kichik diagonali necha santimetr?",
+      "v": [
+        "7 sm",
+        "√129 sm",
+        "89 sm",
+        "13 sm"
+      ],
+      "t": 0,
+      "izoh": "Kichik diagonal o'tkir burchak qarshisida yotadi. Kosinuslar teoremasi: d² = 25 + 64 − 2 · 5 · 8 · cos 60° = 89 − 40 = 49, demak d = 7 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,169.5 216.6,169.5 268,80.5 103.4,80.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='216.6' y1='169.5' x2='103.4' y2='80.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 76 169.5 A 24 24 0 0 0 64 148.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='85.8' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='45' y='186.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='223.6' y='186.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='74.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='96.4' y='74.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='134.3' y='187.5' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='68.7' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-kosinuslar",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#f1e96a15"
+    },
+    {
+      "q": "Parallelogrammning tomonlari 6 sm va 10 sm, o'tmas burchagi esa 120°. Uning katta diagonali necha santimetrga teng?",
+      "v": [
+        "16 sm",
+        "14 sm",
+        "196 sm",
+        "√76 sm"
+      ],
+      "t": 1,
+      "izoh": "Katta diagonal o'tmas burchak qarshisida yotadi: d² = 36 + 100 − 2 · 6 · 10 · cos 120°. cos 120° = −0,5 bo'lgani uchun d² = 136 + 60 = 196 va d = 14 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,168.2 218.2,168.2 268,81.8 101.8,81.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='168.2' x2='268' y2='81.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 89.8 102.6 A 24 24 0 0 0 125.8 81.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='121.3' y='119.6' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='45' y='185.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='225.2' y='185.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='75.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='94.8' y='75.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='135.1' y='186.2' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='67.9' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-kosinuslar",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#26c36c94"
+    },
+    {
+      "q": "Ustaxonada tomonlari 7 sm va 8 sm bo'lgan parallelogramm shaklidagi metall ramka yasaldi, tomonlar orasidagi burchak 120°. Ramkaning uzun diagonali necha santimetr?",
+      "v": [
+        "√57 sm",
+        "15 sm",
+        "13 sm",
+        "169 sm"
+      ],
+      "t": 2,
+      "izoh": "Uzun diagonal 120° li burchak qarshisida: d² = 49 + 64 − 2 · 7 · 8 · cos 120° = 113 + 56 = 169. Demak d = √169 = 13 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,181.9 202.3,181.9 268,68.1 117.7,68.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='181.9' x2='268' y2='68.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 105.7 88.9 A 24 24 0 0 0 141.7 68.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='137.2' y='105.9' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='45' y='198.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='209.3' y='198.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='62.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='110.7' y='62.1' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='127.2' y='199.9' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='75.9' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-kosinuslar",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#88623b02"
+    },
+    {
+      "q": "Parallelogrammning tomonlari 4 sm va 6 sm, kichik diagonali esa 2√7 sm. Shu parallelogrammning o'tkir burchagi necha gradus?",
+      "v": [
+        "120°",
+        "30°",
+        "45°",
+        "60°"
+      ],
+      "t": 3,
+      "izoh": "Kichik diagonal o'tkir burchak qarshisida: (2√7)² = 16 + 36 − 2 · 4 · 6 · cos α. Ya'ni 28 = 52 − 48 · cos α, bundan 48 · cos α = 24 va cos α = 0,5, demak α = 60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-kosinuslar",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#9fa9b8ad"
+    },
+    {
+      "q": "Yer uchastkasi parallelogramm shaklida bo'lib, tomonlari 30 m va 50 m, o'tkir burchagi 60°. Uchastkaning katta diagonali necha metrga teng?",
+      "v": [
+        "70 m",
+        "4900 m",
+        "√1900 m",
+        "80 m"
+      ],
+      "t": 0,
+      "izoh": "Katta diagonal o'tmas (120°) burchak qarshisida yotadi: d² = 900 + 2500 + 2 · 30 · 50 · 0,5 = 3400 + 1500 = 4900. Bundan d = 70 m; ildiz olishni unutsa 4900 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,168.2 218.2,168.2 268,81.8 101.8,81.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='168.2' x2='268' y2='81.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 76 168.2 A 24 24 0 0 0 64 147.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='85.8' y='152.7' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='45' y='185.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='225.2' y='185.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='75.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='94.8' y='75.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='135.1' y='186.2' font-size='13' fill='%23334155' text-anchor='middle'%3E50 m%3C/text%3E%3Ctext x='67.9' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E30 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-kosinuslar",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#5813b7c8"
+    },
+    {
+      "q": "Ikkita parallelogramm shaklidagi maydonning asoslari teng, birinchisining balandligi ikkinchisinikidan 3 marta katta. Birinchisining yuzi 135 m² bo'lsa, ikkinchisining yuzi necha kvadrat metr?",
+      "v": [
+        "132 m²",
+        "45 m²",
+        "405 m²",
+        "67,5 m²"
+      ],
+      "t": 1,
+      "izoh": "Asoslar teng bo'lgani uchun yuzalar balandliklarga to'g'ri proporsional. Balandlik 3 marta kichik bo'lsa, yuza ham 3 marta kichik: 135 : 3 = 45 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,171.8 214,171.8 268,78.2 106,78.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='106' y1='78.2' x2='106' y2='171.8' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='94,171.8 94,159.8 106,159.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='98' y='129' font-size='13' fill='%23334155' text-anchor='end'%3Eh%3C/text%3E%3Ctext x='45' y='188.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='221' y='188.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='72.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='99' y='72.2' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='133' y='189.8' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-taqqoslash",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#47fab2d2"
+    },
+    {
+      "q": "Parallelogrammning har bir tomoni 2 marta uzaytirildi, burchaklari esa o'zgarmadi. Yangi parallelogrammning yuzi avvalgisiga nisbatan necha marta ortadi?",
+      "v": [
+        "8 marta",
+        "16 marta",
+        "4 marta",
+        "2 marta"
+      ],
+      "t": 2,
+      "izoh": "S = a · b · sin α. Tomonlar ikki marta ortsa yuza (2a) · (2b) · sin α = 4 · a · b · sin α bo'ladi. Demak yuza 4 marta ortadi, perimetr esa faqat 2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-taqqoslash",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#b5683221"
+    },
+    {
+      "q": "Parallelogramm shaklidagi kafel plitkasining asosi 20 sm, balandligi esa 12 sm. 6 m² devorni to'liq qoplash uchun nechta shunday plitka kerak bo'ladi?",
+      "v": [
+        "25 ta",
+        "2500 ta",
+        "300 ta",
+        "250 ta"
+      ],
+      "t": 3,
+      "izoh": "Bitta plitka yuzi 20 · 12 = 240 sm². 1 m² = 10 000 sm² bo'lgani uchun 6 m² = 60 000 sm². Plitkalar soni 60 000 : 240 = 250 ta.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,172.5 217.5,172.5 268,77.5 102.5,77.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='102.5' y1='77.5' x2='102.5' y2='172.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='90.5,172.5 90.5,160.5 102.5,160.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.5' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='45' y='189.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='224.5' y='189.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='71.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='95.5' y='71.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='134.8' y='190.5' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-taqqoslash",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#96e9bf51"
+    },
+    {
+      "q": "ABCD parallelogramm shaklidagi bog' maydonining yuzi 240 m². A uchidan CD tomonining o'rtasi M ga to'g'ri yo'l chizildi. AMD uchburchak shaklidagi bo'lakning yuzi necha kvadrat metr?",
+      "v": [
+        "60 m²",
+        "120 m²",
+        "80 m²",
+        "40 m²"
+      ],
+      "t": 0,
+      "izoh": "AMD uchburchakning asosi DM = CD : 2, balandligi esa parallelogrammning balandligi h. S = (DM · h) : 2 = ((a : 2) · h) : 2 = (a · h) : 4 = 240 : 4 = 60 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-taqqoslash",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#343068ac"
+    },
+    {
+      "q": "Parallelogramm shaklidagi basseyn qirg'og'ining uzunligi 68 m. Basseynning bir tomoni 20 m, shu tomonga tushirilgan balandligi esa 9 m. Basseynning yuzi necha kvadrat metr?",
+      "v": [
+        "90 m²",
+        "180 m²",
+        "126 m²",
+        "306 m²"
+      ],
+      "t": 1,
+      "izoh": "Yuza uchun faqat asos va unga tushirilgan balandlik kerak: S = 20 · 9 = 180 m². Perimetr bu yerda ortiqcha ma'lumot; ikkinchi tomonni (34 − 20 = 14 m) olib 126 deyish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,156.6 192.6,156.6 268,93.4 127.4,93.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='127.4' y1='93.4' x2='127.4' y2='156.6' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='115.4,156.6 115.4,144.6 127.4,144.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='119.4' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E9 m%3C/text%3E%3Ctext x='45' y='173.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='199.6' y='173.6' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='87.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='120.4' y='87.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='122.3' y='174.6' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-yuza",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#693e1dea"
+    },
+    {
+      "q": "Parallelogrammning yuzi 150 sm², qo'shni tomonlari esa 15 sm va 12 sm. Kichik tomonga tushirilgan balandlik necha santimetr?",
+      "v": [
+        "25 sm",
+        "5 sm",
+        "12,5 sm",
+        "10 sm"
+      ],
+      "t": 2,
+      "izoh": "S = a · h formulasida asos sifatida kichik tomonni olamiz: h = 150 : 12 = 12,5 sm. Katta tomonga bo'lsak 150 : 15 = 10 sm chiqadi, lekin bu boshqa balandlik.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,174.9 201.7,174.9 268,75.1 118.3,75.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='45' y='191.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='208.7' y='191.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='69.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='111.3' y='69.1' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='126.9' y='192.9' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='76.2' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-yuza",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#f8f0197b"
+    },
+    {
+      "q": "Fermer parallelogramm shaklidagi maydonni o'rash uchun 120 m to'siq sarfladi. Maydonning asosi 35 m, yuzi esa 560 m². Asosga tushirilgan balandlik necha metr?",
+      "v": [
+        "25 m",
+        "32 m",
+        "8 m",
+        "16 m"
+      ],
+      "t": 3,
+      "izoh": "Balandlik uchun yuza va asos yetarli: h = 560 : 35 = 16 m. Perimetrdan topiladigan ikkinchi tomon 60 − 35 = 25 m bo'lib, u balandlik emas — yon tomon.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,156.9 191.5,156.9 268,93.1 128.5,93.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='128.5' y1='93.1' x2='128.5' y2='156.9' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='116.5,156.9 116.5,144.9 128.5,144.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='120.5' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='45' y='173.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='198.5' y='173.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='87.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='121.5' y='87.1' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='121.8' y='174.9' font-size='13' fill='%23334155' text-anchor='middle'%3E35 m%3C/text%3E%3Ctext x='81.3' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E25 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perimetr-yuza",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#aad86127"
+    },
+    {
+      "q": "Parallelogrammning yuzi 240 sm², unga tushirilgan ikkita balandlik esa 12 sm va 16 sm. Shu parallelogrammning perimetri necha santimetr?",
+      "v": [
+        "70 sm",
+        "56 sm",
+        "35 sm",
+        "140 sm"
+      ],
+      "t": 0,
+      "izoh": "Har bir balandlik o'z asosiga mos: a = 240 : 12 = 20 sm va b = 240 : 16 = 15 sm. Perimetr P = 2 · (20 + 15) = 70 sm. Balandliklarni tomon deb olsa 56 chiqib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,169.7 201,169.7 268,80.3 119,80.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119' y1='80.3' x2='119' y2='169.7' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='107,169.7 107,157.7 119,157.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='111' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='45' y='186.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='208' y='186.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='74.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='112' y='74.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perimetr-yuza",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#969f030c"
+    },
+    {
+      "q": "ABCD parallelogrammda M nuqta AB tomonining, N nuqta esa CD tomonining o'rtasi. MBCN to'rtburchak qanday shakl bo'ladi?",
+      "v": [
+        "Kvadrat",
+        "Parallelogramm",
+        "Trapetsiya",
+        "Romb"
+      ],
+      "t": 1,
+      "izoh": "MB va NC kesmalar AB va DC ning yarmiga teng, ya'ni o'zaro teng, hamda parallel. Ikki tomoni teng va parallel bo'lgan to'rtburchak parallelogramm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,168.7 221.6,168.7 268,81.3 98.4,81.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='136.8' y1='168.7' x2='183.2' y2='81.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='136.8' y='185.7' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='183.2' y='74.3' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='45' y='185.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='228.6' y='185.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='75.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='91.4' y='75.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-chiziqlar",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#d41ffb3a"
+    },
+    {
+      "q": "ABCD parallelogrammning tomonlari o'rtalari ketma-ket tutashtirildi. Hosil bo'lgan to'rtburchakning yuzi berilgan parallelogramm yuzining qanday qismini tashkil qiladi?",
+      "v": [
+        "To'rtdan birini",
+        "Uchdan ikkisini",
+        "Yarmini",
+        "Uchdan birini"
+      ],
+      "t": 2,
+      "izoh": "O'rta nuqtalar to'rtburchagi burchaklarda to'rtta uchburchak qoldiradi. Har bir burchak uchburchagi mos tomonlarning yarmiga qurilgani uchun ularning umumiy yuzi butun yuzaning yarmini beradi, qolgan yarmi esa ichki to'rtburchakka to'g'ri keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,168.7 221.6,168.7 268,81.3 98.4,81.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='136.8,168.7 244.8,125 183.2,81.3 75.2,125' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45' y='185.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='228.6' y='185.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='75.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='91.4' y='75.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-chiziqlar",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#73a0205f"
+    },
+    {
+      "q": "ABCD parallelogrammda M nuqta AD tomonining o'rtasi. BM kesma AC diagonalni K nuqtada kessa, AK : KC nisbati qanday bo'ladi?",
+      "v": [
+        "1 : 1",
+        "2 : 1",
+        "1 : 3",
+        "1 : 2"
+      ],
+      "t": 3,
+      "izoh": "AM ∥ BC va BC = 2 · AM bo'lgani uchun AKM va CKB uchburchaklar o'xshash, o'xshashlik koeffitsienti 1 : 2. Mos tomonlar nisbatidan AK : KC = AM : CB = 1 : 2.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,168.7 221.6,168.7 268,81.3 98.4,81.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='168.7' x2='268' y2='81.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221.6' y1='168.7' x2='75.2' y2='125' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='66.2' y='129' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='45' y='185.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='228.6' y='185.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='75.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='91.4' y='75.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-chiziqlar",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#6625cc9d"
+    },
+    {
+      "q": "ABCD parallelogrammda M nuqta AD tomonining, N nuqta esa BC tomonining o'rtasi. BMDN to'rtburchak qanday shakl bo'ladi?",
+      "v": [
+        "Parallelogramm",
+        "Trapetsiya",
+        "To'g'ri to'rtburchak",
+        "Romb"
+      ],
+      "t": 0,
+      "izoh": "AD ∥ BC va AD = BC bo'lgani uchun ularning yarmilari DM va BN ham teng hamda parallel. Demak BMDN to'rtburchakning qarama-qarshi tomonlari teng va parallel — u parallelogramm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,168.7 221.6,168.7 268,81.3 98.4,81.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='221.6' y1='168.7' x2='75.2' y2='125' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='98.4' y1='81.3' x2='244.8' y2='125' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='66.2' y='129' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='253.8' y='129' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='45' y='185.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='228.6' y='185.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='75.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='91.4' y='75.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-chiziqlar",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#cb578a89"
+    },
+    {
+      "q": "Ustaxona parallelogramm shaklidagi taxta bo'laklarini kesadi: har birining asosi 30 sm, balandligi 18 sm. Bir kvadrat metr taxtaning narxi 45 000 so'm bo'lsa, bitta bo'lakka qancha so'mlik taxta ketadi?",
+      "v": [
+        "1215 so'm",
+        "2430 so'm",
+        "24 300 so'm",
+        "243 so'm"
+      ],
+      "t": 1,
+      "izoh": "Bo'lak yuzi 30 · 18 = 540 sm². 1 m² = 10 000 sm² bo'lgani uchun 540 sm² = 0,054 m². Narxi 0,054 · 45 000 = 2430 so'm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,175.1 219.2,175.1 268,74.9 100.8,74.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='100.8' y1='74.9' x2='100.8' y2='175.1' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='88.8,175.1 88.8,163.1 100.8,163.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='92.8' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E18 sm%3C/text%3E%3Ctext x='45' y='192.1' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='226.2' y='192.1' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='68.9' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='93.8' y='68.9' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='135.6' y='193.1' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-modellashtirish",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#97a2139d"
+    },
+    {
+      "q": "Parallelogramm shaklidagi gulzorning asosi 12 m, balandligi esa 7 m. Har bir kvadrat metr maydonga 8 tupdan gul ekilsa, jami nechta tup gul kerak bo'ladi?",
+      "v": [
+        "84 tup",
+        "152 tup",
+        "672 tup",
+        "336 tup"
+      ],
+      "t": 2,
+      "izoh": "Gulzor yuzi S = 12 · 7 = 84 m². Har kvadrat metrga 8 tup ekilsa, jami 84 · 8 = 672 tup gul kerak bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,172.6 215.2,172.6 268,77.4 104.8,77.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='104.8' y1='77.4' x2='104.8' y2='172.6' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='92.8,172.6 92.8,160.6 104.8,160.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='96.8' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E7 m%3C/text%3E%3Ctext x='45' y='189.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='222.2' y='189.6' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='71.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='97.8' y='71.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='133.6' y='190.6' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-modellashtirish",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#f3ec9683"
+    },
+    {
+      "q": "Parallelogramm shaklidagi tom yuzasining asosi 15 m, balandligi 6 m. Bitta profnastil listi 2 m² ni qoplaydi va 10% zaxira olinadi. Nechta list sotib olish kerak?",
+      "v": [
+        "45 ta",
+        "55 ta",
+        "99 ta",
+        "50 ta"
+      ],
+      "t": 3,
+      "izoh": "Tom yuzi 15 · 6 = 90 m². Zaxira bilan 90 · 1,1 = 99 m². Listlar soni 99 : 2 = 49,5, butun listlar sotilgani uchun 50 ta kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,166.3 225.9,166.3 268,83.7 94.1,83.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94.1' y1='83.7' x2='94.1' y2='166.3' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='82.1,166.3 82.1,154.3 94.1,154.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='86.1' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E6 m%3C/text%3E%3Ctext x='45' y='183.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='232.9' y='183.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='77.7' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='87.1' y='77.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='139' y='184.3' font-size='13' fill='%23334155' text-anchor='middle'%3E15 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-modellashtirish",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#3d61a71e"
+    },
+    {
+      "q": "Dala parallelogramm shaklida bo'lib, tomonlari 120 m va 80 m, o'tkir burchagi 30°. Har bir gektardan 55 sentner hosil olinsa, butun daladan necha sentner hosil olinadi?",
+      "v": [
+        "26,4 sentner",
+        "264 sentner",
+        "52,8 sentner",
+        "2,64 sentner"
+      ],
+      "t": 0,
+      "izoh": "Dala yuzi S = 120 · 80 · sin 30° = 9600 · 0,5 = 4800 m². 1 gektar 10 000 m² bo'lgani uchun 4800 m² = 0,48 ga. Hosil 0,48 · 55 = 26,4 sentner.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-modellashtirish",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#336db1df"
+    },
+    {
+      "q": "ABCD parallelogrammda ∠B = 120°, AB = 9 sm va BC = 14 sm. AD tomon hamda ∠D burchakning qiymatlari qanday?",
+      "v": [
+        "AD = 9 sm, ∠D = 60°",
+        "AD = 14 sm, ∠D = 120°",
+        "AD = 9 sm, ∠D = 120°",
+        "AD = 14 sm, ∠D = 60°"
+      ],
+      "t": 1,
+      "izoh": "AD va BC qarama-qarshi tomonlar, shuning uchun AD = BC = 14 sm. ∠D va ∠B ham qarama-qarshi burchaklar, demak ∠D = ∠B = 120°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,206.8 173.5,206.8 268,43.2 146.5,43.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 185.5 186 A 24 24 0 0 0 149.5 206.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='154' y='177' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='45' y='223.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='180.5' y='223.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='37.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='139.5' y='37.2' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='112.8' y='224.8' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='229.8' y='129' font-size='13' fill='%23334155' text-anchor='start'%3E14 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-xossalar",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#7782c7a9"
+    },
+    {
+      "q": "Parallelogramm shaklidagi bayroqchaning qo'shni tomonlari 24 sm va 18 sm, ular orasidagi o'tkir burchak esa 45°. Bayroqchaning yuzi necha kvadrat santimetr?",
+      "v": [
+        "216 sm²",
+        "216√3 sm²",
+        "216√2 sm²",
+        "432 sm²"
+      ],
+      "t": 2,
+      "izoh": "S = 24 · 18 · sin 45° = 432 · (√2 : 2) = 216√2 sm² ≈ 305 sm². Sinusni tushirib qoldirsa 432 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,162.4 193.1,162.4 268,87.6 126.9,87.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 76 162.4 A 24 24 0 0 0 69 145.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='88' y='151.5' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='45' y='179.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='200.1' y='179.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='81.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='119.9' y='81.6' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='122.6' y='180.4' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='80.5' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E18 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-xossalar",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#1997b824"
+    },
+    {
+      "q": "Parallelogrammning bir tomoni 10 sm, unga tushirilgan balandlik 6 sm, qo'shni tomoni esa 12 sm. Parallelogrammning o'tkir burchagi sinusi nechaga teng?",
+      "v": [
+        "0,6",
+        "0,8",
+        "0,75",
+        "0,5"
+      ],
+      "t": 3,
+      "izoh": "Yuza S = 10 · 6 = 60 sm². Ikkinchi tomondan S = 10 · 12 · sin α = 120 · sin α. Ikki ifodani tenglashtiramiz: 120 · sin α = 60, bundan sin α = 0,5.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='52,156.8 157.9,156.8 268,93.2 162.1,93.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='157.9' y1='156.8' x2='172.1' y2='156.8' stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='162.1' y1='93.2' x2='162.1' y2='156.8' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150.1,156.8 150.1,144.8 162.1,144.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='154.1' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Ctext x='45' y='173.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='164.9' y='173.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='275' y='87.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='155.1' y='87.2' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='105' y='174.8' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='98.1' y='129' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-xossalar",
+      "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari#c991ad7f"
+    }
+  ]
+}

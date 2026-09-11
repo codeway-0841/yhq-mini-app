@@ -1,0 +1,516 @@
+{
+  "nom": "02-mavzu. Molekula Massasi Olchami",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Molekula deb nimaga aytiladi?",
+      "v": [
+        "Moddaning kimyoviy xossasini o'zida saqlab qoladigan eng kichik zarrasiga",
+        "Moddaning eng kichik bo'linmas zarrasiga",
+        "Atomning ichki qismidagi zarraga",
+        "Har qanday ko'zga ko'rinmaydigan zarraga"
+      ],
+      "t": 0,
+      "izoh": "Moddaning kimyoviy xossasini o'zida saqlab qoladigan eng kichik zarraga molekula deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#0cb308ad"
+    },
+    {
+      "q": "Vodorod (H₂) molekulasi nechta atomdan tashkil topgan?",
+      "v": [
+        "2 ta vodorod atomidan",
+        "1 ta vodorod atomidan",
+        "3 ta vodorod atomidan",
+        "4 ta vodorod atomidan"
+      ],
+      "t": 0,
+      "izoh": "Har bir vodorod molekulasi 2 ta vodorod (H) atomidan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#1452f119"
+    },
+    {
+      "q": "Suv (H₂O) molekulasi qanday atomlardan tashkil topgan?",
+      "v": [
+        "2 ta vodorod va 1 ta kislorod atomidan",
+        "1 ta vodorod va 2 ta kislorod atomidan",
+        "2 ta kislorod va 1 ta vodorod atomidan",
+        "3 ta kislorod atomidan"
+      ],
+      "t": 0,
+      "izoh": "Har bir suv molekulasi 2 ta vodorod (H) va 1 ta kislorod (O) atomidan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#feca4913"
+    },
+    {
+      "q": "Metallar va inert gazlar tabiatda qanday holatda uchraydi?",
+      "v": [
+        "Atom holda",
+        "Ikki atomli molekula holda",
+        "Uch atomli molekula holda",
+        "Ion holda"
+      ],
+      "t": 0,
+      "izoh": "Metallar va inert gazlar tabiatda atom holda uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#212f0dda"
+    },
+    {
+      "q": "Metall va inert gazlardan boshqa moddalarning molekulasi eng kamida nechta atomdan tashkil topgan bo'ladi?",
+      "v": [
+        "Ikkita atomdan",
+        "Bitta atomdan",
+        "Uchta atomdan",
+        "To'rtta atomdan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra, metall va inert gazlardan boshqa moddalarning molekulasi eng kamida ikkita atomdan tashkil topgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#ad8018a6"
+    },
+    {
+      "q": "Zaytun moyi tomchisi suv sirtida yoyilishi tajribasida hajmi 1 mm³ bo'lgan tomchi qanday yuzani egallaydi?",
+      "v": [
+        "Taxminan 0,6 m²",
+        "Taxminan 6 m²",
+        "Taxminan 0,06 m²",
+        "Taxminan 60 m²"
+      ],
+      "t": 0,
+      "izoh": "Hajmi 1 mm³ bo'lgan zaytun moyi tomchisi suv sirtida taxminan 0,6 m² yuzani egallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#10530f39"
+    },
+    {
+      "q": "Moy qatlamining qalinligini qanday topish mumkin?",
+      "v": [
+        "Qatlam hajmini yoyilgan yuzaga bo'lish orqali (d = V/S)",
+        "Yuzani hajmga ko'paytirish orqali",
+        "Hajmni zichlikka bo'lish orqali",
+        "Yuzani vaqtga bo'lish orqali"
+      ],
+      "t": 0,
+      "izoh": "V = S·d formuladan d = V/S orqali moy qatlami qalinligi, ya'ni molekula diametri aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#aac65b6a"
+    },
+    {
+      "q": "Zaytun moyi tajribasida aniqlangan molekula diametri qanchaga teng?",
+      "v": [
+        "d ≈ 1,7·10⁻⁹ m",
+        "d ≈ 1,7·10⁻⁶ m",
+        "d ≈ 1,7·10⁻¹² m",
+        "d ≈ 1,7·10⁻³ m"
+      ],
+      "t": 0,
+      "izoh": "d = 10⁻⁹ m³ / 0,6 m² ≈ 1,7·10⁻⁹ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#76277e3f"
+    },
+    {
+      "q": "Atomni qanday o'lchamdagi shar ko'rinishida tasavvur qilish mumkin?",
+      "v": [
+        "Radiusi 10⁻¹⁰ m ga yaqin",
+        "Radiusi 10⁻⁶ m ga yaqin",
+        "Radiusi 10⁻¹⁵ m ga yaqin",
+        "Radiusi 10⁻³ m ga yaqin"
+      ],
+      "t": 0,
+      "izoh": "O'lchash natijalari asosida atomni radiusi 10⁻¹⁰ m ga yaqin shar ko'rinishida tasavvur qilish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#49704a09"
+    },
+    {
+      "q": "Vodorod molekulasining diametri qanchaga teng?",
+      "v": [
+        "d ≈ 2,3·10⁻¹⁰ m",
+        "d ≈ 2,3·10⁻⁹ m",
+        "d ≈ 2,3·10⁻⁸ m",
+        "d ≈ 2,3·10⁻¹² m"
+      ],
+      "t": 0,
+      "izoh": "Vodorod molekulasining diametri d ≈ 2,3·10⁻¹⁰ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#e3d71c38"
+    },
+    {
+      "q": "Suv molekulasining diametri qanchaga teng?",
+      "v": [
+        "d ≈ 3·10⁻¹⁰ m",
+        "d ≈ 3·10⁻⁹ m",
+        "d ≈ 3·10⁻⁸ m",
+        "d ≈ 3·10⁻¹¹ m"
+      ],
+      "t": 0,
+      "izoh": "Suv molekulasining diametri d ≈ 3·10⁻¹⁰ m ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#a67f8bd8"
+    },
+    {
+      "q": "Molekulalarning diametri atomning diametridan qanday farq qiladi?",
+      "v": [
+        "Molekulalar bir nechta atomdan tashkil topganligi uchun ularning diametri atomnikidan kattaroq bo'ladi",
+        "Molekula diametri atomnikidan kichik bo'ladi",
+        "Molekula va atom diametrlari har doim teng",
+        "Molekula diametrini atom diametri bilan solishtirish mumkin emas"
+      ],
+      "t": 0,
+      "izoh": "Molekulalar bir nechta atomdan tashkil topgani uchun ularning diametri atomning diametridan kattaroq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#2696a909"
+    },
+    {
+      "q": "Molekulani olmadek kattalashtirilsa, shuncha marta kattalashtirilgan olma nimadek bo'lardi?",
+      "v": [
+        "Yer sayyorasidek",
+        "Futbol to'pidek",
+        "Uydek",
+        "O'rikdek"
+      ],
+      "t": 0,
+      "izoh": "Molekula olmadek kattalashtirilsa, shuncha marta kattalashtirilgan olma Yer sayyorasidek bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#92693094"
+    },
+    {
+      "q": "Tabiatdagi hamma narsa 10⁸ marta kattalashsa, bo'yi 1 m bo'lgan bolaning bo'yi qanchaga yetardi?",
+      "v": [
+        "100 000 km ga",
+        "1000 km ga",
+        "10 km ga",
+        "1 000 000 km ga"
+      ],
+      "t": 0,
+      "izoh": "1 m · 10⁸ = 10⁸ m = 100 000 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#08520238"
+    },
+    {
+      "q": "Tunnelli mikroskop kim tomonidan va qachon yaratilgan?",
+      "v": [
+        "1980-yillarda IBM firmasi xodimlari tomonidan",
+        "1827-yilda Robert Broun tomonidan",
+        "1905-yilda A.Eynshteyn tomonidan",
+        "1742-yilda A.Selsiy tomonidan"
+      ],
+      "t": 0,
+      "izoh": "Tunnelli mikroskop 1980-yillarda mashhur IBM firmasi xodimlari tomonidan yaratilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#aea7fe94"
+    },
+    {
+      "q": "Tunnelli mikroskop kashfiyotining mualliflari Gerd Binning va Genrix Rorerga qachon Nobel mukofoti berilgan?",
+      "v": [
+        "1986-yilda",
+        "1926-yilda",
+        "1980-yilda",
+        "2000-yilda"
+      ],
+      "t": 0,
+      "izoh": "Tunnelli mikroskop mualliflariga 1986-yilda Nobel mukofoti berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#8e329db7"
+    },
+    {
+      "q": "Tunnelli mikroskop o'lchamni necha marta kattalashtirish imkoniyatiga ega?",
+      "v": [
+        "100 million marta",
+        "100 ming marta",
+        "1 million marta",
+        "10 million marta"
+      ],
+      "t": 0,
+      "izoh": "Tunnelli mikroskop o'lchamni 100 million marta kattalashtirish imkoniyatiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#ce415075"
+    },
+    {
+      "q": "Tunnelli mikroskop yordamida aniqlangan uglerod atomining diametri qancha?",
+      "v": [
+        "1,4·10⁻¹⁰ m",
+        "1,4·10⁻⁹ m",
+        "1,4·10⁻⁸ m",
+        "1,4·10⁻¹² m"
+      ],
+      "t": 0,
+      "izoh": "Tunnelli mikroskop yordamida uglerod atomining diametri 1,4·10⁻¹⁰ m ga tengligi aniqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#d08b6c5b"
+    },
+    {
+      "q": "Suv molekulasining massasi qanchaga teng?",
+      "v": [
+        "m(H₂O) ≈ 2,7·10⁻²⁶ kg",
+        "m(H₂O) ≈ 2,7·10⁻²³ kg",
+        "m(H₂O) ≈ 2,7·10⁻²⁰ kg",
+        "m(H₂O) ≈ 2,7·10⁻³⁰ kg"
+      ],
+      "t": 0,
+      "izoh": "Suv molekulasining massasi taxminan 2,7·10⁻²⁶ kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#13ca6465"
+    },
+    {
+      "q": "Kislorod molekulasining massasi qanchaga teng?",
+      "v": [
+        "m(O₂) ≈ 5,32·10⁻²⁶ kg",
+        "m(O₂) ≈ 5,32·10⁻²³ kg",
+        "m(O₂) ≈ 5,32·10⁻²⁰ kg",
+        "m(O₂) ≈ 5,32·10⁻²⁹ kg"
+      ],
+      "t": 0,
+      "izoh": "Kislorod molekulasining massasi taxminan 5,32·10⁻²⁶ kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#d3b8cdd5"
+    },
+    {
+      "q": "Uglerod atomining massasi qanchaga teng?",
+      "v": [
+        "m(C) ≈ 1,992·10⁻²⁶ kg",
+        "m(C) ≈ 1,992·10⁻²³ kg",
+        "m(C) ≈ 1,992·10⁻²⁷ kg",
+        "m(C) ≈ 1,992·10⁻²⁰ kg"
+      ],
+      "t": 0,
+      "izoh": "Uglerod atomining massasi taxminan 1,992·10⁻²⁶ kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#4bc1eec8"
+    },
+    {
+      "q": "Simob atomining massasi qanchaga teng?",
+      "v": [
+        "m(Hg) ≈ 3,337·10⁻²⁵ kg",
+        "m(Hg) ≈ 3,337·10⁻²⁶ kg",
+        "m(Hg) ≈ 3,337·10⁻²² kg",
+        "m(Hg) ≈ 3,337·10⁻²⁸ kg"
+      ],
+      "t": 0,
+      "izoh": "Simob atomining massasi taxminan 3,337·10⁻²⁵ kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#f75b27b1"
+    },
+    {
+      "q": "Massa atom birligi (m.a.b.) qanday aniqlanadi?",
+      "v": [
+        "Uglerod atomi massasining 1/12 qismi sifatida",
+        "Vodorod atomi massasi sifatida",
+        "Kislorod atomi massasining 1/16 qismi sifatida",
+        "Suv molekulasi massasi sifatida"
+      ],
+      "t": 0,
+      "izoh": "Xalqaro kelishuvga muvofiq barcha modda atomlarining massasi uglerod atomi massasining 1/12 qismi bilan taqqoslanadi; u holda 1 u ≈ 1,66·10⁻²⁷ kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#4b92eb84"
+    },
+    {
+      "q": "1 massa atom birligi (1 u) necha kilogrammga teng?",
+      "v": [
+        "1 u ≈ 1,66·10⁻²⁷ kg",
+        "1 u ≈ 1,66·10⁻²⁶ kg",
+        "1 u ≈ 1,66·10⁻²⁴ kg",
+        "1 u ≈ 1,66·10⁻³⁰ kg"
+      ],
+      "t": 0,
+      "izoh": "1 u ≈ 1,66·10⁻²⁷ kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#e7b46d80"
+    },
+    {
+      "q": "Moddaning nisbiy atom massasi deb nimaga aytiladi?",
+      "v": [
+        "Berilgan modda atomi massasining uglerod atom massasi 1/12 qismiga nisbatiga",
+        "Atom massasining vodorod atomi massasiga nisbatiga",
+        "Atom massasining 1 kg ga nisbatiga",
+        "Molekula massasining suv molekulasi massasiga nisbatiga"
+      ],
+      "t": 0,
+      "izoh": "Berilgan modda atomi massasining (m₀) uglerod atom massasi (m₀c) 1/12 qismiga nisbatiga shu moddaning nisbiy atom massasi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#1f7d05cd"
+    },
+    {
+      "q": "Kislorod atomining nisbiy atom massasi qanchaga teng?",
+      "v": [
+        "16 u",
+        "8 u",
+        "12 u",
+        "32 u"
+      ],
+      "t": 0,
+      "izoh": "A_n = 2,66·10⁻²⁶ kg / 1,66·10⁻²⁷ kg = 16 u.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#5e260e97"
+    },
+    {
+      "q": "Suv (H₂O) molekulasining nisbiy molekulyar massasi qanday topiladi va qanchaga teng?",
+      "v": [
+        "Ikki vodorod atomining nisbiy massasiga bitta kislorod atomining nisbiy massasi qo'shiladi: M = 1·2 + 16 = 18 u",
+        "Vodorod va kislorod massalari ko'paytiriladi: 2·16 = 32 u",
+        "Faqat kislorodning nisbiy massasi olinadi: 16 u",
+        "Uchta atom massasi o'rtachasi: 11 u"
+      ],
+      "t": 0,
+      "izoh": "M(H₂O) = 1·2 + 16 = 18 u.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#b6f8bc26"
+    },
+    {
+      "q": "Nisbiy atom massa qanday kattalikdir?",
+      "v": [
+        "O'lchamsiz kattalik",
+        "Massa birligiga ega kattalik",
+        "Kg da o'lchanadigan kattalik",
+        "Gramm da ifodalanadigan kattalik"
+      ],
+      "t": 0,
+      "izoh": "Nisbiy atom massa o'lchamsiz kattalikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#d513304e"
+    },
+    {
+      "q": "Barcha kimyoviy elementlarning nisbiy atom massasi qayerda berilgan?",
+      "v": [
+        "D.I.Mendeleyevning kimyoviy elementlar davriy sistemasida",
+        "Broun jadvalida",
+        "Avogadro jadvalida",
+        "Bolsman taqsimotida"
+      ],
+      "t": 0,
+      "izoh": "Barcha kimyoviy elementlarning nisbiy atom massasi D.I.Mendeleyevning kimyoviy elementlar davriy sistemasida berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#28123692"
+    },
+    {
+      "q": "Murakkab modda molekulasining nisbiy molekulyar massasini topish uchun nima qilish kerak?",
+      "v": [
+        "Tarkibiga kiruvchi elementlarning nisbiy atom massalarini qo'shish kerak",
+        "Elementlarning nisbiy atom massalarini ko'paytirish kerak",
+        "Eng og'ir atomning massasini olish kerak",
+        "Atomlar sonini uglerod massasiga ko'paytirish kerak"
+      ],
+      "t": 0,
+      "izoh": "Nisbiy molekulyar massa tarkibidagi elementlarning nisbiy atom massalari yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#ae76ff95"
+    },
+    {
+      "q": "1 m³ suvdagi molekulalar soni taxminan qancha (suv molekulasi diametri ~3·10⁻¹⁰ m deb olinsa)?",
+      "v": [
+        "N ≈ 3,7·10²⁸ ta",
+        "N ≈ 3,7·10²⁵ ta",
+        "N ≈ 3,7·10³⁰ ta",
+        "N ≈ 3,7·10²² ta"
+      ],
+      "t": 0,
+      "izoh": "N = 1 m³ / (3·10⁻¹⁰ m)³ ≈ 3,7·10²⁸ ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#287d6dfb"
+    },
+    {
+      "q": "Massasi m₀ = 3·10⁻²⁶ kg bo'lgan modda molekulalaridan tashkil topgan 12 cm³ (zichligi 1000 kg/m³) suvdagi molekulalar soni qanday ifoda bilan topiladi?",
+      "v": [
+        "N = ρ·V/m₀",
+        "N = m₀/(ρ·V)",
+        "N = V/(ρ·m₀)",
+        "N = ρ·m₀·V"
+      ],
+      "t": 0,
+      "izoh": "m = ρ·V; N = m/m₀ = ρ·V/m₀. Darslikdagi masalada N = 4·10²³ ta chiqqan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#0590f79a"
+    },
+    {
+      "q": "Molekulaning o'lchamini aniqlovchi zaytun moyi tajribasida moy tomchisi suv yuzida eng katta yuzaga yoyilganda nima deb tasavvur qilish mumkin?",
+      "v": [
+        "Moy qatlamining qalinligini bitta molekula diametriga yaqin deb",
+        "Moy molekulalari suvda eriydi deb",
+        "Moy molekulari suv molekuladan katta deb",
+        "Moy qatlami bir necha qavatdan iborat deb"
+      ],
+      "t": 0,
+      "izoh": "Moy tomchisi eng katta yuzaga yoyilganda moy qatlamining qalinligini bitta molekula diametriga yaqin deb tasavvur qilish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#22f1e18c"
+    },
+    {
+      "q": "Bunday o'lchamdagi (~10⁻¹⁰ m) molekulani eng kuchli optik mikroskopda ham ilg'ab bo'lmasligining sababi nima?",
+      "v": [
+        "Molekulalar nihoyatda mayda bo'lgani uchun",
+        "Molekulalar shaffof bo'lgani uchun",
+        "Molekulalar harakatsiz bo'lgani uchun",
+        "Optik mikroskop yorug'lik chiqarmagani uchun"
+      ],
+      "t": 0,
+      "izoh": "Molekulalar juda kichik bo'lganligi uchun ularni ko'z bilan, hatto eng kuchli optik mikroskopda ham ko'rib bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m02-molekula-massasi-olchami#c8e1809f"
+    }
+  ]
+}

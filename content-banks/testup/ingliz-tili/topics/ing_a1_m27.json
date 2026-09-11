@@ -1,0 +1,1280 @@
+{
+  "nom": "Family (Oila a'zolari)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "\"Buvi\" inglizcha qanday?",
+      "v": [
+        "grandfather",
+        "grandmother",
+        "mother",
+        "aunt"
+      ],
+      "t": 1,
+      "izoh": "Buvi = grandmother.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#cef2e6c4"
+    },
+    {
+      "q": "\"Bobo\" inglizcha qanday?",
+      "v": [
+        "grandmother",
+        "uncle",
+        "grandfather",
+        "father"
+      ],
+      "t": 2,
+      "izoh": "Bobo = grandfather.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#df94b39a"
+    },
+    {
+      "q": "\"Aka\" yoki \"uka\" inglizcha qanday?",
+      "v": [
+        "sister",
+        "brother",
+        "cousin",
+        "son"
+      ],
+      "t": 1,
+      "izoh": "Aka/uka = brother.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#7783af9e"
+    },
+    {
+      "q": "\"Opa\" yoki \"singil\" inglizcha qanday?",
+      "v": [
+        "brother",
+        "daughter",
+        "sister",
+        "aunt"
+      ],
+      "t": 2,
+      "izoh": "Opa/singil = sister.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#8578b554"
+    },
+    {
+      "q": "\"O'g'il\" inglizcha qanday?",
+      "v": [
+        "daughter",
+        "son",
+        "brother",
+        "father"
+      ],
+      "t": 1,
+      "izoh": "O'g'il = son.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#4628f8d1"
+    },
+    {
+      "q": "\"Qiz (farzand)\" inglizcha qanday?",
+      "v": [
+        "daughter",
+        "sister",
+        "wife",
+        "mother"
+      ],
+      "t": 0,
+      "izoh": "Qiz farzand = daughter.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#96c2cac2"
+    },
+    {
+      "q": "\"Xotin / rafiqa\" inglizcha qanday?",
+      "v": [
+        "husband",
+        "wife",
+        "sister",
+        "aunt"
+      ],
+      "t": 1,
+      "izoh": "Xotin/rafiqa = wife.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#64deb0e8"
+    },
+    {
+      "q": "\"Er / turmush o'rtog'i (erkak)\" inglizcha qanday?",
+      "v": [
+        "husband",
+        "wife",
+        "uncle",
+        "son"
+      ],
+      "t": 0,
+      "izoh": "Er = husband.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#672772b6"
+    },
+    {
+      "q": "\"Amaki / tog'a\" inglizcha qanday?",
+      "v": [
+        "aunt",
+        "uncle",
+        "cousin",
+        "father"
+      ],
+      "t": 1,
+      "izoh": "Amaki/tog'a = uncle.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#3f461121"
+    },
+    {
+      "q": "\"Xola / amma\" inglizcha qanday?",
+      "v": [
+        "uncle",
+        "grandmother",
+        "aunt",
+        "sister"
+      ],
+      "t": 2,
+      "izoh": "Xola/amma = aunt.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#f3f9d528"
+    },
+    {
+      "q": "\"Ota-ona\" inglizcha qanday?",
+      "v": [
+        "parents",
+        "children",
+        "grandparents",
+        "brothers"
+      ],
+      "t": 0,
+      "izoh": "Ota-ona = parents.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#c178418e"
+    },
+    {
+      "q": "\"Amakivachcha (cousin)\" inglizcha qanday?",
+      "v": [
+        "cousin",
+        "uncle",
+        "brother",
+        "son"
+      ],
+      "t": 0,
+      "izoh": "Amakivachcha = cousin.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#b1c8a53f"
+    },
+    {
+      "q": "My mother's mother is my ___.",
+      "v": [
+        "aunt",
+        "grandmother",
+        "sister",
+        "daughter"
+      ],
+      "t": 1,
+      "izoh": "Onaning onasi = grandmother (buvi).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#89f035a5"
+    },
+    {
+      "q": "My father's father is my ___.",
+      "v": [
+        "grandfather",
+        "uncle",
+        "brother",
+        "son"
+      ],
+      "t": 0,
+      "izoh": "Otaning otasi = grandfather (bobo).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#ab609c22"
+    },
+    {
+      "q": "My mother's brother is my ___.",
+      "v": [
+        "cousin",
+        "uncle",
+        "father",
+        "son"
+      ],
+      "t": 1,
+      "izoh": "Onaning akasi = uncle (tog'a).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#91fd72ce"
+    },
+    {
+      "q": "My father's sister is my ___.",
+      "v": [
+        "aunt",
+        "mother",
+        "sister",
+        "grandmother"
+      ],
+      "t": 0,
+      "izoh": "Otaning singlisi = aunt (amma).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#67ea8ef0"
+    },
+    {
+      "q": "My parents' son (not me) is my ___.",
+      "v": [
+        "brother",
+        "uncle",
+        "cousin",
+        "father"
+      ],
+      "t": 0,
+      "izoh": "Ota-onaning o'g'li = brother (aka/uka).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#16176897"
+    },
+    {
+      "q": "My uncle's son is my ___.",
+      "v": [
+        "brother",
+        "cousin",
+        "father",
+        "son"
+      ],
+      "t": 1,
+      "izoh": "Amakining o'g'li = cousin.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#a0445f48"
+    },
+    {
+      "q": "A woman's married partner is her ___.",
+      "v": [
+        "wife",
+        "husband",
+        "son",
+        "brother"
+      ],
+      "t": 1,
+      "izoh": "Ayolning turmush o'rtog'i = husband (erkak).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#31d6fef5"
+    },
+    {
+      "q": "A man's married partner is his ___.",
+      "v": [
+        "husband",
+        "daughter",
+        "wife",
+        "aunt"
+      ],
+      "t": 2,
+      "izoh": "Erkakning turmush o'rtog'i = wife (ayol).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#ae3badb2"
+    },
+    {
+      "q": "Mother and father together are ___.",
+      "v": [
+        "parents",
+        "cousins",
+        "grandparents",
+        "sisters"
+      ],
+      "t": 0,
+      "izoh": "Ona va ota birga = parents.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#6b6f1f04"
+    },
+    {
+      "q": "Choose the family word.",
+      "v": [
+        "table",
+        "brother",
+        "apple",
+        "blue"
+      ],
+      "t": 1,
+      "izoh": "Brother – oila a'zosi; boshqalari oila so'zi emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#73750f09"
+    },
+    {
+      "q": "Which one is a family member?",
+      "v": [
+        "chair",
+        "sister",
+        "water",
+        "green"
+      ],
+      "t": 1,
+      "izoh": "Sister – oila a'zosi (opa/singil).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#d7838ca8"
+    },
+    {
+      "q": "Our two children: a son and a ___.",
+      "v": [
+        "daughter",
+        "mother",
+        "uncle",
+        "wife"
+      ],
+      "t": 0,
+      "izoh": "Farzandlar: son (o'g'il) va daughter (qiz).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#84c5df11"
+    },
+    {
+      "q": "Find the error: 'My mother is a man.'",
+      "v": [
+        "mother should be father",
+        "man should be woman",
+        "is should be are",
+        "my should be me"
+      ],
+      "t": 1,
+      "izoh": "Ona ayol, shuning uchun 'woman' to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#b690997d"
+    },
+    {
+      "q": "Find the error: 'My father is my mother's daughter.'",
+      "v": [
+        "father should be son",
+        "daughter should be husband",
+        "mother should be sister",
+        "is should be am"
+      ],
+      "t": 1,
+      "izoh": "Ota – onaning eri (husband), 'daughter' xato.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#e66f646b"
+    },
+    {
+      "q": "Grandmother and grandfather together are ___.",
+      "v": [
+        "parents",
+        "grandparents",
+        "cousins",
+        "aunts"
+      ],
+      "t": 1,
+      "izoh": "Buvi va bobo = grandparents.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#7fdcd52d"
+    },
+    {
+      "q": "I have a brother and a ___ (a girl).",
+      "v": [
+        "sister",
+        "uncle",
+        "father",
+        "husband"
+      ],
+      "t": 0,
+      "izoh": "Qiz aka-uka = sister (opa/singil).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#f70aa3d9"
+    },
+    {
+      "q": "Which word means \"buvi\"?",
+      "v": [
+        "grandmother",
+        "daughter",
+        "mother",
+        "aunt"
+      ],
+      "t": 0,
+      "izoh": "Buvi = grandmother.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#37e4979a"
+    },
+    {
+      "q": "Which word means \"bobo\"?",
+      "v": [
+        "son",
+        "grandfather",
+        "uncle",
+        "brother"
+      ],
+      "t": 1,
+      "izoh": "Bobo = grandfather.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#21bd56df"
+    },
+    {
+      "q": "Choose the correct: \"My ___ cooks dinner. She is my mother.\"",
+      "v": [
+        "mother",
+        "father",
+        "brother",
+        "uncle"
+      ],
+      "t": 0,
+      "izoh": "'She' va 'mother' – ona.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#eb13ed34"
+    },
+    {
+      "q": "Choose the correct: \"My ___ drives a car. He is my father.\"",
+      "v": [
+        "mother",
+        "father",
+        "sister",
+        "aunt"
+      ],
+      "t": 1,
+      "izoh": "'He' va 'father' – ota.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#14f92ca6"
+    },
+    {
+      "q": "A married woman's partner is her ___.",
+      "v": [
+        "husband",
+        "wife",
+        "brother",
+        "son"
+      ],
+      "t": 0,
+      "izoh": "Turmushga chiqqan ayolning juftligi = husband.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#6d7b128c"
+    },
+    {
+      "q": "A married man's partner is his ___.",
+      "v": [
+        "husband",
+        "wife",
+        "daughter",
+        "mother"
+      ],
+      "t": 1,
+      "izoh": "Uylangan erkakning juftligi = wife.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#ca5906a2"
+    },
+    {
+      "q": "Which is correct for \"amaki\"?",
+      "v": [
+        "aunt",
+        "uncle",
+        "cousin",
+        "son"
+      ],
+      "t": 1,
+      "izoh": "Amaki/tog'a = uncle.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#67094b2d"
+    },
+    {
+      "q": "Which is correct for \"xola\"?",
+      "v": [
+        "uncle",
+        "grandmother",
+        "aunt",
+        "sister"
+      ],
+      "t": 2,
+      "izoh": "Xola/amma = aunt.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#b2762b4f"
+    },
+    {
+      "q": "Find the family word.",
+      "v": [
+        "cousin",
+        "window",
+        "river",
+        "seven"
+      ],
+      "t": 0,
+      "izoh": "Cousin – oila a'zosi (amakivachcha).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#fdef8f0b"
+    },
+    {
+      "q": "\"O'g'il va qiz\" inglizcha ___.",
+      "v": [
+        "son and daughter",
+        "brother and sister",
+        "uncle and aunt",
+        "father and mother"
+      ],
+      "t": 0,
+      "izoh": "O'g'il = son, qiz = daughter.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#b88d2c41"
+    },
+    {
+      "q": "My father's brother is my ___.",
+      "v": [
+        "cousin",
+        "aunt",
+        "nephew",
+        "uncle"
+      ],
+      "t": 3,
+      "izoh": "Otaning akasi/ukasi - uncle (amaki/tog'a).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#2c3ab7ed"
+    },
+    {
+      "q": "My mother's sister is my ___.",
+      "v": [
+        "uncle",
+        "cousin",
+        "aunt",
+        "niece"
+      ],
+      "t": 2,
+      "izoh": "Onaning opasi/singlisi - aunt (xola/amma).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#70a3829c"
+    },
+    {
+      "q": "My brother's son is my ___.",
+      "v": [
+        "cousin",
+        "nephew",
+        "uncle",
+        "niece"
+      ],
+      "t": 1,
+      "izoh": "Akaning o'g'li - nephew (jiyan, o'g'il bola).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#e696de2d"
+    },
+    {
+      "q": "My sister's daughter is my ___.",
+      "v": [
+        "aunt",
+        "niece",
+        "nephew",
+        "cousin"
+      ],
+      "t": 1,
+      "izoh": "Opaning qizi - niece (jiyan, qiz bola).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#873700c9"
+    },
+    {
+      "q": "My mother and father are my ___.",
+      "v": [
+        "grandparents",
+        "children",
+        "cousins",
+        "parents"
+      ],
+      "t": 3,
+      "izoh": "Ona va ota - parents (ota-ona).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#62a70923"
+    },
+    {
+      "q": "My grandmother and grandfather are my ___.",
+      "v": [
+        "grandparents",
+        "cousins",
+        "parents",
+        "children"
+      ],
+      "t": 0,
+      "izoh": "Buvi va bobo - grandparents.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#d9f1eb47"
+    },
+    {
+      "q": "My son's sister is my ___.",
+      "v": [
+        "sister",
+        "daughter",
+        "niece",
+        "son"
+      ],
+      "t": 1,
+      "izoh": "O'g'ilning singlisi - mening qizim (daughter).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#641dfe0e"
+    },
+    {
+      "q": "My daughter's brother is my ___.",
+      "v": [
+        "brother",
+        "son",
+        "nephew",
+        "daughter"
+      ],
+      "t": 1,
+      "izoh": "Qizning akasi - mening o'g'lim (son).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#1bc2fc24"
+    },
+    {
+      "q": "A man who is married to a woman is her ___.",
+      "v": [
+        "husband",
+        "son",
+        "wife",
+        "father"
+      ],
+      "t": 0,
+      "izoh": "Ayolning turmush o'rtog'i - husband (er).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#2251a4be"
+    },
+    {
+      "q": "A woman who is married to a man is his ___.",
+      "v": [
+        "wife",
+        "mother",
+        "husband",
+        "daughter"
+      ],
+      "t": 0,
+      "izoh": "Erkakning turmush o'rtog'i - wife (xotin).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#ff4f6001"
+    },
+    {
+      "q": "My aunt's daughter is my ___.",
+      "v": [
+        "sister",
+        "aunt",
+        "cousin",
+        "niece"
+      ],
+      "t": 2,
+      "izoh": "Xolaning qizi - cousin (xolavachcha).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#7bd33759"
+    },
+    {
+      "q": "My mother's other son is my ___.",
+      "v": [
+        "uncle",
+        "cousin",
+        "brother",
+        "sister"
+      ],
+      "t": 2,
+      "izoh": "Onaning boshqa o'g'li - brother (aka/uka).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#edae3b05"
+    },
+    {
+      "q": "The woman who gave birth to me is my ___.",
+      "v": [
+        "father",
+        "sister",
+        "mother",
+        "aunt"
+      ],
+      "t": 2,
+      "izoh": "Meni dunyoga keltirgan ayol - mother (ona).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#bfa88fc0"
+    },
+    {
+      "q": "The male parent is the ___.",
+      "v": [
+        "mother",
+        "father",
+        "brother",
+        "uncle"
+      ],
+      "t": 1,
+      "izoh": "Erkak ota-ona - father (ota).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#289ffd50"
+    },
+    {
+      "q": "My brother's daughter is my ___.",
+      "v": [
+        "nephew",
+        "aunt",
+        "daughter",
+        "niece"
+      ],
+      "t": 3,
+      "izoh": "Akaning qizi - niece (jiyan qiz).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#d138937e"
+    },
+    {
+      "q": "My sister's son is my ___.",
+      "v": [
+        "uncle",
+        "son",
+        "nephew",
+        "niece"
+      ],
+      "t": 2,
+      "izoh": "Opaning o'g'li - nephew (jiyan o'g'il).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#3829d4f2"
+    },
+    {
+      "q": "'Ona' in English is ___.",
+      "v": [
+        "sister",
+        "mother",
+        "aunt",
+        "father"
+      ],
+      "t": 1,
+      "izoh": "Ona - mother.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#eea706e8"
+    },
+    {
+      "q": "'Ota' in English is ___.",
+      "v": [
+        "uncle",
+        "father",
+        "brother",
+        "mother"
+      ],
+      "t": 1,
+      "izoh": "Ota - father.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#9148b02b"
+    },
+    {
+      "q": "'Aka' in English is ___.",
+      "v": [
+        "son",
+        "cousin",
+        "sister",
+        "brother"
+      ],
+      "t": 3,
+      "izoh": "Aka/uka - brother.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#d7609256"
+    },
+    {
+      "q": "'Singil' in English is ___.",
+      "v": [
+        "niece",
+        "brother",
+        "sister",
+        "aunt"
+      ],
+      "t": 2,
+      "izoh": "Opa/singil - sister.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#3db7feaf"
+    },
+    {
+      "q": "'Buvi' in English is ___.",
+      "v": [
+        "grandmother",
+        "mother",
+        "aunt",
+        "grandfather"
+      ],
+      "t": 0,
+      "izoh": "Buvi - grandmother.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#559a658c"
+    },
+    {
+      "q": "'Bobo' in English is ___.",
+      "v": [
+        "grandfather",
+        "uncle",
+        "father",
+        "grandmother"
+      ],
+      "t": 0,
+      "izoh": "Bobo - grandfather.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#a8d821db"
+    },
+    {
+      "q": "'Xola' in English is ___.",
+      "v": [
+        "niece",
+        "aunt",
+        "uncle",
+        "mother"
+      ],
+      "t": 1,
+      "izoh": "Xola/amma - aunt.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#3af25505"
+    },
+    {
+      "q": "'Amaki' in English is ___.",
+      "v": [
+        "nephew",
+        "father",
+        "aunt",
+        "uncle"
+      ],
+      "t": 3,
+      "izoh": "Amaki/tog'a - uncle.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#2989c528"
+    },
+    {
+      "q": "'O'g'il' in English is ___.",
+      "v": [
+        "daughter",
+        "nephew",
+        "brother",
+        "son"
+      ],
+      "t": 3,
+      "izoh": "O'g'il - son.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#0438e23d"
+    },
+    {
+      "q": "'Qiz (farzand)' in English is ___.",
+      "v": [
+        "niece",
+        "son",
+        "daughter",
+        "sister"
+      ],
+      "t": 2,
+      "izoh": "Qiz farzand - daughter.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#d1a4e3bc"
+    },
+    {
+      "q": "'Xotin' in English is ___.",
+      "v": [
+        "mother",
+        "husband",
+        "sister",
+        "wife"
+      ],
+      "t": 3,
+      "izoh": "Xotin - wife.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#23891fb3"
+    },
+    {
+      "q": "'Er (turmush o'rtoq)' in English is ___.",
+      "v": [
+        "brother",
+        "wife",
+        "husband",
+        "father"
+      ],
+      "t": 2,
+      "izoh": "Er - husband.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#30ed312a"
+    },
+    {
+      "q": "'Jiyan (o'g'il)' in English is ___.",
+      "v": [
+        "niece",
+        "nephew",
+        "son",
+        "cousin"
+      ],
+      "t": 1,
+      "izoh": "Jiyan o'g'il - nephew.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#3d72e88c"
+    },
+    {
+      "q": "'Amakivachcha' in English is ___.",
+      "v": [
+        "nephew",
+        "cousin",
+        "uncle",
+        "brother"
+      ],
+      "t": 1,
+      "izoh": "Amakivachcha/xolavachcha - cousin.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#2723a73c"
+    },
+    {
+      "q": "'Ota-ona' in English is ___.",
+      "v": [
+        "children",
+        "parents",
+        "cousins",
+        "grandparents"
+      ],
+      "t": 1,
+      "izoh": "Ota-ona - parents.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#afe196bc"
+    },
+    {
+      "q": "'Buvi va bobo' in English is ___.",
+      "v": [
+        "parents",
+        "cousins",
+        "children",
+        "grandparents"
+      ],
+      "t": 3,
+      "izoh": "Buvi va bobo - grandparents.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#02a64a8c"
+    },
+    {
+      "q": "My grandfather's wife is my ___.",
+      "v": [
+        "aunt",
+        "grandmother",
+        "grandfather",
+        "mother"
+      ],
+      "t": 1,
+      "izoh": "Boboning xotini - grandmother (buvi).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#ffbf563c"
+    },
+    {
+      "q": "My father's wife is my ___.",
+      "v": [
+        "sister",
+        "father",
+        "mother",
+        "aunt"
+      ],
+      "t": 2,
+      "izoh": "Otaning xotini - mother (ona).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#21d7a993"
+    },
+    {
+      "q": "My mother's husband is my ___.",
+      "v": [
+        "uncle",
+        "father",
+        "mother",
+        "brother"
+      ],
+      "t": 1,
+      "izoh": "Onaning eri - father (ota).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#1c5711e2"
+    },
+    {
+      "q": "My uncle's daughter is my ___.",
+      "v": [
+        "aunt",
+        "niece",
+        "sister",
+        "cousin"
+      ],
+      "t": 3,
+      "izoh": "Amakining qizi - cousin.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#dacb217b"
+    },
+    {
+      "q": "My aunt's son is my ___.",
+      "v": [
+        "nephew",
+        "uncle",
+        "cousin",
+        "brother"
+      ],
+      "t": 2,
+      "izoh": "Xolaning o'g'li - cousin.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#d7ce603b"
+    },
+    {
+      "q": "My brother and I have the same ___.",
+      "v": [
+        "nephews",
+        "cousins",
+        "parents",
+        "children"
+      ],
+      "t": 2,
+      "izoh": "Aka-uka bir xil ota-onaga ega - parents.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#5eb8696c"
+    },
+    {
+      "q": "My mother's daughter (not me) is my ___.",
+      "v": [
+        "sister",
+        "niece",
+        "aunt",
+        "brother"
+      ],
+      "t": 0,
+      "izoh": "Onamning qiz farzandi (men emas) - sister.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#fec81bdd"
+    },
+    {
+      "q": "My wife's son is also my ___.",
+      "v": [
+        "daughter",
+        "son",
+        "brother",
+        "nephew"
+      ],
+      "t": 1,
+      "izoh": "Xotinning o'g'li - son.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#cfa04cde"
+    },
+    {
+      "q": "A girl child of my parents is my ___.",
+      "v": [
+        "brother",
+        "aunt",
+        "niece",
+        "sister"
+      ],
+      "t": 3,
+      "izoh": "Ota-onamning qiz farzandi - sister.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#3b2e2648"
+    },
+    {
+      "q": "A boy child of my parents is my ___.",
+      "v": [
+        "cousin",
+        "son",
+        "sister",
+        "brother"
+      ],
+      "t": 3,
+      "izoh": "Ota-onamning o'g'il farzandi - brother.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#97235433"
+    },
+    {
+      "q": "My grandmother's daughter is my mother or my ___.",
+      "v": [
+        "uncle",
+        "sister",
+        "aunt",
+        "cousin"
+      ],
+      "t": 2,
+      "izoh": "Buvining qizi - onam yoki xolam (aunt).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#75a9160d"
+    },
+    {
+      "q": "My aunt's children are my ___.",
+      "v": [
+        "parents",
+        "nieces",
+        "nephews",
+        "cousins"
+      ],
+      "t": 3,
+      "izoh": "Xolaning bolalari - cousins.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#ea83a821"
+    },
+    {
+      "q": "My grandparents are my parents' ___.",
+      "v": [
+        "brothers",
+        "cousins",
+        "parents",
+        "children"
+      ],
+      "t": 2,
+      "izoh": "Buvi-bobo - ota-onamning ota-onasi (parents).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#d96a1c4d"
+    },
+    {
+      "q": "My cousin's mother is my ___.",
+      "v": [
+        "mother",
+        "aunt",
+        "sister",
+        "uncle"
+      ],
+      "t": 1,
+      "izoh": "Amakivachchaning onasi - aunt.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#93935ef7"
+    },
+    {
+      "q": "My cousin's father is my ___.",
+      "v": [
+        "uncle",
+        "brother",
+        "father",
+        "aunt"
+      ],
+      "t": 0,
+      "izoh": "Amakivachchaning otasi - uncle.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#06e75cb2"
+    },
+    {
+      "q": "My nephew is my brother's ___.",
+      "v": [
+        "daughter",
+        "son",
+        "brother",
+        "father"
+      ],
+      "t": 1,
+      "izoh": "Jiyanim (o'g'il) - akamning o'g'li (son).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#2cf5bcf9"
+    },
+    {
+      "q": "My uncle is my father's ___.",
+      "v": [
+        "sister",
+        "father",
+        "brother",
+        "son"
+      ],
+      "t": 2,
+      "izoh": "Amaki - otamning akasi/ukasi (brother).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#98d8f70c"
+    },
+    {
+      "q": "My aunt is my mother's ___.",
+      "v": [
+        "mother",
+        "brother",
+        "sister",
+        "daughter"
+      ],
+      "t": 2,
+      "izoh": "Xola - onamning opasi/singlisi (sister).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#e9f60ce5"
+    },
+    {
+      "q": "My parents' parents are my ___.",
+      "v": [
+        "cousins",
+        "children",
+        "grandparents",
+        "parents"
+      ],
+      "t": 2,
+      "izoh": "Ota-onamning ota-onasi - grandparents.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#18c8b15d"
+    },
+    {
+      "q": "My father is my son's ___.",
+      "v": [
+        "brother",
+        "grandfather",
+        "grandmother",
+        "uncle"
+      ],
+      "t": 1,
+      "izoh": "Otam - o'g'limning bobosi (grandfather).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#2d9b2198"
+    },
+    {
+      "q": "My children's mother is my ___.",
+      "v": [
+        "sister",
+        "mother",
+        "wife",
+        "husband"
+      ],
+      "t": 2,
+      "izoh": "Bolalarimning onasi - xotinim (wife).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#c6fcae03"
+    },
+    {
+      "q": "My children's father is my ___.",
+      "v": [
+        "husband",
+        "father",
+        "wife",
+        "brother"
+      ],
+      "t": 0,
+      "izoh": "Bolalarimning otasi - erim (husband).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#4ed0b45b"
+    },
+    {
+      "q": "Two boys with the same parents are ___.",
+      "v": [
+        "parents",
+        "cousins",
+        "sisters",
+        "brothers"
+      ],
+      "t": 3,
+      "izoh": "Bir ota-onali ikki o'g'il - brothers.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#7fa6e626"
+    },
+    {
+      "q": "My mother's female child (not me) is my ___.",
+      "v": [
+        "sister",
+        "brother",
+        "aunt",
+        "cousin"
+      ],
+      "t": 0,
+      "izoh": "Onamning qiz farzandi (men emas) - sister.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#dc621dac"
+    },
+    {
+      "q": "My father's male child (not me) is my ___.",
+      "v": [
+        "uncle",
+        "sister",
+        "cousin",
+        "brother"
+      ],
+      "t": 3,
+      "izoh": "Otamning o'g'il farzandi (men emas) - brother.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#97b6e4c2"
+    },
+    {
+      "q": "A married man and his ___ live together.",
+      "v": [
+        "wife",
+        "father",
+        "son",
+        "husband"
+      ],
+      "t": 0,
+      "izoh": "Uylangan erkak va uning xotini - wife.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#70806ef1"
+    },
+    {
+      "q": "My niece is my sister's ___.",
+      "v": [
+        "sister",
+        "son",
+        "mother",
+        "daughter"
+      ],
+      "t": 3,
+      "izoh": "Jiyanim (qiz) - opamning qizi (daughter).",
+      "qiy": "oson",
+      "id": "ing_a1_m27#ee4ecc7e"
+    },
+    {
+      "q": "I am a boy. To my parents I am their ___.",
+      "v": [
+        "son",
+        "daughter",
+        "nephew",
+        "brother"
+      ],
+      "t": 0,
+      "izoh": "O'g'il bolaman - ota-onamga son.",
+      "qiy": "oson",
+      "id": "ing_a1_m27#eff4bd2b"
+    }
+  ]
+}

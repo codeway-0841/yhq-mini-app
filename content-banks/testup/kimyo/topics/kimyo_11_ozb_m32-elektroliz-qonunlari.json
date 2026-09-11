@@ -1,0 +1,486 @@
+{
+  "nom": "32-mavzu. Elektroliz qonunlari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektroliz qonunlarini kim kashf etgan?",
+      "v": [
+        "Ingliz olimi M. Faradey",
+        "Rus olimi N.N. Beketov",
+        "D. Mendeleev",
+        "A. Lavuazye"
+      ],
+      "t": 0,
+      "izoh": "Elektroliz qonunlarini ingliz olimi M. Faradey kashf etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#26e17951"
+    },
+    {
+      "q": "Faradeyning 1-qonuni qanday ifodalanadi?",
+      "v": [
+        "Elektroliz davomida elektrodlarda ajralib chiqadigan moddaning massasi elektrolit eritmasi orqali o'tgan elektr tokining miqdoriga to'g'ri proporsional bo'ladi",
+        "Ajralib chiqadigan moddaning massasi ekvivalent og'irliklariga teskari proporsional bo'ladi",
+        "Moddaning massasi tok kuchiga teskari proporsional bo'ladi",
+        "Moddaning massasi elektrodlar masofasiga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Faradeyning 1-qonuni: elektrodlarda ajralib chiqadigan moddaning massasi elektrolit eritmasi orqali o'tgan elektr tokining miqdoriga to'g'ri proporsional bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#66613335"
+    },
+    {
+      "q": "Faradeyning 2-qonuni qanday ifodalanadi?",
+      "v": [
+        "Agar turli xil elektrolitlar eritmalari orqali bir xil miqdorda elektr toki o'tkazilsa, elektrodlarda ajralib chiqadigan moddalarning massasi shu moddaning ekvivalent og'irliklariga to'g'ri proporsional bo'ladi",
+        "Moddaning massasi tok miqdoriga teskari proporsional bo'ladi",
+        "Moddaning massasi eritma hajmiga to'g'ri proporsional bo'ladi",
+        "Moddaning massasi haroratga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Faradeyning 2-qonuni: bir xil miqdorda elektr toki o'tkazilsa, ajralib chiqadigan moddalarning massasi moddaning ekvivalent og'irliklariga to'g'ri proporsional bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#d8920cc6"
+    },
+    {
+      "q": "1 F (farad) necha kulonga teng?",
+      "v": [
+        "96500 kulon",
+        "96000 kulon",
+        "9650 kulon",
+        "100000 kulon"
+      ],
+      "t": 0,
+      "izoh": "96500 kulon faradey soni deb ataladi va F harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#2a93e554"
+    },
+    {
+      "q": "Faradey soni qanday belgilanadi?",
+      "v": [
+        "F harfi bilan",
+        "E harfi bilan",
+        "n harfi bilan",
+        "A harfi bilan"
+      ],
+      "t": 0,
+      "izoh": "96500 kulon faradey soni deb ataladi va F harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#9e842e92"
+    },
+    {
+      "q": "m = E·I·t / 96500 formulasida I harfi nimani bildiradi?",
+      "v": [
+        "Tok kuchini (Amper)",
+        "Elektroliz vaqtini (sekund)",
+        "Moddaning ekvivalent og'irligini",
+        "Moddaning massasini (g)"
+      ],
+      "t": 0,
+      "izoh": "I - tok kuchi (Amper).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#938a3026"
+    },
+    {
+      "q": "m = E·I·t / 96500 formulasida t harfi nimani bildiradi?",
+      "v": [
+        "Elektroliz davom etgan vaqtni (sekund)",
+        "Tok kuchini (Amper)",
+        "Moddaning massasini",
+        "Faradey sonini"
+      ],
+      "t": 0,
+      "izoh": "t - elektroliz davom etgan vaqt (sekund).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#6d357a4d"
+    },
+    {
+      "q": "Moddaning massasini (m) uning ekvivalentiga (E) nisbati nimani ifodalaydi?",
+      "v": [
+        "Moddani ekvivalent miqdorini (n ekv)",
+        "Faradey sonini",
+        "Tok kuchini",
+        "Elektroliz vaqtini"
+      ],
+      "t": 0,
+      "izoh": "Moddaning massasini (m) uning ekvivalentiga (E) nisbati shu moddani ekvivalent miqdorini (n ekv) ifodalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#2e215ec7"
+    },
+    {
+      "q": "n ekv = I·t / 96500 formulasida n ekv nimani bildiradi?",
+      "v": [
+        "Erigan moddaning ekvivalent miqdorini (g/ekv)",
+        "Erigan moddaning massasini",
+        "Moddaning ekvivalent massasini",
+        "Tok kuchini"
+      ],
+      "t": 0,
+      "izoh": "n ekv - erigan moddaning ekvivalent miqdori (g/ekv).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#37fcb116"
+    },
+    {
+      "q": "AgNO3 eritmasi solingan idishga 1 F (96500 kulon) elektr toki ta'sir ettirilsa, katodda necha gramm kumush ajraladi?",
+      "v": [
+        "108 g",
+        "8 g",
+        "32 g",
+        "18,66 g"
+      ],
+      "t": 0,
+      "izoh": "Birinchi idishda 108 g (1·108=108) kumush va 8 g kislorod ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#2d2aa932"
+    },
+    {
+      "q": "CuSO4 eritmasi solingan idishga 1 F elektr toki ta'sir ettirilsa, katodda necha gramm mis ajraladi?",
+      "v": [
+        "32 g",
+        "108 g",
+        "18,66 g",
+        "64 g"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi idishda 32 g (1·32=32) mis va 8 g kislorod bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#a77be621"
+    },
+    {
+      "q": "FeCl3 eritmasi solingan idishga 1 F elektr toki ta'sir ettirilsa, katodda necha gramm temir ajraladi?",
+      "v": [
+        "18,66 g",
+        "35,5 g",
+        "56 g",
+        "32 g"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi idishda 18,66 g (1·18,66=18,66) temir va 35,5 g xlor ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#6208fb1e"
+    },
+    {
+      "q": "FeCl3 eritmasi solingan idishga 1 F elektr toki ta'sir ettirilsa, anodda necha gramm xlor ajraladi?",
+      "v": [
+        "35,5 g",
+        "18,66 g",
+        "71 g",
+        "8 g"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi idishda 18,66 g temir va 35,5 g (1·35,5=35,5) xlor ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#9b4eb767"
+    },
+    {
+      "q": "Har bir idishga 1 F elektr toki ta'sir ettirilganda anodda ajraladigan kislorodning massasi necha gramm?",
+      "v": [
+        "8 g",
+        "16 g",
+        "32 g",
+        "1 g"
+      ],
+      "t": 0,
+      "izoh": "Har bir idishda anodda 1 g/ekv modda hosil bo'ladi: 8 g (1·8=8) kislorod.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#3f0f3a79"
+    },
+    {
+      "q": "Bir necha elektrolit eritmasi yoki suyuqlanmasi orqali 1 F elektr toki o'tkazilsa, elektrodlarda oksidlangan yoki qaytarilgan moddalarning miqdorlari ularning qanday miqdorlariga teng bo'ladi?",
+      "v": [
+        "Ekvivalent miqdorlariga",
+        "Molyar miqdorlariga",
+        "Massa ulushlariga",
+        "Hajmiy miqdorlariga"
+      ],
+      "t": 0,
+      "izoh": "Faradey qonunlariga muvofiq, elektrodlarda oksidlangan yoki qaytarilgan moddalarning miqdorlari ularning ekvivalent miqdorlariga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#fab58ad8"
+    },
+    {
+      "q": "1-masalada: 500 g 32% li CuSO4 eritmasida CuSO4 ning massasi necha gramm deb topilgan?",
+      "v": [
+        "160 g",
+        "320 g",
+        "80 g",
+        "500 g"
+      ],
+      "t": 0,
+      "izoh": "x = (500·32)/100 = 160 g CuSO4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#4ea38b26"
+    },
+    {
+      "q": "1-masalada CuSO4 ning ekvivalent og'irligi nechaga teng deb topilgan?",
+      "v": [
+        "80",
+        "160",
+        "40",
+        "32"
+      ],
+      "t": 0,
+      "izoh": "E(CuSO4) = 160/(1·2) = 80.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#3e32da9f"
+    },
+    {
+      "q": "1-masalada: 500 g 32% li CuSO4 eritmasidan misni to'liq ajratib olish uchun 5 A tok kuchi necha sekund davomida o'tkazilishi kerak?",
+      "v": [
+        "38600 sekund",
+        "96500 sekund",
+        "4825 sekund",
+        "3860 sekund"
+      ],
+      "t": 0,
+      "izoh": "t = (m·F)/(E·I) = (160·96500)/(80·5) = 38600 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#fcee914c"
+    },
+    {
+      "q": "2-masalada: 500 g 23% li K2CO3 eritmasida K2CO3 ning massasi necha gramm deb topilgan?",
+      "v": [
+        "115 g",
+        "230 g",
+        "270 g",
+        "23 g"
+      ],
+      "t": 0,
+      "izoh": "x = (500·23)/100 = 115 g K2CO3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#e7ef3f0c"
+    },
+    {
+      "q": "2-masalada elektroliz jarayonida necha gramm suv elektrolizga uchragan?",
+      "v": [
+        "270 g",
+        "230 g",
+        "115 g",
+        "500 g"
+      ],
+      "t": 0,
+      "izoh": "500 - 230 = 270 g suv elektrolizga uchragan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#8698e0f2"
+    },
+    {
+      "q": "2-masalada: 4825 minut davomida o'tkazilganda K2CO3 ning massa ulushi 50% ga teng bo'lishi uchun necha amper tok kuchi kerak?",
+      "v": [
+        "10 A",
+        "5 A",
+        "3 A",
+        "96,5 A"
+      ],
+      "t": 0,
+      "izoh": "I = (m·F)/(E·t) = (270·1608,33)/(9·4825) = 10 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#51ef0242"
+    },
+    {
+      "q": "2-masalada K2CO3 eritmasi elektroliz qilinganda nega faqat suv elektrolizga uchraydi?",
+      "v": [
+        "K2CO3 tarkibidagi kaliy aktiv metall bo'lgani uchun",
+        "K2CO3 suvda erimaganligi uchun",
+        "K2CO3 molekulyar modda bo'lgani uchun",
+        "Eritmada tok o'tkazilmaganligi uchun"
+      ],
+      "t": 0,
+      "izoh": "K2CO3 tarkibidagi metall ya'ni kaliy aktiv metall bo'lib, uning kislorodli kislota qoldig'i bilan hosil qilgan tuzlari eritmasi elektroliz qilinganda faqat suv elektrolizga uchraydi, tuz esa o'zgarishsiz qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#8c25242d"
+    },
+    {
+      "q": "3-masalada: 250 g 8,94% li KCl eritmasida KCl ning massasi necha gramm deb topilgan?",
+      "v": [
+        "22,35 g",
+        "16,8 g",
+        "10,95 g",
+        "74,5 g"
+      ],
+      "t": 0,
+      "izoh": "x = (250·8,94)/100 = 22,35 g KCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#07cca308"
+    },
+    {
+      "q": "3-masalada KCl ning ekvivalent og'irligi nechaga teng deb topilgan?",
+      "v": [
+        "74,5",
+        "35,5",
+        "56",
+        "22,35"
+      ],
+      "t": 0,
+      "izoh": "E(KCl) = 74,5/(1·1) = 74,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#14e9ccc3"
+    },
+    {
+      "q": "3-masalada KCl eritmasi elektroliz qilinganda katodda va anodda qanday gazlar ajralib chiqadi?",
+      "v": [
+        "Katodda vodorod, anodda xlor",
+        "Katodda kislorod, anodda vodorod",
+        "Katodda xlor, anodda vodorod",
+        "Ikkala elektrodda ham kislorod"
+      ],
+      "t": 0,
+      "izoh": "KCl eritmasi elektroliz qilinganda katodda vodorod, anodda esa xlor gazlari ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#f9b7635a"
+    },
+    {
+      "q": "3-masalada elektrolizdan keyingi eritmada erigan modda sifatida qaysi modda hisoblanadi?",
+      "v": [
+        "KOH",
+        "KCl",
+        "Cl2",
+        "H2O"
+      ],
+      "t": 0,
+      "izoh": "Elektrolizdan so'ng eritmada erigan modda bo'lib KOH hisoblanadi va foiz konsentratsiya shu modda massasiga nisbatan hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#51af5d40"
+    },
+    {
+      "q": "3-masalada hosil bo'lgan KOH ning massasi necha gramm?",
+      "v": [
+        "16,8 g",
+        "22,35 g",
+        "10,95 g",
+        "0,3 g"
+      ],
+      "t": 0,
+      "izoh": "m = n ekv · E = 0,3·56 = 16,8 g KOH.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#1912de49"
+    },
+    {
+      "q": "3-masalada elektrolizdan keyingi eritmaning foiz konsentratsiyasi necha foizga teng?",
+      "v": [
+        "7%",
+        "8,94%",
+        "50%",
+        "16,8%"
+      ],
+      "t": 0,
+      "izoh": "C% = (16,8/239,05)·100% = 7%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#249a9c07"
+    },
+    {
+      "q": "3-masalada gaz holatida chiqib ketgan vodorod va xlorni umumiy massasi necha gramm?",
+      "v": [
+        "10,95 g",
+        "16,8 g",
+        "22,35 g",
+        "239,05 g"
+      ],
+      "t": 0,
+      "izoh": "0,3 g H2 va 10,65 g Cl2, jami 10,95 g gazlar ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#99ed066a"
+    },
+    {
+      "q": "4-masalada mis sulfatni elektroliz qilish uchun sarflangan tokning ekvivalent miqdori nechaga teng?",
+      "v": [
+        "0,25",
+        "0,3",
+        "0,5",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "n ekv = (I·t)/F = (4825·5)/96500 = 0,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#00e294da"
+    },
+    {
+      "q": "4-masalada kristallogidrat tarkibida necha gramm suv borligi topilgan?",
+      "v": [
+        "11,25 g",
+        "20 g",
+        "31,25 g",
+        "0,25 g"
+      ],
+      "t": 0,
+      "izoh": "31,25 - 20 = 11,25 g H2O kristallogidrat tarkibida bor bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#24892645"
+    },
+    {
+      "q": "Eritmaning foiz konsentratsiyasini hisoblash formulasini ko'rsating.",
+      "v": [
+        "C% = (m1/m2)·100%",
+        "C% = (m2/m1)·100%",
+        "C% = m1·m2·100%",
+        "C% = (m1+m2)·100%"
+      ],
+      "t": 0,
+      "izoh": "C% = (m1/m2)·100%, bu yerda m1 - erigan modda massasi, m2 - eritma massasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m32-elektroliz-qonunlari#22a61db5"
+    }
+  ]
+}

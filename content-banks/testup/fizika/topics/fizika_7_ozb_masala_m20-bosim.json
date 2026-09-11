@@ -1,0 +1,216 @@
+{
+  "nom": "20-mavzu. Masala. Bosim",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Yuzasi 0,5 m² bo‘lgan stol ustiga 200 N kuch tik yo‘nalishda ta’sir qilmoqda. Stolga beriladigan bosimni toping.",
+      "v": [
+        "400 Pa",
+        "100 Pa",
+        "4000 Pa",
+        "40 Pa"
+      ],
+      "t": 0,
+      "izoh": "p = F/S = 200/0,5 = 400 Pa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m20-bosim#2c51bcfa"
+    },
+    {
+      "q": "Og‘irligi 50 N bo‘lgan quti yerda turibdi. Qutining pastki qismining eni 0,4 m, bo‘yi 0,5 m. Qutining yerga beradigan bosimi qancha?",
+      "v": [
+        "250 Pa",
+        "25 Pa",
+        "100 Pa",
+        "2500 Pa"
+      ],
+      "t": 0,
+      "izoh": "S = 0,4·0,5 = 0,2 m²; p = F/S = 50/0,2 = 250 Pa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m20-bosim#6a0d469d"
+    },
+    {
+      "q": "Qanday sirt yuzasiga tik yo‘nalishda 100 N kuch bilan ta’sir qilib, 20 kPa bosim hosil qilish mumkin?",
+      "v": [
+        "50 cm²",
+        "500 cm²",
+        "5 cm²",
+        "200 cm²"
+      ],
+      "t": 0,
+      "izoh": "S = F/p = 100/20 000 = 0,005 m² = 50 cm²",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m20-bosim#c8e842ad"
+    },
+    {
+      "q": "Massasi 3 kg bo‘lgan elektr dazmolning ishchi yuzasi 300 cm². Dazmol sirtga qanday bosim bilan ta’sir qiladi? (g = 10 N/kg)",
+      "v": [
+        "1000 Pa",
+        "100 Pa",
+        "10 kPa",
+        "500 Pa"
+      ],
+      "t": 0,
+      "izoh": "S = 300 cm² = 0,03 m²; p = mg/S = 3·10/0,03 = 1000 Pa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m20-bosim#7df33ce2"
+    },
+    {
+      "q": "Massasi 60 kg bo‘lgan bola yerga qanday bosim beradi? Bir juft oyoq kiyimining tag yuzasi 300 cm². (g = 10 N/kg)",
+      "v": [
+        "20 kPa",
+        "200 Pa",
+        "2 Pa",
+        "200 kPa"
+      ],
+      "t": 0,
+      "izoh": "S = 300 cm² = 0,03 m²; p = mg/S = 60·10/0,03 = 20 000 Pa = 20 kPa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m20-bosim#1f42e239"
+    },
+    {
+      "q": "Massasi 76 kg bo‘lgan sportchi chang‘ida turibdi. Har bir chang‘ining uzunligi 1,9 m, eni 10 cm. Sportchining qorga ko‘rsatadigan bosimi qanday? (g = 10 N/kg)",
+      "v": [
+        "2000 Pa",
+        "1000 Pa",
+        "4000 Pa",
+        "200 Pa"
+      ],
+      "t": 0,
+      "izoh": "S = 2·(1,9·0,1) = 0,38 m²; p = mg/S = 76·10/0,38 = 2000 Pa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m20-bosim#d5042d17"
+    },
+    {
+      "q": "Stol ustidagi qozonga 4,5 l suv quyildi. Qozon tubining yuzi 600 cm². Qozonning stolga bosimi qanchaga ortadi? (g = 10 N/kg, suv zichligi 1000 kg/m³)",
+      "v": [
+        "750 Pa",
+        "75 Pa",
+        "7500 Pa",
+        "7,5 Pa"
+      ],
+      "t": 0,
+      "izoh": "m = 4,5 kg; S = 600 cm² = 0,06 m²; p = mg/S = 4,5·10/0,06 = 750 Pa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m20-bosim#c9197825"
+    },
+    {
+      "q": "Belkurakning tig‘li qismining eni 25 cm, qalinligi 1 mm. Odam belkurakka 50 N kuch bilan bossa, yerga qanday bosim beradi?",
+      "v": [
+        "200 kPa",
+        "20 kPa",
+        "2 MPa",
+        "2 kPa"
+      ],
+      "t": 0,
+      "izoh": "S = 0,25·0,001 = 2,5·10⁻⁴ m²; p = F/S = 50/(2,5·10⁻⁴) = 200 000 Pa = 200 kPa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m20-bosim#d7095404"
+    },
+    {
+      "q": "Uyning ayvoni to‘rtta ustunga qurilgan. Har bir ustunning yuzasi 300 cm². Ayvon tomidagi qurilish materiallarining massasi 720 kg bo‘lsa, ustunlar polga qanday bosim beradi? (g = 10 N/kg)",
+      "v": [
+        "60 kPa",
+        "240 kPa",
+        "6 kPa",
+        "600 kPa"
+      ],
+      "t": 0,
+      "izoh": "S = 4·0,03 = 0,12 m²; p = mg/S = 720·10/0,12 = 60 000 Pa = 60 kPa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m20-bosim#25e66438"
+    },
+    {
+      "q": "Asosining yuzi 1,5 m², hajmi 6 m³ bo‘lgan marmar ustunning yerga ko‘rsatadigan bosimi qanday? (ρ = 2700 kg/m³, g = 10 N/kg)",
+      "v": [
+        "108 kPa",
+        "10,8 kPa",
+        "1080 kPa",
+        "16,2 kPa"
+      ],
+      "t": 0,
+      "izoh": "m = ρV = 2700·6 = 16 200 kg; p = mg/S = 16 200·10/1,5 = 108 000 Pa = 108 kPa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m20-bosim#39fec548"
+    },
+    {
+      "q": "Yengil avtomobil g‘ildiraklarining yerga tegib turgan umumiy yuzasi 0,5 m². Avtomobilning massasi 2 t bo‘lsa, u yerga qanday bosim beradi? (g = 10 N/kg)",
+      "v": [
+        "40 kPa",
+        "4 kPa",
+        "400 kPa",
+        "10 kPa"
+      ],
+      "t": 0,
+      "izoh": "p = mg/S = 2000·10/0,5 = 40 000 Pa = 40 kPa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m20-bosim#3ce40bd3"
+    },
+    {
+      "q": "Tikuv mashinasining ignasi 50 MPa bosim bilan ta’sir qiladi. Igna uchining yuzasi 0,02 mm² bo‘lsa, ignaga qanday kuch ta’sir qiladi?",
+      "v": [
+        "1 N",
+        "0,1 N",
+        "10 N",
+        "100 N"
+      ],
+      "t": 0,
+      "izoh": "S = 0,02 mm² = 2·10⁻⁸ m²; F = pS = 5·10⁷·2·10⁻⁸ = 1 N",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m20-bosim#9085f6f5"
+    },
+    {
+      "q": "Sakkiz o‘qli lokomotivning massasi 160 t, har bir g‘ildiragining relsga tegib turgan yuzasi 5 cm². Har bir o‘qda 2 ta g‘ildirak bor. Lokomotivning relsga bosimi qancha? (g = 10 N/kg)",
+      "v": [
+        "200 MPa",
+        "400 MPa",
+        "20 MPa",
+        "200 kPa"
+      ],
+      "t": 0,
+      "izoh": "S = 16·5 cm² = 0,008 m²; p = mg/S = 160 000·10/0,008 = 2·10⁸ Pa = 200 MPa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m20-bosim#720b1412"
+    },
+    {
+      "q": "Sportchi muz ustida konkida uchmoqda. Konki tig‘ining uzunligi 30 cm, eni 2 mm. Sportchining massasi 48 kg bo‘lsa, u muzga qanday bosim beradi? (g = 10 N/kg)",
+      "v": [
+        "800 kPa",
+        "80 kPa",
+        "8 MPa",
+        "8 kPa"
+      ],
+      "t": 0,
+      "izoh": "S = 0,3·0,002 = 6·10⁻⁴ m²; p = mg/S = 48·10/(6·10⁻⁴) = 800 000 Pa = 800 kPa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m20-bosim#cb9395de"
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "nom": "13-mavzu. Momentlar Qoidasiga Asoslangan Mexanizmlar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Juft kuchlar nima?",
+      "v": [
+        "Yo'nalishi qarama-qarshi, kattaliklari teng, lekin bir o'qda yotmaydigan kuchlar",
+        "Bir xil yo'nalishli, teng kattalikdagi kuchlar",
+        "Bir o'qda yotuvchi teng kuchlar",
+        "Har xil kattalikdagi ixtiyoriy kuchlar"
+      ],
+      "t": 0,
+      "izoh": "Juft kuchlar — yo'nalishi qarama-qarshi, kattaliklari teng, bir o'qda yotmaydigan kuchlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#7ed46831"
+    },
+    {
+      "q": "Juft kuchlarga misol sifatida darslikda nima keltirilgan?",
+      "v": [
+        "Avtomobil rulining burilishi",
+        "Chana sirpanishi",
+        "To'qnashuv",
+        "Erkin tushish"
+      ],
+      "t": 0,
+      "izoh": "Juft kuchlarga misol — avtomobil rulining burilishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#51a7b598"
+    },
+    {
+      "q": "Jismga bir nechta kuch ta'sir etganda natijaviy moment qanday topiladi?",
+      "v": [
+        "Kuchlarning momentlarini o'zaro qo'shish orqali",
+        "Kuchlarning kattaliklarini qo'shish orqali",
+        "Kuch yelkalarini qo'shish orqali",
+        "Momentlarni ko'paytirish orqali"
+      ],
+      "t": 0,
+      "izoh": "Momentlarni o'zaro qo'shish orqali natijaviy moment topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#b8d0891a"
+    },
+    {
+      "q": "Jismni soat strelkasi yo'nalishi bo'yicha aylantiruvchi kuch momentlari qanday ishorada olinadi?",
+      "v": [
+        "Musbat ishorada",
+        "Manfiy ishorada",
+        "Ishorasiz",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Soat strelkasi yo'nalishidagi momentlar musbat olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#879234f8"
+    },
+    {
+      "q": "Jismni soat strelkasi yo'nalishiga qarshi aylantiruvchi kuch momentlari qanday ishorada olinadi?",
+      "v": [
+        "Manfiy ishorada",
+        "Musbat ishorada",
+        "Ishorasiz",
+        "Ixtiyoriy"
+      ],
+      "t": 0,
+      "izoh": "Soat strelkasiga qarshi momentlar manfiy olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#1147da4a"
+    },
+    {
+      "q": "Natijaviy kuch momentini topish uchun qanday amal bajariladi?",
+      "v": [
+        "M = F2·l2 + (−F1·l1) = F2·l2 − F1·l1",
+        "M = F1·l1 + F2·l2",
+        "M = F1·l1 · F2·l2",
+        "M = F1 / l1 + F2 / l2"
+      ],
+      "t": 0,
+      "izoh": "M = F2l2 + (−F1l1) = F2l2 − F1l1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#86a16d0a"
+    },
+    {
+      "q": "Momentlar qoidasi qanday ifodalanadi?",
+      "v": [
+        "M1 + M2 + ... + Mn = 0",
+        "M1 = M2 = ... = Mn",
+        "M1 · M2 · ... · Mn = 0",
+        "M1 + M2 = F · l"
+      ],
+      "t": 0,
+      "izoh": "Momentlar qoidasi: M1 + M2 + ... + Mn = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#df257434"
+    },
+    {
+      "q": "Momentlar qoidasini kim aniqlagan?",
+      "v": [
+        "Arximed",
+        "Nyuton",
+        "Galiley",
+        "Eyler"
+      ],
+      "t": 0,
+      "izoh": "Momentlar qoidasini Arximed aniqlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#385dceba"
+    },
+    {
+      "q": "Jism muvozanatda bo'lishi uchun momentlar qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "Bir tomonga aylantiruvchi kuchlar momentlari yig'indisi qarama-qarshi tomonga aylantiruvchi momentlar yig'indisiga teng bo'lishi",
+        "Barcha kuchlar teng bo'lishi",
+        "Kuch yelkalari teng bo'lishi",
+        "Momentlar musbat bo'lishi"
+      ],
+      "t": 0,
+      "izoh": "Muvozanatda qarama-qarshi yo'nalishdagi momentlar yig'indilari teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#14404f49"
+    },
+    {
+      "q": "Momentlar qoidasiga asoslanib ishlaydigan oddiy mexanizmlarga qaysilar kiradi?",
+      "v": [
+        "Richag, ko'chmas va ko'char bloklar, chig'iriq, vint (domkrat)",
+        "Faqat richag",
+        "Faqat bloklar",
+        "Faqat vint"
+      ],
+      "t": 0,
+      "izoh": "Richag, bloklar, chig'iriq, vint momentlar qoidasiga asoslanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#12aba0fe"
+    },
+    {
+      "q": "Polispast nima?",
+      "v": [
+        "Bloklarning o'zaro ulanib, har xil darajali sistema hosil qilishi",
+        "Bitta blok",
+        "Bitta arqon",
+        "Yukni ko'taruvchi motor"
+      ],
+      "t": 0,
+      "izoh": "Bloklar o'zaro ulanib polispast hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#efe98dbe"
+    },
+    {
+      "q": "Darajali polispastda osilgan yuk og'irligi qanday taqsimlanadi?",
+      "v": [
+        "Bloklarga o'ralgan arqonlarda",
+        "Faqat bitta arqonda",
+        "Faqat birinchi blokda",
+        "Yukning markazida"
+      ],
+      "t": 0,
+      "izoh": "Yuk og'irligi bloklarga o'ralgan arqonlarda taqsimlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#f49643a3"
+    },
+    {
+      "q": "Bloklarda ishqalanish bo'lmaganda polispastga qo'yiladigan kuch qanday formula bilan topiladi?",
+      "v": [
+        "F = mg / 2n",
+        "F = mg · 2n",
+        "F = mg / n",
+        "F = mg + 2n"
+      ],
+      "t": 0,
+      "izoh": "F = mg/2n, bunda n — ko'char bloklar soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#37e6ba0e"
+    },
+    {
+      "q": "F = mg/2n formulasidagi n nimani bildiradi?",
+      "v": [
+        "Polispastdagi ko'char bloklar soni",
+        "Barcha bloklar soni",
+        "Arqonlar soni",
+        "Yuklar soni"
+      ],
+      "t": 0,
+      "izoh": "n — polispastdagi ko'char bloklar soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#ab94ecbe"
+    },
+    {
+      "q": "Bloklarda ishqalanish mavjud bo'lsa, qo'yiladigan kuchning bir qismi nimaga sarflanadi?",
+      "v": [
+        "Ishqalanish kuchlarini yengishga",
+        "Yukni ko'tarishga",
+        "Blokni aylantirishga",
+        "Arqonni cho'zishga"
+      ],
+      "t": 0,
+      "izoh": "Ishqalanish bo'lsa, kuchning bir qismi ishqalanishni yengishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#e7bfcb90"
+    },
+    {
+      "q": "Ishqalanish bo'lganda polispastning FIKi qanday formula orqali topiladi?",
+      "v": [
+        "η = mg / (2n · F)",
+        "η = 2n · F / mg",
+        "η = F / mg",
+        "η = mg · 2n / F"
+      ],
+      "t": 0,
+      "izoh": "η = mg/(2nF).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#ebc98c1b"
+    },
+    {
+      "q": "Chig'iriqning kuchdan necha marta yutuq berishi qanday formula bilan topiladi?",
+      "v": [
+        "n = R / r",
+        "n = r / R",
+        "n = R · r",
+        "n = R + r"
+      ],
+      "t": 0,
+      "izoh": "n = R/r, bunda R — ruchka radiusi, r — baraban radiusi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#6799b47d"
+    },
+    {
+      "q": "Lebyodkalarning kuchdan necha marta yutuq berishi qanday formula bilan topiladi?",
+      "v": [
+        "n = (R1 · R2) / (r1 · r2)",
+        "n = (r1 · r2) / (R1 · R2)",
+        "n = R1 / r1",
+        "n = R2 / r2"
+      ],
+      "t": 0,
+      "izoh": "n = (R1·R2)/(r1·r2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#88ff8a30"
+    },
+    {
+      "q": "Chig'iriq formulasidagi R va r nimalarni bildiradi?",
+      "v": [
+        "R — barabanni aylantiruvchi ruchka chizayotgan radius, r — barabanning radiusi",
+        "R — yuk radiusi, r — arqon radiusi",
+        "R — blok radiusi, r — o'q radiusi",
+        "R — kuch, r — moment"
+      ],
+      "t": 0,
+      "izoh": "R — ruchka chizayotgan radius, r — baraban radiusi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#f7737011"
+    },
+    {
+      "q": "Qadimgi Misrda piramidalar qurilishida og'ir tosh plitalarni qanday ko'tarishgan?",
+      "v": [
+        "Richaglar yordamida va qiya tekislik ustida dumalatib yoki sudrab",
+        "Kranlar yordamida",
+        "Vintlar yordamida",
+        "Elektr dvigatellar yordamida"
+      ],
+      "t": 0,
+      "izoh": "Piramidalarda richaglar va qiya tekisliklardan foydalanilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#09a219cd"
+    },
+    {
+      "q": "Samarqand va Buxoro shaharlaridagi minoralar, madrasalar qurilishida yuklarni qanday ko'targanlar?",
+      "v": [
+        "Bloklar va chig'iriqlar yordamida",
+        "Richaglar yordamida",
+        "Qiya tekisliklar yordamida",
+        "Vintlar yordamida"
+      ],
+      "t": 0,
+      "izoh": "Yuklarni bloklar va chig'iriqlar yordamida ko'targanlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#acf868b2"
+    },
+    {
+      "q": "Kundalik turmushda oddiy mexanizmlar asosida ishlaydigan qurilmalarga misollar qaysilar?",
+      "v": [
+        "Yog'ochlarni kesadigan stanoklar, ko'tarma kran, yer qazib-tekislovchi traktorlar",
+        "Faqat traktorlar",
+        "Faqat stanoklar",
+        "Faqat kranlar"
+      ],
+      "t": 0,
+      "izoh": "Stanoklar, kran, traktorlar oddiy mexanizmlar asosida ishlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#f9e1e65d"
+    },
+    {
+      "q": "Ko'chmas blok qanday yutuq beradi?",
+      "v": [
+        "Kuchdan yutuq bermaydi, faqat kuchning yo'nalishini o'zgartiradi",
+        "Kuchdan 2 marta yutuq beradi",
+        "Kuchdan 4 marta yutuq beradi",
+        "Yo'ldan yutuq beradi"
+      ],
+      "t": 0,
+      "izoh": "Ko'chmas blok faqat kuch yo'nalishini o'zgartiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#5aa3eaba"
+    },
+    {
+      "q": "Ko'char blok qanday yutuq beradi?",
+      "v": [
+        "Kuchdan 2 marta yutuq beradi",
+        "Kuchdan yutuq bermaydi",
+        "Yo'ldan 2 marta yutuq beradi",
+        "Quvvatdan yutuq beradi"
+      ],
+      "t": 0,
+      "izoh": "Bitta ko'char blok kuchdan 2 marta yutuq beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#bb170205"
+    },
+    {
+      "q": "Polispastning FIKi 100% dan kichik bo'lishining sababi nima?",
+      "v": [
+        "Bloklarda ishqalanish mavjudligi",
+        "Bloklarning og'irligi",
+        "Arqonning elastikligi",
+        "Yukning katta massasi"
+      ],
+      "t": 0,
+      "izoh": "Ishqalanish mavjudligi FIKni 100% dan kichik qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#d56c416b"
+    },
+    {
+      "q": "Vint (domkrat) qanday tamoyil asosida ishlaydi?",
+      "v": [
+        "Momentlar qoidasi asosida",
+        "Nyuton qonunlari asosida",
+        "Guk qonuni asosida",
+        "Paskal qonuni asosida"
+      ],
+      "t": 0,
+      "izoh": "Vint momentlar qoidasiga asoslanib ishlaydigan oddiy mexanizm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#4405a2ed"
+    },
+    {
+      "q": "Chig'iriq qaysi jihatlari bilan richakka o'xshaydi?",
+      "v": [
+        "Ikkalasi ham kuch yelkasi va momentlar qoidasi asosida ishlaydi",
+        "Ikkalasi ham faqat vertikal yuk ko'taradi",
+        "Ikkalasi ham kuchdan yutuq bermaydi",
+        "Ikkalasi ham ishqalanishsiz ishlaydi"
+      ],
+      "t": 0,
+      "izoh": "Chig'iriq ham richag kabi momentlar qoidasiga asoslanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#4d6b99dc"
+    },
+    {
+      "q": "Juft kuchlar ta'sirida jism qanday harakatga keladi?",
+      "v": [
+        "Aylanma harakatga",
+        "Postupatel harakatga",
+        "Tebranma harakatga",
+        "Harakatsiz qoladi"
+      ],
+      "t": 0,
+      "izoh": "Juft kuchlar jismni aylanishga keltiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#ffc56124"
+    },
+    {
+      "q": "Momentlar qoidasiga asoslanib ishlaydigan oddiy mexanizmlarning asosiy vazifasi nima?",
+      "v": [
+        "Kuchdan yutish orqali ishni yengillashtirish",
+        "Quvvatni oshirish",
+        "Tezlikni oshirish",
+        "Massani kamaytirish"
+      ],
+      "t": 0,
+      "izoh": "Oddiy mexanizmlar kuchdan yutish berib, ishni yengillashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#490acb29"
+    },
+    {
+      "q": "Polispastda ko'char bloklar soni oshirilsa, qo'yiladigan kuch qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Nolga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "F = mg/2n bo'yicha n ortishi bilan kuch kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#c014a233"
+    },
+    {
+      "q": "Oddiy mexanizmlar yordamida bajariladigan ish qanday o'zgaradi?",
+      "v": [
+        "O'zgarmaydi yoki ishqalanish hisobiga ko'payadi",
+        "Kamayadi",
+        "Ikki baravar ortadi",
+        "Nolga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Oddiy mexanizmlar kuchdan yutsa-da, ishni kamaytirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#2630d017"
+    },
+    {
+      "q": "Nima uchun tikroq zinadan chiqishga qaraganda qiyaroq zinadan chiqish osonroq?",
+      "v": [
+        "Qiya tekislik bo'ylab harakatda kuchdan yutish bo'ladi",
+        "Qiyaroq zina balandroq bo'ladi",
+        "Tikroq zinada ishqalanish ko'proq",
+        "Qiyaroq zinada tezlik katta"
+      ],
+      "t": 0,
+      "izoh": "Qiyaroq zina qiya tekislik kabi kuchdan yutish beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m13-momentlar-qoidasiga-asoslangan-mexanizmlar#ba7ab7fd"
+    }
+  ]
+}

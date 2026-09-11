@@ -1,0 +1,1306 @@
+{
+  "nom": "Articles (a / an / the)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "I have ___ apple.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 1,
+      "izoh": "Unli tovushdan oldin → an.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#fa5324ca"
+    },
+    {
+      "q": "She is ___ teacher.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "Undosh tovushdan oldin → a.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#21ed0c2d"
+    },
+    {
+      "q": "Look at ___ sun. It is beautiful.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 2,
+      "izoh": "Yagona narsa → the.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#7229bdf0"
+    },
+    {
+      "q": "I see ___ umbrella.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 1,
+      "izoh": "Unli tovushdan oldin → an.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#fc1124dd"
+    },
+    {
+      "q": "This is ___ big house.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "Undosh tovushdan oldin → a.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#a5d8adf7"
+    },
+    {
+      "q": "___ moon is bright tonight.",
+      "v": [
+        "A",
+        "An",
+        "The",
+        "-"
+      ],
+      "t": 2,
+      "izoh": "Yagona narsa → the.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#88eb007d"
+    },
+    {
+      "q": "He eats ___ egg every morning.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 1,
+      "izoh": "Unli tovushdan oldin → an.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#9b410079"
+    },
+    {
+      "q": "She has ___ old car.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 1,
+      "izoh": "'old' unli tovush bilan → an.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#cf1c7c07"
+    },
+    {
+      "q": "Please close ___ door.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 2,
+      "izoh": "Aniq, ma'lum narsa → the.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#de0ca7c2"
+    },
+    {
+      "q": "I want ___ ice cream.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 1,
+      "izoh": "'ice' unli tovush bilan → an.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#927e41f9"
+    },
+    {
+      "q": "He is eating ___ orange.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'orange' unli bilan, 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#7a8feb56"
+    },
+    {
+      "q": "___ sun is very hot.",
+      "v": [
+        "The",
+        "A",
+        "An",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "Yagona narsa 'the'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#81e99501"
+    },
+    {
+      "q": "I saw ___ elephant at the zoo.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'e' unli, 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#1acc1f49"
+    },
+    {
+      "q": "Can you pass me ___ salt?",
+      "v": [
+        "the",
+        "a",
+        "an",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "Ma'lum narsa 'the'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#beb3731d"
+    },
+    {
+      "q": "She plays ___ football every day.",
+      "v": [
+        "-",
+        "a",
+        "an",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "Sport nomida artikl yo'q.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#45e9a93f"
+    },
+    {
+      "q": "There is ___ book on the table.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "Noma'lum narsa 'a'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#d7528ff3"
+    },
+    {
+      "q": "___ moon is beautiful tonight.",
+      "v": [
+        "The",
+        "A",
+        "An",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "Yagona jism 'the'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#1935c36f"
+    },
+    {
+      "q": "He wants ___ umbrella.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'u' unli tovush, 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#e2382f8e"
+    },
+    {
+      "q": "I like ___ music.",
+      "v": [
+        "-",
+        "a",
+        "an",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "Umumiy sanalmaydigan, artikl yo'q.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#82be125f"
+    },
+    {
+      "q": "We live in ___ small house.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'small' undosh, 'a'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#c410c29a"
+    },
+    {
+      "q": "She is ___ honest girl.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'honest' — 'h' o'qilmaydi, 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#ed16b601"
+    },
+    {
+      "q": "This is ___ easy question.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'easy' unli, 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#5addc2ef"
+    },
+    {
+      "q": "I go to ___ school by bus.",
+      "v": [
+        "-",
+        "a",
+        "an",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "'go to school'da artikl yo'q.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#b7abee3d"
+    },
+    {
+      "q": "He bought ___ new car.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'new' undosh, 'a'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#eaaa4ec2"
+    },
+    {
+      "q": "___ Earth goes around the sun.",
+      "v": [
+        "The",
+        "A",
+        "An",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "Yagona sayyora 'the'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#0fbea22b"
+    },
+    {
+      "q": "I need ___ hour to finish.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'hour' — 'h' o'qilmaydi, 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#56482af0"
+    },
+    {
+      "q": "She has ___ old bicycle.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'old' unli, 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#f0eed551"
+    },
+    {
+      "q": "Do you like ___ tea?",
+      "v": [
+        "-",
+        "a",
+        "an",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "Sanalmaydigan, artikl yo'q.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#9c6f46b8"
+    },
+    {
+      "q": "He is ___ university student.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'university' — 'yu' undosh, 'a'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#74496853"
+    },
+    {
+      "q": "There is ___ cat under the chair.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "Noma'lum narsa 'a'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#2e87fe17"
+    },
+    {
+      "q": "I eat ___ egg for breakfast.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'egg' unli, 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#9e865083"
+    },
+    {
+      "q": "She is ___ artist.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'artist' unli, 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#4a7f8243"
+    },
+    {
+      "q": "We saw ___ film last night.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'film' undosh, 'a'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#613c6b3a"
+    },
+    {
+      "q": "He has ___ idea.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'idea' unli, 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#aa44026e"
+    },
+    {
+      "q": "My father is ___ engineer.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'engineer' unli, 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#1faae28f"
+    },
+    {
+      "q": "Look at ___ sky!",
+      "v": [
+        "the",
+        "a",
+        "an",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "Yagona osmon 'the'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#7af874ae"
+    },
+    {
+      "q": "It is ___ interesting book.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "-"
+      ],
+      "t": 0,
+      "izoh": "'interesting' unli, 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#2bfb8ab2"
+    },
+    {
+      "q": "I have ___ book.",
+      "v": [
+        "the",
+        "an",
+        "—",
+        "a"
+      ],
+      "t": 3,
+      "izoh": "undosh tovush oldidan 'a' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#0d4e3ff3"
+    },
+    {
+      "q": "She wants ___ car.",
+      "v": [
+        "—",
+        "the",
+        "a",
+        "an"
+      ],
+      "t": 2,
+      "izoh": "undosh tovush oldidan 'a' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#5c1e9147"
+    },
+    {
+      "q": "This is ___ dog.",
+      "v": [
+        "an",
+        "—",
+        "the",
+        "a"
+      ],
+      "t": 3,
+      "izoh": "undosh tovush oldidan 'a' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#170e527c"
+    },
+    {
+      "q": "There is ___ table here.",
+      "v": [
+        "an",
+        "the",
+        "a",
+        "—"
+      ],
+      "t": 2,
+      "izoh": "undosh tovush oldidan 'a' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#63eb0c66"
+    },
+    {
+      "q": "I can see ___ pen.",
+      "v": [
+        "an",
+        "the",
+        "—",
+        "a"
+      ],
+      "t": 3,
+      "izoh": "undosh tovush oldidan 'a' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#9d9e8f80"
+    },
+    {
+      "q": "We need ___ boy.",
+      "v": [
+        "an",
+        "—",
+        "the",
+        "a"
+      ],
+      "t": 3,
+      "izoh": "undosh tovush oldidan 'a' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#cfab06c7"
+    },
+    {
+      "q": "It is ___ girl.",
+      "v": [
+        "the",
+        "an",
+        "a",
+        "—"
+      ],
+      "t": 2,
+      "izoh": "undosh tovush oldidan 'a' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#0525c6c7"
+    },
+    {
+      "q": "He bought ___ cup.",
+      "v": [
+        "an",
+        "—",
+        "a",
+        "the"
+      ],
+      "t": 2,
+      "izoh": "undosh tovush oldidan 'a' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#28d1ac1d"
+    },
+    {
+      "q": "Look, ___ chair!",
+      "v": [
+        "a",
+        "the",
+        "an",
+        "—"
+      ],
+      "t": 0,
+      "izoh": "undosh tovush oldidan 'a' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#a1f70d3e"
+    },
+    {
+      "q": "They found ___ door.",
+      "v": [
+        "the",
+        "—",
+        "a",
+        "an"
+      ],
+      "t": 2,
+      "izoh": "undosh tovush oldidan 'a' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#63c25691"
+    },
+    {
+      "q": "I have ___ phone.",
+      "v": [
+        "the",
+        "an",
+        "—",
+        "a"
+      ],
+      "t": 3,
+      "izoh": "undosh tovush oldidan 'a' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#3f426d43"
+    },
+    {
+      "q": "She wants ___ hat.",
+      "v": [
+        "—",
+        "the",
+        "an",
+        "a"
+      ],
+      "t": 3,
+      "izoh": "undosh tovush oldidan 'a' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#e8d00087"
+    },
+    {
+      "q": "This is ___ banana.",
+      "v": [
+        "—",
+        "an",
+        "a",
+        "the"
+      ],
+      "t": 2,
+      "izoh": "undosh tovush oldidan 'a' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#09708aa1"
+    },
+    {
+      "q": "There is ___ teacher here.",
+      "v": [
+        "the",
+        "—",
+        "an",
+        "a"
+      ],
+      "t": 3,
+      "izoh": "undosh tovush oldidan 'a' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#f719dbf6"
+    },
+    {
+      "q": "I can see ___ university.",
+      "v": [
+        "a",
+        "an",
+        "—",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "'university' 'yu' deb boshlanadi, undosh tovush, shuning uchun 'a'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#4074908c"
+    },
+    {
+      "q": "We need ___ apple.",
+      "v": [
+        "—",
+        "an",
+        "the",
+        "a"
+      ],
+      "t": 1,
+      "izoh": "unli tovush oldidan 'an' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#f8e8768c"
+    },
+    {
+      "q": "It is ___ orange.",
+      "v": [
+        "a",
+        "—",
+        "the",
+        "an"
+      ],
+      "t": 3,
+      "izoh": "unli tovush oldidan 'an' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#a0ee7565"
+    },
+    {
+      "q": "He bought ___ egg.",
+      "v": [
+        "a",
+        "—",
+        "an",
+        "the"
+      ],
+      "t": 2,
+      "izoh": "unli tovush oldidan 'an' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#027e7a90"
+    },
+    {
+      "q": "Look, ___ umbrella!",
+      "v": [
+        "—",
+        "the",
+        "a",
+        "an"
+      ],
+      "t": 3,
+      "izoh": "unli tovush oldidan 'an' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#00acde78"
+    },
+    {
+      "q": "They found ___ elephant.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "—"
+      ],
+      "t": 0,
+      "izoh": "unli tovush oldidan 'an' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#b4b3fd50"
+    },
+    {
+      "q": "I have ___ onion.",
+      "v": [
+        "an",
+        "the",
+        "—",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "unli tovush oldidan 'an' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#66f14752"
+    },
+    {
+      "q": "She wants ___ artist.",
+      "v": [
+        "an",
+        "—",
+        "the",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "unli tovush oldidan 'an' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#d7f5915e"
+    },
+    {
+      "q": "This is ___ engineer.",
+      "v": [
+        "a",
+        "—",
+        "the",
+        "an"
+      ],
+      "t": 3,
+      "izoh": "unli tovush oldidan 'an' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#d12cf70d"
+    },
+    {
+      "q": "There is ___ island here.",
+      "v": [
+        "the",
+        "—",
+        "an",
+        "a"
+      ],
+      "t": 2,
+      "izoh": "unli tovush oldidan 'an' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#2819b22f"
+    },
+    {
+      "q": "I can see ___ idea.",
+      "v": [
+        "the",
+        "an",
+        "a",
+        "—"
+      ],
+      "t": 1,
+      "izoh": "unli tovush oldidan 'an' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#731d64b3"
+    },
+    {
+      "q": "We need ___ arm.",
+      "v": [
+        "a",
+        "—",
+        "an",
+        "the"
+      ],
+      "t": 2,
+      "izoh": "unli tovush oldidan 'an' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#9c74fd2f"
+    },
+    {
+      "q": "It is ___ eye.",
+      "v": [
+        "—",
+        "the",
+        "a",
+        "an"
+      ],
+      "t": 3,
+      "izoh": "unli tovush oldidan 'an' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#15679eb1"
+    },
+    {
+      "q": "He bought ___ uncle.",
+      "v": [
+        "a",
+        "—",
+        "an",
+        "the"
+      ],
+      "t": 2,
+      "izoh": "unli tovush oldidan 'an' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#47c1747c"
+    },
+    {
+      "q": "Look, ___ hour!",
+      "v": [
+        "—",
+        "a",
+        "an",
+        "the"
+      ],
+      "t": 2,
+      "izoh": "'hour' so'zida 'h' o'qilmaydi, unli tovush bilan boshlanadi, shuning uchun 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#7930c935"
+    },
+    {
+      "q": "They found ___ owl.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "—"
+      ],
+      "t": 0,
+      "izoh": "unli tovush oldidan 'an' keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#b179a6fc"
+    },
+    {
+      "q": "___ sun is very hot today.",
+      "v": [
+        "the",
+        "—",
+        "an",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Yagona narsa (quyosh) uchun 'the'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#51fcdb24"
+    },
+    {
+      "q": "Look at ___ moon tonight.",
+      "v": [
+        "the",
+        "a",
+        "an",
+        "—"
+      ],
+      "t": 0,
+      "izoh": "Yagona narsa (oy) uchun 'the'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#fe20373d"
+    },
+    {
+      "q": "He is reading ___ book I gave him.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "—"
+      ],
+      "t": 2,
+      "izoh": "Aniq, ma'lum kitob uchun 'the'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#4563ca9c"
+    },
+    {
+      "q": "Open ___ window, please.",
+      "v": [
+        "a",
+        "an",
+        "—",
+        "the"
+      ],
+      "t": 3,
+      "izoh": "Ma'lum, aniq narsa uchun 'the'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#f0a35ea8"
+    },
+    {
+      "q": "Pass me ___ salt, please.",
+      "v": [
+        "a",
+        "the",
+        "an",
+        "—"
+      ],
+      "t": 1,
+      "izoh": "Stol ustidagi aniq tuz uchun 'the'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#91b3b3b7"
+    },
+    {
+      "q": "I clean ___ kitchen every day.",
+      "v": [
+        "the",
+        "an",
+        "a",
+        "—"
+      ],
+      "t": 0,
+      "izoh": "Uydagi aniq oshxona uchun 'the'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#4fdc8c8f"
+    },
+    {
+      "q": "She plays ___ piano very well.",
+      "v": [
+        "a",
+        "the",
+        "—",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Musiqa asboblari oldidan 'the' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#04befeba"
+    },
+    {
+      "q": "___ sky is blue.",
+      "v": [
+        "—",
+        "a",
+        "an",
+        "the"
+      ],
+      "t": 3,
+      "izoh": "Yagona narsa (osmon) uchun 'the'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#4835005c"
+    },
+    {
+      "q": "Where is ___ teacher? She was here.",
+      "v": [
+        "—",
+        "a",
+        "the",
+        "an"
+      ],
+      "t": 2,
+      "izoh": "Aniq, ma'lum o'qituvchi uchun 'the'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#1887f2e2"
+    },
+    {
+      "q": "Turn off ___ light, please.",
+      "v": [
+        "an",
+        "a",
+        "the",
+        "—"
+      ],
+      "t": 2,
+      "izoh": "Xonadagi aniq chiroq uchun 'the'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#2cc79c05"
+    },
+    {
+      "q": "I like ___ apples.",
+      "v": [
+        "the",
+        "a",
+        "an",
+        "—"
+      ],
+      "t": 3,
+      "izoh": "Umumiy ko'plik oldidan artikl kerak emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#aee5aa36"
+    },
+    {
+      "q": "___ dogs are friendly animals.",
+      "v": [
+        "the",
+        "—",
+        "an",
+        "a"
+      ],
+      "t": 1,
+      "izoh": "Umumiy ko'plik oldidan artikl kerak emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#b635c04f"
+    },
+    {
+      "q": "She drinks ___ milk every morning.",
+      "v": [
+        "a",
+        "—",
+        "the",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Sanaladigan bo'lmagan so'z (sut) oldidan artikl kerak emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#ab530e98"
+    },
+    {
+      "q": "We eat ___ rice for lunch.",
+      "v": [
+        "an",
+        "—",
+        "the",
+        "a"
+      ],
+      "t": 1,
+      "izoh": "Sanaladigan bo'lmagan so'z (guruch) oldidan artikl kerak emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#77bdebcc"
+    },
+    {
+      "q": "___ children like to play.",
+      "v": [
+        "the",
+        "a",
+        "an",
+        "—"
+      ],
+      "t": 3,
+      "izoh": "Umumiy ko'plik oldidan artikl kerak emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#dfe8452a"
+    },
+    {
+      "q": "I do not have ___ money.",
+      "v": [
+        "a",
+        "an",
+        "—",
+        "the"
+      ],
+      "t": 2,
+      "izoh": "Sanaladigan bo'lmagan so'z (pul) oldidan artikl kerak emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#efce6a45"
+    },
+    {
+      "q": "___ water is important for life.",
+      "v": [
+        "the",
+        "—",
+        "a",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Sanaladigan bo'lmagan so'z (suv) oldidan artikl kerak emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#922ccb67"
+    },
+    {
+      "q": "They study ___ English at school.",
+      "v": [
+        "a",
+        "an",
+        "the",
+        "—"
+      ],
+      "t": 3,
+      "izoh": "Til nomlari oldidan artikl kerak emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#b52b74c1"
+    },
+    {
+      "q": "___ cats like fish.",
+      "v": [
+        "the",
+        "a",
+        "an",
+        "—"
+      ],
+      "t": 3,
+      "izoh": "Umumiy ko'plik oldidan artikl kerak emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#806f730e"
+    },
+    {
+      "q": "He plays ___ football after school.",
+      "v": [
+        "a",
+        "the",
+        "an",
+        "—"
+      ],
+      "t": 3,
+      "izoh": "Sport o'yinlari oldidan artikl kerak emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#14bc05fe"
+    },
+    {
+      "q": "I love ___ books.",
+      "v": [
+        "—",
+        "the",
+        "an",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Umumiy ko'plik oldidan artikl kerak emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#9380dc84"
+    },
+    {
+      "q": "___ birds can fly.",
+      "v": [
+        "—",
+        "an",
+        "the",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Umumiy ko'plik oldidan artikl kerak emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#5d6a0538"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I have a egg.",
+        "I have an apple.",
+        "I have an banana.",
+        "I have a apple."
+      ],
+      "t": 1,
+      "izoh": "'apple' unli tovush bilan boshlanadi -> 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#9a16dc9c"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She is an artist.",
+        "She is a engineer.",
+        "She is a artist.",
+        "She is an teacher."
+      ],
+      "t": 0,
+      "izoh": "'artist' unli tovush -> 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#9a16dc9c~2"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "There is an elephant.",
+        "There is a elephant.",
+        "There is an dog.",
+        "There is a orange."
+      ],
+      "t": 0,
+      "izoh": "'elephant' unli tovush -> 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#9a16dc9c~3"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "He has an car.",
+        "He has a apple.",
+        "He has an book.",
+        "He has a car."
+      ],
+      "t": 3,
+      "izoh": "'car' undosh tovush -> 'a'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#9a16dc9c~4"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I see an cat.",
+        "I see a egg.",
+        "I see a owl.",
+        "I see an owl."
+      ],
+      "t": 3,
+      "izoh": "'owl' unli tovush -> 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#9a16dc9c~5"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "It is a idea.",
+        "It is an hour.",
+        "It is an minute.",
+        "It is a hour."
+      ],
+      "t": 1,
+      "izoh": "'hour' da 'h' o'qilmaydi -> 'an'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#9a16dc9c~6"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She wants an banana.",
+        "She wants a apple.",
+        "She wants an dog.",
+        "She wants a banana."
+      ],
+      "t": 3,
+      "izoh": "'banana' undosh tovush -> 'a'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#9a16dc9c~7"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "This is an book.",
+        "This is a idea.",
+        "This is a university.",
+        "This is an university."
+      ],
+      "t": 2,
+      "izoh": "'university' 'yu' deb boshlanadi -> 'a'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#9a16dc9c~8"
+    },
+    {
+      "q": "Which sentence is INCORRECT?",
+      "v": [
+        "She has an apple.",
+        "We have an orange.",
+        "I have a egg.",
+        "He has a book."
+      ],
+      "t": 2,
+      "izoh": "'egg' unli tovush, to'g'risi 'an egg'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#61670545"
+    },
+    {
+      "q": "Which sentence is INCORRECT?",
+      "v": [
+        "He is an teacher.",
+        "She is a doctor.",
+        "I am a student.",
+        "It is an idea."
+      ],
+      "t": 0,
+      "izoh": "'teacher' undosh tovush, to'g'risi 'a teacher'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#61670545~2"
+    },
+    {
+      "q": "Which sentence is INCORRECT?",
+      "v": [
+        "There is an artist.",
+        "There is a onion.",
+        "There is a table.",
+        "There is an umbrella."
+      ],
+      "t": 1,
+      "izoh": "'onion' unli tovush, to'g'risi 'an onion'.",
+      "qiy": "oson",
+      "id": "ing_a1_m3#61670545~3"
+    }
+  ]
+}

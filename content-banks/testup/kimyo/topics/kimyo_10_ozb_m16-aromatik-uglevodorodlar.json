@@ -1,0 +1,546 @@
+{
+  "nom": "16-mavzu. Aromatik uglevodorodlar. Olinishi va xossalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Aromatik birikmalar deb qanday birikmalarga aytiladi?",
+      "v": [
+        "Molekulasida benzol yadrosi mavjud bo'lgan birikmalarga",
+        "Molekulasida uchbog' bo'lgan birikmalarga",
+        "Molekulasida ikkita qo'shbog' bo'lgan birikmalarga",
+        "Molekulasida gidroksil guruhi bo'lgan birikmalarga"
+      ],
+      "t": 0,
+      "izoh": "Benzol yadrosi mavjud bo'lgan birikmalar aromatik birikmalar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#80de2e17"
+    },
+    {
+      "q": "Aromatik uglevodorodlarning dastlabki vakili qaysi modda?",
+      "v": [
+        "Benzol C6H6",
+        "Atsetilen C2H2",
+        "Metan CH4",
+        "Toluol C7H8"
+      ],
+      "t": 0,
+      "izoh": "Aromatik uglevodorodlarning dastlabki vakili - benzol C6H6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#e0ca4090"
+    },
+    {
+      "q": "Benzol molekulasining tuzilishini aks ettiruvchi formulani birinchi bo'lib kim taklif etgan?",
+      "v": [
+        "Nemis kimyogari A.Kekule",
+        "M.G.Kucherov",
+        "N.D.Zelinskiy",
+        "S.V.Lebedev"
+      ],
+      "t": 0,
+      "izoh": "Benzol tuzilish formulasini birinchi bo'lib nemis kimyogari A.Kekule taklif etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#6f36cd19"
+    },
+    {
+      "q": "Zamonaviy fizik usullar yordamida benzol molekulasi haqida nima aniqlandi?",
+      "v": [
+        "Siklik tuzilishga ega va oltita uglerod atomi bir tekislikda joylashgani",
+        "Zanjirsimon tuzilishga ega ekanligi",
+        "Uchta qo'shbog' va uchta oddiy bog'dan tashkil topgani",
+        "Molekula fazoda piramida shaklida joylashgani"
+      ],
+      "t": 0,
+      "izoh": "Benzol molekulasi siklik tuzilishga ega va oltita uglerod atomi bir tekislikda joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#bcd20f2b"
+    },
+    {
+      "q": "Benzolning gomologlari qanday hosil bo'ladi?",
+      "v": [
+        "Benzol molekulasidagi vodorod atomlari turli radikallarga almashganda",
+        "Benzol gidrogenlanganda",
+        "Benzol molekulasi yoritilganda",
+        "Benzol suvda eritilganda"
+      ],
+      "t": 0,
+      "izoh": "Vodorod atomlari turli radikallarga almashganda benzolning gomologlari hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#d62d91f2"
+    },
+    {
+      "q": "Darslikda keltirilgan benzol gomologlariga qaysi moddalar misol qilingan?",
+      "v": [
+        "Metilbenzol va etilbenzol",
+        "Fenol va anilin",
+        "Nitrobenzol va brombenzol",
+        "Ksantol va krezol"
+      ],
+      "t": 0,
+      "izoh": "Benzol gomologlari sifatida metilbenzol va etilbenzol keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#f9337630"
+    },
+    {
+      "q": "1,2-dimetilbenzolning qisqacha nomi qanday?",
+      "v": [
+        "o-ksilol",
+        "m-ksilol",
+        "p-ksilol",
+        "toluol"
+      ],
+      "t": 0,
+      "izoh": "1,2-dimetilbenzol - o-ksilol (orto).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#1a11d926"
+    },
+    {
+      "q": "1,3-dimetilbenzolning qisqacha nomi qanday?",
+      "v": [
+        "m-ksilol",
+        "o-ksilol",
+        "p-ksilol",
+        "benzil"
+      ],
+      "t": 0,
+      "izoh": "1,3-dimetilbenzol - m-ksilol (meta).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#320754fb"
+    },
+    {
+      "q": "1,4-dimetilbenzolning qisqacha nomi qanday?",
+      "v": [
+        "p-ksilol",
+        "o-ksilol",
+        "m-ksilol",
+        "fenil"
+      ],
+      "t": 0,
+      "izoh": "1,4-dimetilbenzol - p-ksilol (para).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#37be0229"
+    },
+    {
+      "q": "Benzol yadrosidan bitta vodorod atomi chiqarilsa qanday radikal hosil bo'ladi?",
+      "v": [
+        "Fenil C6H5-",
+        "Benzil C6H5CH2-",
+        "Metil CH3-",
+        "Etil C2H5-"
+      ],
+      "t": 0,
+      "izoh": "Benzol yadrosidan bitta vodorod atomi chiqarilsa fenil C6H5- radikali hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#e2339598"
+    },
+    {
+      "q": "Benzil radikali qanday hosil bo'ladi va uning formulasi qanday?",
+      "v": [
+        "Toluol tarkibidagi metil radikalidan bitta vodorod atomi chiqarilsa, C6H5CH2-",
+        "Benzoldan ikkita vodorod chiqarilsa, C6H4-",
+        "Toluoldan uchta vodorod chiqarilsa, C6H5C-",
+        "Benzolga metil qo'shilsa, C6H5CH3"
+      ],
+      "t": 0,
+      "izoh": "Toluol tarkibidagi metil radikalidan bitta vodorod atomi chiqarilsa benzil C6H5CH2- radikali hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#cb34e64e"
+    },
+    {
+      "q": "Benzol molekulasidagi vodorod atomlari bir nechta radikal bilan almashgan bo'lsa, bunday moddalarni nomlashda nimalardan foydalaniladi?",
+      "v": [
+        "Uglerod atomlari raqamlanadi yoki orto-, meta- va para ifodalar qisqacha yoziladi",
+        "Faqat ratsional nomenklatura ishlatiladi",
+        "Radikallar nomiga «atsetilen» so'zi qo'shiladi",
+        "Moddaga yangi oddiy nom beriladi"
+      ],
+      "t": 0,
+      "izoh": "Uglerod atomlari raqamlanadi yoki orto-, meta-, para ifodalar ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#e51d1b79"
+    },
+    {
+      "q": "Benzol qanday usulda olinadi?",
+      "v": [
+        "Siklogeksanni katalizator ishtirokida temperatura ta'sirida degidrogenlab",
+        "Kalsiy karbidni gidroliz qilib",
+        "Metanni 1500 darajada qizdirib",
+        "Etilenni polimerlab"
+      ],
+      "t": 0,
+      "izoh": "Benzol siklogeksanni katalizator ishtirokida degidrogenlab olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#8b7b168e"
+    },
+    {
+      "q": "Siklogeksanni degidrogenlash reaksiyasida benzoldan tashqari necha mol vodorod ajraladi?",
+      "v": [
+        "3 mol",
+        "2 mol",
+        "1 mol",
+        "6 mol"
+      ],
+      "t": 0,
+      "izoh": "Siklogeksandan benzol va 3H2 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#d85b2a2a"
+    },
+    {
+      "q": "Metilsiklogeksanni degidrogenlab qanday modda olish mumkin?",
+      "v": [
+        "Toluol",
+        "Benzol",
+        "Etilbenzol",
+        "o-ksilol"
+      ],
+      "t": 0,
+      "izoh": "Metilsiklogeksan degidrogenlanganda toluol hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#c215afdb"
+    },
+    {
+      "q": "Atsetilenni yuqori haroratda aktivlangan ko'mir ustidan o'tkazilsa qanday modda hosil bo'ladi?",
+      "v": [
+        "Trimerlanib benzol",
+        "Polimerlanib polietilen",
+        "Birikish sirka aldegid",
+        "Ajaralib uglerod va vodorod"
+      ],
+      "t": 0,
+      "izoh": "Atsetilen yuqori haroratda aktivlangan ko'mir ustidan o'tkazilsa trimerlanib benzolni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#8f14bc6b"
+    },
+    {
+      "q": "Benzolning fizik xossalari qanday?",
+      "v": [
+        "Rangsiz, suvda erimaydigan, o'ziga xos hidli suyuqlik",
+        "Rangli, suvda yaxshi eriydigan suyuqlik",
+        "Hidsiz, havodan yengil gaz",
+        "Oq rangli, suvda eriydigan kristall modda"
+      ],
+      "t": 0,
+      "izoh": "Benzol rangsiz, suvda erimaydigan, o'ziga xos hidli suyuqlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#7b89b011"
+    },
+    {
+      "q": "Benzol sovitilganda qanday holatga o'tadi?",
+      "v": [
+        "Oson qotib, oq kristall moddaga aylanadi",
+        "Qorayib, yopishqoq suyuqlikka aylanadi",
+        "Bug'lanib gazga aylanadi",
+        "Sariq kukunga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Sovitilganda benzol oson qotib, oq kristall moddaga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#19276fe5"
+    },
+    {
+      "q": "Aromatik uglevodorodlarning nisbiy molekulyar massasi ortib borsa qanday xossa o'zgaradi?",
+      "v": [
+        "Qaynash harorati ortib boradi",
+        "Qaynash harorati pasayadi",
+        "Suvdagi eruvchanlik ortadi",
+        "Molekula hidi yo'qoladi"
+      ],
+      "t": 0,
+      "izoh": "Nisbiy molekulyar massa ortgan sari qaynash harorati ham ortib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#f7aaf313"
+    },
+    {
+      "q": "Benzol yadrosi qanday xossaga ega va odatdagi sharoitda qanday harakat qiladi?",
+      "v": [
+        "Ancha mustahkam bo'lib, boshqa moddalar bilan reaksiyaga kirishmaydi",
+        "Juda faol bo'lib, har qanday modda bilan reaksiyaga kirishadi",
+        "Suv bilan tez gidrolizlanadi",
+        "Havoda o'z-o'zidan yonadi"
+      ],
+      "t": 0,
+      "izoh": "Benzol yadrosi ancha mustahkam, odatdagi sharoitda boshqa moddalar bilan reaksiyaga kirishmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#674102d4"
+    },
+    {
+      "q": "Ma'lum sharoit yaratilsa, benzol qanday reaksiyalarga kirishadi?",
+      "v": [
+        "Almashinish reaksiyalariga",
+        "Birikish reaksiyalariga",
+        "Neytrallanish reaksiyalariga",
+        "Gidroliz reaksiyalariga"
+      ],
+      "t": 0,
+      "izoh": "Ma'lum sharoitda benzol almashinish reaksiyalariga kirishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#c1ed8090"
+    },
+    {
+      "q": "Benzolning brom bilan almashinish reaksiyasi qanday sharoitda boradi?",
+      "v": [
+        "Temir (III) xlorid katalizatori ishtirokida va temperatura ta'sirida",
+        "Quyosh nuri ta'sirida",
+        "Suv ishtirokida oddiy haroratda",
+        "Kuchli ishqor muhitida"
+      ],
+      "t": 0,
+      "izoh": "FeCl3 katalizatori ishtirokida va temperatura ta'sirida almashinish reaksiyasi boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#8d99930a"
+    },
+    {
+      "q": "C6H6 + Br2 = C6H5Br + HBr reaksiyasi mahsuloti qanday nomlanadi?",
+      "v": [
+        "Brombenzol",
+        "Bromsiklogeksan",
+        "Dibrombenzol",
+        "Geksaxloran"
+      ],
+      "t": 0,
+      "izoh": "Reaksiyada brombenzol C6H5Br va HBr hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#6557ce39"
+    },
+    {
+      "q": "Benzolga nitrat kislota ta'sir ettirib nitrobenzol olishda qanday sharoit kerak?",
+      "v": [
+        "Konsentrlangan sulfat kislota ishtirokida va qizdirish bilan",
+        "Quyosh nurida",
+        "Suvli eritmada oddiy haroratda",
+        "Kuchli ishqor ishtirokida"
+      ],
+      "t": 0,
+      "izoh": "Reaksiya konsentrlangan H2SO4 ishtirokida, qizdirish bilan boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#78e28f19"
+    },
+    {
+      "q": "C6H6 + HNO3 reaksiyasi mahsulotlari qaysilar?",
+      "v": [
+        "C6H5NO2 va H2O",
+        "C6H5Br va HBr",
+        "C6H5OH va H2",
+        "C6H12 va O2"
+      ],
+      "t": 0,
+      "izoh": "Nitrlashda nitrobenzol C6H5NO2 va suv hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#c7c969f8"
+    },
+    {
+      "q": "Metilbenzol (toluol) nitrlanganda qanday modda hosil bo'ladi?",
+      "v": [
+        "1-metil-2,4,6-trinitrobenzol",
+        "Nitrobenzol",
+        "2,4,6-tribrom-1-metilbenzol",
+        "Benzoy kislota"
+      ],
+      "t": 0,
+      "izoh": "Toluol nitrlanganda 1-metil-2,4,6-trinitrobenzol hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#d902fbd3"
+    },
+    {
+      "q": "Metilbenzolga 3 mol brom ta'sir ettirilganda hosil bo'luvchi modda qaysi?",
+      "v": [
+        "2,4,6-tribrom-1-metilbenzol",
+        "1-metil-2,4,6-trinitrobenzol",
+        "Brombenzol",
+        "Benzil bromid"
+      ],
+      "t": 0,
+      "izoh": "Metilbenzol + 3Br2 reaksiyasidan 2,4,6-tribrom-1-metilbenzol va 3HBr hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#90611d6f"
+    },
+    {
+      "q": "Benzol gomologlari almashinish reaksiyalariga benzoldan farqli qanday kirishadi?",
+      "v": [
+        "Yanada osonroq kirishadi",
+        "Ancha qiyinroq kirishadi",
+        "Umuman kirishmaydi",
+        "Faqat yuqori bosimda kirishadi"
+      ],
+      "t": 0,
+      "izoh": "Benzol gomologlari almashinish reaksiyalariga yanada osonroq kirishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#777b2934"
+    },
+    {
+      "q": "Yon zanjirdagi alkil radikallari benzol halqasiga qanday ta'sir ko'rsatadi?",
+      "v": [
+        "Elektron zichlikni benzol tomon siljitib, 2,4,6-holatlardagi vodorodlarni almashinishga moyil qiladi",
+        "Halqadagi barcha bog'larni uzib yuboradi",
+        "Elektron zichlikni kamaytirib, halqani passivlashtiradi",
+        "Benzol yadrosini suvda eriydigan qiladi"
+      ],
+      "t": 0,
+      "izoh": "Alkil radikallari elektron zichlikni benzol tomon siljitadi va 2,4,6-holatlardagi vodorodlar almashinishga moyil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#92b814d8"
+    },
+    {
+      "q": "Benzol va uning gomologlari oksidlanishga nisbatan qanday xulq-atvorda bo'ladi?",
+      "v": [
+        "Benzol oksidlanishga chidamli, gomologlari esa oson oksidlanadi",
+        "Ikkalasi ham bir xil oson oksidlanadi",
+        "Benzol oson, gomologlari qiyin oksidlanadi",
+        "Ikkalasi ham umuman oksidlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Benzol oksidlanishga ancha chidamli, gomologlari ancha oson oksidlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#7161a32e"
+    },
+    {
+      "q": "Benzol gomologlariga kuchli oksidlovchilar (KMnO4) ta'sir ettirilganda nima oksidlanadi?",
+      "v": [
+        "Faqat yon zanjir",
+        "Benzol yadrosi",
+        "Butun molekula",
+        "Benzol halqasidagi vodorodlar"
+      ],
+      "t": 0,
+      "izoh": "Kuchli oksidlovchilar ta'sirida faqat yon zanjir oksidlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#38e35723"
+    },
+    {
+      "q": "Metilbenzol KMnO4 va H2SO4 ta'sirida oksidlanganda qanday modda hosil bo'ladi?",
+      "v": [
+        "Benzoy kislota",
+        "Nitrobenzol",
+        "Benzol",
+        "Siklogeksan"
+      ],
+      "t": 0,
+      "izoh": "Metilbenzol oksidlanganda benzoy kislota hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#141ac477"
+    },
+    {
+      "q": "Benzol quyosh nuri ta'sirida xlor bilan birikib qanday modda hosil qiladi?",
+      "v": [
+        "Geksaxlorsiklogeksan (geksaxloran)",
+        "Xlorbenzol",
+        "Dixlorbenzol",
+        "Benzoy xlorid"
+      ],
+      "t": 0,
+      "izoh": "Benzol quyosh nurida xlor bilan birikib geksaxlorsiklogeksan (geksaxloran) hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#8df929a4"
+    },
+    {
+      "q": "Geksaxlorsiklogeksan hosil bo'lishi uchun 1 mol benzolga necha mol xlor kerak?",
+      "v": [
+        "3 mol",
+        "1 mol",
+        "2 mol",
+        "6 mol"
+      ],
+      "t": 0,
+      "izoh": "Benzol + 3Cl2 reaksiyasida 3 mol xlor sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#a2cdf30a"
+    },
+    {
+      "q": "Benzol gidrogenlanganda qanday modda hosil bo'ladi?",
+      "v": [
+        "Siklogeksan",
+        "Geksan",
+        "Toluol",
+        "Geksen"
+      ],
+      "t": 0,
+      "izoh": "Benzol gidrogenlanganda siklogeksan hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#6294d0f0"
+    },
+    {
+      "q": "Darslik mashqiga ko'ra, benzol molekulasidagi sigma bog'lar soni nechta?",
+      "v": [
+        "12",
+        "6",
+        "10",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Benzol molekulasida sigma bog'lar soni 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m16-aromatik-uglevodorodlar#8d40964f"
+    }
+  ]
+}

@@ -1,0 +1,531 @@
+{
+  "nom": "03-mavzu. Fizik Kattaliklar Si",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Fizik kattaliklar deganda nima tushuniladi?",
+      "v": [
+        "Modda va maydonlarning fizik xossalarini, o'zaro ta'siri va harakatini miqdor jihatidan tavsiflovchi kattaliklar",
+        "Faqat matematik miqdorlar",
+        "Faqat o'lchov asboblari",
+        "Faqat birliklar sistemasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi ta'rif.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#cef0f100"
+    },
+    {
+      "q": "Bevosita o'lchanadigan kattalikka qaysi biri misol bo'lmaydi?",
+      "v": [
+        "energiya",
+        "uzunlik",
+        "vaqt",
+        "massa"
+      ],
+      "t": 0,
+      "izoh": "Energiya bilvosita (formula bilan) hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#1016a548"
+    },
+    {
+      "q": "Bilvosita o'lchanadigan kattaliklarga qaysilar kiradi?",
+      "v": [
+        "energiya, ish, quvvat",
+        "uzunlik, massa, vaqt",
+        "bosim, temperatura",
+        "kuch, vaqt"
+      ],
+      "t": 0,
+      "izoh": "Bilvosita — formulalar yordamida hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#d4598e5a"
+    },
+    {
+      "q": "Xalqaro birliklar sistemasi (SI) qachon qabul qilingan?",
+      "v": [
+        "1960-yildan boshlab",
+        "1860-yilda",
+        "1960-yildan oldin",
+        "2000-yilda"
+      ],
+      "t": 0,
+      "izoh": "1960-yildan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#75b7cc5f"
+    },
+    {
+      "q": "SI qisqartmasi qaysi tildan olingan?",
+      "v": [
+        "fransuz tilidan (Système international d'unités)",
+        "lotin tilidan",
+        "ingliz tilidan",
+        "yunon tilidan"
+      ],
+      "t": 0,
+      "izoh": "Fransuzcha qisqartma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#3a783768"
+    },
+    {
+      "q": "SI ga kiruvchi asosiy kattaliklar nechta?",
+      "v": [
+        "7 ta",
+        "2 ta",
+        "5 ta",
+        "9 ta"
+      ],
+      "t": 0,
+      "izoh": "7 ta asosiy, 2 ta yordamchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#c6783e14"
+    },
+    {
+      "q": "SI dagi yordamchi kattaliklar qaysilar?",
+      "v": [
+        "Yassi burchak va fazoviy burchak",
+        "Uzunlik va massa",
+        "Vaqt va temperatura",
+        "Tok kuchi va yorug'lik kuchi"
+      ],
+      "t": 0,
+      "izoh": "2 ta yordamchi kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#aa44ef24"
+    },
+    {
+      "q": "Uzunlik birligi sifatida SI da nima qabul qilingan?",
+      "v": [
+        "1 metr (m)",
+        "1 santimetr (sm)",
+        "1 kilometr (km)",
+        "1 millimetr (mm)"
+      ],
+      "t": 0,
+      "izoh": "Uzunlik birligi — metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#f0b83f65"
+    },
+    {
+      "q": "Metr etaloni qaysi qotishmadan tayyorlangan?",
+      "v": [
+        "platina va iridiy qotishmasidan",
+        "oltin va kumushdan",
+        "mis va ruxdan",
+        "po'latdan"
+      ],
+      "t": 0,
+      "izoh": "Platina-iridiy qotishmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#c0ff1e36"
+    },
+    {
+      "q": "Kilogrammning xalqaro namunasi qayerda saqlanadi?",
+      "v": [
+        "Fransiyaning Sevr shahrida",
+        "Angliyaning London shahrida",
+        "AQSHning Nyu-York shahrida",
+        "Germaniyaning Berlin shahrida"
+      ],
+      "t": 0,
+      "izoh": "Sevr shahri, Fransiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#c85fbd23"
+    },
+    {
+      "q": "SI da vaqt birligi qilib nima qabul qilingan?",
+      "v": [
+        "1 sekund (s)",
+        "1 daqiqa (min)",
+        "1 soat (h)",
+        "1 sutka"
+      ],
+      "t": 0,
+      "izoh": "Vaqt birligi — sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#4208c1d1"
+    },
+    {
+      "q": "1 sekund Yerning o'z o'qi atrofida bir marta aylanib chiqish vaqtining necha dan bir qismi?",
+      "v": [
+        "86400 dan bir",
+        "3600 dan bir",
+        "60 dan bir",
+        "24 dan bir"
+      ],
+      "t": 0,
+      "izoh": "86400 dan bir qismi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#e1267510"
+    },
+    {
+      "q": "Massani qaysi o'lchov asbobi bilan o'lchashadi?",
+      "v": [
+        "tarozi",
+        "sekundomer",
+        "ampermetr",
+        "termometr"
+      ],
+      "t": 0,
+      "izoh": "Massa — tarozi bilan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#66381172"
+    },
+    {
+      "q": "Vaqt qaysi asbob bilan o'lchanadi?",
+      "v": [
+        "sekundomer",
+        "tarozi",
+        "lyuksmetr",
+        "ampermetr"
+      ],
+      "t": 0,
+      "izoh": "Vaqt — sekundomer.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#c45b1691"
+    },
+    {
+      "q": "Absolyut temperaturaning SI dagi birligi nima?",
+      "v": [
+        "kelvin (K)",
+        "gradus Selsiy (°C)",
+        "joul (J)",
+        "paskal (Pa)"
+      ],
+      "t": 0,
+      "izoh": "Temperatura — kelvin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#df25ca26"
+    },
+    {
+      "q": "Tok kuchi qaysi asbob bilan o'lchanadi?",
+      "v": [
+        "ampermetr",
+        "voltmetr",
+        "dinamometr",
+        "termometr"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi — ampermetr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#3aa27e8d"
+    },
+    {
+      "q": "Yorug'lik kuchining SI dagi birligi nima?",
+      "v": [
+        "candela (cd)",
+        "lyuks",
+        "lumen",
+        "vatt"
+      ],
+      "t": 0,
+      "izoh": "Birligi — candela.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#5b84780f"
+    },
+    {
+      "q": "Yorug'lik kuchi qaysi asbob bilan o'lchanadi?",
+      "v": [
+        "lyuksmetr",
+        "ampermetr",
+        "barometr",
+        "menzurka"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga ko'ra lyuksmetr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#bcff81b3"
+    },
+    {
+      "q": "Modda miqdorining SI dagi birligi nima?",
+      "v": [
+        "mol",
+        "gramm",
+        "kilogramm",
+        "litr"
+      ],
+      "t": 0,
+      "izoh": "Modda miqdori — mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#6ef2a608"
+    },
+    {
+      "q": "Uzunlik (masofa) qanday belgilanadi?",
+      "v": [
+        "l, s",
+        "m, kg",
+        "t, s",
+        "T, K"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda l, s bilan belgilangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#0103fb1c"
+    },
+    {
+      "q": "Massa qanday harf bilan belgilanadi?",
+      "v": [
+        "m",
+        "l",
+        "t",
+        "I"
+      ],
+      "t": 0,
+      "izoh": "Massa — m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#4338be2f"
+    },
+    {
+      "q": "Hosilaviy birliklar qanday hosil qilinadi?",
+      "v": [
+        "Asosiy birliklar ustida matematik amallar bajarib",
+        "Etalonlardan nusxa olib",
+        "Tajriba o'tkazib",
+        "Xalqaro kelishuvsiz"
+      ],
+      "t": 0,
+      "izoh": "Matematik amallar orqali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#f68ef1d5"
+    },
+    {
+      "q": "Zichlik birligi qaysi birliklar nisbatiga teng?",
+      "v": [
+        "Massa va hajm birliklari nisbatiga",
+        "Uzunlik va vaqt nisbatiga",
+        "Kuch va yuza nisbatiga",
+        "Massa va vaqt nisbatiga"
+      ],
+      "t": 0,
+      "izoh": "Zichlik = massa/hajm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#53afcccd"
+    },
+    {
+      "q": "To'g'ri parallelepiped shaklidagi jism hajmi qanday formula bilan hisoblanadi?",
+      "v": [
+        "V = a∙b∙c",
+        "V = a + b + c",
+        "V = a/b",
+        "V = 2(a+b)"
+      ],
+      "t": 0,
+      "izoh": "Hajm — uch o'lcham ko'paytmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#ad4a42ee"
+    },
+    {
+      "q": "Noaniq shakldagi jism hajmini aniqlashda qaysi asbob ishlatiladi?",
+      "v": [
+        "menzurka idishi va suv",
+        "dinamometr",
+        "termometr",
+        "sekundomer"
+      ],
+      "t": 0,
+      "izoh": "Menzurka usuli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#daf7d4a4"
+    },
+    {
+      "q": "Menzurka usulida jism hajmi qanday aniqlanadi?",
+      "v": [
+        "Vjism = V2 − V1",
+        "Vjism = V1 + V2",
+        "Vjism = V2 ∙ V1",
+        "Vjism = V1/V2"
+      ],
+      "t": 0,
+      "izoh": "Hajmlar farqi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#6b83a49f"
+    },
+    {
+      "q": "Darslikdagi misolda menzurka usulida jism hajmi nechaga teng chiqdi?",
+      "v": [
+        "140 ml (140 sm³)",
+        "340 ml",
+        "200 ml",
+        "540 ml"
+      ],
+      "t": 0,
+      "izoh": "340 − 200 = 140 ml.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#424c7a2f"
+    },
+    {
+      "q": "Fizik kattalikni o'lchash deganda nima tushuniladi?",
+      "v": [
+        "Uni standart o'lchov bilan solishtirish",
+        "Uni taxmin qilish",
+        "Uni chizish",
+        "Uni formulaga qo'yish"
+      ],
+      "t": 0,
+      "izoh": "O'lchash — standart bilan solishtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#270b440c"
+    },
+    {
+      "q": "Fizik kattaliklar nimalar bilan tavsiflanadi?",
+      "v": [
+        "Nomi, belgisi, son qiymati va o'lchov birligi bilan",
+        "Faqat nomi bilan",
+        "Faqat birligi bilan",
+        "Faqat formulasi bilan"
+      ],
+      "t": 0,
+      "izoh": "To'rt belgi bilan tavsiflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#e7838220"
+    },
+    {
+      "q": "15 cm necha metrga teng?",
+      "v": [
+        "0,15 m",
+        "1,5 m",
+        "150 m",
+        "0,015 m"
+      ],
+      "t": 0,
+      "izoh": "Jadvaldagi misol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#68b2eee9"
+    },
+    {
+      "q": "0,04 m³ necha litrga teng?",
+      "v": [
+        "40 l",
+        "4 l",
+        "400 l",
+        "0,4 l"
+      ],
+      "t": 0,
+      "izoh": "Jadvaldagi misol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#c081f79b"
+    },
+    {
+      "q": "SI ga kiruvchi 7 ta asosiy kattalikka qaysi biri kirmaydi?",
+      "v": [
+        "kuch",
+        "uzunlik",
+        "massa",
+        "tok kuchi"
+      ],
+      "t": 0,
+      "izoh": "Kuch — hosilaviy kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#fdd544f8"
+    },
+    {
+      "q": "Uzunlik qaysi o'lchov asbobi bilan o'lchanadi?",
+      "v": [
+        "o'lchov lentasi",
+        "menzurka",
+        "dinamometr",
+        "barometr"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda o'lchov lentasi ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#6888c485"
+    },
+    {
+      "q": "Modda miqdori qanday o'lchanadi?",
+      "v": [
+        "bilvosita o'lchanadi",
+        "tarozi bilan",
+        "sekundomer bilan",
+        "ampermetr bilan"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda bilvosita deb ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#13f60162"
+    },
+    {
+      "q": "Kilogramm etaloni qanday shaklda tayyorlangan?",
+      "v": [
+        "silindr shaklida",
+        "kub shaklida",
+        "shar shaklida",
+        "sterjen shaklida"
+      ],
+      "t": 0,
+      "izoh": "Platina-iridiy silindr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m03-fizik-kattaliklar-si#06cb472a"
+    }
+  ]
+}

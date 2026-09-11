@@ -1,0 +1,2608 @@
+{
+  "fan": "matematika",
+  "nom": "Matematika",
+  "emoji": "📐",
+  "tur": "daraja",
+  "birlikNomi": "Blok",
+  "quyiIzoh": "14 MAVZU BLOKI · MILLIY SERTIFIKAT FORMATIGA MOS",
+  "jamiSavol": 18100,
+  "jamiMavzu": 181,
+  "qiy": {
+    "oson": 5839,
+    "orta": 7609,
+    "qiyin": 4652
+  },
+  "sinflar": [
+    {
+      "sinf": "arif",
+      "badge": "SONLAR",
+      "daraja": "Son, kasr, modul, bo'linish",
+      "rasmiyBolim": 1,
+      "mavzu": 13,
+      "savol": 1300,
+      "kitoblar": [
+        {
+          "nom": "Sonlar va ular ustida amallar",
+          "mavzu": 13,
+          "savol": 1300,
+          "mavzular": [
+            {
+              "id": "matematika_arif_m01-natural-sonlar-razryadlar-va-sanoq",
+              "nom": "Natural sonlar, razryadlar va sanoq sistemalari",
+              "bolim": "Sonlar va ular ustida amallar",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 44,
+                "qiyin": 22
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish",
+              "nom": "Bo'linish belgilari va qoldiqli bo'lish",
+              "bolim": "Sonlar va ular ustida amallar",
+              "savol": 100,
+              "qiy": {
+                "oson": 37,
+                "orta": 36,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub",
+              "nom": "Tub va murakkab sonlar, EKUB va EKUK",
+              "bolim": "Sonlar va ular ustida amallar",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 38,
+                "qiyin": 32
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_arif_m04-oddiy-kasrlar-va-ular-ustida",
+              "nom": "Oddiy kasrlar va ular ustida amallar",
+              "bolim": "Sonlar va ular ustida amallar",
+              "savol": 100,
+              "qiy": {
+                "oson": 37,
+                "orta": 38,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida",
+              "nom": "O'nli kasrlar va ular ustida amallar",
+              "bolim": "Sonlar va ular ustida amallar",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 45,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar",
+              "nom": "Cheksiz davriy o'nli kasrlar",
+              "bolim": "Sonlar va ular ustida amallar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni",
+              "nom": "Yaxlitlash, taqribiy qiymat va xatoni baholash",
+              "bolim": "Sonlar va ular ustida amallar",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 40,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy",
+              "nom": "Butun sonlar, musbat va manfiy sonlar",
+              "bolim": "Sonlar va ular ustida amallar",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 41,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar",
+              "nom": "Ratsional va irratsional sonlar",
+              "bolim": "Sonlar va ular ustida amallar",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 40,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_arif_m10-sonning-standart-shakli-va-olchov",
+              "nom": "Sonning standart shakli va o'lchov birliklari",
+              "bolim": "Sonlar va ular ustida amallar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_arif_m11-sonning-moduli-absolut-qiymati",
+              "nom": "Sonning moduli (absolut qiymati)",
+              "bolim": "Sonlar va ular ustida amallar",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 49,
+                "qiyin": 22
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_arif_m12-sonning-butun-va-kasr-qismi",
+              "nom": "Sonning butun va kasr qismi",
+              "bolim": "Sonlar va ular ustida amallar",
+              "savol": 100,
+              "qiy": {
+                "oson": 27,
+                "orta": 46,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_arif_m13-kompleks-sonlar-va-ular-ustida",
+              "nom": "Kompleks sonlar va ular ustida amallar",
+              "bolim": "Sonlar va ular ustida amallar",
+              "savol": 100,
+              "qiy": {
+                "oson": 28,
+                "orta": 47,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "foiz",
+      "badge": "MATNLI MASALA",
+      "daraja": "Foiz, nisbat, harakat, aralashma",
+      "rasmiyBolim": 2,
+      "mavzu": 12,
+      "savol": 1200,
+      "kitoblar": [
+        {
+          "nom": "Nisbat, foiz va matnli masalalar",
+          "mavzu": 12,
+          "savol": 1200,
+          "mavzular": [
+            {
+              "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz",
+              "nom": "Foiz tushunchasi va sodda foiz masalalari",
+              "bolim": "Nisbat, foiz va matnli masalalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 40,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_foiz_m02-murakkab-foizlar",
+              "nom": "Murakkab foizlar",
+              "bolim": "Nisbat, foiz va matnli masalalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_foiz_m03-nisbat-va-proporsiya",
+              "nom": "Nisbat va proporsiya",
+              "bolim": "Nisbat, foiz va matnli masalalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 41,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar",
+              "nom": "To'g'ri va teskari proporsional miqdorlar, masshtab",
+              "bolim": "Nisbat, foiz va matnli masalalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 43,
+                "qiyin": 21
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_foiz_m05-harakatga-doir-masalalar",
+              "nom": "Harakatga doir masalalar",
+              "bolim": "Nisbat, foiz va matnli masalalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 43,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_foiz_m06-aylana-boylab-harakat-va-soat",
+              "nom": "Aylana bo'ylab harakat va soat strelkalari",
+              "bolim": "Nisbat, foiz va matnli masalalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 41,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_foiz_m07-birgalikda-ishlashga-doir-masalalar",
+              "nom": "Birgalikda ishlashga doir masalalar",
+              "bolim": "Nisbat, foiz va matnli masalalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir",
+              "nom": "Aralashma, qorishma va eritmalarga doir masalalar",
+              "bolim": "Nisbat, foiz va matnli masalalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_foiz_m09-sonlar-yosh-va-raqamlarga-doir",
+              "nom": "Sonlar, yosh va raqamlarga doir matnli masalalar",
+              "bolim": "Nisbat, foiz va matnli masalalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 41,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_foiz_m10-kop-bosqichli-va-aralash-matnli",
+              "nom": "Ko'p bosqichli va aralash matnli masalalar",
+              "bolim": "Nisbat, foiz va matnli masalalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 41,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda",
+              "nom": "Diagramma va jadvaldan foiz hamda nisbatni o'qish",
+              "bolim": "Nisbat, foiz va matnli masalalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 43,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_foiz_m12-xarid-narx-va-byudjetga-oid",
+              "nom": "Xarid, narx va byudjetga oid amaliy masalalar",
+              "bolim": "Nisbat, foiz va matnli masalalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 43,
+                "qiyin": 24
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "ayn",
+      "badge": "IFODALAR",
+      "daraja": "Ko'phad, formula, algebraik kasr",
+      "rasmiyBolim": 2,
+      "mavzu": 10,
+      "savol": 1000,
+      "kitoblar": [
+        {
+          "nom": "Ayniy (algebraik shakl) almashtirishlar",
+          "mavzu": 10,
+          "savol": 1000,
+          "mavzular": [
+            {
+              "id": "matematika_ayn_m01-sonli-va-harfiy-ifodalar-birhad",
+              "nom": "Sonli va harfiy ifodalar, birhad va ko'phadlar",
+              "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari",
+              "nom": "Qisqa ko'paytirish formulalari",
+              "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 42,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_ayn_m03-kophadni-kopaytuvchilarga-ajratish",
+              "nom": "Ko'phadni ko'paytuvchilarga ajratish",
+              "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 26,
+                "orta": 49,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_ayn_m04-kophadni-kophadga-bolish-bezu-teoremasi",
+              "nom": "Ko'phadni ko'phadga bo'lish, Bezu teoremasi va ildizlar bilan bog'lanish",
+              "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 26,
+                "orta": 49,
+                "qiyin": 25
+              },
+              "sertifikat": false,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_ayn_m05-algebraik-kasrlar-va-ular-ustida",
+              "nom": "Algebraik kasrlar va ular ustida amallar",
+              "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 42,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_ayn_m06-murakkab-ratsional-ifodalarni-soddalashtirish",
+              "nom": "Murakkab ratsional ifodalarni soddalashtirish",
+              "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 31,
+                "orta": 43,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish",
+              "nom": "Ayniyatlarni isbotlash va shartli soddalashtirish",
+              "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 48,
+                "qiyin": 20
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_ayn_m08-modul-qatnashgan-ifodalarni-soddalashtirish",
+              "nom": "Modul qatnashgan ifodalarni soddalashtirish",
+              "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 45,
+                "qiyin": 22
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_ayn_m09-modulli-ifodaning-eng-katta-va",
+              "nom": "Modulli ifodaning eng katta va eng kichik qiymati",
+              "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 40,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani",
+              "nom": "To'la kvadrat ajratish va ifodani baholash",
+              "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 46,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "plan",
+      "badge": "PLANIMETRIYA",
+      "daraja": "Uchburchak, aylana, to'rtburchak",
+      "rasmiyBolim": 6,
+      "mavzu": 18,
+      "savol": 1800,
+      "kitoblar": [
+        {
+          "nom": "Planimetriya",
+          "mavzu": 18,
+          "savol": 1800,
+          "mavzular": [
+            {
+              "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar",
+              "nom": "Burchaklar va parallel to'g'ri chiziqlar",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari",
+              "nom": "Uchburchak: turlari, burchaklari va tomonlari",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 40,
+                "qiyin": 31
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi",
+              "nom": "Uchburchak medianasi va o'rta chizig'i",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 39,
+                "qiyin": 28
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_plan_m04-uchburchak-bissektrisasi-va-balandligi",
+              "nom": "Uchburchak bissektrisasi va balandligi",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 28,
+                "orta": 45,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari",
+              "nom": "Uchburchaklar tengligi alomatlari",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 31,
+                "orta": 46,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar",
+              "nom": "O'xshashlik, Fales teoremasi va kesmalar nisbati",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 31,
+                "orta": 36,
+                "qiyin": 33
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi",
+              "nom": "To'g'ri burchakli uchburchak: Pifagor teoremasi va metrik munosabatlar",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 27,
+                "orta": 47,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi",
+              "nom": "Sinuslar va kosinuslar teoremasi",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 43,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_plan_m09-uchburchak-yuzi-formulalari",
+              "nom": "Uchburchak yuzi formulalari",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 31,
+                "orta": 42,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_plan_m10-uchburchakka-ichki-va-tashqi-chizilgan",
+              "nom": "Uchburchakka ichki va tashqi chizilgan aylana",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 45,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_plan_m11-parallelogramm-va-uning-xossalari",
+              "nom": "Parallelogramm va uning xossalari",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 26,
+                "orta": 46,
+                "qiyin": 28
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_plan_m12-togri-tortburchak-romb-va-kvadrat",
+              "nom": "To'g'ri to'rtburchak, romb va kvadrat",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 46,
+                "qiyin": 21
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_plan_m13-trapetsiya",
+              "nom": "Trapetsiya",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 26,
+                "orta": 42,
+                "qiyin": 32
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar",
+              "nom": "Ko'pburchaklar va muntazam ko'pburchaklar",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 44,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi",
+              "nom": "Vatar, diametr, urinma va aylanadagi metrik munosabatlar",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 43,
+                "qiyin": 28
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_plan_m16-markaziy-ichki-chizilgan-va-urinma",
+              "nom": "Markaziy, ichki chizilgan va urinma-vatar burchaklari",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 28,
+                "orta": 48,
+                "qiyin": 24
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va",
+              "nom": "Ikki aylananing o'zaro joylashuvi va umumiy urinmalar",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 41,
+                "qiyin": 29
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va",
+              "nom": "Aylana uzunligi, doira, sektor va segment yuzi",
+              "bolim": "Planimetriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 43,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "dari",
+      "badge": "DARAJA",
+      "daraja": "Daraja, ildiz, logarifm",
+      "rasmiyBolim": 2,
+      "mavzu": 9,
+      "savol": 900,
+      "kitoblar": [
+        {
+          "nom": "Daraja, ildiz va logarifm",
+          "mavzu": 9,
+          "savol": 900,
+          "mavzular": [
+            {
+              "id": "matematika_dari_m01-natural-va-butun-korsatkichli-daraja",
+              "nom": "Natural va butun ko'rsatkichli daraja",
+              "bolim": "Daraja, ildiz va logarifm",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 40,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz",
+              "nom": "Arifmetik kvadrat ildiz",
+              "bolim": "Daraja, ildiz va logarifm",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_dari_m03-n-darajali-ildiz-va-uning",
+              "nom": "n-darajali ildiz va uning xossalari",
+              "bolim": "Daraja, ildiz va logarifm",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 41,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja",
+              "nom": "Ratsional va haqiqiy ko'rsatkichli daraja",
+              "bolim": "Daraja, ildiz va logarifm",
+              "savol": 100,
+              "qiy": {
+                "oson": 27,
+                "orta": 46,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh",
+              "nom": "Ildizli ifodalarni almashtirish va qo'sh radikallar",
+              "bolim": "Daraja, ildiz va logarifm",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 42,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_dari_m06-logarifm-tarifi-va-asosiy-logarifmik",
+              "nom": "Logarifm ta'rifi va asosiy logarifmik ayniyat",
+              "bolim": "Daraja, ildiz va logarifm",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 38,
+                "qiyin": 29
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_dari_m07-logarifm-xossalari-va-asosni-almashtirish",
+              "nom": "Logarifm xossalari va asosni almashtirish",
+              "bolim": "Daraja, ildiz va logarifm",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 49,
+                "qiyin": 21
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash",
+              "nom": "Logarifmik ifodalarni soddalashtirish va hisoblash",
+              "bolim": "Daraja, ildiz va logarifm",
+              "savol": 100,
+              "qiy": {
+                "oson": 31,
+                "orta": 44,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik",
+              "nom": "O'nlik va natural logarifm, logarifmik shkala",
+              "bolim": "Daraja, ildiz va logarifm",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "funk",
+      "badge": "FUNKSIYA",
+      "daraja": "Grafik, aniqlanish sohasi, xossa",
+      "rasmiyBolim": 4,
+      "mavzu": 14,
+      "savol": 1400,
+      "kitoblar": [
+        {
+          "nom": "Funksiyalar",
+          "mavzu": 14,
+          "savol": 1400,
+          "mavzular": [
+            {
+              "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va",
+              "nom": "Funksiya ta'rifi, berilish usullari va grafigi",
+              "bolim": "Funksiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar",
+              "nom": "Funksiyaning aniqlanish sohasi va qiymatlar to'plami",
+              "bolim": "Funksiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 47,
+                "qiyin": 24
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi",
+              "nom": "Chiziqli funksiya va uning grafigi",
+              "bolim": "Funksiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 45,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali",
+              "nom": "Teskari proporsionallik, giperbola va darajali funksiyalar",
+              "bolim": "Funksiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 43,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola",
+              "nom": "Kvadrat funksiya va parabola",
+              "bolim": "Funksiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 36,
+                "qiyin": 31
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi",
+              "nom": "Ko'rsatkichli funksiya va uning grafigi",
+              "bolim": "Funksiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 44,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi",
+              "nom": "Logarifmik funksiya va uning grafigi",
+              "bolim": "Funksiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va",
+              "nom": "Funksiya xossalari: juft-toqlik va davriylik",
+              "bolim": "Funksiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 47,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari",
+              "nom": "Monotonlik, o'sish va kamayish oraliqlari",
+              "bolim": "Funksiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 44,
+                "qiyin": 22
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_funk_m10-grafiklarni-almashtirish",
+              "nom": "Grafiklarni almashtirish",
+              "bolim": "Funksiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 39,
+                "qiyin": 28
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_funk_m11-grafik-orqali-tenglama-ildizlari-sonini",
+              "nom": "Grafik orqali tenglama ildizlari sonini parametrga bog'liq aniqlash",
+              "bolim": "Funksiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 45,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_funk_m12-teskari-funksiya",
+              "nom": "Teskari funksiya",
+              "bolim": "Funksiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 41,
+                "qiyin": 24
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_funk_m13-murakkab-funksiya",
+              "nom": "Murakkab funksiya",
+              "bolim": "Funksiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 28,
+                "orta": 45,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_funk_m14-parametrik-korinishda-berilgan-funksiyalar-va",
+              "nom": "Parametrik ko'rinishda berilgan funksiyalar va ularning grafiklari",
+              "bolim": "Funksiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 43,
+                "qiyin": 28
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "teng",
+      "badge": "TENGLAMA",
+      "daraja": "Chiziqli, kvadrat, irratsional",
+      "rasmiyBolim": 3,
+      "mavzu": 15,
+      "savol": 1500,
+      "kitoblar": [
+        {
+          "nom": "Tenglamalar va ularning sistemalari",
+          "mavzu": 15,
+          "savol": 1500,
+          "mavzular": [
+            {
+              "id": "matematika_teng_m01-bir-nomalumli-chiziqli-tenglamalar",
+              "nom": "Bir noma'lumli chiziqli tenglamalar",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_teng_m02-kvadrat-tenglama-diskriminant-va-viyet",
+              "nom": "Kvadrat tenglama: diskriminant va Viyet teoremasi",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 28,
+                "orta": 44,
+                "qiyin": 28
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_teng_m03-kvadrat-uchhad-ildizlar-ishorasi-va",
+              "nom": "Kvadrat uchhad: ildizlar ishorasi va berilgan songa hamda oraliqqa nisbatan joylashuvi",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 41,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar",
+              "nom": "Kvadrat tenglamaga keltiriladigan tenglamalar",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 31,
+                "orta": 44,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar",
+              "nom": "Ratsional (kasrli) tenglamalar",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 27,
+                "orta": 41,
+                "qiyin": 32
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_teng_m06-yuqori-darajali-kophadli-tenglamalar",
+              "nom": "Yuqori darajali ko'phadli tenglamalar",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 41,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar",
+              "nom": "Modul qatnashgan tenglamalar",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 47,
+                "qiyin": 24
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_teng_m08-irratsional-tenglamalar",
+              "nom": "Irratsional tenglamalar",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 42,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_teng_m09-korsatkichli-tenglamalar",
+              "nom": "Ko'rsatkichli tenglamalar",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 39,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_teng_m10-logarifmik-tenglamalar",
+              "nom": "Logarifmik tenglamalar",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 26,
+                "orta": 48,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi",
+              "nom": "Chiziqli tenglamalar sistemasi",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 45,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_teng_m12-nochiziqli-tenglamalar-sistemalari",
+              "nom": "Nochiziqli tenglamalar sistemalari",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 47,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_teng_m13-tenglamalarni-grafik-va-taqribiy-yechish",
+              "nom": "Tenglamalarni grafik va taqribiy yechish",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 42,
+                "qiyin": 24
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr",
+              "nom": "Chiziqli va kvadrat tenglamada parametr",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 41,
+                "qiyin": 25
+              },
+              "sertifikat": false,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul",
+              "nom": "Parametrni ajratish va grafik usul (a = f(x))",
+              "bolim": "Tenglamalar va ularning sistemalari",
+              "savol": 100,
+              "qiy": {
+                "oson": 26,
+                "orta": 39,
+                "qiyin": 35
+              },
+              "sertifikat": false,
+              "daraja": "yuqori"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "tngs",
+      "badge": "TENGSIZLIK",
+      "daraja": "Oraliqlar usuli, modul, logarifm",
+      "rasmiyBolim": 3,
+      "mavzu": 14,
+      "savol": 1400,
+      "kitoblar": [
+        {
+          "nom": "Tengsizliklar",
+          "mavzu": 14,
+          "savol": 1400,
+          "mavzular": [
+            {
+              "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va",
+              "nom": "Sonli tengsizliklar, ularning xossalari va sonli oraliqlar",
+              "bolim": "Tengsizliklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash",
+              "nom": "Sonlarni taqqoslash va tartiblash",
+              "bolim": "Tengsizliklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash",
+              "nom": "Klassik tengsizliklar va ularni isbotlash",
+              "bolim": "Tengsizliklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 40,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_tngs_m04-chiziqli-tengsizliklar-va-ularning-sistemalari",
+              "nom": "Chiziqli tengsizliklar va ularning sistemalari",
+              "bolim": "Tengsizliklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 42,
+                "qiyin": 29
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_tngs_m05-kvadrat-tengsizliklar",
+              "nom": "Kvadrat tengsizliklar",
+              "bolim": "Tengsizliklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 42,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar",
+              "nom": "Oraliqlar usuli va ratsional tengsizliklar",
+              "bolim": "Tengsizliklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar",
+              "nom": "Modul qatnashgan tengsizliklar",
+              "bolim": "Tengsizliklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 41,
+                "qiyin": 24
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_tngs_m08-irratsional-tengsizliklar",
+              "nom": "Irratsional tengsizliklar",
+              "bolim": "Tengsizliklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 31,
+                "orta": 45,
+                "qiyin": 24
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_tngs_m09-korsatkichli-tengsizliklar",
+              "nom": "Ko'rsatkichli tengsizliklar",
+              "bolim": "Tengsizliklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 46,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_tngs_m10-logarifmik-tengsizliklar",
+              "nom": "Logarifmik tengsizliklar",
+              "bolim": "Tengsizliklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 37,
+                "orta": 37,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar",
+              "nom": "Ratsionallashtirish metodi: o'zgaruvchi asosli tengsizliklar",
+              "bolim": "Tengsizliklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 45,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish",
+              "nom": "Tengsizliklarni grafik usulda yechish",
+              "bolim": "Tengsizliklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi",
+              "nom": "Ikki o'zgaruvchili tengsizliklar va tekislikdagi sohalar",
+              "bolim": "Tengsizliklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 39,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_tngs_m14-parametrli-tengsizliklar",
+              "nom": "Parametrli tengsizliklar",
+              "bolim": "Tengsizliklar",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 45,
+                "qiyin": 25
+              },
+              "sertifikat": false,
+              "daraja": "yuqori"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "prog",
+      "badge": "PROGRESSIYA",
+      "daraja": "Arifmetik va geometrik progressiya",
+      "rasmiyBolim": 2,
+      "mavzu": 8,
+      "savol": 800,
+      "kitoblar": [
+        {
+          "nom": "Ketma-ketliklar va progressiyalar",
+          "mavzu": 8,
+          "savol": 800,
+          "mavzular": [
+            {
+              "id": "matematika_prog_m01-sonli-ketma-ketliklar",
+              "nom": "Sonli ketma-ketliklar",
+              "bolim": "Ketma-ketliklar va progressiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 48,
+                "qiyin": 22
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_prog_m02-arifmetik-progressiya",
+              "nom": "Arifmetik progressiya",
+              "bolim": "Ketma-ketliklar va progressiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 27,
+                "orta": 45,
+                "qiyin": 28
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_prog_m03-arifmetik-progressiya-hadlari-yigindisi",
+              "nom": "Arifmetik progressiya hadlari yig'indisi",
+              "bolim": "Ketma-ketliklar va progressiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_prog_m04-geometrik-progressiya",
+              "nom": "Geometrik progressiya",
+              "bolim": "Ketma-ketliklar va progressiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 48,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_prog_m05-geometrik-progressiya-hadlari-yigindisi",
+              "nom": "Geometrik progressiya hadlari yig'indisi",
+              "bolim": "Ketma-ketliklar va progressiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 28,
+                "orta": 41,
+                "qiyin": 31
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya",
+              "nom": "Cheksiz kamayuvchi geometrik progressiya",
+              "bolim": "Ketma-ketliklar va progressiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 42,
+                "qiyin": 22
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_prog_m07-arifmetik-va-geometrik-progressiya-aralash",
+              "nom": "Arifmetik va geometrik progressiya aralash masalalari",
+              "bolim": "Ketma-ketliklar va progressiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 38,
+                "qiyin": 33
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar",
+              "nom": "Progressiyalarga doir amaliy masalalar",
+              "bolim": "Ketma-ketliklar va progressiyalar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "trig",
+      "badge": "TRIGONOMETRIYA",
+      "daraja": "Burchak, formula, tenglama",
+      "rasmiyBolim": 2,
+      "mavzu": 13,
+      "savol": 1300,
+      "kitoblar": [
+        {
+          "nom": "Trigonometriya",
+          "mavzu": 13,
+          "savol": 1300,
+          "mavzular": [
+            {
+              "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik",
+              "nom": "Gradus va radian o'lchov, birlik aylana",
+              "bolim": "Trigonometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari",
+              "nom": "sin, cos, tg, ctg ta'riflari, ishoralari va jadval qiymatlari",
+              "bolim": "Trigonometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 42,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_trig_m03-asosiy-trigonometrik-ayniyatlar",
+              "nom": "Asosiy trigonometrik ayniyatlar",
+              "bolim": "Trigonometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 40,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_trig_m04-keltirish-formulalari",
+              "nom": "Keltirish formulalari",
+              "bolim": "Trigonometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 39,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_trig_m05-qoshish-formulalari-yigindi-va-ayirma",
+              "nom": "Qo'shish formulalari (yig'indi va ayirma)",
+              "bolim": "Trigonometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 43,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_trig_m06-ikkilangan-va-yarim-burchak-formulalari",
+              "nom": "Ikkilangan va yarim burchak formulalari, universal almashtirish",
+              "bolim": "Trigonometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 38,
+                "qiyin": 28
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga",
+              "nom": "Yig'indini ko'paytmaga va ko'paytmani yig'indiga aylantirish",
+              "bolim": "Trigonometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_trig_m08-trigonometrik-ifodalarni-soddalashtirish-va-hisoblash",
+              "nom": "Trigonometrik ifodalarni soddalashtirish va hisoblash",
+              "bolim": "Trigonometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 41,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar",
+              "nom": "Teskari trigonometrik funksiyalar",
+              "bolim": "Trigonometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 48,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_trig_m10-trigonometrik-funksiyalar-grafiklari-va-xossalari",
+              "nom": "Trigonometrik funksiyalar grafiklari va xossalari",
+              "bolim": "Trigonometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_trig_m11-sodda-trigonometrik-tenglamalar",
+              "nom": "Sodda trigonometrik tenglamalar",
+              "bolim": "Trigonometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar",
+              "nom": "Murakkab trigonometrik tenglamalar",
+              "bolim": "Trigonometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 25,
+                "orta": 41,
+                "qiyin": 34
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_trig_m13-trigonometrik-tengsizliklar",
+              "nom": "Trigonometrik tengsizliklar",
+              "bolim": "Trigonometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 45,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "anlz",
+      "badge": "ANALIZ",
+      "daraja": "Hosila, ekstremum, integral",
+      "rasmiyBolim": 5,
+      "mavzu": 14,
+      "savol": 1400,
+      "kitoblar": [
+        {
+          "nom": "Matematik analiz asoslari",
+          "mavzu": 14,
+          "savol": 1400,
+          "mavzular": [
+            {
+              "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari",
+              "nom": "Funksiyaning limiti, uzluksizligi va asimptotalari",
+              "bolim": "Matematik analiz asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 43,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_anlz_m02-funksiya-orttirmasi-hosila-tarifi-va",
+              "nom": "Funksiya orttirmasi, hosila ta'rifi va taqribiy hisoblash",
+              "bolim": "Matematik analiz asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 38,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_anlz_m03-hosilaning-geometrik-manosi-urinma-va",
+              "nom": "Hosilaning geometrik ma'nosi, urinma va normal",
+              "bolim": "Matematik analiz asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_anlz_m04-hosilaning-fizik-manosi",
+              "nom": "Hosilaning fizik ma'nosi",
+              "bolim": "Matematik analiz asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar",
+              "nom": "Hosilalash qoidalari va elementar funksiyalar hosilalari",
+              "bolim": "Matematik analiz asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 39,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va",
+              "nom": "Ikkinchi tartibli hosila, qavariqlik va egilish nuqtasi",
+              "bolim": "Matematik analiz asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 41,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_anlz_m07-hosila-yordamida-monotonlik-va-ekstremumlarni",
+              "nom": "Hosila yordamida monotonlik va ekstremumlarni topish",
+              "bolim": "Matematik analiz asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_anlz_m08-kesmada-eng-katta-va-eng",
+              "nom": "Kesmada eng katta va eng kichik qiymat",
+              "bolim": "Matematik analiz asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_anlz_m09-optimallashtirish-amaliy-ekstremum-masalalari",
+              "nom": "Optimallashtirish (amaliy ekstremum) masalalari",
+              "bolim": "Matematik analiz asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 26,
+                "orta": 40,
+                "qiyin": 34
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash",
+              "nom": "Hosila yordamida ildizlar sonini aniqlash va tengsizlik isbotlash",
+              "bolim": "Matematik analiz asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_anlz_m11-funksiyani-toliq-tekshirish-va-grafigini",
+              "nom": "Funksiyani to'liq tekshirish va grafigini yasash",
+              "bolim": "Matematik analiz asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 39,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va",
+              "nom": "Boshlang'ich funksiya, aniqmas integral va bo'laklab integrallash",
+              "bolim": "Matematik analiz asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 43,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits",
+              "nom": "Aniq integral va Nyuton-Leybnits formulasi",
+              "bolim": "Matematik analiz asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 43,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_anlz_m14-integralning-tatbiqlari",
+              "nom": "Integralning tatbiqlari",
+              "bolim": "Matematik analiz asoslari",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 42,
+                "qiyin": 24
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "ster",
+      "badge": "STEREOMETRIYA",
+      "daraja": "Prizma, piramida, shar, kesim",
+      "rasmiyBolim": 6,
+      "mavzu": 16,
+      "savol": 1600,
+      "kitoblar": [
+        {
+          "nom": "Stereometriya",
+          "mavzu": 16,
+          "savol": 1600,
+          "mavzular": [
+            {
+              "id": "matematika_ster_m01-stereometriya-aksiomalari-va-togri-chiziqlarning",
+              "nom": "Stereometriya aksiomalari va to'g'ri chiziqlarning fazodagi joylashuvi",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 28,
+                "orta": 47,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi",
+              "nom": "To'g'ri chiziq va tekisliklarning parallelligi",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 37,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_ster_m03-perpendikulyarlik-va-uch-perpendikulyar-haqidagi",
+              "nom": "Perpendikulyarlik va uch perpendikulyar haqidagi teorema",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 28,
+                "orta": 43,
+                "qiyin": 29
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_ster_m04-tekisliklarning-perpendikulyarligi-va-ikkiyoqli-burchak",
+              "nom": "Tekisliklarning perpendikulyarligi va ikkiyoqli burchak",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 39,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_ster_m05-fazoda-masofalar-va-burchaklar",
+              "nom": "Fazoda masofalar va burchaklar",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 38,
+                "orta": 35,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_ster_m06-koordinata-vektor-usulida-stereometrik-masalalarni",
+              "nom": "Koordinata (vektor) usulida stereometrik masalalarni yechish",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 31,
+                "orta": 41,
+                "qiyin": 28
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_ster_m07-parallel-proyeksiyalash-yoyilma-va-fazodagi",
+              "nom": "Parallel proyeksiyalash, yoyilma va fazodagi geometrik almashtirishlar",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 38,
+                "qiyin": 28
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_ster_m08-prizma-va-parallelepiped",
+              "nom": "Prizma va parallelepiped",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 47,
+                "qiyin": 21
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_ster_m09-piramida-va-kesik-piramida",
+              "nom": "Piramida va kesik piramida",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim",
+              "nom": "Ko'pyoqlarda kesim yasash va kesim yuzi",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 40,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_ster_m11-kesim-jismni-bolgan-qismlar-hajmlari",
+              "nom": "Kesim jismni bo'lgan qismlar hajmlari nisbati",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 39,
+                "qiyin": 28
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_ster_m12-muntazam-kopyoqlar-eyler-teoremasi-va",
+              "nom": "Muntazam ko'pyoqlar, Eyler teoremasi va ko'pyoq elementlari soni",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 33,
+                "orta": 42,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_ster_m13-silindr",
+              "nom": "Silindr",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 26,
+                "orta": 48,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_ster_m14-konus-va-kesik-konus",
+              "nom": "Konus va kesik konus",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 26,
+                "orta": 45,
+                "qiyin": 29
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_ster_m15-shar-va-sfera",
+              "nom": "Shar va sfera",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 43,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi",
+              "nom": "Jismlar kombinatsiyasi: ichki va tashqi chizilgan sferalar",
+              "bolim": "Stereometriya",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 47,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "vekt",
+      "badge": "VEKTOR",
+      "daraja": "Koordinata, vektor, skalyar",
+      "rasmiyBolim": 6,
+      "mavzu": 9,
+      "savol": 900,
+      "kitoblar": [
+        {
+          "nom": "Koordinatalar va vektorlar",
+          "mavzu": 9,
+          "savol": 900,
+          "mavzular": [
+            {
+              "id": "matematika_vekt_m01-tekislikda-koordinatalar-masofa-va-kesmani",
+              "nom": "Tekislikda koordinatalar, masofa va kesmani bo'lish",
+              "bolim": "Koordinatalar va vektorlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi",
+              "nom": "To'g'ri chiziq va aylana tenglamasi",
+              "bolim": "Koordinatalar va vektorlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 44,
+                "qiyin": 24
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar",
+              "nom": "Tekislikdagi geometrik almashtirishlar",
+              "bolim": "Koordinatalar va vektorlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 32,
+                "orta": 47,
+                "qiyin": 21
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera",
+              "nom": "Fazoda dekart koordinatalari va sfera tenglamasi",
+              "bolim": "Koordinatalar va vektorlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan",
+              "nom": "Fazoda tekislik tenglamasi va nuqtadan tekislikkacha masofa",
+              "bolim": "Koordinatalar va vektorlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 27,
+                "orta": 46,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_vekt_m06-vektor-tushunchasi-va-vektorlar-ustida",
+              "nom": "Vektor tushunchasi va vektorlar ustida amallar",
+              "bolim": "Koordinatalar va vektorlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_vekt_m07-kollinear-vektorlar-va-vektorni-yoyish",
+              "nom": "Kollinear vektorlar va vektorni yoyish",
+              "bolim": "Koordinatalar va vektorlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 36,
+                "orta": 40,
+                "qiyin": 24
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_vekt_m08-komplanar-vektorlar-va-fazoda-yoyish",
+              "nom": "Komplanar vektorlar va fazoda yoyish",
+              "bolim": "Koordinatalar va vektorlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 37,
+                "qiyin": 28
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi",
+              "nom": "Skalyar ko'paytma va vektorlar orasidagi burchak",
+              "bolim": "Koordinatalar va vektorlar",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 43,
+                "qiyin": 22
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "disk",
+      "badge": "EHTIMOLLIK",
+      "daraja": "To'plam, mantiq, kombinatorika",
+      "rasmiyBolim": 7,
+      "mavzu": 16,
+      "savol": 1600,
+      "kitoblar": [
+        {
+          "nom": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+          "mavzu": 16,
+          "savol": 1600,
+          "mavzular": [
+            {
+              "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va",
+              "nom": "To'plamlar, ular ustida amallar va Eyler-Venn diagrammasi",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 39,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya",
+              "nom": "Mulohazalar: inkor, kon'yunksiya va diz'yunksiya",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 40,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari",
+              "nom": "Shartli mulohaza va unga teskari, qarama-qarshi mulohazalar; zarur va yetarli shart",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 37,
+                "orta": 40,
+                "qiyin": 23
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_disk_m04-predikatlar-kvantorlar-va-mantiqiy-masalalar",
+              "nom": "Predikatlar, kvantorlar va mantiqiy masalalar",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 34,
+                "orta": 40,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_disk_m05-statistik-malumotlarni-tasvirlash",
+              "nom": "Statistik ma'lumotlarni tasvirlash",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "baza"
+            },
+            {
+              "id": "matematika_disk_m06-orta-qiymat-moda-va-mediana",
+              "nom": "O'rta qiymat, moda va mediana",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_disk_m07-chetlanish-dispersiya-va-standart-chetlanish",
+              "nom": "Chetlanish, dispersiya va standart chetlanish",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 28,
+                "orta": 38,
+                "qiyin": 34
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik",
+              "nom": "Ikki tur ma'lumot orasidagi bog'liqlik (chiziqli korrelyatsiya)",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari",
+              "nom": "Kombinatorikaning asosiy qoidalari",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va",
+              "nom": "O'rin almashtirish, o'rinlashtirish, guruhlashlar va Nyuton binomi",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 45,
+                "qiyin": 26
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik",
+              "nom": "Tasodifiy hodisalar va klassik ehtimollik",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 28,
+                "orta": 43,
+                "qiyin": 29
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_disk_m12-hodisalar-ustida-amallar-qoshish-va",
+              "nom": "Hodisalar ustida amallar, qo'shish va ko'paytirish teoremalari",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 29,
+                "orta": 42,
+                "qiyin": 29
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_disk_m13-geometrik-ehtimollik",
+              "nom": "Geometrik ehtimollik",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 31,
+                "orta": 40,
+                "qiyin": 29
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_disk_m14-takroriy-sinovlar-bernulli-formulasi-binomial",
+              "nom": "Takroriy sinovlar: Bernulli formulasi, binomial va normal taqsimot",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 27,
+                "orta": 42,
+                "qiyin": 31
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            },
+            {
+              "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish",
+              "nom": "Chiziqli va kvadratik modellashtirish",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 35,
+                "orta": 40,
+                "qiyin": 25
+              },
+              "sertifikat": true,
+              "daraja": "orta"
+            },
+            {
+              "id": "matematika_disk_m16-korsatkichli-logarifmik-trigonometrik-va-geometrik",
+              "nom": "Ko'rsatkichli, logarifmik, trigonometrik va geometrik modellashtirish",
+              "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+              "savol": 100,
+              "qiy": {
+                "oson": 30,
+                "orta": 43,
+                "qiyin": 27
+              },
+              "sertifikat": true,
+              "daraja": "yuqori"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

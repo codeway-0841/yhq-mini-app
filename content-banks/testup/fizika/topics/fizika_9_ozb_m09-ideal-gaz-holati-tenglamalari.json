@@ -1,0 +1,486 @@
+{
+  "nom": "09-mavzu. Ideal Gaz Holati Tenglamalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Ma'lum massali ideal gazning termodinamik holati nechta makroskopik parametr orqali tavsiflanadi?",
+      "v": [
+        "Uchta: bosim p, hajm V va temperatura T",
+        "Ikkita: bosim va hajm",
+        "To'rtta: bosim, hajm, temperatura va zichlik",
+        "Bitta: faqat temperatura"
+      ],
+      "t": 0,
+      "izoh": "Ideal gazning termodinamik holati bosim p, hajm V va temperatura T orqali tavsiflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#6fd29379"
+    },
+    {
+      "q": "Ideal gazning holat tenglamasini keltirib chiqarishda gazlar molekulyar-kinetik nazariyasining qaysi asosiy tenglamasidan foydalaniladi?",
+      "v": [
+        "p = nkT",
+        "pV = const",
+        "Ēₖ = m₀v̄²/2",
+        "p = ρgh"
+      ],
+      "t": 0,
+      "izoh": "Holat tenglamasi MKN ning asosiy tenglamasi p = nkT dan foydalanib keltirib chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#306f8aba"
+    },
+    {
+      "q": "Hajm birligidagi molekulalar soni n qanday ifodalanadi?",
+      "v": [
+        "n = N/V",
+        "n = V/N",
+        "n = N·V",
+        "n = m/M"
+      ],
+      "t": 0,
+      "izoh": "Hajm birligidagi molekulalar soni n = N/V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#06c315ec"
+    },
+    {
+      "q": "Gazdagi molekulalar soni N massa va molyar massa orqali qanday ifodalanadi?",
+      "v": [
+        "N = (m/M)·Nₐ",
+        "N = (M/m)·Nₐ",
+        "N = m·M·Nₐ",
+        "N = Nₐ/(m·M)"
+      ],
+      "t": 0,
+      "izoh": "Molekulalar soni N = (m/M)·Nₐ ifoda orqali topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#0d8075e7"
+    },
+    {
+      "q": "Ideal gazning holat tenglamasi (Mendeleyev-Klapeyron tenglamasi) qanday ko'rinishga ega?",
+      "v": [
+        "pV = (m/M)RT",
+        "pV = mRT·M",
+        "p/V = (m/M)RT",
+        "pT = (m/M)RV"
+      ],
+      "t": 0,
+      "izoh": "Ideal gazning holat tenglamasi pV = (m/M)RT ko'rinishga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#a5688bd9"
+    },
+    {
+      "q": "pV = (m/M)RT tenglamani qaysi olimlar keltirib chiqqan?",
+      "v": [
+        "Dmitriy Mendeleyev va Benua Klapeyron",
+        "R. Boyl va E. Mariott",
+        "Gey-Lyussak va Jak Sharl",
+        "J. Maksvell va O. Shtern"
+      ],
+      "t": 0,
+      "izoh": "Bu tenglamani rus olimi Dmitriy Mendeleyev va fransuz olimi Benua Klapeyron keltirib chiqqan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#514d1a0a"
+    },
+    {
+      "q": "pV = (m/M)RT tenglama nima deb ataladi?",
+      "v": [
+        "Mendeleyev-Klapeyron tenglamasi",
+        "Boyl-Mariott qonuni",
+        "Sharl qonuni",
+        "Gey-Lyussak qonuni"
+      ],
+      "t": 0,
+      "izoh": "Bu tenglama Mendeleyev-Klapeyron tenglamasi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#5e630c57"
+    },
+    {
+      "q": "Ideal gazning holat tenglamasi qanday kattaliklar orasidagi bog'lanishni ifodalaydi?",
+      "v": [
+        "Gazning massasi, molyar massasi, bosimi, hajmi va temperaturasi orasidagi bog'lanishni",
+        "Faqat bosim va hajm orasidagi bog'lanishni",
+        "Faqat hajm va temperatura orasidagi bog'lanishni",
+        "Faqat massa va zichlik orasidagi bog'lanishni"
+      ],
+      "t": 0,
+      "izoh": "Holat tenglamasi gazning massasi, molyar massasi, bosimi, hajmi va temperaturasi orasidagi bog'lanishni ifodalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#09a272b3"
+    },
+    {
+      "q": "Mendeleyev-Klapeyron tenglamasini modda miqdori 1 mol bo'lgan gaz uchun yozsak, qanday ko'rinishga keladi?",
+      "v": [
+        "pV = RT",
+        "pV = R/T",
+        "pT = RV",
+        "pV = 2RT"
+      ],
+      "t": 0,
+      "izoh": "1 mol gaz uchun pV = RT yoki pV/T = R ko'rinishda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#080a5c98"
+    },
+    {
+      "q": "1 mol gaz uchun p·V/T nisbat nimaga teng?",
+      "v": [
+        "Universal gaz doimiysi R ga",
+        "Bolsman doimiysi k ga",
+        "Avogadro doimiysi Nₐ ga",
+        "Nolga"
+      ],
+      "t": 0,
+      "izoh": "1 mol gaz uchun p·V/T = R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#0036b49d"
+    },
+    {
+      "q": "Klapeyron tenglamasi qanday ko'rinishda yoziladi?",
+      "v": [
+        "p₁V₁/T₁ = p₂V₂/T₂",
+        "p₁V₁T₁ = p₂V₂T₂",
+        "p₁/V₁ = p₂/V₂",
+        "V₁T₁ = V₂T₂"
+      ],
+      "t": 0,
+      "izoh": "Massa o'zgarmagan gazning ikki holati uchun p₁V₁/T₁ = p₂V₂/T₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#0e21d06b"
+    },
+    {
+      "q": "Klapeyron tenglamasidan kelib chiqadigan pV/T = const ifoda nimani anglatadi?",
+      "v": [
+        "Bosim va hajm ko'paytmasining absolyut temperaturaga nisbati berilgan gaz massasi uchun o'zgarmas",
+        "Bosim har doim o'zgarmas",
+        "Hajm har doim o'zgarmas",
+        "Temperatura har doim o'zgarmas"
+      ],
+      "t": 0,
+      "izoh": "Gazda ixtiyoriy jarayon sodir bo'lganda bosim va hajm ko'paytmasining absolyut temperaturaga nisbati berilgan gaz massasi uchun o'zgarmasdan qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#af11c51f"
+    },
+    {
+      "q": "Klapeyron tenglamasi qaysi holatda qo'llaniladi?",
+      "v": [
+        "Massa o'zgarmagan (m = const) jarayon sodir bo'lgan gazning ikki holati uchun",
+        "Faqat hajm o'zgarmagan holatda",
+        "Faqat bosim o'zgarmagan holatda",
+        "Gaz massasi o'zgarib turgan holatda"
+      ],
+      "t": 0,
+      "izoh": "Klapeyron tenglamasi massa o'zgarmagan jarayon sodir bo'lgan gazning ikki holati uchun qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#6b7c4c4d"
+    },
+    {
+      "q": "Klapeyron tenglamasi qanday olinadi?",
+      "v": [
+        "Ikki holat uchun yozilgan Mendeleyev-Klapeyron tenglamalarini hadma-had bo'lish yo'li bilan",
+        "Ikki tenglamani qo'shish yo'li bilan",
+        "Tenglamani differensiallash yo'li bilan",
+        "Bolsman doimiysini ko'paytirish yo'li bilan"
+      ],
+      "t": 0,
+      "izoh": "Ikki holat tenglamalari hadma-had bo'linganda p₁V₁/T₁ = p₂V₂/T₂ kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#14713cf3"
+    },
+    {
+      "q": "Holat tenglamasidan temperaturani ifodalovchi formula qanday?",
+      "v": [
+        "T = pVM/(mR)",
+        "T = mR/(pVM)",
+        "T = pV/(RM)",
+        "T = mRT/(pV)"
+      ],
+      "t": 0,
+      "izoh": "pV = (m/M)RT dan T = pVM/(mR) kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#777c04b3"
+    },
+    {
+      "q": "Holat tenglamasidan bosimni ifodalovchi formula qanday?",
+      "v": [
+        "p = mRT/(MV)",
+        "p = MV/(mRT)",
+        "p = mM/(RTV)",
+        "p = RT/(mMV)"
+      ],
+      "t": 0,
+      "izoh": "pV = (m/M)RT dan p = mRT/(MV) kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#28623974"
+    },
+    {
+      "q": "Holat tenglamasidan hajmni ifodalovchi formula qanday?",
+      "v": [
+        "V = mRT/(Mp)",
+        "V = Mp/(mRT)",
+        "V = mMp/(RT)",
+        "V = RTp/(mM)"
+      ],
+      "t": 0,
+      "izoh": "pV = (m/M)RT dan V = mRT/(Mp) kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#1bb23f6d"
+    },
+    {
+      "q": "Holat tenglamasidan gaz massasini ifodalovchi formula qanday?",
+      "v": [
+        "m = pVM/(RT)",
+        "m = RT/(pVM)",
+        "m = pVR/(TM)",
+        "m = RVT/(pM)"
+      ],
+      "t": 0,
+      "izoh": "pV = (m/M)RT dan m = pVM/(RT) kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#b5cb533f"
+    },
+    {
+      "q": "Gaz holatining uch (p, V, T) parametridan bittasi noma'lum bo'lib, qolgan ikkisi ma'lum bo'lganda holat tenglamasi nimaga imkon beradi?",
+      "v": [
+        "Noma'lum parametrni aniqlashga",
+        "Gaz massasini o'zgartirishga",
+        "Temperaturani absolyut nolga tushirishga",
+        "Faqat zichlikni aniqlashga"
+      ],
+      "t": 0,
+      "izoh": "Holat tenglamasi noma'lum parametrni aniqlashga imkon beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#6748bd08"
+    },
+    {
+      "q": "p = nkT tenglamadagi k harfi nimani bildiradi?",
+      "v": [
+        "Bolsman doimiysini",
+        "Universal gaz doimiysini",
+        "Avogadro doimiysini",
+        "Molekula massasini"
+      ],
+      "t": 0,
+      "izoh": "k — Bolsman doimiysi (1,38·10⁻²³ J/K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#2c32e5ac"
+    },
+    {
+      "q": "k·Nₐ ko'paytma nimaga teng?",
+      "v": [
+        "Universal gaz doimiysi R ga",
+        "Molekula massasiga",
+        "Bitta molekula energiyasiga",
+        "Absolyut temperaturaga"
+      ],
+      "t": 0,
+      "izoh": "k·Nₐ = R, ya'ni gazlarning universal doimiysi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#35f7e6b1"
+    },
+    {
+      "q": "Normal sharoitda miqdori 1 mol bo'lgan ideal gaz qanday hajmni egallaydi?",
+      "v": [
+        "22,4 l",
+        "2,24 l",
+        "224 l",
+        "1 l"
+      ],
+      "t": 0,
+      "izoh": "Normal sharoitda 1 mol ideal gaz 22,4 l hajmni egallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#929b98cb"
+    },
+    {
+      "q": "Masala yechishda temperatura 127 °C kelvinda qanday ifodalanadi?",
+      "v": [
+        "T = 127 + 273 = 400 K",
+        "T = 127 K",
+        "T = 127 − 273 K",
+        "T = 127 · 273 K"
+      ],
+      "t": 0,
+      "izoh": "Temperatura kelvinga o'tkaziladi: T = 127 °C + 273 = 400 K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#a563d6da"
+    },
+    {
+      "q": "Holat tenglamasidan topiladigan massaning o'lchov birligi qanday chiqadi?",
+      "v": [
+        "kg",
+        "g/mol",
+        "Pa·m³",
+        "J/K"
+      ],
+      "t": 0,
+      "izoh": "m = pVM/(RT) ifodada birliklar qisqarib kg qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#d8a37a98"
+    },
+    {
+      "q": "Gaz bir holatdan boshqa holatga o'tganda uning holatini tavsiflovchi parametrlar qanday o'zgarishi mumkin?",
+      "v": [
+        "p, V, T parametrlarning uchtalasi ham bir vaqtda o'zgarishi mumkin",
+        "Faqat bitta parametr o'zgaradi",
+        "Parametrlar umuman o'zgarmaydi",
+        "Faqat bosim o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Gaz bir holatdan boshqa holatga o'tganda (p, V, T) parametrlarning uchtalasi ham bir vaqtda o'zgarishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#a08aebfc"
+    },
+    {
+      "q": "Birinchi holatdagi parametrlar p₁, V₁, T₁ bo'lib, ikkinchi holatga o'tganda ular qanday belgilanadi?",
+      "v": [
+        "p₂, V₂, T₂",
+        "p₀, V₀, T₀",
+        "p, V, T",
+        "p₃, V₃, T₃"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi holatga o'tganda parametrlar p₂, V₂, T₂ bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#572a5f5c"
+    },
+    {
+      "q": "Gazning zichligi massa va hajm orqali qanday ifodalanadi?",
+      "v": [
+        "ρ = m/V",
+        "ρ = V/m",
+        "ρ = m·V",
+        "ρ = m/V²"
+      ],
+      "t": 0,
+      "izoh": "Zichlik ρ = m/V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#95e3d5a5"
+    },
+    {
+      "q": "Mendeleyev-Klapeyron tenglamasidan gaz zichligini ifodalovchi formula qanday?",
+      "v": [
+        "ρ = pM/(RT)",
+        "ρ = RT/(pM)",
+        "ρ = pR/(MT)",
+        "ρ = MT/(pR)"
+      ],
+      "t": 0,
+      "izoh": "m/V = ρ ni hisobga olsak, ρ = pM/(RT) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#4613f0c6"
+    },
+    {
+      "q": "Bosimi p, temperaturasi T bo'lgan ikki xil gazdan molyar massasi kattaroq gazning zichligi qanday bo'ladi?",
+      "v": [
+        "Katta, chunki zichlik molyar massaga to'g'ri proporsional",
+        "Kichik, chunki zichlik molyar massaga teskari proporsional",
+        "Bir xil",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "ρ = pM/(RT) ga ko'ra, bir xil p va T da molyar massasi katta gazning zichligi katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#af3950fb"
+    },
+    {
+      "q": "O'zgarmas bosim va hajmda gazning temperaturasi oshirilsa, holat tenglamasiga ko'ra gaz massasi qanday o'zgarishi kerak?",
+      "v": [
+        "Kamayishi kerak, chunki m = pVM/(RT)",
+        "Oshishi kerak",
+        "O'zgarmaydi",
+        "Avval oshib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "m = pVM/(RT) ga ko'ra, p, V, M o'zgarmasa, T oshganda m kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#3623c19b"
+    },
+    {
+      "q": "Kislorod gazining molyar massasi qancha?",
+      "v": [
+        "32·10⁻³ kg/mol",
+        "16·10⁻³ kg/mol",
+        "2·10⁻³ kg/mol",
+        "28·10⁻³ kg/mol"
+      ],
+      "t": 0,
+      "izoh": "Kislorod (O₂) gazining molyar massasi M = 32·10⁻³ kg/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#d4db9b4f"
+    },
+    {
+      "q": "160 kPa bosim paskallarda qanday ifodalanadi?",
+      "v": [
+        "16·10⁴ Pa",
+        "1,6·10³ Pa",
+        "16·10² Pa",
+        "1,6·10⁶ Pa"
+      ],
+      "t": 0,
+      "izoh": "160 kPa = 160·10³ Pa = 16·10⁴ Pa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m09-ideal-gaz-holati-tenglamalari#5013fae8"
+    }
+  ]
+}

@@ -1,0 +1,1306 @@
+{
+  "nom": "Third Conditional",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "If the pilot ___ the warning, the plane would have landed safely.",
+      "v": [
+        "saw",
+        "had seen",
+        "would see",
+        "has seen"
+      ],
+      "t": 1,
+      "izoh": "Shart qismi — had + V3: had seen (#113).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#84225397"
+    },
+    {
+      "q": "If you had warned me, I ___ the icy road.",
+      "v": [
+        "would avoid",
+        "had avoided",
+        "would have avoided",
+        "avoided"
+      ],
+      "t": 2,
+      "izoh": "Natija — would have + V3 (#114).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#6fc3e387"
+    },
+    {
+      "q": "Find the mistake: 'If I would have known, I would have come earlier.'",
+      "v": [
+        "would have known",
+        "would have come",
+        "earlier",
+        "If"
+      ],
+      "t": 0,
+      "izoh": "Shartda would yo'q — If I had known (#100).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#62bb73bc"
+    },
+    {
+      "q": "Which sentence about the job is correct?",
+      "v": [
+        "If she hadn't hesitated, she had got the job.",
+        "If she hadn't hesitated, she would have got the job.",
+        "If she hasn't hesitated, she would have got the job.",
+        "If she hadn't hesitated, she would got the job."
+      ],
+      "t": 1,
+      "izoh": "had faqat shartda, natija would have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#0f77eb64"
+    },
+    {
+      "q": "We ___ the final if our goalkeeper hadn't been injured.",
+      "v": [
+        "might win",
+        "might have won",
+        "might had won",
+        "would win"
+      ],
+      "t": 1,
+      "izoh": "Kuchsizroq natija — might have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#287d777d"
+    },
+    {
+      "q": "Find the mistake: 'She would of passed the exam if she had studied.'",
+      "v": [
+        "would of",
+        "passed",
+        "if she had",
+        "studied"
+      ],
+      "t": 0,
+      "izoh": "«would of» yo'q — would have (/əv/ talaffuz aldaydi).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#9c01ee57"
+    },
+    {
+      "q": "If I ___ a car last year, I would have driven to Nukus every month.",
+      "v": [
+        "had",
+        "would have",
+        "had had",
+        "have had"
+      ],
+      "t": 2,
+      "izoh": "O'tmish sharti: had had — ikkita had to'g'ri.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#e1c637bf"
+    },
+    {
+      "q": "Which sentence means «I didn't buy a ticket, so I stood the whole way»?",
+      "v": [
+        "If I bought a ticket, I wouldn't stand the whole way.",
+        "If I had bought a ticket, I wouldn't have stood the whole way.",
+        "If I hadn't bought a ticket, I would have stood the whole way.",
+        "If I have bought a ticket, I don't stand the whole way."
+      ],
+      "t": 1,
+      "izoh": "Real inkor (chipta olmadim) → xayoliy tasdiq shart; real ijobiy (tik turdim) → inkor natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#29497369"
+    },
+    {
+      "q": "___ known about the delay, we would have taken another route.",
+      "v": [
+        "If we",
+        "Had we",
+        "We had",
+        "Would we"
+      ],
+      "t": 1,
+      "izoh": "Rasmiy inversiya: Had + ega + V3 = If we had known.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#9c1b4efc"
+    },
+    {
+      "q": "What ___ if the bank had been closed?",
+      "v": [
+        "you would have done",
+        "would you have done",
+        "had you done",
+        "would you had done"
+      ],
+      "t": 1,
+      "izoh": "O'tmish savoli: would + ega + have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#469aff56"
+    },
+    {
+      "q": "Find the mistake: 'If they had trained harder, they would have win the match.'",
+      "v": [
+        "had trained",
+        "harder",
+        "would have win",
+        "the match"
+      ],
+      "t": 2,
+      "izoh": "have dan keyin V3: would have won (#91).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#2a5fca3f"
+    },
+    {
+      "q": "If it ___ for the taxi driver, I would have missed the interview.",
+      "v": [
+        "wouldn't have been",
+        "hadn't been",
+        "wouldn't be",
+        "hasn't been"
+      ],
+      "t": 1,
+      "izoh": "«If it hadn't been for» + ot = o'sha odam/narsa bo'lmaganida.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#6844d65f"
+    },
+    {
+      "q": "___ she have accepted the job if they had offered more money?",
+      "v": [
+        "Would",
+        "Will",
+        "Had",
+        "Did"
+      ],
+      "t": 0,
+      "izoh": "Would + subject + have + V3 savol shakli.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#af84ace3"
+    },
+    {
+      "q": "If I hadn't seen the sign, I ___ the wrong way.",
+      "v": [
+        "would drive",
+        "had driven",
+        "would have driven",
+        "drove"
+      ],
+      "t": 2,
+      "izoh": "would have driven.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#9afebaed"
+    },
+    {
+      "q": "Where ___ if you had had more time on holiday?",
+      "v": [
+        "would you have gone",
+        "would you go",
+        "had you gone",
+        "did you go"
+      ],
+      "t": 0,
+      "izoh": "Xayoliy o'tmish savoli.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#026c2597"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "If I would have known, I would have told you.",
+        "If I had known, I would have told you.",
+        "If I knew, I would have told you.",
+        "If I had know, I would told you."
+      ],
+      "t": 1,
+      "izoh": "If qismida 'would have' ishlatilmaydi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#21ac92a9"
+    },
+    {
+      "q": "Which sentence is grammatically correct?",
+      "v": [
+        "She would have came if you had invited her.",
+        "She would come if you had invited her.",
+        "She would have come if you had invited her.",
+        "She had come if you would have invited her."
+      ],
+      "t": 2,
+      "izoh": "come ning V3 = come, 'came' emas.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#129fc795"
+    },
+    {
+      "q": "Which is a correct third conditional?",
+      "v": [
+        "If they left earlier, they wouldn't have been stuck.",
+        "If they had left earlier, they wouldn't be stuck.",
+        "If they would leave earlier, they wouldn't have been stuck.",
+        "If they had left earlier, they wouldn't have been stuck in traffic."
+      ],
+      "t": 3,
+      "izoh": "Ikkala qism ham o'tmishga tegishli.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#cc0c2444"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "We could have won if we had played better.",
+        "We could win if we had played better.",
+        "We could have won if we would have played better.",
+        "We could have win if we had played better."
+      ],
+      "t": 0,
+      "izoh": "could have + V3, if + past perfect.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#9a16dc9c"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "Had I know about the meeting, I would have attended.",
+        "Have I known about the meeting, I would attend.",
+        "Had I known about the meeting, I would have attended.",
+        "If I would have known, I would attend."
+      ],
+      "t": 2,
+      "izoh": "'Had I known' = inversion, if o'rniga.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#21ac92a9~2"
+    },
+    {
+      "q": "Find the error: 'If she would have studied, she would have passed.'",
+      "v": [
+        "would have studied should be had studied",
+        "would have passed is wrong",
+        "studied is wrong",
+        "no error"
+      ],
+      "t": 0,
+      "izoh": "If qismida would have ishlatilmaydi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#fd4e0c16"
+    },
+    {
+      "q": "Which part is wrong? 'If I had saw the email, I would have replied.'",
+      "v": [
+        "would have replied is wrong",
+        "had saw should be had seen",
+        "had is wrong",
+        "no error"
+      ],
+      "t": 1,
+      "izoh": "see ning V3 = seen.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#126cc49d"
+    },
+    {
+      "q": "Spot the mistake: 'They would have helped if you would have asked.'",
+      "v": [
+        "would have helped is wrong",
+        "helped is wrong",
+        "you would have asked should be you had asked",
+        "no error"
+      ],
+      "t": 2,
+      "izoh": "If qismi past perfect bo'lishi kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#6114607e"
+    },
+    {
+      "q": "Find the error: 'If we hadn't of missed the bus, we would have been on time.'",
+      "v": [
+        "hadn't of should be hadn't",
+        "we would have been is wrong",
+        "missed is wrong",
+        "no error"
+      ],
+      "t": 0,
+      "izoh": "'hadn't of' notogri, faqat 'hadn't'.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#d5777d9e"
+    },
+    {
+      "q": "Which is the error? 'He wouldn't have failed if he studied harder.'",
+      "v": [
+        "wouldn't have failed is wrong",
+        "studied should be had studied",
+        "harder is wrong",
+        "no error"
+      ],
+      "t": 1,
+      "izoh": "If qismida past perfect kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#4370b46c"
+    },
+    {
+      "q": "Put the words in order: known / I / had / if / earlier — which start is correct?",
+      "v": [
+        "If I had known earlier",
+        "If I known had earlier",
+        "If had I known earlier",
+        "I had if known earlier"
+      ],
+      "t": 0,
+      "izoh": "If + subject + had + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#1382aa16"
+    },
+    {
+      "q": "Correct word order for the result clause: won / they / would / have / the game",
+      "v": [
+        "they have would won the game",
+        "they would have won the game",
+        "they would won have the game",
+        "would they have won the game"
+      ],
+      "t": 1,
+      "izoh": "would + have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#434e69da"
+    },
+    {
+      "q": "'I didn't bring an umbrella, so I got wet.' Which third conditional matches?",
+      "v": [
+        "If I brought an umbrella, I wouldn't get wet.",
+        "If I had brought an umbrella, I wouldn't have got wet.",
+        "If I bring an umbrella, I won't get wet.",
+        "If I had brought an umbrella, I won't get wet."
+      ],
+      "t": 1,
+      "izoh": "O'tmish faktini xayoliy o'zgartirish.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#3cca5d76"
+    },
+    {
+      "q": "'She didn't call, so we didn't know.' Which is correct?",
+      "v": [
+        "If she had called, we would have known.",
+        "If she called, we would know.",
+        "If she calls, we will know.",
+        "If she had called, we would know."
+      ],
+      "t": 0,
+      "izoh": "Ikkala qism ham o'tmish.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#a8b5758d"
+    },
+    {
+      "q": "'He was late because he overslept.' Which matches?",
+      "v": [
+        "If he didn't oversleep, he wouldn't be late.",
+        "If he doesn't oversleep, he won't be late.",
+        "If he hadn't overslept, he wouldn't have been late.",
+        "If he hadn't overslept, he wouldn't be late."
+      ],
+      "t": 2,
+      "izoh": "oversleep ning V3 = overslept.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#9181bc4f"
+    },
+    {
+      "q": "If you ___ me, I would have believed you.",
+      "v": [
+        "had told",
+        "told",
+        "would tell",
+        "tell"
+      ],
+      "t": 0,
+      "izoh": "If + past perfect.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#15cf0b4c"
+    },
+    {
+      "q": "The team ___ if the coach had chosen a better strategy.",
+      "v": [
+        "would improve",
+        "would have improved",
+        "had improved",
+        "improved"
+      ],
+      "t": 1,
+      "izoh": "would have improved.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#c7d59013"
+    },
+    {
+      "q": "If I hadn't forgotten my password, I ___ locked out.",
+      "v": [
+        "wouldn't be",
+        "wouldn't have been",
+        "hadn't been",
+        "wasn't"
+      ],
+      "t": 1,
+      "izoh": "O'tmishdagi inkor natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#85b7f036"
+    },
+    {
+      "q": "She ___ the interview if she had prepared answers.",
+      "v": [
+        "might have passed",
+        "might pass",
+        "had passed",
+        "passes"
+      ],
+      "t": 0,
+      "izoh": "might have + V3 ehtimollik uchun.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#22210f90"
+    },
+    {
+      "q": "If the shop ___ open, we would have bought some milk.",
+      "v": [
+        "was",
+        "had been",
+        "would be",
+        "were"
+      ],
+      "t": 1,
+      "izoh": "had been = past perfect of 'be'.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#23ad88d2"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "If it hadn't been so cold, we would have swum.",
+        "If it wasn't so cold, we would have swum.",
+        "If it hadn't been so cold, we would swum.",
+        "If it hadn't be so cold, we would have swum."
+      ],
+      "t": 0,
+      "izoh": "swim ning V3 = swum.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#21ac92a9~3"
+    },
+    {
+      "q": "'Because he lied, nobody trusted him.' Which matches?",
+      "v": [
+        "If he didn't lie, nobody would trust him.",
+        "If he hadn't lied, everybody would have trusted him.",
+        "If he hadn't lied, everybody would trust him.",
+        "If he doesn't lie, everybody will trust him."
+      ],
+      "t": 1,
+      "izoh": "O'tmish sabab-natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#d576bdfe"
+    },
+    {
+      "q": "If we had booked earlier, the tickets ___ cheaper.",
+      "v": [
+        "would be",
+        "would have been",
+        "had been",
+        "were"
+      ],
+      "t": 1,
+      "izoh": "would have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#a0c53e13"
+    },
+    {
+      "q": "I ___ the meeting if you hadn't reminded me.",
+      "v": [
+        "would forget",
+        "had forgotten",
+        "would have forgotten",
+        "forgot"
+      ],
+      "t": 2,
+      "izoh": "would have forgotten.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#7c61bb05"
+    },
+    {
+      "q": "Find the error: 'If they had arrived on time, they wouldn't have missed the opening.'",
+      "v": [
+        "had arrived is wrong",
+        "wouldn't have missed is wrong",
+        "opening is wrong",
+        "no error"
+      ],
+      "t": 3,
+      "izoh": "Gap togri tuzilgan.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#8965f2cf"
+    },
+    {
+      "q": "Choose the correct question form.",
+      "v": [
+        "Would you have accepted if they had asked?",
+        "Would you accepted if they had asked?",
+        "Had you have accepted if they asked?",
+        "Did you have accepted if they asked?"
+      ],
+      "t": 0,
+      "izoh": "Would you have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#0df2adbd"
+    },
+    {
+      "q": "If the driver ___ more carefully, the accident wouldn't have happened.",
+      "v": [
+        "drove",
+        "had driven",
+        "would drive",
+        "drives"
+      ],
+      "t": 1,
+      "izoh": "If + past perfect.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#53a51762"
+    },
+    {
+      "q": "We ___ the film if we had arrived on time.",
+      "v": [
+        "would see",
+        "had seen",
+        "would have seen",
+        "saw"
+      ],
+      "t": 2,
+      "izoh": "would have seen.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#5492f16d"
+    },
+    {
+      "q": "If she ___ the truth, she wouldn't have signed the contract.",
+      "v": [
+        "had known",
+        "knew",
+        "would know",
+        "knows"
+      ],
+      "t": 0,
+      "izoh": "had known.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#d7d65089"
+    },
+    {
+      "q": "Put in order: helped / would / I / have / you — result clause.",
+      "v": [
+        "I would have helped you",
+        "I have would helped you",
+        "I would helped have you",
+        "would I have helped you"
+      ],
+      "t": 0,
+      "izoh": "would have + V3 + object.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#2ef82618"
+    },
+    {
+      "q": "'I didn't have enough money, so I didn't buy it.' Which is correct?",
+      "v": [
+        "If I have enough money, I would buy it.",
+        "If I had had enough money, I would have bought it.",
+        "If I had enough money, I would buy it.",
+        "If I had had enough money, I would buy it."
+      ],
+      "t": 1,
+      "izoh": "'had had' = past perfect of 'have'.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#32204625"
+    },
+    {
+      "q": "If he hadn't taken that road, he ___ the beautiful view.",
+      "v": [
+        "wouldn't see",
+        "wouldn't have seen",
+        "hadn't seen",
+        "didn't see"
+      ],
+      "t": 1,
+      "izoh": "Inkor natija emas, aslida musbat imkoniyat yoqolgan.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#64fa3fc6"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "Had she studied, she would have passed.",
+        "If she would study, she would have passed.",
+        "Had she studied, she would passed.",
+        "If she studied, she would have passed."
+      ],
+      "t": 0,
+      "izoh": "Inversiya bilan: Had she studied.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#21ac92a9~4"
+    },
+    {
+      "q": "They ___ into trouble if the police had caught them.",
+      "v": [
+        "would get",
+        "had got",
+        "would have got",
+        "got"
+      ],
+      "t": 2,
+      "izoh": "would have got.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#b8bb32c0"
+    },
+    {
+      "q": "If the weather ___ better, we would have had a picnic.",
+      "v": [
+        "was",
+        "had been",
+        "would be",
+        "is"
+      ],
+      "t": 1,
+      "izoh": "had been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#3f68e5cf"
+    },
+    {
+      "q": "Spot the error: 'If I would have listened, I wouldn't have made that mistake.'",
+      "v": [
+        "I would have listened should be I had listened",
+        "wouldn't have made is wrong",
+        "mistake is wrong",
+        "no error"
+      ],
+      "t": 0,
+      "izoh": "If qismida would have yoq.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#edcc2be5"
+    },
+    {
+      "q": "'She missed the bus because she left late.' Which matches?",
+      "v": [
+        "If she hadn't left late, she wouldn't have missed the bus.",
+        "If she didn't leave late, she wouldn't miss the bus.",
+        "If she doesn't leave late, she won't miss the bus.",
+        "If she hadn't left late, she wouldn't miss the bus."
+      ],
+      "t": 0,
+      "izoh": "O'tmish shart-natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#7d70cfb7"
+    },
+    {
+      "q": "I ___ that dress if it had been cheaper.",
+      "v": [
+        "would buy",
+        "would have bought",
+        "had bought",
+        "bought"
+      ],
+      "t": 1,
+      "izoh": "would have bought.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#0a8a2fa4"
+    },
+    {
+      "q": "If we ___ the instructions, we wouldn't have broken the machine.",
+      "v": [
+        "read",
+        "had read",
+        "would read",
+        "reads"
+      ],
+      "t": 1,
+      "izoh": "had read (past perfect).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#0341574f"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "If you had asked, I would have lent you the book.",
+        "If you asked, I would have lent you the book.",
+        "If you had asked, I would lent you the book.",
+        "If you would ask, I would have lent you the book."
+      ],
+      "t": 0,
+      "izoh": "lend ning V3 = lent.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#21ac92a9~5"
+    },
+    {
+      "q": "He ___ the answer if he had paid attention.",
+      "v": [
+        "would know",
+        "would have known",
+        "had known",
+        "knew"
+      ],
+      "t": 1,
+      "izoh": "would have known.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#c345afc8"
+    },
+    {
+      "q": "If the fire alarm ___ off, everyone would have escaped.",
+      "v": [
+        "went",
+        "had gone",
+        "would go",
+        "goes"
+      ],
+      "t": 1,
+      "izoh": "had gone.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#d49591e7"
+    },
+    {
+      "q": "Put the question in order: have / would / done / what / you",
+      "v": [
+        "What would you have done",
+        "What have you would done",
+        "What would have you done",
+        "Would what you have done"
+      ],
+      "t": 0,
+      "izoh": "What + would + you + have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#95630c98"
+    },
+    {
+      "q": "'We didn't practise, so we lost.' Which is correct?",
+      "v": [
+        "If we practised, we wouldn't lose.",
+        "If we had practised, we wouldn't have lost.",
+        "If we practise, we won't lose.",
+        "If we had practised, we wouldn't lose."
+      ],
+      "t": 1,
+      "izoh": "Ikkala qism o'tmish.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#e1cdbcf6"
+    },
+    {
+      "q": "If I ___ you, I would have said sorry.",
+      "v": [
+        "had upset",
+        "upset",
+        "would upset",
+        "upsets"
+      ],
+      "t": 0,
+      "izoh": "had upset.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#11cbd9f5"
+    },
+    {
+      "q": "She wouldn't have been angry if you ___ the truth.",
+      "v": [
+        "told",
+        "had told",
+        "would tell",
+        "tell"
+      ],
+      "t": 1,
+      "izoh": "If + past perfect.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#5220d25a"
+    },
+    {
+      "q": "Which is a correct negative third conditional?",
+      "v": [
+        "If he hadn't cheated, he wouldn't have been expelled.",
+        "If he didn't cheat, he wouldn't have been expelled.",
+        "If he hadn't cheated, he wouldn't be expelled.",
+        "If he wouldn't cheat, he wouldn't have been expelled."
+      ],
+      "t": 0,
+      "izoh": "Inkor shart va natija o'tmishda.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#3fd4cf81"
+    },
+    {
+      "q": "The plants ___ if you had watered them.",
+      "v": [
+        "wouldn't die",
+        "wouldn't have died",
+        "hadn't died",
+        "didn't die"
+      ],
+      "t": 1,
+      "izoh": "wouldn't have died.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#179287c8"
+    },
+    {
+      "q": "If they ___ us, we could have avoided the delay.",
+      "v": [
+        "had warned",
+        "warned",
+        "would warn",
+        "warn"
+      ],
+      "t": 0,
+      "izoh": "had warned; could have avoided.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#f72515da"
+    },
+    {
+      "q": "Find the error: 'If we had left earlier, we would arrived on time.'",
+      "v": [
+        "had left is wrong",
+        "would arrived should be would have arrived",
+        "earlier is wrong",
+        "no error"
+      ],
+      "t": 1,
+      "izoh": "would + have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#7c9b1a45"
+    },
+    {
+      "q": "'He didn't apologise, so she stayed upset.' Which matches?",
+      "v": [
+        "If he had apologised, she wouldn't have stayed upset.",
+        "If he apologised, she wouldn't stay upset.",
+        "If he apologises, she won't stay upset.",
+        "If he had apologised, she wouldn't stay upset."
+      ],
+      "t": 0,
+      "izoh": "O'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#5cbd2474"
+    },
+    {
+      "q": "If the bridge ___ collapsed, the cars would have fallen.",
+      "v": [
+        "hadn't",
+        "hadn't have",
+        "wouldn't have",
+        "didn't"
+      ],
+      "t": 0,
+      "izoh": "hadn't collapsed.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#0f74cbdf"
+    },
+    {
+      "q": "I ___ so much if I had known the answer was easy.",
+      "v": [
+        "wouldn't worry",
+        "wouldn't have worried",
+        "hadn't worried",
+        "didn't worry"
+      ],
+      "t": 1,
+      "izoh": "wouldn't have worried.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#21fcf299"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "If it had snowed, the roads would have been dangerous.",
+        "If it snowed, the roads would have been dangerous.",
+        "If it had snowed, the roads would be dangerous.",
+        "If it would snow, the roads would have been dangerous."
+      ],
+      "t": 0,
+      "izoh": "Ikkala qism o'tmish.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#21ac92a9~6"
+    },
+    {
+      "q": "Put in order: rung / if / had / phone / the",
+      "v": [
+        "if the phone had rung",
+        "if had the phone rung",
+        "if the phone rung had",
+        "the phone if had rung"
+      ],
+      "t": 0,
+      "izoh": "if + subject + had + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#3ac3ec8a"
+    },
+    {
+      "q": "'She was tired because she hadn't slept.' Which third conditional fits the past cause?",
+      "v": [
+        "If she had slept, she wouldn't have been tired.",
+        "If she slept, she wouldn't be tired.",
+        "If she sleeps, she won't be tired.",
+        "If she had slept, she wouldn't be tired."
+      ],
+      "t": 0,
+      "izoh": "To'liq o'tmish varianti.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#139e3de3"
+    },
+    {
+      "q": "We ___ them if they hadn't invited us.",
+      "v": [
+        "wouldn't meet",
+        "wouldn't have met",
+        "hadn't met",
+        "didn't meet"
+      ],
+      "t": 1,
+      "izoh": "wouldn't have met.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#14b14f3d"
+    },
+    {
+      "q": "If I had checked the weather, I ___ a coat.",
+      "v": [
+        "would bring",
+        "would have brought",
+        "had brought",
+        "bring"
+      ],
+      "t": 1,
+      "izoh": "would have brought.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#b2253dad"
+    },
+    {
+      "q": "Which sentence has NO error?",
+      "v": [
+        "If they had told me, I could have helped.",
+        "If they told me, I could have helped.",
+        "If they had told me, I could helped.",
+        "If they would tell me, I could have helped."
+      ],
+      "t": 0,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#be907051"
+    },
+    {
+      "q": "He would have won the prize if he ___ the deadline.",
+      "v": [
+        "met",
+        "had met",
+        "would meet",
+        "meets"
+      ],
+      "t": 1,
+      "izoh": "had met.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#7ac3497d"
+    },
+    {
+      "q": "If the manager ___ the report, the mistake would have been noticed.",
+      "v": [
+        "read",
+        "had read",
+        "would read",
+        "reads"
+      ],
+      "t": 1,
+      "izoh": "had read.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#529b57e4"
+    },
+    {
+      "q": "'I didn't recognise him, so I didn't say hello.' Which is correct?",
+      "v": [
+        "If I had recognised him, I would have said hello.",
+        "If I recognised him, I would say hello.",
+        "If I recognise him, I will say hello.",
+        "If I had recognised him, I would say hello."
+      ],
+      "t": 0,
+      "izoh": "O'tmish shart-natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#6115f107"
+    },
+    {
+      "q": "They ___ the fire if someone had called sooner.",
+      "v": [
+        "would put out",
+        "would have put out",
+        "had put out",
+        "put out"
+      ],
+      "t": 1,
+      "izoh": "would have put out.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#25d0fcf0"
+    },
+    {
+      "q": "If she hadn't quit, she ___ promoted by now — but this is only about the past decision. Choose pure third conditional.",
+      "v": [
+        "would be promoted",
+        "would have been promoted",
+        "had been promoted",
+        "was promoted"
+      ],
+      "t": 1,
+      "izoh": "Sof o'tmish: would have been promoted.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#d269776b"
+    },
+    {
+      "q": "Find the error: 'Had we knew about the storm, we would have stayed home.'",
+      "v": [
+        "Had we knew should be Had we known",
+        "would have stayed is wrong",
+        "storm is wrong",
+        "no error"
+      ],
+      "t": 0,
+      "izoh": "know ning V3 = known.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#3d4e57ea"
+    },
+    {
+      "q": "Which is correct?",
+      "v": [
+        "If the teacher had explained it, we would have understood.",
+        "If the teacher explained it, we would have understood.",
+        "If the teacher had explained it, we would understood.",
+        "If the teacher would explain it, we would have understood."
+      ],
+      "t": 0,
+      "izoh": "Ikkala qism o'tmish.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#bc249275"
+    },
+    {
+      "q": "I ___ the offer if I had trusted them more.",
+      "v": [
+        "would accept",
+        "would have accepted",
+        "had accepted",
+        "accepted"
+      ],
+      "t": 1,
+      "izoh": "would have accepted.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#c6a2f8a8"
+    },
+    {
+      "q": "If you ___ louder, I would have heard you.",
+      "v": [
+        "spoke",
+        "had spoken",
+        "would speak",
+        "speak"
+      ],
+      "t": 1,
+      "izoh": "had spoken.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#f0be1dfe"
+    },
+    {
+      "q": "Put the result clause in order: crashed / have / would / the / plane",
+      "v": [
+        "the plane would have crashed",
+        "the plane have would crashed",
+        "the plane would crashed have",
+        "would the plane have crashed"
+      ],
+      "t": 0,
+      "izoh": "subject + would have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#52471b3e"
+    },
+    {
+      "q": "'He didn't wear a helmet, so he was injured.' Which is correct?",
+      "v": [
+        "If he had worn a helmet, he wouldn't have been injured.",
+        "If he wore a helmet, he wouldn't be injured.",
+        "If he wears a helmet, he won't be injured.",
+        "If he had worn a helmet, he wouldn't be injured."
+      ],
+      "t": 0,
+      "izoh": "wear ning V3 = worn.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#1ef33e7f"
+    },
+    {
+      "q": "We ___ a table if we had reserved one.",
+      "v": [
+        "would get",
+        "would have got",
+        "had got",
+        "got"
+      ],
+      "t": 1,
+      "izoh": "would have got.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#f0fb348d"
+    },
+    {
+      "q": "If the students ___ notes, they would have remembered more.",
+      "v": [
+        "took",
+        "had taken",
+        "would take",
+        "take"
+      ],
+      "t": 1,
+      "izoh": "had taken.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#bc529819"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "If I hadn't been ill, I would have joined you.",
+        "If I wasn't ill, I would have joined you.",
+        "If I hadn't been ill, I would joined you.",
+        "If I wouldn't be ill, I would have joined you."
+      ],
+      "t": 0,
+      "izoh": "had been + would have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#21ac92a9~7"
+    },
+    {
+      "q": "They ___ the goal if the defender hadn't slipped.",
+      "v": [
+        "wouldn't score",
+        "wouldn't have scored",
+        "hadn't scored",
+        "didn't score"
+      ],
+      "t": 1,
+      "izoh": "wouldn't have scored.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#796a6e67"
+    },
+    {
+      "q": "If we had turned left, we ___ the petrol station.",
+      "v": [
+        "would find",
+        "would have found",
+        "had found",
+        "found"
+      ],
+      "t": 1,
+      "izoh": "would have found.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#937b0c45"
+    },
+    {
+      "q": "Find the error: 'If she had cook dinner, we would have eaten together.'",
+      "v": [
+        "had cook should be had cooked",
+        "would have eaten is wrong",
+        "together is wrong",
+        "no error"
+      ],
+      "t": 0,
+      "izoh": "cook ning V3 = cooked.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#cb80b126"
+    },
+    {
+      "q": "'I forgot the tickets, so we couldn't enter.' Which matches?",
+      "v": [
+        "If I hadn't forgotten the tickets, we could have entered.",
+        "If I didn't forget the tickets, we could enter.",
+        "If I don't forget the tickets, we can enter.",
+        "If I hadn't forgotten the tickets, we could enter."
+      ],
+      "t": 0,
+      "izoh": "could have entered.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#6f667a42"
+    },
+    {
+      "q": "He ___ the deadline if his laptop hadn't crashed.",
+      "v": [
+        "would meet",
+        "would have met",
+        "had met",
+        "met"
+      ],
+      "t": 1,
+      "izoh": "would have met.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#e8d29707"
+    },
+    {
+      "q": "If the guide ___ us, we wouldn't have got lost.",
+      "v": [
+        "led",
+        "had led",
+        "would lead",
+        "leads"
+      ],
+      "t": 1,
+      "izoh": "had led.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#ab68767e"
+    },
+    {
+      "q": "Which question is correct?",
+      "v": [
+        "Would they have complained if the food had been cold?",
+        "Would they complained if the food had been cold?",
+        "Had they have complained if the food was cold?",
+        "Did they have complained if the food was cold?"
+      ],
+      "t": 0,
+      "izoh": "Would + subject + have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#69c4b7cb"
+    },
+    {
+      "q": "We ___ so much if we had used a coupon.",
+      "v": [
+        "wouldn't spend",
+        "wouldn't have spent",
+        "hadn't spent",
+        "didn't spend"
+      ],
+      "t": 1,
+      "izoh": "wouldn't have spent.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#e028d19d"
+    },
+    {
+      "q": "If I ___ the alarm, I would have caught the bus.",
+      "v": [
+        "heard",
+        "had heard",
+        "would hear",
+        "hear"
+      ],
+      "t": 1,
+      "izoh": "had heard.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#0813c1d8"
+    },
+    {
+      "q": "Put in order: warned / us / they / had / if",
+      "v": [
+        "if they had warned us",
+        "if had they warned us",
+        "if they warned had us",
+        "they if had warned us"
+      ],
+      "t": 0,
+      "izoh": "if + subject + had + V3 + object.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#c89aa61d"
+    },
+    {
+      "q": "'The road was icy, so the car skidded.' Choose the third conditional.",
+      "v": [
+        "If the road hadn't been icy, the car wouldn't have skidded.",
+        "If the road wasn't icy, the car wouldn't skid.",
+        "If the road isn't icy, the car won't skid.",
+        "If the road hadn't been icy, the car wouldn't skid."
+      ],
+      "t": 0,
+      "izoh": "O'tmish shart-natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#f75ceb2b"
+    },
+    {
+      "q": "She ___ the medicine if the doctor had prescribed it.",
+      "v": [
+        "would take",
+        "would have taken",
+        "had taken",
+        "took"
+      ],
+      "t": 1,
+      "izoh": "would have taken.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m1#1f97e126"
+    }
+  ]
+}

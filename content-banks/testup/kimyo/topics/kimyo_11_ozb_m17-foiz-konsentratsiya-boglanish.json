@@ -1,0 +1,441 @@
+{
+  "nom": "17-mavzu. Foiz konsentratsiya, eritma massasi, hajmi va zichligi orasidagi bog'lanish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Eritma zichligi qanday belgi bilan ifodalanadi?",
+      "v": [
+        "ρ",
+        "m2",
+        "V",
+        "C%"
+      ],
+      "t": 0,
+      "izoh": "Eritma zichligi ρ belgisi bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#02702473"
+    },
+    {
+      "q": "Eritma zichligini (ρ) aniqlash formulasini ko'rsating.",
+      "v": [
+        "ρ = m2/V",
+        "ρ = V/m2",
+        "ρ = m2 · V",
+        "ρ = m1/V"
+      ],
+      "t": 0,
+      "izoh": "Zichlikni aniqlash uchun eritmaning umumiy massasini eritma hajmiga bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#bd7ff2d9"
+    },
+    {
+      "q": "Eritma massasini (m2) qaysi birliklarda ifodalash mumkin?",
+      "v": [
+        "Gramm (g) yoki kilogramm (kg)",
+        "Millilitr (ml) yoki litr (l)",
+        "g/ml yoki kg/l",
+        "Mol yoki g/ekv"
+      ],
+      "t": 0,
+      "izoh": "Eritma massasi g yoki kg larda ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#bfd68b35"
+    },
+    {
+      "q": "Eritma hajmini (V) qaysi birliklarda ifodalash mumkin?",
+      "v": [
+        "Millilitr (ml) yoki litr (l)",
+        "Gramm (g) yoki kilogramm (kg)",
+        "g/ml yoki kg/l",
+        "mol/l yoki N"
+      ],
+      "t": 0,
+      "izoh": "Eritma hajmi ml yoki l larda ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#79b61600"
+    },
+    {
+      "q": "Eritma zichligini (ρ) qaysi birliklarda ifodalash mumkin?",
+      "v": [
+        "g/ml yoki kg/l",
+        "g yoki kg",
+        "ml yoki l",
+        "mol/l yoki M"
+      ],
+      "t": 0,
+      "izoh": "Eritma zichligi g/ml yoki kg/l larda ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#22dad26c"
+    },
+    {
+      "q": "Eritma massasini (m2) aniqlash formulasini ko'rsating.",
+      "v": [
+        "m2 = V · ρ",
+        "m2 = V / ρ",
+        "m2 = ρ / V",
+        "m2 = m1 · V"
+      ],
+      "t": 0,
+      "izoh": "Eritma zichligini eritma hajmiga ko'paytirish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#52376bb9"
+    },
+    {
+      "q": "Eritma hajmini (V) aniqlash formulasini ko'rsating.",
+      "v": [
+        "V = m2 / ρ",
+        "V = m2 · ρ",
+        "V = ρ / m2",
+        "V = m1 / ρ"
+      ],
+      "t": 0,
+      "izoh": "Eritma massasini eritma zichligiga bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#2a244aff"
+    },
+    {
+      "q": "ρ = m2/V formulada m2 nimani bildiradi?",
+      "v": [
+        "Eritmaning umumiy massasini",
+        "Erigan modda massasini",
+        "Eritma hajmini",
+        "Eritma zichligini"
+      ],
+      "t": 0,
+      "izoh": "m2 — eritmaning umumiy massasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#c0ce2124"
+    },
+    {
+      "q": "1-masalada tarkibida 44,8 g KOH tutgan eritmaning hajmi qancha berilgan?",
+      "v": [
+        "200 ml",
+        "100 ml",
+        "224 ml",
+        "250 ml"
+      ],
+      "t": 0,
+      "izoh": "1-masala shartida eritma hajmi 200 ml.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#f163d79c"
+    },
+    {
+      "q": "1-masalada KOH eritmasining zichligi qancha berilgan?",
+      "v": [
+        "1,12 g/ml",
+        "1,2 g/ml",
+        "1,25 g/ml",
+        "2,24 g/ml"
+      ],
+      "t": 0,
+      "izoh": "Eritmaning zichligi ρ = 1,12 g/ml.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#f5882106"
+    },
+    {
+      "q": "1-masalada erigan modda sifatida qaysi modda berilgan?",
+      "v": [
+        "KOH",
+        "NaOH",
+        "Na2SO4",
+        "KCl"
+      ],
+      "t": 0,
+      "izoh": "1-masalada erigan modda — 44,8 g KOH.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#df77e3a5"
+    },
+    {
+      "q": "1-masalada eritmaning massasi qanday hisoblangan?",
+      "v": [
+        "m2 = 200 · 1,12 = 224 g",
+        "m2 = 200 / 1,12 = 178,6 g",
+        "m2 = 44,8 · 1,12 = 50,2 g",
+        "m2 = 200 · 1,2 = 240 g"
+      ],
+      "t": 0,
+      "izoh": "m2 = V·ρ = 200·1,12 = 224 g eritma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#d3ff3300"
+    },
+    {
+      "q": "Tarkibida 44,8 g KOH tutgan 200 ml (ρ=1,12 g/ml) eritmaning foiz konsentratsiyasi qancha?",
+      "v": [
+        "20%",
+        "22,4%",
+        "40%",
+        "10%"
+      ],
+      "t": 0,
+      "izoh": "C% = 44,8/224 · 100% = 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#0ab4e6e6"
+    },
+    {
+      "q": "1-masalada eritma massasini aniqlash uchun qaysi formulaga asoslanilgan?",
+      "v": [
+        "m2 = V · ρ",
+        "ρ = m2 / V",
+        "V = m2 / ρ",
+        "C% = m1/m2 · 100%"
+      ],
+      "t": 0,
+      "izoh": "Dastlab 5-formula (m2 = V·ρ) bilan eritma massasi topildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#9c9313aa"
+    },
+    {
+      "q": "2-masalada Na2SO4 eritmasining hajmi qancha berilgan?",
+      "v": [
+        "177,5 ml",
+        "200 ml",
+        "213 ml",
+        "85,2 ml"
+      ],
+      "t": 0,
+      "izoh": "2-masala shartida eritma hajmi 177,5 ml.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#7335e91c"
+    },
+    {
+      "q": "2-masalada eritmaning zichligi qancha berilgan?",
+      "v": [
+        "1,2 g/ml",
+        "1,12 g/ml",
+        "1,25 g/ml",
+        "1,15 g/ml"
+      ],
+      "t": 0,
+      "izoh": "2-masalada ρ = 1,2 g/ml.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#50d92e8d"
+    },
+    {
+      "q": "2-masalada qanday konsentratsiyali Na2SO4 eritmasi berilgan?",
+      "v": [
+        "40% li",
+        "20% li",
+        "25% li",
+        "15% li"
+      ],
+      "t": 0,
+      "izoh": "2-masalada 40% li Na2SO4 eritmasi berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#e63d445e"
+    },
+    {
+      "q": "2-masalada eritmaning massasi qancha topilgan?",
+      "v": [
+        "213 g",
+        "224 g",
+        "177,5 g",
+        "85,2 g"
+      ],
+      "t": 0,
+      "izoh": "m2 = V·ρ = 177,5·1,2 = 213 g eritma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#fb2c4e7f"
+    },
+    {
+      "q": "177,5 ml (ρ=1,2 g/ml) 40% li Na2SO4 eritmasi tarkibida erigan moddaning massasi qancha?",
+      "v": [
+        "85,2 g",
+        "213 g",
+        "40 g",
+        "53,25 g"
+      ],
+      "t": 0,
+      "izoh": "x = 40·213/100 = 85,2 g Na2SO4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#88fd5463"
+    },
+    {
+      "q": "2-masalada 213 g eritmaning massasi nimani tashkil etadi deb olingan?",
+      "v": [
+        "100% ni",
+        "40% ni",
+        "60% ni",
+        "85,2% ni"
+      ],
+      "t": 0,
+      "izoh": "213 g eritma massasi 100% ni tashkil etadi, unda erigan tuz 40%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#f531982c"
+    },
+    {
+      "q": "Zichlikni topish uchun eritmaning umumiy massasini nima qilish kerak?",
+      "v": [
+        "Eritma hajmiga bo'lish kerak",
+        "Eritma hajmiga ko'paytirish kerak",
+        "Erigan modda massasiga bo'lish kerak",
+        "100% ga ko'paytirish kerak"
+      ],
+      "t": 0,
+      "izoh": "ρ = m2/V: umumiy massa hajmga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#c9e30839"
+    },
+    {
+      "q": "Mavzuga doir 1-masalada qanday eritma berilgan?",
+      "v": [
+        "Tarkibida 80 g NaOH tutgan 300 ml (ρ=1,12 g/ml) eritma",
+        "Tarkibida 49 g H2SO4 tutgan 160 ml eritma",
+        "200 ml 25% li AgNO3 eritmasi",
+        "240 ml 15% li (NH4)2SO4 eritmasi"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 1-masala: 80 g NaOH, 300 ml, ρ=1,12 g/ml.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#e225173f"
+    },
+    {
+      "q": "Mavzuga doir 2-masalada tarkibida 49 g H2SO4 tutgan eritmaning hajmi va zichligi qanday?",
+      "v": [
+        "160 ml, ρ=1,15 g/ml",
+        "300 ml, ρ=1,12 g/ml",
+        "200 ml, ρ=1,25 g/ml",
+        "240 ml, ρ=1,125 g/ml"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 2-masala: 160 ml, ρ=1,15 g/ml.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#d68db05a"
+    },
+    {
+      "q": "Mavzuga doir 3-masalada qanday eritma berilgan?",
+      "v": [
+        "200 ml (ρ=1,25 g/ml) 25% li AgNO3 eritmasi",
+        "160 ml (ρ=1,15 g/ml) H2SO4 eritmasi",
+        "300 ml (ρ=1,12 g/ml) NaOH eritmasi",
+        "240 ml (ρ=1,125 g/ml) (NH4)2SO4 eritmasi"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 3-masala: 200 ml, ρ=1,25 g/ml, 25% li AgNO3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#49ff9e92"
+    },
+    {
+      "q": "Mavzuga doir 4-masalada qanday eritma berilgan?",
+      "v": [
+        "240 ml (ρ=1,125 g/ml) 15% li (NH4)2SO4 eritmasi",
+        "200 ml (ρ=1,25 g/ml) 25% li AgNO3 eritmasi",
+        "300 ml (ρ=1,12 g/ml) NaOH eritmasi",
+        "160 ml (ρ=1,15 g/ml) H2SO4 eritmasi"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 4-masala: 240 ml, ρ=1,125 g/ml, 15% li (NH4)2SO4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#3599a53c"
+    },
+    {
+      "q": "1-masalada eritmaning foiz konsentratsiyasi qanday hisoblangan?",
+      "v": [
+        "44,8/224 · 100%",
+        "224/44,8 · 100%",
+        "44,8/200 · 100%",
+        "200/224 · 100%"
+      ],
+      "t": 0,
+      "izoh": "C% = 44,8/224 · 100% = 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#32797c2d"
+    },
+    {
+      "q": "2-masalada erigan Na2SO4 massasini topishda qanday ifoda ishlatilgan?",
+      "v": [
+        "40 · 213 / 100",
+        "213 · 100 / 40",
+        "40 / 213 · 100",
+        "213 · 40 · 100"
+      ],
+      "t": 0,
+      "izoh": "x = 40·213/100 = 85,2 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#e4e619ad"
+    },
+    {
+      "q": "Eritma hajmini aniqlash uchun eritma massasini nima qilish kerak?",
+      "v": [
+        "Eritma zichligiga bo'lish kerak",
+        "Eritma zichligiga ko'paytirish kerak",
+        "100% ga ko'paytirish kerak",
+        "Erigan modda massasiga bo'lish kerak"
+      ],
+      "t": 0,
+      "izoh": "V = m2/ρ: massa zichlikka bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#53969be0"
+    },
+    {
+      "q": "200 ml hajmga va 1,12 g/ml zichlikka ega eritmaning massasi necha gramm?",
+      "v": [
+        "224 g",
+        "200 g",
+        "178,6 g",
+        "112 g"
+      ],
+      "t": 0,
+      "izoh": "m2 = 200·1,12 = 224 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m17-foiz-konsentratsiya-boglanish#bfe86a59"
+    }
+  ]
+}

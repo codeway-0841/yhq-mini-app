@@ -1,0 +1,486 @@
+{
+  "nom": "09-mavzu. Sikloalkanlar. Nomenklaturasi. Izomeriyasi. Olinishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Yopiq zanjirli, siklik tuzilishga ega bo'lgan uglevodorodlar nima deb ataladi?",
+      "v": [
+        "Sikloalkanlar",
+        "Alkenlar",
+        "Alkinlar",
+        "Arenlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikda yopiq zanjirli, siklik tuzilishga ega uglevodorodlar sikloalkanlar deb atalishi aytilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#374db93e"
+    },
+    {
+      "q": "Sikloalkanlarning umumiy formulasi qanday?",
+      "v": [
+        "CnH2n",
+        "CnH2n+2",
+        "CnH2n-2",
+        "CnH2n-6"
+      ],
+      "t": 0,
+      "izoh": "Sikloalkanlar CnH2n umumiy formulaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#7cfc9f59"
+    },
+    {
+      "q": "Sikloalkanlar tegishli alkanlardan molekula tarkibida nechta vodorod atomi kamligi bilan farq qiladi?",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 0,
+      "izoh": "Sikloalkanlar tegishli alkanlardan 2 ta vodorod atomi kam bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#5c9ac71a"
+    },
+    {
+      "q": "Uglerod halqasi qaysi atomlarning ajralib chiqishi hisobiga yopiladi?",
+      "v": [
+        "Vodorod atomlari",
+        "Kislorod atomlari",
+        "Uglerod atomlari",
+        "Azot atomlari"
+      ],
+      "t": 0,
+      "izoh": "Vodorod atomlarining ajralib chiqishi hisobiga uglerod halqasi yopiladi (sxemada +H2 ko'rsatilgan).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#2e7cb299"
+    },
+    {
+      "q": "Jadval bo'yicha C3H6 formulasiga mos sikloalkan nomi qanday?",
+      "v": [
+        "Siklopropan",
+        "Siklobutan",
+        "Siklopentan",
+        "Siklogeksan"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda C3H6 ga siklopropan mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#f0fdd187"
+    },
+    {
+      "q": "Jadval bo'yicha C5H12 formulali alkan qanday nomlanadi?",
+      "v": [
+        "Pentan",
+        "Butan",
+        "Geksan",
+        "Propan"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda C5H12 pentan deb ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#7a13e6ce"
+    },
+    {
+      "q": "Jadval bo'yicha siklobutanni hosil qiluvchi alkan formulasi qanday?",
+      "v": [
+        "C4H10",
+        "C3H8",
+        "C5H12",
+        "C6H14"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda siklobutan (C4H8) butan (C4H10) qatorida keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#1a211176"
+    },
+    {
+      "q": "Siklogeksanning molekulyar formulasi qanday?",
+      "v": [
+        "C6H12",
+        "C6H14",
+        "C6H10",
+        "C5H12"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda siklogeksan formulasi C6H12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#89d7f267"
+    },
+    {
+      "q": "Geksanning molekulyar formulasi qanday?",
+      "v": [
+        "C6H14",
+        "C6H12",
+        "C5H12",
+        "C4H10"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda geksan formulasi C6H14 deb keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#9ceb4553"
+    },
+    {
+      "q": "Sikloalkanlarning nomi sistematik nomenklatura bo'yicha qanday hosil qilinadi?",
+      "v": [
+        "Tegishli to'yingan uglevodorod nomi oldiga \"siklo\" so'zini qo'shish bilan",
+        "Alkan nomidagi \"an\" qo'shimchasini \"en\" ga almashtirish bilan",
+        "Alkan nomi oxiriga \"ol\" qo'shimchasini qo'shish bilan",
+        "Uglerod atomlari sonini lotincha sanab qo'shish bilan"
+      ],
+      "t": 0,
+      "izoh": "Sikloalkan nomi tegishli to'yingan uglevodorod nomi oldiga \"siklo\" so'zini qo'shib o'qishdan hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#565af5ae"
+    },
+    {
+      "q": "Sistematik nomenklatura bo'yicha sikloalkanlarni nomlashda asosiy zanjir sifatida nima olinadi?",
+      "v": [
+        "Halqa",
+        "Eng uzun ochiq zanjir",
+        "Yonaki zanjir",
+        "Radikal"
+      ],
+      "t": 0,
+      "izoh": "Nomlashda asosiy zanjir sifatida halqa olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#4104cb92"
+    },
+    {
+      "q": "Sikloalkanlarni nomlashda halqadagi uglerod atomlari bilan nima qilinadi?",
+      "v": [
+        "Raqamlanadi",
+        "Harflanadi",
+        "Chizilmaydi",
+        "Qavs ichiga olinadi"
+      ],
+      "t": 0,
+      "izoh": "Qoidaga ko'ra halqadagi uglerod atomlari raqamlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#164993c8"
+    },
+    {
+      "q": "Yonaki zanjirdagi radikallar joylashgan o'rni qanday ko'rsatiladi?",
+      "v": [
+        "Raqam bilan",
+        "Rim harfi bilan",
+        "Yulduzcha bilan",
+        "Qo'shtirnoq bilan"
+      ],
+      "t": 0,
+      "izoh": "Radikallar joylashgan o'rni raqam bilan ko'rsatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#ebefbff1"
+    },
+    {
+      "q": "Sikloalkan nomlanishida avval nima aytiladi?",
+      "v": [
+        "Halqadagi uglerod raqami ko'rsatilgan holda radikallar nomi",
+        "Asosiy zanjir nomi",
+        "Halqadagi vodorod atomlari soni",
+        "Moddaning molekulyar massasi"
+      ],
+      "t": 0,
+      "izoh": "Avval radikallar nomi ularning joylashgan uglerod raqami bilan aytilib, so'ng halqa nomi aytiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#93b5a53d"
+    },
+    {
+      "q": "Metilsiklopropan halqasida nechta uglerod atomi bor?",
+      "v": [
+        "3 ta",
+        "4 ta",
+        "5 ta",
+        "6 ta"
+      ],
+      "t": 0,
+      "izoh": "Metilsiklopropan halqasi siklopropan halqasi bo'lib, unda 3 ta uglerod atomi bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#180bc550"
+    },
+    {
+      "q": "1,2-dimetilsiklobutan halqasida nechta uglerod atomi bor?",
+      "v": [
+        "4 ta",
+        "3 ta",
+        "5 ta",
+        "6 ta"
+      ],
+      "t": 0,
+      "izoh": "Siklobutan halqasi 4 ta uglerod atomidan tashkil topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#7f3d94ae"
+    },
+    {
+      "q": "1-metil-3-etilsiklopentanda metil guruhi halqaning qaysi raqamli uglerodiga bog'langan?",
+      "v": [
+        "1-uglerodga",
+        "2-uglerodga",
+        "3-uglerodga",
+        "4-uglerodga"
+      ],
+      "t": 0,
+      "izoh": "Nomidan ko'rinib turibdiki, metil guruhi 1-uglerodga, etil guruhi 3-uglerodga bog'langan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#28c9f5b5"
+    },
+    {
+      "q": "1,2-dimetilsiklobutanda metil guruhlari halqaning qaysi uglerodlarida joylashgan?",
+      "v": [
+        "1 va 2-uglerodlarda",
+        "1 va 3-uglerodlarda",
+        "2 va 4-uglerodlarda",
+        "1 va 4-uglerodlarda"
+      ],
+      "t": 0,
+      "izoh": "Nomi bo'yicha metil guruhlari 1 va 2-uglerodlarda joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#3e01493f"
+    },
+    {
+      "q": "Sikloalkanlarda izomeriya qaysi vakildan boshlanadi?",
+      "v": [
+        "Siklobutandan",
+        "Siklopropandan",
+        "Siklopentandan",
+        "Siklogeksandan"
+      ],
+      "t": 0,
+      "izoh": "Darslikda sikloalkanlarda izomeriya siklobutandan boshlanishi aytilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#d742a46a"
+    },
+    {
+      "q": "Sikloalkanlarda izomeriya nimaga ko'ra hosil bo'ladi?",
+      "v": [
+        "Halqadagi uglerod soni va radikallar joylashgan o'rniga ko'ra",
+        "Vodorod atomlarining rangiga ko'ra",
+        "Halqaning fazodagi aylanishiga ko'ra",
+        "Molekulaning suvda erishiga ko'ra"
+      ],
+      "t": 0,
+      "izoh": "Izomeriya halqadagi uglerod soni va radikallar joylashgan o'rniga ko'ra hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#a5c6c199"
+    },
+    {
+      "q": "Darslikda siklobutanni izomeri sifatida keltirilgan modda qaysi?",
+      "v": [
+        "Metilsiklopropan",
+        "Etilsiklopropan",
+        "Metilsiklobutan",
+        "Siklopentan"
+      ],
+      "t": 0,
+      "izoh": "Siklobutan va metilsiklopropan bir-birining izomeri sifatida keltirilgan (ikkalasi ham C4H8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#80acabbc"
+    },
+    {
+      "q": "Laboratoriyada sikloalkanlar to'yingan uglevodorodlarning qanday hosilalariga metallar ta'sir ettirilib olinadi?",
+      "v": [
+        "Digalogenli hosilalariga",
+        "Monogalogenli hosilalariga",
+        "Spirtli hosilalariga",
+        "Nitrohosilalariga"
+      ],
+      "t": 0,
+      "izoh": "Sikloalkanlar digalogenli hosilalarga metallar ta'sir ettirilib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#aa8e65a8"
+    },
+    {
+      "q": "Darslikdagi sxema bo'yicha digalogenli hosilaga Zn ta'sir ettirilganda siklobutandan tashqari nima hosil bo'ladi?",
+      "v": [
+        "ZnBr2",
+        "ZnCl2",
+        "HBr",
+        "ZnO"
+      ],
+      "t": 0,
+      "izoh": "Reaksiyada siklobutan bilan birga ZnBr2 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#a0738d63"
+    },
+    {
+      "q": "Darslikdagi sxemada Zn ta'sirida digalogenli hosiladan qaysi sikloalkan hosil bo'ladi?",
+      "v": [
+        "Siklobutan",
+        "Siklopropan",
+        "Siklopentan",
+        "Siklogeksan"
+      ],
+      "t": 0,
+      "izoh": "Sxemada to'rt uglerodli digalogenli hosiladan siklobutan hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#1bdfa3ba"
+    },
+    {
+      "q": "Benzol va uning gomologlarini gidrogenlab nima olinadi?",
+      "v": [
+        "Siklogeksan va uning gomologlari",
+        "Siklopropan va uning gomologlari",
+        "Alkanlar",
+        "Alkenlar"
+      ],
+      "t": 0,
+      "izoh": "Benzol va gomologlari gidrogenlanib siklogeksan va uning gomologlari olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#cfc9986c"
+    },
+    {
+      "q": "Benzolni siklogeksanga aylantirishda necha mol vodorod qo'shiladi?",
+      "v": [
+        "3 mol",
+        "1 mol",
+        "2 mol",
+        "4 mol"
+      ],
+      "t": 0,
+      "izoh": "Reaksiya tenglamasida benzolga 3 mol H2 qo'shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#0777f18a"
+    },
+    {
+      "q": "Benzolni gidrogenlash qanday sharoitda amalga oshiriladi?",
+      "v": [
+        "Katalizator ishtirokida, qizdirilganda",
+        "Sovuq suvda",
+        "Oddiy temperaturada, yorug'likda",
+        "Kislorod muhitida"
+      ],
+      "t": 0,
+      "izoh": "Reaksiya katalizator va temperatura (kat, t°) sharoitida boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#21f84538"
+    },
+    {
+      "q": "Siklopropan tuzilishida nechta CH2 guruhi bor?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "4 ta",
+        "5 ta"
+      ],
+      "t": 0,
+      "izoh": "Siklopropan uchburchak halqasining har bir cho'qqisida CH2 guruhi joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#e61a0ac2"
+    },
+    {
+      "q": "Darslikda shar-tayoqcha modellari rasmi keltirilgan ikki sikloalkan qaysilar?",
+      "v": [
+        "Siklopentan va siklogeksan",
+        "Siklopropan va siklobutan",
+        "Siklobutan va siklopentan",
+        "Siklopropan va siklogeksan"
+      ],
+      "t": 0,
+      "izoh": "36-sahifada siklopentan va siklogeksan modellari tasvirlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#2c39394b"
+    },
+    {
+      "q": "Metilsiklopropanning molekulyar formulasi qanday?",
+      "v": [
+        "C4H8",
+        "C3H6",
+        "C4H10",
+        "C5H10"
+      ],
+      "t": 0,
+      "izoh": "Halqa (C3H5) ga CH3 guruhi qo'shilganda C4H8 formulasi hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#ffb3deb2"
+    },
+    {
+      "q": "Degidrogenlanganda siklopentan hosil bo'ladigan to'yingan uglevodorod formulasi qanday?",
+      "v": [
+        "C5H12",
+        "C5H10",
+        "C4H10",
+        "C6H14"
+      ],
+      "t": 0,
+      "izoh": "Siklopentan (C5H10) ga 2 ta vodorod qo'shilsa, C5H12 (pentan) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#cee35188"
+    },
+    {
+      "q": "C5H10 formulasiga mos keluvchi sikloalkan qanday nomlanadi?",
+      "v": [
+        "Siklopentan",
+        "Siklobutan",
+        "Siklogeksan",
+        "Siklopropan"
+      ],
+      "t": 0,
+      "izoh": "C5H10 umumiy formula CnH2n ga mos bo'lib, siklopentan formulasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m09-sikloalkanlar#a6edaffd"
+    }
+  ]
+}

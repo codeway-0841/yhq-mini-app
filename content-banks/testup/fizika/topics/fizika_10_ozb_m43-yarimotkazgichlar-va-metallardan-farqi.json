@@ -1,0 +1,456 @@
+{
+  "nom": "43-mavzu. Yarimotkazgichlar Va Metallardan Farqi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Yarimo‘tkazgichlar deb qanday moddalarga aytiladi?",
+      "v": [
+        "Erkin elektronlar konsentratsiyasi o‘tkazgichlarnikidan kichik, dielektriklarnikidan katta bo‘lgan moddalar",
+        "Erkin elektronlari umuman bo‘lmagan moddalar",
+        "Faqat metall eritmalaridan olingan moddalar",
+        "Erkin elektronlari eng ko‘p bo‘lgan moddalar"
+      ],
+      "t": 0,
+      "izoh": "Yarimo‘tkazgichlarda erkin elektronlar konsentratsiyasi o‘tkazgichlarga nisbatan kichik, dielektriklarga nisbatan katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#778d2bb0"
+    },
+    {
+      "q": "Yarimo‘tkazgichlarning elektr o‘tkazuvchanligi qanday?",
+      "v": [
+        "O‘tkazgichlarnikidan kichik, dielektriklarnikidan katta",
+        "O‘tkazgichlarnikidan ham katta",
+        "Dielektriklarnikidan ham kichik",
+        "Har doim nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Ta’rifga ko‘ra yarimo‘tkazgichlar o‘tkazuvchanlik bo‘yicha metallar va dielektriklar orasida turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#ad653f46"
+    },
+    {
+      "q": "Yarimo‘tkazgichni qizdirganda uning elektr o‘tkazuvchanligi qanday o‘zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O‘zgarmaydi",
+        "Avval kamayadi, keyin o‘zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Qizdirilganda metallning o‘tkazuvchanligi kamayadi, yarimo‘tkazgichniki esa ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#50b02742"
+    },
+    {
+      "q": "Metallni qizdirganda uning elektr o‘tkazuvchanligi qanday o‘zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O‘zgarmaydi",
+        "Nolga teng bo‘ladi"
+      ],
+      "t": 0,
+      "izoh": "Metall qizdirilganda qarshiligi ortadi, demak o‘tkazuvchanligi kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#c01f0b60"
+    },
+    {
+      "q": "6.23-rasmdagi tajribada yarimo‘tkazgich qizdirilganda milliampermetr ko‘rsatishi qanday o‘zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O‘zgarmay qoladi",
+        "Nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Yarimo‘tkazgich qizdirilganda uning o‘tkazuvchanligi ortadi, zanjirdagi tok kuchi oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#72369583"
+    },
+    {
+      "q": "6.23-rasmdagi tajribada metall qizdirilganda milliampermetr ko‘rsatishi qanday o‘zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O‘zgarmay qoladi",
+        "Ikki baravar oshadi"
+      ],
+      "t": 0,
+      "izoh": "Metall qizdirilganda qarshiligi ortadi, tok kuchi kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#32394873"
+    },
+    {
+      "q": "Yarimo‘tkazgichlarning metallardan asosiy farqi nimada?",
+      "v": [
+        "Tashqi ta’sirlarga (qizdirish, yorug‘lik, aralashma) sezgirligi yuqori",
+        "Haroratga umuman bog‘liq emasligi",
+        "Faqat suyuq holatda tok o‘tkazishi",
+        "Tarkibida metall bo‘lmasligi"
+      ],
+      "t": 0,
+      "izoh": "Yarimo‘tkazgichlarning o‘tkazuvchanligini tashqi ta’sirlar orqali keskin o‘zgartirish mumkin, metallarda esa bu sezgirlik past.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#f7652ffa"
+    },
+    {
+      "q": "Yarimo‘tkazgichning harorati ko‘tarilganda qarshiligi qanday o‘zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O‘zgarmaydi",
+        "Avval ortadi, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Harorat ko‘tarilganda yarimo‘tkazgichda erkin zaryad tashuvchilar ko‘payadi, qarshilik kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#000b9ff4"
+    },
+    {
+      "q": "Metallning harorati ko‘tarilganda qarshiligi nima sababdan ortadi?",
+      "v": [
+        "Atomlar tebranishining kuchayishi elektronlarning tartibli harakatiga to‘sqinlik qiladi",
+        "Erkin elektronlar soni kamayadi",
+        "Metall erib ketadi",
+        "Elektronlar zaryadi o‘zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Qizdirilganda kristall panjara atomlari tebranishi kuchayib, erkin elektronlar harakatini qiyinlashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#434dffec"
+    },
+    {
+      "q": "Yarimo‘tkazgichlardan qaysi asboblar ishlab chiqarilmaydi?",
+      "v": [
+        "Oddiy o‘tkazgich simlar",
+        "Diodlar",
+        "Tranzistorlar",
+        "Mikrosxemalar"
+      ],
+      "t": 0,
+      "izoh": "Diodlar, tranzistorlar, mikrosxemalar yarimo‘tkazgichdan tayyorlanadi; oddiy simlar metall o‘tkazgichlardan yasaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#e64b0870"
+    },
+    {
+      "q": "Yarimo‘tkazgichli elektronika asboblarini ishlab chiqarishda eng ko‘p qo‘llanadigan modda qaysi?",
+      "v": [
+        "Kremniy",
+        "Mis",
+        "Alyuminiy",
+        "Kumush"
+      ],
+      "t": 0,
+      "izoh": "Kremniy tabiatda keng tarqalgan, zaharli emas va texnologik ishlov berish oson modda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#9112ba2d"
+    },
+    {
+      "q": "Kremniy Yer qobig‘ining taxminan qancha qismini tashkil etadi?",
+      "v": [
+        "27,6 foiz",
+        "2,8 foiz",
+        "50 foiz",
+        "0,5 foiz"
+      ],
+      "t": 0,
+      "izoh": "Kremniy Yer qobig‘ining ~27,6 foizini tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#123dcd63"
+    },
+    {
+      "q": "Kremniyning elektronikada keng qo‘llanilishiga sabab bo‘lgan xususiyat qaysi?",
+      "v": [
+        "Tabiatda keng tarqalgan, zaharsiz va ishlov berish oson",
+        "Eng arzon metall bo‘lgani",
+        "Suvda erimaydigan yagona modda bo‘lgani",
+        "Eng yuqori o‘tkazuvchanlikka ega bo‘lgani"
+      ],
+      "t": 0,
+      "izoh": "Kremniy tabiatda ko‘p, zaharli emas va texnologik jihatdan qulay.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#f0a2ac75"
+    },
+    {
+      "q": "Termorezistor nima?",
+      "v": [
+        "Qarshiligi haroratga sezgir bo‘lgan yarimo‘tkazgichli asbob",
+        "Tok kuchini o‘lchaydigan asbob",
+        "Metall qotishmadan yasalgan qizdirgich",
+        "Kuchlanishni oshiruvchi transformator"
+      ],
+      "t": 0,
+      "izoh": "Termorezistor — harorat o‘zgarishiga sezgir yarimo‘tkazgichli rezistor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#5743f32c"
+    },
+    {
+      "q": "Fotorezistor va fotodatchiklarning ishlash asosida nima yotadi?",
+      "v": [
+        "Yarimo‘tkazgichning yorug‘lik ta’sirida o‘tkazuvchanligining o‘zgarishi",
+        "Metallning yorug‘likda qizishi",
+        "Yorug‘likning magnit maydon hosil qilishi",
+        "Dielektrikning yorug‘likda qutblanishi"
+      ],
+      "t": 0,
+      "izoh": "Yarimo‘tkazgichlar yorug‘likka sezgir bo‘lib, fotoelementlar shu xususiyat asosida ishlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#2ea80d27"
+    },
+    {
+      "q": "Yorug‘lik diodlari qanday moddalar asosida tayyorlanadi?",
+      "v": [
+        "Yarimo‘tkazgich moddalar",
+        "Metall qotishmalar",
+        "Dielektriklar",
+        "Elektrolitlar"
+      ],
+      "t": 0,
+      "izoh": "Yorug‘lik diodlari yarimo‘tkazgich moddalar asosida ishlab chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#fdf95628"
+    },
+    {
+      "q": "Yarimo‘tkazgichlarning elektr o‘tkazuvchanligini keskin o‘zgartirish mumkin bo‘lgan usul qaysi?",
+      "v": [
+        "Tarkibiga boshqa kimyoviy element atomlarini kiritish",
+        "Uni magnit maydondan uzoqlashtirish",
+        "Faqat mexanik bosim berish",
+        "Uni suvga solish"
+      ],
+      "t": 0,
+      "izoh": "Qizdirish, yoritish yoki aralashma kiritish orqali yarimo‘tkazgich o‘tkazuvchanligi keskin o‘zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#e97ed340"
+    },
+    {
+      "q": "Metallarning elektr o‘tkazuvchanligi tashqi ta’sirlarga qanday?",
+      "v": [
+        "Sezgirligi juda past",
+        "Sezgirligi juda yuqori",
+        "Umuman bog‘liq emas",
+        "Faqat yorug‘likka sezgir"
+      ],
+      "t": 0,
+      "izoh": "Metallarning o‘tkazuvchanligi qizdirish, yorug‘lik kabi ta’sirlarga sezgirligi past.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#ad7eda94"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri yarimo‘tkazgich moddalari asosida ishlamaydi?",
+      "v": [
+        "Oddiy o‘tuvchi sim",
+        "Kompyuter",
+        "Smartfon",
+        "Elektron soat"
+      ],
+      "t": 0,
+      "izoh": "Kompyuter, smartfon, elektron soatlar yarimo‘tkazgich elementlarga asoslangan; oddiy sim metall o‘tkazgich.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#987b124c"
+    },
+    {
+      "q": "Yarimo‘tkazgichli fotoelement ishlashini o‘rganishda yuzasini kuchli yorug‘lik bilan yoritganda milliampermetr ko‘rsatishi qanday bo‘ladi?",
+      "v": [
+        "Kuchsiz yorug‘likdagiga nisbatan katta",
+        "Kuchsiz yorug‘likdagiga nisbatan kichik",
+        "Har doim nolga teng",
+        "O‘zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Yorug‘lik kuchayganda fotoelementdan o‘tuvchi tok ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#318c7489"
+    },
+    {
+      "q": "Yarimo‘tkazgich moddalarisiz hozirgi zamon texnikasining rivojlanishini tasavvur qilish mumkinmi?",
+      "v": [
+        "Yo‘q, mumkin emas",
+        "Ha, oson",
+        "Faqat aviatsiyada mumkin",
+        "Faqat qurilishda mumkin"
+      ],
+      "t": 0,
+      "izoh": "Darslikda yarimo‘tkazgichlarsiz zamonaviy texnika rivojlanishini tasavvur qilib bo‘lmasligi aytilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#5cd9caaa"
+    },
+    {
+      "q": "Erkin elektronlar konsentratsiyasi deb nimaga aytiladi?",
+      "v": [
+        "Hajm birligidagi erkin elektronlar soni",
+        "Bir sekundda o‘tuvchi elektronlar soni",
+        "Atomdagi barcha elektronlar soni",
+        "Bir metr uzunlikdagi elektronlar soni"
+      ],
+      "t": 0,
+      "izoh": "Konsentratsiya — hajm birligidagi erkin elektronlar soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#8bfd759b"
+    },
+    {
+      "q": "Dielektriklar (izolyatorlar)da erkin elektronlar konsentratsiyasi qanday?",
+      "v": [
+        "Juda kichik",
+        "Juda katta",
+        "Metallarnikiday katta",
+        "Yarimo‘tkazgichlarnikidan katta"
+      ],
+      "t": 0,
+      "izoh": "Dielektriklarda erkin elektronlar juda kam bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#24cbe4a1"
+    },
+    {
+      "q": "O‘tkazgichlarda erkin elektronlar konsentratsiyasi qanday?",
+      "v": [
+        "Juda katta",
+        "Juda kichik",
+        "Nolga teng",
+        "Dielektriklarnikidan kichik"
+      ],
+      "t": 0,
+      "izoh": "Metall o‘tkazgichlarda erkin elektronlar konsentratsiyasi juda katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#aa2ea882"
+    },
+    {
+      "q": "Qizdirilganda metall va yarimo‘tkazgich qarshiliklarining o‘zgarishi qanday farq qiladi?",
+      "v": [
+        "Metallniki ortadi, yarimo‘tkazgichniki kamayadi",
+        "Ikkalasiniki ham ortadi",
+        "Ikkalasiniki ham kamayadi",
+        "Metallniki kamayadi, yarimo‘tkazgichniki ortadi"
+      ],
+      "t": 0,
+      "izoh": "Bu yarimo‘tkazgichlarning metallardan asosiy farqidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#4fa67653"
+    },
+    {
+      "q": "Fotoelement tajribasida har xil rangli nurlar bilan yoritishdan maqsad nima?",
+      "v": [
+        "Turli to‘lqin uzunlikli yorug‘likning fotoelement tokiga ta’sirini kuzatish",
+        "Fotoelementni qizdirish",
+        "Ranglarning go‘zalligini tekshirish",
+        "Milliampermetrni sozlash"
+      ],
+      "t": 0,
+      "izoh": "Har xil rangli shishalar orqali turli rangdagi nurlarning tokka ta’siri o‘rganiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#d159c1a6"
+    },
+    {
+      "q": "Fotoelementni milliampermetrga ulashda nimalarga e’tibor berish kerak?",
+      "v": [
+        "Qisqichlarning “+” va “–” qutblari mosligiga",
+        "Simlarning uzunligiga",
+        "Fotoelementning rangiga",
+        "Stolning holatiga"
+      ],
+      "t": 0,
+      "izoh": "Ulashda qutblar mosligi kuzatilishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#134e12e5"
+    },
+    {
+      "q": "Yarimo‘tkazgich qizdirilganda o‘tkazuvchanligining ortishi nimadan dalolat beradi?",
+      "v": [
+        "Erkin zaryad tashuvchilarning ko‘payishidan",
+        "Atomlarning yo‘qolishidan",
+        "Moddaning erishidan",
+        "Elektronlar zaryadining kamayishidan"
+      ],
+      "t": 0,
+      "izoh": "Harorat ortganda kovalent bog‘lanishlar uzilib, erkin elektronlar ko‘payadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#d26a8a2e"
+    },
+    {
+      "q": "Boshqaruv elementlari qanday moddalardan tayyorlanadi?",
+      "v": [
+        "Yarimo‘tkazgich moddalardan",
+        "Faqat mis simlardan",
+        "Dielektriklardan",
+        "Plastmassadan"
+      ],
+      "t": 0,
+      "izoh": "Boshqaruv elementlari yarimo‘tkazgichlarning tashqi ta’sirlarga sezgirligidan foydalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#07cca83c"
+    },
+    {
+      "q": "Yarimo‘tkazgichlarning elektr xossalarini bilish uchun nimalarni aniqlash zarur?",
+      "v": [
+        "Tuzilishi, tok tashuvchi zarralari va o‘tkazuvchanlikning bog‘liqliklari",
+        "Faqat moddaning og‘irligi",
+        "Faqat moddaning rangi",
+        "Faqat moddaning zichligi"
+      ],
+      "t": 0,
+      "izoh": "Moddaning tuzilishi, tok tashuvchilari va o‘tkazuvchanlikning nimaga bog‘liqligi bilinishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m43-yarimotkazgichlar-va-metallardan-farqi#586a2cff"
+    }
+  ]
+}

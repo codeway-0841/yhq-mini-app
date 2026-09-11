@@ -1,0 +1,396 @@
+{
+  "nom": "25-mavzu. Laboratoriya Suv Aralashtirish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Laboratoriya ishining maqsadi nima?",
+      "v": [
+        "Issiqlik almashayotgan suyuqliklar orasida issiqlik balans tenglamasini tekshirib ko'rish",
+        "Suvning solishtirma yonish issiqligini aniqlash",
+        "Termometrning aniqligini o'lchash",
+        "Suvning zichligini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Ishning maqsadi — issiqlik almashishda issiqlik balans tenglamasini tekshirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#588a80d4"
+    },
+    {
+      "q": "Laboratoriya ishi uchun qanday jihozlar kerak?",
+      "v": [
+        "1 l sig'imli ikkita idish, termometr, menzurka, issiq va sovuq suv",
+        "Kalorimetr, tarozi, spirtovka",
+        "Barometr, dinamometr, stakan",
+        "Voltmetr, ampermetr, reostat"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar: ikkita 1 l idish, termometr, menzurka, issiq va sovuq suv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#51901328"
+    },
+    {
+      "q": "Ishni bajarishning birinchi bandida nima qilinadi?",
+      "v": [
+        "Menzurka yordamida m₁ massali issiq suv o'lchanib, birinchi idishga quyiladi va temperaturasi t₁ o'lchanadi",
+        "Sovuq suv issiq suvga quyiladi",
+        "Aralashmaning temperaturasi o'lchanadi",
+        "Jadval to'ldiriladi"
+      ],
+      "t": 0,
+      "izoh": "1-band: m₁ massali issiq suv o'lchanadi, birinchi idishga quyilib t₁ o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#1fa66151"
+    },
+    {
+      "q": "Ikkinchi bandda nima bajariladi?",
+      "v": [
+        "Menzurka yordamida m₂ massali sovuq suv o'lchanib, ikkinchi idishga quyiladi va temperaturasi t₂ o'lchanadi",
+        "Issiq suv temperaturasi o'lchanadi",
+        "Aralashma temperaturasi o'lchanadi",
+        "Issiqlik miqdori hisoblanadi"
+      ],
+      "t": 0,
+      "izoh": "2-band: m₂ massali sovuq suv ikkinchi idishga quyilib t₂ o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#e7af9ee0"
+    },
+    {
+      "q": "Suvlarni aralashtirgandan keyin nima o'lchanadi?",
+      "v": [
+        "Aralashmaning muvozanatlashgan temperaturasi t",
+        "Issiq suvning hajmi",
+        "Sovuq suvning massasi",
+        "Idishning temperaturasi"
+      ],
+      "t": 0,
+      "izoh": "Sovuq suv issiq suvga quyilib, aralashmaning muvozanatlashgan temperaturasi t o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#287a941b"
+    },
+    {
+      "q": "Aralashmada issiq suv bergan issiqlik miqdori qanday formula bilan hisoblanadi?",
+      "v": [
+        "Q₁ = c·m₁·(t₁ − t)",
+        "Q₁ = c·m₁·(t − t₁)",
+        "Q₁ = c·m₂·(t − t₂)",
+        "Q₁ = c·m₁·t₁"
+      ],
+      "t": 0,
+      "izoh": "Issiq suv bergan issiqlik: Q₁ = cm₁(t₁ − t).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#7228c041"
+    },
+    {
+      "q": "Aralashmada sovuq suv olgan issiqlik miqdori qanday formula bilan hisoblanadi?",
+      "v": [
+        "Q₂ = c·m₂·(t − t₂)",
+        "Q₂ = c·m₂·(t₂ − t)",
+        "Q₂ = c·m₁·(t₁ − t)",
+        "Q₂ = c·m₂·t₂"
+      ],
+      "t": 0,
+      "izoh": "Sovuq suv olgan issiqlik: Q₂ = cm₂(t − t₂).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#279d9e33"
+    },
+    {
+      "q": "Formulalardagi c nimani bildiradi?",
+      "v": [
+        "Suvning solishtirma issiqlik sig'imini",
+        "Suvning zichligini",
+        "Suvning massasini",
+        "Suvning hajmini"
+      ],
+      "t": 0,
+      "izoh": "c — suvning solishtirma issiqlik sig'imi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#9c033b42"
+    },
+    {
+      "q": "Suvning solishtirma issiqlik sig'imining birligi jadvalda qanday ko'rsatilgan?",
+      "v": [
+        "J/(kg·K)",
+        "J/kg",
+        "J/K",
+        "J·kg"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda c ning birligi J/(kg·K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#88fcb606"
+    },
+    {
+      "q": "Tajriba necha marta takrorlanadi?",
+      "v": [
+        "Massalarni o'zgartirib, uch marta",
+        "Bir marta",
+        "Ikki marta",
+        "Beshta marta"
+      ],
+      "t": 0,
+      "izoh": "Issiq va sovuq suv massalarini o'zgartirib ish uch marta takrorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#48d111c5"
+    },
+    {
+      "q": "Tajribada nima uchun issiq va sovuq suvning massalari o'zgartiriladi?",
+      "v": [
+        "Ishni uch marta takrorlab, natijalarni turli sharoitlarda tekshirish uchun",
+        "Suvni tezroq isitish uchun",
+        "Termometrni sinash uchun",
+        "Menzurkani tozalash uchun"
+      ],
+      "t": 0,
+      "izoh": "Massalarni o'zgartirib ish uch marta takrorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#21dc7803"
+    },
+    {
+      "q": "O'lchash va hisoblash natijalari qayerga yoziladi?",
+      "v": [
+        "Maxsus jadvalga (№, m₁, t₁, m₂, t₂, t, c, Q₁, Q₂)",
+        "Daftar betiga erkin shaklda",
+        "Doskaga",
+        "Termometr shkalasiga"
+      ],
+      "t": 0,
+      "izoh": "Natijalar m₁, t₁, m₂, t₂, t, c, Q₁, Q₂ ustunli jadvalga yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#cf55a83d"
+    },
+    {
+      "q": "Tajriba natijasida Q₁ va Q₂ issiqlik miqdorlari orasida qanday shart bajarilishi kerak?",
+      "v": [
+        "Q₁ = Q₂",
+        "Q₁ > Q₂",
+        "Q₁ < Q₂",
+        "Q₁ = 2Q₂"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik balansiga ko'ra Q₁ = Q₂ bajarilishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#76bf6fd3"
+    },
+    {
+      "q": "Q₁ = Q₂ shartning fizikaviy ma'nosi nima?",
+      "v": [
+        "Issiq suv bergan issiqlik miqdori sovuq suv olgan issiqlik miqdoriga teng (issiqlik balansi)",
+        "Issiq suv sovuq suvdan ko'proq",
+        "Suvlar temperaturasi bir xil",
+        "Massalar bir xil"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik balans tenglamasi: bergan issiqlik = olingan issiqlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#70ad9820"
+    },
+    {
+      "q": "Issiqlik miqdori formulasida nima uchun absolut temperaturalar ayirmasi o'rniga Selsiy shkalasidagi temperaturalar ayirmasini qo'llash mumkin?",
+      "v": [
+        "Chunki temperaturalar ayirmasi ikkala shkalada bir xil",
+        "Chunki Selsiy shkalasi aniqroq",
+        "Chunki absolut shkala qo'llab bo'lmaydi",
+        "Chunki formulada faqat Selsiy ishlatiladi"
+      ],
+      "t": 0,
+      "izoh": "Temperatura ayirmasi Kelvin va Selsiy shkalalarida bir xil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#51a302e2"
+    },
+    {
+      "q": "Sovuq suvni qayerga quyish kerak?",
+      "v": [
+        "Birinchi idishdagi issiq suvning ustiga",
+        "Uchinchi idishga",
+        "Menzurkaga",
+        "Termometr ustiga"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi idishdagi sovuq suv birinchi idishdagi issiq suv ustiga quyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#d2d02ef8"
+    },
+    {
+      "q": "Menzurka bu tajribada nima uchun ishlatiladi?",
+      "v": [
+        "Suvning massasini (hajmini) o'lchash uchun",
+        "Temperaturani o'lchash uchun",
+        "Suvni aralashtirish uchun",
+        "Suvni isitish uchun"
+      ],
+      "t": 0,
+      "izoh": "Menzurka yordamida m₁ va m₂ massali suv o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#946dc51a"
+    },
+    {
+      "q": "Termometr bu tajribada nima uchun ishlatiladi?",
+      "v": [
+        "t₁, t₂ va t temperaturalarni o'lchash uchun",
+        "Suv massasini o'lchash uchun",
+        "Suv hajmini o'lchash uchun",
+        "Bosimni o'lchash uchun"
+      ],
+      "t": 0,
+      "izoh": "Termometr bilan issiq, sovuq suv va aralashma temperaturalari o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#765721e6"
+    },
+    {
+      "q": "Issiq suv temperaturasi t₁ va aralashma temperaturasi t orasida qanday munosabat bor?",
+      "v": [
+        "t₁ > t",
+        "t₁ < t",
+        "t₁ = t",
+        "t₁ = 2t"
+      ],
+      "t": 0,
+      "izoh": "Aralashma temperaturasi issiq suv temperaturasidan past bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#f7b638e5"
+    },
+    {
+      "q": "Sovuq suv temperaturasi t₂ va aralashma temperaturasi t orasida qanday munosabat bor?",
+      "v": [
+        "t₂ < t",
+        "t₂ > t",
+        "t₂ = t",
+        "t₂ = t₁"
+      ],
+      "t": 0,
+      "izoh": "Aralashma temperaturasi sovuq suv temperaturasidan yuqori bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#348baee0"
+    },
+    {
+      "q": "Q₁ = cm₁(t₁ − t) formulasida (t₁ − t) nimani bildiradi?",
+      "v": [
+        "Issiq suv temperaturasining pasayishini",
+        "Sovuq suv temperaturasining ko'tarilishini",
+        "Aralashma temperaturasini",
+        "Massalar ayirmasini"
+      ],
+      "t": 0,
+      "izoh": "t₁ − t — issiq suvning sovish (temperatura pasayish) miqdori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#1fa74c77"
+    },
+    {
+      "q": "Q₂ = cm₂(t − t₂) formulasida (t − t₂) nimani bildiradi?",
+      "v": [
+        "Sovuq suv temperaturasining ko'tarilishini",
+        "Issiq suv temperaturasining pasayishini",
+        "Massalar yig'indisini",
+        "Suvning zichligini"
+      ],
+      "t": 0,
+      "izoh": "t − t₂ — sovuq suv temperaturasining ko'tarilishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#2cfd9c45"
+    },
+    {
+      "q": "Agar issiq va sovuq suv massalari teng bo'lsa (m₁ = m₂), muvozanatlashgan temperatura qanday bo'ladi?",
+      "v": [
+        "t₁ va t₂ ning o'rta arifmetigiga teng",
+        "t₁ ga teng",
+        "t₂ ga teng",
+        "0 °C ga teng"
+      ],
+      "t": 0,
+      "izoh": "m₁ = m₂ bo'lsa, Q₁ = Q₂ dan t = (t₁ + t₂)/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#df6950db"
+    },
+    {
+      "q": "Tajribada Q₁ va Q₂ ning biroz farq qilishining sababi nima bo'lishi mumkin?",
+      "v": [
+        "Issiqlikning bir qismi idish va atrof-muhitga uzatilishi",
+        "Suvning zichligi o'zgarishi",
+        "Termometr rangi",
+        "Suvning tozaligi"
+      ],
+      "t": 0,
+      "izoh": "Haqiqiy tajribada issiqlikning bir qismi idishga va muhitga yo'qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#d284e4e6"
+    },
+    {
+      "q": "Jadvalda Q₁ va Q₂ ustunlarining birligi nima?",
+      "v": [
+        "J (Joul)",
+        "kg",
+        "°C",
+        "J/(kg·K)"
+      ],
+      "t": 0,
+      "izoh": "Q₁ va Q₂ J (Joul) da o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#532cf8ef"
+    },
+    {
+      "q": "Bu laboratoriya ishi qaysi fizikaviy qonunni tekshirishga qaratilgan?",
+      "v": [
+        "Issiqlik balans tenglamasini (energiyaning saqlanishini)",
+        "Om qonunini",
+        "Arximed qonunini",
+        "Paskal qonunini"
+      ],
+      "t": 0,
+      "izoh": "Ish issiqlik almashishda issiqlik balans tenglamasini tekshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m25-laboratoriya-suv-aralashtirish#7e9353d8"
+    }
+  ]
+}

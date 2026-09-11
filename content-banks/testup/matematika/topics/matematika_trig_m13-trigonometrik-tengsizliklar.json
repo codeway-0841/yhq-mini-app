@@ -1,0 +1,1609 @@
+{
+  "nom": "Trigonometrik tengsizliklar",
+  "bolim": "Trigonometriya",
+  "blok": "trig",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Abdulaziz birlik aylanada sin x > 1/2 tengsizligini yechyapti. Aylananing yuqori yoyini ajratib, u qanday umumiy yechim yozishi kerak?",
+      "v": [
+        "(π/6 + 2πn; 5π/6 + 2πn), n ∈ Z",
+        "(π/6 + πn; 5π/6 + πn), n ∈ Z",
+        "(5π/6 + 2πn; 13π/6 + 2πn), n ∈ Z",
+        "(π/3 + 2πn; 2π/3 + 2πn), n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "Birlik aylanada y = 1/2 to'g'ri chizig'i aylanani π/6 va 5π/6 nuqtalarida kesadi. sin x > 1/2 bo'lishi uchun nuqta shu ikki nuqta orasidagi yuqori yoyda yotishi kerak. Sinus davri 2π bo'lgani uchun har bir yoy 2πn qadam bilan takrorlanadi. Javob: (π/6 + 2πn; 5π/6 + 2πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinx>a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#13bbe396"
+    },
+    {
+      "q": "sin x > √2/2 tengsizligining barcha yechimlarini o'z ichiga olgan umumiy formulani tanlang.",
+      "v": [
+        "(3π/4 + 2πn; 9π/4 + 2πn), n ∈ Z",
+        "(π/4 + 2πn; 7π/4 + 2πn), n ∈ Z",
+        "(π/4 + πn; 3π/4 + πn), n ∈ Z",
+        "(π/4 + 2πn; 3π/4 + 2πn), n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "arcsin(√2/2) = π/4 bo'ladi. Sinus √2/2 dan katta bo'ladigan yoy π/4 dan π − π/4 = 3π/4 gacha cho'ziladi. Bu yoy har 2π da takrorlanadi, chunki sinusning davri 2π. Javob: (π/4 + 2πn; 3π/4 + 2πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinx>a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#cc5cf58a"
+    },
+    {
+      "q": "sin x ≥ √3/2 tengsizligining yechimi qaysi to'plam bilan aniq mos keladi?",
+      "v": [
+        "[π/3 + 2πn; 2π/3 + 2πn], n ∈ Z",
+        "(π/3 + 2πn; 2π/3 + 2πn), n ∈ Z",
+        "[π/6 + 2πn; 5π/6 + 2πn], n ∈ Z",
+        "[2π/3 + 2πn; 7π/3 + 2πn], n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "arcsin(√3/2) = π/3, demak chegara nuqtalari π/3 va π − π/3 = 2π/3. Tengsizlik qat'iy emas (≥), shuning uchun chegaralar yechimga kiradi va yopiq kvadrat qavs qo'yiladi. Javob: [π/3 + 2πn; 2π/3 + 2πn], n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinx>a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#6d036c7f"
+    },
+    {
+      "q": "O'ng tomonida manfiy son turgan sin x > −1/2 tengsizligining umumiy yechimi qanday yoziladi?",
+      "v": [
+        "(π/6 + 2πn; 5π/6 + 2πn), n ∈ Z",
+        "(−π/6 + 2πn; 7π/6 + 2πn), n ∈ Z",
+        "(−π/6 + 2πn; π/6 + 2πn), n ∈ Z",
+        "(7π/6 + 2πn; 11π/6 + 2πn), n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "arcsin(−1/2) = −π/6, ya'ni y = −1/2 chizig'i aylanani −π/6 va π + π/6 = 7π/6 nuqtalarida kesadi. Sinus bu qiymatdan katta bo'ladigan yoy −π/6 dan 7π/6 gacha boradi va uning uzunligi 4π/3. Javob: (−π/6 + 2πn; 7π/6 + 2πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinx>a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#8fed050d"
+    },
+    {
+      "q": "sin x < 1/2 tengsizligini birlik aylanada yechganda ajratiladigan yoy qaysi umumiy ko'rinishda yoziladi?",
+      "v": [
+        "(π/6 + 2πn; 5π/6 + 2πn), n ∈ Z",
+        "(5π/6 + 2πn; 11π/6 + 2πn), n ∈ Z",
+        "(−5π/6 + 2πn; π/6 + 2πn), n ∈ Z",
+        "(5π/6 + 2πn; 13π/6 + 2πn), n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "y = 1/2 chizig'i aylanani π/6 va 5π/6 da kesadi. Sinus 1/2 dan kichik bo'lgan yoy 5π/6 dan boshlanib, pastdan aylanib π/6 + 2π = 13π/6 da tugaydi. Shuning uchun yechim (5π/6 + 2πn; 13π/6 + 2πn) ko'rinishida yoziladi, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinx<a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#eb458cbe"
+    },
+    {
+      "q": "sin x ≤ −√2/2 tengsizligining umumiy yechimini to'g'ri ko'rsatgan javobni belgilang.",
+      "v": [
+        "[5π/4 + 2πn; 7π/4 + 2πn], n ∈ Z",
+        "[π/4 + 2πn; 3π/4 + 2πn], n ∈ Z",
+        "[3π/4 + 2πn; 5π/4 + 2πn], n ∈ Z",
+        "(5π/4 + 2πn; 7π/4 + 2πn), n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "y = −√2/2 chizig'i aylanani 5π/4 va 7π/4 nuqtalarida kesadi. Sinus bundan kichik bo'lgan qism aylananing eng past yoyi, ya'ni 5π/4 dan 7π/4 gacha. Tengsizlik qat'iy emas, shuning uchun chegaralar ham qo'shiladi. Javob: [5π/4 + 2πn; 7π/4 + 2πn], n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinx<a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#da9f5d46"
+    },
+    {
+      "q": "sin x < √3/2 tengsizligi qanoatlantiriladigan barcha x larni umumiy ko'rinishda yozing.",
+      "v": [
+        "(π/3 + 2πn; 2π/3 + 2πn), n ∈ Z",
+        "(2π/3 + 2πn; 7π/3 + 2πn), n ∈ Z",
+        "(2π/3 + 2πn; 5π/3 + 2πn), n ∈ Z",
+        "(−2π/3 + 2πn; π/3 + 2πn), n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "Avval sin x = √3/2 chegara nuqtalari topiladi: π/3 va 2π/3. Sinus bu qiymatdan kichik bo'lgan soha shu ikki nuqtadan tashqarida, ya'ni 2π/3 dan boshlab pastdan aylanib π/3 + 2π = 7π/3 gacha. Javob: (2π/3 + 2πn; 7π/3 + 2πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinx<a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#d2e22e50"
+    },
+    {
+      "q": "Nilufar sin x < 0 tengsizligi aylananing qaysi qismini beradi deb so'radi. To'g'ri umumiy yechimni tanlang.",
+      "v": [
+        "(2πn; π + 2πn), n ∈ Z",
+        "(πn; π + πn), n ∈ Z",
+        "(π + 2πn; 2π + 2πn), n ∈ Z",
+        "(π/2 + 2πn; 3π/2 + 2πn), n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "Sinus nuqtaning ordinatasi bo'lgani uchun sin x < 0 shart nuqta abssissa o'qidan pastda yotishini bildiradi. Bu quyi yarim aylana π dan 2π gacha bo'lgan yoy. Har 2π da takrorlanadi. Javob: (π + 2πn; 2π + 2πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinx<a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#6d20b966"
+    },
+    {
+      "q": "cos x > 1/2 tengsizligining umumiy yechimi qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "(π/3 + 2πn; 5π/3 + 2πn), n ∈ Z",
+        "(π/6 + 2πn; 5π/6 + 2πn), n ∈ Z",
+        "(−π/3 + πn; π/3 + πn), n ∈ Z",
+        "(−π/3 + 2πn; π/3 + 2πn), n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Kosinus nuqtaning abssissasi, shuning uchun x = 1/2 vertikal chizig'i aylanani −π/3 va π/3 nuqtalarida kesadi. Kosinus 1/2 dan katta bo'lgan yoy shu ikki nuqta orasidagi o'ng yoy. Javob: (−π/3 + 2πn; π/3 + 2πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cosx>a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#a2992562"
+    },
+    {
+      "q": "cos x ≥ √2/2 tengsizligini qanoatlantiruvchi x qiymatlari to'plamini ko'rsating.",
+      "v": [
+        "[−π/4 + 2πn; π/4 + 2πn], n ∈ Z",
+        "[π/4 + 2πn; 3π/4 + 2πn], n ∈ Z",
+        "(−π/4 + 2πn; π/4 + 2πn), n ∈ Z",
+        "[π/4 + 2πn; 7π/4 + 2πn], n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "arccos(√2/2) = π/4, demak chegaralar −π/4 va π/4. Kosinus katta bo'lgan soha aylananing o'ng yoyi, ya'ni shu ikki chegara orasi. Tengsizlik qat'iy emasligi uchun chegaralar yechimga kiritiladi. Javob: [−π/4 + 2πn; π/4 + 2πn], n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cosx>a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#fe0af087"
+    },
+    {
+      "q": "cos x > −1/2 tengsizligining yechimi qanday umumiy formula bilan ifodalanadi?",
+      "v": [
+        "(2π/3 + 2πn; 4π/3 + 2πn), n ∈ Z",
+        "(−2π/3 + 2πn; 2π/3 + 2πn), n ∈ Z",
+        "(−π/3 + 2πn; π/3 + 2πn), n ∈ Z",
+        "(−2π/3 + πn; 2π/3 + πn), n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "arccos(−1/2) = 2π/3 bo'ladi, ya'ni x = −1/2 chizig'i aylanani ±2π/3 nuqtalarida kesadi. Kosinus −1/2 dan katta bo'lgan qism shu ikki nuqta orasidagi o'ng yoy bo'lib, uning uzunligi 4π/3. Javob: (−2π/3 + 2πn; 2π/3 + 2πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cosx>a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#e7735967"
+    },
+    {
+      "q": "cos x > √3/2 tengsizligining umumiy yechimini to'g'ri yozing.",
+      "v": [
+        "(−π/3 + 2πn; π/3 + 2πn), n ∈ Z",
+        "(π/6 + 2πn; 11π/6 + 2πn), n ∈ Z",
+        "(−π/6 + 2πn; π/6 + 2πn), n ∈ Z",
+        "(−π/6 + 2πn; 5π/6 + 2πn), n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "arccos(√3/2) = π/6, shuning uchun chegara nuqtalari −π/6 va π/6. Kosinus eng katta qiymatlarni noldan uzoq bo'lmagan burchaklarda oladi, demak yechim shu ikki chegara orasidagi tor yoy. Javob: (−π/6 + 2πn; π/6 + 2πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cosx>a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#08b88418"
+    },
+    {
+      "q": "cos x ≤ 1/2 tengsizligining umumiy yechimini birlik aylana yordamida aniqlang va to'g'ri variantni belgilang.",
+      "v": [
+        "[−π/3 + 2πn; π/3 + 2πn], n ∈ Z",
+        "[π/3 + 2πn; 2π/3 + 2πn], n ∈ Z",
+        "(π/3 + 2πn; 5π/3 + 2πn), n ∈ Z",
+        "[π/3 + 2πn; 5π/3 + 2πn], n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "x = 1/2 vertikal chizig'i aylanani π/3 va 5π/3 nuqtalarida kesadi. Kosinus 1/2 dan kichik bo'ladigan qism shu chiziqdan chapdagi katta yoy, ya'ni π/3 dan 5π/3 gacha. Tengsizlik qat'iy emas, chegaralar kiritiladi. Javob: [π/3 + 2πn; 5π/3 + 2πn], n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cosx≤a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#824ea48e"
+    },
+    {
+      "q": "cos x < −√2/2 tengsizligini qanoatlantiruvchi barcha burchaklarni umumiy ko'rinishda yozing.",
+      "v": [
+        "(3π/4 + 2πn; 5π/4 + 2πn), n ∈ Z",
+        "(−3π/4 + 2πn; 3π/4 + 2πn), n ∈ Z",
+        "(3π/4 + 2πn; 7π/4 + 2πn), n ∈ Z",
+        "(5π/4 + 2πn; 7π/4 + 2πn), n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "arccos(−√2/2) = 3π/4, demak x = −√2/2 chizig'i aylanani 3π/4 va 5π/4 nuqtalarida kesadi. Kosinus bundan kichik bo'lgan soha aylananing chap yoyi, ya'ni 3π/4 dan 5π/4 gacha bo'lgan qism. Javob: (3π/4 + 2πn; 5π/4 + 2πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cosx≤a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#b3074d08"
+    },
+    {
+      "q": "cos x ≤ −√3/2 tengsizligining yechimi qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "[7π/6 + 2πn; 11π/6 + 2πn], n ∈ Z",
+        "[5π/6 + 2πn; 7π/6 + 2πn], n ∈ Z",
+        "[5π/6 + 2πn; 13π/6 + 2πn], n ∈ Z",
+        "(5π/6 + 2πn; 7π/6 + 2πn), n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "arccos(−√3/2) = 5π/6, ikkinchi chegara esa 2π − 5π/6 = 7π/6 bo'ladi. Kosinus −√3/2 dan kichik bo'lgan yoy π nuqtasi atrofidagi tor qismdir. Belgi qat'iy bo'lmagani uchun chegaralar qo'shiladi. Javob: [5π/6 + 2πn; 7π/6 + 2πn], n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cosx≤a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#d393b393"
+    },
+    {
+      "q": "Kosinusi manfiy bo'lgan burchaklar to'plamini, ya'ni cos x < 0 tengsizlik yechimini ko'rsating.",
+      "v": [
+        "(π + 2πn; 2π + 2πn), n ∈ Z",
+        "(π/2 + πn; 3π/2 + πn), n ∈ Z",
+        "(π/2 + 2πn; 3π/2 + 2πn), n ∈ Z",
+        "(−π/2 + 2πn; π/2 + 2πn), n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "Kosinus birlik aylanadagi nuqtaning abssissasi. U manfiy bo'lishi uchun nuqta ordinata o'qidan chapda yotishi kerak, bu esa π/2 dan 3π/2 gacha bo'lgan yoy. Kosinusning davri 2π bo'lgani uchun yoy 2πn qadam bilan takrorlanadi. Javob: (π/2 + 2πn; 3π/2 + 2πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cosx≤a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#34efe9e1"
+    },
+    {
+      "q": "tg x > 1 tengsizligining umumiy yechimini tangens grafigi yordamida toping.",
+      "v": [
+        "(−π/2 + πn; π/4 + πn), n ∈ Z",
+        "(π/4 + 2πn; π/2 + 2πn), n ∈ Z",
+        "(π/4 + πn; π + πn), n ∈ Z",
+        "(π/4 + πn; π/2 + πn), n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Tangens (−π/2; π/2) oralig'ida o'suvchi va arctg 1 = π/4. Demak bitta shoxda tg x > 1 sharti π/4 dan asimptota π/2 gacha bajariladi. Tangensning davri π, shuning uchun natija πn qadam bilan takrorlanadi. Javob: (π/4 + πn; π/2 + πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tgx>a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#23d2977e"
+    },
+    {
+      "q": "tg x ≥ √3 tengsizligining yechimini qavslarga e'tibor berib to'g'ri yozgan variantni tanlang.",
+      "v": [
+        "[π/3 + πn; π/2 + πn), n ∈ Z",
+        "[π/3 + πn; π/2 + πn], n ∈ Z",
+        "[π/6 + πn; π/2 + πn), n ∈ Z",
+        "(π/3 + 2πn; π/2 + 2πn), n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "arctg √3 = π/3, shuning uchun quyi chegara π/3 va u yechimga kiradi. Yuqori chegara π/2 esa asimptota: u yerda tangens aniqlanmagan, demak qavs ochiq qoladi. Davr π. Javob: [π/3 + πn; π/2 + πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tgx>a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#d535e14c"
+    },
+    {
+      "q": "tg x > −1 tengsizligining barcha yechimlarini umumiy ko'rinishda ifodalang.",
+      "v": [
+        "(π/4 + πn; π/2 + πn), n ∈ Z",
+        "(−π/4 + πn; π/2 + πn), n ∈ Z",
+        "(−π/2 + πn; −π/4 + πn), n ∈ Z",
+        "(−π/4 + 2πn; π/2 + 2πn), n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "arctg(−1) = −π/4 bo'ladi. Tangens shoxda o'suvchi bo'lgani uchun −1 dan katta qiymatlar −π/4 dan boshlanib asimptota π/2 gacha davom etadi. Bu oraliq har π da takrorlanadi. Javob: (−π/4 + πn; π/2 + πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tgx>a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#54457719"
+    },
+    {
+      "q": "tg x < √3/3 tengsizligining umumiy yechimi qanday bo'ladi?",
+      "v": [
+        "(π/6 + πn; π/2 + πn), n ∈ Z",
+        "(−π/2 + πn; π/3 + πn), n ∈ Z",
+        "(−π/2 + πn; π/6 + πn), n ∈ Z",
+        "(−π/6 + πn; π/6 + πn), n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "arctg(√3/3) = π/6, chunki tg(π/6) = √3/3. Tangensning bitta shoxida u −π/2 dan boshlab o'sadi, demak √3/3 dan kichik qiymatlar asimptotadan π/6 gacha joylashgan. Javob: (−π/2 + πn; π/6 + πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tgx>a-umumiy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#f24b4be0"
+    },
+    {
+      "q": "ctg x > 1 tengsizligining umumiy yechimini kotangens grafigidan foydalanib aniqlang.",
+      "v": [
+        "(2πn; π/4 + 2πn), n ∈ Z",
+        "(π/4 + πn; π/2 + πn), n ∈ Z",
+        "(π/4 + πn; π + πn), n ∈ Z",
+        "(πn; π/4 + πn), n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Kotangens (0; π) oralig'ida kamayuvchi va arcctg 1 = π/4. Kamayuvchi funksiya 1 dan katta bo'lishi uchun argument π/4 dan kichik bo'lishi kerak, lekin noldan katta. Davr π. Javob: (πn; π/4 + πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ctgx-tengsizlik",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#a7244182"
+    },
+    {
+      "q": "ctg x < √3 tengsizligini qanoatlantiruvchi x qiymatlarini umumiy ko'rinishda yozing.",
+      "v": [
+        "(π/6 + πn; π + πn), n ∈ Z",
+        "(π/6 + πn; π/2 + πn), n ∈ Z",
+        "(πn; π/6 + πn), n ∈ Z",
+        "(π/3 + πn; π + πn), n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "arcctg √3 = π/6, chunki ctg(π/6) = √3. Kotangens (0; π) da kamayadi, shuning uchun √3 dan kichik qiymatlar π/6 dan o'ng tomonda, ya'ni π gacha joylashadi. Javob: (π/6 + πn; π + πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ctgx-tengsizlik",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#1f4bb843"
+    },
+    {
+      "q": "ctg x ≤ −1 tengsizligining yechimida qavslar qanday qo'yilishi kerak?",
+      "v": [
+        "[3π/4 + πn; π + πn], n ∈ Z",
+        "[3π/4 + πn; π + πn), n ∈ Z",
+        "(πn; 3π/4 + πn], n ∈ Z",
+        "[π/4 + πn; π + πn), n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "arcctg(−1) = 3π/4 va bu nuqta tengsizlik qat'iy bo'lmagani uchun yechimga kiradi. Kotangens (0; π) da kamayib −∞ ga intiladi, lekin x = π da funksiya aniqlanmagan, shuning uchun o'ng qavs ochiq qoladi. Javob: [3π/4 + πn; π + πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ctgx-tengsizlik",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#bb0c37c6"
+    },
+    {
+      "q": "Quyidagi burchaklardan qaysi biri cos x < −1/2 tengsizligini qanoatlantiradi: π/3, π/2, 5π/6 yoki 7π/4?",
+      "v": [
+        "π/3",
+        "π/2",
+        "5π/6",
+        "7π/4"
+      ],
+      "t": 2,
+      "izoh": "Har birining kosinusini hisoblaymiz: cos(π/3) = 1/2, cos(π/2) = 0, cos(5π/6) = −√3/2 ≈ −0,87, cos(7π/4) = √2/2. Faqat −√3/2 qiymati −1/2 dan kichik. Javob: 5π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "x-tekshirish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#d2725b29"
+    },
+    {
+      "q": "Sinfda o'qituvchi sin x > 1/2 tengsizligini faqat [0; 2π] kesmada yechishni topshirdi. To'g'ri javobni tanlang.",
+      "v": [
+        "(π/3; 2π/3)",
+        "[π/6; 5π/6]",
+        "(π/6; 5π/6)",
+        "(0; π/6) ∪ (5π/6; 2π)"
+      ],
+      "t": 2,
+      "izoh": "Umumiy yechim (π/6 + 2πn; 5π/6 + 2πn) ko'rinishida. n = 0 olganda [0; 2π] kesmaga tushadigan yagona oraliq (π/6; 5π/6) bo'ladi, n = 1 esa kesmadan chiqib ketadi. Tengsizlik qat'iy, shuning uchun chegaralar kiritilmaydi. Javob: (π/6; 5π/6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-sinx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#c5444ac6"
+    },
+    {
+      "q": "cos x ≥ √3/2 tengsizligining [0; 2π] kesmadagi yechimi qanday to'plamdan iborat bo'ladi?",
+      "v": [
+        "[−π/6; π/6]",
+        "[π/6; 11π/6]",
+        "[0; π/3] ∪ [5π/3; 2π]",
+        "[0; π/6] ∪ [11π/6; 2π]"
+      ],
+      "t": 3,
+      "izoh": "Umumiy yechim [−π/6 + 2πn; π/6 + 2πn]. [0; 2π] kesmada bu oraliq ikki bo'lakka ajraladi: boshida [0; π/6], oxirida esa 2π − π/6 = 11π/6 dan 2π gacha. Shu sababli javob ikki kesmaning birlashmasi. Javob: [0; π/6] ∪ [11π/6; 2π].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-cosx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#1ab47f09"
+    },
+    {
+      "q": "sin x ≤ −1/2 tengsizligini [0; 2π] kesmada yeching va natijani to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "[7π/6; 11π/6]",
+        "[0; 7π/6] ∪ [11π/6; 2π]",
+        "[4π/3; 5π/3]",
+        "[π/6; 5π/6]"
+      ],
+      "t": 0,
+      "izoh": "y = −1/2 chizig'i aylanani 7π/6 va 11π/6 nuqtalarida kesadi. Sinus bu qiymatdan kichik yoki teng bo'lgan yoy shu ikki nuqta orasidagi quyi qism. [0; 2π] kesmada u yaxlit bo'lakligicha qoladi. Javob: [7π/6; 11π/6].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-sinx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#47be70bb"
+    },
+    {
+      "q": "tg x > √3 tengsizligining [0; π] kesmadagi yechimini toping.",
+      "v": [
+        "(π/6; π/2)",
+        "(π/3; π/2)",
+        "(π/3; π)",
+        "(π/3; π/2]"
+      ],
+      "t": 1,
+      "izoh": "arctg √3 = π/3, tangens esa (0; π/2) da o'sadi va π/2 da uziladi. Demak [0; π] kesmada shart faqat π/3 dan π/2 gacha bajariladi. π/2 dan keyin tangens manfiy bo'ladi, shuning uchun oraliq davom etmaydi. Javob: (π/3; π/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-tgx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#cc87d3cb"
+    },
+    {
+      "q": "Malika sin x > √2/2 tengsizligini [0; 2π] kesmada yechdi. Uning to'g'ri javobi qaysi oraliq bo'lishi kerak?",
+      "v": [
+        "(π/4; 7π/4)",
+        "(π/4; π/2)",
+        "(π/4; 3π/4)",
+        "[π/4; 3π/4]"
+      ],
+      "t": 2,
+      "izoh": "arcsin(√2/2) = π/4 va ikkinchi chegara π − π/4 = 3π/4 bo'ladi. Sinus shu ikki nuqta orasida √2/2 dan katta bo'ladi, chunki bu aylananing eng yuqori yoyi. Chegaralarda tenglik bajarilgani uchun ular kirmaydi. Javob: (π/4; 3π/4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-sinx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#100c9914"
+    },
+    {
+      "q": "cos x < 1/2 tengsizligining [0; 2π] kesmadagi yechim to'plamini ko'rsating.",
+      "v": [
+        "(2π/3; 4π/3)",
+        "(π/3; 2π/3)",
+        "(0; π/3) ∪ (5π/3; 2π)",
+        "(π/3; 5π/3)"
+      ],
+      "t": 3,
+      "izoh": "cos x = 1/2 tenglama [0; 2π] da π/3 va 5π/3 ildizlarini beradi. Kosinus shu ikki nuqta orasida, ya'ni aylananing chap qismida 1/2 dan kichik bo'ladi. Chegaralar tenglikni beradi, shuning uchun ular yechimga kirmaydi. Javob: (π/3; 5π/3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-cosx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#826cf158"
+    },
+    {
+      "q": "cos x ≤ −√2/2 tengsizligining [0; 2π] kesmadagi yechimi qaysi kesmadan iborat?",
+      "v": [
+        "[3π/4; 5π/4]",
+        "[5π/4; 7π/4]",
+        "[3π/4; 7π/4]",
+        "[π/4; 3π/4]"
+      ],
+      "t": 0,
+      "izoh": "arccos(−√2/2) = 3π/4, ikkinchi chegara esa 2π − 3π/4 = 5π/4. Kosinus π atrofida eng kichik qiymatlarni oladi, shuning uchun yechim shu ikki chegara orasidagi kesma. Belgi qat'iy emas, chegaralar qo'shiladi. Javob: [3π/4; 5π/4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-cosx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#9ac26996"
+    },
+    {
+      "q": "tg x ≥ 1 tengsizligi [0; π] kesmada qanoatlantiriladigan x larni to'plam ko'rinishida yozing.",
+      "v": [
+        "[π/4; π/2]",
+        "[π/4; π/2)",
+        "(π/4; π/2)",
+        "[π/4; π)"
+      ],
+      "t": 1,
+      "izoh": "arctg 1 = π/4 va bu nuqtada tenglik bajariladi, demak u yechimga kiradi. Tangens π/2 da aniqlanmagani uchun o'ng chegara ochiq qoladi. π/2 dan keyin tangens manfiy, shart buziladi. Javob: [π/4; π/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-tgx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#09b5fec4"
+    },
+    {
+      "q": "sin x < −√3/2 tengsizligining [−π; π] kesmadagi yechimini toping.",
+      "v": [
+        "(4π/3; 5π/3)",
+        "(−π/3; π/3)",
+        "(−2π/3; −π/3)",
+        "(−5π/6; −π/6)"
+      ],
+      "t": 2,
+      "izoh": "[−π; π] kesmada sin x = −√3/2 tenglama −2π/3 va −π/3 ildizlarini beradi. Sinus shu ikki nuqta orasida −√3/2 dan kichik bo'ladi, chunki u yerda eng past nuqta −π/2 yotadi. Javob: (−2π/3; −π/3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-sinx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#805dad13"
+    },
+    {
+      "q": "cos x > 0 sharti [0; 2π] kesmada qaysi qismlarda bajarilishini ko'rsating.",
+      "v": [
+        "(0; π/2) ∪ (π; 3π/2)",
+        "(π/2; 3π/2)",
+        "[0; π)",
+        "[0; π/2) ∪ (3π/2; 2π]"
+      ],
+      "t": 3,
+      "izoh": "Kosinus birinchi va to'rtinchi choraklarda musbat bo'ladi. [0; 2π] kesmada birinchi chorak [0; π/2) ni, to'rtinchi chorak esa (3π/2; 2π] ni beradi. π/2 va 3π/2 nuqtalarida kosinus nolga teng, shuning uchun ular kirmaydi. Javob: [0; π/2) ∪ (3π/2; 2π].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-cosx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#3fc5a032"
+    },
+    {
+      "q": "tg x < 1 tengsizligining (−π/2; π/2) oralig'idagi yechimini aniqlang.",
+      "v": [
+        "(−π/2; π/4)",
+        "(−π/4; π/4)",
+        "(π/4; π/2)",
+        "(−π/2; π/4]"
+      ],
+      "t": 0,
+      "izoh": "Berilgan oraliqda tangens o'suvchi funksiya va tg(π/4) = 1. Demak 1 dan kichik qiymatlar π/4 dan chapda joylashadi, ya'ni asimptota −π/2 dan π/4 gacha. Chegara π/4 da tenglik bo'lgani uchun u kiritilmaydi. Javob: (−π/2; π/4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-tgx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#284db6c9"
+    },
+    {
+      "q": "π/6, π/3, 5π/6 va 7π/6 burchaklaridan qaysi biri sin x > √2/2 tengsizligini qanoatlantiradi?",
+      "v": [
+        "π/6",
+        "π/3",
+        "5π/6",
+        "7π/6"
+      ],
+      "t": 1,
+      "izoh": "Sinuslarni solishtiramiz: sin(π/6) = 1/2, sin(π/3) = √3/2 ≈ 0,87, sin(5π/6) = 1/2, sin(7π/6) = −1/2. √2/2 ≈ 0,71 dan katta bo'lgan yagona qiymat √3/2. Javob: π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "x-tekshirish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#299a672b"
+    },
+    {
+      "q": "cos x < 0 tengsizligining yechimi [0; 6π] kesmada nechta ajralgan oraliqqa bo'linadi?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "6 ta"
+      ],
+      "t": 1,
+      "izoh": "Umumiy yechim (π/2 + 2πn; 3π/2 + 2πn) va u har 2π da bir marta takrorlanadi. [0; 6π] kesmaning uzunligi 6π, ya'ni uchta to'liq davr. Demak n = 0, 1, 2 uchun uchta ajralgan oraliq hosil bo'ladi. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-soni",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#0546e20d"
+    },
+    {
+      "q": "sin x > 1/2 tengsizligini qanoatlantiruvchi nechta butun son x qiymati [0; 10] kesmada mavjud?",
+      "v": [
+        "8 ta",
+        "6 ta",
+        "4 ta",
+        "2 ta"
+      ],
+      "t": 2,
+      "izoh": "Yechim oraliqlari (π/6; 5π/6) ≈ (0,52; 2,62) va (13π/6; 17π/6) ≈ (6,81; 8,90). Birinchisida 1 va 2, ikkinchisida 7 va 8 butun sonlari yotadi. Keyingi oraliq 13 dan boshlanadi, u kesmadan tashqarida. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechim-soni",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#6a0ad38e"
+    },
+    {
+      "q": "tg x > √3 tengsizligining yechimi [0; 5π) oralig'ida nechta ajralgan bo'lakdan iborat bo'ladi?",
+      "v": [
+        "3 ta",
+        "4 ta",
+        "5 ta",
+        "10 ta"
+      ],
+      "t": 2,
+      "izoh": "Umumiy yechim (π/3 + πn; π/2 + πn), tangensning davri esa π. [0; 5π) oralig'ining uzunligi 5π, ya'ni beshta davr. Har bir davrga bittadan bo'lak to'g'ri keladi. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-soni",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#c4034366"
+    },
+    {
+      "q": "sin x ≤ −√2/2 tengsizligining [−2π; 2π] kesmadagi yechimi nechta kesmadan tashkil topadi?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 1,
+      "izoh": "Umumiy yechim [5π/4 + 2πn; 7π/4 + 2πn]. n = 0 da [5π/4; 7π/4], n = −1 da [−3π/4; −π/4] hosil bo'ladi va ikkalasi ham kesma ichida yotadi. n = 1 va n = −2 dagi bo'laklar [−2π; 2π] dan chiqib ketadi. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechim-soni",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#b3c9d95d"
+    },
+    {
+      "q": "sin x ≥ 1/2 tengsizligining [0; 2π] kesmadagi eng katta yechimini toping.",
+      "v": [
+        "π/2",
+        "13π/6",
+        "π/6",
+        "5π/6"
+      ],
+      "t": 3,
+      "izoh": "Kesmadagi yechim [π/6; 5π/6] kesmasidan iborat bo'ladi. Belgi qat'iy emas, shuning uchun o'ng chegara ham yechim hisoblanadi. Demak eng katta qiymat 5π/6 ga teng. Javob: 5π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-kichik-yechim",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#3ec8d172"
+    },
+    {
+      "q": "cos x ≤ −1/2 tengsizligining eng kichik musbat yechimi qanday bo'ladi?",
+      "v": [
+        "2π/3",
+        "π/3",
+        "4π/3",
+        "π/2"
+      ],
+      "t": 0,
+      "izoh": "Yechim [2π/3 + 2πn; 4π/3 + 2πn] ko'rinishida. Musbat yechimlarning eng kichigi n = 0 dagi kesmaning chap chegarasi. Belgi qat'iy bo'lmagani uchun 2π/3 ning o'zi ham yechim. Javob: 2π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-kichik-yechim",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#c93ae8be"
+    },
+    {
+      "q": "tg x > 1 tengsizligining musbat yechimlari orasida eng kichigi bormi degan savolga to'g'ri javob qaysi?",
+      "v": [
+        "Bor, u π/4 ga teng",
+        "Bor, u π/2 ga teng",
+        "Yo'q, chunki tengsizlikning yechimi umuman yo'q",
+        "Yo'q, chunki oraliq chap chetida ochiq"
+      ],
+      "t": 3,
+      "izoh": "Yechim (π/4 + πn; π/2 + πn) ko'rinishida bo'lib, musbat yechimlarning birinchi bo'lagi (π/4; π/2). Bu oraliq π/4 nuqtasini o'z ichiga olmaydi, chunki tg(π/4) = 1 tenglikni beradi. π/4 dan katta har qanday yechimdan yana kichikroq yechim topish mumkin. Javob: yo'q, chunki oraliq chap chetida ochiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-kichik-yechim",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#cacac9f5"
+    },
+    {
+      "q": "sin x ≤ −1/2 tengsizligining [0; 4π] kesmadagi eng katta yechimini aniqlang.",
+      "v": [
+        "23π/6",
+        "19π/6",
+        "11π/6",
+        "4π"
+      ],
+      "t": 0,
+      "izoh": "Umumiy yechim [7π/6 + 2πn; 11π/6 + 2πn]. Kesmaga n = 0 dagi [7π/6; 11π/6] va n = 1 dagi [19π/6; 23π/6] bo'laklari tushadi. 23π/6 ≈ 12,04 bo'lib, 4π ≈ 12,57 dan kichik, demak u kesma ichida va eng katta yechim. Javob: 23π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-kichik-yechim",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#9bfb1228"
+    },
+    {
+      "q": "sin x > 1/2 tengsizligi yechimining bitta 2π uzunlikdagi davr ichidagi umumiy uzunligi qanchaga teng?",
+      "v": [
+        "π/3",
+        "2π/3",
+        "π/2",
+        "5π/6"
+      ],
+      "t": 1,
+      "izoh": "Bir davrda yechim (π/6; 5π/6) oralig'idan iborat bo'ladi. Uning uzunligi 5π/6 − π/6 = 4π/6 = 2π/3 ga teng. Faqat o'ng chegara 5π/6 ni uzunlik deb olish keng tarqalgan xato. Javob: 2π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-uzunligi",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#16f17ff3"
+    },
+    {
+      "q": "cos x ≥ √3/2 tengsizligi yechimining bitta davrdagi umumiy uzunligini hisoblang.",
+      "v": [
+        "π/6",
+        "5π/3",
+        "π/3",
+        "2π/3"
+      ],
+      "t": 2,
+      "izoh": "Bir davrda yechim [−π/6; π/6] kesmasidan iborat. Uning uzunligi π/6 − (−π/6) = 2π/6 = π/3. Faqat bitta chegarani hisobga olish π/6 degan noto'g'ri natijaga olib keladi. Javob: π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-uzunligi",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#d7c9bd42"
+    },
+    {
+      "q": "Tangensning bitta davri π ga teng. Shu davr ichida tg x > 1 tengsizligi yechimining uzunligi qanchaga teng bo'ladi?",
+      "v": [
+        "π/3",
+        "π/2",
+        "3π/4",
+        "π/4"
+      ],
+      "t": 3,
+      "izoh": "Bitta davrda yechim (π/4; π/2) oralig'i bo'ladi. Uning uzunligi π/2 − π/4 = π/4 ga teng, ya'ni davrning to'rtdan biri. Javob: π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechim-uzunligi",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#9ce3f19d"
+    },
+    {
+      "q": "sin x < −√2/2 tengsizligi yechimining bir davrdagi umumiy uzunligi cos x < −√2/2 dagi bilan bir xil. U nechaga teng?",
+      "v": [
+        "π/2",
+        "π/3",
+        "π/4",
+        "3π/4"
+      ],
+      "t": 0,
+      "izoh": "Bir davrda yechim (5π/4; 7π/4) oralig'i bo'ladi. Uning uzunligi 7π/4 − 5π/4 = 2π/4 = π/2. cos x < −√2/2 uchun yechim (3π/4; 5π/4) bo'lib, uzunligi yana π/2 — grafiklar bir-biriga siljigani uchun natija bir xil. Javob: π/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechim-uzunligi",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#225fdbef"
+    },
+    {
+      "q": "sin 2x > 1/2 tengsizligini yechayotganda argument almashtirilgandan keyin qanday umumiy javob hosil bo'ladi?",
+      "v": [
+        "(π/12 + 2πn; 5π/12 + 2πn), n ∈ Z",
+        "(π/12 + πn; 5π/12 + πn), n ∈ Z",
+        "(π/6 + πn; 5π/6 + πn), n ∈ Z",
+        "(π/3 + πn; 5π/3 + πn), n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "Avval 2x = t deb belgilaymiz: sin t > 1/2 dan t ∈ (π/6 + 2πn; 5π/6 + 2πn). Endi t o'rniga 2x qo'yib, tengsizlikning barcha qismini 2 ga bo'lamiz. Shunda x ∈ (π/12 + πn; 5π/12 + πn) chiqadi, davr ham ikki marta qisqaradi. Javob: (π/12 + πn; 5π/12 + πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-kx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#eb48ffee"
+    },
+    {
+      "q": "cos 3x ≤ 0 tengsizligining umumiy yechimini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "[π/6 + 2πn; π/2 + 2πn], n ∈ Z",
+        "[π/2 + 2πn/3; 3π/2 + 2πn/3], n ∈ Z",
+        "[π/6 + 2πn/3; π/2 + 2πn/3], n ∈ Z",
+        "[π/6 + πn/3; π/2 + πn/3], n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "3x = t deb olsak, cos t ≤ 0 shartdan t ∈ [π/2 + 2πn; 3π/2 + 2πn]. Har uch qismni 3 ga bo'lamiz: x ∈ [π/6 + 2πn/3; π/2 + 2πn/3]. Davr ham 3 ga bo'linadi, ya'ni 2π/3 bo'ladi. Javob: [π/6 + 2πn/3; π/2 + 2πn/3], n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-kx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#01480b22"
+    },
+    {
+      "q": "tg(x/2) > 1 tengsizligining umumiy yechimi qanday ko'rinishda yoziladi?",
+      "v": [
+        "(π/2 + πn; π + πn), n ∈ Z",
+        "(π/4 + 2πn; π/2 + 2πn), n ∈ Z",
+        "(π/8 + πn/2; π/4 + πn/2), n ∈ Z",
+        "(π/2 + 2πn; π + 2πn), n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "x/2 = t belgilash bilan tg t > 1 dan t ∈ (π/4 + πn; π/2 + πn) hosil bo'ladi. Endi barcha qismni 2 ga ko'paytiramiz: x ∈ (π/2 + 2πn; π + 2πn). Argument ikki marta kichraytirilgani uchun davr ikki marta kattalashadi. Javob: (π/2 + 2πn; π + 2πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-kx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#180e52d7"
+    },
+    {
+      "q": "cos 2x > √2/2 tengsizligining barcha yechimlarini umumiy formula bilan ifodalang.",
+      "v": [
+        "(−π/8 + πn; π/8 + πn), n ∈ Z",
+        "(−π/8 + 2πn; π/8 + 2πn), n ∈ Z",
+        "(−π/4 + πn; π/4 + πn), n ∈ Z",
+        "(−π/8 + πn/2; π/8 + πn/2), n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "2x = t deb olamiz: cos t > √2/2 dan t ∈ (−π/4 + 2πn; π/4 + 2πn). Ikkiga bo'lganda x ∈ (−π/8 + πn; π/8 + πn) chiqadi. Bu yerda eng ko'p uchraydigan xato davrni 2π holicha qoldirish. Javob: (−π/8 + πn; π/8 + πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-kx",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#d5c51432"
+    },
+    {
+      "q": "sin(x + π/6) > 1/2 tengsizligini yeching va umumiy javobni ko'rsating.",
+      "v": [
+        "(π/3 + 2πn; π + 2πn), n ∈ Z",
+        "(2πn; 2π/3 + 2πn), n ∈ Z",
+        "(π/6 + 2πn; 5π/6 + 2πn), n ∈ Z",
+        "(2πn; π/3 + 2πn), n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "x + π/6 = t deb olsak, sin t > 1/2 dan t ∈ (π/6 + 2πn; 5π/6 + 2πn). Endi x = t − π/6, ya'ni chegaralardan π/6 ayiriladi: π/6 − π/6 = 0 va 5π/6 − π/6 = 2π/3. Javob: (2πn; 2π/3 + 2πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-siljish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#e9e64bbb"
+    },
+    {
+      "q": "cos(x − π/4) ≥ √2/2 tengsizligining umumiy yechimini toping.",
+      "v": [
+        "[−π/4 + 2πn; π/4 + 2πn], n ∈ Z",
+        "[−π/2 + 2πn; 2πn], n ∈ Z",
+        "[2πn; π/2 + 2πn], n ∈ Z",
+        "[π/4 + 2πn; 3π/4 + 2πn], n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "x − π/4 = t belgilaymiz: cos t ≥ √2/2 dan t ∈ [−π/4 + 2πn; π/4 + 2πn]. x = t + π/4 bo'lgani uchun chegaralarga π/4 qo'shiladi: −π/4 + π/4 = 0 va π/4 + π/4 = π/2. Javob: [2πn; π/2 + 2πn], n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-siljish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#2ea79771"
+    },
+    {
+      "q": "sin(x − π/3) < √3/2 tengsizligining umumiy yechimi qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "(π/3 + 2πn; 5π/3 + 2πn), n ∈ Z",
+        "(2π/3 + 2πn; 7π/3 + 2πn), n ∈ Z",
+        "(π + 2πn; 2π + 2πn), n ∈ Z",
+        "(π + 2πn; 8π/3 + 2πn), n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "x − π/3 = t deb olamiz: sin t < √3/2 dan t ∈ (2π/3 + 2πn; 7π/3 + 2πn). x = t + π/3 bo'lgani uchun chegaralarga π/3 qo'shamiz: 2π/3 + π/3 = π va 7π/3 + π/3 = 8π/3. Javob: (π + 2πn; 8π/3 + 2πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-siljish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#7bf32b3f"
+    },
+    {
+      "q": "tg(x + π/6) > √3 tengsizligining yechimini umumiy ko'rinishda yozing.",
+      "v": [
+        "(π/6 + πn; π/3 + πn), n ∈ Z",
+        "(π/2 + πn; 2π/3 + πn), n ∈ Z",
+        "(π/3 + πn; π/2 + πn), n ∈ Z",
+        "(π/6 + 2πn; π/3 + 2πn), n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "x + π/6 = t deb olsak, tg t > √3 dan t ∈ (π/3 + πn; π/2 + πn). x = t − π/6 bo'lgani uchun chegaralardan π/6 ayiriladi: π/3 − π/6 = π/6 va π/2 − π/6 = π/3. Javob: (π/6 + πn; π/3 + πn), n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "argument-siljish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#7318f519"
+    },
+    {
+      "q": "1/2 < sin x < √3/2 qo'sh tengsizligining [0; π] kesmadagi yechimini aniqlang.",
+      "v": [
+        "(π/6; π/3)",
+        "(π/6; π/3) ∪ (2π/3; 5π/6)",
+        "(π/3; 2π/3)",
+        "(π/6; 5π/6)"
+      ],
+      "t": 1,
+      "izoh": "sin x > 1/2 sharti [0; π] da (π/6; 5π/6) ni beradi. sin x < √3/2 sharti esa π/3 dan 2π/3 gacha bo'lgan qismni chiqarib tashlaydi. Ikki shartning kesishmasi ikkita bo'lakdan iborat bo'ladi. Javob: (π/6; π/3) ∪ (2π/3; 5π/6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qosh-tengsizlik",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#db42bed8"
+    },
+    {
+      "q": "−1/2 ≤ cos x ≤ 1/2 qo'sh tengsizligining [0; π] kesmadagi yechimini toping.",
+      "v": [
+        "[π/6; 5π/6]",
+        "[0; π/3] ∪ [2π/3; π]",
+        "[π/3; 2π/3]",
+        "[π/3; π/2]"
+      ],
+      "t": 2,
+      "izoh": "cos x ≤ 1/2 sharti [0; π] da x ≥ π/3 ni beradi. cos x ≥ −1/2 sharti esa x ≤ 2π/3 ni talab qiladi. Ikkalasining kesishmasi [π/3; 2π/3] kesmasi bo'ladi. Javob: [π/3; 2π/3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qosh-tengsizlik",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#3653b869"
+    },
+    {
+      "q": "0 < sin x < 1/2 qo'sh tengsizligini [0; 2π] kesmada yechib, natijani ko'rsating.",
+      "v": [
+        "(0; π/6)",
+        "(0; π/6) ∪ (5π/6; 2π)",
+        "(π/6; 5π/6)",
+        "(0; π/6) ∪ (5π/6; π)"
+      ],
+      "t": 3,
+      "izoh": "sin x > 0 sharti (0; π) oralig'ini beradi, ya'ni yuqori yarim aylana. Undan sin x < 1/2 sharti π/6 dan 5π/6 gacha bo'lgan o'rta qismni chiqarib tashlaydi. Natijada ikkita kichik oraliq qoladi. Javob: (0; π/6) ∪ (5π/6; π).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qosh-tengsizlik",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#80065db7"
+    },
+    {
+      "q": "−1 < tg x ≤ 1 qo'sh tengsizligining (−π/2; π/2) oralig'idagi yechimi qanday yoziladi?",
+      "v": [
+        "(−π/4; π/4]",
+        "[−π/4; π/4)",
+        "(−π/4; π/4)",
+        "(−π/2; π/4]"
+      ],
+      "t": 0,
+      "izoh": "Tangens berilgan oraliqda o'suvchi, shuning uchun tg x > −1 dan x > −π/4 va tg x ≤ 1 dan x ≤ π/4 kelib chiqadi. Chap chegarada tenglik yo'q, o'ng chegarada bor. Demak chap qavs ochiq, o'ng qavs yopiq. Javob: (−π/4; π/4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qosh-tengsizlik",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#7f1dc282"
+    },
+    {
+      "q": "y = √(2sin x − 1) funksiyaning aniqlanish sohasini toping, chunki ildiz ostidagi ifoda manfiy bo'lmasligi kerak.",
+      "v": [
+        "(π/6 + 2πn; 5π/6 + 2πn), n ∈ Z",
+        "[π/6 + 2πn; 5π/6 + 2πn], n ∈ Z",
+        "[π/3 + 2πn; 2π/3 + 2πn], n ∈ Z",
+        "[5π/6 + 2πn; 13π/6 + 2πn], n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "Shart 2sin x − 1 ≥ 0, ya'ni sin x ≥ 1/2. Bu tengsizlikning yechimi π/6 dan 5π/6 gacha bo'lgan yoy. Tenglik holati ham ruxsat etilgani uchun chegaralar sohaga kiradi. Javob: [π/6 + 2πn; 5π/6 + 2πn], n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#c698a2f7"
+    },
+    {
+      "q": "y = √(2cos x − √3) funksiya qaysi x qiymatlarida aniqlangan bo'ladi?",
+      "v": [
+        "[π/6 + 2πn; 11π/6 + 2πn], n ∈ Z",
+        "[−π/3 + 2πn; π/3 + 2πn], n ∈ Z",
+        "[−π/6 + 2πn; π/6 + 2πn], n ∈ Z",
+        "(−π/6 + 2πn; π/6 + 2πn), n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "Ildiz ostidagi ifoda manfiy bo'lmasligi kerak: 2cos x − √3 ≥ 0, ya'ni cos x ≥ √3/2. arccos(√3/2) = π/6 bo'lgani uchun yechim −π/6 dan π/6 gacha. Chegaralarda ildiz ostidagi ifoda nolga teng, bu ruxsat etiladi. Javob: [−π/6 + 2πn; π/6 + 2πn], n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#dd6bfe70"
+    },
+    {
+      "q": "y = √(−cos x) funksiyaning aniqlanish sohasi qanday to'plamdan iborat?",
+      "v": [
+        "[π + 2πn; 2π + 2πn], n ∈ Z",
+        "[−π/2 + 2πn; π/2 + 2πn], n ∈ Z",
+        "(π/2 + 2πn; 3π/2 + 2πn), n ∈ Z",
+        "[π/2 + 2πn; 3π/2 + 2πn], n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Shart −cos x ≥ 0 bo'lib, u cos x ≤ 0 ga teng kuchli. Kosinus ikkinchi va uchinchi choraklarda musbat emas, ya'ni π/2 dan 3π/2 gacha. Chegaralarda kosinus nol, ildiz ostida nol turadi va bu joiz. Javob: [π/2 + 2πn; 3π/2 + 2πn], n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#7906f244"
+    },
+    {
+      "q": "y = √(2sin x − √2) ifoda ma'noga ega bo'ladigan x qiymatlari to'plamini ko'rsating.",
+      "v": [
+        "[π/4 + 2πn; 3π/4 + 2πn], n ∈ Z",
+        "[π/4 + πn; 3π/4 + πn], n ∈ Z",
+        "[3π/4 + 2πn; 9π/4 + 2πn], n ∈ Z",
+        "[π/6 + 2πn; 5π/6 + 2πn], n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "2sin x − √2 ≥ 0 shartdan sin x ≥ √2/2 kelib chiqadi. arcsin(√2/2) = π/4, ikkinchi chegara esa π − π/4 = 3π/4. Sinusning davri 2π bo'lgani uchun yoy 2πn qadam bilan takrorlanadi. Javob: [π/4 + 2πn; 3π/4 + 2πn], n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#38728b2d"
+    },
+    {
+      "q": "Bir koordinata tekisligida y = cos x grafigi va y = −1/2 to'g'ri chizig'i chizilgan. Grafik chiziqdan pastda bo'lgan [0; 2π] dagi x lar to'plamini toping.",
+      "v": [
+        "(π/3; 5π/3)",
+        "(2π/3; 4π/3)",
+        "(0; 2π/3) ∪ (4π/3; 2π)",
+        "(2π/3; 5π/3)"
+      ],
+      "t": 1,
+      "izoh": "Grafik chiziqdan pastda bo'lishi cos x < −1/2 tengsizligini bildiradi. cos x = −1/2 tenglama [0; 2π] da 2π/3 va 4π/3 ildizlarini beradi. Kosinus grafigi shu ikki nuqta orasida eng past qismda yotadi. Javob: (2π/3; 4π/3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-oqish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#c694f9cc"
+    },
+    {
+      "q": "y = tg x grafigi (−π/2; π/2) oralig'ida y = −√3 chizig'idan pastda bo'lgan qismini aniqlang.",
+      "v": [
+        "(−π/2; −π/6)",
+        "(−π/3; π/2)",
+        "(−π/2; −π/3)",
+        "(−π/3; π/3)"
+      ],
+      "t": 2,
+      "izoh": "Shart tg x < −√3 ko'rinishida yoziladi. arctg(−√3) = −π/3 va tangens berilgan oraliqda o'suvchi. Demak −√3 dan kichik qiymatlar −π/3 dan chapda, asimptota −π/2 gacha joylashadi. Javob: (−π/2; −π/3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-oqish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#b5562d9a"
+    },
+    {
+      "q": "y = sin x va y = cos x grafiklari bitta chizmada berilgan. Sinus grafigi kosinus grafigidan yuqorida turgan [0; 2π] dagi oraliqni tanlang.",
+      "v": [
+        "(0; π/4)",
+        "(5π/4; 2π)",
+        "(π/4; 3π/4)",
+        "(π/4; 5π/4)"
+      ],
+      "t": 3,
+      "izoh": "Ikki grafik sin x = cos x bo'lgan nuqtalarda kesishadi, ya'ni [0; 2π] da π/4 va 5π/4 da. Oraliqlardan bittasini tekshiramiz: x = π/2 da sin = 1, cos = 0, demak sinus yuqorida. Shu sababli shart π/4 dan 5π/4 gacha bajariladi. Javob: (π/4; 5π/4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-oqish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#6c2b65c9"
+    },
+    {
+      "q": "y = sin x grafigi y = −√2/2 chizig'idan yuqorida joylashgan [0; 2π] dagi x qiymatlarini ko'rsating.",
+      "v": [
+        "[0; 5π/4) ∪ (7π/4; 2π]",
+        "(5π/4; 7π/4)",
+        "[0; π/4) ∪ (3π/4; 2π]",
+        "(π/4; 3π/4)"
+      ],
+      "t": 0,
+      "izoh": "Shart sin x > −√2/2. Teng bo'lgan nuqtalar [0; 2π] da 5π/4 va 7π/4. Sinus shu ikki nuqta orasida chiziqdan past, qolgan joyda yuqorida bo'ladi. Kesmaning chekka qismlari ham yechimga kiradi. Javob: [0; 5π/4) ∪ (7π/4; 2π].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-oqish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#98611a73"
+    },
+    {
+      "q": "cos x ≤ −1/2 tengsizligi birlik aylanada ajratadigan yoyning markaziy burchagi necha gradusga teng?",
+      "v": [
+        "60°",
+        "120°",
+        "90°",
+        "150°"
+      ],
+      "t": 1,
+      "izoh": "Yechim bitta davrda [2π/3; 4π/3] kesmasidan iborat bo'ladi. Yoyning kattaligi 4π/3 − 2π/3 = 2π/3 radian. Buni gradusga o'tkazamiz: 2π/3 radian 120° ga teng. Javob: 120°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-aylana-yoy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#1fa69c24"
+    },
+    {
+      "q": "Birlik aylanada sin x < 0 va cos x > 0 shartlari bir vaqtda bajariladigan nuqtalar qaysi chorakda yotadi?",
+      "v": [
+        "I chorak",
+        "II chorak",
+        "IV chorak",
+        "III chorak"
+      ],
+      "t": 2,
+      "izoh": "Sinus ordinata, kosinus esa abssissa bo'lgani uchun nuqta o'qdan pastda va ordinata o'qidan o'ngda bo'lishi kerak. Bunday nuqtalar to'rtinchi chorakda, ya'ni 3π/2 dan 2π gacha joylashadi. Javob: IV chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-aylana-yoy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#a03f4ece"
+    },
+    {
+      "q": "tg x > 1 sharti birlik aylanada bitta to'liq aylanish davomida qaysi ikki yoyni ajratadi?",
+      "v": [
+        "(π/2; 3π/4) va (3π/2; 7π/4)",
+        "(0; π/4) va (π; 5π/4)",
+        "(π/4; 3π/4) va (5π/4; 7π/4)",
+        "(π/4; π/2) va (5π/4; 3π/2)"
+      ],
+      "t": 3,
+      "izoh": "tg x > 1 ning umumiy yechimi (π/4 + πn; π/2 + πn) ko'rinishida. [0; 2π] aylanishida n = 0 va n = 1 mos keladi. Ular (π/4; π/2) va (5π/4; 3π/2) yoylarini beradi, ya'ni birinchi va uchinchi chorakning yuqori qismlari. Javob: (π/4; π/2) va (5π/4; 3π/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-aylana-yoy",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#ba67ceba"
+    },
+    {
+      "q": "Anvar sin x > 3/2 tengsizligini yechmoqchi bo'ldi. Uning yechimi haqida qanday xulosa chiqarish to'g'ri bo'ladi?",
+      "v": [
+        "Tengsizlikning yechimi yo'q",
+        "Yechim faqat x = π/2 nuqtasidan iborat",
+        "Yechim (π/6 + 2πn; 5π/6 + 2πn) ko'rinishda",
+        "Yechim barcha haqiqiy sonlar to'plami"
+      ],
+      "t": 0,
+      "izoh": "Sinusning qiymatlari faqat −1 dan 1 gacha bo'lgan kesmada yotadi. 3/2 = 1,5 esa 1 dan katta son, demak sin x hech qachon undan katta bo'la olmaydi. Shuning uchun tengsizlik hech bir x da bajarilmaydi. Javob: tengsizlikning yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-yoq",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#85890250"
+    },
+    {
+      "q": "cos x ≥ −1 tengsizligining yechim to'plami haqida to'g'ri fikrni tanlang.",
+      "v": [
+        "Yechim faqat x = π + 2πn nuqtalari",
+        "Yechim barcha haqiqiy sonlardan iborat",
+        "Yechim (−π/2 + 2πn; π/2 + 2πn) oralig'i",
+        "Tengsizlikning yechimi mavjud emas"
+      ],
+      "t": 1,
+      "izoh": "Kosinusning qiymatlar sohasi [−1; 1] kesmasi, ya'ni u hech qachon −1 dan kichik bo'lmaydi. Demak cos x ≥ −1 sharti istalgan x da bajariladi, chegara holati esa x = π + 2πn da yuz beradi. Shu sababli yechim butun sonlar o'qi. Javob: barcha haqiqiy sonlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-yoq",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#31e562d5"
+    },
+    {
+      "q": "sin x ≤ −1 tengsizligining yechimi qanday to'plamdan iborat bo'lishini aniqlang.",
+      "v": [
+        "Yechim yo'q",
+        "(π + 2πn; 2π + 2πn), n ∈ Z",
+        "x = −π/2 + 2πn, n ∈ Z",
+        "x = π/2 + 2πn, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "Sinus −1 dan kichik bo'la olmaydi, shuning uchun tengsizlik faqat tenglik holatida bajariladi. sin x = −1 tenglamaning ildizlari x = −π/2 + 2πn ko'rinishida. Demak yechim oraliq emas, alohida nuqtalar to'plami. Javob: x = −π/2 + 2πn, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechim-yoq",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#ff0e5760"
+    },
+    {
+      "q": "sin x > 1/2 va cos x > 0 shartlarini bir vaqtda qanoatlantiruvchi x larni [0; 2π] kesmada toping.",
+      "v": [
+        "(0; π/2)",
+        "(π/6; 5π/6)",
+        "(π/2; 5π/6)",
+        "(π/6; π/2)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi shart [0; 2π] da (π/6; 5π/6) oralig'ini beradi. Ikkinchi shart esa kosinus musbat bo'lgan [0; π/2) va (3π/2; 2π] qismlarini ajratadi. Ikkalasining kesishmasi π/6 dan π/2 gacha bo'lgan oraliq. Javob: (π/6; π/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#eb8d27f1"
+    },
+    {
+      "q": "cos x ≤ 1/2 va sin x < 0 sistemasining [0; 2π] kesmadagi yechimini ko'rsating.",
+      "v": [
+        "(π; 5π/3]",
+        "[π/3; π)",
+        "(π; 2π)",
+        "[π/3; 5π/3]"
+      ],
+      "t": 0,
+      "izoh": "cos x ≤ 1/2 sharti [π/3; 5π/3] kesmasini beradi. sin x < 0 sharti esa (π; 2π) oralig'ini ajratadi. Ikki to'plamning umumiy qismi π dan 5π/3 gacha bo'lib, o'ng chegara birinchi shartga ko'ra yechimga kiradi. Javob: (π; 5π/3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#9956939e"
+    },
+    {
+      "q": "tg x > 1 va cos x < 0 shartlari birgalikda bajariladigan x larni [0; 2π] kesmada aniqlang.",
+      "v": [
+        "(π/4; π/2)",
+        "(5π/4; 3π/2)",
+        "(π/2; 3π/4)",
+        "(π; 5π/4)"
+      ],
+      "t": 1,
+      "izoh": "tg x > 1 sharti [0; 2π] da (π/4; π/2) va (5π/4; 3π/2) oraliqlarini beradi. cos x < 0 sharti esa (π/2; 3π/2) qismini talab qiladi. Faqat ikkinchi oraliq bu shartga to'liq mos keladi, ya'ni uchinchi chorakdagi qism. Javob: (5π/4; 3π/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#f33241b4"
+    },
+    {
+      "q": "sin x > a tengsizligi har qanday haqiqiy x uchun bajarilishi uchun a parametr qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a > 1",
+        "a ≤ −1",
+        "a < −1",
+        "a < 0"
+      ],
+      "t": 2,
+      "izoh": "Sinusning eng kichik qiymati −1 ga teng. Tengsizlik hamma joyda bajarilishi uchun a shu eng kichik qiymatdan ham kichik bo'lishi shart. a = −1 bo'lsa, x = −π/2 da tenglik chiqadi va qat'iy tengsizlik buziladi. Javob: a < −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#3c7e99c8"
+    },
+    {
+      "q": "cos x < a tengsizligi kamida bitta yechimga ega bo'lishi uchun a parametrga qanday shart qo'yiladi?",
+      "v": [
+        "a > 1",
+        "a < 1",
+        "a ≥ 1",
+        "a > −1"
+      ],
+      "t": 3,
+      "izoh": "Kosinusning eng kichik qiymati −1 ga teng va u x = π + 2πn da erishiladi. Tengsizlikning yechimi bo'lishi uchun a shu eng kichik qiymatdan katta bo'lishi kifoya. a = −1 bo'lsa, hech qayerda cos x < −1 bajarilmaydi. Javob: a > −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#f80a8d81"
+    },
+    {
+      "q": "sin x ≥ a tengsizligining yechimi oraliqlardan emas, faqat alohida nuqtalardan iborat bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a = 1",
+        "a = −1",
+        "a = 0",
+        "a > 1"
+      ],
+      "t": 0,
+      "izoh": "a = 1 bo'lganda shart sin x ≥ 1 ko'rinishini oladi va u faqat sin x = 1 bo'lganda bajariladi. Bu esa x = π/2 + 2πn alohida nuqtalarini beradi. a < 1 bo'lsa yechim oraliqlarga aylanadi, a > 1 bo'lsa yechim umuman qolmaydi. Javob: a = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#3b412425"
+    },
+    {
+      "q": "x = 4π/3 soni quyidagi to'rt tengsizlikdan qaysi birini qanoatlantiradi?",
+      "v": [
+        "sin x > 0",
+        "tg x > 1",
+        "cos x > 0",
+        "sin x > −1/2"
+      ],
+      "t": 1,
+      "izoh": "Bu burchak uchinchi chorakda yotadi: sin(4π/3) = −√3/2, cos(4π/3) = −1/2, tg(4π/3) = √3. Sinus va kosinus manfiy bo'lgani uchun birinchi, ikkinchi va to'rtinchi shartlar bajarilmaydi. √3 ≈ 1,73 esa 1 dan katta. Javob: tg x > 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "x-tekshirish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#b2df0695"
+    },
+    {
+      "q": "π/3, 5π/4, 2π/3 va 4π/3 sonlaridan qaysi biri tg x < 1 tengsizligini qanoatlantiradi?",
+      "v": [
+        "π/3",
+        "5π/4",
+        "2π/3",
+        "4π/3"
+      ],
+      "t": 2,
+      "izoh": "Tangens qiymatlarini hisoblaymiz: tg(π/3) = √3, tg(5π/4) = 1, tg(2π/3) = −√3, tg(4π/3) = √3. Faqat −√3 qiymati 1 dan kichik, 5π/4 da esa tenglik chiqadi va qat'iy tengsizlik bajarilmaydi. Javob: 2π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "x-tekshirish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#5501002a"
+    },
+    {
+      "q": "Aylanma charxpalak kabinasining yerdan balandligi h = 20 − 18cos(πt/6) metr, bu yerda t — harakat boshlangandan beri o'tgan daqiqalar. Kabina birinchi aylanishda qaysi oraliqda 29 m dan yuqorida bo'ladi?",
+      "v": [
+        "(2; 10) daqiqa",
+        "(6; 12) daqiqa",
+        "(4; 8) daqiqa",
+        "(0; 4) daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Shart 20 − 18cos(πt/6) > 29 dan −18cos(πt/6) > 9, ya'ni cos(πt/6) < −1/2 kelib chiqadi. Bundan πt/6 ∈ (2π/3; 4π/3), ikkala tomonni 6/π ga ko'paytiramiz. Natijada t ∈ (4; 8) daqiqa. Javob: (4; 8) daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-charxpalak",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#e7f567e6"
+    },
+    {
+      "q": "O'sha charxpalakda h = 20 − 18cos(πt/6) formula amal qiladi va bitta to'liq aylanish 12 daqiqa davom etadi. Kabina bir aylanishda necha daqiqa davomida 29 m dan baland bo'ladi?",
+      "v": [
+        "2 daqiqa",
+        "8 daqiqa",
+        "6 daqiqa",
+        "4 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Shart cos(πt/6) < −1/2 ko'rinishiga keltiriladi va u t ∈ (4; 8) oralig'ini beradi. Bu oraliqning uzunligi 8 − 4 = 4 daqiqa. Ya'ni har 12 daqiqalik aylanishning uchdan bir qismi shu balandlikdan yuqorida o'tadi. Javob: 4 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-charxpalak",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#fe245f91"
+    },
+    {
+      "q": "Bog'dagi charxpalakda kabinaning balandligi h = 15 + 12sin(πt/6) metr formula bilan beriladi, t daqiqada o'lchanadi. Kabina birinchi marta qaysi oraliqda 21 m dan yuqori bo'ladi?",
+      "v": [
+        "(1; 5) daqiqa",
+        "(3; 9) daqiqa",
+        "(5; 11) daqiqa",
+        "(0; 6) daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Shartni yozamiz: 15 + 12sin(πt/6) > 21, bundan 12sin(πt/6) > 6 va sin(πt/6) > 1/2. Sinus 1/2 dan katta bo'lgan yoy π/6 dan 5π/6 gacha, ya'ni πt/6 ∈ (π/6; 5π/6). Har uch qismni 6/π ga ko'paytiramiz va t ∈ (1; 5) chiqadi. Javob: (1; 5) daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-charxpalak",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#e0160810"
+    },
+    {
+      "q": "Portda suv sathi H = 6 + 4cos(πt/6) metr, bu yerda t — yarim tundan boshlab o'tgan soatlar. Yirik kema faqat sath 8 m dan kam bo'lmaganda kira oladi. Birinchi 12 soatda bu qaysi oraliqlarda mumkin?",
+      "v": [
+        "[2; 10] soat",
+        "[0; 2] va [10; 12] soat",
+        "[4; 8] soat",
+        "[0; 4] va [8; 12] soat"
+      ],
+      "t": 1,
+      "izoh": "6 + 4cos(πt/6) ≥ 8 dan 4cos(πt/6) ≥ 2, ya'ni cos(πt/6) ≥ 1/2 hosil bo'ladi. Bundan πt/6 ∈ [−π/3 + 2πk; π/3 + 2πk], ya'ni t ∈ [−2 + 12k; 2 + 12k]. Birinchi 12 soatga k = 0 dagi [0; 2] va k = 1 dagi [10; 12] bo'laklari tushadi. Javob: [0; 2] va [10; 12] soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-suv-sathi",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#0853decf"
+    },
+    {
+      "q": "O'sha portda H = 6 + 4cos(πt/6) formula amal qiladi va suv sathining to'liq davri 12 soat. Bir davrda sath 4 m dan past bo'lgan vaqt qancha davom etadi?",
+      "v": [
+        "8 soat",
+        "6 soat",
+        "4 soat",
+        "2 soat"
+      ],
+      "t": 2,
+      "izoh": "Shart 6 + 4cos(πt/6) < 4 dan cos(πt/6) < −1/2 ko'rinishiga keladi. Bundan πt/6 ∈ (2π/3; 4π/3), ya'ni t ∈ (4; 8) soat. Bu oraliqning uzunligi 8 − 4 = 4 soat, ya'ni davrning uchdan biri. Javob: 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-suv-sathi",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#accf43ae"
+    },
+    {
+      "q": "Sug'orish hovuzida suv sathi S = 180 + 60cos(πm/6) sm bo'lib, m — yil boshidan o'tgan oylar soni. Sath 210 sm dan past bo'ladigan oylar oralig'ini toping.",
+      "v": [
+        "(1; 5) oy",
+        "(6; 12) oy",
+        "(4; 8) oy",
+        "(2; 10) oy"
+      ],
+      "t": 3,
+      "izoh": "180 + 60cos(πm/6) < 210 dan 60cos(πm/6) < 30, ya'ni cos(πm/6) < 1/2 kelib chiqadi. Kosinus 1/2 dan kichik bo'lgan yoy π/3 dan 5π/3 gacha, demak πm/6 ∈ (π/3; 5π/3). Har uch qismni 6/π ga ko'paytirsak m ∈ (2; 10) bo'ladi. Javob: (2; 10) oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-suv-sathi",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#72a838b8"
+    },
+    {
+      "q": "Havo harorati T = 20 + 6cos(πt/12) daraja bo'lib, t — kunduzi soat 12:00 dan boshlab o'tgan soatlar. Harorat 17 darajadan past bo'ladigan t oralig'ini ko'rsating.",
+      "v": [
+        "(8; 16) soat",
+        "(4; 20) soat",
+        "(6; 18) soat",
+        "(10; 14) soat"
+      ],
+      "t": 0,
+      "izoh": "20 + 6cos(πt/12) < 17 tengsizlikdan 6cos(πt/12) < −3 va cos(πt/12) < −1/2 hosil bo'ladi. Kosinus uchun bu shart πt/12 ∈ (2π/3; 4π/3) ni beradi. Har uch qismni 12/π ga ko'paytiramiz: t ∈ (8; 16). Sanoq tush paytidan boshlangani uchun bu kechki soat 20:00 dan tungi soat 04:00 gacha bo'lgan payt. Javob: (8; 16) soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harorat",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#88111fa2"
+    },
+    {
+      "q": "Yuqoridagi T = 20 + 6cos(πt/12) modelda, bunda t soat 12:00 dan o'lchanadi, harorat sutkasiga necha soat davomida 17 darajadan past bo'lib turadi?",
+      "v": [
+        "6 soat",
+        "8 soat",
+        "12 soat",
+        "16 soat"
+      ],
+      "t": 1,
+      "izoh": "Shart cos(πt/12) < −1/2 ko'rinishiga keltirilib, t ∈ (8; 16) oralig'i topiladi. Bu oraliqning uzunligi 16 − 8 = 8 soat. Ya'ni sutkaning uchdan bir qismida havo shu chegaradan sovuqroq bo'ladi. Javob: 8 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harorat",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#fdbfe6e8"
+    },
+    {
+      "q": "Issiqxonada harorat T = 24 + 5sin(πt/12) daraja, bunda t — ertalabki soat 6:00 dan boshlab o'tgan soatlar. Pomidor uchun harorat 26,5 darajadan yuqori bo'lishi talab qilinadi. Bu shart qaysi t oralig'ida bajariladi?",
+      "v": [
+        "(4; 8) soat",
+        "(1; 5) soat",
+        "(2; 10) soat",
+        "(3; 9) soat"
+      ],
+      "t": 2,
+      "izoh": "24 + 5sin(πt/12) > 26,5 dan 5sin(πt/12) > 2,5, ya'ni sin(πt/12) > 1/2 kelib chiqadi. Sinus uchun bu πt/12 ∈ (π/6; 5π/6) ni bildiradi. Har uch qismni 12/π ga ko'paytirib t ∈ (2; 10) ni olamiz. Sanoq soat 6:00 dan boshlangani uchun bu ertalabki 08:00 dan kechki 16:00 gacha bo'lgan payt. Javob: (2; 10) soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harorat",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#a495fc1f"
+    },
+    {
+      "q": "Kun uzunligi L = 12 + 3sin(πm/6) soat formulasi bilan modellashtirilgan, bu yerda m — mart oyidan boshlab o'tgan oylar soni. Kun 13,5 soatdan uzun bo'ladigan oylar oralig'ini toping.",
+      "v": [
+        "(0; 6) oy",
+        "(2; 4) oy",
+        "(3; 9) oy",
+        "(1; 5) oy"
+      ],
+      "t": 3,
+      "izoh": "12 + 3sin(πm/6) > 13,5 dan 3sin(πm/6) > 1,5, ya'ni sin(πm/6) > 1/2 hosil bo'ladi. Bundan πm/6 ∈ (π/6; 5π/6) va har uch qismni 6/π ga ko'paytiramiz. Natijada m ∈ (1; 5), ya'ni aprel oyidan iyul oyigacha bo'lgan davr. Javob: (1; 5) oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kun-uzunligi",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#c772ea87"
+    },
+    {
+      "q": "L = 12 + 3sin(πm/6) modelda kun uzunligi 12 soatdan qisqa bo'lgan oylar oralig'i qanday bo'ladi?",
+      "v": [
+        "(6; 12) oy",
+        "(0; 6) oy",
+        "(7; 11) oy",
+        "(3; 9) oy"
+      ],
+      "t": 0,
+      "izoh": "12 + 3sin(πm/6) < 12 shartdan sin(πm/6) < 0 kelib chiqadi. Sinus manfiy bo'lgan yoy π dan 2π gacha, ya'ni πm/6 ∈ (π; 2π). Har uch qismni 6/π ga ko'paytiramiz va m ∈ (6; 12) hosil bo'ladi. Javob: (6; 12) oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kun-uzunligi",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#66d41b1c"
+    },
+    {
+      "q": "Xuddi shu L = 12 + 3sin(πm/6) modelda kun uzunligi 10,5 soatdan ham qisqa bo'ladigan oylarni aniqlang.",
+      "v": [
+        "(6; 12) oy",
+        "(7; 11) oy",
+        "(8; 10) oy",
+        "(5; 9) oy"
+      ],
+      "t": 1,
+      "izoh": "12 + 3sin(πm/6) < 10,5 dan 3sin(πm/6) < −1,5, ya'ni sin(πm/6) < −1/2 hosil bo'ladi. Sinus uchun bu shart πm/6 ∈ (7π/6; 11π/6) ni beradi. Har uch qismni 6/π ga ko'paytirsak m ∈ (7; 11) chiqadi, ya'ni eng qisqa kunlar shu oralig'da. Javob: (7; 11) oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-kun-uzunligi",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#9c16254c"
+    },
+    {
+      "q": "Prujinaga osilgan yukning muvozanat holatidan siljishi y = 10sin(πt/6) sm, t sekundda o'lchanadi. Yuk qaysi vaqt oralig'ida 5√2 sm dan yuqorida bo'ladi?",
+      "v": [
+        "(1; 5) sekund",
+        "(2; 4) sekund",
+        "(1,5; 4,5) sekund",
+        "(0,5; 5,5) sekund"
+      ],
+      "t": 2,
+      "izoh": "10sin(πt/6) > 5√2 dan sin(πt/6) > √2/2 kelib chiqadi. Sinus √2/2 dan katta bo'lgan yoy π/4 dan 3π/4 gacha, demak πt/6 ∈ (π/4; 3π/4). Har uch qismni 6/π ga ko'paytiramiz: t ∈ (1,5; 4,5). Javob: (1,5; 4,5) sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tebranish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#e6a2b922"
+    },
+    {
+      "q": "Namoyish mayatnigining tik holatdan og'ish burchagi α = 12cos(πt/3) daraja, t sekundda beriladi. Birinchi 6 sekundda burchak 6 darajadan katta bo'lgan vaqtlarni ko'rsating.",
+      "v": [
+        "(2; 4) sekund",
+        "(1; 5) sekund",
+        "[0; 2) va (4; 6] sekund",
+        "[0; 1) va (5; 6] sekund"
+      ],
+      "t": 3,
+      "izoh": "12cos(πt/3) > 6 dan cos(πt/3) > 1/2 hosil bo'ladi, bu esa πt/3 ∈ (−π/3 + 2πk; π/3 + 2πk) demakdir. Har uch qismni 3/π ga ko'paytirsak t ∈ (−1 + 6k; 1 + 6k) chiqadi. Birinchi 6 sekundga bu oraliqlarning [0; 1) va (5; 6] qismlari tushadi. Javob: [0; 1) va (5; 6] sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tebranish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#495bf41f"
+    },
+    {
+      "q": "y = 10sin(πt/6) tebranishning to'liq davri 12 sekund. Bitta davrda siljish 5 sm dan katta bo'lib turadigan vaqt qancha?",
+      "v": [
+        "2 sekund",
+        "4 sekund",
+        "6 sekund",
+        "8 sekund"
+      ],
+      "t": 1,
+      "izoh": "10sin(πt/6) > 5 shartdan sin(πt/6) > 1/2, ya'ni πt/6 ∈ (π/6; 5π/6) kelib chiqadi. Bundan t ∈ (1; 5) sekund topiladi. Oraliqning uzunligi 5 − 1 = 4 sekund, ya'ni davrning uchdan biri. Javob: 4 sekund.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tebranish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#ae6fe082"
+    },
+    {
+      "q": "Rozetkadagi kuchlanish U = 310sin(100πt) volt qonuniyat bilan o'zgaradi. Bir davrning qancha ulushida kuchlanish 155 V dan katta bo'ladi?",
+      "v": [
+        "Davrning uchdan bir qismida",
+        "Davrning to'rtdan bir qismida",
+        "Davrning yarmida",
+        "Davrning oltidan bir qismida"
+      ],
+      "t": 0,
+      "izoh": "310sin(100πt) > 155 shartdan sin(100πt) > 1/2 kelib chiqadi. Sinus argumenti uchun bu yoy π/6 dan 5π/6 gacha, uzunligi esa 2π/3. Butun davr 2π bo'lgani uchun ulush (2π/3) : (2π) = 1/3 ga teng. Javob: davrning uchdan bir qismida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-kuchlanish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#c1327f14"
+    },
+    {
+      "q": "Laboratoriya generatori U = 220sin(πt/6) volt kuchlanish beradi, t millisekundda o'lchanadi. Kuchlanish 110√3 V dan kam bo'lmaydigan vaqt oralig'ini toping.",
+      "v": [
+        "[1; 5] ms",
+        "[1,5; 4,5] ms",
+        "[2; 4] ms",
+        "[3; 6] ms"
+      ],
+      "t": 2,
+      "izoh": "220sin(πt/6) ≥ 110√3 dan sin(πt/6) ≥ √3/2 hosil bo'ladi. Sinus √3/2 dan kam bo'lmaydigan yoy π/3 dan 2π/3 gacha, ya'ni πt/6 ∈ [π/3; 2π/3]. Har uch qismni 6/π ga ko'paytiramiz: t ∈ [2; 4]. Javob: [2; 4] ms.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-kuchlanish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#c3ff20c3"
+    },
+    {
+      "q": "O'sha U = 220sin(πt/6) generatorda bitta to'liq davr 12 ms davom etadi. Shu davrda kuchlanish 110 V dan yuqori bo'lgan vaqt qancha bo'ladi?",
+      "v": [
+        "2 ms",
+        "4 ms",
+        "6 ms",
+        "8 ms"
+      ],
+      "t": 1,
+      "izoh": "220sin(πt/6) > 110 shartdan sin(πt/6) > 1/2 kelib chiqadi va πt/6 ∈ (π/6; 5π/6) bo'ladi. Bundan t ∈ (1; 5) ms topiladi, oraliq uzunligi esa 5 − 1 = 4 ms. Bu 12 ms lik davrning uchdan bir qismiga teng. Javob: 4 ms.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kuchlanish",
+      "id": "matematika_trig_m13-trigonometrik-tengsizliklar#9c883e44"
+    }
+  ]
+}

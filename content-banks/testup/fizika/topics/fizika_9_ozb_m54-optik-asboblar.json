@@ -1,0 +1,456 @@
+{
+  "nom": "54-mavzu. Optik Asboblar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Lupa nima?",
+      "v": [
+        "Buyumlarni ko'rish burchagini kattalashtirib beradigan kichik fokus masofali qavariq linza",
+        "Uzoq buyumlarni kichraytirib ko'rsatadigan botiq linza",
+        "Nurni qaytaruvchi tekis oynak",
+        "Yorug'likni sochuvchi prizma"
+      ],
+      "t": 0,
+      "izoh": "Lupa — buyumlarni ko'rish burchagini kattalashtirib beradigan kichik fokus masofali qavariq linza.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#ac57f9b7"
+    },
+    {
+      "q": "Ko'zimizning eng yaxshi ko'rish masofasi qancha?",
+      "v": [
+        "25 sm atrofida",
+        "10 sm atrofida",
+        "50 sm atrofida",
+        "1 m atrofida"
+      ],
+      "t": 0,
+      "izoh": "Ko'zning eng yaxshi ko'rish masofasi D0 = 25 sm atrofida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#09cd9927"
+    },
+    {
+      "q": "Buyum eng yaxshi ko'rish masofasidan (D0 = 25 sm) yaqinroqqa olib kelinganda nima kuzatiladi?",
+      "v": [
+        "Ko'z buyumdagi mayda narsalarni ilg'ay olmay qoladi",
+        "Buyum tasviri yanada aniqroq ko'rinadi",
+        "Ko'rish burchagi nolga teng bo'ladi",
+        "Buyum ikki marta kattalashib ko'rinadi"
+      ],
+      "t": 0,
+      "izoh": "Masofa D0 dan kamayganda ko'zimiz buyumdagi mayda narsalarni ilg'ay olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m54-optik-asboblar#0b57c08f"
+    },
+    {
+      "q": "Lupa qo'llaganda buyumning qanday tasviri ko'rinadi?",
+      "v": [
+        "Kattalashgan tasviri",
+        "Kichraygan tasviri",
+        "To'nkarilgan tasviri",
+        "O'lchami o'zgarmagan tasviri"
+      ],
+      "t": 0,
+      "izoh": "Buyum bilan ko'z orasiga lupa qo'yilsa, D0 masofada buyumning kattalashgan tasviri ko'rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#d02696f0"
+    },
+    {
+      "q": "Lupaning kattalashtirishi qaysi formula bilan aniqlanadi?",
+      "v": [
+        "K = D0/F",
+        "K = F/D0",
+        "K = D0·F",
+        "K = d/f"
+      ],
+      "t": 0,
+      "izoh": "Lupaning kattalashtirishi K = D0/F formula bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m54-optik-asboblar#19fa8e60"
+    },
+    {
+      "q": "Lupalarning fokus masofasi odatda qanday oraliqda bo'ladi?",
+      "v": [
+        "1–10 sm",
+        "10–50 sm",
+        "0,1–1 mm",
+        "1–2 m"
+      ],
+      "t": 0,
+      "izoh": "Lupalarning fokus masofasi odatda 1–10 sm bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#c909763b"
+    },
+    {
+      "q": "Lupa buyumlarni necha marta kattalashtirib ko'rsatadi?",
+      "v": [
+        "2,5–25 marta",
+        "100–1000 marta",
+        "50–100 marta",
+        "1,1–1,5 marta"
+      ],
+      "t": 0,
+      "izoh": "D0 = 25 sm atrofida ekanini hisobga olsak, lupa buyumlarni 2,5–25 marta kattalashtirib ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#62599847"
+    },
+    {
+      "q": "Fokus masofasi 2,5 sm bo'lgan lupa buyumni necha marta kattalashtirib ko'rsatadi? (D0 = 25 sm)",
+      "v": [
+        "10 marta",
+        "0,1 marta",
+        "27,5 marta",
+        "62,5 marta"
+      ],
+      "t": 0,
+      "izoh": "K = D0/F = 25/2,5 = 10 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m54-optik-asboblar#ad3b5216"
+    },
+    {
+      "q": "Buyumni 20 marta kattalashtirib ko'rsata oladigan lupaning fokus masofasi qancha? (D0 = 25 sm)",
+      "v": [
+        "1,25 sm",
+        "500 sm",
+        "20 sm",
+        "5 sm"
+      ],
+      "t": 0,
+      "izoh": "F = D0/K = 25/20 = 1,25 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m54-optik-asboblar#2143f6c3"
+    },
+    {
+      "q": "Fotoapparat nima?",
+      "v": [
+        "Obyektning tasvirini fotoplyonka, fotoplastina yoki foto qog'ozga tushirib, saqlaydigan qilib beradigan asbob",
+        "Buyumni kattalashtirib ko'rsatadigan linza",
+        "Uzoq jismlarni kuzatuvchi ko'zgu",
+        "Nur oqimini o'lchovchi asbob"
+      ],
+      "t": 0,
+      "izoh": "Fotoapparat — obyektning tasvirini fotoplyonka, fotoplastina yoki foto qog'ozga tushirib, saqlaydigan qilib beradigan asbob.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#11e9c057"
+    },
+    {
+      "q": "Fotoapparatning asosiy qismi nimadan iborat?",
+      "v": [
+        "Kamera K va unda joylashgan obyektiv O dan",
+        "Lupa va ekran dan",
+        "Ko'zgu va prizma dan",
+        "Okulyar va masshtab dan"
+      ],
+      "t": 0,
+      "izoh": "Fotoapparatning asosiy qismi kamera K va unda joylashgan obyektiv O dan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#b64f5cc5"
+    },
+    {
+      "q": "Fotoapparat obyektividagi linza kamera ekranida buyumning qanday tasvirini hosil qiladi?",
+      "v": [
+        "Teskari, haqiqiy va kichraygan",
+        "To'g'ri, mavhum va kattalashgan",
+        "Teskari, mavhum va kattalashgan",
+        "To'g'ri, haqiqiy va teng o'lchamli"
+      ],
+      "t": 0,
+      "izoh": "Obyektivdagi linza kamera ekranida buyumning teskari, haqiqiy va kichraygan tasvirini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#d1d4ab0a"
+    },
+    {
+      "q": "Fotoapparatda buyum tasvirini saqlab qolish uchun kamera ekraniga nima joylashtiriladi?",
+      "v": [
+        "Yorug'lik ta'sirida tasvirni hosil qiladigan va saqlab qoladigan maxsus fotoemulsiya qoplangan fotoplyonka",
+        "Oddiy oq qog'oz",
+        "Shisha plastina",
+        "Metall folga"
+      ],
+      "t": 0,
+      "izoh": "Kamera ekraniga yorug'lik ta'sirida tasvirni hosil qiladigan va saqlab qoladigan maxsus fotoemulsiya qoplangan fotoplyonka joylashtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#d7a72dce"
+    },
+    {
+      "q": "Elektron (raqamli) fotokameralarda fotoplyonka o'rniga nima o'rnatiladi?",
+      "v": [
+        "Maxsus sezgir element",
+        "Fotoemulsiya",
+        "Tekis oynak",
+        "Yarim o'tkazuvchi shisha"
+      ],
+      "t": 0,
+      "izoh": "Elektron fotokameralarda fotoplyonka o'rniga maxsus sezgir element o'rnatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#cb6814ae"
+    },
+    {
+      "q": "Piksel so'zi qayerdan olingan va nimani anglatadi?",
+      "v": [
+        "Inglizcha picture element so'zlaridan olingan bo'lib, tasvir elementi degan ma'noni bildiradi",
+        "Lotincha pix (nuqta) so'zidan olingan, rang degan ma'noni bildiradi",
+        "Yunoncha pixel (yorug'lik) so'zidan olingan",
+        "Fransuzcha pic (kichik) so'zidan olingan, kamera degan ma'noni bildiradi"
+      ],
+      "t": 0,
+      "izoh": "Piksel — inglizcha picture element so'zlaridan olingan bo'lib, tasvir elementi degan ma'noni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#d1b8aa8b"
+    },
+    {
+      "q": "Fotoapparat pikseli qancha katta bo'lsa, olingan tasvir qanday bo'ladi?",
+      "v": [
+        "Sifatli bo'ladi",
+        "Xira bo'ladi",
+        "Kichik bo'ladi",
+        "Rangsiz bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Fotoapparatning pikseli qancha katta bo'lsa, olingan tasvir sifatli bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#0a354eeb"
+    },
+    {
+      "q": "Eng yaxshi fotoapparatlarning tasvirni qayd qiluvchi elementi qancha pikselni tashkil qiladi?",
+      "v": [
+        "Bir necha o'n mega pikselni",
+        "Bir necha yuz pikselni",
+        "Bir necha ming pikselni",
+        "Bir milliard pikselni"
+      ],
+      "t": 0,
+      "izoh": "Eng yaxshi fotoapparatning tasvirni qayd qiluvchi elementi bir necha o'n mega pikselni tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#f0fc4a1b"
+    },
+    {
+      "q": "Mikroskop nima?",
+      "v": [
+        "Yaqin masofadagi ko'zga bevosita ko'rinmaydigan juda mayda obyektlarni kattalashtirib ko'rsatadigan optik asbob",
+        "Uzoq osmon jismlarini kuzatuvchi asbob",
+        "Buyum tasvirini qog'ozga tushiruvchi asbob",
+        "Nur to'lqin uzunligini o'lchovchi asbob"
+      ],
+      "t": 0,
+      "izoh": "Mikroskop — yaqin masofadagi ko'zga bevosita ko'rinmaydigan juda mayda obyektlarni kattalashtirib ko'rsatadigan optik asbob.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#e2105761"
+    },
+    {
+      "q": "Mikroskopdan qanday obyektlarni kuzatish uchun foydalaniladi?",
+      "v": [
+        "Bakteriyalar, hujayralar kabi mayda obyektlarni",
+        "Sayyoralarni",
+        "Bulutlarni",
+        "Tog' tizmalarni"
+      ],
+      "t": 0,
+      "izoh": "Mikroskopdan bakteriyalar, hujayralar kabi mayda obyektlarni kuzatish uchun ham foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#a66cf842"
+    },
+    {
+      "q": "Mikroskopda obyektivdagi linza yordamida buyumning qanday tasviri hosil qilinadi?",
+      "v": [
+        "Teskari, haqiqiy va kattalashgan tasviri",
+        "To'g'ri, mavhum va kattalashgan tasviri",
+        "Kichraygan haqiqiy tasviri",
+        "Nuqtasimon tasviri"
+      ],
+      "t": 0,
+      "izoh": "Obyektivdagi L1 linza yordamida AB buyumning teskari, haqiqiy va kattalashgan A'B' tasviri hosil qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m54-optik-asboblar#2c98a950"
+    },
+    {
+      "q": "Mikroskopning okulyaridagi L2 linza qanday vazifani bajaradi?",
+      "v": [
+        "Lupa kabi ko'rish burchagini oshirib beradi",
+        "Tasvirni kichraytiradi",
+        "Nurni to'liq qaytaradi",
+        "Tasvirni qog'ozga tushiradi"
+      ],
+      "t": 0,
+      "izoh": "Mikroskopning okulyaridagi L2 linza lupa kabi ko'rish burchagini oshirib beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#78fef448"
+    },
+    {
+      "q": "Mikroskopning kattalashtirishi qaysi formula bilan aniqlanadi?",
+      "v": [
+        "K = l·D0/(F1·F2)",
+        "K = F1·F2/(l·D0)",
+        "K = D0/F1",
+        "K = l/(F1 + F2)"
+      ],
+      "t": 0,
+      "izoh": "Mikroskopning kattalashtirishi K = l·D0/(F1·F2) formula bilan aniqlanadi; l — linzalar orasidagi masofa, F1 va F2 — linzalarning fokus masofasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m54-optik-asboblar#4a8e3676"
+    },
+    {
+      "q": "Mikroskop kattalashtirish formulasidagi l harfi nimani bildiradi?",
+      "v": [
+        "Linzalar orasidagi masofani",
+        "Linzaning diametrini",
+        "Buyumning uzunligini",
+        "Kameraning chuqurligini"
+      ],
+      "t": 0,
+      "izoh": "l — linzalar orasidagi masofa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#e452fd36"
+    },
+    {
+      "q": "Takomillashtirilgan mikroskoplar ko'z ilg'amaydigan mayda obyektlarni necha martagacha kattalashtirib ko'rish mumkin?",
+      "v": [
+        "3 ming martagacha",
+        "10 martagacha",
+        "100 martagacha",
+        "1 million martagacha"
+      ],
+      "t": 0,
+      "izoh": "Takomillashtirilgan bunday mikroskoplar yordamida ko'z ilg'amaydigan mayda obyektlarni 3 ming martagacha kattalashtirib ko'rish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#ded192dd"
+    },
+    {
+      "q": "Keyingi yillarda yaratilgan maxsus mikroskoplarning kattalashtirish koeffitsiyenti qanchaga yetadi?",
+      "v": [
+        "100 minggacha",
+        "3 minggacha",
+        "10 minggacha",
+        "1 millionga"
+      ],
+      "t": 0,
+      "izoh": "Keyingi yillarda yaratilgan maxsus mikroskoplarning kattalashtirish koeffitsiyenti 100 minggacha bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#0c1a433d"
+    },
+    {
+      "q": "Mikroskop linzalarining fokus masofalari mos ravishda 1,5 sm va 2,5 sm, linzalar orasidagi masofa 30 sm. Bunday mikroskop obyektni necha marta kattalashtiradi? (D0 = 25 sm)",
+      "v": [
+        "200 marta",
+        "750 marta",
+        "60 marta",
+        "2000 marta"
+      ],
+      "t": 0,
+      "izoh": "K = l·D0/(F1·F2) = 30·25/(1,5·2,5) = 750/3,75 = 200 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m54-optik-asboblar#6c59e6dc"
+    },
+    {
+      "q": "Birinchi fotoapparat obyektivining fokus masofasi 5 sm, ikkinchisiniki 4 sm. Bir xil masofadan turib bitta obyekt suratga olinganda qaysi fotoapparatda surat kattaroq chiqadi?",
+      "v": [
+        "Fokus masofasi 5 sm bo'lgan fotoapparatda",
+        "Fokus masofasi 4 sm bo'lgan fotoapparatda",
+        "Ikkalasida bir xil",
+        "Faqat plyonka turiga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Fokus masofasi kattaroq obyektiv tasvirni kattaroq hosil qiladi, shuning uchun 5 sm fokusli fotoapparatda surat kattaroq chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m54-optik-asboblar#e1d2bd2f"
+    },
+    {
+      "q": "Lupa ostida buyum sirtdagi mayda narsalar qanday ko'rinadi?",
+      "v": [
+        "Kattalashgan holda",
+        "Kichraygan holda",
+        "To'nkarilgan holda",
+        "Rangi o'zgargan holda"
+      ],
+      "t": 0,
+      "izoh": "Lupa ostida buyum sirtdagi mayda narsalar ham kattalashgan holda ko'rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#fe5bb623"
+    },
+    {
+      "q": "Plyonkali fotoapparatlar o'rnini zamonaviy qanday kameralar egalladi?",
+      "v": [
+        "Elektron (raqamli) fotokameralar",
+        "Suyuq plyonkali kameralar",
+        "Oynak kameralar",
+        "Teleskop kameralar"
+      ],
+      "t": 0,
+      "izoh": "Fan va texnika taraqqiyoti natijasida plyonkali fotoapparatlar o'rnini zamonaviy elektron (raqamli) fotokameralar egalladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m54-optik-asboblar#a6bdc597"
+    },
+    {
+      "q": "Mikroskopning obyektiviga qaralganda L1 linza hosil qilgan A'B' tasvir qayerda yana kattalashgan holda ko'rinadi?",
+      "v": [
+        "Ko'zning eng yaxshi ko'rish masofasi bo'lgan D0 uzoqlikda",
+        "Fokus nuqtasida",
+        "Linza sirtida",
+        "Cheksiz uzoqlikda"
+      ],
+      "t": 0,
+      "izoh": "Mikroskopning obyektiviga qaralganda L1 linza hosil qilgan A'B' tasvir ko'zning eng yaxshi ko'rish masofasi bo'lgan D0 uzoqlikda yanada kattalashgan A''B'' holda ko'rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m54-optik-asboblar#47e51381"
+    }
+  ]
+}

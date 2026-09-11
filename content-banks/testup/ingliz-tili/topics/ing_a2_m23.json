@@ -1,0 +1,1306 @@
+{
+  "nom": "Housing (Uy-joy)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "'flat' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "mehmonxona",
+        "yotoqxona",
+        "kvartira",
+        "devor"
+      ],
+      "t": 2,
+      "izoh": "flat = kvartira.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#44a2b7ef"
+    },
+    {
+      "q": "'kvartira' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "share a flat",
+        "garden",
+        "wall",
+        "flat"
+      ],
+      "t": 3,
+      "izoh": "kvartira = flat.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#5a3fd017"
+    },
+    {
+      "q": "Which word means: a set of rooms for living in, usually on one floor of a building?",
+      "v": [
+        "furniture",
+        "flat",
+        "garage",
+        "house"
+      ],
+      "t": 1,
+      "izoh": "flat = kvartira.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#c3a01fb4"
+    },
+    {
+      "q": "We live in a small ___ on the third floor.",
+      "v": [
+        "floor",
+        "roof",
+        "upstairs",
+        "flat"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: flat (kvartira).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#075939fe"
+    },
+    {
+      "q": "You live on one floor of a big building, not a whole house. It is a ___.",
+      "v": [
+        "living room",
+        "wall",
+        "floor",
+        "flat"
+      ],
+      "t": 3,
+      "izoh": "Bu flat — kvartira.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#b7a1aa6a"
+    },
+    {
+      "q": "'house' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "pastki qavatda",
+        "uy",
+        "mehmonxona",
+        "hammom"
+      ],
+      "t": 1,
+      "izoh": "house = uy.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#bdc3b1d5"
+    },
+    {
+      "q": "'uy' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "house",
+        "bedroom",
+        "roof",
+        "move house"
+      ],
+      "t": 0,
+      "izoh": "uy = house.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#aa11cbc8"
+    },
+    {
+      "q": "Which word means: a building for people to live in, usually for one family?",
+      "v": [
+        "share a flat",
+        "roof",
+        "house",
+        "upstairs"
+      ],
+      "t": 2,
+      "izoh": "house = uy.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#fc68c34d"
+    },
+    {
+      "q": "They bought a big ___ with a garden.",
+      "v": [
+        "house",
+        "wall",
+        "move house",
+        "flat"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob: house (uy).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#a7f7977c"
+    },
+    {
+      "q": "A building for one family, often with two floors and a garden. It is a ___.",
+      "v": [
+        "house",
+        "bedroom",
+        "landlord",
+        "balcony"
+      ],
+      "t": 0,
+      "izoh": "Bu house — uy.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#5940d9ad"
+    },
+    {
+      "q": "'rent' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "yuqori qavatda",
+        "ijara haqi",
+        "kvartirani birga ijaraga olmoq",
+        "balkon"
+      ],
+      "t": 1,
+      "izoh": "rent = ijara haqi.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#ffd172e1"
+    },
+    {
+      "q": "'ijara haqi' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "neighbour",
+        "rent",
+        "roof",
+        "downstairs"
+      ],
+      "t": 1,
+      "izoh": "ijara haqi = rent.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#25a9c313"
+    },
+    {
+      "q": "Which word means: money you pay regularly to live in a place you do not own?",
+      "v": [
+        "downstairs",
+        "neighbour",
+        "landlord",
+        "rent"
+      ],
+      "t": 3,
+      "izoh": "rent = ijara haqi.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#67491473"
+    },
+    {
+      "q": "How much ___ do you pay every month?",
+      "v": [
+        "neighbour",
+        "rent",
+        "bathroom",
+        "floor"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: rent (ijara haqi).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#46dc293e"
+    },
+    {
+      "q": "You do not own the flat and pay money to the owner every month. That money is the ___.",
+      "v": [
+        "move house",
+        "landlord",
+        "bedroom",
+        "rent"
+      ],
+      "t": 3,
+      "izoh": "Bu rent — ijara haqi.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#e9f0811e"
+    },
+    {
+      "q": "'landlord' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "qo'shni",
+        "uy egasi",
+        "pastki qavatda",
+        "ijara haqi"
+      ],
+      "t": 1,
+      "izoh": "landlord = uy egasi.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#45750b3e"
+    },
+    {
+      "q": "'uy egasi' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "share a flat",
+        "living room",
+        "landlord",
+        "house"
+      ],
+      "t": 2,
+      "izoh": "uy egasi = landlord.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#4fcd2116"
+    },
+    {
+      "q": "Which word means: a person who owns a house or flat and lets other people live in it for money?",
+      "v": [
+        "floor",
+        "furniture",
+        "garage",
+        "landlord"
+      ],
+      "t": 3,
+      "izoh": "landlord = uy egasi.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#bfcd7e25"
+    },
+    {
+      "q": "Our ___ fixed the broken window quickly.",
+      "v": [
+        "bathroom",
+        "furniture",
+        "house",
+        "landlord"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: landlord (uy egasi).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#9d2b0a4e"
+    },
+    {
+      "q": "The person who owns your flat and takes money from you every month is your ___.",
+      "v": [
+        "landlord",
+        "wall",
+        "share a flat",
+        "garage"
+      ],
+      "t": 0,
+      "izoh": "Bu landlord — uy egasi.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#1a723b54"
+    },
+    {
+      "q": "'furniture' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "mebel",
+        "kvartirani birga ijaraga olmoq",
+        "yotoqxona",
+        "garaj"
+      ],
+      "t": 0,
+      "izoh": "furniture = mebel.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#f9dff4ca"
+    },
+    {
+      "q": "'mebel' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "share a flat",
+        "furniture",
+        "neighbour",
+        "wall"
+      ],
+      "t": 1,
+      "izoh": "mebel = furniture.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#dfb79bb9"
+    },
+    {
+      "q": "Which word means: things like tables, chairs and beds that you put in a room?",
+      "v": [
+        "bedroom",
+        "garden",
+        "furniture",
+        "floor"
+      ],
+      "t": 2,
+      "izoh": "furniture = mebel.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#9203ef8c"
+    },
+    {
+      "q": "The new flat is empty, so we need to buy some ___.",
+      "v": [
+        "neighbour",
+        "bedroom",
+        "furniture",
+        "floor"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: furniture (mebel).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#6767e7b9"
+    },
+    {
+      "q": "Tables, chairs, beds and sofas together are called ___.",
+      "v": [
+        "balcony",
+        "garage",
+        "share a flat",
+        "furniture"
+      ],
+      "t": 3,
+      "izoh": "Bu furniture — mebel.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#ad5d7d09"
+    },
+    {
+      "q": "'upstairs' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "devor",
+        "yuqori qavatda",
+        "garaj",
+        "uy"
+      ],
+      "t": 1,
+      "izoh": "upstairs = yuqori qavatda.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#b3223479"
+    },
+    {
+      "q": "'yuqori qavatda' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "bathroom",
+        "landlord",
+        "share a flat",
+        "upstairs"
+      ],
+      "t": 3,
+      "izoh": "yuqori qavatda = upstairs.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#36caef62"
+    },
+    {
+      "q": "Which word means: on or to a higher floor of a building?",
+      "v": [
+        "balcony",
+        "upstairs",
+        "move house",
+        "floor"
+      ],
+      "t": 1,
+      "izoh": "upstairs = yuqori qavatda.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#c9b4f111"
+    },
+    {
+      "q": "The bedrooms are ___ and the kitchen is on the ground floor.",
+      "v": [
+        "wall",
+        "bathroom",
+        "roof",
+        "upstairs"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: upstairs (yuqori qavatda).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#05482760"
+    },
+    {
+      "q": "You go up the stairs to reach your room, so your room is ___.",
+      "v": [
+        "bathroom",
+        "upstairs",
+        "kitchen",
+        "roof"
+      ],
+      "t": 1,
+      "izoh": "Bu upstairs — yuqori qavatda.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#3ac15282"
+    },
+    {
+      "q": "'downstairs' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "uy egasi",
+        "pastki qavatda",
+        "devor",
+        "kvartira"
+      ],
+      "t": 1,
+      "izoh": "downstairs = pastki qavatda.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#a6d2587a"
+    },
+    {
+      "q": "'pastki qavatda' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "downstairs",
+        "roof",
+        "bathroom",
+        "garden"
+      ],
+      "t": 0,
+      "izoh": "pastki qavatda = downstairs.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#628aedf1"
+    },
+    {
+      "q": "Which word means: on or to a lower floor of a building?",
+      "v": [
+        "neighbour",
+        "house",
+        "downstairs",
+        "share a flat"
+      ],
+      "t": 2,
+      "izoh": "downstairs = pastki qavatda.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#05690235"
+    },
+    {
+      "q": "Please come ___ for dinner.",
+      "v": [
+        "rent",
+        "downstairs",
+        "living room",
+        "move house"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: downstairs (pastki qavatda).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#ca974542"
+    },
+    {
+      "q": "The kitchen is on the lower floor, so you go ___ to reach it.",
+      "v": [
+        "downstairs",
+        "kitchen",
+        "floor",
+        "balcony"
+      ],
+      "t": 0,
+      "izoh": "Bu downstairs — pastki qavatda.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#59ba36af"
+    },
+    {
+      "q": "'garden' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "oshxona",
+        "bog'cha (hovli bog'i)",
+        "boshqa uyga ko'chmoq",
+        "pastki qavatda"
+      ],
+      "t": 1,
+      "izoh": "garden = bog'cha (hovli bog'i).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#aeec6b12"
+    },
+    {
+      "q": "'bog'cha (hovli bog'i)' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "rent",
+        "balcony",
+        "garden",
+        "living room"
+      ],
+      "t": 2,
+      "izoh": "bog'cha (hovli bog'i) = garden.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#f2c972d4"
+    },
+    {
+      "q": "Which word means: an area of ground next to a house for grass, plants and flowers?",
+      "v": [
+        "share a flat",
+        "neighbour",
+        "rent",
+        "garden"
+      ],
+      "t": 3,
+      "izoh": "garden = bog'cha (hovli bog'i).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#e6376bf9"
+    },
+    {
+      "q": "The children are playing in the ___.",
+      "v": [
+        "floor",
+        "wall",
+        "balcony",
+        "garden"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: garden (bog'cha (hovli bog'i)).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#d2992f02"
+    },
+    {
+      "q": "The green area with grass and flowers next to the house is the ___.",
+      "v": [
+        "house",
+        "bedroom",
+        "balcony",
+        "garden"
+      ],
+      "t": 3,
+      "izoh": "Bu garden — bog'cha (hovli bog'i).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#fef4c868"
+    },
+    {
+      "q": "'neighbour' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "bog'cha (hovli bog'i)",
+        "qo'shni",
+        "uy",
+        "mehmonxona"
+      ],
+      "t": 1,
+      "izoh": "neighbour = qo'shni.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#9fc9e420"
+    },
+    {
+      "q": "'qo'shni' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "rent",
+        "house",
+        "neighbour",
+        "balcony"
+      ],
+      "t": 2,
+      "izoh": "qo'shni = neighbour.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#20a7ee15"
+    },
+    {
+      "q": "Which word means: a person who lives near you or next to you?",
+      "v": [
+        "bathroom",
+        "flat",
+        "neighbour",
+        "floor"
+      ],
+      "t": 2,
+      "izoh": "neighbour = qo'shni.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#4aac17de"
+    },
+    {
+      "q": "My ___ next door is very friendly.",
+      "v": [
+        "balcony",
+        "neighbour",
+        "move house",
+        "landlord"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: neighbour (qo'shni).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#b35c2fbe"
+    },
+    {
+      "q": "The person who lives in the flat next to yours is your ___.",
+      "v": [
+        "roof",
+        "garden",
+        "kitchen",
+        "neighbour"
+      ],
+      "t": 3,
+      "izoh": "Bu neighbour — qo'shni.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#feafbcde"
+    },
+    {
+      "q": "'kitchen' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "oshxona",
+        "uy",
+        "yuqori qavatda",
+        "devor"
+      ],
+      "t": 0,
+      "izoh": "kitchen = oshxona.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#5d35a414"
+    },
+    {
+      "q": "'oshxona' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "rent",
+        "balcony",
+        "roof",
+        "kitchen"
+      ],
+      "t": 3,
+      "izoh": "oshxona = kitchen.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#3da4759b"
+    },
+    {
+      "q": "Which word means: a room where you cook food and wash the dishes?",
+      "v": [
+        "landlord",
+        "upstairs",
+        "downstairs",
+        "kitchen"
+      ],
+      "t": 3,
+      "izoh": "kitchen = oshxona.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#70faa928"
+    },
+    {
+      "q": "Mum is cooking dinner in the ___.",
+      "v": [
+        "kitchen",
+        "living room",
+        "share a flat",
+        "move house"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob: kitchen (oshxona).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#a35db620"
+    },
+    {
+      "q": "The room where you cook food and wash the plates is the ___.",
+      "v": [
+        "rent",
+        "neighbour",
+        "landlord",
+        "kitchen"
+      ],
+      "t": 3,
+      "izoh": "Bu kitchen — oshxona.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#2d42076a"
+    },
+    {
+      "q": "'bedroom' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "yuqori qavatda",
+        "uy egasi",
+        "yotoqxona",
+        "boshqa uyga ko'chmoq"
+      ],
+      "t": 2,
+      "izoh": "bedroom = yotoqxona.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#90cf4b43"
+    },
+    {
+      "q": "'yotoqxona' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "bedroom",
+        "roof",
+        "floor",
+        "downstairs"
+      ],
+      "t": 0,
+      "izoh": "yotoqxona = bedroom.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#aaa00a08"
+    },
+    {
+      "q": "Which word means: a room with a bed where you sleep?",
+      "v": [
+        "furniture",
+        "bedroom",
+        "living room",
+        "garage"
+      ],
+      "t": 1,
+      "izoh": "bedroom = yotoqxona.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#a21ce5a4"
+    },
+    {
+      "q": "I go to my ___ to sleep.",
+      "v": [
+        "house",
+        "downstairs",
+        "garage",
+        "bedroom"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: bedroom (yotoqxona).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#2c878727"
+    },
+    {
+      "q": "The room with a bed where you sleep at night is the ___.",
+      "v": [
+        "neighbour",
+        "upstairs",
+        "bedroom",
+        "balcony"
+      ],
+      "t": 2,
+      "izoh": "Bu bedroom — yotoqxona.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#dc4827f3"
+    },
+    {
+      "q": "'bathroom' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "hammom",
+        "uy egasi",
+        "oshxona",
+        "qo'shni"
+      ],
+      "t": 0,
+      "izoh": "bathroom = hammom.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#bf6ecc2e"
+    },
+    {
+      "q": "'hammom' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "roof",
+        "bathroom",
+        "furniture",
+        "floor"
+      ],
+      "t": 1,
+      "izoh": "hammom = bathroom.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#823a46ff"
+    },
+    {
+      "q": "Which word means: a room with a bath or shower and usually a toilet?",
+      "v": [
+        "house",
+        "share a flat",
+        "move house",
+        "bathroom"
+      ],
+      "t": 3,
+      "izoh": "bathroom = hammom.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#ad337555"
+    },
+    {
+      "q": "He is taking a shower in the ___.",
+      "v": [
+        "flat",
+        "house",
+        "rent",
+        "bathroom"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: bathroom (hammom).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#fdc2c13a"
+    },
+    {
+      "q": "The room with a shower and a toilet is the ___.",
+      "v": [
+        "roof",
+        "furniture",
+        "landlord",
+        "bathroom"
+      ],
+      "t": 3,
+      "izoh": "Bu bathroom — hammom.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#15f9a91b"
+    },
+    {
+      "q": "'living room' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "mehmonxona",
+        "yotoqxona",
+        "hammom",
+        "garaj"
+      ],
+      "t": 0,
+      "izoh": "living room = mehmonxona.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#3a5327aa"
+    },
+    {
+      "q": "'mehmonxona' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "share a flat",
+        "move house",
+        "upstairs",
+        "living room"
+      ],
+      "t": 3,
+      "izoh": "mehmonxona = living room.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#c200d062"
+    },
+    {
+      "q": "Which word means: a room where the family relaxes and watches TV?",
+      "v": [
+        "living room",
+        "kitchen",
+        "move house",
+        "wall"
+      ],
+      "t": 0,
+      "izoh": "living room = mehmonxona.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#a49d3ffe"
+    },
+    {
+      "q": "We watch TV together in the ___.",
+      "v": [
+        "neighbour",
+        "living room",
+        "downstairs",
+        "garage"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: living room (mehmonxona).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#57fb5995"
+    },
+    {
+      "q": "The room where the family sits, relaxes and watches TV is the ___.",
+      "v": [
+        "upstairs",
+        "living room",
+        "balcony",
+        "rent"
+      ],
+      "t": 1,
+      "izoh": "Bu living room — mehmonxona.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#a530448d"
+    },
+    {
+      "q": "'balcony' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "balkon",
+        "uy",
+        "hammom",
+        "pol"
+      ],
+      "t": 0,
+      "izoh": "balcony = balkon.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#7803772a"
+    },
+    {
+      "q": "'balkon' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "move house",
+        "wall",
+        "floor",
+        "balcony"
+      ],
+      "t": 3,
+      "izoh": "balkon = balcony.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#d4fc9a0f"
+    },
+    {
+      "q": "Which word means: a small outside area on an upper floor of a building?",
+      "v": [
+        "bedroom",
+        "balcony",
+        "garden",
+        "living room"
+      ],
+      "t": 1,
+      "izoh": "balcony = balkon.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#d4b90236"
+    },
+    {
+      "q": "She drinks tea on the ___ every morning.",
+      "v": [
+        "balcony",
+        "upstairs",
+        "flat",
+        "garden"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob: balcony (balkon).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#b1fb8417"
+    },
+    {
+      "q": "A small open place outside the window on an upper floor is the ___.",
+      "v": [
+        "balcony",
+        "upstairs",
+        "downstairs",
+        "roof"
+      ],
+      "t": 0,
+      "izoh": "Bu balcony — balkon.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#d971a988"
+    },
+    {
+      "q": "'garage' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "pastki qavatda",
+        "garaj",
+        "balkon",
+        "oshxona"
+      ],
+      "t": 1,
+      "izoh": "garage = garaj.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#5ee19062"
+    },
+    {
+      "q": "'garaj' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "garage",
+        "move house",
+        "roof",
+        "wall"
+      ],
+      "t": 0,
+      "izoh": "garaj = garage.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#94dfd4ab"
+    },
+    {
+      "q": "Which word means: a building where you keep a car?",
+      "v": [
+        "bathroom",
+        "garage",
+        "floor",
+        "roof"
+      ],
+      "t": 1,
+      "izoh": "garage = garaj.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#c7942603"
+    },
+    {
+      "q": "He keeps his car in the ___.",
+      "v": [
+        "floor",
+        "bedroom",
+        "upstairs",
+        "garage"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: garage (garaj).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#bfcb9525"
+    },
+    {
+      "q": "The place next to the house where you park your car is the ___.",
+      "v": [
+        "furniture",
+        "garage",
+        "roof",
+        "downstairs"
+      ],
+      "t": 1,
+      "izoh": "Bu garage — garaj.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#f34db074"
+    },
+    {
+      "q": "'roof' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "garaj",
+        "mehmonxona",
+        "balkon",
+        "tom (bino usti)"
+      ],
+      "t": 3,
+      "izoh": "roof = tom (bino usti).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#8c77c25c"
+    },
+    {
+      "q": "'tom (bino usti)' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "rent",
+        "floor",
+        "roof",
+        "move house"
+      ],
+      "t": 2,
+      "izoh": "tom (bino usti) = roof.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#c3771701"
+    },
+    {
+      "q": "Which word means: the top part that covers a building?",
+      "v": [
+        "balcony",
+        "floor",
+        "neighbour",
+        "roof"
+      ],
+      "t": 3,
+      "izoh": "roof = tom (bino usti).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#f9ecd869"
+    },
+    {
+      "q": "Rain is falling on the ___ of the house.",
+      "v": [
+        "roof",
+        "downstairs",
+        "furniture",
+        "move house"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob: roof (tom (bino usti)).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#67f92c76"
+    },
+    {
+      "q": "The top part that covers the house and keeps the rain out is the ___.",
+      "v": [
+        "bathroom",
+        "living room",
+        "balcony",
+        "roof"
+      ],
+      "t": 3,
+      "izoh": "Bu roof — tom (bino usti).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#6b151919"
+    },
+    {
+      "q": "'wall' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "hammom",
+        "devor",
+        "boshqa uyga ko'chmoq",
+        "pastki qavatda"
+      ],
+      "t": 1,
+      "izoh": "wall = devor.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#2add132a"
+    },
+    {
+      "q": "'devor' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "downstairs",
+        "balcony",
+        "neighbour",
+        "wall"
+      ],
+      "t": 3,
+      "izoh": "devor = wall.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#d5bc3cca"
+    },
+    {
+      "q": "Which word means: a vertical side of a room or building?",
+      "v": [
+        "garage",
+        "bathroom",
+        "furniture",
+        "wall"
+      ],
+      "t": 3,
+      "izoh": "wall = devor.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#e417778d"
+    },
+    {
+      "q": "There is a picture on the ___.",
+      "v": [
+        "bedroom",
+        "garage",
+        "rent",
+        "wall"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: wall (devor).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#f9bf2109"
+    },
+    {
+      "q": "The flat vertical side of a room where you hang pictures is the ___.",
+      "v": [
+        "upstairs",
+        "move house",
+        "wall",
+        "landlord"
+      ],
+      "t": 2,
+      "izoh": "Bu wall — devor.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#f0c86c75"
+    },
+    {
+      "q": "'floor' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "qo'shni",
+        "pol",
+        "hammom",
+        "ijara haqi"
+      ],
+      "t": 1,
+      "izoh": "floor = pol.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#79d2feeb"
+    },
+    {
+      "q": "'pol' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "move house",
+        "rent",
+        "landlord",
+        "floor"
+      ],
+      "t": 3,
+      "izoh": "pol = floor.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#6a7f1ad1"
+    },
+    {
+      "q": "Which word means: the flat part at the bottom of a room that you walk on?",
+      "v": [
+        "floor",
+        "roof",
+        "flat",
+        "balcony"
+      ],
+      "t": 0,
+      "izoh": "floor = pol.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#341ea921"
+    },
+    {
+      "q": "The cat is sleeping on the ___.",
+      "v": [
+        "downstairs",
+        "rent",
+        "floor",
+        "balcony"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: floor (pol).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#b3ee7db0"
+    },
+    {
+      "q": "The part of the room you walk on and put a carpet on is the ___.",
+      "v": [
+        "floor",
+        "bedroom",
+        "move house",
+        "landlord"
+      ],
+      "t": 0,
+      "izoh": "Bu floor — pol.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#da402061"
+    },
+    {
+      "q": "'move house' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "devor",
+        "uy",
+        "garaj",
+        "boshqa uyga ko'chmoq"
+      ],
+      "t": 3,
+      "izoh": "move house = boshqa uyga ko'chmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#8dbd5fc6"
+    },
+    {
+      "q": "'boshqa uyga ko'chmoq' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "floor",
+        "house",
+        "move house",
+        "living room"
+      ],
+      "t": 2,
+      "izoh": "boshqa uyga ko'chmoq = move house.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#e53bcb67"
+    },
+    {
+      "q": "Which word means: to leave your home and go to live in a new one?",
+      "v": [
+        "garden",
+        "move house",
+        "floor",
+        "rent"
+      ],
+      "t": 1,
+      "izoh": "move house = boshqa uyga ko'chmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#70f78f02"
+    },
+    {
+      "q": "We will ___ next month because the new place is bigger.",
+      "v": [
+        "furniture",
+        "share a flat",
+        "wall",
+        "move house"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: move house (boshqa uyga ko'chmoq).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#b59ceb48"
+    },
+    {
+      "q": "You leave your old home and go to live in a new one, so you ___.",
+      "v": [
+        "share a flat",
+        "move house",
+        "bedroom",
+        "house"
+      ],
+      "t": 1,
+      "izoh": "Bu move house — boshqa uyga ko'chmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#05885e49"
+    },
+    {
+      "q": "'share a flat' so'zi o'zbekchada nimani anglatadi?",
+      "v": [
+        "mebel",
+        "kvartirani birga ijaraga olmoq",
+        "uy",
+        "tom (bino usti)"
+      ],
+      "t": 1,
+      "izoh": "share a flat = kvartirani birga ijaraga olmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#84af1fe8"
+    },
+    {
+      "q": "'kvartirani birga ijaraga olmoq' inglizcha qaysi so'z bilan ifodalanadi?",
+      "v": [
+        "share a flat",
+        "neighbour",
+        "bathroom",
+        "garden"
+      ],
+      "t": 0,
+      "izoh": "kvartirani birga ijaraga olmoq = share a flat.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#929fe9f2"
+    },
+    {
+      "q": "Which word means: to live in the same flat with other people and split the cost?",
+      "v": [
+        "share a flat",
+        "downstairs",
+        "move house",
+        "flat"
+      ],
+      "t": 0,
+      "izoh": "share a flat = kvartirani birga ijaraga olmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#7226ac72"
+    },
+    {
+      "q": "Two students decided to ___ to save money.",
+      "v": [
+        "bedroom",
+        "share a flat",
+        "bathroom",
+        "landlord"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: share a flat (kvartirani birga ijaraga olmoq).",
+      "qiy": "orta",
+      "id": "ing_a2_m23#0c274514"
+    },
+    {
+      "q": "You live with friends in one flat and split the rent, so you ___.",
+      "v": [
+        "share a flat",
+        "bedroom",
+        "house",
+        "landlord"
+      ],
+      "t": 0,
+      "izoh": "Bu share a flat — kvartirani birga ijaraga olmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m23#0ee7f654"
+    }
+  ]
+}

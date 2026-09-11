@@ -1,0 +1,456 @@
+{
+  "nom": "11-mavzu. Notekis Harakat",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Harakat davomida jism tezligining son qiymati o'zgaruvchan bo'lsa, bunday harakat qanday ataladi?",
+      "v": [
+        "Notekis harakat",
+        "Tekis harakat",
+        "Ilgarilanma harakat",
+        "Aylanma harakat"
+      ],
+      "t": 0,
+      "izoh": "Notekis harakat ta'rifi — 39-bet.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#c44b2cc9"
+    },
+    {
+      "q": "Notekis harakatni tavsiflashda qanday kattalik kiritilgan?",
+      "v": [
+        "O'rtacha tezlik",
+        "Oniy tezlik",
+        "Ko'chish",
+        "Traektoriya"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha tezlik kiritilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#c73eb3af"
+    },
+    {
+      "q": "Notekis harakatning o'rtacha tezligi qanday aniqlanadi?",
+      "v": [
+        "Umumiy yo'lning umumiy vaqtga nisbati",
+        "Birinchi va oxirgi tezlikning yarmi",
+        "Eng katta tezlik",
+        "Eng kichik tezlik"
+      ],
+      "t": 0,
+      "izoh": "v'o'r = sum/tum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m11-notekis-harakat#317735d7"
+    },
+    {
+      "q": "O'rtacha tezlik qanday kattalik?",
+      "v": [
+        "Skalyar kattalik",
+        "Vektor kattalik",
+        "O'lchovsiz kattalik",
+        "Birliksiz kattalik"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha tezlik skalyar kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#a7442f5d"
+    },
+    {
+      "q": "O'rtacha tezlik formulasida sum nimani bildiradi?",
+      "v": [
+        "Umumiy bosib o'tilgan yo'lni",
+        "Umumiy vaqtni",
+        "O'rtacha tezlikni",
+        "Ko'chishni"
+      ],
+      "t": 0,
+      "izoh": "sum — umumiy bosib o'tilgan yo'l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m11-notekis-harakat#2f299837"
+    },
+    {
+      "q": "O'rtacha tezlik formulasida tum nimani bildiradi?",
+      "v": [
+        "Umumiy yo'lni bosib o'tish uchun ketgan vaqtni",
+        "Umumiy yo'lni",
+        "Tezlikni",
+        "Massani"
+      ],
+      "t": 0,
+      "izoh": "tum — umumiy vaqt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m11-notekis-harakat#a16010c2"
+    },
+    {
+      "q": "Jism t1 vaqtda s1, t2 vaqtda s2, ..., tn vaqtda sn masofa bosib o'tsa, o'rtacha tezlik qanday topiladi?",
+      "v": [
+        "(s1+s2+...+sn)/(t1+t2+...+tn)",
+        "(s1−sn)/(t1−tn)",
+        "(s1·s2)/(t1·t2)",
+        "sn/tn faqat"
+      ],
+      "t": 0,
+      "izoh": "v'o'r = (s1+s2+...+sn)/(t1+t2+...+tn).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#701a3d59"
+    },
+    {
+      "q": "Bosib o'tilgan yo'l o'rtacha tezlik orqali qanday ifodalanadi?",
+      "v": [
+        "sum = v'o'r·tum",
+        "sum = v'o'r/tum",
+        "sum = tum/v'o'r",
+        "sum = v'o'r + tum"
+      ],
+      "t": 0,
+      "izoh": "sum = v'o'r·tum — (2) formula.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m11-notekis-harakat#91945c4c"
+    },
+    {
+      "q": "Notekis harakatning o'rtacha tezligi trayektoriyaning barcha nuqtalari uchun jism harakatini tavsiflay oladimi?",
+      "v": [
+        "Yo'q, tavsiflay olmaydi",
+        "Ha, to'liq tavsiflaydi",
+        "Faqat boshlang'ich nuqtada",
+        "Faqat oxirgi nuqtada"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha tezlik barcha nuqtalar uchun tavsiflay olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#895265df"
+    },
+    {
+      "q": "Jismning butun yo'ldagi o'rtacha tezligi yo'lning ayrim qismlaridagi tezliklarning arifmetik o'rtachasiga tengmi?",
+      "v": [
+        "Yo'q, umuman olganda teng emas",
+        "Ha, har doim teng",
+        "Faqat tekis harakatda teng",
+        "Faqat birinchi qismda teng"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha tezlik — umumiy yo'lning umumiy vaqtga nisbati; u ayrim qismlar tezliklarining arifmetik o'rtachasiga umuman teng emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#4416c2d8"
+    },
+    {
+      "q": "Jismning muayyan bir paytdagi yoki trayektoriyaning ma'lum nuqtasidagi tezligi nima deb ataladi?",
+      "v": [
+        "Oniy tezlik",
+        "O'rtacha tezlik",
+        "Maksimal tezlik",
+        "Minimal tezlik"
+      ],
+      "t": 0,
+      "izoh": "Oniy tezlik ta'rifi — 40-bet.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#feacbda5"
+    },
+    {
+      "q": "Oniy tezlik nimani bildiradi?",
+      "v": [
+        "Jism trayektoriyasining berilgan nuqtasida qanday tezlik bilan harakatlanayotganini",
+        "Umumiy yo'lni",
+        "Umumiy vaqtni",
+        "Ko'chishni"
+      ],
+      "t": 0,
+      "izoh": "Oniy tezlik berilgan nuqtadagi tezlikni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#87de3f8e"
+    },
+    {
+      "q": "Avtomobil spidometri ko'rsatkichi nimani ko'rsatadi?",
+      "v": [
+        "Oniy tezlik moduli qiymatini",
+        "O'rtacha tezlikni",
+        "Bosib o'tilgan yo'lni",
+        "Ko'chishni"
+      ],
+      "t": 0,
+      "izoh": "Spidometr oniy tezlik modulini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#e8034be8"
+    },
+    {
+      "q": "Oniy tezlik qanday kattalik?",
+      "v": [
+        "Vektor kattalik",
+        "Skalyar kattalik",
+        "O'lchovsiz",
+        "Nomlangan son"
+      ],
+      "t": 0,
+      "izoh": "Oniy tezlik vektor kattalikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#5f0fcd7f"
+    },
+    {
+      "q": "To'g'ri chiziqli harakatda oniy tezlik yo'nalishi qanday?",
+      "v": [
+        "Harakat yo'nalishi bilan mos tushadi",
+        "Harakatga teskari",
+        "Perpendikulyar",
+        "Burchak ostida"
+      ],
+      "t": 0,
+      "izoh": "Oniy tezlik yo'nalishi harakat yo'nalishi bilan mos tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#e7bbf5c8"
+    },
+    {
+      "q": "Avtomobil har xil tezlikda harakatlanishiga nima sabab bo'ladi?",
+      "v": [
+        "Yo'lda svetoforlar va piyodalar yo'lkasi borligi",
+        "Faqat yo'l namligi",
+        "Faqat shamol",
+        "Faqat balandlik"
+      ],
+      "t": 0,
+      "izoh": "Svetoforlar va piyodalar yo'lkasi sababli har xil tezlikda harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#737b8008"
+    },
+    {
+      "q": "Yo'lda o'rnatilgan fotoradarlar qanday tezlikni o'lchaydi?",
+      "v": [
+        "Oniy tezlikni",
+        "O'rtacha tezlikni",
+        "Ko'chishni",
+        "Yo'lni"
+      ],
+      "t": 0,
+      "izoh": "Fotoradar oniy tezlikni o'lchaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#e2de22f4"
+    },
+    {
+      "q": "DAN xodimi yengil avtomashinani to'xtatganida u qanday tezlikni aniqlagan?",
+      "v": [
+        "Oniy tezlikni",
+        "O'rtacha tezlikni",
+        "Maksimal tezlikni",
+        "Minimal tezlikni"
+      ],
+      "t": 0,
+      "izoh": "DAN xodimi oniy tezlikni aniqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#f90de526"
+    },
+    {
+      "q": "Otliq 40 minutda 5 km, keyingi 1 soatda 10 km/h tezlik bilan yursa, umumiy yo'li qancha?",
+      "v": [
+        "15 km",
+        "10 km",
+        "5 km",
+        "20 km"
+      ],
+      "t": 0,
+      "izoh": "s1=5 km, s2=10 km, jami 15 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m11-notekis-harakat#3c877e9b"
+    },
+    {
+      "q": "Yuqoridagi otliqning umumiy vaqti qancha?",
+      "v": [
+        "100 min (6000 s)",
+        "40 min",
+        "1 soat",
+        "80 min"
+      ],
+      "t": 0,
+      "izoh": "40 min + 60 min = 100 min = 6000 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#310ad283"
+    },
+    {
+      "q": "Otliqning butun yo'l davomidagi o'rtacha tezligi qancha?",
+      "v": [
+        "2,5 m/s",
+        "5 m/s",
+        "10 m/s",
+        "1,5 m/s"
+      ],
+      "t": 0,
+      "izoh": "v'o'r = 15000/6000 = 2,5 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#e4ce3acb"
+    },
+    {
+      "q": "Vali stadion bo'ylab 2 marta aylanib boshlang'ich joyiga qaytsa, uning ko'chishi qancha?",
+      "v": [
+        "0 m",
+        "300 m",
+        "600 m",
+        "150 m"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich joyga qaytganda ko'chish nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m11-notekis-harakat#862eb12e"
+    },
+    {
+      "q": "Yuqoridagi holda Valining bosib o'tgan yo'li qancha?",
+      "v": [
+        "600 m",
+        "300 m",
+        "0 m",
+        "900 m"
+      ],
+      "t": 0,
+      "izoh": "Yo'l = 2·300 = 600 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#c7b406b1"
+    },
+    {
+      "q": "Sayyoh 150 km sharqqa, keyin 115 km g'arbga yursa, uning yo'li qancha?",
+      "v": [
+        "265 km",
+        "35 km",
+        "150 km",
+        "115 km"
+      ],
+      "t": 0,
+      "izoh": "Yo'l = 150 + 115 = 265 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m11-notekis-harakat#2f4ad1bb"
+    },
+    {
+      "q": "Yuqoridagi sayyohning ko'chishi qancha va qaysi yo'nalishda?",
+      "v": [
+        "35 km sharqqa",
+        "265 km sharqqa",
+        "35 km g'arbga",
+        "115 km sharqqa"
+      ],
+      "t": 0,
+      "izoh": "Ko'chish = 150 − 115 = 35 km sharqqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#88efff11"
+    },
+    {
+      "q": "Notekis harakatda o'rtacha tezlik tushunchasi bilan birga yana qanday tushuncha qo'llanadi?",
+      "v": [
+        "Oniy tezlik",
+        "Ko'chish",
+        "Massa",
+        "Zichlik"
+      ],
+      "t": 0,
+      "izoh": "Oniy tezlik tushunchasi ham qo'llanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#d35a49ca"
+    },
+    {
+      "q": "Yo'l chetiga o'rnatilgan ogohlantiruvchi belgilar nimani anglatadi?",
+      "v": [
+        "Eng yuqori tezlikni",
+        "Yo'l uzunligini",
+        "Ko'chishni",
+        "Vaqtni"
+      ],
+      "t": 0,
+      "izoh": "Aholi punktida eng yuqori tezlik 50 km/h belgisi qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m11-notekis-harakat#08248744"
+    },
+    {
+      "q": "Bola 30 m uzunlikdagi tepalikni 5 marta aylansa, umumiy yo'li qancha?",
+      "v": [
+        "150 m",
+        "30 m",
+        "6 m",
+        "90 m"
+      ],
+      "t": 0,
+      "izoh": "5·30 = 150 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m11-notekis-harakat#e118ddb0"
+    },
+    {
+      "q": "Mashina 90 km/h tezlik bilan 5 soat yursa, bosib o'tgan yo'li qancha?",
+      "v": [
+        "450 km",
+        "90 km",
+        "18 km",
+        "450 m"
+      ],
+      "t": 0,
+      "izoh": "s = 90·5 = 450 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m11-notekis-harakat#19002ab5"
+    },
+    {
+      "q": "Samolyot 900 km/h tezlik bilan 40 minutda qancha masofani bosib o'tadi?",
+      "v": [
+        "600 km",
+        "900 km",
+        "360 km",
+        "40 km"
+      ],
+      "t": 0,
+      "izoh": "s = 900·(2/3) = 600 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m11-notekis-harakat#4114dcb2"
+    }
+  ]
+}

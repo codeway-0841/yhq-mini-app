@@ -1,0 +1,1609 @@
+{
+  "nom": "sin, cos, tg, ctg ta'riflari, ishoralari va jadval qiymatlari",
+  "bolim": "Trigonometriya",
+  "blok": "trig",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Burchakning boshlang'ich tomoni Ox o'qining musbat yarmi bilan ustma-ust tushadi, oxirgi tomoni esa M(3; 4) nuqtadan o'tadi. Shu burchakning sinusini toping.",
+      "v": [
+        "3/5",
+        "4/5",
+        "4/3",
+        "3/4"
+      ],
+      "t": 1,
+      "izoh": "Avval nuqtaning radius-vektori uzunligini topamiz: r = √(3² + 4²) = √25 = 5. Ixtiyoriy burchak uchun ta'rifga ko'ra sin α = y/r, ya'ni 4/5. Bu yerda 3/5 — kosinus qiymati, 4/3 esa tangens. Javob: 4/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-nuqta-koordinatasi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#4e9b3431"
+    },
+    {
+      "q": "Burchakning oxirgi tomoni M(−8; 6) nuqtadan o'tadi. Shu burchakning kosinusini hisoblang.",
+      "v": [
+        "3/5",
+        "−3/4",
+        "−4/5",
+        "4/5"
+      ],
+      "t": 2,
+      "izoh": "Radius-vektor uzunligi r = √((−8)² + 6²) = √100 = 10. Ta'rifga ko'ra cos α = x/r = −8/10 = −4/5. Nuqta II chorakda yotgani uchun kosinus manfiy chiqishi tabiiy. 3/5 — sinus, −3/4 esa tangens qiymati. Javob: −4/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-nuqta-koordinatasi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#6d148a87"
+    },
+    {
+      "q": "Burchakning oxirgi tomoni M(−5; −12) nuqtadan o'tsa, shu burchakning tangensi nimaga teng bo'ladi?",
+      "v": [
+        "−12/5",
+        "5/12",
+        "12/5",
+        "−5/12"
+      ],
+      "t": 2,
+      "izoh": "Ta'rifga ko'ra tg α = y/x. Demak tg α = (−12) : (−5) = 12/5. Nuqta III chorakda yotadi, u yerda ikkala koordinata manfiy, shuning uchun ularning nisbati musbat bo'ladi. 5/12 — kotangens qiymati. Javob: 12/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-nuqta-koordinatasi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#7df539ab"
+    },
+    {
+      "q": "Burchakning oxirgi tomoni M(7; −24) nuqtadan o'tadi. sin α + cos α yig'indining qiymatini toping.",
+      "v": [
+        "17/25",
+        "−17/25",
+        "−31/25",
+        "31/25"
+      ],
+      "t": 1,
+      "izoh": "Radius-vektor uzunligi r = √(7² + (−24)²) = √625 = 25. Ta'rifdan sin α = −24/25 va cos α = 7/25. Yig'indi: −24/25 + 7/25 = −17/25. Agar qiymatlar qo'shilish o'rniga ayirilsa −31/25 chiqadi, bu esa tipik xato. Javob: −17/25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tarif-nuqta-koordinatasi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#43ef47d2"
+    },
+    {
+      "q": "Toshkent aeroportida uchayotgan dron dispetcher minorasi uchi bilan bir xil balandlikda turib, minoradan sharqqa 20 m, shimolga 21 m siljidi. Minora uchidan dronga chizilgan nur sharq yo'nalishi bilan α burchak hosil qilsa, cos α ni toping.",
+      "v": [
+        "21/29",
+        "20/29",
+        "20/21",
+        "29/20"
+      ],
+      "t": 1,
+      "izoh": "Dron minora uchi bilan bir sathda bo'lgani uchun masala gorizontal tekislikda yechiladi. Sharq yo'nalishini Ox o'qi, shimolni Oy o'qi deb olsak, dron M(20; 21) nuqtada bo'ladi. Masofa r = √(20² + 21²) = √841 = 29 m. Ta'rifga ko'ra cos α = x/r = 20/29. 21/29 — sinus, 20/21 esa tangens qiymati. Javob: 20/29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-nuqta-koordinatasi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#0a6b472e"
+    },
+    {
+      "q": "Birlik aylanada α burchakka mos keluvchi nuqtaning koordinatalari (−0,6; 0,8) ga teng. Shu burchakning kosinusi nimaga teng?",
+      "v": [
+        "0,8",
+        "−0,6",
+        "−0,8",
+        "0,6"
+      ],
+      "t": 1,
+      "izoh": "Birlik aylanada burchakka mos nuqtaning abssissasi kosinusga, ordinatasi esa sinusga teng bo'ladi. Demak cos α = −0,6, sin α = 0,8. Ko'p o'quvchi ikkalasini almashtirib yuboradi va 0,8 ni tanlaydi. Javob: −0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-aylana-nuqta",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#2cf12d5d"
+    },
+    {
+      "q": "Birlik aylanadagi nuqtaning abssissasi 0,28 ga teng va bu nuqta IV chorakda yotadi. Shu burchakning sinusini toping.",
+      "v": [
+        "0,96",
+        "0,72",
+        "−0,72",
+        "−0,96"
+      ],
+      "t": 3,
+      "izoh": "Birlik aylana tenglamasi x² + y² = 1. Demak y² = 1 − 0,28² = 1 − 0,0784 = 0,9216, bundan y = 0,96 yoki y = −0,96. IV chorakda ordinata manfiy, shuning uchun sin α = −0,96. 0,72 qiymati esa 1 dan 0,28 ni oddiy ayirish xatosidan chiqadi. Javob: −0,96.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-aylana-nuqta",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#6801b6c0"
+    },
+    {
+      "q": "Birlik aylanada 150° burchakka mos keluvchi nuqtaning koordinatalarini ko'rsating.",
+      "v": [
+        "(−√3/2; 1/2)",
+        "(−1/2; √3/2)",
+        "(√3/2; 1/2)",
+        "(−√3/2; −1/2)"
+      ],
+      "t": 0,
+      "izoh": "Nuqtaning koordinatalari (cos 150°; sin 150°) ko'rinishida bo'ladi. 150° burchak II chorakda yotadi, u yerda kosinus manfiy, sinus musbat. Jadval qiymatlari bo'yicha cos 150° = −√3/2 va sin 150° = 1/2. Javob: (−√3/2; 1/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-aylana-nuqta",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#557e07ac"
+    },
+    {
+      "q": "Birlik aylanadagi M nuqta II chorakda yotadi va uning ordinatasi abssissasi modulidan √3 marta katta. Shu nuqtaga mos burchakni toping.",
+      "v": [
+        "135°",
+        "120°",
+        "150°",
+        "60°"
+      ],
+      "t": 1,
+      "izoh": "Shartga ko'ra y = √3·|x|, II chorakda esa x < 0 va y > 0. Demak tg α = y/x = √3·|x| : (−|x|) = −√3. Jadvaldan tg 60° = √3 ekanini bilamiz, II chorakdagi mos burchak esa 180° − 60° = 120°. Javob: 120°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-aylana-nuqta",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#39592a30"
+    },
+    {
+      "q": "α burchak II chorakda yotadi. cos α va tg α ning ishoralari mos ravishda qanday bo'ladi?",
+      "v": [
+        "Kosinus manfiy, tangens manfiy",
+        "Kosinus manfiy, tangens musbat",
+        "Kosinus musbat, tangens manfiy",
+        "Kosinus musbat, tangens musbat"
+      ],
+      "t": 0,
+      "izoh": "II chorakda nuqtaning abssissasi manfiy, ordinatasi musbat. cos α = x/r bo'lgani uchun kosinus manfiy. tg α = y/x da surat musbat, maxraj manfiy, demak tangens ham manfiy. Javob: kosinus manfiy, tangens manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-ishora-juftlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#13b62dd7"
+    },
+    {
+      "q": "β burchak III chorakda yotadi. sin β va ctg β ning ishoralari mos ravishda qanday bo'ladi?",
+      "v": [
+        "Sinus musbat, kotangens musbat",
+        "Sinus manfiy, kotangens manfiy",
+        "Sinus manfiy, kotangens musbat",
+        "Sinus musbat, kotangens manfiy"
+      ],
+      "t": 2,
+      "izoh": "III chorakda ikkala koordinata ham manfiy. sin β = y/r bo'lgani uchun sinus manfiy. ctg β = x/y da surat ham, maxraj ham manfiy, ularning nisbati esa musbat. Javob: sinus manfiy, kotangens musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-ishora-juftlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#e0722222"
+    },
+    {
+      "q": "γ burchak IV chorakda yotadi. tg γ va cos γ ning ishoralari qanday bo'ladi?",
+      "v": [
+        "Tangens musbat, kosinus musbat",
+        "Tangens manfiy, kosinus manfiy",
+        "Tangens musbat, kosinus manfiy",
+        "Tangens manfiy, kosinus musbat"
+      ],
+      "t": 3,
+      "izoh": "IV chorakda abssissa musbat, ordinata manfiy. Shuning uchun cos γ = x/r musbat bo'ladi. tg γ = y/x da surat manfiy, maxraj musbat, demak tangens manfiy. Javob: tangens manfiy, kosinus musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-ishora-juftlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#6ac72eb7"
+    },
+    {
+      "q": "200° burchak uchun sinus va kosinusning ishoralari qanday bo'lishini aniqlang.",
+      "v": [
+        "Sinus musbat, kosinus manfiy",
+        "Ikkalasi ham musbat",
+        "Ikkalasi ham manfiy",
+        "Sinus manfiy, kosinus musbat"
+      ],
+      "t": 2,
+      "izoh": "200° burchak 180° dan katta va 270° dan kichik, demak u III chorakda yotadi. III chorakda burchakka mos nuqtaning abssissasi ham, ordinatasi ham manfiy. Shuning uchun sinus ham, kosinus ham manfiy bo'ladi. Javob: ikkalasi ham manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-ishora-juftlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#4ad15cac"
+    },
+    {
+      "q": "sin 128° · cos 214° ko'paytmasining ishorasini aniqlang.",
+      "v": [
+        "Musbat",
+        "Nolga teng",
+        "Ishorasi aniqlanmagan",
+        "Manfiy"
+      ],
+      "t": 3,
+      "izoh": "128° burchak II chorakda, u yerda sinus musbat. 214° burchak III chorakda, u yerda kosinus manfiy. Musbat sonni manfiy songa ko'paytirsak, natija manfiy bo'ladi. Javob: manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-ishorasi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#5ae11238"
+    },
+    {
+      "q": "tg 310° : sin 310° nisbatining ishorasini toping.",
+      "v": [
+        "Manfiy",
+        "Musbat",
+        "Nolga teng",
+        "Nisbatni aniqlab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "310° burchak IV chorakda yotadi. U yerda sinus manfiy, kosinus musbat, demak tg = sin : cos ham manfiy. Ikki manfiy sonning nisbati esa musbat bo'ladi. Javob: musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-ishorasi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#f7fdf409"
+    },
+    {
+      "q": "cos 100° · tg 200° · ctg 300° ko'paytmasining ishorasini aniqlang.",
+      "v": [
+        "Manfiy",
+        "Nolga teng",
+        "Musbat",
+        "Ishorasi o'zgaruvchan"
+      ],
+      "t": 2,
+      "izoh": "100° II chorakda, u yerda kosinus manfiy. 200° III chorakda, u yerda tangens musbat. 300° IV chorakda, u yerda kotangens manfiy. Uch ko'paytuvchidan ikkitasi manfiy bo'lgani uchun ko'paytma musbat chiqadi. Javob: musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-ishorasi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#e7bf1b61"
+    },
+    {
+      "q": "α ∈ (90°; 180°) bo'lsa, sin α · ctg α ifodasi qaysi ishoraga ega bo'ladi va buning sababi nima?",
+      "v": [
+        "Manfiy, chunki ifoda cos α ga teng, II chorakda esa kosinus manfiy",
+        "Musbat, chunki II chorakda sinus musbat",
+        "Nolga teng, chunki sinus va kotangens o'zaro teskari",
+        "Ishora α ning aniq qiymatiga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "ctg α = cos α : sin α ekanini qo'yamiz: sin α · (cos α : sin α) = cos α. Berilgan oraliq II chorak, u yerda kosinus manfiy. Demak butun ifoda manfiy. Javob: manfiy, chunki ifoda cos α ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-ishorasi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#a2f649d4"
+    },
+    {
+      "q": "sin α < 0 va tg α > 0 shartlarini bir vaqtda qanoatlantiruvchi burchak qaysi chorakda yotadi?",
+      "v": [
+        "I chorakda",
+        "II chorakda",
+        "III chorakda",
+        "IV chorakda"
+      ],
+      "t": 2,
+      "izoh": "Sinus III va IV choraklarda manfiy bo'ladi. Tangens esa I va III choraklarda musbat. Ikkala shart faqat III chorakda bir vaqtda bajariladi. Javob: III chorakda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-topish-shartdan",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#46f78df9"
+    },
+    {
+      "q": "cos α > 0 va ctg α < 0 bo'lsa, α burchak qaysi chorakda yotadi?",
+      "v": [
+        "I chorakda",
+        "II chorakda",
+        "III chorakda",
+        "IV chorakda"
+      ],
+      "t": 3,
+      "izoh": "Kosinus I va IV choraklarda musbat. Kotangens II va IV choraklarda manfiy, chunki u yerda abssissa va ordinata turli ishorada. Ikkala shart faqat IV chorakda bajariladi. Javob: IV chorakda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-topish-shartdan",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#fe3fdded"
+    },
+    {
+      "q": "tg α · cos α < 0 tengsizlik bajarilsa, α burchak qaysi choraklarda yotishi mumkin?",
+      "v": [
+        "I va II choraklarda",
+        "III va IV choraklarda",
+        "II va III choraklarda",
+        "I va IV choraklarda"
+      ],
+      "t": 1,
+      "izoh": "tg α = sin α : cos α bo'lgani uchun tg α · cos α = sin α. Demak shart sin α < 0 ko'rinishiga keladi. Sinus III va IV choraklarda manfiy bo'ladi. Javob: III va IV choraklarda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chorak-topish-shartdan",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#4ad73c52"
+    },
+    {
+      "q": "sin α · cos α > 0 va sin α < 0 shartlari birgalikda bajarilsa, α qaysi chorakda yotadi?",
+      "v": [
+        "III chorakda",
+        "I chorakda",
+        "IV chorakda",
+        "Bunday burchak mavjud emas"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytma musbat bo'lishi uchun sinus va kosinus bir xil ishorada bo'lishi kerak. Sinus manfiy berilgan, demak kosinus ham manfiy. Ikkalasi manfiy bo'ladigan yagona chorak — III chorak. Javob: III chorakda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chorak-topish-shartdan",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#a4a42632"
+    },
+    {
+      "q": "2·sin 30° + 3·cos 60° ifodaning qiymatini hisoblang.",
+      "v": [
+        "2,5",
+        "1,5",
+        "5",
+        "3,5"
+      ],
+      "t": 0,
+      "izoh": "Jadval qiymatlaridan sin 30° = 1/2 va cos 60° = 1/2. Demak ifoda 2·(1/2) + 3·(1/2) = 1 + 1,5 = 2,5 ga teng. Agar ikkala qiymat 1 deb olinsa, xato tarzda 5 chiqadi. Javob: 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-ifoda-hisoblash",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#684dcf10"
+    },
+    {
+      "q": "sin 45° · cos 45° + sin 90° ifodaning qiymatini toping.",
+      "v": [
+        "0,5",
+        "1,5",
+        "2",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "sin 45° = √2/2 va cos 45° = √2/2, ularning ko'paytmasi (√2/2)·(√2/2) = 2/4 = 0,5. sin 90° = 1 ekanini qo'shamiz: 0,5 + 1 = 1,5. Agar sin 90° e'tibordan chetda qolsa 0,5 chiqadi. Javob: 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-ifoda-hisoblash",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#12e9e6d4"
+    },
+    {
+      "q": "tg 45° + ctg 45° − cos 0° ifodaning qiymatini hisoblang.",
+      "v": [
+        "1",
+        "2",
+        "0",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga ko'ra tg 45° = 1, ctg 45° = 1 va cos 0° = 1. Demak ifoda 1 + 1 − 1 ko'rinishida bo'ladi va uning qiymati 1 ga teng. Oxirgi ayirishni tashlab ketgan o'quvchi 2 ni tanlaydi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-ifoda-hisoblash",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#2f92b871"
+    },
+    {
+      "q": "3·tg 60° · ctg 60° − 2·sin 0° ifodaning qiymati nimaga teng?",
+      "v": [
+        "√3",
+        "3",
+        "0",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Bir xil burchak uchun tangens va kotangens o'zaro teskari, ya'ni tg 60° · ctg 60° = 1. sin 0° = 0 bo'lgani uchun ikkinchi qo'shiluvchi yo'qoladi. Demak ifoda 3·1 − 0 = 3 ga teng. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-ifoda-hisoblash",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#0b254304"
+    },
+    {
+      "q": "sin²30° + cos²30° + tg²45° ifodaning qiymatini toping.",
+      "v": [
+        "1,25",
+        "2",
+        "1,75",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Bir xil burchak uchun sin²30° + cos²30° = 1 bo'ladi, chunki bu asosiy trigonometrik ayniyat. tg 45° = 1 bo'lgani uchun tg²45° = 1. Demak ifoda 1 + 1 = 2. Agar cos²30° tashlab ketilsa 1,25 chiqadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-ifoda-hisoblash",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#f412a9c9"
+    },
+    {
+      "q": "sin 30°, cos 30°, tg 30° va sin 90° qiymatlaridan eng kattasi qaysi biri?",
+      "v": [
+        "sin 30°",
+        "cos 30°",
+        "tg 30°",
+        "sin 90°"
+      ],
+      "t": 3,
+      "izoh": "Jadval qiymatlarini o'nli kasrga aylantiramiz: sin 30° = 0,5; cos 30° = √3/2 ≈ 0,87; tg 30° = 1/√3 ≈ 0,58; sin 90° = 1. Eng katta son 1 ga teng. Javob: sin 90°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-qiymat-solishtirish",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#330c4bcc"
+    },
+    {
+      "q": "cos 0°, sin 45°, tg 30° va cos 60° qiymatlarini o'sish tartibida joylashtiring.",
+      "v": [
+        "cos 60°, tg 30°, sin 45°, cos 0°",
+        "tg 30°, cos 60°, sin 45°, cos 0°",
+        "cos 60°, sin 45°, tg 30°, cos 0°",
+        "cos 0°, sin 45°, tg 30°, cos 60°"
+      ],
+      "t": 0,
+      "izoh": "Har birini taqriban hisoblaymiz: cos 0° = 1; sin 45° ≈ 0,71; tg 30° ≈ 0,58; cos 60° = 0,5. Bu sonlarni kichikdan kattaga qo'yamiz: 0,5 keyin 0,58 keyin 0,71 va nihoyat 1. Javob: cos 60°, tg 30°, sin 45°, cos 0°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-qiymat-solishtirish",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#52fed957"
+    },
+    {
+      "q": "tg 60° va ctg 30° qiymatlari orasidagi munosabat haqida qaysi tasdiq to'g'ri?",
+      "v": [
+        "Ikkalasi ham √3 ga teng",
+        "tg 60° kattaroq",
+        "ctg 30° kattaroq",
+        "Ikkalasi ham 1/√3 ga teng"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga ko'ra tg 60° = √3. ctg 30° esa tg 30° = 1/√3 qiymatiga teskari son, ya'ni √3. Demak ikkala qiymat ham √3 ga teng va ular farq qilmaydi. Javob: ikkalasi ham √3 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-qiymat-solishtirish",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#4a14d989"
+    },
+    {
+      "q": "Burchak 0° dan 90° gacha ortib borganda sinus va kosinus qiymatlari qanday o'zgaradi?",
+      "v": [
+        "Sinus ortadi, kosinus kamayadi",
+        "Ikkalasi ham ortadi",
+        "Sinus kamayadi, kosinus ortadi",
+        "Ikkalasi ham kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Birlik aylanada burchak 0° dan 90° gacha o'sganda nuqta o'ngdan yuqoriga siljiydi. Uning ordinatasi 0 dan 1 gacha ortadi, demak sinus ortadi. Abssissasi esa 1 dan 0 gacha kamayadi, demak kosinus kamayadi. Javob: sinus ortadi, kosinus kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-ortishida-monotonlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#d8ee7391"
+    },
+    {
+      "q": "y = 4·sin x + 1 funksiyaning eng katta va eng kichik qiymatlarini aniqlang.",
+      "v": [
+        "Eng kattasi 5, eng kichigi −3",
+        "Eng kattasi 4, eng kichigi −4",
+        "Eng kattasi 5, eng kichigi 1",
+        "Eng kattasi 3, eng kichigi −5"
+      ],
+      "t": 0,
+      "izoh": "Sinusning qiymatlar to'plami −1 dan 1 gacha. 4·sin x esa −4 dan 4 gacha o'zgaradi. Har ikkala chegaraga 1 ni qo'shamiz va −3 dan 5 gacha oraliqni olamiz. Javob: eng kattasi 5, eng kichigi −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-oraligi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#94f15474"
+    },
+    {
+      "q": "Issiqxonadagi havo harorati sutka davomida T = 18 + 6·sin t formula bilan o'zgaradi va Selsiy gradusida o'lchanadi. Harorat eng ko'pi bilan necha gradusga yetadi?",
+      "v": [
+        "18°C",
+        "30°C",
+        "24°C",
+        "12°C"
+      ],
+      "t": 2,
+      "izoh": "Sinus eng ko'pi bilan 1 qiymatini qabul qiladi. Shu paytda T = 18 + 6·1 = 24. Demak eng yuqori harorat 24 gradus. 12 gradus eng past haroratga, 30 gradus esa 6 ni ikki marta qo'shish xatosiga mos keladi. Javob: 24°C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tebranish-oraligi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#f616b4a3"
+    },
+    {
+      "q": "Chorvoq suv omborida sath h = 3,2 + 1,5·cos t formula bo'yicha o'zgaradi va metrda o'lchanadi. Sath eng past bo'lganda u necha metrni tashkil qiladi?",
+      "v": [
+        "4,7 m",
+        "3,2 m",
+        "1,5 m",
+        "1,7 m"
+      ],
+      "t": 3,
+      "izoh": "Kosinusning eng kichik qiymati −1 ga teng. Shu holatda h = 3,2 + 1,5·(−1) = 3,2 − 1,5 = 1,7 m. 4,7 m esa eng yuqori sathga mos keladi, chunki u kosinus 1 bo'lganda olinadi. Javob: 1,7 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tebranish-oraligi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#1e636ab7"
+    },
+    {
+      "q": "Metro eskalatorining tortish kuchi F = 5 − 2·cos t formula bilan o'zgaradi va kilonyutonda o'lchanadi. Kuch qanday oraliqda o'zgaradi?",
+      "v": [
+        "3 kN dan 7 kN gacha",
+        "−3 kN dan 7 kN gacha",
+        "3 kN dan 5 kN gacha",
+        "5 kN dan 7 kN gacha"
+      ],
+      "t": 0,
+      "izoh": "Kosinus −1 dan 1 gacha qiymat oladi. Shunda 2·cos t ifodasi −2 dan 2 gacha o'zgaradi. Uni 5 dan ayiramiz: eng kattasi 5 + 2 = 7, eng kichigi 5 − 2 = 3. Javob: 3 kN dan 7 kN gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-oraligi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#7a11ed25"
+    },
+    {
+      "q": "Do'kondagi konditsioner sarflaydigan quvvat P = 2 + 3·sin²t formula bilan o'zgaradi va kilovattda o'lchanadi. Eng katta va eng kichik quvvatlar yig'indisini toping.",
+      "v": [
+        "5",
+        "3",
+        "7",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "Sinusning kvadrati 0 dan 1 gacha qiymat oladi, chunki sinusning o'zi −1 va 1 orasida. Eng katta quvvat P = 2 + 3·1 = 5 kVt, eng kichigi esa P = 2 + 3·0 = 2 kVt. Ularning yig'indisi 5 + 2 = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatlar-oraligi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#a54de16b"
+    },
+    {
+      "q": "Quyidagi ifodalardan qaysi biri umuman aniqlanmagan, ya'ni ma'noga ega emas?",
+      "v": [
+        "tg 90°",
+        "ctg 90°",
+        "sin 90°",
+        "cos 90°"
+      ],
+      "t": 0,
+      "izoh": "Tangens tg α = sin α : cos α ko'rinishida aniqlanadi. cos 90° = 0 bo'lgani uchun maxraj nolga aylanadi va bo'lish bajarilmaydi. Qolgan uchtasi esa hisoblanadi: ctg 90° = 0, sin 90° = 1, cos 90° = 0. Javob: tg 90°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanmagan-qiymat",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#a0ab1f89"
+    },
+    {
+      "q": "0°, 45°, 60° va 90° burchaklardan qaysi birida ctg α ifodasi aniqlanmagan bo'ladi?",
+      "v": [
+        "45°",
+        "60°",
+        "90°",
+        "0°"
+      ],
+      "t": 3,
+      "izoh": "Kotangens ctg α = cos α : sin α tarzida aniqlanadi, demak u sin α = 0 bo'lgan burchakda ma'noga ega emas. Berilgan burchaklar orasida faqat 0° uchun sinus nolga teng. Javob: 0°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanmagan-qiymat",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#63eaeff5"
+    },
+    {
+      "q": "tg x ifodasi aniqlangan bo'lishi uchun cos x qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "cos x > 0",
+        "cos x ≠ 0",
+        "sin x ≠ 0",
+        "cos x = 1"
+      ],
+      "t": 1,
+      "izoh": "Tangens ta'rifi bo'yicha tg x = sin x : cos x. Kasr faqat maxraj nolga teng bo'lmaganda ma'noga ega. Demak yagona shart cos x ≠ 0 bo'lishi kerak, kosinusning ishorasi esa ahamiyatsiz. Javob: cos x ≠ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanmagan-qiymat",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#4234316b"
+    },
+    {
+      "q": "0° ≤ α < 360° oraliqda tg α + ctg α ifodasi burchakning nechta qiymatida aniqlanmagan bo'ladi?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "5 ta"
+      ],
+      "t": 2,
+      "izoh": "Tangens cos α = 0 bo'lganda, kotangens esa sin α = 0 bo'lganda ma'noga ega emas. Berilgan oraliqda kosinus 90° va 270° da nolga aylanadi, sinus esa 0° va 180° da. Jami to'rtta burchak yig'iladi. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanmagan-qiymat",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#eda394b9"
+    },
+    {
+      "q": "Biror burchak uchun tg α = 2,5 ekani ma'lum. Shu burchakning kotangensini toping.",
+      "v": [
+        "2,5",
+        "−2,5",
+        "−0,4",
+        "0,4"
+      ],
+      "t": 3,
+      "izoh": "Bitta burchak uchun tangens va kotangens o'zaro teskari sonlar, ya'ni tg α · ctg α = 1. Demak ctg α = 1 : 2,5 = 0,4. Ishora o'zgarmaydi, chunki teskari son asl sonning ishorasini saqlaydi. Javob: 0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg-ctg-munosabat",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#710f3450"
+    },
+    {
+      "q": "Biror burchak uchun sin α = 0,6 va cos α = 0,8 bo'lsa, shu burchakning tangensini toping.",
+      "v": [
+        "0,75",
+        "1,25",
+        "1,4",
+        "0,48"
+      ],
+      "t": 0,
+      "izoh": "Ta'rifga ko'ra tg α = sin α : cos α = 0,6 : 0,8 = 0,75. Nisbatni teskari olgan o'quvchi 1,25 ni tanlaydi, chunki bu kotangens qiymati. 1,4 esa yig'indi, 0,48 ko'paytma bo'lib, ikkalasi ham ta'rifni chalkashtirish natijasi. Javob: 0,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg-ctg-munosabat",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#c76f77f2"
+    },
+    {
+      "q": "Ixtiyoriy o'tkir burchak uchun tg α · ctg α + sin²α + cos²α ifodaning qiymatini toping.",
+      "v": [
+        "1",
+        "2",
+        "0",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Birinchi qo'shiluvchi tangens va kotangensning ko'paytmasi bo'lgani uchun 1 ga teng. Ikkinchi va uchinchi qo'shiluvchilar asosiy trigonometrik ayniyat bo'yicha yana 1 ni beradi. Demak jami 1 + 1 = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-ctg-munosabat",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#bd7e19fe"
+    },
+    {
+      "q": "Biror burchak uchun ctg α = 1/3 ekani berilgan. tg α + ctg α ifodaning qiymatini hisoblang.",
+      "v": [
+        "3",
+        "4/3",
+        "10/3",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "Kotangens tangensga teskari son bo'lgani uchun tg α = 3. Endi yig'indini topamiz: 3 + 1/3 = 9/3 + 1/3 = 10/3. Faqat tangensni yozib qo'ygan o'quvchi 3 ni tanlaydi. Javob: 10/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-ctg-munosabat",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#645d54c5"
+    },
+    {
+      "q": "0° ≤ x ≤ 90° oraliqda sin x = √3/2 tenglamaning yechimini toping.",
+      "v": [
+        "30°",
+        "60°",
+        "45°",
+        "90°"
+      ],
+      "t": 1,
+      "izoh": "Jadval qiymatlariga qaraymiz: sin 30° = 1/2, sin 45° = √2/2, sin 60° = √3/2, sin 90° = 1. Berilgan oraliqda shartni faqat 60° qanoatlantiradi. 30° ni tanlash — sinus va kosinus jadvalini chalkashtirish natijasi. Javob: 60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-tenglama-burchak",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#430e7c33"
+    },
+    {
+      "q": "0° dan 90° gacha oraliqda cos x = √2/2 shartni qanoatlantiruvchi burchakni aniqlang.",
+      "v": [
+        "30°",
+        "45°",
+        "90°",
+        "0°"
+      ],
+      "t": 1,
+      "izoh": "Jadvalga ko'ra cos 0° = 1, cos 30° = √3/2, cos 45° = √2/2, cos 90° = 0. Demak izlanayotgan burchak 45° ga teng. 30° ni tanlash √3/2 va √2/2 qiymatlarini almashtirib yuborish xatosidir. Javob: 45°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-tenglama-burchak",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#7adbbba4"
+    },
+    {
+      "q": "O'tkir burchak uchun tg x = 1/√3 tenglamaning yechimi qanday bo'ladi?",
+      "v": [
+        "60°",
+        "45°",
+        "30°",
+        "0°"
+      ],
+      "t": 2,
+      "izoh": "Tangensning jadval qiymatlari: tg 0° = 0, tg 30° = 1/√3, tg 45° = 1, tg 60° = √3. Berilgan qiymat 1/√3 bo'lgani uchun x = 30°. 60° ni tanlash tangens va kotangens qiymatlarini almashtirish xatosi. Javob: 30°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-tenglama-burchak",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#1606b72e"
+    },
+    {
+      "q": "0° ≤ x ≤ 180° oraliqda cos x = −1/2 tenglamaning yechimini toping.",
+      "v": [
+        "150°",
+        "120°",
+        "60°",
+        "240°"
+      ],
+      "t": 1,
+      "izoh": "Kosinus manfiy bo'lgani uchun burchak II chorakda yotadi. cos 60° = 1/2 ekanidan foydalanamiz: II chorakdagi mos burchak 180° − 60° = 120°. 150° uchun kosinus −√3/2 ga teng, 240° esa berilgan oraliqqa kirmaydi. Javob: 120°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-tenglama-burchak",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#05178253"
+    },
+    {
+      "q": "Omborga yuk ko'tarish uchun uzunligi 24 m bo'lgan qiya lenta o'rnatilgan. Lenta gorizontal bilan 30° burchak hosil qilsa, u yukni qanday balandlikka ko'taradi?",
+      "v": [
+        "12 m",
+        "48 m",
+        "20,8 m",
+        "6 m"
+      ],
+      "t": 0,
+      "izoh": "Lenta gipotenuza, izlanayotgan balandlik esa 30° burchak qarshisidagi katet. Demak h = 24·sin 30° = 24·(1/2) = 12 m. 20,8 m qiymati kosinus bilan chalkashtirish natijasi, chunki 24·cos 30° ≈ 20,8. Javob: 12 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-qiyalik-balandlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#4286e644"
+    },
+    {
+      "q": "Yer to'lasiga tushadigan zinapoya 45° qiyalikda qurilgan va uning gorizontal proyeksiyasi 3 m ni tashkil qiladi. Zinapoya qanday chuqurlikka tushadi?",
+      "v": [
+        "1,5 m",
+        "4,2 m",
+        "3 m",
+        "6 m"
+      ],
+      "t": 2,
+      "izoh": "Chuqurlik gorizontal proyeksiyaga tangens orqali bog'langan: h = 3·tg 45°. Jadvalga ko'ra tg 45° = 1, demak h = 3 m. 4,2 m qiymati zinapoyaning o'z uzunligi, ya'ni 3·√2 ≈ 4,2 m ga teng va u chuqurlik emas. Javob: 3 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-uzunlik-topish",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#d5475126"
+    },
+    {
+      "q": "Quyosh ufqdan 60° balandlikda turganda tik o'sgan terakning soyasi 5 m ni tashkil qildi. Terakning balandligi qanchaga teng?",
+      "v": [
+        "5√3 m",
+        "(5√3)/3 m",
+        "10 m",
+        "5√2 m"
+      ],
+      "t": 0,
+      "izoh": "Soya qo'shni katet, daraxt balandligi esa 60° burchak qarshisidagi katet. Demak h = 5·tg 60° = 5√3 m, taxminan 8,7 m. Agar tangens o'rniga kotangens olinsa, (5√3)/3 chiqadi va bu tipik xato. Javob: 5√3 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-soya-va-balandlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#26a55378"
+    },
+    {
+      "q": "Balandligi 12 m bo'lgan chiroq ustunining soyasi ham 12 m ga teng bo'lib qoldi. Quyosh nurlari yer bilan qanday burchak hosil qilmoqda?",
+      "v": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "t": 1,
+      "izoh": "Ustun balandligi va soya uzunligi to'g'ri burchakli uchburchakning katetlari. tg α = 12 : 12 = 1 bo'ladi. Jadvalga ko'ra tangensi 1 ga teng burchak 45° dir. Javob: 45°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-soya-va-balandlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#2c3f0ba5"
+    },
+    {
+      "q": "Bog'da og'ir arava 200 N kuch bilan gorizontga 60° burchak ostida tortilmoqda. Kuchning gorizontal tashkil etuvchisi nechaga teng?",
+      "v": [
+        "173 N",
+        "200 N",
+        "50 N",
+        "100 N"
+      ],
+      "t": 3,
+      "izoh": "Gorizontal tashkil etuvchi kuchning gorizontal o'qdagi proyeksiyasi, ya'ni F·cos 60°. Demak u 200·(1/2) = 100 N ga teng. 173 N esa vertikal tashkil etuvchi bo'lib, u 200·sin 60° dan chiqadi. Javob: 100 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kuch-tashkil-etuvchi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#3ca3abae"
+    },
+    {
+      "q": "Qorda chana 150 N kuch bilan gorizontga 30° burchak ostida tortilmoqda. Kuchning vertikal tashkil etuvchisi necha nyutonni tashkil qiladi?",
+      "v": [
+        "75 N",
+        "130 N",
+        "150 N",
+        "37,5 N"
+      ],
+      "t": 0,
+      "izoh": "Vertikal tashkil etuvchi F·sin 30° formula bilan topiladi. Demak u 150·(1/2) = 75 N ga teng. 130 N qiymati gorizontal tashkil etuvchiga mos keladi, chunki 150·cos 30° ≈ 130. Javob: 75 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kuch-tashkil-etuvchi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#c7c5ca6d"
+    },
+    {
+      "q": "Diametri 50 m bo'lgan aylanma charxning markazi yerdan 30 m balandlikda joylashgan. Kabina eng yuqori nuqtadan 60° ga burilganda uning yerdan balandligi qanday bo'ladi?",
+      "v": [
+        "51,7 m",
+        "42,5 m",
+        "55 m",
+        "30 m"
+      ],
+      "t": 1,
+      "izoh": "Charx radiusi r = 50 : 2 = 25 m. Eng yuqori nuqtadan 60° burilganda kabina markazdan r·cos 60° = 25·(1/2) = 12,5 m yuqorida bo'ladi. Yerdan balandlik esa 30 + 12,5 = 42,5 m. 55 m — burilish umuman hisobga olinmagan holat. Javob: 42,5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-aylanma-harakat",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#d6ab4315"
+    },
+    {
+      "q": "Suv chig'irining radiusi 4 m. Chelak turgan radius gorizontal holatdan 30° ga burilgan. Chelak g'ildirak markazi sathidan qancha yuqorida bo'ladi?",
+      "v": [
+        "3,5 m",
+        "4 m",
+        "2 m",
+        "1 m"
+      ],
+      "t": 2,
+      "izoh": "Radius gorizontal holatdan burilgani uchun markazdan hisoblangan vertikal siljish r·sin 30° ga teng: 4·(1/2) = 2 m. 3,5 m qiymati 4·cos 30° ≈ 3,5 m dan chiqadi, u esa vertikal emas, gorizontal siljish. Javob: 2 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-qiyalik-balandlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#420ebc9c"
+    },
+    {
+      "q": "Uydagi rozetkadagi kuchlanish u = 310·sin t formula bilan o'zgaradi va voltda o'lchanadi. Kuchlanishning eng katta qiymati nechaga teng?",
+      "v": [
+        "310 V",
+        "220 V",
+        "155 V",
+        "0 V"
+      ],
+      "t": 0,
+      "izoh": "Sinusning eng katta qiymati 1 ga teng. Shu paytda u = 310·1 = 310 V bo'ladi. 220 V — bu tarmoqning ta'sir etuvchi kuchlanishi bo'lib, formuladan bevosita kelib chiqmaydi. Javob: 310 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tebranish-oraligi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#f44368ec"
+    },
+    {
+      "q": "Prujinaga osilgan yuk muvozanat holatidan x = 8·sin t qonun bilan tebranadi va siljish santimetrda o'lchanadi. Yuk muvozanat nuqtasidan eng ko'pi bilan qancha uzoqlashadi?",
+      "v": [
+        "16 sm",
+        "4 sm",
+        "0 sm",
+        "8 sm"
+      ],
+      "t": 3,
+      "izoh": "Siljishning moduli eng katta bo'lganda sinusning moduli 1 ga teng bo'ladi. Shunda x = 8 sm yoki x = −8 sm, ya'ni uzoqlashish 8 sm. 16 sm esa ikki chekka holat orasidagi to'liq masofa, muvozanatdan uzoqlashish emas. Javob: 8 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tebranish-oraligi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#b1353f99"
+    },
+    {
+      "q": "Baliqchilik hovuzida suv sathi h = 5 + 2,4·sin t formula bo'yicha o'zgaradi va metrda o'lchanadi. Eng yuqori va eng past sathlar orasidagi farq qanchaga teng?",
+      "v": [
+        "4,8 m",
+        "2,4 m",
+        "7,4 m",
+        "5 m"
+      ],
+      "t": 0,
+      "izoh": "Eng yuqori sath sinus 1 bo'lganda 5 + 2,4 = 7,4 m ga teng. Eng past sath sinus −1 bo'lganda 5 − 2,4 = 2,6 m. Ular orasidagi farq 7,4 − 2,6 = 4,8 m, ya'ni amplitudaning ikki barobari. Javob: 4,8 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tebranish-oraligi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#d6d97afb"
+    },
+    {
+      "q": "Narvonning ostki uchi devordan 3,5 m uzoqlikda turibdi va narvon yer bilan 60° burchak hosil qiladi. Narvonning uzunligini toping.",
+      "v": [
+        "1,75 m",
+        "7 m",
+        "6,1 m",
+        "14 m"
+      ],
+      "t": 1,
+      "izoh": "Devordan uzoqlik 60° burchakning qo'shni kateti, narvon esa gipotenuza. cos 60° = 3,5 : L munosabatdan L = 3,5 : (1/2) = 7 m. 1,75 m — bo'lish o'rniga ko'paytirish xatosi, 6,1 m esa narvon uchining balandligi. Javob: 7 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-uzunlik-topish",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#82783fb3"
+    },
+    {
+      "q": "Uyning tomi gorizontal bilan 30° burchak hosil qiladi va tom yonbag'rining uzunligi 9 m. Tomning eng baland nuqtasi devor sathidan qancha ko'tarilgan?",
+      "v": [
+        "7,8 m",
+        "18 m",
+        "4,5 m",
+        "3 m"
+      ],
+      "t": 2,
+      "izoh": "Yonbag'ir gipotenuza vazifasini bajaradi, ko'tarilish esa 30° burchak qarshisidagi katet. Demak h = 9·sin 30° = 9·(1/2) = 4,5 m. 7,8 m qiymati 9·cos 30° ga mos keladi va u gorizontal masofani beradi. Javob: 4,5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-qiyalik-balandlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#92658616"
+    },
+    {
+      "q": "Harbiy qiruvchi samolyot gorizontga 30° burchak bilan ko'tarilmoqda. U havoda 4 km yo'l bosganda qanday balandlikka chiqadi?",
+      "v": [
+        "2 km",
+        "3,5 km",
+        "8 km",
+        "1 km"
+      ],
+      "t": 0,
+      "izoh": "Bosib o'tilgan yo'l gipotenuza, balandlik esa 30° burchak qarshisidagi katet. Demak h = 4·sin 30° = 4·(1/2) = 2 km. 3,5 km qiymati 4·cos 30° ga yaqin bo'lib, u gorizontal siljishni bildiradi. Javob: 2 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qiyalik-balandlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#bb27ffdb"
+    },
+    {
+      "q": "Konveyer lentasining gorizontal proyeksiyasi 12 m, u yukni ko'targan balandlik ham 12 m ga teng. Lenta gorizontal bilan qanday burchak hosil qiladi?",
+      "v": [
+        "45°, chunki tg α = 1",
+        "30°, chunki sin α = 0,5",
+        "60°, chunki cos α = 0,5",
+        "90°, chunki tomonlar teng"
+      ],
+      "t": 0,
+      "izoh": "Balandlik va gorizontal proyeksiya to'g'ri burchakli uchburchakning katetlari bo'ladi. tg α = 12 : 12 = 1, jadvalga ko'ra bunday burchak 45° ga teng. Katetlar teng bo'lgani burchakni 90° qilmaydi, chunki 90° li burchak katetlar orasida yotadi. Javob: 45°, chunki tg α = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-burchak-topish",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#731c5cc2"
+    },
+    {
+      "q": "Bolalar maydonchasidagi sirpanchiqning qiya qismi 5 m, uning yerdan balandligi esa 2,5 m. Sirpanchiq yer bilan hosil qilgan burchak va uning sinusi nimaga teng?",
+      "v": [
+        "sin α = 0,5 va α = 60°",
+        "sin α = 0,5 va α = 30°",
+        "sin α = 2 va α = 30°",
+        "sin α = 0,4 va α = 45°"
+      ],
+      "t": 1,
+      "izoh": "Balandlik burchak qarshisidagi katet, qiya qism esa gipotenuza. Demak sin α = 2,5 : 5 = 0,5. Jadvalga ko'ra sinusi 0,5 ga teng burchak 30° dir. sin α = 2 bo'lishi mumkin emas, chunki sinus 1 dan katta bo'lmaydi. Javob: sin α = 0,5 va α = 30°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-burchak-topish",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#0d343f4d"
+    },
+    {
+      "q": "Tomga o'rnatilgan quyosh panelining optimal qiyaligi 30° deb belgilandi. Uzunligi 1,8 m bo'lgan panelning yuqori qirrasi tom sathidan necha santimetr ko'tariladi?",
+      "v": [
+        "156 sm",
+        "180 sm",
+        "90 sm",
+        "45 sm"
+      ],
+      "t": 2,
+      "izoh": "Ko'tarilish balandligi h = 1,8·sin 30° = 1,8·(1/2) = 0,9 m. Santimetrga aylantiramiz: 0,9 m = 90 sm. 156 sm qiymati kosinus bilan hisoblash xatosidan, 180 sm esa birlikni aylantirib, burchakni unutishdan chiqadi. Javob: 90 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-qiyalik-balandlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#94359b72"
+    },
+    {
+      "q": "Kema portdan chiqib, shimol yo'nalishidan 45° ga sharqqa og'ib 20 km yurdi. U shimol tomonga qancha siljigan?",
+      "v": [
+        "10 km",
+        "20 km",
+        "28,3 km",
+        "14,1 km"
+      ],
+      "t": 3,
+      "izoh": "Shimoliy siljish yo'lning shimol o'qidagi proyeksiyasi, ya'ni 20·cos 45°. Demak u 20·(√2/2) = 10√2 ≈ 14,1 km. 10 km — 45° ni yo'lning yarmi deb tushunish xatosi, 28,3 km esa bo'lish o'rniga ko'paytirish natijasi. Javob: 14,1 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-yonalish-proyeksiya",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#e80b86f0"
+    },
+    {
+      "q": "Radiusi 4 m bo'lgan aylanma charx kabinasi eng quyi nuqtadan 90° ga burildi. Kabinaning aylana markazidan gorizontal siljishi qanchaga teng?",
+      "v": [
+        "4 m",
+        "0 m",
+        "2 m",
+        "8 m"
+      ],
+      "t": 0,
+      "izoh": "Eng quyi nuqtadan o'lchangan burilish burchagi α bo'lsa, kabinaning markazdan gorizontal siljishi r·sin α ga teng. sin 90° = 1 bo'lgani uchun siljish 4·1 = 4 m, ya'ni radiusning o'ziga teng. 0 m — kabina eng quyi yoki eng yuqori nuqtada turgandagi qiymat, 8 m esa radius emas, diametr. Javob: 4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-aylanma-harakat",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#e8781bec"
+    },
+    {
+      "q": "sin 90° = 1 tenglik birlik aylana yordamida qanday izohlanadi? To'g'ri javobni tanlang.",
+      "v": [
+        "90° ga mos nuqtaning abssissasi 1 ga teng",
+        "90° ga mos nuqtaning ordinatasi 1 ga teng",
+        "90° da radius 1 ga teng bo'lgani uchun",
+        "90° ning yarmi 45° bo'lgani uchun"
+      ],
+      "t": 1,
+      "izoh": "Birlik aylanada burchakka mos nuqtaning ordinatasi sinusni beradi. 90° burchakka aylananing eng yuqori nuqtasi, ya'ni (0; 1) mos keladi. Uning ordinatasi 1 ga teng, shuning uchun sin 90° = 1. Javob: 90° ga mos nuqtaning ordinatasi 1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tarif-mantiqiy-asos",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#3933c9a8"
+    },
+    {
+      "q": "cos 0° = 1 ekanligi birlik aylana yordamida nima bilan izohlanadi?",
+      "v": [
+        "Nol burchakda barcha funksiyalar 1 ga teng",
+        "Aylananing radiusi 1 ga teng bo'lgani uchun",
+        "0° ga mos nuqta (1; 0) da yotadi, uning abssissasi 1",
+        "0° ga mos nuqta (0; 1) da yotadi, uning ordinatasi 1"
+      ],
+      "t": 2,
+      "izoh": "Birlik aylanada kosinus nuqtaning abssissasiga teng. 0° burchakka aylananing o'ng chekkasidagi (1; 0) nuqta mos keladi. Uning abssissasi 1 bo'lgani uchun cos 0° = 1. Bunda sin 0° = 0 bo'ladi, demak barcha funksiyalar 1 ga teng emas. Javob: 0° ga mos nuqta (1; 0) da yotadi, uning abssissasi 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tarif-mantiqiy-asos",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#e160a62d"
+    },
+    {
+      "q": "tg 90° ifodasining aniqlanmagan bo'lishi qanday tushuntiriladi? To'g'ri izohni tanlang.",
+      "v": [
+        "sin 90° = 0 bo'lgani uchun",
+        "90° birinchi chorakka kirmagani uchun",
+        "Tangens faqat o'tkir burchaklar uchun aniqlangani uchun",
+        "cos 90° = 0, nolga bo'lish esa mumkin emas"
+      ],
+      "t": 3,
+      "izoh": "Tangens tg α = sin α : cos α kasr ko'rinishida aniqlanadi. 90° uchun sin 90° = 1, cos 90° = 0. Maxraj nolga aylangani uchun kasr ma'noga ega emas. Tangens ixtiyoriy burchak uchun aniqlanadi, faqat kosinus nolga aylanadigan burchaklar bundan mustasno. Javob: cos 90° = 0, nolga bo'lish esa mumkin emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tarif-mantiqiy-asos",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#abe16e5e"
+    },
+    {
+      "q": "sin α qiymati hech qachon 1 dan katta bo'la olmasligi ta'rifning o'zidan qanday kelib chiqadi?",
+      "v": [
+        "sin α = y/r va |y| ≤ r bo'lgani uchun nisbat 1 dan oshmaydi",
+        "sin α = y/x bo'lgani uchun nisbat chegaralangan",
+        "Aylananing radiusi doim 1 ga teng bo'lgani uchun",
+        "Sinus faqat butun qiymatlar qabul qilgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Ta'rifga ko'ra sin α = y/r, bu yerda r nuqtaning boshdan uzoqligi. Katet gipotenuzadan uzun bo'lolmagani kabi, |y| ham r dan katta bo'lolmaydi. Demak nisbatning moduli 1 dan oshmaydi va sinus −1 bilan 1 orasida yotadi. Javob: sin α = y/r va |y| ≤ r bo'lgani uchun nisbat 1 dan oshmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-mantiqiy-asos",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#11fbd116"
+    },
+    {
+      "q": "O'quvchi biror burchak uchun sin α = 0,8 va cos α = 0,7 deb yozdi. Bunday juftlik mavjud bo'la oladimi?",
+      "v": [
+        "Yo'q, chunki sin²α + cos²α yig'indisi 1 ga teng chiqmaydi",
+        "Ha, chunki ikkala qiymat ham 1 dan kichik",
+        "Ha, chunki ikkala qiymat ham musbat",
+        "Yo'q, chunki sinus kosinusdan katta bo'lolmaydi"
+      ],
+      "t": 0,
+      "izoh": "Har qanday burchak uchun asosiy ayniyat sin²α + cos²α = 1 bajarilishi shart. Bu yerda 0,8² + 0,7² = 0,64 + 0,49 = 1,13, ya'ni 1 ga teng emas. Demak berilgan juftlik hech qanday burchakka mos kelmaydi. Javob: yo'q, chunki ayniyat buziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymat-mumkinligini-tekshirish",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#afae9f75"
+    },
+    {
+      "q": "sin x = −1, cos x = 1,2, tg x = 5, ctg x = −3 tengliklaridan qaysi biri hech qachon bajarilmaydi?",
+      "v": [
+        "sin x = −1",
+        "cos x = 1,2",
+        "tg x = 5",
+        "ctg x = −3"
+      ],
+      "t": 1,
+      "izoh": "Sinus va kosinusning qiymatlar to'plami −1 dan 1 gacha oraliq. Shuning uchun cos x = 1,2 hech qachon bajarilmaydi. Tangens va kotangens esa ixtiyoriy haqiqiy qiymatni qabul qila oladi, sin x = −1 esa 270° da o'rinli. Javob: cos x = 1,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymat-mumkinligini-tekshirish",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#49067957"
+    },
+    {
+      "q": "2·sin x = 3 tenglama nima uchun birorta ham yechimga ega emas?",
+      "v": [
+        "x manfiy bo'lib qolgani uchun",
+        "2 va 3 o'zaro tub sonlar bo'lgani uchun",
+        "sin x = 1,5 chiqadi, sinus esa 1 dan katta bo'lmaydi",
+        "Tenglama faqat radianda yechilgani uchun"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonni 2 ga bo'lamiz va sin x = 1,5 ni olamiz. Sinusning qiymatlar to'plami esa −1 dan 1 gacha, ya'ni 1,5 unga kirmaydi. Shuning uchun tenglamani qanoatlantiruvchi burchak umuman mavjud emas. Javob: sin x = 1,5 chiqadi, sinus esa 1 dan katta bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymat-mumkinligini-tekshirish",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#6a26aeef"
+    },
+    {
+      "q": "a parametrning qanday qiymatlarida sin x = (a − 1)/3 tenglama yechimga ega bo'ladi?",
+      "v": [
+        "−3 ≤ a ≤ 3",
+        "−1 ≤ a ≤ 1",
+        "0 ≤ a ≤ 4",
+        "−2 ≤ a ≤ 4"
+      ],
+      "t": 3,
+      "izoh": "Sinus faqat −1 dan 1 gacha qiymat olgani uchun −1 ≤ (a − 1)/3 ≤ 1 bo'lishi kerak. Barcha qismlarni 3 ga ko'paytiramiz: −3 ≤ a − 1 ≤ 3. Endi hamma joyga 1 ni qo'shamiz va −2 ≤ a ≤ 4 ni olamiz. Javob: −2 ≤ a ≤ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymat-mumkinligini-tekshirish",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#41e4539a"
+    },
+    {
+      "q": "Sport zalidagi yugurish yo'lakchasi qiyaligi tg α = 0,05 deb sozlangan. Yo'lakchaning gorizontal uzunligi 2 m bo'lsa, uning oxiri boshiga nisbatan qancha ko'tarilgan?",
+      "v": [
+        "10 sm",
+        "5 sm",
+        "20 sm",
+        "1 sm"
+      ],
+      "t": 0,
+      "izoh": "Tangens ta'rifiga ko'ra ko'tarilish balandligi gorizontal uzunlikni tangensga ko'paytirishdan chiqadi. Demak h = 2·0,05 = 0,1 m. Metrni santimetrga aylantiramiz: 0,1 m = 10 sm. 5 sm qiymati birlikni aylantirmasdan yarmini olish xatosi. Javob: 10 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-soya-va-balandlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#4cc4a504"
+    },
+    {
+      "q": "Ikki bola aravani bir xil kuch bilan tortmoqda: biri arqonni gorizontga 30°, ikkinchisi 60° burchak ostida ushlagan. Qaysi biri aravani gorizontal bo'ylab kuchliroq siljitadi?",
+      "v": [
+        "60° ostida tortayotgani, chunki burchak kattaroq",
+        "30° ostida tortayotgani, chunki cos 30° cos 60° dan katta",
+        "Ikkalasi ham bir xil siljitadi",
+        "Kuchning qiymati berilmagani uchun aniqlab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Gorizontal siljitish kuchning gorizontal tashkil etuvchisiga, ya'ni F·cos α ga bog'liq. cos 30° = √3/2 ≈ 0,87, cos 60° = 0,5. Kuchlar teng bo'lgani uchun kosinusi katta bo'lgan holat ustun keladi. Javob: 30° ostida tortayotgani.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-solishtirish-tahlil",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#581e3429"
+    },
+    {
+      "q": "Bir xil uzunlikdagi ikki qiya yo'lakdan biri gorizont bilan 30°, ikkinchisi 45° burchak hosil qiladi. Qaysi biri yukni balandroq ko'taradi?",
+      "v": [
+        "30° li yo'lak, chunki burchak kichik bo'lsa balandlik katta",
+        "Ikkalasi ham bir xil balandlikka ko'taradi",
+        "45° li yo'lak, chunki 0° dan 90° gacha sinus ortib boradi",
+        "Yo'lak uzunligi berilmagani uchun aniqlab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Ko'tarilish balandligi L·sin α formula bilan topiladi va uzunlik ikkalasida bir xil. 0° dan 90° gacha sinus o'sib boradi, ya'ni sin 45° ≈ 0,71 qiymati sin 30° = 0,5 dan katta. Demak 45° li yo'lak balandroq ko'taradi. Javob: 45° li yo'lak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-solishtirish-tahlil",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#fce9bd97"
+    },
+    {
+      "q": "0° dan 180° gacha oraliqda sinusi 1/2 ga teng bo'lgan barcha burchaklarni ko'rsating.",
+      "v": [
+        "30° va 210°",
+        "60° va 120°",
+        "Faqat 30°",
+        "30° va 150°"
+      ],
+      "t": 3,
+      "izoh": "Jadvaldan sin 30° = 1/2. Sinus II chorakda ham musbat, u yerdagi mos burchak 180° − 30° = 150° ga teng. 210° burchak III chorakda yotadi, u yerda sinus manfiy, shuning uchun u yechim emas. Javob: 30° va 150°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-qiymatli-burchaklar",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#1a6397af"
+    },
+    {
+      "q": "0° dan 360° gacha oraliqda kosinusi √2/2 ga teng bo'lgan burchaklarni toping.",
+      "v": [
+        "45° va 315°",
+        "45° va 135°",
+        "135° va 225°",
+        "Faqat 45°"
+      ],
+      "t": 0,
+      "izoh": "Jadvaldan cos 45° = √2/2. Kosinus IV chorakda ham musbat, u yerdagi mos burchak 360° − 45° = 315°. 135° burchak II chorakda yotadi va u yerda kosinus manfiy, demak u yechim bo'lolmaydi. Javob: 45° va 315°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-qiymatli-burchaklar",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#9dd26f59"
+    },
+    {
+      "q": "cos 40° va cos 320° qiymatlari orasida qanday munosabat mavjud?",
+      "v": [
+        "cos 320° manfiy, shuning uchun u kichikroq",
+        "Ular teng, chunki 320° = 360° − 40°",
+        "Ular qarama-qarshi sonlar",
+        "cos 320° ikki barobar katta"
+      ],
+      "t": 1,
+      "izoh": "320° burchakka birlik aylanada 40° ga mos nuqtaning Ox o'qiga nisbatan simmetrik nuqtasi to'g'ri keladi. Simmetriyada abssissa o'zgarmaydi, faqat ordinata ishorasi almashadi. Abssissa esa kosinus bo'lgani uchun cos 320° = cos 40°. Javob: ular teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-qiymatli-burchaklar",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#2d80d347"
+    },
+    {
+      "q": "sin 160° qiymati quyidagi qaysi qiymatga aynan teng bo'ladi?",
+      "v": [
+        "−sin 20°",
+        "cos 20°",
+        "sin 20°",
+        "sin 340°"
+      ],
+      "t": 2,
+      "izoh": "160° burchak II chorakda yotadi va u 180° − 20° ko'rinishida yoziladi. Birlik aylanada bu nuqta 20° ga mos nuqtaning Oy o'qiga nisbatan simmetrigi bo'ladi, ordinata esa o'zgarmaydi. Demak sin 160° = sin 20°. Javob: sin 20°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-qiymatli-burchaklar",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#160f2f5e"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda o'tkir burchakning sinusi qanday nisbat orqali aniqlanadi?",
+      "v": [
+        "Qo'shni katetning gipotenuzaga nisbati",
+        "Qarshi katetning qo'shni katetga nisbati",
+        "Gipotenuzaning qarshi katetga nisbati",
+        "Qarshi katetning gipotenuzaga nisbati"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri burchakli uchburchakda sinus burchak qarshisidagi katetning gipotenuzaga nisbatiga teng. Qo'shni katetning gipotenuzaga nisbati kosinusni, qarshi katetning qo'shni katetga nisbati esa tangensni beradi. Javob: qarshi katetning gipotenuzaga nisbati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tarif-uchburchak-nisbat",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#f420c95e"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari 9 sm va 40 sm, gipotenuzasi esa 41 sm. 9 sm li katet qarshisidagi burchakning kosinusini toping.",
+      "v": [
+        "40/41",
+        "9/41",
+        "9/40",
+        "41/40"
+      ],
+      "t": 0,
+      "izoh": "Kosinus qo'shni katetning gipotenuzaga nisbati. 9 sm li katet qarshisidagi burchak uchun qo'shni katet 40 sm bo'ladi. Demak kosinus 40/41 ga teng. 9/41 esa shu burchakning sinusi, 9/40 — tangensi. Javob: 40/41.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-uchburchak-nisbat",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#39712ec2"
+    },
+    {
+      "q": "Bino tomiga tortilgan antenna simining uzunligi 25 m, uning yerdagi tayanchi esa binodan 7 m uzoqlikda. Sim yer bilan hosil qilgan burchakning kosinusi nechaga teng?",
+      "v": [
+        "24/25",
+        "7/25",
+        "7/24",
+        "25/7"
+      ],
+      "t": 1,
+      "izoh": "Sim gipotenuza, tayanchdan binogacha bo'lgan 7 m esa burchakning qo'shni kateti. Kosinus qo'shni katetning gipotenuzaga nisbati bo'lgani uchun u 7/25 ga teng. 24/25 esa sinus, chunki devor balandligi √(25² − 7²) = 24 m. Javob: 7/25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-uchburchak-nisbat",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#0bcb91be"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning o'tkir burchaklari A va B uchun sin A = cos B tenglik nima sababdan o'rinli bo'ladi?",
+      "v": [
+        "Uchburchak teng yonli bo'lgani uchun",
+        "Katetlar o'zaro teng bo'lgani uchun",
+        "A va B burchaklar yig'indisi 90° ga teng bo'lgani uchun",
+        "Gipotenuza eng uzun tomon bo'lgani uchun"
+      ],
+      "t": 2,
+      "izoh": "A burchakning qarshi kateti ayni paytda B burchakning qo'shni kateti bo'ladi. Shu sababli sin A va cos B bitta nisbatni, ya'ni o'sha katetning gipotenuzaga nisbatini beradi. Buning asosi esa o'tkir burchaklar yig'indisining 90° ga tengligi. Javob: A va B burchaklar yig'indisi 90° ga teng bo'lgani uchun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-uchburchak-nisbat",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#ee78ea2b"
+    },
+    {
+      "q": "sin 30° · cos 0° + cos 30° · sin 0° ifodaning qiymatini hisoblang.",
+      "v": [
+        "1",
+        "√3/2",
+        "0",
+        "0,5"
+      ],
+      "t": 3,
+      "izoh": "Jadval qiymatlarini qo'yamiz: sin 30° = 1/2, cos 0° = 1, cos 30° = √3/2, sin 0° = 0. Birinchi ko'paytma (1/2)·1 = 0,5, ikkinchisi esa nolga ko'paytirilgani uchun 0. Yig'indi 0,5 + 0 = 0,5. Javob: 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifoda-soddalashtirish-jadval",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#7f4a63ef"
+    },
+    {
+      "q": "(tg 45° + ctg 45°) : (sin 90° + cos 0°) ifodaning qiymatini toping.",
+      "v": [
+        "1",
+        "2",
+        "0,5",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Suratda tg 45° + ctg 45° = 1 + 1 = 2 hosil bo'ladi. Maxrajda sin 90° + cos 0° = 1 + 1 = 2. Ikkisining nisbati 2 : 2 = 1 ga teng. Faqat suratni hisoblab to'xtagan o'quvchi 2 ni tanlaydi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-soddalashtirish-jadval",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#b602580a"
+    },
+    {
+      "q": "8·sin 30° · cos 60° · tg 45° ko'paytmaning qiymati nimaga teng?",
+      "v": [
+        "4",
+        "2",
+        "1",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Jadvaldan sin 30° = 1/2, cos 60° = 1/2 va tg 45° = 1. Ko'paytmani hisoblaymiz: 8·(1/2)·(1/2)·1 = 8 : 4 = 2. Faqat bitta yarimni hisobga olgan o'quvchi 4 ni tanlaydi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-soddalashtirish-jadval",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#4d105b86"
+    },
+    {
+      "q": "sin 90° − 2·cos 60° + 3·tg 0° ifodaning qiymatini toping.",
+      "v": [
+        "1",
+        "2",
+        "0",
+        "−1"
+      ],
+      "t": 2,
+      "izoh": "Jadval qiymatlari: sin 90° = 1, cos 60° = 1/2, tg 0° = 0. Ifodaga qo'yamiz: 1 − 2·(1/2) + 3·0 = 1 − 1 + 0 = 0. Ikkinchi hadning koeffitsientini unutgan o'quvchi natijani 1 deb oladi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-soddalashtirish-jadval",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#86960061"
+    },
+    {
+      "q": "x o'tkir burchak va cos x = 1/2 bo'lsa, sin x + tg x ifodaning qiymatini toping.",
+      "v": [
+        "(√3)/2",
+        "2√3",
+        "(√3)/3",
+        "(3√3)/2"
+      ],
+      "t": 3,
+      "izoh": "Kosinusi 1/2 ga teng o'tkir burchak — bu 60°. Jadvaldan sin 60° = √3/2 va tg 60° = √3. Yig'indini topamiz: √3/2 + √3 = √3/2 + 2√3/2 = (3√3)/2. Faqat sinusni yozib qo'ygan o'quvchi (√3)/2 ni tanlaydi. Javob: (3√3)/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-soddalashtirish-jadval",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#787a9c45"
+    },
+    {
+      "q": "Meteostansiyada shamolning shimoliy tashkil etuvchisi v·cos α formula bilan hisoblanadi. Shamol tezligi 18 m/s va burchak 60° bo'lsa, shimoliy tashkil etuvchi qanchaga teng?",
+      "v": [
+        "9 m/s",
+        "15,6 m/s",
+        "18 m/s",
+        "36 m/s"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga ko'ra cos 60° = 1/2. Formulaga qo'yamiz: 18·(1/2) = 9 m/s. 15,6 m/s qiymati sinus bilan hisoblash xatosidan chiqadi, chunki 18·sin 60° ≈ 15,6. Javob: 9 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-kuch-tashkil-etuvchi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#59aa4427"
+    },
+    {
+      "q": "Fermer uchastkasi chekkasidan suv kanaliga 45° burchak ostida ariq qazimoqchi. Kanalgacha eng qisqa masofa 30 m bo'lsa, ariqning uzunligi qanday bo'ladi?",
+      "v": [
+        "21,2 m",
+        "42,4 m",
+        "30 m",
+        "60 m"
+      ],
+      "t": 1,
+      "izoh": "Eng qisqa masofa 45° burchakning qo'shni kateti, ariq esa gipotenuza. cos 45° = 30 : L munosabatdan L = 30 : (√2/2) = 30√2 ≈ 42,4 m. 21,2 m qiymati bo'lish o'rniga ko'paytirish xatosidan chiqadi. Javob: 42,4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-uzunlik-topish",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#2282f331"
+    },
+    {
+      "q": "α burchak II chorakda, β burchak esa IV chorakda yotadi. sin α · cos β ko'paytmasining ishorasi qanday bo'ladi?",
+      "v": [
+        "Manfiy",
+        "Nolga teng",
+        "Musbat",
+        "Aniqlash mumkin emas"
+      ],
+      "t": 2,
+      "izoh": "II chorakda ordinata musbat, demak sin α musbat. IV chorakda abssissa musbat, demak cos β ham musbat. Ikki musbat sonning ko'paytmasi musbat bo'ladi. Javob: musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-ishorasi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#24e736d3"
+    },
+    {
+      "q": "Burchakning kosinusi ham, sinusi ham manfiy bo'lsa, u qaysi chorakda yotadi va buning sababi nima?",
+      "v": [
+        "II chorakda, chunki abssissa manfiy",
+        "IV chorakda, chunki ordinata manfiy",
+        "I chorakda, chunki ikkala koordinata musbat",
+        "III chorakda, chunki u yerda abssissa ham, ordinata ham manfiy"
+      ],
+      "t": 3,
+      "izoh": "Kosinus burchakka mos nuqtaning abssissasi, sinus esa ordinatasi ishorasini takrorlaydi. Ikkalasi bir vaqtda manfiy bo'ladigan yagona chorak — uchinchi chorak. II chorakda ordinata musbat, IV chorakda esa abssissa musbat. Javob: III chorakda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-topish-shartdan",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#5f155a03"
+    },
+    {
+      "q": "Burchak 90° dan 180° gacha ortib borganda kosinus qiymati qanday o'zgaradi?",
+      "v": [
+        "0 dan −1 gacha kamayadi",
+        "−1 dan 0 gacha ortadi",
+        "0 dan 1 gacha ortadi",
+        "Umuman o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Bu oraliqda burchakka mos nuqta birlik aylananing yuqori qismida chapga siljiydi. Uning abssissasi 0 dan −1 gacha kichrayadi, abssissa esa kosinusni beradi. Demak cos 90° = 0 dan cos 180° = −1 gacha kamayish sodir bo'ladi. Javob: 0 dan −1 gacha kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-ortishida-monotonlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#538f64dd"
+    },
+    {
+      "q": "Ertalab quyosh ufqdan ko'tarilib, uning balandlik burchagi 0° dan 90° gacha ortib boradi. Shu vaqtda tik ustunning soyasi qanday o'zgaradi?",
+      "v": [
+        "Uzayib boradi, chunki tangens kamayadi",
+        "Qisqarib boradi, chunki tangens ortadi",
+        "Umuman o'zgarmaydi",
+        "Avval uzayadi, keyin qisqaradi"
+      ],
+      "t": 1,
+      "izoh": "Soya uzunligi ustun balandligini tangensga bo'lish orqali topiladi. Burchak 0° dan 90° gacha ortganda tangens 0 dan cheksizgacha o'sib boradi. Maxraj kattalashgani uchun kasr, ya'ni soya uzunligi kichrayadi. Javob: qisqarib boradi, chunki tangens ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-ortishida-monotonlik",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#1260b056"
+    },
+    {
+      "q": "Yukni 10 m balandlikka ko'taradigan qiya yo'lak avval 30° qiyalikda edi, endi u 45° qiyalikka o'zgartirildi. Yo'lakning yangi uzunligi qanday bo'ladi?",
+      "v": [
+        "Taxminan 7,1 m bo'ladi, ya'ni qisqaradi",
+        "20 m bo'lib qoladi",
+        "Taxminan 14,1 m bo'ladi, ya'ni qisqaradi",
+        "10 m bo'ladi, ya'ni qisqaradi"
+      ],
+      "t": 2,
+      "izoh": "Boshida uzunlik L = 10 : sin 30° = 20 m edi. Yangi holatda L = 10 : sin 45° = 10 : (√2/2) = 10√2 ≈ 14,1 m. Bo'lish o'rniga ko'paytirgan o'quvchi 10·sin 45° ≈ 7,1 m ni, sinus o'rniga tangens olgan esa 10 m ni tanlaydi. Javob: taxminan 14,1 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-solishtirish-tahlil",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#dcdfd03b"
+    },
+    {
+      "q": "y = cos x funksiyaning qiymatlar to'plami qanday oraliqdan iborat?",
+      "v": [
+        "(−∞; +∞)",
+        "[0; 1]",
+        "[−1; 0]",
+        "[−1; 1]"
+      ],
+      "t": 3,
+      "izoh": "Birlik aylanada kosinus nuqtaning abssissasiga teng. Abssissa aylananing chap chekkasidagi −1 dan o'ng chekkasidagi 1 gacha barcha qiymatlarni oladi. Demak qiymatlar to'plami −1 dan 1 gacha yopiq oraliq. Javob: [−1; 1].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlar-oraligi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#8cbf3fe4"
+    },
+    {
+      "q": "tg x funksiyaning qiymatlar to'plami sin x funksiyanikidan nimasi bilan farq qiladi?",
+      "v": [
+        "tg x barcha haqiqiy qiymatlarni oladi, sin x esa faqat −1 bilan 1 orasidagilarni",
+        "Ikkalasi ham −1 bilan 1 orasida yotadi",
+        "tg x faqat musbat qiymatlar qabul qiladi",
+        "sin x chegaralanmagan, tg x esa chegaralangan"
+      ],
+      "t": 0,
+      "izoh": "Sinus nuqtaning ordinatasi bo'lgani uchun uning moduli 1 dan oshmaydi. Tangens esa ordinatani abssissaga bo'lish natijasi va abssissa nolga yaqinlashganda kasr istalgancha katta bo'ladi. Shuning uchun tangensning qiymatlar to'plami butun sonlar o'qi. Javob: tg x barcha haqiqiy qiymatlarni oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatlar-oraligi",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#01e9dc65"
+    },
+    {
+      "q": "Talaba sin α = 3/5 va α burchak II chorakda deb, cos α = 4/5 degan javobni yozdi. Uning xatosi qayerda?",
+      "v": [
+        "cos α qiymati 3/5 ga teng bo'lishi kerak edi",
+        "II chorakda kosinus manfiy, demak to'g'ri javob −4/5",
+        "sin α = 3/5 bo'lishining o'zi mumkin emas",
+        "Xato yo'q, javob to'liq to'g'ri"
+      ],
+      "t": 1,
+      "izoh": "Asosiy ayniyatdan cos²α = 1 − 9/25 = 16/25, demak kosinusning moduli 4/5. Ammo II chorakda burchakka mos nuqtaning abssissasi manfiy, shuning uchun kosinus ham manfiy bo'lishi shart. Talaba modulni topib, ishorani tekshirmagan. Javob: to'g'ri qiymat −4/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xatoni-topish-tahlil",
+      "id": "matematika_trig_m02-sin-cos-tg-ctg-tariflari#7a65797e"
+    }
+  ]
+}

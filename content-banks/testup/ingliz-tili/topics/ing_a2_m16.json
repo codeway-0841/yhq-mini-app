@@ -1,0 +1,1306 @@
+{
+  "nom": "Possessive pronouns (mine...)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "This book is ___. (I)",
+      "v": [
+        "mine",
+        "my",
+        "me",
+        "I"
+      ],
+      "t": 0,
+      "izoh": "'I' -> mine (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#d8b6666c"
+    },
+    {
+      "q": "This pen is ___. (you)",
+      "v": [
+        "your",
+        "yours",
+        "you",
+        "mine"
+      ],
+      "t": 1,
+      "izoh": "'you' -> yours (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#b257c164"
+    },
+    {
+      "q": "This car is ___. (he)",
+      "v": [
+        "him",
+        "he",
+        "his",
+        "mine"
+      ],
+      "t": 2,
+      "izoh": "'he' -> his (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#fbb530fa"
+    },
+    {
+      "q": "This house is ___. (she)",
+      "v": [
+        "her",
+        "she",
+        "mine",
+        "hers"
+      ],
+      "t": 3,
+      "izoh": "'she' -> hers (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#f4c7f8c7"
+    },
+    {
+      "q": "This bag is ___. (we)",
+      "v": [
+        "ours",
+        "our",
+        "us",
+        "we"
+      ],
+      "t": 0,
+      "izoh": "'we' -> ours (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#6725cbd3"
+    },
+    {
+      "q": "This dog is ___. (they)",
+      "v": [
+        "their",
+        "theirs",
+        "them",
+        "they"
+      ],
+      "t": 1,
+      "izoh": "'they' -> theirs (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#e50fd7dd"
+    },
+    {
+      "q": "This phone is ___. (I)",
+      "v": [
+        "my",
+        "me",
+        "mine",
+        "I"
+      ],
+      "t": 2,
+      "izoh": "'I' -> mine (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#907a1f0b"
+    },
+    {
+      "q": "This ball is ___. (you)",
+      "v": [
+        "your",
+        "you",
+        "mine",
+        "yours"
+      ],
+      "t": 3,
+      "izoh": "'you' -> yours (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#924e8cd2"
+    },
+    {
+      "q": "This hat is ___. (he)",
+      "v": [
+        "his",
+        "him",
+        "he",
+        "mine"
+      ],
+      "t": 0,
+      "izoh": "'he' -> his (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#c867585d"
+    },
+    {
+      "q": "This bike is ___. (she)",
+      "v": [
+        "her",
+        "hers",
+        "she",
+        "mine"
+      ],
+      "t": 1,
+      "izoh": "'she' -> hers (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#b229a648"
+    },
+    {
+      "q": "This key is ___. (we)",
+      "v": [
+        "our",
+        "us",
+        "ours",
+        "we"
+      ],
+      "t": 2,
+      "izoh": "'we' -> ours (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#5c0d768a"
+    },
+    {
+      "q": "This cup is ___. (they)",
+      "v": [
+        "their",
+        "them",
+        "they",
+        "theirs"
+      ],
+      "t": 3,
+      "izoh": "'they' -> theirs (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#515f8829"
+    },
+    {
+      "q": "This room is ___. (I)",
+      "v": [
+        "mine",
+        "my",
+        "me",
+        "I"
+      ],
+      "t": 0,
+      "izoh": "'I' -> mine (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#f69ad055"
+    },
+    {
+      "q": "This computer is ___. (you)",
+      "v": [
+        "your",
+        "yours",
+        "you",
+        "mine"
+      ],
+      "t": 1,
+      "izoh": "'you' -> yours (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#3dadcae8"
+    },
+    {
+      "q": "This jacket is ___. (he)",
+      "v": [
+        "him",
+        "he",
+        "his",
+        "mine"
+      ],
+      "t": 2,
+      "izoh": "'he' -> his (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#f54be54c"
+    },
+    {
+      "q": "This umbrella is ___. (she)",
+      "v": [
+        "her",
+        "she",
+        "mine",
+        "hers"
+      ],
+      "t": 3,
+      "izoh": "'she' -> hers (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#a83ad07c"
+    },
+    {
+      "q": "This watch is ___. (we)",
+      "v": [
+        "ours",
+        "our",
+        "us",
+        "we"
+      ],
+      "t": 0,
+      "izoh": "'we' -> ours (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#bcd19b84"
+    },
+    {
+      "q": "This camera is ___. (they)",
+      "v": [
+        "their",
+        "theirs",
+        "them",
+        "they"
+      ],
+      "t": 1,
+      "izoh": "'they' -> theirs (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#e4f2f5c9"
+    },
+    {
+      "q": "This ticket is ___. (I)",
+      "v": [
+        "my",
+        "me",
+        "mine",
+        "I"
+      ],
+      "t": 2,
+      "izoh": "'I' -> mine (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#a53c8c9f"
+    },
+    {
+      "q": "This chair is ___. (you)",
+      "v": [
+        "your",
+        "you",
+        "mine",
+        "yours"
+      ],
+      "t": 3,
+      "izoh": "'you' -> yours (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#81d4bb95"
+    },
+    {
+      "q": "This desk is ___. (he)",
+      "v": [
+        "his",
+        "him",
+        "he",
+        "mine"
+      ],
+      "t": 0,
+      "izoh": "'he' -> his (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#44df7c89"
+    },
+    {
+      "q": "This clock is ___. (she)",
+      "v": [
+        "her",
+        "hers",
+        "she",
+        "mine"
+      ],
+      "t": 1,
+      "izoh": "'she' -> hers (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#61a821db"
+    },
+    {
+      "q": "This book is ___. (we)",
+      "v": [
+        "our",
+        "us",
+        "ours",
+        "we"
+      ],
+      "t": 2,
+      "izoh": "'we' -> ours (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#f7364c72"
+    },
+    {
+      "q": "This pen is ___. (they)",
+      "v": [
+        "their",
+        "them",
+        "they",
+        "theirs"
+      ],
+      "t": 3,
+      "izoh": "'they' -> theirs (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#2c0b6102"
+    },
+    {
+      "q": "This car is ___. (I)",
+      "v": [
+        "mine",
+        "my",
+        "me",
+        "I"
+      ],
+      "t": 0,
+      "izoh": "'I' -> mine (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#08b68a12"
+    },
+    {
+      "q": "This house is ___. (you)",
+      "v": [
+        "your",
+        "yours",
+        "you",
+        "mine"
+      ],
+      "t": 1,
+      "izoh": "'you' -> yours (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#3375e76d"
+    },
+    {
+      "q": "This bag is ___. (he)",
+      "v": [
+        "him",
+        "he",
+        "his",
+        "mine"
+      ],
+      "t": 2,
+      "izoh": "'he' -> his (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#85966895"
+    },
+    {
+      "q": "This dog is ___. (she)",
+      "v": [
+        "her",
+        "she",
+        "mine",
+        "hers"
+      ],
+      "t": 3,
+      "izoh": "'she' -> hers (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#075b3046"
+    },
+    {
+      "q": "This phone is ___. (we)",
+      "v": [
+        "ours",
+        "our",
+        "us",
+        "we"
+      ],
+      "t": 0,
+      "izoh": "'we' -> ours (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#199f5792"
+    },
+    {
+      "q": "This ball is ___. (they)",
+      "v": [
+        "their",
+        "theirs",
+        "them",
+        "they"
+      ],
+      "t": 1,
+      "izoh": "'they' -> theirs (egalik olmoshi, otdan keyin turadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m16#ca0506a0"
+    },
+    {
+      "q": "This is ___ dog. (I)",
+      "v": [
+        "mine",
+        "me",
+        "my",
+        "I"
+      ],
+      "t": 2,
+      "izoh": "Otdan oldin egalik sifati keladi: my dog.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#db59c57e"
+    },
+    {
+      "q": "That phone is ___. (you)",
+      "v": [
+        "your",
+        "you",
+        "mine",
+        "yours"
+      ],
+      "t": 3,
+      "izoh": "Otdan keyin egalik olmoshi keladi: yours.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#984991d7"
+    },
+    {
+      "q": "This is ___ ball. (he)",
+      "v": [
+        "his",
+        "him",
+        "he",
+        "mine"
+      ],
+      "t": 0,
+      "izoh": "Otdan oldin egalik sifati keladi: his ball.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#50da7078"
+    },
+    {
+      "q": "That hat is ___. (she)",
+      "v": [
+        "her",
+        "hers",
+        "she",
+        "mine"
+      ],
+      "t": 1,
+      "izoh": "Otdan keyin egalik olmoshi keladi: hers.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#945c60e4"
+    },
+    {
+      "q": "This is ___ bike. (we)",
+      "v": [
+        "ours",
+        "us",
+        "our",
+        "we"
+      ],
+      "t": 2,
+      "izoh": "Otdan oldin egalik sifati keladi: our bike.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#062a9b3b"
+    },
+    {
+      "q": "That key is ___. (they)",
+      "v": [
+        "their",
+        "them",
+        "they",
+        "theirs"
+      ],
+      "t": 3,
+      "izoh": "Otdan keyin egalik olmoshi keladi: theirs.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#fe1a4c58"
+    },
+    {
+      "q": "This is ___ cup. (I)",
+      "v": [
+        "my",
+        "mine",
+        "me",
+        "I"
+      ],
+      "t": 0,
+      "izoh": "Otdan oldin egalik sifati keladi: my cup.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#8fec95f9"
+    },
+    {
+      "q": "That room is ___. (you)",
+      "v": [
+        "your",
+        "yours",
+        "you",
+        "mine"
+      ],
+      "t": 1,
+      "izoh": "Otdan keyin egalik olmoshi keladi: yours.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#a003e71a"
+    },
+    {
+      "q": "This is ___ computer. (he)",
+      "v": [
+        "him",
+        "he",
+        "his",
+        "mine"
+      ],
+      "t": 2,
+      "izoh": "Otdan oldin egalik sifati keladi: his computer.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#0263b003"
+    },
+    {
+      "q": "That jacket is ___. (she)",
+      "v": [
+        "her",
+        "she",
+        "mine",
+        "hers"
+      ],
+      "t": 3,
+      "izoh": "Otdan keyin egalik olmoshi keladi: hers.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#cdc3a106"
+    },
+    {
+      "q": "This is ___ umbrella. (we)",
+      "v": [
+        "our",
+        "ours",
+        "us",
+        "we"
+      ],
+      "t": 0,
+      "izoh": "Otdan oldin egalik sifati keladi: our umbrella.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#40f4ecf9"
+    },
+    {
+      "q": "That watch is ___. (they)",
+      "v": [
+        "their",
+        "theirs",
+        "them",
+        "they"
+      ],
+      "t": 1,
+      "izoh": "Otdan keyin egalik olmoshi keladi: theirs.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#a1969def"
+    },
+    {
+      "q": "This is ___ camera. (I)",
+      "v": [
+        "mine",
+        "me",
+        "my",
+        "I"
+      ],
+      "t": 2,
+      "izoh": "Otdan oldin egalik sifati keladi: my camera.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#95408362"
+    },
+    {
+      "q": "That ticket is ___. (you)",
+      "v": [
+        "your",
+        "you",
+        "mine",
+        "yours"
+      ],
+      "t": 3,
+      "izoh": "Otdan keyin egalik olmoshi keladi: yours.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#7b5c59f8"
+    },
+    {
+      "q": "This is ___ chair. (he)",
+      "v": [
+        "his",
+        "him",
+        "he",
+        "mine"
+      ],
+      "t": 0,
+      "izoh": "Otdan oldin egalik sifati keladi: his chair.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#077f0e36"
+    },
+    {
+      "q": "That desk is ___. (she)",
+      "v": [
+        "her",
+        "hers",
+        "she",
+        "mine"
+      ],
+      "t": 1,
+      "izoh": "Otdan keyin egalik olmoshi keladi: hers.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#262d6587"
+    },
+    {
+      "q": "This is ___ clock. (we)",
+      "v": [
+        "ours",
+        "us",
+        "our",
+        "we"
+      ],
+      "t": 2,
+      "izoh": "Otdan oldin egalik sifati keladi: our clock.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#909bb965"
+    },
+    {
+      "q": "That book is ___. (they)",
+      "v": [
+        "their",
+        "them",
+        "they",
+        "theirs"
+      ],
+      "t": 3,
+      "izoh": "Otdan keyin egalik olmoshi keladi: theirs.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#f0f48519"
+    },
+    {
+      "q": "This is ___ pen. (I)",
+      "v": [
+        "my",
+        "mine",
+        "me",
+        "I"
+      ],
+      "t": 0,
+      "izoh": "Otdan oldin egalik sifati keladi: my pen.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#059c3611"
+    },
+    {
+      "q": "That car is ___. (you)",
+      "v": [
+        "your",
+        "yours",
+        "you",
+        "mine"
+      ],
+      "t": 1,
+      "izoh": "Otdan keyin egalik olmoshi keladi: yours.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#d1f761b9"
+    },
+    {
+      "q": "This is ___ house. (he)",
+      "v": [
+        "him",
+        "he",
+        "his",
+        "mine"
+      ],
+      "t": 2,
+      "izoh": "Otdan oldin egalik sifati keladi: his house.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#267f1c49"
+    },
+    {
+      "q": "That bag is ___. (she)",
+      "v": [
+        "her",
+        "she",
+        "mine",
+        "hers"
+      ],
+      "t": 3,
+      "izoh": "Otdan keyin egalik olmoshi keladi: hers.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#525bf0d0"
+    },
+    {
+      "q": "This is ___ dog. (we)",
+      "v": [
+        "our",
+        "ours",
+        "us",
+        "we"
+      ],
+      "t": 0,
+      "izoh": "Otdan oldin egalik sifati keladi: our dog.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#ca06f10d"
+    },
+    {
+      "q": "That phone is ___. (they)",
+      "v": [
+        "their",
+        "theirs",
+        "them",
+        "they"
+      ],
+      "t": 1,
+      "izoh": "Otdan keyin egalik olmoshi keladi: theirs.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#3c692a68"
+    },
+    {
+      "q": "This is ___ ball. (I)",
+      "v": [
+        "mine",
+        "me",
+        "my",
+        "I"
+      ],
+      "t": 2,
+      "izoh": "Otdan oldin egalik sifati keladi: my ball.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#40e4c246"
+    },
+    {
+      "q": "'Whose car is this?' 'It's ___.' (I)",
+      "v": [
+        "my",
+        "me",
+        "I",
+        "mine"
+      ],
+      "t": 3,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: mine.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#b23c095f"
+    },
+    {
+      "q": "'Whose house is this?' 'It's ___.' (you)",
+      "v": [
+        "yours",
+        "your",
+        "you",
+        "mine"
+      ],
+      "t": 0,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: yours.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#8f26af09"
+    },
+    {
+      "q": "'Whose bag is this?' 'It's ___.' (he)",
+      "v": [
+        "him",
+        "his",
+        "he",
+        "mine"
+      ],
+      "t": 1,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: his.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#b1937816"
+    },
+    {
+      "q": "'Whose dog is this?' 'It's ___.' (she)",
+      "v": [
+        "her",
+        "she",
+        "hers",
+        "mine"
+      ],
+      "t": 2,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: hers.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#d9e7305c"
+    },
+    {
+      "q": "'Whose phone is this?' 'It's ___.' (we)",
+      "v": [
+        "our",
+        "us",
+        "we",
+        "ours"
+      ],
+      "t": 3,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: ours.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#bb2c549c"
+    },
+    {
+      "q": "'Whose ball is this?' 'It's ___.' (they)",
+      "v": [
+        "theirs",
+        "their",
+        "them",
+        "they"
+      ],
+      "t": 0,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: theirs.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#0dc1999e"
+    },
+    {
+      "q": "'Whose hat is this?' 'It's ___.' (I)",
+      "v": [
+        "my",
+        "mine",
+        "me",
+        "I"
+      ],
+      "t": 1,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: mine.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#35c343a7"
+    },
+    {
+      "q": "'Whose bike is this?' 'It's ___.' (you)",
+      "v": [
+        "your",
+        "you",
+        "yours",
+        "mine"
+      ],
+      "t": 2,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: yours.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#675e686a"
+    },
+    {
+      "q": "'Whose key is this?' 'It's ___.' (he)",
+      "v": [
+        "him",
+        "he",
+        "mine",
+        "his"
+      ],
+      "t": 3,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: his.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#df175709"
+    },
+    {
+      "q": "'Whose cup is this?' 'It's ___.' (she)",
+      "v": [
+        "hers",
+        "her",
+        "she",
+        "mine"
+      ],
+      "t": 0,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: hers.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#e6642b9a"
+    },
+    {
+      "q": "'Whose room is this?' 'It's ___.' (we)",
+      "v": [
+        "our",
+        "ours",
+        "us",
+        "we"
+      ],
+      "t": 1,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: ours.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#f10d0590"
+    },
+    {
+      "q": "'Whose computer is this?' 'It's ___.' (they)",
+      "v": [
+        "their",
+        "them",
+        "theirs",
+        "they"
+      ],
+      "t": 2,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: theirs.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#26aba0c6"
+    },
+    {
+      "q": "'Whose jacket is this?' 'It's ___.' (I)",
+      "v": [
+        "my",
+        "me",
+        "I",
+        "mine"
+      ],
+      "t": 3,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: mine.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#f41f65cb"
+    },
+    {
+      "q": "'Whose umbrella is this?' 'It's ___.' (you)",
+      "v": [
+        "yours",
+        "your",
+        "you",
+        "mine"
+      ],
+      "t": 0,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: yours.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#f30e25ae"
+    },
+    {
+      "q": "'Whose watch is this?' 'It's ___.' (he)",
+      "v": [
+        "him",
+        "his",
+        "he",
+        "mine"
+      ],
+      "t": 1,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: his.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#248e0a5a"
+    },
+    {
+      "q": "'Whose camera is this?' 'It's ___.' (she)",
+      "v": [
+        "her",
+        "she",
+        "hers",
+        "mine"
+      ],
+      "t": 2,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: hers.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#ce96b042"
+    },
+    {
+      "q": "'Whose ticket is this?' 'It's ___.' (we)",
+      "v": [
+        "our",
+        "us",
+        "we",
+        "ours"
+      ],
+      "t": 3,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: ours.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#f0b65ffa"
+    },
+    {
+      "q": "'Whose chair is this?' 'It's ___.' (they)",
+      "v": [
+        "theirs",
+        "their",
+        "them",
+        "they"
+      ],
+      "t": 0,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: theirs.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#ff7fff28"
+    },
+    {
+      "q": "'Whose desk is this?' 'It's ___.' (I)",
+      "v": [
+        "my",
+        "mine",
+        "me",
+        "I"
+      ],
+      "t": 1,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: mine.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#bf730c51"
+    },
+    {
+      "q": "'Whose clock is this?' 'It's ___.' (you)",
+      "v": [
+        "your",
+        "you",
+        "yours",
+        "mine"
+      ],
+      "t": 2,
+      "izoh": "'Whose?' savoliga egalik olmoshi bilan javob beriladi: yours.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#c90c06a4"
+    },
+    {
+      "q": "Find the mistake: This is mine hat.",
+      "v": [
+        "This",
+        "is",
+        "hat",
+        "mine"
+      ],
+      "t": 3,
+      "izoh": "Otdan oldin 'my' bo'lishi kerak, 'mine' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#7373a288"
+    },
+    {
+      "q": "Find the mistake: That bike is your.",
+      "v": [
+        "your",
+        "That",
+        "bike",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "Otdan keyin 'yours' bo'lishi kerak, 'your' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#146c3ebf"
+    },
+    {
+      "q": "Find the mistake: This is hers key.",
+      "v": [
+        "This",
+        "hers",
+        "is",
+        "key"
+      ],
+      "t": 1,
+      "izoh": "Otdan oldin 'her' bo'lishi kerak, 'hers' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#060bd19b"
+    },
+    {
+      "q": "Find the mistake: That cup is our.",
+      "v": [
+        "That",
+        "cup",
+        "our",
+        "is"
+      ],
+      "t": 2,
+      "izoh": "Otdan keyin 'ours' bo'lishi kerak, 'our' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#0a0a2b93"
+    },
+    {
+      "q": "Find the mistake: This is theirs room.",
+      "v": [
+        "This",
+        "is",
+        "room",
+        "theirs"
+      ],
+      "t": 3,
+      "izoh": "Otdan oldin 'their' bo'lishi kerak, 'theirs' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#9f28e218"
+    },
+    {
+      "q": "Find the mistake: That computer is my.",
+      "v": [
+        "my",
+        "That",
+        "computer",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "Otdan keyin 'mine' bo'lishi kerak, 'my' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#671c27e3"
+    },
+    {
+      "q": "Find the mistake: This is yours jacket.",
+      "v": [
+        "This",
+        "yours",
+        "is",
+        "jacket"
+      ],
+      "t": 1,
+      "izoh": "Otdan oldin 'your' bo'lishi kerak, 'yours' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#b0791bf9"
+    },
+    {
+      "q": "Find the mistake: That umbrella is her.",
+      "v": [
+        "That",
+        "umbrella",
+        "her",
+        "is"
+      ],
+      "t": 2,
+      "izoh": "Otdan keyin 'hers' bo'lishi kerak, 'her' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#24e33d38"
+    },
+    {
+      "q": "Find the mistake: This is ours watch.",
+      "v": [
+        "This",
+        "is",
+        "watch",
+        "ours"
+      ],
+      "t": 3,
+      "izoh": "Otdan oldin 'our' bo'lishi kerak, 'ours' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#ec2d0350"
+    },
+    {
+      "q": "Find the mistake: That camera is their.",
+      "v": [
+        "their",
+        "That",
+        "camera",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "Otdan keyin 'theirs' bo'lishi kerak, 'their' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#fed30a3f"
+    },
+    {
+      "q": "Find the mistake: This is mine ticket.",
+      "v": [
+        "This",
+        "mine",
+        "is",
+        "ticket"
+      ],
+      "t": 1,
+      "izoh": "Otdan oldin 'my' bo'lishi kerak, 'mine' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#1d6cf08e"
+    },
+    {
+      "q": "Find the mistake: That chair is your.",
+      "v": [
+        "That",
+        "chair",
+        "your",
+        "is"
+      ],
+      "t": 2,
+      "izoh": "Otdan keyin 'yours' bo'lishi kerak, 'your' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#a5f05d33"
+    },
+    {
+      "q": "Find the mistake: This is hers desk.",
+      "v": [
+        "This",
+        "is",
+        "desk",
+        "hers"
+      ],
+      "t": 3,
+      "izoh": "Otdan oldin 'her' bo'lishi kerak, 'hers' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#de032c06"
+    },
+    {
+      "q": "Find the mistake: That clock is our.",
+      "v": [
+        "our",
+        "That",
+        "clock",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "Otdan keyin 'ours' bo'lishi kerak, 'our' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#35c6568a"
+    },
+    {
+      "q": "Find the mistake: This is theirs book.",
+      "v": [
+        "This",
+        "theirs",
+        "is",
+        "book"
+      ],
+      "t": 1,
+      "izoh": "Otdan oldin 'their' bo'lishi kerak, 'theirs' emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#e24d70fb"
+    },
+    {
+      "q": "Order the words: mine / is / this / book",
+      "v": [
+        "Book This is mine.",
+        "This is book mine.",
+        "This book is mine.",
+        "Mine is book This."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri tartib: This book is mine.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#ccd6c275"
+    },
+    {
+      "q": "Order the words: yours / is / this / pen",
+      "v": [
+        "Pen This is yours.",
+        "This is pen yours.",
+        "Yours is pen This.",
+        "This pen is yours."
+      ],
+      "t": 3,
+      "izoh": "To'g'ri tartib: This pen is yours.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#50973063"
+    },
+    {
+      "q": "Order the words: his / is / this / car",
+      "v": [
+        "This car is his.",
+        "Car This is his.",
+        "This is car his.",
+        "His is car This."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri tartib: This car is his.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#3e547e03"
+    },
+    {
+      "q": "Order the words: hers / is / this / house",
+      "v": [
+        "House This is hers.",
+        "This house is hers.",
+        "This is house hers.",
+        "Hers is house This."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri tartib: This house is hers.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#8a9949de"
+    },
+    {
+      "q": "Order the words: ours / is / this / bag",
+      "v": [
+        "Bag This is ours.",
+        "This is bag ours.",
+        "This bag is ours.",
+        "Ours is bag This."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri tartib: This bag is ours.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#7013153f"
+    },
+    {
+      "q": "Order the words: theirs / is / this / dog",
+      "v": [
+        "Dog This is theirs.",
+        "This is dog theirs.",
+        "Theirs is dog This.",
+        "This dog is theirs."
+      ],
+      "t": 3,
+      "izoh": "To'g'ri tartib: This dog is theirs.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#31d378b1"
+    },
+    {
+      "q": "Order the words: mine / is / this / phone",
+      "v": [
+        "This phone is mine.",
+        "Phone This is mine.",
+        "This is phone mine.",
+        "Mine is phone This."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri tartib: This phone is mine.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#84c82f5a"
+    },
+    {
+      "q": "Order the words: yours / is / this / ball",
+      "v": [
+        "Ball This is yours.",
+        "This ball is yours.",
+        "This is ball yours.",
+        "Yours is ball This."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri tartib: This ball is yours.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#91c0009b"
+    },
+    {
+      "q": "Order the words: his / is / this / hat",
+      "v": [
+        "Hat This is his.",
+        "This is hat his.",
+        "This hat is his.",
+        "His is hat This."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri tartib: This hat is his.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#910d55d3"
+    },
+    {
+      "q": "Order the words: hers / is / this / bike",
+      "v": [
+        "Bike This is hers.",
+        "This is bike hers.",
+        "Hers is bike This.",
+        "This bike is hers."
+      ],
+      "t": 3,
+      "izoh": "To'g'ri tartib: This bike is hers.",
+      "qiy": "orta",
+      "id": "ing_a2_m16#209cc36f"
+    }
+  ]
+}

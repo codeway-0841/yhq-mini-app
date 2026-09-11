@@ -1,0 +1,441 @@
+{
+  "nom": "20-mavzu. Foiz va molyar konsentratsiya o'rtasidagi bog'lanish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Foiz konsentratsiya ma'lum bo'lib, molyar konsentratsiyani aniqlash formulasini ko'rsating.",
+      "v": [
+        "C_M = C% · 10 · ρ / M",
+        "C_M = C% · M / (ρ · 10)",
+        "C_M = C% · ρ / (10 · M)",
+        "C_M = M · ρ / (C% · 10)"
+      ],
+      "t": 0,
+      "izoh": "Foiz konsentratsiyani eritma zichligiga va 10 ga ko'paytirib, molyar massaga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#a105482c"
+    },
+    {
+      "q": "Molyar konsentratsiya ma'lum bo'lib, foiz konsentratsiyani aniqlash formulasini ko'rsating.",
+      "v": [
+        "C% = C_M · M / (ρ · 10)",
+        "C% = C% · 10 · ρ / M",
+        "C% = C_M · ρ / (M · 10)",
+        "C% = C_M · M · ρ / 10"
+      ],
+      "t": 0,
+      "izoh": "Molyar konsentratsiyani molyar massaga ko'paytirib, zichlikni 10 ga ko'paytmasiga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#9722c6a5"
+    },
+    {
+      "q": "Foiz va molyar konsentratsiya berilganda eritma zichligini aniqlash formulasini ko'rsating.",
+      "v": [
+        "ρ = C_M · M / (C% · 10)",
+        "ρ = C% · 10 / (C_M · M)",
+        "ρ = C_M · C% · M · 10",
+        "ρ = C% · M / (C_M · 10)"
+      ],
+      "t": 0,
+      "izoh": "Molyar konsentratsiyani molyar massaga ko'paytirib, foiz konsentratsiyani 10 ga ko'paytmasiga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#7372835e"
+    },
+    {
+      "q": "Erigan moddaning molyar massasini (M) aniqlash formulasini ko'rsating.",
+      "v": [
+        "M = C% · 10 · ρ / C_M",
+        "M = C_M · ρ / (C% · 10)",
+        "M = C% · C_M / (10 · ρ)",
+        "M = C_M · 10 / (C% · ρ)"
+      ],
+      "t": 0,
+      "izoh": "Foiz konsentratsiyani eritma zichligiga va 10 ga ko'paytirib, molyar konsentratsiyaga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#5d7bf225"
+    },
+    {
+      "q": "C_M = C% · 10 · ρ / M formulasida qanday koeffitsiyent ishtirok etadi?",
+      "v": [
+        "10",
+        "100",
+        "1000",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Foiz konsentratsiya eritma zichligiga va 10 ga ko'paytiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#ada52f33"
+    },
+    {
+      "q": "1-masalada KOH eritmasining foiz konsentratsiyasi va zichligi qanday berilgan?",
+      "v": [
+        "20% li, ρ=1,25 g/ml",
+        "10% li, ρ=1,26 g/ml",
+        "40% li, ρ=1,2 g/ml",
+        "25% li, ρ=1,176 g/ml"
+      ],
+      "t": 0,
+      "izoh": "1-masala: 20% li (ρ=1,25 g/ml) KOH eritmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#62f833be"
+    },
+    {
+      "q": "1-masalada KOH ning molyar massasi qancha deb olingan?",
+      "v": [
+        "56 g/mol",
+        "40 g/mol",
+        "63 g/mol",
+        "101 g/mol"
+      ],
+      "t": 0,
+      "izoh": "M(KOH) = 56 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#5e497c2d"
+    },
+    {
+      "q": "20% li (ρ=1,25 g/ml) KOH eritmasining molyar konsentratsiyasi qancha?",
+      "v": [
+        "4,46 M",
+        "2,23 M",
+        "5,6 M",
+        "3,36 M"
+      ],
+      "t": 0,
+      "izoh": "C_M = 20·1,25·10/56 = 4,46 M.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#581778a1"
+    },
+    {
+      "q": "2-masalada HNO3 eritmasining molyar konsentratsiyasi va zichligi qanday berilgan?",
+      "v": [
+        "1,5 M li, ρ=1,26 g/ml",
+        "2,5 M li, ρ=1,25 g/ml",
+        "4 M li, ρ=1,4 g/ml",
+        "3 M li, ρ=1,275 g/ml"
+      ],
+      "t": 0,
+      "izoh": "2-masala: 1,5 M li (ρ=1,26 g/ml) HNO3 eritmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#c03d02fb"
+    },
+    {
+      "q": "2-masalada HNO3 ning molyar massasi qancha deb olingan?",
+      "v": [
+        "63 g/mol",
+        "56 g/mol",
+        "98 g/mol",
+        "101 g/mol"
+      ],
+      "t": 0,
+      "izoh": "M(HNO3) = 63 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#045e9e0a"
+    },
+    {
+      "q": "1,5 M li (ρ=1,26 g/ml) HNO3 eritmasining foiz konsentratsiyasi qancha?",
+      "v": [
+        "7,5%",
+        "75%",
+        "15%",
+        "63%"
+      ],
+      "t": 0,
+      "izoh": "C% = 1,5·63/(1,26·10) = 94,5/12,6 = 7,5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#c4531cd0"
+    },
+    {
+      "q": "KNO3 ning 20,2% li eritmasining molyar konsentratsiyasi 2,5 M bo'lsa, shu eritmaning zichligi qancha?",
+      "v": [
+        "1,25 g/ml",
+        "1,26 g/ml",
+        "1,4 g/ml",
+        "1,176 g/ml"
+      ],
+      "t": 0,
+      "izoh": "ρ = 2,5·101/(20,2·10) = 1,25 g/ml.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#9e339038"
+    },
+    {
+      "q": "3-masalada KNO3 ning molyar massasi qancha deb olingan?",
+      "v": [
+        "101 g/mol",
+        "85 g/mol",
+        "63 g/mol",
+        "56 g/mol"
+      ],
+      "t": 0,
+      "izoh": "M(KNO3) = 101 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#700ae442"
+    },
+    {
+      "q": "16% li (ρ=1,4 g/ml) noma'lum modda eritmasining molyar konsentratsiyasi 4 M bo'lsa, erigan moddaning molyar massasi qancha?",
+      "v": [
+        "56 g/mol",
+        "40 g/mol",
+        "63 g/mol",
+        "101 g/mol"
+      ],
+      "t": 0,
+      "izoh": "M = 16·10·1,4/4 = 56 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#42db56a9"
+    },
+    {
+      "q": "4-masalada molyar massasi 56 g/mol bo'lgan erigan noma'lum modda qaysi deb topilgan?",
+      "v": [
+        "KOH",
+        "Fe",
+        "NaOH",
+        "HNO3"
+      ],
+      "t": 0,
+      "izoh": "Molyar massasi 56 g/mol bo'lgan modda — KOH.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#b85a1c34"
+    },
+    {
+      "q": "4-masalada Fe to'g'ri javob sifatida qabul qilinmaydi, chunki...",
+      "v": [
+        "Fe suvda erimaydi va eritma hosil qilmaydi",
+        "Fe ning molyar massasi 56 ga teng emas",
+        "Fe kislota emas",
+        "Fe eritmada konsentratsiya hosil qilmaydi, chunki gaz"
+      ],
+      "t": 0,
+      "izoh": "Izohda aytilgan: Fe suvda erimaydi va eritma hosil qilmaganligi uchun Fe to'g'ri javob sifatida qabul qilinmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#f2424220"
+    },
+    {
+      "q": "3-masalada eritma zichligi qanday ifoda orqali hisoblangan?",
+      "v": [
+        "ρ = 2,5 · 101 / (20,2 · 10)",
+        "ρ = 20,2 · 10 / (2,5 · 101)",
+        "ρ = 2,5 · 20,2 / (101 · 10)",
+        "ρ = 101 · 10 / (2,5 · 20,2)"
+      ],
+      "t": 0,
+      "izoh": "ρ = C_M·M/(C%·10) = 2,5·101/(20,2·10) = 1,25 g/ml.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#e7cd3295"
+    },
+    {
+      "q": "4-masalada erigan moddaning molyar massasi qanday ifoda orqali hisoblangan?",
+      "v": [
+        "M = 16 · 10 · 1,4 / 4",
+        "M = 4 · 1,4 / (16 · 10)",
+        "M = 16 · 4 / (1,4 · 10)",
+        "M = 4 · 10 / (16 · 1,4)"
+      ],
+      "t": 0,
+      "izoh": "M = C%·10·ρ/C_M = 16·10·1,4/4 = 56 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#389754df"
+    },
+    {
+      "q": "2-masalada foiz konsentratsiya qanday ifoda orqali hisoblangan?",
+      "v": [
+        "C% = 1,5 · 63 / (1,26 · 10)",
+        "C% = 1,5 · 1,26 · 10 / 63",
+        "C% = 63 · 10 / (1,5 · 1,26)",
+        "C% = 1,26 · 63 / (1,5 · 10)"
+      ],
+      "t": 0,
+      "izoh": "C% = C_M·M/(ρ·10) = 1,5·63/(1,26·10) = 7,5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#16003237"
+    },
+    {
+      "q": "1-masalada molyar konsentratsiya qanday ifoda orqali hisoblangan?",
+      "v": [
+        "C_M = 20 · 1,25 · 10 / 56",
+        "C_M = 20 · 56 / (1,25 · 10)",
+        "C_M = 56 · 10 / (20 · 1,25)",
+        "C_M = 1,25 · 56 / (20 · 10)"
+      ],
+      "t": 0,
+      "izoh": "C_M = C%·ρ·10/M = 20·1,25·10/56 = 4,46 M.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#448f2b68"
+    },
+    {
+      "q": "C_M = C% · 10 · ρ / M formulasida ρ nimani bildiradi?",
+      "v": [
+        "Eritmaning zichligini",
+        "Erigan modda miqdorini",
+        "Eritma hajmini",
+        "Eritma massasini"
+      ],
+      "t": 0,
+      "izoh": "ρ — eritmaning zichligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#ab392278"
+    },
+    {
+      "q": "Mavzuga doir 1-masalada qanday shart berilgan?",
+      "v": [
+        "5% li (ρ=1,26 g/ml) HNO3 eritmasining molyar konsentratsiyasini aniqlash",
+        "40% li (ρ=1,225 g/ml) H2SO4 eritmasining molyar konsentratsiyasini aniqlash",
+        "3 M li NaNO3 eritmasining foiz konsentratsiyasini aniqlash",
+        "0,5 M li KBr eritmasining foiz konsentratsiyasini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 1-masala: 5% li (ρ=1,26 g/ml) HNO3 eritmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#07da83db"
+    },
+    {
+      "q": "Mavzuga doir 5-masalada qanday shart berilgan?",
+      "v": [
+        "NaNO3 ning 17% li eritmasining molyar konsentratsiyasi 2,5 M bo'lsa, zichligini aniqlash",
+        "CaCl2 ning 55,5% li eritmasining molyar konsentratsiyasi 6 M bo'lsa, zichligini aniqlash",
+        "25% li noma'lum modda eritmasining molyar konsentratsiyasi 3 M bo'lsa, moddani aniqlash",
+        "16% li noma'lum modda eritmasining molyar konsentratsiyasi 4,8 M bo'lsa, moddani aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 5-masala: NaNO3, 17%, 2,5 M — zichlikni aniqlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#70e00f0d"
+    },
+    {
+      "q": "Mavzuga doir 7-masalada qanday shart berilgan?",
+      "v": [
+        "25% li (ρ=1,176 g/ml) noma'lum modda eritmasining molyar konsentratsiyasi 3 M bo'lsa, modda(lar)ni aniqlash",
+        "16% li (ρ=1,2 g/ml) noma'lum modda eritmasining molyar konsentratsiyasi 4,8 M bo'lsa, moddani aniqlash",
+        "40% li (ρ=1,225 g/ml) H2SO4 eritmasining molyar konsentratsiyasini aniqlash",
+        "3 M li (ρ=1,275 g/ml) NaNO3 eritmasining foiz konsentratsiyasini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 7-masala: 25%, ρ=1,176 g/ml, 3 M — noma'lum moddani aniqlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#08a8e518"
+    },
+    {
+      "q": "Noma'lum modda eritmasining foiz, molyar konsentratsiyalari va zichligi ma'lum bo'lsa, avval nima aniqlanadi?",
+      "v": [
+        "Erigan moddaning molyar massasi",
+        "Erigan moddaning ekvivalent massasi",
+        "Eritmaning hajmi",
+        "Eritmaning massasi"
+      ],
+      "t": 0,
+      "izoh": "Erigan moddaning molyar massasi aniqlanib, molyar massa orqali moddaning nomi bilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#a1311d0a"
+    },
+    {
+      "q": "Foiz konsentratsiyadan molyar konsentratsiyaga o'tishda hosil bo'lgan son nimaga bo'linadi?",
+      "v": [
+        "Erigan moddaning molyar massasiga",
+        "Erigan moddaning ekvivalent massasiga",
+        "Eritma hajmiga",
+        "Eritma massasiga"
+      ],
+      "t": 0,
+      "izoh": "C%·10·ρ hosil bo'lgan son molyar massaga (M) bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#b40fe18b"
+    },
+    {
+      "q": "Eritma zichligini topish formulasi qaysi formuladan keltirib chiqariladi?",
+      "v": [
+        "C% = C_M · M / (ρ · 10) formulasidan",
+        "C% = m1/m2 · 100% formulasidan",
+        "C_N = n_ekv/V formulasidan",
+        "ρ = m2/V formulasidan"
+      ],
+      "t": 0,
+      "izoh": "Molyar konsentratsiyadan foiz konsentratsiyaga o'tish formulasi asosiy formula hisoblanib, undan zichlik formulasi keltirib chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#cee2b599"
+    },
+    {
+      "q": "Noma'lum moddani aniqlashda molyar massa nimani bildirishga yordam beradi?",
+      "v": [
+        "Erigan noma'lum moddaning nomini bilishga",
+        "Eritmaning zichligini topishga",
+        "Eritmaning hajmini topishga",
+        "Eritmaning foizini topishga"
+      ],
+      "t": 0,
+      "izoh": "Molyar massa orqali erigan noma'lum moddaning nomini bilish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#f006539a"
+    },
+    {
+      "q": "Mavzuga doir 3-masalada qanday shart berilgan?",
+      "v": [
+        "3 M li (ρ=1,275 g/ml) NaNO3 eritmasining foiz konsentratsiyasini aniqlash",
+        "0,5 M li (ρ=1,19 g/ml) KBr eritmasining foiz konsentratsiyasini aniqlash",
+        "5% li (ρ=1,26 g/ml) HNO3 eritmasining molyar konsentratsiyasini aniqlash",
+        "CaCl2 ning 55,5% li eritmasining zichligini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 3-masala: 3 M li (ρ=1,275 g/ml) NaNO3 eritmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m20-foiz-molyar-boglanish#0a7ce4c8"
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "nom": "28-mavzu. Kondensatorlarni Parallel Va Ketmaket Ulash",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektr zanjirlarda kondensatorlar sig'imini oshirish yoki kamaytirish zarurati bo'lganda kondensatorlar qanday ulanadi?",
+      "v": [
+        "Parallel yoki ketma-ket",
+        "Faqat parallel",
+        "Faqat ketma-ket",
+        "Faqat aralash"
+      ],
+      "t": 0,
+      "izoh": "Kondensatorlar sig'imini oshirish yoki kamaytirish zarurati bo'lganda ular parallel yoki ketma-ket ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#90992c68"
+    },
+    {
+      "q": "Kondensatorlarni o'zaro parallel ulash orqali ularning elektr sig'imini nima qilish mumkin?",
+      "v": [
+        "Oshirish (orttirish) mumkin",
+        "Kamaytirish mumkin",
+        "O'zgarmas qilish mumkin",
+        "Nolga tenglash mumkin"
+      ],
+      "t": 0,
+      "izoh": "Tajribada aniqlanishicha, kondensatorlarni o'zaro parallel ulash orqali ularning elektr sig'imini orttirish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#4e6c1f9b"
+    },
+    {
+      "q": "Kondensatorlar parallel ulanganda umumiy elektr sig'imi qanday topiladi?",
+      "v": [
+        "C = C₁ + C₂ + C₃ + ... + Cₙ",
+        "1/C = 1/C₁ + 1/C₂ + ... + 1/Cₙ",
+        "C = C₁·C₂/(C₁ + C₂)",
+        "C = C₁ = C₂ = ... = Cₙ"
+      ],
+      "t": 0,
+      "izoh": "Parallel ulanganda C = C₁ + C₂ + C₃ + ... + Cₙ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#13fcbab8"
+    },
+    {
+      "q": "Kondensatorlar parallel ulanganda umumiy elektr sig'imi nimaga teng?",
+      "v": [
+        "Alohida kondensatorlar sig'imlarining yig'indisiga",
+        "Sig'imlar ko'paytmasiga",
+        "Eng kichik sig'imga",
+        "Sig'imlar ayirmasiga"
+      ],
+      "t": 0,
+      "izoh": "Kondensatorlar parallel ulanganda umumiy elektr sig'imi alohida kondensatorlar sig'imlarining yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#a236bebd"
+    },
+    {
+      "q": "Kondensatorlarni parallel ulashda ularning musbat ishorali qoplamalari qaysi qoplamalar bilan ulanadi?",
+      "v": [
+        "Musbat ishorali qoplamalar bilan",
+        "Manfiy ishorali qoplamalar bilan",
+        "Er bilan",
+        "Voltmetr bilan"
+      ],
+      "t": 0,
+      "izoh": "Parallel ulash uchun musbat ishorali qoplamalar musbat ishorali qoplamalar bilan, manfiy ishorali qoplamalar manfiy ishorali qoplamalar bilan ulanadi (83-rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#f3ba7da3"
+    },
+    {
+      "q": "Kondensatorlar parallel ulanganda umumiy uchlaridagi kuchlanish qanday bo'ladi?",
+      "v": [
+        "Bir xil: U = U₁ = U₂ = U₃ = ... = Uₙ",
+        "U = U₁ + U₂ + ... + Uₙ",
+        "U = U₁ − U₂",
+        "U = U₁ · U₂"
+      ],
+      "t": 0,
+      "izoh": "Parallel ulanganda umumiy uchlaridagi kuchlanish bir xil bo'ladi: U = U₁ = U₂ = ... = Uₙ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#f1b13025"
+    },
+    {
+      "q": "Kondensatorlar parallel ulanganda to'liq zaryad nimaga teng?",
+      "v": [
+        "Har bir kondensator zaryadlarining yig'indisiga: q = q₁ + q₂ + ... + qₙ",
+        "Zaryadlar ayirmasiga",
+        "Eng kichik zaryadga",
+        "Zaryadlar ko'paytmasiga"
+      ],
+      "t": 0,
+      "izoh": "To'liq zaryad har bir kondensator zaryadlarining yig'indisiga teng: q = q₁ + q₂ + q₃ + ... + qₙ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#e78ad488"
+    },
+    {
+      "q": "Kondensatorlarni o'zaro parallel ulash orqali nima qilish mumkin ekan?",
+      "v": [
+        "Ko'proq elektr zaryadini yig'ish mumkin",
+        "Zaryadni kamaytirish mumkin",
+        "Kuchlanishni oshirish mumkin",
+        "Sig'imni kamaytirish mumkin"
+      ],
+      "t": 0,
+      "izoh": "Kondensatorlarni o'zaro parallel ulash orqali ko'proq elektr zaryadini yig'ish mumkin ekan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#5359e1b3"
+    },
+    {
+      "q": "Kondensatorlar ketma-ket ulanganda umumiy elektr sig'imining teskari miqdori nimaga teng?",
+      "v": [
+        "Har bir kondensator sig'imining teskari miqdorlari yig'indisiga",
+        "Sig'imlar yig'indisiga",
+        "Eng katta sig'imga",
+        "Sig'imlar ko'paytmasiga"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanganda 1/C = 1/C₁ + 1/C₂ + 1/C₃ + ... + 1/Cₙ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#e091f84a"
+    },
+    {
+      "q": "Kondensatorlarni o'zaro ketma-ket ulanganda umumiy elektr sig'imi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Oshadi",
+        "O'zgarmaydi",
+        "Ikki baravar oshadi"
+      ],
+      "t": 0,
+      "izoh": "Kondensatorlarni o'zaro ketma-ket ulanganda umumiy elektr sig'imi kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#7d21ae33"
+    },
+    {
+      "q": "Kondensatorlar ketma-ket ulanganda umumiy kuchlanish nimaga teng?",
+      "v": [
+        "Har bir kondensator uchlaridagi kuchlanishlarning algebraik yig'indisiga: U = U₁ + U₂ + ... + Uₙ",
+        "Har bir kondensatordagi kuchlanishga",
+        "Kuchlanishlar ayirmasiga",
+        "Kuchlanishlar ko'paytmasiga"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanganda umumiy kuchlanish har bir kondensator uchlaridagi kuchlanishlarning algebraik yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#560ca731"
+    },
+    {
+      "q": "Ikkita kondensator ketma-ket ulanganda umumiy sig'im qanday hisoblanadi (84-rasm)?",
+      "v": [
+        "C = C₁·C₂/(C₁ + C₂)",
+        "C = C₁ + C₂",
+        "C = (C₁ + C₂)/(C₁·C₂)",
+        "C = C₁·C₂"
+      ],
+      "t": 0,
+      "izoh": "84-rasmda ikkita ketma-ket kondensator uchun C = C₁·C₂/(C₁ + C₂) keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#9c39892a"
+    },
+    {
+      "q": "Ikkita kondensator ketma-ket ulanganda umumiy kuchlanish qanday bo'ladi (84-rasm)?",
+      "v": [
+        "U = U₁ + U₂",
+        "U = U₁ = U₂",
+        "U = U₁ − U₂",
+        "U = U₁ · U₂"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulashda U = U₁ + U₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#c3c72551"
+    },
+    {
+      "q": "Sig'imi 2 μF va 6 μF bo'lgan kondensatorlar 9 V kuchlanishli tok manbaiga o'zaro parallel ulangan. Zanjirning umumiy elektr sig'imi qanday bo'ladi?",
+      "v": [
+        "8 μF",
+        "4 μF",
+        "3 μF",
+        "12 μF"
+      ],
+      "t": 0,
+      "izoh": "C_um = C₁ + C₂ = 2 + 6 = 8 μF.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#dc983e0e"
+    },
+    {
+      "q": "Sig'imi 2 μF va 6 μF bo'lgan kondensatorlar 9 V ga parallel ulanganda birinchi kondensator qanday zaryad oladi?",
+      "v": [
+        "18 μC",
+        "54 μC",
+        "72 μC",
+        "9 μC"
+      ],
+      "t": 0,
+      "izoh": "q₁ = C₁·U = 2·10⁻⁶ F · 9 V = 18·10⁻⁶ C = 18 μC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#70364c62"
+    },
+    {
+      "q": "Sig'imi 2 μF va 6 μF bo'lgan kondensatorlar 9 V ga parallel ulanganda ikkinchi kondensator qanday zaryad oladi?",
+      "v": [
+        "54 μC",
+        "18 μC",
+        "36 μC",
+        "72 μC"
+      ],
+      "t": 0,
+      "izoh": "q₂ = C₂·U = 6·10⁻⁶ F · 9 V = 54·10⁻⁶ C = 54 μC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#0481197e"
+    },
+    {
+      "q": "Parallel ulangan kondensatorlardan sig'imi kattaroq bo'lgani qanday zaryad to'playdi (bir xil kuchlanishda)?",
+      "v": [
+        "Ko'proq zaryad to'playdi",
+        "Kamroq zaryad to'playdi",
+        "Bir xil zaryad to'playdi",
+        "Zaryad to'plamaydi"
+      ],
+      "t": 0,
+      "izoh": "q = C·U bo'lgani uchun bir xil U da sig'imi katta kondensator ko'proq zaryad oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#20abaa0f"
+    },
+    {
+      "q": "Sig'imi 3 μF va 6 μF bo'lgan ikkita kondensator ketma-ket ulanganda umumiy sig'im qancha?",
+      "v": [
+        "2 μF",
+        "9 μF",
+        "4,5 μF",
+        "18 μF"
+      ],
+      "t": 0,
+      "izoh": "C = C₁·C₂/(C₁+C₂) = 3·6/(3+6) = 2 μF.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#4d18abe2"
+    },
+    {
+      "q": "Ikkita bir xil 4 μF li kondensator parallel ulanganda umumiy sig'im qancha bo'ladi?",
+      "v": [
+        "8 μF",
+        "2 μF",
+        "4 μF",
+        "16 μF"
+      ],
+      "t": 0,
+      "izoh": "Parallel ulanganda C = 4 + 4 = 8 μF.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#a278c9fd"
+    },
+    {
+      "q": "Ikkita bir xil 4 μF li kondensator ketma-ket ulanganda umumiy sig'im qancha bo'ladi?",
+      "v": [
+        "2 μF",
+        "8 μF",
+        "4 μF",
+        "1 μF"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanganda C = 4·4/(4+4) = 2 μF.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#d75640c5"
+    },
+    {
+      "q": "Kondensatorlarni ulashda umumiy sig'imni oshirish uchun qanday ulash kerak?",
+      "v": [
+        "Parallel ulash",
+        "Ketma-ket ulash",
+        "Faqat bitta kondensator ishlatish",
+        "Qopolmalarni almashtirish"
+      ],
+      "t": 0,
+      "izoh": "Parallel ulanganda umumiy sig'im sig'imlar yig'indisiga teng bo'lib, ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#70e68ec4"
+    },
+    {
+      "q": "Kondensatorlarni ulashda umumiy sig'imni kamaytirish uchun qanday ulash kerak?",
+      "v": [
+        "Ketma-ket ulash",
+        "Parallel ulash",
+        "Aralash ulash",
+        "Qutblarni almashtirish"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanganda umumiy elektr sig'imi kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#1ba49344"
+    },
+    {
+      "q": "Kondensatorlarning parallel ulashi rezistorlarning qaysi ulanishiga formulasi jihatidan o'xshaydi?",
+      "v": [
+        "Ketma-ket ulanishiga (yig'indi qo'shiladi)",
+        "Parallel ulanishiga",
+        "Aralash ulanishiga",
+        "Hech qaysisiga"
+      ],
+      "t": 0,
+      "izoh": "Kondensatorlarda parallel ulashda sig'imlar qo'shiladi — bu rezistorlarning ketma-ket ulanish formulasi kabi (C = C₁ + C₂).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#e19a4fa7"
+    },
+    {
+      "q": "Kondensatorlarning ketma-ket ulashi rezistorlarning qaysi ulanishiga formulasi jihatidan o'xshaydi?",
+      "v": [
+        "Parallel ulanishiga (teskari kattaliklar qo'shiladi)",
+        "Ketma-ket ulanishiga",
+        "Aralash ulanishiga",
+        "Hech qaysisiga"
+      ],
+      "t": 0,
+      "izoh": "Kondensatorlarda ketma-ket ulashda 1/C = 1/C₁ + 1/C₂ — rezistorlarning parallel ulanishiga o'xshash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#d43835ff"
+    },
+    {
+      "q": "Uchta kondensator: 2 μF, 3 μF va 5 μF parallel ulanganda umumiy sig'im qancha?",
+      "v": [
+        "10 μF",
+        "30 μF",
+        "1 μF",
+        "6 μF"
+      ],
+      "t": 0,
+      "izoh": "C = 2 + 3 + 5 = 10 μF.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#b970fab2"
+    },
+    {
+      "q": "Parallel ulangan ikkita kondensator 12 V manbaiga ulangan. Ularning zaryadlari q₁ = 24 μC va q₂ = 36 μC bo'lsa, to'liq zaryad qancha?",
+      "v": [
+        "60 μC",
+        "12 μC",
+        "864 μC",
+        "1,5 μC"
+      ],
+      "t": 0,
+      "izoh": "q = q₁ + q₂ = 24 + 36 = 60 μC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#b2f9cf21"
+    },
+    {
+      "q": "Ketma-ket ulangan kondensatorlar tizimida umumiy sig'im eng kichik kondensator sig'imidan qanday bo'ladi?",
+      "v": [
+        "Kichik bo'ladi",
+        "Katta bo'ladi",
+        "Teng bo'ladi",
+        "Ikki baravar katta bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "1/C ga musbat qo'shiluvchilar qo'shilgani uchun umumiy sig'im eng kichik sig'imdan ham kichik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#558fa85f"
+    },
+    {
+      "q": "Sig'imi 40 nF bo'lgan kondensator qoplamalariga tok manbaidan 30 V kuchlanish berilganda, u qanday miqdorda zaryad oladi?",
+      "v": [
+        "1,2 μC",
+        "12 μC",
+        "0,75 μC",
+        "120 nC"
+      ],
+      "t": 0,
+      "izoh": "q = C·U = 40·10⁻⁹ · 30 = 1200·10⁻⁹ C = 1,2 μC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#0c47c93c"
+    },
+    {
+      "q": "83-rasmda parallel ulangan ikkita kondensator uchun qanday munosabatlar keltirilgan?",
+      "v": [
+        "C = C₁ + C₂; U = U₁ = U₂; q = q₁ + q₂",
+        "C = C₁·C₂; U = U₁ + U₂; q = q₁ = q₂",
+        "1/C = 1/C₁ + 1/C₂; U = U₁ + U₂",
+        "C = C₁ = C₂; q = q₁·q₂"
+      ],
+      "t": 0,
+      "izoh": "83-rasmda parallel ulash uchun C = C₁ + C₂, U = U₁ = U₂, q = q₁ + q₂ keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#cb9de8d6"
+    },
+    {
+      "q": "Ketma-ket ulangan ikkita kondensatorning sig'imlari 12 μF va 6 μF bo'lsa, umumiy sig'im qancha?",
+      "v": [
+        "4 μF",
+        "18 μF",
+        "8 μF",
+        "72 μF"
+      ],
+      "t": 0,
+      "izoh": "C = 12·6/(12+6) = 72/18 = 4 μF.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m28-kondensatorlarni-parallel-va-ketmaket-ulash#04707b3f"
+    }
+  ]
+}

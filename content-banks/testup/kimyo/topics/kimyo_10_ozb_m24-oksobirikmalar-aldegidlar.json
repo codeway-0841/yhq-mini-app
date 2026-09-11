@@ -1,0 +1,531 @@
+{
+  "nom": "24-mavzu. Oksobirikmalar. Aldegidlar. Olinishi va xossalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Oksobirikmalar deb qanday birikmalarga aytiladi?",
+      "v": [
+        "Tarkibida karbonil guruh (C=O) tutgan birikmalarga",
+        "Tarkibida gidroksil guruh tutgan birikmalarga",
+        "Tarkibida karboksil guruh tutgan birikmalarga",
+        "Tarkibida amin guruh tutgan birikmalarga"
+      ],
+      "t": 0,
+      "izoh": "Tarkibida karbonil guruh tutgan birikmalarni oksobirikmalar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#d8f16f2a"
+    },
+    {
+      "q": "Oksobirikmalar sinfiga qaysi birikmalar kiradi?",
+      "v": [
+        "Aldegid va ketonlar",
+        "Spirtlar va efirlar",
+        "Kislotalar va tuzlar",
+        "Uglevodorodlar va fenollar"
+      ],
+      "t": 0,
+      "izoh": "Oksobirikmalar sinfiga aldegid va ketonlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#b913a4cf"
+    },
+    {
+      "q": "Aldegidlar deb qanday birikmalarga aytiladi?",
+      "v": [
+        "Tarkibida aldegid guruh (-CHO) tutgan birikmalarga",
+        "Tarkibida ikkita gidroksil guruh tutgan birikmalarga",
+        "Tarkibida nitro guruh tutgan birikmalarga",
+        "Tarkibida efir bog'i tutgan birikmalarga"
+      ],
+      "t": 0,
+      "izoh": "Tarkibida aldegid guruh tutgan birikmalarni aldegidlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#26a89bd0"
+    },
+    {
+      "q": "Aldegidlarning umumiy formulasi qanday?",
+      "v": [
+        "CnH2nO",
+        "CnH2n+2O",
+        "CnH2nO2",
+        "CnH2n-2"
+      ],
+      "t": 0,
+      "izoh": "Aldegidlarning umumiy formulasi CnH2nO.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#e645419e"
+    },
+    {
+      "q": "HCHO formulasiga mos moddaning nomi qanday?",
+      "v": [
+        "Metanal (formaldegid)",
+        "Etanal (sirka aldegid)",
+        "Propanal (propion aldegid)",
+        "Butanal (moy aldegid)"
+      ],
+      "t": 0,
+      "izoh": "HCHO — metanal (formaldegid).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#34d0331c"
+    },
+    {
+      "q": "CH3CHO formulasiga mos modda qanday ataladi?",
+      "v": [
+        "Etanal (sirka aldegid)",
+        "Metanal (formaldegid)",
+        "Propanal (propion aldegid)",
+        "Butanal (moy aldegid)"
+      ],
+      "t": 0,
+      "izoh": "CH3CHO — etanal (sirka aldegid).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#a6429889"
+    },
+    {
+      "q": "C2H5CHO formulasiga mos modda qanday ataladi?",
+      "v": [
+        "Propanal (propion aldegid)",
+        "Butanal (moy aldegid)",
+        "Etanal (sirka aldegid)",
+        "2-metil propanal"
+      ],
+      "t": 0,
+      "izoh": "C2H5CHO — propanal (propion aldegid).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#5d642819"
+    },
+    {
+      "q": "Butanalning trivial nomi qanday?",
+      "v": [
+        "Moy aldegid",
+        "Sirka aldegid",
+        "Chumoli aldegid",
+        "Propion aldegid"
+      ],
+      "t": 0,
+      "izoh": "Butanal (C3H7CHO) — moy aldegid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#712c5b63"
+    },
+    {
+      "q": "CH3CH(CH3)CHO formulasiga mos moddaning trivial nomi qanday?",
+      "v": [
+        "Izomiy aldegid",
+        "Moy aldegid",
+        "Sirka aldegid",
+        "Chumoli aldegid"
+      ],
+      "t": 0,
+      "izoh": "CH3CH(CH3)CHO — 2-metil propanal (izomiy aldegid).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#c4112e7e"
+    },
+    {
+      "q": "Aldegidlarni trivial nomenklaturada nomlash qanday amalga oshiriladi?",
+      "v": [
+        "Tegishli karbon kislota nomidagi «kislota» so'zini «aldegid»ga almashtirish bilan",
+        "Tegishli alkan nomiga «al» suffiksi qo'shish bilan",
+        "Tegishli spirt nomiga «ol» qo'shish bilan",
+        "Tegishli alken nomiga «on» qo'shish bilan"
+      ],
+      "t": 0,
+      "izoh": "Trivial nomenklaturada tegishli karbon kislota nomidagi «kislota» so'zini «aldegid»ga almashtirish kifoya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#d7992bf5"
+    },
+    {
+      "q": "Chumoli kislotaga mos aldegid qanday ataladi?",
+      "v": [
+        "Chumoli aldegid",
+        "Sirka aldegid",
+        "Moy aldegid",
+        "Propion aldegid"
+      ],
+      "t": 0,
+      "izoh": "Chumoli kislotaga mos chumoli aldegid, sirka kislotaga mos sirka aldegid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#ee3f83fa"
+    },
+    {
+      "q": "Sistematik nomenklaturaga ko'ra aldegidlar qanday nomlanadi?",
+      "v": [
+        "Tegishli alkanga «al»-suffiksi qo'shish bilan",
+        "Tegishli alkanga «ol»-suffiksi qo'shish bilan",
+        "Tegishli alkanga «on»-suffiksi qo'shish bilan",
+        "Tegishli alkanga «at»-suffiksi qo'shish bilan"
+      ],
+      "t": 0,
+      "izoh": "Sistematik nomenklaturaga ko'ra, tegishli alkanga «al»-suffiksi qo'shish bilan ko'rsatiladi. Masalan: propanal, butanal.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#43f94a8d"
+    },
+    {
+      "q": "Birlamchi spirtlar oksidlanganda qanday birikmalar hosil bo'ladi?",
+      "v": [
+        "Aldegidlar",
+        "Ketonlar",
+        "Karbon kislotalar",
+        "Murakkab efirlar"
+      ],
+      "t": 0,
+      "izoh": "Birlamchi spirtlar oksidlanganda aldegidlar hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#811dc83b"
+    },
+    {
+      "q": "Mis (II) oksid metanolni oksidlaganda qanday mahsulot hosil bo'ladi?",
+      "v": [
+        "Formaldegid",
+        "Sirka aldegid",
+        "Moy aldegid",
+        "Aseton"
+      ],
+      "t": 0,
+      "izoh": "CH3OH + CuO = HCHO + Cu + H2O — formaldegid hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#25d56baa"
+    },
+    {
+      "q": "Metanolni CuO bilan oksidlash reaksiyasi uzluksiz davom etishining sababi nima?",
+      "v": [
+        "Ajralib chiqqan mis metali havo kislorodi bilan qayta oksidlanib, metanolning yangi qismlarini oksidlayveradi",
+        "Formaldegid reaksiyani tezlashtiradi",
+        "Suv reaksiyada katalizator bo'lib xizmat qiladi",
+        "CuO reaksiyada ishtirok etmaydi"
+      ],
+      "t": 0,
+      "izoh": "Reaksiyada ajralib chiqqan mis metali havo kislorodi bilan qayta oksidlanib, metanolning yangi qismlarini oksidlayveradi: 2Cu + O2 = 2CuO.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#876d76a9"
+    },
+    {
+      "q": "2Cu + O2 reaksiyasida qanday mahsulot hosil bo'ladi?",
+      "v": [
+        "2CuO",
+        "Cu2O",
+        "Cu(OH)2",
+        "2CuOH"
+      ],
+      "t": 0,
+      "izoh": "2Cu + O2 = 2CuO.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#27ef9c0f"
+    },
+    {
+      "q": "Atsetilenning gidratlanishi (M.G. Kucherov reaksiyasi) natijasida qanday modda hosil bo'ladi?",
+      "v": [
+        "Sirka aldegid",
+        "Formaldegid",
+        "Etanol",
+        "Atseton"
+      ],
+      "t": 0,
+      "izoh": "Atsetilen suv molekulasini biriktirib sirka aldegid hosil qiladi (M.G. Kucherov reaksiyasi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#6b577559"
+    },
+    {
+      "q": "Kucherov reaksiyasida katalizator sifatida qanday ion ishlatiladi?",
+      "v": [
+        "Hg2+",
+        "Ni2+",
+        "Cu2+",
+        "Fe3+"
+      ],
+      "t": 0,
+      "izoh": "Atsetilenning gidratlanishi Hg2+ ishtirokida boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#90eca775"
+    },
+    {
+      "q": "Atsetilenning gidratlanish reaksiyasi qaysi olim nomi bilan ataladi?",
+      "v": [
+        "M.G. Kucherov",
+        "A.M. Butlerov",
+        "D.I. Mendeleev",
+        "S.V. Lebedev"
+      ],
+      "t": 0,
+      "izoh": "Atsetilenning gidratlanishi M.G. Kucherov reaksiyasi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#dcb83d1e"
+    },
+    {
+      "q": "Birinchi uglerod atomida ikkita galogen atomi tutgan alkanlarni gidrolizlab nima olinadi?",
+      "v": [
+        "Aldegidlar",
+        "Ketonlar",
+        "Spirtlar",
+        "Efirlar"
+      ],
+      "t": 0,
+      "izoh": "Birinchi uglerod atomida ikkita galogen atomlari tutgan alkanlarni gidrolizlab aldegidlar olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#95d3d69a"
+    },
+    {
+      "q": "1,1-dixloretan gidrolizida avval qanday beqaror modda hosil bo'ladi?",
+      "v": [
+        "Etandiol-1,1",
+        "Etandiol-1,2",
+        "Etanol",
+        "Etilen"
+      ],
+      "t": 0,
+      "izoh": "Avval qisqa muddat mavjud bo'luvchi beqaror ikki atomli spirt — etandiol-1,1 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#970a17dc"
+    },
+    {
+      "q": "Etandiol-1,1 beqarorligi sababli qanday moddalarga parchalanadi?",
+      "v": [
+        "Suv va etanalga",
+        "Vodorod va etilenga",
+        "Etanol va kislorodga",
+        "Ikki molekula formaldegidga"
+      ],
+      "t": 0,
+      "izoh": "Beqarorligi sababli, ushbu spirt suv va etanalga parchalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#076dd96c"
+    },
+    {
+      "q": "Aldegidlarning eng birinchi vakili — chumoli aldegid (formaldegid) oddiy sharoitda qanday holatda bo'ladi?",
+      "v": [
+        "Bo'g'uvchi o'tkir hidli gaz",
+        "Hidsiz suyuqlik",
+        "Qattiq kristall modda",
+        "Shirin hidli suyuqlik"
+      ],
+      "t": 0,
+      "izoh": "Chumoli aldegid (formaldegid) oddiy sharoitda bo'g'uvchi o'tkir hidli gaz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#2a41ed39"
+    },
+    {
+      "q": "Aldegidlarning quyi vakillari qanday moddalar?",
+      "v": [
+        "Suvda va organik erituvchilarda oson eriydigan suyuq moddalar",
+        "Qattiq moddalar",
+        "Gazlar",
+        "Suvda erimaydigan suyuqliklar"
+      ],
+      "t": 0,
+      "izoh": "Aldegidlarning quyi vakillari suyuq modda bo'lib, suvda va organik erituvchilarda oson eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#f13e3318"
+    },
+    {
+      "q": "Aldegidlarning qaynash harorati tegishli spirtlar va karbon kislotalarnikidan nisbatan past bo'lishining sababi nima?",
+      "v": [
+        "Aldegidlarda molekulalararo vodorod bog'lanish bo'lmaganligi",
+        "Aldegidlarning molekular massasi kichikligi",
+        "Aldegidlarning suvda yaxshi erishi",
+        "Aldegidlarning oson oksidlanishi"
+      ],
+      "t": 0,
+      "izoh": "Aldegidlarda molekulalararo vodorod bog'lanish bo'lmaganligi sababli, ularning qaynash harorati tegishli spirtlar va karbon kislotalarnikidan nisbatan past bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#ef1b8115"
+    },
+    {
+      "q": "Aldegid uchun qanday reaksiyalar xosdir?",
+      "v": [
+        "Oksidlanish, qaytarilish va kondensatlanish reaksiyalari",
+        "Faqat yonish reaksiyasi",
+        "Faqat gidroliz reaksiyasi",
+        "Galogenlanish va nitrlanish reaksiyalari"
+      ],
+      "t": 0,
+      "izoh": "Aldegid uchun oksidlanish, qaytarilish va kondensatlanish reaksiyalari xosdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#f327482c"
+    },
+    {
+      "q": "Aldegidlar Ni katalizatori ishtirokida vodorodni biriktirganda qanday mahsulot hosil bo'ladi?",
+      "v": [
+        "Tegishli birlamchi spirtlar",
+        "Karbon kislotalar",
+        "Ketonlar",
+        "Uglevodorodlar"
+      ],
+      "t": 0,
+      "izoh": "Aldegidlar Ni katalizatori ishtirokida vodorodni biriktirib, tegishli birlamchi spirtlar hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#a23e59a2"
+    },
+    {
+      "q": "«Kumush ko'zgu» reaksiyasi qanday reaktiv bilan o'tkaziladi?",
+      "v": [
+        "Kumush oksidining ammiakli eritmasi bilan",
+        "Mis (II) gidroksid bilan",
+        "Temir (III) xlorid bilan",
+        "Bromli suv bilan"
+      ],
+      "t": 0,
+      "izoh": "Aldegidlarning kumush oksidining ammiakli eritmasi bilan oksidlanishi «kumush ko'zgu» reaksiyasi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#15c89bdc"
+    },
+    {
+      "q": "«Kumush ko'zgu» reaksiyasida kuzatiladigan hodisa qanday?",
+      "v": [
+        "Qaytarilgan kumush probirka devorlariga yaltiroq qatlam holida o'tiradi",
+        "Oq cho'kma hosil bo'ladi",
+        "Eritma binafsharangga kiradi",
+        "Gaz ajralib chiqadi"
+      ],
+      "t": 0,
+      "izoh": "Qaytarilgan kumush probirka devorlariga yaltiroq qatlam holida o'tiradi, aldegid esa oksidlanib, tegishli organik kislotaga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#f8774d05"
+    },
+    {
+      "q": "Aldegid mis (II) gidroksid bilan qizdirilganda dastlab qanday cho'kma hosil bo'ladi?",
+      "v": [
+        "Mis (I) gidroksidning sariq cho'kmasi",
+        "Mis (II) oksidning qora cho'kmasi",
+        "Mis (I) oksidning qizil cho'kmasi",
+        "Mis metallining qizgish cho'kmasi"
+      ],
+      "t": 0,
+      "izoh": "Qizdirilganda dastlab mis (I) gidroksidning sariq cho'kmasi hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#accd5ad4"
+    },
+    {
+      "q": "Aldegid bilan Cu(OH)2 reaksiyasida qizdirish davom ettirilganda sariq cho'kma qanday moddaga aylanadi?",
+      "v": [
+        "Qizil rangli mis (I) oksidga (Cu2O)",
+        "Qora rangli mis (II) oksidga (CuO)",
+        "Mis metalliga (Cu)",
+        "Mis (II) gidroksidga (Cu(OH)2)"
+      ],
+      "t": 0,
+      "izoh": "2CuOH = Cu2O + H2O — sariq cho'kma qizil rangli mis (I) oksidga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#00674395"
+    },
+    {
+      "q": "Aldegidni fenol bilan katalizatorlar (kislota yoki asos) ishtirokida qizdirilganda qanday reaksiya sodir bo'ladi?",
+      "v": [
+        "Polikondensatsiya reaksiyasi — fenolformaldegid smolasi va suv hosil bo'ladi",
+        "Polimerlanish reaksiyasi — kauchuk hosil bo'ladi",
+        "Gidroliz reaksiyasi — spirt hosil bo'ladi",
+        "Eterifikatsiya reaksiyasi — murakkab efir hosil bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Aldegidni fenol bilan katalizatorlar ishtirokida qizdirilganda polikondensatsiya reaksiyasi sodir bo'lib, fenolformaldegid smolasi va suv hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#1d81e0ba"
+    },
+    {
+      "q": "Polikondensatsiya reaksiyasi deb qanday jarayonga aytiladi?",
+      "v": [
+        "Molekulyar og'irligi kichik bo'lgan molekulalardan katta molekulalar hosil bo'ladigan va qo'shimcha moddalar (suv, spirt) ajralishi bilan boradigan jarayonga",
+        "Bir molekuladan ikkita kichik molekula hosil bo'ladigan jarayonga",
+        "Monomerlarning suv ajratmasdan birikish jarayoniga",
+        "Molekulaning atomlarga parchalanish jarayoniga"
+      ],
+      "t": 0,
+      "izoh": "Polikondensatsiya reaksiyasi deb molekulyar og'irligi kichik bo'lgan molekulalardan katta molekulalar hosil bo'ladigan va bunda qo'shimcha moddalarning ajralishi (suv, spirt) bilan boradigan jarayonga aytiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#1cee50ba"
+    },
+    {
+      "q": "Fenol formaldegid bilan polikondensatsiya reaksiyasida qo'shimcha ajraladigan modda qanday?",
+      "v": [
+        "Suv",
+        "Vodorod",
+        "Ammiak",
+        "Karbonat angidrid"
+      ],
+      "t": 0,
+      "izoh": "Fenolformaldegid smolasi hosil bo'lishida n molekula H2O ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#c8cf976d"
+    },
+    {
+      "q": "Sirka aldegid (CH3CHO) Ag2O ning ammiakli eritmasi bilan oksidlanganda qanday moddalar hosil bo'ladi?",
+      "v": [
+        "Sirka kislota va 2Ag",
+        "Etanol va Ag2O",
+        "Formaldegid va Ag",
+        "Karbonat angidrid va suv"
+      ],
+      "t": 0,
+      "izoh": "CH3CHO + Ag2O (NH3) = CH3COOH + 2Ag — sirka kislota va kumush hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m24-oksobirikmalar-aldegidlar#661fa077"
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "nom": "Geografiya-7, 2.2. Geografik koordinatalar, 14-15-bet",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Xarita va globuslarni qoplagan katakchalar nimadan hosil boʻlgan?",
+      "v": [
+        "Meridian va parallel chiziqlarining kesishishidan",
+        "Ekvator va Bosh meridianning kesishishidan",
+        "Qutblar va tropiklarning kesishishidan",
+        "Gorizontallar va bergshtrixlarning kesishishidan"
+      ],
+      "t": 0,
+      "izoh": "Geografik xarita va globusga eʼtibor berib qarasangiz, ularning katakchalar bilan qoplanganini koʻrasiz. Ular meridian va parallel chiziqlarining kesishishidan hosil boʻlgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#aff7cc8a"
+    },
+    {
+      "q": "Xarita va globuslarni qoplagan katakchalar nima deb ataladi?",
+      "v": [
+        "Daraja (gradus) toʻri",
+        "Balandliklar shkalasi",
+        "Geografik koordinata",
+        "Masshtab toʻri"
+      ],
+      "t": 0,
+      "izoh": "Xarita va globuslarni qoplagan katakchalar daraja (gradus) toʻri deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo7_m4#6ed85cd7"
+    },
+    {
+      "q": "Daraja toʻri yordamida nimalarni aniqlash mumkin?",
+      "v": [
+        "Yer yuzidagi har bir shahar, togʻ choʻqqisi, daryo boshlanadigan va quyiladigan joylarni, barcha geografik obyektlarning oʻrnini",
+        "Yer yuzasining umumiy maydonini",
+        "Yer sayyorasining massasini",
+        "Yer poʻstining qalinligini"
+      ],
+      "t": 0,
+      "izoh": "Daraja toʻri yordamida Yer yuzidagi har bir shahar, togʻ choʻqqisi, daryo boshlanadigan va quyiladigan joylarni, okean va dengizlardagi orollar oʻrnini, umuman, barcha geografik obyektlarning oʻrnini aniqlash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#a165a77e"
+    },
+    {
+      "q": "Globus va xaritalardagi parallel chiziqlar nimani bildiradi?",
+      "v": [
+        "Geografik kenglikni",
+        "Geografik uzunlikni",
+        "Balandlikni",
+        "Masshtabni"
+      ],
+      "t": 0,
+      "izoh": "Globus va xaritalardagi parallel chiziqlar geografik kenglikni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo7_m4#8d1b601c"
+    },
+    {
+      "q": "Geografik kenglik nima deb ataladi?",
+      "v": [
+        "Ekvatordan berilgan nuqtagacha boʻlgan meridian yoyining daraja (gradus) hisobidagi kattaligi",
+        "Bosh meridiandan berilgan nuqtagacha boʻlgan parallel yoyining uzunligi",
+        "Yer markazidan berilgan nuqtagacha boʻlgan masofa",
+        "Ekvatordan qutblargacha boʻlgan umumiy masofa"
+      ],
+      "t": 0,
+      "izoh": "Geografik kenglik deb ekvatordan berilgan nuqtagacha boʻlgan meridian yoyining daraja (gradus) hisobidagi kattaligiga aytiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#6a72207c"
+    },
+    {
+      "q": "Ekvator chizigʻi necha darajali kenglik deb qabul qilingan?",
+      "v": [
+        "0°",
+        "90°",
+        "180°",
+        "45°"
+      ],
+      "t": 0,
+      "izoh": "Ekvator chizigʻi 0° kenglik deb qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo7_m4#0c7f62fb"
+    },
+    {
+      "q": "Qutblar kengligi necha daraja deb olingan?",
+      "v": [
+        "90°",
+        "0°",
+        "180°",
+        "45°"
+      ],
+      "t": 0,
+      "izoh": "Qutblar kengligi esa 90° deb olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo7_m4#33938c93"
+    },
+    {
+      "q": "Toshkent shahri qaysi parallelda joylashgan?",
+      "v": [
+        "41° parallelda",
+        "30° parallelda",
+        "50° parallelda",
+        "69° parallelda"
+      ],
+      "t": 0,
+      "izoh": "Toshkent 40° va 50° parallellar oraligʻida, aniqrogʻi 41° parallelda joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#33e67941"
+    },
+    {
+      "q": "Qohira shahri qaysi parallelda joylashgan?",
+      "v": [
+        "30° parallelda",
+        "41° parallelda",
+        "50° parallelda",
+        "69° parallelda"
+      ],
+      "t": 0,
+      "izoh": "Qohira shahri 30° parallelda joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#0c440596"
+    },
+    {
+      "q": "Kiyev shahri qaysi parallelda joylashgan?",
+      "v": [
+        "50° parallelda",
+        "30° parallelda",
+        "41° parallelda",
+        "90° parallelda"
+      ],
+      "t": 0,
+      "izoh": "Kiyev esa 50° parallelda joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#9db9a425"
+    },
+    {
+      "q": "Ekvatordan shimolda joylashgan nuqtalarning kengligi qanday ataladi?",
+      "v": [
+        "Shimoliy kenglik",
+        "Janubiy kenglik",
+        "Gʻarbiy uzunlik",
+        "Sharqiy uzunlik"
+      ],
+      "t": 0,
+      "izoh": "Toshkent, Qohira, Kiyev kabi parallellarning hammasi ekvatordan shimolda joylashgani sababli ularning kengligi shimoliy kenglik deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#1bb18943"
+    },
+    {
+      "q": "Ekvatordan janubda joylashgan nuqtalarning kengligi qanday ataladi?",
+      "v": [
+        "Janubiy kenglik",
+        "Shimoliy kenglik",
+        "Gʻarbiy uzunlik",
+        "Sharqiy uzunlik"
+      ],
+      "t": 0,
+      "izoh": "Ekvatordan janubda joylashgan nuqtalar (joylar)ning kengligi esa janubiy kenglik deb belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#b0d4a89b"
+    },
+    {
+      "q": "Geografik kenglikni aniqlashning oʻzi yetarli emas, yana nima kerak boʻladi?",
+      "v": [
+        "Geografik uzunlikni aniqlash ham zarur",
+        "Balandlikni bilish kerak",
+        "Masshtabni bilish kerak",
+        "Boshqa hech narsa kerak emas, kenglik yetarli"
+      ],
+      "t": 0,
+      "izoh": "Har bir parallelda juda koʻp nuqtalar bor. Shuning uchun kerakli nuqtaning oʻrnini aniqlashda geografik kenglikni bilishning oʻzi yetarli emas. Buning uchun geografik uzunlikni aniqlash ham zarur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#8e163715"
+    },
+    {
+      "q": "Geografik uzunlik nima deb ataladi?",
+      "v": [
+        "Bosh meridiandan berilgan nuqtagacha boʻlgan parallel yoyining daraja (gradus) hisobidagi uzunligi",
+        "Ekvatordan berilgan nuqtagacha boʻlgan meridian yoyining uzunligi",
+        "Yer markazidan berilgan nuqtagacha boʻlgan masofa",
+        "Qutblar orasidagi umumiy masofa"
+      ],
+      "t": 0,
+      "izoh": "Geografik uzunlik deb Bosh meridiandan berilgan nuqtagacha boʻlgan parallel yoyining daraja (gradus) hisobidagi uzunligiga aytiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#24aa6d6c"
+    },
+    {
+      "q": "Bosh meridian qaysi shahar yaqinidagi rasadxonadan oʻtgan meridian deb qabul qilingan?",
+      "v": [
+        "London shahri yaqinidagi Grinvich rasadxonasidan",
+        "Parij shahridagi rasadxonadan",
+        "Moskva shahridagi rasadxonadan",
+        "Vashington shahridagi rasadxonadan"
+      ],
+      "t": 0,
+      "izoh": "London shahri yaqinidagi Grinvich rasadxonasidan oʻtgan meridian Bosh meridian deb qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#1364d8f4"
+    },
+    {
+      "q": "Geografik uzunlik necha darajadan necha darajagacha hisoblanadi?",
+      "v": [
+        "0° dan 180° gacha",
+        "0° dan 90° gacha",
+        "0° dan 360° gacha",
+        "-180° dan +180° gacha"
+      ],
+      "t": 0,
+      "izoh": "Geografik uzunlik 0° dan 180° gacha hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#05810046"
+    },
+    {
+      "q": "Bosh meridiandan gʻarb tomondagi nuqtalarning uzunligi qanday ataladi?",
+      "v": [
+        "Gʻarbiy uzunlik",
+        "Sharqiy uzunlik",
+        "Shimoliy kenglik",
+        "Janubiy kenglik"
+      ],
+      "t": 0,
+      "izoh": "0° li meridian (Bosh meridian)dan gʻarb tomondagi nuqtalar gʻarbiy uzunlik, sharq tomondagilari sharqiy uzunlik deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#c081b51c"
+    },
+    {
+      "q": "Bosh meridiandan sharq tomondagi nuqtalarning uzunligi qanday ataladi?",
+      "v": [
+        "Sharqiy uzunlik",
+        "Gʻarbiy uzunlik",
+        "Shimoliy kenglik",
+        "Janubiy kenglik"
+      ],
+      "t": 0,
+      "izoh": "Sharq tomondagi nuqtalar sharqiy uzunlik deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#fcf4e192"
+    },
+    {
+      "q": "Geografik kengliklar globusda qanday aniqlanadi?",
+      "v": [
+        "Parallellarga Bosh meridian yoniga yozib qoʻyilgan darajalar yordamida",
+        "Ekvator chizigʻi ustiga yozib qoʻyilgan darajalar yordamida",
+        "Qutblardagi belgilar yordamida",
+        "Masshtab yordamida"
+      ],
+      "t": 0,
+      "izoh": "Geografik kengliklar globusda parallellarga Bosh meridian yoniga yozib qoʻyilgan darajalar yordamida aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#e3851dcf"
+    },
+    {
+      "q": "Geografik uzunliklar globusda qanday bilib olinadi?",
+      "v": [
+        "Ekvator chizigʻi ustiga yozib qoʻyilgan darajalar yordamida",
+        "Parallellarga yozilgan darajalar yordamida",
+        "Qutblardagi belgilar yordamida",
+        "Masshtab yordamida"
+      ],
+      "t": 0,
+      "izoh": "Geografik uzunliklar esa ekvator chizigʻi ustiga yozib qoʻyilgan darajalar yordamida bilib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#06fe081a"
+    },
+    {
+      "q": "Geografik xaritalarda kenglik darajalari odatda qayerga yoziladi?",
+      "v": [
+        "Xaritaning chap va oʻng chekkasidagi ramkasi (chiziqlar) yoniga",
+        "Xaritaning yuqori va pastki chekkasiga",
+        "Xaritaning oʻrtasiga",
+        "Xarita nomi yoniga"
+      ],
+      "t": 0,
+      "izoh": "Geografik xaritalarda geografik kenglik darajalari xaritalarning chap va oʻng chekkasidagi ramkasi (chiziqlar) yoniga yozib qoʻyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#105dedaf"
+    },
+    {
+      "q": "Geografik xaritalarda uzunlik darajalari odatda qayerga yoziladi?",
+      "v": [
+        "Xaritaning yuqori va pastki chekkasidagi meridian chiziqlar yoniga",
+        "Xaritaning chap va oʻng chekkasiga",
+        "Xaritaning markaziga",
+        "Legenda qismiga"
+      ],
+      "t": 0,
+      "izoh": "Geografik uzunliklar darajalari xaritalarning yuqori va pastki chekkasidagi meridian chiziqlar yoniga yozib qoʻyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#e2ab7891"
+    },
+    {
+      "q": "Yer yuzasidagi har bir nuqtaning kenglik va uzunligi birgalikda nima deb ataladi?",
+      "v": [
+        "Uning geografik koordinatasi",
+        "Uning geografik indeksi",
+        "Uning geografik manzili",
+        "Uning geografik nomi"
+      ],
+      "t": 0,
+      "izoh": "Yer yuzasidagi har bir nuqtaning kenglik va uzunligi uning geografik koordinatasi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo7_m4#48776ae7"
+    },
+    {
+      "q": "Toshkentning geografik koordinatasi qanday?",
+      "v": [
+        "41° shimoliy kenglik va 69° sharqiy uzunlik",
+        "30° shimoliy kenglik va 31° sharqiy uzunlik",
+        "50° shimoliy kenglik va 30° sharqiy uzunlik",
+        "41° janubiy kenglik va 69° gʻarbiy uzunlik"
+      ],
+      "t": 0,
+      "izoh": "Toshkentning geografik koordinatasi 41° shimoliy kenglik va 69° sharqiy uzunlikni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#f5c41894"
+    },
+    {
+      "q": "Hozirgi kunda geografik koordinatalar yana qanday zamonaviy asboblar yordamida ham aniqlanmoqda?",
+      "v": [
+        "Yerning sunʼiy yoʻldoshlari yordamida ishlovchi asboblar, jumladan GPS navigatorlar",
+        "Kompas va nivelir yordamida",
+        "Teleskop yordamida",
+        "Qadimgi xaritalar yordamida"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi kunda geografik koordinatalar Yerning sunʼiy yoʻldoshlari yordamida ishlovchi zamonaviy asboblar, jumladan, GPS navigatorlar yordamida ham aniqlanmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#5f055844"
+    },
+    {
+      "q": "2.2-mavzu boshida qanday kalit soʻzlar keltirilgan?",
+      "v": [
+        "Daraja toʻri, geografik kenglik, geografik uzunlik, Bosh meridian, geografik koordinata, shimoliy kenglik, janubiy kenglik, sharqiy uzunlik, gʻarbiy uzunlik",
+        "Geografik xaritalar, umumgeografik xaritalar, mavzuli xaritalar",
+        "Masshtab, sonli masshtab, nomli masshtab, chiziqli masshtab",
+        "Geografik kashfiyotlar, materik, qitʼa, ekspeditsiya"
+      ],
+      "t": 0,
+      "izoh": "2.2-mavzu boshidagi kalit soʻzlar: daraja toʻri, geografik kenglik, geografik uzunlik, Bosh meridian, geografik koordinata, shimoliy kenglik, janubiy kenglik, sharqiy uzunlik, gʻarbiy uzunlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo7_m4#2699e902"
+    }
+  ]
+}

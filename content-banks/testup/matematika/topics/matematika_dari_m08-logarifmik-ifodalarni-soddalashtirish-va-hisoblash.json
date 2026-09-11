@@ -1,0 +1,1609 @@
+{
+  "nom": "Logarifmik ifodalarni soddalashtirish va hisoblash",
+  "bolim": "Daraja, ildiz va logarifm",
+  "blok": "dari",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Anvar fizika daftariga o'lchov natijasi sifatida log₂5 va log₂12,8 sonlarini yozib qo'ydi. Bu ikki sonning yig'indisi nechaga teng?",
+      "v": [
+        "6",
+        "64",
+        "17,8",
+        "2,56"
+      ],
+      "t": 0,
+      "izoh": "Bir xil asosli logarifmlar yig'indisi ko'paytmaning logarifmiga teng: log₂5 + log₂12,8 = log₂(5·12,8). Qavs ichida 5·12,8 = 64. Endi log₂64 ni topamiz: 2⁶ = 64, demak log₂64 = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-koaytma",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#cddc9331"
+    },
+    {
+      "q": "Namangandagi bog'da olma hosili hisobi log₅50 va log₅2,5 ko'rsatkichlari orqali yuritiladi. Bog'bon bu ikki ko'rsatkichni qo'shsa, qanday son hosil bo'ladi?",
+      "v": [
+        "125",
+        "3",
+        "52,5",
+        "20"
+      ],
+      "t": 1,
+      "izoh": "Asoslar bir xil bo'lgani uchun argumentlar ko'paytiriladi: log₅50 + log₅2,5 = log₅(50·2,5) = log₅125. So'ng 5 ning qaysi darajasi 125 ekanini topamiz: 5³ = 125. Demak natija 3 ga teng. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-koaytma",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#1863f488"
+    },
+    {
+      "q": "Farrux uy vazifasida log₆4, log₆9 va log₆1 sonlarining yig'indisini topishi kerak edi. U to'g'ri hisoblasa, qanday natija oladi?",
+      "v": [
+        "36",
+        "14",
+        "2",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Uchala logarifmning asosi bir xil, shuning uchun argumentlar ko'paytiriladi: log₆(4·9·1) = log₆36. Bu yerda log₆1 = 0 bo'lgani uchun u yig'indini o'zgartirmaydi. 6² = 36 bo'lgani sababli log₆36 = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-koaytma",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#92710465"
+    },
+    {
+      "q": "Dilnoza omborlar hisobotida birinchi bo'lim uchun log₄8, ikkinchi bo'lim uchun log₄32 qiymatini yozdi. Bu ikki qiymatning yig'indisi nechaga teng?",
+      "v": [
+        "256",
+        "40",
+        "2,5",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "log₄8 + log₄32 = log₄(8·32) = log₄256. Endi 4 ning darajalarini ko'ramiz: 4² = 16, 4³ = 64, 4⁴ = 256. Demak log₄256 = 4. Alohida hisoblasak ham 1,5 + 2,5 = 4 chiqadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-koaytma",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#9b008bdb"
+    },
+    {
+      "q": "Xiva muzeyi katalogida ikki eksponatning ro'yxat ko'rsatkichi lg250000 va lg2,5 bilan belgilangan. Birinchisidan ikkinchisini ayirsak, natija nechaga teng?",
+      "v": [
+        "100000",
+        "5",
+        "249997,5",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Bir xil asosli logarifmlar ayirmasi bo'linmaning logarifmiga teng: lg250000 − lg2,5 = lg(250000 : 2,5) = lg100000. O'nlik logarifm 10 ning darajasini beradi: 10⁵ = 100000. Demak javob 5 ga teng. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-bolinma",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#47028bd9"
+    },
+    {
+      "q": "Buxorodagi zavodda ikki smenaning unumdorlik ko'rsatkichi log₄128 va log₄4 deb qayd etilgan. Birinchi ko'rsatkich ikkinchisidan qanchaga ortiq?",
+      "v": [
+        "2,5",
+        "32",
+        "124",
+        "3,5"
+      ],
+      "t": 0,
+      "izoh": "Ayirmani bo'linma logarifmiga aylantiramiz: log₄128 − log₄4 = log₄(128 : 4) = log₄32. Endi 32 ni 4 asosida yozamiz: 32 = 2⁵, 4 = 2², shuning uchun log₄32 = 5/2 = 2,5. Javob: 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-bolinma",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#ef5a89c8"
+    },
+    {
+      "q": "Uy vazifasining birinchi bandida log₉81 va log₉3 sonlari berilgan. Bu ikki sonning ayirmasi qanday qiymatga teng?",
+      "v": [
+        "27",
+        "78",
+        "0,5",
+        "1,5"
+      ],
+      "t": 3,
+      "izoh": "log₉81 − log₉3 = log₉(81 : 3) = log₉27. 27 ni 9 asosida ifodalaymiz: 27 = 3³, 9 = 3², demak log₉27 = 3/2 = 1,5. Tekshirish: log₉81 = 2 va log₉3 = 0,5, ularning ayirmasi ham 1,5. Javob: 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-bolinma",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#f5c2ddbc"
+    },
+    {
+      "q": "Sut fermasida ertalabki ko'rsatkich log₄2, kechqurungisi esa log₄128 bo'ldi. Ertalabki ko'rsatkichdan kechqurungisini ayirsak, natija nechaga teng?",
+      "v": [
+        "3",
+        "1/64",
+        "−3",
+        "−126"
+      ],
+      "t": 2,
+      "izoh": "Ayirma bo'linma logarifmiga aylanadi: log₄2 − log₄128 = log₄(2 : 128) = log₄(1/64). 64 = 4³ bo'lgani uchun 1/64 = 4⁻³. Demak log₄(1/64) = −3. Kichik sondan katta son ayrilgani uchun natija manfiy. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-bolinma",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#cac499df"
+    },
+    {
+      "q": "Nazorat ishining birinchi topshirig'ida 2·log₃6 − log₃4 ifodasi berilgan. Uni soddalashtirsak, qanday son hosil bo'ladi?",
+      "v": [
+        "2",
+        "9",
+        "8",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Avval koeffitsientni daraja ko'rsatkichiga kiritamiz: 2·log₃6 = log₃6² = log₃36. So'ngra ayirmani bo'linmaga aylantiramiz: log₃36 − log₃4 = log₃(36 : 4) = log₃9. Nihoyat 3² = 9 bo'lgani uchun natija 2 ga teng. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-koeffitsient",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#60d27a31"
+    },
+    {
+      "q": "Fizika laboratoriyasida o'lchov natijasi 3·log₂5 − log₂125 ifodasi bilan yozib qo'yilgan. Bu ifodaning qiymati nechaga teng?",
+      "v": [
+        "15",
+        "0",
+        "1",
+        "−110"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsientni logarifm ostiga kiritamiz: 3·log₂5 = log₂5³ = log₂125. Endi ifoda log₂125 − log₂125 ko'rinishini oladi. Bir xil ikki son ayirmasi nolga teng. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-koeffitsient",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#0c9f5f71"
+    },
+    {
+      "q": "Yakuniy nazorat variantida 0,5·log₅49 + log₅(5/7) ifodasi berilgan. Uni soddalashtirgach hosil bo'ladigan son nechaga teng?",
+      "v": [
+        "0",
+        "7",
+        "1",
+        "3,5"
+      ],
+      "t": 2,
+      "izoh": "Birinchi hadda koeffitsientni ichkariga kiritamiz: 0,5·log₅49 = log₅49^(1/2) = log₅7. Ikkinchi hadni yoyamiz: log₅(5/7) = log₅5 − log₅7 = 1 − log₅7. Ularni qo'shsak, log₅7 qisqaradi va 1 qoladi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-koeffitsient",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#3ebb1a2b"
+    },
+    {
+      "q": "Darsda o'qituvchi doskaga 2·lg5 + lg40 ifodasini yozib qo'ydi. Bu ifodaning aniq qiymati nechaga teng?",
+      "v": [
+        "1000",
+        "50",
+        "1,4",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Koeffitsientni darajaga aylantiramiz: 2·lg5 = lg5² = lg25. Endi yig'indini ko'paytmaga keltiramiz: lg25 + lg40 = lg(25·40) = lg1000. O'nlik logarifm uchun 10³ = 1000, demak qiymat 3 ga teng. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-koeffitsient",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#af30ee5f"
+    },
+    {
+      "q": "Chorsu bozorida uch turdagi mevaning zaxira ko'rsatkichi log₂24, log₂20 va log₂15 deb belgilangan. Dastlabki ikkitasining yig'indisidan uchinchisini ayirsak, natija nechaga teng?",
+      "v": [
+        "32",
+        "29",
+        "5",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi ko'paytmaga, ayirma bo'linmaga aylanadi: log₂24 + log₂20 − log₂15 = log₂((24·20) : 15). Qavs ichida 24·20 = 480 va 480 : 15 = 32. So'ng log₂32 ni topamiz: 2⁵ = 32, demak natija 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-logarifm-aralash",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#cff4f7f3"
+    },
+    {
+      "q": "Kutubxonachi javonlar hisobini log₃45 + log₃18 − log₃10 ifodasi orqali yuritadi. Bu ifodaning qiymati nechaga teng?",
+      "v": [
+        "4",
+        "81",
+        "53",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "Uchala had bir xil asosda, shuning uchun bitta logarifmga birlashtiramiz: log₃((45·18) : 10). Hisoblaymiz: 45·18 = 810, so'ng 810 : 10 = 81. Endi log₃81 ni topamiz: 3⁴ = 81, demak javob 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-logarifm-aralash",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#6850ed69"
+    },
+    {
+      "q": "Takrorlash mashg'ulotida lg50 + lg8 − lg4 ifodasini hisoblash topshirig'i berildi. Uning qiymati nechaga teng?",
+      "v": [
+        "100",
+        "2",
+        "54",
+        "1,7"
+      ],
+      "t": 1,
+      "izoh": "Hammasi o'nlik logarifm bo'lgani uchun bitta logarifmga yig'amiz: lg((50·8) : 4). Qavs ichida 50·8 = 400 va 400 : 4 = 100. Nihoyat lg100 = 2, chunki 10² = 100. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-logarifm-aralash",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#27accb28"
+    },
+    {
+      "q": "Bank hisobotida uch ko'rsatkich log₂3, log₂5 va log₂60 deb berilgan. Birinchi ikkitasining yig'indisidan uchinchisini ayirsak, natija nechaga teng?",
+      "v": [
+        "2",
+        "1/4",
+        "−52",
+        "−2"
+      ],
+      "t": 3,
+      "izoh": "Ifodani bitta logarifmga keltiramiz: log₂3 + log₂5 − log₂60 = log₂((3·5) : 60) = log₂(15 : 60) = log₂0,25. Endi 0,25 = 1/4 = 2⁻² ekanini e'tiborga olamiz. Demak log₂0,25 = −2. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-logarifm-aralash",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#4eac4196"
+    },
+    {
+      "q": "Test topshirig'ida log₈32 · log₂64 ko'paytmasi berilgan. Ikkala logarifmni 2 asosiga keltirib, uning qiymatini toping.",
+      "v": [
+        "18/5",
+        "10",
+        "12",
+        "23/3"
+      ],
+      "t": 1,
+      "izoh": "Birinchi ko'paytuvchini asosni almashtirish formulasi bilan hisoblaymiz: log₈32 = log₂32 : log₂8 = 5 : 3, ya'ni 5/3. Ikkinchisi bevosita topiladi: log₂64 = 6, chunki 2⁶ = 64. Endi ko'paytmani hisoblaymiz: (5/3)·6 = 30/3 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-almashtirish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#679daf04"
+    },
+    {
+      "q": "Arxitektor loyihada log₂₇81 qiymatidan foydalanmoqchi. Har ikki sonni 3 asosiga keltirsak, bu logarifm nechaga teng bo'ladi?",
+      "v": [
+        "3/4",
+        "1",
+        "4/3",
+        "27"
+      ],
+      "t": 2,
+      "izoh": "Asosni almashtiramiz: log₂₇81 = log₃81 : log₃27. Suratda log₃81 = 4, chunki 3⁴ = 81. Maxrajda log₃27 = 3, chunki 3³ = 27. Demak natija 4/3 ga teng. Javob: 4/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-almashtirish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#e8f25c59"
+    },
+    {
+      "q": "Imtihon mashqida log₁₂₅25 logarifmini hisoblash so'ralgan. Ikkala sonni 5 asosiga keltirib, uning aniq qiymatini toping.",
+      "v": [
+        "2/3",
+        "3/2",
+        "25",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "log₁₂₅25 = log₅25 : log₅125. Suratda log₅25 = 2, maxrajda log₅125 = 3. Demak logarifm 2/3 ga teng. Tekshirish: 125^(2/3) = 25, ya'ni natija to'g'ri. Javob: 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-almashtirish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#966fc65b"
+    },
+    {
+      "q": "Muhandis hisobida lg2 ≈ 0,3010 deb olingan. Shu qiymatdan foydalanib log₂10 ni yuzdan bir aniqlikda toping.",
+      "v": [
+        "0,30",
+        "0,70",
+        "1,30",
+        "3,32"
+      ],
+      "t": 3,
+      "izoh": "Asosni almashtirish formulasiga ko'ra log₂10 = lg10 : lg2. Suratda lg10 = 1. Demak log₂10 = 1 : 0,3010 ≈ 3,3223. Yuzdan bir aniqlikda yaxlitlasak 3,32 chiqadi. Javob: 3,32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asos-almashtirish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#b03f9d65"
+    },
+    {
+      "q": "Olimpiada mashg'ulotida o'quvchiga log₃5 · log₅81 ko'paytmasini soddalashtirish topshirildi. Bu ko'paytma nechaga teng?",
+      "v": [
+        "405",
+        "86",
+        "4",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "Zanjir qoidasi: log₃5 · log₅81 = log₃81, chunki oraliq asos 5 qisqaradi. Buni asosni almashtirish orqali ham ko'rish mumkin: (lg5 : lg3)·(lg81 : lg5) = lg81 : lg3. Endi log₃81 = 4, chunki 3⁴ = 81. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zanjir-koaytma",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#bf9e60ae"
+    },
+    {
+      "q": "Dasturchi kod izohida log₂7 · log₇8 ko'paytmasini uchratdi. Zanjir qoidasidan foydalanib, uning qiymatini toping.",
+      "v": [
+        "56",
+        "3",
+        "15",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytmada oraliq asos 7 qisqaradi: log₂7 · log₇8 = log₂8. Endi 2 ning qaysi darajasi 8 ekanini topamiz: 2³ = 8. Demak ko'paytma 3 ga teng. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zanjir-koaytma",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#d1f8c293"
+    },
+    {
+      "q": "Uch bosqichli o'lchov tizimida natija log₂3 · log₃5 · log₅32 ko'paytmasi bilan ifodalanadi. Bu ko'paytma qanday qiymatga teng?",
+      "v": [
+        "480",
+        "40",
+        "32",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Zanjirda oraliq asoslar ketma-ket qisqaradi: log₂3 · log₃5 = log₂5, so'ngra log₂5 · log₅32 = log₂32. Nihoyat 2⁵ = 32 bo'lgani uchun log₂32 = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zanjir-koaytma",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#4bede1d0"
+    },
+    {
+      "q": "Sinov testida log₉8 · log₂3 ko'paytmasini soddalashtirish so'ralgan. Asoslarni tenglashtirib hisoblasangiz, natija nechaga teng?",
+      "v": [
+        "1,5",
+        "24",
+        "2/3",
+        "11"
+      ],
+      "t": 0,
+      "izoh": "Har ikkalasini bitta asosga keltiramiz: log₉8 = lg8 : lg9 = 3lg2 : 2lg3, log₂3 = lg3 : lg2. Ularni ko'paytirsak lg2 va lg3 qisqaradi: (3lg2 : 2lg3)·(lg3 : lg2) = 3/2. Demak natija 1,5. Javob: 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zanjir-koaytma",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#55371e58"
+    },
+    {
+      "q": "Matematika to'garagida 1/log₂30 + 1/log₃30 + 1/log₅30 ifodasini soddalashtirish topshirig'i berildi. Bu ifodaning qiymati nechaga teng?",
+      "v": [
+        "30",
+        "1",
+        "3",
+        "1/30"
+      ],
+      "t": 1,
+      "izoh": "Teskari asos qoidasiga ko'ra 1/log₂30 = log₃₀2, 1/log₃30 = log₃₀3 va 1/log₅30 = log₃₀5. Endi uchala had bir xil asosda bo'ldi: log₃₀2 + log₃₀3 + log₃₀5 = log₃₀(2·3·5) = log₃₀30. Asosning o'zidan olingan logarifm esa 1 ga teng. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-asos",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#c5402067"
+    },
+    {
+      "q": "Statistik hisobda log₇2 = m deb belgilangan. Shu belgilashdan foydalanib log₂7 ni m orqali ifodalang.",
+      "v": [
+        "−m",
+        "1 − m",
+        "1/m",
+        "m²"
+      ],
+      "t": 2,
+      "izoh": "Asos va argument o'rin almashsa, logarifm teskari songa aylanadi: log₂7 = 1 : log₇2. Berilishiga ko'ra log₇2 = m, demak log₂7 = 1/m. Bu qoida asosni almashtirish formulasidan kelib chiqadi. Javob: 1/m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-asos",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#58ca36da"
+    },
+    {
+      "q": "Meteorologik jadvalda 1/log₂10 va 1/log₅10 qiymatlari alohida ustunlarda keltirilgan. Bu ikki qiymatning yig'indisi nechaga teng?",
+      "v": [
+        "10",
+        "1/7",
+        "0",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "Teskari asos qoidasi: 1/log₂10 = lg2 va 1/log₅10 = lg5. Ularni qo'shamiz: lg2 + lg5 = lg(2·5) = lg10. O'nlik logarifm uchun lg10 = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-asos",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#fa98f6b3"
+    },
+    {
+      "q": "Kimyo laboratoriyasi jadvalida ko'rsatkich 1/log₃9 ko'rinishida yozilgan. Uni oddiy logarifmga keltirib, qiymatini toping.",
+      "v": [
+        "0,5",
+        "2",
+        "−2",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "Avval maxrajni hisoblaymiz: log₃9 = 2, chunki 3² = 9. Demak ifoda 1 : 2 ga aylanadi. Teskari asos qoidasi bo'yicha bu log₉3 ga teng va u ham 0,5 chiqadi. Javob: 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-asos",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#4b13926d"
+    },
+    {
+      "q": "Ilmiy maqolada 2·log₅3 + log₅7 ifodasi bitta logarifm ko'rinishida yozilishi kerak. Bu ifoda qaysi logarifmga teng?",
+      "v": [
+        "log₅42",
+        "log₅63",
+        "log₅13",
+        "log₅21"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsientni argument darajasiga ko'taramiz: 2·log₅3 = log₅3² = log₅9. Keyin yig'indini ko'paytmaga aylantiramiz: log₅9 + log₅7 = log₅(9·7) = log₅63. Javob: log₅63.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-logarifmga-keltirish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#3965c770"
+    },
+    {
+      "q": "Statistik hisobotda 2·lg3 + lg5 − lg2 ifodasi bitta logarifm bilan almashtirilmoqda. U qaysi logarifmga teng bo'ladi?",
+      "v": [
+        "lg15",
+        "lg12",
+        "lg22,5",
+        "lg90"
+      ],
+      "t": 2,
+      "izoh": "Koeffitsientni ichkariga kiritamiz: 2·lg3 = lg9. Endi lg9 + lg5 = lg45, so'ngra lg45 − lg2 = lg(45 : 2) = lg22,5. Ayirish har doim bo'linmaga aylanishini unutmaslik kerak. Javob: lg22,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bitta-logarifmga-keltirish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#c8bc0f3d"
+    },
+    {
+      "q": "Muhandis loyiha hisobida 0,5·log₂36 + log₂5 ifodasini bitta logarifmga keltirmoqchi. To'g'ri natija qaysi variantda berilgan?",
+      "v": [
+        "log₂90",
+        "log₂41",
+        "log₂180",
+        "log₂30"
+      ],
+      "t": 3,
+      "izoh": "Yarim koeffitsient kvadrat ildizni bildiradi: 0,5·log₂36 = log₂√36 = log₂6. Endi log₂6 + log₂5 = log₂(6·5) = log₂30. Javob: log₂30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bitta-logarifmga-keltirish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#f0f8a4de"
+    },
+    {
+      "q": "Ilmiy ishda log₃40 − 2·log₃2 ifodasi bitta logarifm sifatida yozilishi kerak. Qaysi variant to'g'ri?",
+      "v": [
+        "log₃10",
+        "log₃36",
+        "log₃20",
+        "log₃160"
+      ],
+      "t": 0,
+      "izoh": "Avval koeffitsientni kiritamiz: 2·log₃2 = log₃2² = log₃4. So'ngra ayirmani bo'linmaga aylantiramiz: log₃40 − log₃4 = log₃(40 : 4) = log₃10. Javob: log₃10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bitta-logarifmga-keltirish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#c63b9389"
+    },
+    {
+      "q": "Iqtisodiy hisob-kitobda log₂3 = a deb belgilangan. Shu belgilashdan foydalanib log₂24 ni a orqali ifodalang.",
+      "v": [
+        "3a",
+        "8a",
+        "a + 3",
+        "a + 4"
+      ],
+      "t": 2,
+      "izoh": "24 sonini 2 ning darajasi va 3 ga ajratamiz: 24 = 8·3. Demak log₂24 = log₂8 + log₂3. Bu yerda log₂8 = 3 va log₂3 = a. Natijada log₂24 = a + 3. Javob: a + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilgan-orqali-ifodalash",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#b06da8c5"
+    },
+    {
+      "q": "Iqtisodiy modelda lg2 = b deb olingan. Shu belgilash orqali lg40 ni b harfi yordamida ifodalang.",
+      "v": [
+        "b + 1",
+        "2b + 1",
+        "4b",
+        "2b + 2"
+      ],
+      "t": 1,
+      "izoh": "40 sonini qulay ko'paytuvchilarga ajratamiz: 40 = 4·10. Demak lg40 = lg4 + lg10 = 2lg2 + 1. Berilishiga ko'ra lg2 = b, shuning uchun lg40 = 2b + 1. Javob: 2b + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-orqali-ifodalash",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#a8a7ba5b"
+    },
+    {
+      "q": "Tadqiqotchi hisobotda log₃2 = c deb belgiladi. Shu belgilashga ko'ra log₃4,5 qanday ifodalanadi?",
+      "v": [
+        "2 + c",
+        "c − 2",
+        "1 − c",
+        "2 − c"
+      ],
+      "t": 3,
+      "izoh": "4,5 sonini kasr ko'rinishida yozamiz: 4,5 = 9/2. Demak log₃4,5 = log₃9 − log₃2. Bu yerda log₃9 = 2 va log₃2 = c. Natijada log₃4,5 = 2 − c. Javob: 2 − c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "berilgan-orqali-ifodalash",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#b11a227f"
+    },
+    {
+      "q": "Tibbiy statistikada lg3 = d deb belgilangan. Shu belgilashdan foydalanib lg0,3 ni d harfi orqali qanday yozish mumkin?",
+      "v": [
+        "d − 1",
+        "1 − d",
+        "d + 1",
+        "−d"
+      ],
+      "t": 0,
+      "izoh": "0,3 sonini kasr ko'rinishida yozamiz: 0,3 = 3/10. Demak lg0,3 = lg3 − lg10. Bu yerda lg10 = 1 va lg3 = d. Natijada lg0,3 = d − 1. Javob: d − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "berilgan-orqali-ifodalash",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#2330d155"
+    },
+    {
+      "q": "Kimyo jadvalida lg2 ≈ 0,3010 deb berilgan. Shu qiymatdan foydalanib lg2,5 ning taqribiy qiymatini to'rt xona aniqlikda toping.",
+      "v": [
+        "0,6990",
+        "0,3980",
+        "0,1505",
+        "0,7520"
+      ],
+      "t": 1,
+      "izoh": "2,5 sonini 10 va 2 orqali yozamiz: 2,5 = 10/4 = 10/2². Demak lg2,5 = lg10 − 2·lg2 = 1 − 2·0,3010. Avval ko'paytmani topamiz: 2·0,3010 = 0,6020. So'ng ayirmani hisoblaymiz: 1 − 0,6020 = 0,3980. Javob: 0,3980.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg-jadval-taqribiy",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#3382d02a"
+    },
+    {
+      "q": "Laboratoriya jadvalida lg2 ≈ 0,3010 va lg3 ≈ 0,4771 qiymatlari berilgan. Shu ma'lumotlarga ko'ra lg6 ning taqribiy qiymatini toping.",
+      "v": [
+        "0,1761",
+        "0,1436",
+        "1,7781",
+        "0,7781"
+      ],
+      "t": 3,
+      "izoh": "6 sonini ko'paytuvchilarga ajratamiz: 6 = 2·3. Ko'paytmaning logarifmi logarifmlar yig'indisiga teng: lg6 = lg2 + lg3. Demak lg6 ≈ 0,3010 + 0,4771 = 0,7781. Javob: 0,7781.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lg-jadval-taqribiy",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#1a44d738"
+    },
+    {
+      "q": "Elektron jadvalda lg2 ≈ 0,3010 deb kiritilgan. Shu qiymat yordamida lg80 ning taqribiy natijasini hisoblang.",
+      "v": [
+        "1,9030",
+        "0,9030",
+        "2,4080",
+        "1,3010"
+      ],
+      "t": 0,
+      "izoh": "80 sonini qulay ko'rinishda yozamiz: 80 = 8·10 = 2³·10. Demak lg80 = 3·lg2 + lg10 = 3·0,3010 + 1. Hisoblaymiz: 0,9030 + 1 = 1,9030. Javob: 1,9030.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lg-jadval-taqribiy",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#c350a15b"
+    },
+    {
+      "q": "Ilmiy hisobda lg3 ≈ 0,4771 deb ko'rsatilgan. Shu qiymatdan foydalanib lg√3 ning taqribiy qiymatini toping.",
+      "v": [
+        "0,9542",
+        "0,6907",
+        "0,2386",
+        "0,4771"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat ildizni daraja ko'rinishida yozamiz: √3 = 3^(1/2). Logarifm xossasiga ko'ra lg√3 = 0,5·lg3. Demak lg√3 ≈ 0,5·0,4771 = 0,23855, ya'ni taqriban 0,2386. Javob: 0,2386.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "lg-jadval-taqribiy",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#622586cd"
+    },
+    {
+      "q": "Ikki o'quvchi turli asosli logarifmlarni taqqosladi: birinchisi log₃10 ni, ikkinchisi esa log₂5 ni yozdi. Ular yozgan sonlardan qaysi biri katta?",
+      "v": [
+        "log₂5 katta",
+        "log₃10 katta",
+        "Ular teng",
+        "Taqqoslab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Har birini oraliqqa joylashtiramiz. 3^(2,1) ≈ 10,04 bo'lgani uchun log₃10 qiymati 2,1 dan kichik. 2^(2,3) ≈ 4,92 bo'lgani uchun log₂5 qiymati 2,3 dan katta. Demak log₃10 < 2,1 < 2,3 < log₂5. Javob: log₂5 katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqqoslash-ikkita",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#046d646d"
+    },
+    {
+      "q": "Ikki xil asosli ko'rsatkich taqqoslanmoqda: log₅24 va log₆30. Bu sonlarning qaysi biri kattaroq ekanini aniqlang.",
+      "v": [
+        "log₆30 kattaroq",
+        "Ular o'zaro teng",
+        "Ikkalasi ham 2 dan katta",
+        "log₅24 kattaroq"
+      ],
+      "t": 3,
+      "izoh": "Ikkalasi ham 2 dan kichik, chunki 24 < 25 = 5² va 30 < 36 = 6². Ikkalasini bitta oraliq mezon — 1,95 bilan solishtiramiz. Birinchisida 5^(1,95) ≈ 23,1 va bu 24 dan kichik, demak log₅24 > 1,95. Ikkinchisida 6^(1,95) ≈ 32,9 va bu 30 dan katta, demak log₆30 < 1,95. Shunday qilib log₆30 < 1,95 < log₅24. Javob: log₅24 kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-ikkita",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#d71302c2"
+    },
+    {
+      "q": "Olimpiadaga tayyorgarlik mashg'ulotida log₂3 va log₃5 sonlarini taqqoslash kerak bo'ldi. Qaysi biri kattaroq?",
+      "v": [
+        "log₃5 kattaroq",
+        "log₂3 kattaroq",
+        "Ular teng",
+        "Ikkalasi ham 1,5 dan kichik"
+      ],
+      "t": 1,
+      "izoh": "Ikkala sonni 1,5 bilan solishtiramiz. 2^(1,5) = 2√2 ≈ 2,83 va bu 3 dan kichik, demak log₂3 > 1,5. Ikkinchisida 3^(1,5) = 3√3 ≈ 5,20 va bu 5 dan katta, demak log₃5 < 1,5. Shunday qilib log₃5 < 1,5 < log₂3. Javob: log₂3 kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-ikkita",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#14fd9dea"
+    },
+    {
+      "q": "Kamayuvchi asosli ikki logarifm taqqoslanmoqda: log₀,₅3 va log₀,₅5. Bu sonlardan qaysi biri kattaroq?",
+      "v": [
+        "log₀,₅5 kattaroq",
+        "Ular teng",
+        "log₀,₅3 kattaroq",
+        "Ikkalasi ham musbat"
+      ],
+      "t": 2,
+      "izoh": "Asos birdan kichik bo'lganda logarifm kamayuvchi bo'ladi: argument ortsa, logarifm kamayadi. 3 < 5 bo'lgani uchun log₀,₅3 > log₀,₅5. Aniq qiymatlar ham buni tasdiqlaydi: log₀,₅3 ≈ −1,58 va log₀,₅5 ≈ −2,32. Javob: log₀,₅3 kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-ikkita",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#99a2d5ff"
+    },
+    {
+      "q": "Nazorat ishida uch son berilgan: log₂5, log₃10 va log₄20. Ularni o'sish tartibida to'g'ri joylashtirgan qatorni toping.",
+      "v": [
+        "log₂5 < log₃10 < log₄20",
+        "log₃10 < log₄20 < log₂5",
+        "log₄20 < log₃10 < log₂5",
+        "log₃10 < log₂5 < log₄20"
+      ],
+      "t": 1,
+      "izoh": "Har birini ikki qismga ajratamiz: log₂5 = 2 + log₂1,25, log₃10 = 2 + log₃(10/9), log₄20 = 2 + log₄1,25. Qo'shimchalarni taqqoslaymiz: log₃(10/9) ≈ 0,096, log₄1,25 ≈ 0,161 va log₂1,25 ≈ 0,322. Demak log₃10 < log₄20 < log₂5. Javob: log₃10 < log₄20 < log₂5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tartiblash-uchta",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#d4182809"
+    },
+    {
+      "q": "Hisoblash amaliyotida uch xil logarifm topildi: lg8, log₂10 va ln5. Ularni kamayish tartibida to'g'ri joylashtirgan qatorni belgilang.",
+      "v": [
+        "log₂10 > ln5 > lg8",
+        "ln5 > log₂10 > lg8",
+        "lg8 > ln5 > log₂10",
+        "log₂10 > lg8 > ln5"
+      ],
+      "t": 0,
+      "izoh": "Har birini baholaymiz. lg8 < lg10 = 1, demak lg8 birdan kichik. ln5 uchun e ≈ 2,72 va e < 5 < e², shuning uchun ln5 qiymati 1 va 2 orasida. log₂10 esa 3 dan katta, chunki 2³ = 8 < 10. Javob: log₂10 > ln5 > lg8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tartiblash-uchta",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#14b1ea5f"
+    },
+    {
+      "q": "Tadqiqot jadvalida log₃2, log₅3 va log₇4 qiymatlari keltirilgan. Ularni o'sish tartibida to'g'ri joylashtirgan qator qaysi?",
+      "v": [
+        "log₇4 < log₅3 < log₃2",
+        "log₅3 < log₃2 < log₇4",
+        "log₃2 < log₅3 < log₇4",
+        "log₃2 < log₇4 < log₅3"
+      ],
+      "t": 2,
+      "izoh": "Avval 2/3 mezoni bilan log₃2 ni ajratamiz: 3^(2/3) ≈ 2,08 > 2, demak log₃2 < 2/3. Qolgan ikkitasi 2/3 dan katta, chunki 5^(2/3) ≈ 2,92 < 3 va 7^(2/3) ≈ 3,66 < 4. Ularni o'zaro ajratish uchun ikkinchi mezon — 0,7 ni olamiz: 5^(0,7) ≈ 3,09 > 3 bo'lgani uchun log₅3 < 0,7, ammo 7^(0,7) ≈ 3,90 < 4 bo'lgani uchun log₇4 > 0,7. Demak log₃2 < 2/3 < log₅3 < 0,7 < log₇4. Javob: log₃2 < log₅3 < log₇4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tartiblash-uchta",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#322821fc"
+    },
+    {
+      "q": "Sinov mashqida log₀,₂5, log₀,₂25 va log₀,₂1 sonlari berilgan. Ularni o'sish tartibida to'g'ri joylashtirgan qatorni toping.",
+      "v": [
+        "log₀,₂1 < log₀,₂5 < log₀,₂25",
+        "log₀,₂5 < log₀,₂25 < log₀,₂1",
+        "log₀,₂1 < log₀,₂25 < log₀,₂5",
+        "log₀,₂25 < log₀,₂5 < log₀,₂1"
+      ],
+      "t": 3,
+      "izoh": "Asos 0,2 birdan kichik, shuning uchun funksiya kamayuvchi. Aniq qiymatlarni topamiz: 0,2⁻¹ = 5 dan log₀,₂5 = −1, 0,2⁻² = 25 dan log₀,₂25 = −2, va log₀,₂1 = 0. Manfiy sonlarni tartiblasak −2 < −1 < 0 chiqadi. Javob: log₀,₂25 < log₀,₂5 < log₀,₂1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tartiblash-uchta",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#9a35e200"
+    },
+    {
+      "q": "Kompyuter xotira hajmini baholashda log₂100 ifodasining butun qismini topish kerak bo'ldi. Bu butun qism nechaga teng?",
+      "v": [
+        "7",
+        "5",
+        "6",
+        "100"
+      ],
+      "t": 2,
+      "izoh": "2 ning darajalarini yozamiz: 2⁶ = 64 va 2⁷ = 128. Bizning argumentimiz 64 < 100 < 128 oralig'ida yotadi. Demak 6 < log₂100 < 7 va ifodaning butun qismi 6 ga teng. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-qism",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#48b3fa8c"
+    },
+    {
+      "q": "Kompaniyaning yillik daromadi hisobotda 7500 shartli birlik deb ko'rsatilgan. lg7500 ifodasining butun qismi nechaga teng?",
+      "v": [
+        "3",
+        "4",
+        "7",
+        "3,9"
+      ],
+      "t": 0,
+      "izoh": "10 ning darajalari orasiga joylashtiramiz: 10³ = 1000 va 10⁴ = 10000. Bunda 1000 < 7500 < 10000, demak 3 < lg7500 < 4. Shuning uchun butun qism 3 ga teng, garchi sonning o'zi 4 xonali bo'lsa ham. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-qism",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#5c274fd9"
+    },
+    {
+      "q": "Tadqiqotchi hisobotni tayyorlashda log₃200 ifodasining butun qismini aniqlashi kerak. Bu qiymat nechaga teng?",
+      "v": [
+        "5",
+        "4,8",
+        "200",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "3 ning darajalarini yozamiz: 3⁴ = 81 va 3⁵ = 243. Argument 81 < 200 < 243 oralig'ida. Demak 4 < log₃200 < 5, ya'ni butun qism 4 ga teng. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-qism",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#a3939d54"
+    },
+    {
+      "q": "Ikki o'lchov natijasi log₂5 va log₂7 ko'rinishida qayd etilgan. Ularning yig'indisining butun qismi nechaga teng?",
+      "v": [
+        "6",
+        "5",
+        "4",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "Avval yig'indini bitta logarifmga keltiramiz: log₂5 + log₂7 = log₂35. Endi 2 ning darajalarini ko'ramiz: 2⁵ = 32 va 2⁶ = 64. Bunda 32 < 35 < 64, demak 5 < log₂35 < 6 va butun qism 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-qism",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#0e2ee9c4"
+    },
+    {
+      "q": "Ma'lumotlar bazasida 50 ta yozuv saqlanadi. log₂50 qiymati qaysi ikki ketma-ket butun son orasida yotadi?",
+      "v": [
+        "5 va 6",
+        "4 va 5",
+        "6 va 7",
+        "3 va 4"
+      ],
+      "t": 0,
+      "izoh": "2 ning darajalarini taqqoslaymiz: 2⁵ = 32 va 2⁶ = 64. Argument 32 < 50 < 64 oralig'ida joylashgan. Logarifm o'suvchi bo'lgani uchun 5 < log₂50 < 6. Javob: 5 va 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-baholash",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#32e3be49"
+    },
+    {
+      "q": "Ekologik kuzatuvda 100 ta namuna olindi va hisobda log₃100 ishlatiladi. Bu qiymat qaysi ikki butun son orasida joylashgan?",
+      "v": [
+        "3 va 4",
+        "5 va 6",
+        "4 va 5",
+        "2 va 3"
+      ],
+      "t": 2,
+      "izoh": "3 ning darajalarini yozamiz: 3⁴ = 81 va 3⁵ = 243. Argument 81 < 100 < 243 shartini qanoatlantiradi. Demak 4 < log₃100 < 5. Javob: 4 va 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-baholash",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#7e974aa6"
+    },
+    {
+      "q": "Shahar hokimiyati 2500 ta xonadonni ro'yxatga oldi. lg2500 qiymati qaysi ikki ketma-ket butun son orasida yotadi?",
+      "v": [
+        "2 va 3",
+        "4 va 5",
+        "1 va 2",
+        "3 va 4"
+      ],
+      "t": 3,
+      "izoh": "O'nlik logarifm 10 ning darajalariga qaraydi: 10³ = 1000 va 10⁴ = 10000. Argument 1000 < 2500 < 10000 oralig'ida. Demak 3 < lg2500 < 4. Javob: 3 va 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-baholash",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#25f8aab0"
+    },
+    {
+      "q": "Elektron kitobda 1000 bet bor va ular ikkilik qidiruv bilan varaqlanadi. log₂1000 qiymati qaysi ikki ketma-ket butun son orasida yotadi?",
+      "v": [
+        "8 va 9",
+        "9 va 10",
+        "10 va 11",
+        "6 va 7"
+      ],
+      "t": 1,
+      "izoh": "2 ning darajalarini hisoblaymiz: 2⁹ = 512 va 2¹⁰ = 1024. Argument 512 < 1000 < 1024 oralig'ida. Demak 9 < log₂1000 < 10, ya'ni qiymat 10 ga juda yaqin. Javob: 9 va 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-baholash",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#c574d7df"
+    },
+    {
+      "q": "Dasturchi hisob-kitob formulasida 5^(log₅12) ifodasini uchratdi. Bu ifodaning qiymati nechaga teng?",
+      "v": [
+        "5",
+        "60",
+        "1",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Asosiy logarifmik ayniyat: a^(logₐb) = b. Bu yerda asos 5 va logarifm asosi ham 5 bo'lgani uchun ular bir birini yo'qotadi. Demak 5^(log₅12) = 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kotarma-logarifm",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#16ac0d63"
+    },
+    {
+      "q": "Ilmiy dasturda 2^(3·log₂5) ifodasi hisoblanadi. Uni soddalashtirsak, natija nechaga teng bo'ladi?",
+      "v": [
+        "125",
+        "15",
+        "30",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "Avval ko'rsatkichdagi koeffitsientni logarifm ostiga kiritamiz: 3·log₂5 = log₂5³ = log₂125. Endi asosiy ayniyatni qo'llaymiz: 2^(log₂125) = 125. Javob: 125.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kotarma-logarifm",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#78255c9f"
+    },
+    {
+      "q": "Elektron jadvalda hisob uchun 10^(lg7 + lg3) formulasi yozib qo'yilgan. Bu formulaning natijasi nechaga teng?",
+      "v": [
+        "10",
+        "70",
+        "21",
+        "1,32"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkichdagi yig'indini bitta logarifmga keltiramiz: lg7 + lg3 = lg21. Endi 10^(lg21) ko'rinishi hosil bo'ladi va asosiy ayniyatga ko'ra u 21 ga teng. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kotarma-logarifm",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#3b41cc24"
+    },
+    {
+      "q": "Muhandislik dasturida 3^(2·log₃4 − log₃2) ifodasi hisoblanadi. Uning natijasi nechaga teng?",
+      "v": [
+        "16",
+        "8",
+        "6",
+        "24"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichni soddalashtiramiz: 2·log₃4 = log₃16, so'ngra log₃16 − log₃2 = log₃(16 : 2) = log₃8. Endi 3^(log₃8) = 8, chunki asos va logarifm asosi bir xil. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kotarma-logarifm",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#edb35328"
+    },
+    {
+      "q": "Axborot xavfsizligi darsida 2⁵⁰ sonining o'nlik yozuvida nechta raqam borligi so'raldi. Hisobda lg2 ≈ 0,3010 deb oling.",
+      "v": [
+        "15",
+        "16",
+        "17",
+        "50"
+      ],
+      "t": 1,
+      "izoh": "Xonalar soni [lgN] + 1 formulasi bilan topiladi. Bu yerda lg2⁵⁰ = 50·lg2 ≈ 50·0,3010 = 15,05. Butun qismi 15 ga teng, unga 1 qo'shamiz. Demak son 16 xonali. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xonalar-soni",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#cef1d6c6"
+    },
+    {
+      "q": "Kriptografiya mashg'ulotida 3¹⁰⁰ sonining o'nlik yozuvida nechta raqam borligi so'raldi. Hisobda lg3 ≈ 0,4771 deb oling.",
+      "v": [
+        "47",
+        "49",
+        "100",
+        "48"
+      ],
+      "t": 3,
+      "izoh": "Logarifmni hisoblaymiz: lg3¹⁰⁰ = 100·lg3 ≈ 100·0,4771 = 47,71. Xonalar soni butun qismga bir qo'shish orqali topiladi: 47 + 1 = 48. Javob: 48.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xonalar-soni",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#ad860ac5"
+    },
+    {
+      "q": "Iqtisodiy modelda 7⁴⁰ soni paydo bo'ldi. lg7 ≈ 0,8451 bo'lsa, bu sonning o'nlik yozuvi necha xonali bo'ladi?",
+      "v": [
+        "34",
+        "33",
+        "35",
+        "40"
+      ],
+      "t": 0,
+      "izoh": "Darajali sonning logarifmi: lg7⁴⁰ = 40·lg7 ≈ 40·0,8451 = 33,804. Butun qismi 33, unga 1 qo'shamiz va 34 hosil bo'ladi. Demak son 34 xonali. Javob: 34.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xonalar-soni",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#c2d5ab93"
+    },
+    {
+      "q": "Bank hisobida 12²⁰ soni chiqdi. lg2 ≈ 0,3010 va lg3 ≈ 0,4771 bo'lsa, bu son necha xonali ekanini aniqlang.",
+      "v": [
+        "21",
+        "20",
+        "22",
+        "23"
+      ],
+      "t": 2,
+      "izoh": "Avval lg12 ni topamiz: 12 = 4·3, demak lg12 = 2·lg2 + lg3 ≈ 0,6020 + 0,4771 = 1,0791. Endi lg12²⁰ = 20·1,0791 = 21,582. Butun qismi 21, unga 1 qo'shsak 22 chiqadi. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xonalar-soni",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#bede1010"
+    },
+    {
+      "q": "Maktab elektron jurnalida 1000 ta o'quvchi tartib bilan raqamlanadi. Har bir raqamni ikkilik kodda yozish uchun kamida nechta bit kerak bo'ladi?",
+      "v": [
+        "9",
+        "11",
+        "10",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "n bit bilan 2ⁿ ta har xil kod yozish mumkin, shuning uchun 2ⁿ ≥ 1000 shartini qanoatlantiruvchi eng kichik n kerak. 2⁹ = 512 yetarli emas, 2¹⁰ = 1024 esa yetarli. Demak kamida 10 bit talab qilinadi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bit-axborot",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#ed289b19"
+    },
+    {
+      "q": "Yangi mobil ilovada 200 xil belgidan foydalaniladi. Har bir belgini ikkilik kodda ifodalash uchun kamida necha bit talab qilinadi?",
+      "v": [
+        "8",
+        "7",
+        "9",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "2ⁿ ≥ 200 shartini tekshiramiz. 2⁷ = 128 bo'lib, 200 tadan kam kod beradi. 2⁸ = 256 esa 200 tani qoplaydi. Demak kamida 8 bit kerak, ya'ni [log₂200] + 1 = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bit-axborot",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#8867d37b"
+    },
+    {
+      "q": "Ombordagi 5000 ta mahsulotning har biriga takrorlanmas ikkilik kod beriladi. Kod uzunligi eng kamida nechta bitdan iborat bo'lishi kerak?",
+      "v": [
+        "12",
+        "13",
+        "14",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "Shart 2ⁿ ≥ 5000 ko'rinishida yoziladi. Hisoblaymiz: 2¹² = 4096 yetmaydi, 2¹³ = 8192 esa yetarli. Demak kod uzunligi kamida 13 bit bo'lishi kerak. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bit-axborot",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#6aff7557"
+    },
+    {
+      "q": "Elektron katalogda bir million ta yozuv saqlanadi. Ikkilik qidiruv usulida keraklisini topish uchun eng ko'pi bilan necha marta taqqoslash talab qilinadi?",
+      "v": [
+        "19",
+        "21",
+        "6",
+        "20"
+      ],
+      "t": 3,
+      "izoh": "Har bir taqqoslash qidiruv oralig'ini ikki barobar qisqartiradi, shuning uchun 2ⁿ ≥ 1000000 bo'lishi kerak. 2¹⁹ = 524288 yetmaydi, 2²⁰ = 1048576 esa yetarli. Demak eng ko'pi bilan 20 marta taqqoslanadi. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bit-axborot",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#8f767ed9"
+    },
+    {
+      "q": "Tuproq eritmasida vodorod ionlari konsentratsiyasi 4·10⁻⁶ mol/l ga teng. lg2 ≈ 0,3010 bo'lsa, eritmaning pH qiymati taqriban nechaga teng?",
+      "v": [
+        "6,60",
+        "6,00",
+        "5,00",
+        "5,40"
+      ],
+      "t": 3,
+      "izoh": "Formulaga qo'yamiz: pH = −lg(4·10⁻⁶) = −(lg4 + lg10⁻⁶). Bu yerda lg4 = 2·lg2 ≈ 0,6020, lg10⁻⁶ = −6. Demak pH ≈ −(0,6020 − 6) = 6 − 0,6020 = 5,398. Yuzdan bir aniqlikda bu 5,40 ga teng. Javob: 5,40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "pH-kimyo",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#8e83cc00"
+    },
+    {
+      "q": "Daryo suvi namunasida vodorod ionlari konsentratsiyasi 5·10⁻⁵ mol/l bo'ldi. lg5 ≈ 0,6990 bo'lsa, namunaning pH qiymati taqriban nechaga teng?",
+      "v": [
+        "5,70",
+        "4,30",
+        "4,00",
+        "4,70"
+      ],
+      "t": 1,
+      "izoh": "pH = −lg(5·10⁻⁵) = −(lg5 + lg10⁻⁵) = −(0,6990 − 5). Qavsni ochamiz: pH = 5 − 0,6990 = 4,301. Yuzdan bir aniqlikda bu 4,30 ga teng. Javob: 4,30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "pH-kimyo",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#5e517f02"
+    },
+    {
+      "q": "Oshxona sirkasi uchun pH qiymati 3 ga teng deb ko'rsatilgan. pH = −lg[H⁺] formulasidan foydalanib, undagi vodorod ionlari konsentratsiyasini toping.",
+      "v": [
+        "10⁻³ mol/l",
+        "10³ mol/l",
+        "3 mol/l",
+        "10⁻¹¹ mol/l"
+      ],
+      "t": 0,
+      "izoh": "Formuladan lg[H⁺] = −pH kelib chiqadi, ya'ni lg[H⁺] = −3. O'nlik logarifm ta'rifiga ko'ra bu [H⁺] = 10⁻³ degani. Demak konsentratsiya 10⁻³ mol/l ga teng. Javob: 10⁻³ mol/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "pH-kimyo",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#4f396cf0"
+    },
+    {
+      "q": "Birinchi eritmaning pH qiymati 4, ikkinchisiniki esa 7 ga teng. Birinchi eritmadagi vodorod ionlari konsentratsiyasi ikkinchisinikidan necha marta ko'p?",
+      "v": [
+        "3 marta",
+        "100 marta",
+        "1000 marta",
+        "10 000 marta"
+      ],
+      "t": 2,
+      "izoh": "pH ta'rifidan konsentratsiyalarni topamiz: birinchisida 10⁻⁴, ikkinchisida 10⁻⁷ mol/l. Nisbatni hisoblaymiz: 10⁻⁴ : 10⁻⁷ = 10³. Demak birinchi eritmada ionlar 1000 marta ko'p. Javob: 1000 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "pH-kimyo",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#66ffc47c"
+    },
+    {
+      "q": "Ofis xonasida shovqin intensivligi eshitish chegarasidan 10⁶ marta katta. L = 10·lg(I/I₀) formulasiga ko'ra shovqin darajasi necha detsibelni tashkil etadi?",
+      "v": [
+        "6 dB",
+        "60 dB",
+        "600 dB",
+        "16 dB"
+      ],
+      "t": 1,
+      "izoh": "Nisbatni formulaga qo'yamiz: L = 10·lg10⁶. Logarifmni hisoblaymiz: lg10⁶ = 6. Endi koeffitsientga ko'paytiramiz: L = 10·6 = 60. Javob: 60 dB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "desibel-tovush",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#cf8849b9"
+    },
+    {
+      "q": "Ko'chadagi transport shovqini darajasi 80 detsibelni tashkil etadi. L = 10·lg(I/I₀) formulasidan intensivliklar nisbatini toping.",
+      "v": [
+        "10⁸⁰",
+        "8",
+        "10⁻⁸",
+        "10⁸"
+      ],
+      "t": 3,
+      "izoh": "Tenglamani yozamiz: 80 = 10·lg(I/I₀). Ikkala tomonni 10 ga bo'lamiz: lg(I/I₀) = 8. Logarifm ta'rifiga ko'ra I/I₀ = 10⁸. Javob: 10⁸.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "desibel-tovush",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#0ac347cd"
+    },
+    {
+      "q": "Konsert zalida tovush intensivligi 100 marta orttirildi va bu o'zgarish jadvalda qayd etildi. Tovush darajasi necha detsibelga ortadi?",
+      "v": [
+        "100 dB",
+        "2 dB",
+        "20 dB",
+        "10 dB"
+      ],
+      "t": 2,
+      "izoh": "Daraja o'zgarishi ΔL = 10·lg(I₂/I₁) formulasi bilan topiladi. Bu yerda nisbat 100 ga teng, demak ΔL = 10·lg100. Logarifm lg100 = 2 bo'lgani uchun ΔL = 10·2 = 20. Javob: 20 dB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "desibel-tovush",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#68c85981"
+    },
+    {
+      "q": "Kutubxonada shovqin darajasi 45 detsibel, maktab oshxonasida esa 65 detsibelni tashkil etadi. Oshxonadagi tovush intensivligi kutubxonadagidan necha marta katta?",
+      "v": [
+        "100 marta",
+        "20 marta",
+        "10 marta",
+        "1000 marta"
+      ],
+      "t": 0,
+      "izoh": "Darajalar ayirmasini yozamiz: 65 − 45 = 20 detsibel. Formulaga ko'ra 20 = 10·lg(I₂/I₁), demak lg(I₂/I₁) = 2. Logarifm ta'rifidan I₂/I₁ = 10² = 100. Javob: 100 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "desibel-tovush",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#87b68553"
+    },
+    {
+      "q": "Seysmik stansiya zilzila to'lqini amplitudasi etalon amplitudadan 250 000 marta katta ekanini qayd etdi. M = lg(A/A₀) formulasi va lg2,5 ≈ 0,3979 bo'yicha magnituda taqriban nechaga teng?",
+      "v": [
+        "5,4",
+        "5,0",
+        "6,4",
+        "4,4"
+      ],
+      "t": 0,
+      "izoh": "Nisbatni qulay ko'rinishda yozamiz: 250000 = 2,5·10⁵. Demak M = lg2,5 + lg10⁵ ≈ 0,3979 + 5 = 5,3979. O'ndan bir aniqlikda bu 5,4 ga teng. Javob: 5,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "richter-zilzila",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#832bcd7c"
+    },
+    {
+      "q": "Seysmologlar zilzila magnitudasini 7 ga teng deb qayd etishdi. M = lg(A/A₀) formulasidan to'lqin amplitudasining etalonga nisbatini toping.",
+      "v": [
+        "7",
+        "10⁻⁷",
+        "10⁷",
+        "7¹⁰"
+      ],
+      "t": 2,
+      "izoh": "Berilishga ko'ra lg(A/A₀) = 7. Logarifm ta'rifiga ko'ra argument asosning shu darajasiga teng: A/A₀ = 10⁷. Ya'ni to'lqin amplitudasi etalondan o'n million marta katta. Javob: 10⁷.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "richter-zilzila",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#9c28b621"
+    },
+    {
+      "q": "Bir zilzila to'lqinining amplitudasi ikkinchisinikidan 500 marta katta bo'ldi. lg5 ≈ 0,6990 bo'lsa, ularning magnitudalari farqi taqriban nechaga teng?",
+      "v": [
+        "500",
+        "2,70",
+        "3,00",
+        "1,70"
+      ],
+      "t": 1,
+      "izoh": "Magnitudalar farqi ΔM = lg(A₁/A₂) formulasi bilan topiladi. Bu yerda 500 = 5·100, demak ΔM = lg5 + lg100 ≈ 0,6990 + 2 = 2,6990. Yuzdan bir aniqlikda bu 2,70 ga teng. Javob: 2,70.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "richter-zilzila",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#8a4a9528"
+    },
+    {
+      "q": "Magnitudasi 5 bo'lgan zilzila to'lqini magnitudasi 3,5 bo'lgan zilzila to'lqini bilan taqqoslanmoqda. Birinchisining amplitudasi ikkinchisinikidan necha marta katta?",
+      "v": [
+        "1,5 marta",
+        "15 marta",
+        "≈3,2 marta",
+        "≈31,6 marta"
+      ],
+      "t": 3,
+      "izoh": "Magnitudalar farqi 5 − 3,5 = 1,5 ga teng. Amplitudalar nisbati 10 ning shu darajasiga teng: 10^(1,5) = 10·√10 ≈ 10·3,162. Hisoblasak taxminan 31,6 chiqadi. Javob: ≈31,6 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "richter-zilzila",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#a6f0d233"
+    },
+    {
+      "q": "Bir korxonaning yillik daromadi har yili 20 foizga ortib bormoqda. lg2 ≈ 0,3010 va lg1,2 ≈ 0,0792 bo'lsa, daromad ikki baravar ortishi uchun kamida necha yil kerak?",
+      "v": [
+        "3 yil",
+        "5 yil",
+        "10 yil",
+        "4 yil"
+      ],
+      "t": 3,
+      "izoh": "Shart 1,2ⁿ ≥ 2 ko'rinishida yoziladi. Ikkala tomonning o'nlik logarifmini olamiz: n·lg1,2 ≥ lg2, demak n ≥ 0,3010 : 0,0792 ≈ 3,80. Yil butun son bo'lgani uchun eng kichik mos qiymat 4. Javob: 4 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikkilanish-vaqti",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#42bbf633"
+    },
+    {
+      "q": "Shahar aholisi har yili 2 foizga ortib boradi. lg1,5 ≈ 0,1761 va lg1,02 ≈ 0,0086 bo'lsa, aholi 1,5 baravar ko'payishi uchun kamida necha yil kerak?",
+      "v": [
+        "20 yil",
+        "21 yil",
+        "25 yil",
+        "50 yil"
+      ],
+      "t": 1,
+      "izoh": "Shart 1,02ⁿ ≥ 1,5 ko'rinishida bo'ladi. Logarifm olamiz: n·lg1,02 ≥ lg1,5, ya'ni n ≥ 0,1761 : 0,0086 ≈ 20,48. Butun yil kerak bo'lgani uchun n eng kamida 21 ga teng. Javob: 21 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilanish-vaqti",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#573acde7"
+    },
+    {
+      "q": "Bankdagi omonat yiliga 12 foizdan ortib boradi. lg3 ≈ 0,4771 va lg1,12 ≈ 0,0492 bo'lsa, omonat uch baravar ko'payishi uchun kamida necha yil o'tadi?",
+      "v": [
+        "10 yil",
+        "9 yil",
+        "12 yil",
+        "25 yil"
+      ],
+      "t": 0,
+      "izoh": "Shartni yozamiz: 1,12ⁿ ≥ 3. Logarifm olib n ni ajratamiz: n ≥ lg3 : lg1,12 ≈ 0,4771 : 0,0492 ≈ 9,70. Butun yilga yaxlitlaganda eng kichik mos qiymat 10 bo'ladi. Javob: 10 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilanish-vaqti",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#68b2ae92"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni har soatda 3 baravar ortadi. lg3 ≈ 0,4771 bo'lsa, ularning soni 100 baravar ko'payishi uchun kamida necha soat kerak?",
+      "v": [
+        "4 soat",
+        "6 soat",
+        "5 soat",
+        "33 soat"
+      ],
+      "t": 2,
+      "izoh": "Shart 3ᵗ ≥ 100 ko'rinishida. Logarifm olamiz: t·lg3 ≥ lg100 = 2, demak t ≥ 2 : 0,4771 ≈ 4,19. Butun soat kerak bo'lgani uchun eng kichik mos qiymat 5 ga teng. Javob: 5 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkilanish-vaqti",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#5c88154b"
+    },
+    {
+      "q": "Radioaktiv moddaning yarim yemirilish davri 8 kunga teng. Modda massasining 1/32 qismi qolishi uchun necha kun o'tishi kerak?",
+      "v": [
+        "32 kun",
+        "40 kun",
+        "5 kun",
+        "256 kun"
+      ],
+      "t": 1,
+      "izoh": "Har bir davrda massa ikki barobar kamayadi, demak 1/32 = 2⁻⁵ bo'lishi uchun log₂32 = 5 ta davr kerak. Har bir davr 8 kun davom etadi. Umumiy vaqt 5·8 = 40 kun. Javob: 40 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-yemirilish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#bfdd7e6d"
+    },
+    {
+      "q": "Dori moddasining yarmi qondan har 4 soatda chiqib ketadi. Boshlang'ich miqdorning 6,25 foizi qolishi uchun necha soat o'tadi?",
+      "v": [
+        "4 soat",
+        "8 soat",
+        "24 soat",
+        "16 soat"
+      ],
+      "t": 3,
+      "izoh": "Avval foizni kasrga aylantiramiz: 6,25 foiz = 1/16. Bu 2⁻⁴ ga teng, demak log₂16 = 4 ta yarim yemirilish davri o'tgan. Har bir davr 4 soat bo'lgani uchun jami 4·4 = 16 soat. Javob: 16 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yarim-yemirilish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#795ca9fe"
+    },
+    {
+      "q": "Arxeologik topilmadagi uglerod izotopi miqdori boshlang'ich qiymatning 25 foizini tashkil etadi. Yarim yemirilish davri 5730 yil bo'lsa, topilmaning yoshi necha yil?",
+      "v": [
+        "5730 yil",
+        "22 920 yil",
+        "11 460 yil",
+        "1432 yil"
+      ],
+      "t": 2,
+      "izoh": "25 foiz 1/4 ga teng, ya'ni 2⁻². Demak log₂4 = 2 ta yarim yemirilish davri o'tgan. Har biri 5730 yil bo'lgani uchun yosh 2·5730 = 11460 yil. Javob: 11 460 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yarim-yemirilish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#036e75e7"
+    },
+    {
+      "q": "Fizika mashg'ulotida radioaktiv namunadan boshlang'ich massasining 1/128 qismi qolgani aniqlandi. Buning uchun nechta yarim yemirilish davri o'tgan?",
+      "v": [
+        "7",
+        "6",
+        "8",
+        "128"
+      ],
+      "t": 0,
+      "izoh": "Qolgan ulushni ikkining darajasi ko'rinishida yozamiz: 1/128 = 2⁻⁷. Har bir davrda massa ikki barobar kamayganidan davrlar soni log₂128 ga teng. 2⁷ = 128 bo'lgani uchun bu son 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-yemirilish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#319fb7a8"
+    },
+    {
+      "q": "Fizik formulada ln(e⁴·√e) ifodasi uchradi va uni soddalashtirish kerak bo'ldi. Uning aniq qiymati nechaga teng?",
+      "v": [
+        "4",
+        "5",
+        "4,5",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytmaning logarifmi yig'indiga ajraladi: ln(e⁴·√e) = ln e⁴ + ln√e. Birinchi had 4 ga teng. Ikkinchisida √e = e^(1/2), demak ln√e = 0,5. Yig'indi 4 + 0,5 = 4,5. Javob: 4,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ln-tabiiy-logarifm",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#b2a164f8"
+    },
+    {
+      "q": "Modellashtirish dasturida e^(2·ln3) ifodasi hisoblanadi va natija jadvalga yoziladi. Uning qiymati nechaga teng?",
+      "v": [
+        "9",
+        "6",
+        "3",
+        "e⁶"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichdagi koeffitsientni logarifm ostiga kiritamiz: 2·ln3 = ln3² = ln9. Endi e^(ln9) ko'rinishi hosil bo'ladi. Asosiy logarifmik ayniyatga ko'ra bu 9 ga teng. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ln-tabiiy-logarifm",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#7a5cf341"
+    },
+    {
+      "q": "Statistik modelda ln24 − ln8 + ln(1/3) ifodasi qatnashadi. Bu ifodaning qiymati nechaga teng?",
+      "v": [
+        "1",
+        "ln3",
+        "e",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "Avval ayirmani bo'linmaga aylantiramiz: ln24 − ln8 = ln(24 : 8) = ln3. So'ngra yig'indini ko'paytmaga keltiramiz: ln3 + ln(1/3) = ln(3 : 3) = ln1. Har qanday asosda birning logarifmi nolga teng. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ln-tabiiy-logarifm",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#c9cf3ab4"
+    },
+    {
+      "q": "Muhandislik hisobida (ln81) : (ln3) nisbati uchradi va uni soddalashtirish talab qilinadi. Bu nisbatning qiymati nechaga teng?",
+      "v": [
+        "27",
+        "4",
+        "ln27",
+        "81"
+      ],
+      "t": 1,
+      "izoh": "Asosni almashtirish formulasiga ko'ra ikki tabiiy logarifm nisbati boshqa asosli logarifmga aylanadi: (ln81) : (ln3) = log₃81. Endi 3⁴ = 81 bo'lgani uchun log₃81 = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ln-tabiiy-logarifm",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#9b8836d4"
+    },
+    {
+      "q": "Olimpiada masalasida (log₂5 + log₄25) : log₂5 nisbatini soddalashtirish so'ralgan. Uning qiymati nechaga teng?",
+      "v": [
+        "2",
+        "1",
+        "3",
+        "0,5"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi hadni 2 asosiga keltiramiz: log₄25 = (log₂25) : (log₂4) = (2·log₂5) : 2 = log₂5. Demak surat log₂5 + log₂5 = 2·log₂5 ga teng. Uni maxrajga bo'lsak 2 chiqadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-soddalashtirish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#e0de22d7"
+    },
+    {
+      "q": "Test topshirig'ida (log₂6 · log₆32) : log₂4 ifodasini soddalashtirish so'ralgan. Uning qiymati nechaga teng?",
+      "v": [
+        "5",
+        "10",
+        "0,4",
+        "2,5"
+      ],
+      "t": 3,
+      "izoh": "Qavs ichida zanjir qoidasi ishlaydi: log₂6 · log₆32 = log₂32 = 5. Maxrajda log₂4 = 2. Endi bo'linmani topamiz: 5 : 2 = 2,5. Javob: 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-soddalashtirish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#de3e16c7"
+    },
+    {
+      "q": "Nazorat ishida ichma-ich logarifm berilgan: log₂(log₂65536). Bu ifodaning qiymati nechaga teng?",
+      "v": [
+        "16",
+        "4",
+        "8",
+        "65536"
+      ],
+      "t": 1,
+      "izoh": "Avval ichki logarifmni hisoblaymiz: 2¹⁶ = 65536, demak log₂65536 = 16. Endi tashqi logarifm qoladi: log₂16. 2⁴ = 16 bo'lgani uchun natija 4 ga teng. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-soddalashtirish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#e1c14b46"
+    },
+    {
+      "q": "Ma'lumotlar tahlilida log₂a = 5 va log₂b = 3 ekani aniqlandi. Shu shartlarga ko'ra log₂(a²/b) ifodasining qiymati nechaga teng?",
+      "v": [
+        "13",
+        "2",
+        "7",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "Ifodani xossalar bo'yicha yoyamiz: log₂(a²/b) = 2·log₂a − log₂b. Berilgan qiymatlarni qo'yamiz: 2·5 − 3. Hisoblasak 10 − 3 = 7 chiqadi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-soddalashtirish",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#7f93c5d3"
+    },
+    {
+      "q": "Geodezik hisobda log₃√27 ifodasi uchradi va uni aniq qiymatga keltirish kerak. Bu qiymat nechaga teng?",
+      "v": [
+        "1,5",
+        "3",
+        "0,5",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "Ildizni daraja ko'rinishida yozamiz: √27 = 27^(1/2). Demak log₃√27 = 0,5·log₃27. Bu yerda log₃27 = 3, chunki 3³ = 27. Natija 0,5·3 = 1,5. Javob: 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifm-ostidagi-ildiz",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#b448a4f2"
+    },
+    {
+      "q": "Qurilish loyihasining hisob varag'ida log₅∛125 ifodasi yozilgan. Uni soddalashtirsak, qiymati nechaga teng bo'ladi?",
+      "v": [
+        "3",
+        "5",
+        "1",
+        "1/3"
+      ],
+      "t": 2,
+      "izoh": "Kub ildizni daraja bilan almashtiramiz: ∛125 = 125^(1/3) = 5. Demak ifoda log₅5 ko'rinishiga keladi. Asosning o'zidan olingan logarifm 1 ga teng. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifm-ostidagi-ildiz",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#9e12db3f"
+    },
+    {
+      "q": "Ilmiy hisobda log₇(49·√7) ifodasi uchradi va uni aniq songa keltirish so'raldi. Natija nechaga teng?",
+      "v": [
+        "2",
+        "2,5",
+        "3",
+        "3,5"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytmani ikki logarifmga ajratamiz: log₇49 + log₇√7. Birinchi had 2 ga teng, chunki 7² = 49. Ikkinchisida √7 = 7^(1/2), demak log₇√7 = 0,5. Yig'indi 2 + 0,5 = 2,5. Javob: 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifm-ostidagi-ildiz",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#c2cb7d6c"
+    },
+    {
+      "q": "Muhandislik jadvalida log₂(16·∛2) ifodasi keltirilgan va uning aniq qiymati talab qilinadi. Bu qiymat nechaga teng?",
+      "v": [
+        "4",
+        "4,5",
+        "12",
+        "13/3"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytmani ajratamiz: log₂16 + log₂∛2. Birinchi had 4 ga teng, chunki 2⁴ = 16. Ikkinchisida ∛2 = 2^(1/3), demak log₂∛2 = 1/3. Yig'indi 4 + 1/3 = 13/3. Javob: 13/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifm-ostidagi-ildiz",
+      "id": "matematika_dari_m08-logarifmik-ifodalarni-soddalashtirish-va-hisoblash#3f37b3f3"
+    }
+  ]
+}

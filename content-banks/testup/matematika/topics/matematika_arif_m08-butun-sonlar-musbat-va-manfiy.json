@@ -1,0 +1,1609 @@
+{
+  "nom": "Butun sonlar, musbat va manfiy sonlar",
+  "bolim": "Sonlar va ular ustida amallar",
+  "blok": "arif",
+  "rasmiyBolim": 1,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Koordinata to'g'ri chizig'ida birlik kesma 2 katakka teng qilib olingan. M nuqta koordinata boshidan chapga 6 katak sanaganda hosil bo'ladi. M nuqtaning koordinatasi qanday?",
+      "v": [
+        "−6",
+        "−3",
+        "3",
+        "−12"
+      ],
+      "t": 1,
+      "izoh": "Birlik kesma 2 katakka teng, demak 6 katak 6 : 2 = 3 birlikni bildiradi. Nuqta koordinata boshidan chapda joylashgani uchun koordinatasi manfiy bo'ladi. Shunday qilib M(−3) bo'ladi. Kataklarni birlik deb olish −6 xatosini, ko'paytirish esa −12 xatosini beradi. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-nuqta-oqish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#f41b4256"
+    },
+    {
+      "q": "Sinf devoridagi termometrda har bir bo'linma 1 °C ni bildiradi. Kunduzi simob ustuni nol belgisidan 8 bo'linma pastda to'xtadi. Havo harorati qanday bo'lgan?",
+      "v": [
+        "−8 °C",
+        "8 °C",
+        "−80 °C",
+        "18 °C"
+      ],
+      "t": 0,
+      "izoh": "Termometr shkalasi koordinata to'g'ri chizig'i kabi tuzilgan: nol belgisidan pastdagi bo'linmalar manfiy haroratni ko'rsatadi. Har bo'linma 1 °C bo'lgani uchun 8 bo'linma 8 °C ga to'g'ri keladi. Nol chizig'idan pastda bo'lgani sababli natija −8 °C. Javob: −8 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-nuqta-oqish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#e228c62c"
+    },
+    {
+      "q": "Koordinata to'g'ri chizig'ida C nuqtaning koordinatasi −12 ga teng. Bu nuqta o'ngga 7 birlik siljitilsa, hosil bo'lgan yangi nuqtaning koordinatasi qanday bo'ladi?",
+      "v": [
+        "−19",
+        "−5",
+        "5",
+        "19"
+      ],
+      "t": 1,
+      "izoh": "O'ngga siljitish koordinataga qo'shishni bildiradi, ya'ni −12 + 7 ni hisoblaymiz. Har xil ishorali sonlar qo'shilganda modullar ayiriladi: 12 − 7 = 5, ishora esa moduli katta sonniki, ya'ni manfiy. Demak yangi koordinata −5 bo'ladi. Chapga siljitilgan deb o'ylash −19 xatosiga olib keladi. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-nuqta-oqish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#07339e69"
+    },
+    {
+      "q": "Koordinata to'g'ri chizig'ida P nuqta −3 ga, Q nuqta −11 ga mos keladi. Bu ikki nuqtaning chiziqdagi o'zaro joylashuvi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Q nuqta P dan o'ngda, chunki 11 > 3",
+        "Ikkala nuqta ham bir joyda yotadi",
+        "Q nuqta P dan chapda, chunki −11 < −3",
+        "P nuqta Q dan chapda, chunki −3 < −11"
+      ],
+      "t": 2,
+      "izoh": "Manfiy sonlar orasida moduli katta bo'lgani kichikroq sanaladi, chunki u noldan uzoqroqda, chapda yotadi. −11 ning moduli 11, −3 ning moduli 3, demak −11 < −3. Koordinata to'g'ri chizig'ida kichik son doim chapda turadi. Modullarni to'g'ridan-to'g'ri solishtirish birinchi noto'g'ri variantni beradi. Javob: Q nuqta P dan chapda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-nuqta-oqish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#4c3505d8"
+    },
+    {
+      "q": "Koordinata to'g'ri chizig'ida A nuqta −6 ga, B nuqta 9 ga mos keladi. AB kesmaning uzunligi necha birlikka teng?",
+      "v": [
+        "3",
+        "−15",
+        "54",
+        "15"
+      ],
+      "t": 3,
+      "izoh": "Ikki nuqta orasidagi masofa koordinatalar ayirmasining moduliga teng: |9 − (−6)|. Qavs oldidagi minus ishorani o'zgartiradi, shuning uchun 9 + 6 = 15 hosil bo'ladi. Masofa hech qachon manfiy bo'lmaydi, demak AB = 15 birlik. Ishorani hisobga olmay 9 − 6 = 3 deb olish tipik xato. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-masofa-orta",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#1e219fc8"
+    },
+    {
+      "q": "Koordinata to'g'ri chizig'ida A(−4) va B(6) nuqtalar berilgan. AB kesmani teng ikkiga bo'luvchi nuqtaning koordinatasini toping.",
+      "v": [
+        "5",
+        "1",
+        "10",
+        "−1"
+      ],
+      "t": 1,
+      "izoh": "O'rta nuqtaning koordinatasi chekka nuqtalar koordinatalarining yarim yig'indisiga teng. Demak (−4 + 6) : 2 = 2 : 2 = 1 bo'ladi. Bu yerda 10 soni AB kesmaning uzunligi, o'rta nuqtaning koordinatasi emas. Manfiy ishorani tashlab yuborish 5 xatosini beradi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-masofa-orta",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#337a34c6"
+    },
+    {
+      "q": "Qidiruv guruhi lagerni yo'lning nol kilometr belgisiga tikdi. Birinchi otryad belgidan g'arbga 13 km, ikkinchi otryad esa sharqqa 21 km uzoqlashdi. Ikki otryad orasidagi masofa qancha bo'ladi?",
+      "v": [
+        "8 km",
+        "21 km",
+        "34 km",
+        "273 km"
+      ],
+      "t": 2,
+      "izoh": "G'arbga yurishni manfiy, sharqqa yurishni musbat yo'nalish deb olamiz: otryadlar −13 va 21 nuqtalarda. Masofa koordinatalar ayirmasining moduli: |21 − (−13)| = 21 + 13 = 34 km. Ikki son bir tomonda deb o'ylab 21 − 13 = 8 deyish keng tarqalgan xato. Javob: 34 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-masofa-orta",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#a4521a4d"
+    },
+    {
+      "q": "Koordinata to'g'ri chizig'ida K nuqtaning koordinatasi −5 ga teng. Undan aynan 8 birlik uzoqlikda yotgan barcha nuqtalar koordinatalarining yig'indisini toping.",
+      "v": [
+        "−10",
+        "−13",
+        "3",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Berilgan nuqtadan 8 birlik uzoqlikda ikkita nuqta bor: o'ngdagisi −5 + 8 = 3, chapdagisi −5 − 8 = −13. Ularning yig'indisi 3 + (−13) = −10 bo'ladi. Faqat bitta nuqtani hisobga olish −13 yoki 3 xatosini beradi, masofani ikkilantirish esa 16 ni beradi. Javob: −10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-masofa-orta",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#9df37312"
+    },
+    {
+      "q": "Bir necha son berilgan: −17, 0, 24, −3. Ularning har biri qarama-qarshi soni bilan almashtirilsa, hosil bo'lgan sonlarning yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "4",
+        "44",
+        "−4",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "Qarama-qarshi sonlar: 17, 0, −24, 3 bo'ladi. Ularning yig'indisi 17 + 0 − 24 + 3 = −4 ga teng. Buni tezroq ham ko'rish mumkin: dastlabki yig'indi −17 + 0 + 24 − 3 = 4 edi, qarama-qarshi sonlar yig'indisi undan faqat ishorasi bilan farq qiladi. Modullarni qo'shish 44 xatosini beradi. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-son",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#e589ccdb"
+    },
+    {
+      "q": "Agar x = −13 bo'lsa, shu x soniga qarama-qarshi sonning moduli qanday qiymatga ega bo'ladi?",
+      "v": [
+        "−13",
+        "13",
+        "0",
+        "26"
+      ],
+      "t": 1,
+      "izoh": "−13 ga qarama-qarshi son 13 bo'ladi, chunki qarama-qarshi sonlar faqat ishorasi bilan farq qiladi. Endi shu sonning modulini olamiz: |13| = 13. Modul sonning noldan uzoqligi bo'lgani uchun u manfiy chiqmaydi, shuning uchun −13 javob bo'la olmaydi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-son",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#96784562"
+    },
+    {
+      "q": "Quyidagi juftliklardan qaysi birida sonlar bir-biriga qarama-qarshi: (7 va 1/7), (−5 va −5), (0 va 1), (−21 va 21)?",
+      "v": [
+        "7 va 1/7",
+        "−5 va −5",
+        "0 va 1",
+        "−21 va 21"
+      ],
+      "t": 3,
+      "izoh": "Qarama-qarshi sonlar noldan bir xil uzoqlikda, lekin uning turli tomonlarida yotadi, shuning uchun ularning yig'indisi nolga teng. 7 va 1/7 o'zaro teskari sonlar, qarama-qarshi emas. −5 va −5 aynan bir xil son. Faqat −21 + 21 = 0 shartni bajaradi. Javob: −21 va 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarama-qarshi-son",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#83e6a9be"
+    },
+    {
+      "q": "Do'kon hisobida daromad musbat, xarajat esa manfiy son bilan yoziladi. Hafta davomidagi yozuvlar: 480 000, −150 000, −90 000 va 260 000 so'm. Barcha yozuvlar qarama-qarshisiga almashtirilsa, yakuniy natija qanday bo'ladi?",
+      "v": [
+        "−500 000 so'm",
+        "500 000 so'm",
+        "−980 000 so'm",
+        "980 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Avval hozirgi yakunni topamiz: 480 000 − 150 000 − 90 000 + 260 000 = 500 000 so'm. Har bir yozuv qarama-qarshisiga almashsa, ularning yig'indisi ham qarama-qarshisiga aylanadi. Demak natija −500 000 so'm bo'ladi. Barcha sonlarni manfiy deb qo'shish −980 000 xatosini beradi. Javob: −500 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarama-qarshi-son",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#4338b5f5"
+    },
+    {
+      "q": "|−15| + |4| − |−9| ifodaning qiymatini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "−20",
+        "−2",
+        "10",
+        "28"
+      ],
+      "t": 2,
+      "izoh": "Modul belgisi ichidagi sonning ishorasi tashlanadi: |−15| = 15, |4| = 4, |−9| = 9. Shundan keyin 15 + 4 − 9 = 10 hosil bo'ladi. Modulni umuman e'tiborsiz qoldirib −15 + 4 + 9 deb hisoblash −2 xatosini beradi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-hisoblash",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#84507d5c"
+    },
+    {
+      "q": "|x| = 14 tenglamaning yechimlari koordinata to'g'ri chizig'ida qanday joylashgan va ular nechta ekanini aniqlang.",
+      "v": [
+        "Bitta yechim bor, x = 14",
+        "Bitta yechim bor, x = −14",
+        "Yechim umuman yo'q",
+        "Ikkita yechim bor: 14 va −14"
+      ],
+      "t": 3,
+      "izoh": "Modul sonning koordinata boshidan uzoqligini bildiradi. Noldan aynan 14 birlik uzoqlikda ikkita nuqta bor: biri o'ngda, ikkinchisi chapda. Demak tenglamaning ikkita yechimi mavjud: x = 14 va x = −14. Faqat musbat yechimni yozib qo'yish tipik xato. Javob: ikkita yechim bor: 14 va −14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-hisoblash",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#bfdeee49"
+    },
+    {
+      "q": "a = −6 va b = 11 bo'lsa, |a − b| + |a| · 2 ifodaning qiymatini toping.",
+      "v": [
+        "5",
+        "29",
+        "17",
+        "23"
+      ],
+      "t": 1,
+      "izoh": "Avval qavs ichini hisoblaymiz: a − b = −6 − 11 = −17, uning moduli |−17| = 17. Keyin |a| = 6 va 6 · 2 = 12 bo'ladi. Yig'indi 17 + 12 = 29 ga teng. Oxirgi qadamda ikkiga ko'paytirishni unutish 23 xatosini beradi. Javob: 29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-hisoblash",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#75e6925f"
+    },
+    {
+      "q": "n butun son bo'lib, |n| < 4 sharti bajariladi. Shu shartni qanoatlantiruvchi barcha butun sonlarning soni va yig'indisi haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "8 ta son, yig'indisi 0",
+        "7 ta son, yig'indisi 12",
+        "7 ta son, yig'indisi 0",
+        "4 ta son, yig'indisi 6"
+      ],
+      "t": 2,
+      "izoh": "|n| < 4 sharti n ning noldan uzoqligi 4 dan kichik ekanini bildiradi, ya'ni n qiymatlari −3, −2, −1, 0, 1, 2, 3. Bular jami 7 ta son. Har bir musbat songa unga qarama-qarshi manfiy son mos kelgani uchun yig'indi 0 ga teng. Modullarni qo'shish 12 xatosini, faqat manfiy bo'lmagan sonlarni olish 6 xatosini beradi. Javob: 7 ta son, yig'indisi 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-hisoblash",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#6af7e7d1"
+    },
+    {
+      "q": "Quyidagi sonlarni o'sish tartibida joylashtiring: −8, 3, −14, 0, −1. To'g'ri ketma-ketlik ko'rsatilgan variantni tanlang.",
+      "v": [
+        "−14, −8, −1, 0, 3",
+        "−1, −8, −14, 0, 3",
+        "0, −1, −8, −14, 3",
+        "3, 0, −1, −8, −14"
+      ],
+      "t": 0,
+      "izoh": "Manfiy sonlar orasida moduli katta bo'lgani kichikroq: −14 < −8 < −1. Bulardan keyin nol, undan keyin musbat son keladi. Shunday qilib o'sish tartibi −14, −8, −1, 0, 3 ko'rinishida bo'ladi. Modul bo'yicha tartiblash ikkinchi variantni beradi. Javob: −14, −8, −1, 0, 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonlarni-tartiblash",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#0b0e86c0"
+    },
+    {
+      "q": "Yanvar oyida beshta shaharda tunggi harorat qayd etildi: Nukusda −11 °C, Samarqandda −4 °C, Termizda 2 °C, Buxoroda −9 °C, Andijonda −6 °C. Eng sovuq shahardan eng iliq shaharga qarab to'g'ri tartiblangan qatorni tanlang.",
+      "v": [
+        "Termiz, Samarqand, Andijon, Buxoro, Nukus",
+        "Nukus, Andijon, Buxoro, Samarqand, Termiz",
+        "Termiz, Nukus, Buxoro, Andijon, Samarqand",
+        "Nukus, Buxoro, Andijon, Samarqand, Termiz"
+      ],
+      "t": 3,
+      "izoh": "Manfiy haroratlarda moduli katta bo'lgani sovuqroq bo'ladi: −11 < −9 < −6 < −4 < 2. Shunga ko'ra eng sovuq shahar Nukus, undan keyin Buxoro, Andijon va Samarqand keladi, eng iliqi esa Termiz. Qatorni teskari yozish birinchi variantni beradi. Javob: Nukus, Buxoro, Andijon, Samarqand, Termiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonlarni-tartiblash",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#b85a413f"
+    },
+    {
+      "q": "−23, −32 va −5 sonlari o'zaro qiyoslanmoqda. Quyidagi tasdiqlardan qaysi biri to'g'ri ekanini aniqlang.",
+      "v": [
+        "−32 > −23, chunki 32 > 23",
+        "−32 < −23 < −5, chunki modul o'sgan sari son kichrayadi",
+        "−5 < −23, chunki 5 dan 23 kichik",
+        "Uchala son teng, chunki hammasi manfiy"
+      ],
+      "t": 1,
+      "izoh": "Manfiy sonlarni solishtirishda modul qanchalik katta bo'lsa, sonning o'zi shunchalik kichik bo'ladi. Modullar tartibi 32 > 23 > 5, demak sonlar tartibi teskari bo'ladi: −32 < −23 < −5. Modullarni to'g'ridan-to'g'ri solishtirish birinchi va uchinchi variantlardagi xatolarni keltirib chiqaradi. Javob: −32 < −23 < −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonlarni-tartiblash",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#54b74c4b"
+    },
+    {
+      "q": "Dengiz sathiga nisbatan to'rtta nuqtaning balandligi o'lchandi: A nuqta −45 m, B nuqta 12 m, C nuqta −7 m, D nuqta 0 m. Eng past nuqtadan hisoblaganda ikkinchi o'rinda turgan nuqta qaysi?",
+      "v": [
+        "A nuqta",
+        "D nuqta",
+        "C nuqta",
+        "B nuqta"
+      ],
+      "t": 2,
+      "izoh": "Balandliklarni o'sish tartibida yozamiz: −45 < −7 < 0 < 12, ya'ni A, C, D, B. Eng past nuqta A bo'ladi, undan keyingi past nuqta esa C. Modul bo'yicha kamayish tartibida saralasak 45, 12, 7, 0 chiqadi va ikkinchi o'rinda B nuqta turadi — bu tipik xato, chunki modul emas, sonning o'zi solishtirilishi kerak. Javob: C nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sonlarni-tartiblash",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#aa04e73a"
+    },
+    {
+      "q": "Berilgan sonlar orasidan eng kattasini toping: −19, −2, −45, −7. To'g'ri javobni ko'rsating.",
+      "v": [
+        "−45",
+        "−19",
+        "−2",
+        "−7"
+      ],
+      "t": 2,
+      "izoh": "Manfiy sonlar orasida noldan eng yaqin turgani, ya'ni moduli eng kichigi eng katta bo'ladi. Modullar tartibi 45 > 19 > 7 > 2, demak sonlar tartibi −45 < −19 < −7 < −2. Shunga ko'ra eng katta son −2 ekan. Moduli eng katta sonni tanlash −45 xatosini beradi. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonlarni-solishtirish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#e1a3a44a"
+    },
+    {
+      "q": "Do'kondagi muzlatkichning harorati −6 °C dan yuqori, lekin −2 °C dan past. Bu shartga mos keladigan butun sonli haroratlar nechta?",
+      "v": [
+        "3 ta",
+        "4 ta",
+        "5 ta",
+        "2 ta"
+      ],
+      "t": 0,
+      "izoh": "Shartni −6 < t < −2 ko'rinishida yozamiz. Bu oraliqqa tushadigan butun sonlar −5, −4 va −3, ya'ni jami 3 ta harorat. Chegaralarning o'zini ham qo'shib yuborish 5 ta degan xatoni beradi, bitta chegarani qo'shish esa 4 ta xatosini. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonlarni-solishtirish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#d6e662bb"
+    },
+    {
+      "q": "Ikkita ifoda berilgan: birinchisi −8 + 3, ikkinchisi 3 − 8. Ular orasida qanday munosabat o'rinli ekanini aniqlang.",
+      "v": [
+        "Birinchisi kattaroq",
+        "Ikkinchisi kattaroq",
+        "Birinchisi ikkinchisidan 6 ga katta",
+        "Ikkalasi teng"
+      ],
+      "t": 3,
+      "izoh": "Birinchi ifodani hisoblaymiz: −8 + 3 = −5. Ikkinchisi esa 3 − 8 = −5 beradi. Ayirishni qo'shish sifatida yozsak 3 + (−8) chiqadi, ya'ni qo'shiluvchilar o'rni almashgan xuddi o'sha yig'indi. Qo'shishning o'rin almashtirish xossasiga ko'ra natija bir xil. Javob: ikkalasi teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonlarni-solishtirish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#d98416db"
+    },
+    {
+      "q": "m butun son bo'lib, m < 0 ekani ma'lum. Quyidagi ifodalardan qaysi biri har qanday shunday m uchun eng katta qiymatga ega bo'ladi?",
+      "v": [
+        "m",
+        "−m",
+        "m − 1",
+        "2m"
+      ],
+      "t": 1,
+      "izoh": "m manfiy bo'lgani uchun unga qarama-qarshi son −m musbat chiqadi. Qolgan uchta ifoda esa manfiy: m ning o'zi manfiy, m − 1 undan bir birlik kichik, 2m esa moduli ikki barobar manfiy son. Har qanday musbat son har qanday manfiy sondan katta, demak eng kattasi −m. Oldidagi minus doim manfiy natija beradi deb o'ylash tipik xato. Javob: −m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sonlarni-solishtirish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#3335a6fe"
+    },
+    {
+      "q": "−27 + 14 yig'indining qiymatini hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "41",
+        "−41",
+        "13",
+        "−13"
+      ],
+      "t": 3,
+      "izoh": "Har xil ishorali sonlar qo'shilganda ularning modullari ayiriladi: 27 − 14 = 13. Natijaning ishorasi moduli katta bo'lgan qo'shiluvchi ishorasi bilan bir xil, ya'ni manfiy. Demak −27 + 14 = −13 bo'ladi. Modullarni qo'shib yuborish −41 xatosini beradi. Javob: −13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshish-ishora",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#bfbc8891"
+    },
+    {
+      "q": "Yerto'la qavatida ishlayotgan usta liftga −3 qavatda chiqdi va 8 qavat yuqoriga ko'tarildi. U qaysi qavatga yetib keldi?",
+      "v": [
+        "5-qavat",
+        "11-qavat",
+        "−5-qavat",
+        "3-qavat"
+      ],
+      "t": 0,
+      "izoh": "Yerto'la qavatlari manfiy, yer usti qavatlari musbat son bilan belgilanadi. Lift −3 dan boshlab 8 qavat ko'tarilgani uchun −3 + 8 ni hisoblaymiz. Modullar ayirmasi 8 − 3 = 5, ishora esa moduli katta sonniki, ya'ni musbat. Modullarni qo'shib yuborish 11-qavat xatosiga olib keladi. Javob: 5-qavat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshish-ishora",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#19ced58d"
+    },
+    {
+      "q": "Ish daftaridagi to'rtta yozuvni qo'shish kerak: −18, 25, −40 va 9. Bu sonlarning yig'indisi nechaga teng?",
+      "v": [
+        "92",
+        "34",
+        "−24",
+        "−92"
+      ],
+      "t": 2,
+      "izoh": "Avval musbat sonlarni qo'shamiz: 25 + 9 = 34. Keyin manfiy sonlarni qo'shamiz: −18 + (−40) = −58. Endi 34 va −58 ni qo'shamiz: modullar ayirmasi 58 − 34 = 24, ishora moduli katta guruhniki, ya'ni manfiy. Demak yig'indi −24. Barcha modullarni qo'shib yuborish 92 xatosini beradi. Javob: −24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshish-ishora",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#28c4cda7"
+    },
+    {
+      "q": "Bir qatorda uchta son turibdi: birinchisi −16, ikkinchisi noma'lum, uchinchisi 23. Uchala sonning yig'indisi −5 ga teng bo'lsa, noma'lum son qanday?",
+      "v": [
+        "12",
+        "−12",
+        "−42",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Ma'lum sonlarning yig'indisi −16 + 23 = 7 ga teng. Noma'lum son shu 7 ga qo'shilganda −5 berishi kerak, demak u −5 − 7 = −12 bo'ladi. Tekshiramiz: −16 + (−12) + 23 = −5, shart bajarildi. Ayirishda ishorani almashtirib −5 + 7 = 2 deb olish tipik xato. Javob: −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshish-ishora",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#0766e320"
+    },
+    {
+      "q": "−14 − (−31) ayirmaning qiymatini hisoblang va to'g'ri variantni belgilang.",
+      "v": [
+        "−45",
+        "17",
+        "−17",
+        "45"
+      ],
+      "t": 1,
+      "izoh": "Manfiy sonni ayirish uning qarama-qarshisini qo'shishga teng: −14 − (−31) = −14 + 31. Har xil ishorali sonlarda modullar ayiriladi: 31 − 14 = 17, ishora moduli katta sonniki, ya'ni musbat. Ikki minusni qo'shishga aylantirmaslik −45 xatosiga olib keladi. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirish-manfiy",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#f4f49330"
+    },
+    {
+      "q": "Kecha tunda havo harorati −13 °C edi, tushga borib u 6 °C ga yetdi. Harorat necha gradusga ko'tarilgan?",
+      "v": [
+        "7 °C ga",
+        "−19 °C ga",
+        "19 °C ga",
+        "78 °C ga"
+      ],
+      "t": 2,
+      "izoh": "Ko'tarilish miqdori yakuniy haroratdan boshlang'ich haroratni ayirish bilan topiladi: 6 − (−13). Manfiy sonni ayirish qo'shishga aylanadi, demak 6 + 13 = 19 hosil bo'ladi. Harorat 19 °C ga ko'tarilgan. Ishoraga e'tibor bermay 13 − 6 = 7 deb olish tipik xato. Javob: 19 °C ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirish-manfiy",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#9865b923"
+    },
+    {
+      "q": "Sardor daftarida shunday yozuv bor: a sonidan −17 ni ayirsak, natija −4 chiqadi. Bu yerdagi a soni nechaga teng?",
+      "v": [
+        "−21",
+        "13",
+        "21",
+        "−13"
+      ],
+      "t": 0,
+      "izoh": "Shartni tenglama ko'rinishida yozamiz: a − (−17) = −4, ya'ni a + 17 = −4. Bundan a = −4 − 17 = −21 kelib chiqadi. Tekshiramiz: −21 − (−17) = −21 + 17 = −4, to'g'ri. Qo'shish o'rniga ayirib −4 + 17 = 13 deb olish tipik xato. Javob: −21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirish-manfiy",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#aca24e5e"
+    },
+    {
+      "q": "Konchilar ikkita shaxtada ishlaydi: birinchisining tubi dengiz sathidan −340 m, ikkinchisiniki −185 m balandlikda joylashgan. Birinchi shaxta tubi ikkinchisinikidan qancha pastda?",
+      "v": [
+        "525 m",
+        "185 m",
+        "340 m",
+        "155 m"
+      ],
+      "t": 3,
+      "izoh": "Ikki balandlik farqini topamiz: −340 − (−185) = −340 + 185 = −155. Manfiy natija birinchi shaxta pastroqda ekanini bildiradi, farqning kattaligi esa uning moduli, ya'ni 155 m. Modullarni qo'shib yuborish 525 m xatosini beradi. Javob: 155 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayirish-manfiy",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#53ddfe5e"
+    },
+    {
+      "q": "(−7) · (−12) ko'paytmaning qiymatini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "−84",
+        "−19",
+        "84",
+        "19"
+      ],
+      "t": 2,
+      "izoh": "Ikki manfiy sonning ko'paytmasi musbat bo'ladi, chunki ishoralar bir xil. Endi modullarni ko'paytiramiz: 7 · 12 = 84. Demak natija 84 ga teng. Ko'paytirish o'rniga modullarni qo'shib yuborish 19 xatosini, ishorani manfiy qoldirish esa −84 xatosini beradi. Javob: 84.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytirish-ishora",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#ebbf1796"
+    },
+    {
+      "q": "Beshta manfiy son o'zaro ko'paytirilmoqda. Hosil bo'ladigan ko'paytmaning ishorasi haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Ko'paytma manfiy bo'ladi",
+        "Ko'paytma musbat bo'ladi",
+        "Ko'paytma nolga teng bo'ladi",
+        "Ishorasini aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytmaning ishorasi manfiy ko'paytuvchilar soniga bog'liq bo'ladi. Manfiy ko'paytuvchilar juft bo'lsa natija musbat, toq bo'lsa manfiy chiqadi. Beshta manfiy ko'paytuvchi toq sonni tashkil qiladi, demak ko'paytma manfiy. Har bir minus keyingisini yo'qotadi deb o'ylash musbat degan xatoga olib keladi. Javob: ko'paytma manfiy bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytirish-ishora",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#8a46a96e"
+    },
+    {
+      "q": "Sport zaliga a'zolik uchun har oy 210 000 so'm to'lanadi va bu hisobda −210 000 so'm deb yoziladi. To'rt oylik to'lov hisobda qanday umumiy son bilan aks etadi?",
+      "v": [
+        "−210 000 so'm",
+        "840 000 so'm",
+        "−52 500 so'm",
+        "−840 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Har oy hisobga −210 000 so'm yoziladi, oylar soni esa 4 ta. Bir xil manfiy sonni takror qo'shish ko'paytirishga teng: 4 · (−210 000) = −840 000. Musbat va manfiy sonning ko'paytmasi manfiy bo'ladi. Ko'paytirish o'rniga bo'lish −52 500 xatosini, ishorani tashlash esa 840 000 xatosini beradi. Javob: −840 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytirish-ishora",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#a8504710"
+    },
+    {
+      "q": "Noma'lum butun son 13 ga ko'paytirilganda −91 hosil bo'ldi. Shu noma'lum sonning qarama-qarshisi qanday songa teng?",
+      "v": [
+        "−7",
+        "7",
+        "−78",
+        "78"
+      ],
+      "t": 1,
+      "izoh": "Avval noma'lum sonni topamiz: x · 13 = −91, demak x = −91 : 13 = −7. Musbat songa ko'paytirilganda natija manfiy chiqqani uchun x ning o'zi manfiy bo'lishi kerak edi. Endi −7 ga qarama-qarshi son 7 bo'ladi. Savolda aynan qarama-qarshi son so'ralgani uchun −7 javob emas, ko'paytirish o'rniga ayirish esa −78 xatosini beradi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytirish-ishora",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#5a3fe717"
+    },
+    {
+      "q": "(−144) : 16 bo'linmaning qiymatini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "9",
+        "−128",
+        "−9",
+        "−2304"
+      ],
+      "t": 2,
+      "izoh": "Har xil ishorali sonlarni bo'lganda natija manfiy bo'ladi. Modullarni bo'lamiz: 144 : 16 = 9. Demak (−144) : 16 = −9. Bo'lish o'rniga ayirish −128 xatosini, ko'paytirish esa −2304 xatosini beradi. Javob: −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolish-ishora",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#80621c7c"
+    },
+    {
+      "q": "Bir haftaning besh kunida tunggi harorat qayd etildi: −12, −5, 0, −8 va −15 °C. Shu besh kunlik o'rtacha tunggi harorat qanday bo'lgan?",
+      "v": [
+        "−8 °C",
+        "−40 °C",
+        "8 °C",
+        "−10 °C"
+      ],
+      "t": 0,
+      "izoh": "Avval haroratlar yig'indisini topamiz: −12 − 5 + 0 − 8 − 15 = −40. Endi uni kunlar soniga bo'lamiz: −40 : 5 = −8 °C. Manfiy sonni musbat songa bo'lganda natija manfiy bo'ladi. Nolni sanamay to'rtga bo'lish −10 °C xatosiga olib keladi. Javob: −8 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolish-ishora",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#98b3b382"
+    },
+    {
+      "q": "Bo'linma (−288) : (−24) hisoblanmoqda. Natijaning ishorasi va qiymati haqidagi to'g'ri javobni tanlang.",
+      "v": [
+        "Manfiy, −12",
+        "Manfiy, −264",
+        "Musbat, 264",
+        "Musbat, 12"
+      ],
+      "t": 3,
+      "izoh": "Ikki manfiy sonni bo'lganda natija musbat bo'ladi, chunki bo'linuvchi va bo'luvchining ishoralari bir xil. Endi modullarni bo'lamiz: 288 : 24 = 12. Demak bo'linma musbat va 12 ga teng. Ishorani manfiy deb qoldirish −12 xatosini, bo'lish o'rniga ayirish esa 264 xatosini beradi. Javob: musbat, 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolish-ishora",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#d675ecdc"
+    },
+    {
+      "q": "Muzlatgichdagi harorat har soatda bir xil miqdorda pasayib, 6 soatda 3 °C dan −21 °C gacha tushdi. Har soatdagi o'zgarish qanday son bilan ifodalanadi?",
+      "v": [
+        "−3 °C",
+        "−4 °C",
+        "4 °C",
+        "−24 °C"
+      ],
+      "t": 1,
+      "izoh": "Umumiy o'zgarish yakuniy haroratdan boshlang'ich haroratni ayirish bilan topiladi: −21 − 3 = −24 °C. Bu o'zgarish 6 soatga teng taqsimlangan, demak −24 : 6 = −4 °C. Har soatda harorat 4 °C ga pasaygan, ya'ni o'zgarish manfiy son bilan yoziladi. Ishorani hisobga olmay 21 − 3 = 18, so'ng 18 : 6 = 3 deb hisoblash −3 °C xatosiga olib keladi. Javob: −4 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolish-ishora",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#417e9467"
+    },
+    {
+      "q": "−5 + 3 · (−4) ifodaning qiymatini amallar tartibiga rioya qilgan holda hisoblang.",
+      "v": [
+        "8",
+        "−17",
+        "17",
+        "−2"
+      ],
+      "t": 1,
+      "izoh": "Amallar tartibiga ko'ra avval ko'paytirish bajariladi: 3 · (−4) = −12. Endi qo'shishni bajaramiz: −5 + (−12) = −17. Chapdan o'ngga qarab avval −5 + 3 = −2 deb olib, keyin −4 ga ko'paytirish 8 xatosini beradi. Javob: −17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amallar-tartibi",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#496220af"
+    },
+    {
+      "q": "(−6 + 14) : (−2) − 11 ifodaning qiymatini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "−7",
+        "7",
+        "15",
+        "−15"
+      ],
+      "t": 3,
+      "izoh": "Avval qavs ichini hisoblaymiz: −6 + 14 = 8. Keyin bo'lishni bajaramiz: 8 : (−2) = −4, chunki har xil ishorali sonlar bo'linmasi manfiy. Oxirida ayirish: −4 − 11 = −15. Bo'linma ishorasini yo'qotib 4 − 11 = −7 deb olish tipik xato. Javob: −15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amallar-tartibi",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#f2f31ac7"
+    },
+    {
+      "q": "Talaba uch hafta davomida har hafta 45 000 so'm sarfladi, so'ngra unga 90 000 so'm qo'shimcha tushum keldi. Hisobdagi umumiy o'zgarish qanday son bilan ifodalanadi?",
+      "v": [
+        "−45 000 so'm",
+        "45 000 so'm",
+        "−225 000 so'm",
+        "225 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Har haftalik sarf −45 000 so'm, uch hafta uchun 3 · (−45 000) = −135 000 so'm bo'ladi. Qo'shimcha tushum esa musbat, ya'ni 90 000 so'm. Umumiy o'zgarish −135 000 + 90 000 = −45 000 so'm. Modullarni qo'shib yuborish −225 000 xatosini beradi. Javob: −45 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amallar-tartibi",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#341eec77"
+    },
+    {
+      "q": "12 − [(−3) · (7 − 10) + 5] ifodaning qiymatini hisoblang.",
+      "v": [
+        "16",
+        "2",
+        "−2",
+        "26"
+      ],
+      "t": 2,
+      "izoh": "Avval ichki qavsni hisoblaymiz: 7 − 10 = −3. Keyin ko'paytirish: (−3) · (−3) = 9, chunki ikki manfiy sonning ko'paytmasi musbat. Kvadrat qavs ichi 9 + 5 = 14 ga teng. Oxirida 12 − 14 = −2. Ko'paytmani −9 deb olish 16 xatosiga olib keladi. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amallar-tartibi",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#cd2707f7"
+    },
+    {
+      "q": "(−4)² va −4² ifodalarning qiymatlari o'zaro solishtirilmoqda. To'g'ri tasdiqni tanlang.",
+      "v": [
+        "Ikkalasi ham 16 ga teng",
+        "Ikkalasi ham −16 ga teng",
+        "Birinchisi 16, ikkinchisi −16",
+        "Birinchisi −16, ikkinchisi 16"
+      ],
+      "t": 2,
+      "izoh": "(−4)² yozuvida qavs butun manfiy son kvadratga ko'tarilayotganini ko'rsatadi: (−4) · (−4) = 16. −4² yozuvida esa daraja faqat 4 ga tegishli, minus tashqarida qoladi: −(4 · 4) = −16. Demak qavs natijani butunlay o'zgartiradi. Javob: birinchisi 16, ikkinchisi −16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-manfiy-asos",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#1342c724"
+    },
+    {
+      "q": "(−2)⁵ + (−3)³ ifodaning qiymatini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "59",
+        "−59",
+        "−5",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Manfiy sonning toq darajasi manfiy bo'ladi: (−2)⁵ = −32 va (−3)³ = −27. Ularning yig'indisi −32 + (−27) = −59. Darajalarni musbat deb olish 59 xatosini, asoslarni qo'shib yuborish esa −5 xatosini beradi. Javob: −59.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-manfiy-asos",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#b3c4f95d"
+    },
+    {
+      "q": "n toq natural son bo'lsa, (−7)ⁿ darajaning ishorasi haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Natija har doim manfiy bo'ladi",
+        "Natija har doim musbat bo'ladi",
+        "n ga qarab har xil bo'ladi",
+        "Natija har doim nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Daraja ko'rsatkichi manfiy asos necha marta ko'paytirilayotganini bildiradi. Minuslar juft-juft bo'lib bir-birini yo'qotadi, toq ko'rsatkichda esa bitta minus juftsiz qoladi. Shuning uchun n toq bo'lganda (−7)ⁿ har doim manfiy chiqadi. Javob: natija har doim manfiy bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-manfiy-asos",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#ef389564"
+    },
+    {
+      "q": "(−1)¹⁰⁰ + (−1)¹⁰¹ + (−1)¹⁰² ifodaning qiymatini aniqlang.",
+      "v": [
+        "3",
+        "−1",
+        "0",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "−1 sonining juft darajasi 1 ga, toq darajasi esa −1 ga teng. 100 va 102 juft, 101 esa toq son, demak qo'shiluvchilar 1, −1 va 1 bo'ladi. Yig'indi 1 − 1 + 1 = 1. Hamma hadni musbat deb olish 3 xatosini, hadlarni to'liq juftlab yo'qotish esa 0 xatosini beradi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daraja-manfiy-asos",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#8adb77c3"
+    },
+    {
+      "q": "Sayyoh dengiz sathidan 1240 m balandlikdagi cho'qqida, uning sherigi esa sathdan 85 m pastdagi g'orda turibdi. Ular orasidagi balandlik farqi qancha?",
+      "v": [
+        "1155 m",
+        "1240 m",
+        "1325 m",
+        "85 m"
+      ],
+      "t": 2,
+      "izoh": "G'or dengiz sathidan pastda bo'lgani uchun uning balandligi −85 m deb yoziladi. Balandlik farqi 1240 − (−85) = 1240 + 85 = 1325 m ga teng. Manfiy ishorani hisobga olmay 1240 − 85 = 1155 deb olish tipik xato. Javob: 1325 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-chuqurlik",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#ca6d4de3"
+    },
+    {
+      "q": "Suvga sho'ng'igan g'avvos avval 18 m chuqurlikka tushdi, keyin 7 m ko'tarildi va yana 12 m pastladi. U dengiz sathiga nisbatan qaysi belgida?",
+      "v": [
+        "−13 m",
+        "−23 m",
+        "23 m",
+        "−37 m"
+      ],
+      "t": 1,
+      "izoh": "Pastga harakatni manfiy, yuqoriga harakatni musbat deb belgilaymiz: −18 + 7 − 12 ko'rinishida yozamiz. Avval −18 + 7 = −11, keyin −11 − 12 = −23 hosil bo'ladi. Demak g'avvos dengiz sathidan 23 m pastda, ya'ni −23 m belgida. Barcha harakatni pastga deb olish −37 m xatosini beradi. Javob: −23 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-chuqurlik",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#280fbc78"
+    },
+    {
+      "q": "Quduq tubi yer yuzasiga nisbatan −26 m, nasos esa −9 m belgida o'rnatilgan. Nasosdan quduq tubigacha bo'lgan masofa necha metr?",
+      "v": [
+        "35 m",
+        "26 m",
+        "9 m",
+        "17 m"
+      ],
+      "t": 3,
+      "izoh": "Ikki nuqta orasidagi masofa koordinatalar ayirmasining moduliga teng: |−26 − (−9)| = |−26 + 9| = |−17| = 17 m. Modullarni qo'shib yuborish 35 m xatosini beradi, bitta belgining o'zini javob deb olish esa 26 m yoki 9 m xatosini. Javob: 17 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-chuqurlik",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#20bf38d9"
+    },
+    {
+      "q": "Botiqning eng past nuqtasi −132 m belgida. Undan aynan 3 barobar chuqurroq joyda burg'ilash rejalashtirilgan. Burg'i tubi qaysi belgida bo'ladi va u eng past nuqtadan qancha pastda?",
+      "v": [
+        "−396 m, 264 m pastda",
+        "−396 m, 396 m pastda",
+        "−264 m, 132 m pastda",
+        "−44 m, 88 m pastda"
+      ],
+      "t": 0,
+      "izoh": "Uch barobar chuqurroq degani chuqurlik moduli uch barobar ortadi: 3 · 132 = 396, ya'ni belgi −396 m bo'ladi. Eng past nuqtadan farqi −396 − (−132) = −264, uning moduli 264 m. Demak burg'i tubi −396 m da va u 264 m pastda joylashadi. Chuqurlikni 3 ga bo'lish −44 m xatosiga olib keladi. Javob: −396 m, 264 m pastda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-chuqurlik",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#952b97c8"
+    },
+    {
+      "q": "Fermerning hisobida oy boshida −320 000 so'm qarz bor edi. Oy davomida unga 500 000 so'm tushum keldi. Oy oxirida hisobda qancha mablag' qoladi?",
+      "v": [
+        "−180 000 so'm",
+        "820 000 so'm",
+        "−820 000 so'm",
+        "180 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Qarz manfiy son bilan, tushum musbat son bilan yoziladi: −320 000 + 500 000. Har xil ishorali sonlarda modullar ayiriladi: 500 000 − 320 000 = 180 000, ishora moduli katta sonniki, ya'ni musbat. Demak hisobda 180 000 so'm qoladi. Modullarni qo'shib yuborish 820 000 xatosini beradi. Javob: 180 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hisob-daromad-xarajat",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#746e2d4b"
+    },
+    {
+      "q": "Kichik do'kon uch oyda quyidagi natijalarni oldi: birinchi oy −140 000 so'm, ikkinchi oy 260 000 so'm, uchinchi oy −75 000 so'm. Uch oylik umumiy natija qanday?",
+      "v": [
+        "−45 000 so'm",
+        "475 000 so'm",
+        "45 000 so'm",
+        "−475 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Musbat va manfiy natijalarni alohida yig'amiz: manfiylar −140 000 + (−75 000) = −215 000 so'm, musbati esa 260 000 so'm. Endi 260 000 − 215 000 = 45 000 so'm chiqadi. Natija musbat, ya'ni do'kon uch oyda foyda ko'rgan. Modullarni qo'shib yuborish 475 000 xatosini beradi. Javob: 45 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hisob-daromad-xarajat",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#42ab9f44"
+    },
+    {
+      "q": "Telefon hisobida 12 000 so'm bor edi va har kuni abonent to'lovi uchun 2500 so'm yechib olinadi. Besh kundan keyin hisobda qanday son turadi?",
+      "v": [
+        "500 so'm",
+        "−500 so'm",
+        "−12 500 so'm",
+        "24 500 so'm"
+      ],
+      "t": 1,
+      "izoh": "Besh kunlik yechim 5 · 2500 = 12 500 so'm bo'ladi va u manfiy son sifatida yoziladi. Hisob holati 12 000 + (−12 500) ga teng. Modullar ayirmasi 12 500 − 12 000 = 500, ishora moduli katta sonniki, ya'ni manfiy. Demak hisobda −500 so'm, ya'ni 500 so'mlik qarz qoladi. Javob: −500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hisob-daromad-xarajat",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#7c6c14d8"
+    },
+    {
+      "q": "Ustaning hisobida −60 000 so'm qarz turibdi. U qarzni to'liq yopib, ustiga yana 150 000 so'm qoldirmoqchi. Buning uchun hisobga qancha pul kiritishi kerak?",
+      "v": [
+        "210 000 so'm",
+        "90 000 so'm",
+        "150 000 so'm",
+        "−210 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Kerakli mablag' maqsad qiymatidan hozirgi holatni ayirish bilan topiladi: 150 000 − (−60 000). Manfiy sonni ayirish qo'shishga aylanadi: 150 000 + 60 000 = 210 000 so'm. Ma'nosi ham shu: avval 60 000 qarz yopiladi, qolgan 150 000 hisobda saqlanadi. Oddiy ayirish deb olish 90 000 xatosiga olib keladi. Javob: 210 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hisob-daromad-xarajat",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#9dbcd721"
+    },
+    {
+      "q": "Savdo markazi liftida yer usti qavatlari musbat, avtoturargoh qavatlari manfiy son bilan belgilangan. Lift 4-qavatdan 7 qavat pastga tushdi. U qaysi belgidagi qavatga keldi?",
+      "v": [
+        "3-qavat",
+        "−3-qavat",
+        "−11-qavat",
+        "11-qavat"
+      ],
+      "t": 1,
+      "izoh": "Pastga tushish koordinatadan ayirishni bildiradi: 4 − 7 ni hisoblaymiz. Modullar ayirmasi 7 − 4 = 3, ishora esa moduli katta sonniki, ya'ni manfiy. Demak lift −3 belgili qavatga, ya'ni avtoturargohning uchinchi qavatiga keldi. Ayirish o'rniga qo'shish −11 belgisi xatosiga olib keladi. Javob: −3-qavat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lift-qavat-siljish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#2507fd0f"
+    },
+    {
+      "q": "Lift −2 belgili qavatdan yuqoriga 9 qavat ko'tarildi, so'ngra 5 qavat pastga tushdi. Lift oxirida qaysi qavatda to'xtadi?",
+      "v": [
+        "6-qavat",
+        "−6-qavat",
+        "2-qavat",
+        "12-qavat"
+      ],
+      "t": 2,
+      "izoh": "Harakatlarni ketma-ket yozamiz: −2 + 9 − 5 ko'rinishida bo'ladi. Avval −2 + 9 = 7, keyin 7 − 5 = 2 hosil bo'ladi. Demak lift 2-qavatda to'xtadi. Boshlang'ich manfiy belgini e'tibordan chiqarib 2 + 9 − 5 = 6 deb olish tipik xato. Javob: 2-qavat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lift-qavat-siljish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#382761dc"
+    },
+    {
+      "q": "Ombor binosida lift −4 belgili qavat bilan 6-qavat orasida qatnaydi, har bir qavatning balandligi esa 3 m. Lift eng pastdan eng yuqoriga chiqqanda necha metr ko'tariladi?",
+      "v": [
+        "6 m",
+        "18 m",
+        "24 m",
+        "30 m"
+      ],
+      "t": 3,
+      "izoh": "Avval qavatlar farqini topamiz: 6 − (−4) = 6 + 4 = 10 qavat. Har bir qavat 3 m bo'lgani uchun ko'tarilish 10 · 3 = 30 m ga teng. Manfiy belgini hisobga olmay 6 − 4 = 2 qavat deb olish 6 m xatosini beradi. Javob: 30 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lift-qavat-siljish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#2e74d84b"
+    },
+    {
+      "q": "Lift nol belgidan boshlab quyidagi buyruqlarni bajardi: 5 qavat yuqoriga, 8 qavat pastga, 2 qavat yuqoriga, 4 qavat pastga. Lift boshlang'ich qavatdan qancha uzoqlashgan va qaysi tomonda?",
+      "v": [
+        "5 qavat pastda",
+        "5 qavat yuqorida",
+        "19 qavat pastda",
+        "1 qavat pastda"
+      ],
+      "t": 0,
+      "izoh": "Buyruqlarni ketma-ket qo'shamiz: 0 + 5 − 8 + 2 − 4 ko'rinishida yozamiz. Avval 5 − 8 = −3, keyin −3 + 2 = −1, oxirida −1 − 4 = −5 chiqadi. Manfiy natija lift boshlang'ich qavatdan pastda ekanini, moduli esa uzoqlik 5 qavat ekanini bildiradi. Barcha harakat modullarini qo'shish 19 xatosini beradi. Javob: 5 qavat pastda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "lift-qavat-siljish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#f1e0d795"
+    },
+    {
+      "q": "Shaxmat turnirida g'alaba 3 ochko, mag'lubiyat esa −2 ochko bilan baholanadi. Bekzod 5 marta yutdi va 4 marta yutqazdi. Uning yakuniy ochkosi qancha?",
+      "v": [
+        "23",
+        "−7",
+        "7",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "G'alabalardan olingan ochko 5 · 3 = 15 ga teng. Mag'lubiyatlardan esa 4 · (−2) = −8 ochko yoziladi. Yakuniy natija 15 + (−8) = 7 ochko bo'ladi. Mag'lubiyat ochkosini ham musbat deb qo'shib yuborish 23 xatosini beradi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sport-ochko-farqi",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#4176dca7"
+    },
+    {
+      "q": "Futbol jamoasining gol farqi mavsum boshida −6 edi. Keyingi uch o'yinda jamoa 4 gol urib, 1 gol o'tkazib yubordi. Hozirgi gol farqi qanday?",
+      "v": [
+        "−3",
+        "−9",
+        "3",
+        "−11"
+      ],
+      "t": 0,
+      "izoh": "Uch o'yindagi o'zgarish urilgan va o'tkazilgan gollar ayirmasiga teng: 4 − 1 = 3. Bu musbat o'zgarish eski farqqa qo'shiladi: −6 + 3 = −3. Modullarni qo'shib yuborish −9 xatosini, gollarni ham qo'shib olish esa −11 xatosini beradi. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sport-ochko-farqi",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#7d4fb51e"
+    },
+    {
+      "q": "Viktorinada to'g'ri javob 5 ochko, noto'g'ri javob esa −3 ochko keltiradi. O'quvchi 12 ta savolning hammasiga javob berib, jami 12 ochko to'pladi. U nechta savolga to'g'ri javob bergan?",
+      "v": [
+        "4 ta",
+        "8 ta",
+        "9 ta",
+        "6 ta"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javoblar sonini x deb olsak, noto'g'rilari 12 − x ta bo'ladi. Shart bo'yicha 5x − 3(12 − x) = 12, ya'ni 5x − 36 + 3x = 12. Bundan 8x = 48 va x = 6 kelib chiqadi. Tekshiramiz: 6 · 5 + 6 · (−3) = 30 − 18 = 12, shart bajarildi. Javob: 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sport-ochko-farqi",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#52474d00"
+    },
+    {
+      "q": "Basketbolda jamoaning ochko farqi birinchi chorakda −9, ikkinchi chorakda 14, uchinchi chorakda −5 bo'ldi. Uch chorakdagi umumiy ochko farqi qancha?",
+      "v": [
+        "28",
+        "0",
+        "−28",
+        "10"
+      ],
+      "t": 1,
+      "izoh": "Choraklardagi farqlar oddiy qo'shiladi: −9 + 14 − 5 ni hisoblaymiz. Avval −9 + 14 = 5, keyin 5 − 5 = 0 hosil bo'ladi. Demak uch chorak yakunida jamoa raqibi bilan tenglashgan. Barcha modullarni qo'shib yuborish 28 xatosini beradi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sport-ochko-farqi",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#5800c8ae"
+    },
+    {
+      "q": "−7 va 4 sonlari orasida joylashgan, chegaralarning o'zi hisobga olinmaydigan butun sonlar nechta?",
+      "v": [
+        "11",
+        "12",
+        "3",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Chegaralar orasidagi butun sonlar −6 dan 3 gacha bo'ladi. Ularni sanash uchun 4 − (−7) − 1 = 11 − 1 = 10 hisobidan foydalanamiz. Manfiy sonlarni ham qo'shish kerak, faqat musbatlarni sanash 3 xatosini beradi. Chegaralarni ham qo'shib yuborish 12 xatosiga olib keladi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqdagi-butun-sonlar",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#d3e3e623"
+    },
+    {
+      "q": "Sovutgich ishlab chiqaruvchi zavod −18 °C dan −11 °C gacha bo'lgan har bir butun qiymatda sinov o'tkazadi. Chegaralar ham kiritilsa, jami nechta sinov bo'ladi?",
+      "v": [
+        "7 ta",
+        "8 ta",
+        "9 ta",
+        "29 ta"
+      ],
+      "t": 1,
+      "izoh": "Chegaralar kiritilganda butun sonlar soni ayirmaga bir qo'shish bilan topiladi: −11 − (−18) + 1 = −11 + 18 + 1 = 8. Sonlarni sanab ham ko'rish mumkin: −18, −17, −16, −15, −14, −13, −12, −11. Bir qo'shishni unutish 7 ta xatosini beradi. Javob: 8 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-butun-sonlar",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#6676001d"
+    },
+    {
+      "q": "|k| ≤ 9 va k > −4 shartlarini bir vaqtda qanoatlantiruvchi butun k sonlari nechta va ularning yig'indisi qancha?",
+      "v": [
+        "13 ta, yig'indisi 39",
+        "13 ta, yig'indisi 45",
+        "14 ta, yig'indisi 39",
+        "10 ta, yig'indisi 45"
+      ],
+      "t": 0,
+      "izoh": "Birinchi shart k ni −9 dan 9 gacha cheklaydi, ikkinchisi esa k ning −4 dan katta bo'lishini talab qiladi, ya'ni k ≥ −3. Ikkala shart birga −3 dan 9 gacha bo'lgan 13 ta butun sonni beradi. Yig'indida −3 dan 3 gacha bo'lgan sonlar o'zaro yo'qoladi, qolgani 4 + 5 + 6 + 7 + 8 + 9 = 39. Javob: 13 ta, yig'indisi 39.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-butun-sonlar",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#9e37024b"
+    },
+    {
+      "q": "Koordinata to'g'ri chizig'ida −5 va 8 nuqtalar bilan chegaralangan kesmada nechta butun koordinatali nuqta yotadi, chegaralar ham hisobga olinsa?",
+      "v": [
+        "13 ta",
+        "12 ta",
+        "14 ta",
+        "15 ta"
+      ],
+      "t": 2,
+      "izoh": "Chegaralar bilan birga butun sonlar soni 8 − (−5) + 1 hisobi bilan topiladi. Bu 8 + 5 + 1 = 14 ta nuqtani beradi. Nolni ham butun son sifatida sanash zarur, uni tashlab yuborish 13 ta xatosini beradi. Javob: 14 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqdagi-butun-sonlar",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#f920d652"
+    },
+    {
+      "q": "−10 dan 10 gacha bo'lgan barcha butun sonlarning yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "110",
+        "0",
+        "10",
+        "−10"
+      ],
+      "t": 1,
+      "izoh": "Har bir manfiy songa unga qarama-qarshi musbat son mos keladi: −10 va 10, −9 va 9 va shu tarzda davom etadi. Bunday juftliklarning har birining yig'indisi nolga teng, o'rtada esa nolning o'zi turadi. Demak butun yig'indi 0 ga teng. Modullarni qo'shib yuborish 110 xatosini beradi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-ketma-ket",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#bcb98f9e"
+    },
+    {
+      "q": "−6 dan 9 gacha bo'lgan barcha butun sonlar qo'shilsa, natija nechaga teng bo'ladi?",
+      "v": [
+        "3",
+        "15",
+        "24",
+        "30"
+      ],
+      "t": 2,
+      "izoh": "−6 dan 6 gacha bo'lgan sonlar juft-juft bo'lib o'zaro yo'qoladi va yig'indiga nol qo'shadi. Qolgan qo'shiluvchilar 7, 8 va 9 bo'ladi, ularning yig'indisi 7 + 8 + 9 = 24. Faqat chegaralarni qo'shib −6 + 9 = 3 deb olish tipik xato. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-ketma-ket",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#8e36ccca"
+    },
+    {
+      "q": "Ketma-ket keladigan beshta butun sonning yig'indisi −35 ga teng. Shu sonlarning eng kattasini toping.",
+      "v": [
+        "−5",
+        "−7",
+        "−9",
+        "−3"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket beshta sonning yig'indisi o'rtadagi sonni beshga ko'paytirganga teng bo'ladi. Demak o'rtadagi son −35 : 5 = −7 ga teng. Sonlar −9, −8, −7, −6, −5 ko'rinishida bo'lib, eng kattasi −5. O'rtadagi sonni javob deb olish −7 xatosiga, eng kichigini olish esa −9 xatosiga olib keladi. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-ketma-ket",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#02aa06e0"
+    },
+    {
+      "q": "Bir hafta davomida har kuni omborda −4 tonnadan zaxira o'zgarishi qayd etildi. Etti kunlik umumiy o'zgarish qanday son bilan yoziladi?",
+      "v": [
+        "−11 tonna",
+        "28 tonna",
+        "−4 tonna",
+        "−28 tonna"
+      ],
+      "t": 3,
+      "izoh": "Har kuni bir xil manfiy o'zgarish qayd etilgani uchun uni kunlar soniga ko'paytiramiz: 7 · (−4) = −28 tonna. Musbat va manfiy sonning ko'paytmasi manfiy bo'ladi. Ko'paytirish o'rniga qo'shish −11 tonna xatosini, ishorani tashlash esa 28 tonna xatosini beradi. Javob: −28 tonna.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-ketma-ket",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#81c7d73c"
+    },
+    {
+      "q": "a < 0 va b > 0 bo'lsa, a · b ko'paytma bilan a : b bo'linmaning ishoralari qanday bo'ladi?",
+      "v": [
+        "Ikkalasi ham musbat",
+        "Ko'paytma musbat, bo'linma manfiy",
+        "Ikkalasi ham manfiy",
+        "Ko'paytma manfiy, bo'linma musbat"
+      ],
+      "t": 2,
+      "izoh": "Har xil ishorali ikki sonning ham ko'paytmasi, ham bo'linmasi manfiy bo'ladi. a manfiy va b musbat bo'lgani uchun a · b manfiy chiqadi. Aynan shu qoida bo'yicha a : b ham manfiy bo'ladi. Ko'paytirish va bo'lish uchun ishora qoidasi bir xil ekanini unutish chalkashlikka olib keladi. Javob: ikkalasi ham manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishora-aniqlash",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#6932d644"
+    },
+    {
+      "q": "x va y manfiy butun sonlar bo'lsa, quyidagi ifodalardan qaysi biri albatta musbat qiymat oladi?",
+      "v": [
+        "x + y",
+        "x − y",
+        "x + y³",
+        "x · y"
+      ],
+      "t": 3,
+      "izoh": "Ikki manfiy sonning yig'indisi doim manfiy, demak x + y musbat bo'la olmaydi. x − y ning ishorasi modullar nisbatiga bog'liq, ya'ni albatta musbat deb bo'lmaydi. y³ toq darajali manfiy son bo'lgani uchun manfiy, shuning uchun x + y³ ham manfiy. Ikki manfiy sonning ko'paytmasi esa har doim musbat. Javob: x · y.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishora-aniqlash",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#5634ffd4"
+    },
+    {
+      "q": "p va q butun sonlar uchun p · q < 0 va p + q > 0 shartlari bir vaqtda bajariladi. Bu sonlar haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Ikkalasi ham musbat",
+        "Ishoralari har xil, moduli katta bo'lgani musbat",
+        "Ishoralari har xil, moduli katta bo'lgani manfiy",
+        "Ikkalasi ham manfiy"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma manfiy bo'lishi uchun ko'paytuvchilarning ishoralari albatta har xil bo'lishi kerak, demak biri musbat, biri manfiy. Har xil ishorali sonlar yig'indisining ishorasi moduli katta bo'lgan songa ergashadi. Yig'indi musbat chiqqani uchun moduli katta son musbat bo'ladi. Javob: ishoralari har xil, moduli katta bo'lgani musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ishora-aniqlash",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#c32ca7c6"
+    },
+    {
+      "q": "Uchta manfiy va ikkita musbat son o'zaro ko'paytirilmoqda. Hosil bo'ladigan ko'paytmaning ishorasi qanday?",
+      "v": [
+        "Manfiy",
+        "Musbat",
+        "Nol",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytmaning ishorasini faqat manfiy ko'paytuvchilar soni belgilaydi, musbat ko'paytuvchilar ishoraga ta'sir qilmaydi. Bu yerda manfiylar soni uchta, ya'ni toq son. Toq sondagi minuslardan bittasi juftsiz qoladi, shuning uchun ko'paytma manfiy chiqadi. Javob: manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishora-aniqlash",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#58f45418"
+    },
+    {
+      "q": "To'rtta o'lchov natijasi qayd etildi: −24, 6, −15 va 17. Shu to'rt sonning o'rtacha arifmetigi nechaga teng?",
+      "v": [
+        "4",
+        "−16",
+        "−4",
+        "15,5"
+      ],
+      "t": 2,
+      "izoh": "Avval yig'indini topamiz: −24 + 6 − 15 + 17 = −16. Endi uni o'lchovlar soniga bo'lamiz: −16 : 4 = −4. Manfiy sonni musbat songa bo'lganda natija manfiy bo'ladi. Yig'indini bo'lishni unutish −16 xatosini, modullarning o'rtachasini olish esa 15,5 xatosini beradi. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-qiymat",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#a1f89ade"
+    },
+    {
+      "q": "Beshta butun sonning o'rtacha arifmetigi −7 ga teng. Ularning to'rttasi ma'lum: −12, 3, −9 va −4. Beshinchi son qanday?",
+      "v": [
+        "−22",
+        "−13",
+        "13",
+        "−35"
+      ],
+      "t": 1,
+      "izoh": "Beshta sonning yig'indisi o'rtacha qiymatni sonlar soniga ko'paytirganga teng: 5 · (−7) = −35. Ma'lum to'rttasining yig'indisi −12 + 3 − 9 − 4 = −22 ni beradi. Beshinchi son −35 − (−22) = −35 + 22 = −13 bo'ladi. Ayirishda ishorani almashtirib yuborish 13 xatosini beradi. Javob: −13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-qiymat",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#7e2c50cb"
+    },
+    {
+      "q": "Uchta shaharda tunggi harorat −16 °C, −5 °C va 3 °C bo'ldi. Shu uch shahar bo'yicha o'rtacha tunggi harorat qanday?",
+      "v": [
+        "8 °C",
+        "−18 °C",
+        "6 °C",
+        "−6 °C"
+      ],
+      "t": 3,
+      "izoh": "Avval haroratlarni qo'shamiz: −16 − 5 + 3 = −18. Keyin yig'indini shaharlar soniga bo'lamiz: −18 : 3 = −6 °C. Manfiy yig'indini musbat songa bo'lganda natija manfiy bo'ladi. Modullarning o'rtachasini olish 8 °C xatosini beradi. Javob: −6 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-qiymat",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#727143e2"
+    },
+    {
+      "q": "Olti kunlik kuzatuvda o'rtacha tunggi harorat −13 °C chiqdi. Yettinchi kuni harorat 15 °C bo'lsa, yetti kunlik o'rtacha harorat qanday bo'ladi?",
+      "v": [
+        "−9 °C",
+        "1 °C",
+        "2 °C",
+        "−63 °C"
+      ],
+      "t": 0,
+      "izoh": "Olti kunlik yig'indi 6 · (−13) = −78 °C ga teng. Yettinchi kunni qo'shsak −78 + 15 = −63 °C hosil bo'ladi. Endi yig'indini yetti kunga bo'lamiz: −63 : 7 = −9 °C. Ikki qiymatning o'rtachasini olish 1 °C xatosiga, bo'lishni unutish esa −63 °C xatosiga olib keladi. Javob: −9 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-qiymat",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#8bb58dbb"
+    },
+    {
+      "q": "a = −3 va b = 5 bo'lganda 2a − 3b ifodaning qiymatini hisoblang.",
+      "v": [
+        "9",
+        "−21",
+        "−9",
+        "21"
+      ],
+      "t": 1,
+      "izoh": "Harflar o'rniga berilgan qiymatlarni qo'yamiz: 2 · (−3) − 3 · 5 ko'rinishi hosil bo'ladi. Ko'paytmalarni hisoblaymiz: −6 va 15. Endi −6 − 15 = −21 ni topamiz. Birinchi ko'paytmani musbat deb olish 6 − 15 = −9 xatosini, ayirishni teskari bajarish esa 15 − 6 = 9 xatosini beradi. Javob: −21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifoda-qiymati-orniga-qoyish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#a4a98ee3"
+    },
+    {
+      "q": "m = −4 bo'lsa, m² − 5m + 2 ifodaning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "−2",
+        "18",
+        "38",
+        "−38"
+      ],
+      "t": 2,
+      "izoh": "Avval m² = (−4)² = 16 ni topamiz, chunki manfiy sonning juft darajasi musbat bo'ladi. Keyin −5m = −5 · (−4) = 20 chiqadi. Endi 16 + 20 + 2 = 38 ni hisoblaymiz. Ikkinchi hadning ishorasini noto'g'ri olib 16 − 20 + 2 = −2 deyish, −5m hadini butunlay tushirib qoldirib 16 + 2 = 18 deyish tipik xatolar. Javob: 38.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-qiymati-orniga-qoyish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#13b1faea"
+    },
+    {
+      "q": "Kunlik foyda P = 3n − 25 formulasi bilan hisoblanadi, bunda n sotilgan buyumlar soni. Bir kunda 6 ta buyum sotilgan bo'lsa, P qanday qiymat oladi?",
+      "v": [
+        "−7",
+        "7",
+        "43",
+        "−43"
+      ],
+      "t": 0,
+      "izoh": "Formulaga n = 6 qiymatini qo'yamiz: P = 3 · 6 − 25 bo'ladi. Avval 3 · 6 = 18, keyin 18 − 25 = −7 chiqadi. Manfiy natija o'sha kuni foyda emas, zarar bo'lganini bildiradi. Ayirishni teskari bajarib 25 − 18 = 7 deb olish tipik xato. Javob: −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-qiymati-orniga-qoyish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#9c1ac123"
+    },
+    {
+      "q": "x = −9 va y = 3 bo'lganda (x − y) : (x + y) ifodaning qiymatini toping.",
+      "v": [
+        "−2",
+        "2",
+        "−12",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Avval surat va maxrajni alohida hisoblaymiz. Surat: x − y = −9 − 3 = −12. Maxraj: x + y = −9 + 3 = −6. Endi bo'lishni bajaramiz: (−12) : (−6) = 2, chunki ikki manfiy sonning bo'linmasi musbat. Bitta bosqichda to'xtab qolish −12 yoki 6 xatolarini beradi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-qiymati-orniga-qoyish",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#96d9351b"
+    },
+    {
+      "q": "Bir kunda o'lchangan haroratlar: −7 °C, 2 °C, −13 °C, 5 °C va −1 °C. Eng yuqori va eng past harorat orasidagi farq qancha?",
+      "v": [
+        "8 °C",
+        "13 °C",
+        "−18 °C",
+        "18 °C"
+      ],
+      "t": 3,
+      "izoh": "Ro'yxatdagi eng yuqori harorat 5 °C, eng pasti esa −13 °C bo'ladi. Farq katta qiymatdan kichigini ayirish bilan topiladi: 5 − (−13) = 5 + 13 = 18 °C. Manfiy ishorani hisobga olmay 13 − 5 = 8 deb olish tipik xato. Javob: 18 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-eng-kichik-farq",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#22c8abed"
+    },
+    {
+      "q": "To'plamda −22, 14, −35, 0 va 19 sonlari bor. Eng katta va eng kichik sonning yig'indisi nechaga teng?",
+      "v": [
+        "54",
+        "−16",
+        "16",
+        "−54"
+      ],
+      "t": 1,
+      "izoh": "To'plamdagi eng katta son 19, eng kichigi esa −35 bo'ladi, chunki manfiy sonlarda moduli kattasi kichikroq sanaladi. Ularning yig'indisi 19 + (−35) ga teng. Modullar ayirmasi 35 − 19 = 16, ishora moduli katta sonniki, ya'ni manfiy. Modullarni qo'shib yuborish 54 xatosini beradi. Javob: −16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-eng-kichik-farq",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#919e203a"
+    },
+    {
+      "q": "Beshta butun sondan iborat ro'yxatda eng kichigi −18, eng kattasi esa noma'lum. Eng katta va eng kichik son orasidagi farq 25 ga teng bo'lsa, eng katta son qanday?",
+      "v": [
+        "−43",
+        "43",
+        "7",
+        "−7"
+      ],
+      "t": 2,
+      "izoh": "Farq eng katta sondan eng kichigini ayirish bilan topiladi, ya'ni x − (−18) = 25. Manfiy sonni ayirish qo'shishga aylanadi, demak x + 18 = 25. Bundan x = 25 − 18 = 7 kelib chiqadi. Ayirish o'rniga qo'shib 25 + 18 = 43 deb olish tipik xato. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-eng-kichik-farq",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#3bc5f2c1"
+    },
+    {
+      "q": "Uch tumanda oylik daromad o'zgarishi qayd etildi: −9, 4 va −15 birlik. Eng past va eng yuqori ko'rsatkich orasidagi farqni toping.",
+      "v": [
+        "19",
+        "11",
+        "−19",
+        "24"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichlarning eng kattasi 4, eng kichigi esa −15 bo'ladi. Farq 4 − (−15) = 4 + 15 = 19 birlikka teng. Manfiy ishorani tashlab 15 − 4 = 11 deb olish tipik xato. Moduli eng katta ikki sonni qo'shib 24 deyish esa yana bir keng tarqalgan yanglishish. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-eng-kichik-farq",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#23205477"
+    },
+    {
+      "q": "Koordinata to'g'ri chizig'ida A nuqta −7 da yotadi. Uning koordinata boshiga nisbatan simmetrik nuqtasi qaysi songa mos keladi?",
+      "v": [
+        "−14",
+        "0",
+        "7",
+        "14"
+      ],
+      "t": 2,
+      "izoh": "Koordinata boshiga nisbatan simmetriya sonni uning qarama-qarshisiga almashtiradi, chunki ikki nuqta noldan bir xil uzoqlikda, turli tomonlarda yotadi. −7 ga qarama-qarshi son 7 bo'ladi. Uzoqlikni ikkilantirib 14 deb olish tipik xato. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-simmetriya",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#57011032"
+    },
+    {
+      "q": "Koordinata to'g'ri chizig'ida B nuqta −5 da, C nuqta esa 11 da joylashgan. B nuqtaning C ga nisbatan simmetrik nuqtasi qaysi koordinatada bo'ladi?",
+      "v": [
+        "17",
+        "27",
+        "−27",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Simmetriyada C nuqta B va izlanayotgan nuqta orasidagi kesmaning o'rtasi bo'ladi. Demak (−5 + x) : 2 = 11, bundan −5 + x = 22 va x = 27 kelib chiqadi. Buni masofa orqali ham ko'rish mumkin: B dan C gacha 11 − (−5) = 16 birlik, shuncha masofani yana o'ngga qo'yamiz va 11 + 16 = 27 hosil bo'ladi. Masofani 6 deb noto'g'ri hisoblash 17 xatosini beradi. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-simmetriya",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#ed2f42b7"
+    },
+    {
+      "q": "D nuqtaning koordinata boshiga nisbatan simmetrigi 23 ga teng. D nuqtaning o'zi qaysi koordinatada yotadi?",
+      "v": [
+        "23",
+        "46",
+        "−46",
+        "−23"
+      ],
+      "t": 3,
+      "izoh": "Simmetriya munosabati o'zaro bo'ladi, ya'ni ikkala nuqta bir-birining qarama-qarshisi. 23 ga qarama-qarshi son −23 ekan. Ikkala nuqta ham noldan 23 birlik uzoqlikda, lekin uning turli tomonlarida yotadi. Uzoqlikni ikkiga ko'paytirish −46 xatosiga olib keladi. Javob: −23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-simmetriya",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#6389e8e4"
+    },
+    {
+      "q": "Termometr shkalasida nol belgisiga nisbatan simmetrik ikkita harorat bor, ulardan biri −16 °C. Ikkinchisi qanday va ular orasidagi farq qancha?",
+      "v": [
+        "16 °C, farqi 32 °C",
+        "16 °C, farqi 16 °C",
+        "−16 °C, farqi 0 °C",
+        "32 °C, farqi 48 °C"
+      ],
+      "t": 0,
+      "izoh": "Nolga nisbatan simmetrik haroratlar bir-biriga qarama-qarshi bo'ladi, demak ikkinchisi 16 °C. Ular orasidagi farq 16 − (−16) = 16 + 16 = 32 °C ga teng. Farq sifatida bitta modulning o'zini olish 16 °C xatosiga olib keladi. Javob: 16 °C, farqi 32 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-simmetriya",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#f63fac15"
+    },
+    {
+      "q": "Ketma-ketlik shunday tuzilgan: 12, 5, −2, −9 va hokazo. Har bir keyingi had oldingisidan bir xil songa farq qiladi. Beshinchi had qanday?",
+      "v": [
+        "−7",
+        "−15",
+        "−16",
+        "−18"
+      ],
+      "t": 2,
+      "izoh": "Qo'shni hadlar ayirmasini topamiz: 5 − 12 = −7, so'ng −2 − 5 = −7, ya'ni har safar 7 ayirilmoqda. Beshinchi had −9 − 7 = −16 bo'ladi. Ayirmani 6 deb noto'g'ri olish −15 xatosini, 9 deb olish esa −18 xatosini beradi. Javob: −16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonlar-qonuniyati",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#98f7d78c"
+    },
+    {
+      "q": "Ketma-ketlikda har bir had oldingisining qarama-qarshisiga 3 qo'shish yo'li bilan hosil qilinadi. Birinchi had 8 bo'lsa, to'rtinchi had qanday?",
+      "v": [
+        "−5",
+        "8",
+        "11",
+        "−11"
+      ],
+      "t": 0,
+      "izoh": "Qoidani ketma-ket qo'llaymiz. Ikkinchi had −8 + 3 = −5 bo'ladi. Uchinchi had 5 + 3 = 8, chunki −5 ga qarama-qarshi son 5. To'rtinchi had esa yana −8 + 3 = −5 chiqadi. Qarama-qarshi olishni unutib 8 + 3 deb yurish 11 xatosiga olib keladi. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sonlar-qonuniyati",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#6cfb025a"
+    },
+    {
+      "q": "Har kuni suv omborining sathi 3 sm dan pasayadi. Bugun sath nol belgisida bo'lsa, olti kundan keyin sath qaysi belgida bo'ladi?",
+      "v": [
+        "−3 sm",
+        "−18 sm",
+        "18 sm",
+        "−9 sm"
+      ],
+      "t": 1,
+      "izoh": "Kunlik o'zgarish −3 sm, kunlar soni esa 6 ta. Umumiy o'zgarish 6 · (−3) = −18 sm ga teng bo'ladi. Sath nol belgisidan boshlangani uchun olti kundan keyin u −18 sm da bo'ladi. Ko'paytirish o'rniga qo'shish −9 sm xatosini beradi. Javob: −18 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonlar-qonuniyati",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#b7891b3f"
+    },
+    {
+      "q": "Ketma-ketlikning hadlari −1, 2, −4, 8, −16 tarzida davom etadi. Oltinchi had qanday songa teng bo'ladi?",
+      "v": [
+        "−32",
+        "−24",
+        "24",
+        "32"
+      ],
+      "t": 3,
+      "izoh": "Har bir keyingi had oldingisini −2 ga ko'paytirish bilan olinadi: −1 · (−2) = 2, keyin 2 · (−2) = −4 va shu tarzda davom etadi. Oltinchi had −16 · (−2) = 32 bo'ladi. Ikki manfiy sonning ko'paytmasi musbat, shuning uchun natija musbat chiqadi. Ishorani manfiy qoldirish −32 xatosiga olib keladi. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonlar-qonuniyati",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#16f28569"
+    },
+    {
+      "q": "Ikkita butun sonning yig'indisi −4, ko'paytmasi esa −45 ga teng. Shu sonlarning kattarog'ini toping.",
+      "v": [
+        "−9",
+        "9",
+        "5",
+        "−5"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytma manfiy bo'lgani uchun sonlarning ishoralari har xil bo'lishi kerak. Yig'indi manfiy chiqqani esa moduli katta sonning manfiy ekanini bildiradi. 45 ni ko'paytuvchilarga ajratamiz va 5 bilan 9 juftligini sinaymiz: 5 + (−9) = −4 va 5 · (−9) = −45, ikkala shart ham bajarildi. Demak sonlar 5 va −9, ulardan kattarog'i 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mantiqiy-xulosa-butun-son",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#817580c6"
+    },
+    {
+      "q": "Butun n soni uchun n + 6 musbat, n − 2 esa manfiy ekani ma'lum. n qanday qiymatlarni qabul qilishi mumkin?",
+      "v": [
+        "−6 dan 2 gacha, jami 5 ta qiymat",
+        "−5 dan 1 gacha, jami 7 ta qiymat",
+        "−6 dan 2 gacha, jami 9 ta qiymat",
+        "0 dan 2 gacha, jami 3 ta qiymat"
+      ],
+      "t": 1,
+      "izoh": "Birinchi shart n + 6 > 0 ko'rinishida, undan n > −6 kelib chiqadi. Ikkinchi shart n − 2 < 0, undan esa n < 2 kelib chiqadi. Butun sonlar uchun bu −5 dan 1 gacha bo'lgan qiymatlarni beradi: −5, −4, −3, −2, −1, 0, 1. Bular jami 7 ta son. Chegaralarni ham qo'shib yuborish 9 ta degan xatoga olib keladi. Javob: −5 dan 1 gacha, jami 7 ta qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mantiqiy-xulosa-butun-son",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#99229f6a"
+    },
+    {
+      "q": "Ikki omborning harorati o'lchandi: birinchisiniki ikkinchisinikidan 17 gradus past va ularning yig'indisi 3 °C. Birinchi ombordagi harorat qanday?",
+      "v": [
+        "10 °C",
+        "−10 °C",
+        "−14 °C",
+        "−7 °C"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi ombor haroratini y deb olsak, birinchisi y − 17 bo'ladi. Yig'indi sharti y + (y − 17) = 3 ko'rinishida yoziladi, ya'ni ikkilangan y dan 17 ayrilganda 3 chiqadi. Bundan ikkilangan y 20 ga, y esa 10 °C ga teng. Birinchi ombordagi harorat 10 − 17 = −7 °C. Ikkinchi ombor haroratini javob deb olish 10 °C xatosiga olib keladi. Javob: −7 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mantiqiy-xulosa-butun-son",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#d321180c"
+    },
+    {
+      "q": "Quyidagi tasdiqlardan qaysi biri barcha butun sonlar uchun har doim to'g'ri bo'ladi?",
+      "v": [
+        "Har qanday manfiy son har qanday musbat sondan kichik",
+        "Manfiy sonning moduli ham manfiy bo'ladi",
+        "Nol musbat sonlar qatoriga kiradi",
+        "Ikki manfiy sonning yig'indisi musbat bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Koordinata to'g'ri chizig'ida manfiy sonlar noldan chapda, musbat sonlar esa o'ngda joylashadi, shuning uchun birinchi tasdiq har doim to'g'ri. Modul masofani bildirgani uchun u hech qachon manfiy bo'lmaydi. Nol na musbat, na manfiy son sanaladi. Ikki manfiy sonning yig'indisi esa yana manfiy chiqadi. Javob: har qanday manfiy son har qanday musbat sondan kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mantiqiy-xulosa-butun-son",
+      "id": "matematika_arif_m08-butun-sonlar-musbat-va-manfiy#06bfdcc7"
+    }
+  ]
+}

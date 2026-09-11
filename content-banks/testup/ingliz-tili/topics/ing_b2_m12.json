@@ -1,0 +1,1306 @@
+{
+  "nom": "Linking words / connectors",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "___ the long queue, we got tickets for the concert.",
+      "v": [
+        "Although",
+        "Despite",
+        "However",
+        "Whereas"
+      ],
+      "t": 1,
+      "izoh": "Ot (the long queue) → despite (#132).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#37f28a92"
+    },
+    {
+      "q": "___ the queue was long, we got tickets for the concert.",
+      "v": [
+        "Although",
+        "In spite of",
+        "Despite",
+        "However"
+      ],
+      "t": 0,
+      "izoh": "Gap (the queue was long) → although.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#69b94248"
+    },
+    {
+      "q": "Find the mistake: 'Despite of the warnings, the climbers set off at dawn.'",
+      "v": [
+        "at dawn",
+        "the warnings",
+        "set off",
+        "Despite of"
+      ],
+      "t": 3,
+      "izoh": "despite + ot, «of» yo'q (#132).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#5323d872"
+    },
+    {
+      "q": "Find the mistake: 'Although the shop was closed, but we found a café nearby.'",
+      "v": [
+        "Although",
+        "was closed",
+        "but",
+        "nearby"
+      ],
+      "t": 2,
+      "izoh": "Ikki bog'lovchi — although yoki but (#133).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#9236e29e"
+    },
+    {
+      "q": "The bridge was closed. ___, the journey took three hours.",
+      "v": [
+        "As a result",
+        "Despite",
+        "Although",
+        "Whereas"
+      ],
+      "t": 0,
+      "izoh": "Natija, yangi gap → As a result,.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#d3f3b6cf"
+    },
+    {
+      "q": "My grandfather reads newspapers, ___ my grandmother prefers the radio.",
+      "v": [
+        "therefore",
+        "despite",
+        "so that",
+        "whereas"
+      ],
+      "t": 3,
+      "izoh": "Ikki tomon → whereas.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#63dc2644"
+    },
+    {
+      "q": "She kept the receipt ___ she could return the shoes.",
+      "v": [
+        "so that",
+        "in order to",
+        "so as to",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "Gap + would → so that.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#e0f68832"
+    },
+    {
+      "q": "He got up at five ___ catch the first train.",
+      "v": [
+        "so that",
+        "in order to",
+        "because",
+        "therefore"
+      ],
+      "t": 1,
+      "izoh": "Fe'l, bir xil ega → in order to.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#762f7030"
+    },
+    {
+      "q": "Find the mistake: 'The roads were icy, however the buses ran on time.'",
+      "v": [
+        "The roads",
+        "were icy",
+        "however",
+        "ran on time"
+      ],
+      "t": 2,
+      "izoh": "however bog'lovchi emas — nuqta + However, (yoki but).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#8dc86299"
+    },
+    {
+      "q": "The team played well. ___, they lost the final.",
+      "v": [
+        "Despite",
+        "Therefore",
+        "Whereas",
+        "Nevertheless"
+      ],
+      "t": 3,
+      "izoh": "Qarama-qarshilik, yangi gap → Nevertheless,.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#ea453591"
+    },
+    {
+      "q": "The concert was cancelled ___ the singer being ill.",
+      "v": [
+        "although",
+        "because",
+        "so that",
+        "due to"
+      ],
+      "t": 3,
+      "izoh": "Ot / -ing → due to.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#b4f6f482"
+    },
+    {
+      "q": "The plan is cheap. ___, it can start next month.",
+      "v": [
+        "Despite",
+        "Moreover",
+        "Although",
+        "Whereas"
+      ],
+      "t": 1,
+      "izoh": "Qo'shimcha dalil → Moreover,.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#ce0fdf35"
+    },
+    {
+      "q": "He is very rich. ___, he is not happy.",
+      "v": [
+        "However",
+        "Because",
+        "Therefore",
+        "Moreover"
+      ],
+      "t": 0,
+      "izoh": "however = ammo.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#08481325"
+    },
+    {
+      "q": "We stayed inside ___ it was too cold outside.",
+      "v": [
+        "because",
+        "because of",
+        "despite",
+        "so that"
+      ],
+      "t": 0,
+      "izoh": "because + gap.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#3c97ada1"
+    },
+    {
+      "q": "___ the traffic was heavy, we arrived on time.",
+      "v": [
+        "Even though",
+        "Despite",
+        "Because of",
+        "So that"
+      ],
+      "t": 0,
+      "izoh": "even though + gap.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#954cf5f7"
+    },
+    {
+      "q": "The road was icy; ___, the driver slowed down.",
+      "v": [
+        "therefore",
+        "although",
+        "whereas",
+        "moreover"
+      ],
+      "t": 0,
+      "izoh": "therefore = shuning uchun.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#e6043343"
+    },
+    {
+      "q": "He speaks French, ___ his brother speaks German.",
+      "v": [
+        "whereas",
+        "because",
+        "therefore",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "whereas = qiyoslash.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#d26d12f2"
+    },
+    {
+      "q": "The plan is cheap and easy. ___, it saves time.",
+      "v": [
+        "Moreover",
+        "However",
+        "Whereas",
+        "Despite"
+      ],
+      "t": 0,
+      "izoh": "moreover = qo'shimcha.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#b66d1cb3"
+    },
+    {
+      "q": "She wore a coat ___ she wouldn't feel cold.",
+      "v": [
+        "so that",
+        "in order to",
+        "because of",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "so that + gap (S+V).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#bee2c59c"
+    },
+    {
+      "q": "They cancelled the match ___ heavy rain.",
+      "v": [
+        "because of",
+        "because",
+        "although",
+        "so that"
+      ],
+      "t": 0,
+      "izoh": "because of + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#94a416ed"
+    },
+    {
+      "q": "Which word fits? '___ studying all night, he failed.'",
+      "v": [
+        "Despite",
+        "Although",
+        "However",
+        "Because"
+      ],
+      "t": 0,
+      "izoh": "despite + gerund.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#a480f1cd"
+    },
+    {
+      "q": "Which word fits? '___ he studied all night, he failed.'",
+      "v": [
+        "Although",
+        "Despite",
+        "In spite of",
+        "Because of"
+      ],
+      "t": 0,
+      "izoh": "although + gap.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#10667c16"
+    },
+    {
+      "q": "Which word fits? 'He failed ___ he didn't study.'",
+      "v": [
+        "because",
+        "because of",
+        "despite",
+        "although"
+      ],
+      "t": 0,
+      "izoh": "because + gap.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#8f272f85"
+    },
+    {
+      "q": "Which word fits? 'He failed ___ lack of preparation.'",
+      "v": [
+        "because of",
+        "because",
+        "although",
+        "so that"
+      ],
+      "t": 0,
+      "izoh": "because of + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#7e27d07a"
+    },
+    {
+      "q": "Complete: 'I turned off my phone ___ concentrate.'",
+      "v": [
+        "in order to",
+        "so that",
+        "because of",
+        "however"
+      ],
+      "t": 0,
+      "izoh": "in order to + V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#bff49d0e"
+    },
+    {
+      "q": "___ his illness, he continued to work.",
+      "v": [
+        "In spite of",
+        "Although",
+        "However",
+        "Because"
+      ],
+      "t": 0,
+      "izoh": "in spite of + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#81039643"
+    },
+    {
+      "q": "The city is crowded. ___, it is very lively.",
+      "v": [
+        "On the other hand",
+        "Because of",
+        "Therefore",
+        "So that"
+      ],
+      "t": 0,
+      "izoh": "on the other hand = ziddiyatli tomon.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#ca210411"
+    },
+    {
+      "q": "There was a power cut; ___, the meeting was postponed.",
+      "v": [
+        "as a result",
+        "although",
+        "whereas",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "as a result = natijada.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#a9c8d5f1"
+    },
+    {
+      "q": "She saved money ___ buy a new car.",
+      "v": [
+        "in order to",
+        "so that",
+        "because",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "in order to + V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#d07e042e"
+    },
+    {
+      "q": "___ it was late, they kept talking.",
+      "v": [
+        "Even though",
+        "Despite",
+        "Because of",
+        "In spite of"
+      ],
+      "t": 0,
+      "izoh": "even though + gap.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#018f6bb5"
+    },
+    {
+      "q": "The exam was hard. ___, most students passed.",
+      "v": [
+        "Nevertheless",
+        "Because",
+        "Therefore",
+        "Moreover"
+      ],
+      "t": 0,
+      "izoh": "nevertheless = shunga qaramay.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#fd2b781a"
+    },
+    {
+      "q": "He works hard, ___ his brother is lazy.",
+      "v": [
+        "whereas",
+        "because",
+        "so that",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "whereas = qarama-qarshi qiyos.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#2adc33ee"
+    },
+    {
+      "q": "We took an umbrella ___ it might rain.",
+      "v": [
+        "because",
+        "because of",
+        "despite",
+        "so that"
+      ],
+      "t": 0,
+      "izoh": "because + gap.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#38a45ba1"
+    },
+    {
+      "q": "The product is popular ___ its low price.",
+      "v": [
+        "because of",
+        "because",
+        "although",
+        "so that"
+      ],
+      "t": 0,
+      "izoh": "because of + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#0814199d"
+    },
+    {
+      "q": "___ working hard, she didn't get a promotion.",
+      "v": [
+        "Despite",
+        "Although",
+        "However",
+        "Because"
+      ],
+      "t": 0,
+      "izoh": "despite + gerund.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#5a3efdd7"
+    },
+    {
+      "q": "He was late; ___, he missed the beginning.",
+      "v": [
+        "therefore",
+        "although",
+        "whereas",
+        "moreover"
+      ],
+      "t": 0,
+      "izoh": "therefore = natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#b60ea172"
+    },
+    {
+      "q": "This laptop is fast. ___, it has a long battery life.",
+      "v": [
+        "Moreover",
+        "However",
+        "Whereas",
+        "Despite"
+      ],
+      "t": 0,
+      "izoh": "moreover = qo'shimcha ma'lumot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#cc845116"
+    },
+    {
+      "q": "I write everything down ___ I don't forget.",
+      "v": [
+        "so that",
+        "in order to",
+        "because of",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "so that + gap.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#7cb8f300"
+    },
+    {
+      "q": "The shop closed ___ the pandemic.",
+      "v": [
+        "because of",
+        "because",
+        "although",
+        "so that"
+      ],
+      "t": 0,
+      "izoh": "because of + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#aa453769"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Although it was cold, we went out.",
+        "Despite it was cold, we went out.",
+        "Because of it was cold, we went out.",
+        "However it was cold, we went out."
+      ],
+      "t": 0,
+      "izoh": "although + gap (S+V).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#9a16dc9c"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Despite the cold, we went out.",
+        "Despite of the cold, we went out.",
+        "Despite it was cold, we went out.",
+        "Despite cold, we went out."
+      ],
+      "t": 0,
+      "izoh": "despite + ot (of qo'shilmaydi).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#9a16dc9c~2"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "We went out in spite of the rain.",
+        "We went out in spite the rain.",
+        "We went out in spite of it rained.",
+        "We went out in spite of rained."
+      ],
+      "t": 0,
+      "izoh": "in spite of + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#9a16dc9c~3"
+    },
+    {
+      "q": "He didn't call. ___, I wasn't worried.",
+      "v": [
+        "However",
+        "Because",
+        "Therefore",
+        "Moreover"
+      ],
+      "t": 0,
+      "izoh": "however = ammo.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#b8a1abb8"
+    },
+    {
+      "q": "The team practised daily; ___, they won the cup.",
+      "v": [
+        "as a result",
+        "although",
+        "whereas",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "as a result = natijada.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#540a4c47"
+    },
+    {
+      "q": "She whispered ___ not to wake the baby.",
+      "v": [
+        "in order",
+        "so that",
+        "because of",
+        "however"
+      ],
+      "t": 0,
+      "izoh": "in order + to = 'in order not to' (inkor).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#7bf412dc"
+    },
+    {
+      "q": "___ the high cost, many people bought the tickets.",
+      "v": [
+        "Despite",
+        "Although",
+        "Because",
+        "So that"
+      ],
+      "t": 0,
+      "izoh": "despite + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#da53f23a"
+    },
+    {
+      "q": "My old phone was slow, ___ this new one is fast.",
+      "v": [
+        "whereas",
+        "because",
+        "therefore",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "whereas = qiyoslash.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#e358ae34"
+    },
+    {
+      "q": "The route is scenic. ___, it takes longer.",
+      "v": [
+        "However",
+        "Because",
+        "Therefore",
+        "Moreover"
+      ],
+      "t": 0,
+      "izoh": "however = ammo (kamchilik).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#e5d4d878"
+    },
+    {
+      "q": "We booked early ___ get better seats.",
+      "v": [
+        "in order to",
+        "so that",
+        "because of",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "in order to + V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#29c9374f"
+    },
+    {
+      "q": "He apologised; ___, she forgave him.",
+      "v": [
+        "therefore",
+        "although",
+        "whereas",
+        "however"
+      ],
+      "t": 0,
+      "izoh": "therefore = shuning uchun.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#ec9e350f"
+    },
+    {
+      "q": "Which part is wrong? 'Despite of the noise, I slept well.'",
+      "v": [
+        "Despite of",
+        "the noise",
+        "slept",
+        "well"
+      ],
+      "t": 0,
+      "izoh": "'despite' dan keyin 'of' ishlatilmaydi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#9ca191e4"
+    },
+    {
+      "q": "Which part is wrong? 'Although the rain, we went out.'",
+      "v": [
+        "Although",
+        "the rain",
+        "went",
+        "out"
+      ],
+      "t": 0,
+      "izoh": "ot oldidan 'despite/in spite of' kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#8c88aac0"
+    },
+    {
+      "q": "Which part is wrong? 'Because of it was late, we left.'",
+      "v": [
+        "Because of",
+        "it was late",
+        "we",
+        "left"
+      ],
+      "t": 0,
+      "izoh": "gap oldidan 'because' kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#5a3a2d1e"
+    },
+    {
+      "q": "Which part is wrong? 'He is rich, however he is unhappy.'",
+      "v": [
+        "however",
+        "He is rich",
+        "he is",
+        "unhappy"
+      ],
+      "t": 0,
+      "izoh": "bu yerda 'but' yoki nuqta+however kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#876f504b"
+    },
+    {
+      "q": "Which part is wrong? 'She left early for to catch the bus.'",
+      "v": [
+        "for to",
+        "She left",
+        "early",
+        "the bus"
+      ],
+      "t": 0,
+      "izoh": "'to' yoki 'in order to' kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#2fc8d9a8"
+    },
+    {
+      "q": "The car is old. ___, it still runs perfectly.",
+      "v": [
+        "Nevertheless",
+        "Because",
+        "Therefore",
+        "Moreover"
+      ],
+      "t": 0,
+      "izoh": "nevertheless = shunga qaramay.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#2b3ae104"
+    },
+    {
+      "q": "He didn't get the job ___ his poor interview.",
+      "v": [
+        "because of",
+        "because",
+        "although",
+        "so that"
+      ],
+      "t": 0,
+      "izoh": "because of + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#43349287"
+    },
+    {
+      "q": "They painted the door red ___ it would stand out.",
+      "v": [
+        "so that",
+        "in order to",
+        "because of",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "so that + gap.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#ea1fd966"
+    },
+    {
+      "q": "___ she had studied medicine, she became a writer.",
+      "v": [
+        "Although",
+        "Despite",
+        "Because of",
+        "So that"
+      ],
+      "t": 0,
+      "izoh": "although + gap.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#3a6dba10"
+    },
+    {
+      "q": "City life is exciting; ___, it can be stressful.",
+      "v": [
+        "on the other hand",
+        "because",
+        "therefore",
+        "moreover"
+      ],
+      "t": 0,
+      "izoh": "on the other hand = qarshi tomon.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#11d407d6"
+    },
+    {
+      "q": "Prices rose sharply. ___, sales dropped.",
+      "v": [
+        "As a result",
+        "Although",
+        "Whereas",
+        "Despite"
+      ],
+      "t": 0,
+      "izoh": "as a result = natijada.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#7d94e231"
+    },
+    {
+      "q": "I keep a spare key ___ I lock myself out.",
+      "v": [
+        "in case",
+        "in order to",
+        "because of",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "in case = ehtimolga qarshi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#bd555727"
+    },
+    {
+      "q": "The film was long; ___, it was never boring.",
+      "v": [
+        "however",
+        "because",
+        "therefore",
+        "moreover"
+      ],
+      "t": 0,
+      "izoh": "however = ammo.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#80b3ee9e"
+    },
+    {
+      "q": "He trained for months ___ win the marathon.",
+      "v": [
+        "in order to",
+        "so that",
+        "because of",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "in order to + V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#3091f115"
+    },
+    {
+      "q": "The bridge was closed ___ repairs.",
+      "v": [
+        "because of",
+        "because",
+        "although",
+        "so that"
+      ],
+      "t": 0,
+      "izoh": "because of + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#3a39b95b"
+    },
+    {
+      "q": "Choose the correct linker: 'It was cheap; ___, I bought two.'",
+      "v": [
+        "therefore",
+        "although",
+        "whereas",
+        "however"
+      ],
+      "t": 0,
+      "izoh": "therefore = shuning uchun.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#d9023182"
+    },
+    {
+      "q": "Choose the correct linker: 'It was cheap; ___, it broke quickly.'",
+      "v": [
+        "however",
+        "therefore",
+        "moreover",
+        "so that"
+      ],
+      "t": 0,
+      "izoh": "however = ziddiyat.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#d0fc6d8a"
+    },
+    {
+      "q": "Our house is small, ___ theirs is huge.",
+      "v": [
+        "whereas",
+        "because",
+        "therefore",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "whereas = qiyoslash.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#3c0f3da1"
+    },
+    {
+      "q": "The plan has many benefits. ___, it is affordable.",
+      "v": [
+        "Moreover",
+        "However",
+        "Whereas",
+        "Despite"
+      ],
+      "t": 0,
+      "izoh": "moreover = qo'shimcha.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#37e6557e"
+    },
+    {
+      "q": "___ its small size, the room felt cosy.",
+      "v": [
+        "Despite",
+        "Although",
+        "Because",
+        "So that"
+      ],
+      "t": 0,
+      "izoh": "despite + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#902ab881"
+    },
+    {
+      "q": "We spoke quietly ___ disturb anyone.",
+      "v": [
+        "so as not to",
+        "in order that",
+        "because of",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "so as not to + V1 (inkor maqsad).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#2729b7b8"
+    },
+    {
+      "q": "He was warned; ___, he ignored the advice.",
+      "v": [
+        "nevertheless",
+        "because",
+        "therefore",
+        "moreover"
+      ],
+      "t": 0,
+      "izoh": "nevertheless = shunga qaramay.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#b767948e"
+    },
+    {
+      "q": "Sales increased ___ the new advertising campaign.",
+      "v": [
+        "because of",
+        "because",
+        "although",
+        "so that"
+      ],
+      "t": 0,
+      "izoh": "because of + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#70773dbe"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "He passed the test, so he celebrated.",
+        "He passed the test, because he celebrated.",
+        "He passed the test, although he celebrated.",
+        "He passed the test, despite he celebrated."
+      ],
+      "t": 0,
+      "izoh": "so = natija bog'lovchisi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#9a16dc9c~4"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Though it was hard, she never gave up.",
+        "Despite it was hard, she never gave up.",
+        "Because of it was hard, she gave up.",
+        "However it was hard, she gave up."
+      ],
+      "t": 0,
+      "izoh": "though + gap (S+V).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#9a16dc9c~5"
+    },
+    {
+      "q": "The offer looks good. ___, we should read the small print.",
+      "v": [
+        "However",
+        "Because",
+        "Therefore",
+        "Moreover"
+      ],
+      "t": 0,
+      "izoh": "however = ehtiyotkorlik.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#e482f582"
+    },
+    {
+      "q": "They worked overtime ___ finish the project.",
+      "v": [
+        "in order to",
+        "so that",
+        "because of",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "in order to + V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#0b085350"
+    },
+    {
+      "q": "___ he apologised, she was still angry.",
+      "v": [
+        "Even though",
+        "Despite",
+        "Because of",
+        "So that"
+      ],
+      "t": 0,
+      "izoh": "even though + gap.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#c5ae5a41"
+    },
+    {
+      "q": "The economy is growing; ___, unemployment is falling.",
+      "v": [
+        "as a result",
+        "although",
+        "whereas",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "as a result = natijada.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#5fade94d"
+    },
+    {
+      "q": "Tea is popular in the east, ___ coffee dominates the west.",
+      "v": [
+        "whereas",
+        "because",
+        "therefore",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "whereas = qiyoslash.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#89c4c33f"
+    },
+    {
+      "q": "Which part is wrong? 'In spite the rain, we played.'",
+      "v": [
+        "In spite the rain",
+        "we",
+        "played",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "'in spite OF the rain' bo'lishi kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#3d85613f"
+    },
+    {
+      "q": "Which part is wrong? 'We stayed home so that to rest.'",
+      "v": [
+        "so that to rest",
+        "We stayed",
+        "home",
+        "rest"
+      ],
+      "t": 0,
+      "izoh": "'so that we could rest' yoki 'to rest'.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#e0f04d62"
+    },
+    {
+      "q": "Which part is wrong? 'He is smart, moreover he is lazy.'",
+      "v": [
+        "moreover",
+        "He is smart",
+        "he is",
+        "lazy"
+      ],
+      "t": 0,
+      "izoh": "Ziddiyat uchun «moreover» emas: nuqta + «However,» (yoki «but»). «He is smart. However, he is lazy.»",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#e6287626"
+    },
+    {
+      "q": "Which part is wrong? 'She succeeded because of she worked hard.'",
+      "v": [
+        "because of",
+        "She succeeded",
+        "worked",
+        "hard"
+      ],
+      "t": 0,
+      "izoh": "gap oldidan 'because' kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#07fdf7fc"
+    },
+    {
+      "q": "Which part is wrong? 'Despite he was tired, he continued.'",
+      "v": [
+        "Despite",
+        "he was tired",
+        "he",
+        "continued"
+      ],
+      "t": 0,
+      "izoh": "gap oldidan 'although' kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#15399295"
+    },
+    {
+      "q": "We left the light on ___ the house looked occupied.",
+      "v": [
+        "so that",
+        "in order to",
+        "because of",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "so that + gap.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#18faccf2"
+    },
+    {
+      "q": "The report was clear and detailed. ___, it was submitted late.",
+      "v": [
+        "However",
+        "Because",
+        "Therefore",
+        "Moreover"
+      ],
+      "t": 0,
+      "izoh": "however = kamchilik.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#7b8fb4fe"
+    },
+    {
+      "q": "He couldn't attend ___ a family emergency.",
+      "v": [
+        "because of",
+        "because",
+        "although",
+        "so that"
+      ],
+      "t": 0,
+      "izoh": "because of + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#30256b60"
+    },
+    {
+      "q": "___ their differences, the two teams cooperated well.",
+      "v": [
+        "Despite",
+        "Although",
+        "Because",
+        "So that"
+      ],
+      "t": 0,
+      "izoh": "despite + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#e2c237a2"
+    },
+    {
+      "q": "The lecture was informative; ___, it was rather long.",
+      "v": [
+        "however",
+        "therefore",
+        "moreover",
+        "as a result"
+      ],
+      "t": 0,
+      "izoh": "however = ammo.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#cba4a31f"
+    },
+    {
+      "q": "She revised thoroughly; ___, she felt confident.",
+      "v": [
+        "therefore",
+        "although",
+        "whereas",
+        "however"
+      ],
+      "t": 0,
+      "izoh": "therefore = shuning uchun.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#87fdfca7"
+    },
+    {
+      "q": "He whispered so as ___ wake the others.",
+      "v": [
+        "not to",
+        "to not",
+        "to",
+        "for not"
+      ],
+      "t": 0,
+      "izoh": "so as not to + V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#7e2e43eb"
+    },
+    {
+      "q": "Both plans work well. ___, the first is cheaper.",
+      "v": [
+        "However",
+        "Because",
+        "Therefore",
+        "So that"
+      ],
+      "t": 0,
+      "izoh": "however = ikkisini qiyoslab farq.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#0d82dc1b"
+    },
+    {
+      "q": "The match was postponed ___ the wet pitch.",
+      "v": [
+        "because of",
+        "because",
+        "although",
+        "so that"
+      ],
+      "t": 0,
+      "izoh": "because of + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#ea505d28"
+    },
+    {
+      "q": "___ everyone was exhausted, they finished the race.",
+      "v": [
+        "Even though",
+        "Despite",
+        "Because of",
+        "So that"
+      ],
+      "t": 0,
+      "izoh": "even though + gap.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#0a412a83"
+    },
+    {
+      "q": "Renewable energy is clean. ___, it reduces costs over time.",
+      "v": [
+        "Moreover",
+        "However",
+        "Whereas",
+        "Despite"
+      ],
+      "t": 0,
+      "izoh": "moreover = qo'shimcha afzallik.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#0563af87"
+    },
+    {
+      "q": "The instructions were unclear; ___, many people got lost.",
+      "v": [
+        "as a result",
+        "although",
+        "whereas",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "as a result = natijada.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#90e77056"
+    },
+    {
+      "q": "I prefer summer, ___ my sister loves winter.",
+      "v": [
+        "whereas",
+        "because",
+        "therefore",
+        "despite"
+      ],
+      "t": 0,
+      "izoh": "whereas = qiyoslash.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#41263224"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "He studied hard in order to pass.",
+        "He studied hard in order pass.",
+        "He studied hard in order for pass.",
+        "He studied hard in order to passing."
+      ],
+      "t": 0,
+      "izoh": "in order to + V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#9a16dc9c~6"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Because of the storm, flights were cancelled.",
+        "Because the storm, flights were cancelled.",
+        "Because of it stormed, flights were cancelled.",
+        "Because of stormy, flights were cancelled."
+      ],
+      "t": 0,
+      "izoh": "because of + ot.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m12#9a16dc9c~7"
+    }
+  ]
+}

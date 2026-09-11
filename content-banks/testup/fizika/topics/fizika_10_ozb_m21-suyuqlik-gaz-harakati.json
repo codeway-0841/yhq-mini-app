@@ -1,0 +1,501 @@
+{
+  "nom": "21-mavzu. Suyuqlik Gaz Harakati",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Suyuqlik yoki gazlarning qatlam-qatlam bo'lib oqishi nima deyiladi?",
+      "v": [
+        "Laminar oqim",
+        "Turbulent oqim",
+        "Girdobli oqim",
+        "Oqim uzluksizligi"
+      ],
+      "t": 0,
+      "izoh": "Darslikda laminar oqim suyuqlik yoki gazlarning qatlam-qatlam bo'lib oqishi deb ta'riflangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#7ddecb0a"
+    },
+    {
+      "q": "Laminar oqimda suyuqlik zarralari qanday harakatlanadi?",
+      "v": [
+        "Bir-birining yo'llarini kesmasdan to'g'ri yo'nalishda oqadi",
+        "Har xil yo'nalishda tartibsiz harakatlanadi",
+        "Uyurma hosil qilib aylanadi",
+        "Faqat devor bo'ylab harakatlanadi"
+      ],
+      "t": 0,
+      "izoh": "Laminar oqimda zarrachalar bir-birining yo'llarini kesmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#ba962adf"
+    },
+    {
+      "q": "«Laminar» so'zi lotin tilidan qanday ma'noni anglatadi?",
+      "v": [
+        "Plastinka, qatlam",
+        "Jo'shqin, tartibsiz",
+        "Oqim, jar",
+        "Tezlik"
+      ],
+      "t": 0,
+      "izoh": "Lamina — plastinka, qatlam degan ma'noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#d705210e"
+    },
+    {
+      "q": "Nayda oqqanda suyuqlik qatlamlarining siljishi qayerda tezroq bo'ladi?",
+      "v": [
+        "Nayning o'rta qismida",
+        "Nayning chetki qismida",
+        "Nay devoriga tegishli qatlamda",
+        "Hamma joyda bir xil"
+      ],
+      "t": 0,
+      "izoh": "Devorlarga ishqalanish tufayli o'rta qismda tezroq, chetida sekinroq oqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#13495c65"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri laminar oqimga misol bo'la oladi?",
+      "v": [
+        "Tomirdagi qon oqimi",
+        "Daryodagi tornado",
+        "Qum bo'roni",
+        "Girdob"
+      ],
+      "t": 0,
+      "izoh": "Darslikda tomirdagi qon oqimi laminar oqimga misol qilib keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#39d872cd"
+    },
+    {
+      "q": "Suyuqlik yoki gazlarning uyurma, girdob hosil qilib oqishi nima deyiladi?",
+      "v": [
+        "Turbulent oqim",
+        "Laminar oqim",
+        "Statsionar oqim",
+        "Gidrostatik oqim"
+      ],
+      "t": 0,
+      "izoh": "Uyurma, girdob hosil qilib oqish — turbulent oqim ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#925d2269"
+    },
+    {
+      "q": "«Turbulentus» lotin so'zi qanday ma'noni bildiradi?",
+      "v": [
+        "Jo'shqin, tartibsiz",
+        "Plastinka, qatlam",
+        "Sekin, osoyishta",
+        "Tinch, harakatsiz"
+      ],
+      "t": 0,
+      "izoh": "Turbulentus — jo'shqin, tartibsiz degani.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#1384ea2b"
+    },
+    {
+      "q": "Turbulent oqimda suyuqlik qatlamlari qanday bo'ladi?",
+      "v": [
+        "Ta'sirlashib o'zaro aralashib ketadi",
+        "Bir-biriga ta'sir qilmaydi",
+        "Faqat parallel harakatlanadi",
+        "Umuman harakatlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Turbulent oqimda qatlamlar ta'sirlashib, o'zaro aralashib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#a4d08e8e"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri turbulent oqimga misol?",
+      "v": [
+        "Sahrodagi qum bo'roni",
+        "Tomirdagi qon oqimi",
+        "Kapillyar nay bo'ylab suv ko'tarilishi",
+        "Sekin esayotgan shamol"
+      ],
+      "t": 0,
+      "izoh": "Qum bo'ronlari turbulent oqimga misol qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#273ed682"
+    },
+    {
+      "q": "Siqilmas suyuqlik uchun oqimning uzluksizligi tenglamasi qanday ko'rinishda?",
+      "v": [
+        "S1·υ1 = S2·υ2",
+        "S1·υ2 = S2·υ1",
+        "S1/υ1 = S2/υ2",
+        "S1·υ1² = S2·υ2²"
+      ],
+      "t": 0,
+      "izoh": "Oqim uzluksizligi tenglamasi: S1·υ1 = S2·υ2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#dc682e3e"
+    },
+    {
+      "q": "Oqim uzluksizligi tenglamasi qanday shartda olingan?",
+      "v": [
+        "Suyuqlik siqilmas va ishqalanish kichik bo'lganda",
+        "Suyuqlik siqiladigan bo'lganda",
+        "Gaz juda yengil bo'lganda",
+        "Faqat turbulent oqimda"
+      ],
+      "t": 0,
+      "izoh": "Tenglama siqilmas suyuqlik uchun, ishqalanish hisobga olinmaganda chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#d5b498b1"
+    },
+    {
+      "q": "Siqilmas suyuqlikda nay kesimi torayganda oqim tezligi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Avval ortib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Tezlik kesim yuzasiga teskari proporsional: kesim kichraysa, tezlik ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#903408d5"
+    },
+    {
+      "q": "Turli kesim yuzali nayda oqayotgan siqilmas suyuqlik tezligi kesim yuzasiga qanday bog'liq?",
+      "v": [
+        "Teskari proporsional",
+        "To'g'ri proporsional",
+        "Kvadratik proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Darslikda tezlik kesim yuzasiga teskari proporsional deb aytilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#717cad05"
+    },
+    {
+      "q": "Vodoprovod shlangidan suvni uzoqroqqa sepish uchun shlang uchi nima qilinadi?",
+      "v": [
+        "Qisiladi",
+        "Kengaytiriladi",
+        "Yuqoriga ko'tariladi",
+        "Yig'ilib bog'lanadi"
+      ],
+      "t": 0,
+      "izoh": "Uch qisilganda suv katta tezlikda otilib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#6c5d31d0"
+    },
+    {
+      "q": "Δt vaqt ichida nayning ixtiyoriy kesimi orqali oqib o'tadigan siqilmas suyuqlik massasi qanday?",
+      "v": [
+        "Barcha kesimlarda bir xil",
+        "Keng kesimda ko'proq",
+        "Tor kesimda ko'proq",
+        "Tezlikka qarab o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Siqilmaslik tufayli har qanday kesimdan bir xil massa oqib o'tadi: m1 = m2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#dd2f6827"
+    },
+    {
+      "q": "Oqim uzluksizligi tenglamasini chiqarishda suyuqlik massasi qanday ifodalanadi?",
+      "v": [
+        "m = ρSυΔt",
+        "m = ρS/(υΔt)",
+        "m = ρυΔt/S",
+        "m = SυΔt/ρ"
+      ],
+      "t": 0,
+      "izoh": "m = ρV = ρSυΔt orqali ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#130e4cb5"
+    },
+    {
+      "q": "Oqayotgan suyuqlikning idish devoriga beradigan bosimi nimaga bog'liq?",
+      "v": [
+        "Suyuqlikning oqim tezligiga",
+        "Faqat suyuqlik zichligiga",
+        "Faqat idish shakliga",
+        "Atmosfera bosimiga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Bosim oqim tezligiga bog'liq ekanligi tajribada kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#27bb5ec5"
+    },
+    {
+      "q": "3.5-rasmdagi tajribada suyuqlik bosimi nayning qaysi qismida katta bo'ladi?",
+      "v": [
+        "Keng qismida",
+        "Tor qismida",
+        "Hamma joyda bir xil",
+        "Faqat o'rta qismida"
+      ],
+      "t": 0,
+      "izoh": "Tajribada keng qismdagi bosim tor qismdagidan katta chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#43595b36"
+    },
+    {
+      "q": "Nayning tor qismida oqim tezligi va bosim qanday bo'ladi?",
+      "v": [
+        "Tezlik katta, bosim kichik",
+        "Tezlik kichik, bosim katta",
+        "Ikkalasi ham katta",
+        "Ikkalasi ham kichik"
+      ],
+      "t": 0,
+      "izoh": "Tor qismda tezlik katta, bosim esa kichik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#e556ce6a"
+    },
+    {
+      "q": "Suyuqlik bosimining oqim tezligiga bog'liqligining matematik ifodasini kim aniqlagan?",
+      "v": [
+        "D. Bernulli",
+        "H. Magnus",
+        "Evangelista Torrichelli",
+        "Sh. Kulon"
+      ],
+      "t": 0,
+      "izoh": "1738-yilda D. Bernulli aniqlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#0e6d9f33"
+    },
+    {
+      "q": "Bernulli tenglamasi qachon aniqlangan?",
+      "v": [
+        "1738-yilda",
+        "1853-yilda",
+        "1905-yilda",
+        "1687-yilda"
+      ],
+      "t": 0,
+      "izoh": "Bernulli tenglamasi 1738-yilda aniqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#e8771fc2"
+    },
+    {
+      "q": "Bernulli tenglamasidagi ρυ²/2 ifoda nima deb ataladi?",
+      "v": [
+        "Gidrodinamik bosim",
+        "Gidrostatik bosim",
+        "Statik bosim",
+        "Atmosfera bosimi"
+      ],
+      "t": 0,
+      "izoh": "ρυ²/2 — suyuqlik oqimining gidrodinamik bosimi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#7ddb93db"
+    },
+    {
+      "q": "Bernulli tenglamasidagi ρgh ifoda nima deb ataladi?",
+      "v": [
+        "Gidrostatik bosim",
+        "Gidrodinamik bosim",
+        "Dinamik bosim",
+        "Natijaviy bosim"
+      ],
+      "t": 0,
+      "izoh": "ρgh — suyuqlikning gidrostatik bosimi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#dd29b5d8"
+    },
+    {
+      "q": "Bernulli tenglamasiga ko'ra, nayning keng qismida qaysi bosim katta bo'ladi?",
+      "v": [
+        "Gidrostatik bosim",
+        "Gidrodinamik bosim",
+        "Dinamik bosim",
+        "Barcha bosimlar teng"
+      ],
+      "t": 0,
+      "izoh": "Keng qismda gidrodinamik bosim kichik, gidrostatik bosim katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#d052f586"
+    },
+    {
+      "q": "Daniyel Bernulli qaysi yillarda yashagan?",
+      "v": [
+        "1700–1782",
+        "1802–1870",
+        "1643–1727",
+        "1856–1940"
+      ],
+      "t": 0,
+      "izoh": "Darslikda Bernulli 1700–1782 deb ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#63f3fb17"
+    },
+    {
+      "q": "Bir maromdagi oqimda o'lchov naylaridagi suyuqlik ustuni balandligi nimani ko'rsatadi?",
+      "v": [
+        "Suyuqlikning devorga berayotgan bosimini",
+        "Suyuqlikning zichligini",
+        "Suyuqlikning massasini",
+        "Nayning uzunligini"
+      ],
+      "t": 0,
+      "izoh": "Ustun balandligiga qarab devorga berilayotgan bosim aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#89083bff"
+    },
+    {
+      "q": "Bernulli tenglamasining umumiy ko'rinishi qanday?",
+      "v": [
+        "p + ρυ²/2 + ρgh = const",
+        "p = ρυ²/2",
+        "p = ρgh",
+        "p·V = const"
+      ],
+      "t": 0,
+      "izoh": "p + ρυ²/2 + ρgh = const ko'rinishida yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#6992805f"
+    },
+    {
+      "q": "Kesimi 50 sm² bo'lgan quvur qismida suv 4 m/s tezlikda oqsa, kesimi 10 sm² qismidagi tezlik qancha bo'ladi?",
+      "v": [
+        "20 m/s",
+        "0,8 m/s",
+        "4 m/s",
+        "8 m/s"
+      ],
+      "t": 0,
+      "izoh": "S1υ1=S2υ2 dan: υ2 = 50·4/10 = 20 m/s (darslikdagi namunaviy masala).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#d3ce943c"
+    },
+    {
+      "q": "Suyuqlik bir quvurdan ikkinchi quvurga o'tganda oqim tezligi 2,8 marta ortsa, quvur kesim yuzi qanday o'zgaradi?",
+      "v": [
+        "2,8 marta kamayadi",
+        "2,8 marta ortadi",
+        "O'zgarmaydi",
+        "2,8² marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Tezlik kesimga teskari proporsional: kesim 2,8 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#5adf387d"
+    },
+    {
+      "q": "Bir maromdagi oqimda tezlik katta bo'lgan joyda statik bosim qanday?",
+      "v": [
+        "Kichik",
+        "Katta",
+        "O'zgarmas",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Tezlik katta joyda bosim kichik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#5aa1af98"
+    },
+    {
+      "q": "Suyuqlikning dinamik bosimi deganda nima tushuniladi?",
+      "v": [
+        "Oqim tezligiga bog'liq bo'lgan ρυ²/2 bosim",
+        "Faqat gidrostatik bosim",
+        "Atmosfera bosimi",
+        "Suyuqlik ustuni bosimi"
+      ],
+      "t": 0,
+      "izoh": "Dinamik bosim — ρυ²/2, oqim tezligiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#1d021ce8"
+    },
+    {
+      "q": "Kapillyar naylar bo'ylab suvning daraxt tanasida ko'tarilishi qanday oqimga misol?",
+      "v": [
+        "Laminar oqim",
+        "Turbulent oqim",
+        "Girdobli oqim",
+        "Uyurmali oqim"
+      ],
+      "t": 0,
+      "izoh": "Kapillyar naylardagi oqim laminar oqimga misol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#b14e7c89"
+    },
+    {
+      "q": "Sekin esayotgan shamol qanday oqimga misol bo'ladi?",
+      "v": [
+        "Laminar oqim",
+        "Turbulent oqim",
+        "Tornado",
+        "Girdob"
+      ],
+      "t": 0,
+      "izoh": "Sekin shamol laminar oqimga misol qilib keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m21-suyuqlik-gaz-harakati#fde296f4"
+    }
+  ]
+}

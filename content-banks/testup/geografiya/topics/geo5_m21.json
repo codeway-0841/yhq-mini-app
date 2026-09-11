@@ -1,0 +1,576 @@
+{
+  "nom": "Geografiya-5, 21-§. Atmosferaning tuzilishi, 73-74-bet",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Atmosfera nima?",
+      "v": [
+        "Yerni oʻrab turgan havo qobigʻi",
+        "Yerning suv qobigʻi",
+        "Yerning qattiq qobigʻi",
+        "Yerning hayot qobigʻi"
+      ],
+      "t": 0,
+      "izoh": "Atmosfera — Yerni oʻrab turgan havo qobigʻi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m21#87f66e2f"
+    },
+    {
+      "q": "«Atmosfera» soʻzi qaysi tildan olingan va nima maʼnoni bildiradi?",
+      "v": [
+        "Yunoncha, «atmos» — bugʻ, «sphaira» — shar",
+        "Lotincha, «atmos» — havo, «sphaira» — olov",
+        "Arabcha, «atmos» — issiqlik, «sphaira» — muz",
+        "Fors tilida, «atmos» — shamol, «sphaira» — yer"
+      ],
+      "t": 0,
+      "izoh": "Yunoncha «atmos» — bugʻ, «sphaira» — shar maʼnosini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#cb3a71d9"
+    },
+    {
+      "q": "Atmosfera Yer bilan birga qanday harakat qiladi?",
+      "v": [
+        "Aylanadi",
+        "Qoʻzgʻalmay turadi",
+        "Kunduzi aylanadi",
+        "Qishda aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Atmosfera Yer bilan birga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#fb5b7ad0"
+    },
+    {
+      "q": "Atmosfera Yer yuzini nimalardan saqlaydi?",
+      "v": [
+        "Samodan keladigan meteor jismlardan va Quyoshning zararli ultrabinafsha nurlaridan",
+        "Yomgʻir va qordan",
+        "Shamoldan",
+        "Yer qimirlashdan"
+      ],
+      "t": 0,
+      "izoh": "Atmosfera Yer yuzini samodan keladigan meteor jismlardan, Quyoshning tirik jonlar uchun zararli ultrabinafsha nurlaridan saqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#833d3637"
+    },
+    {
+      "q": "Atmosfera boʻlmaganida Yer yuzi kunduzi necha darajagacha qizib ketardi?",
+      "v": [
+        "+120 °C gacha",
+        "+50 °C gacha",
+        "+200 °C gacha",
+        "+80 °C gacha"
+      ],
+      "t": 0,
+      "izoh": "Atmosfera boʻlmaganida Yer yuzi kunduzi +120 °C gacha qizib, tunda esa -180°, -200 °C gacha sovib ketar edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#e7df8302"
+    },
+    {
+      "q": "Atmosfera boʻlmaganida Yer yuzi tunda necha darajagacha sovib ketardi?",
+      "v": [
+        "-180°, -200 °C gacha",
+        "-50°, -80 °C gacha",
+        "-10°, -20 °C gacha",
+        "-300°, -350 °C gacha"
+      ],
+      "t": 0,
+      "izoh": "Atmosfera boʻlmaganida tunda esa -180°, -200 °C gacha sovib ketar edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#fd48a0aa"
+    },
+    {
+      "q": "Havo qobigʻi Yer yuzini nimaga oʻxshatib taʼriflangan?",
+      "v": [
+        "Shaffof koʻrpa kabi asrab turadi",
+        "Qalin devor kabi toʻsib turadi",
+        "Oyna kabi aks ettiradi",
+        "Elak kabi filtrlaydi"
+      ],
+      "t": 0,
+      "izoh": "Havo qobigʻi Yer yuzini shaffof koʻrpa kabi asrab turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#4aaf758d"
+    },
+    {
+      "q": "Yerning havo qobigʻi asosan qaysi ikki gazdan iborat?",
+      "v": [
+        "Azot va kislorod",
+        "Kislorod va vodorod",
+        "Azot va vodorod",
+        "Kislorod va karbonat angidrid"
+      ],
+      "t": 0,
+      "izoh": "Yerning havo qobigʻi, asosan, ikki xil gazdan, yaʼni azot va kislorod aralashmasidan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m21#bbe9246d"
+    },
+    {
+      "q": "Havodagi gazlarning necha foizini azot tashkil etadi?",
+      "v": [
+        "78 foizini",
+        "21 foizini",
+        "50 foizini",
+        "96,5 foizini"
+      ],
+      "t": 0,
+      "izoh": "Havodagi gazlarning 78 % ini azot, 21 % ini kislorod tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#8480acea"
+    },
+    {
+      "q": "Havodagi gazlarning necha foizini kislorod tashkil etadi?",
+      "v": [
+        "21 foizini",
+        "78 foizini",
+        "50 foizini",
+        "29 foizini"
+      ],
+      "t": 0,
+      "izoh": "Havodagi gazlarning 78 % ini azot, 21 % ini kislorod tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#bb94b0e4"
+    },
+    {
+      "q": "Havoda azot va kislorod dan tashqari yana qanday moddalar bor?",
+      "v": [
+        "Karbonat angidrid, boshqa gazlar, suv bugʻlari, changlar",
+        "Suv va tuproq zarralari",
+        "Metall zarralari",
+        "Organik moddalar"
+      ],
+      "t": 0,
+      "izoh": "Bulardan tashqari havoda karbonat angidrid, boshqa gazlar, suv bugʻlari, changlar ham bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#b418f072"
+    },
+    {
+      "q": "Azot va kislorod nisbati nima taʼsirida saqlanib turadi?",
+      "v": [
+        "Oʻsimliklar taʼsirida",
+        "Hayvonlar taʼsirida",
+        "Togʻ jinslari taʼsirida",
+        "Okean suvi taʼsirida"
+      ],
+      "t": 0,
+      "izoh": "Azot va kislorod nisbati oʻsimliklar taʼsirida saqlanib turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#4cc98705"
+    },
+    {
+      "q": "Havoni nimalar ifloslaydi?",
+      "v": [
+        "Avtomobillardan chiqadigan is gazi, yirik korxonalardan chiqadigan tutun",
+        "Oʻsimliklar",
+        "Yogʻingarchilik",
+        "Shamol"
+      ],
+      "t": 0,
+      "izoh": "Avtomobillardan chiqadigan is gazi, yirik korxonalardan chiqadigan tutun havoni ifloslaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#b78cb6aa"
+    },
+    {
+      "q": "Yer havo qobigʻining yuqori chegarasi taxminan necha kilometr balandda deb hisoblanadi?",
+      "v": [
+        "2000 km",
+        "200 km",
+        "20000 km",
+        "500 km"
+      ],
+      "t": 0,
+      "izoh": "Yer havo qobigʻining yuqori aniq chegarasi yoʻq. Taxminan 2000 km balandda deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#744acd27"
+    },
+    {
+      "q": "Turli balandlikda havoning tarkibi, harorati, zichligi har xil boʻlgani uchun atmosfera nimalarga ajratiladi?",
+      "v": [
+        "Bir qancha qatlamlarga",
+        "Bitta yaxlit qatlamga",
+        "Ikkita qatlamga",
+        "Oʻnlab bir xil qatlamlarga"
+      ],
+      "t": 0,
+      "izoh": "Lekin turli balandlikda havoning tarkibi, harorati, zichligi har xil boʻlib, atmosfera bir qancha qatlamlarga ajratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#cbaa4f36"
+    },
+    {
+      "q": "Atmosferaning quyi qatlami qanday ataladi?",
+      "v": [
+        "Troposfera",
+        "Stratosfera",
+        "Mezosfera",
+        "Termosfera"
+      ],
+      "t": 0,
+      "izoh": "Troposfera — atmosferaning quyi qatlami.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m21#46327c94"
+    },
+    {
+      "q": "«Tropos» soʻzi yunonchada nima maʼnoni bildiradi?",
+      "v": [
+        "Aylanmoq, oʻzgarmoq",
+        "Qatlam",
+        "Oʻrta",
+        "Issiq"
+      ],
+      "t": 0,
+      "izoh": "«Tropos» — yunoncha soʻz boʻlib, aylanmoq, oʻzgarmoq degani.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#58e10d9c"
+    },
+    {
+      "q": "Troposferaning oʻrtacha qalinligi qancha?",
+      "v": [
+        "10-11 kilometr",
+        "50-55 kilometr",
+        "2000 kilometr",
+        "1-2 kilometr"
+      ],
+      "t": 0,
+      "izoh": "Troposferaning oʻrtacha qalinligi 10-11 kilometr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#e05186fe"
+    },
+    {
+      "q": "Troposfera qutblar ustida qancha qalinlikda boʻladi?",
+      "v": [
+        "8-9 km",
+        "17 km gacha",
+        "50-55 km",
+        "2000 km"
+      ],
+      "t": 0,
+      "izoh": "Qutblar ustida troposfera 8-9 km, ekvatorda 17 km gacha yetadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#c72e7d3a"
+    },
+    {
+      "q": "Troposfera ekvatorda necha kilometrgacha yetadi?",
+      "v": [
+        "17 km gacha",
+        "8-9 km",
+        "10-11 km",
+        "50-55 km"
+      ],
+      "t": 0,
+      "izoh": "Ekvatorda troposfera 17 km gacha yetadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#3cd78d4b"
+    },
+    {
+      "q": "Havodagi barcha suv bugʻlari qaysi qatlamda joylashgan?",
+      "v": [
+        "Troposferada",
+        "Stratosferada",
+        "Mezosferada",
+        "Termosferada"
+      ],
+      "t": 0,
+      "izoh": "Havodagi barcha suv bugʻlari troposfera qatlamida. Bu qatlamda bulutlar paydo boʻladi, yogʻinlar yogʻadi, ob-havo oʻzgarib turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#fc4a3b8d"
+    },
+    {
+      "q": "Tirik mavjudotlar atmosferaning qaysi qatlamida yashaydi?",
+      "v": [
+        "Troposferada",
+        "Stratosferada",
+        "Mezosferada",
+        "Ekzosferada"
+      ],
+      "t": 0,
+      "izoh": "Tirik mavjudotlar troposfera qatlamida yashaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#c2086baf"
+    },
+    {
+      "q": "Troposferada yuqoriga koʻtarilgan sari har 1000 metrda harorat oʻrtacha necha darajaga pasayadi?",
+      "v": [
+        "6 °C ga",
+        "1 °C ga",
+        "10 °C ga",
+        "33 °C ga"
+      ],
+      "t": 0,
+      "izoh": "Yuqoriga koʻtarilgan sari har 1000 m da harorat havoning namlik darajasiga bogʻliq ravishda oʻrtacha 6 °C ga pasayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#819f8c9b"
+    },
+    {
+      "q": "Stratosfera qayerda joylashgan?",
+      "v": [
+        "Troposferadan yuqorida",
+        "Troposferadan pastda",
+        "Mezosferadan pastda",
+        "Ekzosferadan yuqorida"
+      ],
+      "t": 0,
+      "izoh": "Stratosfera — troposferadan yuqorida joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m21#9caf88b1"
+    },
+    {
+      "q": "«Stratum» soʻzi yunonchada nima maʼnoni bildiradi?",
+      "v": [
+        "Qatlam",
+        "Aylanmoq",
+        "Oʻrta",
+        "Tashqi"
+      ],
+      "t": 0,
+      "izoh": "Stratosfera — (yunoncha «stratum» — qatlam) troposferadan yuqorida joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#3f126db6"
+    },
+    {
+      "q": "Stratosferaning yuqori chegarasi necha kilometr balandda?",
+      "v": [
+        "50-55 km",
+        "10-11 km",
+        "2000 km",
+        "17 km"
+      ],
+      "t": 0,
+      "izoh": "Stratosferaning yuqori chegarasi 50-55 km balandda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#2045a089"
+    },
+    {
+      "q": "Stratosferaning quyi qismida harorat qanday boʻladi?",
+      "v": [
+        "-45 °C dan -75 °C gacha pasayadi",
+        "+45 °C dan +75 °C gacha koʻtariladi",
+        "0 °C atrofida barqaror qoladi",
+        "-200 °C ga tushib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Stratosferaning quyi qismida harorat -45 °C dan -75 °C gacha pasayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#6d48c20c"
+    },
+    {
+      "q": "Stratosferada yuqoriga koʻtarilgan sari harorat qanday oʻzgaradi?",
+      "v": [
+        "Havo yana isib, +10 °C gacha koʻtariladi",
+        "Yanada sovib, -100 °C ga tushadi",
+        "Oʻzgarmay qoladi",
+        "Keskin pasayadi va muzlaydi"
+      ],
+      "t": 0,
+      "izoh": "Lekin yuqoriga koʻtarilgan sari havo yana isib, +10 °C gacha koʻtariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#e92a1165"
+    },
+    {
+      "q": "Mezosfera, termosfera va ekzosfera nima?",
+      "v": [
+        "Atmosferaning yuqori qatlamlari",
+        "Atmosferaning eng quyi qatlamlari",
+        "Troposferaning bir qismi",
+        "Stratosferaning bir qismi"
+      ],
+      "t": 0,
+      "izoh": "Mezosfera, termosfera va ekzosfera atmosferaning yuqori qatlamlaridir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#04822627"
+    },
+    {
+      "q": "«Mesos», «thermos» va «exos» soʻzlari yunonchada nima maʼnoni bildiradi?",
+      "v": [
+        "Oʻrta, issiq, tashqi",
+        "Qatlam, aylanmoq, shar",
+        "Bugʻ, suv, havo",
+        "Yer, osmon, yulduz"
+      ],
+      "t": 0,
+      "izoh": "Yunoncha «mesos» — oʻrta, «thermos» — issiq, «exos» — tashqi degan maʼnolarni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#8934b33f"
+    },
+    {
+      "q": "Atmosferaning yuqori qatlamlarida havo qanday holatda boʻladi?",
+      "v": [
+        "Juda siyrak va koinotdan keladigan nurlar taʼsirida elektr tokini yaxshi oʻtkazadigan holatda",
+        "Juda zich va sovuq holatda",
+        "Suyuq holatda",
+        "Qattiq muz holatida"
+      ],
+      "t": 0,
+      "izoh": "Bu qatlamlarda havo juda siyrak va koinotdan keladigan nurlar taʼsirida elektr tokini yaxshi oʻtkazadigan boʻlib qolgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#614b70d9"
+    },
+    {
+      "q": "Qutb yogʻdulari va «Yulduz uchishi» hodisalari qaysi qatlamlarda roʻy beradi?",
+      "v": [
+        "Atmosferaning yuqori qatlamlarida (mezosfera, termosfera, ekzosferada)",
+        "Troposferada",
+        "Stratosferada",
+        "Yer poʻstida"
+      ],
+      "t": 0,
+      "izoh": "Qutb yogʻdulari, «Yulduz uchishi» hodisalari atmosferaning yuqori qatlamlarida roʻy beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#c51d6b4b"
+    },
+    {
+      "q": "Inson qadim zamonlardan nimani kuzatib kelgan?",
+      "v": [
+        "Ob-havoni, atmosferada boʻladigan hodisalarni",
+        "Yulduzlar harakatini",
+        "Dengiz oqimlarini",
+        "Quruqlik relyefini"
+      ],
+      "t": 0,
+      "izoh": "Inson juda qadim zamonlardan ob-havoni, atmosferada boʻladigan hodisalarni kuzatib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#e21807a7"
+    },
+    {
+      "q": "Hozirgi vaqtda atmosfera va unda roʻy beradigan hodisalar qayerda oʻrganiladi?",
+      "v": [
+        "Dunyoning turli joylaridagi minglab meteorologik stansiyalarda",
+        "Kosmik stansiyalarda",
+        "Universitetlarda",
+        "Dengiz kemalarida"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi vaqtda atmosfera, unda roʻy beradigan hodisalar dunyoning turli joylaridagi minglab meteorologik stansiyalarda oʻrganiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#199ee168"
+    },
+    {
+      "q": "Atmosferani oʻrganishda qanday vositalardan foydalaniladi?",
+      "v": [
+        "Elektron hisoblash mashinalari, kompyuterlar, havo sharlari, meteorologik raketalar, Yerning sunʼiy yoʻldoshlari",
+        "Oddiy koʻzdan foydalaniladi",
+        "Teleskoplardan foydalaniladi",
+        "Kompaslardan foydalaniladi"
+      ],
+      "t": 0,
+      "izoh": "Bu ishda elektron hisoblash mashinalari, kompyuterlar, havo sharlari, meteorologik raketalar, Yerning sunʼiy yoʻldoshlaridan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#f9173292"
+    },
+    {
+      "q": "Meteorologik stansiyalardan olingan barcha maʼlumotlar asosida nima tuziladi?",
+      "v": [
+        "Ob-havo xaritalari",
+        "Geografik koordinatalar jadvali",
+        "Balandliklar shkalasi",
+        "Seysmogramma"
+      ],
+      "t": 0,
+      "izoh": "Barcha maʼlumotlar maxsus ilmiy tadqiqot muassasalarida oʻrganilib, ob-havo xaritalari tuziladi va ob-havoda roʻy beradigan oʻzgarishlar eʼlon qilib turiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#5ac1007b"
+    },
+    {
+      "q": "Yer yuzidagi insonlar, jonzotlar va oʻsimliklarning hayoti nimaga bogʻliq?",
+      "v": [
+        "Atmosfera havosining tozaligiga",
+        "Quyosh nurining kuchiga",
+        "Okean suvining tozaligiga",
+        "Tuproq unumdorligiga"
+      ],
+      "t": 0,
+      "izoh": "Yer yuzidagi insonlarning, umuman, barcha jonzotlarning, hatto oʻsimliklarning hayoti ham atmosfera havosining tozaligiga bogʻliq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#5ed285c0"
+    },
+    {
+      "q": "21-§ oxiridagi tayanch soʻz va tushunchalar qatorida qanday atamalar keltirilgan?",
+      "v": [
+        "Atmosfera, Troposfera, Stratosfera, Mezosfera, Termosfera, Ekzosfera, Kislorod, Karbonat angidrid, Azot, «Yulduz uchishi»",
+        "Gidrosfera, Dunyo okeani, Quruqlikdagi suvlar",
+        "Litosfera, Yer poʻsti, Granit, Bazalt",
+        "Daraja toʻri, Geografik kenglik, Geografik uzunlik"
+      ],
+      "t": 0,
+      "izoh": "21-§ oxiridagi tayanch soʻz va tushunchalar: Atmosfera, Troposfera, Stratosfera, Mezosfera, Termosfera, Ekzosfera, Kislorod, Karbonat angidrid, Azot, «Yulduz uchishi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m21#2aafcd09"
+    }
+  ]
+}

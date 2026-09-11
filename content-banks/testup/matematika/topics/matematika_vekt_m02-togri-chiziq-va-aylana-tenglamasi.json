@@ -1,0 +1,1609 @@
+{
+  "nom": "To'g'ri chiziq va aylana tenglamasi",
+  "bolim": "Koordinatalar va vektorlar",
+  "blok": "vekt",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "y = −3x + 7 to'g'ri chiziqning burchak koeffitsienti va uning ordinata o'qini kesib o'tish nuqtasi ordinatasi mos ravishda qanday?",
+      "v": [
+        "−3 va 7",
+        "7 va −3",
+        "3 va 7",
+        "−3 va −7"
+      ],
+      "t": 0,
+      "izoh": "y = kx + b ko'rinishida k — burchak koeffitsienti, b esa ordinata o'qidagi kesma. Berilgan tenglamada k = −3, b = 7. Chiziq Oy o'qini (0; 7) nuqtada kesadi. Javob: −3 va 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-koeffitsient-oqish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#7a897447"
+    },
+    {
+      "q": "Bir to'g'ri chiziq y = 0,5x − 4 tenglama bilan berilgan bo'lsa, uning burchak koeffitsienti nechaga teng?",
+      "v": [
+        "−4",
+        "2",
+        "0,5",
+        "−0,5"
+      ],
+      "t": 2,
+      "izoh": "Burchak koeffitsient — x oldidagi son. Bu yerda u 0,5 ga teng, −4 esa ordinata o'qidagi kesma. Ikkalasini chalkashtirmaslik kerak. Javob: 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-koeffitsient-oqish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#959d3c2b"
+    },
+    {
+      "q": "Abscissa o'qining musbat yo'nalishi bilan hosil qilgan og'ish burchagi 45° ga teng bo'lgan va (0; −2) nuqtadan o'tuvchi to'g'ri chiziqning tenglamasi qaysi?",
+      "v": [
+        "y = x + 2",
+        "y = x − 2",
+        "y = −x − 2",
+        "y = 45x − 2"
+      ],
+      "t": 1,
+      "izoh": "Og'ish burchagi α = 45° bo'lgani uchun burchak koeffitsienti k = tg45° = 1. Chiziq Oy o'qini (0; −2) nuqtada kesgani uchun b = −2. Demak tenglama y = x − 2. Og'ish burchagi 135° bo'lganda k = tg135° = −1 chiqadi va y = −x − 2 hosil bo'ladi, lekin bu yerda burchak aynan 45° deb berilgan. Javob: y = x − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-koeffitsient-oqish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#2516419c"
+    },
+    {
+      "q": "Nodira daftariga y = 4 − 2x tenglamani yozdi va uni y = kx + b ko'rinishiga keltirmoqchi. k va b qanday bo'ladi?",
+      "v": [
+        "k = 4, b = −2",
+        "k = 2, b = 4",
+        "k = −2, b = −4",
+        "k = −2, b = 4"
+      ],
+      "t": 3,
+      "izoh": "Hadlarni tartibga solamiz: y = 4 − 2x ni y = −2x + 4 deb yozamiz. Endi x oldidagi son k = −2, ozod had b = 4. Yozuv tartibiga qarab k va b ni almashtirib yuborish tipik xato. Javob: k = −2, b = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-koeffitsient-oqish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#fb232ca3"
+    },
+    {
+      "q": "3x + 4y − 12 = 0 umumiy tenglama bilan berilgan chiziqni y = kx + b ko'rinishiga keltirganda k nimaga teng bo'ladi?",
+      "v": [
+        "3/4",
+        "−4/3",
+        "−3/4",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Tenglamadan y ni ajratamiz: 4y = −3x + 12, bundan y = (−3/4)x + 3. Demak burchak koeffitsient k = −3/4. Ishorani tushirib qoldirish yoki kasrni ag'darib yuborish tipik xato. Javob: −3/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-tenglamadan-kx-b",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#be67cca0"
+    },
+    {
+      "q": "2x − 5y + 10 = 0 tenglamaning ordinata o'qi bilan kesishish nuqtasi ordinatasini toping.",
+      "v": [
+        "2",
+        "−2",
+        "−5",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Ordinata o'qida x = 0 bo'ladi. Buni qo'ysak: −5y + 10 = 0, ya'ni 5y = 10 va y = 2. Agar y = 0 deb olinsa abscissa topiladi, bu boshqa savol. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-tenglamadan-kx-b",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#17b56a80"
+    },
+    {
+      "q": "Umumiy ko'rinishdagi x − y + 6 = 0 chiziq y = kx + b ko'rinishida yozilsa, b qiymati qanday chiqadi?",
+      "v": [
+        "−6",
+        "1",
+        "−1",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "y ni ajratamiz: −y = −x − 6, ikkala tomonni −1 ga ko'paytiramiz va y = x + 6 hosil bo'ladi. Bunda k = 1, b = 6. Ishorani almashtirmaslik tipik xato. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-tenglamadan-kx-b",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#5a17382c"
+    },
+    {
+      "q": "Koordinata tekisligida 6x − 2y = 0 tenglama qanday to'g'ri chiziqni ifodalashini aniqlang.",
+      "v": [
+        "Ordinata o'qini (0; 3) nuqtada kesuvchi chiziq",
+        "Koordinata boshidan o'tuvchi, burchak koeffitsienti 3 bo'lgan chiziq",
+        "Koordinata boshidan o'tuvchi, burchak koeffitsienti −3 bo'lgan chiziq",
+        "Abscissa o'qiga parallel bo'lgan chiziq"
+      ],
+      "t": 1,
+      "izoh": "Tenglamadan 2y = 6x, ya'ni y = 3x kelib chiqadi. Ozod had nolga teng, demak chiziq koordinata boshidan o'tadi, burchak koeffitsienti esa 3 ga teng. Javob: koordinata boshidan o'tuvchi, k = 3 bo'lgan chiziq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-tenglamadan-kx-b",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#0af6cc76"
+    },
+    {
+      "q": "A(1; 2) va B(3; 8) nuqtalardan o'tuvchi to'g'ri chiziqning burchak koeffitsientini hisoblang.",
+      "v": [
+        "1/3",
+        "3",
+        "−3",
+        "2,5"
+      ],
+      "t": 1,
+      "izoh": "Formula k = (y₂ − y₁)/(x₂ − x₁) bo'yicha ishlaymiz. k = (8 − 2)/(3 − 1) = 6/2 = 3. Kasrni ag'darib yuborish yoki koordinatalarni qo'shib yuborish tipik xato. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-nuqta-orqali-chiziq",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#cc6483da"
+    },
+    {
+      "q": "Bir do'konda mahsulot narxi chiziqli o'smoqda: 2-oyda 40 000 so'm, 5-oyda 55 000 so'm bo'lgan. Shu chiziqli modelning burchak koeffitsienti nechaga teng?",
+      "v": [
+        "15 000 so'm",
+        "3 000 so'm",
+        "7 500 so'm",
+        "5 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Burchak koeffitsient — bir oydagi o'sish. k = (55 000 − 40 000)/(5 − 2) = 15 000 : 3 = 5 000 so'm. Bo'lishni unutib, faqat ayirmani yozib qo'yish tipik xato. Javob: 5 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-nuqta-orqali-chiziq",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#4d541a58"
+    },
+    {
+      "q": "M(−2; 5) va N(4; −7) nuqtalardan o'tuvchi to'g'ri chiziq qanday tenglama bilan ifodalanadi?",
+      "v": [
+        "y = −2x + 1",
+        "y = 2x + 9",
+        "y = −2x + 9",
+        "y = −0,5x + 4"
+      ],
+      "t": 0,
+      "izoh": "Avval k = (−7 − 5)/(4 − (−2)) = −12/6 = −2. So'ng M nuqtani qo'yamiz: 5 = −2·(−2) + b, ya'ni 5 = 4 + b va b = 1. Demak y = −2x + 1. Javob: y = −2x + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-nuqta-orqali-chiziq",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#5a921fe8"
+    },
+    {
+      "q": "Qishloq yo'lidagi ustunlar bitta to'g'ri chiziqda: birinchisi (1; 3), uchinchisi (5; 11) nuqtada turibdi. Shu chiziqning tenglamasini toping.",
+      "v": [
+        "y = 2x + 3",
+        "y = 0,5x + 2,5",
+        "y = 2x + 1",
+        "y = 2x − 1"
+      ],
+      "t": 2,
+      "izoh": "k = (11 − 3)/(5 − 1) = 8/4 = 2 bo'ladi. Birinchi ustunni qo'yamiz: 3 = 2·1 + b, bundan b = 1. Demak chiziq y = 2x + 1. b o'rniga birinchi nuqtaning ordinatasini yozib qo'yish tipik xato. Javob: y = 2x + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-nuqta-orqali-chiziq",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#6a5ff593"
+    },
+    {
+      "q": "P(0; −3) va Q(6; 0) nuqtalar orqali o'tuvchi chiziqning ordinata o'qidagi kesmasi va burchak koeffitsienti qanday?",
+      "v": [
+        "b = −3, k = 2",
+        "b = 6, k = 0,5",
+        "b = 3, k = −0,5",
+        "b = −3, k = 0,5"
+      ],
+      "t": 3,
+      "izoh": "P nuqtaning abscissasi nolga teng, demak b = −3 to'g'ridan-to'g'ri o'qiladi. Burchak koeffitsient k = (0 − (−3))/(6 − 0) = 3/6 = 0,5. Javob: b = −3, k = 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-nuqta-orqali-chiziq",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#9ed856bd"
+    },
+    {
+      "q": "Quyidagi nuqtalardan qaysi biri y = 3x − 5 to'g'ri chiziqqa tegishli: (1; 2), (2; 1), (0; 5) yoki (3; 5)?",
+      "v": [
+        "(1; 2)",
+        "(2; 1)",
+        "(0; 5)",
+        "(3; 5)"
+      ],
+      "t": 1,
+      "izoh": "Har bir nuqtani tenglamaga qo'yib tekshiramiz. (2; 1) uchun 3·2 − 5 = 1, ordinata mos keldi. Qolganlarida 3·1 − 5 = −2, 3·0 − 5 = −5, 3·3 − 5 = 4 chiqadi va mos kelmaydi. Javob: (2; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-chiziqda-yotishi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#fee8925a"
+    },
+    {
+      "q": "A(4; m) nuqta 2x − y − 3 = 0 to'g'ri chiziqda yotadi. m ning qiymatini aniqlang.",
+      "v": [
+        "11",
+        "−5",
+        "5",
+        "3,5"
+      ],
+      "t": 2,
+      "izoh": "Nuqta chiziqda yotsa, uning koordinatalari tenglamani qanoatlantiradi. 2·4 − m − 3 = 0, ya'ni 8 − m − 3 = 0 va m = 5. Ishorani noto'g'ri ko'chirib 8 + 3 = 11 deb yozish tipik xato. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-chiziqda-yotishi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#9512949a"
+    },
+    {
+      "q": "Anvarning chizmasidagi (a; 7) nuqta y = 2x + 1 chiziqda joylashgan bo'lsa, a nechaga teng?",
+      "v": [
+        "3",
+        "15",
+        "3,5",
+        "−3"
+      ],
+      "t": 0,
+      "izoh": "Ordinata o'rniga 7 ni qo'yamiz: 7 = 2a + 1, bundan 2a = 6 va a = 3. Abscissa o'rniga 7 ni qo'yib 2·7 + 1 = 15 deb hisoblash tipik xato. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-chiziqda-yotishi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#779ccfc7"
+    },
+    {
+      "q": "K(−1; 2), L(2; 8) va N(5; 14) nuqtalar bitta to'g'ri chiziqda yotadimi degan savolga qaysi javob to'g'ri?",
+      "v": [
+        "Ha, uchalasi ham y = 2x + 4 chiziqda yotadi",
+        "Yo'q, faqat K va L bitta chiziqda yotadi",
+        "Yo'q, faqat L va N bitta chiziqda yotadi",
+        "Ha, uchalasi ham y = 2x − 4 chiziqda yotadi"
+      ],
+      "t": 0,
+      "izoh": "KL uchun k = (8 − 2)/(2 − (−1)) = 2, LN uchun k = (14 − 8)/(5 − 2) = 2. Burchak koeffitsientlar teng, demak nuqtalar bir chiziqda. K ni qo'ysak 2 = −2 + b, ya'ni b = 4 va chiziq y = 2x + 4. Javob: ha, uchalasi shu chiziqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqta-chiziqda-yotishi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#b1aa821a"
+    },
+    {
+      "q": "y = 5x − 2 to'g'ri chiziqqa parallel bo'lgan va (1; 8) nuqtadan o'tuvchi to'g'ri chiziqning tenglamasini toping.",
+      "v": [
+        "y = 5x + 8",
+        "y = 5x − 3",
+        "y = 5x + 3",
+        "y = −0,2x + 8,2"
+      ],
+      "t": 2,
+      "izoh": "Parallel chiziqlarning burchak koeffitsientlari teng, demak k = 5. Nuqtani qo'yamiz: 8 = 5·1 + b, bundan b = 3. Tenglama y = 5x + 3 bo'ladi. b o'rniga nuqtaning ordinatasini yozib qo'yish tipik xato. Javob: y = 5x + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallel-chiziq-tenglamasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#cdc197c6"
+    },
+    {
+      "q": "y = (m − 1)x + 4 va y = 3x − 7 to'g'ri chiziqlar parallel bo'lishi uchun m qanday qiymatga ega bo'lishi kerak?",
+      "v": [
+        "3",
+        "4",
+        "2",
+        "−2"
+      ],
+      "t": 1,
+      "izoh": "Parallellik sharti: burchak koeffitsientlar teng, ya'ni m − 1 = 3. Bundan m = 4. Faqat 3 ni yozib qo'yish yoki m = 3 − 1 deb yechish tipik xato. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallel-chiziq-tenglamasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#2e6e7b4e"
+    },
+    {
+      "q": "3x − y + 5 = 0 chiziqqa parallel va koordinata boshidan o'tuvchi to'g'ri chiziqning tenglamasi qanday bo'ladi?",
+      "v": [
+        "y = 3x + 5",
+        "y = −3x",
+        "y = x/3",
+        "y = 3x"
+      ],
+      "t": 3,
+      "izoh": "Berilgan chiziqni y = 3x + 5 ko'rinishiga keltiramiz, demak k = 3. Yangi chiziq koordinata boshidan o'tgani uchun b = 0. Natijada y = 3x. Javob: y = 3x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-chiziq-tenglamasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#1e1ff7cc"
+    },
+    {
+      "q": "Ikki velosipedchi parallel yo'llarda ketmoqda. Birinchi yo'l y = 0,75x + 2 chiziqda, ikkinchisi esa (4; 1) nuqtadan o'tadi. Ikkinchi yo'lning tenglamasi qaysi?",
+      "v": [
+        "y = 0,75x + 1",
+        "y = 0,75x + 2",
+        "y = 0,75x − 2",
+        "y = 0,75x + 4"
+      ],
+      "t": 2,
+      "izoh": "Yo'llar parallel bo'lgani uchun k = 0,75 saqlanadi. Nuqtani qo'yamiz: 1 = 0,75·4 + b, ya'ni 1 = 3 + b va b = −2. Demak y = 0,75x − 2. b = 1 + 3 deb hisoblash ishora xatosi. Javob: y = 0,75x − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-chiziq-tenglamasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#1afe95e8"
+    },
+    {
+      "q": "y = 2x + 1 va 4x − 2y + 6 = 0 chiziqlarning o'zaro joylashuvi haqidagi qaysi tasdiq to'g'ri?",
+      "v": [
+        "Parallel, lekin ustma-ust tushmaydi",
+        "Ustma-ust tushadi, ya'ni bitta chiziq",
+        "O'zaro perpendikulyar",
+        "Bitta nuqtada kesishadi, lekin perpendikulyar emas"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi tenglamani keltiramiz: 2y = 4x + 6, ya'ni y = 2x + 3. Burchak koeffitsientlar teng (2 = 2), lekin ozod hadlar har xil (1 va 3). Demak chiziqlar parallel, lekin ustma-ust tushmaydi. Javob: parallel, ustma-ust tushmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallel-chiziq-tenglamasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#8edc16b2"
+    },
+    {
+      "q": "y = 2x + 3 to'g'ri chiziqqa perpendikulyar bo'lgan va (4; 1) nuqtadan o'tuvchi to'g'ri chiziq tenglamasini yozing.",
+      "v": [
+        "y = 2x − 7",
+        "y = 0,5x − 1",
+        "y = −0,5x − 1",
+        "y = −0,5x + 3"
+      ],
+      "t": 3,
+      "izoh": "Perpendikulyarlik sharti k₁·k₂ = −1, demak k₂ = −1/2 = −0,5. Nuqtani qo'yamiz: 1 = −0,5·4 + b, ya'ni 1 = −2 + b va b = 3. Tenglama y = −0,5x + 3. Javob: y = −0,5x + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyar-chiziq-tenglamasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#1d6761f2"
+    },
+    {
+      "q": "y = ax − 6 va y = 4x + 1 to'g'ri chiziqlar o'zaro perpendikulyar bo'lsa, a ning qiymati qanday?",
+      "v": [
+        "0,25",
+        "−0,25",
+        "4",
+        "−4"
+      ],
+      "t": 1,
+      "izoh": "Perpendikulyarlik sharti bo'yicha a·4 = −1 bo'lishi kerak. Bundan a = −1/4 = −0,25. Minus ishorasini tushirib qoldirish tipik xato. Javob: −0,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perpendikulyar-chiziq-tenglamasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#a0763d2c"
+    },
+    {
+      "q": "To'g'ri to'rtburchak hovlining bir tomoni 3x + y − 9 = 0 chiziqda yotadi. Unga perpendikulyar tomon (3; 4) nuqtadan o'tsa, uning tenglamasi qanday?",
+      "v": [
+        "y = −3x + 13",
+        "y = x/3 + 3",
+        "y = −x/3 + 5",
+        "y = 3x − 5"
+      ],
+      "t": 1,
+      "izoh": "Berilgan tomonni y = −3x + 9 ko'rinishiga keltiramiz, k₁ = −3. Perpendikulyar tomon uchun k₂ = 1/3. Nuqtani qo'yamiz: 4 = (1/3)·3 + b, ya'ni 4 = 1 + b va b = 3. Javob: y = x/3 + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perpendikulyar-chiziq-tenglamasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#92735821"
+    },
+    {
+      "q": "Uchburchakning AB tomoni y = −x + 6 chiziqda yotadi. C(1; 1) uchidan shu tomonga tushirilgan balandlik qaysi tenglama bilan ifodalanadi?",
+      "v": [
+        "y = −x + 2",
+        "y = x + 2",
+        "y = −x",
+        "y = x"
+      ],
+      "t": 3,
+      "izoh": "Balandlik AB tomonga perpendikulyar. AB uchun k₁ = −1, demak balandlik uchun k₂ = 1. C nuqtani qo'yamiz: 1 = 1·1 + b, bundan b = 0. Balandlik tenglamasi y = x bo'ladi. Javob: y = x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perpendikulyar-chiziq-tenglamasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#443b41df"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning bir tomoni 2x − 3y + 12 = 0 chiziqda, unga qo'shni tomoni esa (6; 2) nuqtadan o'tadi. Qo'shni tomon tenglamasi qaysi?",
+      "v": [
+        "y = −1,5x + 11",
+        "y = 1,5x − 7",
+        "y = (2/3)x − 2",
+        "y = −1,5x − 7"
+      ],
+      "t": 0,
+      "izoh": "Berilgan tomonni keltiramiz: 3y = 2x + 12, ya'ni y = (2/3)x + 4 va k₁ = 2/3. Qo'shni tomon perpendikulyar, demak k₂ = −3/2 = −1,5. Nuqtani qo'yamiz: 2 = −1,5·6 + b, ya'ni 2 = −9 + b va b = 11. Javob: y = −1,5x + 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perpendikulyar-chiziq-tenglamasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#a98f1fd4"
+    },
+    {
+      "q": "y = 2x − 1 va y = −x + 5 to'g'ri chiziqlar kesishgan nuqtaning koordinatalarini toping.",
+      "v": [
+        "(3; 2)",
+        "(2; −3)",
+        "(2; 3)",
+        "(6; 11)"
+      ],
+      "t": 2,
+      "izoh": "Ordinatalarni tenglashtiramiz: 2x − 1 = −x + 5. Bundan 3x = 6 va x = 2. Endi y = 2·2 − 1 = 3. Kesishish nuqtasi (2; 3). Chap tomonga −x ni ko'chirishni unutish tipik xato. Javob: (2; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-chiziq-kesishish-nuqtasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#e679042e"
+    },
+    {
+      "q": "Ikki avtobus marshruti x + y = 10 va x − y = 2 tenglamalar bilan berilgan chiziqlar bo'ylab o'tadi. Ular qaysi nuqtada kesishadi?",
+      "v": [
+        "(4; 6)",
+        "(5; 5)",
+        "(2; 8)",
+        "(6; 4)"
+      ],
+      "t": 3,
+      "izoh": "Tenglamalarni qo'shamiz: 2x = 12, demak x = 6. Birinchi tenglamadan y = 10 − 6 = 4. Kesishish nuqtasi (6; 4) bo'ladi. Faqat bitta tenglamani qanoatlantiruvchi nuqtani tanlash tipik xato. Javob: (6; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-chiziq-kesishish-nuqtasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#6b6639ed"
+    },
+    {
+      "q": "Uchburchakning ikki medianasi y = x + 1 va y = −2x + 10 chiziqlarda yotadi. Medianalar kesishgan nuqta qanday koordinatalarga ega?",
+      "v": [
+        "(4; 3)",
+        "(3; 4)",
+        "(3; 1)",
+        "(2; 3)"
+      ],
+      "t": 1,
+      "izoh": "Chiziqlarni tenglashtiramiz: x + 1 = −2x + 10, bundan 3x = 9 va x = 3. So'ng y = 3 + 1 = 4. Medianalar (3; 4) nuqtada kesishadi. Koordinatalarni o'rin almashtirib yozish tipik xato. Javob: (3; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-chiziq-kesishish-nuqtasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#b9307693"
+    },
+    {
+      "q": "Anvar y = 4x − 5 va y = 4x + 3 chiziqlarning kesishish nuqtasini izlamoqda. U qanday xulosaga kelishi kerak?",
+      "v": [
+        "Kesishish nuqtasi (0; −5)",
+        "Chiziqlar ustma-ust tushadi, umumiy nuqtalari cheksiz ko'p",
+        "Kesishish nuqtasi yo'q, chunki chiziqlar parallel",
+        "Kesishish nuqtasi (2; 3)"
+      ],
+      "t": 2,
+      "izoh": "Tenglashtirsak 4x − 5 = 4x + 3, ya'ni −5 = 3 kelib chiqadi va bu yolg'on tenglik. Burchak koeffitsientlar teng, ozod hadlar har xil, demak chiziqlar parallel va kesishmaydi. Javob: kesishish nuqtasi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-chiziq-kesishish-nuqtasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#75efeb48"
+    },
+    {
+      "q": "y = 3x + 2 to'g'ri chiziq abscissa o'qini qaysi nuqtada kesib o'tishini aniqlang.",
+      "v": [
+        "(−2/3; 0)",
+        "(0; 2)",
+        "(2/3; 0)",
+        "(0; −2/3)"
+      ],
+      "t": 0,
+      "izoh": "Abscissa o'qida y = 0 bo'ladi. Demak 3x + 2 = 0, bundan x = −2/3. Kesishish nuqtasi (−2/3; 0). Ordinata o'qi bilan kesishish nuqtasini (0; 2) tanlab yuborish tipik xato. Javob: (−2/3; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqlar-bilan-kesishish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#839c048c"
+    },
+    {
+      "q": "3x + 4y − 24 = 0 to'g'ri chiziq koordinata o'qlari bilan uchburchak hosil qiladi. Bu uchburchakning yuzi necha kvadrat birlikka teng?",
+      "v": [
+        "24",
+        "48",
+        "14",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "y = 0 desak 3x = 24 va x = 8, x = 0 desak 4y = 24 va y = 6. Katetlari 8 va 6 bo'lgan to'g'ri burchakli uchburchak hosil bo'ladi. Yuzi S = 8·6 : 2 = 24. Ikkiga bo'lishni unutish tipik xato. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oqlar-bilan-kesishish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#c17af11a"
+    },
+    {
+      "q": "Bir dala chegarasi 5x + 2y = 20 tenglama bilan berilgan. Chegara chizig'i ordinata o'qini kesgan nuqtaning ordinatasi qanday?",
+      "v": [
+        "4",
+        "20",
+        "10",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Ordinata o'qida x = 0, demak 2y = 20 va y = 10. Agar y = 0 deb olinsa 5x = 20 dan x = 4 chiqadi, bu esa abscissa. Ikkalasini chalkashtirish tipik xato. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqlar-bilan-kesishish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#ab6c6b7d"
+    },
+    {
+      "q": "y = −0,75x + 3 chiziq koordinata o'qlari bilan uchburchak hosil qiladi. Shu uchburchakning perimetri necha birlikka teng?",
+      "v": [
+        "7",
+        "12",
+        "6",
+        "14"
+      ],
+      "t": 1,
+      "izoh": "y = 0 desak 0,75x = 3 va x = 4, x = 0 desak y = 3. Katetlar 4 va 3, gipotenuza √(16 + 9) = 5. Perimetr 4 + 3 + 5 = 12 birlik. Gipotenuzani qo'shishni unutish tipik xato. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oqlar-bilan-kesishish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#dbb07b05"
+    },
+    {
+      "q": "M(2; 3) nuqtadan 3x + 4y − 5 = 0 to'g'ri chiziqqacha bo'lgan masofani hisoblang.",
+      "v": [
+        "13",
+        "4,6",
+        "0,52",
+        "2,6"
+      ],
+      "t": 3,
+      "izoh": "Masofa formulasi d = |Ax₀ + By₀ + C| : √(A² + B²). Surat: |3·2 + 4·3 − 5| = |6 + 12 − 5| = 13. Maxraj: √(9 + 16) = 5. Demak d = 13 : 5 = 2,6. Javob: 2,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtadan-chiziqqacha-masofa",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#6fe2fd8d"
+    },
+    {
+      "q": "Koordinata boshidan 5x − 12y + 26 = 0 to'g'ri chiziqqacha bo'lgan masofa nechaga teng?",
+      "v": [
+        "26",
+        "1,53",
+        "2",
+        "0,15"
+      ],
+      "t": 2,
+      "izoh": "Koordinata boshi uchun x₀ = 0 va y₀ = 0. Surat |0 − 0 + 26| = 26, maxraj √(25 + 144) = √169 = 13. Demak d = 26 : 13 = 2. Maxrajni 5 + 12 = 17 deb hisoblash tipik xato. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtadan-chiziqqacha-masofa",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#6d658d56"
+    },
+    {
+      "q": "Chiroq ustuni A(6; 8) nuqtada, to'g'ri yo'l esa 4x + 3y − 10 = 0 chiziqda joylashgan. Ustundan yo'lgacha eng qisqa masofa qancha?",
+      "v": [
+        "7,6",
+        "38",
+        "11,6",
+        "1,52"
+      ],
+      "t": 0,
+      "izoh": "Eng qisqa masofa — perpendikulyar bo'ylab o'lchanadi. Surat |4·6 + 3·8 − 10| = |24 + 24 − 10| = 38, maxraj √(16 + 9) = 5. Demak d = 38 : 5 = 7,6 birlik. Javob: 7,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtadan-chiziqqacha-masofa",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#4c16217d"
+    },
+    {
+      "q": "y = 2x + 1 to'g'ri chiziq bilan unga parallel bo'lgan y = 2x − 4 chiziq orasidagi masofani toping.",
+      "v": [
+        "5",
+        "2,5",
+        "1",
+        "√5"
+      ],
+      "t": 3,
+      "izoh": "Chiziqlarni umumiy ko'rinishga keltiramiz: 2x − y + 1 = 0 va 2x − y − 4 = 0. Birinchi chiziqdagi (0; 1) nuqtadan ikkinchisigacha masofani hisoblaymiz: |0 − 1 − 4| : √(4 + 1) = 5 : √5 = √5. Maxrajni unutib 5 deb yozish tipik xato. Javob: √5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqtadan-chiziqqacha-masofa",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#bf61fb5f"
+    },
+    {
+      "q": "A(1; 2) va B(5; 6) nuqtalarni tutashtiruvchi kesmaning o'rta nuqtasi qaysi koordinatalarga ega?",
+      "v": [
+        "(4; 3)",
+        "(3; 4)",
+        "(2; 2)",
+        "(6; 8)"
+      ],
+      "t": 1,
+      "izoh": "O'rta nuqta koordinatalari yarim yig'indi sifatida topiladi: x = (1 + 5) : 2 = 3, y = (2 + 6) : 2 = 4. Demak o'rta nuqta (3; 4). Koordinatalarni ayirib yoki bo'lmasdan qo'shib yuborish tipik xato. Javob: (3; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-nuqta-va-orta-perpendikulyar",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#41a00a01"
+    },
+    {
+      "q": "C(−2; 1) va D(4; 5) nuqtalar berilgan. CD kesmaning o'rta perpendikulyari tenglamasini toping.",
+      "v": [
+        "y = (2/3)x + 7/3",
+        "y = −1,5x + 4,5",
+        "y = −1,5x + 1,5",
+        "y = 1,5x + 1,5"
+      ],
+      "t": 1,
+      "izoh": "O'rta nuqta: x = (−2 + 4) : 2 = 1, y = (1 + 5) : 2 = 3. CD ning burchak koeffitsienti (5 − 1)/(4 + 2) = 2/3, demak perpendikulyar uchun k = −3/2 = −1,5. Nuqtani qo'yamiz: 3 = −1,5 + b va b = 4,5. Javob: y = −1,5x + 4,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-nuqta-va-orta-perpendikulyar",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#4eb196b3"
+    },
+    {
+      "q": "Ikki qishloq A(0; 0) va B(8; 0) nuqtalarda joylashgan. Ikkalasidan bir xil uzoqlikdagi nuqtalar to'plami qaysi chiziq bilan ifodalanadi?",
+      "v": [
+        "y = 4",
+        "y = x",
+        "x = 8",
+        "x = 4"
+      ],
+      "t": 3,
+      "izoh": "Ikki nuqtadan teng uzoqlikdagi nuqtalar to'plami — AB kesmaning o'rta perpendikulyari. O'rta nuqta (4; 0), AB esa abscissa o'qida yotadi. Unga perpendikulyar va (4; 0) dan o'tuvchi chiziq x = 4 bo'ladi. Javob: x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-nuqta-va-orta-perpendikulyar",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#4fdd9b53"
+    },
+    {
+      "q": "P(2; 5) va Q(6; 5) nuqtalardan teng uzoqlikda joylashgan va abscissa o'qida yotuvchi nuqtaning koordinatalari qanday?",
+      "v": [
+        "(4; 0)",
+        "(0; 4)",
+        "(4; 5)",
+        "(8; 0)"
+      ],
+      "t": 0,
+      "izoh": "PQ kesmaning o'rta nuqtasi (4; 5), PQ o'zi gorizontal, demak o'rta perpendikulyar x = 4 vertikal chiziq. Bu chiziq abscissa o'qini (4; 0) nuqtada kesadi. Javob: (4; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-nuqta-va-orta-perpendikulyar",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#32ab52b5"
+    },
+    {
+      "q": "Taksi xizmati chaqiruv uchun 8000 so'm, har kilometr uchun esa 2500 so'm oladi. To'lov y ni masofa x orqali ifodalovchi chiziq tenglamasi qanday?",
+      "v": [
+        "y = 8000x + 2500",
+        "y = 2500x − 8000",
+        "y = 2500x + 8000",
+        "y = 10500x"
+      ],
+      "t": 2,
+      "izoh": "Har kilometr uchun olinadigan 2500 so'm — burchak koeffitsient, chaqiruv haqi 8000 so'm esa boshlang'ich qiymat, ya'ni b. Demak y = 2500x + 8000. Ikkala sonni o'rin almashtirib yozish tipik xato. Javob: y = 2500x + 8000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-chiziqli-tarif-modeli",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#bf43ab71"
+    },
+    {
+      "q": "Suv hisoblagichi ko'rsatkichi chiziqli o'sadi: 3-kuni 45 m³, 7-kuni 85 m³ bo'lgan. Kunlik sarf necha kub metrni tashkil qiladi?",
+      "v": [
+        "40 m³",
+        "4 m³",
+        "12,1 m³",
+        "10 m³"
+      ],
+      "t": 3,
+      "izoh": "Kunlik sarf — chiziqning burchak koeffitsienti. k = (85 − 45)/(7 − 3) = 40 : 4 = 10 m³. Kunlar ayirmasi o'rniga yig'indisini olib 40 : 10 = 4 deb hisoblash tipik xato. Javob: 10 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-chiziqli-tarif-modeli",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#ae328122"
+    },
+    {
+      "q": "Sexdagi ishchining maoshi y = 30 000x + 900 000 formula bilan hisoblanadi, bunda x — ortiqcha bajarilgan detallar soni. 40 ta ortiqcha detal uchun maosh qancha?",
+      "v": [
+        "1 200 000 so'm",
+        "2 100 000 so'm",
+        "930 000 so'm",
+        "3 000 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Formulaga x = 40 ni qo'yamiz: y = 30 000·40 + 900 000. Avval 30 000·40 = 1 200 000, so'ng 1 200 000 + 900 000 = 2 100 000 so'm. Ozod hadni qo'shishni unutish tipik xato. Javob: 2 100 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-chiziqli-tarif-modeli",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#0c66d12e"
+    },
+    {
+      "q": "Muzlatgichdagi harorat chiziqli pasaymoqda: boshida 20°C edi, har 5 daqiqada 4 darajaga kamayadi. Haroratni t daqiqaga bog'lovchi tenglama qaysi?",
+      "v": [
+        "y = 20 − 4t",
+        "y = 20 + 0,8t",
+        "y = 20 − 0,8t",
+        "y = 0,8t − 20"
+      ],
+      "t": 2,
+      "izoh": "Bir daqiqadagi o'zgarish 4 : 5 = 0,8 daraja, harorat pasaygani uchun burchak koeffitsient manfiy: k = −0,8. Boshlang'ich qiymat b = 20. Demak y = 20 − 0,8t. Javob: y = 20 − 0,8t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-chiziqli-tarif-modeli",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#0b56ef68"
+    },
+    {
+      "q": "Yuk mashinasi bakida 60 litr yoqilg'i bor edi, u har 100 km da 25 litr sarflaydi. Yoqilg'i miqdorini masofaga bog'lovchi chiziqning burchak koeffitsienti qanday?",
+      "v": [
+        "−0,25",
+        "0,25",
+        "−25",
+        "−2,5"
+      ],
+      "t": 0,
+      "izoh": "Bir kilometrga sarf 25 : 100 = 0,25 litr. Yoqilg'i kamayib borgani uchun burchak koeffitsient manfiy bo'ladi, ya'ni k = −0,25. Birlikni aylantirmasdan −25 deb yozish tipik xato. Javob: −0,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-chiziqli-tarif-modeli",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#ba16dbae"
+    },
+    {
+      "q": "Poyezd harakati s = 80t + 120 chiziq bilan berilgan, bunda s kilometrda, t soatda o'lchanadi. Kuzatuv boshlanganda poyezd qayerda edi va tezligi qanday?",
+      "v": [
+        "120 km da, tezligi 80 km/soat",
+        "80 km da, tezligi 120 km/soat",
+        "120 km da, tezligi 200 km/soat",
+        "0 km da, tezligi 80 km/soat"
+      ],
+      "t": 0,
+      "izoh": "t = 0 bo'lganda s = 120, demak kuzatuv boshida poyezd 120 km masofada edi. Burchak koeffitsient 80 — bir soatda bosib o'tiladigan masofa, ya'ni tezlik. Javob: 120 km da, tezligi 80 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-harakat-va-chiziq",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#c3216d4b"
+    },
+    {
+      "q": "Birinchi mashina harakati y = 60x + 40, ikkinchisiniki y = 100x chiziq bilan berilgan. Ikkinchi mashina birinchisiga qachon yetib oladi?",
+      "v": [
+        "0,25 soatdan keyin",
+        "2,5 soatdan keyin",
+        "1 soatdan keyin",
+        "0,4 soatdan keyin"
+      ],
+      "t": 2,
+      "izoh": "Yetib olish paytida masofalar tenglashadi: 60x + 40 = 100x. Bundan 40 = 40x va x = 1 soat. Tezliklarni ayirish o'rniga qo'shib, 40 : 160 = 0,25 deb hisoblash tipik xato. Javob: 1 soatdan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harakat-va-chiziq",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#23d5458b"
+    },
+    {
+      "q": "Basseynda 3 000 litr suv bor edi, bo'shatish boshlangach har daqiqada 150 litr chiqib ketdi. Hajmni vaqtga bog'lovchi chiziq abscissa o'qini qayerda kesadi?",
+      "v": [
+        "(0; 3 000)",
+        "(20; 0)",
+        "(150; 0)",
+        "(20; 3 000)"
+      ],
+      "t": 1,
+      "izoh": "Model V = 3 000 − 150t ko'rinishida. Abscissa o'qida V = 0, demak 150t = 3 000 va t = 20 daqiqa. Kesishish nuqtasi (20; 0), ya'ni bassein 20 daqiqada bo'shaydi. Javob: (20; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-harakat-va-chiziq",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#cf51e3f4"
+    },
+    {
+      "q": "Mahsulotga talab chizig'i p = −2q + 100, taklif chizig'i esa p = 3q + 20 tenglama bilan berilgan. Muvozanat nuqtasidagi narx qanday bo'ladi?",
+      "v": [
+        "16",
+        "92",
+        "120",
+        "68"
+      ],
+      "t": 3,
+      "izoh": "Muvozanatda narxlar tenglashadi: −2q + 100 = 3q + 20. Bundan 80 = 5q va q = 16. Narxni topamiz: p = 3·16 + 20 = 68. Miqdor q ni javob deb yozib yuborish tipik xato. Javob: 68.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-harakat-va-chiziq",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#4a7cd965"
+    },
+    {
+      "q": "(x − 3)² + (y + 5)² = 49 tenglama bilan berilgan aylananing markazi va radiusi qanday?",
+      "v": [
+        "Markaz (−3; 5), radius 7",
+        "Markaz (3; −5), radius 49",
+        "Markaz (3; −5), radius 7",
+        "Markaz (−3; 5), radius 49"
+      ],
+      "t": 2,
+      "izoh": "Standart ko'rinish (x − a)² + (y − b)² = R². Bu yerda x − 3 dan a = 3, y + 5 = y − (−5) dan b = −5. R² = 49, demak R = 7. Qavs ichidagi ishorani aynan ko'chirish tipik xato. Javob: markaz (3; −5), radius 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-markaz-radius-oqish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#e6532a1b"
+    },
+    {
+      "q": "x² + (y − 6)² = 20 tenglama bilan berilgan aylananing radiusi nechaga teng?",
+      "v": [
+        "2√5",
+        "20",
+        "10",
+        "4√5"
+      ],
+      "t": 0,
+      "izoh": "Tenglamaning o'ng tomoni R² ga teng, demak R = √20. Ildizni soddalashtiramiz: √20 = √(4·5) = 2√5. R² ni radius deb yozib qo'yish tipik xato. Javob: 2√5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-markaz-radius-oqish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#e3eda456"
+    },
+    {
+      "q": "Bog'dagi favvora atrofidagi doiraviy maydon (x + 2)² + (y − 7)² = 81 tenglama bilan berilgan. Favvora qayerda va maydon diametri qancha?",
+      "v": [
+        "(2; −7) nuqtada, diametri 18",
+        "(−2; 7) nuqtada, diametri 9",
+        "(−2; 7) nuqtada, diametri 81",
+        "(−2; 7) nuqtada, diametri 18"
+      ],
+      "t": 3,
+      "izoh": "Favvora — aylananing markazi. x + 2 = x − (−2) dan a = −2, y − 7 dan b = 7. R² = 81, demak R = 9 va diametr D = 2·9 = 18. Radiusni diametr deb yozib qo'yish tipik xato. Javob: (−2; 7), diametri 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-markaz-radius-oqish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#290aff95"
+    },
+    {
+      "q": "Aylana tenglamasi (x − 1)² + (y − 1)² = 2 ko'rinishida berilgan. Bu aylana koordinata boshidan o'tadimi?",
+      "v": [
+        "Yo'q, chunki markaz (1; 1) nuqtada joylashgan",
+        "Ha, chunki (0; 0) koordinatalari tenglamani qanoatlantiradi",
+        "Yo'q, chunki radius 2 ga teng",
+        "Ha, chunki markazgacha masofa radiusdan katta"
+      ],
+      "t": 1,
+      "izoh": "Koordinata boshini tenglamaga qo'yamiz: (0 − 1)² + (0 − 1)² = 1 + 1 = 2. O'ng tomon ham 2 ga teng, demak tenglik bajariladi va aylana koordinata boshidan o'tadi. Javob: ha, chunki (0; 0) tenglamani qanoatlantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-markaz-radius-oqish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#e5745dc5"
+    },
+    {
+      "q": "Markazi C(4; −2) nuqtada va radiusi 6 ga teng bo'lgan aylananing tenglamasini yozing.",
+      "v": [
+        "(x + 4)² + (y − 2)² = 36",
+        "(x − 4)² + (y + 2)² = 36",
+        "(x − 4)² + (y + 2)² = 6",
+        "(x − 4)² + (y − 2)² = 36"
+      ],
+      "t": 1,
+      "izoh": "Formula (x − a)² + (y − b)² = R². a = 4, b = −2 bo'lgani uchun y − (−2) = y + 2 yoziladi. R = 6, demak R² = 36. Natijada (x − 4)² + (y + 2)² = 36. O'ng tomonga radiusning o'zini yozish tipik xato. Javob: (x − 4)² + (y + 2)² = 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-tenglamasini-tuzish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#f8ff0e98"
+    },
+    {
+      "q": "Markazi koordinata boshida bo'lgan va A(−3; 4) nuqtadan o'tuvchi aylananing tenglamasi qanday?",
+      "v": [
+        "x² + y² = 5",
+        "(x + 3)² + (y − 4)² = 25",
+        "x² + y² = 625",
+        "x² + y² = 25"
+      ],
+      "t": 3,
+      "izoh": "Radius — markazdan A nuqtagacha bo'lgan masofa: R = √(9 + 16) = √25 = 5. Markaz koordinata boshida bo'lgani uchun tenglama x² + y² = R², ya'ni x² + y² = 25. O'ng tomonga R ni yozish tipik xato. Javob: x² + y² = 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-tenglamasini-tuzish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#b412cbee"
+    },
+    {
+      "q": "Sug'orish qurilmasi M(5; 3) nuqtada o'rnatilgan va u N(9; 6) nuqtagacha suv sepa oladi. Sug'oriladigan doira chegarasining tenglamasi qaysi?",
+      "v": [
+        "(x − 5)² + (y − 3)² = 25",
+        "(x − 5)² + (y − 3)² = 5",
+        "(x − 9)² + (y − 6)² = 25",
+        "(x + 5)² + (y + 3)² = 25"
+      ],
+      "t": 0,
+      "izoh": "Radius MN masofaga teng: R = √((9 − 5)² + (6 − 3)²) = √(16 + 9) = 5. Markaz M(5; 3) bo'lgani uchun tenglama (x − 5)² + (y − 3)² = 25. Markaz o'rniga chekka nuqtani olish tipik xato. Javob: (x − 5)² + (y − 3)² = 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-tenglamasini-tuzish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#906ff250"
+    },
+    {
+      "q": "Aylananing markazi (2; 0) nuqtada bo'lib, u ordinata o'qiga urinadi. Shu aylananing tenglamasi qanday bo'ladi?",
+      "v": [
+        "(x − 2)² + y² = 2",
+        "(x − 2)² + y² = 16",
+        "(x − 2)² + y² = 4",
+        "x² + (y − 2)² = 4"
+      ],
+      "t": 2,
+      "izoh": "Urinish sharti: markazdan ordinata o'qigacha masofa radiusga teng. Bu masofa markaz abscissasining moduli, ya'ni 2. Demak R = 2 va R² = 4. Tenglama (x − 2)² + y² = 4. Javob: (x − 2)² + y² = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylana-tenglamasini-tuzish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#757744dd"
+    },
+    {
+      "q": "x² + y² − 6x + 8y − 11 = 0 tenglama bilan berilgan aylananing markazi va radiusini toping.",
+      "v": [
+        "Markaz (−3; 4), radius 6",
+        "Markaz (3; −4), radius 36",
+        "Markaz (6; −8), radius 6",
+        "Markaz (3; −4), radius 6"
+      ],
+      "t": 3,
+      "izoh": "To'la kvadratlarni ajratamiz: x² − 6x = (x − 3)² − 9 va y² + 8y = (y + 4)² − 16. Tenglama (x − 3)² + (y + 4)² = 11 + 9 + 16 = 36 ko'rinishga keladi. Demak markaz (3; −4), radius 6. Javob: markaz (3; −4), radius 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-korinishdan-markaz-radius",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#94ae621b"
+    },
+    {
+      "q": "x² + y² + 4x − 2y − 20 = 0 tenglama bilan berilgan aylananing radiusi nechaga teng?",
+      "v": [
+        "25",
+        "5",
+        "√20",
+        "√15"
+      ],
+      "t": 1,
+      "izoh": "To'la kvadratga keltiramiz: (x + 2)² − 4 + (y − 1)² − 1 = 20. Demak (x + 2)² + (y − 1)² = 25 va R = 5. Ajratishda hosil bo'lgan sonlarni qo'shishni unutib √20 deb yozish tipik xato. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-korinishdan-markaz-radius",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#6c826851"
+    },
+    {
+      "q": "x² + y² − 10x = 0 tenglama bilan berilgan aylana haqidagi qaysi tasdiq to'g'ri?",
+      "v": [
+        "Markazi (0; 0), radiusi 10 ga teng",
+        "Markazi (−5; 0), radiusi 5 ga teng",
+        "Markazi (5; 0), radiusi 5 va u koordinata boshidan o'tadi",
+        "Markazi (10; 0), radiusi 10 ga teng"
+      ],
+      "t": 2,
+      "izoh": "x² − 10x = (x − 5)² − 25 bo'lgani uchun tenglama (x − 5)² + y² = 25 ko'rinishga keladi. Markaz (5; 0), radius 5. Koordinata boshini qo'ysak 25 + 0 = 25, ya'ni aylana undan o'tadi. Javob: markazi (5; 0), radiusi 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-korinishdan-markaz-radius",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#a8406931"
+    },
+    {
+      "q": "x² + y² + 2x + 2y + 10 = 0 tenglama koordinata tekisligida qanday shaklni ifodalaydi?",
+      "v": [
+        "Hech qanday shakl — bu shartni qanoatlantiruvchi nuqta yo'q",
+        "Markazi (−1; −1), radiusi √8 bo'lgan aylana",
+        "Faqat bitta (−1; −1) nuqta",
+        "Markazi (1; 1), radiusi √10 bo'lgan aylana"
+      ],
+      "t": 0,
+      "izoh": "To'la kvadratlarni ajratamiz: (x + 1)² − 1 + (y + 1)² − 1 + 10 = 0, ya'ni (x + 1)² + (y + 1)² = −8. Ikki kvadratning yig'indisi manfiy bo'la olmaydi, demak bunday nuqta mavjud emas. Javob: hech qanday shakl yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-korinishdan-markaz-radius",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#f2886a83"
+    },
+    {
+      "q": "A(1; 2) nuqta (x − 4)² + (y − 6)² = 36 aylanaga nisbatan qanday joylashgan?",
+      "v": [
+        "Aylananing ichida",
+        "Aylananing o'zida",
+        "Aylanadan tashqarida",
+        "Aylananing markazida"
+      ],
+      "t": 0,
+      "izoh": "Markaz (4; 6), radius R = 6. Markazdan A gacha masofa d = √((4 − 1)² + (6 − 2)²) = √(9 + 16) = 5. 5 < 6 bo'lgani uchun nuqta aylana ichida yotadi. Javob: aylananing ichida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtaning-aylanaga-nisbatan-orni",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#f289459c"
+    },
+    {
+      "q": "Radiolokator koordinata boshida, uning qamrovi x² + y² = 400 doirasi bilan chegaralangan. S(12; 16) nuqtadagi kema qamrovga tushadimi?",
+      "v": [
+        "Yo'q, kema chegaradan tashqarida qolgan",
+        "Ha, kema chegaradan ancha ichkarida",
+        "Ha, kema aynan qamrov chegarasida turibdi",
+        "Aniqlab bo'lmaydi, chunki radius berilmagan"
+      ],
+      "t": 2,
+      "izoh": "Qamrov radiusi R = √400 = 20. Kemagacha masofa d = √(144 + 256) = √400 = 20. d = R bo'lgani uchun kema aynan chegara chizig'ida turibdi. Javob: kema qamrov chegarasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtaning-aylanaga-nisbatan-orni",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#47824530"
+    },
+    {
+      "q": "Quyidagi nuqtalardan qaysi biri x² + y² = 25 aylanada yotmaydi: (5; 0), (2; 5), (3; 4) yoki (−4; 3)?",
+      "v": [
+        "(5; 0)",
+        "(2; 5)",
+        "(3; 4)",
+        "(−4; 3)"
+      ],
+      "t": 1,
+      "izoh": "Har bir nuqta uchun x² + y² ni hisoblaymiz: 25 + 0 = 25, 4 + 25 = 29, 9 + 16 = 25, 16 + 9 = 25. Faqat (2; 5) uchun natija 25 dan farq qiladi. Javob: (2; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtaning-aylanaga-nisbatan-orni",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#1bfe9e4f"
+    },
+    {
+      "q": "(x + 1)² + (y − 3)² = 16 aylananing ichida yotuvchi nuqtani ko'rsating: (3; 3), (−1; 8), (−5; 3) yoki (1; 4)?",
+      "v": [
+        "(3; 3)",
+        "(−1; 8)",
+        "(−5; 3)",
+        "(1; 4)"
+      ],
+      "t": 3,
+      "izoh": "Markaz (−1; 3), radius 4. Masofalar: (3; 3) uchun 4, (−1; 8) uchun 5, (−5; 3) uchun 4, (1; 4) uchun √(4 + 1) = √5 ≈ 2,24. Faqat oxirgisi radiusdan kichik, demak u ichkarida. Javob: (1; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtaning-aylanaga-nisbatan-orni",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#65666ac6"
+    },
+    {
+      "q": "AB kesma aylananing diametri bo'lib, uning uchlari A(1; 2) va B(7; 10) nuqtalarda joylashgan. Aylana markazi qayerda?",
+      "v": [
+        "(6; 8)",
+        "(3; 4)",
+        "(4; 6)",
+        "(8; 12)"
+      ],
+      "t": 2,
+      "izoh": "Diametrning o'rtasi — aylana markazi. Markaz koordinatalari: x = (1 + 7) : 2 = 4, y = (2 + 10) : 2 = 6. Demak markaz (4; 6). Koordinatalar ayirmasini yozib qo'yish tipik xato. Javob: (4; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diametr-uchlari-orqali-aylana",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#1c47977f"
+    },
+    {
+      "q": "Diametrining uchlari M(−3; 1) va N(5; 7) bo'lgan aylananing radiusi nechaga teng?",
+      "v": [
+        "5",
+        "10",
+        "25",
+        "2,5"
+      ],
+      "t": 0,
+      "izoh": "Avval diametr uzunligini topamiz: MN = √((5 + 3)² + (7 − 1)²) = √(64 + 36) = √100 = 10. Radius diametrning yarmi, ya'ni R = 10 : 2 = 5. Diametrni radius deb yozib qo'yish tipik xato. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diametr-uchlari-orqali-aylana",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#7c13a763"
+    },
+    {
+      "q": "K(0; −4) va L(6; 4) nuqtalar aylana diametrining uchlari bo'lsa, shu aylananing tenglamasini yozing.",
+      "v": [
+        "(x − 3)² + y² = 100",
+        "(x − 3)² + y² = 10",
+        "(x + 3)² + y² = 25",
+        "(x − 3)² + y² = 25"
+      ],
+      "t": 3,
+      "izoh": "Markaz — KL ning o'rtasi: x = (0 + 6) : 2 = 3, y = (−4 + 4) : 2 = 0. Diametr KL = √(36 + 64) = 10, demak R = 5 va R² = 25. Tenglama (x − 3)² + y² = 25. Diametr kvadratini yozib qo'yish tipik xato. Javob: (x − 3)² + y² = 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diametr-uchlari-orqali-aylana",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#8d7d81b9"
+    },
+    {
+      "q": "Doiraviy stadionning ikki qarama-qarshi chekka nuqtasi xaritada (2; 5) va (10; 11) koordinatalarga ega. Stadion chegarasining tenglamasi qanday?",
+      "v": [
+        "(x − 6)² + (y − 8)² = 100",
+        "(x − 6)² + (y − 8)² = 25",
+        "(x − 2)² + (y − 5)² = 25",
+        "(x + 6)² + (y + 8)² = 25"
+      ],
+      "t": 1,
+      "izoh": "Qarama-qarshi nuqtalar diametrning uchlari. Markaz: ((2 + 10) : 2; (5 + 11) : 2) = (6; 8). Diametr √(64 + 36) = 10, radius 5, R² = 25. Javob: (x − 6)² + (y − 8)² = 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diametr-uchlari-orqali-aylana",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#9152a43c"
+    },
+    {
+      "q": "x² + y² = 25 aylana va y = x + 1 to'g'ri chiziq nechta umumiy nuqtaga ega bo'ladi?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "Umumiy nuqtasi yo'q",
+        "3 ta"
+      ],
+      "t": 1,
+      "izoh": "Chiziqni x − y + 1 = 0 ko'rinishida yozamiz. Markaz (0; 0) dan masofa d = |1| : √2 ≈ 0,71. Radius 5, ya'ni d < R. Masofa radiusdan kichik bo'lsa chiziq aylanani ikki nuqtada kesadi. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziq-aylana-kesishish-soni",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#32f08f07"
+    },
+    {
+      "q": "Markazi (3; 4) nuqtada bo'lgan va radiusi 5 ga teng aylana abscissa o'qiga nisbatan qanday joylashgan?",
+      "v": [
+        "Urinadi, ya'ni bitta umumiy nuqtasi bor",
+        "Umumiy nuqtaga ega emas",
+        "Aylana abscissa o'qi bilan ustma-ust tushadi",
+        "Ikki nuqtada kesishadi"
+      ],
+      "t": 3,
+      "izoh": "Markazdan abscissa o'qigacha masofa — markaz ordinatasining moduli, ya'ni 4. Radius 5 bo'lgani uchun 4 < 5. Masofa radiusdan kichik, demak aylana o'qni ikki nuqtada kesadi. Javob: ikki nuqtada kesishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziq-aylana-kesishish-soni",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#42acbad5"
+    },
+    {
+      "q": "x² + y² = 9 aylana va y = 3 to'g'ri chiziq o'zaro qanday joylashganini aniqlang.",
+      "v": [
+        "Urinadi, yagona umumiy nuqta (0; 3)",
+        "Ikki nuqtada kesishadi",
+        "Umumiy nuqtasi yo'q",
+        "Urinadi, yagona umumiy nuqta (3; 0)"
+      ],
+      "t": 0,
+      "izoh": "Aylana markazi (0; 0), radius 3. Markazdan y = 3 chiziqqacha masofa 3 ga teng, ya'ni d = R. Bu urinish sharti. Tenglamaga y = 3 ni qo'ysak x² = 0, demak yagona nuqta (0; 3). Javob: urinadi, nuqta (0; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziq-aylana-kesishish-soni",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#9efac884"
+    },
+    {
+      "q": "Yong'in shlangi (x − 6)² + (y − 8)² = 16 doirani sug'ora oladi, uzun devor esa 3x + 4y − 10 = 0 chiziqda. Devor sug'oriladigan zonaga tegadimi?",
+      "v": [
+        "Ha, devor zonani ikki nuqtada kesib o'tadi",
+        "Ha, devor zona chegarasiga urinadi",
+        "Yo'q, masofa 8 birlik bo'lib, radiusdan katta",
+        "Yo'q, chunki devor markazdan 4 birlik uzoqlikda"
+      ],
+      "t": 2,
+      "izoh": "Markaz (6; 8), radius 4. Markazdan devorgacha masofa d = |3·6 + 4·8 − 10| : √(9 + 16) = 40 : 5 = 8. 8 > 4 bo'lgani uchun devor zonaga tegmaydi. Javob: yo'q, masofa 8 birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziq-aylana-kesishish-soni",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#e0bfd10a"
+    },
+    {
+      "q": "x² + y² = 20 aylana bilan y = 2x to'g'ri chiziqning kesishish nuqtalarini toping.",
+      "v": [
+        "(4; 2) va (−4; −2)",
+        "(2; 4) va (2; −4)",
+        "(√20; 0) va (−√20; 0)",
+        "(2; 4) va (−2; −4)"
+      ],
+      "t": 3,
+      "izoh": "y = 2x ni aylana tenglamasiga qo'yamiz: x² + 4x² = 20, ya'ni 5x² = 20 va x² = 4. Bundan x = 2 yoki x = −2. Mos ordinatalar y = 4 va y = −4. Javob: (2; 4) va (−2; −4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishish-nuqtalarini-topish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#a7b4f1cc"
+    },
+    {
+      "q": "x² + y² = 10 aylana va x + y = 4 to'g'ri chiziq qaysi nuqtalarda kesishadi?",
+      "v": [
+        "(2; 2) va (−2; −2)",
+        "(1; 3) va (3; 1)",
+        "(1; 3) va (−1; −3)",
+        "(0; 4) va (4; 0)"
+      ],
+      "t": 1,
+      "izoh": "Chiziqdan y = 4 − x ni topib qo'yamiz: x² + (4 − x)² = 10. Bundan 2x² − 8x + 16 = 10, ya'ni x² − 4x + 3 = 0 va x = 1 yoki x = 3. Mos ordinatalar 3 va 1. Javob: (1; 3) va (3; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishish-nuqtalarini-topish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#c15b98ca"
+    },
+    {
+      "q": "(x − 2)² + y² = 8 aylana ordinata o'qi bilan qaysi nuqtalarda kesishadi?",
+      "v": [
+        "(0; 8) va (0; −8)",
+        "(2; 0) va (−2; 0)",
+        "(0; 2) va (0; −2)",
+        "(0; 2√2) va (0; −2√2)"
+      ],
+      "t": 2,
+      "izoh": "Ordinata o'qida x = 0 bo'ladi. Tenglamaga qo'yamiz: (0 − 2)² + y² = 8, ya'ni 4 + y² = 8 va y² = 4. Bundan y = 2 yoki y = −2. Javob: (0; 2) va (0; −2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishish-nuqtalarini-topish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#3ba2662e"
+    },
+    {
+      "q": "Truba yo'nalishi y = x − 2 chiziqda, quduq muhofaza zonasi esa x² + y² = 10 doirada. Truba zona chegarasini qaysi nuqtalarda kesib o'tadi?",
+      "v": [
+        "(3; 1) va (−1; −3)",
+        "(1; 3) va (−3; −1)",
+        "(3; 1) va (−1; 3)",
+        "(−3; −5) va (1; −1)"
+      ],
+      "t": 0,
+      "izoh": "y = x − 2 ni doira tenglamasiga qo'yamiz: x² + (x − 2)² = 10. Bundan 2x² − 4x + 4 = 10, ya'ni x² − 2x − 3 = 0 va x = 3 yoki x = −1. Mos ordinatalar 1 va −3. Javob: (3; 1) va (−1; −3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesishish-nuqtalarini-topish",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#1105e685"
+    },
+    {
+      "q": "x² + y² = 25 aylanaga uning A(3; 4) nuqtasida o'tkazilgan urinmaning tenglamasini toping.",
+      "v": [
+        "3x + 4y = 25",
+        "4x + 3y = 25",
+        "3x + 4y = 5",
+        "3x − 4y = 25"
+      ],
+      "t": 0,
+      "izoh": "Urinish nuqtasi (x₀; y₀) bo'lganda urinma tenglamasi x₀x + y₀y = R² ko'rinishida yoziladi. Bu yerda x₀ = 3, y₀ = 4, R² = 25. Demak 3x + 4y = 25. Koordinatalarni almashtirib yozish tipik xato. Javob: 3x + 4y = 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylanaga-urinma-tenglamasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#32dc7aee"
+    },
+    {
+      "q": "Markazi koordinata boshida bo'lgan aylananing M(0; −6) nuqtasidagi urinmasi qaysi chiziq bo'ladi?",
+      "v": [
+        "x = −6",
+        "y = 6",
+        "y = −6",
+        "y = x − 6"
+      ],
+      "t": 2,
+      "izoh": "Urinma urinish nuqtasidagi radiusga perpendikulyar. Radius OM ordinata o'qi bo'ylab yo'nalgan, demak urinma unga perpendikulyar gorizontal chiziq. U M nuqtadan o'tgani uchun tenglamasi y = −6. Javob: y = −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylanaga-urinma-tenglamasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#f36b2c7b"
+    },
+    {
+      "q": "(x − 1)² + (y − 2)² = 25 aylanaga uning P(4; 6) nuqtasida urinma o'tkazildi. Urinmaning burchak koeffitsienti nechaga teng?",
+      "v": [
+        "4/3",
+        "−3/4",
+        "3/4",
+        "−4/3"
+      ],
+      "t": 1,
+      "izoh": "Markaz (1; 2), urinish nuqtasi P(4; 6). Radiusning burchak koeffitsienti (6 − 2)/(4 − 1) = 4/3. Urinma radiusga perpendikulyar, demak uning koeffitsienti −3/4. Ishorani tushirib qoldirish tipik xato. Javob: −3/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylanaga-urinma-tenglamasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#66960d8f"
+    },
+    {
+      "q": "Aylananing markazi C(2; 3) nuqtada. Unga T(6; 6) nuqtada o'tkazilgan urinmaning tenglamasi qaysi?",
+      "v": [
+        "3x − 4y + 6 = 0",
+        "4x + 3y − 17 = 0",
+        "3x + 4y − 42 = 0",
+        "4x + 3y − 42 = 0"
+      ],
+      "t": 3,
+      "izoh": "CT radiusining burchak koeffitsienti (6 − 3)/(6 − 2) = 3/4, demak urinma uchun k = −4/3. T nuqtadan o'tuvchi chiziq: y − 6 = −(4/3)(x − 6). Maxrajdan qutulamiz: 3y − 18 = −4x + 24, ya'ni 4x + 3y − 42 = 0. Javob: 4x + 3y − 42 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylanaga-urinma-tenglamasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#0a7f695d"
+    },
+    {
+      "q": "y = x + c to'g'ri chiziq x² + y² = 8 aylanaga urinishi uchun c qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "c = 2 yoki c = −2",
+        "c = 8",
+        "c = 4 yoki c = −4",
+        "c = 2√2"
+      ],
+      "t": 2,
+      "izoh": "Chiziqni x − y + c = 0 deb yozamiz. Urinish sharti: markaz (0; 0) dan masofa radiusga teng, ya'ni |c| : √2 = √8 = 2√2. Bundan |c| = 2√2·√2 = 4, demak c = 4 yoki c = −4. Javob: c = 4 yoki c = −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-shartidan-parametr",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#521d363c"
+    },
+    {
+      "q": "Markazi koordinata boshida bo'lgan aylana 3x + 4y − 20 = 0 chiziqqa urinadi. Shu aylananing radiusi nechaga teng?",
+      "v": [
+        "4",
+        "20",
+        "5",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Urinish sharti bo'yicha radius markazdan chiziqqacha masofaga teng. R = |3·0 + 4·0 − 20| : √(9 + 16) = 20 : 5 = 4. Maxrajga bo'lishni unutib 20 deb yozish tipik xato. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-shartidan-parametr",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#15473951"
+    },
+    {
+      "q": "Markazi (1; −2) nuqtada bo'lgan aylana y = 2 to'g'ri chiziqqa urinadi. Aylananing tenglamasi qanday bo'ladi?",
+      "v": [
+        "(x − 1)² + (y + 2)² = 4",
+        "(x − 1)² + (y − 2)² = 16",
+        "(x + 1)² + (y − 2)² = 16",
+        "(x − 1)² + (y + 2)² = 16"
+      ],
+      "t": 3,
+      "izoh": "Markazdan gorizontal y = 2 chiziqqacha masofa ordinatalar ayirmasining moduli: |2 − (−2)| = 4. Urinish sharti bo'yicha R = 4, demak R² = 16. Tenglama (x − 1)² + (y + 2)² = 16. Javob: (x − 1)² + (y + 2)² = 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-shartidan-parametr",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#c9e53b37"
+    },
+    {
+      "q": "Doiraviy hovuz markazi (4; 3) nuqtada va radiusi 2 ga teng. Uning chetiga urinib o'tuvchi yo'l 4x − 3y + k = 0 chiziqda bo'lsa, k qanday?",
+      "v": [
+        "k = 3 yoki k = 17",
+        "k = 3 yoki k = −17",
+        "k = 10 yoki k = −10",
+        "k = −7"
+      ],
+      "t": 1,
+      "izoh": "Urinish sharti: markazdan chiziqqacha masofa radiusga teng. |4·4 − 3·3 + k| : √(16 + 9) = 2, ya'ni |7 + k| = 10. Bundan 7 + k = 10 yoki 7 + k = −10, demak k = 3 yoki k = −17. Javob: k = 3 yoki k = −17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-shartidan-parametr",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#3182919a"
+    },
+    {
+      "q": "Mobil aloqa minorasi koordinata boshida joylashgan va u 15 km radiusda signal tarqatadi. Signal chegarasining tenglamasi qaysi?",
+      "v": [
+        "x² + y² = 15",
+        "x² + y² = 225",
+        "x² + y² = 30",
+        "x + y = 15"
+      ],
+      "t": 1,
+      "izoh": "Markazi koordinata boshida bo'lgan aylana tenglamasi x² + y² = R². Bu yerda R = 15, demak R² = 225. Tenglama x² + y² = 225 bo'ladi. O'ng tomonga radiusning o'zini yozish tipik xato. Javob: x² + y² = 225.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-aylana-qamrov-zonasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#db35d3ef"
+    },
+    {
+      "q": "Qishloq minoradan (8; 15) koordinatali nuqtada joylashgan. Minora qamrovining radiusi 15 km bo'lsa, qishloqqa signal yetadimi?",
+      "v": [
+        "Ha, masofa aynan 15 km ga teng",
+        "Ha, masofa 11,5 km, ya'ni radiusdan kichik",
+        "Yo'q, masofa 23 km ni tashkil qiladi",
+        "Yo'q, masofa 17 km bo'lib, qamrov radiusidan katta"
+      ],
+      "t": 3,
+      "izoh": "Minoradan qishloqqacha masofa d = √(8² + 15²) = √(64 + 225) = √289 = 17 km. Bu qiymat 15 km radiusdan katta, demak signal yetmaydi. Koordinatalarni qo'shib 23 deb hisoblash tipik xato. Javob: yo'q, masofa 17 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-aylana-qamrov-zonasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#5963e023"
+    },
+    {
+      "q": "Bog'dagi aylanma yo'lakning tenglamasi (x − 6)² + (y − 8)² = 100 ko'rinishida. Yo'lak koordinata boshidan o'tadimi?",
+      "v": [
+        "Ha, koordinata boshi aynan yo'lak ustida yotadi",
+        "Yo'q, koordinata boshi yo'lak ichida qoladi",
+        "Yo'q, koordinata boshi yo'lakdan tashqarida",
+        "Yo'q, chunki markaz koordinata boshiga to'g'ri kelmaydi"
+      ],
+      "t": 0,
+      "izoh": "Markaz (6; 8), radius √100 = 10. Markazdan koordinata boshigacha masofa √(36 + 64) = 10. Masofa radiusga teng bo'lgani uchun koordinata boshi aynan yo'lak chizig'ida yotadi. Javob: ha, yo'lak undan o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aylana-qamrov-zonasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#cb062a25"
+    },
+    {
+      "q": "Suv sepgich (5; 5) nuqtada turibdi va 12 metr radiusda suv sepadi. Uning eng chekka nuqtasi x = 20 chiziqdagi devordan necha metr berida qoladi?",
+      "v": [
+        "8 m",
+        "15 m",
+        "3 m",
+        "12 m"
+      ],
+      "t": 2,
+      "izoh": "Sepgichdan devorgacha masofa markaz abscissasi bilan devor orasidagi farq: 20 − 5 = 15 m. Suv 12 m gacha yetadi, demak devorgacha 15 − 12 = 3 m masofa quruq qoladi. Javob: 3 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-aylana-qamrov-zonasi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#d416026b"
+    },
+    {
+      "q": "Dehqonning yo'li y = x chiziq bo'ylab o'tadi, ekin zonasi esa (x − 4)² + (y − 4)² = 4 doira bilan chegaralangan. Yo'l zonani kesib o'tadimi?",
+      "v": [
+        "Yo'q, yo'l zonaga umuman tegmaydi",
+        "Ha, lekin yo'l zonaga faqat urinadi",
+        "Yo'q, yo'l zonadan 4 birlik uzoqlikda o'tadi",
+        "Ha, yo'l markazdan o'tadi va zonani ikki nuqtada kesadi"
+      ],
+      "t": 3,
+      "izoh": "Zona markazi (4; 4) va bu nuqta y = x chiziqda yotadi, chunki abscissa bilan ordinata teng. Demak masofa nolga teng va u radius 2 dan kichik. Chiziq doirani ikki nuqtada kesib o'tadi. Javob: ha, markazdan o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-zona-va-marshrut",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#633fc553"
+    },
+    {
+      "q": "Quvur trassasi 3x + 4y − 50 = 0 chiziqda, muhofaza zonasi esa markazi (2; 1) va radiusi 6 bo'lgan doirada. Trassa zona chegarasidan qancha uzoqlikda o'tadi?",
+      "v": [
+        "8 birlik",
+        "2 birlik",
+        "14 birlik",
+        "6 birlik"
+      ],
+      "t": 1,
+      "izoh": "Markazdan trassagacha masofa d = |3·2 + 4·1 − 50| : √(9 + 16) = 40 : 5 = 8 birlik. Zona chegarasi markazdan 6 birlikda, demak trassa chegaradan 8 − 6 = 2 birlik uzoqlikda o'tadi. Javob: 2 birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-zona-va-marshrut",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#5839c1fa"
+    },
+    {
+      "q": "Samolyot yo'nalishi y = −x + 14 chiziqda, taqiqlangan hudud esa markazi (2; 2) va radiusi 5 bo'lgan doirada. Samolyot hududga kiradimi?",
+      "v": [
+        "Ha, chiziq hududni ikki nuqtada kesib o'tadi",
+        "Ha, chiziq hudud chegarasiga urinadi",
+        "Yo'q, masofa 5√2 ≈ 7,07 birlik bo'lib, radiusdan katta",
+        "Yo'q, chunki masofa 10 birlikni tashkil qiladi"
+      ],
+      "t": 2,
+      "izoh": "Chiziqni x + y − 14 = 0 deb yozamiz. Markazdan masofa d = |2 + 2 − 14| : √(1 + 1) = 10 : √2 = 5√2 ≈ 7,07. Bu qiymat radius 5 dan katta, demak samolyot hududga kirmaydi. Javob: yo'q, masofa 5√2 birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-zona-va-marshrut",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#284811b5"
+    },
+    {
+      "q": "Ikki tuman chegarasi y = 2x − 5 chiziq bo'ylab o'tadi. Markazi (1; 3) va radiusi √5 bo'lgan ko'l shu chegaraga nisbatan qanday joylashgan?",
+      "v": [
+        "Ko'l chegaraga tegmaydi, u butunlay bir tomonda qoladi",
+        "Chegara ko'lni ikki qismga bo'ladi",
+        "Chegara ko'l chetiga urinadi",
+        "Ko'l markazi aynan chegarada yotadi"
+      ],
+      "t": 0,
+      "izoh": "Chegarani 2x − y − 5 = 0 deb yozamiz. Markazdan masofa d = |2·1 − 3 − 5| : √(4 + 1) = 6 : √5 ≈ 2,68. Radius √5 ≈ 2,24 bo'lib, d > R. Demak chegara ko'lga tegmaydi. Javob: ko'l butunlay bir tomonda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-zona-va-marshrut",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#5c0fe5dd"
+    },
+    {
+      "q": "x² + y² = 25 aylanani y = 3 to'g'ri chiziq kesib o'tadi. Hosil bo'lgan vatarning uzunligi nechaga teng?",
+      "v": [
+        "8",
+        "4",
+        "10",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Tenglamaga y = 3 ni qo'yamiz: x² + 9 = 25, ya'ni x² = 16 va x = ±4. Kesishish nuqtalari (4; 3) va (−4; 3), ular orasidagi masofa 4 + 4 = 8. Yarim vatarni javob deb yozish tipik xato. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-vatar-uzunligi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#d0b91c9f"
+    },
+    {
+      "q": "Markazdan 5 birlik uzoqlikda o'tuvchi to'g'ri chiziq radiusi 13 bo'lgan aylanani kesadi. Hosil bo'lgan vatar uzunligini toping.",
+      "v": [
+        "12",
+        "18",
+        "24",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Radius, markazdan vatargacha masofa va yarim vatar to'g'ri burchakli uchburchak hosil qiladi. Yarim vatar √(13² − 5²) = √(169 − 25) = 12. To'liq vatar 2·12 = 24. Ikkiga ko'paytirishni unutish tipik xato. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-vatar-uzunligi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#0f03e908"
+    },
+    {
+      "q": "Doiraviy hovuzning radiusi 10 m, uning ustidan markazdan 6 m uzoqlikda to'g'ri ko'prik o'tkazildi. Ko'prikning suv ustidagi qismi necha metr?",
+      "v": [
+        "8 m",
+        "16 m",
+        "20 m",
+        "12 m"
+      ],
+      "t": 1,
+      "izoh": "Ko'prikning suv ustidagi qismi — vatar. Yarim vatar √(10² − 6²) = √(100 − 36) = 8 m. To'liq uzunlik 2·8 = 16 m. Yarim vatarni javob deb olish tipik xato. Javob: 16 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-vatar-uzunligi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#fca7b03a"
+    },
+    {
+      "q": "(x − 3)² + (y + 4)² = 25 aylana abscissa o'qi bilan kesishib, qanday uzunlikdagi vatar hosil qiladi?",
+      "v": [
+        "3",
+        "10",
+        "8",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Abscissa o'qida y = 0, demak (x − 3)² + 16 = 25 va (x − 3)² = 9. Bundan x = 6 yoki x = 0. Kesishish nuqtalari (6; 0) va (0; 0), vatar uzunligi 6. Yarim vatarni (3) javob deb yozib qo'yish tipik xato; markazdan Ox o'qigacha masofa esa |−4| = 4 ga teng. Masofani xato ravishda 3 deb olsa, 2·√(25 − 9) = 8 chiqadi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylana-vatar-uzunligi",
+      "id": "matematika_vekt_m02-togri-chiziq-va-aylana-tenglamasi#33f3b567"
+    }
+  ]
+}

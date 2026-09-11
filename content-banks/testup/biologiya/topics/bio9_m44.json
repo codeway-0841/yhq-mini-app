@@ -1,0 +1,621 @@
+{
+  "nom": "Biologiya-9, 44-§. Postembrional rivojlanish, 119-bet",
+  "bolim": "VI BOB. Organizmlarning kopayishi va individual rivojlanishi",
+  "savollar": [
+    {
+      "q": "Postembrional rivojlanish davri qachon boshlanadi?",
+      "v": [
+        "Embrionning tuxumdan chiqishi yoki tugʻilishi bilan",
+        "Zigota hosil boʻlishi bilan",
+        "Gastrulyatsiya tugashi bilan",
+        "Jinsiy balogʻatga yetish bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, embrionning tuxumdan chiqishi yoki tugʻilishi bilan embrional rivojlanish davri tugallanadi va postembrional rivojlanish davri boshlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m44#518c4848"
+    },
+    {
+      "q": "Postembrional rivojlanish qanday xillarga ajratiladi?",
+      "v": [
+        "Bevosita (toʻgʻri) va bilvosita (metamorfozli)",
+        "Faqat bevosita",
+        "Embrional va postembrional",
+        "Toʻliq va notoʻliq metamorfoz"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, postembrional rivojlanish bevosita (toʻgʻri) yoki bilvosita (notoʻgʻri, metamorfozli) boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m44#efdabc91"
+    },
+    {
+      "q": "Bevosita rivojlanishning boshqacha nomi qanday?",
+      "v": [
+        "Toʻgʻri rivojlanish",
+        "Metamorfozli rivojlanish",
+        "Notoʻgʻri rivojlanish",
+        "Lichinkali rivojlanish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, bevosita rivojlanish toʻgʻri rivojlanish deb ham ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m44#3ddb4a98"
+    },
+    {
+      "q": "Bilvosita rivojlanishning boshqacha nomlari qaysilar?",
+      "v": [
+        "Notoʻgʻri, metamorfozli",
+        "Toʻgʻri, bevosita",
+        "Embrional, dastlabki",
+        "Gomologik, analogik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, bilvosita rivojlanish notoʻgʻri, metamorfozli deb ham ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m44#e3d35167"
+    },
+    {
+      "q": "Quyidagi jonzotlarning qaysi guruhi bevosita rivojlanishga misol boʻladi?",
+      "v": [
+        "Sudralib yuruvchilar, qushlar, sut emizuvchilar",
+        "Baqalar, salamandralar, tritonlar",
+        "Kapalaklar, qoʻngʻizlar, pashshalar",
+        "Assidiya, itbaliq, ipak qurti"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, bevosita rivojlanish sudralib yuruvchilar, qushlar, sut emizuvchilarda kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#1f8b0269"
+    },
+    {
+      "q": "Bevosita rivojlanishda tuxumdan chiqqan yoki tugʻilgan embrion qanday boʻladi?",
+      "v": [
+        "Voyaga yetgan organizmga oʻxshaydi, faqat kichik boʻladi",
+        "Voyaga yetgan organizmdan keskin farq qiladi",
+        "Xorda va jabra yorigʻiga ega qurt boʻladi",
+        "Metamorfozdan oʻtadigan lichinka boʻladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, bevosita rivojlanishda tuxumdan chiqqan yoki tugʻilgan embrion voyaga yetgan organizmlarga oʻxshaydi, faqat kichik boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#938c4632"
+    },
+    {
+      "q": "Bevosita (toʻgʻri) postembrional rivojlanishda embrion nima qiladi?",
+      "v": [
+        "Faqat oʻsadi va jinsiy balogʻatga yetadi",
+        "Metamorfozga uchraydi",
+        "Organlari qurt organlariga almashinadi",
+        "Fagositlar hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, bevosita postembrional rivojlanishda embrion faqat oʻsadi va jinsiy balogʻatga yetadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#0589c251"
+    },
+    {
+      "q": "Bilvosita (metamorfoz) rivojlanishda tuxumdan nima chiqadi?",
+      "v": [
+        "Qurt (lichinka)",
+        "Voyaga yetgan kichik organizm",
+        "Zigota",
+        "Gʻumbak"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, bilvosita (metamorfoz) rivojlanishda tuxumdan qurt (lichinka) chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m44#1ea66400"
+    },
+    {
+      "q": "Bilvosita rivojlanishda qurt voyaga yetgan organizmga nisbatan qanday?",
+      "v": [
+        "Tuzilishi jihatidan keskin farq qiladi",
+        "Toʻliq oʻxshaydi, faqat kichik",
+        "Faqat rangi bilan farqlanadi",
+        "Hech qanday farqi yoʻq"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, bilvosita rivojlanishda qurt voyaga yetgan organizmdan tuzilishi jihatidan keskin farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#91672711"
+    },
+    {
+      "q": "Notoʻgʻri (metamorfozli) rivojlanishda qurt organlari oʻrnida nima hosil boʻladi?",
+      "v": [
+        "Voyaga yetgan organizmga xos organlar",
+        "Yangi lichinka organlari",
+        "Embrional varaqalar",
+        "Zaxira ozuqa organlari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, notoʻgʻri rivojlanishda lichinka organlari oʻrnida voyaga yetgan organizmga xos organlar hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#178f94aa"
+    },
+    {
+      "q": "Assidiya qaysi tip va kenja tipga mansub?",
+      "v": [
+        "Xordalilar tipi, lichinkaxordalilar kenja tipi",
+        "Bugʻimoyoqlilar tipi, hasharotlar kenja tipi",
+        "Chuvalchanglar tipi, halqali kenja tipi",
+        "Sut emizuvchilar tipi, plasentalilar kenja tipi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, assidiya xordalilar tipi, lichinkaxordalilar kenja tipiga mansub.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m44#e265aeb7"
+    },
+    {
+      "q": "Assidiya lichinkasi xordali hayvonlarning qaysi asosiy belgilarini oʻzida mujassam qiladi?",
+      "v": [
+        "Xorda, nerv nayi, halqumida jabra yoriqlari",
+        "Oʻpka, yurak, buyrak",
+        "Qanot, tuk, tumshuq",
+        "Kloaka, jun, tirnoq"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, assidiya lichinkasi xorda, nerv nayi va halqumida jabra yoriqlarini oʻzida mujassam qilgan boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m44#573ad399"
+    },
+    {
+      "q": "Assidiya lichinkasi metamorfozdan oldin qanday hayot kechiradi?",
+      "v": [
+        "Suvda erkin suzib yuradi",
+        "Suv tubiga oʻrnashib oʻtroq yashaydi",
+        "Quruqlikda oʻrmalab yuradi",
+        "Parazit sifatida yashaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, assidiya lichinkasi suvda erkin suzib yuradi, keyin suv tubidagi qattiqroq narsaga yopishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#c181625d"
+    },
+    {
+      "q": "Assidiya lichinkasi metamorfozga qanday oʻtadi?",
+      "v": [
+        "Suv tubidagi qattiq narsaga yopishib olib",
+        "Quruqlikka chiqib",
+        "Boshqa organizmga parazit boʻlib",
+        "Gʻumbakka aylanib"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, assidiya lichinkasi suv tubidagi qattiqroq narsaga yopishib olib, metamorfozga uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#da2a0527"
+    },
+    {
+      "q": "Assidiya metamorfozida lichinkaning qaysi organlari yoʻqolib ketadi?",
+      "v": [
+        "Dumi, xordasi, muskullari",
+        "Oʻpkasi, yuragi, buyragi",
+        "Qanotlari, oyoqlari",
+        "Halqumi, ichagi, jigari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, assidiya metamorfozida uning alohida dumi, xordasi, muskullari yoʻqolib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#f7333190"
+    },
+    {
+      "q": "Assidiya metamorfozida nerv nayi bilan nima sodir boʻladi?",
+      "v": [
+        "Hujayralarga boʻlinib fagositlarni hosil qiladi",
+        "Oʻsib bosh miyaga aylanadi",
+        "Xordaga aylanadi",
+        "Butunlay yoʻqolib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, assidiya metamorfozida nerv nayi hujayralarga boʻlinib fagositlarni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m44#9f6a551b"
+    },
+    {
+      "q": "Assidiya metamorfozida nerv nayidan qaysi hujayralar toʻplami saqlanib qoladi?",
+      "v": [
+        "Nerv tuguni hosil qilishda ishtirok etadigan ayrim hujayralar",
+        "Fagositlar toʻplami",
+        "Muskul hujayralari",
+        "Jabra yorigʻi hujayralari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, lichinka nerv nayidan faqat nerv tuguni hosil qilishda ishtirok etadigan ayrim hujayralar toʻplamigina qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m44#76a4d79f"
+    },
+    {
+      "q": "Voyaga yetgan assidiyaning tuzilishi qanday?",
+      "v": [
+        "Umuman xordali hayvonlar tuzilishiga oʻxshamaydi",
+        "Baliqlar tuzilishiga oʻxshaydi",
+        "Hasharotlar tuzilishiga oʻxshaydi",
+        "Lichinkasiga toʻliq oʻxshaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, voyaga yetgan assidiyaning tuzilishi umuman xordali hayvonlar tuzilishiga oʻxshamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#adf2594c"
+    },
+    {
+      "q": "Voyaga yetgan assidiya qanday yashaydi?",
+      "v": [
+        "Oʻtroq holda, koloniya hosil qilib yashaydi",
+        "Suvda erkin suzib yuradi",
+        "Quruqlikda oʻrmalab yuradi",
+        "Boshqa hayvonlarda parazit boʻlib yashaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, voyaga yetgan assidiya oʻtroq holatga oʻtib, koloniya hosil qilgan hayvon boʻlib yashaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#37650ab2"
+    },
+    {
+      "q": "Assidiya qurtining (lichinkasining) tuzilishi bu hayvonning kelib chiqishi haqida nimadan dalolat beradi?",
+      "v": [
+        "Erkin hayot kechiradigan xordalilardan kelib chiqqanligidan",
+        "Halqali chuvalchanglardan kelib chiqqanligidan",
+        "Bugʻimoyoqlilardan kelib chiqqanligidan",
+        "Sut emizuvchilardan kelib chiqqanligidan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, assidiya qurtining tuzilishi bu hayvonning kelib chiqishi erkin hayot kechiradigan xordalilar ekanligidan dalolat beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m44#9ea847f1"
+    },
+    {
+      "q": "Assidiyada metamorfoz yuzaga kelishining asosiy sababi nima?",
+      "v": [
+        "Oʻtroq holatda hayot kechirishga oʻtish",
+        "Suv haroratining oʻzgarishi",
+        "Ozuqa yetishmasligi",
+        "Jinsiy balogʻatga yetish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, assidiyadagi metamorfoz yuzaga kelishining asosiy sababi oʻtroq holatda hayot kechirishga oʻtish bilan bogʻliq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#bb6f66cd"
+    },
+    {
+      "q": "Amfibiyalarning lichinkalik bosqichi nima deb ataladi?",
+      "v": [
+        "Itbaliq",
+        "Assidiya",
+        "Gʻumbak",
+        "Qurt"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, amfibiyalarning lichinkalik bosqichi itbaliqdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m44#487c5451"
+    },
+    {
+      "q": "Itbaliq uchun qaysi belgilar xos?",
+      "v": [
+        "Jabra yoriqlari, yon chiziq organi, ikki kamerali yurak, bitta qon aylanish doirasi",
+        "Oʻpka, uch kamerali yurak, ikkita qon aylanish doirasi",
+        "Ikkita oʻpka, toʻrt kamerali yurak",
+        "Tuk, qanot, tumshuq"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, itbaliq uchun jabra yoriqlari, yon chiziq organi, ikki kamerali yurak, bitta qon aylanish doirasi xos.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m44#326b9de2"
+    },
+    {
+      "q": "Itbaliq metamorfozida dum va yon chiziq organlari qaysi gormon taʼsirida yoʻqoladi?",
+      "v": [
+        "Qalqonsimon bezning tiroksin gormoni",
+        "Buyrakusti bezining adrenalin gormoni",
+        "Oshqozon osti bezining insulin gormoni",
+        "Gipofizning oʻsish gormoni"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, metamorfoz jarayonida qalqonsimon bezning tiroksin gormoni taʼsirida itbaliqda dum va yon chiziq organlari yoʻqoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m44#e9b6cd36"
+    },
+    {
+      "q": "Itbaliq metamorfozida qaysi organlar rivojlanadi?",
+      "v": [
+        "Oʻpka va ikkita qon aylanish doirasi",
+        "Jabra va bitta qon aylanish doirasi",
+        "Yon chiziq organi va dum",
+        "Xorda va nerv nayi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, metamorfozda itbaliqda oʻpka va ikkita qon aylanish doirasi rivojlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#5c057e21"
+    },
+    {
+      "q": "Itbaliq qaysi belgilari bilan baliqlarga oʻxshab ketadi?",
+      "v": [
+        "Yon chiziq, yurak tuzilishi, qon aylanish sistemasi, jabra yoriqlari",
+        "Oʻpka, toʻrt kamerali yurak, quruq teri",
+        "Tuk, sut bezi, tirnoq",
+        "Qanot, tumshuq, tuxum"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, itbaliq yon chiziq, yurak tuzilishi, qon aylanish sistemasi, jabra yoriqlari bilan baliqlarga oʻxshab ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#5c3f2e9a"
+    },
+    {
+      "q": "Hasharotlarning rivojlanishi qaysi rivojlanish turiga misol boʻladi?",
+      "v": [
+        "Bilvosita rivojlanish (metamorfoz)",
+        "Bevosita rivojlanish",
+        "Embrional induksiya",
+        "Toʻgʻridan-toʻgʻri rivojlanish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, bilvosita rivojlanish-metamorfozga hasharotlarning rivojlanishi ham misol boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m44#70fa7343"
+    },
+    {
+      "q": "Qoʻngʻiz va kapalaklarning qurtlari voyaga yetgan organizmlardan nimasi bilan keskin farq qiladi?",
+      "v": [
+        "Tashqi tuzilishi, hayot tarzi va yashash muhiti bilan",
+        "Faqat rangi bilan",
+        "Faqat oʻlchami bilan",
+        "Jinsiy tuzilishi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, qoʻngʻiz, kapalaklarning qurtlari tashqi tuzilishidan, hayot tarzi va yashash muhiti bilan voyaga yetgan organizmlardan keskin farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#121f8480"
+    },
+    {
+      "q": "Hasharotlarning (qoʻngʻiz, kapalak) ajdodi qaysi hayvonlarga oʻxshab ketadi?",
+      "v": [
+        "Halqali chuvalchanglarga",
+        "Xordalilarga",
+        "Molluskalarga",
+        "Baliqlarga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, qoʻngʻiz va kapalaklarning ajdodi halqali chuvalchanglarga oʻxshab ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m44#dea860b6"
+    },
+    {
+      "q": "Metamorfoz nima bilan bogʻliq?",
+      "v": [
+        "Hayot tarzi va yashash muhitini almashinishi bilan",
+        "Faqat harorat oʻzgarishi bilan",
+        "Faqat ozuqa turi bilan",
+        "Faqat yosh oʻzgarishi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, metamorfoz hayot tarzi va yashash muhitini almashinishi bilan bogʻliqdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#1fc94e9d"
+    },
+    {
+      "q": "Bilvosita rivojlanishning biologik ahamiyati nimadan iborat?",
+      "v": [
+        "Lichinka va voyaga yetgan individlar oʻrtasida yashash joyi va oziq uchun raqobat kuzatilmaydi",
+        "Barcha individlar bir xil ozuqa bilan oziqlanadi",
+        "Turning koʻpayish tezligi kamayadi",
+        "Organizmlar tezroq nobud boʻladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, bilvosita rivojlanishda bir turning lichinkalari va voyaga yetgan individlari har xil sharoitda yashagani uchun ular oʻrtasida yashash joyi va oziq uchun raqobat kuzatilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m44#d4646f12"
+    },
+    {
+      "q": "Oʻtroq yoki parazit holda yashovchi organizmlarning qurtlari turning tarqalishiga qanday yordam beradi?",
+      "v": [
+        "Erkin harakat qilib, turning keng tarqalishiga yordam beradi",
+        "Oʻtroq holda qolib, tarqalmaydi",
+        "Faqat bir joyda koʻpayadi",
+        "Boshqa turlarni siqib chiqaradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, oʻtroq yoki parazit holda yashashga moslashgan organizmlarning qurtlari erkin harakat qilib, turning keng tarqalishiga yordam beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#37cb7d47"
+    },
+    {
+      "q": "Kapalakning toʻla oʻzgarish bilan rivojlanish (metamorfoz) bosqichlari qaysi tartibda kechadi?",
+      "v": [
+        "Tuxum, qurt, gʻumbak, kapalak",
+        "Tuxum, gʻumbak, qurt, kapalak",
+        "Qurt, tuxum, kapalak, gʻumbak",
+        "Gʻumbak, tuxum, qurt, kapalak"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, kapalakning toʻla oʻzgarish bilan rivojlanishida tuxumdan qurt chiqadi, qurt gʻumbak hosil qiladi, gʻumbakdan kapalak chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#bcc08ebb"
+    },
+    {
+      "q": "Tut ipak qurtining qurtlik davri necha kun davom etadi?",
+      "v": [
+        "20-24 kun",
+        "5-10 kun",
+        "2-3 oy",
+        "1 yil"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, tut ipak qurtining qurtlik davri 20-24 kun davom etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#59e0d76d"
+    },
+    {
+      "q": "Voyaga yetgan tut ipak kapalagi necha kun yashaydi?",
+      "v": [
+        "5-10 kun",
+        "20-24 kun",
+        "2-3 oy",
+        "bir necha yil"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, voyaga yetgan tut ipak kapalagi 5-10 kun yashaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#e4214f06"
+    },
+    {
+      "q": "Baqaning lichinkasi itbaliq necha oyda baqaga aylanadi?",
+      "v": [
+        "2-3 oyda",
+        "20-24 kunda",
+        "5-10 kunda",
+        "bir necha yilda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, baqaning lichinkasi itbaliq 2-3 oyda baqaga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#a5d56fbc"
+    },
+    {
+      "q": "Voyaga yetgan baqa qancha yashaydi?",
+      "v": [
+        "Bir necha yil",
+        "5-10 kun",
+        "20-24 kun",
+        "2-3 oy"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, voyaga yetgan baqa bir necha yil yashaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m44#8c79e410"
+    },
+    {
+      "q": "Postembrional rivojlanishda oʻsish qanday tavsiflanadi?",
+      "v": [
+        "Butun umr davomida yoki maʼlum muddat bilan chegaralangan boʻladi",
+        "Faqat embrional davrda kechadi",
+        "Faqat jinsiy balogʻatdan keyin boshlanadi",
+        "Hech qachon toʻxtamaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, postembrional rivojlanish oʻsish bilan davom etadi; oʻsish butun umr davomida hamda maʼlum muddat bilan chegaralangan boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#37ff88fd"
+    },
+    {
+      "q": "Qaysi organizmlarda oʻsish butun umr davomida kuzatiladi?",
+      "v": [
+        "Oʻsimliklar, tasmasimon chuvalchanglar, ayrim molluskalar va baliqlar",
+        "Qushlar, sut emizuvchilar, sudralib yuruvchilar",
+        "Hasharotlar, oʻrgimchaklar",
+        "Faqat odamlarda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, butun umri davomida oʻsish oʻsimliklarda, tasmasimon chuvalchanglar, ayrim molluskalar va baliqlarda kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m44#fc074ec4"
+    },
+    {
+      "q": "Koʻpchilik hayvonlar qachon oʻsishdan toʻxtaydi?",
+      "v": [
+        "Jinsiy balogʻatga yetgandan soʻng",
+        "Tugʻilgan zahoti",
+        "Umrining oxirida",
+        "Metamorfozdan oldin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, koʻpchilik hayvonlar jinsiy balogʻatga yetgandan soʻng oʻsishdan toʻxtaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m44#d6528101"
+    },
+    {
+      "q": "Odam necha yoshda oʻsishdan toʻxtaydi?",
+      "v": [
+        "20-25 yoshda",
+        "10-15 yoshda",
+        "30-35 yoshda",
+        "40-45 yoshda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra, odam 20-25 yoshda oʻsishdan toʻxtaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m44#049068a1"
+    }
+  ]
+}

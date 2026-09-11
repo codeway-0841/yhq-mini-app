@@ -1,0 +1,1609 @@
+{
+  "nom": "Funksiyaning aniqlanish sohasi va qiymatlar to'plami",
+  "bolim": "Funksiyalar",
+  "blok": "funk",
+  "rasmiyBolim": 4,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Sardor daftariga f(x) = (2x + 7)/(x − 4) funksiyani yozdi va uning aniqlanish sohasini belgilamoqchi. To'g'ri yozuvni tanlang.",
+      "v": [
+        "(−∞; 4) ∪ (4; +∞)",
+        "(−∞; −4) ∪ (−4; +∞)",
+        "[4; +∞)",
+        "(−∞; −3,5) ∪ (−3,5; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Kasrning maxraji nolga aylanmasligi shart: x − 4 ≠ 0, bundan x ≠ 4. Surat 2x + 7 har qanday x da aniqlangan, shuning uchun boshqa cheklov yo'q. Demak soha (−∞; 4) ∪ (4; +∞). Suratning noli x = −3,5 sohaga umuman ta'sir qilmaydi, u shunchaki funksiyaning noli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxraj-nol-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#ef5613e6"
+    },
+    {
+      "q": "Nodira kalkulyatorga f(x) = 5/(x² − 9) funksiya uchun turli qiymatlar kiritmoqda. Qaysi sonlarni kiritganda funksiya aniqlanmaydi?",
+      "v": [
+        "faqat x = 3",
+        "x = −3 va x = 3",
+        "x = −9 va x = 9",
+        "x = 0 va x = 3"
+      ],
+      "t": 1,
+      "izoh": "Maxraj nolga teng bo'lgan nuqtalarni topamiz: x² − 9 = 0, ya'ni x² = 9. Bundan x = 3 va x = −3 kelib chiqadi, chunki kvadrat ildizning ikki ishorasi ham hisobga olinadi. Shu ikki nuqtada kasr ma'noga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxraj-nol-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#7d62211f"
+    },
+    {
+      "q": "Sinfda o'quvchilar f(x) = (x + 1)/(x² − 5x + 6) funksiyaning aniqlanish sohasini topishmoqda. Qaysi javob to'g'ri?",
+      "v": [
+        "x ≠ −2 va x ≠ −3",
+        "x ≠ 1 va x ≠ 6",
+        "x ≠ 5 va x ≠ 6",
+        "x ≠ 2 va x ≠ 3"
+      ],
+      "t": 3,
+      "izoh": "Maxrajni nolga tenglaymiz: x² − 5x + 6 = 0. Viyet teoremasiga ko'ra ildizlar ko'paytmasi 6, yig'indisi 5 bo'lishi kerak, bu 2 va 3 sonlari. Demak maxraj x = 2 va x = 3 da nolga aylanadi va bu ikki nuqta sohadan chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxraj-nol-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#c9b7daf8"
+    },
+    {
+      "q": "Ustoz doskaga f(x) = 3/(x − 2) + 8/(x + 5) funksiyani yozib, aniqlanish sohasini so'radi. To'g'ri javobni belgilang.",
+      "v": [
+        "(−∞; −5) ∪ (−5; +∞)",
+        "(−∞; 2) ∪ (2; +∞)",
+        "(−∞; −5) ∪ (−5; 2) ∪ (2; +∞)",
+        "(−5; 2)"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi ikkala kasr ham aniqlangan nuqtalarda mavjud bo'ladi. Birinchi kasrdan x ≠ 2, ikkinchisidan x ≠ −5 sharti chiqadi. Ikki shartni birlashtirsak, sonlar o'qidan ikkita nuqta olib tashlanadi va uchta oraliq qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxraj-nol-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#6cf7f741"
+    },
+    {
+      "q": "Feruza f(x) = (x − 1)/(x³ − 4x) funksiyaning aniqlanish sohasidan olib tashlanadigan nuqtalar sonini bilmoqchi. Ular nechta?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "1 ta"
+      ],
+      "t": 1,
+      "izoh": "Maxrajni ko'paytuvchilarga ajratamiz: x³ − 4x = x(x² − 4) = x(x − 2)(x + 2). Bu ko'paytma x = 0, x = 2 va x = −2 da nolga aylanadi. Suratning noli x = 1 maxrajni nolga aylantirmaydi, shuning uchun qisqarish bo'lmaydi. Demak uchta nuqta chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxraj-nol-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#46177cb0"
+    },
+    {
+      "q": "Karim f(x) = √(3x − 12) funksiyaning aniqlanish sohasini topmoqchi. Quyidagi to'plamlardan qaysi biri to'g'ri?",
+      "v": [
+        "[4; +∞)",
+        "(4; +∞)",
+        "(−∞; 4]",
+        "[12; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Juft darajali ildiz ostidagi ifoda manfiy bo'lmasligi kerak: 3x − 12 ≥ 0. Bundan 3x ≥ 12 va x ≥ 4 chiqadi. Tengsizlik qat'iy emas, ya'ni x = 4 ham sohaga kiradi, chunki √0 mavjud. Demak soha [4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-ildiz-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#156287e3"
+    },
+    {
+      "q": "Quyidagi to'plamlardan qaysi biri f(x) = √(20 − 4x) funksiyaning aniqlanish sohasi bo'ladi?",
+      "v": [
+        "[5; +∞)",
+        "(−∞; 5)",
+        "(−∞; 5]",
+        "[−5; 5]"
+      ],
+      "t": 2,
+      "izoh": "Shart: 20 − 4x ≥ 0, bundan 20 ≥ 4x. Ikkala tomonni MUSBAT 4 ga bo'lamiz: 5 ≥ x, ya'ni x ≤ 5. Musbat songa bo'lganda tengsizlik ishorasi o'zgarmaydi, biz shunchaki tengsizlikni teskari tomondan o'qidik. x = 5 da ildiz ostida nol turadi va funksiya aniqlangan, shuning uchun chegara sohaga kiritiladi: (−∞; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-ildiz-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#374d69ee"
+    },
+    {
+      "q": "f(x) = √(x² − 7x + 10) funksiyaning aniqlanish sohasini ko'rsating va tanlovni asoslang.",
+      "v": [
+        "[2; 5]",
+        "(−∞; 2] ∪ [5; +∞)",
+        "(−∞; −5] ∪ [−2; +∞)",
+        "(2; 5)"
+      ],
+      "t": 1,
+      "izoh": "x² − 7x + 10 ≥ 0 tengsizlikni yechamiz. Kvadrat uchhadning ildizlari 2 va 5, tarmoqlari yuqoriga qaragan parabola. Parabola ildizlardan tashqarida musbat bo'ladi, ya'ni x ≤ 2 yoki x ≥ 5. Ildizlarning o'zida ifoda nolga teng, ular ham sohaga kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-ildiz-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#a471444a"
+    },
+    {
+      "q": "f(x) = √(9 − x²) funksiya sonlar o'qining qaysi qismida aniqlangan? To'g'ri oraliqni tanlang.",
+      "v": [
+        "[−3; 3]",
+        "(−3; 3)",
+        "[−9; 9]",
+        "(−∞; −3] ∪ [3; +∞)"
+      ],
+      "t": 0,
+      "izoh": "9 − x² ≥ 0 shartini yozamiz, ya'ni x² ≤ 9. Bu tengsizlik |x| ≤ 3 ga teng kuchli, demak −3 ≤ x ≤ 3. Chegaralarda ildiz ostida nol chiqadi va funksiya aniqlangan, shuning uchun kesma yopiq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-ildiz-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#5c8ae8e3"
+    },
+    {
+      "q": "Dilnoza f(x) = √(x + 6) + √(10 − x) funksiyaning sohasini topishda ikkita shartni birlashtirishi kerak. Natijada qanday oraliq hosil bo'ladi?",
+      "v": [
+        "[−6; +∞)",
+        "(−∞; 10]",
+        "[−10; 6]",
+        "[−6; 10]"
+      ],
+      "t": 3,
+      "izoh": "Birinchi ildizdan x + 6 ≥ 0, ya'ni x ≥ −6 sharti chiqadi. Ikkinchi ildizdan 10 − x ≥ 0, ya'ni x ≤ 10. Yig'indi ikkala shart bir vaqtda bajarilganda aniqlanadi, shuning uchun oraliqlar kesishmasi olinadi va [−6; 10] hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-ildiz-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#8db7b5ad"
+    },
+    {
+      "q": "Ustoz f(x) = log₃(x − 5) funksiyaning aniqlanish sohasini so'radi. O'quvchilar javoblaridan qaysi biri to'g'ri?",
+      "v": [
+        "[5; +∞)",
+        "(5; +∞)",
+        "(−∞; 5)",
+        "(3; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Logarifm ostidagi ifoda qat'iy musbat bo'lishi shart: x − 5 > 0. Bundan x > 5 kelib chiqadi. Bu yerda tenglik olinmaydi, chunki nolning logarifmi mavjud emas. Demak soha ochiq nur (5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifm-argument-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#9c19828d"
+    },
+    {
+      "q": "f(x) = lg(7 − 2x) funksiyaning aniqlanish sohasi qaysi variantda to'g'ri ko'rsatilgan?",
+      "v": [
+        "(−∞; 3,5)",
+        "(−∞; 3,5]",
+        "(3,5; +∞)",
+        "(−∞; 7)"
+      ],
+      "t": 0,
+      "izoh": "Shart: 7 − 2x > 0. Bundan 7 > 2x va x < 3,5 chiqadi. Tengsizlik qat'iy bo'lgani uchun x = 3,5 nuqtasi sohaga kirmaydi. Demak javob (−∞; 3,5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifm-argument-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#99ea69a5"
+    },
+    {
+      "q": "f(x) = ln(x² − 4x) funksiya qaysi to'plamda aniqlangan? Javobingizni tengsizlik yechimi bilan asoslang.",
+      "v": [
+        "(0; 4)",
+        "(−∞; 0] ∪ [4; +∞)",
+        "(−∞; 0) ∪ (4; +∞)",
+        "(4; +∞)"
+      ],
+      "t": 2,
+      "izoh": "x² − 4x > 0 tengsizlikni yechamiz. Chap tomonni ajratamiz: x(x − 4) > 0. Ildizlar 0 va 4, parabola tarmoqlari yuqoriga qaragan, shuning uchun ifoda ildizlardan tashqarida musbat. Tengsizlik qat'iy bo'lgani uchun 0 va 4 nuqtalari kiritilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifm-argument-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#0741e8e8"
+    },
+    {
+      "q": "f(x) = log₂(x + 3) + log₂(6 − x) yig'indi qaysi oraliqda aniqlangan bo'ladi? To'g'ri javobni tanlang.",
+      "v": [
+        "(−6; 3)",
+        "[−3; 6]",
+        "(−∞; 6)",
+        "(−3; 6)"
+      ],
+      "t": 3,
+      "izoh": "Har bir logarifm alohida shart beradi: x + 3 > 0 dan x > −3, hamda 6 − x > 0 dan x < 6. Yig'indi ikkala shart bir vaqtda bajarilgandagina mavjud. Ikki shartning kesishmasi ochiq oraliq (−3; 6) ni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifm-argument-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#23cd83e0"
+    },
+    {
+      "q": "f(x) = log₅((x − 2)/(x + 1)) funksiyaning aniqlanish sohasini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "(−∞; −1) ∪ (2; +∞)",
+        "(−1; 2)",
+        "(2; +∞)",
+        "(−∞; −2) ∪ (1; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Logarifm ostidagi kasr qat'iy musbat bo'lishi kerak: (x − 2)/(x + 1) > 0. Kritik nuqtalar x = 2 va x = −1, ular sonlar o'qini uchga bo'ladi. Oraliqlarda ishorani tekshirsak, kasr x < −1 va x > 2 da musbat, oraliqda esa manfiy. Maxraj noli avtomatik chiqarib tashlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifm-argument-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#48404025"
+    },
+    {
+      "q": "f(x) = arcsin(x/4) funksiyaning aniqlanish sohasi qanday bo'ladi? To'g'ri to'plamni tanlang.",
+      "v": [
+        "[−1; 1]",
+        "[−0,25; 0,25]",
+        "[−4; 4]",
+        "(−4; 4)"
+      ],
+      "t": 2,
+      "izoh": "Arksinus faqat [−1; 1] kesmadagi argumentlar uchun aniqlangan. Demak −1 ≤ x/4 ≤ 1 shartini yozamiz. Barcha qismlarni 4 ga ko'paytirsak, −4 ≤ x ≤ 4 hosil bo'ladi. Chegaralar kiradi, chunki arcsin(−1) va arcsin1 mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-trig-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#0fc92f96"
+    },
+    {
+      "q": "Aziza f(x) = arccos(2x − 3) funksiyaning sohasini topmoqchi. U qanday kesmaga kelishi kerak?",
+      "v": [
+        "[−1; 1]",
+        "[1; 2]",
+        "[−2; −1]",
+        "[2; 4]"
+      ],
+      "t": 1,
+      "izoh": "Arkkosinus argumenti [−1; 1] da yotishi shart: −1 ≤ 2x − 3 ≤ 1. Har uch qismga 3 ni qo'shamiz: 2 ≤ 2x ≤ 4. Endi 2 ga bo'lamiz va 1 ≤ x ≤ 2 hosil bo'ladi. Demak soha [1; 2] kesmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-trig-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#c913da2f"
+    },
+    {
+      "q": "f(x) = arcsin((3 − x)/2) funksiya qaysi kesmada aniqlangan? Yechimni qadamma-qadam bajarib toping.",
+      "v": [
+        "[−5; −1]",
+        "[−2; 2]",
+        "[1; 3]",
+        "[1; 5]"
+      ],
+      "t": 3,
+      "izoh": "Shart: −1 ≤ (3 − x)/2 ≤ 1. Ikki tomonni 2 ga ko'paytiramiz: −2 ≤ 3 − x ≤ 2. Endi 3 ni ayiramiz: −5 ≤ −x ≤ −1. Manfiy birga ko'paytirganda tengsizlik ishoralari almashadi va 1 ≤ x ≤ 5 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-trig-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#29d187ea"
+    },
+    {
+      "q": "Karima f(x) = arcsin x + arctg x funksiyaning aniqlanish sohasini izlamoqda. Ikkala qo'shiluvchining shartini hisobga olsak, javob qanday?",
+      "v": [
+        "[−1; 1]",
+        "barcha haqiqiy sonlar",
+        "(−1; 1)",
+        "[−π/2; π/2]"
+      ],
+      "t": 0,
+      "izoh": "Arktangens butun sonlar o'qida aniqlangan, u qo'shimcha cheklov bermaydi. Arksinus esa faqat −1 ≤ x ≤ 1 da mavjud. Yig'indining sohasi ikki sohaning kesishmasi bo'lgani uchun natija [−1; 1] kesmasi bo'ladi. [−π/2; π/2] esa arcsin ning qiymatlar to'plami, sohasi emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-trig-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#ae99ef0c"
+    },
+    {
+      "q": "f(x) = arccos(x² − 3) funksiyaning aniqlanish sohasini toping. Bu yerda ikki tomonlama tengsizlikni kvadrat bo'yicha yechish talab qilinadi.",
+      "v": [
+        "[−2; 2]",
+        "[√2; 2]",
+        "[−2; −√2] ∪ [√2; 2]",
+        "[2; 4]"
+      ],
+      "t": 2,
+      "izoh": "Shart: −1 ≤ x² − 3 ≤ 1. Har uch qismga 3 ni qo'shsak, 2 ≤ x² ≤ 4 chiqadi. Bundan √2 ≤ |x| ≤ 2 kelib chiqadi. Modul ikki ishorani beradi: x musbat bo'lganda √2 ≤ x ≤ 2, manfiy bo'lganda −2 ≤ x ≤ −√2. Demak soha ikkita kesmadan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-trig-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#d4d7d14d"
+    },
+    {
+      "q": "f(x) = 12/√(x − 7) funksiyada ildiz maxrajda turibdi. Bu funksiyaning aniqlanish sohasi qanday bo'ladi?",
+      "v": [
+        "[7; +∞)",
+        "(7; +∞)",
+        "(−∞; 7)",
+        "(0; 7)"
+      ],
+      "t": 1,
+      "izoh": "Ildiz ostidagi ifoda manfiy bo'lmasligi kerak, lekin ildiz maxrajda turgani uchun u nolga ham teng bo'la olmaydi. Shuning uchun shart qat'iy bo'ladi: x − 7 > 0. Bundan x > 7 chiqadi va soha ochiq nur (7; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-maxrajda-qatiy-shart",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#5ae438cb"
+    },
+    {
+      "q": "Jasur f(x) = √(x + 8)/(x − 3) funksiyaning aniqlanish sohasini topmoqda. To'g'ri javobni tanlang.",
+      "v": [
+        "[−8; +∞)",
+        "(−8; 3) ∪ (3; +∞)",
+        "[−8; 3) ∪ (3; +∞)",
+        "[−8; 3]"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda ikki shart bor. Suratdagi ildizdan x + 8 ≥ 0, ya'ni x ≥ −8. Maxrajdan esa x − 3 ≠ 0, ya'ni x ≠ 3. Ildiz suratda turgani uchun x = −8 sohaga kiradi, lekin x = 3 chiqarib tashlanadi. Natijada [−8; 3) ∪ (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-maxrajda-qatiy-shart",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#85c8b719"
+    },
+    {
+      "q": "f(x) = 5/√(16 − x²) funksiya qaysi oraliqda aniqlangan? Chegaralarga alohida e'tibor bering.",
+      "v": [
+        "(−4; 4)",
+        "[−4; 4]",
+        "(−∞; −4) ∪ (4; +∞)",
+        "(−16; 16)"
+      ],
+      "t": 0,
+      "izoh": "Ildiz maxrajda bo'lgani uchun ildiz osti qat'iy musbat bo'lishi shart: 16 − x² > 0. Bundan x² < 16, ya'ni |x| < 4 kelib chiqadi. Demak −4 < x < 4. Chegaralarda maxraj nolga aylanadi, shuning uchun oraliq ochiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-maxrajda-qatiy-shart",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#497de778"
+    },
+    {
+      "q": "f(x) = √(x − 2)/(x² − 25) funksiyaning aniqlanish sohasini toping. Ikkita shartni birlashtirishni unutmang.",
+      "v": [
+        "[2; +∞)",
+        "(2; 5) ∪ (5; +∞)",
+        "[2; 5) ∪ (5; +∞)",
+        "(−∞; −5) ∪ (−5; 5) ∪ (5; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Ildizdan x − 2 ≥ 0, ya'ni x ≥ 2 sharti chiqadi. Maxrajdan x² ≠ 25, ya'ni x ≠ 5 va x ≠ −5. Lekin x ≥ 2 bo'lgani uchun x = −5 allaqachon sohadan tashqarida qolgan, faqat x = 5 ni olib tashlash kerak. Natija [2; 5) ∪ (5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-maxrajda-qatiy-shart",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#47a90948"
+    },
+    {
+      "q": "f(x) = logₐ7 funksiyada asos a = x − 2 deb olingan. Funksiya qaysi x qiymatlarda aniqlangan bo'ladi?",
+      "v": [
+        "x > 2",
+        "x > 2 va x ≠ 3",
+        "x ≥ 2 va x ≠ 3",
+        "x > 0 va x ≠ 1"
+      ],
+      "t": 1,
+      "izoh": "Logarifm asosi uchun ikki shart bor: asos musbat va birga teng bo'lmasligi kerak. Demak x − 2 > 0 dan x > 2, hamda x − 2 ≠ 1 dan x ≠ 3. Logarifm ostidagi 7 soni musbat, u qo'shimcha cheklov bermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifm-asos-sharti",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#50e9d538"
+    },
+    {
+      "q": "f(x) = logₐx funksiyada asos a = 5 − x ko'rinishda berilgan. Bu funksiyaning aniqlanish sohasini toping.",
+      "v": [
+        "(0; 5)",
+        "(−∞; 5)",
+        "(0; 4)",
+        "(0; 4) ∪ (4; 5)"
+      ],
+      "t": 3,
+      "izoh": "Uchta shartni yozamiz. Logarifm ostidagi ifoda musbat: x > 0. Asos musbat: 5 − x > 0, ya'ni x < 5. Asos birga teng emas: 5 − x ≠ 1, ya'ni x ≠ 4. Uchalasini birlashtirsak (0; 5) oralig'idan x = 4 nuqtasi olib tashlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifm-asos-sharti",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#dc5cc159"
+    },
+    {
+      "q": "Quyidagi ifodalardan qaysi biri umuman ma'noga ega emas: log₂8, log₁9, log₅25, log₃1?",
+      "v": [
+        "log₂8",
+        "log₁9",
+        "log₅25",
+        "log₃1"
+      ],
+      "t": 1,
+      "izoh": "Logarifm asosi musbat va birdan farqli bo'lishi kerak. log₂8 = 3, log₅25 = 2, log₃1 = 0 — bularning hammasi mavjud. Asosi bir bo'lgan log₁9 esa mavjud emas, chunki birning hech qanday darajasi 9 ga teng bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifm-asos-sharti",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#10a3bd21"
+    },
+    {
+      "q": "Asosi o'zgaruvchi bo'lgan f(x) = logₐ(x + 4) funksiyada a = x deb olingan. Aniqlanish sohasi qanday?",
+      "v": [
+        "(0; 1) ∪ (1; +∞)",
+        "(0; +∞)",
+        "(−4; 1) ∪ (1; +∞)",
+        "(1; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Asos sharti: x > 0 va x ≠ 1. Logarifm ostidagi ifoda sharti: x + 4 > 0, ya'ni x > −4. Ikkinchi shart birinchisidan kuchsizroq, chunki x > 0 bo'lganda x > −4 avtomatik bajariladi. Shuning uchun javob (0; 1) ∪ (1; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifm-asos-sharti",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#7fdaadec"
+    },
+    {
+      "q": "f(x) = √(6 − x) + log₂(x − 1) funksiyaning aniqlanish sohasini toping va chegaralarni to'g'ri belgilang.",
+      "v": [
+        "[1; 6]",
+        "(1; 6)",
+        "(1; 6]",
+        "[1; 6)"
+      ],
+      "t": 2,
+      "izoh": "Ildiz sharti qat'iy emas: 6 − x ≥ 0, ya'ni x ≤ 6. Logarifm sharti esa qat'iy: x − 1 > 0, ya'ni x > 1. Ikki shartni birlashtirsak 1 < x ≤ 6 chiqadi. Chap chegara ochiq, o'ng chegara yopiq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralash-shartlar-kesishmasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#05c9ce18"
+    },
+    {
+      "q": "f(x) = √(x + 3)/√(8 − x) funksiya qaysi to'plamda aniqlangan bo'ladi? Har bir ildizning o'rnini hisobga oling.",
+      "v": [
+        "[−3; 8)",
+        "[−3; 8]",
+        "(−8; 3]",
+        "[3; 8)"
+      ],
+      "t": 0,
+      "izoh": "Suratdagi ildiz uchun x + 3 ≥ 0, ya'ni x ≥ −3. Maxrajdagi ildiz esa nolga aylanmasligi kerak, shuning uchun 8 − x > 0, ya'ni x < 8. Ikki shart birlashsa −3 ≤ x < 8 hosil bo'ladi. Chap chegara kiradi, o'ng chegara kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-shartlar-kesishmasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#ce2d83e7"
+    },
+    {
+      "q": "f(x) = √(x² − 4)/log₃x funksiyaning aniqlanish sohasini toping. Bu yerda uchta shart bir vaqtda tekshiriladi.",
+      "v": [
+        "(−∞; −2] ∪ [2; +∞)",
+        "(0; 1) ∪ (1; +∞)",
+        "[2; +∞)",
+        "(2; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Birinchi shart ildizdan: x² − 4 ≥ 0, ya'ni x ≤ −2 yoki x ≥ 2. Ikkinchi shart logarifmdan: x > 0. Uchinchi shart maxrajdan: log₃x ≠ 0, ya'ni x ≠ 1. Uchalasining kesishmasi x ≥ 2 bo'ladi, chunki x = 1 bu to'plamda yo'q. Javob [2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-shartlar-kesishmasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#b74e2e7a"
+    },
+    {
+      "q": "f(x) = arcsin(x − 1) + √x ko'rinishdagi funksiyaning aniqlanish sohasini aniqlang va to'g'ri kesmani tanlang.",
+      "v": [
+        "[−1; 1]",
+        "[0; +∞)",
+        "[0; 1]",
+        "[0; 2]"
+      ],
+      "t": 3,
+      "izoh": "Ildizdan x ≥ 0 sharti chiqadi. Arksinusdan −1 ≤ x − 1 ≤ 1, ya'ni 0 ≤ x ≤ 2 chiqadi. Ikki shartning kesishmasi 0 ≤ x ≤ 2 bo'ladi, chunki ikkinchi shart birinchisini to'liq o'z ichiga oladi. Demak soha [0; 2] kesmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-shartlar-kesishmasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#daa58a40"
+    },
+    {
+      "q": "Maktab olimpiadasida o'quvchilardan f(x) = √(12 − x) + lg(x − 4) funksiyaning sohasidagi butun sonlar sonini topish so'raldi. Ular nechta?",
+      "v": [
+        "7 ta",
+        "8 ta",
+        "9 ta",
+        "6 ta"
+      ],
+      "t": 1,
+      "izoh": "Ildizdan x ≤ 12, logarifmdan x > 4 sharti chiqadi, demak soha (4; 12]. Bu oraliqdagi butun sonlar 5, 6, 7, 8, 9, 10, 11 va 12. Ularni sanasak 8 ta chiqadi. x = 4 kirmaydi, chunki logarifm sharti qat'iy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sohadagi-butun-sonlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#04e69a83"
+    },
+    {
+      "q": "f(x) = √((x + 2)(7 − x)) funksiyaning aniqlanish sohasiga tegishli barcha butun sonlar yig'indisini hisoblang.",
+      "v": [
+        "25",
+        "28",
+        "20",
+        "−25"
+      ],
+      "t": 0,
+      "izoh": "(x + 2)(7 − x) ≥ 0 tengsizlikni yechamiz: ildizlar −2 va 7, ko'paytma ular orasida manfiy bo'lmaydi, demak soha [−2; 7]. Bu kesmadagi butun sonlar −2 dan 7 gacha. Ularning yig'indisi: −2 va 2, −1 va 1 o'zaro yo'qoladi, qolgani 3 + 4 + 5 + 6 + 7 = 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sohadagi-butun-sonlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#2e506608"
+    },
+    {
+      "q": "f(x) = lg(2x + 9) funksiyaning aniqlanish sohasiga tegishli eng kichik butun son qaysi?",
+      "v": [
+        "−9",
+        "−5",
+        "−4",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "Logarifm sharti: 2x + 9 > 0, bundan 2x > −9 va x > −4,5. Bu oraliqdagi eng kichik butun son −4 bo'ladi, chunki −5 soni −4,5 dan kichik va shartni qanoatlantirmaydi. Bo'lishni unutgan o'quvchi xato ravishda x > −9 deb oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sohadagi-butun-sonlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#494bcdf5"
+    },
+    {
+      "q": "f(x) = arccos((x − 6)/5) funksiyaning aniqlanish sohasiga nechta butun son tegishli bo'ladi?",
+      "v": [
+        "9 ta",
+        "10 ta",
+        "12 ta",
+        "11 ta"
+      ],
+      "t": 3,
+      "izoh": "Arkkosinus sharti: −1 ≤ (x − 6)/5 ≤ 1. Barcha qismlarni 5 ga ko'paytiramiz: −5 ≤ x − 6 ≤ 5. So'ng 6 ni qo'shamiz: 1 ≤ x ≤ 11. Bu kesmadagi butun sonlar 1 dan 11 gacha bo'lib, ularning soni 11 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sohadagi-butun-sonlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#fb20970e"
+    },
+    {
+      "q": "y = f(x) funksiyaning aniqlanish sohasi [0; 9] kesmasi. U holda y = f(2x − 1) funksiyaning aniqlanish sohasi qanday bo'ladi?",
+      "v": [
+        "[0,5; 5]",
+        "[−1; 17]",
+        "[0; 9]",
+        "[1; 10]"
+      ],
+      "t": 0,
+      "izoh": "Murakkab funksiyada ichki ifoda tashqi funksiyaning sohasida yotishi kerak: 0 ≤ 2x − 1 ≤ 9. Har uch qismga 1 ni qo'shamiz: 1 ≤ 2x ≤ 10. Endi 2 ga bo'lamiz va 0,5 ≤ x ≤ 5 hosil bo'ladi. Ko'p o'quvchi chegaralarni to'g'ridan-to'g'ri formulaga qo'yib, xato natija oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-funksiya-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#216d0a20"
+    },
+    {
+      "q": "y = f(x) funksiyaning aniqlanish sohasi [−4; 6] bo'lsa, y = f(x + 3) funksiyaning aniqlanish sohasi qanday bo'ladi?",
+      "v": [
+        "[−1; 9]",
+        "[−4; 6]",
+        "[−7; 3]",
+        "[−7; 9]"
+      ],
+      "t": 2,
+      "izoh": "Ichki ifoda tashqi funksiyaning sohasiga tushishi kerak: −4 ≤ x + 3 ≤ 6. Har uch qismdan 3 ni ayiramiz va −7 ≤ x ≤ 3 hosil bo'ladi. Grafik tilida bu — grafikni chapga 3 birlikka surish. Chegaralarga 3 ni qo'shgan o'quvchi [−1; 9] javobini oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-funksiya-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#68521b49"
+    },
+    {
+      "q": "f(x) = √(x − 1) va g(x) = x² − 5 funksiyalar berilgan. f(g(x)) murakkab funksiyaning aniqlanish sohasini toping.",
+      "v": [
+        "[−√6; √6]",
+        "(−∞; −√6] ∪ [√6; +∞)",
+        "[√6; +∞)",
+        "(−∞; −√5] ∪ [√5; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Avval murakkab funksiyani yozamiz: f(g(x)) = √(x² − 5 − 1) = √(x² − 6). Ildiz sharti x² − 6 ≥ 0, ya'ni x² ≥ 6. Bundan |x| ≥ √6 kelib chiqadi. Modul ikki tomonni beradi, shuning uchun soha ikkita nurdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-funksiya-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#e4ff7706"
+    },
+    {
+      "q": "g(x) = 1/(x − 2) va f(x) = √x bo'lsa, f(g(x)) murakkab funksiya qaysi to'plamda aniqlangan?",
+      "v": [
+        "[2; +∞)",
+        "(−∞; 2)",
+        "(−∞; 2) ∪ (2; +∞)",
+        "(2; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Murakkab funksiya f(g(x)) = √(1/(x − 2)) ko'rinishda bo'ladi. Avval x ≠ 2 sharti kerak, aks holda ichki funksiya aniqlanmaydi. So'ng ildiz osti manfiy bo'lmasligi kerak: 1/(x − 2) ≥ 0. Kasr suratida musbat 1 turgani uchun bu faqat x − 2 > 0 da bajariladi, ya'ni x > 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-funksiya-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#7c4dfa74"
+    },
+    {
+      "q": "y = x² − 6x + 11 funksiyaning qiymatlar to'plamini to'la kvadrat ajratish usuli bilan toping.",
+      "v": [
+        "[2; +∞)",
+        "(−∞; 2]",
+        "[3; +∞)",
+        "[11; +∞)"
+      ],
+      "t": 0,
+      "izoh": "To'la kvadrat ajratamiz: x² − 6x + 11 = (x² − 6x + 9) + 2 = (x − 3)² + 2. Kvadrat hech qachon manfiy bo'lmaydi, eng kichik qiymati nol, u x = 3 da erishiladi. Demak y ning eng kichik qiymati 2 va u yuqoriga cheklanmagan. Javob [2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratik-qiymatlar-tola-kvadrat",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#c7fde649"
+    },
+    {
+      "q": "y = −x² + 4x + 5 funksiyaning qiymatlar to'plami qanday? Parabola tarmoqlari yo'nalishiga e'tibor bering.",
+      "v": [
+        "[9; +∞)",
+        "(−∞; 5]",
+        "(−∞; 9]",
+        "[−9; 9]"
+      ],
+      "t": 2,
+      "izoh": "Ifodani o'zgartiramiz: −x² + 4x + 5 = −(x² − 4x) + 5 = −((x − 2)² − 4) + 5 = −(x − 2)² + 9. Bosh koeffitsient manfiy, shuning uchun parabola tarmoqlari pastga qaragan va cho'qqi eng katta qiymatni beradi. Cho'qqi qiymati 9, demak y ≤ 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratik-qiymatlar-tola-kvadrat",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#b34535fb"
+    },
+    {
+      "q": "y = 2x² + 8x + 1 funksiyaning eng kichik qiymatini topib, qiymatlar to'plamini yozing.",
+      "v": [
+        "[1; +∞)",
+        "[−7; +∞)",
+        "(−∞; −7]",
+        "[−4; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Bosh koeffitsientni qavsdan chiqaramiz: 2(x² + 4x) + 1 = 2((x + 2)² − 4) + 1 = 2(x + 2)² − 8 + 1. Demak y = 2(x + 2)² − 7. Kvadratning eng kichik qiymati nol bo'lgani uchun y ning eng kichik qiymati −7 va u x = −2 da erishiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratik-qiymatlar-tola-kvadrat",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#9da899b7"
+    },
+    {
+      "q": "Ustoz y = x² − 7x + 10 funksiyaning qiymatlar to'plamini so'radi. Cho'qqi qiymatini hisoblab, to'g'ri javobni tanlang.",
+      "v": [
+        "[10; +∞)",
+        "(−∞; −2,25]",
+        "[−3,5; +∞)",
+        "[−2,25; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Cho'qqi abssissasi x = 7/2 = 3,5 formula bo'yicha topiladi. Uni funksiyaga qo'yamiz: 3,5² − 7·3,5 + 10 = 12,25 − 24,5 + 10 = −2,25. Tarmoqlar yuqoriga qaragan, shuning uchun bu eng kichik qiymat. Demak qiymatlar to'plami [−2,25; +∞). Cho'qqi abssissasini javob deb olish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratik-qiymatlar-tola-kvadrat",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#04be2ded"
+    },
+    {
+      "q": "y = x² + 6x + m funksiyaning qiymatlar to'plami [−4; +∞) ga teng bo'lsa, m parametrning qiymatini toping.",
+      "v": [
+        "−13",
+        "5",
+        "−4",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "To'la kvadrat ajratamiz: x² + 6x + m = (x + 3)² + m − 9. Eng kichik qiymat m − 9 ga teng va u cho'qqida erishiladi. Shartga ko'ra bu qiymat −4 bo'lishi kerak: m − 9 = −4. Bundan m = 5 chiqadi. Ishorani chalkashtirgan o'quvchi m = −13 javobini oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadratik-qiymatlar-tola-kvadrat",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#d0490cbb"
+    },
+    {
+      "q": "y = √(x − 3) + 4 funksiyaning qiymatlar to'plamini toping va tanlovingizni asoslang.",
+      "v": [
+        "[3; +∞)",
+        "(−∞; 4]",
+        "[4; +∞)",
+        "[7; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat ildizning qiymati hech qachon manfiy bo'lmaydi: √(x − 3) ≥ 0. Unga 4 ni qo'shsak, y ≥ 4 hosil bo'ladi. Eng kichik qiymat x = 3 da erishiladi va u 4 ga teng. Yuqoridan cheklov yo'q, shuning uchun javob [4; +∞). [3; +∞) — bu qiymatlar to'plami emas, aniqlanish sohasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#8830f83f"
+    },
+    {
+      "q": "y = 5 − √(x + 2) funksiyaning qiymatlar to'plami qanday bo'ladi? Ildiz oldidagi minusga e'tibor bering.",
+      "v": [
+        "(−∞; 5]",
+        "[5; +∞)",
+        "[3; +∞)",
+        "(−∞; −5]"
+      ],
+      "t": 0,
+      "izoh": "√(x + 2) ≥ 0 bo'lgani uchun −√(x + 2) ≤ 0 bo'ladi. Unga 5 ni qo'shsak, y ≤ 5 kelib chiqadi. Eng katta qiymat x = −2 da erishiladi va u 5 ga teng. Ildiz cheksiz o'sishi mumkin, shuning uchun pastdan chegara yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#4ee6f65d"
+    },
+    {
+      "q": "y = √(25 − x²) funksiyaning qiymatlar to'plamini toping. Ildiz ostidagi ifoda qanday qiymatlarni oladi?",
+      "v": [
+        "[−5; 5]",
+        "[0; 25]",
+        "[5; +∞)",
+        "[0; 5]"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi −5 ≤ x ≤ 5, bu oraliqda 25 − x² ifoda 0 dan 25 gacha qiymat oladi. Ildiz chiqarilganda bu qiymatlar 0 dan 5 gacha bo'ladi. Ildiz manfiy natija bermaydi, shuning uchun [−5; 5] javobi noto'g'ri — u aniqlanish sohasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#b146f252"
+    },
+    {
+      "q": "y = 2√x − 7 funksiyaning qiymatlar to'plamini aniqlang va to'g'ri variantni belgilang.",
+      "v": [
+        "[0; +∞)",
+        "[−7; +∞)",
+        "(−∞; −7]",
+        "[7; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi x ≥ 0, unda √x ≥ 0 bo'ladi. Ikkiga ko'paytirsak 2√x ≥ 0, so'ng 7 ni ayirsak y ≥ −7 chiqadi. Eng kichik qiymat x = 0 da olinadi va u −7 ga teng. Yuqoridan chegara yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#178663fb"
+    },
+    {
+      "q": "y = √(x² − 4x + 13) funksiyaning qiymatlar to'plamini toping. Ildiz ostida to'la kvadrat ajratish kerak bo'ladi.",
+      "v": [
+        "[13; +∞)",
+        "[9; +∞)",
+        "[3; +∞)",
+        "[0; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Ildiz ostidagi ifodani o'zgartiramiz: x² − 4x + 13 = (x − 2)² + 9. Bu ifodaning eng kichik qiymati 9, u x = 2 da erishiladi. Demak ildizning eng kichik qiymati √9 = 3. Ifoda cheksiz o'sishi mumkin, shuning uchun qiymatlar to'plami [3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizli-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#416dd8f7"
+    },
+    {
+      "q": "f(x) = (2x + 1)/(x − 3) kasr-chiziqli funksiyaning qiymatlar to'plamini toping.",
+      "v": [
+        "(−∞; 3) ∪ (3; +∞)",
+        "(−∞; 2) ∪ (2; +∞)",
+        "barcha haqiqiy sonlar",
+        "(−∞; −2) ∪ (−2; +∞)"
+      ],
+      "t": 1,
+      "izoh": "y = (2x + 1)/(x − 3) tenglamani x ga nisbatan yechamiz: y(x − 3) = 2x + 1, ya'ni x(y − 2) = 3y + 1. Bu tenglama y = 2 bo'lganda yechimga ega emas, chunki chap tomon nolga aylanadi. Qolgan barcha y lar uchun x topiladi. Demak y ≠ 2, ya'ni gorizontal asimptota qiymati chiqarib tashlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#54ada3d7"
+    },
+    {
+      "q": "f(x) = 4/(x² + 1) funksiyaning qiymatlar to'plamini toping. Maxrajning eng kichik qiymatini aniqlashdan boshlang.",
+      "v": [
+        "(0; +∞)",
+        "[0; 4]",
+        "(0; 4]",
+        "(1; 4]"
+      ],
+      "t": 2,
+      "izoh": "Maxraj x² + 1 hech qachon 1 dan kichik bo'lmaydi, eng kichik qiymati x = 0 da 1 ga teng. Shunda kasr eng katta qiymati 4 ni oladi. Maxraj cheksiz o'sganda kasr nolga intiladi, lekin hech qachon nolga teng bo'lmaydi. Demak qiymatlar to'plami (0; 4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#e7634651"
+    },
+    {
+      "q": "f(x) = 5 + 2/(x − 1) funksiya qaysi qiymatni hech qachon qabul qila olmaydi? Qiymatlar to'plamini yozing.",
+      "v": [
+        "(−∞; 5) ∪ (5; +∞)",
+        "(−∞; 1) ∪ (1; +∞)",
+        "(−∞; 2) ∪ (2; +∞)",
+        "(−∞; 7) ∪ (7; +∞)"
+      ],
+      "t": 0,
+      "izoh": "2/(x − 1) kasr surati nolga teng emas, shuning uchun kasrning o'zi hech qachon nol bo'lmaydi. Demak 5 ga nol qo'shilmaydi va y = 5 qiymati erishilmaydi. Boshqa har qanday y uchun mos x topiladi. x = 1 esa qiymat emas, aniqlanish sohasidan chiqarilgan nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#44726941"
+    },
+    {
+      "q": "f(x) = 2 − 8/(x² + 2) funksiyaning qiymatlar to'plamini toping. Chegaralarning ochiq yoki yopiqligini tekshiring.",
+      "v": [
+        "(−2; 2)",
+        "[−2; 2]",
+        "(−∞; 2)",
+        "[−2; 2)"
+      ],
+      "t": 3,
+      "izoh": "Maxraj x² + 2 eng kichik qiymati 2 ga teng, u x = 0 da erishiladi. Shunda 8/(x² + 2) eng katta qiymati 4 bo'ladi va y = 2 − 4 = −2 chiqadi, ya'ni bu qiymat erishiladi. Maxraj cheksiz o'sganda kasr nolga intiladi, y esa 2 ga yaqinlashadi, lekin unga teng bo'lmaydi. Demak [−2; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#427fb5ae"
+    },
+    {
+      "q": "y = 3sin x + 2 funksiyaning qiymatlar to'plamini baholash usuli bilan toping.",
+      "v": [
+        "[−3; 3]",
+        "[−1; 5]",
+        "[2; 5]",
+        "[−5; 5]"
+      ],
+      "t": 1,
+      "izoh": "Sinusning qiymatlari −1 dan 1 gacha o'zgaradi: −1 ≤ sin x ≤ 1. Uch marta ko'paytiramiz: −3 ≤ 3sin x ≤ 3. Endi ikkalasiga 2 ni qo'shamiz: −1 ≤ y ≤ 5. Demak qiymatlar to'plami [−1; 5] kesmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-qiymatlar-baholash",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#f0722dd6"
+    },
+    {
+      "q": "y = 4 − 5cos x funksiyaning eng katta va eng kichik qiymatlarini topib, qiymatlar to'plamini yozing.",
+      "v": [
+        "[−5; 5]",
+        "[4; 9]",
+        "[−1; 9]",
+        "[−9; 1]"
+      ],
+      "t": 2,
+      "izoh": "Kosinus −1 dan 1 gacha qiymat oladi. Uni −5 ga ko'paytirganda tengsizlik ishoralari almashadi: −5 ≤ −5cos x ≤ 5. Endi 4 ni qo'shamiz: −1 ≤ y ≤ 9. Eng kichik qiymat cos x = 1 da, eng katta qiymat cos x = −1 da erishiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-qiymatlar-baholash",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#ef56bed6"
+    },
+    {
+      "q": "f(x) = 2sin x·cos x funksiyaning qiymatlar to'plamini toping. Avval ifodani soddalashtiring.",
+      "v": [
+        "[−1; 1]",
+        "[−2; 2]",
+        "[0; 2]",
+        "[−0,5; 0,5]"
+      ],
+      "t": 0,
+      "izoh": "Ikkilangan burchak formulasiga ko'ra 2sin x·cos x = sin 2x. Argument 2x butun sonlar o'qini to'liq bosib o'tadi, shuning uchun sin 2x oddiy sinus kabi −1 dan 1 gacha qiymat oladi. Demak qiymatlar to'plami [−1; 1]. Formulani qo'llamagan o'quvchi amplitudani 2 deb xato oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-qiymatlar-baholash",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#1e193cda"
+    },
+    {
+      "q": "f(x) = 3sin x + 4cos x funksiyaning qiymatlar to'plamini toping. Yordamchi burchak usulini qo'llang.",
+      "v": [
+        "[−7; 7]",
+        "[−5; 5]",
+        "[−1; 1]",
+        "[−12; 12]"
+      ],
+      "t": 1,
+      "izoh": "a·sin x + b·cos x ko'rinishdagi ifodani R·sin(x + φ) shaklida yozish mumkin, bu yerda R = √(a² + b²). Bizda R = √(9 + 16) = √25 = 5. Sinus −1 dan 1 gacha o'zgargani uchun ifoda −5 dan 5 gacha qiymat oladi. Koeffitsientlarni oddiy qo'shgan o'quvchi 7 javobini oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trigonometrik-qiymatlar-baholash",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#e679952c"
+    },
+    {
+      "q": "y = |x − 4| + 3 funksiyaning qiymatlar to'plamini toping va eng kichik qiymati qayerda erishilishini ayting.",
+      "v": [
+        "[3; +∞)",
+        "[4; +∞)",
+        "[7; +∞)",
+        "(−∞; 3]"
+      ],
+      "t": 0,
+      "izoh": "Modul hech qachon manfiy bo'lmaydi: |x − 4| ≥ 0. Unga 3 ni qo'shsak y ≥ 3 chiqadi. Tenglik x = 4 da bajariladi, chunki shunda modul nolga aylanadi. Yuqoridan chegara yo'q, demak javob [3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modulli-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#4e576128"
+    },
+    {
+      "q": "y = 7 − |3x − 6| funksiyaning qiymatlar to'plamini aniqlang. Modul oldidagi ishorani hisobga oling.",
+      "v": [
+        "[7; +∞)",
+        "(−∞; −7]",
+        "[−7; 7]",
+        "(−∞; 7]"
+      ],
+      "t": 3,
+      "izoh": "|3x − 6| ≥ 0 bo'lgani uchun −|3x − 6| ≤ 0 bo'ladi. Unga 7 ni qo'shsak, y ≤ 7 kelib chiqadi. Eng katta qiymat modul nolga aylanganda, ya'ni x = 2 da erishiladi. Modul cheksiz o'sishi mumkin, shuning uchun pastdan chegara yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#57fc2654"
+    },
+    {
+      "q": "y = |x + 2| + |x − 2| funksiyaning qiymatlar to'plamini toping. Ikki modul yig'indisining eng kichik qiymatini baholang.",
+      "v": [
+        "[0; +∞)",
+        "[2; +∞)",
+        "[4; +∞)",
+        "(−∞; 4]"
+      ],
+      "t": 2,
+      "izoh": "Bu ifoda sonlar o'qida x nuqtaning −2 va 2 nuqtalargacha bo'lgan masofalari yig'indisini bildiradi. Agar x kesmaning ichida yotsa, yig'indi kesma uzunligiga, ya'ni 4 ga teng bo'ladi. Kesmadan tashqarida yig'indi undan katta bo'ladi. Demak eng kichik qiymat 4 va javob [4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modulli-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#6dbf91d5"
+    },
+    {
+      "q": "y = 3|x| − 5 funksiyaning qiymatlar to'plamini toping va eng kichik qiymati qaysi nuqtada olinishini ayting.",
+      "v": [
+        "[0; +∞)",
+        "[−5; +∞)",
+        "(−∞; −5]",
+        "[5; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Modul manfiy bo'lmaydi: |x| ≥ 0. Uni 3 ga ko'paytirsak 3|x| ≥ 0 bo'ladi, so'ng 5 ni ayiramiz va y ≥ −5 chiqadi. Tenglik x = 0 da bajariladi. Modul cheksiz o'sishi mumkin, shuning uchun yuqoridan chegara yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#09d14789"
+    },
+    {
+      "q": "Rasmda y = f(x) funksiyaning grafigi to'liq tasvirlangan. Uning aniqlanish sohasini grafikdan o'qib toping.",
+      "v": [
+        "[−3; 4]",
+        "[−2; 3]",
+        "[−3; 3]",
+        "[0; 4]"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi grafikning abssissalar o'qidagi proyeksiyasi bo'ladi. Grafik chap uchidan x = −3 da boshlanadi va o'ng uchida x = 4 da tugaydi, uchlari to'ldirilgan nuqta bilan berilgan. Demak soha [−3; 4]. [−2; 3] esa ordinatalar bo'yicha proyeksiya, ya'ni qiymatlar to'plami.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='25' y1='150' x2='285' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='285' x2='150' y2='15' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 25 146 v 8 M 50 146 v 8 M 75 146 v 8 M 100 146 v 8 M 125 146 v 8 M 175 146 v 8 M 200 146 v 8 M 225 146 v 8 M 250 146 v 8 M 275 146 v 8 M 146 25 h 8 M 146 50 h 8 M 146 75 h 8 M 146 100 h 8 M 146 125 h 8 M 146 175 h 8 M 146 200 h 8 M 146 225 h 8 M 146 250 h 8 M 146 275 h 8' stroke='%23334155' stroke-width='1'/%3E%3Ctext x='50' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E−4%3C/text%3E%3Ctext x='100' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E−2%3C/text%3E%3Ctext x='200' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='250' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='140' y='55' font-size='13' fill='%23334155' text-anchor='end'%3E4%3C/text%3E%3Ctext x='140' y='105' font-size='13' fill='%23334155' text-anchor='end'%3E2%3C/text%3E%3Ctext x='140' y='205' font-size='13' fill='%23334155' text-anchor='end'%3E−2%3C/text%3E%3Ctext x='140' y='255' font-size='13' fill='%23334155' text-anchor='end'%3E−4%3C/text%3E%3Ctext x='278' y='142' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='156' y='26' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Cpolyline points='75,125 150,200 200,75 250,150' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='75' cy='125' r='3.5' fill='%235b4bc4'/%3E%3Ccircle cx='250' cy='150' r='3.5' fill='%235b4bc4'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafikdan-soha-va-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#1ed5b2fa"
+    },
+    {
+      "q": "Chizmada y = f(x) funksiyaning grafigi berilgan. Funksiyaning qiymatlar to'plamini grafikdan aniqlang.",
+      "v": [
+        "[−3; 3]",
+        "[−4; 5]",
+        "[−4; 0]",
+        "[0; 5]"
+      ],
+      "t": 1,
+      "izoh": "Qiymatlar to'plami grafikning ordinatalar o'qidagi proyeksiyasi. Grafikning eng past nuqtasi y = −4 da, eng yuqori uchlari esa y = 5 da joylashgan. Oradagi barcha qiymatlar erishiladi, chunki grafik uzluksiz. Demak qiymatlar to'plami [−4; 5]. [−3; 3] esa abssissalar bo'yicha proyeksiya.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='25' y1='150' x2='285' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='285' x2='150' y2='15' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 25 146 v 8 M 50 146 v 8 M 75 146 v 8 M 100 146 v 8 M 125 146 v 8 M 175 146 v 8 M 200 146 v 8 M 225 146 v 8 M 250 146 v 8 M 275 146 v 8 M 146 25 h 8 M 146 50 h 8 M 146 75 h 8 M 146 100 h 8 M 146 125 h 8 M 146 175 h 8 M 146 200 h 8 M 146 225 h 8 M 146 250 h 8 M 146 275 h 8' stroke='%23334155' stroke-width='1'/%3E%3Ctext x='50' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E−4%3C/text%3E%3Ctext x='100' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E−2%3C/text%3E%3Ctext x='200' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='250' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='140' y='30' font-size='13' fill='%23334155' text-anchor='end'%3E5%3C/text%3E%3Ctext x='140' y='105' font-size='13' fill='%23334155' text-anchor='end'%3E2%3C/text%3E%3Ctext x='140' y='205' font-size='13' fill='%23334155' text-anchor='end'%3E−2%3C/text%3E%3Ctext x='140' y='255' font-size='13' fill='%23334155' text-anchor='end'%3E−4%3C/text%3E%3Ctext x='278' y='142' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='156' y='26' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Cpolyline points='75,25 88,94 100,150 113,194 125,225 138,244 150,250 162,244 175,225 188,194 200,150 213,94 225,25' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='75' cy='25' r='3.5' fill='%235b4bc4'/%3E%3Ccircle cx='225' cy='25' r='3.5' fill='%235b4bc4'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikdan-soha-va-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#100eced0"
+    },
+    {
+      "q": "Rasmdagi grafik ikkita alohida bo'lakdan iborat. Shu funksiyaning aniqlanish sohasini to'g'ri yozing.",
+      "v": [
+        "[−4; 4]",
+        "[−1; 3]",
+        "(−1; 1)",
+        "[−4; −1] ∪ [1; 4]"
+      ],
+      "t": 3,
+      "izoh": "Grafik ikki kesmadan tashkil topgan, ular orasida uzilish bor. Birinchi kesma x = −4 dan x = −1 gacha, ikkinchisi x = 1 dan x = 4 gacha cho'zilgan. Oradagi −1 < x < 1 qismda grafik yo'q, demak u yerda funksiya aniqlanmagan. Shuning uchun soha ikki kesmaning birlashmasi bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='25' y1='150' x2='285' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='285' x2='150' y2='15' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 25 146 v 8 M 50 146 v 8 M 75 146 v 8 M 100 146 v 8 M 125 146 v 8 M 175 146 v 8 M 200 146 v 8 M 225 146 v 8 M 250 146 v 8 M 275 146 v 8 M 146 25 h 8 M 146 50 h 8 M 146 75 h 8 M 146 100 h 8 M 146 125 h 8 M 146 175 h 8 M 146 200 h 8 M 146 225 h 8 M 146 250 h 8 M 146 275 h 8' stroke='%23334155' stroke-width='1'/%3E%3Ctext x='50' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E−4%3C/text%3E%3Ctext x='100' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E−2%3C/text%3E%3Ctext x='200' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='250' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='140' y='55' font-size='13' fill='%23334155' text-anchor='end'%3E4%3C/text%3E%3Ctext x='140' y='105' font-size='13' fill='%23334155' text-anchor='end'%3E2%3C/text%3E%3Ctext x='140' y='205' font-size='13' fill='%23334155' text-anchor='end'%3E−2%3C/text%3E%3Ctext x='140' y='255' font-size='13' fill='%23334155' text-anchor='end'%3E−4%3C/text%3E%3Ctext x='278' y='142' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='156' y='26' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Cline x1='50' y1='100' x2='125' y2='175' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='175' y1='75' x2='250' y2='125' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='50' cy='100' r='3.5' fill='%235b4bc4'/%3E%3Ccircle cx='125' cy='175' r='3.5' fill='%235b4bc4'/%3E%3Ccircle cx='175' cy='75' r='3.5' fill='%235b4bc4'/%3E%3Ccircle cx='250' cy='125' r='3.5' fill='%235b4bc4'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafikdan-soha-va-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#22ef9ea7"
+    },
+    {
+      "q": "Grafikda funksiyaning eng past va eng baland nuqtalari ko'rinib turibdi. Qiymatlar to'plamini yozing.",
+      "v": [
+        "[−4; 4]",
+        "[0; 4]",
+        "[−3; 4]",
+        "[−3; 3]"
+      ],
+      "t": 2,
+      "izoh": "Grafikning eng past nuqtasi x = −2 da joylashgan va uning ordinatasi −3 ga teng. Eng baland nuqta x = 2 da bo'lib, ordinatasi 4. Grafik uzluksiz bo'lgani uchun oradagi barcha qiymatlar qabul qilinadi. Demak qiymatlar to'plami [−3; 4]. [−4; 4] esa abssissalar proyeksiyasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='25' y1='150' x2='285' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='285' x2='150' y2='15' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 25 146 v 8 M 50 146 v 8 M 75 146 v 8 M 100 146 v 8 M 125 146 v 8 M 175 146 v 8 M 200 146 v 8 M 225 146 v 8 M 250 146 v 8 M 275 146 v 8 M 146 25 h 8 M 146 50 h 8 M 146 75 h 8 M 146 100 h 8 M 146 125 h 8 M 146 175 h 8 M 146 200 h 8 M 146 225 h 8 M 146 250 h 8 M 146 275 h 8' stroke='%23334155' stroke-width='1'/%3E%3Ctext x='50' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E−4%3C/text%3E%3Ctext x='100' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E−2%3C/text%3E%3Ctext x='200' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='250' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='140' y='55' font-size='13' fill='%23334155' text-anchor='end'%3E4%3C/text%3E%3Ctext x='140' y='105' font-size='13' fill='%23334155' text-anchor='end'%3E2%3C/text%3E%3Ctext x='140' y='205' font-size='13' fill='%23334155' text-anchor='end'%3E−2%3C/text%3E%3Ctext x='140' y='255' font-size='13' fill='%23334155' text-anchor='end'%3E−4%3C/text%3E%3Ctext x='278' y='142' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='156' y='26' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Cpolyline points='50,150 75,200 100,225 125,200 150,150 175,88 200,50 225,75 250,125' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='50' cy='150' r='3.5' fill='%235b4bc4'/%3E%3Ccircle cx='250' cy='125' r='3.5' fill='%235b4bc4'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikdan-soha-va-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#bedb9bcb"
+    },
+    {
+      "q": "Rasmda y = f(x) funksiyaning grafigi to'liq berilgan. Aniqlanish sohasi D va qiymatlar to'plami E juftligini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "D = [−5; 4], E = [−1; 2]",
+        "D = [−1; 2], E = [−5; 4]",
+        "D = [−5; 4], E = [0; 3]",
+        "D = [−5; 2], E = [−1; 4]"
+      ],
+      "t": 0,
+      "izoh": "Grafik chapda x = −5 nuqtadan boshlanib, o'ngda x = 4 da tugaydi, demak D = [−5; 4]. Eng past nuqtasi chap uchida bo'lib, ordinatasi −1 ga teng, eng baland nuqtasi o'ng uchida va ordinatasi 2. Grafik uzluksiz o'sib borgani uchun oradagi hamma qiymat qabul qilinadi, ya'ni E = [−1; 2]. Soha bilan qiymatlar to'plamini almashtirib yuborish eng ko'p uchraydigan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='25' y1='150' x2='285' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='285' x2='150' y2='15' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 25 146 v 8 M 50 146 v 8 M 75 146 v 8 M 100 146 v 8 M 125 146 v 8 M 175 146 v 8 M 200 146 v 8 M 225 146 v 8 M 250 146 v 8 M 275 146 v 8 M 146 25 h 8 M 146 50 h 8 M 146 75 h 8 M 146 100 h 8 M 146 125 h 8 M 146 175 h 8 M 146 200 h 8 M 146 225 h 8 M 146 250 h 8 M 146 275 h 8' stroke='%23334155' stroke-width='1'/%3E%3Ctext x='25' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E−5%3C/text%3E%3Ctext x='100' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E−2%3C/text%3E%3Ctext x='200' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='250' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='140' y='55' font-size='13' fill='%23334155' text-anchor='end'%3E4%3C/text%3E%3Ctext x='140' y='105' font-size='13' fill='%23334155' text-anchor='end'%3E2%3C/text%3E%3Ctext x='140' y='180' font-size='13' fill='%23334155' text-anchor='end'%3E−1%3C/text%3E%3Ctext x='140' y='255' font-size='13' fill='%23334155' text-anchor='end'%3E−4%3C/text%3E%3Ctext x='278' y='142' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='156' y='26' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Cpolyline points='25,175 50,150 75,140 100,132 125,125 150,119 175,114 200,109 225,104 250,100' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='25' cy='175' r='3.5' fill='%235b4bc4'/%3E%3Ccircle cx='250' cy='100' r='3.5' fill='%235b4bc4'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafikdan-soha-va-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#aab1564c"
+    },
+    {
+      "q": "Suv omborida sath h(t) = 40 − 0,8t formula bilan kamayadi, bu yerda t — kunlar soni, h — metrdagi sath. Model qaysi t qiymatlarda ma'noga ega?",
+      "v": [
+        "[0; 40]",
+        "[0; 50]",
+        "[0; 32]",
+        "barcha t ≥ 0"
+      ],
+      "t": 1,
+      "izoh": "Vaqt manfiy bo'lmaydi, demak t ≥ 0. Sath ham manfiy bo'la olmaydi: 40 − 0,8t ≥ 0, bundan 0,8t ≤ 40 va t ≤ 50 chiqadi. Ikki shartni birlashtirsak model [0; 50] oralig'ida ma'noli. Bo'lishni bajarmagan o'quvchi 40 kunni javob deb oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-model-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#1654006a"
+    },
+    {
+      "q": "Zavodda bir dona mahsulotning tannarxi C(n) = 6 000 000/n + 15 000 so'm formula bilan hisoblanadi, bu yerda n — ishlab chiqarilgan dona soni. Formula qaysi n uchun ma'noga ega?",
+      "v": [
+        "barcha butun sonlar",
+        "n ≥ 0 bo'lgan butun sonlar",
+        "n > 0 bo'lgan butun sonlar",
+        "n ≥ 15 000 bo'lgan butun sonlar"
+      ],
+      "t": 2,
+      "izoh": "Kasr maxraji nolga teng bo'lmasligi kerak, shuning uchun n ≠ 0. Bundan tashqari ishlab chiqarilgan dona soni manfiy bo'lmaydi, ya'ni n manfiy qiymat ololmaydi. Ikki cheklovni birlashtirsak faqat musbat butun sonlar qoladi. Demak n > 0 bo'lgan butun sonlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-model-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#9658ec8d"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi tomorqaning perimetri 60 m. Bir tomoni x metr bo'lganda yuzasi S(x) = x·(30 − x) bo'ladi. x qanday qiymatlarni olishi mumkin?",
+      "v": [
+        "[0; 30]",
+        "(0; 60)",
+        "(0; 15)",
+        "(0; 30)"
+      ],
+      "t": 3,
+      "izoh": "Perimetr 60 m bo'lgani uchun ikki qo'shni tomon yig'indisi 30 m, ya'ni ikkinchi tomon 30 − x ga teng. Tomon uzunligi qat'iy musbat bo'lishi kerak: x > 0 va 30 − x > 0. Ikkinchisidan x < 30 chiqadi. Chegaralarda to'rtburchak yo'qoladi, shuning uchun oraliq ochiq: (0; 30).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-model-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#dd2dd277"
+    },
+    {
+      "q": "Do'konda olma 1 kg uchun 12 000 so'm. Xaridor x kg olsa, to'lov P(x) = 12 000·x so'm bo'ladi. Do'konda 45 kg olma bor, tarozi esa 0,1 kg dan boshlab o'lchaydi. Model qaysi oraliqda amaliy ma'noga ega?",
+      "v": [
+        "[0; 45]",
+        "[0,1; 45]",
+        "(0; 45)",
+        "[0,1; 12 000]"
+      ],
+      "t": 1,
+      "izoh": "Tarozining eng kichik o'lchovi 0,1 kg bo'lgani uchun x ning eng kichik qiymati 0,1 bo'ladi. Do'kondagi zaxira 45 kg, shuning uchun x undan katta bo'la olmaydi. Demak amaliy soha [0,1; 45] kesmasi. 12 000 soni narx, u kilogramm o'lchovi emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-model-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#1993b676"
+    },
+    {
+      "q": "Balandligi 20 m bo'lgan qoyadan tosh yuqoriga otildi va uning balandligi h(t) = 20 + 15t − 5t² metr bilan ifodalanadi, bu yerda t — soniyadagi vaqt. Model qaysi oraliqda ma'noli?",
+      "v": [
+        "[0; 3]",
+        "[0; 20]",
+        "[−1; 4]",
+        "[0; 4]"
+      ],
+      "t": 3,
+      "izoh": "Vaqt manfiy bo'lmaydi, demak t ≥ 0. Tosh yerga tushganda balandlik nolga aylanadi: 20 + 15t − 5t² = 0. Beshga bo'lib va ishorani o'zgartirib t² − 3t − 4 = 0 ni olamiz, ildizlari t = 4 va t = −1. Manfiy ildiz amaliy ma'noga ega emas, shuning uchun model [0; 4] oralig'ida ishlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-model-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#c2a987c4"
+    },
+    {
+      "q": "Futbolchi to'pni tepdi va to'p balandligi h(t) = 20t − 5t² metr qonuniyat bilan o'zgardi, bu yerda t — soniyadagi vaqt. To'p yerga tushguncha balandlik qanday qiymatlar to'plamini oladi?",
+      "v": [
+        "[0; 4]",
+        "[0; 20]",
+        "[0; 40]",
+        "[0; 15]"
+      ],
+      "t": 1,
+      "izoh": "Avval uchish vaqtini topamiz: 20t − 5t² = 0, ya'ni 5t(4 − t) = 0, bundan t = 0 va t = 4. Demak to'p 4 soniya havoda bo'ladi. Eng baland nuqta cho'qqida, ya'ni t = 2 da: 20·2 − 5·4 = 40 − 20 = 20 metr. Balandlik noldan 20 gacha barcha qiymatlarni oladi, javob [0; 20]. Bu yerda 5t² koeffitsienti g = 10 m/s² ga mos keladi. [0; 4] — bu vaqt oralig'i, balandlik emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-model-qiymatlari",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#24ea07ab"
+    },
+    {
+      "q": "Taksi haqi 8 000 so'm o'tirish puli va har bir kilometr uchun 3 000 so'mdan iborat. Yo'l uzunligi 2 km dan 15 km gacha bo'lsa, to'lov qanday oraliqda yotadi?",
+      "v": [
+        "[14 000; 53 000] so'm",
+        "[6 000; 45 000] so'm",
+        "[8 000; 53 000] so'm",
+        "[11 000; 53 000] so'm"
+      ],
+      "t": 0,
+      "izoh": "To'lov modeli P(x) = 8 000 + 3 000·x ko'rinishda. Eng qisqa yo'lda x = 2: P = 8 000 + 6 000 = 14 000 so'm. Eng uzun yo'lda x = 15: P = 8 000 + 45 000 = 53 000 so'm. Funksiya o'suvchi bo'lgani uchun oradagi barcha qiymatlar erishiladi. O'tirish pulini unutgan o'quvchi 6 000 dan boshlab hisoblaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-model-qiymatlari",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#56b317f4"
+    },
+    {
+      "q": "Issiqxonadagi harorat sutka davomida T(x) = 21 + 4sin x qonuniyat bilan o'zgaradi va gradusda o'lchanadi. Harorat qanday oraliqda bo'lishi mumkin?",
+      "v": [
+        "[21; 25]",
+        "[16; 26]",
+        "[17; 25]",
+        "[−4; 4]"
+      ],
+      "t": 2,
+      "izoh": "Sinus −1 dan 1 gacha qiymat oladi, shuning uchun 4sin x ifodasi −4 dan 4 gacha o'zgaradi. Unga 21 ni qo'shsak, harorat 17 dan 25 gacha bo'ladi. Eng past harorat sin x = −1 da, eng yuqorisi sin x = 1 da kuzatiladi. Javob [17; 25].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-model-qiymatlari",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#fba46f16"
+    },
+    {
+      "q": "Fermer xo'jaligi bir kunda x tonna mahsulot sotganda foydasi P(x) = −2x² + 60x − 250 ming so'm bo'ladi, bunda x miqdor uzluksiz ravishda 0 dan 30 gacha o'zgaradi. Foydaning qiymatlar to'plami qanday?",
+      "v": [
+        "[0; 200] ming so'm",
+        "[−250; 450] ming so'm",
+        "[200; 450] ming so'm",
+        "[−250; 200] ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Cho'qqi abssissasi x = 60/4 = 15, unda foyda −2·225 + 900 − 250 = 200 ming so'm bo'ladi, bu eng katta qiymat. Chegaralarda x = 0 da foyda −250, x = 30 da esa −1800 + 1800 − 250 = −250 ming so'm. x uzluksiz o'zgargani uchun parabola [0; 30] kesmasida oradagi barcha qiymatlarni ham qabul qiladi, demak qiymatlar to'plami [−250; 200] ming so'm. Zarar ham qiymat hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-model-qiymatlari",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#548494df"
+    },
+    {
+      "q": "f(x) = 5/(x² + 4x + m) funksiyaning aniqlanish sohasi butun sonlar o'qi bo'lishi uchun m qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "m > 4",
+        "m < 4",
+        "m ≥ 4",
+        "m > 16"
+      ],
+      "t": 0,
+      "izoh": "Soha butun o'q bo'lishi uchun maxraj hech qanday x da nolga aylanmasligi kerak. Kvadrat uchhadning haqiqiy ildizi bo'lmasligi sharti D < 0. Bu yerda D = 16 − 4m, demak 16 − 4m < 0. Bundan 4m > 16 va m > 4 kelib chiqadi. Tenglik olinsa uchhad bitta ildizga ega bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-soha-butun-oq",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#8616f5d2"
+    },
+    {
+      "q": "f(x) = √(x² − 6x + c) funksiya barcha haqiqiy x larda aniqlangan bo'lishi uchun c ning eng kichik butun qiymatini toping.",
+      "v": [
+        "6",
+        "8",
+        "9",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "Ildiz osti barcha x larda manfiy bo'lmasligi kerak. Tarmoqlari yuqoriga qaragan parabola uchun bu shart D ≤ 0 ko'rinishida yoziladi. D = 36 − 4c, demak 36 − 4c ≤ 0 va c ≥ 9. Bu yerda tenglik ruxsat etiladi, chunki ildiz ostida nol bo'lishi mumkin. Eng kichik butun qiymat 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-soha-butun-oq",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#581af451"
+    },
+    {
+      "q": "f(x) = lg(x² + kx + 25) funksiyaning aniqlanish sohasi barcha haqiqiy sonlardan iborat bo'lishi uchun k qaysi oraliqda yotishi kerak?",
+      "v": [
+        "[−10; 10]",
+        "(−5; 5)",
+        "(−10; 10)",
+        "(−25; 25)"
+      ],
+      "t": 2,
+      "izoh": "Logarifm osti barcha x larda qat'iy musbat bo'lishi kerak. Tarmoqlari yuqoriga qaragan parabola uchun bu shart D < 0 bo'ladi. D = k² − 100, demak k² − 100 < 0 va k² < 100. Bundan |k| < 10, ya'ni −10 < k < 10 kelib chiqadi. Tenglik olinsa uchhad bir nuqtada nolga tegadi va logarifm aniqlanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-soha-butun-oq",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#774a7a69"
+    },
+    {
+      "q": "f(x) = (x + 3)/(x² − 2x + a) funksiya butun sonlar o'qida aniqlangan bo'lishi uchun a ning eng kichik butun qiymati qaysi?",
+      "v": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "Maxraj hech qachon nolga aylanmasligi kerak, ya'ni x² − 2x + a = 0 tenglamaning haqiqiy ildizi bo'lmasligi shart. Shart D < 0, bu yerda D = 4 − 4a. Demak 4 − 4a < 0 va a > 1 chiqadi. Tengsizlik qat'iy bo'lgani uchun a = 1 yaramaydi, eng kichik butun qiymat 2 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-soha-butun-oq",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#672c678c"
+    },
+    {
+      "q": "y = x² − 4x + 7 funksiyaning qiymatlar to'plamiga 1, 4, 8, 20 sonlaridan qaysi biri tegishli emas?",
+      "v": [
+        "1",
+        "4",
+        "8",
+        "20"
+      ],
+      "t": 0,
+      "izoh": "To'la kvadrat ajratamiz: x² − 4x + 7 = (x − 2)² + 3. Kvadrat manfiy bo'lmagani uchun funksiyaning eng kichik qiymati 3 ga teng. Demak qiymatlar to'plami [3; +∞). Berilgan sonlardan 4, 8 va 20 bu to'plamda yotadi, 1 esa 3 dan kichik va erishilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatga-tegishlilik-tekshiruvi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#4363551a"
+    },
+    {
+      "q": "f(x) = 6/(x² + 2) funksiyaning qiymatlari orasida 4, 3, 0, −1 sonlaridan qaysi biri uchraydi?",
+      "v": [
+        "4",
+        "3",
+        "0",
+        "−1"
+      ],
+      "t": 1,
+      "izoh": "Maxraj x² + 2 eng kichik qiymati 2 ga teng, u x = 0 da olinadi. Shunda kasr eng katta qiymati 3 ni oladi. Maxraj o'sganda kasr nolga intiladi, lekin unga yetmaydi, shuning uchun qiymatlar to'plami (0; 3]. Bu to'plamda 3 bor, 4 esa juda katta, 0 va −1 esa erishilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatga-tegishlilik-tekshiruvi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#17a858ed"
+    },
+    {
+      "q": "y = a to'g'ri chiziq y = x² − 6x + 5 parabola bilan umumiy nuqtaga ega bo'lmasligi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a > −4",
+        "a ≥ −4",
+        "a < 5",
+        "a < −4"
+      ],
+      "t": 3,
+      "izoh": "Parabolani to'la kvadrat ko'rinishida yozamiz: x² − 6x + 5 = (x − 3)² − 4. Uning qiymatlar to'plami [−4; +∞), ya'ni eng kichik qiymat −4. Gorizontal chiziq y = a parabolani faqat a bu to'plamda yotganda kesadi. Demak kesishmaslik sharti a < −4 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatga-tegishlilik-tekshiruvi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#47b87835"
+    },
+    {
+      "q": "y = 2ˣ + 3 ko'rsatkichli funksiyaning qiymatlar to'plamini toping va chegaraning ochiqligini tekshiring.",
+      "v": [
+        "(3; +∞)",
+        "[3; +∞)",
+        "(0; +∞)",
+        "(−∞; 3)"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichli funksiya 2ˣ har doim qat'iy musbat, ya'ni 2ˣ > 0, lekin u hech qachon nolga teng bo'lmaydi. Unga 3 ni qo'shsak y > 3 chiqadi. Chegara qiymati 3 erishilmaydi, shuning uchun oraliq ochiq bo'ladi: (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#8bc71368"
+    },
+    {
+      "q": "y = 5 − 3ˣ funksiyaning qiymatlar to'plamini aniqlang. Ko'rsatkichli qo'shiluvchi oldidagi minusni hisobga oling.",
+      "v": [
+        "(−∞; 5]",
+        "[5; +∞)",
+        "(0; 5)",
+        "(−∞; 5)"
+      ],
+      "t": 3,
+      "izoh": "3ˣ ifoda qat'iy musbat, demak −3ˣ qat'iy manfiy. Unga 5 ni qo'shsak y < 5 kelib chiqadi. Qiymat 5 ga faqat 3ˣ nolga teng bo'lganda erishilardi, bu esa mumkin emas. Shuning uchun javob ochiq nur (−∞; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#def5196f"
+    },
+    {
+      "q": "Bank omonatidagi summa har yili 1,2 marta ortadi va S(n) = 5 000 000·1,2ⁿ so'm formula bilan hisoblanadi, bunda n — omonat qo'yilgandan keyin o'tgan yillar soni, ya'ni n = 0, 1, 2, ... . Summa qanday chegaralangan?",
+      "v": [
+        "S > 5 000 000 so'm",
+        "S ≥ 6 000 000 so'm",
+        "S ≤ 5 000 000 so'm",
+        "S ≥ 5 000 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Shart bo'yicha n = 0 ham ruxsat etilgan, chunki omonat qo'yilgan payt boshlang'ich holat. Shunda 1,2 ning nolinchi darajasi 1 ga teng va S = 5 000 000 so'm bo'ladi — bu qiymat haqiqatan erishiladi, shuning uchun S > 5 000 000 mulohazasi yolg'on. Keyingi yillarda summa faqat ortadi. Demak eng kichik qiymat mavjud va S ≥ 5 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#6af9dfbb"
+    },
+    {
+      "q": "y = 4ˣ − 2·2ˣ + 5 funksiyaning qiymatlar to'plamini toping. Yangi o'zgaruvchi kiritish usulidan foydalaning.",
+      "v": [
+        "[5; +∞)",
+        "(4; +∞)",
+        "[4; +∞)",
+        "[0; +∞)"
+      ],
+      "t": 2,
+      "izoh": "u = 2ˣ deb belgilaymiz, bunda u > 0. Shunda 4ˣ = u² bo'ladi va funksiya u² − 2u + 5 ko'rinishga keladi. To'la kvadrat ajratsak (u − 1)² + 4 hosil bo'ladi. u = 1 qiymati ruxsat etilgan, chunki u x = 0 ga mos keladi, shuning uchun eng kichik qiymat 4 erishiladi. Javob [4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-funksiya-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#3c4a790c"
+    },
+    {
+      "q": "f(x) = arcsin x + arccos x funksiyaning qiymatlar to'plamini toping. Avval ifodani soddalashtirishga harakat qiling.",
+      "v": [
+        "[−π/2; π/2]",
+        "[0; π]",
+        "faqat bitta son: π/2",
+        "[0; π/2]"
+      ],
+      "t": 2,
+      "izoh": "Teskari trigonometrik funksiyalar xossasiga ko'ra arcsin x + arccos x = π/2 ayniyat o'rinli, u aniqlanish sohasidagi barcha x lar uchun bajariladi. Demak funksiya o'zgarmas bo'lib, [−1; 1] kesmaning har bir nuqtasida bir xil qiymat beradi. Shuning uchun qiymatlar to'plami bitta sondan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-trig-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#f0c2684f"
+    },
+    {
+      "q": "y = 2arctg x funksiyaning qiymatlar to'plamini toping va chegaralarning ochiqligini asoslang.",
+      "v": [
+        "(−π/2; π/2)",
+        "[−π; π]",
+        "(−2π; 2π)",
+        "(−π; π)"
+      ],
+      "t": 3,
+      "izoh": "Arktangensning qiymatlar to'plami (−π/2; π/2) ochiq oralig'i, chegaralarga hech qachon erishilmaydi. Uni 2 ga ko'paytirsak chegaralar ham 2 ga ko'payadi: (−π; π). Oraliq ochiqligicha qoladi, chunki ko'paytirish erishilmaydigan chegarani erishiladigan qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-trig-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#b06921f5"
+    },
+    {
+      "q": "y = arccos(x/3) + 1 funksiyaning qiymatlar to'plamini toping. Arkkosinus qanday oraliqda qiymat olishini eslang.",
+      "v": [
+        "[0; π]",
+        "[1; π]",
+        "[0; π + 1]",
+        "[1; π + 1]"
+      ],
+      "t": 3,
+      "izoh": "Arkkosinus har doim [0; π] kesmasida qiymat oladi va ikkala chegara ham erishiladi. Argument x/3 aniqlanish sohasida −1 dan 1 gacha barcha qiymatlarni olgani uchun arccos(x/3) ham butun [0; π] ni qamraydi. Unga 1 ni qo'shsak chegaralar 1 ga suriladi va [1; π + 1] hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-trig-qiymatlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#291300e1"
+    },
+    {
+      "q": "f(x) = ⁴√(2x − 10) funksiyaning aniqlanish sohasini toping. To'rtinchi daraja ildizi juft darajali ildiz hisoblanadi.",
+      "v": [
+        "(5; +∞)",
+        "(−∞; 5]",
+        "[10; +∞)",
+        "[5; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Juft darajali ildiz ostidagi ifoda manfiy bo'lmasligi kerak: 2x − 10 ≥ 0. Bundan 2x ≥ 10 va x ≥ 5 chiqadi. Ildiz maxrajda emas, shuning uchun tenglik ruxsat etiladi va x = 5 sohaga kiradi. Javob [5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-darajali-ildiz-4",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#baca416a"
+    },
+    {
+      "q": "f(x) = ⁴√(x² − 16) funksiyaning aniqlanish sohasini toping va tanlagan javobingizni tengsizlik bilan asoslang.",
+      "v": [
+        "[−4; 4]",
+        "(−∞; −4] ∪ [4; +∞)",
+        "[4; +∞)",
+        "(−∞; −16] ∪ [16; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Shart: x² − 16 ≥ 0, ya'ni x² ≥ 16. Bu tengsizlik |x| ≥ 4 ga teng kuchli. Modul ikki tomonni beradi: x ≤ −4 yoki x ≥ 4. Chegaralarda ifoda nolga teng va ildiz mavjud, shuning uchun ular sohaga kiradi. Manfiy tomonni unutish eng ko'p uchraydigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-darajali-ildiz-4",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#79a4b924"
+    },
+    {
+      "q": "f(x) = ∛(x − 7) va g(x) = ⁴√(x − 7) funksiyalarning aniqlanish sohalari bir xilmi? To'g'ri xulosani tanlang.",
+      "v": [
+        "Ikkalasi ham [7; +∞)",
+        "Ikkalasi ham barcha haqiqiy sonlar",
+        "f uchun [7; +∞), g uchun barcha sonlar",
+        "f uchun barcha sonlar, g uchun [7; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Toq darajali ildiz manfiy sondan ham chiqariladi, shuning uchun ∛(x − 7) har qanday x da aniqlangan. Juft darajali ildiz esa manfiy ifodadan chiqarilmaydi, demak x − 7 ≥ 0, ya'ni x ≥ 7 sharti kerak. Shunday qilib sohalar har xil: birinchisi butun o'q, ikkinchisi [7; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-darajali-ildiz-4",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#30bc495f"
+    },
+    {
+      "q": "f(x) funksiyaning aniqlanish sohasi [−2; 8], g(x) niki esa [3; 12] kesmasi. f(x) + g(x) yig'indining aniqlanish sohasi qanday bo'ladi?",
+      "v": [
+        "[3; 8]",
+        "[−2; 12]",
+        "[−2; 3]",
+        "[8; 12]"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi ikkala qo'shiluvchi ham aniqlangan nuqtalardagina mavjud bo'ladi. Demak sohalar kesishmasi olinadi, birlashmasi emas. [−2; 8] va [3; 12] kesmalarning umumiy qismi 3 dan 8 gacha. Javob [3; 8]. Birlashma olib [−2; 12] deyish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-funksiya-birikmasi-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#b34eda56"
+    },
+    {
+      "q": "f(x) funksiyaning sohasi (−∞; 5], g(x) funksiyaning sohasi esa [1; +∞). Ularning ko'paytmasi aniqlangan to'plamni toping.",
+      "v": [
+        "(−∞; +∞)",
+        "[1; 5]",
+        "(1; 5)",
+        "[5; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma ham yig'indi kabi ikkala ko'paytuvchi aniqlangan nuqtalarda mavjud bo'ladi. Shuning uchun sohalar kesishmasini olamiz: x ≤ 5 va x ≥ 1 shartlari bir vaqtda bajarilishi kerak. Bu 1 ≤ x ≤ 5 ni beradi. Ikkala chegara ham yopiq bo'lgani uchun javob [1; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-funksiya-birikmasi-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#b69eb1c6"
+    },
+    {
+      "q": "f(x) va g(x) funksiyalarning sohalari [0; 10] kesmasi, bunda g(x) = x − 4. f(x)/g(x) nisbatning aniqlanish sohasini toping.",
+      "v": [
+        "[0; 10]",
+        "[0; 4) ∪ (4; 10]",
+        "(0; 4) ∪ (4; 10)",
+        "[0; 4]"
+      ],
+      "t": 1,
+      "izoh": "Nisbat aniqlangan bo'lishi uchun ikkala funksiya mavjud bo'lishi va maxraj nolga aylanmasligi kerak. Sohalar bir xil, ya'ni [0; 10]. Maxraj g(x) = x − 4 esa x = 4 da nolga aylanadi, shuning uchun bu nuqta olib tashlanadi. Natijada [0; 4) ∪ (4; 10] hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-funksiya-birikmasi-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#0f274bb9"
+    },
+    {
+      "q": "P(x) = √(x − 2) va Q(x) = lg(10 − x) funksiyalar berilgan. P(x) + Q(x) yig'indining aniqlanish sohasini toping.",
+      "v": [
+        "[2; 10]",
+        "(2; 10)",
+        "(2; 10]",
+        "[2; 10)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi shart ildizdan chiqadi: x − 2 ≥ 0, ya'ni x ≥ 2 va tenglik ruxsat etiladi. Ikkinchi shart logarifmdan chiqadi: 10 − x > 0, ya'ni x < 10 va bu yerda tenglik yo'q. Ikki shartning kesishmasi 2 ≤ x < 10 ni beradi, ya'ni chap chegara yopiq, o'ng chegara ochiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-funksiya-birikmasi-sohasi",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#9bde003e"
+    },
+    {
+      "q": "y = x² − 4x + 1 funksiyaning qiymatlar to'plamida nechta manfiy butun son mavjud?",
+      "v": [
+        "2 ta",
+        "4 ta",
+        "cheksiz ko'p",
+        "3 ta"
+      ],
+      "t": 3,
+      "izoh": "To'la kvadrat ajratamiz: x² − 4x + 1 = (x − 2)² − 3. Eng kichik qiymat −3 bo'lgani uchun qiymatlar to'plami [−3; +∞). Bu to'plamdagi manfiy butun sonlar −3, −2 va −1. Ularni sanasak 3 ta chiqadi, chunki 0 manfiy son hisoblanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-toplamidagi-butun-sonlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#b2fbf2fd"
+    },
+    {
+      "q": "f(x) = 12/(x² + 3) funksiyaning qiymatlar to'plamiga nechta butun son kiradi?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "5 ta",
+        "4 ta"
+      ],
+      "t": 3,
+      "izoh": "Maxraj x² + 3 eng kichik qiymati 3 ga teng, u x = 0 da olinadi va shunda kasr 4 ga teng bo'ladi. Maxraj cheksiz o'sganda kasr nolga intiladi, lekin nolga yetmaydi. Demak qiymatlar to'plami (0; 4]. Undagi butun sonlar 1, 2, 3 va 4 bo'lib, jami 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-toplamidagi-butun-sonlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#c77e04ef"
+    },
+    {
+      "q": "y = 3sin x − 1 funksiyaning qiymatlar to'plamiga tegishli barcha butun sonlar yig'indisini hisoblang.",
+      "v": [
+        "−7",
+        "−4",
+        "0",
+        "−9"
+      ],
+      "t": 0,
+      "izoh": "Sinus −1 dan 1 gacha o'zgaradi, shuning uchun 3sin x ifoda −3 dan 3 gacha qiymat oladi. Bir ayirsak qiymatlar to'plami [−4; 2] bo'ladi. Bu kesmadagi butun sonlar −4, −3, −2, −1, 0, 1 va 2. Ularning yig'indisi −4 − 3 + 0 = −7 ga teng, chunki −2, −1, 1 va 2 juftlari o'zaro yo'qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatlar-toplamidagi-butun-sonlar",
+      "id": "matematika_funk_m02-funksiyaning-aniqlanish-sohasi-va-qiymatlar#86a82070"
+    }
+  ]
+}

@@ -1,0 +1,1306 @@
+{
+  "nom": "Relative clauses (who/which/that)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "The woman ___ lives next door is a lawyer.",
+      "v": [
+        "which",
+        "who",
+        "where",
+        "what"
+      ],
+      "t": 1,
+      "izoh": "Odam, ega — who.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#03a749f3"
+    },
+    {
+      "q": "This is the bakery ___ my mother buys bread.",
+      "v": [
+        "which",
+        "who",
+        "that",
+        "where"
+      ],
+      "t": 3,
+      "izoh": "Joy, «u yerda» — where.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#59ef4a5d"
+    },
+    {
+      "q": "The bag ___ I bought yesterday is already broken.",
+      "v": [
+        "who",
+        "where",
+        "which",
+        "when"
+      ],
+      "t": 2,
+      "izoh": "Narsa, to'ldiruvchi — which.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#66f2ea9e"
+    },
+    {
+      "q": "Which word is missing? 'The engineer ___ built the bridge is famous.'",
+      "v": [
+        "who",
+        "which",
+        "where",
+        "it"
+      ],
+      "t": 0,
+      "izoh": "Ega o'rnida who majburiy (#104).",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a4c80646"
+    },
+    {
+      "q": "Which word is extra? 'The song which she sang it was beautiful.'",
+      "v": [
+        "which",
+        "sang",
+        "it",
+        "beautiful"
+      ],
+      "t": 2,
+      "izoh": "which = it; ortiqcha it (#105).",
+      "qiy": "orta",
+      "id": "ing_b1_m11#6c8b8f76"
+    },
+    {
+      "q": "Choose the correct sentence about the book.",
+      "v": [
+        "The book I read yesterday was great.",
+        "The yesterday I read book was great.",
+        "The book I read it yesterday was great.",
+        "The book where I read yesterday was great."
+      ],
+      "t": 0,
+      "izoh": "Aniqlovchi otdan keyin; to'ldiruvchi olmoshi tushgan (#11).",
+      "qiy": "orta",
+      "id": "ing_b1_m11#fad64ce9"
+    },
+    {
+      "q": "The tourists ___ visit Khiva usually stay two days.",
+      "v": [
+        "which",
+        "where",
+        "who",
+        "what"
+      ],
+      "t": 2,
+      "izoh": "Odam + fe'l (visit): who.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#85773f8f"
+    },
+    {
+      "q": "Kokand is the town ___ my grandfather was born.",
+      "v": [
+        "which",
+        "where",
+        "who",
+        "that"
+      ],
+      "t": 1,
+      "izoh": "born — joy («u yerda tug'ilgan»): where.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#40e1b0ab"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "The car that I want is expensive.",
+        "The car who I want is expensive.",
+        "The car where I want is expensive.",
+        "The car which I want it is expensive."
+      ],
+      "t": 0,
+      "izoh": "Narsa — that/which; ortiqcha it yo'q.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#21ac92a9"
+    },
+    {
+      "q": "I know a farmer ___ grows the sweetest melons in the valley.",
+      "v": [
+        "which",
+        "where",
+        "what",
+        "who"
+      ],
+      "t": 3,
+      "izoh": "farmer — odam, grows — fe'l: who.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#c9df3e1f"
+    },
+    {
+      "q": "The valley ___ is famous for apricots is called Fergana.",
+      "v": [
+        "where",
+        "who",
+        "which",
+        "when"
+      ],
+      "t": 2,
+      "izoh": "Joy, lekin ega o'rnida (is famous) — which, where emas.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#288cd904"
+    },
+    {
+      "q": "Which word is extra? 'The teacher who she teaches maths is from Fergana.'",
+      "v": [
+        "who",
+        "she",
+        "teaches",
+        "from"
+      ],
+      "t": 1,
+      "izoh": "who = she; ortiqcha she (#105).",
+      "qiy": "orta",
+      "id": "ing_b1_m11#137d1bf1"
+    },
+    {
+      "q": "The boy ___ called you this morning is my uncle.",
+      "v": [
+        "which",
+        "where",
+        "who",
+        "whose"
+      ],
+      "t": 2,
+      "izoh": "Odamlar uchun 'who' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#c0ca4fa9"
+    },
+    {
+      "q": "The house ___ he bought last week is very expensive.",
+      "v": [
+        "who",
+        "whose",
+        "which",
+        "where"
+      ],
+      "t": 2,
+      "izoh": "Narsalar uchun 'which' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#581bbd78"
+    },
+    {
+      "q": "That is the village ___ my parents work is far away.",
+      "v": [
+        "which",
+        "when",
+        "who",
+        "where"
+      ],
+      "t": 3,
+      "izoh": "Joyni bildirsa 'where' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#1299785c"
+    },
+    {
+      "q": "The boy ___ phone is ringing left the room.",
+      "v": [
+        "where",
+        "who",
+        "which",
+        "whose"
+      ],
+      "t": 3,
+      "izoh": "Egalikni bildirsa 'whose' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#95c03c88"
+    },
+    {
+      "q": "I will never forget the moment ___ the war ended.",
+      "v": [
+        "when",
+        "who",
+        "which",
+        "where"
+      ],
+      "t": 0,
+      "izoh": "Vaqtni bildirsa 'when' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#8bdbd123"
+    },
+    {
+      "q": "Here is the money ___ you lent me.",
+      "v": [
+        "that",
+        "whose",
+        "who",
+        "where"
+      ],
+      "t": 0,
+      "izoh": "'that' odam va narsa uchun mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#4a464b08"
+    },
+    {
+      "q": "The girl ___ teaches history is from Samarkand.",
+      "v": [
+        "whose",
+        "where",
+        "who",
+        "which"
+      ],
+      "t": 2,
+      "izoh": "Odamlar uchun 'who' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#202e004f"
+    },
+    {
+      "q": "The phone ___ stands near the park is very old.",
+      "v": [
+        "which",
+        "who",
+        "where",
+        "whose"
+      ],
+      "t": 0,
+      "izoh": "Narsalar uchun 'which' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#63078cba"
+    },
+    {
+      "q": "That is the school ___ she was born is near the sea.",
+      "v": [
+        "which",
+        "who",
+        "when",
+        "where"
+      ],
+      "t": 3,
+      "izoh": "Joyni bildirsa 'where' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#69ec6ded"
+    },
+    {
+      "q": "The girl ___ dog barks all night is my neighbour.",
+      "v": [
+        "who",
+        "where",
+        "which",
+        "whose"
+      ],
+      "t": 3,
+      "izoh": "Egalikni bildirsa 'whose' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#79e8e82f"
+    },
+    {
+      "q": "I will never forget the summer ___ she arrived in the city.",
+      "v": [
+        "when",
+        "where",
+        "which",
+        "who"
+      ],
+      "t": 0,
+      "izoh": "Vaqtni bildirsa 'when' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#e07d9a0e"
+    },
+    {
+      "q": "It is the fastest car ___ they sell.",
+      "v": [
+        "when",
+        "where",
+        "who",
+        "that"
+      ],
+      "t": 3,
+      "izoh": "'that' odam va narsa uchun mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#c5abb101"
+    },
+    {
+      "q": "The doctor ___ won the competition is only ten.",
+      "v": [
+        "where",
+        "which",
+        "who",
+        "whose"
+      ],
+      "t": 2,
+      "izoh": "Odamlar uchun 'who' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#437d2046"
+    },
+    {
+      "q": "The film ___ she gave me is really useful.",
+      "v": [
+        "where",
+        "whose",
+        "which",
+        "who"
+      ],
+      "t": 2,
+      "izoh": "Narsalar uchun 'which' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#62fa6cf1"
+    },
+    {
+      "q": "That is the hotel ___ they live is very beautiful.",
+      "v": [
+        "who",
+        "which",
+        "when",
+        "where"
+      ],
+      "t": 3,
+      "izoh": "Joyni bildirsa 'where' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#de38e47f"
+    },
+    {
+      "q": "The doctor ___ house is the biggest is very rich.",
+      "v": [
+        "who",
+        "where",
+        "which",
+        "whose"
+      ],
+      "t": 3,
+      "izoh": "Egalikni bildirsa 'whose' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#f6aa5840"
+    },
+    {
+      "q": "I will never forget the season ___ everything changed.",
+      "v": [
+        "where",
+        "which",
+        "who",
+        "when"
+      ],
+      "t": 3,
+      "izoh": "Vaqtni bildirsa 'when' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a051df63"
+    },
+    {
+      "q": "He told me everything ___ happened.",
+      "v": [
+        "that",
+        "who",
+        "where",
+        "whose"
+      ],
+      "t": 0,
+      "izoh": "'that' odam va narsa uchun mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#6b0e08d6"
+    },
+    {
+      "q": "The teacher ___ wrote this letter is my friend.",
+      "v": [
+        "where",
+        "which",
+        "whose",
+        "who"
+      ],
+      "t": 3,
+      "izoh": "Odamlar uchun 'who' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a7a229c1"
+    },
+    {
+      "q": "The song ___ broke yesterday is fixed now.",
+      "v": [
+        "who",
+        "where",
+        "whose",
+        "which"
+      ],
+      "t": 3,
+      "izoh": "Narsalar uchun 'which' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9385f3d8"
+    },
+    {
+      "q": "That is the office ___ we spent our holiday was lovely.",
+      "v": [
+        "where",
+        "who",
+        "when",
+        "which"
+      ],
+      "t": 0,
+      "izoh": "Joyni bildirsa 'where' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a1c4b1db"
+    },
+    {
+      "q": "The teacher ___ book I borrowed is a teacher.",
+      "v": [
+        "who",
+        "which",
+        "whose",
+        "where"
+      ],
+      "t": 2,
+      "izoh": "Egalikni bildirsa 'whose' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#28c5845a"
+    },
+    {
+      "q": "I will never forget the morning ___ the school opened.",
+      "v": [
+        "where",
+        "when",
+        "who",
+        "which"
+      ],
+      "t": 1,
+      "izoh": "Vaqtni bildirsa 'when' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#cd714950"
+    },
+    {
+      "q": "These are the shoes ___ I want to buy.",
+      "v": [
+        "whose",
+        "who",
+        "when",
+        "that"
+      ],
+      "t": 3,
+      "izoh": "'that' odam va narsa uchun mos keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#52b1502c"
+    },
+    {
+      "q": "The student ___ is standing near the door is my cousin.",
+      "v": [
+        "which",
+        "whose",
+        "who",
+        "where"
+      ],
+      "t": 2,
+      "izoh": "Odamlar uchun 'who' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#0e733827"
+    },
+    {
+      "q": "The bag ___ makes this noise is very old.",
+      "v": [
+        "who",
+        "which",
+        "where",
+        "whose"
+      ],
+      "t": 1,
+      "izoh": "Narsalar uchun 'which' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#c5a69e79"
+    },
+    {
+      "q": "That is the country ___ I grew up is very quiet.",
+      "v": [
+        "where",
+        "when",
+        "who",
+        "which"
+      ],
+      "t": 0,
+      "izoh": "Joyni bildirsa 'where' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#09edf2d7"
+    },
+    {
+      "q": "The student ___ car was stolen called the police.",
+      "v": [
+        "where",
+        "which",
+        "who",
+        "whose"
+      ],
+      "t": 3,
+      "izoh": "Egalikni bildirsa 'whose' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#17803e69"
+    },
+    {
+      "q": "I will never forget the evening ___ we won the match.",
+      "v": [
+        "which",
+        "who",
+        "when",
+        "where"
+      ],
+      "t": 2,
+      "izoh": "Vaqtni bildirsa 'when' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#19a62692"
+    },
+    {
+      "q": "The artist ___ repaired my bike is very skilful.",
+      "v": [
+        "where",
+        "which",
+        "whose",
+        "who"
+      ],
+      "t": 3,
+      "izoh": "Odamlar uchun 'who' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#fd5e6596"
+    },
+    {
+      "q": "The computer ___ you sent me arrived today.",
+      "v": [
+        "which",
+        "who",
+        "where",
+        "whose"
+      ],
+      "t": 0,
+      "izoh": "Narsalar uchun 'which' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#62cb0011"
+    },
+    {
+      "q": "That is the room ___ we first met is now closed.",
+      "v": [
+        "who",
+        "where",
+        "which",
+        "when"
+      ],
+      "t": 1,
+      "izoh": "Joyni bildirsa 'where' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#7a8b8b7c"
+    },
+    {
+      "q": "The artist ___ son is a doctor lives here.",
+      "v": [
+        "whose",
+        "where",
+        "which",
+        "who"
+      ],
+      "t": 0,
+      "izoh": "Egalikni bildirsa 'whose' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#29ccf5e0"
+    },
+    {
+      "q": "I will never forget the week ___ we first met.",
+      "v": [
+        "which",
+        "who",
+        "where",
+        "when"
+      ],
+      "t": 3,
+      "izoh": "Vaqtni bildirsa 'when' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#e5585229"
+    },
+    {
+      "q": "The singer ___ helped me yesterday was very kind.",
+      "v": [
+        "who",
+        "whose",
+        "which",
+        "where"
+      ],
+      "t": 0,
+      "izoh": "Odamlar uchun 'who' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#beb1741c"
+    },
+    {
+      "q": "The bridge ___ is on the table belongs to me.",
+      "v": [
+        "who",
+        "whose",
+        "where",
+        "which"
+      ],
+      "t": 3,
+      "izoh": "Narsalar uchun 'which' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a1e32cae"
+    },
+    {
+      "q": "That is the restaurant ___ my parents work is far away.",
+      "v": [
+        "when",
+        "which",
+        "who",
+        "where"
+      ],
+      "t": 3,
+      "izoh": "Joyni bildirsa 'where' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#f60a930d"
+    },
+    {
+      "q": "The singer ___ phone is ringing left the room.",
+      "v": [
+        "where",
+        "whose",
+        "who",
+        "which"
+      ],
+      "t": 1,
+      "izoh": "Egalikni bildirsa 'whose' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#d11c1d7f"
+    },
+    {
+      "q": "I will never forget the month ___ the war ended.",
+      "v": [
+        "who",
+        "which",
+        "where",
+        "when"
+      ],
+      "t": 3,
+      "izoh": "Vaqtni bildirsa 'when' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#099933e6"
+    },
+    {
+      "q": "The writer ___ lives next to us works in a bank.",
+      "v": [
+        "which",
+        "who",
+        "where",
+        "whose"
+      ],
+      "t": 1,
+      "izoh": "Odamlar uchun 'who' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#f6f3cdfb"
+    },
+    {
+      "q": "The river ___ we watched last night was boring.",
+      "v": [
+        "whose",
+        "who",
+        "which",
+        "where"
+      ],
+      "t": 2,
+      "izoh": "Narsalar uchun 'which' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#cedce26a"
+    },
+    {
+      "q": "That is the park ___ she was born is near the sea.",
+      "v": [
+        "where",
+        "who",
+        "which",
+        "when"
+      ],
+      "t": 0,
+      "izoh": "Joyni bildirsa 'where' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#61128d37"
+    },
+    {
+      "q": "The writer ___ dog barks all night is my neighbour.",
+      "v": [
+        "which",
+        "whose",
+        "who",
+        "where"
+      ],
+      "t": 1,
+      "izoh": "Egalikni bildirsa 'whose' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#22941646"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The man who lives here is old.",
+        "The man whose lives here is old.",
+        "The man where lives here is old.",
+        "The man which lives here is old."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The book where is on the table is mine.",
+        "The book who is on the table is mine.",
+        "The book when is on the table is mine.",
+        "The book which is on the table is mine."
+      ],
+      "t": 3,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~2"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "This is the town where I was born.",
+        "This is the town which I was born.",
+        "This is the town whose I was born.",
+        "This is the town who I was born."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~3"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She is the girl which bag was lost.",
+        "She is the girl whose bag was lost.",
+        "She is the girl who bag was lost.",
+        "She is the girl where bag was lost."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~4"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I remember the day where we met.",
+        "I remember the day when we met.",
+        "I remember the day which we met met.",
+        "I remember the day whose we met."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~5"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The dog whose bit me ran away.",
+        "The dog who bit me ran away.",
+        "The dog that bit me ran away.",
+        "The dog where bit me ran away."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~6"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The teacher which helped us is nice.",
+        "The teacher when helped us is nice.",
+        "The teacher where helped us is nice.",
+        "The teacher who helped us is nice."
+      ],
+      "t": 3,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~7"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The house when we bought is small.",
+        "The house which we bought is small.",
+        "The house who we bought is small.",
+        "The house whose we bought is small."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~8"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "That is the hotel where we stayed.",
+        "That is the hotel which we stayed.",
+        "That is the hotel whose we stayed.",
+        "That is the hotel who we stayed."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~9"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "He is the boy where father is a pilot.",
+        "He is the boy who father is a pilot.",
+        "He is the boy which father is a pilot.",
+        "He is the boy whose father is a pilot."
+      ],
+      "t": 3,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~10"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Summer is the season when it is hot.",
+        "Summer is the season where it is hot.",
+        "Summer is the season whose it is hot.",
+        "Summer is the season which it is hot."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~11"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The woman who called you is my aunt.",
+        "The woman where called you is my aunt.",
+        "The woman which called you is my aunt.",
+        "The woman whose called you is my aunt."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~12"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The car where he drives is red.",
+        "The car when he drives is red.",
+        "The car which he drives is red.",
+        "The car who he drives is red."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~13"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "This is the school which I study.",
+        "This is the school where I study.",
+        "This is the school who I study.",
+        "This is the school when I study."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~14"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I know a man where son sings well.",
+        "I know a man whose son sings well.",
+        "I know a man who son sings well.",
+        "I know a man which son sings well."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~15"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The film whose we saw was long.",
+        "The film that we saw was long.",
+        "The film who we saw was long.",
+        "The film where we saw was long."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~16"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The city where they live is big.",
+        "The city which they live is big.",
+        "The city who they live is big.",
+        "The city whose they live is big."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~17"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The student who won is happy.",
+        "The student where won is happy.",
+        "The student which won is happy.",
+        "The student when won is happy."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~18"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The phone which I lost was new.",
+        "The phone where I lost was new.",
+        "The phone whose I lost was new.",
+        "The phone who I lost was new."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~19"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She is the nurse where car is blue.",
+        "She is the nurse whose car is blue.",
+        "She is the nurse which car is blue.",
+        "She is the nurse who car is blue."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#9a16dc9c~20"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "The man which lives here is kind.",
+        "The man who lives here is kind.",
+        "The town where I live is small.",
+        "The book which I read was good."
+      ],
+      "t": 0,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "The house where we met is old.",
+        "The girl who sings is my sister.",
+        "The day when we won was great.",
+        "The book who is red is mine."
+      ],
+      "t": 3,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7~2"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "The car that he sold is fast.",
+        "The boy whose bag is big left.",
+        "The city which I was born is far.",
+        "The city where I was born is far."
+      ],
+      "t": 2,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7~3"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "She is the girl who helped me.",
+        "This is the shop where I work.",
+        "That is the film that I like.",
+        "She is the girl which helped me."
+      ],
+      "t": 3,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7~4"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "The house which we bought is new.",
+        "The house who we bought is new.",
+        "The man who called me is here.",
+        "The park where we play is big."
+      ],
+      "t": 1,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7~5"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "The dog that barks is mine.",
+        "I remember the day where we met.",
+        "I remember the day when we met.",
+        "The woman who sang is famous."
+      ],
+      "t": 1,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7~6"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "The teacher which teaches us is old.",
+        "The pen that I lost was blue.",
+        "The teacher who teaches us is old.",
+        "The room where I sleep is small."
+      ],
+      "t": 0,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7~7"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "The place where we ate was nice.",
+        "The car which is fast is his.",
+        "The boy who bag is red is here.",
+        "The boy whose bag is red is here."
+      ],
+      "t": 2,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7~8"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "The film that we saw was sad.",
+        "The man who won is happy.",
+        "This is the school where I study.",
+        "This is the school which I study."
+      ],
+      "t": 3,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7~9"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "The song who I like is old.",
+        "The city where they live is loud.",
+        "The girl who dances is tall.",
+        "The song that I like is old."
+      ],
+      "t": 0,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7~10"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "The moment when we won was great.",
+        "The doctor who helped us left.",
+        "The book that I read was long.",
+        "The moment where we won was great."
+      ],
+      "t": 3,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7~11"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "The boy who runs is fast.",
+        "The bag that she has is new.",
+        "The river where we swam is deep.",
+        "The river which we swam is deep."
+      ],
+      "t": 3,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7~12"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "The nurse whose helped me is kind.",
+        "The nurse who helped me is kind.",
+        "The house where I live is old.",
+        "The car that he drives is red."
+      ],
+      "t": 0,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7~13"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "The year where we met was 2010.",
+        "The year when we met was 2010.",
+        "The man who spoke was calm.",
+        "The shop that closed was busy."
+      ],
+      "t": 0,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7~14"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "The bridge that fell was old.",
+        "The people who live here are nice.",
+        "The people which live here are nice.",
+        "The town where I grew up is quiet."
+      ],
+      "t": 2,
+      "izoh": "Xato relative pronoun ishlatilgan gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#a606a2a7~15"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "I know who a girl sings well.",
+        "I know a girl who sings well.",
+        "I know a girl sings who well.",
+        "A girl I know who sings well."
+      ],
+      "t": 1,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#3c9917c0"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "This is the house where I live.",
+        "This is the house I live where.",
+        "Where I live is the house this.",
+        "This is where the house I live."
+      ],
+      "t": 0,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#3c9917c0~2"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "The car which he bought is fast.",
+        "Which the car he bought is fast.",
+        "The car is fast which he bought.",
+        "The car he bought which is fast."
+      ],
+      "t": 0,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#3c9917c0~3"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "The woman is she whose son a doctor.",
+        "She is the woman son whose is a doctor.",
+        "She whose is the woman son a doctor.",
+        "She is the woman whose son is a doctor."
+      ],
+      "t": 3,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#3c9917c0~4"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "I met the man who helped us.",
+        "I met who the man helped us.",
+        "The man I met us who helped.",
+        "I met the man helped who us."
+      ],
+      "t": 0,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#3c9917c0~5"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "That is the day we met when.",
+        "That is the day when we met.",
+        "When we met is the day that.",
+        "That is when the day we met."
+      ],
+      "t": 1,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#3c9917c0~6"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "The book was long that I read it.",
+        "That the book I read was long.",
+        "The book that I read was long.",
+        "The book I that read was long."
+      ],
+      "t": 2,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#3c9917c0~7"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "He lives in a city big which is.",
+        "He lives in a city which is big.",
+        "He lives which in a city is big.",
+        "A city is big he lives which in."
+      ],
+      "t": 1,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#3c9917c0~8"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "Whose the boy bag is blue left.",
+        "The boy is blue whose bag left.",
+        "The boy whose bag is blue left.",
+        "The boy bag whose is blue left."
+      ],
+      "t": 2,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#3c9917c0~9"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "This is the park where we play.",
+        "This is where the park we play.",
+        "This is the park we play where.",
+        "Where we play the park is this."
+      ],
+      "t": 0,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m11#3c9917c0~10"
+    }
+  ]
+}

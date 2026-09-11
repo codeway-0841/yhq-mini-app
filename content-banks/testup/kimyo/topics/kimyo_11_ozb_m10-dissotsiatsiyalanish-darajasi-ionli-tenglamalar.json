@@ -1,0 +1,531 @@
+{
+  "nom": "10-mavzu. Dissotsiatsiyalanish darajasi. Qisqa va to'liq ionli tenglamalar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Eritmadagi dissotsiatsiyalangan molekulalar sonining umumiy molekulalar soniga nisbati nima deb ataladi?",
+      "v": [
+        "Dissotsiatsiyalanish darajasi",
+        "Eruvchanlik koeffitsiyenti",
+        "Molyar konsentratsiya",
+        "Gidroliz darajasi"
+      ],
+      "t": 0,
+      "izoh": "Eritmadagi dissotsiatsiyalangan molekulalar sonini umumiy molekular soniga nisbatini dissotsiatsiyalanish darajasi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#7b1fdb0c"
+    },
+    {
+      "q": "Dissotsiatsiyalanish darajasi qanday harf bilan belgilanadi?",
+      "v": [
+        "α (alfa) bilan",
+        "β (beta) bilan",
+        "γ (gamma) bilan",
+        "ω (omega) bilan"
+      ],
+      "t": 0,
+      "izoh": "Dissotsiatsiyalanish darajasi α (alfa) bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#411a631f"
+    },
+    {
+      "q": "Dissotsiatsiyalanish darajasi formulasi qanday ifodalanadi?",
+      "v": [
+        "α = n/N",
+        "α = N/n",
+        "α = n·N",
+        "α = n + N"
+      ],
+      "t": 0,
+      "izoh": "α = n/N, bu yerda n — dissotsiatsiyalangan molekulalar soni, N — eritmadagi umumiy molekulalar soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#7f641e2d"
+    },
+    {
+      "q": "α = n/N formulasida N nimani anglatadi?",
+      "v": [
+        "Eritmadagi umumiy molekulalar sonini",
+        "Dissotsiatsiyalangan molekulalar sonini",
+        "Ionlar sonini",
+        "Eritma hajmini"
+      ],
+      "t": 0,
+      "izoh": "N — eritmadagi umumiy molekulalar soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#804b16af"
+    },
+    {
+      "q": "1 mol sulfat kislota eritmasida molekulalarning yarmi ionlarga ajralgan bo'lsa, dissotsiatsiyalanish darajasi nechaga teng?",
+      "v": [
+        "0,5",
+        "0,25",
+        "1",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "α = 3,01·10^23 / 6,02·10^23 = 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#e7143e40"
+    },
+    {
+      "q": "Dissotsiatsiyalanish darajasi 0,5 bo'lsa, uni foizlarda qanday ifodalaymiz?",
+      "v": [
+        "50 %",
+        "5 %",
+        "0,5 %",
+        "25 %"
+      ],
+      "t": 0,
+      "izoh": "α % = α·100 % = 0,5·100 = 50 %.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#6d87502a"
+    },
+    {
+      "q": "Elektrolitlar dissotsiatsiyalanish darajasiga ko'ra shartli ravishda nechta guruhga bo'linadi?",
+      "v": [
+        "3 ta guruhga",
+        "2 ta guruhga",
+        "4 ta guruhga",
+        "5 ta guruhga"
+      ],
+      "t": 0,
+      "izoh": "Elektrolitlar shartli ravishda 3 ta guruhga bo'linadi: kuchsiz, o'rtacha kuchli va kuchli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#5baa96c2"
+    },
+    {
+      "q": "Kuchsiz elektrolitlarning dissotsiatsiyalanish darajasi qanday oraliqda bo'ladi?",
+      "v": [
+        "α % < 3 %",
+        "3 % < α % < 30 %",
+        "α % > 30 %",
+        "α % = 100 %"
+      ],
+      "t": 0,
+      "izoh": "Kuchsiz elektrolitlar: α % < 3 %.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#00a9fc80"
+    },
+    {
+      "q": "O'rtacha kuchli elektrolitlarning dissotsiatsiyalanish darajasi qanday oraliqda bo'ladi?",
+      "v": [
+        "3 % < α % < 30 %",
+        "α % < 3 %",
+        "α % > 30 %",
+        "α % = 50 %"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha kuchli elektrolitlar: 3 % < α % < 30 %.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#57c28c4a"
+    },
+    {
+      "q": "Kuchli elektrolitlarning dissotsiatsiyalanish darajasi qanday bo'ladi?",
+      "v": [
+        "α % > 30 %",
+        "α % < 3 %",
+        "3 % < α % < 30 %",
+        "α % = 0 %"
+      ],
+      "t": 0,
+      "izoh": "Kuchli elektrolitlar: α % > 30 %.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#289c140b"
+    },
+    {
+      "q": "Dissotsiatsiyalanish darajasi nimaga bog'liq bo'ladi?",
+      "v": [
+        "Erigan modda va erituvchining tabiatiga, eritmaning konsentratsiya va haroratiga",
+        "Faqat eritma rangiga",
+        "Faqat idish hajmiga",
+        "Faqat bosimga"
+      ],
+      "t": 0,
+      "izoh": "Dissotsiatsiyalanish darajasi erigan moddaning va erituvchining tabiatiga, eritmaning konsentratsiya va haroratiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#996a37e1"
+    },
+    {
+      "q": "Qaysi elektrolitlar suvli eritmalarida konsentratsiyaning qandayligidan qat'i nazar ionlarga to'liq dissotsiatsiyalanadi?",
+      "v": [
+        "Ionli kristall panjaraga ega bo'lgan moddalar",
+        "Qutbsiz kovalent bog'lanishli moddalar",
+        "Organik kislotalar",
+        "Shakar kabi moddalar"
+      ],
+      "t": 0,
+      "izoh": "To'liq dissotsiatsiyalanadigan elektrolitlarga ionli kristall panjaraga ega bo'lgan moddalar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#398f6fd0"
+    },
+    {
+      "q": "Qisman dissotsiatsiyalanadigan elektrolitlarning eritmalari qachon dissotsiatsiyalanadi?",
+      "v": [
+        "Suyultirilgandagina",
+        "Qaynatilgandagina",
+        "Muzlatilgandagina",
+        "Kristallangandagina"
+      ],
+      "t": 0,
+      "izoh": "Qisman dissotsiatsiyalanadigan elektrolitlarning eritmalarini suyultirilgandagina dissotsiatsiyalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#5f086c36"
+    },
+    {
+      "q": "Elektrolit eritmalar orasida boradigan reaksiyalar nima deb qaraladi?",
+      "v": [
+        "Ionlarning almashinish reaksiyalari",
+        "Qaytarilish reaksiyalari",
+        "Parchalanish reaksiyalari",
+        "Yonish reaksiyalari"
+      ],
+      "t": 0,
+      "izoh": "Elektrolit eritmalar orasida boradigan reaksiyalar ionlarning almashinish reaksiyalari deb qaraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#e2b6d1bc"
+    },
+    {
+      "q": "Ionli tenglamalarni tuzishda kuchsiz elektrolitlar, suvda erimaydigan cho'kma moddalar va gazlar qanday yoziladi?",
+      "v": [
+        "Molekulyar formulalari yoziladi",
+        "Ionlar ko'rinishida yoziladi",
+        "Yozilmaydi",
+        "Faqat koeffitsiyenti yoziladi"
+      ],
+      "t": 0,
+      "izoh": "Kuchli elektrolit dissotsiatsiyalangan holda, kuchsiz elektrolitlar, cho'kma va gazlar molekulyar formulalari yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#801c1e74"
+    },
+    {
+      "q": "Pb(NO3)2 + 2KJ → PbJ2 + 2KNO3 reaksiyasining qisqa ionli tenglamasi qanday?",
+      "v": [
+        "Pb2+ + 2J- → PbJ2",
+        "K+ + NO3- → KNO3",
+        "Pb2+ + 2NO3- → Pb(NO3)2",
+        "PbJ2 → Pb2+ + 2J-"
+      ],
+      "t": 0,
+      "izoh": "Cho'kma hosil bo'ladigan bu reaksiyada qisqa ionli tenglama: Pb2+ + 2J- → PbJ2↓.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#81570930"
+    },
+    {
+      "q": "Na2CO3 + 2HCl reaksiyasida qanday gaz ajralib chiqadi?",
+      "v": [
+        "CO2",
+        "NH3",
+        "H2",
+        "O2"
+      ],
+      "t": 0,
+      "izoh": "Na2CO3 + 2HCl → 2NaCl + H2O + CO2↑ reaksiyasida karbonat angidrid gazi ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#926c3632"
+    },
+    {
+      "q": "Na2CO3 + 2HCl reaksiyasining qisqa ionli tenglamasi qanday?",
+      "v": [
+        "CO3 2- + 2H+ ↔ CO2↑ + H2O",
+        "Na+ + Cl- → NaCl",
+        "H+ + OH- → H2O",
+        "Na2CO3 → 2Na+ + CO3 2-"
+      ],
+      "t": 0,
+      "izoh": "Qisqa ionli tenglama: CO3 2- + 2H+ ↔ CO2↑ + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#19d938a7"
+    },
+    {
+      "q": "H2SO4 + 2KOH → K2SO4 + 2H2O reaksiyasining qisqa ionli tenglamasi qanday?",
+      "v": [
+        "2H+ + 2OH- → 2H2O",
+        "K+ + SO4 2- → K2SO4",
+        "H2SO4 → 2H+ + SO4 2-",
+        "KOH → K+ + OH-"
+      ],
+      "t": 0,
+      "izoh": "Ionlarga kam dissotsiatsiyalanadigan modda (suv) hosil bo'ladigan bu reaksiyada qisqa ionli tenglama: 2H+ + 2OH- → 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#8a517076"
+    },
+    {
+      "q": "Ba(OH)2 + (NH4)2SO4 reaksiyasida bir vaqtning o'zida nima hosil bo'ladi?",
+      "v": [
+        "Cho'kma, gaz va kam dissotsiatsiyalanadigan modda",
+        "Faqat cho'kma",
+        "Faqat gaz",
+        "Faqat suv"
+      ],
+      "t": 0,
+      "izoh": "Ba(OH)2 + (NH4)2SO4 → BaSO4↓ + 2NH3↑ + 2H2O: bir vaqtda cho'kma, gaz va kam dissotsiatsiyalanadigan modda hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#b70b4701"
+    },
+    {
+      "q": "Ba(OH)2 + (NH4)2SO4 reaksiyasida cho'kma sifatida qanday modda ajraladi?",
+      "v": [
+        "BaSO4",
+        "Ba(OH)2",
+        "(NH4)2SO4",
+        "NH3"
+      ],
+      "t": 0,
+      "izoh": "Reaksiyada BaSO4 cho'kma, NH3 gaz va H2O kam dissotsiatsiyalanadigan modda sifatida hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#fb0065ee"
+    },
+    {
+      "q": "Ionlarning almashinish reaksiyalari necha turga ajratilgan?",
+      "v": [
+        "4 turga",
+        "2 turga",
+        "3 turga",
+        "5 turga"
+      ],
+      "t": 0,
+      "izoh": "Cho'kma hosil bo'ladigan, gaz ajraladigan, kam dissotsiatsiyalanadigan modda hosil bo'ladigan va uchalasi birga bo'ladigan — 4 tur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#b07fa6fe"
+    },
+    {
+      "q": "CaCl2 eritmasida α = 80 % bo'lsa, molekulalarning necha foizi dissotsiatsiyalanmagan holda qoladi?",
+      "v": [
+        "20 %",
+        "80 %",
+        "50 %",
+        "10 %"
+      ],
+      "t": 0,
+      "izoh": "100 - 80 = 20 % molekulalar ionlarga ajralmagan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#6dba7dd6"
+    },
+    {
+      "q": "CaCl2 eritmasida dissotsiatsiyalanmagan molekulalar soni 50 ta, α = 80 % bo'lsa, dissotsiatsiyalangan molekulalar soni nechta?",
+      "v": [
+        "200 ta",
+        "100 ta",
+        "400 ta",
+        "50 ta"
+      ],
+      "t": 0,
+      "izoh": "50 ta molekula 20 % ni tashkil etsa, x = 50·80/20 = 200 ta molekula dissotsiatsiyalangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#83d99418"
+    },
+    {
+      "q": "200 ta CaCl2 molekulasi dissotsiatsiyalanganda nechta xlor ioni hosil bo'ladi?",
+      "v": [
+        "400 ta",
+        "200 ta",
+        "100 ta",
+        "600 ta"
+      ],
+      "t": 0,
+      "izoh": "CaCl2 ↔ Ca2+ + 2Cl-: 1 molekuladan 2 ta xlor ioni hosil bo'ladi, x = 200·2/1 = 400 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#504f0866"
+    },
+    {
+      "q": "Erigan moddaning miqdorini molyar konsentratsiya va eritma hajmi orqali topish formulasi qanday?",
+      "v": [
+        "n = CM · V eritma",
+        "n = V / CM",
+        "n = CM / V eritma",
+        "n = CM + V eritma"
+      ],
+      "t": 0,
+      "izoh": "n erigan modda = CM · V eritma formulasi bilan topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#d79d9316"
+    },
+    {
+      "q": "3 l 0,4 M li nitrit kislota eritmasida erigan HNO2 miqdori necha mol?",
+      "v": [
+        "1,2 mol",
+        "0,12 mol",
+        "12 mol",
+        "7,5 mol"
+      ],
+      "t": 0,
+      "izoh": "n = CM·V = 0,4·3 = 1,2 mol HNO2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#eca33e0f"
+    },
+    {
+      "q": "1,2 mol HNO2 ning 0,5 % i ionlarga ajralsa, dissotsiatsiyalangan modda miqdori necha mol?",
+      "v": [
+        "0,006 mol",
+        "0,06 mol",
+        "0,6 mol",
+        "6 mol"
+      ],
+      "t": 0,
+      "izoh": "x = 1,2·0,5/100 = 0,006 mol HNO2 ionlarga ajralgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#cf2c7933"
+    },
+    {
+      "q": "HNO2 dissotsiatsiyalanganda qanday ionlar hosil bo'ladi?",
+      "v": [
+        "H+ va NO2-",
+        "H+ va NO3-",
+        "2H+ va NO2 2-",
+        "H- va NO2+"
+      ],
+      "t": 0,
+      "izoh": "HNO2 ↔ H+ + NO2- ko'rinishda dissotsiatsiyalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#cf2335d2"
+    },
+    {
+      "q": "0,006 mol NO2- ionlari soni nechaga teng?",
+      "v": [
+        "3,612·10^21 ta",
+        "3,612·10^23 ta",
+        "6,02·10^23 ta",
+        "3,612·10^20 ta"
+      ],
+      "t": 0,
+      "izoh": "N(NO2-) = 0,006·6,02·10^23 = 3,612·10^21 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#aec2bccb"
+    },
+    {
+      "q": "1 ta HNO2 molekulasi dissotsiatsiyalanganda nechta NO2- ioni hosil bo'ladi?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 0,
+      "izoh": "HNO2 ↔ H+ + NO2- tenglamaga ko'ra 1 molekuladan 1 ta NO2- ioni hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#c1e37432"
+    },
+    {
+      "q": "Na2SO4 eritmasida dissotsiatsiyalanmagan molekulalar soni 40 ta, α = 75 % bo'lsa, dissotsiatsiyalangan molekulalar soni nechta?",
+      "v": [
+        "120 ta",
+        "40 ta",
+        "75 ta",
+        "160 ta"
+      ],
+      "t": 0,
+      "izoh": "40 ta molekula 25 % ni tashkil etadi (100-75=25), x = 40·75/25 = 120 ta molekula dissotsiatsiyalangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#ff43de81"
+    },
+    {
+      "q": "Bir molekula Na2SO4 dissotsiatsiyalanganda nechta natriy ioni hosil bo'ladi?",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 0,
+      "izoh": "Na2SO4 → 2Na+ + SO4 2-, ya'ni har molekuladan 2 ta natriy ioni hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#a82aac1d"
+    },
+    {
+      "q": "Kuchli elektrolitlar orasiga darslik misolida qaysi moddalar kiritilgan?",
+      "v": [
+        "Suvda yaxshi eriydigan tuzlar, kuchli kislotalar (HCl, HNO3, H2SO4), ishqorlar",
+        "Shakar eritmasi va distillangan suv",
+        "Kuchsiz kislotalar H2S va H2SO3",
+        "Organik kislotalar"
+      ],
+      "t": 0,
+      "izoh": "Kuchli elektrolitlarga suvda yaxshi eriydigan tuzlar, kuchli kislotalar (HCl, HNO3, H2SO4) va ishqorlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#6f3bdd89"
+    },
+    {
+      "q": "Noelektrolitga darslik rasmda keltirilgan misol qaysi?",
+      "v": [
+        "Shakar eritmasi va distillangan suv",
+        "HCl eritmasi",
+        "H2SO4 eritmasi",
+        "NaCl eritmasi"
+      ],
+      "t": 0,
+      "izoh": "Rasmda noelektrolit sifatida shakar eritmasi va distillangan suv ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m10-dissotsiatsiyalanish-darajasi-ionli-tenglamalar#2a079775"
+    }
+  ]
+}

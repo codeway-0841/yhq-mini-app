@@ -1,0 +1,1609 @@
+{
+  "nom": "Ratsional va haqiqiy ko'rsatkichli daraja",
+  "bolim": "Daraja, ildiz va logarifm",
+  "blok": "dari",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Laboratoriya hisobotida ⁵√(a³) ko'rinishidagi ifoda uchradi. Uni kasr ko'rsatkichli daraja shaklida to'g'ri yozgan variantni tanlang.",
+      "v": [
+        "a^(5/3)",
+        "a^(−3/5)",
+        "a^(3/5)",
+        "a¹⁵"
+      ],
+      "t": 2,
+      "izoh": "n-darajali ildiz ta'rifiga ko'ra ⁿ√(aᵐ) = a^(m/n) bo'ladi. Bu yerda ildiz ko'rsatkichi n = 5, ildiz ostidagi daraja esa m = 3. Demak ⁵√(a³) = a^(3/5). Ildiz ko'rsatkichi doim maxrajda turadi, uni suratga chiqarib a^(5/3) yozish tipik xato. Javob: a^(3/5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizdan-kasr-korsatkichga",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#24d8bf5f"
+    },
+    {
+      "q": "Talaba daftariga ∛(x⁷) deb yozdi va uni x^k ko'rinishiga keltirishi kerak. k ning qiymati nimaga teng?",
+      "v": [
+        "7/3",
+        "3/7",
+        "21",
+        "1/21"
+      ],
+      "t": 0,
+      "izoh": "Ta'rifga ko'ra ⁿ√(xᵐ) = x^(m/n). Bu ifodada ildiz ko'rsatkichi 3, ildiz ostidagi daraja 7 ga teng. Shuning uchun k = 7/3 bo'ladi. Ildiz ko'rsatkichini suratga chiqarib 3/7 olish yoki ikkalasini ko'paytirib 21 deyish — eng ko'p uchraydigan xatolar. Javob: 7/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizdan-kasr-korsatkichga",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#78aead9d"
+    },
+    {
+      "q": "Kimyo darsida ⁶√(m⁴) ifodasi uchradi va o'qituvchi uni qisqartirilgan kasr ko'rsatkichli darajada yozishni so'radi. Qaysi variant to'g'ri?",
+      "v": [
+        "m^(3/2)",
+        "m^(−2/3)",
+        "m²⁴",
+        "m^(2/3)"
+      ],
+      "t": 3,
+      "izoh": "Avval ta'rifni qo'llaymiz: ⁶√(m⁴) = m^(4/6). Endi ko'rsatkichdagi kasrni qisqartiramiz: 4/6 = 2/3, demak ifoda m^(2/3) ga teng. Kasrni ag'darib m^(3/2) olish yoki ildiz ko'rsatkichi bilan darajani ko'paytirib m²⁴ olish — tipik xatolar. Javob: m^(2/3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizdan-kasr-korsatkichga",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#09ba5a9f"
+    },
+    {
+      "q": "Navoiydagi zavod hisobida √(∛y) qo'sh ildizi uchraydi va uni bitta kasr ko'rsatkichli darajaga keltirish kerak. Natija qanday bo'ladi?",
+      "v": [
+        "y^(5/6)",
+        "y^(1/6)",
+        "y^(1/5)",
+        "y⁶"
+      ],
+      "t": 1,
+      "izoh": "Ichkaridan boshlaymiz: ∛y = y^(1/3). Endi ustidan kvadrat ildiz olamiz: √(y^(1/3)) = (y^(1/3))^(1/2). Darajaning darajasida ko'rsatkichlar ko'paytiriladi: (1/3)·(1/2) = 1/6. Demak natija y^(1/6). Ko'rsatkichlarni qo'shib y^(5/6) olish — ildizlar ko'paytmasi bilan chalkashtirish. Javob: y^(1/6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizdan-kasr-korsatkichga",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#d3a05a7e"
+    },
+    {
+      "q": "O'qituvchi b^(4/7) darajasini ildiz belgisi orqali yozishni topshirdi. Quyidagi to'rt variantdan qaysi biri to'g'ri javob bo'ladi?",
+      "v": [
+        "⁷√(b⁴)",
+        "⁴√(b⁷)",
+        "⁷√(4b)",
+        "⁴√(7b)"
+      ],
+      "t": 0,
+      "izoh": "a^(m/n) = ⁿ√(aᵐ) ta'rifidan foydalanamiz: kasrning surati ildiz ostidagi daraja, maxraji esa ildiz ko'rsatkichi bo'ladi. Bu yerda surat 4, maxraj 7, demak b^(4/7) = ⁷√(b⁴). Surat bilan maxrajni almashtirib ⁴√(b⁷) yozish tipik xato. Javob: ⁷√(b⁴).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-korsatkichdan-ildizga",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#336fba80"
+    },
+    {
+      "q": "Fermer Aziza hosildorlik modelida p^(1/5) ko'rsatkichini uchratdi va uni ildiz orqali yozmoqchi. Qaysi variant to'g'ri?",
+      "v": [
+        "√(p⁵)",
+        "p⁵",
+        "⁵√p",
+        "1/(⁵√p)"
+      ],
+      "t": 2,
+      "izoh": "Kasr ko'rsatkichning maxraji ildiz ko'rsatkichini, surati esa ildiz ostidagi darajani beradi. Bu yerda surat 1, maxraj 5 bo'lgani uchun p^(1/5) = ⁵√p. Ko'rsatkich musbat, shuning uchun ifoda maxrajga tushmaydi va 1/(⁵√p) javob bo'la olmaydi. Javob: ⁵√p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-korsatkichdan-ildizga",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#3e827818"
+    },
+    {
+      "q": "Fizika masalasida c^(−2/3) ko'paytuvchisi bor va uni faqat ildiz belgisi bilan yozish talab qilinadi. Qaysi ko'rinish to'g'ri?",
+      "v": [
+        "∛(c²)",
+        "1/∛(c²)",
+        "−∛(c²)",
+        "1/∛(c³)"
+      ],
+      "t": 1,
+      "izoh": "Manfiy ko'rsatkich ifodani maxrajga o'tkazadi: c^(−2/3) = 1/c^(2/3). Endi kasr ko'rsatkichni ildizga aylantiramiz: c^(2/3) = ∛(c²). Demak natija 1/∛(c²) bo'ladi. Manfiy ko'rsatkichni ifodaning minus ishorasi deb tushunib −∛(c²) yozish tipik xato. Javob: 1/∛(c²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-korsatkichdan-ildizga",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#a2d06d60"
+    },
+    {
+      "q": "Ustoz doskaga d^(7/2) deb yozdi va o'quvchilardan uni ildiz ko'rinishida ifodalashni so'radi. To'g'ri javob qaysi?",
+      "v": [
+        "⁷√(d²)",
+        "7√d",
+        "1/√(d⁷)",
+        "√(d⁷)"
+      ],
+      "t": 3,
+      "izoh": "Kasr ko'rsatkichda maxraj ildiz ko'rsatkichi bo'ladi: maxraj 2, demak kvadrat ildiz olinadi. Surat 7 esa ildiz ostidagi daraja: d^(7/2) = √(d⁷). Surat va maxrajni almashtirib ⁷√(d²) yozish yoki 7 ni koeffitsient deb chiqarib yuborish — tipik xatolar. Javob: √(d⁷).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-korsatkichdan-ildizga",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#28cce561"
+    },
+    {
+      "q": "Sinovda 8^(2/3) ifodaning aniq qiymatini kalkulyatorsiz hisoblash so'raldi. Quyidagi variantlardan to'g'ri natijani tanlang.",
+      "v": [
+        "2",
+        "4",
+        "64",
+        "16/3"
+      ],
+      "t": 1,
+      "izoh": "Kasr ko'rsatkichni ildizga keltiramiz: 8^(2/3) = (∛8)². ∛8 = 2 bo'lgani uchun natija 2² = 4 ga teng. Avval ildiz, keyin daraja olinadi. Maxrajni tashlab yuborib 8² = 64 olish yoki asosni ko'rsatkichga ko'paytirib 16/3 olish — tipik xatolar. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-korsatkichli-sonli-qiymat",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#3a5c3543"
+    },
+    {
+      "q": "Sirdaryodagi omborda saqlanayotgan g'alla miqdori 16^(3/4) tonna deb yozilgan. Ombordagi g'alla necha tonna ekanini hisoblang.",
+      "v": [
+        "12",
+        "64",
+        "4",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "16^(3/4) ifodani (⁴√16)³ ko'rinishida yozamiz. ⁴√16 = 2, chunki 2⁴ = 16. Endi 2³ = 8 bo'ladi, ya'ni omborda 8 tonna g'alla bor. Asosni ko'rsatkichga ko'paytirib 16·3/4 = 12 deb hisoblash — eng ko'p uchraydigan xato. Javob: 8 tonna.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-korsatkichli-sonli-qiymat",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#21934347"
+    },
+    {
+      "q": "Matematika to'garagida 243^(2/5) ifodaning qiymatini hisoblash topshirig'i berildi. To'g'ri natijani ko'rsating.",
+      "v": [
+        "9",
+        "27",
+        "81",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "243 sonini 3 asosida yozamiz: 243 = 3⁵. U holda 243^(2/5) = (3⁵)^(2/5) bo'ladi va ko'rsatkichlar ko'paytiriladi: 5·(2/5) = 2. Demak natija 3² = 9. Ildizni topgach kubga ko'tarib 27 chiqarish yoki to'rtinchi darajaga ko'tarib 81 olish — tipik xatolar. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-korsatkichli-sonli-qiymat",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#f11fd32f"
+    },
+    {
+      "q": "Anvar kalkulyatorsiz 0,0625^(1/2) ni hisoblamoqchi. To'g'ri qiymat qaysi?",
+      "v": [
+        "0,03125",
+        "0,125",
+        "0,25",
+        "0,5"
+      ],
+      "t": 2,
+      "izoh": "1/2 ko'rsatkichi kvadrat ildizni bildiradi: 0,0625^(1/2) = √0,0625. 0,0625 = 625/10000 bo'lgani uchun ildiz 25/100, ya'ni 0,25 ga teng. Ko'rsatkichni bo'luvchi deb tushunib sonni ikkiga bo'lish (0,03125) yoki 0,0625 = 1/16 deb yozib, ildiz o'rniga maxrajni ikkiga bo'lib 1/8 = 0,125 olish — tipik xatolar. Javob: 0,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-korsatkichli-sonli-qiymat",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#f554116e"
+    },
+    {
+      "q": "Toshkent metrosining yangi bekati loyihasida 125^(4/3) qiymati kerak bo'lib qoldi. U nechaga teng?",
+      "v": [
+        "500",
+        "20",
+        "3125",
+        "625"
+      ],
+      "t": 3,
+      "izoh": "125 = 5³ ekanini ishlatamiz: 125^(4/3) = (5³)^(4/3) = 5⁴ = 625. Xuddi shu natijani ∛125 = 5 topib, so'ng 5⁴ = 625 deb ham olish mumkin. Ildizni olgach darajaga ko'tarish o'rniga ko'paytirib 5·4 = 20 deyish yoki 5⁵ = 3125 olish — tipik xatolar. Javob: 625.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-korsatkichli-sonli-qiymat",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#6c437fa8"
+    },
+    {
+      "q": "27^(−2/3) ifodaning qiymatini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "9",
+        "1/9",
+        "−9",
+        "1/6"
+      ],
+      "t": 1,
+      "izoh": "Manfiy ko'rsatkich teskari songa o'tishni bildiradi: 27^(−2/3) = 1/27^(2/3). Endi 27^(2/3) = (∛27)² = 3² = 9 ni topamiz. Demak butun ifoda 1/9 ga teng. Manfiy ko'rsatkichni javobning minus ishorasi deb olib −9 yozish tipik xato. Javob: 1/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-kasr-korsatkich",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#84ffbbdd"
+    },
+    {
+      "q": "Ilmiy maqolada zichlik koeffitsienti 81^(−3/4) shaklida berilgan. Bu son nechaga teng?",
+      "v": [
+        "−27",
+        "1/9",
+        "1/27",
+        "27"
+      ],
+      "t": 2,
+      "izoh": "Avval manfiy ishorani ajratamiz: 81^(−3/4) = 1/81^(3/4). ⁴√81 = 3, chunki 3⁴ = 81. So'ng 3³ = 27, demak 81^(3/4) = 27 va butun ifoda 1/27 ga teng. Ishorani javobga ko'chirib −27 deyish yoki teskari songa o'tishni unutib 27 qoldirish — tipik xatolar. Javob: 1/27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-kasr-korsatkich",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#5937d6d7"
+    },
+    {
+      "q": "(1/64)^(−2/3) ifodani soddalashtirib, uning son qiymatini toping.",
+      "v": [
+        "16",
+        "1/16",
+        "4",
+        "−16"
+      ],
+      "t": 0,
+      "izoh": "Manfiy ko'rsatkich kasrni ag'daradi: (1/64)^(−2/3) = 64^(2/3). Endi ∛64 = 4 va 4² = 16 bo'ladi. Demak ifoda 16 ga teng. Kasrni ag'darishni unutib 1/16 olish yoki ildizni olib darajaga ko'tarmasdan 4 da to'xtash — tipik xatolar. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-kasr-korsatkich",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#f8e791aa"
+    },
+    {
+      "q": "Muzlatgichdagi harorat modelida 16^(−1/4) ko'paytuvchisi bor. Uni oddiy kasr ko'rinishida yozing.",
+      "v": [
+        "1/2",
+        "2",
+        "−2",
+        "1/4"
+      ],
+      "t": 0,
+      "izoh": "Manfiy ko'rsatkichni ochamiz: 16^(−1/4) = 1/16^(1/4). 16^(1/4) = ⁴√16 = 2, chunki 2⁴ = 16. Demak ifoda 1/2 ga teng. Ko'rsatkichdagi 1/4 ni javobga ko'chirish yoki minusni songa ko'chirib −2 deyish — tipik xatolar. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-kasr-korsatkich",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#52e1760f"
+    },
+    {
+      "q": "Dilnoza 100^(−3/2) ni hisoblab, javobni o'nli kasr shaklida yozdi. U qanday son oldi?",
+      "v": [
+        "0,01",
+        "−1000",
+        "0,001",
+        "0,0001"
+      ],
+      "t": 2,
+      "izoh": "Ifodani teskari songa aylantiramiz: 100^(−3/2) = 1/100^(3/2). 100^(1/2) = 10, so'ng 10³ = 1000, demak 100^(3/2) = 1000. Shuning uchun natija 1/1000 = 0,001. Ildizni olgach kubga ko'tarishni unutgan o'quvchi 1/100 = 0,01 oladi. Javob: 0,001.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-kasr-korsatkich",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#93407dd7"
+    },
+    {
+      "q": "a^(1/2)·a^(1/3) ko'paytmani bitta daraja ko'rinishida yozganda ko'rsatkich qanday bo'ladi?",
+      "v": [
+        "1/6",
+        "5/6",
+        "2/3",
+        "1/5"
+      ],
+      "t": 1,
+      "izoh": "Bir xil asosli darajalar ko'paytirilganda ko'rsatkichlar qo'shiladi: a^(1/2)·a^(1/3) = a^(1/2 + 1/3). Umumiy maxraj 6, demak 3/6 + 2/6 = 5/6. Shuning uchun ko'rsatkich 5/6 ga teng. Ko'rsatkichlarni ko'paytirib 1/6 olish — darajaning darajasi qoidasini bu yerga noto'g'ri qo'llash. Javob: 5/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-kopaytirish-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#dab4d245"
+    },
+    {
+      "q": "Bo'yoq sarfi formulasida x^(3/4)·x^(5/4) ko'paytma uchraydi. Uni soddalashtirilgan holda yozing.",
+      "v": [
+        "x^(15/16)",
+        "x^(1/2)",
+        "x⁸",
+        "x²"
+      ],
+      "t": 3,
+      "izoh": "Asoslar bir xil bo'lgani uchun ko'rsatkichlar qo'shiladi: 3/4 + 5/4 = 8/4 = 2. Shuning uchun ifoda x² ga teng. Ko'rsatkichlarni ko'paytirib x^(15/16) olish yoki ayirib x^(1/2) olish — tipik xatolar. Javob: x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-kopaytirish-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#d089b01c"
+    },
+    {
+      "q": "√7·∛7 ko'paytmani bitta ildiz ostiga keltirsak, qaysi ifoda hosil bo'ladi?",
+      "v": [
+        "⁵√(7⁶)",
+        "⁶√7",
+        "⁶√(7⁵)",
+        "√(7⁵)"
+      ],
+      "t": 2,
+      "izoh": "Ildizlarni kasr ko'rsatkichga o'tkazamiz: √7 = 7^(1/2), ∛7 = 7^(1/3). Ko'paytmada ko'rsatkichlar qo'shiladi: 1/2 + 1/3 = 5/6. Demak natija 7^(5/6) = ⁶√(7⁵). Ko'rsatkichlarni ko'paytirib 7^(1/6) olish yoki surat bilan maxrajni almashtirib ⁵√(7⁶) yozish — tipik xatolar. Javob: ⁶√(7⁵).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-kopaytirish-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#080dcd56"
+    },
+    {
+      "q": "Suv quvurining o'tkazuvchanligi hisobida 5^(0,4)·5^(1,6) ko'paytma paydo bo'ldi. Uning qiymati nechaga teng?",
+      "v": [
+        "25",
+        "5",
+        "125",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "Asos bir xil bo'lgani uchun ko'rsatkichlar qo'shiladi: 0,4 + 1,6 = 2. Demak ifoda 5² = 25 ga teng. Ko'rsatkichlarni ko'paytirgan o'quvchi 5^(0,64) oladi, asosni ikki marta yozib 125 chiqaradi, ko'rsatkichni tashlab yuborsa 5 da qoladi. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-kopaytirish-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#fa72cc03"
+    },
+    {
+      "q": "y^(7/6) : y^(1/2) bo'linmani soddalashtiring va natijani ko'rsating.",
+      "v": [
+        "y^(5/3)",
+        "y^(7/12)",
+        "y^(3/2)",
+        "y^(2/3)"
+      ],
+      "t": 3,
+      "izoh": "Bir xil asosli darajalar bo'linganda ko'rsatkichlar ayiriladi: 7/6 − 1/2. Umumiy maxraj 6 bo'lgani uchun 7/6 − 3/6 = 4/6 = 2/3. Demak natija y^(2/3). Ko'rsatkichlarni qo'shib y^(5/3) olish yoki ularni ko'paytirib ((7/6)·(1/2) = 7/12) y^(7/12) olish — tipik xatolar. Javob: y^(2/3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-bolish-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#21cffb2e"
+    },
+    {
+      "q": "Bug'doy maydonini hisoblashda 6^(5/4) ni 6^(1/4) ga bo'lish amali bajarildi. Natija nechaga teng?",
+      "v": [
+        "36",
+        "6",
+        "1",
+        "√6"
+      ],
+      "t": 1,
+      "izoh": "Bo'linmada ko'rsatkichlar ayiriladi: 5/4 − 1/4 = 4/4 = 1. Demak natija 6¹ = 6 ga teng. Asoslarni ham ko'paytirib 36 olish yoki maxrajlar bir xil bo'lgani uchun ko'rsatkichlar butunlay qisqarib ketadi deb o'ylab 6⁰ = 1 olish — tipik xatolar. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-bolish-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#18cb85c7"
+    },
+    {
+      "q": "⁴√(m⁵) ifodani √m ga bo'lganda hosil bo'ladigan natijani toping.",
+      "v": [
+        "⁴√(m⁷)",
+        "m^(5/8)",
+        "⁴√m",
+        "⁴√(m³)"
+      ],
+      "t": 3,
+      "izoh": "Ikkalasini kasr ko'rsatkichga o'tkazamiz: ⁴√(m⁵) = m^(5/4) va √m = m^(1/2). Bo'linmada ko'rsatkichlar ayiriladi: 5/4 − 2/4 = 3/4. Demak natija m^(3/4) = ⁴√(m³). Ko'rsatkichlarni qo'shgan o'quvchi ⁴√(m⁷) oladi. Javob: ⁴√(m³).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-bolish-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#4ee6b442"
+    },
+    {
+      "q": "Zavod hisobotida 7^(9/4) ni 7^(1/4) ga bo'lish ifodasi uchradi. Uning son qiymatini hisoblang.",
+      "v": [
+        "7",
+        "49",
+        "14",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Bir xil asosli darajalar bo'linganda ko'rsatkichlar ayiriladi: 9/4 − 1/4 = 8/4 = 2. Demak ifoda 7² = 49 ga teng. Ko'rsatkichni 1 deb olib 7 chiqarish yoki asosni ikkilantirib 14 deyish — tipik xatolar. Javob: 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-bolish-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#a6eb4c2c"
+    },
+    {
+      "q": "(a^(2/3))^(9/4) ifodani soddalashtirganda ko'rsatkich qanday bo'ladi?",
+      "v": [
+        "2/3",
+        "35/12",
+        "3/2",
+        "27/8"
+      ],
+      "t": 2,
+      "izoh": "Darajaning darajasida ko'rsatkichlar ko'paytiriladi: (2/3)·(9/4) = 18/12 = 3/2. Demak ifoda a^(3/2) ga teng. Ko'rsatkichlarni qo'shgan o'quvchi 8/12 + 27/12 = 35/12 oladi, bu esa xato. Javob: 3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajaning-darajasi-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#144a9d3c"
+    },
+    {
+      "q": "(x^(−3/5))^(10/3) ifodani soddalashtiring va natijani manfiy ko'rsatkichsiz yozing.",
+      "v": [
+        "1/x²",
+        "x²",
+        "−x²",
+        "1/x⁵"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichlarni ko'paytiramiz: (−3/5)·(10/3) = −30/15 = −2. Demak ifoda x⁻² ga, ya'ni 1/x² ga teng. Manfiy ko'rsatkichni ifodaning ishorasi deb olib −x² yozish — eng ko'p uchraydigan xato. Javob: 1/x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajaning-darajasi-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#e1fee12e"
+    },
+    {
+      "q": "Suyuqlik oqimi modelida (v^(4/7))^(7/2) ko'rinishidagi ifoda hosil bo'ldi. U nimaga teng?",
+      "v": [
+        "v^(8/49)",
+        "v²",
+        "v^(15/14)",
+        "v^(1/2)"
+      ],
+      "t": 1,
+      "izoh": "Darajaning darajasida ko'rsatkichlar ko'paytiriladi: (4/7)·(7/2) = 28/14 = 2. Demak ifoda v² ga teng. Umumiy maxrajga noto'g'ri keltirib, faqat birinchi kasrni kengaytirgan o'quvchi (4·2 + 7)/14 = 15/14 oladi (to'g'ri qo'shganda ham 4/7 + 7/2 = 57/14 chiqadi, ya'ni qo'shish yo'lining o'zi xato). Javob: v².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajaning-darajasi-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#99947706"
+    },
+    {
+      "q": "∛(a⁴) ifodaning kvadrati qanday darajaga teng bo'ladi?",
+      "v": [
+        "a^(2/3)",
+        "a^(16/9)",
+        "a^(8/6)",
+        "a^(8/3)"
+      ],
+      "t": 3,
+      "izoh": "Avval ildizni kasr ko'rsatkichga aylantiramiz: ∛(a⁴) = a^(4/3). Kvadratga ko'tarish darajaning darajasi demakdir: (a^(4/3))² = a^(4/3·2) = a^(8/3). Suratni ham, maxrajni ham ikkilantirgan o'quvchi a^(8/6) oladi va ifoda umuman o'zgarmay qoladi. Javob: a^(8/3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajaning-darajasi-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#3b073d79"
+    },
+    {
+      "q": "√(a·∛a) ifodani bitta kasr ko'rsatkichli daraja shaklida yozing.",
+      "v": [
+        "a^(2/3)",
+        "a^(4/3)",
+        "a^(1/6)",
+        "a^(5/6)"
+      ],
+      "t": 0,
+      "izoh": "Ichkarini soddalashtiramiz: a·∛a = a¹·a^(1/3) = a^(4/3). Endi tashqi kvadrat ildiz ko'rsatkichni 1/2 ga ko'paytiradi: (4/3)·(1/2) = 2/3. Demak ifoda a^(2/3) ga teng. Tashqi ildizni hisobga olmagan o'quvchi a^(4/3) da to'xtab qoladi. Javob: a^(2/3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-ildizlarni-birlashtirish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#3c1e92bd"
+    },
+    {
+      "q": "∛(b²·√b) ifodaning kasr ko'rsatkichli ko'rinishi qanday bo'ladi?",
+      "v": [
+        "b^(5/2)",
+        "b^(7/6)",
+        "b^(5/6)",
+        "b^(5/3)"
+      ],
+      "t": 2,
+      "izoh": "Ildiz ostini yig'amiz: b²·√b = b²·b^(1/2) = b^(5/2). Kub ildiz ko'rsatkichni 1/3 ga ko'paytiradi: (5/2)·(1/3) = 5/6. Demak ifoda b^(5/6) ga teng. Tashqi ildizni hisobga olmagan o'quvchi b^(5/2) deb javob beradi. Javob: b^(5/6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-ildizlarni-birlashtirish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#525ecd11"
+    },
+    {
+      "q": "Qurilishda material qalinligi ⁴√(k³)·√k formulasi bilan topiladi. Bu ifoda qaysi darajaga teng?",
+      "v": [
+        "k^(3/8)",
+        "k^(1/4)",
+        "k^(5/4)",
+        "k^(4/5)"
+      ],
+      "t": 2,
+      "izoh": "Har ikkalasini kasr ko'rsatkichga o'tkazamiz: ⁴√(k³) = k^(3/4) va √k = k^(1/2). Ko'paytmada ko'rsatkichlar qo'shiladi: 3/4 + 2/4 = 5/4. Demak ifoda k^(5/4) ga teng. Ko'rsatkichlarni ko'paytirib 3/8 olish tipik xato. Javob: k^(5/4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-ildizlarni-birlashtirish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#36e78dbe"
+    },
+    {
+      "q": "√(∛(⁴√c)) uch qavatli ildizni bitta daraja ko'rinishida yozing.",
+      "v": [
+        "c^(1/9)",
+        "c^(13/12)",
+        "c^(1/12)",
+        "c^(1/24)"
+      ],
+      "t": 3,
+      "izoh": "Har bir ildizni ko'rsatkichga aylantiramiz: ⁴√c = c^(1/4), uning kub ildizi c^(1/12), uning kvadrat ildizi esa c^(1/24). Ko'rsatkichlar ketma-ket ko'paytiriladi: (1/4)·(1/3)·(1/2) = 1/24. Ko'rsatkichlarni qo'shgan o'quvchi 13/12 oladi. Javob: c^(1/24).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-ildizlarni-birlashtirish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#c77792ce"
+    },
+    {
+      "q": "Dala o'lchovida √3·∛3·⁶√3 ko'paytma uchradi. Uning aniq qiymati nechaga teng?",
+      "v": [
+        "9",
+        "3",
+        "⁶√3",
+        "3^(1/36)"
+      ],
+      "t": 1,
+      "izoh": "Ildizlarni ko'rsatkichga o'tkazamiz: 3^(1/2)·3^(1/3)·3^(1/6). Asos bir xil, demak ko'rsatkichlar qo'shiladi: 3/6 + 2/6 + 1/6 = 1. Shuning uchun ko'paytma 3¹ = 3 ga teng. Ko'rsatkichlarni ko'paytirgan o'quvchi 3^(1/36) oladi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-ildizlarni-birlashtirish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#3b6cb47d"
+    },
+    {
+      "q": "(16a⁸)^(3/4) ifodani soddalashtiring va to'g'ri natijani belgilang.",
+      "v": [
+        "8a⁶",
+        "12a⁶",
+        "8a^(35/4)",
+        "64a⁶"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytmaning darajasi har bir ko'paytuvchiga tarqaladi: 16^(3/4)·a^(8·3/4). ⁴√16 = 2, so'ng 2³ = 8, ya'ni 16^(3/4) = 8. a ning ko'rsatkichi esa 6 bo'ladi. Demak natija 8a⁶. To'rtinchi darajali ildiz o'rniga kvadrat ildiz olib 4³ = 64 chiqarish tipik xato. Javob: 8a⁶.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodani-soddalashtirish-kop-amal",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#3011a38e"
+    },
+    {
+      "q": "(x^(1/3)·y^(2/3))³ ifodani kasr ko'rsatkichsiz ko'rinishga keltiring.",
+      "v": [
+        "xy²",
+        "x³y⁶",
+        "x^(1/9)y^(2/9)",
+        "x³y²"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytmani darajaga ko'targanda har bir ko'paytuvchi darajaga ko'tariladi: (x^(1/3))³·(y^(2/3))³. Ko'rsatkichlar ko'payadi: (1/3)·3 = 1 va (2/3)·3 = 2. Demak natija xy². Qavs ichidagi ko'rsatkichni saqlab qolib x³y⁶ yozish tipik xato. Javob: xy².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodani-soddalashtirish-kop-amal",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#1a182c16"
+    },
+    {
+      "q": "Anor sharbati zavodida ishlab chiqarish hajmi (81n⁴)^(3/4) formula bilan topiladi. Ifodani soddalashtiring.",
+      "v": [
+        "9n³",
+        "27n³",
+        "27n⁴",
+        "3n³"
+      ],
+      "t": 1,
+      "izoh": "Daraja qavs ichidagi har bir ko'paytuvchiga tarqaladi: 81^(3/4)·n^(4·3/4). ⁴√81 = 3, so'ng 3³ = 27; n ning ko'rsatkichi esa 3 bo'ladi. Demak ifoda 27n³ ga teng. Ildizni topgach kubga ko'tarishni unutgan o'quvchi 3n³ deb javob beradi. Javob: 27n³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodani-soddalashtirish-kop-amal",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#13b7c1c2"
+    },
+    {
+      "q": "a^(3/2)·a^(1/2) ko'paytmani a^(1/4) ga bo'lsak, qanday daraja hosil bo'ladi?",
+      "v": [
+        "a^(9/4)",
+        "a^(5/4)",
+        "a^(3/4)",
+        "a^(7/4)"
+      ],
+      "t": 3,
+      "izoh": "Avval ko'paytmani yig'amiz: 3/2 + 1/2 = 2, ya'ni a². Endi bo'lish uchun ko'rsatkichni ayiramiz: 2 − 1/4 = 8/4 − 1/4 = 7/4. Demak natija a^(7/4). Bo'lishda ayirish o'rniga qo'shgan o'quvchi a^(9/4) oladi. Javob: a^(7/4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodani-soddalashtirish-kop-amal",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#0f63b635"
+    },
+    {
+      "q": "((c^(2/5))^(5/2))^(3/8) ko'p qavatli ifodaning eng sodda ko'rinishini toping.",
+      "v": [
+        "c",
+        "c^(8/3)",
+        "c^(3/8)",
+        "c^(3/50)"
+      ],
+      "t": 2,
+      "izoh": "Ichki qavsdan boshlaymiz: (2/5)·(5/2) = 1, demak c^(2/5) ning (5/2)-darajasi c ga teng. Qolgan tashqi daraja bilan c^(3/8) hosil bo'ladi. Oxirgi darajani hisobga olmagan o'quvchi c da to'xtab qoladi, ichki qavsda ko'paytirish o'rniga bo'lgan o'quvchi esa (2/5):(5/2) = 4/25 va 4/25·(3/8) = 3/50 chiqaradi. Javob: c^(3/8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifodani-soddalashtirish-kop-amal",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#f6a2dabb"
+    },
+    {
+      "q": "2^(0,7) va 2^(0,9) sonlarini taqqoslang va to'g'ri munosabatni tanlang.",
+      "v": [
+        "2^(0,7) > 2^(0,9)",
+        "2^(0,7) < 2^(0,9)",
+        "2^(0,7) = 2^(0,9)",
+        "Taqqoslash uchun kalkulyator kerak"
+      ],
+      "t": 1,
+      "izoh": "Asos 2 birdan katta, shuning uchun daraja ko'rsatkich bo'yicha o'suvchi: ko'rsatkich qancha katta bo'lsa, qiymat ham shuncha katta. 0,7 < 0,9 bo'lgani uchun 2^(0,7) < 2^(0,9). Bu qoida haqiqiy ko'rsatkichli darajada ham saqlanadi. Javob: 2^(0,7) < 2^(0,9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqqoslash-bir-asos",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#d3532a7c"
+    },
+    {
+      "q": "0,3^(1,4) va 0,3^(2,1) darajalardan qaysi biri katta ekanini aniqlang.",
+      "v": [
+        "0,3^(1,4) katta",
+        "0,3^(2,1) katta",
+        "Ular teng",
+        "Ikkalasi ham birdan katta"
+      ],
+      "t": 0,
+      "izoh": "Asos 0,3 birdan kichik, demak daraja kamayuvchi: ko'rsatkich ortsa, qiymat kichrayadi. 1,4 < 2,1 bo'lgani uchun 0,3^(1,4) > 0,3^(2,1). Birdan kichik asosda ham katta ko'rsatkich katta son beradi deb o'ylash — tipik xato. Javob: 0,3^(1,4) katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqqoslash-bir-asos",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#40c35e0f"
+    },
+    {
+      "q": "Bank omonatini hisoblashda 1,05^(√2) va 1,05^(1,5) sonlari solishtirilmoqda. Qaysi biri kattaroq?",
+      "v": [
+        "1,05^(√2)",
+        "Ikkala qiymat bir xil",
+        "1,05^(1,5)",
+        "Aniqlash mumkin emas"
+      ],
+      "t": 2,
+      "izoh": "Asos 1,05 birdan katta, shuning uchun katta ko'rsatkich katta qiymat beradi. √2 ≈ 1,41 va bu son 1,5 dan kichik. Demak 1,05^(√2) < 1,05^(1,5), ya'ni ikkinchi son kattaroq. Irratsional ko'rsatkichni o'nli kasr bilan baholash yetarli. Javob: 1,05^(1,5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-bir-asos",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#4365ae43"
+    },
+    {
+      "q": "5^(−0,2) va 5^(0,3) sonlaridan qaysi biri kichik va buning sababi nima?",
+      "v": [
+        "5^(0,3), chunki ko'rsatkichi kasr",
+        "5^(−0,2), chunki u manfiy son",
+        "Ular teng, chunki asos bir xil",
+        "5^(−0,2), chunki ko'rsatkichi kichik"
+      ],
+      "t": 3,
+      "izoh": "Asos 5 birdan katta, demak daraja ko'rsatkich bo'yicha o'sadi. −0,2 < 0,3 bo'lgani uchun 5^(−0,2) < 5^(0,3). Manfiy ko'rsatkich sonni manfiy qilmaydi, u faqat birdan kichik musbat son beradi. Javob: 5^(−0,2), chunki ko'rsatkichi kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-bir-asos",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#8a5b574a"
+    },
+    {
+      "q": "3^(0,6) va 4^(0,6) sonlarini taqqoslaganda qaysi munosabat o'rinli bo'ladi?",
+      "v": [
+        "3^(0,6) > 4^(0,6)",
+        "3^(0,6) = 4^(0,6)",
+        "Munosabat asosga bog'liq emas",
+        "3^(0,6) < 4^(0,6)"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkichlar bir xil va musbat, shuning uchun taqqoslash asoslar bo'yicha bajariladi. Musbat ko'rsatkichda katta asos katta qiymat beradi: 3 < 4 bo'lgani uchun 3^(0,6) < 4^(0,6). Kalkulyator shart emas, daraja funksiyasining monotonligi yetarli. Javob: 3^(0,6) < 4^(0,6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqqoslash-bir-korsatkich",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#3841d80b"
+    },
+    {
+      "q": "Ikki dehqon xo'jaligining unumdorlik ko'rsatkichi 7^(−0,4) va 9^(−0,4) sonlari bilan berilgan. Qaysi biri katta?",
+      "v": [
+        "9^(−0,4)",
+        "Ikkala ko'rsatkich bir xil",
+        "7^(−0,4)",
+        "Ikkalasi ham manfiy son"
+      ],
+      "t": 2,
+      "izoh": "Manfiy ko'rsatkichda daraja teskari songa aylanadi: 7^(−0,4) = 1/7^(0,4) va 9^(−0,4) = 1/9^(0,4). 7^(0,4) < 9^(0,4) bo'lgani uchun teskari sonlarda munosabat almashadi. Demak 7^(−0,4) > 9^(−0,4). Javob: 7^(−0,4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-bir-korsatkich",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#f702df07"
+    },
+    {
+      "q": "(2/3)^(1,2) va (5/6)^(1,2) sonlaridan qaysi biri kichikroq ekanini aniqlang.",
+      "v": [
+        "(2/3)^(1,2)",
+        "(5/6)^(1,2)",
+        "Ular teng",
+        "Har ikkalasi birdan katta"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkich bir xil va musbat, shuning uchun asoslarni solishtiramiz: 2/3 ≈ 0,67 va 5/6 ≈ 0,83, demak 2/3 < 5/6. Musbat ko'rsatkichda kichik asos kichik natija beradi, ya'ni (2/3)^(1,2) < (5/6)^(1,2). Javob: (2/3)^(1,2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-bir-korsatkich",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#033401fb"
+    },
+    {
+      "q": "Uch xil metallning zichlik ko'rsatkichi 11^(0,25), 13^(0,25) va 12^(0,25) sonlari bilan berilgan. To'g'ri o'sish tartibini tanlang.",
+      "v": [
+        "13^(0,25) < 12^(0,25) < 11^(0,25)",
+        "11^(0,25) < 12^(0,25) < 13^(0,25)",
+        "12^(0,25) < 11^(0,25) < 13^(0,25)",
+        "Uchala son ham o'zaro teng"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkich 0,25 hamma uchun bir xil va musbat, demak tartib asoslar tartibi bilan bir xil bo'ladi. 11 < 12 < 13 bo'lgani uchun 11^(0,25) < 12^(0,25) < 13^(0,25). Ko'rsatkich birdan kichik bo'lgani tartibni teskari qilmaydi — bu tipik chalkashlik. Javob: 11^(0,25) < 12^(0,25) < 13^(0,25).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-bir-korsatkich",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#50b4ce6f"
+    },
+    {
+      "q": "√2, ∛3 va ⁶√5 sonlarini umumiy ildiz ko'rsatkichiga keltirib, eng kattasini toping.",
+      "v": [
+        "∛3",
+        "√2",
+        "⁶√5",
+        "Uchtasi ham teng qiymatli"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichlar 1/2, 1/3 va 1/6, ularning umumiy maxraji 6. Har birini oltinchi darajali ildizga keltiramiz: √2 = ⁶√8, ∛3 = ⁶√9, ⁶√5 esa o'zgarmaydi. Endi ildiz ostidagi sonlarni solishtiramiz: 9 > 8 > 5. Demak eng kattasi ∛3. Javob: ∛3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-umumiy-korsatkichga",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#73fe6fb3"
+    },
+    {
+      "q": "Qurilish smetasida ⁴√7 va ∛4 sonlari solishtirilishi kerak. Qaysi biri kattaroq ekanini aniqlang.",
+      "v": [
+        "∛4",
+        "Ular bir xil qiymatga ega",
+        "Faqat taqribiy hisob bilan aniqlanadi",
+        "⁴√7"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkichlar 1/4 va 1/3, umumiy maxraj 12. Ikkala sonni 12-darajaga ko'taramiz: (⁴√7)¹² = 7³ = 343 va (∛4)¹² = 4⁴ = 256. Musbat sonlarda daraja tartibni saqlaydi, 343 > 256 bo'lgani uchun ⁴√7 > ∛4. Javob: ⁴√7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-umumiy-korsatkichga",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#339f3df2"
+    },
+    {
+      "q": "2^(1/2) va 3^(1/3) darajalarini taqqoslash uchun ikkalasi 6-darajaga ko'tarildi. Qaysi xulosa to'g'ri?",
+      "v": [
+        "2^(1/2) > 3^(1/3)",
+        "Ular teng",
+        "3^(1/3) > 2^(1/2)",
+        "Bunday usul bilan taqqoslab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Oltinchi darajaga ko'targanda ko'rsatkichlar 6 ga ko'payadi: (2^(1/2))⁶ = 2³ = 8 va (3^(1/3))⁶ = 3² = 9. Musbat sonlar uchun daraja funksiyasi o'suvchi, shuning uchun tartib saqlanadi. 9 > 8 bo'lgani uchun 3^(1/3) > 2^(1/2). Javob: 3^(1/3) > 2^(1/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-umumiy-korsatkichga",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#40e83132"
+    },
+    {
+      "q": "Ikki o'quvchi ⁵√10 va √3 sonlarini taqqoslashda tortishib qoldi. To'g'ri munosabatni ko'rsating.",
+      "v": [
+        "⁵√10 > √3",
+        "⁵√10 < √3",
+        "⁵√10 = √3",
+        "Ikkalasi ham 2 dan katta"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichlar 1/5 va 1/2, umumiy maxraj 10. Ikkala sonni 10-darajaga ko'taramiz: (⁵√10)¹⁰ = 10² = 100 va (√3)¹⁰ = 3⁵ = 243. 100 < 243 bo'lgani uchun ⁵√10 < √3. Ildiz ko'rsatkichi katta bo'lgani sonni katta qilmaydi. Javob: ⁵√10 < √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-umumiy-korsatkichga",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#ec3ef5c4"
+    },
+    {
+      "q": "a > 1 bo'lsa, a^(√5) va a^(2,3) darajalarining munosabati qanday bo'ladi?",
+      "v": [
+        "a^(√5) > a^(2,3)",
+        "a^(√5) < a^(2,3)",
+        "a^(√5) = a^(2,3)",
+        "a ning qiymatiga qarab har xil"
+      ],
+      "t": 1,
+      "izoh": "Avval ko'rsatkichlarni taqqoslaymiz: √5 ≈ 2,24 va bu son 2,3 dan kichik. Asos birdan katta bo'lgani uchun daraja ko'rsatkich bo'yicha o'sadi. Demak a^(√5) < a^(2,3). Irratsional ko'rsatkichli daraja ham shu monotonlik qoidasiga bo'ysunadi. Javob: a^(√5) < a^(2,3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "haqiqiy-korsatkich-monotonlik",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#a8d15bf6"
+    },
+    {
+      "q": "Asos 0 < a < 1 shartni qanoatlantirsa, a^(π) va a^(3,2) sonlaridan qaysi biri katta?",
+      "v": [
+        "a^(3,2)",
+        "Ular teng",
+        "a^(π)",
+        "Faqat a ning aniq qiymati orqali aytiladi"
+      ],
+      "t": 2,
+      "izoh": "π ≈ 3,14 va bu 3,2 dan kichik. Asos birdan kichik bo'lganda daraja kamayuvchi bo'ladi: kichik ko'rsatkich katta qiymat beradi. Demak a^(π) > a^(3,2). Bu yerda ko'rsatkichning irratsionalligi qoidani o'zgartirmaydi. Javob: a^(π).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "haqiqiy-korsatkich-monotonlik",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#dc322a2b"
+    },
+    {
+      "q": "Quyidagi tasdiqlardan qaysi biri har qanday musbat a va ixtiyoriy haqiqiy x, y uchun to'g'ri?",
+      "v": [
+        "a^x·a^y = a^(x·y)",
+        "a^x + a^y = a^(x+y)",
+        "(a^x)^y = a^(x+y)",
+        "a^x·a^y = a^(x+y)"
+      ],
+      "t": 3,
+      "izoh": "Daraja xossalari ratsional ko'rsatkichdan haqiqiy ko'rsatkichga ham ko'chadi. Bir xil asosli darajalar ko'paytirilganda ko'rsatkichlar qo'shiladi: a^x·a^y = a^(x+y). Ko'rsatkichlarni ko'paytirish darajaning darajasiga tegishli, yig'indi esa umuman bunday soddalashmaydi. Javob: a^x·a^y = a^(x+y).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "haqiqiy-korsatkich-monotonlik",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#9a4d74bb"
+    },
+    {
+      "q": "2^(√3) soni qaysi ikkita ketma-ket butun son orasida joylashganini aniqlang.",
+      "v": [
+        "3 va 4",
+        "2 va 3",
+        "1 va 2",
+        "4 va 5"
+      ],
+      "t": 0,
+      "izoh": "√3 ≈ 1,73 bo'lgani uchun ko'rsatkich 1 va 2 orasida yotadi, demak 2¹ < 2^(√3) < 2². Aniqroq baholaymiz: 2^(1,5) = 2√2 ≈ 2,83 va 1,73 > 1,5 bo'lgani uchun qiymat undan katta, taxminan 3,3. Demak son 3 va 4 orasida. Javob: 3 va 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "haqiqiy-korsatkich-monotonlik",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#9255737d"
+    },
+    {
+      "q": "x^(2/3) = 9 tenglamaning musbat ildizini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "3",
+        "81",
+        "6",
+        "27"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomonni 3/2-darajaga ko'taramiz: (x^(2/3))^(3/2) = 9^(3/2). Chap tomonda ko'rsatkichlar ko'payib 1 bo'ladi, ya'ni x qoladi. O'ng tomon: 9^(3/2) = (√9)³ = 3³ = 27. Demak x = 27. Ko'rsatkichni ag'darishni unutib x = 3 deyish tipik xato. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-korsatkichli-tenglama",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#57cf6724"
+    },
+    {
+      "q": "Suv omborida hajm formulasi V^(3/4) = 8 shaklida berilgan. Hajm V nechaga teng?",
+      "v": [
+        "6",
+        "32",
+        "16",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonni 4/3-darajaga ko'taramiz: V = 8^(4/3). ∛8 = 2, so'ng 2⁴ = 16 bo'ladi. Demak V = 16. Ko'rsatkichni ag'darmasdan 8·3/4 = 6 deb hisoblash — eng ko'p uchraydigan xato. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-korsatkichli-tenglama",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#abed4b82"
+    },
+    {
+      "q": "Optika masalasida x^(−1/2) = 1/5 tenglama hosil bo'ldi. x ning qiymatini toping.",
+      "v": [
+        "25",
+        "5",
+        "1/25",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "Manfiy ko'rsatkichni ochamiz: x^(−1/2) = 1/x^(1/2), demak 1/√x = 1/5 bo'ladi. Bundan √x = 5 va ikkala tomonni kvadratga ko'tarib x = 25 topamiz. Kvadratga ko'tarishni unutib x = 5 deyish yoki manfiy ko'rsatkichni ikki marta qo'llab 1/25 olish — tipik xatolar. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-korsatkichli-tenglama",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#7177129a"
+    },
+    {
+      "q": "Muhandis ⁵√(x²) = 4 tenglamani yechishi kerak. x ning musbat qiymati nechaga teng?",
+      "v": [
+        "10",
+        "32",
+        "20",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "Ildizni kasr ko'rsatkichga o'tkazamiz: x^(2/5) = 4. Ikkala tomonni 5/2-darajaga ko'taramiz: x = 4^(5/2) = (√4)⁵ = 2⁵ = 32. Ko'rsatkichni ag'darmasdan 4·5/2 = 10 deb hisoblash tipik xato. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-korsatkichli-tenglama",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#456c4aaa"
+    },
+    {
+      "q": "Manfiy kasr ko'rsatkichli x^(−1/4) ifoda qaysi x qiymatlarida ma'noga ega bo'ladi?",
+      "v": [
+        "x ≥ 0",
+        "x ≠ 0",
+        "x > 0",
+        "Barcha haqiqiy x"
+      ],
+      "t": 2,
+      "izoh": "Manfiy ko'rsatkich ifodani maxrajga o'tkazadi: x^(−1/4) = 1/⁴√x. Juft darajali ildiz manfiy sondan olinmaydi, demak x ≥ 0 bo'lishi kerak. Maxraj nolga aylanmasligi uchun esa x ≠ 0. Ikkala shartni birlashtirsak x > 0 chiqadi. Javob: x > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#3afbf08f"
+    },
+    {
+      "q": "Nega ∛(−8) qiymati mavjud bo'lsa ham, (−8)^(1/3) kasr ko'rsatkichli daraja sifatida qaralmaydi?",
+      "v": [
+        "Chunki ∛(−8) ning qiymati aslida mavjud emas",
+        "Chunki 1/3 ko'rsatkichi butun son emas",
+        "Chunki manfiy sonning har qanday darajasi manfiy bo'ladi",
+        "Kasr ko'rsatkichli daraja faqat manfiy bo'lmagan asos uchun aniqlanadi"
+      ],
+      "t": 3,
+      "izoh": "∛(−8) = −2, chunki toq darajali ildiz manfiy sondan olinadi. Lekin 1/3 = 2/6 bo'lgani uchun (−8)^(1/3) = (−8)^(2/6) = ⁶√((−8)²) = ⁶√64 = 2 chiqadi va bitta ifoda ikki xil qiymat beradi. Shu ziddiyat tufayli kasr ko'rsatkichli daraja faqat manfiy bo'lmagan asos uchun ta'riflanadi. Javob: kasr ko'rsatkichli daraja faqat manfiy bo'lmagan asos uchun aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#3efa5e09"
+    },
+    {
+      "q": "x ixtiyoriy haqiqiy son bo'lganda ⁶√(x⁶) ifodani soddalashtirsak nima hosil bo'ladi?",
+      "v": [
+        "x",
+        "|x|",
+        "x³",
+        "±x"
+      ],
+      "t": 1,
+      "izoh": "Juft darajali ildiz doim manfiy bo'lmagan qiymat qaytaradi. Shuning uchun ⁶√(x⁶) = |x|, ya'ni x ning moduli. Agar shunchaki x deb yozilsa, manfiy x uchun tenglik buziladi: x = −2 bo'lganda ⁶√64 = 2 chiqadi, −2 emas. Javob: |x|.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#d3e67da7"
+    },
+    {
+      "q": "Domlaning yozuvida (a^(1/2))² = a deb ko'rsatilgan. Bu tenglik qaysi shartda o'rinli bo'ladi?",
+      "v": [
+        "a ≥ 0 bo'lganda",
+        "Barcha haqiqiy a uchun",
+        "Faqat a > 1 bo'lganda",
+        "Faqat a butun son bo'lganda"
+      ],
+      "t": 0,
+      "izoh": "Chap tomonda avval √a olinadi, u esa faqat a ≥ 0 uchun mavjud. Shu shart bajarilganda (√a)² = a bo'ladi. Manfiy a da chap tomon umuman aniqlanmaydi, shuning uchun tenglikni barcha haqiqiy sonlar uchun o'rinli deb bo'lmaydi. Javob: a ≥ 0 bo'lganda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#c599459a"
+    },
+    {
+      "q": "Nol asosli 0^(0,5) va 0^(−0,5) ifodalardan qaysi biri ma'noga ega va nima uchun?",
+      "v": [
+        "Faqat 0^(−0,5), chunki manfiy ko'rsatkich kasrga aylantiradi",
+        "Faqat 0^(0,5), chunki manfiy ko'rsatkichda nol maxrajga tushadi",
+        "Ikkalasi ham ma'noga ega",
+        "Ikkalasi ham ma'noga ega emas"
+      ],
+      "t": 1,
+      "izoh": "Musbat ko'rsatkichda 0^(0,5) = √0 = 0 bo'ladi, ya'ni ifoda aniqlangan. Manfiy ko'rsatkichda esa 0^(−0,5) = 1/√0 ko'rinishga keladi va maxraj nolga aylanadi, bunday amal bajarilmaydi. Demak faqat birinchisi ma'noga ega. Javob: faqat 0^(0,5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#2fc9acd8"
+    },
+    {
+      "q": "⁶√(64a⁹) ifodani kasr ko'rsatkichli daraja orqali soddalashtiring, bu yerda a > 0.",
+      "v": [
+        "2a^(2/3)",
+        "8a^(3/2)",
+        "2a^(3/2)",
+        "2a³"
+      ],
+      "t": 2,
+      "izoh": "Ildizni ko'paytuvchilarga tarqatamiz: ⁶√64·⁶√(a⁹). 64 = 2⁶ bo'lgani uchun ⁶√64 = 2. Ikkinchi qism a^(9/6) = a^(3/2) ga teng. Demak natija 2a^(3/2). Oltinchi darajali ildiz o'rniga kvadrat ildiz olib 8 chiqarish tipik xato. Javob: 2a^(3/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ostidan-chiqarish-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#21c7a74d"
+    },
+    {
+      "q": "⁹√(x⁶) ifodani eng sodda ildiz ko'rinishida yozing, bu yerda x > 0.",
+      "v": [
+        "∛(x³)",
+        "√(x³)",
+        "⁹√(x²)",
+        "∛(x²)"
+      ],
+      "t": 3,
+      "izoh": "Ildizni kasr ko'rsatkichga o'tkazamiz: ⁹√(x⁶) = x^(6/9). Kasrni qisqartiramiz: 6/9 = 2/3, demak x^(2/3) hosil bo'ladi. Bu esa ∛(x²) ga teng. Faqat ildiz ostidagi darajani qisqartirib ildiz ko'rsatkichini o'zgarishsiz qoldirish xatoga olib keladi. Javob: ∛(x²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ostidan-chiqarish-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#c8ce6b60"
+    },
+    {
+      "q": "Ombor devorining balandligi ⁴√(625h¹²) formulasi bilan berilgan va h > 0. Ifodani soddalashtiring.",
+      "v": [
+        "5h³",
+        "25h³",
+        "5h⁸",
+        "5h⁴"
+      ],
+      "t": 0,
+      "izoh": "Ildiz ko'paytuvchilarga tarqaladi: ⁴√625·⁴√(h¹²). 625 = 5⁴ bo'lgani uchun ⁴√625 = 5. Ikkinchi qismda ko'rsatkich 12/4 = 3 bo'ladi. Demak natija 5h³. ⁴√625 ni 25 deb olish — to'rtinchi darajali ildizni kvadrat ildiz bilan chalkashtirish. Javob: 5h³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ostidan-chiqarish-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#840e0c4b"
+    },
+    {
+      "q": "√a·⁴√a·⁸√a ko'paytmani bitta daraja shaklida yozing, bu yerda a > 0.",
+      "v": [
+        "a^(7/8)",
+        "a^(1/64)",
+        "a^(3/14)",
+        "a^(8/7)"
+      ],
+      "t": 0,
+      "izoh": "Har bir ildizni ko'rsatkichga aylantiramiz: a^(1/2)·a^(1/4)·a^(1/8). Umumiy maxraj 8 bo'lgani uchun 4/8 + 2/8 + 1/8 = 7/8. Demak ko'paytma a^(7/8) ga teng. Ko'rsatkichlarni ko'paytirgan o'quvchi a^(1/64) oladi. Javob: a^(7/8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ostidan-chiqarish-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#d40794ce"
+    },
+    {
+      "q": "∛(a⁵) ni ⁶√(a⁴) ga bo'lgandagi natijani soddalashtiring, bu yerda a > 0.",
+      "v": [
+        "a^(1/3)",
+        "a^(7/3)",
+        "a²",
+        "a"
+      ],
+      "t": 3,
+      "izoh": "Ikkalasini kasr ko'rsatkichga o'tkazamiz: a^(5/3) va a^(4/6) = a^(2/3). Bo'linmada ko'rsatkichlar ayiriladi: 5/3 − 2/3 = 3/3 = 1. Demak natija a¹ = a. Ko'rsatkichlarni qo'shgan o'quvchi a^(7/3) oladi. Javob: a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-ostidan-chiqarish-kasr",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#5319d623"
+    },
+    {
+      "q": "Bir yilda korxona daromadi 1,44 marta o'sdi va o'sish yil davomida bir tekis bo'ldi. Yarim yilda daromad necha marta o'sgan?",
+      "v": [
+        "0,72 marta",
+        "1,44 marta",
+        "1,2 marta",
+        "1,22 marta"
+      ],
+      "t": 2,
+      "izoh": "Yarim yillik o'sish koeffitsientini k deb belgilaymiz. Yil ichida ikkita yarim yil ketma-ket kelgani uchun k² = 1,44 bo'ladi. Bundan k = 1,44^(1/2) = √1,44 = 1,2. Ya'ni yarim yilda daromad 1,2 marta, foizda 20 foizga oshgan. O'sishni ikkiga bo'lib 0,72 olish — ko'paytiruvchini yig'indi deb tushunish. Javob: 1,2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-geometrik-osish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#60119a1c"
+    },
+    {
+      "q": "Andijondagi bog'da olma hosili uch yilda 8 marta ko'paydi. O'sish har yili bir xil bo'lsa, bir yilda necha marta ko'paygan?",
+      "v": [
+        "2,67 marta",
+        "2 marta",
+        "3 marta",
+        "4 marta"
+      ],
+      "t": 1,
+      "izoh": "Yillik o'sish koeffitsienti k bo'lsa, uch yilda hosil k³ marta ko'payadi, ya'ni k³ = 8. Bundan k = 8^(1/3) = ∛8 = 2. Demak hosil har yili 2 marta ko'paygan. 8 ni 3 ga bo'lib 2,67 olish — geometrik o'sishni arifmetik deb hisoblash xatosi. Javob: 2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-geometrik-osish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#b2be18ae"
+    },
+    {
+      "q": "Laboratoriya tajribasida bakteriyalar soni 6 soatda 729 marta ko'paydi. Har soatdagi o'sish koeffitsienti nechaga teng?",
+      "v": [
+        "121,5",
+        "6",
+        "3",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "Soatlik koeffitsient k bo'lsa, olti soatda k⁶ = 729 bo'ladi. Demak k = 729^(1/6), 729 = 3⁶ bo'lgani uchun k = 3. Ya'ni bakteriyalar soni har soatda 3 marta ko'paygan. 729 ni 6 ga bo'lib 121,5 olish — geometrik o'sishni arifmetik deb hisoblash xatosi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-geometrik-osish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#a7e7db1a"
+    },
+    {
+      "q": "Sardor omonatga pul qo'ydi va 10 yilda mablag' 2 marta oshdi. Yillik o'sish koeffitsientini daraja ko'rinishida yozing.",
+      "v": [
+        "2¹⁰",
+        "2^(1/10)",
+        "1,2",
+        "0,2"
+      ],
+      "t": 1,
+      "izoh": "Yillik koeffitsient k bo'lsa, o'n yilda k¹⁰ = 2 bo'ladi. Bundan k = 2^(1/10) = ¹⁰√2 ≈ 1,07, ya'ni mablag' har yili taxminan 7 foizga oshadi. Ikkilikni o'nga bo'lib 0,2 olish yoki darajaga ko'tarib 2¹⁰ yozish — tipik xatolar. Javob: 2^(1/10).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-geometrik-osish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#eba36874"
+    },
+    {
+      "q": "Aholi soni har 25 yilda ikki barobar ortadigan shaharda 50 yildan keyin aholi necha marta ko'payadi?",
+      "v": [
+        "4 marta, ya'ni 2²",
+        "2 marta, ya'ni 2¹",
+        "8 marta, ya'ni 2³",
+        "16 marta, ya'ni 2⁴"
+      ],
+      "t": 0,
+      "izoh": "O'sish qonuni N = N₀·2^(t/25) ko'rinishida yoziladi. t = 50 bo'lganda ko'rsatkich 50/25 = 2 ga teng bo'ladi. Demak aholi 2² = 4 marta ko'payadi. Vaqtni davrga bo'lishni unutib 2 marta deb javob berish yoki 2⁵⁰ deb ko'tarish — tipik xatolar. Javob: 4 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-geometrik-osish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#2fbadbbf"
+    },
+    {
+      "q": "Kubsimon idishning hajmi 512 litr, ya'ni 512 dm³. Idish qirrasining uzunligini hajmning kasr ko'rsatkichli darajasi orqali toping.",
+      "v": [
+        "16 dm",
+        "64 dm",
+        "170 dm",
+        "8 dm"
+      ],
+      "t": 3,
+      "izoh": "Kubning hajmi V = a³ formulasi bilan topiladi, demak qirra a = V^(1/3) bo'ladi. 512 = 8³ bo'lgani uchun a = 512^(1/3) = 8 dm. Hajmni uchga bo'lib 170 dm atrofida son olish — kub ildiz o'rniga bo'lishni qo'llash xatosi. Javob: 8 dm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olcham-masshtab",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#55620fba"
+    },
+    {
+      "q": "Ikki o'xshash idishning hajmlari nisbati 27 : 8 ga teng. Ularning mos yon yuzalari nisbati qanday bo'ladi?",
+      "v": [
+        "27 : 8",
+        "3 : 2",
+        "√27 : √8",
+        "9 : 4"
+      ],
+      "t": 3,
+      "izoh": "Chiziqli o'lchamlar nisbati hajmlar nisbatining kub ildiziga teng: (27/8)^(1/3) = 3/2. Yuza esa chiziqli o'lchamning kvadratiga proporsional, demak (3/2)² = 9/4. Shuning uchun yuzalar nisbati 9 : 4. Hajmlar nisbatini o'zgarishsiz ko'chirish yoki chiziqli nisbatda to'xtab qolish — tipik xatolar. Javob: 9 : 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-olcham-masshtab",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#e86eb749"
+    },
+    {
+      "q": "Rezina sharchaning hajmi 8 marta oshirilsa, uning radiusi necha marta ortadi?",
+      "v": [
+        "2 marta",
+        "4 marta",
+        "8 marta",
+        "2,83 marta"
+      ],
+      "t": 0,
+      "izoh": "Shar hajmi radiusning kubiga proporsional: V = (4/3)πr³. Hajm 8 marta ortsa, r³ ham 8 marta ortadi, demak radius 8^(1/3) = 2 marta ortadi. Hajmning o'sishini to'g'ridan-to'g'ri radiusga ko'chirib 8 marta deyish — kasr ko'rsatkichni e'tibordan chetda qoldirish. Javob: 2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olcham-masshtab",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#7b7386ee"
+    },
+    {
+      "q": "Xarita masshtabi o'zgarganda tasvirdagi maydon 16 marta kichraydi. Chiziqli o'lchamlar necha marta kichrayadi?",
+      "v": [
+        "8 marta",
+        "4 marta",
+        "16 marta",
+        "32 marta"
+      ],
+      "t": 1,
+      "izoh": "Yuza chiziqli o'lchamning kvadratiga proporsional. Agar chiziqli o'lcham k marta kichraysa, yuza k² marta kichrayadi, ya'ni k² = 16. Bundan k = 16^(1/2) = 4. Demak chiziqli o'lchamlar 4 marta kichraygan. Maydonning o'zgarishini o'lchamga ko'chirib 16 marta deyish tipik xato. Javob: 4 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olcham-masshtab",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#a3fcbb62"
+    },
+    {
+      "q": "Mayatnik tebranish davri T = 2π·(L/g)^(1/2) formula bilan topiladi. Ip uzunligi 9 marta uzaytirilsa, davr necha marta ortadi?",
+      "v": [
+        "9 marta",
+        "4,5 marta",
+        "3 marta",
+        "1,5 marta"
+      ],
+      "t": 2,
+      "izoh": "Formulada uzunlik 1/2 ko'rsatkich bilan qatnashadi, ya'ni T uzunlikning kvadrat ildiziga proporsional. Uzunlikni 9 marta oshirsak, davr 9^(1/2) = 3 marta ortadi. Uzunlikning o'zgarishini davrga to'g'ridan-to'g'ri ko'chirib 9 marta deyish yoki ikkiga bo'lib 4,5 olish — tipik xatolar. Javob: 3 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-fizika-daraja-qonuni",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#b2f9e91e"
+    },
+    {
+      "q": "Sayyoraning Quyoshdan uzoqligi 4 marta ortsa, aylanish davri T ~ a^(3/2) qonuniga ko'ra necha marta ortadi?",
+      "v": [
+        "8 marta",
+        "6 marta",
+        "4 marta",
+        "16 marta"
+      ],
+      "t": 0,
+      "izoh": "Kepler qonunida davr uzoqlikning 3/2-darajasiga proporsional. Uzoqlikni 4 marta oshirsak, davr 4^(3/2) marta ortadi. Hisoblaymiz: 4^(3/2) = (√4)³ = 2³ = 8. Demak davr 8 marta ortadi. Asosni ko'rsatkichga ko'paytirib 4·3/2 = 6 deb hisoblash tipik xato. Javob: 8 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-fizika-daraja-qonuni",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#e2826fb0"
+    },
+    {
+      "q": "Suv oqimiga qarshilik kuchi tezlikning 3/2-darajasiga proporsional. Tezlik 9 marta oshsa, qarshilik kuchi necha marta ortadi?",
+      "v": [
+        "13,5 marta",
+        "27 marta",
+        "9 marta",
+        "18 marta"
+      ],
+      "t": 1,
+      "izoh": "Bog'lanish F ~ v^(3/2) ko'rinishida. Tezlik 9 marta ortsa, kuch 9^(3/2) marta ortadi. Hisoblaymiz: 9^(3/2) = (√9)³ = 3³ = 27. Demak qarshilik 27 marta ortadi. Tezlikni ko'rsatkichga ko'paytirib 9·3/2 = 13,5 deb hisoblash — kasr ko'rsatkichni ko'paytuvchi deb tushunish. Javob: 27 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-fizika-daraja-qonuni",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#77521140"
+    },
+    {
+      "q": "Radioaktiv moddaning yarim yemirilish davri 8 kun. 12 kundan keyin moddaning qancha qismi qolishini daraja ko'rinishida yozing.",
+      "v": [
+        "2^(−2/3) qism",
+        "1/2 qism",
+        "2^(−12) qism",
+        "2^(−3/2) qism"
+      ],
+      "t": 3,
+      "izoh": "Yemirilish qonuni N = N₀·2^(−t/T) ko'rinishida, bu yerda T = 8 kun va t = 12 kun. Ko'rsatkich −12/8 = −3/2 bo'ladi. Demak qolgan ulush 2^(−3/2) = 1/(2√2) ≈ 0,35, ya'ni taxminan 35 foiz. Vaqtni davrga bo'lishni unutib 2^(−12) yozish tipik xato. Javob: 2^(−3/2) qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-fizika-daraja-qonuni",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#9e43a629"
+    },
+    {
+      "q": "Do'konda narx uch oy davomida ketma-ket 1,1; 1,2 va 1,5 marta oshdi. O'rtacha oylik o'sish koeffitsientini yozing.",
+      "v": [
+        "1,98 : 3",
+        "(1,1 + 1,2 + 1,5) : 3",
+        "1,98^(1/3)",
+        "1,98³"
+      ],
+      "t": 2,
+      "izoh": "Ketma-ket ko'payishlarda umumiy koeffitsient ko'paytmaga teng: 1,1·1,2·1,5 = 1,98. O'rtacha oylik koeffitsient k uchun k³ = 1,98 bo'ladi, demak k = 1,98^(1/3). Bu geometrik o'rtacha; arifmetik o'rtacha olish bu yerda noto'g'ri natija beradi. Javob: 1,98^(1/3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-ortacha-osish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#011c9603"
+    },
+    {
+      "q": "Toshkent va Buxoro orasida yuk tashish narxi 5 yilda 3,2 marta oshdi. Yillik o'rtacha o'sish koeffitsienti qanday yoziladi?",
+      "v": [
+        "3,2⁵",
+        "0,64",
+        "3,2^(1/5)",
+        "1,64"
+      ],
+      "t": 2,
+      "izoh": "Yillik koeffitsient k bo'lsa, besh yilda k⁵ = 3,2 bo'ladi. Bundan k = 3,2^(1/5) = ⁵√3,2 ≈ 1,26, ya'ni narx har yili taxminan 26 foizga oshgan. Narxni yillar soniga bo'lib 0,64 olish — ko'payish koeffitsientini yig'indi deb tushunish xatosi. Javob: 3,2^(1/5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ortacha-osish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#26c67038"
+    },
+    {
+      "q": "Ikki yil ichida talabalar soni 2,25 marta ortdi. Har yilgi o'sish bir xil bo'lsa, u necha foizni tashkil qiladi?",
+      "v": [
+        "112,5%",
+        "150%",
+        "62,5%",
+        "50%"
+      ],
+      "t": 3,
+      "izoh": "Yillik koeffitsient k uchun k² = 2,25 bo'ladi, demak k = 2,25^(1/2) = 1,5. Koeffitsient 1,5 bo'lsa, o'sish 50 foizni tashkil qiladi. Koeffitsientning o'zini foizga aylantirib 150 foiz deyish yoki umumiy 125 foizni ikkiga bo'lib 62,5 foiz olish — tipik xatolar. Javob: 50%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-ortacha-osish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#e214e2f9"
+    },
+    {
+      "q": "Kompaniyada ish unumi 4 chorakda 6,25 marta oshdi. Ikki chorakdagi o'sish koeffitsienti nechaga teng?",
+      "v": [
+        "3,125",
+        "2,5",
+        "1,5625",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "To'rt chorakdagi koeffitsient 6,25 bo'lsa, bir chorakda k = 6,25^(1/4) bo'ladi. Ikki chorakda esa k² = 6,25^(2/4) = 6,25^(1/2) = 2,5. Demak ikki chorakda ish unumi 2,5 marta oshgan. Umumiy o'sishni ikkiga bo'lib 3,125 olish — geometrik o'sishni arifmetik deb hisoblash. Javob: 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-ortacha-osish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#f44fa686"
+    },
+    {
+      "q": "Kvadrat maydon o'lchovida ⁴√300 qiymati chiqdi. Bu son qaysi ikkita ketma-ket butun son orasida joylashgan?",
+      "v": [
+        "4 va 5",
+        "3 va 4",
+        "5 va 6",
+        "16 va 17"
+      ],
+      "t": 0,
+      "izoh": "Butun sonlarning to'rtinchi darajalarini solishtiramiz: 4⁴ = 256 va 5⁴ = 625. 256 < 300 < 625 bo'lgani uchun 4 < ⁴√300 < 5. Demak son 4 va 5 orasida yotadi. 300 ni 4 ga bo'lib 75 atrofida deb o'ylash — ildizni bo'lish bilan chalkashtirish. Javob: 4 va 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-qiymatini-baholash",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#9c0cb1a9"
+    },
+    {
+      "q": "Hisob-kitobda 2^(1,5) qiymati kerak bo'ldi. Bu sonning butun qismi nechaga teng?",
+      "v": [
+        "3",
+        "1",
+        "4",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkichni kasr shaklida yozamiz: 1,5 = 3/2, demak 2^(3/2) = (√2)³ = 2√2. √2 ≈ 1,41 bo'lgani uchun 2√2 ≈ 2,83. Bu sonning butun qismi 2 ga teng. Yaqin butun songa yaxlitlab 3 deb javob berish — butun qism ta'rifini chalkashtirish. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-qiymatini-baholash",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#0829e100"
+    },
+    {
+      "q": "Do'kondagi tarozida 10^(0,5) kg va 3 kg toshlar bor. Qaysi biri og'irroq ekanini asoslab ko'rsating.",
+      "v": [
+        "10^(0,5) kg, chunki 10 > 9",
+        "3 kg, chunki 3 > √10",
+        "Ularning og'irligi teng",
+        "Taqqoslab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "10^(0,5) = √10 ekanini yozib olamiz. Ikkala son musbat bo'lgani uchun ularni kvadratga ko'tarib taqqoslash mumkin: (√10)² = 10 va 3² = 9. 10 > 9 bo'lgani uchun √10 > 3, demak birinchi tosh og'irroq. Javob: 10^(0,5) kg, chunki 10 > 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifoda-qiymatini-baholash",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#ecf7224e"
+    },
+    {
+      "q": "O'quvchi (a^(1/2) + a^(1/2))² ni a² deb hisobladi. Bu hisobda qanday xato bor va to'g'ri natija qanday?",
+      "v": [
+        "To'g'ri natija a, chunki ko'rsatkichlar qo'shiladi",
+        "To'g'ri natija 4a, chunki qavs ichida 2a^(1/2) turibdi",
+        "Xato yo'q, natija haqiqatan a²",
+        "To'g'ri natija 2a, chunki qavsda ikkita had bor"
+      ],
+      "t": 1,
+      "izoh": "Qavs ichida bir xil ikkita had bor: a^(1/2) + a^(1/2) = 2a^(1/2). Uni kvadratga ko'targanda koeffitsient ham kvadratga ko'tariladi: (2a^(1/2))² = 4·a = 4a. Yig'indini ko'paytma deb qarab ko'rsatkichlarni qo'shish — bu yerdagi asosiy xato. Javob: 4a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xato-topish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#c1bf3989"
+    },
+    {
+      "q": "Quyidagi to'rt almashtirishdan qaysi biri noto'g'ri bajarilgan? Har birini kasr ko'rsatkichga o'tkazib tekshiring.",
+      "v": [
+        "⁶√(a²) = a^(1/3)",
+        "√(a⁴) = a²",
+        "⁴√(a⁸) = a^(1/2)",
+        "∛(a⁶) = a²"
+      ],
+      "t": 2,
+      "izoh": "Har birini ta'rif bo'yicha yozamiz: ⁶√(a²) = a^(2/6) = a^(1/3) to'g'ri; √(a⁴) = a^(4/2) = a² to'g'ri; ∛(a⁶) = a^(6/3) = a² to'g'ri. ⁴√(a⁸) da esa a^(8/4) = a² bo'lishi kerak edi, a^(1/2) emas — surat bilan maxraj almashtirib yuborilgan. Javob: ⁴√(a⁸) = a^(1/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xato-topish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#dfff3530"
+    },
+    {
+      "q": "Talaba 4^(3/2) ni hisoblab 6 deb javob berdi. U qanday xatoga yo'l qo'ygan va to'g'ri javob nechaga teng?",
+      "v": [
+        "Ildizni noto'g'ri olgan, to'g'ri javob 12",
+        "Asosni ko'rsatkichga ko'paytirgan, to'g'ri javob 8",
+        "Xato yo'q, javob 6 ga teng",
+        "Ko'rsatkichni ag'dargan, to'g'ri javob 2"
+      ],
+      "t": 1,
+      "izoh": "Kasr ko'rsatkichda avval maxrajga mos ildiz olinadi, so'ng suratga mos darajaga ko'tariladi: 4^(3/2) = (√4)³ = 2³ = 8. Talaba esa 4·(3/2) = 6 deb asosni ko'rsatkichga ko'paytirgan. Javob: asosni ko'rsatkichga ko'paytirgan, to'g'ri javob 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xato-topish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#48059312"
+    },
+    {
+      "q": "a > 0 va m, n natural sonlar bo'lsa, ⁿ√(aᵐ)·ᵐ√(aⁿ) ko'paytma qanday ifodalanadi?",
+      "v": [
+        "a^(m/n + n/m)",
+        "a^(m·n)",
+        "a^((m+n)/(m·n))",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Har bir ildizni kasr ko'rsatkichga aylantiramiz: ⁿ√(aᵐ) = a^(m/n) va ᵐ√(aⁿ) = a^(n/m). Bir xil asosli darajalar ko'paytirilganda ko'rsatkichlar qo'shiladi, demak natija a^(m/n + n/m). Ko'rsatkichlarni ko'paytirgan o'quvchi (m/n)·(n/m) = 1 deb a oladi, bu esa xato. Javob: a^(m/n + n/m).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrli-umumlashtirish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#32280570"
+    },
+    {
+      "q": "p ≠ 0 va x > 0 bo'lsa, (x^p)^(1/p) ifodaning qiymati nimaga teng bo'ladi?",
+      "v": [
+        "x^p",
+        "x^(1/p)",
+        "x",
+        "x^(p²)"
+      ],
+      "t": 2,
+      "izoh": "Darajaning darajasida ko'rsatkichlar ko'paytiriladi: p·(1/p) = 1. Demak (x^p)^(1/p) = x¹ = x bo'ladi. Bu ayniyat asos musbat bo'lgandagina barcha p lar uchun o'rinli. Ko'rsatkichlarni qo'shib x^(p + 1/p) olish tipik xato. Javob: x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrli-umumlashtirish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#b8ea5dce"
+    },
+    {
+      "q": "a > 0 uchun a^(m/n) = ⁿ√(aᵐ) ta'rifida ildiz ko'rsatkichi n qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "n — ixtiyoriy butun son",
+        "n manfiy ham bo'lishi mumkin",
+        "n nolga teng bo'lishi mumkin",
+        "n — birdan katta natural son"
+      ],
+      "t": 3,
+      "izoh": "Ildiz ko'rsatkichi n birdan katta natural son bo'lishi shart, aks holda ildiz tushunchasi ma'noga ega bo'lmaydi. n nolga teng bo'lsa ko'rsatkichdagi maxraj nolga aylanadi, manfiy son esa ildiz ko'rsatkichi sifatida qaralmaydi. Demak n natural va n ≥ 2. Javob: n — birdan katta natural son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrli-umumlashtirish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#83233cd9"
+    },
+    {
+      "q": "a > 1 hamda r < s ratsional sonlar bo'lsa, a^r va a^s darajalar qanday munosabatda bo'ladi?",
+      "v": [
+        "a^r < a^s",
+        "a^r > a^s",
+        "a^r = a^s",
+        "Munosabat r va s ning ishorasiga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Asosi birdan katta bo'lgan daraja ko'rsatkich bo'yicha qat'iy o'suvchi: kichik ko'rsatkichga kichik qiymat mos keladi. r < s bo'lgani uchun a^r < a^s. Bu xossa ratsional ko'rsatkichdan haqiqiy ko'rsatkichga ham ko'chadi va ishoraga bog'liq emas. Javob: a^r < a^s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrli-umumlashtirish",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#e549199a"
+    },
+    {
+      "q": "Sut sexida ishlab chiqarish hajmi P = 50·t^(3/2) formula bilan o'sadi, bu yerda t soatlarda. Hajm 400 birlikka qachon yetadi?",
+      "v": [
+        "8 soat",
+        "2 soat",
+        "4 soat",
+        "16 soat"
+      ],
+      "t": 2,
+      "izoh": "Tenglamani soddalashtiramiz: t^(3/2) = 400 : 50 = 8. Ikkala tomonni 2/3-darajaga ko'taramiz: t = 8^(2/3) = (∛8)² = 2² = 4. Demak 4 soatda hajm 400 birlikka yetadi. Ko'rsatkichni ag'darmasdan t = 8 deb javob berish tipik xato. Javob: 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekstli-kasr-korsatkichli-tenglama",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#a5ad0ccd"
+    },
+    {
+      "q": "Suv havzasining chuqurligi h va yuzasi S orasida S = 200·h^(2/3) bog'lanish bor. S = 800 bo'lganda chuqurlik qanday?",
+      "v": [
+        "6",
+        "2",
+        "64",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Avval h ni ajratamiz: h^(2/3) = 800 : 200 = 4. Ikkala tomonni 3/2-darajaga ko'taramiz: h = 4^(3/2) = (√4)³ = 2³ = 8. Demak chuqurlik 8 birlikka teng. Asosni ko'rsatkichga ko'paytirib 4·3/2 = 6 deb hisoblash — eng ko'p uchraydigan xato. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekstli-kasr-korsatkichli-tenglama",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#0cb9be82"
+    },
+    {
+      "q": "Ustun ko'tara oladigan yuk F = k·d^(4/3) qonuniga bo'ysunadi. Diametr 8 marta oshirilsa, yuk necha marta ortadi?",
+      "v": [
+        "10,7 marta",
+        "16 marta",
+        "8 marta",
+        "32 marta"
+      ],
+      "t": 1,
+      "izoh": "Yuk diametrning 4/3-darajasiga proporsional, demak diametr 8 marta oshsa, yuk 8^(4/3) marta ortadi. Hisoblaymiz: 8^(4/3) = (∛8)⁴ = 2⁴ = 16. Shuning uchun yuk 16 marta ortadi. Diametrni ko'rsatkichga ko'paytirib 8·4/3 ≈ 10,7 deb hisoblash — kasr ko'rsatkichni ko'paytuvchi deb tushunish. Javob: 16 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekstli-kasr-korsatkichli-tenglama",
+      "id": "matematika_dari_m04-ratsional-va-haqiqiy-korsatkichli-daraja#7f9caf13"
+    }
+  ]
+}

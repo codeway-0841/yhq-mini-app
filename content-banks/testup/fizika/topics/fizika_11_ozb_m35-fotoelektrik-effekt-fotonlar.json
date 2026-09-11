@@ -1,0 +1,606 @@
+{
+  "nom": "35-mavzu. Fotoelektrik Effekt Fotonlar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Fotoelektrik effekt (fotoeffekt) hodisasini kim kashf etgan?",
+      "v": [
+        "H. Hertz",
+        "A. Eynshteyn",
+        "M. Plank",
+        "P. Lebedev"
+      ],
+      "t": 0,
+      "izoh": "Fotoeffekt 1887-yilda H. Hertz tomonidan kashf qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#dea49612"
+    },
+    {
+      "q": "Fotoeffekt hodisasini har tomonlama tajribada tadqiq qilgan olim kim?",
+      "v": [
+        "A. Stoletov",
+        "F. Lenard",
+        "R. Milliken",
+        "J. Maksvell"
+      ],
+      "t": 0,
+      "izoh": "Rus olimi A. Stoletov fotoeffektni (F. Lenarddan bexabar) har tomonlama tadqiq qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#cc3f1e2b"
+    },
+    {
+      "q": "Tashqi fotoeffekt nima?",
+      "v": [
+        "Moddadan yorug'lik ta'sirida elektronlarning chiqarilishi",
+        "Metallning qizishi",
+        "Yarimo'tkazgichning o'tkazuvchanligi oshishi",
+        "Elektronlarning yadroga tushishi"
+      ],
+      "t": 0,
+      "izoh": "Tashqi fotoeffekt — moddadan yorug'lik ta'sirida elektronlarning chiqarilishidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#ea3f4e92"
+    },
+    {
+      "q": "Fotoeffektni o'rganish qurilmasining asosini nima tashkil qiladi?",
+      "v": [
+        "Anod va katoddan iborat vakuumli kvars ballon",
+        "Magnit va katushka",
+        "Kondensator va rezistor",
+        "Transformator"
+      ],
+      "t": 0,
+      "izoh": "Qurilma ikkita elektrod — anod va katodga ega kvars ballondan iborat bo'lib, unda vakuum hosil qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#d5f3a2c3"
+    },
+    {
+      "q": "Fotoeffekt qurilmasidagi ballon ichida nega vakuum hosil qilinadi?",
+      "v": [
+        "Elektronlar to'g'ri chiziqli harakat qila olishi uchun",
+        "Metall erimasligi uchun",
+        "Yorug'lik kuchayishi uchun",
+        "Katod qizishi uchun"
+      ],
+      "t": 0,
+      "izoh": "Vakuumda elektronlar va boshqa zarralar to'g'ri chiziqli harakat qila oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#f36dea0c"
+    },
+    {
+      "q": "To'yinish fototoki nimaga to'g'ri proporsional?",
+      "v": [
+        "Tushayotgan yorug'lik oqimiga (intensivligiga)",
+        "Anod kuchlanishiga",
+        "Yopuvchi kuchlanishga",
+        "Katod temperaturasiga"
+      ],
+      "t": 0,
+      "izoh": "Tajribalar to'yinish fototoki tushayotgan yorug'lik oqimiga to'g'ri proporsional ekanini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#200ad6d1"
+    },
+    {
+      "q": "Yopuvchi kuchlanish Uyop nima?",
+      "v": [
+        "Fotoelektronlar anodga yetib bora olmaydigan manfiy kuchlanish",
+        "Anoddagi maksimal musbat kuchlanish",
+        "Katodni qizdiruvchi kuchlanish",
+        "Tok manbai kuchlanishi"
+      ],
+      "t": 0,
+      "izoh": "Uyop — bunday manfiy kuchlanishki, unda fotoelektronlar boshlang'ich tezligi bilan anodga yetib bora olmaydi va fototok nolga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#592bdc0a"
+    },
+    {
+      "q": "Fotoelektronlarning maksimal kinetik energiyasi qanday aniqlanadi?",
+      "v": [
+        "Ek_max = e·Uyop",
+        "Ek_max = hν",
+        "Ek_max = mc²",
+        "Ek_max = q·U"
+      ],
+      "t": 0,
+      "izoh": "Yopuvchi kuchlanishni o'lchab, Ek_max = e·Uyop formula bilan maksimal kinetik energiya aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#5ec2a627"
+    },
+    {
+      "q": "F. Lenard tajribalari yopuvchi kuchlanish nimaga bog'liqligini ko'rsatdi?",
+      "v": [
+        "Yorug'lik chastotasiga chiziqli bog'liq, intensivlikka bog'liq emas",
+        "Intensivlikka chiziqli bog'liq",
+        "Har ikkisiga bog'liq",
+        "Hech biriga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Uyop tushayotgan nurning intensivligiga bog'liq bo'lmasdan, chastotasiga chiziqli bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#c50fcb60"
+    },
+    {
+      "q": "Fotoeffektning birinchi qonuni nima haqida?",
+      "v": [
+        "Fotoelektronlarning maksimal kinetik energiyasi yorug'lik intensivligiga bog'liq emas, chastotaga chiziqli bog'liq",
+        "Fototok kuchlanishga proporsional",
+        "Fotoeffekt har qanday chastotada ro'y beradi",
+        "Fotoelektronlar soni chastotaga proporsional"
+      ],
+      "t": 0,
+      "izoh": "1-qonun: fotoelektronlarning maksimal kinetik energiyasi yorug'lik oqimiga bog'liq emas va tushuvchi nur chastotasiga chiziqli bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#a423b924"
+    },
+    {
+      "q": "Fotoeffektning qizil chegarasi nima?",
+      "v": [
+        "Fotoeffekt ro'y beradigan minimal chastota νmin",
+        "Fotoeffektning maksimal chastotasi",
+        "Ko'rinadigan yorug'lik chastotasi",
+        "Qizil rangning to'lqin uzunligi"
+      ],
+      "t": 0,
+      "izoh": "Har bir modda uchun fotoeffekt ro'y beradigan minimal chastota mavjud bo'lib, u fotoeffektning qizil chegarasi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#fc1ef0d4"
+    },
+    {
+      "q": "Fotoeffektning uchinchi qonuni nima haqida?",
+      "v": [
+        "Vaqt birligida chiqayotgan fotoelektronlar soni yorug'lik oqimiga to'g'ri proporsional, chastotaga bog'liq emas",
+        "Kinetik energiya chastotaga bog'liq",
+        "Fototok kuchlanishga proporsional",
+        "Qizil chegara mavjudligi"
+      ],
+      "t": 0,
+      "izoh": "3-qonun: vaqt birligida chiqayotgan fotoelektronlar soni katodga tushayotgan yorug'lik oqimiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#61bbc20a"
+    },
+    {
+      "q": "Fotoeffekt hodisasi inersiyaga egami?",
+      "v": [
+        "Yo'q, inersiyasiz hodisa",
+        "Ha, sekin ro'y beradi",
+        "Faqat yuqori chastotalarda inersiyali",
+        "Faqat past chastotalarda inersiyali"
+      ],
+      "t": 0,
+      "izoh": "Fotoeffekt inersiyasiz hodisa: yorug'lik to'xtashi bilan fototok yo'qoladi, yorug'lik tushishi bilan paydo bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#23185ef2"
+    },
+    {
+      "q": "Fotoeffekt nazariyasini kim va qachon yaratgan?",
+      "v": [
+        "A. Eynshteyn, 1905-yil",
+        "M. Plank, 1900-yil",
+        "H. Hertz, 1887-yil",
+        "R. Milliken, 1914-yil"
+      ],
+      "t": 0,
+      "izoh": "Fotoeffekt nazariyasi 1905-yilda A. Eynshteyn tomonidan asoslab berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#bd93b588"
+    },
+    {
+      "q": "Fotoeffekt uchun Eynshteyn tenglamasi qanday?",
+      "v": [
+        "hν = A + mυ²/2",
+        "E = mc²",
+        "hν = eU",
+        "F = ma"
+      ],
+      "t": 0,
+      "izoh": "hν = A + mυ²/2 — foton energiyasining bir qismi chiqish ishiga, qolgani elektron kinetik energiyasiga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#62d88dba"
+    },
+    {
+      "q": "Eynshteyn tenglamasidagi A harfi nimani bildiradi?",
+      "v": [
+        "Elektronning moddadan chiqishi uchun bajariladigan ish",
+        "Amplituda",
+        "Anod kuchlanishi",
+        "Atom massasi"
+      ],
+      "t": 0,
+      "izoh": "A — elektronning moddadan chiqishi uchun bajariladigan ish (chiqish ishi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#c64f3bfb"
+    },
+    {
+      "q": "Eynshteyn tenglamasini yopuvchi kuchlanish orqali qanday yozish mumkin?",
+      "v": [
+        "hν = A + eUyop",
+        "hν = A − eUyop",
+        "hν = eUyop − A",
+        "hν = A·eUyop"
+      ],
+      "t": 0,
+      "izoh": "Maksimal kinetik energiya eUyop ga teng bo'lgani uchun hν = A + eUyop.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#fe2afe32"
+    },
+    {
+      "q": "Eynshteyn tenglamasi qaysi fizik qonunni ifodalaydi?",
+      "v": [
+        "Energiyaning saqlanish qonunini",
+        "Impulsning saqlanish qonunini",
+        "Zaryadning saqlanish qonunini",
+        "Ohm qonunini"
+      ],
+      "t": 0,
+      "izoh": "Eynshteynning fotoeffekt tenglamasi fotoeffekt hodisasi uchun energiyaning saqlanish qonunini ifodalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#ab3f725a"
+    },
+    {
+      "q": "Fotoeffektning qizil chegarasi uchun qanday munosabat to'g'ri?",
+      "v": [
+        "hνmin = A",
+        "hνmin = A + eU",
+        "hνmin = 2A",
+        "hνmin = A/2"
+      ],
+      "t": 0,
+      "izoh": "Qizil chegarada elektronning kinetik energiyasi nolga teng: hνmin = A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#ca677a32"
+    },
+    {
+      "q": "Chiqish ishi A ni to'lqin uzunligi orqali qanday ifodalash mumkin?",
+      "v": [
+        "A = hc/λ0",
+        "A = hλ0/c",
+        "A = c/(hλ0)",
+        "A = h·λ0·c"
+      ],
+      "t": 0,
+      "izoh": "A = hνmin = hc/λ0, bu yerda λ0 — qizil chegaraga to'g'ri kelgan to'lqin uzunligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#11b17f3d"
+    },
+    {
+      "q": "Yopuvchi potensialning chastotaga bog'liqlik grafigi qiyaligi tgα nimaga teng?",
+      "v": [
+        "h/|e|",
+        "h·|e|",
+        "|e|/h",
+        "c/h"
+      ],
+      "t": 0,
+      "izoh": "tgα = h/|e| — bu nisbat Plank doimiysini tajribada aniqlash imkonini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#509703ea"
+    },
+    {
+      "q": "Plank doimiysini fotoeffekt tajribasida aniqlagan olim kim?",
+      "v": [
+        "R. Milliken (1914-yil)",
+        "F. Lenard",
+        "A. Stoletov",
+        "H. Hertz"
+      ],
+      "t": 0,
+      "izoh": "1914-yilda R. Milliken o'tkazgan tajribada Plank doimiysi aniqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#8147e497"
+    },
+    {
+      "q": "1 eV necha J ga teng?",
+      "v": [
+        "1,6·10⁻¹⁹ J",
+        "6,6·10⁻³⁴ J",
+        "3·10⁸ J",
+        "9,1·10⁻³¹ J"
+      ],
+      "t": 0,
+      "izoh": "1 eV = 1,6·10⁻¹⁹ J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#1dfc18eb"
+    },
+    {
+      "q": "Plank doimiysining eV·s larda ifodalangan qiymati qancha?",
+      "v": [
+        "4,136·10⁻¹⁵ eV·s",
+        "6,626·10⁻³⁴ eV·s",
+        "1,05·10⁻³⁴ eV·s",
+        "1,6·10⁻¹⁹ eV·s"
+      ],
+      "t": 0,
+      "izoh": "Amalda h = 4,136·10⁻¹⁵ eV·s qiymat qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#f1d48a62"
+    },
+    {
+      "q": "Metallar ichida kichik chiqish ishiga ega bo'lganlari qaysilar?",
+      "v": [
+        "Ishqoriy metallar: Na, K, Cs, Rb",
+        "Og'ir metallar: Fe, Cu, Pb",
+        "Qimmat metallar: Au, Ag, Pt",
+        "Yengil metallar: Al, Mg"
+      ],
+      "t": 0,
+      "izoh": "Ishqoriy metallar (Na, K, Cs, Rb) kichik chiqish ishiga ega, shuning uchun ularning birikmalari katod qoplashda qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#1538bee9"
+    },
+    {
+      "q": "Seziy oksidli katodning chiqish ishi qancha?",
+      "v": [
+        "1,2 eV",
+        "4,5 eV",
+        "0,5 eV",
+        "12 eV"
+      ],
+      "t": 0,
+      "izoh": "Seziy oksidli katodning chiqish ishi A = 1,2 eV, unga to'g'ri kelgan fotoeffektning qizil chegarasi λ0 ≈ 10,1·10⁻⁷ m bo'lib, sariq — ko'zga ko'rinuvchi yorug'lik nurini qayd qiluvchi tizimlarda keng qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#32967eb9"
+    },
+    {
+      "q": "Ichki fotoeffekt nima?",
+      "v": [
+        "Nur ta'sirida yarimo'tkazgichlarda erkin zaryad tashuvchilarning hosil bo'lishi",
+        "Metalladan elektronlarning chiqib ketishi",
+        "Yadroning parchalanishi",
+        "Elektronlarning rekombinatsiyasi"
+      ],
+      "t": 0,
+      "izoh": "Nur ta'sir etishi natijasida yarimo'tkazgichlarda erkin zaryad tashuvchilarning hosil bo'lishiga ichki fotoeffekt deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#45174de0"
+    },
+    {
+      "q": "Nur ta'sirida yarimo'tkazgichda hosil bo'lgan qo'shimcha elektr o'tkazuvchanlik nima deb ataladi?",
+      "v": [
+        "Fotoo'tkazuvchanlik",
+        "Supero'tkazuvchanlik",
+        "Termoo'tkazuvchanlik",
+        "Dielektrik o'tkazuvchanlik"
+      ],
+      "t": 0,
+      "izoh": "Nur ta'sirida hosil bo'lgan qo'shimcha elektr o'tkazuvchanlik fotoo'tkazuvchanlik deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#d924dc07"
+    },
+    {
+      "q": "Fotoqarshilik (fotorezistor) nima?",
+      "v": [
+        "O'tkazuvchanligi yorug'lik ta'sirida o'zgaradigan qarshilik",
+        "Doimiy qarshilikka ega rezistor",
+        "Faqat qizdirilganda ishlaydigan qarshilik",
+        "Kuchlanishga bog'liq qarshilik"
+      ],
+      "t": 0,
+      "izoh": "Fotoqarshilik — o'tkazuvchanligi yorug'lik ta'sirida o'zgaradigan qarshilik bo'lib, radiotexnikada fotorezistor deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#359bbe22"
+    },
+    {
+      "q": "Foton nima?",
+      "v": [
+        "Yorug'lik kvanti — yorug'likning zarrasi",
+        "Elektronning teskari zaryadli jufti",
+        "Atomning eng kichik zarrasi",
+        "To'lqinchiq uzunlik birligi"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik zarrasi fotonlar yoki yorug'lik kvantlari deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#a15f9c88"
+    },
+    {
+      "q": "Fotonning xususiyatlari qaysi javobda to'g'ri keltirilgan?",
+      "v": [
+        "Energiyasi E = hν, vakuumda c tezlik bilan harakatlanadi, tinchlik massasi m0 = 0",
+        "Tinchlik massasi bor, tezligi o'zgaruvchan",
+        "Zaryadga ega, energiyasi yo'q",
+        "Tezligi yorug'lik tezligidan kichik"
+      ],
+      "t": 0,
+      "izoh": "Foton energiyasi E = hν, vakuumda yorug'lik tezligi c bilan harakatlanadi, tinchlikda massaga ega emas (m0 = 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#20a6b520"
+    },
+    {
+      "q": "Fotonning harakatdagi massasi qanday ifodalanadi?",
+      "v": [
+        "m = hν/c²",
+        "m = hν·c²",
+        "m = hν/c",
+        "m = c²/hν"
+      ],
+      "t": 0,
+      "izoh": "E = mc² dan m = E/c² = hν/c².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#60d69f86"
+    },
+    {
+      "q": "ħ (h chiziqli) doimiy nimaga teng va qiymati qancha?",
+      "v": [
+        "ħ = h/2π ≈ 1,05·10⁻³⁴ J·s",
+        "ħ = 2πh ≈ 6,6·10⁻³⁴ J·s",
+        "ħ = h/π ≈ 2·10⁻³⁴ J·s",
+        "ħ = h·c"
+      ],
+      "t": 0,
+      "izoh": "ħ = h/2π = 1,05·10⁻³⁴ J·s, siklik chastota ω = 2πν bilan ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#1ecb13f2"
+    },
+    {
+      "q": "Zarra-to'lqin dualizmi nimani anglatadi?",
+      "v": [
+        "Yorug'lik tarqalishida to'lqin, moddalar bilan ta'sirlashganda zarra xossalarini namoyon qiladi",
+        "Yorug'lik faqat to'lqin xossasiga ega",
+        "Yorug'lik faqat zarra xossasiga ega",
+        "Fotonlar massaga ega"
+      ],
+      "t": 0,
+      "izoh": "Yorug'likning to'lqin xossalari (interferensiya, difraksiya, qutblanish) va zarra xossalari (fotoeffekt, bosim) birga mavjudligi zarra-to'lqin dualizmi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#94d0f131"
+    },
+    {
+      "q": "Yorug'lik chastotasi ortganda fotoelektronlarning maksimal kinetik energiyasi qanday o'zgaradi?",
+      "v": [
+        "Chiziqli ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Kvadratik ortadi"
+      ],
+      "t": 0,
+      "izoh": "Ek = hν − A formulaga ko'ra, kinetik energiya chastotaga chiziqli bog'liq va ν ortishi bilan ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#f5e034a1"
+    },
+    {
+      "q": "Tushayotgan yorug'lik intensivligini oshirsak, fotoelektronlarning maksimal kinetik energiyasi qanday o'zgaradi?",
+      "v": [
+        "O'zgarmaydi",
+        "Ortadi",
+        "Kamayadi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Maksimal kinetik energiya faqat chastotaga bog'liq; intensivlik faqat elektronlar sonini oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#09c4c0e5"
+    },
+    {
+      "q": "Foton modda bilan ta'sirlashganda energiyasi qanday uzatiladi?",
+      "v": [
+        "Butunlay bitta elektronga beriladi",
+        "Ko'p elektronlarga bo'linib beriladi",
+        "Yarimi beriladi",
+        "Muhitga sochilib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Eynshteyn g'oyasiga ko'ra, foton modda bilan ta'sirlashganda energiyasi hν ni butunlay elektronga beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#e462574b"
+    },
+    {
+      "q": "1 s da yuzadan chiqayotgan fotoelektronlar soni nimaga proporsional?",
+      "v": [
+        "Yuzaga tushuvchi fotonlar soniga",
+        "Yopuvchi kuchlanishga",
+        "Katod temperaturasiga",
+        "Chiqish ishiga"
+      ],
+      "t": 0,
+      "izoh": "Eynshteyn tenglamasiga ko'ra, 1 s da chiqayotgan fotoelektronlar soni yuzaga tushuvchi fotonlar soniga proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#d1b08037"
+    },
+    {
+      "q": "Tushuvchi nur chastotasi qizil chegaradan kichik bo'lsa nima bo'ladi?",
+      "v": [
+        "Fotoeffekt ro'y bermaydi",
+        "Fotoeffekt sekin ro'y beradi",
+        "Fotoelektronlar katta energiyaga ega bo'ladi",
+        "Fototok maksimal bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "ν < νmin bo'lsa, foton energiyasi chiqish ishidan kichik bo'lib, fotoeffekt ro'y bermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#4225ae63"
+    },
+    {
+      "q": "Elektronlar, protonlar va neytronlar oqimlari haqida keyinchalik nima ma'lum bo'ldi?",
+      "v": [
+        "Ular ham to'lqin xossaga ega",
+        "Ular faqat zarra xossasiga ega",
+        "Ular massaga ega emas",
+        "Ular yorug'lik tezligida harakatlanadi"
+      ],
+      "t": 0,
+      "izoh": "Keyinchalik fanda elektronlar, protonlar, neytronlar oqimlari ham to'lqin xossaga ega ekanligi ma'lum bo'ldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m35-fotoelektrik-effekt-fotonlar#bbefdc70"
+    }
+  ]
+}

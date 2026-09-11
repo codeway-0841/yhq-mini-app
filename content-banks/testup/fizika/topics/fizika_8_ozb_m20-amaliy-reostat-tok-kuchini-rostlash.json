@@ -1,0 +1,381 @@
+{
+  "nom": "20-mavzu. Amaliy Reostat Tok Kuchini Rostlash",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "«Reostat yordamida tok kuchini rostlash» amaliy mashg'ulotining maqsadi nima?",
+      "v": [
+        "Reostat yordamida zanjirdagi tok kuchining o'zgarishini o'rganish",
+        "Om qonuniga ko'ra qarshilikni hisoblash",
+        "Rezistorlarning qarshiligini ommetr bilan o'lchash",
+        "Iste'molchilarni ketma-ket ulashni o'rganish"
+      ],
+      "t": 0,
+      "izoh": "Mashg'ulotning maqsadi: reostat yordamida zanjirdagi tok kuchining o'zgarishini o'rganish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#492ef939"
+    },
+    {
+      "q": "Amaliy mashg'ulotda qaysi asbob va jihozlar kerak?",
+      "v": [
+        "Tok manbai, reostat, ampermetr, qarshiligi 6 Ω bo'lgan rezistor, kalit va ulovchi simlar",
+        "Tok manbai, voltmetr, lampochka va kalit",
+        "Reostat, ommetr, kondensator va simlar",
+        "Tok manbai, galvanometr, rezistor va reostat"
+      ],
+      "t": 0,
+      "izoh": "Kerakli asbob va jihozlar: tok manbai, reostat, ampermetr, qarshiligi 6 Ω bo'lgan rezistor, kalit va ulovchi simlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#e956f159"
+    },
+    {
+      "q": "Amaliy mashg'ulotda ishlatiladigan rezistorning qarshiligi qancha?",
+      "v": [
+        "6 Ω",
+        "4 Ω",
+        "10 Ω",
+        "16 Ω"
+      ],
+      "t": 0,
+      "izoh": "Jihozlar ro'yxatida qarshiligi 6 Ω bo'lgan rezistor ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#ab9e825c"
+    },
+    {
+      "q": "Mashg'ulotni bajarishning birinchi qadamida nima qilinadi?",
+      "v": [
+        "Reostatning tuzilishiga diqqat bilan qaralib, surgichi qanday vaziyatda eng katta qarshilikka ega bo'lgan holati aniqlanadi",
+        "Zanjir darhol tok manbaiga ulanadi",
+        "Ampermetr ko'rsatishi yozib olinadi",
+        "Surgich eng kichik qarshilik holatiga o'tkaziladi"
+      ],
+      "t": 0,
+      "izoh": "1-qadam: reostatning tuzilishiga diqqat bilan qarang va surgichi qanday vaziyatda eng katta qarshilikka ega bo'lgan holatini aniqlang.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#651242c2"
+    },
+    {
+      "q": "Zanjirni yig'ishda kalit qanday holatda qoldiriladi?",
+      "v": [
+        "Ochiq",
+        "Yopiq",
+        "Yarim ochiq",
+        "Kalit ishlatilmaydi"
+      ],
+      "t": 0,
+      "izoh": "64-rasmda tasvirlangan elektr zanjirini yig'ib, kalitni ochiq qoldirish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#6f10e26b"
+    },
+    {
+      "q": "Zanjir yig'ilgach dastlab nima qilinadi?",
+      "v": [
+        "Tok manbai tarmoqqa ulanadi",
+        "Kalit darhol yopiladi",
+        "Ampermetr zanjirdan uziladi",
+        "Reostat surgichi eng o'ngga suriladi"
+      ],
+      "t": 0,
+      "izoh": "3-qadam: tok manbaini tarmoqqa ulang.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#27cd5cf8"
+    },
+    {
+      "q": "Tok manbaining iste'molchilarga kuchlanish beruvchi murvati qanday holatga qo'yiladi?",
+      "v": [
+        "8 V holatiga",
+        "4 V holatiga",
+        "6 V holatiga",
+        "10 V holatiga"
+      ],
+      "t": 0,
+      "izoh": "Tok manbaining iste'molchilarga kuchlanish beruvchi murvati 8 V holatiga qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#9b349e97"
+    },
+    {
+      "q": "Kalit ulangach nima yozib olinadi?",
+      "v": [
+        "Ampermetrning ko'rsatishi, ya'ni tok kuchining qiymati",
+        "Voltmetrning ko'rsatishi",
+        "Reostatning qarshiligi",
+        "Tok manbaining kuchlanishi"
+      ],
+      "t": 0,
+      "izoh": "Kalitni ulab ampermetrning ko'rsatishi yozib olinadi. Olingan tok kuchining qiymati jadvalga yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#3123f7c5"
+    },
+    {
+      "q": "Birinchi o'lchovdan keyin kalit uzilib, surgich siljitilganda reostatning qarshiligi qanday o'zgaradi?",
+      "v": [
+        "Biroz kamaytiriladi",
+        "Biroz oshiriladi",
+        "O'zgarmaydi",
+        "Nolga tushiriladi"
+      ],
+      "t": 0,
+      "izoh": "Kalit uziladi. Surgichni siljitib reostatning qarshiligi biroz kamaytiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#70c7ab4d"
+    },
+    {
+      "q": "Reostat qarshiligi kamaytirilgach, kalit ulanganda ampermetr ko'rsatishi qanday o'zgaradi?",
+      "v": [
+        "Tok kuchi ortadi",
+        "Tok kuchi kamayadi",
+        "Tok kuchi o'zgarmaydi",
+        "Tok kuchi nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish o'zgarmas bo'lganda qarshilik kamaysa, tok kuchi ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#a4def4ab"
+    },
+    {
+      "q": "Jadvalda nechta reostat surgichining holati uchun tok kuchi qayd etiladi?",
+      "v": [
+        "4 ta holat",
+        "2 ta holat",
+        "3 ta holat",
+        "6 ta holat"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda reostat surgichining 1, 2, 3, 4-holatlari uchun tok kuchi (A) yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#ec2e6058"
+    },
+    {
+      "q": "Mashg'ulotning so'nggi qadamida nima qilinadi?",
+      "v": [
+        "O'tkazilgan tajriba natijalari asosida o'z xulosa yoziladi",
+        "Zanjir darhol uziladi va jihozlar almashtiriladi",
+        "Reostat qarshiligi oshiriladi",
+        "Tok manbai 12 V ga o'tkaziladi"
+      ],
+      "t": 0,
+      "izoh": "9-qadam: o'tkazilgan tajriba natijalari asosida o'z xulosangizni yozing.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#4c10b2ce"
+    },
+    {
+      "q": "64-rasmdagi sxemada reostat, rezistor va ampermetr bir-biri bilan qanday ulangan?",
+      "v": [
+        "Ketma-ket",
+        "Parallel",
+        "Aralash",
+        "Ampermetr parallel, qolganlari ketma-ket"
+      ],
+      "t": 0,
+      "izoh": "64-rasm sxemasida tok manbai, reostat, rezistor R va ampermetr ketma-ket ulangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#7141fecb"
+    },
+    {
+      "q": "Ampermetr zanjirga nima uchun ketma-ket ulanadi?",
+      "v": [
+        "Chunki ampermetr zanjirdan o'tayotgan tok kuchini o'lchaydi",
+        "Chunki ampermetr kuchlanishni o'lchaydi",
+        "Zanjir qarshiligini oshirish uchun",
+        "Kalitni himoya qilish uchun"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi faqat ketma-ket ulangan ampermetr bilan o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#28c45956"
+    },
+    {
+      "q": "«Tok kuchini rostlash» deganda nimani tushunasiz?",
+      "v": [
+        "Zanjirdagi tok kuchini bir me'yorda o'zgartirishni (rostlash — o'zgartirish degan ma'noni bildiradi)",
+        "Tok kuchini faqat oshirishni",
+        "Tok kuchini nolga tushirishni",
+        "Tok manbaini almashtirishni"
+      ],
+      "t": 0,
+      "izoh": "Rostlash bu yerda tok kuchini reostat yordamida bir me'yorda o'zgartirishni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#9182b754"
+    },
+    {
+      "q": "Tajribada kuchlanish manbai qanday qilib olingan?",
+      "v": [
+        "Murvat 8 V holatida o'zgarmas qoldiriladi",
+        "Har o'lchovda kuchlanish oshiriladi",
+        "Har o'lchovda kuchlanish kamaytiriladi",
+        "Kuchlanish nolga tushiriladi"
+      ],
+      "t": 0,
+      "izoh": "Tajribada murvat 8 V holatida qoladi, faqat reostat qarshiligi o'zgartiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#6f4f95be"
+    },
+    {
+      "q": "Reostat qarshiligini kamaytirishda zanjirdagi tok kuchi nima uchun ortadi?",
+      "v": [
+        "Kuchlanish o'zgarmas bo'lganda tok kuchi qarshilikka teskari proporsional (Om qonuni bo'yicha)",
+        "Tok manbai quvvati oshadi",
+        "Ampermetr qarshiligi kamayadi",
+        "Simning solishtirma qarshiligi kamayadi"
+      ],
+      "t": 0,
+      "izoh": "I = U/R bo'yicha U o'zgarmas bo'lganda R kamaysa, I ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#4c600258"
+    },
+    {
+      "q": "Agar zanjirda kuchlanish 8 V, umumiy qarshilik 8 Ω bo'lsa, tok kuchi qancha?",
+      "v": [
+        "1 A",
+        "8 A",
+        "0,125 A",
+        "16 A"
+      ],
+      "t": 0,
+      "izoh": "I = U/R = 8/8 = 1 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#e8f342bb"
+    },
+    {
+      "q": "Reostatning eng katta qarshilik holatida zanjirdagi tok kuchi qanday bo'ladi?",
+      "v": [
+        "Eng kichik qiymatda",
+        "Eng katta qiymatda",
+        "O'rtacha qiymatda",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik eng katta bo'lganda tok kuchi eng kichik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#6b8f0d0c"
+    },
+    {
+      "q": "Tajribada har o'lchovdan oldin kalit nima uchun uziladi?",
+      "v": [
+        "Surgichni xavfsiz siljitish va zanjirni himoya qilish uchun",
+        "Kuchlanishni oshirish uchun",
+        "Ampermetrni almashtirish uchun",
+        "Reostatni sovutish uchun"
+      ],
+      "t": 0,
+      "izoh": "Surgichni siljitishdan oldin kalit uzilib, keyin qayta ulanadi — bu tajriba tartibining bir qismi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#d09e1eb0"
+    },
+    {
+      "q": "Reostatning tuzilishini qanday tasvirlash mumkin?",
+      "v": [
+        "Sopol silindrga o'ralgan nikelin sim, metall sterjen va sterjen bo'ylab harakatlanuvchi surgichdan iborat",
+        "Faqat mis sim va karkasdan iborat",
+        "Katta qarshilikli qatlam va ikki simdan iborat",
+        "Aylana shaklidagi o'ram va murvatdan iborat"
+      ],
+      "t": 0,
+      "izoh": "Maktab reostati sopol silindrga o'ralgan sim, metall sterjen va surgichdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#14eec5c3"
+    },
+    {
+      "q": "Reostatning elektr zanjiriga ulanish sxemasida qaysi qisqichlar ishlatiladi?",
+      "v": [
+        "Sim uchidagi qisqich va sterjen uchidagi qisqich",
+        "Faqat ikki sim uchi qisqichlari",
+        "Faqat sterjen qisqichlari",
+        "Har qanday bitta qisqich"
+      ],
+      "t": 0,
+      "izoh": "Reostat zanjirga sim uchidagi qisqich (1) va sterjen uchidagi qisqich (2) orqali ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#0021b944"
+    },
+    {
+      "q": "Tajriba natijalarini yozish uchun jadvalning ustunlari qanday nomlangan?",
+      "v": [
+        "«Reostat surgichining holatlari» va «Tok kuchi (A)»",
+        "«Kuchlanish (V)» va «Qarshilik (Ω)»",
+        "«Tok kuchi (A)» va «Quvvat (Vt)»",
+        "«Surgich holati» va «Kuchlanish (V)»"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda «Reostat surgichining holatlari» (1-4) va «Tok kuchi (A)» qatorlari bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#a802892c"
+    },
+    {
+      "q": "Surgich siljitilganda reostatning zanjirga kiritilgan qarshiligi nima sababdan o'zgaradi?",
+      "v": [
+        "Zanjirga ulangan sim qismining uzunligi o'zgaradi",
+        "Simning solishtirma qarshiligi o'zgaradi",
+        "Simning kesim yuzasi o'zgaradi",
+        "Simning harorati keskin o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Surgich siljiganda tok o'tadigan sim qismining uzunligi o'zgaradi, qarshilik esa uzunlikka to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#c563d9b1"
+    },
+    {
+      "q": "Amaliy mashg'ulotdan chiqadigan asosiy xulosa qanday?",
+      "v": [
+        "Reostat qarshiligini o'zgartirib, zanjirdagi tok kuchini bir me'yorda o'zgartirish mumkin",
+        "Tok kuchi reostat qarshiligiga bog'liq emas",
+        "Reostat faqat kuchlanishni o'zgartiradi",
+        "Reostat qarshiligi tok kuchini oshiradi"
+      ],
+      "t": 0,
+      "izoh": "Reostat qarshiligini kamaytirish (yoki oshirish) orqali zanjirdagi tok kuchi bir me'yorda o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m20-amaliy-reostat-tok-kuchini-rostlash#e0cc7a40"
+    }
+  ]
+}

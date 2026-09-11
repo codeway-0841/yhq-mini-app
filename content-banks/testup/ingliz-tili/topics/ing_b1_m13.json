@@ -1,0 +1,1306 @@
+{
+  "nom": "Modals (deduction/obligation)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "The kitchen light is on and I can smell plov. Grandma ___ be home.",
+      "v": [
+        "can't",
+        "might not",
+        "should",
+        "must"
+      ],
+      "t": 3,
+      "izoh": "Chiroq va hid — must.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#b3722fdb"
+    },
+    {
+      "q": "She's only sixteen. She ___ be a doctor.",
+      "v": [
+        "must",
+        "might",
+        "can't",
+        "should"
+      ],
+      "t": 2,
+      "izoh": "O'n olti yosh — can't.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#61decc2f"
+    },
+    {
+      "q": "I'm not sure where Aziz is. He ___ be in the library.",
+      "v": [
+        "might",
+        "must",
+        "can't",
+        "has to"
+      ],
+      "t": 0,
+      "izoh": "Ishonch kam — might.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#27f265da"
+    },
+    {
+      "q": "You've walked ten kilometres. You ___ be tired.",
+      "v": [
+        "must",
+        "might",
+        "can't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "O'n kilometr — must.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#6a9b312f"
+    },
+    {
+      "q": "This ___ be Malika's bag — hers is red, this one is blue.",
+      "v": [
+        "must",
+        "might",
+        "should",
+        "can't"
+      ],
+      "t": 3,
+      "izoh": "Rang boshqa — can't.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#bbf91612"
+    },
+    {
+      "q": "Find the mistake: 'The bank mustn't be open, all the windows are dark.'",
+      "v": [
+        "bank",
+        "mustn't",
+        "open",
+        "windows"
+      ],
+      "t": 1,
+      "izoh": "Taxmin inkori — can't (#109).",
+      "qiy": "orta",
+      "id": "ing_b1_m13#5c37b64f"
+    },
+    {
+      "q": "Bring a hat. The sun ___ burn your skin at noon.",
+      "v": [
+        "must",
+        "can't",
+        "might",
+        "has to"
+      ],
+      "t": 2,
+      "izoh": "Balki — might; modal + fe'l asos (burn).",
+      "qiy": "orta",
+      "id": "ing_b1_m13#c5311a50"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "She maybe in the garden.",
+        "She may is in the garden.",
+        "She may be in the garden.",
+        "She be may in the garden."
+      ],
+      "t": 2,
+      "izoh": "may be — ikki so'z, modal + be (#110).",
+      "qiy": "orta",
+      "id": "ing_b1_m13#21ac92a9"
+    },
+    {
+      "q": "He speaks perfect Uzbek. He ___ be from here.",
+      "v": [
+        "might",
+        "can't",
+        "must",
+        "should"
+      ],
+      "t": 2,
+      "izoh": "Mukammal o'zbek tili — must.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#17732b78"
+    },
+    {
+      "q": "Nobody answers the phone. They ___ be out, or they ___ be asleep.",
+      "v": [
+        "must / can't",
+        "might / might",
+        "must / must",
+        "can't / can't"
+      ],
+      "t": 1,
+      "izoh": "Ikki variant — might / might.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#3abe991a"
+    },
+    {
+      "q": "That ___ be the postman; he never comes on Sundays.",
+      "v": [
+        "can't",
+        "must",
+        "might",
+        "should"
+      ],
+      "t": 0,
+      "izoh": "Yakshanba — can't.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#ec83b258"
+    },
+    {
+      "q": "Find the mistake: 'She must to be at work now.'",
+      "v": [
+        "must",
+        "be",
+        "now",
+        "to"
+      ],
+      "t": 3,
+      "izoh": "Modaldan keyin to yo'q (#88).",
+      "qiy": "orta",
+      "id": "ing_b1_m13#6071d1c6"
+    },
+    {
+      "q": "Where's Maria? She ___ be at the gym; I'm not sure.",
+      "v": [
+        "might",
+        "must",
+        "can't",
+        "should"
+      ],
+      "t": 0,
+      "izoh": "Noaniq imkoniyat uchun 'might be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#5f5edcee"
+    },
+    {
+      "q": "I can't find my keys. I ___ have left them at the office.",
+      "v": [
+        "might",
+        "must",
+        "can't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "O'tmishdagi ehtimollik: 'might have left'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#6afbe061"
+    },
+    {
+      "q": "Passengers ___ show their tickets before boarding the train.",
+      "v": [
+        "must",
+        "might",
+        "could",
+        "can't"
+      ],
+      "t": 0,
+      "izoh": "Qat'iy majburiyat/qoida uchun 'must'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#274e0b75"
+    },
+    {
+      "q": "I ___ wear a uniform at my new job; it's a strict rule.",
+      "v": [
+        "have to",
+        "might",
+        "could",
+        "needn't"
+      ],
+      "t": 0,
+      "izoh": "Tashqi qoida-majburiyat uchun 'have to'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#fc97a399"
+    },
+    {
+      "q": "It's a hospital, so you ___ turn off your mobile phone.",
+      "v": [
+        "must",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Kuchli majburiyat uchun 'must'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#2f2098e9"
+    },
+    {
+      "q": "She ___ get up early every morning because her school is far away.",
+      "v": [
+        "has to",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi shaxs birlik: 'has to' (majburiyat).",
+      "qiy": "orta",
+      "id": "ing_b1_m13#7871f2a1"
+    },
+    {
+      "q": "We ___ finish the project by Friday or we will lose the contract.",
+      "v": [
+        "have to",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Zarur majburiyat uchun 'have to'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#e2eda434"
+    },
+    {
+      "q": "Tomorrow is a holiday, so we ___ go to work.",
+      "v": [
+        "don't have to",
+        "mustn't",
+        "can't",
+        "shouldn't"
+      ],
+      "t": 0,
+      "izoh": "Majburiyat yo'qligi: 'don't have to'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#a29c9622"
+    },
+    {
+      "q": "You ___ pay for the children; entry is free for them.",
+      "v": [
+        "don't have to",
+        "mustn't",
+        "can't",
+        "shouldn't"
+      ],
+      "t": 0,
+      "izoh": "Kerak emasligi uchun 'don't have to'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#1238069c"
+    },
+    {
+      "q": "He ___ bring any food; everything will be provided.",
+      "v": [
+        "needn't",
+        "mustn't",
+        "can't",
+        "shouldn't"
+      ],
+      "t": 0,
+      "izoh": "Zarurat yo'qligi uchun 'needn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#5393cbfc"
+    },
+    {
+      "q": "You ___ smoke here; it is strictly forbidden.",
+      "v": [
+        "mustn't",
+        "don't have to",
+        "needn't",
+        "might not"
+      ],
+      "t": 0,
+      "izoh": "Taqiq uchun 'mustn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#5913312a"
+    },
+    {
+      "q": "Students ___ use their phones during the exam.",
+      "v": [
+        "mustn't",
+        "don't have to",
+        "needn't",
+        "might not"
+      ],
+      "t": 0,
+      "izoh": "Taqiq uchun 'mustn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#04634f04"
+    },
+    {
+      "q": "We ___ be late; the meeting is very important.",
+      "v": [
+        "mustn't",
+        "don't have to",
+        "needn't",
+        "may not"
+      ],
+      "t": 0,
+      "izoh": "Taqiq/kuchli ogohlantirish: 'mustn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#217900e8"
+    },
+    {
+      "q": "You look tired. You ___ go to bed earlier.",
+      "v": [
+        "should",
+        "must",
+        "can't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Maslahat uchun 'should'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#fa848360"
+    },
+    {
+      "q": "If you want to pass, you ___ study harder.",
+      "v": [
+        "should",
+        "must",
+        "can't",
+        "needn't"
+      ],
+      "t": 0,
+      "izoh": "Maslahat/tavsiya uchun 'should'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#7e219bc4"
+    },
+    {
+      "q": "He ___ see a doctor about that cough.",
+      "v": [
+        "should",
+        "must",
+        "can't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Tavsiya uchun 'should'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#f49cbf2f"
+    },
+    {
+      "q": "Look at those dark clouds. It ___ start raining soon.",
+      "v": [
+        "might",
+        "can't",
+        "mustn't",
+        "needn't"
+      ],
+      "t": 0,
+      "izoh": "Yaqin ehtimollik: 'might'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#7239b47c"
+    },
+    {
+      "q": "He speaks perfect French. He ___ have studied in France.",
+      "v": [
+        "must",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "O'tmish aniq xulosa: 'must have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#d49de76a"
+    },
+    {
+      "q": "The soup tastes strange. You ___ have added too much salt.",
+      "v": [
+        "might",
+        "can't",
+        "mustn't",
+        "needn't"
+      ],
+      "t": 0,
+      "izoh": "O'tmish ehtimoli: 'might have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#0bea5c69"
+    },
+    {
+      "q": "This restaurant is always empty. The food ___ be very good.",
+      "v": [
+        "can't",
+        "must",
+        "should",
+        "have to"
+      ],
+      "t": 0,
+      "izoh": "Imkonsiz xulosa: 'can't be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#1218faed"
+    },
+    {
+      "q": "Sara isn't answering. She ___ be sleeping right now.",
+      "v": [
+        "might",
+        "must",
+        "can't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Noaniq imkoniyat: 'might be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#45a7bcdb"
+    },
+    {
+      "q": "In many countries you ___ drive on the left.",
+      "v": [
+        "have to",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Qonuniy majburiyat: 'have to'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#35ae0032"
+    },
+    {
+      "q": "You ___ worry about the bill; it's already paid.",
+      "v": [
+        "needn't",
+        "mustn't",
+        "can't",
+        "shouldn't"
+      ],
+      "t": 0,
+      "izoh": "Zarurat yo'q: 'needn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#628d8374"
+    },
+    {
+      "q": "Soldiers ___ obey their orders.",
+      "v": [
+        "must",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Qat'iy majburiyat: 'must'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#14fab50d"
+    },
+    {
+      "q": "It's a secret. You ___ tell anyone about it.",
+      "v": [
+        "mustn't",
+        "don't have to",
+        "needn't",
+        "might not"
+      ],
+      "t": 0,
+      "izoh": "Taqiq: 'mustn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#8e391c0d"
+    },
+    {
+      "q": "Your hands are shaking. You ___ be cold.",
+      "v": [
+        "must",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Ko'rinadigan dalil, aniq xulosa: 'must'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#539111c0"
+    },
+    {
+      "q": "There's no reply from the shop. It ___ be closed today.",
+      "v": [
+        "might",
+        "must",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Ehtimollik: 'might be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#12b33d30"
+    },
+    {
+      "q": "She got full marks. She ___ have worked really hard.",
+      "v": [
+        "must",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Aniq o'tmish xulosasi: 'must have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#05d1ea23"
+    },
+    {
+      "q": "A: Whose bag is this? B: It ___ be Tom's; he took his and left.",
+      "v": [
+        "can't",
+        "must",
+        "should",
+        "have to"
+      ],
+      "t": 0,
+      "izoh": "Imkonsizlik: 'can't be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#a92fac29"
+    },
+    {
+      "q": "You ___ press this button unless there is a real emergency.",
+      "v": [
+        "mustn't",
+        "don't have to",
+        "needn't",
+        "may not"
+      ],
+      "t": 0,
+      "izoh": "Taqiq: 'mustn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#456097f7"
+    },
+    {
+      "q": "We have plenty of time; we ___ hurry.",
+      "v": [
+        "don't have to",
+        "mustn't",
+        "can't",
+        "shouldn't"
+      ],
+      "t": 0,
+      "izoh": "Majburiyat yo'q: 'don't have to'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#d204e60d"
+    },
+    {
+      "q": "The ground is wet. It ___ have rained last night.",
+      "v": [
+        "must",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Dalilga asoslangan xulosa: 'must have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#fc0145a9"
+    },
+    {
+      "q": "He ___ be at the party; I saw him at home five minutes ago.",
+      "v": [
+        "can't",
+        "must",
+        "should",
+        "might"
+      ],
+      "t": 0,
+      "izoh": "Imkonsizlik: 'can't be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#699991db"
+    },
+    {
+      "q": "If your tooth hurts, you ___ visit a dentist.",
+      "v": [
+        "should",
+        "can't",
+        "mustn't",
+        "needn't"
+      ],
+      "t": 0,
+      "izoh": "Maslahat: 'should'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#0b60de9b"
+    },
+    {
+      "q": "Guests ___ check out before noon; that is the hotel rule.",
+      "v": [
+        "must",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Qoida-majburiyat: 'must'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#ccb2367f"
+    },
+    {
+      "q": "I ___ be wrong, but I think the shop opens at nine.",
+      "v": [
+        "may",
+        "must",
+        "can't",
+        "have to"
+      ],
+      "t": 0,
+      "izoh": "Ehtimollik: 'may be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#21a16a3c"
+    },
+    {
+      "q": "These plants are dying. You ___ have forgotten to water them.",
+      "v": [
+        "must",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Aniq o'tmish xulosasi: 'must have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#1144396b"
+    },
+    {
+      "q": "You ___ cross the road when the light is red.",
+      "v": [
+        "mustn't",
+        "don't have to",
+        "needn't",
+        "may not"
+      ],
+      "t": 0,
+      "izoh": "Taqiq: 'mustn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#4d789f79"
+    },
+    {
+      "q": "He ___ be a doctor; he doesn't know anything about medicine.",
+      "v": [
+        "can't",
+        "must",
+        "should",
+        "have to"
+      ],
+      "t": 0,
+      "izoh": "Imkonsizlik: 'can't be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#0845ae75"
+    },
+    {
+      "q": "The phone is ringing. It ___ be your mother; she calls at this time.",
+      "v": [
+        "might",
+        "can't",
+        "mustn't",
+        "needn't"
+      ],
+      "t": 0,
+      "izoh": "Ehtimollik: 'might be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#ed8cbad1"
+    },
+    {
+      "q": "Nurses ___ wash their hands before touching patients.",
+      "v": [
+        "have to",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Kasbiy majburiyat: 'have to'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#57105796"
+    },
+    {
+      "q": "You ___ leave a tip here; service is included in the price.",
+      "v": [
+        "needn't",
+        "mustn't",
+        "can't",
+        "shouldn't"
+      ],
+      "t": 0,
+      "izoh": "Zarurat yo'q: 'needn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#34b8bc07"
+    },
+    {
+      "q": "Someone knocked, but nobody's there. I ___ have imagined it.",
+      "v": [
+        "might",
+        "can't",
+        "mustn't",
+        "needn't"
+      ],
+      "t": 0,
+      "izoh": "O'tmish ehtimoli: 'might have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#7f8339a5"
+    },
+    {
+      "q": "Drivers ___ stop at a red traffic light.",
+      "v": [
+        "must",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Qonuniy majburiyat: 'must'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#b5d03dd3"
+    },
+    {
+      "q": "This ___ be the right address; the building looks totally different.",
+      "v": [
+        "can't",
+        "must",
+        "should",
+        "have to"
+      ],
+      "t": 0,
+      "izoh": "Imkonsizlik: 'can't be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#f5f3fcd2"
+    },
+    {
+      "q": "You've studied all night. You ___ be really sleepy.",
+      "v": [
+        "must",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Aniq xulosa: 'must be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#739780f1"
+    },
+    {
+      "q": "It's only a short trip, so you ___ pack many clothes.",
+      "v": [
+        "needn't",
+        "mustn't",
+        "can't",
+        "shouldn't"
+      ],
+      "t": 0,
+      "izoh": "Zarurat yo'q: 'needn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#c1f43f99"
+    },
+    {
+      "q": "A: I hear a strange noise. B: It ___ be the wind.",
+      "v": [
+        "might",
+        "can't",
+        "mustn't",
+        "needn't"
+      ],
+      "t": 0,
+      "izoh": "Ehtimollik: 'might be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#bb3d6dfd"
+    },
+    {
+      "q": "Employees ___ arrive on time; lateness is not accepted.",
+      "v": [
+        "must",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Qat'iy qoida: 'must'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#6976850f"
+    },
+    {
+      "q": "You ___ touch the paintings in the museum.",
+      "v": [
+        "mustn't",
+        "don't have to",
+        "needn't",
+        "may not"
+      ],
+      "t": 0,
+      "izoh": "Taqiq: 'mustn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#067e7623"
+    },
+    {
+      "q": "She's from Canada, so she ___ speak English very well.",
+      "v": [
+        "must",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Aniq xulosa: 'must'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#7af78982"
+    },
+    {
+      "q": "We ___ book a table; the restaurant is never full.",
+      "v": [
+        "don't have to",
+        "mustn't",
+        "can't",
+        "shouldn't"
+      ],
+      "t": 0,
+      "izoh": "Majburiyat yo'q: 'don't have to'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#8f70d6d6"
+    },
+    {
+      "q": "He didn't eat all day. He ___ be starving now.",
+      "v": [
+        "must",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Aniq xulosa: 'must be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#797bb0c6"
+    },
+    {
+      "q": "That ___ be a real diamond; it costs only two dollars.",
+      "v": [
+        "can't",
+        "must",
+        "should",
+        "have to"
+      ],
+      "t": 0,
+      "izoh": "Imkonsizlik: 'can't be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#177699b9"
+    },
+    {
+      "q": "Perhaps she's ill. She ___ be at home resting.",
+      "v": [
+        "may",
+        "must",
+        "can't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Ehtimollik: 'may be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#9e1c1a25"
+    },
+    {
+      "q": "In the exam room you ___ talk to other students.",
+      "v": [
+        "mustn't",
+        "don't have to",
+        "needn't",
+        "may not"
+      ],
+      "t": 0,
+      "izoh": "Taqiq: 'mustn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#922d49c1"
+    },
+    {
+      "q": "The dog is barking loudly. There ___ be a stranger outside.",
+      "v": [
+        "might",
+        "can't",
+        "mustn't",
+        "needn't"
+      ],
+      "t": 0,
+      "izoh": "Ehtimollik: 'might be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#f1a32db3"
+    },
+    {
+      "q": "Firefighters ___ be brave and fit.",
+      "v": [
+        "have to",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Kasbiy majburiyat: 'have to'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#9581151d"
+    },
+    {
+      "q": "You ___ shout; I can hear you perfectly.",
+      "v": [
+        "needn't",
+        "mustn't",
+        "can't",
+        "shouldn't"
+      ],
+      "t": 0,
+      "izoh": "Zarurat yo'q: 'needn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#82a2ecef"
+    },
+    {
+      "q": "His car is gone. He ___ have already left.",
+      "v": [
+        "must",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Aniq o'tmish xulosasi: 'must have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#953a4868"
+    },
+    {
+      "q": "You ___ feed the animals at the zoo; it's against the rules.",
+      "v": [
+        "mustn't",
+        "don't have to",
+        "needn't",
+        "may not"
+      ],
+      "t": 0,
+      "izoh": "Taqiq: 'mustn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#6c099217"
+    },
+    {
+      "q": "She looks pale. She ___ be feeling unwell.",
+      "v": [
+        "might",
+        "can't",
+        "mustn't",
+        "needn't"
+      ],
+      "t": 0,
+      "izoh": "Ehtimollik: 'might be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#1eb57495"
+    },
+    {
+      "q": "To enter this country, tourists ___ have a valid visa.",
+      "v": [
+        "must",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Qonuniy majburiyat: 'must'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#6439f1d1"
+    },
+    {
+      "q": "It's Sunday, so the bank ___ be open.",
+      "v": [
+        "can't",
+        "must",
+        "should",
+        "have to"
+      ],
+      "t": 0,
+      "izoh": "Imkonsizlik: 'can't be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#c1d0f00e"
+    },
+    {
+      "q": "You ___ finish everything today; some of it can wait.",
+      "v": [
+        "don't have to",
+        "mustn't",
+        "can't",
+        "shouldn't"
+      ],
+      "t": 0,
+      "izoh": "Majburiyat yo'q: 'don't have to'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#f319c1f5"
+    },
+    {
+      "q": "He's very quiet today. He ___ be worried about something.",
+      "v": [
+        "might",
+        "can't",
+        "mustn't",
+        "needn't"
+      ],
+      "t": 0,
+      "izoh": "Ehtimollik: 'might be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#c49e1bc8"
+    },
+    {
+      "q": "Children ___ be accompanied by an adult in the pool.",
+      "v": [
+        "must",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Xavfsizlik qoidasi: 'must'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#7fdd9619"
+    },
+    {
+      "q": "This ___ be the last bus; there are usually more after this.",
+      "v": [
+        "can't",
+        "must",
+        "should",
+        "have to"
+      ],
+      "t": 0,
+      "izoh": "Imkonsizlik: 'can't be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#8e9f6859"
+    },
+    {
+      "q": "If you feel sick, you ___ eat so much sugar.",
+      "v": [
+        "shouldn't",
+        "can't",
+        "mustn't",
+        "needn't"
+      ],
+      "t": 0,
+      "izoh": "Salbiy maslahat: 'shouldn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#298556d9"
+    },
+    {
+      "q": "The office is empty and dark. Everyone ___ have gone home.",
+      "v": [
+        "must",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Aniq o'tmish xulosasi: 'must have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#c242c03c"
+    },
+    {
+      "q": "You ___ be quiet in the library; other people are studying.",
+      "v": [
+        "should",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Maslahat/kutilgan xulq: 'should'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#edfa6d0d"
+    },
+    {
+      "q": "A: The window is broken. B: The children ___ have done it.",
+      "v": [
+        "might",
+        "can't",
+        "mustn't",
+        "needn't"
+      ],
+      "t": 0,
+      "izoh": "O'tmish ehtimoli: 'might have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#3d4b42ed"
+    },
+    {
+      "q": "Motorcyclists ___ wear a helmet by law.",
+      "v": [
+        "must",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Qonuniy majburiyat: 'must'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#02b65aed"
+    },
+    {
+      "q": "You ___ tell me twice; I understood the first time.",
+      "v": [
+        "needn't",
+        "mustn't",
+        "can't",
+        "shouldn't"
+      ],
+      "t": 0,
+      "izoh": "Zarurat yo'q: 'needn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#7daee73a"
+    },
+    {
+      "q": "He's smiling a lot. He ___ have received good news.",
+      "v": [
+        "must",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Aniq o'tmish xulosasi: 'must have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#be923654"
+    },
+    {
+      "q": "You ___ walk on the grass in this park.",
+      "v": [
+        "mustn't",
+        "don't have to",
+        "needn't",
+        "may not"
+      ],
+      "t": 0,
+      "izoh": "Taqiq: 'mustn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#91a436a2"
+    },
+    {
+      "q": "Maybe he forgot. He ___ be on his way now.",
+      "v": [
+        "could",
+        "must",
+        "can't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Ehtimollik: 'could be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#9d2e73be"
+    },
+    {
+      "q": "Doctors ___ keep their patients' information secret.",
+      "v": [
+        "have to",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Kasbiy majburiyat: 'have to'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#bc9df6e8"
+    },
+    {
+      "q": "The test is tomorrow, so we ___ revise tonight.",
+      "v": [
+        "should",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Maslahat: 'should'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#57a23013"
+    },
+    {
+      "q": "That ___ be true; I read the same thing yesterday.",
+      "v": [
+        "must",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Aniq xulosa: 'must be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#912b64da"
+    },
+    {
+      "q": "You ___ park here; it's a disabled parking space.",
+      "v": [
+        "mustn't",
+        "don't have to",
+        "needn't",
+        "may not"
+      ],
+      "t": 0,
+      "izoh": "Taqiq: 'mustn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#a2d80f9e"
+    },
+    {
+      "q": "There's a light in the attic. Someone ___ be up there.",
+      "v": [
+        "might",
+        "can't",
+        "mustn't",
+        "needn't"
+      ],
+      "t": 0,
+      "izoh": "Ehtimollik: 'might be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#505ff492"
+    },
+    {
+      "q": "At the airport you ___ show your passport at the gate.",
+      "v": [
+        "have to",
+        "might",
+        "could",
+        "may"
+      ],
+      "t": 0,
+      "izoh": "Majburiyat: 'have to'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#ce55d070"
+    },
+    {
+      "q": "You ___ come to the meeting if you're too busy.",
+      "v": [
+        "don't have to",
+        "mustn't",
+        "can't",
+        "shouldn't"
+      ],
+      "t": 0,
+      "izoh": "Majburiyat yo'q: 'don't have to'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#396a14d3"
+    },
+    {
+      "q": "The kitchen smells of smoke. Something ___ be burning.",
+      "v": [
+        "must",
+        "can't",
+        "needn't",
+        "mustn't"
+      ],
+      "t": 0,
+      "izoh": "Aniq xulosa: 'must be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#fc3663d5"
+    },
+    {
+      "q": "He failed every exam. He ___ have studied at all.",
+      "v": [
+        "can't",
+        "must",
+        "needn't",
+        "should"
+      ],
+      "t": 0,
+      "izoh": "O'tmishdagi imkonsizlik: 'can't have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#ebdd358d"
+    },
+    {
+      "q": "You ___ drink and drive; it is extremely dangerous.",
+      "v": [
+        "mustn't",
+        "don't have to",
+        "needn't",
+        "may not"
+      ],
+      "t": 0,
+      "izoh": "Taqiq: 'mustn't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#32c4aa38"
+    },
+    {
+      "q": "She ___ be tired; she has just woken up.",
+      "v": [
+        "can't",
+        "must",
+        "should",
+        "have to"
+      ],
+      "t": 0,
+      "izoh": "Imkonsizlik: 'can't be'.",
+      "qiy": "orta",
+      "id": "ing_b1_m13#9ca22a17"
+    }
+  ]
+}

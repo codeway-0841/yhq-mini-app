@@ -1,0 +1,1609 @@
+{
+  "nom": "Shartli mulohaza va unga teskari, qarama-qarshi mulohazalar; zarur va yetarli shart",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "«Agar natural son 6 ga bo'linsa, u 3 ga bo'linadi» shartli mulohazasiga teskari mulohaza qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "Agar natural son 3 ga bo'linsa, u 6 ga bo'linadi",
+        "Agar natural son 6 ga bo'linmasa, u 3 ga bo'linmaydi",
+        "Agar natural son 3 ga bo'linmasa, u 6 ga bo'linmaydi",
+        "Har qanday natural son ham 6 ga, ham 3 ga bo'linadi"
+      ],
+      "t": 0,
+      "izoh": "Shartli mulohaza «Agar P bo'lsa, unda Q» ko'rinishida. Bu yerda P: son 6 ga bo'linadi, Q: son 3 ga bo'linadi. Teskari mulohaza shart bilan xulosani o'rin almashtirish yo'li bilan tuziladi: «Agar Q bo'lsa, unda P». Demak «Agar son 3 ga bo'linsa, u 6 ga bo'linadi». Ikkinchi variant qarama-qarshi, uchinchisi kontrapozitsiya mulohazasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-mulohaza-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#12244f30"
+    },
+    {
+      "q": "Zilola: «Agar havo yomg'irli bo'lsa, men soyabon olaman», dedi. Shu shartli mulohazaga teskari mulohaza qaysi variantda to'g'ri tuzilgan?",
+      "v": [
+        "Agar havo yomg'irli bo'lmasa, Zilola soyabon olmaydi",
+        "Agar Zilola soyabon olmasa, havo yomg'irli emas",
+        "Agar Zilola soyabon olsa, havo yomg'irli bo'ladi",
+        "Havo yomg'irli, lekin Zilola soyabon olmadi"
+      ],
+      "t": 2,
+      "izoh": "P: havo yomg'irli, Q: Zilola soyabon oladi. Teskari mulohazada shart va xulosa o'rin almashadi, ya'ni Q dan P ga o'tiladi: «Agar Zilola soyabon olsa, havo yomg'irli bo'ladi». Birinchi variantda ikkala qism ham inkor qilingan, bu qarama-qarshi mulohaza. Ikkinchisi kontrapozitsiya, to'rtinchisi esa umuman shartli mulohaza emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-mulohaza-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#27fe8b5e"
+    },
+    {
+      "q": "Geometriya darsida «Agar to'rtburchak kvadrat bo'lsa, uning diagonallari teng bo'ladi» mulohazasi yozildi. Unga teskari mulohaza qaysi?",
+      "v": [
+        "Agar to'rtburchak kvadrat bo'lmasa, uning diagonallari teng bo'lmaydi",
+        "Agar to'rtburchakning diagonallari teng bo'lsa, u kvadrat bo'ladi",
+        "Agar to'rtburchakning diagonallari teng bo'lmasa, u kvadrat emas",
+        "Har qanday to'rtburchakning diagonallari teng bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Berilgan mulohazada shart P: to'rtburchak kvadrat, xulosa Q: diagonallar teng. Teskari mulohaza Q dan P ga qarab yoziladi: «Agar diagonallar teng bo'lsa, to'rtburchak kvadrat». Bu teskari mulohaza yolg'on, chunki to'g'ri to'rtburchakning ham diagonallari teng, lekin u kvadrat emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-mulohaza-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#e6450d4a"
+    },
+    {
+      "q": "Milliy sertifikat haqida «Agar abituriyent 60 ball to'plasa, u B+ darajasini oladi» deyildi. Bu shartli mulohazaga teskari mulohaza qaysi variantda berilgan?",
+      "v": [
+        "Agar abituriyent 60 ball to'plamasa, u B+ darajasini olmaydi",
+        "Agar abituriyent B+ darajasini olmasa, u 60 ball to'plamagan",
+        "Abituriyent 60 ball to'pladi va B+ darajasini oldi",
+        "Agar abituriyent B+ darajasini olsa, u 60 ball to'plagan"
+      ],
+      "t": 3,
+      "izoh": "P: 60 ball to'plandi, Q: B+ darajasi olindi. Teskari mulohazada xulosa shartga aylanadi: «Agar B+ darajasini olsa, 60 ball to'plagan». Birinchi variant qarama-qarshi, ikkinchisi kontrapozitsiya mulohazasi. Uchinchi variant esa shartli emas, ikki mulohazaning kon'yunksiyasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-mulohaza-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#f64dce27"
+    },
+    {
+      "q": "«Agar x = 3 bo'lsa, x² = 9 bo'ladi» mulohazasiga teskari mulohazani tuzing va uni to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "Agar x ≠ 3 bo'lsa, x² ≠ 9 bo'ladi",
+        "Agar x² = 9 bo'lsa, x = 3 bo'ladi",
+        "Agar x² ≠ 9 bo'lsa, x ≠ 3 bo'ladi",
+        "Agar x = 3 bo'lsa, x² ≠ 9 bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Shart P: x = 3, xulosa Q: x² = 9. Teskari mulohaza «Agar x² = 9 bo'lsa, x = 3». E'tibor bering: dastlabki mulohaza rost, ammo teskarisi yolg'on, chunki x = −3 da ham x² = 9 bo'ladi. Bu teskari mulohaza asl mulohazadan kelib chiqmasligini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-mulohaza-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#3353b719"
+    },
+    {
+      "q": "«Agar sonning oxirgi raqami 0 bo'lsa, u son 5 ga bo'linadi» mulohazasiga qarama-qarshi mulohaza qaysi variantda to'g'ri tuzilgan?",
+      "v": [
+        "Agar son 5 ga bo'linsa, uning oxirgi raqami 0 bo'ladi",
+        "Agar son 5 ga bo'linmasa, uning oxirgi raqami 0 emas",
+        "Agar sonning oxirgi raqami 0 bo'lmasa, u son 5 ga bo'linmaydi",
+        "Oxirgi raqami 0 bo'lmagan son ham 5 ga bo'linaveradi"
+      ],
+      "t": 2,
+      "izoh": "Qarama-qarshi mulohaza shart va xulosaning har ikkalasini inkor qilish bilan hosil qilinadi: P dan Q emas, balki «P emas» dan «Q emas» ga o'tiladi. Demak «Agar oxirgi raqam 0 bo'lmasa, son 5 ga bo'linmaydi». Bu mulohaza yolg'on, chunki 35 soni 5 ga bo'linadi. Birinchi variant teskari, ikkinchisi kontrapozitsiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-mulohaza-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#fb987854"
+    },
+    {
+      "q": "Anvar «Agar men ertalab yugursam, kunim tetik o'tadi» deydi. Uning shu shartli gapiga qarama-qarshi mulohaza qaysi variantda to'g'ri tuzilgan?",
+      "v": [
+        "Agar Anvar ertalab yugurmasa, uning kuni tetik o'tmaydi",
+        "Agar Anvarning kuni tetik o'tsa, u ertalab yugurgan",
+        "Agar Anvarning kuni tetik o'tmasa, u ertalab yugurmagan",
+        "Anvar ertalab yuguradi va uning kuni tetik o'tadi"
+      ],
+      "t": 0,
+      "izoh": "Qarama-qarshi mulohazada shart ham, xulosa ham inkor qilinadi, lekin ular o'rin almashmaydi. P: ertalab yuguraman, Q: kunim tetik o'tadi. Demak qarama-qarshisi «P emas» dan «Q emas» ga: «Agar yugurmasam, kunim tetik o'tmaydi». Ikkinchi variant teskari, uchinchisi kontrapozitsiya mulohazasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-mulohaza-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#258ff51c"
+    },
+    {
+      "q": "«Agar uchburchak teng tomonli bo'lsa, uning barcha burchaklari teng bo'ladi» mulohazasiga qarama-qarshi mulohazani tanlang.",
+      "v": [
+        "Agar uchburchakning barcha burchaklari teng bo'lsa, u teng tomonli",
+        "Agar uchburchakning burchaklari teng bo'lmasa, u teng tomonli emas",
+        "Teng tomonli uchburchakning har bir burchagi 60° ga teng",
+        "Agar uchburchak teng tomonli bo'lmasa, uning barcha burchaklari teng bo'lmaydi"
+      ],
+      "t": 3,
+      "izoh": "Qarama-qarshi mulohaza «P emas bo'lsa, Q emas» ko'rinishida yoziladi. Bu yerda P: uchburchak teng tomonli, Q: barcha burchaklar teng. Demak «Agar uchburchak teng tomonli bo'lmasa, uning burchaklari teng bo'lmaydi». Birinchi variant teskari, ikkinchisi kontrapozitsiya. Uchinchisi umuman shartli mulohaza emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarama-qarshi-mulohaza-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#46279b4b"
+    },
+    {
+      "q": "«Agar a > 0 va b > 0 bo'lsa, unda a·b > 0 bo'ladi» mulohazasiga qarama-qarshi mulohaza qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "Agar a·b > 0 bo'lsa, unda a > 0 va b > 0 bo'ladi",
+        "Agar a > 0 va b > 0 shartlaridan kamida bittasi bajarilmasa, unda a·b > 0 bo'lmaydi",
+        "Agar a < 0 va b < 0 bo'lsa, unda a·b > 0 bo'lmaydi",
+        "Agar a·b ≤ 0 bo'lsa, unda a > 0 va b > 0 shartlari birga bajarilmaydi"
+      ],
+      "t": 1,
+      "izoh": "Shart P ikki qismdan iborat: a > 0 va b > 0. «P emas» ni tuzishda «va» inkor qilinadi, ya'ni kamida bitta shart buziladi, «ikkalasi ham manfiy» degani emas. Shuning uchun qarama-qarshi mulohaza: «Kamida bittasi bajarilmasa, a·b > 0 bo'lmaydi». Bu mulohaza yolg'on: a = −2, b = −5 da ikkala shart buzilgan, ammo a·b = 10 > 0. Oxirgi variant kontrapozitsiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qarama-qarshi-mulohaza-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#84acd5c9"
+    },
+    {
+      "q": "Do'kon egasi: «Agar mahsulotning yaroqlilik muddati o'tsa, uni sotuvdan olamiz», dedi. Bu shartli mulohazaga qarama-qarshi mulohaza qaysi?",
+      "v": [
+        "Agar mahsulot sotuvdan olinsa, uning muddati o'tgan bo'ladi",
+        "Agar mahsulot sotuvdan olinmasa, uning muddati o'tmagan bo'ladi",
+        "Agar mahsulotning muddati o'tmasa, uni sotuvdan olmaymiz",
+        "Muddati o'tgan mahsulot sotuvda qolaveradi"
+      ],
+      "t": 2,
+      "izoh": "P: muddat o'tdi, Q: mahsulot sotuvdan olinadi. Qarama-qarshi mulohazada ikkala qism inkor qilinadi va tartib saqlanadi: «Muddati o'tmasa, sotuvdan olmaymiz». Birinchi variant teskari, ikkinchisi kontrapozitsiya. To'rtinchi variant esa asl mulohazani inkor qiladi, undan hosila mulohaza emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-mulohaza-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#6dbd0b9f"
+    },
+    {
+      "q": "«Agar yomg'ir yog'sa, hovlidagi yo'lka ho'l bo'ladi» shartli mulohazasiga teskarisiga qarama-qarshi (kontrapozitsiya) mulohazani ko'rsating.",
+      "v": [
+        "Agar yomg'ir yog'masa, yo'lka ho'l bo'lmaydi",
+        "Agar yo'lka ho'l bo'lsa, yomg'ir yoqqan bo'ladi",
+        "Yomg'ir yog'di va yo'lka ho'l bo'ldi",
+        "Agar yo'lka ho'l bo'lmasa, yomg'ir yog'magan"
+      ],
+      "t": 3,
+      "izoh": "Kontrapozitsiya ikki amalni birga bajaradi: shart bilan xulosa o'rin almashadi va har ikkalasi inkor qilinadi, ya'ni «Q emas bo'lsa, P emas». Demak «Yo'lka ho'l bo'lmasa, yomg'ir yog'magan». Bu mulohaza asl mulohaza bilan teng kuchli. Birinchi variant qarama-qarshi, ikkinchisi teskari mulohaza.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontrapozitsiya-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#0f117e33"
+    },
+    {
+      "q": "«Agar n² juft son bo'lsa, unda n ham juft son bo'ladi» mulohazasining kontrapozitsiyasini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "Agar n toq son bo'lsa, unda n² ham toq son bo'ladi",
+        "Agar n juft son bo'lsa, unda n² juft son bo'ladi",
+        "Agar n² toq son bo'lsa, unda n juft son bo'ladi",
+        "Agar n² juft bo'lmasa, unda n juft bo'lib qolaveradi"
+      ],
+      "t": 0,
+      "izoh": "Bu yerda P: n² juft, Q: n juft. Kontrapozitsiya «Q emas bo'lsa, P emas» ko'rinishida: «n juft emas, ya'ni toq bo'lsa, n² ham juft emas, ya'ni toq». Butun son uchun «juft emas» aynan «toq» degani. Ikkinchi variant teskari mulohaza. Kontrapozitsiya asl mulohazaga teng kuchli, shuning uchun u ham rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontrapozitsiya-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#d82e7a51"
+    },
+    {
+      "q": "Bekzod: «Agar avtobusga kechiksam, darsga ulgurmayman», dedi. Uning gapining kontrapozitsiyasi qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "Agar Bekzod avtobusga kechikmasa, u darsga ulguradi",
+        "Agar Bekzod darsga ulgursa, u avtobusga kechikmagan",
+        "Agar Bekzod darsga ulgurmasa, u avtobusga kechikkan",
+        "Bekzod avtobusga kechikdi, lekin darsga ulgurdi"
+      ],
+      "t": 1,
+      "izoh": "P: avtobusga kechikaman, Q: darsga ulgurmayman. Kontrapozitsiyada «Q emas» dan «P emas» ga o'tiladi. «Q emas» — darsga ulguraman, «P emas» — kechikmaganman. Demak «Darsga ulgursam, avtobusga kechikmaganman». Uchinchi variant teskari, birinchisi qarama-qarshi mulohaza.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontrapozitsiya-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#e9f01156"
+    },
+    {
+      "q": "«Agar to'rtburchak romb bo'lsa, uning diagonallari o'zaro perpendikulyar bo'ladi» mulohazasiga teskarisiga qarama-qarshi mulohazani tanlang.",
+      "v": [
+        "Agar to'rtburchakning diagonallari perpendikulyar bo'lsa, u romb bo'ladi",
+        "Agar to'rtburchak romb bo'lmasa, uning diagonallari perpendikulyar emas",
+        "Agar to'rtburchakning diagonallari perpendikulyar bo'lmasa, u romb emas",
+        "Rombning diagonallari o'zaro teng bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Kontrapozitsiyada xulosaning inkoridan shartning inkoriga o'tiladi: «Diagonallar perpendikulyar bo'lmasa, to'rtburchak romb emas». Birinchi variant teskari mulohaza va u yolg'on, chunki deltoidning diagonallari ham perpendikulyar. To'rtinchi variant esa noto'g'ri tasdiq: rombning diagonallari umuman teng bo'lishi shart emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontrapozitsiya-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#9b811f31"
+    },
+    {
+      "q": "Matematik analizda «Agar funksiya nuqtada differensiallanuvchi bo'lsa, u shu nuqtada uzluksiz» teoremasi isbotlangan. Shu teoremaga teng kuchli kontrapozitsiya qaysi?",
+      "v": [
+        "Agar funksiya nuqtada uzluksiz bo'lmasa, u shu nuqtada differensiallanuvchi emas",
+        "Agar funksiya nuqtada uzluksiz bo'lsa, u shu nuqtada differensiallanuvchi bo'ladi",
+        "Agar funksiya nuqtada differensiallanuvchi bo'lmasa, u shu nuqtada uzluksiz emas",
+        "Har qanday uzluksiz funksiya barcha nuqtalarda differensiallanuvchi"
+      ],
+      "t": 0,
+      "izoh": "P: differensiallanuvchi, Q: uzluksiz. Kontrapozitsiya «Q emas bo'lsa, P emas»: uzluksiz bo'lmagan nuqtada funksiya differensiallanuvchi bo'la olmaydi. Ikkinchi variant teskari, uchinchisi qarama-qarshi mulohaza va ikkalasi ham yolg'on: y = |x| funksiyasi nolda uzluksiz, ammo differensiallanuvchi emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontrapozitsiya-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#bdc176cb"
+    },
+    {
+      "q": "«Agar son 4 ga bo'linsa, u juft son bo'ladi» mulohazasi bilan teng kuchli, ya'ni u bilan bir vaqtda rost bo'ladigan mulohazani toping.",
+      "v": [
+        "Agar son juft bo'lsa, u 4 ga bo'linadi",
+        "Agar son 4 ga bo'linmasa, u toq son bo'ladi",
+        "Har qanday juft son 4 ga bo'linadi",
+        "Agar son toq bo'lsa, u 4 ga bo'linmaydi"
+      ],
+      "t": 3,
+      "izoh": "Shartli mulohaza faqat o'zining kontrapozitsiyasiga teng kuchli. Bu yerda P: 4 ga bo'linadi, Q: juft. Kontrapozitsiya: «Q emas bo'lsa, P emas», ya'ni «Son toq bo'lsa, u 4 ga bo'linmaydi». Birinchi variant teskari, ikkinchisi qarama-qarshi mulohaza va ikkalasi ham yolg'on: 6 juft, lekin 4 ga bo'linmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-kuchli-juftlik",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#a2647ae6"
+    },
+    {
+      "q": "Shartli mulohaza va undan hosil qilinadigan teskari, qarama-qarshi hamda kontrapozitsiya haqidagi quyidagi tasdiqlardan qaysi biri doim to'g'ri?",
+      "v": [
+        "Shartli mulohaza o'zining teskarisiga har doim teng kuchli bo'ladi",
+        "Teskari mulohaza qarama-qarshi mulohazaga har doim teng kuchli",
+        "Shartli mulohaza o'zining qarama-qarshisiga har doim teng kuchli",
+        "Teskari mulohaza kontrapozitsiyaga har doim teng kuchli"
+      ],
+      "t": 1,
+      "izoh": "Asl mulohaza P dan Q ga, teskarisi Q dan P ga, qarama-qarshisi «P emas» dan «Q emas» ga boradi. Teskari mulohazaning kontrapozitsiyasini tuzsak, aynan qarama-qarshi mulohaza chiqadi, demak ular teng kuchli. Asl mulohaza esa faqat kontrapozitsiyasiga teng kuchli, teskarisiga yoki qarama-qarshisiga emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-kuchli-juftlik",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#2a6b4891"
+    },
+    {
+      "q": "Sardor: «Agar shartnoma imzolansa, to'lov o'tkaziladi», dedi. Uning gapiga teng kuchli bo'lgan mulohaza qaysi variantda keltirilgan?",
+      "v": [
+        "Agar to'lov o'tkazilmasa, shartnoma imzolanmagan bo'ladi",
+        "Agar to'lov o'tkazilsa, shartnoma imzolangan bo'ladi",
+        "Agar shartnoma imzolanmasa, to'lov o'tkazilmaydi",
+        "Shartnoma imzolandi, ammo to'lov o'tkazilmadi"
+      ],
+      "t": 0,
+      "izoh": "Teng kuchli mulohaza — bu kontrapozitsiya. Xulosani inkor qilamiz: to'lov o'tkazilmadi; shartni inkor qilamiz: shartnoma imzolanmagan; va ularni o'rin almashtiramiz. Natijada «To'lov o'tkazilmasa, shartnoma imzolanmagan». Ikkinchi variant teskari, uchinchisi qarama-qarshi mulohaza bo'lib, ular asl gapdan kelib chiqmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-kuchli-juftlik",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#e87ccaec"
+    },
+    {
+      "q": "«Agar son 10 ga bo'linsa, u 5 ga bo'linadi» mulohazasi bilan teng kuchli bo'lmagan tasdiqni aniqlang.",
+      "v": [
+        "Agar son 5 ga bo'linmasa, u 10 ga ham bo'linmaydi",
+        "Sonning 10 ga bo'linishi uning 5 ga bo'linishi uchun yetarli shart",
+        "Agar son 5 ga bo'linsa, u 10 ga bo'linadi",
+        "Sonning 5 ga bo'linishi uning 10 ga bo'linishi uchun zarur shart"
+      ],
+      "t": 2,
+      "izoh": "Birinchi variant kontrapozitsiya, u asl mulohazaga teng kuchli. Ikkinchi va to'rtinchi variantlar aynan shu implikatsiyaning zarur-yetarli tilidagi ifodasi: P dan Q kelib chiqsa, P yetarli, Q zarur shart. Uchinchi variant esa teskari mulohaza va u yolg'on: 15 soni 5 ga bo'linadi, lekin 10 ga bo'linmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-kuchli-juftlik",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#817ca2b8"
+    },
+    {
+      "q": "«Agar kvadratning tomoni 7 sm bo'lsa, uning yuzasi 49 sm² bo'ladi» mulohazasida shart P va xulosa Q qaysi variantda to'g'ri ajratilgan?",
+      "v": [
+        "P: yuza 49 sm² ga teng; Q: tomon 7 sm ga teng",
+        "P: shakl kvadrat; Q: yuza 49 sm² ga teng",
+        "P: tomon 7 sm va yuza 49 sm²; Q: mavjud emas",
+        "P: tomon 7 sm ga teng; Q: yuza 49 sm² ga teng"
+      ],
+      "t": 3,
+      "izoh": "«Agar ... bo'lsa, unda ...» qurilmasida «agar» so'zidan keyingi qism shart, ya'ni P, «unda» so'zidan keyingi qism esa xulosa, ya'ni Q bo'ladi. Bu yerda shart — tomonning 7 sm ga tengligi, xulosa — yuzaning 49 sm² ga tengligi. Birinchi variantda shart bilan xulosa almashtirib yuborilgan, bu teskari mulohazaga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shart-va-xulosani-ajratish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#e1f88d64"
+    },
+    {
+      "q": "«Agar to'rtburchak kvadrat bo'lsa, u to'g'ri to'rtburchak bo'ladi» mulohazasi rost. Unga teskari mulohazaning rostligi haqida nima deyish mumkin?",
+      "v": [
+        "Teskari mulohaza ham rost, chunki asl mulohaza rost bo'lgan",
+        "Teskari mulohaza yolg'on: tomonlari 8 sm va 5 sm bo'lgan to'g'ri to'rtburchak kvadrat emas",
+        "Teskari mulohazani bunday shakllar uchun umuman tuzib bo'lmaydi",
+        "Teskari mulohaza rost, chunki kvadrat va to'g'ri to'rtburchak bir xil shakllardir"
+      ],
+      "t": 1,
+      "izoh": "Asl mulohazaning rostligi teskarisining rostligini kafolatlamaydi, chunki ular teng kuchli emas. Teskari mulohaza «Agar to'rtburchak to'g'ri to'rtburchak bo'lsa, u kvadrat» deb o'qiladi. Tomonlari 8 sm va 5 sm bo'lgan to'g'ri to'rtburchak bu mulohazani rad etadi, demak u yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskarining-rostligi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#e106d780"
+    },
+    {
+      "q": "Maktabda «Agar o'quvchi olimpiadada g'olib bo'lsa, u yakuniy imtihondan ozod qilinadi» qoidasi amal qiladi. Shu qoidaning teskarisi albatta rostmi?",
+      "v": [
+        "Ha, chunki har qanday shartli qoidaning teskarisi ham avtomatik amal qiladi",
+        "Ha, chunki imtihondan faqat olimpiada g'oliblari ozod qilinadi",
+        "Yo'q, chunki qoidaga teskari mulohazani tuzishning iloji yo'q",
+        "Yo'q, chunki o'quvchi sog'lig'i yoki boshqa asos bilan ham ozod qilingan bo'lishi mumkin"
+      ],
+      "t": 3,
+      "izoh": "Qoida faqat bitta yo'nalishni kafolatlaydi: g'oliblik ozod qilishga olib keladi. Teskari mulohaza «Ozod qilingan bo'lsa, g'olib bo'lgan» deyiladi va u qo'shimcha asoslarni hisobga olmaydi. Ozod qilishning boshqa sabablari bo'lgani uchun teskari mulohaza yolg'on bo'lishi mumkin, demak uni rost deb hisoblash mumkin emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskarining-rostligi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#c8f7fa43"
+    },
+    {
+      "q": "«Agar son 9 ga bo'linsa, uning raqamlari yig'indisi 9 ga bo'linadi» mulohazasi va uning teskarisi haqidagi qaysi fikr to'g'ri?",
+      "v": [
+        "Ikkalasi ham rost, chunki bu yerda shart bilan xulosa o'zaro teng kuchli",
+        "Faqat asl mulohaza rost, teskarisi esa yolg'on",
+        "Faqat teskari mulohaza rost, asl mulohaza yolg'on",
+        "Ikkalasi ham yolg'on, chunki bo'linish alomati bunday ishlamaydi"
+      ],
+      "t": 0,
+      "izoh": "9 ga bo'linish alomati ikki tomonlama ishlaydi: son 9 ga bo'linsa raqamlari yig'indisi 9 ga bo'linadi va aksincha. Masalan 243 uchun yig'indi 9 ga teng, 243 esa 9 ga bo'linadi. Demak bu yerda teskari mulohaza ham rost. Bu holat teskari mulohaza doim yolg'on degan noto'g'ri odatni buzadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskarining-rostligi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#6da4101e"
+    },
+    {
+      "q": "«Agar x > 5 bo'lsa, unda x > 2 bo'ladi» mulohazasi rost. Uning teskarisi rostmi va buni qanday asoslash mumkin?",
+      "v": [
+        "Rost, chunki 5 soni 2 dan katta va tengsizliklar bir yo'nalishda",
+        "Yolg'on: x = 3 da x > 2 bajariladi, ammo x > 5 bajarilmaydi",
+        "Rost, chunki x = 7 da ikkala tengsizlik ham bajariladi",
+        "Yolg'on, chunki tengsizliklardan teskari mulohaza tuzilmaydi"
+      ],
+      "t": 1,
+      "izoh": "Teskari mulohaza «Agar x > 2 bo'lsa, unda x > 5» ko'rinishida. Uni rad etish uchun bitta qarshi misol yetarli: x = 3 da shart bajariladi, xulosa esa bajarilmaydi. Uchinchi variantda bitta mos misol keltirilgan, ammo bitta misol mulohazaning rostligini isbotlamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskarining-rostligi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#dc9df62d"
+    },
+    {
+      "q": "P mulohaza yolg'on, Q mulohaza rost bo'lsa, «Agar P bo'lsa, unda Q» implikatsiyasi qanday qiymat qabul qiladi?",
+      "v": [
+        "Rost",
+        "Yolg'on",
+        "Qiymatini aniqlash mumkin emas",
+        "Faqat P rost bo'lganda qiymat beriladi"
+      ],
+      "t": 0,
+      "izoh": "Implikatsiya faqat bitta holatda yolg'on bo'ladi: shart rost, xulosa yolg'on bo'lganda. Qolgan uch holatda u rost hisoblanadi. Bu yerda shart yolg'on, shuning uchun implikatsiya rost. Bunday holat mantiqda «bo'sh rostlik» deb ataladi, chunki shart bajarilmagani uchun va'da buzilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "implikatsiya-rostlik-qiymati",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#c7b49c83"
+    },
+    {
+      "q": "Quyida keltirilgan to'rtta shartli mulohazadan qaysi biri yolg'on qiymatga ega bo'ladi?",
+      "v": [
+        "Agar 12 soni 4 ga bo'linsa, u 2 ga ham bo'linadi",
+        "Agar 7 soni juft bo'lsa, u 14 ga bo'linadi",
+        "Agar 15 soni 3 ga bo'linsa, u 5 ga ham bo'linadi",
+        "Agar 20 soni 5 ga bo'linsa, u 8 ga ham bo'linadi"
+      ],
+      "t": 3,
+      "izoh": "Har bir mulohazada shart va xulosaning rostligi tekshiriladi. Birinchi va uchinchi mulohazalarda shart ham, xulosa ham rost, demak implikatsiya rost. Ikkinchisida shart yolg'on, shuning uchun implikatsiya rost. To'rtinchisida esa shart rost, ammo 20 soni 8 ga bo'linmaydi, ya'ni xulosa yolg'on. Faqat shu holatda implikatsiya yolg'on bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "implikatsiya-rostlik-qiymati",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#f30f2563"
+    },
+    {
+      "q": "Ota o'g'liga: «Agar imtihonni a'lo topshirsang, senga velosiped olib beraman», dedi. Qaysi holatda ota bergan va'dasini buzgan hisoblanadi?",
+      "v": [
+        "O'g'il imtihonni a'lo topshirdi va ota velosiped olib berdi",
+        "O'g'il imtihonni a'lo topshira olmadi, ota velosiped olib bermadi",
+        "O'g'il imtihonni a'lo topshirdi, ammo ota velosiped olib bermadi",
+        "O'g'il imtihonni a'lo topshira olmadi, ota esa baribir velosiped oldi"
+      ],
+      "t": 2,
+      "izoh": "Ota bergan va'da shartli mulohaza: shart — a'lo baho, xulosa — velosiped. Va'da faqat shart bajarilib, xulosa bajarilmaganda buziladi. O'g'il a'lo topshirib, velosiped olinmasa, aynan shu holat yuzaga keladi. To'rtinchi holatda ota va'dadan ortiq ish qilgan, bu va'dani buzish emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "implikatsiya-rostlik-qiymati",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#0ebc252d"
+    },
+    {
+      "q": "«Agar 3 > 5 bo'lsa, unda 2² = 4 bo'ladi» mulohazasining rostlik qiymatini aniqlang va uni to'g'ri asoslagan variantni tanlang.",
+      "v": [
+        "Yolg'on, chunki 3 > 5 tengsizligi noto'g'ri",
+        "Rost, chunki shart yolg'on bo'lganda implikatsiya rost hisoblanadi",
+        "Yolg'on, chunki shart bilan xulosa mazmunan bog'liq emas",
+        "Aniqlab bo'lmaydi, chunki shart hech qachon bajarilmaydi"
+      ],
+      "t": 1,
+      "izoh": "Mantiqda implikatsiyaning qiymati faqat shart va xulosaning rostligi bilan aniqlanadi, ular orasidagi mazmuniy bog'liqlik talab qilinmaydi. Bu yerda shart yolg'on, demak implikatsiya rost. Ko'p o'quvchilar shart yolg'on bo'lgani uchun butun mulohazani yolg'on deb belgilaydi, bu tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "implikatsiya-rostlik-qiymati",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#c93f4ee8"
+    },
+    {
+      "q": "Sonning 2 ga bo'linishi sharti uning 6 ga bo'linishi uchun qanday shart hisoblanadi?",
+      "v": [
+        "zarur, lekin yetarli emas",
+        "yetarli, lekin zarur emas",
+        "ham zarur, ham yetarli",
+        "na zarur, na yetarli"
+      ],
+      "t": 0,
+      "izoh": "6 ga bo'linadigan har bir son albatta 2 ga bo'linadi, demak 2 ga bo'linish 6 ga bo'linish uchun zarur. Ammo bu shart yetarli emas: 8 soni 2 ga bo'linadi, lekin 6 ga bo'linmaydi. Shartli mulohaza tilida: 6 ga bo'linadi degan gapdan 2 ga bo'linadi kelib chiqadi, teskarisi esa chiqmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zarur-yetarli-tasnif",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#8ad799d0"
+    },
+    {
+      "q": "Uchburchakning teng tomonli bo'lishi uning teng yonli bo'lishi uchun qanday shart bo'ladi?",
+      "v": [
+        "faqat zarur shart",
+        "zarur va yetarli shart",
+        "faqat yetarli shart",
+        "zarur ham emas, yetarli ham emas"
+      ],
+      "t": 2,
+      "izoh": "Teng tomonli uchburchakda uchala tomon teng, demak ikki tomoni ham teng va u teng yonli hisoblanadi. Shuning uchun teng tomonlilik yetarli shart. Zarur emas: tomonlari 7 sm, 7 sm va 4 sm bo'lgan uchburchak teng yonli, lekin teng tomonli emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zarur-yetarli-tasnif",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#fa833761"
+    },
+    {
+      "q": "To'rtburchakning diagonallari teng bo'lib, kesishish nuqtasida teng ikkiga bo'linishi uning to'g'ri to'rtburchak bo'lishi uchun qanday shart?",
+      "v": [
+        "zarur shart, ammo yetarli emas",
+        "yetarli shart, ammo zarur emas",
+        "zarur hamda yetarli, ya'ni teng kuchli",
+        "zarur emas, yetarli ham emas"
+      ],
+      "t": 2,
+      "izoh": "Diagonallar kesishish nuqtasida teng ikkiga bo'linsa, to'rtburchak parallelogramm bo'ladi; parallelogrammda diagonallar teng bo'lsa, u to'g'ri to'rtburchakdir. Demak shartdan xulosa kelib chiqadi. Aksincha, har qanday to'g'ri to'rtburchakda diagonallar teng va o'zaro teng ikkiga bo'linadi. Ikki yo'nalish ham bajarilgani uchun shart teng kuchli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zarur-yetarli-tasnif",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#5868f2c3"
+    },
+    {
+      "q": "Natural sonning 3 ga bo'linishi uning toq son bo'lishi uchun qanday shart bo'lishini aniqlang.",
+      "v": [
+        "zarur, lekin yetarli emas",
+        "faqat yetarli shart",
+        "zarur hamda yetarli, ya'ni teng kuchli",
+        "na zarur, na yetarli"
+      ],
+      "t": 3,
+      "izoh": "Yetarli emasligini 6 soni ko'rsatadi: u 3 ga bo'linadi, ammo toq emas. Zarur emasligini 5 soni ko'rsatadi: u toq, ammo 3 ga bo'linmaydi. Ikkala yo'nalishda ham qarshi misol topilgani uchun bu shart toqlik bilan mantiqiy bog'lanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zarur-yetarli-tasnif",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#4e2676de"
+    },
+    {
+      "q": "Butun sonning oxirgi raqami 5 bo'lishi uning 5 ga bo'linishi uchun qanday shart ekanini toping.",
+      "v": [
+        "faqat zarur shart",
+        "yetarli shart, ammo zarur emas",
+        "ham zarur, ham yetarli",
+        "zarur ham emas, yetarli ham emas"
+      ],
+      "t": 1,
+      "izoh": "Oxirgi raqami 5 bo'lgan har bir son 5 ga bo'linadi, masalan 45 yoki 175. Demak bu shart yetarli. Ammo u zarur emas: 30 soni 5 ga bo'linadi, oxirgi raqami esa 0. Zarur shart bo'lishi uchun oxirgi raqam 0 yoki 5 bo'lishi kerak edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zarur-yetarli-tasnif",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#39c1cae9"
+    },
+    {
+      "q": "x > 3 tengsizligining bajarilishi uchun quyidagi shartlardan qaysi biri yetarli, ammo zarur emas?",
+      "v": [
+        "x > 10",
+        "x > 1",
+        "x ≥ 3",
+        "x ≠ 3"
+      ],
+      "t": 0,
+      "izoh": "Yetarli shart deganda undan x > 3 kelib chiqishi tushuniladi. x > 10 bo'lsa, albatta x > 3 bo'ladi, demak shart yetarli. Zarur emas, chunki x = 4 da x > 3 bajariladi, lekin x > 10 bajarilmaydi. Qolgan uch shartdan x > 3 kelib chiqmaydi: masalan x = 2 da x > 1 rost, ammo x > 3 yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yetarli-shartni-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#78acd41a"
+    },
+    {
+      "q": "Natural sonning 6 ga bo'linishi uchun quyidagi shartlardan qaysi biri yetarli shart bo'la oladi?",
+      "v": [
+        "son juft bo'lishi",
+        "son 3 ga bo'linishi",
+        "sonning oxirgi raqami 6 bo'lishi",
+        "son 12 ga bo'linishi"
+      ],
+      "t": 3,
+      "izoh": "12 ga bo'linadigan son 12 = 6·2 bo'lgani uchun albatta 6 ga ham bo'linadi, demak bu shart yetarli. Juftlik yetarli emas: 8 juft, ammo 6 ga bo'linmaydi. 3 ga bo'linish ham yetarli emas: 9 soni misol bo'ladi. Oxirgi raqami 6 bo'lgan 16 soni ham 6 ga bo'linmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yetarli-shartni-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#f117b1dc"
+    },
+    {
+      "q": "Kutubxonaga a'zo bo'lish uchun pasport nusxasini topshirish va 20 000 so'm yillik badal to'lash talab qilinadi; bu ikki talabni bajargan har bir kishi a'zo qilib olinadi. Qaysi variant a'zolik uchun yetarli shart?",
+      "v": [
+        "Faqat pasport nusxasini topshirish",
+        "Faqat 20 000 so'm badalni to'lash",
+        "Pasport nusxasini topshirish va 20 000 so'm badalni to'lash",
+        "Kutubxonaga bir necha marta tashrif buyurish"
+      ],
+      "t": 2,
+      "izoh": "Ikki talab kon'yunksiya bilan bog'langan va shartda ularni birga bajargan har bir kishi a'zo qilib olinishi aytilgan — demak bu birikma yetarli shart. Faqat pasport yoki faqat badal alohida-alohida zarur, ammo yetarli emas: ikkinchisi bajarilmasa, a'zolik berilmaydi. Tashrif buyurish esa talablar ro'yxatida umuman yo'q, u na zarur, na yetarli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yetarli-shartni-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#00b8008c"
+    },
+    {
+      "q": "Uchburchakning teng yonli bo'lishi uchun quyidagi shartlardan qaysi biri yetarli, lekin zarur emas?",
+      "v": [
+        "Uchburchakning ikki burchagi o'zaro teng",
+        "Uchburchakning uchala tomoni o'zaro teng",
+        "Uchburchak to'g'ri burchakli",
+        "Uchburchak perimetri juft songa teng"
+      ],
+      "t": 1,
+      "izoh": "Uchala tomoni teng uchburchakda albatta ikki tomon teng, demak u teng yonli va shart yetarli. Zarur emas: tomonlari 9 sm, 9 sm va 5 sm bo'lgan uchburchak teng yonli, ammo teng tomonli emas. Birinchi variant esa teng kuchli shart, ya'ni u zarur ham, yetarli ham. Qolgan ikkitasidan teng yonlilik kelib chiqmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yetarli-shartni-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#32b3254b"
+    },
+    {
+      "q": "«Ikki sonning ko'paytmasi nolga teng bo'lishi uchun ko'paytuvchilardan kamida biri nolga teng bo'lishi kerak» jumlasi shartli mulohaza sifatida qanday yoziladi?",
+      "v": [
+        "Agar ko'paytma nolga teng bo'lsa, ko'paytuvchilardan kamida biri nolga teng",
+        "Agar ko'paytuvchilardan biri nolga teng bo'lsa, ko'paytma nolga teng bo'ladi",
+        "Agar ko'paytuvchilardan biri noldan farqli bo'lsa, ko'paytma ham noldan farqli",
+        "Ko'paytma va ikkala ko'paytuvchi bir vaqtda nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "«... uchun ... kerak» qurilmasi zarur shartni bildiradi. Agar Q shart P uchun zarur bo'lsa, implikatsiya P dan Q ga qarab yoziladi. Bu yerda P: ko'paytma nolga teng, Q: kamida bitta ko'paytuvchi nolga teng. Demak to'g'ri yozuv birinchi variantda. Ikkinchi variant teskari mulohaza bo'lib, u ham rost, lekin berilgan jumlaning ifodasi emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shart-va-xulosani-ajratish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#a611ed9d"
+    },
+    {
+      "q": "«Faqat obunasi faol bo'lgan o'quvchi jonli darsga kira oladi» jumlasini «Agar ... bo'lsa, unda ...» ko'rinishida to'g'ri yozgan variantni tanlang.",
+      "v": [
+        "Agar o'quvchining obunasi faol bo'lsa, u jonli darsga kira oladi",
+        "Agar o'quvchi jonli darsga kira olmasa, uning obunasi faol bo'ladi",
+        "O'quvchining obunasi faol va u jonli darsga kiradi",
+        "Agar o'quvchi jonli darsga kirgan bo'lsa, uning obunasi faol"
+      ],
+      "t": 3,
+      "izoh": "«Faqat A bo'lganlar B qila oladi» qurilmasi A ni B uchun zarur shart qilib qo'yadi. Zarur shart implikatsiyada xulosa o'rnida turadi, shuning uchun to'g'ri yozuv B dan A ga qarab boradi: darsga kirgan bo'lsa, obunasi faol. Birinchi variant teskari mulohaza bo'lib, u obuna borligini kirishning kafolati deb noto'g'ri talqin qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shart-va-xulosani-ajratish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#ef6a2244"
+    },
+    {
+      "q": "«Uchburchakning ichki burchaklari yig'indisi 180° ga teng» tasdig'ini shartli mulohaza shaklida to'g'ri ifodalagan variantni belgilang.",
+      "v": [
+        "Agar shaklning ichki burchaklari yig'indisi 180° bo'lsa, u uchburchakdir",
+        "Agar shakl uchburchak bo'lmasa, uning burchaklari yig'indisi 180° emas",
+        "Agar shakl uchburchak bo'lsa, uning ichki burchaklari yig'indisi 180° ga teng",
+        "Ixtiyoriy ko'pburchakning ichki burchaklari yig'indisi 180° ga teng"
+      ],
+      "t": 2,
+      "izoh": "Bunday umumiy tasdiqlarda yashirin shart shaklning turi bo'ladi. Uni ochiq yozsak: agar shakl uchburchak bo'lsa, unda burchaklar yig'indisi 180°. Birinchi variant — teskari mulohaza; ko'pburchaklar uchun u rost bo'lsa ham, berilgan tasdiqni ifodalamaydi, chunki berilgan gap uchburchakdan yig'indiga qarab boradi, teskari yo'nalishda emas. Ikkinchi variant qarama-qarshi mulohaza. To'rtinchi variant esa umumlashtirish xatosi: to'rtburchakda yig'indi 360° ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shart-va-xulosani-ajratish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#a619b84d"
+    },
+    {
+      "q": "Natural sonning 15 ga bo'linishi uchun quyidagi shartlardan qaysi biri zarur, ammo yetarli emas?",
+      "v": [
+        "son 5 ga bo'linishi",
+        "son 30 ga bo'linishi",
+        "son juft bo'lishi",
+        "sonning oxirgi raqami 5 bo'lishi"
+      ],
+      "t": 0,
+      "izoh": "15 ga bo'linadigan har bir son 5 ga bo'linadi, demak bu shart zarur. Yetarli emas: 20 soni 5 ga bo'linadi, ammo 15 ga bo'linmaydi. 30 ga bo'linish yetarli, lekin zarur emas, chunki 45 soni 15 ga bo'linsa ham 30 ga bo'linmaydi. Juftlik ham, oxirgi raqamning 5 ga tengligi ham zarur emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zarur-shartni-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#080cd44a"
+    },
+    {
+      "q": "x² − 7x + 12 = 0 tenglamaning ildizi bo'lishi uchun x soniga qo'yilgan quyidagi shartlardan qaysi biri zarur, lekin yetarli emas?",
+      "v": [
+        "x = 3 bo'lishi",
+        "x butun son bo'lishi",
+        "x = 5 bo'lishi",
+        "x manfiy son bo'lishi"
+      ],
+      "t": 1,
+      "izoh": "Tenglamani yechamiz: Viyet teoremasi bo'yicha ildizlar yig'indisi 7, ko'paytmasi 12, demak x = 3 va x = 4. Har ikkala ildiz ham butun, shuning uchun butunlik zarur shart. Yetarli emas: x = 10 butun, ammo ildiz emas. x = 3 esa yetarli shart, x = 5 va manfiy son shartlari umuman bajarilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zarur-shartni-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#53bbb9f1"
+    },
+    {
+      "q": "Aziz haydovchilik guvohnomasini olish uchun tibbiy ko'rikdan o'tdi, nazariy va amaliy imtihonlarni topshirdi. Quyidagilardan qaysi biri guvohnoma olish uchun zarur shart?",
+      "v": [
+        "Shaxsiy avtomobilga ega bo'lish",
+        "Haydovchilik kursida a'lo baho olish",
+        "Tibbiy ko'rikdan o'tish",
+        "Amaliy imtihonni birinchi urinishda topshirish"
+      ],
+      "t": 2,
+      "izoh": "Zarur shart deganda usiz natijaga erishib bo'lmaydigan talab tushuniladi. Tibbiy ko'riksiz guvohnoma berilmaydi, demak u zarur. Shaxsiy avtomobil talab qilinmaydi, a'lo baho ham majburiy emas, imtihonni takroran topshirish esa taqiqlanmagan. Shuning uchun qolgan uch shart zarur emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zarur-shartni-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#61a59add"
+    },
+    {
+      "q": "To'rtburchakning kvadrat bo'lishi uchun quyidagi shartlardan qaysi biri zarur, ammo yetarli emas?",
+      "v": [
+        "Bir tomoni 5 sm ga teng bo'lishi",
+        "Barcha tomonlari teng va barcha burchaklari to'g'ri bo'lishi",
+        "Yuzasi 25 sm² ga teng bo'lishi",
+        "Barcha burchaklari to'g'ri burchak bo'lishi"
+      ],
+      "t": 3,
+      "izoh": "Har bir kvadratda to'rtala burchak to'g'ri, demak bu shart zarur. Yetarli emas: tomonlari 8 sm va 3 sm bo'lgan to'g'ri to'rtburchakda ham burchaklar to'g'ri, ammo u kvadrat emas. Ikkinchi variant zarur va yetarli shart, qolgan ikkitasi esa zarur ham emas, chunki kvadrat boshqa o'lchamda ham bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zarur-shartni-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#27cd871b"
+    },
+    {
+      "q": "|x| = 4 tenglik bajarilishi uchun quyidagi shartlardan qaysi biri zarur va yetarli hisoblanadi?",
+      "v": [
+        "x = 4",
+        "x = −4",
+        "x = 4 yoki x = −4",
+        "x ≥ 4"
+      ],
+      "t": 2,
+      "izoh": "Modul ta'rifiga ko'ra |x| = 4 tenglik x soni noldan 4 birlik uzoqlikda bo'lganda bajariladi, ya'ni x = 4 va x = −4 da. Faqat x = 4 shartini olsak, u yetarli, ammo zarur emas, chunki manfiy ildiz yo'qoladi. x ≥ 4 sharti esa x = 9 kabi mos kelmaydigan qiymatlarni ham qamrab oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-kuchli-shartni-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#ce24ad84"
+    },
+    {
+      "q": "Natural sonning 12 ga bo'linishi uchun zarur va yetarli shart qaysi variantda to'g'ri ko'rsatilgan?",
+      "v": [
+        "son 3 ga ham, 4 ga ham bo'linadi",
+        "son 2 ga ham, 6 ga ham bo'linadi",
+        "son juft va 3 ga bo'linadi",
+        "son 24 ga bo'linadi"
+      ],
+      "t": 0,
+      "izoh": "3 va 4 sonlari o'zaro tub, shuning uchun ularning har ikkalasiga bo'linish 12 ga bo'linish bilan teng kuchli. Ikkinchi va uchinchi variantlar aslida 6 ga bo'linishni bildiradi va yetarli emas: 18 soni ularni qanoatlantiradi, ammo 12 ga bo'linmaydi. 24 ga bo'linish yetarli, lekin zarur emas, chunki 36 soni 12 ga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-kuchli-shartni-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#575969ed"
+    },
+    {
+      "q": "Parallelogrammning romb bo'lishi uchun zarur va yetarli shart quyidagilardan qaysi biri?",
+      "v": [
+        "Diagonallari o'zaro teng bo'lishi",
+        "Barcha burchaklari o'zaro teng bo'lishi",
+        "Diagonallari kesishish nuqtasida teng ikkiga bo'linishi",
+        "Diagonallari o'zaro perpendikulyar bo'lishi"
+      ],
+      "t": 3,
+      "izoh": "Parallelogrammda diagonallar perpendikulyar bo'lsa, u romb bo'ladi va aksincha, har qanday rombda diagonallar perpendikulyar. Demak shart ikki tomonlama bajariladi. Birinchi va ikkinchi shartlar to'g'ri to'rtburchakni beradi. Uchinchi shart esa har qanday parallelogrammda bajariladi, shuning uchun u rombni ajratib ko'rsata olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-kuchli-shartni-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#93552d33"
+    },
+    {
+      "q": "Ikkita butun sonning yig'indisi juft bo'lishi uchun zarur va yetarli shartni ko'rsating.",
+      "v": [
+        "Ikkala son ham juft bo'lishi",
+        "Ikkala son bir xil juftlikka ega bo'lishi, ya'ni ikkalasi juft yoki ikkalasi toq",
+        "Ikkala son ham toq bo'lishi",
+        "Sonlardan biri juft, ikkinchisi toq bo'lishi"
+      ],
+      "t": 1,
+      "izoh": "Juft bilan juftning yig'indisi juft, toq bilan toqning yig'indisi ham juft, masalan 7 + 9 = 16. Har xil juftlikdagi sonlarning yig'indisi esa toq bo'ladi. Demak yig'indi juftligi sonlarning bir xil juftlikka ega bo'lishiga teng kuchli. Faqat birinchi yoki faqat uchinchi shart yetarli, ammo zarur emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-kuchli-shartni-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#baf4f591"
+    },
+    {
+      "q": "Dilnoza: «Agar bugun ish kuni bo'lsa, bekatda navbat uzun bo'ladi», dedi. Bugun bekatda navbat kalta ekan. Dilnozaning gapiga ko'ra qanday xulosa chiqadi?",
+      "v": [
+        "Bugun ish kuni",
+        "Bugun ish kuni emas",
+        "Bugun ish kunimi yoki dam olish kunimi, aniqlab bo'lmaydi",
+        "Dilnozaning gapi yolg'on bo'lib chiqadi"
+      ],
+      "t": 1,
+      "izoh": "Gap shartli mulohaza: ish kuni bo'lsa, navbat uzun. Xulosa bajarilmagani ma'lum, ya'ni navbat uzun emas. Kontrapozitsiya qoidasiga ko'ra xulosaning inkoridan shartning inkori kelib chiqadi. Demak bugun ish kuni emas. Bu mantiqiy jihatdan asosli yagona xulosa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-implikatsiya-tahlil",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#cb96ae43"
+    },
+    {
+      "q": "Sotuvchi: «Agar mahsulot chegirmada bo'lsa, uning narxi 50 000 so'mdan past bo'ladi», dedi. Xaridor narxi 72 000 so'm bo'lgan mahsulotni ko'rdi. Qanday xulosa to'g'ri?",
+      "v": [
+        "Mahsulot chegirmada emas",
+        "Mahsulot chegirmada",
+        "Mahsulotning narxi noto'g'ri ko'rsatilgan",
+        "Chegirma haqida hech qanday xulosa chiqarib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Sotuvchining gapida shart — chegirma, xulosa — narxning 50 000 so'mdan past bo'lishi. Ko'rilgan narx 72 000 so'm, ya'ni xulosa bajarilmagan. Kontrapozitsiya bo'yicha shart ham bajarilmaydi, demak mahsulot chegirmada emas. Bu yerda hech qanday qo'shimcha ma'lumot kerak emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-implikatsiya-tahlil",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#56f509c3"
+    },
+    {
+      "q": "Fermer: «Agar don yaxshi sug'orilsa, hosil gektaridan 60 sentnerdan oshadi», dedi. Bu yil hosil gektaridan 68 sentner bo'ldi. Fermerning gapiga tayanib qanday xulosa chiqariladi?",
+      "v": [
+        "Don albatta yaxshi sug'orilgan",
+        "Don yaxshi sug'orilmagan",
+        "Sug'orish haqida aniq xulosa chiqarib bo'lmaydi",
+        "Fermerning gapi yolg'on bo'lib chiqdi"
+      ],
+      "t": 2,
+      "izoh": "Xulosaning bajarilishi shartning bajarilishini isbotlamaydi, chunki shartli mulohaza faqat bir yo'nalishda ishlaydi. Yuqori hosil o'g'itlash yoki qulay ob-havo tufayli ham bo'lishi mumkin. Xulosadan shartga o'tish teskari mulohazani qo'llash demakdir va u asossizdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-implikatsiya-tahlil",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#849f87d4"
+    },
+    {
+      "q": "Shifokor: «Agar bemor dorini muntazam ichsa, harorati uch kunda tushadi», dedi. Bemor dorini muntazam ichmadi. Qaysi xulosa mantiqan asoslangan?",
+      "v": [
+        "Bemorning harorati uch kunda tushmaydi",
+        "Bemorning harorati uch kunda tushadi",
+        "Shifokorning gapi noto'g'ri bo'lib chiqadi",
+        "Harorat haqida aniq xulosa chiqarib bo'lmaydi"
+      ],
+      "t": 3,
+      "izoh": "Shartning bajarilmasligi xulosa haqida hech narsa demaydi, chunki implikatsiya faqat shart bajarilganda kafolat beradi. Harorat organizmning o'zi bilan yoki boshqa muolaja bilan ham tushishi mumkin. Shartning inkoridan xulosaning inkorini chiqarish qarama-qarshi mulohazani qo'llash bo'lib, u asl gapdan kelib chiqmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-implikatsiya-tahlil",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#0dff3465"
+    },
+    {
+      "q": "Nodira: «Agar men soat 7 da uydan chiqsam, darsga kechikmayman», dedi va bu gap rost. Nodira darsga kechikdi. Bundan qanday xulosa chiqadi?",
+      "v": [
+        "Nodira soat 7 da uydan chiqmagan",
+        "Nodira soat 7 da uydan chiqqan",
+        "Nodira darsga kechikmagan",
+        "Nodiraning aytgan gapi yolg'on"
+      ],
+      "t": 0,
+      "izoh": "Shart P: soat 7 da uydan chiqish, xulosa Q: kechikmaslik. Kechikkani ma'lum, ya'ni Q inkor qilingan. Kontrapozitsiya bo'yicha P ham inkor qilinadi, demak Nodira soat 7 da uydan chiqmagan. Gap rost deb berilgani uchun to'rtinchi variant o'z-o'zidan yo'q qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-implikatsiya-tahlil",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#ce304f00"
+    },
+    {
+      "q": "Metroga kirish uchun bir martalik chipta yoki transport kartasi kerak. Chiptaga ega bo'lish metroga kirish uchun qanday shart hisoblanadi?",
+      "v": [
+        "Chipta bo'lishi metroga kirish uchun zarur, lekin yetarli emas",
+        "Chipta bo'lishi metroga kirish uchun yetarli, lekin zarur emas",
+        "Chipta bo'lishi metroga kirish uchun zarur va yetarli shart",
+        "Chipta bo'lishi metroga kirish imkoniyati bilan bog'lanmagan"
+      ],
+      "t": 1,
+      "izoh": "Chiptasi bo'lgan yo'lovchi metroga kira oladi, demak shart yetarli. Ammo u zarur emas, chunki transport kartasi bilan ham kirish mumkin. Ikki imkoniyat «yoki» bilan bog'langanda ularning har biri alohida yetarli bo'ladi, lekin biri ham majburiy emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-zarur-yetarli",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#cbfe1a47"
+    },
+    {
+      "q": "Universitetga hujjat topshirish uchun o'rta ma'lumot to'g'risidagi hujjat talab qilinadi, ammo uning o'zi qabul qilinishni kafolatlamaydi. Bu hujjat qabul uchun qanday shart?",
+      "v": [
+        "O'rta ma'lumot hujjati qabul qilinish uchun zarur, ammo yetarli emas",
+        "O'rta ma'lumot hujjati qabul qilinish uchun yetarli, ammo zarur emas",
+        "O'rta ma'lumot hujjati qabul qilinish uchun zarur va yetarli shart",
+        "O'rta ma'lumot hujjati qabul qilinishga umuman ta'sir ko'rsatmaydi"
+      ],
+      "t": 0,
+      "izoh": "Hujjatsiz abituriyent umuman ishtirok eta olmaydi, demak u zarur shart. Yetarli emasligi shartning o'zida aytilgan: qabul yana test ballariga bog'liq. Shu sababli hujjat topshirish qabul qilinishga olib kelmaydi, faqat unga yo'l ochadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-zarur-yetarli",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#9be02762"
+    },
+    {
+      "q": "Aziz mashinasining bakiga benzin quydi, ammo akkumulyator bo'shligi sababli mashina yurmadi. Benzinning bo'lishi mashina harakatlanishi uchun qanday shart?",
+      "v": [
+        "Bakda benzin bo'lishi harakat uchun yetarli shart",
+        "Bakda benzin bo'lishi harakat uchun zarur, ammo yetarli emas",
+        "Bakda benzin bo'lishi harakat uchun zarur va yetarli",
+        "Bakda benzin bo'lishi harakat uchun ahamiyatga ega emas"
+      ],
+      "t": 1,
+      "izoh": "Benzinsiz mashina yurmaydi, demak benzin zarur shart. Vaziyatning o'zi yetarli emasligini ko'rsatadi: benzin bor edi, lekin akkumulyator ishlamagani uchun harakat bo'lmadi. Yetarli shart uchun barcha texnik talablar birga bajarilishi kerak edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-zarur-yetarli",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#956fb635"
+    },
+    {
+      "q": "Sinf rahbari: «Ekskursiyaga borish uchun ota-onaning yozma roziligi bo'lishi va 45 000 so'm to'lanishi kerak», dedi. Faqat yozma rozilikning bo'lishi qanday shart?",
+      "v": [
+        "Yozma rozilik ekskursiyaga borish uchun yetarli, ammo zarur emas",
+        "Yozma rozilik ekskursiyaga borish uchun zarur va yetarli",
+        "Yozma rozilik ekskursiyaga borish imkoniyatiga ta'sir qilmaydi",
+        "Yozma rozilik ekskursiyaga borish uchun zarur, ammo yetarli emas"
+      ],
+      "t": 3,
+      "izoh": "Ikki talab «va» bog'lovchisi bilan berilgan, demak har biri alohida majburiy. Rozilik bo'lmasa borib bo'lmaydi, shuning uchun u zarur. Faqat rozilikning o'zi yetarli emas, chunki to'lov ham talab qilinadi. Yetarli shart faqat ikkala talab birga bajarilganda hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-zarur-yetarli",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#58accd06"
+    },
+    {
+      "q": "Do'kon shartiga ko'ra 500 000 so'mdan ortiq xarid qilgan har bir mijoz sovg'a oladi. Bunday xarid sovg'a olish uchun qanday shart bo'ladi?",
+      "v": [
+        "Bunday xarid sovg'a olish uchun zarur, yetarli emas",
+        "Bunday xarid sovg'a olish uchun zarur va yetarli",
+        "Bunday xarid sovg'a olish uchun yetarli, zarur emas",
+        "Bunday xarid sovg'a olish ehtimoliga ta'sir qilmaydi"
+      ],
+      "t": 2,
+      "izoh": "E'londa faqat bitta yo'nalish kafolatlangan: katta xarid sovg'aga olib keladi, demak shart yetarli. Zarurligi aytilmagan, chunki do'kon sovg'ani boshqa aksiya bo'yicha ham berishi mumkin. Shuning uchun sovg'a olgan mijoz albatta 500 000 so'mdan ortiq xarid qilgan deb bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-zarur-yetarli",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#5cdc38e2"
+    },
+    {
+      "q": "«Agar sonning kvadrati 36 dan katta bo'lsa, unda sonning o'zi 6 dan katta bo'ladi» mulohazasini rad etuvchi qarshi misolni tanlang.",
+      "v": [
+        "x = 7",
+        "x = 6",
+        "x = −8",
+        "x = 5"
+      ],
+      "t": 2,
+      "izoh": "Qarshi misolda shart bajarilib, xulosa buzilishi kerak. x = −8 da x² = 64 va bu 36 dan katta, ya'ni shart bajariladi. Ammo −8 soni 6 dan katta emas, demak xulosa buzildi. x = 7 da ikkala qism ham bajariladi, x = 6 va x = 5 da esa shartning o'zi bajarilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qarshi-misol-topish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#3dc9448f"
+    },
+    {
+      "q": "«Agar to'rtburchakning ikkita tomoni o'zaro parallel bo'lsa, u parallelogramm bo'ladi» mulohazasiga qaysi shakl qarshi misol bo'la oladi?",
+      "v": [
+        "Kvadrat",
+        "Romb",
+        "To'g'ri to'rtburchak",
+        "Asoslari 9 sm va 5 sm bo'lgan trapetsiya"
+      ],
+      "t": 3,
+      "izoh": "Trapetsiyada ikki asos o'zaro parallel, demak shart bajariladi. Asoslar uzunligi har xil bo'lgani uchun qolgan ikki tomon parallel emas va shakl parallelogramm bo'lmaydi, ya'ni xulosa buziladi. Birinchi uchta shakl esa parallelogrammning xususiy hollari bo'lgani uchun mulohazani rad eta olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qarshi-misol-topish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#a4a2b66d"
+    },
+    {
+      "q": "«Agar ikkita butun sonning ko'paytmasi juft bo'lsa, unda ikkala son ham juft bo'ladi» mulohazasini rad etuvchi sonlar juftligini ko'rsating.",
+      "v": [
+        "6 va 4",
+        "3 va 8",
+        "5 va 7",
+        "2 va 10"
+      ],
+      "t": 1,
+      "izoh": "Qarshi misolda shart bajarilib, xulosa buzilishi kerak. 3 va 8 sonlarining ko'paytmasi 24 ga teng, ya'ni juft, demak shart bajariladi. Ammo 3 soni toq, shuning uchun xulosa buzildi. 5 va 7 juftligida ko'paytma 35 bo'lib toq chiqadi va shartning o'zi bajarilmaydi, qolgan ikki juftlikda esa xulosa ham to'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarshi-misol-topish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#4f4bacaa"
+    },
+    {
+      "q": "Sardor: «Agar do'kon yopiq bo'lsa, uning eshigida e'lon osilgan bo'ladi», dedi. Uning gapini rad etish uchun qanday holat kuzatilishi kerak?",
+      "v": [
+        "Do'kon ochiq va eshikda e'lon yo'q",
+        "Do'kon yopiq, ammo eshikda hech qanday e'lon yo'q",
+        "Do'kon ochiq, lekin eshikda e'lon osilgan",
+        "Do'kon yopiq va eshikda e'lon osilgan"
+      ],
+      "t": 1,
+      "izoh": "Shartli mulohaza faqat shart rost, xulosa yolg'on bo'lgan holatda yolg'on bo'ladi. Bu yerda shart — do'konning yopiqligi, xulosa — e'lonning borligi. Demak gapni rad etish uchun yopiq do'kon eshigida e'lon yo'qligini ko'rsatish kerak. Do'kon ochiq bo'lgan holatlar gapni umuman sinamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarshi-misol-topish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#3d844f83"
+    },
+    {
+      "q": "«Agar P bo'lsa, unda Q» ko'rinishidagi implikatsiya qaysi holatda yolg'on qiymat qabul qiladi?",
+      "v": [
+        "P rost, Q yolg'on bo'lganda",
+        "P yolg'on, Q rost bo'lganda",
+        "P ham, Q ham yolg'on bo'lganda",
+        "P ham, Q ham rost bo'lganda"
+      ],
+      "t": 0,
+      "izoh": "Implikatsiya berilgan va'da yoki kafolat sifatida tushuniladi. Kafolat faqat shart bajarilib, va'da qilingan natija chiqmaganda buziladi. Shuning uchun P rost va Q yolg'on bo'lgan yagona satrda implikatsiya yolg'on bo'ladi. Qolgan uch satrda esa u rost hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "implikatsiya-rostlik-jadvali",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#f6a73163"
+    },
+    {
+      "q": "«Agar P bo'lsa, unda Q» implikatsiyasining rostlik jadvalidagi to'rt satrdan nechtasida natija rost bo'ladi?",
+      "v": [
+        "Bitta satrda",
+        "Ikkita satrda",
+        "Uchta satrda",
+        "To'rtala satrda"
+      ],
+      "t": 2,
+      "izoh": "Rostlik jadvalida P va Q ning to'rt xil kombinatsiyasi bo'ladi. Implikatsiya faqat P rost, Q yolg'on bo'lgan satrda yolg'on. Qolgan uch satr, ya'ni rost-rost, yolg'on-rost va yolg'on-yolg'on holatlarida natija rost chiqadi. Demak uchta satrda qiymat rost bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "implikatsiya-rostlik-jadvali",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#022b337c"
+    },
+    {
+      "q": "P: «son 8 ga bo'linadi», Q: «son 4 ga bo'linadi» deb olindi. 20 soni uchun «Agar P bo'lsa, unda Q» implikatsiyasining qiymati qanday?",
+      "v": [
+        "Rost, chunki shart yolg'on bo'lgani uchun implikatsiya buzilmaydi",
+        "Yolg'on, chunki 20 soni 8 ga bo'linmaydi",
+        "Rost, chunki shart ham, xulosa ham bajarilgan",
+        "Yolg'on, chunki shart va xulosa har xil qiymatga ega"
+      ],
+      "t": 0,
+      "izoh": "20 soni 8 ga bo'linmaydi, demak P yolg'on. Ayni paytda 20 soni 4 ga bo'linadi, demak Q rost. Shart yolg'on bo'lgan satrda implikatsiya har doim rost bo'ladi, shuning uchun natija rost. Shartning yolg'onligini implikatsiyaning yolg'onligi bilan chalkashtirish tipik xatodir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "implikatsiya-rostlik-jadvali",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#a017e115"
+    },
+    {
+      "q": "Rostlik jadvaliga ko'ra «Agar P bo'lsa, unda Q» implikatsiyasi quyidagi murakkab mulohazalardan qaysi biriga teng kuchli?",
+      "v": [
+        "P va Q",
+        "P emas yoki Q",
+        "P yoki Q emas",
+        "P emas va Q emas"
+      ],
+      "t": 1,
+      "izoh": "Implikatsiya faqat P rost va Q yolg'on bo'lgan satrda yolg'on. «P emas yoki Q» diz'yunksiyasi ham aynan shu satrda yolg'on bo'ladi, chunki unda P emas yolg'on va Q ham yolg'on. Qolgan uch satrda ikkala ifoda ham rost qiymat beradi, demak ular teng kuchli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "implikatsiya-rostlik-jadvali",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#5ffe40b1"
+    },
+    {
+      "q": "Teoremaga ko'ra butun sonning kvadrati 3 ga bo'linsa, sonning o'zi ham 3 ga bo'linadi. 47 soni 3 ga bo'linmasligi ma'lum bo'lsa, qanday xulosa chiqadi?",
+      "v": [
+        "47² soni 3 ga bo'linadi",
+        "47² soni haqida xulosa chiqarib bo'lmaydi",
+        "Teorema 47 soni uchun bajarilmaydi",
+        "47² soni 3 ga bo'linmaydi"
+      ],
+      "t": 3,
+      "izoh": "Teorema P: kvadrat 3 ga bo'linadi, Q: sonning o'zi 3 ga bo'linadi ko'rinishida. Bizga Q ning inkori berilgan, chunki 47 soni 3 ga bo'linmaydi. Kontrapozitsiya bo'yicha P ham inkor qilinadi, ya'ni 47² soni 3 ga bo'linmaydi. Haqiqatan 47² = 2209 va raqamlari yig'indisi 13 bo'lgani uchun u 3 ga bo'linmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontrapozitsiya-bilan-xulosa",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#cd5f0bd4"
+    },
+    {
+      "q": "«Agar to'g'ri chiziq tekislikka perpendikulyar bo'lsa, u tekislikdagi har bir to'g'ri chiziqqa perpendikulyar» tasdig'i berilgan. m chiziq tekislikdagi n chiziqqa perpendikulyar emas. Xulosa qanday?",
+      "v": [
+        "m to'g'ri chiziq tekislikka perpendikulyar emas",
+        "m to'g'ri chiziq tekislikka perpendikulyar",
+        "n to'g'ri chiziq tekislikda yotmaydi",
+        "m va n to'g'ri chiziqlar o'zaro parallel"
+      ],
+      "t": 0,
+      "izoh": "Tasdiqning xulosasi «tekislikdagi har bir chiziqqa perpendikulyar» deyilgan. Bu xulosaning inkori esa «kamida bitta chiziqqa perpendikulyar emas» bo'ladi va bizga aynan shu holat berilgan. Kontrapozitsiya bo'yicha shart ham inkor qilinadi, demak m chiziq tekislikka perpendikulyar emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontrapozitsiya-bilan-xulosa",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#0540ca2e"
+    },
+    {
+      "q": "Zavod nazoratchisi: «Agar detal standartga mos bo'lsa, uning og'irligi 250 g dan 260 g gacha bo'ladi», dedi. Tekshirilgan detal 268 g chiqdi. Xulosa qanday?",
+      "v": [
+        "Detal standartga mos",
+        "Tarozi noto'g'ri o'lchagan",
+        "Detal standartga mos emas",
+        "Detal haqida hech qanday xulosa chiqarib bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Nazoratchining gapi shartli mulohaza: moslik og'irlikning berilgan oraliqda bo'lishini kafolatlaydi. O'lchangan 268 g qiymati oraliqdan tashqarida, ya'ni xulosa bajarilmadi. Kontrapozitsiya bo'yicha shart ham bajarilmaydi, demak detal standartga mos emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontrapozitsiya-bilan-xulosa",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#d911729e"
+    },
+    {
+      "q": "«Har qanday tub son 1 dan katta bo'ladi» tasdig'iga tayanib, 1 sonining o'zi haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "1 soni tub son",
+        "1 soni murakkab son",
+        "1 soni haqida xulosa chiqarib bo'lmaydi",
+        "1 soni tub son emas"
+      ],
+      "t": 3,
+      "izoh": "Tasdiqni shartli ko'rinishga keltiramiz: agar son tub bo'lsa, u 1 dan katta. 1 soni 1 dan katta emas, ya'ni xulosa bajarilmaydi. Kontrapozitsiya bo'yicha shart ham bajarilmaydi, demak 1 soni tub emas. Uni murakkab deb atash ham noto'g'ri, chunki murakkab sonda ikkitadan ortiq bo'luvchi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontrapozitsiya-bilan-xulosa",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#676968c6"
+    },
+    {
+      "q": "«Agar A bo'lsa, unda B bo'ladi» va «Agar B bo'lsa, unda C bo'ladi» mulohazalarining ikkalasi ham rost. Bundan qaysi xulosa mantiqan kelib chiqadi?",
+      "v": [
+        "Agar A bo'lsa, unda C bo'ladi",
+        "Agar C bo'lsa, unda A bo'ladi",
+        "Agar A bo'lmasa, unda C bo'lmaydi",
+        "Agar B bo'lsa, unda A bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Ikki implikatsiya umumiy B mulohazasi orqali zanjir hosil qiladi. A dan B ga, B dan esa C ga o'tiladi, demak A dan C kelib chiqadi. Bu qoida implikatsiyaning tranzitivligi deb ataladi. Qolgan variantlar teskari yoki qarama-qarshi mulohazalar bo'lib, zanjirdan kelib chiqmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "implikatsiya-zanjiri",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#acc5bf1b"
+    },
+    {
+      "q": "Maktab qoidasi: agar o'quvchi darsga kechiksa, u navbatchiga tushuntirish yozadi; agar tushuntirish yozsa, bu kundalikka qayd etiladi. Kamola bugun darsga kechikdi. Xulosa qanday?",
+      "v": [
+        "Kamola tushuntirish yozmaydi",
+        "Kamolaning kundaligida hech qanday qayd bo'lmaydi",
+        "Kamola haqida xulosa chiqarib bo'lmaydi",
+        "Kamolaning kechikishi kundalikka qayd etiladi"
+      ],
+      "t": 3,
+      "izoh": "Birinchi qoida kechikishdan tushuntirishga, ikkinchisi tushuntirishdan kundalikdagi qaydga olib boradi. Kamola kechikkani uchun birinchi zanjir ishga tushadi va tushuntirish yoziladi. Undan keyin ikkinchi zanjir ishlaydi va qayd etiladi. Demak zanjir bo'ylab boshdan oxirgacha o'tish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "implikatsiya-zanjiri",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#3227de0e"
+    },
+    {
+      "q": "«Agar yomg'ir yog'sa, futbol o'yini bekor qilinadi» va «Agar o'yin bekor qilinsa, chipta puli qaytariladi» qoidalari amal qiladi. Chipta puli qaytarilmadi. Xulosa qanday?",
+      "v": [
+        "Yomg'ir yoqqan",
+        "O'yin bekor qilingan",
+        "Yomg'ir yog'magan",
+        "Faqat o'yin haqida xulosa chiqadi, yomg'ir haqida emas"
+      ],
+      "t": 2,
+      "izoh": "Zanjir yomg'irdan bekor qilishga, undan esa pul qaytarishga boradi. Oxirgi natija bajarilmagani ma'lum, demak kontrapozitsiya bo'yicha o'yin bekor qilinmagan. Yana bir qadam orqaga qaytsak, yomg'ir ham yog'magan bo'lib chiqadi. Zanjir ikki bosqichda teskari yo'nalishda o'qildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "implikatsiya-zanjiri",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#4c86d572"
+    },
+    {
+      "q": "«Agar son 24 ga bo'linsa, u 8 ga bo'linadi» va «Agar son 8 ga bo'linsa, u juft bo'ladi» mulohazalari rost. Toq son haqida qanday xulosa chiqadi?",
+      "v": [
+        "Toq son 8 ga bo'linadi",
+        "Toq son 24 ga bo'linmaydi",
+        "Toq son 24 ga bo'linishi mumkin",
+        "Toq son haqida xulosa chiqarib bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Zanjirni birlashtiramiz: 24 ga bo'linish 8 ga bo'linishni, u esa juftlikni keltirib chiqaradi. Demak 24 ga bo'linadigan har bir son juft. Toq son juft emas, shuning uchun kontrapozitsiya bo'yicha u 24 ga bo'linmaydi. Bu xulosa zanjirning ikkala bo'g'inidan foydalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "implikatsiya-zanjiri",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#814cfeae"
+    },
+    {
+      "q": "Uchburchak tomonlari uchun a² + b² = c² tengligining bajarilishi uning to'g'ri burchakli bo'lishi uchun qanday shart hisoblanadi?",
+      "v": [
+        "Bu tenglik to'g'ri burchakli bo'lish uchun zarur va yetarli shart",
+        "Bu tenglik to'g'ri burchakli bo'lish uchun faqat zarur shart",
+        "Bu tenglik to'g'ri burchakli bo'lish uchun faqat yetarli shart",
+        "Bu tenglik uchburchak turini aniqlashga yordam bermaydi"
+      ],
+      "t": 0,
+      "izoh": "Pifagor teoremasi to'g'ri burchakli uchburchakda bu tenglik bajarilishini ko'rsatadi, ya'ni shart zarur. Pifagor teoremasiga teskari teorema esa tenglik bajarilsa uchburchak to'g'ri burchakli bo'lishini isbotlaydi, ya'ni shart yetarli. Ikki teorema birga shartni teng kuchli qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-shart-tasnifi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#7e8e2ff6"
+    },
+    {
+      "q": "Ikki uchburchakning o'zaro teng bo'lishi uchun ularning yuzalari teng bo'lishi qanday shart bo'ladi?",
+      "v": [
+        "Yuzalarning tengligi uchburchaklar tengligi uchun yetarli shart",
+        "Yuzalarning tengligi uchburchaklar tengligi uchun zarur, ammo yetarli emas",
+        "Yuzalarning tengligi uchburchaklar tengligi uchun zarur va yetarli",
+        "Yuzalarning tengligi uchburchaklar tengligiga bog'liq emas"
+      ],
+      "t": 1,
+      "izoh": "Teng uchburchaklar ustma-ust tushadi, demak ularning yuzalari ham teng: shart zarur. Yetarli emas: asosi 12 sm va balandligi 5 sm bo'lgan uchburchak bilan asosi 6 sm va balandligi 10 sm bo'lgan uchburchakning yuzasi bir xil, o'zlari esa teng emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-shart-tasnifi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#6f000f0b"
+    },
+    {
+      "q": "Aylanaga ichki chizilgan burchakning to'g'ri burchak bo'lishi uchun uning tayanch vatari diametr bo'lishi qanday shart?",
+      "v": [
+        "Vatarning diametr bo'lishi bu yerda faqat yetarli shart",
+        "Vatarning diametr bo'lishi bu yerda faqat zarur shart",
+        "Vatarning diametr bo'lishi bu yerda zarur va yetarli shart",
+        "Vatarning diametr bo'lishi burchak turiga ta'sir qilmaydi"
+      ],
+      "t": 2,
+      "izoh": "Diametrga tayangan ichki chizilgan burchak har doim 90° ga teng, demak shart yetarli. Aksincha, ichki chizilgan burchak 90° bo'lsa, u tayangan yoy 180° ga teng bo'ladi va vatar diametr chiqadi, demak shart zarur ham. Ikki yo'nalish birga bajarilgani uchun shart teng kuchli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-shart-tasnifi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#d779d161"
+    },
+    {
+      "q": "To'rtburchakning parallelogramm bo'lishi uchun uning ikkita tomoni o'zaro parallel bo'lishi qanday shart hisoblanadi?",
+      "v": [
+        "Ikki tomonning parallelligi parallelogramm uchun yetarli, ammo zarur emas",
+        "Ikki tomonning parallelligi parallelogramm uchun zarur va yetarli",
+        "Ikki tomonning parallelligi to'rtburchak turiga ta'sir ko'rsatmaydi",
+        "Ikki tomonning parallelligi parallelogramm uchun zarur, ammo yetarli emas"
+      ],
+      "t": 3,
+      "izoh": "Har qanday parallelogrammda qarama-qarshi tomonlar juft-jufti bilan parallel, demak ikki tomonning parallelligi zarur shart. Yetarli emas: asoslari 10 sm va 6 sm bo'lgan trapetsiyada ham ikki tomon parallel, lekin u parallelogramm emas. Yetarli bo'lishi uchun ikkala tomon juftligi ham parallel bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-shart-tasnifi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#d8981c39"
+    },
+    {
+      "q": "Natural son raqamlari yig'indisining 3 ga bo'linishi shu sonning 9 ga bo'linishi uchun qanday shart bo'ladi?",
+      "v": [
+        "yetarli, lekin zarur emas",
+        "zarur emas, yetarli ham emas",
+        "zarur shart, ammo yetarli emas",
+        "zarur va yetarli shart"
+      ],
+      "t": 2,
+      "izoh": "9 ga bo'linadigan son 3 ga ham bo'linadi, demak uning raqamlari yig'indisi 3 ga bo'linadi: shart zarur. Yetarli emas: 12 sonining raqamlari yig'indisi 3 ga teng va 3 ga bo'linadi, ammo 12 soni 9 ga bo'linmaydi. Yetarli shart uchun yig'indi 9 ga bo'linishi talab qilinar edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolinish-sharti-tasnifi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#8c8d660d"
+    },
+    {
+      "q": "Sonning oxirgi ikki raqamidan tuzilgan sonning 4 ga bo'linishi shu ko'p xonali sonning 4 ga bo'linishi uchun qanday shart?",
+      "v": [
+        "zarur, lekin yetarli emas",
+        "yetarli shart, ammo zarur emas",
+        "zarur ham emas, yetarli ham emas",
+        "zarur va yetarli shart"
+      ],
+      "t": 3,
+      "izoh": "Har qanday son yuzliklar qismi va oxirgi ikki raqamdan tuzilgan son yig'indisi ko'rinishida yoziladi, yuzliklar qismi esa 100 ga karrali bo'lgani uchun 4 ga bo'linadi. Shuning uchun sonning 4 ga bo'linishi faqat oxirgi ikki raqamga bog'liq. Masalan 7 316 sonida 16 soni 4 ga bo'linadi va butun son ham bo'linadi. Ikki yo'nalish ham bajarilgani uchun shart teng kuchli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolinish-sharti-tasnifi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#b9476942"
+    },
+    {
+      "q": "Natural sonning 100 ga bo'linishi uning 4 ga bo'linishi uchun qanday shart hisoblanadi?",
+      "v": [
+        "yetarli, lekin zarur emas",
+        "faqat zarur shart",
+        "zarur hamda yetarli, ya'ni teng kuchli",
+        "zarur emas, yetarli ham emas"
+      ],
+      "t": 0,
+      "izoh": "100 soni 4 ga bo'linadi, shuning uchun 100 ga bo'linadigan har bir son 4 ga ham bo'linadi: shart yetarli. Zarur emas: 12 soni 4 ga bo'linadi, ammo 100 ga bo'linmaydi. Demak bu yerda faqat bitta yo'nalish ishlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolinish-sharti-tasnifi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#046a514e"
+    },
+    {
+      "q": "Natural sonning ham 2 ga, ham 3 ga bo'linishi uning 6 ga bo'linishi uchun qanday shart bo'ladi?",
+      "v": [
+        "zarur shart, ammo yetarli emas",
+        "faqat yetarli shart",
+        "na zarur, na yetarli",
+        "ham zarur, ham yetarli"
+      ],
+      "t": 3,
+      "izoh": "2 va 3 sonlari o'zaro tub, shuning uchun ikkalasiga bo'linadigan son 6 ga ham bo'linadi: shart yetarli. Aksincha, 6 ga bo'linadigan son albatta 2 ga ham, 3 ga ham bo'linadi: shart zarur. Ikki yo'nalish ham bajarilgani uchun shart teng kuchli hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolinish-sharti-tasnifi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#5726f66c"
+    },
+    {
+      "q": "Kvadrat tenglama ikkita har xil haqiqiy ildizga ega bo'lishi uchun zarur va yetarli shart qaysi variantda ko'rsatilgan?",
+      "v": [
+        "Diskriminant musbat, ya'ni D > 0",
+        "Diskriminant manfiy emas, ya'ni D ≥ 0",
+        "Diskriminant nolga teng, ya'ni D = 0",
+        "Diskriminant manfiy, ya'ni D < 0"
+      ],
+      "t": 0,
+      "izoh": "Diskriminant musbat bo'lganda ildiz formulasida √D noldan farqli bo'ladi va ikkita har xil ildiz chiqadi. Aksincha, ikkita har xil ildiz bo'lsa, diskriminant albatta musbat. D ≥ 0 sharti yetarli emas, chunki D = 0 da ildiz bitta bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglama-tengsizlik-sharti",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#793e4254"
+    },
+    {
+      "q": "x² > 9 tengsizligining yechimi bo'lishi uchun x > 3 sharti qanday shart hisoblanadi?",
+      "v": [
+        "x > 3 sharti yechim bo'lish uchun zarur, ammo yetarli emas",
+        "x > 3 sharti yechim bo'lish uchun zarur va yetarli",
+        "x > 3 sharti yechim bo'lish uchun yetarli, ammo zarur emas",
+        "x > 3 sharti tengsizlik yechimiga umuman ta'sir qilmaydi"
+      ],
+      "t": 2,
+      "izoh": "x > 3 bo'lsa, ikkala tomonni kvadratga oshirib x² > 9 ni olamiz, demak shart yetarli. Zarur emas: x = −5 da x² = 25 va tengsizlik bajariladi, ammo x > 3 bajarilmaydi. Tengsizlikning to'liq yechimi x < −3 yoki x > 3 ko'rinishida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglama-tengsizlik-sharti",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#f43188c3"
+    },
+    {
+      "q": "√(x − 5) ifodasi haqiqiy sonlar to'plamida ma'noga ega bo'lishi uchun zarur va yetarli shartni ko'rsating.",
+      "v": [
+        "x > 5",
+        "x ≥ 5",
+        "x ≤ 5",
+        "x ≠ 5"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat ildiz ostidagi ifoda manfiy bo'lmasligi kerak, ya'ni x − 5 ≥ 0. Bundan x ≥ 5 kelib chiqadi. x > 5 sharti yetarli, ammo zarur emas, chunki x = 5 da ildiz nolga teng va ifoda ma'noga ega. x ≤ 5 sharti na yetarli (x = 0 da ildiz osti manfiy), na zarur (x = 10 da ifoda ma'noga ega, ammo x ≤ 5 bajarilmaydi). x ≠ 5 sharti ham na zarur (x = 5 da ifoda ma'noga ega), na yetarli (x = 0 da ma'noga ega emas).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglama-tengsizlik-sharti",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#c8c7875f"
+    },
+    {
+      "q": "(x − 2)(x + 7) = 0 tenglamaning ildizi bo'lishi uchun x = 2 sharti qanday shart bo'ladi?",
+      "v": [
+        "x = 2 sharti ildiz bo'lish uchun zarur, ammo yetarli emas",
+        "x = 2 sharti ildiz bo'lish uchun yetarli, ammo zarur emas",
+        "x = 2 sharti ildiz bo'lish uchun zarur va yetarli",
+        "x = 2 sharti tenglama ildizlari bilan bog'lanmagan"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma nolga teng bo'lishi uchun ko'paytuvchilardan biri nolga aylanishi kerak, demak ildizlar x = 2 va x = −7. x = 2 ni qo'ysak tenglik bajariladi, shuning uchun shart yetarli. Zarur emas: x = −7 ham ildiz, ammo u 2 ga teng emas. Ikkinchi ildizni unutish tipik xatodir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglama-tengsizlik-sharti",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#9f667b2d"
+    },
+    {
+      "q": "«Agar talaba stipendiya olsa, uning o'rtacha bahosi 4 dan past emas» qoidasi rost. Jasurning o'rtacha bahosi 4 dan past emas. «Demak Jasur stipendiya oladi» xulosasida qanday xato bor?",
+      "v": [
+        "Xato yo'q, xulosa qoidadan to'g'ri chiqarilgan",
+        "Xulosa teskari mulohazani qo'llash orqali chiqarilgan, bu esa asossiz",
+        "Xulosa kontrapozitsiyani noto'g'ri qo'llagan",
+        "Xulosa shartning inkorini noto'g'ri tuzgan"
+      ],
+      "t": 1,
+      "izoh": "Qoida stipendiyadan bahoga qarab boradi, teskari yo'nalish kafolatlanmagan. Xulosada esa bahodan stipendiyaga o'tilgan, ya'ni teskari mulohaza qo'llangan. Yuqori baho stipendiya uchun zarur shart bo'lishi mumkin, lekin yetarli emas: talabalar soni cheklangan bo'lishi ham mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notogri-xulosa-tuzogi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#e3faa608"
+    },
+    {
+      "q": "«Agar ko'chada muz bo'lsa, yo'llar sirpanchiq bo'ladi» deyildi. Bugun ko'chada muz yo'q. «Demak yo'llar sirpanchiq emas» xulosasi to'g'rimi?",
+      "v": [
+        "To'g'ri, chunki shart bajarilmagan bo'lsa, xulosa ham bajarilmaydi",
+        "Noto'g'ri: shartning inkoridan xulosaning inkori kelib chiqmaydi",
+        "Noto'g'ri, chunki kontrapozitsiya bunday hollarda ishlamaydi",
+        "To'g'ri, chunki qarama-qarshi mulohaza doim rost bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Xulosada qarama-qarshi mulohaza qo'llangan, u esa asl mulohazaga teng kuchli emas. Yo'llar muzsiz ham sirpanchiq bo'lishi mumkin, masalan yog'ingarchilikdan yoki to'kilgan moydan. Asosli xulosa faqat kontrapozitsiyadan chiqadi: yo'l sirpanchiq bo'lmasa, muz yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "notogri-xulosa-tuzogi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#4df7c790"
+    },
+    {
+      "q": "«Agar son 4 ga bo'linsa, u juft bo'ladi» mulohazasi rost va 18 soni juft. Bundan «18 soni 4 ga bo'linadi» xulosasi chiqadimi?",
+      "v": [
+        "Chiqadi, chunki juftlik 4 ga bo'linishni bildiradi",
+        "Chiqmaydi: bu teskari mulohaza bo'lib, 18 soni 4 ga bo'linmaydi",
+        "Chiqadi, chunki dastlabki mulohaza rost deb berilgan",
+        "Chiqmaydi, chunki 18 soni aslida juft emas"
+      ],
+      "t": 1,
+      "izoh": "Xulosada juftlikdan 4 ga bo'linishga o'tilgan, ya'ni teskari mulohaza ishlatilgan. U rost emas, buni 18 sonining o'zi ko'rsatadi: 18 : 4 amali qoldiqli bajariladi. Asl mulohaza faqat 4 ga bo'linuvchi sonlar juft ekanini aytadi, aksini emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "notogri-xulosa-tuzogi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#8f921a5a"
+    },
+    {
+      "q": "Reklamada «Bizning kursimizda o'qigan har bir o'quvchi imtihondan o'tdi» deyilgan. Malika imtihondan o'tdi. Quyidagi xulosalardan qaysi biri asossiz?",
+      "v": [
+        "Kursda o'qigan Aziz ham imtihondan o'tgan",
+        "Malikaning kursda o'qiganini bu ma'lumot isbotlamaydi",
+        "Malika albatta shu kursda o'qigan",
+        "Kursda o'qimagan kishi ham imtihondan o'tishi mumkin"
+      ],
+      "t": 2,
+      "izoh": "Reklama faqat kursda o'qiganlar haqida kafolat beradi, imtihondan o'tganlarning hammasi shu kursda o'qigan degani emas. Malikaning imtihondan o'tishi teskari yo'nalishni isbotlamaydi. Birinchi xulosa qoidani to'g'ridan-to'g'ri qo'llaydi, ikkinchi va to'rtinchisi esa qoida cheklovini to'g'ri tushuntiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notogri-xulosa-tuzogi",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#024c33f1"
+    },
+    {
+      "q": "«Agar son 5 dan katta bo'lsa, u musbat» mulohazasiga qarama-qarshi mulohaza tuzilmoqda. Shartning inkori qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "son 5 dan kichik",
+        "son 5 ga teng",
+        "son 5 dan katta emas, ya'ni 5 dan kichik yoki 5 ga teng",
+        "son manfiy"
+      ],
+      "t": 2,
+      "izoh": "«Katta» munosabatining inkori «kichik» emas, balki «katta emas» bo'ladi. Sonlar o'qida x > 5 ning inkori x ≤ 5 ko'rinishida yoziladi, ya'ni chegara nuqtasi ham qo'shiladi. Faqat «kichik» deb yozilsa, x = 5 holati tashlab ketiladi va inkor chala bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "inkorni-togri-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#37987f5e"
+    },
+    {
+      "q": "«Sinfdagi barcha o'quvchilar imtihonni topshirdi» mulohazasining inkori qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "Hech bir o'quvchi imtihonni topshirmadi",
+        "Barcha o'quvchilar imtihonni topshirmadi",
+        "Ba'zi o'quvchilar imtihonni topshirdi",
+        "Kamida bitta o'quvchi imtihonni topshirmadi"
+      ],
+      "t": 3,
+      "izoh": "«Barcha» so'zi bilan berilgan mulohazani inkor qilish uchun bitta istisno yetarli. Demak inkor «kamida bitta o'quvchi topshirmadi» bo'ladi. Birinchi va ikkinchi variantlar juda kuchli tasdiq bo'lib, ular inkorning o'zi emas, balki undan ham qattiqroq gapdir. Bu shartli mulohazaning qarama-qarshisini tuzishda ko'p uchraydigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "inkorni-togri-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#d9e37a7a"
+    },
+    {
+      "q": "Kontrapozitsiya tuzish uchun «x ≥ 0 va y ≥ 0» shartini inkor qilish kerak bo'ldi. Uning to'g'ri inkori qaysi?",
+      "v": [
+        "x < 0 yoki y < 0",
+        "x < 0 va y < 0",
+        "x ≤ 0 yoki y ≤ 0",
+        "x > 0 va y > 0"
+      ],
+      "t": 0,
+      "izoh": "«Va» bilan bog'langan shartning inkorida bog'lovchi «yoki» ga aylanadi va har bir qism alohida inkor qilinadi. x ≥ 0 ning inkori x < 0, y ≥ 0 ning inkori y < 0. Demak inkor «x < 0 yoki y < 0» bo'ladi. Ikkinchi variant ikkala shartning birdan buzilishini talab qiladi, bu esa juda kuchli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "inkorni-togri-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#98ae7c52"
+    },
+    {
+      "q": "«Agar yuk 20 kg dan og'ir bo'lsa, qo'shimcha to'lov olinadi» qoidasida shart va xulosaning inkorlari qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "Shart inkori: yuk 20 kg dan yengil; xulosa inkori: qo'shimcha to'lov olinmaydi",
+        "Shart inkori: yuk aniq 20 kg; xulosa inkori: to'lov ikki barobar olinadi",
+        "Shart inkori: yuk 20 kg dan og'ir; xulosa inkori: qo'shimcha to'lov olinadi",
+        "Shart inkori: yuk 20 kg dan og'ir emas; xulosa inkori: qo'shimcha to'lov olinmaydi"
+      ],
+      "t": 3,
+      "izoh": "Shart «yuk 20 kg dan og'ir» ko'rinishida, uning inkori «og'ir emas», ya'ni og'irlik 20 kg yoki undan kam. «Yengil» deb yozilsa, aniq 20 kg bo'lgan yuk hisobdan tushib qoladi va chegara buziladi. Xulosaning inkori esa to'lov olinmasligidir. Ana shu ikki inkor kontrapozitsiyani tuzishga asos bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "inkorni-togri-tuzish",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#7520dc9d"
+    },
+    {
+      "q": "Bank qoidasi: «Agar mijozning oylik daromadi 4 million so'mdan yuqori bo'lsa, unga kredit beriladi». Sanoga kredit berilmadi. Qanday xulosa chiqadi?",
+      "v": [
+        "Sanoning oylik daromadi 4 million so'mdan yuqori emas",
+        "Sanoning oylik daromadi 4 million so'mdan yuqori",
+        "Sano kredit uchun umuman murojaat qilmagan",
+        "Bank o'z qoidasini buzgan"
+      ],
+      "t": 0,
+      "izoh": "Qoida daromaddan kreditga qarab boradi. Kredit berilmagani ma'lum, ya'ni xulosa bajarilmadi. Kontrapozitsiya qoidasiga ko'ra shart ham bajarilmaydi, demak daromad 4 million so'mdan yuqori emas. Bu yagona asosli xulosa, chunki bank qoidani buzgan deb hisoblashga asos yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-kontrapozitsiya-qollash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#ddbaf83b"
+    },
+    {
+      "q": "Sport maktabi qoidasi: «Agar bolaning bo'yi 150 sm dan baland bo'lsa, u katta yoshlilar guruhiga qabul qilinadi». Doniyor bu guruhga qabul qilinmadi. Xulosa qanday?",
+      "v": [
+        "Doniyorning bo'yi 150 sm dan baland emas",
+        "Doniyorning bo'yi aniq 150 sm ga teng",
+        "Doniyorning bo'yi 150 sm dan baland",
+        "Doniyor sport maktabiga umuman bormagan"
+      ],
+      "t": 0,
+      "izoh": "Xulosaning inkori berilgan: guruhga qabul qilinmadi. Kontrapozitsiya bo'yicha shartning inkori kelib chiqadi, ya'ni bo'y 150 sm dan baland emas. Aniq 150 sm degan xulosa ortiqcha, chunki bo'y undan past ham bo'lishi mumkin. Qoida faqat bo'y bilan qabul o'rtasidagi bog'liqlikni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-kontrapozitsiya-qollash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#b7de80b7"
+    },
+    {
+      "q": "Issiqxona qoidasi: «Agar tunda harorat 5 °C dan pastga tushsa, isitgich avtomatik yoqiladi». Kecha isitgich yoqilmagan. Kechagi harorat haqida nima deyish mumkin?",
+      "v": [
+        "Harorat 5 °C dan pastga tushgan",
+        "Harorat aniq 5 °C bo'lgan",
+        "Harorat 5 °C dan pastga tushmagan",
+        "Harorat haqida hech narsa deyish mumkin emas"
+      ],
+      "t": 2,
+      "izoh": "Isitgichning yoqilmagani xulosaning inkoridir. Kontrapozitsiya bo'yicha shart ham bajarilmagan, demak harorat 5 °C dan pastga tushmagan. Bu yerda qoida avtomatik ishlagani uchun xulosa ishonchli. Aniq qiymat aytish mumkin emas, faqat chegaradan pastga tushmaganini bilamiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-kontrapozitsiya-qollash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#ed2cf36b"
+    },
+    {
+      "q": "«Agar n² toq bo'lsa, unda n toq bo'ladi» tasdig'ini bevosita isbotlash qiyin. Uning o'rniga qaysi teng kuchli tasdiqni isbotlash qulayroq bo'ladi?",
+      "v": [
+        "Agar n toq bo'lsa, unda n² toq bo'ladi",
+        "Agar n² juft bo'lsa, unda n juft bo'ladi",
+        "Agar n² toq bo'lmasa, unda n toq bo'ladi",
+        "Agar n juft bo'lsa, unda n² juft bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Tasdiqqa teng kuchli mulohaza uning kontrapozitsiyasidir: xulosaning inkoridan shartning inkoriga o'tiladi. n toq emas, ya'ni juft bo'lsa, n² ham juft ekanini isbotlash kerak. Buni bevosita qilish oson: n = 2k bo'lsa, n² = 4k² va bu juft. Birinchi variant teskari mulohaza, u boshqa tasdiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "isbot-usulini-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#684dbe65"
+    },
+    {
+      "q": "«Agar a·b juft son bo'lsa, a va b sonlarining kamida bittasi juft bo'ladi» tasdig'ini ziddiyatga keltirish usuli bilan isbotlamoqchimiz. Dastlab qanday faraz qilinadi?",
+      "v": [
+        "a·b toq, ammo a va b sonlarining kamida bittasi juft",
+        "a va b sonlarining ikkalasi ham juft, ammo a·b toq",
+        "a·b juft, ammo a va b sonlarining ikkalasi ham toq",
+        "a·b juft va a va b sonlarining kamida bittasi juft"
+      ],
+      "t": 2,
+      "izoh": "Ziddiyatga keltirishda tasdiqning inkori faraz qilinadi. Shartli mulohazaning inkori esa «shart rost, xulosa yolg'on» ko'rinishida bo'ladi: a·b juft, ammo a ham, b ham toq. Ikki toq sonning ko'paytmasi toq bo'lgani uchun bu farazning o'zi bilan ziddiyat hosil bo'ladi, demak dastlabki tasdiq rost. To'rtinchi variant umuman inkor emas — u tasdiqning o'zi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "isbot-usulini-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#1e5d3dc0"
+    },
+    {
+      "q": "«Har qanday tub son toq bo'ladi» degan tasdiqni rad etish uchun nima qilish yetarli?",
+      "v": [
+        "Barcha tub sonlarni birma-bir tekshirib chiqish",
+        "Tasdiqning teskarisini isbotlash",
+        "Tasdiqning kontrapozitsiyasini tuzish",
+        "Bitta qarshi misol keltirish, masalan 2 soni"
+      ],
+      "t": 3,
+      "izoh": "«Har qanday» so'zi bilan berilgan umumiy tasdiqni rad etish uchun bitta istisno kifoya qiladi. 2 soni tub, chunki uning faqat ikkita bo'luvchisi bor, ammo u juft. Demak tasdiq yolg'on. Barcha sonlarni tekshirish imkonsiz, kontrapozitsiya tuzish esa tasdiqni rad etmaydi, faqat uni boshqa shaklga keltiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "isbot-usulini-tanlash",
+      "id": "matematika_disk_m03-shartli-mulohaza-va-unga-teskari#824fdd20"
+    }
+  ]
+}

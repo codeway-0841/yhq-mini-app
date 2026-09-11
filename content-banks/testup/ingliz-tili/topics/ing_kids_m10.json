@@ -1,0 +1,474 @@
+{
+  "nom": "Body parts (Tana a'zolari)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "What is this? 👃",
+      "v": [
+        "Ear",
+        "Nose",
+        "Eye",
+        "Foot"
+      ],
+      "t": 1,
+      "izoh": "👃 = nose (burun).",
+      "qiy": "oson",
+      "id": "ing_kids_m10#649aba59"
+    },
+    {
+      "q": "What is this? 👁️",
+      "v": [
+        "Eye",
+        "Hand",
+        "Leg",
+        "Mouth"
+      ],
+      "t": 0,
+      "izoh": "👁️ = eye (ko'z).",
+      "qiy": "oson",
+      "id": "ing_kids_m10#107fd20c"
+    },
+    {
+      "q": "What is this? 👂",
+      "v": [
+        "Nose",
+        "Hair",
+        "Ear",
+        "Knee"
+      ],
+      "t": 2,
+      "izoh": "👂 = ear (quloq).",
+      "qiy": "oson",
+      "id": "ing_kids_m10#7741ee50"
+    },
+    {
+      "q": "What is this? 👄",
+      "v": [
+        "Mouth",
+        "Eye",
+        "Arm",
+        "Foot"
+      ],
+      "t": 0,
+      "izoh": "👄 = mouth (og'iz).",
+      "qiy": "oson",
+      "id": "ing_kids_m10#59bad27d"
+    },
+    {
+      "q": "What is this? 🖐️",
+      "v": [
+        "Leg",
+        "Hand",
+        "Nose",
+        "Tooth"
+      ],
+      "t": 1,
+      "izoh": "🖐️ = hand (qo'l).",
+      "qiy": "oson",
+      "id": "ing_kids_m10#2be4c08f"
+    },
+    {
+      "q": "What is this? 🦶",
+      "v": [
+        "Ear",
+        "Eye",
+        "Foot",
+        "Hair"
+      ],
+      "t": 2,
+      "izoh": "🦶 = foot (oyoq panjasi).",
+      "qiy": "oson",
+      "id": "ing_kids_m10#09782d52"
+    },
+    {
+      "q": "You walk with your two ...?",
+      "v": [
+        "Ears",
+        "Legs",
+        "Eyes",
+        "Noses"
+      ],
+      "t": 1,
+      "izoh": "Legs = oyoqlar.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#050f33c4"
+    },
+    {
+      "q": "You see with your ...?",
+      "v": [
+        "Eyes",
+        "Hands",
+        "Feet",
+        "Teeth"
+      ],
+      "t": 0,
+      "izoh": "Eyes = ko'zlar.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#59067718"
+    },
+    {
+      "q": "What is this? 🦷",
+      "v": [
+        "Hair",
+        "Tooth",
+        "Arm",
+        "Ear"
+      ],
+      "t": 1,
+      "izoh": "🦷 = tooth (tish).",
+      "qiy": "oson",
+      "id": "ing_kids_m10#8cb5df6b"
+    },
+    {
+      "q": "What is on the top of your head?",
+      "v": [
+        "Hair",
+        "Foot",
+        "Nose",
+        "Hand"
+      ],
+      "t": 0,
+      "izoh": "Hair = soch.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#2f3771e0"
+    },
+    {
+      "q": "You smell with your ___.",
+      "v": [
+        "nose",
+        "ear",
+        "knee",
+        "foot"
+      ],
+      "t": 0,
+      "izoh": "👃 = nose (burun) bilan hidlaysiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#30572be0"
+    },
+    {
+      "q": "You hear with your ___.",
+      "v": [
+        "hand",
+        "ear",
+        "hair",
+        "tooth"
+      ],
+      "t": 1,
+      "izoh": "👂 = ear (quloq) bilan eshitasiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#5a39c6cf"
+    },
+    {
+      "q": "You walk with your ___.",
+      "v": [
+        "hair",
+        "ear",
+        "hand",
+        "legs"
+      ],
+      "t": 3,
+      "izoh": "leg = oyoq; oyoq bilan yurasiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#65021a24"
+    },
+    {
+      "q": "You taste with your ___.",
+      "v": [
+        "tongue",
+        "eye",
+        "ear",
+        "arm"
+      ],
+      "t": 0,
+      "izoh": "tongue = til bilan ta'm bilasiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#be1c2e58"
+    },
+    {
+      "q": "How many fingers are on one hand?",
+      "v": [
+        "five",
+        "two",
+        "ten",
+        "one"
+      ],
+      "t": 0,
+      "izoh": "Bir qo'lda 5 ta barmoq (finger) bor.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#910d472e"
+    },
+    {
+      "q": "How many eyes do you have?",
+      "v": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "t": 1,
+      "izoh": "Sizda 2 ta ko'z (eye) bor.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#d50447cf"
+    },
+    {
+      "q": "👀 = ?",
+      "v": [
+        "ears",
+        "eyes",
+        "hands",
+        "feet"
+      ],
+      "t": 1,
+      "izoh": "👀 = eyes (ko'zlar).",
+      "qiy": "oson",
+      "id": "ing_kids_m10#9715ddd7"
+    },
+    {
+      "q": "You clap with your ___.",
+      "v": [
+        "hands",
+        "feet",
+        "ears",
+        "eyes"
+      ],
+      "t": 0,
+      "izoh": "hand = qo'l; qo'l bilan chapak chalasiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#61e06b32"
+    },
+    {
+      "q": "Your hair is on your ___.",
+      "v": [
+        "foot",
+        "head",
+        "hand",
+        "knee"
+      ],
+      "t": 1,
+      "izoh": "hair (soch) boshda (head) bo'ladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#5f6aee2f"
+    },
+    {
+      "q": "You wear a hat on your ___.",
+      "v": [
+        "leg",
+        "arm",
+        "head",
+        "foot"
+      ],
+      "t": 2,
+      "izoh": "shlyapa boshga (head) kiyiladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#a3c61754"
+    },
+    {
+      "q": "You kick a ball with your ___.",
+      "v": [
+        "foot",
+        "hand",
+        "ear",
+        "nose"
+      ],
+      "t": 0,
+      "izoh": "foot = oyoq panjasi bilan tepasiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#7f107796"
+    },
+    {
+      "q": "How many toes are on one foot?",
+      "v": [
+        "five",
+        "three",
+        "two",
+        "eight"
+      ],
+      "t": 0,
+      "izoh": "Bir oyoqda 5 ta barmoq (toe) bor.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#490c5ab7"
+    },
+    {
+      "q": "You bite food with your ___.",
+      "v": [
+        "hair",
+        "teeth",
+        "knee",
+        "neck"
+      ],
+      "t": 1,
+      "izoh": "tooth/teeth = tish bilan tishlaysiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#eee1dd63"
+    },
+    {
+      "q": "Which one is a body part?",
+      "v": [
+        "apple",
+        "hand",
+        "car",
+        "book"
+      ],
+      "t": 1,
+      "izoh": "hand = qo'l, u tana a'zosi.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#73c94131"
+    },
+    {
+      "q": "You wave hello with your ___.",
+      "v": [
+        "hand",
+        "foot",
+        "tooth",
+        "hair"
+      ],
+      "t": 0,
+      "izoh": "hand = qo'l bilan salom berasiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#055656be"
+    },
+    {
+      "q": "Your head is joined to your body by your ___.",
+      "v": [
+        "knee",
+        "neck",
+        "arm",
+        "leg"
+      ],
+      "t": 1,
+      "izoh": "neck = bo'yin, boshni tanaga ulaydi.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#1f631110"
+    },
+    {
+      "q": "You carry a bag on your ___.",
+      "v": [
+        "shoulder",
+        "tongue",
+        "tooth",
+        "eye"
+      ],
+      "t": 0,
+      "izoh": "shoulder = yelka.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#9792745b"
+    },
+    {
+      "q": "You bend your leg at your ___.",
+      "v": [
+        "neck",
+        "head",
+        "knee",
+        "ear"
+      ],
+      "t": 2,
+      "izoh": "knee = tizza, oyoq shu yerdan bukiladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#237f5215"
+    },
+    {
+      "q": "How many ears do you have?",
+      "v": [
+        "one",
+        "two",
+        "three",
+        "five"
+      ],
+      "t": 1,
+      "izoh": "Sizda 2 ta quloq (ear) bor.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#bf94f486"
+    },
+    {
+      "q": "You see with your ___.",
+      "v": [
+        "mouth",
+        "neck",
+        "eye",
+        "leg"
+      ],
+      "t": 2,
+      "izoh": "👀 = eye (ko'z) bilan ko'rasiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m10#4f172323"
+    },
+    {
+      "q": "👃 = ?",
+      "v": [
+        "nose",
+        "mouth",
+        "ear",
+        "eye"
+      ],
+      "t": 0,
+      "izoh": "👃 = nose (burun).",
+      "qiy": "oson",
+      "id": "ing_kids_m10#dc025018"
+    },
+    {
+      "q": "👂 = ?",
+      "v": [
+        "hair",
+        "hand",
+        "ear",
+        "leg"
+      ],
+      "t": 2,
+      "izoh": "👂 = ear (quloq).",
+      "qiy": "oson",
+      "id": "ing_kids_m10#e2b3d2bf"
+    },
+    {
+      "q": "👄 = ?",
+      "v": [
+        "mouth",
+        "nose",
+        "neck",
+        "knee"
+      ],
+      "t": 0,
+      "izoh": "👄 = mouth (og'iz).",
+      "qiy": "oson",
+      "id": "ing_kids_m10#95b03a27"
+    },
+    {
+      "q": "🦵 = ?",
+      "v": [
+        "arm",
+        "leg",
+        "hand",
+        "head"
+      ],
+      "t": 1,
+      "izoh": "🦵 = leg (oyoq).",
+      "qiy": "oson",
+      "id": "ing_kids_m10#95900a33"
+    },
+    {
+      "q": "💪 = ?",
+      "v": [
+        "leg",
+        "foot",
+        "arm",
+        "ear"
+      ],
+      "t": 2,
+      "izoh": "💪 = arm (qo'l/bilak).",
+      "qiy": "oson",
+      "id": "ing_kids_m10#56033a1e"
+    },
+    {
+      "q": "🦷 = ?",
+      "v": [
+        "tooth",
+        "tongue",
+        "toe",
+        "ear"
+      ],
+      "t": 0,
+      "izoh": "🦷 = tooth (tish).",
+      "qiy": "oson",
+      "id": "ing_kids_m10#ebb8f0cf"
+    }
+  ]
+}

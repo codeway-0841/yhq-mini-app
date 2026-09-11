@@ -1,0 +1,231 @@
+{
+  "nom": "32-mavzu. Masala. Issiqlik Miqdori",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Massasi 2 kg suvni 20 °C dan 70 °C gacha qizdirish uchun qancha issiqlik miqdori kerak (c = 4200 J/(kg·°C))?",
+      "v": [
+        "420 kJ",
+        "210 kJ",
+        "840 kJ",
+        "42 kJ"
+      ],
+      "t": 0,
+      "izoh": "Q = cm(t₂ − t₁) = 4200·2·(70 − 20) = 420 000 J = 420 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#2be11159"
+    },
+    {
+      "q": "Massasi 0,5 kg temir jism 10 °C dan 110 °C gacha qizdirilganda qancha issiqlik miqdori oladi (c = 460 J/(kg·°C))?",
+      "v": [
+        "23 kJ",
+        "2,3 kJ",
+        "230 kJ",
+        "46 kJ"
+      ],
+      "t": 0,
+      "izoh": "Q = cmΔt = 460·0,5·(110 − 10) = 23 000 J = 23 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#0438b357"
+    },
+    {
+      "q": "Massasi 1 kg alyuminiy jismni 100 °C ga qizdirish uchun qancha issiqlik miqdori zarur (c = 880 J/(kg·°C))?",
+      "v": [
+        "88 kJ",
+        "8,8 kJ",
+        "880 kJ",
+        "44 kJ"
+      ],
+      "t": 0,
+      "izoh": "Q = cmΔt = 880·1·100 = 88 000 J = 88 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#4e7ad6ba"
+    },
+    {
+      "q": "Temperaturasi 17 °C bo‘lgan 0,5 l suv isitkichdan 126 kJ issiqlik miqdori oldi. Suv qanday temperaturagacha isidi (c = 4200 J/(kg·°C))?",
+      "v": [
+        "77 °C",
+        "60 °C",
+        "30 °C",
+        "94 °C"
+      ],
+      "t": 0,
+      "izoh": "m = ρV = 0,5 kg; t₂ = t₁ + Q/(cm) = 17 + 126 000/(4200·0,5) = 17 + 60 = 77 °C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#38978204"
+    },
+    {
+      "q": "Suvga 84 kJ issiqlik miqdori berilganda uning temperaturasi 20 °C ga ko‘tarildi. Suvning massasi qancha (c = 4200 J/(kg·°C))?",
+      "v": [
+        "1 kg",
+        "2 kg",
+        "0,5 kg",
+        "4 kg"
+      ],
+      "t": 0,
+      "izoh": "m = Q/(cΔt) = 84 000/(4200·20) = 1 kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#79cb1073"
+    },
+    {
+      "q": "Massasi 100 g metall jism 20 °C dan 130 °C gacha isishi uchun 4180 J issiqlik miqdori oldi. Metallning solishtirma issiqlik sig‘imini toping.",
+      "v": [
+        "380 J/(kg·°C)",
+        "3800 J/(kg·°C)",
+        "38 J/(kg·°C)",
+        "4598 J/(kg·°C)"
+      ],
+      "t": 0,
+      "izoh": "c = Q/(mΔt) = 4180/(0,1·110) = 380 J/(kg·°C)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#28fabc0e"
+    },
+    {
+      "q": "Massasi 200 g alyuminiy jismni 20 °C dan 300 °C gacha qizdirish uchun qancha issiqlik miqdori kerak (c = 880 J/(kg·°C))? (22-mashq, 1-masala)",
+      "v": [
+        "49 280 J",
+        "4928 J",
+        "492 800 J",
+        "24 640 J"
+      ],
+      "t": 0,
+      "izoh": "Q = cmΔt = 880·0,2·(300 − 20) = 49 280 J",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#00e4d2f6"
+    },
+    {
+      "q": "Normal sharoitda temperaturasi 20 °C, hajmi 1,5 l suv qaynaguncha (100 °C) qancha issiqlik miqdori oladi (c = 4200 J/(kg·°C))? (22-mashq, 6-masala)",
+      "v": [
+        "504 kJ",
+        "50,4 kJ",
+        "630 kJ",
+        "126 kJ"
+      ],
+      "t": 0,
+      "izoh": "m = 1,5 kg; Q = cmΔt = 4200·1,5·80 = 504 000 J = 504 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#fdc935dc"
+    },
+    {
+      "q": "Eni 3 m, uzunligi 5 m, chuqurligi 2 m hovuzdagi suvni 17 °C dan 30 °C gacha isitish uchun qancha issiqlik miqdori kerak (c = 4200 J/(kg·°C), ρ = 1000 kg/m³)? (22-mashq, 5-masala)",
+      "v": [
+        "1638 MJ",
+        "163,8 MJ",
+        "16,38 MJ",
+        "16 380 MJ"
+      ],
+      "t": 0,
+      "izoh": "m = ρV = 1000·30 = 30 000 kg; Q = cmΔt = 4200·30 000·13 = 1,638·10⁹ J = 1638 MJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#d6a4a3bf"
+    },
+    {
+      "q": "Misdan yasalgan detal temperaturasi 420 °C dan 40 °C gacha sovidi. Hajmi 200 cm³ bo‘lsa, undan qancha issiqlik miqdori ajraldi (c = 380 J/(kg·°C), ρ = 8900 kg/m³)? (22-mashq, 2-masala)",
+      "v": [
+        "257 032 J",
+        "25 703 J",
+        "2 570 320 J",
+        "144 400 J"
+      ],
+      "t": 0,
+      "izoh": "m = ρV = 8900·2·10⁻⁴ = 1,78 kg; Q = cmΔt = 380·1,78·380 = 257 032 J",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#1a27b83b"
+    },
+    {
+      "q": "Massasi 3 kg jism 20 °C dan 500 °C gacha qizganda 1267,2 kJ issiqlik miqdori oldi. Jism qanday moddadan yasalgan? (22-mashq, 3-masala)",
+      "v": [
+        "Alyuminiy (880 J/(kg·°C))",
+        "Temir (460 J/(kg·°C))",
+        "Mis (380 J/(kg·°C))",
+        "Cho‘yan (540 J/(kg·°C))"
+      ],
+      "t": 0,
+      "izoh": "c = Q/(mΔt) = 1 267 200/(3·480) = 880 J/(kg·°C) — alyuminiy",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#483c9ec7"
+    },
+    {
+      "q": "Hajmi 2 l idishda temperaturasi 100 °C qaynoq suv bor. Suv atrofga o‘zidagi issiqlik miqdorining 40 foizini uzatib sovisa, suvning temperaturasi qanday bo‘ladi (c = 4200 J/(kg·°C))? (22-mashq, 8-masala)",
+      "v": [
+        "60 °C",
+        "40 °C",
+        "50 °C",
+        "20 °C"
+      ],
+      "t": 0,
+      "izoh": "m = 2 kg; Q₁ = cm·100 = 840 000 J; qolgan 60% = 504 000 J; t = 504 000/(4200·2) = 60 °C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#e3a89e48"
+    },
+    {
+      "q": "Temperaturasi 80 °C bo‘lgan 1 kg suvga temperaturasi 20 °C bo‘lgan 1 kg suv quyildi. Issiqlik almashinuvidan so‘ng aralashmaning temperaturasi qancha bo‘ladi (issiqlik yo‘qotilmaydi)?",
+      "v": [
+        "50 °C",
+        "55 °C",
+        "40 °C",
+        "30 °C"
+      ],
+      "t": 0,
+      "izoh": "t = (t₁ + t₂)/2 = (80 + 20)/2 = 50 °C (massalar teng)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#c14c4e84"
+    },
+    {
+      "q": "Temperaturasi 60 °C bo‘lgan 2 kg issiq suvga temperaturasi 15 °C bo‘lgan 1 kg sovuq suv quyildi. Aralashmaning temperaturasini toping (issiqlik yo‘qotilmaydi).",
+      "v": [
+        "45 °C",
+        "37,5 °C",
+        "50 °C",
+        "40 °C"
+      ],
+      "t": 0,
+      "izoh": "m₁(t₁ − t) = m₂(t − t₂) → 2(60 − t) = (t − 15) → t = 45 °C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#ea8bb3ef"
+    },
+    {
+      "q": "Massasi 2 kg kerosinni 30 °C ga qizdirish uchun qancha issiqlik miqdori kerak (c = 2140 J/(kg·°C))?",
+      "v": [
+        "128,4 kJ",
+        "12,84 kJ",
+        "1,284 MJ",
+        "64,2 kJ"
+      ],
+      "t": 0,
+      "izoh": "Q = cmΔt = 2140·2·30 = 128 400 J = 128,4 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m32-issiqlik-miqdori#8fbd6414"
+    }
+  ]
+}

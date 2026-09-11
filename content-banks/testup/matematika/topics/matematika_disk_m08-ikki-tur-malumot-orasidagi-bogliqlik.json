@@ -1,0 +1,1609 @@
+{
+  "nom": "Ikki tur ma'lumot orasidagi bog'liqlik (chiziqli korrelyatsiya)",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Dilnoza 6 nafar o'quvchining haftalik mashg'ulot soati va nazorat balini juftlik ko'rinishida yozdi: (3; 42), (5; 55), (6; 61), (8; 70), (9; 78), (11; 88). Bu ikki tur ma'lumot orasidagi bog'liqlik qanday?",
+      "v": [
+        "Musbat: soat ortgani sayin ball ham ortib boradi",
+        "Manfiy: soat ortsa ball pasayib boradi",
+        "Bog'lanish yo'q: ball butunlay tasodifiy o'zgaradi",
+        "Avval ortib, so'ng pasayadigan egri bog'lanish"
+      ],
+      "t": 0,
+      "izoh": "Juftliklarda mashg'ulot soati 3 dan 11 gacha ortib borgan, ball esa 42 dan 88 gacha ko'tarilgan. Bitta kattalik ortganda ikkinchisi ham ortsa, bu musbat bog'liqlik deyiladi. Sochilish diagrammasida nuqtalar ko'tariluvchi chiziq atrofida yotadi. Javob: musbat bog'liqlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadvaldan-bogliqlik-yonalishi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#008c4fee"
+    },
+    {
+      "q": "Ozod avtomobilning tezligi (km/soat) va 100 km yo'lga sarflangan vaqtini (daqiqa) qayd qildi: (60; 100), (70; 86), (80; 75), (90; 67), (100; 60). Bog'liqlik yo'nalishi qanday?",
+      "v": [
+        "Musbat yo'nalishli — tezlik ortsa vaqt ham ortadi",
+        "Manfiy yo'nalishli — tezlik ortsa vaqt kamayadi",
+        "Yo'nalish sezilmaydi, nuqtalar juda tarqoq",
+        "Vaqt tezlikka bog'liq emas, u doim bir xil"
+      ],
+      "t": 1,
+      "izoh": "Tezlik 60 dan 100 gacha ortganda vaqt 100 dan 60 gacha kamaygan. Bir kattalik ortganda ikkinchisi kamaysa, bog'liqlik manfiy hisoblanadi. Diagrammada nuqtalar pastga tushuvchi chiziq atrofida joylashadi. Javob: manfiy yo'nalishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadvaldan-bogliqlik-yonalishi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#498b5047"
+    },
+    {
+      "q": "Do'kon 5 kun davomida kunlik havo haroratini (°C) va sotilgan muzqaymoq sonini yozdi: (18; 40), (21; 52), (24; 65), (27; 74), (31; 90). Sochilish diagrammasida nuqtalar qanday joylashadi?",
+      "v": [
+        "Pastga qarab tushuvchi to'g'ri chiziq atrofida",
+        "Gorizontal to'g'ri chiziq bo'ylab tekis",
+        "Yuqoriga ko'tariluvchi to'g'ri chiziq atrofida",
+        "Yopiq aylana hosil qilib halqa bo'ylab"
+      ],
+      "t": 2,
+      "izoh": "Harorat 18 dan 31 gacha ortgan sari sotuv 40 dan 90 gacha bir maromda ko'tarilgan. Demak nuqtalar chapdan o'ngga qarab ko'tarilib boradi. Bunday joylashuv musbat chiziqli bog'liqlikning belgisidir. Javob: ko'tariluvchi to'g'ri chiziq atrofida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadvaldan-bogliqlik-yonalishi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#2c833a4c"
+    },
+    {
+      "q": "Sardor 7 nafar talabaning kecha uxlagan soati va ertalabki mashqda qilgan xatolari sonini yozdi: (4; 12), (5; 10), (6; 9), (6; 7), (7; 6), (8; 4), (9; 3). Bu juftliklar qanday bog'liqlikni ko'rsatadi?",
+      "v": [
+        "Kuchli musbat bog'liqlik: uyqu ko'paysa xato ham ko'payadi",
+        "Zaif bog'liqlik: nuqtalar bir-biridan juda uzoqda",
+        "Bog'liqlik yo'q: uyqu xatolar soniga ta'sir qilmaydi",
+        "Kuchli manfiy bog'liqlik: uyqu ko'paysa xato kamayadi"
+      ],
+      "t": 3,
+      "izoh": "Uyqu 4 soatdan 9 soatga ortganda xatolar 12 tadan 3 taga tushgan. Kamayish deyarli uzilishsiz borgani uchun bog'lanish nafaqat manfiy, balki kuchli. Faqat 6 soatlik ikki kuzatuvda kichik farq bor, u umumiy yo'nalishni buzmaydi. Javob: kuchli manfiy bog'liqlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadvaldan-bogliqlik-yonalishi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#d07b90d6"
+    },
+    {
+      "q": "Ikki tur ma'lumot uchun hisoblangan korrelyatsiya koeffitsienti r = −0,91 ga teng chiqdi. Bu qiymat bog'liqlik haqida nima deydi?",
+      "v": [
+        "Kuchli musbat chiziqli bog'liqlik mavjud",
+        "Kuchli manfiy chiziqli bog'liqlik mavjud",
+        "Zaif manfiy bog'liqlik, nuqtalar tarqoq",
+        "Chiziqli bog'liqlik umuman kuzatilmaydi"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsientning ishorasi yo'nalishni, moduli esa kuchni ko'rsatadi. Ishora manfiy, demak bir kattalik ortganda ikkinchisi kamayadi. Moduli 0,91 birga juda yaqin, demak bog'lanish kuchli. Javob: kuchli manfiy bog'liqlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "r-qiymatini-talqin-qilish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#daf943eb"
+    },
+    {
+      "q": "Nodira o'lchagan ikki kattalik uchun korrelyatsiya koeffitsienti r = 0,23 bo'lib chiqdi. Bog'liqlikni qanday baholash to'g'ri bo'ladi?",
+      "v": [
+        "Kuchli musbat bog'liqlik — nuqtalar chiziqqa yaqin",
+        "Zaif manfiy bog'liqlik — chiziq pastga qaragan",
+        "Zaif musbat bog'liqlik — nuqtalar ancha tarqoq",
+        "To'liq chiziqli bog'liqlik — barcha nuqta bitta chiziqda"
+      ],
+      "t": 2,
+      "izoh": "Ishora musbat bo'lgani uchun yo'nalish ko'tariluvchi. Ammo modul 0,23 nolga yaqin, demak nuqtalar to'g'ri chiziqdan ancha uzoqda tarqalgan. Kuchli bog'lanish uchun modul odatda 0,7 dan katta bo'lishi kutiladi. Javob: zaif musbat bog'liqlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "r-qiymatini-talqin-qilish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#3ec0a7bc"
+    },
+    {
+      "q": "Ikki maktabning o'lchov natijalarida korrelyatsiya koeffitsienti r = 0,97 topildi. Sochilish diagrammasidagi nuqtalar haqida nima ayta olamiz?",
+      "v": [
+        "Nuqtalar pastga tushuvchi chiziq atrofida zich yig'ilgan",
+        "Nuqtalar butun maydon bo'ylab bir tekis sochilgan",
+        "Nuqtalar aynan gorizontal chiziq ustida yotadi",
+        "Nuqtalar ko'tariluvchi to'g'ri chiziqqa juda yaqin joylashgan"
+      ],
+      "t": 3,
+      "izoh": "Musbat ishora nuqtalar chapdan o'ngga ko'tarilishini bildiradi. 0,97 qiymati birga juda yaqin, ya'ni tarqoqlik juda kichik. Shuning uchun nuqtalar ko'tariluvchi to'g'ri chiziq atrofida zich yotadi. Javob: chiziqqa juda yaqin joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "r-qiymatini-talqin-qilish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#1827921f"
+    },
+    {
+      "q": "Bir tadqiqotda o'quvchining bo'yi va matematikadan olgan bahosi orasida korrelyatsiya koeffitsienti r = −0,08 chiqdi. Qaysi xulosa to'g'ri?",
+      "v": [
+        "Ikki kattalik orasida sezilarli chiziqli bog'lanish deyarli yo'q",
+        "Bo'y ortsa baho aniq kamayadi, bog'lanish kuchli",
+        "Baho bo'yga to'liq teskari proporsional bog'langan",
+        "Bog'lanish musbat va o'rtacha kuchga ega"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsient moduli 0,08 nolga juda yaqin, ya'ni nuqtalar hech qanday chiziq atrofida to'planmagan. Ishora manfiy bo'lsa ham, u shu qadar kichikki, yo'nalish haqida gapirishga asos bermaydi. Demak bo'y va baho orasida chiziqli bog'lanish yo'q deb hisoblanadi. Javob: bog'lanish deyarli yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "r-qiymatini-talqin-qilish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#82b2f097"
+    },
+    {
+      "q": "Sochilish diagrammasida nuqtalar ko'tariluvchi to'g'ri chiziq atrofida juda zich to'plangan. Korrelyatsiya koeffitsienti sifatida qaysi qiymat eng mos keladi?",
+      "v": [
+        "−0,94",
+        "0,15",
+        "0,94",
+        "1,40"
+      ],
+      "t": 2,
+      "izoh": "Nuqtalar ko'tarilib borgani uchun koeffitsient musbat bo'lishi shart, demak manfiy qiymat chiqib ketadi. Zichlik yuqori bo'lgani uchun modul birga yaqin bo'ladi, 0,15 esa juda zaif bog'lanishni bildiradi. Koeffitsient hech qachon 1 dan katta bo'lolmaydi, shuning uchun 1,40 mumkin emas. Javob: 0,94.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diagrammaga-mos-r-tanlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#de30b294"
+    },
+    {
+      "q": "Diagrammada nuqtalar pastga tushuvchi chiziq atrofida to'plangan, ammo tarqoqlik ancha sezilarli. Qaysi r qiymati bu holatga eng mos keladi?",
+      "v": [
+        "0,62",
+        "−0,99",
+        "−0,05",
+        "−0,62"
+      ],
+      "t": 3,
+      "izoh": "Pastga tushish manfiy ishorani talab qiladi, shuning uchun musbat qiymat mos emas. Sezilarli tarqoqlik esa modulning birga juda yaqin bo'lishiga yo'l qo'ymaydi, ya'ni 0,99 juda katta. Nolga yaqin 0,05 esa bog'lanish yo'qligini bildirar edi. Javob: −0,62.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagrammaga-mos-r-tanlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#86639730"
+    },
+    {
+      "q": "Sochilish diagrammasida nuqtalar hech qanday yo'nalishsiz sochilgan bo'lsa, korrelyatsiya koeffitsienti qaysi qiymatga eng yaqin bo'ladi?",
+      "v": [
+        "0,04",
+        "0,88",
+        "−1",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Chiziqli bog'lanish bo'lmaganda koeffitsient nolga yaqin qiymat oladi. 0,88 kuchli musbat, ±1 esa mukammal chiziqli bog'lanishni anglatadi va tarqoq nuqtalarga mos kelmaydi. Shuning uchun nolga eng yaqin qiymat tanlanadi. Javob: 0,04.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diagrammaga-mos-r-tanlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#fa8c91a0"
+    },
+    {
+      "q": "Uchta ma'lumot to'plamining koeffitsientlari r₁ = 0,45, r₂ = −0,78, r₃ = 0,61 bo'lsa, qaysi to'plamda chiziqli bog'liqlik eng kuchli?",
+      "v": [
+        "r₃ to'plamda, chunki qiymati musbat va kattaroq",
+        "r₂ to'plamda, chunki uning moduli eng katta",
+        "r₁ to'plamda, chunki qiymati nolga eng yaqin",
+        "r₂ eng kuchsiz, chunki koeffitsienti manfiy"
+      ],
+      "t": 1,
+      "izoh": "Bog'liqlik kuchi koeffitsientning ishorasi bilan emas, moduli bilan o'lchanadi. Modullar: 0,45; 0,78 va 0,61 — ulardan eng kattasi 0,78. Manfiy ishora faqat yo'nalish pastga qaraganini bildiradi, kuchni pasaytirmaydi. Javob: r₂ to'plamda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagrammaga-mos-r-tanlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#4b8828c3"
+    },
+    {
+      "q": "Kafeda kunlik tashrifchilar soni t va tushum y (ming so'm) uchun eng mos to'g'ri chiziq y = 38t + 150 ko'rinishida topildi. 40 ta tashrifchi kelgan kunda tushum taxminan qancha bo'ladi?",
+      "v": [
+        "1520 ming so'm",
+        "6038 ming so'm",
+        "228 ming so'm",
+        "1670 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Tenglamaga t = 40 qo'yiladi: y = 38·40 + 150. Avval 38·40 = 1520 hisoblanadi, so'ng 150 qo'shiladi va 1670 chiqadi. Ozod hadni tashlab yuborish 1520 xatosiga, koeffitsientlarni almashtirish 6038 xatosiga olib keladi. Javob: 1670 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziq-tenglamasidan-bashorat",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#cca20f27"
+    },
+    {
+      "q": "Fermer yer maydoni x (gektar) va yig'ilgan hosil y (tonna) uchun bashorat chizig'i y = 2,6x + 1,4 ko'rinishida chiqdi. 15 gektardan taxminan qancha hosil kutiladi?",
+      "v": [
+        "40,4 tonna",
+        "39 tonna",
+        "23,6 tonna",
+        "19 tonna"
+      ],
+      "t": 0,
+      "izoh": "x = 15 ni qo'yamiz: 2,6·15 = 39 bo'ladi. Unga ozod had 1,4 qo'shiladi va natija 40,4 tonna chiqadi. Koeffitsientlarni almashtirib 1,4·15 + 2,6 hisoblansa 23,6 degan noto'g'ri javob paydo bo'ladi. Javob: 40,4 tonna.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziq-tenglamasidan-bashorat",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#27f9316b"
+    },
+    {
+      "q": "Shirinbek ustaxonasida ishchilar soni n va bir kunda tayyorlanadigan stullar soni y uchun y = 7,5n + 4 bog'lanish mos keldi. 12 ishchi ishlaganda necha stul kutiladi?",
+      "v": [
+        "90 ta",
+        "94 ta",
+        "48 ta",
+        "23,5 ta"
+      ],
+      "t": 1,
+      "izoh": "n = 12 uchun 7,5·12 = 90 stul hisoblanadi. Bunga doimiy had 4 qo'shiladi, natija 94 ta bo'ladi. Ozod hadni unutish 90 ga, barcha sonlarni qo'shib yuborish 23,5 ga olib keladi. Javob: 94 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziq-tenglamasidan-bashorat",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#29832f5d"
+    },
+    {
+      "q": "Reklama xarajati x (mln so'm) va sotuv hajmi y (dona) uchun y = 45x + 320 chizig'i topilgan. Xarajat 6 mln so'mdan 10 mln so'mga oshirilsa, sotuv taxminan qanchaga ortadi?",
+      "v": [
+        "450 dona",
+        "770 dona",
+        "180 dona",
+        "4 dona"
+      ],
+      "t": 2,
+      "izoh": "O'sish faqat burchak koeffitsientiga bog'liq: har 1 mln so'm 45 dona qo'shadi. Xarajat 4 mln so'mga ortgani uchun o'sish 45·4 = 180 dona bo'ladi. 770 soni 10 mln so'mdagi to'liq sotuv hajmi, o'sish emas. Javob: 180 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziq-tenglamasidan-bashorat",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#221c81e4"
+    },
+    {
+      "q": "Bolaning yoshi x va bo'yi y (sm) uchun eng mos chiziq y = 5,4x + 82 deb topildi. Bo'yi 136 sm bo'lgan bolaning yoshi taxminan nechada?",
+      "v": [
+        "25 yosh",
+        "10 yosh",
+        "40 yosh",
+        "54 yosh"
+      ],
+      "t": 1,
+      "izoh": "136 = 5,4x + 82 tenglamasi tuziladi. Ikki tomondan 82 ayriladi: 5,4x = 54. So'ng 54 ni 5,4 ga bo'lamiz va x = 10 chiqadi. Ozod hadni ayirmasdan 136 ni 5,4 ga bo'lish 25 degan noto'g'ri javobni beradi. Javob: 10 yosh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-bashorat-x-topish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#4a055fe3"
+    },
+    {
+      "q": "Zavodda ish soati x va tayyorlangan detallar soni y uchun y = 18x − 12 bog'lanishi topildi. 240 ta detal tayyorlash uchun taxminan necha soat kerak?",
+      "v": [
+        "13,3 soat",
+        "12,7 soat",
+        "14 soat",
+        "18,5 soat"
+      ],
+      "t": 2,
+      "izoh": "240 = 18x − 12 tenglamasidan 18x = 252 kelib chiqadi. Undan x = 252 : 18 = 14 soat topiladi. Ozod hadning ishorasini chalkashtirib 228 : 18 hisoblansa 12,7 chiqadi, uni umuman e'tiborsiz qoldirish esa 13,3 beradi. Javob: 14 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-bashorat-x-topish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#4de77637"
+    },
+    {
+      "q": "Oilaning suv sarfi x (m³) va oylik to'lovi y (ming so'm) uchun y = 3,2x + 25 chizig'i mos keldi. To'lov 121 ming so'm bo'lsa, taxminan qancha suv sarflangan?",
+      "v": [
+        "37,8 m³",
+        "45,6 m³",
+        "96 m³",
+        "30 m³"
+      ],
+      "t": 3,
+      "izoh": "121 = 3,2x + 25 tenglamasini yechamiz. Doimiy to'lov 25 ayrilgach 3,2x = 96 qoladi. Bundan x = 96 : 3,2 = 30 m³ topiladi. 96 ni javob deb olish oxirgi bo'lish qadamini tashlab ketish xatosidir. Javob: 30 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-bashorat-x-topish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#ad12d711"
+    },
+    {
+      "q": "Kitob narxi x (ming so'm) va oyiga sotilgan nusxalar soni y uchun y = −4,5x + 260 bog'lanish topildi. Oyiga 125 nusxa sotilishi uchun narx qanday bo'lishi kerak?",
+      "v": [
+        "30 ming so'm",
+        "85,6 ming so'm",
+        "27,8 ming so'm",
+        "135 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "125 = −4,5x + 260 tenglamasidan 4,5x = 260 − 125 = 135 hosil bo'ladi. Bundan x = 135 : 4,5 = 30 ming so'm chiqadi. 135 ni javob deb olish bo'lish qadamini unutish, 125 : 4,5 esa ozod hadni hisobga olmaslik xatosidir. Javob: 30 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-bashorat-x-topish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#a520e6f9"
+    },
+    {
+      "q": "Sinfda kunlik o'qish daqiqasi va lug'at boyligi bo'yicha chizilgan eng mos to'g'ri chiziq (2; 17) va (8; 47) nuqtalardan o'tadi. Chiziqning burchak koeffitsienti nechaga teng?",
+      "v": [
+        "0,2",
+        "5",
+        "5,9",
+        "6,4"
+      ],
+      "t": 1,
+      "izoh": "Burchak koeffitsienti y ning o'sishini x ning o'sishiga bo'lish bilan topiladi. Ayirmalar: 47 − 17 = 30 va 8 − 2 = 6. Demak koeffitsient 30 : 6 = 5 ga teng. Ayirmalarni teskari bo'lish 0,2 degan noto'g'ri natija beradi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-koeffitsienti-ikki-nuqtadan",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#9e9f5f13"
+    },
+    {
+      "q": "Muzlatgichdan olingan mahsulot turgan xona harorati x (°C) va uning yumshash vaqti y (daqiqa) uchun chizilgan eng mos chiziq (6; 74) va (18; 26) nuqtalardan o'tgan. Uning burchak koeffitsienti qanday?",
+      "v": [
+        "4",
+        "−0,25",
+        "−4",
+        "−48"
+      ],
+      "t": 2,
+      "izoh": "y ning o'zgarishi 26 − 74 = −48 daqiqa, x ning o'zgarishi esa 18 − 6 = 12 °C. Koeffitsient −48 : 12 = −4 bo'ladi, ya'ni xona 1 °C issiqroq bo'lsa yumshash vaqti 4 daqiqaga qisqaradi. Faqat surat qoldirilsa −48, ayirmalar teskari bo'linsa −0,25 degan xato chiqadi. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-koeffitsienti-ikki-nuqtadan",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#31c6398f"
+    },
+    {
+      "q": "Sug'orish miqdori va hosildorlik bo'yicha to'plangan ma'lumotlarning eng mos chizig'i (4; 21) va (14; 45) nuqtalardan o'tadi. Burchak koeffitsienti nechaga teng?",
+      "v": [
+        "0,42",
+        "1,7",
+        "3,7",
+        "2,4"
+      ],
+      "t": 3,
+      "izoh": "Ayirmalar hisoblanadi: 45 − 21 = 24 va 14 − 4 = 10. Koeffitsient 24 : 10 = 2,4 ga teng bo'ladi. Maxrajda faqat 14 ni qoldirish 1,7 ga, qiymatlarni ayirish o'rniga qo'shish 3,7 ga olib keladi. Javob: 2,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-koeffitsienti-ikki-nuqtadan",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#b4430032"
+    },
+    {
+      "q": "Nasiba 3 kun va 11 kun saqlangan mahsulotning namligini o'lchadi: mos ravishda 46 va 22 foiz. Ikki nuqtadan o'tuvchi chiziqning burchak koeffitsienti qanday ma'no bildiradi?",
+      "v": [
+        "Har qo'shimcha kunda namlik 3 foiz punktga kamayadi",
+        "Har qo'shimcha kunda namlik 3 foiz punktga ortadi",
+        "Har qo'shimcha kunda namlik 8 foiz punktga kamayadi",
+        "Namlik har kuni 24 foiz punktga pasayadi"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsient (22 − 46) : (11 − 3) = −24 : 8 = −3 ga teng. Manfiy ishora namlikning kamayishini, moduli esa har bir kunga to'g'ri keladigan kamayishni bildiradi. 24 va 8 sonlari butun oraliqdagi o'zgarish va kunlar soni, ular alohida javob bo'lolmaydi. Javob: kuniga 3 foiz punkt kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-koeffitsienti-ikki-nuqtadan",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#aea62ddd"
+    },
+    {
+      "q": "Bahodir yiqqan ma'lumotlar uchun eng mos chiziqning burchak koeffitsienti 6,5 ga teng va chiziq (4; 39) nuqtadan o'tadi. Tenglamaning ozod hadi nechaga teng?",
+      "v": [
+        "65",
+        "26",
+        "13",
+        "9,75"
+      ],
+      "t": 2,
+      "izoh": "Chiziq tenglamasi y = 6,5x + b ko'rinishida bo'ladi. Nuqta qo'yilsa 39 = 6,5·4 + b, ya'ni 39 = 26 + b. Bundan b = 39 − 26 = 13 topiladi. Ayirish o'rniga qo'shish 65 degan noto'g'ri javob beradi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ozod-had-topish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#06b04dfb"
+    },
+    {
+      "q": "Tadqiqotchi topgan bashorat chizig'i (10; 47) nuqtadan o'tadi, burchak koeffitsienti esa 5,3 ga teng. Chiziq tenglamasining ozod hadi qanday qiymatga ega?",
+      "v": [
+        "6",
+        "100",
+        "4,7",
+        "−6"
+      ],
+      "t": 3,
+      "izoh": "47 = 5,3·10 + b tenglamasi tuziladi va 5,3·10 = 53 hisoblanadi. Demak b = 47 − 53 = −6 chiqadi. Ayirmaning ishorasini e'tibordan chiqarish 6 ga, qo'shib yuborish 100 ga olib keladi. Ozod had manfiy bo'lishi mumkin. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ozod-had-topish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#ec2b77c3"
+    },
+    {
+      "q": "Ikki tur ma'lumot uchun eng mos to'g'ri chiziq (3; 26) va (9; 50) nuqtalardan o'tadi. Bu chiziq tenglamasidagi ozod had nechaga teng?",
+      "v": [
+        "14",
+        "4",
+        "38",
+        "26"
+      ],
+      "t": 0,
+      "izoh": "Avval burchak koeffitsienti topiladi: (50 − 26) : (9 − 3) = 24 : 6 = 4. So'ng bitta nuqta qo'yiladi: 26 = 4·3 + b, ya'ni b = 26 − 12 = 14. Koeffitsient 4 ni ozod had deb olish keng tarqalgan xato. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ozod-had-topish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#2f4ad293"
+    },
+    {
+      "q": "Taksi xizmatida bosib o'tilgan masofa x (km) va to'lov y (ming so'm) uchun eng mos chiziq (5; 27) va (15; 57) nuqtalardan o'tadi. Yo'lga chiqish uchun olinadigan doimiy haq qancha?",
+      "v": [
+        "3 ming so'm",
+        "12 ming so'm",
+        "15 ming so'm",
+        "27 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Doimiy haq — bu x = 0 dagi qiymat, ya'ni ozod had. Koeffitsient (57 − 27) : (15 − 5) = 30 : 10 = 3 bo'ladi. Bundan 27 = 3·5 + b, demak b = 27 − 15 = 12 ming so'm. Bu yerda 3 ming so'm har km uchun narx, doimiy haq emas. Javob: 12 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ozod-had-topish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#2cce571e"
+    },
+    {
+      "q": "Ustaxona hisobida y = 4,2x + 9 bashorat chizig'i topilgan. x = 10 bo'lgan kuzatuvda haqiqiy qiymat 55 ga teng chiqdi. Shu kuzatuvning qoldig'i nechaga teng?",
+      "v": [
+        "−4",
+        "51",
+        "13",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Avval bashorat hisoblanadi: 4,2·10 + 9 = 42 + 9 = 51. Qoldiq — haqiqiy qiymatdan bashoratni ayirish: 55 − 51 = 4. Ayirishni teskari bajarish −4 ga, ozod hadni unutish 13 ga olib keladi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-hisoblash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#ab3e75d6"
+    },
+    {
+      "q": "Sut sotuvi uchun y = 7,8x + 20 bashorat chizig'i topildi. x = 15 bo'lgan kunda haqiqiy sotuv 128 dona bo'ldi. Bu kuzatuvning qoldig'i qanday?",
+      "v": [
+        "−9 dona",
+        "9 dona",
+        "137 dona",
+        "11 dona"
+      ],
+      "t": 0,
+      "izoh": "Bashorat: 7,8·15 + 20 = 117 + 20 = 137 dona. Qoldiq 128 − 137 = −9 dona bo'ladi. Manfiy qoldiq haqiqiy natija bashoratdan past ekanini bildiradi. Ishorani tashlab yuborish 9 degan noto'g'ri javobga olib keladi. Javob: −9 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-hisoblash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#67597dee"
+    },
+    {
+      "q": "y = 5x + 12 bashorat chizig'i uchun quyidagi kuzatuvlarning qaysi biri chiziq ustida aynan yotadi: (4; 30), (6; 42), (8; 54), (10; 60)?",
+      "v": [
+        "(4; 30)",
+        "(6; 42)",
+        "(8; 54)",
+        "(10; 60)"
+      ],
+      "t": 1,
+      "izoh": "Har bir x uchun bashorat hisoblanadi: 5·4 + 12 = 32, 5·6 + 12 = 42, 5·8 + 12 = 52, 5·10 + 12 = 62. Faqat ikkinchi juftlikda bashorat va haqiqiy qiymat teng, ya'ni qoldiq nolga aylanadi. Qolgan uchtasida qoldiq nolga teng emas. Javob: (6; 42).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-hisoblash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#bc17c145"
+    },
+    {
+      "q": "Ombor hisobida y = 3,4x + 18 bashorat chizig'i ishlatiladi. x = 25 bo'lgan kuzatuv uchun qoldiq −7 ga teng chiqqan bo'lsa, haqiqiy qiymat nechaga teng?",
+      "v": [
+        "110",
+        "103",
+        "96",
+        "78"
+      ],
+      "t": 2,
+      "izoh": "Bashorat qiymati: 3,4·25 + 18 = 85 + 18 = 103. Qoldiq haqiqiy qiymatdan bashoratni ayirish bilan topilgani uchun haqiqiy qiymat 103 + (−7) = 96 bo'ladi. Qoldiqni qo'shish o'rniga ayirish 110 degan xato beradi. Javob: 96.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoldiq-hisoblash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#4dfb26fd"
+    },
+    {
+      "q": "Eng mos to'g'ri chiziq har doim ma'lumotlarning o'rtacha nuqtasidan o'tadi. x qiymatlarining o'rtachasi 12, y qiymatlarining o'rtachasi 47 bo'lsa, chiziq qaysi nuqtadan o'tadi?",
+      "v": [
+        "(12; 47)",
+        "(47; 12)",
+        "(0; 47)",
+        "(12; 0)"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha nuqtaning abssissasi x larning o'rtachasi, ordinatasi esa y larning o'rtachasi bo'ladi. Demak nuqta (12; 47) ko'rinishida yoziladi. Koordinatalarni almashtirib qo'yish eng ko'p uchraydigan xato. Javob: (12; 47).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-nuqta-orqali-otish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#8a098339"
+    },
+    {
+      "q": "Beshta kuzatuv qayd etildi: (2; 9), (4; 15), (6; 18), (8; 26), (10; 32). Eng mos to'g'ri chiziq majburiy o'tadigan o'rtacha nuqtani toping.",
+      "v": [
+        "(6; 18)",
+        "(6; 20)",
+        "(5; 20)",
+        "(30; 100)"
+      ],
+      "t": 1,
+      "izoh": "x larning yig'indisi 2 + 4 + 6 + 8 + 10 = 30, o'rtachasi 30 : 5 = 6. y larning yig'indisi 9 + 15 + 18 + 26 + 32 = 100, o'rtachasi 100 : 5 = 20. Demak nuqta (6; 20) bo'ladi. O'rtadagi kuzatuvni (6; 18) o'rtacha nuqta deb olish xato. Javob: (6; 20).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-nuqta-orqali-otish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#d67d4279"
+    },
+    {
+      "q": "Ma'lumotlarning o'rtachalari x̄ = 8 va ȳ = 53 bo'lib, eng mos chiziqning burchak koeffitsienti 4,5 ga teng. Chiziq tenglamasining ozod hadi nechaga teng?",
+      "v": [
+        "89",
+        "36",
+        "17",
+        "6,6"
+      ],
+      "t": 2,
+      "izoh": "Chiziq o'rtacha nuqtadan o'tgani uchun 53 = 4,5·8 + b tenglamasi o'rinli. 4,5·8 = 36 bo'lgani sababli b = 53 − 36 = 17 topiladi. 36 ni javob deb olish oxirgi ayirish qadamini tashlab ketishdir. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-nuqta-orqali-otish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#62864d38"
+    },
+    {
+      "q": "Oltita kuzatuvda x qiymatlarining yig'indisi 66, y qiymatlarining yig'indisi esa 258 ga teng. Eng mos to'g'ri chiziq qaysi nuqtadan o'tishi kerak?",
+      "v": [
+        "(66; 258)",
+        "(43; 11)",
+        "(6; 43)",
+        "(11; 43)"
+      ],
+      "t": 3,
+      "izoh": "O'rtachalar yig'indini kuzatuvlar soniga bo'lish bilan topiladi: 66 : 6 = 11 va 258 : 6 = 43. Demak chiziq (11; 43) nuqtadan o'tadi. Yig'indilarni bo'lmasdan ishlatish (66; 258) degan xatoga olib keladi. Javob: (11; 43).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-nuqta-orqali-otish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#dbf7c26d"
+    },
+    {
+      "q": "Ijaraga olingan avtomobilning yurgan masofasi x (km) va to'lov y (ming so'm) uchun y = 1,8x + 90 bog'lanish topildi. Burchak koeffitsient 1,8 kontekstda nimani anglatadi?",
+      "v": [
+        "Avtomobil bo'sh turganda to'lov 1,8 ming so'm bo'ladi",
+        "Har 1,8 km yurilganda to'lov 1 ming so'mga ortadi",
+        "Butun safar uchun to'lov 1,8 ming so'mni tashkil qiladi",
+        "Har qo'shimcha 1 km uchun to'lov 1,8 ming so'mga ortadi"
+      ],
+      "t": 3,
+      "izoh": "Burchak koeffitsienti x bir birlikka ortganda y qanchaga o'zgarishini ko'rsatadi. Bu yerda x masofa, y esa to'lov bo'lgani uchun har 1 km 1,8 ming so'm qo'shadi. Bo'sh turgandagi to'lov ozod had 90 ming so'm bilan beriladi. Javob: har 1 km uchun 1,8 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "slope-manosini-talqin",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#932b1d14"
+    },
+    {
+      "q": "Mahsulot narxi x (ming so'm) va kunlik talab y (dona) uchun y = −6x + 340 chizig'i topildi. Koeffitsientdagi −6 soni nimani bildiradi?",
+      "v": [
+        "Narx 1 ming so'mga oshsa, talab 6 donaga kamayadi",
+        "Narx 6 ming so'mga oshsa, talab 1 donaga kamayadi",
+        "Narx 1 ming so'mga oshsa, talab 6 donaga ortadi",
+        "Talab har kuni 6 donaga kamayib boraveradi"
+      ],
+      "t": 0,
+      "izoh": "Manfiy koeffitsient bog'lanish yo'nalishi pastga qaraganini bildiradi. Moduli x ning bir birlik o'sishiga to'g'ri keladigan y ning kamayishini beradi. Demak narx 1 ming so'mga oshganda talab 6 donaga kamayadi. Koeffitsient vaqtga emas, narxga bog'langan. Javob: 6 donaga kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "slope-manosini-talqin",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#200530a6"
+    },
+    {
+      "q": "Sug'urta mijozining chegirmasi staj yiliga qarab y = 2,5x + 5 formulasi bilan bashorat qilinadi va foizda o'lchanadi. Staj bir yilga ortsa chegirma qanday o'zgaradi?",
+      "v": [
+        "Chegirma 5 foiz punktga ortadi",
+        "Chegirma 2,5 foiz punktga ortadi",
+        "Chegirma 7,5 foiz punktga ortadi",
+        "Chegirma 2,5 marta ko'payadi"
+      ],
+      "t": 1,
+      "izoh": "Bir yil qo'shilganda y ning o'zgarishi burchak koeffitsientiga teng bo'ladi. Bu yerda koeffitsient 2,5, demak chegirma 2,5 foiz punktga ortadi. Ozod had 5 esa stajsiz mijozning boshlang'ich chegirmasi. Marta va foiz punkt tushunchalarini chalkashtirmaslik kerak. Javob: 2,5 foiz punktga ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "slope-manosini-talqin",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#d8c35df6"
+    },
+    {
+      "q": "Ikki do'kon uchun tushum chiziqlari y = 12x + 400 va y = 19x + 260 ko'rinishida topilgan. Tashrifchilar soni bir xilda ortganda qaysi do'konda tushum tezroq ortadi?",
+      "v": [
+        "Birinchisida, chunki uning ozod hadi kattaroq",
+        "Ikkalasida bir xil, chunki ikkala chiziq ham ko'tariluvchi",
+        "Ikkinchisida, chunki uning burchak koeffitsienti kattaroq",
+        "Birinchisida, chunki boshlang'ich tushumi yuqoriroq"
+      ],
+      "t": 2,
+      "izoh": "O'sish tezligini faqat burchak koeffitsienti belgilaydi. Birinchi chiziqda u 12, ikkinchisida 19 ga teng. Demak har qo'shimcha tashrifchi ikkinchi do'konga ko'proq tushum qo'shadi. Ozod had 400 boshlang'ich darajani ko'rsatadi, o'sish tezligini emas. Javob: ikkinchisida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "slope-manosini-talqin",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#b3334a8f"
+    },
+    {
+      "q": "Telefon tarifida gaplashilgan daqiqa x va oylik hisob y (ming so'm) uchun y = 0,35x + 18 bog'lanish topildi. Tenglamadagi 18 soni kontekstda nimani bildiradi?",
+      "v": [
+        "Hech gaplashmagan oyda ham to'lanadigan abonent haqi",
+        "Har bir daqiqa uchun olinadigan haq",
+        "18 daqiqa gaplashish uchun to'lanadigan pul",
+        "Oyda to'lanishi mumkin bo'lgan eng katta summa"
+      ],
+      "t": 0,
+      "izoh": "Ozod had x = 0 bo'lgandagi y qiymatini beradi. Bu yerda x nolga teng bo'lishi umuman gaplashilmagan oyni bildiradi. Demak 18 ming so'm doimiy abonent to'lovi. Har daqiqa uchun haq esa burchak koeffitsienti 0,35 bilan beriladi. Javob: abonent haqi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ozod-had-kontekstdagi-manosi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#b0c816e8"
+    },
+    {
+      "q": "Suv havzasida chuqurlik x (metr) va harorat y (°C) uchun y = −0,8x + 24 bog'lanish topildi. Tenglamadagi 24 soni nimani anglatadi?",
+      "v": [
+        "Har metr chuqurlikda haroratning pasayish miqdori",
+        "Sirtdagi, ya'ni chuqurlik nolga teng joydagi harorat",
+        "Havzaning eng katta chuqurligi",
+        "Havzada qayd etilgan eng past harorat"
+      ],
+      "t": 1,
+      "izoh": "Ozod had chiziqning x = 0 dagi qiymati hisoblanadi. Chuqurlik nolga teng joy — bu suv sirti. Demak sirtdagi harorat 24 °C. Har metrdagi pasayish esa koeffitsient 0,8 bilan beriladi. Javob: sirtdagi harorat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ozod-had-kontekstdagi-manosi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#9076a453"
+    },
+    {
+      "q": "Bir ishlab chiqarishda x ish soati va y tayyor mahsulot soni uchun y = 15x − 40 chizig'i topildi, ma'lumotlar esa 5 dan 12 soatgacha yig'ilgan. Ozod had −40 ni qanday tushunish kerak?",
+      "v": [
+        "Ish boshlanishida 40 ta mahsulot yo'qotilishini bildiradi",
+        "Har soatda mahsulot soni 40 taga kamayishini bildiradi",
+        "Texnik son: x = 0 kuzatuvga kirmagan, real ma'nosi yo'q",
+        "Ish faqat 40 soatdan keyin boshlanishini bildiradi"
+      ],
+      "t": 2,
+      "izoh": "Ozod had faqat x = 0 dagi qiymatni beradi, bu yerda esa nol soat kuzatuv oralig'iga kirmaydi. Nol soat ishlaganda manfiy mahsulot chiqishi jismonan mumkin emas. Shuning uchun −40 chiziq joylashuvini belgilaydigan texnik son, real ko'rsatkich emas. Javob: real ma'noga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ozod-had-kontekstdagi-manosi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#77f9c173"
+    },
+    {
+      "q": "Ikki tumanda o'g'it miqdori x va bug'doy hosili y uchun mos ravishda y = 3,2x + 11 va y = 3,2x + 19 chiziqlari topilgan. Ikki tuman orasidagi farq nimadan iborat?",
+      "v": [
+        "Ikkinchi tumanda hosil o'g'itga tezroq javob beradi",
+        "Birinchi tumanda o'sish tezligi ikki barobar past",
+        "Ikki tumanning hosili har doim teng bo'ladi",
+        "Bir xil o'g'it miqdorida ikkinchi tumanda hosil doim 8 birlik ko'p"
+      ],
+      "t": 3,
+      "izoh": "Ikkala chiziqning burchak koeffitsienti 3,2 ga teng, demak o'g'itga javob tezligi bir xil. Farq faqat ozod hadda: 19 − 11 = 8. Bu farq har qanday x uchun saqlanadi, ya'ni chiziqlar parallel. Javob: ikkinchi tumanda hosil doim 8 birlik ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ozod-had-kontekstdagi-manosi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#f50a0c27"
+    },
+    {
+      "q": "Ma'lumotlar faqat 5 dan 20 gacha bo'lgan x qiymatlari uchun to'plangan va y = 2,3x + 14 chizig'i chiqarilgan. x = 80 uchun bashorat qilish nima uchun ishonchsiz hisoblanadi?",
+      "v": [
+        "Chunki 80 to'plangan ma'lumotlar oralig'idan ancha uzoqda",
+        "Chunki 80 juft son bo'lgani uchun formulaga mos kelmaydi",
+        "Chunki burchak koeffitsienti kasr son",
+        "Chunki bashorat qiymati juda katta chiqib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Eng mos chiziq faqat kuzatilgan oraliqda tekshirilgan bo'ladi. Oraliqdan tashqarida bog'lanishning shu ko'rinishda saqlanishiga hech qanday kafolat yo'q. Bunday bashorat ekstrapolyatsiya deyiladi va ishonchsiz hisoblanadi. Javob: 80 oraliqdan tashqarida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstrapolyatsiya-ishonchliligi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#b96625df"
+    },
+    {
+      "q": "Bolalarning 6 dan 12 yoshgacha bo'lgan ma'lumotlari asosida bo'y uchun y = 5,8x + 76 chizig'i tuzildi. Shu chiziq bilan 40 yoshli odamning bo'yini bashorat qilish to'g'rimi?",
+      "v": [
+        "To'g'ri, chunki chiziq har qanday yosh uchun ishlaydi",
+        "Noto'g'ri, chunki 40 yosh kuzatilgan oraliqdan tashqarida va natija bema'ni chiqadi",
+        "To'g'ri, chunki burchak koeffitsienti musbat",
+        "Noto'g'ri, chunki chiziq faqat manfiy koeffitsientda ishlaydi"
+      ],
+      "t": 1,
+      "izoh": "Formulaga qo'yilsa 5,8·40 + 76 = 308 sm chiqadi, bunday bo'y bo'lishi mumkin emas. Sababi: bo'yning o'sishi 6 dan 12 yoshgacha chiziqli bo'lgani bilan, keyin to'xtaydi. Chiziq faqat kuzatilgan oraliqda ishonchli ishlaydi. Javob: noto'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstrapolyatsiya-ishonchliligi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#c569e139"
+    },
+    {
+      "q": "Sotuv ma'lumotlari reklama xarajati 10 dan 60 mln so'mgacha bo'lgan holatlar uchun yig'ilgan. Quyidagi bashoratlardan qaysi biri eng ishonchli hisoblanadi?",
+      "v": [
+        "Xarajat 150 mln so'm bo'lgan holat uchun bashorat",
+        "Xarajat 0 bo'lgan holat uchun bashorat",
+        "Xarajat 35 mln so'm bo'lgan holat uchun bashorat",
+        "Xarajat 500 mln so'm bo'lgan holat uchun bashorat"
+      ],
+      "t": 2,
+      "izoh": "Eng ishonchli bashorat kuzatilgan oraliq ichida beriladi, bunga interpolyatsiya deyiladi. 35 mln so'm 10 va 60 orasida yotadi, demak u oraliq ichida. Qolgan uch qiymat oraliqdan tashqarida bo'lgani uchun ekstrapolyatsiya hisoblanadi. Javob: 35 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstrapolyatsiya-ishonchliligi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#e3f659cd"
+    },
+    {
+      "q": "Namunani 1 dan 8 soatgacha qizdirish tajribasidan y = 6,5x + 21 chizig'i topildi. \"30 soat qizdirilsa harorat 216 daraja bo'ladi\" degan xulosaning asosiy kamchiligi nimada?",
+      "v": [
+        "Hisob noto'g'ri bajarilgan, natija butunlay boshqa chiqadi",
+        "Chiziqning ozod hadi hisobga olinmay qolgan",
+        "Burchak koeffitsienti manfiy bo'lishi kerak edi",
+        "Hisob to'g'ri, ammo 30 soat kuzatilgan oraliqdan tashqarida va bog'lanish saqlanmasligi mumkin"
+      ],
+      "t": 3,
+      "izoh": "Arifmetik jihatdan 6,5·30 + 21 = 216 to'g'ri hisoblangan. Ammo tajriba faqat 8 soatgacha o'tkazilgan, 30 soat esa undan deyarli to'rt barobar uzoq. Uzoq muddatda jarayon boshqacha kechishi mumkin, shuning uchun chiziqli model o'z kuchini yo'qotadi. Javob: hisob to'g'ri, ammo oraliqdan tashqarida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstrapolyatsiya-ishonchliligi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#ce361236"
+    },
+    {
+      "q": "Kuzatuvlar quyidagicha qayd etilgan: (1; 5), (2; 9), (3; 13), (4; 17), (5; 46), (6; 25). Qaysi nuqta umumiy yo'nalishdan keskin chetlashgan?",
+      "v": [
+        "(1; 5)",
+        "(3; 13)",
+        "(5; 46)",
+        "(6; 25)"
+      ],
+      "t": 2,
+      "izoh": "Qolgan juftliklarda y qiymati har safar 4 taga ortib boradi: 5, 9, 13, 17 va 25. Shu qonuniyatga ko'ra beshinchi kuzatuvda 21 kutilar edi, lekin 46 qayd etilgan. Bu nuqta chiziqdan juda uzoqda yotadi va chetlagan nuqta hisoblanadi. Javob: (5; 46).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chetlagan-nuqtani-aniqlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#35597068"
+    },
+    {
+      "q": "Do'kon besh kunlik sotuvni juftlik ko'rinishida yozdi: (2; 22), (4; 31), (6; 40), (8; 12), (10; 58). Qaysi kuzatuv chetlagan nuqta hisoblanadi?",
+      "v": [
+        "(2; 22)",
+        "(8; 12)",
+        "(6; 40)",
+        "(10; 58)"
+      ],
+      "t": 1,
+      "izoh": "Boshqa juftliklarda x har safar 2 taga ortganda y 9 taga ortadi: 22, 31, 40 va 58. Shu tartibga ko'ra to'rtinchi kuzatuvda 49 kutilgan, ammo 12 yozilgan. Bu qiymat umumiy o'sish yo'nalishiga zid bo'lib, keskin chetlashgan. Javob: (8; 12).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetlagan-nuqtani-aniqlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#66c73d14"
+    },
+    {
+      "q": "Kuchli musbat bog'liqlikka ega to'plamga umumiy yo'nalishdan juda uzoqda yotgan bitta yangi nuqta qo'shildi. Korrelyatsiya koeffitsientining moduliga bu qanday ta'sir qiladi?",
+      "v": [
+        "Moduli kamayadi va bog'lanish zaifroq ko'rinadi",
+        "Moduli albatta ortadi va bog'lanish kuchayadi",
+        "Moduli umuman o'zgarmay qoladi",
+        "Koeffitsient 1 dan katta qiymatga o'tadi"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsient nuqtalarning to'g'ri chiziq atrofida qanchalik zich yotishini o'lchaydi. Chiziqdan uzoq nuqta umumiy tarqoqlikni oshiradi va zichlikni buzadi. Shuning uchun modul kichrayadi, ya'ni bog'lanish zaifroq ko'rinadi. Koeffitsient hech qachon 1 dan katta bo'lolmaydi. Javob: moduli kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetlagan-nuqtani-aniqlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#472cc035"
+    },
+    {
+      "q": "y = 2,5x + 6 bashorat chizig'iga nisbatan kuzatuvlar berilgan: (4; 16), (8; 26), (12; 50), (16; 45). Qaysi kuzatuvning qoldig'i eng katta va u chetlagan nuqta bo'ladi?",
+      "v": [
+        "(4; 16)",
+        "(8; 26)",
+        "(16; 45)",
+        "(12; 50)"
+      ],
+      "t": 3,
+      "izoh": "Bashoratlar: 2,5·4 + 6 = 16, 2,5·8 + 6 = 26, 2,5·12 + 6 = 36, 2,5·16 + 6 = 46. Qoldiqlar mos ravishda 0, 0, 14 va −1 chiqadi. Eng katta chetlanish uchinchi kuzatuvda, ya'ni haqiqiy qiymat bashoratdan 14 birlik yuqori. Javob: (12; 50).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chetlagan-nuqtani-aniqlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#80196b73"
+    },
+    {
+      "q": "Yozgi oylarda muzqaymoq sotuvi va suvda cho'kish hodisalari soni orasida kuchli musbat korrelyatsiya topildi. Qaysi xulosa to'g'ri hisoblanadi?",
+      "v": [
+        "Muzqaymoq iste'moli cho'kish hodisasiga sabab bo'ladi",
+        "Ikkala kattalik ham havo haroratiga bog'liq, ular orasida bevosita sababiyat yo'q",
+        "Cho'kish hodisalari muzqaymoq sotuvini oshiradi",
+        "Korrelyatsiya kuchli bo'lgani uchun sabab aniqlangan hisoblanadi"
+      ],
+      "t": 1,
+      "izoh": "Havo isiganda ham muzqaymoq ko'proq sotiladi, ham suvga tushuvchilar ko'payadi. Ya'ni ikkala kattalikni uchinchi omil — harorat harakatga keltiradi. Birgalikda o'zgarish sababiy bog'lanishni isbotlamaydi. Javob: sababiyat yo'q, uchinchi omil bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korrelyatsiya-sababiyat-emas",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#503bbc0a"
+    },
+    {
+      "q": "Turli shaharlar bo'yicha kutubxonalar soni va kasalxonalar soni orasida kuchli musbat bog'liqlik chiqdi. Buning eng ehtimolli izohi qaysi?",
+      "v": [
+        "Kutubxona qurish kasalxona qurishga majbur qiladi",
+        "Kasalxonalar kutubxonalarni moliyalashtiradi",
+        "Ikkala son ham shahar aholisi soniga bog'liq",
+        "Bunday bog'liqlik matematik jihatdan bo'lishi mumkin emas"
+      ],
+      "t": 2,
+      "izoh": "Katta shaharda ham kutubxona, ham kasalxona ko'p quriladi. Demak har ikkala ko'rsatkichni aholi soni belgilaydi. Ular bir-birini keltirib chiqarmaydi, faqat umumiy omilga ergashadi. Javob: ikkalasi aholi soniga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korrelyatsiya-sababiyat-emas",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#d883ae38"
+    },
+    {
+      "q": "Boshlang'ich sinf o'quvchilari orasida oyoq kiyimi o'lchami va o'qish tezligi o'rtasida musbat korrelyatsiya topilgan. Nima uchun bu sababiy bog'lanish emas?",
+      "v": [
+        "Chunki korrelyatsiya koeffitsienti musbat chiqqan",
+        "Chunki namuna hajmi juda katta bo'lgan",
+        "Chunki oyoq kiyimi o'lchami butun son bilan beriladi",
+        "Chunki ikkala ko'rsatkich ham bolaning yoshi bilan birga ortadi"
+      ],
+      "t": 3,
+      "izoh": "Bola ulg'aygan sari oyog'i ham kattalashadi, o'qish ko'nikmasi ham yaxshilanadi. Ikkala o'zgarishni yosh boshqaradi, ular bir-biriga ta'sir qilmaydi. Oyoq kiyimini kattalashtirish bilan o'qish tezlashmaydi. Javob: ikkalasi yoshga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korrelyatsiya-sababiyat-emas",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#2d10a4be"
+    },
+    {
+      "q": "Ikki kattalik uchun korrelyatsiya koeffitsienti r = 0,89 topildi. Quyidagi mulohazalardan qaysi biri ilmiy jihatdan asoslangan hisoblanadi?",
+      "v": [
+        "Kattaliklar birgalikda o'zgaradi, ammo sabab uchinchi omilda bo'lishi mumkin",
+        "Birinchi kattalikning o'zgarishi ikkinchisiga sabab bo'ladi",
+        "Bir kattalikni o'zgartirish ikkinchisini albatta o'zgartiradi",
+        "Koeffitsient 0,89 bo'lgani uchun qo'shimcha tajriba shart emas"
+      ],
+      "t": 0,
+      "izoh": "Yuqori koeffitsient faqat birgalikdagi o'zgarishning kuchini o'lchaydi. U qaysi kattalik sabab, qaysisi natija ekanini ko'rsata olmaydi. Sababni aniqlash uchun nazorat qilinadigan tajriba kerak bo'ladi. Javob: sabab uchinchi omilda bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korrelyatsiya-sababiyat-emas",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#e425f928"
+    },
+    {
+      "q": "Ikki sinfda bir xil ikki kattalik o'lchandi: birinchisida r = 0,52, ikkinchisida r = −0,84 chiqdi. Qaysi sinfda chiziqli bog'lanish kuchliroq?",
+      "v": [
+        "Birinchi sinfda, chunki koeffitsient musbat ishoraga ega",
+        "Ikkinchi sinfda, chunki koeffitsient moduli kattaroq",
+        "Ikkala sinfda bog'lanish bir xil kuchda",
+        "Aniqlab bo'lmaydi, chunki ishoralar har xil"
+      ],
+      "t": 1,
+      "izoh": "Bog'lanish kuchini koeffitsientning moduli belgilaydi. Modullar 0,52 va 0,84, ikkinchisi kattaroq. Manfiy ishora faqat nuqtalar pastga tushishini bildiradi va kuchni kamaytirmaydi. Javob: ikkinchi sinfda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-diagrammani-solishtirish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#101d5fdc"
+    },
+    {
+      "q": "A diagrammada nuqtalar to'g'ri chiziq atrofida tor tasma hosil qilgan, B diagrammada esa keng bulut ko'rinishida sochilgan. Qaysi diagramma bo'yicha bashorat aniqroq bo'ladi?",
+      "v": [
+        "B diagramma, chunki nuqtalar ko'proq joyni egallaydi",
+        "Ikkala diagramma bir xil aniqlikdagi bashorat beradi",
+        "A diagramma, chunki tarqoqlik kichik va qoldiqlar kichik chiqadi",
+        "Nuqtalar soni ko'p bo'lgan diagramma har doim aniqroq"
+      ],
+      "t": 2,
+      "izoh": "Bashorat aniqligi nuqtalarning chiziqdan chetlanishiga bog'liq. Tor tasmada har bir nuqta chiziqqa yaqin, ya'ni qoldiqlar kichik. Keng bulutda esa bir xil x uchun y juda turlicha bo'lishi mumkin. Javob: A diagramma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-diagrammani-solishtirish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#b798ff4e"
+    },
+    {
+      "q": "Uch to'plamda ham bir xil ikki kattalik bir xil birlikda o'lchangan va y qiymatlari taxminan bir xil kenglikda tarqalgan. Nuqtalarning eng mos chiziqdan o'rtacha chetlanishi mos ravishda 1,2; 4,7 va 9,3 birlikni tashkil etdi. Qaysi to'plamda chiziqli bog'lanish eng zaif?",
+      "v": [
+        "Chetlanishi 1,2 birlik bo'lgan to'plamda",
+        "Chetlanishi 4,7 birlik bo'lgan to'plamda",
+        "Uchala to'plamda bog'lanish bir xil kuchda",
+        "Chetlanishi 9,3 birlik bo'lgan to'plamda"
+      ],
+      "t": 3,
+      "izoh": "Uchala to'plamda o'lchov birligi va y ning tarqalish kengligi bir xil bo'lgani uchun chetlanishlarni bevosita solishtirsa bo'ladi. Chetlanish qanchalik katta bo'lsa, nuqtalar chiziqdan shunchalik uzoqda yotadi va chiziqli bog'lanish shunchalik zaiflashadi. Eng katta o'rtacha chetlanish 9,3 birlik. Javob: chetlanishi 9,3 bo'lgan to'plamda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-diagrammani-solishtirish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#324b325c"
+    },
+    {
+      "q": "Ikki tadqiqotda bir xil r = 0,70 qiymat chiqdi, ammo birinchisida atigi 8 ta, ikkinchisida 120 ta kuzatuv bor edi. Qaysi natijaga ko'proq ishonish mumkin?",
+      "v": [
+        "Ikkinchisiga, chunki kuzatuvlar soni ko'p va natija barqarorroq",
+        "Birinchisiga, chunki kam kuzatuvda xato ham kam bo'ladi",
+        "Ikkalasiga teng ishoniladi, chunki koeffitsient bir xil",
+        "Hech biriga, chunki koeffitsient birdan kichik"
+      ],
+      "t": 0,
+      "izoh": "Kam kuzatuvda bir-ikkita tasodifiy juftlik koeffitsientni sezilarli o'zgartirib yuboradi. Kuzatuvlar soni ortgan sari natija tasodifga kamroq bog'liq bo'ladi. Shuning uchun bir xil koeffitsientda katta namuna ishonchliroq. Javob: ikkinchi tadqiqotga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-diagrammani-solishtirish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#ad873e13"
+    },
+    {
+      "q": "Tadqiqotchi quyidagi juftliklarni qayd etdi: (2; 34), (5; 31), (8; 35), (11; 32), (14; 33). Bu ikki tur ma'lumot orasida qanday bog'liqlik bor?",
+      "v": [
+        "Kuchli musbat bog'liqlik mavjud",
+        "Kuchli manfiy bog'liqlik mavjud",
+        "Sezilarli bog'liqlik yo'q, y deyarli o'zgarmay qoladi",
+        "y qiymati x ga to'g'ri proporsional"
+      ],
+      "t": 2,
+      "izoh": "x qiymati 2 dan 14 gacha ancha ortgan, y esa 31 va 35 orasida turibdi. Ko'tarilish ham, pasayish ham kuzatilmaydi, o'zgarishlar tartibsiz. Bunday holatda sochilish diagrammasi gorizontal bulut hosil qiladi. Javob: sezilarli bog'liqlik yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bogliqlik-yoqligini-aniqlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#6a3b1d6d"
+    },
+    {
+      "q": "Sinfda har bir o'quvchining telefon raqami oxirgi raqami va matematikadan olgan bali qayd etildi. Bu ikki tur ma'lumotning sochilish diagrammasi qanday ko'rinishda bo'lishi kutiladi?",
+      "v": [
+        "Ko'tariluvchi to'g'ri chiziq atrofida zich joylashgan",
+        "Pastga tushuvchi chiziq atrofida zich joylashgan",
+        "Barcha nuqtalar bitta gorizontal chiziq ustida",
+        "Nuqtalar yo'nalishsiz sochilgan bulut ko'rinishida"
+      ],
+      "t": 3,
+      "izoh": "Telefon raqamining oxirgi raqami tasodifiy tanlanadi va bilim darajasiga bog'liq emas. Shuning uchun har qanday raqam yonida har qanday ball uchrashi mumkin. Nuqtalar hech qanday yo'nalish hosil qilmaydi. Javob: yo'nalishsiz sochilgan bulut.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bogliqlik-yoqligini-aniqlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#ce642a6b"
+    },
+    {
+      "q": "Do'konda kunlik non sotuvi va o'sha kundagi shamol tezligi solishtirilib, korrelyatsiya koeffitsienti r = 0,03 chiqdi. Bundan qanday xulosa qilinadi?",
+      "v": [
+        "Ikki kattalik orasida chiziqli bog'lanish amalda yo'q",
+        "Shamol kuchaysa non sotuvi sezilarli oshadi",
+        "Shamol kuchaysa non sotuvi keskin kamayadi",
+        "Bog'lanish kuchli, ammo yo'nalishi noaniq"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsient moduli 0,03 nolga juda yaqin, ya'ni nuqtalar hech qanday chiziq atrofida to'planmagan. Musbat ishora shu qadar kichik qiymatda yo'nalish haqida gapirishga asos bermaydi. Demak shamol tezligi non sotuviga chiziqli ta'sir ko'rsatmaydi. Javob: bog'lanish amalda yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bogliqlik-yoqligini-aniqlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#e35dea37"
+    },
+    {
+      "q": "Uchta jadval berilgan: A — (1; 4), (2; 8), (3; 12); B — (1; 9), (2; 5), (3; 1); C — (1; 7), (2; 7), (3; 7). Qaysi jadvalda ikki kattalik orasida bog'liqlik yo'q?",
+      "v": [
+        "A jadval",
+        "C jadval",
+        "B jadval",
+        "Uchala jadval ham bog'liqlikni ko'rsatadi"
+      ],
+      "t": 1,
+      "izoh": "A jadvalda x ortganda y ham ortadi, ya'ni musbat bog'liqlik bor. B jadvalda x ortganda y kamayadi, bu manfiy bog'liqlik. C jadvalda esa x o'zgarsa ham y doimo 7 bo'lib qoladi, ya'ni y umuman x ga javob bermaydi. Javob: C jadval.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bogliqlik-yoqligini-aniqlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#328e6111"
+    },
+    {
+      "q": "Laboratoriya kuzatuvlari quyidagicha: (1; 3), (2; 12), (3; 27), (4; 48), (5; 75). Bu ma'lumotlar orasidagi bog'lanish haqida nima deyish mumkin?",
+      "v": [
+        "Bog'liqlik bor, ammo u chiziqli emas — o'sish tezlashib boradi",
+        "Bog'liqlik to'liq chiziqli, nuqtalar bitta to'g'ri chiziqda",
+        "Hech qanday bog'liqlik kuzatilmaydi",
+        "Bog'liqlik manfiy yo'nalishga ega"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket o'sishlar 9, 15, 21 va 27 ga teng, ya'ni bir xil emas. Chiziqli bog'lanishda har qadamdagi o'sish o'zgarmas bo'lishi kerak edi. Bu yerda o'sish tobora kattalashadi, demak nuqtalar egri chiziq bo'ylab yotadi. Javob: bog'liqlik bor, lekin chiziqli emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nochiziqli-tarqoqlik",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#5676dbab"
+    },
+    {
+      "q": "Sochilish diagrammasida nuqtalar avval ko'tarilib, so'ng pasayadigan gumbaz shaklini hosil qilgan. Bunday ma'lumotlar uchun eng mos to'g'ri chiziq nima uchun yaroqsiz bo'ladi?",
+      "v": [
+        "Chunki kuzatuvlar soni yetarli emas",
+        "Chunki to'g'ri chiziq faqat bitta yo'nalishni ko'rsatadi va gumbaz shaklini ifodalay olmaydi",
+        "Chunki burchak koeffitsienti manfiy chiqadi",
+        "Chunki gumbaz shaklida koeffitsient har doim 1 ga teng"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri chiziq butun oraliqda yo o'sadi, yo kamayadi, uchinchi imkoniyat yo'q. Gumbazda esa chap qismda o'sish, o'ng qismda pasayish bor. Chiziq bu ikki qismning o'rtachasini olib, ikkalasini ham noto'g'ri ifodalaydi. Javob: chiziq gumbazni ifodalay olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nochiziqli-tarqoqlik",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#afbcead7"
+    },
+    {
+      "q": "Ma'lumotlar aniq parabola bo'ylab joylashgan bo'lsa ham korrelyatsiya koeffitsienti nolga yaqin chiqishi mumkinmi va nega?",
+      "v": [
+        "Yo'q, har qanday bog'lanishda koeffitsient katta chiqadi",
+        "Ha, chunki parabola nuqtalari doim tarqoq bo'ladi",
+        "Ha, chunki koeffitsient faqat chiziqli bog'lanishning kuchini o'lchaydi",
+        "Yo'q, chunki parabola ham to'g'ri chiziqning bir turi"
+      ],
+      "t": 2,
+      "izoh": "Korrelyatsiya koeffitsienti nuqtalar to'g'ri chiziqqa qanchalik yaqinligini baholaydi. Simmetrik parabolada chap va o'ng qanotlarning qarama-qarshi qiyaliklari bir-birini so'ndiradi. Natijada bog'lanish aniq bo'lsa ham koeffitsient nolga yaqin chiqadi. Javob: ha, u faqat chiziqli bog'lanishni o'lchaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nochiziqli-tarqoqlik",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#574e937c"
+    },
+    {
+      "q": "Dori dozasi va samaradorlik bo'yicha kuzatuvlar: (10; 40), (20; 65), (30; 80), (40; 84), (50; 85). 90 birlik doza uchun chiziqli model bilan bashorat qilish nima uchun xato bo'ladi?",
+      "v": [
+        "Chunki 90 juft son bo'lgani uchun formula ishlamaydi",
+        "Chunki dozalar faqat 10 ga karrali qilib olingan",
+        "Chunki samaradorlik foizda o'lchangan",
+        "Chunki o'sish sekinlashib to'yinish holatiga kelgan, bog'lanish chiziqli emas"
+      ],
+      "t": 3,
+      "izoh": "Ketma-ket o'sishlar 25, 15, 4 va 1 ga teng, ya'ni tez susayib bormoqda. Bu samaradorlik chegaraga yaqinlashayotganini, ya'ni to'yinish borligini ko'rsatadi. To'g'ri chiziq esa o'sishni cheksiz davom ettiradi va 90 doza uchun haqiqatdan uzoq natija beradi. Javob: bog'lanish chiziqli emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nochiziqli-tarqoqlik",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#4172ea84"
+    },
+    {
+      "q": "Korrelyatsiya koeffitsienti uchun quyidagi qiymatlardan qaysi biri umuman bo'lishi mumkin emas: 0,99; −0,45; 1,25; 0?",
+      "v": [
+        "0,99",
+        "−0,45",
+        "1,25",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "Korrelyatsiya koeffitsienti har doim −1 dan 1 gacha bo'lgan oraliqda yotadi. 0,99 va −0,45 shu oraliqqa kiradi, 0 esa bog'lanish yo'qligini bildiradi va mumkin. 1,25 chegaradan chiqib ketgani uchun bunday natija faqat hisob xatosidan kelib chiqadi. Javob: 1,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsient-oraligi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#341ea811"
+    },
+    {
+      "q": "Talaba hisob-kitob natijasida korrelyatsiya koeffitsienti r = −1,3 ga teng degan xulosaga keldi. Bu natija haqida nima deyish mumkin?",
+      "v": [
+        "Hisobda xato bor, chunki koeffitsient −1 dan kichik bo'lolmaydi",
+        "Natija to'g'ri, bog'lanish juda kuchli manfiy",
+        "Natija to'g'ri, faqat ishorani o'zgartirish yetarli",
+        "Bunday holatda bog'lanish yo'q deb hisoblanadi"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsientning mumkin bo'lgan eng kichik qiymati −1 ga teng, undan pastga tushmaydi. Modul 1,3 bo'lishi ta'rifga zid, ya'ni bunday natija chiqishi mumkin emas. Demak hisoblashda xatolik bo'lgan va uni qaytadan bajarish kerak. Javob: hisobda xato bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsient-oraligi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#a7654094"
+    },
+    {
+      "q": "Korrelyatsiya koeffitsienti aynan −1 ga teng chiqsa, sochilish diagrammasi qanday ko'rinishda bo'ladi?",
+      "v": [
+        "Nuqtalar pastga tushuvchi chiziq atrofida biroz tarqoq",
+        "Barcha nuqtalar pastga tushuvchi bitta to'g'ri chiziqda yotadi",
+        "Barcha nuqtalar ko'tariluvchi to'g'ri chiziqda yotadi",
+        "Nuqtalar aylana bo'ylab joylashadi"
+      ],
+      "t": 1,
+      "izoh": "Moduli aynan 1 ga teng bo'lishi tarqoqlik umuman yo'qligini bildiradi. Bu holda har bir nuqta chiziq ustida aniq yotadi va qoldiqlar nolga teng. Manfiy ishora chiziqning pastga qarab tushishini ko'rsatadi. Javob: barcha nuqtalar pastga tushuvchi chiziqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koeffitsient-oraligi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#5f09cb87"
+    },
+    {
+      "q": "To'rtta guruh hisoboti keldi: r = 0,82; r = −0,04; r = 1,10; r = −0,97. Ulardan nechtasi haqiqiy natija bo'lishi mumkin?",
+      "v": [
+        "To'rttasi ham haqiqiy bo'lishi mumkin",
+        "Ikkitasi, chunki manfiy qiymatlar bo'lishi mumkin emas",
+        "Bittasi, chunki faqat 0,82 kuchli bog'lanishni bildiradi",
+        "Uchtasi, chunki 1,10 ruxsat etilgan oraliqdan chiqib ketgan"
+      ],
+      "t": 3,
+      "izoh": "Ruxsat etilgan oraliq −1 dan 1 gacha. Qiymatlardan 0,82; −0,04 va −0,97 shu oraliq ichida yotadi va haqiqiy bo'lishi mumkin. 1,10 esa yuqori chegaradan oshib ketgani uchun mumkin emas. Manfiy qiymat taqiqlanmagan, u shunchaki teskari yo'nalishni bildiradi. Javob: uchtasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsient-oraligi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#9656f75e"
+    },
+    {
+      "q": "Yugurish mashg'uloti davomiyligi x (soat) va sarflangan kaloriya y uchun y = 620x + 40 bog'lanish topildi. 45 daqiqa yugurgan sportchi taxminan qancha kaloriya sarflaydi?",
+      "v": [
+        "505 kkal",
+        "465 kkal",
+        "27940 kkal",
+        "660 kkal"
+      ],
+      "t": 0,
+      "izoh": "Formulada x soatda o'lchanadi, shuning uchun 45 daqiqa 0,75 soatga aylantiriladi. Keyin 620·0,75 = 465 hisoblanadi va ozod had qo'shiladi: 465 + 40 = 505 kkal. Daqiqani soatga aylantirmaslik 27940 degan bema'ni natija beradi. Javob: 505 kkal.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-aylantirib-bashorat",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#2f483316"
+    },
+    {
+      "q": "Fermada ishlab chiqarilgan sut miqdori x (kg) va foyda y (ming so'm) uchun y = 1,4x + 55 bog'lanish topildi. Ferma 0,8 tonna sut ishlab chiqarsa, foyda taxminan qancha bo'ladi?",
+      "v": [
+        "1120 ming so'm",
+        "1175 ming so'm",
+        "56,1 ming so'm",
+        "1400 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Avval birlik moslashtiriladi: 0,8 tonna 800 kilogrammga teng. Keyin 1,4·800 = 1120 topiladi va doimiy had qo'shiladi: 1120 + 55 = 1175 ming so'm. Tonnani kilogrammga aylantirmasdan hisoblash 56,1 degan noto'g'ri javobga olib keladi. Javob: 1175 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-aylantirib-bashorat",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#79963936"
+    },
+    {
+      "q": "Yetkazib berish xizmatida masofa x (km) va vaqt y (daqiqa) uchun y = 1,6x + 5 bog'lanish topildi. 4500 metrlik yo'l uchun taxminan qancha vaqt kerak bo'ladi?",
+      "v": [
+        "7,2 daqiqa",
+        "7205 daqiqa",
+        "12,2 daqiqa",
+        "77 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "4500 metr 4,5 km ga teng, formulada esa masofa kilometrda olinadi. Hisoblaymiz: 1,6·4,5 = 7,2 va unga 5 qo'shiladi, natija 12,2 daqiqa. Metrni to'g'ridan-to'g'ri qo'yish 7205 ga, ozod hadni unutish 7,2 ga olib keladi. Javob: 12,2 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-aylantirib-bashorat",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#4388a999"
+    },
+    {
+      "q": "Ombor hajmi x (m³) va oylik ijara y (ming so'm) uchun y = 26x + 180 bog'lanish topilgan. Ijara 700 ming so'm bo'lsa, ombor hajmi necha litrga teng?",
+      "v": [
+        "20 litr",
+        "520 litr",
+        "26900 litr",
+        "20000 litr"
+      ],
+      "t": 3,
+      "izoh": "700 = 26x + 180 tenglamasidan 26x = 520 va x = 20 m³ topiladi. Savolda litr so'ralgani uchun 1 m³ = 1000 litr munosabati qo'llaniladi. Demak hajm 20·1000 = 20000 litr. Birlikni aylantirmaslik 20 degan javobga olib keladi. Javob: 20000 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-aylantirib-bashorat",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#94e3584a"
+    },
+    {
+      "q": "Kuzatuvlar asosida tuzilgan eng mos to'g'ri chiziq (2; 13) va (6; 29) nuqtalardan o'tadi. Shu chiziq bo'yicha x = 10 uchun bashorat qiymati qanday?",
+      "v": [
+        "40",
+        "45",
+        "29",
+        "33"
+      ],
+      "t": 1,
+      "izoh": "Burchak koeffitsienti (29 − 13) : (6 − 2) = 16 : 4 = 4. Ozod had 13 = 4·2 + b dan b = 5 topiladi. Demak y = 4x + 5 va x = 10 uchun y = 40 + 5 = 45. Ozod hadni qo'shishni unutish 40 degan javob beradi. Javob: 45.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-nuqtadan-chiziq-tuzib-bashorat",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#8dd2ec2a"
+    },
+    {
+      "q": "Rustam ikki tajriba o'tkazdi: 3 kg yem berilgan tovuqlardan 21 ta, 9 kg yem berilganda esa 45 ta tuxum olindi. Chiziqli modelga ko'ra 6 kg yemda necha tuxum kutiladi?",
+      "v": [
+        "33 ta",
+        "24 ta",
+        "27 ta",
+        "36 ta"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsient (45 − 21) : (9 − 3) = 24 : 6 = 4 ga teng. Ozod had 21 = 4·3 + b dan b = 9 chiqadi. Demak 6 kg uchun 4·6 + 9 = 33 ta tuxum kutiladi. Ozod hadni tashlab ketish 24 degan past natija beradi. Javob: 33 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-nuqtadan-chiziq-tuzib-bashorat",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#dd11a5c8"
+    },
+    {
+      "q": "Ma'lumotlarning eng mos chizig'i (4; 50) va (10; 26) nuqtalardan o'tgan. Shu chiziq bo'yicha x = 7 bo'lganda bashorat qiymati nechaga teng?",
+      "v": [
+        "62",
+        "34",
+        "38",
+        "26"
+      ],
+      "t": 2,
+      "izoh": "Koeffitsient (26 − 50) : (10 − 4) = −24 : 6 = −4. Ozod had 50 = −4·4 + b dan b = 66 topiladi. x = 7 uchun y = −4·7 + 66 = 38 chiqadi. Koeffitsient ishorasini musbat deb olish 62 degan xatoga olib keladi. Javob: 38.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-nuqtadan-chiziq-tuzib-bashorat",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#9bd2721c"
+    },
+    {
+      "q": "Dasturchi 2 soatda 34 ta, 8 soatda esa 82 ta topshiriqni tekshirdi. Chiziqli modelga ko'ra 106 ta topshiriqni tekshirish uchun necha soat kerak bo'ladi?",
+      "v": [
+        "13,25 soat",
+        "15,5 soat",
+        "88 soat",
+        "11 soat"
+      ],
+      "t": 3,
+      "izoh": "Koeffitsient (82 − 34) : (8 − 2) = 48 : 6 = 8. Ozod had 34 = 8·2 + b dan b = 18 topiladi, ya'ni y = 8x + 18. Endi 106 = 8x + 18 dan 8x = 88 va x = 11 soat chiqadi. Bo'lish qadamini tashlab ketish 88 degan javob beradi. Javob: 11 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-nuqtadan-chiziq-tuzib-bashorat",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#c8682c4b"
+    },
+    {
+      "q": "To'rt guruh juftliklari berilgan: A — (1; 2), (2; 5), (3; 9); B — (1; 30), (2; 22), (3; 14); C — (1; 6), (2; 6), (3; 6); D — (2; 4), (4; 9), (6; 13). Qaysi guruh manfiy bog'liqlikni ko'rsatadi?",
+      "v": [
+        "A guruh",
+        "B guruh",
+        "C guruh",
+        "D guruh"
+      ],
+      "t": 1,
+      "izoh": "A va D guruhlarda x ortganda y ham ortmoqda, ya'ni bog'liqlik musbat. C guruhda y umuman o'zgarmaydi, demak bog'liqlik yo'q. B guruhda esa x ortgan sari y 30 dan 14 gacha kamayadi. Javob: B guruh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-guruh-tanlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#d0fa4932"
+    },
+    {
+      "q": "Uch jadval berilgan: A — (1; 3), (2; 8), (3; 6), (4; 12); B — (1; 5), (2; 10), (3; 15), (4; 20); C — (1; 9), (2; 4), (3; 11), (4; 2). Qaysi jadvalda musbat bog'liqlik eng kuchli?",
+      "v": [
+        "A jadval",
+        "C jadval",
+        "B jadval",
+        "Uchala jadvalda bir xil"
+      ],
+      "t": 2,
+      "izoh": "B jadvalda x har birga ortganda y aynan 5 taga ortadi, ya'ni nuqtalar bitta to'g'ri chiziqda yotadi. A jadvalda o'sish bor, lekin uchinchi juftlik tartibni buzadi. C jadvalda qiymatlar goh ortib, goh kamayadi. Javob: B jadval.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-guruh-tanlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#3ba1fa47"
+    },
+    {
+      "q": "To'rtta to'plam berilgan: P — (1; 4), (2; 7), (3; 10); Q — (1; 4), (2; 8), (3; 10); R — (1; 5), (2; 5), (3; 8); S — (1; 2), (2; 6), (3; 11). Qaysi to'plamda nuqtalar aynan bitta to'g'ri chiziqda yotadi?",
+      "v": [
+        "P to'plam",
+        "Q to'plam",
+        "R to'plam",
+        "S to'plam"
+      ],
+      "t": 0,
+      "izoh": "Nuqtalar bitta chiziqda yotishi uchun x ning teng qadamiga y ning teng o'sishi to'g'ri kelishi kerak. P da o'sishlar 3 va 3, ya'ni bir xil. Q da 4 va 2, R da 0 va 3, S da 4 va 5 — hech biri teng emas. Javob: P to'plam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-guruh-tanlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#d0cea8b0"
+    },
+    {
+      "q": "Ikki tumanning ma'lumotlari: I — (2; 10), (4; 19), (6; 31), (8; 40); II — (2; 12), (4; 26), (6; 18), (8; 33). Qaysi tumanda chiziqli bog'liqlik kuchliroq?",
+      "v": [
+        "II tumanda, chunki undagi qiymatlar kattaroq",
+        "Ikkalasida bir xil, chunki x qadamlari teng",
+        "II tumanda, chunki o'zgarish keskinroq ko'rinadi",
+        "I tumanda, chunki y bir maromda ortib boradi va tarqoqlik kichik"
+      ],
+      "t": 3,
+      "izoh": "I tumanda ketma-ket o'sishlar 9, 12 va 9 — ular bir-biriga yaqin, demak nuqtalar chiziqqa yaqin yotadi. II tumanda esa o'zgarishlar 14, −8 va 15, ya'ni yo'nalish buziladi. Qiymatlarning kattaligi bog'lanish kuchini belgilamaydi. Javob: I tumanda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-guruh-tanlash",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#201f7f04"
+    },
+    {
+      "q": "Sochilish diagrammasi ikki tur ma'lumot uchun quriladi va unda ko'plab nuqtalar bo'ladi. Har bir nuqta nimani ifodalaydi?",
+      "v": [
+        "Bitta ob'ekt uchun o'lchangan ikki kattalikning juftligini",
+        "Faqat birinchi kattalikning o'rtacha qiymatini",
+        "Barcha kuzatuvlarning umumiy yig'indisini",
+        "Ikki kattalik orasidagi ayirmani"
+      ],
+      "t": 0,
+      "izoh": "Diagrammada gorizontal o'q birinchi kattalikni, vertikal o'q ikkinchisini ko'rsatadi. Bitta kuzatuv ob'ekti uchun ikkala qiymat o'lchanadi va ular koordinata sifatida qo'yiladi. Shunday qilib har bir nuqta bitta juftlikka mos keladi. Javob: ikki kattalikning juftligini.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sochilish-diagrammasini-oqish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#d2b4c83d"
+    },
+    {
+      "q": "Sochilish diagrammasida 9 ta nuqta bor, ulardan 4 tasi eng mos chiziqdan yuqorida, 5 tasi esa pastda yotadi. Bu holat nima haqida ma'lumot beradi?",
+      "v": [
+        "Chiziq noto'g'ri tuzilgan, u barcha nuqtadan o'tishi shart",
+        "Chiziq nuqtalar orasidan o'tib, ularni ikki tomonga taxminan teng taqsimlaydi",
+        "Bog'liqlik manfiy ekanini ko'rsatadi",
+        "Korrelyatsiya koeffitsienti aynan 1 ga tengligini bildiradi"
+      ],
+      "t": 1,
+      "izoh": "Eng mos chiziq barcha nuqtadan o'tishi shart emas, chunki bunday chiziq odatda mavjud emas. Uning vazifasi — chetlanishlarni umumiy hisobda eng kichik qilish. Shu sababli nuqtalar chiziqning ikki tomoniga taxminan teng taqsimlanadi. Javob: chiziq nuqtalarni teng taqsimlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sochilish-diagrammasini-oqish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#f7763cab"
+    },
+    {
+      "q": "Sochilish diagrammasida gorizontal o'qda haftalik mashg'ulot soati, vertikal o'qda esa to'plangan ball ko'rsatilgan. Diagrammadagi (7; 62) nuqtasi nimani bildiradi?",
+      "v": [
+        "62 soat mashq qilgan o'quvchi 7 ball olganini",
+        "O'rtacha 7 ball va 62 soatni bildiradi",
+        "7 soat mashq qilgan o'quvchi 62 ball to'plaganini",
+        "Jami 69 birlik natijani bildiradi"
+      ],
+      "t": 2,
+      "izoh": "Nuqtaning birinchi koordinatasi gorizontal o'qdagi qiymatni beradi, ya'ni 7 soat mashg'ulot. Ikkinchi koordinata vertikal o'qdagi qiymat, ya'ni 62 ball. Koordinatalarni almashtirib o'qish eng ko'p uchraydigan xato. Javob: 7 soat mashq qilgan o'quvchi 62 ball to'plagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sochilish-diagrammasini-oqish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#ab4f18fe"
+    },
+    {
+      "q": "Bir sinf uchun qurilgan diagrammada 12 ta nuqta bor, ularning 3 tasi qolganlaridan ancha yuqorida alohida to'plangan. Bu qanday holatni ko'rsatishi mumkin?",
+      "v": [
+        "Hisoblashda albatta xato borligini",
+        "Korrelyatsiya koeffitsienti manfiy ekanini",
+        "Kuzatuvlar soni yetarli emasligini",
+        "Ma'lumotlarda alohida guruh borligini — bitta chiziq butun sinfni ifodalamasligi mumkin"
+      ],
+      "t": 3,
+      "izoh": "Nuqtalarning ikki to'plamga ajralishi namunada turli xususiyatli guruhlar borligini bildiradi. Masalan qo'shimcha kursga qatnaydigan uchta o'quvchi qolganlardan ajralib turishi mumkin. Bunday holatda bitta umumiy chiziq ikkala guruhni ham noto'g'ri ifodalaydi. Javob: alohida guruh borligini.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sochilish-diagrammasini-oqish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#fca1335b"
+    },
+    {
+      "q": "Nuqtalari aynan bitta ko'tariluvchi to'g'ri chiziqda yotgan to'plamga xuddi shu chiziq ustidagi yangi nuqta qo'shildi. Korrelyatsiya koeffitsienti qanday o'zgaradi?",
+      "v": [
+        "O'zgarmaydi va 1 bo'lib qolaveradi",
+        "Kamayadi, chunki nuqtalar soni ortdi",
+        "Nolga aylanadi",
+        "1 dan katta qiymatga o'tadi"
+      ],
+      "t": 0,
+      "izoh": "Barcha nuqtalar bitta ko'tariluvchi chiziqda aynan yotganda koeffitsient 1 ga teng bo'ladi. Yangi nuqta ham xuddi shu chiziq ustida bo'lgani uchun uning qoldig'i nolga teng va tarqoqlik hech qanday ortmaydi. Demak koeffitsient o'z qiymatida, ya'ni 1 da qolaveradi. Javob: o'zgarmaydi, 1 bo'lib qolaveradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yangi-nuqta-bogliqlikka-tasiri",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#240e4b07"
+    },
+    {
+      "q": "Kuzatuvlar (2; 8), (4; 14), (6; 20) ko'rinishida edi, ularga (8; 26) juftligi qo'shildi. Ma'lumotlar orasidagi bog'lanish qanday o'zgaradi?",
+      "v": [
+        "Bog'lanish keskin zaiflashadi",
+        "Mukammal chiziqli bog'lanish saqlanib qoladi",
+        "Bog'lanish manfiy yo'nalishga aylanadi",
+        "Bog'lanish butunlay yo'qoladi"
+      ],
+      "t": 1,
+      "izoh": "Dastlabki uch juftlikda x har ikki birlikka ortganda y 6 taga ortadi, ya'ni chiziq y = 3x + 2. Yangi nuqta uchun 3·8 + 2 = 26 chiqadi, bu esa berilgan qiymat bilan aynan bir xil. Demak nuqta o'sha chiziq ustida yotadi. Javob: mukammal chiziqli bog'lanish saqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yangi-nuqta-bogliqlikka-tasiri",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#f374bcc1"
+    },
+    {
+      "q": "Kuzatuvlar (1; 4), (2; 7), (3; 10), (4; 13) bo'lib, ularga (5; 2) juftligi qo'shildi. Eng mos chiziqning burchak koeffitsientiga bu qanday ta'sir qiladi?",
+      "v": [
+        "Koeffitsient o'zgarmay qoladi",
+        "Koeffitsient ortadi va chiziq tikroq bo'ladi",
+        "Koeffitsient kamayadi, chiziq gorizontalga yaqinlashadi",
+        "Koeffitsient 1 dan katta bo'lolmaydi"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki to'rt nuqta y = 3x + 1 chizig'ida yotadi, unda x = 5 uchun 16 kutilardi. Yangi kuzatuvda esa atigi 2 qayd etilgan, ya'ni u kutilgandan ancha past. O'ng chetdagi past nuqta chiziqning o'ng uchini pastga tortadi va qiyalikni kamaytiradi. Javob: koeffitsient kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yangi-nuqta-bogliqlikka-tasiri",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#4459c3fb"
+    },
+    {
+      "q": "Mavjud ma'lumotlar to'plamiga o'rtacha nuqtaga juda yaqin joylashgan yangi kuzatuv qo'shildi. Eng mos to'g'ri chiziqning o'rniga bu qanday ta'sir ko'rsatadi?",
+      "v": [
+        "Chiziq keskin buriladi",
+        "Chiziq gorizontal holatga o'tadi",
+        "Chiziqni umuman tuzib bo'lmaydigan holat yuzaga keladi",
+        "Chiziq deyarli o'zgarmaydi, chunki yangi nuqta o'rtacha nuqtaga yaqin"
+      ],
+      "t": 3,
+      "izoh": "Eng mos chiziq har doim o'rtacha nuqtadan o'tadi va shu nuqta atrofida buriladi. O'rtacha nuqtaga yaqin qo'shilgan kuzatuv na o'rtachalarni, na qiyalikni sezilarli o'zgartiradi. Chiziqni kuchli buradigan nuqtalar esa chetda, x ning eng katta yoki eng kichik qiymatlarida yotadi. Javob: chiziq deyarli o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yangi-nuqta-bogliqlikka-tasiri",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#c3244398"
+    },
+    {
+      "q": "Quyidagi kattaliklar juftliklaridan qaysi birida manfiy bog'liqlik kutiladi?",
+      "v": [
+        "Avtomobilning yoshi va uning bozor narxi",
+        "Uyning maydoni va uning narxi",
+        "Ishlagan soat va olingan maosh",
+        "Bolaning yoshi va bo'yi"
+      ],
+      "t": 0,
+      "izoh": "Manfiy bog'liqlikda bir kattalik ortganda ikkinchisi kamayadi. Avtomobil eskirgan sari uning bozor narxi tushadi, demak bu manfiy bog'lanish. Qolgan uchtasida ikkala kattalik birga ortadi, ya'ni bog'lanish musbat. Javob: avtomobil yoshi va narxi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kutilayotgan-bogliqlik-yonalishi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#3fde61e1"
+    },
+    {
+      "q": "Quyidagi kattaliklar juftliklaridan qaysi birida musbat bog'liqlik kutiladi?",
+      "v": [
+        "Mahsulot narxi va sotilgan miqdor",
+        "Kitobning sahifalar soni va uning og'irligi",
+        "Qishdagi havo harorati va isitishga sarflangan gaz",
+        "Tezlik va bir xil masofaga sarflangan vaqt"
+      ],
+      "t": 1,
+      "izoh": "Sahifalar ko'paygan sari kitobdagi qog'oz miqdori, demak og'irlik ham ortadi. Narx oshsa talab odatda kamayadi, harorat ko'tarilsa gaz sarfi tushadi, tezlik ortsa yo'lga ketgan vaqt qisqaradi. Bu uchtasi manfiy bog'lanishga misol. Javob: sahifalar soni va og'irlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kutilayotgan-bogliqlik-yonalishi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#29b04c23"
+    },
+    {
+      "q": "Fermer suv ko'paygan sari hosil ortishini kutmoqda, ammo haddan ortiq sug'orishda hosil pasayib ketadi. Bunday ma'lumotlar diagrammasi qanday ko'rinishga ega bo'ladi?",
+      "v": [
+        "To'liq ko'tariluvchi to'g'ri chiziq shaklida",
+        "To'liq tushuvchi to'g'ri chiziq shaklida",
+        "Avval ko'tarilib, so'ng pasayadigan gumbaz shaklida",
+        "Gorizontal chiziq shaklida"
+      ],
+      "t": 2,
+      "izoh": "Kichik suv miqdorida qo'shimcha sug'orish hosilni oshiradi, ya'ni chap qismda o'sish bo'ladi. Ma'lum chegaradan keyin ortiqcha suv ildizga zarar berib, hosilni kamaytiradi. Natijada nuqtalar avval ko'tarilib, so'ng pasayadigan egri hosil qiladi. Javob: gumbaz shaklida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kutilayotgan-bogliqlik-yonalishi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#92bfe14b"
+    },
+    {
+      "q": "Ikki o'zgaruvchi orasida hech qanday mantiqiy bog'lanish bo'lmasa ham, olingan namunada r = 0,68 chiqdi. Buning eng ehtimolli sababi nima?",
+      "v": [
+        "Bunday natija umuman chiqishi mumkin emas",
+        "Koeffitsient noto'g'ri formulada hisoblangan bo'lishi shart",
+        "Bog'lanish albatta sababiy ekanini bildiradi",
+        "Namuna kichik bo'lgani uchun tasodifiy bog'lanish paydo bo'lgan bo'lishi mumkin"
+      ],
+      "t": 3,
+      "izoh": "Kam sonli kuzatuvda tasodifan bir-biriga ergashadigan qiymatlar tushib qolishi mumkin. Shunda koeffitsient katta chiqadi, garchi haqiqiy bog'lanish bo'lmasa ham. Namunani kengaytirganda bunday tasodifiy natija odatda yo'qoladi. Javob: kichik namunadagi tasodif.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kutilayotgan-bogliqlik-yonalishi",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#066d73f4"
+    },
+    {
+      "q": "Eng mos to'g'ri chiziqning burchak koeffitsienti 3,5 ga teng va u (0; 12) nuqtadan o'tadi. Bu chiziqning tenglamasi qanday yoziladi?",
+      "v": [
+        "y = 3,5x + 12",
+        "y = 12x + 3,5",
+        "y = 3,5x − 12",
+        "y = 12x − 3,5"
+      ],
+      "t": 0,
+      "izoh": "Chiziq tenglamasi y = kx + b ko'rinishida bo'ladi, bunda k burchak koeffitsienti. Berilishiga ko'ra k = 3,5. Chiziq (0; 12) nuqtadan o'tgani uchun x = 0 da y = 12, demak b = 12. Koeffitsient va ozod hadni almashtirib qo'yish keng tarqalgan xato. Javob: y = 3,5x + 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziq-tenglamasini-tuzish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#df16f218"
+    },
+    {
+      "q": "Ma'lumotlar bo'yicha chizilgan eng mos to'g'ri chiziq (1; 9) va (5; 25) nuqtalardan o'tadi. Uning tenglamasini toping.",
+      "v": [
+        "y = 4x + 9",
+        "y = 4x + 5",
+        "y = 5x + 4",
+        "y = 0,25x + 9"
+      ],
+      "t": 1,
+      "izoh": "Burchak koeffitsienti (25 − 9) : (5 − 1) = 16 : 4 = 4 ga teng. Ozod hadni topish uchun birinchi nuqtani qo'yamiz: 9 = 4·1 + b, bundan b = 5. Demak tenglama y = 4x + 5. Birinchi nuqtaning ordinatasi 9 ni ozod had deb olish xato. Javob: y = 4x + 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziq-tenglamasini-tuzish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#a7e031ac"
+    },
+    {
+      "q": "Eng mos chiziq o'rtacha nuqta (10; 68) dan o'tadi va uning burchak koeffitsienti −2,4 ga teng. Chiziq tenglamasi qanday bo'ladi?",
+      "v": [
+        "y = −2,4x + 68",
+        "y = −2,4x + 44",
+        "y = −2,4x + 92",
+        "y = 2,4x + 92"
+      ],
+      "t": 2,
+      "izoh": "Tenglamaga o'rtacha nuqtani qo'yamiz: 68 = −2,4·10 + b. Bunda −2,4·10 = −24, demak 68 = −24 + b va b = 68 + 24 = 92. Manfiy koeffitsientda ayirish o'rniga qo'shish kerak bo'ladi, aks holda 44 degan xato chiqadi. Javob: y = −2,4x + 92.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziq-tenglamasini-tuzish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#521c6a34"
+    },
+    {
+      "q": "Suv isitgichda 4 daqiqada harorat 38 °C, 12 daqiqada esa 70 °C bo'ldi. Vaqt x (daqiqa) va harorat y uchun chiziqli model tenglamasini tuzing.",
+      "v": [
+        "y = 4x + 38",
+        "y = 8x + 6",
+        "y = 0,25x + 37",
+        "y = 4x + 22"
+      ],
+      "t": 3,
+      "izoh": "Burchak koeffitsienti (70 − 38) : (12 − 4) = 32 : 8 = 4 daraja/daqiqa. Ozod had uchun 38 = 4·4 + b, ya'ni b = 38 − 16 = 22. Demak model y = 4x + 22 ko'rinishida bo'ladi, bu esa boshlang'ich harorat 22 °C ekanini bildiradi. Berilgan 38 ni to'g'ridan-to'g'ri ozod had deb olish xato. Javob: y = 4x + 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziq-tenglamasini-tuzish",
+      "id": "matematika_disk_m08-ikki-tur-malumot-orasidagi-bogliqlik#7b7a9efb"
+    }
+  ]
+}

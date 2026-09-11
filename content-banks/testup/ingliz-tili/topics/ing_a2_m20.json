@@ -1,0 +1,1306 @@
+{
+  "nom": "Shopping & money (Xarid)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "'price' so'zining ma'nosi nima?",
+      "v": [
+        "to'lamoq",
+        "narx",
+        "turmoq",
+        "tejamoq"
+      ],
+      "t": 1,
+      "izoh": "Price = narx, biror narsaning puli.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#fcf004a1"
+    },
+    {
+      "q": "'cheap' so'zining ma'nosi nima?",
+      "v": [
+        "sarflamoq",
+        "to'lamoq",
+        "qimmat",
+        "arzon"
+      ],
+      "t": 3,
+      "izoh": "Cheap = arzon, kam pul turadigan.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#deb726da"
+    },
+    {
+      "q": "'expensive' so'zining ma'nosi nima?",
+      "v": [
+        "qaytim",
+        "tejamoq",
+        "qimmat",
+        "chek"
+      ],
+      "t": 2,
+      "izoh": "Expensive = qimmat, ko'p pul turadigan.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#6b6a1d0b"
+    },
+    {
+      "q": "'discount' so'zining ma'nosi nima?",
+      "v": [
+        "naqd pul",
+        "tejamoq",
+        "to'lamoq",
+        "chegirma"
+      ],
+      "t": 3,
+      "izoh": "Discount = narxdagi chegirma.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#4ade95dc"
+    },
+    {
+      "q": "'sale' so'zining ma'nosi nima?",
+      "v": [
+        "qurbi yetmoq",
+        "o'lcham",
+        "chek",
+        "aksiya"
+      ],
+      "t": 3,
+      "izoh": "Sale = arzonlashtirilgan savdo, aksiya.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#47af0422"
+    },
+    {
+      "q": "'cash' so'zining ma'nosi nima?",
+      "v": [
+        "kredit karta",
+        "arzon",
+        "naqd pul",
+        "o'lcham"
+      ],
+      "t": 2,
+      "izoh": "Cash = naqd pul (karta emas).",
+      "qiy": "orta",
+      "id": "ing_a2_m20#c0c87e64"
+    },
+    {
+      "q": "'credit card' so'zining ma'nosi nima?",
+      "v": [
+        "kredit karta",
+        "naqd pul",
+        "o'lcham",
+        "narx"
+      ],
+      "t": 0,
+      "izoh": "Credit card = to'lov uchun bank kartasi.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#251c75ba"
+    },
+    {
+      "q": "'change' so'zining ma'nosi nima?",
+      "v": [
+        "chek",
+        "sotuvchi",
+        "qaytim",
+        "aksiya"
+      ],
+      "t": 2,
+      "izoh": "Change = qaytim, ortiqcha puldan qaytadigan qism.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#06b8301b"
+    },
+    {
+      "q": "'receipt' so'zining ma'nosi nima?",
+      "v": [
+        "kiyib ko'rmoq",
+        "chek",
+        "sotuvchi",
+        "kredit karta"
+      ],
+      "t": 1,
+      "izoh": "Receipt = to'lov cheki.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#b0aa375e"
+    },
+    {
+      "q": "'size' so'zining ma'nosi nima?",
+      "v": [
+        "qaytim",
+        "o'lcham",
+        "sotuvchi",
+        "sarflamoq"
+      ],
+      "t": 1,
+      "izoh": "Size = o'lcham (kiyim, oyoq kiyim).",
+      "qiy": "orta",
+      "id": "ing_a2_m20#9c070229"
+    },
+    {
+      "q": "'try on' so'zining ma'nosi nima?",
+      "v": [
+        "turmoq",
+        "kiyib ko'rmoq",
+        "pulni qaytarish",
+        "qurbi yetmoq"
+      ],
+      "t": 1,
+      "izoh": "Try on = kiyimni kiyib ko'rish.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#3d0c52d3"
+    },
+    {
+      "q": "'customer' so'zining ma'nosi nima?",
+      "v": [
+        "qaytim",
+        "xaridor",
+        "naqd pul",
+        "sotuvchi"
+      ],
+      "t": 1,
+      "izoh": "Customer = xaridor, mijoz.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#58933c1d"
+    },
+    {
+      "q": "'shop assistant' so'zining ma'nosi nima?",
+      "v": [
+        "sotuvchi",
+        "kiyib ko'rmoq",
+        "narx",
+        "pulni qaytarish"
+      ],
+      "t": 0,
+      "izoh": "Shop assistant = do'kondagi sotuvchi/yordamchi.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#988a3f15"
+    },
+    {
+      "q": "'cost' so'zining ma'nosi nima?",
+      "v": [
+        "kiyib ko'rmoq",
+        "pulni qaytarish",
+        "turmoq",
+        "chegirma"
+      ],
+      "t": 2,
+      "izoh": "Cost = qancha pul turishi, narxi bo'lmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#9923f6e6"
+    },
+    {
+      "q": "'pay' so'zining ma'nosi nima?",
+      "v": [
+        "to'lamoq",
+        "chek",
+        "o'lcham",
+        "tejamoq"
+      ],
+      "t": 0,
+      "izoh": "Pay = pul to'lamoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#d15c9124"
+    },
+    {
+      "q": "'spend' so'zining ma'nosi nima?",
+      "v": [
+        "to'lamoq",
+        "aksiya",
+        "kassa",
+        "sarflamoq"
+      ],
+      "t": 3,
+      "izoh": "Spend = pul sarflamoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#40fa4f00"
+    },
+    {
+      "q": "'save' so'zining ma'nosi nima?",
+      "v": [
+        "xaridor",
+        "naqd pul",
+        "to'lamoq",
+        "tejamoq"
+      ],
+      "t": 3,
+      "izoh": "Save = pul tejamoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#33648415"
+    },
+    {
+      "q": "'afford' so'zining ma'nosi nima?",
+      "v": [
+        "qurbi yetmoq",
+        "narx",
+        "chegirma",
+        "sarflamoq"
+      ],
+      "t": 0,
+      "izoh": "Afford = sotib olishga puli yetmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#f3182c6a"
+    },
+    {
+      "q": "'checkout' so'zining ma'nosi nima?",
+      "v": [
+        "qimmat",
+        "narx",
+        "arzon",
+        "kassa"
+      ],
+      "t": 3,
+      "izoh": "Checkout = to'lov qilinadigan kassa joyi.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#b8cc072f"
+    },
+    {
+      "q": "'refund' so'zining ma'nosi nima?",
+      "v": [
+        "tejamoq",
+        "kredit karta",
+        "pulni qaytarish",
+        "xaridor"
+      ],
+      "t": 2,
+      "izoh": "Refund = to'langan pulni qaytarib olish.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#bcbce3f8"
+    },
+    {
+      "q": "\"narx\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "spend",
+        "price",
+        "expensive",
+        "checkout"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: price.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#61fdeadc"
+    },
+    {
+      "q": "\"arzon\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "basket",
+        "receipt",
+        "trolley",
+        "cheap"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: cheap.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#da470bfd"
+    },
+    {
+      "q": "\"qimmat\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "receipt",
+        "discount",
+        "spend",
+        "expensive"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: expensive.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#1cb08685"
+    },
+    {
+      "q": "\"chegirma\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "change",
+        "checkout",
+        "discount",
+        "expensive"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: discount.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#57f1a1da"
+    },
+    {
+      "q": "\"aksiya (arzon savdo)\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "cheap",
+        "customer",
+        "basket",
+        "sale"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: sale.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#28337d0a"
+    },
+    {
+      "q": "\"naqd pul\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "cash",
+        "sale",
+        "shop assistant",
+        "try on"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob: cash.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#3cb40454"
+    },
+    {
+      "q": "\"kredit karta\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "wallet",
+        "market",
+        "checkout",
+        "credit card"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: credit card.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#26576146"
+    },
+    {
+      "q": "\"qaytim\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "checkout",
+        "change",
+        "size",
+        "discount"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: change.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#48577d7c"
+    },
+    {
+      "q": "\"chek\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "receipt",
+        "save",
+        "checkout",
+        "trolley"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob: receipt.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#171d30fc"
+    },
+    {
+      "q": "\"o'lcham\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "change",
+        "shop assistant",
+        "wallet",
+        "size"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: size.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#3c062743"
+    },
+    {
+      "q": "\"kiyib ko'rmoq\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "sale",
+        "refund",
+        "try on",
+        "cheap"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: try on.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#58fd5a3a"
+    },
+    {
+      "q": "\"xaridor\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "customer",
+        "market",
+        "try on",
+        "change"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob: customer.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#874f0571"
+    },
+    {
+      "q": "\"sotuvchi\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "receipt",
+        "shop assistant",
+        "customer",
+        "trolley"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: shop assistant.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#69c614de"
+    },
+    {
+      "q": "\"narxi bo'lmoq\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "cash",
+        "cost",
+        "spend",
+        "credit card"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: cost.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#edc3f214"
+    },
+    {
+      "q": "\"to'lamoq\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "try on",
+        "pay",
+        "bill",
+        "size"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: pay.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#0d368d2f"
+    },
+    {
+      "q": "\"pul sarflamoq\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "market",
+        "shop assistant",
+        "spend",
+        "sale"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: spend.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#9877a93f"
+    },
+    {
+      "q": "\"pul tejamoq\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "bill",
+        "save",
+        "size",
+        "shop assistant"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: save.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#ccf21339"
+    },
+    {
+      "q": "\"sotib olishga puli yetmoq\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "trolley",
+        "shop assistant",
+        "cheap",
+        "afford"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: afford.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#34d33cb2"
+    },
+    {
+      "q": "\"kassa (to'lov joyi)\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "afford",
+        "size",
+        "receipt",
+        "checkout"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: checkout.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#451be5d0"
+    },
+    {
+      "q": "\"pulni qaytarish\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "bill",
+        "receipt",
+        "refund",
+        "credit card"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: refund.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#0188b4d9"
+    },
+    {
+      "q": "Which word means: \"The amount of money you must pay for something\"?",
+      "v": [
+        "try on",
+        "price",
+        "spend",
+        "receipt"
+      ],
+      "t": 1,
+      "izoh": "Narsaning puli — price.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#883a2f3c"
+    },
+    {
+      "q": "Which word means: \"Costing little money\"?",
+      "v": [
+        "cheap",
+        "change",
+        "refund",
+        "price"
+      ],
+      "t": 0,
+      "izoh": "Kam pul turadigan — cheap.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#16f05f02"
+    },
+    {
+      "q": "Which word means: \"Costing a lot of money\"?",
+      "v": [
+        "expensive",
+        "discount",
+        "afford",
+        "receipt"
+      ],
+      "t": 0,
+      "izoh": "Ko'p pul turadigan — expensive.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#24500fc4"
+    },
+    {
+      "q": "Which word means: \"An amount of money taken off the normal price\"?",
+      "v": [
+        "shop assistant",
+        "try on",
+        "credit card",
+        "discount"
+      ],
+      "t": 3,
+      "izoh": "Narxdan chiqarib tashlanadigan qism — discount.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#3afddab4"
+    },
+    {
+      "q": "Which word means: \"A time when a shop sells things at lower prices\"?",
+      "v": [
+        "pay",
+        "shop assistant",
+        "sale",
+        "cost"
+      ],
+      "t": 2,
+      "izoh": "Arzonlashtirilgan savdo vaqti — sale.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#588f21ae"
+    },
+    {
+      "q": "Which word means: \"Coins and paper money, not a card\"?",
+      "v": [
+        "cash",
+        "expensive",
+        "shop assistant",
+        "refund"
+      ],
+      "t": 0,
+      "izoh": "Naqd pul — cash.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#f106ff7d"
+    },
+    {
+      "q": "Which word means: \"A plastic card you use to pay from a bank account\"?",
+      "v": [
+        "cash",
+        "cheap",
+        "receipt",
+        "credit card"
+      ],
+      "t": 3,
+      "izoh": "Bank kartasi — credit card.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#3087246a"
+    },
+    {
+      "q": "Which word means: \"The money you get back when you pay more than the price\"?",
+      "v": [
+        "price",
+        "receipt",
+        "change",
+        "save"
+      ],
+      "t": 2,
+      "izoh": "Qaytim — change.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#f90201c1"
+    },
+    {
+      "q": "Which word means: \"A piece of paper that shows what you bought and paid\"?",
+      "v": [
+        "expensive",
+        "customer",
+        "cheap",
+        "receipt"
+      ],
+      "t": 3,
+      "izoh": "To'lov qog'ozi — receipt.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#617d7059"
+    },
+    {
+      "q": "Which word means: \"How big or small clothes or shoes are\"?",
+      "v": [
+        "receipt",
+        "credit card",
+        "size",
+        "price"
+      ],
+      "t": 2,
+      "izoh": "Kiyim o'lchami — size.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#b983d533"
+    },
+    {
+      "q": "Which word means: \"To put on clothes in a shop to see if they fit\"?",
+      "v": [
+        "credit card",
+        "cheap",
+        "customer",
+        "try on"
+      ],
+      "t": 3,
+      "izoh": "Kiyib ko'rish — try on.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#1568e6b8"
+    },
+    {
+      "q": "Which word means: \"A person who buys things in a shop\"?",
+      "v": [
+        "afford",
+        "sale",
+        "customer",
+        "try on"
+      ],
+      "t": 2,
+      "izoh": "Xaridor — customer.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#b1aff963"
+    },
+    {
+      "q": "Which word means: \"A person who works in a shop and helps customers\"?",
+      "v": [
+        "afford",
+        "sale",
+        "shop assistant",
+        "price"
+      ],
+      "t": 2,
+      "izoh": "Sotuvchi — shop assistant.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#9c82369d"
+    },
+    {
+      "q": "Which word means: \"To have a particular price\"?",
+      "v": [
+        "change",
+        "pay",
+        "cost",
+        "save"
+      ],
+      "t": 2,
+      "izoh": "Narxi bo'lmoq — cost.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#cd720ab4"
+    },
+    {
+      "q": "Which word means: \"To give money to buy something\"?",
+      "v": [
+        "receipt",
+        "pay",
+        "size",
+        "save"
+      ],
+      "t": 1,
+      "izoh": "Pul berish — pay.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#a9392010"
+    },
+    {
+      "q": "Which word means: \"To use money to buy things\"?",
+      "v": [
+        "refund",
+        "credit card",
+        "customer",
+        "spend"
+      ],
+      "t": 3,
+      "izoh": "Pul sarflash — spend.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#4e36fe52"
+    },
+    {
+      "q": "Which word means: \"To keep money and not spend it\"?",
+      "v": [
+        "cheap",
+        "checkout",
+        "afford",
+        "save"
+      ],
+      "t": 3,
+      "izoh": "Pulni tejash — save.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#8cef3f8c"
+    },
+    {
+      "q": "Which word means: \"To have enough money to buy something\"?",
+      "v": [
+        "refund",
+        "sale",
+        "change",
+        "afford"
+      ],
+      "t": 3,
+      "izoh": "Sotib olishga puli yetishi — afford.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#eb9b818f"
+    },
+    {
+      "q": "Which word means: \"The place in a shop where you pay\"?",
+      "v": [
+        "checkout",
+        "cheap",
+        "customer",
+        "save"
+      ],
+      "t": 0,
+      "izoh": "To'lov joyi — checkout.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#e2a47083"
+    },
+    {
+      "q": "Which word means: \"Money given back when you return a product\"?",
+      "v": [
+        "refund",
+        "cash",
+        "expensive",
+        "customer"
+      ],
+      "t": 0,
+      "izoh": "Qaytariladigan pul — refund.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#5874ce65"
+    },
+    {
+      "q": "This shirt is only 20,000 so'm. It is very ___.",
+      "v": [
+        "healthy",
+        "sick",
+        "expensive",
+        "cheap"
+      ],
+      "t": 3,
+      "izoh": "Arzon — cheap.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#385d7da5"
+    },
+    {
+      "q": "That phone costs 10 million so'm. It is too ___ for me.",
+      "v": [
+        "free",
+        "cheap",
+        "small",
+        "expensive"
+      ],
+      "t": 3,
+      "izoh": "Qimmat — expensive.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#cf30b878"
+    },
+    {
+      "q": "There is a 30% ___ on all shoes this week.",
+      "v": [
+        "discount",
+        "receipt",
+        "fever",
+        "cough"
+      ],
+      "t": 0,
+      "izoh": "Chegirma — discount.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#f5384a0e"
+    },
+    {
+      "q": "Keep the ___ so you can return the item if needed.",
+      "v": [
+        "pill",
+        "receipt",
+        "nurse",
+        "cold"
+      ],
+      "t": 1,
+      "izoh": "Chek — receipt.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#52d31229"
+    },
+    {
+      "q": "I paid with a 50,000 note, so the cashier gave me ___.",
+      "v": [
+        "flu",
+        "size",
+        "medicine",
+        "change"
+      ],
+      "t": 3,
+      "izoh": "Qaytim — change.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#a79587ce"
+    },
+    {
+      "q": "What ___ are you? Small, medium or large?",
+      "v": [
+        "pain",
+        "price",
+        "cough",
+        "size"
+      ],
+      "t": 3,
+      "izoh": "O'lcham — size.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#7dd2096c"
+    },
+    {
+      "q": "Can I ___ these jeans before I buy them?",
+      "v": [
+        "feel better",
+        "try on",
+        "spend",
+        "take medicine"
+      ],
+      "t": 1,
+      "izoh": "Kiyib ko'rmoq — try on.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#b0b6e368"
+    },
+    {
+      "q": "I don't have a card today, so I will pay in ___.",
+      "v": [
+        "pain",
+        "size",
+        "fever",
+        "cash"
+      ],
+      "t": 3,
+      "izoh": "Naqd — cash.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#a1e36672"
+    },
+    {
+      "q": "The ___ helped me find the right shirt in the shop.",
+      "v": [
+        "patient",
+        "doctor",
+        "nurse",
+        "shop assistant"
+      ],
+      "t": 3,
+      "izoh": "Sotuvchi — shop assistant.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#3f2ad202"
+    },
+    {
+      "q": "Every ___ in the shop was happy with the low prices.",
+      "v": [
+        "doctor",
+        "nurse",
+        "customer",
+        "pill"
+      ],
+      "t": 2,
+      "izoh": "Xaridor — customer.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#52b83cbd"
+    },
+    {
+      "q": "How much does this bag ___?",
+      "v": [
+        "ache",
+        "cost",
+        "hurt",
+        "cough"
+      ],
+      "t": 1,
+      "izoh": "Narxi qancha — cost.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#75778cac"
+    },
+    {
+      "q": "Please go to the ___ to pay for your items.",
+      "v": [
+        "clinic",
+        "checkout",
+        "hospital",
+        "pharmacy"
+      ],
+      "t": 1,
+      "izoh": "Kassa — checkout.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#31e5248c"
+    },
+    {
+      "q": "The shoes were broken, so the shop gave me a full ___.",
+      "v": [
+        "fever",
+        "refund",
+        "cold",
+        "cough"
+      ],
+      "t": 1,
+      "izoh": "Pulni qaytarish — refund.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#24fc5851"
+    },
+    {
+      "q": "I want to buy a car, but I can't ___ it yet.",
+      "v": [
+        "cough",
+        "afford",
+        "sneeze",
+        "hurt"
+      ],
+      "t": 1,
+      "izoh": "Puli yetmaslik — can't afford.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#61535635"
+    },
+    {
+      "q": "I try to ___ some money every month for my studies.",
+      "v": [
+        "save",
+        "sneeze",
+        "cough",
+        "hurt"
+      ],
+      "t": 0,
+      "izoh": "Tejamoq — save.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#12ac1a71"
+    },
+    {
+      "q": "Young people often ___ too much money on games.",
+      "v": [
+        "cough",
+        "hurt",
+        "spend",
+        "sneeze"
+      ],
+      "t": 2,
+      "izoh": "Sarflamoq — spend.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#d17b9528"
+    },
+    {
+      "q": "The ___ of this book is 45,000 so'm.",
+      "v": [
+        "fever",
+        "price",
+        "pain",
+        "cough"
+      ],
+      "t": 1,
+      "izoh": "Narx — price.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#078fed48"
+    },
+    {
+      "q": "At the ___, prices are lower than usual for a few days.",
+      "v": [
+        "fever",
+        "clinic",
+        "hospital",
+        "sale"
+      ],
+      "t": 3,
+      "izoh": "Aksiya — sale.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#02d3726e"
+    },
+    {
+      "q": "You can ___ with a credit ___ if you have no cash.",
+      "v": [
+        "nurse",
+        "pill",
+        "card",
+        "cough"
+      ],
+      "t": 2,
+      "izoh": "Kredit karta bilan to'lash.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#80e1ebb8"
+    },
+    {
+      "q": "I will ___ for the food at the counter now.",
+      "v": [
+        "cough",
+        "pay",
+        "sneeze",
+        "hurt"
+      ],
+      "t": 1,
+      "izoh": "To'lamoq — pay.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#a133c20e"
+    },
+    {
+      "q": "A shirt is 100,000 but today it is 60,000. This is a...",
+      "v": [
+        "receipt size",
+        "cough",
+        "fever",
+        "discount"
+      ],
+      "t": 3,
+      "izoh": "Narx tushdi — discount.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#1c8a9d7d"
+    },
+    {
+      "q": "You give the cashier 50,000 for a 42,000 item. She gives you back 8,000. This is your...",
+      "v": [
+        "size",
+        "receipt",
+        "refund",
+        "change"
+      ],
+      "t": 3,
+      "izoh": "Qaytim — change.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#fef20a59"
+    },
+    {
+      "q": "You bought shoes but they don't fit. You return them and get your money back. This is a...",
+      "v": [
+        "refund",
+        "receipt",
+        "sale",
+        "discount"
+      ],
+      "t": 0,
+      "izoh": "Pul qaytdi — refund.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#9ef055b7"
+    },
+    {
+      "q": "You are not sure the jacket fits. What should you do first?",
+      "v": [
+        "try it on",
+        "spend more",
+        "pay for it",
+        "get a refund"
+      ],
+      "t": 0,
+      "izoh": "Avval kiyib ko'rish — try on.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#dfa0f007"
+    },
+    {
+      "q": "A big shop sign says '50% OFF EVERYTHING'. There is a...",
+      "v": [
+        "fever",
+        "sale",
+        "cough",
+        "refund"
+      ],
+      "t": 1,
+      "izoh": "Aksiya — sale.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#c0069da4"
+    },
+    {
+      "q": "You have no card, only coins and notes. You pay in...",
+      "v": [
+        "refund",
+        "credit card",
+        "cash",
+        "discount"
+      ],
+      "t": 2,
+      "izoh": "Naqd — cash.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#a0b70f87"
+    },
+    {
+      "q": "You want proof of what you paid. Ask for a...",
+      "v": [
+        "size",
+        "fever",
+        "cough",
+        "receipt"
+      ],
+      "t": 3,
+      "izoh": "Chek so'rang — receipt.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#cb6612e2"
+    },
+    {
+      "q": "The person who works behind the counter and helps you is the...",
+      "v": [
+        "shop assistant",
+        "patient",
+        "nurse",
+        "doctor"
+      ],
+      "t": 0,
+      "izoh": "Sotuvchi — shop assistant.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#a102c17f"
+    },
+    {
+      "q": "A watch costs 5 million so'm and you only have 1 million. You cannot ___ it.",
+      "v": [
+        "afford",
+        "hurt",
+        "cough",
+        "sneeze"
+      ],
+      "t": 0,
+      "izoh": "Puli yetmaydi — afford.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#ddef0fae"
+    },
+    {
+      "q": "You put 100,000 in the bank every month instead of buying sweets. You...",
+      "v": [
+        "get sick",
+        "spend money",
+        "save money",
+        "waste time"
+      ],
+      "t": 2,
+      "izoh": "Tejamoq — save.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#028541c3"
+    },
+    {
+      "q": "You buy a phone, a bag and shoes in one day. You...",
+      "v": [
+        "feel sick",
+        "get a fever",
+        "save a lot",
+        "spend a lot"
+      ],
+      "t": 3,
+      "izoh": "Ko'p sarflash — spend.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#8c717a14"
+    },
+    {
+      "q": "You finished shopping and go to a counter to pay. This place is the...",
+      "v": [
+        "hospital",
+        "checkout",
+        "clinic",
+        "pharmacy"
+      ],
+      "t": 1,
+      "izoh": "To'lov joyi — checkout.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#855c9cc3"
+    },
+    {
+      "q": "A jacket that costs only 30,000 so'm can be called...",
+      "v": [
+        "healthy",
+        "sick",
+        "expensive",
+        "cheap"
+      ],
+      "t": 3,
+      "izoh": "Arzon — cheap.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#1a49331c"
+    },
+    {
+      "q": "A diamond ring that costs 100 million so'm is very...",
+      "v": [
+        "sick",
+        "free",
+        "expensive",
+        "cheap"
+      ],
+      "t": 2,
+      "izoh": "Qimmat — expensive.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#bb7690c3"
+    },
+    {
+      "q": "You ask the assistant: 'How much does this ___?' You want the price.",
+      "v": [
+        "cost",
+        "cough",
+        "sneeze",
+        "hurt"
+      ],
+      "t": 0,
+      "izoh": "Narxi qancha — cost.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#dfb70a29"
+    },
+    {
+      "q": "Shoes come in numbers like 38, 40, 42. These numbers show the...",
+      "v": [
+        "size",
+        "refund",
+        "change",
+        "price"
+      ],
+      "t": 0,
+      "izoh": "O'lcham — size.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#c076a937"
+    },
+    {
+      "q": "A woman buying bread in the shop is a...",
+      "v": [
+        "cashier",
+        "doctor",
+        "nurse",
+        "customer"
+      ],
+      "t": 3,
+      "izoh": "Xaridor — customer.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#edeea85f"
+    },
+    {
+      "q": "You hand your bank card to the machine to pay. You use a...",
+      "v": [
+        "cash",
+        "refund",
+        "credit card",
+        "receipt"
+      ],
+      "t": 2,
+      "izoh": "Karta bilan — credit card.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#08419448"
+    },
+    {
+      "q": "At the counter you give money for your food. You...",
+      "v": [
+        "hurt",
+        "pay",
+        "cough",
+        "sneeze"
+      ],
+      "t": 1,
+      "izoh": "To'lamoq — pay.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#45c8f7f3"
+    },
+    {
+      "q": "The number on the tag that tells you how much money to give is the...",
+      "v": [
+        "price",
+        "change",
+        "size",
+        "refund"
+      ],
+      "t": 0,
+      "izoh": "Narx yorlig'i — price.",
+      "qiy": "orta",
+      "id": "ing_a2_m20#7973f5f2"
+    }
+  ]
+}

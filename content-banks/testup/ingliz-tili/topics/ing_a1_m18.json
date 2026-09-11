@@ -1,0 +1,1280 @@
+{
+  "nom": "some / any (intro)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "I have ___ water.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "many"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#f46fafb2"
+    },
+    {
+      "q": "I don't have ___ money.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "the"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#1cc9dbe4"
+    },
+    {
+      "q": "Do you have ___ questions?",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "the"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#db9d8ee9"
+    },
+    {
+      "q": "There are ___ apples on the table.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#5b4a12de"
+    },
+    {
+      "q": "She doesn't want ___ tea.",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "Inkor gapda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#6896823a"
+    },
+    {
+      "q": "We have ___ bread at home.",
+      "v": [
+        "some",
+        "any",
+        "an",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#44e2f3c6"
+    },
+    {
+      "q": "Are there ___ eggs in the fridge?",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#87f68789"
+    },
+    {
+      "q": "I need ___ help.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#c7494f2a"
+    },
+    {
+      "q": "He hasn't got ___ friends here.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "the"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#02d21646"
+    },
+    {
+      "q": "There isn't ___ milk.",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "Inkor gapda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#93f12da0"
+    },
+    {
+      "q": "I can see ___ birds in the sky.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#99c93760"
+    },
+    {
+      "q": "Do we have ___ homework today?",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "the"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#d8c9d836"
+    },
+    {
+      "q": "They have ___ nice photos.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#254ccb50"
+    },
+    {
+      "q": "I don't need ___ new shoes.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "the"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#4bd030c9"
+    },
+    {
+      "q": "Is there ___ juice in the bottle?",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#cf8054a4"
+    },
+    {
+      "q": "I have ___ apples in my bag.",
+      "v": [
+        "some",
+        "any",
+        "no some",
+        "a any"
+      ],
+      "t": 0,
+      "izoh": "Ijobiy gapda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#0a6d7079"
+    },
+    {
+      "q": "There isn't ___ milk in the fridge.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Inkorda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#11737b52"
+    },
+    {
+      "q": "Have you got ___ money?",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "Savolda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#6021d65c"
+    },
+    {
+      "q": "We need ___ bread for breakfast.",
+      "v": [
+        "some",
+        "any",
+        "an",
+        "no any"
+      ],
+      "t": 0,
+      "izoh": "Ijobiy gapda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#9f49b20d"
+    },
+    {
+      "q": "She doesn't have ___ friends here.",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Inkorda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#a5eeec09"
+    },
+    {
+      "q": "Are there ___ eggs in the box?",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Savolda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#29f0040f"
+    },
+    {
+      "q": "I would like ___ water, please.",
+      "v": [
+        "some",
+        "any",
+        "an",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Iltimosda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#afca2296"
+    },
+    {
+      "q": "There are ___ books on the table.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "much"
+      ],
+      "t": 0,
+      "izoh": "Ijobiy gapda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#80442c9f"
+    },
+    {
+      "q": "He hasn't got ___ brothers.",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "no"
+      ],
+      "t": 0,
+      "izoh": "Inkorda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#4fe5188c"
+    },
+    {
+      "q": "Do you want ___ tea?",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "Taklifda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#3e15845c"
+    },
+    {
+      "q": "We don't need ___ help.",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Inkorda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#99b19543"
+    },
+    {
+      "q": "Is there ___ sugar in my coffee?",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "many"
+      ],
+      "t": 0,
+      "izoh": "Savolda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#9f60158b"
+    },
+    {
+      "q": "I can't see ___ people in the park.",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "much"
+      ],
+      "t": 0,
+      "izoh": "Inkorda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#9df2b369"
+    },
+    {
+      "q": "Have we got ___ juice at home?",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Savolda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#b3ae912a"
+    },
+    {
+      "q": "My mother bought ___ oranges today.",
+      "v": [
+        "some",
+        "any",
+        "an",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Ijobiy gapda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#71894dc5"
+    },
+    {
+      "q": "Would you like ___ biscuits?",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Taklifda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#22126968"
+    },
+    {
+      "q": "I put ___ salt on my food.",
+      "v": [
+        "some",
+        "any",
+        "an",
+        "many"
+      ],
+      "t": 0,
+      "izoh": "Ijobiy gapda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#2611186b"
+    },
+    {
+      "q": "She doesn't drink ___ coffee.",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Inkorda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#4b3bc3d1"
+    },
+    {
+      "q": "Are there ___ students in the class?",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "much"
+      ],
+      "t": 0,
+      "izoh": "Savolda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#f38108d1"
+    },
+    {
+      "q": "We have ___ homework tonight.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Ijobiy gapda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#b3d39210"
+    },
+    {
+      "q": "There isn't ___ butter left.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Inkorda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#f9f9c27d"
+    },
+    {
+      "q": "Can I have ___ bananas?",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Iltimosda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#37bf7fd7"
+    },
+    {
+      "q": "He didn't buy ___ toys for the kids.",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Inkorda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#f34b4eb9"
+    },
+    {
+      "q": "Do we have ___ paper in the printer?",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "many"
+      ],
+      "t": 0,
+      "izoh": "Savolda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#88d46967"
+    },
+    {
+      "q": "I saw ___ birds in the sky.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Ijobiy gapda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#9257ee44"
+    },
+    {
+      "q": "There aren't ___ shops near my house.",
+      "v": [
+        "any",
+        "some",
+        "much",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Inkorda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#f3e93364"
+    },
+    {
+      "q": "Would you like ___ soup?",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Taklifda 'some'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#a39d63a6"
+    },
+    {
+      "q": "They don't have ___ pets at home.",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Inkorda 'any'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#c357b1e8"
+    },
+    {
+      "q": "There is ___ milk in the glass.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#0ef16a1e"
+    },
+    {
+      "q": "I have ___ bread for breakfast.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "no"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#f0cb4e3b"
+    },
+    {
+      "q": "She wants ___ water, please.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#3875db70"
+    },
+    {
+      "q": "We need ___ sugar for the tea.",
+      "v": [
+        "some",
+        "any",
+        "a lot",
+        "no"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#017f029b"
+    },
+    {
+      "q": "He is drinking ___ coffee now.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#bd534536"
+    },
+    {
+      "q": "I can see ___ apples on the table.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#500b9acd"
+    },
+    {
+      "q": "They have ___ books in the bag.",
+      "v": [
+        "some",
+        "any",
+        "a lot",
+        "no"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#89603323"
+    },
+    {
+      "q": "My mother buys ___ oranges every day.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#ba81f698"
+    },
+    {
+      "q": "There are ___ eggs in the box.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "no"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#56bb99a6"
+    },
+    {
+      "q": "We have ___ friends in Tashkent.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#66757b16"
+    },
+    {
+      "q": "I put ___ salt in the soup.",
+      "v": [
+        "some",
+        "any",
+        "a lot",
+        "no"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#0a6d63e6"
+    },
+    {
+      "q": "There is ___ honey in the jar.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#74645534"
+    },
+    {
+      "q": "She has ___ money in her pocket.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "no"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#e4f3a624"
+    },
+    {
+      "q": "There are ___ flowers in the garden.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#ff765a22"
+    },
+    {
+      "q": "I want ___ juice, please.",
+      "v": [
+        "some",
+        "any",
+        "a lot",
+        "no"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#b3e4a1e0"
+    },
+    {
+      "q": "There is ___ rice in the pot.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#f5bf45bc"
+    },
+    {
+      "q": "He has ___ pens on the desk.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "no"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#cfac7df6"
+    },
+    {
+      "q": "I don't have ___ money today.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#dce606ab"
+    },
+    {
+      "q": "She hasn't got ___ milk at home.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "no"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#39bb2e9b"
+    },
+    {
+      "q": "We don't need ___ sugar now.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "the"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#80be78e4"
+    },
+    {
+      "q": "There isn't ___ water in the bottle.",
+      "v": [
+        "some",
+        "any",
+        "a lot",
+        "no"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#ba713d01"
+    },
+    {
+      "q": "There aren't ___ apples in the basket.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#70d45cfc"
+    },
+    {
+      "q": "They don't have ___ books here.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "no"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#ad2be545"
+    },
+    {
+      "q": "He doesn't eat ___ meat.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "the"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#5c266e85"
+    },
+    {
+      "q": "I can't see ___ birds in the sky.",
+      "v": [
+        "some",
+        "any",
+        "a lot",
+        "no"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#5de877c0"
+    },
+    {
+      "q": "We haven't got ___ bread for lunch.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#3ec632f8"
+    },
+    {
+      "q": "There isn't ___ cheese in the fridge.",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "no"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#ef8f52dc"
+    },
+    {
+      "q": "She doesn't want ___ tea now.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "the"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#750c21dc"
+    },
+    {
+      "q": "I don't know ___ people in this city.",
+      "v": [
+        "some",
+        "any",
+        "a lot",
+        "no"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#07f73ae3"
+    },
+    {
+      "q": "There aren't ___ eggs left.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#91939d1c"
+    },
+    {
+      "q": "We don't have ___ time now.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "the"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#32729c95"
+    },
+    {
+      "q": "Is there ___ milk in the fridge?",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#787e3a95"
+    },
+    {
+      "q": "Are there ___ apples on the tree?",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "no"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#032a90c6"
+    },
+    {
+      "q": "Do you have ___ money?",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "the"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#1420c7bf"
+    },
+    {
+      "q": "Have you got ___ brothers?",
+      "v": [
+        "some",
+        "any",
+        "a lot",
+        "no"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#15207515"
+    },
+    {
+      "q": "Is there ___ water in the glass?",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#5a11a46f"
+    },
+    {
+      "q": "Do we need ___ bread?",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "no"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#f7e93614"
+    },
+    {
+      "q": "Does she have ___ questions?",
+      "v": [
+        "some",
+        "any",
+        "a lot",
+        "no"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#246d4662"
+    },
+    {
+      "q": "Is there ___ sugar in my tea?",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#976019f9"
+    },
+    {
+      "q": "Do you want ___ coffee?",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "no"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#0e657508"
+    },
+    {
+      "q": "Are there ___ chairs in the room?",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "the"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#3ae6235a"
+    },
+    {
+      "q": "Have they got ___ pets at home?",
+      "v": [
+        "some",
+        "any",
+        "a lot",
+        "no"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#2335ab64"
+    },
+    {
+      "q": "Do you know ___ good books?",
+      "v": [
+        "some",
+        "any",
+        "much",
+        "no"
+      ],
+      "t": 1,
+      "izoh": "Savolda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#94a9d7e4"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I have some water.",
+        "I have any water.",
+        "I have some waters.",
+        "I have any waters."
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some' + sanoqsiz ot.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#9a16dc9c"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "We don't have any bread.",
+        "We don't have some bread.",
+        "We have any bread.",
+        "We not have any bread."
+      ],
+      "t": 0,
+      "izoh": "Inkor gapda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#9a16dc9c~2"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Is there any milk?",
+        "Is there some milk?",
+        "Are there any milk?",
+        "There is any milk?"
+      ],
+      "t": 0,
+      "izoh": "Savolda 'any' va 'is there' (sanoqsiz).",
+      "qiy": "oson",
+      "id": "ing_a1_m18#9a16dc9c~3"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "There are some apples.",
+        "There are any apples.",
+        "There is some apples.",
+        "There are some apple."
+      ],
+      "t": 0,
+      "izoh": "Ko'plik tasdiqda 'some' + 'are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#9a16dc9c~4"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She doesn't want any tea.",
+        "She doesn't want some tea.",
+        "She don't want any tea.",
+        "She wants any tea."
+      ],
+      "t": 0,
+      "izoh": "Inkorda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#9a16dc9c~5"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Do you have any pens?",
+        "Do you have some pens?",
+        "Do you has any pens?",
+        "Have you any some pens?"
+      ],
+      "t": 0,
+      "izoh": "Savolda 'any' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#9a16dc9c~6"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I need some help.",
+        "I need any help.",
+        "I need some helps.",
+        "I need a help."
+      ],
+      "t": 0,
+      "izoh": "Tasdiqda 'some' + sanoqsiz ot.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#9a16dc9c~7"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "There aren't any cars.",
+        "There aren't some cars.",
+        "There isn't any cars.",
+        "There aren't any car."
+      ],
+      "t": 0,
+      "izoh": "Ko'plik inkorda 'any' + 'aren't'.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#9a16dc9c~8"
+    },
+    {
+      "q": "Find the mistake: I don't have some money.",
+      "v": [
+        "some",
+        "don't",
+        "have",
+        "money"
+      ],
+      "t": 0,
+      "izoh": "Inkorda 'some' emas, 'any' bo'lishi kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#0434c91e"
+    },
+    {
+      "q": "Find the mistake: Is there some sugar?",
+      "v": [
+        "some",
+        "Is",
+        "there",
+        "sugar"
+      ],
+      "t": 0,
+      "izoh": "Savolda 'some' emas, 'any' kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#f4ef6134"
+    },
+    {
+      "q": "Find the mistake: There is any bread on the table.",
+      "v": [
+        "any",
+        "There",
+        "is",
+        "bread"
+      ],
+      "t": 0,
+      "izoh": "Tasdiqda 'any' emas, 'some' kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#a1dc61ad"
+    },
+    {
+      "q": "Find the mistake: We haven't got some eggs.",
+      "v": [
+        "some",
+        "haven't",
+        "got",
+        "We"
+      ],
+      "t": 0,
+      "izoh": "Inkorda 'some' emas, 'any' kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m18#ab280810"
+    }
+  ]
+}

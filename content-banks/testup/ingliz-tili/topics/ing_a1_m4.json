@@ -1,0 +1,1306 @@
+{
+  "nom": "Plurals (regular & irregular)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "One book, two ___.",
+      "v": [
+        "books",
+        "bookes",
+        "bookies",
+        "book"
+      ],
+      "t": 0,
+      "izoh": "Oddiy ko'plik → -s.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#afb532b6"
+    },
+    {
+      "q": "One box, two ___.",
+      "v": [
+        "boxs",
+        "boxes",
+        "boxen",
+        "box"
+      ],
+      "t": 1,
+      "izoh": "-x, -s, -sh, -ch dan keyin → -es.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#d750ac59"
+    },
+    {
+      "q": "One child, two ___.",
+      "v": [
+        "childs",
+        "childrens",
+        "children",
+        "childes"
+      ],
+      "t": 2,
+      "izoh": "child → children (tartibsiz).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#a158cf85"
+    },
+    {
+      "q": "One man, two ___.",
+      "v": [
+        "mans",
+        "men",
+        "mens",
+        "man"
+      ],
+      "t": 1,
+      "izoh": "man → men (tartibsiz).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#e6a5d303"
+    },
+    {
+      "q": "One woman, two ___.",
+      "v": [
+        "womans",
+        "women",
+        "womens",
+        "woman"
+      ],
+      "t": 1,
+      "izoh": "woman → women (tartibsiz).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#a80d1aed"
+    },
+    {
+      "q": "One foot, two ___.",
+      "v": [
+        "foots",
+        "feets",
+        "feet",
+        "foot"
+      ],
+      "t": 2,
+      "izoh": "foot → feet (tartibsiz).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#e125b9ec"
+    },
+    {
+      "q": "One tooth, two ___.",
+      "v": [
+        "tooths",
+        "teeths",
+        "teeth",
+        "tooth"
+      ],
+      "t": 2,
+      "izoh": "tooth → teeth (tartibsiz).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#21fdb758"
+    },
+    {
+      "q": "One baby, two ___.",
+      "v": [
+        "babys",
+        "babies",
+        "babyes",
+        "baby"
+      ],
+      "t": 1,
+      "izoh": "undosh + y → -ies.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#83c72ea3"
+    },
+    {
+      "q": "One city, two ___.",
+      "v": [
+        "citys",
+        "cities",
+        "cityes",
+        "city"
+      ],
+      "t": 1,
+      "izoh": "undosh + y → -ies.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#a8bff320"
+    },
+    {
+      "q": "One mouse, two ___.",
+      "v": [
+        "mouses",
+        "mices",
+        "mice",
+        "mouse"
+      ],
+      "t": 2,
+      "izoh": "mouse → mice (tartibsiz).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#4a9de01a"
+    },
+    {
+      "q": "one book, two ___",
+      "v": [
+        "books",
+        "bookes",
+        "bookies",
+        "book"
+      ],
+      "t": 0,
+      "izoh": "Oddiy ko'plik: -s.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#09c9d0a8"
+    },
+    {
+      "q": "one box, three ___",
+      "v": [
+        "boxes",
+        "boxs",
+        "boxies",
+        "box"
+      ],
+      "t": 0,
+      "izoh": "-x -> -es.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#aa77f0af"
+    },
+    {
+      "q": "one baby, two ___",
+      "v": [
+        "babies",
+        "babys",
+        "babyes",
+        "baby"
+      ],
+      "t": 0,
+      "izoh": "undosh+y -> -ies.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#230e5414"
+    },
+    {
+      "q": "one child, many ___",
+      "v": [
+        "children",
+        "childs",
+        "childrens",
+        "childes"
+      ],
+      "t": 0,
+      "izoh": "Istisno: children.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#2d8737ce"
+    },
+    {
+      "q": "one man, two ___",
+      "v": [
+        "men",
+        "mans",
+        "mens",
+        "man"
+      ],
+      "t": 0,
+      "izoh": "Istisno: men.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#d4835c00"
+    },
+    {
+      "q": "one woman, three ___",
+      "v": [
+        "women",
+        "womans",
+        "womens",
+        "womanes"
+      ],
+      "t": 0,
+      "izoh": "Istisno: women.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#5eae86f1"
+    },
+    {
+      "q": "one foot, two ___",
+      "v": [
+        "feet",
+        "foots",
+        "feets",
+        "foot"
+      ],
+      "t": 0,
+      "izoh": "Istisno: feet.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#01f5f61f"
+    },
+    {
+      "q": "one mouse, many ___",
+      "v": [
+        "mice",
+        "mouses",
+        "mices",
+        "mouse"
+      ],
+      "t": 0,
+      "izoh": "Istisno: mice.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#b160038b"
+    },
+    {
+      "q": "one leaf, many ___",
+      "v": [
+        "leaves",
+        "leafs",
+        "leafes",
+        "leave"
+      ],
+      "t": 0,
+      "izoh": "-f -> -ves.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#a09ebfc1"
+    },
+    {
+      "q": "one tooth, two ___",
+      "v": [
+        "teeth",
+        "tooths",
+        "teeths",
+        "tooth"
+      ],
+      "t": 0,
+      "izoh": "Istisno: teeth.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#ed62c442"
+    },
+    {
+      "q": "one person, many ___",
+      "v": [
+        "people",
+        "persones",
+        "peoples",
+        "person"
+      ],
+      "t": 0,
+      "izoh": "Istisno: people.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#97a3f5d4"
+    },
+    {
+      "q": "one city, two ___",
+      "v": [
+        "cities",
+        "citys",
+        "cityes",
+        "citis"
+      ],
+      "t": 0,
+      "izoh": "undosh+y -> -ies.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#741f3e4f"
+    },
+    {
+      "q": "one bus, three ___",
+      "v": [
+        "buses",
+        "buss",
+        "busies",
+        "bus"
+      ],
+      "t": 0,
+      "izoh": "-s -> -es.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#131ffe7e"
+    },
+    {
+      "q": "one dish, two ___",
+      "v": [
+        "dishes",
+        "dishs",
+        "dishies",
+        "dish"
+      ],
+      "t": 0,
+      "izoh": "-sh -> -es.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#a9f7bd48"
+    },
+    {
+      "q": "one knife, two ___",
+      "v": [
+        "knives",
+        "knifes",
+        "knifves",
+        "knife"
+      ],
+      "t": 0,
+      "izoh": "-fe -> -ves.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#7193ae95"
+    },
+    {
+      "q": "one wife, two ___",
+      "v": [
+        "wives",
+        "wifes",
+        "wifves",
+        "wife"
+      ],
+      "t": 0,
+      "izoh": "-fe -> -ves.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#85d18a13"
+    },
+    {
+      "q": "one watch, two ___",
+      "v": [
+        "watches",
+        "watchs",
+        "watchies",
+        "watch"
+      ],
+      "t": 0,
+      "izoh": "-ch -> -es.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#e11724a4"
+    },
+    {
+      "q": "one potato, many ___",
+      "v": [
+        "potatoes",
+        "potatos",
+        "potatoies",
+        "potato"
+      ],
+      "t": 0,
+      "izoh": "-o -> -es.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#0cf641c3"
+    },
+    {
+      "q": "one tomato, two ___",
+      "v": [
+        "tomatoes",
+        "tomatos",
+        "tomatoies",
+        "tomato"
+      ],
+      "t": 0,
+      "izoh": "-o -> -es.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#829d355a"
+    },
+    {
+      "q": "one sheep, three ___",
+      "v": [
+        "sheep",
+        "sheeps",
+        "shept",
+        "sheepes"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas: sheep.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#93c96a5f"
+    },
+    {
+      "q": "one fish, many ___",
+      "v": [
+        "fish",
+        "fishs",
+        "fishies",
+        "fishen"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas: fish.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#b79ab70b"
+    },
+    {
+      "q": "one lady, two ___",
+      "v": [
+        "ladies",
+        "ladys",
+        "ladyes",
+        "lady"
+      ],
+      "t": 0,
+      "izoh": "undosh+y -> -ies.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#e4eff0c1"
+    },
+    {
+      "q": "one country, many ___",
+      "v": [
+        "countries",
+        "countrys",
+        "countryes",
+        "countris"
+      ],
+      "t": 0,
+      "izoh": "undosh+y -> -ies.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#a60a110e"
+    },
+    {
+      "q": "one story, two ___",
+      "v": [
+        "stories",
+        "storys",
+        "storyes",
+        "story"
+      ],
+      "t": 0,
+      "izoh": "undosh+y -> -ies.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#8812a201"
+    },
+    {
+      "q": "one glass, two ___",
+      "v": [
+        "glasses",
+        "glass",
+        "glasss",
+        "glassies"
+      ],
+      "t": 0,
+      "izoh": "-ss -> -es.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#10398941"
+    },
+    {
+      "q": "one family, two ___",
+      "v": [
+        "families",
+        "familys",
+        "familyes",
+        "family"
+      ],
+      "t": 0,
+      "izoh": "undosh+y -> -ies.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#9f591c76"
+    },
+    {
+      "q": "one photo, many ___",
+      "v": [
+        "photos",
+        "photoes",
+        "photies",
+        "photo"
+      ],
+      "t": 0,
+      "izoh": "'photo' -> -s.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#43ed9e81"
+    },
+    {
+      "q": "one class, two ___",
+      "v": [
+        "classes",
+        "class",
+        "classs",
+        "classies"
+      ],
+      "t": 0,
+      "izoh": "-ss -> -es.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#7435b582"
+    },
+    {
+      "q": "one goose, two ___",
+      "v": [
+        "geese",
+        "gooses",
+        "geeses",
+        "goose"
+      ],
+      "t": 0,
+      "izoh": "Istisno: geese.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#ddd75a57"
+    },
+    {
+      "q": "one key, two ___",
+      "v": [
+        "keys",
+        "kies",
+        "keyes",
+        "key"
+      ],
+      "t": 0,
+      "izoh": "unli+y -> faqat -s.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#6a21e127"
+    },
+    {
+      "q": "One person, two ___.",
+      "v": [
+        "persons",
+        "personnes",
+        "peoples",
+        "people"
+      ],
+      "t": 3,
+      "izoh": "'person' so'zining ko'pligi 'people' (o'zgaruvchan ko'plik).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#bc683ae6"
+    },
+    {
+      "q": "One fish, two ___.",
+      "v": [
+        "fishes",
+        "fishs",
+        "fishies",
+        "fish"
+      ],
+      "t": 3,
+      "izoh": "'fish' ko'plikda ham o'zgarmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#c4f6cb62"
+    },
+    {
+      "q": "One sheep, two ___.",
+      "v": [
+        "sheep",
+        "sheepes",
+        "sheeps",
+        "sheepen"
+      ],
+      "t": 0,
+      "izoh": "'sheep' ko'plikda ham o'zgarmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#0a10e5df"
+    },
+    {
+      "q": "One goose, two ___.",
+      "v": [
+        "geeses",
+        "geese",
+        "goosen",
+        "gooses"
+      ],
+      "t": 1,
+      "izoh": "'goose' so'zining ko'pligi 'geese' (o'zgaruvchan ko'plik).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#5aac2239"
+    },
+    {
+      "q": "One knife, two ___.",
+      "v": [
+        "knifs",
+        "knives",
+        "knive",
+        "knifes"
+      ],
+      "t": 1,
+      "izoh": "'-f/-fe' -> '-ves': knife -> knives.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#55ac9c13"
+    },
+    {
+      "q": "One leaf, two ___.",
+      "v": [
+        "leaves",
+        "leafes",
+        "leafs",
+        "leave"
+      ],
+      "t": 0,
+      "izoh": "'-f/-fe' -> '-ves': leaf -> leaves.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#db4d2650"
+    },
+    {
+      "q": "One bus, two ___.",
+      "v": [
+        "bus's",
+        "bus",
+        "buses",
+        "buss"
+      ],
+      "t": 2,
+      "izoh": "'-s,-x,-ch,-sh,-o' dan keyin '-es' qo'shiladi: bus -> buses.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#88ddbe85"
+    },
+    {
+      "q": "One watch, two ___.",
+      "v": [
+        "watch's",
+        "watchies",
+        "watches",
+        "watchs"
+      ],
+      "t": 2,
+      "izoh": "'-s,-x,-ch,-sh,-o' dan keyin '-es' qo'shiladi: watch -> watches.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#f824c7ba"
+    },
+    {
+      "q": "One dish, two ___.",
+      "v": [
+        "dishs",
+        "dish's",
+        "dishes",
+        "dishies"
+      ],
+      "t": 2,
+      "izoh": "'-s,-x,-ch,-sh,-o' dan keyin '-es' qo'shiladi: dish -> dishes.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#69a3483e"
+    },
+    {
+      "q": "One tomato, two ___.",
+      "v": [
+        "tomato's",
+        "tomatoss",
+        "tomatoes",
+        "tomatos"
+      ],
+      "t": 2,
+      "izoh": "'-s,-x,-ch,-sh,-o' dan keyin '-es' qo'shiladi: tomato -> tomatoes.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#4448422c"
+    },
+    {
+      "q": "One potato, two ___.",
+      "v": [
+        "potatoss",
+        "potatoes",
+        "potato's",
+        "potatos"
+      ],
+      "t": 1,
+      "izoh": "'-s,-x,-ch,-sh,-o' dan keyin '-es' qo'shiladi: potato -> potatoes.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#7dc262fc"
+    },
+    {
+      "q": "One cat, two ___.",
+      "v": [
+        "cate",
+        "cat's",
+        "cates",
+        "cats"
+      ],
+      "t": 3,
+      "izoh": "Ko'plikda oxiriga '-s' qo'shiladi: cat -> cats.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#89610bce"
+    },
+    {
+      "q": "One dog, two ___.",
+      "v": [
+        "doge",
+        "doges",
+        "dogs",
+        "dog's"
+      ],
+      "t": 2,
+      "izoh": "Ko'plikda oxiriga '-s' qo'shiladi: dog -> dogs.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#b544d0d9"
+    },
+    {
+      "q": "One pen, two ___.",
+      "v": [
+        "pens",
+        "pen's",
+        "pene",
+        "penes"
+      ],
+      "t": 0,
+      "izoh": "Ko'plikda oxiriga '-s' qo'shiladi: pen -> pens.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#63eee038"
+    },
+    {
+      "q": "One car, two ___.",
+      "v": [
+        "cars",
+        "carre",
+        "car's",
+        "cares"
+      ],
+      "t": 0,
+      "izoh": "Ko'plikda oxiriga '-s' qo'shiladi: car -> cars.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#24358858"
+    },
+    {
+      "q": "One table, two ___.",
+      "v": [
+        "table's",
+        "tables",
+        "tabels",
+        "tabl"
+      ],
+      "t": 1,
+      "izoh": "'-s,-x,-ch,-sh,-o' dan keyin '-es' qo'shiladi: table -> tables.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#317e08ae"
+    },
+    {
+      "q": "One apple, two ___.",
+      "v": [
+        "apple's",
+        "aple",
+        "applees",
+        "apples"
+      ],
+      "t": 3,
+      "izoh": "'-s,-x,-ch,-sh,-o' dan keyin '-es' qo'shiladi: apple -> apples.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#494db9f0"
+    },
+    {
+      "q": "One house, two ___.",
+      "v": [
+        "housees",
+        "hous",
+        "house's",
+        "houses"
+      ],
+      "t": 3,
+      "izoh": "'-s,-x,-ch,-sh,-o' dan keyin '-es' qo'shiladi: house -> houses.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#0036383a"
+    },
+    {
+      "q": "One tree, two ___.",
+      "v": [
+        "tre",
+        "treees",
+        "trees",
+        "tree's"
+      ],
+      "t": 2,
+      "izoh": "'-s,-x,-ch,-sh,-o' dan keyin '-es' qo'shiladi: tree -> trees.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#1b023048"
+    },
+    {
+      "q": "One cup, two ___.",
+      "v": [
+        "cup's",
+        "cupes",
+        "cupp",
+        "cups"
+      ],
+      "t": 3,
+      "izoh": "Ko'plikda oxiriga '-s' qo'shiladi: cup -> cups.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#87ce8df9"
+    },
+    {
+      "q": "I have two ___ (child).",
+      "v": [
+        "child",
+        "childs",
+        "children",
+        "childrens"
+      ],
+      "t": 2,
+      "izoh": "'child' so'zining ko'pligi 'children' (o'zgaruvchan ko'plik).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#a5986b5c"
+    },
+    {
+      "q": "My ___ (foot) are cold.",
+      "v": [
+        "foots",
+        "feet",
+        "foot",
+        "feets"
+      ],
+      "t": 1,
+      "izoh": "'foot' so'zining ko'pligi 'feet' (o'zgaruvchan ko'plik).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#fc133671"
+    },
+    {
+      "q": "The baby has two ___ (tooth).",
+      "v": [
+        "tooths",
+        "teeth",
+        "tooth",
+        "teeths"
+      ],
+      "t": 1,
+      "izoh": "'tooth' so'zining ko'pligi 'teeth' (o'zgaruvchan ko'plik).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#05174473"
+    },
+    {
+      "q": "Three ___ (man) are working.",
+      "v": [
+        "mens",
+        "men",
+        "man",
+        "mans"
+      ],
+      "t": 1,
+      "izoh": "'man' so'zining ko'pligi 'men' (o'zgaruvchan ko'plik).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#0f9a5d7b"
+    },
+    {
+      "q": "Two ___ (woman) are talking.",
+      "v": [
+        "womans",
+        "woman",
+        "womens",
+        "women"
+      ],
+      "t": 3,
+      "izoh": "'woman' so'zining ko'pligi 'women' (o'zgaruvchan ko'plik).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#57e6c990"
+    },
+    {
+      "q": "I see three ___ (mouse).",
+      "v": [
+        "mouse",
+        "mice",
+        "mouses",
+        "mices"
+      ],
+      "t": 1,
+      "izoh": "'mouse' so'zining ko'pligi 'mice' (o'zgaruvchan ko'plik).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#308e64d8"
+    },
+    {
+      "q": "Many ___ (person) are waiting.",
+      "v": [
+        "person",
+        "persons",
+        "people",
+        "peoples"
+      ],
+      "t": 2,
+      "izoh": "'person' so'zining ko'pligi 'people' (o'zgaruvchan ko'plik).",
+      "qiy": "oson",
+      "id": "ing_a1_m4#1f240886"
+    },
+    {
+      "q": "We caught five ___ (fish).",
+      "v": [
+        "fishs",
+        "fish",
+        "fishes",
+        "fishies"
+      ],
+      "t": 1,
+      "izoh": "'fish' ko'plikda ham o'zgarmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#3955e9a5"
+    },
+    {
+      "q": "The farmer has ten ___ (sheep).",
+      "v": [
+        "sheepen",
+        "sheeps",
+        "sheepes",
+        "sheep"
+      ],
+      "t": 3,
+      "izoh": "'sheep' ko'plikda ham o'zgarmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#b9266859"
+    },
+    {
+      "q": "I need two ___ (knife).",
+      "v": [
+        "knifes",
+        "knife",
+        "knives",
+        "knifs"
+      ],
+      "t": 2,
+      "izoh": "'-f/-fe' -> '-ves': knife -> knives.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#b725491b"
+    },
+    {
+      "q": "The ___ (leaf) are falling.",
+      "v": [
+        "leaf",
+        "leafs",
+        "leaves",
+        "leafes"
+      ],
+      "t": 2,
+      "izoh": "'-f/-fe' -> '-ves': leaf -> leaves.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#1e1d1a1e"
+    },
+    {
+      "q": "She buys three ___ (tomato).",
+      "v": [
+        "tomatoes",
+        "tomato",
+        "tomatoss",
+        "tomatos"
+      ],
+      "t": 0,
+      "izoh": "'-s,-x,-ch,-sh,-o' dan keyin '-es' qo'shiladi: tomato -> tomatoes.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#50626227"
+    },
+    {
+      "q": "Two ___ (baby) are sleeping.",
+      "v": [
+        "babys",
+        "babies",
+        "babyes",
+        "baby"
+      ],
+      "t": 1,
+      "izoh": "Undoshdan keyingi '-y' -> '-ies': baby -> babies.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#8be5e001"
+    },
+    {
+      "q": "I visited many ___ (city).",
+      "v": [
+        "citys",
+        "cityes",
+        "city",
+        "cities"
+      ],
+      "t": 3,
+      "izoh": "Undoshdan keyingi '-y' -> '-ies': city -> cities.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#67a94b57"
+    },
+    {
+      "q": "There are four ___ (box).",
+      "v": [
+        "boxies",
+        "box",
+        "boxs",
+        "boxes"
+      ],
+      "t": 3,
+      "izoh": "'-s,-x,-ch,-sh,-o' dan keyin '-es' qo'shiladi: box -> boxes.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#79853acc"
+    },
+    {
+      "q": "The shop sells nice ___ (watch).",
+      "v": [
+        "watchs",
+        "watchies",
+        "watches",
+        "watch"
+      ],
+      "t": 2,
+      "izoh": "'-s,-x,-ch,-sh,-o' dan keyin '-es' qo'shiladi: watch -> watches.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#bf1d1bf2"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "There are five child.",
+        "There are five children.",
+        "There are five childs.",
+        "There are five childrens."
+      ],
+      "t": 1,
+      "izoh": "'child' -> 'children'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#9a16dc9c"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I have two foots.",
+        "I have two foot.",
+        "I have two feet.",
+        "I have two feets."
+      ],
+      "t": 2,
+      "izoh": "'foot' -> 'feet'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#9a16dc9c~2"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "He has three tooth.",
+        "He has three teeths.",
+        "He has three tooths.",
+        "He has three teeth."
+      ],
+      "t": 3,
+      "izoh": "'tooth' -> 'teeth'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#9a16dc9c~3"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "We saw many sheepen.",
+        "We saw many sheepes.",
+        "We saw many sheep.",
+        "We saw many sheeps."
+      ],
+      "t": 2,
+      "izoh": "'sheep' ko'plikda o'zgarmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#9a16dc9c~4"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The mens are working.",
+        "The men are working.",
+        "The man are working.",
+        "The mans are working."
+      ],
+      "t": 1,
+      "izoh": "'man' -> 'men'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#9a16dc9c~5"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Two women are singing.",
+        "Two woman are singing.",
+        "Two womens are singing.",
+        "Two womans are singing."
+      ],
+      "t": 0,
+      "izoh": "'woman' -> 'women'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#9a16dc9c~6"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "There are mouses in the house.",
+        "There are mice in the house.",
+        "There are mices in the house.",
+        "There are mouse in the house."
+      ],
+      "t": 1,
+      "izoh": "'mouse' -> 'mice'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#9a16dc9c~7"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I bought three knifes.",
+        "I bought three knife.",
+        "I bought three knives.",
+        "I bought three knifs."
+      ],
+      "t": 2,
+      "izoh": "'knife' -> 'knives'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#9a16dc9c~8"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The leafes are green.",
+        "The leafs are green.",
+        "The leaves are green.",
+        "The leaf are green."
+      ],
+      "t": 2,
+      "izoh": "'leaf' -> 'leaves'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#9a16dc9c~9"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She cut two tomatoess.",
+        "She cut two tomato.",
+        "She cut two tomatoes.",
+        "She cut two tomatos."
+      ],
+      "t": 2,
+      "izoh": "'tomato' -> 'tomatoes'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#9a16dc9c~10"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Many persones came.",
+        "Many people came.",
+        "Many peoples came.",
+        "Many person came."
+      ],
+      "t": 1,
+      "izoh": "'person' -> 'people'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#9a16dc9c~11"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "There are two busses.",
+        "There are two bus.",
+        "There are two buses.",
+        "There are two buss."
+      ],
+      "t": 2,
+      "izoh": "'bus' -> 'buses'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#9a16dc9c~12"
+    },
+    {
+      "q": "Which one is INCORRECT?",
+      "v": [
+        "four childs",
+        "three dogs",
+        "two cats",
+        "five books"
+      ],
+      "t": 0,
+      "izoh": "To'g'risi 'children'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#09985b42"
+    },
+    {
+      "q": "Which one is INCORRECT?",
+      "v": [
+        "five girls",
+        "four boys",
+        "two men",
+        "three womans"
+      ],
+      "t": 3,
+      "izoh": "To'g'risi 'women'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#09985b42~2"
+    },
+    {
+      "q": "Which one is INCORRECT?",
+      "v": [
+        "four foots",
+        "two feet",
+        "three arms",
+        "five legs"
+      ],
+      "t": 0,
+      "izoh": "To'g'risi 'feet'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#09985b42~3"
+    },
+    {
+      "q": "Which one is INCORRECT?",
+      "v": [
+        "three eyes",
+        "two teeth",
+        "five ears",
+        "four tooths"
+      ],
+      "t": 3,
+      "izoh": "To'g'risi 'teeth'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#09985b42~4"
+    },
+    {
+      "q": "Which one is INCORRECT?",
+      "v": [
+        "four mouses",
+        "five rats",
+        "three cats",
+        "two mice"
+      ],
+      "t": 0,
+      "izoh": "To'g'risi 'mice'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#09985b42~5"
+    },
+    {
+      "q": "Which one is INCORRECT?",
+      "v": [
+        "three birds",
+        "two fish",
+        "five frogs",
+        "four fishs"
+      ],
+      "t": 3,
+      "izoh": "'fish' o'zgarmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#09985b42~6"
+    },
+    {
+      "q": "Which one is INCORRECT?",
+      "v": [
+        "four sheeps",
+        "two sheep",
+        "five goats",
+        "three cows"
+      ],
+      "t": 0,
+      "izoh": "'sheep' o'zgarmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#09985b42~7"
+    },
+    {
+      "q": "Which one is INCORRECT?",
+      "v": [
+        "two knives",
+        "four knifes",
+        "three forks",
+        "five spoons"
+      ],
+      "t": 1,
+      "izoh": "To'g'risi 'knives'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#09985b42~8"
+    },
+    {
+      "q": "Which one is INCORRECT?",
+      "v": [
+        "two boxes",
+        "four boxs",
+        "three bags",
+        "five cups"
+      ],
+      "t": 1,
+      "izoh": "To'g'risi 'boxes'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#09985b42~9"
+    },
+    {
+      "q": "Which one is INCORRECT?",
+      "v": [
+        "five boys",
+        "two babies",
+        "four babys",
+        "three girls"
+      ],
+      "t": 2,
+      "izoh": "To'g'risi 'babies'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#09985b42~10"
+    },
+    {
+      "q": "Which one is INCORRECT?",
+      "v": [
+        "two cities",
+        "five villages",
+        "three towns",
+        "four citys"
+      ],
+      "t": 3,
+      "izoh": "To'g'risi 'cities'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#09985b42~11"
+    },
+    {
+      "q": "Which one is INCORRECT?",
+      "v": [
+        "five phones",
+        "four watchs",
+        "two watches",
+        "three clocks"
+      ],
+      "t": 1,
+      "izoh": "To'g'risi 'watches'.",
+      "qiy": "oson",
+      "id": "ing_a1_m4#09985b42~12"
+    }
+  ]
+}

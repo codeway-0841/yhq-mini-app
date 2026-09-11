@@ -1,0 +1,576 @@
+{
+  "nom": "36-mavzu. Foton Impulsi Yoruglik Bosimi Fotoeffekt Texnikada",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Fotonning impulsi qanday formula bilan ifodalanadi?",
+      "v": [
+        "p = hν/c",
+        "p = hν·c",
+        "p = h·c/ν",
+        "p = mc²"
+      ],
+      "t": 0,
+      "izoh": "Foton doimiy harakatda bo'lgani uchun p = mc impulsga ega, bundan p = hν/c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#8e4da2e8"
+    },
+    {
+      "q": "Fotonning impulsini to'lqin uzunligi orqali qanday ifodalash mumkin?",
+      "v": [
+        "p = h/λ",
+        "p = h·λ",
+        "p = λ/h",
+        "p = h·λ/c"
+      ],
+      "t": 0,
+      "izoh": "λ = c/ν ni hisobga olsak, p = hν/c = h/λ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#a5b1d31b"
+    },
+    {
+      "q": "Foton energiyasini to'lqin uzunligi orqali ifodalang.",
+      "v": [
+        "E = hc/λ",
+        "E = hλ/c",
+        "E = h/λ",
+        "E = λc/h"
+      ],
+      "t": 0,
+      "izoh": "E = hν = hc/λ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#8a721ec7"
+    },
+    {
+      "q": "Fotonning to'lqin uzunligi 2 marta qisqarsa, uning impulsi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "p = h/λ bo'lgani uchun λ 2 marta qisqarganda impuls 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#acd1d7de"
+    },
+    {
+      "q": "Birinchi fotonning energiyasi ikkinchisinikidan 2 marta katta bo'lsa, impulslari qanday farq qiladi?",
+      "v": [
+        "Birinchi fotonning impulsi 2 marta katta",
+        "Teng",
+        "4 marta katta",
+        "2 marta kichik"
+      ],
+      "t": 0,
+      "izoh": "p = E/c bo'lgani uchun energiya 2 marta katta bo'lsa, impuls ham 2 marta katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#4ee800f9"
+    },
+    {
+      "q": "Yorug'lik bosimi qanday vujudga keladi?",
+      "v": [
+        "Fotonlar oqimi yuzaga impuls berishi natijasida",
+        "Yorug'likning qizishi natijasida",
+        "Molekulalar urilishi natijasida",
+        "Gravitatsiya ta'sirida"
+      ],
+      "t": 0,
+      "izoh": "Jism yuzasiga tushayotgan fotonlar oqimi yuzaga impuls beradi va yorug'lik bosimini vujudga keltiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#eb0a1226"
+    },
+    {
+      "q": "Maksvell hisoblariga ko'ra, Yerga tushayotgan Quyosh nuri 1 m² absolut qora yuzaga qanday bosim kuchi ko'rsatadi?",
+      "v": [
+        "0,48 μN",
+        "4,8 N",
+        "0,48 N",
+        "48 μN"
+      ],
+      "t": 0,
+      "izoh": "Maksvell hisoblariga ko'ra bu kuch 0,48 μN bo'lib, uni ochiq Yer sharoitida qayd qilish juda qiyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#60254276"
+    },
+    {
+      "q": "Yorug'lik bosimini ilk bor tajribada o'lchagan olim kim?",
+      "v": [
+        "P. N. Lebedev (1900-yil)",
+        "A. Eynshteyn",
+        "R. Milliken",
+        "V. Gerlax"
+      ],
+      "t": 0,
+      "izoh": "Ilk bor yorug'lik bosimini 1900-yilda rus olimi P. N. Lebedev tajribada o'lchadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#11455c09"
+    },
+    {
+      "q": "Lebedevning yorug'lik bosimini o'lchash qurilmasida qanotchalar qanday bo'lgan?",
+      "v": [
+        "Biri yaltiroq, ikkinchisi qoraytirilgan",
+        "Ikkalasi ham yaltiroq",
+        "Ikkalasi ham qoraytirilgan",
+        "Biri shaffof, ikkinchisi metall"
+      ],
+      "t": 0,
+      "izoh": "Yupqa yengil qanotchalarning biri yaltiroq (yorug'likni qaytaradi), ikkinchisi qoraytirilgan (yutadi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#afca1f0d"
+    },
+    {
+      "q": "Lebedev tajribasida sistema qayerga joylashtirilgan edi?",
+      "v": [
+        "Havosi so'rib olingan idish ichiga",
+        "Suv bilan to'ldirilgan idishga",
+        "Ochiq havoga",
+        "Magnit maydonga"
+      ],
+      "t": 0,
+      "izoh": "Sistema havosi so'rib olingan idish ichiga joylashtirilib, juda sezgir buralma tarozi tashkil qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#a4e0b1e0"
+    },
+    {
+      "q": "Lebedev o'lchagan yorug'lik bosimi nazariy qiymatdan qancha farq qilgan?",
+      "v": [
+        "20 % xatolik bilan mos keldi",
+        "2 % farq qildi",
+        "50 % farq qildi",
+        "Aniq teng bo'ldi"
+      ],
+      "t": 0,
+      "izoh": "Lebedev natijalari nazariy hisoblangan bosimga 20 % xatolik bilan mos keldi; keyinchalik Gerlax (1923) 2 % gacha aniqlikka erishdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#45df42a0"
+    },
+    {
+      "q": "Ideal yaltiroq yuzaga urilganda foton impulsining o'zgarishi qancha?",
+      "v": [
+        "Δ(mc) = 2mc",
+        "Δ(mc) = mc",
+        "Δ(mc) = 0",
+        "Δ(mc) = mc/2"
+      ],
+      "t": 0,
+      "izoh": "Yaltiroq yuzada foton qaytadi, shuning uchun impuls o'zgarishi 2mc ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#bfb99b8a"
+    },
+    {
+      "q": "Absolut qora yuzaga urilganda foton impulsining o'zgarishi qancha?",
+      "v": [
+        "Δ(mc) = mc",
+        "Δ(mc) = 2mc",
+        "Δ(mc) = 0",
+        "Δ(mc) = 3mc"
+      ],
+      "t": 0,
+      "izoh": "Absolut qora yuza fotonni yutadi, impuls o'zgarishi mc ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#a6ea282e"
+    },
+    {
+      "q": "Yorug'likni to'la qaytaruvchi yuzadagi bosim, to'la yutuvchi yuzadagidan necha marta katta?",
+      "v": [
+        "2 marta",
+        "4 marta",
+        "Teng",
+        "1,5 marta"
+      ],
+      "t": 0,
+      "izoh": "Qaytaruvchi yuzada impuls o'zgarishi 2mc, yutuvchida mc bo'lgani uchun bosim 2 marta katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#7d9f390f"
+    },
+    {
+      "q": "Absolut qora yuzaga tushgan yorug'lik bosimi qanday formula bilan ifodalanadi?",
+      "v": [
+        "p = I/c",
+        "p = I·c",
+        "p = I/c²",
+        "p = 2I/c"
+      ],
+      "t": 0,
+      "izoh": "p = I/c, bu yerda I — yorug'lik intensivligi. Bu Maksvellning elektromagnit to'lqinlar bosimi formulasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#d1ff568e"
+    },
+    {
+      "q": "Yorug'lik (to'lqin) intensivligi I nima?",
+      "v": [
+        "Yuza birligiga vaqt birligida tushuvchi yorug'lik energiyasi",
+        "Yuzaga tushgan umumiy energiya",
+        "Vaqt birligidagi fotonlar soni",
+        "Yorug'likning chastotasi"
+      ],
+      "t": 0,
+      "izoh": "I = NE/(S·Δt) — yuza birligiga vaqt birligida tushuvchi yorug'lik energiyasi yorug'lik intensivligi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#38a4c941"
+    },
+    {
+      "q": "Fotoeffektga asoslanib ishlaydigan eng ko'p qo'llaniladigan asbob qaysi?",
+      "v": [
+        "Fotoqarshilik (fotorezistor)",
+        "Transformator",
+        "Kondensator",
+        "Elektromagnit"
+      ],
+      "t": 0,
+      "izoh": "Fotoeffekt hodisasiga asoslanib ishlaydigan asboblardan eng ko'p qo'llaniladigani fotoqarshilikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#cbf64ca7"
+    },
+    {
+      "q": "Fotoqarshilikning asosini nima tashkil qiladi?",
+      "v": [
+        "Yuzasi nisbatan katta, yorug'likka sezgir yarimo'tkazgich",
+        "Metall o'tkazgich",
+        "Elektrolit eritmasi",
+        "Vakuumli trubka"
+      ],
+      "t": 0,
+      "izoh": "Fotoqarshilikning asosini yuzasi nisbatan katta bo'lgan, yorug'likka sezgir yarimo'tkazgich tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#6f64e304"
+    },
+    {
+      "q": "Fotoqarshilikka yorug'lik tushganda uning qarshiligi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik tushishi bilan erkin zaryad tashuvchilar konsentratsiyasi ortadi, qarshilik kamayadi, tok kuchi ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#b6711096"
+    },
+    {
+      "q": "Fotoqarshiliklarning yutuqlariga nimalar kiradi?",
+      "v": [
+        "Yuqori fotosezgirlik, kichik o'lcham, har xil to'lqin uzunlikda ishlash",
+        "Qarshilikning yorug'likka chiziqli bog'liqligi",
+        "Temperaturaga sezgirlik",
+        "Katta inertlik"
+      ],
+      "t": 0,
+      "izoh": "Yutuqlari: yuqori fotosezgirlik, uzoq muddat ishlash, kichik o'lcham, sodda texnologiya, har xil to'lqin uzunlikda ishlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#b75cf362"
+    },
+    {
+      "q": "Fotoqarshiliklarning kamchiliklari qaysilar?",
+      "v": [
+        "Qarshilik o'zgarishi yorug'lik oqimiga chiziqli emas, temperaturaga sezgir, inertligi katta",
+        "Juda qimmat",
+        "Juda katta o'lchamli",
+        "Faqat qizil nurda ishlaydi"
+      ],
+      "t": 0,
+      "izoh": "Kamchiliklari: chiziqli bo'lmagan bog'liqlik, temperaturaga sezgirlik, katta inertlik (katta chastotalarda muammolar).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#387cda4b"
+    },
+    {
+      "q": "Ichki fotoeffektga asoslangan p-n o'tishli fotoelementlar nima uchun qo'llaniladi?",
+      "v": [
+        "Yorug'lik energiyasini elektr energiyasiga aylantirish uchun",
+        "Elektr energiyasini issiqlikka aylantirish uchun",
+        "Tokni kuchaytirish uchun",
+        "Zaryadlarni saqlash uchun"
+      ],
+      "t": 0,
+      "izoh": "p-n o'tishli yarimo'tkazgichli fotoelementlar yorug'lik energiyasini elektr energiyasiga aylantirishda qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#7d687a30"
+    },
+    {
+      "q": "Quyosh batareyalari qaysi materialdan tayyorlanadi?",
+      "v": [
+        "Kremniydan",
+        "Misdan",
+        "Alyuminiydan",
+        "Germaniydan"
+      ],
+      "t": 0,
+      "izoh": "Quyosh energiyasini elektr energiyasiga aylantiruvchi kremniyli fotoelementlar Quyosh batareyalari deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#6052224b"
+    },
+    {
+      "q": "Quyosh batareyasining tuzilishi qanday?",
+      "v": [
+        "n-turdagi kremniy plastinka yuzasi p-tipli yupqa (1-2 μm) qatlam bilan qoplangan",
+        "Faqat p-tipli kremniydan iborat",
+        "Metall plastinkalar orasida dielektrik",
+        "Kvars plastinka"
+      ],
+      "t": 0,
+      "izoh": "Quyosh batareyasining asosini n-turdagi kremniy plastinka tashkil qilib, uning yuzasi p-tipli yupqa qatlam bilan qoplangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#440ed2af"
+    },
+    {
+      "q": "Quyosh batareyasida hosil bo'lgan EYuK o'rtacha qancha bo'ladi?",
+      "v": [
+        "0,5 V gacha",
+        "5 V",
+        "0,05 V",
+        "220 V"
+      ],
+      "t": 0,
+      "izoh": "Hosil bo'lgan EYuK o'rtacha hisobda 0,5 V gacha bo'ladi; 1 sm² yuzali element 25 mA gacha tok beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#dc705500"
+    },
+    {
+      "q": "Kremniyli fotoelementlarning sezgirligi qaysi nurlar uchun maksimal?",
+      "v": [
+        "Yashil nurlar uchun",
+        "Qizil nurlar uchun",
+        "Ultrabinafsha nurlar uchun",
+        "Infraqizil nurlar uchun"
+      ],
+      "t": 0,
+      "izoh": "Kremniyli fotoelementlar sezgirligi yashil nurlar uchun maksimum — Quyosh nurlanishining maksimal qismiga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#936129dc"
+    },
+    {
+      "q": "Kremniyli fotoelementlarning FIKi odatda qancha?",
+      "v": [
+        "11-12 %, yuqori sifatli materiallarda 21-22 %",
+        "1-2 %",
+        "50-60 %",
+        "90-95 %"
+      ],
+      "t": 0,
+      "izoh": "Odatda FIK 11-12 %, yuqori sifatli materiallarda 21-22 % ga boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#9bafda4d"
+    },
+    {
+      "q": "Quyosh batareyalari qayerlarda qo'llaniladi?",
+      "v": [
+        "Quyosh elektrostansiyalarida, sun'iy yo'ldoshlar va kosmik kemalarda",
+        "Faqat maishiy texnikada",
+        "Faqat avtomobillarda",
+        "Faqat laboratoriyalarda"
+      ],
+      "t": 0,
+      "izoh": "Quyosh batareyalari Yerdagi Quyosh elektrostansiyalaridan tashqari, sun'iy yo'ldoshlar va kosmik kemalarda elektr manbayi sifatida xizmat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#00dfb7bb"
+    },
+    {
+      "q": "Yorug'lik diodlari (yarimo'tkazgichli lazerlar) qanday ishlaydi?",
+      "v": [
+        "Undan elektr toki o'tganda o'zidan yorug'lik chiqaradi",
+        "Yorug'lik tushganda tok hosil qiladi",
+        "Doimiy magnit sifatida ishlaydi",
+        "Zaryadni to'playdi"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik diodlari — p-n o'tishga asoslangan diod bo'lib, undan elektr toki o'tganda o'zidan yorug'lik chiqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#bc16649f"
+    },
+    {
+      "q": "Yorug'lik diodida elektronlar n-sohadan p-sohaga o'tganda nima sodir bo'ladi?",
+      "v": [
+        "Kovaklar bilan rekombinatsiyalashib, ortiqcha energiyani nur sifatida chiqaradi",
+        "Hech narsa bo'lmaydi",
+        "Elektronlar so'riladi",
+        "Magnit maydon hosil bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Elektronlar kovaklar bilan rekombinatsiyalashib, o'zlaridan ortiqcha energiyani nur sifatida chiqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#e42e422a"
+    },
+    {
+      "q": "Yorug'lik diodining nurlanish rangi nimaga bog'liq?",
+      "v": [
+        "Yarimo'tkazgich materialining turiga",
+        "Tok kuchiga",
+        "Diod o'lchamiga",
+        "Muhit bosimiga"
+      ],
+      "t": 0,
+      "izoh": "Yarimo'tkazgich materialining turiga bog'liq holda nurlanish rangi turlicha bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#ae861705"
+    },
+    {
+      "q": "O'zbekiston FA akademigi M. Saidov qanday ishlar bilan mashhur?",
+      "v": [
+        "10 ga yaqin turli nurlanishga ega yorug'lik diodlarini yaratgan",
+        "Yorug'lik bosimini kashf etgan",
+        "Fotoeffektni kashf etgan",
+        "Quyosh batareyasini ixtiro qilgan"
+      ],
+      "t": 0,
+      "izoh": "Akademik M. Saidov tomonidan 10 ga yaqin turli nurlanishga ega yorug'lik diodlari yaratilgan hamda nazariyasi va texnologiyasi ishlab chiqilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#38384586"
+    },
+    {
+      "q": "\"Fizika-Quyosh\" ilmiy ishlab chiqarish birlashmasi qachon tashkil etilgan?",
+      "v": [
+        "1993-yilda",
+        "1985-yilda",
+        "2000-yilda",
+        "1970-yilda"
+      ],
+      "t": 0,
+      "izoh": "O'zbekistonda Quyosh energiyasidan foydalanish maqsadida 1993-yilda \"Fizika-Quyosh\" birlashmasi tashkil etildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#8bdf7584"
+    },
+    {
+      "q": "Lebedev tajribasida osmaning burilish burchagi qanday kuzatilgan?",
+      "v": [
+        "Ipga mahkamlangan ko'zgu va truba yordamida",
+        "Ampermetr yordamida",
+        "Mikroskop yordamida",
+        "Voltmetr yordamida"
+      ],
+      "t": 0,
+      "izoh": "Osmaning burulishi ipga mahkamlangan ko'zgu va truba yordamida kuzatilib, burilish burchagidan bosim kuchi aniqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#43884805"
+    },
+    {
+      "q": "Fotoasboblar bugungi kunda qayerlarda keng qo'llaniladi?",
+      "v": [
+        "Yoritgichlarda, robototexnikada, avtomatikada, tungi ko'rish asboblarida, Quyosh elektrostansiyalarida",
+        "Faqat kinotexnikada",
+        "Faqat tibbiyotda",
+        "Faqat qurilishda"
+      ],
+      "t": 0,
+      "izoh": "Avval faqat kinotexnikada qo'llanilgan fotoasboblar bugun yoritgichlar, robototexnika, avtomatika, fotometriya, tungi ko'rish asboblari, Quyosh elektrostansiyalarida keng qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#c8ffa873"
+    },
+    {
+      "q": "To'lqin uzunligi 3·10⁻⁷ m bo'lgan yorug'lik kvantining energiyasi taxminan qancha? (h = 6,6·10⁻³⁴ J·s, c = 3·10⁸ m/s)",
+      "v": [
+        "6,6·10⁻¹⁹ J",
+        "6,6·10⁻²⁰ J",
+        "2,2·10⁻¹⁹ J",
+        "1,32·10⁻¹⁹ J"
+      ],
+      "t": 0,
+      "izoh": "E = hc/λ = 6,6·10⁻³⁴·3·10⁸/3·10⁻⁷ = 6,6·10⁻¹⁹ J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#b10dbd98"
+    },
+    {
+      "q": "Yorug'lik intensivligi I bo'lgan yaltiroq yuzadagi bosim qanday formula bilan aniqlanadi?",
+      "v": [
+        "p = 2I/c",
+        "p = I/c",
+        "p = I/2c",
+        "p = I·c"
+      ],
+      "t": 0,
+      "izoh": "Yaltiroq yuzada impuls o'zgarishi ikki baravar bo'lgani uchun p = 2I/c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#b9ed4b3a"
+    },
+    {
+      "q": "Fotonning energiyasi ortsa, uning impulsi qanday o'zgaradi?",
+      "v": [
+        "To'g'ri proporsional ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Kvadratik ortadi"
+      ],
+      "t": 0,
+      "izoh": "p = E/c bo'lgani uchun foton impulsi energiyaga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m36-foton-impulsi-yoruglik-bosimi-fotoeffekt-texnikada#797718bf"
+    }
+  ]
+}

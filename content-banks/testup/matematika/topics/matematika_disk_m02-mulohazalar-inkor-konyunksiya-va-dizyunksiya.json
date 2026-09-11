@@ -1,0 +1,1609 @@
+{
+  "nom": "Mulohazalar: inkor, kon'yunksiya va diz'yunksiya",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Quyidagi gaplardan qaysi biri mulohaza hisoblanadi, ya'ni uning rost yoki yolg'onligi haqida bahs yuritish mumkin?",
+      "v": [
+        "Toshkent shahri O'zbekistonning poytaxti hisoblanadi",
+        "Iltimos, doskaga yozilgan shartni ko'chirib oling",
+        "Ertaga havo issiq bo'larmikin?",
+        "Qanday go'zal bog'!"
+      ],
+      "t": 0,
+      "izoh": "Mulohaza — rost yoki yolg'on deb baholanadigan darak gap. Buyruq, so'roq va his-hayajon gaplar mulohaza bo'la olmaydi. Ko'chirib oling — buyruq, bo'larmikin — so'roq, go'zal bog' — his-hayajon gap. Faqat birinchi gap darak gap bo'lib, uning qiymati rost. Javob: Toshkent shahri O'zbekistonning poytaxti hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mulohaza-aniqlash",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#3169f768"
+    },
+    {
+      "q": "Sinf jurnalidagi quyidagi to'rt yozuvdan qaysi biri mulohaza bo'la olmaydi, chunki uning rost yoki yolg'onligini hujjat orqali tekshirib bo'lmaydi?",
+      "v": [
+        "9-sinfda 27 nafar o'quvchi bor",
+        "Matematika darsi haftada 5 marta o'tiladi",
+        "Bu sinfning eng qiziqarli o'quvchisi Doston",
+        "Jurnal 2026-yil sentabrda ochilgan"
+      ],
+      "t": 2,
+      "izoh": "Mulohazaning rostligi obyektiv tarzda tekshirilishi shart. O'quvchilar soni, haftalik dars soni va jurnal ochilgan sana — bularning hammasi hujjatdan tekshiriladigan faktlar. Eng qiziqarli degan baho esa har kishida har xil bo'ladi, uni rost yoki yolg'on deb belgilab bo'lmaydi. Javob: bu sinfning eng qiziqarli o'quvchisi Doston.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mulohaza-aniqlash",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#64ee16b3"
+    },
+    {
+      "q": "Nodira daftariga to'rt gap yozdi: «7 soni juft», «Derazani oching», «Yer Quyosh atrofida aylanadi», «Sen kitob o'qidingmi?». Ulardan nechtasi mulohaza bo'ladi?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 1,
+      "izoh": "Har gapni alohida tekshiramiz. «7 soni juft» — darak gap, qiymati yolg'on, lekin baribir mulohaza. «Derazani oching» — buyruq gap, mulohaza emas. «Yer Quyosh atrofida aylanadi» — darak gap va rost, demak mulohaza. «Sen kitob o'qidingmi?» — so'roq gap, mulohaza emas. Demak mulohazalar soni ikkita. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mulohaza-aniqlash",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#d78301fb"
+    },
+    {
+      "q": "Matematika to'garagida o'qituvchi doskaga x + 5 = 12 yozuvini yozdi va uni mulohaza deb hisoblash mumkinmi deb so'radi. To'g'ri javobni belgilang.",
+      "v": [
+        "Ha, chunki bunday tenglama har doim rost bo'ladi",
+        "Ha, chunki tenglamaning ikki tomoni tenglik belgisi bilan bog'langan",
+        "Yo'q, chunki yozuvda qo'shish amali qatnashgan",
+        "Yo'q, chunki x ma'lum bo'lmaguncha rostlik qiymati aniqlanmaydi"
+      ],
+      "t": 3,
+      "izoh": "Mulohazaning rostlik qiymati aniq bo'lishi shart. x + 5 = 12 yozuvida x noma'lum: x = 7 bo'lsa yozuv rost, x = 3 bo'lsa yolg'on. Qiymati o'zgaruvchiga bog'liq bo'lgan bunday yozuv mulohaza emas, u predikat deb ataladi. Javob: yo'q, chunki x ma'lum bo'lmaguncha rostlik qiymati aniqlanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mulohaza-aniqlash",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#83cbb909"
+    },
+    {
+      "q": "Quyidagi to'rt mulohazadan qaysi biri rost bo'ladi? Har birini alohida hisoblab tekshiring.",
+      "v": [
+        "17 soni 3 ga qoldiqsiz bo'linadi",
+        "36 soni ham 4 ga, ham 9 ga bo'linadi",
+        "Har qanday tub son toq bo'ladi",
+        "0 soni manfiy sonlar qatoriga kiradi"
+      ],
+      "t": 1,
+      "izoh": "17 ni 3 ga bo'lsak qoldiq 2 chiqadi, demak birinchi tasdiq yolg'on. 36 : 4 = 9 va 36 : 9 = 4, ikkala bo'lish ham qoldiqsiz bajarildi, bu tasdiq rost. 2 soni tub va ayni paytda juft, shuning uchun uchinchi tasdiq yolg'on. 0 soni na musbat, na manfiy, demak to'rtinchisi ham yolg'on. Javob: 36 soni ham 4 ga, ham 9 ga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-rostlik-baho",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#2a8da0d0"
+    },
+    {
+      "q": "Bekzod daftariga to'rtta geometrik tasdiq yozib qo'ydi. Ulardan qaysi biri yolg'on mulohaza ekanini aniqlang.",
+      "v": [
+        "Kvadratning to'rt tomoni ham o'zaro teng",
+        "Uchburchak ichki burchaklari yig'indisi 180° ga teng",
+        "Har bir romb kvadrat bo'ladi",
+        "Doiraning diametri radiusdan ikki marta uzun"
+      ],
+      "t": 2,
+      "izoh": "Kvadratning tomonlari teng — bu ta'rifdan kelib chiqadi, tasdiq rost. Uchburchak burchaklari yig'indisi haqiqatan 180°. Diametr radiusdan ikki marta uzun, bu ham rost. Rombning tomonlari teng, lekin burchaklari to'g'ri bo'lishi shart emas, shuning uchun har bir romb kvadrat bo'lavermaydi. Javob: har bir romb kvadrat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-rostlik-baho",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#d63d6dfb"
+    },
+    {
+      "q": "«120 soni 8 ga bo'linadi» mulohazasining rostlik qiymati qanday va buni qanday tekshirish mumkin? To'g'ri izohni tanlang.",
+      "v": [
+        "Rost, chunki 120 : 8 = 15 qoldiqsiz bajariladi",
+        "Yolg'on, chunki 120 soni toq son emas",
+        "Rost, chunki 120 soni 100 dan katta",
+        "Yolg'on, chunki 8 soni 120 dan kichik"
+      ],
+      "t": 0,
+      "izoh": "Bo'linuvchanlikni to'g'ridan-to'g'ri tekshiramiz: 120 : 8 = 15 va qoldiq nolga teng. Qoldiq nol bo'lgani uchun mulohaza rost. Qolgan izohlar bo'linuvchanlikka umuman aloqasiz: sonning kattaligi yoki juftligi bo'linishni isbotlamaydi. Javob: rost, chunki 120 : 8 = 15 qoldiqsiz bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sodda-rostlik-baho",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#3241abe6"
+    },
+    {
+      "q": "Malika «Har qanday to'rt xonali son 11 ga bo'linadi» degan mulohazani rad etmoqchi. Buning uchun unga nima qilish yetarli bo'ladi?",
+      "v": [
+        "Barcha to'rt xonali sonlarni birma-bir tekshirib chiqish",
+        "11 ga bo'linadigan bitta to'rt xonali sonni ko'rsatish",
+        "Mulohazaning inkorini daftarga yozib qo'yish",
+        "11 ga bo'linmaydigan bitta to'rt xonali sonni ko'rsatish"
+      ],
+      "t": 3,
+      "izoh": "«Har qanday» so'zi bilan boshlangan umumiy tasdiqni rad etish uchun bitta qarshi misol kifoya. Masalan 1000 soni to'rt xonali, ammo 1000 ni 11 ga bo'lganda qoldiq 10 chiqadi. Shu yagona misol butun tasdiqni yolg'onga aylantiradi. Bo'linadigan sonni ko'rsatish esa tasdiqni rad etmaydi, aksincha unga mos keladi. Javob: 11 ga bo'linmaydigan bitta to'rt xonali sonni ko'rsatish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sodda-rostlik-baho",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#1fa4864e"
+    },
+    {
+      "q": "«Bugun Navoiy shahrida yomg'ir yog'di» mulohazasining inkorini to'g'ri ifodalagan variantni tanlang.",
+      "v": [
+        "Bugun Navoiy shahrida qor yog'di",
+        "Bugun Navoiy shahrida yomg'ir yog'madi",
+        "Ertaga Navoiy shahrida yomg'ir yog'adi",
+        "Bugun Buxoro shahrida yomg'ir yog'madi"
+      ],
+      "t": 1,
+      "izoh": "Inkor mulohazaning faqat tasdiq qismini rad etadi, qolgan bo'laklarini o'zgartirmaydi. Shahar nomi ham, kun ham o'z holicha qoladi, faqat «yog'di» so'zi «yog'madi» ga aylanadi. «Qor yog'di» — bu inkor emas, butunlay boshqa mulohaza. Javob: bugun Navoiy shahrida yomg'ir yog'madi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "inkor-yasash-matn",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#fad14498"
+    },
+    {
+      "q": "Do'kon peshtaxtasiga «Barcha mahsulotlar chegirmada» degan e'lon osilgan. Ushbu e'londa aytilgan mulohazaning inkori qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "Hech bir mahsulot chegirmaga kiritilmagan",
+        "Do'kondagi mahsulotlar aksincha qimmatlashgan",
+        "Kamida bitta mahsulot chegirmaga kiritilmagan",
+        "Chegirma faqat ertalabki soatlarda amal qiladi"
+      ],
+      "t": 2,
+      "izoh": "«Barcha» so'zi bilan berilgan tasdiq bitta istisno topilishi bilanoq yolg'onga aylanadi. Shuning uchun uning inkori — hech bo'lmaganda bitta mahsulot chegirmaga kirmagan degani. «Hech bir mahsulot chegirmada emas» ancha kuchli tasdiq bo'lib, u inkorga teng emas, faqat uning xususiy holi. Javob: kamida bitta mahsulot chegirmaga kiritilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "inkor-yasash-matn",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#b874c3dc"
+    },
+    {
+      "q": "Maktab nizomida «Har bir o'quvchi maktab formasida keladi» deb yozib qo'yilgan. Shu qoidaning inkorini, ya'ni qoida buzilganini bildiruvchi mulohazani belgilang.",
+      "v": [
+        "Kamida bitta o'quvchi maktab formasisiz keldi",
+        "Barcha o'quvchilar maktab formasida keldi",
+        "Bir nechta o'quvchi darsga kechikib keldi",
+        "Maktab nizomi barcha sinflarda o'qib eshittirildi"
+      ],
+      "t": 0,
+      "izoh": "«Har bir» iborasi bilan yozilgan umumiy qoida bitta istisno bilan buziladi. Ya'ni qoidaning inkori — maktab formasisiz kelgan hech bo'lmaganda bitta o'quvchi mavjudligi. Barcha o'quvchilar formada kelgani, aksincha, qoidaning bajarilganini bildiradi. Darsga kechikish va nizomni o'qib eshittirish esa forma talabiga umuman aloqador emas. Javob: kamida bitta o'quvchi maktab formasisiz keldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "inkor-yasash-matn",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#acc159f9"
+    },
+    {
+      "q": "«Bu haftada Anvar hech qanday kitob o'qimadi» mulohazasining inkorini to'g'ri yozgan variantni toping.",
+      "v": [
+        "Bu haftada Anvar kutubxonadagi barcha kitoblarni o'qib chiqdi",
+        "Bu haftada Anvar kitob o'qishni umuman yoqtirmadi",
+        "Kelasi haftada Anvar kitob o'qishni boshlaydi",
+        "Bu haftada Anvar kamida bitta kitob o'qidi"
+      ],
+      "t": 3,
+      "izoh": "«Hech qanday … emas» ko'rinishidagi mulohaza inkor qilinganda «kamida bittasi bor» degan tasdiq hosil bo'ladi. Anvar bitta kitobni o'qigan bo'lsa ham dastlabki gap yolg'onga aylanadi. Barcha kitoblarni o'qib chiqdi degani haddan tashqari kuchli tasdiq, u inkorga teng kelmaydi. Javob: bu haftada Anvar kamida bitta kitob o'qidi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "inkor-yasash-matn",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#e4ea507b"
+    },
+    {
+      "q": "Shifokor bemorga «Siz dorini ertalab ham, kechqurun ham ichishingiz shart» dedi. Bemor ko'rsatmani bajarmagan holatni eng aniq ifodalovchi mulohazani tanlang.",
+      "v": [
+        "Bemor na ertalab, na kechqurun dori ichdi",
+        "Bemor kamida bir mahal dori ichishni tashlab ketdi",
+        "Bemor dorini faqat ertalab ichdi",
+        "Bemor dori ichish tartibini shifokordan so'ramadi"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatma ikki shartning kon'yunksiyasi: ertalab ichish VA kechqurun ichish. Kon'yunksiya faqat ikkala qismi ham rost bo'lgandagina bajariladi. Demak u buzilishi uchun hech bo'lmaganda bitta mahal tashlab ketilishi kifoya. Ikkala mahalni ham tashlab ketish yoki faqat ertalab ichish — bularning har biri shu umumiy holning xususiy ko'rinishi, ta'rifning o'zi emas. Javob: bemor kamida bir mahal dori ichishni tashlab ketdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "inkor-yasash-matn",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#54afb062"
+    },
+    {
+      "q": "Olimpiada shartida «yig'ilgan ball 60 dan katta» deb yozilgan. Shu mulohazaning inkorini to'g'ri ifodalagan variantni tanlang.",
+      "v": [
+        "Yig'ilgan ball 60 dan kichik yoki unga teng",
+        "Yig'ilgan ball 60 dan kichik",
+        "Yig'ilgan ball 60 ga teng emas",
+        "Yig'ilgan ball 60 dan katta yoki unga teng"
+      ],
+      "t": 0,
+      "izoh": "«Katta» munosabatining inkori — «katta emas», ya'ni kichik yoki teng. Ballning aynan 60 bo'lgan holi ham inkorga kiradi, chunki 60 soni 60 dan katta emas. Agar faqat «kichik» deb yozilsa, tenglik holi tushib qoladi va inkor chala bo'ladi. Javob: yig'ilgan ball 60 dan kichik yoki unga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "inkor-tengsizlik",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#6ea87232"
+    },
+    {
+      "q": "x ≥ 12 shartining inkorini belgilar yordamida to'g'ri yozgan variantni tanlang va tanlovingizni asoslang.",
+      "v": [
+        "x ≤ 12",
+        "x > 12",
+        "x < 12",
+        "x ≠ 12"
+      ],
+      "t": 2,
+      "izoh": "Sonlar o'qida x ≥ 12 shartiga 12 nuqtasi va undan o'ngdagi barcha nuqtalar kiradi. Inkor esa qolgan hamma nuqtalarni, ya'ni 12 dan chapdagi qismni beradi. 12 nuqtasining o'zi asl shartga kirgani uchun inkorga qo'shilmaydi. Demak izlangan inkor x < 12 ko'rinishida yoziladi. Javob: x < 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "inkor-tengsizlik",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#c21db8c8"
+    },
+    {
+      "q": "Muzlatgich ishlab chiqaruvchisi «ichki harorat 4 °C dan oshmaydi» deb kafolat bergan. Kafolat buzilganini ko'rsatuvchi mulohaza qaysi variantda berilgan?",
+      "v": [
+        "Ichki harorat 4 °C dan past bo'ldi",
+        "Ichki harorat aynan 4 °C ga teng bo'ldi",
+        "Ichki harorat 4 °C dan past yoki unga teng bo'ldi",
+        "Ichki harorat 4 °C dan yuqori ko'tarildi"
+      ],
+      "t": 3,
+      "izoh": "«Oshmaydi» degani harorat 4 °C dan katta emas, ya'ni t ≤ 4 shart bajariladi. Bu shartning inkori t > 4 bo'ladi. Aynan 4 °C kafolat doirasida qolgani uchun uni buzilish deb hisoblab bo'lmaydi. Javob: ichki harorat 4 °C dan yuqori ko'tarildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "inkor-tengsizlik",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#f6820844"
+    },
+    {
+      "q": "«Sinfdagi har bir o'quvchining bo'yi 150 sm dan baland» mulohazasi yolg'on ekani aniqlandi. Sinf haqida qanday xulosa albatta to'g'ri bo'ladi?",
+      "v": [
+        "Sinfdagi barcha o'quvchilarning bo'yi 150 sm dan past",
+        "Bo'yi 150 sm dan baland bo'lmagan kamida bitta o'quvchi bor",
+        "Sinfdagi barcha o'quvchilarning bo'yi aynan 150 sm",
+        "Sinfda bo'yi 150 sm dan baland o'quvchi umuman yo'q"
+      ],
+      "t": 1,
+      "izoh": "«Har bir» shaklidagi tasdiq yolg'on bo'lsa, demak kamida bitta istisno mavjud. Istisno — bo'yi 150 sm dan baland bo'lmagan, ya'ni 150 sm yoki undan past o'quvchi. Qolgan variantlar butun sinf haqida ortiqcha kuchli xulosa chiqaradi, ular berilgan shartdan kelib chiqmaydi. Javob: bo'yi 150 sm dan baland bo'lmagan kamida bitta o'quvchi bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "inkor-tengsizlik",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#9134a7ff"
+    },
+    {
+      "q": "A mulohazasi «25 soni 5 ga karrali» ko'rinishida berilgan. Uning inkori qanday rostlik qiymatini qabul qiladi va nima uchun?",
+      "v": [
+        "Rost, chunki A ning o'zi yolg'on",
+        "Rost, chunki inkor amali natijasi har doim rost",
+        "Yolg'on, chunki A ning o'zi rost",
+        "Yolg'on, chunki 25 soni 5 dan katta"
+      ],
+      "t": 2,
+      "izoh": "Avval A ning qiymatini aniqlaymiz: 25 : 5 = 5, qoldiq yo'q, demak A rost. Inkor amali mulohazaning qiymatini teskarisiga aylantiradi. Rost mulohazaning inkori esa yolg'on bo'ladi. Javob: yolg'on, chunki A ning o'zi rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "inkor-qiymat",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#9af2ff91"
+    },
+    {
+      "q": "B mulohazasi «Yerning ikkita tabiiy yo'ldoshi bor» deb berilgan. B ning inkori qanday rostlik qiymatiga ega bo'ladi va bu nima bilan asoslanadi?",
+      "v": [
+        "Rost, chunki B mulohazasi yolg'on",
+        "Yolg'on, chunki B mulohazasi rost",
+        "Rost, chunki B mulohazasi ham rost",
+        "Aniqlab bo'lmaydi, chunki B haqida ma'lumot yetarli emas"
+      ],
+      "t": 0,
+      "izoh": "Yerning bitta tabiiy yo'ldoshi bor, u Oy deb ataladi. Shuning uchun B mulohazasi yolg'on. Inkor qiymatni teskarisiga o'zgartirgani uchun yolg'on mulohazaning inkori rost bo'ladi. Javob: rost, chunki B mulohazasi yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "inkor-qiymat",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#70004f92"
+    },
+    {
+      "q": "P mulohazasining inkori yolg'on ekani ma'lum bo'ldi. Bundan P ning o'zi haqida qanday aniq xulosa chiqarish mumkin?",
+      "v": [
+        "P yolg'on bo'ladi",
+        "P ning qiymatini aniqlab bo'lmaydi",
+        "P bir vaqtning o'zida ham rost, ham yolg'on",
+        "P rost bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Inkor amali mulohazaning qiymatini faqat teskarisiga aylantiradi, boshqa imkoniyat yo'q. Inkor yolg'on bo'lsa, dastlabki mulohaza rost bo'lishi shart. Bitta mulohaza bir vaqtda ikkala qiymatni qabul qila olmaydi, bu qarama-qarshilik qonuniga zid. Javob: P rost bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "inkor-qiymat",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#af6dd0ca"
+    },
+    {
+      "q": "Do'kon kassiri «Bugungi savdo 3 million so'mdan oshdi» dedi. Kechqurun hisobda 2 850 000 so'm ko'rsatildi. Kassir gapining inkori qanday qiymatga ega bo'ladi? Asosi to'g'ri ko'rsatilgan variantni tanlang.",
+      "v": [
+        "Rost, chunki kassirning gapi yolg'on bo'lib chiqdi",
+        "Yolg'on, chunki kassirning gapi tasdiqlandi",
+        "Rost, chunki savdo hajmi 2 milliondan oshgan",
+        "Aniqlab bo'lmaydi, chunki savdo hisobi to'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Avval kassirning mulohazasini tekshiramiz: 2 850 000 so'm 3 000 000 so'mdan kichik, demak «savdo 3 milliondan oshdi» degani yolg'on. Inkor amali qiymatni teskarisiga aylantiradi, shuning uchun bu gapning inkori rost bo'ladi. Savdoning 2 milliondan oshgani boshqa mulohaza, u bu yerda hal qiluvchi emas. Javob: rost, chunki kassirning gapi yolg'on bo'lib chiqdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "inkor-qiymat",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#abda5b30"
+    },
+    {
+      "q": "«Karim futbol o'ynamaydi» mulohazasi yana bir marta inkor qilinsa, qanday mulohaza hosil bo'ladi?",
+      "v": [
+        "Karim futbol o'ynashni yoqtirmaydi",
+        "Karim futbol o'ynaydi",
+        "Karim hech qachon futbol o'ynamagan",
+        "Karim futbol o'rniga basketbol o'ynaydi"
+      ],
+      "t": 1,
+      "izoh": "Berilgan mulohazaning o'zida allaqachon bitta inkor bor. Uni yana bir marta inkor qilsak, qo'shaloq inkor hosil bo'ladi. Qo'shaloq inkor qonuniga ko'ra ikki inkor bir-birini yo'qotadi va dastlabki tasdiq qaytadi. Demak natija sodda tasdiq bo'ladi. Javob: Karim futbol o'ynaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshaloq-inkor",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#c25626f3"
+    },
+    {
+      "q": "Sonlar o'qidagi x soni uchun «x soni musbat emas» degan mulohaza berilgan. Shu mulohazaning inkori x haqida nima deydi?",
+      "v": [
+        "x soni manfiy",
+        "x soni nolga teng",
+        "x soni manfiy yoki nolga teng",
+        "x soni musbat"
+      ],
+      "t": 3,
+      "izoh": "«Musbat emas» iborasi «musbat» tasdig'ining inkori, ya'ni x ≤ 0 shartini beradi. Uni yana bir bor inkor qilsak, ikki inkor o'zaro bekor bo'ladi va dastlabki tasdiq tiklanadi: x > 0. Nolni javobga qo'shib yuborish keng tarqalgan xato, chunki nol musbat son hisoblanmaydi. Javob: x soni musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshaloq-inkor",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#a00c4a0f"
+    },
+    {
+      "q": "Anketa savoliga Zilola «Mening chet tilini bilmasligim to'g'ri emas» deb javob yozdi. Uning javobi qaysi oddiy mulohazaga teng kuchli bo'ladi?",
+      "v": [
+        "Zilola chet tilini bilmaydi",
+        "Zilola chet tilini endi o'rganmoqchi",
+        "Zilola chet tilini biladi",
+        "Zilola savolga javob berishdan bosh tortdi"
+      ],
+      "t": 2,
+      "izoh": "Javobda ikkita inkor yashiringan: «bilmaslik» birinchi inkor, «to'g'ri emas» esa uni ustidan yana inkor qiladi. Qo'shaloq inkor qonuniga ko'ra bu ikki inkor bir-birini bekor qiladi. Natijada faqat sodda tasdiq qoladi. Javob: Zilola chet tilini biladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshaloq-inkor",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#72572b28"
+    },
+    {
+      "q": "A: «14 soni juft», B: «14 soni 7 ga bo'linadi» mulohazalari berilgan. A va B kon'yunksiyasining qiymatini aniqlang.",
+      "v": [
+        "Rost, chunki ikkala mulohaza ham rost",
+        "Yolg'on, chunki A yolg'on",
+        "Yolg'on, chunki B yolg'on",
+        "Yolg'on, chunki ikkala mulohaza ham yolg'on"
+      ],
+      "t": 0,
+      "izoh": "A ni tekshiramiz: 14 soni 2 ga qoldiqsiz bo'linadi, demak u juft va A rost. B ni tekshiramiz: 14 : 7 = 2, qoldiq yo'q, demak B ham rost. Kon'yunksiya faqat ikkala qismi rost bo'lgandagina rost qiymat beradi. Javob: rost, chunki ikkala mulohaza ham rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konyunksiya-qiymat",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#d5a7d54a"
+    },
+    {
+      "q": "C: «9 soni tub son», D: «9 soni 3 ga bo'linadi» mulohazalari uchun C ∧ D ifodasining qiymati qanday bo'ladi va bu nima bilan izohlanadi?",
+      "v": [
+        "Rost, chunki D rost",
+        "Rost, chunki ikkala mulohaza rost",
+        "Yolg'on, chunki C yolg'on",
+        "Yolg'on, chunki D yolg'on"
+      ],
+      "t": 2,
+      "izoh": "C ni tekshiramiz: 9 sonining bo'luvchilari 1, 3 va 9, ya'ni ikkitadan ortiq, shuning uchun 9 tub son emas va C yolg'on. D esa rost, chunki 9 : 3 = 3. ∧ belgisi kon'yunksiyani bildiradi va unda bitta qism yolg'on bo'lsa, butun ifoda yolg'on chiqadi. Javob: yolg'on, chunki C yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konyunksiya-qiymat",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#7d31f13f"
+    },
+    {
+      "q": "M mulohazasi rost, N mulohazasi esa yolg'on. Ularni «va» bog'lovchisi bilan bog'lashdan hosil bo'lgan natija va uning izohini tanlang.",
+      "v": [
+        "Natija rost, chunki kamida bitta qism rost",
+        "Natija yolg'on, chunki kon'yunksiya barcha qismlarning rost bo'lishini talab qiladi",
+        "Natija rost, chunki M birinchi o'rinda turibdi",
+        "Natija N ning qiymatiga umuman bog'liq emas"
+      ],
+      "t": 1,
+      "izoh": "Kon'yunksiya «va» bog'lovchisi bilan yoziladi va u faqat barcha qismlar rost bo'lgandagina rost qiymat beradi. Bu yerda N yolg'on, demak talab bajarilmaydi. Kamida bitta qismning rost bo'lishi diz'yunksiya uchun yetarli, kon'yunksiya uchun esa emas. Javob: natija yolg'on, chunki kon'yunksiya barcha qismlarning rost bo'lishini talab qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konyunksiya-qiymat",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#192ec964"
+    },
+    {
+      "q": "Uchta mulohaza berilgan: «81 soni 9 ga bo'linadi», «81 soni to'la kvadrat», «81 soni juft». Ularning kon'yunksiyasi qanday qiymat oladi?",
+      "v": [
+        "Rost, chunki uchtadan ikkitasi rost",
+        "Rost, chunki mulohazalar bir-biriga zid emas",
+        "Aniqlab bo'lmaydi, chunki uchta mulohaza bir vaqtda tekshirilmaydi",
+        "Yolg'on, chunki uchinchi mulohaza yolg'on"
+      ],
+      "t": 3,
+      "izoh": "Birinchi mulohaza rost, chunki 81 : 9 = 9. Ikkinchisi ham rost, chunki 81 = 9². Uchinchisi yolg'on, chunki 81 toq son. Uch mulohazaning kon'yunksiyasi rost bo'lishi uchun uchalasi ham rost bo'lishi kerak edi. Javob: yolg'on, chunki uchinchi mulohaza yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konyunksiya-qiymat",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#516fe651"
+    },
+    {
+      "q": "K va L mulohazalarining kon'yunksiyasi rost ekani ma'lum bo'ldi. Bundan bu mulohazalar haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "K rost, L ning qiymati noaniq qoladi",
+        "K ham, L ham albatta rost",
+        "Kamida bittasi rost, ikkinchisi ixtiyoriy",
+        "K va L qiymatlari o'zaro teskari bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Kon'yunksiya rost qiymatni faqat bitta holatda beradi: ikkala qism ham rost bo'lganda. Qolgan uch holatda, ya'ni bittasi yoki ikkalasi yolg'on bo'lganda natija yolg'on chiqadi. Demak natija rost ekan, ikkala mulohaza ham rost bo'lishi shart. Javob: K ham, L ham albatta rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konyunksiya-qiymat",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#57ffe8be"
+    },
+    {
+      "q": "E: «6 soni 4 ga bo'linadi», F: «6 soni juft» mulohazalari berilgan. E yoki F diz'yunksiyasining qiymatini aniqlang va uni to'g'ri asoslang.",
+      "v": [
+        "Yolg'on, chunki E yolg'on",
+        "Yolg'on, chunki ikkala mulohaza ham yolg'on",
+        "Rost, chunki F rost bo'lishi yetarli",
+        "Rost, chunki ikkala mulohaza ham rost"
+      ],
+      "t": 2,
+      "izoh": "E ni tekshiramiz: 6 ni 4 ga bo'lganda qoldiq 2 chiqadi, demak E yolg'on. F esa rost, chunki 6 soni 2 ga qoldiqsiz bo'linadi. Diz'yunksiya kamida bitta qismi rost bo'lsa rost qiymat beradi. Javob: rost, chunki F rost bo'lishi yetarli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dizyunksiya-qiymat",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#af34455a"
+    },
+    {
+      "q": "G: «Oy Yerning tabiiy yo'ldoshi», H: «Quyosh Yer atrofida aylanadi» mulohazalari uchun G ∨ H ifodasi qanday qiymat oladi? Asosi to'g'ri berilgan variantni tanlang.",
+      "v": [
+        "Rost, chunki G rost",
+        "Yolg'on, chunki H yolg'on",
+        "Rost, chunki ikkalasi ham rost",
+        "Yolg'on, chunki ikkalasi ham yolg'on"
+      ],
+      "t": 0,
+      "izoh": "G rost: Oy haqiqatan Yerning tabiiy yo'ldoshi hisoblanadi. H yolg'on, chunki aslida Yer Quyosh atrofida aylanadi, teskarisi emas. ∨ belgisi diz'yunksiyani bildiradi va unda bitta qismning rostligi butun ifodani rost qilish uchun yetarli. Javob: rost, chunki G rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dizyunksiya-qiymat",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#46bc3b9b"
+    },
+    {
+      "q": "Ikkita mulohazaning diz'yunksiyasi yolg'on chiqdi. Bu holda mulohazalarning rostlik qiymatlari haqida nima deyish mumkin?",
+      "v": [
+        "Kamida bittasi rost",
+        "Bittasi rost, ikkinchisi yolg'on",
+        "Ularning qiymatlari o'zaro teng bo'lmagan",
+        "Ikkalasi ham yolg'on"
+      ],
+      "t": 3,
+      "izoh": "Diz'yunksiya faqat bitta holatda yolg'on bo'ladi: ikkala qism ham yolg'on bo'lganda. Agar hech bo'lmaganda bittasi rost bo'lganida, natija rost chiqar edi — shuning uchun «kamida bittasi rost» varianti shartga zid. Bittasi rost, ikkinchisi yolg'on bo'lgan hol ham diz'yunksiyani rost qiladi. Berilgan shartdan ikkala mulohazaning ham yolg'onligi kelib chiqadi. Javob: ikkalasi ham yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "dizyunksiya-qiymat",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#f35f1cb5"
+    },
+    {
+      "q": "Quyidagi uch mulohaza «yoki» bog'lovchisi bilan bog'landi: «12 soni 5 ga bo'linadi», «12 soni tub son», «12 soni 3 ga bo'linadi». Natija qanday bo'ladi va u qaysi qism hisobiga hosil bo'ladi?",
+      "v": [
+        "Yolg'on, chunki dastlabki ikkitasi yolg'on",
+        "Rost, chunki uchinchi mulohaza rost",
+        "Rost, chunki uchala mulohaza ham rost",
+        "Aniqlab bo'lmaydi, chunki mulohazalar soni uchta"
+      ],
+      "t": 1,
+      "izoh": "Birinchi mulohaza yolg'on: 12 ni 5 ga bo'lganda qoldiq 2 qoladi. Ikkinchisi ham yolg'on, chunki 12 sonining bo'luvchilari ikkitadan ancha ko'p. Uchinchisi rost, chunki 12 : 3 = 4. Diz'yunksiyada bitta rost qism butun ifodani rost qiladi. Javob: rost, chunki uchinchi mulohaza rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "dizyunksiya-qiymat",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#1d4b9f8b"
+    },
+    {
+      "q": "X mulohazasining qiymati noma'lum, Y mulohazasi esa rost ekani berilgan. X ∨ Y ifodasining qiymati haqida nima aytish mumkin?",
+      "v": [
+        "Qiymat X ning qiymatiga bog'liq bo'ladi",
+        "Qiymat faqat X rost bo'lgandagina rost bo'ladi",
+        "Qiymat X dan qat'i nazar rost bo'ladi",
+        "Qiymatni aniqlash uchun X ni bilish shart"
+      ],
+      "t": 2,
+      "izoh": "Diz'yunksiyani rost qilish uchun bitta rost qismning o'zi yetarli. Bu yerda Y allaqachon rost, demak butun ifodaning qiymati aniqlangan. X rost bo'lsa ham, yolg'on bo'lsa ham natija o'zgarmaydi. Javob: qiymat X dan qat'i nazar rost bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "dizyunksiya-qiymat",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#87067b7f"
+    },
+    {
+      "q": "Bog'chaga qabul shartida bola 3 yoshdan katta bo'lishi va emlash varaqasi topshirilishi talab qilinadi. Aziza 4 yoshda, ammo emlash varaqasi yo'q. Uni qabul qilishadimi va buning sababi nima?",
+      "v": [
+        "Qabul qilinadi, chunki yosh sharti bajarilgan",
+        "Qabul qilinmaydi, chunki ikkala shart birdan bajarilishi kerak",
+        "Qabul qilinadi, chunki hujjatni keyinroq topshirsa bo'ladi",
+        "Qabul qilinmaydi, chunki yosh sharti ham buzilgan"
+      ],
+      "t": 1,
+      "izoh": "Qabul sharti ikki mulohazaning kon'yunksiyasi: yosh 3 dan katta VA emlash varaqasi bor. Aziza uchun birinchi qism rost, ikkinchisi esa yolg'on. Kon'yunksiya bitta qism yolg'on bo'lganda yolg'on chiqadi, demak shart bajarilmagan. Javob: qabul qilinmaydi, chunki ikkala shart birdan bajarilishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konyunksiya-hayotiy",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#a33595dc"
+    },
+    {
+      "q": "Sport zalidagi chegirmali abonement talaba guvohnomasi bo'lgan va yoshi 25 dan kichik kishilarga beriladi. Jasur 22 yoshda va guvohnomasi bor. To'g'ri xulosa va uning sababi qaysi variantda berilgan?",
+      "v": [
+        "Chegirma berilmaydi, chunki yosh sharti yetarli emas",
+        "Chegirma berilmaydi, chunki guvohnoma yakka o'zi hisobga olinmaydi",
+        "Chegirma faqat guvohnoma asosida beriladi",
+        "Chegirma beriladi, chunki ikkala shart ham bajarilgan"
+      ],
+      "t": 3,
+      "izoh": "Shart kon'yunksiya ko'rinishida berilgan: guvohnoma bor VA yosh 25 dan kichik. Jasurda guvohnoma bor, demak birinchi qism rost. 22 soni 25 dan kichik, demak ikkinchi qism ham rost. Ikkala qism rost bo'lgani uchun kon'yunksiya rost qiymat beradi. Javob: chegirma beriladi, chunki ikkala shart ham bajarilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konyunksiya-hayotiy",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#f3db9503"
+    },
+    {
+      "q": "Fermer Sobir «Bugun ham traktorni ta'mirladim, ham 40 sotix yerni sug'ordim» dedi. Kechqurun 25 sotix yer sug'orilgani aniqlandi. Uning gapi qanday baholanadi?",
+      "v": [
+        "Yolg'on, chunki kon'yunksiyaning ikkinchi qismi bajarilmagan",
+        "Rost, chunki traktor haqiqatan ta'mirlangan",
+        "Rost, chunki yerning katta qismi sug'orilgan",
+        "Aniqlab bo'lmaydi, chunki ta'mir haqida ma'lumot yo'q"
+      ],
+      "t": 0,
+      "izoh": "Sobirning gapi ikki qismdan iborat kon'yunksiya. Birinchi qism rost deb qabul qilinadi. Ikkinchi qismda 40 sotix aytilgan, aslida 25 sotix sug'orilgan, demak u yolg'on. Kon'yunksiya bitta yolg'on qism tufayli butunlay yolg'onga aylanadi. Javob: yolg'on, chunki kon'yunksiyaning ikkinchi qismi bajarilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konyunksiya-hayotiy",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#09f79387"
+    },
+    {
+      "q": "Bank kreditni ish staji 1 yildan ortiq va oylik daromadi 4 million so'mdan yuqori mijozlarga beradi. Staji 3 yil, daromadi 3 600 000 so'm bo'lgan mijozga kredit beriladimi va nima uchun?",
+      "v": [
+        "Beriladi, chunki staj sharti ancha oshib ketgan",
+        "Beriladi, chunki daromad 4 millionga juda yaqin",
+        "Berilmaydi, chunki daromad sharti bajarilmagan",
+        "Berilmaydi, chunki ikkala shart ham buzilgan"
+      ],
+      "t": 2,
+      "izoh": "Shart ikki mulohazaning kon'yunksiyasi. Staj sharti bajarilgan, chunki 3 yil 1 yildan ortiq. Daromad sharti bajarilmagan, chunki 3 600 000 so'm 4 000 000 so'mdan kam. Kon'yunksiyada bitta qismning yolg'onligi butun shartni yolg'on qiladi, «yaqin» degan baho mantiqda hisobga olinmaydi. Javob: berilmaydi, chunki daromad sharti bajarilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konyunksiya-hayotiy",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#61613607"
+    },
+    {
+      "q": "Tanlovga o'tish uchun ishtirokchi matematikadan 70 balldan yuqori va ona tilidan 60 balldan yuqori to'plashi shart. To'rt nomzod natijasi berilgan. Kim o'tadi?",
+      "v": [
+        "Dilnoza: matematika 68, ona tili 82",
+        "Rustam: matematika 74, ona tili 63",
+        "Shohrux: matematika 90, ona tili 58",
+        "Nigora: matematika 70, ona tili 71"
+      ],
+      "t": 1,
+      "izoh": "Har bir nomzodda ikkala shart ham qat'iy tengsizlik bilan berilgan. Dilnozada matematika 68 bo'lgani uchun birinchi shart buzilgan. Shohruxda ona tili 58 bo'lib, ikkinchi shart bajarilmagan. Nigorada matematika aynan 70, bu esa 70 dan yuqori emas. Rustamda 74 > 70 va 63 > 60, ikkala shart ham bajarildi. Javob: Rustam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konyunksiya-hayotiy",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#c7cf3dfe"
+    },
+    {
+      "q": "Kutubxonaga a'zo bo'lish uchun pasport yoki tug'ilganlik guvohnomasini taqdim etish yetarli. Feruza faqat guvohnomasini olib keldi. Uni a'zolikka qabul qilishadimi?",
+      "v": [
+        "Qabul qilishadi, chunki ikki hujjatdan biri yetarli",
+        "Qabul qilishmaydi, chunki pasport asosiy hujjat sanaladi",
+        "Qabul qilishmaydi, chunki ikkala hujjat ham talab etiladi",
+        "Qabul qilishadi, faqat pasportni keyin keltirish sharti bilan"
+      ],
+      "t": 0,
+      "izoh": "Shart «yoki» bog'lovchisi bilan berilgan, ya'ni bu diz'yunksiya. Diz'yunksiya kamida bitta qismi rost bo'lsa rost qiymat beradi. Feruzada guvohnoma bor, demak ikkinchi qism rost va butun shart bajarilgan. Javob: qabul qilishadi, chunki ikki hujjatdan biri yetarli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dizyunksiya-hayotiy",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#54325eaa"
+    },
+    {
+      "q": "Muzeyga bepul kirish 16 yoshgacha bo'lgan yoki nafaqadagi tashrifchilarga beriladi. 70 yoshli Odil bobo kassaga keldi. Unga bepul kirish beriladimi va buning sababi nima?",
+      "v": [
+        "Berilmaydi, chunki yosh chegarasi 16 dan oshib ketgan",
+        "Berilmaydi, chunki ikkala shart birdan bajarilmagan",
+        "Beriladi, chunki nafaqa sharti bajarilgan",
+        "Beriladi, ammo chipta narxining yarmi to'lanadi"
+      ],
+      "t": 2,
+      "izoh": "Imtiyoz sharti diz'yunksiya ko'rinishida berilgan: yosh 16 dan kichik YOKI nafaqada. Odil bobo uchun birinchi qism yolg'on, ikkinchi qism esa rost. Diz'yunksiyada bitta rost qism butun shartni rost qiladi, ikkala shartning birdan bajarilishi talab etilmaydi. Javob: beriladi, chunki nafaqa sharti bajarilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dizyunksiya-hayotiy",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#8892fb90"
+    },
+    {
+      "q": "Vakansiya e'lonida «ingliz tilini yoki rus tilini biladigan nomzod» talab qilingan. Nomzod bu tillarning ikkalasini ham bilmaydi. E'lon sharti uning uchun qanday qiymat oladi va nima uchun?",
+      "v": [
+        "Rost, chunki talab faqat bitta tilga tegishli",
+        "Yolg'on, chunki diz'yunksiyaning ikkala qismi ham yolg'on",
+        "Yolg'on, chunki e'londa ikkala tilni bilish talab etilgan",
+        "Aniqlab bo'lmaydi, chunki nomzodning boshqa bilimlari noma'lum"
+      ],
+      "t": 1,
+      "izoh": "«Yoki» bog'lovchisi diz'yunksiyani bildiradi. Diz'yunksiya faqat barcha qismlari yolg'on bo'lgandagina yolg'on qiymat beradi. Nomzod na ingliz, na rus tilini bilgani uchun ikkala qism ham yolg'on. Demak talab bajarilmagan. Javob: yolg'on, chunki diz'yunksiyaning ikkala qismi ham yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "dizyunksiya-hayotiy",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#3a14913c"
+    },
+    {
+      "q": "Do'kon aksiyasida «5 ta kitob sotib olgan yoki 200 000 so'mdan ortiq xarid qilgan» mijozga sovg'a beriladi. Kamola 3 ta kitobga 240 000 so'm sarfladi. Natija qanday bo'ladi va u nimaga asoslanadi?",
+      "v": [
+        "Sovg'a berilmaydi, chunki kitoblar soni yetmagan",
+        "Sovg'a berilmaydi, chunki ikkala shart ham bajarilmagan",
+        "Sovg'a beriladi, chunki ikkala shart ham bajarilgan",
+        "Sovg'a beriladi, chunki xarid summasi sharti bajarilgan"
+      ],
+      "t": 3,
+      "izoh": "Aksiya sharti diz'yunksiya: kitoblar soni 5 ta YOKI summa 200 000 so'mdan ortiq. Kamolada birinchi qism yolg'on, chunki u atigi 3 ta kitob oldi. Ikkinchi qism rost, chunki 240 000 so'm 200 000 so'mdan ko'p. Bitta rost qism diz'yunksiyani rost qilishga yetadi. Javob: sovg'a beriladi, chunki xarid summasi sharti bajarilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "dizyunksiya-hayotiy",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#808fc6fd"
+    },
+    {
+      "q": "Oshxonada mehmonlarga «choy yoki kofe» taklif etildi, Gulnora esa ikkalasini ham oldi. Kundalik nutqdagi «yoki» bilan mantiqiy diz'yunksiya orasidagi farqni to'g'ri izohlang.",
+      "v": [
+        "Mantiqiy diz'yunksiya ikkalasi olingan holda ham rost, kundalik «yoki» esa ko'pincha bittasini tanlashni bildiradi",
+        "Mantiqiy diz'yunksiya ikkalasi olinganda yolg'on bo'ladi, kundalik nutqda esa rost",
+        "Har ikkala holatda ham natija bir xil bo'ladi, farq umuman yo'q",
+        "Mantiqiy diz'yunksiya faqat uchta va undan ortiq qismga qo'llaniladi"
+      ],
+      "t": 0,
+      "izoh": "Matematik mantiqda diz'yunksiya faqat barcha qismlari yolg'on bo'lgandagina yolg'on bo'ladi. Demak choy ham, kofe ham olingan holda ikkala qism rost va diz'yunksiya rost qiymat beradi. Kundalik nutqda esa «yoki» ko'pincha faqat bittasini tanlash ma'nosida ishlatiladi, ya'ni istisnoli ma'no anglatadi. Javob: mantiqiy diz'yunksiya ikkalasi olingan holda ham rost, kundalik «yoki» esa ko'pincha bittasini tanlashni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "dizyunksiya-hayotiy",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#67a1da4c"
+    },
+    {
+      "q": "A va B mulohazalar uchun A ∧ B ifodasining rostlik jadvali to'rt satrdan iborat. Ulardan nechtasida natija rost bo'ladi?",
+      "v": [
+        "0 ta satr",
+        "1 ta satr",
+        "2 ta satr",
+        "4 ta satr"
+      ],
+      "t": 1,
+      "izoh": "Ikki mulohaza to'rt xil qiymatlar juftini beradi: ikkalasi rost, birinchisi rost va ikkinchisi yolg'on, birinchisi yolg'on va ikkinchisi rost, ikkalasi yolg'on. Kon'yunksiya faqat ikkala qism rost bo'lgan birinchi satrdagina rost qiymat beradi. Qolgan uch satrda natija yolg'on chiqadi. Javob: 1 ta satr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "rostlik-jadval-rost-satr",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#1097f332"
+    },
+    {
+      "q": "A ∨ B ifodasining to'rt satrli rostlik jadvalida natija nechta satrda rost qiymat qabul qiladi?",
+      "v": [
+        "1 ta satr",
+        "2 ta satr",
+        "3 ta satr",
+        "4 ta satr"
+      ],
+      "t": 2,
+      "izoh": "Diz'yunksiya faqat ikkala qism ham yolg'on bo'lgan yagona satrda yolg'on bo'ladi. Jadvaldagi satrlar soni to'rtta, ulardan bittasi yolg'on natija beradi. Demak qolgan uchtasida natija rost. Javob: 3 ta satr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "rostlik-jadval-rost-satr",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#b9844a46"
+    },
+    {
+      "q": "Uchta A, B va C mulohaza qatnashgan A ∧ B ∧ C ifodasi uchun rostlik jadvali tuzilmoqda. Jadvalda jami nechta satr bo'ladi va nechtasida natija rost chiqadi?",
+      "v": [
+        "8 satr, ulardan 1 tasida rost",
+        "8 satr, ulardan 3 tasida rost",
+        "6 satr, ulardan 1 tasida rost",
+        "9 satr, ulardan 3 tasida rost"
+      ],
+      "t": 0,
+      "izoh": "Har bir mulohaza ikkita qiymat qabul qiladi, uchta mulohaza uchun kombinatsiyalar soni 2³ = 8 ta bo'ladi. Uch omilli kon'yunksiya faqat uchala mulohaza ham rost bo'lgan yagona satrda rost chiqadi. Satrlar sonini topishda mulohazalar soniga 3 ni ko'paytirish yoki qo'shish keng tarqalgan xato. Javob: 8 satr, ulardan 1 tasida rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rostlik-jadval-rost-satr",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#4dca6d0d"
+    },
+    {
+      "q": "A va B mulohazalar uchun A ∨ ¬B ifodasining rostlik jadvali tuzildi. To'rt satrdan nechtasida bu ifoda rost qiymat oladi?",
+      "v": [
+        "Faqat bitta satrda",
+        "Ikkita satrda",
+        "To'rttala satrda ham",
+        "Uchta satrda"
+      ],
+      "t": 3,
+      "izoh": "A rost va B rost bo'lganda ¬B yolg'on, ammo A rost bo'lgani uchun natija rost. A rost va B yolg'on bo'lganda ikkala qism ham rost, natija rost. A yolg'on va B rost bo'lganda A ham, ¬B ham yolg'on, natija yolg'on. A yolg'on va B yolg'on bo'lganda ¬B rost, natija rost. Demak rost natija uch satrda uchraydi. Javob: uchta satrda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "rostlik-jadval-rost-satr",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#7fe11cef"
+    },
+    {
+      "q": "Rostlik jadvalining bir satrida A yolg'on, B rost deb belgilangan. Shu satrda A ∧ B va A ∨ B ustunlariga qanday qiymatlar yoziladi?",
+      "v": [
+        "Ikkala ustunga ham rost",
+        "Kon'yunksiyaga yolg'on, diz'yunksiyaga rost",
+        "Kon'yunksiyaga rost, diz'yunksiyaga yolg'on",
+        "Ikkala ustunga ham yolg'on"
+      ],
+      "t": 1,
+      "izoh": "Kon'yunksiya barcha qismlarning rost bo'lishini talab qiladi. A yolg'on bo'lgani uchun A ∧ B yolg'on chiqadi. Diz'yunksiya esa kamida bitta rost qism bo'lsa rost bo'ladi. B rost, demak A ∨ B rost. Javob: kon'yunksiyaga yolg'on, diz'yunksiyaga rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "rostlik-jadval-satr-toldirish",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#168ee9d8"
+    },
+    {
+      "q": "Jadvalning ma'lum bir satrida A ∧ B ustunida yolg'on, A ∨ B ustunida esa rost qiymat turibdi. A va B haqida qanday xulosa chiqadi?",
+      "v": [
+        "A va B ning ikkalasi ham rost",
+        "A va B ning ikkalasi ham yolg'on",
+        "A va B qiymatlarini bu ma'lumot bilan aniqlab bo'lmaydi",
+        "A va B dan biri rost, ikkinchisi yolg'on"
+      ],
+      "t": 3,
+      "izoh": "Kon'yunksiya yolg'on ekan, ikkala mulohaza birdaniga rost bo'la olmaydi. Diz'yunksiya rost ekan, kamida bittasi rost bo'lishi shart. Bu ikki shartni bir vaqtda qanoatlantiruvchi yagona hol — bittasi rost, ikkinchisi yolg'on bo'lishi. Javob: A va B dan biri rost, ikkinchisi yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rostlik-jadval-satr-toldirish",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#c2abfdcc"
+    },
+    {
+      "q": "Rostlik jadvalida ¬A ustuni to'ldirilmoqda. A ustunidagi qiymatlar yuqoridan pastga rost, rost, yolg'on, yolg'on tartibida joylashgan. ¬A ustuni qanday bo'ladi?",
+      "v": [
+        "Rost, rost, yolg'on, yolg'on",
+        "Yolg'on, rost, yolg'on, rost",
+        "Yolg'on, yolg'on, rost, rost",
+        "Rost, yolg'on, rost, yolg'on"
+      ],
+      "t": 2,
+      "izoh": "Inkor har bir satrda qiymatni teskarisiga aylantiradi va satrlar tartibini o'zgartirmaydi. Birinchi satrda A rost, demak ¬A yolg'on. Ikkinchi satrda ham xuddi shunday. Uchinchi va to'rtinchi satrlarda A yolg'on, demak ¬A rost bo'ladi. Javob: yolg'on, yolg'on, rost, rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "rostlik-jadval-satr-toldirish",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#bf4809a4"
+    },
+    {
+      "q": "O'quvchi rostlik jadvalining oxirgi satrini to'ldirmoqda: A yolg'on, B yolg'on. ¬A ∧ B, A ∨ ¬B va ¬(A ∨ B) ifodalarining qiymatlarini shu tartibda toping.",
+      "v": [
+        "Yolg'on, rost, rost",
+        "Rost, yolg'on, rost",
+        "Yolg'on, yolg'on, rost",
+        "Rost, rost, yolg'on"
+      ],
+      "t": 0,
+      "izoh": "A yolg'on bo'lgani uchun ¬A rost, lekin B yolg'on, demak ¬A ∧ B kon'yunksiyasi yolg'on. B yolg'on bo'lgani uchun ¬B rost, shuning uchun A ∨ ¬B diz'yunksiyasi rost. A ∨ B da ikkala qism yolg'on, ya'ni u yolg'on, uning inkori esa rost. Javob: yolg'on, rost, rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "rostlik-jadval-satr-toldirish",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#f2d609b6"
+    },
+    {
+      "q": "A rost, B yolg'on va C rost bo'lsa, (A ∧ B) ∨ C ifodasining qiymatini bosqichma-bosqich aniqlang va to'g'ri asosni tanlang.",
+      "v": [
+        "Yolg'on, chunki A ∧ B yolg'on chiqdi",
+        "Rost, chunki C rost bo'lishi diz'yunksiya uchun yetarli",
+        "Rost, chunki A ∧ B rost chiqdi",
+        "Yolg'on, chunki B yolg'on bo'lsa butun ifoda yolg'on bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Avval qavs ichidagi amal bajariladi: A rost, B yolg'on, demak A ∧ B yolg'on. So'ng olingan yolg'on qiymat C bilan diz'yunksiyaga kiritiladi. C rost bo'lgani uchun yolg'on va rostning diz'yunksiyasi rost chiqadi. Javob: rost, chunki C rost bo'lishi diz'yunksiya uchun yetarli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-uch-amal",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#7b13684b"
+    },
+    {
+      "q": "P yolg'on, Q rost bo'lganda ¬P ∧ Q ifodasi qanday qiymat oladi? Amallarning bajarilish tartibiga e'tibor bering.",
+      "v": [
+        "Yolg'on, chunki P yolg'on",
+        "Yolg'on, chunki inkor kon'yunksiyani bekor qiladi",
+        "Rost, chunki ¬P rost va Q ham rost",
+        "Aniqlab bo'lmaydi, chunki inkor faqat qavs ichida ishlaydi"
+      ],
+      "t": 2,
+      "izoh": "Inkor amali kon'yunksiyadan oldin bajariladi va u faqat P ga tegishli bo'ladi. P yolg'on bo'lgani uchun ¬P rost. Endi ikkala qism ham rost, demak kon'yunksiya rost qiymat beradi. Javob: rost, chunki ¬P rost va Q ham rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-uch-amal",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#a82d7c5a"
+    },
+    {
+      "q": "A yolg'on, B rost va C yolg'on bo'lsa, A ∨ (B ∧ ¬C) ifodasining qiymatini toping va sababini ko'rsating.",
+      "v": [
+        "Rost, chunki qavs ichidagi kon'yunksiya rost chiqdi",
+        "Yolg'on, chunki A yolg'on",
+        "Yolg'on, chunki C yolg'on bo'lgani uchun qavs ham yolg'on",
+        "Rost, chunki hisoblashda A ning inkori olinadi"
+      ],
+      "t": 0,
+      "izoh": "Avval C ning inkori topiladi: C yolg'on, demak ¬C rost. So'ng qavs hisoblanadi: B rost va ¬C rost, ya'ni B ∧ ¬C rost. Nihoyat A bilan diz'yunksiya olinadi, unga bitta rost qism yetarli bo'lgani uchun natija rost. Javob: rost, chunki qavs ichidagi kon'yunksiya rost chiqdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-uch-amal",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#20eeac01"
+    },
+    {
+      "q": "A rost, B rost, C yolg'on qiymatlarida ¬(A ∧ B) ∨ (B ∧ C) ifodasi qanday natija beradi?",
+      "v": [
+        "Rost, chunki A ∧ B rost",
+        "Rost, chunki B mulohazasi ikkala qavsda ham qatnashgan",
+        "Aniqlab bo'lmaydi, chunki C ning o'rni noaniq",
+        "Yolg'on, chunki ikkala qavs natijasi ham yolg'on"
+      ],
+      "t": 3,
+      "izoh": "Birinchi qavs: A ∧ B da ikkala qism rost, demak u rost, uning inkori esa yolg'on. Ikkinchi qavs: B rost, C yolg'on, demak B ∧ C yolg'on. Endi yolg'on va yolg'onning diz'yunksiyasi olinadi, u yolg'on chiqadi. Javob: yolg'on, chunki ikkala qavs natijasi ham yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-uch-amal",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#9090ea65"
+    },
+    {
+      "q": "Nazorat ishida (A ∨ B) ∧ ¬A ifodasi berilgan. Bu ifoda rost bo'lishi uchun A va B qanday qiymatlarga ega bo'lishi shart?",
+      "v": [
+        "A rost, B rost",
+        "A rost, B yolg'on",
+        "A yolg'on, B rost",
+        "A yolg'on, B yolg'on"
+      ],
+      "t": 2,
+      "izoh": "Kon'yunksiya rost bo'lishi uchun ikkala qism ham rost bo'lishi shart. Ikkinchi qism ¬A rost ekan, A yolg'on bo'lishi kerak. Birinchi qism A ∨ B ham rost bo'lishi lozim, A yolg'on bo'lgani uchun bu faqat B rost bo'lganda bajariladi. Javob: A yolg'on, B rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-uch-amal",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#c1819d7e"
+    },
+    {
+      "q": "«Bugun havo issiq va shamolli» mulohazasining inkorini de Morgan qoidasi bo'yicha to'g'ri yozgan variantni tanlang.",
+      "v": [
+        "Bugun havo issiq emas va shamolli emas",
+        "Bugun havo issiq emas yoki shamolli emas",
+        "Bugun havo salqin va shamolsiz",
+        "Bugun havo issiq yoki shamolli"
+      ],
+      "t": 1,
+      "izoh": "De Morgan qoidasiga ko'ra kon'yunksiyaning inkori qismlar inkorining diz'yunksiyasiga aylanadi, ya'ni ¬(A ∧ B) ifodasi ¬A ∨ ¬B ga teng kuchli. Bunda «va» bog'lovchisi «yoki» ga o'zgaradi, har bir qism esa alohida inkor qilinadi. Ikkala inkorni «va» bilan qoldirish eng ko'p uchraydigan xato. Javob: bugun havo issiq emas yoki shamolli emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "de-morgan-konyunksiya",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#4d2f2599"
+    },
+    {
+      "q": "Talaba «Men imtihonni topshirdim va stipendiya oldim» dedi. Uning bu gapi yolg'on bo'lishi uchun qanday hol ro'y bergan bo'lishi kerak?",
+      "v": [
+        "U imtihonni topshirmagan yoki stipendiya olmagan",
+        "U imtihonni topshirmagan va stipendiya olmagan",
+        "U imtihonni topshirgan, shu bilan birga stipendiya ham olgan",
+        "U imtihonni topshirgan, lekin stipendiyani rad etgan"
+      ],
+      "t": 0,
+      "izoh": "Gap ikki qismli kon'yunksiya bo'lib, u faqat ikkala qism rost bo'lgandagina rost bo'ladi. Demak yolg'on bo'lishi uchun hech bo'lmaganda bitta qismning buzilishi kifoya. De Morgan qoidasi bo'yicha kon'yunksiya inkori inkorlarning diz'yunksiyasiga aylanadi. Javob: u imtihonni topshirmagan yoki stipendiya olmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "de-morgan-konyunksiya",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#82336d0e"
+    },
+    {
+      "q": "«x soni 3 ga va 5 ga bo'linadi» mulohazasining inkorini sonlar tili bilan to'g'ri ifodalagan variantni toping.",
+      "v": [
+        "x soni 3 ga ham, 5 ga ham bo'linmaydi",
+        "x soni 15 ga qoldiqsiz bo'linadi",
+        "x soni 3 ga bo'linadi, lekin 5 ga bo'linmaydi",
+        "x soni 3 ga bo'linmaydi yoki 5 ga bo'linmaydi"
+      ],
+      "t": 3,
+      "izoh": "Berilgan mulohaza ikki shartning kon'yunksiyasi. De Morgan qoidasiga ko'ra uning inkori inkorlarning diz'yunksiyasi bo'ladi, ya'ni qismlar «yoki» bilan bog'lanadi. Ikkala bo'linishning ham bajarilmasligi bu inkorning faqat bitta xususiy holi, umumiy ta'rifi emas. 15 ga bo'linish esa aksincha, dastlabki mulohazaga mos keladi. Javob: x soni 3 ga bo'linmaydi yoki 5 ga bo'linmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "de-morgan-konyunksiya",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#a9abb82e"
+    },
+    {
+      "q": "Sayohat agentligi «vizasi ham, sug'urtasi ham rasmiylashtirilgan» mijozlarni yo'lga chiqaradi. Mijoz yo'lga chiqarilmagan bo'lsa, bu holat qanday ifodalanadi?",
+      "v": [
+        "Vizasi ham, sug'urtasi ham rasmiylashtirilmagan",
+        "Vizasi rasmiylashtirilgan, sug'urtasi esa rasmiylashtirilmagan",
+        "Vizasi rasmiylashtirilmagan yoki sug'urtasi rasmiylashtirilmagan",
+        "Vizasi va sug'urtasi bir vaqtning o'zida rasmiylashtirilgan"
+      ],
+      "t": 2,
+      "izoh": "Yo'lga chiqarish sharti kon'yunksiya ko'rinishida berilgan. U bajarilmagan bo'lsa, kon'yunksiyaning inkori olinadi. De Morgan qoidasiga ko'ra bu inkorlarning diz'yunksiyasiga aylanadi, ya'ni hech bo'lmaganda bitta hujjat rasmiylashtirilmagan. Ikkala hujjatning ham yo'qligi bu holning faqat bitta ko'rinishi. Javob: vizasi rasmiylashtirilmagan yoki sug'urtasi rasmiylashtirilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "de-morgan-konyunksiya",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#56921191"
+    },
+    {
+      "q": "«Dilshod shanba yoki yakshanba kuni ishlaydi» mulohazasining inkorini to'g'ri yozgan variantni tanlang.",
+      "v": [
+        "Dilshod na shanba, na yakshanba kuni ishlaydi",
+        "Dilshod shanba kuni ishlamaydi yoki yakshanba kuni ishlamaydi",
+        "Dilshod shanba kuni ishlaydi, yakshanba kuni esa dam oladi",
+        "Dilshod hafta davomida umuman ishlamaydi"
+      ],
+      "t": 0,
+      "izoh": "De Morgan qoidasining ikkinchi ko'rinishi diz'yunksiyaga tegishli: ¬(A ∨ B) ifodasi ¬A ∧ ¬B ga teng kuchli. Ya'ni «yoki» bog'lovchisi «va» ga aylanadi va har bir qism alohida inkor qilinadi. Demak Dilshod bu ikki kunning hech birida ishlamaydi. Hafta davomida umuman ishlamaslik esa ortiqcha kuchli xulosa. Javob: Dilshod na shanba, na yakshanba kuni ishlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "de-morgan-dizyunksiya",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#ea5de074"
+    },
+    {
+      "q": "«n soni 2 ga yoki 7 ga bo'linadi» mulohazasi yolg'on ekani ma'lum bo'ldi. Shu shartga teng kuchli mulohazani tanlang.",
+      "v": [
+        "n soni 14 ga bo'linadi",
+        "n soni 2 ga bo'linadi, lekin 7 ga bo'linmaydi",
+        "n soni 2 ga bo'linmaydi yoki 7 ga bo'linmaydi",
+        "n soni 2 ga ham, 7 ga ham bo'linmaydi"
+      ],
+      "t": 3,
+      "izoh": "Diz'yunksiya faqat barcha qismlari yolg'on bo'lgandagina yolg'on chiqadi. Demak «2 ga bo'linadi» ham, «7 ga bo'linadi» ham yolg'on. De Morgan qoidasi bo'yicha diz'yunksiya inkori inkorlarning kon'yunksiyasiga aylanadi. «14 ga bo'linadi» varianti shartga ochiq zid: 2 ga bo'linmaydigan son 14 ga ham bo'lina olmaydi. «2 ga bo'linmaydi yoki 7 ga bo'linmaydi» varianti esa shartdan kelib chiqadi, lekin unga teng kuchli emas — masalan n = 21 soni uchun u rost, holbuki bu son 7 ga bo'linadi. Javob: n soni 2 ga ham, 7 ga ham bo'linmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "de-morgan-dizyunksiya",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#b3a2a708"
+    },
+    {
+      "q": "Maktab nizomida «kechikkan yoki forma kiymagan o'quvchi darsga kiritilmaydi» deyilgan. Darsga kiritilgan o'quvchi haqida nima deyish mumkin?",
+      "v": [
+        "U kechikmagan yoki formani kiygan",
+        "U kechikmagan va formani kiyib kelgan",
+        "U kechikkan, lekin formani kiyib olgan",
+        "U forma kiymagan, ammo o'z vaqtida yetib kelgan"
+      ],
+      "t": 1,
+      "izoh": "Kiritmaslik sharti diz'yunksiya ko'rinishida: kechikdi YOKI forma kiymadi. O'quvchi kiritilgan ekan, demak bu diz'yunksiya yolg'on bo'lgan. Diz'yunksiya faqat ikkala qismi yolg'on bo'lganda yolg'on chiqadi, ya'ni u kechikmagan va formani kiygan. De Morgan qoidasi ham aynan shu natijani beradi. Javob: u kechikmagan va formani kiyib kelgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "de-morgan-dizyunksiya",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#ac328dd9"
+    },
+    {
+      "q": "¬(A ∨ ¬B) ifodasini de Morgan qoidasi yordamida soddalashtiring va unga teng kuchli ifodani tanlang.",
+      "v": [
+        "¬A ∨ B",
+        "A ∧ ¬B",
+        "¬A ∧ B",
+        "A ∨ ¬B"
+      ],
+      "t": 2,
+      "izoh": "De Morgan qoidasiga ko'ra diz'yunksiya inkori qismlar inkorining kon'yunksiyasiga aylanadi. Shunga ko'ra ¬(A ∨ ¬B) ifodasi ¬A ∧ ¬(¬B) ko'rinishini oladi. Ikkinchi ko'paytuvchida qo'shaloq inkor hosil bo'ldi, u B ga qisqaradi. Natijada ¬A ∧ B qoladi. Javob: ¬A ∧ B.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "de-morgan-dizyunksiya",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#1b649c7e"
+    },
+    {
+      "q": "Quyidagi sonlardan qaysi biri uchun «son 4 ga bo'linadi va son 30 dan katta» mulohazasi rost bo'ladi?",
+      "v": [
+        "28",
+        "36",
+        "45",
+        "26"
+      ],
+      "t": 1,
+      "izoh": "Kon'yunksiya rost bo'lishi uchun ikkala shart ham bir vaqtda bajarilishi kerak. 28 soni 4 ga bo'linadi, lekin 30 dan katta emas. 45 soni 30 dan katta, ammo 4 ga bo'linmaydi. 26 soni esa ikkala shartni ham qanoatlantirmaydi. 36 soni 4 ga bo'linadi va 30 dan katta, demak faqat u mos keladi. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonli-konyunksiya-tanlash",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#025fe989"
+    },
+    {
+      "q": "Bo'sh vaqt to'garagiga yoshi 12 dan katta va bo'yi 140 sm dan baland bolalar qabul qilinadi. To'rt nomzoddan qaysi biri ikkala shartni ham qanoatlantiradi?",
+      "v": [
+        "Sanjar: 11 yosh, bo'yi 152 sm",
+        "Ozoda: 14 yosh, bo'yi 138 sm",
+        "Bekzod: 12 yosh, bo'yi 146 sm",
+        "Madina: 13 yosh, bo'yi 149 sm"
+      ],
+      "t": 3,
+      "izoh": "Ikkala shart ham qat'iy tengsizlik bilan berilgan. Sanjarda yosh 11, ya'ni 12 dan katta emas. Ozodada bo'y 138 sm bo'lib, 140 sm dan baland emas. Bekzodda yosh aynan 12, chegaradagi qiymat esa qat'iy tengsizlikka kirmaydi. Madinada 13 > 12 va 149 > 140, ikkala shart ham bajarilgan. Javob: Madina.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonli-konyunksiya-tanlash",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#e2e2ef0b"
+    },
+    {
+      "q": "Ombordagi qutilarga «og'irligi 20 kg dan kam va hajmi 50 litrdan kichik» degan belgi qo'yiladi. Qaysi quti bu belgiga to'liq mos keladi?",
+      "v": [
+        "Og'irligi 18 kg, hajmi 45 litr",
+        "Og'irligi 22 kg, hajmi 40 litr",
+        "Og'irligi 16 kg, hajmi 58 litr",
+        "Og'irligi 20 kg, hajmi 50 litr"
+      ],
+      "t": 0,
+      "izoh": "Belgi kon'yunksiya ko'rinishida, demak ikkala shart ham bajarilishi shart. Ikkinchi qutida og'irlik 22 kg bo'lib, 20 kg dan kam emas. Uchinchi qutida hajm 58 litr, u 50 litrdan kichik emas. To'rtinchi qutida ikkala kattalik ham aynan chegarada, «kam» va «kichik» shartlariga esa chegara qiymati kirmaydi. Javob: og'irligi 18 kg, hajmi 45 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonli-konyunksiya-tanlash",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#39e551d5"
+    },
+    {
+      "q": "1 dan 30 gacha bo'lgan natural sonlar orasida «son 3 ga bo'linadi va son toq» shartini qanoatlantiruvchi nechta son bor?",
+      "v": [
+        "10 ta",
+        "8 ta",
+        "5 ta",
+        "15 ta"
+      ],
+      "t": 2,
+      "izoh": "Avval 3 ga bo'linadigan sonlarni yozamiz: 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 — jami 10 ta. Endi ular orasidan toq bo'lganlarini ajratamiz: 3, 9, 15, 21, 27. Kon'yunksiya ikkala shartni birdan talab qilgani uchun faqat shu sonlar mos keladi. Ularning soni beshta. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sonli-konyunksiya-tanlash",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#fd38cd3d"
+    },
+    {
+      "q": "Quyidagi sonlardan qaysi biri uchun «son 5 ga bo'linadi yoki son 100 dan katta» mulohazasi yolg'on bo'ladi?",
+      "v": [
+        "35",
+        "120",
+        "55",
+        "47"
+      ],
+      "t": 3,
+      "izoh": "Diz'yunksiya faqat ikkala qismi ham yolg'on bo'lganda yolg'on chiqadi. 35 va 55 sonlari 5 ga bo'linadi, demak ular uchun mulohaza rost. 120 soni 100 dan katta, u ham rost natija beradi. 47 soni na 5 ga bo'linadi, na 100 dan katta, shuning uchun faqat u yolg'on qiymat beradi. Javob: 47.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonli-dizyunksiya-tanlash",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#acc9ae50"
+    },
+    {
+      "q": "Imtiyozli chipta talabalarga yoki 12 yoshgacha bo'lgan bolalarga beriladi. To'rt yo'lovchidan qaysi biri imtiyozdan foydalana olmaydi?",
+      "v": [
+        "Nilufar: talaba, 19 yoshda",
+        "Alisher: talaba emas, 32 yoshda",
+        "Sevara: talaba emas, 9 yoshda",
+        "Otabek: talaba, 24 yoshda"
+      ],
+      "t": 1,
+      "izoh": "Shart diz'yunksiya bo'lgani uchun ikki imkoniyatdan bittasi bajarilsa kifoya. Nilufar va Otabek talaba, demak birinchi qism ular uchun rost. Sevara 9 yoshda, ya'ni ikkinchi qism rost. Alisherda esa na talabalik, na yosh sharti bajarilgan, ikkala qism ham yolg'on. Javob: Alisher: talaba emas, 32 yoshda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonli-dizyunksiya-tanlash",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#61363a03"
+    },
+    {
+      "q": "1 dan 20 gacha bo'lgan natural sonlar ichida «son 4 ga bo'linadi yoki son 7 ga bo'linadi» sharti nechta son uchun bajariladi?",
+      "v": [
+        "5 ta",
+        "9 ta",
+        "7 ta",
+        "2 ta"
+      ],
+      "t": 2,
+      "izoh": "4 ga bo'linadigan sonlar: 4, 8, 12, 16, 20 — jami 5 ta. 7 ga bo'linadigan sonlar: 7 va 14 — jami 2 ta. Ikkala ro'yxatda ham uchraydigan son yo'q, chunki 28 soni 20 dan katta. Diz'yunksiya kamida bitta shart bajarilishini talab qilgani uchun ro'yxatlar birlashtiriladi va 5 + 2 = 7 chiqadi. Javob: 7 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonli-dizyunksiya-tanlash",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#9540b4bf"
+    },
+    {
+      "q": "Sinfdagi 30 o'quvchidan 18 tasi shaxmat, 14 tasi tennis to'garagiga qatnaydi, 7 tasi esa ikkalasiga ham boradi. «Shaxmat yoki tennisga qatnaydi» mulohazasi nechta o'quvchi uchun rost?",
+      "v": [
+        "25 ta",
+        "32 ta",
+        "39 ta",
+        "11 ta"
+      ],
+      "t": 0,
+      "izoh": "Diz'yunksiya kamida bitta to'garakka qatnashni talab qiladi, ya'ni ikki to'plamning birlashmasi izlanadi. Oddiy qo'shishda 18 + 14 = 32 chiqadi, lekin ikkalasiga boradigan 7 o'quvchi ikki marta sanaladi. Shuning uchun ortiqcha sanalgan qism ayiriladi: 32 − 7 = 25. Javob: 25 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sonli-dizyunksiya-tanlash",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#e3ca88bf"
+    },
+    {
+      "q": "x natural soni uchun «x soni 5 dan katta va x soni 9 dan kichik» mulohazasi rost. x qanday qiymatlarni qabul qilishi mumkin?",
+      "v": [
+        "5, 6, 7, 8, 9",
+        "6, 7, 8, 9",
+        "6, 7, 8",
+        "5, 6, 7, 8"
+      ],
+      "t": 2,
+      "izoh": "Kon'yunksiya ikkala tengsizlikning birdan bajarilishini talab qiladi. Birinchi shart x > 5 ko'rinishida, ya'ni 5 sonining o'zi kirmaydi. Ikkinchi shart x < 9, ya'ni 9 ham kirmaydi. Natural sonlar orasida bu ikki chegara oralig'ida 6, 7 va 8 qoladi. Javob: 6, 7, 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-topish-mantiq",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#a8341497"
+    },
+    {
+      "q": "«y soni 4 ga karrali» va «y soni 10 dan kichik» mulohazalarining kon'yunksiyasi rost bo'ladigan barcha natural y qiymatlarini toping.",
+      "v": [
+        "4 va 8",
+        "4, 8 va 12",
+        "2, 4 va 8",
+        "4, 6 va 8"
+      ],
+      "t": 0,
+      "izoh": "4 ga karrali natural sonlar: 4, 8, 12, 16 va shu tartibda davom etadi. Ular ichidan 10 dan kichiklarini tanlaymiz. 12 soni birinchi shartga mos, lekin ikkinchisiga zid. 2 va 6 sonlari esa 4 ga karrali emas. Shunday qilib faqat 4 va 8 qoladi. Javob: 4 va 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-topish-mantiq",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#f52d445f"
+    },
+    {
+      "q": "«m soni 3 ga bo'linadi» mulohazasi rost, «m soni 12 dan katta» mulohazasi esa yolg'on. Natural m ning eng katta qiymati nechaga teng?",
+      "v": [
+        "9",
+        "12",
+        "15",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi mulohaza yolg'on ekan, uning inkori rost bo'ladi, ya'ni m soni 12 dan katta emas va m ≤ 12 shart bajariladi. Birinchi shartga ko'ra m soni 3 ga bo'linishi kerak. 12 dan oshmaydigan va 3 ga bo'linadigan sonlar: 3, 6, 9, 12. Ular orasida eng kattasi 12, chunki chegaradagi 12 ning o'zi shartga kiradi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nomalum-topish-mantiq",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#60ef235a"
+    },
+    {
+      "q": "Butun k soni uchun «k soni manfiy emas» va «k soni 6 dan katta emas» mulohazalari birgalikda rost. Bunday k sonlarining yig'indisi nechaga teng?",
+      "v": [
+        "15",
+        "28",
+        "12",
+        "21"
+      ],
+      "t": 3,
+      "izoh": "Birinchi shart k ≥ 0 ni beradi, chunki «manfiy emas» iborasiga nol ham kiradi. Ikkinchi shart k ≤ 6 ko'rinishida bo'lib, unda 6 sonining o'zi ham qatnashadi. Demak k qiymatlari 0, 1, 2, 3, 4, 5 va 6. Ularning yig'indisi 0 + 1 + 2 + 3 + 4 + 5 + 6 = 21 ga teng. Chegaradagi 6 ni tashlab yuborish yoki 7 ni qo'shib yuborish keng tarqalgan xato. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nomalum-topish-mantiq",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#d6a9731f"
+    },
+    {
+      "q": "Onlayn do'kon yetkazishni bepul qiladi, agar buyurtma summasi 300 000 so'mdan ko'p bo'lsa va manzil shahar ichida bo'lsa. Buyurtma 350 000 so'm, manzil esa tuman markazida. Yetkazish bepul bo'ladimi va nima sababdan?",
+      "v": [
+        "Bepul, chunki summa sharti bajarilgan",
+        "Bepul emas, chunki manzil sharti bajarilmagan",
+        "Bepul, chunki ikkala shart ham bajarilgan",
+        "Bepul emas, chunki summa 300 000 so'mdan kam"
+      ],
+      "t": 1,
+      "izoh": "Bepul yetkazish sharti kon'yunksiya: summa 300 000 so'mdan ko'p VA manzil shahar ichida. Birinchi qism rost, chunki 350 000 so'm 300 000 so'mdan ko'p. Ikkinchi qism yolg'on, chunki manzil shahar chegarasidan tashqarida. Kon'yunksiyada bitta yolg'on qism butun shartni yolg'on qiladi. Javob: bepul emas, chunki manzil sharti bajarilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-shart-tekshirish",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#70cb0a35"
+    },
+    {
+      "q": "Tarif shartiga ko'ra mijoz oyiga 200 kVt·soatdan kam elektr sarflasa yoki avtomatik to'lovga ulangan bo'lsa chegirma oladi. Mijoz 260 kVt·soat sarfladi va avtomatik to'lovga ulangan. Chegirma beriladimi va u nimaga bog'liq?",
+      "v": [
+        "Yo'q, chunki sarf 200 kVt·soatdan oshib ketgan",
+        "Yo'q, chunki ikkala shart ham bajarilmagan",
+        "Ha, chunki avtomatik to'lov sharti bajarilgan",
+        "Ha, chunki ikkala shart ham bajarilgan"
+      ],
+      "t": 2,
+      "izoh": "Chegirma sharti «yoki» bilan berilgan, ya'ni bu diz'yunksiya. Birinchi qism yolg'on, chunki 260 kVt·soat 200 kVt·soatdan ko'p. Ikkinchi qism rost, chunki mijoz avtomatik to'lovga ulangan. Diz'yunksiyada bitta rost qism butun shartni rost qilishga yetadi. Javob: ha, chunki avtomatik to'lov sharti bajarilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-shart-tekshirish",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#94e5fdb4"
+    },
+    {
+      "q": "Grant «o'rtacha bahosi 4,5 dan yuqori va ijtimoiy faolligi tasdiqlangan» talabalarga beriladi. Ro'yxatdagi to'rt nomzoddan kim grantga loyiq deb topiladi?",
+      "v": [
+        "Shahnoza: o'rtacha baho 4,8, faollik tasdiqlangan",
+        "Kamron: o'rtacha baho 4,5, faollik tasdiqlangan",
+        "Lola: o'rtacha baho 4,9, faollik tasdiqlanmagan",
+        "Ulug'bek: o'rtacha baho 4,2, faollik tasdiqlangan"
+      ],
+      "t": 0,
+      "izoh": "Shart ikki qismli kon'yunksiya, demak ikkala talab ham bajarilishi lozim. Kamronda o'rtacha baho aynan 4,5 bo'lib, u 4,5 dan yuqori emas, chegaradagi qiymat qat'iy tengsizlikka kirmaydi. Lolada faollik tasdiqlanmagan, Ulug'bekda esa baho yetarli emas. Shahnozada ikkala qism ham rost. Javob: Shahnoza.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-shart-tekshirish",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#391409d6"
+    },
+    {
+      "q": "Basseynga kirish uchun shifokor ma'lumotnomasi va suzish shapkachasi bo'lishi shart. Zufarda ma'lumotnoma bor, shapkacha esa yo'q. Uni basseynga kiritishadimi va nima uchun?",
+      "v": [
+        "Kiritishadi, chunki asosiy hujjat qo'lida bor",
+        "Kiritishadi, chunki shapkachani ijaraga olsa bo'ladi",
+        "Kiritishmaydi, chunki ma'lumotnomasi ham yo'q",
+        "Kiritishmaydi, chunki kon'yunksiyaning bir qismi bajarilmagan"
+      ],
+      "t": 3,
+      "izoh": "Kirish sharti ikki talabning kon'yunksiyasi: ma'lumotnoma bor VA shapkacha bor. Zufarda birinchi qism rost, ikkinchisi esa yolg'on. Kon'yunksiya barcha qismlarning rost bo'lishini talab qilgani uchun natija yolg'on chiqadi. Javob: kiritishmaydi, chunki kon'yunksiyaning bir qismi bajarilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-shart-tekshirish",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#c324292f"
+    },
+    {
+      "q": "Quyidagi ifodalardan qaysi biri ¬(A ∧ B) ifodasiga har qanday qiymatlarda teng kuchli bo'ladi?",
+      "v": [
+        "¬A ∨ ¬B",
+        "¬A ∧ ¬B",
+        "A ∨ B",
+        "¬(A ∨ B)"
+      ],
+      "t": 0,
+      "izoh": "De Morgan qoidasi kon'yunksiya inkorini inkorlarning diz'yunksiyasiga aylantiradi. Buni tekshirish uchun A rost, B yolg'on qiymatlarini olamiz: chap tomonda A ∧ B yolg'on, uning inkori rost. O'ng tomonda ¬A yolg'on, ¬B rost, ularning diz'yunksiyasi rost. Qiymatlar mos keldi. ¬A ∧ ¬B esa shu holda yolg'on chiqadi, demak u teng kuchli emas. Javob: ¬A ∨ ¬B.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mantiqiy-ekvivalent",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#3c8ebd23"
+    },
+    {
+      "q": "A ∧ A ifodasi va A ∨ A ifodasi har qanday A uchun qanday natija beradi? To'g'ri xulosani tanlang.",
+      "v": [
+        "Ikkalasi ham har doim rost bo'ladi",
+        "Ikkalasi ham A ning qiymatiga teng bo'ladi",
+        "Kon'yunksiya rost, diz'yunksiya yolg'on bo'ladi",
+        "Ikkalasi ham har doim yolg'on bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "A rost bo'lganda A ∧ A rost bilan rostning kon'yunksiyasi bo'lib, u rost chiqadi. A yolg'on bo'lganda esa natija yolg'on. Xuddi shu tarzda A ∨ A ham A ning qiymatini takrorlaydi. Bu xossa idempotentlik deb ataladi va ikkala amalda ham o'rinli. Javob: ikkalasi ham A ning qiymatiga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mantiqiy-ekvivalent",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#074770c3"
+    },
+    {
+      "q": "A ∧ ¬A va A ∨ ¬A ifodalarining qiymatlari haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Ikkalasi ham A ning qiymatiga bog'liq bo'ladi",
+        "Birinchisi har doim rost, ikkinchisi har doim yolg'on",
+        "Ikkalasi ham har doim rost bo'ladi",
+        "Birinchisi har doim yolg'on, ikkinchisi har doim rost"
+      ],
+      "t": 3,
+      "izoh": "Mulohaza va uning inkori hech qachon birdaniga rost bo'la olmaydi, shuning uchun A ∧ ¬A kon'yunksiyasi har doim yolg'on — bu qarama-qarshilik qonuni. Ikkinchi tomondan ular birdaniga yolg'on ham bo'la olmaydi, shuning uchun A ∨ ¬A har doim rost — bu uchinchisi istisno qonuni. Javob: birinchisi har doim yolg'on, ikkinchisi har doim rost.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mantiqiy-ekvivalent",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#a4f8db58"
+    },
+    {
+      "q": "Ikki ifoda berilgan: ¬A ∨ ¬B va ¬(A ∨ B). Ular teng kuchlimi? A rost va B yolg'on holini tekshirib javob bering.",
+      "v": [
+        "Teng kuchli, chunki ikkalasida ham inkor qatnashgan",
+        "Teng kuchli, chunki de Morgan qoidasi aynan shuni beradi",
+        "Teng kuchli emas: birinchisi rost, ikkinchisi yolg'on",
+        "Teng kuchli emas: birinchisi yolg'on, ikkinchisi rost"
+      ],
+      "t": 2,
+      "izoh": "A rost, B yolg'on deb olamiz. Birinchi ifodada ¬A yolg'on, ¬B rost, ularning diz'yunksiyasi rost chiqadi. Ikkinchi ifodada A ∨ B rost, uning inkori esa yolg'on. Qiymatlar bir xil chiqmadi, demak ifodalar teng kuchli emas. De Morgan qoidasi ¬(A ∨ B) ni ¬A ∧ ¬B ga aylantiradi, diz'yunksiyaga emas. Javob: teng kuchli emas: birinchisi rost, ikkinchisi yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mantiqiy-ekvivalent",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#00aab36b"
+    },
+    {
+      "q": "Ota o'g'liga «Dam olish kuni biz bog'ga ham boramiz, muzeyni ham ko'ramiz» dedi. Yakshanba kuni faqat bog'ga borishdi. Otaning va'dasi qanday baholanadi?",
+      "v": [
+        "Va'da bajarilmadi, chunki kon'yunksiyaning ikkinchi qismi ro'yobga chiqmadi",
+        "Va'da bajarildi, chunki bog'ga borish amalga oshdi",
+        "Va'da bajarildi, chunki dam olish kuni bo'ldi",
+        "Va'dani baholab bo'lmaydi, chunki muzey yopiq bo'lishi mumkin"
+      ],
+      "t": 0,
+      "izoh": "Va'da ikki ishning kon'yunksiyasi: bog'ga borish VA muzeyni ko'rish. Kon'yunksiya faqat ikkala qism bajarilganda rost bo'ladi. Bu yerda birinchi qism bajarilgan, ikkinchisi esa bajarilmagan. Demak umumiy va'da yolg'onga aylandi. Javob: va'da bajarilmadi, chunki kon'yunksiyaning ikkinchi qismi ro'yobga chiqmadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vada-buzilishi",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#d89d0daf"
+    },
+    {
+      "q": "Sotuvchi «Bu telefon kafolatli va bir yil davomida xizmat ko'rsatish bepul» dedi. Xaridor kafolat borligini, ammo xizmat pullik ekanini bildi. Sotuvchining gapi qanday?",
+      "v": [
+        "Rost, chunki kafolat haqiqatan mavjud",
+        "Rost, chunki xizmat baribir ko'rsatiladi",
+        "Aniqlab bo'lmaydi, chunki xizmat narxi aytilmagan",
+        "Yolg'on, chunki ikkinchi qism haqiqatga zid chiqdi"
+      ],
+      "t": 3,
+      "izoh": "Sotuvchining gapi ikki tasdiqning kon'yunksiyasi. Birinchi tasdiq rost, chunki kafolat mavjud. Ikkinchi tasdiq yolg'on, chunki xizmat bepul emas. Kon'yunksiyada bitta yolg'on qism butun gapni yolg'onga aylantiradi. Javob: yolg'on, chunki ikkinchi qism haqiqatga zid chiqdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vada-buzilishi",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#006355b2"
+    },
+    {
+      "q": "Tashkilotchi «Ishtirokchilarga tushlik yoki yo'l xarajati qoplanadi» deb e'lon qildi. Ishtirokchiga faqat yo'l puli qoplandi. E'londagi va'da buzildimi va bu qanday izohlanadi?",
+      "v": [
+        "Buzildi, chunki tushlik berilmadi",
+        "Buzilmadi, chunki diz'yunksiyada bitta qismning bajarilishi yetarli",
+        "Buzildi, chunki ikkala qism ham bajarilishi kerak edi",
+        "Buzilmadi, chunki ikkala qism ham bajarilgan"
+      ],
+      "t": 1,
+      "izoh": "E'londa «yoki» bog'lovchisi ishlatilgan, demak bu diz'yunksiya. Diz'yunksiya kamida bitta qismi rost bo'lsa rost qiymat beradi. Yo'l xarajati qoplangani uchun ikkinchi qism rost va e'lon bajarilgan hisoblanadi. Javob: buzilmadi, chunki diz'yunksiyada bitta qismning bajarilishi yetarli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vada-buzilishi",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#c26a52bc"
+    },
+    {
+      "q": "Ustoz «Kurs oxirida sertifikat ham beriladi, ish bilan ham ta'minlanadi» dedi. Uning gapini rad etish uchun tinglovchiga qanday dalil yetarli bo'ladi?",
+      "v": [
+        "Faqat ikkala va'da ham bajarilmaganini isbotlash",
+        "Sertifikat berilganini hujjat bilan tasdiqlash",
+        "Bu ikki va'dadan hech bo'lmaganda bittasi bajarilmaganini ko'rsatish",
+        "Kursning davomiyligi haqidagi ma'lumotni keltirish"
+      ],
+      "t": 2,
+      "izoh": "Ustozning gapi kon'yunksiya bo'lgani uchun u faqat ikkala va'da bajarilgandagina rost. De Morgan qoidasiga ko'ra uning inkori inkorlarning diz'yunksiyasi, ya'ni kamida bittasi bajarilmagan degani. Demak bitta buzilgan va'da butun gapni rad etishga yetadi, ikkalasini ham isbotlash shart emas. Javob: bu ikki va'dadan hech bo'lmaganda bittasi bajarilmaganini ko'rsatish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vada-buzilishi",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#90b804a6"
+    },
+    {
+      "q": "Aziz «Men qutini ochdim va ichida kitob bor edi» dedi. Bobur esa «Aziz qutini ochmadi yoki ichida kitob yo'q edi» dedi. Ikkalasining gapi bir vaqtda rost bo'la oladimi?",
+      "v": [
+        "Yo'q, chunki Bobur aynan Azizning gapi inkorini aytdi",
+        "Ha, agar quti ikki marta ochilgan bo'lsa",
+        "Ha, chunki ular har xil bog'lovchi ishlatgan",
+        "Aniqlab bo'lmaydi, chunki qutining ichi noma'lum"
+      ],
+      "t": 0,
+      "izoh": "Azizning gapi A ∧ B ko'rinishida: quti ochildi va ichida kitob bor. Boburning gapi esa ¬A ∨ ¬B ko'rinishida. De Morgan qoidasiga ko'ra ¬A ∨ ¬B aynan A ∧ B ning inkoriga teng kuchli. Mulohaza va uning inkori bir vaqtda rost bo'la olmaydi. Javob: yo'q, chunki Bobur aynan Azizning gapi inkorini aytdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "guvohlik-tahlil",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#b1b5880c"
+    },
+    {
+      "q": "Sardor «Bugun men kutubxonaga bordim yoki kitobni qaytardim» dedi. Keyin u kutubxonaga bormagani aniqlandi, ammo gapi rost ekani tasdiqlandi. Qanday xulosa chiqadi?",
+      "v": [
+        "U kitobni ham qaytarmagan",
+        "Uning gapi aslida yolg'on bo'lgan",
+        "Xulosa chiqarish uchun ma'lumot yetarli emas",
+        "U kitobni albatta qaytargan"
+      ],
+      "t": 3,
+      "izoh": "Sardorning gapi diz'yunksiya bo'lib, uning rostligi berilgan. Diz'yunksiya rost bo'lishi uchun kamida bitta qism rost bo'lishi shart. Birinchi qism yolg'on ekani aniqlandi, demak rostlikni faqat ikkinchi qism ta'minlashi mumkin. Javob: u kitobni albatta qaytargan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "guvohlik-tahlil",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#04ce3b28"
+    },
+    {
+      "q": "Sinf sardori aytdi: «Jasur keldi va Malika kelmadi» mulohazasi yolg'on, «Jasur keldi» mulohazasi esa rost. Malika haqida nima deyish mumkin?",
+      "v": [
+        "Malika kelmagan",
+        "Malika kelgan",
+        "Malika haqida umuman xulosa chiqarib bo'lmaydi",
+        "Malika Jasurdan oldin kelgan"
+      ],
+      "t": 1,
+      "izoh": "Yolg'on deb berilgan mulohaza kon'yunksiya ko'rinishida: Jasur keldi VA Malika kelmadi. Kon'yunksiya yolg'on bo'lishi uchun kamida bitta qism yolg'on bo'lishi kerak. «Jasur keldi» rost ekani berilgan, demak yolg'onlik ikkinchi qismdan kelib chiqadi. «Malika kelmadi» yolg'on ekan, uning inkori rost bo'ladi. Javob: Malika kelgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "guvohlik-tahlil",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#6634f037"
+    },
+    {
+      "q": "Tergovda ikki guvoh so'roq qilindi. Birinchisi «Mashina qizil edi va chapga burildi» dedi, ikkinchisi «Mashina qizil emas edi» dedi. Ikkinchisi rost gapirgan bo'lsa, birinchisi haqida nima deyish mumkin?",
+      "v": [
+        "Birinchi guvoh ham to'liq rost gapirgan",
+        "Birinchi guvohning faqat ikkinchi qismi yolg'on",
+        "Birinchi guvohning gapi rostligini aniqlab bo'lmaydi",
+        "Birinchi guvohning gapi albatta yolg'on"
+      ],
+      "t": 3,
+      "izoh": "Birinchi guvohning gapi kon'yunksiya: rang qizil VA burilish chapga. Ikkinchi guvoh rost gapirgan bo'lsa, mashina qizil emas, ya'ni kon'yunksiyaning birinchi qismi yolg'on. Kon'yunksiyada bitta yolg'on qism butun gapni yolg'on qiladi, burilish yo'nalishidan qat'i nazar. Javob: birinchi guvohning gapi albatta yolg'on.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "guvohlik-tahlil",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#a37461ac"
+    },
+    {
+      "q": "A ∧ (A ∨ B) ifodasini soddalashtiring va unga teng kuchli bo'lgan eng sodda yozuvni tanlang.",
+      "v": [
+        "A ∧ B",
+        "A ∨ B",
+        "A",
+        "B"
+      ],
+      "t": 2,
+      "izoh": "A yolg'on bo'lsa, kon'yunksiyaning birinchi ko'paytuvchisi yolg'on va butun ifoda yolg'on chiqadi. A rost bo'lsa, qavs ichidagi A ∨ B ham rost bo'ladi, demak kon'yunksiya rost. Ya'ni ifodaning qiymati har doim A ning qiymatini takrorlaydi. Bu yutilish qonuni deb ataladi. Javob: A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soddalashtirish-yutuvchi",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#fce98d2e"
+    },
+    {
+      "q": "A ∨ (A ∧ B) ifodasi uchun rostlik jadvali tuzilsa, u qaysi sodda ifodaning jadvali bilan aynan bir xil chiqadi?",
+      "v": [
+        "A ∧ B ifodasi bilan",
+        "A ifodasi bilan",
+        "B ifodasi bilan",
+        "A ∨ B ifodasi bilan"
+      ],
+      "t": 1,
+      "izoh": "A rost bo'lgan satrlarda diz'yunksiyaning birinchi qismi rost, demak butun ifoda rost. A yolg'on bo'lgan satrlarda esa A ∧ B ham yolg'on, chunki kon'yunksiya A ning rostligini talab qiladi. Natijada ustundagi qiymatlar A ustuni bilan aynan mos tushadi. Javob: A ifodasi bilan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soddalashtirish-yutuvchi",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#3dd3b2b3"
+    },
+    {
+      "q": "Do'kon aksiyasida ikki shart tekshiriladi: «xarid 100 000 so'mdan ortiq» hamda «xarid 100 000 so'mdan ortiq yoki mijoz doimiy». Ularning kon'yunksiyasi qanday sodda shartga keltiriladi?",
+      "v": [
+        "Xarid 100 000 so'mdan ortiq",
+        "Mijoz doimiy mijozlar ro'yxatida",
+        "Xarid 100 000 so'mdan ortiq va mijoz doimiy",
+        "Xarid 100 000 so'mdan ortiq yoki mijoz doimiy"
+      ],
+      "t": 0,
+      "izoh": "Birinchi shartni A, «mijoz doimiy» shartini B deb belgilaymiz. Ifoda A ∧ (A ∨ B) ko'rinishini oladi. A rost bo'lsa qavs ham avtomatik rost bo'ladi va natija rost chiqadi, A yolg'on bo'lsa esa natija yolg'on. Demak butun shart faqat A ga bog'liq ekan. Javob: xarid 100 000 so'mdan ortiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "soddalashtirish-yutuvchi",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#0ecd1a8d"
+    },
+    {
+      "q": "«Ali suzishni biladi, lekin velosiped hayday olmaydi» gapini formulaga aylantiring, bunda A — suzishni biladi, V — velosiped haydaydi.",
+      "v": [
+        "A ∨ ¬V",
+        "¬A ∧ V",
+        "A ∧ ¬V",
+        "¬(A ∧ V)"
+      ],
+      "t": 2,
+      "izoh": "Gapning birinchi qismi A ni tasdiqlaydi. Ikkinchi qismi velosiped haydash imkonini rad etadi, ya'ni ¬V hosil bo'ladi. «Lekin» bog'lovchisi mantiqda «va» kabi ishlaydi va kon'yunksiya beradi. Javob: A ∧ ¬V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matn-formulaga",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#f47a653d"
+    },
+    {
+      "q": "«Bilet na naqd pulga, na plastik kartaga sotiladi» gapini formulaga aylantiring, bunda N — naqd pulga sotiladi, K — kartaga sotiladi.",
+      "v": [
+        "¬N ∧ ¬K",
+        "¬N ∨ ¬K",
+        "¬(N ∧ K)",
+        "N ∨ K"
+      ],
+      "t": 0,
+      "izoh": "«Na … na …» qurilishi ikkala imkonni ham birdan rad etadi. Demak N yolg'on va K ham yolg'on bo'lishi kerak, ya'ni ¬N bilan ¬K bir vaqtda bajariladi. Bunday birgalikdagi talab kon'yunksiya orqali yoziladi. Javob: ¬N ∧ ¬K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matn-formulaga",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#5a210c3d"
+    },
+    {
+      "q": "«Tanlovga yoshi 16 dan katta yoki maxsus ruxsati bor ishtirokchilar qabul qilinadi» shartini formulaga aylantiring, bunda Y — yoshi 16 dan katta, R — maxsus ruxsati bor.",
+      "v": [
+        "Y ∧ R",
+        "Y ∨ R",
+        "¬Y ∨ R",
+        "Y ∧ ¬R"
+      ],
+      "t": 1,
+      "izoh": "Shartda «yoki» bog'lovchisi ishlatilgan, u mantiqda diz'yunksiyani bildiradi. Diz'yunksiya ikki imkoniyatdan hech bo'lmaganda bittasining bajarilishini talab qiladi. Bu yerga «va» belgisini qo'yish shartni asossiz qattiqlashtirib yuboradi. Javob: Y ∨ R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matn-formulaga",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#0b26e261"
+    },
+    {
+      "q": "«Bu son juft emas va uchga bo'linmaydi» gapini formulaga aylantiring, bunda J — son juft, U — son uchga bo'linadi.",
+      "v": [
+        "¬J ∨ ¬U",
+        "J ∧ ¬U",
+        "¬J ∨ U",
+        "¬J ∧ ¬U"
+      ],
+      "t": 3,
+      "izoh": "Gapda ikkita rad etish bor: son juft emas, ya'ni ¬J, hamda uchga bo'linmaydi, ya'ni ¬U. Ular «va» bog'lovchisi bilan birlashtirilgan, demak kon'yunksiya olinadi. Natijada ¬J ∧ ¬U hosil bo'ladi, bu de Morgan qoidasi bo'yicha J ∨ U ning inkoriga ham teng kuchli. Javob: ¬J ∧ ¬U.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-formulaga",
+      "id": "matematika_disk_m02-mulohazalar-inkor-konyunksiya-va-dizyunksiya#7d66340d"
+    }
+  ]
+}

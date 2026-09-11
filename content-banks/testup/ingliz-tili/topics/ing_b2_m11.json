@@ -1,0 +1,1306 @@
+{
+  "nom": "Causative (have sth done)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "We ___ last month; a builder did it in a week.",
+      "v": [
+        "had the kitchen painted",
+        "painted the kitchen",
+        "had painted the kitchen",
+        "have the kitchen painted"
+      ],
+      "t": 0,
+      "izoh": "Boshqa odam qildi — had + object + V3 (#124).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#5e05a71e"
+    },
+    {
+      "q": "I ___ my teeth ___ twice a year. (Present Simple)",
+      "v": [
+        "have / checked",
+        "have / check",
+        "get / checking",
+        "had / checked"
+      ],
+      "t": 0,
+      "izoh": "have + object + V3, zamon have da.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#f9281247"
+    },
+    {
+      "q": "Find the mistake: 'She had her dress making for the wedding.'",
+      "v": [
+        "She",
+        "had",
+        "her dress",
+        "making"
+      ],
+      "t": 3,
+      "izoh": "Object dan keyin V3: made.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#e0257ae8"
+    },
+    {
+      "q": "They ___ their windows ___ at the moment. (Present Continuous)",
+      "v": [
+        "get / cleaned",
+        "got / cleaned",
+        "are getting / clean",
+        "are getting / cleaned"
+      ],
+      "t": 3,
+      "izoh": "Zamon get da: are getting … cleaned.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#6ff7f6e8"
+    },
+    {
+      "q": "The teacher ___ the pupils ___ their notebooks before the bell.",
+      "v": [
+        "got / hand in",
+        "got / to hand in",
+        "made / to hand in",
+        "had / to hand in"
+      ],
+      "t": 1,
+      "izoh": "get + person + to + verb.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#bb5eba2b"
+    },
+    {
+      "q": "The coach ___ us ___ the drill again.",
+      "v": [
+        "made / to repeat",
+        "got / repeat",
+        "made / repeat",
+        "let / to repeat"
+      ],
+      "t": 2,
+      "izoh": "make + person + verb, to yo'q.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#c3fa18e2"
+    },
+    {
+      "q": "Which sentence means «a mechanic repaired my car»?",
+      "v": [
+        "I repaired my car.",
+        "My car repaired.",
+        "I had repaired my car.",
+        "I had my car repaired."
+      ],
+      "t": 3,
+      "izoh": "Causative — had my car repaired.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#9a18dcec"
+    },
+    {
+      "q": "My cousin ___ his laptop ___ at the airport last summer.",
+      "v": [
+        "had / stolen",
+        "had / steal",
+        "got / stealing",
+        "was / stolen"
+      ],
+      "t": 0,
+      "izoh": "Yomon tajriba: had + object + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#0988e636"
+    },
+    {
+      "q": "Find the mistake: 'My father let me to drive his car.'",
+      "v": [
+        "My father",
+        "let",
+        "me to drive",
+        "his car"
+      ],
+      "t": 2,
+      "izoh": "let + person + verb, to yo'q.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#2f666ef9"
+    },
+    {
+      "q": "You should ___ the brakes ___ before the trip.",
+      "v": [
+        "get / check",
+        "get / checking",
+        "have / to check",
+        "have / checked"
+      ],
+      "t": 3,
+      "izoh": "Modal + have + object + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#6a5e8f7f"
+    },
+    {
+      "q": "We are going to ___ the carpet ___ on Friday.",
+      "v": [
+        "have / clean",
+        "have / cleaned",
+        "get / cleaning",
+        "make / cleaned"
+      ],
+      "t": 1,
+      "izoh": "have + object + V3: cleaned.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#ea339a34"
+    },
+    {
+      "q": "Find the mistake: 'I'll have my assistant to send you the file.'",
+      "v": [
+        "I'll have",
+        "my assistant",
+        "to send",
+        "you the file"
+      ],
+      "t": 2,
+      "izoh": "have + person + verb, to yo'q (get + person + to).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#8bb10ff7"
+    },
+    {
+      "q": "The manager had his assistant ___ the report.",
+      "v": [
+        "prepare",
+        "prepared",
+        "to prepare",
+        "preparing"
+      ],
+      "t": 0,
+      "izoh": "have sb do = V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#0cec69fd"
+    },
+    {
+      "q": "I must get my eyes ___ this month.",
+      "v": [
+        "tested",
+        "test",
+        "testing",
+        "to test"
+      ],
+      "t": 0,
+      "izoh": "get sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#d35fef04"
+    },
+    {
+      "q": "She had her passport photos ___ at the mall.",
+      "v": [
+        "taken",
+        "take",
+        "took",
+        "taking"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#c57e593c"
+    },
+    {
+      "q": "How often do you have your car ___?",
+      "v": [
+        "serviced",
+        "service",
+        "servicing",
+        "to service"
+      ],
+      "t": 0,
+      "izoh": "mashina texnik ko'rikdan o'tkaziladi = V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#c4b0557d"
+    },
+    {
+      "q": "They got a builder ___ them a garage.",
+      "v": [
+        "to build",
+        "build",
+        "built",
+        "building"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#58ff1c05"
+    },
+    {
+      "q": "I'd like to have this parcel ___ to Tashkent.",
+      "v": [
+        "delivered",
+        "deliver",
+        "delivering",
+        "to deliver"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#1fff26d9"
+    },
+    {
+      "q": "He got the waiter ___ the bill.",
+      "v": [
+        "to bring",
+        "bring",
+        "brought",
+        "bringing"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#956a0a5c"
+    },
+    {
+      "q": "We had our windows ___ last spring.",
+      "v": [
+        "cleaned",
+        "clean",
+        "cleaning",
+        "to clean"
+      ],
+      "t": 0,
+      "izoh": "get/have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#4d5d3e47"
+    },
+    {
+      "q": "Which part of the sentence is wrong? 'I had my phone repair yesterday.'",
+      "v": [
+        "repair",
+        "had",
+        "my",
+        "yesterday"
+      ],
+      "t": 0,
+      "izoh": "'repair' emas, 'repaired' bo'lishi kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#eb1e6675"
+    },
+    {
+      "q": "Which part is wrong? 'She got the plumber fixed the leak.'",
+      "v": [
+        "fixed",
+        "got",
+        "the plumber",
+        "leak"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do: 'to fix' bo'lishi kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#03aa9709"
+    },
+    {
+      "q": "Which part is wrong? 'We had the painter to paint the fence.'",
+      "v": [
+        "to paint",
+        "had",
+        "the painter",
+        "fence"
+      ],
+      "t": 0,
+      "izoh": "have sb do: 'paint' (V1).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#98284110"
+    },
+    {
+      "q": "Which part is wrong? 'I need get my watch repaired.'",
+      "v": [
+        "get",
+        "need",
+        "my watch",
+        "repaired"
+      ],
+      "t": 0,
+      "izoh": "'to get' bo'lishi kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#db589232"
+    },
+    {
+      "q": "Which part is wrong? 'They had their house painting last month.'",
+      "v": [
+        "painting",
+        "had",
+        "their house",
+        "last month"
+      ],
+      "t": 0,
+      "izoh": "have sth done: 'painted' (V3).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#642091fd"
+    },
+    {
+      "q": "Yesterday I ___ my tooth taken out at the dentist's.",
+      "v": [
+        "had",
+        "have",
+        "having",
+        "haved"
+      ],
+      "t": 0,
+      "izoh": "o'tgan zamon: had.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#0f0ddfa9"
+    },
+    {
+      "q": "Look at your dirty windows! You should ___ them cleaned.",
+      "v": [
+        "get",
+        "got",
+        "getting",
+        "gets"
+      ],
+      "t": 0,
+      "izoh": "should + get (V1).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#a2a2a1f1"
+    },
+    {
+      "q": "Right now she is having her portrait ___.",
+      "v": [
+        "painted",
+        "paint",
+        "painting",
+        "to paint"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#71805e15"
+    },
+    {
+      "q": "Next week we are going to have a new kitchen ___.",
+      "v": [
+        "fitted",
+        "fit",
+        "fitting",
+        "to fit"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#638c4202"
+    },
+    {
+      "q": "The teacher had the students ___ the essay again.",
+      "v": [
+        "rewrite",
+        "rewritten",
+        "to rewrite",
+        "rewriting"
+      ],
+      "t": 0,
+      "izoh": "have sb do = V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#cdecc32e"
+    },
+    {
+      "q": "I couldn't get the printer ___, so I called a technician.",
+      "v": [
+        "to work",
+        "work",
+        "worked",
+        "working"
+      ],
+      "t": 0,
+      "izoh": "get sth TO work.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#b0edea1a"
+    },
+    {
+      "q": "She had her car ___ while she was on holiday.",
+      "v": [
+        "stolen",
+        "steal",
+        "stole",
+        "stealing"
+      ],
+      "t": 0,
+      "izoh": "boshiga tushgan hodisa: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#e055b562"
+    },
+    {
+      "q": "We had our flight ___ because of the weather.",
+      "v": [
+        "cancelled",
+        "cancel",
+        "cancelling",
+        "to cancel"
+      ],
+      "t": 0,
+      "izoh": "noxush hodisa: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#26b58d41"
+    },
+    {
+      "q": "He got his little sister ___ her toys away.",
+      "v": [
+        "to put",
+        "put",
+        "putting",
+        "puts"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#59372376"
+    },
+    {
+      "q": "I'm having my house ___ next month.",
+      "v": [
+        "decorated",
+        "decorate",
+        "decorating",
+        "to decorate"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#aff7e93d"
+    },
+    {
+      "q": "Did you ___ your teeth whitened at the clinic?",
+      "v": [
+        "have",
+        "had",
+        "having",
+        "has"
+      ],
+      "t": 0,
+      "izoh": "savol: did + have (V1).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#c4ed5151"
+    },
+    {
+      "q": "The boss made everyone ___ overtime last Friday.",
+      "v": [
+        "work",
+        "worked",
+        "to work",
+        "working"
+      ],
+      "t": 0,
+      "izoh": "make sb do = V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#ae903041"
+    },
+    {
+      "q": "I got my mother ___ me some money.",
+      "v": [
+        "to lend",
+        "lend",
+        "lent",
+        "lending"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#0eb3dc77"
+    },
+    {
+      "q": "They had a specialist ___ the old painting.",
+      "v": [
+        "restore",
+        "restored",
+        "to restore",
+        "restoring"
+      ],
+      "t": 0,
+      "izoh": "have sb do = V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#b7bd5910"
+    },
+    {
+      "q": "You really should get that cut on your hand ___.",
+      "v": [
+        "looked at",
+        "look at",
+        "looking at",
+        "to look at"
+      ],
+      "t": 0,
+      "izoh": "get sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#a7c640c8"
+    },
+    {
+      "q": "We ___ the carpets cleaned every spring.",
+      "v": [
+        "have",
+        "are having",
+        "had",
+        "has"
+      ],
+      "t": 0,
+      "izoh": "odat: Present Simple 'have'.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#103d15b6"
+    },
+    {
+      "q": "When did you last ___ your eyes tested?",
+      "v": [
+        "have",
+        "had",
+        "having",
+        "has"
+      ],
+      "t": 0,
+      "izoh": "did + have (V1).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#bdefffba"
+    },
+    {
+      "q": "She's getting her wedding dress ___ this week.",
+      "v": [
+        "altered",
+        "alter",
+        "altering",
+        "to alter"
+      ],
+      "t": 0,
+      "izoh": "get sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#bdcd9f33"
+    },
+    {
+      "q": "I had the shop ___ the gift for me.",
+      "v": [
+        "wrap",
+        "wrapped",
+        "to wrap",
+        "wrapping"
+      ],
+      "t": 0,
+      "izoh": "have sb do = V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#c951b31b"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I had my car washed.",
+        "I had my car wash.",
+        "I had wash my car.",
+        "I had washing my car."
+      ],
+      "t": 0,
+      "izoh": "have sth done: had + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#9a16dc9c"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She got him to help her.",
+        "She got him help her.",
+        "She got him helping her.",
+        "She got he to help."
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#9a16dc9c~2"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "We had the roof fixed.",
+        "We had fix the roof.",
+        "We had the roof fixing.",
+        "We had the roof to fix."
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#9a16dc9c~3"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The teacher made us stay late.",
+        "The teacher made us to stay late.",
+        "The teacher made us staying late.",
+        "The teacher made us stayed late."
+      ],
+      "t": 0,
+      "izoh": "make sb do = V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#9a16dc9c~4"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I need to have this shirt ironed.",
+        "I need to have this shirt iron.",
+        "I need have this shirt ironed.",
+        "I need to having this shirt ironed."
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#9a16dc9c~5"
+    },
+    {
+      "q": "My grandfather has his medicine ___ to his home every month.",
+      "v": [
+        "delivered",
+        "deliver",
+        "delivering",
+        "to deliver"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#fab8cacb"
+    },
+    {
+      "q": "We got an electrician ___ the wiring.",
+      "v": [
+        "to replace",
+        "replace",
+        "replaced",
+        "replacing"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#f9671cee"
+    },
+    {
+      "q": "She had her essay ___ by a native speaker.",
+      "v": [
+        "proofread",
+        "proofreads",
+        "to proofread",
+        "proofreading"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3 (proofread).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#073168c7"
+    },
+    {
+      "q": "I'll have someone ___ you to the station.",
+      "v": [
+        "drive",
+        "driven",
+        "to drive",
+        "driving"
+      ],
+      "t": 0,
+      "izoh": "have sb do = V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#7a44daf4"
+    },
+    {
+      "q": "They are having a swimming pool ___ in their garden.",
+      "v": [
+        "built",
+        "build",
+        "building",
+        "to build"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#384688ee"
+    },
+    {
+      "q": "Which part is wrong? 'He got his hair cutting short.'",
+      "v": [
+        "cutting",
+        "got",
+        "his hair",
+        "short"
+      ],
+      "t": 0,
+      "izoh": "get sth done: 'cut' (V3).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#5560bfb8"
+    },
+    {
+      "q": "Which part is wrong? 'I had the tailor to shorten my trousers.'",
+      "v": [
+        "to shorten",
+        "had",
+        "the tailor",
+        "trousers"
+      ],
+      "t": 0,
+      "izoh": "have sb do: 'shorten' (V1).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#e91369bc"
+    },
+    {
+      "q": "Which part is wrong? 'We got our tickets booking online.'",
+      "v": [
+        "booking",
+        "got",
+        "our tickets",
+        "online"
+      ],
+      "t": 0,
+      "izoh": "get sth done: 'booked' (V3).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#514b3889"
+    },
+    {
+      "q": "Which part is wrong? 'She have her nails done every week.'",
+      "v": [
+        "have",
+        "her nails",
+        "done",
+        "every week"
+      ],
+      "t": 0,
+      "izoh": "'has' bo'lishi kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#502ce5f1"
+    },
+    {
+      "q": "Which part is wrong? 'They had they car serviced.'",
+      "v": [
+        "they car",
+        "had",
+        "serviced",
+        "the"
+      ],
+      "t": 0,
+      "izoh": "'their car' bo'lishi kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#f20a1940"
+    },
+    {
+      "q": "I must get these letters ___ before five o'clock.",
+      "v": [
+        "posted",
+        "post",
+        "posting",
+        "to post"
+      ],
+      "t": 0,
+      "izoh": "get sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#db0708fb"
+    },
+    {
+      "q": "He had his colleague ___ the presentation.",
+      "v": [
+        "finish",
+        "finished",
+        "to finish",
+        "finishing"
+      ],
+      "t": 0,
+      "izoh": "have sb do = V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#e91d24ac"
+    },
+    {
+      "q": "We should get the contract ___ by a lawyer.",
+      "v": [
+        "checked",
+        "check",
+        "checking",
+        "to check"
+      ],
+      "t": 0,
+      "izoh": "get sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#4093d989"
+    },
+    {
+      "q": "She managed to get her landlord ___ the broken heater.",
+      "v": [
+        "to repair",
+        "repair",
+        "repaired",
+        "repairing"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#564065a5"
+    },
+    {
+      "q": "I'd like to have my blood pressure ___.",
+      "v": [
+        "measured",
+        "measure",
+        "measuring",
+        "to measure"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#3cb6b34e"
+    },
+    {
+      "q": "The director had the whole team ___ over the weekend.",
+      "v": [
+        "work",
+        "worked",
+        "to work",
+        "working"
+      ],
+      "t": 0,
+      "izoh": "have sb do = V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#733b2294"
+    },
+    {
+      "q": "They finally got the council ___ the road.",
+      "v": [
+        "to repair",
+        "repair",
+        "repaired",
+        "repairing"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#74be84a5"
+    },
+    {
+      "q": "I'm going to have my old coat ___.",
+      "v": [
+        "dry-cleaned",
+        "dry-clean",
+        "dry-cleaning",
+        "to dry-clean"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#16dc8593"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "We had our house valued.",
+        "We had our house value.",
+        "We had value our house.",
+        "We had our house to value."
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#9a16dc9c~6"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I got the kids to tidy their room.",
+        "I got the kids tidy their room.",
+        "I got the kids tidied their room.",
+        "I got the kids tidying their room."
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#9a16dc9c~7"
+    },
+    {
+      "q": "Last year they had a new fence ___ around the garden.",
+      "v": [
+        "put up",
+        "put",
+        "putting up",
+        "to put up"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3 (put up).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#fb60c493"
+    },
+    {
+      "q": "You look tired. Why don't you get someone else ___ it?",
+      "v": [
+        "to do",
+        "do",
+        "done",
+        "doing"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#4366db85"
+    },
+    {
+      "q": "She had the hotel ___ her a taxi.",
+      "v": [
+        "call",
+        "called",
+        "to call",
+        "calling"
+      ],
+      "t": 0,
+      "izoh": "have sb do = V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#8394401d"
+    },
+    {
+      "q": "We need to get the leak ___ before it gets worse.",
+      "v": [
+        "fixed",
+        "fix",
+        "fixing",
+        "to fix"
+      ],
+      "t": 0,
+      "izoh": "get sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#517f8b67"
+    },
+    {
+      "q": "He had his flight tickets ___ by his secretary.",
+      "v": [
+        "booked",
+        "book",
+        "booking",
+        "to book"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#5c64ee70"
+    },
+    {
+      "q": "I finally got my father ___ smoking.",
+      "v": [
+        "to stop",
+        "stop",
+        "stopped",
+        "stopping"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#4404ae85"
+    },
+    {
+      "q": "The company has its products ___ in China.",
+      "v": [
+        "manufactured",
+        "manufacture",
+        "manufacturing",
+        "to manufacture"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#f0bd9970"
+    },
+    {
+      "q": "Would you like to have your groceries ___ home?",
+      "v": [
+        "delivered",
+        "deliver",
+        "delivering",
+        "to deliver"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#02d5e271"
+    },
+    {
+      "q": "She got a friend ___ her move house.",
+      "v": [
+        "to help",
+        "help",
+        "helped",
+        "helping"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#18b9a636"
+    },
+    {
+      "q": "They had the carpet ___ because it was too old.",
+      "v": [
+        "replaced",
+        "replace",
+        "replacing",
+        "to replace"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#7a72ed10"
+    },
+    {
+      "q": "Which sentence means someone else did the work?",
+      "v": [
+        "I had the garden landscaped.",
+        "I landscaped the garden.",
+        "I was landscaping the garden.",
+        "I will landscape the garden."
+      ],
+      "t": 0,
+      "izoh": "have sth done: xizmat boshqa kishidan.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#9f0b68b5"
+    },
+    {
+      "q": "Which sentence uses the causative correctly?",
+      "v": [
+        "He got his teeth checked.",
+        "He got his teeth check.",
+        "He got check his teeth.",
+        "He got his teeth checking."
+      ],
+      "t": 0,
+      "izoh": "get sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#9cc6732a"
+    },
+    {
+      "q": "I had the electrician ___ a new socket in the kitchen.",
+      "v": [
+        "fit",
+        "fitted",
+        "to fit",
+        "fitting"
+      ],
+      "t": 0,
+      "izoh": "have sb do = V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#755ee9b9"
+    },
+    {
+      "q": "We're having our garden ___ next spring.",
+      "v": [
+        "redesigned",
+        "redesign",
+        "redesigning",
+        "to redesign"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#471f1fc4"
+    },
+    {
+      "q": "He got the doctor ___ him a prescription.",
+      "v": [
+        "to write",
+        "write",
+        "wrote",
+        "writing"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#6cf979a4"
+    },
+    {
+      "q": "She had her bike ___ from outside the library.",
+      "v": [
+        "stolen",
+        "steal",
+        "stole",
+        "stealing"
+      ],
+      "t": 0,
+      "izoh": "noxush hodisa: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#40fb858a"
+    },
+    {
+      "q": "I really need to get my chimney ___ before winter.",
+      "v": [
+        "swept",
+        "sweep",
+        "sweeping",
+        "to sweep"
+      ],
+      "t": 0,
+      "izoh": "get sth done: V3 (swept).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#d7c4b897"
+    },
+    {
+      "q": "The teacher had us ___ our answers with a partner.",
+      "v": [
+        "compare",
+        "compared",
+        "to compare",
+        "comparing"
+      ],
+      "t": 0,
+      "izoh": "have sb do = V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#6b7025a0"
+    },
+    {
+      "q": "We got the shop ___ the faulty TV.",
+      "v": [
+        "to replace",
+        "replace",
+        "replaced",
+        "replacing"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#7bce8bd3"
+    },
+    {
+      "q": "They had the sign ___ in three languages.",
+      "v": [
+        "written",
+        "write",
+        "writing",
+        "to write"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#a958bc4e"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She has her documents translated every year.",
+        "She has her documents translate every year.",
+        "She has translate her documents.",
+        "She has her documents translating."
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#9a16dc9c~8"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I couldn't get the car to start.",
+        "I couldn't get the car start.",
+        "I couldn't get the car started to.",
+        "I couldn't got the car to start."
+      ],
+      "t": 0,
+      "izoh": "get sth TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#9a16dc9c~9"
+    },
+    {
+      "q": "He had a photographer ___ the whole event.",
+      "v": [
+        "record",
+        "recorded",
+        "to record",
+        "recording"
+      ],
+      "t": 0,
+      "izoh": "have sb do = V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#d1a5bc02"
+    },
+    {
+      "q": "We're getting our windows ___ next Monday.",
+      "v": [
+        "replaced",
+        "replace",
+        "replacing",
+        "to replace"
+      ],
+      "t": 0,
+      "izoh": "get sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#05b46c2d"
+    },
+    {
+      "q": "I finally got my brother ___ me his laptop.",
+      "v": [
+        "to lend",
+        "lend",
+        "lent",
+        "lending"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do sth.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#4ee92592"
+    },
+    {
+      "q": "She had her old photos ___ to save them.",
+      "v": [
+        "digitised",
+        "digitise",
+        "digitising",
+        "to digitise"
+      ],
+      "t": 0,
+      "izoh": "have sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#1363ccb6"
+    },
+    {
+      "q": "They made the new employee ___ a safety course.",
+      "v": [
+        "take",
+        "taken",
+        "to take",
+        "taking"
+      ],
+      "t": 0,
+      "izoh": "make sb do = V1.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#20ac8462"
+    },
+    {
+      "q": "Which part is wrong? 'I had my house painting last year.'",
+      "v": [
+        "painting",
+        "had",
+        "my house",
+        "last year"
+      ],
+      "t": 0,
+      "izoh": "have sth done: 'painted' (V3).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#dfed638a"
+    },
+    {
+      "q": "Which part is wrong? 'We got the technician repair the router.'",
+      "v": [
+        "repair",
+        "got",
+        "the technician",
+        "router"
+      ],
+      "t": 0,
+      "izoh": "get sb TO do: 'to repair'.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#137b3b8b"
+    },
+    {
+      "q": "Which part is wrong? 'She make her son clean his room.'",
+      "v": [
+        "make",
+        "her son",
+        "clean",
+        "room"
+      ],
+      "t": 0,
+      "izoh": "'makes' bo'lishi kerak (Present Simple).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#b0f687d2"
+    },
+    {
+      "q": "I'm going to get my suit ___ for the interview.",
+      "v": [
+        "cleaned",
+        "clean",
+        "cleaning",
+        "to clean"
+      ],
+      "t": 0,
+      "izoh": "get sth done: V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m11#2d8bb60b"
+    }
+  ]
+}

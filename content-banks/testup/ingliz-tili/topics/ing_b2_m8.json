@@ -1,0 +1,1306 @@
+{
+  "nom": "Perfect modals (should have)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "The museum closed at five. We ___ earlier.",
+      "v": [
+        "should have arrived",
+        "should arrive",
+        "should arrived",
+        "should have arrive"
+      ],
+      "t": 0,
+      "izoh": "Qilinmagan, to'g'ri edi — should have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#38ae3e04"
+    },
+    {
+      "q": "Find the mistake: 'You should tell the teacher about it last week.'",
+      "v": [
+        "You",
+        "should tell",
+        "the teacher",
+        "last week"
+      ],
+      "t": 1,
+      "izoh": "O'tmish — should have told (#120).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#ad17aece"
+    },
+    {
+      "q": "My head hurts. I ___ so much coffee last night.",
+      "v": [
+        "shouldn't drink",
+        "mustn't have drunk",
+        "shouldn't have drank",
+        "shouldn't have drunk"
+      ],
+      "t": 3,
+      "izoh": "Qilingan, noto'g'ri — shouldn't have + V3 (drunk).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#4afc7ab2"
+    },
+    {
+      "q": "The concert was free, so we ___ tickets in advance. We just walked in.",
+      "v": [
+        "needn't have bought",
+        "didn't need to buy",
+        "shouldn't have bought",
+        "couldn't have bought"
+      ],
+      "t": 1,
+      "izoh": "Shart emas, qilinmadi — didn't need to (#121).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#a73ce5cf"
+    },
+    {
+      "q": "You ___ a cake — I had already ordered one. But thank you!",
+      "v": [
+        "needn't have made",
+        "mustn't have made",
+        "shouldn't make",
+        "couldn't have made"
+      ],
+      "t": 0,
+      "izoh": "Qilingan, keraksiz — needn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#ce117234"
+    },
+    {
+      "q": "He had the best time in training, so he ___ the gold medal, but he fell.",
+      "v": [
+        "could win",
+        "could have win",
+        "could have won",
+        "can have won"
+      ],
+      "t": 2,
+      "izoh": "Imkoniyat bor edi, bo'lmadi — could have won.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#f5679169"
+    },
+    {
+      "q": "Which sentence means «you did it, but it was a mistake»?",
+      "v": [
+        "You should have called her.",
+        "You could have called her.",
+        "You shouldn't have called her.",
+        "You needn't call her."
+      ],
+      "t": 2,
+      "izoh": "shouldn't have — qilingan, noto'g'ri.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#a58b2d22"
+    },
+    {
+      "q": "Find the mistake: 'They should of listened to the guide.'",
+      "v": [
+        "They",
+        "to the guide",
+        "listened",
+        "should of"
+      ],
+      "t": 3,
+      "izoh": "«should of» yo'q — should have.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#4fc3a0d3"
+    },
+    {
+      "q": "«Did you apologise?» — «No, but I ___.»",
+      "v": [
+        "should",
+        "should have",
+        "should had",
+        "had to"
+      ],
+      "t": 1,
+      "izoh": "Qisqa javob — I should have.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#1e1a9fe9"
+    },
+    {
+      "q": "You ___ the door open this morning — now the cat is gone!",
+      "v": [
+        "shouldn't leave",
+        "couldn't leave",
+        "needn't have left",
+        "shouldn't have left"
+      ],
+      "t": 3,
+      "izoh": "Qilingan, noto'g'ri — shouldn't have left.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#ac504b58"
+    },
+    {
+      "q": "Find the mistake: 'She ought to has checked the address first.'",
+      "v": [
+        "ought to",
+        "has checked",
+        "the address",
+        "first"
+      ],
+      "t": 1,
+      "izoh": "ought to + have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#4737c69e"
+    },
+    {
+      "q": "The airline ___ us the flight was delayed — we waited four hours.",
+      "v": [
+        "might tell",
+        "might told",
+        "might have told",
+        "might has told"
+      ],
+      "t": 2,
+      "izoh": "Norozi tanqid — might have told.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#708b9226"
+    },
+    {
+      "q": "She was a talented singer. She ___ famous.",
+      "v": [
+        "could have become",
+        "could have becomed",
+        "could became",
+        "could have becoming"
+      ],
+      "t": 0,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#f33b6667"
+    },
+    {
+      "q": "The food was included, so you ___ your own lunch.",
+      "v": [
+        "needn't have bring",
+        "needn't have brought",
+        "needn't brought",
+        "needn't have bringing"
+      ],
+      "t": 1,
+      "izoh": "needn't have + V3 (brought).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#c18868b8"
+    },
+    {
+      "q": "Had I known about the traffic, I ___ earlier.",
+      "v": [
+        "would have start",
+        "would started",
+        "would have started",
+        "would have starting"
+      ],
+      "t": 2,
+      "izoh": "would have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#8fc39de3"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "You shouldn't have shout at him.",
+        "You shouldn't shouted at him.",
+        "You shouldn't have shouting at him.",
+        "You shouldn't have shouted at him."
+      ],
+      "t": 3,
+      "izoh": "shouldn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#9a16dc9c"
+    },
+    {
+      "q": "You missed a great chance. You ___ that job offer.",
+      "v": [
+        "could have accepted",
+        "could have accept",
+        "could accepted",
+        "could have accepting"
+      ],
+      "t": 0,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#109afc8b"
+    },
+    {
+      "q": "I feel guilty. I ___ him a liar.",
+      "v": [
+        "shouldn't have call",
+        "shouldn't have called",
+        "shouldn't called",
+        "shouldn't have calling"
+      ],
+      "t": 1,
+      "izoh": "shouldn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#09131526"
+    },
+    {
+      "q": "There was plenty of food. You ___ so much.",
+      "v": [
+        "needn't have cook",
+        "needn't cooked",
+        "needn't have cooked",
+        "needn't have cooking"
+      ],
+      "t": 2,
+      "izoh": "needn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#0696e41b"
+    },
+    {
+      "q": "If she had studied medicine, she ___ a doctor.",
+      "v": [
+        "would have be",
+        "would been",
+        "would have being",
+        "would have been"
+      ],
+      "t": 3,
+      "izoh": "would have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#1f760c88"
+    },
+    {
+      "q": "You forgot her birthday. You ___ it in your calendar.",
+      "v": [
+        "should have written",
+        "should have write",
+        "should wrote",
+        "should have writing"
+      ],
+      "t": 0,
+      "izoh": "should have + V3 (written).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#f7eef8ac"
+    },
+    {
+      "q": "That comment was cruel. He ___ it.",
+      "v": [
+        "shouldn't have say",
+        "shouldn't have said",
+        "shouldn't said",
+        "shouldn't have saying"
+      ],
+      "t": 1,
+      "izoh": "shouldn't have + V3 (said).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#824ffed9"
+    },
+    {
+      "q": "You were so close to winning. You ___ the record.",
+      "v": [
+        "could have break",
+        "could broke",
+        "could have broken",
+        "could have breaking"
+      ],
+      "t": 2,
+      "izoh": "could have + V3 (broken).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#0b771d3d"
+    },
+    {
+      "q": "The tickets were free at the door. We ___ online.",
+      "v": [
+        "needn't have pay",
+        "needn't paid",
+        "needn't have paying",
+        "needn't have paid"
+      ],
+      "t": 3,
+      "izoh": "needn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#23f44981"
+    },
+    {
+      "q": "If they had invited me, I ___.",
+      "v": [
+        "would have come",
+        "would have came",
+        "would came",
+        "would have coming"
+      ],
+      "t": 0,
+      "izoh": "would have come.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#99582f8a"
+    },
+    {
+      "q": "Which is grammatically correct?",
+      "v": [
+        "You could have warn us.",
+        "You could have warned us.",
+        "You could warned us.",
+        "You could have warning us."
+      ],
+      "t": 1,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#76b3a7ad"
+    },
+    {
+      "q": "You broke your promise. You ___ your word.",
+      "v": [
+        "should have keep",
+        "should kept",
+        "should have kept",
+        "should have keeping"
+      ],
+      "t": 2,
+      "izoh": "should have + V3 (kept).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#f96699b2"
+    },
+    {
+      "q": "I ate too fast and now I'm ill. I ___ more slowly.",
+      "v": [
+        "should have eat",
+        "should ate",
+        "should have eating",
+        "should have eaten"
+      ],
+      "t": 3,
+      "izoh": "should have + V3 (eaten).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#b0b8141e"
+    },
+    {
+      "q": "With better luck, she ___ first prize.",
+      "v": [
+        "could have won",
+        "could have win",
+        "could won",
+        "could have winning"
+      ],
+      "t": 0,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#8766b0b8"
+    },
+    {
+      "q": "He had already fixed it, so I ___ the mechanic.",
+      "v": [
+        "needn't have phone",
+        "needn't have phoned",
+        "needn't phoned",
+        "needn't have phoning"
+      ],
+      "t": 1,
+      "izoh": "needn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#5d876dd0"
+    },
+    {
+      "q": "Without your help, I ___ the deadline.",
+      "v": [
+        "would have miss",
+        "would missed",
+        "would have missed",
+        "would have missing"
+      ],
+      "t": 2,
+      "izoh": "would have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#7a442b78"
+    },
+    {
+      "q": "You were rude to the guests. You ___ politely.",
+      "v": [
+        "should have behave",
+        "should behaved",
+        "should have behaving",
+        "should have behaved"
+      ],
+      "t": 3,
+      "izoh": "should have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#e12032ec"
+    },
+    {
+      "q": "I trusted him and regret it. I ___ him.",
+      "v": [
+        "shouldn't have trusted",
+        "shouldn't have trust",
+        "shouldn't trusted",
+        "shouldn't have trusting"
+      ],
+      "t": 0,
+      "izoh": "shouldn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#e65b8217"
+    },
+    {
+      "q": "There was a shortcut. We ___ time.",
+      "v": [
+        "could have save",
+        "could have saved",
+        "could saved",
+        "could have saving"
+      ],
+      "t": 1,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#13b26579"
+    },
+    {
+      "q": "The hotel provided towels, so you ___ your own.",
+      "v": [
+        "needn't have pack",
+        "needn't packed",
+        "needn't have packed",
+        "needn't have packing"
+      ],
+      "t": 2,
+      "izoh": "needn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#5590670c"
+    },
+    {
+      "q": "Choose the correct form.",
+      "v": [
+        "I would have tell you the truth.",
+        "I would told you the truth.",
+        "I would have telling you the truth.",
+        "I would have told you the truth."
+      ],
+      "t": 3,
+      "izoh": "would have + V3 (told).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#eed99a6c"
+    },
+    {
+      "q": "You arrived late again. You ___ on time.",
+      "v": [
+        "should have arrived",
+        "should have arrive",
+        "should arrived",
+        "should have arriving"
+      ],
+      "t": 0,
+      "izoh": "should have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#c60ea4af"
+    },
+    {
+      "q": "That joke hurt her. You ___ it.",
+      "v": [
+        "shouldn't have make",
+        "shouldn't have made",
+        "shouldn't made",
+        "shouldn't have making"
+      ],
+      "t": 1,
+      "izoh": "shouldn't have + V3 (made).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#674f407a"
+    },
+    {
+      "q": "You had the talent. You ___ professionally.",
+      "v": [
+        "could have play",
+        "could played",
+        "could have played",
+        "could have playing"
+      ],
+      "t": 2,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#0292164d"
+    },
+    {
+      "q": "Lunch was free for staff, so I ___ any money.",
+      "v": [
+        "needn't have bring",
+        "needn't brought",
+        "needn't have bringing",
+        "needn't have brought"
+      ],
+      "t": 3,
+      "izoh": "needn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#6ea85963"
+    },
+    {
+      "q": "If it hadn't rained, we ___ the picnic.",
+      "v": [
+        "would have enjoyed",
+        "would have enjoy",
+        "would enjoyed",
+        "would have enjoying"
+      ],
+      "t": 0,
+      "izoh": "would have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#ee4b4a09"
+    },
+    {
+      "q": "You didn't lock the door. You ___ it.",
+      "v": [
+        "should have lock",
+        "should have locked",
+        "should locked",
+        "should have locking"
+      ],
+      "t": 1,
+      "izoh": "should have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#861deca1"
+    },
+    {
+      "q": "I gossiped about her and feel bad. I ___ anything.",
+      "v": [
+        "shouldn't have say",
+        "shouldn't said",
+        "shouldn't have said",
+        "shouldn't have saying"
+      ],
+      "t": 2,
+      "izoh": "shouldn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#d07fa571"
+    },
+    {
+      "q": "You had a spare key. You ___ in through the back.",
+      "v": [
+        "could have get",
+        "could got",
+        "could have getting",
+        "could have got"
+      ],
+      "t": 3,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#f80bee0d"
+    },
+    {
+      "q": "The report was already printed, so you ___ it again.",
+      "v": [
+        "needn't have printed",
+        "needn't have print",
+        "needn't printed",
+        "needn't have printing"
+      ],
+      "t": 0,
+      "izoh": "needn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#0cef70db"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "She would have pass with more revision.",
+        "She would have passed with more revision.",
+        "She would passed with more revision.",
+        "She would have passing with more revision."
+      ],
+      "t": 1,
+      "izoh": "would have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#21ac92a9~2"
+    },
+    {
+      "q": "You ignored the warning. You ___ to it.",
+      "v": [
+        "should have listen",
+        "should listened",
+        "should have listened",
+        "should have listening"
+      ],
+      "t": 2,
+      "izoh": "should have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#70da3eb8"
+    },
+    {
+      "q": "I borrowed money I didn't need. I ___ so much.",
+      "v": [
+        "shouldn't have borrow",
+        "shouldn't borrowed",
+        "shouldn't have borrowing",
+        "shouldn't have borrowed"
+      ],
+      "t": 3,
+      "izoh": "shouldn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#fbcf6a5f"
+    },
+    {
+      "q": "You knew the answer. You ___ your hand.",
+      "v": [
+        "could have raised",
+        "could have raise",
+        "could raised",
+        "could have raising"
+      ],
+      "t": 0,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#7563ee39"
+    },
+    {
+      "q": "The taxi was already ordered, so we ___ for one.",
+      "v": [
+        "needn't have wait",
+        "needn't have waited",
+        "needn't waited",
+        "needn't have waiting"
+      ],
+      "t": 1,
+      "izoh": "needn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#6839ada9"
+    },
+    {
+      "q": "If you had asked, I ___ you the money.",
+      "v": [
+        "would have lend",
+        "would lent",
+        "would have lent",
+        "would have lending"
+      ],
+      "t": 2,
+      "izoh": "would have + V3 (lent).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#707a5a76"
+    },
+    {
+      "q": "You were careless with the vase. You ___ more careful.",
+      "v": [
+        "should have be",
+        "should been",
+        "should have being",
+        "should have been"
+      ],
+      "t": 3,
+      "izoh": "should have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#c67237f6"
+    },
+    {
+      "q": "I shouted at the kids and regret it. I ___ my temper.",
+      "v": [
+        "shouldn't have lost",
+        "shouldn't have lose",
+        "shouldn't lost",
+        "shouldn't have losing"
+      ],
+      "t": 0,
+      "izoh": "shouldn't have + V3 (lost).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#8dc1aa15"
+    },
+    {
+      "q": "You had all the evidence. You ___ the case.",
+      "v": [
+        "could have prove",
+        "could have proven",
+        "could proven",
+        "could have proving"
+      ],
+      "t": 1,
+      "izoh": "could have + V3 (proven).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#33c81ad5"
+    },
+    {
+      "q": "Entry was free that day, so we ___ tickets.",
+      "v": [
+        "needn't have buy",
+        "needn't bought",
+        "needn't have bought",
+        "needn't have buying"
+      ],
+      "t": 2,
+      "izoh": "needn't have + V3 (bought).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#b509065a"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "You shouldn't have spend all your savings.",
+        "You shouldn't spent all your savings.",
+        "You shouldn't have spending all your savings.",
+        "You shouldn't have spent all your savings."
+      ],
+      "t": 3,
+      "izoh": "shouldn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#9a16dc9c~2"
+    },
+    {
+      "q": "You made the same mistake twice. You ___ from the first one.",
+      "v": [
+        "should have learned",
+        "should have learn",
+        "should learned",
+        "should have learning"
+      ],
+      "t": 0,
+      "izoh": "should have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#6379e98f"
+    },
+    {
+      "q": "That was private. I ___ it to everyone.",
+      "v": [
+        "shouldn't have reveal",
+        "shouldn't have revealed",
+        "shouldn't revealed",
+        "shouldn't have revealing"
+      ],
+      "t": 1,
+      "izoh": "shouldn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#ee828d64"
+    },
+    {
+      "q": "You had two hours. You ___ the whole essay.",
+      "v": [
+        "could have finish",
+        "could finished",
+        "could have finished",
+        "could have finishing"
+      ],
+      "t": 2,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#aea2e0b2"
+    },
+    {
+      "q": "They provided lunch, so we ___ sandwiches.",
+      "v": [
+        "needn't have make",
+        "needn't made",
+        "needn't have making",
+        "needn't have made"
+      ],
+      "t": 3,
+      "izoh": "needn't have + V3 (made).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#54f3f9e9"
+    },
+    {
+      "q": "If I had seen the sign, I ___ down.",
+      "v": [
+        "would have slowed",
+        "would have slow",
+        "would slowed",
+        "would have slowing"
+      ],
+      "t": 0,
+      "izoh": "would have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#2ccc84b2"
+    },
+    {
+      "q": "You cheated in the test. You ___ it honestly.",
+      "v": [
+        "should have do",
+        "should have done",
+        "should done",
+        "should have doing"
+      ],
+      "t": 1,
+      "izoh": "should have + V3 (done).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#413eb54f"
+    },
+    {
+      "q": "I replied angrily and regret it. I ___ so fast.",
+      "v": [
+        "shouldn't have answer",
+        "shouldn't answered",
+        "shouldn't have answered",
+        "shouldn't have answering"
+      ],
+      "t": 2,
+      "izoh": "shouldn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#ebc46fad"
+    },
+    {
+      "q": "You had a map. You ___ the way.",
+      "v": [
+        "could have find",
+        "could found",
+        "could have finding",
+        "could have found"
+      ],
+      "t": 3,
+      "izoh": "could have + V3 (found).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#f8bed9bc"
+    },
+    {
+      "q": "The heating was already on, so I ___ the fire.",
+      "v": [
+        "needn't have lit",
+        "needn't have light",
+        "needn't lit",
+        "needn't have lighting"
+      ],
+      "t": 0,
+      "izoh": "needn't have + V3 (lit).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#5986af4f"
+    },
+    {
+      "q": "Which is correct?",
+      "v": [
+        "He could have becomed a champion.",
+        "He could have become a champion.",
+        "He could became a champion.",
+        "He could have becoming a champion."
+      ],
+      "t": 1,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#bc249275"
+    },
+    {
+      "q": "You dropped litter. You ___ it in the bin.",
+      "v": [
+        "should have putted",
+        "should putted",
+        "should have put",
+        "should have putting"
+      ],
+      "t": 2,
+      "izoh": "should have + V3 (put).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#46a51492"
+    },
+    {
+      "q": "I wasted the whole day. I ___ my time better.",
+      "v": [
+        "should have manage",
+        "should managed",
+        "should have managing",
+        "should have managed"
+      ],
+      "t": 3,
+      "izoh": "should have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#1f0bab86"
+    },
+    {
+      "q": "You had savings. You ___ the trip.",
+      "v": [
+        "could have afforded",
+        "could have afford",
+        "could afforded",
+        "could have affording"
+      ],
+      "t": 0,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#6cf1cb3c"
+    },
+    {
+      "q": "She had already emailed me, so I ___ her.",
+      "v": [
+        "needn't have call",
+        "needn't have called",
+        "needn't called",
+        "needn't have calling"
+      ],
+      "t": 1,
+      "izoh": "needn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#b56e93ff"
+    },
+    {
+      "q": "If he had trained, he ___ the race.",
+      "v": [
+        "would have finish",
+        "would finished",
+        "would have finished",
+        "would have finishing"
+      ],
+      "t": 2,
+      "izoh": "would have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#ea0c3220"
+    },
+    {
+      "q": "You were unkind to your brother. You ___ him.",
+      "v": [
+        "shouldn't have tease",
+        "shouldn't teased",
+        "shouldn't have teasing",
+        "shouldn't have teased"
+      ],
+      "t": 3,
+      "izoh": "shouldn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#1340d701"
+    },
+    {
+      "q": "You had the chance to speak. You ___ your opinion.",
+      "v": [
+        "could have shared",
+        "could have share",
+        "could shared",
+        "could have sharing"
+      ],
+      "t": 0,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#a0010c3f"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "We needn't have hurry.",
+        "We needn't have hurried.",
+        "We needn't hurried.",
+        "We needn't have hurrying."
+      ],
+      "t": 1,
+      "izoh": "needn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#9a16dc9c~3"
+    },
+    {
+      "q": "You didn't apologise. You ___ sorry.",
+      "v": [
+        "should have say",
+        "should said",
+        "should have said",
+        "should have saying"
+      ],
+      "t": 2,
+      "izoh": "should have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#8e8d70bb"
+    },
+    {
+      "q": "I ate their food without asking. I ___ that.",
+      "v": [
+        "shouldn't have do",
+        "shouldn't done",
+        "shouldn't have doing",
+        "shouldn't have done"
+      ],
+      "t": 3,
+      "izoh": "shouldn't have + V3 (done).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#73d79e76"
+    },
+    {
+      "q": "You were fast enough. You ___ the bus.",
+      "v": [
+        "could have caught",
+        "could have catch",
+        "could caught",
+        "could have catching"
+      ],
+      "t": 0,
+      "izoh": "could have + V3 (caught).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#9634a453"
+    },
+    {
+      "q": "The guide gave us water, so we ___ our own bottles.",
+      "v": [
+        "needn't have carry",
+        "needn't have carried",
+        "needn't carried",
+        "needn't have carrying"
+      ],
+      "t": 1,
+      "izoh": "needn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#1b49da95"
+    },
+    {
+      "q": "If they had asked nicely, I ___ yes.",
+      "v": [
+        "would have say",
+        "would said",
+        "would have said",
+        "would have saying"
+      ],
+      "t": 2,
+      "izoh": "would have + V3 (said).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#0abd49a9"
+    },
+    {
+      "q": "You left the tap running. You ___ it off.",
+      "v": [
+        "should have turn",
+        "should turned",
+        "should have turning",
+        "should have turned"
+      ],
+      "t": 3,
+      "izoh": "should have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#7e5d4ba7"
+    },
+    {
+      "q": "That decision was hasty. You ___ it more.",
+      "v": [
+        "should have considered",
+        "should have consider",
+        "should considered",
+        "should have considering"
+      ],
+      "t": 0,
+      "izoh": "should have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#7f0fe574"
+    },
+    {
+      "q": "I laughed at his mistake and regret it. I ___ at him.",
+      "v": [
+        "shouldn't have laugh",
+        "shouldn't have laughed",
+        "shouldn't laughed",
+        "shouldn't have laughing"
+      ],
+      "t": 1,
+      "izoh": "shouldn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#a5eaad46"
+    },
+    {
+      "q": "You had the skills. You ___ the problem yourself.",
+      "v": [
+        "could have solve",
+        "could solved",
+        "could have solved",
+        "could have solving"
+      ],
+      "t": 2,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#8624ca66"
+    },
+    {
+      "q": "He had already washed up, so I ___ the dishes.",
+      "v": [
+        "needn't have do",
+        "needn't done",
+        "needn't have doing",
+        "needn't have done"
+      ],
+      "t": 3,
+      "izoh": "needn't have + V3 (done).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#f267f413"
+    },
+    {
+      "q": "If we had booked earlier, we ___ a discount.",
+      "v": [
+        "would have received",
+        "would have receive",
+        "would received",
+        "would have receiving"
+      ],
+      "t": 0,
+      "izoh": "would have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#8426c372"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "You should have took an umbrella.",
+        "You should have taken an umbrella.",
+        "You should took an umbrella.",
+        "You should have taking an umbrella."
+      ],
+      "t": 1,
+      "izoh": "should have + V3 (taken).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#21ac92a9~3"
+    },
+    {
+      "q": "You blamed the wrong person. You ___ the facts first.",
+      "v": [
+        "should have check",
+        "should checked",
+        "should have checked",
+        "should have checking"
+      ],
+      "t": 2,
+      "izoh": "should have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#5654551d"
+    },
+    {
+      "q": "I promised too much. I ___ so much.",
+      "v": [
+        "shouldn't have promise",
+        "shouldn't promised",
+        "shouldn't have promising",
+        "shouldn't have promised"
+      ],
+      "t": 3,
+      "izoh": "shouldn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#38d10d79"
+    },
+    {
+      "q": "You had the address. You ___ them a card.",
+      "v": [
+        "could have sent",
+        "could have send",
+        "could sent",
+        "could have sending"
+      ],
+      "t": 0,
+      "izoh": "could have + V3 (sent).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#0033b613"
+    },
+    {
+      "q": "The soup was already hot, so I ___ it up.",
+      "v": [
+        "needn't have heat",
+        "needn't have heated",
+        "needn't heated",
+        "needn't have heating"
+      ],
+      "t": 1,
+      "izoh": "needn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#322ffd9a"
+    },
+    {
+      "q": "If you had listened, this ___.",
+      "v": [
+        "wouldn't have happen",
+        "wouldn't happened",
+        "wouldn't have happened",
+        "wouldn't have happening"
+      ],
+      "t": 2,
+      "izoh": "would have + V3 (inkor).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#bb507dc9"
+    },
+    {
+      "q": "You misled the customer. You ___ honest.",
+      "v": [
+        "should have be",
+        "should been",
+        "should have being",
+        "should have been"
+      ],
+      "t": 3,
+      "izoh": "should have been.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#ba16ec18"
+    },
+    {
+      "q": "I overreacted and regret it. I ___ so upset.",
+      "v": [
+        "shouldn't have got",
+        "shouldn't have get",
+        "shouldn't got",
+        "shouldn't have getting"
+      ],
+      "t": 0,
+      "izoh": "shouldn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#1a3fa300"
+    },
+    {
+      "q": "You had free time. You ___ me a hand.",
+      "v": [
+        "could have give",
+        "could have given",
+        "could gave",
+        "could have giving"
+      ],
+      "t": 1,
+      "izoh": "could have + V3 (given).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#3d82c7ec"
+    },
+    {
+      "q": "They emailed the file, so we ___ it.",
+      "v": [
+        "needn't have print",
+        "needn't printed",
+        "needn't have printed",
+        "needn't have printing"
+      ],
+      "t": 2,
+      "izoh": "needn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#53d3d372"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I could have help you if you had asked.",
+        "I could helped you if you had asked.",
+        "I could have helping you if you had asked.",
+        "I could have helped you if you had asked."
+      ],
+      "t": 3,
+      "izoh": "could have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#9a16dc9c~4"
+    },
+    {
+      "q": "You skipped breakfast again. You ___ something.",
+      "v": [
+        "should have eaten",
+        "should have eat",
+        "should ate",
+        "should have eating"
+      ],
+      "t": 0,
+      "izoh": "should have + V3 (eaten).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#3eb8f947"
+    },
+    {
+      "q": "That was a secret. I ___ it.",
+      "v": [
+        "shouldn't have mention",
+        "shouldn't have mentioned",
+        "shouldn't mentioned",
+        "shouldn't have mentioning"
+      ],
+      "t": 1,
+      "izoh": "shouldn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#3a6d6888"
+    },
+    {
+      "q": "You had the chance to travel. You ___ the world.",
+      "v": [
+        "could have see",
+        "could saw",
+        "could have seen",
+        "could have seeing"
+      ],
+      "t": 2,
+      "izoh": "could have + V3 (seen).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#69a1bc95"
+    },
+    {
+      "q": "The instructions were clear, so you ___ me.",
+      "v": [
+        "needn't have ask",
+        "needn't asked",
+        "needn't have asking",
+        "needn't have asked"
+      ],
+      "t": 3,
+      "izoh": "needn't have + V3.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m8#de6bc2a5"
+    }
+  ]
+}

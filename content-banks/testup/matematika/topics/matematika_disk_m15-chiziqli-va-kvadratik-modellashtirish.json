@@ -1,0 +1,1609 @@
+{
+  "nom": "Chiziqli va kvadratik modellashtirish",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Bir do'konda bitta daftar 4500 so'm turadi. Xaridor sotib olgan daftarlar soni n ga bog'liq to'lov summasi qaysi model bilan tasvirlanadi?",
+      "v": [
+        "T = 4500n ko'rinishdagi chiziqli model",
+        "T = 4500n² ko'rinishdagi kvadratik model",
+        "T = n/4500 ko'rinishdagi teskari proporsional model",
+        "T = 4500 + n ko'rinishdagi chiziqli model"
+      ],
+      "t": 0,
+      "izoh": "Har bir daftar bir xil narxda bo'lgani uchun to'lov daftarlar soniga to'g'ri proporsional o'sadi. Demak har qo'shilgan daftar summani 4500 so'mga oshiradi va model T = 4500n bo'ladi. Bu chiziqli modelning to'g'ri proporsional ko'rinishi. Javob: T = 4500n.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "model-turini-tanlash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#e3725cfe"
+    },
+    {
+      "q": "Kamola kvadrat shaklidagi gilam sotib olmoqchi. Gilamning tomoni a metr bo'lsa, uning yuzasi tomonga qanday model bilan bog'lanadi?",
+      "v": [
+        "S = 4a — chiziqli model",
+        "S = a² — kvadratik model",
+        "S = 2a — chiziqli model",
+        "S = a³ — kubik model"
+      ],
+      "t": 1,
+      "izoh": "Kvadratning yuzasi tomonining kvadratiga teng, ya'ni S = a². Tomonda a ning ikkinchi darajasi qatnashgani uchun bog'lanish kvadratik model bo'ladi. 4a esa perimetr formulasi, u yuza emas. Javob: S = a² — kvadratik model.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "model-turini-tanlash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#fa73cd46"
+    },
+    {
+      "q": "Toshkentdan Samarqandgacha avtobus butun yo'l davomida o'zgarmas 60 km/soat tezlik bilan yuradi. Bosib o'tilgan yo'lning vaqtga bog'liqligi qanday model bilan yoziladi?",
+      "v": [
+        "Chiziqli: s = 60t, chunki har soatda bir xil masofa qo'shiladi",
+        "Kvadratik: s = 60t², chunki masofa vaqtga bog'liq",
+        "Kvadratik: s = 30t², chunki harakat tezlanuvchan",
+        "Chiziqli: s = 60 + t, chunki 60 boshlang'ich qiymat"
+      ],
+      "t": 0,
+      "izoh": "Tezlik o'zgarmas bo'lgani uchun har bir soatda bir xil 60 km qo'shiladi. Teng qadamlar bilan o'sish chiziqli modelning asosiy belgisi, shuning uchun s = 60t. Tezlanish bo'lmagani uchun kvadratik had paydo bo'lmaydi. Javob: chiziqli s = 60t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-turini-tanlash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#73473163"
+    },
+    {
+      "q": "Baland binodan qo'yib yuborilgan tosh birinchi soniya oxirida 5 m, ikkinchi soniya oxirida 20 m, uchinchi soniya oxirida 45 m, to'rtinchi soniya oxirida 80 m yo'l bosdi. Bu bog'lanish qaysi model bilan tasvirlanadi?",
+      "v": [
+        "Chiziqli model, chunki ayirmalar o'zgarmas",
+        "Kvadratik model, chunki ikkinchi ayirmalar o'zgarmas",
+        "Chiziqli model, chunki har soniyada 5 m qo'shiladi",
+        "Ko'rsatkichli model, chunki qiymatlar tez ortadi"
+      ],
+      "t": 1,
+      "izoh": "Birinchi ayirmalar: 20 − 5 = 15, 45 − 20 = 25, 80 − 45 = 35 — ular teng emas, demak model chiziqli emas. Ikkinchi ayirmalar esa 25 − 15 = 10 va 35 − 25 = 10, ya'ni ikkalasi ham bir xil. Ikkinchi ayirmalarning o'zgarmasligi kvadratik modelning belgisi, bu yerda bog'lanish s = 5t². Javob: kvadratik model.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-turini-tanlash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#c5232902"
+    },
+    {
+      "q": "Taksi xizmatida mashinaga o'tirish uchun 6000 so'm, keyin har bir kilometr uchun 2500 so'm olinadi. x kilometrlik safar uchun to'lov modelini ko'rsating.",
+      "v": [
+        "T = 6000 + 2500x",
+        "T = 2500 + 6000x",
+        "T = 8500x",
+        "T = 6000x + 2500"
+      ],
+      "t": 0,
+      "izoh": "Masofaga bog'liq bo'lmagan 6000 so'm modelning boshlang'ich qiymati, ya'ni erkin hadi bo'ladi. Har kilometr uchun olinadigan 2500 so'm esa o'zgarish tezligi, ya'ni burchak koeffitsienti. Shuning uchun T = 6000 + 2500x. Javob: T = 6000 + 2500x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-model-tuzish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#507f66e0"
+    },
+    {
+      "q": "Idishga bir tekis suv quyilmoqda: 5 daqiqadan keyin idishda 34 litr, 12 daqiqadan keyin 69 litr suv bo'ldi. Suv miqdorining vaqtga bog'liq chiziqli modelini toping.",
+      "v": [
+        "V = 5t + 34",
+        "V = 7t + 9",
+        "V = 5t − 9",
+        "V = 5t + 9"
+      ],
+      "t": 3,
+      "izoh": "Burchak koeffitsienti k = (69 − 34) : (12 − 5) = 35 : 7 = 5 litr har daqiqada. Boshlang'ich miqdor b = 34 − 5·5 = 9 litr. Demak model V = 5t + 9 ko'rinishida bo'ladi. Tekshiramiz: 5·12 + 9 = 69 ✓. Javob: V = 5t + 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-model-tuzish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#ac2c6d1c"
+    },
+    {
+      "q": "Zavodda 3 ta stanok bir kunda 84 ta detal, 7 ta stanok esa 196 ta detal ishlab chiqaradi. Detallar soni stanoklar soniga chiziqli bog'liq bo'lsa, modelni toping.",
+      "v": [
+        "D = 28n + 84",
+        "D = n/28",
+        "D = 28n",
+        "D = 112n − 252"
+      ],
+      "t": 2,
+      "izoh": "Bitta stanokning kunlik unumi k = (196 − 84) : (7 − 3) = 112 : 4 = 28 ta detal. Boshlang'ich had b = 84 − 28·3 = 0 bo'ladi, chunki stanok bo'lmasa detal ham ishlanmaydi. Demak D = 28n. Javob: D = 28n.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-model-tuzish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#82a60e9f"
+    },
+    {
+      "q": "Fermer xo'jaligidagi 480 litrli bakdan sug'orish uchun har soatda 35 litr suv olinadi. Bakdagi suv miqdorining vaqtga bog'liq modelini ko'rsating.",
+      "v": [
+        "V = 480 + 35t",
+        "V = 35t − 480",
+        "V = 480 − 35t",
+        "V = 480 − 35/t"
+      ],
+      "t": 2,
+      "izoh": "Boshlang'ich miqdor 480 litr, ya'ni t = 0 da V = 480 bo'lishi shart. Suv olinayotgani uchun har soatda miqdor 35 litrga kamayadi, demak koeffitsient manfiy. Shu ikki shartni qanoatlantiruvchi model V = 480 − 35t. Javob: V = 480 − 35t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-model-tuzish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#794fb666"
+    },
+    {
+      "q": "Korxonaning ishlab chiqarish xarajati C = 45 000 + 1800n so'm modeli bilan berilgan, bu yerda n — ishlab chiqarilgan mahsulot soni. Modeldagi 1800 soni nimani anglatadi?",
+      "v": [
+        "Ishlab chiqarishning umumiy doimiy xarajati",
+        "Bitta qo'shimcha mahsulot uchun ketadigan xarajat",
+        "Bitta mahsulotning sotuv narxi",
+        "Barcha mahsulot uchun jami xarajat"
+      ],
+      "t": 1,
+      "izoh": "Chiziqli modelda o'zgaruvchi oldidagi koeffitsient o'zgarish tezligini bildiradi. Bu yerda n bittaga oshsa, xarajat aynan 1800 so'mga ortadi. Demak 1800 — bitta qo'shimcha mahsulotga ketadigan xarajat. 45 000 esa doimiy xarajat. Javob: bitta qo'shimcha mahsulot xarajati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsient-manosi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#15031dab"
+    },
+    {
+      "q": "Suv omborida suv sathi h = 240 − 6t santimetr modeli bilan tavsiflanadi, bu yerda t — kunlar soni. Modeldagi −6 sonining ma'nosi qanday?",
+      "v": [
+        "Sath har kuni 6 sm ga pasayadi",
+        "Sath har kuni 6 sm ga ko'tariladi",
+        "Boshlang'ich sath 6 sm ga teng",
+        "Omborda 6 kundan keyin suv qolmaydi"
+      ],
+      "t": 0,
+      "izoh": "Chiziqli modelda t oldidagi koeffitsient bir kunlik o'zgarishni ko'rsatadi. Koeffitsient manfiy bo'lgani uchun kattalik ortmaydi, balki kamayadi. Demak har kuni sath 6 santimetrga pasayadi, 240 esa boshlang'ich sath. Javob: sath har kuni 6 sm ga pasayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsient-manosi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#bcd8df66"
+    },
+    {
+      "q": "Ikki ustaning oylik daromadi modellari berilgan: A ustada Z = 90 000 + 15 000k, B ustada Z = 150 000 + 9000k so'm, bu yerda k — bajarilgan buyurtmalar soni. Qaysi xulosa to'g'ri?",
+      "v": [
+        "B ustaning har bir buyurtmadan oladigan haqi kattaroq",
+        "Ikkala ustaning boshlang'ich haqi teng",
+        "A ustaning har bir buyurtmadan oladigan haqi kattaroq",
+        "A ustaning boshlang'ich haqi B nikidan kattaroq"
+      ],
+      "t": 2,
+      "izoh": "Buyurtma soni oldidagi koeffitsientlarni solishtiramiz: A ustada 15 000, B ustada 9000 so'm. 15 000 > 9000 bo'lgani uchun har bir buyurtmadan A usta ko'proq oladi. Boshlang'ich haqda esa aksincha: 90 000 < 150 000. Javob: A ustaning bir buyurtmadan oladigan haqi kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koeffitsient-manosi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#239f33bd"
+    },
+    {
+      "q": "Tik yuqoriga otilgan toshning balandligi h = 25t − 5t² metr modeli bilan beriladi. Modeldagi 25 soni fizik ma'noda nimani bildiradi?",
+      "v": [
+        "Erishiladigan maksimal balandlik",
+        "Toshning havoda bo'lish vaqti",
+        "Erkin tushish tezlanishi",
+        "Toshning boshlang'ich tezligi"
+      ],
+      "t": 3,
+      "izoh": "Modelda t oldidagi koeffitsient harakat boshlanishidagi tezlikni ko'rsatadi, chunki t = 0 atrofida balandlik taxminan 25t kabi o'sadi. Maksimal balandlik esa hisoblab topiladi va u 31,25 m ga teng, ya'ni 25 emas. −5t² hadi tezlanish ta'sirini bildiradi. Javob: boshlang'ich tezlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koeffitsient-manosi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#c6247b15"
+    },
+    {
+      "q": "Fermer xo'jaligida bug'doy hosili H = 32 + 0,06x sentner/ga modeli bilan bashorat qilinadi, bu yerda x — gektariga solingan o'g'it miqdori (kg). 150 kg o'g'it solinganda kutilgan hosilni toping.",
+      "v": [
+        "41 sentner/ga",
+        "9 sentner/ga",
+        "122 sentner/ga",
+        "32,9 sentner/ga"
+      ],
+      "t": 0,
+      "izoh": "Modelga x = 150 ni qo'yamiz: H = 32 + 0,06·150. Avval ko'paytmani hisoblaymiz: 0,06·150 = 9. So'ng boshlang'ich hosilni qo'shamiz: 32 + 9 = 41. Javob: 41 sentner/ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-bashorat",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#70a3be98"
+    },
+    {
+      "q": "Bir shaharda avtomobillar soni chiziqli o'smoqda: 2020-yilda 42 000 ta bo'lgan va har yili 3500 taga ortmoqda. Shu model bo'yicha 2027-yilda nechta avtomobil bo'ladi?",
+      "v": [
+        "70 000 ta",
+        "63 000 ta",
+        "24 500 ta",
+        "66 500 ta"
+      ],
+      "t": 3,
+      "izoh": "2020-yildan 2027-yilgacha o'tgan vaqt 7 yil. Shu davrda qo'shiladigan avtomobillar soni 3500·7 = 24 500 ta. Boshlang'ich qiymatga qo'shamiz: 42 000 + 24 500 = 66 500. Javob: 66 500 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-bashorat",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#e5b0f315"
+    },
+    {
+      "q": "Uy uchun elektr to'lovi T = 12 000 + 450k so'm modeli bilan hisoblanadi, bu yerda k — sarflangan kilovatt-soat. Oilada bir oyda 180 kilovatt-soat sarflansa, to'lov qancha bo'ladi?",
+      "v": [
+        "81 000 so'm",
+        "93 000 so'm",
+        "12 450 so'm",
+        "2 160 450 so'm"
+      ],
+      "t": 1,
+      "izoh": "Modelga k = 180 ni qo'yamiz: T = 12 000 + 450·180. O'zgaruvchi qismini hisoblaymiz: 450·180 = 81 000 so'm. Doimiy to'lovni qo'shamiz: 12 000 + 81 000 = 93 000 so'm. Javob: 93 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-bashorat",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#f3f0245c"
+    },
+    {
+      "q": "Do'konda sotilgan muzqaymoq soni havo haroratiga bog'liq: 20 gradusda 140 ta, 24 gradusda 180 ta sotilgan. Bog'lanish chiziqli deb hisoblab, 30 gradusda nechta muzqaymoq sotilishini bashorat qiling.",
+      "v": [
+        "220 ta",
+        "280 ta",
+        "240 ta",
+        "300 ta"
+      ],
+      "t": 2,
+      "izoh": "O'zgarish tezligi k = (180 − 140) : (24 − 20) = 40 : 4 = 10 ta har bir gradusga. 24 gradusdan 30 gradusgacha farq 6 gradus, demak sotuv 10·6 = 60 taga ortadi. 180 + 60 = 240. Javob: 240 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-bashorat",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#8c116b0b"
+    },
+    {
+      "q": "Xodimning oylik daromadi Z = 1 200 000 + 45 000n so'm modeli bilan hisoblanadi, bu yerda n — qo'shimcha smenalar soni. Daromad 1 785 000 so'm bo'lishi uchun nechta qo'shimcha smena kerak?",
+      "v": [
+        "27 ta",
+        "39 ta",
+        "66 ta",
+        "13 ta"
+      ],
+      "t": 3,
+      "izoh": "Tenglama tuzamiz: 1 200 000 + 45 000n = 1 785 000. Doimiy qismni chap tomondan olib tashlaymiz: 45 000n = 1 785 000 − 1 200 000 = 585 000. Endi bo'lamiz: n = 585 000 : 45 000 = 13. Javob: 13 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-teskari-bashorat",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#51f76461"
+    },
+    {
+      "q": "Basseynga suv quyilmoqda va suv hajmi V = 90 + 15t litr modeli bilan o'zgaradi, bu yerda t — daqiqa. Basseynda 615 litr suv bo'lishi uchun necha daqiqa kerak?",
+      "v": [
+        "35 daqiqa",
+        "7 daqiqa",
+        "41 daqiqa",
+        "47 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "90 + 15t = 615 tenglamani yechamiz. Boshlang'ich hajmni ayiramiz: 15t = 615 − 90 = 525. Bo'lamiz: t = 525 : 15 = 35 daqiqa. Javob: 35 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-teskari-bashorat",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#cae08e8b"
+    },
+    {
+      "q": "Sovutish kamerasi ishga tushirilganda harorat 18 gradus edi, 4 soatdan keyin 8 gradusga tushdi. Pasayish chiziqli deb hisoblansa, harorat −7 gradusga yetishi uchun kamera ishga tushgandan boshlab necha soat o'tadi?",
+      "v": [
+        "4,4 soat",
+        "25 soat",
+        "10 soat",
+        "62,5 soat"
+      ],
+      "t": 2,
+      "izoh": "Avval modelni tuzamiz: k = (8 − 18) : 4 = −2,5 gradus har soatda, demak T = 18 − 2,5t. Endi 18 − 2,5t = −7 tenglamani yechamiz: 2,5t = 18 + 7 = 25. Bundan t = 25 : 2,5 = 10 soat. Javob: 10 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-teskari-bashorat",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#cbe5127b"
+    },
+    {
+      "q": "Korxonada ishchilar soni har yili bir xil miqdorda ortmoqda: 2021-yil boshida 340 ta, 2024-yil boshida 484 ta ishchi bo'lgan. Shu sur'at saqlansa, qaysi yil boshida ishchilar soni birinchi marta 600 tadan oshadi?",
+      "v": [
+        "2026-yil",
+        "2028-yil",
+        "2034-yil",
+        "2027-yil"
+      ],
+      "t": 3,
+      "izoh": "Yillik o'sish k = (484 − 340) : 3 = 48 ta. Yil boshlaridagi son N = 340 + 48t, bu yerda t — 2021-yildan o'tgan butun yillar soni. 340 + 48t > 600 shartidan 48t > 260, ya'ni t > 5,41 kelib chiqadi. t butun bo'lgani uchun eng kichigi t = 6: 2026-yil boshida 340 + 240 = 580 bo'lib, hali 600 dan kam, 2027-yil boshida esa 340 + 288 = 628 > 600. Javob: 2027-yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-teskari-bashorat",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#06de35c7"
+    },
+    {
+      "q": "Jadvalda x qiymatlari 1, 2, 3, 4 ga mos ravishda y qiymatlari 7, 12, 17, 22 berilgan. Bu ma'lumotlar qaysi model bilan to'liq tasvirlanadi?",
+      "v": [
+        "y = 5x + 2 chiziqli model",
+        "y = 5x² + 2 kvadratik model",
+        "y = 7x chiziqli model",
+        "y = x² + 6 kvadratik model"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ayirmalarni topamiz: 12 − 7 = 5, 17 − 12 = 5, 22 − 17 = 5. Ayirmalar o'zgarmas, demak model chiziqli va koeffitsient 5. Boshlang'ich had b = 7 − 5·1 = 2. Javob: y = 5x + 2 chiziqli model.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-chiziqlilik-tekshirish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#4cc3f4aa"
+    },
+    {
+      "q": "Do'konda 2, 4, 6 va 8 kilogrammlik qadoqdagi un mos ravishda 24 000, 48 000, 72 000 va 96 000 so'm turadi. Bu ma'lumotlarga qaysi model mos keladi?",
+      "v": [
+        "T = 24 000m — chiziqli model",
+        "T = 12 000m² — kvadratik model",
+        "T = 24 000 + 12 000m — chiziqli model",
+        "T = 12 000m — to'g'ri proporsional chiziqli model"
+      ],
+      "t": 3,
+      "izoh": "Har bir narxni og'irlikka bo'lamiz: 24 000 : 2 = 12 000, 48 000 : 4 = 12 000, 96 000 : 8 = 12 000. Nisbat o'zgarmas, demak bog'lanish to'g'ri proporsional va bir kilogramm 12 000 so'm turadi. Boshlang'ich to'lov yo'q, ya'ni b = 0. Javob: T = 12 000m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-chiziqlilik-tekshirish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#793ac08b"
+    },
+    {
+      "q": "Uzoq yo'lda avtomobil yoqilg'i sarfi o'lchandi: 100 km da 8 litr, 250 km da 20 litr, 400 km da 32 litr. Bog'lanish chiziqlimi va koeffitsienti qanday?",
+      "v": [
+        "Ha, har kilometrga 0,08 litr",
+        "Ha, har kilometrga 0,8 litr",
+        "Yo'q, bog'lanish kvadratik",
+        "Ha, har kilometrga 0,12 litr"
+      ],
+      "t": 0,
+      "izoh": "Har bir juftlik uchun nisbatni tekshiramiz: 8 : 100 = 0,08 va 20 : 250 = 0,08 va 32 : 400 = 0,08. Nisbat uch holatda ham bir xil, demak sarf masofaga to'g'ri proporsional. Koeffitsient har kilometrga 0,08 litrga teng. Javob: ha, 0,08 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-chiziqlilik-tekshirish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#a9363b1f"
+    },
+    {
+      "q": "Chiziqli model bilan tavsiflanadigan jadvalda x = 3 bo'lganda y = 19, x = 7 bo'lganda esa y = 43 ekani ma'lum. x = 10 dagi y qiymatini toping.",
+      "v": [
+        "55",
+        "60",
+        "61",
+        "67"
+      ],
+      "t": 2,
+      "izoh": "Burchak koeffitsienti k = (43 − 19) : (7 − 3) = 24 : 4 = 6. Boshlang'ich had b = 19 − 6·3 = 1, demak y = 6x + 1. Endi x = 10 ni qo'yamiz: y = 60 + 1 = 61. Javob: 61.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-chiziqlilik-tekshirish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#ebbaf25a"
+    },
+    {
+      "q": "Jadvalda t = 0, 1, 2, 3, 4 qiymatlariga mos ravishda s = 0, 3, 12, 27, 48 qiymatlari berilgan. Bu ma'lumotlarni qaysi model aniq tasvirlaydi?",
+      "v": [
+        "s = 3t² kvadratik model",
+        "s = 3t chiziqli model",
+        "s = t³ kubik model",
+        "s = 6t² − 3t kvadratik model"
+      ],
+      "t": 0,
+      "izoh": "Birinchi ayirmalar 3, 9, 15, 21 bo'lib, ular teng emas. Ikkinchi ayirmalar esa 6, 6, 6 — o'zgarmas, demak model kvadratik. Bosh koeffitsient 2a = 6 dan a = 3, ya'ni s = 3t². Tekshiramiz: t = 4 da 3·16 = 48 ✓. Javob: s = 3t².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-ikkinchi-ayirma",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#ab553587"
+    },
+    {
+      "q": "Jadvaldagi y qiymatlari 5, 11, 21, 35, 53 ketma-ket x = 0, 1, 2, 3, 4 ga mos keladi. Ularni tasvirlovchi kvadratik modelning bosh koeffitsienti a qanchaga teng?",
+      "v": [
+        "4",
+        "2",
+        "6",
+        "10"
+      ],
+      "t": 1,
+      "izoh": "Birinchi ayirmalar: 6, 10, 14, 18. Ikkinchi ayirmalar: 4, 4, 4 — o'zgarmas, demak model kvadratik. Kvadratik modelda ikkinchi ayirma 2a ga teng bo'ladi, ya'ni 2a = 4 va a = 2. To'liq model: y = 2x² + 4x + 5. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-ikkinchi-ayirma",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#915636db"
+    },
+    {
+      "q": "Uch qatorli ma'lumot berilgan: A qatorda 2, 5, 8, 11; B qatorda 1, 4, 9, 16; C qatorda 3, 6, 12, 24. Qaysi qator kvadratik model bilan tasvirlanadi?",
+      "v": [
+        "Faqat A qator",
+        "Faqat B qator",
+        "Faqat C qator",
+        "A va B qatorlar"
+      ],
+      "t": 1,
+      "izoh": "A qatorda ayirmalar 3, 3, 3 — o'zgarmas, demak chiziqli. B qatorda ayirmalar 3, 5, 7 bo'lib, ikkinchi ayirmalar 2, 2 — o'zgarmas, demak kvadratik. C qatorda esa har hadi ikkilanadi, bu ko'rsatkichli o'sish. Javob: faqat B qator.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-ikkinchi-ayirma",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#ce0cc63b"
+    },
+    {
+      "q": "Kvadratik model bilan tavsiflangan jadvalda x = 1, 2, 3, 4 uchun y qiymatlari 4, 13, 28, 49 ga teng. x = 5 dagi y qiymati qanday bo'ladi?",
+      "v": [
+        "64",
+        "70",
+        "76",
+        "82"
+      ],
+      "t": 2,
+      "izoh": "Birinchi ayirmalar: 9, 15, 21. Ikkinchi ayirma o'zgarmas va 6 ga teng. Demak keyingi birinchi ayirma 21 + 6 = 27 bo'ladi. Shuning uchun y = 49 + 27 = 76. Javob: 76.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-ikkinchi-ayirma",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#3c506650"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi tomorqaning perimetri 60 m. Uning bir tomoni x metr bo'lsa, tomorqa yuzasini x orqali ifodalovchi modelni ko'rsating.",
+      "v": [
+        "S = 60x − x²",
+        "S = x² − 30x",
+        "S = 15x − x²",
+        "S = 30x − x²"
+      ],
+      "t": 3,
+      "izoh": "Perimetr 60 m bo'lgani uchun ikki qo'shni tomon yig'indisi 30 m ga teng. Demak ikkinchi tomon 30 − x bo'ladi. Yuza tomonlar ko'paytmasi: S = x(30 − x) = 30x − x². Javob: S = 30x − x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-model-tuzish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#12037f55"
+    },
+    {
+      "q": "Tosh 30 m/s boshlang'ich tezlik bilan tik yuqoriga otildi. Erkin tushish tezlanishi 10 m/s² deb olinsa, balandlikning vaqtga bog'liq modelini toping.",
+      "v": [
+        "h = 30t − 10t²",
+        "h = 30t − 5t²",
+        "h = 30t + 5t²",
+        "h = 30 − 5t²"
+      ],
+      "t": 1,
+      "izoh": "Tik otilgan jism balandligi h = v₀t − gt²/2 formulasi bilan hisoblanadi. Bu yerda v₀ = 30 va g = 10, demak gt²/2 = 5t². Shunday qilib h = 30t − 5t². Tezlanish pastga yo'nalgani uchun ikkinchi had manfiy. Javob: h = 30t − 5t².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-model-tuzish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#c873d74a"
+    },
+    {
+      "q": "Kvadratik model y = ax² + bx + c uchun x = 0 da y = 6, x = 1 da y = 11 va x = 2 da y = 20 ekani ma'lum. Modelni toping.",
+      "v": [
+        "y = 3x² + 2x + 6",
+        "y = x² + 4x + 6",
+        "y = 5x² + 6",
+        "y = 2x² + 3x + 6"
+      ],
+      "t": 3,
+      "izoh": "x = 0 dan darrov c = 6 kelib chiqadi. x = 1 dan a + b + 6 = 11, ya'ni a + b = 5. x = 2 dan 4a + 2b + 6 = 20, ya'ni 2a + b = 7. Ikki tenglamani ayirsak a = 2, keyin b = 3. Javob: y = 2x² + 3x + 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-model-tuzish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#491f6384"
+    },
+    {
+      "q": "Konsert chiptasi 40 000 so'mdan sotilganda 200 ta chipta sotiladi. Narx har 2000 so'mga oshirilganda sotuv 10 taga kamayadi. Narx x marta oshirilgandagi tushum modelini tuzing.",
+      "v": [
+        "T = (40 000 + 2000x)(200 − 10x)",
+        "T = (40 000 + 2000x)(200 + 10x)",
+        "T = (40 000 − 2000x)(200 − 10x)",
+        "T = 40 000·200 − 2000x·10x"
+      ],
+      "t": 0,
+      "izoh": "Narx oshirilgani uchun yangi narx 40 000 + 2000x bo'ladi. Har oshirishda sotuv kamaygani uchun chiptalar soni 200 − 10x ga teng. Tushum narx bilan sonning ko'paytmasi: T = (40 000 + 2000x)(200 − 10x). Bu qavslar ochilganda kvadratik model chiqadi. Javob: T = (40 000 + 2000x)(200 − 10x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-model-tuzish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#44c813bf"
+    },
+    {
+      "q": "Tovar narxi x ming so'm bo'lganda kunlik foyda P = −2x² + 48x − 180 ming so'm modeli bilan beriladi. Foyda eng katta bo'ladigan narxni toping.",
+      "v": [
+        "24 ming so'm",
+        "6 ming so'm",
+        "12 ming so'm",
+        "48 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Bosh koeffitsient manfiy bo'lgani uchun parabola tarmoqlari pastga qaragan va uchida maksimum bo'ladi. Uch abssissasi x = −b : (2a) formulasi bilan topiladi: x = −48 : (2·(−2)) = −48 : (−4) = 12. Javob: 12 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratik-tepa-maksimum",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#c346d6fe"
+    },
+    {
+      "q": "O'quvchilar yasagan raketa modelining balandligi h = 40t − 5t² metr modeli bilan tavsiflanadi. Raketa erishadigan eng katta balandlikni toping.",
+      "v": [
+        "4 m",
+        "80 m",
+        "160 m",
+        "40 m"
+      ],
+      "t": 1,
+      "izoh": "Avval maksimumga chiqish vaqtini topamiz: t = −40 : (2·(−5)) = 4 soniya. So'ng shu vaqtdagi balandlikni hisoblaymiz: h = 40·4 − 5·16 = 160 − 80 = 80 metr. Javob: 80 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratik-tepa-maksimum",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#24e1cd52"
+    },
+    {
+      "q": "Fermer 84 m to'siq bilan devorga tegib turgan to'g'ri to'rtburchak maydonni o'ramoqchi, devor tomoniga to'siq kerak emas. Maydonning eng katta yuzasi qancha bo'ladi?",
+      "v": [
+        "441 m²",
+        "784 m²",
+        "882 m²",
+        "1764 m²"
+      ],
+      "t": 2,
+      "izoh": "Devorga perpendikulyar ikki tomon x bo'lsa, uchinchi tomon 84 − 2x bo'ladi. Yuza modeli S = x(84 − 2x) = 84x − 2x². Maksimum x = −84 : (2·(−2)) = 21 da erishiladi. U holda ikkinchi tomon 84 − 42 = 42 va S = 21·42 = 882. Javob: 882 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadratik-tepa-maksimum",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#3dbbfed6"
+    },
+    {
+      "q": "Kvadratik model y = −3x² + 30x − 52 berilgan. Uning eng katta qiymati qaysi x da erishiladi va bu qiymat qanchaga teng?",
+      "v": [
+        "x = 10, y = −52",
+        "x = 5, y = 23",
+        "x = 5, y = 173",
+        "x = −5, y = −277"
+      ],
+      "t": 1,
+      "izoh": "Uch abssissasi x = −b : (2a) = −30 : (2·(−3)) = 5. Endi shu nuqtadagi qiymatni topamiz: y = −3·25 + 30·5 − 52 = −75 + 150 − 52 = 23. Bosh koeffitsient manfiy bo'lgani uchun bu eng katta qiymat. Javob: x = 5, y = 23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratik-tepa-maksimum",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#00e8c72b"
+    },
+    {
+      "q": "Yuqoriga otilgan toshning balandligi h = 35t − 5t² metr modeli bilan tavsiflanadi. Tosh otilgandan keyin qancha vaqtda yerga tushadi?",
+      "v": [
+        "3,5 s",
+        "5 s",
+        "7 s",
+        "14 s"
+      ],
+      "t": 2,
+      "izoh": "Yerga tushish paytida balandlik nolga teng: 35t − 5t² = 0. Umumiy ko'paytuvchini qavsdan chiqaramiz: 5t(7 − t) = 0. Bundan t = 0 (otilish payti) va t = 7. Javob: 7 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratik-nol-nuqta",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#d592c5db"
+    },
+    {
+      "q": "Ko'prik arkasining balandligi h = 0,05x(40 − x) metr modeli bilan tavsiflanadi, bu yerda x — chap tayanchdan o'lchangan masofa. Arka yer sathiga qaysi nuqtalarda tegadi?",
+      "v": [
+        "x = 0 va x = 40",
+        "x = 0 va x = 20",
+        "x = 20 va x = 40",
+        "x = 0 va x = 0,05"
+      ],
+      "t": 0,
+      "izoh": "Yer sathida balandlik nolga teng, ya'ni 0,05x(40 − x) = 0. Ko'paytma nolga teng bo'lishi uchun ko'paytuvchilardan biri nol bo'lishi kerak. Bundan x = 0 yoki 40 − x = 0, ya'ni x = 40. Javob: x = 0 va x = 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratik-nol-nuqta",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#2b94f86e"
+    },
+    {
+      "q": "Purkagichdan otilgan suv oqimining balandligi h = −0,02x² + 0,8x metr modeli bilan tasvirlanadi, bu yerda x — gorizontal masofa. Suv purkagichdan qancha masofada yerga tushadi?",
+      "v": [
+        "20 m",
+        "8 m",
+        "0,8 m",
+        "40 m"
+      ],
+      "t": 3,
+      "izoh": "Yerga tushish nuqtasida h = 0, ya'ni −0,02x² + 0,8x = 0. Qavsdan x ni chiqaramiz: x(0,8 − 0,02x) = 0. Birinchi ildiz x = 0 — purkagichning o'zi, ikkinchisi 0,02x = 0,8 dan x = 40. Javob: 40 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadratik-nol-nuqta",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#eaee5b62"
+    },
+    {
+      "q": "Bir mahsulot bo'yicha foyda modeli P = 3x² − 21x + 30 ko'rinishida berilgan. Foyda nolga aylanadigan x qiymatlarini toping.",
+      "v": [
+        "x = −2 va x = −5",
+        "x = 3 va x = 10",
+        "x = 7 va x = 10",
+        "x = 2 va x = 5"
+      ],
+      "t": 3,
+      "izoh": "3x² − 21x + 30 = 0 tenglamani 3 ga bo'lamiz: x² − 7x + 10 = 0. Diskriminant D = 49 − 40 = 9, ildizi 3. Ildizlar x = (7 ± 3) : 2, ya'ni x = 5 va x = 2. Javob: x = 2 va x = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratik-nol-nuqta",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#fb28e1b1"
+    },
+    {
+      "q": "Zavodda n ta mahsulot ishlab chiqarilganda xarajat C = 0,5n² + 20n + 400 ming so'm modeli bilan hisoblanadi. 30 ta mahsulot uchun xarajatni toping.",
+      "v": [
+        "1015 ming so'm",
+        "1050 ming so'm",
+        "1450 ming so'm",
+        "1900 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Modelga n = 30 ni qo'yamiz. Avval kvadrat had: 0,5·900 = 450. So'ng chiziqli had: 20·30 = 600. Doimiy had 400. Yig'indi: 450 + 600 + 400 = 1450. Javob: 1450 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratik-qiymat-hisoblash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#c9781a55"
+    },
+    {
+      "q": "Yuqoriga otilgan jismning balandligi h = 45t − 5t² metr modeli bilan berilgan. Otilgandan 6 soniya o'tgach jism qanday balandlikda bo'ladi?",
+      "v": [
+        "90 m",
+        "240 m",
+        "270 m",
+        "45 m"
+      ],
+      "t": 0,
+      "izoh": "Modelga t = 6 ni qo'yamiz. Birinchi had: 45·6 = 270. Ikkinchi had: 5·6² = 5·36 = 180. Ayirma: 270 − 180 = 90 metr. Javob: 90 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratik-qiymat-hisoblash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#5c670c17"
+    },
+    {
+      "q": "Kompaniya reklamaga x mln so'm sarflaganda sotuv hajmi S = −0,4x² + 24x + 150 mln so'm modeli bilan o'zgaradi. Reklamaga 20 mln so'm sarflansa, sotuv qancha bo'ladi?",
+      "v": [
+        "622 mln so'm",
+        "470 mln so'm",
+        "630 mln so'm",
+        "790 mln so'm"
+      ],
+      "t": 1,
+      "izoh": "x = 20 ni modelga qo'yamiz. Kvadrat had: −0,4·400 = −160. Chiziqli had: 24·20 = 480. Doimiy had 150. Yig'indi: −160 + 480 + 150 = 470. Javob: 470 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratik-qiymat-hisoblash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#57956c75"
+    },
+    {
+      "q": "Aylana shaklidagi bolalar maydonchasining yuzasi S = 3,14r² modeli bilan hisoblanadi, bu yerda r — radius. Radius 8 m bo'lganda maydoncha yuzasi qanchaga teng?",
+      "v": [
+        "25,12 m²",
+        "50,24 m²",
+        "200,96 m²",
+        "803,84 m²"
+      ],
+      "t": 2,
+      "izoh": "Avval radiusni kvadratga ko'taramiz: 8² = 64. So'ng koeffitsientga ko'paytiramiz: 3,14·64 = 200,96. Diqqat: 2·3,14·8 = 50,24 bu uzunlik, yuza emas. Javob: 200,96 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratik-qiymat-hisoblash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#dede2d10"
+    },
+    {
+      "q": "Kvadrat shaklidagi xonaning tomoni 2 m ga uzaytirilsa, uning yuzasi 32 m² ga ortadi. Xonaning dastlabki tomoni qancha edi?",
+      "v": [
+        "8 m",
+        "14 m",
+        "16 m",
+        "7 m"
+      ],
+      "t": 3,
+      "izoh": "Dastlabki tomon a bo'lsin. Yangi yuza (a + 2)², eski yuza a². Ularning ayirmasi: (a + 2)² − a² = 4a + 4. Shart bo'yicha 4a + 4 = 32, bundan 4a = 28 va a = 7 metr. Javob: 7 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-kvadratik-model",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#ee76d3ed"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi gilamning uzunligi enidan 4 m ortiq. Gilam yuzasi 96 m² bo'lsa, uning eni qancha?",
+      "v": [
+        "8 m",
+        "12 m",
+        "24 m",
+        "48 m"
+      ],
+      "t": 0,
+      "izoh": "En x bo'lsa, uzunlik x + 4 va yuza modeli x(x + 4) = 96 bo'ladi. Buni x² + 4x − 96 = 0 ko'rinishga keltiramiz. Diskriminant D = 16 + 384 = 400, ildizi 20. x = (−4 + 20) : 2 = 8. Manfiy ildiz o'lchov bo'la olmaydi. Javob: 8 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-kvadratik-model",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#691e477d"
+    },
+    {
+      "q": "Tomonlari 12 m va 9 m bo'lgan to'g'ri to'rtburchak hovli atrofiga bir xil x metr kenglikdagi yo'lak quriladi. Yo'lak bilan birga umumiy yuza modelini yozing.",
+      "v": [
+        "S = 4x² + 21x + 108",
+        "S = 4x² + 42x + 108",
+        "S = x² + 21x + 108",
+        "S = 4x² + 42x"
+      ],
+      "t": 1,
+      "izoh": "Yo'lak har ikki tomondan qo'shilgani uchun yangi o'lchamlar 12 + 2x va 9 + 2x bo'ladi. Ularni ko'paytiramiz: (12 + 2x)(9 + 2x) = 108 + 24x + 18x + 4x². O'xshash hadlarni yig'amiz: 4x² + 42x + 108. Javob: S = 4x² + 42x + 108.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-kvadratik-model",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#56545701"
+    },
+    {
+      "q": "Tomoni 30 sm bo'lgan kvadrat rasm atrofiga bir xil kenglikdagi ramka o'rnatilgan, shuning uchun ramka bilan birga tomon 30 + 2x sm. Ramkaning o'zi egallagan yuza 700 sm² bo'lsa, ramka kengligini toping.",
+      "v": [
+        "5,8 sm",
+        "10 sm",
+        "5 sm",
+        "23,3 sm"
+      ],
+      "t": 2,
+      "izoh": "Ramka yuzasi katta kvadrat bilan rasm yuzasining ayirmasi: (30 + 2x)² − 30² = 700. Qavsni ochamiz: 900 + 120x + 4x² − 900 = 700, ya'ni 4x² + 120x − 700 = 0. Hammasini 4 ga bo'lamiz: x² + 30x − 175 = 0, D = 900 + 700 = 1600 va ildizi 40. x = (−30 + 40) : 2 = 5. Javob: 5 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-kvadratik-model",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#ab2463b3"
+    },
+    {
+      "q": "Do'konda mahsulot narxi 25 000 so'm bo'lganda kuniga 80 dona sotiladi. Narx har 1000 so'mga arzonlashganda sotuv 8 donaga ortadi. Narx uch marta arzonlashtirilsa, kunlik tushum qancha bo'ladi?",
+      "v": [
+        "2 000 000 so'm",
+        "2 184 000 so'm",
+        "2 600 000 so'm",
+        "2 288 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Uch marta arzonlashtirilgach narx 25 000 − 3·1000 = 22 000 so'm bo'ladi. Sotuv esa 80 + 3·8 = 104 donaga yetadi. Tushum narx bilan sonning ko'paytmasi: 22 000·104 = 2 288 000 so'm. Javob: 2 288 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daromad-narx-modeli",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#019f727e"
+    },
+    {
+      "q": "Teatrda chipta narxi x ming so'm bo'lganda tomoshabinlar soni (600 − 20x) ta bo'ladi. Tushum eng katta bo'ladigan chipta narxini toping.",
+      "v": [
+        "7,5 ming so'm",
+        "15 ming so'm",
+        "20 ming so'm",
+        "30 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Tushum modeli T = x(600 − 20x) = 600x − 20x². Bosh koeffitsient manfiy, demak uchida maksimum bo'ladi. Uch abssissasi x = −600 : (2·(−20)) = 15. Javob: 15 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daromad-narx-modeli",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#61ee0b72"
+    },
+    {
+      "q": "Mehmonxonada bir kecha narxi 300 ming so'm bo'lganda 40 xona band bo'ladi. Narx har 25 ming so'mga oshirilganda 2 ta xona bo'sh qoladi. Tushum eng katta bo'ladigan narxni toping.",
+      "v": [
+        "300 ming so'm",
+        "350 ming so'm",
+        "400 ming so'm",
+        "500 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Narx x marta oshirilsa, u 300 + 25x, band xonalar esa 40 − 2x bo'ladi. Tushum T = (300 + 25x)(40 − 2x) = 12 000 + 400x − 50x². Maksimum x = −400 : (2·(−50)) = 4 da. Demak narx 300 + 25·4 = 400 ming so'm. Javob: 400 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daromad-narx-modeli",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#0539f8ed"
+    },
+    {
+      "q": "Korxona foydasi F = −5x² + 300x − 1000 ming so'm modeli bilan berilgan, bu yerda x — sotilgan mahsulot soni. Eng katta foyda qanchaga teng?",
+      "v": [
+        "3500 ming so'm",
+        "4500 ming so'm",
+        "8000 ming so'm",
+        "9000 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "Avval maksimum nuqtasini topamiz: x = −300 : (2·(−5)) = 30. So'ng foydani hisoblaymiz: F = −5·900 + 300·30 − 1000 = −4500 + 9000 − 1000 = 3500. Javob: 3500 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daromad-narx-modeli",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#2513033d"
+    },
+    {
+      "q": "Perimetri 60 m bo'lgan to'g'ri to'rtburchak tomorqaning yuzasi S = 30x − x² modeli bilan berilgan, bu yerda x — bir tomon uzunligi. Bu modelda x qanday qiymatlarni qabul qila oladi?",
+      "v": [
+        "0 < x < 30",
+        "0 ≤ x ≤ 60",
+        "0 < x < 15",
+        "x > 0"
+      ],
+      "t": 0,
+      "izoh": "Tomon uzunligi musbat bo'lishi kerak, demak x > 0. Ikkinchi tomon 30 − x ham musbat bo'lishi shart, ya'ni x < 30. Ikki shartni birlashtirsak 0 < x < 30 chiqadi. Chegaralarda to'rtburchak hosil bo'lmaydi. Javob: 0 < x < 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-aniqlanish-sohasi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#3f95d0c0"
+    },
+    {
+      "q": "Yuqoriga otilgan toshning balandligi h = 30t − 5t² metr modeli bilan berilgan. Bu model qaysi vaqt oralig'ida jismning haqiqiy holatini tasvirlaydi?",
+      "v": [
+        "0 ≤ t ≤ 3",
+        "0 ≤ t ≤ 30",
+        "t ≥ 0",
+        "0 ≤ t ≤ 6"
+      ],
+      "t": 3,
+      "izoh": "Model faqat tosh havoda bo'lgan vaqtda ma'noga ega. Yerga tushish payti 30t − 5t² = 0 dan topiladi: 5t(6 − t) = 0, ya'ni t = 6. Tosh tushgandan keyin model manfiy balandlik beradi, bu esa mumkin emas. Javob: 0 ≤ t ≤ 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "model-aniqlanish-sohasi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#d551b57d"
+    },
+    {
+      "q": "Sovutgichdagi harorat T = 20 − 4t modeli bilan pasayadi, bu yerda t — soat. Qurilma harorati −16 gradusdan pastga tushira olmaydi. Model qaysi vaqt oralig'ida ma'noga ega?",
+      "v": [
+        "0 ≤ t ≤ 5",
+        "0 ≤ t ≤ 9",
+        "0 ≤ t ≤ 4",
+        "0 ≤ t ≤ 20"
+      ],
+      "t": 1,
+      "izoh": "Eng past haroratga yetish vaqtini topamiz: 20 − 4t = −16, bundan 4t = 36 va t = 9 soat. Shundan keyin model haroratni yanada pasaytiradi, lekin qurilma buni bajara olmaydi. Demak model faqat 0 ≤ t ≤ 9 oralig'ida to'g'ri. Javob: 0 ≤ t ≤ 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-aniqlanish-sohasi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#c953f60d"
+    },
+    {
+      "q": "Talaba 500 000 so'mlik jamg'armasidan har kuni 35 000 so'm sarflaydi, ya'ni Q = 500 000 − 35 000k modeli o'rinli. Bu chiziqli model necha kungacha ma'noga ega?",
+      "v": [
+        "k ≤ 15",
+        "k ≤ 35",
+        "k ≤ 500",
+        "k ≤ 14"
+      ],
+      "t": 3,
+      "izoh": "Jamg'arma manfiy bo'la olmaydi, demak 500 000 − 35 000k ≥ 0 bo'lishi kerak. Bundan 35 000k ≤ 500 000, ya'ni k ≤ 14,28. k butun son bo'lgani uchun eng kattasi 14. 15-kunda pul yetmaydi. Javob: k ≤ 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-aniqlanish-sohasi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#87073df2"
+    },
+    {
+      "q": "Chaqaloq tug'ilganda 50 sm edi va birinchi yil davomida har oyda 2 sm dan o'sdi. Shu chiziqli model bilan 20 yildan keyingi bo'yni hisoblasak, natija va undan chiqadigan xulosa qanday?",
+      "v": [
+        "5,3 m — model uzoq muddatga ekstrapolyatsiya qilinmasligi kerak",
+        "5,3 m — natija ishonchli, chunki model chiziqli",
+        "1,7 m — model har qanday yosh uchun to'g'ri natija beradi",
+        "2,9 m — o'sish sur'ati umuman o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "20 yil 240 oyga teng, demak model 50 + 2·240 = 530 sm, ya'ni 5,3 metr beradi. Bunday bo'y imkonsiz, chunki o'sish sur'ati yosh ortgani sari keskin pasayadi. Model faqat kuzatilgan qisqa oraliqda ishlaydi. Javob: 5,3 m va model uzoq muddatga yaroqsiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstrapolyatsiya-cheklovi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#ed92a039"
+    },
+    {
+      "q": "Do'konning oylik savdosi 6 oy davomida chiziqli o'sdi va menejer shu model bilan 5 yildan keyingi savdoni bashorat qilmoqchi. Bu haqda qaysi xulosa to'g'ri?",
+      "v": [
+        "Bashorat ishonchli, chunki model chiziqli",
+        "Bashorat ishonchsiz, chunki model kuzatilgan oraliqdan uzoqqa cho'zilmoqda",
+        "Bashorat ishonchli, chunki 6 oylik ma'lumot yetarli",
+        "Bashorat ishonchsiz, chunki chiziqli model umuman qo'llanilmaydi"
+      ],
+      "t": 1,
+      "izoh": "Model faqat ma'lumot to'plangan oraliqda tekshirilgan. 6 oylik kuzatuvni 60 oyga cho'zish ekstrapolyatsiya bo'lib, bozor, raqobat va narxlar o'zgarishini hisobga olmaydi. Shuning uchun bunday uzoq bashorat ishonchsiz. Chiziqli modelning o'zi esa qisqa muddatda foydali. Javob: bashorat ishonchsiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstrapolyatsiya-cheklovi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#3ca165f7"
+    },
+    {
+      "q": "Erkin tushish uchun h = 5t² modeli havo qarshiligi hisobga olinmagan holda tuzilgan. Bu modelning asosiy cheklovi nimada?",
+      "v": [
+        "Model faqat butun t qiymatlarida ishlaydi",
+        "Model faqat manfiy t larda ishlaydi",
+        "Model faqat kichik t larda va havo qarshiligi sezilmaydigan sharoitda yaxshi natija beradi",
+        "Model hech qanday cheklovga ega emas"
+      ],
+      "t": 2,
+      "izoh": "Uzoq tushishda havo qarshiligi kuchayadi va jism tezligi doimiy qiymatga yaqinlashadi. Shu sababli haqiqiy masofa model bergan qiymatdan kichik bo'lib qoladi. Demak model faqat qisqa vaqt va qarshilik sezilmaydigan sharoitda to'g'ri. Javob: model kichik t larda ishlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekstrapolyatsiya-cheklovi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#be37ffec"
+    },
+    {
+      "q": "Viloyatda 5 yil davomida aholi soni chiziqli o'sdi: har yili 12 ming kishiga. Shu model bilan 100 yildan keyingi aholi soni bashorat qilinsa, natija qanday baholanadi?",
+      "v": [
+        "Natija haqiqatga yaqin bo'ladi",
+        "Natija aniq, chunki chiziqli model xatolik bermaydi",
+        "Natijani hisoblab bo'lmaydi, chunki model kvadratik bo'lishi kerak",
+        "Natija shubhali, chunki tug'ilish, migratsiya va resurslar o'zgarib turadi"
+      ],
+      "t": 3,
+      "izoh": "Model 5 yillik kuzatuvga asoslangan, 100 yil esa undan yigirma barobar uzoq. Shuncha vaqtda tug'ilish sur'ati, ko'chib kelish va yer, suv kabi resurs cheklovlari o'zgaradi. Shuning uchun chiziqli o'sish saqlanadi deb ayta olmaymiz. Javob: natija shubhali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstrapolyatsiya-cheklovi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#ae249755"
+    },
+    {
+      "q": "Ikki idishga bir vaqtda suv quyilmoqda: birinchisida V = 200 + 15t, ikkinchisida V = 80 + 25t litr. Idishlardagi suv miqdori qachon tenglashadi?",
+      "v": [
+        "3 daqiqa",
+        "7 daqiqa",
+        "12 daqiqa",
+        "28 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Tenglashish shartini yozamiz: 200 + 15t = 80 + 25t. O'zgaruvchilarni bir tomonga yig'amiz: 200 − 80 = 25t − 15t, ya'ni 120 = 10t. Bundan t = 12 daqiqa. Tekshirish: har ikkisida 380 litr. Javob: 12 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-model-kesishishi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#12ce290c"
+    },
+    {
+      "q": "Ikki xil aloqa tarifi taklif qilingan: A tarifda T = 30 000 + 200x, B tarifda T = 50 000 + 120x so'm, bu yerda x — suhbat daqiqalari. Qaysi davomiylikda to'lovlar tenglashadi?",
+      "v": [
+        "62 daqiqa",
+        "100 daqiqa",
+        "166 daqiqa",
+        "250 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "30 000 + 200x = 50 000 + 120x tenglamasini yechamiz. O'zgaruvchili hadlarni chapga, sonlarni o'ngga o'tkazamiz: 200x − 120x = 50 000 − 30 000, ya'ni 80x = 20 000. Bundan x = 250 daqiqa. Javob: 250 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-model-kesishishi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#f5677448"
+    },
+    {
+      "q": "Chiziqli model y = 4x + 15 va kvadratik model y = x² + 2x berilgan. Ular bir xil qiymat beradigan musbat x ni toping.",
+      "v": [
+        "x = 5",
+        "x = 3",
+        "x = −3",
+        "x = 15"
+      ],
+      "t": 0,
+      "izoh": "Modellarni tenglashtiramiz: x² + 2x = 4x + 15. Hamma hadni chap tomonga o'tkazamiz: x² − 2x − 15 = 0. Diskriminant D = 4 + 60 = 64, ildizi 8. Ildizlar x = (2 ± 8) : 2, ya'ni 5 va −3. Musbati x = 5. Javob: x = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-model-kesishishi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#7b3c398f"
+    },
+    {
+      "q": "Korxonaning xarajati C = 20n + 1000, tushumi esa D = −n² + 90n ming so'm modeli bilan berilgan. Xarajat va tushum tenglashadigan n qiymatlaridan kichigini toping.",
+      "v": [
+        "50",
+        "20",
+        "35",
+        "70"
+      ],
+      "t": 1,
+      "izoh": "−n² + 90n = 20n + 1000 tenglamasini yozamiz va hammasini bir tomonga to'playmiz: n² − 70n + 1000 = 0. Diskriminant D = 4900 − 4000 = 900, ildizi 30. Ildizlar n = (70 ± 30) : 2, ya'ni 50 va 20. Kichigi 20. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-model-kesishishi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#cabd9285"
+    },
+    {
+      "q": "Ikki do'konda bir xil daftar sotiladi: A do'koni har birini 4200 so'mdan beradi, B do'koni esa 15 000 so'mlik karta olishni talab qiladi, keyin har bir daftar 3700 so'm. Nechta daftardan boshlab B do'koni foydali bo'ladi?",
+      "v": [
+        "4 tadan boshlab",
+        "2 tadan boshlab",
+        "30 tadan boshlab",
+        "31 tadan boshlab"
+      ],
+      "t": 3,
+      "izoh": "Ikki xarajat modelini solishtiramiz: 4200n va 15 000 + 3700n. B foydali bo'lishi uchun 4200n > 15 000 + 3700n bo'lsin. Bundan 500n > 15 000, ya'ni n > 30. n butun bo'lgani uchun eng kichigi 31; 30 ta daftarda narxlar aynan tenglashadi. Javob: 31 tadan boshlab.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tarif-taqqoslash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#0b46abfe"
+    },
+    {
+      "q": "Ikki taksi xizmati bor: A da to'lov 6000 + 2500x, B da 12 000 + 1800x so'm, bu yerda x — kilometr. 12 km lik safarda qaysi xizmat arzon va farq qancha?",
+      "v": [
+        "B xizmati, 2400 so'mga arzon",
+        "A xizmati, 2400 so'mga arzon",
+        "B xizmati, 6000 so'mga arzon",
+        "A xizmati, 700 so'mga arzon"
+      ],
+      "t": 0,
+      "izoh": "A xizmati uchun: 6000 + 2500·12 = 6000 + 30 000 = 36 000 so'm. B xizmati uchun: 12 000 + 1800·12 = 12 000 + 21 600 = 33 600 so'm. Farq 36 000 − 33 600 = 2400 so'm va u B foydasiga. Javob: B xizmati, 2400 so'mga arzon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-taqqoslash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#83a4cdc7"
+    },
+    {
+      "q": "Sport zaliga bir marta kirish 30 000 so'm turadi, oylik abonement esa 450 000 so'm. Oyiga nechta mashg'ulotdan boshlab abonement olish foydali bo'ladi?",
+      "v": [
+        "14 tadan",
+        "15 tadan",
+        "16 tadan",
+        "45 tadan"
+      ],
+      "t": 2,
+      "izoh": "Bittalab to'lov modeli 30 000n, abonement esa 450 000 so'm. Abonement foydali bo'lishi uchun 30 000n > 450 000, ya'ni n > 15. 15 ta mashg'ulotda ikki variant aynan teng chiqadi, shuning uchun foyda 16 tadan boshlanadi. Javob: 16 tadan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tarif-taqqoslash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#d952ee4d"
+    },
+    {
+      "q": "Suv uchun ikki tarif taklif etilgan: A tarifda har kub metr 3200 so'm, B tarifda oylik 40 000 so'm va har kub metr 1800 so'm. Oyiga 20 kub metr suv ishlatadigan oila uchun qaysi tarif arzon?",
+      "v": [
+        "B tarif, 12 000 so'mga arzon",
+        "A tarif, 12 000 so'mga arzon",
+        "A tarif, 28 000 so'mga arzon",
+        "Ikkala tarif ham bir xil summa beradi"
+      ],
+      "t": 1,
+      "izoh": "A tarif bo'yicha: 3200·20 = 64 000 so'm. B tarif bo'yicha: 40 000 + 1800·20 = 40 000 + 36 000 = 76 000 so'm. 64 000 < 76 000 bo'lgani uchun A arzon, farq esa 12 000 so'm. Javob: A tarif, 12 000 so'mga arzon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-taqqoslash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#31063a69"
+    },
+    {
+      "q": "Ikki korxona daromadi modellari: birinchisida D = 50 + 20t, ikkinchisida D = 2t² + 10 mln so'm. Oradan 10 yil o'tganda qaysi korxona ko'proq daromad oladi va farq qancha?",
+      "v": [
+        "Birinchisi, 40 mln so'mga ko'p",
+        "Ikkinchisi, 40 mln so'mga ko'p",
+        "Birinchisi, 60 mln so'mga ko'p",
+        "Ikkala korxona teng daromad oladi"
+      ],
+      "t": 0,
+      "izoh": "Birinchi model uchun t = 10 da: 50 + 20·10 = 250 mln so'm. Ikkinchi model uchun: 2·100 + 10 = 210 mln so'm. 250 > 210, farq esa 40 mln so'm. Javob: birinchisi, 40 mln so'mga ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-vs-kvadratik-osish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#675e9bfb"
+    },
+    {
+      "q": "D = 50 + 20t chiziqli va D = 2t² + 10 kvadratik modellar berilgan. t juda katta bo'lganda qaysi model tezroq o'sadi va nima uchun?",
+      "v": [
+        "Chiziqli model, chunki uning koeffitsienti kattaroq",
+        "Ikkala model bir xil tezlikda o'sadi",
+        "Chiziqli model, chunki boshlang'ich qiymati kattaroq",
+        "Kvadratik model, chunki t² hadi chiziqli haddan tezroq o'sadi"
+      ],
+      "t": 3,
+      "izoh": "Chiziqli modelda har bir qadamda qo'shiladigan miqdor o'zgarmas va 20 ga teng. Kvadratik modelda esa qo'shiladigan miqdor t bilan birga o'sib boradi. Shuning uchun katta t larda t² hadi ustunlik qiladi va kvadratik model chiziqlidan oshib ketadi. Javob: kvadratik model.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-vs-kvadratik-osish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#5c35d713"
+    },
+    {
+      "q": "Ikki koloniyadagi bakteriyalar soni N = 200 + 65t chiziqli va N = 5t² + 50 kvadratik modellar bilan o'smoqda. Ular soni tenglashadigan musbat t ni toping.",
+      "v": [
+        "t = 2",
+        "t = 13",
+        "t = 15",
+        "t = 30"
+      ],
+      "t": 2,
+      "izoh": "5t² + 50 = 200 + 65t tenglamasini yozamiz va soddalashtiramiz: 5t² − 65t − 150 = 0, hammasini 5 ga bo'lsak t² − 13t − 30 = 0. Diskriminant D = 169 + 120 = 289, ildizi 17. Ildizlar t = (13 ± 17) : 2, ya'ni 15 va −2. Musbati 15. Javob: t = 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-vs-kvadratik-osish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#cc2908a7"
+    },
+    {
+      "q": "Birinchi mahsulot sotuvi dastlabki yilda 120 dona bo'lib, keyin har yili 40 donaga ortdi. Ikkinchi mahsulot sotuvi S = 10n² + 50 modeli bilan o'smoqda, bu yerda n — yil tartib raqami (n = 1 birinchi yil). To'rtinchi yilda qaysi mahsulot ko'proq sotiladi?",
+      "v": [
+        "Ikkinchi mahsulot, 30 donaga ko'p",
+        "Birinchi mahsulot, 30 donaga ko'p",
+        "Birinchi mahsulot, 90 donaga ko'p",
+        "Ikkala mahsulot teng sotiladi"
+      ],
+      "t": 1,
+      "izoh": "Birinchi mahsulot uchun chiziqli model: 120 + 40(n − 1). To'rtinchi yilda n = 4, ya'ni 120 + 40·3 = 240 dona. Ikkinchi mahsulot uchun n = 4 da: 10·4² + 50 = 160 + 50 = 210 dona. Farq 240 − 210 = 30 dona birinchi foydasiga. Javob: birinchi mahsulot, 30 donaga ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-vs-kvadratik-osish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#0374f44c"
+    },
+    {
+      "q": "Tadqiqotchi bir ma'lumot to'plamiga ikki model moslashtirdi. Chiziqli model qoldiqlari 3, −2, 4, −3; kvadratik model qoldiqlari 0,5, −0,4, 0,3, −0,6 chiqdi. Qaysi model ma'lumotlarga yaxshiroq mos keladi?",
+      "v": [
+        "Kvadratik model, chunki qoldiqlari modul bo'yicha ancha kichik",
+        "Chiziqli model, chunki u soddaroq ko'rinadi",
+        "Chiziqli model, chunki qoldiqlari kattaroq",
+        "Ikkala model bir xil darajada mos keladi"
+      ],
+      "t": 0,
+      "izoh": "Qoldiq — kuzatilgan qiymat bilan model bergan qiymat orasidagi farq. Model qanchalik yaxshi mos kelsa, qoldiqlar shunchalik nolga yaqin bo'ladi. Bu yerda kvadratik model qoldiqlari 1 dan kichik, chiziqli modelniki esa 2 dan katta. Javob: kvadratik model.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "model-mosligini-baholash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#4098dadf"
+    },
+    {
+      "q": "Jadvalda x = 1, 2, 3, 4 uchun y qiymatlari 3, 7, 13, 21 berilgan. O'quvchi bu ma'lumotlarga y = 4x − 1 chiziqli modelini taklif qildi. Uning taklifi to'g'rimi?",
+      "v": [
+        "To'g'ri, model barcha nuqtalarga aniq mos keladi",
+        "Noto'g'ri, ikkinchi ayirmalar o'zgarmas bo'lgani uchun kvadratik model kerak",
+        "Noto'g'ri, ma'lumotlar ko'rsatkichli modelga mos keladi",
+        "To'g'ri, chunki dastlabki ikki nuqta mos keladi"
+      ],
+      "t": 1,
+      "izoh": "Modelni tekshiramiz: x = 1 da 3 ✓, x = 2 da 7 ✓, lekin x = 3 da 11 chiqadi, jadvalda esa 13. Ma'lumotning birinchi ayirmalari 4, 6, 8 bo'lib, ikkinchi ayirmalari 2, 2 — o'zgarmas. Bu kvadratik modelning belgisi, haqiqiy model y = x² + x + 1. Javob: noto'g'ri, kvadratik model kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-mosligini-baholash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#f04a91ec"
+    },
+    {
+      "q": "Tajribada o'lchangan nuqtalar deyarli bir to'g'ri chiziqda yotadi, lekin oxirgi ikki nuqta chiziqdan sezilarli chetga chiqdi. Tadqiqotchi uchun eng to'g'ri qadam qaysi?",
+      "v": [
+        "Chetga chiqqan nuqtalarni o'chirib tashlash",
+        "Modeldan butunlay voz kechish",
+        "Sababni tekshirib, kerak bo'lsa kvadratik yoki bo'lakli model sinab ko'rish",
+        "Chiziqli modelni o'zgartirmasdan qoldirish"
+      ],
+      "t": 2,
+      "izoh": "Chetga chiqqan nuqtalar o'lchov xatosi ham, jarayon xarakterining o'zgarishi ham bo'lishi mumkin. Ularni asossiz o'chirish ma'lumotni buzadi, e'tiborsiz qoldirish esa modelni yaroqsiz qiladi. To'g'ri yo'l — sababni aniqlash va boshqa model turini sinab ko'rish. Javob: sababni tekshirib, boshqa model sinaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "model-mosligini-baholash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#ef824152"
+    },
+    {
+      "q": "Bir xil ma'lumot uchun chiziqli modelning o'rtacha xatosi 8,4 birlik, kvadratik modelniki 1,2 birlik. Ammo kvadratik model kuzatilgan oraliqdan tashqarida keskin manfiy qiymat beradi. Qaysi xulosa to'g'ri?",
+      "v": [
+        "Kvadratik modeldan har qanday oraliqda foydalanish mumkin",
+        "Chiziqli model har jihatdan yaxshiroq",
+        "Ikkala modeldan ham voz kechish kerak",
+        "Kvadratik model kuzatilgan oraliq ichida aniqroq, undan tashqarida esa ishlatilmaydi"
+      ],
+      "t": 3,
+      "izoh": "Xatoni solishtirsak, kuzatilgan oraliqda kvadratik model ancha aniq. Lekin oraliqdan tashqarida u ma'nosiz manfiy qiymat beradi, ya'ni jismoniy talqini yo'q. Shuning uchun modelni faqat o'z aniqlanish oralig'ida ishlatish kerak. Javob: oraliq ichida aniqroq, tashqarisida ishlatilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "model-mosligini-baholash",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#20317003"
+    },
+    {
+      "q": "Elektr tarifi bo'lakli: birinchi 100 kilovatt-soat uchun har biri 350 so'm, undan ortig'i uchun 600 so'm. Oyiga 250 kilovatt-soat sarflagan oila qancha to'laydi?",
+      "v": [
+        "125 000 so'm",
+        "150 000 so'm",
+        "87 500 so'm",
+        "95 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Sarfni ikki bo'lakka ajratamiz. Birinchi bo'lak: 100·350 = 35 000 so'm. Ikkinchi bo'lak: 250 − 100 = 150 birlik va 150·600 = 90 000 so'm. Jami: 35 000 + 90 000 = 125 000 so'm. Javob: 125 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolakli-tarif-modeli",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#66c14cff"
+    },
+    {
+      "q": "Suv tarifi bo'lakli hisoblanadi: 15 kub metrgacha har biri 2500 so'm, undan yuqorisi 4000 so'm. Oila bir oyda 24 kub metr suv ishlatdi. To'lov qancha bo'ladi?",
+      "v": [
+        "60 000 so'm",
+        "96 000 so'm",
+        "73 500 so'm",
+        "97 500 so'm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi bo'lak uchun: 15·2500 = 37 500 so'm. Ikkinchi bo'lakda 24 − 15 = 9 kub metr qoladi: 9·4000 = 36 000 so'm. Umumiy to'lov 37 500 + 36 000 = 73 500 so'm. Javob: 73 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolakli-tarif-modeli",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#16b133f9"
+    },
+    {
+      "q": "Yuk tashish narxi bo'lakli model bilan hisoblanadi: birinchi 5 kg uchun 20 000 so'm, keyingi har kilogramm uchun 3500 so'm. 18 kg yuk uchun to'lov qancha bo'ladi?",
+      "v": [
+        "45 500 so'm",
+        "63 000 so'm",
+        "83 000 so'm",
+        "65 500 so'm"
+      ],
+      "t": 3,
+      "izoh": "Model T = 20 000 + 3500(m − 5) ko'rinishida, bu yerda m ≥ 5. Qo'shimcha og'irlik 18 − 5 = 13 kg. Qo'shimcha to'lov 3500·13 = 45 500 so'm. Umumiy: 20 000 + 45 500 = 65 500 so'm. Javob: 65 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolakli-tarif-modeli",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#1dc9f6e2"
+    },
+    {
+      "q": "Korxona foydasi P = −x² + 26x − 105 mln so'm modeli bilan berilgan, bu yerda x — sotilgan mahsulot miqdori (ming dona). Korxona foyda ko'radigan x oralig'ini toping.",
+      "v": [
+        "x < 5 yoki x > 21",
+        "5 < x < 21",
+        "0 < x < 26",
+        "5 < x < 26"
+      ],
+      "t": 1,
+      "izoh": "Foyda musbat bo'lishi uchun −x² + 26x − 105 > 0, ya'ni x² − 26x + 105 < 0 bo'lsin. Ildizlarni topamiz: D = 676 − 420 = 256, ildizi 16, x = (26 ± 16) : 2, ya'ni 21 va 5. Parabola tarmoqlari yuqoriga qaragani uchun ifoda ildizlar orasida manfiy. Javob: 5 < x < 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadratik-tengsizlik-model",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#a9d44d23"
+    },
+    {
+      "q": "Yuqoriga otilgan toshning balandligi h = 30t − 5t² metr modeli bilan berilgan. Tosh 25 metrdan baland bo'lib turgan vaqt oralig'ini toping.",
+      "v": [
+        "1 < t < 5",
+        "t < 1 yoki t > 5",
+        "0 < t < 6",
+        "1 < t < 6"
+      ],
+      "t": 0,
+      "izoh": "Shartni tengsizlik ko'rinishida yozamiz: 30t − 5t² > 25. Hammasini bir tomonga o'tkazib 5 ga bo'lamiz: t² − 6t + 5 < 0. Ildizlar t = 1 va t = 5, parabola tarmoqlari yuqoriga qaragan. Demak ifoda ildizlar orasida manfiy. Javob: 1 < t < 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadratik-tengsizlik-model",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#e2213be7"
+    },
+    {
+      "q": "Korxona xarajati C = 2x² − 40x + 350 mln so'm modeli bilan tavsiflanadi. Xarajat 150 mln so'mdan oshmaydigan x qiymatlarini toping.",
+      "v": [
+        "0 ≤ x ≤ 10",
+        "x ≤ 10",
+        "Faqat x = 10",
+        "10 ≤ x ≤ 20"
+      ],
+      "t": 2,
+      "izoh": "Shart 2x² − 40x + 350 ≤ 150 ko'rinishida. Soddalashtiramiz: 2x² − 40x + 200 ≤ 0, ikkiga bo'lsak x² − 20x + 100 ≤ 0. Chap tomon (x − 10)² to'la kvadrati, u hech qachon manfiy bo'lmaydi. Demak tengsizlik faqat (x − 10)² = 0 da, ya'ni x = 10 da bajariladi. Javob: faqat x = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadratik-tengsizlik-model",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#2384984d"
+    },
+    {
+      "q": "Bog'dorchilikda hosildorlik Y = −0,5n² + 20n kilogramm modeli bilan baholanadi, bu yerda n — bir tupdagi mevali novdalar soni. Hosil kamida 150 kg bo'lishi uchun n qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "n ≤ 10 yoki n ≥ 30",
+        "10 ≤ n ≤ 30",
+        "0 ≤ n ≤ 20",
+        "20 ≤ n ≤ 40"
+      ],
+      "t": 1,
+      "izoh": "Shart −0,5n² + 20n ≥ 150 ko'rinishida. Ikki tomonni −2 ga ko'paytiramiz va tengsizlik ishorasini o'zgartiramiz: n² − 40n + 300 ≤ 0. Diskriminant D = 1600 − 1200 = 400, ildizi 20, ildizlar n = 10 va n = 30. Tarmoqlar yuqoriga qaragani uchun ifoda ildizlar orasida manfiy. Javob: 10 ≤ n ≤ 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratik-tengsizlik-model",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#2d7a4a80"
+    },
+    {
+      "q": "Erkin tushayotgan jism uchun h = at² modeli tuzilmoqda. Jism 4 soniyada 80 metr yo'l bosgani o'lchandi. Model koeffitsienti a ni toping.",
+      "v": [
+        "10",
+        "20",
+        "320",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "O'lchov natijasini modelga qo'yamiz: 80 = a·4². Bu yerda 4² = 16, demak 16a = 80. Ikki tomonni 16 ga bo'lamiz: a = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrni-malumotdan-topish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#188b9fe5"
+    },
+    {
+      "q": "Suv purkagichi oqimi h = ax(60 − x) modeli bilan tasvirlanadi, bu yerda x — gorizontal masofa. Oqimning eng katta balandligi 18 m bo'lsa, a koeffitsientini toping.",
+      "v": [
+        "0,005",
+        "0,02",
+        "0,3",
+        "0,6"
+      ],
+      "t": 1,
+      "izoh": "Model nollari x = 0 va x = 60, demak maksimum ular o'rtasida, ya'ni x = 30 da bo'ladi. Shu nuqtada balandlik a·30·30 = 900a ga teng. Shart bo'yicha 900a = 18, bundan a = 18 : 900 = 0,02. Javob: 0,02.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrni-malumotdan-topish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#87b883c9"
+    },
+    {
+      "q": "Kvadratik model y = ax² + 12 uchun x = 5 bo'lganda y = 87 ekani aniqlangan. Modeldagi a koeffitsientini toping.",
+      "v": [
+        "3,48",
+        "15",
+        "3",
+        "75"
+      ],
+      "t": 2,
+      "izoh": "Berilgan qiymatlarni modelga qo'yamiz: a·5² + 12 = 87, ya'ni 25a + 12 = 87. Doimiy hadni o'ngga o'tkazamiz: 25a = 75. Bundan a = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrni-malumotdan-topish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#9a984a46"
+    },
+    {
+      "q": "Xizmat to'lovi T = kx + b chiziqli modeli bilan hisoblanadi. 8 birlik xizmat uchun 74 000 so'm, 15 birlik uchun 116 000 so'm to'langan. Modeldagi doimiy to'lov b ni toping.",
+      "v": [
+        "26 000 so'm",
+        "74 000 so'm",
+        "6000 so'm",
+        "42 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Avval k ni topamiz: k = (116 000 − 74 000) : (15 − 8) = 42 000 : 7 = 6000 so'm. Endi birinchi shartga qo'yamiz: 74 000 = 6000·8 + b, ya'ni 74 000 = 48 000 + b. Bundan b = 26 000 so'm. Javob: 26 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrni-malumotdan-topish",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#261d79f0"
+    },
+    {
+      "q": "Yuqoriga otilgan toshning balandligi h = 40t − 5t² modeli bilan berilgan. Tosh 60 metr balandlikda ikki marta bo'ladi. Shu ikki payt orasidagi vaqt farqini toping.",
+      "v": [
+        "8 s",
+        "2 s",
+        "6 s",
+        "4 s"
+      ],
+      "t": 3,
+      "izoh": "40t − 5t² = 60 tenglamasini yozamiz va 5 ga bo'lamiz: t² − 8t + 12 = 0. Diskriminant D = 64 − 48 = 16, ildizi 4. Ildizlar t = (8 ± 4) : 2, ya'ni 2 va 6 soniya. Farq 6 − 2 = 4 soniya. Javob: 4 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriya-talqini",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#499848d5"
+    },
+    {
+      "q": "Kvadratik model bilan tasvirlangan foyda x = 4 va x = 16 qiymatlarida bir xil bo'lib chiqdi. Foyda eng katta bo'ladigan x ni toping.",
+      "v": [
+        "6",
+        "10",
+        "12",
+        "20"
+      ],
+      "t": 1,
+      "izoh": "Parabola o'z simmetriya o'qiga nisbatan simmetrik, shuning uchun teng qiymat beruvchi ikki nuqta o'qdan bir xil uzoqlikda yotadi. Simmetriya o'qi ularning o'rtasidan o'tadi: x = (4 + 16) : 2 = 10. Maksimum aynan shu o'qda bo'ladi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-talqini",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#2d365ebe"
+    },
+    {
+      "q": "Ko'prik arkasi kvadratik model bilan tasvirlanadi va uning tayanchlari x = 0 hamda x = 48 m nuqtalarda joylashgan. Arkaning eng baland nuqtasi qayerda bo'ladi?",
+      "v": [
+        "24 m",
+        "48 m",
+        "12 m",
+        "16 m"
+      ],
+      "t": 0,
+      "izoh": "Arka modelining nollari tayanch nuqtalarida, ya'ni x = 0 va x = 48 da. Parabolaning uchi doim ikki nol orasidagi o'rtada yotadi. Demak eng baland nuqta x = (0 + 48) : 2 = 24 m da bo'ladi. Javob: 24 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriya-talqini",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#9919086d"
+    },
+    {
+      "q": "Korxonaning oylik doimiy xarajati 900 000 so'm, har bir mahsulotga 2500 so'm sarflanadi va mahsulot 4000 so'mdan sotiladi. Zarar ko'rmaslik uchun kamida nechta mahsulot sotilishi kerak?",
+      "v": [
+        "360 ta",
+        "225 ta",
+        "600 ta",
+        "138 ta"
+      ],
+      "t": 2,
+      "izoh": "Xarajat modeli C = 900 000 + 2500n, tushum modeli D = 4000n. Zararsizlik shartida ular tenglashadi: 4000n = 900 000 + 2500n. Bundan 1500n = 900 000 va n = 600. Javob: 600 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zararsizlik-nuqtasi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#684b96ca"
+    },
+    {
+      "q": "Kichik ustaxonaning tushumi D = 15 000n, xarajati esa C = 6000n + 540 000 so'm modellari bilan berilgan. Zararsizlik nuqtasidagi n ni toping.",
+      "v": [
+        "36 ta",
+        "90 ta",
+        "26 ta",
+        "60 ta"
+      ],
+      "t": 3,
+      "izoh": "Zararsizlik nuqtasida tushum xarajatga teng: 15 000n = 6000n + 540 000. O'zgaruvchili hadlarni birlashtiramiz: 9000n = 540 000. Bundan n = 60. Javob: 60 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zararsizlik-nuqtasi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#2f95a807"
+    },
+    {
+      "q": "Ustaxonaning tushumi D = −2n² + 200n, xarajati esa C = 60n + 1200 ming so'm modeli bilan berilgan. Zararsizlik nuqtalarini toping.",
+      "v": [
+        "n = 10 va n = 60",
+        "n = 20 va n = 50",
+        "n = 10 va n = 70",
+        "n = 35 va n = 60"
+      ],
+      "t": 0,
+      "izoh": "Tushum bilan xarajatni tenglashtiramiz: −2n² + 200n = 60n + 1200. Hammasini bir tomonga to'plab 2 ga bo'lamiz: n² − 70n + 600 = 0. Diskriminant D = 4900 − 2400 = 2500, ildizi 50. Ildizlar n = (70 ± 50) : 2, ya'ni 60 va 10. Javob: n = 10 va n = 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zararsizlik-nuqtasi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#d36482f2"
+    },
+    {
+      "q": "Xizmat ko'rsatuvchi kichik biznesda oylik doimiy xarajat 2 400 000 so'm, bir xizmat 85 000 so'mdan sotiladi va uning tannarxi 45 000 so'm. Zararsizlik nuqtasidan keyingi har bir qo'shimcha xizmat qancha sof foyda beradi?",
+      "v": [
+        "45 000 so'm",
+        "40 000 so'm",
+        "85 000 so'm",
+        "130 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Har bir xizmatdan qoladigan qism narx bilan tannarx ayirmasiga teng: 85 000 − 45 000 = 40 000 so'm. Doimiy xarajat zararsizlik nuqtasigacha shu qism hisobidan qoplanadi. Nuqtadan keyin doimiy xarajat allaqachon qoplangani uchun bu 40 000 so'm to'liq sof foyda bo'ladi. Javob: 40 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zararsizlik-nuqtasi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#668cc55c"
+    },
+    {
+      "q": "O'quvchi sovutgichdagi harorat uchun T = 25 − 3t modelini tuzdi va 20 soatdan keyin harorat −35 gradus bo'ladi degan xulosaga keldi. Uning xulosasidagi asosiy kamchilik nimada?",
+      "v": [
+        "Arifmetik hisob noto'g'ri bajarilgan",
+        "Sovutgich o'z eng past haroratidan pastga tushira olmaydi, model cheklovsiz qo'llangan",
+        "Model kvadratik ko'rinishda bo'lishi kerak edi",
+        "Harorat manfiy qiymat qabul qila olmaydi"
+      ],
+      "t": 1,
+      "izoh": "Hisobning o'zi to'g'ri: 25 − 3·20 = −35. Xato modelning qo'llanish chegarasini hisobga olmaslikda. Sovutgich ma'lum bir eng past haroratga yetgach, u yerda to'xtaydi va keyin harorat pasaymaydi. Demak model faqat shu chegaragacha o'rinli. Javob: model cheklovsiz qo'llangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modelning-yaroqsizligi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#fd3c7adb"
+    },
+    {
+      "q": "Do'kon egasi narxni qancha tushirsa, tushum shuncha ortadi deb hisoblab, tushum uchun chiziqli model tuzdi. Bu yondashuv nima uchun noto'g'ri?",
+      "v": [
+        "Tushum narx bilan sotuv sonining ko'paytmasi bo'lgani uchun u kvadratik xarakterga ega",
+        "Chiziqli modeldan savdo masalalarida umuman foydalanilmaydi",
+        "Narx doimo o'zgarmas bo'lib qolishi kerak",
+        "Tushum narx tushganda har doim kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Narx tushganda sotuv soni ortadi, lekin har bir donadan tushadigan pul kamayadi. Tushum shu ikki kattalikning ko'paytmasi bo'lgani uchun narxga nisbatan kvadratik bog'lanish hosil bo'ladi. Kvadratik modelda esa maksimum bor: undan keyin narxni yana tushirish tushumni kamaytiradi. Javob: tushum kvadratik xarakterga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modelning-yaroqsizligi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#ee9584b9"
+    },
+    {
+      "q": "Bir tadqiqotchi kvadrat maydonning tomoni ikki barobar oshsa, yuzasi ham ikki barobar ortadi deb yozdi. Bu fikr nima uchun xato?",
+      "v": [
+        "Yuza ikki barobar ortadi, fikr aslida to'g'ri",
+        "Yuza sakkiz barobar ortadi",
+        "Yuza to'rt barobar ortadi, chunki yuza tomonning kvadratiga bog'liq",
+        "Yuza umuman o'zgarmaydi"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat yuzasi modeli S = a² kvadratik bo'lib, chiziqli emas. Tomon 2a bo'lsa, yuza (2a)² = 4a² ga aylanadi. Demak yuza to'rt barobar ortadi, ikki barobar emas. Bu chiziqli va kvadratik modelni chalkashtirishning tipik namunasi. Javob: yuza to'rt barobar ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modelning-yaroqsizligi",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#01f6aa09"
+    },
+    {
+      "q": "Avtomobil yoqilg'i sarfi S = 0,09m litr modeli bilan hisoblanadi, bu yerda m — kilometrdagi masofa. 250 km yo'l uchun sarf qancha bo'ladi?",
+      "v": [
+        "2,25 litr",
+        "225 litr",
+        "27,8 litr",
+        "22,5 litr"
+      ],
+      "t": 3,
+      "izoh": "Modelga m = 250 ni qo'yamiz: S = 0,09·250. Hisoblaymiz: 0,09·250 = 22,5 litr. Diqqat, koeffitsient litr/km birligida berilgani uchun natija to'g'ridan-to'g'ri litrda chiqadi. Javob: 22,5 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-masshtab-model",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#55b2a4c3"
+    },
+    {
+      "q": "Idishdagi suv hajmi V = 40 + 6t litr modeli bilan o'sadi, bu yerda t daqiqalarda o'lchanadi. Shu modelni vaqt soatlarda o'lchanadigan ko'rinishda qayta yozing.",
+      "v": [
+        "V = 40 + 6h",
+        "V = 40 + 0,1h",
+        "V = 40 + 360h",
+        "V = 2400 + 360h"
+      ],
+      "t": 2,
+      "izoh": "Bir soat 60 daqiqaga teng, demak t = 60h. Buni modelga qo'yamiz: V = 40 + 6·60h = 40 + 360h. Boshlang'ich hajm o'zgarmaydi, chunki h = 0 da ham idishda 40 litr bor. Javob: V = 40 + 360h.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-masshtab-model",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#6b9ca2d9"
+    },
+    {
+      "q": "Chizmada 1 sm uzunlik yerdagi 4 m ga mos keladi. Chizmadagi to'g'ri to'rtburchak tomonlari 3 sm va 5 sm bo'lsa, uning haqiqiy yuzasini toping.",
+      "v": [
+        "15 m²",
+        "60 m²",
+        "960 m²",
+        "240 m²"
+      ],
+      "t": 3,
+      "izoh": "Haqiqiy tomonlarni topamiz: 3·4 = 12 m va 5·4 = 20 m. Haqiqiy yuza ularning ko'paytmasi: 12·20 = 240 m². Diqqat, masshtab uzunlik uchun 4 marta bo'lsa, yuza uchun 16 marta bo'ladi: chizmadagi 3·5 = 15 sm² ni 4 ga emas, 16 ga ko'paytirish kerak, ya'ni 15 sm² · 16 m²/sm² = 240 m². Javob: 240 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-masshtab-model",
+      "id": "matematika_disk_m15-chiziqli-va-kvadratik-modellashtirish#d38060f7"
+    }
+  ]
+}

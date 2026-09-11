@@ -1,0 +1,456 @@
+{
+  "nom": "32-mavzu. Eritmada erigan moddaning massa ulushi, foiz, molar konsentratsiyasi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "To'yinmagan eritma qanday eritma?",
+      "v": [
+        "Ayni haroratda to'yingan eritmada mavjud erigan moddadan kam miqdorini tutuvchi eritma",
+        "Ayni haroratda eruvchi moddadan ortiqcha erita olmaydigan eritma",
+        "Erigan modda umuman bo'lmagan eritma",
+        "Faqat konsentrlangan kislotalardan iborat eritma"
+      ],
+      "t": 0,
+      "izoh": "To'yinmagan eritma ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#25227b01"
+    },
+    {
+      "q": "Erigan modda miqdori juda oz bo'lgan eritma qanday ataladi?",
+      "v": [
+        "Suyultirilgan eritma",
+        "Molar eritma",
+        "Konsentrlangan eritma",
+        "To'yingan eritma"
+      ],
+      "t": 0,
+      "izoh": "Erigan modda juda oz – suyultirilgan eritma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#e770462c"
+    },
+    {
+      "q": "Erigan modda miqdori yetarlicha yuqori bo'lgan eritma qanday ataladi?",
+      "v": [
+        "Konsentrlangan eritma",
+        "To'yinmagan eritma",
+        "Suyultirilgan eritma",
+        "Haqiqiy eritma"
+      ],
+      "t": 0,
+      "izoh": "Erigan modda miqdori yuqori – konsentrlangan eritma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#d398f134"
+    },
+    {
+      "q": "Massa ulushi (ω) qanday aniqlanadi?",
+      "v": [
+        "Erigan modda massasining eritma massasiga nisbati",
+        "Eritma massasining erigan modda massasiga nisbati",
+        "Erigan modda massasining erituvchi massasiga nisbati",
+        "Erigan modda mollarining eritma hajmiga nisbati"
+      ],
+      "t": 0,
+      "izoh": "ω = m1/m2, odatda 1 dan kichik sonda ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#4513e2e8"
+    },
+    {
+      "q": "Foiz konsentratsiya (C%) qanday formula bilan hisoblanadi? (m1 – erigan modda, m2 – eritma massasi)",
+      "v": [
+        "C% = (m1/m2)·100%",
+        "C% = (m2/m1)·100%",
+        "C% = m1·m2·100%",
+        "C% = (m1/m2)·1000"
+      ],
+      "t": 0,
+      "izoh": "C% = m1/m2 · 100%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#985d0af5"
+    },
+    {
+      "q": "A g tuz B g suvda eritildi. Eruvchining eritmadagi foiz konsentratsiyasini topish formulasi qaysi?",
+      "v": [
+        "C% = A/(A+B) · 100%",
+        "C% = B/(A+B) · 100%",
+        "C% = A/B · 100%",
+        "C% = (A+B)/A · 100%"
+      ],
+      "t": 0,
+      "izoh": "Eritma massasi A+B ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#9221d1db"
+    },
+    {
+      "q": "Eritmaning massasi (m), hajmi (V) va zichligi (ρ) orasidagi bog'lanish qanday formula bilan ifodalanadi?",
+      "v": [
+        "m = V·ρ",
+        "m = ρ/V",
+        "m = V/ρ",
+        "m = V + ρ"
+      ],
+      "t": 0,
+      "izoh": "m = V·ρ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#65cb9fbb"
+    },
+    {
+      "q": "Molar konsentratsiya (CM) nimani bildiradi?",
+      "v": [
+        "Erigan modda miqdorining (mollarda) eritma hajmiga nisbati",
+        "Erigan modda massasining eritma massasiga nisbati",
+        "1 l suvda erigan moddaning massasi",
+        "100 g eritmadagi modda foizi"
+      ],
+      "t": 0,
+      "izoh": "CM = n/V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#f676876c"
+    },
+    {
+      "q": "1 l eritmada 1 mol modda erigan bo'lsa, bunday eritma qanday ataladi?",
+      "v": [
+        "1 M (bir molar) li eritma",
+        "To'yingan eritma",
+        "1% li eritma",
+        "Suyultirilgan eritma"
+      ],
+      "t": 0,
+      "izoh": "1 l da 1 mol – 1 molar eritma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#1b19b7ba"
+    },
+    {
+      "q": "Molar konsentratsiya qanday formula bilan hisoblanadi? (m – modda massasi, M – molar massa, V – eritma hajmi, ml)",
+      "v": [
+        "CM = (m·1000)/(M·V)",
+        "CM = (m·V)/(M·1000)",
+        "CM = (M·1000)/(m·V)",
+        "CM = (m·M)/(V·1000)"
+      ],
+      "t": 0,
+      "izoh": "CM = m·1000/(M·V).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#438f1a26"
+    },
+    {
+      "q": "50 g osh tuzi 450 g suvda eritilganda hosil bo'lgan eritmaning foiz konsentratsiyasi qancha?",
+      "v": [
+        "10%",
+        "5%",
+        "11,1%",
+        "50%"
+      ],
+      "t": 0,
+      "izoh": "50/(450+50)·100 = 10%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#668ad9c1"
+    },
+    {
+      "q": "30 g shakarni 170 g suvda eritish yo'li bilan necha foizli eritma olinadi?",
+      "v": [
+        "15%",
+        "17,6%",
+        "30%",
+        "20%"
+      ],
+      "t": 0,
+      "izoh": "30/200·100 = 15%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#e44852eb"
+    },
+    {
+      "q": "50 g eritmani bug'latish yo'li bilan 10 g quruq tuz olindi. Eritmaning foiz konsentratsiyasi qancha edi?",
+      "v": [
+        "20%",
+        "10%",
+        "5%",
+        "25%"
+      ],
+      "t": 0,
+      "izoh": "10/50·100 = 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#638cb550"
+    },
+    {
+      "q": "5 g osh tuzi 35 g suvda eritildi. Hosil bo'lgan eritmadagi eruvchining massa ulushi qancha?",
+      "v": [
+        "0,125",
+        "0,875",
+        "0,143",
+        "0,25"
+      ],
+      "t": 0,
+      "izoh": "5/40 = 0,125 (12,5%).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#536fc58a"
+    },
+    {
+      "q": "Tuzlar konsentratsiyasi 4% bo'lgan 10 kg ko'l suvi bug'latilganda qancha tuz qoladi?",
+      "v": [
+        "400 g",
+        "40 g",
+        "4 kg",
+        "250 g"
+      ],
+      "t": 0,
+      "izoh": "10·4/100 = 0,4 kg = 400 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#c7199788"
+    },
+    {
+      "q": "Natriy gidroksidning suvdagi eritmasining 2 litrida 16 g NaOH bor. Eritmaning molar konsentratsiyasi qancha? (M(NaOH)=40 g/mol)",
+      "v": [
+        "0,2 mol/l",
+        "0,4 mol/l",
+        "2 mol/l",
+        "0,1 mol/l"
+      ],
+      "t": 0,
+      "izoh": "CM = 16·1000/(40·2000) = 0,2 mol/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#82e59df1"
+    },
+    {
+      "q": "Konsentratsiyasi 2 mol/l bo'lgan 500 ml kalsiy xlorid eritmasini tayyorlash uchun qancha CaCl2 kerak? (M(CaCl2)=111 g/mol)",
+      "v": [
+        "111 g",
+        "222 g",
+        "55,5 g",
+        "11,1 g"
+      ],
+      "t": 0,
+      "izoh": "1 l da 222 g, 500 ml da 111 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#cc16d496"
+    },
+    {
+      "q": "Massa ulushi 0,06 bo'lgan 50 g osh tuzi eritmasini tayyorlash uchun qancha tuz kerak?",
+      "v": [
+        "3 g",
+        "6 g",
+        "0,06 g",
+        "30 g"
+      ],
+      "t": 0,
+      "izoh": "0,06·50 = 3 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#1d62a68a"
+    },
+    {
+      "q": "Natriy sulfat tuzining 6,5% li 50 g eritmasi tarkibida qancha tuz bo'ladi?",
+      "v": [
+        "3,25 g",
+        "6,5 g",
+        "32,5 g",
+        "0,65 g"
+      ],
+      "t": 0,
+      "izoh": "50·6,5/100 = 3,25 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#5791f222"
+    },
+    {
+      "q": "200 g 10% li tuz eritmasi shu tuzning 300 g 20% li eritmasi bilan aralashtirildi. Yangi eritmadagi tuzning foiz konsentratsiyasi qancha?",
+      "v": [
+        "16%",
+        "13,3%",
+        "15%",
+        "30%"
+      ],
+      "t": 0,
+      "izoh": "(20+60)/500·100 = 16%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#80e88213"
+    },
+    {
+      "q": "Inson tanasining qancha qismi turli eritalar shaklidagi suvdan iborat?",
+      "v": [
+        "Uchdan ikki qismi",
+        "Yarmini",
+        "To'rtdan bir qismi",
+        "Ondan bir qismi"
+      ],
+      "t": 0,
+      "izoh": "Inson tanasining 2/3 qismi suv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#7553c6e3"
+    },
+    {
+      "q": "Nitrat kislotaning 10% li eritmasining zichligi 1,056 g/sm3. Shu eritmaning molar konsentratsiyasi taxminan qancha? (M(HNO3)=63 g/mol)",
+      "v": [
+        "1,68 mol/l",
+        "16,8 mol/l",
+        "0,168 mol/l",
+        "10 mol/l"
+      ],
+      "t": 0,
+      "izoh": "1 l eritma massasi 1056 g; HNO3 = 105,6 g; 105,6/63 = 1,68 mol/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#4f103cc5"
+    },
+    {
+      "q": "Qonning necha foizi suv?",
+      "v": [
+        "83%",
+        "50%",
+        "98%",
+        "20%"
+      ],
+      "t": 0,
+      "izoh": "Qon 83% suv tutadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#0c8673e3"
+    },
+    {
+      "q": "Miya va yurak qancha suv tutadi?",
+      "v": [
+        "80%",
+        "25%",
+        "65%",
+        "99%"
+      ],
+      "t": 0,
+      "izoh": "Miya va yurak 80% suv tutadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#9bdc67eb"
+    },
+    {
+      "q": "Suyaklar necha foiz suv tutadi?",
+      "v": [
+        "20–25%",
+        "80%",
+        "95%",
+        "83%"
+      ],
+      "t": 0,
+      "izoh": "Suyaklar 20–25% atrofida suv tutadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#f7f9c294"
+    },
+    {
+      "q": "Suvo'tlar tanasining necha foizini suv tashkil etadi?",
+      "v": [
+        "95–99%",
+        "50–75%",
+        "20–25%",
+        "65%"
+      ],
+      "t": 0,
+      "izoh": "Suvo'tlari tanasining 95–99% i suv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#7969a74a"
+    },
+    {
+      "q": "Quruqlik o'simliklari tanasining qancha qismini suv tashkil etadi?",
+      "v": [
+        "50–75%",
+        "95–99%",
+        "20–25%",
+        "83%"
+      ],
+      "t": 0,
+      "izoh": "Quruqlik o'simliklari tanasining 50–75% qismi suv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#1e743295"
+    },
+    {
+      "q": "Oddiy energetik akkumulyatorlarda qanday eritmalar qo'llaniladi?",
+      "v": [
+        "Kislota va asoslar eritmalari",
+        "Qand eritmalari",
+        "Spirt eritmalari",
+        "Yog' eritmalari"
+      ],
+      "t": 0,
+      "izoh": "Kislota va asoslar eritmalari oddiy energetik akkumulyatorlarda qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#79c6bd99"
+    },
+    {
+      "q": "Kiyimlarni turli dog'lardan kimyoviy tozalashda qaysi erituvchi ishlatiladi?",
+      "v": [
+        "Benzin",
+        "Distillangan suv",
+        "Suyuq vodorod",
+        "Ohak suvi"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy tozalashda benzin va shu kabi erituvchilar ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#ad436682"
+    },
+    {
+      "q": "Oddiy minerallashtirilgan suv nima hisoblanadi?",
+      "v": [
+        "Har xil dorivor tuzlar eritmasi",
+        "Toza distillangan suv",
+        "Kristallogidrat",
+        "Suyuq kislorod eritmasi"
+      ],
+      "t": 0,
+      "izoh": "Minerallashtirilgan suv — har xil dorivor tuzlar eritmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m32-eritmada-erigan-moddaning-massa-ulushi-foiz-molar-konsentrat#fbb2e1c6"
+    }
+  ]
+}

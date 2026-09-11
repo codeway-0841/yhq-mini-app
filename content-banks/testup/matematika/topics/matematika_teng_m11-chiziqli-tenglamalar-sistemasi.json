@@ -1,0 +1,1609 @@
+{
+  "nom": "Chiziqli tenglamalar sistemasi",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Sistemani o'rniga qo'yish usuli bilan yeching: y = 2x − 1 va 3x + y = 14. Yechimni (x; y) ko'rinishida ko'rsating.",
+      "v": [
+        "(3; 5)",
+        "(3; 11)",
+        "(5; 3)",
+        "(3; 7)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tenglamada y allaqachon ifodalangan. Uni ikkinchisiga qo'yamiz: 3x + (2x − 1) = 14, ya'ni 5x = 15, x = 3. Endi y = 2·3 − 1 = 5. Yechim (3; 5). Agar 14 dan 3 ni ayirib y = 11 desak, x oldidagi 3 koeffitsientni unutgan bo'lamiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orniga-qoyish-usuli",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#33316bba"
+    },
+    {
+      "q": "Anvar o'rniga qo'yish usulini qo'llash uchun x = 5 − 2y ifodasini 4x + 3y = 10 tenglamaga qo'ydi. Hosil bo'lgan bir noma'lumli tenglamani ko'rsating.",
+      "v": [
+        "20 − 11y = 10",
+        "20 − 5y = 10",
+        "20 + 5y = 10",
+        "5 − 5y = 10"
+      ],
+      "t": 1,
+      "izoh": "4·(5 − 2y) = 20 − 8y bo'ladi. Unga 3y qo'shamiz: 20 − 8y + 3y = 20 − 5y. Demak tenglama 20 − 5y = 10 ko'rinishini oladi. −8y bilan 3y ni qo'shganda −5y chiqadi; ishorani e'tibordan qoldirib koeffitsientlarni 8 + 3 = 11 tarzda qo'shish va −11y deb yozish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orniga-qoyish-usuli",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#e91c842c"
+    },
+    {
+      "q": "x − 3y = 7 va 2x + 5y = 3 sistemasini o'rniga qo'yish usuli bilan yechib, (x; y) juftlikni toping.",
+      "v": [
+        "(4; 1)",
+        "(10; 1)",
+        "(4; −1)",
+        "(−1; 4)"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tenglamadan x = 7 + 3y. Uni ikkinchisiga qo'yamiz: 2·(7 + 3y) + 5y = 3, ya'ni 14 + 11y = 3, 11y = −11, y = −1. Endi x = 7 + 3·(−1) = 4. Yechim (4; −1). y ning ishorasini musbat deb olish eng ko'p uchraydigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orniga-qoyish-usuli",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#5fa91cf6"
+    },
+    {
+      "q": "y noma'lumni x orqali ifodalab, 4x − y = 11 va 3x + 2y = 11 sistemasining yechimini toping.",
+      "v": [
+        "(3; −1)",
+        "(1; 3)",
+        "(−1; −15)",
+        "(3; 1)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tenglamadan y = 4x − 11. Ikkinchisiga qo'yamiz: 3x + 2·(4x − 11) = 11, ya'ni 3x + 8x − 22 = 11, 11x = 33, x = 3. Shunda y = 4·3 − 11 = 1. Yechim (3; 1). x = 3 ni to'g'ri topgach, y ni y = 11 − 4x noto'g'ri ifodasi bilan hisoblash (3; −1) beradi: 4x − y = 11 dan y = 4x − 11 kelib chiqadi, aksincha emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orniga-qoyish-usuli",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#5887bb9c"
+    },
+    {
+      "q": "4x + 3y = 26 va 4x − y = 2 sistemasini qo'shish (ayirish) usuli bilan yeching.",
+      "v": [
+        "(6; 2)",
+        "(2; −6)",
+        "(2; 6)",
+        "(8; 6)"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tenglamada x oldidagi koeffitsient bir xil, shuning uchun birinchisidan ikkinchisini ayiramiz: 3y − (−y) = 4y, o'ng tomonda 26 − 2 = 24. Demak 4y = 24, y = 6. Endi 4x = 2 + 6 = 8, x = 2. Yechim (2; 6). 4x = 8 dan x = 8 deb olish bo'lishni unutish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshish-usuli",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#f0670837"
+    },
+    {
+      "q": "2x + 5y = −1 va 3x − 2y = 27 sistemasini koeffitsientlarni tenglashtirib, qo'shish usuli bilan yeching.",
+      "v": [
+        "(7; −3)",
+        "(7; 3)",
+        "(−3; 7)",
+        "(7; −15)"
+      ],
+      "t": 0,
+      "izoh": "y ni yo'qotish uchun birinchi tenglamani 2 ga, ikkinchisini 5 ga ko'paytiramiz: 4x + 10y = −2 va 15x − 10y = 135. Ularni qo'shamiz: 19x = 133, x = 7. Endi 2·7 + 5y = −1, 5y = −15, y = −3. Yechim (7; −3). 5y = −15 dan y = −15 deb yozish bo'lishni tashlab ketish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshish-usuli",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#b5631f6f"
+    },
+    {
+      "q": "Nodira 5x − 4y = 7 tenglamani 2 ga ko'paytirdi. x noma'lumni yo'qotish uchun u 2x + 3y = 12 tenglamani nechaga ko'paytirishi va so'ng qanday amal bajarishi kerak?",
+      "v": [
+        "2 ga ko'paytirib, ayirish kerak",
+        "5 ga ko'paytirib, qo'shish kerak",
+        "4 ga ko'paytirib, qo'shish kerak",
+        "5 ga ko'paytirib, ayirish kerak"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tenglama 2 ga ko'paytirilgach 10x − 8y = 14 bo'ladi. x koeffitsientlari tenglashishi uchun 2x ni 10x ga aylantirish kerak, ya'ni ikkinchi tenglama 5 ga ko'paytiriladi: 10x + 15y = 60. Ikkala x koeffitsienti bir xil ishorada bo'lgani uchun x yo'qolishi uchun tenglamalar ayiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshish-usuli",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#f190b219"
+    },
+    {
+      "q": "7x + 3y = 41 va 7x − 5y = −31 sistemasining yechimini qo'shish usulida toping.",
+      "v": [
+        "(9; 2)",
+        "(2; 9)",
+        "(2; 27)",
+        "(2; −9)"
+      ],
+      "t": 1,
+      "izoh": "x koeffitsientlari teng, shuning uchun tenglamalarni ayiramiz: 3y − (−5y) = 8y, o'ng tomonda 41 − (−31) = 72. Demak 8y = 72, y = 9. Endi 7x + 27 = 41, 7x = 14, x = 2. Yechim (2; 9). 3y = 27 dan y = 27 deb olish bo'lishni unutishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshish-usuli",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#312bf12f"
+    },
+    {
+      "q": "y = x + 2 va y = −2x + 8 to'g'ri chiziqlar koordinata tekisligida chizildi. Ularning kesishish nuqtasi sistemaning yechimi bo'ladi. Shu nuqtani toping.",
+      "v": [
+        "(4; 2)",
+        "(2; 4)",
+        "(−2; 0)",
+        "(2; 12)"
+      ],
+      "t": 1,
+      "izoh": "Kesishish nuqtasida ordinatalar teng: x + 2 = −2x + 8. Bundan 3x = 6, x = 2. Endi y = 2 + 2 = 4. Kesishish nuqtasi (2; 4). Ikkinchi tenglamaga qo'yganda ham y = −2·2 + 8 = 4 chiqadi; ishorani e'tiborsiz qoldirib 2·2 + 8 = 12 deb hisoblash tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-kesishish-nuqtasi",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#ef6e8150"
+    },
+    {
+      "q": "Grafik usulda yechilganda x + y = 6 va x − y = 2 to'g'ri chiziqlari qaysi nuqtada kesishadi?",
+      "v": [
+        "(2; 4)",
+        "(6; 0)",
+        "(4; 2)",
+        "(4; −2)"
+      ],
+      "t": 2,
+      "izoh": "Ikki chiziqning kesishish nuqtasi sistemaning yechimi. Tenglamalarni qo'shamiz: 2x = 8, x = 4. Birinchi tenglamadan y = 6 − 4 = 2. Demak chiziqlar (4; 2) nuqtada kesishadi. Faqat birinchi tenglamani qarab (6; 0) ni tanlash chala tekshirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-kesishish-nuqtasi",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#dce0479d"
+    },
+    {
+      "q": "Sistemani grafik usulda yechish uchun 3x + y = 12 to'g'ri chizig'ining koordinata o'qlari bilan kesishish nuqtalari topilmoqda. Bu nuqtalarni to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "(0; 4) va (12; 0)",
+        "(0; 12) va (36; 0)",
+        "(0; 12) va (−4; 0)",
+        "(0; 12) va (4; 0)"
+      ],
+      "t": 3,
+      "izoh": "Oy o'qida x = 0, shunda y = 12, ya'ni nuqta (0; 12). Ox o'qida y = 0, shunda 3x = 12, x = 4, ya'ni nuqta (4; 0). Demak chiziq (0; 12) va (4; 0) nuqtalardan o'tadi. 12 ni 3 ga bo'lish o'rniga ko'paytirib 36 olish tipik hisob xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-ozgarmas-kesishish",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#5bccfc10"
+    },
+    {
+      "q": "Bir to'g'ri chiziq (0; 5) va (5; 0) nuqtalardan, ikkinchisi (0; −1) va (3; 5) nuqtalardan o'tadi. Shu ikki chiziq bilan berilgan sistemaning yechimini toping.",
+      "v": [
+        "(2; 3)",
+        "(3; 2)",
+        "(1; 4)",
+        "(2; −3)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi chiziqning burchak koeffitsienti (0 − 5) : (5 − 0) = −1, demak y = −x + 5. Ikkinchisiniki (5 − (−1)) : (3 − 0) = 2, demak y = 2x − 1. Tenglashtiramiz: −x + 5 = 2x − 1, 3x = 6, x = 2, y = 3. Faqat birinchi chiziqqa tegishli (1; 4) ni tanlash chala tekshirishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-nuqtalardan-sistema",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#8d7488cf"
+    },
+    {
+      "q": "2x + 3y = 7 va 4x + 6y = 14 sistemasi nechta yechimga ega ekanligini aniqlang.",
+      "v": [
+        "Cheksiz ko'p yechimga ega",
+        "Yagona yechimga ega",
+        "Yechimga ega emas",
+        "Aniq ikkita yechimga ega"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsientlar nisbatini solishtiramiz: 2 : 4 = 1 : 2, 3 : 6 = 1 : 2 va ozod hadlar 7 : 14 = 1 : 2. Uchala nisbat teng bo'lgani uchun ikkinchi tenglama birinchisini 2 ga ko'paytirish natijasi, ya'ni bitta to'g'ri chiziq. Shuning uchun yechimlar cheksiz ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimlar-soni-nisbat",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#579c26ed"
+    },
+    {
+      "q": "6x − 9y = 12 va 2x − 3y = 5 sistemasining yechimlari soni haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Bitta yechimi bor, chunki chiziqlar kesishadi",
+        "Yechimi yo'q, chunki to'g'ri chiziqlar parallel",
+        "Cheksiz ko'p yechimi bor, chunki chiziqlar ustma-ust tushadi",
+        "Ikkita yechimi bor, chunki koeffitsientlar teng"
+      ],
+      "t": 1,
+      "izoh": "Noma'lumlar oldidagi koeffitsientlar nisbati 6 : 2 = 3 va (−9) : (−3) = 3, ya'ni teng. Ozod hadlar nisbati esa 12 : 5, u 3 ga teng emas. Koeffitsientlar nisbati teng, ozod hadlarniki farq qilganda chiziqlar parallel bo'ladi va umumiy nuqta topilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimlar-soni-nisbat",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#8bf8cff8"
+    },
+    {
+      "q": "kx + 4y = 10 va 3x + 2y = 5 sistemasi cheksiz ko'p yechimga ega bo'lishi uchun k nechaga teng bo'lishi kerak?",
+      "v": [
+        "1,5",
+        "2",
+        "6",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Cheksiz ko'p yechim bo'lishi uchun uchala nisbat teng bo'lishi shart: k : 3 = 4 : 2 = 10 : 5. O'ng tomondagi nisbatlar 2 ga teng, demak k : 3 = 2, bundan k = 6. Nisbatning o'zini javob deb 2 ni olish yoki teskari nisbat 3 : 2 = 1,5 ni olish tipik xatolardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-cheksiz-yechim",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#b5540a50"
+    },
+    {
+      "q": "5x + my = 8 va 10x + 6y = 15 sistemasi yechimga ega bo'lmasligi uchun m qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "12",
+        "6",
+        "0,5",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Yechim bo'lmasligi uchun noma'lumlar koeffitsientlari nisbati teng, ozod hadlarniki esa farqli bo'lishi kerak. 5 : 10 = 0,5, demak m : 6 = 0,5 va m = 3. Tekshiramiz: 8 : 15 nisbat 0,5 ga teng emas, shart bajarildi. Nisbatni teskari olib m = 12 deb topish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-yechim-yoq",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#4bb07428"
+    },
+    {
+      "q": "ax + 2y = 5 va 3x − y = 4 sistemasi yagona yechimga ega bo'lishi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a ≠ 6",
+        "a ≠ −6",
+        "a = −6",
+        "a ≠ 0"
+      ],
+      "t": 1,
+      "izoh": "Yagona yechim bo'lishi uchun noma'lumlar koeffitsientlari nisbati teng bo'lmasligi kerak: a : 3 ≠ 2 : (−1). O'ng tomon −2 ga teng, demak a : 3 ≠ −2, ya'ni a ≠ −6. Ikkinchi tenglamadagi y oldidagi minus ishorasini tashlab ketish a ≠ 6 degan noto'g'ri javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-yagona-yechim",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#242b3a2a"
+    },
+    {
+      "q": "(m − 1)x + 3y = 9 va 2x + y = 4 sistemasi yagona yechimga ega bo'lmaydigan m qiymatini toping.",
+      "v": [
+        "6",
+        "−5",
+        "7",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Yagona yechim yo'qolishi uchun koeffitsientlar nisbati tenglashishi kerak: (m − 1) : 2 = 3 : 1. O'ng tomon 3 ga teng, demak m − 1 = 6 va m = 7. Qavsdagi ifodani hisobga olmay m = 6 deb javob berish eng ko'p uchraydigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-yagona-yechim",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#cc1939dd"
+    },
+    {
+      "q": "3x − 5y = 7 va 9x − 15y = c sistemasi cheksiz ko'p yechimga ega bo'lsa, c ning qiymatini toping.",
+      "v": [
+        "7",
+        "14",
+        "63",
+        "21"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi tenglamaning koeffitsientlari birinchisinikidan 3 marta katta: 9 : 3 = 3 va (−15) : (−5) = 3. Cheksiz ko'p yechim bo'lishi uchun ozod had ham 3 marta ortishi kerak, ya'ni c = 3·7 = 21. Ozod hadni o'zgarishsiz qoldirish yoki 9·7 = 63 deb olish tipik xatolar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-cheksiz-yechim",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#1bd61e21"
+    },
+    {
+      "q": "x + ay = 3 va 2x + 6y = b sistemasi cheksiz ko'p yechimga ega bo'lishi uchun a va b qanday bo'lishi kerak?",
+      "v": [
+        "a = 3, b = 6",
+        "a = 6, b = 3",
+        "a = 12, b = 6",
+        "a = 3, b = 1,5"
+      ],
+      "t": 0,
+      "izoh": "Uchala nisbat teng bo'lishi shart: 1 : 2 = a : 6 = 3 : b. Birinchi nisbat 0,5 ga teng, shuning uchun a : 6 = 0,5 dan a = 3, va 3 : b = 0,5 dan b = 6. Nisbatni teskari olib a = 12 yoki b = 1,5 deb topish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-cheksiz-yechim",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#b65bb175"
+    },
+    {
+      "q": "x + y + z = 15, x − y = 1 va z = 4 uch noma'lumli sistemani yeching hamda yechimni (x; y; z) tartibda ko'rsating.",
+      "v": [
+        "(6; 5; 4)",
+        "(5; 6; 4)",
+        "(6; 4; 5)",
+        "(7; 4; 4)"
+      ],
+      "t": 0,
+      "izoh": "z = 4 ni birinchi tenglamaga qo'yamiz: x + y + 4 = 15, ya'ni x + y = 11. Endi x + y = 11 va x − y = 1 tenglamalarni qo'shamiz: 2x = 12, x = 6. Shunda y = 11 − 6 = 5. Yechim (6; 5; 4). x va y ni o'rin almashtirib yozish tartibga e'tibor bermaslik xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-nomalum-oddiy",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#70533c22"
+    },
+    {
+      "q": "x + y = 9, y + z = 13 va x + z = 10 bo'lsa, x + y + z yig'indining qiymatini toping.",
+      "v": [
+        "32",
+        "16",
+        "8",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Uchala tenglamani qo'shamiz: chap tomonda har bir noma'lum ikki martadan qatnashadi, ya'ni 2(x + y + z) hosil bo'ladi. O'ng tomonda 9 + 13 + 10 = 32. Demak 2(x + y + z) = 32 va x + y + z = 16. Yig'indini 2 ga bo'lishni unutib 32 deb javob berish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-nomalum-yigindi-usuli",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#8a4605bc"
+    },
+    {
+      "q": "Uch do'st Aziz, Bekzod va Dilshod yoz davomida birgalikda 78 ta kitob o'qishdi. Aziz Bekzoddan 6 ta ko'p, Dilshod esa Bekzoddan 12 ta kam kitob o'qigan. Bekzod nechta kitob o'qigan?",
+      "v": [
+        "34",
+        "26",
+        "28",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "Bekzod o'qigan kitoblarni b deb olamiz. Aziz b + 6, Dilshod b − 12 ta o'qigan. Yig'indi: b + (b + 6) + (b − 12) = 78, ya'ni 3b − 6 = 78, 3b = 84, b = 28. Shartdagi 6 va 12 ni hisobga olmay 78 : 3 = 26 deb javob berish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-nomalum-matnli",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#96e93c10"
+    },
+    {
+      "q": "2x + y − z = 4, x − y + z = 5 va x + y + z = 9 sistemasining yechimini toping.",
+      "v": [
+        "(3; 2; 4)",
+        "(3; 4; 2)",
+        "(2; 3; 4)",
+        "(3; 2; −4)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi va ikkinchi tenglamalarni qo'shamiz: y va z qisqaradi, 3x = 9, x = 3. Ikkinchi va uchinchisini qo'shamiz: 2x + 2z = 14, ya'ni 3 + z = 7 dan z = 4. Uchinchi tenglamadan y = 9 − 3 − 4 = 2. Yechim (3; 2; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-nomalum-qoshish",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#bd2e1371"
+    },
+    {
+      "q": "Bozorda 3 kg olma va 2 kg nok uchun 96 000 so'm, 2 kg olma va 4 kg nok uchun 128 000 so'm to'landi. Bir kilogramm olmaning narxini toping.",
+      "v": [
+        "24 000 so'm",
+        "16 000 so'm",
+        "32 000 so'm",
+        "48 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Olma narxi a, nok narxi n bo'lsin: 3a + 2n = 96 000 va 2a + 4n = 128 000. Ikkinchi tenglamani 2 ga bo'lamiz: a + 2n = 64 000. Birinchisidan uni ayiramiz: 2a = 32 000, a = 16 000. Nok narxi 24 000 so'm, uni olma narxi deb berish tipik chalkashlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matn-narx-ikki-mahsulot",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#41fc5d49"
+    },
+    {
+      "q": "Maktab kutubxonasi uchun 5 ta lug'at va 3 ta atlas 415 000 so'mga, 2 ta lug'at va 3 ta atlas esa 274 000 so'mga sotib olindi. Bitta lug'at necha so'm turadi?",
+      "v": [
+        "60 000 so'm",
+        "141 000 so'm",
+        "83 000 so'm",
+        "47 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Atlaslar soni ikkala xaridda ham 3 ta, shuning uchun tenglamalarni ayiramiz: 3 ta lug'at 415 000 − 274 000 = 141 000 so'mga to'g'ri keladi. Demak bitta lug'at 141 000 : 3 = 47 000 so'm. Ayirmani 3 ga bo'lishni unutib 141 000 deb javob berish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-narx-ikki-mahsulot",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#fa28dd7c"
+    },
+    {
+      "q": "Kafeda 4 ta somsa va 2 ta choy 62 000 so'm, 3 ta somsa va 5 ta choy esa 71 000 so'm turadi. Bitta somsa va bitta choy narxlari yig'indisini toping.",
+      "v": [
+        "12 000 so'm",
+        "19 000 so'm",
+        "7 000 so'm",
+        "133 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tenglamani qo'shamiz: 7 ta somsa va 7 ta choy uchun 62 000 + 71 000 = 133 000 so'm. Demak 7·(somsa + choy) = 133 000 va somsa + choy = 19 000 so'm. Yig'indini 7 ga bo'lishni unutib 133 000 ni javob deb olish eng ko'p uchraydigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-narx-yigindi",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#756b8bba"
+    },
+    {
+      "q": "Do'konda katta daftar 9 000 so'm, kichik daftar 5 000 so'm turadi. Sevara jami 14 ta daftar olib, kassaga 94 000 so'm to'ladi. U nechta katta daftar sotib olgan?",
+      "v": [
+        "8 ta",
+        "7 ta",
+        "6 ta",
+        "9 ta"
+      ],
+      "t": 2,
+      "izoh": "Katta daftarlar soni k, kichiklariniki m bo'lsin: k + m = 14 va 9 000k + 5 000m = 94 000. Ikkinchi tenglamani mingga qisqartiramiz: 9k + 5m = 94. m = 14 − k ni qo'yamiz: 9k + 70 − 5k = 94, 4k = 24, k = 6. Qolgan 8 ta kichik daftar, uni javob deb olish tipik chalkashlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-narx-soni-topish",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#c7837da4"
+    },
+    {
+      "q": "Otasi bilan o'g'lining yoshlari yig'indisi 52 ga teng. To'rt yildan keyin otasining yoshi o'g'linikidan 26 ga ortiq bo'ladi. Hozir o'g'il necha yoshda?",
+      "v": [
+        "39 yoshda",
+        "13 yoshda",
+        "17 yoshda",
+        "26 yoshda"
+      ],
+      "t": 1,
+      "izoh": "Otaning yoshi o, o'g'ilniki e bo'lsin: o + e = 52. To'rt yildan keyin ikkalasi ham 4 yosh kattaradi, shuning uchun yoshlar farqi o'zgarmaydi: o − e = 26. Ikki tenglamani qo'shamiz: 2o = 78, o = 39, demak e = 13. Otaning yoshini javob deb berish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matn-yosh-yigindi-ayirma",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#22b35df7"
+    },
+    {
+      "q": "Onasining yoshi qizinikidan 24 yosh katta. Olti yil oldin onasining yoshi qizinikidan 4 marta katta bo'lgan. Onasi hozir necha yoshda?",
+      "v": [
+        "14 yoshda",
+        "32 yoshda",
+        "8 yoshda",
+        "38 yoshda"
+      ],
+      "t": 3,
+      "izoh": "Ona o, qiz q yoshda bo'lsin: o − q = 24. Olti yil oldin ularning yoshlari o − 6 va q − 6 edi, shart bo'yicha o − 6 = 4(q − 6). Birinchisidan o = q + 24 ni qo'yamiz: q + 18 = 4q − 24, 3q = 42, q = 14, demak o = 38. Olti yil oldingi yoshni javob deb berish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-yosh-marta",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#55a89e29"
+    },
+    {
+      "q": "Aka va singilning yoshlari yig'indisi 32 ga teng. Besh yildan keyin akaning yoshi singlisinikidan 2 marta ko'p bo'ladi. Aka hozir necha yoshda?",
+      "v": [
+        "9 yoshda",
+        "28 yoshda",
+        "23 yoshda",
+        "14 yoshda"
+      ],
+      "t": 2,
+      "izoh": "Aka a, singil s yoshda bo'lsin: a + s = 32 va a + 5 = 2(s + 5). Ikkinchisiga a = 32 − s ni qo'yamiz: 37 − s = 2s + 10, 3s = 27, s = 9, demak a = 23. Tekshiramiz: 28 = 2·14, to'g'ri. Besh yildan keyingi yosh 28 ni javob deb berish shartni chalkashtirishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-yosh-marta",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#1b328729"
+    },
+    {
+      "q": "Uch yil oldin Kamola va Nodiraning yoshlari yig'indisi 27 ga teng bo'lgan. Bugun Kamola Nodiradan 5 yosh katta. Nodira hozir necha yoshda?",
+      "v": [
+        "14 yoshda",
+        "19 yoshda",
+        "11 yoshda",
+        "16 yoshda"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi yoshlar k va n bo'lsin. Uch yil oldin ular k − 3 va n − 3 edi, demak (k − 3) + (n − 3) = 27, ya'ni k + n = 33. Shart bo'yicha k − n = 5. Tenglamalarni ayiramiz: 2n = 28, n = 14, k = 19. Uch yil oldingi yosh 11 ni javob deb berish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-yosh-otgan-vaqt",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#d0a54d30"
+    },
+    {
+      "q": "Qayiq daryo oqimi bo'yicha 2 soatda 36 km, oqimga qarshi esa 3 soatda 36 km yo'l bosadi. Qayiqning turg'un suvdagi tezligini toping.",
+      "v": [
+        "15 km/soat",
+        "18 km/soat",
+        "12 km/soat",
+        "3 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Oqim bo'yicha tezlik 36 : 2 = 18 km/soat, oqimga qarshi tezlik 36 : 3 = 12 km/soat. Qayiq tezligi q, oqimniki o bo'lsa: q + o = 18 va q − o = 12. Ularni qo'shamiz: 2q = 30, q = 15 km/soat. Oqim tezligi esa 3 km/soat, uni javob deb olish chalkashlikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matn-oqim-tezlik",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#9373a5c5"
+    },
+    {
+      "q": "Kater oqim bo'yicha 45 km masofani 1,5 soatda, oqimga qarshi esa xuddi shu masofani 2,5 soatda bosib o'tdi. Daryo oqimining tezligi qancha?",
+      "v": [
+        "6 km/soat",
+        "24 km/soat",
+        "12 km/soat",
+        "30 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Oqim bo'yicha tezlik 45 : 1,5 = 30 km/soat, qarshi tezlik 45 : 2,5 = 18 km/soat. Sistema: k + o = 30 va k − o = 18. Tenglamalarni ayiramiz: 2o = 12, o = 6 km/soat. Ayirmani ikkiga bo'lmay 12 deb javob berish eng ko'p uchraydigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matn-oqim-tezlik",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#8aaff8c6"
+    },
+    {
+      "q": "Ikki shahar orasidagi masofa 300 km. Avtobus va yengil mashina bir vaqtda qarama-qarshi yo'lga chiqib, 2 soatdan keyin uchrashdi. Mashinaning tezligi avtobusnikidan 30 km/soat ortiq bo'lsa, avtobusning tezligini toping.",
+      "v": [
+        "90 km/soat",
+        "75 km/soat",
+        "45 km/soat",
+        "60 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Uchrashguncha ikkalasi birgalikda 300 km bosdi, demak tezliklar yig'indisi 300 : 2 = 150 km/soat. Sistema: a + m = 150 va m − a = 30. Ularni ayiramiz: 2a = 120, a = 60 km/soat. Avval 150 ni teng bo'lib, so'ng 30 ni ayirish 45 degan noto'g'ri javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "matn-qarama-qarshi-harakat",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#1d49613b"
+    },
+    {
+      "q": "Sardor maktabgacha bo'lgan yo'lning bir qismini piyoda 5 km/soat, qolganini velosipedda 15 km/soat tezlik bilan bosdi. Jami yo'l 11 km, sarflangan vaqt 1 soat 24 daqiqa bo'lsa, u piyoda necha kilometr yurgan?",
+      "v": [
+        "6 km",
+        "5,5 km",
+        "5 km",
+        "1 km"
+      ],
+      "t": 2,
+      "izoh": "Piyoda yo'l p, velosipedda bosilgani v bo'lsin: p + v = 11. Vaqt 1 soat 24 daqiqa = 1,4 soat, demak p : 5 + v : 15 = 1,4. Ikkinchi tenglamani 15 ga ko'paytiramiz: 3p + v = 21. Birinchisidan ayiramiz: 2p = 10, p = 5 km. Piyoda sarflangan 1 soatni masofa deb olish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "matn-ikki-tezlik-vaqt",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#bd0f25d7"
+    },
+    {
+      "q": "Ikki xil choy aralashtiriladi: birinchisining kilogrammi 60 000 so'm, ikkinchisiniki 90 000 so'm. Jami 12 kg aralashma tayyorlanib, uning umumiy qiymati 840 000 so'm bo'ldi. Ikkinchi choydan necha kilogramm olingan?",
+      "v": [
+        "4 kg",
+        "8 kg",
+        "6 kg",
+        "12 kg"
+      ],
+      "t": 0,
+      "izoh": "Birinchi choydan x kg, ikkinchisidan y kg olingan bo'lsin: x + y = 12 va 60 000x + 90 000y = 840 000. Ikkinchi tenglamani 30 000 ga qisqartiramiz: 2x + 3y = 28. x = 12 − y ni qo'yamiz: 24 + y = 28, y = 4 kg. Birinchi choydan olingan 8 kg ni javob deb berish chalkashlikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-aralashma-narx",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#dee1a609"
+    },
+    {
+      "q": "Laborant 40 % li va 15 % li ikki xil eritmani aralashtirib, 20 kg massali 25 % li eritma tayyorladi. U 40 % li eritmadan necha kilogramm olgan?",
+      "v": [
+        "12 kg",
+        "8 kg",
+        "10 kg",
+        "5 kg"
+      ],
+      "t": 1,
+      "izoh": "40 % li eritmadan x kg, 15 % lisidan y kg olingan bo'lsin: x + y = 20. Sof modda bo'yicha 0,4x + 0,15y = 0,25·20 = 5. Ikkinchi tenglamani 100 ga ko'paytiramiz: 40x + 15y = 500, ya'ni 8x + 3y = 100. y = 20 − x ni qo'yamiz: 5x = 40, x = 8 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "matn-aralashma-foiz",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#f3a0873f"
+    },
+    {
+      "q": "Qotishma mis va ruxdan iborat. Uning umumiy massasi 60 kg bo'lib, misning massasi ruxnikidan 12 kg ortiq. Qotishmadagi rux necha kilogramm?",
+      "v": [
+        "36 kg",
+        "30 kg",
+        "24 kg",
+        "48 kg"
+      ],
+      "t": 2,
+      "izoh": "Mis massasi m, rux massasi r bo'lsin: m + r = 60 va m − r = 12. Tenglamalarni ayiramiz: 2r = 48, r = 24 kg. Demak mis 36 kg. Ayirmani ikkiga bo'lmay 48 kg deb javob berish yoki mis massasini rux deb olish tipik xatolardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matn-qotishma-massa",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#661caf4f"
+    },
+    {
+      "q": "Kimyo laboratoriyasida 8 % li tuz eritmasiga 20 % li eritma qo'shildi va natijada 30 litr 16 % li eritma hosil bo'ldi. 20 % li eritmadan necha litr qo'shilgan?",
+      "v": [
+        "10 litr",
+        "15 litr",
+        "24 litr",
+        "20 litr"
+      ],
+      "t": 3,
+      "izoh": "8 % li eritmadan x litr, 20 % lisidan y litr olingan bo'lsin: x + y = 30. Tuz miqdori bo'yicha 8x + 20y = 16·30 = 480, ya'ni 2x + 5y = 120. x = 30 − y ni qo'yamiz: 60 + 3y = 120, 3y = 60, y = 20 litr. Nisbatni teskari qo'llash 10 litr degan noto'g'ri javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "matn-aralashma-foiz",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#e44f7e5d"
+    },
+    {
+      "q": "Ikki ishchi birgalikda bir soatda 18 ta detal tayyorlaydi. Birinchi ishchi ikkinchisidan soatiga 4 ta ko'p detal tayyorlasa, ikkinchi ishchi bir soatda nechta detal tayyorlaydi?",
+      "v": [
+        "11 ta",
+        "9 ta",
+        "14 ta",
+        "7 ta"
+      ],
+      "t": 3,
+      "izoh": "Birinchi ishchining unumi a, ikkinchisiniki b bo'lsin: a + b = 18 va a − b = 4. Tenglamalarni ayiramiz: 2b = 14, b = 7 ta. Demak birinchi ishchi 11 ta tayyorlaydi. Ayirmani ikkiga bo'lmay 18 − 4 = 14 deb javob berish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matn-ish-unumi-soat",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#861c1045"
+    },
+    {
+      "q": "Ikki brigada birgalikda bir kunda 45 ta ko'chat o'tqazadi. Birinchi brigada 2 kunda, ikkinchisi 3 kunda jami 115 ta ko'chat o'tqazgan bo'lsa, birinchi brigada bir kunda nechta ko'chat o'tqazadi?",
+      "v": [
+        "25 ta",
+        "20 ta",
+        "22 ta",
+        "45 ta"
+      ],
+      "t": 1,
+      "izoh": "Kunlik unumlar a va b bo'lsin: a + b = 45 va 2a + 3b = 115. Ikkinchi tenglamaga b = 45 − a ni qo'yamiz: 2a + 135 − 3a = 115, ya'ni −a = −20 va a = 20 ta. Ikkinchi brigadaning unumi 25 ta, uni javob deb olish tipik chalkashlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-ish-unumi-kun",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#dcca0b5c"
+    },
+    {
+      "q": "Usta 3 soat, shogirdi 5 soat ishlab, birgalikda 74 ta g'isht terdi. Ustaning bir soatlik unumi shogirdinikidan 6 ta ko'p bo'lsa, usta bir soatda nechta g'isht teradi?",
+      "v": [
+        "7 ta",
+        "19 ta",
+        "13 ta",
+        "9 ta"
+      ],
+      "t": 2,
+      "izoh": "Usta soatiga u ta, shogird s ta tersin: 3u + 5s = 74 va u = s + 6. Ikkinchisini birinchisiga qo'yamiz: 3s + 18 + 5s = 74, ya'ni 8s = 56 va s = 7. Demak u = 13 ta. Shogirdning unumini javob deb berish yoki 13 ga yana 6 ni qo'shib 19 olish tipik xatolar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-ish-unumi-soat",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#a81b9306"
+    },
+    {
+      "q": "Zavodda kunduzgi smena soatiga 24 ta, tungi smena soatiga 18 ta mahsulot ishlab chiqaradi. Ikki smena jami 16 soat ishlab, 342 ta mahsulot tayyorladi. Kunduzgi smena necha soat ishlagan?",
+      "v": [
+        "9 soat",
+        "7 soat",
+        "8 soat",
+        "6 soat"
+      ],
+      "t": 0,
+      "izoh": "Kunduzgi smena k soat, tungisi t soat ishlagan bo'lsin: k + t = 16 va 24k + 18t = 342. Ikkinchisiga t = 16 − k ni qo'yamiz: 24k + 288 − 18k = 342, ya'ni 6k = 54 va k = 9 soat. Tungi smenaning 7 soatini javob deb olish chalkashlikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-ish-vaqt-taqsimoti",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#46d33811"
+    },
+    {
+      "q": "(3; −2) juftlik 2x + 5y = −4 va x − 3y = 9 sistemasining yechimi bo'ladimi? To'g'ri xulosani tanlang.",
+      "v": [
+        "Ha, ikkala tenglamani ham qanoatlantiradi",
+        "Yo'q, faqat birinchi tenglamani qanoatlantiradi",
+        "Yo'q, faqat ikkinchi tenglamani qanoatlantiradi",
+        "Yo'q, hech bir tenglamani qanoatlantirmaydi"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tenglamaga qo'yamiz: 2·3 + 5·(−2) = 6 − 10 = −4, to'g'ri. Ikkinchisiga qo'yamiz: 3 − 3·(−2) = 3 + 6 = 9, bu ham to'g'ri. Juftlik ikkala tenglamani qanoatlantirgani uchun u sistemaning yechimi hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimni-tekshirish",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#dd874eaf"
+    },
+    {
+      "q": "(4; 1) juftlik x + 2y = 6 va 3x − y = 12 sistemasi uchun tekshirildi. Tekshiruv natijasi haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Sistemaning yechimi bo'ladi",
+        "Faqat birinchi tenglamani qanoatlantiradi",
+        "Faqat ikkinchi tenglamani qanoatlantiradi",
+        "Ikkala tenglamani ham qanoatlantirmaydi"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tenglama: 4 + 2·1 = 6, tenglik bajariladi. Ikkinchi tenglama: 3·4 − 1 = 11, lekin o'ng tomonda 12 turibdi. Bitta tenglama bajarilmagani uchun juftlik sistemaning yechimi emas, u faqat birinchi tenglamani qanoatlantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimni-tekshirish",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#bd42ee5d"
+    },
+    {
+      "q": "Quyidagi juftliklardan qaysi biri 5x − 2y = 11 va x + 4y = 11 sistemasining yechimi bo'ladi: (3; 2), (1; 3), (5; 7), (−1; 3)?",
+      "v": [
+        "(3; 2)",
+        "(1; 3)",
+        "(5; 7)",
+        "(−1; 3)"
+      ],
+      "t": 0,
+      "izoh": "(3; 2) ni tekshiramiz: 5·3 − 2·2 = 11 va 3 + 4·2 = 11, ikkala tenglik ham bajariladi. (5; 7) birinchi tenglamani qanoatlantiradi, lekin ikkinchisida 5 + 28 = 33 chiqadi. (−1; 3) esa faqat ikkinchisiga mos keladi. Demak yechim (3; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimni-tanlash",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#4cd85038"
+    },
+    {
+      "q": "Quyidagi sistemalardan qaysi birining yechimi (2; −3) juftligi bo'ladi?",
+      "v": [
+        "x + y = 5 va x − y = −1",
+        "3x + y = 3 va x − 2y = 8",
+        "2x + 3y = 1 va x + y = 5",
+        "x − y = 1 va 2x + y = 1"
+      ],
+      "t": 1,
+      "izoh": "Har bir sistemaga x = 2 va y = −3 ni qo'yib ko'ramiz. Ikkinchi sistemada 3·2 + (−3) = 3 va 2 − 2·(−3) = 2 + 6 = 8, ikkala tenglik ham bajariladi. Birinchisida 2 + (−3) = −1 chiqib, 5 ga teng bo'lmaydi; qolganlarida ham kamida bitta tenglik buziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimni-tanlash",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#d4124d2c"
+    },
+    {
+      "q": "3x + 4y = 25 va 5x − 4y = −1 sistemasining yechimi (x₀; y₀) bo'lsa, x₀ · y₀ ko'paytmaning qiymatini toping.",
+      "v": [
+        "7",
+        "1",
+        "12",
+        "−12"
+      ],
+      "t": 2,
+      "izoh": "y oldidagi koeffitsientlar qarama-qarshi, shuning uchun tenglamalarni qo'shamiz: 8x = 24, x = 3. Birinchi tenglamadan 4y = 25 − 9 = 16, y = 4. Ko'paytma 3·4 = 12. Ko'paytma o'rniga yig'indi 3 + 4 = 7 ni javob deb berish shartni noto'g'ri o'qish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-orqali-ifoda-kopaytma",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#56a42abd"
+    },
+    {
+      "q": "x va y sonlar 4x + 3y = 29 va 2x − 3y = 1 sistemasini qanoatlantiradi. Shu sonlarning yig'indisini toping.",
+      "v": [
+        "15",
+        "2",
+        "30",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "y koeffitsientlari qarama-qarshi, tenglamalarni qo'shamiz: 6x = 30, x = 5. Birinchi tenglamadan 3y = 29 − 20 = 9, y = 3. Yig'indi 5 + 3 = 8. Yig'indi o'rniga ko'paytma 15 ni yoki oraliq natija 30 ni javob deb berish tipik xatolardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-orqali-ifoda-yigindi",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#ef00ba2f"
+    },
+    {
+      "q": "2x + y = 11 va 3x − y = 9 sistemasining yechimi uchun 5x − 2y ifodaning qiymatini hisoblang.",
+      "v": [
+        "26",
+        "20",
+        "14",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Tenglamalarni qo'shamiz: 5x = 20, x = 4. Birinchi tenglamadan y = 11 − 8 = 3. Endi 5x − 2y = 5·4 − 2·3 = 20 − 6 = 14. Ifodadagi minus ishorasini plyusga almashtirib 26 olish eng ko'p uchraydigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-orqali-ifoda-qiymati",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#349120f9"
+    },
+    {
+      "q": "x − 2y = 8 va 3x + y = 3 sistemasining yechimi uchun x va y sonlarning nisbatini kasr ko'rinishida toping.",
+      "v": [
+        "2/3",
+        "−3/2",
+        "−2/3",
+        "−6"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi tenglamadan y = 3 − 3x. Uni birinchisiga qo'yamiz: x − 2(3 − 3x) = 8, ya'ni 7x = 14 va x = 2. Shunda y = 3 − 6 = −3. Nisbat x : y = 2 : (−3) = −2/3. Nisbatni teskari yozib −3/2 olish yoki ko'paytma −6 ni berish tipik xatolar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechim-orqali-nisbat",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#0ea91296"
+    },
+    {
+      "q": "ax + 3y = 12 va 2x − by = 4 sistemasining yechimi (3; 2) juftlik bo'lsa, a + b yig'indini toping.",
+      "v": [
+        "1",
+        "2",
+        "5",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Juftlikni birinchi tenglamaga qo'yamiz: 3a + 6 = 12, ya'ni 3a = 6 va a = 2. Ikkinchisiga qo'yamiz: 6 − 2b = 4, ya'ni 2b = 2 va b = 1. Demak a + b = 3. Ikkinchi tenglamadagi minusni e'tibordan chetda qoldirib b = −1 olish 1 degan noto'g'ri javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsient-topish-yechim-orqali",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#be1bc97b"
+    },
+    {
+      "q": "x = −1 va y = 4 juftligi 5x + ky = 19 tenglamani qanoatlantirsa, k koeffitsient nechaga teng?",
+      "v": [
+        "6",
+        "24",
+        "3,5",
+        "−6"
+      ],
+      "t": 0,
+      "izoh": "Berilgan qiymatlarni qo'yamiz: 5·(−1) + k·4 = 19, ya'ni −5 + 4k = 19. Bundan 4k = 24 va k = 6. Tenglamaning chap tomonidagi −5 ni ko'chirishda 4k = 14 deb xato qilish 3,5 degan javobni, 4 ga bo'lishni unutish esa 24 ni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsient-topish-bitta-tenglama",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#666b9f4f"
+    },
+    {
+      "q": "Sistemaning yechimi (2; −1) juftlik. Birinchi tenglama 3x + y = 5, ikkinchisi esa mx − 4y = 10 ko'rinishida bo'lsa, m ni toping.",
+      "v": [
+        "7",
+        "3",
+        "6",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "Yechimni ikkinchi tenglamaga qo'yamiz: m·2 − 4·(−1) = 10, ya'ni 2m + 4 = 10. Bundan 2m = 6 va m = 3. Ikki manfiyning ko'paytmasi musbat ekanini unutib 2m − 4 = 10 deb yozish m = 7 degan noto'g'ri javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsient-topish-yechim-orqali",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#244c9101"
+    },
+    {
+      "q": "ax + by = 7 tenglama (1; 2) va (3; −1) nuqtalardan o'tuvchi to'g'ri chiziqni beradi. a va b koeffitsientlarni toping.",
+      "v": [
+        "a = 3, b = 2",
+        "a = 2, b = 3",
+        "a = 3, b = −2",
+        "a = 1, b = 3"
+      ],
+      "t": 0,
+      "izoh": "Har ikki nuqta tenglamani qanoatlantiradi: a + 2b = 7 va 3a − b = 7. Ikkinchisidan b = 3a − 7 ni birinchisiga qo'yamiz: a + 6a − 14 = 7, ya'ni 7a = 21 va a = 3. Shunda b = 9 − 7 = 2. Tekshiruv: 3 + 4 = 7 va 9 − 2 = 7, ikkalasi ham to'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsient-topish-ikki-nuqta",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#5952118d"
+    },
+    {
+      "q": "Ikki xonali sonning raqamlari yig'indisi 11 ga teng. Agar raqamlari o'rni almashtirilsa, son 27 ga ortadi. Berilgan sonni toping.",
+      "v": [
+        "74",
+        "29",
+        "65",
+        "47"
+      ],
+      "t": 3,
+      "izoh": "O'nlar raqami a, birlar raqami b bo'lsin: a + b = 11. O'rin almashtirilganda (10b + a) − (10a + b) = 9(b − a) = 27, demak b − a = 3. Sistemani yechamiz: a = 4, b = 7, ya'ni son 47. Ayirmani teskari olish 74 degan noto'g'ri javobni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-xonali-son-almashtirish",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#907b738f"
+    },
+    {
+      "q": "Ikki xonali sonning birlar raqami o'nlar raqamidan 3 ga katta. Son o'z raqamlari yig'indisidan 4 marta katta bo'lsa, shu sonni toping.",
+      "v": [
+        "63",
+        "48",
+        "36",
+        "25"
+      ],
+      "t": 2,
+      "izoh": "O'nlar raqami a, birlar raqami b bo'lsin: b − a = 3 va 10a + b = 4(a + b). Ikkinchi tenglamani soddalashtiramiz: 6a = 3b, ya'ni b = 2a. Uni birinchisiga qo'yamiz: 2a − a = 3, a = 3, b = 6. Son 36. Variantlardagi 48 faqat ikkinchi shartni, 25 esa faqat birinchisini qanoatlantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-xonali-son-yigindi-marta",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#d88a17f5"
+    },
+    {
+      "q": "Ikki xonali son bilan uning raqamlari o'rni almashtirilgan son ayirmasi 45 ga teng. Sonning raqamlari yig'indisi 13 bo'lsa, berilgan sonni toping.",
+      "v": [
+        "49",
+        "85",
+        "76",
+        "94"
+      ],
+      "t": 3,
+      "izoh": "O'nlar raqami a, birlar raqami b bo'lsin. Ayirma (10a + b) − (10b + a) = 9(a − b) = 45, demak a − b = 5. Ikkinchi shart a + b = 13. Tenglamalarni qo'shamiz: 2a = 18, a = 9, b = 4. Son 94. Raqamlari o'rni almashtirilgan 49 ni javob deb berish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-xonali-son-almashtirish",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#cce7379f"
+    },
+    {
+      "q": "Kamola ikki xonali uy raqamini yozayotib raqamlarini almashtirib yubordi va haqiqiy raqamdan 36 ga kichik son yozdi. Uy raqamining raqamlari yig'indisi 10 bo'lsa, haqiqiy uy raqami qaysi?",
+      "v": [
+        "37",
+        "73",
+        "82",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "O'nlar raqami a, birlar raqami b bo'lsin: (10a + b) − (10b + a) = 9(a − b) = 36, demak a − b = 4. Shart bo'yicha a + b = 10. Tenglamalarni qo'shamiz: 2a = 14, a = 7, b = 3. Haqiqiy raqam 73, Kamola yozgani esa 37. Yozilgan sonni javob deb berish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-xonali-son-kontekst",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#83178e6b"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi maydonchaning perimetri 46 m. Uning uzunligi enidan 7 m ortiq bo'lsa, maydonchaning enini toping.",
+      "v": [
+        "15 m",
+        "8 m",
+        "11,5 m",
+        "16 m"
+      ],
+      "t": 1,
+      "izoh": "Uzunlik u, en e bo'lsin. Perimetr 2(u + e) = 46 dan u + e = 23. Shart bo'yicha u − e = 7. Tenglamalarni ayiramiz: 2e = 16, e = 8 m. Uzunlik esa 15 m bo'ladi. Yarim perimetrni ikkiga bo'lib 11,5 m deb javob berish shartdagi farqni unutishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-perimetr-sistema",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#462a3f35"
+    },
+    {
+      "q": "Uchburchakning perimetri 60 sm. Birinchi tomoni ikkinchisidan 5 sm, uchinchi tomoni esa ikkinchisidan 10 sm uzun. Uchburchakning eng qisqa tomonini toping.",
+      "v": [
+        "20 sm",
+        "25 sm",
+        "15 sm",
+        "5 sm"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi tomonni b deb olamiz, u eng qisqasi. Qolgan tomonlar b + 5 va b + 10. Perimetr: b + (b + 5) + (b + 10) = 60, ya'ni 3b + 15 = 60, 3b = 45 va b = 15 sm. Boshqa tomonlar 20 sm va 25 sm bo'ladi, ularni javob deb olish shartni chalkashtirishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-perimetr-sistema",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#7b60df6a"
+    },
+    {
+      "q": "Bog' to'g'ri to'rtburchak shaklida bo'lib, uning eni bo'yidan 12 m qisqa, perimetri esa 108 m. Bog'ning yuzasini hisoblang.",
+      "v": [
+        "693 m²",
+        "396 m²",
+        "54 m²",
+        "1386 m²"
+      ],
+      "t": 0,
+      "izoh": "Bo'y b, en e bo'lsin: 2(b + e) = 108 dan b + e = 54, shart bo'yicha b − e = 12. Tenglamalarni qo'shamiz: 2b = 66, b = 33 m, demak e = 21 m. Yuza 33·21 = 693 m². Yarim perimetr 54 ni yuza deb berish yoki 33·12 = 396 ni olish tipik xatolar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-yuza-tomon",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#519686d4"
+    },
+    {
+      "q": "Ikki kvadratning tomonlari yig'indisi 20 sm, perimetrlarining ayirmasi esa 16 sm. Kattaroq kvadratning tomonini toping.",
+      "v": [
+        "8 sm",
+        "18 sm",
+        "10 sm",
+        "12 sm"
+      ],
+      "t": 3,
+      "izoh": "Tomonlar a va b bo'lsin: a + b = 20. Perimetrlar ayirmasi 4a − 4b = 16, ya'ni a − b = 4. Tenglamalarni qo'shamiz: 2a = 24, a = 12 sm. Kichik kvadratning tomoni 8 sm. Perimetrlar ayirmasini to'rtga bo'lmay a − b = 16 deb olish 18 sm degan noto'g'ri javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-yuza-tomon",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#b9ba9dad"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 34, ayirmasi esa 8 ga teng. Shu ikki sonning ko'paytmasini toping.",
+      "v": [
+        "272",
+        "273",
+        "289",
+        "225"
+      ],
+      "t": 1,
+      "izoh": "Sonlar x va y bo'lsin: x + y = 34 va x − y = 8. Qo'shamiz: 2x = 42, x = 21, demak y = 13. Ko'paytma 21·13 = 273. Berilgan ikki sonni ko'paytirib 34·8 = 272 olish yoki sonlarni teng deb 17·17 = 289 olish keng tarqalgan xatolar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetrik-yigindi-ayirma",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#9a622c5d"
+    },
+    {
+      "q": "Ikki sonning yarim yig'indisi 15, yarim ayirmasi esa 4 ga teng. Shu sonlardan kichigini toping.",
+      "v": [
+        "19",
+        "26",
+        "11",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Yarim yig'indi 15 bo'lsa, yig'indi 30; yarim ayirma 4 bo'lsa, ayirma 8. Sistemani yechamiz: 2x = 38, x = 19 va y = 30 − 19 = 11. Kichik son 11. Yig'indi va ayirmani ikkilantirmay 15 − 8 = 7 deb hisoblash tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-yigindi-ayirma",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#03b2df2e"
+    },
+    {
+      "q": "x + y = 12 va x − y = 5 bo'lsa, x² − y² ifodaning qiymatini hisoblang.",
+      "v": [
+        "119",
+        "7",
+        "17",
+        "60"
+      ],
+      "t": 3,
+      "izoh": "x² − y² ifodani ko'paytuvchilarga ajratamiz: x² − y² = (x + y)(x − y). Berilganlarni qo'yamiz: 12·5 = 60. Noma'lumlarni alohida topish shart emas. Berilgan sonlarni alohida kvadratga ko'tarib 144 − 25 = 119 deb hisoblash eng ko'p uchraydigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetrik-kvadratlar-ayirmasi",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#f7b2ed6d"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 44 ga teng. Kattasi kichigining 3 barobaridan 4 ta ortiq bo'lsa, kichik sonni toping.",
+      "v": [
+        "10",
+        "34",
+        "12",
+        "11"
+      ],
+      "t": 0,
+      "izoh": "Kichik son y, kattasi x bo'lsin: x + y = 44 va x = 3y + 4. Ikkinchisini birinchisiga qo'yamiz: 3y + 4 + y = 44, ya'ni 4y = 40 va y = 10. Katta son 34. Shartdagi qo'shiluvchini minus deb olish 4y = 48 va y = 12 degan noto'g'ri javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-yigindi-ayirma",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#59731949"
+    },
+    {
+      "q": "x/2 + y/3 = 4 va x − y = 3 sistemasini yeching hamda yechimni juftlik ko'rinishida ko'rsating.",
+      "v": [
+        "(3; 6)",
+        "(6; 3)",
+        "(9; 6)",
+        "(6; −3)"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tenglamani maxrajlarning umumiy karralisi 6 ga ko'paytiramiz: 3x + 2y = 24. Ikkinchisidan x = y + 3 ni qo'yamiz: 3y + 9 + 2y = 24, ya'ni 5y = 15 va y = 3, x = 6. Yechim (6; 3). Variantdagi (9; 6) faqat ikkinchi tenglamani qanoatlantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-koeffitsient-sistema",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#86840c6a"
+    },
+    {
+      "q": "0,2x + 0,3y = 1,3 va 0,5x − 0,1y = 0,7 sistemasining yechimini toping.",
+      "v": [
+        "(3; 2)",
+        "(20; 30)",
+        "(2; 3)",
+        "(2; −3)"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tenglamani 10 ga ko'paytirib o'nli kasrlardan qutulamiz: 2x + 3y = 13 va 5x − y = 7. Ikkinchisidan y = 5x − 7 ni birinchisiga qo'yamiz: 2x + 15x − 21 = 13, ya'ni 17x = 34 va x = 2, y = 3. Yechim (2; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onli-kasr-koeffitsient",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#9b29b022"
+    },
+    {
+      "q": "(x + 1)/2 + (y − 2)/3 = 4 va x + y = 11 sistemasini yechib, (x; y) juftlikni toping.",
+      "v": [
+        "(3; 8)",
+        "(8; 3)",
+        "(5; 6)",
+        "(3; 5)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tenglamani 6 ga ko'paytiramiz: 3(x + 1) + 2(y − 2) = 24, ya'ni 3x + 3 + 2y − 4 = 24 va 3x + 2y = 25. Ikkinchisidan y = 11 − x ni qo'yamiz: 3x + 22 − 2x = 25, x = 3, y = 8. Variantdagi (5; 6) faqat ikkinchi tenglamaga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-koeffitsient-sistema",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#c9b817e2"
+    },
+    {
+      "q": "1,5x + 2,5y = 13,5 va x − y = 1 sistemasining yechimida y noma'lum nechaga teng?",
+      "v": [
+        "4",
+        "2,5",
+        "1",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi tenglamadan x = y + 1. Uni birinchisiga qo'yamiz: 1,5(y + 1) + 2,5y = 13,5, ya'ni 4y + 1,5 = 13,5. Bundan 4y = 12 va y = 3, shunda x = 4. Savolda y so'ralgan, x ning qiymati 4 ni javob deb berish e'tiborsizlik xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onli-kasr-koeffitsient",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#3841542b"
+    },
+    {
+      "q": "y = 2x + 3 va y = 2x − 1 to'g'ri chiziqlaridan tuzilgan sistema haqida qaysi fikr to'g'ri bo'ladi?",
+      "v": [
+        "Chiziqlar parallel, sistema yechimga ega emas",
+        "Chiziqlar kesishadi, yagona yechim mavjud",
+        "Chiziqlar ustma-ust tushadi, yechimlar cheksiz ko'p",
+        "Chiziqlar perpendikulyar, yechim bitta"
+      ],
+      "t": 0,
+      "izoh": "Ikkala chiziqning burchak koeffitsienti 2 ga teng, ozod hadlari esa 3 va −1, ya'ni farq qiladi. Burchak koeffitsientlari teng, ozod hadlari har xil bo'lgan chiziqlar parallel joylashadi va umumiy nuqtaga ega bo'lmaydi, demak sistema yechimsiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-parallel-tahlil",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#571d918c"
+    },
+    {
+      "q": "Sistemadagi ikki to'g'ri chiziqning burchak koeffitsientlari ham, ozod hadlari ham o'zaro teng. Bunday sistema haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Yechim yo'q, chiziqlar parallel",
+        "Bitta yechim bor, chiziqlar kesishadi",
+        "Yechim faqat koordinata boshida bo'ladi",
+        "Cheksiz ko'p yechim bor, chiziqlar ustma-ust tushadi"
+      ],
+      "t": 3,
+      "izoh": "Burchak koeffitsientlari teng bo'lsa, chiziqlar bir xil yo'nalishda; ozod hadlari ham teng bo'lsa, ular Oy o'qini bir xil nuqtada kesadi. Demak bu bitta to'g'ri chiziq, ya'ni chiziqlar ustma-ust tushadi va sistemaning cheksiz ko'p yechimi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-ustma-ust-tahlil",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#7f6c2874"
+    },
+    {
+      "q": "4x − 6y = 10 va 2x − 3y = 5 tenglamalarning grafiklari koordinata tekisligida qanday joylashgan?",
+      "v": [
+        "Parallel, kesishmaydi",
+        "Bir nuqtada kesishadi",
+        "O'zaro perpendikulyar",
+        "Ustma-ust tushadi"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tenglamaning barcha hadlarini 2 ga bo'lamiz: 2x − 3y = 5. Bu ikkinchi tenglamaning aynan o'zi. Bir xil tenglama bitta to'g'ri chiziqni beradi, shuning uchun grafiklar ustma-ust tushadi. Faqat koeffitsientlarning har xilligiga qarab parallel deb xulosa qilish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-ustma-ust-tahlil",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#33a810d7"
+    },
+    {
+      "q": "Ikki mobil operator tarifi taqqoslanmoqda: birinchisida oylik to'lov y = 0,3x + 20, ikkinchisida y = 0,3x + 45 (ming so'mda, x — sarflangan daqiqa). Ikki tarifning xarajati tenglashadigan daqiqa bormi?",
+      "v": [
+        "Ha, 25 daqiqada tenglashadi",
+        "Ha, 65 daqiqada tenglashadi",
+        "Yo'q, chiziqlar parallel va xarajat hech qachon tenglashmaydi",
+        "Ha, har qanday daqiqada teng bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Xarajatlarni tenglashtiramiz: 0,3x + 20 = 0,3x + 45. Ikkala tomondan 0,3x ni ayiramiz va 20 = 45 degan yolg'on tenglik qoladi. Demak sistema yechimga ega emas: chiziqlar parallel, birinchi tarif har doim 25 ming so'mga arzon bo'lib qolaveradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-parallel-tarif",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#0f9e1b8f"
+    },
+    {
+      "q": "x + y = 7, x − y = 1 va 2x + 3y = 19 uchta tenglama berilgan. Bu uchala tenglama bir vaqtda bajariladimi?",
+      "v": [
+        "Yo'q, (4; 3) juftlik uchinchi tenglamani qanoatlantirmaydi",
+        "Ha, (4; 3) juftlik uchalasini ham qanoatlantiradi",
+        "Ha, (3; 4) juftlik uchalasiga mos keladi",
+        "Yo'q, dastlabki ikki tenglamaning umumiy yechimi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki ikki tenglamani qo'shamiz: 2x = 8, x = 4 va y = 3. Endi bu juftlikni uchinchi tenglamaga qo'yamiz: 2·4 + 3·3 = 8 + 9 = 17, lekin o'ng tomonda 19 turibdi. Tenglik buzilgani uchun uchala shart bir vaqtda bajarilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-tenglama-moslik",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#789f9150"
+    },
+    {
+      "q": "x + 2y = 8, 3x − y = 3 va x + ay = 11 tenglamalar bitta umumiy yechimga ega bo'lsa, a nechaga teng?",
+      "v": [
+        "9",
+        "3",
+        "2",
+        "4,5"
+      ],
+      "t": 1,
+      "izoh": "Dastlabki ikki tenglamani yechamiz: birinchisidan x = 8 − 2y, uni ikkinchisiga qo'yamiz: 24 − 6y − y = 3, ya'ni 7y = 21 va y = 3, x = 2. Endi bu juftlikni uchinchi tenglamaga qo'yamiz: 2 + 3a = 11, 3a = 9 va a = 3. Uchga bo'lishni unutish 9 degan javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-tenglama-parametr",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#0a3abc02"
+    },
+    {
+      "q": "Koordinata tekisligida 2x + y = 8, x − y = 1 va 3x + 2y = 13 to'g'ri chiziqlari chizildi. Ular bitta nuqtada kesishadimi?",
+      "v": [
+        "Yo'q, uchinchi chiziq boshqa nuqtadan o'tadi",
+        "Ha, uchalasi (2; 3) nuqtada kesishadi",
+        "Ha, uchalasi (3; 2) nuqtada kesishadi",
+        "Yo'q, chiziqlar juft-juft parallel"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki ikki tenglamani qo'shamiz: 3x = 9, x = 3, so'ng y = 3 − 1 = 2. Kesishish nuqtasi (3; 2). Uni uchinchi tenglamaga qo'yamiz: 3·3 + 2·2 = 9 + 4 = 13, tenglik bajarildi. Demak uchala chiziq (3; 2) nuqtadan o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-tenglama-moslik",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#743a33f6"
+    },
+    {
+      "q": "2x + 5y = 3, 4x + 10y = 6 va x − y = 5 tenglamalarning umumiy yechimini toping.",
+      "v": [
+        "(−1; 4)",
+        "(4; −1)",
+        "(5; 0)",
+        "Yechimi yo'q, chunki dastlabki ikki tenglama bir xil"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi tenglama birinchisini 2 ga ko'paytirish natijasi, shuning uchun u yangi shart qo'ymaydi va sistema aslida ikki tenglamadan iborat. 2x + 5y = 3 va x − y = 5 ni yechamiz: x = y + 5, 2y + 10 + 5y = 3, 7y = −7, y = −1 va x = 4. Yechim (4; −1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-tenglama-ortiqcha",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#89bd2ad7"
+    },
+    {
+      "q": "Teatr kassasida kattalar chiptasi 45 000 so'm, bolalar chiptasi 25 000 so'm turadi. Jami 30 ta chipta sotilib, 1 150 000 so'm tushum bo'ldi. Nechta kattalar chiptasi sotilgan?",
+      "v": [
+        "10 ta",
+        "20 ta",
+        "15 ta",
+        "25 ta"
+      ],
+      "t": 1,
+      "izoh": "Kattalar chiptasi k ta, bolalarniki b ta bo'lsin: k + b = 30 va 45k + 25b = 1150 (ming so'mda). Ikkinchisiga b = 30 − k ni qo'yamiz: 45k + 750 − 25k = 1150, ya'ni 20k = 400 va k = 20 ta. Bolalar chiptasi 10 ta, uni javob deb olish chalkashlikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matn-chipta-narx",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#71a9d154"
+    },
+    {
+      "q": "Fermer xo'jaligida tovuq va qo'ylar boqiladi. Ularning boshlari soni 42 ta, oyoqlari soni esa 116 ta. Fermada nechta qo'y bor?",
+      "v": [
+        "26 ta",
+        "21 ta",
+        "16 ta",
+        "29 ta"
+      ],
+      "t": 2,
+      "izoh": "Tovuqlar soni t, qo'ylar soni q bo'lsin: t + q = 42. Tovuqning 2 ta, qo'yning 4 ta oyog'i bor: 2t + 4q = 116, ya'ni t + 2q = 58. Ikkinchisidan birinchisini ayiramiz: q = 16 ta. Demak tovuqlar 26 ta, ularning sonini javob deb berish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-bosh-oyoq",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#ce784d59"
+    },
+    {
+      "q": "Sinfda 30 nafar o'quvchi bor. Qizlar soni o'g'il bolalar sonidan 6 ta kam bo'lsa, sinfda nechta o'g'il bola o'qiydi?",
+      "v": [
+        "12 ta",
+        "15 ta",
+        "24 ta",
+        "18 ta"
+      ],
+      "t": 3,
+      "izoh": "O'g'illar soni o, qizlar soni q bo'lsin: o + q = 30 va o − q = 6. Tenglamalarni qo'shamiz: 2o = 36, o = 18 ta. Qizlar esa 12 ta. Ayirmani ikkiga bo'lmay 30 − 6 = 24 deb javob berish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matn-sinf-tarkibi",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#bd3e1222"
+    },
+    {
+      "q": "Do'konda 3 litrli va 5 litrli idishlar sotiladi. Javonda jami 24 ta idish turibdi va ularning umumiy sig'imi 92 litr. 5 litrli idishlar nechta?",
+      "v": [
+        "10 ta",
+        "14 ta",
+        "12 ta",
+        "20 ta"
+      ],
+      "t": 0,
+      "izoh": "3 litrli idishlar a ta, 5 litrlisi b ta bo'lsin: a + b = 24 va 3a + 5b = 92. Ikkinchisiga a = 24 − b ni qo'yamiz: 72 − 3b + 5b = 92, ya'ni 2b = 20 va b = 10 ta. 3 litrli idishlar 14 ta bo'ladi, ularni javob deb olish shartni chalkashtirishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-idish-sigim",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#bf29e5d3"
+    },
+    {
+      "q": "Ikki guruh talabasi test topshirdi. Ikkala guruhning o'rtacha ballari yig'indisi 130, birinchi guruhning o'rtacha bali ikkinchisinikidan 10 ball kam. Birinchi guruhning o'rtacha balini toping.",
+      "v": [
+        "70 ball",
+        "60 ball",
+        "65 ball",
+        "120 ball"
+      ],
+      "t": 1,
+      "izoh": "O'rtacha ballar a va b bo'lsin: a + b = 130 va b − a = 10. Tenglamalarni ayiramiz: 2a = 120, a = 60 ball. Ikkinchi guruhniki 70 ball. Ikki ballni teng deb 65 ni olish yoki 130 − 10 = 120 deb javob berish tipik xatolar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matn-orta-ball-yigindi",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#c5c26697"
+    },
+    {
+      "q": "Sinfda matematikadan test o'tkazildi. O'g'il bolalarning o'rtacha bali 72, qizlarniki 84 ball. Sinfdagi 25 o'quvchining umumiy o'rtacha bali 76,8 ball bo'lsa, sinfda nechta qiz bor?",
+      "v": [
+        "15 ta",
+        "12 ta",
+        "10 ta",
+        "20 ta"
+      ],
+      "t": 2,
+      "izoh": "O'g'illar soni o, qizlar soni q bo'lsin: o + q = 25. Ballar yig'indisi 72o + 84q = 76,8·25 = 1920. Birinchisidan o = 25 − q ni qo'yamiz: 1800 − 72q + 84q = 1920, ya'ni 12q = 120 va q = 10 ta. Sinf sonini teng bo'lib 12 ta deb baholash noto'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-orta-ball-vaznli",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#07119408"
+    },
+    {
+      "q": "Ustaxonada 9 kishi ishlaydi: ustalar oyiga 6 mln so'm, shogirdlar 3,5 mln so'm oladi. Oylik ish haqi fondi 44 mln so'm bo'lsa, ustaxonada nechta shogird ishlaydi?",
+      "v": [
+        "5 ta",
+        "4 ta",
+        "9 ta",
+        "3 ta"
+      ],
+      "t": 1,
+      "izoh": "Ustalar soni u, shogirdlar soni s bo'lsin: u + s = 9 va 6u + 3,5s = 44. Birinchisidan u = 9 − s ni qo'yamiz: 54 − 6s + 3,5s = 44, ya'ni 2,5s = 10 va s = 4 ta. Ustalar 5 ta bo'ladi, ularning sonini javob deb berish tipik chalkashlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-ish-haqi-fondi",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#8cd10cc4"
+    },
+    {
+      "q": "Malika ikki fandan test topshirdi. Ikki natijaning o'rta arifmetigi 24 ta to'g'ri javob, natijalar orasidagi farq esa 10 ta. Yaxshiroq natijada nechta to'g'ri javob bo'lgan?",
+      "v": [
+        "19",
+        "34",
+        "24",
+        "29"
+      ],
+      "t": 3,
+      "izoh": "Natijalar x va y bo'lsin. O'rta arifmetik 24 bo'lsa, ularning yig'indisi 48; farq esa x − y = 10. Tenglamalarni qo'shamiz: 2x = 58, x = 29. Ikkinchi natija 19 ta. O'rta arifmetikka farqni qo'shib 34 deb hisoblash keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-orta-arifmetik",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#5bca5436"
+    },
+    {
+      "q": "1/x + 1/y = 7/12 va 1/x − 1/y = 1/12 sistemasini yordamchi noma'lumlar kiritib yeching va (x; y) juftlikni toping.",
+      "v": [
+        "(4; 3)",
+        "(3; 4)",
+        "(1/3; 1/4)",
+        "(12; 7)"
+      ],
+      "t": 1,
+      "izoh": "a = 1/x va b = 1/y deb belgilaymiz: a + b = 7/12 va a − b = 1/12. Ularni qo'shamiz: 2a = 8/12, a = 1/3, demak x = 3. Ayirsak 2b = 6/12, b = 1/4 va y = 4. Yordamchi noma'lumlarning qiymatini javob deb berib, teskari qiymatga o'tishni unutish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yordamchi-nomalum-teskari",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#27fbf67f"
+    },
+    {
+      "q": "Ikki nasos hovuzni birgalikda 6 soatda to'ldiradi. Birinchi nasosning bir soatlik unumi ikkinchisinikidan 1,5 barobar katta bo'lsa, ikkinchi nasos yakka o'zi hovuzni necha soatda to'ldiradi?",
+      "v": [
+        "10 soat",
+        "9 soat",
+        "15 soat",
+        "4 soat"
+      ],
+      "t": 2,
+      "izoh": "Nasoslarning bir soatlik unumini a va b deb belgilaymiz: a + b = 1/6 va a = 1,5b. Ikkinchi tenglamani birinchisiga qo'yamiz: 1,5b + b = 1/6, ya'ni 2,5b = 1/6, b = 1/15. Demak ikkinchi nasos yakka o'zi 15 soatda to'ldiradi (birinchisining unumi a = 1,5·1/15 = 1/10, ya'ni u 10 soatda to'ldiradi). Birgalikdagi 6 soatni 1,5 ga ko'paytirib 9 soat deyish unum bilan vaqtni chalkashtirishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-birgalikda-ish",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#a5ff879b"
+    },
+    {
+      "q": "3/x + 4/y = 3 va 6/x − 2/y = 1 sistemasining yechimini toping.",
+      "v": [
+        "(2; 3)",
+        "(1/3; 1/2)",
+        "(3; 1/2)",
+        "(3; 2)"
+      ],
+      "t": 3,
+      "izoh": "a = 1/x va b = 1/y deb olamiz: 3a + 4b = 3 va 6a − 2b = 1. Ikkinchisini 2 ga ko'paytiramiz: 12a − 4b = 2 va birinchisi bilan qo'shamiz: 15a = 5, a = 1/3, demak x = 3. Endi 4b = 3 − 1 = 2, b = 1/2 va y = 2. Yechim (3; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yordamchi-nomalum-teskari",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#2d2a67d1"
+    },
+    {
+      "q": "Bassein ikkita quvur orqali to'ldiriladi. Birinchi quvur 2 soat, ikkinchisi 3 soat ishlaganda basseinning 7/12 qismi to'ladi; birinchisi 3 soat, ikkinchisi 2 soat ishlaganda esa 2/3 qismi to'ladi. Ikkinchi quvur yakka o'zi basseinni necha soatda to'ldiradi?",
+      "v": [
+        "12 soat",
+        "6 soat",
+        "4 soat",
+        "24 soat"
+      ],
+      "t": 0,
+      "izoh": "Quvurlarning bir soatlik unumini a va b deb olamiz: 2a + 3b = 7/12 va 3a + 2b = 2/3. Birinchisini 3 ga, ikkinchisini 2 ga ko'paytiramiz: 6a + 9b = 21/12 va 6a + 4b = 16/12. Ayiramiz: 5b = 5/12, b = 1/12 — ikkinchi quvur basseinni 12 soatda to'ldiradi. Birinchisi uchun 2a = 7/12 − 3/12 = 1/3, a = 1/6, ya'ni 6 soat, lekin savol ikkinchi quvurni so'ragan. Ikki tenglamani qo'shib a + b = 1/4 dan chiqadigan 4 soat esa ikkala quvurning birgalikdagi vaqti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "matn-birgalikda-ish",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#7633956d"
+    },
+    {
+      "q": "Taksi haqi boshlang'ich to'lov va har kilometr uchun to'lovdan iborat. 8 km yo'l 62 000 so'm, 12 km yo'l esa 86 000 so'm turadi. Boshlang'ich to'lovni toping.",
+      "v": [
+        "6 000 so'm",
+        "14 000 so'm",
+        "24 000 so'm",
+        "48 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich to'lov b, bir kilometr narxi k bo'lsin: b + 8k = 62 000 va b + 12k = 86 000. Tenglamalarni ayiramiz: 4k = 24 000, k = 6 000 so'm. Endi b = 62 000 − 48 000 = 14 000 so'm. Kilometr narxini boshlang'ich to'lov deb berish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matn-tarif-boshlangich-tolov",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#95b99eb2"
+    },
+    {
+      "q": "Internet paketining narxi oylik abonent to'lovi va sarflangan har bir gigabayt uchun to'lovdan tashkil topadi. 15 GB uchun 105 000 so'm, 25 GB uchun 145 000 so'm to'lanadi. Bir gigabayt uchun to'lov qancha?",
+      "v": [
+        "7 000 so'm",
+        "45 000 so'm",
+        "5 800 so'm",
+        "4 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Abonent to'lovi a, bir gigabayt narxi g bo'lsin: a + 15g = 105 000 va a + 25g = 145 000. Ayiramiz: 10g = 40 000, g = 4 000 so'm. Abonent to'lovi esa 105 000 − 60 000 = 45 000 so'm. Umumiy summani hajmga bo'lib 105 000 : 15 = 7 000 deb hisoblash abonent to'lovini unutishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "matn-tarif-boshlangich-tolov",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#b8c24028"
+    },
+    {
+      "q": "Sport zali ikki tarif taklif qiladi: A tarifda oylik 200 000 so'm va har mashg'ulot uchun 10 000 so'm, B tarifda oylik to'lov yo'q, lekin har mashg'ulot 30 000 so'm. Necha mashg'ulotda ikki tarifning xarajati tenglashadi?",
+      "v": [
+        "5 ta mashg'ulotda",
+        "20 ta mashg'ulotda",
+        "10 ta mashg'ulotda",
+        "Hech qachon tenglashmaydi"
+      ],
+      "t": 2,
+      "izoh": "Mashg'ulotlar soni x bo'lsin. A tarif xarajati 200 000 + 10 000x, B tarifniki 30 000x. Tenglashtiramiz: 200 000 + 10 000x = 30 000x, ya'ni 20 000x = 200 000 va x = 10. Oylik to'lovni faqat A tarif narxiga bo'lib 20 ta deb javob berish farqni hisobga olmaslikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "matn-tarif-tenglashish",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#5205038b"
+    },
+    {
+      "q": "Bir shoxobchada benzinning litri 12 000 so'm, lekin chegirma kartasi 50 000 so'm turadi; ikkinchisida litri 13 000 so'm va karta bepul. Necha litr quyilganda ikkala shoxobchadagi xarajat teng bo'ladi?",
+      "v": [
+        "50 litr",
+        "25 litr",
+        "100 litr",
+        "4 litr"
+      ],
+      "t": 0,
+      "izoh": "Quyilgan benzin x litr bo'lsin. Birinchi shoxobcha xarajati 50 000 + 12 000x, ikkinchisiniki 13 000x. Tenglashtiramiz: 50 000 + 12 000x = 13 000x, ya'ni 1 000x = 50 000 va x = 50 litr. Karta narxini litr narxiga bo'lib 4 litr deb olish narx farqini e'tibordan qoldirishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "matn-tarif-tenglashish",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#9115b219"
+    },
+    {
+      "q": "x + y = 12 va x − y = 2a sistemasining yechimida x soni y dan 2 marta katta bo'lsa, a nechaga teng?",
+      "v": [
+        "4",
+        "1",
+        "6",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Shart bo'yicha x = 2y, uni birinchi tenglamaga qo'yamiz: 3y = 12, y = 4 va x = 8. Endi ikkinchi tenglamadan 8 − 4 = 2a, ya'ni 2a = 4 va a = 2. Ayirmaning o'zini javob deb 4 ni olish, ya'ni 2a dagi ikkiga bo'lishni unutish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-yechim-sharti",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#4eff17f9"
+    },
+    {
+      "q": "2x + y = 7 va x − y = k sistemasining yechimi Ox o'qida yotishi uchun k nechaga teng bo'lishi kerak?",
+      "v": [
+        "3,5",
+        "7",
+        "0",
+        "7/3"
+      ],
+      "t": 0,
+      "izoh": "Ox o'qida yotgan nuqtaning ordinatasi nolga teng, ya'ni y = 0. Birinchi tenglamadan 2x = 7 va x = 3,5. Endi ikkinchi tenglamaga qo'yamiz: 3,5 − 0 = k, demak k = 3,5. Ox o'qini Oy bilan chalkashtirib x = 0 deb olish noto'g'ri javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-yechim-oqda",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#361d0b13"
+    },
+    {
+      "q": "3x − y = 5 va x + y = m sistemasining yechimi koordinata tekisligining ikkinchi choragida yotishi uchun m qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "Bunday m mavjud emas",
+        "m < −5",
+        "m > 5/3",
+        "−5 < m < 5/3"
+      ],
+      "t": 0,
+      "izoh": "Tenglamalarni qo'shamiz: 4x = 5 + m, ya'ni x = (5 + m)/4. Shunda y = m − x = (3m − 5)/4. Ikkinchi chorakda x < 0 va y > 0 bo'lishi kerak. Birinchi shart m < −5 ni, ikkinchisi esa m > 5/3 ni talab qiladi. Bu ikki shart bir vaqtda bajarilmaydi, demak bunday m yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-yechim-chorakda",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#9b2dfe2e"
+    },
+    {
+      "q": "2x − y = 6 va x + 3y = c sistemasining yechimida x va y qarama-qarshi sonlar bo'lsa, c nechaga teng?",
+      "v": [
+        "4",
+        "−8",
+        "−4",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Qarama-qarshi sonlar uchun x = −y. Buni birinchi tenglamaga qo'yamiz: 2·(−y) − y = 6, ya'ni −3y = 6 va y = −2, demak x = 2. Endi c = x + 3y = 2 + 3·(−2) = 2 − 6 = −4. x va y ni o'rin almashtirib qo'yish 4 degan noto'g'ri javobni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-yechim-sharti",
+      "id": "matematika_teng_m11-chiziqli-tenglamalar-sistemasi#347d1725"
+    }
+  ]
+}

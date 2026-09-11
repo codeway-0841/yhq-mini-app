@@ -1,0 +1,1609 @@
+{
+  "nom": "Boshlang'ich funksiya, aniqmas integral va bo'laklab integrallash",
+  "bolim": "Matematik analiz asoslari",
+  "blok": "anlz",
+  "rasmiyBolim": 5,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Nodira daftariga f(x) = 6x² + 2 funksiyaning boshlang'ich funksiyasini yozmoqchi. Quyidagi to'rtta ifodadan qaysi biri unga to'g'ri keladi?",
+      "v": [
+        "2x³ + 2x − 5",
+        "6x³ + 2x + 1",
+        "2x³ + x + 4",
+        "12x + 7"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich funksiyaning hosilasi berilgan funksiyaga teng bo'lishi kerak. Tekshiramiz: (2x³ + 2x − 5)' = 2·3x² + 2 = 6x² + 2. O'zgarmas had −5 ning hosilasi nolga teng, shuning uchun u xalaqit bermaydi. Javob: 2x³ + 2x − 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boshlangich-tekshirish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#7212b68a"
+    },
+    {
+      "q": "Quyidagi to'rtta ifodadan qaysi biri f(x) = 4x³ − 5 funksiyaning boshlang'ich funksiyasi bo'la olmaydi?",
+      "v": [
+        "x⁴ − 5x",
+        "x⁴ − 5x + 12",
+        "x⁴ − 5x − 3",
+        "x⁴ − 5x²"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich funksiyani tekshirish uchun hosila olinadi. (x⁴ − 5x + C)' = 4x³ − 5 bo'ladi, o'zgarmas had qanday bo'lishidan qat'i nazar. Lekin (x⁴ − 5x²)' = 4x³ − 10x chiqadi va bu berilgan funksiyaga teng emas. Javob: x⁴ − 5x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boshlangich-tekshirish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#f9bfdd2d"
+    },
+    {
+      "q": "Anvar F(x) = sin x + 3x ni f(x) = cos x + 3 ning boshlang'ich funksiyasi deb yozdi. Uning ishi to'g'rimi?",
+      "v": [
+        "Noto'g'ri, chunki (sin x)' = −cos x",
+        "Noto'g'ri, chunki javobda C yozilmagan",
+        "To'g'ri, chunki (sin x + 3x)' = cos x + 3",
+        "Noto'g'ri, chunki 3x ning boshlang'ichi 3"
+      ],
+      "t": 2,
+      "izoh": "Tekshirish uchun F(x) ning hosilasi olinadi: (sin x)' = cos x va (3x)' = 3. Demak F'(x) = cos x + 3 bo'lib, bu aynan berilgan f(x). Bitta boshlang'ich funksiya ko'rsatilganda C yozilishi shart emas. Javob: to'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boshlangich-tekshirish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#a5947185"
+    },
+    {
+      "q": "F(x) = x·ln x − x ifodaning hosilasini hisoblang va u qaysi funksiyaning boshlang'ich funksiyasi ekanini aniqlang.",
+      "v": [
+        "ln x + 1",
+        "ln x",
+        "1/x",
+        "ln x − 1"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma hosilasi qoidasini qo'llaymiz: (x·ln x)' = 1·ln x + x·(1/x) = ln x + 1. Undan (x)' = 1 ayiriladi. Demak F'(x) = ln x + 1 − 1 = ln x. Javob: ln x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boshlangich-tekshirish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#8702321d"
+    },
+    {
+      "q": "Daraja funksiyasining integrali formulasidan foydalanib ∫x⁵ dx aniqmas integralni hisoblang va quyidagi variantlardan to'g'risini ko'rsating.",
+      "v": [
+        "x⁶/6 + C",
+        "5x⁴ + C",
+        "x⁶ + C",
+        "x⁴/4 + C"
+      ],
+      "t": 0,
+      "izoh": "Daraja funksiyasi uchun jadval formulasi ∫xⁿ dx = x^(n+1)/(n+1) + C ko'rinishida. Bu yerda n = 5, demak ko'rsatkich 6 ga oshadi va natija 6 ga bo'linadi. Javob: x⁶/6 + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-integrali",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#04c09b62"
+    },
+    {
+      "q": "∫√x dx integralni hisoblashda avval ildiz daraja ko'rinishida yoziladi. Shu usulda hisoblab, to'g'ri natijani tanlang.",
+      "v": [
+        "x√x/2 + C",
+        "2x√x/3 + C",
+        "2√x + C",
+        "3x√x/2 + C"
+      ],
+      "t": 1,
+      "izoh": "Ildizni daraja shaklida yozamiz: √x = x^(1/2). Jadval bo'yicha ∫x^(1/2) dx = x^(3/2) ni 3/2 ga bo'lishga teng. Kasrga bo'lish teskarisiga ko'paytirishdir, demak natija (2/3)·x^(3/2) = 2x√x/3. Javob: 2x√x/3 + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-integrali",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#f747809c"
+    },
+    {
+      "q": "Maxrajdagi darajani manfiy ko'rsatkichli daraja ko'rinishida yozib, ∫dx/x³ aniqmas integralni hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "1/(2x²) + C",
+        "−3/x⁴ + C",
+        "ln|x³| + C",
+        "−1/(2x²) + C"
+      ],
+      "t": 3,
+      "izoh": "Ifodani daraja shaklida yozamiz: 1/x³ = x^(−3). Jadval formulasi bo'yicha ko'rsatkich bittaga oshadi va x^(−2) ni −2 ga bo'lish kerak bo'ladi. Natijada −1/(2x²) hosil bo'ladi. Javob: −1/(2x²) + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-integrali",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#9f2f255e"
+    },
+    {
+      "q": "Kasr ko'rsatkichli daraja uchun ham jadval formulasi o'rinli. Shundan foydalanib ∫x^(2/3) dx aniqmas integralni hisoblang.",
+      "v": [
+        "3x^(5/3)/5 + C",
+        "5x^(5/3)/3 + C",
+        "x^(5/3)/5 + C",
+        "x^(5/3) + C"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichni bittaga oshiramiz: 2/3 + 1 = 5/3. Endi x^(5/3) ni 5/3 ga bo'lish kerak, bu esa 3/5 ga ko'paytirish demakdir. Natija 3x^(5/3)/5 bo'ladi. Javob: 3x^(5/3)/5 + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-integrali",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#839b1ab3"
+    },
+    {
+      "q": "n ning qaysi qiymatida ∫xⁿ dx uchun jadval formulasi ishlamay qoladi va uning o'rniga qaysi formula qo'llaniladi?",
+      "v": [
+        "n = 0, ∫dx = x + C",
+        "n = 1, ∫x dx = x²/2 + C",
+        "n = −1, ∫dx/x = ln|x| + C",
+        "n = −2, ∫dx/x² = −1/x + C"
+      ],
+      "t": 2,
+      "izoh": "Formulada maxraj n + 1 bo'lgani uchun u nolga aylanmasligi kerak. n = −1 bo'lganda n + 1 = 0 chiqadi va nolga bo'lish mumkin emas. Shu holda alohida jadval formulasi ∫dx/x = ln|x| + C ishlatiladi. Javob: n = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-integrali",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#f51ac9d0"
+    },
+    {
+      "q": "∫(3x² − 8x + 5) dx aniqmas integralni had-bahad integrallash qoidasi bilan hisoblang va natijani tanlang.",
+      "v": [
+        "x³ − 4x² + 5x + C",
+        "x³ − 8x² + 5x + C",
+        "3x³ − 4x² + 5x + C",
+        "6x − 8 + C"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi integrali hadlar integrallari yig'indisiga teng. Alohida hisoblaymiz: ∫3x² dx = x³, ∫8x dx = 4x², ∫5 dx = 5x. Ishoralarni saqlab qo'ysak x³ − 4x² + 5x hosil bo'ladi. Javob: x³ − 4x² + 5x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophad-integrali",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#3a78a8cf"
+    },
+    {
+      "q": "Farrux ∫(4x³ + 6x) dx ni hisoblab x⁴ + 3x² deb yozdi, lekin o'qituvchi javobni to'liq emas dedi. To'liq javob qanday?",
+      "v": [
+        "12x² + 6 + C",
+        "x⁴ + 3x² + C",
+        "4x⁴ + 6x² + C",
+        "x⁴ + 3x²"
+      ],
+      "t": 1,
+      "izoh": "Hadlarni alohida integrallaymiz: ∫4x³ dx = x⁴ va ∫6x dx = 3x². Aniqmas integral bitta funksiya emas, balki butun boshlang'ich funksiyalar oilasi bo'lgani uchun ixtiyoriy o'zgarmas C qo'shiladi. Javob: x⁴ + 3x² + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophad-integrali",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#3faa38ec"
+    },
+    {
+      "q": "∫(x − 2)(x + 5) dx integralni hisoblash uchun avval qavslar ochiladi. To'g'ri natijani toping.",
+      "v": [
+        "x³/3 − 3x²/2 − 10x + C",
+        "(x²/2 − 2x)(x²/2 + 5x) + C",
+        "x³/3 + 3x²/2 − 10x + C",
+        "x³/3 + 3x² − 10x + C"
+      ],
+      "t": 2,
+      "izoh": "Avval ko'paytmani yoyamiz: (x − 2)(x + 5) = x² + 3x − 10. Endi had-bahad integrallaymiz va x³/3 + 3x²/2 − 10x hosil bo'ladi. Ko'paytmani ko'paytuvchilar integrallari ko'paytmasi sifatida yozib bo'lmaydi. Javob: x³/3 + 3x²/2 − 10x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kophad-integrali",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#5930c083"
+    },
+    {
+      "q": "Kasrni har bir had bo'yicha alohida bo'lgandan keyin ∫(x⁴ − 3x² + 2)/x² dx aniqmas integralni hisoblang va natijani tanlang.",
+      "v": [
+        "x³/3 − 3x + 2/x + C",
+        "x³/3 − 3x − 2/x + C",
+        "x³/3 − 3x − 2/x³ + C",
+        "x⁵/5 − x³ + 2x + C"
+      ],
+      "t": 1,
+      "izoh": "Har bir hadni x² ga bo'lamiz va x² − 3 + 2x^(−2) hosil bo'ladi. Endi had-bahad integrallaymiz: x³/3 − 3x va ∫2x^(−2) dx = −2/x. Kasrni surat va maxraj integrallari nisbati sifatida yozib bo'lmaydi. Javob: x³/3 − 3x − 2/x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kophad-integrali",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#de883172"
+    },
+    {
+      "q": "Ikkihadning kvadratini yoyib, ∫(2x + 1)² dx aniqmas integralni had-bahad hisoblang va to'g'ri natijani belgilang.",
+      "v": [
+        "(2x + 1)³/3 + C",
+        "4x³/3 + 2x² + x + C",
+        "4x³/3 + 4x² + x + C",
+        "4x³ + 2x² + x + C"
+      ],
+      "t": 1,
+      "izoh": "Qavsni ochamiz: (2x + 1)² = 4x² + 4x + 1. Had-bahad integrallaymiz: ∫4x² dx = 4x³/3, ∫4x dx = 2x², ∫1 dx = x. Javob: 4x³/3 + 2x² + x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kophad-integrali",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#41e43e21"
+    },
+    {
+      "q": "∫(2 sin x − 3 cos x) dx aniqmas integralni jadval formulalari yordamida hisoblang va natijani tanlang.",
+      "v": [
+        "−2 cos x − 3 sin x + C",
+        "2 cos x − 3 sin x + C",
+        "−2 cos x + 3 sin x + C",
+        "2 cos x + 3 sin x + C"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda ∫sin x dx = −cos x + C va ∫cos x dx = sin x + C deb berilgan. Demak birinchi had −2 cos x, ikkinchi had esa 3 sin x beradi. Ikkinchi had oldidagi minus ishorasi saqlanadi. Javob: −2 cos x − 3 sin x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trig-integral",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#759d3cf8"
+    },
+    {
+      "q": "Trigonometrik jadval formulasidan foydalanib ∫dx/cos²x aniqmas integralning natijasini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "ctg x + C",
+        "tg x + C",
+        "−ctg x + C",
+        "−tg x + C"
+      ],
+      "t": 1,
+      "izoh": "Jadval formulasi ∫dx/cos²x = tg x + C ko'rinishida, chunki tangensning hosilasi 1/cos²x ga teng. Maxrajida sinus turgan holda esa natija −ctg x bo'ladi. Ikkalasini chalkashtirmaslik kerak. Javob: tg x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trig-integral",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#d869eba7"
+    },
+    {
+      "q": "Mayatnikning burchak tezligi ω(t) = 4 cos t rad/s qonuni bilan o'zgaradi. Uning burchak siljishi φ(t) uchun umumiy ifoda qanday?",
+      "v": [
+        "−4 sin t + C",
+        "−4 cos t + C",
+        "4 sin t + C",
+        "4 cos t + C"
+      ],
+      "t": 2,
+      "izoh": "Burchak tezlik burchak siljishning hosilasi bo'lgani uchun φ(t) — ω(t) ning boshlang'ich funksiyasi. ∫4 cos t dt = 4 sin t + C, chunki sinusning hosilasi kosinusga teng. O'zgarmas C boshlang'ich holatga bog'liq. Javob: 4 sin t + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trig-integral",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#d9cc4a3b"
+    },
+    {
+      "q": "∫(sin x + 1/sin²x) dx aniqmas integralni ikki had bo'yicha alohida hisoblab, umumiy natijani toping.",
+      "v": [
+        "−cos x + ctg x + C",
+        "cos x − ctg x + C",
+        "−cos x − tg x + C",
+        "−cos x − ctg x + C"
+      ],
+      "t": 3,
+      "izoh": "Jadvaldan ∫sin x dx = −cos x + C va ∫dx/sin²x = −ctg x + C formulalarini olamiz. Ikkala natijani qo'shamiz va ikkinchisidagi minus ishorasini yo'qotmaymiz. Javob: −cos x − ctg x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trig-integral",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#372628f4"
+    },
+    {
+      "q": "Ikki xil asosli ko'rsatkichli funksiya uchun ∫(e^x + 3^x) dx integralni hisoblang va to'g'ri natijani tanlang.",
+      "v": [
+        "e^x + 3^x/ln 3 + C",
+        "e^x + 3^x·ln 3 + C",
+        "e^x + 3^(x+1)/(x+1) + C",
+        "e^x + x·3^(x−1) + C"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda ∫e^x dx = e^x + C va ∫a^x dx = a^x/ln a + C deb yozilgan. Ko'rsatkichli funksiyada daraja formulasi ishlamaydi, chunki o'zgaruvchi ko'rsatkichda turibdi. Demak natija e^x + 3^x/ln 3 bo'ladi. Javob: e^x + 3^x/ln 3 + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-integral",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#703dcaa7"
+    },
+    {
+      "q": "Bakteriyalar sonining o'sish tezligi n'(t) = 200e^t dona/soat ga teng. Sonning o'zi n(t) uchun umumiy ifoda qanday ko'rinishda?",
+      "v": [
+        "200e^(t+1)/(t + 1) + C",
+        "200e^t + C",
+        "e^t + C",
+        "200t·e^t + C"
+      ],
+      "t": 1,
+      "izoh": "Son o'sish tezligi n(t) ning hosilasi bo'lgani uchun n(t) — 200e^t ning boshlang'ich funksiyasi. O'zgarmas ko'paytuvchi integral belgisidan tashqariga chiqariladi va 200∫e^t dt = 200e^t hosil bo'ladi. Javob: 200e^t + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-integral",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#68ec01f7"
+    },
+    {
+      "q": "Ko'rsatkichli funksiya va o'zgarmas hadni o'z ichiga olgan ∫(2e^x − 5) dx aniqmas integralni hisoblang.",
+      "v": [
+        "2e^x − 5x + C",
+        "2e^x − 5 + C",
+        "2e^x/x − 5x + C",
+        "e^x − 5x + C"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas ko'paytuvchi integral belgisidan chiqariladi va ∫2e^x dx = 2e^x bo'ladi. O'zgarmas sonning integrali esa ∫5 dx = 5x ga teng. Ikkinchi had oldidagi minus saqlanadi. Javob: 2e^x − 5x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-integral",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#bef46ea6"
+    },
+    {
+      "q": "Sarmoya qiymatining o'sish tezligi K'(t) = 500·2^t ming so'm/yil bo'lsa, K(t) ning umumiy ko'rinishi qanday bo'ladi?",
+      "v": [
+        "500·2^t·ln 2 + C",
+        "500·2^t + C",
+        "500·2^(t+1)/(t + 1) + C",
+        "500·2^t/ln 2 + C"
+      ],
+      "t": 3,
+      "izoh": "Jadval formulasi ∫a^t dt = a^t/ln a + C ko'rinishida. O'zgarmas ko'paytuvchi 500 integral belgisidan tashqariga chiqadi. Demak K(t) = 500·2^t/ln 2 + C bo'ladi. Javob: 500·2^t/ln 2 + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-integral",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#819b0953"
+    },
+    {
+      "q": "Maxrajida x turgan hadni alohida qarab, ∫(3/x + 4x) dx aniqmas integralni hisoblang va javobni tanlang.",
+      "v": [
+        "3ln|x| + 4x² + C",
+        "3ln|x| + 2x² + C",
+        "ln|3x| + 2x² + C",
+        "−3/x² + 2x² + C"
+      ],
+      "t": 1,
+      "izoh": "Jadvaldan ∫dx/x = ln|x| + C formulasidan foydalanamiz, o'zgarmas 3 esa tashqariga chiqadi. Ikkinchi had uchun ∫4x dx = 2x² bo'ladi. Koeffitsientni logarifm ichiga kiritish mumkin emas. Javob: 3ln|x| + 2x² + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-x-integral",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#1235b378"
+    },
+    {
+      "q": "Aniqmas integrallar jadvalida ∫dx/x natijasi nima uchun ln x emas, balki ln|x| ko'rinishida yozilishi kerak?",
+      "v": [
+        "Chunki logarifm har doim musbat bo'ladi",
+        "Chunki modul C ning o'rnini bosadi",
+        "Chunki x manfiy bo'lganda ham funksiya aniqlangan",
+        "Chunki x = 0 da funksiya uzluksiz bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "1/x funksiya x < 0 sohada ham aniqlangan, lekin ln x faqat x > 0 da mavjud. Modul olinsa, (ln|x|)' = 1/x tengligi ikkala sohada ham to'g'ri bo'lib qoladi. Shu sabab jadvalda modul yoziladi. Javob: x manfiy bo'lganda ham funksiya aniqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-x-integral",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#9119c219"
+    },
+    {
+      "q": "Ustaxonada q dona buyum tayyorlashning chegaraviy xarajati X'(q) = 40/q + 6 ming so'mga teng. Umumiy xarajat X(q) qanday ko'rinishda?",
+      "v": [
+        "40/q² + 6q + C",
+        "40 ln q + 6q + C",
+        "40 ln q + 6 + C",
+        "ln(40q) + 6q + C"
+      ],
+      "t": 1,
+      "izoh": "Umumiy xarajat chegaraviy xarajatning boshlang'ich funksiyasi bo'ladi. Buyum soni musbat bo'lgani uchun ∫40 dq/q = 40 ln q deb yozamiz. Ikkinchi had ∫6 dq = 6q beradi. Javob: 40 ln q + 6q + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-x-integral",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#327dead1"
+    },
+    {
+      "q": "F(x) = ln|x| + 5 funksiya qaysi funksiyaning boshlang'ich funksiyasi bo'lishini aniqlang va javobni tanlang.",
+      "v": [
+        "1/x + 5",
+        "ln|x|",
+        "−1/x²",
+        "1/x"
+      ],
+      "t": 3,
+      "izoh": "O'zgarmas hadning hosilasi nolga teng, shuning uchun 5 yo'qoladi. Jadval hosilasi bo'yicha (ln|x|)' = 1/x bo'ladi. Demak F(x) aynan 1/x funksiyaning boshlang'ich funksiyasi. Javob: 1/x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-x-integral",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#8033d49d"
+    },
+    {
+      "q": "∫(3x − 7)⁵ dx aniqmas integralni chiziqli almashtirish qoidasi bilan hisoblang va to'g'ri natijani tanlang.",
+      "v": [
+        "(3x − 7)⁶/18 + C",
+        "(3x − 7)⁶/6 + C",
+        "(3x − 7)⁶/3 + C",
+        "15(3x − 7)⁴ + C"
+      ],
+      "t": 0,
+      "izoh": "Avval daraja formulasi qo'llanadi va (3x − 7)⁶/6 hosil bo'ladi. Ichki chiziqli funksiyaning hosilasi 3 ga teng bo'lgani uchun natija yana 3 ga bo'linadi. Shunday qilib maxrajda 18 paydo bo'ladi. Javob: (3x − 7)⁶/18 + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-almashtirish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#05ae191e"
+    },
+    {
+      "q": "Ichki funksiya chiziqli bo'lgani uchun ∫cos(4x + 1) dx aniqmas integralni jadval formulasini moslab hisoblang.",
+      "v": [
+        "4 sin(4x + 1) + C",
+        "−sin(4x + 1)/4 + C",
+        "sin(4x + 1)/4 + C",
+        "sin(4x + 1) + C"
+      ],
+      "t": 2,
+      "izoh": "Jadvaldagi ∫cos u du = sin u formulasi qo'llanadi, bunda u = 4x + 1. Ichki chiziqli funksiyaning hosilasi 4 ga teng, shuning uchun natija 4 ga bo'linadi. Javob: sin(4x + 1)/4 + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-almashtirish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#e035a4f4"
+    },
+    {
+      "q": "Zarrachaning tezligi v(t) = 6e^(2t) m/s qonuni bilan o'zgaradi. Uning bosib o'tgan yo'li s(t) uchun umumiy ifodani toping.",
+      "v": [
+        "6e^(2t) + C",
+        "12e^(2t) + C",
+        "3e^(2t) + C",
+        "3t·e^(2t) + C"
+      ],
+      "t": 2,
+      "izoh": "Yo'l tezlikning boshlang'ich funksiyasi bo'ladi. Ko'rsatkich chiziqli bo'lgani uchun ∫e^(kt) dt = e^(kt)/k formulasi ishlaydi. Demak ∫6e^(2t) dt = 6e^(2t)/2 = 3e^(2t). Javob: 3e^(2t) + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-almashtirish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#18bd8a83"
+    },
+    {
+      "q": "Maxraji chiziqli funksiyadan iborat bo'lgan ∫dx/(5x + 2) aniqmas integralni hisoblang va to'g'ri natijani belgilang.",
+      "v": [
+        "5 ln|5x + 2| + C",
+        "ln|5x + 2|/5 + C",
+        "ln|5x + 2| + C",
+        "−5/(5x + 2)² + C"
+      ],
+      "t": 1,
+      "izoh": "Jadvalda ∫du/u = ln|u| + C formulasi bor. Bu yerda u = 5x + 2 va uning hosilasi 5 ga teng, shuning uchun natija 5 ga bo'linadi. Ko'paytirish emas, aynan bo'lish bajariladi. Javob: ln|5x + 2|/5 + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-almashtirish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#98bab22c"
+    },
+    {
+      "q": "Dilnoza ∫sin(2x) dx ni hisoblab −cos(2x) deb yozdi. Uning javobidagi xato nimada va to'g'ri natija qanday?",
+      "v": [
+        "Ichki hosila 2 ga bo'linmagan; −cos(2x)/2 + C",
+        "Ishorasi noto'g'ri; cos(2x)/2 + C",
+        "2 ga ko'paytirilmagan; −2cos(2x) + C",
+        "Xato yo'q; −cos(2x) + C"
+      ],
+      "t": 0,
+      "izoh": "Chiziqli almashtirishda F(kx + b)/k formulasi ishlaydi. Bu yerda k = 2 bo'lgani uchun −cos(2x) yana 2 ga bo'linishi kerak edi. To'g'ri natija −cos(2x)/2 + C bo'ladi. Javob: ichki hosila 2 ga bo'linmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-almashtirish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#58979925"
+    },
+    {
+      "q": "f(x) = 6x − 4 funksiyaning M(2; 5) nuqtadan o'tuvchi boshlang'ich funksiyasini topib, to'g'ri javobni tanlang.",
+      "v": [
+        "3x² − 4x + 5",
+        "3x² − 4x + 1",
+        "3x² − 4x − 1",
+        "6x² − 4x + 1"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich funksiyaning umumiy ko'rinishi F(x) = 3x² − 4x + C bo'ladi. M nuqtadan o'tish sharti F(2) = 5 degani, ya'ni 12 − 8 + C = 5. Bundan C = 1 kelib chiqadi. Javob: 3x² − 4x + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtadan-otuvchi",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#ab1eb766"
+    },
+    {
+      "q": "F(x) — f(x) = 4x³ + 2 ning boshlang'ich funksiyasi bo'lib, F(1) = 7 ekani ma'lum. F(x) ni toping.",
+      "v": [
+        "x⁴ + 2x + 4",
+        "x⁴ + 2x + 7",
+        "x⁴ + 2x − 4",
+        "x⁴ + 2x + 3"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich funksiyaning umumiy ko'rinishi F(x) = x⁴ + 2x + C. Shartga ko'ra F(1) = 1 + 2 + C = 7 bo'lishi kerak. Demak C = 4 va izlangan funksiya x⁴ + 2x + 4. Javob: x⁴ + 2x + 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtadan-otuvchi",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#1e03928a"
+    },
+    {
+      "q": "Avtomobilning tezligi v(t) = 4t + 3 m/s. Harakat boshida bosib o'tilgan yo'l nolga teng bo'lsa, s(4) nechaga teng?",
+      "v": [
+        "32 m",
+        "44 m",
+        "35 m",
+        "19 m"
+      ],
+      "t": 1,
+      "izoh": "Yo'l tezlikning boshlang'ich funksiyasi: s(t) = 2t² + 3t + C. Boshlang'ich shart s(0) = 0 dan C = 0 chiqadi. Demak s(4) = 2·16 + 3·4 = 32 + 12 = 44 m. Javob: 44 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtadan-otuvchi",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#823033c5"
+    },
+    {
+      "q": "Suv idishga v(t) = 3t² + 2 litr/min tezlik bilan quyilmoqda. Idishda boshida 10 litr suv bor edi, 3 minutdan keyin qancha bo'ladi?",
+      "v": [
+        "33 litr",
+        "29 litr",
+        "43 litr",
+        "39 litr"
+      ],
+      "t": 2,
+      "izoh": "Hajm quyilish tezligining boshlang'ich funksiyasi: V(t) = t³ + 2t + C. Boshlang'ich hajm V(0) = 10 bo'lgani uchun C = 10. Demak V(3) = 27 + 6 + 10 = 43 litr. Javob: 43 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtadan-otuvchi",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#618ed547"
+    },
+    {
+      "q": "f(x) = cos x funksiyaning boshlang'ich funksiyasi (π/2; 3) nuqtadan o'tadi. Shu boshlang'ich funksiyani toping.",
+      "v": [
+        "sin x + 3",
+        "−sin x + 2",
+        "cos x + 2",
+        "sin x + 2"
+      ],
+      "t": 3,
+      "izoh": "Kosinusning boshlang'ich funksiyasi sin x + C ko'rinishida. Nuqtadan o'tish sharti F(π/2) = 3 degani, ya'ni sin(π/2) + C = 1 + C = 3. Bundan C = 2 chiqadi. Javob: sin x + 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtadan-otuvchi",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#0279bfa4"
+    },
+    {
+      "q": "Aniqmas integral natijasi bitta funksiya emas, balki butun funksiyalar oilasi ekanligi qaysi xossadan kelib chiqadi?",
+      "v": [
+        "O'zgarmasning hosilasi nolga teng bo'lgani uchun",
+        "Integral belgisi ostida dx yozilgani uchun",
+        "Hosila har doim bittadan ortiq bo'lgani uchun",
+        "Boshlang'ich funksiya faqat musbat sohada mavjud bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Agar F(x) boshlang'ich funksiya bo'lsa, (F(x) + C)' = F'(x) + 0 = f(x) tenglik saqlanadi. Ya'ni har qanday o'zgarmas qo'shilganda ham hosila o'zgarmaydi. Shuning uchun boshlang'ich funksiyalar cheksiz ko'p bo'ladi. Javob: o'zgarmasning hosilasi nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-korinish-C",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#6d60b93f"
+    },
+    {
+      "q": "f(x) = 2x funksiyaning ikki xil boshlang'ich funksiyasi F₁(x) va F₂(x) berilgan. Ularning ayirmasi haqida nima deyish mumkin?",
+      "v": [
+        "U 2x ga teng",
+        "U o'zgarmas songa teng",
+        "U har doim nolga teng",
+        "U ham x² ko'rinishida bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Ikkala funksiyaning hosilasi ham 2x ga teng bo'ladi. Ayirmaning hosilasi 2x − 2x = 0 chiqadi, hosilasi nolga teng funksiya esa o'zgarmasdir. Demak F₁(x) − F₂(x) = C. Javob: u o'zgarmas songa teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-korinish-C",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#b1d9d654"
+    },
+    {
+      "q": "F(x) = x³ + C ko'rinishidagi boshlang'ich funksiyalar oilasidan grafigi A(1; 5) nuqtadan o'tuvchisini toping.",
+      "v": [
+        "x³ + 5",
+        "x³ − 4",
+        "x³ + 4",
+        "3x² + 4"
+      ],
+      "t": 2,
+      "izoh": "Grafik A nuqtadan o'tishi F(1) = 5 degani. Demak 1 + C = 5 tenglikdan C = 4 topiladi. Izlangan funksiya x³ + 4 bo'ladi. Javob: x³ + 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-korinish-C",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#6e772ecb"
+    },
+    {
+      "q": "f(x) = 3x² funksiyaning turli boshlang'ich funksiyalariga mos grafiklar koordinata tekisligida bir-biridan qanday farq qiladi?",
+      "v": [
+        "Ox o'qi bo'ylab siljigan bo'ladi",
+        "Shakli butunlay boshqacha bo'ladi",
+        "Ular bir nuqtada kesishadi",
+        "Oy o'qi bo'ylab parallel siljigan bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Barcha boshlang'ich funksiyalar x³ + C ko'rinishida bo'ladi. C ning o'zgarishi grafikni yuqoriga yoki pastga, ya'ni Oy o'qi bo'ylab siljitadi. Grafiklar bir xil shaklda qoladi va o'zaro kesishmaydi. Javob: Oy o'qi bo'ylab parallel siljigan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-korinish-C",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#ffdc5770"
+    },
+    {
+      "q": "∫x·cos x dx integralini bo'laklab integrallash uchun u va dv ko'paytuvchilari qanday qilib to'g'ri tanlanadi?",
+      "v": [
+        "u = x, dv = cos x dx",
+        "u = cos x, dv = x dx",
+        "u = x·cos x, dv = dx",
+        "u = 1, dv = x·cos x dx"
+      ],
+      "t": 0,
+      "izoh": "Bo'laklab integrallashda u sifatida hosila olinganda soddalashadigan ko'paytuvchi tanlanadi. x ning hosilasi 1 ga teng, kosinus esa oson integrallanadi. Shuning uchun u = x va dv = cos x dx olinadi. Javob: u = x, dv = cos x dx.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolaklab-udv-tanlash",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#d0586e3e"
+    },
+    {
+      "q": "∫x·ln x dx integralida u = ln x deb olinadi. Bunday tanlovning asosiy sababi nimada ekanini ko'rsating.",
+      "v": [
+        "ln x ni integrallash osonroq bo'ladi",
+        "ln x ning hosilasi ratsional ifodaga aylanadi",
+        "x ning hosilasi nolga teng",
+        "Formulada birinchi ko'paytuvchi doim u bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Logarifmning boshlang'ich funksiyasini bilmasak ham, uning hosilasi (ln x)' = 1/x oddiy ratsional ifoda beradi. Shu sababli u = ln x va dv = x dx olinadi, natijada yangi integral soddalashadi. Javob: ln x ning hosilasi ratsional ifodaga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolaklab-udv-tanlash",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#0e81364a"
+    },
+    {
+      "q": "Bo'laklab integrallash formulasi ∫u dv = uv − ∫v du da v ko'paytuvchi qanday topiladi?",
+      "v": [
+        "dv ifodaning hosilasini olish orqali",
+        "u ni integrallash orqali",
+        "dv ifodani integrallash orqali",
+        "u ni differensiallash orqali"
+      ],
+      "t": 2,
+      "izoh": "Formulada u differensiallanadi, ya'ni du = u' dx topiladi. dv esa integrallanadi va shu yo'l bilan v hosil bo'ladi. v ni topishda o'zgarmas odatda nol deb olinadi. Javob: dv ifodani integrallash orqali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolaklab-udv-tanlash",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#36c98c19"
+    },
+    {
+      "q": "Quyidagi to'rtta aniqmas integraldan qaysi birini bo'laklab integrallashsiz, faqat oddiy jadval formulalari yordamida hisoblash mumkin?",
+      "v": [
+        "∫x·e^x dx",
+        "∫(x + e^x) dx",
+        "∫x·sin x dx",
+        "∫ln x dx"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi integrali hadlarga ajraladi: ∫(x + e^x) dx = x²/2 + e^x + C. Qolgan uchtasida ko'paytma yoki logarifm turibdi va ular jadvalda uchramaydi. Shuning uchun ularga bo'laklab integrallash qo'llanadi. Javob: ∫(x + e^x) dx.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolaklab-udv-tanlash",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#97f2b081"
+    },
+    {
+      "q": "Bo'laklab integrallash formulasidan foydalanib ∫x·e^x dx aniqmas integralni hisoblang va to'g'ri natijani tanlang.",
+      "v": [
+        "x·e^x − e^x + C",
+        "x·e^x + e^x + C",
+        "x²·e^x/2 + C",
+        "e^x − x·e^x + C"
+      ],
+      "t": 0,
+      "izoh": "u = x va dv = e^x dx deb olamiz, u holda du = dx va v = e^x bo'ladi. Formulaga qo'yamiz: ∫x·e^x dx = x·e^x − ∫e^x dx. Qolgan integral e^x beradi. Javob: x·e^x − e^x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolaklab-x-eks",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#8bcb6852"
+    },
+    {
+      "q": "Ko'rsatkichda chiziqli ifoda turgan ∫x·e^(2x) dx aniqmas integralni bo'laklab integrallash bilan hisoblang.",
+      "v": [
+        "x·e^(2x)/2 − e^(2x)/2 + C",
+        "x·e^(2x)/2 − e^(2x)/4 + C",
+        "x·e^(2x) − e^(2x)/2 + C",
+        "x·e^(2x)/2 + e^(2x)/4 + C"
+      ],
+      "t": 1,
+      "izoh": "u = x va dv = e^(2x) dx olsak, v = e^(2x)/2 bo'ladi. Formulaga ko'ra natija x·e^(2x)/2 − ∫e^(2x)/2 dx ko'rinishini oladi. Qolgan integral e^(2x)/4 ga teng. Javob: x·e^(2x)/2 − e^(2x)/4 + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolaklab-x-eks",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#2e51bfbe"
+    },
+    {
+      "q": "Qavs ichida chiziqli ifoda turgan ∫(x + 3)e^x dx aniqmas integralni bo'laklab integrallash bilan hisoblang.",
+      "v": [
+        "(x + 3)e^x + C",
+        "(x + 4)e^x + C",
+        "(x + 2)e^x + C",
+        "(x²/2 + 3x)·e^x + C"
+      ],
+      "t": 2,
+      "izoh": "u = x + 3 va dv = e^x dx deb olamiz, u holda du = dx va v = e^x. Natija (x + 3)e^x − ∫e^x dx = (x + 3)e^x − e^x bo'ladi. Umumiy ko'paytuvchini qavsga kiritsak (x + 2)e^x hosil bo'ladi. Javob: (x + 2)e^x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolaklab-x-eks",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#481152de"
+    },
+    {
+      "q": "Bir loyihada xarajatning o'sish tezligi X'(t) = t·e^t mln so'm/oy. X(0) = 0 bo'lsa, X(t) funksiyani toping.",
+      "v": [
+        "(t − 1)e^t",
+        "(t + 1)e^t − 1",
+        "t·e^t + 1",
+        "(t − 1)e^t + 1"
+      ],
+      "t": 3,
+      "izoh": "Bo'laklab integrallaymiz: ∫t·e^t dt = t·e^t − e^t + C, ya'ni (t − 1)e^t + C. Boshlang'ich shart X(0) = 0 dan −1 + C = 0 chiqadi. Demak C = 1 va X(t) = (t − 1)e^t + 1. Javob: (t − 1)e^t + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolaklab-x-eks",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#b0a2ded4"
+    },
+    {
+      "q": "∫x²·e^x dx aniqmas integralni hisoblashda bo'laklab integrallash necha marta qo'llanadi va yakuniy natija qanday?",
+      "v": [
+        "Ikki marta; (x² − 2x + 2)e^x + C",
+        "Bir marta; (x² − 2x)e^x + C",
+        "Ikki marta; (x² + 2x + 2)e^x + C",
+        "Uch marta; (x² − 2x + 2)e^x + C"
+      ],
+      "t": 0,
+      "izoh": "Birinchi qadamda u = x² va dv = e^x dx olinadi, natijada x²e^x − 2∫x·e^x dx chiqadi. Qolgan integral yana bo'laklab hisoblanadi va x·e^x − e^x beradi. Hammasini jamlasak (x² − 2x + 2)e^x hosil bo'ladi. Javob: ikki marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolaklab-x-eks",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#1b8aaa66"
+    },
+    {
+      "q": "∫x·sin x dx aniqmas integralni bo'laklab integrallash bilan hisoblang va to'g'ri natijani tanlang.",
+      "v": [
+        "−x·cos x + sin x + C",
+        "x·cos x − sin x + C",
+        "−x·cos x − sin x + C",
+        "−x²·cos x/2 + C"
+      ],
+      "t": 0,
+      "izoh": "u = x va dv = sin x dx bo'lsa, du = dx va v = −cos x bo'ladi. Formula bo'yicha ∫x·sin x dx = −x·cos x + ∫cos x dx. Qolgan integral sin x beradi. Javob: −x·cos x + sin x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolaklab-x-trig",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#ffeb2bdb"
+    },
+    {
+      "q": "Ko'paytma ko'rinishidagi ∫x·cos x dx aniqmas integralni bo'laklab integrallash formulasi bilan hisoblang.",
+      "v": [
+        "x·sin x − cos x + C",
+        "x·sin x + cos x + C",
+        "−x·sin x + cos x + C",
+        "x²·sin x/2 + C"
+      ],
+      "t": 1,
+      "izoh": "u = x va dv = cos x dx tanlanadi, shunda v = sin x bo'ladi. Formula bo'yicha ∫x·cos x dx = x·sin x − ∫sin x dx. Sinusning integrali −cos x bo'lgani uchun ikki minus qo'shishga aylanadi. Javob: x·sin x + cos x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolaklab-x-trig",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#514425b6"
+    },
+    {
+      "q": "Ichki argumenti chiziqli bo'lgan ∫x·sin(2x) dx aniqmas integralni bo'laklab integrallash bilan hisoblang.",
+      "v": [
+        "−x·cos(2x)/2 + sin(2x)/2 + C",
+        "−x·cos(2x) + sin(2x)/2 + C",
+        "−x·cos(2x)/2 + sin(2x)/4 + C",
+        "x·cos(2x)/2 − sin(2x)/4 + C"
+      ],
+      "t": 2,
+      "izoh": "u = x va dv = sin(2x) dx olamiz, bunda v = −cos(2x)/2 bo'ladi. Formulaga qo'ysak −x·cos(2x)/2 + ∫cos(2x)/2 dx hosil bo'ladi. Oxirgi integral sin(2x)/4 ga teng. Javob: −x·cos(2x)/2 + sin(2x)/4 + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolaklab-x-trig",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#6f547ef5"
+    },
+    {
+      "q": "Prujinali mexanizmda kuch f(t) = t·cos t N qonuniyati bo'yicha o'zgaradi. Kuch impulsining umumiy ifodasini toping.",
+      "v": [
+        "t·sin t − cos t + C",
+        "t·sin t + cos t + C",
+        "t²·cos t/2 + C",
+        "−t·sin t − cos t + C"
+      ],
+      "t": 1,
+      "izoh": "Impuls f(t) kuchning boshlang'ich funksiyasi sifatida topiladi. u = t va dv = cos t dt deb olamiz, u holda v = sin t. Natija t·sin t − ∫sin t dt = t·sin t + cos t bo'ladi. Javob: t·sin t + cos t + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolaklab-x-trig",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#97eec2d9"
+    },
+    {
+      "q": "Dilshod ∫x·sin x dx ni hisoblab x·cos x + sin x deb yozdi. Uning xatosi qaysi qadamda yuz bergan?",
+      "v": [
+        "u = x deb noto'g'ri tanlangan",
+        "∫cos x dx = −sin x deb olingan",
+        "Formulada uv o'rniga u/v yozilgan",
+        "v = ∫sin x dx = −cos x ekani hisobga olinmagan"
+      ],
+      "t": 3,
+      "izoh": "dv = sin x dx dan v = −cos x kelib chiqadi, chunki sinusning boshlang'ich funksiyasi minus kosinusdir. Shuning uchun birinchi had −x·cos x bo'lishi kerak edi. To'g'ri natija −x·cos x + sin x + C. Javob: v = −cos x ekani hisobga olinmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolaklab-x-trig",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#0a1d2a7b"
+    },
+    {
+      "q": "∫ln x dx aniqmas integralni hisoblash uchun dv = dx deb olinadi. Natija qanday bo'ladi?",
+      "v": [
+        "x·ln x − x + C",
+        "x·ln x + x + C",
+        "1/x + C",
+        "x·ln x − 1 + C"
+      ],
+      "t": 0,
+      "izoh": "u = ln x va dv = dx deb olamiz: du = dx/x, v = x bo'ladi. Formula bo'yicha ∫ln x dx = x·ln x − ∫x·(1/x) dx = x·ln x − ∫dx. Oxirgi integral x beradi. Javob: x·ln x − x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolaklab-lnx",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#a7144139"
+    },
+    {
+      "q": "Logarifm va daraja ko'paytmasidan iborat ∫x·ln x dx aniqmas integralni bo'laklab integrallash bilan hisoblang.",
+      "v": [
+        "x²·ln x/2 − x²/2 + C",
+        "x²·ln x/2 − x²/4 + C",
+        "x²·ln x/2 + x²/4 + C",
+        "x²·ln x/2 − x/2 + C"
+      ],
+      "t": 1,
+      "izoh": "u = ln x va dv = x dx bo'lsa, du = dx/x va v = x²/2 bo'ladi. Formula x²·ln x/2 − ∫(x²/2)·(1/x) dx ko'rinishini beradi. Qolgan integral ∫x dx/2 = x²/4 ga teng. Javob: x²·ln x/2 − x²/4 + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolaklab-lnx",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#c1a08886"
+    },
+    {
+      "q": "Logarifm argumenti chiziqli bo'lgan ∫ln(3x) dx aniqmas integralni bo'laklab integrallash yordamida hisoblang.",
+      "v": [
+        "x·ln(3x) − 3x + C",
+        "x·ln(3x) + x + C",
+        "x·ln(3x) − x + C",
+        "3x·ln(3x) − x + C"
+      ],
+      "t": 2,
+      "izoh": "u = ln(3x) va dv = dx olamiz. Murakkab funksiya hosilasi bo'yicha du = dx/x, integrallashdan esa v = x chiqadi. Formula x·ln(3x) − ∫x·(1/x) dx = x·ln(3x) − x beradi. Javob: x·ln(3x) − x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolaklab-lnx",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#f4d4ee8d"
+    },
+    {
+      "q": "Bir korxonada mehnat unumdorligining o'sishi P'(t) = ln t qonuniga bo'ysunadi va P(1) = 0 ekani ma'lum. P(t) ni toping.",
+      "v": [
+        "t·ln t − t",
+        "t·ln t + t − 1",
+        "t·ln t − t + 1",
+        "t·ln t − 1"
+      ],
+      "t": 2,
+      "izoh": "Avval umumiy ko'rinishni topamiz: ∫ln t dt = t·ln t − t + C. Shartga ko'ra P(1) = 0 − 1 + C = 0 bo'lishi kerak, chunki ln 1 = 0. Bundan C = 1 chiqadi. Javob: t·ln t − t + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolaklab-lnx",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#4a3a2666"
+    },
+    {
+      "q": "∫ln x dx integralida u = 1 va dv = ln x dx deb tanlash mumkin emas. Buning sababi nimada?",
+      "v": [
+        "Chunki ln x ning boshlang'ich funksiyasi hali noma'lum",
+        "Chunki birning hosilasi mavjud emas",
+        "Chunki ln x manfiy qiymat qabul qiladi",
+        "Chunki formulada u har doim ikkinchi ko'paytuvchi bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "v ni topish uchun dv ni integrallash kerak, ya'ni aynan ∫ln x dx ni bilish talab qilinadi. Bu esa izlanayotgan integralning o'zi, shuning uchun bunday tanlov aylanaga olib keladi. Javob: ln x ning boshlang'ich funksiyasi hali noma'lum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolaklab-lnx",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#5ac94094"
+    },
+    {
+      "q": "Bo'laklab integrallash formulasi qaysi differensiallash qoidasidan kelib chiqadi?",
+      "v": [
+        "Murakkab funksiya hosilasi qoidasidan",
+        "Ko'paytmaning hosilasi qoidasidan",
+        "Nisbatning hosilasi qoidasidan",
+        "Yig'indining hosilasi qoidasidan"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma hosilasi (uv)' = u'v + uv' tenglikni integrallasak, uv = ∫u'v dx + ∫uv' dx hosil bo'ladi. Uni qayta guruhlash orqali ∫u dv = uv − ∫v du kelib chiqadi. Javob: ko'paytmaning hosilasi qoidasidan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolaklab-formula-asosi",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#e609c7ca"
+    },
+    {
+      "q": "∫u dv = uv − ∫v du formulada u = x² va dv = sin x dx deb olindi. Bunda du va v nimaga teng bo'ladi?",
+      "v": [
+        "du = 2x dx, v = −cos x",
+        "du = 2x dx, v = cos x",
+        "du = x³/3 dx, v = −cos x",
+        "du = 2x dx, v = sin x"
+      ],
+      "t": 0,
+      "izoh": "u ni differensiallaymiz: x² ning hosilasi 2x, demak du = 2x dx. dv ni esa integrallaymiz: ∫sin x dx = −cos x, shuning uchun v = −cos x. Sinusning integralidagi minus ishorasi tushib qolmasligi kerak. Javob: du = 2x dx, v = −cos x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolaklab-formula-asosi",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#8aba2c24"
+    },
+    {
+      "q": "Bo'laklab integrallashda ∫v du integral ∫u dv dan soddaroq bo'lishi kerak. Bu talab nima uchun qo'yiladi?",
+      "v": [
+        "Aks holda o'zgarmas C yo'qoladi",
+        "Aks holda formulaning ishoralari almashadi",
+        "Aks holda v ni umuman topib bo'lmaydi",
+        "Aks holda yangi integral eskisidan murakkabroq chiqadi va usul foyda bermaydi"
+      ],
+      "t": 3,
+      "izoh": "Usulning maqsadi murakkab integralni soddaroq integralga almashtirishdir. Agar u va dv noto'g'ri tanlansa, ∫v du yanada og'irlashadi. Masalan ∫x·cos x dx da u = cos x olinsa, x²/2 paydo bo'lib masala murakkablashadi. Javob: yangi integral eskisidan murakkabroq chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolaklab-formula-asosi",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#5d743e13"
+    },
+    {
+      "q": "∫x²·sin x dx aniqmas integralni hisoblash uchun bo'laklab integrallash ikki marta qo'llanadi. Yakuniy natijani tanlang.",
+      "v": [
+        "−x²·cos x + 2x·sin x − 2cos x + C",
+        "x²·cos x − 2x·sin x + 2cos x + C",
+        "−x²·cos x + 2x·sin x + 2cos x + C",
+        "−x²·cos x + 2x·sin x + C"
+      ],
+      "t": 2,
+      "izoh": "Birinchi qadamda u = x² va dv = sin x dx dan −x²·cos x + 2∫x·cos x dx hosil bo'ladi. Ikkinchi qadamda ∫x·cos x dx = x·sin x + cos x topiladi. Ularni jamlaymiz. Javob: −x²·cos x + 2x·sin x + 2cos x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolaklab-ikki-marta",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#9c133d08"
+    },
+    {
+      "q": "∫x²·cos x dx integralni bo'laklab ikki marta hisoblang va to'g'ri natijani belgilang.",
+      "v": [
+        "x²·sin x − 2x·cos x + 2sin x + C",
+        "x²·sin x + 2x·cos x + 2sin x + C",
+        "x²·sin x − 2x·cos x − 2sin x + C",
+        "x²·sin x + 2x·cos x − 2sin x + C"
+      ],
+      "t": 3,
+      "izoh": "u = x² va dv = cos x dx dan x²·sin x − 2∫x·sin x dx hosil bo'ladi. Ichki integral ∫x·sin x dx = −x·cos x + sin x ga teng. Uni −2 ga ko'paytirib qo'shsak natija chiqadi. Javob: x²·sin x + 2x·cos x − 2sin x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolaklab-ikki-marta",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#f28075c7"
+    },
+    {
+      "q": "Ikki marta bo'laklab integrallashni talab qiladigan ∫(x² + 3x)·e^x dx aniqmas integralni hisoblang.",
+      "v": [
+        "(x² + x + 1)e^x + C",
+        "(x² + 3x − 1)e^x + C",
+        "(x² − x − 1)e^x + C",
+        "(x² + x − 1)e^x + C"
+      ],
+      "t": 3,
+      "izoh": "u = x² + 3x va dv = e^x dx bo'lsa, natija (x² + 3x)e^x − ∫(2x + 3)e^x dx ko'rinishini oladi. Ikkinchi bo'laklab integrallashdan ∫(2x + 3)e^x dx = (2x + 1)e^x chiqadi. Ayirsak (x² + x − 1)e^x qoladi. Javob: (x² + x − 1)e^x + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolaklab-ikki-marta",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#9bb98084"
+    },
+    {
+      "q": "Manfiy ko'rsatkichli ∫x²·e^(−x) dx aniqmas integralni bo'laklab ikki marta hisoblang va natijani belgilang.",
+      "v": [
+        "−(x² + 2x + 2)e^(−x) + C",
+        "−(x² − 2x + 2)e^(−x) + C",
+        "(x² + 2x + 2)e^(−x) + C",
+        "−(x² + 2x)e^(−x) + C"
+      ],
+      "t": 0,
+      "izoh": "u = x² va dv = e^(−x) dx dan v = −e^(−x) topiladi va −x²e^(−x) + 2∫x·e^(−x) dx hosil bo'ladi. Ichki integral yana bo'laklab hisoblanadi va −x·e^(−x) − e^(−x) beradi. Hammasini birlashtirsak −(x² + 2x + 2)e^(−x) chiqadi. Javob: −(x² + 2x + 2)e^(−x) + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolaklab-ikki-marta",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#a8b5f578"
+    },
+    {
+      "q": "Toshkentdan chiqqan avtobusning tezligi v(t) = 12t + 20 km/soat qonuni bilan ortadi. Dastlabki 3 soatda u qancha yo'l bosadi?",
+      "v": [
+        "60 km",
+        "56 km",
+        "114 km",
+        "168 km"
+      ],
+      "t": 2,
+      "izoh": "Yo'l tezlikning boshlang'ich funksiyasi: s(t) = 6t² + 20t + C. Harakat boshida s(0) = 0 bo'lgani uchun C = 0. Demak s(3) = 6·9 + 20·3 = 54 + 60 = 114 km. Javob: 114 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlik-yol",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#44e89fdb"
+    },
+    {
+      "q": "Dron v(t) = 3t² m/s qonuni bo'yicha tezlashmoqda. Uchishning dastlabki 4 sekundida u necha metr yo'l bosadi?",
+      "v": [
+        "48 m",
+        "192 m",
+        "64 m",
+        "32 m"
+      ],
+      "t": 2,
+      "izoh": "Yo'l tezlikning boshlang'ich funksiyasi: s(t) = ∫3t² dt = t³ + C. Uchish boshida s(0) = 0, demak C = 0. Shundan s(4) = 4³ = 64 m kelib chiqadi. Javob: 64 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlik-yol",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#548b2c69"
+    },
+    {
+      "q": "Poyezdning tezligi v(t) = 60 − 4t km/soat qonuni bo'yicha kamaymoqda. 5 soat ichida u qancha masofa bosadi?",
+      "v": [
+        "300 km",
+        "250 km",
+        "200 km",
+        "40 km"
+      ],
+      "t": 1,
+      "izoh": "Masofa tezlikning boshlang'ich funksiyasi: s(t) = 60t − 2t² + C, boshida s(0) = 0 va C = 0. Demak s(5) = 300 − 2·25 = 300 − 50 = 250 km. Javob: 250 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-yol",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#ddc3ca82"
+    },
+    {
+      "q": "Jismning tezligi v(t) = 2 cos t m/s. Uning boshlang'ich koordinatasi 5 m bo'lsa, koordinata funksiyasi x(t) qanday bo'ladi?",
+      "v": [
+        "2 sin t + 2",
+        "−2 sin t + 5",
+        "2 cos t + 5",
+        "2 sin t + 5"
+      ],
+      "t": 3,
+      "izoh": "Koordinata tezlikning boshlang'ich funksiyasi: x(t) = 2 sin t + C. Boshlang'ich shart x(0) = 5 bo'lib, sin 0 = 0 ekanini hisobga olamiz. Demak C = 5 va x(t) = 2 sin t + 5. Javob: 2 sin t + 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlik-yol",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#3467e5c2"
+    },
+    {
+      "q": "Ikki avtomobil bir vaqtda yo'lga chiqdi: birinchisining tezligi v₁(t) = 4t m/s, ikkinchisiniki v₂(t) = 20 m/s. 4 sekunddan keyin ular orasidagi masofa qancha?",
+      "v": [
+        "80 m",
+        "112 m",
+        "32 m",
+        "48 m"
+      ],
+      "t": 3,
+      "izoh": "Har birining yo'li o'z tezligining boshlang'ich funksiyasi: s₁(t) = 2t² va s₂(t) = 20t. t = 4 da s₁ = 2·16 = 32 m, s₂ = 20·4 = 80 m bo'ladi. Oradagi masofa 80 − 32 = 48 m. Javob: 48 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlik-yol",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#40625cab"
+    },
+    {
+      "q": "Jismning tezlanishi a(t) = 6t m/s². Boshlang'ich tezligi 4 m/s bo'lsa, tezlik funksiyasi v(t) ni toping.",
+      "v": [
+        "6t² + 4",
+        "3t² + 4",
+        "3t²",
+        "3t + 4"
+      ],
+      "t": 1,
+      "izoh": "Tezlik tezlanishning boshlang'ich funksiyasi: v(t) = 3t² + C. Boshlang'ich shart v(0) = 4 bo'lgani uchun C = 4 chiqadi. Demak v(t) = 3t² + 4. Javob: 3t² + 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlanish-tezlik",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#0fd4c7c7"
+    },
+    {
+      "q": "Erkin tushayotgan jism uchun tezlanish 10 m/s² deb olinadi. Boshlang'ich tezligi nolga teng bo'lsa, 6 sekunddan keyingi tezlik qancha?",
+      "v": [
+        "30 m/s",
+        "180 m/s",
+        "10 m/s",
+        "60 m/s"
+      ],
+      "t": 3,
+      "izoh": "Tezlik tezlanishning boshlang'ich funksiyasi: v(t) = ∫10 dt = 10t + C. Boshlang'ich tezlik nol bo'lgani uchun C = 0. Demak v(6) = 10·6 = 60 m/s. Javob: 60 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlanish-tezlik",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#a6c846f9"
+    },
+    {
+      "q": "Avtomobil tormozlanayotganda uning tezlanishi a(t) = −6t m/s². Boshlang'ich tezligi 27 m/s bo'lsa, tezlik qachon nolga aylanadi?",
+      "v": [
+        "9 s",
+        "4,5 s",
+        "3 s",
+        "27 s"
+      ],
+      "t": 2,
+      "izoh": "Tezlik funksiyasi v(t) = ∫(−6t) dt = −3t² + C ko'rinishida. Boshlang'ich shart v(0) = 27 dan C = 27 chiqadi. −3t² + 27 = 0 tenglikdan t² = 9, ya'ni t = 3 s. Javob: 3 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlanish-tezlik",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#589b7402"
+    },
+    {
+      "q": "Raketaning tezlanishi a(t) = 4 + 3t² m/s² qonuni bilan o'zgaradi. v(0) = 2 m/s bo'lsa, v(2) nechaga teng?",
+      "v": [
+        "16 m/s",
+        "34 m/s",
+        "10 m/s",
+        "18 m/s"
+      ],
+      "t": 3,
+      "izoh": "Tezlik tezlanishning boshlang'ich funksiyasi: v(t) = 4t + t³ + C. Shartdan v(0) = 2, demak C = 2 bo'ladi. Endi v(2) = 8 + 8 + 2 = 18 m/s. Javob: 18 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-tezlik",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#032f28d1"
+    },
+    {
+      "q": "Sexda q dona buyum tayyorlashning chegaraviy xarajati X'(q) = 3q² + 40 ming so'm. Doimiy xarajat 500 ming so'm bo'lsa, X(q) ni toping.",
+      "v": [
+        "q³ + 40q + 500",
+        "3q³ + 40q + 500",
+        "q³ + 40q",
+        "6q + 500"
+      ],
+      "t": 0,
+      "izoh": "Umumiy xarajat chegaraviy xarajatning boshlang'ich funksiyasi: X(q) = q³ + 40q + C. Doimiy xarajat q = 0 dagi qiymat, ya'ni X(0) = C = 500. Javob: q³ + 40q + 500.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegaraviy-xarajat",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#0a1f75a9"
+    },
+    {
+      "q": "Chegaraviy daromad D'(q) = 200 − 4q ming so'mga teng va nol mahsulotda daromad nolga teng. 20 dona sotilganda daromad qancha bo'ladi?",
+      "v": [
+        "4000 ming so'm",
+        "3200 ming so'm",
+        "2400 ming so'm",
+        "120 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Daromad chegaraviy daromadning boshlang'ich funksiyasi: D(q) = 200q − 2q² + C. D(0) = 0 shartidan C = 0 chiqadi. Demak D(20) = 4000 − 2·400 = 4000 − 800 = 3200 ming so'm. Javob: 3200 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegaraviy-xarajat",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#414409b5"
+    },
+    {
+      "q": "Fermer xo'jaligida o'g'it sarfining o'sish tezligi m'(x) = 5√x kg/gektar. m(0) = 0 bo'lsa, 9 gektarda qancha o'g'it sarflanadi?",
+      "v": [
+        "135 kg",
+        "15 kg",
+        "45 kg",
+        "90 kg"
+      ],
+      "t": 3,
+      "izoh": "Sarf funksiyasi m(x) = ∫5√x dx = 5·(2/3)·x^(3/2) + C ko'rinishida. Shartdan C = 0 chiqadi. x = 9 bo'lganda x^(3/2) = 27, demak m(9) = 10·27/3 = 90 kg. Javob: 90 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegaraviy-xarajat",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#bf726aad"
+    },
+    {
+      "q": "Do'kon egasi Kamola reklamaga a mln so'm sarflaganda savdo o'sish tezligini S'(a) = 60/a deb baholadi. a = 1 da S nolga teng bo'lsa, S(a) qanday?",
+      "v": [
+        "ln(60a)",
+        "60 ln a",
+        "60 ln a + 60",
+        "60a"
+      ],
+      "t": 1,
+      "izoh": "Reklama mablag'i musbat bo'lgani uchun S(a) = ∫60 da/a = 60 ln a + C deb yozamiz. Shartga ko'ra S(1) = 60·0 + C = 0, chunki ln 1 = 0. Demak C = 0 va S(a) = 60 ln a. Javob: 60 ln a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegaraviy-xarajat",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#a68c2ca8"
+    },
+    {
+      "q": "Chegaraviy xarajat X'(q) = 2q + 30 ming so'm va X(10) = 700 ming so'm ekani ma'lum. Doimiy xarajat qanchaga teng?",
+      "v": [
+        "300 ming so'm",
+        "400 ming so'm",
+        "600 ming so'm",
+        "700 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "Umumiy xarajat X(q) = q² + 30q + C ko'rinishida bo'ladi. Shartdan X(10) = 100 + 300 + C = 700 tenglik chiqadi. Bundan C = 300 ming so'm. Doimiy xarajat aynan C ga teng. Javob: 300 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegaraviy-xarajat",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#8883734f"
+    },
+    {
+      "q": "Rezervuarga suv q(t) = 8t + 5 litr/minut tezlik bilan quyilmoqda. Dastlabki 6 minutda unda necha litr suv to'planadi?",
+      "v": [
+        "144 litr",
+        "318 litr",
+        "174 litr",
+        "53 litr"
+      ],
+      "t": 2,
+      "izoh": "To'plangan hajm quyilish tezligining boshlang'ich funksiyasi: V(t) = 4t² + 5t + C. Boshida rezervuar bo'sh, ya'ni V(0) = 0 va C = 0. Demak V(6) = 4·36 + 30 = 144 + 30 = 174 litr. Javob: 174 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqim-hajm",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#11215d4a"
+    },
+    {
+      "q": "Suv havzasidan suv q(t) = 30 − 2t m³/soat tezlik bilan chiqarilmoqda. 10 soat ichida jami qancha suv chiqariladi?",
+      "v": [
+        "300 m³",
+        "100 m³",
+        "200 m³",
+        "10 m³"
+      ],
+      "t": 2,
+      "izoh": "Chiqarilgan hajm oqim tezligining boshlang'ich funksiyasi: V(t) = 30t − t² + C. Hisob boshida V(0) = 0 bo'lgani uchun C = 0. Demak V(10) = 300 − 100 = 200 m³. Javob: 200 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqim-hajm",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#edca70ba"
+    },
+    {
+      "q": "Sug'orish kanalidan suv sarfi q(t) = 6√t m³/soat. Boshlang'ich hajm nolga teng bo'lsa, 4 soatdan keyingi hajm qancha?",
+      "v": [
+        "48 m³",
+        "12 m³",
+        "32 m³",
+        "24 m³"
+      ],
+      "t": 2,
+      "izoh": "Hajm sarf tezligining boshlang'ich funksiyasi: V(t) = ∫6√t dt = 6·(2/3)·t^(3/2) = 4t^(3/2). Boshlang'ich hajm nolga teng, demak C = 0. t = 4 da t^(3/2) = 8 va V = 32 m³. Javob: 32 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oqim-hajm",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#38176429"
+    },
+    {
+      "q": "Idishga suyuqlik q(t) = 5 cos t litr/minut tezlik bilan 0 ≤ t ≤ π/2 oraliqda quyilmoqda. Idishda boshida 20 litr suyuqlik bor edi, shu oraliqda V(t) ni toping.",
+      "v": [
+        "5 sin t + 20",
+        "−5 sin t + 20",
+        "5 cos t + 20",
+        "5 sin t + 5"
+      ],
+      "t": 0,
+      "izoh": "Hajm quyilish tezligining boshlang'ich funksiyasi: V(t) = 5 sin t + C. Berilgan oraliqda cos t ≥ 0, ya'ni suyuqlik to'xtovsiz quyiladi. Boshlang'ich shart V(0) = 20 va sin 0 = 0 ekanini hisobga olamiz. Demak C = 20 bo'ladi. Javob: 5 sin t + 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqim-hajm",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#e331ba0a"
+    },
+    {
+      "q": "Bir tumanda aholi sonining o'sish tezligi N'(t) = 300 + 40t kishi/yil. Hozir aholi 25 000 kishi, besh yildan keyin qancha bo'ladi?",
+      "v": [
+        "26 500 kishi",
+        "27 500 kishi",
+        "27 000 kishi",
+        "25 500 kishi"
+      ],
+      "t": 2,
+      "izoh": "Aholi soni o'sish tezligining boshlang'ich funksiyasi: N(t) = 300t + 20t² + C. Hozirgi holat t = 0 da N = 25 000, demak C = 25 000. Besh yildan keyin N(5) = 1500 + 500 + 25 000 = 27 000 kishi. Javob: 27 000 kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aholi-osish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#d147497b"
+    },
+    {
+      "q": "Shaharda avtomobillar sonining o'sish tezligi A'(t) = 5t² − 20t + 60 dona/oy. A(0) = 800 bo'lsa, A(3) nechaga teng?",
+      "v": [
+        "1025 dona",
+        "845 dona",
+        "935 dona",
+        "135 dona"
+      ],
+      "t": 2,
+      "izoh": "Avtomobillar soni o'sish tezligining boshlang'ich funksiyasi: A(t) = 5t³/3 − 10t² + 60t + C. Shartdan A(0) = C = 800 chiqadi. Endi A(3) = 45 − 90 + 180 + 800 = 935 dona. Javob: 935 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aholi-osish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#b1f80477"
+    },
+    {
+      "q": "Viloyatda paxta hosildorligining o'sish tezligi h'(t) = 2t + 1 sentner har yili. Hozir hosildorlik 30 sentner bo'lsa, uch yildan keyin qancha bo'ladi?",
+      "v": [
+        "39 sentner",
+        "37 sentner",
+        "42 sentner",
+        "48 sentner"
+      ],
+      "t": 2,
+      "izoh": "Hosildorlik funksiyasi o'sish tezligining boshlang'ich funksiyasi: h(t) = t² + t + C. Boshlang'ich qiymat h(0) = 30 bo'lgani uchun C = 30. Uch yildan keyin h(3) = 9 + 3 + 30 = 42 sentner. Javob: 42 sentner.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aholi-osish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#80c299bc"
+    },
+    {
+      "q": "Ochiq idishdagi eritmadan suv bug'lanayotgani uchun massa o'zgarish tezligi m'(t) = −8e^(−t) gramm/soat. Boshida 20 gramm eritma bo'lsa, m(t) qanday bo'ladi?",
+      "v": [
+        "−8e^(−t) + 20",
+        "8e^(−t) + 20",
+        "−8e^(−t) + 28",
+        "8e^(−t) + 12"
+      ],
+      "t": 3,
+      "izoh": "Massa o'zgarish tezligining boshlang'ich funksiyasi: ∫(−8e^(−t)) dt = 8e^(−t) + C, chunki 8e^(−t) ning hosilasi −8e^(−t) ga teng. Boshlang'ich shartdan m(0) = 8 + C = 20, ya'ni C = 12. Vaqt o'tishi bilan massa 12 grammlik quruq qoldiqqa intiladi. Javob: 8e^(−t) + 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aholi-osish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#f2813ee9"
+    },
+    {
+      "q": "Egri chiziqning har bir nuqtasidagi urinma burchak koeffitsienti 3x² − 2x ga teng va u A(2; 5) nuqtadan o'tadi. Uning tenglamasini toping.",
+      "v": [
+        "y = x³ − x² + 5",
+        "y = x³ − x² − 1",
+        "y = x³ − x² + 1",
+        "y = x³ − 2x² + 1"
+      ],
+      "t": 2,
+      "izoh": "Urinma burchak koeffitsienti hosilaga teng, demak y = ∫(3x² − 2x) dx = x³ − x² + C. A nuqtadan o'tish sharti y(2) = 5 beradi: 8 − 4 + C = 5. Bundan C = 1 chiqadi. Javob: y = x³ − x² + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egri-chiziq-tiklash",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#1f3a18c1"
+    },
+    {
+      "q": "Funksiyaning hosilasi f'(x) = 1/x² ko'rinishida va f(1) = 3 ekani ma'lum. Shu shartlarda f(2) nechaga teng?",
+      "v": [
+        "2,5",
+        "3,5",
+        "−0,5",
+        "4,5"
+      ],
+      "t": 1,
+      "izoh": "Avval boshlang'ich funksiyani topamiz: f(x) = ∫x^(−2) dx = −1/x + C. Shartdan f(1) = −1 + C = 3, demak C = 4. Endi f(2) = −1/2 + 4 = 3,5. Javob: 3,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "egri-chiziq-tiklash",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#ab3c29fc"
+    },
+    {
+      "q": "Grafigi B(0; −2) nuqtadan o'tuvchi va hosilasi f'(x) = 4e^x bo'lgan funksiyani toping.",
+      "v": [
+        "4e^x − 2",
+        "4e^x + 6",
+        "4e^x − 6",
+        "e^x − 2"
+      ],
+      "t": 2,
+      "izoh": "Boshlang'ich funksiya f(x) = ∫4e^x dx = 4e^x + C ko'rinishida. B nuqtadan o'tish sharti f(0) = −2 beradi, ya'ni 4·1 + C = −2. Bundan C = −6 chiqadi. Javob: 4e^x − 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "egri-chiziq-tiklash",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#abd59d85"
+    },
+    {
+      "q": "Egri chiziqning urinma burchak koeffitsienti 2x + 1 ga teng va u koordinata boshidan o'tadi. Bu chiziq x = 3 da qanday ordinataga ega?",
+      "v": [
+        "9",
+        "7",
+        "10",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Egri chiziq tenglamasi y = ∫(2x + 1) dx = x² + x + C bo'ladi. Koordinata boshidan o'tgani uchun y(0) = 0 va C = 0. Demak x = 3 da y = 9 + 3 = 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egri-chiziq-tiklash",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#4f28e836"
+    },
+    {
+      "q": "∫(f(x) + g(x)) dx ifodani soddalashtirishda qaysi xossa qo'llanadi va u nimaga teng bo'ladi?",
+      "v": [
+        "Yig'indi xossasi; ∫f(x) dx + ∫g(x) dx",
+        "Ko'paytma xossasi; ∫f(x) dx · ∫g(x) dx",
+        "Chiziqlilik xossasi; f(x) + ∫g(x) dx",
+        "Bunday xossa umuman mavjud emas"
+      ],
+      "t": 0,
+      "izoh": "Aniqmas integral chiziqli amal bo'lgani uchun yig'indining integrali integrallar yig'indisiga teng bo'ladi. Ya'ni ∫(f + g) dx = ∫f dx + ∫g dx. Ko'paytma uchun esa bunday sodda qoida yo'q. Javob: ∫f(x) dx + ∫g(x) dx.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "integral-xossalari",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#935a113e"
+    },
+    {
+      "q": "∫7f(x) dx ifodani ∫f(x) dx orqali ifodalang va to'g'ri munosabatni tanlang.",
+      "v": [
+        "∫f(x) dx/7",
+        "7∫f(x) dx",
+        "∫f(x) dx + 7",
+        "(∫f(x) dx)⁷"
+      ],
+      "t": 1,
+      "izoh": "O'zgarmas ko'paytuvchini integral belgisidan tashqariga chiqarish mumkin, bu chiziqlilik xossasining ikkinchi qismidir. Demak ∫7f(x) dx = 7∫f(x) dx bo'ladi. Ko'paytuvchini qo'shiluvchiga aylantirib bo'lmaydi. Javob: 7∫f(x) dx.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "integral-xossalari",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#ca8928fb"
+    },
+    {
+      "q": "Ma'lumki ∫f(x) dx = x³ + C. Shunga ko'ra ∫(f(x) − 6x) dx aniqmas integral nimaga teng bo'ladi?",
+      "v": [
+        "x³ − 6x² + C",
+        "x³ − 6x + C",
+        "x³ − 3x² + C",
+        "x³ + 3x² + C"
+      ],
+      "t": 2,
+      "izoh": "Ayirma integrali integrallar ayirmasiga teng: ∫f(x) dx − ∫6x dx. Birinchisi shartdan x³ ga teng, ikkinchisi esa 3x² beradi. Demak natija x³ − 3x² + C. Javob: x³ − 3x² + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "integral-xossalari",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#d682dfe5"
+    },
+    {
+      "q": "∫f(x) dx = sin x + C ekani ma'lum bo'lsa, ∫f(2x) dx aniqmas integral nimaga teng bo'ladi?",
+      "v": [
+        "2 sin(2x) + C",
+        "sin(2x) + C",
+        "sin(2x)/2 + C",
+        "2 sin x + C"
+      ],
+      "t": 2,
+      "izoh": "Shartdan F(x) = sin x ekani kelib chiqadi. Chiziqli almashtirish qoidasiga ko'ra ∫f(kx) dx = F(kx)/k bo'ladi. Bu yerda k = 2, shuning uchun natija sin(2x)/2 + C. Javob: sin(2x)/2 + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "integral-xossalari",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#41e3425e"
+    },
+    {
+      "q": "O'quvchi ∫(x² + 5) dx = x³/3 + 5 deb yozdi. Uning javobidagi ikkita kamchilikni to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "5 o'rniga 5x bo'lishi va C qo'shilishi kerak",
+        "x³/3 o'rniga 3x² bo'lishi kerak",
+        "Faqat C qo'shilishi kerak, qolgani to'g'ri",
+        "5 o'rniga 5x² bo'lishi kerak"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas sonning integrali ∫5 dx = 5x bo'ladi, shunchaki 5 emas. Bundan tashqari aniqmas integral javobida C yozilishi shart. To'g'ri natija x³/3 + 5x + C. Javob: 5 o'rniga 5x bo'lishi va C qo'shilishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xato-topish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#13b1fe1f"
+    },
+    {
+      "q": "Bir o'quvchi ∫x·e^x dx ni hisoblab x²·e^x/2 + C deb yozdi. Bu javob nima uchun noto'g'ri hisoblanadi?",
+      "v": [
+        "e^x ning integrali e^x emas",
+        "Javobda C ortiqcha yozilgan",
+        "x² o'rniga x³ bo'lishi kerak",
+        "Ko'paytmani ko'paytuvchilar bo'yicha alohida integrallab bo'lmaydi"
+      ],
+      "t": 3,
+      "izoh": "Integralning yig'indi bo'yicha xossasi bor, lekin ko'paytma bo'yicha bunday xossa yo'q. Shuning uchun har bir ko'paytuvchini alohida integrallash mumkin emas. Bu integral bo'laklab hisoblanadi va x·e^x − e^x + C beradi. Javob: ko'paytuvchilar bo'yicha alohida integrallab bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xato-topish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#3f2d3576"
+    },
+    {
+      "q": "Sardor ∫(2x + 5)⁴ dx ni hisoblab (2x + 5)⁵/5 + C deb yozdi. Javobni to'g'rilash uchun nima qilish kerak?",
+      "v": [
+        "Natijani yana 2 ga ko'paytirish kerak",
+        "Ishorani teskarisiga o'zgartirish kerak",
+        "Darajani 6 ga oshirish kerak",
+        "Natijani yana 2 ga bo'lish kerak"
+      ],
+      "t": 3,
+      "izoh": "Chiziqli almashtirishda F(kx + b)/k formulasi ishlaydi. Bu yerda k = 2 bo'lgani uchun natija qo'shimcha ravishda 2 ga bo'linishi kerak. To'g'ri javob (2x + 5)⁵/10 + C. Javob: natijani yana 2 ga bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xato-topish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#9b212660"
+    },
+    {
+      "q": "Nilufar ∫dx/x = ln|x| + C ni bilgani holda ∫dx/(x + 4) ni ln|x| + 4 + C deb yozdi. To'g'ri natija qanday?",
+      "v": [
+        "ln|x| + 4 + C",
+        "ln|x|·ln 4 + C",
+        "4 ln|x| + C",
+        "ln|x + 4| + C"
+      ],
+      "t": 3,
+      "izoh": "Maxrajdagi butun ifoda logarifm ostiga kiradi, chunki u = x + 4 va uning hosilasi 1 ga teng. Demak ∫dx/(x + 4) = ln|x + 4| + C bo'ladi. Logarifm ichidagi yig'indini ajratib yozib bo'lmaydi. Javob: ln|x + 4| + C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xato-topish",
+      "id": "matematika_anlz_m12-boshlangich-funksiya-aniqmas-integral-va#7de5731a"
+    }
+  ]
+}

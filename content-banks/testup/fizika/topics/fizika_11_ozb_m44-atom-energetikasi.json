@@ -1,0 +1,486 @@
+{
+  "nom": "44-mavzu. Atom Energetikasi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Og'ir yadrolarning bo'linishi qanday grafik asosida tushuntiriladi?",
+      "v": [
+        "Solishtirma bog'lanish energiyasining massa soniga bog'liqlik grafigi asosida",
+        "Radioaktiv yemirilish grafigi asosida",
+        "Fotoeffekt grafigi asosida",
+        "Tinchlik energiyasi grafigi asosida"
+      ],
+      "t": 0,
+      "izoh": "Solishtirma bog'lanish energiyasining massa soniga bog'liqlik grafigi og'ir yadrolarning bo'linish imkoniyatini tushuntiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#28534e01"
+    },
+    {
+      "q": "Nima uchun og'ir yadrolar o'rta yadrolarga aylanganda energiya ajraladi?",
+      "v": [
+        "Og'ir yadrolarning solishtirma bog'lanish energiyasi o'rta elementlarnikidan 1 MeV ga kichik",
+        "Og'ir yadrolar eng barqaror",
+        "O'rta yadrolarning massasi kattaroq",
+        "Nuklonlar soni oshgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Har bir nuklon uchun ≈1 MeV energiya ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#284456ae"
+    },
+    {
+      "q": "200 ta nuklonli yadro bo'linsa, taxminan qancha energiya ajraladi?",
+      "v": [
+        "≈200 MeV, asosiy qismi (≈165 MeV) parchalar kinetik energiyasiga aylanadi",
+        "≈20 MeV",
+        "≈1 MeV",
+        "≈2000 MeV"
+      ],
+      "t": 0,
+      "izoh": "≈200 MeV ajralib, uning ≈165 MeV i yadro parchalarining kinetik energiyasiga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#b494f88b"
+    },
+    {
+      "q": "Uran yadrosining bo'linishini kimlar va qachon kashf qilgan?",
+      "v": [
+        "1938–1939-yillarda nemis fiziklari O. Gan va F. Strassman",
+        "1896-yilda A. Bekkerel",
+        "1942-yilda E. Fermi",
+        "1919-yilda E. Rezerford"
+      ],
+      "t": 0,
+      "izoh": "Gan va Strassman neytron bilan bombardimon qilingan uranning bo'linishini aniqladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#6831db42"
+    },
+    {
+      "q": "Uran yadrosi bo'linganda qaysi elementlar hosil bo'ladi?",
+      "v": [
+        "Davriy sistemaning o'rta elementlari — bariy, lantan va boshqalar",
+        "Geliy va vodorod",
+        "Faqat qo'rg'oshin",
+        "Faqat radiy"
+      ],
+      "t": 0,
+      "izoh": "Bo'linishda o'rta elementlar (Ba, La va boshqalar) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#37eb108f"
+    },
+    {
+      "q": "Uran yadrosi neytronni yutgach nima uchun ikki bo'lakka parchalanadi?",
+      "v": [
+        "Protonlar orasidagi kulon itarish kuchi yadro tortishish kuchlaridan katta bo'lib qoladi",
+        "Yadro harorati keskin oshadi",
+        "Neytron massasi juda katta",
+        "Elektronlar yadroni itaradi"
+      ],
+      "t": 0,
+      "izoh": "G'alayonlangan yadroda kulon itarish kuchi yadro kuchlaridan ustun keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#2826b43b"
+    },
+    {
+      "q": "Uran yadrosi bo'linganda qancha ikkilamchi neytron ajralib chiqadi?",
+      "v": [
+        "2–3 ta",
+        "Faqat 1 ta",
+        "10 ta",
+        "Ajralmaydi"
+      ],
+      "t": 0,
+      "izoh": "Har bir bo'linishda 2–3 ta ikkilamchi neytron chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#778b6c03"
+    },
+    {
+      "q": "Bo'linish mahsulotlari qanday xilma-xillikka ega?",
+      "v": [
+        "Qariyb 200 xil ko'rinishga ega; massa soni 95–139 yadrolarning hosil bo'lish ehtimoli eng katta",
+        "Har doim teng massali ikki bo'lak",
+        "Faqat bitta xil mahsulot",
+        "Faqat engil elementlar"
+      ],
+      "t": 0,
+      "izoh": "Bo'linish mahsulotlari ≈200 xil; teng massali bo'linish kamdan-kam ro'y beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#fa466165"
+    },
+    {
+      "q": "Neytron ta'sirida qaysi yadrolar parchalanishi mumkin?",
+      "v": [
+        "²³⁵₉₂U, ²³⁸₉₂U, ²³⁹₉₄Pu, ²³²₉₀Th va boshqalar",
+        "Faqat vodorod",
+        "Faqat geliy",
+        "Faqat uglerod"
+      ],
+      "t": 0,
+      "izoh": "Uran-235 dan tashqari ²³⁸U, ²³⁹Pu, ²³²Th kabi og'ir yadrolar ham parchalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#53dc1707"
+    },
+    {
+      "q": "Uzluksiz zanjir reaksiyasi qanday ro'y beradi?",
+      "v": [
+        "Har bir bo'linishda chiqgan 2–3 ta neytron boshqa uran yadrolarining bo'linishini keltirib chiqaradi",
+        "Yadrolar o'z-o'zidan qiziydi",
+        "Fotonlar yadrolarni bombardimon qiladi",
+        "Elektronlar zanjir hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Ikkilamchi neytronlar yangi bo'linishlarni qo'zg'atib zanjir reaksiyasini davom ettiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#9790608f"
+    },
+    {
+      "q": "1 kg uran to'liq parchalanganda qancha energiya ajraladi?",
+      "v": [
+        "≈8·10¹³ J — 1800 t benzin yoki 2500 t toshko'mir yonganidek",
+        "≈8·10⁶ J",
+        "≈200 MeV",
+        "≈1 kVt·soat"
+      ],
+      "t": 0,
+      "izoh": "1 kg uranda 2,5·10²⁴ yadro: E ≈ 200 MeV · 2,5·10²⁴ ≈ 8·10¹³ J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#b5e49769"
+    },
+    {
+      "q": "Tabiiy uran qanday izotoplardan tashkil topgan?",
+      "v": [
+        "99,3% — ²³⁸₉₂U va 0,7% — ²³⁵₉₂U",
+        "Faqat ²³⁵₉₂U",
+        "50% ²³⁸U va 50% ²³⁵U",
+        "99% — ²³⁵U"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy uran: 99,3% U-238 va 0,7% U-235.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#0f5dd8a0"
+    },
+    {
+      "q": "Zanjir reaksiyasi qaysi uran izotopida ro'y beradi?",
+      "v": [
+        "Faqat ²³⁵₉₂U bilan",
+        "Faqat ²³⁸₉₂U bilan",
+        "Ikkalasida ham bir xil",
+        "Hech birida"
+      ],
+      "t": 0,
+      "izoh": "Zanjir reaksiyasi faqat Uran-235 bilan ro'y beradi, shuning uchun uni ajratib olish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#575bc7ae"
+    },
+    {
+      "q": "Neytronlarning ko'payish koeffitsiyenti k qanday aniqlanadi?",
+      "v": [
+        "k = Nᵢ/Nᵢ₋₁ — ketma-ket etaplardagi bo'linishni vujudga keltiruvchi neytronlar sonining nisbati",
+        "k = N₀·2^(–t/T)",
+        "k = λT",
+        "k = A/t"
+      ],
+      "t": 0,
+      "izoh": "k = Nᵢ/Nᵢ₋₁ — i-etapdagi neytronlar sonining oldingi etapdagiga nisbati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#e3ea0e05"
+    },
+    {
+      "q": "Agar k < 1 bo'lsa, zanjir reaksiyasi qanday kechadi?",
+      "v": [
+        "Reaksiya tezda so'nadi",
+        "Reaksiya portlashga olib keladi",
+        "Reaksiya doimiy davom etadi",
+        "Reaksiya tezlashadi"
+      ],
+      "t": 0,
+      "izoh": "k < 1 da neytronlar soni kamayib, reaksiya so'nadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#a1da3307"
+    },
+    {
+      "q": "k = 1 bo'lganda zanjir reaksiyasi qanday ataladi?",
+      "v": [
+        "Kritik — doimiy intensivlik bilan davom etadi",
+        "Portlovchi",
+        "So'ngan",
+        "Ekzotermik"
+      ],
+      "t": 0,
+      "izoh": "k = 1 da reaksiya kritik deb ataluvchi doimiy intensivlik bilan kechadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#95cdcce2"
+    },
+    {
+      "q": "Agar k > 1 bo'lsa, nima sodir bo'ladi?",
+      "v": [
+        "Zanjir reaksiyasi ko'chkisimon o'sib yadro portlashiga olib keladi",
+        "Reaksiya so'nadi",
+        "Reaksiya to'xtaydi",
+        "Hech narsa o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "k > 1 da reaksiya lavha kabi kengayib portlash hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#7da5d90a"
+    },
+    {
+      "q": "Yadro reaktori deb nimaga aytiladi?",
+      "v": [
+        "Og'ir yadrolarning bo'linish zanjir reaksiyasini amalga oshirish va boshqarish imkonini beradigan qurilmaga",
+        "Faqat nurlanish o'lchaydigan asbobga",
+        "Zarralarni tezlashtiruvchi qurilmaga",
+        "Elektr tokini o'lchovchi asbobga"
+      ],
+      "t": 0,
+      "izoh": "Yadro reaktori — zanjir reaksiyasini amalga oshirib boshqaradigan qurilma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#d6a1b9b5"
+    },
+    {
+      "q": "Birinchi yadro reaktori qachon, qayerda va kim rahbarligida qurilgan?",
+      "v": [
+        "1942-yilda E. Fermi rahbarligida Chikago universiteti qoshida",
+        "1954-yilda Obninskda",
+        "1939-yilda Berlinda",
+        "1956-yilda Toshkentda"
+      ],
+      "t": 0,
+      "izoh": "Birinchi reaktor 1942-yilda Fermi rahbarligida Chikagoda qurilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#fdb0fd4a"
+    },
+    {
+      "q": "Issiq neytronlar deb qanday neytronlarga aytiladi?",
+      "v": [
+        "Energiyasi 0,005–0,5 eV oralig'ida bo'lgan neytronlarga",
+        "Energiyasi 2 MeV bo'lgan neytronlarga",
+        "Yuqori tezlikli neytronlarga",
+        "Qizdirilgan gazdagi neytronlarga"
+      ],
+      "t": 0,
+      "izoh": "U-235 da zanjir reaksiyasi faqat issiq (sekin) neytronlar bilan amalga oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#b58e16f3"
+    },
+    {
+      "q": "Yadro parchalanishida hosil bo'ladigan neytronlarning energiyasi qancha?",
+      "v": [
+        "≈2 MeV",
+        "0,025 eV",
+        "1 eV",
+        "100 GeV"
+      ],
+      "t": 0,
+      "izoh": "Bo'linishda chiqadigan neytronlar energiyasi ≈2 MeV — ularni sekinlatish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#8de1dce3"
+    },
+    {
+      "q": "Sekinlatgich moddaga qanday talab qo'yiladi?",
+      "v": [
+        "Neytronlarni sekinlatishi, lekin yutmasligi kerak",
+        "Neytronlarni to'liq yutishi kerak",
+        "Neytronlarni tezlashtirishi kerak",
+        "Faqat issiqlik o'tkazishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Sekinlatgich neytronni sekinlatadi, ammo yutmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#e1ee3064"
+    },
+    {
+      "q": "Sekinlatgich sifatida qaysi moddalar ishlatiladi?",
+      "v": [
+        "Og'ir suv, oddiy suv, grafit va berilliy",
+        "Faqat qo'rg'oshin",
+        "Faqat temir",
+        "Faqat alyuminiy"
+      ],
+      "t": 0,
+      "izoh": "Og'ir suv qiyin olingani uchun odatda oddiy suv yoki grafit ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#d5c9feee"
+    },
+    {
+      "q": "Reaktor faol zonasidagi temperatura qanchagacha ko'tariladi?",
+      "v": [
+        "800–900 K gacha",
+        "100 K gacha",
+        "10 000 K gacha",
+        "273 K gacha"
+      ],
+      "t": 0,
+      "izoh": "Zanjir reaksiyasi jarayonida faol zona temperaturasi 800–900 K gacha ko'tariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#a7745050"
+    },
+    {
+      "q": "Issiqlik tashuvchi sifatida nimalar ishlatiladi?",
+      "v": [
+        "Odatdagi suv yoki suyuq natriy metali",
+        "Faqat havo",
+        "Faqat spirt",
+        "Faqat simob"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik suv yoki suyuq natriy orqali faol zonadan olib ketiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#6c63e5db"
+    },
+    {
+      "q": "Zanjir reaksiyasini boshqarish qanday tayoqchalar yordamida amalga oshiriladi?",
+      "v": [
+        "Bor yoki kadmiydan yasalgan, issiq neytronlarni yaxshi yutadigan tayoqchalar",
+        "Mis tayoqchalar",
+        "Grafit tayoqchalar",
+        "Po'lat tayoqchalar"
+      ],
+      "t": 0,
+      "izoh": "Bor va kadmiy issiq neytronlarni kuchli yutadi — reaksiya boshqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#a3590c59"
+    },
+    {
+      "q": "Boshqaruvchi tayoqchalar faol zonadan tortib olinsa nima bo'ladi?",
+      "v": [
+        "k > 1 bo'lib, reaktor quvvati ortadi",
+        "k < 1 bo'lib, reaksiya so'nadi",
+        "Hech narsa o'zgarmaydi",
+        "Reaktor darhol to'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "Tayoqchalar chiqarilsa k > 1; to'la kiritilsa k < 1 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#7a9eedb2"
+    },
+    {
+      "q": "Kritik massa deb qanday massaga aytiladi?",
+      "v": [
+        "O'z-o'zidan zanjir reaksiyasi ro'y berishi uchun zarur bo'lgan uran massasining minimal qiymatiga",
+        "Reaktordagi barcha yonilg'i massasiga",
+        "1 kg uran massasiga",
+        "Eng katta yadro massasiga"
+      ],
+      "t": 0,
+      "izoh": "Kritik massa — zanjir reaksiyasi uchun zarur minimal yonilg'i massasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#a81fb1c0"
+    },
+    {
+      "q": "Kritik massa qanday oraliqda bo'lishi mumkin?",
+      "v": [
+        "Qurilma tuzilishi va yonilg'i turiga qarab bir necha yuz grammdan bir necha o'n tonnalargacha",
+        "Har doim 1 kg",
+        "Har doim 1 gramm",
+        "Faqat 1000 tonnadan ortiq"
+      ],
+      "t": 0,
+      "izoh": "9 cm radiusli ²³⁸U shari uchun kritik massa ≈50 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#84630857"
+    },
+    {
+      "q": "9 cm radiusli shar shaklidagi ²³⁸₉₂U uchun kritik massa qancha?",
+      "v": [
+        "50 kg",
+        "5 kg",
+        "500 kg",
+        "1 kg"
+      ],
+      "t": 0,
+      "izoh": "Darslikda keltirilganidek, bu sharoitda kritik massa 50 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#9906e906"
+    },
+    {
+      "q": "Dunyodagi birinchi atom elektr stansiyasi (AES) qachon va qayerda ishga tushirilgan?",
+      "v": [
+        "1954-yilda Obninsk shahrida",
+        "1942-yilda Chikagoda",
+        "1986-yilda Chernobilda",
+        "1939-yilda Gan shahrida"
+      ],
+      "t": 0,
+      "izoh": "Birinchi AES 1954-yilda Obninskda ishga tushirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#074a8cfa"
+    },
+    {
+      "q": "Atom energetikasining afzalliklari qaysi javobda to'g'ri keltirilgan?",
+      "v": [
+        "Yadro yonilg'i zaxiralari kimyoviy yonilg'idan yuzlab marta ko'p, AESlar kichik maydon egallaydi",
+        "Yadro yonilg'isi juda qimmat",
+        "AESlar ulkan maydon talab qiladi",
+        "Yadro energiyasidan foydalanib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Yadro yonilg'isi zaxiralari kimyoviy yonilg'inikidan yuzlab marta ko'p va AESlar kichik maydonni egallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m44-atom-energetikasi#39f1ce74"
+    }
+  ]
+}

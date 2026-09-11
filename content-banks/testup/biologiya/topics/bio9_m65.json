@@ -1,0 +1,951 @@
+{
+  "nom": "Biologiya-9, 65-§. Oʻsimliklar va hayvonlar seleksiyasi, 177-bet",
+  "bolim": "VIII BOB. Seleksiya va biotexnologiya asoslari",
+  "savollar": [
+    {
+      "q": "Seleksiyaning asosiy vazifasi nimadan iborat?",
+      "v": [
+        "Odamlarning oziq-ovqat, estetik va texnik talablarini toʻliq qondiruvchi yuqori mahsuldor hayvon zotlari, oʻsimlik navlari va mikroorganizmlar shtammlarini yaratish",
+        "Yovvoyi oʻsimliklar va hayvonlarni tabiatda muhofaza qilish",
+        "Tabiiy tanlanish jarayonini toʻxtatish",
+        "Organizmlarning genetik xilma-xilligini kamaytirish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra seleksiyaning asosiy vazifasi odam talablarini qondiruvchi yuqori mahsuldor zot, nav va shtammlar yaratishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m65#5c0d64bf"
+    },
+    {
+      "q": "Zot yoki nav (toza liniya) deb nimaga aytiladi?",
+      "v": [
+        "Odam tomonidan sunʼiy ravishda yaratilgan organizmlar populyatsiyasiga",
+        "Tabiatda oʻz-oʻzidan paydo boʻlgan yovvoyi turlar guruhiga",
+        "Bir hujayrali mikroorganizmlar koloniyasiga",
+        "Genetik jihatdan bir-biridan keskin farq qiluvchi individlarga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra zot yoki nav (toza liniya) — odam tomonidan sunʼiy yaratilgan organizmlar populyatsiyasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m65#bd118b36"
+    },
+    {
+      "q": "Zot va navning biologik hamda xoʻjalik xossalari haqida qaysi fikr toʻgʻri?",
+      "v": [
+        "Ular barqaror va qimmatli boʻlib, bu xossalar nasldan-naslga oʻtadi",
+        "Har avlodda tasodifiy oʻzgarib turadi",
+        "Faqat birinchi avloddagina namoyon boʻladi",
+        "Nasldan-naslga umuman oʻtmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra zot va navning qimmatli biologik hamda xoʻjalik xossalari barqaror boʻlib, nasldan-naslga oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#40547daf"
+    },
+    {
+      "q": "Har bir zot va navga xos boʻlgan oʻziga xos xususiyat qanday ataladi?",
+      "v": [
+        "Reaksiya normasi",
+        "Genofond",
+        "Eksterer",
+        "Geterozis"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra har bir zot va nav oʻziga xos xususiyatga, yaʼni reaksiya normasiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#d3b8cb6b"
+    },
+    {
+      "q": "Tovuqlarning oq legorn zoti qaysi xususiyati bilan ajralib turadi?",
+      "v": [
+        "Koʻp tuxum berishi",
+        "Koʻp goʻsht berishi",
+        "Mayin pat berishi",
+        "Uzoq umr koʻrishi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra reaksiya normasiga misol sifatida oq legorn tovuq zotining koʻp tuxum berishi keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m65#a02ff4b8"
+    },
+    {
+      "q": "Oq legorn tovuqlarida yashash sharoitlari va ozuqa yaxshilansa nima oʻzgaradi?",
+      "v": [
+        "Tuxum berishi ortadi, ammo tuxum massasi amalda oshmaydi",
+        "Tuxum massasi keskin ortadi, soni oʻzgarmaydi",
+        "Ham soni, ham massasi kamayadi",
+        "Hech qanday oʻzgarish boʻlmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sharoit yaxshilansa oq legorn tuxum sonini oshiradi, biroq tuxum massasi amalda oshmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#c0bf0313"
+    },
+    {
+      "q": "Fenotip (shu jumladan mahsuldorlik ham) qachon namoyon boʻladi?",
+      "v": [
+        "Maʼlum sharoitlarda",
+        "Har qanday sharoitda bir xil",
+        "Faqat sunʼiy laboratoriya sharoitida",
+        "Faqat yovvoyi holatda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fenotip, jumladan mahsuldorlik ham, maʼlum sharoitlarda namoyon boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#12786e48"
+    },
+    {
+      "q": "Nima uchun har xil iqlim va agrotexnik sharoitli hududlar uchun moslashgan zot yoki nav yaratilishi zarur?",
+      "v": [
+        "Fenotip (mahsuldorlik ham) maʼlum sharoitlarda namoyon boʻlgani uchun",
+        "Barcha zotlar hamma joyda bir xil boʻlgani uchun",
+        "Fenotip sharoitga bogʻliq boʻlmagani uchun",
+        "Genotip hech qachon oʻzgarmagani uchun"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fenotip maʼlum sharoitlarda namoyon boʻlgani sababli har xil hududlar uchun moslashgan zot yoki nav zarur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#9aa970b4"
+    },
+    {
+      "q": "Seleksiyaning asosiy usullari qaysilar?",
+      "v": [
+        "Tanlash va duragaylash",
+        "Fotosintez va nafas olish",
+        "Mitoz va meyoz",
+        "Migratsiya va izolyatsiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tanlash va duragaylash seleksiyaning asosiy usullaridir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m65#c16839eb"
+    },
+    {
+      "q": "Tanlashning qanday ikkita shakli mavjud?",
+      "v": [
+        "Yalpi va individual tanlash",
+        "Tabiiy va sunʼiy tanlash",
+        "Yaqin va uzoq tanlash",
+        "Dominant va retsessiv tanlash"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tanlashning ikkita shakli — yalpi va individual (yakka) tanlash bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m65#500009dd"
+    },
+    {
+      "q": "Chetdan changlanuvchi oʻsimliklarga nisbatan koʻpincha qaysi tanlash usuli qoʻllaniladi?",
+      "v": [
+        "Yalpi tanlash",
+        "Individual (yakka) tanlash",
+        "Genetik injeneriya",
+        "Poliploidiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻsimlikshunoslikda chetdan changlanuvchi oʻsimliklarga nisbatan koʻpincha yalpi tanlash qoʻllaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#a6c8f416"
+    },
+    {
+      "q": "Yalpi tanlashda ekinzordan nima ajratib olinadi?",
+      "v": [
+        "Faqat kerakli sifatga ega boʻlgan oʻsimliklar guruhi",
+        "Bitta eng yaxshi yakka oʻsimlik",
+        "Barcha oʻsimliklar birdek",
+        "Faqat kasal oʻsimliklar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yalpi tanlashda ekinzordan kerakli sifatli oʻsimliklar guruhi ajratib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#e4276c21"
+    },
+    {
+      "q": "Yalpi tanlash orqali olingan nav genetik jihatdan qanday boʻladi?",
+      "v": [
+        "Bir xil boʻlmaydi, shuning uchun tanlashni vaqti-vaqti bilan qaytarish kerak",
+        "Toʻliq bir xil (toza liniya) boʻladi",
+        "Butunlay bepusht boʻladi",
+        "Poliploid boʻladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yalpi tanlash navi genetik jihatdan bir xil boʻlmaydi, shu sabab tanlash vaqti-vaqti bilan qaytariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#48640836"
+    },
+    {
+      "q": "Individual (yakka) tanlashda nima qilinadi?",
+      "v": [
+        "Ekinzordan qimmatli belgiga ega ayrim oʻsimliklar tanlanib, ulardan yangi avlod olinadi",
+        "Butun ekinzor bir vaqtda oʻriladi",
+        "Faqat guruh boʻlib oʻsimliklar tanlanadi",
+        "Oʻsimliklar sunʼiy mutatsiyaga uchratiladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yakka tanlashda ekinzordan qimmatli belgiga ega ayrim oʻsimliklar tanlanib, ulardan yangi avlod olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#b0ca5d3b"
+    },
+    {
+      "q": "Yakka tanlash orqali nima olinadi?",
+      "v": [
+        "Toza liniyalar — genetik jihatdan bir xil organizmlar guruhi",
+        "Genetik jihatdan xilma-xil populyatsiya",
+        "Poliploid duragaylar",
+        "Bepusht turlararo duragaylar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yakka tanlash orqali genetik jihatdan bir xil organizmlar guruhi — toza liniyalar olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#912e508e"
+    },
+    {
+      "q": "Oʻsimliklarning yangi navlarini yaratish va oʻzgaruvchanlik doirasini oshirishda qaysi usullar qoʻllaniladi?",
+      "v": [
+        "Duragaylash, sunʼiy mutagenez, eksperimental poliploidiya va genetik injeneriya",
+        "Faqat tabiiy tanlash va migratsiya",
+        "Xonakilashtirish va oddiy parvarish",
+        "Fotosintez va mineral oziqlantirish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yangi navlar yaratishda duragaylash, sunʼiy mutagenez, eksperimental poliploidiya va genetik injeneriya qoʻllaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#c28c734a"
+    },
+    {
+      "q": "Seleksiyada duragaylashning qaysi uch usuli qoʻllaniladi?",
+      "v": [
+        "Tur ichidagi, geografik uzoq va genetik uzoq formalarni duragaylash",
+        "Yalpi, individual va massaviy duragaylash",
+        "Dominant, retsessiv va aralash duragaylash",
+        "Diploid, tetraploid va poliploid duragaylash"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra duragaylashning tur ichidagi, geografik uzoq va genetik uzoq formalarni duragaylash usullari bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#703a1dd9"
+    },
+    {
+      "q": "Tur ichidagi duragaylashda nima chatishtiriladi?",
+      "v": [
+        "Bitta turga mansub oʻsimlik navlari oʻzaro chatishtiriladi",
+        "Har xil turga mansub oʻsimliklar chatishtiriladi",
+        "Oʻsimlik bilan hayvon chatishtiriladi",
+        "Har xil turkumga mansub oʻsimliklar chatishtiriladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tur ichidagi duragaylashda bitta turga mansub oʻsimlik navlari oʻzaro chatishtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#a4d5fa57"
+    },
+    {
+      "q": "Davlatimizda koʻplab gʻoʻza navlari qaysi usulda yaratilgan?",
+      "v": [
+        "Tur ichidagi duragaylash",
+        "Genetik uzoq formalarni duragaylash",
+        "Sunʼiy mutagenez",
+        "Eksperimental poliploidiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra davlatimizda koʻplab gʻoʻza navlari tur ichidagi duragaylash usulida yaratilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#6da58992"
+    },
+    {
+      "q": "Geografik uzoq formalarni duragaylashda nima chatishtiriladi?",
+      "v": [
+        "Bir turga mansub, lekin Yer yuzasining turli joylaridan keltirilgan oʻsimliklar",
+        "Har xil turkumga mansub oʻsimliklar",
+        "Faqat bitta ekinzordagi oʻsimliklar",
+        "Oʻsimlik bilan mikroorganizm"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra geografik uzoq duragaylashda bir turga mansub, ammo Yer yuzasining turli joylaridan keltirilgan oʻsimliklar chatishtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#1b31db9c"
+    },
+    {
+      "q": "Geografik uzoq formalarni duragaylashdan olingan duragaylarning xususiyati qanday?",
+      "v": [
+        "Oʻzgaruvchanligi yuqori boʻlib, yashash sharoitiga tez moslashadi",
+        "Butunlay bepusht boʻladi",
+        "Oʻzgaruvchanligi past boʻladi",
+        "Faqat laboratoriyada yashaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra geografik uzoq duragaylardan olingan avlodlarda oʻzgaruvchanlik yuqori boʻlib, yashash sharoitiga tez moslashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#3f87a6b6"
+    },
+    {
+      "q": "\"Saratov-29\" navi qanday usul bilan yaratilgan va u qaysi oʻsimlik?",
+      "v": [
+        "Geografik uzoq formalarni duragaylash orqali yaratilgan bugʻdoy navi",
+        "Sunʼiy mutagenez orqali yaratilgan gʻoʻza navi",
+        "Poliploidiya orqali olingan makkajoʻxori",
+        "Tur ichidagi duragaylash orqali olingan javdar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra geografik uzoq duragaylash yordamida bugʻdoyning \"Saratov-29\" navi yaratilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#58184c65"
+    },
+    {
+      "q": "\"Saratov-29\" navi hozirda MDH davlatlarining bugʻdoy ekiladigan hududlarining necha foiziga ekilmoqda?",
+      "v": [
+        "50 %",
+        "20 %",
+        "75 %",
+        "14 %"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra \"Saratov-29\" navi MDH davlatlari bugʻdoy hududlarining 50 %iga ekilmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#be1fc41a"
+    },
+    {
+      "q": "Akademik Sodiq Mirahmedov qanday navlar yaratgan?",
+      "v": [
+        "Viltga chidamli \"Toshkent-1\", \"Toshkent-2\", \"Toshkent-3\" gʻoʻza navlari",
+        "\"Saratov-29\" bugʻdoy navi",
+        "AN402 gʻoʻza navi",
+        "Tritikale donli oʻsimligi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Sodiq Mirahmedov viltga chidamli \"Toshkent-1\", \"Toshkent-2\", \"Toshkent-3\" gʻoʻza navlarini yaratgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#943a61f6"
+    },
+    {
+      "q": "Sodiq Mirahmedov \"Toshkent\" navlarini olishda qaysi oʻsimliklarni chatishtirgan?",
+      "v": [
+        "Meksikadan keltirilgan viltga chidamli yovvoyi gʻoʻza bilan Oʻzbekistonda yaratilgan viltga chidamsiz gʻoʻza navini",
+        "Karam bilan turpni",
+        "Bugʻdoy bilan javdarni",
+        "Bugʻdoy bilan bugʻdoyiqni"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Mirahmedov Meksikadan keltirilgan viltga chidamli yovvoyi gʻoʻza bilan mahalliy viltga chidamsiz gʻoʻzani chatishtirgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#4b1cd203"
+    },
+    {
+      "q": "Genetik uzoq formalarni duragaylashda nima chatishtiriladi?",
+      "v": [
+        "Har xil turga yoki har xil turkumga mansub oʻsimliklar",
+        "Bitta turga mansub navlar",
+        "Bir turning turli geografik formalari",
+        "Faqat bir xil genotipli oʻsimliklar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genetik uzoq duragaylashda har xil turga yoki har xil turkumga mansub oʻsimliklar chatishtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#7cda0ba3"
+    },
+    {
+      "q": "Genetik uzoq formalarni duragaylashda erishilgan asosiy yutuq nima?",
+      "v": [
+        "Duragaylarning turlararo bepushtligini bartaraf qilish usulini ishlab chiqish",
+        "Poliploidiyani toʻxtatish",
+        "Fotosintezni tezlashtirish",
+        "Tabiiy tanlanishni bekor qilish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genetik uzoq duragaylashning yutugʻi — duragaylarning turlararo bepushtligini bartaraf qilish usulini ishlab chiqishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#9dd0456f"
+    },
+    {
+      "q": "Turlararo bepushtlikni bartaraf qilish usulini kim va qachon birinchi boʻlib qoʻllagan?",
+      "v": [
+        "Rossiyalik olim G.D.Karpechenko oʻtgan asrning 20-yillarida",
+        "Akademik Sodiq Mirahmedov 20-yillarda",
+        "N.I.Vavilov 30-yillarda",
+        "Nabijon Nazirov 40-yillarda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bu usulni dastlab oʻtgan asrning 20-yillarida rossiyalik olim G.D.Karpechenko qoʻllagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#ef8c849c"
+    },
+    {
+      "q": "G.D.Karpechenko qaysi oʻsimliklarni chatishtirishda bepushtlikni bartaraf qildi?",
+      "v": [
+        "Karam bilan turpni",
+        "Bugʻdoy bilan javdarni",
+        "Yovvoyi va madaniy gʻoʻzani",
+        "Bugʻdoy bilan bugʻdoyiqni"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Karpechenko karam bilan turpni chatishtirishda bu usulni qoʻllashga muvaffaq boʻlgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#a6146f50"
+    },
+    {
+      "q": "Karpechenko yaratgan yangi oʻsimlik qanday koʻrinishga ega boʻlgan?",
+      "v": [
+        "Karamga ham, turpga ham oʻxshamagan; mevasi ikki qismli boʻlib, yarmi karamga, yarmi turpga oʻxshaydi",
+        "Toʻliq karamga oʻxshaydi",
+        "Toʻliq turpga oʻxshaydi",
+        "Bugʻdoyga oʻxshaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bu yangi oʻsimlik karam va turpga oʻxshamagan, mevasining yarmi karamga, yarmi turpga oʻxshaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#e85f272a"
+    },
+    {
+      "q": "Bugʻdoy bilan bugʻdoyiq duragayi asosida nima yaratildi?",
+      "v": [
+        "Bugʻdoyning yangi donli yem-xashak navi",
+        "Tritikale",
+        "Toshkent-1 gʻoʻza navi",
+        "Saratov-29 navi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bugʻdoy-bugʻdoyiq duragayi asosida bugʻdoyning yangi donli yem-xashak navi yaratildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#2a29f519"
+    },
+    {
+      "q": "Bugʻdoy-bugʻdoyiq duragayidan olingan yem-xashak navi bir mavsumda necha marta oʻriladi va qancha yashil massa beradi?",
+      "v": [
+        "3-4 marta oʻriladi, 300-450 s/ga yashil massa beradi",
+        "1 marta oʻriladi, 50 s/ga yashil massa beradi",
+        "10 marta oʻriladi, 1000 s/ga yashil massa beradi",
+        "2 marta oʻriladi, 100 s/ga yashil massa beradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bu nav bir mavsumda 3-4 marta oʻrib olinadi va 300-450 s/ga yashil massa beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#ad57588e"
+    },
+    {
+      "q": "Bugʻdoy bilan javdar duragayi qanday nom bilan ataladi?",
+      "v": [
+        "Tritikale",
+        "Arxaromerinos",
+        "Saratov-29",
+        "Rambule"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bugʻdoy bilan javdar duragayi tritikale deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#68d1be66"
+    },
+    {
+      "q": "Tritikale qanday xususiyatlarga ega?",
+      "v": [
+        "Yuqori hosildor, koʻp yashil massa toʻplaydi va yuksak darajadagi oziqlik sifatiga ega",
+        "Bepusht va past hosildor",
+        "Faqat bezak uchun oʻstiriladi",
+        "Yovvoyi holda oʻsadi va foydasiz"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tritikale bugʻdoy va javdarning eng yaxshi xususiyatlarini toʻplab, yuqori hosildor va oziqlik sifatiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#99c16b12"
+    },
+    {
+      "q": "Poliploid oʻsimliklar qanday xususiyati bilan farqlanadi?",
+      "v": [
+        "Organik moddalarni faol sintez qiladi, hosildorligi yuqori va katta oʻlchami bilan farqlanadi",
+        "Kichik oʻlchamli va past hosildor boʻladi",
+        "Organik modda umuman sintez qilmaydi",
+        "Faqat suvda yashaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra poliploid oʻsimliklar organik moddalarni faol sintez qiladi, hosildorligi yuqori va katta oʻlchamli boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#7978f0c1"
+    },
+    {
+      "q": "Sunʼiy mutagenez usuli deb nimaga aytiladi?",
+      "v": [
+        "Kuchli taʼsir etuvchi omillar taʼsirida oʻsimliklarda mutatsiyalar olishga",
+        "Oʻsimliklarni geografik joylashtirishga",
+        "Bir turga mansub navlarni chatishtirishga",
+        "Xromosomalar sonini ikki baravar oshirishga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sunʼiy mutagenez — kuchli taʼsir etuvchi omillar taʼsirida oʻsimliklarda mutatsiyalar olishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#1ac4aa2b"
+    },
+    {
+      "q": "Sunʼiy mutagenez orqali gʻoʻzaning AN402, Samarqand-3, Yulduz navlarini kimlar yaratgan?",
+      "v": [
+        "Akademiklar Nabijon Nazirov va Oston Jalilovlar",
+        "Akademik Sodiq Mirahmedov",
+        "G.D.Karpechenko",
+        "N.I.Vavilov"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sunʼiy mutagenez orqali AN402, Samarqand-3, Yulduz gʻoʻza navlarini Nabijon Nazirov va Oston Jalilovlar yaratgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#31528b96"
+    },
+    {
+      "q": "AN402, Samarqand-3, Yulduz — bular qaysi oʻsimlikning navlari?",
+      "v": [
+        "Gʻoʻza navlari",
+        "Bugʻdoy navlari",
+        "Makkajoʻxori navlari",
+        "Javdar navlari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra AN402, Samarqand-3, Yulduz — sunʼiy mutagenez orqali olingan serhosil gʻoʻza navlaridir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#4609326e"
+    },
+    {
+      "q": "Diploid bugʻdoy navida xromosomalar soni qancha boʻladi?",
+      "v": [
+        "2n = 14",
+        "4n = 28",
+        "2n = 28",
+        "n = 7"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bugʻdoyning diploid navida xromosomalar soni 2n = 14 boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#28de78b2"
+    },
+    {
+      "q": "Tetraploid bugʻdoyda xromosomalar soni qancha boʻladi?",
+      "v": [
+        "4n = 28",
+        "2n = 14",
+        "3n = 21",
+        "8n = 56"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tetraploid bugʻdoyda xromosomalar soni 4n = 28 boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#13d4c2c5"
+    },
+    {
+      "q": "Seleksiya natijasida yetishtirilgan bugʻdoyning past boʻyli, serhosil navi tarkibida nima mavjud?",
+      "v": [
+        "Yuqori sifatli kleykovina",
+        "Zaharli moddalar",
+        "Ortiqcha suv miqdori",
+        "Yovvoyi javdar genlari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra seleksiya natijasida yetishtirilgan past boʻyli, serhosil bugʻdoy navi tarkibida yuqori sifatli kleykovina mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#1950693d"
+    },
+    {
+      "q": "Geterozis usulida serhosil oʻsimlik navlari qanday olinadi?",
+      "v": [
+        "Ahamiyatli genlar liniyalarda mustahkamlanib, olingan duragaylar chetdan changlantiriladi",
+        "Oʻsimliklar sunʼiy mutatsiyaga uchratiladi",
+        "Xromosomalar soni sunʼiy koʻpaytiriladi",
+        "Faqat yakka tanlash qoʻllaniladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra geterozisda ahamiyatli genlar liniyalarda mustahkamlanib, olingan duragaylar chetdan changlantiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#39718b76"
+    },
+    {
+      "q": "Geterozis nima?",
+      "v": [
+        "Duragay kuchining samarasi",
+        "Xromosomalar sonining oshishi",
+        "Tabiiy tanlanish natijasi",
+        "Mutatsiyaning bir turi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra geterozis — duragay kuchining samarasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#df1383cb"
+    },
+    {
+      "q": "Geterozisning mohiyati nimadan iborat?",
+      "v": [
+        "Birinchi avlod duragaylar ota-ona organizmga nisbatan hosildor, chidamli va yashovchan boʻladi",
+        "Ikkinchi avlod duragaylar bepusht boʻladi",
+        "Duragaylar ota-onaga nisbatan zaif boʻladi",
+        "Duragaylarda xromosomalar soni kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra geterozisda birinchi avlod duragaylar ota-onaga nisbatan hosildor, chidamli va yashovchan boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#fdc7c212"
+    },
+    {
+      "q": "Geterozis hodisasida genlar qanday holatga oʻtadi?",
+      "v": [
+        "Koʻpchilik genlar geterozigotali holatga oʻtadi va dominant genlarning qulay oʻzaro taʼsiri vujudga keladi",
+        "Barcha genlar gomozigotali holatga oʻtadi",
+        "Genlar mutatsiyaga uchraydi",
+        "Xromosomalar soni ikki baravar ortadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra geterozisda koʻpchilik genlar geterozigotali holatga oʻtib, dominant genlarning qulay taʼsiri vujudga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#514a7e68"
+    },
+    {
+      "q": "Hayvonlar seleksiyasida qanday usullardan foydalaniladi?",
+      "v": [
+        "Oʻsimliklar seleksiyasida qoʻllaniladigan usullardan ham foydalaniladi",
+        "Faqat sunʼiy mutagenezdan",
+        "Faqat eksperimental poliploidiyadan",
+        "Hech qanday umumiy usul yoʻq"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra hayvonlar seleksiyasida oʻsimliklar seleksiyasida qoʻllaniladigan usullardan ham foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#5649d707"
+    },
+    {
+      "q": "Hayvonlar seleksiyasining oʻziga xos xususiyatlari nimadan kelib chiqadi?",
+      "v": [
+        "Hayvon tabiatidan",
+        "Iqlim sharoitidan",
+        "Oʻsimlik navlaridan",
+        "Mikroorganizm shtammlaridan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra hayvonlar seleksiyasining oʻziga xos xususiyatlari hayvon tabiatidan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#07bf2e58"
+    },
+    {
+      "q": "Hayvonlar seleksiyasining oʻziga xos ikki xususiyati qaysi?",
+      "v": [
+        "Xonakilashtirilgan hayvonlar faqat jinsiy yoʻl bilan koʻpayadi; har bir hayvon kam nasl beradi va qimmat turadi",
+        "Hayvonlar jinssiz yoʻl bilan koʻpayadi va koʻp nasl beradi",
+        "Hayvonlar arzon boʻlib, koʻp nasl beradi",
+        "Hayvonlar changlanish orqali koʻpayadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra xonakilashtirilgan hayvonlar faqat jinsiy yoʻl bilan koʻpayadi, kam nasl beradi va qimmat turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#96546907"
+    },
+    {
+      "q": "Eksterer deb nimaga aytiladi?",
+      "v": [
+        "Hayvonlar tashqi shakllarining butun yigʻindisi, tanasi tuzilishi va tana qismlarining oʻzaro nisbatiga",
+        "Hayvonning ichki organlari faoliyatiga",
+        "Hayvonning genetik tarkibiga",
+        "Hayvon yashaydigan muhitga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra hayvonlar tashqi shakllari yigʻindisi, tana tuzilishi va qismlarining oʻzaro nisbati eksterer deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#ecb55f63"
+    },
+    {
+      "q": "Qoramolning sersutliligining rivojlanishi qaysi belgilarga bogʻliq?",
+      "v": [
+        "Muayyan tana tuzilishiga, qon aylanish va nafas olish sistemalarining yaxshi rivojlanganligiga",
+        "Faqat ozuqa miqdoriga",
+        "Faqat iqlim sharoitiga",
+        "Faqat xromosomalar soniga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra qoramol sersutliligi muayyan tana tuzilishi, qon aylanish va nafas olish sistemalarining rivojlanganligiga bogʻliq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#30da63eb"
+    },
+    {
+      "q": "Nima uchun hayvonlar seleksiyasida belgilar oʻrtasidagi bogʻlanishlarni hisobga olish muhim?",
+      "v": [
+        "Chunki biron belgi boʻyicha yuqori hosildorlik muayyan eksterer belgilarga bogʻliq",
+        "Chunki barcha belgilar bir-biridan mustaqil",
+        "Chunki hayvonlar jinssiz koʻpayadi",
+        "Chunki eksterer irsiylanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra belgilar oʻrtasidagi bogʻlanish muhim, chunki yuqori hosildorlik muayyan eksterer belgilarga bogʻliq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#bd07c33a"
+    },
+    {
+      "q": "Nima uchun chorvachilikda yakka tanlash keng qoʻllaniladi?",
+      "v": [
+        "Avlodlar soni kam boʻlganligi sababli",
+        "Avlodlar soni juda koʻp boʻlganligi sababli",
+        "Hayvonlar changlanishi sababli",
+        "Hayvonlar arzon boʻlgani sababli"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra chorvachilikda avlodlar soni kam boʻlgani sababli xoʻjalik jihatdan foydali belgilarga qarab yakka tanlash keng qoʻllaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#473a96c3"
+    },
+    {
+      "q": "Qishloq xoʻjalik hayvonlarida qanday chatishtirish olib boriladi?",
+      "v": [
+        "Bir zotga mansub hayvonlarni oʻzaro yoki begona zot yohud turga mansub hayvonlarni chatishtirish",
+        "Faqat oʻsimliklar bilan chatishtirish",
+        "Faqat mikroorganizmlar bilan chatishtirish",
+        "Chatishtirish umuman qoʻllanilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra qishloq xoʻjalik hayvonlarida bir zotga mansub yoki begona zot yohud turga mansub hayvonlar chatishtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#b1a87506"
+    },
+    {
+      "q": "Begona zotlarni chatishtirish qanday maqsadda amalga oshiriladi?",
+      "v": [
+        "Bir necha foydali belgilar kombinatsiyasini hosil qilish maqsadida",
+        "Hayvonlar sonini kamaytirish maqsadida",
+        "Bepusht nasl olish maqsadida",
+        "Xromosomalarni koʻpaytirish maqsadida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra begona zotlarni chatishtirish bir necha foydali belgilar kombinatsiyasini hosil qilish uchun amalga oshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#d9316867"
+    },
+    {
+      "q": "Begona zotlarni chatishtirish keyinchalik nima bilan qoʻshib olib borilsa, zot xususiyatlarini yaxshilashga imkon beradi?",
+      "v": [
+        "Qatʼiy tanlash bilan",
+        "Sunʼiy mutagenez bilan",
+        "Eksperimental poliploidiya bilan",
+        "Chetdan changlantirish bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra begona zotlarni chatishtirish keyinchalik qatʼiy tanlash bilan qoʻshib olib borilsa, zot xususiyatlarini yaxshilaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#8c628e5b"
+    },
+    {
+      "q": "Hayvonlarning har xil zotlarini yoki oʻsimliklar navlarini turlararo chatishtirishdan olingan birinchi avlod duragayi qanday farq qiladi?",
+      "v": [
+        "Hayotiy xususiyatlari bir muncha yuqori boʻlib, kuchli rivojlanadi",
+        "Zaif va kasalmand boʻladi",
+        "Har doim bepusht boʻladi",
+        "Ota-onaga nisbatan past hosildor boʻladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bunday chatishtirishdan olingan birinchi avlod duragayi yuqori hayotiy xususiyatlari va kuchli rivojlanishi bilan farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#c2c5ddaf"
+    },
+    {
+      "q": "Zotlararo chatishtirish orqali qaysi zotlar yaratilgan?",
+      "v": [
+        "Askaniya rambulesi, hisor va qorakoʻl qoʻy zotlari, kostroma qoramol zoti, axaltaka ot zoti, broyler tovuq zoti",
+        "Arxaromerinos qoʻy zoti va qoʻtos-qoramol duragayi",
+        "Tritikale va Saratov-29",
+        "Toshkent-1 va AN402"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra zotlararo chatishtirish orqali askaniya rambulesi, hisor, qorakoʻl, kostroma, axaltaka, broyler kabi zotlar yaratilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#899ad49a"
+    },
+    {
+      "q": "Mayin jun beradigan askaniya rambule qoʻy zoti qanday yoʻl bilan yaratilgan?",
+      "v": [
+        "Zotlararo chatishtirish orqali",
+        "Uzoq formalarni duragaylash orqali",
+        "Sunʼiy mutagenez orqali",
+        "Eksperimental poliploidiya orqali"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mayin jun beradigan askaniya rambule zoti zotlararo chatishtirish orqali yaratilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#171cfc12"
+    },
+    {
+      "q": "Kostroma qoramol zoti qaysi xususiyati bilan ajralib turadi?",
+      "v": [
+        "Koʻp sut beradi",
+        "Mayin jun beradi",
+        "Koʻp tuxum beradi",
+        "Tez yuguradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra kostroma qoramol zoti koʻp sut beradigan zot sifatida keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#138a6e24"
+    },
+    {
+      "q": "Uy hayvonlarining uzoq formalarini duragaylash orqali yaratilgan zotga qaysi biri misol boʻladi?",
+      "v": [
+        "Merinos qoʻy bilan yovvoyi qoʻy arxarni chatishtirishdan olingan arxaromerinos qoʻy zoti",
+        "Askaniya rambule qoʻy zoti",
+        "Kostroma qoramol zoti",
+        "Broyler tovuq zoti"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra uzoq formalarni duragaylashga arxaromerinos qoʻy zoti misol boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#451dbec9"
+    },
+    {
+      "q": "Arxaromerinos qoʻy zoti qaysi hayvonlarni chatishtirishdan olingan?",
+      "v": [
+        "Mayin jun beradigan merinos qoʻy bilan yovvoyi qoʻy arxar",
+        "Hisor bilan qorakoʻl qoʻy",
+        "Qoʻtos bilan qoramol",
+        "Askaniya bilan kostroma"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra arxaromerinos zoti merinos qoʻy bilan yovvoyi qoʻy arxarni chatishtirishdan olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m65#c3c0b6da"
+    },
+    {
+      "q": "Baland togʻli hududlarda yashaydigan qaysi uy hayvoni qoramol bilan chatishtirilib duragay olingan?",
+      "v": [
+        "Qoʻtos",
+        "Arxar",
+        "Askaniya qoʻy",
+        "Axaltaka ot"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra baland togʻli hududlarda yashaydigan qoʻtos qoramol bilan chatishtirilib duragay olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#b750cf24"
+    },
+    {
+      "q": "Uzoq formalarni chatishtirishdan olingan zotlarning muhim xususiyati qanday?",
+      "v": [
+        "Turli muhit sharoitida bemalol yashay oladi va mahsuldorligi yuqori boʻladi",
+        "Faqat bitta iqlimda yashaydi va past mahsuldor boʻladi",
+        "Butunlay bepusht boʻladi",
+        "Faqat laboratoriyada yashaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra uzoq formalarni chatishtirishdan olingan zotlar turli muhitda bemalol yashaydi va mahsuldorligi yuqori boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m65#81c58540"
+    }
+  ]
+}

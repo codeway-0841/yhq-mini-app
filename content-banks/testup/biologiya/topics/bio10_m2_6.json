@@ -1,0 +1,696 @@
+{
+  "nom": "Biologiya-10, 2.6. Prokariot hujayra",
+  "bolim": "II BOB. Hujayra biologiyasi",
+  "savollar": [
+    {
+      "q": "Hujayralar tuzilishiga qarab qaysi ikki guruhga bo'linadi?",
+      "v": [
+        "Prokariot (yadrosiz) va eukariot (yadroli)",
+        "Aerob va anaerob",
+        "Bir hujayrali va ko'p hujayrali",
+        "Avtotrof va geterotrof"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra hujayralar tuzilishiga qarab prokariot (yadrosiz) va eukariot (yadroli) guruhlariga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m2_6#5554301d"
+    },
+    {
+      "q": "\"Prokariot\" hujayralar qanday hujayralar hisoblanadi?",
+      "v": [
+        "Yadrosiz",
+        "Yadroli",
+        "Ko'p yadroli",
+        "Ikki yadroli"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra prokariotlar yadrosiz, eukariotlar esa yadroli hujayralardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m2_6#c64bd62c"
+    },
+    {
+      "q": "Prokariotlar guruhiga qaysi organizmlar kiradi?",
+      "v": [
+        "Bakteriyalar",
+        "O'simliklar",
+        "Zamburug'lar",
+        "Hayvonlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra birinchi guruhga, ya'ni prokariotlarga bakteriyalar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m2_6#f747c3dd"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri eukariotlar guruhiga kirmaydi?",
+      "v": [
+        "Bakteriyalar",
+        "Protistalar",
+        "Zamburug'lar",
+        "O'simliklar va hayvonlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra eukariotlarga protistalar, zamburug'lar, o'simliklar va hayvonlar kiradi; bakteriyalar esa prokariotlarga kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#151f9e58"
+    },
+    {
+      "q": "Prokariot hujayralarning o'rtacha o'lchami qanchani tashkil etadi?",
+      "v": [
+        "0.25-10 mkm",
+        "10-50 mkm",
+        "50-100 mkm",
+        "100-250 mkm"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra prokariot hujayralar o'lchami eukariotlarga nisbatan ancha kichik bo'lib, o'rtacha 0.25-10 mkm ni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#27aecaaf"
+    },
+    {
+      "q": "Prokariot hujayralarning o'lchami eukariotlarga nisbatan qanday?",
+      "v": [
+        "Ancha kichik",
+        "Ancha katta",
+        "Bir xil",
+        "Ikki barobar katta"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra prokariot hujayralarning o'lchami eukariotlarga nisbatan ancha kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m2_6#b5d4c448"
+    },
+    {
+      "q": "Ipsimon oltingugurt bakteriyalarining diametri qancha bo'lishi aniqlangan?",
+      "v": [
+        "50 mkm",
+        "10 mkm",
+        "250 mkm",
+        "750 mkm"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra ayrim ipsimon oltingugurt bakteriyalarining diametri 50 mkm ga yetadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m2_6#03b78c47"
+    },
+    {
+      "q": "Spiroxeta bakteriyalarining uzunligi qancha bo'lishi aniqlangan?",
+      "v": [
+        "250 mkm gacha",
+        "50 mkm gacha",
+        "10 mkm gacha",
+        "750 mkm gacha"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra uzunligi 250 mkm gacha bo'lgan spiroxeta bakteriyalar aniqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m2_6#6cb5f729"
+    },
+    {
+      "q": "Ma'lum bo'lgan bakteriyalarning eng kattasining uzunligi qanchaga teng?",
+      "v": [
+        "750 mkm (0.75 mm)",
+        "250 mkm",
+        "50 mkm",
+        "10 mkm"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra ma'lum bo'lgan bakteriyalarning eng kattasining uzunligi 750 mkm (0.75 mm) ni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m2_6#fb1bf912"
+    },
+    {
+      "q": "Sharsimon shaklga ega bo'lgan bakteriyalar qanday nomlanadi?",
+      "v": [
+        "Kokklar",
+        "Batsillalar",
+        "Vibrionlar",
+        "Spirillalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra sharsimon shakldagi bakteriyalar kokklar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#d093f7a1"
+    },
+    {
+      "q": "Tayoqchasimon shaklga ega bo'lgan bakteriyalar qanday nomlanadi?",
+      "v": [
+        "Batsillalar",
+        "Kokklar",
+        "Vibrionlar",
+        "Spirillalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra tayoqchasimon bakteriyalar batsillalar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#33a6e704"
+    },
+    {
+      "q": "Egilgan shaklga ega bo'lgan bakteriyalar qanday nomlanadi?",
+      "v": [
+        "Vibrionlar",
+        "Kokklar",
+        "Batsillalar",
+        "Spirillalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra egilgan shakldagi bakteriyalar vibrion deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#21af6bb4"
+    },
+    {
+      "q": "Spiralsimon buralgan shaklga ega bo'lgan bakteriyalar qanday nomlanadi?",
+      "v": [
+        "Spirillalar",
+        "Kokklar",
+        "Batsillalar",
+        "Vibrionlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra spiralsimon buralgan bakteriyalar spirillalar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#c1fb0f45"
+    },
+    {
+      "q": "Prokariot hujayralarning tashqi qoplamini nima tashkil etadi?",
+      "v": [
+        "Hujayra devori va sitoplazmatik membrana",
+        "Faqat sitoplazmatik membrana",
+        "Faqat murein xaltachalar",
+        "Yadro membranasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra prokariot hujayralarning tashqi qoplamini hujayra devori va sitoplazmatik membrana tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#19857ba4"
+    },
+    {
+      "q": "Ayrim bakteriyalarning qoplamida qo'shimcha ravishda nima bo'lishi mumkin?",
+      "v": [
+        "Qo'shimcha tashqi membranalar",
+        "Xitin qavat",
+        "Selluloza tola",
+        "Ikkinchi yadro"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra ayrim bakteriyalarning qoplamida qo'shimcha tashqi membranalar ham bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#efa71701"
+    },
+    {
+      "q": "Ko'pchilik bakteriyalarning hujayra devori tashqi tomondan nima bilan o'ralgan bo'ladi?",
+      "v": [
+        "Shilimshiq kapsula",
+        "Selluloza qobiq",
+        "Xitin qavat",
+        "Ikki qavat lipid"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra ko'pchilik bakteriyalarning hujayra devori shilimshiq kapsula bilan o'ralgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#c3bad083"
+    },
+    {
+      "q": "Bakteriyaning hujayra devori asosiy tarkibini qaysi modda tashkil etadi?",
+      "v": [
+        "Polisaxarid murein",
+        "Selluloza",
+        "Xitin",
+        "Peptidoglikan lipidi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bakteriya hujayra devorining asosiy tarkibini polisaxarid murein moddasi tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#799941b2"
+    },
+    {
+      "q": "Bakteriyaning hujayra devori qaysi organizmlar qobig'idan farq qiladi?",
+      "v": [
+        "O'simlik va zamburug'lar qobig'idan",
+        "Faqat hayvonlar qobig'idan",
+        "Faqat protistalar qobig'idan",
+        "Boshqa bakteriyalar qobig'idan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bakteriyaning hujayra devori o'simlik va zamburug'lar hujayra qobig'idan farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#1814bd6e"
+    },
+    {
+      "q": "Murein molekulasining tuzilishi qanday bo'ladi?",
+      "v": [
+        "To'rsimon, parallel polisaxaridlar qisqa peptid bog'lar bilan zanjirsimon bog'langan",
+        "Bir zanjirli tekis lipid qavati",
+        "Xitindan tuzilgan halqasimon",
+        "Sellulozadan iborat tolasimon"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra murein molekulasi to'rsimon bo'lib, o'zaro parallel polisaxaridlar qisqa peptid bog'lar yordamida zanjirsimon holatda bog'langan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m2_6#e28ee39c"
+    },
+    {
+      "q": "Bakteriya hujayrasidagi murein xaltachalar qanday vazifani bajaradi?",
+      "v": [
+        "Ustma-ust joylashib qattiq tayanch sinchni tashkil etib, hujayraga doimiy shakl beradi",
+        "Fotosintez jarayonini amalga oshiradi",
+        "Irsiy axborotni saqlaydi",
+        "Energiya ishlab chiqaradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra hujayra devoridagi murein xaltachalar ustma-ust joylashib qattiq tayanch sinchni hosil qilib, bakteriya hujayrasiga doimiy shakl berib turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#3b6ada3c"
+    },
+    {
+      "q": "Bakteriya hujayra devori sirtidagi vorsinkalar (oqsil o'simtalar) qanday vazifani bajaradi?",
+      "v": [
+        "Bakteriyani boshqa hujayralarga biriktirish va bir bakteriyadan boshqasiga DNK o'tkazish",
+        "Fotosintez qilish",
+        "Harakatlanish",
+        "Ovqat hazm qilish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra vorsinkalar bakteriyani boshqa organizmlar hujayrasiga biriktirish va bir bakteriyadan boshqasiga DNK o'tkazish vazifasini bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m2_6#e86124f6"
+    },
+    {
+      "q": "Ayrim bakteriyalarning hujayrasida bo'ladigan, hujayradan bir necha marta uzun bo'lgan tuzilma qanday nomlanadi?",
+      "v": [
+        "Xivchin",
+        "Vorsinka",
+        "Mezosoma",
+        "Ribosoma"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra ayrim bakteriyalarda bo'ladigan xivchinlar (bitta yoki bir nechta) bakteriya hujayrasidan bir necha marta uzun bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#52c09782"
+    },
+    {
+      "q": "Prokariotlarning irsiy axborot saqlovchi tuzilmasi nimadan iborat?",
+      "v": [
+        "Sitoplazmada joylashgan halqasimon DNK (bakteriya xromosomasi)",
+        "Yadroda joylashgan chiziqli DNK",
+        "Membranali xromosomalar",
+        "RNK molekulalari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra prokariotlarning irsiy axborot saqlovchi tuzilmasi sitoplazmada joylashgan halqasimon DNK bo'lib, shartli ravishda bakteriya xromosomasi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#05ca8d72"
+    },
+    {
+      "q": "Prokariotlarda shakllangan yadro bormi?",
+      "v": [
+        "Yo'q, shakllangan yadro bo'lmaydi",
+        "Ha, to'liq shakllangan yadro bor",
+        "Faqat yadrocha bor",
+        "Ikki yadro bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra prokariotlarda shakllangan yadro bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m2_6#a087d9d0"
+    },
+    {
+      "q": "Bakteriya sitoplazmasidagi kichik DNK molekulalari, avtonom ko'payadigan va bo'linishda yangi hujayralarga o'tadigan tuzilma qanday nomlanadi?",
+      "v": [
+        "Plazmidlar",
+        "Mezosomalar",
+        "Ribosomalar",
+        "Xromotoforlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bakteriya sitoplazmasida avtonom holda ko'payadigan va hujayra bo'linganda yangi hujayralarga o'tadigan kichik DNK molekulalari plazmidlar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m2_6#cea80ea4"
+    },
+    {
+      "q": "Bakteriya hujayrasida quyidagi membranali organoidlardan qaysi biri bo'lmaydi?",
+      "v": [
+        "Mitoxondriya",
+        "Ribosoma",
+        "Sitoplazmatik membrana",
+        "Halqasimon DNK"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bakteriya hujayrasida mitoxondriya, plastida, endoplazmatik to'r, Golji majmuasi, lizosoma kabi membranali organoidlar bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#3c84f5ed"
+    },
+    {
+      "q": "Prokariotlarda membranali organoidlarning vazifasini nima bajaradi?",
+      "v": [
+        "Sitoplazmatik membrana yoki uning hosilalari",
+        "Halqasimon DNK",
+        "Hujayra devori",
+        "Kapsula"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra prokariotlarda membranali organoidlar vazifasini sitoplazmatik membrana yoki uning hosilalari bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#3f8e10f6"
+    },
+    {
+      "q": "Prokariotlarning sitoplazmatik membranasi ichki tomonida hosil qiladigan bo'rtmalar qanday nomlanadi?",
+      "v": [
+        "Mezosomalar",
+        "Plazmidlar",
+        "Vorsinkalar",
+        "Ribosomalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra prokariotlarning sitoplazmatik membranasi ichki tomonida bo'rtmalar, ya'ni mezosomalar hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#8e0b31c0"
+    },
+    {
+      "q": "Mezosomalar qanday vazifani bajaradi?",
+      "v": [
+        "Hujayra bo'linishida ko'ndalang to'siq hosil qilish va DNK birikish joyi bo'lish",
+        "Fotosintez qilish",
+        "Oqsil sintezi",
+        "Azotni o'zlashtirish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra mezosomalar hujayra bo'linayotgan vaqtda ko'ndalang to'siqlarni hosil qilishda ishtirok etadi va DNKning birikish joyi hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m2_6#f5506184"
+    },
+    {
+      "q": "Prokariot hujayralarda quyidagilardan qaysi biri bo'lmaydi?",
+      "v": [
+        "Hujayra markazi va sitoskelet",
+        "Ribosomalar",
+        "Sitoplazma",
+        "Hujayra devori"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra prokariot hujayralarda hujayra markazi va sitoskelet bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#e27ee38c"
+    },
+    {
+      "q": "Prokariot hujayra sitoplazmasida qaysi organoid juda ko'p miqdorda joylashadi?",
+      "v": [
+        "Ribosomalar",
+        "Mitoxondriyalar",
+        "Lizosomalar",
+        "Plastidalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra prokariot hujayra sitoplazmasida juda ko'p ribosomalar joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#d656d454"
+    },
+    {
+      "q": "Tuproq va suv muhitida yashaydigan bakteriyalarda bo'ladigan, joyini o'zgartirishga yordam beradigan tuzilma qanday nomlanadi?",
+      "v": [
+        "Gazli vakuolalar",
+        "Mezosomalar",
+        "Xromotoforlar",
+        "Kapsula"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra tuproq va suv muhitidagi bakteriyalarda gazli vakuolalar bo'lib, ularning hajmini o'zgartirish orqali bakteriya kam energiya sarflab joyini o'zgartiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m2_6#d030f064"
+    },
+    {
+      "q": "Gazli vakuolalar bakteriyaga qanday imkoniyat beradi?",
+      "v": [
+        "Kam energiya sarflab yuqoriga va pastga joyini o'zgartirish",
+        "Fotosintez qilish",
+        "Spora hosil qilish",
+        "Azotni o'zlashtirish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra gazli vakuolalarning hajmini o'zgartirish orqali bakteriyalar juda kam energiya sarflab yuqoriga va pastga joyini o'zgartira oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#c2ee2fab"
+    },
+    {
+      "q": "Sianobakteriyalar hujayrasida fotosintez pigmentlari joylashgan tuzilma qanday nomlanadi?",
+      "v": [
+        "Xromotoforlar",
+        "Mezosomalar",
+        "Plazmidlar",
+        "Ribosomalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra sianobakteriyalar hujayrasida xromotoforlar bo'lib, ularda fotosintez xususiyatiga ega pigmentlar joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m2_6#be6c3de2"
+    },
+    {
+      "q": "Aerob bakteriyalar qanday muhitda yashashga moslashgan?",
+      "v": [
+        "Kislorodli muhitda",
+        "Kislorodsiz muhitda",
+        "Faqat sho'r muhitda",
+        "Faqat issiq muhitda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra aerob bakteriyalar kislorodli muhitda yashashga moslashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#f2a2b622"
+    },
+    {
+      "q": "Anaerob bakteriyalar qanday muhitda yashashga moslashgan?",
+      "v": [
+        "Kislorodsiz muhitda",
+        "Kislorodli muhitda",
+        "Faqat suvli muhitda",
+        "Faqat tuproqda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra anaerob bakteriyalar kislorodsiz muhitda yashashga moslashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#2cd69310"
+    },
+    {
+      "q": "Atmosfera havosidagi azotni o'zlashtirish xususiyatiga ega bakteriyalar qanday ataladi?",
+      "v": [
+        "Azotofiksatsiyalovchi bakteriyalar",
+        "Chirituvchi bakteriyalar",
+        "Achituvchi bakteriyalar",
+        "Aerob bakteriyalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra atmosfera havosidagi azotni o'zlashtiruvchi bakteriyalar azotofiksatsiyalovchi bakteriyalar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m2_6#3018fb5b"
+    },
+    {
+      "q": "Bakteriyalar faoliyatiga ko'ra qaysi guruhlarga ajratiladi?",
+      "v": [
+        "Chirituvchi, achituvchi, kasallik tarqatuvchi va tugunak bakteriyalar",
+        "Aerob va anaerob bakteriyalar",
+        "Kokk va batsillalar",
+        "Prokariot va eukariotlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bakteriyalar faoliyatiga ko'ra chirituvchi, achituvchi, kasallik tarqatuvchi va tugunak bakteriyalarga ajratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#cb0fd4e9"
+    },
+    {
+      "q": "Bakteriyalar tabiatda qaysi jarayonda muhim rol o'ynaydi?",
+      "v": [
+        "Moddalarning davriy aylanishida",
+        "Yog'ingarchilik hosil bo'lishida",
+        "Tog' jinslari yemirilishida",
+        "Yerning aylanishida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra bakteriyalar tabiatda moddalarning davriy aylanishida muhim rol o'ynaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#656f8eae"
+    },
+    {
+      "q": "Kasallik tarqatuvchi bakteriyalar odamda qaysi kasalliklarni keltirib chiqaradi?",
+      "v": [
+        "Sil, xolera, bo'g'ma",
+        "Gripp, qizamiq, suvchechak",
+        "Diabet, gipertoniya",
+        "Anemiya, raxit"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra kasallik tarqatuvchi bakteriyalar odamda sil, xolera, bo'g'ma kabi kasalliklarni keltirib chiqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#d4506418"
+    },
+    {
+      "q": "Noqulay sharoit vujudga kelganda bakteriyalar qanday himoya tuzilmasini hosil qiladi?",
+      "v": [
+        "Spora",
+        "Kapsula",
+        "Vakuola",
+        "Xivchin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra noqulay sharoit vujudga kelganda bakteriyalar spora hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#216da177"
+    },
+    {
+      "q": "Spora hosil qilish jarayonida bakteriya hujayrasi nima hosil qiladi?",
+      "v": [
+        "Bir necha qavatli qobiq",
+        "Yakka qavatli membrana",
+        "Shilimshiq kapsula",
+        "Xivchinlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra spora hosil qilish jarayonida bakteriya hujayralari bir necha qavatli qobiq hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#e957a189"
+    },
+    {
+      "q": "Bakteriya sporalarining o'ziga xos xususiyati nimada?",
+      "v": [
+        "Past va yuqori haroratlarga hamda noqulay omillarga o'ta chidamli",
+        "Faqat issiq muhitda hosil bo'ladi",
+        "Bir kunda yemiriladi",
+        "Fotosintez qiladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra sporalar past va yuqori haroratlarga va boshqa noqulay omillarga o'ta chidamli bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#60768eb0"
+    },
+    {
+      "q": "Bakteriya sporasi o'z yashovchanligini qancha muddat saqlab qolishi mumkin?",
+      "v": [
+        "Bir necha o'n yillar davomida",
+        "Bir necha soat",
+        "Bir necha kun",
+        "Bir yildan oshmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra spora bir necha o'n yillar davomida ham o'z yashovchanligini saqlab qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#2e3d95b3"
+    },
+    {
+      "q": "Prokariotlarning ko'pchiligi hujayralar soniga ko'ra qanday hisoblanadi?",
+      "v": [
+        "Bir hujayrali",
+        "Ko'p hujayrali",
+        "Ikki hujayrali",
+        "Yadrosiz to'qima"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra prokariotlarning ko'pchiligi bir hujayrali hisoblanadi, lekin koloniya hosil qiluvchi va ko'p hujayrali vakillari ham uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m2_6#d8452219"
+    },
+    {
+      "q": "Koloniya hosil qiluvchi va ko'p hujayrali prokariotlarga qaysi organizmlar misol bo'ladi?",
+      "v": [
+        "Ayrim sianobakteriyalar",
+        "Barcha spiroxetalar",
+        "Zamburug'lar",
+        "Protistalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra koloniya hosil qiluvchi va ko'p hujayrali prokariotlarga ayrim sianobakteriyalar misol bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m2_6#c27852f3"
+    }
+  ]
+}

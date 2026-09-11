@@ -1,0 +1,1609 @@
+{
+  "nom": "Murakkab foizlar",
+  "bolim": "Nisbat, foiz va matnli masalalar",
+  "blok": "foiz",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Alisher 4 000 000 so'mni yillik 10% murakkab foiz sharti bilan bankka 2 yilga qo'ydi. Muddat oxirida uning hisobida qancha pul bo'ladi?",
+      "v": [
+        "4 400 000 so'm",
+        "4 800 000 so'm",
+        "4 840 000 so'm",
+        "5 324 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Murakkab foizda har yili foiz oldingi yil oxiridagi summaga hisoblanadi: S = S₀(1 + p/100)ⁿ. Bu yerda S = 4 000 000·(1,1)² = 4 000 000·1,21 = 4 840 000 so'm. 4 800 000 — sodda foiz bilan hisoblash natijasi, 4 400 000 — faqat birinchi yil hisoblangan summa. Javob: 4 840 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "omonat-yakuniy-summa",
+      "id": "matematika_foiz_m02-murakkab-foizlar#51a67aad"
+    },
+    {
+      "q": "Dilnoza 6 000 000 so'mni yillik 5% murakkab foizli omonatga 3 yil muddatga joylashtirdi. Uch yildan keyin omonat summasi qanday bo'ladi?",
+      "v": [
+        "6 945 750 so'm",
+        "6 900 000 so'm",
+        "6 615 000 so'm",
+        "6 300 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Har yili summa 1,05 marta ortadi, demak S = 6 000 000·(1,05)³. (1,05)³ = 1,157625, shuning uchun S = 6 000 000·1,157625 = 6 945 750 so'm. 6 900 000 — sodda foizda 15% qo'shish natijasi, 6 615 000 — ikki yillik summa. Javob: 6 945 750 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "omonat-yakuniy-summa",
+      "id": "matematika_foiz_m02-murakkab-foizlar#08efd94b"
+    },
+    {
+      "q": "Bankka 2 500 000 so'm yillik 8% murakkab foiz bilan 2 yilga qo'yildi. Hisobdagi yakuniy summani toping.",
+      "v": [
+        "2 700 000 so'm",
+        "2 900 000 so'm",
+        "3 149 280 so'm",
+        "2 916 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Yillik ko'paytuvchi 1,08 bo'lgani uchun ikki yilda summa (1,08)² = 1,1664 marta ortadi. S = 2 500 000·1,1664 = 2 916 000 so'm. 2 900 000 — sodda foizdagi 16% qo'shimcha, 3 149 280 — uch yilga hisoblangan ortiqcha natija. Javob: 2 916 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "omonat-yakuniy-summa",
+      "id": "matematika_foiz_m02-murakkab-foizlar#f3b41c77"
+    },
+    {
+      "q": "Tadbirkor 12 000 000 so'm mablag'ini yillik 15% murakkab foizli depozitga 2 yilga qo'ydi. Muddat tugagach hisobdagi summa qancha bo'ladi?",
+      "v": [
+        "15 600 000 so'm",
+        "15 870 000 so'm",
+        "13 800 000 so'm",
+        "18 250 500 so'm"
+      ],
+      "t": 1,
+      "izoh": "S = 12 000 000·(1,15)². (1,15)² = 1,3225, demak S = 12 000 000·1,3225 = 15 870 000 so'm. 15 600 000 — sodda foizda 30% qo'shilgani, 13 800 000 — bir yildan keyingi summa, 18 250 500 — uch yilga hisoblangani. Javob: 15 870 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "omonat-yakuniy-summa",
+      "id": "matematika_foiz_m02-murakkab-foizlar#8287b06f"
+    },
+    {
+      "q": "Kitob do'konida darslik narxi 40 000 so'm edi. Birinchi oyda narx 10% ga, keyingi oyda esa yangi narxdan 20% ga oshdi. Darslikning hozirgi narxi qancha?",
+      "v": [
+        "44 000 so'm",
+        "52 000 so'm",
+        "52 800 so'm",
+        "48 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Ketma-ket oshishlarda ko'paytuvchilar ko'paytiriladi: 40 000·1,1·1,2. Avval 40 000·1,1 = 44 000, so'ng 44 000·1,2 = 52 800 so'm. 52 000 — foizlarni 10 + 20 = 30% deb qo'shish xatosi, 44 000 — ikkinchi bosqichni tashlab ketish. Javob: 52 800 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "narx-ketma-ket-oshish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#115a3aca"
+    },
+    {
+      "q": "Shirinlik narxi 8 000 so'm edi va ikki oy davomida har oyda 15% dan oshdi. Ikki oydan keyingi narxni hisoblang.",
+      "v": [
+        "10 400 so'm",
+        "10 580 so'm",
+        "9 200 so'm",
+        "12 167 so'm"
+      ],
+      "t": 1,
+      "izoh": "Har oy narx 1,15 marta ortadi: 8 000·(1,15)² = 8 000·1,3225 = 10 580 so'm. 10 400 — 30% ni bir yo'la qo'shish xatosi, 9 200 — faqat bitta oy hisoblangani, 12 167 — uch marta oshirib yuborilgani. Javob: 10 580 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-ketma-ket-oshish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#3c69aab6"
+    },
+    {
+      "q": "Bir aksiyaning bahosi 25 000 so'm edi. Birinchi yilda u 20% ga, ikkinchi yilda esa 25% ga qimmatlashdi. Aksiyaning ikki yildan keyingi bahosi qancha?",
+      "v": [
+        "37 500 so'm",
+        "36 250 so'm",
+        "30 000 so'm",
+        "31 250 so'm"
+      ],
+      "t": 0,
+      "izoh": "Yillik ko'paytuvchilar 1,2 va 1,25 bo'lgani uchun 25 000·1,2·1,25 hisoblanadi. 25 000·1,2 = 30 000, keyin 30 000·1,25 = 37 500 so'm. 36 250 — 45% ni bir yo'la qo'shish, 30 000 va 31 250 — faqat bitta bosqichni bajarish natijasi. Javob: 37 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "narx-ketma-ket-oshish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#3a3a71af"
+    },
+    {
+      "q": "Internet xizmati tarifi 180 000 so'm bo'lib, uch yil ketma-ket har yili 10% ga qimmatlashdi. Uch yildan keyingi tarif qancha bo'ladi?",
+      "v": [
+        "234 000 so'm",
+        "217 800 so'm",
+        "198 000 so'm",
+        "239 580 so'm"
+      ],
+      "t": 3,
+      "izoh": "S = 180 000·(1,1)³ = 180 000·1,331 = 239 580 so'm. 234 000 — uch yil uchun 30% ni bir yo'la qo'shish xatosi, 217 800 — ikki yillik natija, 198 000 — bir yillik natija. Har yili foiz yangi tarifdan olinishini unutmaslik kerak. Javob: 239 580 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-ketma-ket-oshish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#dbee7dd8"
+    },
+    {
+      "q": "Yangi avtomobil 90 000 000 so'm turadi va uning bozor qiymati har yili 20% ga tushadi. Ikki yildan keyin avtomobil qanchaga baholanadi?",
+      "v": [
+        "54 000 000 so'm",
+        "57 600 000 so'm",
+        "72 000 000 so'm",
+        "46 080 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Kamayishda ko'paytuvchi 1 − 20/100 = 0,8 bo'ladi: S = 90 000 000·(0,8)² = 90 000 000·0,64 = 57 600 000 so'm. 54 000 000 — 40% ni bir yo'la ayirish xatosi, 72 000 000 — faqat bir yil, 46 080 000 — uch yil hisoblangani. Javob: 57 600 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymat-kamayishi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#4178f169"
+    },
+    {
+      "q": "Noutbukning bugungi narxi 8 000 000 so'm. Har yili uning qiymati 25% ga qadrsizlansa, uch yildan keyin noutbuk qanchaga baholanadi?",
+      "v": [
+        "2 000 000 so'm",
+        "4 500 000 so'm",
+        "3 375 000 so'm",
+        "6 000 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Har yili qiymatning 75% i qoladi: S = 8 000 000·(0,75)³. (0,75)³ = 0,421875, demak S = 8 000 000·0,421875 = 3 375 000 so'm. 2 000 000 — 75% ni bir yo'la ayirish, 4 500 000 — ikki yillik, 6 000 000 — bir yillik qiymat. Javob: 3 375 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymat-kamayishi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#8407de7e"
+    },
+    {
+      "q": "Sexdagi stanok 15 000 000 so'mga sotib olingan bo'lib, har yili uning qiymati 10% ga kamayadi. Uch yildan so'ng stanokning qoldiq qiymati qancha bo'ladi?",
+      "v": [
+        "10 935 000 so'm",
+        "10 500 000 so'm",
+        "12 150 000 so'm",
+        "13 500 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Yillik ko'paytuvchi 0,9 bo'ladi: S = 15 000 000·(0,9)³ = 15 000 000·0,729 = 10 935 000 so'm. 10 500 000 — 30% ni bir marta ayirish natijasi, 12 150 000 — ikki yillik qoldiq, 13 500 000 — bir yillik qoldiq. Javob: 10 935 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymat-kamayishi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#d61bf3cd"
+    },
+    {
+      "q": "Muzlatgich 6 400 000 so'mga olingan edi. Uning qiymati har yili 15% ga tushadi. Ikki yildan keyingi qiymatini toping.",
+      "v": [
+        "4 480 000 so'm",
+        "5 440 000 so'm",
+        "3 930 400 so'm",
+        "4 624 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Har yili qiymatning 85% i qoladi: S = 6 400 000·(0,85)² = 6 400 000·0,7225 = 4 624 000 so'm. 4 480 000 — 30% ni bir yo'la ayirish, 5 440 000 — bir yillik qoldiq, 3 930 400 — uch yilga hisoblangan qoldiq. Javob: 4 624 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymat-kamayishi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#a9600960"
+    },
+    {
+      "q": "Do'kondagi tovar narxi avval 20% ga oshirildi, oradan bir oy o'tib yangi narxdan 20% ga tushirildi. Tovarning dastlabki narxiga nisbatan holati qanday?",
+      "v": [
+        "narx o'zgarmaydi",
+        "narx 4% ga oshadi",
+        "narx 4% ga kamayadi",
+        "narx 2% ga kamayadi"
+      ],
+      "t": 2,
+      "izoh": "Umumiy ko'paytuvchi 1,2·0,8 = 0,96 ga teng. 0,96 < 1 bo'lgani uchun narx dastlabkidan 1 − 0,96 = 0,04, ya'ni 4% ga kam bo'ladi. Foizlar bir xil bo'lsa ham asoslar har xil: oshish kichik summadan, kamayish katta summadan olinadi. Javob: narx 4% ga kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oshish-va-kamayish-juftligi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#1262a0b4"
+    },
+    {
+      "q": "Mahsulot narxi 60 000 so'm edi. Avval u 30% ga qimmatlashdi, so'ngra yangi narxdan 30% ga arzonlashdi. Mahsulotning oxirgi narxi qancha bo'ldi?",
+      "v": [
+        "54 600 so'm",
+        "60 000 so'm",
+        "65 400 so'm",
+        "78 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket amallar: 60 000·1,3 = 78 000, so'ng 78 000·0,7 = 54 600 so'm. Umumiy ko'paytuvchi 1,3·0,7 = 0,91, ya'ni narx 9% ga tushgan. 60 000 — foizlar bir-birini qoplaydi degan xato, 78 000 — ikkinchi bosqichni tashlab ketish. Javob: 54 600 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oshish-va-kamayish-juftligi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#3b10314e"
+    },
+    {
+      "q": "Xodimning oylik maoshi 4 500 000 so'm edi. Inqiroz sababli maosh avval 10% ga kamaytirildi, keyin esa yangi maoshdan 10% ga oshirildi. Hozirgi maosh qancha?",
+      "v": [
+        "4 500 000 so'm",
+        "4 455 000 so'm",
+        "4 545 000 so'm",
+        "4 050 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Umumiy ko'paytuvchi 0,9·1,1 = 0,99 bo'ladi, demak maosh 1% ga kam. 4 500 000·0,99 = 4 455 000 so'm. 4 500 000 — foizlar teng deb o'ylash xatosi, 4 545 000 — ishorani almashtirib 1% oshgan deb hisoblash, 4 050 000 — oxirgi bosqichni bajarmaslik. Javob: 4 455 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oshish-va-kamayish-juftligi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#63766984"
+    },
+    {
+      "q": "Tovar narxi avval 25% ga oshirildi. Endi narxni yana dastlabki qiymatiga qaytarish uchun uni necha foizga tushirish kerak?",
+      "v": [
+        "25%",
+        "20%",
+        "80%",
+        "12,5%"
+      ],
+      "t": 1,
+      "izoh": "Dastlabki narx S bo'lsa, oshgandan keyin 1,25S bo'ladi. Qaytish uchun 1,25S·k = S, ya'ni k = 1 : 1,25 = 0,8 bo'lishi kerak. Demak narx 1 − 0,8 = 0,2, ya'ni 20% ga tushiriladi. 25% — bir xil foiz deb o'ylash, 80% — ko'paytuvchini chegirma foizi bilan chalkashtirish. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oshish-va-kamayish-juftligi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#40c4d800"
+    },
+    {
+      "q": "Bir tumanda aholi soni har yili 4% ga ortib bormoqda. Ikki yil davomida aholi soni jami necha foizga ortadi?",
+      "v": [
+        "8%",
+        "16%",
+        "1,0816%",
+        "8,16%"
+      ],
+      "t": 3,
+      "izoh": "Ikki yillik ko'paytuvchi (1,04)² = 1,0816 ga teng. Demak o'sish 1,0816 − 1 = 0,0816, ya'ni 8,16%. 8% — foizlarni oddiy qo'shish natijasi, u ikkinchi yil foizining birinchi yil o'sishidan olinishini hisobga olmaydi. Javob: 8,16%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-foiz-ozgarishi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#c4699d24"
+    },
+    {
+      "q": "Bir korxonaning yillik daromadi har yili 6% ga ortmoqda. Uch yil davomida daromad taxminan necha foizga ko'payadi?",
+      "v": [
+        "18%",
+        "12,4%",
+        "19,1%",
+        "119,1%"
+      ],
+      "t": 2,
+      "izoh": "Uch yillik ko'paytuvchi (1,06)³ = 1,191016. O'sish 1,191016 − 1 = 0,191016, ya'ni taxminan 19,1%. 18% — 3·6 deb qo'shish, 12,4% — ikki yillik o'sish, 119,1% — ko'paytuvchining o'zini foiz deb olish xatosi. Javob: 19,1%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-foiz-ozgarishi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#55ae0942"
+    },
+    {
+      "q": "Omborda saqlanayotgan mahsulot miqdori har yili 12% ga kamaymoqda. Ikki yil ichida mahsulot miqdori necha foizga kamayadi?",
+      "v": [
+        "22,56%",
+        "24%",
+        "77,44%",
+        "12%"
+      ],
+      "t": 0,
+      "izoh": "Ikki yillik ko'paytuvchi (0,88)² = 0,7744 bo'ladi. Kamayish 1 − 0,7744 = 0,2256, ya'ni 22,56%. 24% — foizlarni qo'shish xatosi, 77,44% — qolgan ulushni kamayish deb olish, 12% — faqat bir yilni hisoblash. Javob: 22,56%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-foiz-ozgarishi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#f4658468"
+    },
+    {
+      "q": "Bir mahsulotning narxi uch yil ketma-ket har yili 10% ga oshdi, to'rtinchi yilda esa 30% ga tushdi. Dastlabki narxga nisbatan mahsulot qanday holatda?",
+      "v": [
+        "narx o'zgarmagan",
+        "narx 6,83% ga kamaygan",
+        "narx 6,83% ga oshgan",
+        "narx 33,1% ga oshgan"
+      ],
+      "t": 1,
+      "izoh": "Umumiy ko'paytuvchi (1,1)³·0,7 = 1,331·0,7 = 0,9317 ga teng. 0,9317 < 1 bo'lgani uchun narx 1 − 0,9317 = 0,0683, ya'ni 6,83% ga kamaygan. Narx o'zgarmagan deyish 3·10% = 30% ni tushish bilan qoplandi degan xato. Javob: narx 6,83% ga kamaygan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-foiz-ozgarishi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#f5c8b117"
+    },
+    {
+      "q": "Bankka 5 000 000 so'm yillik 20% murakkab foiz bilan qo'yildi. Necha yildan keyin hisobdagi summa 8 640 000 so'mga yetadi?",
+      "v": [
+        "2 yildan keyin",
+        "3 yildan keyin",
+        "4 yildan keyin",
+        "5 yildan keyin"
+      ],
+      "t": 1,
+      "izoh": "Summaning necha marta ortgani topiladi: 8 640 000 : 5 000 000 = 1,728. Endi (1,2)ⁿ = 1,728 tenglama yechiladi. (1,2)² = 1,44, (1,2)³ = 1,728, demak n = 3. Javob: 3 yildan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yillar-sonini-topish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#69499731"
+    },
+    {
+      "q": "Laboratoriyadagi bakteriyalar soni har soatda 50% ga ortadi. Dastlab 800 ta bakteriya bo'lsa, ularning soni necha soatdan keyin 4 050 taga yetadi?",
+      "v": [
+        "2 soatdan keyin",
+        "3 soatdan keyin",
+        "5 soatdan keyin",
+        "4 soatdan keyin"
+      ],
+      "t": 3,
+      "izoh": "Ko'payish koeffitsienti 4 050 : 800 = 5,0625. Har soatda son 1,5 marta ortadi, shuning uchun (1,5)ⁿ = 5,0625. (1,5)³ = 3,375, (1,5)⁴ = 5,0625, demak n = 4. Javob: 4 soatdan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yillar-sonini-topish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#78023773"
+    },
+    {
+      "q": "Omonatga 2 000 000 so'm yillik 30% murakkab foiz bilan qo'yilgan. Qaysi yil oxirida hisobdagi mablag' birinchi marta 4 000 000 so'mdan oshadi?",
+      "v": [
+        "2-yil oxirida",
+        "4-yil oxirida",
+        "3-yil oxirida",
+        "5-yil oxirida"
+      ],
+      "t": 2,
+      "izoh": "Har yil summani hisoblaymiz: 2 000 000·1,3 = 2 600 000, keyin 2 600 000·1,3 = 3 380 000, so'ng 3 380 000·1,3 = 4 394 000. Ikkinchi yil oxirida 4 000 000 dan kam, uchinchi yil oxirida esa undan ko'p. Javob: 3-yil oxirida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yillar-sonini-topish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#6c099d9b"
+    },
+    {
+      "q": "Shahar aholisi hozir 250 000 nafar bo'lib, har yili 8% ga ortmoqda. Aholi soni necha yildan keyin 315 000 nafardan oshadi?",
+      "v": [
+        "4-yilda",
+        "3-yilda",
+        "5-yilda",
+        "6-yilda"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi yil oxirida 250 000·(1,08)³ = 250 000·1,259712 = 314 928 nafar bo'ladi, bu 315 000 dan hali kam. To'rtinchi yil oxirida 250 000·(1,08)⁴ = 340 122 nafardan ortiq bo'ladi. Chegara juda yaqin bo'lgani uchun uchinchi yil yetmaydi. Javob: 4-yilda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yillar-sonini-topish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#30725147"
+    },
+    {
+      "q": "Hisobga qo'yilgan 10 000 000 so'm ikki yildan keyin 14 400 000 so'mga aylandi. Bankning yillik murakkab foiz stavkasi necha foiz bo'lgan?",
+      "v": [
+        "44%",
+        "22%",
+        "20%",
+        "12%"
+      ],
+      "t": 2,
+      "izoh": "Summa 14 400 000 : 10 000 000 = 1,44 marta ortgan, demak (1 + p/100)² = 1,44. Kvadrat ildiz olsak 1 + p/100 = 1,2, ya'ni p = 20%. 44% — ikki yillik umumiy o'sishni yillik deb olish, 22% — uni ikkiga bo'lish, 12% — ko'paytuvchi 1,2 ni foiz bilan chalkashtirish. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "stavkani-topish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#01bad725"
+    },
+    {
+      "q": "Uch yil oldin bankka qo'yilgan 8 000 000 so'm bugun 9 261 000 so'mni tashkil qildi. Yillik murakkab foiz stavkasini toping.",
+      "v": [
+        "15,8%",
+        "5,3%",
+        "1,05%",
+        "5%"
+      ],
+      "t": 3,
+      "izoh": "Umumiy koeffitsient 9 261 000 : 8 000 000 = 1,157625 ga teng. (1 + p/100)³ = 1,157625 bo'ladi va 1,157625 = (1,05)³ bo'lgani uchun 1 + p/100 = 1,05, ya'ni p = 5%. 15,8% — uch yillik umumiy o'sish, 5,3% — uni uchga bo'lish xatosi. Javob: 5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "stavkani-topish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#aeee772d"
+    },
+    {
+      "q": "Avtomobilning qiymati ikki yilda 50 000 000 so'mdan 40 500 000 so'mgacha tushdi. Har yili qiymat bir xil foizga kamaygan bo'lsa, bu foiz nechaga teng?",
+      "v": [
+        "19%",
+        "10%",
+        "9,5%",
+        "90%"
+      ],
+      "t": 1,
+      "izoh": "Qoldiq ulush 40 500 000 : 50 000 000 = 0,81 ni tashkil qiladi. (1 − p/100)² = 0,81 dan 1 − p/100 = 0,9, demak p = 10%. 19% — ikki yillik umumiy kamayish, 9,5% — uni ikkiga bo'lish, 90% — qolgan ulushni kamayish foizi deb olish. Javob: 10%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "stavkani-topish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#4f37dcf4"
+    },
+    {
+      "q": "Zavodda 64 000 000 so'mga olingan uskuna uch yil davomida har yili bir xil foizga qadrsizlanib, 27 000 000 so'mga tushdi. Yillik qadrsizlanish foizini toping.",
+      "v": [
+        "25%",
+        "58%",
+        "19,3%",
+        "75%"
+      ],
+      "t": 0,
+      "izoh": "Qoldiq ulush 27 000 000 : 64 000 000 = 0,421875. Bu son (0,75)³ ga teng, demak yillik ko'paytuvchi 0,75 va p = 100 − 75 = 25%. 58% — uch yillik umumiy kamayish, 19,3% — uni uchga bo'lish, 75% — qolgan ulushni javob deb olish. Javob: 25%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "stavkani-topish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#7a467518"
+    },
+    {
+      "q": "Yillik 10% murakkab foizli omonatda ikki yildan keyin 7 260 000 so'm to'plandi. Boshlang'ich summa qancha bo'lgan?",
+      "v": [
+        "6 600 000 so'm",
+        "5 808 000 so'm",
+        "8 784 600 so'm",
+        "6 000 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Yakuniy summa S₀·(1,1)² ga teng, ya'ni S₀·1,21 = 7 260 000. Bundan S₀ = 7 260 000 : 1,21 = 6 000 000 so'm. 6 600 000 — faqat bir yilga bo'lish, 5 808 000 — 20% ni ayirish, 8 784 600 — bo'lish o'rniga ko'paytirish xatosi. Javob: 6 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boshlangich-summani-topish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#27e84d92"
+    },
+    {
+      "q": "Uskunaning qiymati uch yil davomida har yili 10% ga kamayib, bugun 14 580 000 so'mni tashkil qilmoqda. Uskuna dastlab qanchaga baholangan edi?",
+      "v": [
+        "20 000 000 so'm",
+        "18 000 000 so'm",
+        "16 200 000 so'm",
+        "18 954 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Bugungi qiymat S₀·(0,9)³ = S₀·0,729 ga teng. Demak S₀ = 14 580 000 : 0,729 = 20 000 000 so'm. 18 000 000 — bir yilni tashlab ketish, 16 200 000 — ikki yilni tashlab ketish, 18 954 000 — 30% ni qo'shish xatosi. Javob: 20 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boshlangich-summani-topish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#1dba1e58"
+    },
+    {
+      "q": "Yillik 20% murakkab foiz bilan uch yil saqlangan omonat 12 960 000 so'mga yetdi. Omonatchi dastlab qancha pul qo'ygan edi?",
+      "v": [
+        "8 100 000 so'm",
+        "9 000 000 so'm",
+        "7 500 000 so'm",
+        "10 800 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Uch yillik ko'paytuvchi (1,2)³ = 1,728. S₀ = 12 960 000 : 1,728 = 7 500 000 so'm. 10 800 000 — faqat bir yilga bo'lish, 9 000 000 — ikki yilga bo'lish, 8 100 000 — sodda foizdagi 1,6 ko'paytuvchidan foydalanish xatosi. Javob: 7 500 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boshlangich-summani-topish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#e7ec180a"
+    },
+    {
+      "q": "Ikki yil davomida har yili 20% ga qadrsizlangan uskunaning hozirgi qiymati 19 200 000 so'm. Uskunaning dastlabki qiymati va u qancha kamaygani qaysi variantda to'g'ri ko'rsatilgan?",
+      "v": [
+        "24 000 000 so'm; 4 800 000 so'mga",
+        "30 000 000 so'm; 10 800 000 so'mga",
+        "32 000 000 so'm; 12 800 000 so'mga",
+        "27 648 000 so'm; 8 448 000 so'mga"
+      ],
+      "t": 1,
+      "izoh": "Ikki yillik ko'paytuvchi (0,8)² = 0,64. S₀ = 19 200 000 : 0,64 = 30 000 000 so'm, kamaygan qism esa 30 000 000 − 19 200 000 = 10 800 000 so'm. 24 000 000 — bir yilga bo'lish, 32 000 000 — sodda foizda 40% ayirish, 27 648 000 — bo'lish o'rniga ko'paytirish. Javob: 30 000 000 so'm; 10 800 000 so'mga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "boshlangich-summani-topish",
+      "id": "matematika_foiz_m02-murakkab-foizlar#f8d73b18"
+    },
+    {
+      "q": "10 000 000 so'm ikki yilga yillik 10% bilan qo'yildi. Murakkab foiz bo'yicha yakuniy summa sodda foizdagidan qancha ko'p bo'ladi?",
+      "v": [
+        "100 000 so'm",
+        "200 000 so'm",
+        "1 000 000 so'm",
+        "farq bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Murakkab foizda 10 000 000·1,21 = 12 100 000 so'm, sodda foizda esa 10 000 000·1,2 = 12 000 000 so'm. Farq 12 100 000 − 12 000 000 = 100 000 so'm. Bu farq ikkinchi yilda birinchi yil foiziga ham foiz hisoblanganidan kelib chiqadi. Javob: 100 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-murakkab-farqi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#2ab70028"
+    },
+    {
+      "q": "Fermer 4 000 000 so'mni ikki yilga yillik 15% stavka bilan qo'ydi. Murakkab va sodda foiz bo'yicha to'plangan summalar orasidagi farqni toping.",
+      "v": [
+        "180 000 so'm",
+        "45 000 so'm",
+        "90 000 so'm",
+        "600 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Murakkab foizda 4 000 000·1,3225 = 5 290 000 so'm, sodda foizda 4 000 000·1,3 = 5 200 000 so'm. Farq 5 290 000 − 5 200 000 = 90 000 so'm. 600 000 — bir yillik foizning o'zi, 180 000 — farqni ikki barobar olish xatosi. Javob: 90 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sodda-murakkab-farqi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#7a16aa5c"
+    },
+    {
+      "q": "6 000 000 so'm uch yilga yillik 20% stavka bilan qo'yilsa, murakkab foiz sodda foizga nisbatan qancha ko'p daromad keltiradi?",
+      "v": [
+        "240 000 so'm",
+        "768 000 so'm",
+        "1 200 000 so'm",
+        "3 600 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Murakkab foizda 6 000 000·(1,2)³ = 6 000 000·1,728 = 10 368 000 so'm, sodda foizda 6 000 000·1,6 = 9 600 000 so'm. Farq 10 368 000 − 9 600 000 = 768 000 so'm. 240 000 — ikki yil uchun hisoblangan farq, 3 600 000 — sodda foizdagi umumiy daromad. Javob: 768 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sodda-murakkab-farqi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#03dfb5c6"
+    },
+    {
+      "q": "Ikki yillik omonatda murakkab foiz sodda foizga qaraganda 250 000 so'm ko'proq daromad keltirdi. Yillik stavka 25% bo'lsa, boshlang'ich summa qancha edi?",
+      "v": [
+        "1 000 000 so'm",
+        "2 000 000 so'm",
+        "4 000 000 so'm",
+        "6 250 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Murakkab foizda summa S₀·(1,25)² = S₀·1,5625, sodda foizda esa S₀·1,5 bo'ladi. Ularning farqi S₀·(1,5625 − 1,5) = S₀·0,0625. Shartga ko'ra S₀·0,0625 = 250 000, bundan S₀ = 4 000 000 so'm. 1 000 000 — farqni 0,25 ga bo'lish xatosi. Javob: 4 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sodda-murakkab-farqi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#4fae0cdb"
+    },
+    {
+      "q": "5 000 000 so'mni uch yilga qo'yish uchun ikki taklif bor: yillik 20% sodda foiz yoki yillik 18% murakkab foiz. Qaysi taklif ko'proq daromad beradi?",
+      "v": [
+        "murakkab foizli taklif 215 160 so'mga ko'p beradi",
+        "sodda foizli taklif 215 160 so'mga ko'p beradi",
+        "murakkab foizli taklif 100 000 so'mga ko'p beradi",
+        "ikkala taklif ham bir xil summa to'playdi"
+      ],
+      "t": 0,
+      "izoh": "Sodda foizda 5 000 000·(1 + 3·0,2) = 5 000 000·1,6 = 8 000 000 so'm to'planadi. Murakkab foizda 5 000 000·(1,18)³ = 5 000 000·1,643032 = 8 215 160 so'm. Farq 8 215 160 − 8 000 000 = 215 160 so'm va u murakkab foiz foydasiga. Javob: murakkab foizli taklif 215 160 so'mga ko'p beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sodda-murakkab-taqqoslash",
+      "id": "matematika_foiz_m02-murakkab-foizlar#5fb926b4"
+    },
+    {
+      "q": "Bir yillik muddatga bir xil stavkada qo'yilgan omonat uchun sodda va murakkab foiz bo'yicha hisoblangan daromadlar o'zaro qanday munosabatda bo'ladi?",
+      "v": [
+        "murakkab foiz ko'proq daromad beradi",
+        "ikkalasi teng daromad beradi",
+        "sodda foiz ko'proq daromad beradi",
+        "stavka 10% dan katta bo'lganda murakkab foiz ko'p beradi"
+      ],
+      "t": 1,
+      "izoh": "Murakkab foizda birinchi yil oxirida S₀(1 + p/100) to'planadi, sodda foizda ham aynan shu ifoda chiqadi. Demak bir yil uchun natijalar teng bo'ladi. Farq faqat ikkinchi yildan boshlab paydo bo'ladi, chunki o'shanda birinchi yil foiziga ham foiz hisoblanadi. Javob: ikkalasi teng daromad beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-murakkab-taqqoslash",
+      "id": "matematika_foiz_m02-murakkab-foizlar#823cdd5e"
+    },
+    {
+      "q": "3 000 000 so'm to'rt yilga yillik 10% bilan qo'yildi. Murakkab foiz bo'yicha to'plangan daromad sodda foizdagidan qancha ko'p bo'ladi?",
+      "v": [
+        "300 000 so'm",
+        "1 200 000 so'm",
+        "1 392 300 so'm",
+        "192 300 so'm"
+      ],
+      "t": 3,
+      "izoh": "Murakkab foizda summa 3 000 000·(1,1)⁴ = 3 000 000·1,4641 = 4 392 300 so'm, daromad esa 1 392 300 so'm. Sodda foizda summa 3 000 000·1,4 = 4 200 000 so'm, daromad 1 200 000 so'm. Farq 1 392 300 − 1 200 000 = 192 300 so'm. Javob: 192 300 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sodda-murakkab-taqqoslash",
+      "id": "matematika_foiz_m02-murakkab-foizlar#309949d2"
+    },
+    {
+      "q": "Bir xil summa uchun ikki shart taklif qilindi: A shartida yillik 30% sodda foiz, B shartida yillik 25% murakkab foiz, muddat esa ikki yil. Qaysi shart foydaliroq?",
+      "v": [
+        "A sharti, boshlang'ich summaning 3,75% iga ko'p beradi",
+        "B sharti, boshlang'ich summaning 3,75% iga ko'p beradi",
+        "B sharti, boshlang'ich summaning 5% iga ko'p beradi",
+        "ikkala shart bir xil natija beradi"
+      ],
+      "t": 0,
+      "izoh": "A shartida ko'paytuvchi 1 + 2·0,3 = 1,6, B shartida esa (1,25)² = 1,5625. 1,6 > 1,5625 bo'lgani uchun A sharti foydaliroq. Farq 1,6 − 1,5625 = 0,0375, ya'ni boshlang'ich summaning 3,75% i. Qisqa muddatda yuqori sodda stavka past murakkab stavkadan ustun kelishi mumkin. Javob: A sharti, 3,75% iga ko'p beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sodda-murakkab-taqqoslash",
+      "id": "matematika_foiz_m02-murakkab-foizlar#18d2d771"
+    },
+    {
+      "q": "Qishloqda hozir 8 000 nafar aholi bor va ularning soni har yili 5% ga ortadi. Ikki yildan keyin qishloqda necha nafar aholi bo'ladi?",
+      "v": [
+        "8 800 nafar",
+        "8 400 nafar",
+        "8 820 nafar",
+        "9 261 nafar"
+      ],
+      "t": 2,
+      "izoh": "Aholi soni har yili 1,05 marta ortadi: 8 000·(1,05)² = 8 000·1,1025 = 8 820 nafar. 8 800 — ikki yil uchun 10% ni bir yo'la qo'shish, 8 400 — faqat bir yil, 9 261 — uch yilga hisoblangan son. Javob: 8 820 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aholi-va-tabiat-osishi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#24c98157"
+    },
+    {
+      "q": "Shahar aholisi 240 000 nafar bo'lib, har yili 2,5% ga ko'paymoqda. Ikki yildan keyin shahar aholisi qanchaga yetadi?",
+      "v": [
+        "252 150 nafar",
+        "252 000 nafar",
+        "246 000 nafar",
+        "264 600 nafar"
+      ],
+      "t": 0,
+      "izoh": "Ikki yillik ko'paytuvchi (1,025)² = 1,050625 ga teng. Aholi soni 240 000·1,050625 = 252 150 nafar bo'ladi. 252 000 — 5% ni bir yo'la qo'shish, 246 000 — bir yillik natija, 264 600 — stavkani 5% deb olib ikki marta ko'paytirish xatosi. Javob: 252 150 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aholi-va-tabiat-osishi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#c781d416"
+    },
+    {
+      "q": "Ko'ldagi baliqlar soni hozir 50 000 ta bo'lib, ovlash tufayli har yili 20% ga kamayib bormoqda. Uch yildan keyin ko'lda nechta baliq qoladi?",
+      "v": [
+        "20 000 ta",
+        "32 000 ta",
+        "40 000 ta",
+        "25 600 ta"
+      ],
+      "t": 3,
+      "izoh": "Har yili baliqlarning 80% i qoladi: 50 000·(0,8)³ = 50 000·0,512 = 25 600 ta. 20 000 — 60% ni bir yo'la ayirish xatosi, 32 000 — ikki yillik natija, 40 000 — bir yillik natija. Javob: 25 600 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aholi-va-tabiat-osishi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#95a2e5c7"
+    },
+    {
+      "q": "A qishlog'ida 5 000 kishi yashaydi va aholi har yili 10% ga ortadi, B qishlog'ida esa 8 000 kishi bo'lib, soni har yili 10% ga kamayadi. Uch yildan keyin qaysi qishloqda ko'proq odam bo'ladi?",
+      "v": [
+        "A qishlog'ida, 823 kishiga ko'p",
+        "B qishlog'ida, 823 kishiga ko'p",
+        "A qishlog'ida, 900 kishiga ko'p",
+        "A qishlog'ida, 1 655 kishiga ko'p"
+      ],
+      "t": 0,
+      "izoh": "A qishlog'ida 5 000·(1,1)³ = 5 000·1,331 = 6 655 kishi bo'ladi. B qishlog'ida 8 000·(0,9)³ = 8 000·0,729 = 5 832 kishi qoladi. Farq 6 655 − 5 832 = 823 kishi, ya'ni A qishlog'ida ko'proq. 900 — sodda foiz bilan hisoblash natijasi. Javob: A qishlog'ida, 823 kishiga ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aholi-va-tabiat-osishi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#1685b7b5"
+    },
+    {
+      "q": "Korxona bankdan 20 000 000 so'm kredit oldi, yillik ustama 24% va u har yili qoldiqqa qo'shib boriladi. Ikki yil davomida hech qanday to'lov qilinmasa, qarz qanchaga yetadi?",
+      "v": [
+        "29 600 000 so'm",
+        "30 752 000 so'm",
+        "24 800 000 so'm",
+        "38 132 480 so'm"
+      ],
+      "t": 1,
+      "izoh": "Qarz har yili 1,24 marta ortadi: 20 000 000·(1,24)² = 20 000 000·1,5376 = 30 752 000 so'm. 29 600 000 — ikki yil uchun 48% ni bir yo'la qo'shish, 24 800 000 — bir yillik qarz, 38 132 480 — uch yilga hisoblangani. Javob: 30 752 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kredit-qarz",
+      "id": "matematika_foiz_m02-murakkab-foizlar#ec32fca7"
+    },
+    {
+      "q": "Sardor 12 000 000 so'm qarz oldi, yillik ustama 30%. Birinchi yil oxirida u 8 000 000 so'm to'ladi, qolgan qarzga esa yana bir yil ustama qo'shildi. Ikkinchi yil oxirida qarz qancha bo'ladi?",
+      "v": [
+        "9 880 000 so'm",
+        "12 280 000 so'm",
+        "7 600 000 so'm",
+        "5 200 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Birinchi yil oxirida qarz 12 000 000·1,3 = 15 600 000 so'm bo'ladi. To'lovdan keyin 15 600 000 − 8 000 000 = 7 600 000 so'm qoladi. Ikkinchi yil oxirida 7 600 000·1,3 = 9 880 000 so'm. 12 280 000 — to'lovni eng oxirida ayirish, 5 200 000 — to'lovni ustamadan oldin ayirish xatosi. Javob: 9 880 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kredit-qarz",
+      "id": "matematika_foiz_m02-murakkab-foizlar#4ae978d7"
+    },
+    {
+      "q": "Mikroqarz tashkiloti 3 000 000 so'mni oyiga 5% murakkab ustama bilan berdi. Uch oydan keyin qaytariladigan summa qancha bo'ladi?",
+      "v": [
+        "3 450 000 so'm",
+        "3 307 500 so'm",
+        "3 472 875 so'm",
+        "3 150 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Qarz har oy 1,05 marta ortadi: 3 000 000·(1,05)³ = 3 000 000·1,157625 = 3 472 875 so'm. 3 450 000 — uch oy uchun 15% ni bir yo'la qo'shish, 3 307 500 — ikki oylik summa, 3 150 000 — bir oylik summa. Javob: 3 472 875 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kredit-qarz",
+      "id": "matematika_foiz_m02-murakkab-foizlar#67a156f7"
+    },
+    {
+      "q": "Do'kondan 5 000 000 so'mlik muzlatgich yillik 20% ustama bilan olindi, ustama har yili qoldiqqa qo'shildi va ikki yil davomida hech qanday to'lov qilinmadi. Xaridor jami qancha ustama to'laydi?",
+      "v": [
+        "2 000 000 so'm",
+        "2 200 000 so'm",
+        "7 200 000 so'm",
+        "1 000 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "To'lov bo'lmagani uchun qarz har yili 1,2 marta ortadi: ikki yildan keyingi summa 5 000 000·(1,2)² = 5 000 000·1,44 = 7 200 000 so'm. Ustama esa 7 200 000 − 5 000 000 = 2 200 000 so'm. 2 000 000 — sodda foizdagi ustama, 7 200 000 — umumiy summani javob deb olish, 1 000 000 — bir yillik ustama. Javob: 2 200 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kredit-qarz",
+      "id": "matematika_foiz_m02-murakkab-foizlar#ee95ba4c"
+    },
+    {
+      "q": "Bank omonatga yiliga ikki marta, har yarim yilda 5% dan foiz hisoblaydi. 10 000 000 so'm bir yil saqlansa, hisobda qancha mablag' bo'ladi?",
+      "v": [
+        "11 000 000 so'm",
+        "10 500 000 so'm",
+        "11 025 000 so'm",
+        "11 576 250 so'm"
+      ],
+      "t": 2,
+      "izoh": "Bir yilda ikki marta kapitallashuv bo'ladi: 10 000 000·(1,05)² = 10 000 000·1,1025 = 11 025 000 so'm. 11 000 000 — 10% ni bir yo'la qo'shish, 10 500 000 — faqat bitta yarim yil, 11 576 250 — uch marta hisoblab yuborish. Javob: 11 025 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kapitallashuv-davri",
+      "id": "matematika_foiz_m02-murakkab-foizlar#07975416"
+    },
+    {
+      "q": "Yillik 24% stavka choraklik kapitallashuv bilan qo'llaniladi. Har chorakda necha foizdan hisoblanadi va bir yilda summa taxminan necha marta ortadi?",
+      "v": [
+        "har chorakda 6% dan, bir yilda taxminan 1,262 marta",
+        "har chorakda 6% dan, bir yilda taxminan 1,24 marta",
+        "har chorakda 12% dan, bir yilda taxminan 1,254 marta",
+        "har chorakda 8% dan, bir yilda taxminan 1,26 marta"
+      ],
+      "t": 0,
+      "izoh": "Yillik stavka choraklar soniga bo'linadi: 24 : 4 = 6%. Bir yilda to'rt marta kapitallashuv bo'ladi, demak ko'paytuvchi (1,06)⁴ = 1,262477 ga teng. Bu taxminan 1,262 marta o'sishni bildiradi va u 1,24 dan katta. Javob: har chorakda 6% dan, taxminan 1,262 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kapitallashuv-davri",
+      "id": "matematika_foiz_m02-murakkab-foizlar#5cfd362b"
+    },
+    {
+      "q": "Jamg'arma hisobiga har oy oldingi qoldiqning 2% i qo'shib boriladi. Uch oy davomida hisobdagi mablag' necha foizga ortadi?",
+      "v": [
+        "6%",
+        "6,12%",
+        "12,24%",
+        "4,04%"
+      ],
+      "t": 1,
+      "izoh": "Uch oylik ko'paytuvchi (1,02)³ = 1,061208 ga teng. O'sish 1,061208 − 1 = 0,061208, ya'ni taxminan 6,12%. 6% — oylik foizlarni oddiy qo'shish, 4,04% — ikki oyga hisoblangani, 12,24% — natijani ikki barobar olish xatosi. Javob: 6,12%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kapitallashuv-davri",
+      "id": "matematika_foiz_m02-murakkab-foizlar#d87ec724"
+    },
+    {
+      "q": "5 000 000 so'mni bir yilga qo'yishda ikki shart bor: yiliga bir marta 12% yoki har yarim yilda 6% hisoblash. Qaysi shart ko'proq daromad beradi?",
+      "v": [
+        "yillik hisoblashda 18 000 so'mga ko'p",
+        "ikkala usulda natija bir xil bo'ladi",
+        "yarim yillik hisoblashda 36 000 so'mga ko'p",
+        "yarim yillik hisoblashda 18 000 so'mga ko'p"
+      ],
+      "t": 3,
+      "izoh": "Yillik hisoblashda 5 000 000·1,12 = 5 600 000 so'm bo'ladi. Yarim yillik hisoblashda 5 000 000·(1,06)² = 5 000 000·1,1236 = 5 618 000 so'm. Farq 5 618 000 − 5 600 000 = 18 000 so'm va u yarim yillik shart foydasiga. Tez-tez kapitallashuv har doim biroz ko'p beradi. Javob: yarim yillik hisoblashda 18 000 so'mga ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kapitallashuv-davri",
+      "id": "matematika_foiz_m02-murakkab-foizlar#99c59646"
+    },
+    {
+      "q": "Omonatga qo'yilgan 3 000 000 so'mga birinchi yili 10%, ikkinchi yili esa 20% foiz hisoblandi. Ikki yildan keyin hisobdagi summa qancha bo'ladi?",
+      "v": [
+        "3 900 000 so'm",
+        "3 630 000 so'm",
+        "3 960 000 so'm",
+        "4 320 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Har yil o'z ko'paytuvchisiga ega: 3 000 000·1,1·1,2. Avval 3 000 000·1,1 = 3 300 000, keyin 3 300 000·1,2 = 3 960 000 so'm. 3 900 000 — 30% ni bir yo'la qo'shish, 3 630 000 — ikkala yilni ham 10% deb olish, 4 320 000 — ikkala yilni 20% deb olish. Javob: 3 960 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "har-yili-boshqa-stavka",
+      "id": "matematika_foiz_m02-murakkab-foizlar#2c625489"
+    },
+    {
+      "q": "Mahsulotning 800 000 so'mlik narxi birinchi yilda 25% ga oshdi, ikkinchi yilda esa yangi narxdan 12% ga tushdi. Ikki yildan keyingi narx qancha bo'ldi?",
+      "v": [
+        "904 000 so'm",
+        "1 000 000 so'm",
+        "704 000 so'm",
+        "880 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytuvchilar ketma-ket qo'llanadi: 800 000·1,25 = 1 000 000, so'ng 1 000 000·0,88 = 880 000 so'm. 904 000 — foizlarni 25 − 12 = 13% deb ayirish xatosi, 1 000 000 — ikkinchi bosqichni tashlab ketish, 704 000 — faqat tushishni hisoblash. Javob: 880 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "har-yili-boshqa-stavka",
+      "id": "matematika_foiz_m02-murakkab-foizlar#ad66f5e3"
+    },
+    {
+      "q": "Investorning kompaniya aksiyalariga qo'ygan mablag'i 20 000 000 so'm edi: birinchi yil 10% ga oshdi, ikkinchi yil 20% ga tushdi, uchinchi yil esa 30% ga oshdi. Uch yildan keyingi qiymat qancha?",
+      "v": [
+        "24 000 000 so'm",
+        "22 880 000 so'm",
+        "17 600 000 so'm",
+        "28 600 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Har yilning ko'paytuvchisi ketma-ket qo'llanadi: 20 000 000·1,1·0,8·1,3. Bosqichma-bosqich: 20 000 000·1,1 = 22 000 000, so'ng 22 000 000·0,8 = 17 600 000, keyin 17 600 000·1,3 = 22 880 000 so'm. 24 000 000 — foizlarni qo'shib yagona 20% deb olish xatosi, 17 600 000 — uchinchi yilni hisobga olmaslik, 28 600 000 — tushish yilini tashlab ketish. Javob: 22 880 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "har-yili-boshqa-stavka",
+      "id": "matematika_foiz_m02-murakkab-foizlar#2aaf9742"
+    },
+    {
+      "q": "Bir tovarning 400 000 so'mlik narxi avval a foizga oshdi, keyin yangi narxdan xuddi shu a foizga tushdi va natijada 396 000 so'm bo'ldi. a ning qiymatini toping.",
+      "v": [
+        "a = 10",
+        "a = 1",
+        "a = 20",
+        "a = 5"
+      ],
+      "t": 0,
+      "izoh": "Umumiy ko'paytuvchi (1 + a/100)(1 − a/100) = 1 − a²/10000 ga teng. Shartga ko'ra 396 000 : 400 000 = 0,99, demak 1 − a²/10000 = 0,99. Bundan a²/10000 = 0,01, ya'ni a² = 100 va a = 10. a = 1 — umumiy kamayish foizini a deb olish xatosi. Javob: a = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "har-yili-boshqa-stavka",
+      "id": "matematika_foiz_m02-murakkab-foizlar#384db73c"
+    },
+    {
+      "q": "Bankka S so'm yillik 7% murakkab foiz sharti bilan 3 yilga qo'yilgan. Muddat oxiridagi summa qaysi ifoda yordamida hisoblanadi?",
+      "v": [
+        "S·(1 + 3·0,07)",
+        "S·3·1,07",
+        "S·(0,07)³",
+        "S·(1,07)³"
+      ],
+      "t": 3,
+      "izoh": "Murakkab foiz formulasi S = S₀(1 + p/100)ⁿ ko'rinishida bo'ladi. Bu yerda p = 7, n = 3, demak ko'paytuvchi (1,07)³. Birinchi variant sodda foizga tegishli, uchinchi variant esa foiz stavkasining o'zini darajaga ko'targan noto'g'ri ifoda. Javob: S·(1,07)³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-ifoda-tanlash",
+      "id": "matematika_foiz_m02-murakkab-foizlar#e787c5a0"
+    },
+    {
+      "q": "Har yili p foizga arzonlashib boruvchi buyumning n yildan keyingi qiymati qaysi formula bilan topiladi?",
+      "v": [
+        "S₀(1 + p/100)ⁿ",
+        "S₀(1 − p/100)ⁿ",
+        "S₀(1 − np/100)",
+        "S₀ − (p/100)ⁿ"
+      ],
+      "t": 1,
+      "izoh": "Kamayishda har yili qiymatning (1 − p/100) ulushi qoladi va bu ko'paytuvchi n marta takrorlanadi. Demak formula S₀(1 − p/100)ⁿ ko'rinishida bo'ladi. Uchinchi variant sodda foizga to'g'ri keladi, birinchisi esa o'sish uchun ishlatiladi. Javob: S₀(1 − p/100)ⁿ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-ifoda-tanlash",
+      "id": "matematika_foiz_m02-murakkab-foizlar#1d769ed2"
+    },
+    {
+      "q": "Mahsulot narxi uch yil davomida ketma-ket 20%, 10% va 5% ga oshdi. Umumiy o'zgarish koeffitsienti qaysi ifoda bilan to'g'ri yoziladi?",
+      "v": [
+        "1 + 0,2 + 0,1 + 0,05",
+        "3·1,35",
+        "1,2·1,1·1,05",
+        "(1,35)³"
+      ],
+      "t": 2,
+      "izoh": "Har bir oshish o'z ko'paytuvchisini beradi: 1,2, keyin 1,1, keyin 1,05. Ular ketma-ket qo'llangani uchun koeffitsientlar ko'paytiriladi va 1,2·1,1·1,05 = 1,386 hosil bo'ladi. Foizlarni qo'shish esa har bir keyingi oshish yangi narxdan olinishini hisobga olmaydi. Javob: 1,2·1,1·1,05.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-ifoda-tanlash",
+      "id": "matematika_foiz_m02-murakkab-foizlar#9cd115d2"
+    },
+    {
+      "q": "Yillik 16% stavka yarim yilda bir marta kapitallashsa, n yildan keyingi omonat summasi qaysi ifoda bilan hisoblanadi?",
+      "v": [
+        "S₀·(1,08)^(2n)",
+        "S₀·(1,16)^(2n)",
+        "S₀·(1,08)ⁿ",
+        "S₀·(1,32)ⁿ"
+      ],
+      "t": 0,
+      "izoh": "Yillik stavka ikkiga bo'linadi: 16 : 2 = 8%, demak bir davr uchun ko'paytuvchi 1,08. n yilda kapitallashuv 2n marta bo'ladi, shuning uchun summa S₀·(1,08)^(2n) ga teng. Ikkinchi variantda stavka bo'linmagan, uchinchisida esa davrlar soni ikki barobar olinmagan. Javob: S₀·(1,08)^(2n).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-ifoda-tanlash",
+      "id": "matematika_foiz_m02-murakkab-foizlar#f67e95ca"
+    },
+    {
+      "q": "Bir jamg'armaning mablag'i har yili 50% ga ortib bormoqda. Ikki yildan keyin jamg'arma dastlabkiga nisbatan necha marta ortadi?",
+      "v": [
+        "2 marta",
+        "2,5 marta",
+        "3 marta",
+        "2,25 marta"
+      ],
+      "t": 3,
+      "izoh": "Har yili ko'paytuvchi 1,5 bo'ladi, demak ikki yilda (1,5)² = 2,25 marta ortadi. 2 marta — ikki yil uchun 100% deb qo'shish xatosi, 3 marta — 1,5 ni 2 ga ko'paytirish, 2,5 marta — 1,5 ga 1 ni qo'shish. Javob: 2,25 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "osish-koeffitsienti",
+      "id": "matematika_foiz_m02-murakkab-foizlar#1ee9d53f"
+    },
+    {
+      "q": "Yillik 20% murakkab foizli omonat uch yil saqlansa, dastlabki summa necha marta ortadi?",
+      "v": [
+        "1,6 marta",
+        "1,728 marta",
+        "1,44 marta",
+        "2,074 marta"
+      ],
+      "t": 1,
+      "izoh": "Uch yillik ko'paytuvchi (1,2)³ = 1,728 ga teng, ya'ni summa 1,728 marta ortadi. 1,6 — sodda foizdagi ko'paytuvchi, 1,44 — ikki yillik natija, 2,074 — to'rt yilga hisoblangan qiymat. Javob: 1,728 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "osish-koeffitsienti",
+      "id": "matematika_foiz_m02-murakkab-foizlar#9ce70708"
+    },
+    {
+      "q": "Uskunaning qiymati har yili 10% ga tushib boradi. To'rt yildan keyin uskuna dastlabki qiymatining necha foizini saqlab qoladi?",
+      "v": [
+        "60%",
+        "72,9%",
+        "65,61%",
+        "34,39%"
+      ],
+      "t": 2,
+      "izoh": "Har yili qiymatning 90% i qoladi, demak to'rt yilda (0,9)⁴ = 0,6561 ulush qoladi. Bu 65,61% ni tashkil qiladi. 60% — 40% ni bir yo'la ayirish, 72,9% — uch yillik qoldiq, 34,39% — yo'qolgan ulush. Javob: 65,61%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "osish-koeffitsienti",
+      "id": "matematika_foiz_m02-murakkab-foizlar#6f9586ff"
+    },
+    {
+      "q": "Texnologik jarayonda kattalik har bosqichda 25% ga ortadi. To'rt bosqichdan keyin u boshlang'ich qiymatiga nisbatan necha marta ortgan bo'ladi?",
+      "v": [
+        "2 marta",
+        "taxminan 1,953 marta",
+        "taxminan 3,052 marta",
+        "taxminan 2,441 marta"
+      ],
+      "t": 3,
+      "izoh": "Har bosqichda ko'paytuvchi 1,25 bo'ladi, demak to'rt bosqichda (1,25)⁴ = 2,44140625 marta ortadi. Bu taxminan 2,441 marta. 2 marta — 4·25% = 100% deb qo'shish, 1,953 — uch bosqich, 3,052 — besh bosqich uchun natija. Javob: taxminan 2,441 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "osish-koeffitsienti",
+      "id": "matematika_foiz_m02-murakkab-foizlar#84df6c74"
+    },
+    {
+      "q": "Yillik inflatsiya 12% ni tashkil qilmoqda. Bugun 500 000 so'm turadigan oziq-ovqat savati uch yildan keyin qanchaga tushadi?",
+      "v": [
+        "680 000 so'm",
+        "702 464 so'm",
+        "627 200 so'm",
+        "560 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Narxlar har yili 1,12 marta ortadi: 500 000·(1,12)³ = 500 000·1,404928 = 702 464 so'm. 680 000 — uch yil uchun 36% ni bir yo'la qo'shish, 627 200 — ikki yillik narx, 560 000 — bir yillik narx. Javob: 702 464 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "inflatsiya-real-qiymat",
+      "id": "matematika_foiz_m02-murakkab-foizlar#6d236f34"
+    },
+    {
+      "q": "Xodimning maoshi har yili 8% ga oshadi, narxlar esa har yili 15% ga qimmatlashadi. Ikki yildan keyin uning real xarid qobiliyati qanday o'zgaradi?",
+      "v": [
+        "7% ga kamayadi",
+        "14% ga kamayadi",
+        "taxminan 11,8% ga kamayadi",
+        "o'zgarmaydi"
+      ],
+      "t": 2,
+      "izoh": "Maosh (1,08)² = 1,1664 marta, narxlar esa (1,15)² = 1,3225 marta ortadi. Real xarid qobiliyati 1,1664 : 1,3225 = 0,882 marta bo'ladi, ya'ni taxminan 11,8% ga kamayadi. 7% — foizlar ayirmasini javob deb olish, 14% — uni ikki barobar qilish xatosi. Javob: taxminan 11,8% ga kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "inflatsiya-real-qiymat",
+      "id": "matematika_foiz_m02-murakkab-foizlar#b3a76158"
+    },
+    {
+      "q": "Mamlakatda yillik inflatsiya 20% bo'lsa, pulning xarid qobiliyati ikki yil ichida necha foizga pasayadi?",
+      "v": [
+        "40%",
+        "44%",
+        "20%",
+        "taxminan 30,6%"
+      ],
+      "t": 3,
+      "izoh": "Ikki yilda narxlar (1,2)² = 1,44 marta ortadi. Demak bir so'mga oldingiga nisbatan 1 : 1,44 = 0,6944 ulush mahsulot olinadi. Pasayish 1 − 0,6944 = 0,3056, ya'ni taxminan 30,6%. 44% — narx o'sishini pasayish deb olish, 40% — foizlarni qo'shish xatosi. Javob: taxminan 30,6%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "inflatsiya-real-qiymat",
+      "id": "matematika_foiz_m02-murakkab-foizlar#9e218cbb"
+    },
+    {
+      "q": "Omonat yillik 15% daromad keltiradi, o'sha davrda yillik inflatsiya esa 10% ni tashkil qiladi. Ikki yildan keyin omonatning real o'sishi taxminan qancha bo'ladi?",
+      "v": [
+        "10%",
+        "taxminan 9,3%",
+        "5%",
+        "25%"
+      ],
+      "t": 1,
+      "izoh": "Omonat (1,15)² = 1,3225 marta ortadi, narxlar esa (1,1)² = 1,21 marta. Real o'sish 1,3225 : 1,21 = 1,093 marta, ya'ni taxminan 9,3%. 5% — stavkalar ayirmasini javob deb olish, 10% — uni ikkiga ko'paytirish, 25% — stavkalarni qo'shish xatosi. Javob: taxminan 9,3%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "inflatsiya-real-qiymat",
+      "id": "matematika_foiz_m02-murakkab-foizlar#d4366f38"
+    },
+    {
+      "q": "10 000 000 so'mni ikki yilga qo'yish uchun A banki yillik 12% murakkab foiz, B banki esa yillik 13% sodda foiz taklif qilmoqda. Qaysi bank ko'proq daromad beradi?",
+      "v": [
+        "A banki, 56 000 so'mga ko'p",
+        "A banki, 144 000 so'mga ko'p",
+        "B banki, 56 000 so'mga ko'p",
+        "ikkala bank bir xil daromad beradi"
+      ],
+      "t": 2,
+      "izoh": "A bankida 10 000 000·(1,12)² = 10 000 000·1,2544 = 12 544 000 so'm to'planadi. B bankida 10 000 000·(1 + 2·0,13) = 10 000 000·1,26 = 12 600 000 so'm. Farq 12 600 000 − 12 544 000 = 56 000 so'm va u B bank foydasiga. Javob: B banki, 56 000 so'mga ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-taklif-taqqoslash",
+      "id": "matematika_foiz_m02-murakkab-foizlar#f7ee1775"
+    },
+    {
+      "q": "6 000 000 so'm uch yilga qo'yiladi: A banki yillik 10% murakkab foiz, B banki yillik 11% sodda foiz beradi. Qaysi bankda summa katta bo'ladi?",
+      "v": [
+        "B banki, 6 000 so'mga ko'p",
+        "A banki, 60 000 so'mga ko'p",
+        "B banki, 66 000 so'mga ko'p",
+        "A banki, 6 000 so'mga ko'p"
+      ],
+      "t": 3,
+      "izoh": "A bankida 6 000 000·(1,1)³ = 6 000 000·1,331 = 7 986 000 so'm bo'ladi. B bankida 6 000 000·(1 + 3·0,11) = 6 000 000·1,33 = 7 980 000 so'm. Farq atigi 7 986 000 − 7 980 000 = 6 000 so'm, lekin u A bank foydasiga. Javob: A banki, 6 000 so'mga ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-taklif-taqqoslash",
+      "id": "matematika_foiz_m02-murakkab-foizlar#1e20e998"
+    },
+    {
+      "q": "Bir xil kurtkaning narxi ikkala do'konda ham 500 000 so'm. A do'konida avval 20%, so'ng yangi narxdan yana 10% chegirma beriladi, B do'konida esa bir yo'la 25% chegirma qo'llanadi. Qayerda arzon?",
+      "v": [
+        "A do'konida, 15 000 so'mga arzon",
+        "B do'konida, 15 000 so'mga arzon",
+        "A do'konida, 25 000 so'mga arzon",
+        "ikkala do'konda narx bir xil bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "A do'konida narx 500 000·0,8·0,9 = 500 000·0,72 = 360 000 so'm bo'ladi. B do'konida 500 000·0,75 = 375 000 so'm. Farq 375 000 − 360 000 = 15 000 so'm, demak A do'konida arzonroq. Ikki chegirma 30% ga emas, 28% ga teng kuchli. Javob: A do'konida, 15 000 so'mga arzon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-taklif-taqqoslash",
+      "id": "matematika_foiz_m02-murakkab-foizlar#adacbb26"
+    },
+    {
+      "q": "Ijara haqi uchun ikki shartnoma taklif qilindi: birinchisida haq har yili 15% ga, ikkinchisida esa har ikki yilda bir 32% ga oshadi. To'rt yildan keyin qaysi shartnomada ijara haqi kamroq bo'ladi?",
+      "v": [
+        "birinchi shartnomada, chunki 15% < 32%",
+        "ikkinchi shartnomada, chunki (1,32)² < (1,15)⁴",
+        "birinchi shartnomada, chunki (1,15)⁴ < (1,32)²",
+        "ikkala shartnomada ham haq teng bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Birinchi shartnomada to'rt yillik ko'paytuvchi (1,15)⁴ = 1,749 ga teng. Ikkinchisida ikki marta oshish bo'ladi: (1,32)² = 1,7424. Ikki yillik oshishni solishtirsak (1,15)² = 1,3225 > 1,32, demak birinchi shartnoma tezroq qimmatlashadi. Javob: ikkinchi shartnomada, chunki (1,32)² < (1,15)⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-taklif-taqqoslash",
+      "id": "matematika_foiz_m02-murakkab-foizlar#fc18d494"
+    },
+    {
+      "q": "Mahsulot narxi avval 10% ga, keyin yangi narxdan 20% ga oshdi. Bu ikki oshish bir martalik necha foizli oshishga teng kuchli?",
+      "v": [
+        "30%",
+        "31%",
+        "32%",
+        "132%"
+      ],
+      "t": 2,
+      "izoh": "Umumiy ko'paytuvchi 1,1·1,2 = 1,32 ga teng. Demak narx 1,32 − 1 = 0,32, ya'ni 32% ga oshgan. 30% — foizlarni qo'shish xatosi, 132% — ko'paytuvchining o'zini foiz deb olish, 31% — ko'paytirishdagi hisob xatosi. Javob: 32%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-yagona-foiz",
+      "id": "matematika_foiz_m02-murakkab-foizlar#f150a8fb"
+    },
+    {
+      "q": "Do'kon bayram munosabati bilan avval 20% chegirma e'lon qildi, so'ngra yangi narxdan yana 20% chegirma berdi. Bu ikki chegirma bir martalik necha foizli chegirmaga teng kuchli?",
+      "v": [
+        "40%",
+        "36%",
+        "64%",
+        "20%"
+      ],
+      "t": 1,
+      "izoh": "Umumiy ko'paytuvchi (0,8)² = 0,64 ga teng, ya'ni narxning 64% i qoladi. Chegirma 1 − 0,64 = 0,36, ya'ni 36%. 40% — chegirmalarni qo'shish xatosi, 64% — qolgan ulushni chegirma deb olish. Javob: 36%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekvivalent-yagona-foiz",
+      "id": "matematika_foiz_m02-murakkab-foizlar#01f6e404"
+    },
+    {
+      "q": "Tovar narxi avval 25% ga oshirilib, keyin yangi narxdan 20% ga tushirildi. Tovarning oxirgi narxi dastlabkisiga nisbatan qanday bo'ladi?",
+      "v": [
+        "narx o'zgarmaydi",
+        "narx 5% ga oshadi",
+        "narx 5% ga kamayadi",
+        "narx 45% ga oshadi"
+      ],
+      "t": 0,
+      "izoh": "Umumiy ko'paytuvchi 1,25·0,8 = 1 ga teng bo'ladi. Ko'paytuvchi 1 ga teng bo'lgani uchun narx dastlabki qiymatida qoladi. 5% ga oshadi degan javob foizlar ayirmasini olish xatosidan chiqadi. Javob: narx o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-yagona-foiz",
+      "id": "matematika_foiz_m02-murakkab-foizlar#6788966d"
+    },
+    {
+      "q": "Omborda turgan tovarga uch marta ketma-ket 10% dan chegirma qo'llanildi. Bu chegirmalar bir yo'la necha foizli chegirmaga teng kuchli bo'ladi?",
+      "v": [
+        "30%",
+        "19%",
+        "72,9%",
+        "27,1%"
+      ],
+      "t": 3,
+      "izoh": "Uch chegirmadan keyin narxning (0,9)³ = 0,729 ulushi qoladi. Chegirma 1 − 0,729 = 0,271, ya'ni 27,1%. 30% — chegirmalarni qo'shish, 19% — ikki chegirmaga to'g'ri keladigan qiymat, 72,9% — qolgan ulushni chegirma deb olish. Javob: 27,1%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekvivalent-yagona-foiz",
+      "id": "matematika_foiz_m02-murakkab-foizlar#08a54de9"
+    },
+    {
+      "q": "Bankka 15 000 000 so'm yillik 8% murakkab foiz bilan ikki yilga qo'yildi. Omonatchi shu davrda faqat foiz hisobiga qancha daromad oladi?",
+      "v": [
+        "2 400 000 so'm",
+        "1 200 000 so'm",
+        "17 496 000 so'm",
+        "2 496 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Ikki yildan keyingi summa 15 000 000·(1,08)² = 15 000 000·1,1664 = 17 496 000 so'm. Daromad esa 17 496 000 − 15 000 000 = 2 496 000 so'm. 2 400 000 — sodda foizdagi daromad, 1 200 000 — bir yillik foiz, 17 496 000 — umumiy summa. Javob: 2 496 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "faqat-foiz-daromadi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#d80cd0da"
+    },
+    {
+      "q": "Talaba 900 000 so'mlik stipendiyasini yillik 12% murakkab foizli hisobga ikki yilga qo'ydi. Uning sof foiz daromadi qancha bo'ladi?",
+      "v": [
+        "228 960 so'm",
+        "216 000 so'm",
+        "108 000 so'm",
+        "1 128 960 so'm"
+      ],
+      "t": 0,
+      "izoh": "Yakuniy summa 900 000·(1,12)² = 900 000·1,2544 = 1 128 960 so'm. Daromad 1 128 960 − 900 000 = 228 960 so'm. 216 000 — sodda foizdagi daromad, 108 000 — bir yillik foiz, 1 128 960 — daromad emas, umumiy summa. Javob: 228 960 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "faqat-foiz-daromadi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#ba9dd837"
+    },
+    {
+      "q": "Yillik 10% murakkab foizli omonat uch yil saqlanadi. To'plangan foiz daromadi boshlang'ich summaning necha foizini tashkil qiladi?",
+      "v": [
+        "30%",
+        "21%",
+        "33,1%",
+        "133,1%"
+      ],
+      "t": 2,
+      "izoh": "Uch yillik ko'paytuvchi (1,1)³ = 1,331 ga teng. Daromad 1,331 − 1 = 0,331, ya'ni boshlang'ich summaning 33,1% i. 30% — foizlarni qo'shish, 21% — ikki yillik daromad, 133,1% — ko'paytuvchini foiz deb olish xatosi. Javob: 33,1%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "faqat-foiz-daromadi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#cf5e9ead"
+    },
+    {
+      "q": "Sarvar 5 000 000 so'mni yillik 20% murakkab foiz bilan bankka qo'ydi. Ikkinchi yil uchun unga qancha foiz hisoblanadi?",
+      "v": [
+        "1 200 000 so'm",
+        "1 000 000 so'm",
+        "2 200 000 so'm",
+        "1 440 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Birinchi yil oxirida hisobda 5 000 000·1,2 = 6 000 000 so'm bo'ladi. Ikkinchi yil foizi shu yangi summadan olinadi: 6 000 000·0,2 = 1 200 000 so'm. 1 000 000 — foizni boshlang'ich summadan olish, 2 200 000 — ikki yillik jami daromad, 1 440 000 — uchinchi yil foizi. Javob: 1 200 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "faqat-foiz-daromadi",
+      "id": "matematika_foiz_m02-murakkab-foizlar#8cd696bc"
+    },
+    {
+      "q": "Koptok 2 m balandlikdan tashlandi va har safar sakraganda ko'tarilish balandligi oldingisidan 20% ga kam bo'ladi. Uchinchi sakrashdan keyin koptok qanday balandlikka ko'tariladi?",
+      "v": [
+        "0,8 m",
+        "1,024 m",
+        "1,28 m",
+        "0,8192 m"
+      ],
+      "t": 1,
+      "izoh": "Har sakrashda balandlikning 80% i qoladi: 2·(0,8)³ = 2·0,512 = 1,024 m. 0,8 m — 60% ni bir yo'la ayirish xatosi, 1,28 m — ikkinchi sakrash balandligi, 0,8192 m — to'rtinchi sakrash balandligi. Javob: 1,024 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bosqichli-jarayon",
+      "id": "matematika_foiz_m02-murakkab-foizlar#ab904ea5"
+    },
+    {
+      "q": "Suvni tozalash qurilmasi har filtrlashda undagi tuzning 30% ini ajratib oladi. Uch marta filtrlashdan keyin dastlabki tuzning necha foizi suvda qoladi?",
+      "v": [
+        "10%",
+        "49%",
+        "34,3%",
+        "65,7%"
+      ],
+      "t": 2,
+      "izoh": "Har filtrlashdan keyin tuzning 70% i qoladi, demak uch marta filtrlashda (0,7)³ = 0,343 ulush qoladi. Bu 34,3% ni tashkil qiladi. 10% — 90% ni bir yo'la ajratish xatosi, 49% — ikki filtrlashga to'g'ri keladi, 65,7% — ajratib olingan qism. Javob: 34,3%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bosqichli-jarayon",
+      "id": "matematika_foiz_m02-murakkab-foizlar#316d6fa8"
+    },
+    {
+      "q": "Korxonada oylik suv sarfi 80 m³ bo'lib, tejash chorasi tufayli har oy sarf oldingi oyga nisbatan 10% ga kamaymoqda. Uch oydan keyin oylik sarf qancha bo'ladi?",
+      "v": [
+        "56 m³",
+        "64,8 m³",
+        "72 m³",
+        "58,32 m³"
+      ],
+      "t": 3,
+      "izoh": "Har oy sarfning 90% i qoladi: 80·(0,9)³ = 80·0,729 = 58,32 m³. 56 m³ — uch oy uchun 30% ni bir yo'la ayirish, 64,8 m³ — ikki oydan keyingi sarf, 72 m³ — bir oydan keyingi sarf. Javob: 58,32 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bosqichli-jarayon",
+      "id": "matematika_foiz_m02-murakkab-foizlar#51d6bd58"
+    },
+    {
+      "q": "Bemorga 400 mg dori berildi va uning qondagi miqdori har 4 soatda 25% ga kamayadi. 12 soatdan keyin qonda dorining qancha miqdori qoladi?",
+      "v": [
+        "168,75 mg",
+        "100 mg",
+        "225 mg",
+        "300 mg"
+      ],
+      "t": 0,
+      "izoh": "12 soatda uchta davr o'tadi, har davrda miqdorning 75% i qoladi: 400·(0,75)³ = 400·0,421875 = 168,75 mg. 100 mg — 75% ni bir yo'la ayirish, 225 mg — ikki davrdan keyingi miqdor, 300 mg — bir davrdan keyingi miqdor. Javob: 168,75 mg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bosqichli-jarayon",
+      "id": "matematika_foiz_m02-murakkab-foizlar#0de46b55"
+    },
+    {
+      "q": "Hisobot jadvalida omonat summasi birinchi yil oxirida 660 000 so'm, ikkinchi yil oxirida esa 726 000 so'm deb ko'rsatilgan. Yillik foiz stavkasi va boshlang'ich summa qanday bo'lgan?",
+      "v": [
+        "11% va 600 000 so'm",
+        "10% va 600 000 so'm",
+        "10% va 594 000 so'm",
+        "20% va 550 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Yillik ko'paytuvchi 726 000 : 660 000 = 1,1 ga teng, demak stavka 10%. Boshlang'ich summa esa 660 000 : 1,1 = 600 000 so'm. 594 000 — birinchi yil summasidan 10% ni ayirish xatosi, 11% — o'sish summasini noto'g'ri asosga bo'lish natijasi. Javob: 10% va 600 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-tahlil",
+      "id": "matematika_foiz_m02-murakkab-foizlar#95157c2e"
+    },
+    {
+      "q": "Hisobotga ko'ra mahsulot narxi birinchi yili 10%, ikkinchi yili 15%, uchinchi yili esa 5% ga oshgan. Uch yil ichida narx jami necha foizga oshgan?",
+      "v": [
+        "30%",
+        "132,8%",
+        "taxminan 26,5%",
+        "taxminan 32,83%"
+      ],
+      "t": 3,
+      "izoh": "Umumiy ko'paytuvchi 1,1·1,15·1,05 = 1,32825 ga teng. Demak o'sish 1,32825 − 1 = 0,32825, ya'ni taxminan 32,83%. 30% — foizlarni qo'shish, 26,5% — uchinchi yilni tashlab ketish, 132,8% — ko'paytuvchini foiz deb olish. Javob: taxminan 32,83%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-tahlil",
+      "id": "matematika_foiz_m02-murakkab-foizlar#13fc14fd"
+    },
+    {
+      "q": "Uch yillik hisobotda kattalik birinchi yili 20% ga oshgan, ikkinchi yili 25% ga kamaygan, uchinchi yili esa yana 20% ga oshgan. Uch yil ichida kattalik qanday o'zgargan?",
+      "v": [
+        "15% ga oshgan",
+        "8% ga kamaygan",
+        "8% ga oshgan",
+        "umuman o'zgarmagan"
+      ],
+      "t": 2,
+      "izoh": "Umumiy ko'paytuvchi 1,2·0,75·1,2 = 1,08 ga teng. 1,08 > 1 bo'lgani uchun kattalik 8% ga oshgan. 15% — foizlarni qo'shib-ayirish xatosi, 8% ga kamaygan — ishorani almashtirish natijasi. Javob: 8% ga oshgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-tahlil",
+      "id": "matematika_foiz_m02-murakkab-foizlar#929dead9"
+    },
+    {
+      "q": "Kompaniya daromadi ikki yil ketma-ket 25% dan ortdi, uchinchi yilda esa 36% ga kamaydi. Uch yil oxirida daromad boshlang'ich darajaga nisbatan qanday bo'ldi?",
+      "v": [
+        "boshlang'ich daraja bilan bir xil bo'ldi",
+        "14% ga ko'p bo'ldi",
+        "14% ga kam bo'ldi",
+        "36% ga kam bo'ldi"
+      ],
+      "t": 0,
+      "izoh": "Umumiy ko'paytuvchi (1,25)²·0,64 = 1,5625·0,64 = 1 ga teng. Ko'paytuvchi 1 chiqqani uchun daromad boshlang'ich darajaga qaytadi. 14% — foizlarni 25 + 25 − 36 tarzida qo'shib-ayirish xatosidan chiqadi. Javob: boshlang'ich daraja bilan bir xil bo'ldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-tahlil",
+      "id": "matematika_foiz_m02-murakkab-foizlar#66a8116e"
+    },
+    {
+      "q": "Fermer xo'jaligi joriy yilda 400 tonna hosil oldi va keyingi ikki yilda hosil har yili 15% ga ortdi. Ikki yildan keyingi hosilning 20% i sotilmay qolsa, sotilgan hosil qancha bo'ladi?",
+      "v": [
+        "529 tonna",
+        "416 tonna",
+        "368 tonna",
+        "423,2 tonna"
+      ],
+      "t": 3,
+      "izoh": "Ikki yildan keyingi hosil 400·(1,15)² = 400·1,3225 = 529 tonna. Uning 80% i sotiladi: 529·0,8 = 423,2 tonna. 529 tonna — sotilmagan qismni hisobga olmaslik, 416 tonna — o'sishni sodda foizda hisoblash, 368 tonna — faqat bir yilni olish. Javob: 423,2 tonna.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kop-bosqichli-hayotiy-masala",
+      "id": "matematika_foiz_m02-murakkab-foizlar#cae57816"
+    },
+    {
+      "q": "Nodira 3 000 000 so'mni ikki yilga yillik 10% bilan qo'ydi, muddat tugagach butun summani yana bir yilga yillik 15% bilan qayta qo'ydi. Uch yildan keyin uning hisobida qancha bo'ladi?",
+      "v": [
+        "4 174 500 so'm",
+        "4 050 000 so'm",
+        "3 993 000 so'm",
+        "3 630 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Ikki yildan keyin 3 000 000·(1,1)² = 3 630 000 so'm to'planadi. Uchinchi yilda 3 630 000·1,15 = 4 174 500 so'm bo'ladi. 4 050 000 — foizlarni 35% deb qo'shish, 3 993 000 — uchala yilni ham 10% deb olish, 3 630 000 — uchinchi yilni tashlab ketish. Javob: 4 174 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kop-bosqichli-hayotiy-masala",
+      "id": "matematika_foiz_m02-murakkab-foizlar#d7d162af"
+    },
+    {
+      "q": "Do'kon tannarxi 250 000 so'm bo'lgan tovarga 40% ustama qo'yib sotuvga chiqardi, keyin esa e'lon qilingan narxdan 25% chegirma berdi. Sotuv narxi va bir dona tovardan olingan foyda qancha?",
+      "v": [
+        "287 500 so'm; foyda 37 500 so'm",
+        "262 500 so'm; foyda 12 500 so'm",
+        "350 000 so'm; foyda 100 000 so'm",
+        "237 500 so'm; zarar 12 500 so'm"
+      ],
+      "t": 1,
+      "izoh": "E'lon narxi 250 000·1,4 = 350 000 so'm. Chegirmadan keyin 350 000·0,75 = 262 500 so'm bo'ladi. Foyda 262 500 − 250 000 = 12 500 so'm. 287 500 — foizlarni 40 − 25 = 15% deb hisoblash, 350 000 — chegirmani unutish, 237 500 — chegirmani tannarxdan olish xatosi. Javob: 262 500 so'm; foyda 12 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kop-bosqichli-hayotiy-masala",
+      "id": "matematika_foiz_m02-murakkab-foizlar#1f4ceed6"
+    },
+    {
+      "q": "Bobur 6 000 000 so'mni teng ikkiga bo'lib, yarmini yillik 20%, qolgan yarmini esa yillik 10% murakkab foizli hisobga ikki yilga qo'ydi. Ikki yildan keyin uning jami mablag'i qancha bo'ladi?",
+      "v": [
+        "7 800 000 so'm",
+        "8 640 000 so'm",
+        "7 950 000 so'm",
+        "7 935 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi qism 3 000 000·(1,2)² = 3 000 000·1,44 = 4 320 000 so'm bo'ladi. Ikkinchi qism 3 000 000·(1,1)² = 3 000 000·1,21 = 3 630 000 so'm. Jami 4 320 000 + 3 630 000 = 7 950 000 so'm. 7 935 000 — o'rtacha 15% stavka olish xatosi, chunki murakkab foizda o'rtacha stavka aniq natija bermaydi. Javob: 7 950 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kop-bosqichli-hayotiy-masala",
+      "id": "matematika_foiz_m02-murakkab-foizlar#122d0b53"
+    },
+    {
+      "q": "Sodda va murakkab foizni taqqoslash haqidagi quyidagi mulohazalardan qaysi biri to'g'ri?",
+      "v": [
+        "murakkab foiz har qanday muddatda sodda foizdan ko'p daromad beradi",
+        "bir yildan uzoq muddatda murakkab foiz sodda foizdan ko'p daromad beradi",
+        "sodda foiz har doim murakkab foizdan ko'p daromad beradi",
+        "ikkala usul ham har doim aynan bir xil natija beradi"
+      ],
+      "t": 1,
+      "izoh": "Birinchi yil oxirida ikkala usul ham S₀(1 + p/100) summani beradi, ya'ni natijalar teng. Ikkinchi yildan boshlab murakkab foizda oldingi yil foiziga ham foiz hisoblanadi va u ustunlik qiladi. Shuning uchun to'g'ri mulohaza faqat bir yildan uzoq muddat uchun o'rinli. Javob: bir yildan uzoq muddatda murakkab foiz ko'p beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xulosa-tahlil",
+      "id": "matematika_foiz_m02-murakkab-foizlar#ba0a2fa9"
+    },
+    {
+      "q": "Tovar narxi avval 50% ga oshirilib, so'ngra yangi narxdan 50% ga tushirilsa, oxirgi narx haqida nima deyish mumkin?",
+      "v": [
+        "dastlabki narxga teng bo'ladi",
+        "dastlabki narxning 25% ini tashkil qiladi",
+        "dastlabki narxning 75% ini tashkil qiladi",
+        "dastlabki narxdan 50% ga ko'p bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Umumiy ko'paytuvchi 1,5·0,5 = 0,75 ga teng. Demak oxirgi narx dastlabkining 75% ini tashkil qiladi va 25% ga arzonlashgan bo'ladi. Narx teng qoladi degan javob oshish va tushish bir xil asosdan olinadi deb o'ylashdan kelib chiqadi. Javob: dastlabki narxning 75% ini tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xulosa-tahlil",
+      "id": "matematika_foiz_m02-murakkab-foizlar#fd0f00ec"
+    },
+    {
+      "q": "Ikki yil ketma-ket har yili 10% dan oshish bir martalik 20% oshishdan qanday farq qiladi?",
+      "v": [
+        "natijalar to'liq teng bo'ladi",
+        "ketma-ket oshish boshlang'ich summaning 1% iga kam natija beradi",
+        "ketma-ket oshish boshlang'ich summaning 2% iga ko'p natija beradi",
+        "ketma-ket oshish boshlang'ich summaning 1% iga ko'p natija beradi"
+      ],
+      "t": 3,
+      "izoh": "Ikki marta 10% oshish ko'paytuvchisi (1,1)² = 1,21 ga teng, bir martalik 20% oshish esa 1,2 beradi. Farq 1,21 − 1,2 = 0,01, ya'ni boshlang'ich summaning 1% i. Bu qo'shimcha ikkinchi yilda birinchi yil o'sishiga ham foiz hisoblanganidan chiqadi. Javob: 1% iga ko'p natija beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xulosa-tahlil",
+      "id": "matematika_foiz_m02-murakkab-foizlar#fffd3e43"
+    },
+    {
+      "q": "Aholi soni har yili bir xil foizga ortib borsa, bir yil ichida qo'shiladigan kishilar soni haqida nima deyish mumkin?",
+      "v": [
+        "har yili ortib boradi, chunki foiz kattaroq songa hisoblanadi",
+        "har yili o'zgarmay bir xil qoladi",
+        "har yili kamayib boradi",
+        "faqat foiz 100 dan katta bo'lgandagina ortib boradi"
+      ],
+      "t": 0,
+      "izoh": "Har yili foiz oldingi yil oxiridagi aholi soniga hisoblanadi, bu son esa yildan yilga kattalashadi. Masalan 10 000 kishi 5% ga ortsa birinchi yili 500 kishi, ikkinchi yili esa 10 500 ning 5% i, ya'ni 525 kishi qo'shiladi. Javob: har yili ortib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xulosa-tahlil",
+      "id": "matematika_foiz_m02-murakkab-foizlar#b7fe2d8e"
+    },
+    {
+      "q": "Tovarga avval 20% ustama qo'yib keyin 15% chegirma berish bilan avval 15% chegirma berib keyin 20% ustama qo'yish natijalari o'zaro qanday bo'ladi?",
+      "v": [
+        "natijalar bir xil bo'ladi, chunki ko'paytuvchilar o'rni almashadi",
+        "birinchi tartibda oxirgi narx yuqori chiqadi",
+        "ikkinchi tartibda oxirgi narx yuqori chiqadi",
+        "natijalar faqat ustama va chegirma teng bo'lgandagina tenglashadi"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tartibda narx S·1,2·0,85, ikkinchisida S·0,85·1,2 bo'ladi. Ko'paytirishning o'rin almashtirish xossasiga ko'ra ikkala ifoda ham S·1,02 ga teng. Demak tartib natijaga ta'sir qilmaydi, ikkala holda ham narx 2% ga oshadi. Javob: natijalar bir xil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tartib-va-teng-kuchlilik",
+      "id": "matematika_foiz_m02-murakkab-foizlar#2a6641df"
+    },
+    {
+      "q": "Yiliga bir marta 20% hisoblash bilan har yarim yilda 10% hisoblash bir yil uchun teng kuchlimi?",
+      "v": [
+        "ha, ikkala shart teng kuchli bo'ladi",
+        "yo'q, yarim yillik shart boshlang'ich summaning 1% iga ko'p beradi",
+        "yo'q, yillik shart boshlang'ich summaning 1% iga ko'p beradi",
+        "yo'q, yarim yillik shart boshlang'ich summaning 2% iga ko'p beradi"
+      ],
+      "t": 1,
+      "izoh": "Yillik shartda ko'paytuvchi 1,2 bo'ladi. Yarim yillik shartda esa (1,1)² = 1,21 chiqadi. Farq 1,21 − 1,2 = 0,01, ya'ni boshlang'ich summaning 1% i va u yarim yillik shart foydasiga. Demak stavkani bo'lib, davrlar sonini oshirish natijani biroz kattalashtiradi. Javob: yarim yillik shart 1% iga ko'p beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tartib-va-teng-kuchlilik",
+      "id": "matematika_foiz_m02-murakkab-foizlar#f5aa5f67"
+    },
+    {
+      "q": "Yillik 5% bilan 10 yil saqlanadigan omonat va yillik 10% bilan 5 yil saqlanadigan omonat ko'paytuvchilaridan qaysi biri katta?",
+      "v": [
+        "(1,1)⁵ katta",
+        "ikkala ko'paytuvchi teng",
+        "muddatlar har xil bo'lgani uchun taqqoslab bo'lmaydi",
+        "(1,05)¹⁰ katta"
+      ],
+      "t": 3,
+      "izoh": "(1,05)¹⁰ ni ((1,05)²)⁵ = (1,1025)⁵ ko'rinishida yozamiz. Endi ikkala ifodaning darajasi bir xil, asoslari esa 1,1025 va 1,1. 1,1025 > 1,1 bo'lgani uchun (1,1025)⁵ > (1,1)⁵. Hisoblab ko'rsak 1,6289 va 1,6105 chiqadi. Javob: (1,05)¹⁰ katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tartib-va-teng-kuchlilik",
+      "id": "matematika_foiz_m02-murakkab-foizlar#355b1796"
+    },
+    {
+      "q": "Omonatga har chorakda 5% dan foiz qo'shib borilsa, bu bir yil uchun necha foizli yillik stavkaga teng kuchli bo'ladi?",
+      "v": [
+        "20%",
+        "121,55%",
+        "taxminan 21,55%",
+        "1,2155%"
+      ],
+      "t": 2,
+      "izoh": "Bir yilda to'rt marta kapitallashuv bo'ladi, demak ko'paytuvchi (1,05)⁴ = 1,21550625. O'sish 1,21550625 − 1 = 0,2155, ya'ni taxminan 21,55%. 20% — choraklik foizlarni qo'shish, 121,55% — ko'paytuvchini foiz deb olish xatosi. Javob: taxminan 21,55%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tartib-va-teng-kuchlilik",
+      "id": "matematika_foiz_m02-murakkab-foizlar#1a9555dd"
+    }
+  ]
+}

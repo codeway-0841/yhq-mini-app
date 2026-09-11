@@ -1,0 +1,1609 @@
+{
+  "nom": "Aylana uzunligi, doira, sektor va segment yuzi",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Shahar bog'idagi dumaloq favvora hovuzining radiusi 7 m. Hovuz chetini to'liq o'rab turuvchi bordyur uzunligi necha metrga teng (π ≈ 22/7)?",
+      "v": [
+        "22 m",
+        "154 m",
+        "44 m",
+        "88 m"
+      ],
+      "t": 2,
+      "izoh": "Aylana uzunligi C = 2πr formula bilan topiladi. C = 2 · (22/7) · 7 = 2 · 22 = 44 m. Bu yerda radius bevosita berilgani uchun diametrga o'tish shart emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='92' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='152' x2='225.36' y2='99.23' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='142' y='168' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196.45' y='116.98' font-size='13' fill='%23334155' text-anchor='start'%3E7 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzunlik-radiusdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#93a036cf"
+    },
+    {
+      "q": "Radiusi 15 sm bo'lgan doira shaklidagi choy patnisining chetiga bezak tasmasi yopishtirilmoqda. Tasmaning uzunligi qancha bo'ladi?",
+      "v": [
+        "30π sm",
+        "15π sm",
+        "225π sm",
+        "60π sm"
+      ],
+      "t": 0,
+      "izoh": "Tasma patnis chetini, ya'ni aylanani to'liq o'raydi. C = 2πr = 2 · π · 15 = 30π sm. Agar πr yozilsa, bu yarim aylana uzunligi bo'lib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='92' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='152' x2='225.36' y2='99.23' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='142' y='168' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196.45' y='116.98' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzunlik-radiusdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#97c0cd90"
+    },
+    {
+      "q": "Bog'dagi dumaloq gulzorning radiusi 4,5 m. Gulzor atrofiga ikki qator qilib sim tortilsa, jami necha metr sim ketadi (π ≈ 3,14)?",
+      "v": [
+        "28,26 m",
+        "113,04 m",
+        "127,17 m",
+        "56,52 m"
+      ],
+      "t": 3,
+      "izoh": "Bir qator sim uzunligi aylana uzunligiga teng: C = 2 · 3,14 · 4,5 = 28,26 m. Qator ikkita bo'lgani uchun jami 28,26 · 2 = 56,52 m sim kerak bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='92' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='152' x2='225.36' y2='99.23' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='142' y='168' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196.45' y='116.98' font-size='13' fill='%23334155' text-anchor='start'%3E4,5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzunlik-radiusdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#35431fa6"
+    },
+    {
+      "q": "Ustaxonada radiuslari 6 sm va 10 sm bo'lgan ikkita chambarak yasaldi. Kattasining aylana uzunligi kichiginikidan qanchaga ortiq?",
+      "v": [
+        "4π sm",
+        "8π sm",
+        "20π sm",
+        "32π sm"
+      ],
+      "t": 1,
+      "izoh": "Har bir chambarak uzunligini alohida topamiz: 2π · 10 = 20π va 2π · 6 = 12π sm. Ayirma 20π − 12π = 8π sm. Buni 2π(10 − 6) = 8π ko'rinishida ham hisoblash mumkin.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='58' cy='155' r='51' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='210' cy='155' r='85' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='58' y1='155' x2='109' y2='155' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='83' y='146' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Cline x1='210' y1='155' x2='295' y2='155' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='252' y='146' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzunlik-radiusdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#a21b440a"
+    },
+    {
+      "q": "Velosiped g'ildiragining diametri 70 sm. G'ildirak bir marta to'liq aylanganda necha santimetr yo'l bosadi (π ≈ 22/7)?",
+      "v": [
+        "440 sm",
+        "220 sm",
+        "110 sm",
+        "3850 sm"
+      ],
+      "t": 1,
+      "izoh": "Bir aylanishda bosilgan yo'l g'ildirak aylanasining uzunligiga teng. Diametr berilgani uchun C = πd = (22/7) · 70 = 220 sm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='93' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='57' y1='150' x2='243' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='141' font-size='13' fill='%23334155' text-anchor='middle'%3E70 sm%3C/text%3E%3Ctext x='49' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzunlik-diametrdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#2d2789a7"
+    },
+    {
+      "q": "Dumaloq stol qopqog'ining diametri 1,4 m. Qopqoq chetiga metall jiyak o'rnatish uchun necha metr jiyak kerak (π ≈ 22/7)?",
+      "v": [
+        "8,8 m",
+        "2,2 m",
+        "1,54 m",
+        "4,4 m"
+      ],
+      "t": 3,
+      "izoh": "Jiyak stol chetidagi aylana bo'ylab o'rnatiladi. C = πd = (22/7) · 1,4 = 22 · 0,2 = 4,4 m. Yuza formulasi bu yerda ishlatilmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='93' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='57' y1='150' x2='243' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='141' font-size='13' fill='%23334155' text-anchor='middle'%3E1,4 m%3C/text%3E%3Ctext x='49' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzunlik-diametrdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#962604d1"
+    },
+    {
+      "q": "Quduq og'zining diametri 90 sm o'lchandi. Og'izni to'liq o'rab oladigan temir halqaning uzunligi qancha bo'lishi kerak (π ≈ 3,14)?",
+      "v": [
+        "282,6 sm",
+        "565,2 sm",
+        "141,3 sm",
+        "180 sm"
+      ],
+      "t": 0,
+      "izoh": "Halqa quduq og'zi aylanasi bo'ylab yotadi, demak uzunligi C = πd. C = 3,14 · 90 = 282,6 sm. Diametrni ikkilantirish yoki radiusni qo'yish xato natija beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='93' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='57' y1='150' x2='243' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='141' font-size='13' fill='%23334155' text-anchor='middle'%3E90 sm%3C/text%3E%3Ctext x='49' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzunlik-diametrdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#a7ee7a78"
+    },
+    {
+      "q": "Ikkita disk tayyorlandi: birining diametri 24 sm, ikkinchisiniki 36 sm. Kattasining aylana uzunligi kichigidan necha santimetr ortiq?",
+      "v": [
+        "6π sm",
+        "36π sm",
+        "12π sm",
+        "60π sm"
+      ],
+      "t": 2,
+      "izoh": "Uzunliklar πd formula bilan topiladi: 36π sm va 24π sm. Ayirma 36π − 24π = 12π sm. Radiuslar ayirmasini olib π ga ko'paytirish ikki barobar kichik natija beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='62' cy='155' r='54' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='215' cy='155' r='81' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='8' y1='155' x2='116' y2='155' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='62' y='146' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Cline x1='134' y1='155' x2='296' y2='155' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='215' y='146' font-size='13' fill='%23334155' text-anchor='middle'%3E36 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzunlik-diametrdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#e737052f"
+    },
+    {
+      "q": "Bog'bon daraxt tanasini arqon bilan o'rab, aylana uzunligini 132 sm deb o'lchadi. Tananing diametri necha santimetrga teng (π ≈ 22/7)?",
+      "v": [
+        "21 sm",
+        "84 sm",
+        "42 sm",
+        "66 sm"
+      ],
+      "t": 2,
+      "izoh": "C = πd tenglikdan d = C : π kelib chiqadi. d = 132 : (22/7) = 132 · 7 : 22 = 42 sm. Agar 21 chiqsa, bu radius bo'ladi, diametr emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='158' r='90' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='60' y1='158' x2='240' y2='158' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='149' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='142' y='174' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='150' y='56' font-size='13' fill='%23334155' text-anchor='middle'%3E132 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radius-uzunlikdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#c6cee757"
+    },
+    {
+      "q": "Nodira dumaloq hovuz chetidan bir marta aylanib chiqib, 62,8 m yo'l bosdi. Hovuzning radiusi necha metr (π ≈ 3,14)?",
+      "v": [
+        "10 m",
+        "20 m",
+        "31,4 m",
+        "5 m"
+      ],
+      "t": 0,
+      "izoh": "Bosib o'tilgan yo'l aylana uzunligi: C = 2πr. Bundan r = C : (2π) = 62,8 : 6,28 = 10 m. Javob 20 chiqsa, bu diametr bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='158' r='90' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='158' x2='223.72' y2='106.38' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='195.55' y='123.61' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='142' y='174' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='150' y='56' font-size='13' fill='%23334155' text-anchor='middle'%3E62,8 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radius-uzunlikdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#358a0c7d"
+    },
+    {
+      "q": "Aravaning g'ildiragi bo'ylab o'lchangan aylana uzunligi 220 sm. Shu g'ildirakning radiusi necha santimetrga teng (π ≈ 22/7)?",
+      "v": [
+        "70 sm",
+        "110 sm",
+        "5 sm",
+        "35 sm"
+      ],
+      "t": 3,
+      "izoh": "2πr = 220 tenglamani yechamiz: 2 · (22/7) · r = 220, ya'ni (44/7) · r = 220. Demak r = 220 · 7 : 44 = 35 sm. 2π ni 44 deb olish keng tarqalgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='158' r='90' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='158' x2='223.72' y2='106.38' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='195.55' y='123.61' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='142' y='174' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='150' y='56' font-size='13' fill='%23334155' text-anchor='middle'%3E220 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-uzunlikdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#55152327"
+    },
+    {
+      "q": "Dumaloq gilamning chetidagi jiyak uzunligi 9,42 m ni tashkil qiladi. Gilamning diametri necha metr (π ≈ 3,14)?",
+      "v": [
+        "1,5 m",
+        "3 m",
+        "6 m",
+        "4,71 m"
+      ],
+      "t": 1,
+      "izoh": "Jiyak aylana uzunligi bo'lgani uchun πd = 9,42. Bundan d = 9,42 : 3,14 = 3 m. Bu qiymatni yana ikkiga bo'lish radiusni beradi, savolda esa diametr so'ralgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='158' r='90' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='60' y1='158' x2='240' y2='158' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='149' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='142' y='174' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='150' y='56' font-size='13' fill='%23334155' text-anchor='middle'%3E9,42 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-uzunlikdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#b1a7e862"
+    },
+    {
+      "q": "Diametri 70 sm bo'lgan g'ildirak yo'lda 100 marta to'liq aylandi. G'ildirak necha metr yo'l bosgan (π ≈ 22/7)?",
+      "v": [
+        "110 m",
+        "220 m",
+        "22 m",
+        "440 m"
+      ],
+      "t": 1,
+      "izoh": "Bir aylanishdagi yo'l C = πd = (22/7) · 70 = 220 sm. Yuz aylanishda 220 · 100 = 22000 sm bo'ladi. Santimetrni metrga o'tkazamiz: 22000 : 100 = 220 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gildirak-aylanish",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#466a5727"
+    },
+    {
+      "q": "Avtomobil g'ildiragining radiusi 35 sm. Mashina 1,1 km yo'l bosishi uchun g'ildirak necha marta aylanishi kerak (π ≈ 22/7)?",
+      "v": [
+        "250 marta",
+        "1000 marta",
+        "5000 marta",
+        "500 marta"
+      ],
+      "t": 3,
+      "izoh": "Bir aylanishdagi yo'l C = 2πr = 2 · (22/7) · 35 = 220 sm = 2,2 m. Umumiy yo'l 1,1 km = 1100 m. Aylanishlar soni 1100 : 2,2 = 500 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gildirak-aylanish",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#56440a6a"
+    },
+    {
+      "q": "Bog' aravasining g'ildiragi bir marta aylanganda 1,57 m masofani bosadi. G'ildirakning diametri necha santimetr (π ≈ 3,14)?",
+      "v": [
+        "50 sm",
+        "25 sm",
+        "100 sm",
+        "157 sm"
+      ],
+      "t": 0,
+      "izoh": "Bir aylanishdagi yo'l aylana uzunligiga teng: πd = 1,57. Demak d = 1,57 : 3,14 = 0,5 m. Metrni santimetrga o'tkazsak, 0,5 · 100 = 50 sm bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gildirak-aylanish",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#29be9cab"
+    },
+    {
+      "q": "Radiuslari 20 sm va 30 sm bo'lgan ikkita g'ildirak bir xil masofani bosdi. Kichik g'ildirak 90 marta aylangan bo'lsa, kattasi necha marta aylanadi?",
+      "v": [
+        "135 marta",
+        "40 marta",
+        "60 marta",
+        "120 marta"
+      ],
+      "t": 2,
+      "izoh": "Kichik g'ildirak bosgan yo'l: 90 · 2π · 20 = 3600π sm. Katta g'ildirak uzunligi 2π · 30 = 60π sm. Aylanishlar soni 3600π : 60π = 60 marta. Aylanishlar soni radiusga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gildirak-aylanish",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#c171286b"
+    },
+    {
+      "q": "Radiusi 18 sm bo'lgan aylanada markaziy burchagi 60° ga teng yoyning uzunligi qanchaga teng?",
+      "v": [
+        "3π sm",
+        "12π sm",
+        "6π sm",
+        "36π sm"
+      ],
+      "t": 2,
+      "izoh": "Yoy uzunligi l = πrn : 180 formula bilan topiladi. l = π · 18 · 60 : 180 = π · 6 = 6π sm. Maxrajga 360 yozilsa, natija ikki barobar kichik chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 227.94 109 A 90 90 0 1 0 227.94 199' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 227.94 199 A 90 90 0 0 0 227.94 109' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='227.94' y2='199' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='227.94' y2='109' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 172.52 167 A 26 26 0 0 0 172.52 141' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='198.87' y='122.25' font-size='13' fill='%23334155' text-anchor='start'%3E18 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoy-uzunligi-gradus",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#bcdd5043"
+    },
+    {
+      "q": "Yelpig'ich to'liq ochilganda uning yon qirrasi 24 sm, ochilish burchagi esa 150° bo'ladi. Yelpig'ichning tashqi yoyi uzunligi qancha (π ≈ 3,14)?",
+      "v": [
+        "62,8 sm",
+        "31,4 sm",
+        "125,6 sm",
+        "150,72 sm"
+      ],
+      "t": 0,
+      "izoh": "Yelpig'ich sektor shaklida, yon qirrasi radius vazifasini bajaradi. l = πrn : 180 = 3,14 · 24 · 150 : 180 = 3,14 · 20 = 62,8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 173.29 67.07 A 90 90 0 1 0 173.29 240.93' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 173.29 240.93 A 90 90 0 0 0 173.29 67.07' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='173.29' y2='240.93' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='173.29' y2='67.07' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 156.73 179.11 A 26 26 0 0 0 156.73 128.89' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E150°%3C/text%3E%3Ctext x='168.81' y='99.19' font-size='13' fill='%23334155' text-anchor='start'%3E24 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoy-uzunligi-gradus",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#550e7d13"
+    },
+    {
+      "q": "Radiusi 12 m bo'lgan dumaloq maydonning 45° li yoyi bo'ylab bordyur toshi yotqizilmoqda. Bordyur uzunligi qancha bo'ladi?",
+      "v": [
+        "1,5π m",
+        "6π m",
+        "24π m",
+        "3π m"
+      ],
+      "t": 3,
+      "izoh": "45° butun aylananing sakkizdan bir qismi. l = πrn : 180 = π · 12 · 45 : 180 = 3π m. Buni 2πr : 8 = 24π : 8 = 3π tarzida ham tekshirish mumkin.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 233.15 119.56 A 90 90 0 1 0 233.15 188.44' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 233.15 188.44 A 90 90 0 0 0 233.15 119.56' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='233.15' y2='188.44' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='233.15' y2='119.56' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 174.02 163.95 A 26 26 0 0 0 174.02 144.05' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='201.73' y='128.06' font-size='13' fill='%23334155' text-anchor='start'%3E12 m%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoy-uzunligi-gradus",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#c5385794"
+    },
+    {
+      "q": "Aylananing markaziy burchagi 40° bo'lgan yoyi uzunligi 4π sm ga teng. Shu aylananing radiusi necha santimetr?",
+      "v": [
+        "36 sm",
+        "18 sm",
+        "9 sm",
+        "2 sm"
+      ],
+      "t": 1,
+      "izoh": "l = πrn : 180 formulaga qiymatlarni qo'yamiz: 4π = π · r · 40 : 180, ya'ni 4π = 2πr : 9. Ikki tomonni π ga qisqartirib, 4 = 2r : 9 dan r = 18 sm topiladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 234.57 123.22 A 90 90 0 1 0 234.57 184.78' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 234.57 184.78 A 90 90 0 0 0 234.57 123.22' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='234.57' y2='184.78' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='234.57' y2='123.22' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 174.43 162.89 A 26 26 0 0 0 174.43 145.11' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E40°%3C/text%3E%3Ctext x='202.51' y='130.07' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='260' y='158' font-size='13' fill='%23334155' text-anchor='middle'%3E4π sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoy-uzunligi-gradus",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#730c1d4b"
+    },
+    {
+      "q": "Radiusi 9 sm bo'lgan aylanada uzunligi 3π sm bo'lgan yoy ajratilgan. Shu yoyga tayangan markaziy burchak necha gradus?",
+      "v": [
+        "120°",
+        "60°",
+        "30°",
+        "180°"
+      ],
+      "t": 1,
+      "izoh": "l = πrn : 180 dan n = 180l : (πr). n = 180 · 3π : (π · 9) = 540 : 9 = 60°. Tekshiramiz: butun aylana 18π, yoy esa uning oltidan biri.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 213.64 90.36 A 90 90 0 1 0 213.64 217.64' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 213.64 217.64 A 90 90 0 0 0 213.64 90.36' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='213.64' y2='217.64' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='213.64' y2='90.36' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 168.38 172.38 A 26 26 0 0 0 168.38 135.62' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='188' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='169.8' y='103.08' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='246' y='158' font-size='13' fill='%23334155' text-anchor='start'%3E3π sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoy-markaziy-burchak",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#3e63ab47"
+    },
+    {
+      "q": "Sherzod radiusi 50 m bo'lgan dumaloq yo'lakcha bo'ylab 78,5 m yurdi. U markazga nisbatan necha gradusli burchakni bosib o'tgan (π ≈ 3,14)?",
+      "v": [
+        "45°",
+        "180°",
+        "25°",
+        "90°"
+      ],
+      "t": 3,
+      "izoh": "Butun aylana uzunligi C = 2 · 3,14 · 50 = 314 m. Yurilgan yo'lning ulushi 78,5 : 314 = 0,25. Demak burchak 0,25 · 360° = 90°. Ulushni bevosita gradus deb yozish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 225.05 104.33 A 90 90 0 1 0 225.05 203.67' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 225.05 203.67 A 90 90 0 0 0 225.05 104.33' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='225.05' y2='203.67' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='225.05' y2='104.33' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 171.68 168.35 A 26 26 0 0 0 171.68 139.65' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='188' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='179.55' y='108.05' font-size='13' fill='%23334155' text-anchor='middle'%3E50 m%3C/text%3E%3Ctext x='246' y='158' font-size='13' fill='%23334155' text-anchor='start'%3E78,5 m%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoy-markaziy-burchak",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#7dd970d5"
+    },
+    {
+      "q": "Radiusi 20 sm bo'lgan dumaloq tortdan yoyining uzunligi 10π sm bo'lgan bo'lak kesib olindi. Bo'lakning markaziy burchagi qanday?",
+      "v": [
+        "90°",
+        "45°",
+        "180°",
+        "36°"
+      ],
+      "t": 0,
+      "izoh": "Tort chetining to'liq uzunligi C = 2π · 20 = 40π sm. Kesilgan bo'lak yoyi 10π sm, ya'ni butun aylananing chorak qismi. Chorak qismga 360° : 4 = 90° burchak mos keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 225.05 104.33 A 90 90 0 1 0 225.05 203.67' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 225.05 203.67 A 90 90 0 0 0 225.05 104.33' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='225.05' y2='203.67' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='225.05' y2='104.33' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 171.68 168.35 A 26 26 0 0 0 171.68 139.65' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='188' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='179.55' y='108.05' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='246' y='158' font-size='13' fill='%23334155' text-anchor='start'%3E10π sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoy-markaziy-burchak",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#f490cb6f"
+    },
+    {
+      "q": "Aylana ikkita yoyga bo'lingan: birining uzunligi 12π sm, ikkinchisiniki 18π sm. Kichik yoyga tayangan markaziy burchakni toping.",
+      "v": [
+        "216°",
+        "72°",
+        "144°",
+        "288°"
+      ],
+      "t": 2,
+      "izoh": "Ikki yoy birgalikda butun aylanani beradi: 12π + 18π = 30π sm. Kichik yoyning ulushi 12π : 30π = 0,4. Unga mos burchak 0,4 · 360° = 144°. Katta yoyga esa 216° to'g'ri keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 202.9 81.19 A 90 90 0 1 0 202.9 226.81' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 202.9 226.81 A 90 90 0 0 0 202.9 81.19' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='202.9' y2='226.81' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='202.9' y2='81.19' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 165.28 175.03 A 26 26 0 0 0 165.28 132.97' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='188' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='246' y='158' font-size='13' fill='%23334155' text-anchor='start'%3E12π sm%3C/text%3E%3Ctext x='74' y='158' font-size='13' fill='%23334155' text-anchor='start'%3E18π sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoy-markaziy-burchak",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#8901a6da"
+    },
+    {
+      "q": "Radiusi 12 sm bo'lgan aylanada markaziy burchak π/3 radianga teng. Shu burchakka tayangan yoyning uzunligi qancha?",
+      "v": [
+        "2π sm",
+        "8π sm",
+        "4π sm",
+        "24π sm"
+      ],
+      "t": 2,
+      "izoh": "Burchak radianda berilganda yoy uzunligi l = rα formula bilan topiladi. l = 12 · π/3 = 4π sm. Bu yerda 180 ga bo'lish talab qilinmaydi, chunki burchak allaqachon radianda.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 227.94 109 A 90 90 0 1 0 227.94 199' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 227.94 199 A 90 90 0 0 0 227.94 109' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='227.94' y2='199' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='227.94' y2='109' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 172.52 167 A 26 26 0 0 0 172.52 141' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3Eπ/3%3C/text%3E%3Ctext x='198.87' y='122.25' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoy-radian",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#7c11a9dd"
+    },
+    {
+      "q": "Aylanadagi yoyning uzunligi 15 sm, aylananing radiusi esa 6 sm. Shu yoyga tayangan markaziy burchak necha radian?",
+      "v": [
+        "2,5 rad",
+        "0,4 rad",
+        "5 rad",
+        "1,25 rad"
+      ],
+      "t": 0,
+      "izoh": "l = rα tenglikdan α = l : r kelib chiqadi. α = 15 : 6 = 2,5 radian. Radiusni yoyga bo'lish teskari natija berib, 0,4 ni chiqaradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 203.53 81.65 A 90 90 0 1 0 203.53 226.35' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 203.53 226.35 A 90 90 0 0 0 203.53 81.65' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='203.53' y2='226.35' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='203.53' y2='81.65' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 165.47 174.9 A 26 26 0 0 0 165.47 133.1' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='188' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='162.06' y='100.72' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='246' y='158' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoy-radian",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#10f4d207"
+    },
+    {
+      "q": "Markaziy burchagi 2 radian bo'lgan yoyning uzunligi 14 sm ga teng. Shu aylananing radiusi necha santimetr?",
+      "v": [
+        "28 sm",
+        "3,5 sm",
+        "14 sm",
+        "7 sm"
+      ],
+      "t": 3,
+      "izoh": "l = rα formuladan r = l : α. r = 14 : 2 = 7 sm. Yoy uzunligini burchakka ko'paytirish emas, aynan bo'lish kerak, aks holda 28 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 198.36 78.09 A 90 90 0 1 0 198.36 229.91' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 198.36 229.91 A 90 90 0 0 0 198.36 78.09' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='198.36' y2='229.91' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='198.36' y2='78.09' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 163.97 175.93 A 26 26 0 0 0 163.97 132.07' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E2 rad%3C/text%3E%3Ctext x='182.6' y='105.25' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='260' y='158' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoy-radian",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#5818c06a"
+    },
+    {
+      "q": "Markaziy burchak 150° ni tashkil qiladi. Uni radianga aylantirib, radiusi 6 sm bo'lgan aylanadagi mos yoy uzunligini toping.",
+      "v": [
+        "5π/6 sm",
+        "5π sm",
+        "10π sm",
+        "2,5π sm"
+      ],
+      "t": 1,
+      "izoh": "Avval burchakni radianga o'tkazamiz: 150° = 150 · π/180 = 5π/6 radian. Endi l = rα = 6 · 5π/6 = 5π sm. Radian qiymatini yoy uzunligi deb yozib yuborish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 173.29 67.07 A 90 90 0 1 0 173.29 240.93' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 173.29 240.93 A 90 90 0 0 0 173.29 67.07' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='173.29' y2='240.93' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='173.29' y2='67.07' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 156.73 179.11 A 26 26 0 0 0 156.73 128.89' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E150°%3C/text%3E%3Ctext x='168.81' y='99.19' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoy-radian",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#47969d32"
+    },
+    {
+      "q": "Dumaloq dasturxonning radiusi 70 sm. Dasturxon qoplab turgan yuza necha kvadrat santimetrga teng (π ≈ 22/7)?",
+      "v": [
+        "440 sm²",
+        "15400 sm²",
+        "7700 sm²",
+        "30800 sm²"
+      ],
+      "t": 1,
+      "izoh": "Doira yuzi S = πr² formula bilan topiladi. S = (22/7) · 70² = (22/7) · 4900 = 22 · 700 = 15400 sm². 440 esa aylana uzunligi bo'lib, yuza emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='92' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='152' x2='225.36' y2='99.23' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='142' y='168' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196.45' y='116.98' font-size='13' fill='%23334155' text-anchor='start'%3E70 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "doira-yuzi-radiusdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#19bf2d42"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan doiraning yuzi necha kvadrat santimetrga teng deb yozish mumkin?",
+      "v": [
+        "12π sm²",
+        "6π sm²",
+        "144π sm²",
+        "36π sm²"
+      ],
+      "t": 3,
+      "izoh": "S = πr² formulaga radiusni qo'yamiz: S = π · 6² = 36π sm². Radiusni kvadratga ko'tarish o'rniga ikkiga ko'paytirilsa, aylana uzunligi 12π hosil bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='92' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='152' x2='225.36' y2='99.23' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='142' y='168' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196.45' y='116.98' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "doira-yuzi-radiusdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#2410f8c0"
+    },
+    {
+      "q": "Bog'dagi sug'orish moslamasi radiusi 9 m bo'lgan doira shaklidagi maydonni sug'oradi. Sug'oriladigan maydon yuzi qancha (π ≈ 3,14)?",
+      "v": [
+        "254,34 m²",
+        "56,52 m²",
+        "28,26 m²",
+        "1017,36 m²"
+      ],
+      "t": 0,
+      "izoh": "Sepilgan suv doira hosil qiladi, radiusi 9 m. S = πr² = 3,14 · 81 = 254,34 m². Radiusni ikkilantirib 18 m deb olish yuzani to'rt barobar oshirib, 1017,36 m² ni beradi; 9 m ni diametr deb qarash esa, aksincha, to'rt barobar kichik natijaga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='92' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='152' x2='225.36' y2='99.23' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='142' y='168' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196.45' y='116.98' font-size='13' fill='%23334155' text-anchor='start'%3E9 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doira-yuzi-radiusdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#7b8440a5"
+    },
+    {
+      "q": "Radiusi 2√3 sm bo'lgan doiraning yuzini toping va javobni π orqali yozing.",
+      "v": [
+        "6π sm²",
+        "4√3π sm²",
+        "12π sm²",
+        "48π sm²"
+      ],
+      "t": 2,
+      "izoh": "S = πr² = π · (2√3)². Qavsni ochamiz: (2√3)² = 2² · (√3)² = 4 · 3 = 12. Demak S = 12π sm². Ildizli sonni kvadratga ko'tarishda koeffitsiyent ham kvadratga ko'tariladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='92' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='152' x2='225.36' y2='99.23' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='142' y='168' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196.45' y='116.98' font-size='13' fill='%23334155' text-anchor='start'%3E2√3 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doira-yuzi-radiusdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#ce36d0de"
+    },
+    {
+      "q": "Diametri 20 sm bo'lgan dumaloq pitsaning yuzi qanchaga teng bo'ladi (javob π orqali yozilsin)?",
+      "v": [
+        "400π sm²",
+        "20π sm²",
+        "100π sm²",
+        "200π sm²"
+      ],
+      "t": 2,
+      "izoh": "Avval radiusni topamiz: r = 20 : 2 = 10 sm. So'ng S = πr² = π · 100 = 100π sm². Diametrni to'g'ridan-to'g'ri kvadratga ko'tarish to'rt barobar katta natija beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='93' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='57' y1='150' x2='243' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='141' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='49' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "doira-yuzi-diametrdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#7e8b248f"
+    },
+    {
+      "q": "Suv quvurining ichki diametri 14 sm. Quvurning ko'ndalang kesimi yuzi necha kvadrat santimetr (π ≈ 22/7)?",
+      "v": [
+        "154 sm²",
+        "616 sm²",
+        "44 sm²",
+        "88 sm²"
+      ],
+      "t": 0,
+      "izoh": "Ko'ndalang kesim — radiusi r = 7 sm bo'lgan doira. S = πr² = (22/7) · 49 = 22 · 7 = 154 sm². 44 soni esa kesim chegarasining uzunligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='93' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='57' y1='150' x2='243' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='141' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='49' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "doira-yuzi-diametrdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#358d3529"
+    },
+    {
+      "q": "Ikkita dumaloq qopqoqning diametrlari 8 sm va 6 sm. Ularning yuzalari ayirmasi qanchaga teng?",
+      "v": [
+        "π sm²",
+        "28π sm²",
+        "25π sm²",
+        "7π sm²"
+      ],
+      "t": 3,
+      "izoh": "Radiuslar 4 sm va 3 sm. Yuzalar π · 16 = 16π va π · 9 = 9π sm². Ayirma 16π − 9π = 7π sm². Diametrlar ayirmasidan yuza hisoblab bo'lmaydi, chunki yuza radiusning kvadratiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doira-yuzi-diametrdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#7a2c83db"
+    },
+    {
+      "q": "Diametri 2,8 m bo'lgan dumaloq quduq og'ziga tunukadan qopqoq kesiladi. Qopqoqning yuzi necha kvadrat metr (π ≈ 22/7)?",
+      "v": [
+        "8,8 m²",
+        "6,16 m²",
+        "24,64 m²",
+        "4,4 m²"
+      ],
+      "t": 1,
+      "izoh": "Radius r = 2,8 : 2 = 1,4 m. Yuza S = πr² = (22/7) · 1,96 = 22 · 0,28 = 6,16 m². 8,8 soni qopqoq chetining uzunligi bo'lib, yuza emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='93' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='57' y1='150' x2='243' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='141' font-size='13' fill='%23334155' text-anchor='middle'%3E2,8 m%3C/text%3E%3Ctext x='49' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doira-yuzi-diametrdan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#1c5a9e03"
+    },
+    {
+      "q": "Doiraning yuzi 64π sm² ga teng ekanligi ma'lum. Shu doiraning radiusi necha santimetr?",
+      "v": [
+        "16 sm",
+        "8 sm",
+        "32 sm",
+        "4 sm"
+      ],
+      "t": 1,
+      "izoh": "S = πr² tenglikdan πr² = 64π, ya'ni r² = 64. Kvadrat ildiz olamiz: r = 8 sm. 16 javobi diametrga mos keladi, savolda esa radius so'ralgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radius-yuzadan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#a26b87ea"
+    },
+    {
+      "q": "Dumaloq gilamning yuzi 12,56 m² ni tashkil qiladi. Gilamning diametri necha metrga teng (π ≈ 3,14)?",
+      "v": [
+        "2 m",
+        "8 m",
+        "6,28 m",
+        "4 m"
+      ],
+      "t": 3,
+      "izoh": "πr² = 12,56 dan r² = 12,56 : 3,14 = 4, demak r = 2 m. Diametr esa radiusdan ikki barobar katta: d = 2 · 2 = 4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-yuzadan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#93becf10"
+    },
+    {
+      "q": "Yuzi 154 sm² bo'lgan doira chizilgan. Shu doira chegarasi, ya'ni aylananing uzunligi qanchaga teng (π ≈ 22/7)?",
+      "v": [
+        "44 sm",
+        "22 sm",
+        "88 sm",
+        "14 sm"
+      ],
+      "t": 0,
+      "izoh": "Avval radiusni topamiz: (22/7) · r² = 154, r² = 154 · 7 : 22 = 49, r = 7 sm. Endi C = 2πr = 2 · (22/7) · 7 = 44 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-yuzadan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#10d3b973"
+    },
+    {
+      "q": "Dumaloq gulzorning yuzi 78,5 m². Uni chetidan panjara bilan o'rab chiqish uchun necha metr panjara kerak (π ≈ 3,14)?",
+      "v": [
+        "15,7 m",
+        "62,8 m",
+        "31,4 m",
+        "25 m"
+      ],
+      "t": 2,
+      "izoh": "3,14 · r² = 78,5 dan r² = 25, demak r = 5 m. Panjara uzunligi aylana uzunligiga teng: C = 2 · 3,14 · 5 = 31,4 m. Radius o'rniga r² ni qoldirib qo'ymaslik kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-yuzadan",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#de69878e"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan doirada markaziy burchagi 60° ga teng sektor ajratilgan. Sektorning yuzi qancha?",
+      "v": [
+        "12π sm²",
+        "2π sm²",
+        "6π sm²",
+        "36π sm²"
+      ],
+      "t": 2,
+      "izoh": "Sektor yuzi S = πr²n : 360 formula bilan topiladi. S = π · 36 · 60 : 360 = 36π : 6 = 6π sm². Maxrajga 180 yozilsa, natija ikki barobar katta chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 227.94 109 A 90 90 0 1 0 227.94 199' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 227.94 199 A 90 90 0 0 0 227.94 109' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='227.94' y2='199' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='227.94' y2='109' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 172.52 167 A 26 26 0 0 0 172.52 141' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='198.87' y='122.25' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sektor-yuzi-gradus",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#45967642"
+    },
+    {
+      "q": "Radiusi 15 sm bo'lgan dumaloq tortdan markaziy burchagi 72° bo'lgan bo'lak kesildi. Bo'lakning yuzi qancha (π ≈ 3,14)?",
+      "v": [
+        "141,3 sm²",
+        "706,5 sm²",
+        "282,6 sm²",
+        "18,84 sm²"
+      ],
+      "t": 0,
+      "izoh": "Butun tort yuzi 3,14 · 225 = 706,5 sm². Bo'lak ulushi 72 : 360 = 0,2. Demak sektor yuzi 706,5 · 0,2 = 141,3 sm². 18,84 esa bo'lak yoyining uzunligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 222.81 101.1 A 90 90 0 1 0 222.81 206.9' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 222.81 206.9 A 90 90 0 0 0 222.81 101.1' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='222.81' y2='206.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='222.81' y2='101.1' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 171.03 169.28 A 26 26 0 0 0 171.03 138.72' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E72°%3C/text%3E%3Ctext x='196.05' y='117.9' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sektor-yuzi-gradus",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#e1897398"
+    },
+    {
+      "q": "Sug'orish moslamasi radiusi 12 m bo'lgan doiraning 120° li qismiga suv sepadi. Sug'orilgan yer yuzi qancha bo'ladi?",
+      "v": [
+        "144π m²",
+        "96π m²",
+        "8π m²",
+        "48π m²"
+      ],
+      "t": 3,
+      "izoh": "120° butun aylananing uchdan bir qismi. Butun doira yuzi π · 144 = 144π m². Sektor yuzi 144π : 3 = 48π m². 8π esa sepish chegarasidagi yoy uzunligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 195 76.06 A 90 90 0 1 0 195 231.94' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 195 231.94 A 90 90 0 0 0 195 76.06' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='195' y2='231.94' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='195' y2='76.06' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 163 176.52 A 26 26 0 0 0 163 131.48' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='180.75' y='104.13' font-size='13' fill='%23334155' text-anchor='start'%3E12 m%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sektor-yuzi-gradus",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#8c80bfba"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan doira 216° li sektor va unga qo'shni qismga ajratildi. Bu ikki qism yuzalarining ayirmasi qanchaga teng?",
+      "v": [
+        "60π sm²",
+        "20π sm²",
+        "40π sm²",
+        "100π sm²"
+      ],
+      "t": 1,
+      "izoh": "Butun doira yuzi 100π sm². Katta sektor 100π · 216 : 360 = 60π sm², qolgan qism esa 100π − 60π = 40π sm². Ularning ayirmasi 60π − 40π = 20π sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 122.19 68.4 A 90 90 0 0 0 122.19 239.6' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 122.19 239.6 A 90 90 0 1 0 122.19 68.4' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='122.19' y2='239.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='122.19' y2='68.4' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 141.97 178.73 A 26 26 0 1 0 141.97 129.27' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E216°%3C/text%3E%3Ctext x='140.7' y='99.92' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sektor-yuzi-gradus",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#661c029c"
+    },
+    {
+      "q": "Radiusi 8 sm bo'lgan doirada markaziy burchagi π/4 radian bo'lgan sektor ajratilgan. Uning yuzi qancha?",
+      "v": [
+        "16π sm²",
+        "8π sm²",
+        "4π sm²",
+        "2π sm²"
+      ],
+      "t": 1,
+      "izoh": "Burchak radianda berilganda sektor yuzi S = r²α : 2 formula bilan topiladi. S = 64 · (π/4) : 2 = 16π : 2 = 8π sm². Ikkiga bo'lishni unutish ikki barobar xato beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 233.15 119.56 A 90 90 0 1 0 233.15 188.44' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 233.15 188.44 A 90 90 0 0 0 233.15 119.56' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='233.15' y2='188.44' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='233.15' y2='119.56' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 174.02 163.95 A 26 26 0 0 0 174.02 144.05' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3Eπ/4%3C/text%3E%3Ctext x='201.73' y='128.06' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sektor-yuzi-radian",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#eff5f6d7"
+    },
+    {
+      "q": "Sektorning yuzi 24 sm², uni chegaralovchi radius esa 4 sm. Sektorning markaziy burchagi necha radian?",
+      "v": [
+        "1,5 rad",
+        "6 rad",
+        "12 rad",
+        "3 rad"
+      ],
+      "t": 3,
+      "izoh": "S = r²α : 2 formuladan α = 2S : r². α = 2 · 24 : 16 = 48 : 16 = 3 radian. Ikkiga ko'paytirishni tashlab ketilsa, 1,5 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 188.75 72.77 A 90 90 0 1 0 188.75 235.23' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 188.75 235.23 A 90 90 0 0 0 188.75 72.77' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='188.75' y2='235.23' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='188.75' y2='72.77' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 161.19 177.47 A 26 26 0 0 0 161.19 130.53' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='188' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='151.67' y='99.4' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3ES = 24 sm²%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sektor-yuzi-radian",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#1d23a9aa"
+    },
+    {
+      "q": "Markaziy burchagi 1,5 radian bo'lgan sektorning yuzi 48 sm² ga teng. Sektor radiusi necha santimetr?",
+      "v": [
+        "8 sm",
+        "64 sm",
+        "16 sm",
+        "4 sm"
+      ],
+      "t": 0,
+      "izoh": "S = r²α : 2 dan r² = 2S : α = 96 : 1,5 = 64. Kvadrat ildiz olamiz: r = 8 sm. Ildiz olishni unutib 64 deb javob berish keng tarqalgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 215.82 92.62 A 90 90 0 1 0 215.82 215.38' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 215.82 215.38 A 90 90 0 0 0 215.82 92.62' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='215.82' y2='215.38' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='215.82' y2='92.62' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 169.02 171.73 A 26 26 0 0 0 169.02 136.27' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E1,5 rad%3C/text%3E%3Ctext x='192.2' y='113.24' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sektor-yuzi-radian",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#db855e0d"
+    },
+    {
+      "q": "Doiraning markaziy burchagi π/6 radian bo'lgan sektori yuzi 3π sm² ni tashkil etadi. Doiraning radiusini toping.",
+      "v": [
+        "36 sm",
+        "12 sm",
+        "6 sm",
+        "3 sm"
+      ],
+      "t": 2,
+      "izoh": "S = r²α : 2 ga qiymatlarni qo'yamiz: 3π = r² · (π/6) : 2 = r²π : 12. Ikki tomonni π ga qisqartirib, 3 = r² : 12, ya'ni r² = 36. Demak r = 6 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 236.93 130.71 A 90 90 0 1 0 236.93 177.29' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 236.93 177.29 A 90 90 0 0 0 236.93 130.71' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='236.93' y2='177.29' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='236.93' y2='130.71' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 175.11 160.73 A 26 26 0 0 0 175.11 147.27' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3Eπ/6%3C/text%3E%3Ctext x='203.81' y='134.19' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sektor-yuzi-radian",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#2a34ba0f"
+    },
+    {
+      "q": "Sektorning yoyi 12 sm, uni chegaralovchi radiuslar esa 5 sm dan. Shu sektorning yuzi necha kvadrat santimetr?",
+      "v": [
+        "60 sm²",
+        "15 sm²",
+        "30 sm²",
+        "22 sm²"
+      ],
+      "t": 2,
+      "izoh": "Yoy va radius orqali sektor yuzi S = lr : 2 formula bilan hisoblanadi. S = 12 · 5 : 2 = 30 sm². Ikkiga bo'lmaslik 60 ni, perimetrni hisoblash esa 22 ni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 182.99 70.26 A 90 90 0 1 0 182.99 237.74' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 182.99 237.74 A 90 90 0 0 0 182.99 70.26' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='182.99' y2='237.74' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='182.99' y2='70.26' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='174.14' y='100.94' font-size='13' fill='%23334155' text-anchor='start'%3E5 sm%3C/text%3E%3Ctext x='260' y='158' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sektor-yoy-orqali",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#7c3e8f41"
+    },
+    {
+      "q": "Yelpig'ichning tashqi yoyi 33 sm, yon qirrasining uzunligi 21 sm. Yelpig'ichga tortilgan matoning yuzi qancha?",
+      "v": [
+        "346,5 sm²",
+        "693 sm²",
+        "173,25 sm²",
+        "54 sm²"
+      ],
+      "t": 0,
+      "izoh": "Mato sektor shaklida: yon qirra radius, tashqi qirra esa yoy. S = lr : 2 = 33 · 21 : 2 = 693 : 2 = 346,5 sm². 54 soni ikki o'lchamning yig'indisi bo'lib, yuza emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 213.64 90.36 A 90 90 0 1 0 213.64 217.64' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 213.64 217.64 A 90 90 0 0 0 213.64 90.36' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='213.64' y2='217.64' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='213.64' y2='90.36' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='191' y='112' font-size='13' fill='%23334155' text-anchor='start'%3E21 sm%3C/text%3E%3Ctext x='260' y='158' font-size='13' fill='%23334155' text-anchor='middle'%3E33 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sektor-yoy-orqali",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#3173658a"
+    },
+    {
+      "q": "Sektorning yuzi 60 sm², radiusi esa 8 sm ga teng. Sektor yoyining uzunligi necha santimetr?",
+      "v": [
+        "7,5 sm",
+        "30 sm",
+        "120 sm",
+        "15 sm"
+      ],
+      "t": 3,
+      "izoh": "S = lr : 2 tenglikdan l = 2S : r. l = 2 · 60 : 8 = 120 : 8 = 15 sm. Yuzani ikkiga ko'paytirishni unutgan o'quvchi 7,5 ni oladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 203.53 81.65 A 90 90 0 1 0 203.53 226.35' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 203.53 226.35 A 90 90 0 0 0 203.53 81.65' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='203.53' y2='226.35' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='203.53' y2='81.65' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='185.44' y='107.21' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3Ctext x='260' y='158' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sektor-yoy-orqali",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#2243387d"
+    },
+    {
+      "q": "Sektorning perimetri 28 sm, radiusi 8 sm. Shu sektorning yuzini toping.",
+      "v": [
+        "112 sm²",
+        "48 sm²",
+        "96 sm²",
+        "24 sm²"
+      ],
+      "t": 1,
+      "izoh": "Perimetr ikkita radius va yoydan iborat: P = 2r + l. Bundan l = 28 − 16 = 12 sm. Endi S = lr : 2 = 12 · 8 : 2 = 48 sm². Perimetrni to'g'ridan-to'g'ri formulaga qo'yish 112 ni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 215.82 92.62 A 90 90 0 1 0 215.82 215.38' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 215.82 215.38 A 90 90 0 0 0 215.82 92.62' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='215.82' y2='215.38' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='215.82' y2='92.62' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='192.2' y='113.24' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3Ctext x='192.2' y='201.76' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sektor-yoy-orqali",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#7b53ce18"
+    },
+    {
+      "q": "Radiusi 12 sm bo'lgan doiradan yuzi 24π sm² ga teng sektor ajratildi. Shu sektorning markaziy burchagi necha gradus?",
+      "v": [
+        "30°",
+        "60°",
+        "120°",
+        "15°"
+      ],
+      "t": 1,
+      "izoh": "Butun doira yuzi π · 144 = 144π sm². Sektor ulushi 24π : 144π = 1/6. Demak markaziy burchak 360° : 6 = 60°. Yuza formulasida maxrajga 180 yozilsa, natija ikki barobar kichik chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 210.8 87.65 A 90 90 0 1 0 210.8 220.35' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 210.8 220.35 A 90 90 0 0 0 210.8 87.65' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='210.8' y2='220.35' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='210.8' y2='87.65' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 167.57 173.17 A 26 26 0 0 0 167.57 134.83' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='188' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='167.56' y='102.28' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3ES = 24π sm²%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sektor-burchak-topish",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#b1c2144c"
+    },
+    {
+      "q": "Radiusi 10 m bo'lgan dumaloq maydonning 15,7 m² qismiga gul ekildi. Gulzor sektorining markaziy burchagi qancha (π ≈ 3,14)?",
+      "v": [
+        "36°",
+        "9°",
+        "5°",
+        "18°"
+      ],
+      "t": 3,
+      "izoh": "Maydonning to'liq yuzi 3,14 · 100 = 314 m². Gulzor ulushi 15,7 : 314 = 0,05. Markaziy burchak 0,05 · 360° = 18°. Ulushni bevosita gradus deb yozish 5° kabi xato javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 237.51 132.99 A 90 90 0 1 0 237.51 175.01' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 237.51 175.01 A 90 90 0 0 0 237.51 132.99' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='237.51' y2='175.01' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='237.51' y2='132.99' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 175.28 160.07 A 26 26 0 0 0 175.28 147.93' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='208' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='193.48' y='120.94' font-size='13' fill='%23334155' text-anchor='middle'%3E10 m%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3ES = 15,7 m²%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sektor-burchak-topish",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#3fb77e41"
+    },
+    {
+      "q": "Sektor doira yuzining 3/8 qismini tashkil qiladi. Shu sektorning markaziy burchagi necha gradusga teng?",
+      "v": [
+        "135°",
+        "67,5°",
+        "120°",
+        "45°"
+      ],
+      "t": 0,
+      "izoh": "Sektorning yuzasi bo'yicha ulushi markaziy burchagining ulushiga teng. Demak n = 360° · 3/8 = 45° · 3 = 135°. Faqat maxrajga bo'lib to'xtalsa, 45° chiqib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='154' r='90' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='240' y2='154' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='213.64' y2='90.36' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='150' y2='64' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='86.36' y2='90.36' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='60' y2='154' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='86.36' y2='217.64' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='150' y2='244' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='213.64' y2='217.64' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 240 154 A 90 90 0 0 0 86.36 90.36' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cpath d='M 176 154 A 26 26 0 0 0 131.62 135.62' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='167' y='117' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='126' y='148' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sektor-burchak-topish",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#c94bf265"
+    },
+    {
+      "q": "Sektorning yuzi 9π sm², yoyining uzunligi esa 3π sm ga teng. Sektorning markaziy burchagini toping.",
+      "v": [
+        "180°",
+        "45°",
+        "90°",
+        "60°"
+      ],
+      "t": 2,
+      "izoh": "Avval S = lr : 2 dan radiusni topamiz: r = 2S : l = 18π : 3π = 6 sm. Endi l = πrn : 180 ga qo'yamiz: 3π = π · 6 · n : 180, ya'ni 3 = n : 30. Demak n = 90°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 221.4 99.21 A 90 90 0 1 0 221.4 208.79' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 221.4 208.79 A 90 90 0 0 0 221.4 99.21' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='221.4' y2='208.79' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='221.4' y2='99.21' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 170.63 169.83 A 26 26 0 0 0 170.63 138.17' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='188' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='246' y='158' font-size='13' fill='%23334155' text-anchor='start'%3E3π sm%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3ES = 9π sm²%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sektor-burchak-topish",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#cdd722c5"
+    },
+    {
+      "q": "Radiusi 9 sm va markaziy burchagi 120° bo'lgan sektorning perimetrini π orqali ifodalang.",
+      "v": [
+        "6π sm",
+        "9 + 6π sm",
+        "18 + 6π sm",
+        "18 + 3π sm"
+      ],
+      "t": 2,
+      "izoh": "Sektor perimetri ikkita radius va yoydan tashkil topadi: P = 2r + l. Yoy l = π · 9 · 120 : 180 = 6π sm. Demak P = 2 · 9 + 6π = 18 + 6π sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 195 76.06 A 90 90 0 1 0 195 231.94' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 195 231.94 A 90 90 0 0 0 195 76.06' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='195' y2='231.94' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='195' y2='76.06' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 163 176.52 A 26 26 0 0 0 163 131.48' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='180.75' y='104.13' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3Ctext x='180.75' y='210.87' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sektor-perimetri",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#696ae637"
+    },
+    {
+      "q": "Yelpig'ich shaklidagi gulzorning radiusi 7 m, markaziy burchagi 90°. Gulzorni chetidan bordyur bilan o'rash uchun necha metr bordyur kerak (π ≈ 22/7)?",
+      "v": [
+        "25 m",
+        "11 m",
+        "18 m",
+        "36 m"
+      ],
+      "t": 0,
+      "izoh": "Yoy uzunligi l = 2 · (22/7) · 7 : 4 = 44 : 4 = 11 m. Bordyur ikkita to'g'ri chekka va yoydan iborat: P = 7 + 7 + 11 = 25 m. Faqat yoyni hisoblash 11 m ni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 213.64 90.36 A 90 90 0 1 0 213.64 217.64' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 213.64 217.64 A 90 90 0 0 0 213.64 90.36' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='213.64' y2='217.64' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='213.64' y2='90.36' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 168.38 172.38 A 26 26 0 0 0 168.38 135.62' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Ctext x='191' y='112' font-size='13' fill='%23334155' text-anchor='start'%3E7 m%3C/text%3E%3Ctext x='191' y='203' font-size='13' fill='%23334155' text-anchor='start'%3E7 m%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sektor-perimetri",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#d472d5b3"
+    },
+    {
+      "q": "Sektorning perimetri 18 sm, radiusi esa 5 sm ga teng. Shu sektorning markaziy burchagi necha radian?",
+      "v": [
+        "3,6 rad",
+        "8 rad",
+        "0,8 rad",
+        "1,6 rad"
+      ],
+      "t": 3,
+      "izoh": "P = 2r + l dan yoy uzunligi l = 18 − 10 = 8 sm. Radiandagi burchak α = l : r = 8 : 5 = 1,6 radian. Perimetrni bevosita radiusga bo'lish 3,6 kabi xato beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 224.17 103.02 A 90 90 0 1 0 224.17 204.98' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 224.17 204.98 A 90 90 0 0 0 224.17 103.02' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='224.17' y2='204.98' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='224.17' y2='103.02' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 171.43 168.73 A 26 26 0 0 0 171.43 139.27' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='188' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='178.75' y='107.55' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='178.75' y='200.45' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3EP = 18 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sektor-perimetri",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#18f6a3f4"
+    },
+    {
+      "q": "Sektorning perimetri uning radiusidan to'rt barobar katta. Shu sektorning markaziy burchagi necha radianga teng?",
+      "v": [
+        "4 rad",
+        "2 rad",
+        "1 rad",
+        "0,5 rad"
+      ],
+      "t": 1,
+      "izoh": "Shartga ko'ra 2r + l = 4r. Bundan yoy uzunligi l = 4r − 2r = 2r. Radiandagi burchak α = l : r = 2r : r = 2 radian. Perimetrni butunlay yoy deb olish 4 ni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sektor-perimetri",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#1da90a73"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan doirada markaziy burchagi 90° bo'lgan vatar o'tkazildi. Kichik segmentning yuzi qancha?",
+      "v": [
+        "9π + 18 sm²",
+        "9π − 18 sm²",
+        "9π sm²",
+        "36π − 18 sm²"
+      ],
+      "t": 1,
+      "izoh": "Segment yuzi sektor yuzidan uchburchak yuzini ayirish bilan topiladi. Sektor: 36π · 90 : 360 = 9π sm². Uchburchak to'g'ri burchakli, katetlari 6 sm: 6 · 6 : 2 = 18 sm². Demak segment 9π − 18 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 87.77 105.77 A 88 88 0 1 0 212.23 105.77' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 212.23 105.77 A 88 88 0 0 0 87.77 105.77' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='212.23' y1='105.77' x2='87.77' y2='105.77' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='168' x2='212.23' y2='105.77' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='168' x2='87.77' y2='105.77' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 166.97 151.03 A 24 24 0 0 0 133.03 151.03' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='120.89' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Ctext x='109.78' y='127.78' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Ctext x='77.77' y='99.77' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='222.23' y='99.77' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='141' y='184' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "segment-yuzi",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#6dd3c074"
+    },
+    {
+      "q": "Radiusi 4 sm bo'lgan doirada 60° li markaziy burchakka mos kichik segmentning yuzini toping.",
+      "v": [
+        "8π/3 + 4√3 sm²",
+        "8π/3 − 8 sm²",
+        "8π/3 sm²",
+        "8π/3 − 4√3 sm²"
+      ],
+      "t": 3,
+      "izoh": "Sektor yuzi 16π · 60 : 360 = 8π/3 sm². Burchak 60° va ikkala tomon radiusga teng bo'lgani uchun uchburchak teng tomonli: yuzi (√3 : 4) · 16 = 4√3 sm². Segment = 8π/3 − 4√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 106 91.79 A 88 88 0 1 0 194 91.79' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 194 91.79 A 88 88 0 0 0 106 91.79' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='194' y1='91.79' x2='106' y2='91.79' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='168' x2='194' y2='91.79' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='168' x2='106' y2='91.79' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 162 147.22 A 24 24 0 0 0 138 147.22' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='113.89' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='119.8' y='120.08' font-size='13' fill='%23334155' text-anchor='end'%3E4 sm%3C/text%3E%3Ctext x='96' y='85.79' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='204' y='85.79' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='141' y='184' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "segment-yuzi",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#e79af282"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan doirada markaziy burchagi 120° bo'lgan segment ajratilgan. Uning yuzi qanday ifodalanadi?",
+      "v": [
+        "100π/3 − 25√3 sm²",
+        "100π/3 − 50 sm²",
+        "100π/3 + 25√3 sm²",
+        "100π/3 sm²"
+      ],
+      "t": 0,
+      "izoh": "Sektor yuzi 100π · 120 : 360 = 100π/3 sm². Uchburchak yuzi ikki tomon va ular orasidagi burchak orqali: (1/2) · 10 · 10 · sin120° = 50 · (√3/2) = 25√3 sm². Segment = 100π/3 − 25√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 73.79 124 A 88 88 0 1 0 226.21 124' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 226.21 124 A 88 88 0 0 0 73.79 124' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='226.21' y1='124' x2='73.79' y2='124' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='168' x2='226.21' y2='124' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='168' x2='73.79' y2='124' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 170.78 156 A 24 24 0 0 0 129.22 156' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='130' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='102.08' y='137.8' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Ctext x='63.79' y='118' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='236.21' y='118' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='141' y='184' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "segment-yuzi",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#720ca91a"
+    },
+    {
+      "q": "Radiusi 8 sm bo'lgan doirada uzunligi 8√2 sm bo'lgan vatar o'tkazildi. Vatar ajratgan kichik segmentning yuzi qancha?",
+      "v": [
+        "16π + 32 sm²",
+        "64π − 32 sm²",
+        "16π − 32 sm²",
+        "32π − 32 sm²"
+      ],
+      "t": 2,
+      "izoh": "Uchburchak tomonlari 8, 8 va 8√2. 8² + 8² = 128 = (8√2)² bo'lgani uchun markaziy burchak 90°. Sektor yuzi 64π : 4 = 16π sm², uchburchak yuzi 8 · 8 : 2 = 32 sm². Segment = 16π − 32 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 87.77 105.77 A 88 88 0 1 0 212.23 105.77' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 212.23 105.77 A 88 88 0 0 0 87.77 105.77' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='212.23' y1='105.77' x2='87.77' y2='105.77' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='168' x2='212.23' y2='105.77' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='168' x2='87.77' y2='105.77' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='109.78' y='127.78' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='77.77' y='99.77' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='222.23' y='99.77' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='141' y='184' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='150' y='97.77' font-size='13' fill='%23334155' text-anchor='middle'%3E8√2 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "segment-yuzi",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#a876b453"
+    },
+    {
+      "q": "Radiusi 5 m bo'lgan dumaloq hovuz atrofiga eni 2 m bo'lgan yo'lak qurildi. Yo'lakning yuzi qanchaga teng?",
+      "v": [
+        "4π m²",
+        "49π m²",
+        "24π m²",
+        "45π m²"
+      ],
+      "t": 2,
+      "izoh": "Tashqi radius R = 5 + 2 = 7 m. Yo'lak halqa shaklida, yuzi S = πR² − πr² = 49π − 25π = 24π m². Faqat yo'lak enini kvadratga ko'tarish butunlay boshqa shakl yuzini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='100' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='152' r='71.43' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='152' x2='109.03' y2='93.49' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='123.52' y='117.74' font-size='13' fill='%23334155' text-anchor='end'%3E5 m%3C/text%3E%3Cline x1='78.57' y1='152' x2='50' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='64.29' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E2 m%3C/text%3E%3Ctext x='157' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "halqa-yuzi",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#d768d39a"
+    },
+    {
+      "q": "Metall halqaning tashqi diametri 20 sm, ichki diametri esa 16 sm. Halqaning yuzi necha kvadrat santimetr?",
+      "v": [
+        "36π sm²",
+        "144π sm²",
+        "4π sm²",
+        "164π sm²"
+      ],
+      "t": 0,
+      "izoh": "Radiuslar 10 sm va 8 sm. Halqa yuzi S = π(R² − r²) = π(100 − 64) = 36π sm². Diametrlarni bevosita kvadratga ko'tarish natijani to'rt barobar oshirib yuboradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='100' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='152' r='80' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='50' y1='152' x2='250' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='200' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Cline x1='150' y1='72' x2='150' y2='232' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='156' y='112' font-size='13' fill='%23334155' text-anchor='start'%3E16 sm%3C/text%3E%3Ctext x='157' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "halqa-yuzi",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#581a6357"
+    },
+    {
+      "q": "Quvurning tashqi radiusi 5 sm, devorining qalinligi esa 1 sm. Quvur ko'ndalang kesimidagi metall qismning yuzi qancha?",
+      "v": [
+        "π sm²",
+        "25π sm²",
+        "16π sm²",
+        "9π sm²"
+      ],
+      "t": 3,
+      "izoh": "Ichki radius r = 5 − 1 = 4 sm. Metall qism halqa bo'lib, yuzi S = π(25 − 16) = 9π sm². 25π butun kesim, 16π esa ichidagi bo'shliq yuzi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='100' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='152' r='80' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='152' x2='250' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='200' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Cline x1='70' y1='152' x2='50' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='60' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E1 sm%3C/text%3E%3Ctext x='157' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "halqa-yuzi",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#6124a2db"
+    },
+    {
+      "q": "Halqaning yuzi 96π sm², kengligi esa 4 sm ga teng. Halqaning tashqi radiusi necha santimetr?",
+      "v": [
+        "10 sm",
+        "14 sm",
+        "12 sm",
+        "24 sm"
+      ],
+      "t": 1,
+      "izoh": "Ichki radius R − 4 bo'ladi. Shartdan π(R² − (R − 4)²) = 96π, ya'ni R² − R² + 8R − 16 = 96. Demak 8R = 112 va R = 14 sm. Ichki radius esa 10 sm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='100' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='152' r='71.43' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='152' x2='250' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='200' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='78.57' y1='152' x2='50' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='64.29' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='157' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "halqa-yuzi",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#f2246c55"
+    },
+    {
+      "q": "Radiusi 6 m bo'lgan dumaloq hovuz atrofiga bir xil enli yo'lak qurilgach, umumiy yuza 100π m² bo'ldi. Yo'lakning eni qancha?",
+      "v": [
+        "10 m",
+        "4 m",
+        "8 m",
+        "2 m"
+      ],
+      "t": 1,
+      "izoh": "Umumiy shakl radiusi R bo'lgan doira: πR² = 100π, demak R = 10 m. Yo'lak eni tashqi va ichki radiuslar ayirmasi: 10 − 6 = 4 m. 10 javobi tashqi radiusning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='100' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='152' r='60' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='152' x2='115.59' y2='102.85' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='126.79' y='122.43' font-size='13' fill='%23334155' text-anchor='end'%3E6 m%3C/text%3E%3Cline x1='90' y1='152' x2='50' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='70' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='157' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "halqa-olcham-topish",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#a7642c81"
+    },
+    {
+      "q": "Halqaning ichki radiusi 8 sm, yuzi esa 36π sm² ga teng. Halqaning tashqi radiusi necha santimetr?",
+      "v": [
+        "100 sm",
+        "6 sm",
+        "14 sm",
+        "10 sm"
+      ],
+      "t": 3,
+      "izoh": "π(R² − 64) = 36π tenglikdan R² = 64 + 36 = 100. Kvadrat ildiz olamiz: R = 10 sm. Ildiz olishni unutish 100 ni, faqat 36 dan ildiz olish esa 6 ni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='100' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='152' r='80' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='152' x2='250' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='200' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='150' y1='152' x2='104.11' y2='86.47' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='121.06' y='114.23' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='157' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "halqa-olcham-topish",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#410b9ac8"
+    },
+    {
+      "q": "Diametri 20 m bo'lgan dumaloq maydonning chetidan eni 2 m bo'lgan halqasimon gul maydoni ajratildi. Uning yuzi qancha (π ≈ 3,14)?",
+      "v": [
+        "113,04 m²",
+        "12,56 m²",
+        "314 m²",
+        "200,96 m²"
+      ],
+      "t": 0,
+      "izoh": "Tashqi radius 10 m, ichki radius 10 − 2 = 8 m. Halqa yuzi 3,14 · (100 − 64) = 3,14 · 36 = 113,04 m². 314 butun maydon, 200,96 esa ichki doira yuzi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='100' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='152' r='80' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='50' y1='152' x2='250' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='200' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3Cline x1='70' y1='152' x2='50' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='60' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E2 m%3C/text%3E%3Ctext x='157' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "halqa-olcham-topish",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#830afb15"
+    },
+    {
+      "q": "Halqaning yuzi uning ichki doirasi yuzasiga teng bo'lsa, tashqi radiusning ichki radiusga nisbati qanday bo'ladi?",
+      "v": [
+        "2",
+        "4",
+        "√2",
+        "√3"
+      ],
+      "t": 2,
+      "izoh": "Shartdan πR² − πr² = πr². Ikki tomonni π ga qisqartiramiz: R² − r² = r², ya'ni R² = 2r². Kvadrat ildiz olsak, R : r = √2. Nisbatni 2 deb olish yuzalar nisbatini uzunliklar nisbati bilan chalkashtirishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "halqa-olcham-topish",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#2e85687c"
+    },
+    {
+      "q": "Doiraning aylana uzunligi 24π sm ga teng ekan. Shu doiraning yuzi necha kvadrat santimetr?",
+      "v": [
+        "576π sm²",
+        "288π sm²",
+        "144π sm²",
+        "24π sm²"
+      ],
+      "t": 2,
+      "izoh": "2πr = 24π dan r = 12 sm. Endi yuza S = πr² = π · 144 = 144π sm². Uzunlikni to'g'ridan-to'g'ri radius deb olish 576π kabi to'rt barobar katta natija beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzunlik-yuza-bogliq",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#a115fd87"
+    },
+    {
+      "q": "Doiraning yuzi 36π sm² bo'lsa, shu doirani chegaralovchi aylananing uzunligi qancha bo'ladi?",
+      "v": [
+        "12π sm",
+        "6π sm",
+        "36π sm",
+        "72π sm"
+      ],
+      "t": 0,
+      "izoh": "πr² = 36π dan r² = 36, ya'ni r = 6 sm. Aylana uzunligi C = 2πr = 12π sm. Radiusni topgach ikkiga ko'paytirishni unutish 6π ni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzunlik-yuza-bogliq",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#50c0e2de"
+    },
+    {
+      "q": "Doiraning yuzi son jihatdan uni chegaralovchi aylana uzunligiga teng. Shu doiraning radiusi nechaga teng?",
+      "v": [
+        "1",
+        "4",
+        "0,5",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Shartni tenglama ko'rinishida yozamiz: πr² = 2πr. Ikki tomonni πr ga qisqartiramiz (r ≠ 0): r = 2. Demak radius 2 birlikka teng. Tekshirish: yuza 4π, uzunlik ham 4π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uzunlik-yuza-bogliq",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#e96aa6c7"
+    },
+    {
+      "q": "Ikki doiraning yuzalari yig'indisi 25π sm², radiuslarining ayirmasi esa 1 sm. Kichik doiraning aylana uzunligi qancha?",
+      "v": [
+        "8π sm",
+        "6π sm",
+        "3π sm",
+        "12π sm"
+      ],
+      "t": 1,
+      "izoh": "Kichik radiusni r desak, kattasi r + 1 bo'ladi. Shartdan r² + (r + 1)² = 25, ya'ni 2r² + 2r − 24 = 0 yoki r² + r − 12 = 0. Musbat ildiz r = 3 sm. Uzunlik C = 2π · 3 = 6π sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uzunlik-yuza-bogliq",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#6573fbc0"
+    },
+    {
+      "q": "Doiraning radiusi uch barobar oshirildi. Bunda doiraning yuzi necha marta ortadi?",
+      "v": [
+        "3 marta",
+        "9 marta",
+        "6 marta",
+        "27 marta"
+      ],
+      "t": 1,
+      "izoh": "Yangi yuza π(3r)² = 9πr² bo'ladi. Eski yuza πr² edi, demak nisbat 9 ga teng. Yuza radiusning kvadratiga bog'liq, shuning uchun uzunlikdagi 3 barobar yuzada 9 barobarga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab-nisbat",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#6820c6c9"
+    },
+    {
+      "q": "Ikkita doiraning radiuslari nisbati 2 : 5 ga teng. Ularning yuzalari nisbati qanday bo'ladi?",
+      "v": [
+        "2 : 5",
+        "2 : 25",
+        "8 : 125",
+        "4 : 25"
+      ],
+      "t": 3,
+      "izoh": "Yuzalar nisbati radiuslar nisbatining kvadratiga teng: (2 : 5)² = 4 : 25. Nisbatni o'zgarishsiz qoldirish 2 : 5 ni, faqat bitta hadni kvadratga ko'tarish 2 : 25 ni, kubga ko'tarish esa 8 : 125 ni beradi — uchalasi ham tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab-nisbat",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#0f6f7246"
+    },
+    {
+      "q": "Dumaloq gulzor kengaytirilgach uning yuzi 44 foizga ortdi. Gulzor radiusi necha foizga oshgan?",
+      "v": [
+        "20%",
+        "44%",
+        "22%",
+        "12%"
+      ],
+      "t": 0,
+      "izoh": "Yuza 1,44 marta ortdi, ya'ni πR² = 1,44πr². Bundan R² = 1,44r² va R = 1,2r. Demak radius 1,2 marta, ya'ni 20 foizga oshgan. Foizni yuzadan radiusga to'g'ridan-to'g'ri ko'chirib bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masshtab-nisbat",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#2c53e356"
+    },
+    {
+      "q": "Ikki doira uzunliklarining nisbati 3 : 4, yuzalarining ayirmasi esa 63π sm². Kichik doiraning radiusini toping.",
+      "v": [
+        "12 sm",
+        "3 sm",
+        "9 sm",
+        "21 sm"
+      ],
+      "t": 2,
+      "izoh": "Uzunliklar nisbati radiuslar nisbatiga teng, shuning uchun radiuslarni 3k va 4k deb olamiz. Yuzalar ayirmasi π(16k² − 9k²) = 7πk² = 63π, demak k² = 9 va k = 3. Kichik radius 3k = 9 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masshtab-nisbat",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#418ef076"
+    },
+    {
+      "q": "Yugurish yo'lakchasining ikkita to'g'ri qismi 100 m dan, uchlaridagi yarim aylanalar diametri esa 70 m. Bir aylanishning uzunligi qancha (π ≈ 22/7)?",
+      "v": [
+        "200 m",
+        "310 m",
+        "420 m",
+        "640 m"
+      ],
+      "t": 2,
+      "izoh": "Ikkita yarim aylana birlashib diametri 70 m bo'lgan butun aylanani beradi: (22/7) · 70 = 220 m. To'g'ri qismlar 2 · 100 = 200 m. Jami 200 + 220 = 420 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='76.47' y1='98.53' x2='223.53' y2='98.53' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='76.47' y1='201.47' x2='223.53' y2='201.47' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 223.53 98.53 A 51.47 51.47 0 0 1 223.53 201.47' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 76.47 201.47 A 51.47 51.47 0 0 1 76.47 98.53' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='150' y='88.53' font-size='13' fill='%23334155' text-anchor='middle'%3E100 m%3C/text%3E%3Cline x1='223.53' y1='98.53' x2='223.53' y2='201.47' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='231.53' y='150' font-size='13' fill='%23334155' text-anchor='start'%3E70 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qorishma-perimetr",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#432412db"
+    },
+    {
+      "q": "Yarim doira shaklidagi derazaning radiusi 60 sm. Deraza konturini o'rab turgan ramka uzunligi qancha (π ≈ 3,14)?",
+      "v": [
+        "308,4 sm",
+        "188,4 sm",
+        "376,8 sm",
+        "248,4 sm"
+      ],
+      "t": 0,
+      "izoh": "Kontur yarim aylana va diametrdan iborat. Yarim aylana 3,14 · 60 = 188,4 sm, diametr esa 2 · 60 = 120 sm. Jami 188,4 + 120 = 308,4 sm. Faqat yoyni olish 188,4 ni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 55 210 A 95 95 0 0 1 245 210' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='210' x2='245' y2='210' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='210' x2='55' y2='210' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='102.5' y='202' font-size='13' fill='%23334155' text-anchor='middle'%3E60 sm%3C/text%3E%3Ctext x='157' y='227' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qorishma-perimetr",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#f56406e8"
+    },
+    {
+      "q": "Uzunligi 10 sm, eni 6 sm bo'lgan to'g'ri to'rtburchakning qisqa tomonlariga tashqaridan yarim doiralar yopishtirildi. Hosil bo'lgan shakl perimetri qancha?",
+      "v": [
+        "20 + 3π sm",
+        "32 + 6π sm",
+        "20 + 12π sm",
+        "20 + 6π sm"
+      ],
+      "t": 3,
+      "izoh": "Qisqa tomonlar shakl ichida qolib, chegara bo'lmaydi. Ikkita yarim doira diametri 6 sm bo'lgan butun aylanani beradi: 6π sm. Uzun tomonlar 2 · 10 = 20 sm. Perimetr 20 + 6π sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='71.88' y1='103.13' x2='228.13' y2='103.13' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='71.88' y1='196.88' x2='228.13' y2='196.88' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 228.13 103.13 A 46.88 46.88 0 0 1 228.13 196.88' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 71.88 196.88 A 46.88 46.88 0 0 1 71.88 103.13' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='150' y='93.13' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Cline x1='228.13' y1='103.13' x2='228.13' y2='196.88' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='236.13' y='150' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qorishma-perimetr",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#c93def68"
+    },
+    {
+      "q": "Diametri 14 sm bo'lgan doiradan markaziy burchagi 90° bo'lgan sektor kesib olindi. Qolgan qismning perimetri qancha (π ≈ 22/7)?",
+      "v": [
+        "33 sm",
+        "47 sm",
+        "25 sm",
+        "44 sm"
+      ],
+      "t": 1,
+      "izoh": "Radius 7 sm, butun aylana uzunligi 44 sm. Qolgan qism 270° li sektor, yoyi 44 · 270 : 360 = 33 sm. Perimetrga kesim joyidagi ikkita radius ham kiradi: 33 + 7 + 7 = 47 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 86.36 217.64 A 90 90 0 0 0 213.64 217.64' fill='none' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cpath d='M 213.64 217.64 A 90 90 0 1 0 86.36 217.64' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='213.64' y2='217.64' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='86.36' y2='217.64' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 131.62 172.38 A 26 26 0 0 0 168.38 172.38' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='201' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Cline x1='60' y1='154' x2='240' y2='154' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='200' y='148' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='143' y='149' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qorishma-perimetr",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#1ceb13af"
+    },
+    {
+      "q": "Eni 16 sm, balandligi 10 sm bo'lgan to'g'ri to'rtburchakning yuqori tomoniga diametri 16 sm bo'lgan yarim doira qo'shildi. Shaklning umumiy yuzi qancha?",
+      "v": [
+        "160 + 64π sm²",
+        "160 + 32π sm²",
+        "160 + 16π sm²",
+        "160 + 128π sm²"
+      ],
+      "t": 1,
+      "izoh": "To'rtburchak yuzi 16 · 10 = 160 sm². Yarim doira radiusi 8 sm, yuzi πr² : 2 = 64π : 2 = 32π sm². Umumiy yuza 160 + 32π sm². Yarim doirani butun deb olish 64π ni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='62' y1='244' x2='238' y2='244' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='62' y1='136' x2='62' y2='244' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='238' y1='136' x2='238' y2='244' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='62' y1='136' x2='238' y2='136' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cpath d='M 62 136 A 88 88 0 0 1 238 136' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='150' y='264' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='54' y='190' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qorishma-yuza",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#42177ea6"
+    },
+    {
+      "q": "Uzunligi 20 m, eni 14 m bo'lgan to'g'ri to'rtburchak maydonning ikkala qisqa tomoniga yarim doiralar qo'shilgan. Umumiy yuza qancha (π ≈ 22/7)?",
+      "v": [
+        "280 m²",
+        "588 m²",
+        "357 m²",
+        "434 m²"
+      ],
+      "t": 3,
+      "izoh": "To'rtburchak yuzi 20 · 14 = 280 m². Ikkita yarim doira radiusi 7 m bo'lgan butun doirani beradi: (22/7) · 49 = 154 m². Jami 280 + 154 = 434 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='76.47' y1='98.53' x2='223.53' y2='98.53' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='76.47' y1='201.47' x2='223.53' y2='201.47' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 223.53 98.53 A 51.47 51.47 0 0 1 223.53 201.47' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 76.47 201.47 A 51.47 51.47 0 0 1 76.47 98.53' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='150' y='88.53' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3Cline x1='223.53' y1='98.53' x2='223.53' y2='201.47' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='231.53' y='150' font-size='13' fill='%23334155' text-anchor='start'%3E14 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qorishma-yuza",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#0b78527d"
+    },
+    {
+      "q": "Tomoni 8 sm bo'lgan kvadratning har bir uchidan markaz qilib radiusi 4 sm bo'lgan chorak doiralar chizildi. Kvadratning bo'yalmagan qismi yuzi qancha?",
+      "v": [
+        "64 − 16π sm²",
+        "64 − 64π sm²",
+        "64 − 8π sm²",
+        "16π sm²"
+      ],
+      "t": 0,
+      "izoh": "To'rtta chorak doira birlashib radiusi 4 sm bo'lgan bitta butun doirani hosil qiladi, yuzi π · 16 = 16π sm². Kvadrat yuzi 8² = 64 sm². Qolgan qism 64 − 16π sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Crect x='50' y='50' width='200' height='200' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 150 50 A 100 100 0 0 1 50 150' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpath d='M 150 50 A 100 100 0 0 0 250 150' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpath d='M 250 150 A 100 100 0 0 0 150 250' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpath d='M 150 250 A 100 100 0 0 0 50 150' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='270' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Cline x1='50' y1='50' x2='150' y2='50' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='100' y='42' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qorishma-yuza",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#95799208"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan doiradan diametri bo'ylab joylashgan radiusi 5 sm bo'lgan ikkita doira kesib olindi. Qolgan qismning yuzi qancha?",
+      "v": [
+        "75π sm²",
+        "25π sm²",
+        "50π sm²",
+        "90π sm²"
+      ],
+      "t": 2,
+      "izoh": "Katta doira yuzi π · 100 = 100π sm². Har bir kichik doira π · 25 = 25π sm², ikkitasi 50π sm². Qolgan qism 100π − 50π = 50π sm². Faqat bittasini ayirish 75π ni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='155' r='100' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='100' cy='155' r='50' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='200' cy='155' r='50' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='155' x2='150' y2='55' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='156' y='105' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3Cline x1='100' y1='155' x2='50' y2='155' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='75' y='147' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qorishma-yuza",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#16b782a8"
+    },
+    {
+      "q": "Tomoni 14 sm bo'lgan kvadratga ichki chizilgan doiraning yuzi necha kvadrat santimetr (π ≈ 22/7)?",
+      "v": [
+        "616 sm²",
+        "44 sm²",
+        "154 sm²",
+        "196 sm²"
+      ],
+      "t": 2,
+      "izoh": "Ichki chizilgan doiraning diametri kvadrat tomoniga teng, demak r = 14 : 2 = 7 sm. Yuza S = (22/7) · 49 = 154 sm². Kvadrat tomonini radius deb olish 616 ni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Crect x='55' y='55' width='190' height='190' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='150' r='95' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='263' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-tashqi-kopburchak",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#68d9e7d0"
+    },
+    {
+      "q": "Tomoni 10 sm bo'lgan kvadratdan unga ichki chizilgan doira kesib olindi. Kvadratda qolgan qismning yuzi qancha (π ≈ 3,14)?",
+      "v": [
+        "21,5 sm²",
+        "78,5 sm²",
+        "68,6 sm²",
+        "39,25 sm²"
+      ],
+      "t": 0,
+      "izoh": "Kvadrat yuzi 100 sm². Ichki doira radiusi 5 sm, yuzi 3,14 · 25 = 78,5 sm². Qolgan qism 100 − 78,5 = 21,5 sm². Yuza o'rniga aylana uzunligini ayirish 68,6 ni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Crect x='55' y='55' width='190' height='190' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='150' r='95' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='263' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-tashqi-kopburchak",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#c4ac4220"
+    },
+    {
+      "q": "Diagonali 12 sm bo'lgan kvadratga tashqi chizilgan doiraning yuzini toping.",
+      "v": [
+        "144π sm²",
+        "18π sm²",
+        "72π sm²",
+        "36π sm²"
+      ],
+      "t": 3,
+      "izoh": "Tashqi chizilgan doiraning diametri kvadrat diagonaliga teng, chunki barcha uchlar aylanada yotadi. Demak r = 12 : 2 = 6 sm va S = π · 36 = 36π sm². Diagonalni radius deb olish 144π ni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Crect x='84.95' y='84.95' width='130.11' height='130.11' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='84.95' y1='215.05' x2='215.05' y2='84.95' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-tashqi-kopburchak",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#2053f6b9"
+    },
+    {
+      "q": "Tomoni 6 sm bo'lgan teng tomonli uchburchakka tashqi chizilgan doiraning yuzi qanchaga teng?",
+      "v": [
+        "3π sm²",
+        "12π sm²",
+        "36π sm²",
+        "9π sm²"
+      ],
+      "t": 1,
+      "izoh": "Teng tomonli uchburchakka tashqi chizilgan doira radiusi R = a : √3 = 6 : √3 = 2√3 sm. Yuza S = π · (2√3)² = 12π sm². Ichki chizilgan doira radiusi bundan ikki barobar kichik bo'lib, 3π ni berardi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='158' r='92' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='150,66 70.33,204 229.67,204' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='150' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-tashqi-kopburchak",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#e21dd2ec"
+    },
+    {
+      "q": "Devor soatining minut strelkasi uzunligi 14 sm. Strelka uchi 15 daqiqada qanday yo'l bosadi (π ≈ 22/7)?",
+      "v": [
+        "88 sm",
+        "22 sm",
+        "44 sm",
+        "11 sm"
+      ],
+      "t": 1,
+      "izoh": "Strelka uchi radiusi 14 sm bo'lgan aylana bo'ylab yuradi, uzunligi 2 · (22/7) · 14 = 88 sm. 15 daqiqa — bir aylanishning chorak qismi, demak yo'l 88 : 4 = 22 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 150 64 A 90 90 0 1 0 240 154' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 240 154 A 90 90 0 0 0 150 64' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='240' y2='154' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='150' y2='64' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='156' y='97.5' font-size='13' fill='%23334155' text-anchor='start'%3E14 sm%3C/text%3E%3Ctext x='227.78' y='80.22' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soat-strelkasi",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#bc24249e"
+    },
+    {
+      "q": "Soatning minut strelkasi uzunligi 10 sm. Strelka 20 daqiqada supurib o'tgan sektorning yuzi qancha?",
+      "v": [
+        "50π/3 sm²",
+        "100π sm²",
+        "200π/3 sm²",
+        "100π/3 sm²"
+      ],
+      "t": 3,
+      "izoh": "20 daqiqa bir soatning uchdan biri, demak burchak 360° : 3 = 120°. Butun doira yuzi π · 100 = 100π sm². Sektor yuzi 100π : 3 = 100π/3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 150 64 A 90 90 0 1 0 227.94 199' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 227.94 199 A 90 90 0 0 0 150 64' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='227.94' y2='199' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='150' y2='64' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 172.52 167 A 26 26 0 0 0 150 128' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='189.84' y='136' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='156' y='97.5' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soat-strelkasi",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#be65294c"
+    },
+    {
+      "q": "Devor soati siferblatining radiusi 18 sm. Siferblatdagi ikkita qo'shni raqamni tutashtiruvchi yoyning uzunligi qancha?",
+      "v": [
+        "3π sm",
+        "6π sm",
+        "1,5π sm",
+        "36π sm"
+      ],
+      "t": 0,
+      "izoh": "Siferblat 12 ta teng yoyga bo'lingan, demak har biriga 360° : 12 = 30° mos keladi. Yoy uzunligi l = π · 18 · 30 : 180 = 3π sm. Butun aylana esa 36π sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='154' r='90' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='64' x2='150' y2='76' stroke='%23334155' stroke-width='1.6'/%3E%3Cline x1='195' y1='76.06' x2='189' y2='86.45' stroke='%23334155' stroke-width='1.6'/%3E%3Cline x1='227.94' y1='109' x2='217.55' y2='115' stroke='%23334155' stroke-width='1.6'/%3E%3Cline x1='240' y1='154' x2='228' y2='154' stroke='%23334155' stroke-width='1.6'/%3E%3Cline x1='227.94' y1='199' x2='217.55' y2='193' stroke='%23334155' stroke-width='1.6'/%3E%3Cline x1='195' y1='231.94' x2='189' y2='221.55' stroke='%23334155' stroke-width='1.6'/%3E%3Cline x1='150' y1='244' x2='150' y2='232' stroke='%23334155' stroke-width='1.6'/%3E%3Cline x1='105' y1='231.94' x2='111' y2='221.55' stroke='%23334155' stroke-width='1.6'/%3E%3Cline x1='72.06' y1='199' x2='82.45' y2='193' stroke='%23334155' stroke-width='1.6'/%3E%3Cline x1='60' y1='154' x2='72' y2='154' stroke='%23334155' stroke-width='1.6'/%3E%3Cline x1='72.06' y1='109' x2='82.45' y2='115' stroke='%23334155' stroke-width='1.6'/%3E%3Cline x1='105' y1='76.06' x2='111' y2='86.45' stroke='%23334155' stroke-width='1.6'/%3E%3Cpath d='M 227.94 109 A 90 90 0 0 1 240 154' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='227.94' y2='109' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='240' y2='154' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 172.52 141 A 26 26 0 0 1 176 154' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='203' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='185' y='111' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soat-strelkasi",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#f20be5d6"
+    },
+    {
+      "q": "Radiusi 12 sm bo'lgan siferblatda soat 4:30 ni ko'rsatmoqda. Strelkalar orasidagi burchakka tayangan kichik sektorning yuzi qancha?",
+      "v": [
+        "24π sm²",
+        "36π sm²",
+        "18π sm²",
+        "12π sm²"
+      ],
+      "t": 2,
+      "izoh": "Minut strelkasi 6 raqamida, ya'ni 180° da. Soat strelkasi 4 va 5 orasining o'rtasida: 4 · 30° + 15° = 135°. Burchak 180° − 135° = 45°. Sektor yuzi 144π · 45 : 360 = 18π sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "soat-strelkasi",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#440cd9c4"
+    },
+    {
+      "q": "Radiusi 3,5 m bo'lgan dumaloq basseyn tubi plitka bilan qoplanadi. Bir kvadrat metr plitka 90 000 so'm bo'lsa, jami qancha xarajat qilinadi (π ≈ 22/7)?",
+      "v": [
+        "1 980 000 so'm",
+        "6 930 000 so'm",
+        "3 465 000 so'm",
+        "990 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Tub yuzi S = (22/7) · 3,5² = (22/7) · 12,25 = 38,5 m². Xarajat 38,5 · 90 000 = 3 465 000 so'm. Yuza o'rniga aylana uzunligini olish 1 980 000 ni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='92' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='152' x2='225.36' y2='99.23' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='142' y='168' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196.45' y='116.98' font-size='13' fill='%23334155' text-anchor='start'%3E3,5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-narx-hisob",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#88ff748f"
+    },
+    {
+      "q": "Diametri 28 m bo'lgan dumaloq maydonni panjara bilan o'rab chiqish kerak. Bir metr panjara 120 000 so'm bo'lsa, qancha pul kerak bo'ladi (π ≈ 22/7)?",
+      "v": [
+        "10 560 000 so'm",
+        "5 280 000 so'm",
+        "73 920 000 so'm",
+        "21 120 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Panjara uzunligi aylana uzunligiga teng: C = πd = (22/7) · 28 = 88 m. Xarajat 88 · 120 000 = 10 560 000 so'm. Uzunlik o'rniga yuza olinsa, natija bir necha barobar oshib ketadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='93' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='57' y1='150' x2='243' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='141' font-size='13' fill='%23334155' text-anchor='middle'%3E28 m%3C/text%3E%3Ctext x='49' y='155' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='251' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-narx-hisob",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#fc950758"
+    },
+    {
+      "q": "Radiusi 10 m bo'lgan dumaloq maydonning 90° li sektoriga gul ekiladi va har bir kvadrat metrga 2 tupdan qo'yiladi. Nechta tup kerak (π ≈ 3,14)?",
+      "v": [
+        "314 tup",
+        "628 tup",
+        "78 tup",
+        "157 tup"
+      ],
+      "t": 3,
+      "izoh": "Butun maydon yuzi 3,14 · 100 = 314 m². Sektor uning chorak qismi: 314 : 4 = 78,5 m². Har metrga 2 tupdan bo'lgani uchun 78,5 · 2 = 157 tup kerak bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 213.64 90.36 A 90 90 0 1 0 213.64 217.64' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 213.64 217.64 A 90 90 0 0 0 213.64 90.36' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='213.64' y2='217.64' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='154' x2='213.64' y2='90.36' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 168.38 172.38 A 26 26 0 0 0 168.38 135.62' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='196' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Ctext x='191' y='112' font-size='13' fill='%23334155' text-anchor='start'%3E10 m%3C/text%3E%3Ctext x='141' y='170' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-narx-hisob",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#8ca5e64a"
+    },
+    {
+      "q": "Diametri 10 m bo'lgan dumaloq hovuz atrofiga eni 1 m bo'lgan plitka yo'lak yotqiziladi. Bir kvadrat metr plitka 150 000 so'm bo'lsa, xarajat qancha (π ≈ 3,14)?",
+      "v": [
+        "16 956 000 so'm",
+        "5 181 000 so'm",
+        "471 000 so'm",
+        "10 362 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Hovuz radiusi 5 m, yo'lak bilan birga tashqi radius 6 m. Yo'lak halqa shaklida: S = 3,14 · (36 − 25) = 3,14 · 11 = 34,54 m². Xarajat 34,54 · 150 000 = 5 181 000 so'm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='100' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='152' r='83.33' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='68.67' x2='150' y2='235.33' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='156' y='110.33' font-size='13' fill='%23334155' text-anchor='start'%3E10 m%3C/text%3E%3Cline x1='66.67' y1='152' x2='50' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='58.33' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E1 m%3C/text%3E%3Ctext x='157' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-narx-hisob",
+      "id": "matematika_plan_m18-aylana-uzunligi-doira-sektor-va#00edcc50"
+    }
+  ]
+}

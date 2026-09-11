@@ -1,0 +1,516 @@
+{
+  "nom": "37-mavzu. Erish Qotish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Erish deganda nimani tushunasiz?",
+      "v": [
+        "Moddaning qattiq holatdan suyuq holatga o'tish jarayonini",
+        "Moddaning suyuq holatdan gaz holatga o'tishini",
+        "Moddaning gaz holatdan suyuq holatga o'tishini",
+        "Moddaning suyuq holatdan qattiq holatga o'tishini"
+      ],
+      "t": 0,
+      "izoh": "Erish ta'rifi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#eea4cf19"
+    },
+    {
+      "q": "Erish temperaturasi nima?",
+      "v": [
+        "Jism eriy boshlagan temperatura",
+        "Jism qaynay boshlagan temperatura",
+        "Jism qota boshlagan temperatura",
+        "Jism bug'lana boshlagan temperatura"
+      ],
+      "t": 0,
+      "izoh": "Erish temperaturasi ta'rifi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#9f5ea29d"
+    },
+    {
+      "q": "Kristall jism eriyotganda uning temperaturasi qanday bo'ladi?",
+      "v": [
+        "O'zgarmaydi",
+        "Oshib boradi",
+        "Pasayib boradi",
+        "Nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Erishda temperatura o'zgarmas",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#ab700eca"
+    },
+    {
+      "q": "Qattiq jism to'liq erib bo'lgach, hosil bo'lgan suyuqlikning temperaturasi qanday bo'ladi?",
+      "v": [
+        "Ko'tarila boshlaydi",
+        "O'zgarmay qoladi",
+        "Pasayadi",
+        "Nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Suyuqlik isiydi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#14fbe475"
+    },
+    {
+      "q": "Erish grafikning BC qismi nimani anglatadi?",
+      "v": [
+        "Erish jarayonini",
+        "Kristall jismning isishini",
+        "Suyuqlikning isishini",
+        "Qotish jarayonini"
+      ],
+      "t": 0,
+      "izoh": "AB — isish, BC — erish, CD — suyuqlik isishi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#4637fbdd"
+    },
+    {
+      "q": "Erish grafikning AB qismi nimani anglatadi?",
+      "v": [
+        "Kristall jismning isishini",
+        "Erish jarayonini",
+        "Suyuqlikning isishini",
+        "Qotish jarayonini"
+      ],
+      "t": 0,
+      "izoh": "AB qismi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#c1a5c3a8"
+    },
+    {
+      "q": "Erish grafikning CD qismi nimani anglatadi?",
+      "v": [
+        "Erishdan hosil bo'lgan suyuqlikning isishini",
+        "Erish jarayonini",
+        "Qotish jarayonini",
+        "Jismning sovishini"
+      ],
+      "t": 0,
+      "izoh": "CD qismi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#f2b0e53f"
+    },
+    {
+      "q": "Erish issiqligi nima?",
+      "v": [
+        "Erish temperaturasidagi jismni butunlay suyuqlikka aylantirish uchun sarf bo'lgan issiqlik miqdori",
+        "1 kg yoqilg'i yonganda ajraladigan issiqlik",
+        "1 kg suyuqlikni bug'ga aylantirish uchun kerak issiqlik",
+        "1 kg moddani 1 °C ga isitish uchun kerak issiqlik"
+      ],
+      "t": 0,
+      "izoh": "Qe ta'rifi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#990e8743"
+    },
+    {
+      "q": "Erish issiqligining formulasi qaysi?",
+      "v": [
+        "Qe = λ·m",
+        "Qe = r·m",
+        "Qe = q·m",
+        "Qe = c·m·t"
+      ],
+      "t": 0,
+      "izoh": "Qe = λm",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m37-erish-qotish#df6fce59"
+    },
+    {
+      "q": "Solishtirma erish issiqligi nima?",
+      "v": [
+        "Erish temperaturasidagi 1 kg qattiq moddani to'liq eritish uchun zarur bo'lgan issiqlik miqdoriga son jihatdan teng fizik kattalik",
+        "1 kg moddani bug'ga aylantirish uchun kerak kattalik",
+        "1 kg yoqilg'i yonganda ajraladigan kattalik",
+        "1 kg moddani 1 °C ga isitish uchun kerak kattalik"
+      ],
+      "t": 0,
+      "izoh": "λ ta'rifi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#f088233e"
+    },
+    {
+      "q": "Solishtirma erish issiqligi qanday harf bilan belgilanadi?",
+      "v": [
+        "λ",
+        "r",
+        "q",
+        "c"
+      ],
+      "t": 0,
+      "izoh": "λ (lyambda)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m37-erish-qotish#f6eaf16d"
+    },
+    {
+      "q": "Solishtirma erish issiqligining SI dagi birligi nima?",
+      "v": [
+        "J/kg",
+        "J/(kg·°C)",
+        "J",
+        "kJ"
+      ],
+      "t": 0,
+      "izoh": "J/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#c003577b"
+    },
+    {
+      "q": "Muzning erish temperaturasi qancha?",
+      "v": [
+        "0 °C",
+        "100 °C",
+        "−78,5 °C",
+        "327 °C"
+      ],
+      "t": 0,
+      "izoh": "Muz — 0 °C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#37037348"
+    },
+    {
+      "q": "Muzning solishtirma erish issiqligi qancha?",
+      "v": [
+        "330 kJ/kg",
+        "380 kJ/kg",
+        "260 kJ/kg",
+        "200 kJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Muz — 330 kJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#97df80f7"
+    },
+    {
+      "q": "Alyuminiyni solishtirma erish issiqligi qancha?",
+      "v": [
+        "380 kJ/kg",
+        "330 kJ/kg",
+        "260 kJ/kg",
+        "100 kJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Alyuminiy — 380 kJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#6148bce0"
+    },
+    {
+      "q": "Temirning solishtirma erish issiqligi qancha?",
+      "v": [
+        "260 kJ/kg",
+        "200 kJ/kg",
+        "380 kJ/kg",
+        "100 kJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Temir — 260 kJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#2f2afa39"
+    },
+    {
+      "q": "Misning solishtirma erish issiqligi qancha?",
+      "v": [
+        "200 kJ/kg",
+        "260 kJ/kg",
+        "100 kJ/kg",
+        "64 kJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Mis — 200 kJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#bdd70166"
+    },
+    {
+      "q": "Kumushning solishtirma erish issiqligi qancha?",
+      "v": [
+        "100 kJ/kg",
+        "64 kJ/kg",
+        "60 kJ/kg",
+        "25 kJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Kumush — 100 kJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#ea26825a"
+    },
+    {
+      "q": "Qo'rg'oshinning solishtirma erish issiqligi qancha?",
+      "v": [
+        "25 kJ/kg",
+        "60 kJ/kg",
+        "64 kJ/kg",
+        "100 kJ/kg"
+      ],
+      "t": 0,
+      "izoh": "Qo'rg'oshin — 25 kJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#601114dd"
+    },
+    {
+      "q": "Jadvaldagi moddalar ichida solishtirma erish issiqligi eng katta modda qaysi?",
+      "v": [
+        "Alyuminiy",
+        "Muz",
+        "Temir",
+        "Mis"
+      ],
+      "t": 0,
+      "izoh": "380 kJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#f26ba0b8"
+    },
+    {
+      "q": "Jadvaldagi moddalar ichida solishtirma erish issiqligi eng kichik modda qaysi?",
+      "v": [
+        "Qo'rg'oshin",
+        "Qalay",
+        "Oltin",
+        "Kumush"
+      ],
+      "t": 0,
+      "izoh": "25 kJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#9cd28615"
+    },
+    {
+      "q": "Qalayning erish temperaturasi qancha?",
+      "v": [
+        "232 °C",
+        "327 °C",
+        "420 °C",
+        "600 °C"
+      ],
+      "t": 0,
+      "izoh": "Qalay — 232 °C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#ef888818"
+    },
+    {
+      "q": "Qo'rg'oshinning erish temperaturasi qancha?",
+      "v": [
+        "327 °C",
+        "232 °C",
+        "420 °C",
+        "962 °C"
+      ],
+      "t": 0,
+      "izoh": "Qo'rg'oshin — 327 °C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#17fcc186"
+    },
+    {
+      "q": "Misning erish temperaturasi qancha?",
+      "v": [
+        "1083 °C",
+        "1064 °C",
+        "962 °C",
+        "1400 °C"
+      ],
+      "t": 0,
+      "izoh": "Mis — 1083 °C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#de2a836a"
+    },
+    {
+      "q": "Volframning erish temperaturasi qancha?",
+      "v": [
+        "3387 °C",
+        "1769 °C",
+        "1400 °C",
+        "1220 °C"
+      ],
+      "t": 0,
+      "izoh": "Volfram — eng yuqori",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#744b615c"
+    },
+    {
+      "q": "Jadvaldagi moddalar ichida erish temperaturasi eng past modda qaysi?",
+      "v": [
+        "Muz",
+        "Qalay",
+        "Qo'rg'oshin",
+        "Rux"
+      ],
+      "t": 0,
+      "izoh": "0 °C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#a308cb80"
+    },
+    {
+      "q": "Jadvaldagi moddalar ichida erish temperaturasi eng yuqori modda qaysi?",
+      "v": [
+        "Volfram",
+        "Platina",
+        "Temir",
+        "Cho'yan"
+      ],
+      "t": 0,
+      "izoh": "3387 °C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#5c8332b6"
+    },
+    {
+      "q": "Qotish (kristallanish) jarayonida moddaning temperaturasi qanday bo'ladi?",
+      "v": [
+        "O'zgarmaydi",
+        "Oshib boradi",
+        "Pasayib boradi",
+        "To'lqinlanadi"
+      ],
+      "t": 0,
+      "izoh": "Qotishda temperatura o'zgarmas",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#c45e5d9e"
+    },
+    {
+      "q": "Qotish grafikning BC qismi nimani anglatadi?",
+      "v": [
+        "Suyuqlikning qotishini",
+        "Suyuqlikning sovishini",
+        "Qattiq jismning sovishini",
+        "Erish jarayonini"
+      ],
+      "t": 0,
+      "izoh": "AB — sovish, BC — qotish, CD — qattiq jism sovishi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#9ddf5e4f"
+    },
+    {
+      "q": "Eritilgan suyuqlik qotganda undan qanday issiqlik miqdori ajralib chiqadi?",
+      "v": [
+        "Erish issiqligiga teng issiqlik miqdori",
+        "Bug'lanish issiqligiga teng",
+        "Yonish issiqligiga teng",
+        "Hech qanday issiqlik ajralmaydi"
+      ],
+      "t": 0,
+      "izoh": "Qq = −Qe = −λm",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#fafc72f8"
+    },
+    {
+      "q": "Qq = −λ·m formulasidagi minus ishorasi nimani anglatadi?",
+      "v": [
+        "Issiqlik miqdorining ajralishini",
+        "Issiqlikning yutilishini",
+        "Temperaturaning oshishini",
+        "Massaning ortishini"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik ajraladi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m37-erish-qotish#64e5bf65"
+    },
+    {
+      "q": "λ = Qe/m formulasi nimani aniqlash uchun ishlatiladi?",
+      "v": [
+        "Solishtirma erish issiqligini",
+        "Solishtirma bug'lanish issiqligini",
+        "Solishtirma yonish issiqligini",
+        "Solishtirma issiqlik sig'imini"
+      ],
+      "t": 0,
+      "izoh": "λ ni topish",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m37-erish-qotish#0ffbd7d0"
+    },
+    {
+      "q": "Erish temperaturasida turgan 1 kg muzni to'liq eritish uchun qancha issiqlik kerak?",
+      "v": [
+        "330·10³ J",
+        "230·10³ J",
+        "130·10³ J",
+        "460·10³ J"
+      ],
+      "t": 0,
+      "izoh": "λ = 330 kJ/kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m37-erish-qotish#9ad745df"
+    },
+    {
+      "q": "Kristall jismga uzluksiz issiqlik berilsa, erish boshlanishidan oldin uning temperaturasi qanday bo'ladi?",
+      "v": [
+        "Oshib boradi",
+        "O'zgarmaydi",
+        "Pasayadi",
+        "Nol bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "AB qismi — isish",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m37-erish-qotish#6c3966dd"
+    }
+  ]
+}

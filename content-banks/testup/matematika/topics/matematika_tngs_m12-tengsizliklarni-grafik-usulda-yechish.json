@@ -1,0 +1,1609 @@
+{
+  "nom": "Tengsizliklarni grafik usulda yechish",
+  "bolim": "Tengsizliklar",
+  "blok": "tngs",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Koordinata tekisligida y = 2x − 1 va y = −x + 8 to'g'ri chiziqlari chizilgan. Birinchi chiziq ikkinchisidan yuqorida joylashgan barcha x larning to'plamini grafikdan aniqlang.",
+      "v": [
+        "(3; +∞)",
+        "(−∞; 3)",
+        "[3; +∞)",
+        "(9; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Avval kesishish nuqtasini topamiz: 2x − 1 = −x + 8, bundan 3x = 9 va x = 3. Kesishishdan o'ngda burchak koeffitsienti katta chiziq tepaga chiqadi, ya'ni x > 3 da y = 2x − 1 yuqorida. Kesishish nuqtasida grafiklar tenglashadi, shuning uchun u kirmaydi. Javob: (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-togri-chiziq-joylashuvi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#985b307f"
+    },
+    {
+      "q": "y = 3x + 2 va y = 5x − 6 chiziqlari bitta chizmada tasvirlangan. 3x + 2 ≥ 5x − 6 tengsizlikning yechimi grafikda qaysi oraliqqa mos keladi?",
+      "v": [
+        "[4; +∞)",
+        "(−∞; 4)",
+        "(−∞; −4]",
+        "(−∞; 4]"
+      ],
+      "t": 3,
+      "izoh": "Kesishishni topamiz: 3x + 2 = 5x − 6, bundan 2x = 8 va x = 4. Kesishishdan chapda burchak koeffitsienti kichik bo'lgan y = 3x + 2 chizig'i yuqorida turadi. Tengsizlik qat'iy emas, shuning uchun x = 4 nuqta ham yechimga kiradi. Javob: (−∞; 4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-togri-chiziq-joylashuvi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#f9d767e0"
+    },
+    {
+      "q": "Anvar bir soatda 18 ta, Bekzod esa 12 ta detal yasaydi, lekin Bekzod ishni 30 ta tayyor detal bilan boshlagan. Ularning grafiklari y = 18x va y = 12x + 30. Bekzodda ko'proq detal bo'lgan vaqt oralig'ini toping (x — soat).",
+      "v": [
+        "x > 5",
+        "0 ≤ x < 5",
+        "0 ≤ x ≤ 5",
+        "0 ≤ x < 2,5"
+      ],
+      "t": 1,
+      "izoh": "Grafiklar kesishgan paytni topamiz: 18x = 12x + 30, bundan 6x = 30 va x = 5. Beshinchi soatgacha y = 12x + 30 chizig'i yuqorida yotadi, keyin y = 18x uni quvib o'tadi. Vaqt manfiy bo'lolmaydi, shuning uchun chap chegara nol. Javob: 0 ≤ x < 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-togri-chiziq-joylashuvi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#581de3e3"
+    },
+    {
+      "q": "y = 0,5x + 1 to'g'ri chiziq y = 2,5x − 3 to'g'ri chiziqdan quyida joylashgan x qiymatlari to'plamini grafik yordamida toping.",
+      "v": [
+        "(−∞; 2)",
+        "(4; +∞)",
+        "(2; +∞)",
+        "[2; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Chiziqlarni tenglashtiramiz: 0,5x + 1 = 2,5x − 3, bundan 2x = 4 va x = 2. Burchak koeffitsienti katta chiziq kesishishdan o'ngda yuqoriga ko'tariladi, demak y = 0,5x + 1 pastda qoladi. Tengsizlik qat'iy bo'lgani uchun x = 2 kirmaydi. Javob: (2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-togri-chiziq-joylashuvi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#af7ac2fb"
+    },
+    {
+      "q": "y = x² parabolasi va y = 4 to'g'ri chizig'i bitta koordinata tekisligida chizilgan. Parabola chiziqdan pastda bo'lgan x lar to'plamini grafikdan o'qing.",
+      "v": [
+        "(−2; 2)",
+        "[−2; 2]",
+        "(−∞; −2) ∪ (2; +∞)",
+        "(0; 2)"
+      ],
+      "t": 0,
+      "izoh": "Kesishish nuqtalari x² = 4 tenglamadan topiladi: x = −2 va x = 2. Parabola shu ikki nuqta orasidagi qismda y = 4 chizig'idan pastda yotadi. Tengsizlik qat'iy bo'lgani uchun chetki nuqtalar kirmaydi. Javob: (−2; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-va-togri-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#0a0d4a04"
+    },
+    {
+      "q": "y = x² − 2x parabolasi y = 3 gorizontal chizig'idan past bo'lmagan, ya'ni undan yuqorida yoki unga teng bo'lgan x lar oralig'ini toping.",
+      "v": [
+        "[−1; 3]",
+        "(−∞; −1] ∪ [3; +∞)",
+        "(−∞; −1) ∪ (3; +∞)",
+        "[−3; 1]"
+      ],
+      "t": 1,
+      "izoh": "x² − 2x = 3 tenglamadan x² − 2x − 3 = 0 hosil bo'ladi, ildizlari x = −1 va x = 3. Tarmoqlari yuqoriga qaragan parabola ildizlardan tashqarida gorizontal chiziqdan baland turadi. Tenglik ham ruxsat etilgani uchun ildizlar yechimga kiradi. Javob: (−∞; −1] ∪ [3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-va-togri-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#9e132f32"
+    },
+    {
+      "q": "Do'konda har soatda sotilgan muzqaymoq soni y = −x² + 14x formula bilan beriladi, bu yerda x — do'kon ochilgandan keyingi soat (0 ≤ x ≤ 14). Soatlik savdo 45 tadan oshgan soatlar oralig'ini grafikdan aniqlang.",
+      "v": [
+        "x < 5 yoki x > 9",
+        "5 ≤ x ≤ 9",
+        "5 < x < 9",
+        "10 < x < 18"
+      ],
+      "t": 2,
+      "izoh": "−x² + 14x > 45 tengsizligini x² − 14x + 45 < 0 ko'rinishga keltiramiz. Diskriminant D = 196 − 180 = 16, ildizlar (14 − 4) : 2 = 5 va (14 + 4) : 2 = 9. Tarmoqlari yuqoriga qaragan parabola faqat ildizlar orasida noldan kichik. Javob: 5 < x < 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parabola-va-togri-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#0e82346d"
+    },
+    {
+      "q": "Chizmada y = x² − 3x parabolasi va y = x + 5 to'g'ri chizig'i berilgan. Parabola chiziqdan yuqorida bo'lgan x larni toping.",
+      "v": [
+        "(−1; 5)",
+        "(−∞; −5) ∪ (1; +∞)",
+        "(−∞; −1] ∪ [5; +∞)",
+        "(−∞; −1) ∪ (5; +∞)"
+      ],
+      "t": 3,
+      "izoh": "x² − 3x > x + 5 tengsizligini x² − 4x − 5 > 0 ko'rinishida yozamiz. Viyet teoremasi bo'yicha ildizlar −1 va 5. Tarmoqlari yuqoriga qaragan parabola ildizlardan tashqarida chiziqdan baland bo'ladi. Javob: (−∞; −1) ∪ (5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-va-togri-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#b64fb615"
+    },
+    {
+      "q": "y = −x² + 6x − 5 parabolasi chizilgan. U OX o'qidan pastda joylashgan x qiymatlari to'plamini grafik bo'yicha aniqlang.",
+      "v": [
+        "(1; 5)",
+        "(−∞; 1) ∪ (5; +∞)",
+        "(−∞; 1] ∪ [5; +∞)",
+        "(−5; −1)"
+      ],
+      "t": 1,
+      "izoh": "Parabolaning nollarini topamiz: −x² + 6x − 5 = 0, ya'ni x² − 6x + 5 = 0 va ildizlar x = 1, x = 5. Tarmoqlari pastga qaragan parabola ildizlar orasida OX dan yuqorida, tashqarisida esa pastda yotadi. Qat'iy tengsizlikda nollar kirmaydi. Javob: (−∞; 1) ∪ (5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-va-ox-oqi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#6059c09c"
+    },
+    {
+      "q": "Kvadrat uchhadning grafigi OX o'qini x = −4 va x = 2 nuqtalarda kesadi, parabolaning tarmoqlari yuqoriga qaragan. f(x) ≤ 0 tengsizlikning yechimini yozing.",
+      "v": [
+        "[−4; 2]",
+        "(−4; 2)",
+        "(−∞; −4] ∪ [2; +∞)",
+        "[−2; 4]"
+      ],
+      "t": 0,
+      "izoh": "Tarmoqlari yuqoriga qaragan parabola faqat ildizlari orasidagi qismda OX o'qidan pastda joylashadi. Tengsizlikda nolga tenglik ham ruxsat etilgan, demak kesishish nuqtalarining o'zi ham yechim bo'ladi. Shuning uchun yechim yopiq kesma ko'rinishida yoziladi. Javob: [−4; 2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-va-ox-oqi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#dbe3af92"
+    },
+    {
+      "q": "Yuqoriga otilgan koptokning balandligi h = −5t² + 20t metr bilan ifodalanadi, bu yerda t — sekundlardagi vaqt. Koptok yerdan 15 m dan baland bo'lgan vaqt oralig'ini grafikdan toping.",
+      "v": [
+        "0 < t < 1",
+        "t < 1 yoki t > 3",
+        "1 ≤ t ≤ 3",
+        "1 < t < 3"
+      ],
+      "t": 3,
+      "izoh": "−5t² + 20t > 15 tengsizligini 5 ga bo'lamiz: −t² + 4t > 3, ya'ni t² − 4t + 3 < 0. Ildizlar t = 1 va t = 3, parabolaning tarmoqlari yuqoriga qaragan, shuning uchun u ildizlar orasida noldan kichik. Demak koptok birinchi va uchinchi sekundlar orasida 15 metrdan baland. Javob: 1 < t < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parabola-va-ox-oqi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#9efdb9f4"
+    },
+    {
+      "q": "y = x² + 4x + 4 parabolasining grafigi berilgan. x² + 4x + 4 > 0 tengsizlikning yechimini grafik yordamida yozing.",
+      "v": [
+        "(−∞; +∞)",
+        "(−2; +∞)",
+        "(−∞; −2) ∪ (−2; +∞)",
+        "yechim yo'q"
+      ],
+      "t": 2,
+      "izoh": "Uchhad (x + 2)² ko'rinishida yoyiladi, demak parabola OX o'qiga x = −2 nuqtada urinadi. Urinish nuqtasida funksiya qiymati nolga teng, qolgan hamma joyda esa musbat. Qat'iy tengsizlik nol qiymatni qabul qilmaydi, shuning uchun x = −2 chiqarib tashlanadi. Javob: (−∞; −2) ∪ (−2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parabola-va-ox-oqi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#a9ebbcb4"
+    },
+    {
+      "q": "y = |x − 3| burchak shaklidagi grafik va y = 5 to'g'ri chizig'i chizilgan. Burchak grafigi chiziqdan pastda bo'lgan x lar oralig'ini toping.",
+      "v": [
+        "(−8; 2)",
+        "(−2; 8)",
+        "[−2; 8]",
+        "(−5; 5)"
+      ],
+      "t": 1,
+      "izoh": "Burchakning uchi (3; 0) nuqtada joylashgan, tarmoqlari y = 5 chizig'ini x − 3 = 5 va x − 3 = −5 shartlarda kesadi. Bundan x = 8 va x = −2 nuqtalar chiqadi. Shu ikki nuqta orasida grafik chiziqdan past, chetlarida esa tenglashadi. Javob: (−2; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-va-gorizontal-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#f2fd517c"
+    },
+    {
+      "q": "y = |2x + 6| grafigi y = 4 to'g'ri chizig'idan yuqorida bo'lgan x lar to'plamini grafikdan aniqlang.",
+      "v": [
+        "(−5; −1)",
+        "(−∞; −1) ∪ (5; +∞)",
+        "(−∞; −5] ∪ [−1; +∞)",
+        "(−∞; −5) ∪ (−1; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Burchakning uchi 2x + 6 = 0 dan x = −3 nuqtada. |2x + 6| = 4 tenglama 2x + 6 = 4 va 2x + 6 = −4 ga ajraladi, bundan x = −1 va x = −5. Burchak grafigi shu ikki nuqtadan tashqarida y = 4 chizig'idan baland ko'tariladi. Javob: (−∞; −5) ∪ (−1; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-va-gorizontal-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#c2f00ae3"
+    },
+    {
+      "q": "Sardorning maqsadi — har kuni 8000 qadam yurish. Uning chetlanishi |q − 8000| ko'rinishida o'lchanadi va 500 dan oshmasa, kun normasi bajarilgan hisoblanadi. Norma bajarilgan qadamlar oralig'ini toping.",
+      "v": [
+        "q ≤ 7500 yoki q ≥ 8500",
+        "7500 < q < 8500",
+        "7500 ≤ q ≤ 8500",
+        "8000 ≤ q ≤ 8500"
+      ],
+      "t": 2,
+      "izoh": "|q − 8000| ≤ 500 tengsizligining grafigi — uchi (8000; 0) da bo'lgan burchak, u y = 500 chizig'idan pastda qolishi kerak. Kesishish nuqtalari q = 8000 − 500 = 7500 va q = 8000 + 500 = 8500. Tenglik ruxsat etilgani uchun chegaralar ham normaga kiradi. Javob: 7500 ≤ q ≤ 8500.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-va-gorizontal-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#dca101c7"
+    },
+    {
+      "q": "y = |x| + 2 grafigi va y = 6 to'g'ri chizig'i berilgan. |x| + 2 ≤ 6 tengsizlikning yechimi qaysi kesma bilan ifodalanadi?",
+      "v": [
+        "[−4; 4]",
+        "[−6; 6]",
+        "(−4; 4)",
+        "[−8; 8]"
+      ],
+      "t": 0,
+      "izoh": "Tengsizlikni |x| ≤ 6 − 2 = 4 ko'rinishga keltiramiz. Uchi (0; 2) nuqtada bo'lgan burchak y = 6 chizig'ini x = −4 va x = 4 nuqtalarda kesadi. Shu kesmada grafik chiziqdan past yoki unga teng bo'ladi. Javob: [−4; 4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-va-gorizontal-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#c3af0b26"
+    },
+    {
+      "q": "y = |x| va y = x + 4 grafiklari bitta chizmada tasvirlangan. Modul grafigi to'g'ri chiziqdan pastda bo'lgan x lar to'plamini toping.",
+      "v": [
+        "(−2; 2)",
+        "(−4; +∞)",
+        "(−∞; −2)",
+        "(−2; +∞)"
+      ],
+      "t": 3,
+      "izoh": "x ≥ 0 sohada |x| = x va x < x + 4 tengsizlik doim bajariladi, demak butun o'ng yarim o'q yechim. x < 0 sohada |x| = −x va −x < x + 4 dan 2x > −4, ya'ni x > −2 chiqadi. Ikki qismni birlashtirsak, grafik x = −2 dan o'ngda chiziq ostida qoladi. Javob: (−2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-va-qiya-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#609c47d6"
+    },
+    {
+      "q": "y = |x − 2| va y = x grafiklari chizilgan. Burchak grafigi to'g'ri chiziqdan yuqorida bo'lgan x lar oralig'ini grafikdan o'qing.",
+      "v": [
+        "(1; +∞)",
+        "(−∞; 2)",
+        "(−∞; 1)",
+        "(−∞; 1]"
+      ],
+      "t": 2,
+      "izoh": "x ≥ 2 bo'lganda |x − 2| = x − 2 bo'ladi va x − 2 > x tengsizlik hech qachon bajarilmaydi. x < 2 bo'lganda |x − 2| = 2 − x va 2 − x > x dan 2x < 2, ya'ni x < 1 hosil bo'ladi. Grafiklar (1; 1) nuqtada kesishadi, undan chapda burchak yuqorida turadi. Javob: (−∞; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-va-qiya-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#75c2f6d3"
+    },
+    {
+      "q": "y = |x + 1| grafigi y = 2x − 1 to'g'ri chizig'idan past bo'lmagan barcha x larni grafik usulda toping.",
+      "v": [
+        "[−1; 2]",
+        "(−∞; 2]",
+        "(−∞; 2)",
+        "[2; +∞)"
+      ],
+      "t": 1,
+      "izoh": "x ≥ −1 sohada x + 1 ≥ 2x − 1 dan x ≤ 2 chiqadi, ya'ni bu sohada −1 ≤ x ≤ 2. x < −1 sohada −x − 1 ≥ 2x − 1 dan 3x ≤ 0, ya'ni x ≤ 0 chiqadi va butun soha shartni qanoatlantiradi. Ikki qismni birlashtirganda yechim (−∞; 2] bo'ladi. Javob: (−∞; 2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-va-qiya-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#6c18fd8e"
+    },
+    {
+      "q": "Yetkazib berish xizmatining ombori yo'lning 20-kilometrida joylashgan, manzilga yetkazish narxi y = |t − 20| + 60 ming so'm, bu yerda t — manzilning shu yo'ldagi kilometr belgisi. Raqobatchi esa istalgan manzilga 70 ming so'mdan yetkazadi. Birinchi xizmat arzon bo'lgan kilometr belgilari oralig'ini grafikdan toping.",
+      "v": [
+        "10 < t < 30",
+        "t < 10 yoki t > 30",
+        "10 ≤ t ≤ 30",
+        "0 < t < 20"
+      ],
+      "t": 0,
+      "izoh": "Shartni |t − 20| + 60 < 70 deb yozamiz, bundan |t − 20| < 10 hosil bo'ladi. Uchi (20; 60) nuqtada bo'lgan burchak grafigi y = 70 chizig'ini t = 10 va t = 30 nuqtalarda kesadi. Shu oraliqda birinchi xizmatning grafigi pastda, ya'ni narx arzonroq. Javob: 10 < t < 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-va-qiya-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#9325f9b5"
+    },
+    {
+      "q": "y = 6/x giperbolasi va y = 2 to'g'ri chizig'i bitta chizmada tasvirlangan. Giperbola chiziqdan yuqorida joylashgan x lar to'plamini grafikdan aniqlang.",
+      "v": [
+        "(3; +∞)",
+        "(0; 3)",
+        "(−∞; 3)",
+        "(−∞; 0) ∪ (0; 3)"
+      ],
+      "t": 1,
+      "izoh": "Giperbolaning chap shoxi butunlay manfiy qiymatlar beradi, shuning uchun u hech qachon y = 2 chizig'idan yuqori bo'lolmaydi. O'ng shoxda 6/x = 2 dan x = 3 kesishish nuqtasi chiqadi va shox kamayuvchi bo'lgani uchun undan chapda chiziqdan yuqorida turadi. Nol nuqta aniqlanish sohasiga kirmaydi. Javob: (0; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-va-gorizontal-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#81e85cb5"
+    },
+    {
+      "q": "y = 4/x giperbolasi va y = −1 to'g'ri chizig'i chizilgan. 4/x < −1 tengsizlikning yechimi grafikda qaysi oraliqqa mos keladi?",
+      "v": [
+        "(−∞; −4)",
+        "(0; 4)",
+        "(−4; 0)",
+        "(−4; 0]"
+      ],
+      "t": 2,
+      "izoh": "Manfiy qiymatlarni faqat giperbolaning chap shoxi beradi, demak x < 0 sohani qaraymiz. 4/x = −1 dan x = −4 kesishish nuqtasi topiladi. Chap shoxda x = −4 dan o'ngga borgan sari qiymatlar tez pasayadi, shuning uchun −4 < x < 0 oraliqda grafik chiziqdan past. Javob: (−4; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "giperbola-va-gorizontal-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#3f45400f"
+    },
+    {
+      "q": "Zavod bir kunda 720 ta g'ishtni x ta yuk mashinasiga taqsimlaydi, ya'ni har mashinaga o'rtacha y = 720/x ta g'isht tushadi. Har bir mashinaga o'rtacha 90 tadan ko'p g'isht tushishi uchun mashinalar soni qanday bo'lishi kerak?",
+      "v": [
+        "1 ≤ x ≤ 7",
+        "1 ≤ x ≤ 8",
+        "x ≥ 8",
+        "x ≥ 9"
+      ],
+      "t": 0,
+      "izoh": "y = 720/x giperbolasi kamayuvchi, u y = 90 chizig'i bilan 720/x = 90 shartda, ya'ni x = 8 da kesishadi. Kesishishdan chapda, x < 8 bo'lganda giperbola chiziqdan yuqorida turadi. Mashinalar soni natural bo'lgani uchun x faqat 1 dan 7 gacha qiymat oladi. Javob: 1 ≤ x ≤ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-va-gorizontal-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#078e20d0"
+    },
+    {
+      "q": "y = 1/x giperbolasi va y = x to'g'ri chizig'i chizilgan. 1/x > x tengsizlikning yechimi grafikdan qanday o'qiladi?",
+      "v": [
+        "(0; 1)",
+        "(−1; 0) ∪ (1; +∞)",
+        "(−1; 1)",
+        "(−∞; −1) ∪ (0; 1)"
+      ],
+      "t": 3,
+      "izoh": "O'ng yarim tekislikda grafiklar (1; 1) nuqtada kesishadi va undan chapda giperbola bissektrisadan yuqorida yotadi, ya'ni 0 < x < 1. Chap yarim tekislikda ikkala grafik manfiy bo'lib, (−1; −1) nuqtada kesishadi; undan chapda giperbola yana yuqorida bo'ladi. Nol nuqtada funksiya aniqlanmaydi. Javob: (−∞; −1) ∪ (0; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "giperbola-va-gorizontal-chiziq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#e153d642"
+    },
+    {
+      "q": "y = (x − 2)/(x + 3) funksiyasining grafigi berilgan. Funksiya qiymati manfiy bo'lgan x lar oralig'ini grafik yordamida aniqlang.",
+      "v": [
+        "(−3; 2)",
+        "(−2; 3)",
+        "[−3; 2]",
+        "(−∞; −3) ∪ (2; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Surat x = 2 da, maxraj esa x = −3 da nolga aylanadi. Shu ikki nuqta sonlar o'qini uch qismga ajratadi va belgi har nuqtada almashadi. Chetki qismlarda kasr musbat, o'rtada manfiy bo'ladi. Qat'iy tengsizlik va maxrajning noli sababli chegaralar kirmaydi. Javob: (−3; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-funksiya-belgisi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#737b9741"
+    },
+    {
+      "q": "(x + 5)/(x − 1) ≥ 0 tengsizlikning yechimini kasr funksiya grafigi va belgilar yordamida toping.",
+      "v": [
+        "[−5; 1)",
+        "(−∞; −5] ∪ (1; +∞)",
+        "(−∞; −5) ∪ (1; +∞)",
+        "(−∞; −5] ∪ [1; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Suratning noli x = −5, maxrajning noli x = 1. Ikki nuqta o'qni uch qismga bo'ladi, chetki qismlarda kasr musbat. Nolga tenglik ruxsat etilgani uchun x = −5 yechimga kiradi. x = 1 da esa maxraj nolga aylanadi va funksiya aniqlanmaydi, shuning uchun u chiqarib tashlanadi. Javob: (−∞; −5] ∪ (1; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-funksiya-belgisi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#b253f8a3"
+    },
+    {
+      "q": "y = (4 − x)/(x + 2) funksiyasining grafigi OX o'qidan yuqorida bo'lgan x lar to'plamini ko'rsating.",
+      "v": [
+        "(−4; 2)",
+        "(−∞; −2) ∪ (4; +∞)",
+        "(−2; 4)",
+        "[−2; 4]"
+      ],
+      "t": 2,
+      "izoh": "Kasrning nollari x = 4 va x = −2. Surat oldida minus turgani uchun belgilar odatdagiga qarama-qarshi joylashadi. Buni x = 0 nuqtada tekshiramiz: 4 : 2 = 2, ya'ni musbat, demak o'rta oraliq yechim. Chegaralar qat'iy tengsizlikka kirmaydi. Javob: (−2; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-funksiya-belgisi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#93293b9d"
+    },
+    {
+      "q": "Do'kon bir kunda x ta mahsulot sotganda foydasi y = (x − 40)/(x + 10) million so'm bo'ladi. Foyda musbat bo'lishi uchun kunlik savdo qancha bo'lishi kerakligini grafikdan aniqlang.",
+      "v": [
+        "x ≥ 40",
+        "0 ≤ x < 40",
+        "x > 50",
+        "x > 40"
+      ],
+      "t": 3,
+      "izoh": "Kasrning nollari x = 40 va x = −10, lekin sotilgan mahsulot soni manfiy bo'lolmaydi. x ≥ 0 sohada maxraj doim musbat, demak kasrning belgisi faqat suratga bog'liq. Surat x > 40 bo'lganda musbat bo'ladi, x = 40 da esa foyda nolga teng. Javob: x > 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-funksiya-belgisi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#5602868f"
+    },
+    {
+      "q": "y = 2x + 1 va y = 11 chiziqlari bitta chizmada berilgan. 2x + 1 < 11 tengsizlikni qanoatlantiruvchi nechta natural son bor?",
+      "v": [
+        "4 ta",
+        "5 ta",
+        "6 ta",
+        "3 ta"
+      ],
+      "t": 0,
+      "izoh": "Chiziqlar 2x + 1 = 11 shartda, ya'ni x = 5 da kesishadi. Kesishishdan chapda qiya chiziq gorizontal chiziqdan pastda, demak yechim x < 5. Natural sonlar 1, 2, 3 va 4 bo'lib, ularning soni to'rtta. x = 5 tenglik bergani uchun sanalmaydi. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-yechim-soni-chiziqli",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#eea78331"
+    },
+    {
+      "q": "−3 ≤ x + 2 < 6 qo'sh tengsizlik sonlar o'qida kesma ko'rinishida tasvirlangan. Bu kesmaga nechta butun son tushadi?",
+      "v": [
+        "10 ta",
+        "9 ta",
+        "8 ta",
+        "11 ta"
+      ],
+      "t": 1,
+      "izoh": "Tengsizlikning har uchala qismidan 2 ni ayiramiz va −5 ≤ x < 4 hosil bo'ladi. Sonlar o'qida chap uch bo'yalgan, o'ng uch esa bo'sh doiracha bilan belgilanadi. Butun sonlar −5 dan 3 gacha: 3 − (−5) + 1 = 9 ta. Javob: 9 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-yechim-soni-chiziqli",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#25944ab2"
+    },
+    {
+      "q": "Avtobusda 45 ta o'rindiq bor, safar esa kamida 28 yo'lovchi yig'ilsa amalga oshadi. Yo'lovchilar soni uchun 28 ≤ n ≤ 45 tengsizlik kesma bilan tasvirlangan. Nechta turli yo'lovchi soni mumkin?",
+      "v": [
+        "17 ta",
+        "16 ta",
+        "18 ta",
+        "19 ta"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlik qat'iy emas, shuning uchun kesmaning ikkala uchi ham bo'yalgan va sanoqqa kiradi. Chekkalar orasidagi farq 45 − 28 = 17 ta oraliqni beradi. Nuqtalar soni oraliqlar sonidan bitta ko'p, ya'ni 18 ta. Javob: 18 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechim-soni-chiziqli",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#2559673b"
+    },
+    {
+      "q": "y = 5 − x va y = 2x − 4 chiziqlari kesishgan. 5 − x ≥ 2x − 4 va x > −2 shartlarini bir vaqtda qanoatlantiruvchi nechta butun son bor?",
+      "v": [
+        "6 ta",
+        "4 ta",
+        "7 ta",
+        "5 ta"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tengsizlikdan 5 − x ≥ 2x − 4, ya'ni 3x ≤ 9 va x ≤ 3 chiqadi. Ikkinchi shart x > −2 bo'lgani uchun umumiy oraliq −2 < x ≤ 3 ko'rinishida bo'ladi. Bu oraliqdagi butun sonlar −1, 0, 1, 2 va 3 — jami beshta. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechim-soni-chiziqli",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#a381ea14"
+    },
+    {
+      "q": "y = x² parabolasi va y = 49 to'g'ri chizig'i kesishgan. Parabola chiziqdan pastda joylashgan qismiga nechta butun abssissa to'g'ri keladi?",
+      "v": [
+        "13 ta",
+        "15 ta",
+        "14 ta",
+        "12 ta"
+      ],
+      "t": 0,
+      "izoh": "Kesishish nuqtalari x² = 49 tenglamadan x = −7 va x = 7. Parabola shu ikki nuqta orasida chiziqdan pastda yotadi, ya'ni −7 < x < 7. Qat'iy tengsizlikda chegaralar sanalmaydi, butun sonlar −6 dan 6 gacha bo'ladi: 6 + 6 + 1 = 13 ta. Javob: 13 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-yechim-soni-parabola",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#d974f1f4"
+    },
+    {
+      "q": "y = x² − 4x parabolasi va y = 5 gorizontal chizig'i chizilgan. x² − 4x ≤ 5 tengsizlikni qanoatlantiruvchi butun sonlar sonini toping.",
+      "v": [
+        "5 ta",
+        "7 ta",
+        "6 ta",
+        "8 ta"
+      ],
+      "t": 1,
+      "izoh": "x² − 4x = 5 dan x² − 4x − 5 = 0 hosil bo'ladi, ildizlari −1 va 5. Parabola ildizlar orasida chiziqdan past yoki unga teng bo'ladi. Tengsizlik qat'iy emas, shuning uchun ildizlarning o'zi ham sanaladi: −1, 0, 1, 2, 3, 4, 5. Javob: 7 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechim-soni-parabola",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#0c472722"
+    },
+    {
+      "q": "Fermer bug'doy hosilini y = −x² + 16x − 28 tonna deb bashorat qiladi, bu yerda x — ekilgan gektarlar soni. Hosil musbat chiqadigan nechta butun gektar qiymati mavjud?",
+      "v": [
+        "13 ta",
+        "12 ta",
+        "11 ta",
+        "10 ta"
+      ],
+      "t": 2,
+      "izoh": "−x² + 16x − 28 > 0 ni x² − 16x + 28 < 0 ko'rinishga keltiramiz. Diskriminant D = 256 − 112 = 144, ildizlar (16 − 12) : 2 = 2 va (16 + 12) : 2 = 14. Parabola ildizlar orasida noldan kichik, demak 2 < x < 14. Butun gektarlar 3 dan 13 gacha, ya'ni 11 ta. Javob: 11 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-yechim-soni-parabola",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#b7b869cb"
+    },
+    {
+      "q": "y = x² − 6x + 8 parabolasining OX o'qidan pastda yotgan qismida nechta butun abssissa joylashgan?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "0 ta",
+        "1 ta"
+      ],
+      "t": 3,
+      "izoh": "Parabolaning nollari x² − 6x + 8 = 0 tenglamadan x = 2 va x = 4. Tarmoqlari yuqoriga qaragan parabola faqat shu ildizlar orasida OX o'qidan pastda bo'ladi. Qat'iy shart bo'lgani uchun 2 va 4 hisobga olinmaydi, oraliqda esa faqat bitta butun son — 3 qoladi. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-yechim-soni-parabola",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#1bed90c8"
+    },
+    {
+      "q": "f(x) funksiyaning grafigi OX o'qini faqat x = −1 va x = 4 nuqtalarda kesadi. Grafik shu ikki nuqta orasida o'qdan yuqorida, tashqarisida esa pastda yotadi. f(x) ≥ 0 tengsizlikning yechimini yozing.",
+      "v": [
+        "[−1; 4]",
+        "(−1; 4)",
+        "(−∞; −1] ∪ [4; +∞)",
+        "[−4; 1]"
+      ],
+      "t": 0,
+      "izoh": "Grafikning OX o'qidan yuqori qismi −1 va 4 nuqtalar orasida joylashgan. Tengsizlikda nolga tenglik ham ruxsat etilgani uchun kesishish nuqtalari yechimga qo'shiladi. Qolgan ikki qismda grafik o'q ostida bo'lib, shart bajarilmaydi. Javob: [−1; 4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafikdan-belgi-jadvali",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#f79aae12"
+    },
+    {
+      "q": "Uzluksiz f(x) funksiyaning grafigi OX o'qini x = −5, x = 0 va x = 3 nuqtalarda kesib o'tadi hamda x > 3 da o'qdan yuqorida yotadi. f(x) < 0 tengsizlikning yechimini toping.",
+      "v": [
+        "(−5; 0) ∪ (3; +∞)",
+        "(−∞; −5) ∪ (0; 3)",
+        "(−∞; −5] ∪ [0; 3]",
+        "(0; 3)"
+      ],
+      "t": 1,
+      "izoh": "Har bir kesishish nuqtasida grafik o'qni kesib o'tadi, demak belgi almashadi. Eng o'ng oraliqda belgi musbat, undan chapdagi (0; 3) oraliqda manfiy, (−5; 0) da yana musbat, x < −5 da esa manfiy bo'ladi. Manfiy oraliqlarni birlashtiramiz va chegaralarni qat'iy shart tufayli chiqaramiz. Javob: (−∞; −5) ∪ (0; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafikdan-belgi-jadvali",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#43f29904"
+    },
+    {
+      "q": "Grafikdan ko'rinishicha, g(x) funksiya (−∞; 2) oralig'ida musbat, x = 2 da OX o'qiga urinadi va (2; +∞) da yana musbat. g(x) ≤ 0 tengsizlikning yechim to'plamini ko'rsating.",
+      "v": [
+        "∅",
+        "(−∞; 2]",
+        "{2}",
+        "[2; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Grafik hech qayerda OX o'qidan pastga tushmaydi, demak funksiya manfiy qiymat qabul qilmaydi. Shuning uchun tengsizlik faqat tenglik hisobiga bajarilishi mumkin. Tenglik esa yagona urinish nuqtasida, x = 2 da o'rinli. Javob: {2}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafikdan-belgi-jadvali",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#54e8b70d"
+    },
+    {
+      "q": "Muzlatgich harorati grafigi soat 0 dan 12 gacha chizilgan. Grafik y = −2 chizig'ini faqat uchinchi va to'qqizinchi soatlarda kesib o'tadi, ular orasida esa chiziqdan pastda yotadi. Harorat −2 °C dan yuqori bo'lgan vaqtni toping.",
+      "v": [
+        "(3; 9)",
+        "[0; 3] ∪ [9; 12]",
+        "(0; 3) ∪ (9; 12)",
+        "[0; 3) ∪ (9; 12]"
+      ],
+      "t": 3,
+      "izoh": "Grafik y = −2 chizig'ini uchinchi va to'qqizinchi soatlarda kesadi, ular orasida esa pastda, demak harorat u yerda −2 °C dan past. Kuzatuv boshi va oxiri kuzatuvga kiradi, shuning uchun chetki nuqtalar yopiq olinadi. Kesishish paytlarida harorat aynan −2 °C bo'lgani uchun ular yechimga kirmaydi. Javob: [0; 3) ∪ (9; 12].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikdan-belgi-jadvali",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#b7b513b4"
+    },
+    {
+      "q": "y = x² va y = 2x² − 9 parabolalari bitta koordinata tekisligida chizilgan. Birinchi parabola ikkinchisidan yuqorida bo'lgan x lar to'plamini toping.",
+      "v": [
+        "(−3; 3)",
+        "(−∞; −3) ∪ (3; +∞)",
+        "[−3; 3]",
+        "(0; 3)"
+      ],
+      "t": 0,
+      "izoh": "x² > 2x² − 9 tengsizlikni soddalashtiramiz: 0 > x² − 9, ya'ni x² < 9. Parabolalar x = −3 va x = 3 nuqtalarda kesishadi. Shu ikki nuqta orasida tor parabola yuqorida qoladi, chetlarda esa qiymatlar tenglashadi. Javob: (−3; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-parabola-joylashuvi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#1ac2217b"
+    },
+    {
+      "q": "y = x² + 2x va y = 3x² − 6x parabolalari chizmada berilgan. Birinchi parabola ikkinchisidan past bo'lmagan x lar oralig'ini aniqlang.",
+      "v": [
+        "(0; 4)",
+        "[0; 4]",
+        "(−∞; 0] ∪ [4; +∞)",
+        "[0; 8]"
+      ],
+      "t": 1,
+      "izoh": "x² + 2x ≥ 3x² − 6x tengsizlikning hamma hadini bir tomonga o'tkazamiz: 2x² − 8x ≤ 0. Ko'paytuvchilarga ajratsak 2x(x − 4) ≤ 0, ildizlar 0 va 4. Tarmoqlari yuqoriga qaragan parabola faqat ildizlar orasida musbat emas. Tenglik ruxsat etilgani uchun chegaralar kiradi. Javob: [0; 4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-parabola-joylashuvi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#11280069"
+    },
+    {
+      "q": "y = (x − 1)² va y = (x + 3)² parabolalari chizilgan. Birinchi parabola ikkinchisidan pastda joylashgan x lar to'plamini grafikdan o'qing.",
+      "v": [
+        "(−∞; −1)",
+        "(1; +∞)",
+        "(−1; +∞)",
+        "(−3; 1)"
+      ],
+      "t": 2,
+      "izoh": "Ikkala parabolaning shakli bir xil, faqat uchlari (1; 0) va (−3; 0) nuqtalarda joylashgan. Tengsizlikni yoysak x² − 2x + 1 < x² + 6x + 9 bo'ladi, kvadratlar qisqaradi va 8x > −8, ya'ni x > −1 chiqadi. Bu son — uchlar orasidagi o'rta nuqta, undan o'ngda birinchi parabola pastroq. Javob: (−1; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-parabola-joylashuvi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#0c06c20c"
+    },
+    {
+      "q": "Ikki fermer xo'jaligining kunlik xarajati million so'mda y = x² + 4x + 12 va y = 2x² − 5x + 12 formulalari bilan beriladi, bu yerda x — yig'ilgan tonna. Birinchi xo'jalikning xarajati kamroq bo'lgan tonnalar oralig'ini toping.",
+      "v": [
+        "0 < x < 9",
+        "x > 4,5",
+        "x ≥ 9",
+        "x > 9"
+      ],
+      "t": 3,
+      "izoh": "x² + 4x + 12 < 2x² − 5x + 12 tengsizlikning hadlarini bir tomonga yig'amiz: x² − 9x > 0, ya'ni x(x − 9) > 0. Ildizlar 0 va 9, tarmoqlari yuqoriga qaragan parabola ildizlardan tashqarida musbat. Yig'ilgan tonna musbat bo'lgani uchun faqat o'ng qism ma'noga ega. Javob: x > 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-parabola-joylashuvi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#649fb8f9"
+    },
+    {
+      "q": "Grafik usulda yechilgan tengsizlikning javobi (−∞; −2) ∪ (5; +∞) bo'lib chiqdi. Quyidagilardan qaysi tengsizlik aynan shunday yechim to'plamiga ega?",
+      "v": [
+        "(x + 2)(x − 5) > 0",
+        "(x + 2)(x − 5) < 0",
+        "(x − 2)(x + 5) > 0",
+        "(x + 2)(x − 5) ≥ 0"
+      ],
+      "t": 0,
+      "izoh": "Yechim ikki tashqi nurdan iborat, demak parabola tarmoqlari yuqoriga qaragan va ildizlardan tashqarida musbat qiymat oladi. Ildizlar −2 va 5 bo'lishi uchun ko'paytuvchilar (x + 2) va (x − 5) ko'rinishida bo'ladi. Chegaralar yechimga kirmagani uchun tengsizlik qat'iy. Javob: (x + 2)(x − 5) > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimdan-tengsizlikni-tiklash",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#4abae03c"
+    },
+    {
+      "q": "Sonlar o'qida [−3; 4] kesma bo'yalgan va uning ikkala uchi to'ldirilgan doiracha bilan belgilangan. Shu tasvirga qaysi tengsizlik mos keladi?",
+      "v": [
+        "(x + 3)(x − 4) ≥ 0",
+        "(x + 3)(x − 4) ≤ 0",
+        "(x − 3)(x + 4) ≤ 0",
+        "(x + 3)(x − 4) < 0"
+      ],
+      "t": 1,
+      "izoh": "Bo'yalgan qism ildizlar orasida joylashgan, demak kvadrat uchhad u yerda musbat emas. Tarmoqlari yuqoriga qaragan parabola faqat ildizlari orasida noldan kichik bo'ladi. Ildizlar −3 va 4 bo'lishi uchun ko'paytuvchilar (x + 3) va (x − 4) olinadi. To'ldirilgan doiracha tenglikni ham qo'shishni bildiradi. Javob: (x + 3)(x − 4) ≤ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimdan-tengsizlikni-tiklash",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#3a15f960"
+    },
+    {
+      "q": "Modul grafigi yordamida yechilgan tengsizlikning javobi [1; 7] kesma bo'ldi. Qaysi tengsizlik shunday javob beradi?",
+      "v": [
+        "|x − 4| ≥ 3",
+        "|x + 4| ≤ 3",
+        "|x − 4| ≤ 3",
+        "|x − 3| ≤ 4"
+      ],
+      "t": 2,
+      "izoh": "Kesmaning o'rtasi (1 + 7) : 2 = 4 ga teng, bu — burchak uchining abssissasi. Uchdan chetgacha bo'lgan masofa 7 − 4 = 3, bu — o'ng tomondagi son. Kesma yopiq bo'lgani uchun tengsizlik belgisi ≤ bo'ladi. Javob: |x − 4| ≤ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimdan-tengsizlikni-tiklash",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#620e674d"
+    },
+    {
+      "q": "Giperbola grafigi yordamida yechilgan tengsizlikning javobi (0; +∞) nur bo'lib chiqdi. Qaysi tengsizlik shu javobga mos keladi?",
+      "v": [
+        "1/x < 0",
+        "1/x > 1",
+        "1/x < 1",
+        "1/x > 0"
+      ],
+      "t": 3,
+      "izoh": "Giperbolaning o'ng shoxi butunlay OX o'qidan yuqorida, chap shoxi esa o'q ostida joylashgan. Demak kasr faqat x > 0 bo'lganda musbat qiymat oladi. Nol nuqtada funksiya aniqlanmaydi, shuning uchun oraliqning chap uchi ochiq qoladi. Javob: 1/x > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimdan-tengsizlikni-tiklash",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#aed3da8e"
+    },
+    {
+      "q": "y = √x va y = 3 grafiklari bitta chizmada tasvirlangan. Ildiz grafigi to'g'ri chiziqdan pastda bo'lgan x lar to'plamini toping.",
+      "v": [
+        "[0; 9)",
+        "(−∞; 9)",
+        "[0; 3)",
+        "[0; 9]"
+      ],
+      "t": 0,
+      "izoh": "Ildiz funksiyasi faqat x ≥ 0 da aniqlangan, shuning uchun grafik koordinata boshidan boshlanadi. √x = 3 tenglamadan x = 9 kesishish nuqtasi topiladi. O'suvchi grafik shu nuqtagacha chiziqdan pastda yotadi. Aniqlanish sohasining chap uchi kiradi, o'ng chegara esa kirmaydi. Javob: [0; 9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-funksiyasi-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#d4d6fbfb"
+    },
+    {
+      "q": "y = √x grafigi va y = x bissektrisasi chizilgan. √x > x tengsizlikning yechimini grafikdan o'qing.",
+      "v": [
+        "[0; 1]",
+        "(0; 1)",
+        "(1; +∞)",
+        "(0; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Ikkala grafik (0; 0) va (1; 1) nuqtalarda kesishadi. Shu ikki nuqta orasida ildiz grafigi bissektrisadan yuqorida yotadi, chunki noldan bir gacha bo'lgan sonning ildizi sonning o'zidan katta. Kesishish nuqtalarida qiymatlar tenglashgani uchun ular yechimga kirmaydi. Javob: (0; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-funksiyasi-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#328099b7"
+    },
+    {
+      "q": "Kvadrat shaklidagi yer maydonining tomoni a = √S metrga teng, bu yerda S — maydon yuzasi. Tomon uzunligi 12 m dan oshmasligi uchun yuza qanday qiymatlar olishi kerak?",
+      "v": [
+        "0 ≤ S ≤ 12",
+        "S ≥ 144",
+        "0 ≤ S ≤ 144",
+        "0 ≤ S ≤ 24"
+      ],
+      "t": 2,
+      "izoh": "Shart √S ≤ 12 ko'rinishida yoziladi, ya'ni ildiz grafigi y = 12 chizig'idan past bo'lishi kerak. Kesishish nuqtasi S = 144, chunki √144 = 12. O'suvchi grafik shu nuqtagacha chiziq ostida qoladi, yuza esa manfiy bo'lolmaydi. Javob: 0 ≤ S ≤ 144.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-funksiyasi-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#0f0dff82"
+    },
+    {
+      "q": "y = √(x + 4) grafigi y = 2 to'g'ri chizig'idan yuqorida bo'lgan x lar to'plamini grafik yordamida toping.",
+      "v": [
+        "[−4; 0)",
+        "(−4; +∞)",
+        "[0; +∞)",
+        "(0; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Funksiya x ≥ −4 sohada aniqlangan va uning grafigi (−4; 0) nuqtadan boshlanib sekin o'sadi. √(x + 4) = 2 dan x + 4 = 4, ya'ni x = 0 kesishish nuqtasi chiqadi. O'suvchi grafik shu nuqtadan o'ngda chiziqdan yuqorida bo'ladi, tenglik nuqtasi esa kirmaydi. Javob: (0; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-funksiyasi-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#2f113cf2"
+    },
+    {
+      "q": "y = 2^x ko'rsatkichli funksiya grafigi va y = 8 to'g'ri chizig'i chizilgan. Grafik chiziqdan pastda bo'lgan x lar to'plamini aniqlang.",
+      "v": [
+        "(−∞; 3)",
+        "(3; +∞)",
+        "(−∞; 3]",
+        "(0; 3)"
+      ],
+      "t": 0,
+      "izoh": "Asos birdan katta bo'lgani uchun grafik o'suvchi. 2^x = 8 tenglamadan x = 3 kesishish nuqtasi topiladi. O'suvchi grafik kesishishdan chapda chiziq ostida qoladi. Qat'iy tengsizlik bo'lgani uchun x = 3 kirmaydi, aniqlanish sohasi esa butun sonlar o'qi. Javob: (−∞; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-funksiya-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#8b2f70de"
+    },
+    {
+      "q": "y = (1/2)^x grafigi va y = 4 chizig'i bitta chizmada berilgan. (1/2)^x > 4 tengsizlikning yechimini grafikdan o'qing.",
+      "v": [
+        "(−2; +∞)",
+        "(−∞; −2)",
+        "(−∞; 2)",
+        "(−∞; −2]"
+      ],
+      "t": 1,
+      "izoh": "Asos birdan kichik bo'lgani uchun grafik kamayuvchi. (1/2)^x = 4 tenglamani 2^(−x) = 2² ko'rinishiga keltirsak x = −2 chiqadi. Kamayuvchi grafik kesishish nuqtasidan chapda chiziqdan yuqorida yotadi. Javob: (−∞; −2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-funksiya-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#288c976a"
+    },
+    {
+      "q": "Bakteriyalar soni har soatda ikki barobar ortadi va N = 500·2^t formula bilan hisoblanadi, bu yerda t — soat. Bakteriyalar soni 16000 dan oshadigan vaqtni grafikdan aniqlang.",
+      "v": [
+        "t > 4",
+        "t ≥ 5",
+        "t > 5",
+        "t > 32"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlikning ikkala tomonini 500 ga bo'lamiz va 2^t > 32 hosil qilamiz. O'suvchi ko'rsatkichli grafik y = 32 chizig'ini 2^t = 32, ya'ni t = 5 nuqtada kesadi. Kesishishdan o'ngda grafik chiziqdan yuqorida bo'ladi, demak beshinchi soatdan keyin son 16000 dan oshadi. Javob: t > 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-funksiya-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#e607255f"
+    },
+    {
+      "q": "y = 3^x va y = 9^x grafiklari bitta chizmada tasvirlangan. 3^x > 9^x tengsizlikning yechimini toping.",
+      "v": [
+        "(0; +∞)",
+        "(−∞; 0]",
+        "(−∞; 1)",
+        "(−∞; 0)"
+      ],
+      "t": 3,
+      "izoh": "9^x ni 3^(2x) ko'rinishida yozsak, ikkala funksiyaning asosi tenglashadi. Asos birdan katta bo'lgani uchun katta ko'rsatkich katta qiymat beradi, demak shart x > 2x ga keladi va bundan x < 0. Grafiklar (0; 1) nuqtada kesishadi, undan chapda y = 3^x yuqorida turadi. Javob: (−∞; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-funksiya-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#7db4b9c9"
+    },
+    {
+      "q": "y = log₂x logarifmik funksiya grafigi va y = 3 to'g'ri chizig'i chizilgan. Logarifm grafigi chiziqdan yuqorida bo'lgan x lar to'plamini toping.",
+      "v": [
+        "(8; +∞)",
+        "(0; 8)",
+        "(3; +∞)",
+        "[8; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Logarifmik funksiya faqat musbat x larda aniqlangan va asos birdan katta bo'lgani uchun o'suvchi. log₂x = 3 dan x = 8 kesishish nuqtasi topiladi. O'suvchi grafik shu nuqtadan o'ngda chiziqdan baland bo'ladi. Javob: (8; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-funksiya-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#660890fa"
+    },
+    {
+      "q": "y = log₃x grafigi y = 1 to'g'ri chizig'idan yuqori bo'lmagan x lar to'plamini grafik yordamida aniqlang.",
+      "v": [
+        "(−∞; 3]",
+        "(0; 3]",
+        "[0; 3]",
+        "(0; 3)"
+      ],
+      "t": 1,
+      "izoh": "Logarifm faqat musbat sonlar uchun aniqlangani sababli chap chegara nol ochiq qoladi. log₃x = 1 dan x = 3 kesishish nuqtasi chiqadi. O'suvchi grafik shu nuqtagacha chiziqdan past yoki unga teng bo'ladi. Tenglik ruxsat etilgani uchun o'ng chegara yopiq. Javob: (0; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-funksiya-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#3a3f3f00"
+    },
+    {
+      "q": "Ovoz kuchi L = 10·lg t desibel bilan o'lchanadi, bu yerda t — ovoz intensivligining nisbati. Xonadagi ovoz 60 desibeldan oshmasligi uchun t qanday qiymatlar olishi kerak?",
+      "v": [
+        "0 < t ≤ 60",
+        "t ≥ 1000000",
+        "0 < t ≤ 1000000",
+        "0 < t ≤ 100000"
+      ],
+      "t": 2,
+      "izoh": "Shartni 10·lg t ≤ 60 deb yozib, ikkala tomonni 10 ga bo'lamiz: lg t ≤ 6. Logarifm grafigi y = 6 chizig'ini lg t = 6, ya'ni t = 1000000 nuqtada kesadi. O'suvchi grafik shu nuqtagacha chiziqdan pastda qoladi, logarifm esa faqat musbat t larda aniqlangan. Javob: 0 < t ≤ 1000000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-funksiya-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#cd0c1165"
+    },
+    {
+      "q": "y = lg x va y = 2 − lg x grafiklari bitta chizmada berilgan. lg x > 2 − lg x tengsizlikning yechimini grafikdan o'qing.",
+      "v": [
+        "(0; 10)",
+        "(1; +∞)",
+        "(100; +∞)",
+        "(10; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Logarifmli hadlarni bir tomonga yig'amiz: 2·lg x > 2, bundan lg x > 1. O'suvchi va kamayuvchi grafiklar lg x = 1, ya'ni x = 10 nuqtada kesishadi. Undan o'ngda o'suvchi grafik yuqorida qoladi, chap tomonda esa pastda. Javob: (10; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-funksiya-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#e5b6db7d"
+    },
+    {
+      "q": "Internet provayderining birinchi tarifi oyiga y = 40 + 3x ming so'm, ikkinchisi esa y = 70 + x ming so'm turadi, bu yerda x — ortiqcha sarflangan gigabayt. Birinchi tarif arzon bo'lgan gigabaytlar oralig'ini grafikdan toping.",
+      "v": [
+        "0 ≤ x < 15",
+        "x > 15",
+        "0 ≤ x < 30",
+        "0 ≤ x ≤ 15"
+      ],
+      "t": 0,
+      "izoh": "Ikki narx chizig'i 40 + 3x = 70 + x shartda kesishadi, bundan 2x = 30 va x = 15. Kesishishdan chapda birinchi tarif chizig'i pastda joylashgan, ya'ni arzonroq. Ortiqcha gigabayt manfiy bo'lolmaydi, chegara nuqtada esa narxlar tenglashadi. Javob: 0 ≤ x < 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tarif-tanlash-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#f1f4bc34"
+    },
+    {
+      "q": "Birinchi taksi kompaniyasi 15 ming so'm o'tirish haqi va har kilometr uchun 4 ming so'm oladi, ikkinchisi esa o'tirish haqisiz har kilometr uchun 7 ming so'm oladi. Birinchi kompaniya qimmatroq chiqadigan masofa oralig'ini toping.",
+      "v": [
+        "x > 5",
+        "0 < x < 5",
+        "0 < x < 15",
+        "x > 3"
+      ],
+      "t": 1,
+      "izoh": "Narx chiziqlari y = 15 + 4x va y = 7x ko'rinishida. Ularni tenglashtiramiz: 15 + 4x = 7x, bundan 3x = 15 va x = 5 km. Beshinchi kilometrgacha birinchi chiziq yuqorida turadi, ya'ni narx qimmatroq bo'ladi. Javob: 0 < x < 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-tanlash-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#278135cb"
+    },
+    {
+      "q": "Birinchi bosmaxona har bir varaq uchun 500 so'm oladi, ikkinchisi esa 200000 so'm obuna to'lovi va har varaq uchun 300 so'm oladi. Ikkinchi bosmaxona foydali bo'ladigan varaqlar sonini grafikdan aniqlang.",
+      "v": [
+        "x > 500",
+        "x < 1000",
+        "x > 1000",
+        "x ≥ 1000"
+      ],
+      "t": 2,
+      "izoh": "Ikki xarajat chizig'ini tenglashtiramiz: 200000 + 300x = 500x, bundan 200x = 200000 va x = 1000 varaq. Kesishishdan o'ngda ikkinchi bosmaxona chizig'i pastda qoladi, demak arzonroq bo'ladi. Aynan ming varaqda narxlar tenglashgani uchun bu nuqta kirmaydi. Javob: x > 1000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-tanlash-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#85766810"
+    },
+    {
+      "q": "Sport zaliga bir martalik chipta 25 ming so'm, bir oylik abonement esa 300 ming so'm turadi. Abonement olish foydali bo'lishi uchun oyiga kamida necha marta borish kerak?",
+      "v": [
+        "12 marta",
+        "14 marta",
+        "11 marta",
+        "13 marta"
+      ],
+      "t": 3,
+      "izoh": "y = 25x va y = 300 chiziqlari 25x = 300 shartda, ya'ni x = 12 da kesishadi. Abonement foydali bo'lishi uchun bir martalik chiptalar chizig'i yuqoriga chiqishi kerak, demak x > 12. Borishlar soni butun bo'lgani uchun eng kichik mos qiymat 13 ga teng. Javob: 13 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-tanlash-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#be817ef7"
+    },
+    {
+      "q": "Ikki velosipedchi bir vaqtda yo'lga chiqdi: Jasurning bosib o'tgan yo'li s = 18t km, Kamolniki esa s = 12t + 9 km, bu yerda t — soat. Jasur oldinda bo'lgan vaqt oralig'ini grafikdan toping.",
+      "v": [
+        "t > 1,5",
+        "0 ≤ t < 1,5",
+        "t > 0,75",
+        "t ≥ 1,5"
+      ],
+      "t": 0,
+      "izoh": "Masofa grafiklari 18t = 12t + 9 shartda kesishadi, bundan 6t = 9 va t = 1,5 soat. Jasurning chizig'i tikroq bo'lgani uchun kesishishdan keyin u yuqorida bo'ladi. Kesishish paytida ikkalasi yonma-yon turadi, shuning uchun bu payt yechimga kirmaydi. Javob: t > 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harakat-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#003203ee"
+    },
+    {
+      "q": "Poyezd stansiyadan chiqqach uning yo'li s = 80t km, avtomobil esa yarim soat kechikib chiqadi va uning yo'li s = 100(t − 0,5) km bo'ladi. Avtomobil poyezddan oldinda bo'ladigan vaqtni toping.",
+      "v": [
+        "t > 0,5",
+        "t > 2,5",
+        "t > 5",
+        "t ≥ 2,5"
+      ],
+      "t": 1,
+      "izoh": "Grafiklarni tenglashtiramiz: 100(t − 0,5) = 80t, ya'ni 100t − 50 = 80t. Bundan 20t = 50 va t = 2,5 soat kelib chiqadi. Avtomobil chizig'i tikroq bo'lgani uchun kesishishdan keyin u yuqorida yotadi. Javob: t > 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harakat-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#db1ca16f"
+    },
+    {
+      "q": "Piyoda va yuguruvchi bir yo'nalishda harakatlanmoqda: piyodaning yo'li s = 5t + 6 km, yuguruvchiniki esa s = 11t km. Yuguruvchi piyodadan oldinda bo'lgan vaqtni grafikdan aniqlang.",
+      "v": [
+        "t > 6",
+        "0 ≤ t < 1",
+        "t > 1",
+        "t ≥ 1"
+      ],
+      "t": 2,
+      "izoh": "Grafiklar 11t = 5t + 6 shartda kesishadi, bundan 6t = 6 va t = 1 soat. Yuguruvchining chizig'i tikroq, shuning uchun kesishishdan keyin u yuqorida bo'ladi. Aynan birinchi soatda ular bir nuqtada uchrashadi, demak bu payt kirmaydi. Javob: t > 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harakat-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#4bbd463e"
+    },
+    {
+      "q": "Dronning balandligi h = 40t − 5t² metr formula bilan o'zgaradi, bu yerda t — uchirilgandan keyingi sekundlar. Dron 60 metrdan baland bo'lgan vaqt oralig'ini grafikdan toping.",
+      "v": [
+        "t < 2 yoki t > 6",
+        "2 ≤ t ≤ 6",
+        "0 < t < 2",
+        "2 < t < 6"
+      ],
+      "t": 3,
+      "izoh": "40t − 5t² > 60 tengsizlikni 5 ga bo'lamiz: 8t − t² > 12, ya'ni t² − 8t + 12 < 0. Ildizlar t = 2 va t = 6, parabolaning tarmoqlari yuqoriga qaragan. Shuning uchun grafik faqat ildizlar orasida y = 60 chizig'idan yuqorida bo'ladi. Javob: 2 < t < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harakat-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#5d2542c1"
+    },
+    {
+      "q": "Sexning kunlik daromadi D = 90x ming so'm, kunlik xarajati esa X = 40x + 750 ming so'm, bu yerda x — ishlab chiqarilgan buyumlar soni. Foyda olinadigan buyumlar sonini grafikdan aniqlang.",
+      "v": [
+        "x > 15",
+        "x ≥ 15",
+        "x > 19",
+        "x < 15"
+      ],
+      "t": 0,
+      "izoh": "Daromad va xarajat chiziqlari 90x = 40x + 750 shartda kesishadi, bundan 50x = 750 va x = 15. Bu — zararsizlik nuqtasi, undan o'ngda daromad chizig'i xarajat chizig'idan yuqorida yotadi. Aynan 15 buyumda foyda nolga teng bo'lgani uchun bu nuqta kirmaydi. Javob: x > 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daromad-xarajat-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#fab0628b"
+    },
+    {
+      "q": "Kichik korxonaning oylik daromadi D = 200x − x² ming so'm, xarajati esa X = 100x + 2400 ming so'm, bu yerda x — oyiga sotilgan mahsulot soni. Foyda musbat bo'ladigan x qiymatlari oralig'ini toping.",
+      "v": [
+        "x < 40 yoki x > 60",
+        "40 < x < 60",
+        "40 ≤ x ≤ 60",
+        "20 < x < 80"
+      ],
+      "t": 1,
+      "izoh": "200x − x² > 100x + 2400 tengsizlikni x² − 100x + 2400 < 0 ko'rinishga keltiramiz. Diskriminant D = 10000 − 9600 = 400, ildizlar (100 − 20) : 2 = 40 va (100 + 20) : 2 = 60. Tarmoqlari yuqoriga qaragan parabola faqat ildizlar orasida noldan kichik. Javob: 40 < x < 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daromad-xarajat-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#180641e3"
+    },
+    {
+      "q": "Sotuvchiga ikki xil shartnoma taklif qilindi: birinchisida 2 mln so'm va sotuvning 3 foizi, ikkinchisida 3,5 mln so'm va sotuvning 1 foizi to'lanadi. Birinchi shartnoma foydali bo'ladigan sotuv hajmini toping (mln so'mda).",
+      "v": [
+        "x > 50",
+        "x < 75",
+        "x > 75",
+        "x > 150"
+      ],
+      "t": 2,
+      "izoh": "Maosh chiziqlari y = 2 + 0,03x va y = 3,5 + 0,01x ko'rinishida. Ularni tenglashtiramiz: 0,02x = 1,5, bundan x = 75 mln so'm. Birinchi chiziq tikroq bo'lgani uchun kesishishdan o'ngda u yuqorida bo'ladi. Javob: x > 75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daromad-xarajat-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#90259f29"
+    },
+    {
+      "q": "Fabrikada bir dona mahsulotning tannarxi y = 12 + 600/x ming so'm, bu yerda x — partiyadagi donalar soni. Tannarx 27 ming so'mdan past bo'lishi uchun partiya hajmi qanday bo'lishi kerak?",
+      "v": [
+        "x > 15",
+        "x < 40",
+        "x ≥ 40",
+        "x > 40"
+      ],
+      "t": 3,
+      "izoh": "Shartni 12 + 600/x < 27 deb yozamiz, bundan 600/x < 15 hosil bo'ladi. Giperbola y = 15 chizig'ini 600/x = 15, ya'ni x = 40 nuqtada kesadi. Kamayuvchi giperbola shu nuqtadan o'ngda chiziq ostida qoladi, demak tannarx pasayadi. Javob: x > 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daromad-xarajat-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#6ba9ebd3"
+    },
+    {
+      "q": "Sinfdagi 25 o'quvchining imtihon ballari nuqtalar bilan tasvirlangan. y = 60 chizig'idan yuqorida 12 ta nuqta yotadi, 3 ta nuqta esa aynan chiziq ustida joylashgan. Ball 60 dan kam bo'lgan o'quvchilar nechta?",
+      "v": [
+        "10 ta",
+        "13 ta",
+        "12 ta",
+        "15 ta"
+      ],
+      "t": 0,
+      "izoh": "Chiziqdan yuqoridagi nuqtalar 60 dan yuqori ballni, chiziq ustidagilar esa aynan 60 ballni bildiradi. Ikkalasi ham kam ball qatoriga kirmaydi. Qolganlarni ayirish bilan topamiz: 25 − 12 − 3 = 10. Javob: 10 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harorat-statistika-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#d78f0aa5"
+    },
+    {
+      "q": "Yil davomida oylik yog'in miqdori grafigi chizilgan. Grafik y = 45 mm chizig'ini ikkinchi va o'n birinchi oylarda kesib o'tadi, ular orasida chiziqdan yuqorida, tashqarisida esa pastda yotadi. Yog'in 45 mm dan kam bo'lgan oylar nechta?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "9 ta",
+        "4 ta"
+      ],
+      "t": 1,
+      "izoh": "Kesishish oylarida yog'in aynan 45 mm ga teng, demak ular kam bo'lgan oylar qatoriga kirmaydi. Ikkinchi va o'n birinchi oylar orasidagi barcha oylarda grafik chiziqdan yuqorida joylashgan. Shuning uchun faqat birinchi va o'n ikkinchi oylar qoladi. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harorat-statistika-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#6018e4c1"
+    },
+    {
+      "q": "Do'konning 30 kunlik savdo grafigi chizilgan. Grafik y = 5 mln chizig'idan 18 kun yuqorida, 4 kun esa aynan chiziq ustida bo'lgan. Savdo 5 mln so'mdan kam bo'lgan kunlar nechta?",
+      "v": [
+        "12 ta",
+        "6 ta",
+        "8 ta",
+        "14 ta"
+      ],
+      "t": 2,
+      "izoh": "Chiziq ustidagi kunlarda savdo aynan 5 mln so'mga teng bo'lgan, demak ular kam kunlar emas. Yuqoridagi 18 kun ham hisobga olinmaydi. Qolgan kunlar soni 30 − 18 − 4 = 8 ga teng. Javob: 8 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harorat-statistika-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#01cdbf9f"
+    },
+    {
+      "q": "Zavod ishchilarining yoshi bo'yicha ma'lumot grafikda tasvirlangan. |y − 35| ≤ 8 shartini qanoatlantiruvchi yoshlar o'rta yosh guruhi deb ataladi. Bu guruhga nechta butun yosh qiymati kiradi?",
+      "v": [
+        "16 ta",
+        "15 ta",
+        "18 ta",
+        "17 ta"
+      ],
+      "t": 3,
+      "izoh": "|y − 35| ≤ 8 tengsizlikning grafigi uchi (35; 0) nuqtada bo'lgan burchak bo'lib, u y = 8 chizig'idan pastda qolishi kerak. Chegaralar 35 − 8 = 27 va 35 + 8 = 43. Tengsizlik qat'iy emas, shuning uchun ikkala chegara ham sanaladi: 43 − 27 + 1 = 17. Javob: 17 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harorat-statistika-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#a4a7f254"
+    },
+    {
+      "q": "Ikki idishdagi suv sathi grafiklari h = 30 − 2t sm va h = 6 + t sm ko'rinishida berilgan, bu yerda t — daqiqa. Birinchi idishdagi sath balandroq bo'lgan vaqt oralig'ini toping.",
+      "v": [
+        "0 ≤ t < 8",
+        "t > 8",
+        "0 ≤ t < 12",
+        "0 ≤ t ≤ 8"
+      ],
+      "t": 0,
+      "izoh": "Ikki chiziqni tenglashtiramiz: 30 − 2t = 6 + t, bundan 3t = 24 va t = 8 daqiqa. Sakkizinchi daqiqagacha kamayuvchi chiziq yuqorida turadi, keyin o'suvchi chiziq uni bosib o'tadi. Vaqt manfiy bo'lolmaydi, chegarada esa sathlar tenglashadi. Javob: 0 ≤ t < 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sath-hajm-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#6d6db682"
+    },
+    {
+      "q": "Suv omborining hajmi V = −t² + 20t + 96 mln m³ formula bilan o'zgaradi, bu yerda t — haftalar soni. Hajm 200 mln m³ dan oshadigan haftalar bormi?",
+      "v": [
+        "0 < t < 20",
+        "bunday hafta yo'q",
+        "4 < t < 16",
+        "t > 20"
+      ],
+      "t": 1,
+      "izoh": "Shartni −t² + 20t + 96 > 200 dan t² − 20t + 104 < 0 ko'rinishga keltiramiz. Diskriminant D = 400 − 416 = −16 manfiy chiqadi. Demak parabola OX o'qini kesmaydi va butunlay o'qdan yuqorida yotadi, ya'ni ifoda hech qachon manfiy bo'lmaydi. Javob: bunday hafta yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sath-hajm-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#93befa0e"
+    },
+    {
+      "q": "Birinchi idishdagi suv hajmi V = 3t + 12 litr, ikkinchisida esa V = 72 − 4t litr formula bilan o'zgaradi. Ikkala idishda ham hajm 30 litrdan ko'p bo'lgan vaqt oralig'ini toping.",
+      "v": [
+        "0 ≤ t < 6",
+        "t > 10,5",
+        "6 < t < 10,5",
+        "6 ≤ t ≤ 10,5"
+      ],
+      "t": 2,
+      "izoh": "Birinchi shart 3t + 12 > 30 dan 3t > 18, ya'ni t > 6 ni beradi. Ikkinchi shart 72 − 4t > 30 dan 4t < 42, ya'ni t < 10,5 ni beradi. Ikkala chiziq ham y = 30 dan yuqorida bo'lgan umumiy vaqt shu ikki oraliqning kesishmasi. Javob: 6 < t < 10,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sath-hajm-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#b6770a65"
+    },
+    {
+      "q": "Yomg'ir suvini yig'uvchi idishdagi sath h = |t − 6| + 2 sm formula bilan tasvirlanadi, bu yerda t — kuzatuv soati. Sath 5 sm dan past bo'lgan vaqt oralig'ini grafikdan toping.",
+      "v": [
+        "t < 3 yoki t > 9",
+        "3 ≤ t ≤ 9",
+        "1 < t < 11",
+        "3 < t < 9"
+      ],
+      "t": 3,
+      "izoh": "Shartdan |t − 6| < 3 hosil bo'ladi, ya'ni uchi (6; 2) nuqtada bo'lgan burchak grafigi y = 5 chizig'idan pastda qolishi kerak. Kesishish paytlari t = 6 − 3 = 3 va t = 6 + 3 = 9. Shu ikki payt orasida sath 5 sm dan past bo'ladi, chetlarida esa aynan 5 sm. Javob: 3 < t < 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sath-hajm-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#edba85e4"
+    },
+    {
+      "q": "x² < 16 va x > −1 tengsizliklar sistemasining har bir yechimi sonlar o'qida alohida bo'yalgan. Sistemaning umumiy yechim oralig'ini toping.",
+      "v": [
+        "(−1; 4)",
+        "(−4; 4)",
+        "(−1; +∞)",
+        "(−4; −1)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tengsizlik parabola va y = 16 chizig'i orqali −4 < x < 4 oraliqni beradi. Ikkinchisi esa x = −1 dan o'ngdagi nurni beradi. Sonlar o'qida ikkala bo'yalgan qism ustma-ust tushgan joy sistemaning yechimi bo'ladi. Javob: (−1; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-umumiy-oraliq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#41b14ebe"
+    },
+    {
+      "q": "y = x + 7 va y = 5 − x chiziqlari bitta chizmada berilgan. Ikkala chiziq ham OX o'qidan yuqorida joylashgan x lar to'plamini toping.",
+      "v": [
+        "(−5; 7)",
+        "(−7; 5)",
+        "(−∞; −7) ∪ (5; +∞)",
+        "(5; 7)"
+      ],
+      "t": 1,
+      "izoh": "Birinchi chiziq OX o'qini x = −7 nuqtada kesadi va undan o'ngda o'q ustida bo'ladi. Ikkinchi chiziq kamayuvchi bo'lib, x = 5 nuqtada o'qni kesadi va undan chapda o'q ustida turadi. Ikkala shart faqat kesishma oraliqda bir vaqtda bajariladi. Javob: (−7; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sistema-umumiy-oraliq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#fbb55f56"
+    },
+    {
+      "q": "Issiqxonadagi namlik n foiz uchun ikkita shart qo'yilgan: n − 40 ≥ 0 va 75 − n ≥ 0. Ikkala chiziq ham OX o'qidan past bo'lmaydigan namlik oralig'ini grafikdan toping.",
+      "v": [
+        "(40; 75)",
+        "[35; 75]",
+        "[40; 75]",
+        "[40; 115]"
+      ],
+      "t": 2,
+      "izoh": "Birinchi chiziq n = 40 nuqtada o'qni kesadi va undan o'ngda o'q ustida yotadi. Ikkinchi chiziq kamayuvchi bo'lib, n = 75 da o'qni kesadi va undan chapda o'q ustida bo'ladi. Ikkala shartda tenglik ruxsat etilgani uchun chegaralar yechimga kiradi. Javob: [40; 75].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-umumiy-oraliq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#b10cba1d"
+    },
+    {
+      "q": "x² − 9 ≤ 0 va x − 1 > 0 tengsizliklar sistemasining yechimini grafik usulda aniqlang.",
+      "v": [
+        "[1; 3]",
+        "(1; 3)",
+        "[−3; 3]",
+        "(1; 3]"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tengsizlik parabolaning OX o'qidan past qismini beradi, ya'ni −3 ≤ x ≤ 3. Ikkinchisi x > 1 nurni beradi va chegara nuqtasi unga kirmaydi. Ikki to'plamning kesishmasi birdan katta, uchdan katta bo'lmagan sonlardan iborat. Javob: (1; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-umumiy-oraliq",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#52e6906d"
+    },
+    {
+      "q": "y = x² + 4 parabolasi va y = a gorizontal chizig'i bitta chizmada tasvirlangan. Chiziq parabolani ikkita nuqtada kesishi uchun a qanday qiymatlar olishi kerak?",
+      "v": [
+        "a > 4",
+        "a ≥ 4",
+        "a < 4",
+        "a > 0"
+      ],
+      "t": 0,
+      "izoh": "Parabolaning uchi (0; 4) nuqtada bo'lib, tarmoqlari yuqoriga qaragan. Gorizontal chiziq uchdan yuqorida bo'lsa, u parabolani ikkita nuqtada kesib o'tadi. Aynan uch balandligida chiziq faqat bitta umumiy nuqtaga ega bo'ladi, undan pastda esa umuman kesishmaydi. Javob: a > 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-chiziq-parabola",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#cbcc6116"
+    },
+    {
+      "q": "x² + 6x + m > 0 tengsizlik barcha x qiymatlarida bajarilishi uchun m qanday bo'lishi kerak? Javobni parabolaning joylashuvi orqali asoslang.",
+      "v": [
+        "m ≥ 9",
+        "m > 9",
+        "m < 9",
+        "m > 36"
+      ],
+      "t": 1,
+      "izoh": "Tengsizlik barcha x larda o'rinli bo'lishi uchun parabola butunlay OX o'qidan yuqorida yotishi kerak. Bu esa diskriminantning manfiy bo'lishini talab qiladi: 36 − 4m < 0. Bundan 4m > 36, ya'ni m > 9 kelib chiqadi. Tenglik holida parabola o'qqa urinadi va qat'iy shart buziladi. Javob: m > 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-chiziq-parabola",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#d4f874fb"
+    },
+    {
+      "q": "y = 2x + k to'g'ri chiziq y = x² parabolasidan har doim pastda bo'lishi, ya'ni ular umuman kesishmasligi uchun k qanday qiymat olishi kerak?",
+      "v": [
+        "k > −1",
+        "k ≤ −1",
+        "k < −1",
+        "k < 1"
+      ],
+      "t": 2,
+      "izoh": "Shart x² > 2x + k tengsizlikning barcha x larda bajarilishini bildiradi, ya'ni x² − 2x − k > 0. Bunday bo'lishi uchun diskriminant manfiy bo'lishi kerak: 4 + 4k < 0. Bundan 4k < −4 va k < −1. Tenglik holida chiziq parabolaga urinadi, bu esa kesishish sanaladi. Javob: k < −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-chiziq-parabola",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#e736a002"
+    },
+    {
+      "q": "y = |x| grafigi y = c gorizontal chizig'idan barcha x larda yuqorida bo'lishi uchun c qanday qiymatlarni olishi kerak?",
+      "v": [
+        "c ≤ 0",
+        "c > 0",
+        "c < 1",
+        "c < 0"
+      ],
+      "t": 3,
+      "izoh": "Modul grafigining eng past nuqtasi (0; 0) bo'lib, undagi qiymat nolga teng. Gorizontal chiziq shu eng past nuqtadan ham pastda tursa, grafik hamma joyda undan yuqorida bo'ladi. c = 0 bo'lganda x = 0 nuqtada qiymatlar tenglashadi va qat'iy shart buziladi. Javob: c < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-chiziq-parabola",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#7cdb64ad"
+    },
+    {
+      "q": "y = |x| va y = |x − 4| grafiklari bitta chizmada berilgan. Birinchi grafik ikkinchisidan pastda joylashgan x lar to'plamini toping.",
+      "v": [
+        "(−∞; 2)",
+        "(2; +∞)",
+        "(−∞; 4)",
+        "(0; 2)"
+      ],
+      "t": 0,
+      "izoh": "|x| ifoda nuqtadan nolgacha, |x − 4| esa nuqtadan 4 gacha bo'lgan masofani bildiradi. Birinchi masofa kichik bo'lishi uchun nuqta nolga yaqinroq turishi kerak. Ikki markazning o'rtasi (0 + 4) : 2 = 2, grafiklar shu nuqtada kesishadi. Javob: (−∞; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-modul-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#4ed77081"
+    },
+    {
+      "q": "y = |x + 3| va y = |x − 5| grafiklari kesishgan. |x + 3| ≥ |x − 5| tengsizlikning yechimini grafikdan o'qing.",
+      "v": [
+        "(−∞; 1]",
+        "[1; +∞)",
+        "[1; 5]",
+        "(1; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Chap taraf nuqtadan −3 gacha, o'ng taraf esa 5 gacha bo'lgan masofani bildiradi. Birinchi masofa kichik bo'lmasligi uchun nuqta 5 ga yaqinroq yoki markazlardan teng uzoqlikda bo'lishi kerak. Markazlarning o'rtasi (−3 + 5) : 2 = 1, grafiklar shu nuqtada kesishadi. Tenglik ruxsat etilgani uchun bu nuqta kiradi. Javob: [1; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-modul-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#402558b4"
+    },
+    {
+      "q": "y = |x| + |x − 6| grafigi va y = 6 to'g'ri chizig'i chizilgan. Grafik chiziqdan baland bo'lmagan x lar to'plamini toping.",
+      "v": [
+        "(0; 6)",
+        "[−6; 6]",
+        "[0; 6]",
+        "{3}"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi nuqtadan 0 gacha va 6 gacha bo'lgan masofalar yig'indisini bildiradi. Kesma ichida bu yig'indi doim 6 ga teng, tashqarisida esa undan katta bo'ladi. Shuning uchun grafik [0; 6] da gorizontal, chetlarida esa ko'tarilib ketadi. Javob: [0; 6].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-modul-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#8742a979"
+    },
+    {
+      "q": "Yo'lning 12-kilometr va 20-kilometr belgilarida ikkita nazorat punkti joylashgan. Avtomobil birinchi punktga ikkinchisiga qaraganda yaqinroq bo'lgan yo'l qismini grafik usulda toping.",
+      "v": [
+        "x > 16",
+        "12 < x < 16",
+        "0 ≤ x < 12",
+        "0 ≤ x < 16"
+      ],
+      "t": 3,
+      "izoh": "Shart |x − 12| < |x − 20| ko'rinishida yoziladi, ya'ni ikkita modul grafigi taqqoslanadi. Grafiklar punktlar orasidagi o'rta nuqtada, (12 + 20) : 2 = 16 km belgisida kesishadi. Undan chapdagi barcha nuqtalarda birinchi punktgacha masofa kichik bo'ladi. Yo'l boshi ham shu qismga kiradi. Javob: 0 ≤ x < 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-modul-grafigi",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#2d3ca5af"
+    },
+    {
+      "q": "(x − 5)/(x + 8) < 0 tengsizlikning nechta butun yechimi borligini grafik usulda aniqlang.",
+      "v": [
+        "12 ta",
+        "13 ta",
+        "14 ta",
+        "11 ta"
+      ],
+      "t": 0,
+      "izoh": "Kasrning nollari x = 5 va x = −8, kasr faqat shu ikki nuqta orasida manfiy bo'ladi. Demak yechim −8 < x < 5 oralig'i. Qat'iy tengsizlikda chegaralar kirmaydi, butun sonlar −7 dan 4 gacha: 7 + 4 + 1 = 12 ta. Javob: 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrli-butun-yechimlar",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#2126a47b"
+    },
+    {
+      "q": "(x + 5)/(x − 9) ≤ 0 tengsizlikni qanoatlantiruvchi butun sonlar sonini toping.",
+      "v": [
+        "15 ta",
+        "14 ta",
+        "13 ta",
+        "16 ta"
+      ],
+      "t": 1,
+      "izoh": "Suratning noli x = −5, maxrajning noli esa x = 9. Kasr shu ikki nuqta orasida manfiy, x = −5 da nolga teng va yechimga kiradi. Maxrajning noli aniqlanish sohasiga kirmaydi, shuning uchun −5 ≤ x < 9. Butun sonlar −5 dan 8 gacha, ya'ni 14 ta. Javob: 14 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrli-butun-yechimlar",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#b27595f0"
+    },
+    {
+      "q": "Ombordagi zaxira holati q = (60 − x)/(x + 2) formula bilan baholanadi, bu yerda x — kuzatuv boshlangandan keyingi kunlar soni va x ≥ 1. Baho musbat bo'ladigan nechta butun kun mavjud?",
+      "v": [
+        "60 ta",
+        "58 ta",
+        "59 ta",
+        "61 ta"
+      ],
+      "t": 2,
+      "izoh": "Kasrning nollari x = 60 va x = −2, kasr faqat shu ikki nuqta orasida musbat bo'ladi. Kunlar soni birdan boshlangani uchun 1 ≤ x < 60 oraliq qoladi. Bu oraliqdagi butun kunlar 1 dan 59 gacha, ya'ni 59 ta. Javob: 59 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-butun-yechimlar",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#a92548a6"
+    },
+    {
+      "q": "y = 1/x giperbolasi va y = 1/3 chizig'i yordamida 1/x ≥ 1/3 tengsizlikning butun yechimlari sonini toping.",
+      "v": [
+        "4 ta",
+        "2 ta",
+        "cheksiz ko'p",
+        "3 ta"
+      ],
+      "t": 3,
+      "izoh": "Giperbolaning chap shoxi manfiy qiymatlar beradi, shuning uchun u y = 1/3 chizig'idan yuqori bo'lolmaydi. O'ng shoxda 1/x = 1/3 dan x = 3 kesishish nuqtasi chiqadi va kamayuvchi shox undan chapda chiziqdan yuqorida turadi. Demak 0 < x ≤ 3 va butun sonlar 1, 2 hamda 3. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrli-butun-yechimlar",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#395780b4"
+    },
+    {
+      "q": "x² − 10x + 21 < 0 tengsizlikning yechimi kesma ko'rinishida chiqadi. Shu kesmaning uzunligini toping.",
+      "v": [
+        "4",
+        "10",
+        "21",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Ildizlarni topamiz: x² − 10x + 21 = 0 tenglamada Viyet bo'yicha yig'indi 10, ko'paytma 21, demak ildizlar 3 va 7. Tarmoqlari yuqoriga qaragan parabola faqat ildizlar orasida OX o'qidan pastda yotadi. Kesma uzunligi 7 − 3 = 4 ga teng. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-uzunligi-grafikdan",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#5677f534"
+    },
+    {
+      "q": "y = |x − 5| grafigi y = 6 to'g'ri chizig'idan pastda bo'lgan oraliqning uzunligini grafik yordamida aniqlang.",
+      "v": [
+        "6",
+        "12",
+        "11",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Burchakning uchi (5; 0) nuqtada joylashgan, kesishishlar esa x = 5 − 6 = −1 va x = 5 + 6 = 11 da bo'ladi. Oraliq uzunligi 11 − (−1) = 12 ga teng. Bunday holda uzunlik doim modulning o'ng tomonidagi sonning ikkilanganiga teng chiqadi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-uzunligi-grafikdan",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#67060a9d"
+    },
+    {
+      "q": "Yo'l uchastkasida v² − 160v + 6000 < 0 shartini qanoatlantiruvchi tezliklar ruxsat etilgan, bu yerda v — km/soatdagi tezlik. Ruxsat etilgan tezliklar oralig'ining uzunligini toping.",
+      "v": [
+        "60",
+        "100",
+        "40",
+        "20"
+      ],
+      "t": 2,
+      "izoh": "Diskriminant D = 25600 − 24000 = 1600, uning kvadrat ildizi 40. Ildizlar (160 − 40) : 2 = 60 va (160 + 40) : 2 = 100. Tarmoqlari yuqoriga qaragan parabola faqat ildizlar orasida noldan kichik, demak ruxsat etilgan oraliq 60 dan 100 gacha. Uzunligi 100 − 60 = 40 ga teng. Javob: 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-uzunligi-grafikdan",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#67a9a29a"
+    },
+    {
+      "q": "(x + 1)/(x − 9) < 0 tengsizlikning yechimi bitta oraliq bo'ladi. Shu oraliqning uzunligini toping.",
+      "v": [
+        "9",
+        "8",
+        "1",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Kasrning nollari x = −1 va x = 9, kasr faqat shu nuqtalar orasida manfiy bo'ladi. Demak yechim (−1; 9) oralig'i ko'rinishida yoziladi. Uning uzunligi 9 − (−1) = 10 ga teng. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-uzunligi-grafikdan",
+      "id": "matematika_tngs_m12-tengsizliklarni-grafik-usulda-yechish#3ff1fc78"
+    }
+  ]
+}

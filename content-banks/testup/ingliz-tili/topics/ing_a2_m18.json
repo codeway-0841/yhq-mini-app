@@ -1,0 +1,1306 @@
+{
+  "nom": "Food & restaurants (Ovqat)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "'Menyu' inglizcha qanday?",
+      "v": [
+        "menu",
+        "money",
+        "monkey",
+        "many"
+      ],
+      "t": 0,
+      "izoh": "Menu = taomlar ro'yxati.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#eb7414d5"
+    },
+    {
+      "q": "'Ofitsiant (erkak)' inglizcha qanday?",
+      "v": [
+        "waiter",
+        "writer",
+        "winter",
+        "water"
+      ],
+      "t": 0,
+      "izoh": "Waiter = ofitsiant.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#f451c1f8"
+    },
+    {
+      "q": "'Ofitsiantka (ayol)' inglizcha qanday?",
+      "v": [
+        "waitress",
+        "actress",
+        "address",
+        "mattress"
+      ],
+      "t": 0,
+      "izoh": "Waitress = ayol ofitsiant.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#f0b409b7"
+    },
+    {
+      "q": "'Buyurtma bermoq' inglizcha qanday?",
+      "v": [
+        "order",
+        "offer",
+        "owner",
+        "other"
+      ],
+      "t": 0,
+      "izoh": "Order = buyurtma.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#5118f54a"
+    },
+    {
+      "q": "'Hisob (chek)' inglizcha qanday?",
+      "v": [
+        "bill",
+        "ball",
+        "bell",
+        "bull"
+      ],
+      "t": 0,
+      "izoh": "Bill = hisob-kitob.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#e01bebb6"
+    },
+    {
+      "q": "'Ishtaha ochar (birinchi taom)' inglizcha qanday?",
+      "v": [
+        "starter",
+        "sticker",
+        "stronger",
+        "stranger"
+      ],
+      "t": 0,
+      "izoh": "Starter = boshlang'ich taom.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#54716e49"
+    },
+    {
+      "q": "'Asosiy taom' inglizcha qanday?",
+      "v": [
+        "main course",
+        "main gate",
+        "main road",
+        "main street"
+      ],
+      "t": 0,
+      "izoh": "Main course = asosiy taom.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#c1dc7a16"
+    },
+    {
+      "q": "'Shirinlik' inglizcha qanday?",
+      "v": [
+        "dessert",
+        "desert",
+        "desk",
+        "dressing"
+      ],
+      "t": 0,
+      "izoh": "Dessert = shirinlik.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#a553102f"
+    },
+    {
+      "q": "'Stol band qilmoq' inglizcha qanday?",
+      "v": [
+        "book a table",
+        "clean a table",
+        "break a table",
+        "move a table"
+      ],
+      "t": 0,
+      "izoh": "Book a table = stol band qilmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#19dd7040"
+    },
+    {
+      "q": "'Bron (oldindan band qilish)' inglizcha qanday?",
+      "v": [
+        "reservation",
+        "reputation",
+        "registration",
+        "relation"
+      ],
+      "t": 0,
+      "izoh": "Reservation = bron.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#af35bd44"
+    },
+    {
+      "q": "'Choychaqa (chevoy)' inglizcha qanday?",
+      "v": [
+        "tip",
+        "top",
+        "tap",
+        "toe"
+      ],
+      "t": 0,
+      "izoh": "Tip = choychaqa.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#5388206c"
+    },
+    {
+      "q": "'Vilka (sanchqi)' inglizcha qanday?",
+      "v": [
+        "fork",
+        "form",
+        "fort",
+        "fold"
+      ],
+      "t": 0,
+      "izoh": "Fork = sanchqi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#bb5b32cf"
+    },
+    {
+      "q": "'Pichoq' inglizcha qanday?",
+      "v": [
+        "knife",
+        "knee",
+        "knock",
+        "knot"
+      ],
+      "t": 0,
+      "izoh": "Knife = pichoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#d364f7bb"
+    },
+    {
+      "q": "'Qoshiq' inglizcha qanday?",
+      "v": [
+        "spoon",
+        "spool",
+        "sport",
+        "spot"
+      ],
+      "t": 0,
+      "izoh": "Spoon = qoshiq.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#c7b8e274"
+    },
+    {
+      "q": "'Tarelka (likop)' inglizcha qanday?",
+      "v": [
+        "plate",
+        "place",
+        "plane",
+        "plant"
+      ],
+      "t": 0,
+      "izoh": "Plate = tarelka.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#de0cf583"
+    },
+    {
+      "q": "'Piyola / chashka' inglizcha qanday?",
+      "v": [
+        "cup",
+        "cap",
+        "cop",
+        "cape"
+      ],
+      "t": 0,
+      "izoh": "Cup = piyola.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#cc779b74"
+    },
+    {
+      "q": "'Mazali (juda yoqimli)' inglizcha qanday?",
+      "v": [
+        "delicious",
+        "delivery",
+        "decision",
+        "different"
+      ],
+      "t": 0,
+      "izoh": "Delicious = juda mazali.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#29880c33"
+    },
+    {
+      "q": "'Mazali (tami yaxshi)' inglizcha qanday?",
+      "v": [
+        "tasty",
+        "testy",
+        "dusty",
+        "nasty"
+      ],
+      "t": 0,
+      "izoh": "Tasty = mazali.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#54b5dc8f"
+    },
+    {
+      "q": "'Retsept (ovqat tayyorlash)' inglizcha qanday?",
+      "v": [
+        "recipe",
+        "receipt",
+        "receiver",
+        "recycle"
+      ],
+      "t": 0,
+      "izoh": "Recipe = pishirish retsepti.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#5a4ac64a"
+    },
+    {
+      "q": "'Masalliqlar (ingredientlar)' inglizcha qanday?",
+      "v": [
+        "ingredients",
+        "instruments",
+        "arguments",
+        "apartments"
+      ],
+      "t": 0,
+      "izoh": "Ingredients = masalliqlar.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#ce38acac"
+    },
+    {
+      "q": "'Oshpaz (bosh oshpaz)' inglizcha qanday?",
+      "v": [
+        "chef",
+        "chief",
+        "chair",
+        "cheap"
+      ],
+      "t": 0,
+      "izoh": "Chef = oshpaz.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#faf18ab1"
+    },
+    {
+      "q": "Can I see the ____, please? I want to choose a dish.",
+      "v": [
+        "menu",
+        "money",
+        "market",
+        "mirror"
+      ],
+      "t": 0,
+      "izoh": "Menyu so'raladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#9def2fe2"
+    },
+    {
+      "q": "The ____ brought our food to the table.",
+      "v": [
+        "waiter",
+        "teacher",
+        "farmer",
+        "driver"
+      ],
+      "t": 0,
+      "izoh": "Waiter ovqat keltiradi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#9d371304"
+    },
+    {
+      "q": "After dinner we asked for the ____ to pay.",
+      "v": [
+        "bill",
+        "ball",
+        "bell",
+        "doll"
+      ],
+      "t": 0,
+      "izoh": "Bill to'lash uchun.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#7fa3b1d8"
+    },
+    {
+      "q": "For my ____ I would like ice cream, please.",
+      "v": [
+        "dessert",
+        "desert",
+        "design",
+        "detail"
+      ],
+      "t": 0,
+      "izoh": "Dessert = shirinlik.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#350d6a1f"
+    },
+    {
+      "q": "We want to eat here tonight, so let's ____ a table.",
+      "v": [
+        "book",
+        "cook",
+        "hook",
+        "look"
+      ],
+      "t": 0,
+      "izoh": "Book a table = stol band qilmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#aed9ab2b"
+    },
+    {
+      "q": "This soup is very ____; I love it!",
+      "v": [
+        "delicious",
+        "difficult",
+        "dangerous",
+        "dirty"
+      ],
+      "t": 0,
+      "izoh": "Delicious = mazali.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#398ef157"
+    },
+    {
+      "q": "Eat your soup with a ____, not a fork.",
+      "v": [
+        "spoon",
+        "spade",
+        "stone",
+        "stove"
+      ],
+      "t": 0,
+      "izoh": "Sho'rvani qoshiq bilan.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#9ebcb3a6"
+    },
+    {
+      "q": "Cut the meat with a ____.",
+      "v": [
+        "knife",
+        "knee",
+        "nail",
+        "rope"
+      ],
+      "t": 0,
+      "izoh": "Knife = pichoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#367677dc"
+    },
+    {
+      "q": "The food was great, so we left a good ____ for the waiter.",
+      "v": [
+        "tip",
+        "top",
+        "tap",
+        "toy"
+      ],
+      "t": 0,
+      "izoh": "Choychaqa qoldirdik.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#316c80f6"
+    },
+    {
+      "q": "Are you ready to ____? What would you like to eat?",
+      "v": [
+        "order",
+        "offer",
+        "open",
+        "owe"
+      ],
+      "t": 0,
+      "izoh": "Order = buyurtma bermoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#8cb5d122"
+    },
+    {
+      "q": "The ____ cooks the food in the restaurant kitchen.",
+      "v": [
+        "chef",
+        "chief",
+        "chess",
+        "chalk"
+      ],
+      "t": 0,
+      "izoh": "Chef pishiradi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#43ecb2ff"
+    },
+    {
+      "q": "Pour the tea into the ____.",
+      "v": [
+        "cup",
+        "cap",
+        "cop",
+        "cape"
+      ],
+      "t": 0,
+      "izoh": "Cup = piyola.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#fa339d92"
+    },
+    {
+      "q": "Put the food on a clean ____ before you eat.",
+      "v": [
+        "plate",
+        "plane",
+        "place",
+        "plant"
+      ],
+      "t": 0,
+      "izoh": "Plate = tarelka.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#e4ed2f9a"
+    },
+    {
+      "q": "Before the main course we had a small ____.",
+      "v": [
+        "starter",
+        "sticker",
+        "starer",
+        "stager"
+      ],
+      "t": 0,
+      "izoh": "Starter = birinchi taom.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#dc24b2ea"
+    },
+    {
+      "q": "The ____ for this cake needs eggs, flour and sugar.",
+      "v": [
+        "recipe",
+        "receipt",
+        "record",
+        "report"
+      ],
+      "t": 0,
+      "izoh": "Recipe = retsept.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#04fc0a0f"
+    },
+    {
+      "q": "These are the ____ we need: rice, oil and carrots.",
+      "v": [
+        "ingredients",
+        "instruments",
+        "documents",
+        "apartments"
+      ],
+      "t": 0,
+      "izoh": "Ingredients = masalliqlar.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#049e67b3"
+    },
+    {
+      "q": "I made a ____ for two people at 7 p.m.",
+      "v": [
+        "reservation",
+        "registration",
+        "reputation",
+        "recreation"
+      ],
+      "t": 0,
+      "izoh": "Reservation = bron.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#69fef7c0"
+    },
+    {
+      "q": "Eat the salad with a ____.",
+      "v": [
+        "fork",
+        "form",
+        "fort",
+        "frog"
+      ],
+      "t": 0,
+      "izoh": "Fork = sanchqi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#3a338d99"
+    },
+    {
+      "q": "For the ____ course I will have grilled chicken.",
+      "v": [
+        "main",
+        "mail",
+        "many",
+        "mint"
+      ],
+      "t": 0,
+      "izoh": "Main course = asosiy taom.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#74068909"
+    },
+    {
+      "q": "The cake looks so ____ that I want to eat it now.",
+      "v": [
+        "tasty",
+        "testy",
+        "hasty",
+        "nasty"
+      ],
+      "t": 0,
+      "izoh": "Tasty = mazali.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#cf078d31"
+    },
+    {
+      "q": "The list of food and drinks in a restaurant is the ____.",
+      "v": [
+        "menu",
+        "memo",
+        "mural",
+        "medal"
+      ],
+      "t": 0,
+      "izoh": "Menu ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#0809a618"
+    },
+    {
+      "q": "A person who serves food in a restaurant is a ____.",
+      "v": [
+        "waiter",
+        "painter",
+        "builder",
+        "reader"
+      ],
+      "t": 0,
+      "izoh": "Waiter ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#c5ed0bce"
+    },
+    {
+      "q": "The paper that shows how much you must pay is the ____.",
+      "v": [
+        "bill",
+        "note",
+        "card",
+        "coin"
+      ],
+      "t": 0,
+      "izoh": "Bill ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#00c40427"
+    },
+    {
+      "q": "A sweet food you eat at the end of a meal is a ____.",
+      "v": [
+        "dessert",
+        "starter",
+        "salad",
+        "soup"
+      ],
+      "t": 0,
+      "izoh": "Dessert ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#0915476e"
+    },
+    {
+      "q": "The small first dish before the main meal is a ____.",
+      "v": [
+        "starter",
+        "dessert",
+        "drink",
+        "dish"
+      ],
+      "t": 0,
+      "izoh": "Starter ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#1f24e911"
+    },
+    {
+      "q": "The biggest and main dish of a meal is the ____.",
+      "v": [
+        "main course",
+        "starter",
+        "dessert",
+        "snack"
+      ],
+      "t": 0,
+      "izoh": "Main course ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#87936905"
+    },
+    {
+      "q": "Extra money you give for good service is a ____.",
+      "v": [
+        "tip",
+        "fee",
+        "fine",
+        "fare"
+      ],
+      "t": 0,
+      "izoh": "Tip ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#a2694ce7"
+    },
+    {
+      "q": "A tool with points to pick up food is a ____.",
+      "v": [
+        "fork",
+        "spoon",
+        "cup",
+        "plate"
+      ],
+      "t": 0,
+      "izoh": "Fork ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#9566029d"
+    },
+    {
+      "q": "A tool used to cut food is a ____.",
+      "v": [
+        "knife",
+        "spoon",
+        "plate",
+        "cup"
+      ],
+      "t": 0,
+      "izoh": "Knife ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#373f89d7"
+    },
+    {
+      "q": "A round dish you put food on is a ____.",
+      "v": [
+        "plate",
+        "spoon",
+        "fork",
+        "knife"
+      ],
+      "t": 0,
+      "izoh": "Plate ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#101db77b"
+    },
+    {
+      "q": "A small container you drink tea from is a ____.",
+      "v": [
+        "cup",
+        "fork",
+        "knife",
+        "plate"
+      ],
+      "t": 0,
+      "izoh": "Cup ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#a7de66f7"
+    },
+    {
+      "q": "The chief cook in a restaurant is the ____.",
+      "v": [
+        "chef",
+        "waiter",
+        "guest",
+        "owner"
+      ],
+      "t": 0,
+      "izoh": "Chef ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#13b0f259"
+    },
+    {
+      "q": "Instructions that tell you how to cook a dish are a ____.",
+      "v": [
+        "recipe",
+        "receipt",
+        "letter",
+        "label"
+      ],
+      "t": 0,
+      "izoh": "Recipe ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#982215c9"
+    },
+    {
+      "q": "The foods you use to make a dish are the ____.",
+      "v": [
+        "ingredients",
+        "utensils",
+        "napkins",
+        "glasses"
+      ],
+      "t": 0,
+      "izoh": "Ingredients ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#65ee8372"
+    },
+    {
+      "q": "When you keep a table for a time, you make a ____.",
+      "v": [
+        "reservation",
+        "donation",
+        "invitation",
+        "decoration"
+      ],
+      "t": 0,
+      "izoh": "Reservation ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#1265ac5a"
+    },
+    {
+      "q": "Food that tastes very good is ____.",
+      "v": [
+        "delicious",
+        "dirty",
+        "dangerous",
+        "dull"
+      ],
+      "t": 0,
+      "izoh": "Delicious ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#ac5deece"
+    },
+    {
+      "q": "A tool used to eat soup is a ____.",
+      "v": [
+        "spoon",
+        "fork",
+        "knife",
+        "plate"
+      ],
+      "t": 0,
+      "izoh": "Spoon ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#e77cd998"
+    },
+    {
+      "q": "A woman who serves food in a restaurant is a ____.",
+      "v": [
+        "waitress",
+        "actress",
+        "hostess",
+        "princess"
+      ],
+      "t": 0,
+      "izoh": "Waitress ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#c5f9eb44"
+    },
+    {
+      "q": "To ask the waiter to bring food you choose is to ____.",
+      "v": [
+        "order",
+        "offer",
+        "own",
+        "owe"
+      ],
+      "t": 0,
+      "izoh": "Order ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#6daf3e65"
+    },
+    {
+      "q": "Keeping a table for later by calling the restaurant is to ____ a table.",
+      "v": [
+        "book",
+        "break",
+        "bring",
+        "build"
+      ],
+      "t": 0,
+      "izoh": "Book a table ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#99d5d0d8"
+    },
+    {
+      "q": "You enter a restaurant and say: 'I have a ____ for two under Islom.'",
+      "v": [
+        "reservation",
+        "registration",
+        "relation",
+        "reaction"
+      ],
+      "t": 0,
+      "izoh": "Bron nomingiz bilan.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#c1f8c74a"
+    },
+    {
+      "q": "The waiter asks: 'Are you ready to ____?' You choose your food.",
+      "v": [
+        "order",
+        "offer",
+        "open",
+        "owe"
+      ],
+      "t": 0,
+      "izoh": "Order = buyurtma.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#2866f64f"
+    },
+    {
+      "q": "You finished eating and say: 'Can we have the ____, please?'",
+      "v": [
+        "bill",
+        "bell",
+        "ball",
+        "bull"
+      ],
+      "t": 0,
+      "izoh": "Hisob so'raysiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#7dac84ee"
+    },
+    {
+      "q": "The service was excellent, so you leave a ____ on the table.",
+      "v": [
+        "tip",
+        "top",
+        "tap",
+        "tag"
+      ],
+      "t": 0,
+      "izoh": "Choychaqa qoldirasiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#05c66adc"
+    },
+    {
+      "q": "You cannot cut the steak with a spoon; you need a ____.",
+      "v": [
+        "knife",
+        "cup",
+        "plate",
+        "napkin"
+      ],
+      "t": 0,
+      "izoh": "Pichoq kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#b75c1714"
+    },
+    {
+      "q": "You taste the plov and say: 'It is really ____!'",
+      "v": [
+        "delicious",
+        "difficult",
+        "dirty",
+        "distant"
+      ],
+      "t": 0,
+      "izoh": "Mazali deysiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#6830ec74"
+    },
+    {
+      "q": "You want to cook a new dish at home, so you find a ____ online.",
+      "v": [
+        "recipe",
+        "receipt",
+        "referee",
+        "reporter"
+      ],
+      "t": 0,
+      "izoh": "Recipe topasiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#ade7c02d"
+    },
+    {
+      "q": "At the shop you buy the ____ for the soup: meat, onions and salt.",
+      "v": [
+        "ingredients",
+        "instruments",
+        "furniture",
+        "documents"
+      ],
+      "t": 0,
+      "izoh": "Masalliqlarni olasiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#eb859185"
+    },
+    {
+      "q": "You want a sweet after dinner, so you order a ____.",
+      "v": [
+        "dessert",
+        "desert",
+        "design",
+        "detail"
+      ],
+      "t": 0,
+      "izoh": "Shirinlik buyurtma.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#0dd39126"
+    },
+    {
+      "q": "Before the meal you order a light ____ like a salad.",
+      "v": [
+        "starter",
+        "sticker",
+        "stapler",
+        "stroller"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich taom.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#174e3f18"
+    },
+    {
+      "q": "The ____ comes to your table and takes your order.",
+      "v": [
+        "waiter",
+        "doctor",
+        "teacher",
+        "farmer"
+      ],
+      "t": 0,
+      "izoh": "Ofitsiant keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#7f6f2250"
+    },
+    {
+      "q": "You call the restaurant to ____ a table for Friday night.",
+      "v": [
+        "book",
+        "cook",
+        "kick",
+        "lock"
+      ],
+      "t": 0,
+      "izoh": "Stol band qilasiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#e25acc2c"
+    },
+    {
+      "q": "For the ____ course you choose lamb with rice.",
+      "v": [
+        "main",
+        "mail",
+        "mind",
+        "mine"
+      ],
+      "t": 0,
+      "izoh": "Asosiy taom.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#8e8ca1d4"
+    },
+    {
+      "q": "You drink your coffee from a small white ____.",
+      "v": [
+        "cup",
+        "cap",
+        "cop",
+        "cape"
+      ],
+      "t": 0,
+      "izoh": "Piyoladan ichasiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#6e121048"
+    },
+    {
+      "q": "The ____ in the kitchen prepares all the dishes.",
+      "v": [
+        "chef",
+        "chief",
+        "chalk",
+        "chess"
+      ],
+      "t": 0,
+      "izoh": "Oshpaz pishiradi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#72704ca9"
+    },
+    {
+      "q": "'Salfetka' inglizcha qanday?",
+      "v": [
+        "napkin",
+        "napping",
+        "nation",
+        "native"
+      ],
+      "t": 0,
+      "izoh": "Napkin = salfetka.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#c908918e"
+    },
+    {
+      "q": "'Stakan' inglizcha qanday?",
+      "v": [
+        "glass",
+        "grass",
+        "gloss",
+        "glue"
+      ],
+      "t": 0,
+      "izoh": "Glass = stakan.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#96a07cb4"
+    },
+    {
+      "q": "'Kosa (chuqur idish)' inglizcha qanday?",
+      "v": [
+        "bowl",
+        "bowel",
+        "bold",
+        "ball"
+      ],
+      "t": 0,
+      "izoh": "Bowl = kosa.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#c052666a"
+    },
+    {
+      "q": "'Nonushta' inglizcha qanday?",
+      "v": [
+        "breakfast",
+        "breakdown",
+        "breakwater",
+        "breakout"
+      ],
+      "t": 0,
+      "izoh": "Breakfast = nonushta.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#a40480c2"
+    },
+    {
+      "q": "'Tushlik' inglizcha qanday?",
+      "v": [
+        "lunch",
+        "launch",
+        "lunge",
+        "lurch"
+      ],
+      "t": 0,
+      "izoh": "Lunch = tushlik.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#6f9b4788"
+    },
+    {
+      "q": "'Kechki ovqat' inglizcha qanday?",
+      "v": [
+        "dinner",
+        "diner",
+        "dime",
+        "dinar"
+      ],
+      "t": 0,
+      "izoh": "Dinner = kechki ovqat.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#1bd22f29"
+    },
+    {
+      "q": "'Ta'm (mazasi)' inglizcha qanday?",
+      "v": [
+        "taste",
+        "toast",
+        "waste",
+        "paste"
+      ],
+      "t": 0,
+      "izoh": "Taste = ta'm.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#294e1b5c"
+    },
+    {
+      "q": "'Och qolgan' inglizcha qanday?",
+      "v": [
+        "hungry",
+        "angry",
+        "hurry",
+        "happy"
+      ],
+      "t": 0,
+      "izoh": "Hungry = och.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#56638b5d"
+    },
+    {
+      "q": "'Chanqagan' inglizcha qanday?",
+      "v": [
+        "thirsty",
+        "thursday",
+        "thirty",
+        "thicket"
+      ],
+      "t": 0,
+      "izoh": "Thirsty = chanqagan.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#57de2e3d"
+    },
+    {
+      "q": "'Ichimlik' inglizcha qanday?",
+      "v": [
+        "drink",
+        "drown",
+        "drum",
+        "drop"
+      ],
+      "t": 0,
+      "izoh": "Drink = ichimlik.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#983a48cb"
+    },
+    {
+      "q": "Wipe your mouth with a ____ after eating.",
+      "v": [
+        "napkin",
+        "notebook",
+        "newspaper",
+        "noodle"
+      ],
+      "t": 0,
+      "izoh": "Napkin = salfetka.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#5a273071"
+    },
+    {
+      "q": "Pour some water into the ____.",
+      "v": [
+        "glass",
+        "grass",
+        "class",
+        "glue"
+      ],
+      "t": 0,
+      "izoh": "Glass = stakan.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#8ff5d54e"
+    },
+    {
+      "q": "I am very ____; I have not eaten all day.",
+      "v": [
+        "hungry",
+        "heavy",
+        "angry",
+        "happy"
+      ],
+      "t": 0,
+      "izoh": "Hungry = och.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#143273dd"
+    },
+    {
+      "q": "I am ____; can I have some water, please?",
+      "v": [
+        "thirsty",
+        "thirty",
+        "thicker",
+        "thankful"
+      ],
+      "t": 0,
+      "izoh": "Thirsty = chanqagan.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#47d2e310"
+    },
+    {
+      "q": "We eat ____ in the morning, around 8 o'clock.",
+      "v": [
+        "breakfast",
+        "dinner",
+        "supper",
+        "dessert"
+      ],
+      "t": 0,
+      "izoh": "Breakfast = ertalabki ovqat.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#a99113de"
+    },
+    {
+      "q": "At noon we usually have ____ with our colleagues.",
+      "v": [
+        "lunch",
+        "launch",
+        "lounge",
+        "lunge"
+      ],
+      "t": 0,
+      "izoh": "Lunch = tushlik.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#bd51fc18"
+    },
+    {
+      "q": "In the evening the family sits together for ____.",
+      "v": [
+        "dinner",
+        "diner",
+        "dime",
+        "dinar"
+      ],
+      "t": 0,
+      "izoh": "Dinner = kechki ovqat.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#d7f5b414"
+    },
+    {
+      "q": "Serve the soup in a deep ____.",
+      "v": [
+        "bowl",
+        "bell",
+        "ball",
+        "bull"
+      ],
+      "t": 0,
+      "izoh": "Bowl = kosa.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#2b016256"
+    },
+    {
+      "q": "Would you like a hot or cold ____ with your meal?",
+      "v": [
+        "drink",
+        "drum",
+        "drop",
+        "dream"
+      ],
+      "t": 0,
+      "izoh": "Drink = ichimlik.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#0ab91388"
+    },
+    {
+      "q": "Add a little salt to make the food more ____.",
+      "v": [
+        "tasty",
+        "testy",
+        "nasty",
+        "hasty"
+      ],
+      "t": 0,
+      "izoh": "Tasty = mazali.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#a4e721ca"
+    },
+    {
+      "q": "Please bring me a clean ____ for my rice.",
+      "v": [
+        "plate",
+        "plane",
+        "place",
+        "plant"
+      ],
+      "t": 0,
+      "izoh": "Plate = tarelka.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#015b55ce"
+    },
+    {
+      "q": "The ____ took our plates away when we finished.",
+      "v": [
+        "waiter",
+        "weather",
+        "winter",
+        "water"
+      ],
+      "t": 0,
+      "izoh": "Waiter idishlarni oldi.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#88509ad0"
+    },
+    {
+      "q": "'Mijoz (mehmon)' inglizcha qanday?",
+      "v": [
+        "customer",
+        "costume",
+        "container",
+        "cucumber"
+      ],
+      "t": 0,
+      "izoh": "Customer = mijoz.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#09833b61"
+    },
+    {
+      "q": "The ____ paid the bill and thanked the chef.",
+      "v": [
+        "customer",
+        "container",
+        "costume",
+        "cucumber"
+      ],
+      "t": 0,
+      "izoh": "Customer = mijoz.",
+      "qiy": "orta",
+      "id": "ing_a2_m18#0f18edae"
+    }
+  ]
+}

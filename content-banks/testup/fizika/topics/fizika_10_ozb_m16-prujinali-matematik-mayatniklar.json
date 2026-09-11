@@ -1,0 +1,531 @@
+{
+  "nom": "16-mavzu. Prujinali Matematik Mayatniklar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Prujinali mayatnik deb nimaga aytiladi?",
+      "v": [
+        "Prujinaga mahkamlangan jism va elastiklik kuchi ta'sirida tebranma harakat qiladigan sistemaga",
+        "Ipga osilgan jism va og'irlik kuchi ta'sirida tebranadigan sistemaga",
+        "Tashqi kuchsiz tebranadigan har qanday sistemaga",
+        "Faqat majburiy tebranish qiladigan sistemaga"
+      ],
+      "t": 0,
+      "izoh": "Prujinaga mahkamlangan jism elastiklik kuchi ta'sirida tebranadigan sistema — prujinali mayatnik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#960e47ab"
+    },
+    {
+      "q": "Prujinaga yuk osilganda yuzaga keladigan elastiklik kuchi qanday formula bilan hisoblanadi?",
+      "v": [
+        "F = –kΔx",
+        "F = k/Δx",
+        "F = m·Δx",
+        "F = k·Δx²"
+      ],
+      "t": 0,
+      "izoh": "Elastiklik kuchi F = –kΔx; k — bikrlik, Δx — cho'zilish yoki siqilish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#648b6330"
+    },
+    {
+      "q": "F = –kΔx formulasidagi k nimaligi?",
+      "v": [
+        "Prujinaning bikrligi",
+        "Prujinaning uzunligi",
+        "Yukning massasi",
+        "Tebranish chastotasi"
+      ],
+      "t": 0,
+      "izoh": "k — prujinaning bikrligi; Δx — prujinaning cho'zilganligi yoki siqilganligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#46817438"
+    },
+    {
+      "q": "F = –kΔx formulasidagi minus ishora nimani bildiradi?",
+      "v": [
+        "Elastiklik kuchi siljishga qarama-qarshi yo'nalganligini",
+        "Kuchning manfiy qiymatga ega emasligini",
+        "Bikrlik manfiy ekanligini",
+        "Siljish nolga tengligini"
+      ],
+      "t": 0,
+      "izoh": "Minus ishora elastiklik kuchining yo'nalishi siljishga qarama-qarshi ekanini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#7ed98cd5"
+    },
+    {
+      "q": "Prujinaga osilgan yukni muvozanatdan A amplitudaga uzoqlashtirib qo'yib yuborsak, uning siljishi qanday ifodalanadi?",
+      "v": [
+        "x = A·cos(ωt)",
+        "x = A·sin(2πt)",
+        "x = A/t",
+        "x = A·t²"
+      ],
+      "t": 0,
+      "izoh": "Prujinali mayatnikning siljishi x = A·cos(ωt) qonun bilan o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#a1eedb8f"
+    },
+    {
+      "q": "Prujinali mayatnikning siklik chastotasi qanday formula bilan aniqlanadi?",
+      "v": [
+        "ω = √(k/m)",
+        "ω = √(m/k)",
+        "ω = 2π√(m/k)",
+        "ω = k·m"
+      ],
+      "t": 0,
+      "izoh": "Prujinali mayatnikda ω = √(k/m) — jism massasi va prujina bikrligi orqali aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#e40fd9db"
+    },
+    {
+      "q": "Prujinali mayatnikning tebranish davri qanday formula bilan ifodalanadi?",
+      "v": [
+        "T = 2π√(m/k)",
+        "T = 2π√(k/m)",
+        "T = 2π√(l/g)",
+        "T = √(m/k)"
+      ],
+      "t": 0,
+      "izoh": "T = 2π√(m/k).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#18bea0b5"
+    },
+    {
+      "q": "Prujinali mayatnikning tebranish davri nimaga bog'liq?",
+      "v": [
+        "Yuk massasi va prujina bikrligiga",
+        "Amplitudaga",
+        "Yerning erkin tushish tezlanishiga",
+        "Prujinaning uzunligiga"
+      ],
+      "t": 0,
+      "izoh": "T = 2π√(m/k) formulaga ko'ra davr faqat massa va bikrlikka bog'liq, amplitudaga bog'liq emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#37ab0cce"
+    },
+    {
+      "q": "Prujinali mayatnikning tebranish chastotasi qanday formula bilan ifodalanadi?",
+      "v": [
+        "ν = (1/2π)√(k/m)",
+        "ν = (1/2π)√(m/k)",
+        "ν = 2π√(k/m)",
+        "ν = √(g/l)"
+      ],
+      "t": 0,
+      "izoh": "ν = ω/(2π) = (1/2π)√(k/m).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#19fe42cc"
+    },
+    {
+      "q": "Matematik mayatnik deb nimaga aytiladi?",
+      "v": [
+        "Cho'zilmaydigan vaznsiz uzun ipga osilgan jism va og'irlik kuchi ta'sirida tebranma harakat qiladigan sistemaga",
+        "Prujinaga mahkamlangan jism sistemasiga",
+        "Har qanday og'ir jismning tebranishiga",
+        "Aylanuvchi disk sistemasiga"
+      ],
+      "t": 0,
+      "izoh": "Cho'zilmaydigan vaznsiz ipga osilgan jism og'irlik kuchi ta'sirida tebranadigan sistema — matematik mayatnik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#530d600a"
+    },
+    {
+      "q": "Matematik mayatnik qaysi kuch hisobiga tebranadi?",
+      "v": [
+        "Og'irlik kuchi hisobiga",
+        "Elastiklik kuchi hisobiga",
+        "Ishqalanish kuchi hisobiga",
+        "Magnit kuchi hisobiga"
+      ],
+      "t": 0,
+      "izoh": "Matematik mayatnik og'irlik kuchi ta'sirida garmonik tebranadi; og'irlik kuchi u uchun ichki kuch.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#1889172c"
+    },
+    {
+      "q": "Matematik mayatnik uchun ichki kuch qaysi?",
+      "v": [
+        "Og'irlik kuchi",
+        "Elastiklik kuchi",
+        "Qarshilik kuchi",
+        "Ipning tortish kuchi"
+      ],
+      "t": 0,
+      "izoh": "Og'irlik kuchi matematik mayatnik uchun ichki kuch hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#04195e3b"
+    },
+    {
+      "q": "Matematik mayatnikning siklik chastotasi qanday formula bilan aniqlanadi?",
+      "v": [
+        "ω = √(g/l)",
+        "ω = √(l/g)",
+        "ω = 2π√(l/g)",
+        "ω = g·l"
+      ],
+      "t": 0,
+      "izoh": "ω = √(g/l); l — mayatnik uzunligi, g — erkin tushish tezlanishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#0e1f3da9"
+    },
+    {
+      "q": "Matematik mayatnikning tebranish davri qanday formula bilan topiladi?",
+      "v": [
+        "T = 2π√(l/g)",
+        "T = 2π√(g/l)",
+        "T = 2π√(m/k)",
+        "T = √(l/g)"
+      ],
+      "t": 0,
+      "izoh": "T = 2π√(l/g) — Gyuygens formulasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#841fae49"
+    },
+    {
+      "q": "Matematik mayatnik tebranish davrini aniqlovchi formula kimning nomi bilan ataladi?",
+      "v": [
+        "Gyuygens formulasi",
+        "Guk formulasi",
+        "Nyuton formulasi",
+        "Gers formulasi"
+      ],
+      "t": 0,
+      "izoh": "T = 2π√(l/g) formulasi Gyuygens formulasi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#7b638de3"
+    },
+    {
+      "q": "Matematik mayatnikning tebranish chastotasi qanday formula bilan topiladi?",
+      "v": [
+        "ν = (1/2π)√(g/l)",
+        "ν = (1/2π)√(l/g)",
+        "ν = 2π√(g/l)",
+        "ν = √(g)·l"
+      ],
+      "t": 0,
+      "izoh": "ν = ω/(2π) = (1/2π)√(g/l).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#2f6d3e1c"
+    },
+    {
+      "q": "Matematik mayatnikning tebranish davri nimaga bog'liq emas?",
+      "v": [
+        "Mayatnik yukining massasiga",
+        "Mayatnikning uzunligiga",
+        "Erkin tushish tezlanishiga",
+        "Ipning cho'zilmasligiga"
+      ],
+      "t": 0,
+      "izoh": "T = 2π√(l/g) formulada massa kirmaydi, demak davr massaga bog'liq emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#38cc5722"
+    },
+    {
+      "q": "Matematik mayatnik uzunligi 4 marta orttirilsa, uning tebranish davri qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "4 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "T ~ √l bo'lgani uchun uzunlik 4 marta ortsa, davr √4 = 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#2a527526"
+    },
+    {
+      "q": "Matematik mayatnik uzunligi 16 marta kamaysa, uning erkin tebranishlar davri qanday o'zgaradi?",
+      "v": [
+        "4 marta kamayadi",
+        "16 marta kamayadi",
+        "4 marta ortadi",
+        "2 marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "T ~ √l; uzunlik 16 marta kamaysa, davr √16 = 4 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#ccef277d"
+    },
+    {
+      "q": "Prujinali mayatnikda yuk massasi 4 marta orttirilsa, tebranish davri qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "4 marta ortadi",
+        "2 marta kamayadi",
+        "16 marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "T = 2π√(m/k); massa 4 marta ortsa, davr √4 = 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#eb5e8c0b"
+    },
+    {
+      "q": "Prujinali mayatnikning bikrligi 4 marta orttirilsa, uning tebranish chastotasi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "4 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "ν ~ √k; bikrlik 4 marta ortsa, chastota √4 = 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#d9a2829b"
+    },
+    {
+      "q": "Qanday shart bajarilganda matematik mayatnikning tebranishlari garmonik bo'ladi?",
+      "v": [
+        "Qarshilik kuchlarini e'tiborga olmasak va og'ish burchagi kichik bo'lsa",
+        "Amplituda juda katta bo'lsa",
+        "Ip og'ir bo'lsa",
+        "Yuk massasi juda katta bo'lsa"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik kuchlari hisobga olinmasa, matematik mayatnik og'irlik kuchi ta'sirida garmonik tebranadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#d1ce64f4"
+    },
+    {
+      "q": "Matematik mayatnik yuki muvozanat vaziyatidan tebranishni boshlasa, siljish ifodasi qanday yoziladi?",
+      "v": [
+        "x = A·cos(ωt)",
+        "x = A·sin(ωt) bilan chegaralangan va x = A·cos(ωt) ko'rinishda yoziladi",
+        "x = A·ωt",
+        "x = A/t"
+      ],
+      "t": 0,
+      "izoh": "Darslikda matematik mayatnikning siljishi x = A·cos(ωt) ko'rinishda yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#46a28271"
+    },
+    {
+      "q": "Birinchi mayatnikning davri 3 s, ikkinchisiniki 4 s. Uzunligi ularning uzunliklari yig'indisiga teng bo'lgan mayatnikning davri qancha?",
+      "v": [
+        "5 s",
+        "7 s",
+        "12 s",
+        "1 s"
+      ],
+      "t": 0,
+      "izoh": "T = √(T₁² + T₂²) = √(9+16) = √25 = 5 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#729e9b0c"
+    },
+    {
+      "q": "Mayatnik erkin tebranganda bir tomondagi eng chetki vaziyatiga bir minutda 15 marta og'sa, tebranishlar chastotasi qancha?",
+      "v": [
+        "0,25 Hz",
+        "0,125 Hz",
+        "0,5 Hz",
+        "15 Hz"
+      ],
+      "t": 0,
+      "izoh": "Mayatnik har bir to'liq davrda aynan bir tomondagi chetki vaziyatga bir marta yetib boradi, demak 60 s da 15 to'liq tebranish: ν = 15/60 = 0,25 Hz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#e5331dc6"
+    },
+    {
+      "q": "Prujina 6 N kuch ta'sirida 1,5 cm cho'zilsa, uning bikrligi qancha?",
+      "v": [
+        "400 N/m",
+        "9 N/m",
+        "4 N/m",
+        "0,004 N/m"
+      ],
+      "t": 0,
+      "izoh": "k = F/Δx = 6/0,015 = 400 N/m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#941ebc76"
+    },
+    {
+      "q": "Prujinaga osilgan yuk 1 minutda 36 marta tebrangan bo'lsa, tebranishlarning siklik chastotasi qancha?",
+      "v": [
+        "3,77 rad/s",
+        "36 rad/s",
+        "0,6 rad/s",
+        "1,88 rad/s"
+      ],
+      "t": 0,
+      "izoh": "ν = 36/60 = 0,6 Hz; ω = 2πν = 2·3,14·0,6 ≈ 3,77 rad/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#fa369b01"
+    },
+    {
+      "q": "Prujinali mayatnikning siklik chastotasini ikki marta oshirish uchun nimani o'zgartirish kerak?",
+      "v": [
+        "Bikrlikni 4 marta oshirish yoki massani 4 marta kamaytirish kerak",
+        "Massani 2 marta oshirish kerak",
+        "Bikrlikni 2 marta oshirish kerak",
+        "Amplitudani 2 marta oshirish kerak"
+      ],
+      "t": 0,
+      "izoh": "ω = √(k/m); ω ni 2 marta oshirish uchun k ni 4 marta oshirish yoki m ni 4 marta kamaytirish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#0a2cfc30"
+    },
+    {
+      "q": "Erkin tushish tezlanishi katta bo'lgan planetaga ko'chirilgan matematik mayatnikning davri qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Avval ortib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "T = 2π√(l/g); g ortsa, davr kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#affcc38c"
+    },
+    {
+      "q": "Prujinali va matematik mayatniklarning umumiy xususiyati nimada?",
+      "v": [
+        "Ikkalasi ham ichki kuch ta'sirida garmonik tebranma harakat qiladi",
+        "Ikkalasining davri ham massaga bog'liq",
+        "Ikkalasi ham og'irlik kuchi hisobiga tebranadi",
+        "Ikkalasi ham tashqi kuchsiz tebrana olmaydi"
+      ],
+      "t": 0,
+      "izoh": "Har ikki mayatnik ichki kuch (elastiklik yoki og'irlik) ta'sirida garmonik tebranadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#fef6ab7c"
+    },
+    {
+      "q": "Matematik mayatnik modelida ipga qanday talab qo'yiladi?",
+      "v": [
+        "Cho'zilmaydigan va vaznsiz bo'lishi kerak",
+        "Elastik va og'ir bo'lishi kerak",
+        "Qisqa va cho'ziluvchan bo'lishi kerak",
+        "Metall bo'lishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Matematik mayatnikda ip cho'zilmaydigan va vaznsiz deb qabul qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#0ee24a73"
+    },
+    {
+      "q": "Matematik mayatnikning tebranish davri 2 s bo'lsa, uning chastotasi qancha?",
+      "v": [
+        "0,5 Hz",
+        "2 Hz",
+        "1 Hz",
+        "4 Hz"
+      ],
+      "t": 0,
+      "izoh": "ν = 1/T = 1/2 = 0,5 Hz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#b3e0dcfe"
+    },
+    {
+      "q": "Arg'imchoq misolida keltirilganidek, uzunroq mayatnikning tebranish davri qisqarog'inikiga nisbatan qanday?",
+      "v": [
+        "Kattaroq",
+        "Kichikroq",
+        "Bir xil",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "T ~ √l; uzun mayatnikning davri kattaroq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#f953a93a"
+    },
+    {
+      "q": "Sekund mayatnigi deb ataladigan matematik mayatnikning davri qanchaga teng?",
+      "v": [
+        "2 s",
+        "1 s",
+        "0,5 s",
+        "60 s"
+      ],
+      "t": 0,
+      "izoh": "Davr T = 2π√(l/g); yarim davr 1 s bo'lgan mayatnik sekund mayatnigi deyiladi, ya'ni to'liq davri 2 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#f9b80f38"
+    },
+    {
+      "q": "Matematik mayatnikning tebranish chastotasi formulasidagi l nimani anglatadi?",
+      "v": [
+        "Mayatnikning uzunligini (osilma nuqtadan yuk og'irlik markazigacha)",
+        "Ipning qalinligini",
+        "Yukning massasini",
+        "Amplitudani"
+      ],
+      "t": 0,
+      "izoh": "l — mayatnik uzunligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m16-prujinali-matematik-mayatniklar#08ab23c1"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Kvadrat funksiya va parabola",
+  "bolim": "Funksiyalar",
+  "blok": "funk",
+  "rasmiyBolim": 4,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Sanjar y = x² − 6x + 5 parabolaning uchini daftariga belgilamoqchi. Parabola uchining koordinatalarini toping.",
+      "v": [
+        "(3; −4)",
+        "(−3; 32)",
+        "(3; 4)",
+        "(6; 5)"
+      ],
+      "t": 0,
+      "izoh": "Uch abssissasi x₀ = −b/(2a) = −(−6)/(2·1) = 3. Ordinatasi y(3) = 3² − 6·3 + 5 = 9 − 18 + 5 = −4. Demak uch (3; −4) nuqtada yotadi. (−3; 32) — x₀ ishorasi teskari olingan hol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-koordinatasi-formula",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#db517302"
+    },
+    {
+      "q": "Nodira y = 2x² + 8x + 3 funksiya grafigini chizishdan oldin uning uchini topmoqchi. Uch qaysi nuqtada joylashgan?",
+      "v": [
+        "(2; 27)",
+        "(−4; 3)",
+        "(−2; −5)",
+        "(−2; 5)"
+      ],
+      "t": 2,
+      "izoh": "Avval x₀ = −b/(2a) = −8/(2·2) = −2 topiladi. So'ng y(−2) = 2·(−2)² + 8·(−2) + 3 = 8 − 16 + 3 = −5 hisoblanadi. Uch (−2; −5) nuqtada. (−4; 3) — maxrajdagi 2 ni unutib −b/a olingan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-koordinatasi-formula",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#c679d9a5"
+    },
+    {
+      "q": "y = −x² + 10x − 21 kvadrat funksiya grafigi parabola bo'ladi. Shu parabolaning uchi qaysi nuqtada yotishini aniqlang.",
+      "v": [
+        "(5; −4)",
+        "(5; 4)",
+        "(−5; −96)",
+        "(10; −21)"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda a = −1, b = 10, shuning uchun x₀ = −10/(2·(−1)) = 5. Ordinata: y(5) = −25 + 50 − 21 = 4. Uch (5; 4) nuqtada. (5; −4) — ordinatani hisoblashda ishoralarni chalkashtirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-koordinatasi-formula",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#079a6cf4"
+    },
+    {
+      "q": "Ustoz doskaga y = 3x² − 12x + 7 funksiyani yozdi va o'quvchilardan parabola uchini topishni so'radi. To'g'ri javobni belgilang.",
+      "v": [
+        "(−2; 43)",
+        "(2; 5)",
+        "(4; 7)",
+        "(2; −5)"
+      ],
+      "t": 3,
+      "izoh": "x₀ = −(−12)/(2·3) = 2 bo'ladi. Keyin y(2) = 3·4 − 12·2 + 7 = 12 − 24 + 7 = −5. Uch (2; −5) nuqtada joylashgan. (4; 7) — x₀ o'rniga −b/a = 4 olingan tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-koordinatasi-formula",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#5e7e9f97"
+    },
+    {
+      "q": "y = x² − 8x + 11 parabolaning simmetriya o'qi tenglamasini ko'rsating.",
+      "v": [
+        "x = 8",
+        "x = 4",
+        "x = −4",
+        "y = 4"
+      ],
+      "t": 1,
+      "izoh": "Simmetriya o'qi — uchdan o'tuvchi vertikal to'g'ri chiziq, uning tenglamasi x = −b/(2a). Bu yerda a = 1, b = −8, demak x = 8/2 = 4. Javob: x = 4. y = 4 varianti o'qning vertikal ekanini unutish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriya-oqi-tenglamasi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#f2789a04"
+    },
+    {
+      "q": "Aziza y = −3x² + 6x + 2 funksiya grafigini yasadi. Uning simmetriya o'qi qanday tenglama bilan beriladi?",
+      "v": [
+        "x = −1",
+        "x = 2",
+        "x = 1",
+        "x = −2"
+      ],
+      "t": 2,
+      "izoh": "Formula bo'yicha x = −b/(2a) = −6/(2·(−3)) = −6/(−6) = 1. Maxraj manfiy bo'lgani uchun natija musbat chiqadi. Javob: x = 1. x = −1 varianti maxrajdagi minusni hisobga olmaslikdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriya-oqi-tenglamasi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#b3e7a305"
+    },
+    {
+      "q": "Bog'dagi favvora suvining yo'li y = −0,4x² + 2,4x + 1 tenglama bilan tasvirlangan. Suv oqimi qaysi vertikal chiziqqa nisbatan simmetrik joylashadi?",
+      "v": [
+        "x = 3",
+        "x = −3",
+        "x = 6",
+        "x = −6"
+      ],
+      "t": 0,
+      "izoh": "Simmetriya o'qi x = −b/(2a) formulasi bilan topiladi: x = −2,4/(2·(−0,4)) = −2,4/(−0,8) = 3. Suv oqimi x = 3 chizig'iga nisbatan simmetrik. x = 6 — maxrajdagi ikkiga bo'lishni unutish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-oqi-tenglamasi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#9c5c81bd"
+    },
+    {
+      "q": "y = 5x² + 20x − 3 funksiyaning simmetriya o'qi Ox o'qini qaysi nuqtada kesib o'tadi?",
+      "v": [
+        "(4; 0)",
+        "(2; 0)",
+        "(−4; 0)",
+        "(−2; 0)"
+      ],
+      "t": 3,
+      "izoh": "Simmetriya o'qi x = −b/(2a) = −20/(2·5) = −2 vertikal chizig'idir. Vertikal chiziq abssissalar o'qini o'z abssissasida kesadi. Demak kesishish nuqtasi (−2; 0). (−4; 0) — ikkiga bo'lish tashlab ketilgan hol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-oqi-tenglamasi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#ba9e8e6d"
+    },
+    {
+      "q": "y = (3 − x)(x + 5) funksiya grafigi tarmoqlarining yo'nalishini aniqlang va buning sababini ko'rsating.",
+      "v": [
+        "Pastga, chunki qavslar ochilganda a = −1 bo'ladi",
+        "Yuqoriga, chunki ozod had 15 ga teng va musbat",
+        "Yuqoriga, chunki x² oldida ishora yozilmagan",
+        "Pastga, chunki ildizlar har xil ishorali"
+      ],
+      "t": 0,
+      "izoh": "Qavslarni ochamiz: (3 − x)(x + 5) = 3x + 15 − x² − 5x = −x² − 2x + 15. Bosh koeffitsient a = −1 manfiy, shuning uchun tarmoqlar pastga yo'nalgan. Yo'nalishni faqat a belgilaydi, ozod had yoki ildizlar emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarmoqlar-yonalishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#a5045c56"
+    },
+    {
+      "q": "Kichik korxonaning oylik foydasi P = −0,5x² + 30x − 100 formula bilan hisoblanadi, bu yerda x — sotilgan mahsulot soni. Grafik tarmoqlari qayoqqa yo'nalgan va bu nimani anglatadi?",
+      "v": [
+        "Pastga; foyda eng katta qiymatga erishadi",
+        "Yuqoriga; foyda eng kichik qiymatga erishadi",
+        "Pastga; foyda cheksiz o'sib boradi",
+        "Yuqoriga; foyda cheksiz kamayib boradi"
+      ],
+      "t": 0,
+      "izoh": "Bosh koeffitsient a = −0,5 manfiy bo'lgani uchun parabola tarmoqlari pastga yo'nalgan. Tarmoqlari pastga yo'nalgan parabolada uch eng yuqori nuqta bo'ladi. Demak foyda ma'lum sotuv hajmida eng katta qiymatga erishadi va keyin kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarmoqlar-yonalishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#091d48f8"
+    },
+    {
+      "q": "y = ax² + 4x − 7 parabolaning tarmoqlari yuqoriga yo'nalishi uchun a koeffitsientga qanday shart qo'yiladi?",
+      "v": [
+        "a < 0",
+        "a ≠ 0",
+        "a ≥ 0",
+        "a > 0"
+      ],
+      "t": 3,
+      "izoh": "Parabola tarmoqlari faqat bosh koeffitsient musbat bo'lgandagina yuqoriga yo'naladi. a ≥ 0 sharti noto'g'ri, chunki a = 0 da funksiya kvadrat bo'lmay qoladi va grafik to'g'ri chiziqqa aylanadi. Demak to'g'ri shart a > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tarmoqlar-yonalishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#cdc9ee61"
+    },
+    {
+      "q": "Quyidagi to'rt funksiyadan qaysi birining grafigi tarmoqlari pastga yo'nalgan parabola bo'ladi?",
+      "v": [
+        "y = 0,5x² − 9",
+        "y = 5 − 4x²",
+        "y = (x + 2)² − 6",
+        "y = 3x² + 2x"
+      ],
+      "t": 1,
+      "izoh": "Har bir funksiyada x² oldidagi koeffitsientga qaraymiz. Birinchisida 0,5, uchinchisida 1, to'rtinchisida 3 — hammasi musbat. y = 5 − 4x² da esa a = −4 manfiy, shuning uchun aynan shu parabolaning tarmoqlari pastga yo'nalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tarmoqlar-yonalishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#93807bfe"
+    },
+    {
+      "q": "y = x² − 7x + 12 parabola ordinatalar o'qini qaysi nuqtada kesib o'tadi?",
+      "v": [
+        "(0; 12)",
+        "(12; 0)",
+        "(0; −7)",
+        "(0; −12)"
+      ],
+      "t": 0,
+      "izoh": "Oy o'qidagi nuqtada abssissa nolga teng, shuning uchun x = 0 qo'yamiz. y(0) = 0 − 0 + 12 = 12 chiqadi. Kesishish nuqtasi (0; 12). (12; 0) varianti koordinatalarni o'rin almashtirib yozish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oy-oq-bilan-kesishish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#5a016ede"
+    },
+    {
+      "q": "Anvarning jamg'armasi t oydan keyin S = −0,25t² + 5t + 40 (mln so'm) formula bo'yicha o'zgaradi. Kuzatuv boshlangan paytda uning jamg'armasi qancha edi?",
+      "v": [
+        "44,75 mln so'm",
+        "40 mln so'm",
+        "5 mln so'm",
+        "0 mln so'm"
+      ],
+      "t": 1,
+      "izoh": "Kuzatuv boshlanishi t = 0 vaqtga mos keladi, ya'ni grafikning Oy o'qi bilan kesishishi so'ralmoqda. S(0) = −0,25·0 + 5·0 + 40 = 40. Demak boshlang'ich jamg'arma 40 mln so'm. 44,75 — bir oydan keyingi qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oy-oq-bilan-kesishish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#932bd7db"
+    },
+    {
+      "q": "y = 3(x − 2)² − 5 ko'rinishda berilgan parabolaning Oy o'qi bilan kesishish nuqtasini toping.",
+      "v": [
+        "(0; −5)",
+        "(0; 12)",
+        "(0; 7)",
+        "(0; −17)"
+      ],
+      "t": 2,
+      "izoh": "x = 0 qo'yamiz: y = 3·(0 − 2)² − 5 = 3·4 − 5 = 12 − 5 = 7. Kesishish nuqtasi (0; 7). (0; −5) — uch ordinatasini Oy kesishishi deb olish xatosi, (0; 12) esa oxirgi ayirishni tashlab ketish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oy-oq-bilan-kesishish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#51237e01"
+    },
+    {
+      "q": "Bir parabola y = 2x² + bx + c ko'rinishda berilgan va u Oy o'qini (0; −6) nuqtada kesib o'tadi. c koeffitsient nechaga teng?",
+      "v": [
+        "−6",
+        "6",
+        "−3",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "x = 0 bo'lganda y = 2·0 + b·0 + c = c bo'ladi. Demak parabolaning Oy o'qi bilan kesishish ordinatasi bevosita c ga teng. Shart bo'yicha bu ordinata −6, shuning uchun c = −6. −3 varianti c ni a ga bo'lish xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oy-oq-bilan-kesishish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#b88c04af"
+    },
+    {
+      "q": "y = x² − 5x + 6 parabola abssissalar o'qini qaysi nuqtalarda kesib o'tadi?",
+      "v": [
+        "(2; 0) va (3; 0)",
+        "(−2; 0) va (−3; 0)",
+        "(0; 2) va (0; 3)",
+        "(1; 0) va (6; 0)"
+      ],
+      "t": 0,
+      "izoh": "Ox o'qi bilan kesishishda y = 0, ya'ni x² − 5x + 6 = 0 tenglamani yechamiz. Viyet teoremasi bo'yicha ildizlar yig'indisi 5, ko'paytmasi 6, demak x = 2 va x = 3. Nuqtalar (2; 0) va (3; 0). (0; 2) va (0; 3) — koordinatalar o'rni almashtirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ox-oq-kesishish-nuqtalari",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#dc036ea1"
+    },
+    {
+      "q": "Malika y = x² + 2x − 8 funksiyaning nollarini topib, grafik Ox o'qini kesuvchi nuqtalarni yozmoqchi. To'g'ri juftlikni tanlang.",
+      "v": [
+        "(4; 0) va (−2; 0)",
+        "(−4; 0) va (2; 0)",
+        "(−4; 0) va (−2; 0)",
+        "(0; −4) va (0; 2)"
+      ],
+      "t": 1,
+      "izoh": "x² + 2x − 8 = 0 tenglamani yechamiz: ildizlar yig'indisi −2, ko'paytmasi −8. Bunga x = −4 va x = 2 mos keladi. Kesishish nuqtalari (−4; 0) va (2; 0). (4; 0) va (−2; 0) — ildizlarning ishoralarini teskari olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ox-oq-kesishish-nuqtalari",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#5622c422"
+    },
+    {
+      "q": "y = 2x² − 7x + 3 parabola abssissalar o'qini kesuvchi nuqtalarni ko'rsating.",
+      "v": [
+        "(−0,5; 0) va (−3; 0)",
+        "(1; 0) va (6; 0)",
+        "(0,5; 0) va (3; 0)",
+        "(0; 0,5) va (0; 3)"
+      ],
+      "t": 2,
+      "izoh": "D = (−7)² − 4·2·3 = 49 − 24 = 25, √D = 5. Ildizlar x = (7 ± 5)/(2·2), ya'ni x = 3 va x = 0,5. Nuqtalar (0,5; 0) va (3; 0). (1; 0) va (6; 0) — maxrajga 2a o'rniga 2 yozish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ox-oq-kesishish-nuqtalari",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#3c72134a"
+    },
+    {
+      "q": "Sport maydonchasi loyihasidagi yoy y = −x² + 4x + 12 tenglama bilan berilgan. Bu yoy Ox o'qini qaysi nuqtalarda kesib o'tadi?",
+      "v": [
+        "(2; 0) va (−6; 0)",
+        "(−2; 0) va (−6; 0)",
+        "(0; −2) va (0; 6)",
+        "(−2; 0) va (6; 0)"
+      ],
+      "t": 3,
+      "izoh": "−x² + 4x + 12 = 0 tenglamani −1 ga bo'lamiz: x² − 4x − 12 = 0. Ildizlar yig'indisi 4, ko'paytmasi −12, demak x = 6 va x = −2. Kesishish nuqtalari (−2; 0) va (6; 0). Ikkinchi variant tenglamani −1 ga bo'lishda ishorani unutishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ox-oq-kesishish-nuqtalari",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#fe8368e2"
+    },
+    {
+      "q": "y = 2(x − 5)² + 3 ko'rinishda berilgan parabolaning uchi qaysi nuqtada joylashganini aniqlang.",
+      "v": [
+        "(−5; 3)",
+        "(5; 3)",
+        "(5; −3)",
+        "(2; 3)"
+      ],
+      "t": 1,
+      "izoh": "Kanonik ko'rinish y = a(x − m)² + n da uch (m; n) nuqtada bo'ladi. Bu yerda qavs ichida x − 5 turibdi, demak m = 5, n esa 3. Uch (5; 3) nuqtada. (−5; 3) — qavs ichidagi ishorani to'g'ridan-to'g'ri ko'chirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-kanonik-shakldan",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#6e641056"
+    },
+    {
+      "q": "Kanonik ko'rinishda yozilgan y = −(x + 4)² − 7 parabolaning uchini toping.",
+      "v": [
+        "(4; −7)",
+        "(−4; 7)",
+        "(−4; −7)",
+        "(4; 7)"
+      ],
+      "t": 2,
+      "izoh": "Qavsni x − m ko'rinishiga keltiramiz: x + 4 = x − (−4), demak m = −4. Ozod qism n = −7 bo'lgani uchun uch (−4; −7) nuqtada yotadi. Tarmoqlar pastga yo'nalgan, chunki bosh koeffitsient −1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-kanonik-shakldan",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#7a07050a"
+    },
+    {
+      "q": "Bog'dagi suv purkagichdan otilgan oqim balandligi h = −0,2(x − 6)² + 9 tenglama bilan beriladi, bu yerda x — gorizontal masofa (m). Oqimning eng yuqori nuqtasi qayerda bo'ladi?",
+      "v": [
+        "6 m masofada 9 m balandlikda",
+        "9 m masofada 6 m balandlikda",
+        "6 m masofada 0,2 m balandlikda",
+        "6 m masofada 9 m balandlikda emas, boshida"
+      ],
+      "t": 0,
+      "izoh": "Tarmoqlar pastga yo'nalgan, shuning uchun eng yuqori nuqta uchdir. Kanonik ko'rinishdan uch (6; 9) ekani ko'rinadi. Ya'ni purkagichdan 6 m uzoqlikda oqim 9 m balandlikka ko'tariladi. Ikkinchi variant koordinatalarni almashtirib yuborish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-kanonik-shakldan",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#4549cc9e"
+    },
+    {
+      "q": "y = 4 − 3(x + 1)² funksiya grafigi parabola bo'lib, uning uchini topish talab qilinadi. To'g'ri javobni tanlang.",
+      "v": [
+        "(1; 4)",
+        "(−1; −4)",
+        "(4; −1)",
+        "(−1; 4)"
+      ],
+      "t": 3,
+      "izoh": "Funksiyani odatdagi tartibda yozamiz: y = −3(x + 1)² + 4. Bundan m = −1, n = 4 ekani ko'rinadi, ya'ni uch (−1; 4) nuqtada. (4; −1) — kanonik ko'rinish hadlari o'rni almashib yozilgani uchun paydo bo'ladigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-kanonik-shakldan",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#93e9638e"
+    },
+    {
+      "q": "y = x² − 10x + 27 funksiyani to'la kvadrat ajratib kanonik ko'rinishga keltiring.",
+      "v": [
+        "(x − 5)² + 2",
+        "(x + 5)² + 2",
+        "(x − 5)² − 2",
+        "(x − 10)² + 27"
+      ],
+      "t": 0,
+      "izoh": "x² − 10x ni to'ldiramiz: x² − 10x + 25 = (x − 5)². Lekin 25 qo'shilgani uchun uni ozod haddan ayiramiz: 27 − 25 = 2. Demak y = (x − 5)² + 2. Bundan uch (5; 2) ekani darrov ko'rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kanonik-shaklga-keltirish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#615b79c9"
+    },
+    {
+      "q": "Quyidagi variantlardan qaysi biri y = x² + 6x − 1 funksiyaning kanonik ko'rinishi bo'ladi?",
+      "v": [
+        "(x + 3)² + 8",
+        "(x − 3)² − 10",
+        "(x + 3)² − 10",
+        "(x + 6)² − 37"
+      ],
+      "t": 2,
+      "izoh": "Yarim koeffitsient 6 : 2 = 3, shuning uchun x² + 6x + 9 = (x + 3)². Ozod haddan qo'shilgan 9 ni ayiramiz: −1 − 9 = −10. Natijada y = (x + 3)² − 10 hosil bo'ladi. (x + 3)² + 8 varianti 9 ni ayirish o'rniga qo'shish xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kanonik-shaklga-keltirish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#4c6abc1e"
+    },
+    {
+      "q": "y = 2x² − 12x + 23 funksiyani a(x − m)² + n ko'rinishida yozing.",
+      "v": [
+        "2(x − 6)² + 5",
+        "2(x − 3)² + 14",
+        "2(x + 3)² + 5",
+        "2(x − 3)² + 5"
+      ],
+      "t": 3,
+      "izoh": "Avval bosh koeffitsientni qavsdan chiqaramiz: 2(x² − 6x) + 23. Qavs ichini to'ldiramiz: x² − 6x + 9 = (x − 3)², bu esa qavs oldidagi 2 tufayli 18 ni qo'shadi. Demak 23 − 18 = 5 va y = 2(x − 3)² + 5. 2(x − 3)² + 14 varianti 18 o'rniga 9 ni ayirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kanonik-shaklga-keltirish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#69ff8c9a"
+    },
+    {
+      "q": "Sexda mahsulot birligiga ketadigan xarajat C = x² − 14x + 58 (ming so'm) formula bilan hisoblanadi, bu yerda x — bir soatda tayyorlanadigan mahsulot soni. Shu ifodaning kanonik ko'rinishini tanlang.",
+      "v": [
+        "(x + 7)² + 9",
+        "(x − 7)² + 9",
+        "(x − 7)² − 9",
+        "(x − 7)² + 58"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsientning yarmi 14 : 2 = 7 bo'lgani uchun x² − 14x + 49 = (x − 7)². Ozod haddan 49 ni ayiramiz: 58 − 49 = 9. Demak C = (x − 7)² + 9 va eng kam xarajat 9 ming so'mga teng, u x = 7 da erishiladi. (x − 7)² + 58 varianti 49 ni ayirishni unutish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kanonik-shaklga-keltirish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#ea421ca9"
+    },
+    {
+      "q": "y = x² − 4x + 7 parabola abssissalar o'qi bilan necha nuqtada kesishishini aniqlang.",
+      "v": [
+        "Kesishmaydi",
+        "Bitta nuqtada",
+        "Ikkita nuqtada",
+        "Cheksiz ko'p nuqtada"
+      ],
+      "t": 0,
+      "izoh": "Kesishish soni diskriminant ishorasi bilan aniqlanadi: D = (−4)² − 4·1·7 = 16 − 28 = −12. Diskriminant manfiy bo'lgani uchun tenglamaning haqiqiy ildizi yo'q. Demak parabola Ox o'qi bilan umuman kesishmaydi va butunlay uning ustida yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ox-bilan-kesishish-soni",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#f414744f"
+    },
+    {
+      "q": "y = 9x² − 12x + 4 funksiya grafigi va Ox o'qining o'zaro joylashuvi qanday bo'ladi?",
+      "v": [
+        "Ikkita nuqtada kesadi",
+        "Bir nuqtada urinadi",
+        "Umuman kesishmaydi",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "D = (−12)² − 4·9·4 = 144 − 144 = 0 chiqadi. Diskriminant nolga teng bo'lganda tenglama yagona ildizga ega, ya'ni parabola Ox o'qiga bir nuqtada urinadi. Urinish nuqtasi uchning o'zi: x = 12/(2·9) = 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ox-bilan-kesishish-soni",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#44d0cc63"
+    },
+    {
+      "q": "Grafik chizishdan oldin y = −2x² + 8x − 9 parabolaning Ox o'qi bilan umumiy nuqtalari bor-yo'qligini aniqlash kerak. Bu parabola Ox o'qini kesib o'tadimi?",
+      "v": [
+        "Ha, ikki nuqtada kesadi",
+        "Ha, bir nuqtada urinadi",
+        "Yo'q, kesishmaydi",
+        "Faqat x = 2 nuqtada kesadi"
+      ],
+      "t": 2,
+      "izoh": "D = 8² − 4·(−2)·(−9) = 64 − 72 = −8 bo'ladi. Diskriminant manfiy, shuning uchun haqiqiy ildiz yo'q va grafik Ox o'qini kesmaydi. a < 0 bo'lgani uchun butun parabola o'qdan pastda joylashadi. x = 2 — bu faqat uchning abssissasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ox-bilan-kesishish-soni",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#2c7cc9fd"
+    },
+    {
+      "q": "y = x² + kx + 9 parabola abssissalar o'qiga faqat urinishi uchun k parametr qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "faqat k = 6",
+        "k = 3 yoki k = −3",
+        "k = 9 yoki k = −9",
+        "k = 6 yoki k = −6"
+      ],
+      "t": 3,
+      "izoh": "Urinish sharti D = 0 demakdir: k² − 4·1·9 = 0, ya'ni k² = 36. Bundan k = 6 va k = −6 kelib chiqadi, ikkala qiymat ham shartni qanoatlantiradi. Faqat k = 6 ni olish manfiy ildizni yo'qotish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ox-bilan-kesishish-soni",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#c6053ab5"
+    },
+    {
+      "q": "y = x² parabolani qanday siljitsak y = (x − 4)² + 2 funksiya grafigi hosil bo'ladi?",
+      "v": [
+        "4 birlik o'ngga va 2 birlik yuqoriga",
+        "4 birlik chapga va 2 birlik yuqoriga",
+        "2 birlik o'ngga va 4 birlik yuqoriga",
+        "4 birlik o'ngga va 2 birlik pastga"
+      ],
+      "t": 0,
+      "izoh": "Qavs ichidagi x − 4 gorizontal siljishni bildiradi: minus ishorasi o'ngga surilishga mos keladi. Qavsdan tashqaridagi + 2 esa grafikni 2 birlik yuqoriga ko'taradi. Demak uch (0; 0) dan (4; 2) ga ko'chadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-siljishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#a78f32c2"
+    },
+    {
+      "q": "y = x² parabola 3 birlik chapga va 5 birlik pastga siljitildi. Hosil bo'lgan funksiyani ko'rsating.",
+      "v": [
+        "y = (x − 3)² − 5",
+        "y = (x + 3)² − 5",
+        "y = (x + 3)² + 5",
+        "y = (x − 5)² + 3"
+      ],
+      "t": 1,
+      "izoh": "Chapga siljish qavs ichida qo'shish bilan yoziladi, shuning uchun (x + 3)² hosil bo'ladi. Pastga siljish esa butun ifodadan ayirishdir, ya'ni − 5. Natija y = (x + 3)² − 5 va uning uchi (−3; −5) nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-siljishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#7587d6f9"
+    },
+    {
+      "q": "y = 2x² grafigini qanday siljitsak y = 2x² − 12x + 20 funksiya grafigi kelib chiqadi?",
+      "v": [
+        "6 birlik o'ngga, 20 birlik yuqoriga",
+        "3 birlik chapga, 2 birlik pastga",
+        "3 birlik o'ngga, 2 birlik yuqoriga",
+        "3 birlik o'ngga, 18 birlik yuqoriga"
+      ],
+      "t": 2,
+      "izoh": "Ifodani kanonik ko'rinishga keltiramiz: 2(x² − 6x) + 20 = 2(x − 3)² − 18 + 20 = 2(x − 3)² + 2. Demak uch (0; 0) dan (3; 2) ga ko'chgan. Ya'ni siljish 3 birlik o'ngga va 2 birlik yuqoriga bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parabola-siljishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#4668198f"
+    },
+    {
+      "q": "Me'mor chizmadagi y = −0,5x² shaklidagi ravoqni 8 birlik o'ngga va 6 birlik yuqoriga ko'chirdi. Yangi ravoqning tenglamasi qanday bo'ladi?",
+      "v": [
+        "y = −0,5(x + 8)² + 6",
+        "y = −0,5(x − 6)² + 8",
+        "y = −0,5(x − 8)² − 6",
+        "y = −0,5(x − 8)² + 6"
+      ],
+      "t": 3,
+      "izoh": "O'ngga 8 birlik siljish x o'rniga x − 8 yozishni talab qiladi, bosh koeffitsient esa o'zgarmaydi. Yuqoriga 6 birlik ko'tarilish oxiriga + 6 qo'shadi. Demak y = −0,5(x − 8)² + 6 va yangi uch (8; 6) nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-siljishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#535669c1"
+    },
+    {
+      "q": "y = x² − 6x + 11 funksiyaning qiymatlar sohasini toping.",
+      "v": [
+        "[2; +∞)",
+        "(−∞; 2]",
+        "[3; +∞)",
+        "[11; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Uch abssissasi x₀ = 6/2 = 3, ordinatasi y(3) = 9 − 18 + 11 = 2. Tarmoqlar yuqoriga yo'nalgani uchun 2 — eng kichik qiymat va funksiya undan katta barcha qiymatlarni qabul qiladi. Demak E(y) = [2; +∞). [3; +∞) — uch abssissasini qiymat deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#5484dfa4"
+    },
+    {
+      "q": "y = −x² + 8x − 10 kvadrat funksiya qanday qiymatlar to'plamini qabul qiladi?",
+      "v": [
+        "[6; +∞)",
+        "(−∞; 6]",
+        "(−∞; 4]",
+        "(−∞; −6]"
+      ],
+      "t": 1,
+      "izoh": "x₀ = −8/(2·(−1)) = 4 va y(4) = −16 + 32 − 10 = 6. Bosh koeffitsient manfiy bo'lgani uchun 6 — funksiyaning eng katta qiymati. Shunday ekan qiymatlar sohasi (−∞; 6] bo'ladi. [6; +∞) varianti tarmoqlar yo'nalishini e'tiborsiz qoldirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#e784bf7a"
+    },
+    {
+      "q": "y = 3x² + 12x + 5 funksiyaning qiymatlar sohasi qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "(−∞; −7]",
+        "[−2; +∞)",
+        "[5; +∞)",
+        "[−7; +∞)"
+      ],
+      "t": 3,
+      "izoh": "x₀ = −12/(2·3) = −2 va y(−2) = 3·4 − 24 + 5 = 12 − 24 + 5 = −7. a = 3 musbat, demak −7 eng kichik qiymat va funksiya undan yuqoridagi hamma qiymatlarni oladi. Javob [−7; +∞). [5; +∞) — ozod hadni eng kichik qiymat deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#8d05c81c"
+    },
+    {
+      "q": "Grafigi parabola bo'lgan y = 0,5x² − 4x + 3 funksiyaning qiymatlar sohasini toping va to'g'ri yozilgan variantni belgilang.",
+      "v": [
+        "(−∞; −5]",
+        "[3; +∞)",
+        "[−5; +∞)",
+        "[−4; +∞)"
+      ],
+      "t": 2,
+      "izoh": "x₀ = 4/(2·0,5) = 4 bo'ladi, chunki bosh koeffitsient 0,5 ga teng. Uch ordinatasi y(4) = 0,5·16 − 16 + 3 = 8 − 16 + 3 = −5. Tarmoqlar yuqoriga yo'nalgani uchun qiymatlar sohasi [−5; +∞). (−∞; −5] varianti tarmoq yo'nalishini teskari olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#73eb9359"
+    },
+    {
+      "q": "Chizmada y = ax² + bx + c kvadrat funksiyaning grafigi tasvirlangan. Uning koeffitsientlari ishorasini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "a > 0, b < 0, c < 0",
+        "a > 0, b > 0, c < 0",
+        "a < 0, b < 0, c < 0",
+        "a > 0, b < 0, c > 0"
+      ],
+      "t": 0,
+      "izoh": "Tarmoqlar yuqoriga yo'nalgan, demak a > 0. Uch Oy o'qidan o'ngda, ya'ni x₀ = −b/(2a) > 0; a musbat bo'lgani uchun b manfiy bo'lishi shart. Grafik Oy o'qini nol chizig'idan pastda kesadi, shuning uchun c < 0.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='10' y1='150' x2='290' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='10' x2='150' y2='290' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='30' y1='146' x2='30' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='270' x2='154' y2='270' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='50' y1='146' x2='50' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='250' x2='154' y2='250' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='70' y1='146' x2='70' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='230' x2='154' y2='230' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='90' y1='146' x2='90' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='210' x2='154' y2='210' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='110' y1='146' x2='110' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='190' x2='154' y2='190' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='130' y1='146' x2='130' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='170' x2='154' y2='170' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='170' y1='146' x2='170' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='130' x2='154' y2='130' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='190' y1='146' x2='190' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='110' x2='154' y2='110' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='210' y1='146' x2='210' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='90' x2='154' y2='90' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='230' y1='146' x2='230' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='70' x2='154' y2='70' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='250' y1='146' x2='250' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='50' x2='154' y2='50' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='270' y1='146' x2='270' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='30' x2='154' y2='30' stroke='%23334155' stroke-width='1'/%3E%3Ctext x='284' y='143' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='156' y='20' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='139' y='164' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Ctext x='167' y='143' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='136' y='133' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Cpolyline points='100,8 105,29 110,50 115,69 120,88 125,104 130,120 135,134 140,148 145,159 150,170 155,179 160,188 165,194 170,200 175,204 180,208 185,209 190,210 195,209 200,208 205,204 210,200 215,194 220,188 225,179 230,170 235,159 240,148 245,134 250,120 255,104 260,88 265,69 270,50 275,29 280,8' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koeffitsient-ishorasi-grafikdan",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#6a62974c"
+    },
+    {
+      "q": "Rasmda berilgan parabola y = ax² + bx + c funksiyaga tegishli. a, b va c koeffitsientlarning ishoralari qanday bo'ladi?",
+      "v": [
+        "a < 0, b > 0, c > 0",
+        "a < 0, b < 0, c > 0",
+        "a < 0, b < 0, c < 0",
+        "a > 0, b < 0, c > 0"
+      ],
+      "t": 1,
+      "izoh": "Tarmoqlar pastga qaragani uchun a < 0. Uch Oy o'qidan chapda joylashgan, ya'ni x₀ < 0. x₀ = −b/(2a) da maxraj manfiy, natija manfiy chiqishi uchun surat ham manfiy bo'lishi kerak, demak b < 0. Grafik Oy o'qini musbat qismida kesgani uchun c > 0.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='10' y1='150' x2='290' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='10' x2='150' y2='290' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='30' y1='146' x2='30' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='270' x2='154' y2='270' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='50' y1='146' x2='50' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='250' x2='154' y2='250' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='70' y1='146' x2='70' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='230' x2='154' y2='230' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='90' y1='146' x2='90' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='210' x2='154' y2='210' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='110' y1='146' x2='110' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='190' x2='154' y2='190' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='130' y1='146' x2='130' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='170' x2='154' y2='170' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='170' y1='146' x2='170' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='130' x2='154' y2='130' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='190' y1='146' x2='190' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='110' x2='154' y2='110' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='210' y1='146' x2='210' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='90' x2='154' y2='90' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='230' y1='146' x2='230' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='70' x2='154' y2='70' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='250' y1='146' x2='250' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='50' x2='154' y2='50' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='270' y1='146' x2='270' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='30' x2='154' y2='30' stroke='%23334155' stroke-width='1'/%3E%3Ctext x='284' y='143' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='156' y='20' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='139' y='164' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Ctext x='167' y='143' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='136' y='133' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Cpolyline points='55,276 60,245 65,216 70,190 75,166 80,145 85,126 90,110 95,96 100,85 105,76 110,70 115,66 120,65 125,66 130,70 135,76 140,85 145,96 150,110 155,126 160,145 165,166 170,190 175,216 180,245 185,276' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsient-ishorasi-grafikdan",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#e956faea"
+    },
+    {
+      "q": "Chizmadagi parabola Ox o'qi bilan umuman kesishmaydi. Shu grafikka mos y = ax² + bx + c funksiya koeffitsientlarining ishoralarini aniqlang.",
+      "v": [
+        "a > 0, b < 0, c > 0",
+        "a > 0, b > 0, c < 0",
+        "a > 0, b > 0, c > 0",
+        "a < 0, b > 0, c > 0"
+      ],
+      "t": 2,
+      "izoh": "Parabola yuqoriga ochilgan, shuning uchun a > 0. Uch Oy o'qining chap tomonida, ya'ni x₀ = −b/(2a) < 0; maxraj musbat bo'lgani uchun b musbat bo'lishi kerak. Grafik Oy o'qini musbat nuqtada kesadi, demak c > 0.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='10' y1='150' x2='290' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='10' x2='150' y2='290' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='30' y1='146' x2='30' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='270' x2='154' y2='270' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='50' y1='146' x2='50' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='250' x2='154' y2='250' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='70' y1='146' x2='70' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='230' x2='154' y2='230' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='90' y1='146' x2='90' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='210' x2='154' y2='210' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='110' y1='146' x2='110' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='190' x2='154' y2='190' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='130' y1='146' x2='130' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='170' x2='154' y2='170' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='170' y1='146' x2='170' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='130' x2='154' y2='130' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='190' y1='146' x2='190' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='110' x2='154' y2='110' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='210' y1='146' x2='210' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='90' x2='154' y2='90' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='230' y1='146' x2='230' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='70' x2='154' y2='70' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='250' y1='146' x2='250' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='50' x2='154' y2='50' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='270' y1='146' x2='270' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='30' x2='154' y2='30' stroke='%23334155' stroke-width='1'/%3E%3Ctext x='284' y='143' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='156' y='20' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='139' y='164' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Ctext x='167' y='143' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='136' y='133' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Cpolyline points='65,29 70,50 75,69 80,85 85,99 90,110 95,119 100,125 105,129 110,130 115,129 120,125 125,119 130,110 135,99 140,85 145,69 150,50 155,29' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsient-ishorasi-grafikdan",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#f18923da"
+    },
+    {
+      "q": "Chizmadagi parabola butunlay Ox o'qidan pastda yotadi. Uning y = ax² + bx + c ko'rinishidagi koeffitsientlari ishorasini toping.",
+      "v": [
+        "a < 0, b < 0, c < 0",
+        "a > 0, b > 0, c < 0",
+        "a < 0, b > 0, c > 0",
+        "a < 0, b > 0, c < 0"
+      ],
+      "t": 3,
+      "izoh": "Tarmoqlar pastga yo'nalgani a < 0 ekanini bildiradi. Uch Oy o'qidan o'ngda, ya'ni x₀ > 0; x₀ = −b/(2a) da maxraj manfiy bo'lgani uchun b musbat bo'lishi kerak. Oy o'qi bilan kesishish nol chizig'idan pastda, shuning uchun c < 0.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='10' y1='150' x2='290' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='10' x2='150' y2='290' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='30' y1='146' x2='30' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='270' x2='154' y2='270' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='50' y1='146' x2='50' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='250' x2='154' y2='250' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='70' y1='146' x2='70' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='230' x2='154' y2='230' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='90' y1='146' x2='90' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='210' x2='154' y2='210' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='110' y1='146' x2='110' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='190' x2='154' y2='190' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='130' y1='146' x2='130' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='170' x2='154' y2='170' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='170' y1='146' x2='170' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='130' x2='154' y2='130' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='190' y1='146' x2='190' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='110' x2='154' y2='110' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='210' y1='146' x2='210' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='90' x2='154' y2='90' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='230' y1='146' x2='230' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='70' x2='154' y2='70' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='250' y1='146' x2='250' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='50' x2='154' y2='50' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='270' y1='146' x2='270' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='30' x2='154' y2='30' stroke='%23334155' stroke-width='1'/%3E%3Ctext x='284' y='143' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='156' y='20' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='139' y='164' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Ctext x='167' y='143' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='136' y='133' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Cpolyline points='120,293 125,276 130,260 135,246 140,233 145,221 150,210 155,201 160,193 165,186 170,180 175,176 180,173 185,171 190,170 195,171 200,173 205,176 210,180 215,186 220,193 225,201 230,210 235,221 240,233 245,246 250,260 255,276 260,293' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsient-ishorasi-grafikdan",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#41c2e6ba"
+    },
+    {
+      "q": "Chizmada berilgan parabolaga qarab ax² + bx + c = 0 tenglama diskriminantining ishorasini aniqlang.",
+      "v": [
+        "D > 0",
+        "D = 0",
+        "D < 0",
+        "D ning ishorasini grafikdan bilib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Parabola abssissalar o'qini ikkita har xil nuqtada kesib o'tgan. Har bir kesishish nuqtasi tenglamaning haqiqiy ildizi hisoblanadi. Ikkita har xil ildiz faqat D > 0 bo'lgandagina mavjud bo'ladi, shuning uchun diskriminant musbat.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='10' y1='150' x2='290' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='10' x2='150' y2='290' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='30' y1='146' x2='30' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='270' x2='154' y2='270' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='50' y1='146' x2='50' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='250' x2='154' y2='250' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='70' y1='146' x2='70' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='230' x2='154' y2='230' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='90' y1='146' x2='90' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='210' x2='154' y2='210' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='110' y1='146' x2='110' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='190' x2='154' y2='190' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='130' y1='146' x2='130' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='170' x2='154' y2='170' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='170' y1='146' x2='170' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='130' x2='154' y2='130' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='190' y1='146' x2='190' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='110' x2='154' y2='110' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='210' y1='146' x2='210' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='90' x2='154' y2='90' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='230' y1='146' x2='230' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='70' x2='154' y2='70' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='250' y1='146' x2='250' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='50' x2='154' y2='50' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='270' y1='146' x2='270' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='30' x2='154' y2='30' stroke='%23334155' stroke-width='1'/%3E%3Ctext x='284' y='143' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='156' y='20' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='139' y='164' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Ctext x='167' y='143' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='136' y='133' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Cpolyline points='105,19 110,50 115,79 120,105 125,129 130,150 135,169 140,185 145,199 150,210 155,219 160,225 165,229 170,230 175,229 180,225 185,219 190,210 195,199 200,185 205,169 210,150 215,129 220,105 225,79 230,50 235,19' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafikdan-diskriminant-ishorasi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#617597bf"
+    },
+    {
+      "q": "Rasmdagi parabola abssissalar o'qiga bir nuqtada tegib o'tadi. Bunga mos kvadrat tenglama haqida nima deyish mumkin?",
+      "v": [
+        "D > 0 va ildizlar har xil",
+        "D = 0 va yagona ildiz bor",
+        "D < 0 va haqiqiy ildiz yo'q",
+        "D > 0 va ildizlar o'zaro teng"
+      ],
+      "t": 1,
+      "izoh": "Grafik Ox o'qini kesmaydi, faqat unga urinadi, ya'ni yagona umumiy nuqta bor. Bu holat diskriminant nolga teng bo'lganda yuzaga keladi. D > 0 bo'lganda ildizlar har xil bo'lardi, shuning uchun to'rtinchi variant ichki ziddiyatga ega.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='10' y1='150' x2='290' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='10' x2='150' y2='290' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='30' y1='146' x2='30' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='270' x2='154' y2='270' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='50' y1='146' x2='50' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='250' x2='154' y2='250' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='70' y1='146' x2='70' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='230' x2='154' y2='230' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='90' y1='146' x2='90' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='210' x2='154' y2='210' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='110' y1='146' x2='110' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='190' x2='154' y2='190' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='130' y1='146' x2='130' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='170' x2='154' y2='170' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='170' y1='146' x2='170' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='130' x2='154' y2='130' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='190' y1='146' x2='190' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='110' x2='154' y2='110' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='210' y1='146' x2='210' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='90' x2='154' y2='90' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='230' y1='146' x2='230' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='70' x2='154' y2='70' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='250' y1='146' x2='250' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='50' x2='154' y2='50' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='270' y1='146' x2='270' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='30' x2='154' y2='30' stroke='%23334155' stroke-width='1'/%3E%3Ctext x='284' y='143' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='156' y='20' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='139' y='164' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Ctext x='167' y='143' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='136' y='133' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Cpolyline points='125,12 130,25 135,37 140,49 145,60 150,70 155,80 160,89 165,97 170,105 175,112 180,119 185,125 190,130 195,135 200,139 205,142 210,145 215,147 220,149 225,150 230,150 235,150 240,149 245,147 250,145 255,142 260,139 265,135 270,130 275,125 280,119 285,112 290,105 295,97 300,89' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafikdan-diskriminant-ishorasi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#a7aaa9a0"
+    },
+    {
+      "q": "Chizmadagi grafikka ko'ra ax² + bx + c = 0 tenglama nechta haqiqiy ildizga ega va uning diskriminanti qanday ishorali?",
+      "v": [
+        "Ikkita ildiz, D > 0",
+        "Bitta ildiz, D = 0",
+        "Ildizi yo'q, D < 0",
+        "Ildizi yo'q, ammo D > 0"
+      ],
+      "t": 2,
+      "izoh": "Parabola pastga ochilgan va butunlay Ox o'qidan past joylashgan, ya'ni o'q bilan umumiy nuqtasi yo'q. Umumiy nuqta bo'lmasa tenglamaning haqiqiy ildizi ham bo'lmaydi. Bu esa faqat D < 0 bo'lganda ro'y beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='10' y1='150' x2='290' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='10' x2='150' y2='290' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='30' y1='146' x2='30' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='270' x2='154' y2='270' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='50' y1='146' x2='50' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='250' x2='154' y2='250' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='70' y1='146' x2='70' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='230' x2='154' y2='230' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='90' y1='146' x2='90' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='210' x2='154' y2='210' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='110' y1='146' x2='110' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='190' x2='154' y2='190' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='130' y1='146' x2='130' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='170' x2='154' y2='170' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='170' y1='146' x2='170' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='130' x2='154' y2='130' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='190' y1='146' x2='190' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='110' x2='154' y2='110' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='210' y1='146' x2='210' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='90' x2='154' y2='90' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='230' y1='146' x2='230' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='70' x2='154' y2='70' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='250' y1='146' x2='250' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='50' x2='154' y2='50' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='270' y1='146' x2='270' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='30' x2='154' y2='30' stroke='%23334155' stroke-width='1'/%3E%3Ctext x='284' y='143' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='156' y='20' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='139' y='164' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Ctext x='167' y='143' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='136' y='133' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Cpolyline points='130,290 135,271 140,255 145,241 150,230 155,221 160,215 165,211 170,210 175,211 180,215 185,221 190,230 195,241 200,255 205,271 210,290' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafikdan-diskriminant-ishorasi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#93eaafd4"
+    },
+    {
+      "q": "Chizmadagi parabola koordinatalar boshidan o'tadi va Ox o'qini yana bitta nuqtada kesadi. c koeffitsient hamda diskriminant haqida nima deyish mumkin?",
+      "v": [
+        "c = 0 va D = 0",
+        "c > 0 va D > 0",
+        "c < 0 va D < 0",
+        "c = 0 va D > 0"
+      ],
+      "t": 3,
+      "izoh": "Grafik (0; 0) nuqtadan o'tgani uchun x = 0 da y = 0, ya'ni c = 0. Bundan tashqari parabola Ox o'qini ikkita har xil nuqtada kesadi, demak ikkita har xil ildiz bor. Ikkita ildiz D > 0 ni bildiradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='10' y1='150' x2='290' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='10' x2='150' y2='290' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='30' y1='146' x2='30' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='270' x2='154' y2='270' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='50' y1='146' x2='50' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='250' x2='154' y2='250' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='70' y1='146' x2='70' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='230' x2='154' y2='230' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='90' y1='146' x2='90' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='210' x2='154' y2='210' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='110' y1='146' x2='110' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='190' x2='154' y2='190' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='130' y1='146' x2='130' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='170' x2='154' y2='170' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='170' y1='146' x2='170' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='130' x2='154' y2='130' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='190' y1='146' x2='190' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='110' x2='154' y2='110' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='210' y1='146' x2='210' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='90' x2='154' y2='90' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='230' y1='146' x2='230' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='70' x2='154' y2='70' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='250' y1='146' x2='250' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='50' x2='154' y2='50' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='270' y1='146' x2='270' y2='154' stroke='%23334155' stroke-width='1'/%3E%3Cline x1='146' y1='30' x2='154' y2='30' stroke='%23334155' stroke-width='1'/%3E%3Ctext x='284' y='143' font-size='13' fill='%23334155'%3Ex%3C/text%3E%3Ctext x='156' y='20' font-size='13' fill='%23334155'%3Ey%3C/text%3E%3Ctext x='139' y='164' font-size='13' fill='%23334155'%3EO%3C/text%3E%3Ctext x='167' y='143' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Ctext x='136' y='133' font-size='13' fill='%23334155'%3E1%3C/text%3E%3Cpolyline points='25,291 30,270 35,251 40,233 45,216 50,200 55,186 60,173 65,161 70,150 75,141 80,133 85,126 90,120 95,116 100,113 105,111 110,110 115,111 120,113 125,116 130,120 135,126 140,133 145,141 150,150 155,161 160,173 165,186 170,200 175,216 180,233 185,251 190,270 195,291' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafikdan-diskriminant-ishorasi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#f5394d91"
+    },
+    {
+      "q": "Bir parabolaning uchi (−3; 0) nuqtada, tarmoqlari yuqoriga yo'nalgan va u Oy o'qini (0; 9) nuqtada kesadi. Qaysi funksiya shu grafikka mos keladi?",
+      "v": [
+        "y = (x − 3)²",
+        "y = (x + 3)²",
+        "y = (x + 3)² + 9",
+        "y = −(x + 3)²"
+      ],
+      "t": 1,
+      "izoh": "Uch (−3; 0) bo'lgani uchun funksiya y = a(x + 3)² ko'rinishida bo'ladi. x = 0 da y = 9 sharti a·9 = 9, ya'ni a = 1 ni beradi. Demak y = (x + 3)². Uchinchi variantda uch (−3; 9) ga ko'chib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-tavsifidan-formula-tanlash",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#01d1938e"
+    },
+    {
+      "q": "Parabola abssissalar o'qini x = −1 va x = 5 nuqtalarda kesadi, tarmoqlari esa pastga yo'nalgan. Qaysi funksiya shunday grafikka ega bo'ladi?",
+      "v": [
+        "y = (x + 1)(x − 5)",
+        "y = −(x − 1)(x + 5)",
+        "y = −(x + 1)(x + 5)",
+        "y = −(x + 1)(x − 5)"
+      ],
+      "t": 3,
+      "izoh": "Ildizlari −1 va 5 bo'lgan funksiya y = a(x + 1)(x − 5) ko'rinishda yoziladi. Tarmoqlar pastga yo'nalgani uchun a manfiy, eng soddasi a = −1. Demak y = −(x + 1)(x − 5). Birinchi variantning ildizlari to'g'ri, lekin tarmoqlari yuqoriga qaragan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-tavsifidan-formula-tanlash",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#4616e6d4"
+    },
+    {
+      "q": "Parabolaning uchi (4; −2) nuqtada joylashgan va grafik Oy o'qini (0; 14) nuqtada kesadi. Shu shartlarga mos funksiyani tanlang.",
+      "v": [
+        "y = (x − 4)² − 2",
+        "y = (x + 4)² − 2",
+        "y = 2(x − 4)² − 2",
+        "y = (x − 4)² + 2"
+      ],
+      "t": 0,
+      "izoh": "Uch berilgani uchun y = a(x − 4)² − 2 deb yozamiz. x = 0 da y = 14 sharti 16a − 2 = 14, ya'ni 16a = 16 va a = 1 ni beradi. Demak y = (x − 4)² − 2. Uchinchi variantda x = 0 da 30 chiqadi, bu shartga mos emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-tavsifidan-formula-tanlash",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#9d9eee47"
+    },
+    {
+      "q": "Parabolaning simmetriya o'qi x = 2 tenglama bilan berilgan, u Oy o'qini (0; −6) nuqtada kesadi va Ox o'qi bilan ikkita kesishish nuqtasiga ega. Qaysi funksiya mos keladi?",
+      "v": [
+        "y = x² + 4x − 6",
+        "y = x² − 4x + 6",
+        "y = x² − 4x − 6",
+        "y = 2x² − 4x − 6"
+      ],
+      "t": 2,
+      "izoh": "Oy kesishishi c = −6 ni beradi, shuning uchun ikkinchi variant chiqib ketadi. Simmetriya o'qi x = −b/(2a) = 2 shartini tekshiramiz: y = x² − 4x − 6 da 4/2 = 2, mos keladi. To'rtinchi variantda esa 4/4 = 1 chiqadi. Diskriminant 16 + 24 = 40 > 0, ya'ni ikkita kesishish bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-tavsifidan-formula-tanlash",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#9c7daa43"
+    },
+    {
+      "q": "y = x² − 10x + 3 funksiya qaysi oraliqda kamayib boradi?",
+      "v": [
+        "(−∞; 5]",
+        "[5; +∞)",
+        "(−∞; 3]",
+        "[−5; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Uch abssissasi x₀ = 10/(2·1) = 5 ga teng. Tarmoqlar yuqoriga yo'nalgani uchun funksiya uchgacha kamayadi va undan keyin o'sadi. Demak kamayish oralig'i (−∞; 5]. [5; +∞) — bu o'sish oralig'i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "osish-kamayish-oraligi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#937a0444"
+    },
+    {
+      "q": "y = −2x² + 16x − 5 funksiyaning o'sish oralig'ini toping.",
+      "v": [
+        "[4; +∞)",
+        "(−∞; 4]",
+        "(−∞; 8]",
+        "[−4; +∞)"
+      ],
+      "t": 1,
+      "izoh": "x₀ = −16/(2·(−2)) = 4 bo'ladi. Bosh koeffitsient manfiy, shuning uchun parabola uchgacha o'sadi va undan keyin kamayadi. Demak o'sish oralig'i (−∞; 4]. (−∞; 8] varianti maxrajdagi ikkiga bo'lishni unutishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "osish-kamayish-oraligi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#c2d79381"
+    },
+    {
+      "q": "Do'kondagi kunlik savdo hajmi S = −0,5x² + 6x + 20 formula bilan o'zgaradi, bu yerda x — aksiya boshlanganidan keyingi kun. Savdo qachongacha o'sib boradi?",
+      "v": [
+        "12-kungacha o'sadi, keyin kamayadi",
+        "3-kungacha o'sadi, keyin kamayadi",
+        "6-kungacha o'sadi, keyin kamayadi",
+        "savdo doim o'sib boradi"
+      ],
+      "t": 2,
+      "izoh": "Uch abssissasi x₀ = −6/(2·(−0,5)) = 6 ga teng. Bosh koeffitsient manfiy bo'lgani uchun funksiya 6-kungacha o'sadi, so'ng kamaya boshlaydi. 12-kun varianti maxrajdagi ikkiga bo'lishni tashlab ketish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "osish-kamayish-oraligi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#4e67b1ea"
+    },
+    {
+      "q": "y = 3x² + 18x + 4 funksiyaning o'sish va kamayish oraliqlari qaysi variantda to'g'ri ko'rsatilgan?",
+      "v": [
+        "o'sadi (−∞; −3], kamayadi [−3; +∞)",
+        "kamayadi (−∞; 3], o'sadi [3; +∞)",
+        "kamayadi (−∞; −6], o'sadi [−6; +∞)",
+        "kamayadi (−∞; −3], o'sadi [−3; +∞)"
+      ],
+      "t": 3,
+      "izoh": "x₀ = −18/(2·3) = −3 topiladi. a = 3 musbat bo'lgani uchun funksiya uchgacha kamayadi, uchdan keyin o'sadi. Demak kamayish (−∞; −3], o'sish [−3; +∞). Uchinchi variant x₀ ni −b/a deb hisoblash xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "osish-kamayish-oraligi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#ac64ee64"
+    },
+    {
+      "q": "y = x² + bx + c kvadrat funksiya uchun f(1) = f(7) tengligi bajariladi. Uning simmetriya o'qi tenglamasini toping.",
+      "v": [
+        "x = 4",
+        "x = 3",
+        "x = 8",
+        "x = 6"
+      ],
+      "t": 0,
+      "izoh": "Parabolada teng qiymatlar simmetriya o'qidan bir xil uzoqlikdagi nuqtalarda hosil bo'ladi. Demak o'q 1 va 7 sonlarining o'rtasidan o'tadi: (1 + 7)/2 = 4. Javob x = 4. x = 6 varianti ayirmani o'qning o'rni deb olish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriyadan-teng-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#3e40500c"
+    },
+    {
+      "q": "Parabola abssissalar o'qini x = −5 va x = 9 nuqtalarda kesib o'tadi. Uning uchi qaysi abssissada joylashgan?",
+      "v": [
+        "x = −2",
+        "x = 2",
+        "x = 7",
+        "x = 4"
+      ],
+      "t": 1,
+      "izoh": "Parabola ildizlariga nisbatan simmetrik, shuning uchun uch ildizlar o'rtasida yotadi. x₀ = (−5 + 9)/2 = 4/2 = 2. Javob x = 2. x = 4 varianti ikkiga bo'lishni unutish, x = 7 esa ildizlarni ayirish xatosidan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriyadan-teng-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#c5744817"
+    },
+    {
+      "q": "Bino oldidagi ravoq shaklidagi darvoza yer sathini bir chetidan 1 m va ikkinchi chetidan 9 m masofada kesadi. Darvozaning eng baland nuqtasi sanoq boshidan qanday masofada bo'ladi?",
+      "v": [
+        "4 m",
+        "8 m",
+        "5 m",
+        "10 m"
+      ],
+      "t": 2,
+      "izoh": "Ravoq parabola shaklida bo'lgani uchun eng baland nuqta ikki tayanch o'rtasida yotadi. Uning abssissasi (1 + 9)/2 = 5 m. Javob 5 m. 8 m — tayanchlar orasidagi masofa, 4 m esa uning yarmi, ikkalasi ham eng baland nuqtaning o'rni emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriyadan-teng-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#a5d2b600"
+    },
+    {
+      "q": "f(x) = 2x² − 12x + 1 funksiya berilgan. f(−1) va f(7) qiymatlarini hisoblamasdan taqqoslang.",
+      "v": [
+        "f(−1) > f(7)",
+        "f(−1) < f(7)",
+        "Taqqoslab bo'lmaydi",
+        "f(−1) = f(7)"
+      ],
+      "t": 3,
+      "izoh": "Simmetriya o'qi x₀ = 12/(2·2) = 3 chizig'i. −1 nuqta o'qdan 4 birlik chapda, 7 nuqta esa xuddi shu 4 birlik o'ngda. Simmetrik nuqtalarda funksiya qiymatlari teng, shuning uchun f(−1) = f(7). Tekshirish: ikkalasi ham 15 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetriyadan-teng-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#3ae932ec"
+    },
+    {
+      "q": "y = x² − 4x + 1 funksiyaning [0; 5] kesmadagi eng katta qiymatini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "6",
+        "1",
+        "−3",
+        "26"
+      ],
+      "t": 0,
+      "izoh": "Uch x₀ = 4/2 = 2 kesma ichida, lekin a > 0 bo'lgani uchun u eng kichik qiymatni beradi. Eng katta qiymat kesma chetlarida izlanadi: y(0) = 1 va y(5) = 25 − 20 + 1 = 6. Ikkalasidan kattasi 6. −3 esa uchdagi eng kichik qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmada-eng-katta-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#bbf25ea8"
+    },
+    {
+      "q": "y = −x² + 6x − 5 funksiya [0; 2] kesmada qanday eng katta qiymatga erishadi?",
+      "v": [
+        "4",
+        "−5",
+        "3",
+        "11"
+      ],
+      "t": 2,
+      "izoh": "Uch x₀ = 3 nuqtada, ammo u [0; 2] kesmaga kirmaydi. a < 0 bo'lgani uchun funksiya uchgacha o'sadi, demak kesmada ham o'sib boradi va eng katta qiymat o'ng chetda. y(2) = −4 + 12 − 5 = 3. 4 varianti kesmadan tashqaridagi uch qiymatidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmada-eng-katta-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#0bd32034"
+    },
+    {
+      "q": "Anvarning to'quv sexida kunlik foyda F = −2x² + 20x + 8 (ming so'm), bu yerda x — smenadagi ishchilar soni. Sexda 1 dan 4 tagacha ishchi bo'lishi mumkin, eng katta foyda qancha?",
+      "v": [
+        "58 ming so'm",
+        "56 ming so'm",
+        "26 ming so'm",
+        "50 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Uch x₀ = −20/(2·(−2)) = 5 nuqtada, lekin 5 ta ishchi ruxsat etilgan [1; 4] oraliqqa kirmaydi. Funksiya uchgacha o'sadi, shuning uchun eng katta qiymat x = 4 da: F(4) = −32 + 80 + 8 = 56. 58 varianti oraliqdan chiqib ketgan uch qiymatidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmada-eng-katta-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#176ba13d"
+    },
+    {
+      "q": "y = 2x² − 8x + 3 funksiyaning [−1; 1] kesmadagi eng katta qiymati nechaga teng?",
+      "v": [
+        "3",
+        "−3",
+        "−5",
+        "13"
+      ],
+      "t": 3,
+      "izoh": "Uch x₀ = 8/(2·2) = 2 kesmadan o'ngda qolgan, shuning uchun kesmada funksiya kamayib boradi. Demak eng katta qiymat chap chetda: y(−1) = 2 + 8 + 3 = 13. −3 — o'ng chetdagi eng kichik qiymat, −5 esa kesmaga kirmaydigan uch qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmada-eng-katta-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#6771915c"
+    },
+    {
+      "q": "y = x² − 6x + 10 funksiyaning [1; 5] kesmadagi eng kichik qiymatini aniqlang.",
+      "v": [
+        "1",
+        "5",
+        "10",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Uch x₀ = 6/2 = 3 kesma ichida joylashgan va a > 0, shuning uchun aynan shu nuqtada eng kichik qiymat bo'ladi. y(3) = 9 − 18 + 10 = 1. Javob 1. 3 varianti uch abssissasini qiymat deb olish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesmada-eng-kichik-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#c719abb6"
+    },
+    {
+      "q": "y = −x² + 4x + 5 funksiya [0; 3] kesmada eng kichik qiymatni qaysi songa teng qilib qabul qiladi?",
+      "v": [
+        "8",
+        "5",
+        "9",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "a < 0 bo'lgani uchun uchda eng katta qiymat bo'ladi, eng kichigi esa kesma chetlarida izlanadi. y(0) = 5 va y(3) = −9 + 12 + 5 = 8. Kichigi 5. 9 varianti uchdagi eng katta qiymat, 2 esa uch abssissasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmada-eng-kichik-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#c0c65274"
+    },
+    {
+      "q": "Yuk mashinasining 100 km yo'lga sarflaydigan yoqilg'i xarajati C = 0,5x² − 6x + 40 (ming so'm) formula bilan baholanadi, bu yerda x — tezlikning o'nlik ko'rsatkichi (x = 6 bo'lsa tezlik 60 km/soat). Tezlik 40 dan 100 km/soat gacha bo'lsa, eng kam xarajat qancha?",
+      "v": [
+        "24 ming so'm",
+        "30 ming so'm",
+        "22 ming so'm",
+        "40 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "x₀ = 6/(2·0,5) = 6 bo'lib, u ruxsat etilgan [4; 10] oraliq ichida. a > 0 bo'lgani uchun aynan shu tezlikda (60 km/soat) xarajat eng kam: C(6) = 18 − 36 + 40 = 22. Chetlardagi qiymatlar C(4) = 24 va C(10) = 30 — ikkalasi ham kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmada-eng-kichik-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#e25e7390"
+    },
+    {
+      "q": "y = 3x² + 6x − 2 funksiyaning [0; 4] kesmadagi eng kichik qiymati qaysi songa teng?",
+      "v": [
+        "−5",
+        "70",
+        "−1",
+        "−2"
+      ],
+      "t": 3,
+      "izoh": "Uch x₀ = −6/(2·3) = −1 nuqtada, ya'ni kesmadan chapda qolgan. Shuning uchun kesmada funksiya faqat o'sadi va eng kichik qiymat chap chetda: y(0) = −2. −5 varianti kesmaga kirmaydigan uchdagi qiymat, 70 esa o'ng chetdagi eng katta qiymatdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmada-eng-kichik-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#b3bfe48d"
+    },
+    {
+      "q": "Fermer 60 m to'r bilan to'g'ri to'rtburchak shaklidagi tovuqxona hovlisini o'ramoqchi. Hovlining yuzasi eng katta bo'lishi uchun uning yuzasi necha kvadrat metrga teng bo'ladi?",
+      "v": [
+        "225 m²",
+        "200 m²",
+        "900 m²",
+        "450 m²"
+      ],
+      "t": 0,
+      "izoh": "Perimetr 60 m bo'lgani uchun ikki qo'shni tomon yig'indisi 30 m. Tomonlarni x va 30 − x deb olsak, yuza S = x(30 − x) = −x² + 30x. Uch x₀ = 30/2 = 15 da, ya'ni kvadrat hosil bo'ladi va S = 15·15 = 225 m². 900 m² varianti har tomonni 30 m deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-maksimal-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#fccafbe9"
+    },
+    {
+      "q": "Teatr chiptasi 10 000 so'm bo'lganda 400 tomoshabin keladi. Narx har 1000 so'mga oshirilganda tomoshabinlar soni 25 taga kamayadi. Eng katta tushum uchun chipta narxi qanday bo'lishi kerak?",
+      "v": [
+        "10 000 so'm",
+        "13 000 so'm",
+        "16 000 so'm",
+        "12 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Narx oshirishlar sonini x deb olsak, tushum T = (10 000 + 1000x)(400 − 25x). Qavslarni ochib T = 4 000 000 + 150 000x − 25 000x² hosil qilamiz. Uch x₀ = 150 000/(2·25 000) = 3, ya'ni narx uch marta oshiriladi va 13 000 so'm bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-maksimal-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#da6f0dee"
+    },
+    {
+      "q": "Zavod bir kunda x dona mahsulot ishlab chiqarsa, foydasi P = −0,2x² + 24x − 200 (ming so'm) bo'ladi. Erishish mumkin bo'lgan eng katta kunlik foydani hisoblang.",
+      "v": [
+        "60 ming so'm",
+        "720 ming so'm",
+        "520 ming so'm",
+        "1240 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Eng katta foyda uchda bo'ladi, chunki a = −0,2 manfiy. x₀ = −24/(2·(−0,2)) = 60 dona. P(60) = −0,2·3600 + 24·60 − 200 = −720 + 1440 − 200 = 520. 60 varianti mahsulot soni, 1240 esa birinchi hadni tashlab ketish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-maksimal-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#b1ae2b47"
+    },
+    {
+      "q": "Tomorqaning bir tomoni uzun devorga tegib turadi, qolgan uch tomoni esa 40 m panjara bilan o'raladi. Tomorqaning eng katta yuzasi qanday bo'ladi?",
+      "v": [
+        "100 m²",
+        "400 m²",
+        "150 m²",
+        "200 m²"
+      ],
+      "t": 3,
+      "izoh": "Devorga perpendikulyar ikki tomonni x deb olsak, uchinchi tomon 40 − 2x bo'ladi. Yuza S = x(40 − 2x) = −2x² + 40x. Uch x₀ = −40/(2·(−2)) = 10, demak tomonlar 10 m va 20 m. Eng katta yuza 10·20 = 200 m². 400 m² varianti 40 − 2x o'rniga 40 − x yozib, devorga perpendikulyar ikkinchi tomonni hisobga olmaslikdan chiqadi. 100 m² esa devor borligini butunlay unutib, to'rt tomonni ham panjara bilan o'rash (x + y = 20) natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-maksimal-qiymat",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#e042dd91"
+    },
+    {
+      "q": "Koptok yerdan tik yuqoriga otildi va uning balandligi h = −5t² + 20t (m) qonun bilan o'zgaradi. Koptok qachon va qanday eng katta balandlikka ko'tariladi?",
+      "v": [
+        "2 s da 20 m",
+        "4 s da 20 m",
+        "2 s da 40 m",
+        "20 s da 2 m"
+      ],
+      "t": 0,
+      "izoh": "Balandlik parabola bo'lib, a = −5 manfiy, shuning uchun uch eng yuqori nuqta. t₀ = −20/(2·(−5)) = 2 s. Balandlik h(2) = −5·4 + 20·2 = −20 + 40 = 20 m. 4 s varianti maxrajdagi ikkiga bo'lishni unutishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "otilgan-jism-balandligi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#57a6d932"
+    },
+    {
+      "q": "Yer sathidan otilgan to'pning balandligi h = −5t² + 25t (m) formula bilan beriladi. To'p necha soniyadan keyin yerga qaytib tushadi?",
+      "v": [
+        "2,5 s",
+        "5 s",
+        "10 s",
+        "25 s"
+      ],
+      "t": 1,
+      "izoh": "Yerga tushish paytida h = 0 bo'ladi: −5t² + 25t = 0. Umumiy ko'paytuvchini chiqaramiz: −5t(t − 5) = 0, bundan t = 0 va t = 5. Boshlanish t = 0 bo'lgani uchun tushish vaqti 5 s. 2,5 s — bu eng baland nuqtaga chiqish vaqti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "otilgan-jism-balandligi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#8880b199"
+    },
+    {
+      "q": "Bo'yi 1,8 m bo'lgan Jasur to'pni tepaga otdi va to'p balandligi h = −5t² + 10t + 1,8 (m) qonuniga bo'ysunadi. To'p ko'tarilgan eng katta balandlikni toping.",
+      "v": [
+        "16,8 m",
+        "10 m",
+        "6,8 m",
+        "1,8 m"
+      ],
+      "t": 2,
+      "izoh": "Eng katta balandlik uchda bo'ladi: t₀ = −10/(2·(−5)) = 1 s. Shu paytda h(1) = −5 + 10 + 1,8 = 6,8 m. 1,8 m — otish paytidagi boshlang'ich balandlik, 16,8 m esa birinchi haddagi minusni e'tibordan qochirish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "otilgan-jism-balandligi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#ebf3f574"
+    },
+    {
+      "q": "Qoyaning 25 m balandligidagi chetidan tepaga otilgan tosh h = −5t² + 20t + 25 (m) qonun bilan harakatlanadi. Tosh qachon yer sathiga yetib boradi?",
+      "v": [
+        "2 s",
+        "4 s",
+        "45 s",
+        "5 s"
+      ],
+      "t": 3,
+      "izoh": "Yer sathida h = 0: −5t² + 20t + 25 = 0. Har ikki tomonni −5 ga bo'lamiz: t² − 4t − 5 = 0. Ildizlar t = 5 va t = −1, vaqt manfiy bo'lmagani uchun javob 5 s. 2 s — eng yuqori nuqtaga chiqish vaqti, 45 esa o'sha nuqtadagi balandlik qiymati, vaqt emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "otilgan-jism-balandligi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#6fc0a643"
+    },
+    {
+      "q": "y = x² − 3x + 4 parabola va y = x + 1 to'g'ri chiziq nechta umumiy nuqtaga ega ekanini aniqlang.",
+      "v": [
+        "2 ta umumiy nuqta",
+        "1 ta umumiy nuqta",
+        "umumiy nuqtasi yo'q",
+        "cheksiz ko'p umumiy nuqta"
+      ],
+      "t": 0,
+      "izoh": "Umumiy nuqtalarni topish uchun tenglamalarni tenglashtiramiz: x² − 3x + 4 = x + 1. Soddalashtirsak x² − 4x + 3 = 0, uning diskriminanti 16 − 12 = 4 > 0. Diskriminant musbat bo'lgani uchun ikkita umumiy nuqta bor, ular x = 1 va x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-togri-chiziq-kesishishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#05be09c0"
+    },
+    {
+      "q": "y = x² + 2x − 3 parabola va y = 5 gorizontal chiziq kesishadigan nuqtalarning abssissalarini toping.",
+      "v": [
+        "x = −2 va x = 4",
+        "x = 2 va x = −4",
+        "x = 3 va x = −5",
+        "x = 1 va x = −3"
+      ],
+      "t": 1,
+      "izoh": "Tenglashtiramiz: x² + 2x − 3 = 5, ya'ni x² + 2x − 8 = 0. Ildizlar yig'indisi −2, ko'paytmasi −8 bo'lgani uchun x = 2 va x = −4. x = 1 va x = −3 varianti tenglikning o'ng tomonidagi 5 ni hisobga olmay, parabola nollarini yozish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-togri-chiziq-kesishishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#bfba9a16"
+    },
+    {
+      "q": "y = x² parabola bilan y = 4x − 4 to'g'ri chiziq o'zaro qanday joylashgan?",
+      "v": [
+        "Ikki nuqtada kesishadi",
+        "Kesishmaydi",
+        "Ustma-ust tushadi",
+        "Bir nuqtada urinadi"
+      ],
+      "t": 3,
+      "izoh": "x² = 4x − 4 tenglamani yig'amiz: x² − 4x + 4 = 0, ya'ni (x − 2)² = 0. Diskriminant nolga teng, shuning uchun yagona umumiy nuqta bor. Bu urinish holati va urinish nuqtasi (2; 4) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-togri-chiziq-kesishishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#a1494781"
+    },
+    {
+      "q": "y = x² − 2x + 5 parabola y = 2x + m to'g'ri chiziqqa urinishi uchun m parametr qanday qiymatga ega bo'lishi kerak?",
+      "v": [
+        "m = −1",
+        "m = 5",
+        "m = 1",
+        "m = 4"
+      ],
+      "t": 2,
+      "izoh": "Tenglashtiramiz: x² − 2x + 5 = 2x + m, ya'ni x² − 4x + 5 − m = 0. Urinish sharti D = 0: 16 − 4(5 − m) = 0. Bundan 16 = 20 − 4m va m = 1. Tekshirish: m = 1 da tenglama (x − 2)² = 0 ko'rinishga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parabola-togri-chiziq-kesishishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#39ec3a1f"
+    },
+    {
+      "q": "Parabolaning uchi (2; −8) nuqtada bo'lib, u (0; −4) nuqtadan o'tadi. Shu parabolaning tenglamasini toping.",
+      "v": [
+        "y = x² − 4x − 4",
+        "y = x² + 4x − 4",
+        "y = (x + 2)² − 8",
+        "y = 2(x − 2)² − 8"
+      ],
+      "t": 0,
+      "izoh": "Uch berilgani uchun y = a(x − 2)² − 8 deb yozamiz. (0; −4) nuqtani qo'yamiz: a·4 − 8 = −4, bundan 4a = 4 va a = 1. Demak y = (x − 2)² − 8 = x² − 4x − 4. To'rtinchi variantda x = 0 da 0 chiqadi, shart bajarilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-va-nuqtadan-funksiya",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#610825bb"
+    },
+    {
+      "q": "Uchi (−1; 3) nuqtada joylashgan parabola (1; 11) nuqtadan o'tsa, uning tenglamasi qanday bo'ladi?",
+      "v": [
+        "y = 2(x − 1)² + 3",
+        "y = 2(x + 1)² + 3",
+        "y = (x + 1)² + 3",
+        "y = 2(x + 1)² − 3"
+      ],
+      "t": 1,
+      "izoh": "Kanonik ko'rinish y = a(x + 1)² + 3 bo'ladi, chunki uch abssissasi −1. (1; 11) ni qo'yamiz: a·4 + 3 = 11, ya'ni 4a = 8 va a = 2. Demak y = 2(x + 1)² + 3. Uchinchi variantda x = 1 da atigi 7 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-va-nuqtadan-funksiya",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#8ac802c5"
+    },
+    {
+      "q": "Ko'prik ravog'ining eng baland nuqtasi markazda 6 m, tayanchlari esa markazdan chapga va o'ngga 10 m masofada yer sathida joylashgan. Markazni koordinata boshi ustiga qo'yib ravoq tenglamasini yozing.",
+      "v": [
+        "y = −0,6x² + 6",
+        "y = 0,06x² + 6",
+        "y = −0,06x² + 6",
+        "y = −0,06x² − 6"
+      ],
+      "t": 2,
+      "izoh": "Uch (0; 6) bo'lgani uchun y = ax² + 6 ko'rinishida yozamiz. Tayanch nuqta (10; 0) ni qo'yamiz: 100a + 6 = 0, bundan a = −0,06. Demak y = −0,06x² + 6. Birinchi variantda x = 10 da y = −54 chiqadi, bu esa yer sathidan ancha past.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-va-nuqtadan-funksiya",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#a2d9ab3f"
+    },
+    {
+      "q": "Uchi (3; 4) nuqtada bo'lgan parabola Oy o'qini (0; −5) nuqtada kesib o'tadi. Uning bosh koeffitsienti nechaga teng?",
+      "v": [
+        "a = 1",
+        "a = −9",
+        "a = 3",
+        "a = −1"
+      ],
+      "t": 3,
+      "izoh": "Funksiyani y = a(x − 3)² + 4 ko'rinishida yozamiz. x = 0 da y = −5 sharti 9a + 4 = −5 ni beradi, bundan 9a = −9 va a = −1. Manfiy koeffitsient tarmoqlar pastga yo'nalganini ko'rsatadi, bu uchning Oy kesishishidan yuqorida turishiga mos.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-va-nuqtadan-funksiya",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#4b1bcd63"
+    },
+    {
+      "q": "Ildizlari −2 va 6 ga teng, bosh koeffitsienti 1 bo'lgan kvadrat funksiyani yozing.",
+      "v": [
+        "y = x² − 4x − 12",
+        "y = x² + 4x − 12",
+        "y = x² − 4x + 12",
+        "y = x² − 8x − 12"
+      ],
+      "t": 0,
+      "izoh": "Ildizlari ma'lum funksiya y = (x − x₁)(x − x₂) ko'rinishida yoziladi: y = (x + 2)(x − 6). Qavslarni ochamiz: x² − 6x + 2x − 12 = x² − 4x − 12. Viyet bilan tekshiramiz: ildizlar yig'indisi 4, ko'paytmasi −12, mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlardan-funksiya-tuzish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#f2dfec92"
+    },
+    {
+      "q": "Parabola abssissalar o'qini (−3; 0) va (5; 0) nuqtalarda kesadi hamda (1; −16) nuqtadan o'tadi. Uning tenglamasini aniqlang.",
+      "v": [
+        "y = x² + 2x − 15",
+        "y = x² − 2x − 15",
+        "y = 2x² − 4x − 30",
+        "y = x² − 2x + 15"
+      ],
+      "t": 1,
+      "izoh": "Ildizlar orqali y = a(x + 3)(x − 5) deb yozamiz. (1; −16) ni qo'yamiz: a·4·(−4) = −16, ya'ni −16a = −16 va a = 1. Qavslarni ochsak y = x² − 2x − 15. Uchinchi variant a = 2 ga mos bo'lib, x = 1 da −32 beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlardan-funksiya-tuzish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#6f9ce1e0"
+    },
+    {
+      "q": "Shlangdan otilgan suv oqimi yer sathidan chiqib 8 m masofada yana yerga tushadi, eng yuqori nuqtasi esa 4 m balandlikda. Oqim traektoriyasining tenglamasini tanlang.",
+      "v": [
+        "y = −0,25x² + 8x",
+        "y = 0,25x² − 2x",
+        "y = −0,25x² + 2x",
+        "y = −0,5x² + 4x"
+      ],
+      "t": 2,
+      "izoh": "Ildizlari 0 va 8 bo'lgani uchun y = ax(x − 8) deb olamiz. Eng yuqori nuqta ildizlar o'rtasida, ya'ni x = 4 da: a·4·(−4) = 4, bundan −16a = 4 va a = −0,25. Qavsni ochsak y = −0,25x² + 2x. To'rtinchi variantda eng yuqori nuqta 8 m chiqib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlardan-funksiya-tuzish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#2d865b18"
+    },
+    {
+      "q": "Kvadrat funksiya grafigi abssissalar o'qiga x = 4 nuqtada urinadi va (2; 12) nuqtadan o'tadi. Shu funksiyani ko'rsating.",
+      "v": [
+        "y = (x − 4)²",
+        "y = 3(x + 4)²",
+        "y = 12(x − 4)²",
+        "y = 3(x − 4)²"
+      ],
+      "t": 3,
+      "izoh": "Urinish nuqtasi yagona ildiz demakdir, shuning uchun y = a(x − 4)² ko'rinishi olinadi. (2; 12) ni qo'yamiz: a·(−2)² = 12, ya'ni 4a = 12 va a = 3. Demak y = 3(x − 4)². Uchinchi variantda x = 2 da 48 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlardan-funksiya-tuzish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#3688fc30"
+    },
+    {
+      "q": "y = x² + bx + 7 parabolaning simmetriya o'qi x = 3 to'g'ri chizig'idan iborat. b koeffitsientni toping.",
+      "v": [
+        "b = −6",
+        "b = 6",
+        "b = −3",
+        "b = 3"
+      ],
+      "t": 0,
+      "izoh": "Simmetriya o'qi x = −b/(2a) formulasi bilan topiladi, bu yerda a = 1. Demak −b/2 = 3, bundan b = −6. Tekshiramiz: y = x² − 6x + 7 uchun x₀ = 6/2 = 3, shart bajarildi. b = 6 varianti ishorani e'tibordan qochirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsientni-uch-orqali-topish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#c16b8a0f"
+    },
+    {
+      "q": "y = 2x² + 12x + c parabolaning uchi abssissalar o'qida yotadi. c koeffitsient qanday qiymatga ega?",
+      "v": [
+        "c = 9",
+        "c = 18",
+        "c = 36",
+        "c = −18"
+      ],
+      "t": 1,
+      "izoh": "Uch Ox o'qida yotsa, parabola o'qqa urinadi va diskriminant nolga teng bo'ladi. D = 12² − 4·2·c = 144 − 8c = 0, bundan c = 18. c = 36 varianti 4ac dagi bosh koeffitsient 2 ni tushirib qoldirish, c = 9 esa 8 o'rniga 16 ga bo'lish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsientni-uch-orqali-topish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#1a261110"
+    },
+    {
+      "q": "y = ax² − 12x + 5 funksiya eng kichik qiymatini x = 2 nuqtada qabul qiladi. a koeffitsient nechaga teng?",
+      "v": [
+        "a = 6",
+        "a = −3",
+        "a = 3",
+        "a = 2"
+      ],
+      "t": 2,
+      "izoh": "Eng kichik qiymat uchda bo'ladi, ya'ni x₀ = 12/(2a) = 2. Bundan 2a·2 = 12, demak 4a = 12 va a = 3. Koeffitsient musbat chiqdi, bu eng kichik qiymat mavjudligiga mos. a = 6 varianti maxrajdagi ikkini tashlab ketish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsientni-uch-orqali-topish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#c4c8960a"
+    },
+    {
+      "q": "Dizayner y = −x² + bx + 5 ko'rinishdagi ravoqni chizmoqda va uning eng baland nuqtasi x = 4 da bo'lishini xohlaydi. b koeffitsient qanday tanlanadi?",
+      "v": [
+        "b = 4",
+        "b = −8",
+        "b = 2",
+        "b = 8"
+      ],
+      "t": 3,
+      "izoh": "Eng baland nuqta uchda, uning abssissasi x₀ = −b/(2a). Bu yerda a = −1, shuning uchun x₀ = b/2 = 4 va b = 8. Tekshiramiz: y = −x² + 8x + 5 uchun x₀ = −8/(−2) = 4. b = 4 varianti ikkiga ko'paytirishni unutish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koeffitsientni-uch-orqali-topish",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#5e6c5918"
+    },
+    {
+      "q": "y = x² − 3x − 1 parabolada quyidagi nuqtalardan qaysi biri yotadi?",
+      "v": [
+        "(−2; 9)",
+        "(0; 1)",
+        "(1; 2)",
+        "(3; 0)"
+      ],
+      "t": 0,
+      "izoh": "Har bir nuqtaning abssissasini funksiyaga qo'yib tekshiramiz. x = −2 uchun y = 4 + 6 − 1 = 9, mos keladi. Qolganlari mos emas: x = 0 da y = −1, x = 1 da y = −3, x = 3 da y = −1 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-parabolada-yotishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#1d45821a"
+    },
+    {
+      "q": "M(3; k) nuqta y = 2x² − 5x + 1 parabolada yotadi. k ning qiymatini hisoblang.",
+      "v": [
+        "34",
+        "4",
+        "22",
+        "−8"
+      ],
+      "t": 1,
+      "izoh": "Nuqta parabolada yotsa, uning koordinatalari tenglamani qanoatlantiradi. x = 3 ni qo'yamiz: k = 2·9 − 15 + 1 = 18 − 15 + 1 = 4. 22 varianti 2x² o'rniga (2x)² olish, −8 esa 2·3² o'rniga 2·3 hisoblash xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-parabolada-yotishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#350d7592"
+    },
+    {
+      "q": "P(a; 12) nuqta y = x² + 4x parabolada yotadi. a ning musbat qiymatini toping.",
+      "v": [
+        "2",
+        "6",
+        "−6",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Koordinatalarni qo'yamiz: a² + 4a = 12, ya'ni a² + 4a − 12 = 0. Ildizlar yig'indisi −4, ko'paytmasi −12, demak a = 2 va a = −6. Shartga ko'ra musbat qiymat kerak, javob a = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-parabolada-yotishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#b30d3e42"
+    },
+    {
+      "q": "Yuqoriga otilgan toshning balandligi h = −5t² + 30t (m) qonun bilan o'zgaradi. Tosh 25 m balandlikka birinchi marta necha soniyada yetib boradi?",
+      "v": [
+        "5 s",
+        "3 s",
+        "1 s",
+        "6 s"
+      ],
+      "t": 2,
+      "izoh": "h = 25 deb qo'yamiz: −5t² + 30t = 25. Hammasini −5 ga bo'lamiz: t² − 6t + 5 = 0, ildizlari t = 1 va t = 5. Tosh 25 m sathidan ikki marta o'tadi, birinchisi ko'tarilishda, ya'ni t = 1 s. t = 5 — tushayotgandagi vaqt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqta-parabolada-yotishi",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#753aec8d"
+    },
+    {
+      "q": "y = 3x² va y = 0,5x² parabolalaridan qaysi biri torroq, ya'ni tikroq ko'tariladi?",
+      "v": [
+        "y = 3x², chunki bosh koeffitsient moduli katta",
+        "y = 0,5x², chunki koeffitsient kichik",
+        "ikkalasi bir xil kenglikda bo'ladi",
+        "y = 0,5x², chunki u tezroq o'sadi"
+      ],
+      "t": 0,
+      "izoh": "Ikkala parabolaning ham uchi koordinata boshida, farq faqat bosh koeffitsientda. |a| qancha katta bo'lsa, parabola shuncha tor bo'ladi. x = 2 da birinchisi 12, ikkinchisi 2 qiymat beradi, demak y = 3x² tikroq ko'tariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-parabolani-taqqoslash",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#4392fcdc"
+    },
+    {
+      "q": "y = x² − 6x + 11 va y = x² − 6x + 4 funksiyalarning grafiklari bir-biridan qanday farq qiladi?",
+      "v": [
+        "Simmetriya o'qlari har xil",
+        "Tarmoqlari qarama-qarshi yo'nalgan",
+        "Ikkalasining uchi ham Ox o'qida yotadi",
+        "Bir xil simmetriya o'qiga ega, biri 7 birlik yuqorida"
+      ],
+      "t": 3,
+      "izoh": "Ikkala funksiyada ham a = 1 va b = −6, shuning uchun x₀ = 3 va simmetriya o'qi umumiy. Ozod hadlar farqi 11 − 4 = 7, ya'ni birinchi grafik ikkinchisidan 7 birlik yuqorida turadi. Uchlari (3; 2) va (3; −5) nuqtalarda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-parabolani-taqqoslash",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#37a772cf"
+    },
+    {
+      "q": "y = x² − 4x + 7 va y = −x² + 4x − 1 parabolalarning uchlari va tarmoqlari haqida nima deyish mumkin?",
+      "v": [
+        "Uchlari har xil, tarmoqlari bir xil yo'nalgan",
+        "Uchlari ustma-ust tushadi, tarmoqlari qarama-qarshi",
+        "Uchlari ustma-ust, tarmoqlari ham bir xil",
+        "Ikkala uch ham Oy o'qida yotadi"
+      ],
+      "t": 1,
+      "izoh": "Birinchisida x₀ = 4/2 = 2 va y = 4 − 8 + 7 = 3, uch (2; 3). Ikkinchisida x₀ = −4/(−2) = 2 va y = −4 + 8 − 1 = 3, uch yana (2; 3). Bosh koeffitsientlar 1 va −1 bo'lgani uchun tarmoqlar qarama-qarshi yo'nalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-parabolani-taqqoslash",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#1965731f"
+    },
+    {
+      "q": "Ikki fermerning daromadi D₁ = −x² + 10x va D₂ = −2x² + 16x formulalar bilan hisoblanadi, bu yerda x — ekilgan maydon. Kimning erishishi mumkin bo'lgan eng katta daromadi yuqori?",
+      "v": [
+        "D₁ kattaroq, 25 birlik",
+        "Ikkalasi teng, 25 birlik",
+        "D₂ kattaroq, 32 birlik",
+        "D₂ kattaroq, 16 birlik"
+      ],
+      "t": 2,
+      "izoh": "Birinchi funksiyada x₀ = 10/2 = 5 va D₁ = −25 + 50 = 25. Ikkinchisida x₀ = −16/(2·(−2)) = 4 va D₂ = −32 + 64 = 32. Taqqoslasak 32 > 25, demak ikkinchi fermerning eng katta daromadi yuqori. 16 varianti uch abssissasini emas, b koeffitsientni qo'yish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-parabolani-taqqoslash",
+      "id": "matematika_funk_m05-kvadrat-funksiya-va-parabola#5869640f"
+    }
+  ]
+}

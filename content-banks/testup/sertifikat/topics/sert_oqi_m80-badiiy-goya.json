@@ -1,0 +1,416 @@
+{
+  "nom": "Umumiy g'oya va badiiy maqsad",
+  "bolim": "Badiiy matn",
+  "savollar": [
+    {
+      "id": "sert_oqi_m80-badiiy-goya#be500c29",
+      "q": "Asarda qanday badiiy maqsad ifoda etilgan?",
+      "v": [
+        "Jazo emas, ishonch bolani o'zgartirishi mumkin",
+        "Bolani faqat qattiq jazo o'zgartirishi mumkin",
+        "Bir marta ishonch bergan odam doim yutadi",
+        "Bola o'z xatosini hech qachon tan olmaydi"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — A: asarning g'oyasi — «jazo emas, ishonch bolani o'zgartirishi mumkin». Qolganlari matndagi tafsilotga tayanmaydi: B — inkor; C — bo'rttirish; D — almashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m80-badiiy-goya",
+      "teg": [
+        "badiiy/goya",
+        "hikoya/olma",
+        "buzish/inkor",
+        "buzish/borttirish",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m80-badiiy-goya#bef4e7da",
+      "q": "Matnning asosiy g'oyasi to'g'ri berilgan javobni aniqlang.",
+      "v": [
+        "Kattaning bosiqligi bolaga hech narsa o'rgatmaydi",
+        "Kattaning bosiqligi bolaga saboq bo'lib qoladi",
+        "Kattaning qattiqqo'lligi bolaga saboq bo'lib qoladi",
+        "Bola faqat kattalarga taqlid qilib o'sadi"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — B: asarning g'oyasi — «kattaning bosiqligi bolaga saboq bo'lib qoladi». Qolganlari matndagi tafsilotga tayanmaydi: A — inkor; C — almashtirish; D — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m80-badiiy-goya",
+      "teg": [
+        "badiiy/goya",
+        "hikoya/olma",
+        "buzish/borttirish",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m80-badiiy-goya#389fbf0f",
+      "q": "Asar orqali muallif nimani ko'rsatmoqchi bo'lgan?",
+      "v": [
+        "Uyat insonni bir zumda butunlay o'zgartirib yuboradi",
+        "Tanbeh berish tarbiyaning yagona yo'li hisoblanadi",
+        "Uyat tashqi tanbehdan ko'ra kuchliroq ta'sir qiladi",
+        "Uyat hech qanday ta'sir ko'rsatmaydigan tuyg'u"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — C: asarning g'oyasi — «uyat tashqi tanbehdan ko'ra kuchliroq ta'sir qiladi». Qolganlari matndagi tafsilotga tayanmaydi: A — bo'rttirish; B — almashtirish; D — inkor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m80-badiiy-goya",
+      "teg": [
+        "badiiy/goya",
+        "hikoya/olma",
+        "buzish/borttirish",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m80-badiiy-goya#3d681ae4",
+      "q": "Matnning umumiy mazmuniga xos ma'lumotni toping.",
+      "v": [
+        "Minnatdorlikni kech aytish ma'nosiz bo'lib qoladi",
+        "Minnatdorlikni aytish uchun hech qachon kech bo'lmaydi",
+        "Kech aytilgan minnatdorlik yanada ko'proq qadrlanadi",
+        "Minnatdorlik faqat o'sha zahoti aytilishi kerak"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — B: asarning g'oyasi — «minnatdorlikni aytish uchun hech qachon kech bo'lmaydi». Qolganlari matndagi tafsilotga tayanmaydi: A — inkor; C — bo'rttirish; D — almashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m80-badiiy-goya",
+      "teg": [
+        "badiiy/goya",
+        "hikoya/xat",
+        "buzish/inkor",
+        "buzish/almashtirish",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m80-badiiy-goya#c6078e1e",
+      "q": "Matnning asosiy g'oyasi to'g'ri berilgan javobni aniqlang.",
+      "v": [
+        "Mehnat natijasi ko'rinmasa ham, ish davom etishi kerak",
+        "Natija ko'rinmasa, ishni to'xtatgan ma'qul bo'ladi",
+        "Ish faqat natijasi ko'ringanda davom ettiriladi",
+        "Har qanday mehnat albatta ko'rinarli natija beradi"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — A: asarning g'oyasi — «mehnat natijasi ko'rinmasa ham, ish davom etishi kerak». Qolganlari matndagi tafsilotga tayanmaydi: B — inkor; C — almashtirish; D — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m80-badiiy-goya",
+      "teg": [
+        "badiiy/goya",
+        "hikoya/xat",
+        "buzish/inkor",
+        "buzish/borttirish",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m80-badiiy-goya#bc505c59",
+      "q": "Asarda qanday badiiy maqsad ifoda etilgan?",
+      "v": [
+        "Ustozning mehnati faqat darhol natija berganda qadrlanadi",
+        "Ustozning mehnati natija bermasa, u behuda ketgan bo'ladi",
+        "Ustozning mehnati ko'p yillardan keyin ham natija berishi mumkin",
+        "Ustozning har bir harakati albatta natija berib qolaveradi"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — C: asarning g'oyasi — «ustozning mehnati ko'p yillardan keyin ham natija berishi mumkin». Qolganlari matndagi tafsilotga tayanmaydi: A — almashtirish; B — inkor; D — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m80-badiiy-goya",
+      "teg": [
+        "badiiy/goya",
+        "hikoya/xat",
+        "buzish/almashtirish",
+        "buzish/inkor",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m80-badiiy-goya#b37bf080",
+      "q": "Asar orqali muallif nimani ko'rsatmoqchi bo'lgan?",
+      "v": [
+        "Kichik e'tibor odam taqdiriga hech qanday ta'sir qilmaydi",
+        "Odam taqdirini faqat katta yordam o'zgartira oladi",
+        "Bitta kitob har qanday odamni o'zgartirib yuboradi",
+        "Kichik e'tibor odam taqdirini o'zgartirib yuborishi mumkin"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — D: asarning g'oyasi — «kichik e'tibor odam taqdirini o'zgartirib yuborishi mumkin». Qolganlari matndagi tafsilotga tayanmaydi: A — inkor; B — almashtirish; C — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m80-badiiy-goya",
+      "teg": [
+        "badiiy/goya",
+        "hikoya/xat",
+        "buzish/borttirish",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m80-badiiy-goya#ddeda498",
+      "q": "Matnning asosiy g'oyasi to'g'ri berilgan javobni aniqlang.",
+      "v": [
+        "Mahorat ustozning maqtovi orqali shakllanadi",
+        "Sabrli odam har qanday hunarni bir kunda egallaydi",
+        "Mahorat faqat tug'ma qobiliyat bilan belgilanadi",
+        "Mahorat takroriy urinish va sabr orqali shakllanadi"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — D: asarning g'oyasi — «mahorat takroriy urinish va sabr orqali shakllanadi». Qolganlari matndagi tafsilotga tayanmaydi: A — almashtirish; B — bo'rttirish; C — inkor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m80-badiiy-goya",
+      "teg": [
+        "badiiy/goya",
+        "hikoya/kosa",
+        "buzish/almashtirish",
+        "buzish/inkor",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m80-badiiy-goya#53b63a76",
+      "q": "Matnning umumiy mazmuniga xos ma'lumotni toping.",
+      "v": [
+        "O'rgatuvchi bo'lish uchun hunarni tugal egallash shart",
+        "O'rgangan kishi vaqti kelib o'rgatuvchiga aylanadi",
+        "O'rgangan kishi bilganini o'ziga saqlab qolishi tabiiy",
+        "Har bir shogird albatta ustozidan o'zib ketadi"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — B: asarning g'oyasi — «o'rgangan kishi vaqti kelib o'rgatuvchiga aylanadi». Qolganlari matndagi tafsilotga tayanmaydi: A — almashtirish; C — inkor; D — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m80-badiiy-goya",
+      "teg": [
+        "badiiy/goya",
+        "hikoya/kosa",
+        "buzish/borttirish",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m80-badiiy-goya#9a9f9324",
+      "q": "Asar orqali muallif nimani ko'rsatmoqchi bo'lgan?",
+      "v": [
+        "Yaxshi ustoz shogirdiga umuman gapirmasligi kerak",
+        "Ustozning qattiq tanbehi eng ta'sirli tarbiya usuli",
+        "Ustozning jimligi ham tarbiya usuli bo'la oladi",
+        "Ustoz jim tursa, shogird hech narsa o'rgana olmaydi"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — C: asarning g'oyasi — «ustozning jimligi ham tarbiya usuli bo'la oladi». Qolganlari matndagi tafsilotga tayanmaydi: A — bo'rttirish; B — almashtirish; D — inkor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m80-badiiy-goya",
+      "teg": [
+        "badiiy/goya",
+        "hikoya/kosa",
+        "buzish/borttirish",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    }
+  ]
+}

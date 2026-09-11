@@ -1,0 +1,456 @@
+{
+  "nom": "51-mavzu. Yupqa Linza Tasvir",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Yig'uvchi linza yordamida tasvir yasashda bosh optik o'qqa parallel tushgan nur linzadan sinib o'tgach qanday yo'naladi?",
+      "v": [
+        "Linzaning fokusidan o'tib ketadi",
+        "Optik markazdan o'zgarishsiz o'tadi",
+        "Bosh optik o'qqa parallel qaytadi",
+        "Linza sirtidan qaytib tushadi"
+      ],
+      "t": 0,
+      "izoh": "Bosh optik o'qqa parallel nur linzadan sinib o'tgach fokusidan o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#70f43a6f"
+    },
+    {
+      "q": "Yig'uvchi linzaning fokusidan o'tgan nur linzadan o'tgach qanday yo'naladi?",
+      "v": [
+        "Bosh optik o'qqa parallel ketadi",
+        "Yana fokusga qaytadi",
+        "Optik markazga yo'naladi",
+        "Linza sirtiga perpendikulyar ketadi"
+      ],
+      "t": 0,
+      "izoh": "Fokusdan o'tgan nur linzadan o'tgach bosh optik o'qqa parallel yo'naladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#1f0e482e"
+    },
+    {
+      "q": "Linza optik markazidan o'tuvchi nur linzadan o'tgach qanday harakatlanadi?",
+      "v": [
+        "Dastlabki yo'nalishini o'zgartirmaydi",
+        "Fokusdan o'tib ketadi",
+        "Bosh optik o'qqa parallel bo'ladi",
+        "To'liq qaytib keladi"
+      ],
+      "t": 0,
+      "izoh": "Optik markazdan o'tuvchi nur linzadan o'tgach dastlabki yo'nalishini o'zgartirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#d59b6a14"
+    },
+    {
+      "q": "Haqiqiy tasvir qanday hosil bo'ladi?",
+      "v": [
+        "Linzadan o'tgan nurlarning kesishmasidan",
+        "Nurlar davomining kesishmasidan",
+        "Buyum sirtidan qaytgan nurlardan",
+        "Linza ichida sochilgan nurlardan"
+      ],
+      "t": 0,
+      "izoh": "Linzadan o'tgan nurlarning kesishmasidan hosil bo'lgan tasvir haqiqiy tasvir deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#ac9d0f7e"
+    },
+    {
+      "q": "Linza formulasi qanday kattaliklar orasidagi bog'lanishni ifodalaydi?",
+      "v": [
+        "Buyumdan linzagacha bo'lgan d masofa, linzadan tasvirgacha bo'lgan f masofa va fokus masofasi F orasidagi",
+        "Linza qalinligi, diametri va optik kuchi orasidagi",
+        "Tasvir balandligi, buyum balandligi va ekran masofasi orasidagi",
+        "Tushish burchagi, sinish burchagi va sindirish ko'rsatkichi orasidagi"
+      ],
+      "t": 0,
+      "izoh": "Linza formulasi d, f va F kattaliklar orasidagi bog'lanishni ifodalaydi: 1/F = 1/d + 1/f.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#7d48fb8f"
+    },
+    {
+      "q": "Linza formulasining to'g'ri yozilishi qaysi?",
+      "v": [
+        "1/F = 1/d + 1/f",
+        "F = d + f",
+        "1/F = d·f",
+        "F = 1/d + 1/f"
+      ],
+      "t": 0,
+      "izoh": "Linza formulasi: 1/F = 1/d + 1/f yoki D = 1/d + 1/f.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#18fcc7f0"
+    },
+    {
+      "q": "Yig'uvchi linzalar uchun F, d va f kattaliklar qanday ishoraga ega?",
+      "v": [
+        "Musbat",
+        "Manfiy",
+        "F musbat, d va f manfiy",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Yig'uvchi linzalar uchun F, d, f kattaliklar musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#f3f7b096"
+    },
+    {
+      "q": "Yig'uvchi linzada buyum d < F masofada joylashganda tasvir qanday bo'ladi?",
+      "v": [
+        "Mavhum, chunki f manfiy bo'ladi",
+        "Haqiqiy va kichiklashgan",
+        "Haqiqiy va nuqtasimon",
+        "Umuman hosil bo'lmaydi, nur yo'qoladi"
+      ],
+      "t": 0,
+      "izoh": "Buyum linzadan d < F masofada bo'lganda f manfiy bo'lib, tasvir mavhum bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#40f3ee47"
+    },
+    {
+      "q": "Linzaning chiziqli kattalashtirishi deganda nima tushuniladi?",
+      "v": [
+        "Buyum tasviri o'lchamining buyumning o'z o'lchamiga nisbati",
+        "Linza diametrining fokus masofasiga nisbati",
+        "Tasvir masofasining fokus masofasiga nisbati",
+        "Buyum masofasining tasvir masofasiga nisbati"
+      ],
+      "t": 0,
+      "izoh": "Buyum tasviri o'lchamining o'z o'lchamiga nisbati linzaning chiziqli kattalashtirishi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#5aa4ecd7"
+    },
+    {
+      "q": "Linzaning chiziqli kattalashtirishi K qanday ifodalar orqali aniqlanadi?",
+      "v": [
+        "K = H/h = f/d",
+        "K = h/H = d/f",
+        "K = F/d",
+        "K = h·H"
+      ],
+      "t": 0,
+      "izoh": "K = H/h = A'B'/AB, shuningdek K = f/d orqali ham aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#cd756add"
+    },
+    {
+      "q": "Agar K > 1 bo'lsa, linzadagi tasvir qanday bo'ladi?",
+      "v": [
+        "Kattalashgan",
+        "Kichiklashgan",
+        "Buyumga teng o'lchamli",
+        "Nuqtasimon"
+      ],
+      "t": 0,
+      "izoh": "K > 1 bo'lsa, buyumning linzadagi tasviri kattalashgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#c94d4bf6"
+    },
+    {
+      "q": "Agar K < 1 bo'lsa, linzadagi tasvir qanday bo'ladi?",
+      "v": [
+        "Kichiklashgan",
+        "Kattalashgan",
+        "Mavhum",
+        "To'g'ri"
+      ],
+      "t": 0,
+      "izoh": "K < 1 bo'lganda tasvir kichiklashgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#233fa4ab"
+    },
+    {
+      "q": "Sochuvchi linzada buyum tasviri qanday hosil bo'ladi?",
+      "v": [
+        "Sochuvchi linzadan o'tgan nurlarning davomi kesishishidan",
+        "Nurlarning to'g'ridan-to'g'ri kesishishidan",
+        "Linza sirtidan qaytgan nurlardan",
+        "Fokusdagi yorug'lik manbadan"
+      ],
+      "t": 0,
+      "izoh": "Sochuvchi linzada tasvir linzadan o'tgan nurlarning davomi kesishishidan hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#d22dfacd"
+    },
+    {
+      "q": "Sochuvchi linzada hosil bo'lgan tasvir qanday bo'ladi?",
+      "v": [
+        "Mavhum va to'g'ri",
+        "Haqiqiy va to'nkarilgan",
+        "Haqiqiy va kattalashgan",
+        "Mavhum va to'nkarilgan"
+      ],
+      "t": 0,
+      "izoh": "Sochuvchi linzada tasvir mavhum, ayni paytda to'g'ri tasvirdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#56e30739"
+    },
+    {
+      "q": "Sochuvchi linzalarda f va F kattaliklar doim qanday ishorali?",
+      "v": [
+        "Manfiy",
+        "Musbat",
+        "f manfiy, F musbat",
+        "Nol"
+      ],
+      "t": 0,
+      "izoh": "Sochuvchi linzalarda f va F doim manfiy va tasvir mavhum bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#feecc33e"
+    },
+    {
+      "q": "Sochuvchi linza formulasining to'g'ri yozilishi qaysi?",
+      "v": [
+        "−1/F = 1/d − 1/f",
+        "1/F = 1/d + 1/f",
+        "−1/F = 1/d + 1/f",
+        "1/F = 1/f − 1/d"
+      ],
+      "t": 0,
+      "izoh": "Sochuvchi linza formulasi: −1/F = 1/d − 1/f.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#0a2ac726"
+    },
+    {
+      "q": "Yig'uvchi linzada buyum cheksiz uzoqlikda (d = ∞) bo'lganda tasvir qayerda hosil bo'ladi?",
+      "v": [
+        "Linzaning fokusida, nuqtasimon",
+        "Ikkilangan fokusda",
+        "Optik markazda",
+        "Linza sirtida"
+      ],
+      "t": 0,
+      "izoh": "d = ∞ bo'lganda f = F, tasvir haqiqiy, ammo nuqtasimon bo'lib, linzaning fokusida joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#9c79ab82"
+    },
+    {
+      "q": "Yig'uvchi linzada buyum d > 2F masofada bo'lganda tasvir qanday masofada hosil bo'ladi?",
+      "v": [
+        "F < f < 2F oraliqda",
+        "f > 2F masofada",
+        "f = F nuqtada",
+        "f < F masofada"
+      ],
+      "t": 0,
+      "izoh": "d > 2F bo'lganda F < f < 2F, tasvir haqiqiy, teskari va kichraygan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#0e6db5ec"
+    },
+    {
+      "q": "Yig'uvchi linzada buyum d > 2F masofada bo'lganda hosil bo'lgan tasvir qanday?",
+      "v": [
+        "Haqiqiy, teskari va kichraygan",
+        "Haqiqiy, to'g'ri va kattalashgan",
+        "Mavhum, to'g'ri va kattalashgan",
+        "Haqiqiy, teskari va buyumga teng"
+      ],
+      "t": 0,
+      "izoh": "d > 2F bo'lganda K < 1 (kichraygan), tasvir haqiqiy, ammo teskari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#36ffd8f0"
+    },
+    {
+      "q": "Linza formulasi optik kuch D orqali qanday ifodalanadi?",
+      "v": [
+        "D = 1/d + 1/f",
+        "D = d + f",
+        "D = 1/d − 1/f",
+        "D = d·f"
+      ],
+      "t": 0,
+      "izoh": "Linza formulasi D = 1/d + 1/f ko'rinishda ham yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#6873d44d"
+    },
+    {
+      "q": "Yig'uvchi linzada tasvir yasashda odatda nechta qulay nur yo'nalishi tanlanadi?",
+      "v": [
+        "Uchta",
+        "Ikkita",
+        "To'rtta",
+        "Beshta"
+      ],
+      "t": 0,
+      "izoh": "Tasvir yasashda uchta nur tanlanadi: parallel nur, fokusdan o'tgan nur va optik markazdan o'tuvchi nur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#29a7cfdb"
+    },
+    {
+      "q": "Fokus masofasi 7,5 sm bo'lgan yig'uvchi linzadan buyum 10 sm masofada turibdi. Tasvir linzadan qanday masofada hosil bo'ladi?",
+      "v": [
+        "30 sm",
+        "4,3 sm",
+        "17,5 sm",
+        "75 sm"
+      ],
+      "t": 0,
+      "izoh": "f = d·F/(d−F) = 10·7,5/(10−7,5) = 30 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#2865c741"
+    },
+    {
+      "q": "Fokus masofasi 7,5 sm bo'lgan yig'uvchi linzadan buyum 10 sm masofada bo'lsa, linzaning kattalashtirishi qancha?",
+      "v": [
+        "3",
+        "0,75",
+        "1,5",
+        "7,5"
+      ],
+      "t": 0,
+      "izoh": "K = f/d = 30/10 = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#33bebc9c"
+    },
+    {
+      "q": "Buyum yig'uvchi linzadan uch fokus masofa uzoqda (d = 3F) turibdi. Linzaning chiziqli kattalashtirishi qancha?",
+      "v": [
+        "1/2",
+        "1/3",
+        "2",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "K = F/(d−F) = F/(3F−F) = 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#8ff929eb"
+    },
+    {
+      "q": "77-rasmdagi yig'uvchi linza yordamida olingan A'B' tasviri qanday tasvir hisoblanadi?",
+      "v": [
+        "To'nkarilgan haqiqiy tasvir",
+        "To'g'ri mavhum tasvir",
+        "Nuqtasimon haqiqiy tasvir",
+        "Kattalashgan mavhum tasvir"
+      ],
+      "t": 0,
+      "izoh": "77-rasmdagi linza yordamida olingan A'B' tasvir to'nkarilgan haqiqiy tasvirdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#1b0adb33"
+    },
+    {
+      "q": "Linza formulasida d harfi nimani bildiradi?",
+      "v": [
+        "Buyumdan linzagacha bo'lgan masofani",
+        "Linzadan tasvirgacha bo'lgan masofani",
+        "Linzaning fokus masofasini",
+        "Linzaning optik kuchini"
+      ],
+      "t": 0,
+      "izoh": "d — buyumdan linzagacha bo'lgan masofa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#ab0406f6"
+    },
+    {
+      "q": "Linza formulasida f harfi nimani bildiradi?",
+      "v": [
+        "Linzadan tasvirgacha bo'lgan masofani",
+        "Buyumdan linzagacha bo'lgan masofani",
+        "Linzaning fokus masofasini",
+        "Tasvirning balandligini"
+      ],
+      "t": 0,
+      "izoh": "f — linzadan tasvirgacha bo'lgan masofa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#0fa19941"
+    },
+    {
+      "q": "Yig'uvchi linzada buyum d = 2F nuqtada joylashganda kattalashtirish K qanday qiymat qabul qiladi?",
+      "v": [
+        "1",
+        "2",
+        "1/2",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "d = 2F bo'lganda f = 2F, K = f/d = 1, tasvir buyumga teng o'lchamli bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#e8e078a5"
+    },
+    {
+      "q": "Fokus masofasi 40 sm bo'lgan qavariq linzadan buyum 50 sm masofada turibdi. Linzaning chiziqli kattalashtirishi qanchaga teng?",
+      "v": [
+        "4",
+        "0,8",
+        "1,25",
+        "2,5"
+      ],
+      "t": 0,
+      "izoh": "f = d·F/(d−F) = 50·40/10 = 200 sm; K = f/d = 200/50 = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#a5f908fd"
+    },
+    {
+      "q": "Sochuvchi linzada tasvirning mavhum bo'lishiga sabab nima?",
+      "v": [
+        "Tasvir nurlarning o'zi emas, ularning davomi kesishishidan hosil bo'ladi",
+        "Nurlar linzada to'liq yutiladi",
+        "Linza nurni umuman o'tkazmaydi",
+        "Fokus masofasi nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Sochuvchi linzadan o'tgan nurlar sochilib ketadi, tasvir ularning davomi kesishishidan hosil bo'lgani uchun mavhum bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m51-yupqa-linza-tasvir#36316aa1"
+    }
+  ]
+}

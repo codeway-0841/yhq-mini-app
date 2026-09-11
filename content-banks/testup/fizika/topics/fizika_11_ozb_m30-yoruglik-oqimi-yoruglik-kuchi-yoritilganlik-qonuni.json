@@ -1,0 +1,486 @@
+{
+  "nom": "30-mavzu. Yoruglik Oqimi Yoruglik Kuchi Yoritilganlik Qonuni",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Yorug'lik energiyasi bilan bog'liq energetik kattaliklarni o'rganadigan optika bo'limi qanday ataladi?",
+      "v": [
+        "Fotometriya",
+        "Interferometriya",
+        "Spektroskopiya",
+        "Refraktometriya"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik energiyasi bilan bog'liq energetik kattaliklarni o'rganadigan bo'lim fotometriya deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#bfc01ab7"
+    },
+    {
+      "q": "Vaqt birligi ichida biror bir yuzaga tushayotgan energiya miqdoriga nima deyiladi?",
+      "v": [
+        "Yorug'lik energiyasi oqimi (nurlanish oqimi)",
+        "Yoritilganlik",
+        "Ravshanlik",
+        "Yorug'lik kuchi"
+      ],
+      "t": 0,
+      "izoh": "Vaqt birligi ichida yuzaga tushayotgan energiya miqdori yorug'lik energiyasi oqimi yoki nurlanish oqimi deyiladi va Ф harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#ce7ffe62"
+    },
+    {
+      "q": "Nurlanish oqimi SI sistemasida qanday birlik bilan o'lchanadi?",
+      "v": [
+        "Vatt (W)",
+        "Lyumen (lm)",
+        "Lyuks (lx)",
+        "Kandela (cd)"
+      ],
+      "t": 0,
+      "izoh": "Nurlanish oqimi Ф = W/t = P bo'lgani uchun uning birligi SI da vatt (W).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#75b13604"
+    },
+    {
+      "q": "Nurlanish oqimining sirt zichligi (nurlanish intensivligi) qanday aniqlanadi?",
+      "v": [
+        "Nurlanish oqimining oqim o'tadigan yuzaga nisbati bilan",
+        "Nurlanish oqimining fazoviy burchakka nisbati bilan",
+        "Nurlanish oqimining vaqtga nisbati bilan",
+        "Yorug'lik kuchining yuzaga nisbati bilan"
+      ],
+      "t": 0,
+      "izoh": "Nurlanish oqimining sirt zichligi I = Ф/S formula bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#9418b147"
+    },
+    {
+      "q": "Nurlanish intensivligining birligi qanday?",
+      "v": [
+        "1 W/m²",
+        "1 W·m²",
+        "1 lm/sr",
+        "1 lx"
+      ],
+      "t": 0,
+      "izoh": "Nurlanish intensivligi I = P/S bo'lgani uchun uning birligi 1 W/m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#cc75908d"
+    },
+    {
+      "q": "Fazoviy burchak qanday aniqlanadi?",
+      "v": [
+        "Shar segmenti sirti yuzasining markazi konus uchida bo'lgan sfera radiusi kvadratiga nisbati bilan",
+        "Konus uchidagi tekis burchak bilan",
+        "Sirt yuzasining radiusga nisbati bilan",
+        "Yorug'lik oqimining yuzaga nisbati bilan"
+      ],
+      "t": 0,
+      "izoh": "Fazoviy burchak Ω = S₀/R² formula bilan o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#e15d93da"
+    },
+    {
+      "q": "Fazoviy burchakning o'lchov birligi nima?",
+      "v": [
+        "Steradian (sr)",
+        "Radian (rad)",
+        "Gradus (°)",
+        "Kandela (cd)"
+      ],
+      "t": 0,
+      "izoh": "Fazoviy burchakning o'lchov birligi — steradian (sr).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#28d4cae5"
+    },
+    {
+      "q": "1 steradian qanday aniqlanadi?",
+      "v": [
+        "Sfera yuzasidan tomoni sfera radiusiga teng kvadrat yuzaga teng soha hosil qiladigan, uchi sfera markazidagi fazoviy burchak",
+        "Tomoni 1 metr bo'lgan kvadrat yuzaga suyanadigan tekis burchak",
+        "To'liq aylananing to'rtdan bir qismiga teng burchak",
+        "1 cd yorug'lik kuchi hosil qiladigan burchak"
+      ],
+      "t": 0,
+      "izoh": "1 sr — sfera yuzasidan tomoni radiusga teng kvadrat yuzaga teng soha hosil qiladigan fazoviy burchak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#1734534a"
+    },
+    {
+      "q": "Nuqta atrofidagi to'la fazoviy burchak nechaga teng?",
+      "v": [
+        "4π sr",
+        "2π sr",
+        "π sr",
+        "π/2 sr"
+      ],
+      "t": 0,
+      "izoh": "Ω = 4πR²/R² = 4π sr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#c9adb09a"
+    },
+    {
+      "q": "Nuqtaviy yorug'lik manbayidan turli masofalardagi nurlanish intensivliklari qanday bog'langan?",
+      "v": [
+        "Intensivlik masofaning kvadratiga teskari proporsional",
+        "Intensivlik masofaga to'g'ri proporsional",
+        "Intensivlik masofaga teskari proporsional",
+        "Intensivlik masofaga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "I₁/I₂ = R₂²/R₁², ya'ni intensivlik masofa ortishi bilan kvadratik ravishda kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#d90dac6e"
+    },
+    {
+      "q": "Nur tushayotgan yuzaning qiyaligi oshganda nurlanish intensivligi qanday o'zgaradi?",
+      "v": [
+        "Tushish burchagi kosinusiga to'g'ri proporsional ravishda kamayadi",
+        "Sinusga to'g'ri proporsional ravishda ortadi",
+        "O'zgarmaydi",
+        "Kvadratik ravishda ortadi"
+      ],
+      "t": 0,
+      "izoh": "I/I₀ = S₀/S = cosα, ya'ni intensivlik burchak kosinusiga proporsional kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#092e14cf"
+    },
+    {
+      "q": "Yorug'lik oqimi qanday harf bilan belgilanadi va SI da qanday birlikda o'lchanadi?",
+      "v": [
+        "Ф harfi bilan, lyumen (lm)",
+        "E harfi bilan, lyuks (lx)",
+        "I harfi bilan, kandela (cd)",
+        "B harfi bilan, cd/m²"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik oqimi Ф harfi bilan belgilanadi, birligi — lyumen (lm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#1c843dd1"
+    },
+    {
+      "q": "Yorug'lik kuchi qanday aniqlanadi?",
+      "v": [
+        "Yorug'lik oqimining fazoviy burchakka nisbati bilan",
+        "Yorug'lik oqimining yuzaga nisbati bilan",
+        "Yorug'lik oqimining vaqtga nisbati bilan",
+        "Nurlanish oqimining yuzaga nisbati bilan"
+      ],
+      "t": 0,
+      "izoh": "Yorug'lik kuchi I = Ф/Ω yoki I = Ф/4π formula bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#82fa44c4"
+    },
+    {
+      "q": "SI birliklar tizimining fotometriyaga doir asosiy birligi qaysi?",
+      "v": [
+        "Kandela (cd)",
+        "Lyumen (lm)",
+        "Lyuks (lx)",
+        "Vatt (W)"
+      ],
+      "t": 0,
+      "izoh": "Kandela SI birliklar tizimining asosiy birligiga kiritilgan; qolgan fotometrik birliklar kandela orqali ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#da8f3e07"
+    },
+    {
+      "q": "1 kandela aniqlashida ishlatilgan to'liq nurlantirgichning temperaturasi nimaga teng?",
+      "v": [
+        "Platinaning qotish temperaturasiga",
+        "Suvning qaynash temperaturasiga",
+        "Temirning erish temperaturasiga",
+        "0 K ga"
+      ],
+      "t": 0,
+      "izoh": "1 cd sifatida temperaturasi platinaning qotish temperaturasiga teng to'liq nurlantirgichning yorug'lik kuchi qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#d03a2df9"
+    },
+    {
+      "q": "1 cd ni qabul qilishda ishlatilgan yorug'likning vakuumdagi to'lqin uzunligi necha nm bo'lib, u nimaga to'g'ri keladi?",
+      "v": [
+        "555 nm — inson ko'zining maksimal sezgirligiga",
+        "650 nm — qizil nurga",
+        "400 nm — ultrabinafsha chegaraga",
+        "760 nm — infraqizil chegaraga"
+      ],
+      "t": 0,
+      "izoh": "1 cd ni qabul qilishda ishlatilgan 555 nm to'lqin uzunligi inson ko'zining maksimal sezgirligiga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#68b7db66"
+    },
+    {
+      "q": "1 lyumen qanday aniqlanadi?",
+      "v": [
+        "Yorug'lik kuchi 1 cd bo'lgan nuqtaviy manbadan 1 sr fazoviy burchak ichida chiqqan yorug'lik oqimi",
+        "1 m² yuzaga tushgan yorug'lik oqimi",
+        "1 W quvvatli nurlanish oqimi",
+        "1 lx yoritilganlik hosil qiladigan oqim"
+      ],
+      "t": 0,
+      "izoh": "1 lm — yorug'lik kuchi 1 cd bo'lgan nuqtaviy manbadan 1 sr fazoviy burchak ichida chiqqan yorug'lik oqimi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#407af794"
+    },
+    {
+      "q": "Yoritilganlik qanday aniqlanadi?",
+      "v": [
+        "Yuza birligiga tushgan yorug'lik oqimi",
+        "Fazoviy burchak birligiga tushgan yorug'lik oqimi",
+        "Yuza birligiga tushgan yorug'lik kuchi",
+        "Vaqt birligida tushgan energiya"
+      ],
+      "t": 0,
+      "izoh": "Yoritilganlik E = Ф/S formula bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#70cf22dd"
+    },
+    {
+      "q": "1 lyuks qanday aniqlanadi?",
+      "v": [
+        "1 m² yuzaga tekis taqsimlangan holda 1 lm yorug'lik oqimi tushgandagi yoritilganlik",
+        "1 sr burchak ichida 1 cd kuchdagi yorug'lik",
+        "1 m² yuzaga tushgan 1 W energiya",
+        "1 cd yorug'lik kuchining o'zi"
+      ],
+      "t": 0,
+      "izoh": "1 m² yuzaga 1 lm oqim tushsa, yoritilganlik 1 lx ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#38ad7e3a"
+    },
+    {
+      "q": "Nuqtaviy manba yaratadigan yoritilganlikning manba yorug'lik kuchiga va masofaga bog'liqligi qanday?",
+      "v": [
+        "Yorug'lik kuchiga to'g'ri, masofaning kvadratiga teskari proporsional",
+        "Yorug'lik kuchiga teskari, masofaga to'g'ri proporsional",
+        "Yorug'lik kuchiga ham, masofaga ham to'g'ri proporsional",
+        "Masofaga teskari proporsional, kuchga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "E = I/R²: yoritilganlik yorug'lik kuchiga to'g'ri, masofaning kvadratiga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#7809d048"
+    },
+    {
+      "q": "Yorug'lik oqimi yuzaga φ burchak ostida tushganda yoritilganlik qaysi formula bilan aniqlanadi?",
+      "v": [
+        "E = (I/R²)·cosφ",
+        "E = I/R²",
+        "E = I·R²·cosφ",
+        "E = (I/R²)·sinφ"
+      ],
+      "t": 0,
+      "izoh": "Burchak ostida tushganda E = (I/R²)·cosφ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#3b9cef2b"
+    },
+    {
+      "q": "Yoritilganlik formulasi E = (I/R²)·cosφ dagi φ burchak nimani bildiradi?",
+      "v": [
+        "Yorug'lik nuri va yuzaga o'tkazilgan perpendikulyar orasidagi burchakni",
+        "Nur va yuza tekisligi orasidagi burchakni",
+        "Manba va kuzatuvchi orasidagi burchakni",
+        "Fazoviy burchakni"
+      ],
+      "t": 0,
+      "izoh": "φ — yorug'lik nuri va yorug'lik oqimi tushayotgan yuzaga o'tkazilgan perpendikulyar orasidagi burchak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#2af3ddce"
+    },
+    {
+      "q": "Agar yuza bir nechta manba bilan yoritilgan bo'lsa, umumiy yoritilganlik qanday topiladi?",
+      "v": [
+        "Har bir manba tomonidan yoritilganliklarning yig'indisiga teng bo'ladi",
+        "Eng kuchli manbaning yoritilganligiga teng bo'ladi",
+        "Yoritilganliklarning o'rta arifmetigiga teng bo'ladi",
+        "Yoritilganliklarning ko'paytmasiga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Bir nechta manba yoritganda umumiy yoritilganlik har bir manba yoritilganliklarining yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#25780bb6"
+    },
+    {
+      "q": "Ravshanlik deb nimaga aytiladi?",
+      "v": [
+        "Yorug'lik chiqayotgan yuza birligiga to'g'ri keladigan yorug'lik kuchiga",
+        "Yuza birligiga tushgan yorug'lik oqimiga",
+        "Fazoviy burchak birligiga tushgan oqimga",
+        "Manba quvvatining masofaga nisbatiga"
+      ],
+      "t": 0,
+      "izoh": "Ravshanlik B = I/S formula bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#332249a1"
+    },
+    {
+      "q": "Ravshanlikning birligi qanday?",
+      "v": [
+        "cd/m²",
+        "lm/m²",
+        "W/m²",
+        "lx"
+      ],
+      "t": 0,
+      "izoh": "Ravshanlik B = I/S bo'lgani uchun birligi cd/m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#633c64c7"
+    },
+    {
+      "q": "Quyidagi yorug'lik manbalaridan qaysi birining ravshanligi eng katta?",
+      "v": [
+        "Tush paytidagi Quyosh (1,65·10⁹ cd/m²)",
+        "To'lin Oy diski (2500 cd/m²)",
+        "Ochiq havoli kunduzgi osmon (1500–4000 cd/m²)",
+        "Stol lampasi"
+      ],
+      "t": 0,
+      "izoh": "Tush paytida Quyoshning ravshanligi 1,65·10⁹ cd/m² — eng katta qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#0fe198ac"
+    },
+    {
+      "q": "Yorug'lik kuchi 100 cd bo'lgan nuqtaviy manbaning to'la yorug'lik oqimi qaysi formula bilan topiladi?",
+      "v": [
+        "Ф = 4πI",
+        "Ф = I/4π",
+        "Ф = I·R²",
+        "Ф = I·cosφ"
+      ],
+      "t": 0,
+      "izoh": "To'la fazoviy burchak 4π sr bo'lgani uchun Ф = 4πI; bunda Ф = 4π·100 = 1256 lm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#ff38cfdf"
+    },
+    {
+      "q": "Diametri 10 sm bo'lgan lampa qanday holatda nuqtaviy yorug'lik manbayi deb qaralishi mumkin?",
+      "v": [
+        "Yoritilayotgan yuzagacha masofa 100 m bo'lganda",
+        "Yoritilayotgan yuzagacha masofa 50 sm bo'lganda",
+        "Lampa yorqin bo'lganda",
+        "Lampa sferik shaklda bo'lganda"
+      ],
+      "t": 0,
+      "izoh": "Masofa manba o'lchamidan ancha katta bo'lsa (100 m), manbani nuqtaviy deb qarash mumkin; 50 sm da bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#100347b8"
+    },
+    {
+      "q": "Nuqtaviy manbaga tipik misol qaysi?",
+      "v": [
+        "Yulduzlar",
+        "Luminestsent lampa",
+        "Kunduzgi osmon",
+        "Oq kog'oz varag'i"
+      ],
+      "t": 0,
+      "izoh": "Nuqtaviy manbalarga tipik misol tariqasida yulduzlarni olish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#1712dee3"
+    },
+    {
+      "q": "Nuqtaviy manbadan masofa 2 marta orttirilsa, nurlanish intensivligi qanday o'zgaradi?",
+      "v": [
+        "4 marta kamayadi",
+        "2 marta kamayadi",
+        "2 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Intensivlik masofa kvadratiga teskari proporsional: masofa 2 marta ortsa, intensivlik 4 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#628a158b"
+    },
+    {
+      "q": "Energetik va fotometrik kattaliklar orasidagi asosiy farq nimada?",
+      "v": [
+        "Fotometrik kattaliklar yorug'likning ko'zga ko'rinadigan ta'sirini hisobga oluvchi subyektiv kattaliklar, energetik kattaliklar esa to'la energiyani o'lchaydi",
+        "Energetik kattaliklar faqat ko'rinadigan nurni o'lchaydi",
+        "Fotometrik kattaliklar vattda o'lchanadi",
+        "Ular orasida farq yo'q"
+      ],
+      "t": 0,
+      "izoh": "Fotometrik kattaliklar ko'zga ko'rinadigan yorug'likni tavsiflaydigan subyektiv kattaliklar, energetik kattaliklar esa energiya miqdori bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#8a77b034"
+    },
+    {
+      "q": "Yorug'likning ko'zga yoki boshqa qabul qiluvchi qurilmalarga ta'siri nimani bilan belgilanadi?",
+      "v": [
+        "Qabul qiluvchi qurilmalarga berilgan yorug'lik energiyasi bilan",
+        "Manbaning harorati bilan",
+        "To'lqin uzunligining kvadrati bilan",
+        "Manbaning geometrik o'lchami bilan"
+      ],
+      "t": 0,
+      "izoh": "Yorug'likning qabul qiluvchiga ta'siri unga berilgan yorug'lik energiyasi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m30-yoruglik-oqimi-yoruglik-kuchi-yoritilganlik-qonuni#50bf673d"
+    }
+  ]
+}

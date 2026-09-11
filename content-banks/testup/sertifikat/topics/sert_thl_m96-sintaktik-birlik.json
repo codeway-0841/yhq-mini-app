@@ -1,0 +1,566 @@
+{
+  "nom": "Sintaktik birlik turi va vazifasi",
+  "bolim": "Ochiq javob — grammatika",
+  "savollar": [
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#4a6854b8",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Bahor kelishi bilan uzoq kutilgan iliq kunlar boshlandi va butun qishloq aholisi tong yorishmasdan DALAGA chiqib ketdi.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "hol|o'rin holi"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "qayerga?"
+      },
+      "izoh": "«DALAGA» — hol; qayerga? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/orin"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#fabec842",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Taniqli yozuvchining uzoq kutilgan yangi kitobi bosmadan chiqqach, uni birinchi bo'lib qishloq maktabining O'QUVCHILARI qo'lga oldilar.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "ega"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "kimlar?"
+      },
+      "izoh": "«O'QUVCHILARI» — ega; kimlar? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/ega"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#49549913",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Ustaxonaga endigina qadam qo'ygan bolaga tajribali usta avval loyni mayda toshlardan tozalashni, so'ng uni yaxshilab QORISHNI o'rgatdi.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "to'ldiruvchi|vositasiz to'ldiruvchi"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "nimani?"
+      },
+      "izoh": "«QORISHNI» — to'ldiruvchi; nimani? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/toldiruvchi"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#0000dac0",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Bahorgi ekin ishlari to'la boshlangach, qishloq dehqonlari saralangan urug'likni omborxonadan uzoqdagi maydonga TRAKTORDA tashib keltirdilar.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "to'ldiruvchi|vositali to'ldiruvchi"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "nimada?"
+      },
+      "izoh": "«TRAKTORDA» — to'ldiruvchi; nimada? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/toldiruvchi"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#cfa494ae",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Uzoq safardan charchab qaytgan otam ayvon chetiga o'tirdi va onam damlagan bir piyola choyni SEKIN ho'play boshladi.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "hol|ravish holi"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "qanday?"
+      },
+      "izoh": "«SEKIN» — hol; qanday? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/ravish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#0e8d64b2",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Muzey xodimlari kelasi oyda ochiladigan yangi ko'rgazma uchun tanlangan noyob buyumlarni ERTALABDAN kechgacha joy-joyiga terib chiqishdi.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "hol|payt holi"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "qachondan?|qachon?"
+      },
+      "izoh": "«ERTALABDAN» — hol; qachondan? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/payt"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#671d19bb",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Yakuniy imtihonga puxta tayyorgarlik ko'rish niyatida kutubxonaga kirgan talaba baland javonlar orasidan QIZIQARLI kitobni topib oldi.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "aniqlovchi|sifatlovchi aniqlovchi"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "qanday?"
+      },
+      "izoh": "«QIZIQARLI» — aniqlovchi; qanday? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/aniqlovchi"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#e4c68c4f",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Qish bo'yi tog' cho'qqilarida to'plangan qorlar erib, etakdagi soylar SHIDDAT bilan quyi tomon oqa boshladi.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "hol|ravish holi"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "qanday?"
+      },
+      "izoh": "«SHIDDAT» — hol; qanday? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/ravish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#c1f8ad83",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Inson salomatligining asosi bo'lgan to'g'ri ovqatlanish, muntazam jismoniy harakat va yetarli uyqu BAHORDA ayniqsa katta ahamiyat kasb etadi.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "hol|payt holi"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "qachon?"
+      },
+      "izoh": "«BAHORDA» — hol; qachon? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/payt"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#b160ba91",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Tong otar-otmas bog' ustini butunlay qoplab olgan QUYUQ tuman asta-sekin tarqaldi va havo birdan tiniqlashdi.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "aniqlovchi|sifatlovchi aniqlovchi"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "qanday?"
+      },
+      "izoh": "«QUYUQ» — aniqlovchi; qanday? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/aniqlovchi"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#fc681c1e",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Viloyat markazidan maxsus taklif etilgan TAJRIBALI murabbiy bolalarga mashg'ulotning har bir bosqichini alohida tushuntirib chiqdi.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "aniqlovchi|sifatlovchi aniqlovchi"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "qanday?"
+      },
+      "izoh": "«TAJRIBALI» — aniqlovchi; qanday? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/aniqlovchi"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#55fddc1f",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Bayram tadbiriga taklif etilgan hurmatli mehmonlar zalga kirgach, tashkilotchilar ularni birinchi QATORGA o'tirishga taklif qilishdi.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "hol|o'rin holi|to'ldiruvchi"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "qayerga?"
+      },
+      "izoh": "«QATORGA» — hol; qayerga? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/orin"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#d4e00a10",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Mustaqillik bayrami arafasida shahar markazidagi keng maydonga atrofdagi tumanlardan kelgan minglab ODAMLAR yig'ilib, tantanani birgalikda kutib oldilar.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "ega"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "kimlar?"
+      },
+      "izoh": "«ODAMLAR» — ega; kimlar? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/ega"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#53606624",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Tog' etagidagi kichik qishloq maktabining kutubxonasiga poytaxtdan yuborilgan YANGI kitoblar javonlarga mavzular va mualliflar bo'yicha terib qo'yildi.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "aniqlovchi|sifatlovchi aniqlovchi"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "qanday?"
+      },
+      "izoh": "«YANGI» — aniqlovchi; qanday? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/aniqlovchi"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#6812548d",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Uzoq yillik tajribasiga tayangan keksa usta yangi kelgan shogirdiga kulolchilik sirlarini SABR bilan, shoshilmasdan, bir-bir o'rgatib bordi.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "hol|ravish holi|holat holi"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "qanday?"
+      },
+      "izoh": "«SABR» — hol; qanday? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/ravish"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m96-sintaktik-birlik#1e2837d5",
+      "q": "Gapni sintaktik tahlil qiling.",
+      "v": null,
+      "t": null,
+      "tur": "O-1",
+      "matn": "Kutubxonaning yaqinda ochilgan yangi zalida saqlanayotgan qadimiy QO'LYOZMALARNI soha mutaxassislari bir necha oy davomida sinchiklab o'rgandilar.",
+      "a": {
+        "savol": "ajratib ko'rsatilgan so'z qaysi gap bo'lagi vazifasida kelgan?",
+        "javob": "to'ldiruvchi|vositasiz to'ldiruvchi"
+      },
+      "b": {
+        "savol": "u qaysi so'roqqa javob bo'lmoqda?",
+        "javob": "nimani?"
+      },
+      "izoh": "«QO'LYOZMALARNI» — to'ldiruvchi; nimani? so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        39
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m96-sintaktik-birlik",
+      "teg": [
+        "tahlil/gap-bolagi",
+        "bolak/toldiruvchi"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    }
+  ]
+}

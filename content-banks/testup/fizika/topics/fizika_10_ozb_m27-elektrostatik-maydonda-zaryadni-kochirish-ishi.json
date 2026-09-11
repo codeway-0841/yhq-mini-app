@@ -1,0 +1,531 @@
+{
+  "nom": "27-mavzu. Elektrostatik Maydonda Zaryadni Kochirish Ishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Konservativ kuch deganda qanday kuch tushuniladi?",
+      "v": [
+        "Bajargan ishi trayektoriya shakliga bog'liq bo'lmagan kuch",
+        "Bajargan ishi trayektoriya shakliga bog'liq bo'lgan kuch",
+        "Faqat jism tinch holatda ta'sir qiladigan kuch",
+        "Yo'nalishi doimiy ravishda o'zgarib turadigan kuch"
+      ],
+      "t": 0,
+      "izoh": "Agar kuchning bajargan ishi trayektoriya shakliga bog'liq bo'lmasa, bu kuch konservativ kuch deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#74a09fc5"
+    },
+    {
+      "q": "Nokonservativ kuch deganda qanday kuch tushuniladi?",
+      "v": [
+        "Bajargan ishi trayektoriya shakliga bog'liq bo'lgan kuch",
+        "Bajargan ishi trayektoriya shakliga bog'liq bo'lmagan kuch",
+        "Jismga faqat bir nuqtada ta'sir qiladigan kuch",
+        "Moddiy qiymati nolga teng kuch"
+      ],
+      "t": 0,
+      "izoh": "Agar kuchning bajargan ishi trayektoriya shakliga bog'liq bo'lsa, bu kuch nokonservativ kuch deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#acbb76f4"
+    },
+    {
+      "q": "Quyidagi kuchlarning qaysi biri konservativ kuchga misol bo'ladi?",
+      "v": [
+        "Og'irlik kuchi",
+        "Ishqalanish kuchi",
+        "Elektr maydondagi uyurmaviy kuch",
+        "Havo qarshilik kuchi"
+      ],
+      "t": 0,
+      "izoh": "Og'irlik kuchi, elastiklik kuchi, gravitatsion kuch va elektrostatik kuch konservativ kuchlarga misol bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#a7728e81"
+    },
+    {
+      "q": "Quyidagi kuchlarning qaysi biri nokonservativ kuchga misol bo'ladi?",
+      "v": [
+        "Ishqalanish kuchi",
+        "Elastiklik kuchi",
+        "Gravitatsion kuch",
+        "Elektrostatik kuch"
+      ],
+      "t": 0,
+      "izoh": "Nokonservativ kuchga ishqalanish kuchi va elektr maydondagi uyurmaviy kuchlar misol bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#de82dc27"
+    },
+    {
+      "q": "Konservativ kuchlarga quyidagilarning qaysi biri kirmaydi?",
+      "v": [
+        "Ishqalanish kuchi",
+        "Og'irlik kuchi",
+        "Elastiklik kuchi",
+        "Gravitatsion kuch"
+      ],
+      "t": 0,
+      "izoh": "Ishqalanish kuchi nokonservativ kuchdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#cb45e7d5"
+    },
+    {
+      "q": "Elektrostatik maydonda zaryadni ko'chirishda bajarilgan ish nimaga o'xshab hisoblanadi?",
+      "v": [
+        "Gravitatsion maydonda jism ko'chishida bajarilgan ishga",
+        "Ishqalanish kuchining bajargan ishiga",
+        "Jismning kinetik energiyasining o'zgarishiga",
+        "Ideal gazning bajargan ishiga"
+      ],
+      "t": 0,
+      "izoh": "Elektrostatik maydonda nuqtaviy zaryadni ko'chirishda bajarilgan ish gravitatsion maydonda jism ko'chishida bajarilgan ish kabi hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#6aadd513"
+    },
+    {
+      "q": "Musbat zaryad elektr maydon kuchining ta'sirida qanday yo'nalishda ko'chadi?",
+      "v": [
+        "Elektr maydon yo'nalishida",
+        "Elektr maydon yo'nalishiga teskari yo'nalishda",
+        "Maydon kuch chiziqlariga perpendikulyar yo'nalishda",
+        "Doimiy radiusli aylana bo'ylab"
+      ],
+      "t": 0,
+      "izoh": "q>0 bo'lganda zaryad elektr maydon yo'nalishida ko'chadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#ce8ca96a"
+    },
+    {
+      "q": "Manfiy zaryad elektr maydon kuchining ta'sirida qanday yo'nalishda ko'chadi?",
+      "v": [
+        "Elektr maydon yo'nalishiga teskari yo'nalishda",
+        "Elektr maydon yo'nalishida",
+        "Maydon kuch chiziqlari bo'ylab emas, ularga parallel",
+        "Hech qayerga ko'chmaydi"
+      ],
+      "t": 0,
+      "izoh": "q<0 bo'lganda zaryad maydon yo'nalishiga teskari yo'nalishda ko'chadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#e6e2db95"
+    },
+    {
+      "q": "Elektr maydonda zaryadga ta'sir qiluvchi kuch qanday ifodalanadi?",
+      "v": [
+        "F = q·E",
+        "F = q/E",
+        "F = E/q",
+        "F = q·E²"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydondagi zaryadga F = q·E kuch ta'sir qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#7d02ce99"
+    },
+    {
+      "q": "Bir jinsli elektr maydonda zaryadni ko'chirishda bajarilgan ish qanday formula bilan ifodalanadi?",
+      "v": [
+        "A = q·E·Δd",
+        "A = q·E/Δd",
+        "A = q²·E·Δd",
+        "A = E·Δd/q"
+      ],
+      "t": 0,
+      "izoh": "A = F·l·cosα = q·E·Δd, bu yerda Δd = l·cosα — zaryadning maydon yo'nalishi bo'yicha ko'chishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#4bdc38c5"
+    },
+    {
+      "q": "A = q·E·Δd formulasidagi Δd nimani anglatadi?",
+      "v": [
+        "Zaryadning maydon yo'nalishi bo'yicha ko'chishini",
+        "Zaryadning bosib o'tgan to'liq yo'lini",
+        "Ikki zaryad orasidagi masofani",
+        "Maydon kuchlanganligining o'zgarishini"
+      ],
+      "t": 0,
+      "izoh": "Δd — zaryadning maydon yo'nalishi bo'yicha ko'chishi, Δd = l·cosα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#0504d90f"
+    },
+    {
+      "q": "Zaryad maydon kuch chiziqlariga perpendikulyar yo'nalishda ko'chsa, elektr maydonning bajargan ishi qancha bo'ladi?",
+      "v": [
+        "Nolga teng",
+        "Maksimal qiymatga teng",
+        "q·E·l ga teng",
+        "Manfiy qiymatga teng"
+      ],
+      "t": 0,
+      "izoh": "cosα = 0 bo'lgani uchun A = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#60d345ba"
+    },
+    {
+      "q": "Zaryad maydon yo'nalishida to'g'ri chiziq bo'ylab ko'chsa, bajarilgan ish qanday bo'ladi?",
+      "v": [
+        "A = q·E·Δd (musbat)",
+        "A = 0",
+        "A = –q·E·Δd",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "cosα = 1 bo'lgani uchun A = q·E·Δd.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#2aee54a8"
+    },
+    {
+      "q": "Zaryad maydon yo'nalishiga teskari yo'nalishda ko'chsa (cosα = –1), bajarilgan ish qanday bo'ladi?",
+      "v": [
+        "A = –q·E·Δd",
+        "A = q·E·Δd",
+        "A = 0",
+        "A = 2q·E·Δd"
+      ],
+      "t": 0,
+      "izoh": "cosα = –1 bo'lgani uchun A = –q·E·Δd.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#c4f218ed"
+    },
+    {
+      "q": "Elektrostatik maydonda zaryadni yopiq kontur bo'ylab ko'chirishda bajarilgan ish qanchaga teng?",
+      "v": [
+        "Doimo nolga",
+        "Doimo q·E·d ga",
+        "Zaryad qiymatiga bog'liq holda o'zgaradi",
+        "Kontur uzunligiga proporsional"
+      ],
+      "t": 0,
+      "izoh": "Elektrostatik maydonda zaryadni yopiq kontur bo'ylab ko'chirishda bajarilgan ish doimo nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#38a812b1"
+    },
+    {
+      "q": "Bir jinsli elektr maydonda nuqtaviy zaryadni ko'chirishda bajarilgan ish nimaga bog'liq?",
+      "v": [
+        "Faqat zaryadning maydon yo'nalishidagi boshlang'ich va oxirgi vaziyatlariga",
+        "Zaryadning harakat trayektoriyasi shakliga",
+        "Zaryadning tezligiga",
+        "Ko'chirish jarayonining davomiyligiga"
+      ],
+      "t": 0,
+      "izoh": "Ish trayektoriya shakliga bog'liq bo'lmay, faqat zaryadning maydon yo'nalishidagi boshlang'ich va oxirgi vaziyatlari bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#5a7cc6d8"
+    },
+    {
+      "q": "Elektrostatik maydon nima uchun konservativ kuch maydoni hisoblanadi?",
+      "v": [
+        "Chunki uning bajargan ishi trayektoriya shakliga bog'liq emas",
+        "Chunki u doim nolga teng ish bajaradi",
+        "Chunki u faqat musbat zaryadlarga ta'sir qiladi",
+        "Chunki uning kuchlanganligi doimiy"
+      ],
+      "t": 0,
+      "izoh": "Elektrostatik maydonning nuqtaviy zaryadga ta'sir kuchi gravitatsion kuch kabi konservativ kuchdir, chunki ish trayektoriyaga bog'liq emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#49c5756e"
+    },
+    {
+      "q": "Konservativ kuchlarning ta'sir maydoni qanday maydon sifatida namoyon bo'ladi?",
+      "v": [
+        "Potensial maydon sifatida",
+        "Uyurmaviy maydon sifatida",
+        "Nostatsionar maydon sifatida",
+        "Magnit maydon sifatida"
+      ],
+      "t": 0,
+      "izoh": "Konservativ kuchlarning ta'sir maydoni potensial maydon singari namoyon bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#7b45bfd4"
+    },
+    {
+      "q": "Zaryad 1-nuqtadan 2-nuqtaga, keyin 2-nuqtadan 3-nuqtaga (maydonga perpendikulyar) ko'chirilganda umumiy ish qanday aniqlanadi?",
+      "v": [
+        "A = A₁₋₂ + A₂₋₃ = q·E·Δd",
+        "A = A₁₋₂ · A₂₋₃",
+        "A = 2q·E·Δd",
+        "A = 0"
+      ],
+      "t": 0,
+      "izoh": "A₂₋₃ = 0 (cosα = 0), shuning uchun A₁₋₂₋₃ = q·E·Δd.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#e77586e6"
+    },
+    {
+      "q": "Zaryadni 1-nuqtadan 2-nuqtaga ko'chirishda bajarilgan ish A₁₋₂ = q·E·Δd bo'lsa, uni 2-nuqtadan 1-nuqtaga qaytarishda bajariladigan ish qancha?",
+      "v": [
+        "A₂₋₁ = –q·E·Δd",
+        "A₂₋₁ = q·E·Δd",
+        "A₂₋₁ = 0",
+        "A₂₋₁ = 2q·E·Δd"
+      ],
+      "t": 0,
+      "izoh": "Teskari yo'nalishda cosα = –1, shuning uchun A₂₋₁ = –q·E·Δd.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#d892d8a8"
+    },
+    {
+      "q": "Elektrostatik maydonda zaryadni turli yo'llar bilan bir xil nuqtalar orasida ko'chirishda bajarilgan ishlar qanday bo'ladi?",
+      "v": [
+        "Bir xil bo'ladi",
+        "Eng qisqa yo'lda eng katta bo'ladi",
+        "Eng uzun yo'lda eng katta bo'ladi",
+        "Yo'l shakliga qarab turlicha bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Ish trayektoriya shakliga bog'liq bo'lmagani uchun turli yo'llarda ish bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#23fd7dc5"
+    },
+    {
+      "q": "Zaryadlangan zarra bir jinsli elektr maydonda maydon kuch chiziqlariga qarama-qarshi yo'nalishda harakatlansa, maydonning bajargan ishining ishorasi qanday?",
+      "v": [
+        "Manfiy",
+        "Musbat",
+        "Nol",
+        "Avval musbat, keyin manfiy"
+      ],
+      "t": 0,
+      "izoh": "Zaryad maydonga teskari ko'chsa cosα = –1 va ish manfiy bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#240e336b"
+    },
+    {
+      "q": "Maydon kuchlanganligi E = 4 kN/C bo'lgan bir jinsli maydonda q = 100 μC zaryad 4 cm ga ko'chirilib, maydon 8 mJ ish bajargan. Maydon kuch chiziqlari bilan ko'chish vektori orasidagi burchakni topish uchun qaysi formula ishlatiladi?",
+      "v": [
+        "cosα = A/(q·E·S)",
+        "cosα = q·E·S/A",
+        "cosα = A·q/(E·S)",
+        "cosα = q·A/(E·S)"
+      ],
+      "t": 0,
+      "izoh": "A = q·E·S·cosα formuladan cosα = A/(q·E·S).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#1277239e"
+    },
+    {
+      "q": "Darslikdagi masalaga ko'ra: q = 100 μC, E = 4 kV/m, S = 4 cm, A = 8 mJ bo'lganda maydon kuch chiziqlari va ko'chish vektori orasidagi burchak qancha?",
+      "v": [
+        "60°",
+        "30°",
+        "45°",
+        "90°"
+      ],
+      "t": 0,
+      "izoh": "cosα = 8·10⁻³/(100·10⁻⁶·4·10³·4·10⁻²) = 1/2, demak α = 60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#264d92c1"
+    },
+    {
+      "q": "Gravitatsion va elektrostatik maydonda bajarilgan ishning o'xshash jihati nimada?",
+      "v": [
+        "Ikkalasida ham ish trayektoriya shakliga bog'liq emas",
+        "Ikkalasida ham ish doimo nolga teng",
+        "Ikkalasida ham ish faqat jism massasiga bog'liq",
+        "Ikkalasida ham ish faqat gorizontal ko'chishda bajariladi"
+      ],
+      "t": 0,
+      "izoh": "Ikkala maydonda ham ish trayektoriya shakliga bog'liq bo'lmay, boshlang'ich va oxirgi vaziyatlar bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#d70d5f62"
+    },
+    {
+      "q": "Zaryad maydon yo'nalishida Δd ga ko'chganda elektr maydon musbat ish bajarishi uchun zaryad qanday bo'lishi kerak?",
+      "v": [
+        "Musbat",
+        "Manfiy",
+        "Neytral",
+        "Ishorasi ahamiyatsiz"
+      ],
+      "t": 0,
+      "izoh": "q>0 bo'lganda zaryad maydon yo'nalishida ko'chadi va maydon musbat ish bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#82649611"
+    },
+    {
+      "q": "Mexanika kursiga ko'ra ish qanday ifodalanadi?",
+      "v": [
+        "Kuch va shu kuch yo'nalishidagi ko'chish ko'paytmasi bilan",
+        "Kuch va vaqt ko'paytmasi bilan",
+        "Kuch va tezlik nisbati bilan",
+        "Massa va masofa ko'paytmasi bilan"
+      ],
+      "t": 0,
+      "izoh": "Ish jismga ta'sir qilayotgan kuch va shu kuch yo'nalishida jism ko'chishining ko'paytmasi bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#5c19295a"
+    },
+    {
+      "q": "Jism biror balandlikdan erkin tushganda uning potensial energiyasining o'zgarishi nimaga teng?",
+      "v": [
+        "Yerning gravitatsiyasi bajargan ishga",
+        "Jismning kinetik energiyasiga",
+        "Ishqalanish kuchi bajargan ishga",
+        "Nolga"
+      ],
+      "t": 0,
+      "izoh": "Jism erkin tushganda potensial energiyasining o'zgarishi Yerning gravitatsiyasi bajargan ishga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#a1c48b1e"
+    },
+    {
+      "q": "Zaryad bir jinsli maydonda aylana trayektoriya bo'ylab ko'chib, boshlang'ich nuqtaga qaytsa, elektr maydonning bajargan ishi qancha?",
+      "v": [
+        "Nol",
+        "q·E·R ga teng",
+        "2π·q·E·R ga teng",
+        "Manfiy qiymat qabul qiladi"
+      ],
+      "t": 0,
+      "izoh": "Yopiq kontur bo'ylab ko'chirishda ish doimo nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#98f4f02d"
+    },
+    {
+      "q": "Agar zaryad maydon yo'nalishi bilan α burchak ostida l masofaga ko'chsa, bajarilgan ish qanday yoziladi?",
+      "v": [
+        "A = q·E·l·cosα",
+        "A = q·E·l·sinα",
+        "A = q·E·l·tgα",
+        "A = q·E·l"
+      ],
+      "t": 0,
+      "izoh": "A = F·l·cosα = q·E·l·cosα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#747ca3ed"
+    },
+    {
+      "q": "Zaryadning maydon yo'nalishi bo'yicha ko'chishi Δd qanday ifodalanadi?",
+      "v": [
+        "Δd = l·cosα",
+        "Δd = l·sinα",
+        "Δd = l/cosα",
+        "Δd = l·tgα"
+      ],
+      "t": 0,
+      "izoh": "Δd = l·cosα, bu yerda l — zaryadning bosib o'tgan yo'li.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#1f0cb513"
+    },
+    {
+      "q": "Bir jinsli elektr maydonda ko'chirilayotgan zaryadning miqdori 2 marta oshirilsa, maydonning bajargan ishi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "A = q·E·Δd bo'lgani uchun ish zaryadga to'g'ri proporsional: q 2 marta oshsa, ish ham 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#3a75b6fd"
+    },
+    {
+      "q": "Bir jinsli elektr maydonda maydon kuchlanganligi 2 marta oshirilsa, bir xil zaryadni bir xil masofaga ko'chirishdagi ish qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "A = q·E·Δd bo'lgani uchun ish kuchlanganlikka to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#9d9cc5c8"
+    },
+    {
+      "q": "Elektrostatik maydonda nuqtaviy zaryadni ko'chirishda bajarilgan ish to'g'risidagi xulosa qaysi maydonlar uchun o'rinli?",
+      "v": [
+        "Har qanday elektrostatik maydonlar uchun",
+        "Faqat bir jinsli maydonlar uchun",
+        "Faqat nuqtaviy zaryad maydonlari uchun",
+        "Faqat yassi kondensator maydonlari uchun"
+      ],
+      "t": 0,
+      "izoh": "Ish trayektoriyaga bog'liq emasligi xulosasi har qanday elektrostatik maydonlar uchun o'rinlidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#5a477c0a"
+    },
+    {
+      "q": "Zaryadni maydonda ko'chirishda bajarilgan ishning SI dagi birligi qanday?",
+      "v": [
+        "Joul (J)",
+        "Nyuton (N)",
+        "Volt (V)",
+        "Kulon (C)"
+      ],
+      "t": 0,
+      "izoh": "Ish SI da joul (J) birligida o'lchanadi (masalada A = 8 mJ ko'rinishda berilgan).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m27-elektrostatik-maydonda-zaryadni-kochirish-ishi#f625722c"
+    }
+  ]
+}

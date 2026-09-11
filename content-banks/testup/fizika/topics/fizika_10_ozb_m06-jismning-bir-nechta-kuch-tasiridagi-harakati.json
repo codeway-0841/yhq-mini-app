@@ -1,0 +1,456 @@
+{
+  "nom": "06-mavzu. Jismning Bir Nechta Kuch Tasiridagi Harakati",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Gorizontal sirtda tortuvchi kuch bilan harakatlantirilayotgan jismga qanday kuchlar ta'sir qiladi?",
+      "v": [
+        "Tortuvchi kuch, ishqalanish kuchi, og'irlik kuchi, tayanchning normal reaksiya kuchi",
+        "Faqat tortuvchi kuch va og'irlik kuchi",
+        "Faqat og'irlik kuchi va reaksiya kuchi",
+        "Tortuvchi kuch, markazga intilma kuch, og'irlik kuchi"
+      ],
+      "t": 0,
+      "izoh": "Jismga tortuvchi kuch, ishqalanish kuchi, og'irlik kuchi va tayanchning normal reaksiya kuchi ta'sir qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#9ed500cb"
+    },
+    {
+      "q": "Jismni gorizontal sirt bo'ylab harakatlantirish uchun tortuvchi kuch qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "Ft > Fishq bo'lishi kerak",
+        "Ft < Fishq bo'lishi kerak",
+        "Ft = Fishq bo'lishi kerak",
+        "Ft = 0 bo'lishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Tortuvchi kuch tinchlikdagi ishqalanish kuchidan katta bo'lishi kerak: Ft > Fishq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#546a0730"
+    },
+    {
+      "q": "Gorizontal sirtdagi jismning harakat yo'nalishidagi teng ta'sir etuvchi kuch qanday topiladi?",
+      "v": [
+        "F = Ft − Fishq",
+        "F = Ft + Fishq",
+        "F = Fishq − Ft",
+        "F = mg"
+      ],
+      "t": 0,
+      "izoh": "Kuchlar qarama-qarshi yo'nalgani uchun F = Ft − Fishq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#6d91af94"
+    },
+    {
+      "q": "Gorizontal sirtda harakatlanayotgan jismning ishqalanish kuchi qanday topiladi?",
+      "v": [
+        "Fishq = μmg",
+        "Fishq = μm/g",
+        "Fishq = mg/μ",
+        "Fishq = μg/m"
+      ],
+      "t": 0,
+      "izoh": "N = mg ekanligidan Fishq = μN = μmg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#50732242"
+    },
+    {
+      "q": "Gorizontal sirtda tortilayotgan jismning tezlanishi qanday formula bilan topiladi?",
+      "v": [
+        "a = (Ft − μmg)/m",
+        "a = (Ft + μmg)/m",
+        "a = μmg/Ft",
+        "a = Ft·μg"
+      ],
+      "t": 0,
+      "izoh": "Nyutonning II qonunidan a = (Ft − μmg)/m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#d458584d"
+    },
+    {
+      "q": "Jismni sirtdan qiya yo'nalgan kuch bilan tortganda, tortuvchi kuchning OX o'qidagi tashkil etuvchisi qanday topiladi?",
+      "v": [
+        "Fx = Ft·cosα",
+        "Fx = Ft·sinα",
+        "Fx = Ft·tgα",
+        "Fx = Ft/cosα"
+      ],
+      "t": 0,
+      "izoh": "Tortuvchi kuchning OX o'qidagi tashkil etuvchisi Fx = Ft·cosα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#7a34a817"
+    },
+    {
+      "q": "Jismni sirtdan qiya yo'nalgan kuch bilan tortganda, tortuvchi kuchning OY o'qidagi tashkil etuvchisi qanday topiladi?",
+      "v": [
+        "Fy = Ft·sinα",
+        "Fy = Ft·cosα",
+        "Fy = Ft·tgα",
+        "Fy = Ft/sinα"
+      ],
+      "t": 0,
+      "izoh": "Tortuvchi kuchning OY o'qidagi tashkil etuvchisi Fy = Ft·sinα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#806691d7"
+    },
+    {
+      "q": "Kuch sirtdan qiya yo'nalgan bo'lsa, sirtning normal reaksiya kuchi qanday aniqlanadi?",
+      "v": [
+        "N = mg − Ft·sinα",
+        "N = mg + Ft·sinα",
+        "N = mg",
+        "N = Ft·sinα"
+      ],
+      "t": 0,
+      "izoh": "Tortuvchi kuchning vertikal tashkil etuvchisi hisobiga N = mg − Ft·sinα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#977c0e87"
+    },
+    {
+      "q": "Tortuvchi kuch sirtga nisbatan qiya yo'nalganda ishqalanish kuchi qanday topiladi?",
+      "v": [
+        "Fishq = μ(mg − Ft·sinα)",
+        "Fishq = μmg",
+        "Fishq = μ(mg + Ft·sinα)",
+        "Fishq = μFt·cosα"
+      ],
+      "t": 0,
+      "izoh": "Fishq = μN = μ(mg − Ft·sinα).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#fba5e472"
+    },
+    {
+      "q": "Tortuvchi kuchni sirtga nisbatan yuqoriga qiya qilib tortish nima uchun foydali?",
+      "v": [
+        "Normal reaksiya kuchi va ishqalanish kuchi kamayadi",
+        "Ishqalanish kuchi ortadi",
+        "Jismning massasi kamayadi",
+        "Og'irlik kuchi yo'qoladi"
+      ],
+      "t": 0,
+      "izoh": "Qiya tortganda N = mg − Ft·sinα kamayadi, demak ishqalanish kuchi ham kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#b5cd7edf"
+    },
+    {
+      "q": "Ko'chmas blokka osilgan massalari teng jismlar qanday harakat qiladi?",
+      "v": [
+        "Tinch turadi yoki tekis harakatlanadi",
+        "Tezlanish bilan harakatlanadi",
+        "Erkin tushadi",
+        "Aylanma harakat qiladi"
+      ],
+      "t": 0,
+      "izoh": "Massalar teng bo'lsa, jismlar tinch turadi yoki tekis harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#e8b7238e"
+    },
+    {
+      "q": "Ko'chmas blokka osilgan massalari teng jismlar uchun ipning taranglik kuchi nimaga teng?",
+      "v": [
+        "Bitta jismning og'irligiga",
+        "Ikkala jismning og'irligi yig'indisiga",
+        "Nolga",
+        "Ishqalanish kuchiga"
+      ],
+      "t": 0,
+      "izoh": "Massalar teng bo'lsa, ipning taranglik kuchi bitta jismning og'irligiga teng: T = P.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#cc435c71"
+    },
+    {
+      "q": "Ko'chmas blokda m2 > m1 bo'lsa, jismlar qanday harakatlanadi?",
+      "v": [
+        "Ikkinchi jism pastga, birinchi jism yuqoriga tezlanish bilan",
+        "Ikkalasi ham pastga tushadi",
+        "Ikkalasi ham yuqoriga ko'tariladi",
+        "Jismlar tinch turadi"
+      ],
+      "t": 0,
+      "izoh": "m2 > m1 bo'lsa, ikkinchi jism pastga, birinchi jism yuqoriga tezlanish bilan harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#2a5b6708"
+    },
+    {
+      "q": "Ko'chmas blokdagi jismlarga qanday kuchlar ta'sir etadi?",
+      "v": [
+        "Pastga yo'nalgan og'irlik kuchi va yuqoriga yo'nalgan ipning taranglik kuchi",
+        "Faqat og'irlik kuchi",
+        "Faqat taranglik kuchi",
+        "Og'irlik kuchi va ishqalanish kuchi"
+      ],
+      "t": 0,
+      "izoh": "Jismlarga pastga og'irlik kuchi, yuqoriga ipning taranglik kuchi ta'sir etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#db477c19"
+    },
+    {
+      "q": "Ko'chmas blokdagi jismlarning tezlanishlari qanday munosabatda bo'ladi?",
+      "v": [
+        "Miqdor jihatidan teng, yo'nalishlari qarama-qarshi",
+        "Miqdor jihatidan ham, yo'nalish jihatidan ham teng",
+        "Miqdorlari har xil, yo'nalishlari bir xil",
+        "Ikkalasi ham nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Ip cho'zilmas bo'lgani uchun tezlanishlar miqdor jihatidan teng, yo'nalishlari qarama-qarshi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#342be7cc"
+    },
+    {
+      "q": "Ko'chmas blokdagi jismlarning tezlanishi qanday formula bilan topiladi (m2 > m1)?",
+      "v": [
+        "a = (m2 − m1)g/(m1 + m2)",
+        "a = (m1 + m2)g/(m2 − m1)",
+        "a = g",
+        "a = (m2·m1)g/(m1 + m2)"
+      ],
+      "t": 0,
+      "izoh": "a = (m2 − m1)g/(m1 + m2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#785a0c04"
+    },
+    {
+      "q": "Ko'chmas blokda ipning taranglik kuchi qanday formula bilan topiladi?",
+      "v": [
+        "T = 2m1·m2·g/(m1 + m2)",
+        "T = (m2 − m1)g",
+        "T = (m1 + m2)g",
+        "T = m1·m2·g"
+      ],
+      "t": 0,
+      "izoh": "T = 2m1·m2·g/(m1 + m2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#f1675edc"
+    },
+    {
+      "q": "Ko'chmas blokning qaysi tomonlarida bir xil qiymatga ega bo'lgan kattaliklar qaysilar?",
+      "v": [
+        "Ipning taranglik kuchi va jismlarning tezlanish moduli",
+        "Jismlarning og'irlik kuchlari",
+        "Jismlarning massalari",
+        "Jismlarning tezlik yo'nalishlari"
+      ],
+      "t": 0,
+      "izoh": "Blokning har ikki tomonida taranglik kuchi T va tezlanish moduli a bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#a0443d1f"
+    },
+    {
+      "q": "Ko'chmas blok masalalarida ip qanday deb qabul qilinadi?",
+      "v": [
+        "Cho'zilmas va vaznsiz",
+        "Elastik va og'ir",
+        "Qattiq va og'ir",
+        "Yelimli"
+      ],
+      "t": 0,
+      "izoh": "Ip cho'zilmas va vaznsiz, blok vaznsiz deb olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#e95609b1"
+    },
+    {
+      "q": "Jismga bir necha kuch ta'sir etib, u muvozanatda turibdi. Jism qachon harakatga keladi?",
+      "v": [
+        "Kuchlar muvozanati buzilganda, ya'ni teng ta'sir etuvchi noldan farqli bo'lganda",
+        "Kuchlardan biri olib tashlanganda ham harakatga kelmaydi",
+        "Faqat og'irlik kuchi ortganda",
+        "Hech qachon harakatga kelmaydi"
+      ],
+      "t": 0,
+      "izoh": "Jism kuchlar muvozanati buzilib, teng ta'sir etuvchi kuch paydo bo'lganda harakatga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#1bbfc035"
+    },
+    {
+      "q": "Ishqalanish koeffitsiyenti μ oshirilsa (boshqa shartlar teng), gorizontal sirtdagi jismning tezlanishi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "a = (Ft − μmg)/m; μ ortsa, tezlanish kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#4ddcc992"
+    },
+    {
+      "q": "Ko'chmas blokdagi jismlarning massalari ayirmasi katta bo'lsa (massalar yig'indisi o'zgarmas), tezlanish qanday o'zgaradi?",
+      "v": [
+        "Katta bo'ladi",
+        "Kichik bo'ladi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "a = (m2 − m1)g/(m1 + m2); ayirma katta bo'lsa, tezlanish katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#175ea86a"
+    },
+    {
+      "q": "Ko'chmas blok orqali o'tkazilgan ipga osilgan 0,3 kg va 0,2 kg massali yuklar qanday tezlanish oladi (g = 10 m/s²)?",
+      "v": [
+        "2 m/s²",
+        "5 m/s²",
+        "1 m/s²",
+        "10 m/s²"
+      ],
+      "t": 0,
+      "izoh": "a = (0,3 − 0,2)·10/(0,3 + 0,2) = 2 m/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#99704d64"
+    },
+    {
+      "q": "Ko'chmas blokdagi jismlar massalari teng bo'lganda ularning tezlanishi nimaga teng?",
+      "v": [
+        "Nolga",
+        "g ga",
+        "g/2 ga",
+        "2g ga"
+      ],
+      "t": 0,
+      "izoh": "a = (m2 − m1)g/(m1 + m2) = 0, chunki m1 = m2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#ff16481b"
+    },
+    {
+      "q": "Gorizontal sirtda tekis harakatlanayotgan jism uchun tortuvchi kuch va ishqalanish kuchi orasidagi munosabat qanday?",
+      "v": [
+        "Ft = Fishq",
+        "Ft > Fishq",
+        "Ft < Fishq",
+        "Ft = 0"
+      ],
+      "t": 0,
+      "izoh": "Tekis harakatda a = 0 bo'lgani uchun Ft − Fishq = 0, ya'ni Ft = Fishq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#d02fcdc6"
+    },
+    {
+      "q": "Jismning mexanik harakati odatda nechta kuch ta'sirida sodir bo'ladi?",
+      "v": [
+        "Bir nechta kuch ta'sirida",
+        "Faqat bitta kuch ta'sirida",
+        "Kuchlarsiz",
+        "Faqat ikkita kuch ta'sirida"
+      ],
+      "t": 0,
+      "izoh": "Harakat yagona kuch ta'sirida emas, balki bir nechta kuch ta'sirida sodir bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#96ed8881"
+    },
+    {
+      "q": "Gorizontal sirtdagi jismga ta'sir etuvchi og'irlik kuchi va normal reaksiya kuchi orasidagi munosabat (sirt gorizontal bo'lganda) qanday?",
+      "v": [
+        "N = mg",
+        "N > mg",
+        "N < mg",
+        "N = 0"
+      ],
+      "t": 0,
+      "izoh": "Gorizontal sirtda N = mg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#0dda4959"
+    },
+    {
+      "q": "Ko'chmas blokka osilgan jismlar uchun birinchi jism (m1, yuqoriga harakatlanuvchi)ga yozilgan tenglama qaysi?",
+      "v": [
+        "T − m1g = m1a",
+        "m1g − T = m1a",
+        "T = m1g",
+        "m1g = m1a"
+      ],
+      "t": 0,
+      "izoh": "Birinchi jism uchun F1 = T − m1g = m1a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#444144ac"
+    },
+    {
+      "q": "Ko'chmas blokka osilgan jismlar uchun ikkinchi jism (m2, pastga harakatlanuvchi)ga yozilgan tenglama qaysi?",
+      "v": [
+        "m2g − T = m2a",
+        "T − m2g = m2a",
+        "T = m2g",
+        "m2g = 0"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi jism uchun F2 = m2g − T = m2a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#43adc32d"
+    },
+    {
+      "q": "Massalari teng ikki yuk osilgan ko'chmas blokda yuklardan biriga qo'shimcha yuk qo'shilsa, sistema qanday harakat qiladi?",
+      "v": [
+        "Qo'shimcha yuk qo'shilgan tomon pastga tezlanish bilan harakatlanadi",
+        "Sistema tinch qoladi",
+        "Qo'shimcha yuk tomoni yuqoriga ko'tariladi",
+        "Ikkala yuk bir xil tezlik bilan yuqoriga ko'tariladi"
+      ],
+      "t": 0,
+      "izoh": "Qo'shimcha yuk qo'shilgan jism og'irroq bo'lgani uchun u pastga, ikkinchisi yuqoriga tezlanish bilan harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m06-jismning-bir-nechta-kuch-tasiridagi-harakati#483231ef"
+    }
+  ]
+}

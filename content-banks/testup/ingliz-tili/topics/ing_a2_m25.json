@@ -1,0 +1,1306 @@
+{
+  "nom": "Feelings & adjectives (His-tuyg'u)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "'Happy' so'zining ma'nosi qaysi?",
+      "v": [
+        "Xursand",
+        "G'amgin",
+        "Charchagan",
+        "Jahldor"
+      ],
+      "t": 0,
+      "izoh": "Happy = xursand.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#83024c1a"
+    },
+    {
+      "q": "'Sad' degani nima?",
+      "v": [
+        "Xursand",
+        "G'amgin",
+        "Hayajonli",
+        "Xotirjam"
+      ],
+      "t": 1,
+      "izoh": "Sad = g'amgin.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#4f2fecd5"
+    },
+    {
+      "q": "'Angry' so'zi qaysi ma'noni bildiradi?",
+      "v": [
+        "Jahldor",
+        "Charchagan",
+        "Faxrli",
+        "Yolg'iz"
+      ],
+      "t": 0,
+      "izoh": "Angry = jahldor, achchiqlangan.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#37e51b28"
+    },
+    {
+      "q": "'Tired' degani?",
+      "v": [
+        "Zerikkan",
+        "Charchagan",
+        "Qo'rqqan",
+        "Hasadgo'y"
+      ],
+      "t": 1,
+      "izoh": "Tired = charchagan.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#79272bd4"
+    },
+    {
+      "q": "'Bored' so'zining ma'nosi?",
+      "v": [
+        "Zerikkan",
+        "Hayajonli",
+        "Xotirjam",
+        "G'amgin"
+      ],
+      "t": 0,
+      "izoh": "Bored = zerikkan.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#b0172d9c"
+    },
+    {
+      "q": "'Excited' degani nima?",
+      "v": [
+        "Xotirjam",
+        "Hayajonlangan",
+        "Charchagan",
+        "Uyalgan"
+      ],
+      "t": 1,
+      "izoh": "Excited = hayajonlangan.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#4681cec4"
+    },
+    {
+      "q": "'Worried' so'zi?",
+      "v": [
+        "Xavotirlangan",
+        "Xursand",
+        "Faxrli",
+        "Dadil"
+      ],
+      "t": 0,
+      "izoh": "Worried = xavotirlangan.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#edefa229"
+    },
+    {
+      "q": "'Nervous' degani?",
+      "v": [
+        "Xotirjam",
+        "Asabiy va hayajonda",
+        "Xursand",
+        "Zerikkan"
+      ],
+      "t": 1,
+      "izoh": "Nervous = hayajonda, asabiy.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#ae4de766"
+    },
+    {
+      "q": "'Surprised' ma'nosi?",
+      "v": [
+        "Hayron bo'lgan",
+        "G'amgin",
+        "Charchagan",
+        "Yolg'iz"
+      ],
+      "t": 0,
+      "izoh": "Surprised = hayron bo'lgan.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#2b09b0c7"
+    },
+    {
+      "q": "'Afraid' degani nima?",
+      "v": [
+        "Faxrli",
+        "Qo'rqqan",
+        "Xotirjam",
+        "Xursand"
+      ],
+      "t": 1,
+      "izoh": "Afraid = qo'rqqan.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#a3f67d72"
+    },
+    {
+      "q": "'Proud' so'zi?",
+      "v": [
+        "Faxrlanayotgan",
+        "Uyalgan",
+        "Zerikkan",
+        "G'amgin"
+      ],
+      "t": 0,
+      "izoh": "Proud = faxrlanayotgan.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#ba46b65f"
+    },
+    {
+      "q": "'Jealous' degani?",
+      "v": [
+        "Xotirjam",
+        "Hasadgo'y, rashk qiluvchi",
+        "Xursand",
+        "Charchagan"
+      ],
+      "t": 1,
+      "izoh": "Jealous = hasad, rashk qiluvchi.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#eedce55c"
+    },
+    {
+      "q": "'Calm' so'zining ma'nosi?",
+      "v": [
+        "Xotirjam",
+        "Jahldor",
+        "Qo'rqqan",
+        "Hayajonli"
+      ],
+      "t": 0,
+      "izoh": "Calm = xotirjam, tinch.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#495b4b2b"
+    },
+    {
+      "q": "'Upset' degani?",
+      "v": [
+        "Xursand",
+        "Xafa bo'lgan",
+        "Dadil",
+        "Zerikkan"
+      ],
+      "t": 1,
+      "izoh": "Upset = xafa, ranjigan.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#b728e12a"
+    },
+    {
+      "q": "'Lonely' so'zi?",
+      "v": [
+        "Yolg'iz",
+        "Faxrli",
+        "Hayajonli",
+        "Xotirjam"
+      ],
+      "t": 0,
+      "izoh": "Lonely = yolg'iz his qilish.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#36cc09bc"
+    },
+    {
+      "q": "'Confident' degani nima?",
+      "v": [
+        "Uyalgan",
+        "O'ziga ishonchli",
+        "G'amgin",
+        "Charchagan"
+      ],
+      "t": 1,
+      "izoh": "Confident = o'ziga ishonchli.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#00445324"
+    },
+    {
+      "q": "'Embarrassed' ma'nosi?",
+      "v": [
+        "Uyalgan",
+        "Xursand",
+        "Xotirjam",
+        "Jahldor"
+      ],
+      "t": 0,
+      "izoh": "Embarrassed = uyalgan, xijolat bo'lgan.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#52cd9c0d"
+    },
+    {
+      "q": "'Relaxed' degani?",
+      "v": [
+        "Asabiy",
+        "Bo'shashgan, dam olgan",
+        "Qo'rqqan",
+        "G'amgin"
+      ],
+      "t": 1,
+      "izoh": "Relaxed = bo'shashgan, dam olgan.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#1d3fecd2"
+    },
+    {
+      "q": "'Disappointed' so'zi?",
+      "v": [
+        "Hafsalasi pir bo'lgan",
+        "Xursand",
+        "Dadil",
+        "Zerikkan"
+      ],
+      "t": 0,
+      "izoh": "Disappointed = hafsalasi pir bo'lgan.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#1caf410c"
+    },
+    {
+      "q": "'Cheerful' degani nima?",
+      "v": [
+        "G'amgin",
+        "Quvnoq",
+        "Charchagan",
+        "Qo'rqqan"
+      ],
+      "t": 1,
+      "izoh": "Cheerful = quvnoq, xushchaqchaq.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#ec31464d"
+    },
+    {
+      "q": "'Scared' so'zining ma'nosi?",
+      "v": [
+        "Qo'rqqan",
+        "Faxrli",
+        "Xotirjam",
+        "Hasadgo'y"
+      ],
+      "t": 0,
+      "izoh": "Scared = qo'rqqan, afraid bilan bir xil.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#c2a7aa37"
+    },
+    {
+      "q": "'Xursand' inglizcha qanday?",
+      "v": [
+        "Sad",
+        "Happy",
+        "Angry",
+        "Tired"
+      ],
+      "t": 1,
+      "izoh": "Xursand = happy.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#7212721f"
+    },
+    {
+      "q": "'Jahldor' inglizchada?",
+      "v": [
+        "Angry",
+        "Calm",
+        "Proud",
+        "Bored"
+      ],
+      "t": 0,
+      "izoh": "Jahldor = angry.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#ac11c8ab"
+    },
+    {
+      "q": "'Charchagan' inglizcha?",
+      "v": [
+        "Excited",
+        "Tired",
+        "Happy",
+        "Lonely"
+      ],
+      "t": 1,
+      "izoh": "Charchagan = tired.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#c8b2db3a"
+    },
+    {
+      "q": "'Qo'rqqan' inglizchada qaysi?",
+      "v": [
+        "Afraid",
+        "Cheerful",
+        "Calm",
+        "Proud"
+      ],
+      "t": 0,
+      "izoh": "Qo'rqqan = afraid yoki scared.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#71c79c95"
+    },
+    {
+      "q": "I passed my exam! I'm so ___.",
+      "v": [
+        "happy",
+        "sad",
+        "tired",
+        "bored"
+      ],
+      "t": 0,
+      "izoh": "Imtihondan o'tsa xursand = happy.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#4d11d998"
+    },
+    {
+      "q": "My grandmother died last week. I feel very ___.",
+      "v": [
+        "excited",
+        "sad",
+        "proud",
+        "cheerful"
+      ],
+      "t": 1,
+      "izoh": "Yaqin kishi vafot etsa = sad.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#ee7681ee"
+    },
+    {
+      "q": "He broke my phone, so I'm ___ with him.",
+      "v": [
+        "angry",
+        "happy",
+        "relaxed",
+        "calm"
+      ],
+      "t": 0,
+      "izoh": "G'azablangan = angry.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#810a3ba5"
+    },
+    {
+      "q": "I worked all day. Now I'm really ___.",
+      "v": [
+        "excited",
+        "tired",
+        "proud",
+        "cheerful"
+      ],
+      "t": 1,
+      "izoh": "Kun bo'yi ishlagach = tired.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#b9afec95"
+    },
+    {
+      "q": "There is nothing to do. I'm so ___.",
+      "v": [
+        "bored",
+        "excited",
+        "afraid",
+        "proud"
+      ],
+      "t": 0,
+      "izoh": "Ish yo'q = bored, zerikkan.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#4f933b4b"
+    },
+    {
+      "q": "We are going to a theme park tomorrow! I'm ___.",
+      "v": [
+        "sad",
+        "excited",
+        "bored",
+        "tired"
+      ],
+      "t": 1,
+      "izoh": "Sayohatdan oldin = excited.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#91cac690"
+    },
+    {
+      "q": "My son is late and it's midnight. I'm ___.",
+      "v": [
+        "worried",
+        "happy",
+        "relaxed",
+        "proud"
+      ],
+      "t": 0,
+      "izoh": "Xavotirlangan = worried.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#b518a1cd"
+    },
+    {
+      "q": "Before the interview I felt very ___.",
+      "v": [
+        "calm",
+        "nervous",
+        "bored",
+        "cheerful"
+      ],
+      "t": 1,
+      "izoh": "Suhbatdan oldin = nervous.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#9b7c4238"
+    },
+    {
+      "q": "You came to my party? I'm so ___ to see you!",
+      "v": [
+        "surprised",
+        "angry",
+        "tired",
+        "bored"
+      ],
+      "t": 0,
+      "izoh": "Kutilmagan = surprised.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#cd6e12b4"
+    },
+    {
+      "q": "There is a big dog. The child is ___.",
+      "v": [
+        "proud",
+        "afraid",
+        "cheerful",
+        "calm"
+      ],
+      "t": 1,
+      "izoh": "Katta itdan bola qo'rqadi = afraid.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#b9ec4502"
+    },
+    {
+      "q": "My daughter won first prize. I'm very ___ of her.",
+      "v": [
+        "proud",
+        "bored",
+        "afraid",
+        "upset"
+      ],
+      "t": 0,
+      "izoh": "Farzandi bilan faxrlanadi = proud.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#585d2dc9"
+    },
+    {
+      "q": "My friend has a new bike and I want one too. I feel ___.",
+      "v": [
+        "calm",
+        "jealous",
+        "relaxed",
+        "proud"
+      ],
+      "t": 1,
+      "izoh": "Hasad = jealous.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#f9a54423"
+    },
+    {
+      "q": "After yoga I feel very ___.",
+      "v": [
+        "calm",
+        "angry",
+        "worried",
+        "nervous"
+      ],
+      "t": 0,
+      "izoh": "Yoga'dan keyin = calm.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#e886b71a"
+    },
+    {
+      "q": "She lost her keys again and she is very ___.",
+      "v": [
+        "cheerful",
+        "upset",
+        "proud",
+        "excited"
+      ],
+      "t": 1,
+      "izoh": "Xafa, ranjigan = upset.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#3497afcb"
+    },
+    {
+      "q": "All my friends moved away. I feel ___.",
+      "v": [
+        "lonely",
+        "excited",
+        "proud",
+        "cheerful"
+      ],
+      "t": 0,
+      "izoh": "Do'stlari ketgach = lonely.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#09dbf3bb"
+    },
+    {
+      "q": "I studied hard, so I feel ___ about the test.",
+      "v": [
+        "afraid",
+        "confident",
+        "upset",
+        "lonely"
+      ],
+      "t": 1,
+      "izoh": "O'ziga ishonchli = confident.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#a484061f"
+    },
+    {
+      "q": "I fell down in front of everyone. I was so ___.",
+      "v": [
+        "embarrassed",
+        "proud",
+        "excited",
+        "calm"
+      ],
+      "t": 0,
+      "izoh": "Uyalgan = embarrassed.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#0f47e9ed"
+    },
+    {
+      "q": "It's Sunday and I'm at home on the sofa, feeling ___.",
+      "v": [
+        "nervous",
+        "relaxed",
+        "angry",
+        "afraid"
+      ],
+      "t": 1,
+      "izoh": "Divanda dam olib = relaxed.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#418823f3"
+    },
+    {
+      "q": "I wanted to win, but I lost. I'm ___.",
+      "v": [
+        "disappointed",
+        "excited",
+        "proud",
+        "cheerful"
+      ],
+      "t": 0,
+      "izoh": "Hafsalasi pir = disappointed.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#53491a08"
+    },
+    {
+      "q": "She is always smiling and ___.",
+      "v": [
+        "sad",
+        "cheerful",
+        "angry",
+        "worried"
+      ],
+      "t": 1,
+      "izoh": "Doim tabassum = cheerful.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#f6ecc5cc"
+    },
+    {
+      "q": "The film was long and boring, so I felt ___.",
+      "v": [
+        "bored",
+        "excited",
+        "proud",
+        "confident"
+      ],
+      "t": 0,
+      "izoh": "Zerikkan = bored.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#2ea69009"
+    },
+    {
+      "q": "He is ___ because he can't find a job.",
+      "v": [
+        "cheerful",
+        "worried",
+        "excited",
+        "relaxed"
+      ],
+      "t": 1,
+      "izoh": "Ish topolmasa = worried.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#622fb0e4"
+    },
+    {
+      "q": "Don't be ___, the dog is friendly.",
+      "v": [
+        "afraid",
+        "happy",
+        "proud",
+        "calm"
+      ],
+      "t": 0,
+      "izoh": "Qo'rqma = don't be afraid.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#af98c4f1"
+    },
+    {
+      "q": "Everyone was watching me sing. I felt ___.",
+      "v": [
+        "relaxed",
+        "nervous",
+        "calm",
+        "bored"
+      ],
+      "t": 1,
+      "izoh": "Hamma qarab tursa = nervous.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#c551cf7a"
+    },
+    {
+      "q": "My best friend is moving to another city. I'm ___.",
+      "v": [
+        "sad",
+        "excited",
+        "proud",
+        "cheerful"
+      ],
+      "t": 0,
+      "izoh": "Do'sti ketsa = sad.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#b1e8d191"
+    },
+    {
+      "q": "The rollercoaster was amazing! We were so ___.",
+      "v": [
+        "bored",
+        "excited",
+        "calm",
+        "lonely"
+      ],
+      "t": 1,
+      "izoh": "Attraktsiondan = excited.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#80c008ac"
+    },
+    {
+      "q": "My brother read my diary. I'm ___ with him.",
+      "v": [
+        "angry",
+        "happy",
+        "relaxed",
+        "proud"
+      ],
+      "t": 0,
+      "izoh": "Kundaligini o'qisa = angry.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#d9e1afe9"
+    },
+    {
+      "q": "After a good night's sleep I feel ___.",
+      "v": [
+        "tired",
+        "relaxed",
+        "upset",
+        "worried"
+      ],
+      "t": 1,
+      "izoh": "Yaxshi uxlagach = relaxed.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#9325f466"
+    },
+    {
+      "q": "He forgot my birthday. I'm a bit ___.",
+      "v": [
+        "upset",
+        "cheerful",
+        "excited",
+        "confident"
+      ],
+      "t": 0,
+      "izoh": "Tug'ilgan kunni unutsa = upset.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#76848fb2"
+    },
+    {
+      "q": "She speaks to the class with no fear. She is ___.",
+      "v": [
+        "afraid",
+        "confident",
+        "nervous",
+        "lonely"
+      ],
+      "t": 1,
+      "izoh": "Qo'rqmasdan gapiradi = confident.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#a56c0aa5"
+    },
+    {
+      "q": "Which word means 'feeling very happy and full of energy about something'?",
+      "v": [
+        "excited",
+        "tired",
+        "bored",
+        "calm"
+      ],
+      "t": 0,
+      "izoh": "Hayajonli = excited.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#8e9a3f4a"
+    },
+    {
+      "q": "Which word means 'wanting to sleep or rest'?",
+      "v": [
+        "proud",
+        "tired",
+        "angry",
+        "cheerful"
+      ],
+      "t": 1,
+      "izoh": "Uxlagisi kelgan = tired.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#f448c42c"
+    },
+    {
+      "q": "Which word means 'feeling that something bad might happen'?",
+      "v": [
+        "worried",
+        "proud",
+        "cheerful",
+        "relaxed"
+      ],
+      "t": 0,
+      "izoh": "Yomon narsadan xavotir = worried.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#e414bce2"
+    },
+    {
+      "q": "Which word means 'feeling alone and unhappy'?",
+      "v": [
+        "proud",
+        "lonely",
+        "excited",
+        "calm"
+      ],
+      "t": 1,
+      "izoh": "Yolg'iz va baxtsiz = lonely.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#38a3412b"
+    },
+    {
+      "q": "Which word means 'not worried, quiet and peaceful'?",
+      "v": [
+        "calm",
+        "angry",
+        "nervous",
+        "upset"
+      ],
+      "t": 0,
+      "izoh": "Tinch = calm.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#8a93b64c"
+    },
+    {
+      "q": "Which word means 'feeling shy or ashamed in front of others'?",
+      "v": [
+        "proud",
+        "embarrassed",
+        "excited",
+        "cheerful"
+      ],
+      "t": 1,
+      "izoh": "Odamlar oldida uyalish = embarrassed.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#499e422b"
+    },
+    {
+      "q": "Which word means 'feeling pleased about something you did'?",
+      "v": [
+        "proud",
+        "afraid",
+        "bored",
+        "lonely"
+      ],
+      "t": 0,
+      "izoh": "O'z ishidan mamnun = proud.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#892e7861"
+    },
+    {
+      "q": "Which word means 'sad because something was not as good as you hoped'?",
+      "v": [
+        "cheerful",
+        "disappointed",
+        "excited",
+        "calm"
+      ],
+      "t": 1,
+      "izoh": "Kutgani chiqmasa = disappointed.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#31a91c87"
+    },
+    {
+      "q": "Which word means 'sure that you can do something well'?",
+      "v": [
+        "confident",
+        "afraid",
+        "tired",
+        "bored"
+      ],
+      "t": 0,
+      "izoh": "O'ziga ishongan = confident.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#6413f949"
+    },
+    {
+      "q": "Which word means 'angry and unhappy about something'?",
+      "v": [
+        "cheerful",
+        "upset",
+        "calm",
+        "proud"
+      ],
+      "t": 1,
+      "izoh": "Xafa va ranjigan = upset.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#798add15"
+    },
+    {
+      "q": "Which word means 'afraid of something'?",
+      "v": [
+        "scared",
+        "proud",
+        "happy",
+        "relaxed"
+      ],
+      "t": 0,
+      "izoh": "Qo'rqqan = scared.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#ce2270b5"
+    },
+    {
+      "q": "Which word means 'not tense, resting comfortably'?",
+      "v": [
+        "nervous",
+        "relaxed",
+        "angry",
+        "worried"
+      ],
+      "t": 1,
+      "izoh": "Bo'shashgan = relaxed.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#a76c7cfa"
+    },
+    {
+      "q": "Which word means 'feeling something is unfair because someone has what you want'?",
+      "v": [
+        "jealous",
+        "proud",
+        "calm",
+        "cheerful"
+      ],
+      "t": 0,
+      "izoh": "Hasad = jealous.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#245d83cc"
+    },
+    {
+      "q": "Which word means 'happy and smiling, full of good mood'?",
+      "v": [
+        "sad",
+        "cheerful",
+        "tired",
+        "afraid"
+      ],
+      "t": 1,
+      "izoh": "Quvnoq = cheerful.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#7a1ce555"
+    },
+    {
+      "q": "Which word means 'shocked because of something unexpected'?",
+      "v": [
+        "surprised",
+        "bored",
+        "calm",
+        "proud"
+      ],
+      "t": 0,
+      "izoh": "Kutilmagan hodisadan = surprised.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#47749c14"
+    },
+    {
+      "q": "Which word means 'not interested because nothing is happening'?",
+      "v": [
+        "excited",
+        "bored",
+        "confident",
+        "proud"
+      ],
+      "t": 1,
+      "izoh": "Zerikkan = bored.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#6f938c3f"
+    },
+    {
+      "q": "Which word is the OPPOSITE of 'happy'?",
+      "v": [
+        "sad",
+        "cheerful",
+        "excited",
+        "proud"
+      ],
+      "t": 0,
+      "izoh": "Happy teskarisi = sad.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#17c50653"
+    },
+    {
+      "q": "Which word is the OPPOSITE of 'calm'?",
+      "v": [
+        "relaxed",
+        "nervous",
+        "tired",
+        "proud"
+      ],
+      "t": 1,
+      "izoh": "Calm teskarisi = nervous.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#3c99d521"
+    },
+    {
+      "q": "Which word is the OPPOSITE of 'confident'?",
+      "v": [
+        "afraid",
+        "cheerful",
+        "excited",
+        "proud"
+      ],
+      "t": 0,
+      "izoh": "Dadilning teskarisi = afraid.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#f14d55d4"
+    },
+    {
+      "q": "Which word is the OPPOSITE of 'bored'?",
+      "v": [
+        "tired",
+        "excited",
+        "angry",
+        "lonely"
+      ],
+      "t": 1,
+      "izoh": "Bored teskarisi = excited.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#fd01ac63"
+    },
+    {
+      "q": "Your team won the football match. How do you feel?",
+      "v": [
+        "happy",
+        "sad",
+        "bored",
+        "afraid"
+      ],
+      "t": 0,
+      "izoh": "G'alaba = happy.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#7f5d051d"
+    },
+    {
+      "q": "You are alone in the dark and hear a strange noise. You feel ___.",
+      "v": [
+        "cheerful",
+        "afraid",
+        "proud",
+        "relaxed"
+      ],
+      "t": 1,
+      "izoh": "Qorong'ida g'alati ovoz = afraid.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#35c05959"
+    },
+    {
+      "q": "You have an exam tomorrow and haven't studied. You feel ___.",
+      "v": [
+        "nervous",
+        "relaxed",
+        "bored",
+        "proud"
+      ],
+      "t": 0,
+      "izoh": "Tayyor emas imtihon = nervous.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#a8c467c3"
+    },
+    {
+      "q": "Your friend forgot to invite you to the party. You feel ___.",
+      "v": [
+        "excited",
+        "upset",
+        "cheerful",
+        "confident"
+      ],
+      "t": 1,
+      "izoh": "Taklif qilinmasa = upset.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#c7cfb62b"
+    },
+    {
+      "q": "You get a gift you did not expect. You feel ___.",
+      "v": [
+        "surprised",
+        "bored",
+        "angry",
+        "tired"
+      ],
+      "t": 0,
+      "izoh": "Kutilmagan sovg'a = surprised.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#8d73e539"
+    },
+    {
+      "q": "You finished a big project after many days. You feel ___.",
+      "v": [
+        "afraid",
+        "proud",
+        "lonely",
+        "bored"
+      ],
+      "t": 1,
+      "izoh": "Katta ishni tugatib = proud.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#9592e425"
+    },
+    {
+      "q": "It is raining, you are inside with tea and a book. You feel ___.",
+      "v": [
+        "relaxed",
+        "angry",
+        "nervous",
+        "afraid"
+      ],
+      "t": 0,
+      "izoh": "Choy va kitob bilan = relaxed.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#e1100a4c"
+    },
+    {
+      "q": "Your friend got the phone you wanted. You feel ___.",
+      "v": [
+        "calm",
+        "jealous",
+        "proud",
+        "cheerful"
+      ],
+      "t": 1,
+      "izoh": "Hasad = jealous.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#4a12e519"
+    },
+    {
+      "q": "You are new in a class and know nobody. You feel ___.",
+      "v": [
+        "lonely",
+        "excited",
+        "proud",
+        "confident"
+      ],
+      "t": 0,
+      "izoh": "Hech kimni tanimasa = lonely.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#bbd46c3d"
+    },
+    {
+      "q": "You practised a lot and now you can speak English well. You feel ___.",
+      "v": [
+        "afraid",
+        "confident",
+        "bored",
+        "upset"
+      ],
+      "t": 1,
+      "izoh": "Ko'p mashq qilib = confident.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#487aab8f"
+    },
+    {
+      "q": "You said the wrong name in front of everyone. You feel ___.",
+      "v": [
+        "embarrassed",
+        "proud",
+        "excited",
+        "relaxed"
+      ],
+      "t": 0,
+      "izoh": "Noto'g'ri gapirib = embarrassed.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#f09b88d1"
+    },
+    {
+      "q": "Your favourite team lost the final. You feel ___.",
+      "v": [
+        "cheerful",
+        "disappointed",
+        "excited",
+        "calm"
+      ],
+      "t": 1,
+      "izoh": "Sevimli jamoa yutqazsa = disappointed.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#a0e10876"
+    },
+    {
+      "q": "You wait two hours and the bus never comes. You feel ___.",
+      "v": [
+        "angry",
+        "proud",
+        "relaxed",
+        "cheerful"
+      ],
+      "t": 0,
+      "izoh": "Avtobus kelmasa = angry.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#ad02d11b"
+    },
+    {
+      "q": "It's a sunny morning and you are singing. You feel ___.",
+      "v": [
+        "sad",
+        "cheerful",
+        "tired",
+        "afraid"
+      ],
+      "t": 1,
+      "izoh": "Quyoshli tong = cheerful.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#a67ef045"
+    },
+    {
+      "q": "Your mother is in hospital and you have no news. You feel ___.",
+      "v": [
+        "worried",
+        "cheerful",
+        "proud",
+        "relaxed"
+      ],
+      "t": 0,
+      "izoh": "Xabar bo'lmasa = worried.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#b7a04dcb"
+    },
+    {
+      "q": "You get to travel abroad for the first time. You feel ___.",
+      "v": [
+        "bored",
+        "excited",
+        "sad",
+        "lonely"
+      ],
+      "t": 1,
+      "izoh": "Birinchi sayohat = excited.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#2ce163bd"
+    },
+    {
+      "q": "You have watched TV all day and nothing is fun. You feel ___.",
+      "v": [
+        "bored",
+        "proud",
+        "confident",
+        "excited"
+      ],
+      "t": 0,
+      "izoh": "Kun bo'yi TV = bored.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#84131a1e"
+    },
+    {
+      "q": "You did slow breathing and meditation. Now you feel ___.",
+      "v": [
+        "nervous",
+        "calm",
+        "angry",
+        "afraid"
+      ],
+      "t": 1,
+      "izoh": "Meditatsiyadan keyin = calm.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#e0baf98f"
+    },
+    {
+      "q": "Someone laughed at your clothes. You feel ___.",
+      "v": [
+        "embarrassed",
+        "proud",
+        "excited",
+        "relaxed"
+      ],
+      "t": 0,
+      "izoh": "Kiyimidan kulishsa = embarrassed.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#2f898ffd"
+    },
+    {
+      "q": "You have run 10 kilometres. You feel ___.",
+      "v": [
+        "excited",
+        "tired",
+        "proud",
+        "calm"
+      ],
+      "t": 1,
+      "izoh": "10 km yugurgach = tired.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#e676f7f4"
+    },
+    {
+      "q": "Your little sister is crying because her toy broke. She is ___.",
+      "v": [
+        "upset",
+        "cheerful",
+        "proud",
+        "confident"
+      ],
+      "t": 0,
+      "izoh": "O'yinchoq sinsa = upset.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#ee0d5e92"
+    },
+    {
+      "q": "You are about to give a speech to 100 people. You feel ___.",
+      "v": [
+        "relaxed",
+        "nervous",
+        "bored",
+        "lonely"
+      ],
+      "t": 1,
+      "izoh": "Nutqdan oldin = nervous.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#bf3bd36f"
+    },
+    {
+      "q": "Your dog is lost and you can't find it. You feel ___.",
+      "v": [
+        "worried",
+        "cheerful",
+        "proud",
+        "excited"
+      ],
+      "t": 0,
+      "izoh": "It yo'qolsa = worried.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#bfffbcaa"
+    },
+    {
+      "q": "Your friend told everyone your secret. You feel ___ with her.",
+      "v": [
+        "cheerful",
+        "angry",
+        "relaxed",
+        "proud"
+      ],
+      "t": 1,
+      "izoh": "Sirni aytib qo'ysa = angry.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#6273b853"
+    },
+    {
+      "q": "You helped an old man cross the road. You feel ___.",
+      "v": [
+        "proud",
+        "bored",
+        "afraid",
+        "jealous"
+      ],
+      "t": 0,
+      "izoh": "Yaxshi ish qilib = proud.",
+      "qiy": "orta",
+      "id": "ing_a2_m25#41bc54cb"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Yaxlitlash, taqribiy qiymat va xatoni baholash",
+  "bolim": "Sonlar va ular ustida amallar",
+  "blok": "arif",
+  "rasmiyBolim": 1,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Anvar tarozida mahsulotning og'irligini 3,4728 kg deb o'qidi. Bu sonni yuzdan bir razryadgacha yaxlitlaganda qanday qiymat hosil bo'ladi?",
+      "v": [
+        "3,47 kg",
+        "3,48 kg",
+        "3,5 kg",
+        "3,473 kg"
+      ],
+      "t": 0,
+      "izoh": "Yuzdan bir razryad — verguldan keyingi ikkinchi raqam, bu yerda u 7 ga teng. Undan keyingi raqam 2 bo'lib, 5 dan kichik, shuning uchun 7 o'zgarmaydi va qolgan raqamlar tashlanadi. Javob: 3,47 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "razryadgacha-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#cc560fac"
+    },
+    {
+      "q": "Toshkent bilan Samarqand orasidagi temir yo'l uzunligi 344,6 km. Bu masofani o'nlik razryadgacha yaxlitlab yozing.",
+      "v": [
+        "350 km",
+        "340 km",
+        "345 km",
+        "344 km"
+      ],
+      "t": 1,
+      "izoh": "O'nlik razryadgacha yaxlitlashda birlar raqamiga qaraladi. 344,6 sonida birlar raqami 4 bo'lib, u 5 dan kichik, demak o'nliklar soni oshmaydi va son 340 ga aylanadi. 345 — birlar razryadigacha yaxlitlash natijasi, 344 esa kasr qismini shunchaki tashlab yuborish (kamiga yaxlitlash) natijasi bo'lib, ikkalasi ham savol shartiga mos kelmaydi. Javob: 340 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "razryadgacha-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#55d96f57"
+    },
+    {
+      "q": "Korxonaning oylik daromadi 78 649 300 so'm bo'ldi. Buxgalter bu sonni million razryadgacha yaxlitlab hisobotga kiritmoqchi. U qanday son yozadi?",
+      "v": [
+        "78 000 000 so'm",
+        "78 600 000 so'm",
+        "79 000 000 so'm",
+        "80 000 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Million razryadgacha yaxlitlashda undan keyingi, ya'ni yuz minglar raqamiga qaraladi. Bu sonda yuz minglar raqami 6 bo'lib, 5 dan katta. Shuning uchun millionlar soni 78 dan 79 ga oshadi, qolgan razryadlar esa nolga aylanadi. Javob: 79 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "razryadgacha-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#f9928847"
+    },
+    {
+      "q": "Dilnoza 0,08461 sonini mingdan bir razryadgacha yaxlitlashi kerak. Uning daftariga qaysi son yozilishi lozim?",
+      "v": [
+        "0,084",
+        "0,0846",
+        "0,09",
+        "0,085"
+      ],
+      "t": 3,
+      "izoh": "Mingdan bir razryad — verguldan keyingi uchinchi raqam, bu sonda u 4 ga teng. Undan keyingi raqam 6 bo'lib, 5 dan katta, shuning uchun 4 birga oshadi va 5 bo'ladi. Qolgan raqamlar tashlab yuboriladi. Javob: 0,085.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "razryadgacha-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#11178ef9"
+    },
+    {
+      "q": "Laboratoriyada namunaning massasi 9,1975 g deb o'lchandi. Bu natijani yuzdan bir gramm aniqligida yozing.",
+      "v": [
+        "9,19 g",
+        "9,198 g",
+        "9,1 g",
+        "9,20 g"
+      ],
+      "t": 3,
+      "izoh": "Yuzdan bir gramm aniqligi verguldan keyin ikkita raqam qoldirishni bildiradi. Uchinchi raqam 7 bo'lib, 5 dan katta, shuning uchun ikkinchi raqam 9 birga oshadi. 9 ga bir qo'shilsa 10 bo'lgani uchun o'nliklar razryadiga ko'chirish bajariladi: 0,19 dan 0,20 hosil bo'ladi. Javob: 9,20 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "razryadgacha-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#e651d726"
+    },
+    {
+      "q": "Sardor 47,83 sonini birlar razryadigacha kamiga yaxlitladi. U qanday son oldi?",
+      "v": [
+        "47",
+        "48",
+        "47,8",
+        "40"
+      ],
+      "t": 0,
+      "izoh": "Kamiga yaxlitlashda son o'zidan kichik bo'lgan eng yaqin qiymatga keltiriladi. 47,83 ning butun qismi 47, kasr qismi esa tashlanadi. Kasr qismi 0,5 dan katta bo'lsa ham kamiga yaxlitlashda u hisobga olinmaydi, shu sababli 48 noto'g'ri. Javob: 47.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kamiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#0afea794"
+    },
+    {
+      "q": "Bir qop guruchning og'irligi 12,7 kg. Sotuvchi og'irlikni kamiga butun kilogrammgacha yaxlitlab yozdi. Uning qog'ozida qanday son turadi?",
+      "v": [
+        "13 kg",
+        "12 kg",
+        "12,7 kg",
+        "10 kg"
+      ],
+      "t": 1,
+      "izoh": "Kamiga yaxlitlash sonni kichraytiradi: butun qism saqlanadi, kasr qismi tashlanadi. 12,7 ning butun qismi 12, demak yozuv 12 kg bo'ladi. 13 kg esa eng yaqin butun songa yaxlitlash natijasi, u shartga mos kelmaydi. Javob: 12 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kamiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#6502e639"
+    },
+    {
+      "q": "Tunda termometr −6,2 °C ni ko'rsatdi. Bu qiymat butun songacha kamiga yaxlitlansa, qanday natija chiqadi?",
+      "v": [
+        "−6 °C",
+        "−6,2 °C",
+        "−7 °C",
+        "−7,2 °C"
+      ],
+      "t": 2,
+      "izoh": "Kamiga yaxlitlashda son sonlar o'qi bo'ylab chapga, ya'ni kichik tomonga siljiydi. Manfiy sonlarda kichikroq qiymatning moduli kattaroq bo'ladi, shuning uchun −6,2 dan kichik eng yaqin butun son −7 ga teng. Ko'p o'quvchi kasr qismini tashlab −6 deydi, bu esa aslida ortig'iga yaxlitlash. Javob: −7 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kamiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#9fc43191"
+    },
+    {
+      "q": "Omborda 8 456 dona g'isht bor. Hisobot uchun bu miqdor yuzlikkacha kamiga yaxlitlanadi. Hisobotda qaysi son ko'rsatiladi?",
+      "v": [
+        "8 500",
+        "8 450",
+        "8 000",
+        "8 400"
+      ],
+      "t": 3,
+      "izoh": "Yuzlikkacha kamiga yaxlitlashda son yuzning karralisiga qadar kichraytiriladi. 8 456 dan kichik va 100 ga bo'linadigan eng yaqin son 8 400 ga teng. 8 500 — eng yaqin yuzlikka yaxlitlash, 8 000 esa minglikkacha kamiga yaxlitlash natijasi. Javob: 8 400.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kamiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#a09a7fe4"
+    },
+    {
+      "q": "Kamola 3,21 m matoni o'ndan bir metr aniqligida ortig'iga yaxlitladi. Natija qanday bo'ldi?",
+      "v": [
+        "3,2 m",
+        "3,3 m",
+        "3 m",
+        "4 m"
+      ],
+      "t": 1,
+      "izoh": "Ortig'iga yaxlitlashda natija berilgan sondan kichik bo'lmasligi shart. O'ndan bir metrlik qadamda 3,21 dan katta eng yaqin qiymat 3,3 m ga teng. 3,2 m esa 3,21 dan kichik, shuning uchun u ortig'iga yaxlitlash bo'la olmaydi. Javob: 3,3 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortigiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#20d6b2a0"
+    },
+    {
+      "q": "Bir avtobusga 45 nafar yo'lovchi sig'adi. 214 nafar o'quvchini bir yo'la olib ketish uchun kamida nechta avtobus buyurtma qilinadi?",
+      "v": [
+        "4 ta",
+        "4,8 ta",
+        "5 ta",
+        "6 ta"
+      ],
+      "t": 2,
+      "izoh": "Avval 214 ni 45 ga bo'lamiz: 214 : 45 ≈ 4,76. Avtobus sonini kasr bilan ko'rsatib bo'lmaydi, qolgan yo'lovchilarni tashish uchun yana bitta avtobus zarur. Shuning uchun natija ortig'iga yaxlitlanadi. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-ortigiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#f8377b62"
+    },
+    {
+      "q": "Bitta qutiga 24 ta shisha idish joylashadi. 500 ta idishni to'liq joylashtirish uchun nechta quti kerak bo'ladi?",
+      "v": [
+        "22 ta",
+        "20 ta",
+        "21 ta",
+        "25 ta"
+      ],
+      "t": 2,
+      "izoh": "500 ni 24 ga bo'lsak, 20,83 ga yaqin son chiqadi. 20 ta quti hammasiga yetmaydi, chunki ular 20 · 24 = 480 ta idishnigina sig'diradi. Qolgan 20 ta idish uchun yana bitta quti kerak, demak natija ortig'iga yaxlitlanadi. Javob: 21 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-ortigiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#7e40bca3"
+    },
+    {
+      "q": "Bir banka bo'yoq 14 m² yuzani bo'yashga yetadi. Xonaning bo'yaladigan yuzasi 96 m² bo'lsa, kamida nechta banka olish kerak?",
+      "v": [
+        "8 ta",
+        "6 ta",
+        "6,9 ta",
+        "7 ta"
+      ],
+      "t": 3,
+      "izoh": "96 ni 14 ga bo'lganda 6,86 ga yaqin son hosil bo'ladi. 6 ta banka 6 · 14 = 84 m² ni bo'yaydi, qolgan 12 m² uchun yana bitta banka zarur. Bo'yoq butun bankalarda sotilgani uchun natija ortig'iga yaxlitlanadi. Javob: 7 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-ortigiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#260c9017"
+    },
+    {
+      "q": "0,0473 sonini mingdan bir razryadgacha ortig'iga yaxlitlang va to'g'ri javobni belgilang.",
+      "v": [
+        "0,048",
+        "0,047",
+        "0,05",
+        "0,04"
+      ],
+      "t": 0,
+      "izoh": "Ortig'iga yaxlitlashda natija berilgan sondan katta yoki unga teng bo'ladi. Mingdan bir qadamda 0,0473 dan katta eng yaqin son 0,048 ga teng. Oddiy yaxlitlashda 0,047 chiqar edi, chunki keyingi raqam 3 kichik, ammo bu yerda shart boshqacha. Javob: 0,048.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortigiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#c9224262"
+    },
+    {
+      "q": "Quyidagi vaziyatlarning qaysi birida hisob natijasi albatta ortig'iga yaxlitlanadi?",
+      "v": [
+        "Tashish uchun kerak bo'ladigan yuk mashinalari sonini aniqlashda",
+        "Sinf o'quvchilarining o'rtacha bo'yini yozishda",
+        "Do'konning kunlik o'rtacha tushumini ko'rsatishda",
+        "O'lchangan xonaning uzunligini metrda yozishda"
+      ],
+      "t": 0,
+      "izoh": "Ortig'iga yaxlitlash yetishmovchilikka yo'l qo'yib bo'lmaydigan hollarda qo'llanadi. Yuk mashinalari sonida kasr qoldiq chiqsa, o'sha qoldiq yuk uchun ham yana bitta mashina zarur, shuning uchun har doim yuqoriga yaxlitlanadi. Qolgan uchta holatda o'rtacha yoki o'lchov qiymati eng yaqin songa yaxlitlanadi. Javob: yuk mashinalari soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yaxlitlash-yonalishini-aniqlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#bf3d62b5"
+    },
+    {
+      "q": "Lift ko'pi bilan 400 kg yuk ko'taradi. Bir odamning og'irligi o'rtacha 70 kg deb olinsa, liftga bir vaqtda nechta odam chiqishi mumkin?",
+      "v": [
+        "6 ta",
+        "7 ta",
+        "5,7 ta",
+        "5 ta"
+      ],
+      "t": 3,
+      "izoh": "400 ni 70 ga bo'lganda 5,71 ga yaqin son chiqadi. 6 ta odamning og'irligi 6 · 70 = 420 kg bo'lib, ruxsat etilgan chegaradan oshib ketadi. Xavfsizlik sharti buzilmasligi uchun natija kamiga yaxlitlanadi. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-kamiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#e9dab3d2"
+    },
+    {
+      "q": "Bitta daftar 4 700 so'm turadi. Qo'lida 50 000 so'mi bo'lgan o'quvchi ko'pi bilan nechta daftar sotib ola oladi?",
+      "v": [
+        "11 ta",
+        "10 ta",
+        "12 ta",
+        "10,6 ta"
+      ],
+      "t": 1,
+      "izoh": "50 000 ni 4 700 ga bo'lsak, 10,64 ga yaqin natija hosil bo'ladi. 11 ta daftar 11 · 4 700 = 51 700 so'm turadi, bunga pul yetmaydi. Shuning uchun bo'linma kamiga yaxlitlanadi. Javob: 10 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-kamiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#2c4f7249"
+    },
+    {
+      "q": "Detalning haqiqiy uzunligi 84,6 mm, o'lchash natijasi esa 84,2 mm bo'ldi. Shu o'lchashning absolut xatosini toping.",
+      "v": [
+        "0,4 mm",
+        "−0,4 mm",
+        "168,8 mm",
+        "0,04 mm"
+      ],
+      "t": 0,
+      "izoh": "Absolut xato haqiqiy qiymat bilan taqribiy qiymat ayirmasining moduliga teng: Δ = |84,6 − 84,2|. Ayirma 0,4 ga teng, uning moduli ham 0,4. Absolut xato hech qachon manfiy bo'lmaydi, shuning uchun ikkinchi variant tushib qoladi. Javob: 0,4 mm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "absolut-xatoni-hisoblash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#bbc79bfe"
+    },
+    {
+      "q": "Anvar hisobda π ≈ 3,14 deb oldi. π ning aniqroq qiymati 3,14159 ekanini bilsak, bu taqribiy qiymatning absolut xatosi taxminan qanchaga teng bo'ladi? Natijani o'n mingdan bir razryadgacha yaxlitlab ko'rsating.",
+      "v": [
+        "0,0159",
+        "0,0016",
+        "0,16",
+        "0,00016"
+      ],
+      "t": 1,
+      "izoh": "Absolut xato Δ = |3,14159 − 3,14| formulasi bo'yicha topiladi. Ayirmani hisoblaymiz: 3,14159 − 3,14 = 0,00159. Shart bo'yicha natijani o'n mingdan bir razryadgacha yaxlitlaymiz: to'rtinchi o'nli raqam 5, undan keyingi raqam 9 bo'lgani uchun u 6 ga oshadi. Javob: 0,0016.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "absolut-xatoni-hisoblash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#25a38f26"
+    },
+    {
+      "q": "Omborda 1 250 kg un bor deb hisoblangan edi, o'lchov esa 1 187 kg ekanini ko'rsatdi. Hisobning absolut xatosi qancha?",
+      "v": [
+        "73 kg",
+        "2 437 kg",
+        "63 kg",
+        "5,04 kg"
+      ],
+      "t": 2,
+      "izoh": "Absolut xato ikki qiymat ayirmasining moduli sifatida topiladi: Δ = |1 250 − 1 187|. Ayirmani hisoblaymiz: 1 250 − 1 187 = 63. Demak absolut xato 63 kg ga teng. 5,04 esa nisbiy xatoning foizdagi qiymati bo'lib, u kilogrammda o'lchanmaydi. Javob: 63 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "absolut-xatoni-hisoblash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#153d3e00"
+    },
+    {
+      "q": "Yo'lning uzunligi xaritada 5,8 km deb belgilangan, sayohatchining asbobi esa 6,05 km ko'rsatdi. Xaritadagi qiymatning absolut xatosi qancha?",
+      "v": [
+        "0,25 km",
+        "0,3 km",
+        "11,85 km",
+        "2,5 km"
+      ],
+      "t": 0,
+      "izoh": "Absolut xato ikki qiymat ayirmasining moduli sifatida topiladi: Δ = |6,05 − 5,8|. Ayirmani hisoblaymiz: 6,05 − 5,8 = 0,25 km. Qiymatlarni qo'shib yuborish 11,85 ni beradi, bu esa xato emas, yig'indi. Javob: 0,25 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "absolut-xatoni-hisoblash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#67be9436"
+    },
+    {
+      "q": "Talaba 1/3 kasrni hisoblashda 0,33 deb oldi. Shu taqribiy qiymatning absolut xatosi haqida to'g'ri fikrni tanlang.",
+      "v": [
+        "0,03 dan katta",
+        "0,003 dan katta, ammo 0,004 dan kichik",
+        "0,0003 dan kichik",
+        "aynan 0,01 ga teng"
+      ],
+      "t": 1,
+      "izoh": "1/3 kasrni o'nli kasrga aylantirsak 0,3333… hosil bo'ladi. Absolut xato Δ = 0,3333… − 0,33 = 0,00333… ga teng. Bu son 0,003 dan katta, lekin 0,004 dan kichik oraliqda yotadi. Javob: 0,003 dan katta, ammo 0,004 dan kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "absolut-xatoni-hisoblash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#bae27bbc"
+    },
+    {
+      "q": "Uzunligi 250 sm bo'lgan taxta 2 sm xato bilan o'lchandi. Shu o'lchashning nisbiy xatosi necha foiz?",
+      "v": [
+        "8%",
+        "125%",
+        "0,8%",
+        "0,08%"
+      ],
+      "t": 2,
+      "izoh": "Nisbiy xato absolut xatoning o'lchanayotgan kattalikka nisbati: 2 : 250 = 0,008. Bu kasrni foizga aylantirish uchun 100 ga ko'paytiramiz: 0,008 · 100 = 0,8%. 125% esa nisbatni teskari olish natijasi. Javob: 0,8%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbiy-xatoni-hisoblash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#150536bc"
+    },
+    {
+      "q": "Sumkaning massasi 4,5 kg deb ko'rsatilgan, absolut xato esa 0,09 kg. Nisbiy xatoni foizda toping.",
+      "v": [
+        "0,2%",
+        "20%",
+        "0,02%",
+        "2%"
+      ],
+      "t": 3,
+      "izoh": "Nisbiy xato Δ ni kattalikning o'ziga bo'lish bilan topiladi: 0,09 : 4,5 = 0,02. Foizga o'tish uchun natijani 100 ga ko'paytiramiz: 0,02 · 100 = 2%. 0,02% javobi 100 ga ko'paytirishni unutgan o'quvchi xatosi. Javob: 2%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbiy-xatoni-hisoblash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#018f1e25"
+    },
+    {
+      "q": "Dalaning aniq maydoni 2 500 m² ga teng. Muhandis uni 2 560 m² deb hisobladi. Muhandis hisobining nisbiy xatosi necha foiz?",
+      "v": [
+        "60%",
+        "24%",
+        "2,4%",
+        "0,24%"
+      ],
+      "t": 2,
+      "izoh": "Avval absolut xatoni topamiz: 2 560 − 2 500 = 60 m². Endi uni aniq qiymatga bo'lamiz: 60 : 2 500 = 0,024. Foizga aylantirsak 0,024 · 100 = 2,4% hosil bo'ladi. 60% javobi absolut xatoni foiz deb qabul qilish xatosidan chiqadi. Javob: 2,4%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbiy-xatoni-hisoblash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#e6fa7809"
+    },
+    {
+      "q": "Ikki tarozida ham absolut xato bir xil — 0,5 kg. Birinchi yukning massasi 20 kg, ikkinchisiniki 250 kg. Ikkinchi o'lchovning nisbiy xatosi qancha?",
+      "v": [
+        "2,5%",
+        "0,5%",
+        "2%",
+        "0,2%"
+      ],
+      "t": 3,
+      "izoh": "Nisbiy xato absolut xatoning o'lchangan qiymatga nisbatidir. Ikkinchi yuk uchun 0,5 : 250 = 0,002 chiqadi. Foizga aylantirsak 0,002 · 100 = 0,2%. 2,5% esa birinchi yukka mos keladi, chunki 0,5 : 20 = 0,025. Javob: 0,2%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbiy-xatoni-hisoblash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#fd160b06"
+    },
+    {
+      "q": "Termometr haroratni 25,2 °C deb ko'rsatdi, haqiqiy harorat esa 24 °C edi. Ko'rsatkichning nisbiy xatosi necha foiz?",
+      "v": [
+        "5%",
+        "1,2%",
+        "0,5%",
+        "50%"
+      ],
+      "t": 0,
+      "izoh": "Avval absolut xatoni topamiz: 25,2 − 24 = 1,2 °C. Nisbiy xato uchun uni haqiqiy qiymatga bo'lamiz: 1,2 : 24 = 0,05. Foizga aylantirsak 0,05 · 100 = 5%. 1,2% javobi absolut xatoni foiz bilan chalkashtirish natijasi. Javob: 5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbiy-xatoni-hisoblash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#e40a0730"
+    },
+    {
+      "q": "Kesmaning uzunligi a = 14,6 sm, absolut xato esa 0,2 sm dan oshmaydi. a qanday oraliqda yotadi?",
+      "v": [
+        "14,6 sm ≤ a ≤ 14,8 sm",
+        "14,4 sm ≤ a ≤ 14,8 sm",
+        "14,2 sm ≤ a ≤ 15 sm",
+        "13,6 sm ≤ a ≤ 15,6 sm"
+      ],
+      "t": 1,
+      "izoh": "Absolut xato taqribiy qiymatdan ikki tomonga bir xil siljish beradi. Pastki chegara: 14,6 − 0,2 = 14,4 sm. Yuqori chegara: 14,6 + 0,2 = 14,8 sm. Demak uzunlik shu ikki son orasida yotadi. Javob: 14,4 sm ≤ a ≤ 14,8 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-qiymat-oraligi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#acea119d"
+    },
+    {
+      "q": "Detalning nominal diametri 32 mm, ruxsat etilgan absolut xato 0,15 mm. Yaroqli detalning diametri qaysi chegaralar orasida bo'ladi?",
+      "v": [
+        "31,5 mm dan 32,5 mm gacha",
+        "32 mm dan 32,15 mm gacha",
+        "31,85 mm dan 32,15 mm gacha",
+        "31,85 mm dan 32 mm gacha"
+      ],
+      "t": 2,
+      "izoh": "Chegaralar nominal qiymatdan xatoni ayirish va qo'shish bilan topiladi. Pastki chegara 32 − 0,15 = 31,85 mm, yuqori chegara 32 + 0,15 = 32,15 mm. Detal shu oraliqqa tushsa yaroqli hisoblanadi. Javob: 31,85 mm dan 32,15 mm gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-qiymat-oraligi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#a129689a"
+    },
+    {
+      "q": "Paket ustida massasi 500 g, chetlanishi esa 2 foizgacha deb yozilgan. Paketning massasi eng kamida qancha bo'lishi mumkin?",
+      "v": [
+        "480 g",
+        "498 g",
+        "495 g",
+        "490 g"
+      ],
+      "t": 3,
+      "izoh": "Avval 2 foizni grammga aylantiramiz: 500 ning 2 foizi 500 · 0,02 = 10 g. Eng kichik massa nominal qiymatdan shu miqdorni ayirish bilan topiladi: 500 − 10 = 490 g. 498 g javobi 2 g ni foiz o'rniga to'g'ridan-to'g'ri ayirish xatosidir. Javob: 490 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-qiymat-oraligi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#56ac07ab"
+    },
+    {
+      "q": "Bir son o'ndan bir razryadgacha yaxlitlanganda 7,3 hosil bo'ldi. Bu son qaysi oraliqda yotishi mumkin?",
+      "v": [
+        "7,25 ≤ x < 7,35",
+        "7,2 < x < 7,4",
+        "7,25 < x ≤ 7,35",
+        "7,3 ≤ x < 7,4"
+      ],
+      "t": 0,
+      "izoh": "7,3 ga yaxlitlanadigan sonlar 7,3 dan har ikki tomonga yarim qadam, ya'ni 0,05 gacha uzoqlashishi mumkin. Pastki chegara 7,25 bo'lib, u ham 7,3 ga yaxlitlanadi, shuning uchun oraliqqa kiradi. Yuqori chegara 7,35 esa allaqachon 7,4 ga yaxlitlanadi, shuning uchun kirmaydi. Javob: 7,25 ≤ x < 7,35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqribiy-qiymat-oraligi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#03501b8d"
+    },
+    {
+      "q": "O'lchov natijasi 4,25 sm dan 4,41 sm gacha oraliqda ekani aniqlandi. Taqribiy qiymat sifatida oraliqning o'rtasi olinsa, absolut xato qancha bo'ladi?",
+      "v": [
+        "0,16 sm",
+        "0,08 sm",
+        "4,33 sm",
+        "0,04 sm"
+      ],
+      "t": 1,
+      "izoh": "Oraliqning o'rtasi chegaralar yig'indisining yarmiga teng: (4,25 + 4,41) : 2 = 4,33 sm. Absolut xato esa o'rtadan chegaraga qadar bo'lgan masofa: 4,41 − 4,33 = 0,08 sm. 0,16 sm — bu butun oraliqning kengligi, xatoning ikki baravari. Javob: 0,08 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqdan-xatoni-topish",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#9a814e43"
+    },
+    {
+      "q": "Yukning massasi 18,6 kg dan 19,4 kg gacha ekani ma'lum. Taqribiy qiymat va uning absolut xatosini to'g'ri ko'rsatgan yozuvni tanlang.",
+      "v": [
+        "19 kg ± 0,8 kg",
+        "18,6 kg ± 0,8 kg",
+        "19 kg ± 0,4 kg",
+        "19,4 kg ± 0,4 kg"
+      ],
+      "t": 2,
+      "izoh": "Taqribiy qiymat sifatida oraliq o'rtasi olinadi: (18,6 + 19,4) : 2 = 19 kg. Absolut xato esa oraliq kengligining yarmiga teng: (19,4 − 18,6) : 2 = 0,4 kg. Shunday qilib yozuv 19 kg ± 0,4 kg ko'rinishida bo'ladi. Javob: 19 kg ± 0,4 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdan-xatoni-topish",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#02b1444e"
+    },
+    {
+      "q": "Fermaning hosili 12,7 tonnadan 13,9 tonnagacha oraliqda baholandi. Shu baholashning maksimal absolut xatosi qancha?",
+      "v": [
+        "1,2 t",
+        "13,3 t",
+        "0,3 t",
+        "0,6 t"
+      ],
+      "t": 3,
+      "izoh": "Avval oraliqning kengligini topamiz: 13,9 − 12,7 = 1,2 t. Taqribiy qiymat o'rtada olinadi, shuning uchun maksimal xato kenglikning yarmiga teng: 1,2 : 2 = 0,6 t. 1,2 t javobi yarmiga bo'lish qadamini tashlab ketish xatosi. Javob: 0,6 t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdan-xatoni-topish",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#6127143f"
+    },
+    {
+      "q": "Bir sonning taqribiy qiymati 5,7 bo'lib, absolut xato 0,05 dan oshmaydi. Shu sonni yuzdan bir razryadgacha aniq yozib bo'ladimi?",
+      "v": [
+        "Yo'q, chunki son 5,65 dan 5,75 gacha oraliqda yotadi",
+        "Ha, u aynan 5,70 ga teng",
+        "Ha, u 5,70 dan 5,75 gacha oraliqda yotadi",
+        "Yo'q, chunki absolut xato umuman noma'lum"
+      ],
+      "t": 0,
+      "izoh": "Berilgan shartdan son 5,7 − 0,05 = 5,65 va 5,7 + 0,05 = 5,75 chegaralari orasida yotadi. Bu oraliqqa 5,66, 5,70, 5,74 kabi bir necha xil yuzdan birlik qiymat kiradi. Shuning uchun yuzdan bir razryaddagi raqamni bir qiymatli qilib aytib bo'lmaydi. Javob: yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdan-xatoni-topish",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#765d3fda"
+    },
+    {
+      "q": "Birinchi o'lchovda 8 kg yuk 0,1 kg xato bilan, ikkinchisida 500 kg yuk 2 kg xato bilan o'lchandi. Qaysi o'lchov aniqroq bajarilgan?",
+      "v": [
+        "Birinchi o'lchov, chunki absolut xatosi bor-yo'g'i 0,1 kg",
+        "Ikkinchi o'lchov, chunki nisbiy xatosi 0,4%",
+        "Ikkinchi o'lchov, chunki absolut xatosi kattaroq",
+        "Ikkala o'lchovning aniqligi bir xil"
+      ],
+      "t": 1,
+      "izoh": "O'lchov aniqligi absolut xato bilan emas, nisbiy xato bilan baholanadi. Birinchi o'lchovda 0,1 : 8 = 0,0125, ya'ni 1,25%. Ikkinchi o'lchovda 2 : 500 = 0,004, ya'ni 0,4%. Nisbiy xato kichik bo'lgani uchun ikkinchi o'lchov aniqroq. Javob: ikkinchi o'lchov.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlikni-solishtirish",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#4131d423"
+    },
+    {
+      "q": "Uzunligi 2 m bo'lgan taxta 1 sm xato bilan, uzunligi 60 sm bo'lgan lata esa 4 mm xato bilan o'lchandi. Qaysi buyum aniqroq o'lchangan?",
+      "v": [
+        "Lata, chunki nisbiy xatosi taxminan 0,67%",
+        "Lata, chunki absolut xatosi kichikroq",
+        "Taxta, chunki nisbiy xatosi 0,5%",
+        "Taxta, chunki nisbiy xatosi 0,05%"
+      ],
+      "t": 2,
+      "izoh": "Solishtirish uchun birliklarni tenglashtiramiz: taxta 200 sm, xatosi 1 sm; lata 60 sm, xatosi 0,4 sm. Taxtaning nisbiy xatosi 1 : 200 = 0,005, ya'ni 0,5%. Latanikisi 0,4 : 60 ≈ 0,0067, ya'ni taxminan 0,67%. Absolut xato bo'yicha lata yutadi, lekin aniqlikni nisbiy xato belgilaydi. Javob: taxta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlikni-solishtirish",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#ac25867f"
+    },
+    {
+      "q": "Uch xil o'lchovning nisbiy xatolari quyidagicha berilgan: 0,75%, 1/160 va 0,006. Qaysi o'lchov eng aniq bajarilgan?",
+      "v": [
+        "1/160 bo'lgani",
+        "0,75% bo'lgani",
+        "Uchalasining aniqligi teng",
+        "0,006 bo'lgani"
+      ],
+      "t": 3,
+      "izoh": "Solishtirish uchun uchala qiymatni bir xil ko'rinishga keltiramiz. 0,75% = 0,0075 bo'ladi; 1/160 = 0,00625; uchinchisi esa 0,006 ning o'zi. Eng kichik son 0,006 bo'lgani uchun shu o'lchov eng aniq. Javob: 0,006 bo'lgani.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlikni-solishtirish",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#afb8e58c"
+    },
+    {
+      "q": "Sardor 1 km masofani 5 m xato bilan, Nodira esa 40 m masofani 0,2 m xato bilan o'lchadi. Kimning o'lchovi aniqroq?",
+      "v": [
+        "Ikkalasining nisbiy xatosi teng, ya'ni 0,5%",
+        "Sardorniki, chunki o'lchagan masofasi kattaroq",
+        "Nodiraniki, chunki absolut xatosi ancha kichik",
+        "Nodiraniki, chunki nisbiy xatosi 0,2%"
+      ],
+      "t": 0,
+      "izoh": "Sardorning nisbiy xatosi: 5 : 1000 = 0,005, ya'ni 0,5%. Nodiraniki: 0,2 : 40 = 0,005, ya'ni yana 0,5%. Ikkala nisbat ham bir xil chiqdi, demak o'lchovlar bir xil aniqlikda bajarilgan. Absolut xatolar juda farq qilsa ham, aniqlik teng. Javob: nisbiy xatolari teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlikni-solishtirish",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#9ab1b5be"
+    },
+    {
+      "q": "Bir zavod hujjatida detal uzunligi 45,0 mm, boshqasida esa 45,00 mm deb yozilgan. Bu ikki yozuv orasidagi farq nimani bildiradi?",
+      "v": [
+        "Ikki yozuv butunlay bir xil ma'noga ega",
+        "Ikkinchi yozuv aniqroq, uning maksimal xatosi 0,005 mm",
+        "Birinchi yozuv aniqroq, chunki u qisqaroq",
+        "Ikkinchi yozuvdagi son kattaroq qiymatni bildiradi"
+      ],
+      "t": 1,
+      "izoh": "45,0 yozuvida qiymat o'ndan bir aniqligida berilgan, shuning uchun maksimal xato yarim qadam, ya'ni 0,05 mm. 45,00 yozuvida esa aniqlik yuzdan bir, maksimal xato 0,005 mm bo'ladi. Oxirgi nol bejiz turmaydi, u o'lchov aniqligini bildiradi. Javob: ikkinchi yozuv aniqroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlikni-solishtirish",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#f9972c1d"
+    },
+    {
+      "q": "Fizika daftariga yozilgan 0,004070 sonida nechta muhim raqam borligini aniqlang.",
+      "v": [
+        "4 ta",
+        "3 ta",
+        "6 ta",
+        "2 ta"
+      ],
+      "t": 0,
+      "izoh": "Muhim raqamlarni sanash birinchi noldan farqli raqamdan boshlanadi. 0,00 qismidagi nollar faqat razryadni ko'rsatadi, shuning uchun ular sanalmaydi. Qolgan 4, 0, 7 va 0 raqamlari muhim, oxirgi nol esa o'lchov aniqligini bildirgani uchun u ham hisobga olinadi. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "muhim-raqamlar",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#1bfc7591"
+    },
+    {
+      "q": "Shahar aholisi 127 400 kishi deb qayd etilgan. Bu ma'lumot uchta muhim raqamgacha yaxlitilsa, qanday son chiqadi?",
+      "v": [
+        "128 000",
+        "127 000",
+        "127 400",
+        "130 000"
+      ],
+      "t": 1,
+      "izoh": "Uchta muhim raqam sifatida 1, 2 va 7 olinadi. Ulardan keyingi raqam 4 bo'lib, u 5 dan kichik, shuning uchun 7 o'zgarmasdan qoladi. Qolgan razryadlar nol bilan to'ldiriladi va 127 000 hosil bo'ladi. Javob: 127 000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "muhim-raqamlar",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#ae8a95ef"
+    },
+    {
+      "q": "Tajriba natijasi 0,0569 chiqdi. Uni ikkita muhim raqamgacha yaxlitlangan holda yozing.",
+      "v": [
+        "0,056",
+        "0,06",
+        "0,057",
+        "0,0569"
+      ],
+      "t": 2,
+      "izoh": "Bu sonda birinchi muhim raqam 5, ikkinchisi 6 ga teng, chunki bosh nollar sanalmaydi. Ikkinchi muhim raqamdan keyingi raqam 9 bo'lib, 5 dan katta, shuning uchun 6 birga oshadi va 7 bo'ladi. Natijada 0,057 hosil bo'ladi. Javob: 0,057.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "muhim-raqamlar",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#6aebb0e5"
+    },
+    {
+      "q": "Quyidagi sonlardan qaysi birida muhim raqamlar soni eng ko'p: 0,00302; 45,60; 7 800; 1,0045?",
+      "v": [
+        "45,60",
+        "0,00302",
+        "7 800",
+        "1,0045"
+      ],
+      "t": 3,
+      "izoh": "Har bir sonni alohida sanaymiz. 0,00302 da bosh nollar sanalmaydi, 3, 0 va 2 qoladi, ya'ni 3 ta. 45,60 da to'rttala raqam ham muhim. 7 800 da oxirdagi nollar razryadni ko'rsatgani uchun muhim raqam 2 ta. 1,0045 da esa beshta raqamning barchasi muhim. Javob: 1,0045.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "muhim-raqamlar",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#e4ca99a8"
+    },
+    {
+      "q": "O'lchov natijasi 3,60 deb yozilgan. Nega bu yozuvda oxirgi nol tashlab yuborilmaydi?",
+      "v": [
+        "Chunki u qiymat yuzdan bir aniqligida topilganini bildiradi",
+        "Chunki nolsiz yozuvda son kichrayib qoladi",
+        "Chunki har qanday o'lchovda ikkita kasr raqami bo'lishi shart",
+        "Chunki 3,6 va 3,60 har xil qiymatlarni bildiradi"
+      ],
+      "t": 0,
+      "izoh": "3,6 yozuvi qiymat o'ndan bir aniqligida, 3,60 esa yuzdan bir aniqligida topilganini bildiradi. Bu ikki sonning qiymati teng, ammo ular olib keladigan aniqlik axboroti har xil. Shuning uchun o'lchov natijasida oxirgi nol albatta saqlanadi. Javob: yuzdan bir aniqligini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "muhim-raqamlar",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#af1cda51"
+    },
+    {
+      "q": "Son yuzdan bir razryadgacha yaxlitlandi. Shu yaxlitlashda yo'l qo'yilishi mumkin bo'lgan eng katta absolut xato qancha?",
+      "v": [
+        "0,01",
+        "0,005",
+        "0,05",
+        "0,0005"
+      ],
+      "t": 1,
+      "izoh": "Yuzdan bir razryadgacha yaxlitlashda qadam 0,01 ga teng. Son eng yaqin qadamga keltirilgani uchun u qadamning yarmidan ko'proq siljiy olmaydi. Demak maksimal absolut xato 0,01 : 2 = 0,005. Javob: 0,005.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yaxlitlashning-maksimal-xatosi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#62d1dd56"
+    },
+    {
+      "q": "Do'kon barcha narxlarni eng yaqin ming so'mgacha yaxlitlab ko'rsatadi. Bitta mahsulot narxida yo'l qo'yiladigan maksimal xato qancha?",
+      "v": [
+        "1 000 so'm",
+        "100 so'm",
+        "500 so'm",
+        "50 so'm"
+      ],
+      "t": 2,
+      "izoh": "Ming so'mgacha yaxlitlashda yaxlitlash qadami 1 000 so'mga teng. Har qanday narx eng yaqin minglikka keltirilgani uchun u qadamning yarmidan ortiq siljimaydi. Demak maksimal xato 1 000 : 2 = 500 so'm. Javob: 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yaxlitlashning-maksimal-xatosi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#23f1ce42"
+    },
+    {
+      "q": "Anvar 24,7 kg va 31,4 kg og'irliklarning har birini eng yaqin butun kilogrammgacha yaxlitladi. Ikkala yaxlitlashda yo'l qo'yilgan absolut xatolarning yig'indisi qancha?",
+      "v": [
+        "0,1 kg",
+        "1 kg",
+        "0,35 kg",
+        "0,7 kg"
+      ],
+      "t": 3,
+      "izoh": "24,7 eng yaqin butun songa 25 deb yaxlitlanadi, bunda xato |25 − 24,7| = 0,3 kg. 31,4 esa 31 ga yaxlitlanadi, bunda xato |31 − 31,4| = 0,4 kg. Absolut xatolar yig'indisi 0,3 + 0,4 = 0,7 kg. 0,1 kg javobi xatolarni ishorasi bilan qo'shish natijasi. Javob: 0,7 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-va-ayirma-xatosi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#151fcaf6"
+    },
+    {
+      "q": "Devorning uzunligi 8,5 m deb, ya'ni o'ndan bir metrgacha yaxlitlab yozilgan. Bu yozuvning nisbiy xatosi ko'pi bilan qanchaga yaqin?",
+      "v": [
+        "taxminan 0,59%",
+        "taxminan 1,18%",
+        "aynan 5%",
+        "taxminan 0,06%"
+      ],
+      "t": 0,
+      "izoh": "O'ndan bir metrgacha yaxlitlashda maksimal absolut xato qadamning yarmiga, ya'ni 0,05 m ga teng. Nisbiy xatoni topish uchun uni o'lchangan qiymatga bo'lamiz: 0,05 : 8,5 ≈ 0,0059. Foizga aylantirsak taxminan 0,59% chiqadi. 1,18% javobi yarimga bo'lishni unutgan o'quvchi natijasi. Javob: taxminan 0,59%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yaxlitlashning-maksimal-xatosi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#a4a809d8"
+    },
+    {
+      "q": "Bir son eng yaqin butun songacha yaxlitlanganda 40 hosil bo'ldi. Shu sonning nisbiy xatosi ko'pi bilan qancha bo'lishi mumkin?",
+      "v": [
+        "0,5%",
+        "1,25%",
+        "2,5%",
+        "5%"
+      ],
+      "t": 1,
+      "izoh": "Butun songacha yaxlitlashda qadam 1 ga teng, demak maksimal absolut xato 0,5 bo'ladi. Haqiqiy son 39,5 dan 40,5 gacha oraliqda yotadi. Nisbiy xato 0,5 : 40 = 0,0125, ya'ni 1,25%. 0,5% javobi absolut xatoni bevosita foiz deb olishdan kelib chiqadi. Javob: 1,25%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yaxlitlashning-maksimal-xatosi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#1073b125"
+    },
+    {
+      "q": "Nodira do'kondan 4 850 so'mlik non, 12 400 so'mlik sut va 7 900 so'mlik tuxum oldi. Har bir narxni minglikkacha yaxlitlab, to'lovni taxminan baholang.",
+      "v": [
+        "24 000 so'm",
+        "26 000 so'm",
+        "25 000 so'm",
+        "23 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Har bir narxni eng yaqin minglikka keltiramiz: 4 850 ≈ 5 000, 12 400 ≈ 12 000, 7 900 ≈ 8 000. Bu sonlarni qo'shamiz: 5 000 + 12 000 + 8 000 = 25 000 so'm. Aniq to'lov 25 150 so'm bo'lgani uchun baho juda yaqin chiqdi. Javob: 25 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taxminiy-hisob-baholash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#914245cd"
+    },
+    {
+      "q": "Bitta daftar 3 850 so'm turadi. Narxni minglikkacha, daftar sonini esa o'nlikkacha yaxlitlab, 19 ta daftarning taxminiy qiymatini toping.",
+      "v": [
+        "76 000 so'm",
+        "72 000 so'm",
+        "60 000 so'm",
+        "80 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "3 850 ni minglikkacha yaxlitlasak 4 000 so'm, 19 ni o'nlikkacha yaxlitlasak 20 ta bo'ladi. Taxminiy qiymat 4 000 · 20 = 80 000 so'm. Aniq qiymat 3 850 · 19 = 73 150 so'm, ya'ni ikkala son ham oshirilgani uchun baho biroz yuqori chiqdi. Javob: 80 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taxminiy-hisob-baholash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#dd694942"
+    },
+    {
+      "q": "58 · 41 ko'paytmani yaxlitlash yordamida baholang. Olingan baho aniq qiymatdan katta bo'ladimi yoki kichikmi?",
+      "v": [
+        "2 400, aniq qiymatdan biroz katta",
+        "2 400, aniq qiymatdan biroz kichik",
+        "2 000, aniq qiymatdan kichik",
+        "2 378, aniq qiymatga aynan teng"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytuvchilarni o'nlikkacha yaxlitlaymiz: 58 ≈ 60 va 41 ≈ 40. Baho 60 · 40 = 2 400 ga teng. Aniq qiymat 58 · 41 = 2 378 bo'lgani uchun baho aniq qiymatdan 22 taga katta chiqdi. Javob: 2 400, aniq qiymatdan biroz katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taxminiy-hisob-baholash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#4403650e"
+    },
+    {
+      "q": "Sotuvchi 6 ta buyumning har birini 2 950 so'mdan sotdi va shu savdodan tushgan pulni taxminan 18 000 so'm deb baholadi. Uning bahosi haqiqiy summadan qanchaga farq qiladi?",
+      "v": [
+        "300 so'm kam baholagan",
+        "300 so'm ko'p baholagan",
+        "50 so'm ko'p baholagan",
+        "600 so'm ko'p baholagan"
+      ],
+      "t": 1,
+      "izoh": "Haqiqiy summani hisoblaymiz: 6 · 2 950 = 17 700 so'm. Sotuvchining bahosi 18 000 so'm edi, farq esa 18 000 − 17 700 = 300 so'm. Baho haqiqiy summadan katta bo'lgani uchun u miqdorni oshirib baholagan. Javob: 300 so'm ko'p baholagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taxminiy-hisob-baholash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#3b2bbbac"
+    },
+    {
+      "q": "Sayohatchi 3 soat 58 daqiqada 297 km yo'l bosdi. Yaxlitlash yordamida uning o'rtacha tezligini taxminan baholang.",
+      "v": [
+        "taxminan 60 km/soat",
+        "taxminan 90 km/soat",
+        "taxminan 75 km/soat",
+        "taxminan 100 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Masofani 297 km dan 300 km ga, vaqtni esa 3 soat 58 daqiqadan 4 soatga yaxlitlaymiz. Taxminiy tezlik 300 : 4 = 75 km/soat. Aniq hisob 74,9 km/soat beradi, demak yaxlitlash bahoni deyarli buzmagan. Javob: taxminan 75 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taxminiy-hisob-baholash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#9e90925f"
+    },
+    {
+      "q": "Ikki bo'lakning uzunliklari 3,4 m ± 0,1 m va 2,7 m ± 0,2 m deb berilgan. Ularning umumiy uzunligini xatosi bilan birga ko'rsating.",
+      "v": [
+        "6,1 m ± 0,1 m",
+        "6,1 m ± 0,15 m",
+        "6,1 m ± 0,2 m",
+        "6,1 m ± 0,3 m"
+      ],
+      "t": 3,
+      "izoh": "Avval qiymatlarni qo'shamiz: 3,4 + 2,7 = 6,1 m. Yig'indida absolut xatolar ham qo'shiladi, chunki eng yomon holatda ikkala chetlanish bir tomonga yo'nalishi mumkin: 0,1 + 0,2 = 0,3 m. O'rtacha olish yoki kattasini tanlash bu yerda ishlamaydi. Javob: 6,1 m ± 0,3 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-va-ayirma-xatosi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#49add298"
+    },
+    {
+      "q": "Uch qopning massasi 24 kg, 31 kg va 18 kg deb butun kilogrammgacha yaxlitlangan. Ularning umumiy massasi qanday chegaralar orasida yotadi?",
+      "v": [
+        "71,5 kg dan 74,5 kg gacha",
+        "72,5 kg dan 73,5 kg gacha",
+        "70 kg dan 76 kg gacha",
+        "73 kg dan 74,5 kg gacha"
+      ],
+      "t": 0,
+      "izoh": "Butun kilogrammgacha yaxlitlashda har bir qopning xatosi 0,5 kg dan oshmaydi. Qiymatlar yig'indisi 24 + 31 + 18 = 73 kg. Uchta xato qo'shilib, umumiy chetlanish 3 · 0,5 = 1,5 kg bo'ladi. Demak massa 73 − 1,5 = 71,5 kg dan 73 + 1,5 = 74,5 kg gacha oraliqda yotadi. Javob: 71,5 kg dan 74,5 kg gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-va-ayirma-xatosi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#b8e49a5a"
+    },
+    {
+      "q": "a = 15,8 ± 0,2 va b = 6,3 ± 0,1 berilgan. a − b ayirmaning absolut xatosi qanchaga teng bo'ladi?",
+      "v": [
+        "0,1",
+        "0,3",
+        "0,2",
+        "0,02"
+      ],
+      "t": 1,
+      "izoh": "Ayirmaning qiymati 15,8 − 6,3 = 9,5 ga teng. Eng chekka holatni ko'ramiz: a maksimal, b esa minimal bo'lsa, ayirma (15,8 + 0,2) − (6,3 − 0,1) = 9,8 bo'ladi. Bu qiymat 9,5 dan 0,3 ga farq qiladi, demak ayirmada ham absolut xatolar qo'shiladi. Javob: 0,3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-va-ayirma-xatosi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#5dd11a31"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning uzunligi 1%, eni esa 2% nisbiy xato bilan o'lchandi. Uning yuzasining nisbiy xatosi taxminan qanchaga teng?",
+      "v": [
+        "taxminan 2%",
+        "taxminan 1,5%",
+        "taxminan 3%",
+        "taxminan 0,02%"
+      ],
+      "t": 2,
+      "izoh": "Yuza S = a · b ko'paytma sifatida topiladi. Ko'paytmada nisbiy xatolar taxminan qo'shiladi, absolut xatolar emas. Demak yuzaning nisbiy xatosi 1% + 2% = 3% ga yaqin bo'ladi. O'rtacha olish yoki ko'paytirish bu yerda noto'g'ri natija beradi. Javob: taxminan 3%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-nisbiy-xatosi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#db89978e"
+    },
+    {
+      "q": "Kubning qirrasi 0,5% nisbiy xato bilan o'lchandi. Kub hajmining nisbiy xatosi taxminan qanchaga teng bo'ladi?",
+      "v": [
+        "taxminan 0,5%",
+        "taxminan 0,17%",
+        "taxminan 3%",
+        "taxminan 1,5%"
+      ],
+      "t": 3,
+      "izoh": "Kub hajmi V = a · a · a ko'rinishida, ya'ni bir xil kattalikning uch marta ko'paytmasi. Ko'paytmada nisbiy xatolar qo'shilgani uchun hajmning xatosi 0,5% + 0,5% + 0,5% = 1,5% bo'ladi. Umuman, n-darajaga ko'tarishda nisbiy xato n marta ortadi. Javob: taxminan 1,5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-nisbiy-xatosi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#2bd6f884"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi yer uchastkasining tomonlari 24 m va 15 m deb butun metrgacha yaxlitlangan. Uning yuzasini hisoblashdagi nisbiy xato taxminan qanchaga teng?",
+      "v": [
+        "taxminan 5,4%",
+        "taxminan 2,1%",
+        "taxminan 3,3%",
+        "taxminan 1,4%"
+      ],
+      "t": 0,
+      "izoh": "Butun metrgacha yaxlitlashda har bir tomonning maksimal absolut xatosi 0,5 m. Uzunlik uchun nisbiy xato 0,5 : 24 ≈ 0,0208, ya'ni 2,08%. En uchun 0,5 : 15 ≈ 0,0333, ya'ni 3,33%. Yuza ko'paytma bo'lgani uchun nisbiy xatolar qo'shiladi va taxminan 5,4% chiqadi. Javob: taxminan 5,4%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-nisbiy-xatosi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#5705edfc"
+    },
+    {
+      "q": "Bosib o'tilgan yo'l 1,5% nisbiy xato bilan, sarflangan vaqt esa 0,5% nisbiy xato bilan o'lchandi. Tezlik v = s : t ning nisbiy xatosi taxminan qancha?",
+      "v": [
+        "taxminan 1%",
+        "taxminan 2%",
+        "taxminan 3%",
+        "taxminan 0,75%"
+      ],
+      "t": 1,
+      "izoh": "Bo'linmada ham, ko'paytmada ham nisbiy xatolar qo'shiladi. Shuning uchun tezlikning nisbiy xatosi 1,5% + 0,5% = 2% ga yaqin bo'ladi. Ko'p o'quvchi bo'lish amali xatolarni ayiradi deb o'ylab, 1% javobini tanlaydi. Javob: taxminan 2%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-nisbiy-xatosi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#ca07c1e0"
+    },
+    {
+      "q": "Verguldan keyin bitta raqami bor son butun songacha yaxlitlanganda 26 chiqdi. Shunday sonlarning eng kichigi qaysi?",
+      "v": [
+        "25,4",
+        "25,6",
+        "25,5",
+        "26"
+      ],
+      "t": 2,
+      "izoh": "Butun songacha yaxlitlaganda 26 beradigan sonlar 25,5 dan 26,5 gacha oraliqda yotadi. 25,5 ning kasr qismi aynan 0,5 bo'lgani uchun u yuqoriga, ya'ni 26 ga yaxlitlanadi. 25,4 esa 25 ga yaxlitlanib qolgani sababli shartga mos kelmaydi. Javob: 25,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#09eff244"
+    },
+    {
+      "q": "Yuzlikkacha yaxlitlanganda 3 400 hosil bo'ladigan natural sonlarning eng kattasi qaysi?",
+      "v": [
+        "3 450",
+        "3 499",
+        "3 400",
+        "3 449"
+      ],
+      "t": 3,
+      "izoh": "Yuzlikkacha yaxlitlanganda 3 400 beradigan sonlar 3 350 dan boshlanib, 3 450 gacha davom etadi. 3 450 ning o'zi yuqoriga, ya'ni 3 500 ga yaxlitlanadi, shuning uchun u hisobga olinmaydi. Demak eng katta natural son 3 449 bo'ladi. Javob: 3 449.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#4a4320ce"
+    },
+    {
+      "q": "Verguldan keyin ikkita raqami bor sonlardan nechtasi o'ndan bir razryadgacha yaxlitlanganda 5,0 natijasini beradi?",
+      "v": [
+        "10 ta",
+        "9 ta",
+        "11 ta",
+        "5 ta"
+      ],
+      "t": 0,
+      "izoh": "5,0 ga yaxlitlanadigan sonlar 4,95 dan 5,05 gacha oraliqda yotadi, ammo 5,05 allaqachon 5,1 ga yaxlitlanadi. Demak mos sonlar 4,95; 4,96; 4,97; 4,98; 4,99; 5,00; 5,01; 5,02; 5,03; 5,04 dan iborat. Ularni sanasak 10 ta chiqadi. Javob: 10 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#39041329"
+    },
+    {
+      "q": "Do'kon narxni minglikkacha yaxlitlab 47 000 so'm deb ko'rsatdi. Haqiqiy narx eng kamida qancha bo'lishi mumkin?",
+      "v": [
+        "46 000 so'm",
+        "46 500 so'm",
+        "46 900 so'm",
+        "47 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Minglikkacha yaxlitlashda maksimal chetlanish 500 so'mni tashkil qiladi. Demak haqiqiy narx 47 000 − 500 = 46 500 so'mdan kichik bo'la olmaydi. 46 500 so'mning o'zi yuqoriga yaxlitlanib 47 000 beradi, shuning uchun u eng kichik qiymat. Javob: 46 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#1f331994"
+    },
+    {
+      "q": "Bir sonning yuzdan bir razryadgacha yaxlitlangan qiymati 2,80 ga teng. Shu son o'ndan bir razryadgacha yaxlitlansa, qanday natija chiqishi mumkin?",
+      "v": [
+        "2,7 yoki 2,8",
+        "2,8 yoki 2,9",
+        "faqat 2,8",
+        "aniq aytib bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "2,80 ga yaxlitlangan son 2,795 dan 2,805 gacha oraliqda yotadi. Bu oraliq butunlay 2,75 va 2,85 chegaralari ichida joylashgan. O'ndan bir razryadgacha yaxlitlanganda shu chegaralar orasidagi har qanday son 2,8 beradi. Javob: faqat 2,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#fb627794"
+    },
+    {
+      "q": "5/6 kasrni o'nli kasr ko'rinishiga keltirib, yuzdan bir razryadgacha yaxlitlang.",
+      "v": [
+        "0,84",
+        "0,8",
+        "1,2",
+        "0,83"
+      ],
+      "t": 3,
+      "izoh": "5 ni 6 ga bo'lsak 0,8333… davriy kasri hosil bo'ladi. Yuzdan bir razryad — verguldan keyingi ikkinchi raqam, ya'ni 3. Undan keyingi raqam ham 3 bo'lib, 5 dan kichik, shuning uchun qiymat oshmaydi. 1,2 javobi kasrni ag'darib yuborish xatosidan chiqadi. Javob: 0,83.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davriy-kasrni-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#83210867"
+    },
+    {
+      "q": "Nodira 2/7 kasrni hisoblab, natijani mingdan bir razryadgacha yaxlitladi. U qanday son oldi?",
+      "v": [
+        "0,286",
+        "0,285",
+        "0,29",
+        "0,28"
+      ],
+      "t": 0,
+      "izoh": "2 ni 7 ga bo'lsak 0,285714… kasri hosil bo'ladi. Mingdan bir razryad verguldan keyingi uchinchi raqam, ya'ni 5. Undan keyingi raqam 7 bo'lib, 5 dan katta, shuning uchun 5 birga oshib 6 bo'ladi. Javob: 0,286.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davriy-kasrni-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#5ecb18ed"
+    },
+    {
+      "q": "1/9 va 1/11 kasrlarining yuzdan bir razryadgacha yaxlitlangan qiymatlarini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "0,11 va 0,11",
+        "0,11 va 0,09",
+        "0,12 va 0,09",
+        "0,11 va 0,10"
+      ],
+      "t": 1,
+      "izoh": "1 ni 9 ga bo'lsak 0,111… hosil bo'ladi, uchinchi raqam 1 kichik bo'lgani uchun natija 0,11. 1 ni 11 ga bo'lsak 0,0909… chiqadi, uchinchi raqam 0 bo'lgani uchun natija 0,09. Ikkala kasr ham davriy, lekin ularning yaxlitlangan qiymatlari har xil. Javob: 0,11 va 0,09.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davriy-kasrni-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#8209f084"
+    },
+    {
+      "q": "Sinfdagi 17 nafar o'quvchidan 5 tasi shaxmat to'garagiga qatnaydi. Ularning ulushini foizda yuzdan bir aniqligida yozing.",
+      "v": [
+        "29,42%",
+        "2,94%",
+        "29,41%",
+        "340%"
+      ],
+      "t": 2,
+      "izoh": "Ulushni topamiz: 5 : 17 = 0,294117… Foizga aylantirish uchun 100 ga ko'paytiramiz va 29,4117…% hosil bo'ladi. Yuzdan bir aniqligi verguldan keyin ikkita raqam qoldirishni bildiradi, uchinchi raqam 1 bo'lgani uchun qiymat oshmaydi. Javob: 29,41%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasrni-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#a63d6c9a"
+    },
+    {
+      "q": "Hisoblashda √2 ≈ 1,414 deb olindi. Bu taqribiy qiymat qaysi tomonga yaxlitlangan va uning absolut xatosi qanday chegarada?",
+      "v": [
+        "Ortig'iga, xatosi 0,001 dan kichik",
+        "Kamiga, xatosi 0,01 dan katta",
+        "Ortig'iga, xatosi 0,0001 dan kichik",
+        "Kamiga, xatosi 0,001 dan kichik"
+      ],
+      "t": 3,
+      "izoh": "√2 ning aniqroq qiymati 1,41421… ga teng. Olingan 1,414 soni undan kichik, demak taqribiy qiymat kamiga yaxlitlangan. Absolut xato 1,41421 − 1,414 = 0,00021 atrofida bo'lib, u 0,001 dan kichik. Javob: kamiga, xatosi 0,001 dan kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-va-pi-taqribiy",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#7467301a"
+    },
+    {
+      "q": "Aylananing radiusi 7 sm ga teng. π ≈ 3,14 deb olib, aylana uzunligini hisoblang va natijani butun songacha yaxlitlang.",
+      "v": [
+        "44 sm",
+        "43 sm",
+        "22 sm",
+        "154 sm"
+      ],
+      "t": 0,
+      "izoh": "Aylana uzunligi L = 2 · π · r formulasi bilan topiladi. Hisoblaymiz: L ≈ 2 · 3,14 · 7 = 43,96 sm. Butun songacha yaxlitlaganda 44 sm chiqadi. 22 sm javobi 2 ko'paytuvchisini tushirib qoldirish, 154 sm esa yuza formulasi bilan chalkashtirish natijasi. Javob: 44 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-va-pi-taqribiy",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#f230218a"
+    },
+    {
+      "q": "Doira yuzasini hisoblashda π o'rniga 3,14 olindi. Shu almashtirishdan kelib chiqadigan nisbiy xato taxminan qanchaga teng?",
+      "v": [
+        "taxminan 0,5%",
+        "taxminan 0,05%",
+        "taxminan 0,1%",
+        "taxminan 5%"
+      ],
+      "t": 1,
+      "izoh": "π ning aniqroq qiymati 3,14159 bo'lgani uchun absolut xato 3,14159 − 3,14 = 0,00159. Nisbiy xato 0,00159 : 3,14159 ≈ 0,0005 chiqadi, ya'ni 0,05%. Yuza S = π · r² formulasida radius aniq olingani sababli yuzaning nisbiy xatosi ham shuncha bo'ladi. Javob: taxminan 0,05%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-va-pi-taqribiy",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#af26bcc5"
+    },
+    {
+      "q": "√50 sonining qiymati qaysi ketma-ket butun sonlar orasida yotadi va u butun songacha qanday yaxlitlanadi?",
+      "v": [
+        "7 va 8 orasida, 8 ga yaxlitlanadi",
+        "6 va 7 orasida, 7 ga yaxlitlanadi",
+        "7 va 8 orasida, 7 ga yaxlitlanadi",
+        "24 va 25 orasida, 25 ga yaxlitlanadi"
+      ],
+      "t": 2,
+      "izoh": "7² = 49 va 8² = 64 bo'lgani uchun √50 soni 7 bilan 8 orasida yotadi. 50 soni 49 ga juda yaqin, shuning uchun √50 ≈ 7,07 bo'ladi. Kasr qismi 0,5 dan kichik bo'lgani sababli son 7 ga yaxlitlanadi. Javob: 7 va 8 orasida, 7 ga yaxlitlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-va-pi-taqribiy",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#22f761eb"
+    },
+    {
+      "q": "2,449 sonini avval yuzdan bir, so'ng o'ndan bir razryadgacha yaxlitlashdi. Bu natija to'g'ridan-to'g'ri o'ndan birgacha yaxlitlash natijasidan farq qiladimi?",
+      "v": [
+        "Yo'q, ikkala yo'lda ham 2,4 chiqadi",
+        "Yo'q, ikkala yo'lda ham 2,5 chiqadi",
+        "Ha, bosqichma-bosqich 2,4, to'g'ridan-to'g'ri 2,5 chiqadi",
+        "Ha, bosqichma-bosqich 2,5, to'g'ridan-to'g'ri 2,4 chiqadi"
+      ],
+      "t": 3,
+      "izoh": "Bosqichma-bosqich yo'lda avval 2,449 dan 2,45 hosil bo'ladi, so'ng 2,45 dan 2,5 chiqadi. To'g'ridan-to'g'ri yaxlitlashda esa verguldan keyingi ikkinchi raqam 4 bo'lgani uchun natija 2,4 bo'ladi. Demak ikki yo'l ikki xil javob beradi. Javob: bosqichma-bosqich 2,5, to'g'ridan-to'g'ri 2,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ketma-ket-yaxlitlash-tuzogi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#9e9c3251"
+    },
+    {
+      "q": "Karim 4,4449 sonini bosqichma-bosqich yaxlitlab 4,5 natijasini oldi. Bu son to'g'ridan-to'g'ri o'ndan bir razryadgacha yaxlitlansa, qanday son chiqadi?",
+      "v": [
+        "4,4",
+        "4,5",
+        "4,45",
+        "4,44"
+      ],
+      "t": 0,
+      "izoh": "To'g'ridan-to'g'ri yaxlitlashda faqat kerakli razryaddan keyingi birinchi raqamga qaraladi. 4,4449 sonida o'ndan bir razryaddan keyingi raqam 4 bo'lib, 5 dan kichik. Shuning uchun natija 4,4 bo'ladi, Karimning 4,5 javobi esa oraliq yaxlitlashlar to'plangani uchun chiqqan. Javob: 4,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ketma-ket-yaxlitlash-tuzogi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#c27d9aad"
+    },
+    {
+      "q": "Nima uchun yaxlitlashni bosqichma-bosqich bajarish tavsiya etilmaydi?",
+      "v": [
+        "Chunki bosqichma-bosqich yaxlitlash ko'proq vaqt oladi",
+        "Chunki oraliq yaxlitlashlar to'planib, natijani boshqa songa olib borishi mumkin",
+        "Chunki oraliq natijani daftarga yozib qo'yish shart bo'ladi",
+        "Chunki yaxlitlash faqat butun sonlar uchun aniqlangan"
+      ],
+      "t": 1,
+      "izoh": "Har bir oraliq yaxlitlash o'z xatosini qo'shadi va bu xatolar bir yo'nalishda to'planishi mumkin. Natijada 4,4449 kabi son to'g'ri javob 4,4 bo'lsa ham 4,5 ga aylanib ketadi. Shuning uchun yaxlitlash faqat bir marta, oxirgi natijada bajariladi. Javob: oraliq yaxlitlashlar to'planadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-yaxlitlash-tuzogi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#f9b49639"
+    },
+    {
+      "q": "Uch xaridning narxi 1 249, 2 249 va 3 249 so'm. Har bir narxni yuzlikkacha yaxlitlab qo'shganda va aniq yig'indini yuzlikkacha yaxlitlaganda qanday natijalar chiqadi?",
+      "v": [
+        "Ikkala yo'lda ham 6 700 chiqadi",
+        "Ikkala yo'lda ham 6 600 chiqadi",
+        "6 600 va 6 700 — natijalar farq qiladi",
+        "6 700 va 6 800 — natijalar farq qiladi"
+      ],
+      "t": 2,
+      "izoh": "Har bir narxni alohida yaxlitlaymiz: 1 249 ≈ 1 200, 2 249 ≈ 2 200, 3 249 ≈ 3 200 va ularning yig'indisi 6 600. Aniq yig'indi esa 1 249 + 2 249 + 3 249 = 6 747 bo'lib, u yuzlikkacha yaxlitlanganda 6 700 beradi. Uchta kichik yaxlitlash xatosi bir yo'nalishda to'planib, farq hosil qildi. Javob: natijalar farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yaxlitlangan-yigindi-nomuvofiqligi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#82d6e37a"
+    },
+    {
+      "q": "Hisobot jadvalida uch bo'limning ulushlari alohida yaxlitlab yozilgan, ammo ularning yig'indisi 100% o'rniga 99,9% chiqdi. Bunga nima sabab bo'ladi?",
+      "v": [
+        "Foizlarni qo'shish qoidasi boshqacha ekani",
+        "Ulushlarning umuman noto'g'ri hisoblangani",
+        "100% dan kichik yig'indi bo'lishi mumkin emasligi",
+        "Har bir ulush alohida yaxlitlangani va xatolar to'planib qolgani"
+      ],
+      "t": 3,
+      "izoh": "Har bir ulush o'z yaxlitlash xatosiga ega bo'ladi va bu xatolar bir tomonga yo'nalganda yig'indi 100% dan chetga chiqadi. Masalan uchta ulush 33,33% dan bo'lsa, har biri 33,3% ga kamaytirib yaxlitlanadi va yig'indi 99,9% bo'ladi. Bunday jadvallarda bitta ulush moslashtirilib tuzatiladi. Javob: xatolar to'planib qolgani.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yaxlitlangan-yigindi-nomuvofiqligi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#ece5bda5"
+    },
+    {
+      "q": "128,04 sonini birlar razryadigacha ortig'iga yaxlitlang va to'g'ri javobni belgilang.",
+      "v": [
+        "129",
+        "128",
+        "128,1",
+        "130"
+      ],
+      "t": 0,
+      "izoh": "Ortig'iga yaxlitlashda natija berilgan sondan kichik bo'la olmaydi. Butun sonlar orasida 128,04 dan katta eng yaqini 129 bo'ladi. Oddiy yaxlitlashda kasr qismi juda kichik bo'lgani uchun 128 chiqar edi, lekin bu yerda shart boshqacha. Javob: 129.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortigiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#190008a2"
+    },
+    {
+      "q": "Bir son o'ndan bir razryadgacha ortig'iga yaxlitlanganda 9,7 hosil bo'ldi. Bu son qaysi oraliqda yotadi?",
+      "v": [
+        "9,65 ≤ x < 9,75",
+        "9,6 < x ≤ 9,7",
+        "9,7 ≤ x < 9,8",
+        "9,6 ≤ x < 9,7"
+      ],
+      "t": 1,
+      "izoh": "Ortig'iga yaxlitlashda natija sondan kichik bo'lmaydi, demak son 9,7 dan katta bo'la olmaydi. Ayni paytda son 9,6 dan katta bo'lishi shart, aks holda natija 9,6 chiqardi. 9,7 ning o'zi ham mos keladi, chunki u yaxlitlashda o'zgarmaydi. Javob: 9,6 < x ≤ 9,7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortigiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#15db71e8"
+    },
+    {
+      "q": "Kran bir ko'tarishda 1,8 tonna yuk ko'taradi. Umumiy og'irligi 15 tonna bo'lgan yukni ko'tarish uchun kran necha marta ishlatiladi?",
+      "v": [
+        "8 marta",
+        "8,3 marta",
+        "9 marta",
+        "10 marta"
+      ],
+      "t": 2,
+      "izoh": "Avval bo'lish amalini bajaramiz: 15 : 1,8 ≈ 8,33. Kran 8 marta ko'tarsa 8 · 1,8 = 14,4 tonna yuk ko'tariladi va 0,6 tonna qoladi. Qolgan yuk uchun yana bitta ko'tarish kerak, shuning uchun natija ortig'iga yaxlitlanadi. Javob: 9 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amaliy-ortigiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#c420b3a8"
+    },
+    {
+      "q": "Rulonda 37 m mato bor. Bitta ko'ylakka 2,3 m mato ketadi. Rulondan ko'pi bilan nechta ko'ylak bichish mumkin?",
+      "v": [
+        "17 dona",
+        "15 dona",
+        "16,1 dona",
+        "16 dona"
+      ],
+      "t": 3,
+      "izoh": "37 ni 2,3 ga bo'lsak, 16,08 ga yaqin natija chiqadi. 17 ta ko'ylak uchun 17 · 2,3 = 39,1 m mato kerak bo'lardi, bunchasi rulonda yo'q. Shuning uchun bo'linma kamiga yaxlitlanadi va 16 dona ko'ylak bichiladi. Javob: 16 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amaliy-kamiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#5abd74c4"
+    },
+    {
+      "q": "Hisobda 12 480 000 so'm bor. Har oyda 950 000 so'mdan yechib olinsa, to'liq necha oy davomida shu summani olish mumkin?",
+      "v": [
+        "13 oy",
+        "14 oy",
+        "12 oy",
+        "13,1 oy"
+      ],
+      "t": 0,
+      "izoh": "12 480 000 ni 950 000 ga bo'lsak, 13,13 ga yaqin son hosil bo'ladi. 13 oyda 13 · 950 000 = 12 350 000 so'm olinadi va 130 000 so'm qoladi, bu esa to'liq oylik summaga yetmaydi. Shuning uchun natija kamiga yaxlitlanadi. Javob: 13 oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amaliy-kamiga-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#34494eb9"
+    },
+    {
+      "q": "Poyezd manzilga 8 soat 20 daqiqada yetadi. Yo'lovchi kelish vaqtini butun soatgacha rejalashtirmoqchi. U qaysi yaxlitlashni tanlagani ma'qul?",
+      "v": [
+        "Kamiga, ya'ni 8 soat deb rejalashtiradi",
+        "Ortig'iga, ya'ni 9 soat deb rejalashtiradi",
+        "Eng yaqin butunga, ya'ni 8 soat deb oladi",
+        "Yaxlitlamasdan 8,2 soat deb yozadi"
+      ],
+      "t": 1,
+      "izoh": "8 soat 20 daqiqa 8,33 soatga teng, chunki 20 daqiqa soatning uchdan biri. Eng yaqin butun songa yaxlitlash 8 soat beradi, ammo bunda yo'lovchi 20 daqiqaga kechikadi. Vaqt zaxirasi qolishi uchun bunday rejada ortig'iga yaxlitlanadi. Javob: ortig'iga, 9 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yaxlitlash-yonalishini-aniqlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#59afe5d2"
+    },
+    {
+      "q": "Quyidagi vaziyatlarning qaysi birida hisob natijasi kamiga yaxlitlanadi?",
+      "v": [
+        "Yukni tashish uchun kerakli mashinalar sonini topishda",
+        "Xonani bo'yashga ketadigan bo'yoq bankalari sonini hisoblashda",
+        "Berilgan pulga sotib olish mumkin bo'lgan buyumlar sonini aniqlashda",
+        "O'quvchilarni sayrga olib boradigan avtobuslar sonini belgilashda"
+      ],
+      "t": 2,
+      "izoh": "Kamiga yaxlitlash mavjud resurs chegarasidan chiqib ketmaslik kerak bo'lgan hollarda qo'llanadi. Pul cheklangan bo'lgani uchun buyumlar sonidagi kasr qism tashlanadi, aks holda pul yetmay qoladi. Qolgan uch holatda esa yetishmovchilik bo'lmasligi uchun ortig'iga yaxlitlanadi. Javob: buyumlar sonini aniqlashda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yaxlitlash-yonalishini-aniqlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#b3b179a8"
+    },
+    {
+      "q": "Hisob bo'yicha devor uchun 4 726,3 dona g'isht kerak ekan. Quruvchi buyurtmani qanday berishi kerak?",
+      "v": [
+        "4 726 dona, chunki kasr qism tashlanadi",
+        "4 700 dona, chunki yuzlikkacha yaxlitlanadi",
+        "4 726,3 dona, chunki hisob shuni ko'rsatdi",
+        "4 727 dona, chunki g'isht yetishmasligi mumkin emas"
+      ],
+      "t": 3,
+      "izoh": "G'ishtni bo'lakka bo'lib buyurtma qilib bo'lmaydi, shuning uchun son butun bo'lishi kerak. 4 726 dona olinsa, devorning kichik qismiga g'isht yetmay qoladi. Yetishmovchilikka yo'l qo'ymaslik uchun natija ortig'iga yaxlitlanadi. Javob: 4 727 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yaxlitlash-yonalishini-aniqlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#bd991f71"
+    },
+    {
+      "q": "O'quvchi 0,3449 sonini avval mingdan bir, so'ng yuzdan bir razryadgacha yaxlitladi. U qanday xatoga yo'l qo'ydi?",
+      "v": [
+        "0,34 o'rniga 0,35 oladi",
+        "0,35 o'rniga 0,34 oladi",
+        "0,34 o'rniga 0,3 oladi",
+        "Hech qanday xatoga yo'l qo'ymaydi"
+      ],
+      "t": 0,
+      "izoh": "Bosqichma-bosqich yo'lda 0,3449 dan avval 0,345, keyin esa 0,35 hosil bo'ladi. To'g'ridan-to'g'ri yaxlitlashda yuzdan bir razryaddan keyingi raqam 4 bo'lgani uchun natija 0,34 bo'lishi kerak edi. Demak oraliq yaxlitlash tufayli javob bir qadam yuqoriga surilgan. Javob: 0,34 o'rniga 0,35 oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ketma-ket-yaxlitlash-tuzogi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#173d9281"
+    },
+    {
+      "q": "Ikki mahsulotning narxi 3 400 va 2 400 so'm. Har bir narx alohida minglikkacha yaxlitlanib qo'shilsa, natija aniq yig'indining yaxlitlanganidan qanchaga farq qiladi?",
+      "v": [
+        "500 so'mga",
+        "1 000 so'mga",
+        "200 so'mga",
+        "Umuman farq qilmaydi"
+      ],
+      "t": 1,
+      "izoh": "Alohida yaxlitlaymiz: 3 400 ≈ 3 000 va 2 400 ≈ 2 000, ularning yig'indisi 5 000 so'm. Aniq yig'indi esa 3 400 + 2 400 = 5 800 so'm bo'lib, u minglikkacha yaxlitlanganda 6 000 beradi. Ikki natija orasidagi farq 6 000 − 5 000 = 1 000 so'm. Javob: 1 000 so'mga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yaxlitlangan-yigindi-nomuvofiqligi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#3f39ebc7"
+    },
+    {
+      "q": "Uch guruhning har birida 2 nafardan, jami 6 nafar o'quvchi bor. Har bir guruh ulushi foizda butun songacha yaxlitlansa, uchta foizning yig'indisi qancha bo'ladi?",
+      "v": [
+        "100%",
+        "101%",
+        "99%",
+        "33%"
+      ],
+      "t": 2,
+      "izoh": "Bir guruh ulushi 2 : 6 = 0,3333, ya'ni 33,33%. Butun songacha yaxlitlaganda verguldan keyingi raqam 3 kichik bo'lgani uchun har biri 33% ga aylanadi. Uchta ulush yig'indisi 33 + 33 + 33 = 99% chiqadi. Yaxlitlash xatolari bir tomonga to'planib, yig'indi 100% dan kam bo'lib qoldi. Javob: 99%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yaxlitlangan-yigindi-nomuvofiqligi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#8c007db2"
+    },
+    {
+      "q": "0,4999 va 0,5001 sonlarining har biri o'ndan bir razryadgacha yaxlitlansa, qanday natijalar hosil bo'ladi?",
+      "v": [
+        "0,4 va 0,5 bo'ladi",
+        "0,5 va 0,6 bo'ladi",
+        "0,4 va 0,6 bo'ladi",
+        "Ikkalasi ham 0,5 bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "0,4999 sonida o'ndan bir razryaddan keyingi raqam 9 bo'lib, 5 dan katta, shuning uchun 4 birga oshadi va 0,5 chiqadi. 0,5001 sonida esa keyingi raqam 0, ya'ni qiymat o'zgarmaydi va yana 0,5 hosil bo'ladi. Bir-biriga juda yaqin ikki son bir xil natija berdi. Javob: ikkalasi ham 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegaraviy-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#6a482995"
+    },
+    {
+      "q": "Kasr qismi aynan 0,5 ga teng bo'lgan sonni butun songacha yaxlitlashda maktab dasturi qaysi qoidani beradi?",
+      "v": [
+        "Son kattasi tomonga yaxlitlanadi",
+        "Son kichigi tomonga yaxlitlanadi",
+        "Son o'zgarishsiz qoldiriladi",
+        "Son eng yaqin juft butun songa yaxlitlanadi"
+      ],
+      "t": 0,
+      "izoh": "Kasr qismi 0,5 bo'lganda son ikkala butun songa ham bir xil masofada turadi. Bunday chegaraviy holat uchun maktab dasturi bitta kelishuvni qabul qiladi: son kattasi tomonga yaxlitlanadi. Masalan 6,5 soni 7 ga, 12,5 soni esa 13 ga aylanadi. Javob: kattasi tomonga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chegaraviy-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#8308a586"
+    },
+    {
+      "q": "−3,5 sonini butun songacha yaxlitlaymiz. Sonlar o'qida kattasi tomonga yaxlitlash qoidasiga ko'ra qanday natija olinadi?",
+      "v": [
+        "−4",
+        "−3",
+        "−3,5",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Shart bo'yicha yaxlitlash sonlar o'qida kattasi tomonga bajariladi. Sonlar o'qida −3 soni −4 dan o'ngda joylashgan, ya'ni −3 > −4. Shuning uchun natija −3 bo'ladi. Faqat modul (3,5) bilan ishlagan o'quvchi 4 ni olib, −4 javobini beradi — bu esa noldan uzoqlashtirib yaxlitlash, boshqa kelishuv hisoblanadi. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegaraviy-yaxlitlash",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#3a04f1fa"
+    },
+    {
+      "q": "Chizg'ichning eng kichik bo'linmasi 1 mm. Shu chizg'ich bilan bajarilgan o'lchashda maksimal absolut xato qancha deb olinadi?",
+      "v": [
+        "1 mm",
+        "0,1 mm",
+        "0,5 mm",
+        "2 mm"
+      ],
+      "t": 2,
+      "izoh": "O'lchash asbobining xatosi odatda uning eng kichik bo'linmasining yarmi deb olinadi. Bo'linma 1 mm bo'lgani uchun maksimal absolut xato 1 : 2 = 0,5 mm. Ya'ni 84 mm deb o'qilgan uzunlik aslida 83,5 mm dan 84,5 mm gacha oraliqda yotadi. Javob: 0,5 mm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "olchov-asbobi-aniqligi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#4546a850"
+    },
+    {
+      "q": "Tarozi shkalasining bo'linmasi 20 g. Shu tarozida o'lchangan 1,5 kg massaning nisbiy xatosi ko'pi bilan qancha bo'ladi?",
+      "v": [
+        "taxminan 1,33%",
+        "aynan 20%",
+        "taxminan 0,013%",
+        "taxminan 0,67%"
+      ],
+      "t": 3,
+      "izoh": "Maksimal absolut xato bo'linmaning yarmiga teng: 20 : 2 = 10 g. Massani bir xil birlikka keltiramiz: 1,5 kg = 1 500 g. Nisbiy xato 10 : 1 500 ≈ 0,0067 chiqadi, ya'ni taxminan 0,67%. 1,33% javobi yarimga bo'lish qadamini tashlab ketish natijasi. Javob: taxminan 0,67%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "olchov-asbobi-aniqligi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#c672bc18"
+    },
+    {
+      "q": "Laboratoriyada ikki mensurka bor: birinchisining bo'linmasi 5 ml, ikkinchisiniki 2 ml. 40 ml suyuqlikni o'lchash uchun qaysi biri qulayroq?",
+      "v": [
+        "Ikkinchisi, nisbiy xatosi 2,5%",
+        "Birinchisi, nisbiy xatosi 6,25%",
+        "Ikkinchisi, nisbiy xatosi 5%",
+        "Birinchisi, nisbiy xatosi 12,5%"
+      ],
+      "t": 0,
+      "izoh": "Har bir mensurkaning maksimal xatosi bo'linmasining yarmiga teng: birinchisida 2,5 ml, ikkinchisida 1 ml. Nisbiy xatolarni hisoblaymiz: 2,5 : 40 = 0,0625, ya'ni 6,25%; 1 : 40 = 0,025, ya'ni 2,5%. Nisbiy xato kichik bo'lgani uchun ikkinchi mensurka qulayroq. Javob: ikkinchisi, 2,5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "olchov-asbobi-aniqligi",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#815a1889"
+    },
+    {
+      "q": "Ikki shahar aholisi mingtagacha yaxlitlab 45 000 va 46 000 kishi deb berilgan. Ularning aholisi orasidagi haqiqiy farq haqida nima deyish mumkin?",
+      "v": [
+        "Farq aniq 1 000 kishiga teng",
+        "Farq 0 dan 2 000 gacha bo'lgan oraliqda yotadi",
+        "Farq 500 dan 1 500 gacha oraliqda yotadi",
+        "Farq 1 000 dan katta bo'lishi shart"
+      ],
+      "t": 1,
+      "izoh": "Birinchi shahar aholisi 44 500 dan 45 500 gacha, ikkinchisiniki 45 500 dan 46 500 gacha oraliqda yotadi. Eng kichik farq ikkala son ham 45 500 ga yaqin bo'lganda hosil bo'lib, deyarli nolga teng bo'ladi. Eng katta farq esa 46 500 va 44 500 chegaralarida, ya'ni 2 000 ga yaqinlashadi. Javob: farq 0 dan 2 000 gacha oraliqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yaxlitlangan-malumotni-talqin",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#44bb779b"
+    },
+    {
+      "q": "Gazetada shahar bo'ylab kuniga taxminan 12 000 yo'lovchi tashilishi yozilgan. Bu son mingtagacha yaxlitlangan bo'lsa, yo'lovchilar soni qaysi chegaralarda yotadi?",
+      "v": [
+        "11 000 dan 13 000 gacha",
+        "11 900 dan 12 100 gacha",
+        "11 500 dan 12 500 gacha",
+        "12 000 dan 12 500 gacha"
+      ],
+      "t": 2,
+      "izoh": "Mingtagacha yaxlitlashda maksimal chetlanish qadamning yarmiga, ya'ni 500 ga teng. Pastki chegara 12 000 − 500 = 11 500, yuqori chegara 12 000 + 500 = 12 500 bo'ladi. Demak haqiqiy yo'lovchilar soni shu ikki qiymat orasida yotadi. Javob: 11 500 dan 12 500 gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yaxlitlangan-malumotni-talqin",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#afe75253"
+    },
+    {
+      "q": "Bir tadqiqotda o'rtacha bo'y 168 sm deb, ikkinchisida esa 167,8 sm deb berilgan. Qaysi ma'lumot ko'proq axborot beradi?",
+      "v": [
+        "Birinchisi, chunki uning soni butun va qulay",
+        "Ikkinchisi, chunki uning qiymati kichikroq",
+        "Ikkalasi ham bir xil axborot beradi",
+        "Ikkinchisi, chunki u o'ndan bir sm aniqligida berilgan"
+      ],
+      "t": 3,
+      "izoh": "168 sm yozuvi 167,5 dan 168,5 gacha bo'lgan oraliqni bildiradi, uning maksimal xatosi 0,5 sm. 167,8 sm yozuvi esa 167,75 dan 167,85 gacha oraliqni bildiradi, maksimal xatosi bor-yo'g'i 0,05 sm. Ikkinchi ma'lumot o'n baravar tor oraliqni ko'rsatgani uchun ko'proq axborot beradi. Javob: ikkinchisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yaxlitlangan-malumotni-talqin",
+      "id": "matematika_arif_m07-yaxlitlash-taqribiy-qiymat-va-xatoni#004a998a"
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "nom": "03-mavzu. Modda Miqdori",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "1 mol deb qanday modda miqdoriga aytiladi?",
+      "v": [
+        "Undagi atom (molekula)lar soni 12 g ugleroddagi atomlar soniga teng bo'lgan modda miqdoriga",
+        "Massasi 1 kg bo'lgan modda miqdoriga",
+        "Hajmi 1 l bo'lgan modda miqdoriga",
+        "Undagi molekulalar soni 10²³ ta bo'lgan modda miqdoriga"
+      ],
+      "t": 0,
+      "izoh": "1 mol — moddaning shunday miqdoriki, undagi atom (molekula)lar soni 12 g ugleroddagi atomlar soniga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m03-modda-miqdori#6bb0f907"
+    },
+    {
+      "q": "Xalqaro birliklar sistemasida (XBS) modda miqdori qanday birlikda ifodalanadi va qanday harf bilan belgilanadi?",
+      "v": [
+        "Mol da, ν (nyu) harfi bilan",
+        "Kilogramm da, m harfi bilan",
+        "Metr da, l harfi bilan",
+        "Sekund da, t harfi bilan"
+      ],
+      "t": 0,
+      "izoh": "XBS da modda miqdorini «mol» da ifodalash qabul qilingan. Modda miqdori ν (nyu) harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m03-modda-miqdori#a93bc658"
+    },
+    {
+      "q": "Avogadro doimiysi deb nimaga aytiladi?",
+      "v": [
+        "Miqdori 1 mol bo'lgan moddadagi molekulalar soniga",
+        "1 g moddadagi atomlar soniga",
+        "1 m³ gazdagi molekulalar soniga",
+        "1 mol moddaning massasiga"
+      ],
+      "t": 0,
+      "izoh": "Miqdori 1 mol bo'lgan moddadagi molekulalar soni Amedeo Avogadro sharafiga Avogadro doimiysi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m03-modda-miqdori#4f5bd7ae"
+    },
+    {
+      "q": "Avogadro doimiysining son qiymati qanchaga teng?",
+      "v": [
+        "N_A = 6,022·10²³ mol⁻¹",
+        "N_A = 6,022·10²⁶ mol⁻¹",
+        "N_A = 6,022·10²⁰ mol⁻¹",
+        "N_A = 6,022·10²⁵ mol⁻¹"
+      ],
+      "t": 0,
+      "izoh": "Avogadro doimiysining son qiymati N_A = 6,022·10²³ mol⁻¹ ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m03-modda-miqdori#f194ba74"
+    },
+    {
+      "q": "Avogadro doimiysi qanday kattalik hisoblanadi?",
+      "v": [
+        "Fundamental fizik kattalik",
+        "O'lchamsiz kattalik",
+        "Vaqtni bildiruvchi kattalik",
+        "Massa birligi"
+      ],
+      "t": 0,
+      "izoh": "Avogadro doimiysi fundamental fizik kattalikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m03-modda-miqdori#f7ac695f"
+    },
+    {
+      "q": "Modda miqdori ν ga teng bo'lsa, undagi molekulalar soni qanday aniqlanadi?",
+      "v": [
+        "N = ν·N_A",
+        "N = ν/N_A",
+        "N = N_A/ν",
+        "N = ν + N_A"
+      ],
+      "t": 0,
+      "izoh": "N = ν·N_A formula orqali aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m03-modda-miqdori#f9ae34e5"
+    },
+    {
+      "q": "Modda miqdorini topish uchun nima qilish kerak?",
+      "v": [
+        "Modda tarkibidagi molekulalar sonini Avogadro soniga bo'lish kerak (ν = N/N_A)",
+        "Molekulalar sonini Avogadro soniga ko'paytirish kerak",
+        "Modda massasini hajmiga bo'lish kerak",
+        "Molekulalar sonini zichlikka ko'paytirish kerak"
+      ],
+      "t": 0,
+      "izoh": "ν = N/N_A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m03-modda-miqdori#5d0baafe"
+    },
+    {
+      "q": "Molyar massa deb nimaga aytiladi va qanday harf bilan belgilanadi?",
+      "v": [
+        "Miqdori bir mol bo'lgan moddaning massasiga, M harfi bilan",
+        "Bitta molekulaning massasiga, m₀ harfi bilan",
+        "Birlik hajmdagi massaga, ρ harfi bilan",
+        "Bir gramm moddaga, g harfi bilan"
+      ],
+      "t": 0,
+      "izoh": "Miqdori bir mol bo'lgan moddaning massasiga molyar massa deyiladi va M harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m03-modda-miqdori#85704622"
+    },
+    {
+      "q": "Molyar massaning birligi qanday?",
+      "v": [
+        "kg/mol",
+        "kg/m³",
+        "g/m³",
+        "mol/kg"
+      ],
+      "t": 0,
+      "izoh": "Molyar massaning birligi qilib kg/mol qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m03-modda-miqdori#0633c296"
+    },
+    {
+      "q": "Moddaning molyar massasi nimaga teng?",
+      "v": [
+        "Bitta molekula massasi bilan Avogadro doimiysining ko'paytmasiga (M = m₀·N_A)",
+        "Molekula massasining Avogadro soniga nisbatiga",
+        "Modda massasining hajmiga nisbatiga",
+        "Avogadro sonining molekula massasiga ko'paytmasiga"
+      ],
+      "t": 0,
+      "izoh": "M = m₀·N_A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m03-modda-miqdori#ff48de45"
+    },
+    {
+      "q": "Bitta molekulaning massasini molyar massa orqali qanday topish mumkin?",
+      "v": [
+        "m₀ = M/N_A",
+        "m₀ = M·N_A",
+        "m₀ = N_A/M",
+        "m₀ = M + N_A"
+      ],
+      "t": 0,
+      "izoh": "m₀ = M/N_A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m03-modda-miqdori#894c98ab"
+    },
+    {
+      "q": "Molyar massa bilan nisbiy molekulyar massa orasidagi bog'lanish qanday?",
+      "v": [
+        "M = M_n·10⁻³ kg/mol yoki M = M_n g/mol",
+        "M = M_n·10³ kg/mol",
+        "M = M_n/N_A",
+        "M = M_n·10⁻⁶ kg/mol"
+      ],
+      "t": 0,
+      "izoh": "Molyar massa nisbiy molekulyar massaga son jihatdan teng qilib grammlar hisobida olingan massadir: M = M_n g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m03-modda-miqdori#6c34773f"
+    },
+    {
+      "q": "Karbonat angidrid (CO₂) gazining nisbiy molekulyar massasi 44 u bo'lsa, uning molyar massasi qancha?",
+      "v": [
+        "M = 44 g/mol",
+        "M = 44 kg/mol",
+        "M = 22 g/mol",
+        "M = 88 g/mol"
+      ],
+      "t": 0,
+      "izoh": "CO₂ uchun M_n = 44 u, molyar massasi M = 44 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m03-modda-miqdori#a57e91c3"
+    },
+    {
+      "q": "Ixtiyoriy moddaning massasini topish uchun nima qilish kerak?",
+      "v": [
+        "Uni tashkil qilgan molekulalar sonini bitta molekulaning massasiga ko'paytirish kerak (m = m₀·N)",
+        "Modda hajmini zichlikka bo'lish kerak",
+        "Molekulalar sonini Avogadro soniga bo'lish kerak",
+        "Massani temperaturaga ko'paytirish kerak"
+      ],
+      "t": 0,
+      "izoh": "m = m₀·N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m03-modda-miqdori#e2fd1726"
+    },
+    {
+      "q": "Modda miqdorini massa va molyar massa orqali qanday ifodalash mumkin?",
+      "v": [
+        "ν = m/M",
+        "ν = m·M",
+        "ν = M/m",
+        "ν = m·N_A"
+      ],
+      "t": 0,
+      "izoh": "ν = m/M.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m03-modda-miqdori#eb4ec378"
+    },
+    {
+      "q": "Massasi aniq bo'lgan moddaning molekulalar sonini topish formulasi qaysi?",
+      "v": [
+        "N = (m/M)·N_A",
+        "N = (M/m)·N_A",
+        "N = m·M·N_A",
+        "N = m/(M·N_A)"
+      ],
+      "t": 0,
+      "izoh": "N = (m/M)·N_A formula orqali massasi ma'lum moddaning molekulalar (atomlar) soni aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m03-modda-miqdori#d54caa17"
+    },
+    {
+      "q": "Molekulalar konsentratsiyasi deb nimaga aytiladi va qanday belgilanadi?",
+      "v": [
+        "Hajm birligidagi molekulalar soniga, n harfi bilan",
+        "Massa birligidagi molekulalar soniga, k harfi bilan",
+        "1 mol dagi molekulalar soniga, N_A bilan",
+        "Idishdagi barcha molekulalar soniga, N bilan"
+      ],
+      "t": 0,
+      "izoh": "Hajm birligidagi molekulalar soniga modda molekulalarining konsentratsiyasi deyiladi va n harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m03-modda-miqdori#62328bda"
+    },
+    {
+      "q": "Molekulalar konsentratsiyasi qanday formula bilan aniqlanadi?",
+      "v": [
+        "n = N/V",
+        "n = N·V",
+        "n = V/N",
+        "n = m/V"
+      ],
+      "t": 0,
+      "izoh": "n = N/V, bunda N — idishdagi molekulalar soni, V — idish hajmi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m03-modda-miqdori#cf3e02f3"
+    },
+    {
+      "q": "Molekulalar konsentratsiyasining XBS dagi o'lchov birligi qanday?",
+      "v": [
+        "m⁻³",
+        "m³",
+        "kg/m³",
+        "mol⁻¹"
+      ],
+      "t": 0,
+      "izoh": "Konsentratsiya XBS da [n] = m⁻³ birligida o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m03-modda-miqdori#848e0357"
+    },
+    {
+      "q": "Modda zichligini konsentratsiya va molekula massasi orqali qanday ifodalash mumkin?",
+      "v": [
+        "ρ = n·m₀",
+        "ρ = n/m₀",
+        "ρ = m₀/n",
+        "ρ = n·V"
+      ],
+      "t": 0,
+      "izoh": "n = ρ/m₀ ifodadan ρ = n·m₀ kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m03-modda-miqdori#64e0fa03"
+    },
+    {
+      "q": "«Makroskopik» so'zidagi «makro» yunoncha qanday ma'noni anglatadi?",
+      "v": [
+        "«Katta» degan ma'noni",
+        "«Kichik» degan ma'noni",
+        "«Tez» degan ma'noni",
+        "«Og'ir» degan ma'noni"
+      ],
+      "t": 0,
+      "izoh": "«Makro» so'zi yunoncha «katta» degan ma'noni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m03-modda-miqdori#ef216c35"
+    },
+    {
+      "q": "Hajmi 54 cm³ bo'lgan suvdagi molekulalar soni taxminan qancha (M = 18 g/mol)?",
+      "v": [
+        "N ≈ 1,806·10²⁴ ta",
+        "N ≈ 1,806·10²³ ta",
+        "N ≈ 1,806·10²⁶ ta",
+        "N ≈ 1,806·10²¹ ta"
+      ],
+      "t": 0,
+      "izoh": "m = 54 g; N = (54/18)·6,02·10²³ = 1,806·10²⁴ ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m03-modda-miqdori#db00928f"
+    },
+    {
+      "q": "136 mol simob qanday hajmni egallaydi (zichligi 13,6 g/cm³, molyar massasi 200 g/mol)?",
+      "v": [
+        "V = 2·10⁻³ m³ = 2 l",
+        "V = 2·10⁻² m³ = 20 l",
+        "V = 2·10⁻⁴ m³ = 0,2 l",
+        "V = 0,2 m³ = 200 l"
+      ],
+      "t": 0,
+      "izoh": "V = ν·M/ρ = 136·200·10⁻³/13,6·10³ = 2·10⁻³ m³ = 2 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m03-modda-miqdori#e7b50a64"
+    },
+    {
+      "q": "Konsentratsiyani massa, hajm, molyar massa va Avogadro soni orqali ifodalovchi formula qaysi?",
+      "v": [
+        "n = (1/V)·(m/M)·N_A",
+        "n = V·m/(M·N_A)",
+        "n = (M/m)·N_A·V",
+        "n = m·V·N_A/M"
+      ],
+      "t": 0,
+      "izoh": "n = N/V = (1/V)·(m/M)·N_A = ρ/m₀.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m03-modda-miqdori#f6507b03"
+    },
+    {
+      "q": "Massasi 270 g bo'lgan suvdagi modda miqdori qancha (M = 18 g/mol)?",
+      "v": [
+        "ν = 15 mol",
+        "ν = 1,5 mol",
+        "ν = 150 mol",
+        "ν = 0,15 mol"
+      ],
+      "t": 0,
+      "izoh": "ν = m/M = 270/18 = 15 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m03-modda-miqdori#29326165"
+    },
+    {
+      "q": "Miqdori 8 mol bo'lgan karbonat angidrid (CO₂) gazining massasi qancha (M = 44 g/mol)?",
+      "v": [
+        "m = 352 g",
+        "m = 5,5 g",
+        "m = 35,2 g",
+        "m = 3520 g"
+      ],
+      "t": 0,
+      "izoh": "m = ν·M = 8·44 = 352 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m03-modda-miqdori#ca2b1684"
+    },
+    {
+      "q": "Barcha moddalarning 1 mol miqdoridagi molekula (atom)lar soni qanday?",
+      "v": [
+        "O'zaro teng",
+        "Modda turiga qarab har xil",
+        "Og'ir moddalarda ko'proq",
+        "Gazlarda kamroq"
+      ],
+      "t": 0,
+      "izoh": "Mol ta'rifidan barcha moddalarning 1 mol miqdoridagi molekula (atom)lar soni o'zaro teng degan xulosa kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m03-modda-miqdori#5e9c5a4d"
+    },
+    {
+      "q": "Moddaning molyar massasi 36 g/mol bo'lsa, bitta molekulasining massasi qanday topiladi?",
+      "v": [
+        "m₀ = M/N_A = 36·10⁻³/6,022·10²³ kg",
+        "m₀ = M·N_A",
+        "m₀ = N_A/M",
+        "m₀ = M/36"
+      ],
+      "t": 0,
+      "izoh": "m₀ = M/N_A = 36·10⁻³ kg/mol ÷ 6,022·10²³ mol⁻¹ ≈ 6·10⁻²⁶ kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m03-modda-miqdori#eab1f47e"
+    },
+    {
+      "q": "Bir dona gaz molekulasining massasi 7,33·10⁻²⁶ kg bo'lsa, shu gazning molyar massasini topish uchun qanday ifoda ishlatiladi?",
+      "v": [
+        "M = m₀·N_A",
+        "M = m₀/N_A",
+        "M = N_A/m₀",
+        "M = m₀·V"
+      ],
+      "t": 0,
+      "izoh": "M = m₀·N_A = 7,33·10⁻²⁶·6,022·10²³ ≈ 44·10⁻³ kg/mol = 44 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m03-modda-miqdori#529ab391"
+    },
+    {
+      "q": "Massasi 7 g bo'lgan azot (N₂) tarkibidagi molekulalar sonini qanday topiladi (M = 28 g/mol)?",
+      "v": [
+        "N = (m/M)·N_A = (7/28)·6,022·10²³",
+        "N = (M/m)·N_A",
+        "N = m·M/N_A",
+        "N = m·N_A"
+      ],
+      "t": 0,
+      "izoh": "N = (7/28)·6,022·10²³ = 0,25·6,022·10²³ ≈ 1,5·10²³ ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m03-modda-miqdori#c8fc2ef7"
+    },
+    {
+      "q": "Molyar massani aniqlash uchun qaysi ma'lumotlar yetarli?",
+      "v": [
+        "Bitta molekulaning massasi va Avogadro doimiysi",
+        "Moddaning faqat hajmi",
+        "Moddaning faqat temperaturasi",
+        "Moddaning faqat zichligi"
+      ],
+      "t": 0,
+      "izoh": "M = m₀·N_A formulaga ko'ra bitta molekula massasi va Avogadro doimiysi yetarli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m03-modda-miqdori#f27e9326"
+    },
+    {
+      "q": "Idishdagi suv molekularining konsentratsiyasini aniqlash uchun qanday kattaliklarni bilish kerak?",
+      "v": [
+        "Idishdagi molekulalar soni va idish hajmini",
+        "Faqat suvning massasini",
+        "Faqat idishning shaklini",
+        "Suvning rangi va hajmini"
+      ],
+      "t": 0,
+      "izoh": "n = N/V formulaga ko'ra molekulalar soni va idish hajmi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m03-modda-miqdori#bc69cb05"
+    }
+  ]
+}

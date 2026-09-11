@@ -1,0 +1,1609 @@
+{
+  "nom": "Logarifmik funksiya va uning grafigi",
+  "bolim": "Funksiyalar",
+  "blok": "funk",
+  "rasmiyBolim": 4,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Toshkentdagi laboratoriyada o'lchov asbobi ko'rsatkichi y = log₃(x − 4) formula bilan hisoblanadi. Bu funksiyaning aniqlanish sohasini toping.",
+      "v": [
+        "(4; +∞)",
+        "(−∞; 4)",
+        "[4; +∞)",
+        "(−4; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Logarifm ostidagi ifoda qat'iy musbat bo'lishi shart. Demak x − 4 > 0, bundan x > 4 kelib chiqadi. x = 4 nuqta kirmaydi, chunki log₃0 aniqlanmagan. Shuning uchun aniqlanish sohasi (4; +∞) oraliq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-chiziqli",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#a393a1e2"
+    },
+    {
+      "q": "Suv sathi o'zgarishini kuzatuvchi dastur y = log₅(9 − 2x) funksiyani ishlatadi. Funksiya qaysi x qiymatlarida aniqlangan?",
+      "v": [
+        "(4,5; +∞)",
+        "(−∞; 9)",
+        "(−∞; 4,5)",
+        "[4,5; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Shart: 9 − 2x > 0. Bundan 2x < 9, ya'ni x < 4,5 hosil bo'ladi. Tengsizlik qat'iy bo'lgani uchun 4,5 nuqtaning o'zi kirmaydi. Demak aniqlanish sohasi (−∞; 4,5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-chiziqli",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#44ca0b2a"
+    },
+    {
+      "q": "Sardor y = log₂(2x + 6) funksiyaning grafigini daftariga chizmoqchi. Grafik koordinata tekisligining qaysi qismida mavjud bo'ladi?",
+      "v": [
+        "(3; +∞) oraliqda",
+        "(−3; +∞) oraliqda",
+        "(−6; +∞) oraliqda",
+        "(−∞; −3) oraliqda"
+      ],
+      "t": 1,
+      "izoh": "Grafik faqat logarifm aniqlangan joyda bo'ladi: 2x + 6 > 0. Bundan 2x > −6, ya'ni x > −3. Grafik x = −3 vertikal to'g'ri chiziqning o'ng tomonida yotadi, ya'ni (−3; +∞) oraliqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-chiziqli",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#ea9d3046"
+    },
+    {
+      "q": "Muzlatgich haroratini modellashtirishda y = log₇(12 − 3x) funksiyadan foydalanilgan. Uning aniqlanish sohasini ko'rsating.",
+      "v": [
+        "(−∞; 12)",
+        "(−∞; 4)",
+        "(4; +∞)",
+        "(−∞; −4)"
+      ],
+      "t": 1,
+      "izoh": "12 − 3x > 0 tengsizlikni yechamiz: −3x > −12. Ikkala tomonni manfiy songa bo'lganda tengsizlik ishorasi almashadi va x < 4 chiqadi. Demak funksiya (−∞; 4) oraliqda aniqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-chiziqli",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#6601dd30"
+    },
+    {
+      "q": "y = log₆(5x − 20) funksiyaning aniqlanish sohasiga 5, 7, 9 va 3 sonlaridan qaysi biri kirmaydi?",
+      "v": [
+        "5",
+        "7",
+        "9",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi 5x − 20 > 0 shartdan topiladi: 5x > 20, ya'ni x > 4. Berilgan sonlardan 5, 7 va 9 bu shartni qanoatlantiradi. Faqat 3 soni 4 dan kichik, shuning uchun u sohaga kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-chiziqli",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#563e6abf"
+    },
+    {
+      "q": "Fizika laboratoriyasidagi hisob dasturi y = lg(x² − 9) ifodani hisoblaydi. Dastur qaysi x qiymatlarida natija bera oladi?",
+      "v": [
+        "(−∞; −3) ∪ (3; +∞)",
+        "(−3; 3)",
+        "(3; +∞)",
+        "(−∞; −3)"
+      ],
+      "t": 0,
+      "izoh": "Shart x² − 9 > 0, ya'ni (x − 3)(x + 3) > 0. Ko'paytma musbat bo'lishi uchun ikkala ko'paytuvchi bir xil ishorada bo'ladi: x < −3 yoki x > 3. Demak javob (−∞; −3) ∪ (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-murakkab",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#c8db4674"
+    },
+    {
+      "q": "Iqtisodchi Malika o'z modelida y = log₂((x + 1)/(x − 4)) funksiyani qo'llagan. Bu funksiyaning aniqlanish sohasi qanday?",
+      "v": [
+        "(−1; 4)",
+        "(−∞; −1) ∪ (4; +∞)",
+        "(−∞; 4)",
+        "(−1; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Kasr musbat bo'lishi kerak: (x + 1)/(x − 4) > 0. Bu surat va maxraj bir xil ishorada bo'lganda bajariladi. Ikkalasi manfiy bo'lsa x < −1, ikkalasi musbat bo'lsa x > 4. Demak (−∞; −1) ∪ (4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi-murakkab",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#e8584ef5"
+    },
+    {
+      "q": "y = log₃(x² − 7x + 12) funksiya berilgan. Uning aniqlanish sohasini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "(3; 4)",
+        "(−∞; 4)",
+        "(3; +∞)",
+        "(−∞; 3) ∪ (4; +∞)"
+      ],
+      "t": 3,
+      "izoh": "x² − 7x + 12 > 0 tengsizlikni yechamiz. Kvadrat uchhadning ildizlari x = 3 va x = 4. Tarmoqlari yuqoriga qaragani uchun ifoda ildizlardan tashqarida musbat bo'ladi. Demak (−∞; 3) ∪ (4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-murakkab",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#fabb669d"
+    },
+    {
+      "q": "Nodira y = log₄(x² + 4) funksiyaning aniqlanish sohasini izlayapti. Unga to'g'ri javobni tanlashda yordam bering.",
+      "v": [
+        "(−2; +∞)",
+        "(−∞; +∞)",
+        "(−4; 4)",
+        "x ≠ 0 bo'lgan barcha sonlar"
+      ],
+      "t": 1,
+      "izoh": "Shart x² + 4 > 0. Har qanday haqiqiy x uchun x² ≥ 0, demak x² + 4 ≥ 4 va u hech qachon nolga teng bo'lmaydi. Shuning uchun cheklov yo'q va aniqlanish sohasi butun son o'qi (−∞; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-murakkab",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#d05bddcb"
+    },
+    {
+      "q": "Statistik hisobotda y = (lg x)/(x − 3) ko'rinishdagi ifoda uchraydi. Bu ifoda qaysi x larda ma'noga ega?",
+      "v": [
+        "x > 0",
+        "x > 3",
+        "x ≥ 0 va x ≠ 3",
+        "x > 0 va x ≠ 3"
+      ],
+      "t": 3,
+      "izoh": "Ikkita shart bir vaqtda bajariladi. Birinchisi logarifmdan: x > 0. Ikkinchisi maxrajdan: x − 3 ≠ 0, ya'ni x ≠ 3. Ikkalasini birlashtirsak, ifoda x > 0 va x ≠ 3 bo'lganda ma'noga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-murakkab",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#2bcd9be8"
+    },
+    {
+      "q": "Dars davomida o'qituvchi doskaga logₐx funksiyani yozdi. Bu funksiya mavjud bo'lishi uchun asos a qanday shartlarni qanoatlantirishi kerak?",
+      "v": [
+        "a > 0 va a ≠ 1",
+        "a > 1",
+        "a > 0",
+        "a ≠ 1"
+      ],
+      "t": 0,
+      "izoh": "Logarifm ta'rifiga ko'ra asos musbat bo'lishi shart, aks holda daraja barcha x lar uchun aniqlanmaydi. Bundan tashqari a = 1 bo'lsa 1 ning har qanday darajasi 1 ga teng va teskari moslik buziladi. Demak a > 0 va a ≠ 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-shartlari",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#f1bf0fdc"
+    },
+    {
+      "q": "Ustoz doskaga asosi m − 2 bo'lgan logarifmik funksiyani yozdi. m ning 5, 8, 10 va 1 qiymatlaridan qaysi birida bu funksiya umuman aniqlanmaydi?",
+      "v": [
+        "5",
+        "8",
+        "10",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "Asos uchun m − 2 > 0 va m − 2 ≠ 1 shartlar bajarilishi kerak, ya'ni m > 2 va m ≠ 3. m = 5, 8, 10 qiymatlarida asos mos ravishda 3, 6 va 8 bo'lib, shartlar bajariladi. m = 1 da asos −1 chiqadi, bu manfiy son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-shartlari",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#85cca024"
+    },
+    {
+      "q": "Asosi 2k + 1 bo'lgan logarifmik funksiya mavjud bo'lishi uchun k parametr qanday qiymatlarni qabul qila oladi?",
+      "v": [
+        "k > 0",
+        "k > −0,5",
+        "k > −0,5 va k ≠ 0",
+        "k ≠ 0"
+      ],
+      "t": 2,
+      "izoh": "Asos musbat bo'lsin: 2k + 1 > 0, bundan k > −0,5. Asos birga teng bo'lmasin: 2k + 1 ≠ 1, bundan 2k ≠ 0, ya'ni k ≠ 0. Ikki shartni birga olsak k > −0,5 va k ≠ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asos-shartlari",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#460909e9"
+    },
+    {
+      "q": "Quyidagi yozuvlardan qaysi biri logarifmik funksiyani bermaydi: y = log₃x, y = lg x, y = log₁x, y = ln x?",
+      "v": [
+        "y = log₃x",
+        "y = lg x",
+        "y = log₁x",
+        "y = ln x"
+      ],
+      "t": 2,
+      "izoh": "Logarifmik funksiyada asos birga teng bo'lmasligi kerak. y = lg x da asos 10, y = ln x da asos e ≈ 2,72, y = log₃x da asos 3 — hammasi mos. y = log₁x da esa asos 1 bo'lib, bunday logarifm ta'riflanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-shartlari",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#7e50749f"
+    },
+    {
+      "q": "Anvar to'rtta funksiyani ko'rib chiqdi: y = log₂x, y = log₅x, y = log₁/₂x, y = lg x. Ulardan qaysi biri kamayuvchi?",
+      "v": [
+        "y = log₂x",
+        "y = log₅x",
+        "y = log₁/₂x",
+        "y = lg x"
+      ],
+      "t": 2,
+      "izoh": "Logarifmik funksiya asosi birdan katta bo'lsa o'suvchi, asosi 0 bilan 1 orasida bo'lsa kamayuvchi bo'ladi. Bu yerda 2, 5 va 10 asoslari birdan katta. Faqat 1/2 asos birdan kichik, demak y = log₁/₂x kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "osish-kamayish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#c367fb78"
+    },
+    {
+      "q": "Tajribada argument qiymati 3 dan 27 gacha ortdi. Shu vaqtda y = log₁/₃x funksiyaning qiymati qanday o'zgaradi?",
+      "v": [
+        "2 birlikka ortadi",
+        "2 birlikka kamayadi",
+        "3 birlikka kamayadi",
+        "O'zgarmay qoladi"
+      ],
+      "t": 1,
+      "izoh": "Avval chetki qiymatlarni hisoblaymiz: log₁/₃3 = −1, chunki (1/3)^(−1) = 3. Xuddi shunday log₁/₃27 = −3, chunki (1/3)^(−3) = 27. Qiymat −1 dan −3 ga o'tdi, ya'ni 2 birlikka kamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "osish-kamayish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#32b3cc11"
+    },
+    {
+      "q": "y = log₆x funksiyaning o'zgarish xarakteri haqidagi to'g'ri tasdiqni tanlang.",
+      "v": [
+        "Har qanday x da manfiy qiymat oladi",
+        "Butun aniqlanish sohasida kamayuvchi",
+        "x < 0 oraliqda o'suvchi",
+        "Butun aniqlanish sohasida o'suvchi"
+      ],
+      "t": 3,
+      "izoh": "Asos 6 birdan katta bo'lgani uchun funksiya butun aniqlanish sohasida o'suvchi. Manfiy x lar sohaga umuman kirmaydi, shuning uchun u yerda o'sish haqida gapirib bo'lmaydi. x > 1 bo'lganda qiymatlar musbat, demak funksiya doim manfiy emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "osish-kamayish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#4a47ec81"
+    },
+    {
+      "q": "Aholi o'sishini o'rganayotgan iqtisodchi y = log₈x va y = log₁/₈x funksiyalar grafigini bitta chizmada taqqosladi. Qaysi xulosa to'g'ri?",
+      "v": [
+        "Ikkalasi ham o'suvchi",
+        "Ikkalasi ham kamayuvchi",
+        "Grafiklar Ox o'qiga nisbatan simmetrik",
+        "Grafiklar Oy o'qiga nisbatan simmetrik"
+      ],
+      "t": 2,
+      "izoh": "Asoslarni taqqoslaymiz: log₁/₈x = −log₈x, chunki asosni teskarisiga almashtirish logarifm ishorasini o'zgartiradi. Har bir x uchun ikkinchi funksiya qiymati birinchisiga qarama-qarshi. Qarama-qarshi ordinatalar Ox o'qiga nisbatan simmetriyani beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "osish-kamayish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#5768413c"
+    },
+    {
+      "q": "Dilnoza bankdagi jamg'armasi o'sishini y = 4^x funksiya bilan yozdi. Shu funksiyaga teskari funksiyani ko'rsating.",
+      "v": [
+        "y = x⁴",
+        "y = logₓ4",
+        "y = 4^(−x)",
+        "y = log₄x"
+      ],
+      "t": 3,
+      "izoh": "Teskari funksiyani topish uchun y = 4^x tenglikda x ni y orqali ifodalaymiz. Logarifm ta'rifiga ko'ra x = log₄y bo'ladi. So'ng o'zgaruvchilar nomini almashtiramiz va y = log₄x hosil bo'ladi. Ko'rsatkichli funksiyaga teskari funksiya logarifmik funksiyadir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-funksiya",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#7109e3ce"
+    },
+    {
+      "q": "y = log₃x funksiya berilgan. Unga teskari bo'lgan funksiyani to'g'ri yozgan variantni tanlang.",
+      "v": [
+        "y = x³",
+        "y = 3^x",
+        "y = (1/3)^x",
+        "y = logₓ3"
+      ],
+      "t": 1,
+      "izoh": "y = log₃x tenglikni logarifm ta'rifi bo'yicha yozamiz: 3^y = x. Endi x va y nomlarini almashtiramiz va y = 3^x hosil bo'ladi. Demak logarifmik funksiyaga teskari funksiya shu asosdagi ko'rsatkichli funksiyadir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-funksiya",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#95fd4d91"
+    },
+    {
+      "q": "Kichik korxonada ishlab chiqarish hajmi y = 2^(x + 3) formula bo'yicha o'sadi. Bu funksiyaga teskari funksiya qanday ko'rinishga ega?",
+      "v": [
+        "y = log₂x − 3",
+        "y = log₂x + 3",
+        "y = log₂(x − 3)",
+        "y = log₂(x + 3)"
+      ],
+      "t": 0,
+      "izoh": "y = 2^(x + 3) tenglikni logarifm ta'rifi bo'yicha yozamiz: log₂y = x + 3. Bundan x = log₂y − 3 kelib chiqadi. Endi o'zgaruvchilar nomini almashtiramiz va teskari funksiya y = log₂x − 3 ko'rinishida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-funksiya",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#5024925b"
+    },
+    {
+      "q": "y = log₅(x − 2) funksiya berilgan. Unga teskari funksiyani to'g'ri yozgan variantni tanlang.",
+      "v": [
+        "y = 5^x − 2",
+        "y = 5^(x + 2)",
+        "y = 5^x + 2",
+        "y = 5^(x − 2)"
+      ],
+      "t": 2,
+      "izoh": "y = log₅(x − 2) tenglikdan logarifm ta'rifiga ko'ra 5^y = x − 2 hosil bo'ladi. Bundan x = 5^y + 2. O'zgaruvchilarni almashtirgach teskari funksiya y = 5^x + 2 ko'rinishini oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-funksiya",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#bfe1edde"
+    },
+    {
+      "q": "y = 3^x ko'rsatkichli funksiyaning qiymatlar sohasi (0; +∞) ga teng. Unga teskari funksiyaning aniqlanish sohasi nimadan iborat?",
+      "v": [
+        "(−∞; +∞)",
+        "(1; +∞)",
+        "(−∞; 0)",
+        "(0; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Teskari funksiyada asl funksiyaning qiymatlar sohasi aniqlanish sohasiga aylanadi. y = 3^x ning qiymatlar sohasi (0; +∞) edi. Demak teskari funksiya y = log₃x ning aniqlanish sohasi ham (0; +∞) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-funksiya",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#4ef68bcc"
+    },
+    {
+      "q": "Grafik daftarida y = 2^x va y = log₂x funksiyalarning grafiklari bitta koordinata tekisligiga chizilgan. Bu ikki grafik qaysi chiziqqa nisbatan simmetrik?",
+      "v": [
+        "Ox o'qiga nisbatan",
+        "Oy o'qiga nisbatan",
+        "y = x to'g'ri chiziqqa nisbatan",
+        "y = −x to'g'ri chiziqqa nisbatan"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkichli va logarifmik funksiyalar o'zaro teskari. Teskari funksiyani topishda x va y o'rin almashadi, ya'ni (p; q) nuqta (q; p) ga o'tadi. Bunday almashish y = x bissektrisaga nisbatan akslantirishdir. Demak grafiklar y = x ga nisbatan simmetrik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriya-y-teng-x",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#705ab018"
+    },
+    {
+      "q": "y = log₇x funksiyaning grafigi (49; 2) nuqtadan o'tadi. Unga teskari funksiyaning grafigi qaysi nuqtadan o'tishi shart?",
+      "v": [
+        "(49; 2)",
+        "(2; 49)",
+        "(2; 1/49)",
+        "(1/49; 2)"
+      ],
+      "t": 1,
+      "izoh": "Teskari funksiya grafigi berilgan grafikka y = x ga nisbatan simmetrik. Simmetriyada nuqtaning koordinatalari o'rin almashadi. Demak (49; 2) nuqta (2; 49) nuqtaga o'tadi. Haqiqatan ham 7² = 49, ya'ni y = 7^x grafigi (2; 49) dan o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-y-teng-x",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#0a0cc42a"
+    },
+    {
+      "q": "M(8; 3) nuqta y = log₂x grafigida yotadi. Unga y = x chiziqqa nisbatan simmetrik nuqta qanday koordinatalarga ega va qaysi grafikda yotadi?",
+      "v": [
+        "(3; 8), y = log₂x grafigida",
+        "(8; 3), y = 2^x grafigida",
+        "(−8; −3), y = 2^x grafigida",
+        "(3; 8), y = 2^x grafigida"
+      ],
+      "t": 3,
+      "izoh": "y = x ga nisbatan simmetriyada abssissa va ordinata o'rin almashadi, shuning uchun M(8; 3) nuqta (3; 8) ga o'tadi. Bu nuqta teskari funksiya grafigida yotadi. y = log₂x ga teskari funksiya y = 2^x va 2³ = 8, ya'ni nuqta unga tegishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetriya-y-teng-x",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#c08bd0f3"
+    },
+    {
+      "q": "y = log₄x funksiyaning grafigi A(64; 3) nuqtadan o'tadi. Teskari funksiya grafigidagi mos nuqtaning ordinatasi nechaga teng?",
+      "v": [
+        "64",
+        "3",
+        "4",
+        "1/64"
+      ],
+      "t": 0,
+      "izoh": "Teskari funksiya grafigida koordinatalar o'rin almashadi: A(64; 3) nuqta (3; 64) ga aylanadi. Bu nuqtaning ordinatasi 64 ga teng. Tekshiramiz: teskari funksiya y = 4^x va 4³ = 64, demak natija to'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-y-teng-x",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#034bfeda"
+    },
+    {
+      "q": "Quyidagi nuqtalardan qaysi biri y = log₃x funksiyaning grafigida yotadi: (9; 3), (27; 3), (3; 27) yoki (1; 3)?",
+      "v": [
+        "(9; 3)",
+        "(27; 3)",
+        "(3; 27)",
+        "(1; 3)"
+      ],
+      "t": 1,
+      "izoh": "Har bir nuqtaning abssissasini funksiyaga qo'yib ko'ramiz. log₃9 = 2, demak (9; 3) mos emas. log₃27 = 3, chunki 3³ = 27 — bu nuqta grafikda yotadi. log₃3 = 1 va log₃1 = 0, shuning uchun qolgan ikkitasi ham mos emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-nuqta-tekshirish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#a5dc90a5"
+    },
+    {
+      "q": "Kompyuter xotirasi hajmini o'rganayotgan Jasur y = log₂x grafigida B(128; b) nuqtani belgiladi. b nechaga teng?",
+      "v": [
+        "6",
+        "7",
+        "64",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "b = log₂128 ni topamiz. 128 sonini ikkining darajasi ko'rinishida yozamiz: 128 = 2⁷. Logarifm ta'rifiga ko'ra log₂2⁷ = 7. Demak b = 7 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-nuqta-tekshirish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#9b8289ad"
+    },
+    {
+      "q": "y = log₄x funksiyaning grafigi C(c; −2) nuqtadan o'tadi. c ning qiymatini toping.",
+      "v": [
+        "16",
+        "−16",
+        "1/16",
+        "−8"
+      ],
+      "t": 2,
+      "izoh": "log₄c = −2 tenglikni ta'rif bo'yicha yozamiz: c = 4^(−2). Manfiy daraja teskari qiymatni beradi: 4^(−2) = 1/4² = 1/16. Logarifm ostidagi son doim musbat bo'lgani uchun manfiy variantlar mumkin emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-nuqta-tekshirish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#d0cce7ed"
+    },
+    {
+      "q": "Asosi qanday bo'lishidan qat'i nazar, har qanday logarifmik funksiyaning grafigi bitta umumiy nuqtadan o'tadi. Shu nuqtani ko'rsating.",
+      "v": [
+        "(1; 0)",
+        "(0; 1)",
+        "(1; 1)",
+        "(0; 0)"
+      ],
+      "t": 0,
+      "izoh": "Har qanday a > 0 va a ≠ 1 uchun a⁰ = 1 bo'ladi, demak logₐ1 = 0. Ya'ni x = 1 bo'lganda funksiya qiymati nolga teng. Bu (1; 0) nuqtani beradi. x = 0 nuqta esa aniqlanish sohasiga umuman kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-nuqta-tekshirish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#aedcbb8e"
+    },
+    {
+      "q": "Doskada logarifmik funksiyaning grafigi chizilgan bo'lib, u (64; 3) nuqtadan o'tadi. Funksiyaning asosi nechaga teng?",
+      "v": [
+        "8",
+        "3",
+        "64",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "logₐ64 = 3 shartni ta'rif bo'yicha yozamiz: a³ = 64. Kubi 64 ga teng bo'lgan musbat son a = 4, chunki 4³ = 64. Demak grafik y = log₄x funksiyaga tegishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikdan-asos-topish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#c27b8ce6"
+    },
+    {
+      "q": "y = logₐx funksiyaning grafigi (32; 5) nuqtadan o'tishi ma'lum. Asos a ning qiymatini toping.",
+      "v": [
+        "5",
+        "2",
+        "6,4",
+        "32"
+      ],
+      "t": 1,
+      "izoh": "Shartdan logₐ32 = 5, ya'ni a⁵ = 32. Beshinchi darajasi 32 ga teng bo'lgan son a = 2, chunki 2⁵ = 32. 32 ni 5 ga bo'lish bu yerda ishlamaydi, chunki daraja bilan ko'paytirish bir xil amal emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikdan-asos-topish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#a24c09fb"
+    },
+    {
+      "q": "Kamayuvchi logarifmik funksiyaning grafigi (25; −2) nuqtadan o'tadi. Uning asosini toping.",
+      "v": [
+        "5",
+        "−5",
+        "1/5",
+        "1/25"
+      ],
+      "t": 2,
+      "izoh": "Shartdan a^(−2) = 25 bo'ladi, ya'ni 1/a² = 25. Bundan a² = 1/25 va musbat ildiz a = 1/5. Bu son 0 bilan 1 orasida yotadi, shuning uchun funksiya haqiqatan ham kamayuvchi. Asos manfiy bo'la olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafikdan-asos-topish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#7859b5af"
+    },
+    {
+      "q": "Chizmadan ko'rinishicha logarifmik funksiyaning grafigi (a; 1) va (216; 3) nuqtalardan o'tadi. a nechaga teng?",
+      "v": [
+        "3",
+        "72",
+        "6",
+        "216"
+      ],
+      "t": 2,
+      "izoh": "Asosni b deb belgilaymiz. Ikkinchi nuqtadan b³ = 216, demak b = 6. Birinchi nuqtada logarifm qiymati 1 ga teng, ya'ni a soni asosning o'ziga teng bo'ladi. Demak a = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafikdan-asos-topish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#09b94e38"
+    },
+    {
+      "q": "Ikki o'quvchi bitta kamayuvchi logarifmik funksiya grafigini chizdi va u (1/9; 2) nuqtadan o'tdi. Funksiyaning asosi qanday?",
+      "v": [
+        "3",
+        "1/3",
+        "9",
+        "1/9"
+      ],
+      "t": 1,
+      "izoh": "Shartdan logₐ(1/9) = 2, ya'ni a² = 1/9. Musbat ildiz a = 1/3 bo'ladi. Bu qiymat 0 bilan 1 orasida yotgani uchun funksiya kamayuvchi, bu shartga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikdan-asos-topish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#82920a4f"
+    },
+    {
+      "q": "y = log₂x funksiyaning grafigini qanday siljitsak, y = log₂(x − 5) funksiyaning grafigi hosil bo'ladi?",
+      "v": [
+        "Chapga 5 birlik siljitiladi",
+        "Yuqoriga 5 birlik siljitiladi",
+        "Pastga 5 birlik siljitiladi",
+        "O'ngga 5 birlik siljitiladi"
+      ],
+      "t": 3,
+      "izoh": "Argumentdan son ayirilganda grafik Ox o'qi bo'ylab musbat yo'nalishda siljiydi. Buni tekshirish oson: eski grafik (1; 0) dan o'tgan, yangisi esa x − 5 = 1, ya'ni (6; 0) dan o'tadi. Demak grafik o'ngga 5 birlik siljigan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "siljitish-gorizontal",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#45cad2ed"
+    },
+    {
+      "q": "y = lg(x + 4) funksiyaning grafigi y = lg x funksiyaning grafigidan qanday farq qiladi?",
+      "v": [
+        "O'ngga 4 birlik siljigan",
+        "Chapga 4 birlik siljigan",
+        "Yuqoriga 4 birlik siljigan",
+        "Pastga 4 birlik siljigan"
+      ],
+      "t": 1,
+      "izoh": "Argumentga musbat son qo'shilganda grafik Ox o'qi bo'ylab manfiy yo'nalishda siljiydi. y = lg x nol qiymatni x = 1 da olgan, yangi funksiya esa x + 4 = 1, ya'ni x = −3 da oladi. Nuqta chapga 4 birlik ko'chdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "siljitish-gorizontal",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#6afdec89"
+    },
+    {
+      "q": "y = log₄x funksiyaning grafigi chapga 3 birlik siljitildi. Hosil bo'lgan grafik qaysi funksiyaga tegishli?",
+      "v": [
+        "y = log₄(x + 3)",
+        "y = log₄(x − 3)",
+        "y = log₄x + 3",
+        "y = log₄x − 3"
+      ],
+      "t": 0,
+      "izoh": "Grafikni chapga siljitish uchun argumentga siljish qiymatini qo'shish kerak. Demak x o'rniga x + 3 yoziladi va y = log₄(x + 3) hosil bo'ladi. Funksiya qiymatiga son qo'shilsa, grafik gorizontal emas, vertikal siljigan bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljitish-gorizontal",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#bea4e043"
+    },
+    {
+      "q": "y = log₂(x − a) ko'rinishdagi funksiyaning grafigi (10; 3) nuqtadan o'tadi. a parametrning qiymatini toping.",
+      "v": [
+        "8",
+        "3",
+        "2",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Nuqtani funksiyaga qo'yamiz: log₂(10 − a) = 3. Ta'rifga ko'ra 10 − a = 2³ = 8. Bundan a = 10 − 8 = 2 kelib chiqadi. Tekshiramiz: log₂(10 − 2) = log₂8 = 3, shart bajarildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "siljitish-gorizontal",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#cf30bb5f"
+    },
+    {
+      "q": "Muhandis chizmasida y = log₃x funksiyaning grafigi 4 birlik yuqoriga ko'tarildi. Hosil bo'lgan grafik qaysi funksiyaga tegishli?",
+      "v": [
+        "y = log₃x + 4",
+        "y = log₃(x + 4)",
+        "y = log₃x − 4",
+        "y = log₃(x − 4)"
+      ],
+      "t": 0,
+      "izoh": "Grafikni vertikal ko'tarish uchun funksiya qiymatiga siljish qiymati qo'shiladi. Demak yangi funksiya y = log₃x + 4 bo'ladi. Argumentga son qo'shilsa, grafik gorizontal yo'nalishda siljigan bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "siljitish-vertikal",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#d4da2bc4"
+    },
+    {
+      "q": "y = log₅x − 6 funksiyaning grafigi y = log₅x funksiyaning grafigidan qanday farq qiladi?",
+      "v": [
+        "Yuqoriga 6 birlik siljigan",
+        "O'ngga 6 birlik siljigan",
+        "Chapga 6 birlik siljigan",
+        "Pastga 6 birlik siljigan"
+      ],
+      "t": 3,
+      "izoh": "Funksiya qiymatidan son ayirilsa, har bir nuqtaning ordinatasi shuncha kamayadi. Masalan (1; 0) nuqta (1; −6) ga o'tadi. Demak grafik Oy o'qi bo'ylab pastga 6 birlik siljigan. Aniqlanish sohasi esa o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "siljitish-vertikal",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#60999175"
+    },
+    {
+      "q": "Muallim y = lg x funksiyaning grafigini vertikal siljitdi va yangi grafik (100; 5) nuqtadan o'tdi. Grafik qaysi tomonga va necha birlik siljigan?",
+      "v": [
+        "3 birlik yuqoriga",
+        "3 birlik pastga",
+        "5 birlik yuqoriga",
+        "2 birlik yuqoriga"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki grafikda x = 100 bo'lganda lg100 = 2 edi. Yangi grafikda shu abssissada ordinata 5 ga teng. Ordinata 5 − 2 = 3 birlikka ortgan, demak siljish yuqoriga qarab 3 birlikni tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljitish-vertikal",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#236fd404"
+    },
+    {
+      "q": "y = log₂x + k ko'rinishdagi funksiyaning grafigi Ox o'qini x = 8 nuqtada kesib o'tadi. k parametrning qiymati qanday?",
+      "v": [
+        "3",
+        "8",
+        "−3",
+        "−8"
+      ],
+      "t": 2,
+      "izoh": "Ox o'qi bilan kesishishda ordinata nolga teng: log₂8 + k = 0. log₂8 = 3, chunki 2³ = 8. Demak 3 + k = 0 va k = −3 kelib chiqadi. Ishorani tushirib qoldirish tipik xato hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "siljitish-vertikal",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#2a9ac576"
+    },
+    {
+      "q": "y = log₆(x − 7) funksiyaning grafigi qaysi to'g'ri chiziqqa cheksiz yaqinlashadi?",
+      "v": [
+        "x = −7",
+        "y = 7",
+        "x = 7",
+        "x = 0"
+      ],
+      "t": 2,
+      "izoh": "Vertikal asimptota logarifm ostidagi ifoda nolga intilgan joyda paydo bo'ladi. x − 7 = 0 dan x = 7. x qiymati 7 ga o'ngdan yaqinlashganda funksiya qiymati cheksiz kamayadi. Demak asimptota x = 7 to'g'ri chiziq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asimptota",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#b29dc35e"
+    },
+    {
+      "q": "y = log₂(x + 5) − 1 funksiyaning grafigi uchun vertikal asimptota tenglamasini ko'rsating.",
+      "v": [
+        "x = 5",
+        "x = −5",
+        "x = −1",
+        "y = −1"
+      ],
+      "t": 1,
+      "izoh": "Asimptota argument nolga aylangan joyda bo'ladi: x + 5 = 0, bundan x = −5. Vertikal siljish (−1) asimptotaning o'rnini o'zgartirmaydi, u faqat grafikni pastga tushiradi. Demak javob x = −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asimptota",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#d73ad95f"
+    },
+    {
+      "q": "y = lg x funksiyaning grafigi koordinata o'qlaridan qaysi biriga cheksiz yaqinlashadi, ammo unga hech qachon tegmaydi?",
+      "v": [
+        "Ox o'qiga",
+        "Oy o'qiga",
+        "y = x chiziqqa",
+        "y = 1 chiziqqa"
+      ],
+      "t": 1,
+      "izoh": "x nolga o'ngdan yaqinlashganda lg x qiymati chegarasiz kamayadi va grafik pastga cho'ziladi. Bu vertikal chiziq esa aynan Oy o'qi, ya'ni x = 0. Grafik unga yaqinlashadi, lekin x = 0 aniqlanish sohasiga kirmagani uchun tegmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asimptota",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#089d9f2b"
+    },
+    {
+      "q": "Dastur y = log₃(2x − 9) funksiya grafigini chizadi. Chizmadagi vertikal asimptota qaysi to'g'ri chiziq bo'ladi?",
+      "v": [
+        "x = 4,5",
+        "x = 9",
+        "x = −4,5",
+        "x = 2"
+      ],
+      "t": 0,
+      "izoh": "Argumentni nolga tenglashtiramiz: 2x − 9 = 0. Bundan 2x = 9 va x = 4,5. Funksiya faqat x > 4,5 da aniqlangan, grafik esa shu chiziqqa o'ngdan yaqinlashadi. Demak asimptota x = 4,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asimptota",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#9329c546"
+    },
+    {
+      "q": "y = log₄(x − 1) funksiyaning grafigi Ox o'qini qaysi nuqtada kesib o'tadi?",
+      "v": [
+        "(1; 0)",
+        "(0; 2)",
+        "(5; 0)",
+        "(2; 0)"
+      ],
+      "t": 3,
+      "izoh": "Ox o'qi bilan kesishishda y = 0 bo'ladi: log₄(x − 1) = 0. Logarifm noldan iborat bo'lishi uchun argument birga teng bo'lsin: x − 1 = 1. Bundan x = 2 va kesishish nuqtasi (2; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-nuqta-Ox",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#18ac88e4"
+    },
+    {
+      "q": "Grafigi chizilgan y = log₂x − 3 funksiya Ox o'qini kesib o'tadigan nuqtaning abssissasi nechaga teng?",
+      "v": [
+        "3",
+        "6",
+        "8",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "y = 0 deb olamiz: log₂x − 3 = 0, ya'ni log₂x = 3. Logarifm ta'rifiga ko'ra x = 2³ = 8. Bu yerda 2 ni 3 ga ko'paytirish emas, aynan darajaga ko'tarish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-nuqta-Ox",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#62d22644"
+    },
+    {
+      "q": "Meteorologiya bo'limi bosim o'zgarishini y = lg(x + 90) − 2 funksiya bilan yozdi. Bu funksiya qaysi x qiymatida nolga aylanadi?",
+      "v": [
+        "10",
+        "100",
+        "−80",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Tenglamani tuzamiz: lg(x + 90) − 2 = 0, ya'ni lg(x + 90) = 2. Ta'rifga ko'ra x + 90 = 10² = 100. Bundan x = 100 − 90 = 10 kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-nuqta-Ox",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#274bfac5"
+    },
+    {
+      "q": "Iqtisodiy modelda y = log₃(x − 4) − 2 funksiya ishlatilgan. Uning grafigi Ox o'qini kesadigan nuqtaning abssissasini toping.",
+      "v": [
+        "9",
+        "6",
+        "22",
+        "13"
+      ],
+      "t": 3,
+      "izoh": "log₃(x − 4) − 2 = 0 dan log₃(x − 4) = 2 hosil bo'ladi. Ta'rifga ko'ra x − 4 = 3² = 9. Demak x = 9 + 4 = 13. Ko'p o'quvchi 4 ni qo'shishni unutib, 9 ni javob deb oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nol-nuqta-Ox",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#62b75c6b"
+    },
+    {
+      "q": "y = log₅x funksiyaning qiymatlar sohasi nimadan iborat?",
+      "v": [
+        "(0; +∞)",
+        "(−∞; +∞)",
+        "(−∞; 0)",
+        "[0; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Logarifmik funksiya ixtiyoriy haqiqiy qiymatni qabul qila oladi. Masalan 5^(−10) juda kichik musbat son bo'lib, unda funksiya qiymati −10 ga teng. Argument yetarlicha katta bo'lsa, qiymat ham istalgancha katta bo'ladi. Demak qiymatlar sohasi (−∞; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#ecde51b3"
+    },
+    {
+      "q": "y = log₂(x − 3) funksiya qanday sonlarni qiymat sifatida qabul qila oladi?",
+      "v": [
+        "Faqat musbat sonlarni",
+        "Faqat manfiy sonlarni",
+        "Barcha haqiqiy sonlarni",
+        "3 dan katta sonlarni"
+      ],
+      "t": 2,
+      "izoh": "Gorizontal siljish qiymatlar sohasiga ta'sir qilmaydi, u faqat aniqlanish sohasini o'zgartiradi. x soni 3 ga yaqinlashganda funksiya cheksiz kamayadi, x katta bo'lganda cheksiz ortadi. Demak funksiya barcha haqiqiy sonlarni qabul qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#a7e381c1"
+    },
+    {
+      "q": "Muhandis y = log₂x funksiyani faqat [4; 64] kesmada kuzatmoqda. Shu kesmada funksiya qanday qiymatlar to'plamini qabul qiladi?",
+      "v": [
+        "[4; 64]",
+        "[2; 32]",
+        "[2; 6]",
+        "[1; 6]"
+      ],
+      "t": 2,
+      "izoh": "Asos 2 birdan katta, demak funksiya o'suvchi va eng kichik qiymatni kesma boshida oladi. log₂4 = 2 va log₂64 = 6, chunki 2⁶ = 64. O'suvchi funksiya oraliqni uzluksiz qoplaydi, shuning uchun qiymatlar to'plami [2; 6].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#c9098d37"
+    },
+    {
+      "q": "y = log₃x funksiyaning grafigini Ox o'qiga nisbatan aks ettirsak, qaysi funksiyaning grafigi hosil bo'ladi?",
+      "v": [
+        "y = −log₃x",
+        "y = log₃(−x)",
+        "y = 3^x",
+        "y = log₃(x − 1)"
+      ],
+      "t": 0,
+      "izoh": "Ox o'qiga nisbatan akslantirishda har bir nuqtaning ordinatasi qarama-qarshi songa almashadi. Demak yangi funksiya y = −log₃x bo'ladi. Argument oldidagi minus esa Oy o'qiga nisbatan akslantirishni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "akslantirish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#31443788"
+    },
+    {
+      "q": "y = lg(−x) funksiyaning grafigi y = lg x funksiyaning grafigidan qanday almashtirish yordamida hosil qilinadi?",
+      "v": [
+        "Ox o'qiga nisbatan akslantirish",
+        "Chapga 1 birlik siljitish",
+        "y = x chiziqqa nisbatan akslantirish",
+        "Oy o'qiga nisbatan akslantirish"
+      ],
+      "t": 3,
+      "izoh": "Argument oldidagi minus har bir nuqtaning abssissasini qarama-qarshi songa almashtiradi. Masalan (10; 1) nuqta (−10; 1) ga o'tadi, ordinata esa o'zgarmaydi. Bunday almashtirish Oy o'qiga nisbatan akslantirishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "akslantirish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#67bd876d"
+    },
+    {
+      "q": "y = log₂(−x) funksiyaning aniqlanish sohasini ko'rsating.",
+      "v": [
+        "(0; +∞)",
+        "(−∞; 0)",
+        "(−∞; +∞)",
+        "(−2; 0)"
+      ],
+      "t": 1,
+      "izoh": "Logarifm ostidagi ifoda musbat bo'lishi kerak: −x > 0. Ikkala tomonni (−1) ga ko'paytirsak tengsizlik ishorasi almashadi va x < 0 hosil bo'ladi. Demak funksiya faqat manfiy x larda aniqlangan, ya'ni (−∞; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "akslantirish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#52645ee9"
+    },
+    {
+      "q": "y = −log₅x funksiyaning o'sish xarakterini va grafigi o'tadigan nuqtani to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "Kamayuvchi, (1; 0) nuqtadan o'tadi",
+        "O'suvchi, (1; 0) nuqtadan o'tadi",
+        "Kamayuvchi, (0; 1) nuqtadan o'tadi",
+        "O'suvchi, (5; 1) nuqtadan o'tadi"
+      ],
+      "t": 0,
+      "izoh": "y = log₅x o'suvchi edi, minus ishora grafikni Ox o'qiga nisbatan ag'daradi va funksiya kamayuvchi bo'ladi. x = 1 bo'lganda log₅1 = 0, demak −0 = 0. Shuning uchun grafik (1; 0) nuqtadan o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "akslantirish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#b09b12d3"
+    },
+    {
+      "q": "Kompyuter dasturi y = lg|x| funksiyaning grafigini chizdi. Bu grafik qanday simmetriyaga ega bo'ladi?",
+      "v": [
+        "Ox o'qiga nisbatan simmetrik",
+        "Koordinata boshiga nisbatan simmetrik",
+        "Oy o'qiga nisbatan simmetrik",
+        "Simmetriyaga ega emas"
+      ],
+      "t": 2,
+      "izoh": "Modul ishorasi tufayli x va −x da argument bir xil bo'ladi, ya'ni funksiya qiymati ham bir xil. Demak funksiya juft va uning grafigi Oy o'qiga nisbatan simmetrik. Grafik ikki tarmoqdan iborat bo'lib, x = 0 nuqta sohaga kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "akslantirish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#ab6118b7"
+    },
+    {
+      "q": "Kimyo laboratoriyasida eritmaning kislotaliligi pH = −lg C funksiya bilan topiladi, bunda C — vodorod ionlari konsentratsiyasi. C = 0,0001 mol/l bo'lgan eritma uchun pH ni hisoblang.",
+      "v": [
+        "pH = 4",
+        "pH = −4",
+        "pH = 3",
+        "pH = 0,0001"
+      ],
+      "t": 0,
+      "izoh": "Avval 0,0001 sonini o'nning darajasi ko'rinishida yozamiz: 0,0001 = 10^(−4). Demak lg C = −4 bo'ladi. Formulada oldida minus turgani uchun pH = −(−4) = 4. Ikki minus qo'shishga aylanadi, shuning uchun natija musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olchov-shkalasi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#a6bdd849"
+    },
+    {
+      "q": "Zilzila kuchi M = lg(A/A₀) logarifmik funksiya bilan baholanadi. Qayd etilgan tebranish amplitudasi A₀ dan 100 000 marta katta bo'lsa, magnituda nechaga teng bo'ladi?",
+      "v": [
+        "6 ball",
+        "10 ball",
+        "4 ball",
+        "5 ball"
+      ],
+      "t": 3,
+      "izoh": "Shartga ko'ra A/A₀ = 100 000. Bu sonni o'nning darajasi ko'rinishida yozamiz: 100 000 = 10⁵. Demak M = lg10⁵ = 5. Nollarni sanashda adashish eng ko'p uchraydigan xato hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olchov-shkalasi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#79dc66a9"
+    },
+    {
+      "q": "Tovush kuchi L = 10·lg(I/I₀) detsibelda o'lchanadi. Kutubxona zalidagi shovqin intensivligi I₀ dan 1000 marta katta bo'lsa, L nechaga teng?",
+      "v": [
+        "3 dB",
+        "30 dB",
+        "300 dB",
+        "100 dB"
+      ],
+      "t": 1,
+      "izoh": "Avval logarifmni hisoblaymiz: lg1000 = 3, chunki 10³ = 1000. So'ng formuladagi 10 ga ko'paytiramiz: L = 10·3 = 30. Ko'paytirishni unutish yoki 1000 ni to'g'ridan-to'g'ri qo'yish tipik xatolardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-olchov-shkalasi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#526e290b"
+    },
+    {
+      "q": "Ikki eritmadan birining vodorod ionlari konsentratsiyasi ikkinchisidan 100 marta katta. Ularning pH ko'rsatkichlari bir-biridan qanchaga farq qiladi?",
+      "v": [
+        "100 birlikka",
+        "10 birlikka",
+        "2 birlikka",
+        "0,01 birlikka"
+      ],
+      "t": 2,
+      "izoh": "pH = −lg C bo'lgani uchun konsentratsiya 100 marta ortsa, lg C qiymati lg100 = 2 birlikka ortadi. Minus ishora tufayli pH aynan 2 birlikka kamayadi. Demak ko'rsatkichlar orasidagi farq 2 birlikni tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-olchov-shkalasi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#70fcebd2"
+    },
+    {
+      "q": "Zavod sexida tovush kuchi 60 dB dan 90 dB gacha ko'tarildi. L = 10·lg(I/I₀) formulaga ko'ra tovush intensivligi necha marta ortgan?",
+      "v": [
+        "30 marta",
+        "100 marta",
+        "2,5 marta",
+        "1000 marta"
+      ],
+      "t": 3,
+      "izoh": "Ikki holat uchun formulani ayiramiz: 90 − 60 = 10·lg k, bunda k — intensivlik necha marta ortgani. Bundan 10·lg k = 30, ya'ni lg k = 3. Logarifm ta'rifiga ko'ra k = 10³ = 1000. Detsibeldagi farqni to'g'ridan-to'g'ri javob deb olish xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-olchov-shkalasi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#56e384b1"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni har soatda ikki baravar ortadi va dastlab 500 ta edi. Ularning soni N ga yetish vaqti t = log₂(N/500) soat. N = 32 000 bo'lganda t nechaga teng?",
+      "v": [
+        "6 soat",
+        "64 soat",
+        "5 soat",
+        "16 soat"
+      ],
+      "t": 0,
+      "izoh": "Avval nisbatni topamiz: 32 000 : 500 = 64. Endi t = log₂64 ni hisoblaymiz. 64 = 2⁶ bo'lgani uchun log₂64 = 6. Demak bakteriyalar soni 6 soatda shu darajaga yetadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-osish-vaqti",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#71088514"
+    },
+    {
+      "q": "Fermer xo'jaligining sarmoyasi har yili uch baravar ortadi va dastlab 200 000 000 so'm edi. Sarmoya 16 200 000 000 so'mga yetishi uchun necha yil kerak bo'ladi?",
+      "v": [
+        "81 yil",
+        "4 yil",
+        "3 yil",
+        "5 yil"
+      ],
+      "t": 1,
+      "izoh": "Sarmoya necha marta ortganini topamiz: 16 200 000 000 : 200 000 000 = 81. Har yili uch baravar ortgani uchun kerakli vaqt log₃81 ga teng. 81 = 3⁴ bo'lgani sababli log₃81 = 4. Demak 4 yil kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-osish-vaqti",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#e901012b"
+    },
+    {
+      "q": "Radioaktiv moddaning massasi har yili ikki barobar kamayadi. Boshlang'ich massa 96 g bo'lsa, u 3 g ga tushishi uchun qancha vaqt o'tishi kerak?",
+      "v": [
+        "32 yil",
+        "6 yil",
+        "5 yil",
+        "4 yil"
+      ],
+      "t": 2,
+      "izoh": "Massa necha marta kamayganini topamiz: 96 : 3 = 32. Har yili ikki barobar kamayish sonida yillar soni log₂32 ga teng bo'ladi. 32 = 2⁵ bo'lgani uchun log₂32 = 5. Demak 5 yil kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-osish-vaqti",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#373aca46"
+    },
+    {
+      "q": "Serverdagi ma'lumot hajmi har oyda to'rt baravar ortadi va boshida 5 GB edi. Hajm 1280 GB ga yetadigan oy tartib raqamini toping.",
+      "v": [
+        "256 oy",
+        "5 oy",
+        "64 oy",
+        "4 oy"
+      ],
+      "t": 3,
+      "izoh": "Hajm necha marta ortganini hisoblaymiz: 1280 : 5 = 256. Har oyda to'rt baravar ortgani uchun oylar soni log₄256 ga teng. 256 = 4⁴ bo'lgani sababli log₄256 = 4. Demak 4 oy o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-osish-vaqti",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#eef623d0"
+    },
+    {
+      "q": "Tumandagi aholi soni har 10 yilda ikki baravar ortmoqda va hozir 40 000 kishi. Aholi 640 000 kishiga yetishi uchun necha yil kerak?",
+      "v": [
+        "40 yil",
+        "16 yil",
+        "4 yil",
+        "160 yil"
+      ],
+      "t": 0,
+      "izoh": "Aholi necha marta ortishini topamiz: 640 000 : 40 000 = 16. Ikki baravar ortishlar soni log₂16 = 4 ga teng, chunki 2⁴ = 16. Har bir ortish 10 yil davom etadi, demak jami 4·10 = 40 yil kerak. Davrni yilga aylantirmaslik tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-osish-vaqti",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#2644a182"
+    },
+    {
+      "q": "Do'kon egasi Zilola sotuv hajmini S = 20·log₃x + 5 funksiya bilan baholaydi, bunda x — reklama kunlari soni. x = 27 bo'lganda S nechaga teng?",
+      "v": [
+        "65",
+        "60",
+        "45",
+        "185"
+      ],
+      "t": 0,
+      "izoh": "Avval logarifmni hisoblaymiz: log₃27 = 3, chunki 3³ = 27. So'ng 20·3 = 60 topiladi. Nihoyat qo'shiluvchini qo'shamiz: 60 + 5 = 65. Oxirgi qadamni tashlab ketish natijani 60 ga aylantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-funksiya-qiymati",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#3ad872bb"
+    },
+    {
+      "q": "Suv omborida sath h = 12 + log₂t metr bilan o'lchanadi, bunda t — quyilish boshlangandan beri o'tgan soat. t = 64 soatda sath qanday bo'ladi?",
+      "v": [
+        "76 m",
+        "12 m",
+        "18 m",
+        "20 m"
+      ],
+      "t": 2,
+      "izoh": "log₂64 ni topamiz: 64 = 2⁶, demak logarifm 6 ga teng. Endi sathni hisoblaymiz: h = 12 + 6 = 18 metr. Soat sonini logarifmsiz qo'shib yuborish 76 kabi noto'g'ri natijaga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-funksiya-qiymati",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#d0c88d00"
+    },
+    {
+      "q": "Dorining qondagi miqdori C = 50 − 10·lg t formula bilan kamayadi, bunda t — dori qabul qilingandan keyingi daqiqalar soni. t = 100 daqiqada miqdor qancha bo'ladi?",
+      "v": [
+        "40 mg",
+        "30 mg",
+        "20 mg",
+        "10 mg"
+      ],
+      "t": 1,
+      "izoh": "lg100 = 2, chunki 10² = 100. Ayiriluvchini hisoblaymiz: 10·2 = 20. Endi C = 50 − 20 = 30 mg. Faqat ayiriluvchini javob deb olish yoki lg100 ni 1 deb hisoblash tipik xatolardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-funksiya-qiymati",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#9c66cae3"
+    },
+    {
+      "q": "Abituriyentning tayyorgarlik darajasi D = 15·log₅x funksiya bilan baholanadi, bunda x — bajarilgan mashqlar soni. D = 45 bo'lishi uchun nechta mashq bajarilishi kerak?",
+      "v": [
+        "25",
+        "15",
+        "225",
+        "125"
+      ],
+      "t": 3,
+      "izoh": "Tenglamani tuzamiz: 15·log₅x = 45, bundan log₅x = 3. Logarifm ta'rifiga ko'ra x = 5³ = 125. Bu yerda 45 ni 15 ga bo'lgach, natijani darajaga ko'tarish kerak, ko'paytirish emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-funksiya-qiymati",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#09a74407"
+    },
+    {
+      "q": "Ustaxonada ish unumdorligi P = 8·log₂(x + 4) funksiya bilan o'lchanadi, bunda x — ishlangan soat. x = 12 bo'lganda unumdorlik nechaga teng?",
+      "v": [
+        "32",
+        "24",
+        "96",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Avval argumentni hisoblaymiz: x + 4 = 12 + 4 = 16. So'ng log₂16 = 4, chunki 2⁴ = 16. Nihoyat P = 8·4 = 32. Qavs ichidagi qo'shishni unutish natijani buzadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-funksiya-qiymati",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#384834c0"
+    },
+    {
+      "q": "y = log₃x funksiya [9; 243] kesmada qaraladi. Funksiya eng katta qiymatini qaysi nuqtada oladi va u nechaga teng?",
+      "v": [
+        "x = 243 da, 5 ga teng",
+        "x = 9 da, 2 ga teng",
+        "x = 243 da, 3 ga teng",
+        "x = 9 da, 5 ga teng"
+      ],
+      "t": 0,
+      "izoh": "Asos 3 birdan katta, demak funksiya o'suvchi va eng katta qiymatni kesmaning o'ng chetida oladi. x = 243 bo'lganda log₃243 = 5, chunki 3⁵ = 243. Demak eng katta qiymat 5 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-eng-katta-kichik",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#ab110878"
+    },
+    {
+      "q": "y = log₁/₂x funksiya [2; 16] kesmada berilgan. Uning shu kesmadagi eng katta qiymatini toping.",
+      "v": [
+        "−4",
+        "1",
+        "4",
+        "−1"
+      ],
+      "t": 3,
+      "izoh": "Asos 1/2 birdan kichik, shuning uchun funksiya kamayuvchi va eng katta qiymatni kesma boshida oladi. x = 2 bo'lganda log₁/₂2 = −1, chunki (1/2)^(−1) = 2. Demak eng katta qiymat −1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monotonlik-eng-katta-kichik",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#570b3e11"
+    },
+    {
+      "q": "y = log₆x funksiyaning o'suvchi ekanligidan foydalanib, log₆13 va log₆29 sonlarini taqqoslang.",
+      "v": [
+        "log₆13 > log₆29",
+        "log₆13 < log₆29",
+        "log₆13 = log₆29",
+        "Taqqoslab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Asos 6 birdan katta bo'lgani uchun funksiya o'suvchi. O'suvchi funksiyada kattaroq argumentga kattaroq qiymat mos keladi. 13 < 29 bo'lgani sababli log₆13 < log₆29. Sonlarni to'liq hisoblash shart emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-eng-katta-kichik",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#106b489e"
+    },
+    {
+      "q": "Kamayuvchi funksiya xossasidan foydalanib log₁/₄9 va log₁/₄17 sonlarini taqqoslang va to'g'ri javobni belgilang.",
+      "v": [
+        "log₁/₄9 > log₁/₄17",
+        "log₁/₄9 < log₁/₄17",
+        "Ular o'zaro teng",
+        "Ikkalasi ham musbat"
+      ],
+      "t": 0,
+      "izoh": "Asos 1/4 birdan kichik, demak funksiya kamayuvchi. Kamayuvchi funksiyada kattaroq argumentga kichikroq qiymat mos keladi. 9 < 17 bo'lgani uchun log₁/₄9 > log₁/₄17. Ikkala son ham manfiy, chunki argumentlar birdan katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-eng-katta-kichik",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#cc77e4d6"
+    },
+    {
+      "q": "Sovutish kamerasida harorat T = 25 − 6·log₂x funksiya bilan o'zgaradi, bunda x soat va u [2; 32] oraliqda. Kamerada eng past harorat qanday bo'ladi?",
+      "v": [
+        "13 °C",
+        "19 °C",
+        "−5 °C",
+        "−11 °C"
+      ],
+      "t": 2,
+      "izoh": "Logarifm oldida minus turgani uchun T eng past qiymatni logarifm eng katta bo'lganda oladi. Bu x = 32 da yuz beradi: log₂32 = 5. Demak T = 25 − 6·5 = 25 − 30 = −5 °C. Kesmaning chap chetini olish eng yuqori haroratni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monotonlik-eng-katta-kichik",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#14d2cb33"
+    },
+    {
+      "q": "Bitta koordinata tekisligiga y = log₂x va y = log₅x funksiyalarning grafiklari chizildi. x > 1 bo'lgan sohada qaysi grafik yuqoriroqda yotadi?",
+      "v": [
+        "y = log₂x grafigi",
+        "y = log₅x grafigi",
+        "Ikkala grafik ustma-ust tushadi",
+        "x > 1 da ikkalasi ham manfiy"
+      ],
+      "t": 0,
+      "izoh": "Tekshirish uchun qulay nuqtani olamiz, masalan x = 32. log₂32 = 5, log₅32 esa 2 dan biroz katta, chunki 5² = 25 va 5³ = 125. Demak kichikroq asosli logarifm tezroq o'sadi va uning grafigi yuqorida yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafiklarni-solishtirish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#33f696cc"
+    },
+    {
+      "q": "0 < x < 1 oraliqda y = log₃x va y = log₉x funksiyalarning grafiklaridan qaysi biri pastroqda joylashadi?",
+      "v": [
+        "y = log₉x grafigi",
+        "y = log₃x grafigi",
+        "Ikkalasi bir xil balandlikda",
+        "Bu oraliqda ikkalasi ham musbat"
+      ],
+      "t": 1,
+      "izoh": "Sinov nuqtasi sifatida x = 1/9 ni olamiz. log₃(1/9) = −2, chunki 3^(−2) = 1/9. Xuddi shunday log₉(1/9) = −1. Manfiy sonlardan −2 kichikroq, demak y = log₃x grafigi pastroqda yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafiklarni-solishtirish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#331b139b"
+    },
+    {
+      "q": "y = log₄x va y = log₄x + 2 funksiyalarning grafiklari orasidagi vertikal masofa argument ortishi bilan qanday o'zgaradi?",
+      "v": [
+        "x ortgan sari kamayadi",
+        "x ortgan sari ortadi",
+        "Grafiklar bir nuqtada kesishadi",
+        "Doim 2 birlikka teng qoladi"
+      ],
+      "t": 3,
+      "izoh": "Ikki funksiya qiymatlari ayirmasini olamiz: (log₄x + 2) − log₄x = 2. Bu ayirma x ga umuman bog'liq emas. Demak ikkinchi grafik birinchisidan doim 2 birlik yuqorida turadi va ular hech qachon kesishmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafiklarni-solishtirish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#d11399a9"
+    },
+    {
+      "q": "y = log₂x va y = log₂(x − 3) funksiyalarning grafiklari bir-birini kesib o'tadimi? Javobingizni asoslang.",
+      "v": [
+        "Ha, bitta nuqtada kesishadi",
+        "Ha, ikkita nuqtada kesishadi",
+        "Yo'q, hech qayerda kesishmaydi",
+        "Faqat x = 3 nuqtada kesishadi"
+      ],
+      "t": 2,
+      "izoh": "Kesishish uchun log₂x = log₂(x − 3) bo'lishi kerak. Bir xil asosli logarifmlar teng bo'lsa argumentlar ham teng: x = x − 3. Bundan 0 = −3 kelib chiqadi, bu esa mumkin emas. Gorizontal siljigan grafik asl grafik bilan kesishmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafiklarni-solishtirish",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#623a3854"
+    },
+    {
+      "q": "y = log₃x funksiyaning grafigi y = 2 gorizontal to'g'ri chiziq bilan qaysi nuqtada kesishadi?",
+      "v": [
+        "(2; 9)",
+        "(6; 2)",
+        "(8; 2)",
+        "(9; 2)"
+      ],
+      "t": 3,
+      "izoh": "Kesishishda ordinatalar teng: log₃x = 2. Logarifm ta'rifiga ko'ra x = 3² = 9. Demak kesishish nuqtasi (9; 2). Koordinatalarni o'rin almashtirib yozish tipik xato hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-kesishish-nuqtasi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#2510bea9"
+    },
+    {
+      "q": "Chizmada y = log₂x grafigi va y = 4 to'g'ri chiziq berilgan. Ular kesishadigan nuqtaning abssissasi nechaga teng?",
+      "v": [
+        "8",
+        "16",
+        "6",
+        "32"
+      ],
+      "t": 1,
+      "izoh": "log₂x = 4 tenglamani yechamiz. Ta'rifga ko'ra x = 2⁴ = 16. Bu yerda 2 ni 4 ga ko'paytirish emas, aynan to'rtinchi darajaga ko'tarish kerak, aks holda 8 kabi noto'g'ri natija chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-kesishish-nuqtasi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#a751ffb3"
+    },
+    {
+      "q": "y = log₅x va y = log₅(2x − 3) funksiyalarning grafiklari qaysi nuqtada kesishadi?",
+      "v": [
+        "(3; log₅3)",
+        "(1; 0)",
+        "(3; 0)",
+        "Grafiklar kesishmaydi"
+      ],
+      "t": 0,
+      "izoh": "Asoslar bir xil bo'lgani uchun argumentlarni tenglashtiramiz: x = 2x − 3, bundan x = 3. Bu qiymat ikkala aniqlanish sohasiga ham kiradi, chunki 2·3 − 3 = 3 > 0. Ordinata esa log₅3 ga teng, demak nuqta (3; log₅3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-kesishish-nuqtasi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#cef90b81"
+    },
+    {
+      "q": "y = lg x funksiyaning grafigi koordinata o'qlari bilan qanday joylashgan? To'g'ri tasdiqni tanlang.",
+      "v": [
+        "(0; 1) nuqtada kesishadi va Oy o'qini ham kesadi",
+        "(1; 0) va (0; 1) nuqtalarning ikkalasida kesishadi",
+        "(1; 0) nuqtada Ox o'qini kesadi, Oy o'qi bilan kesishmaydi",
+        "Ikkala o'qni ham umuman kesmaydi"
+      ],
+      "t": 2,
+      "izoh": "lg1 = 0 bo'lgani uchun grafik Ox o'qini (1; 0) nuqtada kesadi. Oy o'qi bilan kesishish uchun x = 0 kerak, lekin bu qiymat aniqlanish sohasiga kirmaydi. Grafik Oy o'qiga faqat cheksiz yaqinlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-kesishish-nuqtasi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#73087f26"
+    },
+    {
+      "q": "y = log₂x funksiyaning grafigidan y = log₂(x + 3) − 1 grafigini hosil qilish uchun qanday almashtirishlar ketma-ket bajariladi?",
+      "v": [
+        "Chapga 3 birlik, so'ng pastga 1 birlik siljitish",
+        "O'ngga 3 birlik, so'ng pastga 1 birlik siljitish",
+        "Chapga 3 birlik, so'ng yuqoriga 1 birlik siljitish",
+        "O'ngga 1 birlik, so'ng pastga 3 birlik siljitish"
+      ],
+      "t": 0,
+      "izoh": "Argumentga 3 qo'shilgani grafikni Ox o'qi bo'ylab chapga 3 birlik siljitadi. Funksiya qiymatidan 1 ayirilgani esa grafikni pastga 1 birlik tushiradi. Demak avval chapga 3 birlik, so'ngra pastga 1 birlik siljitiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirishlar-ketma-ketligi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#15349a29"
+    },
+    {
+      "q": "y = lg x funksiyaning grafigi o'ngga 2 birlik va yuqoriga 5 birlik siljitildi. Hosil bo'lgan grafik qaysi funksiyaga tegishli?",
+      "v": [
+        "y = lg(x + 2) + 5",
+        "y = lg(x − 2) + 5",
+        "y = lg(x − 2) − 5",
+        "y = lg(x + 5) + 2"
+      ],
+      "t": 1,
+      "izoh": "O'ngga siljitish uchun argumentdan siljish qiymati ayiriladi, ya'ni x o'rniga x − 2 yoziladi. Yuqoriga siljitish uchun funksiya qiymatiga 5 qo'shiladi. Natijada y = lg(x − 2) + 5 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "almashtirishlar-ketma-ketligi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#8629106a"
+    },
+    {
+      "q": "y = −log₃(x − 1) funksiyaning grafigini y = log₃x grafigidan hosil qilish uchun qaysi ikki amal bajarilishi kerak?",
+      "v": [
+        "Chapga 1 birlik siljitish va Ox o'qiga nisbatan akslantirish",
+        "O'ngga 1 birlik siljitish va Oy o'qiga nisbatan akslantirish",
+        "Pastga 1 birlik siljitish va Oy o'qiga nisbatan akslantirish",
+        "O'ngga 1 birlik siljitish va Ox o'qiga nisbatan akslantirish"
+      ],
+      "t": 3,
+      "izoh": "Argumentdagi x − 1 grafikni o'ngga 1 birlik siljitadi. Butun ifoda oldidagi minus esa har bir ordinatani qarama-qarshi songa almashtiradi, ya'ni grafikni Ox o'qiga nisbatan ag'daradi. Demak o'ngga siljitish va Ox o'qiga nisbatan akslantirish bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirishlar-ketma-ketligi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#4fdfe2c8"
+    },
+    {
+      "q": "y = log₅x funksiyaning grafigi avval Ox o'qiga nisbatan akslantirildi, so'ng chapga 2 birlik siljitildi. Hosil bo'lgan grafik qaysi funksiyaga tegishli?",
+      "v": [
+        "y = −log₅(x + 2)",
+        "y = −log₅(x − 2)",
+        "y = log₅(x + 2)",
+        "y = −log₅x + 2"
+      ],
+      "t": 0,
+      "izoh": "Ox o'qiga nisbatan akslantirish y ni qarama-qarshi ishoraga o'zgartiradi: y = −log₅x. Chapga 2 birlik siljitishda esa x o'rniga x + 2 qo'yiladi, ya'ni y = −log₅(x + 2). Tekshiramiz: asimptota x + 2 = 0 dan x = −2, x = −1 da y = −log₅1 = 0. Siljitishni x dan tashqarida bajarish yoki chapga siljitishda x − 2 yozish tipik xatolardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirishlar-ketma-ketligi",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#8b241dd7"
+    },
+    {
+      "q": "Funksiyaning o'suvchi ekanligidan foydalanib log₄x > 2 tengsizlikni yeching.",
+      "v": [
+        "(16; +∞)",
+        "(8; +∞)",
+        "(0; 16)",
+        "(2; +∞)"
+      ],
+      "t": 0,
+      "izoh": "O'ng tomonni bir xil asosga keltiramiz: 2 = log₄16. Funksiya o'suvchi bo'lgani uchun logarifmlar tengsizligi argumentlar tengsizligiga o'tadi: x > 16. Aniqlanish sohasi x > 0 shartni ham talab qiladi, u avtomatik bajariladi. Javob (16; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizlik-monotonlik",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#b0540f03"
+    },
+    {
+      "q": "Kamayuvchi funksiya xossasidan foydalanib log₁/₃x > 1 tengsizlikning yechimini toping.",
+      "v": [
+        "(1/3; +∞)",
+        "(0; 3)",
+        "(0; 1/3)",
+        "(3; +∞)"
+      ],
+      "t": 2,
+      "izoh": "O'ng tomonni logarifm ko'rinishida yozamiz: 1 = log₁/₃(1/3). Asos birdan kichik, shuning uchun tengsizlik ishorasi teskarisiga almashadi: x < 1/3. Aniqlanish sohasidan x > 0 shart qo'shiladi. Demak yechim (0; 1/3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-monotonlik",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#4879a0a0"
+    },
+    {
+      "q": "y = log₂x funksiyaning grafigi y = 3 to'g'ri chiziqdan pastda joylashadigan barcha x qiymatlarini toping.",
+      "v": [
+        "(8; +∞)",
+        "(0; 8)",
+        "(0; 6)",
+        "(−∞; 8)"
+      ],
+      "t": 1,
+      "izoh": "Shart log₂x < 3 ko'rinishida yoziladi. O'ng tomonni log₂8 deb almashtiramiz, chunki 2³ = 8. Funksiya o'suvchi bo'lgani uchun x < 8. Aniqlanish sohasidan x > 0, demak yechim (0; 8) oraliq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-monotonlik",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#ac88b4f2"
+    },
+    {
+      "q": "lg(x − 5) < 1 tengsizlikning yechimlar to'plamini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "(−∞; 15)",
+        "(5; 10)",
+        "(15; +∞)",
+        "(5; 15)"
+      ],
+      "t": 3,
+      "izoh": "Avval aniqlanish sohasini yozamiz: x − 5 > 0, ya'ni x > 5. So'ng 1 = lg10 deb almashtiramiz va o'suvchilikdan x − 5 < 10, ya'ni x < 15 hosil bo'ladi. Ikki shartni birlashtirsak 5 < x < 15. Aniqlanish sohasini unutish keng oraliqqa olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tengsizlik-monotonlik",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#c1d5f449"
+    },
+    {
+      "q": "y = logₐx funksiyaning grafigi (8; 3) nuqtadan o'tadi. Bu grafik 2 birlik yuqoriga siljitilsa, x = 8 dagi ordinata nechaga teng bo'ladi?",
+      "v": [
+        "3",
+        "5",
+        "6",
+        "10"
+      ],
+      "t": 1,
+      "izoh": "Avval asosni topamiz: a³ = 8, demak a = 2. Siljitishdan keyin funksiya y = log₂x + 2 ko'rinishini oladi. x = 8 bo'lganda log₂8 = 3 va ordinata 3 + 2 = 5 ga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-va-grafik",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#065f219d"
+    },
+    {
+      "q": "y = log₃x + c ko'rinishdagi funksiyaning grafigi (81; 7) nuqtadan o'tadi. c parametrning qiymatini toping.",
+      "v": [
+        "7",
+        "4",
+        "3",
+        "−3"
+      ],
+      "t": 2,
+      "izoh": "Nuqtani funksiyaga qo'yamiz: log₃81 + c = 7. 81 = 3⁴ bo'lgani uchun log₃81 = 4. Demak 4 + c = 7 va c = 3 kelib chiqadi. Logarifmni hisoblamasdan javob yozish 7 kabi xatoga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-va-grafik",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#9f8f6aea"
+    },
+    {
+      "q": "y = logₐ(x − 5) ko'rinishdagi funksiyaning grafigi (69; 2) nuqtadan o'tadi. Asos a nechaga teng?",
+      "v": [
+        "64",
+        "2",
+        "6",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Nuqtani qo'yamiz: logₐ(69 − 5) = 2, ya'ni logₐ64 = 2. Ta'rifga ko'ra a² = 64 va musbat ildiz a = 8. Argumentdagi 5 ni ayirishni unutish yoki 64 ni javob deb olish tipik xatolardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-va-grafik",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#56b0218c"
+    },
+    {
+      "q": "y = log₂(x + m) funksiyaning grafigi uchun vertikal asimptota x = −6 to'g'ri chiziq bo'ladi. m nechaga teng va grafik Ox o'qini qayerda kesadi?",
+      "v": [
+        "m = 6, kesishish (−5; 0) nuqtada",
+        "m = −6, kesishish (−5; 0) nuqtada",
+        "m = 6, kesishish (−6; 0) nuqtada",
+        "m = 6, kesishish (7; 0) nuqtada"
+      ],
+      "t": 0,
+      "izoh": "Asimptota argument nolga aylanganda hosil bo'ladi: x + m = 0 dan x = −m. Shartga ko'ra −m = −6, demak m = 6. Ox o'qi bilan kesishishda x + 6 = 1, ya'ni x = −5. Kesishish nuqtasi (−5; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-va-grafik",
+      "id": "matematika_funk_m07-logarifmik-funksiya-va-uning-grafigi#6a3ba8e0"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Funksiya xossalari: juft-toqlik va davriylik",
+  "bolim": "Funksiyalar",
+  "blok": "funk",
+  "rasmiyBolim": 4,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Quyidagi ko'phadlardan qaysi biri juft funksiya bo'ladi: f(x) = x⁴ − 3x² + 5, g(x) = x³ + 2x, h(x) = x² + x, p(x) = x⁵ − x²?",
+      "v": [
+        "f(x) = x⁴ − 3x² + 5",
+        "g(x) = x³ + 2x",
+        "h(x) = x² + x",
+        "p(x) = x⁵ − x²"
+      ],
+      "t": 0,
+      "izoh": "Juftlik sharti f(−x) = f(x). Birinchi funksiyada f(−x) = (−x)⁴ − 3(−x)² + 5 = x⁴ − 3x² + 5, chunki barcha darajalar juft va manfiylik yo'qoladi. g da faqat toq darajalar bor, u toq funksiya. h va p da juft va toq darajalar aralashgan, shuning uchun ular na juft, na toq. Javob: f(x) = x⁴ − 3x² + 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophad-juft-toqlik",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#4375a353"
+    },
+    {
+      "q": "f(x) = x⁵ − 4x³ + 7x bo'lsa, f(−x) ifodasini soddalashtirib yozing va shu asosda funksiya turini ko'rsating.",
+      "v": [
+        "x⁵ − 4x³ + 7x, funksiya juft",
+        "−x⁵ − 4x³ − 7x, funksiya toq",
+        "x⁵ + 4x³ + 7x, funksiya na juft, na toq",
+        "−x⁵ + 4x³ − 7x, funksiya toq"
+      ],
+      "t": 3,
+      "izoh": "Har bir x o'rniga −x qo'yamiz: (−x)⁵ = −x⁵, keyin −4(−x)³ = −4·(−x³) = +4x³, va 7·(−x) = −7x. Yig'ib −x⁵ + 4x³ − 7x hosil bo'ladi. Bu ifoda −f(x) ga teng, demak funksiya toq. Barcha hadlar oldiga minus qo'yib yuborish ikkinchi variantdagi xatoni beradi. Javob: −x⁵ + 4x³ − 7x, toq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophad-juft-toqlik",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#080213fa"
+    },
+    {
+      "q": "Anvar fizika daftariga h(t) = t⁴ − 2t² bog'lanishni yozib, uning grafigi Oy o'qiga nisbatan simmetrik ekanini tekshirmoqchi. h(−t) nimaga teng bo'ladi?",
+      "v": [
+        "−t⁴ + 2t²",
+        "t⁴ − 2t²",
+        "t⁴ + 2t²",
+        "−t⁴ − 2t²"
+      ],
+      "t": 1,
+      "izoh": "Juft darajaga ko'tarish manfiy ishorani yo'qotadi: (−t)⁴ = t⁴ va (−t)² = t², shuning uchun −2(−t)² = −2t². Demak h(−t) = t⁴ − 2t² = h(t). Funksiya juft ekan, ya'ni grafigi haqiqatan Oy o'qiga nisbatan simmetrik. Javob: t⁴ − 2t².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophad-juft-toqlik",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#de5e4c76"
+    },
+    {
+      "q": "f(x) = 2x⁶ − x⁴ + 9 va g(x) = x⁷ − 5x³ funksiyalari uchun juft-toqlik haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "f toq, g juft",
+        "ikkalasi ham juft funksiya",
+        "f juft, g toq",
+        "f juft, g esa na juft, na toq"
+      ],
+      "t": 2,
+      "izoh": "f da qatnashgan darajalar 6, 4 va ozod hadga mos keluvchi nol — hammasi juft, shuning uchun f(−x) = f(x) va f juft. g da darajalar 7 va 3, ikkalasi ham toq, shuning uchun g(−x) = −x⁷ + 5x³ = −g(x) va g toq. g dagi 7 va 3 darajalarni juft deb chalkashtirish ikkalasini ham juft deb hisoblash xatosiga olib keladi. Javob: f juft, g toq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kophad-juft-toqlik",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#616316e4"
+    },
+    {
+      "q": "Quyidagi ko'phadlardan qaysi biri toq funksiya ekanini aniqlang: x³ + 2x², x⁵ − 6x, x⁴ + x², 3x² + 1.",
+      "v": [
+        "x³ + 2x²",
+        "x⁵ − 6x",
+        "x⁴ + x²",
+        "3x² + 1"
+      ],
+      "t": 1,
+      "izoh": "Toq funksiya bo'lishi uchun ko'phaddagi barcha darajalar toq bo'lishi shart. Birinchi ifodada ikkinchi daraja juft, shuning uchun u na juft, na toq. Ikkinchi ifodada darajalar 5 va 1, ya'ni f(−x) = −x⁵ + 6x = −f(x). Oxirgi ikkitasida faqat juft darajalar bor, ular juft funksiya. Javob: x⁵ − 6x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophad-juft-toqlik",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#f6488182"
+    },
+    {
+      "q": "f(x) = |x| + cos x funksiyaning juft-toqligini ta'rif bo'yicha tekshiring va to'g'ri xulosani belgilang.",
+      "v": [
+        "Toq, chunki |−x| + cos(−x) = −|x| − cos x",
+        "Na juft, na toq, chunki modul ishorani buzadi",
+        "Toq, chunki kosinus toq funksiya",
+        "Juft, chunki |−x| + cos(−x) = |x| + cos x"
+      ],
+      "t": 3,
+      "izoh": "Modulning xossasi bo'yicha |−x| = |x|, kosinus esa juft funksiya, ya'ni cos(−x) = cos x. Ikkalasini qo'shsak f(−x) = |x| + cos x = f(x) hosil bo'ladi. Ta'rifga ko'ra bu juft funksiya, grafigi Oy o'qiga nisbatan simmetrik. Kosinusni toq deb eslab qolish uchinchi variantdagi xatoni keltirib chiqaradi. Javob: juft.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ildiz-kasr-juft-toqlik",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#8a007fde"
+    },
+    {
+      "q": "f(x) = x·|x| ko'rinishidagi funksiyaning juft-toqligi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Juft funksiya, chunki tarkibida modul bor",
+        "Na juft, na toq funksiya",
+        "Toq funksiya, chunki f(−x) = −x·|x|",
+        "Juft funksiya, chunki f(−x) = x·|x|"
+      ],
+      "t": 2,
+      "izoh": "Argument o'rniga −x qo'yamiz: f(−x) = (−x)·|−x| = (−x)·|x| = −x·|x|. Modul o'zgarmadi, oldidagi ko'paytuvchi esa ishorasini almashtirdi. Demak f(−x) = −f(x) va funksiya toq, grafigi koordinata boshiga nisbatan simmetrik. Modul borligini juftlik belgisi deb hisoblash tipik xato. Javob: toq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ildiz-kasr-juft-toqlik",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#e37cd7e9"
+    },
+    {
+      "q": "Kasr ko'rinishidagi f(x) = x/(x² + 1) funksiya juftmi yoki toqmi degan savolga to'g'ri javobni toping.",
+      "v": [
+        "Juft, chunki maxraj juft ifoda",
+        "Na juft, na toq bo'ladi",
+        "Toq, chunki f(−x) = −x/(x² + 1)",
+        "Juft, chunki f(−x) = x/(x² + 1)"
+      ],
+      "t": 2,
+      "izoh": "Surat x almashtirishda −x ga aylanadi, maxrajda esa (−x)² + 1 = x² + 1 bo'lib hech narsa o'zgarmaydi. Demak f(−x) = −x/(x² + 1) = −f(x). Ta'rifga ko'ra funksiya toq. Faqat maxrajga qarab xulosa chiqarish birinchi variantdagi xatoga olib boradi. Javob: toq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ildiz-kasr-juft-toqlik",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#5753d688"
+    },
+    {
+      "q": "f(x) = √(x² + 9) funksiyaning aniqlanish sohasi barcha haqiqiy sonlardan iborat. Uning juft-toqligi qanday bo'ladi?",
+      "v": [
+        "Toq, chunki ildiz ostida kvadrat turibdi",
+        "Juft, chunki f(−x) = √(x² + 9)",
+        "Na juft, na toq bo'lgani uchun tekshirib bo'lmaydi",
+        "Toq, chunki f(−x) = −√(x² + 9)"
+      ],
+      "t": 1,
+      "izoh": "Ildiz ostiga −x ni qo'ysak (−x)² + 9 = x² + 9 chiqadi, ya'ni ifoda mutlaqo o'zgarmaydi. Demak f(−x) = √(x² + 9) = f(x) va funksiya juft. Kvadrat ildizning qiymati manfiy bo'lmagani uchun oldiga minus chiqarish ham mumkin emas. Javob: juft.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ildiz-kasr-juft-toqlik",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#7aea1533"
+    },
+    {
+      "q": "f(x) = sin x · cos x ko'paytmaning juft-toqligini aniqlang va tanlovingizni qoida bilan asoslang.",
+      "v": [
+        "Juft, chunki ikkala ko'paytuvchi ham davriy",
+        "Na juft, na toq, chunki turli funksiyalar aralashgan",
+        "Juft, chunki sin(−x)·cos(−x) = sin x·cos x",
+        "Toq, chunki toq va juft funksiya ko'paytmasi toq bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Sinus toq: sin(−x) = −sin x, kosinus juft: cos(−x) = cos x. Ko'paytmani hisoblaymiz: f(−x) = (−sin x)·cos x = −sin x·cos x = −f(x). Demak toq va juft funksiyaning ko'paytmasi toq funksiya beradi. Davriylik juft-toqlikka umuman aloqador emas. Javob: toq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-juft-toqlik",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#91e3c1ff"
+    },
+    {
+      "q": "Sinusning kvadrati, ya'ni f(x) = sin²x funksiya juft bo'ladimi? To'g'ri izohli javobni tanlang.",
+      "v": [
+        "Ha, juft: sin²(−x) = (−sin x)² = sin²x",
+        "Yo'q, toq: sin²(−x) = −sin²x",
+        "Na juft, na toq, chunki sinus toq funksiya",
+        "Ha, juft, chunki sinusning o'zi juft funksiya"
+      ],
+      "t": 0,
+      "izoh": "Avval ichki almashtirishni bajaramiz: sin(−x) = −sin x. So'ng bu natijani kvadratga ko'taramiz: (−sin x)² = sin²x, chunki manfiy son kvadratga ko'tarilganda musbat bo'ladi. Demak f(−x) = f(x) va funksiya juft. Toq funksiyaning juft darajasi doim juft funksiya beradi. Javob: ha, juft.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-juft-toqlik",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#146cf966"
+    },
+    {
+      "q": "g(x) = x · sin x funksiyaning grafigi qaysi o'qqa yoki nuqtaga nisbatan simmetrik joylashgan bo'ladi?",
+      "v": [
+        "Ox o'qiga nisbatan",
+        "Oy o'qiga nisbatan",
+        "Koordinata boshiga nisbatan",
+        "y = x to'g'ri chiziqqa nisbatan"
+      ],
+      "t": 1,
+      "izoh": "Tekshiramiz: g(−x) = (−x)·sin(−x) = (−x)·(−sin x) = x·sin x = g(x). Ikkita toq funksiyaning ko'paytmasi juft funksiya beradi, chunki ikkita minus bir-birini yo'qotadi. Juft funksiyaning grafigi esa Oy o'qiga nisbatan simmetrik bo'ladi. Toqlikka qarab koordinata boshini tanlash bu yerda xato. Javob: Oy o'qiga nisbatan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-juft-toqlik",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#ff3f8e90"
+    },
+    {
+      "q": "f(x) = tg x + x³ funksiya uchun f(−x) qanday ifodalanadi va bundan qanday xulosa kelib chiqadi?",
+      "v": [
+        "tg x + x³, funksiya juft",
+        "−tg x + x³, funksiya na juft, na toq",
+        "−tg x − x³, funksiya toq",
+        "tg x − x³, funksiya juft"
+      ],
+      "t": 2,
+      "izoh": "Tangens toq funksiya, ya'ni tg(−x) = −tg x. Uchinchi daraja ham ishorani almashtiradi: (−x)³ = −x³. Demak f(−x) = −tg x − x³ = −(tg x + x³) = −f(x). Ikki toq funksiyaning yig'indisi ham toq funksiya bo'ladi. Javob: −tg x − x³, toq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-juft-toqlik",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#e2c0c4de"
+    },
+    {
+      "q": "Zilzila tebranishini o'lchaydigan asbob u(t) chetlanishni juft funksiya sifatida yozadi. u(6) = 4,5 mm bo'lsa, u(−6) qanchaga teng?",
+      "v": [
+        "4,5 mm",
+        "−4,5 mm",
+        "0 mm",
+        "9 mm"
+      ],
+      "t": 0,
+      "izoh": "Juft funksiya uchun u(−t) = u(t) tengligi bajariladi, ya'ni argumentning ishorasi natijaga ta'sir qilmaydi. Shuning uchun u(−6) = u(6) = 4,5 mm. Ishorani almashtirish toq funksiya qoidasi bo'lib, bu yerda o'rinsiz. Ikki qiymatni qo'shib 9 mm olish ham xato. Javob: 4,5 mm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-toq-orqali-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#2f029fbe"
+    },
+    {
+      "q": "Toq funksiya bilan berilgan v(t) tezlik uchun v(9) = 21 m/s ekani ma'lum bo'ldi. Asbob v(−9) o'rniga qanday qiymat yozadi?",
+      "v": [
+        "21 m/s",
+        "−21 m/s",
+        "0 m/s",
+        "42 m/s"
+      ],
+      "t": 1,
+      "izoh": "Toq funksiyada v(−t) = −v(t) bo'ladi, ya'ni argument ishorasi almashsa qiymat ham ishorasini almashtiradi. v(9) = 21 bo'lgani uchun v(−9) = −21 m/s. Juft funksiya qoidasini qo'llab 21 deb yozish eng ko'p uchraydigan xato. Javob: −21 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-toq-orqali-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#da2810d3"
+    },
+    {
+      "q": "f toq funksiya bo'lib, f(3) = 8 va f(5) = −2 ekani berilgan. f(−3) + f(−5) yig'indisini hisoblang.",
+      "v": [
+        "6",
+        "−6",
+        "10",
+        "−10"
+      ],
+      "t": 1,
+      "izoh": "Toqlik ta'rifiga ko'ra f(−3) = −f(3) = −8 va f(−5) = −f(5) = −(−2) = 2. Endi yig'amiz: −8 + 2 = −6. Ikkinchi hadda ikki marta minus qo'yilganini sezmaslik −10 xatosini, birinchi hadning ishorasini almashtirmaslik esa 6 xatosini beradi. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-toq-orqali-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#8d9b1071"
+    },
+    {
+      "q": "Juft funksiya g uchun g(−4) = 7 va g(2) = −3 qiymatlari berilgan. g(4) − g(−2) ayirmasini toping.",
+      "v": [
+        "4",
+        "−10",
+        "10",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "Juftlik g(−x) = g(x) ni beradi, shuning uchun g(4) = g(−4) = 7 va g(−2) = g(2) = −3. Ayirmani hisoblaymiz: 7 − (−3) = 7 + 3 = 10. Minus oldidagi minusni qo'shishga aylantirmaslik 4 natijasini beradi, argumentlarni chalkashtirish esa manfiy javobga olib keladi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-toq-orqali-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#6ec698b1"
+    },
+    {
+      "q": "Do'kon kassasidagi kunlik chetlanish hisoboti d(n) juft funksiya bilan yozilgan va d(−12) = 340 ming so'm. Kassir d(12) o'rniga qaysi sonni yozishi kerak?",
+      "v": [
+        "−340 ming so'm",
+        "680 ming so'm",
+        "170 ming so'm",
+        "340 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Juft funksiyada argumentning ishorasi natijaga ta'sir qilmaydi, ya'ni d(−n) = d(n). Berilgan d(−12) = 340 ming so'm bo'lgani uchun d(12) ham xuddi shu songa teng. Ikki qiymatni qo'shib 680 ming so'm olish yoki ikkiga bo'lish shart emas. Javob: 340 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-toq-orqali-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#9ce281c0"
+    },
+    {
+      "q": "f toq funksiya bo'lib, f(7) = 15 ekani ma'lum. Bunda f(−7) + f(7) yig'indisi nimaga teng bo'ladi?",
+      "v": [
+        "30",
+        "15",
+        "0",
+        "−15"
+      ],
+      "t": 2,
+      "izoh": "Toqlik shartiga ko'ra f(−7) = −f(7) = −15. Endi yig'indini topamiz: −15 + 15 = 0. Umuman olganda toq funksiyada simmetrik joylashgan ikki nuqtadagi qiymatlar yig'indisi doim nolga teng bo'ladi. Ishorani unutib 30 deb yozish tipik xato. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetrik-nuqtalarda-yigindi",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#0ee95473"
+    },
+    {
+      "q": "Andijonlik muhandis mashina tebranishini f(x) juft funksiya bilan modellagan va f(−8) + f(8) = 26 ekanini aniqlagan. Bunda f(8) qiymati qancha?",
+      "v": [
+        "26",
+        "0",
+        "13",
+        "52"
+      ],
+      "t": 2,
+      "izoh": "Juft funksiyada f(−8) = f(8) bo'lgani uchun yig'indi 2·f(8) ko'rinishiga keladi. Demak 2·f(8) = 26 va bundan f(8) = 13. Funksiyani toq deb o'ylash noto'g'ri nol javobini beradi, yig'indini o'zini javob deb olish esa 26 xatosidir. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-nuqtalarda-yigindi",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#9f503048"
+    },
+    {
+      "q": "f(x) = x⁴ + (a − 3)x³ + 2x² funksiya juft bo'lishi uchun a parametr qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "3",
+        "6",
+        "−3",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Juft funksiyada faqat juft darajali hadlar qolishi kerak, chunki toq darajali had f(−x) ni f(x) dan farqlantiradi. Demak x³ oldidagi koeffitsient nolga aylanishi shart: a − 3 = 0. Bundan a = 3. Qavs ichini nolga emas, uchga tenglashtirib a = 6 olish tipik xato. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-topish-juft-toq",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#3b8342c6"
+    },
+    {
+      "q": "f(x) = x³ + (b + 2)x² + 5x funksiya toq bo'lishi uchun b parametrning qiymatini toping.",
+      "v": [
+        "2",
+        "−2",
+        "5",
+        "−5"
+      ],
+      "t": 1,
+      "izoh": "Toq funksiyada juft darajali hadlar bo'lmasligi kerak, aks holda f(−x) = −f(x) tenglik buziladi. Shuning uchun x² oldidagi koeffitsient nolga teng bo'lsin: b + 2 = 0, ya'ni b = −2. Ishorani ko'chirishda xato qilib 2 deb javob berish ko'p uchraydi, x oldidagi koeffitsientga qarab 5 yozish esa boshqa hadga chalg'ishdir. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-topish-juft-toq",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#66deaf64"
+    },
+    {
+      "q": "Sinov varaqasida f(x) = (k − 4)x⁶ + 7x³ funksiya toq bo'lishi talab qilingan. k ning qiymati qanday bo'lishi kerak?",
+      "v": [
+        "7",
+        "−4",
+        "11",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Oltinchi daraja juft, uchinchi daraja esa toq. Funksiya toq bo'lishi uchun juft darajali had yo'qolishi shart, ya'ni k − 4 = 0. Bundan k = 4 kelib chiqadi va funksiya 7x³ ko'rinishida qoladi, u esa haqiqatan toq. Qavs ichini nolga emas, ikkinchi koeffitsientga tenglashtirib k = 11 olish tipik xato. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-topish-juft-toq",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#d2b17a97"
+    },
+    {
+      "q": "f(x) = x² + (a² − 9)x + 6 funksiya juft bo'lishi uchun a ning barcha mumkin bo'lgan qiymatlarini toping.",
+      "v": [
+        "a = 3",
+        "a = 9",
+        "a = 3 yoki a = −3",
+        "a = 0"
+      ],
+      "t": 2,
+      "izoh": "Birinchi darajali had juft funksiyada bo'lmasligi kerak, shuning uchun a² − 9 = 0 shartni yozamiz. Bundan a² = 9 va a = 3 yoki a = −3. Kvadrat tenglamaning ikkinchi ildizini yo'qotib faqat a = 3 deb javob berish eng ko'p uchraydigan xato. a² = 9 dan a = 9 chiqarish esa ildiz olishni unutish. Javob: a = 3 yoki a = −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-topish-juft-toq",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#4ccee68b"
+    },
+    {
+      "q": "u funksiya toq, w funksiya juft ekani ma'lum. Ularning u(x)·w(x) ko'paytmasi qanday funksiya bo'lishini aniqlang.",
+      "v": [
+        "Juft funksiya",
+        "Na juft, na toq funksiya",
+        "Aniqlash uchun ma'lumot yetarli emas",
+        "Toq funksiya"
+      ],
+      "t": 3,
+      "izoh": "Argument o'rniga −x qo'yamiz: u(−x)·w(−x) = (−u(x))·w(x) = −u(x)·w(x). Natija ko'paytmaning o'ziga qarama-qarshi son, ya'ni ta'rif bo'yicha ko'paytma toq funksiya. Qisqacha qoida: toq va juft funksiya ko'paytmasi toq bo'ladi. Javob: toq funksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-toq-amallar-qoidasi",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#e19a20a1"
+    },
+    {
+      "q": "Ikkita toq funksiyaning yig'indisi va ko'paytmasi mos ravishda qanday funksiya bo'lishini ko'rsating.",
+      "v": [
+        "Yig'indi toq, ko'paytma juft",
+        "Yig'indi juft, ko'paytma toq",
+        "Ikkalasi ham toq funksiya",
+        "Ikkalasi ham juft funksiya"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi uchun: f(−x) + g(−x) = −f(x) − g(x) = −(f(x) + g(x)), demak yig'indi toq. Ko'paytma uchun: f(−x)·g(−x) = (−f(x))·(−g(x)) = f(x)·g(x), ya'ni ikki minus bir-birini yo'qotadi va ko'paytma juft. Misol: x³ + x toq, x³·x = x⁴ esa juft. Javob: yig'indi toq, ko'paytma juft.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-toq-amallar-qoidasi",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#c6b374f5"
+    },
+    {
+      "q": "p va q funksiyalarning ikkalasi ham juft. Ularning yig'indisi hamda p(x)/q(x) bo'linmasi qanday funksiyalar bo'ladi?",
+      "v": [
+        "Yig'indi juft, bo'linma toq",
+        "Yig'indi toq, bo'linma juft",
+        "Yig'indi juft, bo'linma ham juft",
+        "Yig'indi na juft, na toq bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi uchun p(−x) + q(−x) = p(x) + q(x), demak u juft. Bo'linma uchun p(−x)/q(−x) = p(x)/q(x), ya'ni u ham juft. Ikkala amalda ham argument ishorasi natijaga ta'sir qilmadi. Juft funksiyalar ustidagi qo'shish, ayirish, ko'paytirish va bo'lish juftlikni saqlaydi. Javob: ikkalasi ham juft.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-toq-amallar-qoidasi",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#6c3d7652"
+    },
+    {
+      "q": "Toq funksiyaning kvadrati qanday funksiya bo'lishini aniqlang va javobingizni oddiy misol bilan tasdiqlang.",
+      "v": [
+        "Toq funksiya, masalan (x³)² = x⁶",
+        "Juft funksiya, masalan (x³)² = x⁶",
+        "Na juft, na toq funksiya bo'ladi",
+        "Ham juft, ham toq funksiya bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Agar f toq bo'lsa, f(−x) = −f(x). Kvadratga ko'taramiz: (f(−x))² = (−f(x))² = (f(x))², chunki manfiy son kvadratda musbat bo'ladi. Demak kvadrat juft funksiya. Misol sifatida x³ toq, uning kvadrati x⁶ esa juft. Javob: juft funksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-toq-amallar-qoidasi",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#a0bf3f00"
+    },
+    {
+      "q": "Grafik chizmasida funksiya egri chizig'i koordinata boshiga nisbatan simmetrik ekani ko'rindi. Bu qanday xossani bildiradi?",
+      "v": [
+        "f(−x) = f(x), ya'ni funksiya juft",
+        "f(−x) = −f(x), ya'ni funksiya toq",
+        "Funksiya barcha nuqtada nolga teng",
+        "Funksiya albatta davriy bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Koordinata boshiga nisbatan simmetriya har bir (x; y) nuqtaga (−x; −y) nuqta mos kelishini bildiradi. Ya'ni argument ishorasi almashsa, qiymat ham ishorasini almashtiradi: f(−x) = −f(x). Bu esa toq funksiyaning ta'rifi. Oy o'qiga nisbatan simmetriya bo'lganda funksiya juft bo'lardi. Javob: f(−x) = −f(x), toq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-simmetriya-turi",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#d812c07c"
+    },
+    {
+      "q": "Quyidagi funksiyalardan qaysi birining grafigi Oy o'qiga nisbatan simmetrik joylashadi: y = x³, y = x² − 4, y = 2x + 1, y = 1/x?",
+      "v": [
+        "y = x³",
+        "y = x² − 4",
+        "y = 2x + 1",
+        "y = 1/x"
+      ],
+      "t": 1,
+      "izoh": "Oy o'qiga nisbatan simmetriya juft funksiyaga xos, ya'ni f(−x) = f(x) bo'lishi kerak. y = x² − 4 uchun (−x)² − 4 = x² − 4, shart bajariladi. y = x³ va y = 1/x toq funksiyalar, ularning grafigi koordinata boshiga nisbatan simmetrik. y = 2x + 1 esa umuman simmetriyaga ega emas. Javob: y = x² − 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-simmetriya-turi",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#4b1f0d42"
+    },
+    {
+      "q": "Ox o'qiga nisbatan simmetrik egri chiziq berilgan bo'lib, uning ordinatasi noldan farqli kamida bitta nuqtasi bor. Bunday chiziq biror funksiyaning grafigi bo'la oladimi?",
+      "v": [
+        "Ha, agar funksiya juft bo'lsa",
+        "Ha, agar funksiya toq bo'lsa",
+        "Yo'q, chunki bitta x ga ikkita y qiymat mos kelib qoladi",
+        "Yo'q, chunki bunday egri chiziq mavjud emas"
+      ],
+      "t": 2,
+      "izoh": "Ox o'qiga nisbatan simmetriyada (x; y) nuqta bilan birga (x; −y) nuqta ham chiziqda yotadi. Shartga ko'ra chiziqda y ≠ 0 bo'lgan nuqta bor, demak o'sha x uchun ikkita har xil qiymat — y va −y — mos keladi, funksiya ta'rifi esa buni taqiqlaydi. Aynan shu shart y = 0 chizig'idagi istisnoni chetlab o'tadi. Juft-toqlik bu yerda umuman yordam bermaydi. Javob: yo'q, chunki bitta x ga ikkita y mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-simmetriya-turi",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#4e4d7cec"
+    },
+    {
+      "q": "Doniyor y = 1/x giperbolani chizib, uning qanday simmetriyaga ega ekanini aniqlamoqchi. To'g'ri xulosani tanlang.",
+      "v": [
+        "Oy o'qiga nisbatan simmetrik, funksiya juft",
+        "Koordinata boshiga nisbatan simmetrik, funksiya toq",
+        "Ox o'qiga nisbatan simmetrik joylashgan",
+        "Hech qanday simmetriyaga ega emas"
+      ],
+      "t": 1,
+      "izoh": "Tekshiramiz: f(−x) = 1/(−x) = −1/x = −f(x). Aniqlanish sohasi ham nolga nisbatan simmetrik, chunki nol nuqtadan boshqa hamma sonlar kiradi. Demak funksiya toq va grafigi koordinata boshiga nisbatan simmetrik. Giperbolaning ikki shoxi mos ravishda birinchi va uchinchi chorakda yotadi. Javob: koordinata boshiga nisbatan simmetrik, toq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-simmetriya-turi",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#0c819bda"
+    },
+    {
+      "q": "Bir vaqtning o'zida ham juft, ham toq bo'lgan funksiyaning grafigi qanday ko'rinishga ega bo'lishini aniqlang.",
+      "v": [
+        "Oy o'qiga parallel to'g'ri chiziq",
+        "Koordinata boshidan o'tuvchi ixtiyoriy to'g'ri chiziq",
+        "Ox o'qi bilan ustma-ust tushadigan y = 0 chiziq",
+        "Bunday funksiya umuman mavjud emas"
+      ],
+      "t": 2,
+      "izoh": "Ikkala shart birga bajarilsin: f(−x) = f(x) va f(−x) = −f(x). Bulardan f(x) = −f(x), ya'ni 2f(x) = 0 va f(x) = 0 har bir x uchun. Demak funksiya aynan nolga teng va uning grafigi Ox o'qi bilan ustma-ust tushadi. Bunday funksiya mavjud, shuning uchun oxirgi variant noto'g'ri. Javob: y = 0 chiziq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-simmetriya-turi",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#fd53fb23"
+    },
+    {
+      "q": "Juft funksiyaning grafigi A(−5; 12) nuqtadan o'tadi. Shu grafikka albatta tegishli bo'lgan yana bir nuqtani ko'rsating.",
+      "v": [
+        "(5; 12)",
+        "(5; −12)",
+        "(−5; −12)",
+        "(12; −5)"
+      ],
+      "t": 0,
+      "izoh": "Juft funksiyada f(−x) = f(x), shuning uchun grafik Oy o'qiga nisbatan simmetrik. A nuqtaning Oy o'qiga nisbatan aksi abssissasi ishorasini almashtiradi, ordinatasi esa o'zgarmaydi. Demak (5; 12) nuqta ham grafikda yotadi. Ordinatani ham almashtirish toq funksiya qoidasi bo'lib, bu yerda o'rinsiz. Javob: (5; 12).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-nuqta-simmetriya",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#be9995d3"
+    },
+    {
+      "q": "Toq funksiyaning grafigi B(4; −9) nuqtadan o'tsa, quyidagi nuqtalardan qaysi biri ham shu grafikda yotadi?",
+      "v": [
+        "(4; 9)",
+        "(−4; −9)",
+        "(−4; 9)",
+        "(−9; 4)"
+      ],
+      "t": 2,
+      "izoh": "Toq funksiyada f(−x) = −f(x), ya'ni grafik koordinata boshiga nisbatan simmetrik. Nuqtaning aksini topish uchun ikkala koordinataning ham ishorasini almashtiramiz: (4; −9) nuqtaga (−4; 9) mos keladi. Faqat abssissani almashtirish juft funksiya qoidasi, u ikkinchi variantdagi xatoni beradi. Javob: (−4; 9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-nuqta-simmetriya",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#874d1705"
+    },
+    {
+      "q": "Toq funksiya grafigidagi ikkita nuqta (a; 6) va (−a; k) ko'rinishida yozilgan. k ning qiymatini toping.",
+      "v": [
+        "6",
+        "−6",
+        "0",
+        "a ga teng"
+      ],
+      "t": 1,
+      "izoh": "Berilishiga ko'ra f(a) = 6, izlanayotgan qiymat esa k = f(−a). Toqlik ta'rifidan f(−a) = −f(a) = −6. Demak k = −6. Juft funksiya qoidasini qo'llab k = 6 deb yozish eng ko'p uchraydigan xato, nol esa faqat a = 0 holida chiqadi. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-nuqta-simmetriya",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#73a040bb"
+    },
+    {
+      "q": "Juft funksiya grafigi M(7; −4) nuqtadan o'tsa, N(−7; y) nuqta ham shu grafikda yotadi. y ni toping.",
+      "v": [
+        "4",
+        "7",
+        "0",
+        "−4"
+      ],
+      "t": 3,
+      "izoh": "Juft funksiyada teng masofada joylashgan qarama-qarshi argumentlar bir xil qiymat beradi: f(−7) = f(7). Berilgan f(7) = −4 bo'lgani uchun y = −4. Ordinatani musbatga aylantirish toqlik bilan chalkashtirish natijasidir. Argument qiymatini javob deb olib 7 yozish ham xato. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-nuqta-simmetriya",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#b79b8eeb"
+    },
+    {
+      "q": "Namangandagi meteostansiya haroratning sutkalik o'rtachadan chetlanishini T(x) toq funksiya bilan yozadi. T(0) albatta nimaga teng bo'ladi?",
+      "v": [
+        "Aniqlab bo'lmaydi",
+        "1",
+        "Har qanday songa teng bo'lishi mumkin",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "Toqlik sharti T(−x) = −T(x) barcha x uchun o'rinli, shu jumladan x = 0 uchun ham. Qo'yamiz: T(0) = −T(0). Ikki tomonga T(0) ni qo'shsak 2·T(0) = 0, bundan T(0) = 0. Demak nol nuqtada aniqlangan har qanday toq funksiya u yerda nolga teng bo'ladi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toq-funksiya-nolda-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#c1ec9137"
+    },
+    {
+      "q": "Toq funksiya nol nuqtada aniqlangan bo'lsa, uning grafigi qaysi nuqtadan albatta o'tishini ko'rsating.",
+      "v": [
+        "(0; 1)",
+        "(1; 0)",
+        "(0; 0)",
+        "(0; −1)"
+      ],
+      "t": 2,
+      "izoh": "Toq funksiyada f(0) = −f(0) tenglik o'rinli, chunki ta'rifda x = 0 ham qatnashadi. Bundan 2·f(0) = 0 va f(0) = 0 kelib chiqadi. Demak grafik abssissasi va ordinatasi nolga teng nuqtadan, ya'ni koordinata boshidan o'tadi. Koordinatalarni o'rin almashtirib (1; 0) tanlash tipik xato. Javob: (0; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toq-funksiya-nolda-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#fa27a9d3"
+    },
+    {
+      "q": "f(x) = x⁵ + 3x³ − 2x + c ko'phad toq funksiya bo'lishi uchun c qanday bo'lishi kerak va buning sababi nimada?",
+      "v": [
+        "c = 2, chunki ozod had ildizga bog'liq",
+        "c = 0, chunki toq funksiyada f(0) = 0 bo'ladi",
+        "c ixtiyoriy son bo'lishi mumkin",
+        "c = −2, chunki hadlar ishorasi almashadi"
+      ],
+      "t": 1,
+      "izoh": "Toq funksiyada nol nuqtadagi qiymat nolga teng bo'lishi shart. Bu yerda f(0) = c, demak c = 0. Buni boshqacha ham ko'rish mumkin: c ozod had x⁰ ga mos keladi, nol esa juft daraja, toq funksiyada juft darajali had bo'lmaydi. c ni ixtiyoriy deb hisoblash tekshiruvni umuman bajarmaslikdir. Javob: c = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toq-funksiya-nolda-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#7dd8fbd2"
+    },
+    {
+      "q": "Quyidagi funksiyalardan qaysi biri na juft, na toq bo'ladi: y = x⁴, y = x³, y = x² + x³, y = |x|?",
+      "v": [
+        "y = x⁴",
+        "y = x³",
+        "y = x² + x³",
+        "y = |x|"
+      ],
+      "t": 2,
+      "izoh": "Birinchi va oxirgi funksiyalarda faqat juft xossalar bor, ular juft. Ikkinchisida faqat toq daraja bor, u toq. Uchinchisida esa juft va toq darajalar aralashgan: f(−x) = x² − x³, bu ifoda na f(x) ga, na −f(x) ga teng. Shuning uchun u na juft, na toq. Javob: y = x² + x³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "na-juft-na-toq-aniqlash",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#dc40b9ad"
+    },
+    {
+      "q": "f(x) = 2^x ko'rsatkichli funksiyani juft-toqlikka tekshiring va to'g'ri xulosani asosi bilan tanlang.",
+      "v": [
+        "Juft, chunki 2^(−x) = 2^x",
+        "Toq, chunki 2^(−x) = −2^x",
+        "Na juft, na toq, chunki 2^(−x) = 1/2^x",
+        "Ham juft, ham toq funksiya bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Manfiy ko'rsatkich xossasiga ko'ra 2^(−x) = 1/2^x. Bu ifoda 2^x ga ham, −2^x ga ham teng emas, chunki ko'rsatkichli funksiya doim musbat. Demak ta'rifning ikkala sharti ham buziladi va funksiya na juft, na toq. Javob: na juft, na toq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "na-juft-na-toq-aniqlash",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#63af9b3d"
+    },
+    {
+      "q": "Sirdaryolik o'quvchi f(x) = x + 1 chiziqli funksiyani toq deb hisobladi. Uning mulohazasidagi xato qayerda?",
+      "v": [
+        "Xato yo'q, funksiya haqiqatan ham toq",
+        "f(−x) = −x + 1 bo'lib, u −f(x) = −x − 1 ga teng emas",
+        "Funksiya juft, chunki grafigi to'g'ri chiziq",
+        "Aniqlanish sohasi simmetrik emasligida"
+      ],
+      "t": 1,
+      "izoh": "Argument o'rniga −x qo'yamiz: f(−x) = −x + 1. Endi −f(x) ni yozamiz: −(x + 1) = −x − 1. Bu ikki ifoda ozod hadning ishorasi bilan farq qiladi, demak toqlik sharti bajarilmaydi. Ozod had nolga teng bo'lgandagina chiziqli funksiya toq bo'ladi. Javob: f(−x) −f(x) ga teng emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "na-juft-na-toq-aniqlash",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#5dfdfd15"
+    },
+    {
+      "q": "Do'kon sotuvchisi kunlik foydani P(x) = x² − 3x formula bilan hisoblaydi. Bu funksiyaning juft-toqligi qanday?",
+      "v": [
+        "Juft, chunki birinchi had juft darajali",
+        "Toq, chunki ikkinchi had toq darajali",
+        "Na juft, na toq, chunki P(−x) = x² + 3x",
+        "Ma'lumot yetarli emas, aniqlab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Almashtirishni bajaramiz: P(−x) = (−x)² − 3·(−x) = x² + 3x. Bu ifoda P(x) = x² − 3x ga teng emas, chunki ikkinchi hadning ishorasi boshqacha. −P(x) = −x² + 3x bilan ham to'g'ri kelmaydi. Ko'phadda juft va toq darajalar birga bo'lsa, funksiya na juft, na toq bo'ladi. Javob: na juft, na toq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "na-juft-na-toq-aniqlash",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#17991d09"
+    },
+    {
+      "q": "f(x) = √x funksiyaning juft-toqligi haqida to'g'ri fikrni tanlang va sababini ko'rsating.",
+      "v": [
+        "Juft, chunki ildiz manfiy qiymat bermaydi",
+        "Toq funksiya, chunki grafigi o'sib boradi",
+        "Na juft, na toq, chunki aniqlanish sohasi [0; +∞) simmetrik emas",
+        "Ham juft, ham toq funksiya hisoblanadi"
+      ],
+      "t": 2,
+      "izoh": "Juft yoki toq bo'lish uchun avval aniqlanish sohasi nolga nisbatan simmetrik bo'lishi kerak, ya'ni x bilan birga −x ham sohaga kirsin. Bu yerda soha [0; +∞), manfiy sonlar umuman kirmaydi, shuning uchun f(−x) ni yozishning imkoni yo'q. Demak funksiya na juft, na toq. Javob: aniqlanish sohasi simmetrik emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-simmetriya",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#8b76a7d1"
+    },
+    {
+      "q": "f(x) = x³ funksiya faqat [−2; 5] kesmada berilgan bo'lsa, u toq funksiya bo'la oladimi?",
+      "v": [
+        "Ha, chunki x³ ifodaning o'zi toq",
+        "Yo'q, chunki [−2; 5] kesma nolga nisbatan simmetrik emas",
+        "Ha, chunki f(0) = 0 sharti bajariladi",
+        "Yo'q, chunki x³ juft funksiya"
+      ],
+      "t": 1,
+      "izoh": "Formula toqlik ko'rinishida bo'lsa ham, ta'rif aniqlanish sohasidan boshlanadi. x = 4 sohaga kiradi, lekin −4 kirmaydi, shuning uchun f(−4) yozilmaydi va tenglikni tekshirib bo'lmaydi. Kesma simmetrik bo'lishi uchun uning chetlari qarama-qarshi sonlar bo'lishi kerak edi. Javob: yo'q, soha simmetrik emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi-simmetriya",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#8c546de5"
+    },
+    {
+      "q": "Zilola log₂x funksiyani juft-toqlikka tekshirmoqchi. U birinchi navbatda nimaga e'tibor qaratishi kerak?",
+      "v": [
+        "Aniqlanish sohasi x > 0, ya'ni nolga nisbatan simmetrik emas",
+        "Funksiya juft, chunki logarifm musbat qiymat beradi",
+        "Funksiya toq, chunki grafik doimo o'sadi",
+        "Logarifm asosining kattaligi qanday ekaniga"
+      ],
+      "t": 0,
+      "izoh": "Logarifmik funksiya faqat musbat argumentlarda aniqlangan, ya'ni sohasi (0; +∞). Bunda x sohaga kirsa ham, −x kirmaydi va f(−x) umuman mavjud emas. Shuning uchun juft-toqlikni tekshirish bosqichiga o'tilmaydi va funksiya na juft, na toq deb belgilanadi. Asosning kattaligi bu masalada hech narsani hal qilmaydi. Javob: aniqlanish sohasi simmetrik emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-simmetriya",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#ce589060"
+    },
+    {
+      "q": "Funksiyaning juft yoki toq bo'lishi mumkinligini tekshirishdan oldin uning aniqlanish sohasiga qanday talab qo'yiladi?",
+      "v": [
+        "Soha albatta nolni o'z ichiga olishi kerak",
+        "Soha nolga nisbatan simmetrik bo'lishi kerak",
+        "Soha barcha haqiqiy sonlardan iborat bo'lishi kerak",
+        "Sohaga hech qanday talab qo'yilmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ta'rifda f(−x) ifodasi qatnashadi, demak x soha elementi bo'lsa, −x ham soha elementi bo'lishi shart. Bu esa aynan sohaning nolga nisbatan simmetrikligini bildiradi. Sohaning nolni o'z ichiga olishi majburiy emas: masalan y = 1/x ning sohasida nol yo'q, lekin funksiya toq. Javob: soha nolga nisbatan simmetrik bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-simmetriya",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#ebd0f813"
+    },
+    {
+      "q": "Juft funksiya f uchun f(−1) = 3 va f(−5) = −2 berilgan. f(1) + f(5) + f(−1) + f(−5) yig'indisini toping.",
+      "v": [
+        "2",
+        "0",
+        "1",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Juftlik bo'yicha f(1) = f(−1) = 3 va f(5) = f(−5) = −2. Yig'indi to'rt qo'shiluvchidan iborat: 3 + (−2) + 3 + (−2) = 2. Aslida bu 2·(3 − 2) ga teng. Faqat bitta juftlikni hisoblab 1 deb javob berish yoki toqlik deb o'ylab nol yozish tipik xatolar. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-nuqtalarda-yigindi",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#188a1742"
+    },
+    {
+      "q": "Toq funksiya bilan berilgan f(t) kuchlanish chetlanishi uchun f(−6) = 14 V ekani o'lchandi. f(6) − f(−6) ayirmasi qanchaga teng?",
+      "v": [
+        "0 V",
+        "28 V",
+        "−28 V",
+        "−14 V"
+      ],
+      "t": 2,
+      "izoh": "Toqlik ta'rifidan f(6) = −f(−6) = −14 V. Endi ayirmani hisoblaymiz: −14 − 14 = −28 V. Ayirmada ikkinchi haddan oldingi minusni e'tiborsiz qoldirish nol javobini, ishorani teskari qo'yish esa 28 javobini beradi. Javob: −28 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-nuqtalarda-yigindi",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#ee9a2aa9"
+    },
+    {
+      "q": "Davri T = 4 ga teng bo'lgan f davriy funksiya uchun f(x + 4) ifodasi nimaga teng bo'ladi?",
+      "v": [
+        "f(x)",
+        "4·f(x)",
+        "f(x) + 4",
+        "f(4x)"
+      ],
+      "t": 0,
+      "izoh": "Davriylik ta'rifi: agar T funksiyaning davri bo'lsa, aniqlanish sohasidagi har bir x uchun f(x + T) = f(x). Bu yerda T = 4, shuning uchun f(x + 4) = f(x). Davrni qiymatga qo'shish yoki qiymatni davrga ko'paytirish ta'rifni noto'g'ri tushunishdir. Javob: f(x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-tarifi-tekshirish",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#88224fb5"
+    },
+    {
+      "q": "Quyidagi sonlardan qaysi biri y = sin x funksiyaning davri bo'la olmaydi: 2π, 4π, 6π, 3π?",
+      "v": [
+        "2π",
+        "4π",
+        "6π",
+        "3π"
+      ],
+      "t": 3,
+      "izoh": "Sinusning asosiy davri 2π, shuning uchun uning butun karralilari 4π va 6π ham davr bo'ladi. 3π ni tekshiramiz: sin(x + 3π) = sin(x + π + 2π) = sin(x + π) = −sin x. Natija −sin x, ya'ni sin x ga teng emas, demak 3π davr emas. Toq karrali π qo'shilganda sinus ishorasini almashtiradi. Javob: 3π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davr-tarifi-tekshirish",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#2f65905a"
+    },
+    {
+      "q": "Davri 5 ga teng bo'lgan f funksiya uchun quyidagi tengliklardan qaysi biri barcha x qiymatlarda o'rinli bo'ladi?",
+      "v": [
+        "f(x + 12) = f(x)",
+        "f(x + 15) = f(x)",
+        "f(x + 5) = 5·f(x)",
+        "f(5x) = f(x)"
+      ],
+      "t": 1,
+      "izoh": "Davriylikdan f(x + 5) = f(x), demak bu qadamni istalgancha takrorlash mumkin. Uch marta qo'llasak f(x + 15) = f(x + 10) = f(x + 5) = f(x). 12 esa 5 ga bo'linmaydi, shuning uchun f(x + 12) = f(x) tengligi umumiy holda o'rinli emas. Argumentni ko'paytirish yoki qiymatni ko'paytirish davriylik ta'rifiga umuman aloqasiz. Javob: f(x + 15) = f(x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davr-tarifi-tekshirish",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#19688556"
+    },
+    {
+      "q": "f funksiyaning davri T = 7 ga teng. Quyidagi sonlardan qaysi biri ham shu funksiyaning davri bo'la oladi?",
+      "v": [
+        "10",
+        "14",
+        "3,5",
+        "7,5"
+      ],
+      "t": 1,
+      "izoh": "Agar T davr bo'lsa, uning har qanday natural karralisi ham davr bo'ladi: f(x + 14) = f(x + 7) = f(x). Shuning uchun 14 mos keladi. Davrning yarmi 3,5 umumiy holda davr bo'lmaydi, chunki f(x + 3,5) = f(x) tenglik hech narsadan kelib chiqmaydi. 10 va 7,5 esa 7 ga karrali emas. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davr-tarifi-tekshirish",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#b35436fe"
+    },
+    {
+      "q": "Toshkent metrosida poyezd bekatga har 6 daqiqada keladi. Kelishlar jadvalini davriy jarayon deb qarasak, quyidagi oraliqlardan qaysi biri ham davr bo'la oladi?",
+      "v": [
+        "8 daqiqa",
+        "9 daqiqa",
+        "18 daqiqa",
+        "15 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Jarayon 6 daqiqada takrorlanadi, demak 6 ga karrali har qanday oraliqdan keyin holat ayni o'zi bo'ladi. 18 = 3·6 bo'lgani uchun 18 daqiqadan keyin ham poyezd aynan shu holatda keladi. 8, 9 va 15 daqiqa 6 ga bo'linmaydi, shuning uchun ular davr emas. Javob: 18 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-tarifi-tekshirish",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#3c563207"
+    },
+    {
+      "q": "y = sin 3x funksiyaning eng kichik musbat davrini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "2π/3",
+        "3π",
+        "6π",
+        "π/3"
+      ],
+      "t": 0,
+      "izoh": "Sinusning asosiy davri 2π, argument oldida k koeffitsient turganda davr 2π/|k| ga teng bo'ladi. Bu yerda k = 3, shuning uchun T = 2π/3. Koeffitsientga ko'paytirib 6π olish yoki tangens davri π dan foydalanib π/3 deyish tipik xatolar. Javob: 2π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-kichik-musbat-davr-trig",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#3a8030ae"
+    },
+    {
+      "q": "y = cos(x/4) funksiyaning eng kichik musbat davri qanday songa teng bo'lishini aniqlang.",
+      "v": [
+        "π/2",
+        "2π",
+        "8π",
+        "4π"
+      ],
+      "t": 2,
+      "izoh": "Kosinus davri 2π, koeffitsient esa k = 1/4. Formulaga ko'ra T = 2π/|k| = 2π : (1/4) = 8π. Bo'lish o'rniga ko'paytirib 2π·(1/4) = π/2 olish eng ko'p uchraydigan xato. Argument sekin o'zgargani uchun davr uzayishi mantiqan ham to'g'ri. Javob: 8π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-musbat-davr-trig",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#4b957ad8"
+    },
+    {
+      "q": "y = tg 2x funksiyaning eng kichik musbat davri qanchaga tengligini toping.",
+      "v": [
+        "π",
+        "2π",
+        "π/4",
+        "π/2"
+      ],
+      "t": 3,
+      "izoh": "Tangensning asosiy davri 2π emas, balki π. Koeffitsient k = 2 bo'lgani uchun T = π/|k| = π/2. Sinus va kosinusning davrini eslab 2π/2 = π deb yozish ko'p uchraydigan xato. Javob: π/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-musbat-davr-trig",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#c8c7572b"
+    },
+    {
+      "q": "Tebranishni tavsiflovchi y = 5·sin(x/3) + 2 funksiyaning eng kichik musbat davri qanday bo'ladi?",
+      "v": [
+        "6π",
+        "2π/3",
+        "3π",
+        "2π"
+      ],
+      "t": 0,
+      "izoh": "Amplituda ko'paytuvchisi 5 va siljitish 2 davrga umuman ta'sir qilmaydi, chunki ular argumentni o'zgartirmaydi. Faqat koeffitsient k = 1/3 muhim: T = 2π : (1/3) = 6π. Ko'paytmani bo'linma bilan almashtirib 2π/3 olish tipik xato. Javob: 6π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-musbat-davr-trig",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#2d1a69a4"
+    },
+    {
+      "q": "y = cos 6x − 1 funksiyaning eng kichik musbat davrini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "π/6",
+        "6π",
+        "2π/3",
+        "π/3"
+      ],
+      "t": 3,
+      "izoh": "Grafikni pastga siljituvchi −1 had davrni o'zgartirmaydi. Kosinus uchun T = 2π/|k|, bu yerda k = 6, demak T = 2π/6 = π/3. Kosinus davrini π deb olib π/6 yozish yoki bo'lish o'rniga ko'paytirish xatolarga olib keladi. Javob: π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-musbat-davr-trig",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#46246844"
+    },
+    {
+      "q": "y = sin 2x + cos 3x yig'indi funksiyaning eng kichik musbat davrini aniqlang.",
+      "v": [
+        "2π",
+        "π",
+        "2π/3",
+        "6π"
+      ],
+      "t": 0,
+      "izoh": "Birinchi qo'shiluvchining davri 2π/2 = π, ikkinchisiniki esa 2π/3. Yig'indining davri shu ikki sonning eng kichik umumiy karralisi bo'ladi. π ni 2 ga ko'paytirsak 2π, 2π/3 ni 3 ga ko'paytirsak ham 2π chiqadi. Kichikroq umumiy karrali yo'q, demak T = 2π. Faqat bitta qo'shiluvchining davrini olib π deyish tipik xato. Javob: 2π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davr-yigindi-funksiya",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#c3fa774b"
+    },
+    {
+      "q": "y = sin(x/2) + cos(x/3) funksiyaning eng kichik musbat davri qanday songa teng bo'ladi?",
+      "v": [
+        "6π",
+        "12π",
+        "10π",
+        "4π"
+      ],
+      "t": 1,
+      "izoh": "Birinchi hadning davri 2π : (1/2) = 4π, ikkinchisiniki 2π : (1/3) = 6π. Yig'indi uchun 4π va 6π ning eng kichik umumiy karralisi kerak: 4π·3 = 12π va 6π·2 = 12π. Demak T = 12π. Ikki davrni qo'shib 10π olish yoki kattasini olib 6π deyish noto'g'ri. Javob: 12π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davr-yigindi-funksiya",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#7634a4f5"
+    },
+    {
+      "q": "y = sin x + cos x funksiya uchun eng kichik musbat davrni toping va tanlovingizni tekshiring.",
+      "v": [
+        "π",
+        "π/2",
+        "2π",
+        "4π"
+      ],
+      "t": 2,
+      "izoh": "Ikkala qo'shiluvchining davri ham 2π, shuning uchun 2π albatta davr bo'ladi. Undan kichigini tekshiramiz: x ga π qo'shsak sin(x + π) + cos(x + π) = −sin x − cos x, bu esa dastlabki ifodaga teng emas. Demak π davr bo'la olmaydi va eng kichik musbat davr 2π. Javob: 2π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davr-yigindi-funksiya",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#4fe6f17a"
+    },
+    {
+      "q": "y = tg 3x + ctg 3x funksiyaning eng kichik musbat davri qanchaga tengligini aniqlang.",
+      "v": [
+        "π",
+        "2π/3",
+        "π/6",
+        "π/3"
+      ],
+      "t": 3,
+      "izoh": "Tangens ham, kotangens ham π davrga ega, koeffitsient 3 bo'lgani uchun har ikkala qo'shiluvchining davri π/3 ga teng. Demak π/3 yig'indining ham davri bo'ladi. Uning yarmi π/6 ni tekshiramiz: tg(3x + π/2) = −ctg 3x va ctg(3x + π/2) = −tg 3x, yig'indi ishorasini almashtiradi, ya'ni π/6 davr emas. Koeffitsientni e'tiborsiz qoldirib π deyish tipik xato. Javob: π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davr-yigindi-funksiya",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#f7f0e3af"
+    },
+    {
+      "q": "Davriylik xossasidan foydalanib sin(25π/6) ifodaning aniq qiymatini hisoblang.",
+      "v": [
+        "1/2",
+        "√3/2",
+        "−1/2",
+        "√2/2"
+      ],
+      "t": 0,
+      "izoh": "Sinusning davri 2π, shuning uchun argumentdan 4π ni ayirish mumkin: 25π/6 − 24π/6 = π/6. Demak sin(25π/6) = sin(π/6) = 1/2. Argumentni to'liq davrga keltirmasdan chorakni noto'g'ri aniqlash √3/2 yoki manfiy qiymat xatolarini beradi. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzoq-argument-trig-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#9d05101e"
+    },
+    {
+      "q": "cos 1125° ifodaning qiymatini davriylik yordamida hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "√3/2",
+        "1/2",
+        "−√2/2",
+        "√2/2"
+      ],
+      "t": 3,
+      "izoh": "Kosinusning davri 360°, shuning uchun argumentdan uch marta 360° ni ayiramiz: 1125° − 1080° = 45°. Demak cos 1125° = cos 45° = √2/2. Ikki marta ayirish natijasida 405° qolib ketsa, javob o'zgarmaydi, lekin burchakni 30° yoki 60° deb chalkashtirish √3/2 va 1/2 xatolarini beradi. Javob: √2/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzoq-argument-trig-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#d56be156"
+    },
+    {
+      "q": "tg(17π/4) ifodaning qiymatini tangens davridan foydalanib toping.",
+      "v": [
+        "−1",
+        "√3",
+        "1",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "Tangensning davri π, lekin qulaylik uchun 4π ni ayirish ham mumkin: 17π/4 − 16π/4 = π/4. Demak tg(17π/4) = tg(π/4) = 1. Burchakni uchinchi chorakka joylashtirib ishorani manfiy qilish yoki π/3 bilan chalkashtirib √3 yozish tipik xatolar. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzoq-argument-trig-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#a15c1318"
+    },
+    {
+      "q": "sin 1290° ni davriylik yordamida sodda burchakka keltirib hisoblang.",
+      "v": [
+        "1/2",
+        "√3/2",
+        "−√3/2",
+        "−1/2"
+      ],
+      "t": 3,
+      "izoh": "Argumentdan uch marta 360° ni ayiramiz: 1290° − 1080° = 210°. Bu burchak uchinchi chorakda, u yerda sinus manfiy: sin 210° = −sin 30° = −1/2. Chorakni hisobga olmasdan ishorani musbat qoldirish eng ko'p uchraydigan xato. Javob: −1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uzoq-argument-trig-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#64ac01ee"
+    },
+    {
+      "q": "Aylanma harakat hisobida cos(23π/6) qiymati kerak bo'lib qoldi. Uni davriylikdan foydalanib toping.",
+      "v": [
+        "√3/2",
+        "1/2",
+        "−√3/2",
+        "√2/2"
+      ],
+      "t": 0,
+      "izoh": "Argumentdan bitta davr 2π = 12π/6 ni ayiramiz: 23π/6 − 12π/6 = 11π/6. Bu burchak to'rtinchi chorakda va 2π − π/6 ko'rinishida yoziladi, u yerda kosinus musbat. Demak cos(11π/6) = cos(π/6) = √3/2. To'rtinchi chorakda kosinusni manfiy deb belgilash tipik xato. Javob: √3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uzoq-argument-trig-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#00d18fe9"
+    },
+    {
+      "q": "f davriy funksiyaning davri 5 ga teng va f(1) = 3, f(2) = −1, f(3) = 0, f(4) = 6, f(5) = 2. f(37) ni toping.",
+      "v": [
+        "3",
+        "−1",
+        "6",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Argumentdan to'liq davrlarni ayirib, jadvaldagi oraliqqa tushiramiz: 37 = 5·7 + 2, ya'ni 37 dan 35 ni ayirsak 2 qoladi. Davriylikka ko'ra f(37) = f(2) = −1. Qoldiqni noto'g'ri hisoblab 7 ga bo'lish yoki qoldiq o'rniga bo'linmani olish xatolarga olib keladi. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-jadval-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#3f871970"
+    },
+    {
+      "q": "Davri 4 ga teng f funksiya uchun f(1) = 8, f(2) = −5, f(3) = 11, f(4) = 0 qiymatlari berilgan. f(103) nimaga teng?",
+      "v": [
+        "11",
+        "8",
+        "−5",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "103 sonini 4 ga bo'lamiz: 103 = 4·25 + 3, ya'ni qoldiq 3 ga teng. Davriylik xossasiga ko'ra f(103) = f(3) = 11. Qoldiqni 1 deb olish yoki oxirgi jadval qiymatini javob deb yozish tipik xatolar. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-jadval-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#1b99d410"
+    },
+    {
+      "q": "Do'kondagi navbatchilik 7 kunlik davr bilan takrorlanadi: 1-kuni Aziz, 2-kuni Bobur, 3-kuni Dilshod, 4-kuni Elyor va hokazo. 100-kuni kim navbatchi bo'ladi?",
+      "v": [
+        "Aziz",
+        "Dilshod",
+        "Elyor",
+        "Bobur"
+      ],
+      "t": 3,
+      "izoh": "Navbat 7 kunda takrorlangani uchun kun raqamini 7 ga bo'lib qoldiqni topamiz: 100 = 7·14 + 2, qoldiq 2. Demak 100-kun jadvaldagi 2-kunga to'g'ri keladi va navbatchi Bobur bo'ladi. Qoldiq o'rniga bo'linmani olish yoki qoldiqni 3 deb hisoblash xato javob beradi. Javob: Bobur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-jadval-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#4eefea76"
+    },
+    {
+      "q": "f funksiya davri 3 ga teng va [0; 3) oraliqda u f(x) = x² formula bilan berilgan. f(11) qiymatini hisoblang.",
+      "v": [
+        "121",
+        "1",
+        "9",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Avval argumentni asosiy oraliqqa keltiramiz: 11 dan uch marta 3 ni ayirsak, 11 − 9 = 2 qoladi va 2 son [0; 3) ga tegishli. Demak f(11) = f(2) = 2² = 4. Formulani to'g'ridan-to'g'ri 11 ga qo'llab 121 olish davriylikni umuman ishlatmaslik demakdir. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davriy-jadval-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#997c3923"
+    },
+    {
+      "q": "Davri 2 ga teng f funksiya [0; 2) oraliqda f(x) = 3x − 1 ko'rinishda berilgan. f(7,5) ni toping.",
+      "v": [
+        "3,5",
+        "21,5",
+        "2,5",
+        "1,5"
+      ],
+      "t": 0,
+      "izoh": "Argumentdan uch marta davrni ayiramiz: 7,5 − 6 = 1,5, bu son [0; 2) oraliqqa tushadi. Endi formulani qo'llaymiz: f(1,5) = 3·1,5 − 1 = 4,5 − 1 = 3,5. Formulani to'g'ridan-to'g'ri 7,5 ga qo'llash 21,5 xatosini beradi. Javob: 3,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davriy-jadval-qiymat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#5d613abe"
+    },
+    {
+      "q": "Chorraha svetoforining to'liq tsikli 90 sekund davom etadi va yashil chiroq tsiklning 10-sekundida yonadi. Kuzatuv boshlangandan 460 sekund o'tganda qanday holat bo'ladi?",
+      "v": [
+        "10-sekund, ya'ni yashil chiroq yonadi",
+        "40-sekundga to'g'ri keladi",
+        "70-sekundga to'g'ri keladi",
+        "90-sekund, tsikl tugaydi"
+      ],
+      "t": 0,
+      "izoh": "Svetofor 90 sekundda takrorlanadi, shuning uchun 460 ni 90 ga bo'lib qoldiqni topamiz: 460 = 90·5 + 10. Demak tsiklning 10-sekundi ketmoqda, ya'ni aynan yashil chiroq yonadigan payt. Qoldiq o'rniga bo'linmani olish yoki 460 dan faqat bitta 90 ni ayirish noto'g'ri natija beradi. Javob: 10-sekund, yashil chiroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davr-hayotiy-jarayon",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#6080c442"
+    },
+    {
+      "q": "Dengizdagi suv ko'tarilishi 12 soatlik davr bilan takrorlanadi va bugun soat 3 da eng yuqori sath kuzatildi. Shu kuni yana qachon eng yuqori sath bo'ladi?",
+      "v": [
+        "Soat 9 da",
+        "Soat 12 da",
+        "Soat 15 da",
+        "Soat 18 da"
+      ],
+      "t": 2,
+      "izoh": "Hodisa davri 12 soat bo'lgani uchun keyingi eng yuqori sath 12 soatdan keyin takrorlanadi. Boshlanish payti soat 3 ekan, unga 12 ni qo'shamiz: 3 + 12 = 15. Demak soat 15 da yana eng yuqori sath bo'ladi. Davrning yarmini qo'shib soat 9 ni tanlash suv pasayadigan paytni bildiradi. Javob: soat 15 da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-hayotiy-jarayon",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#d552c931"
+    },
+    {
+      "q": "Zavod konveyeri bitta to'liq tsiklni 45 daqiqada tugatadi. Ish boshlangandan 6 soat o'tganda konveyer tsiklning qaysi daqiqasida bo'ladi?",
+      "v": [
+        "0-daqiqa, ya'ni yangi tsikl endi boshlanadi",
+        "15-daqiqada bo'ladi",
+        "30-daqiqada bo'ladi",
+        "40-daqiqada bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Avval vaqtni bir xil birlikka keltiramiz: 6 soat 360 daqiqaga teng. Endi 360 ni 45 ga bo'lamiz: 360 = 45·8, qoldiq nol. Demak roppa-rosa sakkizta to'liq tsikl o'tgan va konveyer yangi tsiklning boshida turadi. Soatni daqiqaga aylantirmaslik bu masalada eng katta xato. Javob: 0-daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davr-hayotiy-jarayon",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#51d3a819"
+    },
+    {
+      "q": "Fermer dalani har 9 kunda bir marta sug'oradi va birinchi sug'orish 5-mart kuni bo'lgan. Shu mart oyi ichida yana necha marta sug'oradi?",
+      "v": [
+        "1 marta",
+        "3 marta",
+        "4 marta",
+        "2 marta"
+      ],
+      "t": 3,
+      "izoh": "Sug'orish kunlari 9 kunlik davr bilan ketadi: 5, keyin 14, keyin 23, undan keyin 32. Mart oyi 31 kundan iborat, shuning uchun 32-kun boshqa oyga o'tib ketadi. Demak birinchisidan tashqari yana 14 va 23 kunlari, jami 2 marta sug'oriladi. Birinchi sug'orishni ham sanab 3 marta deyish tipik xato. Javob: 2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davr-hayotiy-jarayon",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#ba8b6a3c"
+    },
+    {
+      "q": "Bolalar bog'idagi aylanma attraksion bir aylanishni 40 sekundda bajaradi. Kabina eng yuqori nuqtadan o'tgandan keyin 310 sekund o'tdi. Kabina hozir aylanishning nechanchi sekundida?",
+      "v": [
+        "10-sekundida",
+        "20-sekundida",
+        "30-sekundida",
+        "35-sekundida"
+      ],
+      "t": 2,
+      "izoh": "Harakat 40 sekundlik davr bilan takrorlanadi, shuning uchun 310 ni 40 ga bo'lib qoldiqni topamiz: 310 = 40·7 + 30. Demak yettita to'liq aylanish tugagan va sakkizinchisining 30-sekundi ketmoqda. Bo'linma 7 ni javob deb olish yoki qoldiqni 10 deb hisoblash xatolarga olib keladi. Javob: 30-sekundida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davr-hayotiy-jarayon",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#84122fc2"
+    },
+    {
+      "q": "Grafikda funksiya x = 2 nuqtadan x = 9 nuqtagacha bitta to'liq to'lqinni chizadi va keyin shakl aynan takrorlanadi. Funksiyaning davri nechaga teng?",
+      "v": [
+        "11",
+        "7",
+        "4,5",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Davr — shakl takrorlanguncha argument bosib o'tgan masofa, ya'ni to'lqin boshi va oxiri orasidagi ayirma. Bu yerda 9 dan 2 ni ayiramiz: T = 9 − 2 = 7. Ikki abssissani qo'shib 11 olish yoki oxirgi nuqtaning o'zini davr deb yozish tipik xatolar. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-grafikdan-oqish",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#f12915d6"
+    },
+    {
+      "q": "Chizmadagi funksiya x = −3 nuqtadan boshlanib, x = 5 nuqtada aynan shu shaklni qaytadan boshlaydi. Eng kichik musbat davr qanday?",
+      "v": [
+        "8",
+        "2",
+        "5",
+        "15"
+      ],
+      "t": 0,
+      "izoh": "Davr — grafik shakli o'zini takrorlaguncha argument bosib o'tgan masofa. Bu masofani chap va o'ng chegara ayirmasi sifatida topamiz: 5 − (−3) = 5 + 3 = 8. Ikki abssissani ayirishda manfiy songa e'tibor bermaslik 2 xatosini beradi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-grafikdan-oqish",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#d885ed12"
+    },
+    {
+      "q": "Kardiogrammada yurak urishi 0,8 sekundlik davr bilan takrorlanadi. Shu davriylikka ko'ra bir daqiqada necha marta urish qayd etiladi?",
+      "v": [
+        "48",
+        "80",
+        "60",
+        "75"
+      ],
+      "t": 3,
+      "izoh": "Bir daqiqa 60 sekundga teng, bitta sikl esa 0,8 sekund davom etadi. Sikllar sonini topish uchun umumiy vaqtni davrga bo'lamiz: 60 : 0,8 = 75. Demak bir daqiqada 75 marta urish qayd etiladi. Aksincha ko'paytirib 48 olish yoki davrni e'tiborsiz qoldirib 60 deb yozish tipik xatolar. Javob: 75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-grafikdan-oqish",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#d424d7bd"
+    },
+    {
+      "q": "Davri 4 ga teng f funksiya uchun f(1) = 2, f(2) = −3, f(3) = 5, f(4) = 1. f(1) + f(2) + … + f(20) yig'indisini hisoblang.",
+      "v": [
+        "25",
+        "5",
+        "20",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "Avval bitta davrdagi qiymatlar yig'indisini topamiz: 2 + (−3) + 5 + 1 = 5. Yig'indida 20 ta had bor, ular 20 : 4 = 5 ta to'liq davrni tashkil qiladi. Demak umumiy yig'indi 5·5 = 25. Bitta davr yig'indisini javob deb olish yoki hadlar sonini javob deb yozish xato. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-yigindi-qiymatlar",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#9731257d"
+    },
+    {
+      "q": "Davri 3 ga teng g funksiya uchun g(1) = 7, g(2) = −2, g(3) = 4 berilgan. g(1) + g(2) + … + g(11) yig'indisini toping.",
+      "v": [
+        "27",
+        "32",
+        "36",
+        "30"
+      ],
+      "t": 1,
+      "izoh": "Bitta davrdagi yig'indi: 7 + (−2) + 4 = 9. 11 ta hadning 9 tasi uchta to'liq davrni beradi, ularning yig'indisi 3·9 = 27. Qolgan ikki had g(10) = g(1) = 7 va g(11) = g(2) = −2, ular 5 qo'shadi. Jami 27 + 5 = 32. Qoldiq hadlarni unutish 27 xatosini beradi. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davriy-yigindi-qiymatlar",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#b8c48ba6"
+    },
+    {
+      "q": "Zavodda mahsulot chiqarish 6 kunlik davr bilan takrorlanadi: 12, 15, 9, 14, 10 va 12 dona. 90 kunda jami nechta mahsulot chiqadi?",
+      "v": [
+        "1080",
+        "720",
+        "900",
+        "1260"
+      ],
+      "t": 0,
+      "izoh": "Bitta davrda chiqadigan mahsulotni qo'shamiz: 12 + 15 + 9 + 14 + 10 + 12 = 72 dona. 90 kunda 90 : 6 = 15 ta to'liq davr bo'ladi. Demak jami 72·15 = 1080 dona. O'rtacha kunlik miqdorni noto'g'ri olib 720 yoki 900 deb hisoblash tipik xato. Javob: 1080 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davriy-yigindi-qiymatlar",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#157c15af"
+    },
+    {
+      "q": "y = sin kx funksiyaning eng kichik musbat davri π/2 ga teng bo'lsa, musbat k koeffitsientni toping.",
+      "v": [
+        "2",
+        "8",
+        "1/4",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Sinus uchun davr formulasi T = 2π/k. Shartga ko'ra 2π/k = π/2 tenglamani yechamiz: ko'paytirib 2π·2 = π·k, ya'ni 4π = π·k va k = 4. Tenglamani teskari yozib k = 1/4 olish yoki davrni ikkiga bo'lib k = 2 deyish tipik xatolar. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-koeffitsient-topish",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#652e706e"
+    },
+    {
+      "q": "y = cos(x/a) funksiyaning eng kichik musbat davri 10π ga teng bo'lsa, musbat a ning qiymati qancha?",
+      "v": [
+        "5",
+        "10",
+        "2",
+        "1/5"
+      ],
+      "t": 0,
+      "izoh": "Argument oldidagi koeffitsient 1/a bo'lgani uchun davr T = 2π : (1/a) = 2π·a. Shartdan 2π·a = 10π, demak a = 5. Davrni to'g'ridan-to'g'ri a deb olib 10 yozish yoki koeffitsientni teskari qo'yib 1/5 deyish xato. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-koeffitsient-topish",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#1b312d44"
+    },
+    {
+      "q": "y = tg mx funksiyaning eng kichik musbat davri π/3 bo'lsa, musbat m qanday qiymat oladi?",
+      "v": [
+        "1/3",
+        "6",
+        "9",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Tangens uchun davr formulasi T = π/m, chunki tangensning asosiy davri π. Shartdan π/m = π/3, bundan m = 3. Sinus davri 2π ni ishlatib m = 6 olish eng ko'p uchraydigan xato, koeffitsientni teskari yozish esa 1/3 beradi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-koeffitsient-topish",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#291716fe"
+    },
+    {
+      "q": "Tebranish generatori u(t) = 8·sin(k·t) qonuniyat bilan ishlaydi va bitta to'liq tebranish 0,04 sekund davom etadi. k ni toping.",
+      "v": [
+        "25π",
+        "50π",
+        "π/50",
+        "100π"
+      ],
+      "t": 1,
+      "izoh": "Sinusli tebranish uchun davr T = 2π/k, ya'ni k = 2π/T. Shartda T = 0,04 s, demak k = 2π : 0,04 = 2π·25 = 50π. Ikkilikni unutib k = π/0,04 = 25π deb yozish yoki formulani teskari qo'llab π/50 olish tipik xatolar. Javob: 50π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davr-koeffitsient-topish",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#460d0182"
+    },
+    {
+      "q": "f juft funksiya bo'lib, uning davri 6 ga teng va f(2) = 9 ekani ma'lum. f(−14) qiymatini hisoblang.",
+      "v": [
+        "9",
+        "−9",
+        "0",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Avval davriylikdan foydalanamiz: argumentga uch marta 6 ni qo'shsak, f(−14) = f(−14 + 18) = f(4). Yana bir davrni ayiramiz: f(4) = f(4 − 6) = f(−2). Endi juftlik ishlaydi: f(−2) = f(2) = 9. Toqlik deb o'ylab ishorani almashtirish −9 xatosini beradi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-va-davriy-birga",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#8b18d5e4"
+    },
+    {
+      "q": "f toq funksiya bo'lib, davri 8 ga teng va f(3) = −5 ekani berilgan. f(21) qiymati qancha bo'ladi?",
+      "v": [
+        "−5",
+        "5",
+        "3",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Davriylik bilan argumentni kichiklashtiramiz: 21 dan ikkita davr, ya'ni 16 ni ayiramiz va f(21) = f(5) hosil bo'ladi. Yana bir davrni ayiramiz: f(5) = f(5 − 8) = f(−3). Toqlikdan f(−3) = −f(3) = −(−5) = 5. Ikki minusni hisobga olmaslik −5 xatosini beradi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-va-davriy-birga",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#012d215a"
+    },
+    {
+      "q": "f juft funksiya bo'lib, davri 4 ga teng va f(1) = 7. Katta argumentdagi f(2027) qiymatini toping.",
+      "v": [
+        "7",
+        "−7",
+        "0",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "2027 sonini 4 ga bo'lamiz: 2027 = 4·506 + 3, ya'ni qoldiq 3. Demak f(2027) = f(3). Yana bir davrni ayiramiz: f(3) = f(3 − 4) = f(−1). Juftlikdan f(−1) = f(1) = 7. Qoldiqni to'g'ri topgan bilan juftlik qadamini tashlab yuborish javobni noto'g'ri qiladi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-va-davriy-birga",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#626cf8ef"
+    },
+    {
+      "q": "f toq funksiya bo'lib, uning davri 10 ga teng. f(2) + f(8) yig'indisi nimaga teng bo'lishini aniqlang.",
+      "v": [
+        "2·f(2)",
+        "f(4)",
+        "0",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "Davriylikdan f(8) = f(8 − 10) = f(−2). Toqlikdan esa f(−2) = −f(2). Demak yig'indi f(2) + (−f(2)) = 0 bo'ladi va bu natija f(2) ning aniq qiymatiga bog'liq emas. Davriylikni juftlik bilan chalkashtirish 2·f(2) xatosini beradi, f(4) esa shartlar bilan bog'lanmagan erkin qiymat va nolga teng bo'lishi shart emas. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-va-davriy-birga",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#bfca09f6"
+    },
+    {
+      "q": "y = |sin x| funksiyaning eng kichik musbat davrini toping va tanlovingizni izohlang.",
+      "v": [
+        "2π",
+        "π",
+        "π/2",
+        "4π"
+      ],
+      "t": 1,
+      "izoh": "Modul sinusning manfiy qismini yuqoriga qaytaradi, shuning uchun grafik ilgarigidan ikki marta tez takrorlanadi. Tekshiramiz: |sin(x + π)| = |−sin x| = |sin x|, ya'ni π davr bo'ladi. Undan kichik musbat son davr bo'la olmaydi, chunki grafikdagi bitta gumbaz aynan π uzunlikda. Javob: π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-modul-kvadrat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#882ece00"
+    },
+    {
+      "q": "y = cos²x funksiyaning eng kichik musbat davri qanday songa teng bo'lishini aniqlang.",
+      "v": [
+        "2π",
+        "3π",
+        "π/2",
+        "π"
+      ],
+      "t": 3,
+      "izoh": "Darajani pasaytirish formulasidan foydalanamiz: cos²x = (1 + cos 2x)/2. Bu yerda argument oldida 2 koeffitsient turibdi, shuning uchun davr 2π/2 = π. Boshqacha aytganda kvadratga ko'tarish manfiy qiymatlarni musbatga aylantiradi va grafik ikki marta tez takrorlanadi. Kosinusning asl davrini o'zgarmagan deb hisoblab 2π yozish tipik xato. Javob: π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-modul-kvadrat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#43e01c1a"
+    },
+    {
+      "q": "y = |tg x| funksiyaning eng kichik musbat davri qanchaga teng bo'lishini toping.",
+      "v": [
+        "π/2",
+        "2π",
+        "π/4",
+        "π"
+      ],
+      "t": 3,
+      "izoh": "Tangensning o'zi π davrga ega, ya'ni tg(x + π) = tg x va shuning uchun |tg(x + π)| = |tg x|. Sinus va kosinusdan farqli o'laroq modul bu yerda davrni qisqartirmaydi, chunki tangens bitta davr ichida ham musbat, ham manfiy qiymatlarni allaqachon to'liq oladi. Modul bor deb π/2 yozish tipik xato. Javob: π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davr-modul-kvadrat",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#ef7b6431"
+    },
+    {
+      "q": "Barcha x qiymatlarda f(x + 3) = −f(x) tenglik o'rinli bo'lsa, quyidagi sonlardan qaysi biri albatta f funksiyaning davri bo'ladi?",
+      "v": [
+        "3",
+        "9",
+        "15",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Shartni ikki marta qo'llaymiz: f(x + 6) = f((x + 3) + 3) = −f(x + 3) = −(−f(x)) = f(x). Demak 6 son albatta davr bo'ladi. 3, 9 va 15 esa 3 ning toq karralari: ularda ishora toq marta almashadi va masalan f(x + 15) = −f(x) bo'lib qoladi, ya'ni davr emas. Shartni bir marta o'qib 3 deb javob berish eng ko'p uchraydigan xato. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "funksional-tenglama-davr",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#ae113aed"
+    },
+    {
+      "q": "Nolga aylanmaydigan f funksiya uchun barcha x da f(x + 5) = 1/f(x) tenglik bajariladi. Quyidagi sonlardan qaysi biri albatta uning davri bo'ladi?",
+      "v": [
+        "10",
+        "5",
+        "15",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "Shartni ketma-ket ikki marta qo'llaymiz: f(x + 10) = 1/f(x + 5) = 1 : (1/f(x)) = f(x). Demak 10 son albatta davr bo'ladi. 5, 15 va 25 — 5 ning toq karralari, ularda almashtirish toq marta qo'llanadi va f(x + 25) = 1/f(x) bo'lib qoladi, bu esa umumiy holda f(x) ga teng emas. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "funksional-tenglama-davr",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#9a35a1f5"
+    },
+    {
+      "q": "Barcha haqiqiy x uchun f(x + 2) = f(x − 2) tenglik bajarilsa, quyidagi sonlardan qaysi biri albatta f funksiyaning davri bo'ladi?",
+      "v": [
+        "2",
+        "6",
+        "10",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Tenglikda x o'rniga x + 2 ni qo'yamiz: f(x + 4) = f(x). Bu esa aynan davriylik ta'rifi bo'lib, 4 son albatta davr ekanini bildiradi. Qolgan sonlar 4 ga karrali emas, shuning uchun ular hamma vaqt davr bo'lavermaydi: masalan f(x) = cos(πx/2) shartni qanoatlantiradi, lekin f(x + 6) = −f(x). Shartdagi 2 sonini javob deb olish tipik xato. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "funksional-tenglama-davr",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#ec3f47a6"
+    },
+    {
+      "q": "Barcha x uchun f(x + 7) = −f(x) tenglik o'rinli va f(2) = 12 ekani ma'lum. f(16) qiymatini toping.",
+      "v": [
+        "−12",
+        "24",
+        "6",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Avval davrni topamiz: shartni ikki marta qo'llasak f(x + 14) = −f(x + 7) = f(x), demak davr 14. Endi argumentni kamaytiramiz: f(16) = f(16 − 14) = f(2) = 12. Shartni bir marta qo'llab ishorani almashtirish −12 xatosini beradi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "funksional-tenglama-davr",
+      "id": "matematika_funk_m08-funksiya-xossalari-juft-toqlik-va#9b01e94b"
+    }
+  ]
+}

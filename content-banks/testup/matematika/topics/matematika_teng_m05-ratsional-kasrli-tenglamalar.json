@@ -1,0 +1,1609 @@
+{
+  "nom": "Ratsional (kasrli) tenglamalar",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "(2x + 5)/(x − 7) = 3 tenglamaning aniqlanish sohasi qaysi shart bilan berilgan?",
+      "v": [
+        "x ≠ 7",
+        "x ≠ −7",
+        "x ≠ 2,5",
+        "x ≠ 3"
+      ],
+      "t": 0,
+      "izoh": "Kasrli tenglamada maxraj nolga teng bo'lmasligi shart. x − 7 = 0 tenglamadan x = 7 chiqadi, demak aynan shu qiymat chiqarib tashlanadi. Ishorani almashtirib x ≠ −7 deb yozish tipik xato. Javob: x ≠ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "odz-aniqlash",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#acf3792e"
+    },
+    {
+      "q": "x/(x² − 9) = 4 tenglamada noma'lumning aniqlanish sohasidan chiqarib tashlanadigan sonlarni ko'rsating.",
+      "v": [
+        "9 va −9",
+        "faqat 3",
+        "3 va −3",
+        "0 va 9"
+      ],
+      "t": 2,
+      "izoh": "Maxraj x² − 9 nolga aylanmasligi kerak. x² − 9 = 0 tenglamadan x² = 9, ya'ni x = 3 va x = −3 kelib chiqadi. Ikkala ildizni ham hisobga olish shart, faqat musbatini yozish yetarli emas. Javob: 3 va −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "odz-aniqlash",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#b877d6f4"
+    },
+    {
+      "q": "5/(x − 2) + 3/(x + 6) = 1 tenglamada noma'lum qanday qiymatlarni qabul qila olmaydi?",
+      "v": [
+        "−2 va 6",
+        "2 va −6",
+        "2 va 6",
+        "−2 va −6"
+      ],
+      "t": 1,
+      "izoh": "Har ikkala maxraj ham nolga aylanmasligi kerak. x − 2 ≠ 0 shartidan x ≠ 2, x + 6 ≠ 0 shartidan esa x ≠ −6 kelib chiqadi. Maxrajdagi ishorani javobga o'zgarishsiz ko'chirish eng ko'p uchraydigan xato. Javob: 2 va −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "odz-aniqlash",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#d5b198fd"
+    },
+    {
+      "q": "Nodira (x + 4)/(x² − 5x) = 0 tenglamaning aniqlanish sohasini daftariga yozmoqchi. To'g'ri yozuvni tanlang.",
+      "v": [
+        "x ≠ 0 va x ≠ 5",
+        "x ≠ 0 va x ≠ −5",
+        "x ≠ 5",
+        "x ≠ −4"
+      ],
+      "t": 0,
+      "izoh": "Maxrajni ko'paytuvchilarga ajratamiz: x² − 5x = x(x − 5). Bu ko'paytma x = 0 va x = 5 da nolga aylanadi. Demak ODZ ikkita shartdan iborat, faqat bittasini yozib qo'yish chala javob bo'ladi. Javob: x ≠ 0 va x ≠ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "odz-aniqlash",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#f0a974d7"
+    },
+    {
+      "q": "7/(2x − 3) = x tenglamada maxraj nolga aylanadigan qiymatni topib, uni aniqlanish sohasidan chiqaring.",
+      "v": [
+        "0,5",
+        "3",
+        "1,5",
+        "−1,5"
+      ],
+      "t": 2,
+      "izoh": "Maxrajni nolga tenglaymiz: 2x − 3 = 0, bundan 2x = 3 va x = 1,5. Aynan shu nuqtada kasr ma'noga ega bo'lmaydi, shuning uchun u ODZ ga kirmaydi. Ikkiga bo'lishni unutib x = 3 deb yozish tipik xato. Javob: 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "odz-aniqlash",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#89844cb6"
+    },
+    {
+      "q": "(x² − 16)/(x − 4) = 0 tenglamaning haqiqiy ildizini toping.",
+      "v": [
+        "4",
+        "−4",
+        "4 va −4",
+        "Ildizi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Kasr nolga teng bo'lishi uchun surat nol, maxraj esa noldan farqli bo'lishi kerak. x² − 16 = 0 dan x = 4 va x = −4 chiqadi. Lekin x = 4 da maxraj nolga aylanadi, shuning uchun u chetki ildiz sifatida tashlanadi. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-nolga-teng",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#0260dc0b"
+    },
+    {
+      "q": "Kasr nolga teng bo'lishi uchun surat nolga aylanishi shart. Shu qoidaga ko'ra (3x − 12)/(x + 5) = 0 tenglamaning yechimini toping.",
+      "v": [
+        "−5",
+        "12",
+        "4",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "Suratni nolga tenglaymiz: 3x − 12 = 0, bundan 3x = 12 va x = 4. Maxrajni tekshiramiz: 4 + 5 = 9, u noldan farqli. Demak topilgan son haqiqiy ildiz. Uch koeffitsientga bo'lishni unutsa, 12 javobi chiqadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-nolga-teng",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#7843c584"
+    },
+    {
+      "q": "(x² − 3x)/(x − 3) = 0 tenglamani yeching va chetki ildizni chiqarib tashlang.",
+      "v": [
+        "3",
+        "0 va 3",
+        "−3",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "Suratni ko'paytuvchilarga ajratamiz: x² − 3x = x(x − 3), u x = 0 va x = 3 da nolga teng. Maxraj x − 3 esa x = 3 da nolga aylanadi, ya'ni bu qiymat ODZ ga kirmaydi. Shunday qilib faqat bitta ildiz qoladi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-nolga-teng",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#9ae88ca6"
+    },
+    {
+      "q": "Anvar (x² − 7x + 10)/(x − 2) = 0 tenglamani yechib, ikkita ildiz yozdi. Tenglamaning haqiqiy yechimi qanday?",
+      "v": [
+        "Bitta ildiz: x = 5",
+        "Ikkita ildiz: x = 2 va x = 5",
+        "Bitta ildiz: x = 2",
+        "Yechimi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Surat ko'paytuvchilarga ajraladi: x² − 7x + 10 = (x − 2)(x − 5), ya'ni x = 2 va x = 5. Maxraj x − 2 birinchi qiymatda nolga aylangani uchun x = 2 chetki ildiz. Anvar aynan shu tekshiruvni tashlab ketgan. Javob: bitta ildiz, x = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-nolga-teng",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#12117ec4"
+    },
+    {
+      "q": "(2x + 6)/(x² − 9) = 0 tenglama nechta ildizga ega ekanini aniqlang va sababini ko'rsating.",
+      "v": [
+        "Bitta, x = −3",
+        "Bitta, x = 3",
+        "Ikkita, x = 3 va x = −3",
+        "Bitta ham yo'q, chunki x = −3 maxrajni nolga aylantiradi"
+      ],
+      "t": 3,
+      "izoh": "Surat 2x + 6 = 0 shartidan x = −3 chiqadi. Maxraj x² − 9 = (x − 3)(x + 3) esa x = −3 da ham nolga aylanadi. Demak yagona nomzod ildiz aniqlanish sohasiga kirmaydi va tenglama yechimsiz. Javob: bitta ham yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-nolga-teng",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#32114634"
+    },
+    {
+      "q": "x/(x − 4) = 4/(x − 4) + 2 tenglamani ikkala tomonni (x − 4) ga ko'paytirib yechganda qanday natija olinadi?",
+      "v": [
+        "x = 4 chetki ildiz, tenglama yechimga ega emas",
+        "x = 4 yagona ildiz",
+        "x = 2 yagona ildiz",
+        "Tenglama cheksiz ko'p yechimga ega"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytirgandan keyin x = 4 + 2(x − 4) hosil bo'ladi. Qavsni ochamiz: x = 2x − 4, bundan x = 4. Ammo x = 4 da (x − 4) maxraji nolga aylanadi, ya'ni bu son ODZ ga kirmaydi. Javob: yechimga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetki-ildizni-aniqlash",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#6ae691bd"
+    },
+    {
+      "q": "x²/(x − 2) = 4/(x − 2) tenglamaning barcha nomzod ildizlarini topib, chetkisini chiqarib tashlang.",
+      "v": [
+        "x = 2 va x = −2",
+        "x = 2",
+        "x = −2",
+        "Yechimi yo'q"
+      ],
+      "t": 2,
+      "izoh": "Maxrajlar bir xil bo'lgani uchun suratlarni tenglaymiz: x² = 4, bundan x = 2 va x = −2. Aniqlanish sohasiga ko'ra x ≠ 2, demak birinchi qiymat chetki ildiz. Ikkalasini ham javobga yozish tipik xato. Javob: x = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetki-ildizni-aniqlash",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#3141a147"
+    },
+    {
+      "q": "(x + 1)/(x − 5) = 6/(x − 5) tenglamaning yechimlar to'plamini aniqlang.",
+      "v": [
+        "x = 6",
+        "x = 5",
+        "x = −5",
+        "Yechimi yo'q"
+      ],
+      "t": 3,
+      "izoh": "Maxrajlar teng bo'lgani uchun suratlarni tenglaymiz: x + 1 = 6, ya'ni x = 5. Ammo x = 5 da maxraj x − 5 nolga aylanadi va bu qiymat aniqlanish sohasidan chiqarilgan. Boshqa nomzod yo'q. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetki-ildizni-aniqlash",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#1e3e1a60"
+    },
+    {
+      "q": "(x + 7)/(x² − 49) = 1/(x − 7) tenglamani qanoatlantiruvchi x qiymatlari to'plamini toping.",
+      "v": [
+        "Faqat x = 7",
+        "x ≠ 7 va x ≠ −7 shartini qanoatlantiruvchi barcha sonlar",
+        "Faqat x = −7",
+        "Yechimi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Maxrajni yoyamiz: x² − 49 = (x − 7)(x + 7). Chap tomondagi kasr (x + 7) ga qisqargach 1/(x − 7) bo'ladi, ya'ni ikki tomon ayniy teng. Shuning uchun ODZ dagi har bir son yechim bo'ladi. Javob: x ≠ 7 va x ≠ −7 bo'lgan barcha sonlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chetki-ildizni-aniqlash",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#afaca107"
+    },
+    {
+      "q": "Malika 8/(x² − 4) = 2/(x − 2) tenglamani yechib, x = 2 javobini oldi. Uning javobi to'g'rimi va nima uchun?",
+      "v": [
+        "Ha, x = 2 yagona to'g'ri ildiz",
+        "Yo'q, x = 2 chetki ildiz va tenglama yechimga ega emas",
+        "Yo'q, to'g'ri javob x = −2",
+        "Yo'q, to'g'ri javob x = 4"
+      ],
+      "t": 1,
+      "izoh": "x² − 4 = (x − 2)(x + 2) bo'lgani uchun tenglama 8 = 2(x + 2) ko'rinishiga keladi va x = 2 chiqadi. Biroq ODZ ga ko'ra x ≠ 2, ya'ni topilgan son maxrajni nolga aylantiradi. Hisob to'g'ri, tekshiruv tashlab ketilgan. Javob: yo'q, bu chetki ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chetki-ildizni-aniqlash",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#a7ffc53e"
+    },
+    {
+      "q": "12/(x + 3) = 4 tenglamaning ildizini toping.",
+      "v": [
+        "0",
+        "3",
+        "−3",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Ikkala tomonni (x + 3) ga ko'paytiramiz: 12 = 4(x + 3). Qavsni ochib 12 = 4x + 12 hosil qilamiz, bundan 4x = 0 va x = 0. Maxraj 0 + 3 = 3, u noldan farqli, demak ildiz to'g'ri. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-kasrli-tenglama",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#4425dd13"
+    },
+    {
+      "q": "(3x − 1)/5 = (x + 7)/3 tenglamaning ildizini hisoblang.",
+      "v": [
+        "8",
+        "9,5",
+        "19",
+        "4,75"
+      ],
+      "t": 1,
+      "izoh": "Krest usulida ko'paytiramiz: 3(3x − 1) = 5(x + 7). Qavslarni ochamiz: 9x − 3 = 5x + 35. Noma'lumlarni bir tomonga yig'amiz: 4x = 38, bundan x = 9,5. Javob: 9,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-kasrli-tenglama",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#72c0763d"
+    },
+    {
+      "q": "Rustam 20/x − 3 = 2 tenglamani yechmoqda. U qanday ildiz olishi kerak?",
+      "v": [
+        "10",
+        "5",
+        "4",
+        "0,25"
+      ],
+      "t": 2,
+      "izoh": "Avval erkin hadni o'ng tomonga o'tkazamiz: 20/x = 5. Ikkala tomonni x ga ko'paytirib 20 = 5x hosil qilamiz, bundan x = 4. Bo'linuvchi va bo'luvchini almashtirib yuborsa, 5 javobi chiqadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-kasrli-tenglama",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#3dce1879"
+    },
+    {
+      "q": "7/(2x + 1) = 1/3 tenglamaning yechimini hisoblang.",
+      "v": [
+        "11",
+        "3,5",
+        "20",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Krest ko'paytirish beradi: 7·3 = 2x + 1, ya'ni 21 = 2x + 1. Bundan 2x = 20 va x = 10. Ikkiga bo'lishni unutsa, o'quvchi 20 javobini oladi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-kasrli-tenglama",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#c6ff84a1"
+    },
+    {
+      "q": "(x − 2)/(x + 4) = 3/5 proporsiyani qanoatlantiruvchi x qiymatini toping.",
+      "v": [
+        "11",
+        "−11",
+        "1",
+        "22"
+      ],
+      "t": 0,
+      "izoh": "Proporsiyada chetki hadlar ko'paytmasi o'rta hadlar ko'paytmasiga teng: 5(x − 2) = 3(x + 4). Qavslarni ochamiz: 5x − 10 = 3x + 12. Bundan 2x = 22 va x = 11. Ikkiga bo'lishni tashlab ketsa, 22 chiqadi. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "krest-koapaytirish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#c239fb31"
+    },
+    {
+      "q": "(2x + 1)/(x − 3) = 5/2 nisbatdan noma'lumni toping.",
+      "v": [
+        "−17",
+        "17",
+        "13",
+        "2,5"
+      ],
+      "t": 1,
+      "izoh": "Krest ko'paytirish qilamiz: 2(2x + 1) = 5(x − 3). Qavslarni ochamiz: 4x + 2 = 5x − 15. Noma'lumni bir tomonga o'tkazamiz: 17 = x. Ishorani noto'g'ri ko'chirsa, o'quvchi −17 javobini oladi. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "krest-koapaytirish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#a245a59f"
+    },
+    {
+      "q": "(x + 6)/(x − 1) = (x + 2)/(x − 4) tenglamada kvadratlar qisqarishini hisobga olib x ni toping.",
+      "v": [
+        "26",
+        "22",
+        "−22",
+        "−26"
+      ],
+      "t": 1,
+      "izoh": "Krest ko'paytiramiz: (x + 6)(x − 4) = (x + 2)(x − 1). Chap tomon x² + 2x − 24, o'ng tomon x² + x − 2 bo'ladi. x² hadlari qisqaradi: 2x − 24 = x − 2, bundan x = 22. Erkin hadlar ishorasini chalkashtirsa, 26 chiqadi. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "krest-koapaytirish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#8db29562"
+    },
+    {
+      "q": "(2x − 1)/(x + 3) = (2x + 3)/(x + 7) tenglamaning ildizini hisoblang.",
+      "v": [
+        "4",
+        "−4",
+        "16",
+        "0,25"
+      ],
+      "t": 0,
+      "izoh": "Krest ko'paytiramiz: (2x − 1)(x + 7) = (2x + 3)(x + 3). Chap tomon 2x² + 13x − 7, o'ng tomon 2x² + 9x + 9. Kvadratli hadlar qisqargach 13x − 7 = 9x + 9, ya'ni 4x = 16 va x = 4. To'rtga bo'lishni unutsa, 16 javobi chiqadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "krest-koapaytirish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#9313464c"
+    },
+    {
+      "q": "1/x + 1/(x + 5) = 1/6 tenglamaning musbat ildizini toping.",
+      "v": [
+        "10",
+        "−3",
+        "7",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Umumiy maxraj 6x(x + 5) ga keltiramiz: 6(x + 5) + 6x = x(x + 5). Soddalashtiramiz: 12x + 30 = x² + 5x, ya'ni x² − 7x − 30 = 0. Ildizlari x = 10 va x = −3, ulardan musbati x = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-sonlar-yigindisi-tenglamasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#3ac8240a"
+    },
+    {
+      "q": "1/(x − 3) + 1/(x + 3) = 1/4 tenglamaning kichik ildizini aniqlang.",
+      "v": [
+        "9",
+        "−1",
+        "8",
+        "−9"
+      ],
+      "t": 1,
+      "izoh": "Chap tomonni umumiy maxrajga keltiramiz: 2x/(x² − 9) = 1/4. Krest ko'paytiramiz: 8x = x² − 9, ya'ni x² − 8x − 9 = 0. Ildizlari x = 9 va x = −1, ulardan kichigi x = −1. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-sonlar-yigindisi-tenglamasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#202999fb"
+    },
+    {
+      "q": "2/(x − 1) + 3/(x + 1) = 5/(x² − 1) tenglamani yeching.",
+      "v": [
+        "1",
+        "0,4",
+        "1,2",
+        "−1,2"
+      ],
+      "t": 2,
+      "izoh": "x² − 1 = (x − 1)(x + 1) bo'lgani uchun umumiy maxraj shu ko'paytma. Suratlarni tenglaymiz: 2(x + 1) + 3(x − 1) = 5, ya'ni 5x − 1 = 5. Bundan 5x = 6 va x = 1,2. Aniqlanish sohasi x ≠ 1 va x ≠ −1 shartini buzmaydi. Javob: 1,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-sonlar-yigindisi-tenglamasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#64749efe"
+    },
+    {
+      "q": "4/(x + 2) − 1/(x − 2) = 8/(x² − 4) tenglamaning ildizini toping.",
+      "v": [
+        "2,8",
+        "−6",
+        "2",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Umumiy maxraj (x − 2)(x + 2). Suratlar tengligi: 4(x − 2) − (x + 2) = 8. Qavsni ochamiz: 4x − 8 − x − 2 = 8, ya'ni 3x = 18 va x = 6. Ikkinchi kasr oldidagi minusni faqat birinchi hadga tarqatsa, 2,8 chiqadi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-sonlar-yigindisi-tenglamasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#fe1be7f8"
+    },
+    {
+      "q": "x + 6/x = 5 tenglamaning barcha ildizlarini toping.",
+      "v": [
+        "−2 va −3",
+        "1 va 6",
+        "2 va 3",
+        "5 va 6"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonni x ga ko'paytiramiz: x² + 6 = 5x. Kvadrat tenglamaga keltiramiz: x² − 5x + 6 = 0. Viyet teoremasi bo'yicha ildizlar yig'indisi 5, ko'paytmasi 6, ya'ni x = 2 va x = 3. Ikkalasi ham noldan farqli, demak ODZ buzilmaydi. Javob: 2 va 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-tenglamaga-keltirish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#c625c611"
+    },
+    {
+      "q": "(x + 1)/(x − 1) + (x − 1)/(x + 1) = 10/3 tenglamaning ildizlarini aniqlang.",
+      "v": [
+        "1 va −1",
+        "3 va −3",
+        "2 va −2",
+        "4 va −4"
+      ],
+      "t": 2,
+      "izoh": "Umumiy maxrajga keltiramiz: ((x + 1)² + (x − 1)²)/(x² − 1) = 10/3. Surat 2x² + 2 ga soddalashadi. Krest ko'paytirish: 6x² + 6 = 10x² − 10, bundan 4x² = 16 va x² = 4. Demak x = 2 va x = −2, ikkalasi ham ODZ ga kiradi. Javob: 2 va −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-tenglamaga-keltirish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#74c04d17"
+    },
+    {
+      "q": "12/(x − 1) − 12/(x + 1) = 1 tenglamaning musbat ildizini hisoblang.",
+      "v": [
+        "−5",
+        "25",
+        "24",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Suratlarni birlashtiramiz: 12((x + 1) − (x − 1))/(x² − 1) = 1, ya'ni 24/(x² − 1) = 1. Bundan x² − 1 = 24 va x² = 25. Ildizlar x = 5 va x = −5, musbati x = 5. Kvadrat ildizni olishni unutsa, 25 javobi chiqadi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-tenglamaga-keltirish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#fa32d691"
+    },
+    {
+      "q": "x/(x − 3) − 3/(x + 3) = 18/(x² − 9) tenglamaning yechimlar to'plamini toping.",
+      "v": [
+        "x = 3",
+        "x = −3",
+        "x = 3 va x = −3",
+        "Bo'sh to'plam"
+      ],
+      "t": 3,
+      "izoh": "Umumiy maxraj (x − 3)(x + 3). Suratlar tengligi: x(x + 3) − 3(x − 3) = 18, ya'ni x² + 3x − 3x + 9 = 18. Bundan x² = 9 va x = ±3. Ammo ODZ ga ko'ra x ≠ 3 va x ≠ −3, demak ikkala nomzod ham chetki ildiz. Javob: bo'sh to'plam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-tenglamaga-keltirish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#5a215249"
+    },
+    {
+      "q": "(x² + 21)/x = 10 tenglamaning katta ildizini hisoblang.",
+      "v": [
+        "3",
+        "7",
+        "10",
+        "21"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni x ga ko'paytiramiz: x² + 21 = 10x. Kvadrat tenglama x² − 10x + 21 = 0 ko'rinishini oladi. Diskriminant D = 100 − 84 = 16, ildizlar x = 3 va x = 7. Kattasi x = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-tenglamaga-keltirish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#8534d278"
+    },
+    {
+      "q": "1/(x² − x) + 1/(x − 1) = 3/x tenglamani maxrajlarni ko'paytuvchilarga ajratib yeching.",
+      "v": [
+        "1",
+        "4",
+        "0",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Maxrajni ajratamiz: x² − x = x(x − 1), demak umumiy maxraj x(x − 1). Suratlar tengligi: 1 + x = 3(x − 1). Qavsni ochamiz: 1 + x = 3x − 3, bundan 2x = 4 va x = 2. ODZ x ≠ 0 va x ≠ 1 shartini buzmaydi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxrajni-koapaytuvchilarga-ajratish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#7635072d"
+    },
+    {
+      "q": "x/(x² + 5x + 6) = 1/(x + 2) − 1/(x + 3) tenglamaning ildizini toping.",
+      "v": [
+        "−2",
+        "1",
+        "5",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Maxrajni ajratamiz: x² + 5x + 6 = (x + 2)(x + 3). O'ng tomonni umumiy maxrajga keltiramiz: ((x + 3) − (x + 2))/((x + 2)(x + 3)) = 1/((x + 2)(x + 3)). Suratlarni tenglaymiz: x = 1. ODZ x ≠ −2 va x ≠ −3, demak ildiz to'g'ri. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maxrajni-koapaytuvchilarga-ajratish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#492d8564"
+    },
+    {
+      "q": "20/(x² − 5x) = 3/(x − 5) − 1/x tenglamaning yechimini toping.",
+      "v": [
+        "5",
+        "12,5",
+        "7,5",
+        "2,5"
+      ],
+      "t": 2,
+      "izoh": "Maxrajni ajratamiz: x² − 5x = x(x − 5). O'ng tomonni shu maxrajga keltiramiz: (3x − (x − 5))/(x(x − 5)) = (2x + 5)/(x(x − 5)). Suratlar tengligi: 20 = 2x + 5, bundan 2x = 15 va x = 7,5. Javob: 7,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maxrajni-koapaytuvchilarga-ajratish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#c52b386f"
+    },
+    {
+      "q": "(x + 3)/(x² − 9) + 2/(x − 3) = 1 tenglamaning ildizini aniqlang.",
+      "v": [
+        "6",
+        "3",
+        "9",
+        "−6"
+      ],
+      "t": 0,
+      "izoh": "Birinchi kasrda x² − 9 = (x − 3)(x + 3) bo'lgani uchun u 1/(x − 3) ga qisqaradi. Tenglama 3/(x − 3) = 1 ko'rinishini oladi. Bundan x − 3 = 3 va x = 6. ODZ x ≠ 3 va x ≠ −3 shartini buzmaydi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxrajni-koapaytuvchilarga-ajratish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#89750b63"
+    },
+    {
+      "q": "2/(x² + 1) + (x² + 1)/2 = 2 tenglamaning haqiqiy ildizlarini toping.",
+      "v": [
+        "0",
+        "2 va −2",
+        "1 va −1",
+        "Haqiqiy ildizi yo'q"
+      ],
+      "t": 2,
+      "izoh": "Almashtirish kiritamiz: t = x² + 1. Tenglama 2/t + t/2 = 2 ko'rinishiga keladi. Ikkala tomonni 2t ga ko'paytiramiz: 4 + t² = 4t, ya'ni (t − 2)² = 0 va t = 2. Demak x² + 1 = 2, bundan x² = 1 va x = ±1. Javob: 1 va −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-usuli",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#3cf1ef3a"
+    },
+    {
+      "q": "(x − 1)/x + 6x/(x − 1) = 5 tenglamani almashtirish kiritib yeching.",
+      "v": [
+        "2 va 3",
+        "−1 va −0,5",
+        "1 va 0,5",
+        "−2 va −3"
+      ],
+      "t": 1,
+      "izoh": "t = (x − 1)/x deb belgilaymiz, u holda x/(x − 1) = 1/t va tenglama t + 6/t = 5 bo'ladi. Bundan t² − 5t + 6 = 0, ya'ni t = 2 va t = 3. Birinchi holda x − 1 = 2x, x = −1; ikkinchi holda x − 1 = 3x, x = −0,5. Javob: −1 va −0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-usuli",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#a147a3cc"
+    },
+    {
+      "q": "x²/(x + 1)² + 2x/(x + 1) = 8 tenglamaning ildizlarini aniqlang.",
+      "v": [
+        "2 va 4",
+        "−2 va 4",
+        "2 va −0,8",
+        "−2 va −0,8"
+      ],
+      "t": 3,
+      "izoh": "t = x/(x + 1) almashtirishini kiritamiz, u holda t² + 2t − 8 = 0. Ildizlari t = 2 va t = −4. Birinchisidan x = 2x + 2, ya'ni x = −2. Ikkinchisidan x = −4x − 4, ya'ni 5x = −4 va x = −0,8. Javob: −2 va −0,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-usuli",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#fd4833d9"
+    },
+    {
+      "q": "3/(x² − 2x) = (x² − 2x)/3 tenglamaning haqiqiy ildizlarini toping.",
+      "v": [
+        "−3 va 1",
+        "3 va −1",
+        "3 va 1",
+        "−3 va −1"
+      ],
+      "t": 1,
+      "izoh": "t = x² − 2x deb olamiz: 3/t = t/3. Krest ko'paytirish t² = 9 beradi, ya'ni t = 3 yoki t = −3. Birinchi holda x² − 2x − 3 = 0 va x = 3, x = −1. Ikkinchi holda x² − 2x + 3 = 0, diskriminanti manfiy, haqiqiy ildiz yo'q. Javob: 3 va −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-usuli",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#56cb964f"
+    },
+    {
+      "q": "x/(x − 2) + (x − 2)/x = 5/2 tenglama ildizlarining yig'indisini toping.",
+      "v": [
+        "2",
+        "−2",
+        "6",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Umumiy maxraj x(x − 2). Suratlarni qo'shamiz: x² + (x − 2)² = 2x² − 4x + 4. Krest ko'paytirish: 2(2x² − 4x + 4) = 5(x² − 2x), bundan x² − 2x − 8 = 0. Ildizlari x = 4 va x = −2, ularning yig'indisi 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-yigindisi-va-koapaytmasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#1adda45c"
+    },
+    {
+      "q": "x + 12/x = 7 tenglama ildizlarining ko'paytmasi nechaga teng?",
+      "v": [
+        "7",
+        "12",
+        "−12",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni x ga ko'paytiramiz: x² + 12 = 7x, ya'ni x² − 7x + 12 = 0. Viyet teoremasiga ko'ra ildizlar ko'paytmasi erkin hadga teng, ya'ni 12. Tekshirish uchun ildizlarni ham topish mumkin: x = 3 va x = 4, ko'paytmasi 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-yigindisi-va-koapaytmasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#1b3d587b"
+    },
+    {
+      "q": "1/x + 1/(x − 6) = 1/4 tenglama ildizlarining yig'indisi nechaga teng?",
+      "v": [
+        "24",
+        "10",
+        "−14",
+        "14"
+      ],
+      "t": 3,
+      "izoh": "Chap tomonni umumiy maxrajga keltiramiz: (2x − 6)/(x(x − 6)) = 1/4. Krest ko'paytirish: 8x − 24 = x² − 6x, ya'ni x² − 14x + 24 = 0. Viyet teoremasiga ko'ra ildizlar yig'indisi 14. Ildizlar x = 12 va x = 2, ikkalasi ham ODZ ga kiradi. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-yigindisi-va-koapaytmasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#37febec0"
+    },
+    {
+      "q": "(x − 3)/(x + 2) + (x + 2)/(x − 3) = 13/6 tenglama ildizlarining yig'indisini hisoblang.",
+      "v": [
+        "1",
+        "−1",
+        "25",
+        "156"
+      ],
+      "t": 0,
+      "izoh": "Umumiy maxraj (x + 2)(x − 3). Surat (x − 3)² + (x + 2)² = 2x² − 2x + 13 bo'ladi. Krest ko'paytirish: 6(2x² − 2x + 13) = 13(x² − x − 6), bundan x² − x − 156 = 0. Viyet teoremasiga ko'ra yig'indi 1, ildizlar esa 13 va −12. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-yigindisi-va-koapaytmasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#fab09f07"
+    },
+    {
+      "q": "a ning qanday qiymatida (2x − a)/(x − 5) = 0 tenglama birorta ham ildizga ega bo'lmaydi?",
+      "v": [
+        "a = 10",
+        "a = 5",
+        "a = 2,5",
+        "a = 0"
+      ],
+      "t": 0,
+      "izoh": "Kasr nolga teng bo'lishi uchun surat nol bo'lishi kerak: 2x − a = 0, bundan x = a/2. Bu son ODZ ga kirmasa, tenglama yechimsiz qoladi. Maxraj x = 5 da nolga aylanadi, demak a/2 = 5 va a = 10. Ikkiga ko'paytirishni unutsa, a = 5 chiqadi. Javob: a = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chetki-ildiz-sharti-parametr",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#0a4cb9ad"
+    },
+    {
+      "q": "b ning qanday qiymatida x/(x − 4) = b tenglama yechimga ega bo'lmaydi?",
+      "v": [
+        "b = 0",
+        "b = 4",
+        "b = 1",
+        "b = −1"
+      ],
+      "t": 2,
+      "izoh": "Maxrajga ko'paytiramiz: x = b(x − 4), ya'ni x(1 − b) = −4b. Agar b ≠ 1 bo'lsa, x = 4b/(b − 1) topiladi va u hech qachon 4 ga teng bo'lmaydi. Agar b = 1 bo'lsa, tenglik 0 = −4 ko'rinishiga keladi va bu yolg'on. Javob: b = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chetki-ildiz-sharti-parametr",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#ae8ccc9d"
+    },
+    {
+      "q": "m ning qanday qiymatlarida (x + m)/(x² − 4) = 0 tenglama ildizga ega bo'lmaydi?",
+      "v": [
+        "m = 2 yoki m = −2",
+        "m = 4",
+        "m = 0",
+        "m = −4"
+      ],
+      "t": 0,
+      "izoh": "Surat nolga teng bo'lganda x = −m chiqadi. Maxraj x² − 4 esa x = 2 va x = −2 da nolga aylanadi. Nomzod ildiz aynan shu nuqtalarga tushsa, u chetki bo'ladi: −m = 2 dan m = −2, −m = −2 dan m = 2. Javob: m = 2 yoki m = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chetki-ildiz-sharti-parametr",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#4534aedb"
+    },
+    {
+      "q": "Aziz uyning tomini 15 kunda, otasi esa xuddi shu ishni 10 kunda ta'mirlaydi. Ikkalasi birga ishlasa, tom necha kunda ta'mirlanadi?",
+      "v": [
+        "6 kun",
+        "5 kun",
+        "12,5 kun",
+        "25 kun"
+      ],
+      "t": 0,
+      "izoh": "Bir kunlik ish unumini olamiz: Aziz 1/15, otasi 1/10 qismini bajaradi. Birgalikdagi unum 1/15 + 1/10 = 2/30 + 3/30 = 5/30 = 1/6. Butun ish uchun kerakli vaqt shu unumga teskari son, ya'ni 6 kun. Vaqtlarni qo'shib 25 kun deyish tipik xato. Javob: 6 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birgalikda-ish-bajarish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#9fb93f97"
+    },
+    {
+      "q": "Ikki usta bir xil devorni bo'yaydi. Birinchisi ishni yolg'iz x kunda, ikkinchisi (x + 5) kunda tugatadi, birgalikda esa 6 kunda tugatishdi. Birinchi usta yolg'iz necha kunda bo'yaydi?",
+      "v": [
+        "15 kun",
+        "3 kun",
+        "10 kun",
+        "12 kun"
+      ],
+      "t": 2,
+      "izoh": "Tenglama tuzamiz: 1/x + 1/(x + 5) = 1/6. Umumiy maxrajga keltiramiz: 6(x + 5) + 6x = x(x + 5), ya'ni 12x + 30 = x² + 5x. Bundan x² − 7x − 30 = 0 va x = 10 (ikkinchi ildiz manfiy, ma'noga ega emas). Javob: 10 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birgalikda-ish-bajarish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#16d939fa"
+    },
+    {
+      "q": "Dilnoza gilamni yolg'iz 24 kunda to'qiydi. Singlisi bilan birgalikda ular shu gilamni 8 kunda to'qishdi. Singlisi yolg'iz necha kunda to'qiydi?",
+      "v": [
+        "16 kun",
+        "12 kun",
+        "32 kun",
+        "3 kun"
+      ],
+      "t": 1,
+      "izoh": "Birgalikdagi bir kunlik unum 1/8, Dilnozaniki 1/24. Singlisining unumi ayirmaga teng: 1/8 − 1/24 = 3/24 − 1/24 = 2/24 = 1/12. Demak u yolg'iz 12 kunda to'qiydi. Kunlarni ayirib 16 kun deyish tipik xato. Javob: 12 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birgalikda-ish-bajarish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#aa59a65b"
+    },
+    {
+      "q": "Ikki tikuvchi buyurtmani birgalikda 9 soatda bajaradi. Birinchisi yolg'iz 18 soatda bajarsa, ikkinchisi yolg'iz qancha vaqtda bajaradi?",
+      "v": [
+        "18 soat",
+        "27 soat",
+        "9 soat",
+        "6 soat"
+      ],
+      "t": 0,
+      "izoh": "Birgalikdagi unum 1/9, birinchi tikuvchiniki 1/18. Ikkinchisining unumi 1/9 − 1/18 = 2/18 − 1/18 = 1/18. Unumga teskari son vaqtni beradi, ya'ni 18 soat. Demak ikkala tikuvchi bir xil tezlikda ishlaydi. Javob: 18 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birgalikda-ish-bajarish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#f47f4827"
+    },
+    {
+      "q": "Ikki kombayn dalani birgalikda 6 soatda o'radi. Birinchi kombayn yolg'iz 10 soatda o'rsa, ikkinchisi yolg'iz necha soatda o'radi?",
+      "v": [
+        "4 soat",
+        "16 soat",
+        "15 soat",
+        "7,5 soat"
+      ],
+      "t": 2,
+      "izoh": "Birgalikdagi unum 1/6, birinchi kombaynniki 1/10. Ikkinchisining unumi 1/6 − 1/10 = 5/30 − 3/30 = 2/30 = 1/15. Vaqt unumga teskari, ya'ni 15 soat. Soatlarni to'g'ridan-to'g'ri ayirib 4 soat deyish tipik xato. Javob: 15 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birgalikda-ish-bajarish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#f5403017"
+    },
+    {
+      "q": "Avtobus ikki shahar orasidagi 240 km yo'lni bosib o'tdi. Agar u tezligini 20 km/soat oshirganda, yo'lga 1 soat kam vaqt sarflagan bo'lardi. Avtobusning tezligini toping.",
+      "v": [
+        "60 km/soat",
+        "80 km/soat",
+        "48 km/soat",
+        "40 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Tezlikni x deb olamiz: 240/x − 240/(x + 20) = 1. Umumiy maxrajga keltirib 240·20 = x(x + 20), ya'ni x² + 20x − 4800 = 0 hosil qilamiz. Diskriminant D = 19600, √D = 140, bundan x = 60. Oshirilgan tezlik 80 km/soat bo'ladi, lekin savolda dastlabkisi so'ralgan. Javob: 60 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-tezlik-vaqt",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#827cce61"
+    },
+    {
+      "q": "Velosipedchi 60 km masofani bosib o'tishi kerak. Agar u tezligini 5 km/soat oshirsa, yo'lga 1 soat kam vaqt ketadi. Velosipedchining dastlabki tezligi qanday?",
+      "v": [
+        "20 km/soat",
+        "15 km/soat",
+        "12 km/soat",
+        "10 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Tenglama: 60/x − 60/(x + 5) = 1. Maxrajlarni birlashtirib 60·5 = x(x + 5), ya'ni x² + 5x − 300 = 0 olamiz. Diskriminant D = 1225, √D = 35, demak x = 15. Tekshirish: 60/15 = 4 soat, 60/20 = 3 soat, farq 1 soat. Javob: 15 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-tezlik-vaqt",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#bf4d523a"
+    },
+    {
+      "q": "Yuk poyezdi 240 km yo'lni rejadagidan 8 km/soat kichik tezlik bilan bosib o'tdi va manzilga 1 soat kech yetib keldi. Rejadagi tezlik qanday edi?",
+      "v": [
+        "40 km/soat",
+        "56 km/soat",
+        "48 km/soat",
+        "60 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Rejadagi tezlik x bo'lsa, 240/(x − 8) − 240/x = 1. Umumiy maxrajdan keyin 240·8 = x(x − 8), ya'ni x² − 8x − 1920 = 0. Diskriminant D = 7744, √D = 88, bundan x = 48. Tekshirish: 240/40 = 6 soat, 240/48 = 5 soat. Javob: 48 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harakat-tezlik-vaqt",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#b485dcde"
+    },
+    {
+      "q": "Yuk mashinasi 180 km yo'lni yengil avtomobildan 1,5 soat ko'p vaqtda bosib o'tadi. Yengil avtomobilning tezligi yuk mashinasinikidan 20 km/soat ortiq. Yuk mashinasining tezligini toping.",
+      "v": [
+        "40 km/soat",
+        "60 km/soat",
+        "30 km/soat",
+        "45 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Yuk mashinasi tezligi x bo'lsa, 180/x − 180/(x + 20) = 1,5. Maxrajlarni birlashtiramiz: 180·20 = 1,5x(x + 20), ya'ni x² + 20x − 2400 = 0. Diskriminant D = 10000, √D = 100, bundan x = 40. Yengil avtomobilniki esa 60 km/soat. Javob: 40 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harakat-tezlik-vaqt",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#d8db977c"
+    },
+    {
+      "q": "Piyoda 12 km yo'lni bosib o'tishi kerak. Agar u tezligini 1 km/soat oshirsa, manzilga 1 soat oldin yetib boradi. Piyodaning tezligi qanday?",
+      "v": [
+        "4 km/soat",
+        "3 km/soat",
+        "6 km/soat",
+        "2 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Tenglama: 12/x − 12/(x + 1) = 1. Maxrajlarni birlashtiramiz: 12 = x(x + 1), ya'ni x² + x − 12 = 0. Ildizlari x = 3 va x = −4, manfiy tezlik ma'noga ega emas. Tekshirish: 12/3 = 4 soat, 12/4 = 3 soat. Javob: 3 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakat-tezlik-vaqt",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#f7a43e81"
+    },
+    {
+      "q": "Kemaning turg'un suvdagi tezligi 15 km/soat. U 36 km ni oqim bo'ylab va 36 km ni oqimga qarshi jami 5 soatda bosib o'tdi. Daryo oqimining tezligini toping.",
+      "v": [
+        "3 km/soat",
+        "2 km/soat",
+        "5 km/soat",
+        "4 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Oqim tezligini v deb olamiz: 36/(15 + v) + 36/(15 − v) = 5. Umumiy maxrajga keltiramiz: 36·30 = 5(225 − v²), ya'ni 1080 = 1125 − 5v². Bundan 5v² = 45 va v² = 9, demak v = 3. Javob: 3 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daryo-oqimi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#c0a0b465"
+    },
+    {
+      "q": "Daryo oqimining tezligi 2 km/soat. Qayiq 24 km ni oqim bo'ylab va 24 km ni oqimga qarshi suzib, jami 5 soat sarfladi. Qayiqning turg'un suvdagi tezligini toping.",
+      "v": [
+        "12 km/soat",
+        "10 km/soat",
+        "8 km/soat",
+        "9,6 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Turg'un suvdagi tezlik x bo'lsa, 24/(x + 2) + 24/(x − 2) = 5. Maxrajlarni birlashtiramiz: 24·2x = 5(x² − 4), ya'ni 5x² − 48x − 20 = 0. Diskriminant D = 2704, √D = 52, bundan x = 10. Tekshirish: 24/12 = 2 soat va 24/8 = 3 soat. Javob: 10 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daryo-oqimi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#51f7ba40"
+    },
+    {
+      "q": "Katerning turg'un suvdagi tezligi 12 km/soat. U 35 km ni oqim bo'ylab va 35 km ni oqimga qarshi bosib o'tishga jami 6 soat sarfladi. Oqim tezligi qanday?",
+      "v": [
+        "4 km/soat",
+        "3 km/soat",
+        "2 km/soat",
+        "1 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Oqim tezligi v bo'lsa, 35/(12 + v) + 35/(12 − v) = 6. Umumiy maxrajdan keyin 35·24 = 6(144 − v²), ya'ni 840 = 864 − 6v². Bundan 6v² = 24 va v² = 4, demak v = 2. Tekshirish: 35/14 = 2,5 soat va 35/10 = 3,5 soat. Javob: 2 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daryo-oqimi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#ee20e08b"
+    },
+    {
+      "q": "Qayiq oqim bo'ylab 30 km ni, oqimga qarshi esa 18 km ni bir xil vaqt ichida bosib o'tdi. Oqim tezligi 3 km/soat bo'lsa, qayiqning turg'un suvdagi tezligi qanday?",
+      "v": [
+        "12 km/soat",
+        "9 km/soat",
+        "15 km/soat",
+        "6 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Vaqtlar teng bo'lgani uchun 30/(x + 3) = 18/(x − 3) tenglama tuziladi. Krest ko'paytiramiz: 30(x − 3) = 18(x + 3), ya'ni 30x − 90 = 18x + 54. Bundan 12x = 144 va x = 12. Tekshirish: 30/15 = 2 soat va 18/9 = 2 soat. Javob: 12 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daryo-oqimi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#07f1cb2b"
+    },
+    {
+      "q": "Farrux 72 000 so'mga bir nechta daftar sotib oldi. Agar har bir daftar 600 so'm arzon bo'lganda, xuddi shu pulga 6 ta ko'p daftar olardi. Bitta daftarning narxini toping.",
+      "v": [
+        "2400 so'm",
+        "3000 so'm",
+        "3600 so'm",
+        "1200 so'm"
+      ],
+      "t": 1,
+      "izoh": "Narxni x deb olamiz: 72000/(x − 600) − 72000/x = 6. Umumiy maxrajga keltiramiz: 72000·600 = 6x(x − 600), ya'ni x² − 600x − 7200000 = 0. Diskriminant D = 29160000, √D = 5400, bundan x = 3000. Tekshirish: 72000/3000 = 24 ta, 72000/2400 = 30 ta. Javob: 3000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-va-miqdor-masalasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#af3cfebf"
+    },
+    {
+      "q": "Onasi 120 000 so'mga bir necha kilogramm olma oldi. Agar 1 kg olma 2000 so'mga qimmatlashsa, xuddi shu pulga 2 kg kam olinadi. Olmaning hozirgi narxini toping.",
+      "v": [
+        "8000 so'm",
+        "12 000 so'm",
+        "10 000 so'm",
+        "15 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Hozirgi narx x bo'lsa, 120000/x − 120000/(x + 2000) = 2. Umumiy maxrajdan keyin 120000·2000 = 2x(x + 2000), ya'ni x² + 2000x − 120000000 = 0. Diskriminant D = 484000000, √D = 22000, bundan x = 10000. Tekshirish: 12 kg va 10 kg, farq 2 kg. Javob: 10 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "narx-va-miqdor-masalasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#eab202c5"
+    },
+    {
+      "q": "Bir guruh o'quvchi 840 000 so'mlik sovg'a uchun pulni teng bo'lishdi. Agar guruhga yana 2 nafar qo'shilganda, har biriga 14 000 so'm kam tushardi. Guruhda nechta o'quvchi bor?",
+      "v": [
+        "10 nafar",
+        "12 nafar",
+        "8 nafar",
+        "14 nafar"
+      ],
+      "t": 0,
+      "izoh": "O'quvchilar soni x bo'lsa, 840000/x − 840000/(x + 2) = 14000. Ikkala tomonni soddalashtiramiz: 120 = x(x + 2), ya'ni x² + 2x − 120 = 0. Diskriminant D = 484, √D = 22, bundan x = 10. Tekshirish: 84 000 so'm va 70 000 so'm, farq 14 000 so'm. Javob: 10 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "narx-va-miqdor-masalasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#9a0ce154"
+    },
+    {
+      "q": "Bir necha do'st 600 000 so'mni o'zaro teng bo'lishdi. Agar ular 5 kishi ko'p bo'lganda, har biriga 10 000 so'm kam tushardi. Do'stlar nechta edi?",
+      "v": [
+        "20 ta",
+        "15 ta",
+        "25 ta",
+        "12 ta"
+      ],
+      "t": 1,
+      "izoh": "Do'stlar soni x bo'lsa, 600000/x − 600000/(x + 5) = 10000. Soddalashtirgach 300 = x(x + 5), ya'ni x² + 5x − 300 = 0. Diskriminant D = 1225, √D = 35, bundan x = 15. Tekshirish: 40 000 so'm va 30 000 so'm, farq 10 000 so'm. Javob: 15 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-va-miqdor-masalasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#8f7e4540"
+    },
+    {
+      "q": "180 ta pechene bir xil qutilarga teng solindi. Agar har bir qutiga 3 tadan ko'p solinganda, qutilar soni 3 taga kamaygan bo'lardi. Har bir qutiga nechtadan pechene solingan?",
+      "v": [
+        "15 ta",
+        "12 ta",
+        "18 ta",
+        "9 ta"
+      ],
+      "t": 1,
+      "izoh": "Bitta qutidagi pechene soni x bo'lsa, qutilar soni 180/x. Shart bo'yicha 180/x − 180/(x + 3) = 3. Soddalashtirgach 180 = x(x + 3), ya'ni x² + 3x − 180 = 0. Diskriminant D = 729, √D = 27, bundan x = 12. Javob: 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "narx-va-miqdor-masalasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#4f269c2d"
+    },
+    {
+      "q": "40 kg eritmada 8 kg tuz bor. Eritmadagi tuz ulushi 10% bo'lishi uchun unga necha kg suv qo'shish kerak?",
+      "v": [
+        "40 kg",
+        "80 kg",
+        "20 kg",
+        "32 kg"
+      ],
+      "t": 0,
+      "izoh": "Qo'shiladigan suv massasini x deb olamiz. Tuz miqdori o'zgarmaydi, umumiy massa esa 40 + x bo'ladi: 8/(40 + x) = 0,1. Krest ko'paytiramiz: 8 = 0,1(40 + x), ya'ni 80 = 40 + x. Bundan x = 40. Yangi massa 80 kg, lekin savolda qo'shiladigan suv so'ralgan. Javob: 40 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralashma-konsentratsiya",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#7ac9194f"
+    },
+    {
+      "q": "Idishda 20 kg eritma bor, uning 30 foizi kislotadan iborat. Aralashmadagi kislota ulushi 50 foizga yetishi uchun unga necha kg toza kislota qo'shish kerak?",
+      "v": [
+        "4 kg",
+        "8 kg",
+        "10 kg",
+        "6 kg"
+      ],
+      "t": 1,
+      "izoh": "Boshida kislota 20·0,3 = 6 kg. Qo'shiladigan kislota x bo'lsa, (6 + x)/(20 + x) = 0,5 tenglama hosil bo'ladi. Krest ko'paytiramiz: 12 + 2x = 20 + x, bundan x = 8. Tekshirish: 14 kg kislota 28 kg aralashmaning yarmi. Javob: 8 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralashma-konsentratsiya",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#14cbf7b6"
+    },
+    {
+      "q": "60 kg quruq mevalar aralashmasida 15 kg shakar bor. Shakar ulushi 40 foizga yetishi uchun aralashmaga yana necha kg shakar qo'shish kerak?",
+      "v": [
+        "9 kg",
+        "15 kg",
+        "24 kg",
+        "12 kg"
+      ],
+      "t": 1,
+      "izoh": "Qo'shiladigan shakar x bo'lsa, shakar miqdori 15 + x, umumiy massa 60 + x bo'ladi: (15 + x)/(60 + x) = 0,4. Krest ko'paytiramiz: 15 + x = 24 + 0,4x, bundan 0,6x = 9 va x = 15. Tekshirish: 30 kg shakar 75 kg aralashmaning 40 foizi. Javob: 15 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralashma-konsentratsiya",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#e309fc50"
+    },
+    {
+      "q": "50 kg eritmaning 20 foizi tuzdan iborat. Konsentratsiya 25 foizga ko'tarilishi uchun eritmadan necha kg suv bug'lantirish kerak?",
+      "v": [
+        "5 kg",
+        "12,5 kg",
+        "10 kg",
+        "15 kg"
+      ],
+      "t": 2,
+      "izoh": "Tuz miqdori 50·0,2 = 10 kg va u bug'lanishda o'zgarmaydi. Bug'langan suv massasi x bo'lsa, 10/(50 − x) = 0,25. Krest ko'paytiramiz: 10 = 12,5 − 0,25x, bundan 0,25x = 2,5 va x = 10. Yangi massa 40 kg bo'ladi. Javob: 10 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralashma-konsentratsiya",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#3b110128"
+    },
+    {
+      "q": "Ikki quvur hovuzni birgalikda 4 soatda to'ldiradi. Birinchi quvur hovuzni ikkinchisidan 6 soat tez to'ldirsa, u yolg'iz necha soatda to'ldiradi?",
+      "v": [
+        "6 soat",
+        "12 soat",
+        "8 soat",
+        "10 soat"
+      ],
+      "t": 0,
+      "izoh": "Birinchi quvurning vaqti x bo'lsa, ikkinchisiniki x + 6 bo'ladi: 1/x + 1/(x + 6) = 1/4. Umumiy maxrajga keltiramiz: 4(2x + 6) = x(x + 6), ya'ni x² − 2x − 24 = 0. Ildizlari x = 6 va x = −4, manfiy vaqt ma'noga ega emas. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvur-va-hovuz",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#200587cb"
+    },
+    {
+      "q": "Birinchi quvur hovuzni 12 soatda, ikkinchisi esa 24 soatda to'ldiradi. Ikkala quvur bir vaqtda ochilsa, hovuz necha soatda to'ladi?",
+      "v": [
+        "36 soat",
+        "18 soat",
+        "6 soat",
+        "8 soat"
+      ],
+      "t": 3,
+      "izoh": "Bir soatlik unumlarni qo'shamiz: 1/12 + 1/24 = 2/24 + 1/24 = 3/24 = 1/8. Hovuzni to'ldirish vaqti shu unumga teskari son bo'ladi, ya'ni 8 soat. Vaqtlarni qo'shib 36 soat deyish yoki ularning o'rtachasini olish tipik xato. Javob: 8 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvur-va-hovuz",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#ecbf39ce"
+    },
+    {
+      "q": "To'ldiruvchi quvur hovuzni 6 soatda to'ldiradi, bo'shatuvchi quvur esa uni 18 soatda bo'shatadi. Ikkala quvur bir vaqtda ochilsa, bo'sh hovuz necha soatda to'ladi?",
+      "v": [
+        "9 soat",
+        "12 soat",
+        "4,5 soat",
+        "24 soat"
+      ],
+      "t": 0,
+      "izoh": "To'ldiruvchi quvur unumi 1/6, bo'shatuvchisi esa unga qarshi ishlaydi va 1/18 ga teng. Umumiy unum 1/6 − 1/18 = 3/18 − 1/18 = 2/18 = 1/9. Demak hovuz 9 soatda to'ladi. Unumlarni qo'shib yuborish tipik xato. Javob: 9 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvur-va-hovuz",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#18f2453b"
+    },
+    {
+      "q": "Ikki quvur suv omborini birgalikda 12 soatda to'ldiradi. Birinchi quvur yolg'iz 20 soatda to'ldirsa, ikkinchisi yolg'iz necha soatda to'ldiradi?",
+      "v": [
+        "8 soat",
+        "30 soat",
+        "32 soat",
+        "15 soat"
+      ],
+      "t": 1,
+      "izoh": "Birgalikdagi unum 1/12, birinchi quvurniki 1/20. Ikkinchisining unumi 1/12 − 1/20 = 5/60 − 3/60 = 2/60 = 1/30. Vaqt unumga teskari son, ya'ni 30 soat. Soatlarni ayirib 8 soat deyish tipik xato. Javob: 30 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvur-va-hovuz",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#7761f030"
+    },
+    {
+      "q": "Biror musbat sonning o'zi bilan unga teskari sonning yig'indisi 26/5 ga teng. Shu ikki sondan kattasini toping.",
+      "v": [
+        "5",
+        "0,2",
+        "26",
+        "13"
+      ],
+      "t": 0,
+      "izoh": "Sonni x deb olamiz: x + 1/x = 26/5. Ikkala tomonni 5x ga ko'paytiramiz: 5x² + 5 = 26x, ya'ni 5x² − 26x + 5 = 0. Diskriminant D = 676 − 100 = 576, √D = 24. Ildizlari x = 5 va x = 0,2, ular bir-biriga teskari. Kattasi 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-va-uning-teskarisi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#2d279ef5"
+    },
+    {
+      "q": "Kasrning surati maxrajidan 3 birlik kichik. Agar surat va maxrajga 2 dan qo'shilsa, kasr 4/5 ga teng bo'ladi. Dastlabki kasrni toping.",
+      "v": [
+        "7/10",
+        "10/13",
+        "13/16",
+        "4/5"
+      ],
+      "t": 1,
+      "izoh": "Maxrajni x deb olamiz, u holda surat x − 3 bo'ladi. Shartga ko'ra (x − 3 + 2)/(x + 2) = 4/5, ya'ni (x − 1)/(x + 2) = 4/5. Krest ko'paytiramiz: 5x − 5 = 4x + 8, bundan x = 13. Demak kasr 10/13. Javob: 10/13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "son-va-uning-teskarisi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#535b990e"
+    },
+    {
+      "q": "Ikki natural sonning ayirmasi 5 ga teng, ularga teskari sonlarning ayirmasi esa 5/14 ni tashkil qiladi. Kichik sonni toping.",
+      "v": [
+        "7",
+        "14",
+        "5",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Kichik sonni x deb olamiz, kattasi x + 5 bo'ladi: 1/x − 1/(x + 5) = 5/14. Chap tomonni umumiy maxrajga keltiramiz: 5/(x(x + 5)) = 5/14. Demak x(x + 5) = 14, ya'ni x² + 5x − 14 = 0 va x = 2 (ikkinchi ildiz manfiy). Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "son-va-uning-teskarisi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#52c43df2"
+    },
+    {
+      "q": "Natural son va undan 4 birlik katta sonning teskarilari yig'indisi 3/8 ga teng. Shu natural sonni toping.",
+      "v": [
+        "8",
+        "6",
+        "4",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "Sonni x deb olamiz: 1/x + 1/(x + 4) = 3/8. Umumiy maxrajga keltiramiz: 8(2x + 4) = 3x(x + 4), ya'ni 3x² − 4x − 32 = 0. Diskriminant D = 16 + 384 = 400, √D = 20, bundan x = 4. Tekshirish: 1/4 + 1/8 = 3/8. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-va-uning-teskarisi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#6b89fa90"
+    },
+    {
+      "q": "(x + 1)/(x² − 4x + 3) = 2 tenglamaning aniqlanish sohasiga kirmaydigan sonlarni toping.",
+      "v": [
+        "1 va 3",
+        "−1 va −3",
+        "0 va 4",
+        "3 va 4"
+      ],
+      "t": 0,
+      "izoh": "Maxrajni ko'paytuvchilarga ajratamiz: x² − 4x + 3 = (x − 1)(x − 3). Bu ko'paytma x = 1 va x = 3 da nolga aylanadi. Aynan shu ikki son aniqlanish sohasidan chiqariladi. Viyet teoremasidagi ishoralarni almashtirsa, o'quvchi −1 va −3 ni yozadi. Javob: 1 va 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "odz-butun-sonlar-tahlili",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#b28c1c18"
+    },
+    {
+      "q": "5/(x² + 4) = 2 tenglamaning aniqlanish sohasi qanday to'plamdan iborat?",
+      "v": [
+        "x ≠ 2 va x ≠ −2",
+        "Barcha haqiqiy sonlar",
+        "x ≠ −4",
+        "x ≠ 0"
+      ],
+      "t": 1,
+      "izoh": "Maxraj x² + 4 ifodasini tekshiramiz: x² ≥ 0 bo'lgani uchun x² + 4 ≥ 4, ya'ni u hech qachon nolga aylanmaydi. Demak hech qanday son chiqarib tashlanmaydi. Kvadratlar ayirmasi formulasini shoshib qo'llash x ≠ ±2 xatosiga olib keladi. Javob: barcha haqiqiy sonlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "odz-butun-sonlar-tahlili",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#f90a6763"
+    },
+    {
+      "q": "x/(x − 1) + 3/(x − 6) = 2 tenglamada 0 dan 8 gacha bo'lgan butun sonlardan nechtasi aniqlanish sohasiga kirmaydi?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "Bitta ham yo'q"
+      ],
+      "t": 1,
+      "izoh": "Maxrajlarni nolga tenglaymiz: x − 1 = 0 dan x = 1, x − 6 = 0 dan x = 6. Bu ikkala son ham 0 dan 8 gacha bo'lgan oraliqda yotadi. Demak sanab o'tilgan butun sonlardan ikkitasi ODZ ga kirmaydi. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "odz-butun-sonlar-tahlili",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#887ab59b"
+    },
+    {
+      "q": "1/(x² − 5x + 6) + 1/(x − 2) = 0 tenglamada maxrajlarni nolga aylantiruvchi barcha har xil sonlarning yig'indisini toping.",
+      "v": [
+        "5",
+        "2",
+        "3",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "Birinchi maxrajni ajratamiz: x² − 5x + 6 = (x − 2)(x − 3), u x = 2 va x = 3 da nolga aylanadi. Ikkinchi maxraj x − 2 esa yana x = 2 da nolga aylanadi. Har xil sonlar to'plami 2 va 3 dan iborat, yig'indisi 5. Ikkilikni ikki marta qo'shsa, 7 chiqadi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "odz-butun-sonlar-tahlili",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#3cce37b5"
+    },
+    {
+      "q": "(x² + 2x)/(x + 2) = 3 tenglamani kasrni qisqartirish yo'li bilan yeching.",
+      "v": [
+        "3",
+        "−2",
+        "1",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Suratni ajratamiz: x² + 2x = x(x + 2). Kasr x(x + 2)/(x + 2) ko'rinishida bo'lib, x ≠ −2 da x ga qisqaradi. Demak x = 3. Bu qiymat ODZ ga kiradi, ya'ni ildiz haqiqiy. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qisqartirishdan-keyin-odz-tekshirish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#af29a468"
+    },
+    {
+      "q": "(x² − 25)/(x + 5) = 2x tenglamaning yechimlar to'plamini toping.",
+      "v": [
+        "x = −5",
+        "x = 5",
+        "x = 5 va x = −5",
+        "Yechimi yo'q"
+      ],
+      "t": 3,
+      "izoh": "Suratni yoyamiz: x² − 25 = (x − 5)(x + 5), kasr x ≠ −5 da (x − 5) ga qisqaradi. Tenglama x − 5 = 2x ko'rinishini oladi, bundan x = −5. Ammo aynan shu qiymat ODZ dan chiqarilgan, ya'ni u chetki ildiz. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qisqartirishdan-keyin-odz-tekshirish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#5ddfef12"
+    },
+    {
+      "q": "(x³ − 4x)/(x² − 2x) = 7 tenglamaning ildizini aniqlang.",
+      "v": [
+        "7",
+        "9",
+        "5",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Suratni ajratamiz: x³ − 4x = x(x − 2)(x + 2), maxrajni esa x² − 2x = x(x − 2). Kasr x ≠ 0 va x ≠ 2 shartida (x + 2) ga qisqaradi. Demak x + 2 = 7 va x = 5. Bu qiymat ODZ ga kiradi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qisqartirishdan-keyin-odz-tekshirish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#bd79e957"
+    },
+    {
+      "q": "(x² − 6x + 9)/(x − 3) = 4 tenglamaning ildizini toping.",
+      "v": [
+        "1",
+        "7",
+        "3",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "Surat to'la kvadrat: x² − 6x + 9 = (x − 3)². Kasr x ≠ 3 da (x − 3) ga qisqaradi, ya'ni x − 3 = 4. Bundan x = 7 va bu qiymat ODZ ga kiradi. Uchni to'rtga ko'paytirib 12 deyish tipik xato. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qisqartirishdan-keyin-odz-tekshirish",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#1fab3202"
+    },
+    {
+      "q": "x/(x − 2) = 8/(x − 2) + 1 tenglama nechta ildizga ega ekanini aniqlang.",
+      "v": [
+        "Bitta",
+        "Ikkita",
+        "Birorta ham yo'q",
+        "Cheksiz ko'p"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonni (x − 2) ga ko'paytiramiz: x = 8 + (x − 2), ya'ni x = x + 6. Noma'lumlar qisqaradi va 0 = 6 yolg'on tenglik qoladi. Demak hech qanday x bu tenglamani qanoatlantirmaydi. Javob: birorta ham yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-sonini-aniqlash",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#1a40b69b"
+    },
+    {
+      "q": "(x² − 1)/(x + 1) = 5 tenglama nechta haqiqiy ildizga ega?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "0 ta",
+        "3 ta"
+      ],
+      "t": 0,
+      "izoh": "Surat x² − 1 = (x − 1)(x + 1) ko'rinishida yoziladi va kasr x ≠ −1 da (x − 1) ga qisqaradi. Tenglama x − 1 = 5 bo'lib, x = 6 chiqadi. Bu son ODZ ga kiradi, boshqa nomzod esa yo'q. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-sonini-aniqlash",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#f52b079e"
+    },
+    {
+      "q": "x/(x − 1) + 1/(x + 1) = 2/(x² − 1) tenglama nechta ildizga ega?",
+      "v": [
+        "Ikkita ildiz",
+        "Bitta ildiz",
+        "Ildizi yo'q",
+        "Uchta ildiz"
+      ],
+      "t": 1,
+      "izoh": "Umumiy maxraj (x − 1)(x + 1). Suratlar tengligi: x(x + 1) + (x − 1) = 2, ya'ni x² + 2x − 3 = 0. Ildizlari x = 1 va x = −3. Birinchisi maxrajni nolga aylantirgani uchun chetki ildiz, faqat x = −3 qoladi. Javob: bitta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-sonini-aniqlash",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#1078f76d"
+    },
+    {
+      "q": "x + 5/x = 6 tenglama nechta haqiqiy ildizga ega ekanini toping.",
+      "v": [
+        "Bitta haqiqiy ildiz",
+        "Ikkita haqiqiy ildiz",
+        "Haqiqiy ildizi yo'q",
+        "Uchta haqiqiy ildiz"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni x ga ko'paytiramiz: x² + 5 = 6x, ya'ni x² − 6x + 5 = 0. Diskriminant D = 36 − 20 = 16 musbat, demak ikkita ildiz bor: x = 1 va x = 5. Ikkalasi ham noldan farqli, ODZ buzilmaydi. Javob: ikkita haqiqiy ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-sonini-aniqlash",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#a3ad8129"
+    },
+    {
+      "q": "Avtomobil ikki shahar orasini borishda 60 km/soat, qaytishda esa 40 km/soat tezlik bilan bosib o'tdi. Butun yo'l davomidagi o'rtacha tezligini toping.",
+      "v": [
+        "50 km/soat",
+        "48 km/soat",
+        "20 km/soat",
+        "100 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Masofani S deb olamiz, borish vaqti S/60, qaytish vaqti S/40. O'rtacha tezlik 2S ni jami vaqtga bo'lish orqali topiladi: 2S/(S/60 + S/40). Maxrajni umumiy maxrajga keltiramiz: S/60 + S/40 = 5S/120 = S/24. Demak o'rtacha tezlik 2S·24/S = 48 km/soat. Tezliklarning o'rta arifmetigi 50 javobi noto'g'ri. Javob: 48 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-tezlik-masalasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#60f72b71"
+    },
+    {
+      "q": "Velosipedchi yo'lning birinchi yarmini 12 km/soat, ikkinchi yarmini esa 4 km/soat tezlik bilan bosib o'tdi. Uning o'rtacha tezligi qanday?",
+      "v": [
+        "8 km/soat",
+        "16 km/soat",
+        "4,8 km/soat",
+        "6 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Butun yo'lni 2S deb olamiz, har bir yarmi S. Vaqtlar S/12 va S/4, ularning yig'indisi S/12 + 3S/12 = 4S/12 = S/3. O'rtacha tezlik 2S ni S/3 ga bo'lish bilan topiladi, ya'ni 6 km/soat. O'rta arifmetik 8 javobi tipik xato. Javob: 6 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-tezlik-masalasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#2e268235"
+    },
+    {
+      "q": "Sayohatchi yo'lning yarmini 90 km/soat, qolgan yarmini esa 60 km/soat tezlik bilan bosib o'tdi. Uning butun yo'ldagi o'rtacha tezligi qanday bo'ladi?",
+      "v": [
+        "75 km/soat",
+        "150 km/soat",
+        "72 km/soat",
+        "30 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Har bir yarim yo'lni S deb olamiz. Sarflangan vaqt S/90 + S/60 = 2S/180 + 3S/180 = 5S/180 = S/36. Butun yo'l 2S bo'lgani uchun o'rtacha tezlik 2S ni S/36 ga bo'lishga teng, ya'ni 72 km/soat. Ikki tezlikning o'rtasi 75 javobi noto'g'ri. Javob: 72 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-tezlik-masalasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#57b93580"
+    },
+    {
+      "q": "Avtomobil yo'lning birinchi yarmini 30 km/soat tezlik bilan bosib o'tdi. Butun yo'ldagi o'rtacha tezlik 40 km/soat bo'lishi uchun ikkinchi yarmida qanday tezlik kerak?",
+      "v": [
+        "50 km/soat",
+        "45 km/soat",
+        "80 km/soat",
+        "60 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Har bir yarim yo'l S bo'lsin, izlanayotgan tezlik v. Shart: 2S/(S/30 + S/v) = 40, bundan S/30 + S/v = 2S/40 = S/20. S ni qisqartiramiz: 1/30 + 1/v = 1/20. Demak 1/v = 1/20 − 1/30 = 1/60 va v = 60 km/soat. O'rta arifmetikdan chiqarilgan 50 javobi xato. Javob: 60 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-tezlik-masalasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#3c8789be"
+    },
+    {
+      "q": "Brigada 240 ta detal tayyorlashi kerak edi. Har kuni rejadagidan 4 ta ko'p detal tayyorlab, brigada ishni 2 kun oldin tugatdi. Rejaga ko'ra kuniga nechta detal tayyorlanishi lozim edi?",
+      "v": [
+        "24 ta",
+        "20 ta",
+        "16 ta",
+        "12 ta"
+      ],
+      "t": 1,
+      "izoh": "Rejadagi kunlik norma x bo'lsa, 240/x − 240/(x + 4) = 2. Umumiy maxrajga keltiramiz: 240·4 = 2x(x + 4), ya'ni x² + 4x − 480 = 0. Diskriminant D = 1936, √D = 44, bundan x = 20. Tekshirish: 240/20 = 12 kun, 240/24 = 10 kun. Javob: 20 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "reja-va-mehnat-unumi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#d9833164"
+    },
+    {
+      "q": "Tikuvchilik sexi 360 ta ko'ylak tikishi kerak edi. Kuniga rejadagidan 3 ta ko'p tikib, sex ishni 4 kun oldin tugatdi. Reja bo'yicha kuniga nechta ko'ylak tikilishi kerak edi?",
+      "v": [
+        "18 ta",
+        "12 ta",
+        "20 ta",
+        "15 ta"
+      ],
+      "t": 3,
+      "izoh": "Rejadagi kunlik norma x bo'lsa, 360/x − 360/(x + 3) = 4. Soddalashtiramiz: 360·3 = 4x(x + 3), ya'ni x² + 3x − 270 = 0. Diskriminant D = 1089, √D = 33, bundan x = 15. Tekshirish: 360/15 = 24 kun, 360/18 = 20 kun, farq 4 kun. Javob: 15 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "reja-va-mehnat-unumi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#d54a519f"
+    },
+    {
+      "q": "Fermer xo'jaligi 1200 kg meva yig'ishi kerak edi. Har kuni rejadagidan 20 kg ko'p yig'ib, xo'jalik ishni 2 kun oldin tugatdi. Rejada kuniga necha kg meva yig'ilishi kerak edi?",
+      "v": [
+        "100 kg",
+        "120 kg",
+        "80 kg",
+        "150 kg"
+      ],
+      "t": 0,
+      "izoh": "Rejadagi kunlik norma x bo'lsa, 1200/x − 1200/(x + 20) = 2. Umumiy maxrajdan keyin 1200·20 = 2x(x + 20), ya'ni x² + 20x − 12000 = 0. Diskriminant D = 48400, √D = 220, bundan x = 100. Tekshirish: 1200/100 = 12 kun, 1200/120 = 10 kun. Javob: 100 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "reja-va-mehnat-unumi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#4afac7ed"
+    },
+    {
+      "q": "Nashriyot 300 sahifali kitobni terishi kerak edi. Har kuni rejadagidan 5 sahifa ko'p terib, ishni 5 kun oldin tugatdi. Rejada kuniga necha sahifa terilishi kerak edi?",
+      "v": [
+        "20 sahifa",
+        "10 sahifa",
+        "15 sahifa",
+        "25 sahifa"
+      ],
+      "t": 2,
+      "izoh": "Kunlik norma x bo'lsa, 300/x − 300/(x + 5) = 5. Soddalashtiramiz: 300·5 = 5x(x + 5), ya'ni x² + 5x − 300 = 0. Diskriminant D = 1225, √D = 35, bundan x = 15. Tekshirish: 300/15 = 20 kun, 300/20 = 15 kun, farq 5 kun. Javob: 15 sahifa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "reja-va-mehnat-unumi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#25d5e5f6"
+    },
+    {
+      "q": "Sinf o'quvchilari ekskursiya uchun 84 000 so'mni teng bo'lib to'lashdi. Agar 4 nafar o'quvchi bormaganda, qolganlarning har biri 3500 so'm ko'p to'lagan bo'lardi. Sinfda nechta o'quvchi bor?",
+      "v": [
+        "8 nafar",
+        "12 nafar",
+        "16 nafar",
+        "10 nafar"
+      ],
+      "t": 1,
+      "izoh": "O'quvchilar soni x bo'lsa, 84000/(x − 4) − 84000/x = 3500. Ikkala tomonni 3500 ga bo'lamiz: 24·4 = x(x − 4), ya'ni x² − 4x − 96 = 0. Diskriminant D = 400, √D = 20, bundan x = 12. Tekshirish: 84000/12 = 7000 va 84000/8 = 10500 so'm. Javob: 12 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-taqsimlash-masalasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#7282dc9d"
+    },
+    {
+      "q": "Maktab hovlisiga 90 ta ko'chat o'quvchilar orasida teng taqsimlandi. Agar o'quvchilar 3 nafar kam bo'lganda, har biriga 1 tadan ko'p ko'chat tushardi. Nechta o'quvchi ko'chat ekdi?",
+      "v": [
+        "15 nafar",
+        "20 nafar",
+        "30 nafar",
+        "18 nafar"
+      ],
+      "t": 3,
+      "izoh": "O'quvchilar soni x bo'lsa, 90/(x − 3) − 90/x = 1. Umumiy maxrajga keltiramiz: 90·3 = x(x − 3), ya'ni x² − 3x − 270 = 0. Diskriminant D = 1089, √D = 33, bundan x = 18. Tekshirish: 90/18 = 5 ta va 90/15 = 6 ta ko'chat. Javob: 18 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-taqsimlash-masalasi",
+      "id": "matematika_teng_m05-ratsional-kasrli-tenglamalar#8177f438"
+    }
+  ]
+}

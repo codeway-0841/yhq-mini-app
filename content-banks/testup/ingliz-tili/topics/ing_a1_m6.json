@@ -1,0 +1,1306 @@
+{
+  "nom": "Can / Can't (ability)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "I ___ swim very well. I love the water.",
+      "v": [
+        "can",
+        "cans",
+        "am can",
+        "to can"
+      ],
+      "t": 0,
+      "izoh": "Qobiliyat uchun: I can + fe'l (asosiy shakl).",
+      "qiy": "oson",
+      "id": "ing_a1_m6#ef55da03"
+    },
+    {
+      "q": "She ___ speak three languages.",
+      "v": [
+        "can",
+        "cans",
+        "is can",
+        "can to"
+      ],
+      "t": 0,
+      "izoh": "Can dan keyin -s qo'shilmaydi va 'to' ishlatilmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#0f9f0e03"
+    },
+    {
+      "q": "___ you play the guitar?",
+      "v": [
+        "Can",
+        "Do can",
+        "Are",
+        "Is"
+      ],
+      "t": 0,
+      "izoh": "Savol: Can + shaxs + fe'l.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#3255c816"
+    },
+    {
+      "q": "My little brother ___ read yet. He is only three.",
+      "v": [
+        "can't",
+        "don't can",
+        "isn't can",
+        "not can"
+      ],
+      "t": 0,
+      "izoh": "Inkor: can't = cannot.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#721196d9"
+    },
+    {
+      "q": "Birds can ___ , but they cannot swim like fish.",
+      "v": [
+        "fly",
+        "flies",
+        "flying",
+        "to fly"
+      ],
+      "t": 0,
+      "izoh": "Can dan keyin fe'lning asosiy shakli keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#3c198d9c"
+    },
+    {
+      "q": "We ___ see the mountains from our window.",
+      "v": [
+        "can",
+        "can to",
+        "cans",
+        "are can"
+      ],
+      "t": 0,
+      "izoh": "Can barcha shaxslar bilan bir xil ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#d1686434"
+    },
+    {
+      "q": "A: Can you help me? B: Yes, I ___ .",
+      "v": [
+        "can",
+        "am",
+        "do",
+        "can't"
+      ],
+      "t": 0,
+      "izoh": "Qisqa javob: Yes, I can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#91d703c4"
+    },
+    {
+      "q": "He ___ ride a bike because he never learned.",
+      "v": [
+        "can't",
+        "doesn't can",
+        "not can",
+        "isn't"
+      ],
+      "t": 0,
+      "izoh": "'Qila olmaydi' → can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#6f3bff11"
+    },
+    {
+      "q": "___ your friends dance well?",
+      "v": [
+        "Can",
+        "Do",
+        "Are",
+        "Is"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik bilan ham Can ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#1d7d5030"
+    },
+    {
+      "q": "I'm sorry, I ___ come to the party today.",
+      "v": [
+        "can't",
+        "don't",
+        "amn't",
+        "not"
+      ],
+      "t": 0,
+      "izoh": "Iloji yo'qligini bildirish → can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#f5d3e790"
+    },
+    {
+      "q": "I ___ ride a bike.",
+      "v": [
+        "am",
+        "can",
+        "do",
+        "is"
+      ],
+      "t": 1,
+      "izoh": "Qobiliyat 'can'.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#54f64b2e"
+    },
+    {
+      "q": "___ you swim?",
+      "v": [
+        "Can",
+        "Are",
+        "Do",
+        "Is"
+      ],
+      "t": 0,
+      "izoh": "Qobiliyat savoli 'Can'.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#51e61ff8"
+    },
+    {
+      "q": "He ___ play the guitar.",
+      "v": [
+        "cans",
+        "to play",
+        "can",
+        "is"
+      ],
+      "t": 2,
+      "izoh": "'can' o'zgarmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#de2f8267"
+    },
+    {
+      "q": "Can you speak French? Yes, I ___.",
+      "v": [
+        "can't",
+        "am",
+        "can",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "Yes, I can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#29518572"
+    },
+    {
+      "q": "Can she cook? No, she ___.",
+      "v": [
+        "can",
+        "can't",
+        "don't",
+        "isn't"
+      ],
+      "t": 1,
+      "izoh": "No, she can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#6e1304b8"
+    },
+    {
+      "q": "Birds ___ fly.",
+      "v": [
+        "can to",
+        "can",
+        "cans",
+        "is can"
+      ],
+      "t": 1,
+      "izoh": "Ko'plikda ham 'can'.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#9130004a"
+    },
+    {
+      "q": "I ___ run fast because I am tired.",
+      "v": [
+        "can",
+        "can't",
+        "am not",
+        "do"
+      ],
+      "t": 1,
+      "izoh": "Qila olmayman = can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#5095a065"
+    },
+    {
+      "q": "We can ___ the piano.",
+      "v": [
+        "plays",
+        "playing",
+        "play",
+        "to play"
+      ],
+      "t": 2,
+      "izoh": "can + sof fe'l.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#71f5418b"
+    },
+    {
+      "q": "___ he drive a car?",
+      "v": [
+        "Do",
+        "Is",
+        "Can",
+        "Has"
+      ],
+      "t": 2,
+      "izoh": "Qobiliyat savoli 'Can'.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#1a51f247"
+    },
+    {
+      "q": "My baby brother ___ walk yet.",
+      "v": [
+        "can't",
+        "can",
+        "doesn't",
+        "isn't"
+      ],
+      "t": 0,
+      "izoh": "Hali qila olmaydi = can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#69d00c6d"
+    },
+    {
+      "q": "Fish can ___.",
+      "v": [
+        "swims",
+        "swim",
+        "swimming",
+        "to swim"
+      ],
+      "t": 1,
+      "izoh": "can + sof fe'l.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#ca73b051"
+    },
+    {
+      "q": "Can you help me? Yes, of course I ___.",
+      "v": [
+        "can",
+        "can't",
+        "do",
+        "am"
+      ],
+      "t": 0,
+      "izoh": "I can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#8fbbd974"
+    },
+    {
+      "q": "They ___ speak three languages.",
+      "v": [
+        "cans",
+        "are can",
+        "can",
+        "can to"
+      ],
+      "t": 2,
+      "izoh": "'can' o'zgarmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#cabf7ccc"
+    },
+    {
+      "q": "A cat ___ climb trees.",
+      "v": [
+        "can",
+        "can to",
+        "cans",
+        "is can"
+      ],
+      "t": 0,
+      "izoh": "Qobiliyat: can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#3291eb82"
+    },
+    {
+      "q": "I'm sorry, I ___ come to the party.",
+      "v": [
+        "can",
+        "can't",
+        "not can",
+        "don't can"
+      ],
+      "t": 1,
+      "izoh": "Kela olmayman = can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#1a4d5273"
+    },
+    {
+      "q": "Can penguins fly? No, they ___.",
+      "v": [
+        "can",
+        "don't",
+        "can't",
+        "aren't"
+      ],
+      "t": 2,
+      "izoh": "Ucha olmaydi = can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#739bbe59"
+    },
+    {
+      "q": "You ___ read very well.",
+      "v": [
+        "are",
+        "do",
+        "have",
+        "can"
+      ],
+      "t": 3,
+      "izoh": "Qobiliyat: can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#3bc4a66f"
+    },
+    {
+      "q": "Can your sister dance? Yes, she ___.",
+      "v": [
+        "cans",
+        "can",
+        "do",
+        "is"
+      ],
+      "t": 1,
+      "izoh": "she can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#77b48306"
+    },
+    {
+      "q": "We ___ see the mountains from here.",
+      "v": [
+        "can",
+        "cans",
+        "are can",
+        "can to"
+      ],
+      "t": 0,
+      "izoh": "can + fe'l.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#13eb32e6"
+    },
+    {
+      "q": "He can ___ English and Arabic.",
+      "v": [
+        "speaks",
+        "speak",
+        "speaking",
+        "spoke"
+      ],
+      "t": 1,
+      "izoh": "can + sof fe'l.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#bc1cafba"
+    },
+    {
+      "q": "___ they play football?",
+      "v": [
+        "Are can",
+        "Can",
+        "Has",
+        "Do is"
+      ],
+      "t": 1,
+      "izoh": "Savol 'Can'.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#ced980fa"
+    },
+    {
+      "q": "I can ___ but I can't ski.",
+      "v": [
+        "skates",
+        "skating",
+        "skate",
+        "to skate"
+      ],
+      "t": 2,
+      "izoh": "can + sof fe'l.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#5984ca90"
+    },
+    {
+      "q": "Can you see the board? No, I ___.",
+      "v": [
+        "can",
+        "don't",
+        "not",
+        "can't"
+      ],
+      "t": 3,
+      "izoh": "Ko'ra olmayman = can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#6dc9b274"
+    },
+    {
+      "q": "My grandma ___ use a computer.",
+      "v": [
+        "can",
+        "cans",
+        "is can",
+        "do can"
+      ],
+      "t": 0,
+      "izoh": "Qobiliyat: can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#49523360"
+    },
+    {
+      "q": "Dogs ___ talk.",
+      "v": [
+        "can",
+        "can't",
+        "don't can",
+        "not can"
+      ],
+      "t": 1,
+      "izoh": "Gapira olmaydi = can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#a3029c65"
+    },
+    {
+      "q": "Can I open the window? Yes, you ___.",
+      "v": [
+        "can't",
+        "can",
+        "do",
+        "are"
+      ],
+      "t": 1,
+      "izoh": "Yes, you can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#79bdfd4f"
+    },
+    {
+      "q": "She ___ jump very high.",
+      "v": [
+        "can",
+        "cans",
+        "can to",
+        "is can"
+      ],
+      "t": 0,
+      "izoh": "'can' o'zgarmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#d25564fa"
+    },
+    {
+      "q": "I ___ find my keys anywhere.",
+      "v": [
+        "can",
+        "can't",
+        "don't can",
+        "not can"
+      ],
+      "t": 1,
+      "izoh": "Topa olmayapman = can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#d4b3c0a6"
+    },
+    {
+      "q": "Can he swim? No, ___.",
+      "v": [
+        "he can't",
+        "he can",
+        "he doesn't",
+        "he isn't"
+      ],
+      "t": 0,
+      "izoh": "he can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#d02be171"
+    },
+    {
+      "q": "Parrots can ___ some words.",
+      "v": [
+        "says",
+        "say",
+        "saying",
+        "said"
+      ],
+      "t": 1,
+      "izoh": "can + sof fe'l.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#c93792c2"
+    },
+    {
+      "q": "I ___ swim very well.",
+      "v": [
+        "can",
+        "cans",
+        "am can",
+        "to can"
+      ],
+      "t": 0,
+      "izoh": "Can dan keyin fe'l asosiy shaklda: I can swim.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#0b87dc00"
+    },
+    {
+      "q": "We ___ play football on Sundays.",
+      "v": [
+        "can",
+        "cans",
+        "are can",
+        "can are"
+      ],
+      "t": 0,
+      "izoh": "We can play - can bilan asosiy fe'l.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#d4ec9e37"
+    },
+    {
+      "q": "He ___ ride a bike.",
+      "v": [
+        "can",
+        "cans",
+        "can rides",
+        "can to ride"
+      ],
+      "t": 0,
+      "izoh": "Can + ride, -s yoki to qo'shilmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#16f06d75"
+    },
+    {
+      "q": "They ___ cook rice.",
+      "v": [
+        "can",
+        "cans",
+        "cans to",
+        "can cooks"
+      ],
+      "t": 0,
+      "izoh": "They can cook - fe'l o'zgarmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#33407744"
+    },
+    {
+      "q": "You ___ run fast.",
+      "v": [
+        "can",
+        "cans",
+        "can to run",
+        "can running"
+      ],
+      "t": 0,
+      "izoh": "Can + run asosiy shakl.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#bac48860"
+    },
+    {
+      "q": "My sister ___ draw beautiful pictures.",
+      "v": [
+        "can",
+        "cans",
+        "can draws",
+        "is can draw"
+      ],
+      "t": 0,
+      "izoh": "Can hamma shaxs uchun bir xil.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#fdd080d9"
+    },
+    {
+      "q": "The baby ___ walk now.",
+      "v": [
+        "can",
+        "cans",
+        "can walks",
+        "cans walk"
+      ],
+      "t": 0,
+      "izoh": "Can + walk, -s yo'q.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#6689d7ad"
+    },
+    {
+      "q": "My friends ___ dance well.",
+      "v": [
+        "can",
+        "cans",
+        "can dances",
+        "are can"
+      ],
+      "t": 0,
+      "izoh": "They/friends can dance.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#815f2276"
+    },
+    {
+      "q": "I ___ read English books.",
+      "v": [
+        "can",
+        "cans",
+        "am can read",
+        "can to read"
+      ],
+      "t": 0,
+      "izoh": "I can read - to ishlatilmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#2dfdd168"
+    },
+    {
+      "q": "She ___ drive a car.",
+      "v": [
+        "can't",
+        "don't can",
+        "doesn't can",
+        "not can"
+      ],
+      "t": 0,
+      "izoh": "Inkor: can't = cannot.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#eefa8a83"
+    },
+    {
+      "q": "I ___ find my keys.",
+      "v": [
+        "can't",
+        "don't can",
+        "am not can",
+        "no can"
+      ],
+      "t": 0,
+      "izoh": "I can't find - inkor shakli.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#069636be"
+    },
+    {
+      "q": "He ___ swim in the sea.",
+      "v": [
+        "can't",
+        "doesn't can",
+        "not can",
+        "cans not"
+      ],
+      "t": 0,
+      "izoh": "Can't = cannot, inkor.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#5e639c38"
+    },
+    {
+      "q": "We ___ hear you.",
+      "v": [
+        "can't",
+        "don't can",
+        "aren't can",
+        "not can"
+      ],
+      "t": 0,
+      "izoh": "We can't hear - to'g'ri inkor.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#4936a288"
+    },
+    {
+      "q": "They ___ come today.",
+      "v": [
+        "can't",
+        "doesn't can",
+        "not can",
+        "don't can"
+      ],
+      "t": 0,
+      "izoh": "They can't come.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#b2b22d98"
+    },
+    {
+      "q": "My grandfather ___ see well without glasses.",
+      "v": [
+        "can't",
+        "doesn't can",
+        "not can",
+        "cans not"
+      ],
+      "t": 0,
+      "izoh": "Can't = qila olmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#0ec89b49"
+    },
+    {
+      "q": "The dog ___ open the door.",
+      "v": [
+        "can't",
+        "doesn't can",
+        "not can",
+        "don't can"
+      ],
+      "t": 0,
+      "izoh": "Can't asosiy inkor.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#86b1b1e4"
+    },
+    {
+      "q": "You ___ park here.",
+      "v": [
+        "can't",
+        "don't can",
+        "not can",
+        "aren't can"
+      ],
+      "t": 0,
+      "izoh": "Ruxsat yo'q: you can't park.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#c4fde952"
+    },
+    {
+      "q": "I ___ understand this word.",
+      "v": [
+        "can't",
+        "don't can",
+        "not can",
+        "am not can"
+      ],
+      "t": 0,
+      "izoh": "I can't understand.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#f4f50f73"
+    },
+    {
+      "q": "She ___ play the piano.",
+      "v": [
+        "can't",
+        "doesn't can",
+        "not can",
+        "cans not"
+      ],
+      "t": 0,
+      "izoh": "Can't play - inkor.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#cc827d82"
+    },
+    {
+      "q": "___ she speak French?",
+      "v": [
+        "Can",
+        "Does can",
+        "Is",
+        "Cans"
+      ],
+      "t": 0,
+      "izoh": "Can she speak - savol shakli.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#9f1f50b1"
+    },
+    {
+      "q": "___ they help us?",
+      "v": [
+        "Can",
+        "Do can",
+        "Are",
+        "Cans"
+      ],
+      "t": 0,
+      "izoh": "Can they help?",
+      "qiy": "oson",
+      "id": "ing_a1_m6#16e108a5"
+    },
+    {
+      "q": "___ he cook dinner?",
+      "v": [
+        "Can",
+        "Does he can",
+        "Is",
+        "Cans"
+      ],
+      "t": 0,
+      "izoh": "Can he cook - to'g'ri savol.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#643c820c"
+    },
+    {
+      "q": "___ we sit here?",
+      "v": [
+        "Can",
+        "Do can",
+        "Are",
+        "Cans"
+      ],
+      "t": 0,
+      "izoh": "Ruxsat so'rash: Can we sit?",
+      "qiy": "oson",
+      "id": "ing_a1_m6#fca8c6e3"
+    },
+    {
+      "q": "___ your brother drive?",
+      "v": [
+        "Can",
+        "Does can",
+        "Is",
+        "Do"
+      ],
+      "t": 0,
+      "izoh": "Can + brother + drive.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#f1696ea6"
+    },
+    {
+      "q": "___ I open the window?",
+      "v": [
+        "Can",
+        "Do",
+        "Am",
+        "Cans"
+      ],
+      "t": 0,
+      "izoh": "Ruxsat: Can I open?",
+      "qiy": "oson",
+      "id": "ing_a1_m6#374b4339"
+    },
+    {
+      "q": "___ you play chess?",
+      "v": [
+        "Can",
+        "Do you can",
+        "Are",
+        "Cans"
+      ],
+      "t": 0,
+      "izoh": "Can you play?",
+      "qiy": "oson",
+      "id": "ing_a1_m6#150abfbd"
+    },
+    {
+      "q": "___ the children read?",
+      "v": [
+        "Can",
+        "Do can",
+        "Are",
+        "Cans"
+      ],
+      "t": 0,
+      "izoh": "Can the children read?",
+      "qiy": "oson",
+      "id": "ing_a1_m6#04d80657"
+    },
+    {
+      "q": "___ Tom fix a bike?",
+      "v": [
+        "Can",
+        "Does can",
+        "Is",
+        "Do"
+      ],
+      "t": 0,
+      "izoh": "Can Tom fix?",
+      "qiy": "oson",
+      "id": "ing_a1_m6#19500b68"
+    },
+    {
+      "q": "Can you swim? Yes, I ___.",
+      "v": [
+        "can",
+        "can swim",
+        "do",
+        "am"
+      ],
+      "t": 0,
+      "izoh": "Qisqa javob: Yes, I can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#1079f3db"
+    },
+    {
+      "q": "Can she dance? No, she ___.",
+      "v": [
+        "can't",
+        "doesn't",
+        "don't",
+        "isn't"
+      ],
+      "t": 0,
+      "izoh": "Qisqa inkor javob: No, she can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#6c22a4c6"
+    },
+    {
+      "q": "Can they run fast? Yes, they ___.",
+      "v": [
+        "can",
+        "run",
+        "do",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "Yes, they can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#3476d51f"
+    },
+    {
+      "q": "Can he drive? No, he ___.",
+      "v": [
+        "can't",
+        "doesn't",
+        "isn't",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "No, he can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#bd6de721"
+    },
+    {
+      "q": "Can we go now? Yes, you ___.",
+      "v": [
+        "can",
+        "go",
+        "do",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "Yes, you can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#913f8bfa"
+    },
+    {
+      "q": "Can I sit here? Yes, you ___.",
+      "v": [
+        "can",
+        "sit",
+        "do",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "Ruxsat: Yes, you can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#a1702237"
+    },
+    {
+      "q": "Can your dog swim? No, it ___.",
+      "v": [
+        "can't",
+        "doesn't",
+        "isn't",
+        "not"
+      ],
+      "t": 0,
+      "izoh": "No, it can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#74e23aa2"
+    },
+    {
+      "q": "Can you hear me? Yes, I ___.",
+      "v": [
+        "can",
+        "hear",
+        "do",
+        "am"
+      ],
+      "t": 0,
+      "izoh": "Yes, I can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#230f2e08"
+    },
+    {
+      "q": "Can Ali play guitar? No, he ___.",
+      "v": [
+        "can't",
+        "doesn't",
+        "isn't",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "No, he can't.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#4a9a9a6e"
+    },
+    {
+      "q": "Can birds fly? Yes, they ___.",
+      "v": [
+        "can",
+        "fly",
+        "do",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "Yes, they can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#3e15fa68"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She can sing.",
+        "She cans sing.",
+        "She can sings.",
+        "She can to sing."
+      ],
+      "t": 0,
+      "izoh": "Can + asosiy fe'l, -s yo'q.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#9a16dc9c"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I can't swim.",
+        "I don't can swim.",
+        "I can not swims.",
+        "I no can swim."
+      ],
+      "t": 0,
+      "izoh": "Inkor: can't + fe'l.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#9a16dc9c~2"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Can you help me?",
+        "You can help me?",
+        "Do you can help me?",
+        "Can you helps me?"
+      ],
+      "t": 0,
+      "izoh": "Savolda Can birinchi keladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#9a16dc9c~3"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "He can ride a horse.",
+        "He can rides a horse.",
+        "He cans ride a horse.",
+        "He can to ride a horse."
+      ],
+      "t": 0,
+      "izoh": "Can ride - to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#9a16dc9c~4"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "They can't come.",
+        "They doesn't can come.",
+        "They can't comes.",
+        "They not can come."
+      ],
+      "t": 0,
+      "izoh": "They can't come.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#9a16dc9c~5"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Can she cook?",
+        "She can cook?",
+        "Does she can cook?",
+        "Can she cooks?"
+      ],
+      "t": 0,
+      "izoh": "Can she cook - savol.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#9a16dc9c~6"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "We can play tennis.",
+        "We can plays tennis.",
+        "We cans play tennis.",
+        "We can to play tennis."
+      ],
+      "t": 0,
+      "izoh": "We can play.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#9a16dc9c~7"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I can speak English.",
+        "I can speaks English.",
+        "I can to speak English.",
+        "I cans speak English."
+      ],
+      "t": 0,
+      "izoh": "Can speak - to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#9a16dc9c~8"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Can I open the door?",
+        "I can open the door?",
+        "Do I can open the door?",
+        "Can I opens the door?"
+      ],
+      "t": 0,
+      "izoh": "Ruxsat savoli to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#9a16dc9c~9"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The cat can jump.",
+        "The cat cans jump.",
+        "The cat can jumps.",
+        "The cat can to jump."
+      ],
+      "t": 0,
+      "izoh": "Can jump - to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#9a16dc9c~10"
+    },
+    {
+      "q": "Find the mistake: 'She can sings well.'",
+      "v": [
+        "sings",
+        "She",
+        "can",
+        "well"
+      ],
+      "t": 0,
+      "izoh": "Can dan keyin sing bo'lishi kerak, sings emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#e16b3d74"
+    },
+    {
+      "q": "Find the mistake: 'I cans play football.'",
+      "v": [
+        "cans",
+        "I",
+        "play",
+        "football"
+      ],
+      "t": 0,
+      "izoh": "Can hech qachon -s olmaydi: can.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#794b3268"
+    },
+    {
+      "q": "Find the mistake: 'Do you can drive?'",
+      "v": [
+        "Do",
+        "you",
+        "can",
+        "drive"
+      ],
+      "t": 0,
+      "izoh": "Do keraksiz: Can you drive?",
+      "qiy": "oson",
+      "id": "ing_a1_m6#8f0766e3"
+    },
+    {
+      "q": "Find the mistake: 'He can to swim.'",
+      "v": [
+        "to",
+        "He",
+        "can",
+        "swim"
+      ],
+      "t": 0,
+      "izoh": "Can dan keyin to ishlatilmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#f1eba382"
+    },
+    {
+      "q": "Find the mistake: 'They doesn't can help.'",
+      "v": [
+        "doesn't can",
+        "They",
+        "help",
+        "today"
+      ],
+      "t": 0,
+      "izoh": "To'g'risi: They can't help.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#bfeca6f6"
+    },
+    {
+      "q": "Find the mistake: 'Can she speaks Russian?'",
+      "v": [
+        "speaks",
+        "Can",
+        "she",
+        "Russian"
+      ],
+      "t": 0,
+      "izoh": "Can she speak - speaks emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#0a870542"
+    },
+    {
+      "q": "Find the mistake: 'We can plays chess.'",
+      "v": [
+        "plays",
+        "We",
+        "can",
+        "chess"
+      ],
+      "t": 0,
+      "izoh": "Can play, -s yo'q.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#73bd64ba"
+    },
+    {
+      "q": "Find the mistake: 'I no can come.'",
+      "v": [
+        "no can",
+        "I",
+        "come",
+        "now"
+      ],
+      "t": 0,
+      "izoh": "To'g'risi: I can't come.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#08ef256b"
+    },
+    {
+      "q": "Find the mistake: 'Can you helps me?'",
+      "v": [
+        "helps",
+        "Can",
+        "you",
+        "me"
+      ],
+      "t": 0,
+      "izoh": "Can you help - help asosiy shakl.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#7155b42c"
+    },
+    {
+      "q": "Find the mistake: 'She cannot to read.'",
+      "v": [
+        "to",
+        "She",
+        "cannot",
+        "read"
+      ],
+      "t": 0,
+      "izoh": "Cannot dan keyin to bo'lmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#11c62a28"
+    },
+    {
+      "q": "Put in order: swim / can / I",
+      "v": [
+        "I can swim.",
+        "Can I swim.",
+        "Swim I can.",
+        "I swim can."
+      ],
+      "t": 0,
+      "izoh": "Tartib: shaxs + can + fe'l.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#d2e9f521"
+    },
+    {
+      "q": "Put in order: can't / she / drive",
+      "v": [
+        "She can't drive.",
+        "Can't she drive.",
+        "Drive she can't.",
+        "She drive can't."
+      ],
+      "t": 0,
+      "izoh": "Inkor gap: she + can't + fe'l.",
+      "qiy": "oson",
+      "id": "ing_a1_m6#a63aff34"
+    }
+  ]
+}

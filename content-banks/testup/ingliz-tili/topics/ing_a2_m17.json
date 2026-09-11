@@ -1,0 +1,1306 @@
+{
+  "nom": "Travel & transport (Sayohat)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "'Samolyot' inglizcha qanday?",
+      "v": [
+        "plane",
+        "train",
+        "bus",
+        "ship"
+      ],
+      "t": 0,
+      "izoh": "Plane = samolyot.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#bf3bf81b"
+    },
+    {
+      "q": "'Poyezd' inglizcha qanday?",
+      "v": [
+        "train",
+        "truck",
+        "tram",
+        "taxi"
+      ],
+      "t": 0,
+      "izoh": "Train = poyezd.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#7dd0665b"
+    },
+    {
+      "q": "'Avtobus' inglizcha qanday?",
+      "v": [
+        "bus",
+        "boat",
+        "bike",
+        "van"
+      ],
+      "t": 0,
+      "izoh": "Bus = avtobus.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#7c6ae5e8"
+    },
+    {
+      "q": "'Bekat / stansiya' inglizcha qanday?",
+      "v": [
+        "station",
+        "stadium",
+        "store",
+        "street"
+      ],
+      "t": 0,
+      "izoh": "Station = bekat.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#7c11abb6"
+    },
+    {
+      "q": "'Chipta' inglizcha qanday?",
+      "v": [
+        "ticket",
+        "kitchen",
+        "kitten",
+        "packet"
+      ],
+      "t": 0,
+      "izoh": "Ticket = chipta.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#b2bd0d8e"
+    },
+    {
+      "q": "'Pasport' inglizcha qanday?",
+      "v": [
+        "passport",
+        "password",
+        "passage",
+        "passenger"
+      ],
+      "t": 0,
+      "izoh": "Passport = pasport hujjati.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#82ad2bc8"
+    },
+    {
+      "q": "'Bagaj' inglizcha qanday?",
+      "v": [
+        "luggage",
+        "language",
+        "village",
+        "message"
+      ],
+      "t": 0,
+      "izoh": "Luggage = bagaj.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#025eea5f"
+    },
+    {
+      "q": "'Chamadon' inglizcha qanday?",
+      "v": [
+        "suitcase",
+        "bookcase",
+        "staircase",
+        "briefcase"
+      ],
+      "t": 0,
+      "izoh": "Suitcase = chamadon.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#db7519d9"
+    },
+    {
+      "q": "'Aeroport' inglizcha qanday?",
+      "v": [
+        "airport",
+        "seaport",
+        "airline",
+        "airplane"
+      ],
+      "t": 0,
+      "izoh": "Airport = aeroport.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#624bc093"
+    },
+    {
+      "q": "'Sayohat (uzoq)' inglizcha qanday?",
+      "v": [
+        "journey",
+        "garden",
+        "market",
+        "weather"
+      ],
+      "t": 0,
+      "izoh": "Journey = uzoq sayohat.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#a41fa9fd"
+    },
+    {
+      "q": "'Qisqa safar' inglizcha qanday?",
+      "v": [
+        "trip",
+        "tip",
+        "trap",
+        "top"
+      ],
+      "t": 0,
+      "izoh": "Trip = qisqa safar.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#bc8b3767"
+    },
+    {
+      "q": "'Platforma (perron)' inglizcha qanday?",
+      "v": [
+        "platform",
+        "plate",
+        "plant",
+        "planet"
+      ],
+      "t": 0,
+      "izoh": "Platform = perron.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#6c73cbf5"
+    },
+    {
+      "q": "'Jo'nash (poyezdning)' inglizcha qanday?",
+      "v": [
+        "departure",
+        "department",
+        "deposit",
+        "design"
+      ],
+      "t": 0,
+      "izoh": "Departure = jo'nash.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#5986101f"
+    },
+    {
+      "q": "'Kelish (yetib borish)' inglizcha qanday?",
+      "v": [
+        "arrival",
+        "arrow",
+        "alarm",
+        "around"
+      ],
+      "t": 0,
+      "izoh": "Arrival = manzilga kelish.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#56eb680e"
+    },
+    {
+      "q": "'Kechikish' inglizcha qanday?",
+      "v": [
+        "delay",
+        "display",
+        "daily",
+        "deliver"
+      ],
+      "t": 0,
+      "izoh": "Delay = kechikish.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#c0f5d1b7"
+    },
+    {
+      "q": "'Chiqish taloni' inglizcha qanday?",
+      "v": [
+        "boarding pass",
+        "landing card",
+        "luggage tag",
+        "credit card"
+      ],
+      "t": 0,
+      "izoh": "Boarding pass = samolyotga chiqish taloni.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#ceb8229b"
+    },
+    {
+      "q": "'Bir tomonlama chipta' inglizcha qanday?",
+      "v": [
+        "one-way ticket",
+        "round trip",
+        "return ticket",
+        "free ticket"
+      ],
+      "t": 0,
+      "izoh": "One-way = faqat borish.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#0f2df4d5"
+    },
+    {
+      "q": "'Borish-kelish chipta' inglizcha qanday?",
+      "v": [
+        "return ticket",
+        "one-way ticket",
+        "single ticket",
+        "group ticket"
+      ],
+      "t": 0,
+      "izoh": "Return = borib qaytish.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#08800c2f"
+    },
+    {
+      "q": "'Yo'lovchi' inglizcha qanday?",
+      "v": [
+        "passenger",
+        "driver",
+        "pilot",
+        "guard"
+      ],
+      "t": 0,
+      "izoh": "Passenger = yo'lovchi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#61be67b7"
+    },
+    {
+      "q": "'Haydovchi' inglizcha qanday?",
+      "v": [
+        "driver",
+        "rider",
+        "runner",
+        "reader"
+      ],
+      "t": 0,
+      "izoh": "Driver = haydovchi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#c347d16e"
+    },
+    {
+      "q": "I want to fly to London, so I go to the ____.",
+      "v": [
+        "airport",
+        "station",
+        "harbour",
+        "garage"
+      ],
+      "t": 0,
+      "izoh": "Samolyot aeroportdan uchadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#34c96f38"
+    },
+    {
+      "q": "You need a valid ____ to travel to another country.",
+      "v": [
+        "passport",
+        "poster",
+        "package",
+        "postcard"
+      ],
+      "t": 0,
+      "izoh": "Chet elga pasport kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#1bb27024"
+    },
+    {
+      "q": "The train leaves from ____ number 5.",
+      "v": [
+        "platform",
+        "kitchen",
+        "balcony",
+        "corner"
+      ],
+      "t": 0,
+      "izoh": "Poyezd perrondan jo'naydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#785ed265"
+    },
+    {
+      "q": "Hurry up! We will ____ the train.",
+      "v": [
+        "miss",
+        "lose",
+        "drop",
+        "break"
+      ],
+      "t": 0,
+      "izoh": "Miss the train = poyezdga kechikmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#bf96beba"
+    },
+    {
+      "q": "We arrived early and did not ____ our flight.",
+      "v": [
+        "miss",
+        "meet",
+        "make",
+        "made"
+      ],
+      "t": 0,
+      "izoh": "Miss = o'tkazib yubormoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#75493c7a"
+    },
+    {
+      "q": "Please show your ____ before you get on the plane.",
+      "v": [
+        "boarding pass",
+        "shopping list",
+        "menu card",
+        "bank note"
+      ],
+      "t": 0,
+      "izoh": "Chiqish taloni ko'rsatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#5a8a50ab"
+    },
+    {
+      "q": "My flight is two hours late because of a ____.",
+      "v": [
+        "delay",
+        "display",
+        "dessert",
+        "design"
+      ],
+      "t": 0,
+      "izoh": "Delay = kechikish.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#00c1e38b"
+    },
+    {
+      "q": "I put my clothes in a ____ before the trip.",
+      "v": [
+        "suitcase",
+        "dishwasher",
+        "wardrobe",
+        "cupboard"
+      ],
+      "t": 0,
+      "izoh": "Kiyimlar chamadonga solinadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#81bed809"
+    },
+    {
+      "q": "Before travelling, you should ____ a ticket online.",
+      "v": [
+        "book",
+        "cook",
+        "look",
+        "hook"
+      ],
+      "t": 0,
+      "izoh": "Book = chiptani band qilmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#d903d175"
+    },
+    {
+      "q": "The ____ from Tashkent to Samarkand takes two hours.",
+      "v": [
+        "journey",
+        "kitchen",
+        "weather",
+        "garden"
+      ],
+      "t": 0,
+      "izoh": "Journey = safar.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#0fded749"
+    },
+    {
+      "q": "At the ____ we buy tickets and wait for the train.",
+      "v": [
+        "station",
+        "stadium",
+        "cinema",
+        "hospital"
+      ],
+      "t": 0,
+      "izoh": "Station = bekat.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#eaf889a4"
+    },
+    {
+      "q": "The plane's ____ time is 9 a.m., so be early.",
+      "v": [
+        "departure",
+        "dinner",
+        "distance",
+        "dessert"
+      ],
+      "t": 0,
+      "izoh": "Departure time = jo'nash vaqti.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#c3299387"
+    },
+    {
+      "q": "Our ____ time in Dubai is 3 p.m. local time.",
+      "v": [
+        "arrival",
+        "argument",
+        "arrow",
+        "army"
+      ],
+      "t": 0,
+      "izoh": "Arrival time = yetib borish vaqti.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#1e194400"
+    },
+    {
+      "q": "Carry your ____ carefully; it is very heavy.",
+      "v": [
+        "luggage",
+        "language",
+        "laundry",
+        "library"
+      ],
+      "t": 0,
+      "izoh": "Luggage = bagaj.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#bc3b7ac1"
+    },
+    {
+      "q": "I bought a ____ ticket because I am not coming back.",
+      "v": [
+        "one-way",
+        "two-way",
+        "round",
+        "return"
+      ],
+      "t": 0,
+      "izoh": "One-way = faqat borish.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#aa8801dc"
+    },
+    {
+      "q": "We run fast and ____ the last bus.",
+      "v": [
+        "catch",
+        "cut",
+        "cook",
+        "clean"
+      ],
+      "t": 0,
+      "izoh": "Catch the bus = ulgurmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#e782f7d0"
+    },
+    {
+      "q": "The ____ checks the passengers' tickets on the train.",
+      "v": [
+        "conductor",
+        "teacher",
+        "doctor",
+        "waiter"
+      ],
+      "t": 0,
+      "izoh": "Conductor = nazoratchi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#fe6a79de"
+    },
+    {
+      "q": "Look at the ____ board to find your gate number.",
+      "v": [
+        "departure",
+        "dinner",
+        "drawing",
+        "dancing"
+      ],
+      "t": 0,
+      "izoh": "Departure board = jo'nash tablosi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#d87475a2"
+    },
+    {
+      "q": "The taxi is fast, but the ____ ticket is cheaper.",
+      "v": [
+        "bus",
+        "sea",
+        "sky",
+        "zoo"
+      ],
+      "t": 0,
+      "izoh": "Avtobus arzonroq.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#930f1351"
+    },
+    {
+      "q": "A ____ carries you across the sea.",
+      "v": [
+        "ship",
+        "train",
+        "bus",
+        "car"
+      ],
+      "t": 0,
+      "izoh": "Ship = kema.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#f0874735"
+    },
+    {
+      "q": "A place where planes take off and land is an ____.",
+      "v": [
+        "airport",
+        "seaport",
+        "office",
+        "orchard"
+      ],
+      "t": 0,
+      "izoh": "Aeroport ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#3cebb90a"
+    },
+    {
+      "q": "A book of your travel documents with your photo is a ____.",
+      "v": [
+        "passport",
+        "notebook",
+        "textbook",
+        "diary"
+      ],
+      "t": 0,
+      "izoh": "Pasport ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#19a9f415"
+    },
+    {
+      "q": "Bags and cases you take on a trip are called ____.",
+      "v": [
+        "luggage",
+        "furniture",
+        "clothes",
+        "tickets"
+      ],
+      "t": 0,
+      "izoh": "Bagaj ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#4fc9654c"
+    },
+    {
+      "q": "When a train comes later than planned, it is a ____.",
+      "v": [
+        "delay",
+        "departure",
+        "destination",
+        "direction"
+      ],
+      "t": 0,
+      "izoh": "Delay ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#0b9d6ac8"
+    },
+    {
+      "q": "A ticket only for going, not coming back, is a ____ ticket.",
+      "v": [
+        "one-way",
+        "return",
+        "free",
+        "group"
+      ],
+      "t": 0,
+      "izoh": "One-way ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#5199b5e8"
+    },
+    {
+      "q": "A ticket for going and coming back is a ____ ticket.",
+      "v": [
+        "return",
+        "one-way",
+        "single",
+        "half"
+      ],
+      "t": 0,
+      "izoh": "Return ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#cbcdc637"
+    },
+    {
+      "q": "The long flat area where you wait for a train is the ____.",
+      "v": [
+        "platform",
+        "ceiling",
+        "garden",
+        "balcony"
+      ],
+      "t": 0,
+      "izoh": "Platform ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#5042a5ad"
+    },
+    {
+      "q": "A short holiday or visit to a place is a ____.",
+      "v": [
+        "trip",
+        "tree",
+        "truth",
+        "trap"
+      ],
+      "t": 0,
+      "izoh": "Trip ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#32ce0dac"
+    },
+    {
+      "q": "The card that lets you get on a plane is a ____.",
+      "v": [
+        "boarding pass",
+        "report card",
+        "score card",
+        "gift card"
+      ],
+      "t": 0,
+      "izoh": "Boarding pass ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#a2d2bcd1"
+    },
+    {
+      "q": "A person who travels on a bus or plane is a ____.",
+      "v": [
+        "passenger",
+        "pilot",
+        "porter",
+        "painter"
+      ],
+      "t": 0,
+      "izoh": "Passenger ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#8c0b71eb"
+    },
+    {
+      "q": "The time when a plane leaves is the ____ time.",
+      "v": [
+        "departure",
+        "arrival",
+        "closing",
+        "opening"
+      ],
+      "t": 0,
+      "izoh": "Departure ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#4b49d8d7"
+    },
+    {
+      "q": "The time when a bus reaches a place is the ____ time.",
+      "v": [
+        "arrival",
+        "departure",
+        "break",
+        "lunch"
+      ],
+      "t": 0,
+      "izoh": "Arrival ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#97387169"
+    },
+    {
+      "q": "A large bag with a handle for clothes is a ____.",
+      "v": [
+        "suitcase",
+        "backpack",
+        "handbag",
+        "wallet"
+      ],
+      "t": 0,
+      "izoh": "Suitcase ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#05815115"
+    },
+    {
+      "q": "To reserve a seat before travel means to ____ a ticket.",
+      "v": [
+        "book",
+        "burn",
+        "bend",
+        "blow"
+      ],
+      "t": 0,
+      "izoh": "Book a ticket ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#df20bcef"
+    },
+    {
+      "q": "To arrive too late and not get on the train is to ____ it.",
+      "v": [
+        "miss",
+        "meet",
+        "match",
+        "mix"
+      ],
+      "t": 0,
+      "izoh": "Miss a train ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#14e275d6"
+    },
+    {
+      "q": "To arrive in time and get on the bus is to ____ it.",
+      "v": [
+        "catch",
+        "cook",
+        "carry",
+        "call"
+      ],
+      "t": 0,
+      "izoh": "Catch a bus ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#c3dd9801"
+    },
+    {
+      "q": "A vehicle that runs on rails is a ____.",
+      "v": [
+        "train",
+        "truck",
+        "boat",
+        "plane"
+      ],
+      "t": 0,
+      "izoh": "Train ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#c9fb081d"
+    },
+    {
+      "q": "A vehicle with wings that flies in the sky is a ____.",
+      "v": [
+        "plane",
+        "ship",
+        "car",
+        "van"
+      ],
+      "t": 0,
+      "izoh": "Plane ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#ed2b2025"
+    },
+    {
+      "q": "A road vehicle that carries many people in a city is a ____.",
+      "v": [
+        "bus",
+        "bike",
+        "boat",
+        "jet"
+      ],
+      "t": 0,
+      "izoh": "Bus ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#dcc4dd90"
+    },
+    {
+      "q": "A place where buses stop for passengers is a bus ____.",
+      "v": [
+        "stop",
+        "stone",
+        "store",
+        "storm"
+      ],
+      "t": 0,
+      "izoh": "Bus stop ta'rifi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#af8b5c8c"
+    },
+    {
+      "q": "At check-in the worker says: 'Can I see your ____, please?'",
+      "v": [
+        "passport and ticket",
+        "fork and knife",
+        "recipe book",
+        "menu card"
+      ],
+      "t": 0,
+      "izoh": "Check-in da pasport va chipta so'raladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#9bc93926"
+    },
+    {
+      "q": "You are late and the train is leaving. You shout: 'We must ____!'",
+      "v": [
+        "run and catch it",
+        "sit and wait",
+        "order food",
+        "book a table"
+      ],
+      "t": 0,
+      "izoh": "Ulgurish uchun yugurish kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#c2972396"
+    },
+    {
+      "q": "Your flight says 'DELAYED'. This means it will ____.",
+      "v": [
+        "leave later than planned",
+        "leave now",
+        "never leave",
+        "leave earlier"
+      ],
+      "t": 0,
+      "izoh": "Delayed = kechikkan.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#fd7b619b"
+    },
+    {
+      "q": "You do not plan to return. You buy a ____ ticket.",
+      "v": [
+        "one-way",
+        "two-way",
+        "round-trip",
+        "open-jaw"
+      ],
+      "t": 0,
+      "izoh": "Qaytmasangiz one-way.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#3d371b93"
+    },
+    {
+      "q": "The suitcase is too heavy. You say: 'My ____ is over the weight limit.'",
+      "v": [
+        "luggage",
+        "laptop",
+        "lunch",
+        "letter"
+      ],
+      "t": 0,
+      "izoh": "Bagaj og'ir.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#a040df68"
+    },
+    {
+      "q": "Before the plane, the officer says: 'Please, your ____.'",
+      "v": [
+        "boarding pass",
+        "shopping bag",
+        "water bottle",
+        "note book"
+      ],
+      "t": 0,
+      "izoh": "Chiqishda boarding pass.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#d101eb53"
+    },
+    {
+      "q": "You want a seat on the 8 a.m. train. You ____ it online.",
+      "v": [
+        "book",
+        "cook",
+        "bake",
+        "bark"
+      ],
+      "t": 0,
+      "izoh": "Onlayn band qilinadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#b791f68a"
+    },
+    {
+      "q": "The announcement says the train departs from platform 3. You go to ____.",
+      "v": [
+        "platform 3",
+        "gate 3",
+        "room 3",
+        "table 3"
+      ],
+      "t": 0,
+      "izoh": "Perron 3 ga borasiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#b8e85dfe"
+    },
+    {
+      "q": "A friend asks about your holiday. You say: 'The ____ was long but fun.'",
+      "v": [
+        "journey",
+        "kitchen",
+        "garden",
+        "weather"
+      ],
+      "t": 0,
+      "izoh": "Journey = safar.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#151f2977"
+    },
+    {
+      "q": "At the station you cannot find your train. You look at the ____.",
+      "v": [
+        "departure board",
+        "menu board",
+        "white board",
+        "cutting board"
+      ],
+      "t": 0,
+      "izoh": "Jo'nash tablosini ko'rasiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#04cc6d0c"
+    },
+    {
+      "q": "Your bus comes on time. You are happy because there is no ____.",
+      "v": [
+        "delay",
+        "dinner",
+        "dessert",
+        "design"
+      ],
+      "t": 0,
+      "izoh": "Kechikish yo'q.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#97dfcf97"
+    },
+    {
+      "q": "You leave home for a two-week ____ to the seaside.",
+      "v": [
+        "trip",
+        "tap",
+        "tip",
+        "trap"
+      ],
+      "t": 0,
+      "izoh": "Trip = safar.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#d386d63b"
+    },
+    {
+      "q": "You are at a bus ____, not a restaurant, so there is no food.",
+      "v": [
+        "stop",
+        "shop",
+        "spot",
+        "step"
+      ],
+      "t": 0,
+      "izoh": "Bekatda ovqat yo'q.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#1b54f4a1"
+    },
+    {
+      "q": "You forgot your ____, so you cannot fly abroad today.",
+      "v": [
+        "passport",
+        "pencil",
+        "pillow",
+        "poster"
+      ],
+      "t": 0,
+      "izoh": "Pasportsiz uchib bo'lmaydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#c4ab989e"
+    },
+    {
+      "q": "The plane will land soon. The ____ time is 6 p.m.",
+      "v": [
+        "arrival",
+        "argument",
+        "apron",
+        "army"
+      ],
+      "t": 0,
+      "izoh": "Arrival = qo'nish/kelish.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#85915cc8"
+    },
+    {
+      "q": "'Kema' inglizcha qanday?",
+      "v": [
+        "ship",
+        "sheep",
+        "shop",
+        "sheet"
+      ],
+      "t": 0,
+      "izoh": "Ship = kema.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#7230922a"
+    },
+    {
+      "q": "'Taksi' inglizcha qanday?",
+      "v": [
+        "taxi",
+        "tax",
+        "text",
+        "task"
+      ],
+      "t": 0,
+      "izoh": "Taxi = taksi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#66b1c17b"
+    },
+    {
+      "q": "'Xarita' inglizcha qanday?",
+      "v": [
+        "map",
+        "mop",
+        "cap",
+        "cup"
+      ],
+      "t": 0,
+      "izoh": "Map = xarita.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#a673da65"
+    },
+    {
+      "q": "'Manzil (borish joyi)' inglizcha qanday?",
+      "v": [
+        "destination",
+        "decision",
+        "direction",
+        "description"
+      ],
+      "t": 0,
+      "izoh": "Destination = boradigan joy.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#f87b061a"
+    },
+    {
+      "q": "'Yo'l haqi (chipta narxi)' inglizcha qanday?",
+      "v": [
+        "fare",
+        "fair",
+        "farm",
+        "far"
+      ],
+      "t": 0,
+      "izoh": "Fare = yo'l haqi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#387c1c73"
+    },
+    {
+      "q": "'Darvoza (aeroportdagi gate)' inglizcha qanday?",
+      "v": [
+        "gate",
+        "gaze",
+        "gain",
+        "game"
+      ],
+      "t": 0,
+      "izoh": "Gate = chiqish eshigi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#a0a7b1ed"
+    },
+    {
+      "q": "'Vaqt jadvali' inglizcha qanday?",
+      "v": [
+        "timetable",
+        "teaspoon",
+        "teamwork",
+        "teardrop"
+      ],
+      "t": 0,
+      "izoh": "Timetable = jadval.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#561cbe5a"
+    },
+    {
+      "q": "'Metro' inglizcha qanday?",
+      "v": [
+        "underground",
+        "undergo",
+        "underline",
+        "understand"
+      ],
+      "t": 0,
+      "izoh": "Underground = metro.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#66f656c3"
+    },
+    {
+      "q": "'Poyezd vagoni' inglizcha qanday?",
+      "v": [
+        "carriage",
+        "carrot",
+        "cabbage",
+        "cottage"
+      ],
+      "t": 0,
+      "izoh": "Carriage = vagon.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#d5672285"
+    },
+    {
+      "q": "How much is the ____ from here to the airport?",
+      "v": [
+        "fare",
+        "face",
+        "fame",
+        "farm"
+      ],
+      "t": 0,
+      "izoh": "Fare = yo'l haqi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#021d3f1e"
+    },
+    {
+      "q": "We looked at the ____ to plan our route through the city.",
+      "v": [
+        "map",
+        "mat",
+        "man",
+        "mad"
+      ],
+      "t": 0,
+      "izoh": "Map bilan yo'l topamiz.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#df566567"
+    },
+    {
+      "q": "Passengers must go to ____ 12 for the flight to Rome.",
+      "v": [
+        "gate",
+        "cage",
+        "gale",
+        "gaze"
+      ],
+      "t": 0,
+      "izoh": "Gate = chiqish darvozasi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#07fbe36f"
+    },
+    {
+      "q": "Check the ____ to see when the next bus comes.",
+      "v": [
+        "timetable",
+        "tablecloth",
+        "teaspoon",
+        "notebook"
+      ],
+      "t": 0,
+      "izoh": "Timetable = jadval.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#a83e6641"
+    },
+    {
+      "q": "In big cities, many people take the ____ to avoid traffic.",
+      "v": [
+        "underground",
+        "overcoat",
+        "underwear",
+        "overtime"
+      ],
+      "t": 0,
+      "izoh": "Metro tirbandlikdan qutqaradi.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#0c99c87c"
+    },
+    {
+      "q": "Our final ____ is Paris, but we stop in Berlin first.",
+      "v": [
+        "destination",
+        "decoration",
+        "dictation",
+        "donation"
+      ],
+      "t": 0,
+      "izoh": "Destination = manzil.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#e783a190"
+    },
+    {
+      "q": "A ____ is faster than a bus but often more expensive.",
+      "v": [
+        "taxi",
+        "table",
+        "towel",
+        "tower"
+      ],
+      "t": 0,
+      "izoh": "Taxi tezroq lekin qimmat.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#f4988ec6"
+    },
+    {
+      "q": "Sit in ____ B, seat 14, for the train to Khiva.",
+      "v": [
+        "carriage",
+        "cabbage",
+        "garbage",
+        "message"
+      ],
+      "t": 0,
+      "izoh": "Carriage = vagon.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#9b91a9e8"
+    },
+    {
+      "q": "Please fasten your ____ before the plane takes off.",
+      "v": [
+        "seatbelt",
+        "football",
+        "doorbell",
+        "handball"
+      ],
+      "t": 0,
+      "izoh": "Seatbelt = xavfsizlik kamari.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#8518276b"
+    },
+    {
+      "q": "We waited in the ____ lounge before boarding the plane.",
+      "v": [
+        "departure",
+        "dinner",
+        "dessert",
+        "drawing"
+      ],
+      "t": 0,
+      "izoh": "Departure lounge = kutish zali.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#7118d0f0"
+    },
+    {
+      "q": "The train was full, so we could not find a free ____.",
+      "v": [
+        "seat",
+        "street",
+        "sweet",
+        "sheet"
+      ],
+      "t": 0,
+      "izoh": "Seat = o'rindiq.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#65441a36"
+    },
+    {
+      "q": "Put your small bag in the ____ above your seat.",
+      "v": [
+        "overhead locker",
+        "kitchen sink",
+        "garden shed",
+        "school bag"
+      ],
+      "t": 0,
+      "izoh": "Overhead locker = tepadagi javon.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#338f4daa"
+    },
+    {
+      "q": "'Uchish (samolyotning havoga ko'tarilishi)' inglizcha qanday?",
+      "v": [
+        "take off",
+        "take out",
+        "take in",
+        "take up"
+      ],
+      "t": 0,
+      "izoh": "Take off = uchish.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#ba71161d"
+    },
+    {
+      "q": "'Qo'nish (samolyotning yerga tushishi)' inglizcha qanday?",
+      "v": [
+        "land",
+        "lend",
+        "lamp",
+        "lock"
+      ],
+      "t": 0,
+      "izoh": "Land = qo'nmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#5fb09ff0"
+    },
+    {
+      "q": "You must ____ in at least two hours before an international flight.",
+      "v": [
+        "check",
+        "cheer",
+        "chew",
+        "chase"
+      ],
+      "t": 0,
+      "izoh": "Check in = ro'yxatdan o'tish.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#ce77b646"
+    },
+    {
+      "q": "The green light means the plane is ready to ____.",
+      "v": [
+        "take off",
+        "stay home",
+        "park here",
+        "turn back"
+      ],
+      "t": 0,
+      "izoh": "Take off = havoga ko'tarilmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m17#c4d343cf"
+    }
+  ]
+}

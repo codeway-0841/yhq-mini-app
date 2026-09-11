@@ -1,0 +1,501 @@
+{
+  "nom": "17-mavzu. Kristall panjaralar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kristall panjara deb nimaga aytiladi?",
+      "v": [
+        "Kristallni hosil qiluvchi zarrachalarning muntazam ravishda joylashuviga",
+        "Kristallni hosil qiluvchi zarrachalarning tartibsiz joylashuviga",
+        "Moddaning gaz holatiga o'tishiga",
+        "Moddalarning erish xossasiga"
+      ],
+      "t": 0,
+      "izoh": "Kristallni hosil qiluvchi zarrachalarning muntazam ravishda joylashuvi kristall panjaralar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#710bda9e"
+    },
+    {
+      "q": "Kristall panjaralar necha turga bo'linadi?",
+      "v": [
+        "4 turga",
+        "3 turga",
+        "2 turga",
+        "5 turga"
+      ],
+      "t": 0,
+      "izoh": "Ionli, atom, molekular va metall kristall panjaralar — 4 tur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#aaee47e6"
+    },
+    {
+      "q": "Ionli kristall panjaralar deb qanday tuzilmalarga aytiladi?",
+      "v": [
+        "Kristall panjara tugunlarida musbat va manfiy ionlar joylashgan va ular orasida ionli bog'lanish mavjud bo'lgan tuzilmalarga",
+        "Tugunlarida alohida atomlar joylashgan tuzilmalarga",
+        "Tugunlarida molekulalar joylashgan tuzilmalarga",
+        "Tugunlarida atomlar va musbat ionlar joylashgan tuzilmalarga"
+      ],
+      "t": 0,
+      "izoh": "Ionli kristall panjaralar tugunlarida musbat va manfiy ionlar joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#0fd869d9"
+    },
+    {
+      "q": "Atom kristall panjaralar deb qanday tuzilmalarga aytiladi?",
+      "v": [
+        "Kristall panjara tugunchalarida alohida atomlar joylashgan va ular orasida kovalent bog'lanish mavjud bo'lgan tuzilmalarga",
+        "Tugunlarida ionlar joylashgan tuzilmalarga",
+        "Tugunlarida molekulalar joylashgan tuzilmalarga",
+        "Tugunlarida musbat ionlar joylashgan tuzilmalarga"
+      ],
+      "t": 0,
+      "izoh": "Atom kristall panjaralar tugunchalarida alohida atomlar joylashib, ular orasida kovalent bog'lanish bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#f6051e2f"
+    },
+    {
+      "q": "Molekular kristall panjaralar deb qanday tuzilmalarga aytiladi?",
+      "v": [
+        "Kristall panjara tugunlarida alohida molekulalar joylashgan tuzilmalarga",
+        "Tugunlarida ionlar joylashgan tuzilmalarga",
+        "Tugunlarida alohida atomlar joylashgan tuzilmalarga",
+        "Tugunlarida metall ionlari joylashgan tuzilmalarga"
+      ],
+      "t": 0,
+      "izoh": "Molekular kristall panjaralar tugunlarida alohida molekulalar joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#7e568b56"
+    },
+    {
+      "q": "Metall kristall panjaralar deb qanday tuzilmalarga aytiladi?",
+      "v": [
+        "Kristall panjara tugunlarida alohida atomlar va musbat ionlar joylashgan va ular orasida metall bog'lanish mavjud bo'lgan tuzilmalarga",
+        "Tugunlarida manfiy ionlar joylashgan tuzilmalarga",
+        "Tugunlarida molekulalar joylashgan tuzilmalarga",
+        "Tugunlarida faqat atomlar joylashgan tuzilmalarga"
+      ],
+      "t": 0,
+      "izoh": "Metall kristall panjaralar tugunlarida alohida atomlar va musbat ionlar joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#9b549a03"
+    },
+    {
+      "q": "Ionli kristall panjarali moddalarga misol ko'rsating.",
+      "v": [
+        "NaCl, KNO3, CuSO4",
+        "Olmos, grafit, kremniy",
+        "H2, N2, O2",
+        "Shakar, yod, muz"
+      ],
+      "t": 0,
+      "izoh": "Tipik metallarning tuzlari (NaCl, KNO3, CuSO4) ionli kristall panjarali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#a40292c2"
+    },
+    {
+      "q": "Ionli kristall panjarali moddalar qatoriga ishqorlardan qaysilari kiradi?",
+      "v": [
+        "NaOH, KOH, Ca(OH)2",
+        "H2SO4, HCl, HNO3",
+        "CO2, SO2, NO2",
+        "H2, O2, N2"
+      ],
+      "t": 0,
+      "izoh": "Ishqorlar (NaOH, KOH, Ca(OH)2) ionli kristall panjarali moddalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#771a89e4"
+    },
+    {
+      "q": "Atom kristall panjarali oddiy moddalarga misol ko'rsating.",
+      "v": [
+        "Olmos, grafit, kremniy, bor",
+        "NaCl, KNO3, CuSO4",
+        "H2O, HCl, CO2",
+        "Na, Ba, Zn, Al"
+      ],
+      "t": 0,
+      "izoh": "Olmos, grafit, kremniy, bor kabi oddiy moddalar atom kristall panjarali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#43412398"
+    },
+    {
+      "q": "Molekular kristall panjarali moddalarga misol ko'rsating.",
+      "v": [
+        "Qattiq holdagi H2O, HCl, CO2",
+        "NaCl, KOH, CuSO4",
+        "Olmos, grafit, bor",
+        "Na, Zn, Cu, Au"
+      ],
+      "t": 0,
+      "izoh": "Kovalent qutbli bog'lanishli molekulalar (qattiq holdagi H2O, HCl, CO2, H2S) molekular kristall panjarali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#1f62ade5"
+    },
+    {
+      "q": "Molekular kristall panjara tugunlarida kovalent qutbsiz molekulalar joylashgan oddiy moddalarga misol ko'rsating.",
+      "v": [
+        "Qattiq holdagi H2, N2, O2, P4, S8",
+        "NaCl, KNO3, CuSO4",
+        "Olmos, grafit, kremniy",
+        "Na, Ba, Zn, Cu"
+      ],
+      "t": 0,
+      "izoh": "Qattiq holdagi H2, N2, O2, Cl2, P4, S8 — kovalent qutbsiz molekulalar joylashgan oddiy moddalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#5f42ea8d"
+    },
+    {
+      "q": "Metall kristall panjarali moddalarga misol ko'rsating.",
+      "v": [
+        "Na, Ba, Zn, Al, Cu, Au",
+        "NaCl, KOH, Ca(OH)2",
+        "Olmos, grafit, bor",
+        "H2O, CO2, H2S"
+      ],
+      "t": 0,
+      "izoh": "Barcha metallar (Na, Ba, Zn, Al, Cu, Au) metall kristall panjarali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#b6bafad4"
+    },
+    {
+      "q": "Osh tuzi kristallarining tugunlarida qanday ionlar bo'ladi?",
+      "v": [
+        "Na+ va Cl- ionlari",
+        "K+ va Cl- ionlari",
+        "Na va Cl atomlari",
+        "Na+ va F- ionlari"
+      ],
+      "t": 0,
+      "izoh": "Osh tuzi kristallari tugunlarida natriy (Na+) va xlor (Cl-) ionlari bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#6b5528a0"
+    },
+    {
+      "q": "Osh tuzi kristall panjarasida Na+ ioni nechta tomondan Cl- ionlari bilan bog'langan?",
+      "v": [
+        "Olti tomondan",
+        "To'rt tomondan",
+        "Ikki tomondan",
+        "Sakkiz tomondan"
+      ],
+      "t": 0,
+      "izoh": "Na+ ioni olti tomoni bilan Cl- ionlari bilan bog'langan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#84b8d1ac"
+    },
+    {
+      "q": "Osh tuzi kristall panjarasida Cl- ioni nechta tomondan Na+ ionlari bilan bog'langan?",
+      "v": [
+        "Olti tomondan",
+        "To'rt tomondan",
+        "Uch tomondan",
+        "O'n ikki tomondan"
+      ],
+      "t": 0,
+      "izoh": "Cl- ionlari ham olti tomoni bilan Na+ ioni bilan bog'langan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#26debcfb"
+    },
+    {
+      "q": "Osh tuzi kristallari qanday shaklda bo'ladi?",
+      "v": [
+        "Kub simon",
+        "Tetraedr simon",
+        "Prizma simon",
+        "Shar simon"
+      ],
+      "t": 0,
+      "izoh": "Ionlarning muntazam joylashuvi oqibatida osh tuzi kristallari kub simon holatda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#45147c5e"
+    },
+    {
+      "q": "Ionli birikmalar qanday fizik xossalarga ega?",
+      "v": [
+        "Juda qattiq, qiyin suyuqlanuvchan va uchuvchan emas",
+        "Yumshoq, oson suyuqlanuvchan va uchuvchan",
+        "Suyuq va gazsimon",
+        "Elastik va cho'ziluvchan"
+      ],
+      "t": 0,
+      "izoh": "Ionli birikmalar juda qattiq, qiyin suyuqlanuvchan va uchuvchan emas bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#bbe71e52"
+    },
+    {
+      "q": "Olmos kristallari tugunlarida qanday zarrachalar bo'ladi?",
+      "v": [
+        "Uglerod atomlari",
+        "Natriy ionlari",
+        "Xlor ionlari",
+        "Molekulalar"
+      ],
+      "t": 0,
+      "izoh": "Olmos kristallari tugunlarida uglerod atomlari bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#b5c85fc4"
+    },
+    {
+      "q": "Olmosda uglerod atomlari qo'shni nechta uglerod atomi bilan bog'langan?",
+      "v": [
+        "To'rtta",
+        "Oltita",
+        "Ikkita",
+        "Uchta"
+      ],
+      "t": 0,
+      "izoh": "Uglerod atomlari qo'shni to'rtta uglerod atomi bilan muntazam piramida shaklidagi (tetraedr) kristallarni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#f1377dc0"
+    },
+    {
+      "q": "Olmos kristall panjarasi qanday shaklga ega?",
+      "v": [
+        "Tetraedr (muntazam piramida)",
+        "Kub",
+        "Prizma",
+        "Oktaedr"
+      ],
+      "t": 0,
+      "izoh": "Olmosda uglerod atomlari tetraedr shaklidagi kristallarni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#6d9edd21"
+    },
+    {
+      "q": "Molekular kristall panjaralarda molekulalar bir-biri bilan qanday kuch bilan tortilib turadi?",
+      "v": [
+        "Molekulalararo tortishuv kuchi bilan",
+        "Ionli bog'lanish kuchi bilan",
+        "Kovalent bog'lanish kuchi bilan",
+        "Metall bog'lanish kuchi bilan"
+      ],
+      "t": 0,
+      "izoh": "Molekular kristall panjaralarda molekulalar bir-biri bilan molekulalararo tortishuv kuchi bilan tortilib turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#05e79342"
+    },
+    {
+      "q": "Molekular kristall panjarali moddalar qanday fizik xossalarga ega?",
+      "v": [
+        "Oson suyuqlanadigan va oson uchuvchan",
+        "Juda qattiq va qiyin suyuqlanuvchan",
+        "Uchuvchan emas va juda qattiq",
+        "Elektr o'tkazuvchan"
+      ],
+      "t": 0,
+      "izoh": "Molekular kristall panjara hosil qiluvchi moddalar oson suyuqlanadigan va oson uchuvchan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#e484a324"
+    },
+    {
+      "q": "Molekulalar orasidagi o'zaro tortishuv kuchi qanday bog'lanishlarga nisbatan kuchsiz?",
+      "v": [
+        "Ionli bog'lanish va atomlar orasidagi kovalent bog'lanishga nisbatan",
+        "Metall bog'lanishga nisbatan",
+        "Vodorod bog'lanishga nisbatan",
+        "Donor-akseptor bog'lanishga nisbatan"
+      ],
+      "t": 0,
+      "izoh": "Molekulalar orasidagi tortishuv kuchi ionli bog'lanish va kovalent bog'lanishga nisbatan ancha kuchsiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#cf432f32"
+    },
+    {
+      "q": "Shakar tez va oson suyuqlanishi, yod oson uchuvchan bo'lishi qanday kristall panjara bilan izohlanadi?",
+      "v": [
+        "Molekular kristall panjara bilan",
+        "Ionli kristall panjara bilan",
+        "Atom kristall panjara bilan",
+        "Metall kristall panjara bilan"
+      ],
+      "t": 0,
+      "izoh": "Shakar va yod molekular kristall panjarali bo'lgani uchun oson suyuqlanadi va uchuvchan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#d4347b53"
+    },
+    {
+      "q": "Odatdagi sharoitda suyuq yoki gaz holatida bo'ladigan moddalar sovitilganda qanday holatga o'tadi?",
+      "v": [
+        "Qattiq holatga",
+        "Plazma holatiga",
+        "O'z holatida qoladi",
+        "Kristalldan amorf holatga"
+      ],
+      "t": 0,
+      "izoh": "Sovitilganda moddalar qattiq holatga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#d9143cd3"
+    },
+    {
+      "q": "Karbonat angidrid sovitilganda qanday holatga o'tadi?",
+      "v": [
+        "\"Quruq muz\" holatiga",
+        "Oddiy muz holatiga",
+        "Suyuq holatga",
+        "Amorf holatga"
+      ],
+      "t": 0,
+      "izoh": "Karbonat angidrid \"quruq muz\" holatiga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#afee4a03"
+    },
+    {
+      "q": "Qattiq moddalarning tashqi ko'rinishi va fizik xossalari nimaga bog'liq?",
+      "v": [
+        "Moddani tashkil etuvchi zarrachalar orasidagi kimyoviy bog'lanishlar tabiatiga",
+        "Moddaning rangiga",
+        "Moddaning miqdoriga",
+        "Atrof-muhit bosimiga"
+      ],
+      "t": 0,
+      "izoh": "Qattiq moddalarning xossalari zarrachalar orasidagi kimyoviy bog'lanishlar tabiatiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#5c1c80e4"
+    },
+    {
+      "q": "Qattiq moddalarda zarrachalar qanday joylashadi (amorf moddalardan tashqari)?",
+      "v": [
+        "Muntazam ravishda",
+        "Tartibsiz ravishda",
+        "Tasodifiy ravishda",
+        "Harakatlanib turuvchi holatda"
+      ],
+      "t": 0,
+      "izoh": "Qattiq moddalarda zarrachalar (ionlar, atomlar, molekulalar) muntazam ravishda joylashadi (amorf moddalardan tashqari).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#31afc9a3"
+    },
+    {
+      "q": "Osh tuzi kristallda Na+ bilan Na+, Cl- bilan Cl- ionlari bir-birini qanday ta'sir qiladi?",
+      "v": [
+        "Itaradi",
+        "Tortiladi",
+        "Neytrallaydi",
+        "Ta'sir qilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Bir xil zaryadli ionlar bir-birini itaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#6c3637e1"
+    },
+    {
+      "q": "Quyidagi moddalarning qaysi biri atom kristall panjaraga ega?",
+      "v": [
+        "Olmos",
+        "Osh tuzi",
+        "Shakar",
+        "Mis"
+      ],
+      "t": 0,
+      "izoh": "Olmos atom kristall panjarali oddiy modda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#fdd9d14c"
+    },
+    {
+      "q": "Quyidagi moddalarning qaysi biri ionli kristall panjaraga ega?",
+      "v": [
+        "KNO3",
+        "Grafit",
+        "Muz",
+        "Yod"
+      ],
+      "t": 0,
+      "izoh": "KNO3 tipik metall tuzi bo'lib, ionli kristall panjarali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#e1f0ae2a"
+    },
+    {
+      "q": "Quyidagi moddalarning qaysi biri molekular kristall panjaraga ega?",
+      "v": [
+        "Qattiq holdagi CO2",
+        "NaCl",
+        "Olmos",
+        "Zn"
+      ],
+      "t": 0,
+      "izoh": "Qattiq holdagi CO2 molekular kristall panjarali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#b9322ad3"
+    },
+    {
+      "q": "Quyidagi moddalarning qaysi biri metall kristall panjaraga ega?",
+      "v": [
+        "Au",
+        "S8",
+        "NaOH",
+        "HCl"
+      ],
+      "t": 0,
+      "izoh": "Barcha metallar, jumladan Au, metall kristall panjarali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m17-kristall-panjaralar#168e0702"
+    }
+  ]
+}

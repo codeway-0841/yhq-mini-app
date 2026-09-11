@@ -1,0 +1,1306 @@
+{
+  "nom": "Passive voice (present & past simple)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "Today Samarkand ___ by millions of tourists every year.",
+      "v": [
+        "visits",
+        "visited",
+        "was visited",
+        "is visited"
+      ],
+      "t": 3,
+      "izoh": "Hozirgi majhul (today, every year): is + V3.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#400b0f4d"
+    },
+    {
+      "q": "The bridge over the river ___ in 1985.",
+      "v": [
+        "built",
+        "was built",
+        "is built",
+        "builds"
+      ],
+      "t": 1,
+      "izoh": "O'tmish majhul: was + built. «built» yolg'iz — be tushib qolgan (#102).",
+      "qiy": "orta",
+      "id": "ing_b1_m4#06de1b67"
+    },
+    {
+      "q": "Glass ___ from sand.",
+      "v": [
+        "makes",
+        "made",
+        "is made",
+        "is making"
+      ],
+      "t": 2,
+      "izoh": "Hozirgi majhul: is made; from — material.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#6516a031"
+    },
+    {
+      "q": "Which word is missing? 'The palace ___ built in 1780.'",
+      "v": [
+        "was",
+        "is",
+        "has",
+        "did"
+      ],
+      "t": 0,
+      "izoh": "O'tmish (1780) — was. «is built in 1780» — zamon mos emas.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#caf0c252"
+    },
+    {
+      "q": "These pictures were painted ___ my uncle.",
+      "v": [
+        "from",
+        "with",
+        "by",
+        "of"
+      ],
+      "t": 2,
+      "izoh": "Bajaruvchi — by (#103).",
+      "qiy": "orta",
+      "id": "ing_b1_m4#41030979"
+    },
+    {
+      "q": "Bread is made ___ flour.",
+      "v": [
+        "by",
+        "in",
+        "at",
+        "from"
+      ],
+      "t": 3,
+      "izoh": "Material — from.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#01939583"
+    },
+    {
+      "q": "The old bridge ___ by the flood last spring.",
+      "v": [
+        "is destroyed",
+        "destroyed",
+        "destroys",
+        "was destroyed"
+      ],
+      "t": 3,
+      "izoh": "O'tmish majhul: was destroyed.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#9e586056"
+    },
+    {
+      "q": "Which sentence is passive?",
+      "v": [
+        "The workers restored the mosque.",
+        "The mosque was restored last year.",
+        "The mosque looks beautiful.",
+        "They are restoring the mosque."
+      ],
+      "t": 1,
+      "izoh": "be + V3: was restored.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#8eb5175e"
+    },
+    {
+      "q": "Find the mistake: 'These bricks was made in Bukhara.'",
+      "v": [
+        "was",
+        "These",
+        "made",
+        "Bukhara"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik ega — were made.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#ad426194"
+    },
+    {
+      "q": "Find the mistake: 'The song was sang by the whole class.'",
+      "v": [
+        "was",
+        "by",
+        "whole",
+        "sang"
+      ],
+      "t": 3,
+      "izoh": "be + V3: sung (#91).",
+      "qiy": "orta",
+      "id": "ing_b1_m4#76e8c665"
+    },
+    {
+      "q": "The letters ___ every morning at nine.",
+      "v": [
+        "deliver",
+        "are delivered",
+        "delivered",
+        "are delivering"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi majhul, odat: are delivered.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#b0f81095"
+    },
+    {
+      "q": "Passive of: 'Farmers grow cotton in Fergana.'",
+      "v": [
+        "Cotton is grown in Fergana.",
+        "Cotton grows in Fergana.",
+        "Cotton was grown in Fergana.",
+        "Cotton is grow in Fergana."
+      ],
+      "t": 0,
+      "izoh": "Hozirgi majhul: is grown (grow → grew → grown).",
+      "qiy": "orta",
+      "id": "ing_b1_m4#8ced3c20"
+    },
+    {
+      "q": "The office ___ cleaned every morning.",
+      "v": [
+        "is",
+        "are",
+        "were",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'The office' birlik: is + cleaned.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#f82ed386"
+    },
+    {
+      "q": "Rice ___ grown in many Asian countries.",
+      "v": [
+        "is",
+        "are",
+        "were",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Rice sanoqsiz: is + grown.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#f564dc85"
+    },
+    {
+      "q": "The rooms ___ cleaned every day.",
+      "v": [
+        "are",
+        "is",
+        "was",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'Rooms' ko'plik: are.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#5ed85a10"
+    },
+    {
+      "q": "This bridge ___ used by thousands of cars daily.",
+      "v": [
+        "is",
+        "are",
+        "were",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'Bridge' birlik: is.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#1ddffe80"
+    },
+    {
+      "q": "The letters ___ delivered every morning.",
+      "v": [
+        "are",
+        "is",
+        "was",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'Letters' ko'plik: are.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#639ca6c9"
+    },
+    {
+      "q": "Coffee ___ produced in Brazil.",
+      "v": [
+        "is",
+        "are",
+        "were",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Coffee sanoqsiz: is.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#5167db5b"
+    },
+    {
+      "q": "The windows ___ washed once a week.",
+      "v": [
+        "are",
+        "is",
+        "was",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'Windows' ko'plik: are.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#196c9d64"
+    },
+    {
+      "q": "This song ___ played on the radio a lot.",
+      "v": [
+        "is",
+        "are",
+        "were",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'Song' birlik: is.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#499deae1"
+    },
+    {
+      "q": "The house ___ built in 1990.",
+      "v": [
+        "was",
+        "were",
+        "is",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "'House' birlik, o'tgan zamon: was + built.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#f98f9539"
+    },
+    {
+      "q": "The letters ___ sent yesterday.",
+      "v": [
+        "were",
+        "was",
+        "are",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "'Letters' ko'plik o'tgan: were + sent.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#8a823e14"
+    },
+    {
+      "q": "America ___ discovered in 1492.",
+      "v": [
+        "was",
+        "were",
+        "is",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was + discovered.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#c36f105f"
+    },
+    {
+      "q": "The windows ___ broken during the storm.",
+      "v": [
+        "were",
+        "was",
+        "are",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "'Windows' ko'plik o'tgan: were.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#9f3432ae"
+    },
+    {
+      "q": "The cake ___ eaten before I arrived.",
+      "v": [
+        "was",
+        "were",
+        "is",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "'Cake' birlik o'tgan: was + eaten.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#194c7ed1"
+    },
+    {
+      "q": "The thieves ___ caught by the police last night.",
+      "v": [
+        "were",
+        "was",
+        "are",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "'Thieves' ko'plik o'tgan: were.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#9bd59f76"
+    },
+    {
+      "q": "The bridge ___ damaged in the flood.",
+      "v": [
+        "was",
+        "were",
+        "is",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "'Bridge' birlik o'tgan: was.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#fa2bb281"
+    },
+    {
+      "q": "These photos ___ taken in 2010.",
+      "v": [
+        "were",
+        "was",
+        "are",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "'Photos' ko'plik o'tgan: were + taken.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#304ab180"
+    },
+    {
+      "q": "The museum ___ opened in 1985.",
+      "v": [
+        "was",
+        "were",
+        "is",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was + opened.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#5a03f3b9"
+    },
+    {
+      "q": "The children ___ taken to the zoo yesterday.",
+      "v": [
+        "were",
+        "was",
+        "are",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "'Children' ko'plik o'tgan: were.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#233130ab"
+    },
+    {
+      "q": "The window was ___ by the boys.",
+      "v": [
+        "broken",
+        "break",
+        "broke",
+        "breaks"
+      ],
+      "t": 0,
+      "izoh": "3-shakl (past participle): broken.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#2d2c1299"
+    },
+    {
+      "q": "The report is ___ every month.",
+      "v": [
+        "written",
+        "write",
+        "wrote",
+        "writes"
+      ],
+      "t": 0,
+      "izoh": "3-shakl: written.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#25f9ec6b"
+    },
+    {
+      "q": "The car was ___ last week.",
+      "v": [
+        "stolen",
+        "steal",
+        "stole",
+        "steals"
+      ],
+      "t": 0,
+      "izoh": "3-shakl: stolen.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#dd150ce1"
+    },
+    {
+      "q": "The bread is ___ fresh every day.",
+      "v": [
+        "baked",
+        "bake",
+        "baking",
+        "bakes"
+      ],
+      "t": 0,
+      "izoh": "3-shakl (regular): baked.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#ab3985fc"
+    },
+    {
+      "q": "The song was ___ by a famous singer.",
+      "v": [
+        "sung",
+        "sing",
+        "sang",
+        "sings"
+      ],
+      "t": 0,
+      "izoh": "3-shakl: sung.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#35f91469"
+    },
+    {
+      "q": "The homework is ___ by the teacher.",
+      "v": [
+        "checked",
+        "check",
+        "checking",
+        "checks"
+      ],
+      "t": 0,
+      "izoh": "3-shakl: checked.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#eefda8d5"
+    },
+    {
+      "q": "The tree was ___ down last year.",
+      "v": [
+        "cut",
+        "cutted",
+        "cutting",
+        "cuts"
+      ],
+      "t": 0,
+      "izoh": "'Cut' ning 3-shakli ham cut.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#b438ed0a"
+    },
+    {
+      "q": "The keys were ___ on the table.",
+      "v": [
+        "left",
+        "leave",
+        "leaving",
+        "leaves"
+      ],
+      "t": 0,
+      "izoh": "3-shakl: left.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#bba5a456"
+    },
+    {
+      "q": "The message was ___ to everyone.",
+      "v": [
+        "sent",
+        "send",
+        "sending",
+        "sends"
+      ],
+      "t": 0,
+      "izoh": "3-shakl: sent.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#317ebf85"
+    },
+    {
+      "q": "The floor is ___ twice a day.",
+      "v": [
+        "swept",
+        "sweep",
+        "sweeping",
+        "sweeps"
+      ],
+      "t": 0,
+      "izoh": "3-shakl: swept.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#48cc4be1"
+    },
+    {
+      "q": "The Mona Lisa ___ painted by Leonardo da Vinci.",
+      "v": [
+        "was",
+        "were",
+        "is",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was + painted by.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#56b87fe5"
+    },
+    {
+      "q": "This book ___ written by a young author.",
+      "v": [
+        "was",
+        "were",
+        "are",
+        "being"
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was written by.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#8540c1dc"
+    },
+    {
+      "q": "The goal ___ scored by the captain.",
+      "v": [
+        "was",
+        "were",
+        "is",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was scored by.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#24a02fe7"
+    },
+    {
+      "q": "The meal ___ cooked by my mother.",
+      "v": [
+        "was",
+        "were",
+        "is",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was cooked by.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#7e0e6995"
+    },
+    {
+      "q": "In passive voice, the doer of the action follows the word ___.",
+      "v": [
+        "by",
+        "with",
+        "from",
+        "of"
+      ],
+      "t": 0,
+      "izoh": "Ish bajaruvchisi 'by' bilan keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#98a80fd0"
+    },
+    {
+      "q": "The house is cleaned ___ a professional company.",
+      "v": [
+        "by",
+        "from",
+        "with",
+        "of"
+      ],
+      "t": 0,
+      "izoh": "Agent 'by' bilan.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#5a7a0f0d"
+    },
+    {
+      "q": "The film ___ directed by a famous director.",
+      "v": [
+        "was",
+        "were",
+        "are",
+        "being"
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was directed by.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#e0508a8c"
+    },
+    {
+      "q": "These toys ___ made by hand.",
+      "v": [
+        "are",
+        "is",
+        "was",
+        "being"
+      ],
+      "t": 0,
+      "izoh": "'Toys' ko'plik: are made.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#5bd8d394"
+    },
+    {
+      "q": "Which sentence is in the passive voice?",
+      "v": [
+        "The letter was written by Tom.",
+        "Tom wrote the letter.",
+        "Tom writes letters.",
+        "Tom is writing a letter."
+      ],
+      "t": 0,
+      "izoh": "Passiv: obyekt + be + past participle + by.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#cde9ac1d"
+    },
+    {
+      "q": "Choose the correct present passive sentence.",
+      "v": [
+        "The room is cleaned every day.",
+        "The room cleans every day.",
+        "The room cleaning every day.",
+        "The room clean every day."
+      ],
+      "t": 0,
+      "izoh": "Present passiv: is + cleaned.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#f8c9b1f0"
+    },
+    {
+      "q": "Which is correct passive?",
+      "v": [
+        "The window was broken yesterday.",
+        "The window broke by someone.",
+        "The window is break yesterday.",
+        "The window were broken yesterday."
+      ],
+      "t": 0,
+      "izoh": "'Window' birlik: was broken.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#e4ffc635"
+    },
+    {
+      "q": "Choose the grammatically correct passive sentence.",
+      "v": [
+        "Many languages are spoken in India.",
+        "Many languages is spoken in India.",
+        "Many languages speaks in India.",
+        "Many languages spoken in India."
+      ],
+      "t": 0,
+      "izoh": "'Languages' ko'plik: are spoken.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#63b484bb"
+    },
+    {
+      "q": "Which sentence about a cake is correct?",
+      "v": [
+        "The cake was made by my sister.",
+        "The cake made by my sister.",
+        "The cake is make by my sister.",
+        "The cake were made by my sister."
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was made.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#95710f5f"
+    },
+    {
+      "q": "Pick the correct passive sentence.",
+      "v": [
+        "The bridge was built in 1920.",
+        "The bridge built in 1920.",
+        "The bridge is build in 1920.",
+        "The bridge were built in 1920."
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was built.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#ffd62c0b"
+    },
+    {
+      "q": "Which passive sentence is correct?",
+      "v": [
+        "The results are announced tomorrow.",
+        "The results is announced tomorrow.",
+        "The results announce tomorrow.",
+        "The results announcing tomorrow."
+      ],
+      "t": 0,
+      "izoh": "'Results' ko'plik: are announced.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#3f0e5eef"
+    },
+    {
+      "q": "Choose the correct one about the thief.",
+      "v": [
+        "The thief was arrested by the police.",
+        "The thief arrested by the police.",
+        "The thief is arrest by the police.",
+        "The thief were arrested by the police."
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was arrested.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#02e0576a"
+    },
+    {
+      "q": "Passive of: 'They clean the office every day.'",
+      "v": [
+        "The office is cleaned every day.",
+        "The office are cleaned every day.",
+        "The office was cleaned every day.",
+        "The office is clean every day."
+      ],
+      "t": 0,
+      "izoh": "Present passiv: is + cleaned.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#48dacb2d"
+    },
+    {
+      "q": "Passive of: 'Someone stole my bike.'",
+      "v": [
+        "My bike was stolen.",
+        "My bike is stolen.",
+        "My bike were stolen.",
+        "My bike stole."
+      ],
+      "t": 0,
+      "izoh": "Past passiv: was + stolen.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#ee34035f"
+    },
+    {
+      "q": "Passive of: 'The chef cooks the meals.'",
+      "v": [
+        "The meals are cooked by the chef.",
+        "The meals is cooked by the chef.",
+        "The meals was cooked by the chef.",
+        "The meals cook by the chef."
+      ],
+      "t": 0,
+      "izoh": "'Meals' ko'plik present: are cooked.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#ceeadbf6"
+    },
+    {
+      "q": "Passive of: 'Shakespeare wrote Hamlet.'",
+      "v": [
+        "Hamlet was written by Shakespeare.",
+        "Hamlet is written by Shakespeare.",
+        "Hamlet were written by Shakespeare.",
+        "Hamlet was wrote by Shakespeare."
+      ],
+      "t": 0,
+      "izoh": "Past passiv: was written.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#650e6e23"
+    },
+    {
+      "q": "Passive of: 'People speak English here.'",
+      "v": [
+        "English is spoken here.",
+        "English are spoken here.",
+        "English was spoken here.",
+        "English speaks here."
+      ],
+      "t": 0,
+      "izoh": "Present passiv: is spoken.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#dcb91f96"
+    },
+    {
+      "q": "Passive of: 'The dog bit the boy.'",
+      "v": [
+        "The boy was bitten by the dog.",
+        "The boy is bitten by the dog.",
+        "The boy were bitten by the dog.",
+        "The boy was bit by the dog."
+      ],
+      "t": 0,
+      "izoh": "Past passiv: was bitten.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#f8cce931"
+    },
+    {
+      "q": "Passive of: 'They build houses here.'",
+      "v": [
+        "Houses are built here.",
+        "Houses is built here.",
+        "Houses was built here.",
+        "Houses build here."
+      ],
+      "t": 0,
+      "izoh": "'Houses' ko'plik present: are built.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#cd5d2dc8"
+    },
+    {
+      "q": "Passive of: 'The teacher explained the lesson.'",
+      "v": [
+        "The lesson was explained by the teacher.",
+        "The lesson is explained by the teacher.",
+        "The lesson were explained by the teacher.",
+        "The lesson explained by teacher."
+      ],
+      "t": 0,
+      "izoh": "Past passiv: was explained.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#67b3fbfe"
+    },
+    {
+      "q": "Passive of: 'My mother makes the beds.'",
+      "v": [
+        "The beds are made by my mother.",
+        "The beds is made by my mother.",
+        "The beds was made by my mother.",
+        "The beds made by my mother."
+      ],
+      "t": 0,
+      "izoh": "'Beds' ko'plik present: are made.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#4049d410"
+    },
+    {
+      "q": "Passive of: 'A car hit the tree.'",
+      "v": [
+        "The tree was hit by a car.",
+        "The tree is hit by a car.",
+        "The tree were hit by a car.",
+        "The tree hit by a car."
+      ],
+      "t": 0,
+      "izoh": "Past passiv: was hit.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#538dd839"
+    },
+    {
+      "q": "Find the error: 'The letter were sent yesterday.'",
+      "v": [
+        "'were' should be 'was'",
+        "'sent' should be 'send'",
+        "'yesterday' is wrong",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "'Letter' birlik: was sent.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#fb117a88"
+    },
+    {
+      "q": "Find the error: 'These books is written in French.'",
+      "v": [
+        "'is' should be 'are'",
+        "'written' should be 'write'",
+        "'in' should be 'by'",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "'Books' ko'plik: are written.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#c9fe7254"
+    },
+    {
+      "q": "Find the error: 'The house was build in 2005.'",
+      "v": [
+        "'build' should be 'built'",
+        "'was' should be 'were'",
+        "'in' should be 'by'",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "3-shakl kerak: built.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#4b6ec8e2"
+    },
+    {
+      "q": "Find the error: 'The song is sang by a choir.'",
+      "v": [
+        "'sang' should be 'sung'",
+        "'is' should be 'are'",
+        "'by' should be 'with'",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "3-shakl: sung, sang emas.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#fe899b49"
+    },
+    {
+      "q": "Find the error: 'The windows was cleaned last week.'",
+      "v": [
+        "'was' should be 'were'",
+        "'cleaned' should be 'clean'",
+        "'last week' is wrong",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "'Windows' ko'plik: were.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#e7fa80f6"
+    },
+    {
+      "q": "Find the error: 'The cake was eaten by the childrens.'",
+      "v": [
+        "'childrens' should be 'children'",
+        "'was' should be 'were'",
+        "'eaten' should be 'ate'",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "'Children' allaqachon ko'plik.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#a7653b3f"
+    },
+    {
+      "q": "Find the error: 'English are spoken in Australia.'",
+      "v": [
+        "'are' should be 'is'",
+        "'spoken' should be 'speak'",
+        "'in' should be 'by'",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "English sanoqsiz/birlik: is.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#f4274e44"
+    },
+    {
+      "q": "Find the error: 'The car was stole last night.'",
+      "v": [
+        "'stole' should be 'stolen'",
+        "'was' should be 'were'",
+        "'last night' is wrong",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "3-shakl: stolen.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#aba7dbeb"
+    },
+    {
+      "q": "Find the error: 'The report is wrote every month.'",
+      "v": [
+        "'wrote' should be 'written'",
+        "'is' should be 'are'",
+        "'every' is wrong",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "3-shakl: written.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#3aec0df3"
+    },
+    {
+      "q": "Find the error: 'The trees were plant last spring.'",
+      "v": [
+        "'plant' should be 'planted'",
+        "'were' should be 'was'",
+        "'last' is wrong",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "3-shakl (regular): planted.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#f645a5ce"
+    },
+    {
+      "q": "Put in order: (the letter) (was written) (by Tom)",
+      "v": [
+        "The letter was written by Tom.",
+        "Tom was written the letter by.",
+        "The letter Tom was written by.",
+        "Was the letter written Tom by."
+      ],
+      "t": 0,
+      "izoh": "Obyekt + was + pp + by + agent.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#3de87133"
+    },
+    {
+      "q": "Put in order: (these cars) (are made) (in Germany)",
+      "v": [
+        "These cars are made in Germany.",
+        "These cars made are in Germany.",
+        "In Germany these are cars made.",
+        "Made these cars are in Germany."
+      ],
+      "t": 0,
+      "izoh": "Obyekt + are + made.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#189fd5ae"
+    },
+    {
+      "q": "Put in order: (the office) (is cleaned) (every day)",
+      "v": [
+        "The office is cleaned every day.",
+        "The office cleaned is every day.",
+        "Every day the is office cleaned.",
+        "Is the office cleaned every day now."
+      ],
+      "t": 0,
+      "izoh": "Present passiv tartibi.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#1ccc70de"
+    },
+    {
+      "q": "Put in order: (the house) (was built) (in 1990)",
+      "v": [
+        "The house was built in 1990.",
+        "The house built was in 1990.",
+        "In 1990 the house built was.",
+        "Was the house built in 1990 then."
+      ],
+      "t": 0,
+      "izoh": "Past passiv tartibi.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#0bca6018"
+    },
+    {
+      "q": "Put in order: (the thieves) (were caught) (by the police)",
+      "v": [
+        "The thieves were caught by the police.",
+        "The police were caught by the thieves.",
+        "The thieves caught were by the police.",
+        "By the police the thieves were catch."
+      ],
+      "t": 0,
+      "izoh": "Obyekt + were + pp + by + agent.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#1079cd9e"
+    },
+    {
+      "q": "Put in order: (the bread) (is baked) (fresh daily)",
+      "v": [
+        "The bread is baked fresh daily.",
+        "The bread baked is fresh daily.",
+        "Baked the bread is fresh daily.",
+        "Daily the bread baked fresh is."
+      ],
+      "t": 0,
+      "izoh": "Present passiv tartibi.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#b3a4e044"
+    },
+    {
+      "q": "Cheese ___ made from milk.",
+      "v": [
+        "is",
+        "are",
+        "were",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Cheese sanoqsiz: is.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#e261ff64"
+    },
+    {
+      "q": "The shops ___ closed on Sundays.",
+      "v": [
+        "are",
+        "is",
+        "was",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'Shops' ko'plik: are.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#bb1dd395"
+    },
+    {
+      "q": "Millions of emails ___ sent every second.",
+      "v": [
+        "are",
+        "is",
+        "was",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'Millions' ko'plik: are.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#abe52bf2"
+    },
+    {
+      "q": "Our rubbish ___ collected on Fridays.",
+      "v": [
+        "is",
+        "are",
+        "were",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'Rubbish' sanoqsiz: is.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#673009f3"
+    },
+    {
+      "q": "Tickets ___ sold at the entrance.",
+      "v": [
+        "are",
+        "is",
+        "was",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'Tickets' ko'plik: are.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#c759ae1e"
+    },
+    {
+      "q": "The news ___ read at 6 o'clock every evening.",
+      "v": [
+        "is",
+        "are",
+        "were",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'News' birlik shaklda: is.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#12baecaa"
+    },
+    {
+      "q": "Spanish and French ___ taught at our school.",
+      "v": [
+        "are",
+        "is",
+        "was",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Ikkala til ko'plik: are.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#d58385ed"
+    },
+    {
+      "q": "Which is the correct simple present passive?",
+      "v": [
+        "The road is repaired regularly.",
+        "The road are repaired regularly.",
+        "The road were repaired regularly.",
+        "The road repaired is regularly."
+      ],
+      "t": 0,
+      "izoh": "Birlik present: is repaired.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#fd010e56"
+    },
+    {
+      "q": "The paintings ___ sold at the auction.",
+      "v": [
+        "were",
+        "was",
+        "is",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "'Paintings' ko'plik o'tgan: were.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#86e94878"
+    },
+    {
+      "q": "My wallet ___ found in the park.",
+      "v": [
+        "was",
+        "were",
+        "are",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was found.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#a058cc3e"
+    },
+    {
+      "q": "The trees ___ cut down years ago.",
+      "v": [
+        "were",
+        "was",
+        "are",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "'Trees' ko'plik o'tgan: were cut.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#9e863b92"
+    },
+    {
+      "q": "The film ___ shown on TV last night.",
+      "v": [
+        "was",
+        "were",
+        "are",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was shown.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#bc435b5b"
+    },
+    {
+      "q": "Several people ___ injured in the accident.",
+      "v": [
+        "were",
+        "was",
+        "are",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "'Several people' ko'plik: were.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#013c50ad"
+    },
+    {
+      "q": "The document ___ signed by the manager.",
+      "v": [
+        "was",
+        "were",
+        "are",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was signed.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#1511f012"
+    },
+    {
+      "q": "The prizes ___ given out at the end.",
+      "v": [
+        "were",
+        "was",
+        "are",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "'Prizes' ko'plik o'tgan: were given.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#62bf6325"
+    },
+    {
+      "q": "The old factory ___ closed two years ago.",
+      "v": [
+        "was",
+        "were",
+        "are",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was closed.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#1c70d0f3"
+    },
+    {
+      "q": "Passive of: 'They painted the walls last week.'",
+      "v": [
+        "The walls were painted last week.",
+        "The walls was painted last week.",
+        "The walls are painted last week.",
+        "The walls painted last week."
+      ],
+      "t": 0,
+      "izoh": "'Walls' ko'plik o'tgan: were painted.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#352ddb5f"
+    },
+    {
+      "q": "Passive of: 'The company launched a new phone.'",
+      "v": [
+        "A new phone was launched by the company.",
+        "A new phone is launched by the company.",
+        "A new phone were launched by the company.",
+        "A new phone launched by the company."
+      ],
+      "t": 0,
+      "izoh": "Birlik o'tgan: was launched.",
+      "qiy": "orta",
+      "id": "ing_b1_m4#bd1e67cf"
+    }
+  ]
+}

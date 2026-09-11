@@ -1,0 +1,381 @@
+{
+  "nom": "20-mavzu. Solishtirma Issiqlik Sigimi Lab",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "«Qattiq jismlarning solishtirma issiqlik sig'imini aniqlash» laboratoriya ishining maqsadi nima?",
+      "v": [
+        "Jismning solishtirma issiqlik sig'imini aniqlashni o'rganish",
+        "Suvning zichligini aniqlash",
+        "Termometrni graduslash",
+        "Kalorimetr yasash"
+      ],
+      "t": 0,
+      "izoh": "Ishning maqsadi: jismning solishtirma issiqlik sig'imini aniqlashni o'rganish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#abe7d3d9"
+    },
+    {
+      "q": "Laboratoriya ishi uchun kerakli jihozlar qatorini ko'rsating.",
+      "v": [
+        "Kalorimetr va aralashtirgichi, tarozi, termometr, bir xil moddadan tayyorlangan 3 ta turli massali jismlar, qaynoq suv",
+        "Idish, polietilen paket, shtativ, elektron soat",
+        "Dinamometr, blok, o'lchov lentasi",
+        "Barometr, nasos, manometr"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar: kalorimetr va aralashtirgichi, tarozi, termometr, solishtirma issiqlik sig'imi aniqlanadigan 3 ta bir xil moddadan tayyorlangan turli xil massadagi jismlar, qaynoq suv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#25373c39"
+    },
+    {
+      "q": "Laboratoriya ishida foydalaniladigan kalorimetr qaysi rasmda tasvirlangan?",
+      "v": [
+        "22-rasmda",
+        "19-rasmda",
+        "20-rasmda",
+        "21-rasmda"
+      ],
+      "t": 0,
+      "izoh": "Ishni bajarishda foydalaniladigan kalorimetr 22-rasmda tasvirlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#21860ac6"
+    },
+    {
+      "q": "Kalorimetr qaysi metalladan yasalgan va uning solishtirma issiqlik sig'imi qancha deb olinadi?",
+      "v": [
+        "Alyuminiydan, cₖ = 890 J/(kg·°C)",
+        "Misdan, cₖ = 390 J/(kg·°C)",
+        "Po'latdan, cₖ = 460 J/(kg·°C)",
+        "Qo'rg'oshindan, cₖ = 130 J/(kg·°C)"
+      ],
+      "t": 0,
+      "izoh": "Kalorimetr alyuminiydan yasalganligi uchun uning solishtirma issiqlik sig'imini cₖ = 890 J/(kg·°C) ga teng deb oling.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#0a02e1e9"
+    },
+    {
+      "q": "Kalorimetr va aralashtirgichning massasi qanday aniqlanadi?",
+      "v": [
+        "Ular birgalikda tarozida tortiladi",
+        "Menzurka bilan o'lchanadi",
+        "Termometr bilan o'lchanadi",
+        "Hisoblash yo'li bilan topiladi"
+      ],
+      "t": 0,
+      "izoh": "Kalorimetr va aralashtirgichni birgalikda tarozida tortib, ularning massasini aniqlang (mₖ).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#d005b6a6"
+    },
+    {
+      "q": "Suvning hajmi qaysi asbob yordamida o'lchanadi?",
+      "v": [
+        "Menzurka",
+        "Tarozi",
+        "Termometr",
+        "Aralashtirgich"
+      ],
+      "t": 0,
+      "izoh": "Menzurka yordamida suv hajmini (V) o'chab, uni kalorimetr idishiga quying.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#1adb6ff5"
+    },
+    {
+      "q": "Kalorimetrga quyilgan suv massasi qanday hisoblanadi?",
+      "v": [
+        "mₛ = ρₛVₛ formulasidan",
+        "mₛ = Vₛ/ρₛ formulasidan",
+        "Tarozida tortib",
+        "mₛ = ρₛ + Vₛ formulasidan"
+      ],
+      "t": 0,
+      "izoh": "Kalorimetrga quyilgan suv massasini mₛ = ρₛVₛ formuladan foydalanib hisoblang. Bunda ρₛ — suvning zichligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#ce2ed9e3"
+    },
+    {
+      "q": "mₛ = ρₛVₛ formulasidagi ρₛ nimani bildiradi?",
+      "v": [
+        "Suvning zichligini",
+        "Suvning hajmini",
+        "Suvning massasini",
+        "Suvning solishtirma issiqlik sig'imini"
+      ],
+      "t": 0,
+      "izoh": "Bunda ρₛ — suvning zichligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#e4bbaa66"
+    },
+    {
+      "q": "Kalorimetrga termometr tushirilgach, issiqlik muvozanati qaror topgan suvning temperaturasi qanday belgilanadi?",
+      "v": [
+        "tₛ",
+        "tⱼ",
+        "tₐ",
+        "t₀"
+      ],
+      "t": 0,
+      "izoh": "Kalorimetrga termometrni tushiring. Biroz kutib, issiqlik muvozanati qaror topgan suvning temperaturasini (tₛ) aniqlang.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#f6512581"
+    },
+    {
+      "q": "Solishtirma issiqlik sig'imi aniqlanayotgan jismning massasi qanday belgilanadi va qanday o'lchanadi?",
+      "v": [
+        "mⱼ, tarozida o'lchanadi",
+        "mₖ, menzurkada o'lchanadi",
+        "mₛ, termometr bilan o'lchanadi",
+        "mₐ, aralashtirgich bilan o'lchanadi"
+      ],
+      "t": 0,
+      "izoh": "Solishtirma issiqlik sig'imi aniqlanayotgan jismning massasini (mⱼ) tarozida o'chang.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#9f57bb7e"
+    },
+    {
+      "q": "Jism qaynoq suvga qanday tushiriladi va qancha kutish kerak?",
+      "v": [
+        "Ipga bog'lab tushiriladi va 2–3 minut kutish kerak",
+        "To'g'ridan-to'g'ri tashlanadi, 10 minut kutish kerak",
+        "Aralashtirgich bilan tushiriladi, kutish shart emas",
+        "Qoshiq bilan tushiriladi, 1 sekund kutish kerak"
+      ],
+      "t": 0,
+      "izoh": "Jismni ipga bog'lab qaynab turgan suv ichiga tushiring. Biroz kuting (2–3 minut).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#643f5a04"
+    },
+    {
+      "q": "Jism qaynab turgan suvda kutganda qanday hodisa yuzaga keladi?",
+      "v": [
+        "Jism va suv o'rtasida issiqlik muvozanati vujudga keladi",
+        "Jism eriydi",
+        "Suv muzlaydi",
+        "Jismning massasi o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Jism va suv o'rtasida issiqlik muvozanati vujudga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#ae0d8ba6"
+    },
+    {
+      "q": "Qaynab turgan suvning (tⱼ) temperaturasi qanday o'lchanadi?",
+      "v": [
+        "Termometr yordamida",
+        "Tarozi yordamida",
+        "Menzurka yordamida",
+        "Hisob-kitob yo'li bilan"
+      ],
+      "t": 0,
+      "izoh": "Qaynab turgan suvning (tⱼ) temperaturasini termometr yordamida o'lchab oling.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#e691c256"
+    },
+    {
+      "q": "Qaynab turgan suvdan olingan jism qayerga va qanday tushiriladi?",
+      "v": [
+        "Tezlik bilan sovuq suv solingan kalorimetr ichiga",
+        "Sekin qaynoq suvga qaytariladi",
+        "Boshqa idishdagi qaynoq suvga",
+        "Ochiq havoga qo'yiladi"
+      ],
+      "t": 0,
+      "izoh": "Qaynab turgan suvdan olingan jismni tezlik bilan sovuq suv solingan kalorimetr ichiga tushiring.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#9d9b75ca"
+    },
+    {
+      "q": "Jism kalorimetrga tushirilgach, aralashmaning temperaturasi qanday belgilanadi?",
+      "v": [
+        "tₐ",
+        "tₛ",
+        "tⱼ",
+        "tₖ"
+      ],
+      "t": 0,
+      "izoh": "Aralashtirgich bilan kalorimetrdagi suvni aralashtiring va termometr ko'rsatgan aralashmaning (tₐ) temperaturasini yozib oling.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#cf8ff40e"
+    },
+    {
+      "q": "Jismning solishtirma issiqlik sig'imini aniqlash formulasi qaysi?",
+      "v": [
+        "cⱼ = (mₛ·cₛ + mₖ·cₖ)(tₐ − tₛ) / (mⱼ(tⱼ − tₐ))",
+        "cⱼ = mⱼ(tⱼ − tₐ) / ((mₛcₛ + mₖcₖ)(tₐ − tₛ))",
+        "cⱼ = mₛ·cₛ·tₛ / (mⱼ·tⱼ)",
+        "cⱼ = (tₐ − tₛ) / (tⱼ − tₐ)"
+      ],
+      "t": 0,
+      "izoh": "cⱼ = (mₛ·cₛ + mₖ·cₖ)·(tₐ − tₛ) / (mⱼ(tⱼ − tₐ)) formula yordamida jismning solishtirma issiqlik sig'imi aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#48162dc2"
+    },
+    {
+      "q": "Laboratoriya ishida nechta jismning solishtirma issiqlik sig'imi aniqlanadi?",
+      "v": [
+        "Massalari turlicha, xuddi shunday moddadan yasalgan 3 ta jismning",
+        "Bitta jismning",
+        "Ikkita turli moddadan yasalgan jismning",
+        "Beshta jismning"
+      ],
+      "t": 0,
+      "izoh": "Massalari turlicha, lekin xuddi shunday moddadan yasalgan yana ikkita jismning solishtirma issiqlik sig'imini yuqorida keltirilgan tartibda aniqlang (jami 3 ta).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#9ced036f"
+    },
+    {
+      "q": "Uchta jism uchun aniqlangan solishtirma issiqlik sig'imlaridan keyin nima hisoblanadi?",
+      "v": [
+        "O'rtacha cⱼ.ₒ'ᵣₜ qiymat",
+        "Eng katta qiymat",
+        "Eng kichik qiymat",
+        "Qiymatlar ko'paytmasi"
+      ],
+      "t": 0,
+      "izoh": "Birinchi, ikkinchi va uchinchi jismlar uchun aniqlangan solishtirma issiqlik sig'imlari uchun o'rtacha cⱼ.ₒ'ᵣₜ ni hisoblang.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#cb556cf9"
+    },
+    {
+      "q": "Kalorimetrdagi suvni aralashtirish uchun nima ishlatiladi?",
+      "v": [
+        "Aralashtirgich",
+        "Termometr",
+        "Ip",
+        "Menzurka"
+      ],
+      "t": 0,
+      "izoh": "Aralashtirgich bilan kalorimetrdagi suv aralashtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#6ffc24a4"
+    },
+    {
+      "q": "Formuladagi (tₐ − tₛ) farq nimani bildiradi?",
+      "v": [
+        "Kalorimetr va suvning temperatura oshishini",
+        "Jismning temperatura pasayishini",
+        "Qaynash temperaturasini",
+        "Suvning bug'lanish temperaturasini"
+      ],
+      "t": 0,
+      "izoh": "tₐ − tₛ — jism tushirilgach kalorimetr va suvning temperaturasining oshishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#4026c2be"
+    },
+    {
+      "q": "Formuladagi (tⱼ − tₐ) farq nimani bildiradi?",
+      "v": [
+        "Jismning temperatura pasayishini (sovishini)",
+        "Suvning temperatura oshishini",
+        "Kalorimetrning isishini",
+        "Suvning qaynash temperaturasini"
+      ],
+      "t": 0,
+      "izoh": "tⱼ − tₐ — qizdirilgan jismning kalorimetrdagi aralashmada sovishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#c4979e3f"
+    },
+    {
+      "q": "Nega laboratoriya ishida bir xil moddadan yasalgan turli massali jismlar olinadi?",
+      "v": [
+        "O'lchov natijalarining o'rtacha qiymatini olib, aniqlikni oshirish uchun",
+        "Turli moddalarni solishtirish uchun",
+        "Jismlarning zichligini topish uchun",
+        "Tajribani tezlashtirish uchun"
+      ],
+      "t": 0,
+      "izoh": "Xuddi shunday moddadan yasalgan massalari turlicha 3 ta jism bilan o'lchab, o'rtacha qiymat hisoblanadi — bu aniqlikni oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#0be2449f"
+    },
+    {
+      "q": "Kalorimetr idishiga suv qanday quyiladi?",
+      "v": [
+        "Menzurkada hajmi o'lchanib quyiladi",
+        "To'g'ridan-to'g'ri krandan quyiladi",
+        "Qoshiq bilan solinadi",
+        "Ipga bog'langan jism bilan quyiladi"
+      ],
+      "t": 0,
+      "izoh": "Menzurka yordamida suv hajmini (V) o'chab, uni kalorimetr idishiga quying.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#8b73c57c"
+    },
+    {
+      "q": "Olingan natijalar qayerga yoziladi?",
+      "v": [
+        "Maxsus jadvalga (mₖ, mₛ, mⱼ, cₖ, tₛ, tⱼ, tₐ, cⱼ, cⱼ.ₒ'ᵣₜ ustunlariga)",
+        "Termometr shkalasiga",
+        "Kalorimetr devoriga",
+        "Menzurka bo'linmalariga"
+      ],
+      "t": 0,
+      "izoh": "Olingan natijalarni jadvalga yozing: №, mₖ, mₛ, mⱼ, cₖ, tₛ, tⱼ, tₐ, cⱼ, cⱼ.ₒ'ᵣₜ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#80e8efdc"
+    },
+    {
+      "q": "Laboratoriya ishida o'lchanadigan temperaturalarning o'lchov birligi nima?",
+      "v": [
+        "°C (Selsiy gradusi)",
+        "K (Kelvin)",
+        "J (Joul)",
+        "kg (kilogramm)"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda tₛ, tⱼ, tₐ temperaturalar °C larda yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m20-solishtirma-issiqlik-sigimi-lab#846fe38b"
+    }
+  ]
+}

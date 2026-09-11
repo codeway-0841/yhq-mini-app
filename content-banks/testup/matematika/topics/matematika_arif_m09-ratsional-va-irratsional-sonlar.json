@@ -1,0 +1,1609 @@
+{
+  "nom": "Ratsional va irratsional sonlar",
+  "bolim": "Sonlar va ular ustida amallar",
+  "blok": "arif",
+  "rasmiyBolim": 1,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Dilnoza daftariga −18 sonini yozdi va uni qaysi sonlar to'plamlariga tegishli ekanini aniqlamoqchi. Bu son quyidagilardan qaysi biriga tegishli emas?",
+      "v": [
+        "Butun sonlar to'plami Z",
+        "Ratsional sonlar to'plami Q",
+        "Haqiqiy sonlar to'plami R",
+        "Natural sonlar to'plami N"
+      ],
+      "t": 3,
+      "izoh": "Natural sonlar — sanashda ishlatiladigan musbat butun sonlar, ya'ni 1, 2, 3 va hokazo. −18 manfiy bo'lgani uchun N ga kirmaydi. Lekin u butun son, demak Z ga tegishli; har qanday butun sonni −18/1 kasr ko'rinishida yozish mumkin, demak Q ga ham tegishli; Q ⊂ R bo'lgani uchun R ga ham kiradi. Javob: natural sonlar to'plami N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toplamga-tegishlilik",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#03e8130f"
+    },
+    {
+      "q": "0,75 o'nli kasri haqida to'g'ri fikrni tanlang: bu son qaysi sonlar to'plamlariga kiradi va qaysilariga kirmaydi?",
+      "v": [
+        "Q va R ga kiradi, Z ga kirmaydi",
+        "Z va Q ga kiradi, R ga kirmaydi",
+        "Faqat R ga kiradi, Q ga kirmaydi",
+        "N, Z va Q to'plamlarining hammasiga kiradi"
+      ],
+      "t": 0,
+      "izoh": "Avval kasrga keltiramiz: 0,75 = 75/100 = 3/4. Bu ikkita butun sonning nisbati, demak son ratsional, ya'ni Q ga tegishli. Har qanday ratsional son haqiqiy son bo'lgani uchun R ga ham kiradi. Ammo 3/4 butun son emas, shuning uchun Z ga va undan ham torroq N ga kirmaydi. Javob: Q va R ga kiradi, Z ga kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toplamga-tegishlilik",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#d0c8faae"
+    },
+    {
+      "q": "Karim √49 ifodasini hisoblab, natijani sonlar to'plamlariga joylashtirmoqchi. Bu natija tegishli bo'lgan eng kichik to'plam qaysi?",
+      "v": [
+        "Natural sonlar to'plami N",
+        "Butun sonlar to'plami Z",
+        "Ratsional sonlar to'plami Q",
+        "Irratsional sonlar to'plami"
+      ],
+      "t": 0,
+      "izoh": "Ildiz ostidagi 49 soni to'la kvadrat: 49 = 7². Demak √49 = 7. Yetti soni sanash sonlaridan biri, ya'ni natural son. Natural sonlar to'plami N eng tor to'plam bo'lib, N ⊂ Z ⊂ Q ⊂ R zanjirining boshida turadi. Ildiz belgisi turgani sonni irratsional qilmaydi. Javob: natural sonlar to'plami N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toplamga-tegishlilik",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#5bbc2073"
+    },
+    {
+      "q": "√16, √20, √25, √36 sonlaridan qaysi biri irratsional son bo'ladi?",
+      "v": [
+        "√16",
+        "√20",
+        "√25",
+        "√36"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat ildiz faqat ildiz ostidagi son to'la kvadrat bo'lgandagina ratsional chiqadi. 16 = 4², 25 = 5², 36 = 6² — uchalasi to'la kvadrat, ularning ildizlari 4, 5 va 6 ga teng. 20 esa 4² = 16 bilan 5² = 25 orasida yotadi va to'la kvadrat emas, shuning uchun √20 ni kasr ko'rinishida yozib bo'lmaydi. Javob: √20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "irratsionalni-tanlash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#e54dbc78"
+    },
+    {
+      "q": "Quyidagi sonlardan qaysi biri ratsional son hisoblanadi: √8, √12, √18, √64?",
+      "v": [
+        "√8",
+        "√12",
+        "√18",
+        "√64"
+      ],
+      "t": 3,
+      "izoh": "Har bir ildiz ostidagi sonni to'la kvadratlar bilan solishtiramiz. 8, 12 va 18 sonlari 4, 9, 16, 25 kabi to'la kvadratlar qatorida yo'q, demak ularning ildizlari irratsional. 64 esa 8² ga teng, shuning uchun √64 = 8 butun son bo'lib chiqadi va u albatta ratsional. Javob: √64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "irratsionalni-tanlash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#cd75ca87"
+    },
+    {
+      "q": "Sinf taxtasiga 2/7, √5, 0,25 va −3 sonlari yozilgan. O'quvchilardan biri ular ichidan irratsional sonni ko'rsatishi kerak. Qaysi son?",
+      "v": [
+        "2/7",
+        "√5",
+        "0,25",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "2/7 — ikkita butun sonning nisbati, demak ratsional. 0,25 = 1/4 bo'lgani uchun u ham ratsional. −3 butun son, uni −3/1 ko'rinishida yozish mumkin. 5 soni to'la kvadrat emas (4 bilan 9 orasida), shuning uchun √5 ni hech qanday m/n kasr ko'rinishida ifodalab bo'lmaydi. Javob: √5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "irratsionalni-tanlash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#3073e796"
+    },
+    {
+      "q": "0,(6) davriy o'nli kasri oddiy kasr ko'rinishida qanday yoziladi va u qaysi turdagi son bo'ladi?",
+      "v": [
+        "2/3 — ratsional son",
+        "3/5 — ratsional son",
+        "1/6 — ratsional son",
+        "Oddiy kasrga keltirib bo'lmaydi, irratsional son"
+      ],
+      "t": 0,
+      "izoh": "x = 0,(6) deb belgilaymiz. U holda 10x = 6,(6). Ikkinchi tenglikdan birinchisini ayiramiz: 10x − x = 6,(6) − 0,(6), ya'ni 9x = 6. Bundan x = 6/9 = 2/3. Davriy kasr oddiy kasrga keltirilgani uchun bu son ratsional. Javob: 2/3, ratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-ratsionallik",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#25e8633d"
+    },
+    {
+      "q": "Anvar 0,(27) davriy kasrini oddiy kasrga aylantirdi. Qisqartirilgan holda u qanday kasr olishi kerak?",
+      "v": [
+        "3/11",
+        "27/100",
+        "27/90",
+        "27/999"
+      ],
+      "t": 0,
+      "izoh": "Davr ikki xonali bo'lgani uchun x = 0,(27) ni 100 ga ko'paytiramiz: 100x = 27,(27). Bundan 100x − x = 27, ya'ni 99x = 27 va x = 27/99. Surat va maxrajni 9 ga qisqartiramiz: 27/99 = 3/11. Maxrajda to'qqizlar soni davr xonalari soniga teng bo'lishi kerak. Javob: 3/11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-ratsionallik",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#879f6f91"
+    },
+    {
+      "q": "Har qanday davriy o'nli kasr haqida quyidagi mulohazalardan qaysi biri to'g'ri hisoblanadi?",
+      "v": [
+        "U albatta irratsional son bo'ladi",
+        "U faqat davr uzunligi bitta xona bo'lgandagina ratsional bo'ladi",
+        "U albatta ratsional son bo'ladi",
+        "U hech qachon butun songa teng bo'la olmaydi"
+      ],
+      "t": 2,
+      "izoh": "Davriy kasrni oddiy kasrga aylantirishning umumiy usuli bor: sonni davr xonalari soniga mos darajali o'nlikka ko'paytirib, dastlabki sondan ayiriladi. Natijada har doim butun koeffitsientli chiziqli tenglama hosil bo'ladi va yechim m/n ko'rinishida chiqadi. Davr uzunligi qancha bo'lishidan qat'i nazar shunday. Javob: u albatta ratsional son bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-ratsionallik",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#bb4187dc"
+    },
+    {
+      "q": "Nodira 5/12 kasrini o'nli kasrga aylantirganda 0,41666… ko'rinishdagi cheksiz yozuv hosil bo'ldi. Bu natija haqida qanday xulosa chiqarish kerak?",
+      "v": [
+        "Cheksiz kasr bo'lgani uchun son irratsionalga aylandi",
+        "Cheksiz davriy kasr bo'lsa ham son ratsional bo'lib qolaveradi",
+        "Kasr davriy emas, shuning uchun son irratsional",
+        "Natija noto'g'ri, chunki oddiy kasr faqat chekli o'nli kasr beradi"
+      ],
+      "t": 1,
+      "izoh": "5/12 boshidanoq ikkita butun sonning nisbati, demak ta'rif bo'yicha ratsional son. O'nli yozuvga o'tkazganda 6 raqami takrorlanadi, ya'ni kasr davriy: 0,41(6). Ratsionallik yozuv shakliga emas, sonning m/n ko'rinishida ifodalanishiga bog'liq. Cheksiz, lekin davriy kasr har doim ratsional bo'ladi. Javob: son ratsional bo'lib qolaveradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-ratsionallik",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#1762aa20"
+    },
+    {
+      "q": "√57 soni ketma-ket keladigan qaysi ikki butun son orasida joylashadi?",
+      "v": [
+        "8 va 9",
+        "6 va 7",
+        "7 va 8",
+        "28 va 29"
+      ],
+      "t": 2,
+      "izoh": "57 ga eng yaqin to'la kvadratlarni topamiz: 7² = 49 va 8² = 64. Demak 49 < 57 < 64. Har uch qismdan kvadrat ildiz chiqaramiz va ildiz funksiyasi o'suvchi bo'lgani uchun tengsizlik ishoralari saqlanadi: 7 < √57 < 8. Javob: 7 va 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-butunlar-orasida",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#0734fed2"
+    },
+    {
+      "q": "Farg'onadagi kvadrat shaklli maydonning yuzasi 130 m². Uning tomoni uzunligi qaysi ikki butun son orasida yotadi?",
+      "v": [
+        "10 va 11",
+        "11 va 12",
+        "12 va 13",
+        "64 va 65"
+      ],
+      "t": 1,
+      "izoh": "Kvadratning yuzasi S = a² bo'lgani uchun tomoni a = √130 ga teng. Endi 130 ni to'la kvadratlar bilan chegaralaymiz: 11² = 121 va 12² = 144, ya'ni 121 < 130 < 144. Ildiz chiqarsak 11 < √130 < 12 bo'ladi. Yuzani ikkiga bo'lish tomonni bermaydi. Javob: 11 va 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-butunlar-orasida",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#15d1f57c"
+    },
+    {
+      "q": "√200 sonining butun qismi nechaga teng, ya'ni u qaysi butun sondan katta va shu sonning keyingisidan kichik bo'ladi?",
+      "v": [
+        "13",
+        "15",
+        "14",
+        "100"
+      ],
+      "t": 2,
+      "izoh": "200 sonini to'la kvadratlar orasiga qo'yamiz: 14² = 196 va 15² = 225. Demak 196 < 200 < 225 va ildiz chiqargandan keyin 14 < √200 < 15 hosil bo'ladi. Butun qism — sondan katta bo'lmagan eng katta butun son, ya'ni 14. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-butunlar-orasida",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#5a367338"
+    },
+    {
+      "q": "Bekzod hajmi 95 sm³ bo'lgan kub shaklidagi qutining qirrasini baholamoqchi. Bu uzunlik qaysi ikki ketma-ket butun son orasida joylashgan?",
+      "v": [
+        "3 va 4",
+        "5 va 6",
+        "9 va 10",
+        "4 va 5"
+      ],
+      "t": 3,
+      "izoh": "Kubning hajmi V = a³ bo'lgani uchun qirra a = ∛95 ga teng. Yaqin kublarni yozamiz: 4³ = 64 va 5³ = 125. Demak 64 < 95 < 125 va kub ildiz chiqarganda 4 < ∛95 < 5 kelib chiqadi. Kvadrat ildizga o'xshab 9 va 10 ni olish xato bo'ladi. Javob: 4 va 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-ildiz-oraliq",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#9cd6e67f"
+    },
+    {
+      "q": "Toshkentdagi kvadrat gilamning yuzasi 30 m² bo'lsa, uning bir tomoni qaysi ikki butun son orasida bo'ladi?",
+      "v": [
+        "4 va 5",
+        "5 va 6",
+        "6 va 7",
+        "14 va 15"
+      ],
+      "t": 1,
+      "izoh": "Gilam kvadrat bo'lgani uchun tomoni √30 ga teng. Eng yaqin to'la kvadratlar: 5² = 25 va 6² = 36, ya'ni 25 < 30 < 36. Ildiz chiqarsak 5 < √30 < 6 bo'ladi. Yuzani ikkiga bo'lib 15 atrofidagi javob olish keng tarqalgan xato. Javob: 5 va 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-butunlar-orasida",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#321adb21"
+    },
+    {
+      "q": "Ixtiyoriy ratsional son bilan ixtiyoriy irratsional sonning yig'indisi qanday turdagi son bo'ladi?",
+      "v": [
+        "Har doim ratsional son",
+        "Har doim irratsional son",
+        "Ba'zan ratsional, ba'zan irratsional",
+        "Har doim butun son"
+      ],
+      "t": 1,
+      "izoh": "Faraz qilaylik, a ratsional, b irratsional va ularning yig'indisi a + b = c ratsional bo'lsin. U holda b = c − a bo'ladi. Ikkita ratsional sonning ayirmasi esa doim ratsional, demak b ratsional chiqadi. Bu b ning irratsional ekaniga zid. Demak yig'indi ratsional bo'la olmaydi. Javob: har doim irratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amal-natijasi-turi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#02a34053"
+    },
+    {
+      "q": "√3 · √12 ko'paytmasini hisoblang va natija qaysi turdagi son ekanini aniqlang.",
+      "v": [
+        "Ratsional son, u 6 ga teng",
+        "Irratsional son, u 6√3 ga teng",
+        "Ratsional son, u 36 ga teng",
+        "Irratsional son, u √15 ga teng"
+      ],
+      "t": 0,
+      "izoh": "Ildizlarni bitta ildiz ostiga birlashtiramiz: √3 · √12 = √(3 · 12) = √36. Endi 36 to'la kvadrat bo'lgani uchun √36 = 6. Olti soni butun, demak ratsional. Ildiz ostidagi sonlarni qo'shib √15 olish yoki ildizni umuman tashlab 36 deb yozish tipik xato. Javob: ratsional son, u 6 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amal-natijasi-turi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#361e47ed"
+    },
+    {
+      "q": "Karim (√7 + 3) va (√7 − 3) sonlarini ko'paytirdi. Natija qanday son bo'lib chiqadi?",
+      "v": [
+        "4 ga teng ratsional son",
+        "16 ga teng ratsional son",
+        "−2 ga teng ratsional son",
+        "√7 − 9 ga teng irratsional son"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda kvadratlar ayirmasi formulasi ishlaydi: (a + b)(a − b) = a² − b². Bizda a = √7, b = 3, demak natija (√7)² − 3² ga teng. (√7)² = 7 va 3² = 9 bo'lgani uchun 7 − 9 = −2 hosil bo'ladi. Manfiy butun son ratsionaldir. Ildizni kvadratga ko'tarishni unutish yoki 7 − 3 = 4 deb yozish tipik xato. Javob: −2 ga teng ratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amal-natijasi-turi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#0833c5da"
+    },
+    {
+      "q": "Ikkita irratsional sonning ko'paytmasi ratsional son bo'lishi mumkinmi degan savolga to'g'ri javobni tanlang.",
+      "v": [
+        "Yo'q, bunday ko'paytma har doim irratsional bo'ladi",
+        "Ha, lekin faqat ikkala son o'zaro teng bo'lgandagina",
+        "Yo'q, chunki irratsional sonlarni ko'paytirib bo'lmaydi",
+        "Ha, masalan √2 · √8 = √16 = 4"
+      ],
+      "t": 3,
+      "izoh": "Bitta misol keltirish yetarli. √2 va √8 sonlarining ikkalasi ham irratsional, chunki 2 va 8 to'la kvadrat emas. Ularni ko'paytiramiz: √2 · √8 = √(2 · 8) = √16 = 4. To'rt soni ratsional. Sonlar teng bo'lishi shart emas, chunki bu misolda ular har xil. Javob: ha, masalan √2 · √8 = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amal-natijasi-turi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#0cff2652"
+    },
+    {
+      "q": "Nolga teng bo'lmagan ratsional sonni irratsional songa bo'lganda hosil bo'ladigan natija qanday bo'ladi?",
+      "v": [
+        "Har doim ratsional son",
+        "Aniqlab bo'lmaydi, natija har xil chiqadi",
+        "Har doim irratsional son",
+        "Har doim butun son"
+      ],
+      "t": 2,
+      "izoh": "a nolga teng bo'lmagan ratsional, b irratsional bo'lsin va a : b = c ratsional deb faraz qilaylik. U holda b = a : c bo'ladi, ya'ni ikkita ratsional sonning nisbati. Bunday nisbat esa har doim ratsional, demak b ratsional chiqadi. Bu farazimizga zid. Shuning uchun bo'linma ratsional bo'la olmaydi. Javob: har doim irratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amal-natijasi-turi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#ee2c75bc"
+    },
+    {
+      "q": "√50 va 7,1 sonlarini taqqoslash kerak. Qaysi biri kattaroq va bu xulosani qanday asoslash mumkin?",
+      "v": [
+        "√50 kattaroq, chunki 50 soni 7,1 dan katta",
+        "7,1 kattaroq, chunki 7,1² = 50,41 va bu 50 dan katta",
+        "Ular teng, chunki 7,1² taxminan 50 ga teng",
+        "Biri irratsional bo'lgani uchun ularni taqqoslab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Manfiy bo'lmagan ikki sonni taqqoslashda ularning kvadratlarini solishtirish qulay. (√50)² = 50, 7,1² = 7,1 · 7,1 = 50,41. Endi 50 < 50,41 bo'lgani uchun √50 < 7,1 kelib chiqadi. Ildiz ostidagi 50 ni to'g'ridan-to'g'ri 7,1 bilan solishtirish qo'pol xato. Javob: 7,1 kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqqoslash-ikki-son",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#f07537a4"
+    },
+    {
+      "q": "Ozod daftariga √27 ni, Sanjar esa 5,2 ni yozdi. Ikki sondan qaysi biri kattaroq ekanini aniqlang.",
+      "v": [
+        "Ozodning soni kattaroq",
+        "Sanjarning soni kattaroq",
+        "Ikkala son ham o'zaro teng",
+        "Ildizli sonni o'nli kasr bilan solishtirib bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ikkala sonni kvadratga ko'taramiz: (√27)² = 27 va 5,2² = 27,04. Kvadratlarni solishtiramiz: 27 < 27,04, demak √27 < 5,2. Farq juda kichik bo'lgani uchun taxminiy 5,2 baho bilan qanoatlanib bo'lmaydi, aniq hisob kerak. Javob: Sanjarning soni kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-ikki-son",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#7c34f682"
+    },
+    {
+      "q": "3√5 va 7 sonlarini taqqoslash uchun ikkalasini kvadratga ko'tarish qulay usul hisoblanadi. Qaysi son kattaroq?",
+      "v": [
+        "7 kattaroq, chunki 7² = 49 va (3√5)² = 45",
+        "3√5 kattaroq, chunki 3 · 5 = 15 va bu 7 dan katta",
+        "Ular teng, chunki 3√5 aynan 7 ga teng",
+        "3√5 kattaroq, chunki √5 ≈ 2,4 va 3 · 2,4 = 7,2"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytuvchini ildiz ostiga kiritamiz: 3√5 = √(9 · 5) = √45. Ikkinchi son uchun 7 = √49. Endi ildiz ostidagi sonlarni solishtiramiz: 45 < 49, demak √45 < √49, ya'ni 3√5 < 7. √5 ni 2,4 deb qo'pol yaxlitlash xato natija beradi, chunki aslida √5 ≈ 2,236. Javob: 7 kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-ikki-son",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#e11d9816"
+    },
+    {
+      "q": "Birinchi dala kvadrat shaklda va uning yuzasi 74 m². Ikkinchi dalaning tomoni esa 8,5 m ga teng. Qaysi dalaning tomoni uzunroq?",
+      "v": [
+        "Tomonlari o'zaro teng",
+        "Ikkinchi dala tomoni uzunroq",
+        "Birinchi dala tomoni uzunroq",
+        "Yuza va tomon berilgani uchun taqqoslab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Birinchi dalaning tomoni √74 ga teng, chunki kvadratda S = a². Ikkinchi tomonni ham kvadratga ko'taramiz: 8,5² = 72,25. Endi 74 > 72,25, demak √74 > 8,5. Ya'ni birinchi dalaning tomoni uzunroq. Yuzani tomon bilan bevosita solishtirish o'lchov birligi jihatidan ham noto'g'ri. Javob: birinchi dala tomoni uzunroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-ikki-son",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#de6496c0"
+    },
+    {
+      "q": "√8, 2,7, 3 va √11 sonlarini o'sish tartibida joylashtiring.",
+      "v": [
+        "2,7 < √8 < 3 < √11",
+        "√8 < 2,7 < 3 < √11",
+        "2,7 < 3 < √8 < √11",
+        "√8 < 2,7 < √11 < 3"
+      ],
+      "t": 0,
+      "izoh": "Har bir sonni taqribiy o'nli ko'rinishga keltiramiz: √8 ≈ 2,83, chunki 2,8² = 7,84 va 2,9² = 8,41. Shuningdek √11 ≈ 3,32, chunki 3,3² = 10,89. Endi to'rt son: 2,7; 2,83; 3; 3,32. Ularni o'sish tartibida yozamiz. Javob: 2,7 < √8 < 3 < √11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tartiblash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#67b3eb85"
+    },
+    {
+      "q": "Quyidagi to'rt sondan eng kichigini toping: √17, 4,2, 25/6, √15.",
+      "v": [
+        "√17",
+        "4,2",
+        "25/6",
+        "√15"
+      ],
+      "t": 3,
+      "izoh": "Sonlarni taqribiy hisoblaymiz: √17 ≈ 4,12, chunki 4,1² = 16,81. Keyin 25/6 ≈ 4,17 va √15 ≈ 3,87, chunki 3,9² = 15,21 bu 15 dan katta. To'rt qiymat: 4,12; 4,2; 4,17; 3,87. Eng kichigi 3,87, ya'ni √15. Javob: √15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tartiblash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#72060145"
+    },
+    {
+      "q": "Uch o'quvchi yugurish masofasini o'lchadi: Aziz 3,5 km, Bobur √13 km, Davron 18/5 km yugurdi. Kim eng uzoq masofani bosib o'tgan?",
+      "v": [
+        "Aziz",
+        "Bobur",
+        "Davron",
+        "Bobur va Davron teng masofa bosgan"
+      ],
+      "t": 1,
+      "izoh": "Sonlarni bir xil ko'rinishga keltiramiz: 18/5 = 3,6 va Azizning natijasi 3,5. Bobur uchun √13 ni baholaymiz: 3,6² = 12,96, bu 13 dan kichik, demak √13 > 3,6. Shuningdek 3,61² = 13,0321 bo'lgani uchun √13 ≈ 3,606. Uch qiymat ichida eng kattasi √13. Javob: Bobur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tartiblash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#7898137d"
+    },
+    {
+      "q": "−√5, −2,3 va −7/3 sonlarini kamayish tartibida joylashtiring.",
+      "v": [
+        "−7/3 > −2,3 > −√5",
+        "−2,3 > −√5 > −7/3",
+        "−√5 > −7/3 > −2,3",
+        "−√5 > −2,3 > −7/3"
+      ],
+      "t": 3,
+      "izoh": "Avval modullarni taqqoslaymiz: √5 ≈ 2,236; 2,3; 7/3 ≈ 2,333. Manfiy sonlarda tartib teskarilanadi: moduli kichik bo'lgan son katta bo'ladi. Modullar o'sish tartibi 2,236 < 2,3 < 2,333 edi, demak sonlarning kamayish tartibi −√5 > −2,3 > −7/3 bo'ladi. Javob: −√5 > −2,3 > −7/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tartiblash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#d6581ebd"
+    },
+    {
+      "q": "2 va 3 butun sonlari orasida joylashgan irratsional sonni quyidagilardan tanlang.",
+      "v": [
+        "√6",
+        "5/2",
+        "2,25",
+        "√9"
+      ],
+      "t": 0,
+      "izoh": "Talab ikkita: son 2 bilan 3 orasida bo'lsin va irratsional bo'lsin. 5/2 va 2,25 oraliqda yotadi, lekin ikkalasi ham oddiy kasr, ya'ni ratsional. √9 = 3 bo'lgani uchun u oraliqning chetida turadi va butun son. √6 esa 4 < 6 < 9 bo'lgani uchun 2 bilan 3 orasida yotadi hamda 6 to'la kvadrat emas. Javob: √6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-topish-orasida",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#07acc4b5"
+    },
+    {
+      "q": "√2 va √3 sonlari orasida yotadigan ratsional sonni toping.",
+      "v": [
+        "1,4",
+        "1,5",
+        "1,8",
+        "√5"
+      ],
+      "t": 1,
+      "izoh": "Chegaralarni baholaymiz: √2 ≈ 1,414, chunki 1,41² = 1,9881; √3 ≈ 1,732, chunki 1,73² = 2,9929. Endi variantlarni tekshiramiz: 1,4 < 1,414 bo'lgani uchun oraliqqa tushmaydi, 1,8 > 1,732 bo'lgani uchun chetda qoladi, √5 ≈ 2,24 umuman uzoqda. 1,5 esa 1,414 va 1,732 orasida va u ratsional. Javob: 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-topish-orasida",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#b2d0fb5e"
+    },
+    {
+      "q": "Ikkita har xil ratsional son orasida nechta irratsional son topish mumkin?",
+      "v": [
+        "Faqat bitta",
+        "Ko'pi bilan ikkita",
+        "Cheksiz ko'p",
+        "Umuman topib bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Ixtiyoriy ikki har xil ratsional son a < b bo'lsin. Ular orasiga a + (b − a)/k · √2 ko'rinishidagi sonlarni joylashtirish mumkin, bunda k yetarlicha katta natural son. Har bir k uchun yangi irratsional son hosil bo'ladi va k cheksiz ko'p qiymat oladi. Demak har qanday oraliqda irratsional sonlar cheksiz ko'p. Javob: cheksiz ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "son-topish-orasida",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#5058eefd"
+    },
+    {
+      "q": "Zavodda detal uzunligi 4,1 sm dan katta va 4,2 sm dan kichik bo'lishi shart. Quyidagi o'lchamlardan qaysi biri shu talabga javob beradi?",
+      "v": [
+        "√16",
+        "√17",
+        "√18",
+        "√20"
+      ],
+      "t": 1,
+      "izoh": "Chegaralarni kvadratga ko'taramiz: 4,1² = 16,81 va 4,2² = 17,64. Demak ildiz ostidagi son 16,81 bilan 17,64 orasida bo'lishi kerak. √16 = 4 chegaradan past, 18 va 20 esa 17,64 dan katta. Faqat 17 soni 16,81 < 17 < 17,64 shartini bajaradi. Javob: √17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "son-topish-orasida",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#1f3ab930"
+    },
+    {
+      "q": "Qaysi son m/n ko'rinishida, ya'ni m va n butun hamda n ≠ 0 bo'lgan kasr shaklida yozib bo'lmaydigan son hisoblanadi?",
+      "v": [
+        "0,(3)",
+        "2,75",
+        "√2",
+        "−6"
+      ],
+      "t": 2,
+      "izoh": "0,(3) davriy kasr bo'lib, u 1/3 ga teng. 2,75 = 275/100 = 11/4 ko'rinishida yoziladi. −6 sonini −6/1 deb yozish mumkin. √2 esa hech qanday qisqarmas m/n kasr ko'rinishida ifodalanmaydi, buni zid isbot bilan ko'rsatiladi. Javob: √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-korinishida-yozish",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#be40e8e6"
+    },
+    {
+      "q": "√0,25 sonini oddiy kasr ko'rinishida yozish mumkinmi va agar mumkin bo'lsa, qanday kasr hosil bo'ladi?",
+      "v": [
+        "Yo'q, ildiz ostidagi son kasr bo'lgani uchun natija irratsional",
+        "Ha, u 1/2 ga teng",
+        "Ha, u 1/4 ga teng",
+        "Yo'q, chunki √0,25 cheksiz va davrsiz kasrga aylanadi"
+      ],
+      "t": 1,
+      "izoh": "Ildiz ostidagi sonni kasrga aylantiramiz: 0,25 = 25/100 = 1/4. Endi ildiz chiqaramiz: √(1/4) = √1 : √4 = 1 : 2 = 1/2. Surat ham, maxraj ham to'la kvadrat bo'lgani uchun natija ratsional chiqdi. Ildiz ostida kasr turgani sonni irratsional qilmaydi. Javob: ha, u 1/2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-korinishida-yozish",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#c2399391"
+    },
+    {
+      "q": "0,375 o'nli kasrini qisqarmas oddiy kasr ko'rinishida yozing va to'g'ri natijani belgilang.",
+      "v": [
+        "3/80",
+        "375/100",
+        "5/8",
+        "3/8"
+      ],
+      "t": 3,
+      "izoh": "O'nli kasrni maxraji o'nlik bo'lgan kasr ko'rinishida yozamiz: 0,375 = 375/1000, chunki verguldan keyin uchta xona bor. Surat va maxrajni 125 ga qisqartiramiz: 375 : 125 = 3 va 1000 : 125 = 8. Demak 0,375 = 3/8. Maxrajga 100 yozish verguldan keyingi xonalar sonini noto'g'ri sanashdan kelib chiqadi. Javob: 3/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-korinishida-yozish",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#035ec9f8"
+    },
+    {
+      "q": "Sotuvchi bir qop unning 0,(45) qismini ajratib berdi. Bu ulush qisqarmas oddiy kasr sifatida qanday yoziladi?",
+      "v": [
+        "5/11",
+        "45/100",
+        "45/90",
+        "9/22"
+      ],
+      "t": 0,
+      "izoh": "x = 0,(45) deb olamiz. Davr ikki xonali bo'lgani uchun 100x = 45,(45) bo'ladi. Ayiramiz: 100x − x = 45, ya'ni 99x = 45 va x = 45/99. Surat bilan maxrajni 9 ga qisqartiramiz: 45 : 9 = 5, 99 : 9 = 11. Demak x = 5/11. Maxrajga 100 yoki 90 yozish tipik xato. Javob: 5/11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-korinishida-yozish",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#3a5c7ddb"
+    },
+    {
+      "q": "N, Z, Q va R to'plamlari orasidagi munosabatlar haqida quyidagi to'rt mulohazadan qaysi biri noto'g'ri hisoblanadi?",
+      "v": [
+        "N ⊂ Z",
+        "Z ⊂ Q",
+        "Q ⊂ R",
+        "R ⊂ Q"
+      ],
+      "t": 3,
+      "izoh": "Sonlar to'plamlari kengayib boradi: har bir natural son butun, har bir butun son ratsional, har bir ratsional son haqiqiy. Shuning uchun N ⊂ Z ⊂ Q ⊂ R zanjiri o'rinli. Teskari munosabat esa noto'g'ri: R to'plamida √2 kabi ratsional bo'lmagan sonlar bor, demak R ni Q ning qismi deb bo'lmaydi. Javob: R ⊂ Q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toplamlar-munosabati",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#cbe1343c"
+    },
+    {
+      "q": "Har qanday butun son ratsional bo'ladimi va har qanday ratsional son butun bo'ladimi degan ikki savolga birdan javob bering.",
+      "v": [
+        "Birinchisiga ha, ikkinchisiga yo'q",
+        "Ikkala savolga ham ha",
+        "Birinchisiga yo'q, ikkinchisiga ha",
+        "Ikkala savolga ham yo'q"
+      ],
+      "t": 0,
+      "izoh": "Ixtiyoriy butun son k ni k/1 kasr ko'rinishida yozish mumkin, demak har qanday butun son ratsional — birinchi javob ha. Teskarisi esa bajarilmaydi: masalan 3/4 ratsional, lekin butun son emas. Demak ikkinchi savolga javob yo'q. Bu Z ⊂ Q munosabatining ma'nosi. Javob: birinchisiga ha, ikkinchisiga yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toplamlar-munosabati",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#8345e7fb"
+    },
+    {
+      "q": "Irratsional sonlar to'plami bilan ratsional sonlar to'plamining kesishmasi qanday to'plamga teng bo'ladi?",
+      "v": [
+        "Butun sonlar to'plami Z",
+        "Haqiqiy sonlar to'plami R",
+        "Bo'sh to'plam ∅",
+        "Natural sonlar to'plami N"
+      ],
+      "t": 2,
+      "izoh": "Irratsional son deb aynan ratsional bo'lmagan haqiqiy songa aytiladi. Demak bir vaqtning o'zida ham ratsional, ham irratsional bo'lgan son mavjud emas. Ikki to'plamda umumiy element bo'lmagani uchun ularning kesishmasi bo'sh to'plam bo'ladi. Javob: bo'sh to'plam ∅.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toplamlar-munosabati",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#1b3c246d"
+    },
+    {
+      "q": "Ratsional sonlar to'plami bilan irratsional sonlar to'plamining birlashmasi qaysi to'plamni hosil qiladi?",
+      "v": [
+        "Faqat natural sonlar to'plami N",
+        "Faqat butun sonlar to'plami Z",
+        "Barcha haqiqiy sonlar to'plami R",
+        "Bo'sh to'plamning o'zi ∅"
+      ],
+      "t": 2,
+      "izoh": "Har bir haqiqiy son yo m/n kasr ko'rinishida yoziladi, yo yozilmaydi. Birinchi holda u ratsional, ikkinchi holda irratsional. Uchinchi imkoniyat yo'q, demak bu ikki to'plam birgalikda sonlar o'qini to'liq to'ldiradi. Shuning uchun Q ∪ I = R bo'ladi. Javob: barcha haqiqiy sonlar to'plami R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toplamlar-munosabati",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#4e89074a"
+    },
+    {
+      "q": "Kompyuter dasturi √83 ni hisoblab, natijaning faqat butun qismini ekranga chiqardi. Dastur qanday son ko'rsatgan?",
+      "v": [
+        "9",
+        "8",
+        "10",
+        "41"
+      ],
+      "t": 0,
+      "izoh": "83 soni qaysi to'la kvadratlar orasida yotishini aniqlaymiz: 9² = 81 va 10² = 100. Demak 81 < 83 < 100 va ildiz chiqargandan so'ng 9 < √83 < 10 hosil bo'ladi. Butun qism — sondan oshmaydigan eng katta butun son, ya'ni 9. Ildiz ostidagi sonni ikkiga bo'lish bu yerda ishlamaydi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-qismi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#c5503ea9"
+    },
+    {
+      "q": "Talaba 2 + √30 ifodasini taqribiy hisoblab, natijaning butun qismini yozib qo'ydi. U qanday son olishi kerak?",
+      "v": [
+        "6",
+        "7",
+        "8",
+        "32"
+      ],
+      "t": 1,
+      "izoh": "Avval ildizni baholaymiz: 5² = 25 va 6² = 36, demak 5 < √30 < 6. Aniqroq qilsak 5,5² = 30,25 bo'lgani uchun √30 biroz 5,5 dan kichik, taxminan 5,48. Endi 2 qo'shamiz: 2 + 5,48 = 7,48. Butun qismi 7 ga teng. Ildiz ostiga 2 ni kiritib 32 olish xato. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-qismi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#43990ff1"
+    },
+    {
+      "q": "√45 − 3 ifodasining butun qismi qanday songa teng bo'ladi?",
+      "v": [
+        "4",
+        "2",
+        "3",
+        "42"
+      ],
+      "t": 2,
+      "izoh": "√45 ni chegaralaymiz: 6² = 36 va 7² = 49, demak 6 < √45 < 7. Aniqroq: 6,7² = 44,89 bo'lgani uchun √45 ≈ 6,71. Undan 3 ayiramiz: 6,71 − 3 = 3,71. Bu sonning butun qismi 3 ga teng. Ildiz ostidan 3 ni ayirib 42 olish tipik xato. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-qismi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#c8ac676c"
+    },
+    {
+      "q": "Anvar kalkulyatorsiz √150 qiymatini baholab, uning butun qismini aytishi kerak. To'g'ri javob qaysi?",
+      "v": [
+        "11",
+        "13",
+        "75",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "150 ga yaqin to'la kvadratlarni eslaymiz: 12² = 144 va 13² = 169. Demak 144 < 150 < 169 va ildiz chiqarilgandan keyin 12 < √150 < 13 bo'ladi. Shuning uchun butun qism 12 ga teng. Sonni ikkiga bo'lib 75 olish ildiz chiqarish emas. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-qismi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#c08165e7"
+    },
+    {
+      "q": "√18 + √2 yig'indisini soddalashtiring va natija qanday turdagi son ekanini aniqlang.",
+      "v": [
+        "4√2 — irratsional son",
+        "√20 — irratsional son",
+        "5√2 — irratsional son",
+        "4 — ratsional son"
+      ],
+      "t": 0,
+      "izoh": "Birinchi ildizni ajratamiz: √18 = √(9 · 2) = 3√2. Endi o'xshash hadlarni qo'shamiz: 3√2 + √2 = 4√2, chunki ikkinchi hadning koeffitsienti 1 ga teng. 4√2 ≈ 5,66 bo'lib, √2 irratsional bo'lgani uchun uni butun songa ko'paytirganda ham irratsional qoladi. Ildiz ostidagi sonlarni qo'shib √20 olish xato. Javob: 4√2, irratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-irratsional-amal",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#da9dea3b"
+    },
+    {
+      "q": "√8 · √50 ko'paytmasini hisoblang va natijaning turini ko'rsating.",
+      "v": [
+        "√58 — irratsional son",
+        "10√2 — irratsional son",
+        "20 — ratsional son",
+        "400 — ratsional son"
+      ],
+      "t": 2,
+      "izoh": "Ildizlarni birlashtiramiz: √8 · √50 = √(8 · 50) = √400. 400 to'la kvadrat, chunki 20² = 400, demak natija 20 ga teng. Yigirma butun son, ya'ni ratsional. Bu yerda ikkita irratsional son ko'paytirilib ratsional natija chiqdi. Ildiz ostidagi sonlarni qo'shib √58 olish keng tarqalgan xato. Javob: 20, ratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-irratsional-amal",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#0770125e"
+    },
+    {
+      "q": "√6 · √6 va √6 + √6 amallaridan qaysi biri ratsional son beradi?",
+      "v": [
+        "Faqat yig'indi ratsional bo'ladi",
+        "Ikkala natija ham ratsional",
+        "Ikkala natija ham irratsional",
+        "Faqat ko'paytma ratsional bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytmani hisoblaymiz: √6 · √6 = √36 = 6, ya'ni butun son va u ratsional. Yig'indini hisoblaymiz: √6 + √6 = 2√6. Bu yerda √6 irratsional bo'lib qolaveradi, uni 2 ga ko'paytirish irratsionallikni yo'qotmaydi. 2√6 ≈ 4,9. Demak faqat ko'paytma ratsional. Javob: faqat ko'paytma ratsional bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-irratsional-amal",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#35057f6a"
+    },
+    {
+      "q": "(√5 + √2)² ifodasini yoyib yozing va natija qanday turdagi son ekanini aniqlang.",
+      "v": [
+        "7 — ratsional son",
+        "7 + 2√10 — irratsional son",
+        "7 + 2√7 — irratsional son",
+        "2√10 — irratsional son"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi kvadrati formulasini qo'llaymiz: (a + b)² = a² + 2ab + b². Bunda a = √5, b = √2. Demak (√5)² = 5, (√2)² = 2 va 2ab = 2 · √5 · √2 = 2√10. Hammasini yig'amiz: 5 + 2 + 2√10 = 7 + 2√10. 10 to'la kvadrat emas, shuning uchun 2√10 irratsional va butun songa qo'shilganda ham irratsional qoladi. Javob: 7 + 2√10, irratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-irratsional-amal",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#578b16e1"
+    },
+    {
+      "q": "√75 : √3 ifodasining qiymatini toping va uning qaysi turdagi son ekanini aniqlang.",
+      "v": [
+        "25 — ratsional son",
+        "√72 — irratsional son",
+        "5 — ratsional son",
+        "5√3 — irratsional son"
+      ],
+      "t": 2,
+      "izoh": "Bo'linmani bitta ildiz ostiga keltiramiz: √75 : √3 = √(75 : 3) = √25. 25 to'la kvadrat bo'lgani uchun √25 = 5. Besh soni butun, demak ratsional. Ildiz ostidagi sonlarni ayirib √72 olish yoki ildizni tashlab 25 deb yozish tipik xatolar. Javob: 5, ratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-soddalashtirib-tur",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#5b86ef41"
+    },
+    {
+      "q": "√98 − √50 + √2 ifodasini soddalashtiring va natija ratsionalmi yoki irratsionalmi ekanini ayting.",
+      "v": [
+        "√50 — irratsional son",
+        "13√2 — irratsional son",
+        "3 — ratsional son",
+        "3√2 — irratsional son"
+      ],
+      "t": 3,
+      "izoh": "Har bir ildizdan to'la kvadratni chiqaramiz: √98 = √(49 · 2) = 7√2 va √50 = √(25 · 2) = 5√2. Endi o'xshash hadlar bilan ishlaymiz: 7√2 − 5√2 + √2 = (7 − 5 + 1)√2 = 3√2. √2 irratsional bo'lgani uchun 3√2 ham irratsional, uning qiymati taxminan 4,24. Koeffitsientlarni qo'shib 13 olish ishorani e'tiborsiz qoldirishdan chiqadi. Javob: 3√2, irratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-soddalashtirib-tur",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#756c842e"
+    },
+    {
+      "q": "1/√5 ifodasining maxrajidan irratsionallik yo'qotilgandan keyin u qanday ko'rinish oladi va natija qaysi turdagi son bo'ladi?",
+      "v": [
+        "1/5 — ratsional son",
+        "√5/5 — irratsional son",
+        "√5 — irratsional son",
+        "5√5 — irratsional son"
+      ],
+      "t": 1,
+      "izoh": "Kasrning surat va maxrajini √5 ga ko'paytiramiz: 1/√5 = √5 : (√5 · √5) = √5/5. Maxrajda endi butun son turibdi. Suratda √5 qolgani uchun natija irratsional bo'lib qolaveradi, uning qiymati taxminan 0,447. Ildizni shunchaki tashlab 1/5 deb yozish qiymatni ham buzadi, chunki 1/5 = 0,2. Javob: √5/5, irratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-soddalashtirib-tur",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#2e0bb2a6"
+    },
+    {
+      "q": "Bog'bon to'g'ri burchakli uchburchak shaklidagi ekin maydonining katetlari 4 m va 3 m ekanini bilib, gipotenuzasini hisobladi. Natija qanday turdagi son bo'ldi?",
+      "v": [
+        "5 m — ratsional son",
+        "7 m — ratsional son",
+        "√7 m — irratsional son",
+        "25 m — ratsional son"
+      ],
+      "t": 0,
+      "izoh": "Pifagor teoremasiga ko'ra gipotenuza c = √(a² + b²). Bunda a = 4, b = 3, demak a² + b² = 16 + 9 = 25. Ildiz chiqaramiz: √25 = 5. Besh butun son, ya'ni ratsional. Katetlarni oddiy qo'shib 7 olish yoki ildizni unutib 25 deb yozish tipik xatolar. Javob: 5 m, ratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifoda-soddalashtirib-tur",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#610b7e11"
+    },
+    {
+      "q": "Duradgor tomoni 6 sm bo'lgan kvadrat shaklli plastinka kesdi. Uning diagonali uzunligi qanday turdagi son bo'ladi?",
+      "v": [
+        "12 sm — ratsional son",
+        "6 sm — ratsional son",
+        "√12 sm — irratsional son",
+        "6√2 sm — irratsional son"
+      ],
+      "t": 3,
+      "izoh": "Kvadratning diagonali d = a√2 formulasi bilan topiladi, chunki diagonal ikki teng katetli to'g'ri burchakli uchburchakning gipotenuzasi. Bunda a = 6, demak d = 6√2 ≈ 8,49 sm. √2 irratsional bo'lgani uchun uni butun songa ko'paytirsak ham natija irratsional qoladi. Tomonni ikkilantirib 12 olish xato. Javob: 6√2 sm, irratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-soddalashtirib-tur",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#5240944e"
+    },
+    {
+      "q": "Quyidagi n qiymatlaridan qaysi birida √n ratsional son bo'ladi: 24, 45, 81, 90?",
+      "v": [
+        "24",
+        "45",
+        "81",
+        "90"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat ildiz faqat ildiz ostidagi natural son to'la kvadrat bo'lgandagina ratsional chiqadi. 24 soni 16 bilan 25 orasida, 45 soni 36 bilan 49 orasida, 90 soni 81 bilan 100 orasida yotadi — hech biri to'la kvadrat emas. 81 esa 9² ga teng, demak √81 = 9. Javob: 81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-ildiz-ratsionalligi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#2b911a83"
+    },
+    {
+      "q": "√n sonining irratsional bo'lishi uchun natural n qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "n tub son bo'lishi kerak",
+        "n to'la kvadrat bo'lmasligi kerak",
+        "n toq son bo'lishi kerak",
+        "n juft son bo'lishi kerak"
+      ],
+      "t": 1,
+      "izoh": "Agar n = k² ko'rinishida bo'lsa, √n = k butun son bo'ladi va u ratsional. Aks holda, ya'ni n to'la kvadrat bo'lmasa, √n ni hech qanday qisqarmas kasr bilan ifodalab bo'lmasligi isbotlangan. Tub bo'lish shart emas: 12 tub emas, lekin √12 irratsional. Juft yoki toqlik ham hal qilmaydi: √4 = 2 ratsional. Javob: n to'la kvadrat bo'lmasligi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-ildiz-ratsionalligi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#f44b5110"
+    },
+    {
+      "q": "1 dan 30 gacha bo'lgan natural sonlar ichida √n ratsional bo'ladigan n qiymatlari nechta?",
+      "v": [
+        "4 ta",
+        "5 ta",
+        "6 ta",
+        "30 ta"
+      ],
+      "t": 1,
+      "izoh": "Bizga kerakli n lar — 30 dan oshmaydigan to'la kvadratlar. Ularni yozamiz: 1 = 1², 4 = 2², 9 = 3², 16 = 4², 25 = 5². Keyingisi 36 = 6² bo'lib, u 30 dan katta va hisobga kirmaydi. Demak beshta qiymat bor. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ildiz-ratsionalligi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#ebca8f45"
+    },
+    {
+      "q": "Nodir 400 ta bir xil kvadrat plitka bilan kvadrat shaklli maydonni to'liq qopladi. Bir qatorda nechta plitka joylashgan?",
+      "v": [
+        "40 ta plitka",
+        "200 ta plitka",
+        "20 ta plitka",
+        "Aniq butun son chiqmaydi, chunki √400 irratsional"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat shaklda terilgan plitkalar soni qatordagi plitkalar sonining kvadratiga teng, ya'ni k² = 400. Bundan k = √400 va 20 · 20 = 400 bo'lgani uchun k = 20. 400 to'la kvadrat bo'lgani sababli ildiz butun son beradi, ya'ni natija ratsional. Umumiy sonni ikkiga bo'lib 200 olish kvadrat ildizni noto'g'ri tushunishdan kelib chiqadi. Javob: 20 ta plitka.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ildiz-ratsionalligi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#ba3fa3e8"
+    },
+    {
+      "q": "Samarqanddagi kvadrat hovlining yuzasi 250 m² ga teng. Hovli tomonining uzunligi qaysi ikki butun son orasida bo'ladi?",
+      "v": [
+        "14 va 15",
+        "15 va 16",
+        "16 va 17",
+        "125 va 126"
+      ],
+      "t": 1,
+      "izoh": "Kvadratning tomoni a = √250 ga teng. 250 ga yaqin to'la kvadratlar: 15² = 225 va 16² = 256. Demak 225 < 250 < 256 va ildiz chiqargandan keyin 15 < √250 < 16 bo'ladi. Yuzani ikkiga bo'lib 125 atrofidagi javobni tanlash o'lchov birligi jihatidan ham noto'g'ri. Javob: 15 va 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ildiz-oraliq",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#a5616d03"
+    },
+    {
+      "q": "Muhandis hisob-kitobda √72 qiymatini oldi va uni ikki butun son bilan chegaralamoqchi. To'g'ri chegara qaysi variantda ko'rsatilgan?",
+      "v": [
+        "7 < √72 < 8",
+        "9 < √72 < 10",
+        "8 < √72 < 9",
+        "35 < √72 < 37"
+      ],
+      "t": 2,
+      "izoh": "72 sonini eng yaqin to'la kvadratlar bilan qamrab olamiz: 8² = 64 va 9² = 81. Demak 64 < 72 < 81 bo'ladi. Kvadrat ildiz o'suvchi bo'lgani uchun tengsizlik ishoralari saqlanadi va 8 < √72 < 9 hosil bo'ladi. Sonni ikkiga bo'lish 36 atrofidagi noto'g'ri chegarani beradi. Javob: 8 < √72 < 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ildiz-oraliq",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#a6452c94"
+    },
+    {
+      "q": "Kvadrat shaklli akvarium tubining yuzasi 40 dm² ga teng. Tubining tomoni qaysi ikki butun son orasida joylashadi?",
+      "v": [
+        "6 va 7",
+        "5 va 6",
+        "7 va 8",
+        "19 va 21"
+      ],
+      "t": 0,
+      "izoh": "Tub kvadrat bo'lgani uchun tomoni √40 ga teng. Eng yaqin to'la kvadratlar: 6² = 36 va 7² = 49, demak 36 < 40 < 49. Ildiz chiqarsak 6 < √40 < 7 kelib chiqadi, aniqrog'i √40 ≈ 6,32. Yuzani ikkiga bo'lib 20 atrofidagi javobni olish xato. Javob: 6 va 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ildiz-oraliq",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#a2610ad5"
+    },
+    {
+      "q": "√2 ≈ 1,414 deb olinsa, tomoni 25 sm bo'lgan kvadratning diagonali taxminan necha santimetrga teng bo'ladi?",
+      "v": [
+        "35,35 sm",
+        "50 sm",
+        "17,68 sm",
+        "12,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Kvadratning diagonali d = a√2 formulasi bilan topiladi. Bunda a = 25, demak d = 25 · √2. Endi taqribiy qiymatni qo'yamiz: 25 · 1,414 = 35,35 sm. Diagonal irratsional uzunlik bo'lgani uchun javob faqat taqribiy. Tomonni ikkilantirib 50 olish yoki √2 ga bo'lib 17,68 olish tipik xatolar. Javob: 35,35 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-hisoblash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#d08bfc63"
+    },
+    {
+      "q": "√3 ≈ 1,732 bo'lsa, tomoni 12 sm bo'lgan teng tomonli uchburchakning balandligi taxminan qanchaga teng bo'ladi?",
+      "v": [
+        "20,78 sm",
+        "10,39 sm",
+        "6,93 sm",
+        "6 sm"
+      ],
+      "t": 1,
+      "izoh": "Teng tomonli uchburchak balandligi h = a√3 : 2 formulasi bilan hisoblanadi. Bunda a = 12, demak h = 12 · 1,732 : 2. Avval ko'paytiramiz: 12 · 1,732 = 20,784, so'ng ikkiga bo'lamiz: 20,784 : 2 = 10,392, ya'ni taxminan 10,39 sm. Ikkiga bo'lishni unutish 20,78 ni beradi. Javob: 10,39 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqribiy-hisoblash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#d6b00af4"
+    },
+    {
+      "q": "√5 ≈ 2,236 bo'lsa, 3√5 + 2 ifodasining taqribiy qiymati qanchaga teng bo'ladi?",
+      "v": [
+        "6,71",
+        "11,18",
+        "8,71",
+        "13,42"
+      ],
+      "t": 2,
+      "izoh": "Avval koeffitsientni ko'paytiramiz: 3 · 2,236 = 6,708. So'ng ikkini qo'shamiz: 6,708 + 2 = 8,708, ya'ni taxminan 8,71. Ikkini koeffitsientga qo'shib 5 · 2,236 = 11,18 olish yoki qo'shishni butunlay unutib 6,71 da to'xtash tipik xatolar. Javob: 8,71.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-hisoblash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#4d3509ba"
+    },
+    {
+      "q": "Muhandis √50 ≈ 7,07 qiymatidan foydalanib, tomoni √50 m bo'lgan kvadrat maydonning perimetrini hisobladi. U qanday natija olgan?",
+      "v": [
+        "14,14 m",
+        "50 m",
+        "200 m",
+        "28,28 m"
+      ],
+      "t": 3,
+      "izoh": "Kvadratning perimetri P = 4a formulasi bilan topiladi. Bunda a = √50 ≈ 7,07, demak P = 4 · 7,07 = 28,28 m. Ildizni unutib 4 · 50 = 200 olish eng keng tarqalgan xato, chunki 50 bu yuza emas, tomon ildiz ostida turibdi. Ikki tomonni qo'shib 14,14 olish esa yarim perimetrni beradi. Javob: 28,28 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqribiy-hisoblash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#19bc1fd9"
+    },
+    {
+      "q": "π soni va uning 22/7 kabi yaqinlashishlari haqida quyidagi mulohazalardan qaysi biri to'g'ri?",
+      "v": [
+        "π irratsional son, 22/7 esa uning taqribiy ratsional qiymati",
+        "π ratsional son, chunki u aynan 22/7 ga teng",
+        "π irratsional son, lekin u 3,14 ga aniq teng",
+        "π butun son emas, lekin ratsional son hisoblanadi"
+      ],
+      "t": 0,
+      "izoh": "π sonining o'nli yozuvi cheksiz va davrsiz, shuning uchun uni hech qanday m/n kasr ko'rinishida ifodalab bo'lmaydi — π irratsional. 22/7 ≈ 3,142857 va 3,14 esa oddiy ratsional sonlar bo'lib, ular faqat hisoblashda qulaylik uchun ishlatiladigan yaqinlashishlar. Ular π ga aniq teng emas. Javob: π irratsional, 22/7 esa taqribiy ratsional qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "pi-va-yaqinlashish",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#74db6afa"
+    },
+    {
+      "q": "22/7, 3,14 va π sonlaridan qaysi biri eng katta qiymatga ega?",
+      "v": [
+        "3,14",
+        "π",
+        "Uchalasi ham o'zaro teng",
+        "22/7"
+      ],
+      "t": 3,
+      "izoh": "Uchala sonni bir xil aniqlikda yozamiz: 3,14 aniq shunday; π ≈ 3,141592; 22/7 ni bo'lib chiqamiz va 22 : 7 ≈ 3,142857 hosil bo'ladi. Endi solishtiramiz: 3,14 < 3,141592 < 3,142857. Demak eng kattasi 22/7. Bu uchta son juda yaqin bo'lgani uchun ularni faqat ikkinchi xonagacha yaxlitlab taqqoslash yetarli emas. Javob: 22/7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "pi-va-yaqinlashish",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#cf0933a8"
+    },
+    {
+      "q": "Radiusi 5 sm bo'lgan aylananing uzunligi L = 2πr formulasi bilan hisoblanganda natija qanday turdagi son bo'ladi?",
+      "v": [
+        "31,4 — ratsional son",
+        "10 — ratsional son",
+        "10π — irratsional son",
+        "5π — irratsional son"
+      ],
+      "t": 2,
+      "izoh": "Formulaga qiymatni qo'yamiz: L = 2 · π · 5 = 10π. π irratsional bo'lgani uchun uni nolga teng bo'lmagan ratsional songa ko'paytirganda natija ham irratsional qoladi. 31,4 — bu faqat 10 · 3,14 taqribiy hisob natijasi, aniq qiymat emas. π ni tashlab yuborib 10 deb yozish esa formulani buzadi. Javob: 10π, irratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "pi-va-yaqinlashish",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#aa4a9328"
+    },
+    {
+      "q": "Diametri 14 sm bo'lgan doiraning yuzasi π orqali ifodalansa, qanday son hosil bo'ladi va u ratsionalmi?",
+      "v": [
+        "196π — irratsional son",
+        "49π — irratsional son",
+        "153,86 — ratsional son",
+        "49 — ratsional son"
+      ],
+      "t": 1,
+      "izoh": "Avval radiusni topamiz: r = d : 2 = 14 : 2 = 7 sm. Yuza formulasi S = πr², demak S = π · 7² = 49π. π irratsional bo'lgani uchun 49π ham irratsional. Diametrni to'g'ridan-to'g'ri kvadratga ko'tarib 196π olish radius bilan diametrni chalkashtirishdan kelib chiqadi. 153,86 esa taqribiy hisob. Javob: 49π, irratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "pi-va-yaqinlashish",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#372898c8"
+    },
+    {
+      "q": "Irratsional sonlar haqidagi quyidagi mulohazalardan qaysi biri har doim to'g'ri bo'ladi?",
+      "v": [
+        "Ikkita irratsional sonning ayirmasi ratsional bo'lishi mumkin",
+        "Irratsional sonning kvadrati har doim ratsional bo'ladi",
+        "Irratsional sonni butun songa ko'paytirsak ratsional hosil bo'ladi",
+        "Har qanday cheksiz o'nli kasr irratsional sondir"
+      ],
+      "t": 0,
+      "izoh": "Birinchi mulohazaga misol: √3 − √3 = 0, natija ratsional. Ikkinchisi noto'g'ri, chunki (1 + √2)² = 3 + 2√2 irratsional. Uchinchisi ham noto'g'ri: 5 · √2 = 5√2 irratsional bo'lib qoladi. To'rtinchisi noto'g'ri, chunki 0,(3) cheksiz, lekin davriy va u 1/3 ga teng. Javob: ikkita irratsional sonning ayirmasi ratsional bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mulohaza-togri-yolgon",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#1f7db614"
+    },
+    {
+      "q": "Ratsional sonlar to'plami haqidagi quyidagi mulohazalardan noto'g'risini toping.",
+      "v": [
+        "Ikkita ratsional sonning yig'indisi har doim ratsional",
+        "Ikkita ratsional sonning ko'paytmasi har doim ratsional",
+        "Ratsional sonni nolga bo'lish natijasi ham ratsional bo'ladi",
+        "Har qanday butun son ratsional son hisoblanadi"
+      ],
+      "t": 2,
+      "izoh": "Ratsional sonlar qo'shish va ko'paytirishga nisbatan yopiq: a/b + c/d = (ad + bc)/(bd) va (a/b) · (c/d) = ac/(bd) — ikkalasi ham kasr ko'rinishida qoladi. Butun son k ni k/1 deb yozish mumkin, demak u ratsional. Nolga bo'lish esa umuman aniqlanmagan amal, uning natijasi haqida gapirib bo'lmaydi. Javob: nolga bo'lish haqidagi mulohaza noto'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mulohaza-togri-yolgon",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#2d278c96"
+    },
+    {
+      "q": "«Har qanday cheksiz o'nli kasr irratsional son bo'ladi» degan fikr to'g'rimi va nima uchun?",
+      "v": [
+        "Ha, cheksizlikning o'zi irratsionallikni bildiradi",
+        "Ha, faqat chekli o'nli kasrgina ratsional bo'ladi",
+        "Yo'q, cheksiz kasr umuman son hisoblanmaydi",
+        "Yo'q, cheksiz davriy kasr ratsional son bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Cheksizlikning o'zi hal qiluvchi belgi emas, davriylik hal qiladi. Masalan 1/3 = 0,(3) cheksiz, lekin davri bitta raqamdan iborat va u ratsional. Irratsional son esa cheksiz va davrsiz kasr bilan yoziladi, masalan √2 = 1,41421356… Demak berilgan fikr noto'g'ri. Javob: yo'q, cheksiz davriy kasr ratsional son bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mulohaza-togri-yolgon",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#84f37021"
+    },
+    {
+      "q": "Ikkita irratsional sonning yig'indisi haqida qanday to'g'ri xulosa chiqarish mumkin?",
+      "v": [
+        "Yig'indi har doim irratsional bo'ladi",
+        "Yig'indi ratsional ham, irratsional ham bo'lishi mumkin",
+        "Yig'indi har doim ratsional bo'ladi",
+        "Yig'indi faqat sonlar o'zaro teng bo'lgandagina ratsional bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Ikki misolni solishtiramiz. Birinchisi: (2 + √3) + (2 − √3) = 4, natija ratsional, garchi qo'shiluvchilar teng bo'lmasa ham. Ikkinchisi: √2 + √3 ≈ 3,146, bu irratsional. Demak umumiy qoida yo'q, natija ikki xil bo'lishi mumkin. Javob: yig'indi ratsional ham, irratsional ham bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mulohaza-togri-yolgon",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#6740f9e1"
+    },
+    {
+      "q": "√2 sonining irratsionalligini isbotlashda odatda qanday usuldan foydalaniladi?",
+      "v": [
+        "Teskarisini faraz qilish, ya'ni zid isbot usulidan",
+        "Matematik induksiya usulidan",
+        "Funksiya grafigini chizish usulidan",
+        "Barcha variantlarni to'liq saralash usulidan"
+      ],
+      "t": 0,
+      "izoh": "Isbot √2 = m/n qisqarmas kasr deb faraz qilishdan boshlanadi. Bu farazdan m² = 2n² kelib chiqadi, undan esa m ham, n ham juft ekani chiqadi. Bu kasrning qisqarmasligiga zid, demak dastlabki faraz noto'g'ri. Shunday fikrlash zid isbot deyiladi. Javob: teskarisini faraz qilish, ya'ni zid isbot usulidan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "irratsionallik-isboti",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#8773834a"
+    },
+    {
+      "q": "Uchta dala kvadrat shaklda va ularning yuzalari 90 m², 96 m² hamda 100 m² ga teng. Dalalarning tomonlarini o'sish tartibida joylashtiring.",
+      "v": [
+        "√90 < √96 < 10",
+        "√96 < √90 < 10",
+        "10 < √90 < √96",
+        "√90 < 10 < √96"
+      ],
+      "t": 0,
+      "izoh": "Har bir dalaning tomoni yuzaning kvadrat ildiziga teng: √90, √96 va √100 = 10. Kvadrat ildiz o'suvchi funksiya, shuning uchun ildiz ostidagi sonlarning tartibi tomonlarning tartibini beradi. 90 < 96 < 100 bo'lgani uchun √90 < √96 < 10 bo'ladi. Uchinchi dala tomoni butun son, qolgan ikkitasi esa irratsional. Javob: √90 < √96 < 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tartiblash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#3a14c6d9"
+    },
+    {
+      "q": "Ustaxonada uch xil metall tayoq bor: birinchisi 4,6 m, ikkinchisi √21 m, uchinchisi 14/3 m uzunlikda. Eng uzun tayoqni aniqlang.",
+      "v": [
+        "Birinchi tayoq",
+        "Ikkinchi tayoq",
+        "Uchinchi tayoq",
+        "Birinchi va uchinchi tayoq teng"
+      ],
+      "t": 2,
+      "izoh": "Uchala uzunlikni o'nli ko'rinishga keltiramiz. Birinchisi 4,6. Ikkinchisi uchun 4,6² = 21,16 bo'lgani uchun √21 < 4,6, aniqrog'i √21 ≈ 4,583. Uchinchisi 14 : 3 ≈ 4,667. Endi 4,583 < 4,6 < 4,667 tartibi ko'rinadi. Javob: uchinchi tayoq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tartiblash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#b43724e8"
+    },
+    {
+      "q": "To'rt o'quvchining uzunlikka sakrash natijasi shunday: Aziza 2,4 m, Malika √6 m, Nilufar 11/5 m, Zilola √5 m. Kim eng uzoq sakragan?",
+      "v": [
+        "Aziza",
+        "Malika",
+        "Nilufar",
+        "Zilola"
+      ],
+      "t": 1,
+      "izoh": "Natijalarni taqqoslash uchun taqribiy qiymatlarni topamiz. √6 uchun 2,4² = 5,76 bo'lgani uchun √6 > 2,4, aniqrog'i √6 ≈ 2,449. Keyin 11 : 5 = 2,2 va √5 ≈ 2,236, chunki 2,2² = 4,84. To'rt qiymat: 2,4; 2,449; 2,2; 2,236. Eng kattasi 2,449, ya'ni Malikaning natijasi. Javob: Malika.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tartiblash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#62539a4b"
+    },
+    {
+      "q": "Sotuvchi uch idishning sig'imini taqqoslamoqchi: birinchisi 3,3 l, ikkinchisi √11 l, uchinchisi 10/3 l. Qaysi idish eng katta?",
+      "v": [
+        "3,3 l li idish",
+        "√11 l li idish",
+        "√11 va 10/3 sig'imlari o'zaro teng",
+        "10/3 l li idish"
+      ],
+      "t": 3,
+      "izoh": "√11 ni baholaymiz: 3,3² = 10,89 bo'lgani uchun √11 > 3,3, aniqrog'i √11 ≈ 3,3166. Uchinchi idish uchun 10 : 3 ≈ 3,3333. Endi uch qiymatni tartiblaymiz: 3,3 < 3,3166 < 3,3333. Farqlar juda kichik, shuning uchun bir xonagacha yaxlitlash yetarli emas. Javob: 10/3 l li idish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tartiblash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#9121680d"
+    },
+    {
+      "q": "Kvadrat shaklli bog'ning yuzasi 45 m² ga teng. Bog' atrofini o'rab olish uchun kerak bo'ladigan to'siq uzunligi qanday turdagi son bo'ladi?",
+      "v": [
+        "12√5 m — irratsional son",
+        "180 m — ratsional son",
+        "12 m — ratsional son",
+        "9√5 m — irratsional son"
+      ],
+      "t": 0,
+      "izoh": "Avval tomonni topamiz: a = √45 = √(9 · 5) = 3√5. Perimetr P = 4a = 4 · 3√5 = 12√5 ≈ 26,83 m. 45 to'la kvadrat emas, shuning uchun √5 ildizi yo'qolmaydi va natija irratsional bo'ladi. Yuzani to'rtga ko'paytirib 180 olish perimetr formulasini noto'g'ri qo'llashdir. Javob: 12√5 m, irratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-amal-turi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#99db47ef"
+    },
+    {
+      "q": "Duradgor to'g'ri burchakli uchburchak shaklidagi taxta kesdi, uning katetlari 5 sm va 5 sm ga teng. Gipotenuza uzunligi qanday turdagi son bo'ladi?",
+      "v": [
+        "10 sm — ratsional son",
+        "50 sm — ratsional son",
+        "√10 sm — irratsional son",
+        "5√2 sm — irratsional son"
+      ],
+      "t": 3,
+      "izoh": "Pifagor teoremasiga ko'ra c = √(5² + 5²) = √(25 + 25) = √50. Endi ildizni soddalashtiramiz: √50 = √(25 · 2) = 5√2 ≈ 7,07 sm. 2 to'la kvadrat emas, shuning uchun natija irratsional. Katetlarni oddiy qo'shib 10 olish yoki ildizni unutib 50 deb yozish tipik xatolar. Javob: 5√2 sm, irratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-amal-turi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#f1914bb2"
+    },
+    {
+      "q": "Sotuvchi tomoni 2,5 m bo'lgan kvadrat gilamning yuzasini hisobladi. Natija qanday turdagi son bo'ladi?",
+      "v": [
+        "10 m² — ratsional son",
+        "5 m² — ratsional son",
+        "6,25 m² — ratsional son",
+        "2,5√2 m² — irratsional son"
+      ],
+      "t": 2,
+      "izoh": "Kvadratning yuzasi S = a² formulasi bilan topiladi, demak S = 2,5² = 2,5 · 2,5 = 6,25 m². Bu amalda ikkita ratsional son ko'paytirildi, chunki 2,5 = 5/2, ratsional sonlarning ko'paytmasi esa har doim ratsional bo'ladi. Perimetrni hisoblab 10 olish yoki tomonni ikkilantirib 5 olish tipik xatolar; diagonalni hisoblab 2,5√2 olish esa uzunlik, yuza emas. Javob: 6,25 m², ratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-amal-turi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#2c61489c"
+    },
+    {
+      "q": "Malika √8 · √2 amalini bajarib, natijani sonlar to'plamlariga joylashtirmoqchi. Bu natija haqidagi qaysi fikr to'g'ri?",
+      "v": [
+        "Natija 4 ga teng va u natural son",
+        "Natija √10 ga teng va u irratsional son",
+        "Natija 16 ga teng va u natural son",
+        "Natija 4√2 ga teng va u irratsional son"
+      ],
+      "t": 0,
+      "izoh": "Ildizlarni bitta ildiz ostiga birlashtiramiz: √8 · √2 = √(8 · 2) = √16. 16 to'la kvadrat bo'lgani uchun √16 = 4. To'rt soni sanash sonlaridan biri, ya'ni natural son. Ildiz ostidagi sonlarni qo'shib √10 olish yoki ildizni tashlab 16 deb yozish tipik xatolar. Javob: natija 4 ga teng va u natural son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toplamga-tegishlilik",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#8fecf531"
+    },
+    {
+      "q": "−7/2 soni quyidagi sonlar to'plamlaridan qaysilariga tegishli bo'ladi?",
+      "v": [
+        "Z, Q va R to'plamlariga",
+        "Faqat Q va R to'plamlariga",
+        "N, Z, Q va R to'plamlarining hammasiga",
+        "Faqat R ga, chunki bu son irratsional"
+      ],
+      "t": 1,
+      "izoh": "Avval o'nli ko'rinishga o'tamiz: −7/2 = −3,5. Bu son ikkita butun sonning nisbati bo'lgani uchun ratsional, demak Q ga tegishli va Q ⊂ R bo'lgani uchun R ga ham kiradi. Ammo −3,5 butun son emas, shuning uchun Z ga kirmaydi, manfiy bo'lgani uchun esa N ga ham kirmaydi. Javob: faqat Q va R to'plamlariga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toplamga-tegishlilik",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#d98b19ff"
+    },
+    {
+      "q": "0,(12), √121, 3π va 15/4 sonlaridan qaysi biri irratsional son bo'ladi?",
+      "v": [
+        "0,(12)",
+        "√121",
+        "3π",
+        "15/4"
+      ],
+      "t": 2,
+      "izoh": "0,(12) davriy kasr bo'lib, uni 12/99 = 4/33 ko'rinishida yozish mumkin, demak ratsional. 121 = 11² to'la kvadrat, shuning uchun √121 = 11 butun son. 15/4 oddiy kasr ko'rinishida berilgan va ratsional. π irratsional bo'lgani uchun uni 3 ga ko'paytirganda ham natija irratsional qoladi. Javob: 3π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "irratsionalni-tanlash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#e8f7474f"
+    },
+    {
+      "q": "Do'kon hisobotida 2500, √900, 1200,5 va √2000 sonlari uchraydi. Ulardan qaysi biri irratsional son hisoblanadi?",
+      "v": [
+        "2500",
+        "√900",
+        "1200,5",
+        "√2000"
+      ],
+      "t": 3,
+      "izoh": "2500 butun son, 1200,5 esa chekli o'nli kasr bo'lib, u 2401/2 ko'rinishida yoziladi — ikkalasi ratsional. 900 = 30² to'la kvadrat, demak √900 = 30. 2000 esa to'la kvadrat emas: 44² = 1936 va 45² = 2025, ya'ni √2000 shu ikki butun son orasida yotadi va kasr ko'rinishida yozilmaydi. Javob: √2000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "irratsionalni-tanlash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#781b4f82"
+    },
+    {
+      "q": "Kub shaklidagi qutining hajmi 30 dm³ ga teng. Uning bir qirrasi qaysi ikki butun son orasida bo'ladi?",
+      "v": [
+        "2 va 3",
+        "3 va 4",
+        "4 va 5",
+        "9 va 10"
+      ],
+      "t": 1,
+      "izoh": "Kubning hajmi V = a³ bo'lgani uchun qirra a = ∛30 ga teng. Yaqin kublarni yozamiz: 3³ = 27 va 4³ = 64. Demak 27 < 30 < 64 va kub ildiz chiqarilgandan keyin 3 < ∛30 < 4 kelib chiqadi. Hajmni uchga bo'lib 10 atrofidagi javobni (9 va 10) tanlash xato — bo'lish kub ildiz chiqarish emas. Javob: 3 va 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-ildiz-oraliq",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#1ce3b1fd"
+    },
+    {
+      "q": "Laboratoriya dasturi ∛200 qiymatini hisoblab, uning butun qismini ekranga chiqardi. Qanday son ko'rsatilgan?",
+      "v": [
+        "4",
+        "6",
+        "5",
+        "66"
+      ],
+      "t": 2,
+      "izoh": "200 sonini eng yaqin kublar bilan chegaralaymiz: 5³ = 125 va 6³ = 216. Demak 125 < 200 < 216 va kub ildiz chiqarilgandan keyin 5 < ∛200 < 6 bo'ladi. Butun qism — sondan oshmaydigan eng katta butun son, ya'ni 5. Sonni uchga bo'lib 66 atrofidagi javob olish kub ildizni bilmaslikdan kelib chiqadi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-ildiz-oraliq",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#72dcd856"
+    },
+    {
+      "q": "∛64 va ∛100 sonlaridan qaysi biri ratsional va ikkinchisi qaysi butun sonlar orasida yotadi?",
+      "v": [
+        "∛100 ratsional bo'lib 5 ga teng, ∛64 esa 3 va 4 orasida",
+        "Ikkala son ham irratsional bo'ladi",
+        "Ikkala son ham ratsional bo'ladi",
+        "∛64 ratsional bo'lib 4 ga teng, ∛100 esa 4 va 5 orasida"
+      ],
+      "t": 3,
+      "izoh": "64 soni to'la kub, chunki 4³ = 64, shuning uchun ∛64 = 4 va bu butun son ratsional. 100 esa kub emas: 4³ = 64 va 5³ = 125, demak 64 < 100 < 125 va 4 < ∛100 < 5 bo'ladi. Ya'ni ∛100 ≈ 4,64 irratsional. Kvadrat ildiz bilan chalkashtirib ∛100 = 10 deb olish xato. Javob: ∛64 ratsional bo'lib 4 ga teng, ∛100 esa 4 va 5 orasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-ildiz-oraliq",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#44ddd536"
+    },
+    {
+      "q": "Dehqon 3/4 gektar yerga bug'doy, 2/5 gektar yerga arpa ekdi. Ekilgan umumiy maydon qanday turdagi son bo'ladi?",
+      "v": [
+        "23/20 gektar — ratsional son",
+        "5/9 gektar — ratsional son",
+        "6/20 gektar — ratsional son",
+        "23/20 gektar — irratsional son"
+      ],
+      "t": 0,
+      "izoh": "Kasrlarni umumiy maxrajga keltiramiz: 3/4 = 15/20 va 2/5 = 8/20. Ularni qo'shamiz: 15/20 + 8/20 = 23/20 gektar, ya'ni 1,15 gektar. Ikkita ratsional sonning yig'indisi har doim ratsional bo'ladi. Suratlar bilan maxrajlarni alohida qo'shib 5/9 olish keng tarqalgan xato. Javob: 23/20 gektar, ratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-amal-turi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#e463bb3c"
+    },
+    {
+      "q": "Kvadrat shaklli xonaning yuzasi 20 m². Devor bo'ylab plintus o'rnatish uchun kerak bo'ladigan uzunlik qanday turdagi son bo'ladi?",
+      "v": [
+        "80 m — ratsional son",
+        "20 m — ratsional son",
+        "5√8 m — irratsional son",
+        "8√5 m — irratsional son"
+      ],
+      "t": 3,
+      "izoh": "Xona tomoni a = √20 = √(4 · 5) = 2√5 ga teng. Plintus xona perimetri bo'ylab yotadi: P = 4a = 4 · 2√5 = 8√5 ≈ 17,89 m. 5 to'la kvadrat emas, shuning uchun ildiz yo'qolmaydi va natija irratsional. Yuzani to'rtga ko'paytirib 80 olish perimetr formulasini noto'g'ri qo'llashdir. Javob: 8√5 m, irratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-amal-turi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#bc6f326a"
+    },
+    {
+      "q": "Kvadrat shaklli suzish havzasi tubining yuzasi 320 m² ga teng. Havza tomoni qaysi ikki butun son orasida bo'ladi?",
+      "v": [
+        "16 va 17",
+        "17 va 18",
+        "18 va 19",
+        "159 va 161"
+      ],
+      "t": 1,
+      "izoh": "Tomon a = √320 ga teng. Yaqin to'la kvadratlarni yozamiz: 17² = 289 va 18² = 324. Demak 289 < 320 < 324 va ildiz chiqargandan keyin 17 < √320 < 18 bo'ladi. Chegara 324 ga juda yaqin, shuning uchun 18 ga yetmaydi. Yuzani ikkiga bo'lib 160 atrofidagi javobni olish xato. Javob: 17 va 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ildiz-oraliq",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#567d0c2d"
+    },
+    {
+      "q": "Geodezist o'lchov natijasida √111 qiymatini oldi va uni eng yaqin ikki butun son orasiga joylashtirmoqchi. To'g'ri oraliq qaysi?",
+      "v": [
+        "9 va 10",
+        "11 va 12",
+        "10 va 11",
+        "55 va 56"
+      ],
+      "t": 2,
+      "izoh": "111 ni to'la kvadratlar bilan qamrab olamiz: 10² = 100 va 11² = 121. Demak 100 < 111 < 121 bo'ladi. Kvadrat ildiz o'suvchi funksiya bo'lgani uchun tengsizlik saqlanadi: 10 < √111 < 11. Aniqroq baho √111 ≈ 10,54 ni beradi. Sonni ikkiga bo'lish ildiz chiqarish emas. Javob: 10 va 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-butunlar-orasida",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#8259454a"
+    },
+    {
+      "q": "Ikki o'lchov natijasi berilgan: birinchisi √99, ikkinchisi 9,95. Qaysi natija kattaroq ekanini aniqlang.",
+      "v": [
+        "√99 kattaroq",
+        "9,95 kattaroq",
+        "Ikkala natija ham o'zaro teng",
+        "Bunday sonlarni taqqoslab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ikkala sonni kvadratga ko'taramiz: (√99)² = 99 va 9,95² = 99,0025. Endi kvadratlarni solishtiramiz: 99 < 99,0025, demak √99 < 9,95. Farq mingdan bir ulushdan kichik, shuning uchun taxminiy yaxlitlash bilan javob berib bo'lmaydi, aniq hisob shart. Javob: 9,95 kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-ikki-son",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#dad27f98"
+    },
+    {
+      "q": "√2, 1,5, 7/5 va √3 sonlarini o'sish tartibida joylashtiring.",
+      "v": [
+        "√2 < 7/5 < 1,5 < √3",
+        "√2 < 1,5 < 7/5 < √3",
+        "7/5 < √2 < 1,5 < √3",
+        "7/5 < 1,5 < √2 < √3"
+      ],
+      "t": 2,
+      "izoh": "Har bir sonni o'nli ko'rinishga keltiramiz: 7/5 = 1,4; 1,5 shundayligicha; √2 ≈ 1,414, chunki 1,41² = 1,9881 va 1,42² = 2,0164; √3 ≈ 1,732, chunki 1,73² = 2,9929. To'rt qiymat: 1,4; 1,414; 1,5; 1,732. Ularni shu tartibda yozamiz. Javob: 7/5 < √2 < 1,5 < √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tartiblash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#c6765a57"
+    },
+    {
+      "q": "Uch dehqon sug'orishga suv sarfladi: Anvar 5,3 m³, Bahrom √28 m³, Doston 16/3 m³ suv ishlatdi. Kim eng ko'p suv sarflagan?",
+      "v": [
+        "Anvar",
+        "Bahrom",
+        "Doston",
+        "Anvar va Bahrom teng sarflagan"
+      ],
+      "t": 2,
+      "izoh": "√28 ni baholaymiz: 5,3² = 28,09 bo'lib, bu 28 dan katta, demak √28 < 5,3 va taxminan 5,29 ga teng. Dostonning sarfi 16 : 3 ≈ 5,333. Uch qiymatni tartiblaymiz: 5,29 < 5,3 < 5,333. Eng kattasi Dostonniki. Ildiz ostidagi 28 ni to'g'ridan-to'g'ri 5,3 bilan solishtirish xato. Javob: Doston.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tartiblash",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#e0739baa"
+    },
+    {
+      "q": "Talaba √7 + √11 ifodasini taqribiy hisoblab, natijaning butun qismini aniqladi. U qanday son olgan?",
+      "v": [
+        "4",
+        "5",
+        "6",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "Ildizlarni alohida baholaymiz: 2,6² = 6,76 va 2,7² = 7,29 bo'lgani uchun √7 ≈ 2,65. Shuningdek 3,3² = 10,89 va 3,4² = 11,56 bo'lgani uchun √11 ≈ 3,32. Yig'indi: 2,65 + 3,32 = 5,97. Bu son 5 bilan 6 orasida yotadi, demak butun qismi 5. Ildiz ostidagi sonlarni qo'shib √18 olish xato, chunki ildizlar shunday qo'shilmaydi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-qismi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#60d89e21"
+    },
+    {
+      "q": "√(4/9) va √(2/9) sonlaridan qaysi biri ratsional son bo'ladi?",
+      "v": [
+        "Ikkala son ham ratsional",
+        "Faqat √(4/9) ratsional",
+        "Faqat √(2/9) ratsional",
+        "Ikkala son ham irratsional"
+      ],
+      "t": 1,
+      "izoh": "Kasrdan ildiz chiqarganda surat va maxrajdan alohida ildiz olinadi. Birinchisi: √(4/9) = √4 : √9 = 2 : 3 = 2/3, ya'ni ratsional. Ikkinchisi: √(2/9) = √2 : 3. Bu yerda maxraj butun chiqdi, lekin suratda √2 qoldi va u irratsional, demak butun ifoda irratsional. Javob: faqat √(4/9) ratsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-ildiz-ratsionalligi",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#a565613a"
+    },
+    {
+      "q": "Q ∪ I = R va Q ∩ I = ∅ munosabatlari birgalikda nimani anglatishini tushuntiring.",
+      "v": [
+        "Har bir haqiqiy son yo ratsional, yo irratsional bo'ladi va ikkalasi birdan bo'lmaydi",
+        "Ratsional sonlar irratsional sonlarning bir qismi hisoblanadi",
+        "Irratsional sonlar haqiqiy son sanalmaydi",
+        "R to'plamida ratsional sonlar umuman uchramaydi"
+      ],
+      "t": 0,
+      "izoh": "Birinchi munosabat ikki to'plam birlashib sonlar o'qini to'liq to'ldirishini bildiradi, ya'ni uchinchi turdagi haqiqiy son yo'q. Ikkinchi munosabat esa ularda umumiy element yo'qligini, ya'ni bitta son bir vaqtda ikkala to'plamga tegishli bo'la olmasligini ko'rsatadi. Ikkalasi birgalikda R ning ikkita kesishmaydigan qismga ajralishini anglatadi. Javob: har bir haqiqiy son yo ratsional, yo irratsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toplamlar-munosabati",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#2bf9748d"
+    },
+    {
+      "q": "1/7 kasrini o'nli kasrga aylantirganda davri olti xonali bo'lgan cheksiz yozuv hosil bo'ladi. Bu son qanday turdagi son hisoblanadi?",
+      "v": [
+        "Irratsional son, chunki davri juda uzun",
+        "Irratsional son, chunki yozuvi cheksiz",
+        "Butun son emas, shuning uchun turini aniqlab bo'lmaydi",
+        "Ratsional son, chunki u ikkita butun sonning nisbati"
+      ],
+      "t": 3,
+      "izoh": "Son boshidanoq 1/7 ko'rinishida, ya'ni ikkita butun sonning nisbati sifatida berilgan. Ta'rifga ko'ra bu ratsional son. O'nli yozuvi 0,(142857) bo'lib, davri olti xonadan iborat, lekin davr uzunligi sonning turiga ta'sir qilmaydi. Irratsional son esa cheksiz va davrsiz kasr bilan yoziladi. Javob: ratsional son, chunki u ikkita butun sonning nisbati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davriy-kasr-ratsionallik",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#69abc3ad"
+    },
+    {
+      "q": "√2 = m/n qisqarmas kasr deb faraz qilinsa, m² = 2n² tenglikdan qanday ziddiyat kelib chiqadi?",
+      "v": [
+        "m va n ikkalasi ham toq bo'lib qoladi",
+        "n = 0 bo'lib qoladi va kasr ma'nosini yo'qotadi",
+        "m va n ikkalasi ham juft bo'lib qoladi, bu esa qisqarmaslikka zid",
+        "m² manfiy son bo'lib qoladi"
+      ],
+      "t": 2,
+      "izoh": "m² = 2n² tenglikning o'ng tomoni juft, demak m² juft va shundan m ning o'zi ham juft ekani chiqadi. m = 2k deb qo'yamiz: 4k² = 2n², bundan n² = 2k², ya'ni n ham juft. Endi m va n ikkalasi ham 2 ga bo'linadi, shuning uchun m/n kasrini qisqartirish mumkin edi. Bu esa uning qisqarmas deb olinganiga zid. Javob: ikkalasi ham juft bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "irratsionallik-isboti",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#c13b0126"
+    },
+    {
+      "q": "Sonlar o'qida √10 nuqtasi qaysi ikki butun nuqta orasida va qaysi biriga yaqinroq joylashadi?",
+      "v": [
+        "3 va 4 orasida, 4 ga yaqinroq",
+        "3 va 4 orasida, 3 ga yaqinroq",
+        "2 va 3 orasida, 3 ga yaqinroq",
+        "4 va 5 orasida, 4 ga yaqinroq"
+      ],
+      "t": 1,
+      "izoh": "Avval oraliqni aniqlaymiz: 3² = 9 va 4² = 16, demak 9 < 10 < 16 va 3 < √10 < 4. Endi o'rtani tekshiramiz: 3,5² = 12,25 bo'lib, bu 10 dan katta, shuning uchun √10 < 3,5. Ya'ni nuqta oraliqning chap yarmida, 3 ga yaqinroq turadi. Aniq qiymat √10 ≈ 3,16. Javob: 3 va 4 orasida, 3 ga yaqinroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonlar-oqi-joylashuv",
+      "id": "matematika_arif_m09-ratsional-va-irratsional-sonlar#f4ef34a7"
+    }
+  ]
+}

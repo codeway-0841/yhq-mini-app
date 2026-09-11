@@ -1,0 +1,396 @@
+{
+  "nom": "25-mavzu. Istemolchilarni Aralash Ulash",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektr zanjirida bitta zanjirda ham ketma-ket, ham parallel ulanish hollari bo'lsa, bunday ulanish nima deb ataladi?",
+      "v": [
+        "Aralash ulash",
+        "Murakkab ulash",
+        "Kombinatsiyalangan zanjir",
+        "Ikki bosqichli ulash"
+      ],
+      "t": 0,
+      "izoh": "Bitta zanjirda ham ketma-ket, ham parallel ulanish bo'lsa, bunday ulanish aralash ulash deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#0716f0cf"
+    },
+    {
+      "q": "Aralash ulangan iste'molchilar qanday hisoblanadi?",
+      "v": [
+        "Ulangan tugunlar bo'yicha alohida hisoblanadi",
+        "Faqat ketma-ket formula bilan hisoblanadi",
+        "Faqat parallel formula bilan hisoblanadi",
+        "Umuman hisoblanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Aralash ulangan iste'molchilar ulangan tugunlar bo'yicha alohida hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#4bda31f8"
+    },
+    {
+      "q": "73-rasmda R₂ va R₃ rezistorlar o'zaro qanday ulangan?",
+      "v": [
+        "Parallel",
+        "Ketma-ket",
+        "Aralash",
+        "Voltmetr orqali"
+      ],
+      "t": 0,
+      "izoh": "73-rasmda R₂ va R₃ rezistorlar o'zaro parallel ulangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#c258864b"
+    },
+    {
+      "q": "73-rasmda b va c nuqtalar orasidagi umumiy R'_um qarshilikni topishda qanday ifodadan foydalaniladi?",
+      "v": [
+        "R'_um = R₂·R₃/(R₂ + R₃)",
+        "R'_um = R₂ + R₃",
+        "R'_um = (R₂ + R₃)/(R₂·R₃)",
+        "R'_um = R₂·R₃"
+      ],
+      "t": 0,
+      "izoh": "R₂ va R₃ parallel ulangani uchun R'_um = R₂·R₃/(R₂ + R₃) ifodadan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#91cc1f32"
+    },
+    {
+      "q": "73-rasmda zanjirning umumiy qarshiligi qanday topiladi?",
+      "v": [
+        "R_um = R₁ + R'_um",
+        "R_um = R₁·R'_um/(R₁ + R'_um)",
+        "R_um = R₁ + R₂ + R₃",
+        "R_um = R'_um − R₁"
+      ],
+      "t": 0,
+      "izoh": "R₁ bilan R'_um ketma-ket ulangani uchun R_um = R₁ + R'_um.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#441e5d35"
+    },
+    {
+      "q": "Aralash ulangan murakkab iste'molchilarning umumiy qarshiligini topishda nimadan foydalanish qulay?",
+      "v": [
+        "Ekvivalent sxemalardan",
+        "Faqat ampermetr ko'rsatkichlaridan",
+        "Grafik usuldan",
+        "Logarifmik jadvallardan"
+      ],
+      "t": 0,
+      "izoh": "Aralash ulangan murakkab iste'molchilarning umumiy qarshiligini topishda ekvivalent sxemalardan foydalanish qulay.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#286d3ef3"
+    },
+    {
+      "q": "Ekvivalent sxema deganda nimani tushuniladi?",
+      "v": [
+        "Aynan shu sxema bilan almashtirish mumkin bo'lgan sxema",
+        "Kengaytirilgan sxema",
+        "Faqat parallel ulanishlar sxemasi",
+        "O'lchov asboblarining sxemasi"
+      ],
+      "t": 0,
+      "izoh": "Ekvivalent sxema deyilganda aynan shu sxema bilan almashtirish mumkin bo'lgan sxema tushuniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#7d91daba"
+    },
+    {
+      "q": "74-rasmdagi sxema masalasini yechish qanday sxemadan boshlanadi?",
+      "v": [
+        "Birinchi sxemadan — unda bevosita tugunlar bilan bog'langan rezistorlar ajratib olinadi",
+        "Oxirgi sxemadan",
+        "Eng katta qarshilikli rezistordan",
+        "Tok manbaidan"
+      ],
+      "t": 0,
+      "izoh": "Masalani yechishni birinchi sxemadan boshlab, bevosita tugunlar bilan bog'langan rezistorlar ajratib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#87cead2f"
+    },
+    {
+      "q": "74-rasm masalasida 4 Ω va 12 Ω rezistorlar o'zaro qanday ulangan va umumiy ekvivalent qarshilik qancha?",
+      "v": [
+        "Parallel, 3 Ω",
+        "Ketma-ket, 16 Ω",
+        "Parallel, 8 Ω",
+        "Ketma-ket, 3 Ω"
+      ],
+      "t": 0,
+      "izoh": "4 Ω va 12 Ω parallel: R = 4·12/(4+12) = 48/16 = 3 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#65aac9a2"
+    },
+    {
+      "q": "74-rasm masalasida 7 Ω va 5 Ω rezistorlar o'zaro qanday ulangan va umumiy ekvivalent qarshilik qancha?",
+      "v": [
+        "Ketma-ket, 12 Ω",
+        "Parallel, 12 Ω",
+        "Ketma-ket, 2 Ω",
+        "Parallel, 35 Ω"
+      ],
+      "t": 0,
+      "izoh": "7 Ω va 5 Ω ketma-ket: 7 + 5 = 12 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#7be96d55"
+    },
+    {
+      "q": "75-b sxemada 1 Ω va 3 Ω rezistorlar o'zaro qanday ulangan va ekvivalent qarshilik qancha?",
+      "v": [
+        "Ketma-ket, 4 Ω",
+        "Parallel, 4 Ω",
+        "Ketma-ket, 2 Ω",
+        "Parallel, 0,75 Ω"
+      ],
+      "t": 0,
+      "izoh": "1 Ω va 3 Ω ketma-ket: 1 + 3 = 4 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#f1d4a941"
+    },
+    {
+      "q": "75-d sxemada 4 Ω va 12 Ω o'zaro parallel ulangan, umumiy ekvivalent qarshilik qancha?",
+      "v": [
+        "3 Ω",
+        "16 Ω",
+        "8 Ω",
+        "4 Ω"
+      ],
+      "t": 0,
+      "izoh": "4·12/(4+12) = 3 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#dee22162"
+    },
+    {
+      "q": "74-rasm masalasida berilgan o'tkazgichlar qarshiliklari qanday birlikda berilgan deb hisoblanadi?",
+      "v": [
+        "Asosiy birlik — omda (Ω)",
+        "kiloomda (kΩ)",
+        "megomda (MΩ)",
+        "milliomda (mΩ)"
+      ],
+      "t": 0,
+      "izoh": "Masalada qarshiliklar (sonlar) bir xil asosiy birlik (Ω) da berilgan deb hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#498532bc"
+    },
+    {
+      "q": "73-rasmdagi sxemada R₁ rezistor R₂ va R₃ parallel guruhiga nisbatan qanday ulangan?",
+      "v": [
+        "Ketma-ket",
+        "Parallel",
+        "Voltmetr orqali",
+        "Mustaqil"
+      ],
+      "t": 0,
+      "izoh": "73-rasmda R₁ a nuqtadan b nuqtagacha ketma-ket, R₂ va R₃ esa b va c nuqtalar orasida parallel ulangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#6db3ad52"
+    },
+    {
+      "q": "Ikkita bir xil R qarshilikli rezistor parallel ulanganda ekvivalent qarshilik qancha bo'ladi?",
+      "v": [
+        "R/2",
+        "2R",
+        "R",
+        "R²"
+      ],
+      "t": 0,
+      "izoh": "R·R/(R+R) = R/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#aa095d33"
+    },
+    {
+      "q": "6 Ω va 3 Ω rezistorlar parallel ulanganda ekvivalent qarshilik qancha?",
+      "v": [
+        "2 Ω",
+        "9 Ω",
+        "4,5 Ω",
+        "18 Ω"
+      ],
+      "t": 0,
+      "izoh": "6·3/(6+3) = 18/9 = 2 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#f6967ad6"
+    },
+    {
+      "q": "2 Ω va 4 Ω rezistorlar ketma-ket ulangan guruh 6 Ω li rezistor bilan parallel ulangan. Umumiy qarshilik qancha?",
+      "v": [
+        "3 Ω",
+        "12 Ω",
+        "4 Ω",
+        "2 Ω"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket: 2+4 = 6 Ω; parallel: 6·6/(6+6) = 3 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#056f40e1"
+    },
+    {
+      "q": "73-rasmda R₁ = 2 Ω, R₂ = 6 Ω, R₃ = 3 Ω bo'lsa, zanjirning umumiy qarshiligi qancha?",
+      "v": [
+        "4 Ω",
+        "11 Ω",
+        "3 Ω",
+        "6 Ω"
+      ],
+      "t": 0,
+      "izoh": "R'_um = 6·3/(6+3) = 2 Ω; R_um = R₁ + R'_um = 2 + 2 = 4 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#c8a34075"
+    },
+    {
+      "q": "Aralash ulanishda ekvivalent sxema tuzishda birinchi qadam nima?",
+      "v": [
+        "Bevosita tugunlar bilan bog'langan rezistorlarni ajratib olish",
+        "Tok manbai kuchlanishini hisoblash",
+        "Barcha rezistorlarni ketma-ket deb hisoblash",
+        "Eng kichik rezistorni olib tashlash"
+      ],
+      "t": 0,
+      "izoh": "Birinchi sxemada bevosita tugunlar bilan bog'langan rezistorlar ajratib olinadi (punktir chiziq bilan ko'rsatiladi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#afffc511"
+    },
+    {
+      "q": "75-a rasmda bevosita tugunlar bilan bog'langan rezistorlar qanday ko'rsatiladi?",
+      "v": [
+        "Punktir chiziq bilan",
+        "Qalin chiziq bilan",
+        "Qizil rang bilan",
+        "Strelkalar bilan"
+      ],
+      "t": 0,
+      "izoh": "Bevosita tugunlar bilan bog'langan rezistorlar punktir chiziq bilan ko'rsatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#3ed1cd96"
+    },
+    {
+      "q": "Amalda bitta zanjirda ketma-ket va parallel ulanish hollari qanchalik uchraydi?",
+      "v": [
+        "Ko'p uchraydi",
+        "Hech qachon uchramaydi",
+        "Faqat laboratoriyada uchraydi",
+        "Juda kam uchraydi"
+      ],
+      "t": 0,
+      "izoh": "Amalda bitta zanjirda ham ketma-ket, ham parallel ulanish hollari ko'p uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#249931e2"
+    },
+    {
+      "q": "Uchta rezistor: R₁ = 4 Ω ketma-ket, R₂ = 12 Ω va R₃ = 6 Ω o'zaro parallel bo'lsa, umumiy qarshilik qancha?",
+      "v": [
+        "8 Ω",
+        "22 Ω",
+        "10 Ω",
+        "6 Ω"
+      ],
+      "t": 0,
+      "izoh": "Parallel: 12·6/(12+6) = 4 Ω; umumiy: 4 + 4 = 8 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#f609a4bf"
+    },
+    {
+      "q": "Ikkita 10 Ω li rezistor parallel ulangan guruhga yana 5 Ω li rezistor ketma-ket ulansa, umumiy qarshilik qancha?",
+      "v": [
+        "10 Ω",
+        "25 Ω",
+        "15 Ω",
+        "7,5 Ω"
+      ],
+      "t": 0,
+      "izoh": "Parallel: 10·10/(10+10) = 5 Ω; ketma-ket: 5 + 5 = 10 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#2f0724da"
+    },
+    {
+      "q": "Ekvivalent sxemalarni bosqichma-bosqich soddalashtirishning yakuniy maqsadi nima?",
+      "v": [
+        "Zanjirning umumiy qarshiligini topish",
+        "Har bir rezistor tokini o'lchash",
+        "Voltmetr ulanish joyini aniqlash",
+        "Zanjir sxemasini chiroyli qilish"
+      ],
+      "t": 0,
+      "izoh": "Ekvivalent sxemalar orqali murakkab zanjir soddalashtirilib, umumiy qarshilik topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#5772746e"
+    },
+    {
+      "q": "25-§ qanday o'qish uchun mo'ljallangan?",
+      "v": [
+        "Mustaqil o'qish uchun",
+        "Faqat sinfda o'qituvchi bilan",
+        "Laboratoriya ishi sifatida",
+        "Imtihon tayyorlovi uchun maxsus"
+      ],
+      "t": 0,
+      "izoh": "25-§ sarlavhasida «(Mustaqil o'qish uchun)» deb ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#9495f486"
+    },
+    {
+      "q": "Bir xil 9 Ω li uchta rezistor parallel ulangan guruhga 1 Ω li rezistor ketma-ket ulansa, umumiy qarshilik qancha?",
+      "v": [
+        "4 Ω",
+        "28 Ω",
+        "10 Ω",
+        "6 Ω"
+      ],
+      "t": 0,
+      "izoh": "1/R = 1/9+1/9+1/9 = 3/9 = 1/3, R = 3 Ω; umumiy: 3 + 1 = 4 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m25-istemolchilarni-aralash-ulash#97bb00ca"
+    }
+  ]
+}

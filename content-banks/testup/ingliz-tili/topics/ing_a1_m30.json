@@ -1,0 +1,1241 @@
+{
+  "nom": "Rooms & furniture (Xona va mebel)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "\"Oshxona\" inglizcha qanday?",
+      "v": [
+        "kitchen",
+        "bedroom",
+        "bathroom",
+        "living room"
+      ],
+      "t": 0,
+      "izoh": "Oshxona - kitchen, ovqat tayyorlanadi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#f5705628"
+    },
+    {
+      "q": "\"Yotoqxona\" inglizcha qanday?",
+      "v": [
+        "bedroom",
+        "kitchen",
+        "bathroom",
+        "living room"
+      ],
+      "t": 0,
+      "izoh": "Yotoqxona - bedroom, uxlanadigan xona.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#6a1b7be2"
+    },
+    {
+      "q": "\"Hammom\" inglizcha qanday?",
+      "v": [
+        "bathroom",
+        "bedroom",
+        "kitchen",
+        "living room"
+      ],
+      "t": 0,
+      "izoh": "Hammom - bathroom, yuvinadigan xona.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#3c5c2767"
+    },
+    {
+      "q": "\"Mehmonxona (dam olish xonasi)\" inglizcha qanday?",
+      "v": [
+        "living room",
+        "kitchen",
+        "bathroom",
+        "bedroom"
+      ],
+      "t": 0,
+      "izoh": "Dam olish xonasi - living room.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#0957bf3e"
+    },
+    {
+      "q": "\"Karavot\" inglizcha qanday?",
+      "v": [
+        "bed",
+        "sofa",
+        "chair",
+        "table"
+      ],
+      "t": 0,
+      "izoh": "Karavot - bed, uxlanadi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#ef82bdb1"
+    },
+    {
+      "q": "\"Divan\" inglizcha qanday?",
+      "v": [
+        "sofa",
+        "bed",
+        "chair",
+        "wardrobe"
+      ],
+      "t": 0,
+      "izoh": "Divan - sofa, yumshoq o'rindiq.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#08276d73"
+    },
+    {
+      "q": "\"Shkaf (kiyim uchun)\" inglizcha qanday?",
+      "v": [
+        "wardrobe",
+        "cupboard",
+        "fridge",
+        "door"
+      ],
+      "t": 0,
+      "izoh": "Kiyim shkafi - wardrobe.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#abce171a"
+    },
+    {
+      "q": "\"Lampa\" inglizcha qanday?",
+      "v": [
+        "lamp",
+        "window",
+        "door",
+        "mirror"
+      ],
+      "t": 0,
+      "izoh": "Lampa - lamp, yorug'lik beradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#5ecaa42d"
+    },
+    {
+      "q": "\"Muzlatgich\" inglizcha qanday?",
+      "v": [
+        "fridge",
+        "cupboard",
+        "wardrobe",
+        "oven"
+      ],
+      "t": 0,
+      "izoh": "Muzlatgich - fridge, oshxonada bo'ladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#39b8dc52"
+    },
+    {
+      "q": "\"Idish javoni\" inglizcha qanday?",
+      "v": [
+        "cupboard",
+        "wardrobe",
+        "fridge",
+        "shelf"
+      ],
+      "t": 0,
+      "izoh": "Idish javoni - cupboard.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#a0cf3f1e"
+    },
+    {
+      "q": "\"Ko'zgu\" inglizcha qanday?",
+      "v": [
+        "mirror",
+        "window",
+        "lamp",
+        "door"
+      ],
+      "t": 0,
+      "izoh": "Ko'zgu - mirror, unga qaraysiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#fbc50190"
+    },
+    {
+      "q": "We cook food in the ___.",
+      "v": [
+        "kitchen",
+        "bedroom",
+        "bathroom",
+        "living room"
+      ],
+      "t": 0,
+      "izoh": "Ovqat oshxonada (kitchen) pishiriladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#714e9333"
+    },
+    {
+      "q": "We sleep in the ___.",
+      "v": [
+        "bedroom",
+        "kitchen",
+        "bathroom",
+        "garage"
+      ],
+      "t": 0,
+      "izoh": "Yotoqxonada (bedroom) uxlaymiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#d96f0781"
+    },
+    {
+      "q": "We take a shower in the ___.",
+      "v": [
+        "bathroom",
+        "kitchen",
+        "bedroom",
+        "hall"
+      ],
+      "t": 0,
+      "izoh": "Dush hammomda (bathroom) qabul qilinadi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#bb0d2b52"
+    },
+    {
+      "q": "We watch TV in the ___.",
+      "v": [
+        "living room",
+        "kitchen",
+        "bathroom",
+        "garage"
+      ],
+      "t": 0,
+      "izoh": "Televizor living room da ko'riladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#c09ca726"
+    },
+    {
+      "q": "I sit on a ___.",
+      "v": [
+        "chair",
+        "door",
+        "window",
+        "lamp"
+      ],
+      "t": 0,
+      "izoh": "Stulga (chair) o'tiriladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#c65f1a74"
+    },
+    {
+      "q": "I sleep on a ___.",
+      "v": [
+        "bed",
+        "table",
+        "chair",
+        "lamp"
+      ],
+      "t": 0,
+      "izoh": "Karavotda (bed) uxlanadi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#65fca144"
+    },
+    {
+      "q": "We keep milk cold in the ___.",
+      "v": [
+        "fridge",
+        "wardrobe",
+        "cupboard",
+        "lamp"
+      ],
+      "t": 0,
+      "izoh": "Sut muzlatgichda (fridge) saqlanadi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#3a43d713"
+    },
+    {
+      "q": "I hang my clothes in the ___.",
+      "v": [
+        "wardrobe",
+        "fridge",
+        "oven",
+        "sink"
+      ],
+      "t": 0,
+      "izoh": "Kiyim shkafga (wardrobe) osiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#779fed8f"
+    },
+    {
+      "q": "I open the ___ to go into the room.",
+      "v": [
+        "door",
+        "window",
+        "mirror",
+        "lamp"
+      ],
+      "t": 0,
+      "izoh": "Xonaga eshik (door) orqali kiriladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#30da0684"
+    },
+    {
+      "q": "I look at myself in the ___.",
+      "v": [
+        "mirror",
+        "window",
+        "door",
+        "lamp"
+      ],
+      "t": 0,
+      "izoh": "O'zingizga ko'zgu (mirror) da qaraysiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#f4631853"
+    },
+    {
+      "q": "When it is dark, I turn on the ___.",
+      "v": [
+        "lamp",
+        "fridge",
+        "door",
+        "chair"
+      ],
+      "t": 0,
+      "izoh": "Qorong'ida lamp yoqiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#7fe36ea6"
+    },
+    {
+      "q": "Fresh air comes through the ___.",
+      "v": [
+        "window",
+        "fridge",
+        "sofa",
+        "bed"
+      ],
+      "t": 0,
+      "izoh": "Toza havo deraza (window) dan kiradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#4b6cf156"
+    },
+    {
+      "q": "We eat dinner at the ___.",
+      "v": [
+        "table",
+        "bed",
+        "door",
+        "mirror"
+      ],
+      "t": 0,
+      "izoh": "Ovqat stol (table) atrofida yeyiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#a82cc4a9"
+    },
+    {
+      "q": "A big soft seat for two or three people is a ___.",
+      "v": [
+        "sofa",
+        "chair",
+        "stool",
+        "bed"
+      ],
+      "t": 0,
+      "izoh": "Katta yumshoq o'rindiq - sofa.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#1ca75686"
+    },
+    {
+      "q": "Which one is a room?",
+      "v": [
+        "kitchen",
+        "table",
+        "chair",
+        "lamp"
+      ],
+      "t": 0,
+      "izoh": "Kitchen - xona; qolganlari mebel.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#29f5edc6"
+    },
+    {
+      "q": "Which one is furniture?",
+      "v": [
+        "sofa",
+        "kitchen",
+        "bathroom",
+        "bedroom"
+      ],
+      "t": 0,
+      "izoh": "Sofa - mebel; qolganlari xona.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#7ad04d18"
+    },
+    {
+      "q": "Where do you usually find a fridge?",
+      "v": [
+        "kitchen",
+        "bedroom",
+        "bathroom",
+        "living room"
+      ],
+      "t": 0,
+      "izoh": "Muzlatgich oshxonada (kitchen) bo'ladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#9ea3d3ff"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "There is a bed in the bedroom.",
+        "There is a bed in bedroom.",
+        "There a bed in the bedroom.",
+        "There is bed in the bedroom."
+      ],
+      "t": 0,
+      "izoh": "'a bed' va 'the bedroom' artikllar to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#9a16dc9c"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I sit on the chair.",
+        "I sit on the fridge.",
+        "I sit on the mirror.",
+        "I sit on the window."
+      ],
+      "t": 0,
+      "izoh": "Stulga (chair) o'tiriladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#9a16dc9c~2"
+    },
+    {
+      "q": "We wash dishes in the ___.",
+      "v": [
+        "kitchen",
+        "bedroom",
+        "living room",
+        "garage"
+      ],
+      "t": 0,
+      "izoh": "Idishlar oshxonada (kitchen) yuviladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#31c0f7f0"
+    },
+    {
+      "q": "Plates and cups are kept in the ___.",
+      "v": [
+        "cupboard",
+        "bed",
+        "sofa",
+        "mirror"
+      ],
+      "t": 0,
+      "izoh": "Tarelka va piyola cupboard da saqlanadi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#daccc40a"
+    },
+    {
+      "q": "The sunlight comes in through the ___.",
+      "v": [
+        "window",
+        "wardrobe",
+        "fridge",
+        "cupboard"
+      ],
+      "t": 0,
+      "izoh": "Quyosh nuri deraza (window) dan kiradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#f374623b"
+    },
+    {
+      "q": "Which one do you NOT sleep on?",
+      "v": [
+        "table",
+        "bed",
+        "sofa",
+        "mattress"
+      ],
+      "t": 0,
+      "izoh": "Stolda (table) uxlanmaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#2619fd88"
+    },
+    {
+      "q": "Complete: There are four ___ around the table.",
+      "v": [
+        "chairs",
+        "chair",
+        "chairies",
+        "a chair"
+      ],
+      "t": 0,
+      "izoh": "To'rtta - ko'plik: chairs.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#e1e98322"
+    },
+    {
+      "q": "Which room has a bath and a sink?",
+      "v": [
+        "bathroom",
+        "kitchen",
+        "bedroom",
+        "living room"
+      ],
+      "t": 0,
+      "izoh": "Vanna va rakovina hammomda (bathroom) bo'ladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#fae89363"
+    },
+    {
+      "q": "Where do you cook food?",
+      "v": [
+        "in the bathroom",
+        "in the bedroom",
+        "in the kitchen",
+        "in the hall"
+      ],
+      "t": 2,
+      "izoh": "Ovqat oshxonada (kitchen) pishiriladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#75e996b0"
+    },
+    {
+      "q": "Where do you sleep?",
+      "v": [
+        "in the bathroom",
+        "in the bedroom",
+        "in the kitchen",
+        "in the hall"
+      ],
+      "t": 1,
+      "izoh": "Uxlash - bedroom (yotoqxona).",
+      "qiy": "oson",
+      "id": "ing_a1_m30#363042df"
+    },
+    {
+      "q": "Where do you take a shower?",
+      "v": [
+        "in the kitchen",
+        "in the bedroom",
+        "in the bathroom",
+        "in the living room"
+      ],
+      "t": 2,
+      "izoh": "Yuvinish - bathroom.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#7845208c"
+    },
+    {
+      "q": "Where do you watch TV with your family?",
+      "v": [
+        "in the wardrobe",
+        "in the kitchen",
+        "in the living room",
+        "in the bathroom"
+      ],
+      "t": 2,
+      "izoh": "Oila TV - living room (mehmonxona).",
+      "qiy": "oson",
+      "id": "ing_a1_m30#24f539a6"
+    },
+    {
+      "q": "You keep food cold in the ___.",
+      "v": [
+        "fridge",
+        "lamp",
+        "mirror",
+        "carpet"
+      ],
+      "t": 0,
+      "izoh": "Oziq-ovqat sovutgichda - fridge.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#4f28f091"
+    },
+    {
+      "q": "You keep your clothes in the ___.",
+      "v": [
+        "fridge",
+        "wardrobe",
+        "window",
+        "mirror"
+      ],
+      "t": 1,
+      "izoh": "Kiyimlar shkafda - wardrobe.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#a90bd28f"
+    },
+    {
+      "q": "You sit on a ___.",
+      "v": [
+        "window",
+        "lamp",
+        "bed",
+        "chair"
+      ],
+      "t": 3,
+      "izoh": "O'tirish uchun chair (stul).",
+      "qiy": "oson",
+      "id": "ing_a1_m30#c105e9c8"
+    },
+    {
+      "q": "You look at yourself in the ___.",
+      "v": [
+        "shelf",
+        "fridge",
+        "carpet",
+        "mirror"
+      ],
+      "t": 3,
+      "izoh": "O'zingizga oynada - mirror qaraysiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#21348ef9"
+    },
+    {
+      "q": "Books are on the ___.",
+      "v": [
+        "shelf",
+        "door",
+        "bed",
+        "fridge"
+      ],
+      "t": 0,
+      "izoh": "Kitoblar javonda - shelf.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#5f49fb38"
+    },
+    {
+      "q": "The ___ gives light in the room.",
+      "v": [
+        "carpet",
+        "lamp",
+        "mirror",
+        "door"
+      ],
+      "t": 1,
+      "izoh": "Yorug'lik uchun lamp (chiroq).",
+      "qiy": "oson",
+      "id": "ing_a1_m30#81ae5950"
+    },
+    {
+      "q": "You open the ___ to go into a room.",
+      "v": [
+        "shelf",
+        "sofa",
+        "carpet",
+        "door"
+      ],
+      "t": 3,
+      "izoh": "Xonaga eshikdan - door kirasiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#2ebe8c31"
+    },
+    {
+      "q": "You open the ___ to get fresh air.",
+      "v": [
+        "fridge",
+        "wardrobe",
+        "window",
+        "cupboard"
+      ],
+      "t": 2,
+      "izoh": "Toza havo uchun window (deraza).",
+      "qiy": "oson",
+      "id": "ing_a1_m30#04295b9f"
+    },
+    {
+      "q": "The family sits together on the ___.",
+      "v": [
+        "lamp",
+        "mirror",
+        "door",
+        "sofa"
+      ],
+      "t": 3,
+      "izoh": "Birga o'tirish - sofa (divan).",
+      "qiy": "oson",
+      "id": "ing_a1_m30#67bfa863"
+    },
+    {
+      "q": "You eat dinner at the ___.",
+      "v": [
+        "carpet",
+        "bed",
+        "window",
+        "table"
+      ],
+      "t": 3,
+      "izoh": "Ovqat stol - table ustida yeyiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#fcdec682"
+    },
+    {
+      "q": "The ___ is soft and it is on the floor.",
+      "v": [
+        "lamp",
+        "carpet",
+        "window",
+        "door"
+      ],
+      "t": 1,
+      "izoh": "Polda gilam - carpet.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#236532d4"
+    },
+    {
+      "q": "You keep plates and cups in the ___.",
+      "v": [
+        "mirror",
+        "cupboard",
+        "bed",
+        "carpet"
+      ],
+      "t": 1,
+      "izoh": "Idishlar shkafchada - cupboard.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#f5cd26d2"
+    },
+    {
+      "q": "'kitchen' means ...",
+      "v": [
+        "yo'lak",
+        "oshxona",
+        "yotoqxona",
+        "hammom"
+      ],
+      "t": 1,
+      "izoh": "Kitchen - oshxona.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#4c98f9b9"
+    },
+    {
+      "q": "'bedroom' means ...",
+      "v": [
+        "mehmonxona",
+        "hammom",
+        "oshxona",
+        "yotoqxona"
+      ],
+      "t": 3,
+      "izoh": "Bedroom - yotoqxona.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#1550aaf4"
+    },
+    {
+      "q": "'bathroom' means ...",
+      "v": [
+        "oshxona",
+        "yo'lak",
+        "hammom",
+        "yotoqxona"
+      ],
+      "t": 2,
+      "izoh": "Bathroom - hammom.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#020f7be1"
+    },
+    {
+      "q": "'living room' means ...",
+      "v": [
+        "oshxona",
+        "hammom",
+        "yotoqxona",
+        "mehmonxona"
+      ],
+      "t": 3,
+      "izoh": "Living room - mehmonxona.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#af83cf53"
+    },
+    {
+      "q": "'hall' means ...",
+      "v": [
+        "oshxona",
+        "yotoqxona",
+        "yo'lak/dahliz",
+        "hammom"
+      ],
+      "t": 2,
+      "izoh": "Hall - dahliz, yo'lak.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#b7ef4040"
+    },
+    {
+      "q": "'table' means ...",
+      "v": [
+        "stol",
+        "divan",
+        "stul",
+        "karavot"
+      ],
+      "t": 0,
+      "izoh": "Table - stol.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#d614e06d"
+    },
+    {
+      "q": "'chair' means ...",
+      "v": [
+        "chiroq",
+        "javon",
+        "stol",
+        "stul"
+      ],
+      "t": 3,
+      "izoh": "Chair - stul.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#b0fa64c0"
+    },
+    {
+      "q": "'bed' means ...",
+      "v": [
+        "karavot",
+        "deraza",
+        "eshik",
+        "stol"
+      ],
+      "t": 0,
+      "izoh": "Bed - karavot.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#c472e6aa"
+    },
+    {
+      "q": "'sofa' means ...",
+      "v": [
+        "stul",
+        "divan",
+        "chiroq",
+        "oyna"
+      ],
+      "t": 1,
+      "izoh": "Sofa - divan.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#adb98226"
+    },
+    {
+      "q": "'wardrobe' means ...",
+      "v": [
+        "kiyim shkafi",
+        "sovutgich",
+        "gilam",
+        "chiroq"
+      ],
+      "t": 0,
+      "izoh": "Wardrobe - kiyim shkafi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#d285433a"
+    },
+    {
+      "q": "'lamp' means ...",
+      "v": [
+        "chiroq",
+        "deraza",
+        "eshik",
+        "gilam"
+      ],
+      "t": 0,
+      "izoh": "Lamp - chiroq.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#98745488"
+    },
+    {
+      "q": "'door' means ...",
+      "v": [
+        "javon",
+        "deraza",
+        "stol",
+        "eshik"
+      ],
+      "t": 3,
+      "izoh": "Door - eshik.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#e3c8c8e0"
+    },
+    {
+      "q": "'window' means ...",
+      "v": [
+        "divan",
+        "chiroq",
+        "eshik",
+        "deraza"
+      ],
+      "t": 3,
+      "izoh": "Window - deraza.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#085e0716"
+    },
+    {
+      "q": "'fridge' means ...",
+      "v": [
+        "chiroq",
+        "sovutgich",
+        "oyna",
+        "gilam"
+      ],
+      "t": 1,
+      "izoh": "Fridge - sovutgich.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#e4933ba4"
+    },
+    {
+      "q": "'cupboard' means ...",
+      "v": [
+        "shkafcha (idishlar uchun)",
+        "eshik",
+        "karavot",
+        "gilam"
+      ],
+      "t": 0,
+      "izoh": "Cupboard - idish shkafchasi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#5af5024b"
+    },
+    {
+      "q": "'mirror' means ...",
+      "v": [
+        "stol",
+        "deraza",
+        "chiroq",
+        "oyna (ko'zgu)"
+      ],
+      "t": 3,
+      "izoh": "Mirror - ko'zgu, oyna.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#e1caa731"
+    },
+    {
+      "q": "'shelf' means ...",
+      "v": [
+        "eshik",
+        "javon (taxtacha)",
+        "divan",
+        "karavot"
+      ],
+      "t": 1,
+      "izoh": "Shelf - taxtacha javon.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#10a97bc7"
+    },
+    {
+      "q": "'carpet' means ...",
+      "v": [
+        "chiroq",
+        "oyna",
+        "stol",
+        "gilam"
+      ],
+      "t": 3,
+      "izoh": "Carpet - gilam.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#f8b6b96a"
+    },
+    {
+      "q": "Which is a ROOM, not furniture?",
+      "v": [
+        "chair",
+        "table",
+        "bed",
+        "kitchen"
+      ],
+      "t": 3,
+      "izoh": "Kitchen - xona, qolganlari mebel.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#c8fd4f2f"
+    },
+    {
+      "q": "Which is a ROOM, not furniture?",
+      "v": [
+        "bathroom",
+        "sofa",
+        "shelf",
+        "lamp"
+      ],
+      "t": 0,
+      "izoh": "Bathroom - xona.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#c8fd4f2f~2"
+    },
+    {
+      "q": "Which is FURNITURE, not a room?",
+      "v": [
+        "hall",
+        "bathroom",
+        "kitchen",
+        "sofa"
+      ],
+      "t": 3,
+      "izoh": "Sofa - mebel.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#f1392476"
+    },
+    {
+      "q": "Which is FURNITURE, not a room?",
+      "v": [
+        "wardrobe",
+        "hall",
+        "bedroom",
+        "living room"
+      ],
+      "t": 0,
+      "izoh": "Wardrobe - mebel.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#f1392476~2"
+    },
+    {
+      "q": "Where is the fridge usually?",
+      "v": [
+        "in the bedroom",
+        "in the bathroom",
+        "in the kitchen",
+        "in the hall"
+      ],
+      "t": 2,
+      "izoh": "Sovutgich odatda oshxonada.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#9384cf82"
+    },
+    {
+      "q": "Where is the bed?",
+      "v": [
+        "in the living room",
+        "in the bathroom",
+        "in the bedroom",
+        "in the kitchen"
+      ],
+      "t": 2,
+      "izoh": "Karavot yotoqxonada.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#9218a848"
+    },
+    {
+      "q": "Where is the mirror often?",
+      "v": [
+        "on the carpet",
+        "in the fridge",
+        "in the cupboard",
+        "in the bathroom"
+      ],
+      "t": 3,
+      "izoh": "Ko'zgu ko'pincha hammomda.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#69cec57c"
+    },
+    {
+      "q": "Odd one out (bittasi ortiqcha):",
+      "v": [
+        "table",
+        "sofa",
+        "shoe",
+        "chair"
+      ],
+      "t": 2,
+      "izoh": "Shoe - mebel emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#ad7869ea"
+    },
+    {
+      "q": "Odd one out:",
+      "v": [
+        "wardrobe",
+        "bed",
+        "shelf",
+        "hat"
+      ],
+      "t": 3,
+      "izoh": "Hat - mebel emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#c486ccb7"
+    },
+    {
+      "q": "Choose the furniture word.",
+      "v": [
+        "chair",
+        "hall",
+        "kitchen",
+        "bathroom"
+      ],
+      "t": 0,
+      "izoh": "Chair - mebel.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#c81f6ba2"
+    },
+    {
+      "q": "Choose the furniture word.",
+      "v": [
+        "bedroom",
+        "hall",
+        "table",
+        "kitchen"
+      ],
+      "t": 2,
+      "izoh": "Table - mebel.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#c81f6ba2~2"
+    },
+    {
+      "q": "There ___ a lamp on the table.",
+      "v": [
+        "be",
+        "is",
+        "am",
+        "are"
+      ],
+      "t": 1,
+      "izoh": "Bitta lamp - there is.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#bf237046"
+    },
+    {
+      "q": "There ___ two chairs in the room.",
+      "v": [
+        "are",
+        "be",
+        "is",
+        "am"
+      ],
+      "t": 0,
+      "izoh": "Ikki chairs - there are.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#e9492c2d"
+    },
+    {
+      "q": "The books are ___ the shelf.",
+      "v": [
+        "in",
+        "between",
+        "under",
+        "on"
+      ],
+      "t": 3,
+      "izoh": "Kitoblar shelf ustida - on.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#2e1dbdae"
+    },
+    {
+      "q": "The cat is ___ the bed (karavot tagida).",
+      "v": [
+        "in",
+        "under",
+        "next",
+        "on"
+      ],
+      "t": 1,
+      "izoh": "Karavot tagida - under.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#936bd81d"
+    },
+    {
+      "q": "The lamp is ___ the table.",
+      "v": [
+        "behind",
+        "on",
+        "in",
+        "under"
+      ],
+      "t": 1,
+      "izoh": "Chiroq stol ustida - on.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#b157b978"
+    },
+    {
+      "q": "We wash our hands in the ___.",
+      "v": [
+        "bathroom",
+        "garden",
+        "garage",
+        "hall"
+      ],
+      "t": 0,
+      "izoh": "Qo'l bathroomda yuviladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#cae934a2"
+    },
+    {
+      "q": "My clothes are in the ___.",
+      "v": [
+        "wardrobe",
+        "mirror",
+        "oven",
+        "fridge"
+      ],
+      "t": 0,
+      "izoh": "Kiyimlar wardrobeda.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#90da4424"
+    },
+    {
+      "q": "Milk is in the ___.",
+      "v": [
+        "carpet",
+        "wardrobe",
+        "fridge",
+        "shelf"
+      ],
+      "t": 2,
+      "izoh": "Sut sovutgichda - fridge.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#bfedbe55"
+    },
+    {
+      "q": "I close the ___ at night to keep the room warm.",
+      "v": [
+        "window",
+        "shelf",
+        "carpet",
+        "mirror"
+      ],
+      "t": 0,
+      "izoh": "Kechasi deraza - window yopiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#ec417546"
+    },
+    {
+      "q": "We sit on the ___ and talk in the living room.",
+      "v": [
+        "sofa",
+        "fridge",
+        "door",
+        "window"
+      ],
+      "t": 0,
+      "izoh": "Mehmonxonada sofada o'tiramiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#ed70f54a"
+    },
+    {
+      "q": "A small light for reading in the bedroom is a ___.",
+      "v": [
+        "carpet",
+        "mirror",
+        "lamp",
+        "door"
+      ],
+      "t": 2,
+      "izoh": "O'qish uchun lamp.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#56f0c7e5"
+    },
+    {
+      "q": "Which room has a shower and a toilet?",
+      "v": [
+        "bedroom",
+        "bathroom",
+        "hall",
+        "kitchen"
+      ],
+      "t": 1,
+      "izoh": "Dush va hojatxona - bathroomda.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#3e8d0a84"
+    },
+    {
+      "q": "Which room has a stove and a sink?",
+      "v": [
+        "kitchen",
+        "bedroom",
+        "hall",
+        "bathroom"
+      ],
+      "t": 0,
+      "izoh": "Plita va rakovina - kitchenda.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#016d7c85"
+    },
+    {
+      "q": "You hang your coat in the ___ when you come home.",
+      "v": [
+        "fridge",
+        "carpet",
+        "bed",
+        "hall"
+      ],
+      "t": 3,
+      "izoh": "Paltoni dahlizda - hall'da ilamiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m30#37aec7b8"
+    }
+  ]
+}

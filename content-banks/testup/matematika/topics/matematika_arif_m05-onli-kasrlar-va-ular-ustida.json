@@ -1,0 +1,1609 @@
+{
+  "nom": "O'nli kasrlar va ular ustida amallar",
+  "bolim": "Sonlar va ular ustida amallar",
+  "blok": "arif",
+  "rasmiyBolim": 1,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Aziza 100 metrni 13,08 sekundda, Dilnoza esa 13,1 sekundda yugurib o'tdi. Qaysi qiz tezroq yugurgan va necha sekund oldin marraga yetgan?",
+      "v": [
+        "Aziza, 0,02 s oldin",
+        "Dilnoza, 0,02 s oldin",
+        "Aziza, 0,2 s oldin",
+        "Aziza, 2 s oldin"
+      ],
+      "t": 0,
+      "izoh": "Xona sonini tenglashtiramiz: 13,1 = 13,10. O'ndan bir xonasini taqqoslaymiz: 13,08 da 0, 13,10 da 1; 0 < 1, demak 13,08 < 13,10. Demak Aziza tezroq yugurgan. Farq: 13,10 − 13,08 = 0,02 s. Javob: Aziza, 0,02 s oldin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onli-taqqoslash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#d8e6c295"
+    },
+    {
+      "q": "Do'kondagi to'rt xil unning bir kilogrammi quyidagi narxlarda sotiladi: 8,5 ming so'm, 8,45 ming so'm, 8,405 ming so'm va 8,54 ming so'm. Eng arzon unni ko'rsating.",
+      "v": [
+        "8,5 ming so'm",
+        "8,45 ming so'm",
+        "8,405 ming so'm",
+        "8,54 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Barcha narxlarni bir xil xonagacha yozamiz: 8,500; 8,450; 8,405; 8,540. Butun qismlar teng, shuning uchun o'ndan bir xonasidan boshlaymiz: 4 < 5. Qolgan ikkitasida 8,405 va 8,450 ni solishtiramiz — yuzdan bir xonasida 0 < 5. Eng kichigi 8,405. Javob: 8,405 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onli-taqqoslash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#923b6c36"
+    },
+    {
+      "q": "Meteostansiya to'rt kun ertalabki haroratni −3,6 °C, −3,06 °C, −3,66 °C va −3,606 °C deb qayd etdi. Qaysi kuni havo eng sovuq bo'lgan?",
+      "v": [
+        "−3,06 °C",
+        "−3,66 °C",
+        "−3,606 °C",
+        "−3,6 °C"
+      ],
+      "t": 1,
+      "izoh": "Manfiy sonlarda moduli katta bo'lgani kichikroq, ya'ni sovuqroq. Modullarni tenglashtirib yozamiz: 3,600; 3,060; 3,660; 3,606. Ular ichida eng kattasi 3,660. Demak eng kichik harorat −3,66 °C. Javob: −3,66 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "onli-taqqoslash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#bc95d77f"
+    },
+    {
+      "q": "Uch o'quvchi tarozida portfelini o'lchadi: Jasurniki 3,7 kg, Nodirniki 3,68 kg, Kamolaniki esa 3,702 kg. Portfellarni og'irligi bo'yicha to'g'ri taqqoslagan qatorni tanlang.",
+      "v": [
+        "Jasurniki < Nodirniki < Kamolaniki",
+        "Kamolaniki < Nodirniki < Jasurniki",
+        "Nodirniki < Kamolaniki < Jasurniki",
+        "Nodirniki < Jasurniki < Kamolaniki"
+      ],
+      "t": 3,
+      "izoh": "Massalarni uch xonagacha yozamiz: 3,700; 3,680; 3,702. Butun qismlar teng. O'ndan bir xonasida 6 < 7, demak 3,68 eng kichigi. Qolgan ikkitasida mingdan bir xonasi hal qiladi: 0 < 2, ya'ni 3,700 < 3,702. Javob: Nodirniki < Jasurniki < Kamolaniki.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onli-taqqoslash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#8430ab5f"
+    },
+    {
+      "q": "Anvar buyurtmaning 3/8 qismini, Bekzod esa 0,38 qismini bajardi. Kim ko'proq ish qilgan va farq qanchaga teng?",
+      "v": [
+        "Bekzod, 0,005 qismga ko'p",
+        "Anvar, 0,005 qismga ko'p",
+        "Bekzod, 0,05 qismga ko'p",
+        "Ikkalasi teng ish bajargan"
+      ],
+      "t": 0,
+      "izoh": "Avval oddiy kasrni o'nli kasrga aylantiramiz: 3/8 = 3 : 8 = 0,375. Endi 0,375 va 0,380 ni taqqoslaymiz — yuzdan bir xonasida 7 < 8, demak 0,375 < 0,38. Farq: 0,380 − 0,375 = 0,005. Javob: Bekzod, 0,005 qismga ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "onli-taqqoslash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#162444ad"
+    },
+    {
+      "q": "0,505; 0,55; 0,5 va 0,055 sonlarini o'sish tartibida joylashtirilgan qatorni toping.",
+      "v": [
+        "0,5; 0,055; 0,505; 0,55",
+        "0,55; 0,505; 0,5; 0,055",
+        "0,055; 0,5; 0,505; 0,55",
+        "0,055; 0,505; 0,5; 0,55"
+      ],
+      "t": 2,
+      "izoh": "Hammasini uch xonagacha yozamiz: 0,505; 0,550; 0,500; 0,055. O'ndan bir xonasi bo'yicha eng kichigi 0,055 (u yerda 0 turibdi). Qolganlarida 5 teng, yuzdan bir xonasi solishtiriladi: 0 < 0 < 5, so'ng mingdan bir: 0,500 < 0,505. Javob: 0,055; 0,5; 0,505; 0,55.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tartibga-joylash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#0af0730c"
+    },
+    {
+      "q": "Beshta savdo nuqtasida bir litr sut narxi 12,5; 12,05; 12,45; 12,4 va 12,54 ming so'mni tashkil etdi. Narxlar kamayish tartibida to'g'ri joylashtirilgan qatorni ko'rsating.",
+      "v": [
+        "12,54; 12,45; 12,5; 12,4; 12,05",
+        "12,54; 12,5; 12,45; 12,4; 12,05",
+        "12,05; 12,4; 12,45; 12,5; 12,54",
+        "12,5; 12,54; 12,45; 12,4; 12,05"
+      ],
+      "t": 1,
+      "izoh": "Narxlarni ikki xonagacha yozamiz: 12,50; 12,05; 12,45; 12,40; 12,54. Butun qismlar teng, o'ndan bir xonasi bo'yicha: 5; 0; 4; 4; 5. Eng kattalari 12,50 va 12,54, ular yuzdan bir bo'yicha ajratiladi: 12,54 > 12,50. Keyin 12,45 > 12,40 > 12,05. Javob: 12,54; 12,5; 12,45; 12,4; 12,05.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tartibga-joylash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#b46d1ca2"
+    },
+    {
+      "q": "Suzish musobaqasida to'rt sportchi 50 metrga 27,9 s; 27,89 s; 28,1 s va 27,908 s vaqt sarfladi. Birinchi o'rin qaysi natijaga tegishli va uchinchi natija qaysi?",
+      "v": [
+        "Birinchi 27,908 s, uchinchi 27,9 s",
+        "Birinchi 28,1 s, uchinchi 27,9 s",
+        "Birinchi 27,89 s, uchinchi 27,9 s",
+        "Birinchi 27,89 s, uchinchi 27,908 s"
+      ],
+      "t": 3,
+      "izoh": "Suzishda vaqt kichik bo'lgani yaxshiroq. Uch xonagacha yozamiz: 27,900; 27,890; 28,100; 27,908. O'sish tartibi: 27,890 < 27,900 < 27,908 < 28,100. Birinchi o'rin 27,89 s, ikkinchisi 27,9 s, uchinchisi 27,908 s. Javob: birinchi 27,89 s, uchinchi 27,908 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tartibga-joylash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#15d57433"
+    },
+    {
+      "q": "1/2; 0,45; 2/5 va 0,52 sonlari berilgan. Ular orasidan eng kattasini va eng kichigini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "Eng kattasi 0,52, eng kichigi 2/5",
+        "Eng kattasi 0,52, eng kichigi 0,45",
+        "Eng kattasi 1/2, eng kichigi 2/5",
+        "Eng kattasi 0,52, eng kichigi 1/2"
+      ],
+      "t": 0,
+      "izoh": "Oddiy kasrlarni o'nli kasrga aylantiramiz: 1/2 = 0,5 va 2/5 = 0,4. Endi to'rtta o'nli kasr bor: 0,50; 0,45; 0,40; 0,52. O'ndan bir xonasi bo'yicha 0,50 va 0,52 oldinda; ular yuzdan bir xonasida ajratiladi: 0 < 2, demak eng kattasi 0,52. Eng kichigini topishda 0,45 va 0,40 taqqoslanadi: yuzdan bir xonasida 0 < 5, demak eng kichigi 0,40 = 2/5. Javob: eng kattasi 0,52, eng kichigi 2/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tartibga-joylash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#f95d5b37"
+    },
+    {
+      "q": "Sonlar o'qida 4,7 va 4,8 nuqtalari orasiga tushadigan sonni quyidagilardan tanlang: 4,68; 4,75; 4,9; 4,07.",
+      "v": [
+        "4,68",
+        "4,75",
+        "4,9",
+        "4,07"
+      ],
+      "t": 1,
+      "izoh": "Shart: 4,7 < x < 4,8. Har birini tekshiramiz: 4,68 < 4,70 — chapda qoladi. 4,90 > 4,80 — o'ngda qoladi. 4,07 esa 4,7 dan ham kichik. Faqat 4,75 uchun 4,70 < 4,75 < 4,80 bajariladi. Javob: 4,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqdagi-son",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#f569b8d4"
+    },
+    {
+      "q": "Dorixonadagi retseptga ko'ra kukun massasi 0,3 g dan katta, 0,4 g dan kichik bo'lishi kerak. Berilgan namunalardan qaysi biri shu talabga javob beradi?",
+      "v": [
+        "0,45 g",
+        "0,25 g",
+        "0,35 g",
+        "0,03 g"
+      ],
+      "t": 2,
+      "izoh": "Talabni tengsizlik ko'rinishida yozamiz: 0,3 < m < 0,4. Sonlarni ikki xonagacha keltiramiz: 0,45; 0,25; 0,35; 0,03. 0,45 > 0,40 bo'lgani uchun chiqib ketadi, 0,25 < 0,30 bo'lgani uchun ham mos emas, 0,03 esa juda kichik. Faqat 0,35 shartni qanoatlantiradi. Javob: 0,35 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqdagi-son",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#e1526d25"
+    },
+    {
+      "q": "5,2 va 5,3 sonlari orasida (chegaralarni hisobga olmaganda) yuzdan bir aniqlikdagi nechta o'nli kasr joylashgan?",
+      "v": [
+        "11 ta",
+        "10 ta",
+        "8 ta",
+        "9 ta"
+      ],
+      "t": 3,
+      "izoh": "Yuzdan bir aniqlikdagi sonlar: 5,21; 5,22; 5,23; 5,24; 5,25; 5,26; 5,27; 5,28; 5,29. Ularning soni 29 − 21 + 1 = 9 ta. Chegaralar 5,20 va 5,30 hisobga olinmaydi, chunki savolda «orasida» deyilgan. Javob: 9 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-son",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#c6c8e280"
+    },
+    {
+      "q": "Nurbek 2,6 dan katta va 2,65 dan kichik bo'lgan mingdan bir aniqlikdagi kasr yozmoqchi. U yozishi mumkin bo'lgan sonni tanlang.",
+      "v": [
+        "2,615",
+        "2,655",
+        "2,56",
+        "2,065"
+      ],
+      "t": 0,
+      "izoh": "Shart: 2,600 < x < 2,650. 2,655 > 2,650 bo'lgani uchun mos emas. 2,560 < 2,600, demak u ham chiqib ketadi. 2,065 esa 2,6 dan ancha kichik. 2,615 uchun 2,600 < 2,615 < 2,650 bajariladi. Javob: 2,615.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-son",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#63dfc4b0"
+    },
+    {
+      "q": "Malika do'kondan 12,45 ming so'mlik guruch, 8,7 ming so'mlik yog' va 3,05 ming so'mlik tuz sotib oldi. U kassaga qancha pul to'lagan?",
+      "v": [
+        "23,57 ming so'm",
+        "24,2 ming so'm",
+        "24,65 ming so'm",
+        "24,02 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Qo'shishda vergullar bir ustunda turishi kerak: 12,45 + 8,70 = 21,15. Keyin 21,15 + 3,05 = 24,20. Demak jami 24,2 ming so'm. Xatolarning eng ko'p uchraydigani — 8,7 ni 8,07 deb yozib qo'yish. Javob: 24,2 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshish-kontekst",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#d4c27d4c"
+    },
+    {
+      "q": "Marafonda Sanjar birinchi kuni 18,6 km, ikkinchi kuni 21,45 km, uchinchi kuni esa 19,08 km yugurdi. Uch kunda u jami qancha masofani bosib o'tgan?",
+      "v": [
+        "58,59 km",
+        "59,85 km",
+        "59,13 km",
+        "58,13 km"
+      ],
+      "t": 2,
+      "izoh": "Barcha masofani ikki xonagacha yozamiz: 18,60; 21,45; 19,08. Avval 18,60 + 21,45 = 40,05. So'ng 40,05 + 19,08 = 59,13. Demak uch kunlik masofa 59,13 km. Javob: 59,13 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshish-kontekst",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#0542c26d"
+    },
+    {
+      "q": "Birinchi idishda 1,25 l, ikkinchisida 0,8 l, uchinchisida esa 1,05 l suv bor. Shu suvning hammasini sig'imi 3 litrli bankaga quyish mumkinmi?",
+      "v": [
+        "Yo'q, jami 3,1 l bo'ladi va 0,1 l sig'maydi",
+        "Ha, jami 2,38 l bo'ladi",
+        "Ha, jami roppa-rosa 3 l bo'ladi",
+        "Ha, jami 3,1 l bo'lsa ham sig'adi"
+      ],
+      "t": 0,
+      "izoh": "Suv hajmlarini qo'shamiz: 1,25 + 0,80 = 2,05, so'ngra 2,05 + 1,05 = 3,10. Jami 3,1 l bo'ldi, bu esa bankaning 3 l sig'imidan katta. Ortiqchasi: 3,1 − 3 = 0,1 l. Javob: yo'q, 0,1 l sig'maydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshish-kontekst",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#4fd40c40"
+    },
+    {
+      "q": "Dehqon savatga 4,5 kg olma, 3,75 kg nok va 2,8 kg uzum soldi. Bo'sh savatning massasi 0,95 kg. Meva bilan savatning umumiy massasini toping.",
+      "v": [
+        "11,05 kg",
+        "12,05 kg",
+        "11,55 kg",
+        "12 kg"
+      ],
+      "t": 3,
+      "izoh": "Avval mevalarni qo'shamiz: 4,50 + 3,75 = 8,25, so'ng 8,25 + 2,80 = 11,05 kg. Endi savatning massasini qo'shamiz: 11,05 + 0,95 = 12,00. Umumiy massa roppa-rosa 12 kg chiqadi. Javob: 12 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshish-kontekst",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#03c288da"
+    },
+    {
+      "q": "Maktab oshxonasiga ertalab 15,8 kg, tushda 9,25 kg va kechqurun 7,5 kg kartoshka keltirildi. Bir kunda keltirilgan kartoshkaning umumiy massasi qancha?",
+      "v": [
+        "31,83 kg",
+        "32,55 kg",
+        "25,8 kg",
+        "32,5 kg"
+      ],
+      "t": 1,
+      "izoh": "Sonlarni ikki xonagacha tenglashtiramiz: 15,80; 9,25; 7,50. Avval 15,80 + 9,25 = 25,05 kg. Keyin 25,05 + 7,50 = 32,55 kg. Vergul ostiga vergul qo'yilmasa 15,8 osongina 15,08 ga aylanib qoladi. Javob: 32,55 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshish-kontekst",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#f59ebb50"
+    },
+    {
+      "q": "Nodira do'konga 50 ming so'm bilan bordi va 32,75 ming so'mlik xarid qildi. Kassir unga qancha qaytim berishi kerak?",
+      "v": [
+        "18,75 ming so'm",
+        "17,35 ming so'm",
+        "17,25 ming so'm",
+        "18,25 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Butun sonni o'nli kasr ko'rinishida yozamiz: 50 = 50,00. Ayirishni ustun shaklida bajaramiz: 50,00 − 32,75. Yuzdan bir va o'ndan bir xonalarida qarz olinadi, natijada 17,25 hosil bo'ladi. Tekshirish: 32,75 + 17,25 = 50. Javob: 17,25 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirish-kontekst",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#989700b2"
+    },
+    {
+      "q": "Omborxonadagi qopda 25 kg un bor edi. Undan avval 8,4 kg, keyin esa 6,75 kg un olindi. Qopda qancha un qoldi?",
+      "v": [
+        "9,85 kg",
+        "10,85 kg",
+        "10,21 kg",
+        "16,6 kg"
+      ],
+      "t": 0,
+      "izoh": "Avval olingan unning umumiy massasini topamiz: 8,40 + 6,75 = 15,15 kg. So'ngra boshlang'ich massadan ayiramiz: 25,00 − 15,15 = 9,85 kg. Tekshirish: 15,15 + 9,85 = 25. Javob: 9,85 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirish-kontekst",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#0e4c75e1"
+    },
+    {
+      "q": "Toshkentdan Samarqandgacha bo'lgan yo'l 308,4 km. Avtobus 176,85 km yurgach, dam olish uchun to'xtadi. Manzilgacha yana qancha yo'l qolgan?",
+      "v": [
+        "132,55 km",
+        "131,19 km",
+        "131,55 km",
+        "485,25 km"
+      ],
+      "t": 2,
+      "izoh": "Berilgan sonlarni bir xil xonagacha yozamiz: 308,40 va 176,85. Ustun shaklida ayiramiz: yuzdan bir xonasida 0 dan 5 ni ayirish uchun qarz olinadi (10 − 5 = 5), o'ndan bir xonasida 13 − 8 = 5, birlik xonasida qarz kerak emas: 7 − 6 = 1, o'nlik xonasida yana qarz olinadi: 10 − 7 = 3, yuzlik xonasida 2 − 1 = 1. Natija 131,55 km. Tekshirish: 176,85 + 131,55 = 308,40. Javob: 131,55 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirish-kontekst",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#3c6e1cb5"
+    },
+    {
+      "q": "Yozgi kunda havo harorati kunduzi 34,2 °C, tunda esa 19,75 °C bo'ldi. Sutkalik harorat farqini hisoblang.",
+      "v": [
+        "14,45 °C",
+        "15,45 °C",
+        "14,55 °C",
+        "53,95 °C"
+      ],
+      "t": 0,
+      "izoh": "Farq deganda kattasidan kichigi ayiriladi: 34,20 − 19,75. Yuzdan bir xonasi: 0 − 5, qarz olamiz. O'ndan bir xonasi: 1 − 7, yana qarz olamiz. Natijada 14,45 hosil bo'ladi. Tekshirish: 19,75 + 14,45 = 34,20. Javob: 14,45 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirish-kontekst",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#7ba66aca"
+    },
+    {
+      "q": "Avtomobil bakida 45,6 l benzin bor edi. Mashina har 100 km yo'lga 8,25 l sarflaydi. 200 km yurilgandan keyin bakda qancha benzin qoladi?",
+      "v": [
+        "37,35 l",
+        "29,1 l",
+        "29,5 l",
+        "16,5 l"
+      ],
+      "t": 1,
+      "izoh": "Avval 200 km ga sarflanadigan yoqilg'ini topamiz: 8,25 · 2 = 16,5 l. So'ngra bakdagi miqdordan ayiramiz: 45,60 − 16,50 = 29,10 l. Ko'p uchraydigan xato — sarfni bir marta, ya'ni faqat 8,25 l deb olish. Javob: 29,1 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirish-kontekst",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#67651447"
+    },
+    {
+      "q": "Bir dona umumiy daftarning narxi 4,75 ming so'm. Aziz shunday daftarlardan 6 tasini sotib oldi. U kassaga qancha to'lagan?",
+      "v": [
+        "2,85 ming so'm",
+        "285 ming so'm",
+        "28,05 ming so'm",
+        "28,5 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Vergulni vaqtincha e'tiborsiz qoldirib ko'paytiramiz: 475 · 6 = 2850. Ko'paytuvchilarda verguldan keyin jami 2 ta raqam bor, demak natijada ham 2 ta raqam ajratiladi: 28,50. Javob: 28,5 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "onli-kopaytirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#5c70b79e"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi gulzorning uzunligi 3,6 m, eni esa 2,5 m. Gulzorning yuzasini hisoblang.",
+      "v": [
+        "9 m²",
+        "90 m²",
+        "0,9 m²",
+        "12,2 m²"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri to'rtburchak yuzasi S = a · b formulasi bilan topiladi. Vergulsiz ko'paytiramiz: 36 · 25 = 900. Ko'paytuvchilarda verguldan keyin jami 2 ta raqam bor, shuning uchun 9,00 ajratiladi. Demak S = 9 m². Javob: 9 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "onli-kopaytirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#0949e1f0"
+    },
+    {
+      "q": "Bir litr sutning massasi 1,03 kg ga teng. Sotuvchi xaridorga 2,5 litr sut quyib berdi. Shu sutning massasi necha kilogramm bo'ladi?",
+      "v": [
+        "25,75 kg",
+        "2,075 kg",
+        "2,575 kg",
+        "3,53 kg"
+      ],
+      "t": 2,
+      "izoh": "Massa m = 1,03 · 2,5 ko'rinishida topiladi. Vergulsiz ko'paytiramiz: 103 · 25 = 2575. Ko'paytuvchilarda verguldan keyin 2 + 1 = 3 ta raqam bor, demak natijada 3 ta raqam ajratiladi: 2,575. Javob: 2,575 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onli-kopaytirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#91f2bf31"
+    },
+    {
+      "q": "Ustachi bir xil uzunlikdagi 12 ta taxta kesdi, har birining uzunligi 0,45 m. Kesilgan taxtalarning umumiy uzunligini toping.",
+      "v": [
+        "0,54 m",
+        "5,4 m",
+        "54 m",
+        "4,5 m"
+      ],
+      "t": 1,
+      "izoh": "Umumiy uzunlik L = 0,45 · 12. Vergulsiz hisoblaymiz: 45 · 12 = 540. Verguldan keyin 2 ta raqam ajratamiz: 5,40. Demak taxtalarning umumiy uzunligi 5,4 m. Javob: 5,4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "onli-kopaytirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#7c2e6f49"
+    },
+    {
+      "q": "Ishchi kuniga 7,5 soat ishlaydi va bir soat mehnati uchun 23,6 ming so'm oladi. Uning 5 kunlik ish haqi qancha bo'ladi?",
+      "v": [
+        "177 ming so'm",
+        "8850 ming so'm",
+        "118 ming so'm",
+        "885 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Avval bir kunlik haqni topamiz: 23,6 · 7,5. Buni ikkiga ajratib hisoblash qulay: 23,6 · 7 = 165,2 va 23,6 · 0,5 = 11,8, yig'indisi 177 ming so'm. Endi besh kun uchun: 177 · 5 = 885 ming so'm. Javob: 885 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "onli-kopaytirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#c8b30e94"
+    },
+    {
+      "q": "Omborda 7,2 kg shakar bor. Uni har biriga 0,4 kg dan solib paketlarga joylashtirildi. Nechta paket to'ldi?",
+      "v": [
+        "18 ta",
+        "1,8 ta",
+        "180 ta",
+        "2,88 ta"
+      ],
+      "t": 0,
+      "izoh": "Paketlar soni 7,2 : 0,4 amali bilan topiladi. Bo'luvchidagi vergulni yo'qotish uchun ikkala sonni 10 ga ko'paytiramiz: 72 : 4 = 18. Tekshirish: 0,4 · 18 = 7,2. Javob: 18 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "onli-bolish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#0dc2a107"
+    },
+    {
+      "q": "Poyezd 4,5 soat davomida to'xtamasdan 261 km yo'l bosdi. Uning shu yo'ldagi o'rtacha tezligini toping.",
+      "v": [
+        "580 km/soat",
+        "5,8 km/soat",
+        "58 km/soat",
+        "1174,5 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Tezlik v = S : t formulasi bilan topiladi, ya'ni 261 : 4,5. Ikkala sonni 10 ga ko'paytiramiz: 2610 : 45 = 58. Tekshirish: 58 · 4,5 = 261. Javob: 58 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onli-bolish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#2899a3eb"
+    },
+    {
+      "q": "Bolalar bog'chasiga keltirilgan 12,5 litr sut sig'imi 0,25 litr bo'lgan stakanlarga quyildi. Nechta stakan to'ldi?",
+      "v": [
+        "5 ta",
+        "50 ta",
+        "500 ta",
+        "25 ta"
+      ],
+      "t": 1,
+      "izoh": "Stakanlar soni 12,5 : 0,25 ga teng. Bo'luvchida verguldan keyin 2 ta raqam bor, shuning uchun ikkala sonni 100 ga ko'paytiramiz: 1250 : 25 = 50. Tekshirish: 0,25 · 50 = 12,5. Javob: 50 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onli-bolish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#8a9ec174"
+    },
+    {
+      "q": "8,64 sonini 1,2 ga bo'lish uchun vergul qanday ko'chiriladi va natija nechaga teng bo'ladi?",
+      "v": [
+        "Ikkala son ham 10 ga ko'paytiriladi, natija 7,2",
+        "Faqat bo'luvchi 10 ga ko'paytiriladi, natija 0,72",
+        "Faqat bo'linuvchi 10 ga ko'paytiriladi, natija 72",
+        "Ikkala son 100 ga ko'paytiriladi, natija 0,072"
+      ],
+      "t": 0,
+      "izoh": "Bo'luvchi 1,2 da verguldan keyin bitta raqam bor, shuning uchun ikkala songa ham bir xil ko'paytiruvchi qo'llanadi: 86,4 : 12. Faqat bittasini o'zgartirish bo'linmani buzadi. 86,4 : 12 = 7,2. Tekshirish: 1,2 · 7,2 = 8,64. Javob: ikkala son 10 ga ko'paytiriladi, natija 7,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolishda-vergul-kochirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#8fdbbcf8"
+    },
+    {
+      "q": "Fermer 46,8 tonna bug'doyni sig'imi 3,9 tonna bo'lgan yuk mashinalarida tashimoqchi. Butun hosilni tashish uchun nechta mashina kerak bo'ladi?",
+      "v": [
+        "120 ta",
+        "1,2 ta",
+        "182,52 ta",
+        "12 ta"
+      ],
+      "t": 3,
+      "izoh": "Mashinalar soni 46,8 : 3,9 ga teng. Vergulni yo'qotamiz: 468 : 39 = 12. Tekshirish: 3,9 · 12 = 46,8, ya'ni hosil qoldiqsiz taqsimlanadi. Javob: 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onli-bolish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#4f094336"
+    },
+    {
+      "q": "Dastur 3,478 sonini 100 ga ko'paytirdi va natijani ekranga chiqardi. Ekranda qanday son paydo bo'ladi?",
+      "v": [
+        "34,78",
+        "3478",
+        "347,8",
+        "0,03478"
+      ],
+      "t": 2,
+      "izoh": "O'nli kasrni 100 ga ko'paytirganda vergul o'ngga ikki xona ko'chiriladi, chunki 100 da ikkita nol bor. 3,478 dagi vergulni ikki xona o'ngga surilsak 347,8 hosil bo'ladi. Javob: 347,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "on-darajasiga-kopaytirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#8edaea1f"
+    },
+    {
+      "q": "Bitta mixning massasi 0,015 kg. Qutida shunday mixlardan 1000 ta bo'lsa, ularning umumiy massasi necha kilogramm bo'ladi?",
+      "v": [
+        "1,5 kg",
+        "15 kg",
+        "150 kg",
+        "0,15 kg"
+      ],
+      "t": 1,
+      "izoh": "1000 ga ko'paytirganda vergul o'ngga uch xona ko'chiriladi. 0,015 sonida verguldan keyin uchta raqam bor, demak vergul butunlay yo'qoladi va 15 hosil bo'ladi. Javob: 15 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "on-darajasiga-kopaytirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#0a08c92c"
+    },
+    {
+      "q": "Laboratoriyada birinchi namunaning massasi 0,7 g, ikkinchisiniki esa 700 g. Ikkinchi namuna birinchisidan necha marta og'ir?",
+      "v": [
+        "100 marta",
+        "10 marta",
+        "700 marta",
+        "1000 marta"
+      ],
+      "t": 3,
+      "izoh": "Necha marta og'irligini bilish uchun katta massani kichigiga bo'lamiz: 700 : 0,7. Ikkala sonni 10 ga ko'paytiramiz: 7000 : 7 = 1000. Tekshirish: 0,7 · 1000 = 700. Javob: 1000 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "on-darajasiga-kopaytirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#99efb5e5"
+    },
+    {
+      "q": "Tabiiy asalning bir kilogrammi 92,5 ming so'm turadi. Xaridor 10 kg asal olmoqchi. U necha ming so'm to'laydi?",
+      "v": [
+        "925 ming so'm",
+        "92,5 ming so'm",
+        "9250 ming so'm",
+        "102,5 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "10 ga ko'paytirganda vergul o'ngga bir xona ko'chiriladi: 92,5 · 10 = 925. Ba'zi o'quvchilar ko'paytirish o'rniga qo'shib yuboradi va 92,5 + 10 = 102,5 deb xato qiladi. Javob: 925 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "on-darajasiga-kopaytirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#9c682fa8"
+    },
+    {
+      "q": "0,0426 sonini avval 1000 ga, so'ngra hosil bo'lgan natijani yana 10 ga ko'paytirdik. Oxirgi natijani toping.",
+      "v": [
+        "42,6",
+        "4260",
+        "426",
+        "4,26"
+      ],
+      "t": 2,
+      "izoh": "Birinchi qadam: 1000 ga ko'paytirganda vergul o'ngga uch xona ko'chadi, 0,0426 · 1000 = 42,6. Ikkinchi qadam: 10 ga ko'paytirganda vergul yana bir xona o'ngga ko'chadi, 42,6 · 10 = 426. Umuman olganda son 10 000 marta, ya'ni vergul jami to'rt xona o'ngga ko'chdi. Javob: 426.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "on-darajasiga-kopaytirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#052fec16"
+    },
+    {
+      "q": "48,6 sonini 100 ga bo'lganda hosil bo'ladigan natijani ko'rsating.",
+      "v": [
+        "4,86",
+        "0,486",
+        "0,0486",
+        "4860"
+      ],
+      "t": 1,
+      "izoh": "100 ga bo'lganda vergul chapga ikki xona ko'chiriladi. 48,6 sonida vergulni ikki xona chapga ko'chirsak, butun qismda raqam qolmaydi va bo'sh o'ringa nol yoziladi: 0,486. Javob: 0,486.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "on-darajasiga-bolish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#72c86070"
+    },
+    {
+      "q": "Zavod 1000 ta bir xil detal tayyorladi, ularning umumiy massasi 372,5 kg bo'ldi. Bitta detalning massasi qancha?",
+      "v": [
+        "3,725 kg",
+        "0,03725 kg",
+        "37,25 kg",
+        "0,3725 kg"
+      ],
+      "t": 3,
+      "izoh": "Bitta detalning massasi 372,5 : 1000 ga teng. 1000 ga bo'lganda vergul chapga uch xona ko'chiriladi: 372,5 dan 0,3725 hosil bo'ladi. Tekshirish: 0,3725 · 1000 = 372,5. Javob: 0,3725 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "on-darajasiga-bolish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#59280103"
+    },
+    {
+      "q": "Umumiy qiymati 9,4 million so'm bo'lgan tovar 1000 ta bir xil qutiga teng taqsimlandi. Bitta quti necha million so'mga to'g'ri keladi?",
+      "v": [
+        "0,0094 million so'm",
+        "0,094 million so'm",
+        "0,00094 million so'm",
+        "9400 million so'm"
+      ],
+      "t": 0,
+      "izoh": "Bitta qutining qiymati 9,4 : 1000 ga teng. 1000 ga bo'lganda vergul chapga uch xona ko'chiriladi, bo'sh o'rinlarga nol yoziladi: 9,4 dan 0,0094 hosil bo'ladi. Tekshirish: 0,0094 · 1000 = 9,4. Javob: 0,0094 million so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "on-darajasiga-bolish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#3f249f12"
+    },
+    {
+      "q": "Bir gektar yerdan 5,8 tonna paxta hosili olindi. Bir ar yer gektarning yuzdan bir qismi. Bir ardan qancha hosil olingan?",
+      "v": [
+        "0,58 t",
+        "0,0058 t",
+        "0,058 t",
+        "580 t"
+      ],
+      "t": 2,
+      "izoh": "Bir ar gektarning yuzdan bir qismi bo'lgani uchun hosilni 100 ga bo'lamiz: 5,8 : 100. Vergul chapga ikki xona ko'chiriladi va 0,058 hosil bo'ladi. Tekshirish: 0,058 · 100 = 5,8. Javob: 0,058 t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "on-darajasiga-bolish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#c9e2b778"
+    },
+    {
+      "q": "Qandaydir son avval 10 ga bo'lindi, so'ngra natija 100 ga ko'paytirildi va oxirida 6,3 hosil bo'ldi. Dastlabki sonni toping.",
+      "v": [
+        "0,063",
+        "0,63",
+        "63",
+        "630"
+      ],
+      "t": 1,
+      "izoh": "Ikki amalni birlashtiramiz: songa 100 ni ko'paytirib, 10 ga bo'lish uni 10 marta orttiradi. Demak 10 · x = 6,3. Bundan x = 6,3 : 10 = 0,63. Tekshirish: 0,63 : 10 = 0,063, keyin 0,063 · 100 = 6,3. Javob: 0,63.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "on-darajasiga-bolish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#d1d2628b"
+    },
+    {
+      "q": "Sportchining tibbiy kartasida bo'yi 1,78 m deb yozilgan. Shifokor bu qiymatni santimetrda yozib qo'ymoqchi. U qanday son yozadi?",
+      "v": [
+        "17,8 sm",
+        "1780 sm",
+        "0,178 sm",
+        "178 sm"
+      ],
+      "t": 3,
+      "izoh": "Bir metrda 100 sm bor, shuning uchun metrni santimetrga aylantirishda son 100 ga ko'paytiriladi. Vergul o'ngga ikki xona ko'chadi: 1,78 · 100 = 178. Javob: 178 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-aylantirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#43a27080"
+    },
+    {
+      "q": "Shifokor bemorga bir martada 0,25 g dori ichishni tayinladi. Dorixonadagi tabletkalarda doza milligrammda ko'rsatilgan. Bu doza necha milligrammga teng?",
+      "v": [
+        "250 mg",
+        "25 mg",
+        "2500 mg",
+        "0,00025 mg"
+      ],
+      "t": 0,
+      "izoh": "Bir grammda 1000 mg bor, demak grammni milligrammga aylantirish uchun 1000 ga ko'paytiramiz. Vergul o'ngga uch xona ko'chadi: 0,25 · 1000 = 250. Javob: 250 mg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-aylantirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#af215e5a"
+    },
+    {
+      "q": "Hovlidagi suv bakining hajmi 3,5 m³. Suv hisoblagichi esa faqat litrda o'lchaydi. Bak to'la bo'lsa, hisoblagich necha litr ko'rsatadi?",
+      "v": [
+        "350 l",
+        "35 000 l",
+        "3500 l",
+        "0,0035 l"
+      ],
+      "t": 2,
+      "izoh": "Bir kub metr 1000 litrga teng. Shuning uchun 3,5 m³ ni litrga aylantirish uchun 1000 ga ko'paytiramiz: 3,5 · 1000 = 3500. Vergul o'ngga uch xona ko'chdi. Javob: 3500 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-aylantirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#3456b16d"
+    },
+    {
+      "q": "Ko'prikdan massasi 5000 kg dan ortiq bo'lgan transport o'tishi taqiqlangan. Yuk mashinasining yuk bilan massasi 4,85 t. Mashina ko'prikdan o'ta oladimi?",
+      "v": [
+        "Yo'q, massasi 48 500 kg va chegaradan oshadi",
+        "Ha, massasi 4850 kg, ya'ni 150 kg zaxira bor",
+        "Ha, massasi 485 kg, chegaradan ancha kam",
+        "Ha, massasi 4,85 kg, juda yengil"
+      ],
+      "t": 1,
+      "izoh": "Tonnani kilogrammga aylantiramiz: bir tonna 1000 kg, demak 4,85 · 1000 = 4850 kg. Endi taqqoslaymiz: 4850 < 5000, ya'ni chegaradan oshmaydi. Zaxira: 5000 − 4850 = 150 kg. Javob: ha, massasi 4850 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-aylantirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#c32ff186"
+    },
+    {
+      "q": "Uzunligi 0,08 km bo'lgan sim bo'lagidan har biri 4 m dan bo'lgan qismlar kesib olinmoqchi. Nechta qism chiqadi?",
+      "v": [
+        "200 ta",
+        "2 ta",
+        "0,02 ta",
+        "20 ta"
+      ],
+      "t": 3,
+      "izoh": "Avval kilometrni metrga aylantiramiz: bir kilometrda 1000 m bor, demak 0,08 · 1000 = 80 m. Endi qismlar sonini topamiz: 80 : 4 = 20. Birlikni aylantirmasdan bo'lish eng ko'p uchraydigan xato. Javob: 20 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-aylantirish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#ae3f29ac"
+    },
+    {
+      "q": "O'quvchi masalaga 3/4 deb javob berdi, o'qituvchi esa javobni o'nli kasr ko'rinishida yozishni so'radi. To'g'ri yozuvni tanlang.",
+      "v": [
+        "0,75",
+        "0,34",
+        "1,33",
+        "0,075"
+      ],
+      "t": 0,
+      "izoh": "Oddiy kasrni o'nli kasrga aylantirish uchun suratni maxrajga bo'lamiz: 3 : 4. Bo'lish natijasi 0,75 ga teng. Tekshirish: 0,75 · 4 = 3. Surat va maxrajni ketma-ket yozib qo'yish tipik xato hisoblanadi. Javob: 0,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oddiy-kasrni-onliga",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#8e05bd1e"
+    },
+    {
+      "q": "Sinfdagi 25 o'quvchidan 7 tasi shaxmat to'garagiga qatnaydi. Qatnashuvchilarning ulushini o'nli kasr ko'rinishida ifodalang.",
+      "v": [
+        "2,8",
+        "0,028",
+        "0,28",
+        "3,57"
+      ],
+      "t": 2,
+      "izoh": "Ulush 7/25 kasri bilan ifodalanadi. Maxrajni 100 ga to'ldiramiz: 7/25 = 28/100, chunki surat va maxraj 4 ga ko'paytirildi. 28/100 esa o'nli kasrda 0,28 deb yoziladi. Javob: 0,28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oddiy-kasrni-onliga",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#30d8a909"
+    },
+    {
+      "q": "Ustachi devorning 7/8 qismini bo'yab bo'ldi. Bajarilgan ishning ulushini o'nli kasr ko'rinishida qanday yozish mumkin?",
+      "v": [
+        "0,78",
+        "0,875",
+        "8,75",
+        "0,0875"
+      ],
+      "t": 1,
+      "izoh": "Suratni maxrajga bo'lamiz: 7 : 8. Bo'lishda 7,000 : 8 = 0,875 hosil bo'ladi. Boshqacha yo'l: 7/8 = 875/1000, chunki surat va maxrajni 125 ga ko'paytirdik. Javob: 0,875.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oddiy-kasrni-onliga",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#c4442001"
+    },
+    {
+      "q": "Ali 1/3 kasrini kalkulyatorga kiritdi va ekranda 0,3333333 chiqdi. Shu natija haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "1/3 aynan 0,3333333 ga teng",
+        "1/3 = 0,3 ga teng, qolgan raqamlar dastur xatosi",
+        "1/3 ni yaxlitlab 0,34 deb yozish kerak",
+        "1/3 cheksiz davriy o'nli kasr, ekrandagi son uning taqribiy qiymati"
+      ],
+      "t": 3,
+      "izoh": "3 ni maxrajdan yo'qotish uchun uni 10 ning darajasiga ko'paytirib bo'lmaydi, chunki 10 ning tub bo'luvchilari faqat 2 va 5. Shuning uchun 1 : 3 bo'lish hech qachon tugamaydi va 0,333… davriy kasri hosil bo'ladi. Kalkulyator ekrani cheklangan, u faqat taqribiy qiymatni ko'rsatadi. Javob: 1/3 cheksiz davriy kasr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oddiy-kasrni-onliga",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#24867ef9"
+    },
+    {
+      "q": "Quyidagi kasrlardan qaysi biri chekli o'nli kasrga aylanadi: 9/40, 5/12, 7/15, 4/21?",
+      "v": [
+        "9/40",
+        "5/12",
+        "7/15",
+        "4/21"
+      ],
+      "t": 0,
+      "izoh": "Qisqarmas kasr chekli o'nli kasrga aylanishi uchun uning maxrajida 2 va 5 dan boshqa tub ko'paytuvchi bo'lmasligi kerak. Maxrajlarni yoyamiz: 40 = 2³ · 5 — mos keladi; 12 = 2² · 3, 15 = 3 · 5, 21 = 3 · 7 — hammasida 3 bor. Demak faqat 9/40 = 0,225 chekli. Javob: 9/40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chekli-yoki-davriy-kasr",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#5ab173c0"
+    },
+    {
+      "q": "Anor sharbati konsentratining tarkibidagi qandning ulushi 0,35 ga teng. Shu ulushni qisqarmas oddiy kasr ko'rinishida yozing.",
+      "v": [
+        "7/25",
+        "35/10",
+        "7/20",
+        "35/1000"
+      ],
+      "t": 2,
+      "izoh": "0,35 sonida verguldan keyin ikkita raqam bor, demak maxraj 100 bo'ladi: 0,35 = 35/100. Endi surat va maxrajni ularning eng katta umumiy bo'luvchisi 5 ga bo'lamiz: 35 : 5 = 7 va 100 : 5 = 20. Natija 7/20. Javob: 7/20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "onlini-oddiy-kasrga",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#9fb0ef33"
+    },
+    {
+      "q": "Bir dona vintning massasi 0,125 kg. Shu massani qisqartirilgan oddiy kasr ko'rinishida ifodalang.",
+      "v": [
+        "125/100",
+        "1/8",
+        "1/4",
+        "12/5"
+      ],
+      "t": 1,
+      "izoh": "Verguldan keyin uchta raqam bo'lgani uchun maxraj 1000 bo'ladi: 0,125 = 125/1000. Surat va maxrajni 125 ga bo'lamiz: 125 : 125 = 1, 1000 : 125 = 8. Natija 1/8. Tekshirish: 1 : 8 = 0,125. Javob: 1/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onlini-oddiy-kasrga",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#a5d478d7"
+    },
+    {
+      "q": "Do'kon mahsulot narxini uning 0,4 qismiga tushirdi. Bu ulushni oddiy kasr ko'rinishida qanday yozish mumkin?",
+      "v": [
+        "4/100",
+        "1/4",
+        "4/5",
+        "2/5"
+      ],
+      "t": 3,
+      "izoh": "Verguldan keyin bitta raqam bor, shuning uchun maxraj 10 bo'ladi: 0,4 = 4/10. Surat va maxrajni 2 ga qisqartiramiz: 4 : 2 = 2, 10 : 2 = 5. Natija 2/5. 0,4 ni 1/4 bilan chalkashtirish tipik xato, chunki 1/4 = 0,25. Javob: 2/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "onlini-oddiy-kasrga",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#04cf62b8"
+    },
+    {
+      "q": "Bir bo'lak matoning uzunligi 2,75 m. Shu uzunlikni noto'g'ri oddiy kasr ko'rinishida yozing.",
+      "v": [
+        "11/4",
+        "275/10",
+        "27/5",
+        "11/40"
+      ],
+      "t": 0,
+      "izoh": "Butun va kasr qismini ajratamiz: 2,75 = 2 + 0,75. Bunda 0,75 = 75/100 = 3/4. Demak 2,75 = 2 butun 3/4, uni noto'g'ri kasrga aylantiramiz: (2 · 4 + 3)/4 = 11/4. Tekshirish: 11 : 4 = 2,75. Javob: 11/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "onlini-oddiy-kasrga",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#afec47bd"
+    },
+    {
+      "q": "0,08 va 0,8 sonlarini qisqarmas oddiy kasrga aylantirib, qaysi biri kattaroq ekanini aniqlagan javobni tanlang.",
+      "v": [
+        "0,08 = 2/25, 0,8 = 4/5 va 2/25 kattaroq",
+        "0,08 = 4/5, 0,8 = 2/25 va 4/5 kattaroq",
+        "0,08 = 2/25, 0,8 = 4/5 va 4/5 kattaroq",
+        "0,08 = 1/8, 0,8 = 4/5 va 4/5 kattaroq"
+      ],
+      "t": 2,
+      "izoh": "Birinchi son: 0,08 = 8/100, surat va maxrajni 4 ga qisqartiramiz — 2/25. Ikkinchi son: 0,8 = 8/10, ikkalasini 2 ga qisqartiramiz — 4/5. Taqqoslash uchun 2/25 = 0,08 va 4/5 = 0,80, demak 4/5 kattaroq. Javob: 4/5 kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "onlini-oddiy-kasrga",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#d923ef4f"
+    },
+    {
+      "q": "2,5 + 1,2 · 3 ifodaning qiymatini amallar tartibiga rioya qilib hisoblang.",
+      "v": [
+        "11,1",
+        "6,1",
+        "6,7",
+        "7,5"
+      ],
+      "t": 1,
+      "izoh": "Qavs bo'lmagan ifodada avval ko'paytirish bajariladi: 1,2 · 3 = 3,6. So'ngra qo'shamiz: 2,5 + 3,6 = 6,1. Chapdan o'ngga hisoblab yuborish, ya'ni avval 2,5 + 1,2 = 3,7 deb olish tipik xato. Javob: 6,1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralash-ifoda-tartibi",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#25178409"
+    },
+    {
+      "q": "(4,8 − 1,3) : 0,7 ifodaning qiymatini toping.",
+      "v": [
+        "0,5",
+        "50",
+        "2,94",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Avval qavs ichidagi ayirish bajariladi: 4,8 − 1,3 = 3,5. Keyin bo'lamiz: 3,5 : 0,7. Ikkala sonni 10 ga ko'paytiramiz: 35 : 7 = 5. Qavsni e'tiborsiz qoldirish natijani butunlay o'zgartiradi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-ifoda-tartibi",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#2e87184a"
+    },
+    {
+      "q": "Anvar 3 ta ruchkani 2,4 ming so'mdan va 2 ta o'chirg'ichni 1,75 ming so'mdan sotib oldi. U jami qancha to'lagan?",
+      "v": [
+        "10,7 ming so'm",
+        "4,15 ming so'm",
+        "8,95 ming so'm",
+        "9,7 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "Ifodani tuzamiz: 3 · 2,4 + 2 · 1,75. Amallar tartibiga ko'ra avval ko'paytmalarni hisoblaymiz: 3 · 2,4 = 7,2 va 2 · 1,75 = 3,5. So'ngra qo'shamiz: 7,2 + 3,5 = 10,7. Javob: 10,7 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-ifoda-tartibi",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#61ddfb47"
+    },
+    {
+      "q": "0,6 · (2,5 + 1,5) − 0,4 ifodaning qiymati nechaga teng?",
+      "v": [
+        "2,6",
+        "2,16",
+        "2",
+        "2,4"
+      ],
+      "t": 2,
+      "izoh": "Birinchi navbatda qavs ichi hisoblanadi: 2,5 + 1,5 = 4. Keyin ko'paytirish: 0,6 · 4 = 2,4. Oxirida ayirish: 2,4 − 0,4 = 2. Qavsni tashlab yuborish yoki oxirgi qadamni unutish eng ko'p uchraydigan xatolar. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-ifoda-tartibi",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#d70fafe3"
+    },
+    {
+      "q": "Quyidagi ifodaning qiymatini toping: 1,2 · 0,5 + 3 : 0,4 − 2,1",
+      "v": [
+        "6,9",
+        "6",
+        "8,1",
+        "−0,75"
+      ],
+      "t": 1,
+      "izoh": "Avval ko'paytirish va bo'lish bajariladi: 1,2 · 0,5 = 0,6 hamda 3 : 0,4 = 30 : 4 = 7,5. So'ngra chapdan o'ngga qo'shish va ayirish: 0,6 + 7,5 = 8,1, keyin 8,1 − 2,1 = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-ifoda-tartibi",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#c4fed291"
+    },
+    {
+      "q": "Berilgan kasrlardan qaysi biri o'nli kasrga aylantirilganda cheksiz davriy kasr beradi: 3/16, 11/50, 13/25, 5/6?",
+      "v": [
+        "3/16",
+        "11/50",
+        "13/25",
+        "5/6"
+      ],
+      "t": 3,
+      "izoh": "Qisqarmas kasr chekli o'nli kasr beradi, agar maxrajida faqat 2 va 5 tub ko'paytuvchilari bo'lsa. Tekshiramiz: 16 = 2⁴, 50 = 2 · 5², 25 = 5² — uchalasi ham chekli kasr beradi. 6 = 2 · 3 maxrajida 3 bor, shuning uchun 5 : 6 = 0,8333… davriy kasr. Javob: 5/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chekli-yoki-davriy-kasr",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#12a19005"
+    },
+    {
+      "q": "Bidonning avval 1/4 qismi, so'ngra yana 0,35 qismi suv bilan to'ldirildi. Bidonning qancha qismi to'lgan?",
+      "v": [
+        "0,6",
+        "0,75",
+        "0,49",
+        "1,35"
+      ],
+      "t": 0,
+      "izoh": "Bir xil ko'rinishga keltiramiz: 1/4 = 1 : 4 = 0,25. Endi o'nli kasrlarni qo'shamiz: 0,25 + 0,35 = 0,60. Demak bidonning 0,6 qismi to'lgan. 1/4 ni 0,4 deb olish tipik xato. Javob: 0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-onli-aralash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#b2da4c3e"
+    },
+    {
+      "q": "Sardor bir g'aram pichanning 0,8 qismini, Kamol esa xuddi shunday ikkinchi g'aramning 2/5 qismini tashidi. Sardor Kamoldan qancha qismga ko'p tashigan?",
+      "v": [
+        "0,6",
+        "0,55",
+        "0,4",
+        "0,78"
+      ],
+      "t": 2,
+      "izoh": "Kamolning ulushini o'nli kasrga aylantiramiz: 2/5 = 4/10 = 0,4. Endi ayiramiz: 0,8 − 0,4 = 0,4. Demak Sardor 0,4 qismga ko'p ish bajargan. 2/5 ni 0,25 yoki 0,2 deb olish xatoga olib keladi. Javob: 0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-onli-aralash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#9a8d2b86"
+    },
+    {
+      "q": "Bezak lentasining bir metri 2,5 ming so'm turadi. Sotuvchi xaridorga metrning 3/5 qismini kesib berdi. Xarid qancha turgan?",
+      "v": [
+        "7,5 ming so'm",
+        "1,5 ming so'm",
+        "0,875 ming so'm",
+        "0,5 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Avval kasrni o'nli kasrga aylantiramiz: 3/5 = 6/10 = 0,6. Endi narxni topamiz: 0,6 · 2,5. Vergulsiz ko'paytiramiz: 6 · 25 = 150, verguldan keyin ikkita raqam ajratamiz — 1,50. Maxrajni unutib 3 · 2,5 deb hisoblash tipik xato. Javob: 1,5 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-onli-aralash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#b3487349"
+    },
+    {
+      "q": "1/8; 0,15; 3/20 va 0,125 sonlari berilgan. Ular orasidagi teng juftliklarni to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "1/8 = 0,15 va 0,125 = 3/20",
+        "Faqat 3/20 va 0,125 o'zaro teng",
+        "To'rttasi ham o'zaro teng",
+        "1/8 = 0,125 va 0,15 = 3/20"
+      ],
+      "t": 3,
+      "izoh": "Har bir oddiy kasrni o'nli kasrga aylantiramiz: 1/8 = 1 : 8 = 0,125 va 3/20 = 15/100 = 0,15. Endi juftlarni ajratamiz: 1/8 bilan 0,125 teng, 3/20 bilan 0,15 teng. Qolgan taqqoslashlar noto'g'ri. Javob: 1/8 = 0,125 va 0,15 = 3/20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-onli-aralash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#d38cdc94"
+    },
+    {
+      "q": "Elektron tarozi mahsulot massasini 7,458 kg deb ko'rsatdi. Sotuvchi bu qiymatni yuzdan bir kilogrammgacha yaxlitlaydi. U qanday son yozadi?",
+      "v": [
+        "7,46",
+        "7,45",
+        "7,5",
+        "7,4"
+      ],
+      "t": 0,
+      "izoh": "Yuzdan bir xonasigacha yaxlitlash uchun undan keyingi raqamga qaraymiz. 7,458 sonida yuzdan bir xonasida 5, undan keyin esa 8 turibdi. 8 > 5 bo'lgani uchun yuzdan bir xonasi bittaga oshadi: 5 dan 6 bo'ladi. Natija 7,46. Javob: 7,46.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yaxlitlash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#d714e513"
+    },
+    {
+      "q": "Avtomobil 100 km yo'lga 8,647 litr yoqilg'i sarfladi. Bu sarfni o'ndan bir litrgacha yaxlitlangan holda ko'rsating.",
+      "v": [
+        "8,7",
+        "8,65",
+        "8,6",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "O'ndan bir xonasigacha yaxlitlaganda undan keyingi raqamga qaraymiz. 8,647 sonida o'ndan bir xonasida 6, undan keyin 4 turibdi. 4 < 5 bo'lgani uchun o'ndan bir xonasi o'zgarmaydi, qolgan raqamlar tashlanadi. Natija 8,6. Javob: 8,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yaxlitlash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#e82b96ba"
+    },
+    {
+      "q": "Bir oyda sarflangan elektr energiya 23,96 kVt·soatni tashkil qildi. Hisobchi bu qiymatni butungacha yaxlitlaydi. Qanday son hosil bo'ladi?",
+      "v": [
+        "23",
+        "24",
+        "23,9",
+        "20"
+      ],
+      "t": 1,
+      "izoh": "Butungacha yaxlitlashda o'ndan bir xonasidagi raqamga qaraymiz — u 9 ga teng. 9 > 5 bo'lgani uchun butun qismi bittaga oshadi: 23 dan 24 bo'ladi. Kasr qismini shunchaki tashlab yuborish tipik xato. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yaxlitlash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#d1cbb426"
+    },
+    {
+      "q": "Berilgan sonlardan qaysi biri o'ndan bir birlikgacha yaxlitlanganda 4,3 hosil bo'lmaydi: 4,25; 4,34; 4,251; 4,36?",
+      "v": [
+        "4,25",
+        "4,34",
+        "4,251",
+        "4,36"
+      ],
+      "t": 3,
+      "izoh": "Har birini o'ndan bir xonasigacha yaxlitlaymiz. 4,25 da keyingi raqam 5, demak 4,3. 4,34 da keyingi raqam 4, demak 4,3. 4,251 da ham keyingi raqam 5, demak 4,3. 4,36 da esa keyingi raqam 6, shuning uchun 4,4 hosil bo'ladi. Javob: 4,36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yaxlitlash",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#27d59012"
+    },
+    {
+      "q": "O'lchov asbobi ekranida 5,3847 qiymati chiqdi. Shu sonning mingdan bir xonasida turgan raqamni ko'rsating.",
+      "v": [
+        "4",
+        "8",
+        "7",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Verguldan keyingi xonalar tartibi: birinchisi o'ndan bir, ikkinchisi yuzdan bir, uchinchisi mingdan bir, to'rtinchisi o'n mingdan bir. 5,3847 sonida bu raqamlar mos ravishda 3, 8, 4 va 7. Demak mingdan bir xonasida 4 turibdi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xona-qiymati",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#a3946f7e"
+    },
+    {
+      "q": "O'qituvchi doskaga 0,6 sonini yozdi va undagi 6 raqami nimani bildirishini so'radi. To'g'ri javobni tanlang.",
+      "v": [
+        "6 ta yuzdan bir",
+        "6 ta o'nlik",
+        "6 ta o'ndan bir",
+        "6 ta birlik"
+      ],
+      "t": 2,
+      "izoh": "Verguldan keyingi birinchi xona o'ndan birlar xonasi deb ataladi. 0,6 sonida butun qismi nol, o'ndan bir xonasida esa 6 turibdi. Demak bu son 6/10 ga, ya'ni 6 ta o'ndan birga teng. Javob: 6 ta o'ndan bir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xona-qiymati",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#cde84c2d"
+    },
+    {
+      "q": "Quyidagi sonlardan qaysi birida yuzdan bir xonasida 9 raqami turadi: 3,904; 3,092; 3,940; 9,304?",
+      "v": [
+        "3,904",
+        "3,092",
+        "3,940",
+        "9,304"
+      ],
+      "t": 1,
+      "izoh": "Yuzdan bir xonasi — verguldan keyingi ikkinchi raqam. 3,904 da bu 0, 3,092 da 9, 3,940 da 4, 9,304 da esa 0. Demak shart faqat 3,092 sonida bajariladi. 3,904 dagi 9 o'ndan bir xonasida turibdi. Javob: 3,092.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xona-qiymati",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#9761707a"
+    },
+    {
+      "q": "6,205 sonini xona qo'shiluvchilariga yoyilgan to'g'ri yozuvni tanlang.",
+      "v": [
+        "6 + 0,2 + 0,05",
+        "6 + 2 + 5",
+        "6 + 0,02 + 0,005",
+        "6 + 0,2 + 0,005"
+      ],
+      "t": 3,
+      "izoh": "Sonni xonalarga ajratamiz: butun qismi 6, o'ndan bir xonasida 2, yuzdan bir xonasida 0, mingdan bir xonasida 5. Demak 6,205 = 6 + 2/10 + 0/100 + 5/1000, ya'ni 6 + 0,2 + 0,005. Nolli xona yozuvda tashlab ketiladi, lekin o'rni saqlanadi. Javob: 6 + 0,2 + 0,005.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xona-qiymati",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#574292d6"
+    },
+    {
+      "q": "Uch kun davomida tushgan yog'ingarchilik 4,2 mm, 6,5 mm va 3,1 mm bo'ldi. Kunlik o'rtacha yog'ingarchilikni hisoblang.",
+      "v": [
+        "4,6 mm",
+        "13,8 mm",
+        "4,5 mm",
+        "6,9 mm"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha qiymat yig'indini qo'shiluvchilar soniga bo'lish orqali topiladi. Avval yig'indi: 4,2 + 6,5 = 10,7, so'ng 10,7 + 3,1 = 13,8. Endi bo'lamiz: 13,8 : 3 = 4,6. Javob: 4,6 mm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-qiymat",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#ae357ed7"
+    },
+    {
+      "q": "O'quvchi to'rtta nazorat ishidan 8,5; 7,2; 9,4 va 6,9 ball oldi. Uning o'rtacha ballini toping.",
+      "v": [
+        "32",
+        "10,67",
+        "8",
+        "6,4"
+      ],
+      "t": 2,
+      "izoh": "Ballarni qo'shamiz: 8,5 + 7,2 = 15,7, keyin 15,7 + 9,4 = 25,1 va 25,1 + 6,9 = 32. Nazorat ishlari to'rtta, shuning uchun 32 : 4 = 8. Yig'indini javob deb olish yoki noto'g'ri songa bo'lish tipik xato. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-qiymat",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#3b15bd2c"
+    },
+    {
+      "q": "Beshta qopning o'rtacha massasi 12,6 kg. To'rttasining massasi 11,5 kg; 13,2 kg; 12,8 kg va 12,1 kg. Beshinchi qopning massasini toping.",
+      "v": [
+        "12,6 kg",
+        "13,4 kg",
+        "49,6 kg",
+        "12,4 kg"
+      ],
+      "t": 1,
+      "izoh": "O'rtacha massadan umumiy massani topamiz: 12,6 · 5 = 63 kg. To'rtta qopning massasini qo'shamiz: 11,5 + 13,2 = 24,7, keyin 24,7 + 12,8 = 37,5 va 37,5 + 12,1 = 49,6 kg. Beshinchisi: 63 − 49,6 = 13,4 kg. Javob: 13,4 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-qiymat",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#cf3f9337"
+    },
+    {
+      "q": "Dilshod bir hafta davomida har kuni o'rtacha 2,4 litr suv ichdi. U bir haftada jami qancha suv ichgan?",
+      "v": [
+        "14,4 l",
+        "0,34 l",
+        "168 l",
+        "16,8 l"
+      ],
+      "t": 3,
+      "izoh": "Haftada 7 kun bor, shuning uchun umumiy hajm 2,4 · 7 ga teng. Vergulsiz ko'paytiramiz: 24 · 7 = 168, so'ng verguldan keyin bitta raqam ajratamiz — 16,8. Javob: 16,8 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-qiymat",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#fdf89031"
+    },
+    {
+      "q": "Do'konda 0,5 litrli sut 6,2 ming so'm, 1,5 litrli sut esa 17,4 ming so'm turadi. Qaysi qadoq bir litr hisobida arzonroq va farq qancha?",
+      "v": [
+        "1,5 litrli qadoq, litri 0,8 ming so'm arzon",
+        "0,5 litrli qadoq, litri 0,8 ming so'm arzon",
+        "1,5 litrli qadoq, farqi 11,2 ming so'm",
+        "Ikkala qadoqda litri bir xil narxda"
+      ],
+      "t": 0,
+      "izoh": "Har bir qadoqning bir litri narxini topamiz. Kichik qadoq: 6,2 : 0,5 = 62 : 5 = 12,4 ming so'm. Katta qadoq: 17,4 : 1,5 = 174 : 15 = 11,6 ming so'm. 11,6 < 12,4, demak katta qadoq arzonroq. Farq: 12,4 − 11,6 = 0,8 ming so'm. Javob: 1,5 litrli qadoq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "narx-tanlov-tahlil",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#038f44af"
+    },
+    {
+      "q": "Birinchi do'konda 2,5 kg guruch 34 ming so'm, ikkinchisida 1,8 kg guruch 25,2 ming so'm turadi. Qayerdan sotib olgan foydaliroq?",
+      "v": [
+        "Ikkinchi do'kon, kilogrammi 0,4 ming so'm arzon",
+        "Ikkinchi do'kon, chunki umumiy narxi kamroq",
+        "Birinchi do'kon, kilogrammi 0,4 ming so'm arzon",
+        "Ikkala do'konda kilogrammi bir xil narxda"
+      ],
+      "t": 2,
+      "izoh": "Solishtirish uchun bir kilogramm narxini hisoblaymiz. Birinchi do'kon: 34 : 2,5 = 340 : 25 = 13,6 ming so'm. Ikkinchi do'kon: 25,2 : 1,8 = 252 : 18 = 14 ming so'm. 13,6 < 14, demak birinchi do'kon arzonroq. Farq: 14 − 13,6 = 0,4 ming so'm. Javob: birinchi do'kon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "narx-tanlov-tahlil",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#44c00df0"
+    },
+    {
+      "q": "Benzinning bir litri 12,4 ming so'm. Haydovchi bakka 38,5 litr quydirdi va kassaga 500 ming so'm berdi. Unga qancha qaytim qaytariladi?",
+      "v": [
+        "477,4 ming so'm",
+        "22,6 ming so'm",
+        "28,8 ming so'm",
+        "23,6 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Avval xarid summasini topamiz: 12,4 · 38,5. Qulay yo'l — bo'laklab hisoblash: 12,4 · 38 = 471,2 va 12,4 · 0,5 = 6,2, ularning yig'indisi 477,4 ming so'm. Endi qaytimni topamiz: 500 − 477,4 = 22,6 ming so'm. Javob: 22,6 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "narx-tanlov-tahlil",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#d8834eae"
+    },
+    {
+      "q": "Repetitor bir soat dars uchun 65 ming so'm oladi. U haftada 4 kun, har kuni 1,5 soatdan dars beradi. Uning haftalik daromadi qancha?",
+      "v": [
+        "260 ming so'm",
+        "97,5 ming so'm",
+        "292,5 ming so'm",
+        "390 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Avval haftalik dars soatini topamiz: 1,5 · 4 = 6 soat. Endi daromadni hisoblaymiz: 65 · 6 = 390 ming so'm. Faqat kunlar sonini ko'paytirish, ya'ni 65 · 4 deb olish dars davomiyligini e'tiborsiz qoldirish demakdir. Javob: 390 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-tanlov-tahlil",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#72604fd3"
+    },
+    {
+      "q": "Yo'lovchi poyezdi 2,5 soat davomida 187,5 km masofani bosib o'tdi. Uning shu yo'ldagi o'rtacha tezligini toping.",
+      "v": [
+        "75 km/soat",
+        "7,5 km/soat",
+        "750 km/soat",
+        "468,75 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Tezlik formulasi v = S : t. Demak v = 187,5 : 2,5. Vergulni yo'qotish uchun ikkala sonni 10 ga ko'paytiramiz: 1875 : 25 = 75. Tekshirish: 75 · 2,5 = 187,5 km. Javob: 75 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-masofa",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#2d53a2ac"
+    },
+    {
+      "q": "Piyoda 4,8 km/soat tezlik bilan 1,25 soat yurdi. U shu vaqt ichida qancha masofani bosib o'tgan?",
+      "v": [
+        "3,84 km",
+        "60 km",
+        "6 km",
+        "6,05 km"
+      ],
+      "t": 2,
+      "izoh": "Masofa S = v · t formulasi bilan topiladi: 4,8 · 1,25. Vergulsiz ko'paytiramiz: 48 · 125 = 6000. Ko'paytuvchilarda verguldan keyin jami 1 + 2 = 3 ta raqam bor, demak 6,000 ajratiladi. Natija 6 km. Javob: 6 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlik-masofa",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#1930708e"
+    },
+    {
+      "q": "Velosipedchi 33,6 km yo'lni 2,8 soatda bosib o'tdi. Agar u tezligini 2 km/soatga oshirsa, shu yo'lni necha soatda bosib o'tadi?",
+      "v": [
+        "2,6 soat",
+        "2,4 soat",
+        "16,8 soat",
+        "2,8 soat"
+      ],
+      "t": 1,
+      "izoh": "Avval dastlabki tezlikni topamiz: 33,6 : 2,8 = 336 : 28 = 12 km/soat. Yangi tezlik: 12 + 2 = 14 km/soat. Endi yangi vaqtni hisoblaymiz: 33,6 : 14 = 2,4 soat. Tezlik ortganda vaqt qanchaga kamayishini taxmin qilib bo'lmaydi, uni hisoblash kerak. Javob: 2,4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlik-masofa",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#5916f9da"
+    },
+    {
+      "q": "Yuk mashinasi avval 1,5 soat 60 km/soat, so'ngra 0,5 soat 80 km/soat tezlik bilan yurdi. Butun yo'ldagi o'rtacha tezligini toping.",
+      "v": [
+        "70 km/soat",
+        "130 km/soat",
+        "60 km/soat",
+        "65 km/soat"
+      ],
+      "t": 3,
+      "izoh": "O'rtacha tezlik butun masofani butun vaqtga bo'lish orqali topiladi. Birinchi qism: 60 · 1,5 = 90 km. Ikkinchi qism: 80 · 0,5 = 40 km. Umumiy masofa 130 km, umumiy vaqt 1,5 + 0,5 = 2 soat. Demak 130 : 2 = 65 km/soat. Tezliklarning o'rta arifmetigini olish xato. Javob: 65 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlik-masofa",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#76a249d8"
+    },
+    {
+      "q": "Idishga yana 3,7 litr suv quyilgach, undagi suv miqdori 9,25 litr bo'ldi. Dastlab idishda qancha suv bo'lgan?",
+      "v": [
+        "5,55 l",
+        "12,95 l",
+        "5,45 l",
+        "6,55 l"
+      ],
+      "t": 0,
+      "izoh": "Tenglama tuzamiz: x + 3,7 = 9,25. Noma'lum qo'shiluvchini topish uchun yig'indidan ma'lum qo'shiluvchi ayiriladi: x = 9,25 − 3,70. Ustunda ayiramiz va 5,55 hosil qilamiz. Tekshirish: 5,55 + 3,7 = 9,25. Javob: 5,55 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomalumni-topish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#349b9f2c"
+    },
+    {
+      "q": "Bir dona g'ishtning massasi 3,6 kg. Bir necha g'ishtning umumiy massasi 32,4 kg bo'lsa, ular nechta ekanini toping.",
+      "v": [
+        "116,64 ta",
+        "0,9 ta",
+        "9 ta",
+        "90 ta"
+      ],
+      "t": 2,
+      "izoh": "Tenglama tuzamiz: 3,6 · x = 32,4. Noma'lum ko'paytuvchini topish uchun ko'paytmani ma'lum ko'paytuvchiga bo'lamiz: x = 32,4 : 3,6. Ikkala sonni 10 ga ko'paytiramiz: 324 : 36 = 9. Tekshirish: 3,6 · 9 = 32,4 kg. Javob: 9 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomalumni-topish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#9971dce2"
+    },
+    {
+      "q": "Qandaydir sonni 2,5 ga bo'lganda 1,8 hosil bo'ldi. Shu noma'lum sonni toping.",
+      "v": [
+        "0,72",
+        "4,5",
+        "45",
+        "4,3"
+      ],
+      "t": 1,
+      "izoh": "Tenglama: x : 2,5 = 1,8. Noma'lum bo'linuvchini topish uchun bo'linmani bo'luvchiga ko'paytiramiz: x = 1,8 · 2,5. Vergulsiz ko'paytiramiz: 18 · 25 = 450, verguldan keyin ikkita raqam ajratamiz — 4,50. Tekshirish: 4,5 : 2,5 = 1,8. Javob: 4,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalumni-topish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#b98b4989"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 12,8 ga, ayirmasi esa 3,4 ga teng. Shu sonlarning kattarog'ini toping.",
+      "v": [
+        "4,7",
+        "16,2",
+        "6,4",
+        "8,1"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi va ayirmani qo'shsak, kichik son qisqaradi va katta sonning ikkilangani qoladi: 12,8 + 3,4 = 16,2. Demak katta son 16,2 : 2 = 8,1. Tekshirish uchun kichigini topamiz: 12,8 − 8,1 = 4,7, ayirma esa 8,1 − 4,7 = 3,4. Javob: 8,1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nomalumni-topish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#438c57d1"
+    },
+    {
+      "q": "Kamola daftariga 0,3 · 0,2 = 0,6 deb yozdi. Uning xatosi nimada va to'g'ri javob qanday bo'ladi?",
+      "v": [
+        "Verguldan keyingi xonalar soni hisobga olinmagan, to'g'ri javob 0,06",
+        "Xato yo'q, javob 0,6 to'g'ri yozilgan",
+        "Ko'paytirish o'rniga qo'shish bajarilgan, to'g'ri javob 0,5",
+        "Vergul noto'g'ri ko'chirilgan, to'g'ri javob 6"
+      ],
+      "t": 0,
+      "izoh": "O'nli kasrlarni ko'paytirishda avval vergulsiz ko'paytiramiz: 3 · 2 = 6. Ko'paytuvchilarda verguldan keyin jami 1 + 1 = 2 ta raqam bor, demak natijada ham 2 ta raqam ajratiladi: 0,06. Kamola faqat bitta xonani ajratgan. Javob: to'g'ri natija 0,06.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xato-topish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#e0dd0601"
+    },
+    {
+      "q": "Bekzod 4,5 + 0,55 amalini bajarib, natijani 5 deb yozdi. Uning xatosini va to'g'ri yig'indini ko'rsating.",
+      "v": [
+        "Xato yo'q, 0,55 ni yaxlitlash mumkin",
+        "Qo'shiluvchi 0,55 o'rniga 0,05 deb olingan, to'g'ri yig'indi 4,55",
+        "Kasr qismi noto'g'ri yaxlitlangan (0,55 o'rniga 0,5), to'g'ri yig'indi 5,05",
+        "Butun qismlar noto'g'ri qo'shilgan, to'g'ri yig'indi 9,5"
+      ],
+      "t": 2,
+      "izoh": "Qo'shishdan oldin xonalarni tenglashtiramiz: 4,50 + 0,55. Yuzdan bir xonasi: 0 + 5 = 5. O'ndan bir xonasi: 5 + 5 = 10, bir birlik butunga o'tadi. Butun qism: 4 + 0 + 1 = 5. Natija 5,05. Bekzod esa 0,55 ni 0,5 ga yaxlitlab, 4,5 + 0,5 = 5 deb yozgan — kasr qismini noto'g'ri yaxlitlagan. Javob: 5,05.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xato-topish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#37cd917e"
+    },
+    {
+      "q": "O'quvchi 6,4 : 0,8 amalining natijasini 0,8 deb yozdi. Xato qayerda va to'g'ri natija qanday?",
+      "v": [
+        "Xato yo'q, natija 0,8 ga teng",
+        "Bo'luvchidagi vergul ko'chirilmagan, to'g'ri natija 8",
+        "Bo'linuvchi bilan bo'luvchi almashtirilgan, natija 0,125",
+        "Bo'lish o'rniga ko'paytirish bajarilgan, natija 5,12"
+      ],
+      "t": 1,
+      "izoh": "O'nli kasrga bo'lishda bo'luvchidagi vergulni yo'qotish kerak: ikkala sonni 10 ga ko'paytiramiz va 64 : 8 = 8 hosil qilamiz. Tekshirish: 0,8 · 8 = 6,4. O'quvchi vergulni ko'chirmagani uchun natijani o'n marta kichik olgan. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xato-topish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#065789fb"
+    },
+    {
+      "q": "Darsda o'quvchi 0,25 soni 0,7 dan katta dedi, chunki unda raqamlar ko'proq. Bu mulohaza to'g'rimi?",
+      "v": [
+        "Ha, chunki 25 soni 7 dan katta",
+        "Ha, chunki raqami ko'p bo'lgan kasr doim kattaroq",
+        "Ular teng, chunki ikkalasi ham birdan kichik",
+        "Yo'q, 0,7 = 0,70 bo'lgani uchun 0,7 kattaroq"
+      ],
+      "t": 3,
+      "izoh": "O'nli kasrlarni raqamlar soniga qarab emas, xonama-xona taqqoslash kerak. Xonalarni tenglashtiramiz: 0,70 va 0,25. O'ndan bir xonasida 7 > 2, demak 0,7 > 0,25. Kasr qismidagi raqamlar soni sonning kattaligini belgilamaydi. Javob: mulohaza noto'g'ri, 0,7 kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xato-topish",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#d0b4421e"
+    },
+    {
+      "q": "Sardor jamg'armasini har hafta bir xil miqdorga oshirib bordi: 0,4; 0,8; 1,2 va 1,6 million so'm. Keyingi haftada jamg'armasi qancha bo'ladi?",
+      "v": [
+        "2 million so'm",
+        "1,8 million so'm",
+        "2,4 million so'm",
+        "3,2 million so'm"
+      ],
+      "t": 0,
+      "izoh": "Qo'shni hadlarning farqini topamiz: 0,8 − 0,4 = 0,4 va 1,2 − 0,8 = 0,4. Demak har hafta jamg'arma 0,4 million so'mga ortadi. Keyingi had: 1,6 + 0,4 = 2. Javob: 2 million so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qonuniyat-ketma-ketlik",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#bb837a2b"
+    },
+    {
+      "q": "Ketma-ketlik shunday berilgan: 5; 0,5; 0,05; 0,005. Har bir son oldingisidan necha marta kichik va beshinchi had qanday bo'ladi?",
+      "v": [
+        "100 marta kichik, beshinchi had 0,00005",
+        "10 marta kichik, beshinchi had 0,00005",
+        "10 marta kichik, beshinchi had 0,0005",
+        "5 marta kichik, beshinchi had 0,001"
+      ],
+      "t": 2,
+      "izoh": "Qo'shni hadlarni taqqoslaymiz: 5 : 0,5 = 10 va 0,5 : 0,05 = 10. Demak har bir had oldingisidan 10 marta kichik, ya'ni vergul har safar bir xona chapga ko'chadi. Beshinchi had: 0,005 : 10 = 0,0005. Javob: 10 marta kichik, beshinchi had 0,0005.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qonuniyat-ketma-ketlik",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#236b3f28"
+    },
+    {
+      "q": "Quyidagi ketma-ketlikning to'rtinchi hadini toping: 1,5; 2,25; 3,375; …",
+      "v": [
+        "4,5",
+        "5,0625",
+        "6,75",
+        "4,125"
+      ],
+      "t": 1,
+      "izoh": "Avval qonuniyatni aniqlaymiz: 2,25 : 1,5 = 1,5 va 3,375 : 2,25 = 1,5. Demak har bir had oldingisining 1,5 baravariga teng. To'rtinchi had: 3,375 · 1,5 = 5,0625. Farqlar bo'yicha izlash bu yerda noto'g'ri natija beradi. Javob: 5,0625.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qonuniyat-ketma-ketlik",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#eec30eed"
+    },
+    {
+      "q": "Idishda 3 litr suv bor edi, har kuni undan 0,25 litr bug'lanib ketadi. Olti kundan keyin idishda qancha suv qoladi?",
+      "v": [
+        "1,25 l",
+        "1,75 l",
+        "2,75 l",
+        "1,5 l"
+      ],
+      "t": 3,
+      "izoh": "Olti kunda bug'lanadigan suvni topamiz: 0,25 · 6 = 1,5 litr. Endi boshlang'ich hajmdan ayiramiz: 3 − 1,5 = 1,5 litr. Faqat bir kunlik yo'qotishni ayirish, ya'ni 3 − 0,25 deb hisoblash tipik xato. Javob: 1,5 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qonuniyat-ketma-ketlik",
+      "id": "matematika_arif_m05-onli-kasrlar-va-ular-ustida#cf812c0f"
+    }
+  ]
+}

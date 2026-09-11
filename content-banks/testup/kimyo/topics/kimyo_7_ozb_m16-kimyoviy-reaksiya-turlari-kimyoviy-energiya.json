@@ -1,0 +1,501 @@
+{
+  "nom": "16-mavzu. Kimyoviy reaksiya turlari. Kimyoviy energiya",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kimyoviy reaksiyalar nima asosida asosiy turlarga ajratiladi?",
+      "v": [
+        "Reaksiyaga kirishayotgan dastlabki moddalar va mahsulotlar soni hamda tarkibiga qarab",
+        "Faqat haroratga qarab",
+        "Reaksiyaning rangiga qarab",
+        "Reaksiyaning tezligiga qarab"
+      ],
+      "t": 0,
+      "izoh": "16-§: reagentlar va mahsulotlar sonining o'zgarishiga qarab sinflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#64d460fb"
+    },
+    {
+      "q": "Birikish reaksiyasida nima sodir bo'ladi?",
+      "v": [
+        "Ikki yoki undan ortiq moddadan bitta yangi modda olinadi",
+        "Bitta moddadan bir necha modda hosil bo'ladi",
+        "Murakkab moddalar o'rin almashadi",
+        "Oddiy modda tarkibiy qism o'rnini oladi"
+      ],
+      "t": 0,
+      "izoh": "A + B + ... = C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#bb024d4a"
+    },
+    {
+      "q": "Parchalanish reaksiyasi umumiy sxemasi qanday?",
+      "v": [
+        "C = A + B + ...",
+        "A + B = C",
+        "AB + CD = AD + CB",
+        "C + AB = CB + A"
+      ],
+      "t": 0,
+      "izoh": "Parchalanish: bitta moddadan bir necha modda hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#c642e334"
+    },
+    {
+      "q": "O'rin olish reaksiyasida nima sodir bo'ladi?",
+      "v": [
+        "Oddiy modda murakkab moddaning tarkibiy qismi o'rnini oladi, yangi oddiy va murakkab moddalar hosil bo'ladi",
+        "Ikki murakkab modda o'rin almashadi",
+        "Bir modda parchalanadi",
+        "Ikki modda bitta moddaga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "C + AB = CB + A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#2b500f49"
+    },
+    {
+      "q": "Almashinish reaksiyasining umumiy sxemasi qanday?",
+      "v": [
+        "AB + CD = AD + CB",
+        "A + B = C",
+        "C = A + B",
+        "C + AB = CB + A"
+      ],
+      "t": 0,
+      "izoh": "Murakkab moddalarning tarkibiy qismlari o'zaro o'rin almashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#883b071d"
+    },
+    {
+      "q": "CaO + CO2 = CaCO3 reaksiyasi qaysi turga kiradi?",
+      "v": [
+        "Birikish",
+        "Parchalanish",
+        "O'rin olish",
+        "Almashinish"
+      ],
+      "t": 0,
+      "izoh": "Ikki moddadan bitta modda hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#753bdd41"
+    },
+    {
+      "q": "CaCO3 = CaO + CO2 reaksiyasi qaysi turga kiradi?",
+      "v": [
+        "Parchalanish",
+        "Birikish",
+        "O'rin olish",
+        "Almashinish"
+      ],
+      "t": 0,
+      "izoh": "Bitta moddadan ikki modda hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#1c1636f9"
+    },
+    {
+      "q": "Zn + 2HCl = ZnCl2 + H2 reaksiyasi qaysi turga kiradi?",
+      "v": [
+        "O'rin olish",
+        "Birikish",
+        "Parchalanish",
+        "Almashinish"
+      ],
+      "t": 0,
+      "izoh": "Rux vodorod o'rnini oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#9d452f63"
+    },
+    {
+      "q": "NaOH + HCl = NaCl + H2O reaksiyasi qaysi turga kiradi?",
+      "v": [
+        "Almashinish",
+        "Birikish",
+        "Parchalanish",
+        "O'rin olish"
+      ],
+      "t": 0,
+      "izoh": "Ikki murakkab modda o'rin almashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#7b113bfd"
+    },
+    {
+      "q": "Fe + CuSO4 = FeSO4 + Cu reaksiyasi qaysi turga kiradi?",
+      "v": [
+        "O'rin olish",
+        "Birikish",
+        "Parchalanish",
+        "Almashinish"
+      ],
+      "t": 0,
+      "izoh": "Temir mis o'rnini oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#8b8c7797"
+    },
+    {
+      "q": "P + O2 → P2O5 sxemasini to'g'ri tenglang.",
+      "v": [
+        "4P + 5O2 = 2P2O5",
+        "2P + O2 = P2O5",
+        "4P + 2O2 = 2P2O5",
+        "P + 5O2 = 2P2O5"
+      ],
+      "t": 0,
+      "izoh": "4P + 5O2 = 2P2O5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#aa004a9d"
+    },
+    {
+      "q": "N2 + H2 → NH3 sxemasini to'g'ri tenglang.",
+      "v": [
+        "N2 + 3H2 = 2NH3",
+        "N2 + H2 = NH3",
+        "2N2 + 3H2 = 2NH3",
+        "N2 + 2H2 = 2NH3"
+      ],
+      "t": 0,
+      "izoh": "N2 + 3H2 = 2NH3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#6789802d"
+    },
+    {
+      "q": "Al + O2 → Al2O3 sxemasini to'g'ri tenglang.",
+      "v": [
+        "4Al + 3O2 = 2Al2O3",
+        "2Al + 3O2 = 2Al2O3",
+        "Al + O2 = Al2O3",
+        "4Al + O2 = 2Al2O3"
+      ],
+      "t": 0,
+      "izoh": "4Al + 3O2 = 2Al2O3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#8c80340f"
+    },
+    {
+      "q": "Kimyoviy reaksiyalarda ajralib chiqadigan energiya nima deb ataladi?",
+      "v": [
+        "Kimyoviy energiya",
+        "Mexanik energiya",
+        "Elektr energiyasi",
+        "Yadro energiyasi"
+      ],
+      "t": 0,
+      "izoh": "16-§ ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#09bcf10f"
+    },
+    {
+      "q": "Kimyoviy reaksiyada ajraladigan yoki yutiladigan energiya miqdori nima deb ataladi?",
+      "v": [
+        "Reaksiyaning issiqlik miqdori (Q)",
+        "Kimyoviy energiya",
+        "Molar massa",
+        "Bog' energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik miqdori kilojoullarda (kJ) ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#fb608f02"
+    },
+    {
+      "q": "Issiqlik (energiya) chiqishi bilan boradigan reaksiyalar qanday ataladi?",
+      "v": [
+        "Ekzotermik",
+        "Endotermik",
+        "Birikish",
+        "Qaytar"
+      ],
+      "t": 0,
+      "izoh": "Ekzotermik (ekzo — tashqari).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#39b297c5"
+    },
+    {
+      "q": "Issiqlik (energiya) yutilishi bilan boradigan reaksiyalar qanday ataladi?",
+      "v": [
+        "Endotermik",
+        "Ekzotermik",
+        "Almashinish",
+        "Katalitik"
+      ],
+      "t": 0,
+      "izoh": "Endotermik (endo — ichkari).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#20d610d7"
+    },
+    {
+      "q": "Ekzotermik reaksiyalarda issiqlik miqdori qanday ishora bilan ko'rsatiladi?",
+      "v": [
+        "«+» (plus)",
+        "«–» (minus)",
+        "«=» (teng)",
+        "Ishora qo'yilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Masalan: Fe + S = FeS + 96 kJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#17996068"
+    },
+    {
+      "q": "Quyidagi reaksiyalardan qaysi biri endotermik?",
+      "v": [
+        "N2 + O2 = 2NO – 181 kJ",
+        "C + O2 = CO2 + 393 kJ",
+        "S + O2 = SO2 + 297 kJ",
+        "Fe + S = FeS + 96 kJ"
+      ],
+      "t": 0,
+      "izoh": "«–» ishorali reaksiya endotermik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#91c7eeeb"
+    },
+    {
+      "q": "Reaksiyaning issiqlik miqdori qanday birlikda ifodalanadi?",
+      "v": [
+        "Kilojoullda (kJ)",
+        "Litrdada",
+        "Grammda",
+        "Molda"
+      ],
+      "t": 0,
+      "izoh": "kJ da ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#c0002fed"
+    },
+    {
+      "q": "Reaksiyaning issiqlik miqdori qanday aniqlanadi?",
+      "v": [
+        "Hosil bo'layotgan va uzilayotgan bog'lar energiyasi farqi bilan",
+        "Moddalarning massasi yig'indisi bilan",
+        "Molekulalar soni bilan",
+        "Hajm farqi bilan"
+      ],
+      "t": 0,
+      "izoh": "16-§: bog'lar energiyasi farqi bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#4a700293"
+    },
+    {
+      "q": "H2O2 → H2O + O2 reaksiyasini tenglab, turini aniqlang.",
+      "v": [
+        "2H2O2 = 2H2O + O2 — parchalanish",
+        "H2O2 = H2O + O2 — parchalanish",
+        "2H2O2 = 2H2O + O2 — birikish",
+        "2H2O2 = H2O + 2O2 — almashinish"
+      ],
+      "t": 0,
+      "izoh": "2H2O2 = 2H2O + O2; bitta moddadan ikki modda — parchalanish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#4ad4efaa"
+    },
+    {
+      "q": "Kimyoviy energiyani qanday energiya turlariga aylantirish mumkin?",
+      "v": [
+        "Issiqlik, nur, mexanik, elektr energiyasiga",
+        "Faqat issiqlikka",
+        "Faqat elektr energiyasiga",
+        "Hech qanday energiyaga"
+      ],
+      "t": 0,
+      "izoh": "16-§: kimyoviy energiya issiqlik, nur, mexanik, elektr energiyasiga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#c682025e"
+    },
+    {
+      "q": "2Cu + O2 = 2CuO reaksiyasi qaysi turga kiradi?",
+      "v": [
+        "Birikish",
+        "Parchalanish",
+        "O‘rin olish",
+        "Almashinish"
+      ],
+      "t": 0,
+      "izoh": "Ikki moddadan bitta yangi modda hosil bo‘lmoqda — birikish reaksiyasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#b0f4de8b"
+    },
+    {
+      "q": "2H2O = 2H2 + O2 reaksiyasi qaysi turga kiradi?",
+      "v": [
+        "Parchalanish",
+        "Birikish",
+        "O‘rin olish",
+        "Almashinish"
+      ],
+      "t": 0,
+      "izoh": "Bitta moddadan ikki yangi modda hosil bo‘lmoqda — parchalanish reaksiyasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#6dfc9d2a"
+    },
+    {
+      "q": "BaCl2 + Na2SO4 = BaSO4 + 2NaCl reaksiyasi qaysi turga kiradi?",
+      "v": [
+        "Almashinish",
+        "Birikish",
+        "Parchalanish",
+        "O‘rin olish"
+      ],
+      "t": 0,
+      "izoh": "Murakkab moddalarning tarkibiy qismlari o‘zaro o‘rin almashmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#c4a3ed23"
+    },
+    {
+      "q": "«Ekzo» so‘zi qanday ma’noni bildiradi?",
+      "v": [
+        "Tashqari",
+        "Ichkari",
+        "Yuqori",
+        "Pastki"
+      ],
+      "t": 0,
+      "izoh": "Ekzotermik (ekzo – tashqari) reaksiyalarda issiqlik chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#da7d40e2"
+    },
+    {
+      "q": "«Endo» so‘zi qanday ma’noni bildiradi?",
+      "v": [
+        "Ichkari",
+        "Tashqari",
+        "Oldinga",
+        "Orqaga"
+      ],
+      "t": 0,
+      "izoh": "Endotermik (endo – ichkari) reaksiyalarda issiqlik yutiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#a6ac9edf"
+    },
+    {
+      "q": "Fe + S = FeS + 96 kJ reaksiyasi qanday reaksiyaga misol?",
+      "v": [
+        "Ekzotermik",
+        "Endotermik",
+        "Parchalanish",
+        "Almashinish"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik chiqishi bilan boradi — ekzotermik reaksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#c9fe0a2f"
+    },
+    {
+      "q": "3O2 = 2O3 – 289 kJ reaksiyasi qanday reaksiyaga misol?",
+      "v": [
+        "Endotermik",
+        "Ekzotermik",
+        "Birikish",
+        "O‘rin olish"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik yutilishi bilan boradi — endotermik reaksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#bcfb7615"
+    },
+    {
+      "q": "C + O2 = CO2 reaksiyasida qancha issiqlik ajralib chiqadi?",
+      "v": [
+        "393 kJ",
+        "297 kJ",
+        "96 kJ",
+        "181 kJ"
+      ],
+      "t": 0,
+      "izoh": "C + O2 = CO2 + 393 kJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#5f7d3d53"
+    },
+    {
+      "q": "S + O2 = SO2 reaksiyasida qancha issiqlik ajralib chiqadi?",
+      "v": [
+        "297 kJ",
+        "393 kJ",
+        "285,83 kJ",
+        "289 kJ"
+      ],
+      "t": 0,
+      "izoh": "S + O2 = SO2 + 297 kJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#0fee7f1d"
+    },
+    {
+      "q": "Endotermik reaksiyalarda issiqlik miqdori qanday ishora bilan ko‘rsatiladi?",
+      "v": [
+        "«–» (minus) ishora bilan",
+        "«+» (plus) ishora bilan",
+        "«=» ishora bilan",
+        "Ishorasiz"
+      ],
+      "t": 0,
+      "izoh": "Endotermik reaksiyalarda issiqlik miqdori minus ishora bilan ko‘rsatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m16-kimyoviy-reaksiya-turlari-kimyoviy-energiya#90b191a9"
+    }
+  ]
+}

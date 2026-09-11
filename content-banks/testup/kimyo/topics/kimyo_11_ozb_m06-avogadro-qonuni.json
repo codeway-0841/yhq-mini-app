@@ -1,0 +1,606 @@
+{
+  "nom": "06-mavzu. Avogadro qonuni. Gazlar aralashmasi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Avogadro o'z qonunini qaysi yilda yaratgan?",
+      "v": [
+        "1811-yilda",
+        "1901-yilda",
+        "1774-yilda",
+        "1869-yilda"
+      ],
+      "t": 0,
+      "izoh": "Avogadro o'zining kuzatishlari asosida 1811-yilda qonun yaratgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#58c927a1"
+    },
+    {
+      "q": "Avogadro qonuni qanday ifodalanadi?",
+      "v": [
+        "Bir xil sharoitda (bir xil bosim va haroratda) teng hajmdagi turli gazlarning molekulalari (atomlari) soni teng bo'ladi",
+        "Har qanday sharoitda gazlarning massasi teng bo'ladi",
+        "Teng massadagi gazlarning hajmi har doim teng bo'ladi",
+        "Gazlar hajmi faqat bosimga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Darslikda Avogadro qonunining ta'rifi shunday berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#b622500b"
+    },
+    {
+      "q": "Normal sharoitda (T = 273 K, P = 101,325 kPa) har qanday gazsimon moddaning 1 mol miqdori qancha hajmni egallaydi?",
+      "v": [
+        "22,4 l",
+        "2,24 l",
+        "11,2 l",
+        "44,8 l"
+      ],
+      "t": 0,
+      "izoh": "Normal sharoitda 1 mol gaz 22,4 l hajmni egallaydi — bu gazlarning molyar hajmi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#12c6475a"
+    },
+    {
+      "q": "Gazlarning molyar hajmi qanday belgilanadi va nechaga teng?",
+      "v": [
+        "Vm = 22,4 l/mol",
+        "Vm = 22,4 g/mol",
+        "Vm = 2,24 l/mol",
+        "Vm = 24,4 l/mol"
+      ],
+      "t": 0,
+      "izoh": "Molyar hajm Vm = 22,4 l/mol (darslikdagi «mol/l» yozuvi bosma xato, to'g'ri birlik l/mol).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#a08ff5e1"
+    },
+    {
+      "q": "Normal sharoitda 10 mol gaz qancha hajmni egallaydi?",
+      "v": [
+        "224 l",
+        "22,4 l",
+        "2,24 l",
+        "44,8 l"
+      ],
+      "t": 0,
+      "izoh": "1 mol — 22,4 l bo'lsa, 10 mol — 224 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#12ebfc16"
+    },
+    {
+      "q": "Normal sharoitda 0,1 mol gaz qancha hajmni egallaydi?",
+      "v": [
+        "2,24 l",
+        "22,4 l",
+        "0,224 l",
+        "11,2 l"
+      ],
+      "t": 0,
+      "izoh": "0,1 mol gaz 2,24 l hajmni egallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#9c183e70"
+    },
+    {
+      "q": "Avogadro soni nechaga teng va qanday belgilanadi?",
+      "v": [
+        "NA = 6,02·10^23",
+        "NA = 3,01·10^23",
+        "NA = 6,02·10^22",
+        "NA = 12,04·10^23"
+      ],
+      "t": 0,
+      "izoh": "Har qanday moddaning 1 mol miqdori tarkibida 6,02·10^23 ta zarracha bo'ladi — bu Avogadro soni, NA = 6,02·10^23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#8cbae062"
+    },
+    {
+      "q": "1 mol Cl2 tarkibida nechta Cl2 molekulasi bor?",
+      "v": [
+        "6,02·10^23 ta",
+        "12,04·10^23 ta",
+        "3,01·10^23 ta",
+        "1,2·10^24 ta"
+      ],
+      "t": 0,
+      "izoh": "1 mol Cl2 tarkibida 6,02·10^23 ta Cl2 molekulasi bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#20efa403"
+    },
+    {
+      "q": "1 mol Cl2 dagi xlor atomlari soni nechta?",
+      "v": [
+        "12,04·10^23 ta",
+        "6,02·10^23 ta",
+        "3,01·10^23 ta",
+        "18,06·10^23 ta"
+      ],
+      "t": 0,
+      "izoh": "Xlor atomlari soni 2 marta ko'p — 12,04·10^23 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#c35eb14a"
+    },
+    {
+      "q": "0,5 mol gazda nechta molekula bor va u normal sharoitda qancha hajm egallaydi?",
+      "v": [
+        "3,01·10^23 ta molekula, 11,2 l",
+        "6,02·10^23 ta molekula, 22,4 l",
+        "3,01·10^23 ta molekula, 22,4 l",
+        "1,505·10^23 ta molekula, 5,6 l"
+      ],
+      "t": 0,
+      "izoh": "0,5·6,02·10^23 = 3,01·10^23 ta molekula; 0,5 mol gaz n.sh.da 11,2 l hajm egallaydi (darslikdagi 3,02·10^23 yozuvi bosma xato).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#fbcd8bbe"
+    },
+    {
+      "q": "2,24 l Cl2 gazida nechta molekula bor va uning massasi necha gramm?",
+      "v": [
+        "6,02·10^22 ta molekula, 7,1 g",
+        "6,02·10^23 ta molekula, 71 g",
+        "3,01·10^22 ta molekula, 3,55 g",
+        "12,04·10^22 ta molekula, 14,2 g"
+      ],
+      "t": 0,
+      "izoh": "2,24 l Cl2 gazida 6,02·10^22 ta molekula bo'lib, miqdori 0,1 mol va massasi 7,1 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#93373fe3"
+    },
+    {
+      "q": "Gazning molyar hajmi qanday topiladi?",
+      "v": [
+        "Vm = V/n",
+        "Vm = V·n",
+        "Vm = n/V",
+        "Vm = m/M"
+      ],
+      "t": 0,
+      "izoh": "Gazning molyar hajmi gaz hajmining (n.sh.dagi) moddani tegishli miqdori n ga nisbatidan topiladi: Vm = V/n.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#4b2f9afa"
+    },
+    {
+      "q": "Vm = V/n formulasida V va n nimani bildiradi?",
+      "v": [
+        "V — hajm (l hisobida), n — moddaning miqdori (mol hisobida)",
+        "V — massa, n — zarrachalar soni",
+        "V — bosim, n — harorat",
+        "V — zichlik, n — mol"
+      ],
+      "t": 0,
+      "izoh": "V — hajm (l hisobida), n — moddaning miqdori (mol hisobida).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#95b5874f"
+    },
+    {
+      "q": "Gazlarning teng hajmlari massalarining nisbati nimaga teng?",
+      "v": [
+        "Ularning molyar massalarining nisbatiga",
+        "Ularning hajmlari nisbatiga",
+        "Ularning zichliklari nisbatiga",
+        "Ularning bosimlari nisbatiga"
+      ],
+      "t": 0,
+      "izoh": "m1 : m2 = M1 : M2 — massalar nisbati molyar massalar nisbatiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#8f909866"
+    },
+    {
+      "q": "Bir gazning ikkinchi gazga nisbatan zichligi (D) deb nimaga aytiladi?",
+      "v": [
+        "Bir gaz muayyan hajmi massasining xuddi shunday hajmdagi ikkinchi gaz (o'sha sharoitlarda olingan) massasiga nisbatiga",
+        "Ikki gaz hajmlarining nisbatiga",
+        "Gazning suvga nisbatan og'irligiga",
+        "Gazning havodagi ulushiga"
+      ],
+      "t": 0,
+      "izoh": "Zichlik D harfi bilan belgilanadi: M1/M2 = D.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#fdb72919"
+    },
+    {
+      "q": "Gazning zichligi ko'pincha qaysi gazga nisbatan aniqlanadi?",
+      "v": [
+        "Vodorodga",
+        "Kislorodga",
+        "Azotga",
+        "Geliyga"
+      ],
+      "t": 0,
+      "izoh": "Ko'pincha gazning zichligi eng yengil gaz — vodorodga nisbatan aniqlanadi, D(H2) bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#5feeda96"
+    },
+    {
+      "q": "Vodorodga nisbatan zichlik orqali molyar massani topish formulasi qanday?",
+      "v": [
+        "M = 2·D(H2)",
+        "M = D(H2)/2",
+        "M = 29·D(H2)",
+        "M = 22,4·D(H2)"
+      ],
+      "t": 0,
+      "izoh": "Vodorodning molyar massasi 2 ga teng bo'lganligi uchun M = 2D(H2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#4c307740"
+    },
+    {
+      "q": "Gaz holatidagi moddaning molekulyar massasi uning vodorod bo'yicha zichligining necha marta ko'paytirilganiga teng?",
+      "v": [
+        "2 ga",
+        "29 ga",
+        "22,4 ga",
+        "4 ga"
+      ],
+      "t": 0,
+      "izoh": "Gaz holatidagi moddaning molekulyar massasi uning vodorod bo'yicha zichligining 2 ga ko'paytirilganiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#3d958c19"
+    },
+    {
+      "q": "Havoning o'rtacha molyar massasi qanday hisoblangan (darslik bo'yicha)?",
+      "v": [
+        "(4·28 + 1·32)/5 = 28,8 g/mol (yaxlitlangan 29 g/mol)",
+        "(28 + 32)/2 = 30 g/mol",
+        "4·28 + 32 = 144 g/mol",
+        "28·0,8 + 32·0,2 = 28,8 g/mol"
+      ],
+      "t": 0,
+      "izoh": "Havo 4 hajm azot va 1 hajm kisloroddan tashkil topgan deb olinib, M = (4·28+1·32)/5 = 28,8 g/mol (yaxlitlangan 29 g/mol).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#d1672572"
+    },
+    {
+      "q": "Havoga nisbatan zichlik orqali molyar massa qanday aniqlanadi?",
+      "v": [
+        "M = 29 · Dx",
+        "M = 2 · Dx",
+        "M = 22,4 · Dx",
+        "M = Dx / 29"
+      ],
+      "t": 0,
+      "izoh": "Havoning molyar massasi 29 g/mol bo'lgani uchun M = 29·Dx.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#c730a887"
+    },
+    {
+      "q": "Oddiy gazlarning molekulalari nechta atomdan tashkil topgan?",
+      "v": [
+        "2 atomdan (H2, F2, Cl2, O2, N2)",
+        "1 atomdan",
+        "3 atomdan",
+        "4 atomdan"
+      ],
+      "t": 0,
+      "izoh": "Oddiy gazlarning molekulalari 2 atomdan (H2, F2, Cl2, O2, N2) tashkil topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#3abdd374"
+    },
+    {
+      "q": "Nodir gazlarning molekulalari nechta atomdan tashkil topgan?",
+      "v": [
+        "1 atomdan (He, Ne, Ar, Kr, Xe, Rn)",
+        "2 atomdan",
+        "3 atomdan",
+        "8 atomdan"
+      ],
+      "t": 0,
+      "izoh": "Nodir gazlarning molekulalari 1 atomdan tashkil topgan (He, Ne, Ar, Kr, Xe, Rn).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#75b1f33f"
+    },
+    {
+      "q": "Nodir gazlar uchun qaysi tushunchalar teng qiymatlidir?",
+      "v": [
+        "«Molekula» va «atom» tushunchalari",
+        "«Massa» va «hajm» tushunchalari",
+        "«Mol» va «gramm» tushunchalari",
+        "«Zichlik» va «bosim» tushunchalari"
+      ],
+      "t": 0,
+      "izoh": "Nodir gazlar uchun «molekula» va «atom» tushunchalari teng qiymatlidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#9e558cb7"
+    },
+    {
+      "q": "Darslikda molekulalari 3 va undan ko'p atomlardan tashkil topgan oddiy moddalarga qaysi misollar keltirilgan?",
+      "v": [
+        "Ozon O3, tetrafosfor P4, o'rtacha temperaturada oltingugurt bug'lari S8",
+        "Vodorod H2, azot N2",
+        "Metan CH4, ammoniak NH3",
+        "Kislorod O2, xlor Cl2"
+      ],
+      "t": 0,
+      "izoh": "Ozon O3, tetrafosfor P4 molekulalari, o'rtacha temperaturada oltingugurt bug'lari S8 kabi misollar keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#eebc8eff"
+    },
+    {
+      "q": "Kimyoviy belgilar va formulalar oldidagi koeffitsiyentlar nimalarni ko'rsatadi?",
+      "v": [
+        "Atom va molekula soninigina emas, balki reaksiyada ishtirok etadigan mollar sonini ham",
+        "Faqat atomlar sonini",
+        "Faqat massa ulushini",
+        "Faqat hajm ulushini"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsiyentlar atom va molekula soninigina emas, balki reaksiyada ishtirok etadigan mollar sonini ham ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#8fd71047"
+    },
+    {
+      "q": "H2 + Cl2 = 2HCl reaksiyasida gazlarning hajmiy nisbati qanday?",
+      "v": [
+        "1 : 1 : 2",
+        "2 : 1 : 2",
+        "1 : 2 : 1",
+        "2 : 2 : 1"
+      ],
+      "t": 0,
+      "izoh": "Birinchi reaksiyada hajmiy nisbat 1 : 1 : 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#006fe275"
+    },
+    {
+      "q": "2H2 + O2 = 2H2O reaksiyasida gazlarning hajmiy nisbati qanday?",
+      "v": [
+        "2 : 1 : 2",
+        "1 : 1 : 2",
+        "2 : 2 : 1",
+        "1 : 2 : 2"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi reaksiyada hajmiy nisbat 2 : 1 : 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#23e098be"
+    },
+    {
+      "q": "Gazsimon moddalar orasidagi reaksiyalar qanday qonuniyatlarga bo'ysunadi?",
+      "v": [
+        "O'zgarmas bosimda reaksiyaga kirishayotgan va hosil bo'layotgan gazlarning hajmlari o'zaro kichik butun sonlar nisbatida bo'ladi",
+        "Gazlar hajmi har doim saqlanib qoladi",
+        "Gazlar massasi reaksiyada kamayadi",
+        "Hajmlar nisbati tasodifiy bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Gazlar hajmlari o'zaro kichik butun sonlar nisbatida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#37edfca7"
+    },
+    {
+      "q": "Reaksiyalar tenglamalaridagi koeffitsiyentlar nimani ko'rsatadi?",
+      "v": [
+        "Reaksiyaga kirishayotgan va hosil bo'layotgan gazsimon moddalar hajmlarining sonini",
+        "Faqat moddalarning massasini",
+        "Faqat atomlarning zaryadini",
+        "Moddalarning zichligini"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsiyentlar gazsimon moddalar hajmlarining sonini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#33b44184"
+    },
+    {
+      "q": "Gazning hajm ulushi deb nimaga aytiladi?",
+      "v": [
+        "Ma'lum gaz hajmining gazlar aralashmasi hajmiga nisbati bilan o'lchanadigan kattalikka",
+        "Gaz massasining aralashma massasiga nisbatiga",
+        "Gazning bosimining umumiy bosimga nisbatiga",
+        "Gazning zichligining havo zichligiga nisbatiga"
+      ],
+      "t": 0,
+      "izoh": "Ma'lum gaz hajmining gazlar aralashmasi hajmiga nisbati bilan o'lchanadigan kattalikka gazning hajm ulushi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#290689f5"
+    },
+    {
+      "q": "Darslikdagi misolda: normal sharoitda 2 l vodorod, 3 l kislorod, 6 l ammiak va 8 l is gazidan iborat aralashmada kislorodning hajm ulushi necha foiz?",
+      "v": [
+        "15,7 %",
+        "10,5 %",
+        "31,6 %",
+        "42,1 %"
+      ],
+      "t": 0,
+      "izoh": "Umumiy hajm 2+3+6+8 = 19 l; V = 3/19 · 100 = 15,7 %.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#42e6fa81"
+    },
+    {
+      "q": "1-masalada: gazning vodorodga nisbatan zichligi 35,5 ga teng. Bu gazning molyar massasi necha g/mol?",
+      "v": [
+        "71 g/mol",
+        "35,5 g/mol",
+        "17,75 g/mol",
+        "29 g/mol"
+      ],
+      "t": 0,
+      "izoh": "M = 2 · 35,5 = 71 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#94e6be8c"
+    },
+    {
+      "q": "Molyar massasi 71 g/mol bo'lgan gazning havoga nisbatan zichligi nechaga teng?",
+      "v": [
+        "2,448",
+        "1,224",
+        "0,408",
+        "4,896"
+      ],
+      "t": 0,
+      "izoh": "Dx = 71/29 = 2,448.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#c2327ea7"
+    },
+    {
+      "q": "2-masalada: metanga nisbatan zichligi 2 bo'lgan gazning geliyga nisbatan zichligi nechaga teng?",
+      "v": [
+        "8",
+        "4",
+        "2",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "M = 16·2 = 32; D(He) = 32/4 = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#ed3c7c20"
+    },
+    {
+      "q": "3-masalada: 0,717 g gaz (n.sh.da) 0,365 l hajmni egallasa, uning molekulyar massasi nechaga teng?",
+      "v": [
+        "44 g/mol",
+        "22 g/mol",
+        "28 g/mol",
+        "32 g/mol"
+      ],
+      "t": 0,
+      "izoh": "0,717 g — 0,365 l; X — 22,4 l; X = 44 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#64425c78"
+    },
+    {
+      "q": "4-masalada: 15 l ammiak normal sharoitda necha mol gaz bo'ladi?",
+      "v": [
+        "0,67 mol",
+        "1,5 mol",
+        "0,5 mol",
+        "1 mol"
+      ],
+      "t": 0,
+      "izoh": "15/22,4 ≈ 0,67 mol (darslik javobi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#65eedd04"
+    },
+    {
+      "q": "5-masalada: etilenning (C2H4) vodorodga nisbatan zichligi nechaga teng?",
+      "v": [
+        "14",
+        "28",
+        "0,965",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "M(C2H4) = 28; D(H2) = 28/2 = 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#f8bacaae"
+    },
+    {
+      "q": "5-masalada: etilenning (C2H4) havoga nisbatan zichligi nechaga teng?",
+      "v": [
+        "0,965",
+        "14",
+        "1,93",
+        "28"
+      ],
+      "t": 0,
+      "izoh": "D(havo) = 28/29 = 0,965.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#5d1fbede"
+    },
+    {
+      "q": "Avogadro qonunidan nechta xulosa kelib chiqadi?",
+      "v": [
+        "Ikkita",
+        "Bitta",
+        "Uchta",
+        "To'rtta"
+      ],
+      "t": 0,
+      "izoh": "Avogadro qonunidan ikkita xulosa kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#88e5b6e1"
+    },
+    {
+      "q": "4-masalada ammiakning molyar massasi nechaga teng deb olingan?",
+      "v": [
+        "17 g/mol",
+        "16 g/mol",
+        "18 g/mol",
+        "14 g/mol"
+      ],
+      "t": 0,
+      "izoh": "Ammiakning molyar massasi 17 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m06-avogadro-qonuni#ca169f8b"
+    }
+  ]
+}

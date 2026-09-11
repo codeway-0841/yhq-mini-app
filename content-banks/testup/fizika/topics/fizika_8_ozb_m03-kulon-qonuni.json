@@ -1,0 +1,546 @@
+{
+  "nom": "03-mavzu. Kulon Qonuni",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektrlangan jismlarning bir-biriga tegmasdan ma'lum masofada turib ham ta'sirlashishini tajribada qachon va kim kuzatdi?",
+      "v": [
+        "1785-yilda fransuz olimi Sharl Kulon",
+        "1911-yilda Ernest Rezerford",
+        "1867-yilda Maykl Faradey",
+        "1903-yilda Jeyms Uimshurst"
+      ],
+      "t": 0,
+      "izoh": "Bu hodisani 1785-yilda fransuz olimi Sharl Kulon tajribada kuzatdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#342607d0"
+    },
+    {
+      "q": "Sharl Kulon qaysi davrda elektromagnit va mexanik hodisalar bo'yicha tadqiqot olib borgan?",
+      "v": [
+        "1770–1789-yillar mobaynida",
+        "1791–1867-yillarda",
+        "1832–1903-yillarda",
+        "1911-yilda"
+      ],
+      "t": 0,
+      "izoh": "Kulon 1770–1789-yillar mobaynida elektromagnit va mexanik hodisalar borasida tadqiqotlar olib borgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#3fb9ad3a"
+    },
+    {
+      "q": "Zaryadlangan jismlarning o'zaro ta'siri qanday asbob yordamida o'rganilgan?",
+      "v": [
+        "Buralma tarozi yordamida",
+        "Elektroskop yordamida",
+        "Elektrofor mashina yordamida",
+        "Faradey qafasi yordamida"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlangan jismlarning o'zaro ta'siri buralma tarozi yordamida o'rganilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#4ee21dcc"
+    },
+    {
+      "q": "Buralma tarozining tuzilishi qanday?",
+      "v": [
+        "Ingichka elastik simga shisha sterjen osilgan, sterjen uchlariga metall sharcha va muvozanatlovchi jism mahkamlangan",
+        "Metall gardishga sterjen o'tkazilgan va folga yaproqlari osilgan",
+        "Ikki aylanuvchi disk va «Leyden bankasi» silindrlaridan iborat",
+        "Yog'och qafas va elektroskopdan iborat"
+      ],
+      "t": 0,
+      "izoh": "Buralma tarozida ingichka elastik simga shisha sterjen osilgan; sterjenning bir uchiga A metall sharcha, ikkinchi uchiga C posangi (muvozanatlovchi jism) mahkamlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#ab9d96eb"
+    },
+    {
+      "q": "Buralma tarozida sharchalar bir xil ishorali zaryadlanganda A sharcha B sharchadan qanday harakatlanadi?",
+      "v": [
+        "Itariladi",
+        "Tortiladi",
+        "Qimir etmaydi",
+        "B sharchaga tegib qoladi"
+      ],
+      "t": 0,
+      "izoh": "Sharchalar bir xil ishorali zaryadlanganda A sharcha B sharchadan itariladi, turli ishorali zaryadlanganda esa tortiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#d07caef8"
+    },
+    {
+      "q": "Buralma tarozida sharchalarning o'zaro ta'sir kuchi qanday aniqlanadi?",
+      "v": [
+        "Simning burilish burakkiga qarab",
+        "Sharchaning tezligiga qarab",
+        "Sharchaning rangiga qarab",
+        "Posangining massasiga qarab"
+      ],
+      "t": 0,
+      "izoh": "A sharcha harakatga kelganda uni osilgan sim buraladi; o'zaro ta'sir kuchi simning burilish burakkiga qarab aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#6700f811"
+    },
+    {
+      "q": "Zaryadlangan sharchalarning o'zaro ta'sir kuchi ular orasidagi masofaga qanday bog'liq?",
+      "v": [
+        "Masofaning kvadratiga teskari proporsional",
+        "Masofaga to'g'ri proporsional",
+        "Masofaning kvadratiga to'g'ri proporsional",
+        "Masofaga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlangan sharchalarning o'zaro ta'sir kuchi (F) ular orasidagi masofa (r) ning kvadratiga teskari proporsional: F ~ 1/r².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#c315aa2d"
+    },
+    {
+      "q": "Kulon tajribada sharchalarning zaryadini qanday kamaytirib borgan?",
+      "v": [
+        "Zaryadlangan sharga shunday o'lchamdagi zaryadlanmagan shar tekkizib, zaryadni 2, 4, 8 marta kamaytirgan",
+        "Sharchalarni yerga ulab zaryadini oqizgan",
+        "Sharchalarni muzlatib zaryadini kamaytirgan",
+        "Sharchalar orasidagi masofani o'zgartirib"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlangan sharga xuddi shunday o'lchamdagi zaryadlanmagan shar tekkizilsa, zaryadlar teng ikkiga bo'linadi; shu asosda zaryad 2, 4, 8 marta kamaytirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#a36a3084"
+    },
+    {
+      "q": "Sharchalar orasidagi o'zaro ta'sir kuchi sharchalardagi zaryad miqdorlariga qanday bog'liq?",
+      "v": [
+        "Zaryad miqdorlarining ko'paytmasiga to'g'ri proporsional",
+        "Zaryadlarning yig'indisiga to'g'ri proporsional",
+        "Zaryadlarning ayirmasiga teskari proporsional",
+        "Zaryad miqdoriga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Tajribalar o'zaro ta'sir kuchi F ning sharchalardagi q₁ va q₂ zaryad miqdorlarining ko'paytmasiga to'g'ri proporsional ekanini ko'rsatgan: F ~ q₁·q₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#c94c1efe"
+    },
+    {
+      "q": "Nuqtaviy zaryad deb nimaga aytiladi?",
+      "v": [
+        "O'lchami va shakli hisobga olinmaydigan zaryadlangan jismga",
+        "Faqat bir nuqtaga joylashgan elektronga",
+        "Zaryadi 1 C ga teng bo'lgan jismga",
+        "Sharcha shaklidagi har qanday jismga"
+      ],
+      "t": 0,
+      "izoh": "Nuqtaviy zaryad deb, o'lchami va shakli hisobga olinmaydigan zaryadlangan jismga aytiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#cbc73f4f"
+    },
+    {
+      "q": "Kulon qonunining formulasi qanday ifodalanadi?",
+      "v": [
+        "F = k·|q₁|·|q₂|/r²",
+        "F = k·|q₁|·|q₂|·r²",
+        "F = k·(|q₁| + |q₂|)/r",
+        "F = k·r²/(|q₁|·|q₂|)"
+      ],
+      "t": 0,
+      "izoh": "Kulon nuqtaviy zaryadlarning o'zaro ta'sir kuchi formulasini F = k·|q₁|·|q₂|/r² ko'rinishida ifodalagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#0875381a"
+    },
+    {
+      "q": "Kulon qonunidagi k nima?",
+      "v": [
+        "Proporsionallik koeffitsiyenti",
+        "Zaryadning moduli",
+        "Sharchaning radiusi",
+        "Masofaning kvadrati"
+      ],
+      "t": 0,
+      "izoh": "Formuladagi k — proporsionallik koeffitsiyenti; |q₁| va |q₂| esa zaryadlarning ishorasi hisobga olinmagan holdagi miqdorlari (modullari).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#99ee5924"
+    },
+    {
+      "q": "Kulon qonuni qanday ifodalanadi?",
+      "v": [
+        "Vakuumda joylashgan ikki qo'zg'almas nuqtaviy elektr zaryadlarning o'zaro ta'sir kuchi ularning zaryad miqdorlari ko'paytmasiga to'g'ri va ular orasidagi masofaning kvadratiga teskari proporsionaldir",
+        "Zaryadlarning o'zaro ta'sir kuchi masofaga to'g'ri proporsionaldir",
+        "Zaryadlar kuchi faqat zaryad miqdoriga bog'liq",
+        "Har qanday muhitda zaryadlar kuchi bir xil bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Vakuumda joylashgan ikki qo'zg'almas nuqtaviy elektr zaryadlarning o'zaro ta'sir kuchi ularning zaryad miqdorlari ko'paytmasiga to'g'ri proporsional va ular orasidagi masofaning kvadratiga teskari proporsionaldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#f9d416e8"
+    },
+    {
+      "q": "Qo'zg'almas zaryadlangan jismlar o'zaro ta'sirini ifodalovchi qonun va bu kuch qanday ataladi?",
+      "v": [
+        "Kulon qonuni; Kulon kuchi yoki elektrostatik kuch",
+        "Nyuton qonuni; tortishish kuchi",
+        "Om qonuni; elektr kuchi",
+        "Faradey qonuni; maydon kuchi"
+      ],
+      "t": 0,
+      "izoh": "Qo'zg'almas zaryadlangan jismlar o'zaro ta'sirini ifodalovchi bu qonun Kulon qonuni deb, o'zaro ta'sir kuchi esa Kulon kuchi yoki elektrostatik kuch deb yuritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#0dcedcf8"
+    },
+    {
+      "q": "Ikki zaryadning o'zaro ta'sirida kuchlar Nyutonning uchinchi qonuniga ko'ra qanday bog'lanadi?",
+      "v": [
+        "F₁₂ = −F₂₁: miqdor jihatdan teng va o'zaro qarama-qarshi yo'nalgan",
+        "F₁₂ = F₂₁: bir xil yo'nalgan",
+        "F₁₂ = 2F₂₁",
+        "Kuchlar bir-biriga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Nyutonning uchinchi qonuniga ko'ra, bu kuchlar miqdor jihatdan teng va o'zaro qarama-qarshi yo'nalgan: F₁₂ = −F₂₁.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#07a66e5b"
+    },
+    {
+      "q": "Bir xil ishorali zaryadlar itarilishida kuch qanday yo'nalgan bo'ladi?",
+      "v": [
+        "Nuqtaviy zaryadlar markazini tutashtiruvchi to'g'ri chiziq bo'ylab tashqariga yo'nalgan",
+        "Zaryadlar markaziga ichkariga yo'nalgan",
+        "To'g'ri chiziqqa perpendikulyar yo'nalgan",
+        "Aylana bo'ylab yo'nalgan"
+      ],
+      "t": 0,
+      "izoh": "Bir xil ishorali zaryadlar bir-biridan itariladi; bunda kuch nuqtaviy zaryadlar markazini tutashtiruvchi to'g'ri chiziq bo'ylab tashqariga yo'nalgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#87fe5ec8"
+    },
+    {
+      "q": "Turli ishorali zaryadlar tortilishida kuch qanday yo'nalgan bo'ladi?",
+      "v": [
+        "Zaryadlar markazini tutashtiruvchi to'g'ri chiziq bo'ylab ichkariga yo'nalgan",
+        "To'g'ri chiziq bo'ylab tashqariga yo'nalgan",
+        "Vertikal yuqoriga yo'nalgan",
+        "Kuch yo'nalishi tasodifiy bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Turli ishorali zaryadlar bir-biriga tortiladi; bunda kuch zaryadlar markazini tutashtiruvchi to'g'ri chiziq bo'ylab ichkariga yo'nalgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#0c183c63"
+    },
+    {
+      "q": "Kulon kuchi formulasidagi k koeffitsiyent qanday ifodalanadi?",
+      "v": [
+        "k = F·r²/(|q₁|·|q₂|)",
+        "k = F·|q₁|·|q₂|/r²",
+        "k = |q₁|·|q₂|/(F·r²)",
+        "k = F/(|q₁|·|q₂|·r)"
+      ],
+      "t": 0,
+      "izoh": "Kulon kuchi formulasidan k quyidagicha ifodalanadi: k = F·r²/(|q₁|·|q₂|).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#0494c809"
+    },
+    {
+      "q": "Proporsionallik koeffitsiyenti k ning qiymati qancha?",
+      "v": [
+        "k = 9·10⁹ N·m²/C²",
+        "k = 9·10⁹ N·C²/m²",
+        "k = 1,6·10⁻¹⁹ N·m²/C²",
+        "k = 6,67·10⁻¹¹ N·m²/C²"
+      ],
+      "t": 0,
+      "izoh": "Proporsionallik koeffitsiyenti k = 9·10⁹ N·m²/C² ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#d32a24e8"
+    },
+    {
+      "q": "k = 9·10⁹ N·m²/C² ning fizik ma'nosi nimada?",
+      "v": [
+        "Zaryadlari bir kulondan bo'lgan ikkita nuqtaviy zaryad vakuumda bir-biridan 1 metr masofada turganda ular F = 9·10⁹ N kuch bilan ta'sirlashadi",
+        "1 C zaryad 1 m masofada 1 N kuch hosil qiladi",
+        "Ikki elektron 1 m masofada 9·10⁹ N kuch bilan tortiladi",
+        "Bir kulon zaryad 9·10⁹ elektrondan tashkil topgan"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlari bir kulondan bo'lgan ikkita nuqtaviy zaryad vakuumda bir-biridan 1 metr masofada turganda, ular F = 9·10⁹ N kuch bilan ta'sirlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#a5e26cbf"
+    },
+    {
+      "q": "1 kulon — bu qanday zaryad miqdori?",
+      "v": [
+        "Ikkita nuqtaviy zaryad vakuumda 1 m masofada 9·10⁹ N kuch bilan ta'sirlashadigan zaryad",
+        "Elektronning zaryadiga teng zaryad",
+        "1 m masofada 1 N kuch hosil qiladigan zaryad",
+        "1 kg massaga teng zaryad"
+      ],
+      "t": 0,
+      "izoh": "k ning fizik ma'nosidan kelib chiqib: zaryadlari bir kulondan bo'lgan nuqtaviy zaryadlar 1 m masofada 9·10⁹ N kuch bilan ta'sirlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#5f125c9f"
+    },
+    {
+      "q": "Ikki nuqtaviy zaryad orasidagi masofa 2 marta oshirilsa, ularning o'zaro ta'sir kuchi qanday o'zgaradi?",
+      "v": [
+        "4 marta kamayadi",
+        "2 marta kamayadi",
+        "2 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Kuch masofaning kvadratiga teskari proporsional: masofa 2 marta oshsa, kuch 4 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#0b678662"
+    },
+    {
+      "q": "Ikki nuqtaviy zaryaddan birining zaryadi 2 marta oshirilsa, o'zaro ta'sir kuchi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "4 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Kuch zaryadlar ko'paytmasiga to'g'ri proporsional: birining zaryadi 2 marta oshsa, kuch 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#ac714484"
+    },
+    {
+      "q": "Ikki nuqtaviy zaryad orasidagi masofa 2 marta kamaytirilsa, o'zaro ta'sir kuchi qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "4 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Kuch masofa kvadratiga teskari proporsional: masofa 2 marta kamaysa, kuch 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#8dd6e693"
+    },
+    {
+      "q": "Ikkala nuqtaviy zaryadning miqdori ham 2 martadan oshirilsa, o'zaro ta'sir kuchi qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "8 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Kuch zaryadlar ko'paytmasiga to'g'ri proporsional: 2·2 = 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#73710f36"
+    },
+    {
+      "q": "Elektrostatik kuchning yo'nalishi nimaga bog'liq?",
+      "v": [
+        "O'zaro ta'sirlashayotgan zaryadlarning ishorasiga",
+        "Zaryadlarning massasiga",
+        "Muhitning haroratiga",
+        "Sharchalarning rangiga"
+      ],
+      "t": 0,
+      "izoh": "Elektrostatik kuchning yo'nalishi o'zaro ta'sirlashayotgan zaryadlarning ishorasiga bog'liq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#ae2c821d"
+    },
+    {
+      "q": "10 cm masofa metrlarda qanday ifodalanadi?",
+      "v": [
+        "0,1 m",
+        "0,01 m",
+        "10 m",
+        "100 m"
+      ],
+      "t": 0,
+      "izoh": "r = 10 cm = 0,1 m (1 m = 100 sm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#1656a580"
+    },
+    {
+      "q": "Kulon qonuni qaysi sharoitda joylashgan zaryadlar uchun ifodalangan?",
+      "v": [
+        "Vakuumda joylashgan qo'zg'almas nuqtaviy zaryadlar uchun",
+        "Har qanday muhitdagi harakatlanuvchi zaryadlar uchun",
+        "Faqat suv ichidagi zaryadlar uchun",
+        "Faqat metall ichidagi zaryadlar uchun"
+      ],
+      "t": 0,
+      "izoh": "Kulon qonuni vakuumda joylashgan ikki qo'zg'almas nuqtaviy elektr zaryadlar uchun ifodalangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#75b8d037"
+    },
+    {
+      "q": "Kulon fanga qanday hissasi bilan mashhur?",
+      "v": [
+        "Elektr va magnit qutblarining o'zaro ta'siri, elektr zaryadlarining o'tkazgich sirti bo'ylab joylashish qonuniyatlari bilan",
+        "Atom tuzilishini kashf etgani bilan",
+        "Elektrofor mashinani yaratgani bilan",
+        "Yashinqaytargichni ixtiro qilgani bilan"
+      ],
+      "t": 0,
+      "izoh": "Elektr va magnit qutblarining o'zaro ta'siri, elektr zaryadlarining o'tkazgich sirti bo'ylab joylashish qonuniyatlari — Kulonning fanga qo'shgan ulkan hissasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#8e035b28"
+    },
+    {
+      "q": "Sharl Kulon qaysi yillarda yashagan?",
+      "v": [
+        "1736–1806-yillarda",
+        "1791–1867-yillarda",
+        "1832–1903-yillarda",
+        "973–1048-yillarda"
+      ],
+      "t": 0,
+      "izoh": "Sharl Kulon (1736–1806) — fransuz fizik olimi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#7fa07b15"
+    },
+    {
+      "q": "Zaryadlangan sharga shunday o'lchamdagi zaryadlanmagan shar tekkizilsa, zaryadlar qanday taqsimlanadi?",
+      "v": [
+        "Zaryadlar teng ikkiga bo'linadi",
+        "Barcha zaryad ikkinchi sharpa o'tadi",
+        "Zaryadlar uch baravar ko'payadi",
+        "Zaryad o'zgarishsiz qoladi"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlangan sharga xuddi shunday o'lchamdagi zaryadlanmagan shar tekkizilsa, zaryadlar teng ikkiga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#04596efd"
+    },
+    {
+      "q": "Kulon qonuni formulasida |q₁| va |q₂| nimani anglatadi?",
+      "v": [
+        "Zaryadlarning ishorasi hisobga olinmagan holdagi miqdorlari (modullari)",
+        "Zaryadlarning ishorasi bilan olingan qiymatlari",
+        "Zaryadlarning yig'indisi",
+        "Zaryadlarning nisbati"
+      ],
+      "t": 0,
+      "izoh": "|q₁| va |q₂| — q₁ va q₂ zaryadlarning modullari, ya'ni zaryadlarning ishorasi hisobga olinmagan holdagi miqdori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#cd490948"
+    },
+    {
+      "q": "Bir xil ishorali (+, +) zaryadlangan sharchalar bir-biriga qanday ta'sir qiladi?",
+      "v": [
+        "Bir-biridan itariladi",
+        "Bir-biriga tortiladi",
+        "Ta'sirlashmaydi",
+        "Bir-birini zaryadsizlantiradi"
+      ],
+      "t": 0,
+      "izoh": "Sharchalar bir xil ishorali (+, +) zaryadlanganda A sharcha B sharchadan itariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#0671b4de"
+    },
+    {
+      "q": "Turli (−, +) ishorali zaryadlangan sharchalar bir-biriga qanday ta'sir qiladi?",
+      "v": [
+        "Bir-biriga tortiladi",
+        "Bir-biridan itariladi",
+        "Ta'sirlashmaydi",
+        "Aylanma harakat qiladi"
+      ],
+      "t": 0,
+      "izoh": "Sharchalar turli (−, +) ishorali zaryadlanganda tortiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#99679fd8"
+    },
+    {
+      "q": "Elektrostatik kuch deb nimaga aytiladi?",
+      "v": [
+        "Qo'zg'almas zaryadlangan jismlarning o'zaro ta'sir kuchiga",
+        "Harakatlanuvchi jismning tortishish kuchiga",
+        "Magnitlarning o'zaro ta'sir kuchiga",
+        "Jismlarning Yer bilan tortishish kuchiga"
+      ],
+      "t": 0,
+      "izoh": "Qo'zg'almas zaryadlangan jismlarning o'zaro ta'sir kuchi Kulon kuchi yoki elektrostatik kuch deb yuritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#b09d15d4"
+    },
+    {
+      "q": "Zaryadlangan sharcha A harakatga kelganda buralma tarozida nima sodir bo'ladi?",
+      "v": [
+        "Uni osilgan sim buraladi",
+        "Sim uzilib ketadi",
+        "Sharcha yonib ketadi",
+        "Sterjen sinadi"
+      ],
+      "t": 0,
+      "izoh": "A sharcha harakatga kelganda u osilgan sim buraladi; o'zaro ta'sir kuchi simning burilish burakkiga qarab aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m03-kulon-qonuni#b1c6acf9"
+    }
+  ]
+}

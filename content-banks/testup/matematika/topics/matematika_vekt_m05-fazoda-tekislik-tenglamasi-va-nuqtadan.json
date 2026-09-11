@@ -1,0 +1,1609 @@
+{
+  "nom": "Fazoda tekislik tenglamasi va nuqtadan tekislikkacha masofa",
+  "bolim": "Koordinatalar va vektorlar",
+  "blok": "vekt",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Toshkent shahri fazoviy modelida bino tomi 3x − 4y + 12z − 26 = 0 tekislik bilan berilgan. Shu tekislikning normal vektorini ko'rsating.",
+      "v": [
+        "n(3; −4; 12)",
+        "n(3; 4; 12)",
+        "n(−26; 3; −4)",
+        "n(12; −4; 3)"
+      ],
+      "t": 0,
+      "izoh": "Ax + By + Cz + D = 0 ko'rinishdagi tenglamada normal vektor koordinatalari x, y, z oldidagi koeffitsientlardan olinadi. Bu yerda A = 3, B = −4, C = 12. Demak n(3; −4; 12). Ozod had D = −26 normal vektorga umuman kirmaydi. Javob: n(3; −4; 12).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "normal-vektor-aniqlash",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#7c3f9687"
+    },
+    {
+      "q": "Suv ombori tubining matematik modeli 5x + 2z − 30 = 0 tenglama bilan yozilgan. Bu tekislik normal vektorining koordinatalarini toping.",
+      "v": [
+        "(5; 2; 0)",
+        "(5; 0; 2)",
+        "(5; 2; −30)",
+        "(0; 5; 2)"
+      ],
+      "t": 1,
+      "izoh": "Tenglamada y hadi umuman qatnashmagan, ya'ni B = 0. Koeffitsientlar A = 5, B = 0, C = 2 bo'ladi. Shuning uchun normal vektor n(5; 0; 2) ko'rinishda yoziladi. y ning yo'qligi vektorning ikkinchi koordinatasi nol ekanini bildiradi. Javob: (5; 0; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "normal-vektor-aniqlash",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#7f6b8b96"
+    },
+    {
+      "q": "Uch o'lchamli chizmada devor tekisligi 2(x − 1) + 6(y + 3) − 4z = 0 ko'rinishda berilgan. Uning eng sodda butun koordinatali normal vektorini tanlang.",
+      "v": [
+        "(2; 6; 4)",
+        "(1; 3; 2)",
+        "(1; 3; −2)",
+        "(−1; 3; −2)"
+      ],
+      "t": 2,
+      "izoh": "Qavslarni ochamiz: 2x − 2 + 6y + 18 − 4z = 0, ya'ni 2x + 6y − 4z + 16 = 0. Barcha hadni 2 ga bo'lib soddalashtiramiz: x + 3y − 2z + 8 = 0. Normal vektor koeffitsientlardan olinadi va (1; 3; −2) bo'ladi. Javob: (1; 3; −2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "normal-vektor-aniqlash",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#6b4ca0b9"
+    },
+    {
+      "q": "Quyidagi tekisliklardan qaysi birining normal vektori n(4; −6; 10) vektorga kollinear: 4x + 6y + 10z = 1, 2x + 3y − 5z = 0, x − y + z = 4, 2x − 3y + 5z = 7?",
+      "v": [
+        "4x + 6y + 10z = 1",
+        "2x + 3y − 5z = 0",
+        "x − y + z = 4",
+        "2x − 3y + 5z = 7"
+      ],
+      "t": 3,
+      "izoh": "n(4; −6; 10) vektorni 2 ga bo'lsak (2; −3; 5) hosil bo'ladi. Tekislikning normal vektori koeffitsientlardan iborat, shuning uchun koeffitsientlari (2; −3; 5) ga proporsional tenglama izlanadi. Bu 2x − 3y + 5z = 7 tekislik. Qolganlarida ishoralar mos kelmaydi. Javob: 2x − 3y + 5z = 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "normal-vektor-aniqlash",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#14535338"
+    },
+    {
+      "q": "Muhandis Dilshod loyihada M(2; −1; 3) nuqtadan o'tuvchi va n(1; 4; −2) vektorga perpendikulyar tekislik tenglamasini yozmoqchi. To'g'ri tenglamani tanlang.",
+      "v": [
+        "x + 4y − 2z + 8 = 0",
+        "x + 4y − 2z − 8 = 0",
+        "2x − y + 3z − 8 = 0",
+        "x + 4y − 2z + 4 = 0"
+      ],
+      "t": 0,
+      "izoh": "Nuqta va normal vektor berilganda tenglama A(x − x₀) + B(y − y₀) + C(z − z₀) = 0 ko'rinishida yoziladi. Demak 1·(x − 2) + 4·(y + 1) − 2·(z − 3) = 0. Qavslarni ochamiz: x − 2 + 4y + 4 − 2z + 6 = 0. Bundan x + 4y − 2z + 8 = 0. Javob: x + 4y − 2z + 8 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekislik-tenglamasi-normal-va-nuqta",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#d5c58214"
+    },
+    {
+      "q": "Sensor o'rnatilgan K(−3; 0; 5) nuqtadan o'tib, OZ o'qiga perpendikulyar bo'lgan tekislik tenglamasi qanday ko'rinishda bo'ladi?",
+      "v": [
+        "z = −3",
+        "z = 5",
+        "x = −3",
+        "z + 5 = 0"
+      ],
+      "t": 1,
+      "izoh": "OZ o'qiga perpendikulyar tekislikning normal vektori shu o'q yo'nalishida olinadi, ya'ni n(0; 0; 1). Tenglama 0·(x + 3) + 0·(y − 0) + 1·(z − 5) = 0 ko'rinishga keladi. Bu z − 5 = 0, ya'ni z = 5. Javob: z = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekislik-tenglamasi-normal-va-nuqta",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#9807f611"
+    },
+    {
+      "q": "Ikki ustunning uchi A(1; 2; −1) va B(5; −2; 3) nuqtalarda. AB kesmaning o'rtasidan o'tib, AB vektorga perpendikulyar bo'lgan tekislik tenglamasini toping.",
+      "v": [
+        "x − y + z + 4 = 0",
+        "4x − 4y + 4z − 4 = 0",
+        "x − y + z − 4 = 0",
+        "x + y + z − 4 = 0"
+      ],
+      "t": 2,
+      "izoh": "Avval o'rta nuqtani topamiz: ((1 + 5)/2; (2 − 2)/2; (−1 + 3)/2) = (3; 0; 1). AB vektor koordinatalari (5 − 1; −2 − 2; 3 + 1) = (4; −4; 4), uni 4 ga bo'lib (1; −1; 1) olamiz. Tenglama (x − 3) − (y − 0) + (z − 1) = 0 bo'lib, x − y + z − 4 = 0 ga keladi. Javob: x − y + z − 4 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-perpendikulyar-tekislik",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#63538c42"
+    },
+    {
+      "q": "Geodezist Nodira 3x − 2y + z − 7 = 0 tekislikda yotadigan nuqtani izlamoqda. Berilgan nuqtalardan qaysi biri shu tekislikka tegishli?",
+      "v": [
+        "(1; 1; 1)",
+        "(0; 0; −7)",
+        "(3; −2; 1)",
+        "(2; 1; 3)"
+      ],
+      "t": 3,
+      "izoh": "Nuqta tekislikka tegishli bo'lishi uchun uning koordinatalari tenglamani ayniyatga aylantirishi kerak. (2; 1; 3) uchun 3·2 − 2·1 + 3 − 7 = 6 − 2 + 3 − 7 = 0 bo'ladi. Qolgan uchta nuqtada chap tomon noldan farqli qiymat beradi. Javob: (2; 1; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-tekislikda-tekshirish",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#65050ef5"
+    },
+    {
+      "q": "Dron P(4; a; −2) nuqtada turibdi va u 2x + 5y − 5z − 8 = 0 tekislikda joylashgan. a parametrning qiymatini toping.",
+      "v": [
+        "−2",
+        "2",
+        "−10",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "Nuqta tekislikda bo'lsa, uning koordinatalari tenglamani qanoatlantiradi. Qo'yamiz: 2·4 + 5a − 5·(−2) − 8 = 0. Hisoblaymiz: 8 + 5a + 10 − 8 = 0, ya'ni 5a = −10. Bundan a = −2. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-tekislikda-tekshirish",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#f9817f97"
+    },
+    {
+      "q": "Uchta ustunning uchi A(1; 0; 0), B(0; 2; 0) va C(0; 0; 4) nuqtalarda joylashgan. Shu uch nuqtadan o'tuvchi tekislik tenglamasini tanlang.",
+      "v": [
+        "x + 2y + 4z − 4 = 0",
+        "4x + 2y + z − 4 = 0",
+        "4x + 2y + z − 1 = 0",
+        "x + y + z − 1 = 0"
+      ],
+      "t": 1,
+      "izoh": "Nuqtalar koordinata o'qlarida yotgani uchun kesmalardagi tenglamadan foydalanamiz: x/a + y/b + z/c = 1, bunda a = 1, b = 2, c = 4. Demak x/1 + y/2 + z/4 = 1. Barcha hadni 4 ga ko'paytiramiz va 4x + 2y + z = 4 ni olamiz. Javob: 4x + 2y + z − 4 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-nuqta-orqali-tekislik",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#a0f1ff97"
+    },
+    {
+      "q": "Fazoda M(1; 1; 1), N(2; 3; 1) va K(1; 2; 3) nuqtalar berilgan. Shu uchta nuqtadan o'tuvchi tekislikning tenglamasini aniqlang.",
+      "v": [
+        "4x + 2y + z − 7 = 0",
+        "x + 2y − 3z = 0",
+        "4x − 2y + z − 3 = 0",
+        "4x − 2y + z − 4 = 0"
+      ],
+      "t": 2,
+      "izoh": "MN vektor (1; 2; 0), MK vektor esa (0; 1; 2) bo'ladi. Normal vektor ikkalasiga perpendikulyar, ya'ni vektor ko'paytmaga teng: n = (2·2 − 0·1; 0·0 − 1·2; 1·1 − 2·0) = (4; −2; 1). M(1; 1; 1) nuqtadan foydalanamiz: 4(x − 1) − 2(y − 1) + (z − 1) = 0. Soddalashtirsak 4x − 2y + z − 3 = 0. Javob: 4x − 2y + z − 3 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-nuqta-orqali-tekislik",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#ccbd35d4"
+    },
+    {
+      "q": "Yog'och panel 6x + 3y + 2z − 12 = 0 tekislikda yotadi. Panel tekisligi koordinata o'qlaridan kesib olgan kesmalar uzunliklarini toping.",
+      "v": [
+        "6; 3 va 2",
+        "12; 12 va 12",
+        "1/2; 1/4 va 1/6",
+        "2; 4 va 6"
+      ],
+      "t": 3,
+      "izoh": "Tenglamani kesmalardagi ko'rinishga keltiramiz. 6x + 3y + 2z = 12 tenglikni 12 ga bo'lamiz: x/2 + y/4 + z/6 = 1. Maxrajlar mos ravishda o'qlardagi kesmalarni beradi: a = 2, b = 4, c = 6. Javob: 2; 4 va 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-oqlari-kesmalari",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#cc53175e"
+    },
+    {
+      "q": "Ombor burchagida 2x + 3y + 6z − 12 = 0 tekislik bilan kesilgan uchburchakli piramida hosil bo'lgan. Koordinata tekisliklari bilan chegaralangan shu jismning hajmini toping.",
+      "v": [
+        "8",
+        "16",
+        "24",
+        "48"
+      ],
+      "t": 0,
+      "izoh": "Avval kesmalarni topamiz: x/6 + y/4 + z/2 = 1, ya'ni a = 6, b = 4, c = 2. Koordinata tekisliklari bilan chegaralangan jism qirralari shu kesmalar bo'lgan to'g'ri burchakli tetraedr. Uning hajmi V = (1/6)·a·b·c = (1/6)·6·4·2 = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-oqlari-kesmalari",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#f5361166"
+    },
+    {
+      "q": "Bino qavatlari orasidagi shift 4z − 20 = 0 tenglama bilan berilgan. Bu tekislik haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "U xOz tekisligiga parallel va undan 5 birlik uzoqlikda",
+        "U xOy tekisligiga parallel va undan 5 birlik uzoqlikda",
+        "U OZ o'qini o'z ichiga oladi",
+        "U xOy tekisligiga perpendikulyar"
+      ],
+      "t": 1,
+      "izoh": "4z − 20 = 0 tenglamadan z = 5 kelib chiqadi. Tenglamada x va y qatnashmagani uchun tekislikning har bir nuqtasida applikata 5 ga teng, ya'ni tekislik xOy ga parallel. xOy tekisligi z = 0 bo'lgani uchun ular orasidagi masofa 5 birlik. Javob: xOy tekisligiga parallel va undan 5 birlik uzoqlikda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-tekisligiga-parallel",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#919db460"
+    },
+    {
+      "q": "Quyidagi tenglamalardan qaysi biri OY o'qini butunlay o'z ichiga oluvchi tekislikni beradi: y = 3, x + y = 1, 2x + 5z = 0, z = 4?",
+      "v": [
+        "y = 3",
+        "x + y = 1",
+        "2x + 5z = 0",
+        "z = 4"
+      ],
+      "t": 2,
+      "izoh": "Tekislik OY o'qini o'z ichiga olishi uchun (0; t; 0) ko'rinishdagi barcha nuqtalar tenglamani qanoatlantirishi kerak. 2x + 5z = 0 ga qo'ysak 2·0 + 5·0 = 0 bo'ladi va bu t ning har qanday qiymatida to'g'ri. Boshqa tenglamalarda ozod had noldan farqli yoki y qatnashadi. Javob: 2x + 5z = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-tekisligiga-parallel",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#90282e0d"
+    },
+    {
+      "q": "Ikki qavat oralig'idagi to'siqlar 3x − y + 2z − 5 = 0 va 6x − 2y + 4z + 9 = 0 tekisliklar bilan modellashtirilgan. Bu tekisliklarning o'zaro joylashuvini aniqlang.",
+      "v": [
+        "Ustma-ust tushadi",
+        "Perpendikulyar",
+        "Kesishadi, lekin perpendikulyar emas",
+        "Parallel, ustma-ust tushmaydi"
+      ],
+      "t": 3,
+      "izoh": "Normal vektorlar n₁(3; −1; 2) va n₂(6; −2; 4). Ko'rinib turibdiki n₂ = 2·n₁, ya'ni ular kollinear va tekisliklar parallel. Ustma-ust tushishi uchun ozod hadlar ham shu nisbatda bo'lishi kerak edi: 2·(−5) = −10, lekin tenglamada 9 turibdi. Javob: parallel, ustma-ust tushmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallellik-sharti",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#3d1fcd78"
+    },
+    {
+      "q": "Konveyer lentasining ikki qismi x + my − 3z + 1 = 0 va 2x − 8y − 6z + 7 = 0 tekisliklarda yotadi hamda ular o'zaro parallel. m ning qiymatini toping.",
+      "v": [
+        "−4",
+        "4",
+        "−8",
+        "−16"
+      ],
+      "t": 0,
+      "izoh": "Parallellik uchun normal vektorlar kollinear bo'lishi kerak, ya'ni 1/2 = m/(−8) = (−3)/(−6). Chetki nisbatlar 1/2 ga teng ekanini ko'ramiz. Demak m/(−8) = 1/2 va bundan m = −4. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallellik-sharti",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#31fa6dfc"
+    },
+    {
+      "q": "Quyosh panelini T(1; −2; 4) nuqtadan o'tkazib, 2x − y + 3z − 6 = 0 tekislikka parallel qilib joylashtirish kerak. Panel tekisligining tenglamasi qanday bo'ladi?",
+      "v": [
+        "2x − y + 3z + 16 = 0",
+        "2x − y + 3z − 16 = 0",
+        "2x − y + 3z − 6 = 0",
+        "x − 2y + 4z − 16 = 0"
+      ],
+      "t": 1,
+      "izoh": "Parallel tekisliklarning normal vektori bir xil, shuning uchun izlanayotgan tenglama 2x − y + 3z + D = 0 ko'rinishda bo'ladi. T(1; −2; 4) nuqtani qo'yamiz: 2·1 − (−2) + 3·4 + D = 0, ya'ni 2 + 2 + 12 + D = 0. Bundan D = −16. Javob: 2x − y + 3z − 16 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallellik-sharti",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#f9332a18"
+    },
+    {
+      "q": "Devor va shift modeli 4x + 2y − 5z + 3 = 0 hamda 3x − y + 2z − 8 = 0 tekisliklar bilan berilgan. Ular o'zaro perpendikulyarmi?",
+      "v": [
+        "Yo'q, chunki normal vektorlar kollinear",
+        "Ha, chunki koeffitsientlar nisbati teng",
+        "Ha, chunki normal vektorlarning skalyar ko'paytmasi nolga teng",
+        "Yo'q, chunki skalyar ko'paytma 24 ga teng"
+      ],
+      "t": 2,
+      "izoh": "Ikki tekislik perpendikulyar bo'lishi uchun ularning normal vektorlari perpendikulyar bo'lishi kerak. n₁(4; 2; −5) va n₂(3; −1; 2) uchun skalyar ko'paytma: 4·3 + 2·(−1) + (−5)·2 = 12 − 2 − 10 = 0. Ko'paytma nol chiqdi, demak tekisliklar perpendikulyar. Javob: ha, skalyar ko'paytma nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perpendikulyarlik-sharti",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#bee3698b"
+    },
+    {
+      "q": "Ikki tayanch tekislik kx + 3y − 2z + 1 = 0 va 2x − ky + 6z − 5 = 0 o'zaro perpendikulyar bo'lishi kerak. k ning qiymatini toping.",
+      "v": [
+        "12",
+        "−4",
+        "4",
+        "−12"
+      ],
+      "t": 3,
+      "izoh": "Perpendikulyarlik sharti A₁A₂ + B₁B₂ + C₁C₂ = 0 ko'rinishida yoziladi. Qo'yamiz: k·2 + 3·(−k) + (−2)·6 = 0. Soddalashtiramiz: 2k − 3k − 12 = 0, ya'ni −k = 12. Bundan k = −12. Javob: −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyarlik-sharti",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#4c328b58"
+    },
+    {
+      "q": "Ustunning yon yuzasi 5x − 3y + 7 = 0 tenglama bilan berilgan. Bu tekislikning xOy koordinata tekisligiga nisbatan joylashuvini aniqlang.",
+      "v": [
+        "Perpendikulyar",
+        "Parallel",
+        "30° burchak ostida kesishadi",
+        "Ustma-ust tushadi"
+      ],
+      "t": 0,
+      "izoh": "Tekislikning normal vektori n(5; −3; 0), xOy tekisligining normali esa k(0; 0; 1). Skalyar ko'paytma 5·0 + (−3)·0 + 0·1 = 0 chiqadi. Normal vektorlar perpendikulyar bo'lgani uchun tekisliklar ham perpendikulyar bo'ladi. Javob: perpendikulyar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyarlik-sharti",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#441ebb5a"
+    },
+    {
+      "q": "Anvar M(3; −1; 2) nuqtadan 2x − y + 2z − 5 = 0 tekislikkacha bo'lgan masofani hisoblashi kerak. Bu masofa nechaga teng?",
+      "v": [
+        "6",
+        "2",
+        "3",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "Masofa formulasi d = |Ax₀ + By₀ + Cz₀ + D| / √(A² + B² + C²) ko'rinishda. Surat: |2·3 − (−1) + 2·2 − 5| = |6 + 1 + 4 − 5| = 6. Maxraj: √(2² + (−1)² + 2²) = √9 = 3. Demak d = 6 : 3 = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtadan-tekislikkacha-masofa",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#68bc7527"
+    },
+    {
+      "q": "Chiroq K(1; 2; −2) nuqtaga o'rnatilgan, shift esa x + 2y + 2z + 8 = 0 tekislikda yotadi. Chiroqdan shiftgacha bo'lgan masofani toping.",
+      "v": [
+        "9",
+        "1",
+        "3",
+        "27"
+      ],
+      "t": 2,
+      "izoh": "Formulaga qo'yamiz: surat |1 + 2·2 + 2·(−2) + 8| = |1 + 4 − 4 + 8| = 9. Maxraj √(1² + 2² + 2²) = √(1 + 4 + 4) = √9 = 3. Demak masofa 9 : 3 = 3 ga teng. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtadan-tekislikkacha-masofa",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#0be62772"
+    },
+    {
+      "q": "Koordinatalar boshidan 6x − 3y + 2z − 14 = 0 tekislikkacha bo'lgan masofa nechaga teng?",
+      "v": [
+        "14",
+        "7",
+        "4",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Koordinatalar boshi O(0; 0; 0) uchun suratda faqat ozod had qoladi: |6·0 − 3·0 + 2·0 − 14| = 14. Maxraj √(6² + (−3)² + 2²) = √(36 + 9 + 4) = √49 = 7. Demak d = 14 : 7 = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtadan-tekislikkacha-masofa",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#2239e310"
+    },
+    {
+      "q": "Zavod tomida o'rnatilgan datchik D(4; 4; 4) nuqtada, tom qoplamasi esa 2x + 2y − z − 6 = 0 tekislikda. Barcha o'lchamlar metrda berilgan bo'lsa, datchikdan qoplamagacha masofa necha metr?",
+      "v": [
+        "2 m",
+        "6 m",
+        "18 m",
+        "3 m"
+      ],
+      "t": 0,
+      "izoh": "Masofa formulasiga qo'yamiz: surat |2·4 + 2·4 − 4 − 6| = |8 + 8 − 4 − 6| = 6. Maxraj √(2² + 2² + (−1)²) = √(4 + 4 + 1) = 3. Masofa 6 : 3 = 2, ya'ni 2 metr. Javob: 2 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtadan-tekislikkacha-masofa",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#75c9775e"
+    },
+    {
+      "q": "Ombor javonlarining ikki tokchasi 2x − y + 2z − 3 = 0 va 2x − y + 2z + 9 = 0 tekisliklarda joylashgan. Tokchalar orasidagi masofani toping.",
+      "v": [
+        "12",
+        "4",
+        "6",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Normal vektorlar bir xil bo'lgani uchun tekisliklar parallel. Parallel tekisliklar orasidagi masofa d = |D₁ − D₂| / √(A² + B² + C²) formula bilan topiladi. Surat |−3 − 9| = 12, maxraj √(4 + 1 + 4) = 3. Demak d = 12 : 3 = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-tekisliklar-orasidagi-masofa",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#c1b1f10f"
+    },
+    {
+      "q": "Ikki devorning gorizontal kesimi 3x + 4y − 12 = 0 va 6x + 8y + 26 = 0 tenglamalar bilan berilgan. Devorlar orasidagi masofani hisoblang.",
+      "v": [
+        "7,6",
+        "2,5",
+        "5",
+        "25"
+      ],
+      "t": 2,
+      "izoh": "Masofa formulasidan foydalanish uchun ikkala tenglamada koeffitsientlar bir xil bo'lishi shart. Ikkinchi tenglamani 2 ga bo'lamiz: 3x + 4y + 13 = 0. Endi d = |−12 − 13| / √(3² + 4²) = 25 : 5 = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallel-tekisliklar-orasidagi-masofa",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#2507cd8a"
+    },
+    {
+      "q": "Ikki yog'och qalqon x + y = 0 va x + z = 0 tekisliklarda yotibdi. Qalqonlar orasidagi o'tkir burchakni toping.",
+      "v": [
+        "30°",
+        "45°",
+        "90°",
+        "60°"
+      ],
+      "t": 3,
+      "izoh": "Normal vektorlar n₁(1; 1; 0) va n₂(1; 0; 1) bo'ladi. Skalyar ko'paytma 1·1 + 1·0 + 0·1 = 1. Har ikkala vektorning uzunligi √2, ko'paytmasi esa 2. Demak cos φ = 1/2, bundan φ = 60°. Javob: 60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekisliklar-orasidagi-burchak",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#91239af6"
+    },
+    {
+      "q": "Chodirning ikki yon yuzasi 2x − y + 2z − 1 = 0 va x + 2y + 2z + 5 = 0 tekisliklarda yotadi. Yuzalar orasidagi burchak kosinusini toping.",
+      "v": [
+        "4/9",
+        "8/9",
+        "2/9",
+        "4/3"
+      ],
+      "t": 0,
+      "izoh": "n₁(2; −1; 2) va n₂(1; 2; 2) vektorlarning skalyar ko'paytmasi 2·1 + (−1)·2 + 2·2 = 2 − 2 + 4 = 4. Har ikkala vektorning uzunligi √(4 + 1 + 4) = 3. Tekisliklar orasidagi burchak uchun cos φ = |4| : (3·3) = 4/9. Javob: 4/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekisliklar-orasidagi-burchak",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#c3727c55"
+    },
+    {
+      "q": "Tomning nishab yuzasi 2x + 3y + 6z − 12 = 0 tekislikda yotadi. Nishab bilan gorizontal xOy tekisligi orasidagi burchak kosinusini toping.",
+      "v": [
+        "1/7",
+        "6/7",
+        "7/6",
+        "3/7"
+      ],
+      "t": 1,
+      "izoh": "Gorizontal tekislikning normal vektori k(0; 0; 1) ko'rinishda. Nishab tekisligining normali n(2; 3; 6), uzunligi √(4 + 9 + 36) = √49 = 7. Skalyar ko'paytma n·k = 6 ga teng. Demak cos φ = |6| : (7·1) = 6/7. Javob: 6/7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekislik-va-koordinata-tekisligi-burchagi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#dc00d3af"
+    },
+    {
+      "q": "OZ o'qida shunday nuqta topish kerakki, u 2x + 2y + z + 4 = 0 tekislikdan 3 birlik uzoqlikda bo'lsin. Shu nuqtaning musbat applikatasini aniqlang.",
+      "v": [
+        "9",
+        "13",
+        "5",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Izlanayotgan nuqta M(0; 0; c) ko'rinishda bo'ladi. Masofa formulasi: |2·0 + 2·0 + c + 4| : √(4 + 4 + 1) = 3. Maxraj √9 = 3 bo'lgani uchun |c + 4| = 9 hosil bo'ladi. Bundan c = 5 yoki c = −13, musbat qiymat esa 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masofa-orqali-parametr-topish",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#59e85093"
+    },
+    {
+      "q": "x + 2y + 2z + D = 0 tekislik A(2; 1; 2) nuqtadan 4 birlik masofada joylashgan va D manfiy son. D ning qiymatini toping.",
+      "v": [
+        "−4",
+        "4",
+        "−12",
+        "−20"
+      ],
+      "t": 3,
+      "izoh": "Masofa formulasiga qo'yamiz: |2 + 2·1 + 2·2 + D| : √(1 + 4 + 4) = 4. Maxraj 3 bo'lgani uchun |8 + D| = 12 tenglik hosil bo'ladi. Bundan 8 + D = 12 yoki 8 + D = −12, ya'ni D = 4 yoki D = −20. Shart bo'yicha D manfiy, demak D = −20. Javob: −20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masofa-orqali-parametr-topish",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#1425541d"
+    },
+    {
+      "q": "Markazi C(1; −2; 2) nuqtada bo'lgan sharsimon suv idishi 2x − y + 2z + 4 = 0 tekislikka urinib turadi. Idish radiusini toping.",
+      "v": [
+        "4",
+        "12",
+        "8",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Shar tekislikka urinsa, markazdan tekislikkacha bo'lgan masofa radiusga teng bo'ladi. Surat: |2·1 − (−2) + 2·2 + 4| = |2 + 2 + 4 + 4| = 12. Maxraj: √(4 + 1 + 4) = 3. Demak R = 12 : 3 = 4. Javob: 4. 8 javobi radius o’rniga diametr olinganda chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sfera-tekislik-urinish",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#90700f49"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan sharsimon idish markazi P(2; 1; −1) nuqtada. Uni x + 2y + 2z − 20 = 0 tekislik bilan kesganda hosil bo'lgan doira radiusini toping.",
+      "v": [
+        "6 sm",
+        "8 sm",
+        "10 sm",
+        "4 sm"
+      ],
+      "t": 1,
+      "izoh": "Avval markazdan tekislikkacha masofani topamiz: |2 + 2·1 + 2·(−1) − 20| : √(1 + 4 + 4) = 18 : 3 = 6 sm. Kesim doirasining radiusi Pifagor teoremasidan chiqadi: r = √(R² − d²) = √(100 − 36) = √64 = 8 sm. Javob: 8 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesim-doira-radiusi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#0039dd4d"
+    },
+    {
+      "q": "Loyihada A(1; 1; 1) va B(4; 0; −2) nuqtalar x + y + z − 5 = 0 tekislikka nisbatan qanday joylashganini aniqlang.",
+      "v": [
+        "Ikkalasi har xil tomonda",
+        "A nuqta tekislikda yotadi",
+        "Ikkalasi tekislikning bir tomonida",
+        "B nuqta tekislikda yotadi"
+      ],
+      "t": 2,
+      "izoh": "Nuqta koordinatalarini tenglamaning chap tomoniga qo'yamiz. A uchun 1 + 1 + 1 − 5 = −2 chiqadi. B uchun 4 + 0 − 2 − 5 = −3 chiqadi. Ikkala qiymat ham manfiy, ya'ni ishoralar bir xil. Demak nuqtalar tekislikning bir tomonida joylashgan. Javob: ikkalasi bir tomonida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqtalar-tekislikka-nisbatan-tomoni",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#2bac5071"
+    },
+    {
+      "q": "Qurilish chizmasida ikki tekislik x − y + 4z = 9 va 3x + 3y − 2z = 0 bilan berilgan. Ularning normal vektorlari yig'indisini toping.",
+      "v": [
+        "(−2; −4; 6)",
+        "(4; 2; 6)",
+        "(3; −3; −8)",
+        "(4; 2; 2)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tekislikning normal vektori n₁(1; −1; 4), ikkinchisiniki esa n₂(3; 3; −2) bo'ladi. Vektorlar mos koordinatalari bo'yicha qo'shiladi: (1 + 3; −1 + 3; 4 − 2). Natijada (4; 2; 2) vektor hosil bo'ladi. Javob: (4; 2; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "normal-vektor-aniqlash",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#0b04e770"
+    },
+    {
+      "q": "Bog'dagi soyabon ustuni yo'nalishi n(1; 0; 3) vektor bilan berilgan. Soyabon yuzasi P(2; 5; 1) nuqtadan o'tib, ustunga perpendikulyar bo'lsa, uning tenglamasini yozing.",
+      "v": [
+        "x + 3z + 5 = 0",
+        "x + 5y + 3z − 5 = 0",
+        "x + 3z − 5 = 0",
+        "2x + 5y + z − 5 = 0"
+      ],
+      "t": 2,
+      "izoh": "Ustun yo'nalishi tekislikning normal vektori bo'ladi, ya'ni n(1; 0; 3). Tenglamani 1·(x − 2) + 0·(y − 5) + 3·(z − 1) = 0 ko'rinishda yozamiz. Qavslarni ochamiz: x − 2 + 3z − 3 = 0. Bundan x + 3z − 5 = 0 kelib chiqadi. Javob: x + 3z − 5 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekislik-tenglamasi-normal-va-nuqta",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#fc9c9251"
+    },
+    {
+      "q": "Koordinatalar boshidan o'tuvchi va n(2; −3; 5) vektorga perpendikulyar bo'lgan tekislikning tenglamasi qanday ko'rinishga ega bo'ladi?",
+      "v": [
+        "2x − 3y + 5z + 1 = 0",
+        "2x − 3y + 5z = 0",
+        "2x − 3y + 5z − 4 = 0",
+        "5x − 3y + 2z = 0"
+      ],
+      "t": 1,
+      "izoh": "Tekislik O(0; 0; 0) nuqtadan o'tsa, tenglamadagi ozod had D nolga teng bo'ladi. Normal vektor koeffitsientlarni beradi, ya'ni 2x − 3y + 5z + D = 0. O nuqtani qo'yamiz: 0 + 0 + 0 + D = 0, bundan D = 0. Javob: 2x − 3y + 5z = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekislik-tenglamasi-normal-va-nuqta",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#cfef6ade"
+    },
+    {
+      "q": "Qutining bir qirrasi bo'ylab yo'nalgan vektor n(0; 1; 1) bo'lib, tekislik Q(3; 2; −2) nuqtadan o'tadi va shu vektorga perpendikulyar. Tekislik tenglamasini tanlang.",
+      "v": [
+        "y + z = 0",
+        "y + z − 4 = 0",
+        "y + z + 4 = 0",
+        "x + y + z = 0"
+      ],
+      "t": 0,
+      "izoh": "Normal vektor n(0; 1; 1) bo'lgani uchun tenglamada x qatnashmaydi. Yozamiz: 0·(x − 3) + 1·(y − 2) + 1·(z + 2) = 0. Qavslarni ochsak y − 2 + z + 2 = 0 hosil bo'ladi. Bundan y + z = 0. Javob: y + z = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekislik-tenglamasi-normal-va-nuqta",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#a12e3450"
+    },
+    {
+      "q": "Vertolyot maydonchasi 4x + y − 2z + 6 = 0 tekislikda. Quyidagi nuqtalardan qaysi biri maydonchada yotmaydi: (0; −6; 0), (1; 0; 5), (−1; 2; 2), (2; 1; 7)?",
+      "v": [
+        "(0; −6; 0)",
+        "(1; 0; 5)",
+        "(−1; 2; 2)",
+        "(2; 1; 7)"
+      ],
+      "t": 3,
+      "izoh": "Har bir nuqtani tenglamaga qo'yib chap tomonni hisoblaymiz. (0; −6; 0) uchun 0 − 6 − 0 + 6 = 0, (1; 0; 5) uchun 4 + 0 − 10 + 6 = 0, (−1; 2; 2) uchun −4 + 2 − 4 + 6 = 0 chiqadi. (2; 1; 7) uchun esa 8 + 1 − 14 + 6 = 1 bo'lib, noldan farqli. Javob: (2; 1; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-tekislikda-tekshirish",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#020a0eb3"
+    },
+    {
+      "q": "Chizmachi Zilola x − 3y + 2z + c = 0 tekislik N(2; 1; −4) nuqtadan o'tishini xohlaydi. Ozod had c ning qiymati qanday bo'lishi kerak?",
+      "v": [
+        "−9",
+        "7",
+        "9",
+        "−7"
+      ],
+      "t": 2,
+      "izoh": "Nuqta tekislikda yotsa, uning koordinatalari tenglamani qanoatlantiradi. Qo'yamiz: 2 − 3·1 + 2·(−4) + c = 0. Hisoblaymiz: 2 − 3 − 8 + c = 0, ya'ni c − 9 = 0. Bundan c = 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-tekislikda-tekshirish",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#7ff7c6e4"
+    },
+    {
+      "q": "OX o'qi bilan 2x + 7y − 3z − 10 = 0 tekislikning kesishish nuqtasi koordinatalarini toping.",
+      "v": [
+        "(0; 5; 0)",
+        "(5; 0; 0)",
+        "(10; 0; 0)",
+        "(−5; 0; 0)"
+      ],
+      "t": 1,
+      "izoh": "OX o'qidagi har qanday nuqtaning ordinatasi va applikatasi nolga teng, ya'ni nuqta (x; 0; 0) ko'rinishda bo'ladi. Tenglamaga qo'yamiz: 2x + 0 − 0 − 10 = 0. Bundan 2x = 10 va x = 5. Javob: (5; 0; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-tekislikda-tekshirish",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#b299a1b9"
+    },
+    {
+      "q": "Uchburchakli tokchaning uchlari A(2; 0; 0), B(0; 3; 0) va C(0; 0; 6) nuqtalarda. Tokcha tekisligining eng sodda butun koeffitsientli tenglamasini toping.",
+      "v": [
+        "3x + 2y + z − 6 = 0",
+        "2x + 3y + 6z − 6 = 0",
+        "3x + 2y + z − 1 = 0",
+        "x + y + z − 6 = 0"
+      ],
+      "t": 0,
+      "izoh": "Uchala nuqta koordinata o'qlarida yotgani uchun kesmalardagi tenglama qulay: x/2 + y/3 + z/6 = 1. Barcha hadni 6 ga ko'paytiramiz va 3x + 2y + z = 6 ni olamiz. Ya'ni 3x + 2y + z − 6 = 0. Javob: 3x + 2y + z − 6 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-nuqta-orqali-tekislik",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#5622c0b1"
+    },
+    {
+      "q": "Fazoda A(1; 0; 2), B(3; 0; 4) va C(0; 0; −5) nuqtalar berilgan. Shu uch nuqta orqali qanday tekislik o'tishini aniqlang.",
+      "v": [
+        "x = 0",
+        "z = 0",
+        "x + z = 0",
+        "y = 0"
+      ],
+      "t": 3,
+      "izoh": "Uchala nuqtaning ordinatasi nolga teng, ya'ni ular xOz koordinata tekisligida yotadi. Nuqtalar bir to'g'ri chiziqda emas, chunki AB(2; 0; 2) va AC(−1; 0; −7) vektorlar kollinear emas. Demak ular orqali yagona xOz tekisligi o'tadi. Javob: y = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-nuqta-orqali-tekislik",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#0fc10c9e"
+    },
+    {
+      "q": "Uchta datchik A(0; 0; 1), B(2; 1; 1) va C(1; 3; 1) nuqtalarda o'rnatilgan. Datchiklar tekisligi bilan xOy tekisligi orasidagi masofani aniqlang.",
+      "v": [
+        "0",
+        "2",
+        "1",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Uchala nuqtada applikata z = 1 ga teng, demak ular z = 1 tekisligida yotadi. Bu tekislik xOy, ya'ni z = 0 tekisligiga parallel. Parallel tekisliklar orasidagi masofa applikatalar farqiga teng: |1 − 0| = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-nuqta-orqali-tekislik",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#12fe06e2"
+    },
+    {
+      "q": "Reklama qalqoni x/3 + y/5 + z/2 = 1 tekislikda joylashgan. Qalqon tekisligining umumiy ko'rinishdagi tenglamasini tanlang.",
+      "v": [
+        "3x + 5y + 2z − 30 = 0",
+        "10x + 6y + 15z − 30 = 0",
+        "10x + 6y + 15z − 1 = 0",
+        "x + y + z − 30 = 0"
+      ],
+      "t": 1,
+      "izoh": "Kasrlardan qutulish uchun barcha hadni 3, 5 va 2 sonlarining eng kichik umumiy karralisi 30 ga ko'paytiramiz. Bunda 30 : 3 = 10, 30 : 5 = 6, 30 : 2 = 15 bo'ladi. Natijada 10x + 6y + 15z = 30 hosil bo'ladi. Javob: 10x + 6y + 15z − 30 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-oqlari-kesmalari",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#a8ca3b93"
+    },
+    {
+      "q": "Tekislik OX o'qini 4 nuqtada, OY o'qini −2 nuqtada va OZ o'qini 8 nuqtada kesib o'tadi. Shu tekislikning tenglamasini yozing.",
+      "v": [
+        "2x − 4y + z − 8 = 0",
+        "2x + 4y + z − 8 = 0",
+        "4x − 2y + 8z − 8 = 0",
+        "2x − 4y + z − 1 = 0"
+      ],
+      "t": 0,
+      "izoh": "Kesmalardagi tenglamani yozamiz: x/4 + y/(−2) + z/8 = 1. Barcha hadni 8 ga ko'paytiramiz va 2x − 4y + z = 8 ni olamiz. Manfiy kesma y oldidagi koeffitsient ishorasini o'zgartirganiga e'tibor bering. Javob: 2x − 4y + z − 8 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-oqlari-kesmalari",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#45641823"
+    },
+    {
+      "q": "Suzish havzasining qiya tubi x + 2y + 4z − 8 = 0 tekislikda yotadi. Bu tekislik OY o'qini qaysi nuqtada kesib o'tadi?",
+      "v": [
+        "(0; 8; 0)",
+        "(0; 2; 0)",
+        "(4; 0; 0)",
+        "(0; 4; 0)"
+      ],
+      "t": 3,
+      "izoh": "OY o'qidagi nuqtada abssissa va applikata nolga teng, ya'ni x = 0 va z = 0. Tenglamaga qo'yamiz: 0 + 2y + 0 − 8 = 0. Bundan 2y = 8 va y = 4. Demak kesishish nuqtasi (0; 4; 0). Javob: (0; 4; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-oqlari-kesmalari",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#aaccbb3f"
+    },
+    {
+      "q": "Ikki polka ax + 6y − 4z + 3 = 0 va 3x + 9y + bz − 1 = 0 tekisliklarda yotadi hamda o'zaro parallel. a va b sonlarning yig'indisini toping.",
+      "v": [
+        "4",
+        "8",
+        "−4",
+        "−8"
+      ],
+      "t": 2,
+      "izoh": "Parallellik uchun a/3 = 6/9 = (−4)/b tengliklar bajarilishi kerak. O'rtadagi nisbat 6/9 = 2/3 ga teng. Demak a/3 = 2/3 dan a = 2, hamda (−4)/b = 2/3 dan b = −6 chiqadi. Yig'indi a + b = 2 − 6 = −4. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallellik-sharti",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#1cbe3ec7"
+    },
+    {
+      "q": "Ikki tekislik 5x − 15y + 10z − 20 = 0 va x − 3y + 2z − 4 = 0 berilgan. Ularning o'zaro joylashuvi haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Parallel, lekin ustma-ust tushmaydi",
+        "Ustma-ust tushadi",
+        "Perpendikulyar",
+        "Faqat bitta nuqtada kesishadi"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tenglamaning barcha hadini 5 ga bo'lamiz: x − 3y + 2z − 4 = 0. Bu ikkinchi tenglama bilan aynan bir xil chiqdi. Demak ikkala tenglama bitta tekislikni ifodalaydi va ular ustma-ust tushadi. Javob: ustma-ust tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallellik-sharti",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#683f6f34"
+    },
+    {
+      "q": "Shkaf yon devori 2x + y − 2z + 1 = 0 tekislikda. Quyidagilardan qaysi biri unga perpendikulyar: x + 2y + 2z = 0, 4x + 2y − 4z = 5, x − 2z = 3, 2x + y + 2z = 1?",
+      "v": [
+        "x + 2y + 2z = 0",
+        "4x + 2y − 4z = 5",
+        "x − 2z = 3",
+        "2x + y + 2z = 1"
+      ],
+      "t": 0,
+      "izoh": "Perpendikulyarlik uchun normal vektorlarning skalyar ko'paytmasi nol bo'lishi kerak. n(2; 1; −2) va (1; 2; 2) uchun 2·1 + 1·2 + (−2)·2 = 2 + 2 − 4 = 0. Qolgan variantlarda ko'paytma mos ravishda 18, 6 va 1 chiqadi. Javob: x + 2y + 2z = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyarlik-sharti",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#24f5789d"
+    },
+    {
+      "q": "Izlanayotgan tekislik x + y − z = 0 va 2x − y + z = 4 tekisliklarning har ikkalasiga perpendikulyar hamda koordinatalar boshidan o'tadi. Uning tenglamasini toping.",
+      "v": [
+        "y − z = 0",
+        "x + y = 0",
+        "3y + 3z = 1",
+        "y + z = 0"
+      ],
+      "t": 3,
+      "izoh": "Izlanayotgan tekislikning normal vektori berilgan ikkala normalga perpendikulyar, ya'ni ularning vektor ko'paytmasiga teng. n₁(1; 1; −1) va n₂(2; −1; 1) uchun n = (1·1 − (−1)·(−1); (−1)·2 − 1·1; 1·(−1) − 1·2) = (0; −3; −3). Uni soddalashtirsak (0; 1; 1) bo'ladi. Koordinatalar boshidan o'tgani uchun D = 0 va tenglama y + z = 0. Javob: y + z = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perpendikulyarlik-sharti",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#8d0c7179"
+    },
+    {
+      "q": "Anor daraxti tagidagi nuqta T(−1; 3; 5) da, bog' devori esa 3x + 4y − 12 = 0 tekislikda joylashgan. Nuqtadan devorgacha masofani hisoblang.",
+      "v": [
+        "3",
+        "1,5",
+        "0,6",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Tenglamada z qatnashmagani uchun normal vektor n(3; 4; 0) bo'ladi. Surat: |3·(−1) + 4·3 − 12| = |−3 + 12 − 12| = 3. Maxraj: √(3² + 4² + 0²) = √25 = 5. Demak masofa 3 : 5 = 0,6. Javob: 0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtadan-tekislikkacha-masofa",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#ebeec097"
+    },
+    {
+      "q": "Ikki parallel to'siq 6x + 2y + 3z − 14 = 0 va 6x + 2y + 3z + 7 = 0 tekisliklarda yotadi. To'siqlar orasidagi masofani toping.",
+      "v": [
+        "21",
+        "3",
+        "7",
+        "10,5"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tenglamada koeffitsientlar bir xil, demak tekisliklar parallel. Masofa d = |D₁ − D₂| : √(A² + B² + C²) formula bilan topiladi. Surat |−14 − 7| = 21, maxraj √(36 + 4 + 9) = √49 = 7. Demak masofa 21 : 7 = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-tekisliklar-orasidagi-masofa",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#b96f8421"
+    },
+    {
+      "q": "M(2; −1; 3) nuqtadan o'tuvchi va 2x − 2y + z − 3 = 0 tekislikka parallel yangi tekislik chizildi. Ikki parallel tekislik orasidagi masofani toping.",
+      "v": [
+        "2",
+        "6",
+        "3",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "Parallel tekisliklar orasidagi masofa M nuqtadan berilgan tekislikkacha bo'lgan masofaga teng. Surat: |2·2 − 2·(−1) + 3 − 3| = |4 + 2 + 3 − 3| = 6. Maxraj: √(4 + 4 + 1) = 3. Demak masofa 6 : 3 = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-tekisliklar-orasidagi-masofa",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#3e900d1a"
+    },
+    {
+      "q": "Ikki parallel tekislik x + 2y + 2z + 3 = 0 va x + 2y + 2z + D = 0 orasidagi masofa 5 birlikka teng. D ning eng katta qiymatini toping.",
+      "v": [
+        "−12",
+        "15",
+        "12",
+        "18"
+      ],
+      "t": 3,
+      "izoh": "Masofa sharti |3 − D| : √(1 + 4 + 4) = 5 ko'rinishda yoziladi. Maxraj √9 = 3 bo'lgani uchun |3 − D| = 15 hosil bo'ladi. Bundan 3 − D = 15 yoki 3 − D = −15, ya'ni D = −12 yoki D = 18. Eng katta qiymat 18. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallel-tekisliklar-orasidagi-masofa",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#867a798b"
+    },
+    {
+      "q": "Piramidasimon tomning ikki yon yuzasi x + y + z = 3 va x − y = 1 tekisliklarda yotadi. Yuzalar orasidagi burchak kosinusini toping.",
+      "v": [
+        "1/2",
+        "√6/6",
+        "0",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "n₁(1; 1; 1) va n₂(1; −1; 0) vektorlarning skalyar ko'paytmasi 1·1 + 1·(−1) + 1·0 = 0 ga teng. Skalyar ko'paytma nol bo'lgani uchun normal vektorlar o'zaro perpendikulyar. Demak tekisliklar ham perpendikulyar va burchak kosinusi nolga teng. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekisliklar-orasidagi-burchak",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#fa99ab79"
+    },
+    {
+      "q": "Chodir tomining yuzasi x + y + z − 6 = 0 tekislikda, yon devori esa x + y − 4 = 0 tekislikda yotadi. Tom va devor orasidagi burchak kosinusini toping.",
+      "v": [
+        "√3/3",
+        "√6/3",
+        "2/3",
+        "1/2"
+      ],
+      "t": 1,
+      "izoh": "n₁(1; 1; 1) va n₂(1; 1; 0) vektorlarning skalyar ko'paytmasi 1 + 1 + 0 = 2. Uzunliklari √3 va √2, ularning ko'paytmasi √6. Demak cos φ = 2/√6, maxrajni ratsionallashtirsak 2√6/6 = √6/3. Javob: √6/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekisliklar-orasidagi-burchak",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#6ad3c727"
+    },
+    {
+      "q": "Ikki tekislik 2x + 2y − z + 1 = 0 va 6x + 3y + 2z − 5 = 0 orasidagi burchak kosinusini hisoblang.",
+      "v": [
+        "16/21",
+        "16/9",
+        "4/21",
+        "20/21"
+      ],
+      "t": 0,
+      "izoh": "n₁(2; 2; −1) va n₂(6; 3; 2) vektorlarning skalyar ko'paytmasi 2·6 + 2·3 + (−1)·2 = 12 + 6 − 2 = 16. Uzunliklar: |n₁| = √(4 + 4 + 1) = 3 va |n₂| = √(36 + 9 + 4) = 7. Demak cos φ = 16 : (3·7) = 16/21. Javob: 16/21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekisliklar-orasidagi-burchak",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#ca4c5330"
+    },
+    {
+      "q": "Tekislik 2x − 6y + 3z − 14 = 0 ko'rinishda berilgan. Uning birlik normal vektorining koordinatalarini toping.",
+      "v": [
+        "(2; −6; 3)",
+        "(2/49; −6/49; 3/49)",
+        "(1/2; −1/6; 1/3)",
+        "(2/7; −6/7; 3/7)"
+      ],
+      "t": 3,
+      "izoh": "Normal vektor n(2; −6; 3) bo'lib, uning uzunligi |n| = √(4 + 36 + 9) = √49 = 7. Birlik vektor har bir koordinatani shu uzunlikka bo'lish orqali topiladi. Demak natija (2/7; −6/7; 3/7). Javob: (2/7; −6/7; 3/7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-normal-vektor",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#cf1a28b5"
+    },
+    {
+      "q": "Chizmada tekislik x + 2y + 2z + 9 = 0 bilan berilgan. Uning normal vektori uzunligi va koordinatalar boshidan tekislikkacha masofa mos ravishda nechaga teng?",
+      "v": [
+        "3 va 9",
+        "9 va 3",
+        "3 va 3",
+        "9 va 9"
+      ],
+      "t": 2,
+      "izoh": "Normal vektor n(1; 2; 2), uzunligi √(1 + 4 + 4) = √9 = 3 ga teng. Koordinatalar boshidan masofa |D| : |n| = 9 : 3 = 3 bo'ladi. Demak ikkala qiymat ham 3 ga teng chiqadi. Javob: 3 va 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-normal-vektor",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#8855edc0"
+    },
+    {
+      "q": "Tekislikning birlik normal vektori (1/3; 2/3; −2/3) bo'lib, u B(1; 1; 1) nuqtadan o'tadi. Shu tekislikning tenglamasini tanlang.",
+      "v": [
+        "x + 2y − 2z + 1 = 0",
+        "x + 2y − 2z − 1 = 0",
+        "3x + 6y − 6z − 1 = 0",
+        "x + 2y + 2z − 5 = 0"
+      ],
+      "t": 1,
+      "izoh": "Birlik normal vektorni 3 ga ko'paytirib qulay n(1; 2; −2) vektorni olamiz, yo'nalish o'zgarmaydi. B(1; 1; 1) nuqtadan o'tuvchi tenglama: (x − 1) + 2(y − 1) − 2(z − 1) = 0. Qavslarni ochamiz: x − 1 + 2y − 2 − 2z + 2 = 0, ya'ni x + 2y − 2z − 1 = 0. Javob: x + 2y − 2z − 1 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-normal-vektor",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#e50ec012"
+    },
+    {
+      "q": "Ko'lning tinch yuzasi z = 0 tekislikda, qush esa Q(3; −2; 7) nuqtada uchmoqda. Suv yuzasidagi aksning koordinatalarini toping.",
+      "v": [
+        "(3; −2; −7)",
+        "(−3; 2; 7)",
+        "(3; −2; 0)",
+        "(−3; −2; 7)"
+      ],
+      "t": 0,
+      "izoh": "xOy tekisligiga nisbatan simmetrik nuqtada abssissa va ordinata o'zgarmaydi, applikata esa qarama-qarshi ishorali bo'ladi. Q(3; −2; 7) nuqta uchun aks (3; −2; −7) bo'ladi. Javob: (3; −2; −7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekislikka-nisbatan-simmetrik-nuqta",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#e0888c57"
+    },
+    {
+      "q": "A(4; 3; 1) nuqtaning 2x + y − 2z + 3 = 0 tekislikka nisbatan simmetrigi qurilmoqda. A dan tekislikkacha va A dan simmetrik nuqtagacha masofalarni ayting.",
+      "v": [
+        "12 va 24",
+        "8 va 4",
+        "4 va 4",
+        "4 va 8"
+      ],
+      "t": 3,
+      "izoh": "Masofa formulasidan foydalanamiz: surat |2·4 + 3 − 2·1 + 3| = |8 + 3 − 2 + 3| = 12, maxraj √(4 + 1 + 4) = 3. Demak tekislikkacha masofa 12 : 3 = 4. Simmetrik nuqta tekislikning narigi tomonida xuddi shunday masofada bo'lgani uchun A dan unigacha masofa 2·4 = 8. Javob: 4 va 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekislikka-nisbatan-simmetrik-nuqta",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#ccb13656"
+    },
+    {
+      "q": "M(5; 1; −2) nuqtaning xOz koordinata tekisligidagi ortogonal proyeksiyasi qaysi nuqta bo'ladi?",
+      "v": [
+        "(0; 1; −2)",
+        "(5; 1; 0)",
+        "(5; 0; −2)",
+        "(5; 0; 2)"
+      ],
+      "t": 2,
+      "izoh": "xOz tekisligining tenglamasi y = 0 ko'rinishda. Ortogonal proyeksiyada nuqtadan shu tekislikka perpendikulyar tushiriladi, ya'ni faqat ordinata nolga aylanadi. Demak M nuqtaning proyeksiyasi (5; 0; −2) bo'ladi. Javob: (5; 0; −2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtaning-tekislikdagi-proyeksiyasi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#5bc478c2"
+    },
+    {
+      "q": "P(1; 2; 3) nuqtadan x + y + z − 3 = 0 tekislikka perpendikulyar tushirildi. Perpendikulyar asosining koordinatalarini toping.",
+      "v": [
+        "(2; 3; 4)",
+        "(0; 1; 2)",
+        "(1; 2; 0)",
+        "(0; 0; 3)"
+      ],
+      "t": 1,
+      "izoh": "Perpendikulyar normal vektor n(1; 1; 1) bo'ylab yo'nalgan, shuning uchun asosni (1 + t; 2 + t; 3 + t) ko'rinishda izlaymiz. Tenglamaga qo'yamiz: (1 + t) + (2 + t) + (3 + t) − 3 = 0. Bundan 3t + 3 = 0 va t = −1. Demak perpendikulyar asosi (0; 1; 2). Javob: (0; 1; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqtaning-tekislikdagi-proyeksiyasi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#7521f43b"
+    },
+    {
+      "q": "Qaysi juftlik kesishuvchi, lekin perpendikulyar bo'lmagan tekisliklarni beradi: x + y = 2 va x + 2y + z = 3; x + y = 1 va 2x + 2y = 5; x = 0 va y = 0; x + y + z = 0 va 2x + 2y + 2z = 1?",
+      "v": [
+        "x + y = 2 va x + 2y + z = 3",
+        "x + y = 1 va 2x + 2y = 5",
+        "x = 0 va y = 0",
+        "x + y + z = 0 va 2x + 2y + 2z = 1"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi va to'rtinchi juftliklarda normal vektorlar kollinear, ya'ni tekisliklar parallel bo'ladi. Uchinchi juftlikda n₁(1; 0; 0) va n₂(0; 1; 0) skalyar ko'paytmasi nol, demak ular perpendikulyar. Birinchi juftlikda n₁(1; 1; 0) va n₂(1; 2; 1) kollinear emas, skalyar ko'paytma esa 1 + 2 + 0 = 3 noldan farqli. Javob: x + y = 2 va x + 2y + z = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-tekislik-kesishish-turi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#1f02f4b9"
+    },
+    {
+      "q": "Tekisliklar 3x − y + 2z − 1 = 0 va 6x + my + 4z + 5 = 0 o'zaro parallel bo'lmasligi uchun m qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "m ≠ 2",
+        "m = −2",
+        "m ≠ 0",
+        "m ≠ −2"
+      ],
+      "t": 3,
+      "izoh": "Tekisliklar parallel bo'lishi uchun normal vektorlar kollinear bo'lishi kerak. n₁(3; −1; 2) va n₂(6; m; 4) uchun 6 = 2·3 va 4 = 2·2 bo'lgani sababli m = 2·(−1) = −2 bo'lishi shart edi. Demak parallel bo'lmasligi uchun m ≠ −2. Javob: m ≠ −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tekislik-kesishish-turi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#f680e0bb"
+    },
+    {
+      "q": "Yuk ko'targich a(2; 1; −3) vektor yo'nalishi bo'ylab harakatlanadi. Bu yo'nalish x + y + z − 4 = 0 tekislikka parallelmi?",
+      "v": [
+        "Yo'q, chunki skalyar ko'paytma 6 ga teng",
+        "Ha, chunki vektor normalga kollinear",
+        "Ha, chunki vektor va normalning skalyar ko'paytmasi nolga teng",
+        "Yo'q, chunki vektor tekislikni kesib o'tadi"
+      ],
+      "t": 2,
+      "izoh": "Vektor tekislikka parallel bo'lishi uchun u tekislikning normal vektoriga perpendikulyar bo'lishi kerak. n(1; 1; 1) va a(2; 1; −3) uchun skalyar ko'paytma 1·2 + 1·1 + 1·(−3) = 2 + 1 − 3 = 0. Ko'paytma nol chiqdi, demak yo'nalish tekislikka parallel. Javob: ha, skalyar ko'paytma nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vektorning-tekislikka-parallelligi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#c42682d7"
+    },
+    {
+      "q": "Konveyer yo'nalishi b(3; k; 2) vektor bilan berilgan va u 2x − y + 4z + 7 = 0 tekislikka parallel bo'lishi kerak. k ning qiymatini toping.",
+      "v": [
+        "−14",
+        "14",
+        "2",
+        "−2"
+      ],
+      "t": 1,
+      "izoh": "Vektorning tekislikka parallellik sharti: u normal vektorga perpendikulyar, ya'ni skalyar ko'paytma nolga teng. n(2; −1; 4) va b(3; k; 2) uchun 2·3 + (−1)·k + 4·2 = 0. Ya'ni 6 − k + 8 = 0, bundan k = 14. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vektorning-tekislikka-parallelligi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#892307bf"
+    },
+    {
+      "q": "Kitob javonining tokchasi y = −4 tenglama bilan berilgan tekislikda joylashgan. Bu tekislik qaysi koordinata tekisligiga parallel?",
+      "v": [
+        "xOz",
+        "xOy",
+        "yOz",
+        "Hech qaysisiga"
+      ],
+      "t": 0,
+      "izoh": "y = −4 tenglamada x va z hech qanday cheklovga ega emas, faqat ordinata qat'iy belgilangan. Ordinatasi doimiy bo'lgan tekislik xOz tekisligiga parallel, chunki xOz ning tenglamasi y = 0. Ular orasidagi masofa esa 4 birlikka teng. Javob: xOz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-tekisligiga-parallel",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#1b8701e7"
+    },
+    {
+      "q": "Ombordagi yuk M(2; −3; 6) nuqtada turibdi. Yuk orqali o'tuvchi va yOz tekisligiga parallel tekislikning tenglamasini yozing.",
+      "v": [
+        "x = −3",
+        "y = −3",
+        "z = 6",
+        "x = 2"
+      ],
+      "t": 3,
+      "izoh": "yOz tekisligining tenglamasi x = 0 ko'rinishda, uning normal vektori esa i(1; 0; 0). Unga parallel tekislikning tenglamasi x = const ko'rinishida bo'ladi. M nuqtaning abssissasi 2 ga teng, shuning uchun tenglama x = 2. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-tekisligiga-parallel",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#5074bbd7"
+    },
+    {
+      "q": "Quyidagi tekisliklardan qaysi biri OX o'qiga parallel, lekin uni o'z ichiga olmaydi: x = 5, x + y = 0, 2y + 3z − 6 = 0, 2y + 3z = 0?",
+      "v": [
+        "x = 5",
+        "x + y = 0",
+        "2y + 3z − 6 = 0",
+        "2y + 3z = 0"
+      ],
+      "t": 2,
+      "izoh": "Tekislik OX o'qiga parallel bo'lishi uchun normal vektori i(1; 0; 0) ga perpendikulyar, ya'ni A = 0 bo'lishi kerak. Bu shart 2y + 3z − 6 = 0 va 2y + 3z = 0 tenglamalarda bajariladi. Ikkinchisiga (t; 0; 0) ko'rinishdagi barcha nuqtalar tegishli, ya'ni u OX o'qini o'z ichiga oladi. Birinchisida esa 0 − 6 noldan farqli. Javob: 2y + 3z − 6 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-tekisligiga-parallel",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#eeed5998"
+    },
+    {
+      "q": "Ikki qishloq A(0; 2; 0) va B(0; 8; 0) nuqtalarda joylashgan. Ikkala qishloqdan bir xil uzoqlikdagi nuqtalar to'plami qanday tekislikni beradi?",
+      "v": [
+        "y = 3",
+        "y = 5",
+        "x = 5",
+        "y = 10"
+      ],
+      "t": 1,
+      "izoh": "Ikki nuqtadan teng uzoqlikdagi nuqtalar AB kesmaning o'rta perpendikulyar tekisligini hosil qiladi. O'rta nuqta ((0 + 0)/2; (2 + 8)/2; 0) = (0; 5; 0) bo'ladi. AB vektor (0; 6; 0) bo'lib, uni soddalashtirsak (0; 1; 0). Tenglama y − 5 = 0, ya'ni y = 5. Javob: y = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-perpendikulyar-tekislik",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#608a9f71"
+    },
+    {
+      "q": "M(2; 0; 1) va N(4; 4; 5) nuqtalardan teng uzoqlikda joylashgan nuqtalar to'plamining tenglamasini toping.",
+      "v": [
+        "x + 2y + 2z − 13 = 0",
+        "x + 2y + 2z − 26 = 0",
+        "2x + 4y + 4z − 13 = 0",
+        "x + 2y + 2z + 13 = 0"
+      ],
+      "t": 0,
+      "izoh": "Teng uzoqlikdagi nuqtalar MN kesmaning o'rta perpendikulyar tekisligini tashkil qiladi. O'rta nuqta ((2 + 4)/2; (0 + 4)/2; (1 + 5)/2) = (3; 2; 3). MN vektor (2; 4; 4) ni 2 ga bo'lib (1; 2; 2) olamiz. Tenglama (x − 3) + 2(y − 2) + 2(z − 3) = 0 bo'lib, x + 2y + 2z − 13 = 0 ga keladi. Javob: x + 2y + 2z − 13 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-perpendikulyar-tekislik",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#c2fc6e50"
+    },
+    {
+      "q": "Nishab yo'lakcha x + 2y + 2z − 9 = 0 tekislikda yotadi. Yo'lakcha bilan yOz tekisligi orasidagi burchak kosinusini toping.",
+      "v": [
+        "2/3",
+        "1/9",
+        "3",
+        "1/3"
+      ],
+      "t": 3,
+      "izoh": "yOz tekisligining normal vektori i(1; 0; 0) ko'rinishda. Yo'lakcha tekisligining normali n(1; 2; 2), uzunligi √(1 + 4 + 4) = 3. Skalyar ko'paytma n·i = 1 ga teng. Demak cos φ = 1 : (3·1) = 1/3. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekislik-va-koordinata-tekisligi-burchagi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#171908d4"
+    },
+    {
+      "q": "Tomning bir yuzasi z = x tenglamali tekislikda yotadi. Bu yuza bilan gorizontal xOy tekisligi orasidagi burchak necha gradus?",
+      "v": [
+        "30°",
+        "60°",
+        "45°",
+        "90°"
+      ],
+      "t": 2,
+      "izoh": "Tenglamani z − x = 0 ko'rinishga keltiramiz, normal vektor n(−1; 0; 1) bo'ladi. Gorizontal tekislikning normali k(0; 0; 1). Skalyar ko'paytma (−1)·0 + 0·0 + 1·1 = 1. Uzunliklar √2 va 1, demak cos φ = √2/2 va φ = 45°. Javob: 45°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekislik-va-koordinata-tekisligi-burchagi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#0a544929"
+    },
+    {
+      "q": "Quyosh paneli gorizontal xOy tekisligi bilan 45° burchak hosil qilishi kerak. Panel 4x − 3y + cz + 5 = 0 tekislikda yotsa, c ning musbat qiymatini toping.",
+      "v": [
+        "25",
+        "5",
+        "10",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Gorizontal tekislik normali k(0; 0; 1), panel normali esa n(4; −3; c). cos 45° = √2/2 bo'lgani uchun |c| : √(16 + 9 + c²) = √2/2 tenglik yoziladi. Ikkala tomonni kvadratga ko'taramiz: c² : (25 + c²) = 1/2, ya'ni 2c² = 25 + c². Bundan c² = 25 va musbat qiymat c = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekislik-va-koordinata-tekisligi-burchagi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#5b6b6940"
+    },
+    {
+      "q": "Chiroq OX o'qida joylashgan va u 2x − y + 2z + 1 = 0 tekislikdan 3 birlik uzoqlikda turibdi. Chiroqning musbat abssissasini toping.",
+      "v": [
+        "4",
+        "5",
+        "9",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Chiroq nuqtasi M(a; 0; 0) ko'rinishda bo'ladi. Masofa sharti: |2a − 0 + 0 + 1| : √(4 + 1 + 4) = 3. Maxraj √9 = 3 bo'lgani uchun |2a + 1| = 9 hosil bo'ladi. Bundan 2a + 1 = 9 yoki 2a + 1 = −9, ya'ni a = 4 yoki a = −5. Musbat qiymat 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masofa-orqali-parametr-topish",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#6803d11c"
+    },
+    {
+      "q": "M(1; 2; t) nuqta 2x + 2y + z − 3 = 0 tekislikdan 4 birlik uzoqlikda joylashgan. t ning barcha qiymatlarini toping.",
+      "v": [
+        "12 va −12",
+        "9 va −9",
+        "4 va −4",
+        "9 va −15"
+      ],
+      "t": 3,
+      "izoh": "Masofa formulasiga qo'yamiz: |2·1 + 2·2 + t − 3| : √(4 + 4 + 1) = 4. Maxraj √9 = 3 bo'lgani uchun |t + 3| = 12 hosil bo'ladi. Bundan t + 3 = 12 yoki t + 3 = −12. Demak t = 9 yoki t = −15. Javob: 9 va −15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masofa-orqali-parametr-topish",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#e9396cdf"
+    },
+    {
+      "q": "x − 2y + 2z + D = 0 ko'rinishdagi tekislik koordinatalar boshidan 7 birlik uzoqlikda joylashgan. D ning musbat qiymatini toping.",
+      "v": [
+        "7",
+        "14",
+        "21",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Koordinatalar boshidan masofa |D| : √(1 + 4 + 4) formula bilan hisoblanadi. Maxraj √9 = 3 bo'lgani uchun |D| : 3 = 7 tenglik yoziladi. Bundan |D| = 21 va musbat qiymat D = 21. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masofa-orqali-parametr-topish",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#17482a9c"
+    },
+    {
+      "q": "Radiusi 5 birlik bo'lgan shar markazi C(3; 1; −2) nuqtada. Shar 2x + y − 2z + D = 0 tekislikka urinsa va D musbat bo'lsa, D ni toping.",
+      "v": [
+        "15",
+        "4",
+        "26",
+        "11"
+      ],
+      "t": 1,
+      "izoh": "Urinish sharti: markazdan tekislikkacha masofa radiusga teng bo'ladi. Surat |2·3 + 1 − 2·(−2) + D| = |6 + 1 + 4 + D| = |11 + D|. Maxraj √(4 + 1 + 4) = 3. Demak |11 + D| : 3 = 5, ya'ni |11 + D| = 15. Bundan D = 4 yoki D = −26, musbati esa 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sfera-tekislik-urinish",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#737879c8"
+    },
+    {
+      "q": "Markazi koordinatalar boshida bo'lgan shar x + 2y + 2z − 18 = 0 tekislikka urinadi. Sharning diametrini toping.",
+      "v": [
+        "12",
+        "6",
+        "18",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "Markaz O(0; 0; 0) uchun masofa |−18| : √(1 + 4 + 4) = 18 : 3 = 6 ga teng. Urinish bo'lgani uchun radius R = 6 bo'ladi. Diametr radiusning ikki barobari, ya'ni 2·6 = 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sfera-tekislik-urinish",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#4dbdca5a"
+    },
+    {
+      "q": "Shar (x − 1)² + (y + 2)² + z² = 9 tenglama bilan berilgan. Bu shar 2x − 2y + z − 3 = 0 tekislikka nisbatan qanday joylashgan?",
+      "v": [
+        "Urinadi",
+        "Umumiy nuqtasi yo'q",
+        "Tekislik shar markazidan o'tadi",
+        "Kesadi"
+      ],
+      "t": 3,
+      "izoh": "Shar markazi C(1; −2; 0), radiusi esa R = 3. Markazdan tekislikkacha masofa: |2·1 − 2·(−2) + 0 − 3| : √(4 + 4 + 1) = |2 + 4 − 3| : 3 = 1. Masofa radiusdan kichik, ya'ni 1 < 3 va u noldan farqli. Demak tekislik sharni kesib o'tadi. Javob: kesadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sfera-tekislik-urinish",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#30bf6e4b"
+    },
+    {
+      "q": "Diametri 26 sm bo'lgan sharsimon idish markazi koordinatalar boshida. Uni 3x + 4z − 25 = 0 tekislik bilan kesganda hosil bo'lgan doira radiusi qancha?",
+      "v": [
+        "5 sm",
+        "13 sm",
+        "12 sm",
+        "8 sm"
+      ],
+      "t": 2,
+      "izoh": "Shar radiusi R = 26 : 2 = 13 sm ga teng. Markazdan tekislikkacha masofa: |−25| : √(9 + 16) = 25 : 5 = 5 sm. Kesim doirasining radiusi r = √(R² − d²) = √(169 − 25) = √144 = 12 sm. Javob: 12 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-doira-radiusi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#91159580"
+    },
+    {
+      "q": "Radiusi 5 birlik shar markazi C(2; −1; 3) nuqtada. Uni 2x + y − 2z + D = 0 tekislik radiusi 4 birlik doira bo'yicha kessa, D ning musbat qiymatini toping.",
+      "v": [
+        "9",
+        "12",
+        "3",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Kesim radiusi 4 bo'lsa, markazdan tekislikkacha masofa d = √(R² − r²) = √(25 − 16) = 3 bo'ladi. Masofa formulasi: |2·2 + (−1) − 2·3 + D| : √(4 + 1 + 4) = 3, ya'ni |D − 3| : 3 = 3. Demak |D − 3| = 9 va D = 12 yoki D = −6. Musbat qiymat 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-doira-radiusi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#82a6f784"
+    },
+    {
+      "q": "Ikki bino uchi A(2; 3; 1) va B(0; −1; 4) nuqtalarda. Ular 2x + y − z − 5 = 0 tekislikning bir tomonidami yoki har xil tomonidami?",
+      "v": [
+        "Har xil tomonda",
+        "Bir tomonda",
+        "Ikkalasi tekislikda yotadi",
+        "Faqat A tekislikda yotadi"
+      ],
+      "t": 0,
+      "izoh": "Nuqta koordinatalarini tenglamaning chap tomoniga qo'yamiz. A uchun 2·2 + 3 − 1 − 5 = 1 bo'lib, musbat chiqadi. B uchun 0 − 1 − 4 − 5 = −10 bo'lib, manfiy chiqadi. Ishoralar har xil bo'lgani uchun nuqtalar tekislikning turli tomonlarida yotadi. Javob: har xil tomonda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtalar-tekislikka-nisbatan-tomoni",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#3cc168c3"
+    },
+    {
+      "q": "AB kesmaning uchlari A(1; 1; 2) va B(5; 3; 0) nuqtalarda. Bu kesma x + y + z − 6 = 0 tekislikni kesib o'tadimi?",
+      "v": [
+        "Yo'q, ikkala uch bir tomonda",
+        "Yo'q, kesma tekislikka parallel",
+        "Ha, chunki ikkala uch ham tekislikda",
+        "Ha, chunki uchlarda ishoralar qarama-qarshi"
+      ],
+      "t": 3,
+      "izoh": "A nuqtani qo'yamiz: 1 + 1 + 2 − 6 = −2, ya'ni manfiy son. B nuqtani qo'yamiz: 5 + 3 + 0 − 6 = 2, ya'ni musbat son. Kesma uchlarida ifodaning ishorasi qarama-qarshi bo'lgani uchun kesma tekislikni albatta kesib o'tadi. Javob: ha, ishoralar qarama-qarshi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqtalar-tekislikka-nisbatan-tomoni",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#dd722a6a"
+    },
+    {
+      "q": "Tekislik 3x + 4y − 24 = 0 tenglama bilan berilgan. Uning normal vektori uzunligi nechaga teng?",
+      "v": [
+        "25",
+        "7",
+        "5",
+        "24"
+      ],
+      "t": 2,
+      "izoh": "Normal vektor koeffitsientlardan olinadi: n(3; 4; 0), chunki tenglamada z qatnashmaydi. Vektor uzunligi |n| = √(3² + 4² + 0²) formula bilan hisoblanadi. Demak |n| = √(9 + 16) = √25 = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-normal-vektor",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#071ed4b6"
+    },
+    {
+      "q": "Tekislikning normal vektori n(6; 2; 3) bo'lib, u koordinatalar boshidan 4 birlik uzoqlikda joylashgan. Musbat ozod hadli tenglamasini toping.",
+      "v": [
+        "6x + 2y + 3z + 4 = 0",
+        "6x + 2y + 3z + 28 = 0",
+        "6x + 2y + 3z + 11 = 0",
+        "6x + 2y + 3z + 49 = 0"
+      ],
+      "t": 1,
+      "izoh": "Tenglama 6x + 2y + 3z + D = 0 ko'rinishda bo'ladi. Normal vektor uzunligi √(36 + 4 + 9) = √49 = 7. Koordinatalar boshidan masofa |D| : 7 = 4 bo'lgani uchun |D| = 28. Ozod had musbat bo'lishi shartidan D = 28. Javob: 6x + 2y + 3z + 28 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-normal-vektor",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#a81c63a2"
+    },
+    {
+      "q": "Uy devori x = 3 tekislikda, chiroq esa L(7; 2; 5) nuqtada joylashgan. Devordagi oynada chiroqning aksi qaysi nuqtada ko'rinadi?",
+      "v": [
+        "(−1; 2; 5)",
+        "(−7; 2; 5)",
+        "(1; 2; 5)",
+        "(3; 2; 5)"
+      ],
+      "t": 0,
+      "izoh": "x = 3 tekisligiga nisbatan simmetriyada ordinata va applikata o'zgarmaydi. Abssissa esa x' = 2·3 − 7 formula bilan topiladi va 6 − 7 = −1 chiqadi. Demak aks (−1; 2; 5) nuqtada ko'rinadi. Javob: (−1; 2; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekislikka-nisbatan-simmetrik-nuqta",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#4ec76fe2"
+    },
+    {
+      "q": "K(3; −4; 6) nuqtaning xOy tekisligidagi proyeksiyasi bilan K nuqtaning o'zi orasidagi masofani toping.",
+      "v": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "xOy tekisligining tenglamasi z = 0, shuning uchun proyeksiya (3; −4; 0) nuqtada bo'ladi. Ikki nuqta orasidagi masofa faqat applikatalar farqidan iborat: |6 − 0| = 6. Buni masofa formulasi ham tasdiqlaydi, chunki normal vektor uzunligi 1 ga teng. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtaning-tekislikdagi-proyeksiyasi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#0f042ebd"
+    },
+    {
+      "q": "A(3; 1; −1) nuqtadan 2x + y + 2z − 14 = 0 tekislikka perpendikulyar tushirildi. Perpendikulyar asosining koordinatalarini aniqlang.",
+      "v": [
+        "(1; 0; −3)",
+        "(5; 2; −1)",
+        "(5; 2; 1)",
+        "(3; 1; 5)"
+      ],
+      "t": 2,
+      "izoh": "Perpendikulyar normal vektor n(2; 1; 2) bo'ylab yo'nalgan, shuning uchun asosni (3 + 2t; 1 + t; −1 + 2t) ko'rinishda izlaymiz. Tenglamaga qo'yamiz: 2(3 + 2t) + (1 + t) + 2(−1 + 2t) − 14 = 0. Soddalashtiramiz: 6 + 4t + 1 + t − 2 + 4t − 14 = 0, ya'ni 9t − 9 = 0 va t = 1. Demak asos (5; 2; 1). Javob: (5; 2; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtaning-tekislikdagi-proyeksiyasi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#57a1a7a3"
+    },
+    {
+      "q": "Ikki tekislik x + 2y − z + 4 = 0 va 2x + 4y − 2z + 8 = 0 berilgan. Ularning umumiy nuqtalari to'plami nimadan iborat?",
+      "v": [
+        "Bo'sh to'plam",
+        "Butun tekislik",
+        "Bitta to'g'ri chiziq",
+        "Bitta nuqta"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi tenglamaning barcha hadini 2 ga bo'lamiz va x + 2y − z + 4 = 0 ni olamiz. Bu birinchi tenglama bilan aynan bir xil chiqdi. Demak ikkala tenglama bitta tekislikni beradi va umumiy nuqtalar to'plami butun shu tekislikdan iborat. Javob: butun tekislik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-tekislik-kesishish-turi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#3fbe628f"
+    },
+    {
+      "q": "Yomg'ir tomchisi c(0; 0; −1) vektor yo'nalishida tushmoqda. U 3x − 5y + 4 = 0 tenglamali devor tekisligiga parallel harakatlanadimi?",
+      "v": [
+        "Ha, chunki normal bilan skalyar ko'paytma nolga teng",
+        "Yo'q, chunki tomchi tekislikni kesib o'tadi",
+        "Ha, chunki tomchi yo'nalishi normal vektorga kollinear",
+        "Yo'q, chunki tenglamada z qatnashmaydi"
+      ],
+      "t": 0,
+      "izoh": "Devor tekisligining normal vektori n(3; −5; 0) bo'ladi. Tomchi yo'nalishi esa c(0; 0; −1). Skalyar ko'paytma 3·0 + (−5)·0 + 0·(−1) = 0 chiqadi. Normal vektorga perpendikulyar yo'nalish tekislikka parallel bo'ladi. Javob: ha, skalyar ko'paytma nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vektorning-tekislikka-parallelligi",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#a3ac462c"
+    },
+    {
+      "q": "Piramidaning asosi z = 0 tekislikda yotadi va uning yuzi 15 sm². Piramida uchi S(2; 3; 8) nuqtada bo'lsa, hajmini toping.",
+      "v": [
+        "120 sm³",
+        "20 sm³",
+        "60 sm³",
+        "40 sm³"
+      ],
+      "t": 3,
+      "izoh": "Piramida balandligi — uchdan asos tekisligigacha bo'lgan masofa. Asos z = 0 tekislikda bo'lgani uchun h = |8| = 8 sm. Hajm V = (1/3)·S·h formula bilan topiladi. Demak V = (1/3)·15·8 = 40 sm³. Javob: 40 sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "piramida-hajmi-masofa-orqali",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#1b61e24d"
+    },
+    {
+      "q": "Piramida asosi x + 2y + 2z − 4 = 0 tekislikda yotadi va uning yuzi 18 sm². Uchi P(1; 2; 4) nuqtada bo'lsa, hajmini hisoblang.",
+      "v": [
+        "54 sm³",
+        "6 sm³",
+        "18 sm³",
+        "9 sm³"
+      ],
+      "t": 2,
+      "izoh": "Balandlik uchdan asos tekisligigacha bo'lgan masofaga teng: |1 + 2·2 + 2·4 − 4| : √(1 + 4 + 4) = |1 + 4 + 8 − 4| : 3 = 9 : 3 = 3 sm. Endi hajmni hisoblaymiz: V = (1/3)·S·h = (1/3)·18·3 = 18 sm³. Javob: 18 sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-hajmi-masofa-orqali",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#41cfac9f"
+    },
+    {
+      "q": "Tetraedr uchi D(4; 4; 4) nuqtada, asosi esa 2x + 2y + z − 5 = 0 tekislikda va hajmi 20 sm³. Asos yuzini toping.",
+      "v": [
+        "4 sm²",
+        "12 sm²",
+        "36 sm²",
+        "60 sm²"
+      ],
+      "t": 1,
+      "izoh": "Avval balandlikni topamiz: |2·4 + 2·4 + 4 − 5| : √(4 + 4 + 1) = |8 + 8 + 4 − 5| : 3 = 15 : 3 = 5 sm. Hajm formulasidan V = (1/3)·S·h, ya'ni 20 = (1/3)·S·5. Bundan S = 20·3 : 5 = 12 sm². Javob: 12 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-hajmi-masofa-orqali",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#bee5f535"
+    },
+    {
+      "q": "Ikki parallel devor x + 2y + 2z − 4 = 0 va x + 2y + 2z + 8 = 0 orasida ularga teng uzoqlikdagi tekislik chizildi. Uning tenglamasini toping.",
+      "v": [
+        "x + 2y + 2z + 2 = 0",
+        "x + 2y + 2z + 4 = 0",
+        "x + 2y + 2z − 2 = 0",
+        "x + 2y + 2z + 12 = 0"
+      ],
+      "t": 0,
+      "izoh": "Teng uzoqlikdagi tekislik ularga parallel, ya'ni x + 2y + 2z + D = 0 ko'rinishda bo'ladi. Ozod had ikki qiymatning o'rta arifmetigiga teng: D = (−4 + 8) : 2 = 2. Tekshiramiz: |−4 − 2| : 3 = 2 va |8 − 2| : 3 = 2, masofalar teng chiqdi. Javob: x + 2y + 2z + 2 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-uzoq-tekislik",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#3ec9e6f9"
+    },
+    {
+      "q": "Ombor tokchalari 2x − y + 2z − 1 = 0 va 4x − 2y + 4z + 14 = 0 tekisliklarda joylashgan. Ularning o'rtasidan o'tuvchi tekislikning ozod hadini toping.",
+      "v": [
+        "6,5",
+        "7",
+        "−1",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Avval ikkinchi tenglamani 2 ga bo'lamiz: 2x − y + 2z + 7 = 0. Endi ikkala tekislikning koeffitsientlari bir xil bo'ldi. O'rtadagi tekislikning ozod hadi ularning o'rta arifmetigiga teng: D = (−1 + 7) : 2 = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-uzoq-tekislik",
+      "id": "matematika_vekt_m05-fazoda-tekislik-tenglamasi-va-nuqtadan#60306d07"
+    }
+  ]
+}

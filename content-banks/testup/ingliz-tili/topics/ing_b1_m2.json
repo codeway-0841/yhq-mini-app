@@ -1,0 +1,1306 @@
+{
+  "nom": "Present Perfect vs Past Simple",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "He ___ his homework already.",
+      "v": [
+        "did",
+        "has done",
+        "done",
+        "was doing"
+      ],
+      "t": 1,
+      "izoh": "'already', Present Perfect 'has done'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#8c032547"
+    },
+    {
+      "q": "He ___ his homework an hour ago.",
+      "v": [
+        "has done",
+        "did",
+        "done",
+        "has did"
+      ],
+      "t": 1,
+      "izoh": "'an hour ago', Past Simple 'did'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#f44096b2"
+    },
+    {
+      "q": "___ you finish the project last week?",
+      "v": [
+        "Have",
+        "Did",
+        "Has",
+        "Are"
+      ],
+      "t": 1,
+      "izoh": "'last week', Past Simple 'Did'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#dc987ad7"
+    },
+    {
+      "q": "___ you finished the project yet?",
+      "v": [
+        "Did",
+        "Have",
+        "Was",
+        "Are"
+      ],
+      "t": 1,
+      "izoh": "'yet', Present Perfect 'Have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#0acf6a91"
+    },
+    {
+      "q": "Find the mistake: 'I saw that film already.'",
+      "v": [
+        "I",
+        "saw",
+        "that film",
+        "already"
+      ],
+      "t": 1,
+      "izoh": "'already' bilan Present Perfect 'have seen' kerak.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#44dccbf4"
+    },
+    {
+      "q": "I ___ my keys, so I can't get in now.",
+      "v": [
+        "have lose",
+        "have lost",
+        "losed",
+        "was lost"
+      ],
+      "t": 1,
+      "izoh": "Natija hozir muhim, Present Perfect 'have lost'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#560833fb"
+    },
+    {
+      "q": "The bus ___ the station, so we have to wait.",
+      "v": [
+        "has just left",
+        "has just leave",
+        "just has left",
+        "have just left"
+      ],
+      "t": 0,
+      "izoh": "just — has va V3 orasida: has just left. Natija hozir: avtobus yo'q, kutamiz.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#26e9fa26"
+    },
+    {
+      "q": "They ___ the film last night.",
+      "v": [
+        "have watched",
+        "watched",
+        "watch",
+        "has watched"
+      ],
+      "t": 1,
+      "izoh": "'last night' o'tgan vaqt → Past Simple.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#b8d6d7cd"
+    },
+    {
+      "q": "My brother ___ university in 2019.",
+      "v": [
+        "has finished",
+        "finished",
+        "finishes",
+        "had finished"
+      ],
+      "t": 1,
+      "izoh": "'in 2019' aniq yil → Past Simple.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#b2d9a6dc"
+    },
+    {
+      "q": "She ___ a new car two weeks ago.",
+      "v": [
+        "has bought",
+        "buys",
+        "bought",
+        "buy"
+      ],
+      "t": 2,
+      "izoh": "'ago' o'tgan vaqt → Past Simple.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#474b73eb"
+    },
+    {
+      "q": "I ___ my homework yesterday.",
+      "v": [
+        "have done",
+        "did",
+        "do",
+        "have made"
+      ],
+      "t": 1,
+      "izoh": "'yesterday' aniq o'tgan vaqt → Past Simple.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#7ac00d10"
+    },
+    {
+      "q": "___ you ___ your work yet?",
+      "v": [
+        "Have / finished",
+        "Did / finish",
+        "Have / finish",
+        "Do / finish"
+      ],
+      "t": 0,
+      "izoh": "'yet' → Present Perfect (have + finished).",
+      "qiy": "orta",
+      "id": "ing_b1_m2#83914eb2"
+    },
+    {
+      "q": "Put the words in order: already / has / arrived / the bus",
+      "v": [
+        "The bus has already arrived.",
+        "The bus already has arrived.",
+        "Has the bus already arrived.",
+        "The bus arrived has already."
+      ],
+      "t": 0,
+      "izoh": "'already', Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#c35bcd9a"
+    },
+    {
+      "q": "She ___ to Paris three times.",
+      "v": [
+        "went",
+        "was",
+        "has been",
+        "has gone"
+      ],
+      "t": 2,
+      "izoh": "Tajriba ('three times') → Present Perfect; 'has been' = borib kelgan.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#0008d905"
+    },
+    {
+      "q": "We ___ each other since 2010.",
+      "v": [
+        "have known",
+        "knew",
+        "know",
+        "had known"
+      ],
+      "t": 0,
+      "izoh": "'since' hozirgacha davom etadi → Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#16288f8c"
+    },
+    {
+      "q": "___ you ever ___ sushi?",
+      "v": [
+        "Did / eat",
+        "Have / eaten",
+        "Have / ate",
+        "Do / eat"
+      ],
+      "t": 1,
+      "izoh": "'ever' tajriba haqida → Present Perfect (have + eaten).",
+      "qiy": "orta",
+      "id": "ing_b1_m2#b21de8e0"
+    },
+    {
+      "q": "I have never ___ to Japan.",
+      "v": [
+        "been",
+        "went",
+        "being",
+        "go"
+      ],
+      "t": 0,
+      "izoh": "'have never' → Present Perfect, 3-shakl 'been'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#0b0be281"
+    },
+    {
+      "q": "We ___ in this city for ten years, and we still love it.",
+      "v": [
+        "lived",
+        "have lived",
+        "live",
+        "are living"
+      ],
+      "t": 1,
+      "izoh": "'for' + hozirgacha davom → Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#3d2947e2"
+    },
+    {
+      "q": "I ___ my keys yesterday.",
+      "v": [
+        "have lost",
+        "lost",
+        "has lost",
+        "have losed"
+      ],
+      "t": 1,
+      "izoh": "'yesterday' tugagan vaqt, Past Simple 'lost'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#1c06300a"
+    },
+    {
+      "q": "She ___ to Italy last summer.",
+      "v": [
+        "has gone",
+        "went",
+        "has been",
+        "goes"
+      ],
+      "t": 1,
+      "izoh": "'last summer' tugagan, Past Simple 'went'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#b47fbf9b"
+    },
+    {
+      "q": "She ___ to Italy three times in her life.",
+      "v": [
+        "has been",
+        "went",
+        "was",
+        "has gone"
+      ],
+      "t": 0,
+      "izoh": "Aniq vaqtsiz tajriba, Present Perfect 'has been'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#b658a13e"
+    },
+    {
+      "q": "We ___ this film two days ago.",
+      "v": [
+        "have seen",
+        "saw",
+        "have saw",
+        "seen"
+      ],
+      "t": 1,
+      "izoh": "'two days ago', Past Simple 'saw'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#5b4f9302"
+    },
+    {
+      "q": "We ___ this film, so let us watch another one.",
+      "v": [
+        "has seen",
+        "have seen",
+        "seen",
+        "were seeing"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi natija, Present Perfect 'have seen'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#989a71bc"
+    },
+    {
+      "q": "They ___ a new house last year.",
+      "v": [
+        "have bought",
+        "bought",
+        "have buyed",
+        "has bought"
+      ],
+      "t": 1,
+      "izoh": "'last year' tugagan, Past Simple 'bought'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#b13d5305"
+    },
+    {
+      "q": "When ___ you arrive at the airport?",
+      "v": [
+        "have",
+        "did",
+        "has",
+        "are"
+      ],
+      "t": 1,
+      "izoh": "'When' aniq vaqt so'raydi, Past Simple 'did'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#e268ec37"
+    },
+    {
+      "q": "Choose the correct sentence with 'yesterday'.",
+      "v": [
+        "I have seen him yesterday.",
+        "I saw him yesterday.",
+        "I have saw him yesterday.",
+        "I did saw him yesterday."
+      ],
+      "t": 1,
+      "izoh": "'yesterday' bilan Past Simple ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#e8f36556"
+    },
+    {
+      "q": "Choose the correct experience question.",
+      "v": [
+        "Have you ever ate snails?",
+        "Did you ever eaten snails?",
+        "Have you ever eaten snails?",
+        "Have you ever eat snails?"
+      ],
+      "t": 2,
+      "izoh": "Tajriba savoli, Present Perfect + 'eaten'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#af6bcd96"
+    },
+    {
+      "q": "Find the mistake: 'She has called me last night.'",
+      "v": [
+        "She",
+        "has called",
+        "me",
+        "last night"
+      ],
+      "t": 1,
+      "izoh": "'last night' tugagan vaqt, 'called' (Past Simple) kerak.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#5a6e0c9a"
+    },
+    {
+      "q": "My father ___ in this factory for 20 years, and he still works here.",
+      "v": [
+        "worked",
+        "has worked",
+        "works",
+        "was working"
+      ],
+      "t": 1,
+      "izoh": "Hozir ham davom etyapti, Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#d170f9ba"
+    },
+    {
+      "q": "My grandfather ___ in this factory for 20 years before he retired.",
+      "v": [
+        "has worked",
+        "worked",
+        "has been working",
+        "works"
+      ],
+      "t": 1,
+      "izoh": "Tugagan davr (nafaqaga chiqqan), Past Simple.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#39f58f2a"
+    },
+    {
+      "q": "I ___ to Canada in 2018.",
+      "v": [
+        "have moved",
+        "moved",
+        "has moved",
+        "have move"
+      ],
+      "t": 1,
+      "izoh": "Aniq yil (2018), Past Simple.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#b9e85ddb"
+    },
+    {
+      "q": "I ___ to this city recently, so I am new here.",
+      "v": [
+        "move",
+        "have moved",
+        "moved once",
+        "was moving"
+      ],
+      "t": 1,
+      "izoh": "'recently', Present Perfect 'have moved'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#4f45a429"
+    },
+    {
+      "q": "Choose the correct experience question about Rome.",
+      "v": [
+        "Did she ever visited Rome?",
+        "Has she ever visited Rome?",
+        "Has she ever visit Rome?",
+        "She has ever visited Rome now?"
+      ],
+      "t": 1,
+      "izoh": "Tajriba savoli, 'Has ... visited'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#dcc13a83"
+    },
+    {
+      "q": "Choose the correct sentence with 'in 2020'.",
+      "v": [
+        "We have met them in 2020.",
+        "We met them in 2020.",
+        "We have meet them in 2020.",
+        "We did met them in 2020."
+      ],
+      "t": 1,
+      "izoh": "'in 2020' aniq vaqt, Past Simple 'met'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#b3c4a69a"
+    },
+    {
+      "q": "How long ___ you known each other?",
+      "v": [
+        "did",
+        "have",
+        "was",
+        "are"
+      ],
+      "t": 1,
+      "izoh": "'How long' + hozir davom, Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#f9bd36a1"
+    },
+    {
+      "q": "What time ___ the film start?",
+      "v": [
+        "has",
+        "did",
+        "have",
+        "is"
+      ],
+      "t": 1,
+      "izoh": "Aniq vaqt so'ralyapti, Past Simple 'did'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#d8c30d9f"
+    },
+    {
+      "q": "She ___ ill since Monday.",
+      "v": [
+        "was",
+        "has been",
+        "is being",
+        "were"
+      ],
+      "t": 1,
+      "izoh": "'since Monday', Present Perfect 'has been'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#81ccff8f"
+    },
+    {
+      "q": "She ___ ill last Monday, but she is fine now.",
+      "v": [
+        "has been",
+        "was",
+        "is",
+        "has being"
+      ],
+      "t": 1,
+      "izoh": "Tugagan vaqt (last Monday), Past Simple 'was'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#5481b628"
+    },
+    {
+      "q": "Find the mistake: 'When have you bought this car?'",
+      "v": [
+        "When",
+        "have",
+        "you bought",
+        "this car"
+      ],
+      "t": 1,
+      "izoh": "'When' aniq vaqt so'raydi, 'did you buy'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#3a56e34f"
+    },
+    {
+      "q": "Find the mistake: 'I have finished it two minutes ago.'",
+      "v": [
+        "I",
+        "have finished",
+        "it",
+        "two minutes ago"
+      ],
+      "t": 1,
+      "izoh": "'ago' bilan Past Simple 'finished' kerak.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#1842a1da"
+    },
+    {
+      "q": "They ___ heard the news, so they already know.",
+      "v": [
+        "did hear",
+        "have heard",
+        "has heard",
+        "hearing"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi natija, Present Perfect 'have heard'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#bb8efdec"
+    },
+    {
+      "q": "We ___ the news on TV last night.",
+      "v": [
+        "have heard",
+        "heard",
+        "has heard",
+        "have hear"
+      ],
+      "t": 1,
+      "izoh": "'last night', Past Simple 'heard'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#67e230aa"
+    },
+    {
+      "q": "Put the words in order: ago / left / two days / he",
+      "v": [
+        "He left two days ago.",
+        "He has left two days ago.",
+        "Two days ago he has left home.",
+        "He left ago two days now."
+      ],
+      "t": 0,
+      "izoh": "'ago', Past Simple 'left'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#d58102d5"
+    },
+    {
+      "q": "I have never ___ such a big dog in my life.",
+      "v": [
+        "saw",
+        "seen",
+        "see",
+        "seeing"
+      ],
+      "t": 1,
+      "izoh": "'never' tajriba, Present Perfect 'have seen'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#20179412"
+    },
+    {
+      "q": "I ___ a big dog in the park this morning while jogging.",
+      "v": [
+        "have seen",
+        "saw",
+        "seen",
+        "have saw"
+      ],
+      "t": 1,
+      "izoh": "Tugagan hodisa (ertalab bo'lib o'tgan), Past Simple 'saw'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#08ba8243"
+    },
+    {
+      "q": "Choose the correct sentence with 'last year'.",
+      "v": [
+        "He has broken his leg last year.",
+        "He broke his leg last year.",
+        "He broke his leg already twice.",
+        "He has broke his leg last year."
+      ],
+      "t": 1,
+      "izoh": "'last year', Past Simple 'broke'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#9a5838c9"
+    },
+    {
+      "q": "Choose the correct sentence about a visible result.",
+      "v": [
+        "Look! Someone broke the window now.",
+        "Look! Someone has broken the window.",
+        "Look! Someone has broke the window.",
+        "Look! Someone break the window."
+      ],
+      "t": 1,
+      "izoh": "Hozirgi natija ko'rinyapti, Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#d24777a4"
+    },
+    {
+      "q": "She ___ three cups of tea today.",
+      "v": [
+        "have drunk",
+        "has drunk",
+        "drunk",
+        "has drank"
+      ],
+      "t": 1,
+      "izoh": "'today' tugamagan, Present Perfect 'has drunk'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#e49b2159"
+    },
+    {
+      "q": "She ___ three cups of tea at the party.",
+      "v": [
+        "has drunk",
+        "drank",
+        "drunk",
+        "has drank"
+      ],
+      "t": 1,
+      "izoh": "'at the party' tugagan hodisa, Past Simple 'drank'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#45a4336b"
+    },
+    {
+      "q": "___ they ever been to the mountains?",
+      "v": [
+        "Did",
+        "Have",
+        "Was",
+        "Are"
+      ],
+      "t": 1,
+      "izoh": "Tajriba savoli, 'Have ... been'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#1520ca18"
+    },
+    {
+      "q": "___ they go to the mountains last weekend?",
+      "v": [
+        "Have",
+        "Did",
+        "Has",
+        "Were"
+      ],
+      "t": 1,
+      "izoh": "'last weekend', Past Simple 'Did'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#8eb237a1"
+    },
+    {
+      "q": "I can't find my phone. I think I ___ it.",
+      "v": [
+        "has lost",
+        "have lost",
+        "losed",
+        "was losing"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi natija, Present Perfect 'have lost'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#de2d3c1f"
+    },
+    {
+      "q": "I ___ my phone at the cafe, but I got it back later.",
+      "v": [
+        "have lost",
+        "lost",
+        "have losed",
+        "was lost"
+      ],
+      "t": 1,
+      "izoh": "Tugagan hodisa, natija yo'q, Past Simple 'lost'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#b8378e60"
+    },
+    {
+      "q": "Find the mistake: 'Have you seen the doctor last week?'",
+      "v": [
+        "Have",
+        "you seen",
+        "the doctor",
+        "last week"
+      ],
+      "t": 0,
+      "izoh": "'last week', 'Did you see' bo'lishi kerak.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#23314164"
+    },
+    {
+      "q": "Find the mistake: 'I did my homework already, so I can play.'",
+      "v": [
+        "I",
+        "did",
+        "already",
+        "so I can play"
+      ],
+      "t": 1,
+      "izoh": "'already', Present Perfect 'have done' kerak.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#7884d6e3"
+    },
+    {
+      "q": "We ___ in London since 2019.",
+      "v": [
+        "lived",
+        "have lived",
+        "has lived",
+        "live"
+      ],
+      "t": 1,
+      "izoh": "'since 2019' + hozir ham, Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#1dc025c5"
+    },
+    {
+      "q": "We ___ in London from 2010 to 2015.",
+      "v": [
+        "have lived",
+        "lived",
+        "has lived",
+        "have living"
+      ],
+      "t": 1,
+      "izoh": "Tugagan davr (to 2015), Past Simple.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#9ed1a6e5"
+    },
+    {
+      "q": "Choose the correct sentence with 'two weeks ago'.",
+      "v": [
+        "I have bought a car two weeks ago.",
+        "I bought a car two weeks ago.",
+        "I bought a car just now already.",
+        "I have buy a car two weeks ago."
+      ],
+      "t": 1,
+      "izoh": "'two weeks ago', Past Simple 'bought'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#9933c13f"
+    },
+    {
+      "q": "Choose the correct sentence with 'this year'.",
+      "v": [
+        "Prices have risen a lot this year.",
+        "Prices rose a lot this year over.",
+        "Prices have rose a lot this year.",
+        "Prices risen a lot this year now."
+      ],
+      "t": 0,
+      "izoh": "'this year' tugamagan, Present Perfect 'have risen'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#d653942f"
+    },
+    {
+      "q": "He ___ his job last month.",
+      "v": [
+        "has changed",
+        "changed",
+        "has change",
+        "have changed"
+      ],
+      "t": 1,
+      "izoh": "'last month', Past Simple 'changed'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#74de7690"
+    },
+    {
+      "q": "He ___ his job, so now he works from home.",
+      "v": [
+        "have changed",
+        "has changed",
+        "change",
+        "has change"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi natija, Present Perfect 'has changed'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#eaacf17e"
+    },
+    {
+      "q": "Where ___ you go on holiday last year?",
+      "v": [
+        "have",
+        "did",
+        "has",
+        "were"
+      ],
+      "t": 1,
+      "izoh": "'last year', Past Simple 'did'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#9ee96b12"
+    },
+    {
+      "q": "Where ___ you been? I have been looking for you.",
+      "v": [
+        "did",
+        "have",
+        "was",
+        "are"
+      ],
+      "t": 1,
+      "izoh": "'been' + hozirgi holat, Present Perfect 'have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#f76805f6"
+    },
+    {
+      "q": "The company ___ a lot of workers in 2021.",
+      "v": [
+        "has hired",
+        "hired",
+        "has hire",
+        "have hired"
+      ],
+      "t": 1,
+      "izoh": "Aniq yil, Past Simple 'hired'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#990355ed"
+    },
+    {
+      "q": "The company ___ a lot of workers this year.",
+      "v": [
+        "have hired",
+        "has hired",
+        "hire",
+        "has hire"
+      ],
+      "t": 1,
+      "izoh": "'this year' tugamagan, Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#6d48ee80"
+    },
+    {
+      "q": "I ___ my grandmother two days ago.",
+      "v": [
+        "have visited",
+        "visited",
+        "have visit",
+        "has visited"
+      ],
+      "t": 1,
+      "izoh": "'two days ago', Past Simple 'visited'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#21e4b481"
+    },
+    {
+      "q": "I ___ my grandmother, so I know she is well.",
+      "v": [
+        "has visited",
+        "have visited",
+        "have visit",
+        "did visit"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi natija, Present Perfect 'have visited'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#60ef80d2"
+    },
+    {
+      "q": "Choose the correct question with 'yet'.",
+      "v": [
+        "Did you finish your report yet?",
+        "Have you finished your report yet?",
+        "Have you finish your report yet?",
+        "Did you finished your report yet?"
+      ],
+      "t": 1,
+      "izoh": "'yet', Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#a42d972f"
+    },
+    {
+      "q": "Choose the correct sentence with an exact time.",
+      "v": [
+        "I have called him this morning at 8.",
+        "I called him this morning at 8.",
+        "I have call him at 8 today.",
+        "I calling him this morning now."
+      ],
+      "t": 1,
+      "izoh": "Aniq tugagan vaqt (8 da), Past Simple 'called'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#c91a1e29"
+    },
+    {
+      "q": "Add 'yesterday' and transform: 'I have written three emails.'",
+      "v": [
+        "I have written three emails yesterday.",
+        "I wrote three emails yesterday.",
+        "I have wrote three emails yesterday.",
+        "I writed three emails yesterday."
+      ],
+      "t": 1,
+      "izoh": "'yesterday', Past Simple 'wrote'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#333d593e"
+    },
+    {
+      "q": "Emphasise the result now: 'She lost her ring last night.'",
+      "v": [
+        "She has lost her ring.",
+        "She lost her ring now here.",
+        "She has lose her ring.",
+        "She had lost her ring gone."
+      ],
+      "t": 0,
+      "izoh": "Natija hozir, Present Perfect 'has lost'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#6242fce4"
+    },
+    {
+      "q": "They ___ married for ten years now.",
+      "v": [
+        "were",
+        "have been",
+        "are being",
+        "was"
+      ],
+      "t": 1,
+      "izoh": "'for ten years now', Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#47566ef9"
+    },
+    {
+      "q": "They ___ married in a small church last June.",
+      "v": [
+        "have got",
+        "got",
+        "have gotten",
+        "were getting"
+      ],
+      "t": 1,
+      "izoh": "Tugagan hodisa (to'y), Past Simple 'got'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#21c57d4f"
+    },
+    {
+      "q": "Find the mistake: 'My English has improved last year.'",
+      "v": [
+        "My English",
+        "has improved",
+        "last year",
+        "improved"
+      ],
+      "t": 1,
+      "izoh": "'last year', 'improved' (Past Simple) kerak, 'has improved' xato.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#284b3be0"
+    },
+    {
+      "q": "Find the mistake: 'I never went abroad in my life.'",
+      "v": [
+        "I",
+        "never went",
+        "abroad",
+        "in my life"
+      ],
+      "t": 1,
+      "izoh": "Umr davomidagi tajriba, 'have never been' kerak.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#4844f9b8"
+    },
+    {
+      "q": "We ___ a great time at the concert last night.",
+      "v": [
+        "have had",
+        "had",
+        "has had",
+        "have has"
+      ],
+      "t": 1,
+      "izoh": "'last night', Past Simple 'had'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#5c887600"
+    },
+    {
+      "q": "We ___ a great time so far on this trip.",
+      "v": [
+        "had",
+        "have had",
+        "has had",
+        "have has"
+      ],
+      "t": 1,
+      "izoh": "'so far' davom etyapti, Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#00b38138"
+    },
+    {
+      "q": "Choose the correct sentence with 'in May'.",
+      "v": [
+        "He has left the company in May.",
+        "He left the company in May.",
+        "He left the company already in May.",
+        "He has leave the company in May."
+      ],
+      "t": 1,
+      "izoh": "'in May' aniq vaqt, Past Simple 'left'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#455a9ce6"
+    },
+    {
+      "q": "Choose the correct sentence about arriving now.",
+      "v": [
+        "The taxi has arrived. Let us go!",
+        "The taxi arrived. It will come soon.",
+        "The taxi has arrive. Let us go!",
+        "The taxi arrive. Let us go now!"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi natija, Present Perfect 'has arrived'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#58f06034"
+    },
+    {
+      "q": "I ___ that book, so I can tell you the ending.",
+      "v": [
+        "readed it",
+        "have read",
+        "was reading it",
+        "reads"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi natija (bilaman), Present Perfect 'have read'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#951fcc5a"
+    },
+    {
+      "q": "I ___ that book during my holiday.",
+      "v": [
+        "have read",
+        "read",
+        "readed",
+        "have readed"
+      ],
+      "t": 1,
+      "izoh": "Tugagan davr (ta'til), Past Simple 'read'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#b0e069de"
+    },
+    {
+      "q": "___ you ever ridden a horse?",
+      "v": [
+        "Did",
+        "Have",
+        "Was",
+        "Are"
+      ],
+      "t": 1,
+      "izoh": "Tajriba, 'Have you ... ridden'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#2717c71c"
+    },
+    {
+      "q": "I ___ a horse when I was a child.",
+      "v": [
+        "have ridden",
+        "rode",
+        "have rode",
+        "ridden"
+      ],
+      "t": 1,
+      "izoh": "'when I was a child' tugagan, Past Simple 'rode'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#843314a0"
+    },
+    {
+      "q": "Prices ___ sharply right after the news came out.",
+      "v": [
+        "have fallen",
+        "fell",
+        "has fallen",
+        "have fell"
+      ],
+      "t": 1,
+      "izoh": "Tugagan hodisadan keyin, Past Simple 'fell'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#7ed571e0"
+    },
+    {
+      "q": "Prices ___ a lot recently.",
+      "v": [
+        "have fall",
+        "have fallen",
+        "has fallen",
+        "have fell"
+      ],
+      "t": 1,
+      "izoh": "'recently', Present Perfect 'have fallen'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#466fe000"
+    },
+    {
+      "q": "She ___ her leg while she was skiing last winter.",
+      "v": [
+        "has broken",
+        "broke",
+        "has broke",
+        "have broken"
+      ],
+      "t": 1,
+      "izoh": "'last winter', Past Simple 'broke'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#9d15d301"
+    },
+    {
+      "q": "She ___ her leg, so she can't walk now.",
+      "v": [
+        "have broken",
+        "has broken",
+        "broken",
+        "has broke"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi natija, Present Perfect 'has broken'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#a76ce0ae"
+    },
+    {
+      "q": "Find the mistake: 'Have you gone to the bank yesterday?'",
+      "v": [
+        "Have",
+        "you gone",
+        "to the bank",
+        "yesterday"
+      ],
+      "t": 0,
+      "izoh": "'yesterday', 'Did you go' kerak.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#5e22c37b"
+    },
+    {
+      "q": "Find the mistake: 'She writes to me since March.'",
+      "v": [
+        "She",
+        "writes",
+        "to me",
+        "since March"
+      ],
+      "t": 1,
+      "izoh": "'since March', 'has written' kerak, 'writes' xato.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#02fbde7d"
+    },
+    {
+      "q": "Choose the correct time word for Past Simple: 'She travelled to Spain ___.'",
+      "v": [
+        "so far",
+        "already",
+        "in 2017",
+        "yet"
+      ],
+      "t": 2,
+      "izoh": "'in 2017' aniq vaqt, Past Simple.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#bd48136b"
+    },
+    {
+      "q": "We ___ our car last month and bought a bike.",
+      "v": [
+        "have sold",
+        "sold",
+        "has sold",
+        "have selled"
+      ],
+      "t": 1,
+      "izoh": "'last month', Past Simple 'sold'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#2e424447"
+    },
+    {
+      "q": "We ___ our car, so we take the bus now.",
+      "v": [
+        "have sell",
+        "have sold",
+        "has sold",
+        "have selled"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi natija, Present Perfect 'have sold'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#751ff5fc"
+    },
+    {
+      "q": "He ___ English for five years and speaks it well now.",
+      "v": [
+        "have studied",
+        "has studied",
+        "study",
+        "studies"
+      ],
+      "t": 1,
+      "izoh": "Hozir ham davom, Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#5cb71eb5"
+    },
+    {
+      "q": "He ___ English at school, but he forgot most of it.",
+      "v": [
+        "has studied",
+        "studied",
+        "study",
+        "has study"
+      ],
+      "t": 1,
+      "izoh": "Tugagan davr (maktabda), Past Simple 'studied'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#fe3de441"
+    },
+    {
+      "q": "Choose the correct experience question about food.",
+      "v": [
+        "Did they ever try Uzbek food?",
+        "Have they ever tried Uzbek food?",
+        "Have they ever try Uzbek food?",
+        "They have ever tried Uzbek food now?"
+      ],
+      "t": 1,
+      "izoh": "Tajriba savoli, 'Have ... tried'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#54042798"
+    },
+    {
+      "q": "Choose the correct sentence with 'last week'.",
+      "v": [
+        "I have met your sister at the party last week.",
+        "I met your sister at the party last week.",
+        "I have meet your sister last week.",
+        "I did met your sister last week."
+      ],
+      "t": 1,
+      "izoh": "'last week', Past Simple 'met'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#fdb2bc73"
+    },
+    {
+      "q": "The kids ___ their toys everywhere. Look at this mess!",
+      "v": [
+        "have leave",
+        "have left",
+        "has left",
+        "have leaved"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi natija (tartibsizlik), Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#3e81bb04"
+    },
+    {
+      "q": "The kids ___ for school an hour ago.",
+      "v": [
+        "have left",
+        "left",
+        "has left",
+        "have leaved"
+      ],
+      "t": 1,
+      "izoh": "'an hour ago', Past Simple 'left'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#52395d47"
+    },
+    {
+      "q": "I ___ this song many times and I still love it.",
+      "v": [
+        "has hear",
+        "have heard",
+        "has heard",
+        "have hear"
+      ],
+      "t": 1,
+      "izoh": "Tajriba, davom etadi, Present Perfect.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#94684199"
+    },
+    {
+      "q": "I ___ this song for the first time in 2019.",
+      "v": [
+        "have heard",
+        "heard",
+        "has heard",
+        "have hear"
+      ],
+      "t": 1,
+      "izoh": "Aniq yil, Past Simple 'heard'.",
+      "qiy": "orta",
+      "id": "ing_b1_m2#bd5dacd1"
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "nom": "03-mavzu. Gravitatsiya Maydonidagi Harakat",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Butun olam tortishish qonuniga asosan, jismga Yerning tortishish kuchi qanday formula bilan ifodalanadi?",
+      "v": [
+        "F = GMm/r²",
+        "F = GMm/r",
+        "F = Gm/r²",
+        "F = GM/r²"
+      ],
+      "t": 0,
+      "izoh": "F = GMm/r²; m — jism massasi, M — Yer massasi, r — jism va Yer markazlari orasidagi masofa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#eb04fe77"
+    },
+    {
+      "q": "Birinchi kosmik tezlik deb nimaga aytiladi?",
+      "v": [
+        "Jismning Yer sirti yaqinida aylana trayektoriya bo'ylab harakatlanishi uchun zarur bo'lgan minimal tezlikka",
+        "Jismning Yerdan butunlay uzoqlashishi uchun zarur tezlikka",
+        "Quyosh sistemasini tark etish uchun zarur tezlikka",
+        "Jismning erkin tushish tezligiga"
+      ],
+      "t": 0,
+      "izoh": "Birinchi kosmik tezlik — Yer sirti yaqinida aylana trayektoriya bo'ylab harakat uchun zarur minimal tezlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#eca1f6fd"
+    },
+    {
+      "q": "Birinchi kosmik tezlikning son qiymati taxminan qancha?",
+      "v": [
+        "7,9 km/s",
+        "11,2 km/s",
+        "16,7 km/s",
+        "9,8 km/s"
+      ],
+      "t": 0,
+      "izoh": "υ(I) = √(gR) ≈ 7,9 km/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#51ca30c6"
+    },
+    {
+      "q": "Ikkinchi kosmik tezlikning son qiymati taxminan qancha?",
+      "v": [
+        "11,2 km/s",
+        "7,9 km/s",
+        "16,7 km/s",
+        "3,4 km/s"
+      ],
+      "t": 0,
+      "izoh": "υ(II) ≈ 11,2 km/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#f3971145"
+    },
+    {
+      "q": "Uchinchi kosmik tezlikning son qiymati taxminan qancha?",
+      "v": [
+        "16,7 km/s",
+        "11,2 km/s",
+        "7,9 km/s",
+        "25 km/s"
+      ],
+      "t": 0,
+      "izoh": "υ(III) ≈ 16,7 km/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#672229bf"
+    },
+    {
+      "q": "Ikkinchi kosmik tezlik deb qanday tezlikka aytiladi?",
+      "v": [
+        "Jism Yerning tortish kuchini yengib, Quyoshning sun'iy yo'ldoshi bo'lib qolishi uchun zarur bo'lgan minimal tezlikka",
+        "Yer sirti yaqinida aylanish uchun zarur tezlikka",
+        "Quyosh sistemasidan chiqib ketish uchun zarur tezlikka",
+        "Oyga yetib borish uchun zarur tezlikka"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi kosmik tezlik — Yerning tortish kuchini yengib, Quyoshning sun'iy yo'ldoshi bo'lish uchun zarur minimal tezlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#46e6da5e"
+    },
+    {
+      "q": "Kosmik kemaga uchinchi kosmik tezlik nima uchun kerak?",
+      "v": [
+        "Quyoshning tortishish kuchini yengib, Quyosh sistemasini tark etishi uchun",
+        "Yer atrofida aylanishi uchun",
+        "Oyga qo'nishi uchun",
+        "Yer sirtidan ko'tarilishi uchun"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi kosmik tezlik Quyoshning tortishish kuchini yengib, Quyosh sistemasini tark etish uchun kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#ae021c27"
+    },
+    {
+      "q": "Birinchi kosmik tezlik qanday formula bilan topiladi?",
+      "v": [
+        "υ = √(gR)",
+        "υ = gR",
+        "υ = √(g/R)",
+        "υ = 2gR"
+      ],
+      "t": 0,
+      "izoh": "υ(I) = √(GM/R) = √(gR).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#d3e944c9"
+    },
+    {
+      "q": "Birinchi kosmik tezlik bilan harakatlanadigan sun'iy yo'ldosh Yer atrofini bir marta qancha vaqtda aylanib chiqadi?",
+      "v": [
+        "84 minut 12 s da",
+        "24 soatda",
+        "60 minutda",
+        "365 kunda"
+      ],
+      "t": 0,
+      "izoh": "7,9 km/s tezlikdagi yo'ldosh Yer atrofini 84 minut 12 s da bir marta aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#3325f8f2"
+    },
+    {
+      "q": "Jismning boshlang'ich tezligi 7,9 km/s dan kichik bo'lsa, uning harakat trayektoriyasi qanday bo'ladi?",
+      "v": [
+        "Paraboladan iborat bo'lib, jism Yerga qaytib tushadi",
+        "Aylanadan iborat bo'ladi",
+        "Ellipsdan iborat bo'ladi",
+        "To'g'ri chiziqdan iborat bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "υ0 < 7,9 km/s bo'lsa, trayektoriya parabola bo'lib, jism Yerga qaytib tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#ec62f592"
+    },
+    {
+      "q": "Jism Yerning sun'iy yo'ldoshiga aylanishi uchun unga qanday tezlik berilishi kerak?",
+      "v": [
+        "υ ≈ 7,9 km/s gorizontal yo'nalishda",
+        "υ < 7,9 km/s vertikal yo'nalishda",
+        "υ = 16,7 km/s vertikal yo'nalishda",
+        "Ixtiyoriy kichik tezlik"
+      ],
+      "t": 0,
+      "izoh": "υ0 = υ(I) ≈ 7,9 km/s tezlik berilsa, jism Yer atrofida aylana trayektoriya bo'ylab harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#c701549e"
+    },
+    {
+      "q": "Jismni Yer atrofidagi orbitaga chiqarish vazifasini nima bajaradi?",
+      "v": [
+        "Eltuvchi raketalar",
+        "Reaktiv samolyotlar",
+        "Sharlar",
+        "Sun'iy yo'ldoshlarning o'zi"
+      ],
+      "t": 0,
+      "izoh": "Jismni kerakli balandlikka olib chiqish va yetarli tezlik berish vazifasini eltuvchi raketalar bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#84354319"
+    },
+    {
+      "q": "Havoning qarshilik kuchi qanday balandlikda deyarli sezilmaydi?",
+      "v": [
+        "300–400 km",
+        "10–20 km",
+        "50–60 km",
+        "1000–2000 km"
+      ],
+      "t": 0,
+      "izoh": "300–400 km balandlikda havoning qarshilik kuchi deyarli sezilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#f3a6c907"
+    },
+    {
+      "q": "Yerning radiusi birinchi kosmik tezlikni hisoblashda qancha deb olingan?",
+      "v": [
+        "6370 km",
+        "6400 km",
+        "6000 km",
+        "10000 km"
+      ],
+      "t": 0,
+      "izoh": "Hisoblashda Yer radiusi R = 6370 km olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#d8b42cb5"
+    },
+    {
+      "q": "Jism Yer sirtiga yaqin masofada aylana trayektoriya bo'ylab harakatlanganda markazga intilma kuch nimadan iborat bo'ladi?",
+      "v": [
+        "Yerning tortishish kuchidan",
+        "Ipning taranglik kuchidan",
+        "Ishqalanish kuchidan",
+        "Havoning qarshilik kuchidan"
+      ],
+      "t": 0,
+      "izoh": "Bu holda markazga intilma kuch Yerning tortishish kuchidan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#abdfcb14"
+    },
+    {
+      "q": "Ma'lum balandlikdan gorizontal otilgan jismning boshlang'ich tezligi oshirilsa, uning uchish uzoqligi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Avval kamayib, keyin ortadi"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich tezlik oshirilsa, uchish uzoqligi ham ortib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#90d188f2"
+    },
+    {
+      "q": "Gorizontal otilgan jismga faqat og'irlik kuchi ta'sir qilganda, gorizontal yo'nalishda jism qanday harakat qiladi?",
+      "v": [
+        "Tekis harakat",
+        "Tezlanuvchan harakat",
+        "Sekinlanuvchan harakat",
+        "Aylanma harakat"
+      ],
+      "t": 0,
+      "izoh": "Gorizontal yo'nalishda kuch ta'sir qilmagani uchun jism tekis harakat qiladi: S = υ0·t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#fa1ab4c2"
+    },
+    {
+      "q": "Gorizontal otilgan jismning uchish uzoqligi qanday formula bilan topiladi?",
+      "v": [
+        "S = υ0·t",
+        "S = gt²/2",
+        "S = υ0²/2g",
+        "S = g·t"
+      ],
+      "t": 0,
+      "izoh": "Uchish uzoqligi S = υ0·t; bunda t = √(2h/g) — uchish vaqti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#72dc46e5"
+    },
+    {
+      "q": "h balandlikdan gorizontal otilgan jismning uchish vaqti qanday topiladi?",
+      "v": [
+        "t = √(2h/g)",
+        "t = 2h/g",
+        "t = √(gh)",
+        "t = h/g"
+      ],
+      "t": 0,
+      "izoh": "h = gt²/2 dan t = √(2h/g).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#060188d3"
+    },
+    {
+      "q": "Sayyoraning radiusi kattaroq bo'lsa (boshqa shartlar teng), birinchi kosmik tezlik qanday o'zgaradi?",
+      "v": [
+        "Katta bo'ladi",
+        "Kichik bo'ladi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "υ = √(gR) bo'lgani uchun radius katta bo'lsa, birinchi kosmik tezlik ham katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#21782be1"
+    },
+    {
+      "q": "Sayyoradagi erkin tushish tezlanishi kattaroq bo'lsa (radius teng), birinchi kosmik tezlik qanday o'zgaradi?",
+      "v": [
+        "Katta bo'ladi",
+        "Kichik bo'ladi",
+        "O'zgarmaydi",
+        "Nolga yaqinlashadi"
+      ],
+      "t": 0,
+      "izoh": "υ = √(gR) bo'lgani uchun g katta bo'lsa, birinchi kosmik tezlik ham katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#c8a6763b"
+    },
+    {
+      "q": "Eltuvchi raketalar kosmodromlarda qanday yo'nalishda harakatga keltiriladi?",
+      "v": [
+        "Vertikal yo'nalishda",
+        "Gorizontal yo'nalishda",
+        "Aylana bo'ylab",
+        "Gorizontga 45° burchak ostida"
+      ],
+      "t": 0,
+      "izoh": "Eltuvchi raketalar maxsus kosmodromlarda vertikal yo'nalishda harakatga keltiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#2edc3ca2"
+    },
+    {
+      "q": "Yerga tortilishini tadqiq etgan olimlar qatoriga kimlar kiradi?",
+      "v": [
+        "Galileo Galiley, Isaak Nyuton, Genri Kavendish",
+        "Albert Eynshteyn, Niels Bor",
+        "Aristotel, Demokrit",
+        "Faradey, Amper"
+      ],
+      "t": 0,
+      "izoh": "Darslikda Galileo Galiley, Isaak Nyuton, Genri Kavendish nomlari keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#aa15bb08"
+    },
+    {
+      "q": "g va GM orasidagi bog'liqlik qanday?",
+      "v": [
+        "g = GM/R²",
+        "g = GM/R",
+        "g = GM·R²",
+        "g = G/(MR²)"
+      ],
+      "t": 0,
+      "izoh": "g = GM/R² bo'lgani uchun υ(I) = √(gR) ko'rinishda ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#12f06c2e"
+    },
+    {
+      "q": "Atrofimizdagi barcha jismlarning harakatiga qanday kuch o'z ta'sirini ko'rsatadi?",
+      "v": [
+        "Yerning tortishish kuchi",
+        "Magnit kuch",
+        "Elektr kuchi",
+        "Yadro kuchi"
+      ],
+      "t": 0,
+      "izoh": "Atrofdagi barcha jismlarning harakatiga Yerning tortishish kuchi ta'sir ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#56080c14"
+    },
+    {
+      "q": "Bir jismni Yer sirtidan tik yuqoriga otsak, u qanday harakat qiladi?",
+      "v": [
+        "Ma'lum balandlikka ko'tarilib, qaytib otilgan joyiga tushadi",
+        "Doimiy tezlik bilan yuqoriga ko'tarilaveradi",
+        "Aylana bo'ylab harakat qiladi",
+        "Yer atrofida orbitaga chiqadi"
+      ],
+      "t": 0,
+      "izoh": "Tik yuqoriga otilgan jism ma'lum balandlikka ko'tarilib, qaytib tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#432f8553"
+    },
+    {
+      "q": "Quyosh sistemasidagi boshqa sayyoralarni tadqiq etish uchun jismga qanday tezlik berish zarur?",
+      "v": [
+        "Birinchi kosmik tezlikdan kattaroq tezlik",
+        "Birinchi kosmik tezlikdan kichik tezlik",
+        "Aynan 7,9 km/s tezlik",
+        "Nolga teng tezlik"
+      ],
+      "t": 0,
+      "izoh": "Boshqa sayyoralarni tadqiq etish uchun birinchi kosmik tezlikdan ham kattaroq — ikkinchi kosmik tezlik kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#41aedfd8"
+    },
+    {
+      "q": "Massasi Yerning massasidan 4 marta katta, radiusi Yer radiusiga teng sayyoraning birinchi kosmik tezligi Yernikiga nisbatan qanday bo'ladi?",
+      "v": [
+        "2 marta katta",
+        "4 marta katta",
+        "2 marta kichik",
+        "Bir xil"
+      ],
+      "t": 0,
+      "izoh": "υ = √(GM/R); massa 4 marta ortsa, tezlik √4 = 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#4342a084"
+    },
+    {
+      "q": "Sun'iy yo'ldosh h balandlikda aylana orbita bo'ylab harakatlanganda uning tezligi qanday ifodalanadi?",
+      "v": [
+        "υ = √(gR²/(R+h))",
+        "υ = √(g(R+h))",
+        "υ = √(g/h)",
+        "υ = √(gR·h)"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi namunada υ(h) = R·√(g/(R+h)) = √(gR²/(R+h)) ko'rinishida ifodalangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#70324501"
+    },
+    {
+      "q": "Kosmik tezliklar nima uchun bir-biridan farq qiladi?",
+      "v": [
+        "Jism erishmoqchi bo'lgan harakat turi (orbitada qolish, Yerdan uzoqlashish, Quyosh sistemasini tark etish) turlicha bo'lgani uchun",
+        "Jismlarning massasi turlicha bo'lgani uchun",
+        "Kosmodromlar turli joylarda bo'lgani uchun",
+        "Havo qarshiligi turlicha bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Har bir kosmik tezlik ma'lum vazifani bajarish uchun zarur minimal tezlik bo'lgani uchun ular farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m03-gravitatsiya-maydonidagi-harakat#eda19ed4"
+    }
+  ]
+}

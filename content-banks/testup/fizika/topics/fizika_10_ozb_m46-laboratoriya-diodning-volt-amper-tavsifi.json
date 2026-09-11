@@ -1,0 +1,381 @@
+{
+  "nom": "46-mavzu. Laboratoriya Diodning Volt Amper Tavsifi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Laboratoriya ishining maqsadi nima?",
+      "v": [
+        "Yarimo‘tkazgichli dioddan o‘tuvchi tok kuchini unga qo‘yilgan kuchlanishga bog‘liqligini o‘rganish",
+        "Diodning massasini aniqlash",
+        "Reostatning qarshiligini o‘lchash",
+        "Voltmetrni tekshirish"
+      ],
+      "t": 0,
+      "izoh": "Ish maqsadi – diod tokining kuchlanishga bog‘liqligini (volt-amper tavsifini) o‘rganish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#588a80d4"
+    },
+    {
+      "q": "Laboratoriya ishida qanday tok manbai ishlatiladi?",
+      "v": [
+        "O‘zgarmas tok manbai (36–42 V)",
+        "O‘zgaruvchan tok manbai",
+        "Akkumulyator 2 V",
+        "Galvanik element 1,5 V"
+      ],
+      "t": 0,
+      "izoh": "Kerakli asboblar ro‘yxatida o‘zgarmas tok manbai (36–42 V) ko‘rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#eb136f87"
+    },
+    {
+      "q": "Zanjirda tok kuchi qaysi asbob bilan o‘lchanadi?",
+      "v": [
+        "Milliampermetr bilan",
+        "Voltmetr bilan",
+        "Ommetr bilan",
+        "Ampermetr bilan (A)"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi milliampermetr (mA) orqali o‘lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#b353e18f"
+    },
+    {
+      "q": "Diodga qo‘yilgan kuchlanish qaysi asbob bilan o‘lchanadi?",
+      "v": [
+        "Voltmetr bilan",
+        "Milliampermetr bilan",
+        "Ommetr bilan",
+        "Termometr bilan"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish voltmetr orqali o‘lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#a7b59ef5"
+    },
+    {
+      "q": "Zanjir chizmasida “D” harfi nimani bildiradi?",
+      "v": [
+        "Diodni",
+        "Dinamometrni",
+        "Datchikni",
+        "Dielektrikni"
+      ],
+      "t": 0,
+      "izoh": "Chizmada D – diod.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#a4e4b063"
+    },
+    {
+      "q": "Zanjir chizmasida “R” harfi nimani bildiradi?",
+      "v": [
+        "Reostatni",
+        "Rezistorni (doimiy)",
+        "Radiatorni",
+        "Rubilnikni"
+      ],
+      "t": 0,
+      "izoh": "Chizmada R – reostat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#7d9f7cf5"
+    },
+    {
+      "q": "Tajriba boshlanishidan oldin kalit qanday holatda bo‘lishi kerak?",
+      "v": [
+        "Ochiq (zanjir uzilgan) holatda",
+        "Yopiq holatda",
+        "Yarim ochiq holatda",
+        "Ahamiyatsiz"
+      ],
+      "t": 0,
+      "izoh": "Zanjir ochiq holatga keltiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#4e9f3fce"
+    },
+    {
+      "q": "Kalit ulanishidan oldin reostat surgichi qanday holatga qo‘yiladi?",
+      "v": [
+        "Voltmetr ko‘rsatishi 0 V bo‘ladigan holatga",
+        "Maksimal kuchlanish holatiga",
+        "O‘rta holatga",
+        "Ahamiyatsiz"
+      ],
+      "t": 0,
+      "izoh": "Reostat surilib voltmetr 0 V ko‘rsatadigan holatga keltiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#acd0d2d0"
+    },
+    {
+      "q": "Tajribada kuchlanish qanday o‘zgartiriladi?",
+      "v": [
+        "Reostat jilgichini surib orttirib boriladi",
+        "Tok manbaini almashtirib",
+        "Kalitni tez-tez ochib-ulab",
+        "Voltmetrni qayta ulab"
+      ],
+      "t": 0,
+      "izoh": "Reostat yordamida tashqi zanjirga beriladigan kuchlanish orttirib boriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#5757d5e8"
+    },
+    {
+      "q": "O‘lchash natijalari qayerga kiritiladi?",
+      "v": [
+        "U, V va I, mA ustunli jadvalga",
+        "Daftar erkin joyiga",
+        "Grafikka bevosita",
+        "Hech qayerga"
+      ],
+      "t": 0,
+      "izoh": "Natijalar U (V) va I (mA) jadvaliga yozib boriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#8607be31"
+    },
+    {
+      "q": "Teskari yo‘nalishni o‘rganish uchun nima qilinadi?",
+      "v": [
+        "Tok manbaining qutblari almashtirilib ulanadi",
+        "Diod almashtiriladi",
+        "Voltmetr olib tashlanadi",
+        "Reostat o‘chiriladi"
+      ],
+      "t": 0,
+      "izoh": "Qutblar almashtirilgach tajriba takrorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#084270ea"
+    },
+    {
+      "q": "Volt-amper tavsifi nima?",
+      "v": [
+        "Tok kuchining kuchlanishga bog‘liqlik grafigi",
+        "Qarshilikning haroratga bog‘liqligi",
+        "Kuchlanishning vaqtga bog‘liqligi",
+        "Tokning massaga bog‘liqligi"
+      ],
+      "t": 0,
+      "izoh": "Volt-amper tavsifi – I(U) bog‘liqlik grafigi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#04ccc9e0"
+    },
+    {
+      "q": "Diodning to‘g‘ri yo‘nalishdagi volt-amper tavsifi qanday ko‘rinishga ega?",
+      "v": [
+        "To‘g‘ri chiziqdan iborat emas",
+        "Mukammal to‘g‘ri chiziq",
+        "Gorizontal to‘g‘ri chiziq",
+        "Vertikal to‘g‘ri chiziq"
+      ],
+      "t": 0,
+      "izoh": "To‘g‘ri ulangan diodda tok kuchlanishga to‘g‘ri chiziqli bog‘liq emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#a5a8d8ae"
+    },
+    {
+      "q": "Diod to‘g‘ri ulanganda tok va kuchlanish bog‘liqligi to‘g‘ri chiziqli emasligining sababi nima?",
+      "v": [
+        "p–n o‘tish qarshiligi kuchlanish ortishi bilan o‘zgaradi",
+        "Voltmetr xato ko‘rsatadi",
+        "Reostat ishlamaydi",
+        "Diod qizib ketadi"
+      ],
+      "t": 0,
+      "izoh": "p–n o‘tish qarshiligi qo‘yilgan kuchlanishga bog‘liq, shuning uchun bog‘liqlik chiziqli emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#0cbe451b"
+    },
+    {
+      "q": "Teskari yo‘nalishda kuchlanish qo‘yilganda dioddan tok o‘tadimi?",
+      "v": [
+        "Ha, juda kichik miqdorda tok o‘tadi",
+        "Yo‘q, umuman o‘tmaydi",
+        "Ha, katta tok o‘tadi",
+        "Faqat 0 V da o‘tadi"
+      ],
+      "t": 0,
+      "izoh": "Teskari yo‘nalishda ham biroz miqdorda tok o‘tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#2013ad71"
+    },
+    {
+      "q": "Teskari yo‘nalishda nima uchun biroz bo‘lsa-da tok o‘tadi?",
+      "v": [
+        "Asosiy bo‘lmagan zaryad tashuvchilar harakati tufayli",
+        "Diodning yorug‘likka sezgirligi tufayli",
+        "Voltmetr ichidan o‘tuvchi tok tufayli",
+        "Simlarning qizishi tufayli"
+      ],
+      "t": 0,
+      "izoh": "Teskari yo‘nalishda oz miqdordagi asosiy bo‘lmagan tashuvchilar kichik tok hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#127dbb36"
+    },
+    {
+      "q": "Diodga teskari yo‘nalishda kuchlanish qo‘yishda qanday cheklov bor?",
+      "v": [
+        "Diod pasportida yozilgan qiymatdan katta kuchlanish qo‘yib bo‘lmaydi",
+        "Istalgan kuchlanish qo‘yish mumkin",
+        "Faqat 1 V dan oshmasligi kerak",
+        "Cheklov yo‘q"
+      ],
+      "t": 0,
+      "izoh": "Teskari kuchlanish pasport qiymatidan oshirilmasligi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#af376382"
+    },
+    {
+      "q": "Grafikda to‘g‘ri va teskari yo‘nalishdagi tok kuchlari qanday farq qiladi?",
+      "v": [
+        "To‘g‘ri yo‘nalishda tok ancha katta",
+        "Teskari yo‘nalishda tok ancha katta",
+        "Farq yo‘q",
+        "Ikkalasi ham nol"
+      ],
+      "t": 0,
+      "izoh": "To‘g‘ri yo‘nalishda tok teskari yo‘nalishdagidan ancha katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#5163516e"
+    },
+    {
+      "q": "Diodning elektr qarshiligi qanday topiladi?",
+      "v": [
+        "O‘lchangan U va I qiymatlaridan foydalanib",
+        "Faqat voltmetr ko‘rsatishidan",
+        "Reostat shkalasidan",
+        "Tok manbai kuchlanishidan"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik olingan ma’lumotlardan (U/I) hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#0c536498"
+    },
+    {
+      "q": "Laboratoriya ishida voltmetr zanjirga qanday ulanadi?",
+      "v": [
+        "Diodga parallel",
+        "Diodga ketma-ket",
+        "Kalitga ketma-ket",
+        "Tok manbaiga ketma-ket"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish o‘lchanadigan elementga voltmetr parallel ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#7f265952"
+    },
+    {
+      "q": "Laboratoriya ishida milliampermetr zanjirga qanday ulanadi?",
+      "v": [
+        "Ketma-ket",
+        "Parallel",
+        "Qutblarga bevosita",
+        "Ahamiyatsiz"
+      ],
+      "t": 0,
+      "izoh": "Tok o‘lchovchi asbob zanjirga ketma-ket ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#40d796dc"
+    },
+    {
+      "q": "Tajribada reostatning vazifasi nima?",
+      "v": [
+        "Zanjirga beriladigan kuchlanishni silliq o‘zgartirish",
+        "Tok manbaini himoya qilish",
+        "Diodni sovutish",
+        "O‘lchash aniqligini kamaytirish"
+      ],
+      "t": 0,
+      "izoh": "Reostat orqali kuchlanish orttirib boriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#0c44a281"
+    },
+    {
+      "q": "Tajriba yakunlangach qanday ish bajariladi?",
+      "v": [
+        "Natijalar bo‘yicha tok kuchining kuchlanishga bog‘liqlik grafigi chiziladi",
+        "Diod darhol uziladi",
+        "Asboblar yuviladi",
+        "Hech narsa qilinmaydi"
+      ],
+      "t": 0,
+      "izoh": "O‘lchashlar asosida I(U) grafigi chiziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#68f35acb"
+    },
+    {
+      "q": "To‘g‘ri yo‘nalishda qarshilik va teskari yo‘nalishda qarshilik qanday farq qiladi?",
+      "v": [
+        "To‘g‘ri yo‘nalishda qarshilik kichik, teskari yo‘nalishda katta",
+        "Ikkalasi teng",
+        "Teskari yo‘nalishda qarshilik kichik",
+        "Farqni aniqlab bo‘lmaydi"
+      ],
+      "t": 0,
+      "izoh": "To‘g‘ri p–n o‘tishda qarshilik teskari yo‘nalishdagidan ancha kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#16e685f6"
+    },
+    {
+      "q": "Diodni zanjirga birinchi marta ulaganda lampochka (yoki tok) kuzatilishi uchun diod qanday yo‘nalishda ulanishi kerak?",
+      "v": [
+        "To‘g‘ri yo‘nalishda (p soha musbat qutbga)",
+        "Teskari yo‘nalishda",
+        "Istalgancha",
+        "Faqat o‘zgaruvchan tokka"
+      ],
+      "t": 0,
+      "izoh": "Tok faqat to‘g‘ri yo‘nalishda sezilarli o‘tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m46-laboratoriya-diodning-volt-amper-tavsifi#091eba10"
+    }
+  ]
+}

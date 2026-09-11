@@ -1,0 +1,1609 @@
+{
+  "nom": "O'xshashlik, Fales teoremasi va kesmalar nisbati",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Nodira ikkita o'xshash uchburchak chizdi: birinchisining eng uzun tomoni 15 sm, ikkinchisining unga mos tomoni esa 24 sm. Ikkinchi uchburchakning birinchisiga o'xshashlik koeffitsienti nechaga teng?",
+      "v": [
+        "2,56",
+        "9",
+        "1,6",
+        "0,625"
+      ],
+      "t": 2,
+      "izoh": "O'xshashlik koeffitsienti mos tomonlarning nisbatiga teng: k = 24 : 15 = 1,6. Bu yerda ikkinchi uchburchak katta, shuning uchun katta tomon kasr suratiga yoziladi. 0,625 — teskari nisbat, 2,56 — yuzalar nisbati, 9 esa tomonlar ayirmasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='42,211.1 112.9,211.1 53.7,134.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='144.6,211.1 258,211.1 163.4,88.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='28' y='221' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='106.3' y='229.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='40.7' y='131.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='151' y='229.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA₁%3C/text%3E%3Ctext x='272.5' y='219.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB₁%3C/text%3E%3Ctext x='168.7' y='79.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC₁%3C/text%3E%3Ctext x='64.8' y='223.2' font-size='13' fill='%23334155' text-anchor='middle'%3E11 sm%3C/text%3E%3Ctext x='68.4' y='175.3' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='214.9' y='221.4' font-size='13' fill='%23334155' text-anchor='middle'%3E17,6 sm%3C/text%3E%3Ctext x='224.9' y='149.1' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshashlik-koeffitsienti",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#6c1fee7d"
+    },
+    {
+      "q": "Ikkita o'xshash ko'pburchakning perimetrlari 40 sm va 50 sm. Kattasining kichigiga o'xshashlik koeffitsienti nechaga teng?",
+      "v": [
+        "1,25",
+        "0,8",
+        "1,5625",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "O'xshash shakllarning perimetrlari nisbati o'xshashlik koeffitsientiga teng. Demak k = 50 : 40 = 1,25. Teskari nisbat 0,8 ni beradi, koeffitsientni kvadratga oshirish 1,5625 ni, ayirma esa 10 ni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshashlik-koeffitsienti",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#e30e1eba"
+    },
+    {
+      "q": "Ikkita o'xshash uchburchakning yuzalari 27 sm² va 48 sm². Kattasining kichigiga o'xshashlik koeffitsienti nechaga teng?",
+      "v": [
+        "16/9",
+        "3/4",
+        "9/16",
+        "4/3"
+      ],
+      "t": 3,
+      "izoh": "Yuzalar nisbati koeffitsientning kvadratiga teng. Kattasining kichigiga nisbati olinadi: k² = 48 : 27 = 16/9, bundan k = √(16/9) = 4/3. Agar kvadrat ildiz olish unutilsa 16/9, nisbat teskari olinsa 3/4 yoki 9/16 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshashlik-koeffitsienti",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#4204e7f3"
+    },
+    {
+      "q": "Chizmachi uchburchak shaklidagi belgini 0,6 koeffitsient bilan o'xshash qilib kichraytirdi. Asl belgining bir tomoni 45 sm bo'lsa, yangi belgining mos tomoni necha santimetr bo'ladi?",
+      "v": [
+        "270 sm",
+        "27 sm",
+        "75 sm",
+        "16,2 sm"
+      ],
+      "t": 1,
+      "izoh": "Kichraytirishda har bir tomon koeffitsientga ko'paytiriladi: 45 · 0,6 = 27 sm. 75 sm — bo'lish natijasi, 16,2 sm — koeffitsientni ikki marta qo'llash, 270 sm esa 0,6 o'rniga 6 ga ko'paytirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshashlik-koeffitsienti",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#754b4c75"
+    },
+    {
+      "q": "ABC va MNK uchburchaklar o'xshash bo'lib, AB = 8 sm, MN = 20 sm va BC = 14 sm. NK tomonining uzunligi necha santimetr?",
+      "v": [
+        "35 sm",
+        "5,6 sm",
+        "26 sm",
+        "28 sm"
+      ],
+      "t": 0,
+      "izoh": "Avval koeffitsient topiladi: k = MN : AB = 20 : 8 = 2,5. Mos tomon shu koeffitsientga ko'paytiriladi: NK = 14 · 2,5 = 35 sm. 5,6 sm — bo'lish xatosi, 26 sm — qo'shish xatosi, 28 sm esa k = 2 deb olish natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54.1,224.3 102.7,224.3 42,164.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='136.7,224.3 258,224.3 106.3,75.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='41' y='236.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='97.1' y='242.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='27.8' y='164.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='144.2' y='241.8' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='272.6' y='232.4' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='105' y='65.3' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='67.3' y='238.4' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='84' y='187' font-size='11' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='211.1' y='234.2' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='195' y='146.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mos-tomon-topish",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#e27edd47"
+    },
+    {
+      "q": "Birinchi uchburchakning tomonlari 6 sm, 9 sm va 12 sm. Unga o'xshash ikkinchi uchburchakning eng kichik tomoni 10 sm bo'lsa, eng katta tomoni necha santimetr?",
+      "v": [
+        "15 sm",
+        "16 sm",
+        "7,2 sm",
+        "20 sm"
+      ],
+      "t": 3,
+      "izoh": "Koeffitsient eng kichik tomonlar orqali topiladi: k = 10 : 6 = 5/3. Eng katta tomon: 12 · 5/3 = 20 sm. 15 sm — o'rta tomonning qiymati, 16 sm — 12 ga 4 qo'shish xatosi, 7,2 sm esa teskari nisbat natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='65.1,224.5 126.7,224.5 42,135.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='155.4,224.5 258,224.5 116.9,75.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='52.4' y='237.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='126.4' y='244' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='29' y='132.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='164' y='241.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA₁%3C/text%3E%3Ctext x='272.4' y='233.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB₁%3C/text%3E%3Ctext x='115.5' y='65.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC₁%3C/text%3E%3Ctext x='86.6' y='240.3' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='96' y='169' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='38.6' y='182.8' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='220.1' y='235.2' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='200.4' y='146.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mos-tomon-topish",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#5e5ad003"
+    },
+    {
+      "q": "Ikkita to'g'ri burchakli uchburchak o'xshash. Birinchisining katetlari 9 sm va 12 sm, ikkinchisining kichik kateti esa 15 sm. Ikkinchi uchburchakning gipotenuzasi necha santimetr?",
+      "v": [
+        "12,5 sm",
+        "25 sm",
+        "20 sm",
+        "21 sm"
+      ],
+      "t": 1,
+      "izoh": "Birinchi uchburchakning gipotenuzasi 15 sm ga teng, chunki 9² + 12² = 225. Koeffitsient k = 15 : 9 = 5/3, demak ikkinchisining gipotenuzasi 15 · 5/3 = 25 sm. 20 sm — ikkinchi katetning qiymati, qolganlari nisbatni noto'g'ri qo'llash natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='40,195.8 113.3,195.8 40,140.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='137.8,195.8 260,195.8 137.8,104.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='52,195.8 52,183.8 40,183.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='149.8,195.8 149.8,183.8 137.8,183.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='25.6' y='204.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='108.6' y='214.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='26' y='140.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='146.1' y='212.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='274.8' y='202.9' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='141.3' y='94.1' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='63.5' y='207' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='25' y='171.8' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='146.9' y='142.1' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='213.3' y='150' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mos-tomon-topish",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#4bdd942f"
+    },
+    {
+      "q": "ABC va DEF uchburchaklar o'xshash bo'lib, ∠A = ∠D va AB : DE = 3 : 2 nisbat o'rinli. AC = 21 sm bo'lsa, DF tomonining uzunligi necha santimetr?",
+      "v": [
+        "10,5 sm",
+        "28 sm",
+        "14 sm",
+        "31,5 sm"
+      ],
+      "t": 2,
+      "izoh": "O'xshash uchburchaklarda barcha mos tomonlar bir xil nisbatda bo'ladi, shuning uchun AC : DF = AB : DE = 3 : 2. Demak DF = 21 · 2 : 3 = 14 sm. 31,5 sm — nisbatni teskari qo'llash, 10,5 sm — faqat ikkiga bo'lish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='30,240 146.4,240 127,145' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='21' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='155.4' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='127' y='137' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='66.5' y='192.5' font-size='13' fill='%23334155' text-anchor='end'%3E21%3C/text%3E%3Cpath d='M 50,240 A 20 20 0 0 0 44.3,226' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='62.4' y='230.8' font-size='13' fill='%235b4bc4' text-anchor='middle'%3E●%3C/text%3E%3Cpolygon points='185,240 262.6,240 249.6,176.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='176' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='271.6' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='249.6' y='168.7' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='205.3' y='208.3' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Cpath d='M 205,240 A 20 20 0 0 0 199.3,226' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='217.4' y='230.8' font-size='13' fill='%235b4bc4' text-anchor='middle'%3E●%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mos-tomon-topish",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#0c7db2b2"
+    },
+    {
+      "q": "Ikkita o'xshash uchburchakning mos tomonlari ayirmasi 6 sm ga teng, o'xshashlik koeffitsienti esa 1,4. Kattaroq tomon necha santimetr?",
+      "v": [
+        "8,4 sm",
+        "30 sm",
+        "21 sm",
+        "15 sm"
+      ],
+      "t": 2,
+      "izoh": "Kichik tomon x bo'lsin, katta tomon 1,4x bo'ladi. Shartga ko'ra 1,4x − x = 6, ya'ni 0,4x = 6 va x = 15. Katta tomon 1,4 · 15 = 21 sm. 15 sm — kichik tomon, 8,4 sm — ayirmani koeffitsientga ko'paytirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mos-tomon-topish",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#b2d3b8ef"
+    },
+    {
+      "q": "Bir uchburchakning ikki burchagi 40° va 75°, ikkinchi uchburchakning ikki burchagi esa 65° va 75°. Bu uchburchaklar o'xshashmi?",
+      "v": [
+        "Ha, ikki burchagi mos ravishda teng",
+        "Yo'q, chunki tomonlari berilmagan",
+        "Ha, lekin faqat tomonlari ham teng bo'lsa",
+        "Yo'q, chunki burchaklari har xil"
+      ],
+      "t": 0,
+      "izoh": "Birinchi uchburchakning uchinchi burchagi 180° − 40° − 75° = 65°, ikkinchisiniki esa 180° − 65° − 75° = 40°. Ikkala uchburchakda ham 40°, 65° va 75° burchaklar bor, demak ular birinchi alomat bo'yicha o'xshash.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='24,240 128,240 108.9,168.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='168,240 272,240 234,98.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 44,240 A 20 20 0 0 0 39.3,227.1' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpath d='M 122.8,220.7 A 20 20 0 0 0 108,240' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpath d='M 188,240 A 20 20 0 0 0 176.5,221.9' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpath d='M 266.8,220.7 A 20 20 0 0 0 252,240' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='15' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='137' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='108.9' y='160.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='159' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='281' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='234' y='90.4' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='52.2' y='229.7' font-size='13' fill='%235b4bc4' text-anchor='middle'%3E40°%3C/text%3E%3Ctext x='104.2' y='221.7' font-size='13' fill='%235b4bc4' text-anchor='middle'%3E75°%3C/text%3E%3Ctext x='195' y='222.8' font-size='13' fill='%235b4bc4' text-anchor='middle'%3E65°%3C/text%3E%3Ctext x='246.6' y='220.5' font-size='13' fill='%235b4bc4' text-anchor='middle'%3E75°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshashlik-alomati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#1ba6c79a"
+    },
+    {
+      "q": "Bir uchburchakning tomonlari 4 sm, 6 sm va 8 sm, ikkinchisiniki esa 6 sm, 9 sm va 12 sm. Bu uchburchaklar haqida nima deyish mumkin?",
+      "v": [
+        "Teng, chunki tomonlari mos keladi",
+        "O'xshash emas, tomonlari har xil",
+        "Faqat o'tkir burchakli bo'lsa o'xshash",
+        "O'xshash, chunki uchala tomon proporsional"
+      ],
+      "t": 3,
+      "izoh": "Mos tomonlar nisbatini tekshiramiz: 4 : 6 = 2/3, 6 : 9 = 2/3 va 8 : 12 = 2/3. Uchala nisbat bir xil bo'lgani uchun uchinchi alomat bajariladi va uchburchaklar o'xshash bo'ladi, lekin teng emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='30,240 110,240 82.5,211' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='21' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='119' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='82.5' y='203' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='70' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E8%3C/text%3E%3Ctext x='44.3' y='225.5' font-size='13' fill='%23334155' text-anchor='end'%3E6%3C/text%3E%3Ctext x='108.3' y='225.5' font-size='13' fill='%23334155' text-anchor='start'%3E4%3C/text%3E%3Cpolygon points='165,240 285,240 243.8,196.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='156' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='294' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='243.8' y='188.4' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='225' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E12%3C/text%3E%3Ctext x='192.4' y='218.2' font-size='13' fill='%23334155' text-anchor='end'%3E9%3C/text%3E%3Ctext x='276.4' y='218.2' font-size='13' fill='%23334155' text-anchor='start'%3E6%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshashlik-alomati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#ab53b34a"
+    },
+    {
+      "q": "ABC uchburchakda AB = 6 sm va AC = 9 sm; AMN uchburchakda esa AM = 4 sm, AN = 6 sm va ∠A umumiy. Bu uchburchaklarning o'xshashligi qaysi alomatga asoslanadi?",
+      "v": [
+        "Uchala burchakning o'zaro tengligi",
+        "Ikki tomonning proporsionalligi va ular orasidagi burchakning tengligi",
+        "Ikki burchakning o'zaro tengligi",
+        "Uchala tomonning proporsionalligi"
+      ],
+      "t": 1,
+      "izoh": "Nisbatlarni tekshiramiz: AB : AM = 6 : 4 = 1,5 va AC : AN = 9 : 6 = 1,5. Ikki nisbat teng, bu tomonlar orasidagi burchak esa umumiy. Demak ikkinchi alomat, ya'ni ikki tomon va ular orasidagi burchak alomati o'rinli.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='84.5,254 223.2,254 76.8,46' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='177' y1='254' x2='79.3' y2='115.3' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='76.5' y='271.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='235.4' y='267.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='71.6' y='36.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='185.6' y='270.8' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='70.7' y='107.6' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='154' y='289' font-size='12' fill='%23334155' text-anchor='middle'%3EAB = 6 sm%3C/text%3E%3Ctext x='46' y='150' font-size='12' fill='%23334155' text-anchor='middle'%3EAC = 9 sm%3C/text%3E%3Ctext x='130.8' y='271' font-size='12' fill='%23334155' text-anchor='middle'%3EAM = 4 sm%3C/text%3E%3Ctext x='48' y='185' font-size='12' fill='%23334155' text-anchor='middle'%3EAN = 6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshashlik-alomati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#fa830e75"
+    },
+    {
+      "q": "Bir uchburchakning tomonlari 5 sm, 12 sm va 13 sm, ikkinchisiniki esa 10 sm, 24 sm va 25 sm. Bu uchburchaklar o'xshashmi?",
+      "v": [
+        "O'xshash emas, chunki 13 : 25 nisbat qolganlaridan farq qiladi",
+        "O'xshash, o'xshashlik koeffitsienti 2 ga teng",
+        "O'xshash, chunki ikkalasi ham to'g'ri burchakli",
+        "Berilganlar yetarli emas, aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Nisbatlar: 5 : 10 = 0,5 va 12 : 24 = 0,5, lekin 13 : 25 = 0,52. Uchinchi nisbat boshqacha, demak uchinchi alomat bajarilmaydi. Ikkinchi uchburchak to'g'ri burchakli ham emas, chunki 10² + 24² = 676, 25² esa 625 ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='30,240 92.4,240 83.2,217.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='21' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='101.4' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='83.2' y='209.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='61.2' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E13%3C/text%3E%3Ctext x='44.6' y='228.9' font-size='13' fill='%23334155' text-anchor='end'%3E12%3C/text%3E%3Ctext x='99.8' y='228.9' font-size='13' fill='%23334155' text-anchor='start'%3E5%3C/text%3E%3Cpolygon points='165,240 285,240 270.7,194.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='156' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='294' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='270.7' y='186.2' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='225' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E25%3C/text%3E%3Ctext x='205.8' y='217.1' font-size='13' fill='%23334155' text-anchor='end'%3E24%3C/text%3E%3Ctext x='289.8' y='217.1' font-size='13' fill='%23334155' text-anchor='start'%3E10%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxshashlik-alomati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#e8502115"
+    },
+    {
+      "q": "Ikkita o'xshash uchburchakning o'xshashlik koeffitsienti 3 : 5 nisbatda. Kichigining perimetri 24 sm bo'lsa, kattasining perimetri necha santimetr?",
+      "v": [
+        "14,4 sm",
+        "66,7 sm",
+        "8,64 sm",
+        "40 sm"
+      ],
+      "t": 3,
+      "izoh": "Perimetrlar nisbati o'xshashlik koeffitsientiga teng, shuning uchun P = 24 · 5 : 3 = 40 sm. 14,4 sm — nisbatni teskari qo'llash, 66,7 sm — yuzalar nisbatini ishlatish, 8,64 sm esa koeffitsientni kvadratga oshirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perimetr-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#d8a9957e"
+    },
+    {
+      "q": "Bog'dagi uchburchak shaklidagi gulzorning perimetri 18 m. Unga o'xshash, o'xshashlik koeffitsienti 2,5 bo'lgan kattaroq gulzorning perimetri necha metr bo'ladi?",
+      "v": [
+        "20,5 m",
+        "45 m",
+        "7,2 m",
+        "112,5 m"
+      ],
+      "t": 1,
+      "izoh": "O'xshash shakllarda perimetr koeffitsientga to'g'ri proporsional: P = 18 · 2,5 = 45 m. 7,2 m — bo'lish xatosi, 112,5 m — yuza qonunini perimetrga qo'llash, 20,5 m esa koeffitsientni qo'shib yuborish natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='42,225.6 93.4,225.6 54.3,165.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='129.4,225.6 258,225.6 160.3,74.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='28.2' y='236.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='83.8' y='241.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='40.3' y='164.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='132.2' y='244.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA₁%3C/text%3E%3Ctext x='272.5' y='233.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB₁%3C/text%3E%3Ctext x='164.9' y='64.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC₁%3C/text%3E%3Ctext x='55.1' y='237.7' font-size='13' fill='%23334155' text-anchor='middle'%3E5 m%3C/text%3E%3Ctext x='59' y='200.9' font-size='13' fill='%23334155' text-anchor='middle'%3E7 m%3C/text%3E%3Ctext x='33.2' y='200.4' font-size='13' fill='%23334155' text-anchor='middle'%3E6 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#199190ff"
+    },
+    {
+      "q": "Ikkita o'xshash uchburchakning perimetrlari 36 sm va 54 sm. Kichigining bir tomoni 10 sm bo'lsa, kattasining unga mos tomoni necha santimetr?",
+      "v": [
+        "28 sm",
+        "22,5 sm",
+        "15 sm",
+        "6,7 sm"
+      ],
+      "t": 2,
+      "izoh": "Perimetrlar nisbatidan koeffitsient topiladi: k = 54 : 36 = 1,5. Mos tomon 10 · 1,5 = 15 sm. 6,7 sm — teskari nisbat, 28 sm — perimetrlar ayirmasini tomonga qo'shish, 22,5 sm esa koeffitsient kvadratini ishlatish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='30,240 83.9,240 70.9,176.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='21' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='92.9' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='70.9' y='168.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='56.9' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E10%3C/text%3E%3Ctext x='38.5' y='208.3' font-size='13' fill='%23334155' text-anchor='end'%3E14%3C/text%3E%3Ctext x='89.4' y='208.3' font-size='13' fill='%23334155' text-anchor='start'%3E12%3C/text%3E%3Cpolygon points='165,240 245.8,240 226.4,145' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='156' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='254.8' y='254' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='226.4' y='137' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='205.4' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='183.7' y='192.5' font-size='13' fill='%23334155' text-anchor='end'%3E21%3C/text%3E%3Ctext x='248.1' y='192.5' font-size='13' fill='%23334155' text-anchor='start'%3E18%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#f31d2660"
+    },
+    {
+      "q": "Ikkita o'xshash ko'pburchakning perimetrlari yig'indisi 96 sm, o'xshashlik koeffitsienti esa 5 : 3. Kattasining perimetri necha santimetr?",
+      "v": [
+        "48 sm",
+        "57,6 sm",
+        "60 sm",
+        "36 sm"
+      ],
+      "t": 2,
+      "izoh": "Perimetrlarni 5x va 3x deb belgilaymiz. Shartga ko'ra 5x + 3x = 96, ya'ni 8x = 96 va x = 12. Katta perimetr 5 · 12 = 60 sm. 36 sm — kichik perimetr, 48 sm — yig'indini teng ikkiga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perimetr-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#0509785c"
+    },
+    {
+      "q": "Mahmud uchburchak shaklidagi rasm ramkasini 1,2 marta kattalashtirmoqchi. Eski ramka chetiga 60 sm lenta ketgan bo'lsa, yangi ramkaga necha santimetr lenta kerak bo'ladi?",
+      "v": [
+        "72 sm",
+        "50 sm",
+        "86,4 sm",
+        "61,2 sm"
+      ],
+      "t": 0,
+      "izoh": "Lenta uzunligi perimetrga teng, perimetr esa koeffitsientga to'g'ri proporsional: 60 · 1,2 = 72 sm. 50 sm — ko'paytirish o'rniga bo'lish, 86,4 sm — koeffitsient kvadratini qo'llash, 61,2 sm esa koeffitsientni qo'shib yuborish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#7b498d38"
+    },
+    {
+      "q": "Ikkita o'xshash uchburchakning o'xshashlik koeffitsienti 3 ga teng bo'lsa, ularning yuzalari nisbati nechaga teng bo'ladi?",
+      "v": [
+        "3",
+        "6",
+        "27",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "O'xshash shakllarning yuzalari nisbati o'xshashlik koeffitsientining kvadratiga teng. Demak nisbat 3² = 9 ga teng. 3 — koeffitsientning o'zi, 6 — uni ikkilantirish, 27 esa kub qilish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#a4f31980"
+    },
+    {
+      "q": "Kichik uchburchakning yuzasi 12 sm², katta uchburchakka o'xshashlik koeffitsienti esa 2,5. Katta uchburchakning yuzasi necha kvadrat santimetr?",
+      "v": [
+        "187,5 sm²",
+        "75 sm²",
+        "30 sm²",
+        "4,8 sm²"
+      ],
+      "t": 1,
+      "izoh": "Yuza koeffitsient kvadratiga ko'paytiriladi: 12 · 2,5² = 12 · 6,25 = 75 sm². 30 sm² — koeffitsientni kvadratga oshirmaslik, 4,8 sm² — bo'lish xatosi, 187,5 sm² esa kub qo'llash natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#d6e1651d"
+    },
+    {
+      "q": "ABC uchburchakning yuzasi 45 sm². Uning tomonlari o'rtalarini tutashtirishdan hosil bo'lgan uchburchakning yuzasi necha kvadrat santimetr?",
+      "v": [
+        "11,25 sm²",
+        "22,5 sm²",
+        "15 sm²",
+        "90 sm²"
+      ],
+      "t": 0,
+      "izoh": "O'rta chiziqlardan hosil bo'lgan uchburchak berilganiga o'xshash va koeffitsienti 1/2 ga teng. Yuza koeffitsient kvadratiga ko'paytiriladi: 45 · 1/4 = 11,25 sm². 22,5 sm² — yuzani shunchaki yarimlash xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,237.8 254,237.8 103.8,62.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='150,237.8 178.9,150 74.9,150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='33.5' y='250.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='267.5' y='248.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='100' y='52.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='153.8' y='256.8' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='191.4' y='146.2' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='61.4' y='147.9' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#834a3ac5"
+    },
+    {
+      "q": "Ikkita o'xshash uchburchakning yuzalari 50 sm² va 98 sm². Kichigining perimetri 30 sm bo'lsa, kattasining perimetri necha santimetr?",
+      "v": [
+        "58,8 sm",
+        "21,4 sm",
+        "78 sm",
+        "42 sm"
+      ],
+      "t": 3,
+      "izoh": "Yuzalar nisbati 98 : 50 = 1,96, koeffitsient esa uning ildizi: k = √1,96 = 1,4. Perimetr koeffitsientga proporsional: 30 · 1,4 = 42 sm. 58,8 sm — ildiz olishni unutish, 21,4 sm esa nisbatni teskari olish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#e4e1213c"
+    },
+    {
+      "q": "Fermer Qodir ikkita o'xshash uchburchak shaklidagi maydonga bug'doy ekdi. Kichik maydonning tomoni 300 m, kattasining mos tomoni 450 m. Kichik maydondan 20 tonna hosil olingan bo'lsa, kattasidan necha tonna kutiladi?",
+      "v": [
+        "67,5 tonna",
+        "45 tonna",
+        "30 tonna",
+        "13,3 tonna"
+      ],
+      "t": 1,
+      "izoh": "Hosil maydon yuzasiga proporsional. Koeffitsient k = 450 : 300 = 1,5, yuzalar nisbati esa 1,5² = 2,25. Demak hosil 20 · 2,25 = 45 tonna. 30 tonna — faqat chiziqli nisbatni olish, 67,5 tonna esa kub qo'llash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#8fa24fa2"
+    },
+    {
+      "q": "O'xshash ikkita uchburchakning yuzalari 72 sm² va 128 sm² ga teng. Kichigining bir tomoni 30 sm bo'lsa, kattasining unga mos tomoni necha santimetr?",
+      "v": [
+        "22,5 sm",
+        "86 sm",
+        "40 sm",
+        "53,3 sm"
+      ],
+      "t": 2,
+      "izoh": "Yuzalar nisbati 128 : 72 = 16/9, o'xshashlik koeffitsienti esa uning ildizi: k = 4/3. Mos tomon 30 · 4/3 = 40 sm. 53,3 sm — ildiz olmasdan 16/9 ni to'g'ridan-to'g'ri qo'llash (30 · 16 : 9), 22,5 sm — teskari nisbatni olish (30 · 3 : 4), 86 sm esa yuzalar ayirmasini (128 − 72 = 56) tomonga qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuzadan-olcham-topish",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#71dd427a"
+    },
+    {
+      "q": "Bo'yoqchi Alisher devordagi uchburchak naqshni bo'yashga 250 gramm bo'yoq sarfladi. Xuddi shu naqshning har bir tomoni 2 marta uzun bo'lgan nusxasiga necha gramm bo'yoq kerak bo'ladi?",
+      "v": [
+        "2000 gramm",
+        "125 gramm",
+        "1000 gramm",
+        "500 gramm"
+      ],
+      "t": 2,
+      "izoh": "Bo'yoq sarfi yuzaga proporsional. Tomonlar 2 marta ortsa, yuza 2² = 4 marta ortadi, demak 250 · 4 = 1000 gramm kerak. 500 gramm — faqat tomon nisbatini olish, 2000 gramm — kub qo'llash, 125 gramm esa bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuzadan-olcham-topish",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#8bde37c4"
+    },
+    {
+      "q": "Bir uchburchakning yuzasi 64 sm², unga o'xshash ikkinchisiniki 100 sm². Kichigining balandligi 8 sm bo'lsa, kattasining mos balandligi necha santimetr?",
+      "v": [
+        "10 sm",
+        "12,5 sm",
+        "6,4 sm",
+        "16 sm"
+      ],
+      "t": 0,
+      "izoh": "Yuzalar nisbati 100 : 64 = 25/16, koeffitsient uning ildizi: k = 5/4 = 1,25. Balandlik ham koeffitsientga proporsional: 8 · 1,25 = 10 sm. 12,5 sm — ildiz olishni unutish, 6,4 sm esa teskari nisbatni qo'llash natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuzadan-olcham-topish",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#027898d4"
+    },
+    {
+      "q": "Ikkita o'xshash bayroqning yuzalari 0,75 m² va 3 m². Kichik bayroqning bo'yi 1,25 m bo'lsa, kattasining bo'yi necha metr?",
+      "v": [
+        "5 m",
+        "0,625 m",
+        "3,75 m",
+        "2,5 m"
+      ],
+      "t": 3,
+      "izoh": "Yuzalar nisbati 3 : 0,75 = 4, koeffitsient esa √4 = 2. Katta bayroqning bo'yi 1,25 · 2 = 2,5 m. 5 m — koeffitsient o'rniga yuzalar nisbatini olish, 3,75 m esa yuzalar nisbatini noto'g'ri hisoblash natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuzadan-olcham-topish",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#3899175a"
+    },
+    {
+      "q": "ABC uchburchakda D nuqta AB tomonda, E nuqta AC tomonda yotadi va DE ∥ BC. AD = 4 sm, DB = 6 sm, AE = 6 sm bo'lsa, EC necha santimetr?",
+      "v": [
+        "3,6 sm",
+        "9 sm",
+        "4 sm",
+        "15 sm"
+      ],
+      "t": 1,
+      "izoh": "Asosga parallel to'g'ri chiziq tomonlarni proporsional kesmalarga ajratadi: AD : DB = AE : EC. Demak 4 : 6 = 6 : EC, bundan EC = 6 · 6 : 4 = 9 sm. 4 sm — nisbatni teskari qo'llash (6 · 4 : 6), 3,6 sm — bo'luvchi sifatida AD = 4 o'rniga butun AB = 10 ni olish (6 · 6 : 10), 15 sm esa ko'paytuvchi sifatida DB = 6 o'rniga butun AB = 10 ni olish (10 · 6 : 4) xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='53.5,254 242.7,254 246.5,46' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='129.2' y1='254' x2='130.7' y2='170.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='40.4' y='265.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='254.9' y='267.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='253.9' y='37.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='122.1' y='271.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='119.2' y='165.7' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='77.4' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='171.9' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='106.1' y='216.4' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='202.6' y='112.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallel-kesuvchi-togri-chiziq",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#55808551"
+    },
+    {
+      "q": "ABC uchburchakda MN ∥ AC bo'lib, M nuqta AB da, N nuqta BC da yotadi. BM = 8 sm, MA = 4 sm va MN = 10 sm bo'lsa, AC necha santimetr?",
+      "v": [
+        "15 sm",
+        "6,7 sm",
+        "20 sm",
+        "5 sm"
+      ],
+      "t": 0,
+      "izoh": "BMN va BAC uchburchaklar o'xshash, koeffitsient BM : BA = 8 : 12 = 2/3. Shu nisbat MN : AC uchun ham o'rinli: 10 : AC = 2/3, bundan AC = 15 sm. 6,7 sm — nisbatni teskari qo'llash, 20 sm esa BM : MA nisbatini ishlatish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,251.5 254,251.5 208.5,48.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='115.3' y1='251.5' x2='223.7' y2='116.2' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='32' y='261.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='265.7' y='265.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='210.7' y='38.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='115.3' y='271' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='238' y='113' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='80.7' y='255.5' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='184.7' y='255.5' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='185' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='113' y='139' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-kesuvchi-togri-chiziq",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#da63ef55"
+    },
+    {
+      "q": "Uchburchak shaklidagi tomning cho'qqisidan pastki asosga parallel taxta o'rnatildi. Cho'qqidan taxtagacha 2 m, taxtadan asosgacha 3 m. Asos eni 10 m bo'lsa, taxta uzunligi necha metr?",
+      "v": [
+        "6 m",
+        "5 m",
+        "6,7 m",
+        "4 m"
+      ],
+      "t": 3,
+      "izoh": "Cho'qqidan asosgacha bo'lgan masofa 2 + 3 = 5 m. Kichik uchburchak kattasiga o'xshash, koeffitsient 2 : 5 = 0,4. Demak taxta uzunligi 10 · 0,4 = 4 m. 6 m — 3 : 5 nisbatini olish, 5 m esa yarmini olish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='40,255 260,255 150,145' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='145' x2='150' y2='255' stroke='%2394a3b8' stroke-width='1.2' stroke-dasharray='4 3'/%3E%3Cline x1='106' y1='189' x2='194' y2='189' stroke='%235b4bc4' stroke-width='2'/%3E%3Ctext x='150' y='137' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='28' y='267' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='272' y='267' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='94' y='185' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='206' y='185' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Ctext x='164' y='174' font-size='12' fill='%23334155' text-anchor='middle'%3E2 m%3C/text%3E%3Ctext x='164' y='226' font-size='12' fill='%23334155' text-anchor='middle'%3E3 m%3C/text%3E%3Ctext x='150' y='271' font-size='13' fill='%23334155' text-anchor='middle'%3E10 m%3C/text%3E%3Ctext x='132' y='184' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-kesuvchi-togri-chiziq",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#771e17ff"
+    },
+    {
+      "q": "ABC uchburchakda DE ∥ BC. ADE uchburchakning yuzasi 9 sm², DBCE trapesiyaning yuzasi esa 40 sm². AD : AB nisbatni toping.",
+      "v": [
+        "9 : 49",
+        "3 : 7",
+        "9 : 40",
+        "3 : 4"
+      ],
+      "t": 1,
+      "izoh": "Butun ABC uchburchakning yuzasi 9 + 40 = 49 sm². ADE va ABC o'xshash, yuzalari nisbati 9 : 49 va u koeffitsient kvadratiga teng. Demak k = √(9/49) = 3/7, ya'ni AD : AB = 3 : 7. 9 : 40 — trapesiya bilan taqqoslash xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,238.8 254,238.8 184.7,61.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='135.1' y1='238.8' x2='105.4' y2='162.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='32.7' y='250.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='267.6' y='249.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='189.1' y='51.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='132.3' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='92.8' y='159.1' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='95' y='215' font-size='12' fill='%23334155' text-anchor='middle'%3ES = 9 sm²%3C/text%3E%3Ctext x='180' y='180' font-size='12' fill='%23334155' text-anchor='middle'%3ES = 40 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallel-kesuvchi-togri-chiziq",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#9aeac6d7"
+    },
+    {
+      "q": "ABC uchburchakda DE ∥ BC va AD : DB = 2 : 3. ADE uchburchakning yuzasi 16 sm² bo'lsa, DBCE trapesiyaning yuzasi necha kvadrat santimetr?",
+      "v": [
+        "24 sm²",
+        "64 sm²",
+        "84 sm²",
+        "100 sm²"
+      ],
+      "t": 2,
+      "izoh": "AD : AB = 2 : 5, demak koeffitsient 0,4 va yuzalar nisbati 0,16. Butun uchburchak yuzasi 16 : 0,16 = 100 sm². Trapesiya yuzasi 100 − 16 = 84 sm². 100 sm² — butun uchburchak yuzasi, 64 sm² esa yuzani 4 ga ko'paytirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,239 254,239 182,61' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='129.2' y1='239' x2='100.4' y2='167.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='32.7' y='250.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='267.7' y='249.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='186.4' y='51.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='125.4' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='87' y='165.5' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='67.6' y='243' font-size='13' fill='%23334155' text-anchor='middle'%3E2 qism%3C/text%3E%3Ctext x='171.6' y='243' font-size='13' fill='%23334155' text-anchor='middle'%3E3 qism%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallel-kesuvchi-togri-chiziq",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#e054e898"
+    },
+    {
+      "q": "Burchakning bir tomonida AB = BC = CD bo'lgan teng kesmalar qo'yilib, ularning uchlaridan parallel to'g'ri chiziqlar o'tkazildi. Ikkinchi tomonda hosil bo'lgan birinchi kesma 5 sm bo'lsa, uchinchi kesma necha santimetr?",
+      "v": [
+        "10 sm",
+        "1,7 sm",
+        "5 sm",
+        "15 sm"
+      ],
+      "t": 2,
+      "izoh": "Fales teoremasiga ko'ra burchakning bir tomonida teng kesmalar qo'yilib parallel chiziqlar o'tkazilsa, ikkinchi tomonda ham teng kesmalar hosil bo'ladi. Demak uchinchi kesma ham 5 sm. 15 sm — uchta kesmaning yig'indisi, 10 sm esa ikkilantirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='46' y1='235.3' x2='254' y2='202' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='46' y1='235.3' x2='195.8' y2='64.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='115.3' y1='224.2' x2='95.9' y2='178.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='184.7' y1='213.1' x2='145.8' y2='121.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='254' y1='202' x2='195.8' y2='64.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='33' y='247.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='106.8' y='241' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='195.3' y='228.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='268.6' y='209.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='80.9' y='183.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB₁%3C/text%3E%3Ctext x='145.2' y='111.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC₁%3C/text%3E%3Ctext x='201.6' y='55.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='57' y='197' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='156.8' y='97.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "fales-teng-kesmalar",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#7669f158"
+    },
+    {
+      "q": "Daftar chiziqlari o'zaro parallel va teng masofada joylashgan. Ular kesib o'tgan qiya chiziqda ketma-ket to'rtta kesma hosil bo'ldi va ularning yig'indisi 14 sm. Bitta kesma necha santimetr?",
+      "v": [
+        "3,5 sm",
+        "2,8 sm",
+        "7 sm",
+        "56 sm"
+      ],
+      "t": 0,
+      "izoh": "Parallel chiziqlar orasidagi masofalar teng bo'lgani uchun Fales teoremasiga ko'ra qiya chiziqdagi kesmalar ham teng bo'ladi. Demak har biri 14 : 4 = 3,5 sm. 2,8 sm — beshga bo'lish xatosi, 7 sm — ikkiga bo'lish, 56 sm esa ko'paytirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='44.2' y1='260' x2='255.8' y2='260' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='44.2' y1='205' x2='255.8' y2='205' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='44.2' y1='150' x2='255.8' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='44.2' y1='95' x2='255.8' y2='95' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='44.2' y1='40' x2='255.8' y2='40' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='78.1' y1='260' x2='221.9' y2='40' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='110.8' y='235.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "fales-teng-kesmalar",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#21b14462"
+    },
+    {
+      "q": "Burchakning bir tomonida AB = BC bo'ladigan A, B, C nuqtalar belgilangan va ular orqali o'tgan parallel chiziqlar ikkinchi tomonni A₁, B₁, C₁ nuqtalarda kesadi. A₁C₁ = 18 sm bo'lsa, A₁B₁ necha santimetr?",
+      "v": [
+        "6 sm",
+        "36 sm",
+        "12 sm",
+        "9 sm"
+      ],
+      "t": 3,
+      "izoh": "Fales teoremasiga ko'ra AB = BC bo'lgani uchun A₁B₁ = B₁C₁ bo'ladi. Ikkala kesma yig'indisi 18 sm, demak har biri 18 : 2 = 9 sm. 6 sm — uchga bo'lish, 36 sm — ikkilantirish, 12 sm esa 18 ning uchdan ikki qismini olish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='46' y1='240' x2='270' y2='214' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='46' y1='240' x2='190' y2='60' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='113.2' y1='232.2' x2='89.2' y2='186' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='180.4' y1='224.4' x2='132.4' y2='132' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='247.6' y1='216.6' x2='175.6' y2='78' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='33' y='250' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='113' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='181' y='240' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='248' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='73' y='191' font-size='13' fill='%23334155' text-anchor='middle'%3EA₁%3C/text%3E%3Ctext x='147' y='128' font-size='13' fill='%23334155' text-anchor='middle'%3EB₁%3C/text%3E%3Ctext x='159' y='82' font-size='13' fill='%23334155' text-anchor='middle'%3EC₁%3C/text%3E%3Ctext x='86' y='100' font-size='12' fill='%23334155' text-anchor='middle'%3EA₁C₁ = 18 sm%3C/text%3E%3Ctext x='78' y='152' font-size='12' fill='%23334155' text-anchor='middle'%3EA₁B₁ = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "fales-teng-kesmalar",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#92322891"
+    },
+    {
+      "q": "Fales teoremasining to'g'ri ifodasini tanlang. Teorema burchak tomonlaridagi kesmalar haqida nima deydi?",
+      "v": [
+        "Teorema faqat to'g'ri burchak uchun o'rinli bo'ladi",
+        "Bir tomonda teng kesmalar qo'yilib parallel chiziqlar o'tkazilsa, ikkinchi tomonda ham teng kesmalar hosil bo'ladi",
+        "Bir tomonda teng kesmalar qo'yilsa, ikkinchi tomondagi kesmalar ham birinchisinikiga teng bo'ladi",
+        "Chiziqlar parallel bo'lmasa ham ikkinchi tomonda teng kesmalar hosil bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Fales teoremasi kesmalarning ikki tomonda o'zaro tengligini emas, balki bir tomonda teng kesmalar qo'yilganda ikkinchi tomonda ham teng kesmalar hosil bo'lishini kafolatlaydi. Parallellik shart, burchakning turi esa ahamiyatsiz. Shuning uchun to'g'ri ifoda — bir tomonda teng kesmalar qo'yilib parallel chiziqlar o'tkazilsa, ikkinchi tomonda ham teng kesmalar hosil bo'lishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "fales-teng-kesmalar",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#0a9cb226"
+    },
+    {
+      "q": "Usta Rustam 96 sm uzunlikdagi taxtani o'lchov asbobisiz to'rtta teng bo'lakka bo'lmoqchi va Fales usulidan foydalanadi. Har bir bo'lak necha santimetr bo'ladi?",
+      "v": [
+        "24 sm",
+        "32 sm",
+        "12 sm",
+        "48 sm"
+      ],
+      "t": 0,
+      "izoh": "Fales usulida taxta uchidan chiquvchi nurga to'rtta teng kesma qo'yiladi va oxirgi nuqta taxtaning ikkinchi uchi bilan tutashtiriladi. Parallel chiziqlar taxtani teng to'rtga bo'ladi: 96 : 4 = 24 sm. 32 sm — uchga bo'lish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='46' y1='212.4' x2='254' y2='212.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='46' y1='212.4' x2='156.1' y2='87.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='156.1' y1='87.6' x2='254' y2='212.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='73.5' y1='181.2' x2='98' y2='212.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='101' y1='150' x2='150' y2='212.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='128.6' y1='118.8' x2='202' y2='212.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='73.5' cy='181.2' r='3' fill='%235b4bc4'/%3E%3Ccircle cx='101' cy='150' r='3' fill='%235b4bc4'/%3E%3Ccircle cx='128.6' cy='118.8' r='3' fill='%235b4bc4'/%3E%3Ccircle cx='156.1' cy='87.6' r='3' fill='%235b4bc4'/%3E%3Ccircle cx='98' cy='212.4' r='3' fill='%23334155'/%3E%3Ccircle cx='150' cy='212.4' r='3' fill='%23334155'/%3E%3Ccircle cx='202' cy='212.4' r='3' fill='%23334155'/%3E%3Ctext x='33.4' y='225' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='267.9' y='222.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='150' y='236' font-size='13' fill='%23334155' text-anchor='middle'%3E96 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "fales-teng-kesmalar",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#e3b6d9ce"
+    },
+    {
+      "q": "Parallel to'g'ri chiziqlar ikkita kesuvchini kesib o'tadi. Birinchi kesuvchida ketma-ket 4 sm va 10 sm kesmalar hosil bo'ldi, ikkinchi kesuvchidagi birinchi kesma esa 6 sm. Ikkinchi kesma necha santimetr?",
+      "v": [
+        "2,4 sm",
+        "12 sm",
+        "24 sm",
+        "15 sm"
+      ],
+      "t": 3,
+      "izoh": "Parallel chiziqlar kesuvchilarda proporsional kesmalar ajratadi: 4 : 10 = 6 : x. Bundan x = 6 · 10 : 4 = 15 sm. 2,4 sm — nisbatni teskari qo'llash, 12 sm — 6 ni ikkilantirish, 24 sm esa 4 va 6 ni ko'paytirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='34' y1='242.3' x2='234' y2='242.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='49.8' y1='189.5' x2='249.8' y2='189.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='89.4' y1='57.7' x2='289.4' y2='57.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='44.5' y1='242.3' x2='177.7' y2='57.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='132.9' y1='242.3' x2='266' y2='57.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='49.2' y='220.4' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='116.1' y='126.3' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='165.5' y='220.4' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='233.4' y='126.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "fales-proporsional-kesmalar",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#c41fce62"
+    },
+    {
+      "q": "Uchta parallel to'g'ri chiziq birinchi kesuvchida 8 sm va 12 sm kesmalar hosil qiladi. Ikkinchi kesuvchida hosil bo'lgan kesmalarning yig'indisi 25 sm bo'lsa, ulardan kichigi necha santimetr?",
+      "v": [
+        "8 sm",
+        "10 sm",
+        "15 sm",
+        "12,5 sm"
+      ],
+      "t": 1,
+      "izoh": "Kesmalar nisbati saqlanadi: 8 : 12 = 2 : 3. Ikkinchi kesuvchidagi kesmalarni 2x va 3x deb olsak, 5x = 25 va x = 5. Kichik kesma 2 · 5 = 10 sm. 15 sm — katta kesma, 12,5 sm esa yig'indini teng ikkiga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "fales-proporsional-kesmalar",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#8d43adfc"
+    },
+    {
+      "q": "Uchta parallel ko'cha ikkita qiya yo'lni kesib o'tadi. Birinchi yo'lda ko'chalar orasidagi masofalar 120 m va 180 m. Ikkinchi yo'lda birinchi masofa 160 m bo'lsa, ikkinchisi necha metr?",
+      "v": [
+        "220 m",
+        "200 m",
+        "240 m",
+        "106,7 m"
+      ],
+      "t": 2,
+      "izoh": "Parallel ko'chalar yo'llarda proporsional kesmalar ajratadi: 120 : 180 = 160 : x. Bundan x = 160 · 180 : 120 = 240 m. 106,7 m — nisbatni teskari qo'llash, 220 m esa ayirmani qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "fales-proporsional-kesmalar",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#2b58fe68"
+    },
+    {
+      "q": "Uchta parallel to'g'ri chiziq bir kesuvchida AB = 5 sm va BC = 7 sm kesmalarni ajratadi. Ikkinchi kesuvchida A₁C₁ = 36 sm bo'lsa, A₁B₁ necha santimetr?",
+      "v": [
+        "18 sm",
+        "25 sm",
+        "15 sm",
+        "21 sm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi kesuvchida AC = 5 + 7 = 12 sm. Proporsiyaga ko'ra A₁B₁ : A₁C₁ = AB : AC, ya'ni A₁B₁ = 36 · 5 : 12 = 15 sm. 21 sm — B₁C₁ kesmasining uzunligi, 18 sm esa 36 ni teng ikkiga bo'lish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='34' y1='239.2' x2='212.5' y2='239.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='56.3' y1='164.9' x2='234.8' y2='164.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='87.5' y1='60.8' x2='266' y2='60.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42.9' y1='239.2' x2='155.9' y2='60.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='153' y1='239.2' x2='266' y2='60.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='51.5' y='207.5' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='110.3' y='114.7' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='225.5' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E36 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "fales-proporsional-kesmalar",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#ae2c1c34"
+    },
+    {
+      "q": "ABC uchburchakda M va N nuqtalar mos ravishda AB va AC tomonlarning o'rtalari hisoblanadi. BC = 34 sm bo'lsa, MN kesma necha santimetr?",
+      "v": [
+        "17 sm",
+        "68 sm",
+        "34 sm",
+        "8,5 sm"
+      ],
+      "t": 0,
+      "izoh": "MN — uchburchakning o'rta chizig'i, u uchinchi tomonga parallel va uning yarmiga teng. Demak MN = 34 : 2 = 17 sm. 68 sm — yarmini olish o'rniga ikkilantirish, 34 sm — o'rta chiziqni tomonning o'ziga teng deb olish, 8,5 sm esa ikkiga emas, to'rtga bo'lish xatosi (34 : 4).",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='52.8,254 247.2,254 76.4,46' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='254' x2='64.6' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='42' y='268.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='260.7' y='265' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='72.2' y='36.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='156.8' y='271.9' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='52.7' y='145.3' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='177.8' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E34 sm%3C/text%3E%3Ctext x='107.3' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-orta-chiziq",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#72b71314"
+    },
+    {
+      "q": "Geodezist ko'l ustidan o'tadigan ko'prik uzunligini o'lchash uchun qirg'oqdagi ikki nuqtani uchinchi nuqta bilan tutashtirdi va tomonlarning o'rtalari orasidagi masofani 46 m deb topdi. Ko'prik uzunligi necha metr?",
+      "v": [
+        "23 m",
+        "46 m",
+        "138 m",
+        "92 m"
+      ],
+      "t": 3,
+      "izoh": "O'lchangan kesma uchburchakning o'rta chizig'i, ko'prik esa unga parallel uchinchi tomon. O'rta chiziq tomonning yarmiga teng, demak ko'prik 46 · 2 = 92 m. 23 m — yana ikkiga bo'lish, 46 m esa tenglashtirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='52.8,254 247.2,254 63.2,46' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='254' x2='58' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='42.3' y='269.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='260.8' y='264.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='58.3' y='36.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='157.5' y='271.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='46' y='145.6' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='104' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3E46 m%3C/text%3E%3Ctext x='171.2' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-orta-chiziq",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#a046433b"
+    },
+    {
+      "q": "Uchburchakning o'rta chizig'i 7 sm, unga parallel tomonga tushirilgan balandlik esa 12 sm. O'rta chiziq ajratgan kichik uchburchakning yuzasi necha kvadrat santimetr?",
+      "v": [
+        "10,5 sm²",
+        "21 sm²",
+        "42 sm²",
+        "84 sm²"
+      ],
+      "t": 1,
+      "izoh": "Asos o'rta chiziqning ikkilangani, ya'ni 14 sm, butun uchburchak yuzasi 14 · 12 : 2 = 84 sm². O'rta chiziq ajratgan kichik uchburchak koeffitsienti 1/2 bo'lgan o'xshash uchburchak, yuzasi 84 : 4 = 21 sm². 42 sm² — yarimlash xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,239.1 254,239.1 120.3,60.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='83.1' y1='150' x2='187.1' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='120.3' y1='60.9' x2='120.3' y2='239.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='120.3,227.1 132.3,227.1 132.3,239.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='33.5' y='252' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='267.4' y='250.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='118.4' y='50.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='70.1' y='147.1' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='200.2' y='147.1' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='135.1' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='134.3' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-orta-chiziq",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#96d42b75"
+    },
+    {
+      "q": "Uchburchakning uchta o'rta chizig'i uni to'rtta kichik uchburchakka ajratadi. Katta uchburchakning perimetri 48 sm bo'lsa, o'rta chiziqlardan tuzilgan uchburchakning perimetri necha santimetr?",
+      "v": [
+        "24 sm",
+        "12 sm",
+        "96 sm",
+        "16 sm"
+      ],
+      "t": 0,
+      "izoh": "Har bir o'rta chiziq mos tomonning yarmiga teng, demak o'rta chiziqlardan tuzilgan uchburchak koeffitsienti 1/2 bo'lgan o'xshash uchburchak. Perimetr ham yarimlanadi: 48 : 2 = 24 sm. 12 sm — yuza qonunini perimetrga qo'llash xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,239.4 254,239.4 124,60.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='150,239.4 189,150 85,150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='33.3' y='251.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='267.3' y='250.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='121.8' y='50.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='152.2' y='258.7' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='201.7' y='146.6' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='71.7' y='147.5' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-orta-chiziq",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#ebbd2597"
+    },
+    {
+      "q": "Trapesiyaning asoslari 12 sm va 20 sm ga teng. Uning o'rta chizig'i necha santimetr?",
+      "v": [
+        "8 sm",
+        "32 sm",
+        "4 sm",
+        "16 sm"
+      ],
+      "t": 3,
+      "izoh": "Trapesiyaning o'rta chizig'i asoslar yarim yig'indisiga teng: (12 + 20) : 2 = 16 sm. 8 sm — asoslar ayirmasi (20 − 12), 32 sm — yig'indining o'zi, 4 sm esa ayirmaning yarmi (8 : 2).",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,196.8 77.6,103.2 202.4,103.2 254,196.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='61.8' y1='150' x2='228.2' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='32.4' y='207.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='65.3' y='99.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='214' y='98.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='267.8' y='207.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='140' y='95.2' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='150' y='214.8' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='145' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trapesiya-orta-chiziq",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#2f71466b"
+    },
+    {
+      "q": "Trapesiya shaklidagi tomorqaning parallel tomonlari 26 m va 34 m. Tomorqaning o'rtasidan yon tomonlarni teng ikkiga bo'lib o'tuvchi ariq uzunligi necha metr?",
+      "v": [
+        "15 m",
+        "30 m",
+        "60 m",
+        "4 m"
+      ],
+      "t": 1,
+      "izoh": "Yon tomonlarning o'rtalarini tutashtiruvchi kesma trapesiyaning o'rta chizig'i bo'ladi va u asoslar yarim yig'indisiga teng: (26 + 34) : 2 = 30 m. 60 m — yig'indining o'zi, 4 m — asoslar ayirmasining yarmi (8 : 2), 15 m esa yig'indini to'rtga bo'lish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,198.9 64.6,101.1 223.7,101.1 254,198.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55.3' y1='150' x2='238.8' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='144.1' y='93.1' font-size='13' fill='%23334155' text-anchor='middle'%3E26 m%3C/text%3E%3Ctext x='150' y='216.9' font-size='13' fill='%23334155' text-anchor='middle'%3E34 m%3C/text%3E%3Ctext x='147.1' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trapesiya-orta-chiziq",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#d13f41ea"
+    },
+    {
+      "q": "Trapesiyaning o'rta chizig'i 15 sm, kichik asosi esa 11 sm. Uning katta asosi necha santimetr?",
+      "v": [
+        "30 sm",
+        "26 sm",
+        "19 sm",
+        "4 sm"
+      ],
+      "t": 2,
+      "izoh": "O'rta chiziq asoslar yarim yig'indisiga teng, demak asoslar yig'indisi 15 · 2 = 30 sm. Katta asos 30 − 11 = 19 sm. 4 sm — o'rta chiziq bilan kichik asos ayirmasi (15 − 11), 30 sm — asoslar yig'indisining o'zi, 26 sm esa o'rta chiziq bilan kichik asosni qo'shish xatosi (15 + 11).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trapesiya-orta-chiziq",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#e64834f1"
+    },
+    {
+      "q": "Trapesiyaning o'rta chizig'i 24 sm, asoslari esa 3 : 5 nisbatda. Trapesiyaning kichik asosi necha santimetr?",
+      "v": [
+        "9 sm",
+        "14,4 sm",
+        "18 sm",
+        "30 sm"
+      ],
+      "t": 2,
+      "izoh": "Asoslar yig'indisi 24 · 2 = 48 sm. Asoslarni 3x va 5x deb olsak, 8x = 48 va x = 6. Kichik asos 3 · 6 = 18 sm. 30 sm — katta asos, 9 sm — o'rta chiziqni to'g'ridan-to'g'ri bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trapesiya-orta-chiziq",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#1a840b00"
+    },
+    {
+      "q": "ABCD trapesiyaning BC va AD asoslari 8 sm va 20 sm, diagonallari esa O nuqtada kesishadi. BO : OD nisbatni toping.",
+      "v": [
+        "2 : 5",
+        "5 : 2",
+        "4 : 25",
+        "1 : 2"
+      ],
+      "t": 0,
+      "izoh": "BC ∥ AD bo'lgani uchun BOC va DOA uchburchaklar ichma-ich burchaklar bo'yicha o'xshash. O'xshashlik koeffitsienti asoslar nisbatiga teng: BO : OD = BC : AD = 8 : 20 = 2 : 5. 4 : 25 — yuzalar nisbati.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,207.2 93.4,92.8 176.6,92.8 254,207.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='46' y1='207.2' x2='176.6' y2='92.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='93.4' y1='92.8' x2='254' y2='207.2' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='33.1' y='219.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='83.7' y='85.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='184.3' y='84.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='267.3' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='135' y='84.8' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='150' y='225.2' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trapesiya-diagonal-oxshashlik",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#847b6ccb"
+    },
+    {
+      "q": "Trapesiyaning diagonallari O nuqtada kesishadi. Asoslarga tayangan BOC va AOD uchburchaklarning yuzalari 9 sm² va 25 sm² bo'lsa, asoslar nisbati qanday?",
+      "v": [
+        "9 : 25",
+        "5 : 3",
+        "81 : 625",
+        "3 : 5"
+      ],
+      "t": 3,
+      "izoh": "BOC va AOD uchburchaklar o'xshash, ularning yuzalari nisbati koeffitsient kvadratiga teng: k² = 9 : 25. Bundan k = 3 : 5, ya'ni asoslar ham shu nisbatda. 9 : 25 — ildiz olishni unutish natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,199.9 77.6,100.1 202.4,100.1 254,199.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='46' y1='199.9' x2='202.4' y2='100.1' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='77.6' y1='100.1' x2='254' y2='199.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='32.6' y='211.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='65.6' y='95.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='213.7' y='94.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='267.6' y='210.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trapesiya-diagonal-oxshashlik",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#abc4d209"
+    },
+    {
+      "q": "ABCD trapesiyada BC = 6 sm, AD = 15 sm va diagonallar O nuqtada kesishadi. AO = 10 sm bo'lsa, OC kesma necha santimetr?",
+      "v": [
+        "3,75 sm",
+        "4 sm",
+        "25 sm",
+        "6 sm"
+      ],
+      "t": 1,
+      "izoh": "BOC va DOA uchburchaklar o'xshash, koeffitsient BC : AD = 6 : 15 = 2 : 5. OC va OA mos kesmalar, demak OC = 10 · 2 : 5 = 4 sm. 25 sm — nisbatni teskari qo'llash, 3,75 sm esa AO ni noto'g'ri kasrga ko'paytirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,212.4 93.4,87.6 176.6,87.6 254,212.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='46' y1='212.4' x2='176.6' y2='87.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='93.4' y1='87.6' x2='254' y2='212.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='33.4' y='225' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='84.1' y='80.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='183.8' y='78.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='267.1' y='224.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='135' y='79.6' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='150' y='230.4' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trapesiya-diagonal-oxshashlik",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#07e027f2"
+    },
+    {
+      "q": "ABC uchburchakda AD kesma ∠A ning bissektrisasi. AB = 12 sm, AC = 18 sm va BD = 8 sm bo'lsa, DC necha santimetr?",
+      "v": [
+        "12 sm",
+        "5,3 sm",
+        "14 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Bissektrisa qarama-qarshi tomonni qo'shni tomonlarga proporsional bo'ladi: BD : DC = AB : AC. Demak 8 : DC = 12 : 18, bundan DC = 8 · 18 : 12 = 12 sm. 5,3 sm — nisbatni teskari qo'llash, 14 sm esa ayirmani qo'shish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='79.8,254 220.2,254 112.9,46' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='79.8' y1='254' x2='177.3' y2='170.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='69.6' y='269.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='230.8' y='269.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='109.2' y='36' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='191.5' y='170.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='150' y='272' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='82.4' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='212.8' y='216.4' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='159.1' y='112.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bissektrisa-kesma-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#db095d15"
+    },
+    {
+      "q": "ABC uchburchakda AB = 15 sm, AC = 25 sm va BC = 16 sm. ∠A ning bissektrisasi BC tomonni qanday kesmalarga ajratadi?",
+      "v": [
+        "8 sm va 8 sm",
+        "6,4 sm va 9,6 sm",
+        "5 sm va 11 sm",
+        "6 sm va 10 sm"
+      ],
+      "t": 3,
+      "izoh": "Bissektrisa BC ni AB : AC = 15 : 25 = 3 : 5 nisbatda bo'ladi. Kesmalarni 3x va 5x deb olsak, 8x = 16 va x = 2. Demak kesmalar 6 sm va 10 sm. 8 sm va 8 sm — bissektrisani mediana deb o'ylash xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='44,231.7 204.6,231.7 256,68.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='44' y1='231.7' x2='223.9' y2='170.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='30.1' y='241.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='210.2' y='250.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='264.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='238.8' y='173.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='124.3' y='249.7' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='136' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Ctext x='257.2' y='113.1' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-kesma-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#9e78f324"
+    },
+    {
+      "q": "Uchburchakda bissektrisa qarama-qarshi tomonni 9 sm va 12 sm kesmalarga ajratdi. Kichik kesmaga yaqin yon tomon 21 sm bo'lsa, ikkinchi yon tomon necha santimetr?",
+      "v": [
+        "27 sm",
+        "28 sm",
+        "15,75 sm",
+        "24 sm"
+      ],
+      "t": 1,
+      "izoh": "Bissektrisa xossasiga ko'ra yon tomonlar nisbati kesmalar nisbatiga teng: 9 : 12 = 3 : 4. Kichik tomon 21 sm uch qismga to'g'ri keladi, bir qism 7 sm, ikkinchi tomon esa 4 · 7 = 28 sm. 15,75 sm — nisbatni teskari qo'llash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-kesma-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#d9ed73da"
+    },
+    {
+      "q": "Uchburchak shaklidagi yer uchastkasining ikki tomoni 40 m va 60 m. Ular orasidagi burchak bissektrisasi bo'ylab devor qurildi va u uchinchi, uzunligi 25 m bo'lgan tomonni ikkiga bo'ldi. 40 metrli tomonga tegishli bo'lak necha metr?",
+      "v": [
+        "12,5 m",
+        "8 m",
+        "10 m",
+        "15 m"
+      ],
+      "t": 2,
+      "izoh": "Bissektrisa uchinchi tomonni qo'shni tomonlarga proporsional bo'ladi: 40 : 60 = 2 : 3. Bo'laklarni 2x va 3x desak, 5x = 25 va x = 5. 40 metrli tomonga tegishli bo'lak 2 · 5 = 10 m. 15 m — ikkinchi bo'lak, 12,5 m esa teng bo'lish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='44,183.7 192.3,183.7 256,116.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='44' y1='183.7' x2='217.8' y2='156.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='29.2' y='190.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='200.3' y='200.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='269.1' y='113.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='232.7' y='160' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='118.1' y='201.7' font-size='13' fill='%23334155' text-anchor='middle'%3E40 m%3C/text%3E%3Ctext x='136' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E60 m%3C/text%3E%3Ctext x='250.9' y='140.5' font-size='13' fill='%23334155' text-anchor='middle'%3E25 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-kesma-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#d320b4ef"
+    },
+    {
+      "q": "ABC uchburchakda AB : AC = 2 : 3 va BC = 20 sm. ∠A ning bissektrisasi BC tomonni D nuqtada kesadi. BD va DC kesmalarning ayirmasi necha santimetr?",
+      "v": [
+        "10 sm",
+        "20 sm",
+        "4 sm",
+        "2 sm"
+      ],
+      "t": 2,
+      "izoh": "Bissektrisa BC ni 2 : 3 nisbatda bo'ladi. Kesmalar 2x va 3x, ularning yig'indisi 5x = 20, demak x = 4. Kesmalar 8 sm va 12 sm, ayirmasi esa 12 − 8 = 4 sm. 2 sm — bir qism qiymatini yarimlash, 10 sm esa teng bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-kesma-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#214bcca4"
+    },
+    {
+      "q": "Uchburchakning medianalari M nuqtada kesishadi. AM = 12 sm bo'lsa, M nuqtadan BC tomonning o'rtasigacha bo'lgan masofa necha santimetr?",
+      "v": [
+        "6 sm",
+        "24 sm",
+        "4 sm",
+        "18 sm"
+      ],
+      "t": 0,
+      "izoh": "Medianalar kesishish nuqtasi har bir medianani uchidan boshlab 2 : 1 nisbatda bo'ladi. AM uchta qismning ikkitasiga, izlanayotgan kesma esa bittasiga to'g'ri keladi. Demak u 12 : 2 = 6 sm. 24 sm — nisbatni teskari qo'llash xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,239.1 254,239.1 120.3,60.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='46' y1='239.1' x2='187.1' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='254' y1='239.1' x2='83.1' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='120.3' y1='60.9' x2='150' y2='239.1' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='140.1' cy='179.7' r='3.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='33.3' y='251.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='267.3' y='250.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='117.8' y='50.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='199.8' y='146.5' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='140.1' y='169.2' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='109' y='213.4' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mediana-markaz-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#e51ce3ec"
+    },
+    {
+      "q": "Uchburchakning bir medianasi 21 sm ga teng. Medianalar kesishish nuqtasidan shu medianaga tegishli uchgacha bo'lgan masofa necha santimetr?",
+      "v": [
+        "7 sm",
+        "10,5 sm",
+        "42 sm",
+        "14 sm"
+      ],
+      "t": 3,
+      "izoh": "Kesishish nuqtasi medianani uchidan boshlab 2 : 1 nisbatda bo'ladi, ya'ni uchgacha bo'lgan qism medianning uchdan ikkisiga teng: 21 · 2 : 3 = 14 sm. 7 sm — qolgan uchdan bir qism, 10,5 sm esa medianani teng ikkiga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mediana-markaz-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#a0d7f000"
+    },
+    {
+      "q": "Uchburchak shaklidagi metall plastinka og'irlik markazidan osib qo'yilgan. Plastinkaning uchidan bu markazgacha bo'lgan masofa 26 sm. Shu uchdan chiqqan medianaing to'liq uzunligi necha santimetr?",
+      "v": [
+        "78 sm",
+        "39 sm",
+        "52 sm",
+        "13 sm"
+      ],
+      "t": 1,
+      "izoh": "Og'irlik markazi medianalar kesishish nuqtasi bo'lib, uchdan boshlab 2 : 1 nisbatda bo'ladi. 26 sm uchta qismning ikkitasi, bir qism 13 sm, to'liq mediana esa 39 sm. 52 sm — ikkilantirish, 78 sm esa uchga ko'paytirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-markaz-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#7f19bbbd"
+    },
+    {
+      "q": "Uchburchakning ikkita medianasi kesishish nuqtasi bilan bo'lingan: birinchisining katta qismi 10 sm, ikkinchisining kichik qismi esa 4 sm. Bu ikki medianaing uzunliklari yig'indisi necha santimetr?",
+      "v": [
+        "27 sm",
+        "24 sm",
+        "21 sm",
+        "14 sm"
+      ],
+      "t": 0,
+      "izoh": "Katta qism medianning uchdan ikkisi, demak birinchi mediana 10 · 3 : 2 = 15 sm. Kichik qism uchdan bir, demak ikkinchi mediana 4 · 3 = 12 sm. Yig'indi 15 + 12 = 27 sm. 14 sm — berilgan qismlarni shunchaki qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-markaz-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#fbcc4013"
+    },
+    {
+      "q": "Menelay teoremasiga ko'ra ABC uchburchakning tomonlarini yoki ularning davomini kesuvchi to'g'ri chiziq uchun qanday tenglik o'rinli bo'ladi?",
+      "v": [
+        "(AM : MB) · (BN : NC) · (CK : KA) = 2",
+        "(AM : MB) + (BN : NC) + (CK : KA) = 1",
+        "(AM : MB) · (BN : NC) = CK : KA",
+        "(AM : MB) · (BN : NC) · (CK : KA) = 1"
+      ],
+      "t": 3,
+      "izoh": "Menelay teoremasi kesuvchi to'g'ri chiziq uchburchak tomonlarini kesgan nuqtalar orqali hosil bo'lgan uchta nisbatning ko'paytmasi birga teng bo'lishini bildiradi. Nisbatlar uchburchak konturi bo'ylab ketma-ket olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "menelay-teoremasi",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#146566c7"
+    },
+    {
+      "q": "ABC uchburchakda M nuqta AB tomonda AM : MB = 1 : 2 nisbatda, N nuqta BC tomonda BN : NC = 3 : 1 nisbatda yotadi. MN to'g'ri chiziq AC ning davomini P nuqtada kesadi. AP : PC nisbatni toping.",
+      "v": [
+        "1 : 6",
+        "3 : 2",
+        "2 : 3",
+        "3 : 1"
+      ],
+      "t": 1,
+      "izoh": "Menelay teoremasini qo'llaymiz: (AM : MB) · (BN : NC) · (CP : PA) = 1. Berilganlarni qo'yamiz: (1/2) · (3/1) · (CP : PA) = 1, bundan CP : PA = 2 : 3. Demak AP : PC = 3 : 2. Nisbatni teskari yozish 2 : 3 xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='81.3,260 218.8,260 104.2,186.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='104.2' y1='186.7' x2='150' y2='40' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='127.1' y1='260' x2='150' y2='40' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='71' y='275.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='231' y='273.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='90.7' y='184.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='124.9' y='279.3' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='122.6' y='220.4' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='151.3' y='29.6' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "menelay-teoremasi",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#15b613cc"
+    },
+    {
+      "q": "ABC uchburchakda D nuqta BC tomonning o'rtasi, E nuqta esa AB tomonda AE : EB = 1 : 3 nisbatda yotadi. DE to'g'ri chiziq AC ning davomini F nuqtada kesadi. AF : FC nisbatni toping.",
+      "v": [
+        "1 : 2",
+        "2 : 3",
+        "1 : 3",
+        "3 : 1"
+      ],
+      "t": 2,
+      "izoh": "Menelay teoremasiga ko'ra (AE : EB) · (BD : DC) · (CF : FA) = 1. Qiymatlarni qo'yamiz: (1/3) · (1/1) · (CF : FA) = 1, bundan CF : FA = 3. Demak AF : FC = 1 : 3. Nisbatni teskari yozish 3 : 1 xatosiga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='79.3,185.3 220.7,185.3 79.3,44' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='79.3' y1='185.3' x2='79.3' y2='256' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='114.7' y1='185.3' x2='79.3' y2='256' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='114.7' y1='185.3' x2='150' y2='114.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='66.3' y='197.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='235.3' y='193.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='74.4' y='34.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='111' y='204.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='157.9' y='106.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='73.3' y='274.2' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "menelay-teoremasi",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#0b2ed00e"
+    },
+    {
+      "q": "ABC uchburchakda K nuqta AB tomonda AK : KB = 3 : 2, L nuqta BC tomonda BL : LC = 1 : 4 nisbatda yotadi. KL to'g'ri chiziq AC ning davomini M nuqtada kesadi. CM : MA nisbatni toping.",
+      "v": [
+        "3 : 2",
+        "2 : 3",
+        "8 : 3",
+        "3 : 8"
+      ],
+      "t": 2,
+      "izoh": "Menelay teoremasi: (AK : KB) · (BL : LC) · (CM : MA) = 1. Qiymatlarni qo'yamiz: (3/2) · (1/4) · (CM : MA) = 1, ya'ni (3/8) · (CM : MA) = 1. Bundan CM : MA = 8 : 3. Nisbatni teskari yozish 3 : 8 xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='83.8,176.5 216.3,176.5 83.8,44' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='83.8' y1='176.5' x2='83.8' y2='256' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='163.3' y1='176.5' x2='83.8' y2='256' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='163.3' y1='176.5' x2='189.8' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='69.2' y='184.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='231' y='183.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='77.7' y='34.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='176.7' y='187.7' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='204.3' y='150.9' font-size='13' fill='%23334155' text-anchor='middle'%3EL%3C/text%3E%3Ctext x='76.3' y='273.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "menelay-teoremasi",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#17479ad2"
+    },
+    {
+      "q": "ABC uchburchakda AC = 21 sm. To'g'ri chiziq AB tomonni AM : MB = 2 : 5 nisbatda, BC tomonni BN : NC = 5 : 3 nisbatda kesadi va AC ning davomini P nuqtada kesib o'tadi. AP kesma necha santimetr?",
+      "v": [
+        "42 sm",
+        "31,5 sm",
+        "14 sm",
+        "63 sm"
+      ],
+      "t": 0,
+      "izoh": "Menelay teoremasidan (2/5) · (5/3) · (CP : PA) = 1, ya'ni CP : PA = 3 : 2. P nuqta A dan tashqarida, shuning uchun CP = 21 + AP. Tenglama (21 + AP) : AP = 3 : 2 dan 42 + 2 · AP = 3 · AP, demak AP = 42 sm. 63 sm — CP kesmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "menelay-teoremasi",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#476edf19"
+    },
+    {
+      "q": "Seva teoremasiga ko'ra ABC uchburchakda AD, BE va CF chevianalar bir nuqtada kesishishi uchun qanday shart bajarilishi kerak?",
+      "v": [
+        "(AF : FB) · (BD : DC) · (CE : EA) = 2",
+        "(AF : FB) + (BD : DC) + (CE : EA) = 1",
+        "AD = BE = CF tengliklari bajarilishi kerak",
+        "(AF : FB) · (BD : DC) · (CE : EA) = 1"
+      ],
+      "t": 3,
+      "izoh": "Seva teoremasi uchburchak uchlaridan qarama-qarshi tomonlarga o'tkazilgan uchta kesma bir nuqtada kesishishi uchun tomonlardagi uchta nisbat ko'paytmasi birga teng bo'lishi kerakligini aytadi. Kesmalarning uzunligi teng bo'lishi shart emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "seva-teoremasi",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#1a29784d"
+    },
+    {
+      "q": "ABC uchburchakda AD, BE va CF chevianalar bir nuqtada kesishadi. BD : DC = 2 : 3 va CE : EA = 1 : 2 bo'lsa, AF : FB nisbat qanday bo'ladi?",
+      "v": [
+        "2 : 3",
+        "3 : 1",
+        "1 : 3",
+        "3 : 2"
+      ],
+      "t": 1,
+      "izoh": "Seva teoremasi: (AF : FB) · (BD : DC) · (CE : EA) = 1. Qiymatlarni qo'yamiz: (AF : FB) · (2/3) · (1/2) = 1, ya'ni (AF : FB) · (1/3) = 1. Bundan AF : FB = 3 : 1. Nisbatni teskari yozish 1 : 3 xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='44,238.3 256,238.3 114.7,61.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='44' y1='238.3' x2='199.5' y2='167.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='256' y1='238.3' x2='91.1' y2='120.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='114.7' y1='61.7' x2='203' y2='238.3' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='173.6' cy='179.4' r='3.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='30.8' y='250' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='268.9' y='250.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='109.8' y='52' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='214.1' y='168.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='80' y='115' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='212.4' y='254.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "seva-teoremasi",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#62ca6c5e"
+    },
+    {
+      "q": "ABC uchburchakda uchta cheviana bir nuqtada kesishadi. AF : FB = 3 : 4 va BD : DC = 2 : 5 bo'lsa, CE : EA nisbat qanday?",
+      "v": [
+        "10 : 3",
+        "3 : 10",
+        "5 : 2",
+        "2 : 5"
+      ],
+      "t": 0,
+      "izoh": "Seva shartiga ko'ra (3/4) · (2/5) · (CE : EA) = 1. Chap tomondagi ko'paytma (3 · 2) : (4 · 5) = 6/20 = 3/10. Demak CE : EA = 10 : 3. Nisbatni teskari yozish 3 : 10 xatosini, faqat ikkinchi nisbatni teskari olish esa 5 : 2 ni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='44,225.7 256,225.7 104.6,74.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='44' y1='225.7' x2='212.7' y2='182.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='256' y1='225.7' x2='58' y2='190.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='104.6' y1='74.3' x2='134.9' y2='225.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='30.2' y='236' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='270.3' y='234.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='100.7' y='64.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='227.7' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='43' y='195.9' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='134.8' y='245.2' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "seva-teoremasi",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#84a3f278"
+    },
+    {
+      "q": "ABC uchburchakda AD va BE medianalar, CF cheviana esa ular bilan bir nuqtada kesishadi. Seva teoremasidan foydalanib AF : FB nisbatni toping.",
+      "v": [
+        "2 : 1",
+        "1 : 2",
+        "3 : 1",
+        "1 : 1"
+      ],
+      "t": 3,
+      "izoh": "Medianalar uchun BD : DC = 1 : 1 va CE : EA = 1 : 1. Seva shartiga ko'ra (AF : FB) · 1 · 1 = 1, demak AF : FB = 1 : 1. Ya'ni CF ham mediana bo'ladi va uchala mediana bitta nuqtada kesishishi isbotlanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='44,240.9 256,240.9 119.7,59.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='44' y1='240.9' x2='187.9' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='256' y1='240.9' x2='81.9' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='119.7' y1='59.1' x2='150' y2='240.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='139.9' cy='180.3' r='3.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='31.3' y='253.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='269.3' y='252.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='117.2' y='48.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='200.5' y='146.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='68.6' y='147.6' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='152.5' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "seva-teoremasi",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#fe63bc09"
+    },
+    {
+      "q": "ABC uchburchakda BC = 15 sm va uchta cheviana bir nuqtada kesishadi. AF : FB = 3 : 2 hamda CE : EA = 4 : 3 bo'lsa, BD kesma necha santimetr?",
+      "v": [
+        "7,5 sm",
+        "5 sm",
+        "10 sm",
+        "6 sm"
+      ],
+      "t": 1,
+      "izoh": "Seva shartidan (3/2) · (BD : DC) · (4/3) = 1, ya'ni 2 · (BD : DC) = 1 va BD : DC = 1 : 2. BC ni 1 : 2 nisbatda bo'lamiz: bir qism 15 : 3 = 5, demak BD = 5 sm. 10 sm — DC kesmasi, 7,5 sm esa teng bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "seva-teoremasi",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#a9c8fad8"
+    },
+    {
+      "q": "Bo'yi 1,7 m bo'lgan Jasurning quyoshdagi soyasi 2,55 m, yonidagi ustunning soyasi esa 7,5 m. Ustunning balandligi necha metr?",
+      "v": [
+        "12,75 m",
+        "3,4 m",
+        "5 m",
+        "11,25 m"
+      ],
+      "t": 2,
+      "izoh": "Quyosh nurlari parallel bo'lgani uchun odam va ustun o'xshash uchburchaklar hosil qiladi: 1,7 : 2,55 = h : 7,5. Bundan h = 7,5 · 1,7 : 2,55 = 5 m. 12,75 m — bo'lish o'rniga ko'paytirish, 11,25 m esa nisbatni teskari qo'llash xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='40' y1='184.4' x2='260' y2='184.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='75.1' y1='184.4' x2='75.1' y2='161' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='218.8' y1='184.4' x2='218.8' y2='115.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='40' y1='184.4' x2='75.1' y2='161' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='115.6' y1='184.4' x2='218.8' y2='115.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='91.1' y='176.7' font-size='13' fill='%23334155' text-anchor='middle'%3E1,7 m%3C/text%3E%3Ctext x='57.5' y='202.4' font-size='13' fill='%23334155' text-anchor='middle'%3E2,55 m%3C/text%3E%3Ctext x='167.2' y='202.4' font-size='13' fill='%23334155' text-anchor='middle'%3E7,5 m%3C/text%3E%3Ctext x='232.8' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soya-va-balandlik",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#78f4bf70"
+    },
+    {
+      "q": "Daraxtning soyasi 12 m, xuddi shu paytda yerga tik qo'yilgan 1,5 m uzunlikdagi tayoqning soyasi 2 m. Daraxtning balandligi necha metr?",
+      "v": [
+        "18 m",
+        "11,5 m",
+        "9 m",
+        "16 m"
+      ],
+      "t": 2,
+      "izoh": "Tayoq va daraxt o'xshash to'g'ri burchakli uchburchaklar hosil qiladi: 1,5 : 2 = h : 12. Bundan h = 12 · 1,5 : 2 = 9 m. 16 m — nisbatni teskari qo'llash, 18 m — 12 ni 1,5 ga ko'paytirish, 11,5 m esa qo'shish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='40' y1='195' x2='260' y2='195' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='60' y1='195' x2='60' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='220' y1='195' x2='220' y2='105' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='40' y1='195' x2='60' y2='180' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='100' y1='195' x2='220' y2='105' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='76' y='191.5' font-size='13' fill='%23334155' text-anchor='middle'%3E1,5 m%3C/text%3E%3Ctext x='50' y='213' font-size='13' fill='%23334155' text-anchor='middle'%3E2 m%3C/text%3E%3Ctext x='160' y='213' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='234' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soya-va-balandlik",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#dd5abe54"
+    },
+    {
+      "q": "Kamola bino balandligini ko'zgu yordamida o'lchadi: ko'zgudan binogacha 20 m, ko'zgudan uning o'zigacha 2,5 m, ko'zlari esa yerdan 1,6 m balandlikda. Binoning balandligi necha metr?",
+      "v": [
+        "12,8 m",
+        "3,2 m",
+        "32 m",
+        "8 m"
+      ],
+      "t": 0,
+      "izoh": "Ko'zguda nurning tushish va qaytish burchaklari teng, shuning uchun ikkita o'xshash uchburchak hosil bo'ladi: 1,6 : 2,5 = h : 20. Bundan h = 20 · 1,6 : 2,5 = 12,8 m. 3,2 m — 1,6 ni ikkilantirish, 32 m esa 20 ni 1,6 ga ko'paytirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='40' y1='208.7' x2='260' y2='208.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='40' y1='208.7' x2='40' y2='194' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='246.3' y1='208.7' x2='246.3' y2='91.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='40' y1='194' x2='62.9' y2='208.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='62.9' y1='208.7' x2='246.3' y2='91.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='24' y='205.3' font-size='13' fill='%23334155' text-anchor='middle'%3E1,6 m%3C/text%3E%3Ctext x='51.5' y='226.7' font-size='13' fill='%23334155' text-anchor='middle'%3E2,5 m%3C/text%3E%3Ctext x='154.6' y='226.7' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3Ctext x='260.3' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soya-va-balandlik",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#76eba362"
+    },
+    {
+      "q": "Ko'cha chirog'i yerdan 6 m balandlikda osilgan. Bo'yi 1,8 m bo'lgan odam chiroq tagidan 7 m uzoqlashdi. Uning soyasi uzunligi necha metr?",
+      "v": [
+        "2,1 m",
+        "10 m",
+        "4,2 m",
+        "3 m"
+      ],
+      "t": 3,
+      "izoh": "Soya uzunligini s deb belgilaymiz. Odam va chiroq hosil qilgan uchburchaklar o'xshash: 1,8 : 6 = s : (s + 7). Bundan 6 · s = 1,8 · s + 12,6, ya'ni 4,2 · s = 12,6 va s = 3 m. 10 m — soya uchining chiroqdan uzoqligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='42' y1='204' x2='258' y2='204' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='204' x2='42' y2='96' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='168' y1='204' x2='168' y2='171.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='96' x2='222' y2='204' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='28' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E6 m%3C/text%3E%3Ctext x='184' y='191.8' font-size='13' fill='%23334155' text-anchor='middle'%3E1,8 m%3C/text%3E%3Ctext x='105' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E7 m%3C/text%3E%3Ctext x='195' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "soya-va-balandlik",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#8215c95e"
+    },
+    {
+      "q": "Chiroq balandligi 4,8 m. Bo'yi 1,2 m bo'lgan bola chiroq tagidan 9 m uzoqlashganda uning soyasining uchi chiroq tagidan necha metr masofada bo'ladi?",
+      "v": [
+        "36 m",
+        "12 m",
+        "3 m",
+        "11,25 m"
+      ],
+      "t": 1,
+      "izoh": "Soyani s deb olamiz: 1,2 : 4,8 = s : (s + 9). Bundan 4,8 · s = 1,2 · s + 10,8, ya'ni 3,6 · s = 10,8 va s = 3 m. Soya uchi chiroq tagidan 9 + 3 = 12 m uzoqlikda. 3 m — soyaning o'zi, 36 m esa nisbatni noto'g'ri olish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='42' y1='187' x2='258' y2='187' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='187' x2='42' y2='113' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='180.9' y1='187' x2='180.9' y2='168.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='113' x2='227.1' y2='187' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='26' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E4,8 m%3C/text%3E%3Ctext x='196.9' y='181.8' font-size='13' fill='%23334155' text-anchor='middle'%3E1,2 m%3C/text%3E%3Ctext x='111.4' y='205' font-size='13' fill='%23334155' text-anchor='middle'%3E9 m%3C/text%3E%3Ctext x='204' y='205' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "soya-va-balandlik",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#0d4d4425"
+    },
+    {
+      "q": "Xaritaning masshtabi 1 : 250 000. Ikki shahar orasidagi masofa xaritada 8 sm bo'lsa, haqiqiy masofa necha kilometr?",
+      "v": [
+        "20 km",
+        "200 km",
+        "2 km",
+        "31 250 km"
+      ],
+      "t": 0,
+      "izoh": "Haqiqiy masofa 8 · 250 000 = 2 000 000 sm ga teng. Uni kilometrga o'tkazamiz: 2 000 000 sm = 20 000 m = 20 km. 200 km — birlikni bir marta noto'g'ri o'tkazish, 2 km esa ortiqcha bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab-xarita-model",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#ce3e649b"
+    },
+    {
+      "q": "Samolyot modeli 1 : 72 masshtabda yasalgan. Modelning qanoti 27 sm bo'lsa, haqiqiy samolyotning qanoti necha metr?",
+      "v": [
+        "1944 m",
+        "0,375 m",
+        "194,4 m",
+        "19,44 m"
+      ],
+      "t": 3,
+      "izoh": "Haqiqiy uzunlik 27 · 72 = 1944 sm. Uni metrga o'tkazamiz: 1944 sm = 19,44 m. 1944 m — santimetrni metr deb yozish xatosi, 0,375 m — ko'paytirish o'rniga bo'lish, 194,4 m esa birlikni noto'g'ri o'tkazish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab-xarita-model",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#8728ef0d"
+    },
+    {
+      "q": "Uy rejasi 1 : 100 masshtabda chizilgan. Rejada xonaning eni 4 sm, bo'yi esa 5 sm. Xonaning haqiqiy yuzasi necha kvadrat metr?",
+      "v": [
+        "0,2 m²",
+        "20 m²",
+        "200 m²",
+        "2 m²"
+      ],
+      "t": 1,
+      "izoh": "Haqiqiy o'lchamlar 4 · 100 = 400 sm = 4 m va 5 · 100 = 500 sm = 5 m. Yuza esa 4 · 5 = 20 m². Boshqa variantlar birlikni noto'g'ri o'tkazish yoki masshtabni yuzaga bir marta qo'llash xatolaridan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtab-xarita-model",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#ae4082eb"
+    },
+    {
+      "q": "Bog' rejasi 1 : 500 masshtabda chizilgan. Rejada hovuzning yuzasi 12 sm² bo'lsa, hovuzning haqiqiy yuzasi necha kvadrat metr?",
+      "v": [
+        "3000 m²",
+        "60 m²",
+        "300 m²",
+        "0,6 m²"
+      ],
+      "t": 2,
+      "izoh": "Yuza masshtab koeffitsientining kvadratiga ko'payadi: 12 · 500² = 12 · 250 000 = 3 000 000 sm². 1 m² = 10 000 sm² bo'lgani uchun 3 000 000 : 10 000 = 300 m². 0,6 m² — kvadratga oshirishni unutish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masshtab-xarita-model",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#11150cca"
+    },
+    {
+      "q": "Ikki shahar orasidagi haqiqiy masofa 45 km, xaritada esa bu masofa 9 sm bilan tasvirlangan. Xaritaning masshtabi qanday?",
+      "v": [
+        "1 : 50 000",
+        "1 : 5 000 000",
+        "1 : 500 000",
+        "1 : 5000"
+      ],
+      "t": 2,
+      "izoh": "Avval haqiqiy masofani santimetrga o'tkazamiz: 45 km = 45 000 m = 4 500 000 sm. Masshtab 4 500 000 : 9 = 500 000, ya'ni 1 : 500 000. Qolgan variantlar birlikni o'tkazishda nol sonini adashtirish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masshtab-xarita-model",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#1a54f0f2"
+    },
+    {
+      "q": "Ikkita o'xshash uchburchakning mos balandliklari 6 sm va 9 sm. Kichigining perimetri 32 sm bo'lsa, kattasining perimetri necha santimetr?",
+      "v": [
+        "48 sm",
+        "21,3 sm",
+        "72 sm",
+        "35 sm"
+      ],
+      "t": 0,
+      "izoh": "O'xshash uchburchaklarda mos balandliklar nisbati o'xshashlik koeffitsientiga teng: k = 9 : 6 = 1,5. Perimetr ham shu koeffitsientga ko'payadi: 32 · 1,5 = 48 sm. 72 sm — koeffitsient kvadratini qo'llash, 35 sm esa ayirmani qo'shish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='42,209.3 116,209.3 61.2,130.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='147,209.3 258,209.3 175.9,90.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='27.9' y='218.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='109' y='227.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='48.6' y='126.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='152.8' y='227.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA₁%3C/text%3E%3Ctext x='272.5' y='217.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB₁%3C/text%3E%3Ctext x='182.6' y='81.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC₁%3C/text%3E%3Cline x1='61.2' y1='130.2' x2='61.2' y2='209.3' stroke='%2394a3b8' stroke-width='1.2' stroke-dasharray='4 3'/%3E%3Cline x1='175.9' y1='90.7' x2='175.9' y2='209.3' stroke='%2394a3b8' stroke-width='1.2' stroke-dasharray='4 3'/%3E%3Ctext x='78' y='172' font-size='11' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='194' y='155' font-size='11' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='79' y='241' font-size='11' fill='%23334155' text-anchor='middle'%3EP = 32 sm%3C/text%3E%3Ctext x='202' y='241' font-size='11' fill='%23334155' text-anchor='middle'%3EP = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mos-chiziqlar-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#65e23f01"
+    },
+    {
+      "q": "Ikkita o'xshash uchburchakning o'xshashlik koeffitsienti 3,4 ga teng. Kichigining medianasi 5 sm bo'lsa, kattasining mos medianasi necha santimetr?",
+      "v": [
+        "1,5 sm",
+        "57,8 sm",
+        "8,4 sm",
+        "17 sm"
+      ],
+      "t": 3,
+      "izoh": "O'xshash uchburchaklarda medianalar ham tomonlar kabi koeffitsientga proporsional: 5 · 3,4 = 17 sm. 1,5 sm — bo'lish xatosi, 57,8 sm — koeffitsient kvadratini qo'llash, 8,4 sm esa koeffitsientni qo'shib yuborish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mos-chiziqlar-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#0d6d558d"
+    },
+    {
+      "q": "Ikkita o'xshash uchburchakning mos bissektrisalari 14 sm va 21 sm. Kichigining yuzasi 40 sm² bo'lsa, kattasining yuzasi necha kvadrat santimetr?",
+      "v": [
+        "135 sm²",
+        "90 sm²",
+        "60 sm²",
+        "26,7 sm²"
+      ],
+      "t": 1,
+      "izoh": "Bissektrisalar nisbati koeffitsientga teng: k = 21 : 14 = 1,5. Yuzalar nisbati esa koeffitsient kvadratiga teng: 1,5² = 2,25. Demak yuza 40 · 2,25 = 90 sm². 60 sm² — kvadratga oshirishni unutish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mos-chiziqlar-nisbati",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#71cf1a2f"
+    },
+    {
+      "q": "Sardor tomonlari 6 sm va 9 sm bo'lgan fotosuratni kattalashtirdi. Yangi suratning kichik tomoni 14 sm bo'lsa, uning katta tomoni necha santimetr?",
+      "v": [
+        "21 sm",
+        "17 sm",
+        "9,3 sm",
+        "12 sm"
+      ],
+      "t": 0,
+      "izoh": "Suratlar o'xshash, koeffitsient k = 14 : 6 = 7/3. Katta tomon 9 · 7/3 = 21 sm. 17 sm — ikkala tomonga 8 qo'shish xatosi, 9,3 sm — teskari nisbat, 12 sm esa tomonlar ayirmasini qo'shish natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,198.2 100,198.2 100,156.9 38,156.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='117.3,198.2 262,198.2 262,101.8 117.3,101.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='69' y='216.2' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='23' y='181.6' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='133.3' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='189.6' y='216.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshash-kopburchak",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#058abd44"
+    },
+    {
+      "q": "Ikkita o'xshash to'rtburchakning mos tomonlari 8 sm va 12 sm. Kichigining yuzasi 48 sm² bo'lsa, kattasining yuzasi necha kvadrat santimetr?",
+      "v": [
+        "72 sm²",
+        "32 sm²",
+        "96 sm²",
+        "108 sm²"
+      ],
+      "t": 3,
+      "izoh": "Koeffitsient k = 12 : 8 = 1,5, yuzalar nisbati esa 1,5² = 2,25. Demak katta to'rtburchakning yuzasi 48 · 2,25 = 108 sm². 72 sm² — koeffitsientni kvadratga oshirmaslik, 96 sm² esa yuzani ikkilantirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshash-kopburchak",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#b1160071"
+    },
+    {
+      "q": "A4 formatdagi qog'ozning tomonlari 210 mm va 297 mm. Uni uzun tomoni bo'ylab teng ikkiga bukish natijasida hosil bo'lgan A5 qog'oz A4 ga o'xshash bo'ladimi?",
+      "v": [
+        "Yo'q, chunki perimetrlari nisbati 2 ga teng",
+        "Ha, chunki har ikkalasida ham tomonlar nisbati taxminan √2 ga teng",
+        "Yo'q, chunki yuzalari teng emas",
+        "Ha, chunki yuzalari aynan 2 marta farq qiladi"
+      ],
+      "t": 1,
+      "izoh": "A4 uchun nisbat 297 : 210 ≈ 1,414. A5 ning tomonlari 148,5 mm va 210 mm, nisbat 210 : 148,5 ≈ 1,414. Nisbatlar bir xil bo'lgani uchun to'rtburchaklar o'xshash. Yuzalarning farq qilishi o'xshashlikka to'sqinlik qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxshash-kopburchak",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#ec22c82e"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda gipotenuzaga tushirilgan balandlik uni 4 sm va 9 sm kesmalarga ajratdi. Balandlikning uzunligi necha santimetr?",
+      "v": [
+        "13 sm",
+        "36 sm",
+        "6 sm",
+        "6,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Balandlik gipotenuzani ikkita o'xshash uchburchakka ajratadi, shuning uchun h² = 4 · 9 = 36 va h = 6 sm. 6,5 sm — kesmalarning o'rta arifmetigi, 13 sm — ularning yig'indisi, 36 sm esa ildiz olishni unutish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,198 254,198 110,102' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='110' y1='102' x2='110' y2='198' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='98,198 98,186 110,186' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='103.3,112 113.3,118.6 120,108.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='31.6' y='206.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='268.7' y='205.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='106' y='92' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='110' y='217.5' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='78' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='182' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='123' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gipotenuzaga-tushirilgan-balandlik",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#521cfbf4"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning gipotenuzasi 25 sm, unga tushirilgan balandlik esa gipotenuzani 9 sm va 16 sm kesmalarga ajratdi. Kichik katetning uzunligi necha santimetr?",
+      "v": [
+        "20 sm",
+        "9 sm",
+        "15 sm",
+        "12 sm"
+      ],
+      "t": 2,
+      "izoh": "Katet gipotenuza va o'z proyeksiyasining o'rta geometrigiga teng: a² = 9 · 25 = 225, demak a = 15 sm. 20 sm — katta katet, u 16 · 25 dan chiqadi. 12 sm — balandlikning uzunligi, 9 sm esa proyeksiyaning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,199.9 254,199.9 120.9,100.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='120.9' y1='100.1' x2='120.9' y2='199.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='108.9,199.9 108.9,187.9 120.9,187.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='113.7,109.7 123.3,116.9 130.5,107.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='31.6' y='208.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='268.7' y='207.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='118' y='89.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='120.9' y='219.4' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='83.4' y='217.9' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='187.4' y='217.9' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='69.4' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gipotenuzaga-tushirilgan-balandlik",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#b083c85e"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda gipotenuzaga balandlik tushirilgan. Hosil bo'lgan ikkita uchburchakning yuzalari nisbati 4 : 9 bo'lsa, katetlar nisbati qanday?",
+      "v": [
+        "2 : 3",
+        "4 : 9",
+        "3 : 2",
+        "16 : 81"
+      ],
+      "t": 0,
+      "izoh": "Balandlik ajratgan ikki uchburchak o'zaro o'xshash, ularning gipotenuzalari esa asl uchburchakning katetlari. Yuzalar nisbati koeffitsient kvadratiga teng: k² = 4 : 9, demak k = 2 : 3. Shu nisbat katetlar uchun ham o'rinli bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,198 254,198 110,102' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='110' y1='102' x2='110' y2='198' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='98,198 98,186 110,186' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='103.3,112 113.3,118.6 120,108.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='31.6' y='206.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='268.7' y='205.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='106' y='92' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='110' y='217.5' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gipotenuzaga-tushirilgan-balandlik",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#e73012ba"
+    },
+    {
+      "q": "Uzunligi 72 sm bo'lgan kesma 5 : 4 nisbatda ikkiga bo'lindi. Kesmaning kattaroq bo'lagi necha santimetr?",
+      "v": [
+        "32 sm",
+        "36 sm",
+        "45 sm",
+        "40 sm"
+      ],
+      "t": 3,
+      "izoh": "Bo'laklarni 5x va 4x deb belgilaymiz, u holda 9x = 72 va x = 8. Katta bo'lak 5 · 8 = 40 sm. 32 sm — kichik bo'lak, 36 sm — kesmani teng ikkiga bo'lish, 45 sm esa nisbatni noto'g'ri qo'llash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesmani-nisbatda-bolish",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#1a5ddd27"
+    },
+    {
+      "q": "Usta 96 sm uzunlikdagi simni 3 : 5 nisbatda ikki bo'lakka ajratdi. Simning kichik bo'lagi necha santimetr?",
+      "v": [
+        "48 sm",
+        "36 sm",
+        "60 sm",
+        "32 sm"
+      ],
+      "t": 1,
+      "izoh": "Bo'laklar 3x va 5x bo'lsin, u holda 8x = 96 va x = 12. Kichik bo'lak 3 · 12 = 36 sm. 60 sm — katta bo'lak, 32 sm — simni uchga bo'lish, 48 sm esa teng ikkiga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesmani-nisbatda-bolish",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#b0dfe59b"
+    },
+    {
+      "q": "AB kesmada C nuqta shunday joylashganki, AC : CB = 2 : 7 nisbat o'rinli. AB = 45 sm bo'lsa, AC kesma necha santimetr?",
+      "v": [
+        "10 sm",
+        "35 sm",
+        "12,9 sm",
+        "22,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Kesmalarni 2x va 7x deb olamiz, u holda 9x = 45 va x = 5. Demak AC = 2 · 5 = 10 sm. 35 sm — CB kesmasi, 12,9 sm — 45 ni 3,5 ga bo'lish xatosi, 22,5 sm esa kesmani teng ikkiga bo'lish natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='60' y1='148' x2='240' y2='148' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='100' cy='148' r='3.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45' y='152.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='255' y='152.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='100' y='137.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E45 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmani-nisbatda-bolish",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#d37ef842"
+    },
+    {
+      "q": "AB kesmada C nuqta AC : CB = 2 : 7 nisbatda, D nuqta esa AD : DB = 5 : 4 nisbatda joylashgan. AB = 63 sm bo'lsa, CD kesma necha santimetr?",
+      "v": [
+        "28 sm",
+        "14 sm",
+        "35 sm",
+        "21 sm"
+      ],
+      "t": 3,
+      "izoh": "AC = 63 · 2 : 9 = 14 sm, AD = 63 · 5 : 9 = 35 sm. Ikkala nuqta ham A dan o'lchangani uchun CD = 35 − 14 = 21 sm. 14 sm — AC ning o'zini javob deb yozish, 35 sm esa AD ni javob deb olish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='147.7' x2='245' y2='147.7' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='97.2' cy='147.7' r='3.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160.6' cy='147.7' r='3.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='40' y='152.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='260' y='152.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='97.2' y='137.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='160.6' y='137.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='150' y='171.7' font-size='13' fill='%23334155' text-anchor='middle'%3E63 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmani-nisbatda-bolish",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#455e2e12"
+    },
+    {
+      "q": "AB va CD kesmalar O nuqtada kesishadi hamda AC ∥ BD. AO = 6 sm, OB = 9 sm va OC = 8 sm bo'lsa, OD kesma necha santimetr?",
+      "v": [
+        "18 sm",
+        "12 sm",
+        "5,3 sm",
+        "11 sm"
+      ],
+      "t": 1,
+      "izoh": "AC ∥ BD bo'lgani uchun AOC va BOD uchburchaklar vertikal burchak va ichma-ich burchaklar bo'yicha o'xshash. Demak AO : OB = OC : OD, ya'ni 6 : 9 = 8 : OD va OD = 12 sm. 5,3 sm — nisbatni teskari qo'llash xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='62.8' y1='137.1' x2='205.8' y2='219.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='90.1' y1='252.8' x2='164.9' y2='45.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='62.8' y1='137.1' x2='90.1' y2='252.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='205.8' y1='219.3' x2='164.9' y2='45.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='50' y='133' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='218' y='226' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='78' y='264' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='176' y='41' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='104' y='181' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='99' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='171' y='181' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='121' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='158' y='114' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishuvchi-chiziqlar-oxshashligi",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#5374ea95"
+    },
+    {
+      "q": "AB va CD kesmalar O nuqtada kesishadi va AC ∥ BD. AC = 10 sm, BD = 15 sm hamda AO = 8 sm bo'lsa, OB kesma necha santimetr?",
+      "v": [
+        "13 sm",
+        "18 sm",
+        "12 sm",
+        "6,7 sm"
+      ],
+      "t": 2,
+      "izoh": "AOC va BOD uchburchaklar o'xshash, koeffitsient BD : AC = 15 : 10 = 1,5. Mos kesmalar AO va OB, demak OB = 8 · 1,5 = 12 sm. 6,7 sm — koeffitsientni AO ga ko'paytirish o'rniga AC ni unga bo'lish (10 : 1,5), 13 sm — nisbat o'rniga kesmalar ayirmasini qo'shish (8 + 5), 18 sm esa AC ni AO ga qo'shish xatosi (10 + 8).",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='44' y1='120.3' x2='256' y2='226.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='61' y1='222.1' x2='230.6' y2='73.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='44' y1='120.3' x2='61' y2='222.1' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='256' y1='226.3' x2='230.6' y2='73.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='30.1' y='119.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='269' y='238.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='48.9' y='235.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='241.1' y='67.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='128.8' y='152.2' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='37.5' y='175.2' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='258.3' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='86.4' y='132.5' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='192.4' y='185.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishuvchi-chiziqlar-oxshashligi",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#3262970d"
+    },
+    {
+      "q": "Bir-biridan 12 m masofada turgan ikkita tik ustunning balandliklari 4 m va 6 m. Har bir ustun uchidan ikkinchisining tagigacha arqon tortildi. Arqonlar kesishgan nuqtaning yerdan balandligi necha metr?",
+      "v": [
+        "2 m",
+        "3 m",
+        "2,4 m",
+        "5 m"
+      ],
+      "t": 2,
+      "izoh": "Kesishish nuqtasining balandligi h bo'lsin. O'xshash uchburchaklardan h : 4 va h : 6 nisbatlar orqali 1/h = 1/4 + 1/6 kelib chiqadi, ya'ni h = 4 · 6 : (4 + 6) = 2,4 m. Bu qiymat ustunlar orasidagi masofaga bog'liq emas. 5 m — balandliklarning o'rtachasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='46' y1='202' x2='254' y2='202' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='46' y1='202' x2='46' y2='132.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='254' y1='202' x2='254' y2='98' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='46' y1='132.7' x2='254' y2='202' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='254' y1='98' x2='46' y2='202' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='129.2' cy='160.4' r='3.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='32' y='171.3' font-size='13' fill='%23334155' text-anchor='middle'%3E4 m%3C/text%3E%3Ctext x='268' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3E6 m%3C/text%3E%3Ctext x='150' y='220' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesishuvchi-chiziqlar-oxshashligi",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#49aaae92"
+    },
+    {
+      "q": "ABC uchburchakda D nuqta AB tomonda, E nuqta esa AC tomonda yotadi. AD = 6 sm, DB = 9 sm, AE = 8 sm va EC = 12 sm bo'lsa, DE va BC to'g'ri chiziqlar haqida nima deyish mumkin?",
+      "v": [
+        "DE ∥ BC, chunki kesmalar proporsional",
+        "DE ⊥ BC, chunki nisbatlar teng",
+        "DE va BC albatta kesishadi",
+        "Berilganlardan xulosa chiqarib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Nisbatlarni solishtiramiz: AD : DB = 6 : 9 = 2/3 va AE : EC = 8 : 12 = 2/3. Nisbatlar teng bo'lgani uchun Fales teoremasiga teskari tasdiqqa ko'ra DE to'g'ri chiziq BC ga parallel bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,238.9 251.3,238.9 254,61.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='128.1' y1='238.9' x2='129.2' y2='167.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='32.2' y='249.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='264.4' y='250.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.8' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='119.7' y='255.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='116.7' y='164.1' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='73.1' y='242.9' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='175.7' y='242.9' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='101.6' y='207.4' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='205.6' y='118.4' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-fales-parallellik",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#2c36bb39"
+    },
+    {
+      "q": "ABC uchburchakda AD = 5 sm, DB = 7 sm, AE = 6 sm va EC = 9 sm. D nuqta AB da, E nuqta AC da yotadi. DE kesma BC ga parallel bo'ladimi?",
+      "v": [
+        "Ha, chunki ikkala nisbat ham birdan kichik",
+        "Ha, chunki ikkala nuqta ham uchburchak tomonlarida",
+        "Aniqlash uchun burchaklarni bilish kerak",
+        "Yo'q, chunki 5 : 7 va 6 : 9 nisbatlar teng emas"
+      ],
+      "t": 3,
+      "izoh": "Nisbatlarni hisoblaymiz: AD : DB = 5 : 7 ≈ 0,714 va AE : EC = 6 : 9 ≈ 0,667. Ular teng emas, demak Fales teoremasiga teskari tasdiqning sharti bajarilmaydi va DE kesma BC ga parallel bo'lmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,252 238,252 242.6,114.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='126' y1='252' x2='124.6' y2='196.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='34' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='250' y='265' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='245' y='106' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='126' y='270' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='110' y='193' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='86' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='182' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='75' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='173' y='141' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-fales-parallellik",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#3742a451"
+    },
+    {
+      "q": "Trapesiya shaklidagi tomga ko'ndalang taxta o'rnatiladi. U yon tomonlarni yuqoridan hisoblaganda 4 : 6 va 6 : 9 nisbatlarda kesib o'tsa, taxta asoslarga parallel bo'ladimi?",
+      "v": [
+        "Yon tomonlar uzunligi berilmagani uchun aniqlab bo'lmaydi",
+        "Ha, chunki ikkala yon tomon bir xil nisbatda bo'lingan",
+        "Yo'q, chunki sonlar bir-biridan farq qiladi",
+        "Faqat teng yonli trapesiyada parallel bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Nisbatlarni soddalashtiramiz: 4 : 6 = 2 : 3 va 6 : 9 = 2 : 3. Ikkala yon tomon bir xil nisbatda bo'lingani uchun Fales teoremasiga teskari tasdiq bo'yicha taxta asoslarga parallel bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='46,219.3 81.1,80.7 196.7,80.7 254,219.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='67.1' y1='136.1' x2='219.6' y2='136.1' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='61.1' y='112.4' font-size='13' fill='%23334155' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='43.5' y='181.7' font-size='13' fill='%23334155' text-anchor='middle'%3E6%3C/text%3E%3Ctext x='221.1' y='112.4' font-size='13' fill='%23334155' text-anchor='middle'%3E6%3C/text%3E%3Ctext x='249.8' y='181.7' font-size='13' fill='%23334155' text-anchor='middle'%3E9%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-fales-parallellik",
+      "id": "matematika_plan_m06-oxshashlik-fales-teoremasi-va-kesmalar#4a521297"
+    }
+  ]
+}

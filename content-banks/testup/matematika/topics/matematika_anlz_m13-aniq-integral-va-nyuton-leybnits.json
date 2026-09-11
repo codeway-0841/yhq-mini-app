@@ -1,0 +1,1609 @@
+{
+  "nom": "Aniq integral va Nyuton-Leybnits formulasi",
+  "bolim": "Matematik analiz asoslari",
+  "blok": "anlz",
+  "rasmiyBolim": 5,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Anvar analiz darsida ∫₁³ x² dx aniq integralini Nyuton-Leybnits formulasi bo'yicha hisoblamoqchi. U qanday natijaga kelishi kerak?",
+      "v": [
+        "8",
+        "26",
+        "26/3",
+        "28/3"
+      ],
+      "t": 2,
+      "izoh": "x² ning boshlang'ich funksiyasi F(x) = x³/3. Nyuton-Leybnits formulasi bo'yicha F(3) − F(1) = 27/3 − 1/3 = 26/3. Bu yerda 26 — maxrajdagi 3 ga bo'lishni unutish, 28/3 — ayirish o'rniga qo'shish, 8 esa quyi chegarada F(1) ni 1/3 o'rniga 1 deb olish natijasi. Javob: 26/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-funksiya-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#0f805f5d"
+    },
+    {
+      "q": "Aniq integral ∫₀² x³ dx ning qiymatini Nyuton-Leybnits formulasidan foydalanib toping va to'g'ri javobni belgilang.",
+      "v": [
+        "4",
+        "8",
+        "12",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich funksiya F(x) = x⁴/4 bo'ladi. F(2) = 16/4 = 4, F(0) = 0. Ayirma 4 − 0 = 4 ni beradi. 16 — maxrajdagi 4 ga bo'lmaslik, 8 — bo'luvchini 4 emas, 2 deb olish, 12 esa integral o'rniga hosila olib qo'yish xatosi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-funksiya-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#7b18f86e"
+    },
+    {
+      "q": "Dilnoza ∫₂⁵ x dx integralini hisoblab, natijani o'nli kasr ko'rinishida daftariga yozdi. U qaysi sonni yozgan bo'lishi kerak?",
+      "v": [
+        "10,5",
+        "21",
+        "3",
+        "4,5"
+      ],
+      "t": 0,
+      "izoh": "x ning boshlang'ich funksiyasi x²/2. F(5) = 25/2 = 12,5, F(2) = 4/2 = 2. Ayirma 12,5 − 2 = 10,5. Bu yerda 21 — ikkiga bo'lishni unutish, 3 — shunchaki chegaralar ayirmasi, 4,5 esa (5 − 2)²/2 ni hisoblash xatosi. Javob: 10,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-funksiya-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#2ec77927"
+    },
+    {
+      "q": "Manfiy ko'rsatkichli daraja: ∫₁² (1/x²) dx aniq integralining qiymatini hisoblang va berilgan variantlar orasidan to'g'ri javobni belgilang.",
+      "v": [
+        "−1/2",
+        "1/2",
+        "1",
+        "3/2"
+      ],
+      "t": 1,
+      "izoh": "1/x² = x⁻² bo'lgani uchun boshlang'ich funksiya F(x) = −1/x. F(2) = −1/2, F(1) = −1. Ayirma −1/2 − (−1) = 1/2. Bu yerda −1/2 — ayirmani teskari yozish, 1 — faqat F(1) ning modulini olish, 3/2 esa ikki qiymatni qo'shib yuborish. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-funksiya-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#3276d35a"
+    },
+    {
+      "q": "∫₀² (3x² + 2x) dx aniq integralini hisoblang: har bir qo'shiluvchi alohida integrallanadi, so'ngra natijalar birlashtiriladi.",
+      "v": [
+        "8",
+        "12",
+        "16",
+        "28"
+      ],
+      "t": 1,
+      "izoh": "∫3x² dx = x³ va ∫2x dx = x², demak F(x) = x³ + x². F(2) = 8 + 4 = 12, F(0) = 0. Bu yerda 8 — ikkinchi qo'shiluvchini tashlab ketish, 16 — 2x ni 2x² deb integrallash, 28 esa 3x² ni 3x³ deb integrallash xatosi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kophad-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#3f758366"
+    },
+    {
+      "q": "Nyuton-Leybnits formulasi yordamida ∫₁² (4x³ − 6x² + 2) dx ko'phadli integralining aniq qiymatini toping.",
+      "v": [
+        "1",
+        "3",
+        "4",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich funksiya F(x) = x⁴ − 2x³ + 2x. F(2) = 16 − 16 + 4 = 4, F(1) = 1 − 2 + 2 = 1. Natija 4 − 1 = 3. Bu yerda 4 — quyi chegarani qo'yishni unutish, 5 — ayirish o'rniga qo'shish, 1 esa faqat F(1) ni javob deb olish. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kophad-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#753f3296"
+    },
+    {
+      "q": "∫₋₁² (3x² + 2) dx aniq integralini hisoblang; quyi chegara manfiy bo'lgani uchun ishoraga alohida e'tibor bering.",
+      "v": [
+        "3",
+        "9",
+        "12",
+        "15"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich funksiya F(x) = x³ + 2x. F(2) = 8 + 4 = 12, F(−1) = −1 − 2 = −3. Ayirma 12 − (−3) = 15. Bu yerda 9 — manfiy qiymatni ayirishda ishorani almashtirmaslik, 12 — quyi chegarani umuman qo'ymaslik, 3 esa F(−1) ning modulini javob deb olish. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kophad-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#f4cc8d20"
+    },
+    {
+      "q": "∫₀¹ (x³ + x² + x) dx yig'indisini hisoblang va natijani eng sodda kasr ko'rinishida ko'rsating.",
+      "v": [
+        "3/4",
+        "5/6",
+        "13/12",
+        "3/2"
+      ],
+      "t": 2,
+      "izoh": "Har bir had alohida integrallanadi: ∫x³ dx = 1/4, ∫x² dx = 1/3, ∫x dx = 1/2. Umumiy maxraj 12 bo'ladi: 3/12 + 4/12 + 6/12 = 13/12. Bu yerda 3/4 — x² hadini tushirib qoldirish, 5/6 — x³ hadini tushirish, 3/2 esa har bir hadni doim 2 ga bo'lish xatosi. Javob: 13/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kophad-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#e9fab4b6"
+    },
+    {
+      "q": "∫₂⁵ (2x + 3) dx integralining qiymati topilsin; bu chiziqli funksiyaning berilgan oraliqdagi aniq integrali hisoblanadi.",
+      "v": [
+        "21",
+        "30",
+        "40",
+        "51"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich funksiya F(x) = x² + 3x. F(5) = 25 + 15 = 40, F(2) = 4 + 6 = 10. Ayirma 40 − 10 = 30. Bu yerda 21 — 3 ni o'zgarmas qoldirib F(x) = x² + 3 deb olish, 40 — quyi chegarani unutish, 51 esa 2x ni 2x² deb integrallash. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-funksiya-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#1ba8dffb"
+    },
+    {
+      "q": "Kamola ∫₀⁴ (7 − 2x) dx integralini hisoblamoqda. Barcha qadamlar to'g'ri bajarilsa, u qanday son olishi kerak?",
+      "v": [
+        "28",
+        "44",
+        "−12",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich funksiya F(x) = 7x − x². F(4) = 28 − 16 = 12, F(0) = 0. Demak integral 12 ga teng. Bu yerda 28 — ikkinchi hadni tushirib qoldirish, 44 — ayirish o'rniga qo'shish, −12 esa ayirmani teskari tartibda yozish. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-funksiya-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#3eee9cd8"
+    },
+    {
+      "q": "∫₋₃¹ (4 − x) dx integralining qiymatini toping — chegaralardan biri manfiy bo'lgani uchun hisob diqqat talab qiladi.",
+      "v": [
+        "20",
+        "−13",
+        "16",
+        "24"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich funksiya F(x) = 4x − x²/2. F(1) = 4 − 0,5 = 3,5, F(−3) = −12 − 4,5 = −16,5. Ayirma 3,5 − (−16,5) = 20. Bu yerda −13 — manfiy qiymatni qo'shish o'rniga ayirish, 16 — x hadini butunlay tashlash, 24 esa x²/2 dagi 2 ga bo'lishni unutish. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-funksiya-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#bb3b335c"
+    },
+    {
+      "q": "O'zgarmas funksiyaning aniq integrali: ∫₂⁹ 6 dx ifodasining qiymatini toping va uni to'g'ri ko'rsatgan javobni belgilang.",
+      "v": [
+        "12",
+        "54",
+        "66",
+        "42"
+      ],
+      "t": 3,
+      "izoh": "O'zgarmas c ning boshlang'ich funksiyasi cx bo'ladi, ya'ni F(x) = 6x. F(9) = 54, F(2) = 12, ayirma 54 − 12 = 42. Buni 6·(9 − 2) = 42 deb ham tekshirish mumkin. Bu yerda 54 — quyi chegarani unutish, 12 — faqat quyi chegara qiymati, 66 esa ayirish o'rniga qo'shish. Javob: 42.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-funksiya-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#be26ef98"
+    },
+    {
+      "q": "∫₀^(π/2) cos x dx aniq integrali qanday qiymatga ega bo'ladi? Boshlang'ich funksiyani to'g'ri tanlash yechimning kalitidir.",
+      "v": [
+        "−1",
+        "0",
+        "1",
+        "π/2"
+      ],
+      "t": 2,
+      "izoh": "cos x ning boshlang'ich funksiyasi sin x. Nyuton-Leybnits formulasi bo'yicha sin(π/2) − sin 0 = 1 − 0 = 1. Bu yerda −1 — boshlang'ich funksiyani −sin x deb olish, 0 — sin o'rniga cos ni qo'yib cos(π/2) ni javob deb olish, π/2 esa funksiyani birga teng deb, oraliq uzunligini olish. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#f887afa2"
+    },
+    {
+      "q": "∫₀^π sin x dx integralini hisoblang; bu yerda boshlang'ich funksiya oldidagi minus ishorasi eng ko'p xatoga sabab bo'ladi.",
+      "v": [
+        "−2",
+        "0",
+        "1",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "sin x ning boshlang'ich funksiyasi −cos x. Demak (−cos π) − (−cos 0) = 1 − (−1) = 2. Bu yerda −2 — boshlang'ich funksiyani minussiz cos x deb olish, 0 — cos π ni 1 deb xato hisoblash, 1 esa faqat yuqori chegara hissasini olish. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#f041f926"
+    },
+    {
+      "q": "∫₀^(π/3) cos x dx integralining qiymatini toping va javobni ildiz ishtirok etgan ko'rinishda yozing.",
+      "v": [
+        "√3/2",
+        "1/2",
+        "√3",
+        "−√3/2"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich funksiya sin x bo'lgani uchun sin(π/3) − sin 0 = √3/2 − 0 = √3/2. Bu yerda 1/2 — sin(π/3) o'rniga cos(π/3) qiymatini olish, √3 — maxrajdagi 2 ni tushirib qoldirish, −√3/2 esa ishorani teskari olish natijasi. Javob: √3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#d43f9fcc"
+    },
+    {
+      "q": "∫₀^(π/2) (cos x − sin x) dx ifodasining qiymatini aniqlang va ikki hadning bir-birini qanday muvozanatlashini tushuntiring.",
+      "v": [
+        "−1",
+        "0",
+        "1",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich funksiya F(x) = sin x + cos x. F(π/2) = 1 + 0 = 1, F(0) = 0 + 1 = 1. Ayirma 1 − 1 = 0. Bu yerda 2 — ikkinchi haddagi minusni hisobga olmay qo'shish, 1 — faqat cos x hadini integrallash, −1 esa faqat −sin x hadini integrallash natijasi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#72fe0317"
+    },
+    {
+      "q": "∫₀¹ eˣ dx aniq integralini hisoblang; natija e soni orqali ifodalanadi, chunki eˣ o'zining boshlang'ich funksiyasidir.",
+      "v": [
+        "1 − e",
+        "e",
+        "e − 1",
+        "e + 1"
+      ],
+      "t": 2,
+      "izoh": "eˣ ning boshlang'ich funksiyasi ham eˣ bo'ladi. Demak e¹ − e⁰ = e − 1. Bu yerda e — quyi chegarada e⁰ ni nol deb hisoblash, 1 − e — ayirmani teskari yozish, e + 1 esa ayirish o'rniga qo'shish xatosi. Javob: e − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#3cd533bc"
+    },
+    {
+      "q": "∫₀¹ 2ˣ dx integralining qiymati qanday? Ko'rsatkichli funksiyaning boshlang'ich funksiyasida maxrajda natural logarifm turishini unutmang.",
+      "v": [
+        "1/ln 2",
+        "2/ln 2",
+        "ln 2",
+        "2 ln 2"
+      ],
+      "t": 0,
+      "izoh": "aˣ ning boshlang'ich funksiyasi aˣ/ln a. Demak 2¹/ln 2 − 2⁰/ln 2 = (2 − 1)/ln 2 = 1/ln 2. Bu yerda 2/ln 2 — quyi chegara hissasini ayirmaslik, ln 2 — logarifmni maxraj emas, surat deb olish, 2 ln 2 esa bo'lishni ko'paytirishga almashtirish. Javob: 1/ln 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#11efb36a"
+    },
+    {
+      "q": "∫₋₁⁰ eˣ dx integralini hisoblang; quyi chegara manfiy bo'lgani uchun natijada e ning manfiy darajasi paydo bo'ladi.",
+      "v": [
+        "1/e",
+        "1/e − 1",
+        "e − 1",
+        "1 − 1/e"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich funksiya eˣ. Demak e⁰ − e⁻¹ = 1 − 1/e. Bu yerda 1/e − 1 — chegaralarni o'rin almashtirib qo'yish, e − 1 — daraja manfiy ekanini e'tiborsiz qoldirish, 1/e esa yuqori chegara hissasini tashlab ketish. Javob: 1 − 1/e.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#0b49b2be"
+    },
+    {
+      "q": "∫₀³ 3ˣ dx aniq integralini hisoblang va natijani logarifm ishtirokidagi kasr ko'rinishida ifodalang.",
+      "v": [
+        "8/ln 3",
+        "26 ln 3",
+        "26/ln 3",
+        "27/ln 3"
+      ],
+      "t": 2,
+      "izoh": "3ˣ ning boshlang'ich funksiyasi 3ˣ/ln 3. Demak 3³/ln 3 − 3⁰/ln 3 = (27 − 1)/ln 3 = 26/ln 3. Bu yerda 27/ln 3 — quyi chegaradagi birni ayirmaslik, 26 ln 3 — logarifmni ko'paytuvchi deb olish, 8/ln 3 esa 3³ o'rniga 3·3 = 9 ni hisoblash. Javob: 26/ln 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#ef9209b1"
+    },
+    {
+      "q": "∫₁^e (1/x) dx aniq integralini hisoblang; bu yerda yuqori chegara aynan natural logarifm asosiga teng olingan.",
+      "v": [
+        "0",
+        "1",
+        "e",
+        "e − 1"
+      ],
+      "t": 1,
+      "izoh": "1/x ning boshlang'ich funksiyasi ln x. Demak ln e − ln 1 = 1 − 0 = 1. Bu yerda 0 — ln e ni nol deb xato hisoblash, e — boshlang'ich funksiyani eˣ deb olish, e − 1 esa ko'rsatkichli funksiya formulasini qo'llash. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#b506fc58"
+    },
+    {
+      "q": "Bekzod ∫₁⁵ (1/x) dx integralini hisoblab, javobni natural logarifm orqali yozmoqchi. U qanday ifoda olishi kerak?",
+      "v": [
+        "−ln 5",
+        "ln 4",
+        "ln 5",
+        "lg 5"
+      ],
+      "t": 2,
+      "izoh": "Boshlang'ich funksiya ln x bo'lgani uchun ln 5 − ln 1 = ln 5 − 0 = ln 5. Bu yerda ln 4 — chegaralar ayirmasini logarifm ichiga kiritish, lg 5 — natural logarifmni o'nli logarifm bilan chalkashtirish, −ln 5 esa ishorani teskari olish. Javob: ln 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#cae7aa1a"
+    },
+    {
+      "q": "∫₂⁸ (3/x) dx integralining qiymatini toping va logarifmlar ayirmasini bitta logarifm ko'rinishiga keltiring.",
+      "v": [
+        "3 ln 4",
+        "ln 4",
+        "3 ln 6",
+        "3 ln 16"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas ko'paytuvchini tashqariga chiqaramiz: 3·(ln 8 − ln 2) = 3·ln(8/2) = 3 ln 4. Bu yerda ln 4 — koeffitsient 3 ni tushirib qoldirish, 3 ln 6 — argumentlar ayirmasini olish, 3 ln 16 esa logarifmlarni ayirish o'rniga qo'shish. Javob: 3 ln 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#eceec07b"
+    },
+    {
+      "q": "Sardor kalkulyatorsiz ∫₁³ (2/x) dx ni hisoblab, javobni logarifm ko'rinishida qoldirdi. U qanday ifoda yozgan?",
+      "v": [
+        "ln 3",
+        "2 ln 2",
+        "ln 6",
+        "2 ln 3"
+      ],
+      "t": 3,
+      "izoh": "Koeffitsient integral tashqarisiga chiqadi: 2·(ln 3 − ln 1) = 2 ln 3. Bu yerda ln 3 — koeffitsient 2 ni unutish, 2 ln 2 — chegaralar ayirmasini logarifm argumenti deb olish, ln 6 esa 2 ni logarifm argumentiga ko'paytuvchi qilib kiritish. Javob: 2 ln 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#86d46129"
+    },
+    {
+      "q": "Muhandis ∫₀⁹ √x dx integralini hisoblashi kerak. Ildizni daraja ko'rinishida yozgach, u qanday natijaga keladi?",
+      "v": [
+        "18",
+        "6",
+        "27",
+        "40,5"
+      ],
+      "t": 0,
+      "izoh": "√x = x^(1/2) bo'lgani uchun boshlang'ich funksiya (2/3)·x^(3/2). F(9) = (2/3)·27 = 18, F(0) = 0. Bu yerda 27 — 2/3 koeffitsientini unutish, 6 — 1/√x ning boshlang'ich funksiyasi 2√x ni qo'llash, 40,5 esa 2/3 o'rniga 3/2 ga ko'paytirish. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#5dfe87eb"
+    },
+    {
+      "q": "∫₁⁴ (1/√x) dx aniq integralining qiymatini toping; maxrajdagi ildiz manfiy darajaga aylantirilishi kerak.",
+      "v": [
+        "1",
+        "2",
+        "4",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "1/√x = x^(−1/2), uning boshlang'ich funksiyasi 2√x. F(4) = 2·2 = 4, F(1) = 2·1 = 2. Ayirma 4 − 2 = 2. Bu yerda 4 — quyi chegarani unutish, 1 — boshlang'ich funksiyani 2√x emas, √x deb olish, 6 esa ayirish o'rniga qo'shish. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#0525f1af"
+    },
+    {
+      "q": "Kub ildiz ostidagi funksiya berilgan: ∫₀⁸ ∛x dx integralining qiymatini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "2",
+        "16",
+        "12",
+        "64/3"
+      ],
+      "t": 2,
+      "izoh": "∛x = x^(1/3), boshlang'ich funksiya (3/4)·x^(4/3). 8^(4/3) = 16 bo'lgani uchun F(8) = (3/4)·16 = 12, F(0) = 0. Bu yerda 16 — 3/4 koeffitsientini tushirib qoldirish, 64/3 — 3/4 o'rniga 4/3 ga ko'paytirish, 2 esa faqat ∛8 ni javob deb olish. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#d759c9c7"
+    },
+    {
+      "q": "∫₁⁴ √x dx aniq integralini hisoblang va natijani noto'g'ri kasr ko'rinishida qoldiring.",
+      "v": [
+        "7/3",
+        "14",
+        "16/3",
+        "14/3"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich funksiya (2/3)·x^(3/2). F(4) = (2/3)·8 = 16/3, F(1) = (2/3)·1 = 2/3. Ayirma 16/3 − 2/3 = 14/3. Bu yerda 16/3 — quyi chegarani unutish, 14 — 3 ga bo'lishni unutish, 7/3 esa 2 ko'paytuvchisini tushirish. Javob: 14/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#f2f7c636"
+    },
+    {
+      "q": "Murakkab funksiya ostidagi integral: ∫₀¹ (2x + 1)³ dx ning qiymatini toping va ichki hosilaga e'tibor bering.",
+      "v": [
+        "10",
+        "20",
+        "81/8",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich funksiya (2x + 1)⁴/(4·2) = (2x + 1)⁴/8. F(1) = 81/8, F(0) = 1/8. Ayirma (81 − 1)/8 = 10. Bu yerda 20 — ichki hosila 2 ga bo'lishni unutib faqat 4 ga bo'lish, 81/8 — quyi chegarani tashlash, 5 esa 2 ga ikki marta bo'lish. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#dbfd6436"
+    },
+    {
+      "q": "∫₀^(π/4) sin 2x dx integralini hisoblang; argument oldidagi koeffitsient natijani qanday o'zgartirishini tekshiring.",
+      "v": [
+        "0",
+        "1/2",
+        "1",
+        "1/4"
+      ],
+      "t": 1,
+      "izoh": "sin 2x ning boshlang'ich funksiyasi −cos 2x/2. F(π/4) = −cos(π/2)/2 = 0, F(0) = −1/2. Ayirma 0 − (−1/2) = 1/2. Bu yerda 1 — ikkiga bo'lishni unutish, 1/4 — ikki marta ikkiga bo'lish, 0 esa quyi chegara hissasini tashlab ketish. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#aac15d46"
+    },
+    {
+      "q": "∫₀³ e^(2x) dx aniq integralining qiymatini toping va javobni e ning darajasi orqali ifodalang.",
+      "v": [
+        "e⁶ − 1",
+        "(e³ − 1)/2",
+        "(e⁶ − 1)/2",
+        "2(e⁶ − 1)"
+      ],
+      "t": 2,
+      "izoh": "e^(2x) ning boshlang'ich funksiyasi e^(2x)/2. F(3) = e⁶/2, F(0) = 1/2. Ayirma (e⁶ − 1)/2. Bu yerda e⁶ − 1 — ichki hosila 2 ga bo'lishni unutish, (e³ − 1)/2 — chegarani darajaga ikki marta ko'paytirmaslik, 2(e⁶ − 1) esa bo'lish o'rniga ko'paytirish. Javob: (e⁶ − 1)/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#1b225aae"
+    },
+    {
+      "q": "Kvadratga ko'tarilgan chiziqli ifoda: ∫₁² (3x − 1)² dx aniq integralining qiymatini hisoblang.",
+      "v": [
+        "39",
+        "125/9",
+        "117",
+        "13"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich funksiya (3x − 1)³/(3·3) = (3x − 1)³/9. F(2) = 125/9, F(1) = 8/9. Ayirma (125 − 8)/9 = 117/9 = 13. Bu yerda 39 — 9 ga emas, 3 ga bo'lish, 117 — boshlang'ich funksiyani (3x − 1)³ deb olib, na daraja qoidasidagi 3 ga, na ichki hosila 3 ga bo'lmaslik (125 − 8 = 117), 125/9 esa quyi chegarani unutish. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#d28778ec"
+    },
+    {
+      "q": "∫₀^(π/6) cos 3x dx integralini hisoblang va natijani oddiy kasr ko'rinishida yozing.",
+      "v": [
+        "1/3",
+        "1",
+        "3",
+        "1/6"
+      ],
+      "t": 0,
+      "izoh": "cos 3x ning boshlang'ich funksiyasi sin 3x/3. F(π/6) = sin(π/2)/3 = 1/3, F(0) = 0. Demak natija 1/3. Bu yerda 1 — uchga bo'lishni unutish, 3 — bo'lish o'rniga ko'paytirish, 1/6 esa argumentni uchga ko'paytirmay sin(π/6) ni qo'yish. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-integrali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#c3f0e982"
+    },
+    {
+      "q": "f funksiyaning boshlang'ich funksiyasi F(x) = x³ − 4x ekani ma'lum. Shu ma'lumot asosida ∫₁⁴ f(x) dx ni toping.",
+      "v": [
+        "45",
+        "51",
+        "48",
+        "−51"
+      ],
+      "t": 1,
+      "izoh": "Nyuton-Leybnits formulasiga ko'ra integral F(4) − F(1) ga teng. F(4) = 64 − 16 = 48, F(1) = 1 − 4 = −3. Demak 48 − (−3) = 51. Bu yerda 45 — manfiy qiymatni ayirishda ishorani almashtirmaslik, 48 — quyi chegarani unutish, −51 esa chegaralarni o'rin almashtirish. Javob: 51.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boshlangich-funksiya-orqali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#b3525f39"
+    },
+    {
+      "q": "F(x) = 2 sin x funksiya f uchun boshlang'ich funksiya bo'lsa, ∫₀^(π/2) f(x) dx integralining qiymatini aniqlang.",
+      "v": [
+        "π/2",
+        "1",
+        "2",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Integral F(π/2) − F(0) ga teng. F(π/2) = 2·1 = 2, F(0) = 2·0 = 0, demak natija 2. Bu yerda 1 — koeffitsient 2 ni tushirib qoldirish, π/2 — integralni oraliq uzunligi deb olish, 4 esa chegaradagi qiymatlarni qo'shib yuborish. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boshlangich-funksiya-orqali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#b6d5f82a"
+    },
+    {
+      "q": "Boshlang'ich funksiya F(x) = ln x bo'lgan holda ∫₂⁶ f(x) dx qiymati qaysi logarifm orqali ifodalanadi?",
+      "v": [
+        "ln 4",
+        "ln 12",
+        "ln 8",
+        "ln 3"
+      ],
+      "t": 3,
+      "izoh": "Integral F(6) − F(2) = ln 6 − ln 2 ga teng, logarifmlar ayirmasi esa ln(6/2) = ln 3 ni beradi. Bu yerda ln 4 — argumentlar ayirmasini olish, ln 12 — logarifmlarni qo'shish, ln 8 esa argumentlarni qo'shish natijasi. Javob: ln 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boshlangich-funksiya-orqali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#3c02e309"
+    },
+    {
+      "q": "Nilufar hosilasi f(x) ga teng bo'lgan F(x) = x² + 5x funksiyani topdi. Endi u ∫₃⁷ f(x) dx ni hisoblasa, nima chiqadi?",
+      "v": [
+        "36",
+        "84",
+        "108",
+        "60"
+      ],
+      "t": 3,
+      "izoh": "Integral F(7) − F(3) ga teng. F(7) = 49 + 35 = 84, F(3) = 9 + 15 = 24. Ayirma 84 − 24 = 60. Bu yerda 84 — quyi chegarani unutish, 108 — ayirish o'rniga qo'shish, 36 esa F(7 − 3) = F(4) ni hisoblash xatosi. Javob: 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boshlangich-funksiya-orqali",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#442bd77d"
+    },
+    {
+      "q": "Modul ostidagi funksiya berilgan: ∫₋₂² |x| dx aniq integralining qiymatini toping va nima uchun nol chiqmasligini tushuntiring.",
+      "v": [
+        "4",
+        "0",
+        "2",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "|x| juft funksiya, shuning uchun integral 2·∫₀² x dx ga teng. ∫₀² x dx = 4/2 = 2, demak natija 2·2 = 4. Bu yerda 0 — modulni e'tiborsiz qoldirib toq funksiya deb hisoblash, 2 — faqat o'ng yarim oraliqni olish, 8 esa x²/2 dagi ikkiga bo'lishni unutish. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolakli-va-modulli-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#a868a29a"
+    },
+    {
+      "q": "∫₀³ |x − 1| dx integralini hisoblang: modul ostidagi ifoda ishorasini o'zgartirgani uchun oraliq ikkiga bo'linadi.",
+      "v": [
+        "3/2",
+        "5/2",
+        "2",
+        "7/2"
+      ],
+      "t": 1,
+      "izoh": "x = 1 nuqtada modul ochilishi o'zgaradi. [0; 1] da |x − 1| = 1 − x va uning integrali 1 − 1/2 = 1/2. [1; 3] da |x − 1| = x − 1 va uning integrali (4,5 − 3) − (0,5 − 1) = 2. Yig'indi 1/2 + 2 = 5/2. Bu yerda 3/2 — modulni ochmay integrallash, 2 — birinchi bo'lakni tashlash, 7/2 esa birinchi bo'lakda modulni x + 1 deb ochish. Javob: 5/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolakli-va-modulli-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#5e95592e"
+    },
+    {
+      "q": "f(x) funksiya [0; 2] kesmada 3 ga, (2; 5] oraliqda esa x ga teng. Shu bo'lakli funksiya uchun ∫₀⁵ f(x) dx ni toping.",
+      "v": [
+        "10,5",
+        "12,5",
+        "16,5",
+        "18,5"
+      ],
+      "t": 2,
+      "izoh": "Integralni ikki bo'lakka ajratamiz. Birinchi bo'lak: 3·(2 − 0) = 6. Ikkinchi bo'lak: (25/2) − (4/2) = 12,5 − 2 = 10,5. Yig'indi 6 + 10,5 = 16,5. Bu yerda 10,5 — birinchi bo'lakni umuman qo'shmaslik, 12,5 — birinchi bo'lakni tashlab, ikkinchisida quyi chegara 4/2 = 2 ni ham ayirmaslik, 18,5 esa birinchi bo'lakni to'g'ri hisoblab (6), ikkinchisida quyi chegarani ayirishni unutish natijasi (6 + 12,5). Javob: 16,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolakli-va-modulli-integral",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#d15bc18f"
+    },
+    {
+      "q": "Berilgan f funksiya uchun ∫₀⁵ f(x) dx = 12 va ∫₅⁹ f(x) dx = 7 ekani ma'lum. ∫₀⁹ f(x) dx nechaga teng?",
+      "v": [
+        "5",
+        "19",
+        "84",
+        "−5"
+      ],
+      "t": 1,
+      "izoh": "Additivlik xossasiga ko'ra qo'shni kesmalardagi integrallar qo'shiladi: ∫₀⁹ = ∫₀⁵ + ∫₅⁹ = 12 + 7 = 19. Bu yerda 5 — qo'shish o'rniga ayirish, −5 — teskari tartibda ayirish, 84 esa qo'shish o'rniga ko'paytirish xatosi. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "additivlik-chegara-boluvchi",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#1277e307"
+    },
+    {
+      "q": "∫₂⁷ g(x) dx = 34 va ∫₂⁴ g(x) dx = 11 bo'lsa, qolgan [4; 7] kesmadagi ∫₄⁷ g(x) dx qiymatini toping.",
+      "v": [
+        "23",
+        "45",
+        "11",
+        "−23"
+      ],
+      "t": 0,
+      "izoh": "Additivlik bo'yicha ∫₂⁷ = ∫₂⁴ + ∫₄⁷, demak ∫₄⁷ = 34 − 11 = 23. Bu yerda 45 — ayirish o'rniga qo'shish, −23 — ayirmani teskari tartibda yozish, 11 esa berilgan bo'lakni javob deb olish. Javob: 23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "additivlik-chegara-boluvchi",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#812cb812"
+    },
+    {
+      "q": "Uch qo'shni kesma berilgan: ∫₁³ h(x) dx = 8, ∫₃⁶ h(x) dx = 5 va ∫₆¹⁰ h(x) dx = 9. ∫₁¹⁰ h(x) dx nimaga teng?",
+      "v": [
+        "13",
+        "14",
+        "22",
+        "17"
+      ],
+      "t": 2,
+      "izoh": "Additivlik xossasi ikkitadan ortiq bo'lakka ham qo'llanadi: 8 + 5 + 9 = 22. Bu yerda 17 — o'rtadagi bo'lakni tushirib qoldirish, 13 — oxirgi bo'lakni hisobga olmaslik, 14 esa birinchi bo'lakni tashlab ketish natijasi. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "additivlik-chegara-boluvchi",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#fe878369"
+    },
+    {
+      "q": "Havo namligi o'lchovi uchun ∫₋₁⁴ f(x) dx = 27 va ∫₋₁¹ f(x) dx = 6 topilgan. [1; 4] oraliqdagi integral qanday?",
+      "v": [
+        "6",
+        "33",
+        "−21",
+        "21"
+      ],
+      "t": 3,
+      "izoh": "Butun kesma ikki bo'lakka ajraladi: ∫₋₁⁴ = ∫₋₁¹ + ∫₁⁴. Demak ∫₁⁴ = 27 − 6 = 21. Bu yerda 33 — ayirish o'rniga qo'shish, −21 — ayirmani teskari yozish, 6 esa berilgan birinchi bo'lakni javob deb olish. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "additivlik-chegara-boluvchi",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#0db78c98"
+    },
+    {
+      "q": "Aniq integralning additivlik xossasiga ko'ra ∫₀¹ x² dx va ∫₁² x² dx integrallarining yig'indisi qanday qiymatga teng?",
+      "v": [
+        "8/3",
+        "1/3",
+        "7/3",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "Ikki qo'shni kesma birlashib [0; 2] ni beradi, ya'ni yig'indi ∫₀² x² dx ga teng. Uni hisoblaymiz: 8/3 − 0 = 8/3. Bu yerda 1/3 — faqat birinchi bo'lak, 7/3 — faqat ikkinchi bo'lak, 9 esa chegaralarni qo'shib ∫₀³ x² dx ni hisoblash xatosi. Javob: 8/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "additivlik-chegara-boluvchi",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#fcd93924"
+    },
+    {
+      "q": "∫₃⁸ f(x) dx = −14 bo'lsa, chegaralari o'rin almashtirilgan ∫₈³ f(x) dx integrali qanday qiymatga ega bo'ladi?",
+      "v": [
+        "−14",
+        "7",
+        "28",
+        "14"
+      ],
+      "t": 3,
+      "izoh": "Chegaralar o'rni almashtirilganda aniq integral ishorasini o'zgartiradi. Demak ∫₈³ f(x) dx = −(−14) = 14. Bu yerda −14 — xossani umuman qo'llamaslik, 28 — ikki integralni qo'shib yuborish, 7 esa oraliqni ikkiga bo'lish xatosi. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chegara-almashtirish-ishora",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#f36b2506"
+    },
+    {
+      "q": "∫₁⁶ p(x) dx = 9 va ∫₆¹ q(x) dx = −4 bo'lsa, ∫₁⁶ (p(x) + q(x)) dx integralining qiymatini toping.",
+      "v": [
+        "5",
+        "13",
+        "9",
+        "−13"
+      ],
+      "t": 1,
+      "izoh": "Avval ikkinchi integralni bir xil chegaraga keltiramiz: ∫₁⁶ q(x) dx = −(−4) = 4. So'ng chiziqlilik bo'yicha 9 + 4 = 13. Bu yerda 5 — chegarani almashtirmay 9 + (−4) ni olish, 9 — q ni tashlab ketish, −13 esa ishorani teskari qo'llash. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegara-almashtirish-ishora",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#a3bcd78f"
+    },
+    {
+      "q": "∫₇² f(x) dx = −15 ekani ma'lum. Shu ma'lumot asosida ∫₂⁷ 3f(x) dx integralining qiymati nechaga teng bo'ladi?",
+      "v": [
+        "−45",
+        "15",
+        "45",
+        "−15"
+      ],
+      "t": 2,
+      "izoh": "Chegaralarni to'g'rilaymiz: ∫₂⁷ f(x) dx = −(−15) = 15. So'ng o'zgarmas ko'paytuvchini chiqaramiz: 3·15 = 45. Bu yerda −45 — ishorani almashtirmaslik, 15 — koeffitsient 3 ni unutish, −15 esa hech qanday xossani qo'llamaslik. Javob: 45.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegara-almashtirish-ishora",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#b0c2ad61"
+    },
+    {
+      "q": "∫₀³ f(x) dx = 11 va ∫₃⁰ g(x) dx = −5 bo'lsa, ∫₀³ (f(x) − g(x)) dx ayirmasining qiymatini hisoblang.",
+      "v": [
+        "16",
+        "−6",
+        "11",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi integralning chegaralari teskari, uni to'g'rilaymiz: ∫₀³ g(x) dx = 5. Endi ayirma 11 − 5 = 6. Bu yerda 16 — chegarani almashtirmay 11 − (−5) ni olish, −6 — ishorani teskari qo'yish, 11 esa g ni umuman hisobga olmaslik. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegara-almashtirish-ishora",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#9c3d553d"
+    },
+    {
+      "q": "∫₁⁴ f(x) dx = 9 va ∫₁⁴ g(x) dx = 5 bo'lsa, ∫₁⁴ (3f(x) + 2g(x)) dx integrali nechaga teng bo'ladi?",
+      "v": [
+        "14",
+        "37",
+        "27",
+        "70"
+      ],
+      "t": 1,
+      "izoh": "Chiziqlilik xossasi bo'yicha koeffitsientlar integral tashqarisiga chiqadi: 3·9 + 2·5 = 27 + 10 = 37. Bu yerda 14 — koeffitsientlarni umuman qo'llamaslik, 27 — ikkinchi qo'shiluvchini tashlash, 70 esa koeffitsientlar yig'indisini integrallar yig'indisiga ko'paytirish. Javob: 37.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqlilik-koeffitsient",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#3df56e7b"
+    },
+    {
+      "q": "∫₀² f(x) dx = 6 ekani berilgan. Shunga ko'ra ∫₀² (5f(x) − 4) dx integralining qiymatini toping.",
+      "v": [
+        "22",
+        "26",
+        "30",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Integralni ikkiga ajratamiz: 5·∫₀² f(x) dx − ∫₀² 4 dx = 5·6 − 4·(2 − 0) = 30 − 8 = 22. Bu yerda 26 — o'zgarmasni oraliq uzunligiga ko'paytirmay 30 − 4 ni olish, 30 — o'zgarmas hadni butunlay tashlash, 2 esa 6 − 4 ni hisoblash. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqlilik-koeffitsient",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#ff5ba86a"
+    },
+    {
+      "q": "∫₁⁵ u(x) dx = 30 bo'lsa, funksiyani to'rtga bo'lgandagi ∫₁⁵ (u(x)/4) dx integralining qiymati qanday bo'ladi?",
+      "v": [
+        "26",
+        "120",
+        "7,5",
+        "34"
+      ],
+      "t": 2,
+      "izoh": "1/4 o'zgarmas ko'paytuvchi bo'lgani uchun uni integral tashqarisiga chiqaramiz: 30/4 = 7,5. Bu yerda 26 — bo'lish o'rniga ayirish, 120 — bo'lish o'rniga ko'paytirish, 34 esa qo'shish xatosi natijasi. Javob: 7,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqlilik-koeffitsient",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#d16cfbde"
+    },
+    {
+      "q": "Fizika laboratoriyasida ikki datchik uchun ∫₀⁶ a(t) dt = 13 va ∫₀⁶ b(t) dt = 7 topildi. ∫₀⁶ (2a(t) − 3b(t)) dt nechaga teng?",
+      "v": [
+        "−5",
+        "47",
+        "6",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Chiziqlilik bo'yicha 2·13 − 3·7 = 26 − 21 = 5. Bu yerda −5 — ayirmani teskari tartibda yozish, 47 — ayirish o'rniga qo'shish (26 + 21), 6 esa koeffitsientlarni tashlab 13 − 7 ni olish. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqlilik-koeffitsient",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#251315f3"
+    },
+    {
+      "q": "∫₂⁸ f(x) dx = 24 ekani ma'lum bo'lsa, ∫₂⁸ (f(x) + 7) dx integralining qiymati nechaga teng bo'ladi?",
+      "v": [
+        "31",
+        "42",
+        "24",
+        "66"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi integralga ajraladi: 24 + ∫₂⁸ 7 dx. Ikkinchi integral 7·(8 − 2) = 42 ga teng, demak natija 24 + 42 = 66. Bu yerda 31 — o'zgarmasni oraliq uzunligiga ko'paytirmay 24 + 7 ni olish, 42 — f qismini tushirish, 24 esa o'zgarmasni tashlash. Javob: 66.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqlilik-koeffitsient",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#578b6eae"
+    },
+    {
+      "q": "∫₋₄⁴ x³ dx aniq integralining qiymatini simmetrik oraliq va funksiya toqligi xossasidan foydalanib toping.",
+      "v": [
+        "0",
+        "64",
+        "128",
+        "−64"
+      ],
+      "t": 0,
+      "izoh": "x³ toq funksiya, simmetrik [−4; 4] oraliqda esa toq funksiyaning integrali nolga teng. Buni to'g'ridan-to'g'ri ham ko'rish mumkin: 256/4 − 256/4 = 0. Bu yerda 64 — faqat o'ng yarim oraliqni hisoblash, 128 — uni ikkilantirish, −64 esa chap yarim oraliq qiymati. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toq-juft-simmetrik",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#443a841f"
+    },
+    {
+      "q": "∫₋₃³ (x⁵ − 2x + 4) dx integralini hisoblang: toq hadlar yo'qoladi, lekin o'zgarmas had qoladi.",
+      "v": [
+        "0",
+        "24",
+        "12",
+        "48"
+      ],
+      "t": 1,
+      "izoh": "x⁵ va −2x toq funksiyalar, simmetrik oraliqda ularning integrali nol. Qolgan qism ∫₋₃³ 4 dx = 4·6 = 24. Bu yerda 0 — o'zgarmas hadni ham toq deb hisoblash, 12 — faqat [0; 3] oralig'ini olish, 48 esa allaqachon to'liq oraliq hisoblangan natijani yana ikkilantirish. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toq-juft-simmetrik",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#3d580ac9"
+    },
+    {
+      "q": "∫₋₂² (3x² + 5) dx integralini juft funksiya xossasidan foydalanib hisoblang va natijani ko'rsating.",
+      "v": [
+        "18",
+        "0",
+        "36",
+        "26"
+      ],
+      "t": 2,
+      "izoh": "Integral ostidagi funksiya juft, shuning uchun ∫₋₂² = 2·∫₀². ∫₀² (3x² + 5) dx = 8 + 10 = 18, demak natija 2·18 = 36. Bu yerda 18 — ikkilantirishni unutish, 0 — juft funksiyani toq deb hisoblash, 26 esa faqat 3x² qismini ikkilantirib o'zgarmasni ikkilantirmaslik. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toq-juft-simmetrik",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#786ef349"
+    },
+    {
+      "q": "Toq funksiya f uchun simmetrik oraliqdagi ∫₋₅⁵ f(x) dx aniq integrali haqidagi to'g'ri xulosani quyidagilardan tanlang.",
+      "v": [
+        "Har doim musbat bo'ladi",
+        "∫₀⁵ f(x) dx ga teng bo'ladi",
+        "Har doim nolga teng bo'ladi",
+        "2·∫₀⁵ f(x) dx ga teng bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Toq funksiyada f(−x) = −f(x) bo'lgani uchun chap yarim oraliqdagi integral o'ng yarimdagisiga qarama-qarshi ishorada bo'ladi va ular yo'qoladi. Ikkilantirish qoidasi esa juft funksiyalarga tegishli, toqlarga emas. Musbatlik haqidagi xulosa umuman asossiz. Javob: har doim nolga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toq-juft-simmetrik",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#08cf721a"
+    },
+    {
+      "q": "∫₆⁶ (x⁴ − 3x + 11) dx integralining qiymati qanday bo'ladi va bu natija nimadan kelib chiqadi?",
+      "v": [
+        "6",
+        "0",
+        "11",
+        "36"
+      ],
+      "t": 1,
+      "izoh": "Quyi va yuqori chegaralar ustma-ust tushganda F(6) − F(6) = 0 bo'ladi, funksiya ko'rinishidan qat'i nazar. Bu yerda 11 — funksiyaning ozod hadini javob deb olish, 6 — chegarani javob deb ko'chirish, 36 esa chegarani kvadratga ko'tarish xatosi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nol-chegara-va-taqqoslash",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#16028c65"
+    },
+    {
+      "q": "0 < x < 1 oraliqda x³ < x² tengsizlik o'rinli. Shunga asoslanib ikki integral orasidagi to'g'ri munosabatni ko'rsating.",
+      "v": [
+        "∫₀¹ x³ dx < ∫₀¹ x² dx",
+        "∫₀¹ x³ dx > ∫₀¹ x² dx",
+        "∫₀¹ x³ dx = ∫₀¹ x² dx",
+        "Bu integrallarni taqqoslab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Agar kesmada f(x) < g(x) bo'lsa, ularning shu kesmadagi aniq integrallari ham xuddi shu tartibda joylashadi. Tekshiramiz: ∫₀¹ x³ dx = 1/4, ∫₀¹ x² dx = 1/3, haqiqatan 1/4 < 1/3. Tenglik faqat funksiyalar ustma-ust tushganda bo'lar edi. Javob: birinchi munosabat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nol-chegara-va-taqqoslash",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#0ce20ec3"
+    },
+    {
+      "q": "∫₀ᵃ 2x dx = 25 tenglik o'rinli bo'ladigan musbat a parametrning qiymatini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "5",
+        "25",
+        "12,5",
+        "√5"
+      ],
+      "t": 0,
+      "izoh": "Avval integralni parametr orqali ifodalaymiz: ∫₀ᵃ 2x dx = a² − 0 = a². Shart bo'yicha a² = 25, musbat yechim a = 5. Bu yerda 25 — tenglikning o'ng tomonini javob deb ko'chirish, 12,5 — ikkiga bo'lish, √5 esa ildizni noto'g'ri joyga qo'llash. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-yuqori-chegara",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#dab31e9c"
+    },
+    {
+      "q": "∫₁ᵇ 3x² dx = 26 tenglikni qanoatlantiruvchi musbat b sonini toping; quyi chegaraning hissasini unutmang.",
+      "v": [
+        "27",
+        "3",
+        "∛26",
+        "26/3"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich funksiya x³, demak integral b³ − 1 ga teng. b³ − 1 = 26 dan b³ = 27, ya'ni b = 3. Bu yerda 27 — b³ ni javob deb olish, ∛26 — quyi chegaradagi birni qo'shishni unutish, 26/3 esa koeffitsientga bo'lish xatosi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-yuqori-chegara",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#cac970ad"
+    },
+    {
+      "q": "∫ₐ⁸ x dx = 14 tenglik bajariladigan musbat a ni toping; bu yerda noma'lum quyi chegarada turibdi.",
+      "v": [
+        "36",
+        "18",
+        "6",
+        "√14"
+      ],
+      "t": 2,
+      "izoh": "Integralni yozamiz: 64/2 − a²/2 = 32 − a²/2. Shart bo'yicha 32 − a²/2 = 14, demak a²/2 = 18 va a² = 36, musbat yechim a = 6. Bu yerda 36 — a² ni javob deb olish, 18 — a²/2 qiymatida to'xtab qolish, √14 esa o'ng tomondan darrov ildiz olish. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-yuqori-chegara",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#efb9ece5"
+    },
+    {
+      "q": "Dasturchi Jasur ∫₀ᵏ (2x + 5) dx = 36 tenglamadan musbat k ni topmoqchi. U qanday qiymatga kelishi kerak?",
+      "v": [
+        "−9",
+        "6",
+        "36",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Integral k² + 5k ga teng, demak k² + 5k = 36 yoki k² + 5k − 36 = 0. Ildizlari k = 4 va k = −9, musbat shartga ko'ra k = 4. Bu yerda −9 — manfiy ildizni tanlash, 36 — o'ng tomonni javob deb olish, 6 esa 36 dan darrov ildiz chiqarish. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-yuqori-chegara",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#27f9dccf"
+    },
+    {
+      "q": "∫₁ᵐ (1/x) dx = ln 7 tenglikdan musbat m parametrning qiymatini aniqlang va javobni son ko'rinishida yozing.",
+      "v": [
+        "e⁷",
+        "ln 7",
+        "6",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Integral ln m − ln 1 = ln m ga teng. Demak ln m = ln 7, logarifm funksiyasi qat'iy o'suvchi bo'lgani uchun m = 7. Bu yerda ln 7 — javobni logarifm ko'rinishida qoldirish, e⁷ — ortiqcha potensiyalash, 6 esa quyi chegara 1 ni ayirib yuborish. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-yuqori-chegara",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#4e8c5bfa"
+    },
+    {
+      "q": "∫₀⁴ kx dx = 64 tenglik o'rinli bo'lishi uchun k koeffitsient qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "8",
+        "16",
+        "4",
+        "64"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas koeffitsient integral tashqarisiga chiqadi: k·(16/2) = 8k. Shart bo'yicha 8k = 64, demak k = 8. Bu yerda 4 — boshlang'ich funksiyada x²/2 o'rniga x² ni olib, ikkiga bo'lishni unutish (16k = 64 dan k = 4), 16 — chegarani kvadratga ko'tarmay 64/4 ni olish, 64 esa o'ng tomonni ko'chirish. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-koeffitsient",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#8f5a5029"
+    },
+    {
+      "q": "∫₁³ (2x + c) dx = 14 shartini qanoatlantiradigan c o'zgarmasning qiymatini toping va uni belgilang.",
+      "v": [
+        "6",
+        "3",
+        "7",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "Integralni ikkiga ajratamiz: ∫₁³ 2x dx = 9 − 1 = 8 va ∫₁³ c dx = c·(3 − 1) = 2c. Demak 8 + 2c = 14, bundan 2c = 6 va c = 3. Bu yerda 6 — 2c qiymatida to'xtab qolish, 7 — birinchi qo'shiluvchini tashlab 14/2 ni olish, −3 esa ishorani teskari qo'yish. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-koeffitsient",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#c7593500"
+    },
+    {
+      "q": "∫₀^π a·sin x dx = 14 tenglikdan a koeffitsientni toping; avval sinusning aniq integralini hisoblab oling.",
+      "v": [
+        "14",
+        "28",
+        "7",
+        "14/π"
+      ],
+      "t": 2,
+      "izoh": "Avval ∫₀^π sin x dx = (−cos π) − (−cos 0) = 2 ni topamiz. Demak 2a = 14 va a = 7. Bu yerda 14 — integralni birga teng deb olish, 28 — bo'lish o'rniga ko'paytirish, 14/π esa oraliq uzunligini integral qiymati deb olish. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-koeffitsient",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#d95bbb9a"
+    },
+    {
+      "q": "Musbat m uchun ∫₀³ m·x² dx = 81 tenglik bajarilsa, m koeffitsientning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "27",
+        "3",
+        "81",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "Koeffitsientni tashqariga chiqaramiz: m·(27/3) = 9m. Shart bo'yicha 9m = 81, demak m = 9. Bu yerda 27 — 81 ni koeffitsient 3 ga bo'lish, 3 — 81 ni 27 ga bo'lib uchga bo'lishni qayta hisoblash, 81 esa o'ng tomonni javob deb olish. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-koeffitsient",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#ad7bbb89"
+    },
+    {
+      "q": "Iqtisodchi Gulnora chegaraviy xarajatni px ko'rinishida modellashtirdi. ∫₀⁴ px dx = 20 shartdan p ning qiymatini toping.",
+      "v": [
+        "5",
+        "1,25",
+        "20",
+        "2,5"
+      ],
+      "t": 3,
+      "izoh": "Integral p·(16/2) = 8p ga teng. Shart bo'yicha 8p = 20, demak p = 2,5. Bu yerda 5 — chegarani kvadratga ko'tarmay 20/4 ni olish, 1,25 — ikkiga bo'lishni unutib 20/16 ni hisoblash, 20 esa o'ng tomonni ko'chirish. Javob: 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-koeffitsient",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#85e2074d"
+    },
+    {
+      "q": "[0; 4] kesmada f(x) = 3x² funksiyaning o'rtacha qiymatini aniq integral yordamida hisoblang va javobni belgilang.",
+      "v": [
+        "16",
+        "32",
+        "48",
+        "64"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha qiymat formulasi: (1/(b − a))·∫ₐᵇ f(x) dx. Avval ∫₀⁴ 3x² dx = 64 ni topamiz, so'ng uni oraliq uzunligi 4 ga bo'lamiz: 64/4 = 16. Bu yerda 64 — integralni o'rtacha deb olish, 32 — oraliq uzunligini 2 deb olish, 48 esa f(4) qiymatini javob deb olish. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-qiymat",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#deaff8ae"
+    },
+    {
+      "q": "[1; 5] kesmada f(x) = 2x + 1 chiziqli funksiyaning o'rtacha qiymatini hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "28",
+        "7",
+        "5,6",
+        "11"
+      ],
+      "t": 1,
+      "izoh": "Avval integralni topamiz: ∫₁⁵ (2x + 1) dx = (25 + 5) − (1 + 1) = 28. Oraliq uzunligi 5 − 1 = 4, demak o'rtacha qiymat 28/4 = 7. Bu yerda 28 — integralni o'rtacha deb olish, 5,6 — uzunlikni 5 deb olish, 11 esa kesma oxiridagi f(5) qiymati. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ortacha-qiymat",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#e9599bc7"
+    },
+    {
+      "q": "Havo harorati olti kunlik kuzatuv davomida T(t) = 20 + 2t daraja qonuniyat bilan o'zgardi, bu yerda t — kun raqami va 0 ≤ t ≤ 6. O'rtacha harorat qancha?",
+      "v": [
+        "156 °C",
+        "32 °C",
+        "26 °C",
+        "20 °C"
+      ],
+      "t": 2,
+      "izoh": "Integralni hisoblaymiz: ∫₀⁶ (20 + 2t) dt = 120 + 36 = 156. Kuzatuv davri 6 kun, shuning uchun o'rtacha harorat 156/6 = 26 °C. Bu yerda 156 °C — integralni o'rtacha deb olish, 32 °C — oxirgi kundagi harorat, 20 °C esa boshlang'ich harorat. Javob: 26 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-qiymat",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#3c026d65"
+    },
+    {
+      "q": "Zanjirdagi kuchlanish U(t) = 6t + 4 formula bo'yicha [0; 5] soniya oralig'ida o'zgaradi. Shu davrdagi o'rtacha kuchlanishni toping.",
+      "v": [
+        "95 V",
+        "34 V",
+        "4 V",
+        "19 V"
+      ],
+      "t": 3,
+      "izoh": "Avval ∫₀⁵ (6t + 4) dt = 75 + 20 = 95 ni topamiz. Oraliq uzunligi 5 soniya, demak o'rtacha kuchlanish 95/5 = 19 V. Bu yerda 95 V — integralning o'zini javob deb olish, 34 V — oxirgi ondagi kuchlanish, 4 V esa boshlang'ich qiymat. Javob: 19 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortacha-qiymat",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#bbaa7c34"
+    },
+    {
+      "q": "O'quvchi ∫₋₁¹ x² dx ni toq funksiyaning integrali deb nolga teng dedi. Aslida bu integral qanchaga teng?",
+      "v": [
+        "2/3",
+        "0",
+        "1/3",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "x² juft funksiya, shuning uchun simmetrik oraliqda nol chiqmaydi. Boshlang'ich funksiya x³/3, demak 1/3 − (−1/3) = 2/3. Bu yerda 0 — o'quvchining aynan o'sha xatosi, 1/3 — faqat [0; 1] oralig'ini olish, 2 esa uchga bo'lishni unutish natijasi. Javob: 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "integral-baholash-xato-tahlil",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#26a75c56"
+    },
+    {
+      "q": "Talaba ∫₀^π sin x dx ni nolga teng dedi, chunki sin 0 va sin π nolga teng. Uning xatosi qayerda?",
+      "v": [
+        "Chegaralarni o'rin almashtirib yuborgan",
+        "Boshlang'ich funksiya sin x emas, −cos x ekanini hisobga olmagan",
+        "Integralni oraliq uzunligiga bo'lishni unutgan",
+        "sin π ning qiymatini noto'g'ri topgan"
+      ],
+      "t": 1,
+      "izoh": "Nyuton-Leybnits formulasida chegaralar integral ostidagi funksiyaga emas, boshlang'ich funksiyaga qo'yiladi. sin x ning boshlang'ich funksiyasi −cos x, demak natija (−cos π) − (−cos 0) = 2 bo'ladi. Talaba sin x ning o'ziga chegara qo'ygani uchun nol olgan. Javob: boshlang'ich funksiyani noto'g'ri qo'llagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "integral-baholash-xato-tahlil",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#7fbd3235"
+    },
+    {
+      "q": "[1; 4] kesmada funksiya qiymatlari 2 ≤ f(x) ≤ 5 chegaralarda yotadi. U holda ∫₁⁴ f(x) dx qaysi oraliqda bo'ladi?",
+      "v": [
+        "2 va 5 orasida",
+        "3 va 12 orasida",
+        "6 va 15 orasida",
+        "6 va 20 orasida"
+      ],
+      "t": 2,
+      "izoh": "Baholash xossasiga ko'ra integral eng kichik qiymat bilan oraliq uzunligi ko'paytmasidan kichik emas va eng katta qiymat bilan uzunlik ko'paytmasidan katta emas. Oraliq uzunligi 4 − 1 = 3, demak 2·3 = 6 va 5·3 = 15 chegaralar. Uzunlikni hisobga olmaslik 2 va 5 ni, yuqori chegarani 4 ga ko'paytirish esa 20 ni beradi. Javob: 6 va 15 orasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "integral-baholash-xato-tahlil",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#0ecd1a0c"
+    },
+    {
+      "q": "∫₀ˣ (2t + 1) dt = 12 integral tenglamani qanoatlantiruvchi musbat x ning qiymatini toping.",
+      "v": [
+        "3",
+        "−4",
+        "12",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Integral x² + x ga teng, demak x² + x = 12 yoki x² + x − 12 = 0. Bu kvadrat tenglamaning ildizlari x = 3 va x = −4, musbat shart bo'yicha x = 3. Bu yerda −4 — musbatlik shartini e'tiborsiz qoldirish, 12 — o'ng tomonni ko'chirish, 4 esa ildiz modulini noto'g'ri tanlash. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "integral-tenglama-yechish",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#475a48a8"
+    },
+    {
+      "q": "∫₃ˣ 2t dt = 40 tenglama berilgan. Uning musbat yechimini toping va quyi chegara hissasini hisobga oling.",
+      "v": [
+        "49",
+        "7",
+        "2√10",
+        "−7"
+      ],
+      "t": 1,
+      "izoh": "Integral x² − 9 ga teng, demak x² − 9 = 40 va x² = 49. Musbat yechim x = 7. Bu yerda 49 — x² qiymatida to'xtab qolish, 2√10 — quyi chegarani unutib x² = 40 deb olish, −7 esa manfiy ildizni tanlash. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "integral-tenglama-yechish",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#4e92f6a2"
+    },
+    {
+      "q": "∫₀ˣ eᵗ dt = 4 integral tenglamani yeching va noma'lumni natural logarifm orqali ifodalang.",
+      "v": [
+        "ln 4",
+        "e⁵",
+        "ln 5",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Boshlang'ich funksiya eᵗ, demak integral eˣ − e⁰ = eˣ − 1 ga teng. Shart bo'yicha eˣ − 1 = 4, bundan eˣ = 5 va x = ln 5. Bu yerda ln 4 — quyi chegaradagi birni qo'shmaslik, e⁵ — logarifm o'rniga ko'rsatkichli ifoda yozish, 5 esa eˣ = 5 dan darrov x = 5 deb xulosa qilish. Javob: ln 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "integral-tenglama-yechish",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#db1097d3"
+    },
+    {
+      "q": "Toshkentdan chiqqan avtomobilning tezligi v(t) = 60 + 4t km/soat qonuniyat bilan o'sadi. Birinchi 3 soatda u qancha yo'l bosib o'tadi?",
+      "v": [
+        "198 km",
+        "180 km",
+        "216 km",
+        "72 km"
+      ],
+      "t": 0,
+      "izoh": "Bosib o'tilgan yo'l tezlikning vaqt bo'yicha aniq integrali: ∫₀³ (60 + 4t) dt = 180 + 2·9 = 198 km. Bu yerda 180 km — tezlanish hissasini tashlab ketish, 72 km — uchinchi soat oxiridagi tezlikni yo'l deb olish, 216 km esa o'sha 72 ni 3 soatga ko'paytirish. Javob: 198 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-masofa",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#98bcc63d"
+    },
+    {
+      "q": "Sinov trekidagi drag-avtomobil startdan qo'zg'alib, v(t) = 3t² m/s qonun bo'yicha tezlashmoqda. Dastlabki 4 soniyada u qancha masofani bosib o'tadi?",
+      "v": [
+        "48 m",
+        "64 m",
+        "192 m",
+        "96 m"
+      ],
+      "t": 1,
+      "izoh": "Masofa tezlik integraliga teng: ∫₀⁴ 3t² dt = t³ chegaralarda, ya'ni 64 − 0 = 64 m. Bu yerda 48 m — to'rtinchi soniyadagi tezlikni masofa deb olish, 192 m — shu tezlikni 4 ga ko'paytirish, 96 m esa o'rtacha tezlikni 24 m/s deb hisoblash. Javob: 64 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-masofa",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#376bf4f4"
+    },
+    {
+      "q": "Velosipedchi Dilshod tormozlanmoqda va uning tezligi v(t) = 12 − t m/s qonuniyat bilan kamaymoqda. 6 soniyada qancha yo'l yuradi?",
+      "v": [
+        "72 m",
+        "36 m",
+        "54 m",
+        "90 m"
+      ],
+      "t": 2,
+      "izoh": "Yo'l ∫₀⁶ (12 − t) dt = 72 − 18 = 54 m ga teng. Bu yerda 72 m — sekinlashish hadini butunlay tashlash, 36 m — oxirgi ondagi 6 m/s tezlikni 6 soniyaga ko'paytirish, 90 m esa ayirish o'rniga qo'shish natijasi. Javob: 54 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlik-masofa",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#edc8eb4a"
+    },
+    {
+      "q": "Yuk lifti v(t) = 0,25t m/s tezlik bilan bir tekis tezlanib ko'tarilmoqda. 6 soniyada u qancha balandlikka ko'tariladi?",
+      "v": [
+        "9 m",
+        "1,5 m",
+        "2,25 m",
+        "4,5 m"
+      ],
+      "t": 3,
+      "izoh": "Balandlik ∫₀⁶ 0,25t dt = 0,25·(36/2) = 0,25·18 = 4,5 m ga teng. Bu yerda 9 m — ikkiga bo'lishni unutib 0,25·36 ni olish, 1,5 m — oltinchi soniyadagi tezlikni javob deb olish, 2,25 m esa t²/2 o'rniga t²/4 ni olish natijasi. Javob: 4,5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-masofa",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#4f327db3"
+    },
+    {
+      "q": "Aziza sprint marrasidan o'tgach sekinlasha boshladi: uning tezligi v(t) = 4 − 0,2t m/s. Sekinlashishning dastlabki 10 soniyasida u qancha masofani bosadi?",
+      "v": [
+        "40 m",
+        "20 m",
+        "50 m",
+        "30 m"
+      ],
+      "t": 3,
+      "izoh": "Masofa ∫₀¹⁰ (4 − 0,2t) dt = 40 − 0,1·100 = 40 − 10 = 30 m. Bu yerda 40 m — sekinlashish hadini tashlash, 20 m — oxirgi ondagi 2 m/s tezlikni 10 soniyaga ko'paytirish, 50 m esa ayirish o'rniga qo'shish. Javob: 30 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlik-masofa",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#82a9a7ab"
+    },
+    {
+      "q": "Tikuvchilik sexida ish unumi smena davomida u(t) = 12 + 2t dona/soat bo'yicha o'sadi. 8 soatlik smenada nechta buyum tikiladi?",
+      "v": [
+        "160 dona",
+        "96 dona",
+        "224 dona",
+        "28 dona"
+      ],
+      "t": 0,
+      "izoh": "Umumiy mahsulot unumning integraliga teng: ∫₀⁸ (12 + 2t) dt = 96 + 64 = 160 dona. Bu yerda 96 dona — unum o'sishini hisobga olmaslik, 28 dona — smena oxiridagi soatlik unumni javob deb olish, 224 dona esa o'sha 28 ni 8 soatga ko'paytirish. Javob: 160 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-unumi-ishlab-chiqarish",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#c6998d59"
+    },
+    {
+      "q": "Konditer sexida mahsulot chiqishi p(t) = 3t² + 5 kg/soat tezlik bilan boradi. Birinchi 4 soatda qancha mahsulot tayyorlanadi?",
+      "v": [
+        "64 kg",
+        "84 kg",
+        "53 kg",
+        "212 kg"
+      ],
+      "t": 1,
+      "izoh": "Mahsulot miqdori ∫₀⁴ (3t² + 5) dt = 64 + 20 = 84 kg. Bu yerda 64 kg — o'zgarmas hadni tashlab ketish, 53 kg — to'rtinchi soatdagi soatlik chiqishni javob deb olish, 212 kg esa o'sha 53 ni 4 soatga ko'paytirish. Javob: 84 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-unumi-ishlab-chiqarish",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#4cb6c445"
+    },
+    {
+      "q": "G'isht teruvchi brigada charchagani sari sekinlashadi: unum n(t) = 40 − 3t dona/soat. 6 soatda brigada nechta g'isht teradi?",
+      "v": [
+        "240 dona",
+        "132 dona",
+        "186 dona",
+        "294 dona"
+      ],
+      "t": 2,
+      "izoh": "Terilgan g'isht soni ∫₀⁶ (40 − 3t) dt = 240 − 1,5·36 = 240 − 54 = 186 dona. Bu yerda 240 dona — charchash hadini tashlash, 132 dona — oxirgi soatdagi 22 donalik unumni 6 ga ko'paytirish, 294 dona esa ayirish o'rniga qo'shish. Javob: 186 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-unumi-ishlab-chiqarish",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#454f87c8"
+    },
+    {
+      "q": "Paxta terimida terim tezligi kun davomida q(t) = 30 − 2t kg/soat bo'yicha pasayadi. 9 soatlik ish kunida terimchi qancha paxta teradi?",
+      "v": [
+        "270 kg",
+        "108 kg",
+        "351 kg",
+        "189 kg"
+      ],
+      "t": 3,
+      "izoh": "Terilgan paxta ∫₀⁹ (30 − 2t) dt = 270 − 81 = 189 kg. Bu yerda 270 kg — pasayishni hisobga olmaslik, 108 kg — kun oxiridagi 12 kg/soat tezlikni 9 soatga ko'paytirish, 351 kg esa ayirish o'rniga qo'shish natijasi. Javob: 189 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ish-unumi-ishlab-chiqarish",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#7e78b56f"
+    },
+    {
+      "q": "Bassejnga suv v(t) = 20 + 6t litr/daqiqa tezlik bilan quyilmoqda. Dastlabki 5 daqiqada bassejnga qancha suv tushadi?",
+      "v": [
+        "175 litr",
+        "100 litr",
+        "250 litr",
+        "50 litr"
+      ],
+      "t": 0,
+      "izoh": "Suv hajmi oqim tezligining integraliga teng: ∫₀⁵ (20 + 6t) dt = 100 + 75 = 175 litr. Bu yerda 100 litr — oqimning kuchayishini hisobga olmaslik, 50 litr — beshinchi daqiqadagi tezlikni javob deb olish, 250 litr esa o'sha 50 ni 5 daqiqaga ko'paytirish. Javob: 175 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "suv-oqim-hajm",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#1f18e832"
+    },
+    {
+      "q": "Idish tubidagi teshikdan suv q(t) = 12 − t litr/daqiqa tezlik bilan oqib chiqmoqda. 8 daqiqada qancha suv chiqib ketadi?",
+      "v": [
+        "96 litr",
+        "64 litr",
+        "32 litr",
+        "128 litr"
+      ],
+      "t": 1,
+      "izoh": "Chiqqan suv ∫₀⁸ (12 − t) dt = 96 − 32 = 64 litr. Bu yerda 96 litr — oqimning susayishini e'tiborsiz qoldirish, 32 litr — sakkizinchi daqiqadagi 4 litr/daqiqa tezlikni 8 ga ko'paytirish, 128 litr esa ayirish o'rniga qo'shish. Javob: 64 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "suv-oqim-hajm",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#86c865e9"
+    },
+    {
+      "q": "Ariqdan dalaga suv w(t) = 3t kub metr/soat tezlik bilan oqib o'tadi. 6 soat davomida dalaga qancha suv tushadi?",
+      "v": [
+        "108 m³",
+        "18 m³",
+        "54 m³",
+        "36 m³"
+      ],
+      "t": 2,
+      "izoh": "Suv hajmi ∫₀⁶ 3t dt = 3·(36/2) = 54 m³ ga teng. Bu yerda 108 m³ — ikkiga bo'lishni unutib 3·36 ni olish, 18 m³ — oltinchi soatdagi oqim tezligini javob deb olish, 36 m³ esa koeffitsientni qo'llamay faqat chegarani kvadratga ko'tarish. Javob: 54 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "suv-oqim-hajm",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#2a328e38"
+    },
+    {
+      "q": "Suv omboriga kirim tezligi r(t) = 50 − 4t kub metr/daqiqa qonuniyat bilan kamaymoqda. 10 daqiqada omborga qancha suv kiradi?",
+      "v": [
+        "500 m³",
+        "100 m³",
+        "700 m³",
+        "300 m³"
+      ],
+      "t": 3,
+      "izoh": "Kirgan suv ∫₀¹⁰ (50 − 4t) dt = 500 − 200 = 300 m³. Bu yerda 500 m³ — kamayishni tashlab ketish, 100 m³ — o'ninchi daqiqadagi 10 m³/daqiqa tezlikni 10 ga ko'paytirish, 700 m³ esa ayirish o'rniga qo'shish natijasi. Javob: 300 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "suv-oqim-hajm",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#509b524f"
+    },
+    {
+      "q": "Korxonaning chegaraviy xarajati C'(x) = 4x + 300 ming so'mni tashkil etadi. Ishlab chiqarish 10 donadan 20 donaga oshirilsa, umumiy xarajat qancha ortadi?",
+      "v": [
+        "3600 ming so'm",
+        "6800 ming so'm",
+        "4200 ming so'm",
+        "3000 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "Xarajat o'sishi chegaraviy xarajatning aniq integrali: F(x) = 2x² + 300x. F(20) = 800 + 6000 = 6800, F(10) = 200 + 3000 = 3200, ayirma 3600 ming so'm. Bu yerda 6800 — quyi chegarani unutish, 3000 — o'zgaruvchan hadni tashlash, 4200 esa 4x ni integrallashda ikkiga bo'lmaslik. Javob: 3600 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegaraviy-xarajat-daromad",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#6ad60060"
+    },
+    {
+      "q": "Do'kon uchun chegaraviy daromad R'(x) = 500 − 2x ming so'm. Sotuv hajmi 0 dan 50 donaga yetganda umumiy daromad qancha bo'ladi?",
+      "v": [
+        "25000 ming so'm",
+        "22500 ming so'm",
+        "20000 ming so'm",
+        "27500 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Daromad ∫₀⁵⁰ (500 − 2x) dx = 25000 − 2500 = 22500 ming so'm. Bu yerda 25000 — kamayish hadini tashlash, 20000 — ellikinchi donadagi 400 ming so'mlik chegaraviy daromadni 50 ga ko'paytirish, 27500 esa ayirish o'rniga qo'shish. Javob: 22500 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegaraviy-xarajat-daromad",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#e1d1813d"
+    },
+    {
+      "q": "Chegaraviy foyda P'(x) = 6x − 20 ming so'm formula bilan beriladi. Ishlab chiqarish 5 donadan 15 donaga oshsa, foyda qancha o'zgaradi?",
+      "v": [
+        "375 ming so'm",
+        "350 ming so'm",
+        "400 ming so'm",
+        "1000 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Boshlang'ich funksiya F(x) = 3x² − 20x. F(15) = 675 − 300 = 375, F(5) = 75 − 100 = −25. Ayirma 375 − (−25) = 400 ming so'm. Bu yerda 375 — quyi chegarani unutish, 350 — manfiy qiymatni ayirishda ishorani almashtirmaslik, 1000 esa 6x ni 6x² deb integrallash. Javob: 400 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegaraviy-xarajat-daromad",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#ea4c9e32"
+    },
+    {
+      "q": "Fermer xo'jaligida kunlik daromad o'sishi M'(t) = 8t + 40 ming so'm/kun. Uchinchi kundan to'qqizinchi kungacha jami daromad qancha to'planadi?",
+      "v": [
+        "684 ming so'm",
+        "288 ming so'm",
+        "240 ming so'm",
+        "528 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich funksiya F(t) = 4t² + 40t. F(9) = 324 + 360 = 684, F(3) = 36 + 120 = 156. Ayirma 684 − 156 = 528 ming so'm. Bu yerda 684 — quyi chegarani hisobga olmaslik, 240 — faqat o'zgarmas hadni integrallash, 288 esa faqat o'zgaruvchan hadni olish. Javob: 528 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegaraviy-xarajat-daromad",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#53511b70"
+    },
+    {
+      "q": "Elektr qurilmasining quvvati P(t) = 2t + 3 kilovatt bo'lib, t soatlarda o'lchanadi. 5 soatda qancha energiya sarflanadi?",
+      "v": [
+        "40 kVt·soat",
+        "25 kVt·soat",
+        "65 kVt·soat",
+        "13 kVt·soat"
+      ],
+      "t": 0,
+      "izoh": "Sarflangan energiya quvvatning vaqt bo'yicha integrali: ∫₀⁵ (2t + 3) dt = 25 + 15 = 40 kVt·soat. Bu yerda 25 — o'zgarmas hadni tashlash, 13 — beshinchi soatdagi quvvatni javob deb olish, 65 esa o'sha 13 ni 5 soatga ko'paytirish. Javob: 40 kVt·soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvvat-energiya",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#504281a9"
+    },
+    {
+      "q": "Quyosh panelining quvvati kun davomida P(t) = 6t − t² kilovatt qonuniyat bilan o'zgaradi. 6 soatda qancha energiya ishlab chiqariladi?",
+      "v": [
+        "108 kVt·soat",
+        "36 kVt·soat",
+        "72 kVt·soat",
+        "0 kVt·soat"
+      ],
+      "t": 1,
+      "izoh": "Energiya ∫₀⁶ (6t − t²) dt = 3·36 − 216/3 = 108 − 72 = 36 kVt·soat. Bu yerda 108 — ikkinchi hadni tashlab ketish, 72 — faqat ikkinchi hadni olish, 0 esa oltinchi soatdagi quvvat nolga tengligiga qarab xulosa chiqarish. Javob: 36 kVt·soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvvat-energiya",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#ef8025ab"
+    },
+    {
+      "q": "Nasos filtri asta-sekin tiqilib borgani sababli undan o'tayotgan oqim va quvvat P(t) = 15 − t kilovatt bo'yicha pasayadi. 10 soatlik ish davomida qancha energiya sarflanadi?",
+      "v": [
+        "150 kVt·soat",
+        "50 kVt·soat",
+        "100 kVt·soat",
+        "200 kVt·soat"
+      ],
+      "t": 2,
+      "izoh": "Sarflangan energiya ∫₀¹⁰ (15 − t) dt = 150 − 50 = 100 kVt·soat. Bu yerda 150 — pasayishni hisobga olmaslik, 50 — o'ninchi soatdagi 5 kVt quvvatni 10 soatga ko'paytirish, 200 esa ayirish o'rniga qo'shish natijasi. Javob: 100 kVt·soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvvat-energiya",
+      "id": "matematika_anlz_m13-aniq-integral-va-nyuton-leybnits#c21e8114"
+    }
+  ]
+}

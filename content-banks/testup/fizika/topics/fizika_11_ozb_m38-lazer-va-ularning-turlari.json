@@ -1,0 +1,531 @@
+{
+  "nom": "38-mavzu. Lazer Va Ularning Turlari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Lazer nima?",
+      "v": [
+        "Juda aniq yo'naltirilgan kogerent yorug'lik nurining manbayi",
+        "Oddiy lampochka",
+        "Ultrabinafsha nur manbayi",
+        "Magnit maydon manbayi"
+      ],
+      "t": 0,
+      "izoh": "Lazer — juda aniq yo'naltirilgan kogerent yorug'lik nuri manbayi bo'lgan optik kvant generatori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#d63e047c"
+    },
+    {
+      "q": "\"Lazer\" so'zi inglizcha qanday so'zlarning qisqartmasi?",
+      "v": [
+        "Majburiy tebranish natijasida yorug'likning kuchaytirilishi",
+        "Yorug'likning to'liq qaytishi",
+        "Nurning yutilishi",
+        "Kvant holatlarning o'zgarishi"
+      ],
+      "t": 0,
+      "izoh": "LASER — \"Light Amplification by Stimulated Emission of Radiation\" so'zlarining bosh harflaridan olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#aeb6fe30"
+    },
+    {
+      "q": "Birinchi kvant generatorlarini kimlar yaratgan?",
+      "v": [
+        "N. Basov, A. Proxorov va Ch. Tauns",
+        "N. Bor va A. Eynshteyn",
+        "D. Rezerford va J. Tomson",
+        "I. Balmer va M. Plank"
+      ],
+      "t": 0,
+      "izoh": "Birinchi kvant generatorlari rus fiziklari N. Basov, A. Proxorov va amerikalik fizik Ch. Tauns tomonidan yaratilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#b1c4efb5"
+    },
+    {
+      "q": "Kvant generatorlarini yaratgan olimlar qachon Nobel mukofotini olgan?",
+      "v": [
+        "1964-yilda",
+        "1954-yilda",
+        "1974-yilda",
+        "1944-yilda"
+      ],
+      "t": 0,
+      "izoh": "Basov, Proxorov va Tauns ushbu sohadagi ishlari uchun 1964-yilda Nobel mukofotiga sazovor bo'lganlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#09a3aaa7"
+    },
+    {
+      "q": "Spontan nurlanish nima?",
+      "v": [
+        "Uyg'ongan atomning o'z-o'zidan asosiy holatga o'tib, foton chiqarishi",
+        "Tashqi foton ta'sirida hosil bo'luvchi nurlanish",
+        "Atomning nurlanishsiz o'tishi",
+        "Yadroning yemirilishi"
+      ],
+      "t": 0,
+      "izoh": "Atom uyg'ongan holatdan o'z-o'zidan asosiy holatga o'tib foton chiqarishi spontan nurlanish deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#ce6037a7"
+    },
+    {
+      "q": "Spontan nurlanishda chiqarilgan nurlar qanday bo'ladi?",
+      "v": [
+        "Kogerent bo'lmaydi",
+        "Doimo kogerent",
+        "Bir fazali",
+        "Monoxromatik"
+      ],
+      "t": 0,
+      "izoh": "Spontan nurlanishda chiqarilgan nurlar kogerent bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#82084ceb"
+    },
+    {
+      "q": "Majburiy o'tish qanday hosil bo'ladi?",
+      "v": [
+        "Uyg'ongan atom yonidan o'tayotgan foton ta'sirida",
+        "Atomning o'z-o'zidan sovishi natijasida",
+        "Yadroning parchalanishi natijasida",
+        "Elektronning yo'qolishi natijasida"
+      ],
+      "t": 0,
+      "izoh": "Eynshteyn ta'kidlashicha, o'tishlar foton ta'sirida majburiy ham bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#9cb5b54b"
+    },
+    {
+      "q": "Majburiy nurlanishda chiqarilgan foton uni vujudga keltirgan fotondan nima bilan farq qiladi?",
+      "v": [
+        "Hech narsa bilan — chastota, yo'nalish, faza va qutblanishi bir xil",
+        "Faqat chastotasi bilan",
+        "Faqat yo'nalishi bilan",
+        "Energiyasi kattaroq bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Majburiy nurlanishda chiqarilgan foton dastlabki foton bilan bir xil chastota, yo'nalish, faza va qutblanishga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#83f35971"
+    },
+    {
+      "q": "Majburiy nurlanish yordamida yorug'likni kuchaytirish usulini kim taklif qilgan?",
+      "v": [
+        "Rus fizigi V. Fabrikant",
+        "N. Bor",
+        "A. Eynshteyn",
+        "D. Rezerford"
+      ],
+      "t": 0,
+      "izoh": "Rus fizigi V. Fabrikant majburiy nurlanish yordamida yorug'likni kuchaytirish usulini taklif qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#0ab610dc"
+    },
+    {
+      "q": "Metastabil holat nima?",
+      "v": [
+        "Atomning uzoq vaqt tura oladigan uyg'ongan holati",
+        "Atomning asosiy holati",
+        "Yadroning barqaror holati",
+        "Elektronning erkin holati"
+      ],
+      "t": 0,
+      "izoh": "Ayrim moddalarning atomlarida shunday uyg'ongan holatlar mavjudki, atomlar bu holatlarda uzoq vaqt bo'lishi mumkin — bular metastabil holatlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#39405640"
+    },
+    {
+      "q": "Yoqut kristali qanday moddadan iborat?",
+      "v": [
+        "Aluminiy oksid Al₂O₃ dan, ba'zi Al atomlari o'rnida Cr³⁺ ionlari bor",
+        "Kremniy oksid SiO₂ dan",
+        "Sof ugleroddan",
+        "Kaliy xlorid KCl dan"
+      ],
+      "t": 0,
+      "izoh": "Yoqut kristali aluminiy oksid Al₂O₃ dan iborat bo'lib, ba'zi Al atomlari o'rnini uch valentli Cr³⁺ ionlari egallagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#62bfeb10"
+    },
+    {
+      "q": "Yoqut lazerida xrom atomlari qanday holatga majburiy o'tkaziladi?",
+      "v": [
+        "1 asosiy holatdan 3 uyg'ongan holatga",
+        "3 holatdan 1 holatga",
+        "2 holatdan 3 holatga",
+        "1 holatdan 2 holatga to'g'ridan-to'g'ri"
+      ],
+      "t": 0,
+      "izoh": "Kuchli yoritilish natijasida xrom atomlari 1 asosiy holatdan 3 uyg'ongan holatga majburiy o'tkaziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#12324811"
+    },
+    {
+      "q": "Xrom atomining uyg'ongan (3) holatda yashash davri qancha?",
+      "v": [
+        "10⁻⁷ s",
+        "10⁻³ s",
+        "1 s",
+        "10 s"
+      ],
+      "t": 0,
+      "izoh": "Xrom atomining uyg'ongan holatda yashash davri juda kichik — 10⁻⁷ s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#53b40a2d"
+    },
+    {
+      "q": "Xrom atomi 3 holatdan 2 metastabil holatga qanday o'tadi?",
+      "v": [
+        "Nurlanishsiz o'tish bilan, ortiqcha energiya kristal panjarasiga beriladi",
+        "Foton chiqarib",
+        "Foton yutib",
+        "Elektron chiqarib"
+      ],
+      "t": 0,
+      "izoh": "Atom 3 holatdan nurlanishsiz 2 holatga o'tadi, energiyaning ortiqcha qismi yoqut kristalining panjarasiga beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#9616ab8b"
+    },
+    {
+      "q": "Yoqut lazerida lazer nuri qaysi o'tishda hosil bo'ladi?",
+      "v": [
+        "2 metastabil holatdan 1 asosiy holatga majburiy o'tishda",
+        "3 holatdan 1 holatga spontan o'tishda",
+        "1 holatdan 3 holatga o'tishda",
+        "Yadroning yemirilishida"
+      ],
+      "t": 0,
+      "izoh": "2 holatdan 1 holatga majburiy o'tishlar zanjirsiy rivojlanib, kogerent lazer nurini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#8c460880"
+    },
+    {
+      "q": "Yoqut lazerining chiqish nuri to'lqin uzunligi qancha?",
+      "v": [
+        "0,6943 mkm",
+        "0,5 mkm",
+        "1,06 mkm",
+        "10,6 mkm"
+      ],
+      "t": 0,
+      "izoh": "Yoqut lazerida hosil bo'ladigan nurning to'lqin uzunligi λ = 0,6943 mkm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#654c9573"
+    },
+    {
+      "q": "Yoqut lazerida kogerent nurlanish qanday hosil bo'ladi?",
+      "v": [
+        "Fotonlar zanjirsiy (ko'chkisimon) ko'payib, bir xil faza, yo'nalish va qutblanishga ega bo'ladi",
+        "Fotonlar tasodifiy yo'nalishda sochiladi",
+        "Atomlar qaynaydi",
+        "Kristal eriydi"
+      ],
+      "t": 0,
+      "izoh": "Majburiy o'tishlar ko'chkisimon rivojlanib, fotonlar soni keskin ortadi; ularning faza, yo'nalish va qutblanishi bir xil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#0b864d7b"
+    },
+    {
+      "q": "Yoqut lazerida xrom atomlarini metastabil holatga o'tkazish uchun nima ishlatiladi?",
+      "v": [
+        "Gazli lampa (yoritish)",
+        "Magnit maydon",
+        "Elektr toki",
+        "Ultratovush"
+      ],
+      "t": 0,
+      "izoh": "Yoqut tayoqcha xrom atomlarining metastabil holatga o'tishini ta'minlovchi gazli lampa bilan o'ralgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#b6e8ceb0"
+    },
+    {
+      "q": "Yoqut lazeriga sovitish sistemasi nima uchun ulangan?",
+      "v": [
+        "Yoqutning temperaturasini zarur qiymatda saqlash uchun",
+        "Nurni kuchaytirish uchun",
+        "Fotonlarni sovutish uchun",
+        "Kristalni eritish uchun"
+      ],
+      "t": 0,
+      "izoh": "Yoqutning temperaturasi zarur qiymatda saqlanishi uchun sovitish sistemasi ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#fd571f42"
+    },
+    {
+      "q": "Lazerlar qanday turlarga bo'linadi?",
+      "v": [
+        "Qattiq, yarimo'tkazgichli, gaz, kimyoviy, tolali, rentgen lazerlari",
+        "Faqat qattiq va suyuq lazerlar",
+        "Faqat gaz lazerlari",
+        "Issiq va sovuq lazerlar"
+      ],
+      "t": 0,
+      "izoh": "Lazerlar faollashtiruvchi moddalar turiga ko'ra qattiq, yarimo'tkazgichli, gaz, kimyoviy, tolali, rentgen lazerlariga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#686ae2c7"
+    },
+    {
+      "q": "Lazerlar qanday rejimlarda ishlashi mumkin?",
+      "v": [
+        "Impuls, uzluksiz va kvaziuzluksiz rejimlarda",
+        "Faqat uzluksiz rejimda",
+        "Faqat impuls rejimda",
+        "Faqat bir martalik rejimda"
+      ],
+      "t": 0,
+      "izoh": "Lazerlar impuls, uzluksiz va kvaziuzluksiz rejimlarda ishlashi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#56e4dfba"
+    },
+    {
+      "q": "Lazer nurining kogerentligi nimani anglatadi?",
+      "v": [
+        "Fotonlarning fazalari bir xil",
+        "Fotonlarning energiyasi katta",
+        "Nurning rangi qizil",
+        "Nur tez tarqaladi"
+      ],
+      "t": 0,
+      "izoh": "Lazer nuri yuqori darajada kogerent — fotonlarning fazalari bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#00178b40"
+    },
+    {
+      "q": "Lazer nurining monoxromatikligi qanday ifodalanadi?",
+      "v": [
+        "Dastadagi fotonlar to'lqin uzunliklarining farqi 10⁻¹¹ m dan oshmaydi",
+        "Barcha to'lqin uzunliklarni o'z ichiga oladi",
+        "Faqat ko'rinmaydigan nurdan iborat",
+        "To'lqin uzunligi doimiy o'zgarib turadi"
+      ],
+      "t": 0,
+      "izoh": "Lazer qat'iy monoxromatik: dastaga kiruvchi fotonlarning to'lqin uzunliklari farqi Δλ < 10⁻¹¹ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#ea7f1e28"
+    },
+    {
+      "q": "Lazer nurida nurlanish quvvati qanchaga yetishi mumkin?",
+      "v": [
+        "10¹⁶–10²⁰ Vt/m²",
+        "10⁷ Vt/m²",
+        "100 Vt/m²",
+        "10³ Vt/m²"
+      ],
+      "t": 0,
+      "izoh": "Lazer nurida nurlanish quvvati 10¹⁶–10²⁰ Vt/m² gacha bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#d8cc9fc9"
+    },
+    {
+      "q": "Quyoshning to'la nurlanish spektri bo'yicha nurlanish quvvati qancha?",
+      "v": [
+        "7·10⁷ Vt/m²",
+        "10²⁰ Vt/m²",
+        "10¹⁶ Vt/m²",
+        "10³ Vt/m²"
+      ],
+      "t": 0,
+      "izoh": "Quyoshning nurlanish quvvati 7·10⁷ Vt/m² ni tashkil qiladi — lazer quvvatidan ancha kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#6fe072c1"
+    },
+    {
+      "q": "Yerdan Oyga yo'naltirilgan lazer Oy sirtida qancha diametrli joyni yoritadi?",
+      "v": [
+        "3 km",
+        "40 000 km",
+        "300 km",
+        "30 m"
+      ],
+      "t": 0,
+      "izoh": "Lazer nuri Oy sirtida atigi 3 km diametrli joyni yoritadi — yoyilish burchagi juda kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#216c7b5a"
+    },
+    {
+      "q": "Odatdagi proyektor nuri Oyda qanday diametrli maydonni yoritardi?",
+      "v": [
+        "40 000 km",
+        "3 km",
+        "100 km",
+        "10 km"
+      ],
+      "t": 0,
+      "izoh": "Odatdagi proyektor nuri 40 000 km diametrli maydonni yoritgan bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#3eb28331"
+    },
+    {
+      "q": "Olmosda kichkina teshikcha ochish lazer yordamida qancha vaqtda amalga oshiriladi?",
+      "v": [
+        "6–8 minut",
+        "24 soat",
+        "2 soat",
+        "1 hafta"
+      ],
+      "t": 0,
+      "izoh": "Ilgari olmosdan teshik ochishga 24 soat sarflangan bo'lsa, lazer bilan bu ish 6–8 minutda bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#ce853784"
+    },
+    {
+      "q": "Soatsozlik sanoatida lazer yordamida qanday teshiklar hosil qilinadi?",
+      "v": [
+        "Diametri 1–10 mkm, chuqurligi 10–100 mkm bo'lgan nozik teshikchalar",
+        "Katta teshiklar",
+        "Faqat kvadrat teshiklar",
+        "Diametri 1 sm li teshiklar"
+      ],
+      "t": 0,
+      "izoh": "Soatsozlikda yoqut va olmos toshlarda diametri 1–10 mkm, chuqurligi 10–100 mkm li teshiklar lazer bilan ochiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#de0a40f0"
+    },
+    {
+      "q": "Lazer tibbiyotda qanday vazifani bajaradi?",
+      "v": [
+        "Qon chiqarmaydigan pichoq vazifasini",
+        "Rentgen nuri vazifasini",
+        "Dori tayyorlash vazifasini",
+        "Mikroskop vazifasini"
+      ],
+      "t": 0,
+      "izoh": "Lazer tibbiyotda qon chiqarmaydigan pichoq vazifasini bajarib, ko'rish qobiliyatini tiklashga xizmat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#6b02a77f"
+    },
+    {
+      "q": "Lazer yordamida Yerdan Oygacha bo'lgan masofani aniqlash mumkinmi?",
+      "v": [
+        "Ha, lazer nuri bu masofani aniqlashtirishga yordam berdi",
+        "Yo'q, mumkin emas",
+        "Faqat taxminiy",
+        "Faqat tunda"
+      ],
+      "t": 0,
+      "izoh": "Lazer nuri Yerdan Oygacha bo'lgan masofani aniqlashtirishga va Oy xaritasiga aniqlik kiritishga yordam berdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#3217193f"
+    },
+    {
+      "q": "Lazerning istiqbolli qo'llanilish sohalaridan biri qaysi?",
+      "v": [
+        "Yuqori temperaturali plazma hosil qilish (termoyadro sintezini boshqarish)",
+        "Suv tozalash",
+        "Ovqat pishirish",
+        "Qog'oz ishlab chiqarish"
+      ],
+      "t": 0,
+      "izoh": "Yuqori temperaturali plazma hosil qilish termoyadro sintezini lazer bilan boshqarish yo'lida imkoniyatlar ochadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#bd2f4380"
+    },
+    {
+      "q": "Majburiy nurlanish hodisasini kim nazariy asoslagan?",
+      "v": [
+        "A. Eynshteyn",
+        "N. Bor",
+        "V. Fabrikant",
+        "Ch. Tauns"
+      ],
+      "t": 0,
+      "izoh": "Eynshteyn o'tishlar nafaqat o'z-o'zidan, balki majburiy ham bo'lishi mumkinligini ta'kidlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#19fbbaa9"
+    },
+    {
+      "q": "Yoqut lazerida 2 holatda atomlarning to'planishiga nima sabab bo'ladi?",
+      "v": [
+        "2 dan 1 holatga o'tish tanlov qoidalari bo'yicha man qilingan",
+        "Atomlarning erkinligi",
+        "Kristalning qattiqliği",
+        "Yadroning kattaligi"
+      ],
+      "t": 0,
+      "izoh": "2 holatdan 1 holatga o'tish tanlov qoidalariga muvofiq man qilinganligi xrom atomlarining 2 holatda to'planishiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#4629fd6a"
+    },
+    {
+      "q": "Lazer nurining yoyilish burchagi qanday?",
+      "v": [
+        "Juda kichik",
+        "Juda katta",
+        "90°",
+        "180°"
+      ],
+      "t": 0,
+      "izoh": "Lazer nurining yoyilish burchagi juda kichik — shuning uchun Oyda atigi 3 km li maydonni yoritadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m38-lazer-va-ularning-turlari#9808b4c3"
+    }
+  ]
+}

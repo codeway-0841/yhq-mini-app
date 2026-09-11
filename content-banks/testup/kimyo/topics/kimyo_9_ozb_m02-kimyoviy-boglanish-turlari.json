@@ -1,0 +1,576 @@
+{
+  "nom": "02-mavzu. Kimyoviy bog'lanishning turlari: kovalent (qutbsiz va qutbli), ionli, metall bog'lanishlar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kimyoviy bog' nima?",
+      "v": [
+        "Ikki yoki undan ortiq atomlarning o'zaro ta'sirlashuvi bo'lib, bunda kimyoviy barqaror sistemalar vujudga keladi",
+        "Atomlarning bir-biridan uzoqlashish jarayoni",
+        "Elektronlarning yadro atrofida harakati",
+        "Moddalarning fizik aralashishi"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy bog' — ikki yoki undan ortiq atomlarning o'zaro ta'sirlashuvi bo'lib, bunda kimyoviy barqaror ikki yoki ko'p atomli sistemalar (molekula yoki kristall) vujudga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#304c186a"
+    },
+    {
+      "q": "Bog' yo'nalganligi nimani belgilaydi?",
+      "v": [
+        "Molekulaning fazoviy strukturasini, shaklini",
+        "Bog'ning energiyasini",
+        "Atomlar orasidagi masofani",
+        "Elektron juftlar sonini"
+      ],
+      "t": 0,
+      "izoh": "Bog' yo'nalganligi molekulaning fazoviy strukturasini, shaklini belgilaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#f76d9211"
+    },
+    {
+      "q": "Bog' qutbliligi nima bilan belgilanadi?",
+      "v": [
+        "Bog' o'qi atrofida umumiy elektron juftining taqsimlanishi asimmetriyasi bilan",
+        "Atom yadrolari orasidagi masofa bilan",
+        "Elektron juftlar soni bilan",
+        "Bog'ni uzish energiyasi bilan"
+      ],
+      "t": 0,
+      "izoh": "Bog' qutbliligi bog' o'qi atrofida umumiy elektron juftining taqsimlanishi asimmetriyasi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#62594051"
+    },
+    {
+      "q": "Bog' karraligi nima bilan aniqlanadi?",
+      "v": [
+        "Atomlarni bog'lab turuvchi elektron juftlar soni bilan",
+        "Atom radiuslari farqi bilan",
+        "Elektrmanfiylik farqi bilan",
+        "Molekula massasi bilan"
+      ],
+      "t": 0,
+      "izoh": "Bog' karraligi atomlarni bog'lab turuvchi elektron juftlar soni bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#22a6c20e"
+    },
+    {
+      "q": "Bog' uzunligi nima va qanday birlikda o'lchanadi?",
+      "v": [
+        "Atom yadrolari orasidagi masofaning muvozanat holati, nm larda",
+        "Bog'ni uzish ishi, kJ/mol larda",
+        "Elektron juftlar soni, donada",
+        "Molekula hajmi, ml larda"
+      ],
+      "t": 0,
+      "izoh": "Bog' uzunligi — atom yadrolari orasidagi masofaning muvozanat holati bo'lib, nm larda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#6e0a1734"
+    },
+    {
+      "q": "Bog' energiyasi nima va qanday birlikda o'lchanadi?",
+      "v": [
+        "Bog'ni uzish uchun bajariladigan ish, kJ/mol larda",
+        "Atom yadrolari orasidagi masofa, nm larda",
+        "Elektron birikish energiyasi, eV/atom da",
+        "Molekulaning erish issiqligi, J da"
+      ],
+      "t": 0,
+      "izoh": "Bog' energiyasi — bog'ni uzish uchun bajariladigan ishga teng bo'lib, kJ/mol larda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#6c80b854"
+    },
+    {
+      "q": "Kimyoviy bog'lar hosil bo'lishi qanday jarayon hisoblanadi?",
+      "v": [
+        "Ekzotermik jarayon, energiya ajralib chiqishi bilan boradi",
+        "Endotermik jarayon, energiya yutilishi bilan boradi",
+        "Neytral jarayon, energiya o'zgarishisiz boradi",
+        "Fizik jarayon, energiya bilan bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy bog'lar hosil bo'lishi ekzotermik jarayon bo'lib, energiya ajralib chiqishi bilan boradi; bog' uzilishi esa endotermik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#03a36bb5"
+    },
+    {
+      "q": "Kimyoviy bog'lanishning asosiy tiplari qaysilar?",
+      "v": [
+        "Kovalent, ion, metall, vodorod bog'lari",
+        "Qutbli, qutbsiz, ionli, kompleks bog'lar",
+        "Oddiy, qo'sh, uch karrali bog'lar",
+        "Sigma, pi, delta bog'lar"
+      ],
+      "t": 0,
+      "izoh": "Kovalent, ion, metall, vodorod bog'lari kimyoviy bog'lanishning asosiy tiplari hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#1d8024fc"
+    },
+    {
+      "q": "Kovalent bog'lanish nima?",
+      "v": [
+        "Atomlarning umumiy elektron juftlar yordamida bog'lanishi",
+        "Ionlar orasidagi bog'lanish",
+        "Elektron gazi orqali bog'lanish",
+        "Proton orqali bog'lanish"
+      ],
+      "t": 0,
+      "izoh": "Atomlarning umumiy elektron juftlar yordamida bog'lanishi kovalent bog'lanish deb nomlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#328e8c85"
+    },
+    {
+      "q": "Elektrmanfiylik nima?",
+      "v": [
+        "Kimyoviy element atomining umumiy elektron juftlarni o'ziga tortish xususiyati",
+        "Atomning elektron berish xususiyati",
+        "Atomning ionga aylanish energiyasi",
+        "Elementning metallik xususiyati"
+      ],
+      "t": 0,
+      "izoh": "Elektrmanfiylik — element atomining kimyoviy bog'lanishda ishtirok etayotgan umumiy elektron juftlarni o'ziga tortish xususiyati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#3276dc12"
+    },
+    {
+      "q": "Qutbsiz kovalent bog' qanday atomlar orasida hosil bo'ladi?",
+      "v": [
+        "Elektrmanfiylik qiymati bir xil bo'lgan atomlar orasida",
+        "Elektrmanfiyliklari keskin farq qiluvchi atomlar orasida",
+        "Metall va metallmas atomlari orasida",
+        "Ionlar orasida"
+      ],
+      "t": 0,
+      "izoh": "Elektrmanfiylik qiymati bir xil bo'lgan atomlar orasidagi kovalent bog' qutbsiz kovalent bog' deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#a0fcdf62"
+    },
+    {
+      "q": "Qutbli kovalent bog'da umumiy elektron jufti qanday joylashadi?",
+      "v": [
+        "Yadrolardan biri tomonga siljigan holda",
+        "Yadrolar orasida simmetrik",
+        "Metall ioni atrofida",
+        "Butun kristall bo'ylab umumiy"
+      ],
+      "t": 0,
+      "izoh": "Qutbli kovalent bog'da umumiy elektron jufti yadrolardan biri tomonga siljigan holda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#cae3e1eb"
+    },
+    {
+      "q": "Quyidagi moddalarning qaysi birida qutbsiz kovalent bog' mavjud?",
+      "v": [
+        "Cl2",
+        "H2O",
+        "NH3",
+        "HF"
+      ],
+      "t": 0,
+      "izoh": "Oddiy moddalar (H2, F2, Cl2, O2, N2) qutbsiz kovalent bog'ga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#f8067e58"
+    },
+    {
+      "q": "Quyidagi moddalarning qaysi birida qutbli kovalent bog' mavjud?",
+      "v": [
+        "NH3",
+        "O2",
+        "N2",
+        "F2"
+      ],
+      "t": 0,
+      "izoh": "Ko'pchilik murakkab moddalar (H2O, NH3, HF, SO2, C2H5OH) qutbli kovalent bog'ga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#37a5825e"
+    },
+    {
+      "q": "Natriy xlorda yondirilganda qanday ionlar hosil bo'ladi?",
+      "v": [
+        "Na+ kationi va Cl- anioni",
+        "Na- anioni va Cl+ kationi",
+        "Na2+ kationi va Cl2- anioni",
+        "Ionlar hosil bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Natriyning 3s-elektroni xlorning 3p-elektroni bilan juftlashib, umumiy elektron jufti xlor tomonga to'la siljiydi va Na+, Cl- ionlari hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#13d8d5e4"
+    },
+    {
+      "q": "Ionlar nima?",
+      "v": [
+        "Atomlar elektron biriktirishi yoki yo'qotishidan hosil bo'lgan zarralar",
+        "Atom yadrolarining parchalari",
+        "Elektroneytral atomlar to'plami",
+        "Molekulalarning tarkibiy qismlari"
+      ],
+      "t": 0,
+      "izoh": "Atomlar elektron biriktirishi yoki yo'qotishidan hosil bo'lgan zarralar ionlar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#b94b4e7f"
+    },
+    {
+      "q": "Ion bog' bilan kovalent bog' orasidagi farq nima?",
+      "v": [
+        "Ion bog' yo'naluvchanlikka ega emas, ion bog'ni qutbli kovalent bog'ning yuqori holati deb qabul qilish mumkin",
+        "Ion bog' har doim yo'naluvchan, kovalent bog' yo'naluvchan emas",
+        "Ion bog' faqat suyuqlikda hosil bo'ladi",
+        "Ular orasida hech qanday farq yo'q"
+      ],
+      "t": 0,
+      "izoh": "Ion bog' va kovalent bog' orasida keskin chegara yo'q; lekin kovalent bog'dan farqli ravishda ion bog' yo'naluvchanlikka ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#4df0e2fc"
+    },
+    {
+      "q": "Elektronlar berish jarayoni nima deb yuritiladi?",
+      "v": [
+        "Oksidlanish",
+        "Qaytarilish",
+        "Dissotsiatsiyalanish",
+        "Gidroliz"
+      ],
+      "t": 0,
+      "izoh": "Elektronlar berish jarayoni oksidlanish, qabul qilish jarayoni qaytarilish deb yuritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#b2325baa"
+    },
+    {
+      "q": "Elektronlar qabul qilish jarayoni nima deb yuritiladi?",
+      "v": [
+        "Qaytarilish",
+        "Oksidlanish",
+        "Ionlanish",
+        "Gidratalanish"
+      ],
+      "t": 0,
+      "izoh": "Elektronlar qabul qilish jarayoni qaytarilish deb yuritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#b31c0621"
+    },
+    {
+      "q": "Na va Cl ta'sirlashuvida natriy atomi qanday o'zgaradi?",
+      "v": [
+        "Elektron berib oksidlanadi va Na+ kationini hosil qiladi",
+        "Elektron qabul qilib Na- anionini hosil qiladi",
+        "O'zgarmaydi",
+        "Ikki elektron qabul qiladi"
+      ],
+      "t": 0,
+      "izoh": "Na - e → Na+: natriy atomi elektron berib oksidlanadi va natriy kationi hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#2fd72a97"
+    },
+    {
+      "q": "Tipik ion birikmalarni qaysi guruh elementlari hosil qiladi?",
+      "v": [
+        "I va II guruh bosh guruhcha metallari VII guruh bosh guruhchasi metallmaslari bilan",
+        "VII va VIII guruh elementlari",
+        "III va IV guruh elementlari",
+        "Inert gazlar va metallar"
+      ],
+      "t": 0,
+      "izoh": "I va II guruh bosh guruhcha metallari VII guruh bosh guruhchasi metallmaslari bilan tipik ion birikmalar hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#0c6b6142"
+    },
+    {
+      "q": "Ion bog'lanishli birikmalar odatdagi sharoitda qanday holatda bo'ladi?",
+      "v": [
+        "Qattiq moddalar",
+        "Suyuq moddalar",
+        "Gazsimon moddalar",
+        "Plazma holatida"
+      ],
+      "t": 0,
+      "izoh": "Ion bog'lanishli birikmalar odatdagi sharoitda qattiq moddalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#dd18b126"
+    },
+    {
+      "q": "Vodorod bog'lanish nima?",
+      "v": [
+        "Elektromanfiy (metallmas) atomlarning vodorod atomlari orqali, aniqrog'i proton orqali bog'lanishi",
+        "Vodorod molekulasidagi atomlar bog'lanishi",
+        "Metallarning vodorod bilan bog'lanishi",
+        "Ionlar orasidagi vodorod almashinuvi"
+      ],
+      "t": 0,
+      "izoh": "Elektromanfiy atomlarning vodorod atomlari orqali (proton orqali) bog'lanishi vodorod bog'lanish deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#25b289da"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri vodorod bog'iga ega?",
+      "v": [
+        "Suv",
+        "Metan",
+        "Natriy xlorid",
+        "Kislorod"
+      ],
+      "t": 0,
+      "izoh": "Suv, suyuq ammiak, suyuq vodorod ftorid va ko'plab organik birikmalar vodorod bog'iga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#4d8e5808"
+    },
+    {
+      "q": "Metall kristallari strukturasida elektronlar qanday bo'ladi?",
+      "v": [
+        "Elektronlar atomlardan oson uzilib, elektron gazi va musbat zaryadli metall ionlari hosil bo'ladi, elektronlar butun kristall bo'yicha umumiy",
+        "Elektronlar har bir atonga qat'iy bog'langan bo'ladi",
+        "Elektronlar umuman harakatlanmaydi",
+        "Elektronlar faqat tashqi yuzada joylashadi"
+      ],
+      "t": 0,
+      "izoh": "Metall kristallarida elektronlar atomlardan oson uzilib, elektron gazi va musbat ionlar hosil bo'ladi; elektronlar butun kristall bo'yicha umumiy hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#cd0eddff"
+    },
+    {
+      "q": "Valentlik nima?",
+      "v": [
+        "Ma'lum element atomining qat'iy belgilangan sondagi boshqa element atomlari bilan birika olish imkoniyati",
+        "Atomning elektron berish qobiliyati",
+        "Elementning oksidlanish darajasi",
+        "Atomning ionlanish energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Valentlik — ma'lum element atomining qat'iy belgilangan sondagi boshqa element atomlari bilan birika olish imkoniyati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#f77bcb47"
+    },
+    {
+      "q": "Valentlik tushunchasi qaysi birikmalarga nisbatan qo'llash maqsadga muvofiq?",
+      "v": [
+        "Faqat kovalent bog'li birikmalarga nisbatan",
+        "Faqat ion birikmalarga nisbatan",
+        "Barcha moddalarga nisbatan",
+        "Faqat metallarga nisbatan"
+      ],
+      "t": 0,
+      "izoh": "Valentlik tushunchasini faqat kovalent bog'li birikmalarga nisbatan qo'llash maqsadga muvofiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#4ad833d4"
+    },
+    {
+      "q": "Valentlik qanday qiymatlarga ega bo'lishi mumkin emas?",
+      "v": [
+        "Nol, manfiy yoki musbat qiymatlarga ega bo'lmaydi",
+        "Valentlik kasr son qiymatga ham ega bo'lishi mumkin",
+        "Faqat manfiy qiymatlarga ega bo'ladi",
+        "Har qanday qiymatga ega bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Valentlik nol, manfiy yoki musbat qiymatlarga ega bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#d193be5e"
+    },
+    {
+      "q": "Oksidlanish darajasi nima?",
+      "v": [
+        "Atom ionga aylangan holda molekuladagi atomda hosil bo'luvchi shartli zaryad",
+        "Atomning haqiqiy zaryadi",
+        "Atom yadrosining zaryadi",
+        "Molekulaning umumiy zaryadi"
+      ],
+      "t": 0,
+      "izoh": "Oksidlanish darajasi — atom ionga aylangan holda molekuladagi atomda hosil bo'luvchi shartli zaryad.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#b04b2e86"
+    },
+    {
+      "q": "Vodorodning metall gidridlardagi oksidlanish darajasi qancha?",
+      "v": [
+        "-1",
+        "+1",
+        "0",
+        "+2"
+      ],
+      "t": 0,
+      "izoh": "Vodorod metall gidridlarida -1, qolgan barcha birikmalarida +1 oksidlanish darajasiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#e2a9c09b"
+    },
+    {
+      "q": "Kislorodning peroksidlardagi (E-O-O-E) oksidlanish darajasi qancha?",
+      "v": [
+        "-1",
+        "-2",
+        "+2",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Kislorod peroksidlarda -1, ko'pchilik birikmalarda -2, ftorli birikmalarda +2 oksidlanish darajasiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#e5c2b0a2"
+    },
+    {
+      "q": "Ftorni birikmalaridagi oksidlanish darajasi qancha?",
+      "v": [
+        "-1",
+        "+1",
+        "-2",
+        "o'zgaruvchan"
+      ],
+      "t": 0,
+      "izoh": "Ftor barcha birikmalarida -1 oksidlanish darajasiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#f39f4b0e"
+    },
+    {
+      "q": "Ishqoriy metallarning birikmalaridagi oksidlanish darajasi qancha?",
+      "v": [
+        "+1",
+        "+2",
+        "-1",
+        "o'zgaruvchan"
+      ],
+      "t": 0,
+      "izoh": "Ishqoriy metallar barcha birikmalarida +1 oksidlanish darajasiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#9bdface3"
+    },
+    {
+      "q": "II guruh bosh guruhcha elementlarining birikmalaridagi oksidlanish darajasi qancha?",
+      "v": [
+        "+2",
+        "+1",
+        "+3",
+        "o'zgaruvchan"
+      ],
+      "t": 0,
+      "izoh": "II guruh bosh guruhcha elementlari barcha birikmalarida +2 oksidlanish darajasiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#5cf8fe4c"
+    },
+    {
+      "q": "Elementning eng yuqori oksidlanish darajasi nimaga teng?",
+      "v": [
+        "Davriy sistemada joylashgan guruh raqamiga",
+        "Davr raqamiga",
+        "Tartib raqamiga",
+        "Atom massasiga"
+      ],
+      "t": 0,
+      "izoh": "Elementning eng yuqori oksidlanish darajasi uning davriy sistemada joylashgan guruh raqamiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#13adfc07"
+    },
+    {
+      "q": "Metallmaslarning vodorod bilan birikmalarida oksidlanish darajalari qanday oraliqda o'zgaradi?",
+      "v": [
+        "-4 dan (IV guruh) -1 gacha (VII guruh)",
+        "+1 dan +7 gacha",
+        "-1 dan -7 gacha",
+        "0 dan -4 gacha"
+      ],
+      "t": 0,
+      "izoh": "Metallmaslarning vodorod bilan birikmalarida oksidlanish darajalari -4 dan (IV guruh elementlari) -1 gacha (VII guruh elementlari) o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#aef5827f"
+    },
+    {
+      "q": "Oddiy moddalardagi atomlarning oksidlanish darajasi qancha?",
+      "v": [
+        "0",
+        "+1",
+        "-1",
+        "Guruh raqamiga teng"
+      ],
+      "t": 0,
+      "izoh": "Oddiy moddalardagi atomlar nol (0) oksidlanish darajasiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#4b9ef9fc"
+    },
+    {
+      "q": "Bir birikmadagi barcha elementlar oksidlanish darajalarining algebraik yig'indisi qanchaga teng?",
+      "v": [
+        "Nolga",
+        "Molekuladagi atomlar soniga",
+        "Guruh raqamiga",
+        "Birga"
+      ],
+      "t": 0,
+      "izoh": "Bir birikmadagi barcha elementlar oksidlanish darajalarining algebraik yig'indisi nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m02-kimyoviy-boglanish-turlari#d4bcfb6e"
+    }
+  ]
+}

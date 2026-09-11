@@ -1,0 +1,456 @@
+{
+  "nom": "50-mavzu. Linzalar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Linza deb qanday jismga aytiladi?",
+      "v": [
+        "Bir yoki ikki tomoni sferik sirtdir bilan chegaralangan shaffof jismga",
+        "Ichki sirti ko'zgulangan metall jismga",
+        "Ikki tomoni tekis yassi shaffof plastinaga",
+        "Sirti g'adir-budur shaffof jismga"
+      ],
+      "t": 0,
+      "izoh": "Bir yoki ikki tomoni sferik sirtdir bilan chegaralangan shaffof jism linza deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#93f50e20"
+    },
+    {
+      "q": "Qavariq linza qanday linzadir?",
+      "v": [
+        "O'rta qismi chetki qismlariga nisbatan qalin bo'lgan linza",
+        "O'rta qismi chetki qismlariga nisbatan yupqa bo'lgan linza",
+        "Ikkala sirti ham tekis bo'lgan linza",
+        "Faqat bir sirti sferik bo'lgan linza"
+      ],
+      "t": 0,
+      "izoh": "O'rta qismi chetki qismlariga nisbatan qalin bo'lsa — qavariq linza deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#db70bbbd"
+    },
+    {
+      "q": "Botiq linza qanday linzadir?",
+      "v": [
+        "O'rta qismi chetki qismlariga nisbatan yupqa bo'lgan linza",
+        "O'rta qismi chetki qismlariga nisbatan qalin bo'lgan linza",
+        "Faqat tashqi sirti qavariq linza",
+        "Sirtlari parallel bo'lgan linza"
+      ],
+      "t": 0,
+      "izoh": "O'rta qismi chetki qismlariga nisbatan yupqa bo'lsa — botiq linza deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#3fdada8f"
+    },
+    {
+      "q": "Har xil linzalarning nechtadan turi mavjud?",
+      "v": [
+        "Har ikkala xil linzaning uchtadan turi",
+        "Ikkitadan turi",
+        "To'rttadan turi",
+        "Beshtadan turi"
+      ],
+      "t": 0,
+      "izoh": "Qavariq va botiq linzalarning har birining uchtadan turi mavjud (74-rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#d651c867"
+    },
+    {
+      "q": "Linzaning bosh optik o'qi deb nimaga aytiladi?",
+      "v": [
+        "Linza sirtlarini hosil qiluvchi sferalarning O₁ va O₂ markazlaridan o'tkazilgan to'g'ri chiziqqa",
+        "Linzaning o'rta qismidan o'tuvchi gorizontal chiziqqa",
+        "Fokus nuqtasidan o'tuvchi ixtiyoriy chiziqqa",
+        "Linzaning qirrasidan o'tuvchi chiziqqa"
+      ],
+      "t": 0,
+      "izoh": "Sferalarning O₁ va O₂ markazlaridan o'tkazilgan O₁O₂ to'g'ri chiziq linzaning bosh optik o'qi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#a7f56fef"
+    },
+    {
+      "q": "Linzaning markazi deb qaysi nuqtaga aytiladi?",
+      "v": [
+        "Linzaning o'rtasidagi O nuqtaga",
+        "Linzaning fokus nuqtasiga",
+        "Sferalarning markazlariga",
+        "Linza qirrasidagi nuqtaga"
+      ],
+      "t": 0,
+      "izoh": "Linzaning o'rtasidagi O nuqta linzaning markazi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#dbf4c54b"
+    },
+    {
+      "q": "R₁ va R₂ nimalarni bildiradi?",
+      "v": [
+        "Linzaning egrilik radiuslarini",
+        "Linzaning fokus masofalarini",
+        "Linzaning diametrini",
+        "Linzaning qalinligini"
+      ],
+      "t": 0,
+      "izoh": "R₁ va R₂ — linzaning egrilik radiuslari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#ebde3e05"
+    },
+    {
+      "q": "Qavariq linzaga bosh optik o'qqa parallel nurlar yo'naltirilsa, linzadan o'tgan nurlar nima qiladi?",
+      "v": [
+        "Bosh optik o'q ustidagi bitta nuqtada yig'iladi",
+        "Bir tekis sochilib ketadi",
+        "O'z yo'nalishini o'zgartirmaydi",
+        "To'liq qaytib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Qavariq linzaga o'qqa parallel yo'nalgan nurlar linzadan o'tgach bosh optik o'q ustidagi bir nuqtada yig'iladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#1c4bf10e"
+    },
+    {
+      "q": "Qavariq linzaning bosh fokusi deb nimaga aytiladi?",
+      "v": [
+        "Parallel nurlar linzadan o'tgach yig'iladigan bosh optik o'qdagi F nuqtaga",
+        "Linzaning markaziga",
+        "Linza sirtining eng qavariq nuqtasiga",
+        "Nurlar sochiladigan nuqtaga"
+      ],
+      "t": 0,
+      "izoh": "O'qqa parallel nurlar linzadan o'tgach yig'iladigan F nuqta linzaning bosh fokusi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#12306593"
+    },
+    {
+      "q": "Qavariq linza yana qanday ataladi?",
+      "v": [
+        "Yig'uvchi linza",
+        "Sochuvchi linza",
+        "Botiq linza",
+        "Yassi linza"
+      ],
+      "t": 0,
+      "izoh": "Qavariq linza nurlarni bitta nuqtaga yig'ish xususiyatiga ega bo'lgani uchun yig'uvchi linza deb ham ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#7bf1d812"
+    },
+    {
+      "q": "Botiq linza yana qanday ataladi?",
+      "v": [
+        "Sochuvchi linza",
+        "Yig'uvchi linza",
+        "Qavariq linza",
+        "Sferik linza"
+      ],
+      "t": 0,
+      "izoh": "Botiq linzadan o'tgan nur bir tekis sochilgani uchun u sochuvchi linza deb ham ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#4d4f1ca9"
+    },
+    {
+      "q": "Botiq linzaning mavhum fokusi deb nimaga aytiladi?",
+      "v": [
+        "Sochilgan nurlarning teskari tomonga davomi bosh optik o'qda kesishadigan F nuqtaga",
+        "Nurlar haqiqatda yig'iladigan nuqtaga",
+        "Linzaning markaziga",
+        "Linza sirtidagi nuqtaga"
+      ],
+      "t": 0,
+      "izoh": "Sochuvchi linzadan o'tgan nurlar teskari tomonga davom ettirilsa, bosh optik o'qning bitta nuqtasida kesishadi — bu F nuqta botiq linzaning mavhum fokusi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#fd4fc4e4"
+    },
+    {
+      "q": "Linza nechta fokusga ega va ular qayerda joylashgan?",
+      "v": [
+        "Ikkita fokusga ega, ular linzaning ikki tomonida markazidan bir xil masofada yotadi",
+        "Bitta fokusga ega, u linza markazida yotadi",
+        "To'rtta fokusga ega",
+        "Fokusga ega emas"
+      ],
+      "t": 0,
+      "izoh": "Linzalar ikkita fokusga ega bo'lib, ular linzaning ikki tomonida markazidan bir xil masofada yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#b435bee6"
+    },
+    {
+      "q": "Linzaning fokus masofasi deb nimaga aytiladi va qanday belgilanadi?",
+      "v": [
+        "Linza markazidan fokusigacha bo'lgan masofaga, F harfi bilan",
+        "Linza qirrasidan fokusgacha bo'lgan masofaga, D harfi bilan",
+        "Ikki fokus orasidagi masofaga, d harfi bilan",
+        "Linza qalinligiga, h harfi bilan"
+      ],
+      "t": 0,
+      "izoh": "Linza markazidan fokusigacha bo'lgan masofa linzaning fokus masofasi deyiladi va F harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#3f903f65"
+    },
+    {
+      "q": "Linzaning optik kuchi deb nimaga aytiladi?",
+      "v": [
+        "Fokus masofasiga teskari kattalikka, D = 1/F",
+        "Fokus masofasining kvadratiga, D = F²",
+        "Fokus masofasining o'ziga, D = F",
+        "Linza radiusiga teskari kattalikka"
+      ],
+      "t": 0,
+      "izoh": "Fokus masofasiga teskari kattalik linzaning optik kuchi deyiladi va D harfi bilan belgilanadi: D = 1/F.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#98d3f267"
+    },
+    {
+      "q": "Optik kuchning asosiy birligi nima?",
+      "v": [
+        "Dioptriya (1 dptr)",
+        "Metr (m)",
+        "Vatt (Vt)",
+        "Sekund (s)"
+      ],
+      "t": 0,
+      "izoh": "Optik kuchning asosiy birligi qilib dioptriya (1 dptr) qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#d63227a5"
+    },
+    {
+      "q": "1 dioptriya qanday aniqlanadi?",
+      "v": [
+        "Fokus masofasi 1 m bo'lgan linzaning optik kuchi; 1 dptr = 1/m",
+        "Fokus masofasi 1 sm bo'lgan linzaning optik kuchi",
+        "Optik kuchi 1 N bo'lgan linza",
+        "Fokus masofasi 1 mm bo'lgan linzaning optik kuchi"
+      ],
+      "t": 0,
+      "izoh": "Fokus masofasi 1 m bo'lgan linzaning optik kuchi 1 dptr ga teng: 1 dptr = 1/m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m50-linzalar#419e0611"
+    },
+    {
+      "q": "Fokus masofasi 0,5 m bo'lgan yig'uvchi linzaning optik kuchi qancha?",
+      "v": [
+        "2 dptr",
+        "0,5 dptr",
+        "4 dptr",
+        "1 dptr"
+      ],
+      "t": 0,
+      "izoh": "D = 1/F = 1/0,5 = 2 dptr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m50-linzalar#393d96d6"
+    },
+    {
+      "q": "Yig'uvchi linzada optik kuch va fokus masofasining ishorasi qanday?",
+      "v": [
+        "Ikkalasi ham musbat",
+        "Ikkalasi ham manfiy",
+        "Optik kuch musbat, fokus masofa manfiy",
+        "Optik kuch manfiy, fokus masofa musbat"
+      ],
+      "t": 0,
+      "izoh": "Yig'uvchi linzada optik kuch va fokus masofa musbat, sochuvchi linzada esa ikkisi ham manfiy bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m50-linzalar#307c9bb9"
+    },
+    {
+      "q": "Sochuvchi linzada optik kuch va fokus masofasining ishorasi qanday?",
+      "v": [
+        "Ikkisi ham manfiy",
+        "Ikkalasi ham musbat",
+        "Optik kuch musbat, fokus manfiy",
+        "Fokus musbat, optik kuch manfiy"
+      ],
+      "t": 0,
+      "izoh": "Sochuvchi linzada optik kuch va fokus masofa ikkisi ham manfiy bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#feeddb3e"
+    },
+    {
+      "q": "Linzaning fokus masofasini topish formulasi qanday?",
+      "v": [
+        "F = 1 / [(n − 1)·(1/R₁ + 1/R₂)]",
+        "F = (n − 1)·(R₁ + R₂)",
+        "F = 1/(n·R₁)",
+        "F = n/(R₁ + R₂)"
+      ],
+      "t": 0,
+      "izoh": "Egrilik radiuslari R₁ va R₂ hamda sindirish ko'rsatkichi n bo'lgan linzaning fokus masofasi F = 1/[(n−1)(1/R₁ + 1/R₂)] formula orqali topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m50-linzalar#5169968a"
+    },
+    {
+      "q": "Fokus masofasi formulasida nur linzaga qayerdan tushadi deb olinadi?",
+      "v": [
+        "Havodan, havoning sindirish ko'rsatkichi 1 ga teng deb olinadi",
+        "Vakuumdan, sindirish ko'rsatkichi 0 ga teng deb",
+        "Suvdan, sindirish ko'rsatkichi 1,33 ga teng deb",
+        "Shishadan, sindirish ko'rsatkichi 1,5 ga teng deb"
+      ],
+      "t": 0,
+      "izoh": "Formulada nur havodan linzaga tushadi va havoning nur sindirish ko'rsatkichi 1 ga teng deb olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#61b0db1c"
+    },
+    {
+      "q": "Optik kuchi 4 dptr bo'lgan linzaning fokus masofasi qancha?",
+      "v": [
+        "0,25 m",
+        "4 m",
+        "0,5 m",
+        "2 m"
+      ],
+      "t": 0,
+      "izoh": "F = 1/D = 1/4 = 0,25 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m50-linzalar#cfa62a35"
+    },
+    {
+      "q": "Qavariq linza sirtini qanday tasavvur qilish mumkin?",
+      "v": [
+        "R₁ va R₂ radiusli sferalarning o'zaro kesishishidan hosil bo'lgan sirt deb",
+        "Ikki tekis plastinaning kesishmasi deb",
+        "Konus sirtining bir qismi deb",
+        "Silindr sirtining bir qismi deb"
+      ],
+      "t": 0,
+      "izoh": "Qavariq linza sirtini R₁ va R₂ radiusli sferalarning o'zaro kesishishidan hosil bo'lgan sirt deb qarash mumkin (75-rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#5addf503"
+    },
+    {
+      "q": "Ikkita linzadan qaysi birining optik kuchi kattaroq?",
+      "v": [
+        "Fokus masofasi kichik bo'lgan linzaniki",
+        "Fokus masofasi katta bo'lgan linzaniki",
+        "Qalinroq bo'lgan linzaniki har qanday holda",
+        "Diametri katta bo'lgan linzaniki"
+      ],
+      "t": 0,
+      "izoh": "D = 1/F bo'lgani uchun fokus masofasi qancha kichik bo'lsa, optik kuch shuncha katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m50-linzalar#aae71860"
+    },
+    {
+      "q": "Botiq linzadan o'tgan parallel nurlar qanday tarqaladi?",
+      "v": [
+        "Bir tekis sochiladi",
+        "Bitta nuqtaga yig'iladi",
+        "Parallel qoladi",
+        "To'liq qaytadi"
+      ],
+      "t": 0,
+      "izoh": "Botiq linzadan o'tgan nur bir tekis sochiladi (76-b rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#8a47470c"
+    },
+    {
+      "q": "Nima uchun sochuvchi linzaning fokusi «mavhum» deb ataladi?",
+      "v": [
+        "Chunki nurlar bu nuqtada haqiqatda yig'ilmaydi, faqat ularning davomlari kesishadi",
+        "Chunki bu fokusni formulada hisoblab bo'lmaydi",
+        "Chunki u linza ichida joylashgan",
+        "Chunki u faqat tunda ko'rinadi"
+      ],
+      "t": 0,
+      "izoh": "Sochilgan nurlarning o'zi emas, ularning teskari davomi F nuqtada kesishadi, shuning uchun fokus mavhum deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m50-linzalar#abf643d7"
+    },
+    {
+      "q": "Optik kuchi −2 dptr bo'lgan linza qanday linza?",
+      "v": [
+        "Sochuvchi (botiq) linza",
+        "Yig'uvchi (qavariq) linza",
+        "Yassi parallel plastina",
+        "Prizma"
+      ],
+      "t": 0,
+      "izoh": "Sochuvchi linzada optik kuch manfiy bo'ladi, demak −2 dptr sochuvchi linzaga tegishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m50-linzalar#81cd2662"
+    },
+    {
+      "q": "Optik kuchi −2 dptr bo'lgan linzaning fokus masofasi qancha?",
+      "v": [
+        "−0,5 m",
+        "−2 m",
+        "0,5 m",
+        "−0,25 m"
+      ],
+      "t": 0,
+      "izoh": "F = 1/D = 1/(−2) = −0,5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m50-linzalar#725c3699"
+    },
+    {
+      "q": "Linza qanday materialdan tayyorlanadi?",
+      "v": [
+        "Shaffof materialdan (shisha va boshqalar)",
+        "Metallardan",
+        "Yog'ochdan",
+        "Qora shaffof bo'lmagan plastmassadan"
+      ],
+      "t": 0,
+      "izoh": "Linza — sferik sirtdir bilan chegaralangan shaffof jism, demak u shaffof materialdan tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m50-linzalar#824d582b"
+    }
+  ]
+}

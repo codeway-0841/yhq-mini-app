@@ -1,0 +1,606 @@
+{
+  "nom": "40-mavzu. Fosfor",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Fosfor kimyoviy elementlar davriy sistemasining qaysi guruhida joylashgan?",
+      "v": [
+        "Beshinchi guruh bosh guruhchasida",
+        "To'rtinchi guruh bosh guruhchasida",
+        "Oltinchi guruh bosh guruhchasida",
+        "Beshinchi guruh yon guruhchasida"
+      ],
+      "t": 0,
+      "izoh": "Fosfor azot singari V guruh bosh guruhchasida joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#08b0be39"
+    },
+    {
+      "q": "Fosfor atomining tashqi energetik qavatidagi valent elektronlari qanday joylashgan?",
+      "v": [
+        "3s2 3p3 3d0",
+        "3s2 3p2 3d1",
+        "3s1 3p3 3d1",
+        "2s2 2p3"
+      ],
+      "t": 0,
+      "izoh": "Oddiy holatda fosforning valent elektronlari 3s2 3p3 3d0 qavatchalarda joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m40-fosfor#8b2b9683"
+    },
+    {
+      "q": "Fosfor atomi qo'zg'algan holatda nechta toq elektron hosil qila oladi?",
+      "v": [
+        "5 ta",
+        "3 ta",
+        "2 ta",
+        "7 ta"
+      ],
+      "t": 0,
+      "izoh": "Qo'zg'algan holatda 3s1 3p3 3d1 holatga o'tib, 5 ta toq elektron hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#2947e886"
+    },
+    {
+      "q": "Fosfor asosan qanday valentlikdagi birikmalarni hosil qiladi?",
+      "v": [
+        "3 va 5 valentli",
+        "2 va 4 valentli",
+        "1 va 3 valentli",
+        "4 va 6 valentli"
+      ],
+      "t": 0,
+      "izoh": "Fosfor asosan 3 va 5 valentli birikmalarni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#ea9da374"
+    },
+    {
+      "q": "Fosfor qanday oksidlanish darajalarini namoyon qiladi?",
+      "v": [
+        "–3, 0, +3, +5",
+        "–2, 0, +2, +4",
+        "0, +2, +4, +6",
+        "–1, 0, +1, +5"
+      ],
+      "t": 0,
+      "izoh": "Fosfor –3, 0, +3, +5 oksidlanish darajalarini namoyon qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m40-fosfor#7f6403e1"
+    },
+    {
+      "q": "Tabiatda asosan qaysi oksidlanish darajasidagi fosfor birikmalari uchraydi?",
+      "v": [
+        "+5",
+        "+3",
+        "0",
+        "–3"
+      ],
+      "t": 0,
+      "izoh": "Tabiatda asosan +5 oksidlanish darajasidagi fosfor birikmalari uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#9cafb319"
+    },
+    {
+      "q": "Fosfor tabiatda nima sababdan faqat birikmalar tarzida uchraydi?",
+      "v": [
+        "Kimyoviy jihatdan faol bo'lganligi sababli",
+        "Zichligi katta bo'lganligi sababli",
+        "Suvda yaxshi eriganligi sababli",
+        "Yengil gaz bo'lganligi sababli"
+      ],
+      "t": 0,
+      "izoh": "Fosfor kimyoviy jihatdan faol bo'lganligi uchun tabiatda erkin holda uchramaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#77afe27a"
+    },
+    {
+      "q": "Fosforit va apatitlarning kimyoviy tarkibi qanday?",
+      "v": [
+        "Ca3(PO4)2",
+        "CaCO3",
+        "CaSO4",
+        "CaSiO3"
+      ],
+      "t": 0,
+      "izoh": "Fosforit va apatitlar fosforning tabiiy birikmalari bo'lib, tarkibi Ca3(PO4)2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#9ea596a7"
+    },
+    {
+      "q": "Odam va hayvonlar suyaklarining anorganik tarkibiy qismini, asosan, qaysi modda tashkil etadi?",
+      "v": [
+        "Ca3(PO4)2",
+        "CaCO3",
+        "CaCl2",
+        "CaO"
+      ],
+      "t": 0,
+      "izoh": "Suyaklarning anorganik qismini asosan Ca3(PO4)2 tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#27bf4ede"
+    },
+    {
+      "q": "Fosfor sanoatda qanday usulda olinadi?",
+      "v": [
+        "Fosforit yoki apatit kremniy (IV)-oksidi va koks ishtirokida elektr pechlarda havosiz qizdiriladi",
+        "Fosforit suvda eritilib, elektroliz qilinadi",
+        "Apatit havoda kuydirilib, oksidi ajratiladi",
+        "Fosforitga tuz kislota ta'sir ettirib, fosfin olinadi"
+      ],
+      "t": 0,
+      "izoh": "Elektr pechlarida havosiz muhitda fosforit yoki apatit SiO2 va koks ishtirokida qizdiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m40-fosfor#d6b9e1d8"
+    },
+    {
+      "q": "Fosfor olish reaksiyasida qaysi reaksiya to'g'ri ko'rsatilgan?",
+      "v": [
+        "Ca3(PO4)2 + 5C + 3SiO2 = 3CaSiO3 + 2P + 5CO",
+        "Ca3(PO4)2 + 3C = 3CaO + 2P + 3CO",
+        "Ca3(PO4)2 + 2SiO2 = 2CaSiO3 + 2P + O2",
+        "Ca3(PO4)2 + 5CO = 3CaO + 2P + 5CO2"
+      ],
+      "t": 0,
+      "izoh": "Ca3(PO4)2 + 5C + 3SiO2 = 3CaSiO3 + 2P + 5CO reaksiyasi elektr pechda boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m40-fosfor#2750a625"
+    },
+    {
+      "q": "Elektr pechda olingan fosfor bug'lari qanday kondensatlanadi?",
+      "v": [
+        "Maxsus kamerada suv ostida",
+        "Havoda sovutilgan idishda",
+        "Qizdirilgan metall plastinada",
+        "Muzli eritmada"
+      ],
+      "t": 0,
+      "izoh": "Fosfor bug'lari maxsus kamerada suv ostida kondensatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#e99c5d41"
+    },
+    {
+      "q": "Yig'ilgan fosforning tarkibi qanday ko'rinishda bo'ladi?",
+      "v": [
+        "P4 ko'rinishidagi oq fosfor",
+        "P2 ko'rinishidagi qizil fosfor",
+        "Pn ko'rinishidagi qora fosfor",
+        "P8 ko'rinishidagi sariq fosfor"
+      ],
+      "t": 0,
+      "izoh": "Kondensatlanganda P4 ko'rinishidagi oq fosfor hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#2f66dddd"
+    },
+    {
+      "q": "Oq fosfor qorong'uda qanday hodisa kuzatiladi?",
+      "v": [
+        "Shu'lalanadi",
+        "Qaynaydi",
+        "Bug'lanib yo'qoladi",
+        "Qotib kristallanadi"
+      ],
+      "t": 0,
+      "izoh": "Oq fosfor qorong'uda shu'lalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#4fb19a09"
+    },
+    {
+      "q": "Oq va qizil fosfor bir-biridan nimasi bilan farq qiladi?",
+      "v": [
+        "Tarkibidagi fosfor atomlarining birikish tartibi bilan",
+        "Tarkibidagi elementlar turi bilan",
+        "Molyar massasi bilan",
+        "Tarkibidagi kislorod miqdori bilan"
+      ],
+      "t": 0,
+      "izoh": "Ikkalasi ham sof fosfor, lekin atomlarning birikish tartibi har xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#c3451091"
+    },
+    {
+      "q": "Oq fosfor qanday sharoitda qizil fosforga aylanadi?",
+      "v": [
+        "Yorug'lik va harorat ta'sirida",
+        "Suv ostida sovitilganda",
+        "Kislorodda yondirilganda",
+        "Bosim pasaytirilganda"
+      ],
+      "t": 0,
+      "izoh": "Oq fosfor yorug'lik va harorat ta'sirida qizil fosforga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#3a8bd0f0"
+    },
+    {
+      "q": "Qizil fosfor havosiz joyda qizdirilganda nima hosil bo'ladi?",
+      "v": [
+        "Oq fosfor bug'lari hosil bo'lib, kondensatlanib oq fosforga aylanadi",
+        "Fosfor (V)-oksid hosil bo'ladi",
+        "Fosfin gazi ajraladi",
+        "Qora fosfor hosil bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Qizil fosfor havosizda oq fosfor bug'larini hosil qiladi, bug'lar kondensatlanib oq fosforga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m40-fosfor#76b6cbc0"
+    },
+    {
+      "q": "Fosforning kislorod bilan reaksiya tenglamasi qanday?",
+      "v": [
+        "4P + 5O2 = 2P2O5",
+        "2P + O2 = 2PO",
+        "P + O2 = PO2",
+        "2P + 3O2 = 2PO3"
+      ],
+      "t": 0,
+      "izoh": "4P + 5O2 = 2P2O5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m40-fosfor#027cde45"
+    },
+    {
+      "q": "Fosforning oltingugurt bilan reaksiyasida qaysi modda hosil bo'ladi?",
+      "v": [
+        "P2S3",
+        "PS2",
+        "P2S5",
+        "PS"
+      ],
+      "t": 0,
+      "izoh": "2P + 3S = P2S3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m40-fosfor#ef365bd1"
+    },
+    {
+      "q": "Fosforning xlor bilan reaksiya tenglamasi qanday?",
+      "v": [
+        "2P + 3Cl2 = 2PCl3",
+        "P + Cl2 = PCl2",
+        "2P + 5Cl2 = 2PCl5",
+        "P + 3Cl = PCl3"
+      ],
+      "t": 0,
+      "izoh": "Darslikda 2P + 3Cl2 = 2PCl3 reaksiyasi keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m40-fosfor#18fb177d"
+    },
+    {
+      "q": "Fosforning kalsiy bilan reaksiyasidan qaysi birikma hosil bo'ladi?",
+      "v": [
+        "Ca3P2",
+        "CaP",
+        "Ca2P3",
+        "CaP2"
+      ],
+      "t": 0,
+      "izoh": "2P + 3Ca = Ca3P2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m40-fosfor#0d396a0e"
+    },
+    {
+      "q": "Fosfor vodorod bilan reaksiyaga kirishib qanday modda hosil qiladi?",
+      "v": [
+        "Fosfin PH3",
+        "Fosfor kislota H3PO3",
+        "Fosfor (III)-oksid P2O3",
+        "Fosfor gidrid P2H4"
+      ],
+      "t": 0,
+      "izoh": "2P + 3H2 = 2PH3, fosfin hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#860f42c2"
+    },
+    {
+      "q": "Fosfin qanday birikma?",
+      "v": [
+        "Ammiakka o'xshasa-da, beqaror birikma",
+        "Barqaror, suvda yaxshi eriydigan kislota",
+        "Zichligi havodan yengil inert gaz",
+        "Metall bilan faol reaksiyaga kirishadigan tuz"
+      ],
+      "t": 0,
+      "izoh": "Fosfin ammiakka o'xshasa-da, beqaror birikmadir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#e56c8d5e"
+    },
+    {
+      "q": "22-jadvalga ko'ra oq fosforning agregat holati qanday?",
+      "v": [
+        "Kristall",
+        "Kukunsimon",
+        "Suyuq",
+        "Gazsimon"
+      ],
+      "t": 0,
+      "izoh": "Oq fosfor kristall, qizil fosfor kukunsimon modda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#644c4fb0"
+    },
+    {
+      "q": "22-jadvalga ko'ra oq fosforning hidi qanday?",
+      "v": [
+        "Sarimsoq hidli",
+        "Hidsiz",
+        "Achiqlatuvchi keskin hidli",
+        "Tuxum hidli"
+      ],
+      "t": 0,
+      "izoh": "Oq fosfor sarimsoq hidli, qizil fosfor hidsiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#b551204d"
+    },
+    {
+      "q": "Oq fosfor CS2 da qanday eriydi?",
+      "v": [
+        "Yaxshi eriydi",
+        "Erimaydi",
+        "Oz eriydi",
+        "Faqat qizdirilganda eriydi"
+      ],
+      "t": 0,
+      "izoh": "Oq fosfor CS2 da yaxshi eriydi, qizil fosfor esa erimaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#e76e704b"
+    },
+    {
+      "q": "22-jadvalga ko'ra oq fosforning zichligi qancha?",
+      "v": [
+        "1,8 g/cm3",
+        "2 g/cm3",
+        "2,3 g/cm3",
+        "1,5 g/cm3"
+      ],
+      "t": 0,
+      "izoh": "Oq fosforning zichligi 1,8 g/cm3, qizil fosforniki 2 g/cm3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m40-fosfor#44c57b4d"
+    },
+    {
+      "q": "Oq fosforning suyuqlanish harorati qancha?",
+      "v": [
+        "44 °C",
+        "54 °C",
+        "34 °C",
+        "64 °C"
+      ],
+      "t": 0,
+      "izoh": "Oq fosfor 44 °C da suyuqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#88316fec"
+    },
+    {
+      "q": "Qizil fosfor qizdirilganda qanday hodisa sodir bo'ladi?",
+      "v": [
+        "Suyuqlanmay turib oq fosforga aylanadi",
+        "44 °C da suyuqlanadi",
+        "Kuyib P2O5 hosil qiladi",
+        "Bug'lanib qizil tutun hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Qizil fosfor suyuqlanmay turib oq fosforga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m40-fosfor#05c8e0e8"
+    },
+    {
+      "q": "Organizmga ta'siri bo'yicha oq va qizil fosfor qanday farqlanadi?",
+      "v": [
+        "Oq fosfor zaharli, qizil fosfor zaharsiz",
+        "Ikkalasi ham zaharli",
+        "Oq fosfor zaharsiz, qizil fosfor zaharli",
+        "Ikkalasi ham organizm uchun foydali"
+      ],
+      "t": 0,
+      "izoh": "Oq fosfor zaharli, qizil fosfor zaharsiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#6180e1e4"
+    },
+    {
+      "q": "Oq fosforning kristall panjarasi qanday turga kiradi?",
+      "v": [
+        "Molekulali",
+        "Atomli",
+        "Ionli",
+        "Metallik"
+      ],
+      "t": 0,
+      "izoh": "Oq fosfor molekulali, qizil fosfor atomli kristall panjaraga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#347b25f3"
+    },
+    {
+      "q": "Gugurt ishlab chiqarishda asosiy xomashyo qaysi modda?",
+      "v": [
+        "Qizil fosfor",
+        "Oq fosfor",
+        "Qora fosfor",
+        "Fosforit talqoni"
+      ],
+      "t": 0,
+      "izoh": "Qizil fosfor gugurt ishlab chiqarishda asosiy xomashyodir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#8d392bda"
+    },
+    {
+      "q": "Gugurt qutisi yon boshiga surtilgan Bertole tuzi bilan qizil fosfor ishqalanganda sodir bo'ladigan reaksiya qanday?",
+      "v": [
+        "6P + 5KClO3 = 5KCl + 3P2O5",
+        "4P + 5O2 = 2P2O5",
+        "2P + 3Cl2 = 2PCl3",
+        "P + KClO3 = KPO3 + Cl"
+      ],
+      "t": 0,
+      "izoh": "6P + 5KClO3 = 5KCl + 3P2O5 — gugurtni tezda yondirib yuboradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m40-fosfor#88125cf7"
+    },
+    {
+      "q": "Fosforni 1669-yilda kim kashf etgan?",
+      "v": [
+        "X.Brendt",
+        "I.Kunkel",
+        "R.Boyl",
+        "A.Shretter"
+      ],
+      "t": 0,
+      "izoh": "1669-yilda Gamburglik savdogar Xening Brendt fosforni kashf etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#1387273a"
+    },
+    {
+      "q": "X.Brendt fosforni qanday sharoitda kashf etgan?",
+      "v": [
+        "Alximiya bilan shug'ullanib, \"falsafa toshi\" hosil qilish ustida o'tkazgan tajribalaridan birida",
+        "Metallarni eritish tajribalarida",
+        "Kislotalarni distillash tajribalarida",
+        "Gazlarni elektr toki bilan ajratish tajribalarida"
+      ],
+      "t": 0,
+      "izoh": "Brendt \"falsafa toshi\" orqali oltin olish tajribalarida o'zidan nur taratuvchi oq modda — fosforni olgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#c30e3052"
+    },
+    {
+      "q": "1847-yilda A.Shretter qanday fosforni sintez qilgan?",
+      "v": [
+        "Oq fosforni havosiz joyda 300 °C da qizdirib qizil fosforni",
+        "Fosforitni qizdirib oq fosforni",
+        "Yuqori bosimda qora fosforni",
+        "Fosfinni parchalab qizil fosforni"
+      ],
+      "t": 0,
+      "izoh": "1847-yilda A.Shretter oq fosforni havosiz joyda 300 °C da qizdirib qizil fosforni oldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m40-fosfor#245617b2"
+    },
+    {
+      "q": "Qora fosforni 1934-yilda kim olgan?",
+      "v": [
+        "P.Bridjmen",
+        "R.Boyl",
+        "I.Kunkel",
+        "X.Brendt"
+      ],
+      "t": 0,
+      "izoh": "1934-yilda P.Bridjmen fosforning uchinchi allotropiyasi — qora fosforni oldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#e319a3b6"
+    },
+    {
+      "q": "1676-yilda oq fosforni olganligi ma'lum bo'lgan olim kim?",
+      "v": [
+        "I.Kunkel",
+        "A.Shretter",
+        "P.Bridjmen",
+        "Yu.Libix"
+      ],
+      "t": 0,
+      "izoh": "1676-yilda I.Kunkel oq fosforni olgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#e8a3c5a5"
+    },
+    {
+      "q": "Fosforning allotropik shakl o'zgarishlari qaysilar?",
+      "v": [
+        "Oq, qizil va qora fosfor",
+        "Oq va sariq fosfor",
+        "Qizil va yashil fosfor",
+        "Faqat oq fosfor"
+      ],
+      "t": 0,
+      "izoh": "Fosforning oq, qizil va qora allotropik shakllari ma'lum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#16545946"
+    },
+    {
+      "q": "Oq fosfor qanday moddalar bilan bevosita birika oladi?",
+      "v": [
+        "Kislorod, galogenlar, oltingugurt va ayrim metallar bilan",
+        "Faqat kislorod bilan",
+        "Faqat metallar bilan",
+        "Kislorod, suv va ishqorlar bilan"
+      ],
+      "t": 0,
+      "izoh": "Oq fosfor kimyoviy jihatdan faol: kislorod, galogenlar, oltingugurt va ayrim metallar bilan bevosita birikadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m40-fosfor#d05e78be"
+    }
+  ]
+}

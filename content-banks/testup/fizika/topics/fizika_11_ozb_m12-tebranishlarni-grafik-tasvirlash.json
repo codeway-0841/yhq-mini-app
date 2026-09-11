@@ -1,0 +1,576 @@
+{
+  "nom": "12-mavzu. Tebranishlarni Grafik Tasvirlash",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Erkin tebranishlar deb nimaga aytiladi?",
+      "v": [
+        "Tashqi ta'sir bo'lmagan holda paydo bo'ladigan tebranishlarga",
+        "Tashqi davriy kuch ta'siridagi tebranishlarga",
+        "Energiya manbayi doimiy ta'minlab turadigan tebranishlarga",
+        "Amplitudasi o'sib boradigan tebranishlarga"
+      ],
+      "t": 0,
+      "izoh": "Tashqi ta'sir bo'lmagan holda paydo bo'ladigan tebranishlar erkin tebranishlar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#7b8bf6a4"
+    },
+    {
+      "q": "Tebranish konturida kondensatordagi zaryadning o'zgarishi qanday tenglama bilan ifodalanadi?",
+      "v": [
+        "q = qm·cos2πvt",
+        "q = qm·sin2πvt",
+        "q = qm·cosπvt",
+        "q = qm/v"
+      ],
+      "t": 0,
+      "izoh": "Kondensatordagi zaryad q = qm·cos2πvt qonuniyat bo'yicha o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#bea89715"
+    },
+    {
+      "q": "Garmonik tebranishlar deb nimaga aytiladi?",
+      "v": [
+        "Fizik kattaliklarning vaqt o'tishi bilan sinus yoki kosinus qonuni bo'yicha davriy o'zgarishiga",
+        "Faqat chastotasi o'zgarib turadigan tebranishlarga",
+        "Amplitudasi kamayib boradigan tebranishlarga",
+        "Istalgan takrorlanuvchi jarayonga"
+      ],
+      "t": 0,
+      "izoh": "Fizik kattaliklarning vaqt o'tishi bilan sinus yoki kosinus qonuni bo'yicha davriy o'zgarishi garmonik tebranishlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#636c4dd5"
+    },
+    {
+      "q": "Tebranish amplitudasi deb nimaga aytiladi?",
+      "v": [
+        "Tebranayotgan kattalikning eng katta qiymati moduliga",
+        "Tebranayotgan kattalikning o'rtacha qiymatiga",
+        "Tebranishlar davrining yarimiga",
+        "Kattalikning oniy qiymatiga"
+      ],
+      "t": 0,
+      "izoh": "Tebranayotgan kattalikning eng katta qiymati moduli tebranish amplitudasi yoki amplitudaviy qiymat deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#60540c6e"
+    },
+    {
+      "q": "Elektromagnit tebranishlarda amplituda nimaga teng?",
+      "v": [
+        "Kondensator qoplamalaridagi elektr zaryadining eng katta qiymatiga (qm)",
+        "Tok kuchining o'rtacha qiymatiga",
+        "Kuchlanishning nolga teng qiymatiga",
+        "Energiyaning yarimiga"
+      ],
+      "t": 0,
+      "izoh": "Elektromagnit tebranishlarda amplituda kondensator qoplamalaridagi elektr zaryadining eng katta qiymatiga (qm) teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#26d147e2"
+    },
+    {
+      "q": "Mexanik tebranishlarda amplituda nimaga teng?",
+      "v": [
+        "Jismning muvozanat holatidan eng katta og'ishiga",
+        "Jismning tezligiga",
+        "Prujina uzunligiga",
+        "Davning yarmiga"
+      ],
+      "t": 0,
+      "izoh": "Mexanik tebranishlarda amplituda jismning muvozanat holatidan eng katta og'ishiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#ddc2b7bd"
+    },
+    {
+      "q": "Kondensatordagi kuchlanishning o'zgarishi qanday tenglama bilan ifodalanadi?",
+      "v": [
+        "U = Um·cos2πvt",
+        "U = Um·sin2πvt",
+        "U = qm·cosπvt",
+        "U = Um/t"
+      ],
+      "t": 0,
+      "izoh": "U = q/C ekanligi hisobga olinsa, kuchlanish U = Um·cos2πvt bo'yicha o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#14797a42"
+    },
+    {
+      "q": "G'altakdagi tok kuchining o'zgarish qonuniyati qanday?",
+      "v": [
+        "I = Im·cos(2πvt + π/2) yoki I = Im·sin2πvt",
+        "I = Im·cos2πvt",
+        "I = Im·cos(2πvt − π/2)",
+        "I = Im·cos4πvt"
+      ],
+      "t": 0,
+      "izoh": "G'altakdagi tok kuchi I = Im·cos(2πvt + π/2) yoki I = Im·sin2πvt qonuniyatga ko'ra aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#f4bbe0a4"
+    },
+    {
+      "q": "Konturdagi tok kuchi tebranishlari zaryad tebranishlaridan faza bo'yicha qanday farq qiladi?",
+      "v": [
+        "π/2 ga oldinga o'tib ketadi",
+        "π/2 ga orqada qoladi",
+        "π ga orqada qoladi",
+        "Bir xil fazada bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Konturdagi tok kuchi tebranishlari faza bo'yicha zaryad tebranishlaridan π/2 ga oldinga o'tib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#85fcbaf2"
+    },
+    {
+      "q": "Kondensator qoplamalaridagi zaryad va kuchlanish qanday fazada o'zgaradi?",
+      "v": [
+        "Bir xil fazada",
+        "π/2 fazada farq bilan",
+        "π fazada farq bilan",
+        "Tasodifiy fazalarda"
+      ],
+      "t": 0,
+      "izoh": "Zaryad bilan kuchlanish bir xil fazada o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#662bde7b"
+    },
+    {
+      "q": "Kondensator qoplamalaridagi zaryad va kuchlanish maksimal bo'lgan vaqtda tok kuchi qanday bo'ladi?",
+      "v": [
+        "Nolga teng",
+        "Maksimal",
+        "O'rtacha qiymatda",
+        "Salbiy"
+      ],
+      "t": 0,
+      "izoh": "Zaryad va kuchlanish maksimal bo'lgan vaqtda tok kuchi nolga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#760f956c"
+    },
+    {
+      "q": "Garmonik tebranishlarning grafiklarida abssissa o'qiga nima qo'yiladi?",
+      "v": [
+        "Davr ulushlarida ifodalangan vaqt va tebranishlar fazasi",
+        "Kuchlanish qiymatlari",
+        "Tok kuchi qiymatlari",
+        "Energiya qiymatlari"
+      ],
+      "t": 0,
+      "izoh": "Abssissa o'qining ostiga davr ulushlarida ifodalangan vaqt, ustiga shunga mos keluvchi tebranishlar fazasi qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#bd6e8dbd"
+    },
+    {
+      "q": "Grafikning ordinata o'qidan nimani aniqlash mumkin?",
+      "v": [
+        "Tebranayotgan kattalikning amplitudasini yoki oniy qiymatini",
+        "Faqat davrni",
+        "Faqat fazani",
+        "Faqat energiyani"
+      ],
+      "t": 0,
+      "izoh": "Grafik masshtabi ma'lum bo'lsa, ordinata o'qidan tebranayotgan kattalikning amplitudasini yoki oniy qiymatini aniqlash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#74b1899a"
+    },
+    {
+      "q": "So'nuvchi tebranishlar deb nimaga aytiladi?",
+      "v": [
+        "Amplitudasi vaqt o'tishi bilan kamayib boradigan tebranishlarga",
+        "Amplitudasi o'sib boradigan tebranishlarga",
+        "Sinusoidal tebranishlarga",
+        "Amplitudasi o'zgarmas tebranishlarga"
+      ],
+      "t": 0,
+      "izoh": "Real konturda elektr energiyasi issiqlikka aylanib borishi tufayli amplitudasi vaqt o'tishi bilan kamayib boradigan tebranishlarga so'nuvchi tebranishlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#c9c08db3"
+    },
+    {
+      "q": "Real konturda tebranishlarning so'nishiga nima sabab bo'ladi?",
+      "v": [
+        "Konturning R qarshiligi nolga teng emasligi",
+        "Kondensator sig'imining kattaligi",
+        "G'altak induktivligining kattaligi",
+        "Chastotaning kichikligi"
+      ],
+      "t": 0,
+      "izoh": "Real konturda R nolga teng bo'lmaganligidan elektr energiyasi issiqlikka aylanib boradi va tebranishlar amplitudasi kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#1a40a753"
+    },
+    {
+      "q": "Konturning qarshiligi ortgan sari tebranishlar davri qanday o'zgaradi?",
+      "v": [
+        "Ortib boradi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Avval kamayib, keyin ortadi"
+      ],
+      "t": 0,
+      "izoh": "Konturning qarshiligi ortgan sari tebranishlar davri ham ortib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#07ca64eb"
+    },
+    {
+      "q": "So'nuvchi tebranishlar garmonik tebranishlarga kiradimi?",
+      "v": [
+        "Yo'q, so'nuvchi tebranishlar garmonik bo'lmaydi",
+        "Ha, ular sof garmonik tebranishlardir",
+        "Faqat kichik amplitudada garmonik bo'ladi",
+        "Faqat katta chastotada garmonik bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "So'nuvchi tebranishlar garmonik bo'lmas ekan, ular davriy bo'lmagan tebranishlarga kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#071b3cab"
+    },
+    {
+      "q": "Konturning qarshiligi qanchalik katta bo'lsa, energiya sarfi qanday bo'ladi?",
+      "v": [
+        "Shunchalik ko'p energiya sarflanadi (Q = I²Rt)",
+        "Shunchalik kam energiya sarflanadi",
+        "Energiya sarfi o'zgarmaydi",
+        "Energiya to'planadi"
+      ],
+      "t": 0,
+      "izoh": "Konturning qarshiligi qanchalik katta bo'lsa, unda Q = I²Rt energiya shunchalik ko'p sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#17182b6d"
+    },
+    {
+      "q": "q = qm·cos2πvt tenglamada qm nimani bildiradi?",
+      "v": [
+        "Zaryadning amplituda (maksimal) qiymatini",
+        "Zaryadning oniy qiymatini",
+        "Zaryadning o'rtacha qiymatini",
+        "Zaryadning effektiv qiymatini"
+      ],
+      "t": 0,
+      "izoh": "qm — kondensatordagi zaryadning maksimal (amplituda) qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#d8657a0e"
+    },
+    {
+      "q": "So'nuvchi tebranishlar qanday tenglamalar orqali ifodalanadi?",
+      "v": [
+        "Differensial tenglamalar orqali",
+        "Oddiy algebraik tenglamalar orqali",
+        "Kvadrat tenglamalar orqali",
+        "Grafik tenglamalar orqali"
+      ],
+      "t": 0,
+      "izoh": "So'nuvchi tebranishlarning tenglamalari differensial tenglamalar orqali ifodalanganligi sababli murakkab masala hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#cc0606e5"
+    },
+    {
+      "q": "Tok kuchi maksimal qiymatga erishayotganda kondensatordagi elektr maydon energiyasi qanday o'zgaradi?",
+      "v": [
+        "Nolgacha kamayadi",
+        "Maksimalga erishadi",
+        "O'zgarmaydi",
+        "Ikki baravar ortadi"
+      ],
+      "t": 0,
+      "izoh": "Tok o'zining maksimal qiymatiga erishayotganda kondensatordagi elektr maydon energiyasi nolgacha kamayadi, g'altakdagi magnit maydon energiyasi maksimalga erishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#6be4eb5f"
+    },
+    {
+      "q": "q = qm·cos2πvt tenglamada boshlang'ich payt (t = 0) da zaryad qanday qiymatga ega?",
+      "v": [
+        "Maksimal qiymatga (qm)",
+        "Nolga",
+        "Yarim amplitudaga",
+        "Salbiy maksimal qiymatga"
+      ],
+      "t": 0,
+      "izoh": "t = 0 da cos0 = 1 bo'lgani uchun q = qm, ya'ni dastlab kondensatorga maksimal zaryad beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#876d6771"
+    },
+    {
+      "q": "I = Im·sin2πvt tenglamada boshlang'ich payt (t = 0) da tok kuchi qanday?",
+      "v": [
+        "Nolga teng",
+        "Maksimal",
+        "Salbiy maksimal",
+        "Yarim qiymatda"
+      ],
+      "t": 0,
+      "izoh": "t = 0 da sin0 = 0 bo'lgani uchun tok kuchi nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#fb8132b8"
+    },
+    {
+      "q": "Zaryad tebranishlari grafigi qanday chiziq ko'rinishida bo'ladi (ideal konturda)?",
+      "v": [
+        "Kosinusoida (garmonik chiziq)",
+        "To'g'ri chiziq",
+        "Parabola",
+        "Giperbola"
+      ],
+      "t": 0,
+      "izoh": "Ideal konturda zaryad kosinus qonuni bo'yicha o'zgaradi, grafik kosinusoida ko'rinishida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#50854f12"
+    },
+    {
+      "q": "Grafikdan fazalarning siljishlarini aniqlash mumkinmi?",
+      "v": [
+        "Ha, grafiklarni taqqoslab topish mumkin",
+        "Yo'q, grafikdan faqat amplituda aniqlanadi",
+        "Faqat davrni aniqlash mumkin",
+        "Faqat energiyani aniqlash mumkin"
+      ],
+      "t": 0,
+      "izoh": "Fazalarning siljishlarini ham grafiklardan taqqoslab topish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#01ec044d"
+    },
+    {
+      "q": "So'nuvchi tebranishlar grafikida amplituda qanday o'zgaradi?",
+      "v": [
+        "Vaqt o'tishi bilan kamayib boradi",
+        "Vaqt o'tishi bilan ortadi",
+        "O'zgarmaydi",
+        "Sakrab turadi"
+      ],
+      "t": 0,
+      "izoh": "So'nuvchi tebranishlarda amplituda vaqt o'tishi bilan kamayib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#21611997"
+    },
+    {
+      "q": "Tok kuchi tebranishlari kuchlanish tebranishlaridan qancha fazaga oldinga boradi?",
+      "v": [
+        "π/2 ga",
+        "π ga",
+        "2π ga",
+        "Bir xil fazada"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi I = Im·cos(2πvt + π/2) bo'lgani uchun kuchlanishdan π/2 fazaga oldinga boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#a380a41b"
+    },
+    {
+      "q": "Ideal konturda qachon tebranishlar so'nmaydi?",
+      "v": [
+        "Energiya sarfi bo'lmasa",
+        "Qarshilik katta bo'lsa",
+        "Sig'im kichik bo'lsa",
+        "Chastota katta bo'lsa"
+      ],
+      "t": 0,
+      "izoh": "Ideal tebranish konturida energiya sarfi bo'lmaganligi sababli tebranishlar so'nmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#e366b7ac"
+    },
+    {
+      "q": "So'nuvchi tebranishlar davriy tebranishlarga kiradimi?",
+      "v": [
+        "Yo'q, davriy bo'lmagan tebranishlarga kiradi",
+        "Ha, sof davriy tebranishlardir",
+        "Faqat boshida davriy",
+        "Faqat oxirida davriy"
+      ],
+      "t": 0,
+      "izoh": "So'nuvchi tebranishlar davriy bo'lmagan tebranishlarga kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#34da490d"
+    },
+    {
+      "q": "U = Um·cos2πvt tenglamadagi Um qanday aniqlanadi?",
+      "v": [
+        "Um = qm/C",
+        "Um = qm·C",
+        "Um = C/qm",
+        "Um = qm²/C"
+      ],
+      "t": 0,
+      "izoh": "U = q/C bo'lgani uchun amplituda Um = qm/C ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#130f02be"
+    },
+    {
+      "q": "Bir davr ichida tok kuchi necha marta nol qiymatni qabul qiladi?",
+      "v": [
+        "Ikki marta",
+        "Bir marta",
+        "To'rt marta",
+        "Nol marta"
+      ],
+      "t": 0,
+      "izoh": "Garmonik tebranishda sinusoida bir davr ichida nol qiymatni ikki marta (t = 0 va t = T/2 da) qabul qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#bd862161"
+    },
+    {
+      "q": "Konturda zaryad maksimal bo'lgan paytda magnit maydon energiyasi qanday?",
+      "v": [
+        "Nolga teng",
+        "Maksimal",
+        "Yarim qiymatda",
+        "Salbiy"
+      ],
+      "t": 0,
+      "izoh": "Zaryad maksimal bo'lganida tok nolga teng, demak magnit maydon energiyasi ham nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#3528da94"
+    },
+    {
+      "q": "Zaryad va energiya o'zgarishlarining fazalari bir xilmi?",
+      "v": [
+        "Yo'q, energiya zaryad kvadratiga proporsional bo'lgani uchun ikki marta tezroq o'zgaradi",
+        "Ha, to'liq bir xil fazada",
+        "Energiya π/2 ga orqada qoladi",
+        "Energiya π ga oldinga boradi"
+      ],
+      "t": 0,
+      "izoh": "Energiya W = q²/(2C) bo'lgani uchun zaryad bir davr o'zgarganda energiya ikki marta maksimalga erishadi — u zaryaddan farqli chastotada o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#3859a9a2"
+    },
+    {
+      "q": "Grafikda abssissa o'qi bo'ylab bir to'liq davr T qanday fazaga to'g'ri keladi?",
+      "v": [
+        "2π ga",
+        "π ga",
+        "π/2 ga",
+        "4π ga"
+      ],
+      "t": 0,
+      "izoh": "Bir to'liq davr T ga 2π faza mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#5f4beb49"
+    },
+    {
+      "q": "T/4 vaqtga qanday faza mos keladi?",
+      "v": [
+        "π/2",
+        "π",
+        "2π",
+        "π/4"
+      ],
+      "t": 0,
+      "izoh": "T/4 davr ulushiga π/2 faza mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#387d3e39"
+    },
+    {
+      "q": "Tok kuchi grafigi zaryad grafigidan abssissa o'qi bo'ylab qanchaga siljigan bo'ladi?",
+      "v": [
+        "T/4 ga",
+        "T/2 ga",
+        "T ga",
+        "3T/4 ga"
+      ],
+      "t": 0,
+      "izoh": "π/2 faza farqi davrning T/4 qismiga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#5e8212db"
+    },
+    {
+      "q": "Konturda so'nuvchi tebranishlarda qarshilik qanday bo'lsa, so'nish tezroq yuz beradi?",
+      "v": [
+        "Qarshilik qancha katta bo'lsa, so'nish shuncha tez yuz beradi",
+        "Qarshilik kichik bo'lsa tez so'nadi",
+        "Qarshilik nolga teng bo'lsa tez so'nadi",
+        "So'nish qarshilikka bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik qancha katta bo'lsa, I²Rt energiya shuncha ko'p sarflanib, tebranishlar tezroq so'nadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#47721b49"
+    },
+    {
+      "q": "Garmonik tebranishlarni grafik usulda tasvirlash qulay bo'lishining sababi nima?",
+      "v": [
+        "Grafikdan davr, amplituda, oniy qiymat va faza siljishlarini aniqlash mumkin",
+        "Grafik chizish oson",
+        "Grafik faqat chastotani ko'rsatadi",
+        "Grafik formulalarni o'zgartirib yuboradi"
+      ],
+      "t": 0,
+      "izoh": "Grafik masshtabi ma'lum bo'lsa, undan davr, amplituda, oniy qiymat va faza siljishlarini aniqlash mumkin, shu bois grafik usul qulay.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m12-tebranishlarni-grafik-tasvirlash#f7cd2b95"
+    }
+  ]
+}

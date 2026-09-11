@@ -1,0 +1,1609 @@
+{
+  "nom": "Logarifmik tenglamalar",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Logarifm ta'rifidan foydalanib, log₃x = 4 tenglamaning ildizini toping va uni to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "12",
+        "64",
+        "81",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Logarifm ta'rifiga ko'ra log₃x = 4 tenglik x = 3⁴ ma'nosini bildiradi. 3⁴ = 81 bo'lgani uchun x = 81. Asosni ko'rsatkichga ko'paytirsa 12, asos bilan ko'rsatkichni almashtirib 4³ olsa 64 chiqadi. Javob: 81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-logarifmik-tenglama",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#82e65cb0"
+    },
+    {
+      "q": "Malika daftariga log₅x = 3 tenglamani yozib qo'ydi va uning ildizini topmoqchi. Qaysi son bu tenglamaning yechimi bo'ladi?",
+      "v": [
+        "15",
+        "125",
+        "243",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Ta'rifga ko'ra log₅x = 3 dan x = 5³ hosil bo'ladi. 5³ = 125, demak Malika topishi kerak bo'lgan son 125 ga teng. 15 — asosni ko'rsatkichga ko'paytirish, 243 esa 3⁵ ni hisoblash xatosi. Javob: 125.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-logarifmik-tenglama",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#72a28620"
+    },
+    {
+      "q": "log₂x = 6 tenglik o'rinli bo'lsa, x ning qiymati nechaga teng bo'lishini hisoblang va javobni tanlang.",
+      "v": [
+        "12",
+        "36",
+        "64",
+        "128"
+      ],
+      "t": 2,
+      "izoh": "log₂x = 6 yozuvi x = 2⁶ degani. 2⁶ = 64 bo'lgani uchun x = 64. 12 — asos bilan ko'rsatkichning ko'paytmasi, 36 — 6² ni olish xatosi, 128 esa 2⁷ ga mos keladi. Javob: 64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-logarifmik-tenglama",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#5efb45d6"
+    },
+    {
+      "q": "Asosi 9 bo'lgan logarifm uchun log₉x = 1,5 tenglama berilgan bo'lsa, x ning qiymatini toping.",
+      "v": [
+        "13,5",
+        "18",
+        "81",
+        "27"
+      ],
+      "t": 3,
+      "izoh": "log₉x = 1,5 tenglikdan x = 9^(1,5) kelib chiqadi. 9 = 3² bo'lgani uchun 9^(1,5) = 3³ = 27. Ko'rsatkichni asosga ko'paytirib 13,5 olish yoki 9² = 81 deb yozish tipik xatolardir. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sodda-logarifmik-tenglama",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#a31b0cae"
+    },
+    {
+      "q": "logₓ169 = 2 tenglamada noma'lum asos x ni toping; asos musbat va 1 dan farqli bo'lishi shart.",
+      "v": [
+        "13",
+        "−13",
+        "84,5",
+        "338"
+      ],
+      "t": 0,
+      "izoh": "logₓ169 = 2 yozuvi x² = 169 degani. Asos musbat bo'lishi shart bo'lgani uchun x = 13 olinadi, x = −13 esa tashlab yuboriladi. 169 ni 2 ga bo'lish 84,5, ko'paytirish esa 338 xato javoblarini beradi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifm-asosi-nomalum",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#12fe4309"
+    },
+    {
+      "q": "logₓ8 = 3 tenglik berilgan. Logarifmning asosi qanday songa teng ekanligini aniqlang va javobni belgilang.",
+      "v": [
+        "24",
+        "2",
+        "512",
+        "11"
+      ],
+      "t": 1,
+      "izoh": "logₓ8 = 3 tenglik x³ = 8 ma'nosini bildiradi. Kub ildiz olsak x = 2 hosil bo'ladi va bu son asos uchun barcha shartlarni qanoatlantiradi. 24 — 8 ni 3 ga ko'paytirish, 512 — 8³ ni hisoblash xatosi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifm-asosi-nomalum",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#340fabb2"
+    },
+    {
+      "q": "Sardor logₓ81 = 4 tenglamani daftariga yozdi va asosni topishi kerak. Qaysi son to'g'ri asos bo'ladi?",
+      "v": [
+        "20,25",
+        "9",
+        "324",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "logₓ81 = 4 dan x⁴ = 81 kelib chiqadi. 81 = 3⁴ bo'lgani uchun musbat asos x = 3 bo'ladi. Faqat bir marta kvadrat ildiz olsa 9, 81 ni 4 ga bo'lsa 20,25 xato javobi olinadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifm-asosi-nomalum",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#7e69a031"
+    },
+    {
+      "q": "Aziza logₓ0,04 = −2 tenglamani ko'rdi va asosni topmoqchi. Bu tenglamaning asosi x nechaga teng?",
+      "v": [
+        "25",
+        "0,2",
+        "5",
+        "−5"
+      ],
+      "t": 2,
+      "izoh": "logₓ0,04 = −2 dan x^(−2) = 0,04 hosil bo'ladi. Bu 1/x² = 1/25 degani, demak x² = 25 va asos musbat bo'lgani uchun x = 5. x² = 25 gacha to'g'ri kelib, kvadrat ildiz olishni unutsa 25 javobi olinadi; manfiy ko'rsatkichni e'tibordan chiqarib x² = 0,04 desa 0,2 chiqadi; asos manfiy bo'la olmagani uchun −5 ham yaramaydi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifm-asosi-nomalum",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#6b36d480"
+    },
+    {
+      "q": "log₃(2x + 5) = 3 tenglamani potensiallash yo'li bilan yeching va x ning qiymatini ko'rsating.",
+      "v": [
+        "2",
+        "11",
+        "13,5",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "Potensiallaymiz: log₃(2x + 5) = 3 dan 2x + 5 = 3³ = 27 hosil bo'ladi. Bundan 2x = 22 va x = 11. Aniqlanish sohasi 2x + 5 > 0 bajariladi. 3·3 = 9 deb olsa 2, ishorani almashtirsa 16 chiqadi. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "potensiallash-chiziqli-ichki",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#e8ebb047"
+    },
+    {
+      "q": "Anvar log₅(4x − 3) = 2 tenglamani yechishi kerak. Bu tenglamaning ildizi qaysi son ekanligini aniqlang.",
+      "v": [
+        "3,25",
+        "5,5",
+        "6,25",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "log₅(4x − 3) = 2 dan 4x − 3 = 5² = 25 hosil bo'ladi. Demak 4x = 28 va x = 7. Ayirmani unutib 4x = 25 desa 6,25, ishorani almashtirsa 5,5, 5·2 = 10 deb olsa 3,25 chiqadi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "potensiallash-chiziqli-ichki",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#870f6311"
+    },
+    {
+      "q": "O'nlik logarifm ishlatilgan lg(5x + 10) = 2 tenglamaning yechimini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "18",
+        "20",
+        "22",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "O'nlik logarifm asosi 10 ga teng, shuning uchun lg(5x + 10) = 2 dan 5x + 10 = 100 kelib chiqadi. Bundan 5x = 90 va x = 18. 10 ni ayirmasa 20, ishorani almashtirsa 22 chiqadi. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "potensiallash-chiziqli-ichki",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#7cfa1f9f"
+    },
+    {
+      "q": "log₂(4x + 8) = 5 tenglamani yechib, noma'lum x ning qiymatini hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "0,5",
+        "6",
+        "8",
+        "10"
+      ],
+      "t": 1,
+      "izoh": "log₂(4x + 8) = 5 dan 4x + 8 = 2⁵ = 32 hosil bo'ladi. Demak 4x = 24 va x = 6. Qo'shiluvchini ayirmasa 8, ishorani almashtirsa 10, 2·5 = 10 deb olsa 0,5 chiqadi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "potensiallash-chiziqli-ichki",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#d4304bcd"
+    },
+    {
+      "q": "log₆(2x + 1) = log₆(x + 9) tenglamaning ildizini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "10",
+        "4,5",
+        "−8",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Asoslar bir xil bo'lgani uchun logarifm ostidagi ifodalar tenglashtiriladi: 2x + 1 = x + 9. Bundan x = 8 va tekshiruv 2·8 + 1 = 17 > 0 shartni qanoatlantiradi. Ozod hadlarni qo'shib yuborsa 10, ishorani chalkashtirsa −8 chiqadi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-logarifm-tenglik",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#5d1a8cfe"
+    },
+    {
+      "q": "Nodira log₅(3x − 2) = log₅(x + 6) tenglamani yechdi va bitta ildiz oldi. U qanday son topgan?",
+      "v": [
+        "2",
+        "8",
+        "4",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "Bir xil asosli logarifmlar teng bo'lsa, ular ostidagi ifodalar ham teng: 3x − 2 = x + 6. Bundan 2x = 8 va x = 4 kelib chiqadi. 2 ga bo'lishni unutsa 8, ishorani almashtirsa −4 xato javobi chiqadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-logarifm-tenglik",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#190775a2"
+    },
+    {
+      "q": "lg(x² − 3) = lg(2x) tenglamaning ildizlarini aniqlanish sohasini hisobga olgan holda toping.",
+      "v": [
+        "x = 3",
+        "x = −1 va x = 3",
+        "x = −1",
+        "Ildizi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Asoslar bir xil, shuning uchun x² − 3 = 2x deb yozamiz. Bundan x² − 2x − 3 = 0 va ildizlari x = 3 hamda x = −1. Aniqlanish sohasida 2x > 0 talab qilingani uchun x = −1 chetki ildiz sifatida tashlanadi. Javob: x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-logarifm-tenglik",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#044d5514"
+    },
+    {
+      "q": "log₂(x + 15) = log₂(3x − 5) tenglamaning yechimini aniqlang va to'g'ri variantni belgilang.",
+      "v": [
+        "10",
+        "20",
+        "−10",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Bir xil asosli logarifmlarni tenglashtiramiz: x + 15 = 3x − 5. Bundan 2x = 20 va x = 10 hosil bo'ladi. Tekshiruv: 3·10 − 5 = 25 > 0. 2 ga bo'lishni unutsa 20, ishorani almashtirsa −10 chiqadi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-logarifm-tenglik",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#4a9e2734"
+    },
+    {
+      "q": "log₃(x − 4) + log₃(9 − x) ifodasi ma'noga ega bo'ladigan barcha x qiymatlari to'plamini ko'rsating.",
+      "v": [
+        "(4; 9)",
+        "[4; 9]",
+        "(−∞; 4) ∪ (9; +∞)",
+        "(4; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Har ikkala logarifm ostidagi ifoda qat'iy musbat bo'lishi kerak: x − 4 > 0 va 9 − x > 0. Birinchi shartdan x > 4, ikkinchisidan x < 9 kelib chiqadi. Ikki shartning kesishmasi (4; 9) oralig'ini beradi; chegaralarni qo'shib [4; 9] deb yozish xato. Javob: (4; 9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#02b998c4"
+    },
+    {
+      "q": "lg(2x − 6) = lg(x + 1) tenglamada noma'lum x qanday shartni qanoatlantirishi kerakligini ko'rsating.",
+      "v": [
+        "x > −1",
+        "x > 3",
+        "x < 3",
+        "x > 3 va x ≠ 4"
+      ],
+      "t": 1,
+      "izoh": "Ikkala logarifm ostidagi ifoda musbat bo'lishi shart: 2x − 6 > 0 va x + 1 > 0. Birinchisidan x > 3, ikkinchisidan x > −1 chiqadi. Ikkalasi bir vaqtda bajarilishi uchun kuchliroq shart, ya'ni x > 3 olinadi. Faqat ikkinchi shartni olsa x > −1 xatosi chiqadi. Javob: x > 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#f77e1113"
+    },
+    {
+      "q": "Asosi (x − 2) bo'lgan logarifmik tenglamada asosga qanday shartlar qo'yilishi kerakligini ko'rsating.",
+      "v": [
+        "x > 2",
+        "x ≠ 2",
+        "x > 2 va x ≠ 3",
+        "x > 3"
+      ],
+      "t": 2,
+      "izoh": "Logarifm asosi musbat bo'lishi va 1 ga teng bo'lmasligi shart. Shuning uchun x − 2 > 0 va x − 2 ≠ 1 shartlari yoziladi. Birinchisidan x > 2, ikkinchisidan x ≠ 3 kelib chiqadi. Faqat musbatlikni tekshirish x > 2 xatosini beradi. Javob: x > 2 va x ≠ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#c9758eac"
+    },
+    {
+      "q": "log₄(x² − 25) ifodasi aniqlangan bo'lishi uchun x qanday oraliqlarda yotishi kerakligini aniqlang.",
+      "v": [
+        "(−5; 5)",
+        "(−∞; −5) ∪ (5; +∞)",
+        "(5; +∞)",
+        "Barcha haqiqiy sonlar"
+      ],
+      "t": 1,
+      "izoh": "Logarifm ostidagi ifoda musbat bo'lishi kerak: x² − 25 > 0. Bu tengsizlikni (x − 5)(x + 5) > 0 ko'rinishida yozamiz va oraliqlar usulini qo'llaymiz. Yechim x < −5 yoki x > 5, ya'ni (−∞; −5) ∪ (5; +∞). Tengsizlik ishorasini teskari olsa (−5; 5) chiqadi. Javob shu to'plam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#7b4f7cf8"
+    },
+    {
+      "q": "log₂x + log₂(x − 2) = 3 tenglamani logarifm xossalaridan foydalanib yeching va ildizni belgilang.",
+      "v": [
+        "x = 4",
+        "x = −2",
+        "x = 4 va x = −2",
+        "x = 2"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi logarifmi ko'paytma logarifmiga teng: log₂(x·(x − 2)) = 3. Potensiallash x² − 2x = 8 ni beradi, ya'ni x² − 2x − 8 = 0 va ildizlari x = 4 hamda x = −2. Aniqlanish sohasi x > 2 bo'lgani uchun x = −2 tashlanadi. Javob: x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-logarifm-kopaytma",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#e9c014b3"
+    },
+    {
+      "q": "log₃(x + 1) + log₃(x + 3) = 1 tenglamani yeching va aniqlanish sohasiga mos ildizni tanlang.",
+      "v": [
+        "x = −4",
+        "x = 0",
+        "x = 0 va x = −4",
+        "Ildizi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Logarifmlar yig'indisini birlashtiramiz: log₃((x + 1)(x + 3)) = 1, demak (x + 1)(x + 3) = 3. Bundan x² + 4x = 0 va ildizlari x = 0 hamda x = −4. Aniqlanish sohasi x > −1 bo'lgani uchun x = −4 chetki ildiz bo'ladi. Javob: x = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-logarifm-kopaytma",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#922ee7b8"
+    },
+    {
+      "q": "lg(x − 1) + lg(x + 2) = lg(4x − 4) tenglamaning haqiqiy ildizini toping va javobni belgilang.",
+      "v": [
+        "x = 1",
+        "x = 3",
+        "x = 2",
+        "x = 1 va x = 2"
+      ],
+      "t": 2,
+      "izoh": "Chap tomonni birlashtiramiz: lg((x − 1)(x + 2)) = lg(4x − 4). Logarifmlarni tashlab x² + x − 2 = 4x − 4 ni olamiz, ya'ni x² − 3x + 2 = 0 va ildizlari x = 1, x = 2. Aniqlanish sohasi x > 1 bo'lgani uchun x = 1 yaramaydi. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-logarifm-kopaytma",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#4297debf"
+    },
+    {
+      "q": "log₅x + log₅(x + 4) = 1 tenglamaning aniqlanish sohasiga tegishli ildizini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "5",
+        "−5",
+        "1",
+        "0,5"
+      ],
+      "t": 2,
+      "izoh": "Logarifmlar yig'indisi ko'paytma logarifmiga aylanadi: log₅(x(x + 4)) = 1, demak x² + 4x = 5. Bundan x² + 4x − 5 = 0 va ildizlari x = 1 hamda x = −5. Aniqlanish sohasida x > 0 bo'lgani uchun x = 1 qoladi. Logarifmlarni noto'g'ri qo'shib 2x + 4 = 5 desa 0,5 chiqadi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-logarifm-kopaytma",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#8b7349da"
+    },
+    {
+      "q": "log₄(x − 3) + log₄(x + 3) = 2 tenglamaning ildizini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "x = 4",
+        "x = ±5",
+        "x = 5",
+        "x = 7"
+      ],
+      "t": 2,
+      "izoh": "Logarifmlarni birlashtiramiz: log₄((x − 3)(x + 3)) = 2, ya'ni x² − 9 = 16. Bundan x² = 25 va x = 5 yoki x = −5. Aniqlanish sohasi x > 3 bo'lgani uchun faqat x = 5 qoladi, shuning uchun ±5 javobi noto'g'ri. Javob: x = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-logarifm-kopaytma",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#50ae2f6d"
+    },
+    {
+      "q": "log₂(x + 6) − log₂x = 2 tenglamani logarifmlar ayirmasi xossasidan foydalanib yeching.",
+      "v": [
+        "x = 1,5",
+        "x = 2",
+        "x = 6",
+        "x = 3"
+      ],
+      "t": 1,
+      "izoh": "Ayirma logarifmi bo'linma logarifmiga teng: log₂((x + 6)/x) = 2. Demak (x + 6)/x = 4, ya'ni x + 6 = 4x va 3x = 6. Bundan x = 2 va aniqlanish sohasi x > 0 bajariladi. O'ng tomonni 2 deb olsa x = 6, 6 ni 4 ga bo'lsa 1,5 chiqadi. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-logarifm-bolinma",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#e1bb5e2e"
+    },
+    {
+      "q": "Bozorda 1 kg olmaning narxi p so'm bo'lib, lg(p + 90000) − lg p = 1 tenglik bajariladi. Olmaning narxini toping.",
+      "v": [
+        "9000 so'm",
+        "10000 so'm",
+        "11250 so'm",
+        "90000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Logarifmlar ayirmasini bo'linma logarifmiga aylantiramiz: lg((p + 90000)/p) = 1. O'nlik logarifm asosi 10 bo'lgani uchun (p + 90000)/p = 10, ya'ni p + 90000 = 10p. Bundan 9p = 90000 va p = 10000 so'm. 9 o'rniga 10 ga bo'lsa 9000 chiqadi. Javob: 10000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-logarifm-bolinma",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#1b0d5bd9"
+    },
+    {
+      "q": "log₃(2x + 1) − log₃(x − 1) = 1 tenglamaning ildizini aniqlang va to'g'ri javobni belgilang.",
+      "v": [
+        "x = 2",
+        "x = 4",
+        "x = −2",
+        "x = 1"
+      ],
+      "t": 1,
+      "izoh": "Ayirmani bo'linmaga aylantiramiz: log₃((2x + 1)/(x − 1)) = 1, demak (2x + 1)/(x − 1) = 3. Bundan 2x + 1 = 3x − 3 va x = 4. Aniqlanish sohasi x > 1 bajariladi. O'ng tomonda ishorani almashtirib 2x + 1 = 3x + 3 desa x = −2 chiqadi. Javob: x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-logarifm-bolinma",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#4599dfa2"
+    },
+    {
+      "q": "lg(3x − 2) − lg(x + 4) = 0 tenglamaning yechimini toping va to'g'ri variantni tanlang.",
+      "v": [
+        "x = 1",
+        "x = −3",
+        "x = 6",
+        "x = 3"
+      ],
+      "t": 3,
+      "izoh": "Ayirma nolga teng bo'lsa, logarifmlar teng bo'ladi: lg(3x − 2) = lg(x + 4). Demak 3x − 2 = x + 4, bundan 2x = 6 va x = 3. Aniqlanish sohasi 3x − 2 > 0 hamda x + 4 > 0 bajariladi. 2 ga bo'lishni unutsa 6 chiqadi. Javob: x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-logarifm-bolinma",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#0798e8c1"
+    },
+    {
+      "q": "Xurshid log₇(x² − 15) = 2 tenglamani yechdi va uning musbat ildizini tanladi. U qaysi sonni topgan?",
+      "v": [
+        "8",
+        "−8",
+        "64",
+        "34"
+      ],
+      "t": 0,
+      "izoh": "Potensiallaymiz: x² − 15 = 7² = 49. Bundan x² = 64 va x = 8 yoki x = −8 kelib chiqadi. Shartda musbat ildiz so'ralgani uchun Xurshid 8 ni topgan. 49 dan 15 ni ayirib 34 olish yoki ildiz olishni unutib 64 deyish tipik xatolar. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ichki-ifoda",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#11da3cbe"
+    },
+    {
+      "q": "lg(x² + 9x) = 1 tenglamaning manfiy ildizini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "−1",
+        "−9",
+        "10",
+        "−10"
+      ],
+      "t": 3,
+      "izoh": "O'nlik logarifm asosi 10, shuning uchun x² + 9x = 10. Bundan x² + 9x − 10 = 0 va ildizlari x = 1 hamda x = −10. Manfiy ildiz so'ralgani uchun x = −10 olinadi; tekshiruv 100 − 90 = 10 > 0 ni beradi. Javob: −10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ichki-ifoda",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#1c213e26"
+    },
+    {
+      "q": "log₅(x² − 4x + 29) = 2 tenglamaning ildizlarini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "x = 2",
+        "x = 2 va x = −2",
+        "x = ±5",
+        "Ildizi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Potensiallaymiz: x² − 4x + 29 = 5² = 25. Bundan x² − 4x + 4 = 0, ya'ni (x − 2)² = 0 va yagona ildiz x = 2. Logarifm ostidagi ifoda x = 2 da 25 ga teng, demak musbatlik sharti bajariladi. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ichki-ifoda",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#40981749"
+    },
+    {
+      "q": "log₃(x² + 2x) = log₃(3x + 6) tenglamaning aniqlanish sohasiga mos ildizini toping.",
+      "v": [
+        "x = −2",
+        "x = 6",
+        "x = 3",
+        "x = 3 va x = −2"
+      ],
+      "t": 2,
+      "izoh": "Asoslar teng bo'lgani uchun x² + 2x = 3x + 6 deb yozamiz. Bundan x² − x − 6 = 0 va ildizlari x = 3 hamda x = −2. x = −2 da 3x + 6 = 0 bo'ladi, logarifm esa noldan olinmaydi, shuning uchun u chetki ildiz. Javob: x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ichki-ifoda",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#e522302a"
+    },
+    {
+      "q": "log₃x + logₓ3 = 2,5 tenglamaning katta ildizini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "3",
+        "√3",
+        "81",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "logₓ3 = 1/log₃x bo'lgani uchun t = log₃x deb belgilaymiz va t + 1/t = 2,5 ni olamiz. Ikki tomonni t ga ko'paytirib 2t² − 5t + 2 = 0 ni hosil qilamiz, ildizlari t = 2 va t = 0,5. Demak x = 3² = 9 yoki x = √3, ulardan kattasi 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asos-almashtirish-teskari",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#5beffaf4"
+    },
+    {
+      "q": "log₇x + logₓ7 = 2 tenglamani qanoatlantiruvchi x ning qiymatini toping va javobni belgilang.",
+      "v": [
+        "x = 7",
+        "x = 1",
+        "x = 49",
+        "x = 14"
+      ],
+      "t": 0,
+      "izoh": "t = log₇x deb belgilaymiz, u holda logₓ7 = 1/t va tenglama t + 1/t = 2 ko'rinishini oladi. Bundan t² − 2t + 1 = 0, ya'ni (t − 1)² = 0 va t = 1. Demak log₇x = 1 va x = 7. x = 1 asos uchun ham, argument uchun ham yaramaydi. Javob: x = 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asos-almashtirish-teskari",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#138c097f"
+    },
+    {
+      "q": "logₓ9 = 2·logₓ3 ekanini hisobga olib, logₓ9 + logₓ3 = 3 tenglamaning asosini toping.",
+      "v": [
+        "9",
+        "3",
+        "27",
+        "1/3"
+      ],
+      "t": 1,
+      "izoh": "logₓ9 = logₓ3² = 2·logₓ3 bo'lgani uchun tenglama 3·logₓ3 = 3 ko'rinishiga keladi. Bundan logₓ3 = 1, ya'ni x¹ = 3 va x = 3. Boshqacha yo'l: logₓ9 + logₓ3 = logₓ27 = 3 dan x³ = 27 kelib chiqadi. Argumentlarni ko'paytirish o'rniga qo'shib logₓ12 = 3 desa taxminan 2,3, x³ = 27 dan ildiz olishni unutsa 27, argumentning o'zini asos deb olsa 9, asosni teskari olsa 1/3 chiqadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-almashtirish-teskari",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#2297630d"
+    },
+    {
+      "q": "log₂4 = 2 ekanini bilgan holda log₄x · log₂4 = 3 tenglamaning ildizini toping.",
+      "v": [
+        "x = 12",
+        "x = 64",
+        "x = 6",
+        "x = 8"
+      ],
+      "t": 3,
+      "izoh": "log₂4 = 2 bo'lgani uchun tenglama 2·log₄x = 3 ko'rinishini oladi. Bundan log₄x = 1,5 va x = 4^(1,5) = 8. 4 = 2² bo'lgani uchun 4^(1,5) = 2³ = 8 deb ham hisoblash mumkin. Ko'rsatkichni asosga ko'paytirib 6 olish tipik xato. Javob: x = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asos-almashtirish-teskari",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#951ce477"
+    },
+    {
+      "q": "lg(x² − 5x + 10) = 1 tenglamaning barcha ildizlari yig'indisini hisoblang va javobni belgilang.",
+      "v": [
+        "0",
+        "−5",
+        "5",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "O'nlik logarifm asosi 10 bo'lgani uchun x² − 5x + 10 = 10. Bundan x² − 5x = 0, ya'ni x(x − 5) = 0 va ildizlari x = 0 hamda x = 5. Har ikkalasida logarifm ostidagi ifoda 10 ga teng, demak ikkalasi ham maqbul. Yig'indi 0 + 5 = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-yigindisi-kopaytmasi",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#6c63f58e"
+    },
+    {
+      "q": "log₂(x² − 7x + 16) = 2 tenglamaning ildizlari ko'paytmasini toping va to'g'ri variantni tanlang.",
+      "v": [
+        "12",
+        "7",
+        "−12",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Potensiallaymiz: x² − 7x + 16 = 2² = 4. Bundan x² − 7x + 12 = 0 va Viyet teoremasiga ko'ra ildizlar ko'paytmasi 12, yig'indisi esa 7. Ildizlar x = 3 va x = 4 bo'lib, ikkalasida ham logarifm ostidagi ifoda 4 ga teng. Ko'paytma o'rniga yig'indini olsa 7 chiqadi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-yigindisi-kopaytmasi",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#45d7330d"
+    },
+    {
+      "q": "lg(x² − 11x + 40) = 1 tenglamaning ildizlari ayirmasi modulini toping va javobni belgilang.",
+      "v": [
+        "11",
+        "30",
+        "5",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "Tenglamadan x² − 11x + 40 = 10, ya'ni x² − 11x + 30 = 0 hosil bo'ladi. Uning ildizlari x = 5 va x = 6, ikkalasida ham logarifm ostidagi ifoda 10 ga teng. Ildizlar ayirmasi moduli |6 − 5| = 1. Viyet bo'yicha yig'indi 11 va ko'paytma 30 ni javob deb olish xato. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-yigindisi-kopaytmasi",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#6770b7a5"
+    },
+    {
+      "q": "Yangi o'zgaruvchi kiritib, (lg x)² − 3·lg x + 2 = 0 tenglamaning ildizlari ko'paytmasini toping.",
+      "v": [
+        "1000",
+        "110",
+        "2",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "t = lg x deb belgilaymiz, u holda t² − 3t + 2 = 0 va t = 1 yoki t = 2. Bundan x = 10¹ = 10 hamda x = 10² = 100 kelib chiqadi. Ildizlar ko'paytmasi 10·100 = 1000 ga teng. Yig'indini olsa 110, t larning ko'paytmasini olsa 2 chiqadi. Javob: 1000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yangi-ozgaruvchi-kvadrat",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#d02fc052"
+    },
+    {
+      "q": "(log₂x)² − 5·log₂x + 6 = 0 tenglamaning kattaroq ildizini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "4",
+        "8",
+        "3",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "t = log₂x almashtirish tenglamani t² − 5t + 6 = 0 ko'rinishiga keltiradi, ildizlari t = 2 va t = 3. Demak x = 2² = 4 yoki x = 2³ = 8 bo'ladi. Ulardan kattasi 8. t larning o'zini javob deb olsa 3 chiqadi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yangi-ozgaruvchi-kvadrat",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#c722f658"
+    },
+    {
+      "q": "(log₃x)² − 4 = 0 tenglamaning barcha ildizlari ko'paytmasini hisoblang va javobni tanlang.",
+      "v": [
+        "9",
+        "81",
+        "1",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "t = log₃x belgilash bilan t² = 4, ya'ni t = 2 yoki t = −2 hosil bo'ladi. Bundan x = 3² = 9 hamda x = 3^(−2) = 1/9 kelib chiqadi. Ildizlar ko'paytmasi 9·(1/9) = 1 ga teng. Faqat musbat t ni olsa 9 javobi chiqadi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yangi-ozgaruvchi-kvadrat",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#216a6f37"
+    },
+    {
+      "q": "Laboratoriyada o'lchangan x kattalik uchun (lg x)² = 3·lg x + 4 tenglik olindi. x ning katta qiymatini toping.",
+      "v": [
+        "1000",
+        "0,1",
+        "4",
+        "10000"
+      ],
+      "t": 3,
+      "izoh": "t = lg x deb olamiz va t² − 3t − 4 = 0 tenglamani hosil qilamiz. Uning ildizlari t = 4 va t = −1, demak x = 10⁴ = 10000 yoki x = 10^(−1) = 0,1. Katta qiymat 10000 ga teng. t ni 3 deb olsa 1000 chiqadi. Javob: 10000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yangi-ozgaruvchi-kvadrat",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#c8d8af7c"
+    },
+    {
+      "q": "2·(log₄x)² − 3·log₄x + 1 = 0 tenglamaning kichik ildizini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "2",
+        "4",
+        "0,5",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "t = log₄x almashtirish 2t² − 3t + 1 = 0 ni beradi, ildizlari t = 1 va t = 0,5. Demak x = 4¹ = 4 yoki x = 4^(0,5) = 2. Ulardan kichigi 2 ga teng. t ning o'zini javob deb olsa 0,5 chiqadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yangi-ozgaruvchi-kvadrat",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#a4554575"
+    },
+    {
+      "q": "Asoslarni birlashtirib, log₄x + log₁₆x = 3 tenglamaning ildizini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "8",
+        "16",
+        "64",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "16 = 4² bo'lgani uchun log₁₆x = log₄x : 2 ga teng. Tenglama log₄x + log₄x : 2 = 3, ya'ni 1,5·log₄x = 3 ko'rinishini oladi. Bundan log₄x = 2 va x = 4² = 16. Koeffitsientni hisobga olmasa log₄x = 1,5 dan 8 chiqadi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asoslarni-birlashtirish",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#2239d715"
+    },
+    {
+      "q": "log₂x + log₄x = 9 tenglamani asoslarni bir xillashtirish yo'li bilan yeching va ildizni toping.",
+      "v": [
+        "512",
+        "8",
+        "64",
+        "32"
+      ],
+      "t": 2,
+      "izoh": "4 = 2² bo'lgani uchun log₄x = log₂x : 2. Tenglama 1,5·log₂x = 9 ko'rinishiga keladi, bundan log₂x = 6 va x = 2⁶ = 64. Koeffitsientni e'tibordan chiqarib log₂x = 9 desa 512 chiqadi. Javob: 64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asoslarni-birlashtirish",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#621adae4"
+    },
+    {
+      "q": "log₃x + log₉x + log₈₁x = 7 tenglamaning ildizini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "27",
+        "243",
+        "9",
+        "81"
+      ],
+      "t": 3,
+      "izoh": "9 = 3² va 81 = 3⁴ bo'lgani uchun log₉x = log₃x : 2, log₈₁x = log₃x : 4. Yig'indi log₃x·(1 + 0,5 + 0,25) = 1,75·log₃x = 7 ni beradi. Bundan log₃x = 4 va x = 3⁴ = 81. Tekshirish: 4 + 2 + 1 = 7. Xato hisobda log₃x = 5 desa 243, log₃x = 3 desa 27, log₃x = 2 desa 9 chiqadi. Javob: 81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asoslarni-birlashtirish",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#ccac4601"
+    },
+    {
+      "q": "log₂x − log₈x = 2 tenglamaning yechimini aniqlang va to'g'ri variantni tanlang.",
+      "v": [
+        "8",
+        "4",
+        "16",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "8 = 2³ bo'lgani uchun log₈x = log₂x : 3. Tenglama log₂x − log₂x : 3 = 2, ya'ni (2/3)·log₂x = 2 ko'rinishini oladi. Bundan log₂x = 3 va x = 2³ = 8. Koeffitsientsiz hisoblab log₂x = 2 desa 4 chiqadi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asoslarni-birlashtirish",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#0cf91213"
+    },
+    {
+      "q": "Muhandis hisob-kitobida log₅x + log₂₅x = 3 munosabat hosil bo'ldi. Noma'lum x ning qiymatini toping.",
+      "v": [
+        "125",
+        "25",
+        "5",
+        "625"
+      ],
+      "t": 1,
+      "izoh": "25 = 5² bo'lgani uchun log₂₅x = log₅x : 2. Tenglama 1,5·log₅x = 3 ko'rinishiga keladi, bundan log₅x = 2 va x = 5² = 25. Koeffitsientni hisobga olmay log₅x = 3 desa 125 xato javobi chiqadi. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asoslarni-birlashtirish",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#61106ff4"
+    },
+    {
+      "q": "lg(x + 3) + lg(x − 1) = lg(4x − 3) tenglamani yechishda hosil bo'lgan ildizlardan qaysi biri chetki ildiz bo'ladi?",
+      "v": [
+        "x = 2",
+        "Ikkala ildiz ham to'g'ri",
+        "x = 0",
+        "Chetki ildiz topilmaydi"
+      ],
+      "t": 2,
+      "izoh": "Chap tomonni birlashtirsak lg((x + 3)(x − 1)) = lg(4x − 3) va x² + 2x − 3 = 4x − 3 hosil bo'ladi. Bundan x² − 2x = 0, ya'ni x = 0 va x = 2. Aniqlanish sohasi x > 1 talab qilgani uchun x = 0 chetki ildiz bo'ladi. Javob: x = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chetki-ildiz-tekshirish",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#e7009e79"
+    },
+    {
+      "q": "log₃(x − 1) + log₃(x − 3) = 1 tenglama nechta haqiqiy ildizga ega ekanligini aniqlang.",
+      "v": [
+        "2 ta",
+        "Ildizi yo'q",
+        "3 ta",
+        "1 ta"
+      ],
+      "t": 3,
+      "izoh": "Logarifmlarni birlashtirib (x − 1)(x − 3) = 3 ni olamiz, ya'ni x² − 4x = 0 va x = 0 hamda x = 4. Aniqlanish sohasi x > 3 shartini beradi, shuning uchun x = 0 yaramaydi. Faqat x = 4 qoladi, demak tenglamaning bitta ildizi bor. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetki-ildiz-tekshirish",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#45917a17"
+    },
+    {
+      "q": "lg(x² − 4) = lg(3x) tenglamani yechib, chetki ildizni tashlagandan keyin qanday javob qoladi?",
+      "v": [
+        "x = 4",
+        "x = −1",
+        "x = 4 va x = −1",
+        "x = 1"
+      ],
+      "t": 0,
+      "izoh": "Asoslar bir xil bo'lgani uchun x² − 4 = 3x deb yozamiz va x² − 3x − 4 = 0 ni olamiz. Ildizlari x = 4 va x = −1. Aniqlanish sohasida 3x > 0, ya'ni x > 0 talab qilinadi, shuning uchun x = −1 chetki ildiz. Javob: x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetki-ildiz-tekshirish",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#4e6fc3e2"
+    },
+    {
+      "q": "Bahodir log₂(x − 1) + log₂(x + 5) = 4 tenglamani yechib ikkita son oldi. Qaysi son javob bo'la olmaydi?",
+      "v": [
+        "x = 3",
+        "x = −7",
+        "Ikkalasi ham javob",
+        "Ikkalasi ham javob emas"
+      ],
+      "t": 1,
+      "izoh": "Logarifmlarni birlashtiramiz: (x − 1)(x + 5) = 2⁴ = 16, ya'ni x² + 4x − 21 = 0. Ildizlari x = 3 va x = −7. Aniqlanish sohasi x > 1 bo'lgani uchun x = −7 da logarifm ostidagi ifodalar manfiy chiqadi. Javob: x = −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetki-ildiz-tekshirish",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#6558fb30"
+    },
+    {
+      "q": "Logarifmik tenglamani potensiallash bilan yechganda chetki ildizlar nima sababdan paydo bo'lishini tushuntiring.",
+      "v": [
+        "Logarifm funksiyasi kamayuvchi bo'lgani uchun",
+        "Asos 1 dan katta bo'lgani uchun",
+        "Potensiallash aniqlanish sohasini kengaytirib yuboradi",
+        "Ildizlar soni doim ikkitadan ortiq bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki tenglamada logarifm ostidagi ifodalar musbat bo'lishi talab qilinadi. Potensiallashdan keyin hosil bo'lgan ratsional tenglamada bu cheklov yo'qoladi va aniqlanish sohasi kengayadi. Shu sababli yangi tenglamaning ba'zi ildizlari dastlabki tenglamani qanoatlantirmaydi. Javob: potensiallash aniqlanish sohasini kengaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chetki-ildiz-nazariya",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#ff17e487"
+    },
+    {
+      "q": "Asosi (x − 1) bo'lgan logarifmda 9 sonining logarifmi 2 ga teng. x ning qiymatini toping.",
+      "v": [
+        "−2",
+        "10",
+        "4 va −2",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Shartdan (x − 1)² = 9 kelib chiqadi, demak x − 1 = 3 yoki x − 1 = −3. Bundan x = 4 va x = −2 hosil bo'ladi. Logarifm asosi musbat bo'lishi kerak, x = −2 da asos −3 chiqadi va bu yaramaydi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asosi-ozgaruvchi-tenglama",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#0773fca6"
+    },
+    {
+      "q": "Asosi (2x − 3) bo'lgan logarifmda 49 sonining logarifmi 2 ga teng bo'lsa, x nechaga teng?",
+      "v": [
+        "5",
+        "−2",
+        "26",
+        "5 va −2"
+      ],
+      "t": 0,
+      "izoh": "Shartdan (2x − 3)² = 49, ya'ni 2x − 3 = 7 yoki 2x − 3 = −7. Birinchisidan x = 5, ikkinchisidan x = −2 chiqadi. x = −2 da asos −7 bo'lib qoladi, manfiy asos esa mumkin emas. 49 ga 3 ni qo'shib 2 ga bo'lsa 26 xatosi chiqadi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asosi-ozgaruvchi-tenglama",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#39bb1943"
+    },
+    {
+      "q": "Asosi x bo'lgan logarifmda (x + 6) sonining logarifmi 2 ga teng. Asos qanday songa teng bo'ladi?",
+      "v": [
+        "−2",
+        "3",
+        "6",
+        "3 va −2"
+      ],
+      "t": 1,
+      "izoh": "Shartdan x² = x + 6, ya'ni x² − x − 6 = 0 hosil bo'ladi va ildizlari x = 3 hamda x = −2. Asos musbat va 1 dan farqli bo'lishi kerak, shuning uchun x = −2 tashlanadi. Tekshiruv: 3² = 9 = 3 + 6, demak x = 3 to'g'ri. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asosi-ozgaruvchi-tenglama",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#8113bdee"
+    },
+    {
+      "q": "Asosi (x − 2) bo'lgan logarifm uchun (3x − 8) sonining logarifmi 1 ga teng bo'lsa, qanday xulosa to'g'ri?",
+      "v": [
+        "x = 3",
+        "x = 5",
+        "Tenglamaning yechimi yo'q",
+        "x = 2"
+      ],
+      "t": 2,
+      "izoh": "Logarifm 1 ga teng bo'lsa, argument asosga teng bo'ladi: x − 2 = 3x − 8. Bundan 2x = 6 va x = 3 chiqadi. Ammo x = 3 da asos x − 2 = 1 bo'lib qoladi, asos esa 1 ga teng bo'la olmaydi. Shuning uchun tenglama yechimga ega emas. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asosi-ozgaruvchi-tenglama",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#0daa041e"
+    },
+    {
+      "q": "Asosi (x + 3) bo'lgan logarifmda (x² + 6x + 9) sonining logarifmi qanday qiymatga teng bo'ladi?",
+      "v": [
+        "1",
+        "x + 3",
+        "Aniqlanmagan",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Argumentni yoyamiz: x² + 6x + 9 = (x + 3)². Demak asosi (x + 3) bo'lgan logarifmda (x + 3)² ning logarifmi so'ralmoqda. Logarifm xossasiga ko'ra u 2 ga teng, chunki asosning kvadrati olingan. Bu natija x > −3 va x ≠ −2 shartlarida o'rinli. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asosi-ozgaruvchi-tenglama",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#c8a5311f"
+    },
+    {
+      "q": "Namangandagi bir qishloqda aholi soni har yili 1,05 marta ko'payadi. Aholi ikki barobar ortishi uchun kerakli yillar sonini qaysi ifoda beradi?",
+      "v": [
+        "lg2 : lg1,05",
+        "lg1,05 : lg2",
+        "2 : 1,05",
+        "lg2 · lg1,05"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich son a bo'lsa, t yildan keyin a·1,05^t bo'ladi va shart a·1,05^t = 2a ko'rinishida yoziladi. Bundan 1,05^t = 2 hosil bo'ladi. Ikki tomondan o'nlik logarifm olsak t·lg1,05 = lg2, demak t = lg2 : lg1,05. Javob shu ifoda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-aholi-osishi",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#44ccff60"
+    },
+    {
+      "q": "Bir shaharchada aholi soni har yili ikki barobar ortadi deb hisoblansa, 12500 kishidan 200000 kishiga yetishi uchun necha yil kerak?",
+      "v": [
+        "8 yil",
+        "4 yil",
+        "16 yil",
+        "5 yil"
+      ],
+      "t": 1,
+      "izoh": "Shartga ko'ra 12500·2^t = 200000 tenglama tuziladi. Ikki tomonni 12500 ga bo'lsak 2^t = 16 hosil bo'ladi. Logarifm ta'rifiga ko'ra t = log₂16 = 4. Nisbat 16 ni javob deb olish yoki 2·8 ni chalkashtirish tipik xatolardir. Javob: 4 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-aholi-osishi",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#9d92574a"
+    },
+    {
+      "q": "Bakteriyalar soni har 3 soatda uch barobarga ko'payadi. Dastlab 2000 ta bakteriya bo'lsa, ularning soni 54000 taga yetishi uchun necha soat kerak?",
+      "v": [
+        "3 soat",
+        "27 soat",
+        "9 soat",
+        "6 soat"
+      ],
+      "t": 2,
+      "izoh": "Avval necha marta ko'payganini topamiz: 54000 : 2000 = 27. Har bir bosqichda son 3 barobar ortgani uchun 3ⁿ = 27 va n = log₃27 = 3 bosqich kerak. Har bosqich 3 soat davom etadi, demak jami 3·3 = 9 soat. Bosqichlar sonini javob deb olsa 3 soat chiqadi. Javob: 9 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-aholi-osishi",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#a9f10017"
+    },
+    {
+      "q": "Baliqchilik xo'jaligida baliqlar soni har olti oyda 4 barobar ko'payadi. Hozir 500 ta baliq bor bo'lsa, 32000 taga yetishi uchun necha oy kerak?",
+      "v": [
+        "24 oy",
+        "12 oy",
+        "3 oy",
+        "18 oy"
+      ],
+      "t": 3,
+      "izoh": "Ko'payish nisbati 32000 : 500 = 64 ga teng. Har bosqichda son 4 barobar ortgani uchun 4ⁿ = 64 va n = log₄64 = 3 bosqich kerak bo'ladi. Bir bosqich olti oy, demak jami 3·6 = 18 oy. Bosqichlar sonini oy deb olsa 3 oy xatosi chiqadi. Javob: 18 oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-aholi-osishi",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#5963f75f"
+    },
+    {
+      "q": "Ijtimoiy tarmoqdagi videoni ko'rganlar soni har kuni 5 barobar ortmoqda. Birinchi kuni 40 kishi ko'rgan bo'lsa, necha kundan keyin ko'rishlar 25000 taga yetadi?",
+      "v": [
+        "4 kun",
+        "5 kun",
+        "625 kun",
+        "3 kun"
+      ],
+      "t": 0,
+      "izoh": "Tenglama 40·5^t = 25000 ko'rinishida yoziladi. Ikki tomonni 40 ga bo'lsak 5^t = 625 hosil bo'ladi. 625 = 5⁴ bo'lgani uchun t = log₅625 = 4 kun. Nisbatning o'zini javob deb olsa 625 kun degan mantiqsiz natija chiqadi. Javob: 4 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-aholi-osishi",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#49cd90d8"
+    },
+    {
+      "q": "Sinf xonasida o'lchangan tovush uchun lg(I : I₀) + lg5 + lg2 = 5 tenglik hosil bo'ldi. Tovush darajasi L = 10·lg(I : I₀) bo'lsa, u necha dB ga teng?",
+      "v": [
+        "50 dB",
+        "40 dB",
+        "4 dB",
+        "30 dB"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma logarifmi xossasiga ko'ra lg5 + lg2 = lg10 = 1. Tenglama lg(I : I₀) + 1 = 5 ko'rinishiga keladi, bundan lg(I : I₀) = 4. Endi L = 10·4 = 40 dB. Qo'shiluvchi logarifmlarni e'tibordan chiqarsa 50 dB, 10 koeffitsientini unutsa 4 dB, ikkala logarifmni ham 1 deb hisoblasa 30 dB chiqadi. Javob: 40 dB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-tovush-detsibel",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#16fc5995"
+    },
+    {
+      "q": "Kontsert zalidagi tovush darajasi 80 dB ni tashkil etadi. L = 10·lg(I : I₀) formuladan I : I₀ nisbatini toping.",
+      "v": [
+        "10⁸⁰",
+        "8",
+        "10⁸",
+        "10⁴"
+      ],
+      "t": 2,
+      "izoh": "Formuladan 80 = 10·lg(I : I₀) tenglamani yozamiz. Ikki tomonni 10 ga bo'lsak lg(I : I₀) = 8 hosil bo'ladi. Logarifm ta'rifiga ko'ra I : I₀ = 10⁸. Bo'lishni unutsa 10⁸⁰, logarifmning o'zini javob deb olsa 8 chiqadi. Javob: 10⁸.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-tovush-detsibel",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#aa71e200"
+    },
+    {
+      "q": "Zavod sexida shovqin darajasi 90 dB, kutubxonada esa 30 dB. Sexdagi tovush intensivligi kutubxonadagidan necha marta katta ekanligini toping.",
+      "v": [
+        "3 marta",
+        "60 marta",
+        "1000 marta",
+        "1000000 marta"
+      ],
+      "t": 3,
+      "izoh": "Darajalar ayirmasi 90 − 30 = 60 dB ga teng. L = 10·lg(I : I₀) formulaga ko'ra 60 = 10·lg k, bunda k intensivliklar nisbati. Bundan lg k = 6 va k = 10⁶ = 1000000 marta. Darajalarni bo'lib 3 marta deyish keng tarqalgan xato. Javob: 1000000 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-tovush-detsibel",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#2c95e118"
+    },
+    {
+      "q": "Ovoz kuchaytirgich tovush intensivligini 100 marta oshirsa, tovushning detsibeldagi darajasi necha birlikka ortishini hisoblang.",
+      "v": [
+        "20 dB",
+        "100 dB",
+        "2 dB",
+        "10 dB"
+      ],
+      "t": 0,
+      "izoh": "Yangi daraja L₂ = 10·lg(100·I : I₀) ko'rinishida yoziladi. Ko'paytma logarifmi xossasiga ko'ra u 10·lg100 + 10·lg(I : I₀) ga teng. lg100 = 2 bo'lgani uchun ortish 10·2 = 20 dB. Logarifmning o'zini javob deb olsa 2 dB chiqadi. Javob: 20 dB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-tovush-detsibel",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#0a67e143"
+    },
+    {
+      "q": "Kimyo darsida eritma suyultirilgach vodorod ionlari konsentratsiyasi 10 marta kamaydi va pH = −lg[H⁺] formula bo'yicha yangi qiymat 6 ga teng bo'ldi. Suyultirishdan oldingi pH nechaga teng edi?",
+      "v": [
+        "7",
+        "5",
+        "60",
+        "0,6"
+      ],
+      "t": 1,
+      "izoh": "Yangi konsentratsiya [H⁺] : 10 ga teng, shuning uchun −lg([H⁺] : 10) = 6. Bo'linma logarifmi xossasidan −lg[H⁺] + lg10 = 6, ya'ni eski pH + 1 = 6 va eski pH = 5. Suyultirilganda pH ortishini teskari o'qisa 7, pH ni 10 ga ko'paytirsa 60, 10 ga bo'lsa 0,6 chiqadi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-eritma-pH",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#910b59ae"
+    },
+    {
+      "q": "Bir eritmaning pH ko'rsatkichi 3 ga teng. Undagi vodorod ionlari konsentratsiyasi [H⁺] necha mol/l bo'lishini aniqlang.",
+      "v": [
+        "10³ mol/l",
+        "3 mol/l",
+        "10⁻³ mol/l",
+        "0,3 mol/l"
+      ],
+      "t": 2,
+      "izoh": "pH = −lg[H⁺] formuladan lg[H⁺] = −3 kelib chiqadi. Logarifm ta'rifiga ko'ra [H⁺] = 10⁻³ mol/l. Minus ishorasini tushirib qoldirsa 10³ degan juda katta va mantiqsiz qiymat chiqadi. Javob: 10⁻³ mol/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-eritma-pH",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#89230a5b"
+    },
+    {
+      "q": "Ikki eritmadan birinchisining pH qiymati 4, ikkinchisiniki 7 ga teng. Birinchi eritmada vodorod ionlari konsentratsiyasi necha marta katta?",
+      "v": [
+        "3 marta",
+        "10000 marta",
+        "30 marta",
+        "1000 marta"
+      ],
+      "t": 3,
+      "izoh": "Birinchi eritmada [H⁺] = 10⁻⁴, ikkinchisida esa [H⁺] = 10⁻⁷ mol/l. Ularning nisbati 10⁻⁴ : 10⁻⁷ = 10³ = 1000 marta. pH lar ayirmasi 3 ni javob deb olish tipik xato. Javob: 1000 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-eritma-pH",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#d055191e"
+    },
+    {
+      "q": "Laboratoriyada tayyorlangan eritmada [H⁺] = 2·10⁻⁴ mol/l. lg2 ≈ 0,3 deb olib, eritmaning pH qiymatini hisoblang.",
+      "v": [
+        "3,7",
+        "4,3",
+        "3,3",
+        "4,7"
+      ],
+      "t": 0,
+      "izoh": "pH = −lg(2·10⁻⁴) ni ko'paytma logarifmiga ajratamiz: −(lg2 + lg10⁻⁴). lg2 ≈ 0,3 va lg10⁻⁴ = −4 bo'lgani uchun pH ≈ −(0,3 − 4) = 3,7. lg2 ni qo'shish o'rniga ayirsa 4,3 chiqadi. Javob: 3,7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-eritma-pH",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#d49a111a"
+    },
+    {
+      "q": "Aziza bankka 4000000 so'm qo'ydi, yillik daromad 25 foizni tashkil qiladi. Mablag' 7812500 so'mga yetishi uchun necha yil kerak?",
+      "v": [
+        "2 yil",
+        "3 yil",
+        "4 yil",
+        "5 yil"
+      ],
+      "t": 1,
+      "izoh": "Har yili mablag' 1,25 marta ortadi, shuning uchun 4000000·1,25^t = 7812500 tenglamani yozamiz. Ikki tomonni 4000000 ga bo'lsak 1,25^t = 1,953125 hosil bo'ladi. 1,25³ = 1,953125 bo'lgani uchun t = 3 yil. Javob: 3 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-bank-foiz",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#e686ca54"
+    },
+    {
+      "q": "Yillik 15 foiz daromadli omonatda mablag' ikki barobar ortishi uchun kerakli yillar sonini logarifm orqali ifodalang.",
+      "v": [
+        "lg1,15 : lg2",
+        "2 : 1,15",
+        "lg2 : lg1,15",
+        "lg2 − lg1,15"
+      ],
+      "t": 2,
+      "izoh": "Har yili mablag' 1,15 marta ortadi, shart esa 1,15^t = 2 ko'rinishida yoziladi. Ikki tomondan o'nlik logarifm olamiz: t·lg1,15 = lg2. Bundan t = lg2 : lg1,15 kelib chiqadi. Kasrni ag'darib yozish yoki logarifmlarni ayirish tipik xatolardir. Javob: lg2 : lg1,15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-bank-foiz",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#c23add27"
+    },
+    {
+      "q": "Bir do'kon oylik savdo hajmini har oyda 1,5 marta oshirmoqda. Boshlang'ich hajm 80 million so'm bo'lsa, 270 million so'mga yetishi uchun necha oy kerak?",
+      "v": [
+        "4 oy",
+        "2 oy",
+        "5 oy",
+        "3 oy"
+      ],
+      "t": 3,
+      "izoh": "Tenglama 80·1,5^t = 270 ko'rinishida yoziladi, bundan 1,5^t = 3,375 hosil bo'ladi. 1,5² = 2,25 va 1,5³ = 3,375 bo'lgani uchun t = 3 oy. 1,5² = 2,25 da to'xtab qolsa 2 oy, boshlang'ich oyni ham bosqich deb sanasa 4 oy, 1,5⁴ = 5,0625 dan ham oshib ketsa 5 oy chiqadi. Javob: 3 oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-bank-foiz",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#32661587"
+    },
+    {
+      "q": "Kredit qoldig'i har oyda 0,8 marta kamayib bormoqda. Boshlang'ich qarz 12500000 so'm bo'lsa, qoldiq 5120000 so'mga tushishi uchun necha oy kerak?",
+      "v": [
+        "4 oy",
+        "5 oy",
+        "3 oy",
+        "8 oy"
+      ],
+      "t": 0,
+      "izoh": "Tenglama 12500000·0,8^t = 5120000 ko'rinishida yoziladi. Ikki tomonni bo'lsak 0,8^t = 0,4096 hosil bo'ladi. 0,8² = 0,64 va 0,8⁴ = 0,4096 bo'lgani uchun t = 4 oy. 0,8³ = 0,512 ni javob deb olsa 3 oy chiqadi. Javob: 4 oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-bank-foiz",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#0a09168e"
+    },
+    {
+      "q": "Bir tadbirkorning choraklik daromadi har chorakda 3 barobar ortadi. Dastlabki daromad 700000 so'm bo'lsa, 18900000 so'mga necha chorakdan keyin yetadi?",
+      "v": [
+        "2 chorak",
+        "3 chorak",
+        "4 chorak",
+        "27 chorak"
+      ],
+      "t": 1,
+      "izoh": "Daromadlar nisbatini topamiz: 18900000 : 700000 = 27. Har chorakda daromad 3 barobar ortgani uchun 3^t = 27 tenglama hosil bo'ladi. Bundan t = log₃27 = 3 chorak. Nisbatning o'zini javob deb olsa 27 chorak degan xato natija chiqadi. Javob: 3 chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-bank-foiz",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#da040a8b"
+    },
+    {
+      "q": "Kompyuterda N ta har xil holatni kodlash uchun kerakli bitlar soni k = log₂N formuladan topiladi. Bir belgi uchun 10 bit ajratilgan bo'lsa, nechta har xil holatni kodlash mumkin?",
+      "v": [
+        "100",
+        "512",
+        "1024",
+        "20"
+      ],
+      "t": 2,
+      "izoh": "Shart bo'yicha log₂N = 10 tenglama hosil bo'ladi. Logarifm ta'rifiga ko'ra N = 2¹⁰ = 1024, demak 10 bit bilan 1024 ta har xil holatni kodlash mumkin. Bir bitni kam sanab 2⁹ olsa 512, asosni 10 deb olib 10² hisoblasa 100, ko'rsatkich o'rniga ko'paytirsa 20 chiqadi. Javob: 1024.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-axborot-hajmi",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#a84ef5b0"
+    },
+    {
+      "q": "Bir o'yinda har bir savol qolgan variantlar sonini ikki barobar kamaytiradi. 4096 ta variantdan bittasini topish uchun kamida nechta savol kerak?",
+      "v": [
+        "11",
+        "2048",
+        "10",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Har savoldan keyin variantlar soni ikki marta kamaygani uchun 4096 : 2ⁿ = 1 tenglama hosil bo'ladi. Bundan 2ⁿ = 4096 va n = log₂4096. 4096 = 2¹² bo'lgani uchun n = 12 ta savol kerak. 2¹¹ = 2048 bilan chalkashtirsa 11 chiqadi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-axborot-hajmi",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#bf0010ad"
+    },
+    {
+      "q": "Yarim yemirilish uchun log₂(m₀ : m) = t : T tenglik o'rinli. m₀ = 240 g, T = 8 kun va t = 32 kun bo'lsa, qolgan massa m nechaga teng?",
+      "v": [
+        "15 g",
+        "16 g",
+        "30 g",
+        "60 g"
+      ],
+      "t": 0,
+      "izoh": "Avval o'ng tomonni hisoblaymiz: t : T = 32 : 8 = 4. Demak log₂(240 : m) = 4 va logarifm ta'rifiga ko'ra 240 : m = 2⁴ = 16. Bundan m = 240 : 16 = 15 g. Nisbatning o'zini javob deb olsa 16 g, ko'rsatkichni 3 deb sanasa 30 g, 2 deb sanasa 60 g chiqadi. Javob: 15 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-yemirilish-logarifm",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#7bfe69df"
+    },
+    {
+      "q": "Dorining qondagi konsentratsiyasi C uchun lg(C₀ : C) = 0,15·t munosabat o'rinli, bunda t — soatlarda o'lchangan vaqt. C₀ : C = 1000 bo'lganda t nechaga teng?",
+      "v": [
+        "3 soat",
+        "20 soat",
+        "45 soat",
+        "150 soat"
+      ],
+      "t": 1,
+      "izoh": "Munosabatga nisbatni qo'yamiz: lg1000 = 0,15·t. O'nlik logarifm ta'rifiga ko'ra lg1000 = 3, demak 0,15·t = 3 va t = 3 : 0,15 = 20 soat. Logarifm qiymatining o'zini javob deb olsa 3 soat, 0,15 ga bo'lish o'rniga 15 ga ko'paytirsa 45 soat, nisbatni 0,15 ga ko'paytirsa 150 soat chiqadi. Javob: 20 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-dori-konsentratsiya",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#89d0fccf"
+    },
+    {
+      "q": "Yarim yemirilish uchun m = m₀·2^(−t/T) formula o'rinli. m₀ = 96 g va T = 5 yil bo'lsa, 3 g qolishi uchun necha yil kerak?",
+      "v": [
+        "15 yil",
+        "32 yil",
+        "25 yil",
+        "20 yil"
+      ],
+      "t": 2,
+      "izoh": "Formuladan 96·2^(−t/5) = 3 tenglamani yozamiz, bundan 2^(−t/5) = 3 : 96 = 1 : 32. 32 = 2⁵ bo'lgani uchun 2^(−t/5) = 2^(−5), demak t : 5 = 5 va t = 25 yil. Nisbatning o'zini javob deb olsa 32 yil, to'rt bosqich bilan cheklansa 20 yil, uch bosqich deb olsa 15 yil chiqadi. Javob: 25 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-yemirilish-logarifm",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#2998696e"
+    },
+    {
+      "q": "Uglerod tahlilida namuna yoshi t = 5700·log₂(N₀ : N) formula bilan topiladi. Muzeydagi yog'och namuna uchun t = 22800 yil chiqdi. Namunadagi izotop miqdori boshlang'ich qiymatning qanday ulushini tashkil etadi?",
+      "v": [
+        "1/4",
+        "1/8",
+        "1/32",
+        "1/16"
+      ],
+      "t": 3,
+      "izoh": "Formuladan 22800 = 5700·log₂(N₀ : N) tenglama hosil bo'ladi, ya'ni log₂(N₀ : N) = 22800 : 5700 = 4. Logarifm ta'rifiga ko'ra N₀ : N = 2⁴ = 16, demak qolgan miqdor boshlang'ich qiymatning 1/16 qismini tashkil etadi. Logarifm qiymati 4 ni maxraj deb olsa 1/4, bosqichni 3 deb sanasa 1/8, 5 deb sanasa 1/32 chiqadi. Javob: 1/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-yemirilish-logarifm",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#29e44351"
+    },
+    {
+      "q": "Choy harorati bilan xona harorati orasidagi farq har 10 daqiqada ikki marta kamayadi. Farq 64°C dan 4°C ga tushishi uchun necha daqiqa kerak?",
+      "v": [
+        "40 daqiqa",
+        "30 daqiqa",
+        "20 daqiqa",
+        "16 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Haroratlar farqi 64 : 4 = 16 marta kamaygan. Har bosqichda farq ikki barobar kamaygani uchun 2ⁿ = 16 va n = log₂16 = 4 bosqich o'tgan. Bir bosqich 10 daqiqa, demak jami 4·10 = 40 daqiqa. Nisbatning o'zini javob deb olsa 16 daqiqa chiqadi. Javob: 40 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-sovish-harorat",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#e6e8fa24"
+    },
+    {
+      "q": "Qaynatilgan sut xona haroratida sovutilmoqda. Sut va xona haroratlari orasidagi farq har 15 daqiqada uch marta kamayadi. Bu farq 81°C dan 3°C ga tushguncha necha daqiqa o'tadi?",
+      "v": [
+        "30 daqiqa",
+        "45 daqiqa",
+        "60 daqiqa",
+        "27 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Farq 81 : 3 = 27 marta kamaygan. Har bosqichda u uch barobar kamayadi, shuning uchun 3ⁿ = 27 va n = log₃27 = 3 bosqich kerak. Bir bosqich 15 daqiqa, demak jami 3·15 = 45 daqiqa. To'rt bosqich deb olsa 60 daqiqa xatosi chiqadi. Javob: 45 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-sovish-harorat",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#56430132"
+    },
+    {
+      "q": "Isitgich o'chirilgach xonadagi ortiqcha harorat har soatda to'rt marta kamayadi. Ortiqcha harorat 32°C dan 0,5°C ga tushishi uchun necha soat kerak?",
+      "v": [
+        "4 soat",
+        "2 soat",
+        "3 soat",
+        "6 soat"
+      ],
+      "t": 2,
+      "izoh": "Ortiqcha harorat 32 : 0,5 = 64 marta kamaygan. Har soatda u to'rt barobar kamaygani uchun 4ⁿ = 64 tenglama hosil bo'ladi. Bundan n = log₄64 = 3 soat. 64 ni 4 ga bo'lib 16 dan chiqib ketsa yoki bosqichlarni noto'g'ri sanasa 4 soat chiqadi. Javob: 3 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-sovish-harorat",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#b5f21d6f"
+    },
+    {
+      "q": "Rixter shkalasida magnituda M = lg(A : A₀) formula bilan topiladi. Qayd etilgan zilzila uchun lg(A : A₀) = lg2 + lg50 + 4 tenglik o'rinli bo'lsa, magnituda nechaga teng?",
+      "v": [
+        "4",
+        "5,7",
+        "2",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytma logarifmi xossasiga ko'ra lg2 + lg50 = lg100 = 2. Shuning uchun lg(A : A₀) = 2 + 4 = 6, ya'ni magnituda M = 6 ga teng. Logarifmli hadlarni tashlab yuborsa 4, qo'shiluvchi 4 ni unutsa 2, argumentlarni ko'paytirish o'rniga qo'shib lg52 ≈ 1,7 desa 5,7 chiqadi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-zilzila-magnituda",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#ff5bc3c0"
+    },
+    {
+      "q": "Ikki zilzilaning Rixter shkalasidagi magnitudalari 7 va 3 ga teng. Birinchisining tebranish amplitudasi ikkinchisinikidan necha marta katta?",
+      "v": [
+        "10000 marta",
+        "4 marta",
+        "40 marta",
+        "1000 marta"
+      ],
+      "t": 0,
+      "izoh": "Magnituda M = lg(A : A₀) bo'lgani uchun A₁ : A₀ = 10⁷ va A₂ : A₀ = 10³. Amplitudalar nisbati 10⁷ : 10³ = 10⁴ = 10000 marta. Magnitudalar ayirmasi 4 ni javob deb olish tipik xato. Javob: 10000 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-zilzila-magnituda",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#10202a7c"
+    },
+    {
+      "q": "Zilzila tebranishlari amplitudasi 100 marta ortsa, uning Rixter shkalasidagi magnitudasi necha birlikka ortadi?",
+      "v": [
+        "100",
+        "2",
+        "10",
+        "20"
+      ],
+      "t": 1,
+      "izoh": "Yangi magnituda M₂ = lg(100·A : A₀) ko'rinishida yoziladi. Ko'paytma logarifmi xossasiga ko'ra u lg100 + lg(A : A₀) ga teng. lg100 = 2 bo'lgani uchun magnituda 2 birlikka ortadi. Detsibel formulasidagi 10 koeffitsientini qo'shsa 20 chiqadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-zilzila-magnituda",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#0aa919b5"
+    },
+    {
+      "q": "x^(lg x) = 10000 tenglamaning barcha ildizlarini toping va ularni to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "x = 100",
+        "x = 10000",
+        "x = 100 va x = 0,01",
+        "x = 10 va x = 0,1"
+      ],
+      "t": 2,
+      "izoh": "Ikki tomondan o'nlik logarifm olamiz: lg x·lg x = 4, ya'ni (lg x)² = 4. Bundan lg x = 2 yoki lg x = −2 kelib chiqadi. Demak x = 10² = 100 va x = 10^(−2) = 0,01. Manfiy qiymatni tashlab yuborsa faqat 100 qoladi. Javob: x = 100 va x = 0,01.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifmli-korsatkichli-tenglama",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#5f833876"
+    },
+    {
+      "q": "x^(log₂x) = 16 tenglamaning ildizlari yig'indisini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "4",
+        "16",
+        "2",
+        "4,25"
+      ],
+      "t": 3,
+      "izoh": "Ikki tomondan asosi 2 bo'lgan logarifm olamiz: log₂x·log₂x = 4, ya'ni (log₂x)² = 4. Bundan log₂x = 2 yoki log₂x = −2, demak x = 4 va x = 0,25. Ildizlar yig'indisi 4 + 0,25 = 4,25. Faqat bitta ildizni olsa 4 chiqadi. Javob: 4,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifmli-korsatkichli-tenglama",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#16e3846f"
+    },
+    {
+      "q": "x^(lg x + 1) = 100 tenglamaning butun songa teng bo'lgan ildizini toping va javobni belgilang.",
+      "v": [
+        "10",
+        "100",
+        "0,01",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Ikki tomondan o'nlik logarifm olamiz: (lg x + 1)·lg x = 2. t = lg x belgilash bilan t² + t − 2 = 0 hosil bo'ladi, ildizlari t = 1 va t = −2. Demak x = 10 hamda x = 0,01, ulardan butun soni 10 ga teng. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifmli-korsatkichli-tenglama",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#d3c16fe0"
+    },
+    {
+      "q": "Asosiy logarifmik ayniyatdan foydalanib, 3^(log₃(4x − 5)) = 39 tenglamaning ildizini toping.",
+      "v": [
+        "39",
+        "11",
+        "8,5",
+        "34"
+      ],
+      "t": 1,
+      "izoh": "Asosiy logarifmik ayniyatga ko'ra 3^(log₃a) = a, shuning uchun chap tomon 4x − 5 ga teng. Tenglama 4x − 5 = 39 ko'rinishini oladi, bundan 4x = 44 va x = 11. Aniqlanish sohasi 4x − 5 > 0 bajariladi. Ishorani almashtirsa 8,5 chiqadi. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmli-korsatkichli-tenglama",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#325b70e0"
+    },
+    {
+      "q": "x + y = 12 va lg x + lg y = lg35 sistemasining musbat yechimlarini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "3 va 9",
+        "2 va 10",
+        "5 va 7",
+        "4 va 8"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi tenglamada logarifmlar yig'indisini birlashtiramiz: lg(xy) = lg35, demak xy = 35. Endi x + y = 12 va xy = 35 sistemasini Viyet teoremasi bilan yechamiz. Bu z² − 12z + 35 = 0 tenglamaga olib keladi, ildizlari 5 va 7. Javob: 5 va 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifmik-sistema",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#a3ae55ff"
+    },
+    {
+      "q": "log₂x + log₂y = 5 va x − y = 4 sistemasida musbat x ning qiymatini toping va javobni belgilang.",
+      "v": [
+        "4",
+        "32",
+        "16",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tenglamadan log₂(xy) = 5, demak xy = 2⁵ = 32. Ikkinchi tenglamadan x = y + 4 ni qo'yamiz va y(y + 4) = 32, ya'ni y² + 4y − 32 = 0 ni olamiz. Musbat ildiz y = 4, shuning uchun x = 8. Ko'paytmaning o'zini javob deb olsa 32 chiqadi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifmik-sistema",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#817a6a2a"
+    },
+    {
+      "q": "lg x − lg y = 1 va x + y = 33 sistemasining yechimida y noma'lumi nechaga teng bo'ladi?",
+      "v": [
+        "3",
+        "30",
+        "11",
+        "33"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tenglamadan lg(x : y) = 1, demak x : y = 10 va x = 10y. Buni ikkinchi tenglamaga qo'yamiz: 10y + y = 33, ya'ni 11y = 33 va y = 3. Shunda x = 30 bo'ladi. x ni javob deb olsa 30 xatosi chiqadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-sistema",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#05990a17"
+    },
+    {
+      "q": "log₂(x² + 1) = 3 tenglama nechta haqiqiy ildizga ega ekanligini aniqlang va javobni belgilang.",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "Ildizi yo'q",
+        "4 ta"
+      ],
+      "t": 1,
+      "izoh": "Potensiallash x² + 1 = 2³ = 8 ni beradi, bundan x² = 7 hosil bo'ladi. Demak x = √7 va x = −√7 ikkita haqiqiy ildizdir. Logarifm ostidagi ifoda x² + 1 doim musbat, shuning uchun ikkala ildiz ham maqbul. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-soni-tahlili",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#27c617b2"
+    },
+    {
+      "q": "lg(x − 3) + lg(x − 5) = lg3 tenglama nechta ildizga ega ekanligini aniqlanish sohasi bilan birga tekshiring.",
+      "v": [
+        "2 ta",
+        "Cheksiz ko'p",
+        "1 ta",
+        "Ildizi yo'q"
+      ],
+      "t": 2,
+      "izoh": "Logarifmlarni birlashtirsak (x − 3)(x − 5) = 3, ya'ni x² − 8x + 12 = 0 hosil bo'ladi. Uning ildizlari x = 2 va x = 6. Aniqlanish sohasi x > 5 talab qilgani uchun x = 2 yaramaydi va faqat x = 6 qoladi. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-soni-tahlili",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#25fa687c"
+    },
+    {
+      "q": "log₄(x² + 2x + 5) = 0 tenglamaning haqiqiy ildizlari haqidagi to'g'ri xulosani tanlang va uni asoslang.",
+      "v": [
+        "Ikkita ildizi bor",
+        "Bitta ildizi bor",
+        "Cheksiz ko'p ildizi bor",
+        "Haqiqiy ildizi yo'q"
+      ],
+      "t": 3,
+      "izoh": "Logarifm nolga teng bo'lsa, argument 1 ga teng bo'ladi: x² + 2x + 5 = 1. Bundan x² + 2x + 4 = 0 hosil bo'ladi va diskriminant D = 4 − 16 = −12 manfiy. Manfiy diskriminantda haqiqiy ildiz bo'lmaydi, demak tenglama yechimga ega emas. Javob: haqiqiy ildizi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-soni-tahlili",
+      "id": "matematika_teng_m10-logarifmik-tenglamalar#bb9ed5ca"
+    }
+  ]
+}

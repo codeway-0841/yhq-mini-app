@@ -1,0 +1,1609 @@
+{
+  "nom": "Foiz tushunchasi va sodda foiz masalalari",
+  "bolim": "Nisbat, foiz va matnli masalalar",
+  "blok": "foiz",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Anvarning oylik maoshi 4 800 000 so'm. U har oy maoshining 15 foizini jamg'armaga qo'yadi. Jamg'armaga bir oyda qancha pul tushadi?",
+      "v": [
+        "720 000 so'm",
+        "480 000 so'm",
+        "4 080 000 so'm",
+        "72 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Sonning foizini topish uchun sonni foizga ko'paytirib, 100 ga bo'lamiz: 4 800 000 · 15 : 100 = 720 000. Bu ish maoshning 0,15 ulushiga teng. 480 000 — 10 foiz olingan xato, 4 080 000 — qolgan pul, 72 000 esa 1,5 foiz hisoblangan natija. Javob: 720 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonning-foizini-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#356a2edf"
+    },
+    {
+      "q": "Dilnoza sotib olgan kitob 340 betdan iborat. U kitobning 45 foizini o'qib chiqdi. Dilnoza necha bet o'qigan?",
+      "v": [
+        "187 bet",
+        "136 bet",
+        "153 bet",
+        "170 bet"
+      ],
+      "t": 2,
+      "izoh": "Kitob betlarining 45 foizi: 340 · 0,45 = 153 bet. 187 bet — o'qilmay qolgan qism, 136 bet — 40 foiz deb yaxlitlash natijasi, 170 bet esa yarmini olish xatosi. Javob: 153 bet.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonning-foizini-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#e6a3c407"
+    },
+    {
+      "q": "Fermer xo'jaligidagi 1 250 tup olma daraxtining 24 foizi yangi navdan ekilgan. Yangi nav daraxtlari nechta?",
+      "v": [
+        "250 tup",
+        "300 tup",
+        "313 tup",
+        "950 tup"
+      ],
+      "t": 1,
+      "izoh": "1 250 tupning 24 foizi: 1 250 · 24 : 100 = 300 tup. 250 tup — 24 foizni 20 foizga yaxlitlash xatosi, 313 tup — 25 foizga yaxlitlash natijasi (1 250 · 0,25 = 312,5 bo'lib, butunlashtirilsa 313), 950 tup esa eski navdagi daraxtlar soni. Javob: 300 tup.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonning-foizini-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#602db85f"
+    },
+    {
+      "q": "Toshkentdagi bir maktabda 900 nafar o'quvchi tahsil oladi, ulardan 36 foizi boshlang'ich sinflarda o'qiydi. Boshlang'ich sinf o'quvchilari nechta?",
+      "v": [
+        "576 nafar",
+        "360 nafar",
+        "324 nafar",
+        "270 nafar"
+      ],
+      "t": 2,
+      "izoh": "900 ning 36 foizi: 900 · 0,36 = 324 nafar. 576 nafar — yuqori sinflardagi o'quvchilar soni, 360 nafar — 40 foiz deb yaxlitlash, 270 nafar esa 30 foiz olingan natija. Javob: 324 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonning-foizini-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#685cec75"
+    },
+    {
+      "q": "Zilola 2 400 000 so'm oyligining avval 30 foizini uy ijarasiga berdi, so'ngra qolgan pulining 25 foizini oziq-ovqatga sarfladi. Oziq-ovqatga qancha pul ketdi?",
+      "v": [
+        "600 000 so'm",
+        "720 000 so'm",
+        "1 260 000 so'm",
+        "420 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Ijaraga 2 400 000 · 0,3 = 720 000 so'm ketdi, qo'lida 2 400 000 − 720 000 = 1 680 000 so'm qoldi. Oziq-ovqatga shu qoldiqning 25 foizi: 1 680 000 · 0,25 = 420 000 so'm sarflandi. 600 000 — 25 foizni butun oylikdan olish xatosi, 1 260 000 esa qoldiqning 75 foizi. Javob: 420 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonning-foizini-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#c2a1bdd4"
+    },
+    {
+      "q": "Kamola to'plagan pulining 20 foizi 340 000 so'mni tashkil qiladi. Kamolaning jami puli qancha?",
+      "v": [
+        "680 000 so'm",
+        "1 700 000 so'm",
+        "1 360 000 so'm",
+        "68 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Agar butun pulning 20 foizi 340 000 so'm bo'lsa, butun pul 340 000 : 0,2 = 1 700 000 so'm bo'ladi. 68 000 — 340 000 dan yana 20 foiz olish xatosi, 1 360 000 — qolgan 80 foizga to'g'ri keladigan summa, 680 000 esa ikkiga ko'paytirish natijasi. Javob: 1 700 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foizi-boyicha-butunni-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#602dd8ab"
+    },
+    {
+      "q": "Zavodda tayyorlangan mahsulotning 8 foizi, ya'ni 96 donasi sifat nazoratidan o'tmadi. Zavod jami nechta mahsulot tayyorlagan?",
+      "v": [
+        "768 dona",
+        "1 104 dona",
+        "1 200 dona",
+        "12 000 dona"
+      ],
+      "t": 2,
+      "izoh": "8 foiz 96 donaga teng bo'lsa, 1 foiz 96 : 8 = 12 donaga to'g'ri keladi, demak butun mahsulot 12 · 100 = 1 200 dona. 768 dona — 96 ni 8 ga ko'paytirish xatosi, 1 104 dona — nazoratdan o'tgan mahsulotlar soni, 12 000 dona esa vergul o'rni adashtirilgan natija. Javob: 1 200 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foizi-boyicha-butunni-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#4c5e75af"
+    },
+    {
+      "q": "Sardor velosiped narxining 35 foizini oldindan to'lab, kassaga 630 000 so'm topshirdi. Velosipedning to'liq narxi qancha?",
+      "v": [
+        "1 170 000 so'm",
+        "1 890 000 so'm",
+        "220 500 so'm",
+        "1 800 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "35 foiz 630 000 so'mga teng, demak 1 foiz 630 000 : 35 = 18 000 so'm, to'liq narx esa 18 000 · 100 = 1 800 000 so'm. 220 500 — 630 000 dan yana 35 foiz olish, 1 170 000 — qolgan to'lov summasi, 1 890 000 esa 35 foizni uchdan bir deb yaxlitlash natijasi. Javob: 1 800 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foizi-boyicha-butunni-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#292ac541"
+    },
+    {
+      "q": "Bir dala maydonining 12 foizi ekilmay qolgan bo'lib, bu 4,8 gektarni tashkil qiladi. Dalaning umumiy maydoni necha gektar?",
+      "v": [
+        "57,6 gektar",
+        "40 gektar",
+        "35,2 gektar",
+        "0,576 gektar"
+      ],
+      "t": 1,
+      "izoh": "Ekilmagan qism butun maydonning 0,12 ulushi, shuning uchun maydon 4,8 : 0,12 = 40 gektar. 57,6 gektar — bo'lish o'rniga ko'paytirish xatosi, 35,2 gektar — ekilgan qism, 0,576 gektar esa 4,8 dan yana 12 foiz olish natijasi. Javob: 40 gektar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foizi-boyicha-butunni-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#09cd379e"
+    },
+    {
+      "q": "Do'kon sotuvchisi kun oxirida «Bugungi savdoning 45 foizi non mahsulotlariga to'g'ri keldi, bu 1 350 000 so'm» dedi. Bugungi umumiy savdo qancha bo'lgan?",
+      "v": [
+        "3 000 000 so'm",
+        "2 700 000 so'm",
+        "1 650 000 so'm",
+        "607 500 so'm"
+      ],
+      "t": 0,
+      "izoh": "Non savdosi butun savdoning 0,45 ulushi, demak umumiy savdo 1 350 000 : 0,45 = 3 000 000 so'm. 607 500 — 1 350 000 dan yana 45 foiz olish, 1 650 000 — qolgan 55 foizga to'g'ri keladigan summa, 2 700 000 esa 45 foizni yarim deb hisoblash natijasi. Javob: 3 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foizi-boyicha-butunni-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#ebb1c816"
+    },
+    {
+      "q": "Guruhdagi 40 talabadan 14 tasi imtihonni «a'lo» bahoga topshirdi. Bu talabalarning necha foizini tashkil qiladi?",
+      "v": [
+        "14%",
+        "28%",
+        "35%",
+        "65%"
+      ],
+      "t": 2,
+      "izoh": "Ulushni topish uchun qismni butunga bo'lamiz: 14 : 40 = 0,35, ya'ni 35 foiz. 14% — sonni to'g'ridan-to'g'ri foiz deb olish, 28% — maxrajni 40 o'rniga 50 deb olish, 65% esa boshqa baho olganlar ulushi. Javob: 35%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-sonning-foizli-nisbati",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#56e18ddd"
+    },
+    {
+      "q": "Ozoda 60 000 so'mlik xaridi uchun 9 000 so'm chegirma oldi. Chegirma xarid narxining necha foizini tashkil etadi?",
+      "v": [
+        "9%",
+        "15%",
+        "85%",
+        "150%"
+      ],
+      "t": 1,
+      "izoh": "Chegirmaning ulushi 9 000 : 60 000 = 0,15 ga teng, uni foizga aylantirsak 15 foiz chiqadi. 9% — summani foiz deb o'qish, 85% — to'langan qism ulushi, 150% esa 0,15 ni foizga aylantirishda 100 o'rniga 1000 ga ko'paytirib yuborish xatosi. Javob: 15%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-sonning-foizli-nisbati",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#306870c7"
+    },
+    {
+      "q": "Bir korxonada 350 ishchidan 84 nafari ayollar. Ayollarning ulushini foizda ifodalang.",
+      "v": [
+        "24%",
+        "76%",
+        "84%",
+        "4,2%"
+      ],
+      "t": 0,
+      "izoh": "Ayollar ulushi 84 : 350 = 0,24, demak 24 foiz. 76% — erkaklar ulushi, 84% — nafar sonini foiz deb olish, 4,2% esa bo'linmani teskari olib (350 : 84 = 4,2) natijaga foiz belgisini qo'shib yuborish xatosi. Javob: 24%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-sonning-foizli-nisbati",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#acb7daec"
+    },
+    {
+      "q": "Bir kitobning narxi 84 000 so'mdan 105 000 so'mga ko'tarildi. Yangi narx eski narxning necha foizini tashkil qiladi?",
+      "v": [
+        "25%",
+        "80%",
+        "120%",
+        "125%"
+      ],
+      "t": 3,
+      "izoh": "Bu yerda o'sish emas, nisbat so'ralgan: 105 000 : 84 000 = 1,25, ya'ni yangi narx eskisining 125 foizi. 25% — o'sish foizi bilan chalkashtirish, 80% — teskari nisbat, 120% esa qo'pol yaxlitlash natijasi. Javob: 125%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-sonning-foizli-nisbati",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#58667355"
+    },
+    {
+      "q": "Sinfdagi o'quvchilarning 12 nafari futbol, 18 nafari voleybol to'garagiga qatnaydi, boshqa to'garakka boruvchi yo'q. Sinfda jami 40 o'quvchi bo'lsa, hech qaysi to'garakka qatnamaydiganlar necha foiz?",
+      "v": [
+        "10%",
+        "25%",
+        "30%",
+        "75%"
+      ],
+      "t": 1,
+      "izoh": "To'garakka qatnaydiganlar 12 + 18 = 30 nafar, qatnamaydiganlar esa 40 − 30 = 10 nafar. Ularning ulushi 10 : 40 = 0,25, ya'ni 25 foiz. 10% — sonni foiz deb olish, 30% — qatnaydiganlar sonini foiz deb olish, 75% esa qatnaydiganlar ulushi. Javob: 25%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-sonning-foizli-nisbati",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#5b3cbadb"
+    },
+    {
+      "q": "Nonvoyxonada bir dona nonning narxi 4 000 so'm edi va narx 15 foizga oshirildi. Nonning yangi narxi qancha bo'ldi?",
+      "v": [
+        "4 600 so'm",
+        "4 015 so'm",
+        "3 400 so'm",
+        "600 so'm"
+      ],
+      "t": 0,
+      "izoh": "Oshirilgan narx boshlang'ich narxning 115 foizini tashkil qiladi: 4 000 · 1,15 = 4 600 so'm. 600 so'm — faqat oshgan qism, 4 015 so'm — foizni so'm deb qo'shish xatosi, 3 400 so'm esa oshirish o'rniga kamaytirish natijasi. Javob: 4 600 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foizga-oshirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#d0e6e9e6"
+    },
+    {
+      "q": "Bahodirning oylik maoshi 3 200 000 so'm bo'lib, unga 25 foiz ustama qo'shildi. Yangi maosh qancha?",
+      "v": [
+        "800 000 so'm",
+        "2 400 000 so'm",
+        "3 208 000 so'm",
+        "4 000 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Ustama qo'shilgach maosh 125 foizga aylanadi: 3 200 000 · 1,25 = 4 000 000 so'm. 800 000 — faqat ustama summasi, 2 400 000 — kamaytirish natijasi, 3 208 000 esa 25 foiz o'rniga 0,25 foiz qo'shilgan hol. Javob: 4 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foizga-oshirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#5156be17"
+    },
+    {
+      "q": "Bir shaharda avtobuslar soni 240 ta edi, joriy yilda bu son 35 foizga ko'paydi. Hozir shaharda nechta avtobus bor?",
+      "v": [
+        "324 ta",
+        "275 ta",
+        "156 ta",
+        "84 ta"
+      ],
+      "t": 0,
+      "izoh": "Yangi son 240 ning 135 foizi: 240 · 1,35 = 324 ta. 84 ta — faqat qo'shilgan avtobuslar, 275 ta — foizni dona deb qo'shish xatosi, 156 ta esa 35 foizga kamaytirish natijasi. Javob: 324 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foizga-oshirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#619d612b"
+    },
+    {
+      "q": "Fermer o'tgan yili 18 tonna bug'doy yig'gan edi. Bu yil hosil 40 foizga oshdi, kelasi yilga esa yana 10 foizga oshirish rejalashtirilmoqda. Reja bajarilsa, kelasi yilgi hosil necha tonna bo'ladi?",
+      "v": [
+        "25,2 tonna",
+        "27 tonna",
+        "27,72 tonna",
+        "19,8 tonna"
+      ],
+      "t": 2,
+      "izoh": "Bu yilgi hosil 18 · 1,4 = 25,2 tonna, kelasi yilgi hosil esa 25,2 · 1,1 = 27,72 tonna. 27 tonna — foizlarni 50 foizga qo'shish xatosi, 25,2 tonna — birinchi bosqichda to'xtash, 19,8 tonna esa faqat 10 foizni qo'llash. Javob: 27,72 tonna.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foizga-oshirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#92586b0b"
+    },
+    {
+      "q": "Muzlatgichning narxi 9 800 000 so'm edi, do'kon unga 20 foiz chegirma e'lon qildi. Chegirmadan keyingi narx qancha?",
+      "v": [
+        "7 840 000 so'm",
+        "8 820 000 so'm",
+        "11 760 000 so'm",
+        "1 960 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Chegirmadan keyin narx boshlang'ich qiymatning 80 foizini tashkil etadi: 9 800 000 · 0,8 = 7 840 000 so'm. 1 960 000 — faqat chegirma summasi, 11 760 000 — kamaytirish o'rniga oshirish, 8 820 000 esa 10 foiz chegirma hisoblangan natija. Javob: 7 840 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foizga-kamaytirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#988c91eb"
+    },
+    {
+      "q": "Kompyuter kursida 150 tinglovchi bor edi, keyinchalik ularning soni 12 foizga kamaydi. Kursda hozir necha tinglovchi qoldi?",
+      "v": [
+        "18 ta",
+        "132 ta",
+        "138 ta",
+        "168 ta"
+      ],
+      "t": 1,
+      "izoh": "Qolgan tinglovchilar dastlabki sonning 88 foizi: 150 · 0,88 = 132 ta. 18 ta — ketgan tinglovchilar soni, 138 ta — foizni odam soni deb ayirish xatosi, 168 ta esa kamayish o'rniga o'sish hisoblangan natija. Javob: 132 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foizga-kamaytirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#8a7dd3e7"
+    },
+    {
+      "q": "Aziza kuniga 2 500 kkal iste'mol qilardi, shifokor tavsiyasidan keyin bu miqdorni 16 foizga kamaytirdi. Endi u kuniga necha kkal iste'mol qiladi?",
+      "v": [
+        "2 900 kkal",
+        "2 484 kkal",
+        "2 100 kkal",
+        "400 kkal"
+      ],
+      "t": 2,
+      "izoh": "Yangi miqdor eskisining 84 foiziga teng: 2 500 · 0,84 = 2 100 kkal. 400 kkal — faqat kamaygan qism, 2 484 kkal — foizni kkal deb ayirish, 2 900 kkal esa kamaytirish o'rniga oshirish natijasi. Javob: 2 100 kkal.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foizga-kamaytirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#95e208b2"
+    },
+    {
+      "q": "Korxonada 480 ishchi bor edi. Qish faslida ishchilar soni 15 foizga kamaydi, bahorda esa ishdan bo'shaganlarning yarmi qaytib keldi. Hozir korxonada necha ishchi bor?",
+      "v": [
+        "372 ta",
+        "408 ta",
+        "444 ta",
+        "480 ta"
+      ],
+      "t": 2,
+      "izoh": "Qishda 480 · 0,15 = 72 ishchi ketdi va 480 − 72 = 408 ishchi qoldi. Bahorda 72 : 2 = 36 ishchi qaytgani uchun 408 + 36 = 444 ta bo'ladi. 408 ta — ikkinchi bosqichni tashlab ketish, 372 ta — qaytganlarni ham ayirish, 480 ta esa o'zgarish yo'q deb o'ylash. Javob: 444 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foizga-kamaytirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#fded6eb1"
+    },
+    {
+      "q": "Kiyim do'konida kurtkaga avval 20 foiz, so'ngra qolgan narxdan yana 15 foiz chegirma qilindi. Kurtkaning boshlang'ich narxi 750 000 so'm bo'lsa, xaridor qancha to'laydi?",
+      "v": [
+        "487 500 so'm",
+        "510 000 so'm",
+        "600 000 so'm",
+        "637 500 so'm"
+      ],
+      "t": 1,
+      "izoh": "Birinchi chegirmadan keyin 750 000 · 0,8 = 600 000 so'm, ikkinchisidan keyin 600 000 · 0,85 = 510 000 so'm bo'ladi. 487 500 so'm — chegirmalarni 35 foizga qo'shish xatosi, 600 000 so'm — birinchi bosqichda to'xtash, 637 500 so'm esa faqat 15 foizni qo'llash. Javob: 510 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-chegirma",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#1005e6d0"
+    },
+    {
+      "q": "Mebel salonida divan 5 200 000 so'm turadi. Bayram munosabati bilan 25 foiz, klub kartasi bo'yicha esa qolgan narxdan yana 10 foiz chegirma beriladi. Ikkala chegirmadan keyin divan qancha turadi?",
+      "v": [
+        "3 900 000 so'm",
+        "4 680 000 so'm",
+        "3 510 000 so'm",
+        "3 380 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Bayram chegirmasidan keyin 5 200 000 · 0,75 = 3 900 000 so'm, karta chegirmasidan keyin 3 900 000 · 0,9 = 3 510 000 so'm bo'ladi. 3 380 000 so'm — foizlarni 35 ga qo'shish xatosi, 3 900 000 so'm — birinchi bosqich, 4 680 000 so'm esa faqat 10 foizni qo'llash natijasi. Javob: 3 510 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-chegirma",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#c0cca6f5"
+    },
+    {
+      "q": "Turistik firma sayohat narxini avval 30 foizga, keyin qolgan narxdan yana 20 foizga tushirdi. Boshlang'ich narx 12 000 000 so'm bo'lgan bo'lsa, yakuniy narx qancha?",
+      "v": [
+        "9 600 000 so'm",
+        "8 400 000 so'm",
+        "6 000 000 so'm",
+        "6 720 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tushirishdan keyin 12 000 000 · 0,7 = 8 400 000 so'm, ikkinchisidan keyin 8 400 000 · 0,8 = 6 720 000 so'm chiqadi. 6 000 000 so'm — foizlarni 50 ga qo'shish xatosi, 8 400 000 so'm — birinchi bosqich, 9 600 000 so'm esa faqat 20 foizni qo'llash. Javob: 6 720 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-chegirma",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#b7f6eced"
+    },
+    {
+      "q": "«Nur» do'koni avval 40 foiz, so'ngra qolgan narxdan yana 25 foiz chegirma beradi. «Sayyod» do'koni esa bir yo'la 55 foiz chegirma qiladi. Boshlang'ich narx 800 000 so'm bo'lsa, xaridor uchun qaysi variant foydali?",
+      "v": [
+        "«Nur» — 80 000 so'mga arzon",
+        "«Sayyod» — 40 000 so'mga arzon",
+        "Ikkala do'konda ham narx bir xil: 360 000 so'm",
+        "«Sayyod» — 80 000 so'mga arzon"
+      ],
+      "t": 2,
+      "izoh": "«Nur» da narx 800 000 · 0,6 · 0,75 = 360 000 so'm bo'ladi, «Sayyod» da esa 800 000 · 0,45 = 360 000 so'm. Ko'paytuvchilar 0,6 · 0,75 = 0,45 bo'lgani uchun natija aynan teng chiqadi. 80 000 so'mlik farq chegirmalarni 65 foizga qo'shish xatosidan, 40 000 so'mlik farq esa 55 foizni 50 deb yaxlitlashdan kelib chiqadi. Javob: narx bir xil, 360 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ketma-ket-chegirma",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#4d86a9bb"
+    },
+    {
+      "q": "Dehqonchilik xo'jaligida kunlik sut ishlab chiqarish 250 litrdan 300 litrga ko'tarildi. Ishlab chiqarish necha foizga oshgan?",
+      "v": [
+        "16,7%",
+        "20%",
+        "50%",
+        "120%"
+      ],
+      "t": 1,
+      "izoh": "O'sish 300 − 250 = 50 litr, uni eski qiymatga bo'lamiz: 50 : 250 = 0,2, ya'ni 20 foiz. 16,7% — o'sishni yangi qiymatga bo'lish xatosi, 50% — farqni to'g'ridan-to'g'ri foiz deb olish, 120% esa yangi qiymatning eskisiga nisbati. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "osish-foizini-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#3cfc7449"
+    },
+    {
+      "q": "Talabaning stipendiyasi 780 000 so'mdan 897 000 so'mga oshdi. Stipendiyaning o'sishi necha foizni tashkil etadi?",
+      "v": [
+        "1,5%",
+        "13%",
+        "15%",
+        "115%"
+      ],
+      "t": 2,
+      "izoh": "O'sish summasi 897 000 − 780 000 = 117 000 so'm, uning eski stipendiyaga nisbati 117 000 : 780 000 = 0,15, ya'ni 15 foiz. 13% — yangi stipendiyaga bo'lish xatosi, 115% — nisbatning o'zi, 1,5% esa vergul o'rni adashtirilgan natija. Javob: 15%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "osish-foizini-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#78632421"
+    },
+    {
+      "q": "2023-yilda tumandagi issiqxonalar soni 64 ta edi, 2025-yilga kelib 88 taga yetdi. Ikki yilda issiqxonalar soni necha foizga ko'paygan?",
+      "v": [
+        "37,5%",
+        "27,3%",
+        "24%",
+        "137,5%"
+      ],
+      "t": 0,
+      "izoh": "Ko'payish 88 − 64 = 24 ta, uni dastlabki songa bo'lamiz: 24 : 64 = 0,375, ya'ni 37,5 foiz. 27,3% — yangi songa bo'lish xatosi, 24% — farqni foiz deb olish, 137,5% esa yangi sonning eskisiga nisbati. Javob: 37,5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "osish-foizini-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#4896994e"
+    },
+    {
+      "q": "Do'konda choyning narxi avval 24 000 so'mdan 30 000 so'mga, keyin 30 000 so'mdan 36 000 so'mga ko'tarildi. Qaysi bosqichda foizli o'sish kattaroq bo'lgan?",
+      "v": [
+        "Birinchi bosqich — 25 foizga qarshi 20 foiz",
+        "Ikkinchi bosqich — 25 foizga qarshi 20 foiz",
+        "Ikkala bosqichda ham o'sish 25 foiz",
+        "Ikkala bosqichda ham o'sish bir xil: 6 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Birinchi bosqichda o'sish 6 000 : 24 000 = 0,25, ya'ni 25 foiz. Ikkinchi bosqichda esa 6 000 : 30 000 = 0,2, ya'ni 20 foiz. Summalar teng bo'lsa ham, baza kattalashgani uchun foizli o'sish kichrayadi. Javob: birinchi bosqichda o'sish katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "osish-foizini-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#5435106b"
+    },
+    {
+      "q": "Avtomobilning bozor narxi 150 000 000 so'mdan 114 000 000 so'mga tushdi. Narx necha foizga arzonlashgan?",
+      "v": [
+        "24%",
+        "31,6%",
+        "36%",
+        "76%"
+      ],
+      "t": 0,
+      "izoh": "Kamayish 150 000 000 − 114 000 000 = 36 000 000 so'm, uni eski narxga bo'lamiz: 36 : 150 = 0,24, ya'ni 24 foiz. 31,6% — kamayishni yangi narxga bo'lish, 36% — farqni foiz deb olish, 76% esa yangi narxning eskisiga nisbati. Javob: 24%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kamayish-foizini-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#00832ccc"
+    },
+    {
+      "q": "Bir maktabda darsga kelmagan o'quvchilar soni bir hafta ichida 45 tadan 27 taga tushdi. Kelmaganlar soni necha foizga kamaygan?",
+      "v": [
+        "18%",
+        "40%",
+        "60%",
+        "66,7%"
+      ],
+      "t": 1,
+      "izoh": "Kamayish 45 − 27 = 18 ta, uni dastlabki songa bo'lamiz: 18 : 45 = 0,4, ya'ni 40 foiz. 66,7% — kamayishni yangi songa bo'lish xatosi, 60% — qolgan sonning eskisiga nisbati, 18% esa farqni foiz deb olish. Javob: 40%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kamayish-foizini-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#9205e92c"
+    },
+    {
+      "q": "Bir xonadonning oylik elektr sarfi 320 kVt·soatdan 272 kVt·soatga kamaydi. Sarf necha foizga kamaygan?",
+      "v": [
+        "17,6%",
+        "48%",
+        "85%",
+        "15%"
+      ],
+      "t": 3,
+      "izoh": "Kamayish 320 − 272 = 48 kVt·soat, uni eski sarfga bo'lamiz: 48 : 320 = 0,15, ya'ni 15 foiz. 17,6% — yangi sarfga bo'lish xatosi, 48% — farqni foiz deb olish, 85% esa yangi sarfning eskisiga nisbati. Javob: 15%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kamayish-foizini-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#dc714767"
+    },
+    {
+      "q": "Zavod mahsulotining narxi mart oyida 800 000 so'm, aprelda 720 000 so'm, mayda esa 648 000 so'm bo'ldi. Narx har oyda bir xil foizga kamayganmi?",
+      "v": [
+        "Ha, har oyda 10 foizga",
+        "Yo'q, avval 10, keyin 9 foizga",
+        "Yo'q, avval 10, keyin 11,1 foizga",
+        "Yo'q, kamayish summalari har xil: 80 000 va 72 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Aprelda narx 720 000 : 800 000 = 0,9 ulushga, mayda esa 648 000 : 720 000 = 0,9 ulushga aylandi. Ikkala oyda ham ko'paytuvchi bir xil, demak kamayish har oyda 10 foiz. 9 foiz — ikkinchi kamayishni mart narxiga bo'lish, 11,1 foiz — may narxiga bo'lish, summalar farqi esa foizni emas, mutlaq qiymatni taqqoslash xatosi. Javob: ha, har oyda 10 foizga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kamayish-foizini-topish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#83bb4dd5"
+    },
+    {
+      "q": "Chegirmadan keyin krossovka 340 000 so'm turdi, chegirma esa 15 foiz bo'lgan edi. Krossovkaning chegirmagacha bo'lgan narxi qancha?",
+      "v": [
+        "289 000 so'm",
+        "391 000 so'm",
+        "400 000 so'm",
+        "51 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Chegirmadan keyingi narx eski narxning 85 foizi, shuning uchun eski narx 340 000 : 0,85 = 400 000 so'm. 391 000 — bo'lish o'rniga 15 foizga oshirish xatosi, 289 000 — yana chegirma qilish, 51 000 esa faqat chegirma summasi. Javob: 400 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "avvalgi-narxni-tiklash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#50673416"
+    },
+    {
+      "q": "Bir kitobning narxi 20 foizga arzonlashib, 96 000 so'm bo'ldi. Kitobning eski narxini toping.",
+      "v": [
+        "480 000 so'm",
+        "120 000 so'm",
+        "115 200 so'm",
+        "76 800 so'm"
+      ],
+      "t": 1,
+      "izoh": "Yangi narx eskisining 80 foizi, demak eski narx 96 000 : 0,8 = 120 000 so'm. 115 200 — 96 000 ni 20 foizga oshirish xatosi, 76 800 — yana kamaytirish, 480 000 esa 0,8 o'rniga 0,2 ga bo'lish natijasi. Javob: 120 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "avvalgi-narxni-tiklash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#30d7e2da"
+    },
+    {
+      "q": "Maoshi 30 foizga oshgandan keyin Nodira oyiga 5 850 000 so'm ola boshladi. Oshishdan oldingi maoshi qancha edi?",
+      "v": [
+        "4 095 000 so'm",
+        "7 605 000 so'm",
+        "1 755 000 so'm",
+        "4 500 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Yangi maosh eskisining 130 foizi, shuning uchun eski maosh 5 850 000 : 1,3 = 4 500 000 so'm. 4 095 000 — bo'lish o'rniga 30 foizga kamaytirish, 7 605 000 — yana oshirish, 1 755 000 esa yangi maoshning 30 foizi. Javob: 4 500 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "avvalgi-narxni-tiklash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#41f8c1af"
+    },
+    {
+      "q": "Aholisi 25 foizga ko'payganidan keyin qishloqda 4 500 kishi yashaydigan bo'ldi. Ilgari qishloqda necha kishi bo'lgan?",
+      "v": [
+        "3 375 kishi",
+        "3 600 kishi",
+        "5 625 kishi",
+        "1 125 kishi"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi aholi ilgarigisining 125 foizi, demak ilgarigi soni 4 500 : 1,25 = 3 600 kishi. 3 375 — 25 foizga kamaytirish xatosi, 5 625 — yana oshirish, 1 125 esa hozirgi sonning 25 foizi. Javob: 3 600 kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "avvalgi-narxni-tiklash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#777ec04a"
+    },
+    {
+      "q": "Do'kon egasi mahsulotni 40 foiz ustama qo'shib 1 050 000 so'mdan sotmoqda. Mahsulotning tannarxi qancha?",
+      "v": [
+        "420 000 so'm",
+        "630 000 so'm",
+        "750 000 so'm",
+        "1 470 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Sotuv narxi tannarxning 140 foizi, shuning uchun tannarx 1 050 000 : 1,4 = 750 000 so'm. 630 000 — sotuv narxini 40 foizga kamaytirish xatosi, 420 000 — sotuv narxining 40 foizi, 1 470 000 esa yana ustama qo'shish natijasi. Javob: 750 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "avvalgi-narxni-tiklash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#edf62e8d"
+    },
+    {
+      "q": "Anvar «Xaridingizning 5/8 qismi bonus sifatida qaytariladi» degan e'lonni ko'rdi. Bu qaytarish necha foizni bildiradi?",
+      "v": [
+        "6,25%",
+        "37,5%",
+        "40%",
+        "62,5%"
+      ],
+      "t": 3,
+      "izoh": "Kasrni foizga aylantirish uchun uni o'nli kasrga keltiramiz: 5 : 8 = 0,625, so'ng 100 ga ko'paytiramiz va 62,5 foiz chiqadi. 37,5% — qaytarilmaydigan qism, 40% — surat bilan maxrajni ko'paytirish xatosi, 6,25% esa vergul o'rni adashtirilgan natija. Javob: 62,5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foiz-kasr-onli-almashtirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#e0a2a773"
+    },
+    {
+      "q": "Ilmiy tadbirda qatnashchilarning 0,45 ulushi ayollar ekani aniqlandi. Ayollar ulushini foizda ifodalang.",
+      "v": [
+        "0,45%",
+        "4,5%",
+        "45%",
+        "55%"
+      ],
+      "t": 2,
+      "izoh": "O'nli kasrni foizga aylantirish uchun uni 100 ga ko'paytiramiz: 0,45 · 100 = 45 foiz. 4,5% va 0,45% — ko'paytirishni chala bajarish yoki umuman bajarmaslik xatosi, 55% esa erkaklar ulushi. Javob: 45%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foiz-kasr-onli-almashtirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#e8e7efa2"
+    },
+    {
+      "q": "Sinfdagi o'quvchilarning 1/4 qismi shaxmat, 35 foizi esa suzish to'garagiga qatnaydi. Qaysi to'garakda ko'proq o'quvchi bor va farq necha foiz?",
+      "v": [
+        "Suzish to'garagida, farq 10 foiz",
+        "Shaxmat to'garagida, farq 10 foiz",
+        "Suzish to'garagida, farq 15 foiz",
+        "Ikkala to'garakda ham teng"
+      ],
+      "t": 0,
+      "izoh": "Avval kasrni foizga keltiramiz: 1 : 4 = 0,25, ya'ni 25 foiz. 35 foiz 25 foizdan katta, shuning uchun suzishda ko'proq o'quvchi bor va farq 35 − 25 = 10 foizni tashkil qiladi. 15 foizlik farq 1/4 ni 1/5 deb chalkashtirishdan chiqadi. Javob: suzish to'garagida, farq 10 foiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foiz-kasr-onli-almashtirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#df670842"
+    },
+    {
+      "q": "Do'kon narxni «1,2 barobar oshirdik» deb e'lon qildi. Bu necha foizlik o'sishga to'g'ri keladi?",
+      "v": [
+        "12%",
+        "20%",
+        "80%",
+        "120%"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytuvchi 1,2 bo'lsa, o'sish ulushi 1,2 − 1 = 0,2 ga teng, ya'ni 20 foiz. 120% — ko'paytuvchining o'zini o'sish deb olish, 80% — o'sish foizini 100 dan ayirib yuborish xatosi (teskari nisbat esa 1 : 1,2 = 83,3 foiz bo'lardi), 12% esa vergul o'rni adashtirilgan natija. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foiz-kasr-onli-almashtirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#efaf997b"
+    },
+    {
+      "q": "Bir mahsulot tarkibida shakar ulushi 3/25 ga teng. Shu mahsulotning 750 grammida necha gramm shakar bor va bu necha foiz?",
+      "v": [
+        "90 gramm, 12 foiz",
+        "90 gramm, 8 foiz",
+        "225 gramm, 30 foiz",
+        "60 gramm, 8 foiz"
+      ],
+      "t": 0,
+      "izoh": "Avval kasrni o'nli ko'rinishga keltiramiz: 3 : 25 = 0,12, ya'ni 12 foiz. So'ng 750 · 0,12 = 90 gramm shakar chiqadi. 225 gramm — 3/25 ni 3/10 deb o'qish xatosi, 8 foizli javoblar esa 25 : 3 ni teskari bo'lishdan kelib chiqadi. Javob: 90 gramm, 12 foiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foiz-kasr-onli-almashtirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#6f7600f4"
+    },
+    {
+      "q": "Bahrom oyiga 1 800 000 so'm, ukasi esa 1 500 000 so'm topadi. Bahromning daromadi ukasinikidan necha foizga ko'p?",
+      "v": [
+        "16,7%",
+        "20%",
+        "83,3%",
+        "120%"
+      ],
+      "t": 1,
+      "izoh": "Farq 1 800 000 − 1 500 000 = 300 000 so'm, taqqoslash bazasi esa ukasining daromadi. Demak 300 000 : 1 500 000 = 0,2, ya'ni 20 foiz. 16,7% — farqni Bahromning daromadiga bo'lish, 83,3% — teskari nisbat, 120% esa daromadlar nisbatining o'zi. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "necha-foizga-kop-kam",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#fc00c2a1"
+    },
+    {
+      "q": "Birinchi dalaning maydoni 24 gektar, ikkinchisiniki 32 gektar. Birinchi dala ikkinchisidan necha foizga kichik?",
+      "v": [
+        "75%",
+        "33,3%",
+        "25%",
+        "8%"
+      ],
+      "t": 2,
+      "izoh": "Farq 32 − 24 = 8 gektar, taqqoslash bazasi ikkinchi dala maydoni. Shunda 8 : 32 = 0,25, ya'ni 25 foiz. 33,3% — farqni birinchi dalaga bo'lish xatosi, 75% — maydonlar nisbati, 8% esa farqni foiz deb olish. Javob: 25%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "necha-foizga-kop-kam",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#bc1c2bcf"
+    },
+    {
+      "q": "«Zilol» suvining bir litrlik narxi 5 000 so'm, «Nafis» suvi esa 6 500 so'm turadi. «Nafis» suvi «Zilol» dan necha foizga qimmat?",
+      "v": [
+        "23,1%",
+        "76,9%",
+        "130%",
+        "30%"
+      ],
+      "t": 3,
+      "izoh": "Narxlar farqi 6 500 − 5 000 = 1 500 so'm, baza esa arzon suvning narxi. Demak 1 500 : 5 000 = 0,3, ya'ni 30 foiz. 23,1% — farqni qimmat suv narxiga bo'lish, 130% — narxlar nisbati, 76,9% esa teskari nisbat. Javob: 30%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "necha-foizga-kop-kam",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#602391bd"
+    },
+    {
+      "q": "Ikki do'konda bir xil mahsulot sotiladi: «A» do'konidagi narx «B» do'konidagidan 25 foizga qimmat. Unda «B» do'konidagi narx «A» dagidan necha foizga arzon?",
+      "v": [
+        "20%",
+        "25%",
+        "75%",
+        "125%"
+      ],
+      "t": 0,
+      "izoh": "«B» dagi narxni 100 birlik deb olsak, «A» dagi narx 125 birlik bo'ladi. Endi baza «A» ning narxi: farq 25 birlik, demak 25 : 125 = 0,2, ya'ni 20 foiz. 25% — bazani almashtirmaslik xatosi, 75% va 125% esa nisbatlarning o'zi. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "necha-foizga-kop-kam",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#3d19d16c"
+    },
+    {
+      "q": "Maktabning «A» sinfida «B» sinfga qaraganda 20 foizga kam o'quvchi bor. Unda «B» sinfda «A» sinfga nisbatan necha foizga ko'p o'quvchi bor?",
+      "v": [
+        "20%",
+        "25%",
+        "80%",
+        "125%"
+      ],
+      "t": 1,
+      "izoh": "B sinfdagi o'quvchilar sonini 100 deb olsak, A sinfda 80 o'quvchi bo'ladi. Endi baza A sinf: farq 20 o'quvchi, demak 20 : 80 = 0,25, ya'ni 25 foiz. 20% — bazani almashtirmaslik, 80% va 125% esa sinflar nisbatlari. Javob: 25%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "necha-foizga-kop-kam",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#155bba29"
+    },
+    {
+      "q": "Mahsulot narxi avval 25 foizga oshirildi, keyin yangi narxdan 25 foiz chegirma qilindi. Boshlang'ich narx 640 000 so'm bo'lsa, oxirgi narx qancha?",
+      "v": [
+        "480 000 so'm",
+        "600 000 so'm",
+        "640 000 so'm",
+        "800 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Oshirilgandan keyin narx 640 000 · 1,25 = 800 000 so'm bo'ldi, chegirmadan keyin esa 800 000 · 0,75 = 600 000 so'm. Foizlar teng bo'lsa ham bazalar har xil bo'lgani uchun narx boshlang'ich holatga qaytmaydi. 640 000 — o'zgarish yo'q deb o'ylash, 800 000 — birinchi bosqich, 480 000 esa faqat chegirmani qo'llash. Javob: 600 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oshirib-keyin-kamaytirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#0e214dcc"
+    },
+    {
+      "q": "Korxonada ishchilar soni yanvarda 30 foizga oshdi, iyulda esa 30 foizga kamaydi. Yil boshida 500 ishchi bo'lgan bo'lsa, yil oxirida nechta ishchi qoldi?",
+      "v": [
+        "500 ta",
+        "650 ta",
+        "455 ta",
+        "350 ta"
+      ],
+      "t": 2,
+      "izoh": "Yanvardan keyin 500 · 1,3 = 650 ishchi bo'ldi, iyuldan keyin esa 650 · 0,7 = 455 ishchi qoldi. Kamayish kattaroq bazadan hisoblangani uchun son dastlabkidan past tushadi. 500 ta — o'zgarish yo'q deb o'ylash, 650 ta — birinchi bosqich, 350 ta esa faqat kamayishni qo'llash. Javob: 455 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oshirib-keyin-kamaytirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#ebb0c78c"
+    },
+    {
+      "q": "Bir tovarning narxi avval 40 foizga oshdi, so'ngra yangi narxdan 40 foizga tushdi. Yakuniy narx boshlang'ich narxdan necha foizga farq qiladi?",
+      "v": [
+        "16 foizga kam",
+        "16 foizga ko'p",
+        "24 foizga kam",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich narxni 1 deb olsak, ketma-ket ko'paytuvchilar 1,4 · 0,6 = 0,84 beradi. Demak yakuniy narx boshlang'ichning 84 foizi, ya'ni 16 foizga kam. 24 foiz — 0,4 · 0,6 ni noto'g'ri qo'llash, o'zgarmaslik esa foizlarni bir xil deb o'ylash xatosi. Javob: 16 foizga kam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oshirib-keyin-kamaytirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#1c0b6d7f"
+    },
+    {
+      "q": "Sardor aksiyalarga 6 000 000 so'm sarfladi. Birinchi oyda aksiya qiymati 50 foizga tushdi, ikkinchi oyda esa 60 foizga o'sdi. Sardorning mablag'i dastlabkisiga nisbatan qanday o'zgardi?",
+      "v": [
+        "10 foizga oshdi — 6 600 000 so'm",
+        "20 foizga oshdi — 7 200 000 so'm",
+        "O'zgarmadi — 6 000 000 so'm",
+        "20 foizga kamaydi — 4 800 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Birinchi oydan keyin mablag' 6 000 000 · 0,5 = 3 000 000 so'm bo'ldi, ikkinchi oyda esa 3 000 000 · 1,6 = 4 800 000 so'mga chiqdi. Dastlabki summadan 1 200 000 so'm kam, ya'ni 20 foizga kamaydi. 10 foizlik o'sish foizlarni oddiy ayirish xatosidan kelib chiqadi. Javob: 20 foizga kamaydi, 4 800 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oshirib-keyin-kamaytirish",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#f536e10d"
+    },
+    {
+      "q": "Do'kon mahsulotni 480 000 so'mga sotib olib, ustiga 35 foiz ustama qo'ydi. Mahsulotning sotuv narxi qancha bo'ldi?",
+      "v": [
+        "168 000 so'm",
+        "515 000 so'm",
+        "648 000 so'm",
+        "312 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Ustama qo'shilgan narx tannarxning 135 foiziga teng: 480 000 · 1,35 = 648 000 so'm. 168 000 — faqat ustama summasi, 312 000 — ustama o'rniga chegirma, 515 000 esa 35 foizni 35 ming so'm deb tushunish xatosi. Javob: 648 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ustama-va-soliq",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#f2a95df5"
+    },
+    {
+      "q": "Restoran hisobiga 10 foiz xizmat haqi qo'shiladi. Buyurtma qilingan taomlar qiymati 185 000 so'm bo'lsa, mijoz jami qancha to'laydi?",
+      "v": [
+        "166 500 so'm",
+        "18 500 so'm",
+        "195 000 so'm",
+        "203 500 so'm"
+      ],
+      "t": 3,
+      "izoh": "Xizmat haqi 185 000 · 0,1 = 18 500 so'm, jami to'lov esa 185 000 + 18 500 = 203 500 so'm. 18 500 — faqat xizmat haqi, 166 500 — qo'shish o'rniga ayirish, 195 000 esa 10 foizni 10 ming so'm deb hisoblash. Javob: 203 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ustama-va-soliq",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#649307c3"
+    },
+    {
+      "q": "Tovar narxiga 12 foiz qo'shilgan qiymat solig'i qo'shilgandan keyin xaridor 2 240 000 so'm to'ladi. Soliq summasi qancha?",
+      "v": [
+        "240 000 so'm",
+        "268 800 so'm",
+        "1 971 200 so'm",
+        "2 000 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "To'lov solig'i bilan birga narxning 112 foizini tashkil etadi, demak sof narx 2 240 000 : 1,12 = 2 000 000 so'm. Soliq esa 2 240 000 − 2 000 000 = 240 000 so'm. 268 800 — soliqni to'lov summasidan hisoblash xatosi, 2 000 000 — sof narxning o'zi. Javob: 240 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ustama-va-soliq",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#1ed0c814"
+    },
+    {
+      "q": "Tadbirkor mahsulotni 60 foiz ustama bilan sotmoqchi edi, ammo xaridor topilmagach sotuv narxidan 20 foiz chegirma qildi. Tannarx 250 000 so'm bo'lsa, u qancha foyda ko'rdi?",
+      "v": [
+        "70 000 so'm",
+        "100 000 so'm",
+        "150 000 so'm",
+        "320 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Ustama bilan sotuv narxi 250 000 · 1,6 = 400 000 so'm edi, chegirmadan keyin 400 000 · 0,8 = 320 000 so'mga tushdi. Foyda 320 000 − 250 000 = 70 000 so'm. 150 000 — chegirmasiz foyda, 100 000 — foizlarni 40 ga ayirish xatosi, 320 000 esa yakuniy narxning o'zi. Javob: 70 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ustama-va-soliq",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#861dbaa2"
+    },
+    {
+      "q": "800 gramm 15 foizli tuzli eritmaga 200 gramm suv qo'shildi. Yangi eritmada tuzning ulushi necha foiz bo'ldi?",
+      "v": [
+        "12%",
+        "15%",
+        "18,75%",
+        "20%"
+      ],
+      "t": 0,
+      "izoh": "Tuz miqdori o'zgarmaydi: 800 · 0,15 = 120 gramm. Eritmaning yangi massasi 800 + 200 = 1 000 gramm, demak ulush 120 : 1 000 = 0,12, ya'ni 12 foiz. 15% — suv qo'shilishi konsentratsiyani o'zgartirmaydi deb o'ylash, 18,75% — teskari nisbat, 20% esa qo'shilgan suv ulushi. Javob: 12%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eritma-konsentratsiyasi",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#c6467cff"
+    },
+    {
+      "q": "Fermer yiqqan 480 kg uzumning 80 foizi namlik. Quritilgandan keyin namlik 20 foizgacha kamaydi. Quritilgan uzum necha kilogramm bo'ladi?",
+      "v": [
+        "384 kg",
+        "192 kg",
+        "120 kg",
+        "96 kg"
+      ],
+      "t": 2,
+      "izoh": "Quruq modda quritishda yo'qolmaydi: 480 · 0,2 = 96 kg. Quritilgandan keyin namlik 20 foiz, demak quruq modda 80 foizni tashkil qiladi: 96 : 0,8 = 120 kg. 96 kg — quruq moddaning o'zini javob deb olish, 384 kg — bug'lanadigan namlik massasi, 192 kg esa «namlik 60 foizga kamaydi» deb butun massani 0,4 ga ko'paytirish xatosi. Javob: 120 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eritma-konsentratsiyasi",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#b4864a1d"
+    },
+    {
+      "q": "Ikki xil sharbat aralashtirildi: 3 litr 40 foizli va 2 litr 15 foizli. Aralashmadagi sof meva sharbatining ulushi necha foiz?",
+      "v": [
+        "27,5%",
+        "30%",
+        "55%",
+        "1,5%"
+      ],
+      "t": 1,
+      "izoh": "Sof sharbat miqdori 3 · 0,4 + 2 · 0,15 = 1,2 + 0,3 = 1,5 litr, aralashma hajmi esa 5 litr. Ulush 1,5 : 5 = 0,3, ya'ni 30 foiz. 27,5% — hajmlarni hisobga olmay o'rta arifmetik olish, 55% — foizlarni qo'shish, 1,5% esa litr sonini foiz deb olish xatosi. Javob: 30%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eritma-konsentratsiyasi",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#29082eb0"
+    },
+    {
+      "q": "Dorixonada 4,5 litr 8 foizli eritma bor. Uning kuchini 10 foizga yetkazish uchun necha gramm sof modda qo'shish kerak (1 litr eritma 1 000 grammga teng deb olinsin)?",
+      "v": [
+        "90 gramm",
+        "100 gramm",
+        "450 gramm",
+        "500 gramm"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich eritma 4 500 gramm, undagi sof modda 4 500 · 0,08 = 360 gramm. Qo'shiladigan miqdorni x desak, (360 + x) : (4 500 + x) = 0,1 tenglama hosil bo'ladi. Undan 3 600 + 10x = 4 500 + x, ya'ni 9x = 900 va x = 100 gramm. 90 gramm — 2 foiz farqni eski massaga qo'llash, 450 gramm esa 10 foizni eski massadan olish xatosi. Javob: 100 gramm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eritma-konsentratsiyasi",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#222abf35"
+    },
+    {
+      "q": "Malika 1 250 000 so'mlik xarid qilib, 18 foizlik chegirma kartasidan foydalandi. U qancha pul tejadi?",
+      "v": [
+        "22 500 so'm",
+        "225 000 so'm",
+        "250 000 so'm",
+        "1 025 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Tejalgan summa xarid qiymatining 18 foizi: 1 250 000 · 0,18 = 225 000 so'm. 1 025 000 — kassaga to'langan summa, 250 000 — chegirmani 20 foizga yaxlitlash, 22 500 esa vergul o'rni adashtirilgan natija. Javob: 225 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tejalgan-summa",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#67f073d5"
+    },
+    {
+      "q": "Oilaning oylik oziq-ovqat xarajati 3 600 000 so'm edi, ular xarajatni 12 foizga qisqartirdi. Oyiga qancha pul tejaladi va endi qancha sarflanadi?",
+      "v": [
+        "432 000 va 3 168 000 so'm",
+        "360 000 va 3 240 000 so'm",
+        "432 000 va 4 032 000 so'm",
+        "43 200 va 3 556 800 so'm"
+      ],
+      "t": 0,
+      "izoh": "Tejaladigan summa 3 600 000 · 0,12 = 432 000 so'm, yangi xarajat esa 3 600 000 − 432 000 = 3 168 000 so'm. 360 000 li variant 12 foizni 10 foizga yaxlitlashdan, 4 032 000 li variant kamaytirish o'rniga qo'shishdan, 43 200 li variant esa 1,2 foiz hisoblashdan chiqadi. Javob: 432 000 va 3 168 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tejalgan-summa",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#6cb0b196"
+    },
+    {
+      "q": "Talaba noutbukni 8 400 000 so'mga ko'rdi. Bir hafta kutgach narx 15 foizga tushdi, biroq yetkazib berish uchun 120 000 so'm qo'shildi. Talaba dastlabki narxga nisbatan qancha tejadi?",
+      "v": [
+        "1 260 000 so'm",
+        "1 140 000 so'm",
+        "1 380 000 so'm",
+        "7 260 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Chegirma 8 400 000 · 0,15 = 1 260 000 so'm, chegirmali narx 7 140 000 so'm, yetkazish bilan esa 7 260 000 so'm. Tejash 8 400 000 − 7 260 000 = 1 140 000 so'm. 1 260 000 — yetkazish haqini unutish, 1 380 000 — uni qo'shish o'rniga ayirish, 7 260 000 esa to'langan summaning o'zi. Javob: 1 140 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tejalgan-summa",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#d44fb429"
+    },
+    {
+      "q": "Do'kon sovunni donasi 12 000 so'mdan sotadi, o'nta olganda esa 15 foiz chegirma beradi. Jamila o'nta sovun olsa, qancha tejaydi?",
+      "v": [
+        "1 800 so'm",
+        "12 000 so'm",
+        "18 000 so'm",
+        "102 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Chegirmasiz narx 12 000 · 10 = 120 000 so'm, tejash esa shu summaning 15 foizi: 120 000 · 0,15 = 18 000 so'm. 102 000 — to'lanadigan summa, 12 000 — «bittasi bepul» deb o'ylash, 1 800 esa bitta sovundan tejalgan pul. Javob: 18 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tejalgan-summa",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#c2e3d278"
+    },
+    {
+      "q": "Statistika ma'lumotiga ko'ra viloyatdagi 1 800 000 aholining 62 foizi qishloqda yashaydi. Shaharda necha kishi yashaydi?",
+      "v": [
+        "38 000 kishi",
+        "684 000 kishi",
+        "720 000 kishi",
+        "1 116 000 kishi"
+      ],
+      "t": 1,
+      "izoh": "Shahar aholisi ulushi 100 − 62 = 38 foiz, demak soni 1 800 000 · 0,38 = 684 000 kishi. 1 116 000 — qishloq aholisi, 720 000 — 40 foizga yaxlitlash, 38 000 esa foiz sonini odam soni deb olish xatosi. Javob: 684 000 kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "statistik-ulush",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#1c07b698"
+    },
+    {
+      "q": "So'rovnomada 2 500 kishi qatnashdi: 45 foizi «ha», 32 foizi «yo'q», qolganlari «bilmayman» deb javob berdi. «Bilmayman» deganlar nechta?",
+      "v": [
+        "575 ta",
+        "800 ta",
+        "1 125 ta",
+        "23 ta"
+      ],
+      "t": 0,
+      "izoh": "«Bilmayman» deganlar ulushi 100 − 45 − 32 = 23 foiz, demak soni 2 500 · 0,23 = 575 ta. 1 125 ta — «ha» deganlar, 800 ta — «yo'q» deganlar, 23 ta esa foizni odam soni deb olish natijasi. Javob: 575 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "statistik-ulush",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#084518b2"
+    },
+    {
+      "q": "Sport klubida 640 a'zo bor, ularning 55 foizi ayollar. Kelasi oyda klubga 64 nafar erkak qo'shilsa va ayollar soni o'zgarmasa, ayollarning ulushi necha foiz bo'ladi?",
+      "v": [
+        "45%",
+        "52,5%",
+        "55%",
+        "50%"
+      ],
+      "t": 3,
+      "izoh": "Ayollar soni 640 · 0,55 = 352 nafar bo'lib, u o'zgarmaydi. Yangi a'zolar soni 640 + 64 = 704, demak ulush 352 : 704 = 0,5, ya'ni 50 foiz. 55% — ulush o'zgarmaydi deb o'ylash, 45% — erkaklarning dastlabki ulushi, 52,5% esa ikki foizning o'rta arifmetigi. Javob: 50%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "statistik-ulush",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#fee514cf"
+    },
+    {
+      "q": "Ikki guruhda jami 60 talaba bor. Birinchi guruhning 40 foizi va ikkinchi guruhning 25 foizi sport bilan shug'ullanadi, ular jami 21 nafar. Birinchi guruhda necha talaba bor?",
+      "v": [
+        "40 ta",
+        "30 ta",
+        "24 ta",
+        "20 ta"
+      ],
+      "t": 0,
+      "izoh": "Birinchi guruhdagilar sonini x desak, ikkinchisida 60 − x talaba bo'ladi. Shartga ko'ra 0,4x + 0,25 · (60 − x) = 21, ya'ni 0,4x + 15 − 0,25x = 21 va 0,15x = 6, bundan x = 40. Tekshiramiz: 40 · 0,4 + 20 · 0,25 = 16 + 5 = 21. 20 ta — ikkinchi guruh soni, 30 ta — guruhlarni teng deb olish, 24 ta esa 60 ning 40 foizi. Javob: 40 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "statistik-ulush",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#e52f1441"
+    },
+    {
+      "q": "Do'kon xaridorga avval 10 foiz, so'ngra qolgan narxdan yana 20 foiz chegirma beradi. Bu ikki chegirma birgalikda necha foizlik yagona chegirmaga teng?",
+      "v": [
+        "28%",
+        "30%",
+        "72%",
+        "18%"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich narxni 1 deb olsak, ketma-ket ko'paytuvchilar 0,9 · 0,8 = 0,72 beradi. Xaridor narxning 72 foizini to'laydi, demak yagona chegirma 100 − 72 = 28 foiz. 30% — foizlarni oddiy qo'shish, 72% — to'lanadigan ulush, 18% esa faqat ikkinchi chegirmaning boshlang'ich narxdagi qiymati. Javob: 28%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekvivalent-yagona-chegirma",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#5710ae28"
+    },
+    {
+      "q": "«Bahor» do'koni ketma-ket 25 foiz va 40 foiz chegirma qiladi. Xaridor boshlang'ich narxning necha foizini to'laydi?",
+      "v": [
+        "35%",
+        "45%",
+        "55%",
+        "65%"
+      ],
+      "t": 1,
+      "izoh": "Har bir chegirma qolgan narxga qo'llanadi, shuning uchun to'lov ulushi 0,75 · 0,6 = 0,45, ya'ni 45 foiz. 35% — foizlarni 65 ga qo'shib, 100 dan ayirish xatosi, 65% — foizlar yig'indisi, 55% esa umumiy chegirma ulushi. Javob: 45%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekvivalent-yagona-chegirma",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#c9d0be3d"
+    },
+    {
+      "q": "Ulgurji bazada mahsulotga uchta ketma-ket chegirma qo'llanadi: 20 foiz, 25 foiz va 10 foiz. Bu chegirmalar yagona necha foizlik chegirmaga teng?",
+      "v": [
+        "54%",
+        "55%",
+        "45%",
+        "46%"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytuvchilarni ketma-ket qo'llaymiz: 0,8 · 0,75 · 0,9 = 0,54. Xaridor narxning 54 foizini to'laydi, demak yagona chegirma 100 − 54 = 46 foiz. 55% — foizlarni qo'shish, 45% — shu yig'indini 100 dan ayirish, 54% esa to'lanadigan ulush. Javob: 46%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekvivalent-yagona-chegirma",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#c03a8f29"
+    },
+    {
+      "q": "Do'konda bir vaqtda «40 foiz chegirma» va «ikkitasini olsangiz uchinchisi bepul» aksiyalari e'lon qilingan. Xaridor uchta bir xil mahsulot olmoqchi bo'lsa, qaysi aksiya foydaliroq?",
+      "v": [
+        "«Uchinchisi bepul» — u 50 foizga teng",
+        "Ikkalasi ham bir xil natija beradi",
+        "40 foizlik chegirma — chunki ikkinchi aksiya atigi 33,3 foizga teng",
+        "«Uchinchisi bepul» — u 40 foizdan foydali"
+      ],
+      "t": 2,
+      "izoh": "Bitta mahsulot narxini 1 deb olamiz. Birinchi aksiyada uchta mahsulot 3 · 0,6 = 1,8 turadi, ikkinchisida esa ikkitasi uchun 2 to'lanadi. Ikkinchi aksiyaning chegirmasi 1 : 3 = 0,333, ya'ni 33,3 foiz, bu 40 foizdan kam. Javob: 40 foizlik chegirma foydaliroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekvivalent-yagona-chegirma",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#83567e7b"
+    },
+    {
+      "q": "Sotuvchi «avval 30 foiz, keyin qolganidan 20 foiz» yoki «avval 20 foiz, keyin qolganidan 30 foiz» chegirma taklif qiladi. Bu ikki tartibning natijasi qanday farq qiladi?",
+      "v": [
+        "Birinchi tartib 2 foizga foydali",
+        "Ikkinchi tartib 2 foizga foydali",
+        "Natija bir xil — ikkalasida 50 foizlik chegirma",
+        "Natija bir xil — ikkalasida 44 foizlik chegirma"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tartibda to'lov ulushi 0,7 · 0,8 = 0,56, ikkinchisida 0,8 · 0,7 = 0,56. Ko'paytirish o'rin almashtirish xossasiga ega, shuning uchun tartib natijaga ta'sir qilmaydi. Ikkala holda ham yagona chegirma 100 − 56 = 44 foiz. 50 foizlik javob esa chegirmalarni qo'shish xatosidan chiqadi. Javob: natija bir xil, 44 foiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekvivalent-yagona-chegirma",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#6f6f7469"
+    },
+    {
+      "q": "Tovar narxi 20 foizga oshdi. Uni avvalgi darajaga qaytarish uchun yangi narxni necha foizga tushirish kerak?",
+      "v": [
+        "16,7%",
+        "20%",
+        "25%",
+        "80%"
+      ],
+      "t": 0,
+      "izoh": "Eski narxni 100 deb olsak, yangi narx 120 bo'ladi. Qaytarish uchun 20 birlik tushirish kerak, baza esa endi 120. Demak 20 : 120 = 0,1667, ya'ni taxminan 16,7 foiz. 20% — bazani almashtirmaslik xatosi, 25% — teskari yo'nalishdagi hisob, 80% esa foizni eski bazadan ayirish xatosi: yangi narxdagi eski narx ulushi aslida 100 : 120 = 83,3 foiz. Javob: 16,7%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tiklash-uchun-kerakli-foiz",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#547cb703"
+    },
+    {
+      "q": "Mahsulot narxi 25 foizga arzonlashdi. Uni eski darajaga qaytarish uchun yangi narxni necha foizga oshirish lozim?",
+      "v": [
+        "25%",
+        "33,3%",
+        "40%",
+        "75%"
+      ],
+      "t": 1,
+      "izoh": "Eski narx 100 bo'lsa, yangi narx 75 bo'ladi. Qaytarish uchun 25 birlik qo'shish kerak, baza esa 75. Shunda 25 : 75 = 0,3333, ya'ni 33,3 foiz. 25% — bazani almashtirmaslik, 75% — narxlar nisbati, 40% esa boshqa tartibdagi noto'g'ri hisob. Javob: 33,3%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tiklash-uchun-kerakli-foiz",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#1be065fc"
+    },
+    {
+      "q": "Inqiroz sababli ish haqi 10 foizga kamaytirildi. Uni dastlabki miqdorga tiklash uchun necha foizga oshirish kerak (foizning o'ndan biriga qadar aniqlikda)?",
+      "v": [
+        "10%",
+        "12,5%",
+        "90%",
+        "11,1%"
+      ],
+      "t": 3,
+      "izoh": "Dastlabki maoshni 100 deb olsak, kamaytirilgani 90 bo'ladi. Tiklash uchun 10 birlik qo'shiladi, baza esa 90. Demak 10 : 90 = 0,1111, ya'ni 11,1 foiz. 10% — bazani almashtirmaslik xatosi, 90% — maoshlar nisbati, 12,5% esa taxminiy yaxlitlash natijasi. Javob: 11,1%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tiklash-uchun-kerakli-foiz",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#58112588"
+    },
+    {
+      "q": "Do'kon narxni 60 foizga oshirdi, ammo savdo pasayganidan narxni yana boshlang'ich darajaga tushirmoqchi. Do'kon necha foizlik chegirma e'lon qilishi kerak?",
+      "v": [
+        "40%",
+        "60%",
+        "37,5%",
+        "62,5%"
+      ],
+      "t": 2,
+      "izoh": "Boshlang'ich narx 100 bo'lsa, oshirilgan narx 160 ga teng. Chegirma 60 birlikni tashkil qilishi kerak, baza esa 160. Shunda 60 : 160 = 0,375, ya'ni 37,5 foiz. 60% — bazani almashtirmaslik, 62,5% — narxlar nisbati, 40% esa taxminiy yaxlitlash natijasi. Javob: 37,5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tiklash-uchun-kerakli-foiz",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#cee4f969"
+    },
+    {
+      "q": "Korxona ishlab chiqarish hajmini avval 25 foizga oshirdi, so'ngra xomashyo yetishmagani uchun yangi hajmni 20 foizga qisqartirdi. Dastlabki hajmga qaytish uchun yana necha foizga o'zgartirish kerak?",
+      "v": [
+        "O'zgartirish shart emas — hajm allaqachon dastlabkiga teng",
+        "5 foizga oshirish kerak",
+        "5 foizga kamaytirish kerak",
+        "1,25 foizga oshirish kerak"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki hajmni 1 deb olsak, ketma-ket ko'paytuvchilar 1,25 · 0,8 = 1 beradi. Ya'ni 25 foizlik o'sish va undan keyingi 20 foizlik qisqarish bir-birini to'liq qoplaydi. 5 foizlik javoblar foizlarni oddiy ayirish xatosidan kelib chiqadi. Javob: hajm allaqachon dastlabkiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tiklash-uchun-kerakli-foiz",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#482c70a3"
+    },
+    {
+      "q": "Bir xil telefon «A» do'konida 6 500 000 so'm turadi va unga 12 foiz chegirma bor. «B» do'konida narx 6 200 000 so'm, chegirma esa 8 foiz. Qaysi do'konda arzonroq va farq qancha?",
+      "v": [
+        "«B» do'koni, 16 000 so'mga arzon",
+        "«A» do'koni, 16 000 so'mga arzon",
+        "«B» do'koni, 300 000 so'mga arzon",
+        "Ikkala do'konda ham yakuniy narx teng"
+      ],
+      "t": 0,
+      "izoh": "«A» do'konida narx 6 500 000 · 0,88 = 5 720 000 so'm, «B» do'konida esa 6 200 000 · 0,92 = 5 704 000 so'm. Demak «B» arzonroq va farq 5 720 000 − 5 704 000 = 16 000 so'm. 300 000 so'm — chegirmasiz narxlar farqi, «A» ni arzon deb belgilash esa katta chegirma har doim foydali degan noto'g'ri xulosadir. Javob: «B» do'koni, 16 000 so'mga arzon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-taklifni-taqqoslash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#55e0acc0"
+    },
+    {
+      "q": "Bir litr sut «Oq oltin» do'konida 14 000 so'm, shahar chetidagi «Sherzod» do'konida esa 12 500 so'm. Chetdagi do'konga borib kelish 20 000 so'm yo'l puliga tushadi. Necha litrdan boshlab chetdagi do'kon foydali bo'ladi?",
+      "v": [
+        "13 litr",
+        "14 litr",
+        "16 litr",
+        "20 litr"
+      ],
+      "t": 1,
+      "izoh": "Har litrda 14 000 − 12 500 = 1 500 so'm tejaladi. Yo'l pulini qoplash uchun 1 500n > 20 000 bo'lishi kerak, bundan n > 13,3 chiqadi, demak eng kichik butun son 14. 13 litr — kasrni pastga yaxlitlash xatosi, 16 litr — narx farqini 1 250 deb olish, 20 litr esa farqni 1 000 deb hisoblash. Javob: 14 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-taklifni-taqqoslash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#bd351b9a"
+    },
+    {
+      "q": "Bank 10 oyga sodda foiz bo'yicha yillik 24 foizdan ustama oladi, do'kon esa «10 oy davomida har oyiga 3 foizdan» ustama taklif qiladi. 5 000 000 so'mlik xarid uchun qaysi variantda ustama kam bo'ladi?",
+      "v": [
+        "Do'kon — 500 000 so'mga kam",
+        "Bank — 300 000 so'mga kam",
+        "Ikkalasi teng — 1 200 000 so'm",
+        "Bank — 500 000 so'mga kam"
+      ],
+      "t": 3,
+      "izoh": "Bank yillik 24 foizni 10 oyga moslaydi: 24 · 10 : 12 = 20 foiz, ya'ni 5 000 000 · 0,2 = 1 000 000 so'm. Do'konda 3 · 10 = 30 foiz, ya'ni 5 000 000 · 0,3 = 1 500 000 so'm. Farq 1 500 000 − 1 000 000 = 500 000 so'm bankning foydasiga. 300 000 so'm — bank ustamasini 10 oyga emas, to'liq yilga hisoblab (1 200 000 so'm) chiqqan farq; 1 200 000 so'm esa o'sha xato ustamaning o'zi. Javob: bank, 500 000 so'mga kam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-taklifni-taqqoslash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#860490d7"
+    },
+    {
+      "q": "Bir xil ish uchun birinchi ishchiga oylik 4 000 000 so'm va 5 foiz mukofot, ikkinchisiga 3 800 000 so'm va 12 foiz mukofot beriladi. Kim ko'proq oladi va qanchaga?",
+      "v": [
+        "Birinchisi — 56 000 so'mga ko'p",
+        "Ikkinchisi — 200 000 so'mga ko'p",
+        "Ikkinchisi — 56 000 so'mga ko'p",
+        "Ikkinchisi — 456 000 so'mga ko'p"
+      ],
+      "t": 2,
+      "izoh": "Birinchi ishchi 4 000 000 · 1,05 = 4 200 000 so'm, ikkinchisi esa 3 800 000 · 1,12 = 4 256 000 so'm oladi. Demak ikkinchisi 4 256 000 − 4 200 000 = 56 000 so'mga ko'p oladi. 200 000 so'm — faqat oyliklar farqi, 456 000 so'm esa ikkinchi ishchining mukofot summasi. Javob: ikkinchisi, 56 000 so'mga ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-taklifni-taqqoslash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#db54e1d5"
+    },
+    {
+      "q": "Oilaning oylik daromadi 7 500 000 so'm. Uning 40 foizi oziq-ovqatga, 25 foizi kommunal to'lovlarga sarflanadi, qolgani jamg'ariladi. Jamg'armaga qancha pul qoladi?",
+      "v": [
+        "1 875 000 so'm",
+        "2 625 000 so'm",
+        "3 000 000 so'm",
+        "4 875 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Jamg'ariladigan ulush 100 − 40 − 25 = 35 foiz, demak summa 7 500 000 · 0,35 = 2 625 000 so'm. 3 000 000 — oziq-ovqat xarajati, 1 875 000 — kommunal to'lov, 4 875 000 esa ikkala xarajatning yig'indisi. Javob: 2 625 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "budjetni-foizga-taqsimlash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#b5ea5823"
+    },
+    {
+      "q": "Maktab byudjetining 45 foizi ta'mirga, 30 foizi jihozga ajratildi, qolgan 1 250 000 so'm kanselyariyaga sarflandi. Byudjet qancha bo'lgan?",
+      "v": [
+        "312 500 so'm",
+        "3 750 000 so'm",
+        "5 000 000 so'm",
+        "6 250 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Kanselyariyaga qolgan ulush 100 − 45 − 30 = 25 foiz, demak byudjet 1 250 000 : 0,25 = 5 000 000 so'm. 312 500 — 1 250 000 dan yana 25 foiz olish, 3 750 000 — qolgan ulushni 75 foiz deb hisoblash, 6 250 000 esa 20 foizga bo'lish xatosi. Javob: 5 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "budjetni-foizga-taqsimlash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#5c2a6712"
+    },
+    {
+      "q": "Loyihaga ajratilgan mablag'ning 30 foizi materialga ketdi, materialdan keyin qolgan pulning 40 foizi esa ish haqiga sarflandi. Ish haqiga 4 200 000 so'm ketgan bo'lsa, loyiha mablag'i qancha edi?",
+      "v": [
+        "6 000 000 so'm",
+        "10 500 000 so'm",
+        "14 000 000 so'm",
+        "15 000 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Materialdan keyin mablag'ning 0,7 qismi qoladi, ish haqi esa shu qoldiqning 0,4 qismi. Demak ish haqi butun mablag'ning 0,7 · 0,4 = 0,28 ulushi. Shunda mablag' 4 200 000 : 0,28 = 15 000 000 so'm. 10 500 000 — faqat 0,4 ga bo'lish, 14 000 000 — 0,3 ga bo'lish, 6 000 000 esa 0,7 ga bo'lish xatosi. Javob: 15 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "budjetni-foizga-taqsimlash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#7ad03a3a"
+    },
+    {
+      "q": "Sanoat korxonasi daromadining 18 foizini soliqqa, 22 foizini xomashyoga, 15 foizini ish haqiga ajratadi. Qolgan mablag' 13 500 000 so'm bo'lsa, korxona daromadi qancha?",
+      "v": [
+        "6 075 000 so'm",
+        "7 425 000 so'm",
+        "30 000 000 so'm",
+        "33 750 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Ajratmalar ulushi 18 + 22 + 15 = 55 foiz, qolgan qism esa 45 foiz. Demak daromad 13 500 000 : 0,45 = 30 000 000 so'm. 6 075 000 — qoldiqdan yana 45 foiz olish, 7 425 000 — undan 55 foiz olish, 33 750 000 esa 0,4 ga bo'lish xatosi. Javob: 30 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "budjetni-foizga-taqsimlash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#54155969"
+    },
+    {
+      "q": "Bir sonning 35 foizi 84 ga teng bo'lsa, shu sonning 60 foizini toping.",
+      "v": [
+        "50,4",
+        "140",
+        "144",
+        "240"
+      ],
+      "t": 2,
+      "izoh": "Avval sonning o'zini topamiz: 84 : 0,35 = 240. Endi uning 60 foizini hisoblaymiz: 240 · 0,6 = 144. 240 — sonning o'zini javob deb olish, 50,4 — 60 foizni 84 dan olish, 140 esa 84 ni 0,6 ga bo'lish xatosi. Javob: 144.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foizli-tenglama-nomalum",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#84f5c0ab"
+    },
+    {
+      "q": "x sonining 12 foizi 54 ga, y sonining 18 foizi ham 54 ga teng. x va y sonlarining yig'indisini toping.",
+      "v": [
+        "16,2",
+        "300",
+        "450",
+        "750"
+      ],
+      "t": 3,
+      "izoh": "Birinchi shartdan x = 54 : 0,12 = 450, ikkinchisidan y = 54 : 0,18 = 300 chiqadi. Ularning yig'indisi 450 + 300 = 750. 450 va 300 — faqat bitta sonni javob deb olish, 16,2 esa 54 dan 30 foiz olish xatosi. Javob: 750.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foizli-tenglama-nomalum",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#73cbf2ae"
+    },
+    {
+      "q": "Bir sonning 40 foizi uning 25 foizidan 45 taga ko'p. Shu sonni toping.",
+      "v": [
+        "112,5",
+        "180",
+        "300",
+        "900"
+      ],
+      "t": 2,
+      "izoh": "Izlanayotgan sonni x deymiz. Shartga ko'ra 0,4x − 0,25x = 45, ya'ni 0,15x = 45 va x = 300. Tekshiramiz: 300 ning 40 foizi 120, 25 foizi 75, farq esa 45. 180 — 45 ni 0,25 ga bo'lish, 112,5 — 0,4 ga bo'lish, 900 esa farqni 5 foiz deb olish xatosi. Javob: 300.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foizli-tenglama-nomalum",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#d185c331"
+    },
+    {
+      "q": "Sinf o'quvchilarining 60 foizi qizlar. Agar sinfga yana 8 nafar o'g'il bola qo'shilsa, qizlar 50 foizni tashkil qiladi. Dastlab sinfda necha o'quvchi bo'lgan?",
+      "v": [
+        "16 ta",
+        "24 ta",
+        "40 ta",
+        "48 ta"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki sonni n desak, qizlar soni 0,6n bo'ladi va u o'zgarmaydi. Yangi shartga ko'ra 0,6n = 0,5 · (n + 8), ya'ni 0,6n = 0,5n + 4 va 0,1n = 4, bundan n = 40. Tekshiramiz: 24 qiz, 16 o'g'il, sakkiztasi qo'shilgach 48 ta o'quvchidan 24 tasi qiz. 24 ta — qizlar soni, 16 ta — o'g'illar soni, 48 ta esa yangi umumiy son. Javob: 40 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foizli-tenglama-nomalum",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#70521bba"
+    },
+    {
+      "q": "Zavod ishchilarining 60 foizi erkaklar, erkaklarning 25 foizi esa muhandis. Muhandislar butun jamoaning necha foizini tashkil qiladi?",
+      "v": [
+        "15%",
+        "25%",
+        "35%",
+        "85%"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi foiz butun jamoadan emas, erkaklar sonidan olinadi. Shuning uchun ulushlar ko'paytiriladi: 0,6 · 0,25 = 0,15, ya'ni 15 foiz. 25% — bazani almashtirmaslik xatosi, 85% — foizlarni qo'shish, 35% esa ularni ayirish natijasi. Javob: 15%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foizning-foizi",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#5d49ae45"
+    },
+    {
+      "q": "Viloyat aholisining 30 foizi yoshlar, yoshlarning 40 foizi esa talaba. Viloyatda 2 500 000 kishi yashasa, talabalar soni qancha?",
+      "v": [
+        "750 000 kishi",
+        "300 000 kishi",
+        "1 000 000 kishi",
+        "1 750 000 kishi"
+      ],
+      "t": 1,
+      "izoh": "Talabalar ulushi 0,3 · 0,4 = 0,12, demak soni 2 500 000 · 0,12 = 300 000 kishi. 750 000 — barcha yoshlar soni, 1 000 000 — aholining 40 foizi, 1 750 000 esa foizlarni qo'shib 70 foiz olish xatosi. Javob: 300 000 kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foizning-foizi",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#e59c5028"
+    },
+    {
+      "q": "Do'kon foydasining 20 foizi soliqqa ketadi, soliqdan keyin qolgan foydaning 30 foizi rivojlanishga ajratiladi. Rivojlanishga butun foydaning necha foizi ketadi?",
+      "v": [
+        "30%",
+        "50%",
+        "10%",
+        "24%"
+      ],
+      "t": 3,
+      "izoh": "Soliqdan keyin foydaning 0,8 qismi qoladi, rivojlanishga esa shu qoldiqning 0,3 qismi ajratiladi. Demak ulush 0,8 · 0,3 = 0,24, ya'ni 24 foiz. 30% — foizni butun foydaga qo'llash xatosi, 50% — foizlarni qo'shish, 10% esa ularni ayirish natijasi. Javob: 24%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "foizning-foizi",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#67b48d15"
+    },
+    {
+      "q": "Mahsulotning 40 foizi «A» sexda, qolgani «B» sexda ishlab chiqariladi. «A» sexdagi mahsulotning 5 foizi, «B» sexdagi mahsulotning 10 foizi nuqsonli. Butun mahsulotning necha foizi nuqsonli?",
+      "v": [
+        "7,5%",
+        "8%",
+        "15%",
+        "6%"
+      ],
+      "t": 1,
+      "izoh": "«A» sexdan keladigan nuqson 0,4 · 0,05 = 0,02, «B» sexdan esa 0,6 · 0,1 = 0,06. Ularni qo'shsak 0,08 chiqadi, ya'ni 8 foiz. 7,5% — sexlar hajmini hisobga olmay o'rta arifmetik olish, 15% — foizlarni oddiy qo'shish, 6% esa faqat «B» sexni hisobga olish xatosi. Javob: 8%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "foizning-foizi",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#e2334f4d"
+    },
+    {
+      "q": "Do'konda mahsulot tannarxidan 25 foiz ustama bilan sotilardi. Sotuvchi narxni 20 foizga tushirsa ham zarar ko'rmasligini aytdi. U haqmi?",
+      "v": [
+        "Ha, narx aynan tannarxga tushadi — zarar ham, foyda ham bo'lmaydi",
+        "Yo'q, 5 foiz zarar ko'radi",
+        "Ha, tannarxdan 5 foiz foyda qoladi",
+        "Yo'q, 20 foiz zarar ko'radi"
+      ],
+      "t": 0,
+      "izoh": "Tannarxni 100 deb olsak, sotuv narxi 125 bo'ladi. 20 foizlik chegirmadan keyin narx 125 · 0,8 = 100 ga teng, ya'ni aynan tannarx. Demak sotuvchi zarar ko'rmaydi, lekin foyda ham qolmaydi. 5 foizlik javoblar 25 va 20 foizni bir bazaga tegishli deb ayirish xatosidan chiqadi. Javob: narx aynan tannarxga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "foizli-xulosani-baholash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#77ec8e37"
+    },
+    {
+      "q": "Tovar narxi yanvarda 10 foizga oshdi, fevralda 10 foizga tushdi, martda esa yana 10 foizga oshdi. Mart oxirida narx yil boshiga nisbatan qanday bo'ladi?",
+      "v": [
+        "10 foizga ko'p",
+        "O'zgarmagan",
+        "8,9 foizga kam",
+        "8,9 foizga ko'p"
+      ],
+      "t": 3,
+      "izoh": "Ketma-ket ko'paytuvchilarni qo'llaymiz: 1,1 · 0,9 · 1,1 = 1,089. Demak narx yil boshidagidan 8,9 foizga ko'p. Foizlarni qo'shib-ayirish usuli 10 foiz yoki o'zgarishsizlik degan noto'g'ri xulosaga olib keladi, chunki har bir foiz o'z bazasidan hisoblanadi. Javob: 8,9 foizga ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "foizli-xulosani-baholash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#9da0b0b1"
+    },
+    {
+      "q": "Kilogrammi 6 000 so'mlik va 9 000 so'mlik ikki xil bug'doy aralashtiriladi. Aralashmaning bir kilogrammi arzon navdan 20 foizga qimmat bo'lishi kerak. Ularni qanday nisbatda aralashtirish lozim?",
+      "v": [
+        "3 : 2",
+        "2 : 3",
+        "1 : 1",
+        "4 : 1"
+      ],
+      "t": 0,
+      "izoh": "Aralashma narxi 6 000 · 1,2 = 7 200 so'm bo'lishi kerak. Arzon navdan a kg, qimmatidan b kg olsak, 6 000a + 9 000b = 7 200 · (a + b) tenglama chiqadi. Uni soddalashtirsak 1 800b = 1 200a, ya'ni a : b = 3 : 2. Teskari nisbat 2 : 3 baza almashtirish xatosidan kelib chiqadi. Javob: 3 : 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "foizli-xulosani-baholash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#6eeb8f7f"
+    },
+    {
+      "q": "Mahsulot narxi avval p foizga oshirildi, so'ngra yangi narxdan p foizga tushirildi. Natijada narx boshlang'ichdan 9 foizga kam bo'ldi. p ning qiymatini toping.",
+      "v": [
+        "3",
+        "9",
+        "10",
+        "30"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich narxni 1 deb olsak, yakuniy narx (1 + p/100) · (1 − p/100) = 1 − p² : 10 000 ga teng. Shart bo'yicha bu 0,91 ga teng, demak p² : 10 000 = 0,09 va p² = 900, bundan p = 30. 9 — foiz kamayishini bevosita p deb olish, 3 — p² = 9 deb yechish, 10 esa kvadratni noto'g'ri ochish xatosi. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "foizli-xulosani-baholash",
+      "id": "matematika_foiz_m01-foiz-tushunchasi-va-sodda-foiz#fe9974ea"
+    }
+  ]
+}

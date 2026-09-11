@@ -1,0 +1,1609 @@
+{
+  "nom": "Ratsionallashtirish metodi: o'zgaruvchi asosli tengsizliklar",
+  "bolim": "Tengsizliklar",
+  "blok": "tngs",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "logₓ(x+2) > logₓ5 tengsizligi o'zining aniqlanish sohasida qaysi ratsional tengsizlikka ekvivalent bo'ladi?",
+      "v": [
+        "(x−1)(x−3) < 0",
+        "(x+1)(x−3) > 0",
+        "(x−1)(x+3) > 0",
+        "(x−1)(x−3) > 0"
+      ],
+      "t": 3,
+      "izoh": "Ratsionallashtirish qoidasi: logₐf > logₐg tengsizligi (a−1)(f−g) > 0 ga teng kuchli. Bu yerda asos a = x, f = x+2, g = 5. Demak (x−1)(x+2−5) > 0 bo'ladi. Qavs ichini soddalashtiramiz: x+2−5 = x−3. Javob: (x−1)(x−3) > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-ratsional-tengsizlik",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#bced2be3"
+    },
+    {
+      "q": "logₐ(3a) > logₐ12 tengsizligi a ning aniqlanish sohasida qanday ko'paytmali tengsizlikka aylanadi?",
+      "v": [
+        "(a−1)(a−4) < 0",
+        "a(a−4) > 0",
+        "(a−1)(a−4) > 0",
+        "(a−1)(a+4) > 0"
+      ],
+      "t": 2,
+      "izoh": "Asos a, argumentlar 3a va 12. Ratsionallashtirish bo'yicha (a−1)(3a−12) > 0 hosil bo'ladi. Umumiy ko'paytuvchi 3 ni qavsdan chiqaramiz: 3(a−1)(a−4) > 0. Musbat son 3 ga bo'lish ishorani o'zgartirmaydi. Javob: (a−1)(a−4) > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-ratsional-tengsizlik",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#392291fd"
+    },
+    {
+      "q": "logₓ(x²−3) > logₓ(x+3) tengsizligi ratsionallashtirilganda qaysi uch ko'paytuvchili tengsizlik hosil bo'ladi?",
+      "v": [
+        "(x−1)(x−3)(x+2) > 0",
+        "(x−1)(x−3)(x+2) < 0",
+        "(x−1)(x+3)(x−2) > 0",
+        "(x−1)(x+3)(x+2) > 0"
+      ],
+      "t": 0,
+      "izoh": "Ratsionallashtirish: (x−1)((x²−3)−(x+3)) > 0. Qavs ichi x²−3−x−3 = x²−x−6 bo'ladi. Uni ko'paytuvchilarga ajratamiz: ildizlari 3 va −2, demak x²−x−6 = (x−3)(x+2). Natijada (x−1)(x−3)(x+2) > 0. Javob: (x−1)(x−3)(x+2) > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekvivalent-ratsional-tengsizlik",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#3e660d84"
+    },
+    {
+      "q": "logₓ(x+2) > logₓ5 tengsizligini yechishda aniqlanish sohasi qaysi shartlar sistemasidan iborat bo'ladi?",
+      "v": [
+        "x > 0, x + 2 > 0",
+        "x > 1, x + 2 > 0",
+        "x ≥ 0, x ≠ 1, x + 2 > 0",
+        "x > 0, x ≠ 1, x + 2 > 0"
+      ],
+      "t": 3,
+      "izoh": "Logarifm asosiga ikki shart qo'yiladi: asos musbat va birga teng emas, ya'ni x > 0 va x ≠ 1. Argumentlar musbat bo'lishi kerak: x+2 > 0, ikkinchi argument 5 esa doim musbat. Asos 1 dan katta yoki kichik ekani oldindan talab qilinmaydi, chunki ratsionallashtirish ikkala holni birga qamraydi. Javob: x > 0, x ≠ 1, x + 2 > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-sistema",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#3c1427c8"
+    },
+    {
+      "q": "Nodira logₓ(5−x) > logₓ2 tengsizligini yechmoqchi va yechimni izlashdan oldin aniqlanish sohasini yozib olishi kerak. To'g'ri sistemani ko'rsating.",
+      "v": [
+        "x > 0, 5 − x > 0",
+        "x > 1, 5 − x > 0",
+        "x > 0, x ≠ 1, 5 − x > 0",
+        "x > 0, x ≠ 1, 5 − x ≥ 0"
+      ],
+      "t": 2,
+      "izoh": "Asos x uchun x > 0 va x ≠ 1 shartlari yoziladi. Birinchi argument uchun 5−x > 0, ya'ni qat'iy musbat bo'lishi shart, chunki nol argumentli logarifm mavjud emas. Ikkinchi argument 2 musbat, unga shart kerak emas. Javob: x > 0, x ≠ 1, 5 − x > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-sistema",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#57715f8c"
+    },
+    {
+      "q": "Asosi o'zgaruvchi bo'lgan logₓ(x−3) ifodasi ma'noga ega bo'lishi uchun x qaysi oraliqda yotishi kerak?",
+      "v": [
+        "(0; 1) ∪ (1; +∞)",
+        "(3; +∞)",
+        "(0; 3)",
+        "(1; 3)"
+      ],
+      "t": 1,
+      "izoh": "Asos sharti: x > 0 va x ≠ 1. Argument sharti: x−3 > 0, ya'ni x > 3. Ikkala shartni birlashtiramiz: x > 3 bo'lganda x > 0 va x ≠ 1 avtomatik bajariladi. Demak yechim x > 3. Javob: (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-sistema",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#c94ed0fc"
+    },
+    {
+      "q": "a^(x+1) > a^(3x−1) tengsizligi (a > 0, a ≠ 1) qaysi ratsional tengsizlikka teng kuchli bo'ladi?",
+      "v": [
+        "(a−1)(x−1) > 0",
+        "(a−1)(1−x) > 0",
+        "(a+1)(1−x) > 0",
+        "(a−1)·4x > 0"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichli tengsizlik uchun ratsionallashtirish: a^f > a^g tengsizligi (a−1)(f−g) > 0 ga teng kuchli. Bu yerda f = x+1, g = 3x−1. Ayirma f−g = (x+1)−(3x−1) = 2−2x. Demak (a−1)(2−2x) > 0, ya'ni 2 ga bo'lib (a−1)(1−x) > 0. Javob: (a−1)(1−x) > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-ratsionallashtirish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#de621c84"
+    },
+    {
+      "q": "Muhandis Alisher hisob-kitobida a^(2x+1) > a^(x+4) tengsizligi uchradi, bunda a > 0 va a ≠ 1. Uni ratsionallashtirgandan keyin qanday tengsizlik hosil bo'ladi?",
+      "v": [
+        "(a−1)(x+3) > 0",
+        "(a−1)(3x+5) > 0",
+        "(a−1)(x−3) < 0",
+        "(a−1)(x−3) > 0"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkichlar ayirmasini olamiz: (2x+1)−(x+4) = x−3. Ratsionallashtirish qoidasiga ko'ra tengsizlik (a−1)(x−3) > 0 ko'rinishini oladi. Ko'rsatkichlarni qo'shish emas, ayirish kerak, shuning uchun 3x+5 xato. Javob: (a−1)(x−3) > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-ratsionallashtirish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#502c922a"
+    },
+    {
+      "q": "a^(x²) > a⁴ tengsizligi 0 < a < 1 shartida qaysi sodda tengsizlikka teng kuchli bo'ladi?",
+      "v": [
+        "x² − 4 < 0",
+        "x² − 4 > 0",
+        "x² − 4 ≤ 0",
+        "x² + 4 > 0"
+      ],
+      "t": 0,
+      "izoh": "Ratsionallashtirilgan ko'rinish: (a−1)(x²−4) > 0. Shart bo'yicha 0 < a < 1, demak a−1 < 0, ya'ni birinchi ko'paytuvchi manfiy. Ko'paytma musbat bo'lishi uchun ikkinchi ko'paytuvchi ham manfiy bo'lishi kerak: x²−4 < 0. Tengsizlik qat'iy, shuning uchun ≤ belgisi qo'yilmaydi. Javob: x² − 4 < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-ratsionallashtirish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#0725bed7"
+    },
+    {
+      "q": "logₓ(2x+3) > logₓ7 tengsizligining yechim to'plamini toping.",
+      "v": [
+        "(0; 1) ∪ (2; +∞)",
+        "(1; 2)",
+        "(2; +∞)",
+        "(0; 1)"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi: x > 0, x ≠ 1, 2x+3 > 0. Ratsionallashtirish: (x−1)(2x+3−7) > 0, ya'ni (x−1)(2x−4) > 0 va 2(x−1)(x−2) > 0. Ildizlar 1 va 2, ko'paytma musbat bo'lgan oraliqlar x < 1 hamda x > 2. Aniqlanish sohasi bilan kesishtiramiz: 0 < x < 1 yoki x > 2. Javob: (0; 1) ∪ (2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "log-tengsizlik-yechim-oraligi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#ccd12834"
+    },
+    {
+      "q": "logₓ(x+6) > logₓ10 tengsizligining barcha yechimlaridan iborat to'plamni ko'rsating.",
+      "v": [
+        "(1; 4)",
+        "(4; +∞)",
+        "(0; 1) ∪ (4; +∞)",
+        "(0; 4)"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi: x > 0, x ≠ 1, x+6 > 0. Ratsionallashtiramiz: (x−1)(x+6−10) > 0, ya'ni (x−1)(x−4) > 0. Ildizlar 1 va 4, ko'paytma x < 1 da va x > 4 da musbat. Sohaga ko'ra x > 0 bo'lgani uchun birinchi bo'lak 0 < x < 1 ga qisqaradi. Javob: (0; 1) ∪ (4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "log-tengsizlik-yechim-oraligi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#7cce81c1"
+    },
+    {
+      "q": "logₓ(3x−2) < logₓ(x+4) tengsizligini yechib, javobni oraliq ko'rinishida bering.",
+      "v": [
+        "(0; 1) ∪ (3; +∞)",
+        "(2/3; 1) ∪ (3; +∞)",
+        "(3; +∞)",
+        "(1; 3)"
+      ],
+      "t": 3,
+      "izoh": "Tengsizlik kichik belgili, shuning uchun (x−1)((3x−2)−(x+4)) < 0 bo'ladi. Qavs ichi 2x−6, demak 2(x−1)(x−3) < 0 va 1 < x < 3. Aniqlanish sohasi: x > 0, x ≠ 1 hamda 3x−2 > 0, ya'ni x > 2/3. Topilgan oraliq bu shartlarni to'liq qanoatlantiradi. Javob: (1; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "log-tengsizlik-yechim-oraligi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#032d1dcf"
+    },
+    {
+      "q": "Do'kondagi mahsulot narxi million so'mda x bilan belgilangan. Marketolog Zilola narxni logₓ(x+8) > logₓ14 sharti bajariladigan qilib tanlamoqchi. x qanday qiymatlarni olishi mumkin?",
+      "v": [
+        "(1; 6)",
+        "(6; +∞)",
+        "(0; 1) ∪ (6; +∞)",
+        "(0; 6)"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi: x > 0, x ≠ 1 va x+8 > 0. Ratsionallashtirish: (x−1)(x+8−14) > 0, ya'ni (x−1)(x−6) > 0. Ildizlar 1 va 6 bo'lib, ko'paytma x < 1 va x > 6 oraliqlarda musbat. Narx musbat bo'lgani uchun manfiy qism tashlanadi. Javob: (0; 1) ∪ (6; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-sharti",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#eda455cb"
+    },
+    {
+      "q": "Tadbirkor Bekzod tovar narxining o'sish koeffitsienti a > 0 va a ≠ 1 ekanini biladi. Uning hisobida a^(x+5) < a^(2x+1) tengsizligi uchradi; ratsionallashtirilgan ko'rinishini tanlang.",
+      "v": [
+        "(a−1)(x − 4) < 0",
+        "(a−1)(4 − x) > 0",
+        "(a−1)(4 − x) < 0",
+        "(a−1)(3x+6) < 0"
+      ],
+      "t": 2,
+      "izoh": "Kichik belgili ko'rsatkichli tengsizlik uchun (a−1)(f−g) < 0 yoziladi. Bu yerda f = x+5, g = 2x+1, ayirma f−g = (x+5)−(2x+1) = 4−x. Demak (a−1)(4−x) < 0 hosil bo'ladi. Ko'rsatkichlarni qo'shib yuborish 3x+6 ni beradi, bu esa xato. Javob: (a−1)(4 − x) < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-sharti",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#d3a1884a"
+    },
+    {
+      "q": "Bir qishloq aholisi har yili a marta ko'payadi, bunda a > 0 va a ≠ 1. Demograf tuzgan modelda a^(3x) > a^(x+8) tengsizligi hosil bo'ldi. Uni ratsionallashtiring.",
+      "v": [
+        "(a−1)(x+4) > 0",
+        "(a−1)(4x+8) > 0",
+        "(a−1)(x−4) < 0",
+        "(a−1)(x−4) > 0"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkichlar ayirmasi: 3x−(x+8) = 2x−8. Ratsionallashtirish (a−1)(2x−8) > 0 ni beradi. Umumiy ko'paytuvchi 2 ni qavsdan chiqarib, musbat songa bo'lamiz: (a−1)(x−4) > 0. Ishora o'zgarmaydi, chunki 2 musbat. Javob: (a−1)(x−4) > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aholi-osishi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#21b9cf48"
+    },
+    {
+      "q": "Laboratoriyada bakteriya soni har soatda x marta o'zgaradi. Tadqiqotchi Gulnora logₓ(4x) > logₓ(x+9) sharti bajarilishini tekshirmoqchi. x ning qaysi qiymatlarida bu shart o'rinli?",
+      "v": [
+        "(0; 1) ∪ (3; +∞)",
+        "(1; 3)",
+        "(3; +∞)",
+        "(0; 3)"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi: x > 0, x ≠ 1, 4x > 0 va x+9 > 0. Ratsionallashtirish: (x−1)(4x−x−9) > 0, ya'ni (x−1)(3x−9) > 0 va 3(x−1)(x−3) > 0. Ildizlar 1 va 3, ko'paytma x < 1 va x > 3 da musbat. Soha bilan kesishtirsak 0 < x < 1 yoki x > 3 chiqadi. Javob: (0; 1) ∪ (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aholi-osishi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#eb49359b"
+    },
+    {
+      "q": "logₓ(12−x) > logₓ(x+2) tengsizligining nechta butun yechimi bor?",
+      "v": [
+        "4",
+        "2",
+        "3",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi: x > 0, x ≠ 1, 12−x > 0 va x+2 > 0, ya'ni 0 < x < 12 hamda x ≠ 1. Ratsionallashtirish: (x−1)(12−x−x−2) > 0, ya'ni (x−1)(10−2x) > 0 va 2(x−1)(5−x) > 0. Bu (x−1)(x−5) < 0 ga teng, demak 1 < x < 5. Bu oraliqdagi butun sonlar: 2, 3 va 4. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#29bc106a"
+    },
+    {
+      "q": "Omborda x tonna g'alla saqlanadi. Nazoratchi Dilshod logₓ(20−x) > logₓ(2x+2) sharti bajarilishini talab qiladi. Shu shartni qanoatlantiruvchi butun qiymatlar nechta?",
+      "v": [
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi: x > 0, x ≠ 1, 20−x > 0 va 2x+2 > 0, ya'ni 0 < x < 20, x ≠ 1. Ratsionallashtirish: (x−1)(20−x−2x−2) > 0, ya'ni (x−1)(18−3x) > 0 va 3(x−1)(6−x) > 0. Bundan (x−1)(x−6) < 0, ya'ni 1 < x < 6. Butun qiymatlar: 2, 3, 4, 5. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#c8fa1119"
+    },
+    {
+      "q": "Ishoralar jadvalidan foydalanib, (x−1)(x−2)(x−5) > 0 ko'rinishiga keltirilgan tengsizlikning yechimini toping (bunda x > 0 va x ≠ 1).",
+      "v": [
+        "(1; 2) ∪ (5; +∞)",
+        "(0; 1) ∪ (2; 5)",
+        "(2; 5)",
+        "(5; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Nollar 1, 2 va 5 son o'qini to'rt qismga ajratadi. x > 5 da uchala ko'paytuvchi musbat, ko'paytma musbat. 2 < x < 5 da bitta ko'paytuvchi manfiy, ko'paytma manfiy. 1 < x < 2 da ikkitasi manfiy, ko'paytma musbat. 0 < x < 1 da uchtasi manfiy, ko'paytma manfiy. Javob: (1; 2) ∪ (5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ishoralar-jadvali-oraliq",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#4bcd4784"
+    },
+    {
+      "q": "logₓ(x²+2) > logₓ(3x) tengsizligini ratsionallashtirib, ishoralar jadvali yordamida yeching.",
+      "v": [
+        "(0; 1) ∪ (2; +∞)",
+        "(1; 2)",
+        "(0; 2)",
+        "(2; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Ratsionallashtirish: (x−1)(x²+2−3x) > 0. Kvadrat uchhadning ildizlari 1 va 2, demak x²−3x+2 = (x−1)(x−2). Natijada (x−1)²(x−2) > 0. Kvadrat ko'paytuvchi manfiy bo'la olmaydi va x = 1 da nolga aylanadi, shuning uchun ishorani faqat x−2 belgilaydi: x > 2. Aniqlanish sohasi x > 0, x ≠ 1 buni buzmaydi. Javob: (2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ishoralar-jadvali-oraliq",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#406bc5c0"
+    },
+    {
+      "q": "O'quvchi logₓ(x+4) > logₓ9 tengsizligini yechayotib, darrov x+4 > 9 deb yozdi va x > 5 javobini oldi. Uning yechimidagi asosiy xato nimada?",
+      "v": [
+        "Aniqlanish sohasini butunlay yozmagan",
+        "Asos 1 dan kichik bo'lgan holni hisobga olmagan",
+        "x+4 va 9 ni o'rinlarini almashtirib yuborgan",
+        "Tengsizlik belgisini teskari qo'ygan"
+      ],
+      "t": 1,
+      "izoh": "Argumentlarni to'g'ridan-to'g'ri solishtirish faqat asos 1 dan katta bo'lganda o'rinli. Ratsionallashtirish (x−1)(x+4−9) > 0, ya'ni (x−1)(x−5) > 0 ni beradi. Bundan x < 1 yoki x > 5. Aniqlanish sohasi x > 0 bo'lgani uchun to'liq javob (0; 1) ∪ (5; +∞). O'quvchi 0 < x < 1 bo'lagini yo'qotgan. Javob: asos 1 dan kichik bo'lgan holni hisobga olmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimdagi-xatoni-topish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#1064c12e"
+    },
+    {
+      "q": "Anvar a^(2x) > a^(x+3) tengsizligini a > 0 va a ≠ 1 shartida yechib, javobni x > 3 deb yozdi. Uning mulohazasidagi kamchilikni ko'rsating.",
+      "v": [
+        "Ko'rsatkichlar ayirmasini noto'g'ri hisoblagan",
+        "Asos 1 dan katta deb faraz qilgan",
+        "Aniqlanish sohasini noto'g'ri yozgan",
+        "Tengsizlikni tenglamaga aylantirib yuborgan"
+      ],
+      "t": 1,
+      "izoh": "Ayirma 2x−(x+3) = x−3 to'g'ri topilgan, demak ratsionallashtirilgan ko'rinish (a−1)(x−3) > 0. Bu ko'paytma a > 1 bo'lganda x > 3 ni, 0 < a < 1 bo'lganda esa x < 3 ni beradi. Anvar ikkinchi holni tashlab ketgan. Javob: asos 1 dan katta deb faraz qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimdagi-xatoni-topish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#87b07456"
+    },
+    {
+      "q": "Talaba logₓ(x−2) > logₓ(6−x) tengsizligini (x−1)(2x−8) > 0 ko'rinishiga keltirdi. Shu qadam to'g'ri bajarilganmi?",
+      "v": [
+        "Ha, qadam to'g'ri, lekin aniqlanish sohasi alohida sistema bo'lib yozilishi kerak",
+        "Yo'q, ayirma 2x+4 bo'lishi kerak edi",
+        "Yo'q, birinchi ko'paytuvchi (x+1) bo'lishi kerak edi",
+        "Yo'q, tengsizlik belgisi teskari bo'lishi kerak edi"
+      ],
+      "t": 0,
+      "izoh": "Argumentlar ayirmasi (x−2)−(6−x) = x−2−6+x = 2x−8, demak ko'paytma to'g'ri tuzilgan. Ammo ratsionallashtirish faqat aniqlanish sohasida teng kuchli: x > 0, x ≠ 1, x−2 > 0 va 6−x > 0 shartlari alohida yozilishi shart. Ularsiz ortiqcha yechim paydo bo'ladi. Javob: qadam to'g'ri, lekin aniqlanish sohasi alohida yozilishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimdagi-xatoni-topish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#75ca5b5c"
+    },
+    {
+      "q": "logₓ(2x+8) > logₓ(x+11) tengsizligini qanoatlantiruvchi eng kichik butun son nechaga teng?",
+      "v": [
+        "3",
+        "4",
+        "2",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Ratsionallashtirish: (x−1)((2x+8)−(x+11)) > 0, ya'ni (x−1)(x−3) > 0. Bundan x < 1 yoki x > 3. Aniqlanish sohasi x > 0, x ≠ 1 bo'lgani uchun yechim (0; 1) ∪ (3; +∞). Birinchi oraliqda butun son yo'q, ikkinchisida eng kichigi 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-butun-yechim",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#fd4748f9"
+    },
+    {
+      "q": "Fermer Rustam ekin maydonini x gektar deb belgiladi va logₓ(3x+5) > logₓ(x+17) shartini bajarishi kerak. Shartga mos keluvchi eng kichik butun gektar sonini toping.",
+      "v": [
+        "6",
+        "8",
+        "5",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Argumentlar ayirmasi (3x+5)−(x+17) = 2x−12. Ratsionallashtirilgan tengsizlik 2(x−1)(x−6) > 0, ya'ni x < 1 yoki x > 6. Maydon musbat, shuning uchun yechim (0; 1) ∪ (6; +∞). Butun gektar sonini izlaymiz: 6 ning o'zi kirmaydi, chunki tengsizlik qat'iy. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-butun-yechim",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#21a246eb"
+    },
+    {
+      "q": "logₓ(x+15) < logₓ(4x) tengsizligining eng kichik butun yechimini aniqlang.",
+      "v": [
+        "5",
+        "2",
+        "6",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Kichik belgi uchun (x−1)((x+15)−4x) < 0, ya'ni (x−1)(15−3x) < 0. Uni 3(x−1)(5−x) < 0 ko'rinishida yozib, ikkala tomonni −3 ga bo'lamiz va belgi almashadi: (x−1)(x−5) > 0. Bundan x < 1 yoki x > 5. Aniqlanish sohasi 0 < x, x ≠ 1 bo'lgani uchun butun yechimlarning eng kichigi 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-kichik-butun-yechim",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#c6382829"
+    },
+    {
+      "q": "logₓ(5x) < logₓ(x+12) tengsizligining yechimi bo'lgan chekli oraliq uzunligini toping.",
+      "v": [
+        "3",
+        "2",
+        "4",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Ratsionallashtirish: (x−1)(5x−x−12) < 0, ya'ni (x−1)(4x−12) < 0 va 4(x−1)(x−3) < 0. Bundan 1 < x < 3. Aniqlanish sohasi bu oraliqni to'liq o'z ichiga oladi. Oraliq uzunligi 3−1 = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-oraligi-uzunligi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#2375ceae"
+    },
+    {
+      "q": "Suv havzasining chuqurligi x metr bo'lib, muhandis Kamola loyihada logₓ(7x) < logₓ(x+36) shartini qo'ydi. Shu shartni qanoatlantiruvchi chuqurliklar oralig'ining uzunligi qancha?",
+      "v": [
+        "6",
+        "3",
+        "5",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Argumentlar ayirmasi 7x−(x+36) = 6x−36 = 6(x−6). Ratsionallashtirish 6(x−1)(x−6) < 0 ni beradi, demak 1 < x < 6. Chuqurlik musbat, shuning uchun aniqlanish sohasi qo'shimcha chegara qo'ymaydi. Oraliq uzunligi 6−1 = 5 metr. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-oraligi-uzunligi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#02025f19"
+    },
+    {
+      "q": "logₓ(x²+8) < logₓ(6x) tengsizligining yechim to'plamini ko'rsating.",
+      "v": [
+        "(1; 2) ∪ (4; +∞)",
+        "(0; 1) ∪ (2; 4)",
+        "(2; 4)",
+        "(0; 1) ∪ (4; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Ratsionallashtirish: (x−1)(x²+8−6x) < 0. Kvadrat uchhad x²−6x+8 ning ildizlari 2 va 4, demak (x−1)(x−2)(x−4) < 0. Ishoralar jadvali: 0 < x < 1 da manfiy, 1 < x < 2 da musbat, 2 < x < 4 da manfiy, x > 4 da musbat. Manfiy bo'lgan qismlarni olamiz. Javob: (0; 1) ∪ (2; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-kopaytuvchili-log-yechim",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#2141ae86"
+    },
+    {
+      "q": "logₓ(x²+12) > logₓ(7x) tengsizligini yechib, javobni oraliqlar birlashmasi ko'rinishida yozing.",
+      "v": [
+        "(0; 1) ∪ (3; 4)",
+        "(3; 4)",
+        "(4; +∞)",
+        "(1; 3) ∪ (4; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Ratsionallashtirish: (x−1)(x²+12−7x) > 0. Uchhad x²−7x+12 ning ildizlari 3 va 4, shuning uchun (x−1)(x−3)(x−4) > 0. Nollar 1, 3, 4. Musbat oraliqlar: 1 < x < 3 va x > 4. Aniqlanish sohasi x > 0, x ≠ 1 buni cheklamaydi. Javob: (1; 3) ∪ (4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-kopaytuvchili-log-yechim",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#28c53189"
+    },
+    {
+      "q": "x = 0,5 qiymati logₓ(x+3) > logₓ4 tengsizligining yechimi bo'ladimi?",
+      "v": [
+        "Yo'q, chunki x+3 < 4",
+        "Yo'q, chunki asos 1 dan kichik",
+        "Ha, chunki x+3 > 4",
+        "Ha, chunki (x−1) va argumentlar ayirmasi ikkalasi ham manfiy"
+      ],
+      "t": 3,
+      "izoh": "Ratsionallashtirilgan ifodaga qiymatni qo'yamiz: (x−1)(x+3−4) = (0,5−1)·(0,5+3−4) = (−0,5)·(−0,5) = 0,25. Bu son musbat, demak tengsizlik bajariladi. Asos 0,5 birdan kichik bo'lgani uchun kichikroq argument kattaroq logarifm beradi. Javob: ha, ikkala ko'paytuvchi manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatni-tekshirish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#37d5e777"
+    },
+    {
+      "q": "x = 4 soni logₓ(2x) > logₓ(x+5) tengsizligini qanoatlantiradimi? Tekshiruvni ratsionallashtirish orqali bajaring.",
+      "v": [
+        "Ha, chunki asos 1 dan katta",
+        "Yo'q, chunki ko'paytma manfiy chiqadi",
+        "Ha, chunki 2x > x+5",
+        "Yo'q, chunki 4 aniqlanish sohasiga kirmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ratsionallashtirilgan ifoda (x−1)(2x−x−5) = (x−1)(x−5). x = 4 da bu (4−1)·(4−5) = 3·(−1) = −3 bo'ladi. Manfiy qiymat tengsizlikni qanoatlantirmaydi. Aniqlanish sohasi esa buzilmaydi: 4 > 0, 4 ≠ 1, argumentlar musbat. Javob: yo'q, ko'paytma manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatni-tekshirish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#1fb2b1d2"
+    },
+    {
+      "q": "Talaba Sevara x = 3 ni logₓ(x+6) > logₓ(4x−3) tengsizligiga qo'yib ko'rmoqchi. Ratsionallashtirilgan ifoda yordamida natijani aniqlang.",
+      "v": [
+        "Qanoatlantiradi, chunki asos 1 dan katta",
+        "Qanoatlantirmaydi, chunki 4x−3 manfiy bo'lib qoladi",
+        "Qanoatlantirmaydi, chunki ikki argument teng bo'lib qoladi",
+        "Qanoatlantiradi, chunki x+6 > 4x−3"
+      ],
+      "t": 2,
+      "izoh": "x = 3 da birinchi argument 3+6 = 9, ikkinchisi 4·3−3 = 9. Ular teng, demak argumentlar ayirmasi nolga teng va (x−1)·0 = 0. Nol qat'iy tengsizlikni qanoatlantirmaydi, chunki 0 > 0 noto'g'ri. Aniqlanish sohasi buzilmaydi, 9 musbat. Javob: qanoatlantirmaydi, argumentlar teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatni-tekshirish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#1188e3ac"
+    },
+    {
+      "q": "Ikki usta bir buyumni birga tayyorlaydi va ularning unum koeffitsienti x bilan belgilangan. Texnolog logₓ(x+15) > logₓ(4x+3) shartini qo'ydi. x qanday qiymatlarni oladi?",
+      "v": [
+        "(1; 4)",
+        "(0; 1) ∪ (4; +∞)",
+        "(0; 1) ∪ (1; 4)",
+        "(4; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Argumentlar ayirmasi (x+15)−(4x+3) = 12−3x. Ratsionallashtirish: 3(x−1)(4−x) > 0, ya'ni (x−1)(x−4) < 0 va 1 < x < 4. Aniqlanish sohasi x > 0, x ≠ 1, 4x+3 > 0 bu oraliqni cheklamaydi. Javob: (1; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#23ff3bf6"
+    },
+    {
+      "q": "Ustaxonada bir kunda tayyorlanadigan buyumlar soni a marta ortadi, bunda a > 0 va a ≠ 1. Rejaga ko'ra a^(4x−1) < a^(x+8) bo'lishi kerak. Ratsionallashtirilgan tengsizlikni tanlang.",
+      "v": [
+        "(a−1)(x−3) > 0",
+        "(a−1)(x−3) < 0",
+        "(a−1)(x+3) < 0",
+        "(a−1)(5x+7) < 0"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichlar ayirmasi (4x−1)−(x+8) = 3x−9 = 3(x−3). Kichik belgili tengsizlik uchun (a−1)(f−g) < 0 yoziladi, demak 3(a−1)(x−3) < 0. Musbat 3 ga bo'lsak (a−1)(x−3) < 0 qoladi. Javob: (a−1)(x−3) < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#59bfe416"
+    },
+    {
+      "q": "Velosipedchi Otabek marshrutini tanlashda masofa koeffitsienti x uchun logₓ(x+18) > logₓ(7x) shartini bajarishi kerak. Koeffitsient qanday qiymatlarni olishi mumkin?",
+      "v": [
+        "(0; 1) ∪ (3; +∞)",
+        "(1; 3)",
+        "(3; +∞)",
+        "(0; 1) ∪ (1; 3)"
+      ],
+      "t": 1,
+      "izoh": "Argumentlar ayirmasi (x+18)−7x = 18−6x = 6(3−x). Ratsionallashtirish: 6(x−1)(3−x) > 0, ya'ni (x−1)(x−3) < 0. Bundan 1 < x < 3. Aniqlanish sohasi x > 0, x ≠ 1, 7x > 0 bu oraliqqa to'liq mos keladi. Javob: (1; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-masofa-koeffitsienti",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#17ab09cc"
+    },
+    {
+      "q": "Avtobus va yengil avtomobil tezliklari nisbati a bo'lib, a > 0 va a ≠ 1. Jadval bo'yicha a^(5x+2) > a^(3x+12) sharti bajariladi. Ratsionallashtirilgan ko'rinishni tanlang.",
+      "v": [
+        "(a−1)(x+5) > 0",
+        "(a−1)(x−5) < 0",
+        "(a−1)(x−5) > 0",
+        "(a−1)(8x+14) > 0"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkichlar ayirmasi (5x+2)−(3x+12) = 2x−10 = 2(x−5). Ratsionallashtirish 2(a−1)(x−5) > 0 ni beradi va musbat 2 ga bo'lamiz. Ko'rsatkichlarni qo'shib yuborilsa 8x+14 chiqadi, bu esa tipik xato. Javob: (a−1)(x−5) > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-masofa-koeffitsienti",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#3158b5b2"
+    },
+    {
+      "q": "logₓ7 > 1 tengsizligini x ning qaysi qiymatlari qanoatlantiradi?",
+      "v": [
+        "(0; 1) ∪ (7; +∞)",
+        "(7; +∞)",
+        "(0; 7)",
+        "(1; 7)"
+      ],
+      "t": 3,
+      "izoh": "O'ng tomondagi 1 ni logₓx ko'rinishida yozamiz, chunki asos x. Endi logₓ7 > logₓx bo'lib, ratsionallashtirish (x−1)(7−x) > 0 ni beradi. Bu (x−1)(x−7) < 0 ga teng, demak 1 < x < 7. Aniqlanish sohasi x > 0, x ≠ 1 buzilmaydi. Javob: (1; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birga-solishtirish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#46e86d0b"
+    },
+    {
+      "q": "logₓ(x+5) > 1 tengsizligining yechim to'plamini aniqlang.",
+      "v": [
+        "(1; +∞)",
+        "(0; 1)",
+        "(0; 1) ∪ (1; +∞)",
+        "(5; +∞)"
+      ],
+      "t": 0,
+      "izoh": "O'ng tomondagi birni logₓx deb yozamiz. Ratsionallashtirish: (x−1)((x+5)−x) > 0, ya'ni (x−1)·5 > 0. Musbat 5 ga bo'lsak x−1 > 0, demak x > 1. Aniqlanish sohasi x > 0, x ≠ 1, x+5 > 0 bunga zid emas. Javob: (1; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birga-solishtirish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#17d755d1"
+    },
+    {
+      "q": "Sardor bankdagi omonat o'sish koeffitsientini x deb oldi va hisobida logₓ12 < 1 sharti paydo bo'ldi. Bu shartni qanoatlantiruvchi koeffitsientlar to'plamini toping.",
+      "v": [
+        "(1; 12)",
+        "(0; 1) ∪ (12; +∞)",
+        "(12; +∞)",
+        "(0; 12)"
+      ],
+      "t": 1,
+      "izoh": "Birni logₓx ko'rinishida yozamiz: logₓ12 < logₓx. Ratsionallashtirish (x−1)(12−x) < 0 ni beradi, ya'ni (x−1)(x−12) > 0. Bundan x < 1 yoki x > 12. Aniqlanish sohasi x > 0, x ≠ 1 bo'lgani uchun birinchi bo'lak 0 < x < 1 ga aylanadi. Javob: (0; 1) ∪ (12; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birga-solishtirish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#e7bd9644"
+    },
+    {
+      "q": "logₐ(a+6) > logₐ8 tengsizligi asosning ikki holi uchun qanday yechim beradi?",
+      "v": [
+        "a > 1 da a > 2, 0 < a < 1 da butun oraliq yechim",
+        "a > 1 da a > 2, 0 < a < 1 da yechim yo'q",
+        "a > 1 da 1 < a < 2, 0 < a < 1 da butun oraliq yechim",
+        "Har ikkala holda ham faqat a > 2"
+      ],
+      "t": 0,
+      "izoh": "Ratsionallashtirish: (a−1)(a+6−8) > 0, ya'ni (a−1)(a−2) > 0. Bundan a < 1 yoki a > 2. Asos 1 dan katta bo'lgan holda faqat a > 2 qoladi. Asos 0 < a < 1 bo'lganda esa a < 1 sharti butunlay bajariladi, demak bu oraliqning hamma nuqtasi yechim. Javob: a > 1 da a > 2, 0 < a < 1 da butun oraliq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-holli-tahlil",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#7c5fcbce"
+    },
+    {
+      "q": "0 < x < 1 shartida logₓ(3x+2) > logₓ(x+3) tengsizligining yechimini toping.",
+      "v": [
+        "(1/2; 1)",
+        "(0; 1)",
+        "(0; 1/2)",
+        "(1/2; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Ratsionallashtirish: (x−1)((3x+2)−(x+3)) > 0, ya'ni (x−1)(2x−1) > 0. Shart bo'yicha 0 < x < 1, demak x−1 manfiy. Ko'paytma musbat bo'lishi uchun ikkinchi ko'paytuvchi ham manfiy: 2x−1 < 0, ya'ni x < 1/2. Berilgan oraliq bilan kesishtiramiz. Javob: (0; 1/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-holli-tahlil",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#c5cefa8d"
+    },
+    {
+      "q": "a > 1 shartida a^(x²−4x) < a⁵ tengsizligining yechimini aniqlang.",
+      "v": [
+        "(−1; 5)",
+        "(−∞; −1) ∪ (5; +∞)",
+        "(1; 5)",
+        "(−5; 1)"
+      ],
+      "t": 0,
+      "izoh": "Ratsionallashtirish: (a−1)(x²−4x−5) < 0. Shart bo'yicha a > 1, demak a−1 musbat va uni qisqartirish mumkin: x²−4x−5 < 0. Uchhadning ildizlari −1 va 5, shuning uchun (x+1)(x−5) < 0. Bundan −1 < x < 5. Javob: (−1; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-holli-tahlil",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#4ea124c8"
+    },
+    {
+      "q": "Kimyo laboratoriyasida eritma ko'rsatkichi x bilan belgilangan. Texnolog Nilufar logₓ(x+20) > logₓ(5x) shartini talab qiladi. Ko'rsatkich qanday qiymatlarni olishi mumkin?",
+      "v": [
+        "(1; 5)",
+        "(0; 1) ∪ (5; +∞)",
+        "(5; +∞)",
+        "(0; 5)"
+      ],
+      "t": 0,
+      "izoh": "Argumentlar ayirmasi (x+20)−5x = 20−4x = 4(5−x). Ratsionallashtirish: 4(x−1)(5−x) > 0, ya'ni (x−1)(x−5) < 0. Bundan 1 < x < 5. Aniqlanish sohasi x > 0, x ≠ 1 va 5x > 0 bu oraliqni cheklamaydi. Javob: (1; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aralashma",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#52ba1af0"
+    },
+    {
+      "q": "Ikki xil sut aralashmasi nisbati x bo'lib, sifat nazoratchisi logₓ(6x) > logₓ(x+35) shartini qo'ydi. Nisbat qanday qiymatlarni oladi?",
+      "v": [
+        "(0; 1) ∪ (7; +∞)",
+        "(1; 7)",
+        "(7; +∞)",
+        "(0; 1) ∪ (1; 7)"
+      ],
+      "t": 0,
+      "izoh": "Argumentlar ayirmasi 6x−(x+35) = 5x−35 = 5(x−7). Ratsionallashtirish: 5(x−1)(x−7) > 0, demak x < 1 yoki x > 7. Aniqlanish sohasi x > 0, x ≠ 1 bo'lgani uchun birinchi bo'lak 0 < x < 1 ga qisqaradi. Javob: (0; 1) ∪ (7; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aralashma",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#412261e8"
+    },
+    {
+      "q": "Bo'yoq tayyorlashda pigment koeffitsienti x bilan belgilanadi va muhandis a^(3x+4) < a^(x+16) shartini yozdi, bunda a > 1. Koeffitsient qanday shartni qanoatlantiradi?",
+      "v": [
+        "x > 6",
+        "x < 6",
+        "x < 12",
+        "x > 12"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichlar ayirmasi (3x+4)−(x+16) = 2x−12. Ratsionallashtirish: (a−1)(2x−12) < 0. Shart bo'yicha a > 1, demak a−1 musbat va uni qisqartiramiz: 2x−12 < 0. Ikkala tomonni 2 ga bo'lamiz: x < 6. Bo'lishni unutish x < 12 xatosini beradi. Javob: x < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aralashma",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#6baf79ca"
+    },
+    {
+      "q": "Muzxonadagi harorat koeffitsienti x bo'lib, logₓ(2x+9) < logₓ(x+15) sharti bajarilishi kerak. Koeffitsientning mumkin bo'lgan qiymatlarini toping.",
+      "v": [
+        "(0; 1) ∪ (6; +∞)",
+        "(1; 6)",
+        "(6; +∞)",
+        "(0; 1) ∪ (1; 6)"
+      ],
+      "t": 1,
+      "izoh": "Argumentlar ayirmasi (2x+9)−(x+15) = x−6. Kichik belgi uchun (x−1)(x−6) < 0 yoziladi, demak 1 < x < 6. Aniqlanish sohasi x > 0, x ≠ 1, 2x+9 > 0 va x+15 > 0 bu oraliqda buzilmaydi. Javob: (1; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-olchov",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#31076795"
+    },
+    {
+      "q": "O'lchov asbobining aniqlik ko'rsatkichi x bilan ifodalanadi va logₓ25 > 2 sharti bajarilishi talab qilinadi. Ko'rsatkichlar to'plamini toping.",
+      "v": [
+        "(0; 1) ∪ (5; +∞)",
+        "(0; 1) ∪ (1; 5)",
+        "(5; +∞)",
+        "(1; 5)"
+      ],
+      "t": 3,
+      "izoh": "O'ng tomondagi 2 ni logₓx² ko'rinishida yozamiz. Ratsionallashtirish: (x−1)(25−x²) > 0. Aniqlanish sohasida x > 0 bo'lgani uchun 25−x² = (5−x)(5+x) da 5+x musbat. Demak (x−1)(5−x) > 0, ya'ni (x−1)(x−5) < 0 va 1 < x < 5. Javob: (1; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-olchov",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#709038b7"
+    },
+    {
+      "q": "logₓ(x+7) > logₓ(2x+1) tengsizligi quyidagi sistemalardan qaysi biriga teng kuchli?",
+      "v": [
+        "(x−1)(6−x) > 0, x > 0, x ≠ 1, 2x+1 > 0",
+        "(x−1)(x−6) > 0, x > 0, x ≠ 1",
+        "(x−1)(3x+8) > 0, x > 0, x ≠ 1",
+        "(x−1)(6−x) < 0, x > 0, x ≠ 1, 2x+1 > 0"
+      ],
+      "t": 0,
+      "izoh": "Argumentlar ayirmasi (x+7)−(2x+1) = 6−x. Ratsionallashtirish (x−1)(6−x) > 0 ni beradi. Bunga aniqlanish sohasi qo'shiladi: asos uchun x > 0 va x ≠ 1, argumentlar uchun x+7 > 0 hamda 2x+1 > 0. Argumentlarni qo'shib yuborish 3x+8 xatosini beradi. Javob: (x−1)(6−x) > 0, x > 0, x ≠ 1, 2x+1 > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-kuchli-sistema-tanlash",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#e75be6d0"
+    },
+    {
+      "q": "a^(x+2) ≥ a^(4x−7) tengsizligi (a > 0, a ≠ 1) qaysi ratsional tengsizlikka teng kuchli bo'ladi?",
+      "v": [
+        "(a−1)(x−3) ≥ 0",
+        "(a−1)(3−x) > 0",
+        "(a−1)(3−x) ≥ 0",
+        "(a−1)(5x−5) ≥ 0"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkichlar ayirmasi (x+2)−(4x−7) = 9−3x = 3(3−x). Noqat'iy tengsizlik uchun ratsionallashtirish (a−1)(f−g) ≥ 0 ko'rinishida yoziladi, ya'ni 3(a−1)(3−x) ≥ 0. Musbat 3 ga bo'lamiz. Belgini qat'iyga aylantirish yechimni yo'qotadi. Javob: (a−1)(3−x) ≥ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-kuchli-sistema-tanlash",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#0392ba34"
+    },
+    {
+      "q": "logₓ(x−4) > logₓ3 tengsizligining to'liq teng kuchli sistemasini tanlang.",
+      "v": [
+        "(x−1)(x−7) > 0, x > 0, x ≠ 1, x−4 > 0",
+        "(x−1)(x−7) > 0, x > 0, x ≠ 1",
+        "(x−1)(x−7) < 0, x > 0, x ≠ 1, x−4 > 0",
+        "(x−1)(x+7) > 0, x > 0, x ≠ 1, x−4 > 0"
+      ],
+      "t": 0,
+      "izoh": "Argumentlar ayirmasi (x−4)−3 = x−7, demak ratsionallashtirilgan qism (x−1)(x−7) > 0. Sistemaga asos shartlari x > 0 va x ≠ 1 qo'shiladi. Birinchi argument uchun x−4 > 0 sharti ham majburiy, aks holda logarifm mavjud emas. Javob: (x−1)(x−7) > 0, x > 0, x ≠ 1, x−4 > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-kuchli-sistema-tanlash",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#9d58f118"
+    },
+    {
+      "q": "2, 6, 8 va 10 sonlaridan qaysi biri logₓ(x+22) > logₓ(4x+4) tengsizligini qanoatlantiradi?",
+      "v": [
+        "2",
+        "6",
+        "8",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "Argumentlar ayirmasi (x+22)−(4x+4) = 18−3x = 3(6−x). Ratsionallashtirish: 3(x−1)(6−x) > 0, ya'ni (x−1)(x−6) < 0 va 1 < x < 6. Ro'yxatdagi sonlardan faqat 2 shu oraliqqa tushadi. 6 ning o'zi chegara bo'lgani uchun kirmaydi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimga-tegishli-son",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#66741eeb"
+    },
+    {
+      "q": "2, 3, 4 va 6 sonlaridan qaysi biri logₓ(x+16) < logₓ(5x) tengsizligini qanoatlantiradi?",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Argumentlar ayirmasi (x+16)−5x = 16−4x = 4(4−x). Kichik belgi uchun 4(x−1)(4−x) < 0, ya'ni (x−1)(x−4) > 0. Bundan x < 1 yoki x > 4. Ro'yxatdagi sonlardan 2 va 3 kirmaydi, 4 chegara bo'lgani uchun tashlanadi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimga-tegishli-son",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#45891054"
+    },
+    {
+      "q": "0,6, 1, 3 va 7 sonlaridan qaysi biri a o'rniga qo'yilganda logₐ5 > logₐ9 tengsizligi to'g'ri bo'ladi?",
+      "v": [
+        "0,6",
+        "1",
+        "3",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "Ratsionallashtirish: (a−1)(5−9) > 0, ya'ni (a−1)·(−4) > 0. Manfiy songa bo'lganda belgi almashadi: a−1 < 0, demak a < 1. Aniqlanish sohasiga ko'ra a > 0 va a ≠ 1, shuning uchun 1 mos kelmaydi. Ro'yxatda 0 < a < 1 shartini faqat 0,6 bajaradi. Javob: 0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimga-tegishli-son",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#ffce092b"
+    },
+    {
+      "q": "Maktab reytingida ko'rsatkich koeffitsienti x bo'lib, tahlilchi Zarina logₓ(3x+2) > logₓ(x+14) shartini qo'ydi. Koeffitsientning mumkin bo'lgan qiymatlarini toping.",
+      "v": [
+        "(0; 6)",
+        "(6; +∞)",
+        "(0; 1) ∪ (6; +∞)",
+        "(0; 1)"
+      ],
+      "t": 2,
+      "izoh": "Argumentlar ayirmasi (3x+2)−(x+14) = 2x−12 = 2(x−6). Ratsionallashtirish: 2(x−1)(x−6) > 0, demak x < 1 yoki x > 6. Aniqlanish sohasi x > 0, x ≠ 1 bo'lgani uchun birinchi qism 0 < x < 1 ko'rinishini oladi. Javob: (0; 1) ∪ (6; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-statistika",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#472920bb"
+    },
+    {
+      "q": "So'rovnomada ijobiy javoblar ko'rsatkichi x ga teng. Sotsiolog Malika logₓ(x+40) > logₓ(9x) shartini tekshirmoqchi. Ko'rsatkich qiymatlari to'plamini toping.",
+      "v": [
+        "(0; 1) ∪ (5; +∞)",
+        "(1; 5)",
+        "(0; 5)",
+        "(0; 1) ∪ (1; 5)"
+      ],
+      "t": 1,
+      "izoh": "Argumentlar ayirmasi (x+40)−9x = 40−8x = 8(5−x). Ratsionallashtirish: 8(x−1)(5−x) > 0, ya'ni (x−1)(x−5) < 0. Bundan 1 < x < 5. Aniqlanish sohasi x > 0, x ≠ 1 va 9x > 0 bu oraliqqa to'liq mos. Javob: (1; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-statistika",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#e1c87925"
+    },
+    {
+      "q": "Ma'lumotlar tahlilida o'sish ko'rsatkichi a bo'lib, a > 0 va a ≠ 1. Hisobotda a^(x+9) > a^(5x−3) tengsizligi berilgan; ratsionallashtirilgan ko'rinishini tanlang.",
+      "v": [
+        "(a−1)(x−3) > 0",
+        "(a−1)(3−x) > 0",
+        "(a−1)(3−x) < 0",
+        "(a−1)(6x+6) > 0"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichlar ayirmasi (x+9)−(5x−3) = 12−4x = 4(3−x). Ratsionallashtirish 4(a−1)(3−x) > 0 ni beradi, musbat 4 ga bo'lamiz. Qavs ichini x−3 deb yozish ishorani teskari qiladi, bu tipik xato. Javob: (a−1)(3−x) > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-statistika",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#90bb3b51"
+    },
+    {
+      "q": "Bank omonatining o'sish koeffitsienti a > 0 va a ≠ 1. Mijoz Shahnoza hisobida a^(2x+7) ≤ a^(6x−5) sharti paydo bo'ldi. Ratsionallashtirilgan ko'rinishni tanlang.",
+      "v": [
+        "(a−1)(x−3) ≤ 0",
+        "(a−1)(3−x) < 0",
+        "(a−1)(8x+2) ≤ 0",
+        "(a−1)(3−x) ≤ 0"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkichlar ayirmasi (2x+7)−(6x−5) = 12−4x = 4(3−x). Noqat'iy kichik belgi uchun (a−1)(f−g) ≤ 0 yoziladi, ya'ni 4(a−1)(3−x) ≤ 0. Musbat 4 ga bo'lamiz. Ko'rsatkichlarni qo'shish 8x+2 ni beradi, bu noto'g'ri qadam. Javob: (a−1)(3−x) ≤ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-foiz-koeffitsienti",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#f42b52f6"
+    },
+    {
+      "q": "Telefon narxi har chorakda x marta o'zgaradi va sotuvchi logₓ(x+33) < logₓ(12x) shartini talab qiladi. x qanday qiymatlarni oladi?",
+      "v": [
+        "(1; 3)",
+        "(0; 1) ∪ (3; +∞)",
+        "(0; 3)",
+        "(0; 1) ∪ (1; 3)"
+      ],
+      "t": 1,
+      "izoh": "Argumentlar ayirmasi (x+33)−12x = 33−11x = 11(3−x). Kichik belgi uchun 11(x−1)(3−x) < 0, ya'ni (x−1)(x−3) > 0. Bundan x < 1 yoki x > 3. Aniqlanish sohasi x > 0, x ≠ 1 bo'lgani uchun birinchi qism 0 < x < 1 ga aylanadi. Javob: (0; 1) ∪ (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-foiz-koeffitsienti",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#d95a433c"
+    },
+    {
+      "q": "Ishlab chiqarish hajmi a marta ortadi va tahlilda a^(x²) < a^(3x) tengsizligi hosil bo'ldi. a > 1 bo'lsa, x qanday qiymatlarni oladi?",
+      "v": [
+        "(−∞; 0) ∪ (3; +∞)",
+        "(3; +∞)",
+        "(0; 3)",
+        "(0; 1) ∪ (3; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Ratsionallashtirish: (a−1)(x²−3x) < 0. Shart bo'yicha a > 1, demak a−1 musbat va uni qisqartiramiz: x²−3x < 0. Ko'paytuvchilarga ajratamiz: x(x−3) < 0. Ildizlar 0 va 3, ko'paytma ular orasida manfiy. Javob: (0; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-foiz-koeffitsienti",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#f4f63426"
+    },
+    {
+      "q": "logₓ(x+13) > logₓ(3x+1) tengsizligining eng katta butun yechimini toping.",
+      "v": [
+        "6",
+        "4",
+        "5",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Argumentlar ayirmasi (x+13)−(3x+1) = 12−2x = 2(6−x). Ratsionallashtirish: 2(x−1)(6−x) > 0, ya'ni (x−1)(x−6) < 0 va 1 < x < 6. Aniqlanish sohasi x > 0, x ≠ 1, 3x+1 > 0 buni cheklamaydi. Oraliqdagi eng katta butun son 5, chunki 6 chegara sifatida kirmaydi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-butun-yechim",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#657b91c8"
+    },
+    {
+      "q": "Ombordagi qutilar soni x bilan belgilangan va logₓ(x+27) > logₓ(4x+3) sharti bajarilishi kerak. Shartga mos keluvchi eng katta butun son nechaga teng?",
+      "v": [
+        "8",
+        "6",
+        "9",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Argumentlar ayirmasi (x+27)−(4x+3) = 24−3x = 3(8−x). Ratsionallashtirish: 3(x−1)(8−x) > 0, ya'ni (x−1)(x−8) < 0 va 1 < x < 8. Qutilar soni musbat butun bo'lgani uchun oraliqning eng katta butuni 7. 8 ni olish chegarani qo'shib yuborish xatosi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-butun-yechim",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#08cd0924"
+    },
+    {
+      "q": "logₓ(2x+11) > logₓ(x+20) tengsizligining butun yechimlari orasida 15 dan kichiklarining eng kattasi qaysi?",
+      "v": [
+        "10",
+        "15",
+        "14",
+        "13"
+      ],
+      "t": 2,
+      "izoh": "Argumentlar ayirmasi (2x+11)−(x+20) = x−9. Ratsionallashtirish: (x−1)(x−9) > 0, demak x < 1 yoki x > 9. Aniqlanish sohasi x > 0, x ≠ 1 bo'lgani uchun yechim (0; 1) ∪ (9; +∞). Birinchi bo'lakda butun son yo'q. Ikkinchi bo'lakda 15 dan kichik butunlar 10 dan 14 gacha, ularning eng kattasi 14. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-butun-yechim",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#b893e2ba"
+    },
+    {
+      "q": "logₓ(x+5) > logₓ(x+9) tengsizligi x ning qanday qiymatlarida bajariladi?",
+      "v": [
+        "(1; +∞)",
+        "yechim yo'q",
+        "(0; +∞)",
+        "(0; 1)"
+      ],
+      "t": 3,
+      "izoh": "Argumentlar ayirmasi (x+5)−(x+9) = −4 bo'lib, u x ga bog'liq emas va doim manfiy. Ratsionallashtirish: (x−1)·(−4) > 0. Manfiy songa bo'lganda belgi almashadi: x−1 < 0, ya'ni x < 1. Aniqlanish sohasi x > 0 va x ≠ 1 ni talab qiladi. Javob: (0; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-ayirma-hol",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#2fdf75db"
+    },
+    {
+      "q": "logₓ(3x+1) > logₓ(3x+8) tengsizligining yechim to'plamini ko'rsating.",
+      "v": [
+        "(1; +∞)",
+        "(0; 1)",
+        "yechim yo'q",
+        "(0; 1) ∪ (1; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Argumentlar ayirmasi (3x+1)−(3x+8) = −7, ya'ni o'zgarmas manfiy son. Ratsionallashtirish (x−1)·(−7) > 0 ni beradi, bundan x−1 < 0 va x < 1. Aniqlanish sohasida x > 0, x ≠ 1 hamda 3x+1 > 0 bajarilishi kerak. Javob: (0; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-ayirma-hol",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#6eee5e87"
+    },
+    {
+      "q": "a > 1 shartida a^(x²+4) < a^(4x) tengsizligining yechimini aniqlang.",
+      "v": [
+        "x = 2",
+        "(2; +∞)",
+        "yechim yo'q",
+        "(−∞; 2)"
+      ],
+      "t": 2,
+      "izoh": "Ratsionallashtirish: (a−1)(x²+4−4x) < 0. Shart bo'yicha a > 1, demak a−1 musbat va uni qisqartiramiz: x²−4x+4 < 0. Chap tomon to'la kvadrat, ya'ni (x−2)². Kvadrat hech qachon manfiy bo'lmaydi, x = 2 da esa nolga teng. Javob: yechim yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechim-yoq-holati",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#d582384f"
+    },
+    {
+      "q": "0 < a < 1 shartida a^(x²+9) > a^(6x) tengsizligini yeching.",
+      "v": [
+        "x = 3",
+        "(3; +∞)",
+        "barcha haqiqiy sonlar",
+        "yechim yo'q"
+      ],
+      "t": 3,
+      "izoh": "Ratsionallashtirish: (a−1)(x²+9−6x) > 0. Shart bo'yicha 0 < a < 1, demak a−1 manfiy. Manfiy songa bo'lganda belgi almashadi: x²−6x+9 < 0, ya'ni (x−3)² < 0. To'la kvadrat manfiy qiymat qabul qilmaydi. Javob: yechim yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechim-yoq-holati",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#2ba5488e"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri logₓ(x+4) > logₓ7 tengsizligiga aniqlanish sohasida teng kuchli?",
+      "v": [
+        "(x−3)/(x−1) < 0",
+        "(x−1)(x+3) > 0",
+        "(x−1)(x−3) ≥ 0",
+        "(x−1)(x−3) > 0"
+      ],
+      "t": 3,
+      "izoh": "Argumentlar ayirmasi (x+4)−7 = x−3, shuning uchun ratsionallashtirilgan ko'rinish (x−1)(x−3) > 0. Kasrli variantda belgi teskari qo'yilgan, u (x−1)(x−3) < 0 ni bildiradi. Noqat'iy belgi esa x = 1 va x = 3 nuqtalarni qo'shib yuboradi, bu esa xato. Javob: (x−1)(x−3) > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrli-ekvivalent-shakl",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#e2c397a3"
+    },
+    {
+      "q": "logₓ(2x−1) < logₓ(x+4) tengsizligi bilan qaysi kasrli tengsizlik teng kuchli bo'ladi?",
+      "v": [
+        "(x−5)/(x−1) > 0",
+        "(x−1)/(x−5) > 0",
+        "(x−5)/(x−1) < 0",
+        "(x+5)/(x−1) < 0"
+      ],
+      "t": 2,
+      "izoh": "Argumentlar ayirmasi (2x−1)−(x+4) = x−5. Kichik belgi uchun ratsionallashtirish (x−1)(x−5) < 0 ni beradi. Ko'paytmaning ishorasi bo'linmaning ishorasi bilan bir xil, shuning uchun uni (x−5)/(x−1) < 0 ko'rinishida yozish mumkin. Kasrni ag'darish tengsizlik ma'nosini o'zgartiradi. Javob: (x−5)/(x−1) < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrli-ekvivalent-shakl",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#371b337b"
+    },
+    {
+      "q": "Kiyim do'konidagi chegirma koeffitsienti x bo'lib, menejer Feruza logₓ(x+50) > logₓ(6x) shartini qo'ydi. Koeffitsient qanday qiymatlarni oladi?",
+      "v": [
+        "(0; 1) ∪ (10; +∞)",
+        "(1; 10)",
+        "(10; +∞)",
+        "(0; 10)"
+      ],
+      "t": 1,
+      "izoh": "Argumentlar ayirmasi (x+50)−6x = 50−5x = 5(10−x). Ratsionallashtirish: 5(x−1)(10−x) > 0, ya'ni (x−1)(x−10) < 0. Bundan 1 < x < 10. Aniqlanish sohasi x > 0, x ≠ 1 va 6x > 0 bu oraliqni cheklamaydi. Javob: (1; 10).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-sharti",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#ad46b101"
+    },
+    {
+      "q": "Bozorda meva narxining o'sish koeffitsienti a bo'lib, a > 0 va a ≠ 1. Savdogar Umid a^(x+11) < a^(4x−1) shartini yozdi; ratsionallashtirilgan ko'rinishni tanlang.",
+      "v": [
+        "(a−1)(4−x) > 0",
+        "(a−1)(x−4) < 0",
+        "(a−1)(4−x) < 0",
+        "(a−1)(5x+10) < 0"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkichlar ayirmasi (x+11)−(4x−1) = 12−3x = 3(4−x). Kichik belgili tengsizlik uchun (a−1)(f−g) < 0 yoziladi, ya'ni 3(a−1)(4−x) < 0. Musbat 3 ga bo'lamiz. Qavs ichini x−4 deb yozish ishorani teskari qiladi. Javob: (a−1)(4−x) < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-sharti",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#3dddaa77"
+    },
+    {
+      "q": "Shahar aholisi yiliga x marta ko'payadi va statistik Ravshan logₓ(7x) < logₓ(x+54) shartini kuzatdi. x qanday qiymatlarni oladi?",
+      "v": [
+        "(0; 1) ∪ (9; +∞)",
+        "(1; 9)",
+        "(9; +∞)",
+        "(0; 9)"
+      ],
+      "t": 1,
+      "izoh": "Argumentlar ayirmasi 7x−(x+54) = 6x−54 = 6(x−9). Kichik belgi uchun 6(x−1)(x−9) < 0, ya'ni (x−1)(x−9) < 0. Bundan 1 < x < 9. Aniqlanish sohasi x > 0, x ≠ 1 va 7x > 0 buzilmaydi. Javob: (1; 9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-aholi-osishi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#935d89e5"
+    },
+    {
+      "q": "Qishloqdagi uy xo'jaliklari soni har yili a marta ortadi va modelda a^(x²) > a^(2x+8) hosil bo'ldi, bunda a > 1. x ning qiymatlarini toping.",
+      "v": [
+        "(−2; 4)",
+        "(4; +∞)",
+        "(−∞; −4) ∪ (2; +∞)",
+        "(−∞; −2) ∪ (4; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Ratsionallashtirish: (a−1)(x²−2x−8) > 0. Shart bo'yicha a > 1, demak a−1 musbat va uni qisqartiramiz: x²−2x−8 > 0. Uchhadning ildizlari 4 va −2, shuning uchun (x−4)(x+2) > 0. Ko'paytma ildizlardan tashqarida musbat. Javob: (−∞; −2) ∪ (4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-aholi-osishi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#3609b421"
+    },
+    {
+      "q": "logₓ(x+24) > logₓ(3x+4) tengsizligining nechta butun yechimi mavjud?",
+      "v": [
+        "9",
+        "7",
+        "8",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "Argumentlar ayirmasi (x+24)−(3x+4) = 20−2x = 2(10−x). Ratsionallashtirish: 2(x−1)(10−x) > 0, ya'ni (x−1)(x−10) < 0 va 1 < x < 10. Aniqlanish sohasi buni cheklamaydi. Oraliqdagi butun sonlar 2 dan 9 gacha, ya'ni 8 ta. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#508fb1aa"
+    },
+    {
+      "q": "Sinfdagi guruh ko'rsatkichi x ga teng. O'qituvchi Dilorom logₓ(5x) > logₓ(x+48) shartini talab qiladi. 18 dan oshmaydigan nechta butun ko'rsatkich shu shartga mos keladi?",
+      "v": [
+        "7",
+        "6",
+        "5",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Argumentlar ayirmasi 5x−(x+48) = 4x−48 = 4(x−12). Ratsionallashtirish: 4(x−1)(x−12) > 0, demak x < 1 yoki x > 12. Aniqlanish sohasida x > 0, x ≠ 1. Butun ko'rsatkichlar 0 va 1 orasida yo'q, shuning uchun faqat 13 dan 18 gacha bo'lganlari qoladi: 13, 14, 15, 16, 17, 18. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#20ad765f"
+    },
+    {
+      "q": "Ishoralar jadvali yordamida (x−1)(x−3)(x−8) < 0 tengsizligining x > 0 va x ≠ 1 shartidagi yechimini toping.",
+      "v": [
+        "(1; 3) ∪ (8; +∞)",
+        "(3; 8)",
+        "(0; 1) ∪ (8; +∞)",
+        "(0; 1) ∪ (3; 8)"
+      ],
+      "t": 3,
+      "izoh": "Nollar 1, 3 va 8 son o'qini bo'laklarga ajratadi. 0 < x < 1 da uchala ko'paytuvchi manfiy, ko'paytma manfiy. 1 < x < 3 da ikkitasi manfiy, ko'paytma musbat. 3 < x < 8 da bittasi manfiy, ko'paytma manfiy. x > 8 da hammasi musbat. Manfiy bo'lgan bo'laklarni olamiz. Javob: (0; 1) ∪ (3; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishoralar-jadvali-oraliq",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#443cf37c"
+    },
+    {
+      "q": "logₓ(x²+18) < logₓ(9x) tengsizligini ishoralar jadvali yordamida yeching.",
+      "v": [
+        "(1; 3) ∪ (6; +∞)",
+        "(0; 1) ∪ (3; 6)",
+        "(3; 6)",
+        "(0; 1) ∪ (6; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Ratsionallashtirish: (x−1)(x²+18−9x) < 0. Uchhad x²−9x+18 ning ildizlari 3 va 6, demak (x−1)(x−3)(x−6) < 0. Nollar 1, 3, 6. Jadval bo'yicha ko'paytma 0 < x < 1 da manfiy, 1 < x < 3 da musbat, 3 < x < 6 da manfiy, x > 6 da musbat. Javob: (0; 1) ∪ (3; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishoralar-jadvali-oraliq",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#e2bcc353"
+    },
+    {
+      "q": "Yugurish mashg'ulotida yuklama koeffitsienti x bo'lib, logₓ(8x) < logₓ(x+63) sharti bajariladi. Yechim oralig'ining uzunligini toping.",
+      "v": [
+        "9",
+        "10",
+        "8",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Argumentlar ayirmasi 8x−(x+63) = 7x−63 = 7(x−9). Kichik belgi uchun 7(x−1)(x−9) < 0, ya'ni 1 < x < 9. Aniqlanish sohasi x > 0, x ≠ 1 bu oraliqni o'zgartirmaydi. Uzunlik 9−1 = 8 ga teng. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechim-oraligi-uzunligi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#e90bd9a8"
+    },
+    {
+      "q": "logₓ(x²+20) > logₓ(12x) tengsizligining yechim to'plamini toping.",
+      "v": [
+        "(0; 1) ∪ (2; 10)",
+        "(1; 2) ∪ (10; +∞)",
+        "(2; 10)",
+        "(10; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Ratsionallashtirish: (x−1)(x²+20−12x) > 0. Uchhad x²−12x+20 ning ildizlari 2 va 10, demak (x−1)(x−2)(x−10) > 0. Nollar 1, 2, 10. Ko'paytma 0 < x < 1 da manfiy, 1 < x < 2 da musbat, 2 < x < 10 da manfiy, x > 10 da musbat. Javob: (1; 2) ∪ (10; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-kopaytuvchili-log-yechim",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#11c7b83c"
+    },
+    {
+      "q": "logₓ(x²+2x) > logₓ(8x) tengsizligining yechim to'plamini aniqlang.",
+      "v": [
+        "(0; 1) ∪ (6; +∞)",
+        "(1; 6)",
+        "(0; 6)",
+        "(0; 1) ∪ (1; 6)"
+      ],
+      "t": 0,
+      "izoh": "Argumentlar ayirmasi (x²+2x)−8x = x²−6x = x(x−6). Ratsionallashtirish: (x−1)·x·(x−6) > 0. Aniqlanish sohasida x > 0, shuning uchun x ko'paytuvchi musbat va uni qisqartirish mumkin: (x−1)(x−6) > 0. Bundan x < 1 yoki x > 6, sohaga ko'ra 0 < x < 1 yoki x > 6. Javob: (0; 1) ∪ (6; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-kopaytuvchili-log-yechim",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#f83887ed"
+    },
+    {
+      "q": "logₓ(4x−5) > logₓ(x+7) tengsizligi ratsionallashtirilganda qaysi ko'rinishga keladi?",
+      "v": [
+        "(x−1)(x−4) > 0",
+        "(x−1)(x−4) < 0",
+        "(x−1)(x+4) > 0",
+        "(x−1)(5x+2) > 0"
+      ],
+      "t": 0,
+      "izoh": "Argumentlar ayirmasi (4x−5)−(x+7) = 3x−12 = 3(x−4). Ratsionallashtirish qoidasi bo'yicha 3(x−1)(x−4) > 0 hosil bo'ladi va musbat 3 ga bo'lish mumkin. Argumentlarni qo'shib yuborilsa 5x+2 chiqadi, bu esa tipik xato. Javob: (x−1)(x−4) > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-ratsional-tengsizlik",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#aeb65f87"
+    },
+    {
+      "q": "logₐ(2a+1) < logₐ(a+9) tengsizligi qaysi ko'paytmali tengsizlikka aylanadi?",
+      "v": [
+        "(a−1)(a−8) > 0",
+        "(a−1)(a−8) < 0",
+        "(a−1)(a+8) < 0",
+        "(a−1)(3a+10) < 0"
+      ],
+      "t": 1,
+      "izoh": "Argumentlar ayirmasi (2a+1)−(a+9) = a−8. Tengsizlik kichik belgili bo'lgani uchun ratsionallashtirish (a−1)(f−g) < 0 ko'rinishida yoziladi. Demak (a−1)(a−8) < 0. Ayirma o'rniga yig'indi olinsa 3a+10 chiqadi. Javob: (a−1)(a−8) < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-ratsional-tengsizlik",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#f0da1e1e"
+    },
+    {
+      "q": "logₓ(7−2x) > logₓ(x+1) tengsizligining aniqlanish sohasini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "(0; 1) ∪ (1; 3,5)",
+        "(0; 3,5)",
+        "(1; 3,5)",
+        "(0; 1) ∪ (1; 7)"
+      ],
+      "t": 0,
+      "izoh": "Asos uchun x > 0 va x ≠ 1 shartlari qo'yiladi. Birinchi argument uchun 7−2x > 0, ya'ni x < 3,5. Ikkinchi argument uchun x+1 > 0, bu x > 0 da o'z-o'zidan bajariladi. Shartlarni birlashtiramiz va x = 1 nuqtani chiqarib tashlaymiz. Javob: (0; 1) ∪ (1; 3,5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-sistema",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#d6f120a1"
+    },
+    {
+      "q": "Bitta ifodada logₓ(x−6) va logₓ(10−x) birga qatnashadi. Shu ifodaning aniqlanish sohasini toping.",
+      "v": [
+        "(0; 6) ∪ (10; +∞)",
+        "(1; 10)",
+        "(6; +∞)",
+        "(6; 10)"
+      ],
+      "t": 3,
+      "izoh": "Asos shartlari: x > 0 va x ≠ 1. Birinchi argument uchun x−6 > 0, ya'ni x > 6. Ikkinchi argument uchun 10−x > 0, ya'ni x < 10. Ikkala shart birga 6 < x < 10 ni beradi va bu oraliqda x > 0, x ≠ 1 avtomatik bajariladi. Javob: (6; 10).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi-sistema",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#3f9ace5c"
+    },
+    {
+      "q": "a^(3x−2) ≥ a^(x+6) tengsizligi (a > 0, a ≠ 1) qaysi ratsional tengsizlikka teng kuchli bo'ladi?",
+      "v": [
+        "(a−1)(x−4) > 0",
+        "(a−1)(x−4) ≥ 0",
+        "(a−1)(x+4) ≥ 0",
+        "(a−1)(4x+4) ≥ 0"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichlar ayirmasi (3x−2)−(x+6) = 2x−8 = 2(x−4). Noqat'iy tengsizlik uchun ratsionallashtirilgan ko'rinish ham noqat'iy bo'ladi: 2(a−1)(x−4) ≥ 0. Musbat 2 ga bo'lamiz. Belgini qat'iyga aylantirish x = 4 yechimini yo'qotadi. Javob: (a−1)(x−4) ≥ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-ratsionallashtirish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#5b070ea8"
+    },
+    {
+      "q": "a^(x²−x) < a⁶ tengsizligi (a > 0, a ≠ 1) ratsionallashtirilganda qanday ko'rinish oladi?",
+      "v": [
+        "(a−1)(x−3)(x+2) < 0",
+        "(a−1)(x−3)(x+2) > 0",
+        "(a−1)(x+3)(x−2) < 0",
+        "(a−1)(x²−x+6) < 0"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichlar ayirmasi (x²−x)−6 = x²−x−6. Ratsionallashtirish (a−1)(x²−x−6) < 0 ni beradi. Uchhadning ildizlari 3 va −2, shuning uchun x²−x−6 = (x−3)(x+2). Ayirish o'rniga qo'shish x²−x+6 xatosini beradi. Javob: (a−1)(x−3)(x+2) < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-ratsionallashtirish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#1c52ab57"
+    },
+    {
+      "q": "logₓ(x+21) > logₓ(8x) tengsizligining yechimini oraliq ko'rinishida yozing.",
+      "v": [
+        "(1; 3)",
+        "(3; +∞)",
+        "(0; 3)",
+        "(0; 1) ∪ (1; 3)"
+      ],
+      "t": 0,
+      "izoh": "Argumentlar ayirmasi (x+21)−8x = 21−7x = 7(3−x). Ratsionallashtirish: 7(x−1)(3−x) > 0, ya'ni (x−1)(x−3) < 0. Bundan 1 < x < 3. Aniqlanish sohasi x > 0, x ≠ 1 va 8x > 0 bu oraliqni cheklamaydi. Javob: (1; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "log-tengsizlik-yechim-oraligi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#16292320"
+    },
+    {
+      "q": "logₓ(9x) > logₓ(x+72) tengsizligining yechim to'plamini toping.",
+      "v": [
+        "(1; 9)",
+        "(0; 1) ∪ (9; +∞)",
+        "(9; +∞)",
+        "(0; 1) ∪ (1; 9)"
+      ],
+      "t": 1,
+      "izoh": "Argumentlar ayirmasi 9x−(x+72) = 8x−72 = 8(x−9). Ratsionallashtirish: 8(x−1)(x−9) > 0, demak x < 1 yoki x > 9. Aniqlanish sohasi x > 0, x ≠ 1 bo'lgani uchun birinchi bo'lak 0 < x < 1 ga qisqaradi. Javob: (0; 1) ∪ (9; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "log-tengsizlik-yechim-oraligi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#d0b24154"
+    },
+    {
+      "q": "Ikki brigada g'isht teradi va ularning unum nisbati x ga teng. Prorab Qodir logₓ(x+56) > logₓ(8x) shartini talab qiladi. Nisbat qanday qiymatlarni oladi?",
+      "v": [
+        "(0; 1) ∪ (8; +∞)",
+        "(1; 8)",
+        "(8; +∞)",
+        "(0; 8)"
+      ],
+      "t": 1,
+      "izoh": "Argumentlar ayirmasi (x+56)−8x = 56−7x = 7(8−x). Ratsionallashtirish: 7(x−1)(8−x) > 0, ya'ni (x−1)(x−8) < 0. Bundan 1 < x < 8. Aniqlanish sohasi x > 0, x ≠ 1 va 8x > 0 bu oraliqda buzilmaydi. Javob: (1; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#7e0e3e6c"
+    },
+    {
+      "q": "Dastgohda bir soatda ishlangan detallar soni a marta ortadi, bunda a > 0 va a ≠ 1. Rejada a^(2x+3) ≥ a^(5x−9) sharti bor; ratsionallashtirilgan ko'rinishni tanlang.",
+      "v": [
+        "(a−1)(x−4) ≥ 0",
+        "(a−1)(4−x) > 0",
+        "(a−1)(4−x) ≥ 0",
+        "(a−1)(7x−6) ≥ 0"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkichlar ayirmasi (2x+3)−(5x−9) = 12−3x = 3(4−x). Noqat'iy tengsizlik uchun 3(a−1)(4−x) ≥ 0 yoziladi va musbat 3 ga bo'linadi. Qavs ichini x−4 deb yozish ishorani teskari qiladi, ko'rsatkichlarni qo'shish esa 7x−6 ni beradi. Javob: (a−1)(4−x) ≥ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#309cb83d"
+    },
+    {
+      "q": "Yo'lovchi Nargiza marshrut koeffitsienti x uchun logₓ(11x) < logₓ(x+110) shartini oldi. Koeffitsient qanday qiymatlarni olishi mumkin?",
+      "v": [
+        "(0; 1) ∪ (11; +∞)",
+        "(1; 11)",
+        "(11; +∞)",
+        "(0; 11)"
+      ],
+      "t": 1,
+      "izoh": "Argumentlar ayirmasi 11x−(x+110) = 10x−110 = 10(x−11). Kichik belgi uchun 10(x−1)(x−11) < 0, ya'ni 1 < x < 11. Aniqlanish sohasi x > 0, x ≠ 1 va 11x > 0 bu oraliqni cheklamaydi. Javob: (1; 11).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masofa-koeffitsienti",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#23d05959"
+    },
+    {
+      "q": "Yuk mashinasi tezligining koeffitsienti x bo'lib, logₓ(x+35) < logₓ(6x) sharti tekshiriladi. Koeffitsient qiymatlari to'plamini toping.",
+      "v": [
+        "(1; 7)",
+        "(0; 1) ∪ (7; +∞)",
+        "(0; 7)",
+        "(0; 1) ∪ (1; 7)"
+      ],
+      "t": 1,
+      "izoh": "Argumentlar ayirmasi (x+35)−6x = 35−5x = 5(7−x). Kichik belgi uchun 5(x−1)(7−x) < 0, ya'ni (x−1)(x−7) > 0. Bundan x < 1 yoki x > 7. Aniqlanish sohasi x > 0, x ≠ 1 bo'lgani uchun birinchi qism 0 < x < 1 ga aylanadi. Javob: (0; 1) ∪ (7; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masofa-koeffitsienti",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#5ad0b09d"
+    },
+    {
+      "q": "Tarozini kalibrlash ko'rsatkichi x bo'lib, metrolog Anvar logₓ49 > 2 shartini qo'ydi. Ko'rsatkichning mumkin bo'lgan qiymatlarini toping.",
+      "v": [
+        "(1; 7)",
+        "(0; 7)",
+        "(7; +∞)",
+        "(0; 1) ∪ (1; 7)"
+      ],
+      "t": 0,
+      "izoh": "O'ng tomondagi 2 ni logₓx² ko'rinishida yozamiz. Ratsionallashtirish: (x−1)(49−x²) > 0. Aniqlanish sohasida x > 0 bo'lgani uchun 49−x² = (7−x)(7+x) da 7+x musbat va uni qisqartiramiz. Qoladi (x−1)(7−x) > 0, ya'ni (x−1)(x−7) < 0 va 1 < x < 7. Javob: (1; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-olchov",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#d5d37714"
+    },
+    {
+      "q": "Termometrning bo'linish ko'rsatkichi x bo'lib, logₓ8 < 3 sharti bajarilishi kerak. Ko'rsatkich qiymatlari to'plamini aniqlang.",
+      "v": [
+        "(1; 2)",
+        "(0; 1) ∪ (2; +∞)",
+        "(0; 2)",
+        "(0; 1) ∪ (1; 2)"
+      ],
+      "t": 1,
+      "izoh": "O'ng tomondagi 3 ni logₓx³ deb yozamiz. Ratsionallashtirish: (x−1)(8−x³) < 0. Yig'indi va ayirma kublari formulasi bo'yicha 8−x³ = (2−x)(x²+2x+4), ikkinchi ko'paytuvchi esa x > 0 da doim musbat. Demak (x−1)(2−x) < 0, ya'ni (x−1)(x−2) > 0 va x < 1 yoki x > 2. Aniqlanish sohasiga ko'ra x > 0. Javob: (0; 1) ∪ (2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-olchov",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#af24eae4"
+    },
+    {
+      "q": "Sug'orish tizimida quvur o'tkazuvchanlik koeffitsienti x bo'lib, logₓ(2x+13) > logₓ(x+30) sharti bajariladi. Eng kichik butun koeffitsientni toping.",
+      "v": [
+        "17",
+        "19",
+        "18",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "Argumentlar ayirmasi (2x+13)−(x+30) = x−17. Ratsionallashtirish: (x−1)(x−17) > 0, demak x < 1 yoki x > 17. Aniqlanish sohasi x > 0, x ≠ 1 bo'lgani uchun yechim (0; 1) ∪ (17; +∞). Birinchi bo'lakda butun son yo'q, ikkinchisida eng kichigi 18, chunki 17 chegara sifatida kirmaydi. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-butun-yechim",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#f23500f2"
+    },
+    {
+      "q": "Bir o'quvchi logₓ(x+8) > logₓ11 tengsizligini yechib, javobni (0; 1) ∪ (3; +∞) deb yozdi, ammo aniqlanish sohasini tekshirmadi. Uning javobi to'g'rimi?",
+      "v": [
+        "Noto'g'ri, (0; 1) bo'lagi ortiqcha",
+        "Noto'g'ri, javob faqat (3; +∞) bo'ladi",
+        "Noto'g'ri, x+8 > 0 sharti oraliqni qisqartiradi",
+        "To'g'ri, chunki aniqlanish sohasi bu oraliqlarni cheklamaydi"
+      ],
+      "t": 3,
+      "izoh": "Ratsionallashtirish: (x−1)(x+8−11) > 0, ya'ni (x−1)(x−3) > 0 va x < 1 yoki x > 3. Aniqlanish sohasi x > 0, x ≠ 1 hamda x+8 > 0. Oxirgi shart x > 0 da o'z-o'zidan bajariladi, birinchi shart esa manfiy qismni kesib tashlaydi va (0; 1) ni qoldiradi. Demak yozilgan javob mos keladi. Javob: to'g'ri, soha bu oraliqlarni cheklamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechimdagi-xatoni-topish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#b488545b"
+    },
+    {
+      "q": "x = 9 soni logₓ(x+11) < logₓ(3x−4) tengsizligini qanoatlantiradimi? Ratsionallashtirilgan ifoda bilan tekshiring.",
+      "v": [
+        "Ha, chunki ko'paytma manfiy qiymat chiqaradi",
+        "Yo'q, chunki asos 1 dan katta",
+        "Yo'q, chunki 3x−4 juda kichik",
+        "Ha, chunki x+11 > 3x−4"
+      ],
+      "t": 0,
+      "izoh": "x = 9 da birinchi argument 9+11 = 20, ikkinchisi 3·9−4 = 23. Argumentlar ayirmasi 20−23 = −3. Ratsionallashtirilgan ifoda (x−1)(f−g) = (9−1)·(−3) = −24. Kichik belgili tengsizlik uchun bu ko'paytma manfiy bo'lishi kerak, shart bajarildi. Javob: ha, ko'paytma manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatni-tekshirish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#16f75cbe"
+    },
+    {
+      "q": "logₓ(2x+3) < 2 tengsizligining yechim to'plamini toping.",
+      "v": [
+        "(1; 3)",
+        "(3; +∞)",
+        "(0; 1) ∪ (3; +∞)",
+        "(0; 1) ∪ (1; 3)"
+      ],
+      "t": 2,
+      "izoh": "O'ng tomondagi 2 ni logₓx² ko'rinishida yozamiz. Ratsionallashtirish: (x−1)(2x+3−x²) < 0. Qavs ichidan minusni chiqaramiz: −(x²−2x−3) = −(x−3)(x+1), demak (x−1)(x−3)(x+1) > 0. Aniqlanish sohasida x > 0 bo'lgani uchun x+1 musbat va qisqaradi: (x−1)(x−3) > 0. Bundan x < 1 yoki x > 3. Javob: (0; 1) ∪ (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birga-solishtirish",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#f0a60cc2"
+    },
+    {
+      "q": "logₓ(x+12) > logₓ(4x) tengsizligi asos 1 dan katta bo'lgan holda qanday yechim beradi?",
+      "v": [
+        "(0; 1)",
+        "(4; +∞)",
+        "(0; 1) ∪ (4; +∞)",
+        "(1; 4)"
+      ],
+      "t": 3,
+      "izoh": "Argumentlar ayirmasi (x+12)−4x = 12−3x = 3(4−x). Ratsionallashtirish: 3(x−1)(4−x) > 0, ya'ni (x−1)(x−4) < 0 va 1 < x < 4. Asos 1 dan katta degan shart x > 1 ni bildiradi, bu esa topilgan oraliqqa to'liq mos keladi. Javob: (1; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-holli-tahlil",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#d1bd600f"
+    },
+    {
+      "q": "logₓ(x²+3) > logₓ(x²+10) tengsizligining yechim to'plamini aniqlang.",
+      "v": [
+        "(0; 1)",
+        "(1; +∞)",
+        "(−∞; 1)",
+        "yechim yo'q"
+      ],
+      "t": 0,
+      "izoh": "Argumentlar ayirmasi (x²+3)−(x²+10) = −7 bo'lib, x ga bog'liq emas va doim manfiy. Ratsionallashtirish: (x−1)·(−7) > 0. Manfiy songa bo'lganda belgi almashadi: x−1 < 0, ya'ni x < 1. Aniqlanish sohasi x > 0 va x ≠ 1 ni talab qiladi, shuning uchun manfiy qism tashlanadi. Javob: (0; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-ayirma-hol",
+      "id": "matematika_tngs_m11-ratsionallashtirish-metodi-ozgaruvchi-asosli-tengsizliklar#d667af13"
+    }
+  ]
+}

@@ -1,0 +1,516 @@
+{
+  "nom": "17-mavzu. Metallarning fizik va kimyoviy xossalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Odatdagi sharoitda suyuq holatda bo'lgan metall qaysi?",
+      "v": [
+        "Simob",
+        "Natriy",
+        "Mis",
+        "Alyuminiy"
+      ],
+      "t": 0,
+      "izoh": "Metallar (fransiy va simobdan tashqari) odatdagi sharoitda qattiq holatda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#456ddb20"
+    },
+    {
+      "q": "Kristall holatidagi metallar nima uchun yaltiroqlikka ega?",
+      "v": [
+        "Nurni yaxshi aks ettirganliklari uchun",
+        "Yuqori zichliklari uchun",
+        "Erkin elektronlari yo'qligi uchun",
+        "Kislorod bilan reaksiyaga kirishgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Kristall holatidagi metallar nurni yaxshi aks ettirganliklari uchun yaltiroqlikka ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#d6ed4c69"
+    },
+    {
+      "q": "Qaysi metallar nurni yaxshi aks ettirganligi uchun proyektor va reflektorlar tayyorlashda ishlatiladi?",
+      "v": [
+        "Indiy va kumush",
+        "Temir va rux",
+        "Natriy va kaliy",
+        "Qalay va qo'rg'oshin"
+      ],
+      "t": 0,
+      "izoh": "Indiy va kumush nurni yaxshi aks ettiradi, shuning uchun proyektor va reflektorlarda ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#d93c1219"
+    },
+    {
+      "q": "Maydalangan (kukunsimon) holda qoramtir yoki to'q kulrang bo'lmaydigan metallar qaysilar?",
+      "v": [
+        "Aluminiy va magniy",
+        "Temir va mis",
+        "Rux va nikel",
+        "Qo'rg'oshin va qalay"
+      ],
+      "t": 0,
+      "izoh": "Aluminiy va magniydan boshqa barcha metallar kukunsimon holda qoramtir yoki to'q kulrang bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#3c9a7fe7"
+    },
+    {
+      "q": "Qaysi metallar oq yoki kulrangning turli tuslarida tovlanmaydi (boshqa rangda bo'ladi)?",
+      "v": [
+        "Oltin va mis",
+        "Kumush va temir",
+        "Rux va qalay",
+        "Nikel va xrom"
+      ],
+      "t": 0,
+      "izoh": "Oltin va misdan boshqa metallar oq yoki kulrangning turli tuslarida tovlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#370d8e84"
+    },
+    {
+      "q": "Elektr toki va issiqlikni o'tkazish bo'yicha dastlabki o'rinlarni qaysi metallar egallaydi?",
+      "v": [
+        "Kumush va mis",
+        "Oltin va platina",
+        "Temir va alyuminiy",
+        "Rux va nikel"
+      ],
+      "t": 0,
+      "izoh": "Barcha metallar elektr va issiqlikni yaxshi o'tkazadi, kumush va mis bu sohada dastlabki o'rinlarni egallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#5af3bcac"
+    },
+    {
+      "q": "Bolg'alanuvchanlik deb nimaga aytiladi?",
+      "v": [
+        "Jismlarning tashqi ta'sirlar natijasida osongina shaklini o'zgartirish qobiliyatiga",
+        "Metallarning yuqori haroratda suyuqlanishiga",
+        "Metallarning elektr tokini o'tkazishiga",
+        "Metallarning kislotalarda erishiga"
+      ],
+      "t": 0,
+      "izoh": "Bolg'alanuvchanlik — jismlarning tashqi ta'sirlar natijasida osongina shaklini o'zgartirish qobiliyati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#10566992"
+    },
+    {
+      "q": "Eng bolg'alanuvchan metall qaysi?",
+      "v": [
+        "Oltin",
+        "Temir",
+        "Alyuminiy",
+        "Mis"
+      ],
+      "t": 0,
+      "izoh": "Eng bolg'alanuvchan metall oltin bo'lib, undan yupqa folga va nozik sim tayyorlash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#02bae971"
+    },
+    {
+      "q": "Metallarning kristall panjarasi tugunlarida nimalar joylashadi?",
+      "v": [
+        "Neytral atomlar va musbat zaryadlangan ionlar",
+        "Faqat manfiy ionlar",
+        "Faqat molekulalar",
+        "Faqat erkin elektronlar"
+      ],
+      "t": 0,
+      "izoh": "Metallarning kristall panjarasi tugunlarida neytral atomlar, musbat zaryadlangan ionlar joylashadi, ular orasida erkin elektronlar harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#97e6209c"
+    },
+    {
+      "q": "Metall bog' deb nimaga aytiladi?",
+      "v": [
+        "Metallarda musbat ionlar va umumiy elektronlar orasida vujudga kelgan kimyoviy bog'ga",
+        "Ikki metall atomining juft elektronlar bilan bog'lanishiga",
+        "Metall atomi bilan kislorod atomining bog'lanishiga",
+        "Metall ionlari bilan kislota qoldig'ining bog'lanishiga"
+      ],
+      "t": 0,
+      "izoh": "Metallarda musbat ionlar va umumiy elektronlar orasida vujudga kelgan kimyoviy bog' metall bog' deb yuritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#3b8b8413"
+    },
+    {
+      "q": "Metallarning elektr toki va issiqlikni yaxshi o'tkazishi nimadan dalolat beradi?",
+      "v": [
+        "Erkin elektronlar bo'lishidan",
+        "Yuqori zichlikdan",
+        "Yuqori suyuqlanish haroratidan",
+        "Qattiqlikdan"
+      ],
+      "t": 0,
+      "izoh": "Erkin elektronlar bo'lishi metallarning elektr toki va issiqlikni yaxshi o'tkazishini ta'minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#f1366bf6"
+    },
+    {
+      "q": "17-§ ga ko'ra, zichligi qanchadan kichik bo'lgan metallar yengil metallarga kiradi?",
+      "v": [
+        "5000 kg/m3 dan kichik",
+        "500 kg/m3 dan kichik",
+        "10000 kg/m3 dan kichik",
+        "1000 kg/m3 dan kichik"
+      ],
+      "t": 0,
+      "izoh": "17-§ da zichligi 5000 kg/m3 dan kichik metallar yengil, bundan kattalari og'ir metallar deb ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#cf9464e0"
+    },
+    {
+      "q": "Eng quyi suyuqlanish haroratiga ega metall qaysi?",
+      "v": [
+        "Simob (–38,87 °C)",
+        "Seziy (28,36 °C)",
+        "Qalay (231,9 °C)",
+        "Natriy (97,79 °C)"
+      ],
+      "t": 0,
+      "izoh": "Eng quyi suyuqlanish harorati simobga tegishli: –38,87 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#e231e303"
+    },
+    {
+      "q": "Eng yuqori suyuqlanish haroratiga ega metall qaysi?",
+      "v": [
+        "Volfram (3410 °C)",
+        "Temir (1539 °C)",
+        "Platina (1769 °C)",
+        "Xrom (1890 °C)"
+      ],
+      "t": 0,
+      "izoh": "Eng yuqori suyuqlanish harorati volframga tegishli: 3410 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#a47005a7"
+    },
+    {
+      "q": "Eng qattiq metallar qaysilar?",
+      "v": [
+        "Xrom va volfram",
+        "Temir va nikel",
+        "Oltin va platina",
+        "Mis va rux"
+      ],
+      "t": 0,
+      "izoh": "Eng qattiq metallar xrom va volfram.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#b3c609c5"
+    },
+    {
+      "q": "Eng yumshoq metallar qaysilar?",
+      "v": [
+        "Natriy, kaliy va indiy",
+        "Magniy, kalsiy, stronsiy",
+        "Temir, kobalt, nikel",
+        "Rux, qalay, qo'rg'oshin"
+      ],
+      "t": 0,
+      "izoh": "Eng yumshoq metallar natriy, kaliy va indiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#c9f01cc1"
+    },
+    {
+      "q": "Metallarning kimyoviy xossalari nimasi bilan aniqlanadi?",
+      "v": [
+        "Atomlarining valent elektronlarini oson berib, tegishli ionlarga aylanish qobiliyatlari bilan",
+        "Yuqori zichliklari bilan",
+        "Suyuqlanish haroratlari bilan",
+        "Kristall panjara shakli bilan"
+      ],
+      "t": 0,
+      "izoh": "Metallarning kimyoviy xossalari ular atomlarining valent elektronlarini oson berish qobiliyatlari bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#0e245f62"
+    },
+    {
+      "q": "Kimyoviy reaksiyalarda metallarning atomlari qanday xossa namoyon qiladi?",
+      "v": [
+        "Qaytaruvchilik xossalarini",
+        "Oksidlovchilik xossalarini",
+        "Neytrallik xossasini",
+        "Katalitik xossani"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy reaksiyalarda metallarning atomlari qaytaruvchilik xossalarini namoyon qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#c22453ba"
+    },
+    {
+      "q": "Kislorodda yonish jarayonida metall atomi elektronlarini berib nima bo'ladi?",
+      "v": [
+        "Musbat zaryadli ionga aylanadi — oksidlanadi",
+        "Manfiy zaryadli ionga aylanadi — qaytariladi",
+        "Neytral qoladi",
+        "Molekula hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Metall valent elektronlarini berib, musbat zaryadli ionga aylanadi — oksidlanadi; kislorod esa qaytariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#11dad873"
+    },
+    {
+      "q": "Zn + Pb(NO3)2 → Pb + Zn(NO3)2 reaksiyasi nimani ko'rsatadi?",
+      "v": [
+        "Rux qo'rg'oshinni uning tuzidan siqib chiqarishini",
+        "Qo'rg'oshin ruxni siqib chiqarishini",
+        "Ruxning oksidlanish darajasi pasayishini",
+        "Qo'rg'oshinning kislota bilan reaksiyasini"
+      ],
+      "t": 0,
+      "izoh": "Rux qo'rg'oshin (II)-nitratidan qo'rg'oshinni siqib chiqaradi, demak rux kuchliroq qaytaruvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#a449b29c"
+    },
+    {
+      "q": "Metallarni «siqib chiqarish qatori»ga joylashtirgan va ular orasida vodorodning o'rnini ko'rsatgan olim kim?",
+      "v": [
+        "N.N.Beketov",
+        "D.I.Mendeleyev",
+        "M.Faradey",
+        "A.Lavuazye"
+      ],
+      "t": 0,
+      "izoh": "Bir metallni boshqalari siqib chiqarish qobiliyatini rus olimi N.N.Beketov o'rgangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#1da4f713"
+    },
+    {
+      "q": "Hozirgi vaqtda Beketov qatori qanday ataladi?",
+      "v": [
+        "Metallarning elektrokimyoviy kuchlanish qatori yoki standart elektrod potensiallari qatori",
+        "Metallarning faollik jadvali",
+        "Metallarning zichlik qatori",
+        "Davriy qonun jadvali"
+      ],
+      "t": 0,
+      "izoh": "Bu qator hozir metallarning elektrokimyoviy kuchlanish qatori yoki standart elektrod potensiallari qatori deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#b79ae94a"
+    },
+    {
+      "q": "Elektrokimyoviy kuchlanish qatorida har bir metall qanday xususiyatga ega?",
+      "v": [
+        "O'zidan keyingi metallni uning tuzlari eritmasidan siqib chiqaradi",
+        "O'zidan oldingi metallni siqib chiqaradi",
+        "Faqat vodorodni siqib chiqaradi",
+        "Barcha metallarni siqib chiqaradi"
+      ],
+      "t": 0,
+      "izoh": "Har bir metall o'zidan keyingi metallni uning tuzlari eritmasidan siqib chiqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#75cb1f0c"
+    },
+    {
+      "q": "Elektrokimyoviy kuchlanish qatorida vodorodning elektrod potensiali qancha?",
+      "v": [
+        "0,00 V",
+        "+0,34 V",
+        "–2,71 V",
+        "+1,50 V"
+      ],
+      "t": 0,
+      "izoh": "Qatorda vodorod uchun H2/2H+ juftlik potensiali 0,00 V qilib olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#40e1aa36"
+    },
+    {
+      "q": "Qator bo'yicha litiyning standart elektrod potensiali qancha?",
+      "v": [
+        "–3,04 V",
+        "–2,71 V",
+        "+0,34 V",
+        "+1,50 V"
+      ],
+      "t": 0,
+      "izoh": "Litiy uchun qiymat –3,04 V — qatordagi eng kuchli qaytaruvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#afb592ae"
+    },
+    {
+      "q": "Elektrokimyoviy qatorda oltinning standart elektrod potensiali qancha?",
+      "v": [
+        "+1,50 V",
+        "+0,80 V",
+        "+0,34 V",
+        "–0,44 V"
+      ],
+      "t": 0,
+      "izoh": "Oltin uchun qiymat +1,50 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#85e630ab"
+    },
+    {
+      "q": "Qatorda misning standart elektrod potensiali qancha?",
+      "v": [
+        "+0,34 V",
+        "+0,80 V",
+        "–0,13 V",
+        "–0,76 V"
+      ],
+      "t": 0,
+      "izoh": "Mis uchun qiymat +0,34 V; kumush +0,80 V; qo'rg'oshin –0,13 V; rux –0,76 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#c759b528"
+    },
+    {
+      "q": "Vodorodgacha chap tomonda joylashgan metallar vodorodni nimadan siqib chiqaradi?",
+      "v": [
+        "Kislotalar eritmalaridan",
+        "Faqat suv bug'idan",
+        "Faqat tuz eritmalaridan",
+        "Ishqor eritmalaridan"
+      ],
+      "t": 0,
+      "izoh": "Vodorodgacha chapdagi metallar uni kislotalar eritmalaridan siqib chiqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#368f9739"
+    },
+    {
+      "q": "Qaysi oraliqdagi metallar vodorodni suvdan odatdagi haroratda siqib chiqaradi?",
+      "v": [
+        "Litiy va magniy oralig'idagi metallar",
+        "Rux va qo'rg'oshin oralig'idagi metallar",
+        "Mis va oltin oralig'idagi metallar",
+        "Nikel va qalay oralig'idagi metallar"
+      ],
+      "t": 0,
+      "izoh": "Litiy va magniy oralig'idagi metallar vodorodni suvdan odatdagi haroratda siqib chiqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#bf27ce05"
+    },
+    {
+      "q": "Vodoroddan keyin o'ng tomonda turgan metallar kislotalarning suvli eritmalaridan vodorodni siqib chiqara oladimi?",
+      "v": [
+        "Siqib chiqara olmaydi",
+        "Siqib chiqaradi",
+        "Faqat qizdirilganda chiqaradi",
+        "Faqat konsentrlangan kislotadan chiqaradi"
+      ],
+      "t": 0,
+      "izoh": "Vodoroddan keyingi metallar uni kislotalarning suvli eritmalaridan siqib chiqara olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#ec4ee183"
+    },
+    {
+      "q": "Metall atomi o'zining valent elektronlarini qanchalik oson bersa, u qanday hisoblanadi?",
+      "v": [
+        "Shunchalik kuchli qaytaruvchi",
+        "Shunchalik kuchsiz qaytaruvchi",
+        "Shunchalik kuchli oksidlovchi",
+        "Shunchalik passiv"
+      ],
+      "t": 0,
+      "izoh": "Metall atomi elektronlarini qancha oson bersa, shunchalik kuchli qaytaruvchi hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#7f822e81"
+    },
+    {
+      "q": "Qo'rg'oshin va misdan qaysi biri kuchliroq qaytaruvchi?",
+      "v": [
+        "Qo'rg'oshin, chunki u misni uning tuzlaridan siqib chiqaradi",
+        "Mis, chunki u qatorda chaproqda turadi",
+        "Ikkalasi teng kuchli",
+        "Hech biri qaytaruvchi emas"
+      ],
+      "t": 0,
+      "izoh": "Qo'rg'oshin misni uning tuzlaridan siqib chiqaradi, demak undan kuchliroq qaytaruvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#98ae8b78"
+    },
+    {
+      "q": "Metall bog' qanday agregat holatlarda mavjud?",
+      "v": [
+        "Qattiq va suyuq agregat holatida bo'lishidan qat'i nazar, faqat metallar uchun xosdir",
+        "Faqat qattiq holatda",
+        "Faqat suyuq holatda",
+        "Faqat gaz holatda"
+      ],
+      "t": 0,
+      "izoh": "Metall bog' qattiq va suyuq holatda bo'lishidan qat'i nazar, faqat metallar uchun xosdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#eeff8c51"
+    },
+    {
+      "q": "Zichlik, suyuqlanish va qaynash harorati, qattiqlik kabi xossalar nimaga bog'liq?",
+      "v": [
+        "Yadro zaryadi, massa, metall bog'ning mustahkamligiga",
+        "Faqat atom radiusiga",
+        "Faqat tashqi elektronlar soniga",
+        "Faqat kristall panjara shakliga"
+      ],
+      "t": 0,
+      "izoh": "Bu xossalar metall atomlarining yadro zaryadi, massasi va metall bog' mustahkamligiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m17-metallarning-fizik-va-kimyoviy-xossalari#02d1fed4"
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "nom": "13-mavzu. Tranzistorli Generator",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Real tebranish konturida erkin tebranishlar nega so'nadi?",
+      "v": [
+        "Konturni tashkil etgan o'tkazgichlarning elektr qarshiligi tufayli energiya issiqlikka aylanadi",
+        "Kondensator zaryadi tugab qoladi",
+        "G'altak induktivligi yo'qoladi",
+        "Chastota juda yuqori bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "O'tkazgich elektr qarshiligi tufayli tok o'tganda qiziydi, elektr energiyasi issiqlik energiyasiga aylanadi, shu bois erkin tebranishlar so'nuvchi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#801d699b"
+    },
+    {
+      "q": "Tebranishlar so'nmasligi uchun nima qilish kerak?",
+      "v": [
+        "Sarflanib ketgan energiyani batareya yordamida konturga davriy ravishda berib turish kerak",
+        "Konturga doimiy kuchlanish ulash kerak",
+        "Kondensator sig'imini oshirish kerak",
+        "G'altak o'ramlari sonini kamaytirish kerak"
+      ],
+      "t": 0,
+      "izoh": "Tebranishlar so'nmasligi uchun sarflanib ketgan energiyani batareya yordamida tebranish konturiga davriy ravishda berib turish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#0ad5ed73"
+    },
+    {
+      "q": "Konturdagi tebranishlar chastotasi 1 MGz bo'lsa, uzib-ulagichni sekundiga necha marta uzib-ulash kerak?",
+      "v": [
+        "Million marta",
+        "Ming marta",
+        "Yuz marta",
+        "O'n marta"
+      ],
+      "t": 0,
+      "izoh": "1 MGz = 1 000 000 Gz bo'lgani uchun uzib-ulagichni bir sekundda million marta uzib-ulash kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#6cf895f7"
+    },
+    {
+      "q": "Yuqori chastotada uzib-ulagich vazifasini qanday qurilma bajara oladi?",
+      "v": [
+        "Faqat elektron asbob — tranzistor",
+        "Mexanik uzib-ulagich",
+        "Elektromexanik rele",
+        "Oddiy kalit"
+      ],
+      "t": 0,
+      "izoh": "Bu vazifani hech qanday mexanik yoki elektromexanik qurilmalar bajara olmaydi, uni faqat elektron asbob ya'ni tranzistor bajara oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#6ea0f079"
+    },
+    {
+      "q": "p-n-p turdagi tranzistordan tok o'tishi uchun bazaga qanday qutb ulanadi?",
+      "v": [
+        "Batareyaning manfiy qutbi",
+        "Batareyaning musbat qutbi",
+        "Istalgan qutb",
+        "Yerga"
+      ],
+      "t": 0,
+      "izoh": "Bazaga batareyaning manfiy qutbi, emitterga esa musbat qutbi ulanganda tranzistor orqali tok o'tadi (uzib-ulagich ulangan).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#c9a75568"
+    },
+    {
+      "q": "Tranzistor bazasiga batareya qutblari almashtirib ulansa, nima yuz beradi?",
+      "v": [
+        "Tok o'tmaydi (uzib-ulagich uzilgan bo'ladi)",
+        "Tok ikki baravar ortadi",
+        "Tranzistor qizib ketadi",
+        "Tranzistor tebranish hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Agar batareya qutblari almashtirib ulansa, tok o'tmaydi — uzib-ulagich uzilgan holatga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#6bff0cab"
+    },
+    {
+      "q": "Tranzistorli generatorda Lb bog'lanish g'altagi qanday vazifani bajaradi?",
+      "v": [
+        "Unda o'zaro induksiya EYuK hosil qilib, tranzistorning ochilish-yopilishini boshqaradi",
+        "Konturga qo'shimcha induktivlik qo'shadi",
+        "Kondensatorni doimiy zaryadlaydi",
+        "Chastotani pasaytiradi"
+      ],
+      "t": 0,
+      "izoh": "L g'altakning o'zgaruvchan magnit maydoni Lb bog'lanish g'altagini kesib o'tib, unda o'zaro induksiya EYuK hosil qiladi, bu esa tranzistorni boshqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#d81a203a"
+    },
+    {
+      "q": "Tranzistorning baza-emitter zanjiri qanday ataladi?",
+      "v": [
+        "Kirish zanjiri",
+        "Chiqish zanjiri",
+        "Bog'lanish zanjiri",
+        "Ta'minot zanjiri"
+      ],
+      "t": 0,
+      "izoh": "Tranzistorning baza-emitter zanjiri kirish zanjiri, kollektor-emitter zanjiri chiqish zanjiri deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#ecdde457"
+    },
+    {
+      "q": "Tranzistorning kollektor-emitter zanjiri qanday ataladi?",
+      "v": [
+        "Chiqish zanjiri",
+        "Kirish zanjiri",
+        "Boshqaruv zanjiri",
+        "Asosiy zanjir"
+      ],
+      "t": 0,
+      "izoh": "Kollektor-emitter zanjiri chiqish zanjiri deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#e6ec3f5b"
+    },
+    {
+      "q": "Teskari bog'lanish deb nimaga aytiladi?",
+      "v": [
+        "Chiqishdagi (konturdagi) kuchlanish kirishdagi (Lb) kuchlanishni boshqaradigan jarayonga",
+        "Kirishdagi kuchlanish chiqishdagi tokni boshqaradigan jarayonga",
+        "Ikki konturning parallel ulanishiga",
+        "Batareyaning teskari ulanishiga"
+      ],
+      "t": 0,
+      "izoh": "Tranzistorli generatorda chiqishdagi (konturdagi) kuchlanish kirishdagi (Lb) kuchlanishni boshqaradi — bunday jarayonga teskari bog'lanish deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#56efd8ed"
+    },
+    {
+      "q": "Teskari bog'lanish tebranishlarning so'nmasligini ta'minlashi uchun kirish va chiqish zanjiridagi kuchlanishlar faza jihatidan qanchaga farq qilishi kerak?",
+      "v": [
+        "180° ga",
+        "90° ga",
+        "0° ga",
+        "360° ga"
+      ],
+      "t": 0,
+      "izoh": "Teskari bog'lanish tebranishlarning so'nmasligini ta'minlashi uchun kirish va chiqish zanjiridagi kuchlanishlar faza jihatidan 180° ga farq qilishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#42bd80b9"
+    },
+    {
+      "q": "Generator ishlab chiqarayotgan elektromagnit tebranishlar chastotasi qanday ifodalanadi?",
+      "v": [
+        "Tomson formulasi bilan",
+        "Om qonuni bilan",
+        "Faradey qonuni bilan",
+        "Joule-Lens qonuni bilan"
+      ],
+      "t": 0,
+      "izoh": "Generator ishlab chiqarayotgan elektromagnit tebranishlar chastotasi Tomson formulasi (3–1) bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#26a31503"
+    },
+    {
+      "q": "Avtotebranishlar deb nimaga aytiladi?",
+      "v": [
+        "So'nmas tebranishlarning ikkinchi turi bo'lib, tashqi davriy ta'sirsiz, tizimning o'zi energiya berilishini tartibga soladigan tebranishlarga",
+        "Tashqi davriy kuch ta'siridagi tebranishlarga",
+        "Amplitudasi kamayib boradigan tebranishlarga",
+        "Faqat mexanik tebranishlarga"
+      ],
+      "t": 0,
+      "izoh": "Avtotebranishlar so'nmas tebranishlarning ikkinchi turi bo'lib, ularga tashqi davriy ta'sir kerak emas; energiya manbayi tizimning o'zida mavjud va energiya berilishini tizimning o'zi tartibga soladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#f53dffa5"
+    },
+    {
+      "q": "Avtotebranishlarning majburiy tebranishlardan asosiy farqi nimada?",
+      "v": [
+        "Ularga tashqi davriy ta'sir kerak emas, energiya manbayi tizimning o'zida mavjud",
+        "Ularning chastotasi kattaroq",
+        "Ularning amplitudasi kattaroq",
+        "Ular faqat elektr zanjirlarida yuz beradi"
+      ],
+      "t": 0,
+      "izoh": "Avtotebranishlarning majburiy tebranishlardan asosiy farqi — ularga tashqi davriy ta'sir kerak emas; sarflangan energiya o'rnini to'ldirishni tizimning o'zi tartibga soladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#78bf21cb"
+    },
+    {
+      "q": "Har qanday avtotebranish tizimi qanday qismlardan iborat?",
+      "v": [
+        "Energiya manbayi, tebranish tizimi va elektron kalitdan",
+        "Kondensator, rezistor va lampochkadan",
+        "Faqat tranzistor va batareyadan",
+        "Transformator va dioddan"
+      ],
+      "t": 0,
+      "izoh": "Har qanday avtotebranish tizimi quyidagi qismlardan iborat: energiya manbayi, tebranish tizimi va elektron kalit.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#71e9e283"
+    },
+    {
+      "q": "Tranzistorli generatorda elektron kalit vazifasini nima bajaradi?",
+      "v": [
+        "Tranzistor",
+        "Kondensator",
+        "G'altak",
+        "Batareya"
+      ],
+      "t": 0,
+      "izoh": "Generatorda elektron kalit vazifasini tranzistor bajaradi — u goh ochiq, goh yopiq holatda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#bdb664d0"
+    },
+    {
+      "q": "Avtotebranishlar qayerlarda ishlatiladi?",
+      "v": [
+        "Radioaloqa, televideniye, EHM va boshqa qurilmalarda",
+        "Faqat elektr plitalarda",
+        "Faqat elektr lampochkalarda",
+        "Faqat akkumulyatorlarda"
+      ],
+      "t": 0,
+      "izoh": "Avtotebranishlar radioaloqa, televideniye, EHM va boshqa qurilmalarda ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#618505cc"
+    },
+    {
+      "q": "Tranzistorli generatorda kontur tok manbayiga qanday ulangan?",
+      "v": [
+        "Tranzistor orqali",
+        "To'g'ridan-to'g'ri",
+        "Rezistor orqali",
+        "Diod orqali"
+      ],
+      "t": 0,
+      "izoh": "Konturda so'nmas elektromagnit tebranishlar hosil qilish uchun uni manbaga tranzistor orqali ulash kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#bc2e8459"
+    },
+    {
+      "q": "Generatorda kondensator qachon batareyadan zaryadlanadi?",
+      "v": [
+        "Batareya qutblaridagi kuchlanish ishorasi bilan mos kelganda (musbat qoplama musbat zaryadlangan vaqtda)",
+        "Har doim uzluksiz",
+        "Faqat tok nolga teng bo'lganida",
+        "Hech qachon"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish manbayi tebranish konturiga davriy ravishda, musbat qutbga ulangan kondensator qoplamasi musbat zaryadlangan vaqtdagina ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#7241b765"
+    },
+    {
+      "q": "L g'altakdan o'tuvchi tok o'sishdan to'xtasa, Lb da nima yuz beradi?",
+      "v": [
+        "EYuK hosil bo'lmaydi va tranzistordan tok o'tmaydi — kalit uziladi",
+        "EYuK maksimalga erishadi",
+        "Tranzistor ochiq qoladi",
+        "Kondensator portlaydi"
+      ],
+      "t": 0,
+      "izoh": "L g'altakdan o'tuvchi tok o'sishdan to'xtasa, Lb da EYuK hosil bo'lmaydi va tranzistordan tok o'tmaydi — kalit uziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#6b4fc47b"
+    },
+    {
+      "q": "Elektromagnit tebranishlar tirik organizmlarga qanday ta'sir qiladi?",
+      "v": [
+        "Ham foydali, ham zararli ta'sir qilishi mumkin",
+        "Faqat foydali ta'sir qiladi",
+        "Faqat zararli ta'sir qiladi",
+        "Umuman ta'sir qilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Elektromagnit tebranishlar tirik organizmlarga ham foydali, ham zararli ta'sir qilishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#dd252f0f"
+    },
+    {
+      "q": "Tashqi tebranma ta'sirning chastotasi inson a'zosining rezonans chastotasiga tenglashganda nima yuz beradi?",
+      "v": [
+        "Ta'sir kuchli bo'ladi",
+        "Ta'sir yo'qoladi",
+        "Hech narsa o'zgarmaydi",
+        "Tebranishlar to'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "Tashqi tebranma ta'sirning chastotasi a'zoning o'ziga xos rezonans chastotasiga tenglashganda ta'sir kuchli bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#256e54ec"
+    },
+    {
+      "q": "Zamonaviy tibbiyotda elektromagnit tebranishlardan qanday foydalaniladi?",
+      "v": [
+        "O'ta yuqori chastotali tebranishlardan davolashda, UB-nurlardan davolash va tashxis qo'yishda",
+        "Faqat rentgen suratga olishda",
+        "Faqat qon tahlilida",
+        "Hech qanday foydalanilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Zamonaviy tibbiyotda o'ta yuqori chastotali elektromagnit tebranishlardan foydalanuvchi davolash usullari keng tarqalmoqda; optik diapazondagi (UB) nurlanishlardan ham davolash va tashxisda foydalanilmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#bc2b3d59"
+    },
+    {
+      "q": "Uzib-ulagich kondensator qoplamalarining qayta zaryadlanishi davrida qachon ulanishi kerak?",
+      "v": [
+        "Batareya qutblaridagi kuchlanish ishorasi bilan mos kelganda",
+        "Har qanday vaqtda",
+        "Faqat tok maksimal bo'lganida",
+        "Faqat davr oxirida"
+      ],
+      "t": 0,
+      "izoh": "Uzib-ulagich kondensator qoplamalarining qayta zaryadlanishi davrida batareya qutblaridagi kuchlanish ishorasi bilan mos kelganda ulanishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#b07567c1"
+    },
+    {
+      "q": "Odatda tranzistorda kirish qismiga qo'yilgan kuchlanish nimani boshqaradi?",
+      "v": [
+        "Chiqish tokini",
+        "Kirish tokini",
+        "Kollektor kuchlanishini",
+        "Emitter qarshiligini"
+      ],
+      "t": 0,
+      "izoh": "Odatda tranzistor kirish qismiga qo'yilgan kuchlanish (tok) chiqish tokini boshqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#0dac51ad"
+    },
+    {
+      "q": "Konturda elektromagnit tebranishlar ro'y berganda Lb da hosil bo'lgan EYuK ishorasi qanday o'zgaradi?",
+      "v": [
+        "O'zgarib turadi, tranzistor goh ochiq, goh yopiq holatda bo'ladi",
+        "Doimiy musbat bo'ladi",
+        "Doimiy manfiy bo'ladi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Konturda tebranishlar ro'y berganda L g'altakdan o'tuvchi tokning kattaligi va yo'nalishi o'zgarib turadi, demak Lb dagi EYuK ishorasi o'zgarib turadi — tranzistor goh ochiq, goh yopiq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#fb736398"
+    },
+    {
+      "q": "Avtotebranish tizimida energiya manbayi vazifasini nima bajaradi?",
+      "v": [
+        "Sarflangan energiya o'rnini to'ldiradi",
+        "Tebranish chastotasini oshiradi",
+        "Amplitudani kamaytiradi",
+        "Fazani o'zgartiradi"
+      ],
+      "t": 0,
+      "izoh": "Energiya manbayi bunday tizimning o'zida mavjud bo'lib, sarflangan energiya o'rnini to'ldiradigan energiyaning berilishini ta'minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#a9b8a8a8"
+    },
+    {
+      "q": "Generatorda so'nmas tebranishlar hosil bo'lishining asosiy sharti nima?",
+      "v": [
+        "Kontur energiyasi davriy ravishda teskari bog'lanish orqali ta'minlanib turishi",
+        "Kondensator sig'imining juda katta bo'lishi",
+        "G'altak induktivligining nolga teng bo'lishi",
+        "Chastotaning juda past bo'lishi"
+      ],
+      "t": 0,
+      "izoh": "Teskari bog'lanish tufayli kontur energiyasi davriy ravishda ta'minlanib turadi — shu so'nmas tebranishlarning asosiy sharti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#b3891eaf"
+    },
+    {
+      "q": "Ossillograf ekranida erkin tebranishlar grafigi qanday ko'rinadi?",
+      "v": [
+        "Amplitudasi vaqt o'tishi bilan kamayib boradigan tebranishlar ko'rinishida",
+        "Amplitudasi o'sib boradigan chiziq ko'rinishida",
+        "To'g'ri gorizontal chiziq ko'rinishida",
+        "Mukammal kosinusoida ko'rinishida"
+      ],
+      "t": 0,
+      "izoh": "Ossillograf ekranida kuzatilsa, konturdagi tebranishlar amplitudasi vaqt o'tishi bilan kamayib boradi — so'nuvchi tebranishlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#4068704f"
+    },
+    {
+      "q": "Elektromagnit nurlanishlarning inson ruhiyatiga ta'siri haqida nima aytilgan?",
+      "v": [
+        "Elektromagnit nurlanishlarning inson ruhiyatiga ta'sir qilishi isbotlangan",
+        "Hech qanday ta'siri yo'q",
+        "Faqat ijobiy ta'sir qiladi",
+        "Faqat jismoniy ta'sir qiladi"
+      ],
+      "t": 0,
+      "izoh": "Elektromagnit nurlanishlarning inson ruhiyatiga ta'sir qilishi isbotlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#c157ad3c"
+    },
+    {
+      "q": "Avtotebranishlarning chastotalari qanday diapazonda o'zgaradi?",
+      "v": [
+        "Juda keng diapazonda",
+        "Faqat 50 Gz atrofida",
+        "Faqat past chastotalarda",
+        "Faqat bitta aniq qiymatda"
+      ],
+      "t": 0,
+      "izoh": "Avtotebranishlarning chastotalari juda keng diapazonda o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#84c37d02"
+    },
+    {
+      "q": "Tranzistorli generatorda teskari bog'lanish qaysi element orqali amalga oshiriladi?",
+      "v": [
+        "Lb bog'lanish g'altagi orqali",
+        "Rezistor orqali",
+        "Diod orqali",
+        "Uzib-ulagich orqali"
+      ],
+      "t": 0,
+      "izoh": "Chiqishdagi (konturdagi) kuchlanish Lb bog'lanish g'altagi orqali kirishdagi kuchlanishni boshqaradi — teskari bog'lanish shu orqali amalga oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m13-tranzistorli-generator#d75ce187"
+    }
+  ]
+}

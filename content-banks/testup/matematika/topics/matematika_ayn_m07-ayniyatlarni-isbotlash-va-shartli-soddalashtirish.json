@@ -1,0 +1,1609 @@
+{
+  "nom": "Ayniyatlarni isbotlash va shartli soddalashtirish",
+  "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+  "blok": "ayn",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "(a + b)² − (a − b)² = 4ab ayniyatini isbotlash uchun chap tomondagi ikkala kvadrat yoyildi. Yoyilmalarda qaysi hadlar o'zaro qisqarib ketadi?",
+      "v": [
+        "a² va b² hadlari qisqaradi, 2ab hadlari esa qo'shiladi",
+        "2ab hadlari qisqaradi, a² va b² hadlari esa qo'shiladi",
+        "Faqat b² hadlari qisqaradi, qolgani o'zgarmaydi",
+        "Hech qanday had qisqarmaydi, chap tomon shundayligicha qoladi"
+      ],
+      "t": 0,
+      "izoh": "(a + b)² = a² + 2ab + b², (a − b)² = a² − 2ab + b². Ayirmada a² va b² bir xil ishora bilan tushib, o'zaro qisqaradi. O'rta hadlar esa 2ab − (−2ab) = 4ab bo'lib qo'shiladi, ya'ni o'ng tomon hosil bo'ladi. Javob: a² va b² hadlari qisqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chap-tomonni-ongga-keltirish",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#17e7e213"
+    },
+    {
+      "q": "Anvar (n + 5)² − (n − 5)² ifodasini og'zaki hisoblash uchun uni ko'paytma ko'rinishiga keltirmoqchi. Ifoda nimaga teng bo'ladi?",
+      "v": [
+        "10n",
+        "20n",
+        "50",
+        "2n² + 50"
+      ],
+      "t": 1,
+      "izoh": "(n + 5)² = n² + 10n + 25, (n − 5)² = n² − 10n + 25. Ayirmada n² va 25 qisqaradi, 10n − (−10n) = 20n qoladi. Javob: 20n.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chap-tomonni-ongga-keltirish",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#7e38e5c4"
+    },
+    {
+      "q": "(x + 3)³ − (x − 3)³ ifodasini yoyib soddalashtirganda hosil bo'ladigan ko'phadni to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "18x² − 54",
+        "18x²",
+        "18x² + 54",
+        "2x³ + 54x"
+      ],
+      "t": 2,
+      "izoh": "(x + 3)³ = x³ + 9x² + 27x + 27, (x − 3)³ = x³ − 9x² + 27x − 27. Ayirmada x³ va 27x qisqaradi, 9x² − (−9x²) = 18x² hamda 27 − (−27) = 54 qoladi. Javob: 18x² + 54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chap-tomonni-ongga-keltirish",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#f41c9d41"
+    },
+    {
+      "q": "(a + b)³ − 3ab(a + b) ifodasi soddalashtirilganda qaysi mashhur ayniyatning o'ng tomoni hosil bo'lishini toping.",
+      "v": [
+        "a³ − b³",
+        "(a + b)(a² + b²)",
+        "a³ + b³ + 3ab",
+        "a³ + b³"
+      ],
+      "t": 3,
+      "izoh": "(a + b)³ = a³ + 3a²b + 3ab² + b³ deb yoyamiz. Undan 3ab(a + b) = 3a²b + 3ab² ni ayiramiz, o'rta hadlar butunlay qisqaradi. Qolgani a³ + b³ bo'ladi. Javob: a³ + b³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chap-tomonni-ongga-keltirish",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#61e023d5"
+    },
+    {
+      "q": "Kvadrat shaklidagi gilamning tomoni x metr edi. Uning har bir tomoni 2 metrga uzaytirilib, tomoni x + 2 ga teng yangi kvadrat hosil qilindi. Yangi va eski yuzalar ayirmasi qaysi ifodaga teng?",
+      "v": [
+        "4x + 4",
+        "4",
+        "2x + 4",
+        "4x"
+      ],
+      "t": 0,
+      "izoh": "Yangi kvadratning tomoni x + 2, yuzasi (x + 2)² = x² + 4x + 4 bo'ladi. Eski yuza x² edi. Ayirma x² + 4x + 4 − x² = 4x + 4. Javob: 4x + 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chap-tomonni-ongga-keltirish",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#37b14f0c"
+    },
+    {
+      "q": "Quyidagi to'rt tenglikdan qaysi biri barcha haqiqiy x uchun ayniyat bo'lmasligini aniqlang.",
+      "v": [
+        "(x + 1)² = x² + 2x + 1",
+        "(x − 1)(x + 1) = x² − 1",
+        "(x + 2)² = x² + 4",
+        "x² − 4x + 4 = (x − 2)²"
+      ],
+      "t": 2,
+      "izoh": "(x + 2)² ni to'liq yozsak x² + 4x + 4 chiqadi, ya'ni 4x qo'shiluvchi tushib qolgan. Tekshirish uchun x = 1 ni qo'yamiz: chap tomon 9, o'ng tomon esa 5. Qolgan uchtasi qisqa ko'paytirish formulalari. Javob: (x + 2)² = x² + 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-emasini-topish",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#eb32dc8a"
+    },
+    {
+      "q": "Berilgan tengliklardan bittasi ayniyat emas. Uni toping va boshqalaridan qanday farq qilishini tushuning.",
+      "v": [
+        "a³ − b³ = (a − b)(a² + ab + b²)",
+        "(a − b)³ = a³ − b³",
+        "(a + b)(a − b) = a² − b²",
+        "(a − b)³ = a³ − 3a²b + 3ab² − b³"
+      ],
+      "t": 1,
+      "izoh": "(a − b)³ ni yoysak a³ − 3a²b + 3ab² − b³ hosil bo'ladi, a³ − b³ emas. Masalan a = 2, b = 1 da chap tomon 1 ga, a³ − b³ esa 7 ga teng. Javob: (a − b)³ = a³ − b³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-emasini-topish",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#af64c7bc"
+    },
+    {
+      "q": "Uch tenglik qisqa ko'paytirish formulasidan to'g'ri kelib chiqadi, bittasida esa ishorada xato qilingan. Xatolisini belgilang.",
+      "v": [
+        "(a + b)² − 4ab = (a − b)²",
+        "(a + b)(a² − ab + b²) = a³ + b³",
+        "a² + b² = (a + b)² + 2ab",
+        "(a − b)² = (b − a)²"
+      ],
+      "t": 2,
+      "izoh": "(a + b)² = a² + 2ab + b² bo'lgani uchun a² + b² = (a + b)² − 2ab bo'lishi kerak. Uchinchi tenglikda minus o'rniga plus qo'yilgan, ya'ni ikkilangan ko'paytma ikki marta qo'shilib ketgan. Javob: a² + b² = (a + b)² + 2ab.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-emasini-topish",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#872cc949"
+    },
+    {
+      "q": "Muallim taxtaga to'rtta tenglik yozdi va o'quvchilardan ayniyat bo'lmaganini topishni so'radi. Qaysi tenglik ayniyat emas?",
+      "v": [
+        "(m + n)³ = m³ + n³",
+        "m² + n² = (m + n)² − 2mn",
+        "m³ + n³ = (m + n)(m² − mn + n²)",
+        "(m + n)² = m² + 2mn + n²"
+      ],
+      "t": 0,
+      "izoh": "(m + n)³ = m³ + 3m²n + 3mn² + n³ bo'ladi, demak u m³ + n³ ga faqat mn = 0 bo'lgandagina teng. m = n = 1 da chap tomon 8, o'ng tomon 2 chiqadi. Javob: (m + n)³ = m³ + n³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-emasini-topish",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#718d7440"
+    },
+    {
+      "q": "Quyidagi tengliklardan qaysi biri faqat ayrim qiymatlarda bajariladi, ya'ni ayniyat hisoblanmaydi?",
+      "v": [
+        "x(x + 3) = x² + 3x",
+        "(x + 4)/2 = x/2 + 2",
+        "x² + 5x = 6x",
+        "(x + 1)² − 1 = x² + 2x"
+      ],
+      "t": 2,
+      "izoh": "x² + 5x = 6x tenglikni soddalashtirsak x² = x hosil bo'ladi, bu esa faqat x = 0 va x = 1 da to'g'ri. Qolgan uchtasi qavsni ochish yoki hadlab bo'lish natijasi, ya'ni har qanday x uchun o'rinli. Javob: x² + 5x = 6x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-emasini-topish",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#3f8c12a0"
+    },
+    {
+      "q": "(x + 2)(x + 3) − 6 = x(x + 5) ayniyatini isbotlashda ikkala tomon ham bitta ko'phadga keltiriladi. O'sha umumiy ko'phadni toping.",
+      "v": [
+        "x² + 5x + 6",
+        "x² + 5x",
+        "x² + 6x",
+        "x² + 5x − 6"
+      ],
+      "t": 1,
+      "izoh": "Chap tomonda (x + 2)(x + 3) = x² + 5x + 6, undan 6 ayirilsa x² + 5x qoladi. O'ng tomonda x(x + 5) = x² + 5x. Ikkala tomon bir xil ko'phadga keldi, demak tenglik ayniyat. Javob: x² + 5x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-tomon-uchinchi-ifoda",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#ad383aab"
+    },
+    {
+      "q": "Islom (n + 4)(n − 1) + 4 = n(n + 3) tengligini isbotlamoqchi va ikkala tomonni alohida yoymoqda. U qaysi umumiy ifodani oladi?",
+      "v": [
+        "n² + 3n",
+        "n² + 3n − 4",
+        "n² + 4n",
+        "n² + 3n + 4"
+      ],
+      "t": 0,
+      "izoh": "Chap tomonda (n + 4)(n − 1) = n² + 3n − 4, unga 4 qo'shilsa n² + 3n bo'ladi. O'ng tomonda n(n + 3) = n² + 3n. Har ikkalasi bitta uchinchi ifodaga keldi. Javob: n² + 3n.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-tomon-uchinchi-ifoda",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#da696afb"
+    },
+    {
+      "q": "(a + b)³ − (a³ + b³) = 3ab(a + b) ayniyatini isbotlashda ikkala tomon qaysi ifodaga keltirilishini ko'rsating.",
+      "v": [
+        "3ab",
+        "a²b + ab²",
+        "3a²b + 3ab²",
+        "3a²b − 3ab²"
+      ],
+      "t": 2,
+      "izoh": "Chap tomon: (a + b)³ = a³ + 3a²b + 3ab² + b³, undan a³ + b³ ayirilsa 3a²b + 3ab² qoladi. O'ng tomon: 3ab(a + b) = 3a²b + 3ab². Demak ikkala tomon bir xil ifodaga keldi. Javob: 3a²b + 3ab².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tomon-uchinchi-ifoda",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#3668bc41"
+    },
+    {
+      "q": "Aziza isbot davomida chap tomonni 4k² + 4k + 1 − (4k² − 4k + 1) ko'rinishida yozdi. Qavsni ochib soddalashtirsa, qanday natija hosil bo'ladi?",
+      "v": [
+        "8k + 2",
+        "2k",
+        "0",
+        "8k"
+      ],
+      "t": 3,
+      "izoh": "Qavs oldidagi minus ichdagi har bir hadning ishorasini o'zgartiradi: 4k² + 4k + 1 − 4k² + 4k − 1. Bu yerda 4k² va 1 qisqaradi, 4k + 4k = 8k qoladi. Javob: 8k.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tomon-uchinchi-ifoda",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#80ac2f06"
+    },
+    {
+      "q": "O'quvchi (a − b)² = a² − 2ab + b² ayniyatini shunday isbotladi: 1) (a − b)(a − b); 2) a² − ab − ab − b²; 3) a² − 2ab − b². Xato qaysi qadamda?",
+      "v": [
+        "1-qadamda",
+        "2-qadamda",
+        "3-qadamda",
+        "Xato yo'q, isbot to'g'ri"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi qadamda (−b)·(−b) ko'paytma +b² beradi, o'quvchi esa −b² deb yozgan. Shu sababli uchinchi qadamdagi natija ham noto'g'ri chiqqan. To'g'ri natija a² − 2ab + b² bo'lishi kerak edi. Javob: 2-qadamda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "isbot-qadamidagi-xato",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#c5b8b266"
+    },
+    {
+      "q": "Bir o'quvchi 1/a + 1/b = 1/(a + b) deb yozdi va shu tenglikka tayanib ayniyat isbotladi. Uning xatosini to'g'ri izohlagan javobni tanlang.",
+      "v": [
+        "Kasrlarni qo'shishda maxrajlar qo'shilmaydi, umumiy maxraj ab olinadi",
+        "Kasrlarni qo'shish uchun suratlar ham ko'paytirilishi kerak",
+        "1/a + 1/b ifodasini umuman bitta kasr ko'rinishida yozib bo'lmaydi",
+        "Xato yo'q, tenglik a va b musbat bo'lganda o'rinli"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri amal shunday: 1/a + 1/b = (b + a)/(ab). Tekshirib ko'ramiz, a = b = 1 da chap tomon 2 ga, o'ng tomon esa 1/2 ga teng. Demak maxrajlarni qo'shish qo'pol xato. Javob: umumiy maxraj ab olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "isbot-qadamidagi-xato",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#50f87c42"
+    },
+    {
+      "q": "Isbotda a + b + c = 0 shartdan a + b = −c hosil qilindi, keyin esa (a + b)² = −c² deb yozildi. Bu qadamda qanday xato bor?",
+      "v": [
+        "a + b = −c almashtirish noto'g'ri bajarilgan",
+        "Kvadratga ko'tarish o'rniga ildiz chiqarilishi kerak edi",
+        "Manfiy sonning kvadrati musbat: (−c)² = c², minus saqlanmaydi",
+        "Shartdan bunday almashtirishda umuman foydalanib bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "(−c)² = (−c)·(−c) = c², chunki ikkita manfiy ko'paytuvchi musbat natija beradi. Demak to'g'ri natija (a + b)² = c² bo'lishi kerak. Yozilgan −c² esa butunlay boshqa ifoda. Javob: (−c)² = c².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "isbot-qadamidagi-xato",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#dc050db4"
+    },
+    {
+      "q": "Sardor a² = b² tenglikdan a = b degan xulosa chiqarib, shu asosda ayniyat isbotladi. Nega uning xulosasi noto'g'ri?",
+      "v": [
+        "a² = b² tenglik hech qachon bajarilmaydi",
+        "a² = b² dan a = b yoki a = −b kelib chiqadi, ikkinchi hol tashlab ketilgan",
+        "Kvadratlar tengligidan hech qanday xulosa chiqarib bo'lmaydi",
+        "Xulosa to'g'ri, xato undan keyingi qadamda"
+      ],
+      "t": 1,
+      "izoh": "a² − b² = 0 ni ko'paytuvchilarga ajratsak (a − b)(a + b) = 0 bo'ladi. Bundan a = b yoki a = −b kelib chiqadi. Masalan a = 3, b = −3 da kvadratlar teng, lekin sonlar teng emas. Javob: ikkinchi hol tashlab ketilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "isbot-qadamidagi-xato",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#57dcd276"
+    },
+    {
+      "q": "Uchta sonning yig'indisi nolga teng: a + b + c = 0. Shu shartda a³ + b³ + c³ ifodasi qaysi ko'paytmaga teng bo'ladi?",
+      "v": [
+        "3abc",
+        "abc",
+        "−3abc",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "a³ + b³ + c³ − 3abc = (a + b + c)(a² + b² + c² − ab − bc − ca) ayniyati mavjud. Yig'indi nolga teng bo'lgani uchun o'ng tomon ham nolga aylanadi. Demak a³ + b³ + c³ = 3abc. Javob: 3abc.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "abc-nol-kublar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#f54d68e9"
+    },
+    {
+      "q": "Uchta sonning yig'indisi nolga, ko'paytmasi esa 12 ga teng ekani ma'lum. Shu sonlarning kublari yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "12",
+        "0",
+        "36",
+        "−36"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi nol bo'lganda a³ + b³ + c³ = 3abc ayniyati o'rinli bo'ladi. Ko'paytma abc = 12 bo'lgani uchun natija 3·12 = 36 chiqadi. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "abc-nol-kublar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#27d0a653"
+    },
+    {
+      "q": "Uch shaharda kunlik haroratning o'zgarishi a, b va c gradusni tashkil etdi. Ularning yig'indisi nol, ko'paytmasi esa −8 ga teng. a³ + b³ + c³ nechaga teng?",
+      "v": [
+        "24",
+        "−24",
+        "−8",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi nolga teng bo'lgani uchun a³ + b³ + c³ = 3abc formulasini qo'llaymiz. Bu yerda abc = −8, demak natija 3·(−8) = −24 bo'ladi. Manfiy ko'paytma ishorani saqlaydi. Javob: −24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "abc-nol-kublar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#6245d299"
+    },
+    {
+      "q": "a + b + c = 0 va a³ + b³ + c³ = 45 shartlar berilgan bo'lsa, bu uch sonning ko'paytmasi abc nechaga teng?",
+      "v": [
+        "15",
+        "45",
+        "135",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi nol bo'lganda a³ + b³ + c³ = 3abc bo'ladi. Demak 3abc = 45 tenglikni hosil qilamiz. Bundan abc = 45 : 3 = 15. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "abc-nol-kublar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#022b8d92"
+    },
+    {
+      "q": "Agar a + b + c = 0 va abc ≠ 0 bo'lsa, (a³ + b³ + c³) : (abc) nisbat qanday o'zgarmas songa teng bo'ladi?",
+      "v": [
+        "1",
+        "3",
+        "0",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi nol bo'lganda a³ + b³ + c³ = 3abc ekanini bilamiz. Nisbatni tuzsak 3abc : abc = 3 chiqadi. Natija sonlarning o'ziga umuman bog'liq emas. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "abc-nol-kublar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#3133dff8"
+    },
+    {
+      "q": "a + b + c = 0 shartida a² + b² + c² yig'indisi ab + bc + ca orqali qanday ifodalanishini toping.",
+      "v": [
+        "2(ab + bc + ca)",
+        "−2(ab + bc + ca)",
+        "−(ab + bc + ca)",
+        "ab + bc + ca"
+      ],
+      "t": 1,
+      "izoh": "(a + b + c)² = a² + b² + c² + 2(ab + bc + ca) ayniyatidan foydalanamiz. Chap tomon nolning kvadrati, ya'ni nol. Demak a² + b² + c² = −2(ab + bc + ca). Javob: −2(ab + bc + ca).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "abc-nol-kvadratlar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#35a1c16a"
+    },
+    {
+      "q": "x + y + z = 0 va x² + y² + z² = 50 bo'lsa, xy + yz + zx yig'indi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "−25",
+        "25",
+        "50",
+        "−50"
+      ],
+      "t": 0,
+      "izoh": "Nolning kvadratini yozamiz: 0 = x² + y² + z² + 2(xy + yz + zx). Sonli qiymatni qo'ysak 0 = 50 + 2(xy + yz + zx). Bundan 2(xy + yz + zx) = −50, ya'ni xy + yz + zx = −25. Javob: −25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "abc-nol-kvadratlar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#131cbfc1"
+    },
+    {
+      "q": "Uch omborga kelgan yuk o'zgarishi a, b va c tonna bo'lib, ularning yig'indisi nolga teng. ab + bc + ca = −21 bo'lsa, a² + b² + c² nechaga teng?",
+      "v": [
+        "21",
+        "42",
+        "84",
+        "−42"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi nol bo'lgani uchun a² + b² + c² = −2(ab + bc + ca) formulasi ishlaydi. Ko'paytmalar yig'indisi −21 ga teng, demak a² + b² + c² = −2·(−21) = 42. Javob: 42.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "abc-nol-kvadratlar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#6952b359"
+    },
+    {
+      "q": "a + b + c = 0 bo'lganda (a + b)² + (b + c)² + (c + a)² ifodasi qaysi soddaroq ifodaga aynan teng bo'ladi?",
+      "v": [
+        "a² + b² + c²",
+        "2(a² + b² + c²)",
+        "3(a² + b² + c²)",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Shartdan a + b = −c, b + c = −a va c + a = −b ekanini yozamiz. Har birini kvadratga ko'tarsak c², a² va b² hosil bo'ladi. Ularning yig'indisi a² + b² + c². Javob: a² + b² + c².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "abc-nol-kvadratlar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#ae13e3d0"
+    },
+    {
+      "q": "a + b + c = 0 va abc ≠ 0 bo'lsa, (a + b)/c + (b + c)/a + (c + a)/b yig'indi nechaga teng bo'ladi?",
+      "v": [
+        "−3",
+        "3",
+        "0",
+        "−1"
+      ],
+      "t": 0,
+      "izoh": "Shartdan a + b = −c, demak birinchi kasr −c/c = −1 ga teng. Xuddi shu tarzda qolgan ikki kasr ham −1 chiqadi. Uchtasining yig'indisi −3 bo'ladi. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "abc-nol-kasrli-ifoda",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#622bb377"
+    },
+    {
+      "q": "a + b + c = 0 va abc ≠ 0 shartlar bajarilsa, a/(b + c) kasr qanday o'zgarmas qiymatga ega bo'ladi?",
+      "v": [
+        "−1",
+        "1",
+        "0",
+        "−3"
+      ],
+      "t": 0,
+      "izoh": "Shartdan b + c = −a ekani kelib chiqadi. Uni maxrajga qo'ysak a/(−a) = −1 hosil bo'ladi, chunki a noldan farqli. Demak kasr har doim −1 ga teng. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "abc-nol-kasrli-ifoda",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#bf7578cd"
+    },
+    {
+      "q": "a + b + c = 0 bo'lsa, a(b + c) + b(c + a) + c(a + b) ifodasi qaysi ko'rinishga keladi?",
+      "v": [
+        "a² + b² + c²",
+        "−(a² + b² + c²)",
+        "2(a² + b² + c²)",
+        "−2(a² + b² + c²)"
+      ],
+      "t": 1,
+      "izoh": "Shartdan b + c = −a, c + a = −b, a + b = −c. Ularni o'rniga qo'ysak a·(−a) + b·(−b) + c·(−c) hosil bo'ladi. Bu esa −a² − b² − c² ga teng. Javob: −(a² + b² + c²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "abc-nol-kasrli-ifoda",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#7aa77d94"
+    },
+    {
+      "q": "a + b + c = 0 bo'lsa, (a² + b² + c²) : (ab + bc + ca) nisbat qaysi o'zgarmas songa teng bo'ladi (maxraj noldan farqli)?",
+      "v": [
+        "2",
+        "−2",
+        "−1",
+        "−1/2"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi nol bo'lganda a² + b² + c² = −2(ab + bc + ca) ekanini bilamiz. Nisbatni tuzamiz: −2(ab + bc + ca) : (ab + bc + ca) = −2. Natija berilgan sonlarga bog'liq emas. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "abc-nol-kasrli-ifoda",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#ae13a75b"
+    },
+    {
+      "q": "a + b + c = 0 va a² + b² + c² = 10 bo'lsa, a⁴ + b⁴ + c⁴ yig'indi nechaga teng bo'ladi?",
+      "v": [
+        "50",
+        "100",
+        "20",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "Avval ab + bc + ca = −10 : 2 = −5 ni topamiz. Kvadratga ko'tarsak (a² + b² + c²)² = a⁴ + b⁴ + c⁴ + 2(ab + bc + ca)², chunki yig'indi nol. Demak 100 = a⁴ + b⁴ + c⁴ + 2·25, bundan a⁴ + b⁴ + c⁴ = 50. Javob: 50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "abc-nol-boshqa-natija",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#ee2b8ca3"
+    },
+    {
+      "q": "a + b + c = 0 shartida c ni yo'qotib, a² + b² + c² ifodasini faqat a va b orqali ifodalang.",
+      "v": [
+        "a² + ab + b²",
+        "2(a² + ab + b²)",
+        "2(a² − ab + b²)",
+        "a² + 2ab + b²"
+      ],
+      "t": 1,
+      "izoh": "Shartdan c = −(a + b), demak c² = (a + b)² = a² + 2ab + b². Uni qo'shsak a² + b² + a² + 2ab + b² = 2a² + 2ab + 2b² hosil bo'ladi. Umumiy ko'paytuvchini qavsdan chiqaramiz. Javob: 2(a² + ab + b²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "abc-nol-boshqa-natija",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#aa2f1083"
+    },
+    {
+      "q": "a + b + c = 0 shart berilgan bo'lsa, (a − b)² + (b − c)² + (c − a)² ifodasi a² + b² + c² orqali qanday yoziladi?",
+      "v": [
+        "2(a² + b² + c²)",
+        "3(a² + b² + c²)",
+        "6(a² + b² + c²)",
+        "a² + b² + c²"
+      ],
+      "t": 1,
+      "izoh": "Qavslarni yoysak 2(a² + b² + c²) − 2(ab + bc + ca) hosil bo'ladi. Yig'indi nol bo'lgani uchun ab + bc + ca = −(a² + b² + c²) : 2. O'rniga qo'ysak 2(a² + b² + c²) + (a² + b² + c²) = 3(a² + b² + c²). Javob: 3(a² + b² + c²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "abc-nol-boshqa-natija",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#6a6ac7c9"
+    },
+    {
+      "q": "Uchta butun sonning yig'indisi nolga teng, ulardan ikkitasi 3 va 5 ga teng. Shu uch sonning kublari yig'indisini toping.",
+      "v": [
+        "−360",
+        "360",
+        "−120",
+        "152"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi son −(3 + 5) = −8 bo'ladi. Yig'indi nol bo'lgani uchun kublar yig'indisi 3abc ga teng: 3·3·5·(−8) = −360. To'g'ridan-to'g'ri hisoblash ham 27 + 125 − 512 = −360 beradi. Javob: −360.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "abc-nol-boshqa-natija",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#2ce94957"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 9, ko'paytmasi esa 14 ga teng. Shu sonlar kvadratlarining yig'indisini toping.",
+      "v": [
+        "109",
+        "81",
+        "67",
+        "53"
+      ],
+      "t": 3,
+      "izoh": "(x + y)² = x² + y² + 2xy ayniyatidan x² + y² = (x + y)² − 2xy kelib chiqadi. Sonlarni qo'yamiz: 9² − 2·14 = 81 − 28 = 53. Javob: 53.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-kopaytma-kvadratlar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#f9dd31e0"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi maydonchaning perimetri 34 m, yuzasi esa 60 m². Uning tomonlari kvadratlarining yig'indisi nechaga teng?",
+      "v": [
+        "1036",
+        "289",
+        "229",
+        "169"
+      ],
+      "t": 3,
+      "izoh": "Perimetrdan a + b = 34 : 2 = 17 topiladi, yuzadan ab = 60. Endi a² + b² = (a + b)² − 2ab = 17² − 120 = 289 − 120 = 169. Javob: 169.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-kopaytma-kvadratlar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#be7349cb"
+    },
+    {
+      "q": "Ikki sonning yig'indisi −6, ko'paytmasi 5 bo'lsa, ularning kvadratlari yig'indisi qanday songa teng bo'ladi?",
+      "v": [
+        "46",
+        "26",
+        "31",
+        "−26"
+      ],
+      "t": 1,
+      "izoh": "x² + y² = (x + y)² − 2xy formulasini qo'llaymiz. Manfiy yig'indi kvadratga ko'tarilganda musbat bo'ladi: (−6)² = 36. Ikkilangan ko'paytma 10, demak 36 − 10 = 26. Javob: 26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-kopaytma-kvadratlar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#5d895d2c"
+    },
+    {
+      "q": "Bekzod simni ikki bo'lakka qirqdi: bo'laklar uzunliklari yig'indisi 12 sm, ko'paytmasi esa 27 ga teng. Bo'laklar uzunliklari kvadratlarining yig'indisi nechaga teng?",
+      "v": [
+        "90",
+        "144",
+        "117",
+        "198"
+      ],
+      "t": 0,
+      "izoh": "Yig'indining kvadrati 12² = 144 bo'ladi. Ikkilangan ko'paytma 2·27 = 54. Demak kvadratlar yig'indisi 144 − 54 = 90. Javob: 90.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-kopaytma-kvadratlar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#279bd0ad"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 11, kvadratlarining yig'indisi esa 65 ga teng. Bu sonlarning ko'paytmasini toping.",
+      "v": [
+        "56",
+        "28",
+        "14",
+        "186"
+      ],
+      "t": 1,
+      "izoh": "(x + y)² = x² + y² + 2xy tenglikka qiymatlarni qo'yamiz: 121 = 65 + 2xy. Bundan 2xy = 56 chiqadi. Ikkiga bo'lsak xy = 28. Javob: 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-kopaytma-kvadratlar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#9d31a67b"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 7 ga, kublari yig'indisi esa 133 ga teng. Shu sonlarning ko'paytmasi nechaga teng bo'ladi?",
+      "v": [
+        "30",
+        "21",
+        "10",
+        "70"
+      ],
+      "t": 2,
+      "izoh": "x³ + y³ = (x + y)³ − 3xy(x + y) ayniyatiga qiymatlarni qo'yamiz: 133 = 7³ − 3xy·7, ya'ni 133 = 343 − 21xy. Bundan 21xy = 210 va xy = 10 kelib chiqadi. Tekshirish: sonlar 5 va 2, ularning kublari yig'indisi 125 + 8 = 133. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-kopaytma-kublar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#9b98760b"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 4, ko'paytmasi esa −3 bo'lsa, ularning kublari yig'indisi qanday qiymat oladi?",
+      "v": [
+        "28",
+        "64",
+        "100",
+        "−100"
+      ],
+      "t": 2,
+      "izoh": "x³ + y³ = (x + y)³ − 3xy(x + y) formulasini qo'llaymiz. 4³ = 64, 3·(−3)·4 = −36. Manfiy sonni ayirish qo'shishga aylanadi: 64 + 36 = 100. Javob: 100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-kopaytma-kublar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#83bf8ee0"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 6 ga, ko'paytmasi esa 4 ga teng bo'lsa, shu sonlar kublarining yig'indisi nechaga teng?",
+      "v": [
+        "216",
+        "288",
+        "144",
+        "204"
+      ],
+      "t": 2,
+      "izoh": "Sonlarning o'zini topish shart emas, ayniyat yetarli: x³ + y³ = (x + y)³ − 3xy(x + y). Bu yerda 6³ = 216 va 3·4·6 = 72. Demak 216 − 72 = 144. Javob: 144.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-kopaytma-kublar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#466bbc1b"
+    },
+    {
+      "q": "Yig'indisi −3, ko'paytmasi 2 ga teng bo'lgan ikkita son berilgan. Ularning kublari yig'indisini toping.",
+      "v": [
+        "−45",
+        "−9",
+        "9",
+        "−27"
+      ],
+      "t": 1,
+      "izoh": "x³ + y³ = (x + y)³ − 3xy(x + y) ayniyatiga qiymatlarni qo'yamiz. (−3)³ = −27 va 3·2·(−3) = −18. Demak −27 − (−18) = −9. Javob: −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-kopaytma-kublar",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#6a9245f4"
+    },
+    {
+      "q": "Ikki sonning ayirmasi 5, ko'paytmasi 6 ga teng. Bu sonlar kvadratlarining yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "13",
+        "37",
+        "25",
+        "49"
+      ],
+      "t": 1,
+      "izoh": "(x − y)² = x² + y² − 2xy bo'lgani uchun x² + y² = (x − y)² + 2xy. Qiymatlarni qo'yamiz: 5² + 2·6 = 25 + 12 = 37. Javob: 37.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-kopaytma-shart",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#45ca7dde"
+    },
+    {
+      "q": "Ikki sonning ayirmasi 3, ko'paytmasi 10 bo'lsa, ularning yig'indisining kvadrati nechaga teng?",
+      "v": [
+        "29",
+        "19",
+        "13",
+        "49"
+      ],
+      "t": 3,
+      "izoh": "(x + y)² = (x − y)² + 4xy ayniyatini ishlatamiz. Bu yerda 3² = 9 va 4·10 = 40. Demak (x + y)² = 9 + 40 = 49. Javob: 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-kopaytma-shart",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#75077b4d"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning bo'yi enidan 4 sm uzun, yuzasi esa 45 sm² ga teng. Uning diagonali kvadrati necha kvadrat santimetr bo'ladi?",
+      "v": [
+        "61",
+        "16",
+        "106",
+        "196"
+      ],
+      "t": 2,
+      "izoh": "Pifagor teoremasiga ko'ra diagonal kvadrati a² + b² ga teng. Berilganlardan a − b = 4 va ab = 45. Demak a² + b² = (a − b)² + 2ab = 16 + 90 = 106. Javob: 106.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayirma-kopaytma-shart",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#c64e8dd0"
+    },
+    {
+      "q": "Ikki sonning ayirmasi 2, ko'paytmasi 15 ga teng. Shu sonlarning kublari ayirmasini hisoblang.",
+      "v": [
+        "8",
+        "38",
+        "−98",
+        "98"
+      ],
+      "t": 3,
+      "izoh": "x³ − y³ = (x − y)³ + 3xy(x − y) ayniyatidan foydalanamiz. Bu yerda 2³ = 8 va 3·15·2 = 90. Demak natija 8 + 90 = 98. Javob: 98.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayirma-kopaytma-shart",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#feb48aba"
+    },
+    {
+      "q": "Noldan farqli x son uchun x + 1/x = 5 sharti berilgan. x² + 1/x² ifodaning qiymatini toping.",
+      "v": [
+        "25",
+        "27",
+        "23",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "Shartning ikkala tomonini kvadratga ko'taramiz: (x + 1/x)² = x² + 2 + 1/x². Chap tomon 25 ga teng. Demak x² + 1/x² = 25 − 2 = 23. Javob: 23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-yigindi-kvadrat",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#217d222a"
+    },
+    {
+      "q": "Agar a + 1/a = 4 bo'lsa, a² + 1/a² ifoda qanday songa teng bo'ladi (bu yerda a noldan farqli)?",
+      "v": [
+        "16",
+        "14",
+        "18",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Kvadratga ko'targanda o'rta had 2·a·(1/a) = 2 chiqadi, ya'ni a² + 2 + 1/a² = 16. Ikkala tomondan 2 ni ayiramiz. Demak a² + 1/a² = 14. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-yigindi-kvadrat",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#bdfde37a"
+    },
+    {
+      "q": "m + 1/m = 7 shartida m² + 1/m² ifodani hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "49",
+        "51",
+        "47",
+        "14"
+      ],
+      "t": 2,
+      "izoh": "(m + 1/m)² = m² + 2 + 1/m² tenglikni yozamiz. Chap tomon 7² = 49 ga teng. Demak m² + 1/m² = 49 − 2 = 47. Javob: 47.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-yigindi-kvadrat",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#ab3d6802"
+    },
+    {
+      "q": "Musbat x son va uning teskarisi 1/x ning yig'indisi 6 ga teng bo'lsa, x² + 1/x² nechaga teng?",
+      "v": [
+        "36",
+        "34",
+        "38",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "Shartni kvadratga ko'taramiz: x² + 2 + 1/x² = 36. Ikkilangan ko'paytma har doim 2 ga teng, chunki x·(1/x) = 1. Demak x² + 1/x² = 34. Javob: 34.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-yigindi-kvadrat",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#7fdb9ba0"
+    },
+    {
+      "q": "y + 1/y = −3 bo'lsa, y² + 1/y² ifodaning qiymati qanday bo'ladi?",
+      "v": [
+        "11",
+        "9",
+        "7",
+        "−7"
+      ],
+      "t": 2,
+      "izoh": "Manfiy qiymat ham kvadratga ko'tarilganda musbat bo'ladi: (−3)² = 9. Demak y² + 2 + 1/y² = 9 tenglik hosil bo'ladi. Bundan y² + 1/y² = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-yigindi-kvadrat",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#f716c0fb"
+    },
+    {
+      "q": "x + 1/x = 3 shart berilgan bo'lsa, x³ + 1/x³ ifodaning qiymatini aniqlang.",
+      "v": [
+        "27",
+        "18",
+        "24",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "x³ + 1/x³ = (x + 1/x)³ − 3(x + 1/x) ayniyatidan foydalanamiz. Bu yerda 3³ = 27 va 3·3 = 9. Demak natija 27 − 9 = 18. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-yigindi-kub",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#d6eeab94"
+    },
+    {
+      "q": "Agar a + 1/a = 4 tenglik o'rinli bo'lsa, a³ + 1/a³ ifoda nechaga teng bo'ladi?",
+      "v": [
+        "64",
+        "76",
+        "52",
+        "48"
+      ],
+      "t": 2,
+      "izoh": "Kublar formulasini yozamiz: (a + 1/a)³ = a³ + 1/a³ + 3(a + 1/a). Demak 64 = a³ + 1/a³ + 12 bo'ladi. Bundan a³ + 1/a³ = 52. Javob: 52.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-yigindi-kub",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#4cb2711b"
+    },
+    {
+      "q": "t + 1/t = 2 tenglik bajarilsa, t³ + 1/t³ qanday qiymatga ega bo'ladi?",
+      "v": [
+        "8",
+        "14",
+        "6",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "t³ + 1/t³ = (t + 1/t)³ − 3(t + 1/t) formulasiga qiymatlarni qo'yamiz: 2³ − 3·2 = 8 − 6 = 2. Bu shartdan t = 1 kelib chiqadi va to'g'ridan-to'g'ri tekshirish ham 2 ni beradi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-yigindi-kub",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#4ffdcc9f"
+    },
+    {
+      "q": "n + 1/n = 5 bo'lganda n³ + 1/n³ ifodani hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "125",
+        "140",
+        "115",
+        "110"
+      ],
+      "t": 3,
+      "izoh": "(n + 1/n)³ = n³ + 1/n³ + 3(n + 1/n) tenglikdan foydalanamiz. Chap tomon 125 ga teng, qo'shimcha had esa 15. Demak n³ + 1/n³ = 125 − 15 = 110. Javob: 110.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-yigindi-kub",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#2e0def88"
+    },
+    {
+      "q": "x − 1/x = 3 shart berilgan. x² + 1/x² ifodaning qiymatini toping va to'g'ri variantni tanlang.",
+      "v": [
+        "7",
+        "11",
+        "9",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "(x − 1/x)² = x² − 2 + 1/x² bo'ladi, chunki o'rta had manfiy. Chap tomon 9 ga teng, demak x² + 1/x² = 9 + 2 = 11. Ishoraga alohida e'tibor bering. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-ayirma-shart",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#6af18009"
+    },
+    {
+      "q": "a − 1/a = 5 bo'lsa, (a + 1/a)² ifoda qanday songa teng bo'ladi?",
+      "v": [
+        "21",
+        "25",
+        "29",
+        "27"
+      ],
+      "t": 2,
+      "izoh": "Avval a² + 1/a² ni topamiz: (a − 1/a)² = a² − 2 + 1/a² = 25, demak a² + 1/a² = 27. Endi (a + 1/a)² = a² + 2 + 1/a² = 27 + 2 = 29. Javob: 29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-ayirma-shart",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#06b2cf88"
+    },
+    {
+      "q": "y − 1/y = 2 tenglikdan foydalanib, y² + 1/y² ifodaning qiymatini aniqlang.",
+      "v": [
+        "2",
+        "4",
+        "8",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomonni kvadratga ko'taramiz: y² − 2 + 1/y² = 4. Ikkilangan ko'paytma manfiy ishora bilan tushgani uchun uni o'ng tomonga o'tkazamiz. Demak y² + 1/y² = 4 + 2 = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-ayirma-shart",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#c3befcf8"
+    },
+    {
+      "q": "k − 1/k = 6 bo'lsa, k² + 1/k² va (k + 1/k)² ifodalarning qiymatlari mos ravishda qanday bo'ladi?",
+      "v": [
+        "38 va 40",
+        "36 va 40",
+        "34 va 36",
+        "38 va 42"
+      ],
+      "t": 0,
+      "izoh": "Shartni kvadratga ko'tarsak k² − 2 + 1/k² = 36, demak k² + 1/k² = 38. Endi (k + 1/k)² = k² + 2 + 1/k² = 38 + 2 = 40. Javob: 38 va 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-ayirma-shart",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#f77662e3"
+    },
+    {
+      "q": "a : b = 3 : 5 nisbat berilgan bo'lsa, (2a + b) : (a + b) nisbatning qiymatini toping.",
+      "v": [
+        "11/8",
+        "8/11",
+        "11/5",
+        "5/8"
+      ],
+      "t": 0,
+      "izoh": "a = 3t va b = 5t deb belgilaymiz. Surat 2·3t + 5t = 11t, maxraj esa 3t + 5t = 8t bo'ladi. Nisbat 11t : 8t = 11/8. Javob: 11/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-shartli-kasr",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#aaf49656"
+    },
+    {
+      "q": "Sinfda o'g'il va qiz bolalar soni 5 : 8 nisbatda. Sinfdagi jami o'quvchilar sonining qizlar bilan o'g'illar farqiga nisbatini toping.",
+      "v": [
+        "8/3",
+        "13/3",
+        "3/13",
+        "13/5"
+      ],
+      "t": 1,
+      "izoh": "O'g'illar soni 5t, qizlar soni 8t deb olamiz. Jami o'quvchilar 13t, farq esa 8t − 5t = 3t. Demak izlangan nisbat 13t : 3t = 13/3. Javob: 13/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-shartli-kasr",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#bf02e848"
+    },
+    {
+      "q": "x : y = 5 : 3 bo'lsa, (x + y) : (x − y) nisbat qanday songa teng bo'ladi?",
+      "v": [
+        "4",
+        "2",
+        "1/4",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "x = 5t, y = 3t deb qo'yamiz. Yig'indi 8t, ayirma esa 5t − 3t = 2t. Nisbatni tuzsak 8t : 2t = 4 chiqadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-shartli-kasr",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#30e41274"
+    },
+    {
+      "q": "a : b = 2 : 7 bo'lsa, (3a − b) : (a + 2b) nisbat qanday qiymatga ega bo'ladi?",
+      "v": [
+        "1/16",
+        "−1/9",
+        "−1/16",
+        "−16"
+      ],
+      "t": 2,
+      "izoh": "a = 2t va b = 7t deb belgilaymiz. Surat 3·2t − 7t = −t, maxraj 2t + 14t = 16t. Demak nisbat −t : 16t = −1/16. Javob: −1/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-shartli-kasr",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#999d3b23"
+    },
+    {
+      "q": "m : n = 5 : 2 nisbat o'rinli bo'lsa, (m² − n²) : (mn) nisbatning qiymati nechaga teng?",
+      "v": [
+        "10/21",
+        "21/25",
+        "29/10",
+        "21/10"
+      ],
+      "t": 3,
+      "izoh": "m = 5t, n = 2t deb olamiz. Surat 25t² − 4t² = 21t², maxraj esa 5t·2t = 10t². Nisbat 21t² : 10t² = 21/10. Javob: 21/10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-shartli-kasr",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#94ab4c08"
+    },
+    {
+      "q": "a/b = c/d proporsiya berilgan, b va d noldan farqli. Quyidagilardan qaysi biri undan albatta kelib chiqadi?",
+      "v": [
+        "ad = bc",
+        "ab = cd",
+        "a + b = c + d",
+        "a/c = d/b"
+      ],
+      "t": 0,
+      "izoh": "Proporsiyaning asosiy xossasi: chetki hadlar ko'paytmasi o'rta hadlar ko'paytmasiga teng. Buni ko'rish uchun tenglikning ikkala tomonini bd ga ko'paytiramiz. Natijada ad = bc hosil bo'ladi. Javob: ad = bc.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsiya-hosila",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#7b83fcd7"
+    },
+    {
+      "q": "a/b = c/d bo'lsa, quyidagi tengliklardan qaysi biri ham ayniy ravishda o'rinli bo'ladi?",
+      "v": [
+        "(a + b)/b = (c + d)/c",
+        "(a + b)/b = (c + d)/d",
+        "(a + b)/(a − b) = (c − d)/(c + d)",
+        "(a + c)/(b + c) = c/d"
+      ],
+      "t": 1,
+      "izoh": "Berilgan proporsiyaning ikkala tomoniga 1 qo'shamiz: a/b + 1 = c/d + 1. Chap tomonni umumiy maxrajga keltirsak (a + b)/b, o'ng tomonda esa (c + d)/d hosil bo'ladi. Javob: (a + b)/b = (c + d)/d.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "proporsiya-hosila",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#548c31cf"
+    },
+    {
+      "q": "a/b = c/d = 2/5 bo'lsa, (a + c)/(b + d) nisbat qanday qiymatga ega bo'ladi?",
+      "v": [
+        "7/2",
+        "2/5",
+        "5/2",
+        "4/7"
+      ],
+      "t": 1,
+      "izoh": "a = 2t, b = 5t va c = 2s, d = 5s deb yozamiz. Surat 2t + 2s = 2(t + s), maxraj 5t + 5s = 5(t + s) bo'ladi. Umumiy ko'paytuvchi qisqaradi va nisbat 2/5 bo'lib qoladi. Javob: 2/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proporsiya-hosila",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#8e7e8d64"
+    },
+    {
+      "q": "a/b = c/d bo'lsa, undan (a − b)/b = (c − d)/d tenglik kelib chiqishini isbotlash uchun proporsiyaning ikkala tomoniga qanday amal qo'llash kerak?",
+      "v": [
+        "Ikkala tomonga 1 qo'shiladi",
+        "Ikkala tomon d ga ko'paytiriladi",
+        "Ikkala tomondan 1 ayiriladi",
+        "Ikkala tomon o'z teskarisiga almashtiriladi"
+      ],
+      "t": 2,
+      "izoh": "Tenglikning ikkala tomonidan 1 ni ayiramiz: a/b − 1 = c/d − 1. Chap tomonni umumiy maxrajga keltirsak (a − b)/b, o'ng tomonda esa (c − d)/d hosil bo'ladi. Demak izlangan tenglik proporsiyadan bevosita kelib chiqadi. Javob: ikkala tomondan 1 ayiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsiya-hosila",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#287a619a"
+    },
+    {
+      "q": "x² + mx + 25 = (x + 5)² tenglik barcha x uchun ayniyat bo'lishi uchun m qanday qiymatga ega bo'lishi kerak?",
+      "v": [
+        "5",
+        "25",
+        "10",
+        "20"
+      ],
+      "t": 2,
+      "izoh": "O'ng tomonni yoyamiz: (x + 5)² = x² + 10x + 25. Ayniyat bo'lishi uchun bir xil darajali hadlar oldidagi koeffitsientlar teng bo'lishi shart. Demak m = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsient-topish-ayniyat",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#f583c526"
+    },
+    {
+      "q": "4x² − 12x + c ifodasi to'la kvadrat bo'lishi uchun c ning qiymati qanday bo'lishi kerak?",
+      "v": [
+        "6",
+        "9",
+        "36",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "4x² = (2x)² ekanini ko'ramiz, o'rta had esa −12x = 2·2x·(−3) ko'rinishida yozilishi kerak. Demak ikkinchi had −3 ga teng, ya'ni c = (−3)² = 9. Tekshirsak (2x − 3)² = 4x² − 12x + 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koeffitsient-topish-ayniyat",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#2429f9e4"
+    },
+    {
+      "q": "(x + a)(x + 3) = x² + 7x + b tenglik ayniyat bo'lsa, a va b sonlarining yig'indisi nechaga teng?",
+      "v": [
+        "7",
+        "12",
+        "10",
+        "16"
+      ],
+      "t": 3,
+      "izoh": "Chap tomonni yoyamiz: x² + (a + 3)x + 3a. Koeffitsientlarni tenglashtiramiz: a + 3 = 7, demak a = 4. Ozod had b = 3a = 12. Yig'indi 4 + 12 = 16. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koeffitsient-topish-ayniyat",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#f0cfa583"
+    },
+    {
+      "q": "px² + qx + 6 = (2x + 3)(x + 2) ayniyatda p va q koeffitsientlarni topib, ularning ko'paytmasini hisoblang.",
+      "v": [
+        "9",
+        "12",
+        "42",
+        "14"
+      ],
+      "t": 3,
+      "izoh": "O'ng tomonni yoyamiz: 2x² + 4x + 3x + 6 = 2x² + 7x + 6. Koeffitsientlarni solishtirsak p = 2 va q = 7. Ularning ko'paytmasi 2·7 = 14. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsient-topish-ayniyat",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#3152f40c"
+    },
+    {
+      "q": "(x + 2)(x² − 2x + 4) = x³ + k tenglik ayniyat bo'lsa, k ning qiymati nechaga teng?",
+      "v": [
+        "2",
+        "8",
+        "4",
+        "−8"
+      ],
+      "t": 1,
+      "izoh": "Chap tomon kublar yig'indisi formulasiga mos: (a + b)(a² − ab + b²) = a³ + b³, bu yerda a = x, b = 2. Demak natija x³ + 2³ = x³ + 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsient-topish-ayniyat",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#26994eae"
+    },
+    {
+      "q": "Ikkita musbat sonning kvadratlari yig'indisi 41, ko'paytmasi esa 20 ga teng. Bu sonlarning yig'indisini toping.",
+      "v": [
+        "9",
+        "61",
+        "21",
+        "81"
+      ],
+      "t": 0,
+      "izoh": "(a + b)² = a² + b² + 2ab = 41 + 2·20 = 81 ni hosil qilamiz. Sonlar musbat bo'lgani uchun ildizning musbat qiymati olinadi. Demak a + b = 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratlardan-yigindiga",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#a63d4ac7"
+    },
+    {
+      "q": "Ikki sonning kvadratlari yig'indisi 34, ko'paytmasi 15 bo'lsa, ularning ayirmasi moduli nechaga teng?",
+      "v": [
+        "4",
+        "2",
+        "8",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "(a − b)² = a² + b² − 2ab = 34 − 30 = 4 bo'ladi. Demak ayirmaning moduli √4 = 2 ga teng. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratlardan-yigindiga",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#ab053cec"
+    },
+    {
+      "q": "Diagonali 10 sm bo'lgan to'g'ri to'rtburchakning yuzasi 48 sm² ga teng. Uning perimetri necha santimetrni tashkil qiladi?",
+      "v": [
+        "14",
+        "28",
+        "56",
+        "24"
+      ],
+      "t": 1,
+      "izoh": "Pifagor teoremasidan a² + b² = 100, yuzadan esa ab = 48. Demak (a + b)² = 100 + 96 = 196, bundan a + b = 14. Perimetr 2·14 = 28 sm. Javob: 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadratlardan-yigindiga",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#5bbc3570"
+    },
+    {
+      "q": "x va y sonlarning yig'indisi 12 ga, ko'paytmasi esa 35 ga teng. 1/x + 1/y yig'indi qanday kasrga teng bo'ladi?",
+      "v": [
+        "12/35",
+        "35/12",
+        "1/12",
+        "47/35"
+      ],
+      "t": 0,
+      "izoh": "1/x + 1/y ni umumiy maxrajga keltiramiz: (x + y)/(xy). Suratga yig'indini, maxrajga ko'paytmani qo'yamiz. Demak natija 12/35. Javob: 12/35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shartli-kasrlar-yigindisi",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#0fbdea91"
+    },
+    {
+      "q": "Ikki quvurdan biri hovuzni x soatda, ikkinchisi y soatda to'ldiradi. x + y = 9 va xy = 20 bo'lsa, ikkalasi birgalikda bir soatda hovuzning qanday qismini to'ldiradi?",
+      "v": [
+        "20/9",
+        "9/20",
+        "1/9",
+        "29/20"
+      ],
+      "t": 1,
+      "izoh": "Birinchi quvurning bir soatlik unumi 1/x, ikkinchisiniki 1/y. Ularning yig'indisi (x + y)/(xy) ga teng. Qiymatlarni qo'ysak 9/20 hovuz chiqadi. Javob: 9/20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shartli-kasrlar-yigindisi",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#933627f2"
+    },
+    {
+      "q": "1/a + 1/b = 5/6 va ab = 6 shartlar berilgan bo'lsa, a + b yig'indi nechaga teng?",
+      "v": [
+        "6",
+        "30",
+        "11",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "1/a + 1/b = (a + b)/(ab) ekanini yozamiz, ya'ni (a + b)/6 = 5/6. Maxrajlar bir xil bo'lgani uchun suratlar ham teng bo'ladi. Demak a + b = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shartli-kasrlar-yigindisi",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#ced6e57c"
+    },
+    {
+      "q": "Ikki ishchining bir soatlik unumlari yig'indisi 1/m + 1/n = 3/8 ga, m va n ning ko'paytmasi esa 32 ga teng. m + n nechaga teng?",
+      "v": [
+        "8",
+        "96",
+        "3",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Kasrlarni birlashtiramiz: 1/m + 1/n = (m + n)/(mn). Demak (m + n)/32 = 3/8 tenglik hosil bo'ladi. Bundan m + n = 32·3 : 8 = 12, ya'ni ishchilar 4 va 8 soatda ishlaydi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shartli-kasrlar-yigindisi",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#3c0db623"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 15, ayirmasi esa 4 ga teng. Ularning kvadratlari ayirmasini hisoblang.",
+      "v": [
+        "11",
+        "225",
+        "19",
+        "60"
+      ],
+      "t": 3,
+      "izoh": "x² − y² = (x + y)(x − y) formulasidan foydalanamiz. Yig'indi va ayirma allaqachon berilgan, ularni ko'paytiramiz: 15·4 = 60. Javob: 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratlar-ayirmasi-shartli",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#5a9a9860"
+    },
+    {
+      "q": "Kvadrat shaklidagi ikki uchastkaning tomonlari yig'indisi 23 m, ayirmasi esa 7 m. Ularning yuzalari farqi necha kvadrat metrga teng?",
+      "v": [
+        "161",
+        "16",
+        "30",
+        "529"
+      ],
+      "t": 0,
+      "izoh": "Yuzalar farqi a² − b² ko'rinishida bo'lib, u (a + b)(a − b) ga teng. Tomonlar yig'indisi va ayirmasi berilgan, demak farq 23·7 = 161 m². Javob: 161.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratlar-ayirmasi-shartli",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#0c93f6b1"
+    },
+    {
+      "q": "Ikki sonning kvadratlari ayirmasi 96, yig'indisi esa 12 ga teng. Bu sonlarning ayirmasi nechaga teng?",
+      "v": [
+        "84",
+        "4",
+        "8",
+        "108"
+      ],
+      "t": 2,
+      "izoh": "x² − y² = (x + y)(x − y) tenglikka qiymatlarni qo'yamiz: 96 = 12·(x − y). Ikkala tomonni 12 ga bo'lamiz. Demak x − y = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratlar-ayirmasi-shartli",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#b6d35b45"
+    },
+    {
+      "q": "Yig'indisi 20 bo'lgan ikki sonning kvadratlari ayirmasi 120 ga teng. Bu sonlardan kattasini toping.",
+      "v": [
+        "13",
+        "6",
+        "14",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Kvadratlar ayirmasini yoyamiz: 120 = 20·(x − y), demak x − y = 6. Endi x + y = 20 va x − y = 6 sistemasini yechamiz. Ikkala tenglikni qo'shsak 2x = 26, ya'ni x = 13. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadratlar-ayirmasi-shartli",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#28aea5fa"
+    },
+    {
+      "q": "Uchta sonning yig'indisi 7, juft-juft ko'paytmalari yig'indisi ab + bc + ca esa 10 ga teng. Ularning kvadratlari yig'indisini toping.",
+      "v": [
+        "49",
+        "29",
+        "69",
+        "39"
+      ],
+      "t": 1,
+      "izoh": "(a + b + c)² = a² + b² + c² + 2(ab + bc + ca) ayniyatidan foydalanamiz. Chap tomon 49, ikkilangan ko'paytmalar yig'indisi esa 20. Demak a² + b² + c² = 49 − 20 = 29. Javob: 29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-ozgaruvchi-simmetrik",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#0e50d261"
+    },
+    {
+      "q": "To'g'ri burchakli parallelepipedning bir uchidan chiquvchi uch qirrasi yig'indisi 12 sm, to'la sirti esa 44 sm². Uning diagonali necha santimetrga teng?",
+      "v": [
+        "10",
+        "8",
+        "100",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "To'la sirt 2(ab + bc + ca) = 44, demak ab + bc + ca = 22. Diagonal kvadrati a² + b² + c² = (a + b + c)² − 2(ab + bc + ca) = 144 − 44 = 100. Demak diagonal √100 = 10 sm. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-ozgaruvchi-simmetrik",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#407697e6"
+    },
+    {
+      "q": "a + b + c = 5 va a² + b² + c² = 17 bo'lsa, ab + bc + ca yig'indi nechaga teng bo'ladi?",
+      "v": [
+        "8",
+        "4",
+        "12",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Yig'indining kvadratini yozamiz: 25 = 17 + 2(ab + bc + ca). Bundan 2(ab + bc + ca) = 8 hosil bo'ladi. Ikkiga bo'lsak ab + bc + ca = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-ozgaruvchi-simmetrik",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#2ca10986"
+    },
+    {
+      "q": "Har qanday n son uchun n² − (n − 1)(n + 1) ifodaning qiymati o'zgarmas ekanini isbotlash kerak. Shu o'zgarmas qiymat nechaga teng?",
+      "v": [
+        "1",
+        "0",
+        "2n",
+        "−1"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytmani kvadratlar ayirmasi formulasi bilan yoyamiz: (n − 1)(n + 1) = n² − 1. Uni ayirsak n² − (n² − 1) = 1 qoladi. n ning qiymati qanday bo'lishidan qat'i nazar natija o'zgarmaydi, demak ifoda ayniy ravishda 1 ga teng. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harfiy-ayniyat-qollash",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#754f6412"
+    },
+    {
+      "q": "a + b = 200 va a − b = 6 shartlar berilgan bo'lsa, a² − b² kvadratlar ayirmasi nechaga teng bo'ladi?",
+      "v": [
+        "600",
+        "1200",
+        "194",
+        "1206"
+      ],
+      "t": 1,
+      "izoh": "Kvadratlar ayirmasini ko'paytuvchilarga ajratamiz: a² − b² = (a + b)(a − b). Berilgan qiymatlarni o'rniga qo'yamiz: 200·6 = 1200. Sonlarning o'zini (103 va 97) topib o'tirish shart emas, shart bevosita natijani beradi. Javob: 1200.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harfiy-ayniyat-qollash",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#02978752"
+    },
+    {
+      "q": "n butun son bo'lganda (n + 1)² − (n − 1)² ifoda har doim 4 ga bo'linishini isbotlash kerak. Qavslar ochilgandan keyin ifoda nimaga teng bo'ladi?",
+      "v": [
+        "2n",
+        "4n + 2",
+        "4n",
+        "8n"
+      ],
+      "t": 2,
+      "izoh": "Kvadratlarni yoyamiz: (n + 1)² = n² + 2n + 1 va (n − 1)² = n² − 2n + 1. Ayirmada n² va 1 o'zaro qisqaradi, o'rta hadlar esa qo'shiladi: 2n + 2n = 4n. Har qanday butun n uchun 4n soni 4 ga karrali, demak isbot tugadi. Javob: 4n.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harfiy-ayniyat-qollash",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#45d03e88"
+    },
+    {
+      "q": "a + b = 100 bo'lsa, a² + 2ab + b² ifodaning qiymatini ustun hisobsiz, ayniyat yordamida aniqlang.",
+      "v": [
+        "10000",
+        "1000",
+        "9000",
+        "100"
+      ],
+      "t": 0,
+      "izoh": "a² + 2ab + b² ifoda (a + b)² ning yoyilmasi, ya'ni uni yig'indining kvadrati sifatida yig'ish mumkin. Demak qiymat faqat yig'indiga bog'liq: (a + b)² = 100² = 10000. a va b ni alohida bilish talab etilmaydi. Javob: 10000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harfiy-ayniyat-qollash",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#a47b8453"
+    },
+    {
+      "q": "Dilnoza (x + 4)(x − 4) = x² − 16 tenglikni x = 2 va x = 3 da tekshirib, to'g'ri chiqqanini ko'rdi. Bu tekshiruv haqida qanday xulosa to'g'ri bo'ladi?",
+      "v": [
+        "Bir necha son bilan tekshirish isbot emas, ayniy almashtirish bajarilishi kerak",
+        "Ikki qiymatda to'g'ri chiqqani tenglikning ayniyat ekanini isbotlaydi",
+        "Tenglik faqat shu ikki qiymatda o'rinli bo'ladi",
+        "Tenglik ayniyat emas, chunki chap tomon ko'paytma ko'rinishida"
+      ],
+      "t": 0,
+      "izoh": "Ayniyat barcha ruxsat etilgan qiymatlarda o'rinli bo'lishi kerak, sonli tekshiruv esa faqat gumonni kuchaytiradi. Isbot uchun chap tomonni yoyish shart: (x + 4)(x − 4) = x² − 16. Bu tenglik haqiqatan ayniyat, lekin uni almashtirish bilan isbotlanadi. Javob: tekshirish isbot bo'la olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyat-nazariya",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#ac865c67"
+    },
+    {
+      "q": "Ayniyat ta'rifiga ko'ra tenglik qanday qiymatlar to'plamida bajarilishi kerak?",
+      "v": [
+        "Faqat butun qiymatlarda",
+        "Kamida bitta qiymatda",
+        "O'zgaruvchilarning barcha ruxsat etilgan qiymatlarida",
+        "Faqat musbat qiymatlarda"
+      ],
+      "t": 2,
+      "izoh": "Ayniyat deb o'zgaruvchilarning aniqlanish sohasidagi barcha qiymatlarida to'g'ri bo'ladigan tenglikka aytiladi. Agar tenglik faqat ayrim qiymatlarda bajarilsa, u tenglama bo'ladi. Javob: barcha ruxsat etilgan qiymatlarda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-nazariya",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#c8d9fa5e"
+    },
+    {
+      "q": "(x² − 9)/(x − 3) = x + 3 tenglik ayniyat sifatida qaralganda unga qanday cheklov qo'yiladi?",
+      "v": [
+        "x ≠ 3, chunki maxraj nolga aylanmasligi kerak",
+        "x ≠ −3, chunki surat nolga aylanadi",
+        "Hech qanday cheklov qo'yish kerak emas",
+        "x > 3 shart bajarilishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Kasr ma'noga ega bo'lishi uchun maxraj x − 3 noldan farqli bo'lishi kerak, ya'ni x ≠ 3. Shu shartda suratni (x − 3)(x + 3) deb yozib qisqartiramiz va x + 3 hosil bo'ladi. Javob: x ≠ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyat-nazariya",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#37f2d17b"
+    },
+    {
+      "q": "Musbat x son uchun x² + 1/x² = 7 shart bajarilsa, x + 1/x ifodaning qiymatini toping.",
+      "v": [
+        "9",
+        "3",
+        "5",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "(x + 1/x)² = x² + 2 + 1/x² ekanidan foydalanamiz: 7 + 2 = 9. x musbat bo'lgani uchun yig'indi ham musbat. Demak x + 1/x = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayniyatni-teskari-qollash",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#f4ae1cf3"
+    },
+    {
+      "q": "a² + 1/a² = 18 bo'lib, a birdan katta bo'lsa, a − 1/a ayirmaning qiymati nechaga teng?",
+      "v": [
+        "20",
+        "16",
+        "4",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "(a − 1/a)² = a² − 2 + 1/a² = 18 − 2 = 16 ni hosil qilamiz. a birdan katta bo'lgani uchun a − 1/a musbat. Demak a − 1/a = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayniyatni-teskari-qollash",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#fc7c4e8c"
+    },
+    {
+      "q": "Ikkita musbat sonning kvadratlari yig'indisi 29, ko'paytmasi esa 10 ga teng. Bu sonlardan kattasini toping.",
+      "v": [
+        "7",
+        "4",
+        "10",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "(a + b)² = 29 + 20 = 49, demak a + b = 7. (a − b)² = 29 − 20 = 9, demak a − b = 3. Ikkala tenglikni qo'shsak 2a = 10, ya'ni katta son 5 ga teng. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayniyatni-teskari-qollash",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#b6fa701c"
+    },
+    {
+      "q": "x³ + 1/x³ = 52 va x + 1/x = t bo'lsa, musbat butun t ning qiymatini toping.",
+      "v": [
+        "3",
+        "4",
+        "5",
+        "52"
+      ],
+      "t": 1,
+      "izoh": "x³ + 1/x³ = t³ − 3t ayniyatini yozamiz, demak t³ − 3t = 52. Butun qiymatlarni sinaymiz: t = 3 da 18, t = 4 da 64 − 12 = 52 chiqadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayniyatni-teskari-qollash",
+      "id": "matematika_ayn_m07-ayniyatlarni-isbotlash-va-shartli-soddalashtirish#844366c3"
+    }
+  ]
+}

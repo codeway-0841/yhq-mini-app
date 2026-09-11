@@ -1,0 +1,396 @@
+{
+  "nom": "This is / These are",
+  "bolim": "Tuzilma",
+  "savollar": [
+    {
+      "q": "___ a cat. 🐱",
+      "v": [
+        "This is",
+        "These are",
+        "I like",
+        "Yes, it is"
+      ],
+      "t": 0,
+      "izoh": "Bitta narsa uchun 'This is' ishlatamiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m2#b9617b34"
+    },
+    {
+      "q": "___ two dogs. 🐶🐶",
+      "v": [
+        "These are",
+        "This is",
+        "I don't",
+        "Good morning"
+      ],
+      "t": 0,
+      "izoh": "Ko'p narsa uchun 'These are' ishlatamiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m2#6b17bda7"
+    },
+    {
+      "q": "___ an apple. 🍎",
+      "v": [
+        "This is",
+        "These are",
+        "They are no",
+        "Hello"
+      ],
+      "t": 0,
+      "izoh": "Bitta olma — 'This is'.",
+      "qiy": "oson",
+      "id": "ing_kids_m2#c87aecf5"
+    },
+    {
+      "q": "___ three balls. ⚽⚽⚽",
+      "v": [
+        "These are",
+        "This is",
+        "I like",
+        "Goodbye"
+      ],
+      "t": 0,
+      "izoh": "Uchta to'p — 'These are'.",
+      "qiy": "oson",
+      "id": "ing_kids_m2#e406fe45"
+    },
+    {
+      "q": "___ a book. 📖",
+      "v": [
+        "This is",
+        "These are",
+        "Yes, it is",
+        "No"
+      ],
+      "t": 0,
+      "izoh": "Bitta kitob — 'This is'.",
+      "qiy": "oson",
+      "id": "ing_kids_m2#14dd3764"
+    },
+    {
+      "q": "___ two cars. 🚗🚗",
+      "v": [
+        "These are",
+        "This is",
+        "I don't like",
+        "Thank you"
+      ],
+      "t": 0,
+      "izoh": "Ikkita mashina — 'These are'.",
+      "qiy": "oson",
+      "id": "ing_kids_m2#ed185f74"
+    },
+    {
+      "q": "___ a fish. 🐟",
+      "v": [
+        "This is",
+        "These are",
+        "No, it isn't",
+        "Hello"
+      ],
+      "t": 0,
+      "izoh": "Bitta baliq — 'This is'.",
+      "qiy": "oson",
+      "id": "ing_kids_m2#eac9e690"
+    },
+    {
+      "q": "___ four flowers. 🌸🌸🌸🌸",
+      "v": [
+        "These are",
+        "This is",
+        "I like",
+        "Good night"
+      ],
+      "t": 0,
+      "izoh": "To'rtta gul — 'These are'.",
+      "qiy": "oson",
+      "id": "ing_kids_m2#193f09f5"
+    },
+    {
+      "q": "___ a pen. 🖊️",
+      "v": [
+        "This is",
+        "These are",
+        "Yes",
+        "Goodbye"
+      ],
+      "t": 0,
+      "izoh": "Bitta ruchka — 'This is'.",
+      "qiy": "oson",
+      "id": "ing_kids_m2#37a60498"
+    },
+    {
+      "q": "___ two birds. 🐦🐦",
+      "v": [
+        "These are",
+        "This is",
+        "I don't",
+        "Hello"
+      ],
+      "t": 0,
+      "izoh": "Ikkita qush — 'These are'.",
+      "qiy": "oson",
+      "id": "ing_kids_m2#de76eda7"
+    },
+    {
+      "q": "🍎 Choose the correct one.",
+      "v": [
+        "This is an apple",
+        "These are apples",
+        "This is apples",
+        "These is an apple"
+      ],
+      "t": 0,
+      "izoh": "Bitta narsa uchun \"This is\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#7ac0a8b0"
+    },
+    {
+      "q": "🐦 Is this a bird? The answer is...",
+      "v": [
+        "Yes, this is a bird",
+        "Yes, these are birds",
+        "No, this is a cat",
+        "These are birds"
+      ],
+      "t": 0,
+      "izoh": "Bitta qush — \"Yes, this is a bird\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#fbe3793f"
+    },
+    {
+      "q": "🍊 Is this an orange?",
+      "v": [
+        "Yes, this is an orange",
+        "Yes, these are oranges",
+        "No, these are apples",
+        "This are an orange"
+      ],
+      "t": 0,
+      "izoh": "Bitta apelsin — \"Yes, this is an orange\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#4377e1eb"
+    },
+    {
+      "q": "🍎🍎🍎 Choose the correct one.",
+      "v": [
+        "These are apples",
+        "This is an apple",
+        "This are apples",
+        "These is apples"
+      ],
+      "t": 0,
+      "izoh": "Ko'p narsa uchun \"These are\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#1f06702f"
+    },
+    {
+      "q": "🐱 Choose the correct one.",
+      "v": [
+        "This is a cat",
+        "These are cats",
+        "This are a cat",
+        "These is a cat"
+      ],
+      "t": 0,
+      "izoh": "Bitta mushuk — \"This is a cat\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#65a029cc"
+    },
+    {
+      "q": "🐶🐶 Choose the correct one.",
+      "v": [
+        "These are dogs",
+        "This is a dog",
+        "These is dogs",
+        "This are dogs"
+      ],
+      "t": 0,
+      "izoh": "Ikki it — \"These are dogs\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#ff7c625d"
+    },
+    {
+      "q": "✏️ Choose the correct one.",
+      "v": [
+        "This is a pencil",
+        "These are pencils",
+        "This are pencil",
+        "These is a pencil"
+      ],
+      "t": 0,
+      "izoh": "Bitta qalam — \"This is a pencil\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#9b1b8863"
+    },
+    {
+      "q": "📚📚📚 Choose the correct one.",
+      "v": [
+        "These are books",
+        "This is a book",
+        "This are books",
+        "These is books"
+      ],
+      "t": 0,
+      "izoh": "Ko'p kitob — \"These are books\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#3dcd040a"
+    },
+    {
+      "q": "🌸 Choose the correct one.",
+      "v": [
+        "This is a flower",
+        "These are flowers",
+        "This are flower",
+        "These is flower"
+      ],
+      "t": 0,
+      "izoh": "Bitta gul — \"This is a flower\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#6cbf00a6"
+    },
+    {
+      "q": "🚗🚗 Choose the correct one.",
+      "v": [
+        "These are cars",
+        "This is a car",
+        "This are cars",
+        "These is cars"
+      ],
+      "t": 0,
+      "izoh": "Ikki mashina — \"These are cars\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#fc72ed62"
+    },
+    {
+      "q": "⭐ Choose the correct one.",
+      "v": [
+        "This is a star",
+        "These are stars",
+        "This are star",
+        "These is a star"
+      ],
+      "t": 0,
+      "izoh": "Bitta yulduz — \"This is a star\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#032cc291"
+    },
+    {
+      "q": "🍌🍌🍌 Choose the correct one.",
+      "v": [
+        "These are bananas",
+        "This is a banana",
+        "This are bananas",
+        "These is bananas"
+      ],
+      "t": 0,
+      "izoh": "Ko'p banan — \"These are bananas\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#1abc7a85"
+    },
+    {
+      "q": "🏀 Choose the correct one.",
+      "v": [
+        "This is a ball",
+        "These are balls",
+        "This are ball",
+        "These is a ball"
+      ],
+      "t": 0,
+      "izoh": "Bitta to'p — \"This is a ball\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#1cf57129"
+    },
+    {
+      "q": "🐟🐟 Choose the correct one.",
+      "v": [
+        "These are fish",
+        "This is a fish",
+        "This are fish",
+        "These is fish"
+      ],
+      "t": 0,
+      "izoh": "Ikki baliq — \"These are fish\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#64f149e4"
+    },
+    {
+      "q": "🎈 Choose the correct one.",
+      "v": [
+        "This is a balloon",
+        "These are balloons",
+        "This are balloon",
+        "These is a balloon"
+      ],
+      "t": 0,
+      "izoh": "Bitta shar — \"This is a balloon\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#d740002f"
+    },
+    {
+      "q": "🍪🍪🍪 Choose the correct one.",
+      "v": [
+        "These are cookies",
+        "This is a cookie",
+        "This are cookies",
+        "These is cookies"
+      ],
+      "t": 0,
+      "izoh": "Ko'p pechene — \"These are cookies\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#c65e5d77"
+    },
+    {
+      "q": "🖊️ Choose the correct one.",
+      "v": [
+        "This is a pen",
+        "These are pens",
+        "This are pen",
+        "These is a pen"
+      ],
+      "t": 0,
+      "izoh": "Bitta ruchka — \"This is a pen\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#77283a28"
+    },
+    {
+      "q": "🎀🎀 Choose the correct one.",
+      "v": [
+        "These are bows",
+        "This is a bow",
+        "This are bows",
+        "These is bows"
+      ],
+      "t": 0,
+      "izoh": "Ikki bant — \"These are bows\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#027859ee"
+    },
+    {
+      "q": "🐘 Choose the correct one.",
+      "v": [
+        "This is an elephant",
+        "These are elephants",
+        "This is a elephant",
+        "These is an elephant"
+      ],
+      "t": 0,
+      "izoh": "Bitta fil — \"This is an elephant\" (an).",
+      "qiy": "oson",
+      "id": "ing_kids_m2#79b346a5"
+    },
+    {
+      "q": "🥚🥚🥚 Choose the correct one.",
+      "v": [
+        "These are eggs",
+        "This is an egg",
+        "This are eggs",
+        "These is eggs"
+      ],
+      "t": 0,
+      "izoh": "Ko'p tuxum — \"These are eggs\".",
+      "qiy": "oson",
+      "id": "ing_kids_m2#092b904a"
+    }
+  ]
+}

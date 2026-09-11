@@ -1,0 +1,1609 @@
+{
+  "nom": "Fazoda dekart koordinatalari va sfera tenglamasi",
+  "bolim": "Koordinatalar va vektorlar",
+  "blok": "vekt",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Fazoda A(3; −1; 5) va B(6; 3; 5) nuqtalar berilgan bo'lsa, AB kesmaning uzunligi nechaga teng bo'ladi?",
+      "v": [
+        "7",
+        "5",
+        "25",
+        "√13"
+      ],
+      "t": 1,
+      "izoh": "Fazodagi masofa formulasi: AB = √((x₂ − x₁)² + (y₂ − y₁)² + (z₂ − z₁)²). Koordinata farqlari: 6 − 3 = 3, 3 − (−1) = 4, 5 − 5 = 0. Demak AB = √(9 + 16 + 0) = √25 = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-ikki-nuqta",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#1c54d387"
+    },
+    {
+      "q": "Fazoviy koordinatalar sistemasida A(2; −3; 1) va B(4; 0; 7) nuqtalar belgilangan bo'lsa, ular orasidagi masofa nechaga teng?",
+      "v": [
+        "7",
+        "11",
+        "49",
+        "√13"
+      ],
+      "t": 0,
+      "izoh": "Koordinata farqlarini topamiz: 4 − 2 = 2, 0 − (−3) = 3, 7 − 1 = 6. Kvadratlar yig'indisi 4 + 9 + 36 = 49 bo'ladi. Ildiz olsak AB = √49 = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-ikki-nuqta",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#376acd77"
+    },
+    {
+      "q": "Bino karkasi chizmasida ikkita tugun M(2; 1; 4) va N(−2; 4; 16) nuqtalarda joylashgan, o'lchov birligi metr. Ularni tutashtiruvchi to'sinning uzunligi qancha bo'ladi?",
+      "v": [
+        "19 m",
+        "169 m",
+        "13 m",
+        "√153 m"
+      ],
+      "t": 2,
+      "izoh": "Farqlarni hisoblaymiz: −2 − 2 = −4, 4 − 1 = 3, 16 − 4 = 12. Demak MN = √(16 + 9 + 144) = √169 = 13. To'sinning uzunligi 13 metr. Javob: 13 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masofa-ikki-nuqta",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#efb4646d"
+    },
+    {
+      "q": "Fazodagi K(−3; 2; 1) va L(−1; 12; 12) nuqtalar orasidagi masofani hisoblang va to'g'ri natijani ko'rsating.",
+      "v": [
+        "225",
+        "23",
+        "√104",
+        "15"
+      ],
+      "t": 3,
+      "izoh": "Koordinata farqlari: −1 − (−3) = 2, 12 − 2 = 10, 12 − 1 = 11. Ularning kvadratlari yig'indisi 4 + 100 + 121 = 225. Demak KL = √225 = 15. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masofa-ikki-nuqta",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#1d45072a"
+    },
+    {
+      "q": "Koordinata boshi O nuqtadan A(2; 6; 9) nuqtagacha bo'lgan masofa nechaga teng ekanini aniqlang.",
+      "v": [
+        "11",
+        "17",
+        "121",
+        "√85"
+      ],
+      "t": 0,
+      "izoh": "Koordinata boshidan nuqtagacha masofa OA = √(x² + y² + z²) formulasi bilan topiladi. OA = √(4 + 36 + 81) = √121 = 11. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtadan-boshgacha-masofa",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#58cf955d"
+    },
+    {
+      "q": "Dron uchirish maydonchasi koordinata boshida joylashgan. Dron havoga ko'tarilib D(8; 9; 12) nuqtaga yetdi, o'lchov birligi metr. Dron maydonchadan qanchaga uzoqlashdi?",
+      "v": [
+        "29 m",
+        "17 m",
+        "289 m",
+        "√145 m"
+      ],
+      "t": 1,
+      "izoh": "Maydoncha koordinata boshida bo'lgani uchun OD = √(8² + 9² + 12²). Hisoblaymiz: 64 + 81 + 144 = 289, so'ng √289 = 17. Dron 17 metrga uzoqlashgan. Javob: 17 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtadan-boshgacha-masofa",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#5d88e5b4"
+    },
+    {
+      "q": "P(−4; 4; 2) nuqtaning radius-vektori uzunligini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "10",
+        "36",
+        "6",
+        "√32"
+      ],
+      "t": 2,
+      "izoh": "Radius-vektor uzunligi OP = √((−4)² + 4² + 2²) ko'rinishida hisoblanadi. Bu √(16 + 16 + 4) = √36 = 6 ga teng. Manfiy koordinata kvadratga ko'tarilganda musbat bo'ladi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtadan-boshgacha-masofa",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#a43a6446"
+    },
+    {
+      "q": "Qurilish maydonining burchagi koordinata boshi qilib olingan. Kran ilmog'i K(6; 10; 15) nuqtada turibdi, o'lchov metrda. Ilmoq shu burchakdan necha metr uzoqda?",
+      "v": [
+        "31 m",
+        "√136 m",
+        "361 m",
+        "19 m"
+      ],
+      "t": 3,
+      "izoh": "Masofa OK = √(6² + 10² + 15²) formulasi bo'yicha topiladi. 36 + 100 + 225 = 361 bo'ladi, √361 = 19. Demak ilmoq burchakdan 19 metr uzoqda. Javob: 19 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtadan-boshgacha-masofa",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#d137df27"
+    },
+    {
+      "q": "A(2; −4; 6) va B(8; 2; 0) nuqtalarni tutashtiruvchi kesmaning o'rtasi qaysi nuqtada joylashgan bo'ladi?",
+      "v": [
+        "(5; −1; 3)",
+        "(10; −2; 6)",
+        "(3; 3; −3)",
+        "(6; 6; −6)"
+      ],
+      "t": 0,
+      "izoh": "Kesma o'rtasining koordinatalari uchlar koordinatalarining o'rta arifmetigiga teng: ((2 + 8)/2; (−4 + 2)/2; (6 + 0)/2). Hisoblaymiz: (10/2; −2/2; 6/2) = (5; −1; 3). Javob: (5; −1; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesma-ortasi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#a73e3b5e"
+    },
+    {
+      "q": "M(−3; 5; 1) va N(7; −1; 9) nuqtalar berilgan. MN kesmaning o'rta nuqtasi koordinatalarini toping.",
+      "v": [
+        "(4; 4; 10)",
+        "(2; 2; 5)",
+        "(5; −3; 4)",
+        "(2; −2; 5)"
+      ],
+      "t": 1,
+      "izoh": "O'rta nuqta formulasi: ((−3 + 7)/2; (5 + (−1))/2; (1 + 9)/2). Bu (4/2; 4/2; 10/2) = (2; 2; 5) ga teng. Bu yerda koordinatalar ayirilmaydi, qo'shiladi. Javob: (2; 2; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesma-ortasi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#450a60fd"
+    },
+    {
+      "q": "Ikkita ustunning uchi A(4; 0; 6) va B(0; 8; 2) nuqtalarda, o'lchov metrda. Ular orasiga tortilgan arqonning aynan o'rtasiga chiroq osilgan bo'lsa, chiroq qaysi nuqtada turadi?",
+      "v": [
+        "(4; 8; 8)",
+        "(−2; 4; −2)",
+        "(2; 4; 4)",
+        "(2; 4; 8)"
+      ],
+      "t": 2,
+      "izoh": "Chiroq AB kesmaning o'rtasida, ya'ni ((4 + 0)/2; (0 + 8)/2; (6 + 2)/2) nuqtada joylashgan. Hisoblaymiz: (2; 4; 4). Uchala koordinatani ham ikkiga bo'lish shart. Javob: (2; 4; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesma-ortasi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#56f449b6"
+    },
+    {
+      "q": "ABCD parallelogrammning uchlaridan uchtasi A(1; 2; 3), B(4; 6; 3) va C(7; 4; 9) ekani ma'lum. Diagonallar o'rtasining ustma-ust tushishidan foydalanib, D uchining koordinatalarini toping.",
+      "v": [
+        "(10; 8; 9)",
+        "(4; 3; 6)",
+        "(−2; 4; −3)",
+        "(4; 0; 9)"
+      ],
+      "t": 3,
+      "izoh": "Parallelogrammda AC va BD diagonallarning o'rtalari bir xil nuqta bo'ladi. AC ning o'rtasi ((1 + 7)/2; (2 + 4)/2; (3 + 9)/2) = (4; 3; 6). Shu nuqta BD ning ham o'rtasi, demak D = 2·(4; 3; 6) − B = (8 − 4; 6 − 6; 12 − 3) = (4; 0; 9). Javob: (4; 0; 9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesma-ortasi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#03bbfd47"
+    },
+    {
+      "q": "AB kesmaning o'rtasi C(1; 2; −3) nuqta, uning bir uchi esa A(−4; 6; 1) ekani ma'lum. Ikkinchi uchi B ning koordinatalarini aniqlang.",
+      "v": [
+        "(6; −2; −7)",
+        "(−1,5; 4; −1)",
+        "(5; −4; −4)",
+        "(−9; 10; 5)"
+      ],
+      "t": 0,
+      "izoh": "O'rta nuqta shartidan (−4 + x)/2 = 1, (6 + y)/2 = 2, (1 + z)/2 = −3 tengliklarni yozamiz. Bundan x = 6, y = −2, z = −7 chiqadi. Javob: (6; −2; −7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesma-uchini-topish",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#c0c1dd7d"
+    },
+    {
+      "q": "Ombordagi konveyer tasmasining bir uchi P(2; −1; 4), aynan o'rtasi esa M(5; 3; 4) nuqtada, o'lchov metrda. Tasmaning ikkinchi uchi qaysi nuqtada tugaydi?",
+      "v": [
+        "(3; 4; 0)",
+        "(8; 7; 4)",
+        "(7; 2; 8)",
+        "(3,5; 1; 4)"
+      ],
+      "t": 1,
+      "izoh": "M nuqta PQ kesmaning o'rtasi bo'lgani uchun (2 + x)/2 = 5, (−1 + y)/2 = 3, (4 + z)/2 = 4. Bu tengliklardan x = 8, y = 7, z = 4 topiladi. Javob: (8; 7; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesma-uchini-topish",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#207b9c30"
+    },
+    {
+      "q": "AB kesmaning o'rtasi aynan koordinata boshida yotadi. A(−5; 7; −2) bo'lsa, B nuqtaning koordinatalari qanday bo'ladi?",
+      "v": [
+        "(−2,5; 3,5; −1)",
+        "(0; 0; 0)",
+        "(5; −7; 2)",
+        "(−5; −7; 2)"
+      ],
+      "t": 2,
+      "izoh": "O'rta nuqta koordinata boshi bo'lsa, (−5 + x)/2 = 0, (7 + y)/2 = 0, (−2 + z)/2 = 0 bo'ladi. Bundan x = 5, y = −7, z = 2. Demak B nuqta A ga koordinata boshiga nisbatan simmetrik. Javob: (5; −7; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesma-uchini-topish",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#47fd072f"
+    },
+    {
+      "q": "A(2; 3; −1) va B(10; −5; 7) nuqtalar berilgan. Avval AB kesmaning o'rtasi M topildi, so'ng AM kesmaning o'rtasi N topildi. N nuqtaning koordinatalarini aniqlang.",
+      "v": [
+        "(6; −1; 3)",
+        "(8; −3; 5)",
+        "(3; 2; 0)",
+        "(4; 1; 1)"
+      ],
+      "t": 3,
+      "izoh": "Avval M ni topamiz: ((2 + 10)/2; (3 + (−5))/2; (−1 + 7)/2) = (6; −1; 3). So'ng AM ning o'rtasini topamiz: ((2 + 6)/2; (3 + (−1))/2; (−1 + 3)/2) = (4; 1; 1). Javob: (4; 1; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesma-uchini-topish",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#aa0bf9ce"
+    },
+    {
+      "q": "A(3; −5; 7) nuqtaning xOy koordinata tekisligiga nisbatan simmetrik nuqtasi qaysi variantda to'g'ri ko'rsatilgan?",
+      "v": [
+        "(3; −5; −7)",
+        "(−3; 5; 7)",
+        "(3; 5; 7)",
+        "(−3; −5; 7)"
+      ],
+      "t": 0,
+      "izoh": "xOy tekisligiga nisbatan simmetriyada x va y koordinatalar o'zgarmaydi, z esa qarama-qarshi ishora oladi. Shuning uchun (3; −5; 7) nuqta (3; −5; −7) ga o'tadi. Javob: (3; −5; −7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekislikka-simmetriya",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#8d60b6a3"
+    },
+    {
+      "q": "B(−2; 4; 6) nuqtaning yOz koordinata tekisligiga nisbatan simmetrigi qaysi nuqta bo'ladi?",
+      "v": [
+        "(−2; −4; 6)",
+        "(2; 4; 6)",
+        "(−2; 4; −6)",
+        "(2; −4; −6)"
+      ],
+      "t": 1,
+      "izoh": "yOz tekisligida barcha nuqtalar uchun x = 0 bo'ladi, shuning uchun simmetriyada faqat x koordinataning ishorasi almashadi. Demak (−2; 4; 6) nuqta (2; 4; 6) ga o'tadi. Javob: (2; 4; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekislikka-simmetriya",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#8e0f5dae"
+    },
+    {
+      "q": "C(5; −1; −3) nuqta xOz koordinata tekisligiga nisbatan akslantirilsa, qaysi nuqta hosil bo'ladi?",
+      "v": [
+        "(−5; −1; −3)",
+        "(5; −1; 3)",
+        "(5; 1; −3)",
+        "(−5; 1; 3)"
+      ],
+      "t": 2,
+      "izoh": "xOz tekisligiga nisbatan simmetriyada y koordinataning ishorasi almashadi, x va z esa saqlanadi. Demak (5; −1; −3) nuqta (5; 1; −3) ga o'tadi. Javob: (5; 1; −3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekislikka-simmetriya",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#52790bfd"
+    },
+    {
+      "q": "Xonaning polini xOy tekisligi deb olsak, shift lampasi L(2; 3; 4) nuqtada joylashgan. Poldagi sayqallangan sirtda lampaning aksi qaysi nuqtada ko'rinadi?",
+      "v": [
+        "(−2; −3; 4)",
+        "(2; −3; 4)",
+        "(−2; 3; 4)",
+        "(2; 3; −4)"
+      ],
+      "t": 3,
+      "izoh": "Sayqallangan pol xOy tekisligiga nisbatan simmetriyani beradi, ya'ni faqat z koordinataning ishorasi almashadi. Lampa (2; 3; 4) da bo'lsa, aksi (2; 3; −4) nuqtada ko'rinadi. Javob: (2; 3; −4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekislikka-simmetriya",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#2edeca0f"
+    },
+    {
+      "q": "M(4; −2; 6) nuqta avval xOy tekisligiga nisbatan akslantirildi, so'ng hosil bo'lgan nuqta yOz tekisligiga nisbatan akslantirildi. Oxirgi nuqtaning koordinatalarini toping.",
+      "v": [
+        "(−4; −2; −6)",
+        "(−4; 2; 6)",
+        "(4; 2; −6)",
+        "(−4; −2; 6)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi akslantirishda z ishorasi almashadi: (4; −2; 6) → (4; −2; −6). Ikkinchi akslantirishda x ishorasi almashadi: (4; −2; −6) → (−4; −2; −6). Natija koordinata boshiga nisbatan simmetrik nuqta bilan bir xil chiqdi. Javob: (−4; −2; −6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekislikka-simmetriya",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#5fdb84f4"
+    },
+    {
+      "q": "A(2; −3; 5) nuqtaning koordinata boshiga nisbatan simmetrik nuqtasi qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "(2; 3; 5)",
+        "(−2; 3; −5)",
+        "(−2; −3; −5)",
+        "(2; −3; −5)"
+      ],
+      "t": 1,
+      "izoh": "Koordinata boshiga nisbatan simmetriyada uchala koordinata ham o'z ishorasini qarama-qarshisiga almashtiradi. Demak (2; −3; 5) nuqta (−2; 3; −5) ga o'tadi. Javob: (−2; 3; −5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oq-va-boshga-simmetriya",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#9c8ac9ee"
+    },
+    {
+      "q": "B(−1; 4; 7) nuqtaning Oz o'qiga nisbatan simmetrigi qaysi nuqta ekanini aniqlang.",
+      "v": [
+        "(−1; −4; −7)",
+        "(1; 4; −7)",
+        "(1; −4; 7)",
+        "(−1; 4; −7)"
+      ],
+      "t": 2,
+      "izoh": "Oz o'qiga nisbatan simmetriyada shu o'q bo'ylab yotgan z koordinata saqlanadi, x va y esa ishorasini almashtiradi. Demak (−1; 4; 7) nuqta (1; −4; 7) ga o'tadi. Javob: (1; −4; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oq-va-boshga-simmetriya",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#4eb272ac"
+    },
+    {
+      "q": "C(6; 2; −5) nuqta Ox o'qiga nisbatan akslantirilganda qaysi nuqtaga o'tishini ko'rsating.",
+      "v": [
+        "(−6; 2; −5)",
+        "(6; 2; 5)",
+        "(−6; −2; −5)",
+        "(6; −2; 5)"
+      ],
+      "t": 3,
+      "izoh": "Ox o'qiga nisbatan simmetriyada x koordinata o'zgarmaydi, qolgan ikkitasi ishorasini almashtiradi. Demak (6; 2; −5) nuqta (6; −2; 5) ga o'tadi. Javob: (6; −2; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oq-va-boshga-simmetriya",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#bab8d777"
+    },
+    {
+      "q": "Bir nuqtaning Oy o'qiga nisbatan simmetrigi (3; −4; 5) ekani ma'lum. Shu nuqtaning o'zi xOz tekisligiga nisbatan qanday nuqtaga akslanadi?",
+      "v": [
+        "(−3; 4; −5)",
+        "(3; 4; 5)",
+        "(−3; −4; −5)",
+        "(3; −4; −5)"
+      ],
+      "t": 0,
+      "izoh": "Oy o'qiga nisbatan simmetriyada x va z ishorasi almashadi, y saqlanadi. Demak izlanayotgan nuqta P(−3; −4; −5) bo'ladi. Endi P ni xOz tekisligiga akslantiramiz: y ishorasi almashadi va (−3; 4; −5) chiqadi. Javob: (−3; 4; −5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oq-va-boshga-simmetriya",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#8b43c401"
+    },
+    {
+      "q": "A(3; −4; 12) nuqtadan xOy koordinata tekisligigacha bo'lgan masofa nechaga tengligini aniqlang.",
+      "v": [
+        "5",
+        "12",
+        "13",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Nuqtadan xOy tekisligigacha masofa uning z koordinatasi moduliga teng bo'ladi. Bu yerda z = 12, demak masofa 12 ga teng. Bu qiymatni Oz o'qigacha bo'lgan masofa bilan chalkashtirmaslik kerak. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekislik-va-oqqacha-masofa",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#59a229f3"
+    },
+    {
+      "q": "Fazoda B(6; −8; 5) nuqta berilgan. Undan Oz koordinata o'qigacha bo'lgan masofani hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "5",
+        "√125",
+        "10",
+        "14"
+      ],
+      "t": 2,
+      "izoh": "Oz o'qigacha masofa √(x² + y²) formulasi bilan topiladi, chunki o'q bo'ylab yo'nalgan z koordinata hisobga olinmaydi. √(36 + 64) = √100 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekislik-va-oqqacha-masofa",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#82d93359"
+    },
+    {
+      "q": "Sexning polini xOy tekisligi, yon devorini esa yOz tekisligi deb olaylik. Ilgak I(4; 7; 3) nuqtada joylashgan bo'lsa, undan yon devorgacha bo'lgan masofa qancha?",
+      "v": [
+        "3 m",
+        "7 m",
+        "√74 m",
+        "4 m"
+      ],
+      "t": 3,
+      "izoh": "yOz tekisligigacha bo'lgan masofa nuqtaning x koordinatasi moduliga teng. Ilgak uchun x = 4, demak devorgacha masofa 4 metr. Poldan balandlik esa z = 3 metr, bu boshqa kattalik. Javob: 4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekislik-va-oqqacha-masofa",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#a674ba0f"
+    },
+    {
+      "q": "M(2; y; 6) nuqtadan Ox koordinata o'qigacha bo'lgan masofa 10 birlikka teng. y ning musbat qiymatini toping.",
+      "v": [
+        "8",
+        "4",
+        "√60",
+        "64"
+      ],
+      "t": 0,
+      "izoh": "Ox o'qigacha masofa √(y² + z²) ga teng, ya'ni x koordinata qatnashmaydi. Shartga ko'ra √(y² + 36) = 10, demak y² + 36 = 100 va y² = 64. Bundan y = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekislik-va-oqqacha-masofa",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#8564ca45"
+    },
+    {
+      "q": "A(0; 3; 5), B(2; 0; 7), C(4; 6; 0) va D(1; 2; 3) nuqtalardan qaysi biri xOz koordinata tekisligida yotadi?",
+      "v": [
+        "A nuqta",
+        "B nuqta",
+        "C nuqta",
+        "D nuqta"
+      ],
+      "t": 1,
+      "izoh": "xOz tekisligida yotgan nuqtaning y koordinatasi nolga teng bo'lishi shart. Berilganlar ichida faqat B(2; 0; 7) nuqtada y = 0. Javob: B nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtaning-joylashuvi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#345be867"
+    },
+    {
+      "q": "P(0; 0; −7), Q(3; 0; 0), R(0; 5; 0) va S(0; 4; 2) nuqtalardan qaysi biri Oy koordinata o'qida yotadi?",
+      "v": [
+        "P nuqta",
+        "Q nuqta",
+        "R nuqta",
+        "S nuqta"
+      ],
+      "t": 2,
+      "izoh": "Oy o'qida yotgan nuqtada x = 0 va z = 0 bo'lishi kerak, y esa ixtiyoriy. Faqat R(0; 5; 0) nuqtada ikkala shart ham bajariladi. Javob: R nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtaning-joylashuvi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#54133f2c"
+    },
+    {
+      "q": "Geodezist uchta reper belgisini K(5; 0; 0), L(0; 6; 0) va N(0; 0; 4) nuqtalarga qo'ydi. Bu belgilarning joylashuvi haqida qaysi fikr to'g'ri bo'ladi?",
+      "v": [
+        "Faqat ikkitasi koordinata o'qida yotadi",
+        "Uchalasi bitta koordinata tekisligida yotadi",
+        "Uchalasi ham koordinata boshida ustma-ust tushadi",
+        "Uchalasi ham koordinata o'qlarida yotadi"
+      ],
+      "t": 3,
+      "izoh": "K(5; 0; 0) nuqtada faqat x noldan farqli, demak u Ox o'qida yotadi. Xuddi shunday L(0; 6; 0) nuqta Oy o'qida, N(0; 0; 4) esa Oz o'qida joylashgan. Demak uchala belgi ham koordinata o'qlarida turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtaning-joylashuvi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#22438791"
+    },
+    {
+      "q": "A(4; −3; 0) nuqta fazoda aynan qaysi joyda yotishini ko'rsating.",
+      "v": [
+        "xOz tekisligida",
+        "xOy tekisligida",
+        "Oz o'qida",
+        "yOz tekisligida"
+      ],
+      "t": 1,
+      "izoh": "Nuqtaning z koordinatasi nolga teng bo'lsa, u xOy tekisligida yotadi. A(4; −3; 0) da aynan z = 0, x va y esa noldan farqli, shuning uchun nuqta o'qda emas, tekislikda joylashgan. Javob: xOy tekisligida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtaning-joylashuvi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#fc8c5d53"
+    },
+    {
+      "q": "Markazi C(2; −1; 3) nuqtada bo'lib, radiusi 4 birlikka teng bo'lgan sferaning tenglamasini yozing.",
+      "v": [
+        "(x − 2)² + (y + 1)² + (z − 3)² = 16",
+        "(x + 2)² + (y − 1)² + (z + 3)² = 16",
+        "(x − 2)² + (y + 1)² + (z − 3)² = 4",
+        "(x + 2)² + (y − 1)² + (z + 3)² = 4"
+      ],
+      "t": 0,
+      "izoh": "Markazi C(x₀; y₀; z₀), radiusi R bo'lgan sfera tenglamasi (x − x₀)² + (y − y₀)² + (z − z₀)² = R² ko'rinishida yoziladi. Bu yerda x₀ = 2, y₀ = −1, z₀ = 3 va R² = 16. Manfiy koordinata qavs ichida qo'shuv bo'lib chiqadi. Javob: (x − 2)² + (y + 1)² + (z − 3)² = 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sfera-tenglamasi-tuzish",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#5961dc67"
+    },
+    {
+      "q": "Markazi koordinata boshida bo'lib, radiusi 7 birlikka teng sferaning tenglamasi qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "x² + y² + z² = 7",
+        "x² + y² + z² = 14",
+        "x² + y² + z² = 49",
+        "(x − 7)² + y² + z² = 49"
+      ],
+      "t": 2,
+      "izoh": "Markaz koordinata boshida bo'lganda sfera tenglamasi x² + y² + z² = R² ko'rinishini oladi. R = 7 bo'lgani uchun o'ng tomonda R² = 49 turadi. Javob: x² + y² + z² = 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sfera-tenglamasi-tuzish",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#fbfcce10"
+    },
+    {
+      "q": "Sferik suv rezervuarining markazi C(0; 0; 5) nuqtada, radiusi esa 3 metrga teng. Rezervuar sirtining tenglamasini ko'rsating.",
+      "v": [
+        "x² + y² + (z − 5)² = 9",
+        "x² + y² + (z + 5)² = 9",
+        "x² + y² + (z − 5)² = 3",
+        "x² + y² + z² = 9"
+      ],
+      "t": 0,
+      "izoh": "Markaz C(0; 0; 5) va R = 3 bo'lgani uchun (x − 0)² + (y − 0)² + (z − 5)² = 3² yoziladi. Soddalashtirsak x² + y² + (z − 5)² = 9 hosil bo'ladi. O'ng tomonda radiusning o'zi emas, kvadrati turishini unutmaslik kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sfera-tenglamasi-tuzish",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#1f146b22"
+    },
+    {
+      "q": "Markazi C(−3; 0; 2) nuqtada bo'lgan sfera koordinata boshidan o'tadi. Shu sferaning tenglamasini yozing.",
+      "v": [
+        "(x − 3)² + y² + (z + 2)² = 13",
+        "(x + 3)² + y² + (z − 2)² = 13",
+        "(x + 3)² + y² + (z − 2)² = 5",
+        "(x + 3)² + y² + (z − 2)² = 25"
+      ],
+      "t": 1,
+      "izoh": "Sfera koordinata boshidan o'tsa, radius markazdan koordinata boshigacha bo'lgan masofaga teng bo'ladi. Demak R² = (−3)² + 0² + 2² = 9 + 4 = 13. Tenglama (x + 3)² + y² + (z − 2)² = 13 ko'rinishini oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sfera-tenglamasi-tuzish",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#c4f0bcc8"
+    },
+    {
+      "q": "Sferaning markazi C(1; 2; −2) nuqtada bo'lib, u xOy koordinata tekisligiga urinadi. Shu sferaning tenglamasini toping.",
+      "v": [
+        "(x − 1)² + (y − 2)² + (z + 2)² = 1",
+        "(x − 1)² + (y − 2)² + (z + 2)² = 9",
+        "(x − 1)² + (y − 2)² + (z + 2)² = 4",
+        "(x − 1)² + (y − 2)² + (z + 2)² = 5"
+      ],
+      "t": 2,
+      "izoh": "Sfera tekislikka urinsa, markazdan shu tekislikkacha bo'lgan masofa radiusga teng bo'ladi. xOy tekisligigacha masofa |z₀| = |−2| = 2, demak R = 2 va R² = 4. Tenglama (x − 1)² + (y − 2)² + (z + 2)² = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sfera-tenglamasi-tuzish",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#a31e0986"
+    },
+    {
+      "q": "(x − 3)² + (y + 4)² + (z − 1)² = 25 tenglama bilan berilgan sferaning markazi va radiusini ko'rsating.",
+      "v": [
+        "C(−3; 4; −1), R = 5",
+        "C(3; −4; 1), R = 25",
+        "C(−3; 4; −1), R = 25",
+        "C(3; −4; 1), R = 5"
+      ],
+      "t": 3,
+      "izoh": "Kanonik tenglamada qavs ichidagi sonning ishorasi teskarisiga o'zgaradi: (x − 3) dan x₀ = 3, (y + 4) dan y₀ = −4, (z − 1) dan z₀ = 1. O'ng tomondagi 25 esa R² bo'lgani uchun R = 5. Javob: C(3; −4; 1), R = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sfera-markaz-radius-oqish",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#a4c70c9a"
+    },
+    {
+      "q": "x² + (y − 6)² + z² = 36 sferaning markazi qaysi nuqtada joylashgan va radiusi nechaga teng?",
+      "v": [
+        "C(0; 6; 0), R = 6",
+        "C(0; −6; 0), R = 6",
+        "C(0; 6; 0), R = 36",
+        "C(0; 6; 0), R = 18"
+      ],
+      "t": 0,
+      "izoh": "Tenglamada x va z hech qanday siljishsiz turibdi, demak x₀ = 0 va z₀ = 0. (y − 6) qavsdan y₀ = 6 chiqadi. O'ng tomon R² = 36 bo'lgani uchun R = 6. Javob: C(0; 6; 0), R = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sfera-markaz-radius-oqish",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#88ef42d1"
+    },
+    {
+      "q": "Radar stansiyasining qamrov chegarasi (x + 2)² + (y − 5)² + (z − 1)² = 100 sfera bilan berilgan, birlik kilometr. Stansiya qayerda turibdi va u necha kilometrgacha ko'radi?",
+      "v": [
+        "(2; −5; −1) nuqtada, 10 km",
+        "(−2; 5; 1) nuqtada, 10 km",
+        "(−2; 5; 1) nuqtada, 100 km",
+        "(−2; 5; 1) nuqtada, 50 km"
+      ],
+      "t": 1,
+      "izoh": "(x + 2) qavsdan x₀ = −2, (y − 5) dan y₀ = 5, (z − 1) dan z₀ = 1 kelib chiqadi. O'ng tomondagi 100 — radiusning kvadrati, demak R = 10 kilometr. Javob: (−2; 5; 1) nuqtada, 10 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sfera-markaz-radius-oqish",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#9183279f"
+    },
+    {
+      "q": "2x² + 2y² + 2z² = 72 tenglama fazoda sferani ifodalaydi. Shu sferaning radiusi nechaga teng bo'ladi?",
+      "v": [
+        "36",
+        "6√2",
+        "6",
+        "72"
+      ],
+      "t": 2,
+      "izoh": "Kanonik ko'rinishga keltirish uchun tenglamaning ikkala tomonini 2 ga bo'lamiz: x² + y² + z² = 36. Bu markazi koordinata boshida bo'lgan sfera va R² = 36. Demak R = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sfera-markaz-radius-oqish",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#d670534c"
+    },
+    {
+      "q": "x² + y² + z² − 4x + 6y − 2z − 11 = 0 tenglama sferani ifodalaydi. Uning markazi va radiusini toping.",
+      "v": [
+        "C(−2; 3; −1), R = 5",
+        "C(2; −3; 1), R = 25",
+        "C(4; −6; 2), R = 5",
+        "C(2; −3; 1), R = 5"
+      ],
+      "t": 3,
+      "izoh": "To'la kvadratlarni ajratamiz: x² − 4x = (x − 2)² − 4, y² + 6y = (y + 3)² − 9, z² − 2z = (z − 1)² − 1. Tenglama (x − 2)² + (y + 3)² + (z − 1)² = 4 + 9 + 1 + 11 = 25 ko'rinishga keladi. Demak markaz C(2; −3; 1) va R = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sfera-toldirish-kvadrat",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#268492e7"
+    },
+    {
+      "q": "x² + y² + z² + 6x − 8y + 24 = 0 tenglama bilan berilgan sferaning markazi va radiusini aniqlang.",
+      "v": [
+        "C(−3; 4; 0), R = 1",
+        "C(3; −4; 0), R = 1",
+        "C(−3; 4; 0), R = 5",
+        "C(−3; 4; 0), R = 7"
+      ],
+      "t": 0,
+      "izoh": "To'la kvadratlarni ajratamiz: x² + 6x = (x + 3)² − 9 va y² − 8y = (y − 4)² − 16. Tenglama (x + 3)² + (y − 4)² + z² = 9 + 16 − 24 = 1 ko'rinishini oladi. Demak markaz C(−3; 4; 0), radius R = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sfera-toldirish-kvadrat",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#9f10b539"
+    },
+    {
+      "q": "Fazoda x² + y² + z² − 2x + 4z − 4 = 0 tenglama berilgan. Bu sferaning markazi qaysi nuqtada va radiusi qancha?",
+      "v": [
+        "C(−1; 0; 2), R = 3",
+        "C(1; 0; −2), R = 3",
+        "C(1; 0; −2), R = 9",
+        "C(1; 0; −2), R = 2"
+      ],
+      "t": 1,
+      "izoh": "To'la kvadratlarni ajratamiz: x² − 2x = (x − 1)² − 1 va z² + 4z = (z + 2)² − 4. Tenglama (x − 1)² + y² + (z + 2)² = 1 + 4 + 4 = 9 ga aylanadi. Demak markaz C(1; 0; −2), radius R = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sfera-toldirish-kvadrat",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#67e6d497"
+    },
+    {
+      "q": "x² + y² + z² − 10x + 2y − 8z + k = 0 tenglama radiusi 4 ga teng sferani ifodalaydi. k sonining qiymatini toping.",
+      "v": [
+        "−26",
+        "42",
+        "26",
+        "58"
+      ],
+      "t": 2,
+      "izoh": "To'la kvadratlar ajratilsa markaz C(5; −1; 4) chiqadi va o'ng tomonda 25 + 1 + 16 − k = 42 − k qoladi. Bu ifoda R² ga teng bo'lishi kerak, ya'ni 42 − k = 16. Bundan k = 26. Javob: 26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sfera-toldirish-kvadrat",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#d2a13843"
+    },
+    {
+      "q": "x² + y² + z² + 4x − 6y + 2z + 14 = 0 tenglamani qanoatlantiruvchi fazoviy nuqtalar to'plami nimadan iborat bo'ladi?",
+      "v": [
+        "Radiusi 1 ga teng sferadan",
+        "Bo'sh to'plamdan",
+        "Radiusi 14 ga teng sferadan",
+        "Faqat bitta nuqtadan, ya'ni (−2; 3; −1) dan"
+      ],
+      "t": 3,
+      "izoh": "To'la kvadratlarni ajratsak (x + 2)² + (y − 3)² + (z + 1)² = 4 + 9 + 1 − 14 = 0 hosil bo'ladi. Uchta kvadratning yig'indisi faqat har biri alohida nolga teng bo'lgandagina nolga aylanadi. Demak x = −2, y = 3, z = −1 va to'plam bitta nuqtadan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sfera-toldirish-kvadrat",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#41f49161"
+    },
+    {
+      "q": "AB kesma sferaning diametri bo'lib, A(2; −1; 4) va B(8; 7; 4) nuqtalarda tugaydi. Sferaning markazi va radiusini toping.",
+      "v": [
+        "C(5; 3; 4), R = 5",
+        "C(5; 3; 4), R = 10",
+        "C(10; 6; 8), R = 5",
+        "C(3; 4; 0), R = 5"
+      ],
+      "t": 0,
+      "izoh": "Diametrning o'rtasi sferaning markazi bo'ladi: ((2 + 8)/2; (−1 + 7)/2; (4 + 4)/2) = (5; 3; 4). Diametr uzunligi AB = √(36 + 64 + 0) = 10, radius esa uning yarmi, ya'ni 5. Javob: C(5; 3; 4), R = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sfera-diametr-uchlari",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#c62e6014"
+    },
+    {
+      "q": "Sferaning diametri koordinata boshi bilan N(4; −4; 2) nuqtani tutashtiradi. Shu sferaning tenglamasini yozing.",
+      "v": [
+        "(x − 2)² + (y + 2)² + (z − 1)² = 36",
+        "(x − 2)² + (y + 2)² + (z − 1)² = 9",
+        "(x − 4)² + (y + 4)² + (z − 2)² = 9",
+        "(x + 2)² + (y − 2)² + (z + 1)² = 9"
+      ],
+      "t": 1,
+      "izoh": "Markaz diametr uchlarining o'rtasi: ((0 + 4)/2; (0 − 4)/2; (0 + 2)/2) = (2; −2; 1). Diametr uzunligi √(16 + 16 + 4) = √36 = 6, demak R = 3 va R² = 9. Tenglama (x − 2)² + (y + 2)² + (z − 1)² = 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sfera-diametr-uchlari",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#17278727"
+    },
+    {
+      "q": "Sferik gumbazning eng past nuqtasi P(0; 0; 0), eng baland nuqtasi esa Q(0; 0; 12) da, o'lchov metrda. Gumbaz sirti to'liq sferaning qismi bo'lsa, shu sferaning tenglamasi qanday?",
+      "v": [
+        "x² + y² + (z − 12)² = 144",
+        "x² + y² + (z − 6)² = 144",
+        "x² + y² + (z − 6)² = 36",
+        "x² + y² + z² = 36"
+      ],
+      "t": 2,
+      "izoh": "P va Q nuqtalar sferaning diametral qarama-qarshi nuqtalari, shuning uchun markaz ularning o'rtasi: (0; 0; 6). Diametr 12 metr bo'lgani uchun R = 6 va R² = 36. Tenglama x² + y² + (z − 6)² = 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sfera-diametr-uchlari",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#7fb8c933"
+    },
+    {
+      "q": "Sferaning markazi C(2; 3; −1) nuqtada joylashgan. Diametrning bir uchi A(6; 1; 3) bo'lsa, ikkinchi uchi qaysi nuqtada bo'ladi?",
+      "v": [
+        "(4; −2; 4)",
+        "(8; 4; 2)",
+        "(2; 5; −5)",
+        "(−2; 5; −5)"
+      ],
+      "t": 3,
+      "izoh": "Markaz diametrning o'rtasi bo'lgani uchun (6 + x)/2 = 2, (1 + y)/2 = 3, (3 + z)/2 = −1 tengliklar o'rinli. Bundan x = −2, y = 5, z = −5 chiqadi. Javob: (−2; 5; −5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sfera-diametr-uchlari",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#62035fad"
+    },
+    {
+      "q": "M(3; 1; 2) nuqta (x − 1)² + (y − 1)² + (z − 2)² = 4 sferaga nisbatan qanday joylashganini aniqlang.",
+      "v": [
+        "Sfera sirtida yotadi",
+        "Sfera ichida yotadi",
+        "Sferadan tashqarida yotadi",
+        "Sferaning markazida yotadi"
+      ],
+      "t": 0,
+      "izoh": "Nuqta koordinatalarini tenglamaning chap tomoniga qo'yamiz: (3 − 1)² + (1 − 1)² + (2 − 2)² = 4 + 0 + 0 = 4. Bu qiymat o'ng tomondagi 4 ga aynan teng chiqdi. Demak nuqta sfera sirtida yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-sferaga-nisbatan",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#f2a99579"
+    },
+    {
+      "q": "N(4; 5; 6) nuqtaning (x − 1)² + (y − 1)² + (z − 2)² = 36 sferaga nisbatan holatini aniqlang.",
+      "v": [
+        "Sfera ichida",
+        "Sferadan tashqarida",
+        "Sfera sirtida",
+        "Sferaning markazida"
+      ],
+      "t": 1,
+      "izoh": "Sfera markazi C(1; 1; 2), radiusi R = 6. Markazdan N gacha masofa √(9 + 16 + 16) = √41. Bu qiymat taxminan 6,4 bo'lib, radius 6 dan katta. Demak nuqta sferadan tashqarida joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-sferaga-nisbatan",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#0d1744d4"
+    },
+    {
+      "q": "Router R(2; 3; 1) nuqtada o'rnatilgan va u 6 metr radiusli sferik hududni qamrab oladi. Noutbuk N(6; 6; 3) nuqtada tursa, u qamrovga tushadimi?",
+      "v": [
+        "Yo'q, chunki masofa √29 m bo'lib, 6 m dan katta",
+        "Yo'q, chunki masofa 29 m ga teng",
+        "Ha, chunki masofa √29 m bo'lib, 6 m dan kichik",
+        "Ha, chunki masofa aynan 6 m ga teng"
+      ],
+      "t": 2,
+      "izoh": "Routerdan noutbukkacha masofa √((6 − 2)² + (6 − 3)² + (3 − 1)²) = √(16 + 9 + 4) = √29 ga teng. √29 taxminan 5,39 metr bo'lib, qamrov radiusi 6 metrdan kichik. Demak noutbuk qamrov ichida qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-sferaga-nisbatan",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#bc49cb6d"
+    },
+    {
+      "q": "A(a; 2; 3) nuqta x² + y² + z² = 49 tenglama bilan berilgan sfera sirtida yotadi. a ning musbat qiymatini toping.",
+      "v": [
+        "2",
+        "√42",
+        "36",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Nuqta sferada yotgani uchun uning koordinatalari tenglamani qanoatlantiradi: a² + 2² + 3² = 49. Bundan a² = 49 − 4 − 9 = 36 kelib chiqadi. Demak a = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqta-sferaga-nisbatan",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#dc31f5de"
+    },
+    {
+      "q": "(x − 2)² + (y + 1)² + (z − 3)² = 25 sfera xOy tekisligi bilan kesishadi. Kesimda hosil bo'lgan aylananing radiusi nechaga teng?",
+      "v": [
+        "4",
+        "5",
+        "3",
+        "√34"
+      ],
+      "t": 0,
+      "izoh": "Sfera markazi C(2; −1; 3), radiusi R = 5. Markazdan xOy tekisligigacha masofa d = |3| = 3. Kesim aylanasining radiusi r = √(R² − d²) = √(25 − 9) = √16 = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sfera-tekislik-kesimi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#5d763d6c"
+    },
+    {
+      "q": "Markazi C(6; 0; 0) nuqtada va radiusi 10 ga teng sfera yOz koordinata tekisligini kesib o'tadi. Kesimdagi aylananing radiusini toping.",
+      "v": [
+        "6",
+        "8",
+        "10",
+        "√136"
+      ],
+      "t": 1,
+      "izoh": "Markazdan yOz tekisligigacha masofa uning x koordinatasi moduliga teng, ya'ni d = 6. Kesim aylanasi radiusi r = √(R² − d²) = √(100 − 36) = √64 = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sfera-tekislik-kesimi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#46eded1d"
+    },
+    {
+      "q": "Markazi C(0; 7; 0) nuqtada, radiusi 7 ga teng sfera xOz koordinata tekisligiga nisbatan qanday joylashgan?",
+      "v": [
+        "Uni aylana bo'ylab kesadi",
+        "Undan butunlay uzoqda, umumiy nuqtasi yo'q",
+        "Unga urinadi, ya'ni bitta umumiy nuqtasi bor",
+        "Uni ikkita aylana bo'ylab kesadi"
+      ],
+      "t": 2,
+      "izoh": "Markazdan xOz tekisligigacha masofa uning y koordinatasi moduliga teng, ya'ni 7. Bu masofa radius 7 ga aynan teng chiqdi. Masofa radiusga teng bo'lganda sfera tekislikka urinadi va ular bitta umumiy nuqtaga ega bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sfera-tekislik-kesimi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#cff14d82"
+    },
+    {
+      "q": "Sferik gumbazning sirti x² + y² + (z − 8)² = 100 tenglama bilan berilgan, yer sathi esa xOy tekisligi, o'lchov metrda. Gumbazning yerdagi tayanch doirasi radiusi necha metr?",
+      "v": [
+        "10 m",
+        "8 m",
+        "2 m",
+        "6 m"
+      ],
+      "t": 3,
+      "izoh": "Gumbaz markazi (0; 0; 8), radiusi R = 10. Markazdan yer sathigacha masofa d = 8 metr. Tayanch doira radiusi r = √(R² − d²) = √(100 − 64) = √36 = 6 metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sfera-tekislik-kesimi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#6ee3b2b0"
+    },
+    {
+      "q": "A(1; 1; 1), B(5; 1; 1) va C(1; 4; 1) uchlari bilan berilgan uchburchakning turini aniqlang.",
+      "v": [
+        "To'g'ri burchakli",
+        "Teng tomonli",
+        "Teng yonli, lekin to'g'ri burchakli emas",
+        "Uchburchak umuman hosil bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Tomonlarni hisoblaymiz: AB = √16 = 4, AC = √9 = 3, BC = √(16 + 9) = 5. Pifagor teoremasini tekshiramiz: 3² + 4² = 9 + 16 = 25 = 5². Demak uchburchak to'g'ri burchakli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-turi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#1efe2673"
+    },
+    {
+      "q": "A(0; 0; 0), B(4; 0; 0) va C(2; 0; 5) nuqtalar uchburchakning uchlari bo'lsa, bu uchburchak qanday uchburchak bo'ladi?",
+      "v": [
+        "Teng tomonli",
+        "Teng yonli",
+        "To'g'ri burchakli",
+        "Turli tomonli"
+      ],
+      "t": 1,
+      "izoh": "AB = 4, AC = √(4 + 0 + 25) = √29, BC = √(4 + 0 + 25) = √29. Demak ikki tomon o'zaro teng, uchinchisi esa boshqa uzunlikda. Pifagor sharti bajarilmagani uchun uchburchak teng yonli, ammo to'g'ri burchakli emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-turi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#c13fe347"
+    },
+    {
+      "q": "A(1; 0; 0), B(0; 1; 0) va C(0; 0; 1) nuqtalar orasidagi masofalarni solishtirib, ABC uchburchak turi haqida xulosa chiqaring.",
+      "v": [
+        "To'g'ri burchakli, katetlari 1 ga teng",
+        "Teng yonli, asosi 2 ga teng",
+        "Teng tomonli, har bir tomoni √2 ga teng",
+        "Turli tomonli uchburchak"
+      ],
+      "t": 2,
+      "izoh": "AB = √(1 + 1 + 0) = √2, BC = √(0 + 1 + 1) = √2, AC = √(1 + 0 + 1) = √2. Uchala tomon ham √2 ga teng chiqdi. Demak uchburchak teng tomonli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-turi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#760d3bb3"
+    },
+    {
+      "q": "A(1; 0; 2), B(3; 4; 2) va C(5; 8; 2) nuqtalar uchun AB, BC va AC masofalar hisoblandi. Bu nuqtalar haqida qanday xulosa to'g'ri bo'ladi?",
+      "v": [
+        "Teng yonli uchburchak hosil qiladi",
+        "To'g'ri burchakli uchburchak hosil qiladi",
+        "Teng tomonli uchburchak hosil qiladi",
+        "Uchtasi bitta to'g'ri chiziqda yotadi, B esa AC ning o'rtasi"
+      ],
+      "t": 3,
+      "izoh": "AB = √(4 + 16) = 2√5, BC = √(4 + 16) = 2√5, AC = √(16 + 64) = 4√5. Ko'rinib turibdiki AB + BC = 4√5 = AC, ya'ni uchburchak tengsizligi tenglikka aylanadi. Demak nuqtalar bitta to'g'ri chiziqda yotadi va B nuqta AC kesmaning o'rtasi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-turi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#8e9c9d95"
+    },
+    {
+      "q": "A(0; 0; 0), B(3; 4; 0) va C(3; 4; 12) uchlari berilgan uchburchakning perimetrini hisoblang.",
+      "v": [
+        "30",
+        "34",
+        "17",
+        "186"
+      ],
+      "t": 0,
+      "izoh": "AB = √(9 + 16 + 0) = 5, BC = √(0 + 0 + 144) = 12, AC = √(9 + 16 + 144) = √169 = 13. Perimetr uchala tomon yig'indisiga teng: 5 + 12 + 13 = 30. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-perimetri-medianasi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#49708588"
+    },
+    {
+      "q": "ABC uchburchakning uchlari A(0; 0; 0), B(6; 0; 8) va C(2; 4; 0) nuqtalarda. A uchidan BC tomonga tushirilgan mediananing uzunligini hisoblang.",
+      "v": [
+        "36",
+        "6",
+        "10",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Avval BC tomonning o'rtasini topamiz: ((6 + 2)/2; (0 + 4)/2; (8 + 0)/2) = (4; 2; 4). Endi A dan shu nuqtagacha masofani hisoblaymiz: √(16 + 4 + 16) = √36 = 6. Mediana uzunligi 6 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-perimetri-medianasi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#e699c792"
+    },
+    {
+      "q": "Sexdagi uchta tayanch nuqta A(0; 0; 0), B(6; 0; 0) va C(3; 2; 6) koordinatalarda joylashgan, o'lchov metrda. Ularni uchburchak hosil qilib, A → B → C → A yopiq halqa bo'ylab tutashtiruvchi arqonning umumiy uzunligi necha metr?",
+      "v": [
+        "14 m",
+        "13 m",
+        "20 m",
+        "18 m"
+      ],
+      "t": 2,
+      "izoh": "AB = 6, BC = √(9 + 4 + 36) = √49 = 7, CA = √(9 + 4 + 36) = √49 = 7. Halqa yopiq bo'lgani uchun uchala tomon qo'shiladi: 6 + 7 + 7 = 20 metr. Agar oxirgi CA bo'lagi unutilsa, xato 13 m chiqadi. Javob: 20 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-perimetri-medianasi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#c9a4ee97"
+    },
+    {
+      "q": "A(2; 0; 0), B(0; 3; 0) va C(0; 0; 6) nuqtalar uchburchak hosil qiladi. Uning eng uzun tomoni qaysi va uzunligi qancha?",
+      "v": [
+        "AB, uzunligi √13",
+        "AC, uzunligi 2√10",
+        "BC, uzunligi 3√5",
+        "Uchala tomon ham o'zaro teng"
+      ],
+      "t": 2,
+      "izoh": "AB = √(4 + 9) = √13, AC = √(4 + 36) = √40 = 2√10, BC = √(9 + 36) = √45 = 3√5. Ildiz ostidagi sonlarni taqqoslasak 13 < 40 < 45. Demak eng uzun tomon BC bo'lib, u 3√5 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-perimetri-medianasi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#c34ed8c2"
+    },
+    {
+      "q": "To'g'ri burchakli parallelepipedning bir uchi koordinata boshida, qirralari koordinata o'qlari bo'ylab yo'nalgan va uzunliklari 2, 3 hamda 6 ga teng. Uning diagonali nechaga teng?",
+      "v": [
+        "7",
+        "11",
+        "49",
+        "√11"
+      ],
+      "t": 0,
+      "izoh": "Qirralar o'qlar bo'ylab yo'nalgani uchun qarama-qarshi uch (2; 3; 6) nuqtada bo'ladi. Diagonal shu nuqtadan koordinata boshigacha bo'lgan masofa: √(4 + 9 + 36) = √49 = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelepiped-diagonali",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#1ec90d37"
+    },
+    {
+      "q": "Yuk konteynerining ichki o'lchamlari 12 dm, 15 dm va 16 dm. Uning bir uchini koordinata boshiga qo'ysak, eng uzoq uchi qaysi masofada bo'ladi?",
+      "v": [
+        "43 dm",
+        "25 dm",
+        "625 dm",
+        "20 dm"
+      ],
+      "t": 1,
+      "izoh": "Eng uzoq uch (12; 15; 16) nuqtaga to'g'ri keladi. Masofa √(144 + 225 + 256) = √625 = 25 detsimetr. Bu konteynerning ichki diagonali. Javob: 25 dm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelepiped-diagonali",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#54d2f214"
+    },
+    {
+      "q": "To'g'ri burchakli parallelepipedning qarama-qarshi ikkita uchi A(1; 2; 3) va C(7; 10; 9) nuqtalarda. Uning markazi qaysi nuqtada joylashgan bo'ladi?",
+      "v": [
+        "(8; 12; 12)",
+        "(3; 4; 3)",
+        "(4; 6; 6)",
+        "(6; 8; 6)"
+      ],
+      "t": 2,
+      "izoh": "Parallelepipedning markazi qarama-qarshi uchlarni tutashtiruvchi diagonalning o'rtasida yotadi. O'rta nuqta: ((1 + 7)/2; (2 + 10)/2; (3 + 9)/2) = (4; 6; 6). Javob: (4; 6; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelepiped-diagonali",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#a84ddbbc"
+    },
+    {
+      "q": "Kubning bir uchi koordinata boshida, unga qarama-qarshi uchi esa (a; a; a) nuqtada joylashgan. Kubning diagonali 12√3 ga teng bo'lsa, a nechaga teng?",
+      "v": [
+        "4",
+        "36",
+        "12√3",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Koordinata boshidan (a; a; a) nuqtagacha masofa √(a² + a² + a²) = a√3 ga teng bo'ladi. Shartga ko'ra a√3 = 12√3, demak a = 12. Bu son bir vaqtning o'zida kub qirrasining uzunligi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallelepiped-diagonali",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#b6578fe8"
+    },
+    {
+      "q": "A(a; 3; 4) nuqta koordinata boshidan 13 birlik uzoqlikda joylashgan. a ning musbat qiymatini aniqlang.",
+      "v": [
+        "12",
+        "6",
+        "144",
+        "√194"
+      ],
+      "t": 0,
+      "izoh": "Masofa shartidan √(a² + 9 + 16) = 13 tenglamani yozamiz. Ikkala tomonni kvadratga ko'tarsak a² + 25 = 169 bo'ladi, ya'ni a² = 144. Demak a = 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-koordinata-masofadan",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#4f47c6c0"
+    },
+    {
+      "q": "A(2; −1; 5) va B(6; b; 5) nuqtalar orasidagi masofa 5 ga teng ekani ma'lum. b ning musbat qiymatini toping.",
+      "v": [
+        "4",
+        "2",
+        "−4",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Masofa formulasidan (6 − 2)² + (b + 1)² + (5 − 5)² = 25 tenglama hosil bo'ladi. Bundan 16 + (b + 1)² = 25, ya'ni (b + 1)² = 9. Demak b + 1 = 3 yoki b + 1 = −3, musbat yechim b = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-koordinata-masofadan",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#7a23571e"
+    },
+    {
+      "q": "B(6; −2; c) nuqta koordinata boshidan 7 birlik uzoqlikda joylashgan. c ning manfiy qiymatini toping.",
+      "v": [
+        "3",
+        "−9",
+        "−3",
+        "−1"
+      ],
+      "t": 2,
+      "izoh": "Shartdan √(36 + 4 + c²) = 7 tenglama kelib chiqadi. Kvadratga ko'tarsak 40 + c² = 49, demak c² = 9. Bundan c = 3 yoki c = −3, shart bo'yicha manfiy qiymat c = −3. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-koordinata-masofadan",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#ec55b736"
+    },
+    {
+      "q": "M(t; t; t) ko'rinishidagi nuqta koordinata boshidan 6√3 birlik uzoqlikda yotadi. t ning musbat qiymatini aniqlang.",
+      "v": [
+        "2√3",
+        "18",
+        "6√3",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Masofa OM = √(t² + t² + t²) = √(3t²) bo'ladi, t musbat bo'lgani uchun bu t√3 ga teng. Shartga ko'ra t√3 = 6√3, ikkala tomonni √3 ga bo'lsak t = 6 chiqadi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nomalum-koordinata-masofadan",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#5d0b653f"
+    },
+    {
+      "q": "Oz o'qida shunday nuqta topilsinki, u A(1; 2; 0) va B(2; 3; 2) nuqtalardan teng uzoqlikda bo'lsin. Bu nuqtaning koordinatalarini aniqlang.",
+      "v": [
+        "(0; 0; 3)",
+        "(0; 0; 1)",
+        "(1,5; 2,5; 1)",
+        "(0; 0; 2)"
+      ],
+      "t": 0,
+      "izoh": "Oz o'qidagi nuqtani M(0; 0; z) deb olamiz. MA² = 1 + 4 + z² = 5 + z², MB² = 4 + 9 + (2 − z)² = 17 − 4z + z². Tenglikdan 5 = 17 − 4z, demak 4z = 12 va z = 3. Javob: (0; 0; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-uzoq-nuqta",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#94183568"
+    },
+    {
+      "q": "Oy o'qining qaysi nuqtalari A(5; 0; 0) va B(0; 0; 5) nuqtalardan teng uzoqlikda joylashgan bo'ladi?",
+      "v": [
+        "Faqat koordinata boshi",
+        "Oy o'qining barcha nuqtalari",
+        "Faqat (0; 5; 0) nuqta",
+        "Bunday nuqta umuman mavjud emas"
+      ],
+      "t": 1,
+      "izoh": "Oy o'qidagi ixtiyoriy nuqtani M(0; y; 0) deb olamiz. MA² = 25 + y² + 0 = 25 + y², MB² = 0 + y² + 25 = 25 + y². Ikki ifoda y ning har qanday qiymatida o'zaro teng, demak o'qning barcha nuqtalari shartni qanoatlantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-uzoq-nuqta",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#cb39ee7d"
+    },
+    {
+      "q": "Ox o'qidagi qaysi nuqta A(0; 2; 1) va B(4; 1; 2) nuqtalardan bir xil masofada joylashganini toping.",
+      "v": [
+        "(4; 0; 0)",
+        "(3; 0; 0)",
+        "(2; 0; 0)",
+        "(2; 1,5; 1,5)"
+      ],
+      "t": 2,
+      "izoh": "Izlanayotgan nuqtani M(x; 0; 0) deb olamiz. MA² = x² + 4 + 1 = x² + 5, MB² = (x − 4)² + 1 + 4 = x² − 8x + 21. Tenglikdan 5 = 21 − 8x, demak 8x = 16 va x = 2. Javob: (2; 0; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-uzoq-nuqta",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#0057a8c7"
+    },
+    {
+      "q": "Koordinata boshidan aynan 5 birlik uzoqlikda joylashgan barcha fazoviy nuqtalar to'plami nimani hosil qiladi?",
+      "v": [
+        "Radiusi 5 bo'lgan aylanani",
+        "Radiusi 5 bo'lgan doirani",
+        "Qirrasi 5 ga teng kubni",
+        "Markazi koordinata boshida, radiusi 5 bo'lgan sferani"
+      ],
+      "t": 3,
+      "izoh": "Shart √(x² + y² + z²) = 5 ko'rinishida yoziladi, kvadratga ko'tarsak x² + y² + z² = 25 hosil bo'ladi. Bu markazi koordinata boshida va radiusi 5 ga teng sferaning tenglamasi. Aylana tekislikdagi shakl, fazoda esa aynan sfera hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-uzoq-nuqta",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#c99148f8"
+    },
+    {
+      "q": "Qidiruv droni A(20; 30; 50) nuqtadan B(60; 60; 170) nuqtaga to'g'ri chiziq bo'ylab uchdi, o'lchov metrda. Dron necha metr yo'l bosdi?",
+      "v": [
+        "130 m",
+        "190 m",
+        "50 m",
+        "16900 m"
+      ],
+      "t": 0,
+      "izoh": "Koordinata farqlari: 60 − 20 = 40, 60 − 30 = 30, 170 − 50 = 120. Masofa √(1600 + 900 + 14400) = √16900 = 130 metr. Javob: 130 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-fazoviy-masofa",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#c26f02d5"
+    },
+    {
+      "q": "Yer osti tunnelidagi ikkita nazorat nuqtasi P(100; 200; −20) va Q(160; 280; −20) koordinatalariga ega, o'lchov metrda. Ular orasidagi to'g'ri masofani hisoblang.",
+      "v": [
+        "140 m",
+        "100 m",
+        "10000 m",
+        "60 m"
+      ],
+      "t": 1,
+      "izoh": "Farqlarni topamiz: 160 − 100 = 60, 280 − 200 = 80, −20 − (−20) = 0. Masofa √(3600 + 6400 + 0) = √10000 = 100 metr. Ikkala nuqta bir xil chuqurlikda bo'lgani uchun z farqi nolga teng chiqdi. Javob: 100 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-fazoviy-masofa",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#d22d8788"
+    },
+    {
+      "q": "Dispetcher ekranida ikkita samolyot A(4; 3; 7) va B(16; 6; 11) nuqtalarda ko'rinmoqda, o'lchov kilometrda. Ular orasidagi masofa necha kilometr?",
+      "v": [
+        "19 km",
+        "12 km",
+        "169 km",
+        "13 km"
+      ],
+      "t": 3,
+      "izoh": "Farqlar: 16 − 4 = 12, 6 − 3 = 3, 11 − 7 = 4. Masofa √(144 + 9 + 16) = √169 = 13 kilometr. Faqat birinchi o'q bo'yicha farqni olib qo'ysa 12 chiqadi, uchala farqni shunchaki qo'shsa 19 chiqadi — ikkalasi ham xato. Javob: 13 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-fazoviy-masofa",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#5a8ae89c"
+    },
+    {
+      "q": "Omborda uchta harorat datchigi o'rnatilgan: A(0; 0; 0), B(2; 3; 6) va C(6; 6; 3), o'lchov metrda. Qaysi ikki datchik bir-biriga eng yaqin joylashgan?",
+      "v": [
+        "A va B, chunki masofa 7 m",
+        "A va C, chunki masofa 9 m",
+        "B va C, chunki masofa √34 m",
+        "B va C, chunki masofa 6 m"
+      ],
+      "t": 2,
+      "izoh": "AB = √(4 + 9 + 36) = √49 = 7, AC = √(36 + 36 + 9) = √81 = 9, BC = √(16 + 9 + 9) = √34. √34 taxminan 5,83 ga teng bo'lib, 7 va 9 dan kichik. Demak eng yaqin juftlik B va C datchiklari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-fazoviy-masofa",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#32549d03"
+    },
+    {
+      "q": "Sferik akvariumning sirti (x − 5)² + (y − 2)² + (z − 3)² = 36 tenglama bilan berilgan, birlik detsimetr. Akvarium sirtining yuzasi necha kvadrat detsimetrga teng?",
+      "v": [
+        "144π",
+        "36π",
+        "24π",
+        "288π"
+      ],
+      "t": 0,
+      "izoh": "Tenglamaning o'ng tomonidan R² = 36, demak R = 6 detsimetr. Sfera sirtining yuzasi S = 4πR² formulasi bilan topiladi. S = 4π·36 = 144π kvadrat detsimetr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-sfera-olcham",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#0e5d3ddd"
+    },
+    {
+      "q": "Sferik suv ombori sirti (x − 2)² + y² + (z − 9)² = 81 tenglamaga bo'ysunadi, birlik metr. Ombor sig'imi necha kub metrga teng?",
+      "v": [
+        "324π",
+        "972π",
+        "108π",
+        "243π"
+      ],
+      "t": 1,
+      "izoh": "R² = 81 bo'lgani uchun R = 9 metr. Shar hajmi V = (4/3)πR³ formulasi bilan hisoblanadi. V = (4/3)π·729 = 972π kub metr. Bu yerda sirt yuzasi formulasi bilan chalkashtirmaslik kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-sfera-olcham",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#d3b9d3d0"
+    },
+    {
+      "q": "Ustundagi antenna A(0; 0; 30) nuqtada o'rnatilgan va atrofidagi 50 metrli sferik hududni qamraydi, o'lchov metrda. Yer sathida, ya'ni xOy tekisligida qamrov doirasining radiusi necha metr?",
+      "v": [
+        "50 m",
+        "20 m",
+        "30 m",
+        "40 m"
+      ],
+      "t": 3,
+      "izoh": "Qamrov sferasining markazidan yer sathigacha masofa d = 30 metr, radius esa R = 50 metr. Yer sathidagi kesim doirasining radiusi r = √(R² − d²) = √(2500 − 900) = √1600 = 40 metr. Javob: 40 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-sfera-olcham",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#9d30b051"
+    },
+    {
+      "q": "Meteorologik zondning sferik pufagi (x − 1)² + (y + 2)² + (z − 40)² = 4 tenglama bilan tasvirlangan, birlik metr. Pufakning diametri necha metr?",
+      "v": [
+        "2 m",
+        "8 m",
+        "4 m",
+        "40 m"
+      ],
+      "t": 2,
+      "izoh": "O'ng tomondagi 4 soni radiusning kvadrati, demak R = 2 metr. Diametr radiusdan ikki marta katta: d = 2R = 4 metr. Tenglamadagi 40 soni markazning balandligi bo'lib, pufak o'lchamiga aloqasi yo'q. Javob: 4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-sfera-olcham",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#ecd73111"
+    },
+    {
+      "q": "Ikkita sferik rezervuarning markazlari O(0; 0; 0) va C(0; 0; 10) nuqtalarda, radiuslari mos ravishda 4 metr va 5 metr. Rezervuarlar bir-biriga tegadimi?",
+      "v": [
+        "Yo'q, ular orasida 1 metr bo'shliq qoladi",
+        "Ha, aynan bitta nuqtada tegadi",
+        "Ha, ular bir-birini kesib o'tadi",
+        "Yo'q, ular orasida 10 metr bo'shliq bor"
+      ],
+      "t": 0,
+      "izoh": "Markazlar orasidagi masofa d = 10 metr. Radiuslar yig'indisi 4 + 5 = 9 metr. d qiymati 9 dan katta bo'lgani uchun sferalar tegmaydi, ular orasida 10 − 9 = 1 metr bo'shliq qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-sfera-joylashuvi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#03a5d6ec"
+    },
+    {
+      "q": "x² + y² + z² = 4 va (x − 6)² + y² + z² = 4 tenglamalar bilan berilgan ikkita sferaning o'zaro joylashuvini aniqlang.",
+      "v": [
+        "Bitta nuqtada urinadi",
+        "Umumiy nuqtasi yo'q, biri ikkinchisidan tashqarida",
+        "Aylana bo'ylab kesishadi",
+        "Biri ikkinchisining ichida joylashgan"
+      ],
+      "t": 1,
+      "izoh": "Birinchi sferaning markazi (0; 0; 0), ikkinchisiniki (6; 0; 0), ikkalasining radiusi 2 ga teng. Markazlar orasidagi masofa 6, radiuslar yig'indisi esa 4. 6 soni 4 dan katta bo'lgani uchun sferalarning umumiy nuqtasi yo'q va ular bir-biridan tashqarida yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-sfera-joylashuvi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#b93e8dac"
+    },
+    {
+      "q": "Markazlari C₁(1; 2; 2) va C₂(0; 0; 0) bo'lgan, radiuslari mos ravishda 5 va 2 ga teng ikkita sfera berilgan. Ular o'zaro qanday joylashgan?",
+      "v": [
+        "Tashqi tarzda urinadi",
+        "Aylana bo'ylab kesishadi",
+        "Umumiy nuqtasi yo'q",
+        "Ichki tarzda urinadi, bitta umumiy nuqtasi bor"
+      ],
+      "t": 3,
+      "izoh": "Markazlar orasidagi masofa d = √(1 + 4 + 4) = √9 = 3. Radiuslar ayirmasi 5 − 2 = 3 bo'lib, u d ga teng chiqdi. Masofa radiuslar ayirmasiga teng bo'lganda kichik sfera kattasining ichidan urinadi va ular bitta umumiy nuqtaga ega bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-sfera-joylashuvi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#ea182aa0"
+    },
+    {
+      "q": "Radiuslari 5 ga teng ikkita sferaning markazlari O(0; 0; 0) va P(0; 0; 6) nuqtalarda joylashgan. Bu sferalar bir-biriga nisbatan qanday holatda bo'ladi?",
+      "v": [
+        "Bitta nuqtada urinadi",
+        "Umuman kesishmaydi",
+        "Aylana bo'ylab kesishadi",
+        "To'liq ustma-ust tushadi"
+      ],
+      "t": 2,
+      "izoh": "Markazlar orasidagi masofa d = 6. Radiuslar yig'indisi 10, ayirmasi esa 0. 0 < 6 < 10 shart bajarilgani uchun sferalar kesishadi va kesishish chizig'i aylana bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-sfera-joylashuvi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#51746f56"
+    },
+    {
+      "q": "ABC uchburchakning uchlari A(1; 2; 3), B(4; −1; 0) va C(1; 5; 6) nuqtalarda. Uning medianalari kesishgan nuqtaning koordinatalarini toping.",
+      "v": [
+        "(2; 2; 3)",
+        "(6; 6; 9)",
+        "(3; 3; 4,5)",
+        "(2,5; 2; 3)"
+      ],
+      "t": 0,
+      "izoh": "Medianalar kesishish nuqtasining har bir koordinatasi uchlar mos koordinatalarining o'rta arifmetigiga teng. x = (1 + 4 + 1)/3 = 2, y = (2 − 1 + 5)/3 = 2, z = (3 + 0 + 6)/3 = 3. Javob: (2; 2; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ogirlik-markazi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#d29698be"
+    },
+    {
+      "q": "Bir xil massali uchta yuk A(0; 0; 4), B(6; 0; 2) va C(3; 9; 0) nuqtalarga qo'yilgan, o'lchov metrda. Sistemaning og'irlik markazi qaysi nuqtada bo'ladi?",
+      "v": [
+        "(9; 9; 6)",
+        "(3; 3; 2)",
+        "(4,5; 4,5; 3)",
+        "(3; 4,5; 2)"
+      ],
+      "t": 1,
+      "izoh": "Massalar teng bo'lgani uchun og'irlik markazi uchta nuqta koordinatalarining o'rta arifmetigida yotadi. x = (0 + 6 + 3)/3 = 3, y = (0 + 0 + 9)/3 = 3, z = (4 + 2 + 0)/3 = 2. Javob: (3; 3; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ogirlik-markazi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#eba8b663"
+    },
+    {
+      "q": "Uchburchak medianalarining kesishish nuqtasi M(2; 1; 4), uchlaridan ikkitasi esa A(1; 0; 3) va B(3; −1; 5) nuqtalarda. Uchinchi uch C ning koordinatalarini toping.",
+      "v": [
+        "(0; 3; 0)",
+        "(2; 2,5; 4)",
+        "(2; 2; 4)",
+        "(2; 4; 4)"
+      ],
+      "t": 3,
+      "izoh": "Medianalar kesishish nuqtasining har bir koordinatasi uchlar yig'indisining uchdan biriga teng, shundan C = 3M − A − B kelib chiqadi. Hisoblaymiz: x = 6 − 1 − 3 = 2, y = 3 − 0 + 1 = 4, z = 12 − 3 − 5 = 4. Javob: (2; 4; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ogirlik-markazi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#c0805bed"
+    },
+    {
+      "q": "Tetraedrning uchlari O(0; 0; 0), A(4; 0; 0), B(0; 8; 0) va C(0; 0; 12) nuqtalarda. To'rt uchning o'rtachasi sifatida aniqlanadigan og'irlik markazi qayerda joylashgan?",
+      "v": [
+        "(4/3; 8/3; 4)",
+        "(2; 4; 6)",
+        "(1; 2; 3)",
+        "(4; 8; 12)"
+      ],
+      "t": 2,
+      "izoh": "Og'irlik markazining har bir koordinatasi to'rtta uch mos koordinatalarining o'rta arifmetigiga teng. x = (0 + 4 + 0 + 0)/4 = 1, y = (0 + 0 + 8 + 0)/4 = 2, z = (0 + 0 + 0 + 12)/4 = 3. Javob: (1; 2; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ogirlik-markazi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#9db16823"
+    },
+    {
+      "q": "x² + y² + z² = 169 sfera xOy koordinata tekisligi bilan kesilganda hosil bo'ladigan aylananing radiusi qanday bo'ladi?",
+      "v": [
+        "169",
+        "√13",
+        "26",
+        "13"
+      ],
+      "t": 3,
+      "izoh": "Tenglamada z = 0 deb qo'yamiz, natijada x² + y² = 169 hosil bo'ladi. Bu markazi koordinata boshida va radiusi √169 = 13 ga teng aylana. Sfera markazi shu tekislikda yotgani uchun kesim eng katta aylana bo'lib chiqdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sfera-tekislik-kesimi",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#a2d2ad93"
+    },
+    {
+      "q": "A(−3; 5; −2) nuqta uchta koordinata tekisligining qaysi biriga eng yaqin joylashganini aniqlang.",
+      "v": [
+        "yOz tekisligiga",
+        "xOz tekisligiga",
+        "Uchalasiga ham bir xil masofada",
+        "xOy tekisligiga"
+      ],
+      "t": 3,
+      "izoh": "Nuqtadan yOz tekisligigacha masofa |x| = 3, xOz tekisligigacha |y| = 5, xOy tekisligigacha esa |z| = 2 ga teng. Bu uch sondan eng kichigi 2 bo'lgani uchun nuqta xOy tekisligiga eng yaqin turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proyeksiya-va-tekislikka-yaqinlik",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#668013c9"
+    },
+    {
+      "q": "P nuqtaning xOy tekisligidagi proyeksiyasi (3; −4; 0), Oz o'qidagi proyeksiyasi esa (0; 0; 12) nuqta ekani ma'lum. P nuqtaning koordinatalarini toping.",
+      "v": [
+        "(3; −4; 12)",
+        "(3; −4; 0)",
+        "(0; 0; 12)",
+        "(3; 4; 12)"
+      ],
+      "t": 0,
+      "izoh": "xOy tekisligiga proyeksiyalashda x va y saqlanadi, z esa nolga aylanadi, demak x = 3 va y = −4. Oz o'qiga proyeksiyalashda esa z saqlanadi, demak z = 12. Javob: (3; −4; 12).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proyeksiya-va-tekislikka-yaqinlik",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#e3feb400"
+    },
+    {
+      "q": "A(3; 2; 5), B(−3; −2; 5), C(−3; 2; 5) va D(−3; 2; −5) nuqtalardan qaysi biri uchun x < 0, y > 0 va z > 0 shartlar bir vaqtda bajariladi?",
+      "v": [
+        "A nuqta",
+        "B nuqta",
+        "C nuqta",
+        "D nuqta"
+      ],
+      "t": 2,
+      "izoh": "Shartlarni ketma-ket tekshiramiz. A(3; 2; 5) da x = 3 musbat, ya’ni x < 0 sharti buzildi. B(−3; −2; 5) da y = −2 manfiy. D(−3; 2; −5) da esa z = −5 manfiy. Faqat C(−3; 2; 5) nuqtada x = −3 < 0, y = 2 > 0 va z = 5 > 0 — uchala shart ham bir vaqtda bajariladi. Javob: C nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-manosi-va-ishoralar",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#4658bf76"
+    },
+    {
+      "q": "Xona burchagi koordinata boshi qilib olingan va z o'qi yuqoriga yo'nalgan, o'lchov metrda. Shipdagi chiroq C(2; 3; 3) nuqtada, stol ustidagi kitob esa K(2; 3; 0,8) nuqtada. Chiroq kitobdan necha metr balandda?",
+      "v": [
+        "3,8 m",
+        "3 m",
+        "0,8 m",
+        "2,2 m"
+      ],
+      "t": 3,
+      "izoh": "Ikkala nuqtaning x va y koordinatalari bir xil, demak ular bitta vertikal chiziqda yotadi. Balandliklar farqi z koordinatalar ayirmasiga teng: 3 − 0,8 = 2,2 metr. Javob: 2,2 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-manosi-va-ishoralar",
+      "id": "matematika_vekt_m04-fazoda-dekart-koordinatalari-va-sfera#dd2e344f"
+    }
+  ]
+}

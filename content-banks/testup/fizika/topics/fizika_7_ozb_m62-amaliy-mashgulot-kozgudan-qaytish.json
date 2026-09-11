@@ -1,0 +1,396 @@
+{
+  "nom": "62-mavzu. Amaliy Mashgulot Kozgudan Qaytish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Amaliy mashg‘ulotning maqsadi nima?",
+      "v": [
+        "Yassi ko‘zgu yordamida yorug‘likning qaytishini o‘rganish",
+        "Yorug‘likning sinishini o‘rganish",
+        "Linzaning optik kuchini o‘lchash",
+        "Soya hosil qilish"
+      ],
+      "t": 0,
+      "izoh": "Maqsad – yassi ko‘zgudan qaytishni o‘rganish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#4f427c81"
+    },
+    {
+      "q": "Amaliy mashg‘ulot uchun qanday jihozlar kerak?",
+      "v": [
+        "Koʻzgu, yorug‘lik manbai, tirqishli tekislik, to‘siq, transportir, qog‘oz va qalam",
+        "Linza, suv, stakan",
+        "Fonar, karton, plyonka",
+        "Koʻzgu, lupa, mikroskop"
+      ],
+      "t": 0,
+      "izoh": "Koʻzgu, yorug‘lik manbai, tirqishli tekislik, transportir kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#2094699b"
+    },
+    {
+      "q": "Tajribada yorug‘lik manbai qarshisiga nima qo‘yiladi?",
+      "v": [
+        "Tirqishli tekislik to‘siq va oq qog‘oz",
+        "Linza",
+        "Stakan",
+        "Suv"
+      ],
+      "t": 0,
+      "izoh": "Tirqishli tekislik to‘siq va oq qog‘oz qo‘yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#059adef4"
+    },
+    {
+      "q": "Oq qog‘oz ustiga nima joylashtiriladi?",
+      "v": [
+        "Yassi ko‘zgu",
+        "Linza",
+        "Prizma",
+        "Ekran"
+      ],
+      "t": 0,
+      "izoh": "Oq qog‘oz ustiga yassi ko‘zgu joylashtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#c0771f4a"
+    },
+    {
+      "q": "S yorug‘lik manbaidan tirqishga qarab nima yo‘naltiriladi?",
+      "v": [
+        "Yorug‘lik nuri",
+        "Ovoz",
+        "Issiqlik",
+        "Elektr"
+      ],
+      "t": 0,
+      "izoh": "Yorug‘lik nuri yo‘naltiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#e0fc5ea4"
+    },
+    {
+      "q": "Yorug‘lik nuri ko‘zgudan qaytgan joy qanday aniqlanadi?",
+      "v": [
+        "Qalam bilan belgilanadi",
+        "Transportir bilan o‘lchanadi",
+        "Ko‘z bilan taxmin qilinadi",
+        "Chizg‘ich bilan chiziladi"
+      ],
+      "t": 0,
+      "izoh": "Qaytgan joy qalam bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#ecbfb6b8"
+    },
+    {
+      "q": "Koʻzguga tushayotgan nur va qaytgan nur yo‘lida nima qilinadi?",
+      "v": [
+        "Bir nechta nuqta belgilanib, ular tutashtirilib nur yo‘li chiziladi",
+        "Faqat bitta nuqta belgilanadi",
+        "Hech narsa qilinmaydi",
+        "Faqat chiziq chiziladi"
+      ],
+      "t": 0,
+      "izoh": "Bir nechta nuqta belgilanib, nur yo‘li chiziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#a3e8986f"
+    },
+    {
+      "q": "Koʻzguga tushayotgan nur qanday harf bilan belgilanadi?",
+      "v": [
+        "A",
+        "B",
+        "C",
+        "S"
+      ],
+      "t": 0,
+      "izoh": "Tushayotgan nur A deb belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#39b8251b"
+    },
+    {
+      "q": "Nurning tushish nuqtasi qanday harf bilan belgilanadi?",
+      "v": [
+        "B",
+        "A",
+        "C",
+        "S"
+      ],
+      "t": 0,
+      "izoh": "Tushish nuqtasi B deb belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#a396243e"
+    },
+    {
+      "q": "Qaytgan yorug‘lik nuri qanday harf bilan belgilanadi?",
+      "v": [
+        "C",
+        "A",
+        "B",
+        "S"
+      ],
+      "t": 0,
+      "izoh": "Qaytgan nur C deb belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#6c753eca"
+    },
+    {
+      "q": "Nur tushgan B nuqtaga qanday chiziq o‘tkaziladi?",
+      "v": [
+        "Perpendikulyar",
+        "Parallel",
+        "Egri",
+        "To‘lqin"
+      ],
+      "t": 0,
+      "izoh": "B nuqtaga perpendikulyar o‘tkaziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#1cfa199a"
+    },
+    {
+      "q": "Perpendikulyar qayerga o‘tkaziladi?",
+      "v": [
+        "Koʻzgu tekisligiga",
+        "Yorug‘lik manbaiga",
+        "Qog‘ozga",
+        "To‘siqqa"
+      ],
+      "t": 0,
+      "izoh": "Koʻzgu tekisligiga perpendikulyar o‘tkaziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#5c0a6778"
+    },
+    {
+      "q": "Nurning tushish burchagi va qaytish burchagi qanday o‘lchanadi?",
+      "v": [
+        "Transportir yordamida",
+        "Chizg‘ich yordamida",
+        "Tarozi yordamida",
+        "Soat yordamida"
+      ],
+      "t": 0,
+      "izoh": "Transportir yordamida o‘lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#cadfd7fc"
+    },
+    {
+      "q": "Tajriba necha marta takrorlanadi?",
+      "v": [
+        "Tushish burchagi o‘zgartirib, bir necha marta",
+        "Faqat bir marta",
+        "Hech qachon",
+        "Faqat ikki marta"
+      ],
+      "t": 0,
+      "izoh": "Tushish burchagi o‘zgartirib tajriba takrorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#48d111c5"
+    },
+    {
+      "q": "Tajriba oxirida nima qilinadi?",
+      "v": [
+        "Xulosa yoziladi",
+        "Jihozlar yig‘ishtiriladi",
+        "Qog‘oz tashlanadi",
+        "Hech narsa qilinmaydi"
+      ],
+      "t": 0,
+      "izoh": "O‘tkazilgan tajribalar asosida xulosa yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#0673c7a0"
+    },
+    {
+      "q": "Tajribada yorug‘lik manbai sifatida nima ishlatiladi?",
+      "v": [
+        "S yorug‘lik manbai",
+        "Quyosh",
+        "Sham",
+        "Lampa"
+      ],
+      "t": 0,
+      "izoh": "S yorug‘lik manbai ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#faffa54f"
+    },
+    {
+      "q": "Tirqishli tekislik to‘siq nima uchun ishlatiladi?",
+      "v": [
+        "Ingichka yorug‘lik nur dastasi hosil qilish uchun",
+        "Soya hosil qilish uchun",
+        "Suv quyish uchun",
+        "Rasm chizish uchun"
+      ],
+      "t": 0,
+      "izoh": "Tirqishdan ingichka nur dastasi hosil bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#64799135"
+    },
+    {
+      "q": "Oq qog‘oz nima uchun ishlatiladi?",
+      "v": [
+        "Yorug‘lik nurini yo‘lini kuzatish uchun",
+        "Soya hosil qilish uchun",
+        "Rang berish uchun",
+        "Quritish uchun"
+      ],
+      "t": 0,
+      "izoh": "Oq qog‘ozda nur yo‘li kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#af78a091"
+    },
+    {
+      "q": "Yassi ko‘zgu qayerga joylashtiriladi?",
+      "v": [
+        "Oq qog‘oz ustiga",
+        "Havoda",
+        "Suv ichiga",
+        "To‘siq orqasiga"
+      ],
+      "t": 0,
+      "izoh": "Oq qog‘oz ustiga joylashtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#14171b66"
+    },
+    {
+      "q": "Transportir nima uchun kerak?",
+      "v": [
+        "Tushish va qaytish burchaklarini o‘lchash uchun",
+        "Masofani o‘lchash uchun",
+        "Vaqt o‘lchash uchun",
+        "Massa o‘lchash uchun"
+      ],
+      "t": 0,
+      "izoh": "Burchaklarni o‘lchash uchun kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#ce3df851"
+    },
+    {
+      "q": "Tajribada qanday qonun tekshiriladi?",
+      "v": [
+        "Yorug‘likning qaytish qonuni",
+        "Yorug‘likning sinish qonuni",
+        "Yorug‘likning to‘g‘ri chiziqli tarqalishi",
+        "Linzaning optik kuchi"
+      ],
+      "t": 0,
+      "izoh": "Qaytish qonuni tekshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#1f79ce70"
+    },
+    {
+      "q": "Qaytish qonuniga ko‘ra, tushish burchagi qanday burchakka teng?",
+      "v": [
+        "Qaytish burchagiga",
+        "Sinish burchagiga",
+        "To‘g‘ri burchakka",
+        "Nolga"
+      ],
+      "t": 0,
+      "izoh": "Tushish burchagi qaytish burchagiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#75005f28"
+    },
+    {
+      "q": "Tajribada ko‘zguga tushayotgan nur yo‘li qanday chiziladi?",
+      "v": [
+        "Bir nechta nuqtani tutashtirib",
+        "Bir nuqta orqali",
+        "Transportir bilan",
+        "Chizg‘ich bilan bevosita"
+      ],
+      "t": 0,
+      "izoh": "Bir nechta nuqtani tutashtirib chiziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#db340a0e"
+    },
+    {
+      "q": "Tushish burchagi qayerdan o‘lchanadi?",
+      "v": [
+        "Nur tushish nuqtasiga o‘tkazilgan perpendikulyardan",
+        "Koʻzgu tekisligidan",
+        "Qog‘oz chetidan",
+        "To‘siqdan"
+      ],
+      "t": 0,
+      "izoh": "Perpendikulyardan o‘lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#6e6001a6"
+    },
+    {
+      "q": "Qaytish burchagi qayerdan o‘lchanadi?",
+      "v": [
+        "Nur tushish nuqtasiga o‘tkazilgan perpendikulyardan",
+        "Koʻzgu tekisligidan",
+        "Qog‘oz chetidan",
+        "Manbadan"
+      ],
+      "t": 0,
+      "izoh": "Perpendikulyardan o‘lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#a18d2c86"
+    },
+    {
+      "q": "Amaliy mashg‘ulotda foydalaniladigan ko‘zgu qanday turdagi?",
+      "v": [
+        "Yassi",
+        "Qavariq",
+        "Botiq",
+        "Sferik"
+      ],
+      "t": 0,
+      "izoh": "Yassi ko‘zgu ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m62-amaliy-mashgulot-kozgudan-qaytish#91329c95"
+    }
+  ]
+}

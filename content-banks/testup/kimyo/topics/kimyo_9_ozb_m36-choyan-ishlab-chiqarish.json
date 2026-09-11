@@ -1,0 +1,531 @@
+{
+  "nom": "36-mavzu. O'zbekistonda metallurgiya. Cho'yan ishlab chiqarish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Cho'yan qanday qotishma hisoblanadi?",
+      "v": [
+        "Tarkibida 2,14 % dan ko'p uglerod tutgan temir va uglerod qotishmasi",
+        "Tarkibida 2,14 % dan kam uglerod tutgan temir va uglerod qotishmasi",
+        "Tarkibida uglerod umuman bo'lmagan toza temir",
+        "Temir va ruxning qotishmasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikda cho'yan tarkibida 2,14 % dan ko'p uglerod tutgan qotishma deb ta'riflangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#1bc9c540"
+    },
+    {
+      "q": "Po'lat — tarkibida qancha uglerod tutgan temir va uglerod qotishmasi?",
+      "v": [
+        "2,14 % dan kam",
+        "2,14 % dan ko'p",
+        "4,5 % dan ko'p",
+        "10 % dan ko'p"
+      ],
+      "t": 0,
+      "izoh": "Po'latda uglerod miqdori 2,14 % dan kam bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#e92e016f"
+    },
+    {
+      "q": "O'zbekistonda metallurgiya sanoati, asosan, qayerda joylashgan?",
+      "v": [
+        "Bekobodda",
+        "Navoiyda",
+        "Olmaliqda",
+        "Chirchiqda"
+      ],
+      "t": 0,
+      "izoh": "O'zbekistonda metallurgiya sanoati, asosan, Bekobodda joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#16b981c2"
+    },
+    {
+      "q": "Bekobod metallurgiya zavodida qanday qora metall mahsulotlari ishlab chiqariladi?",
+      "v": [
+        "Po'lat va cho'yan",
+        "Mis va rux",
+        "Alyuminiy va mis",
+        "Qo'rg'oshin va rux"
+      ],
+      "t": 0,
+      "izoh": "Bekobod metallurgiya zavodida po'lat va cho'yan ishlab chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#d22afdac"
+    },
+    {
+      "q": "Cho'yan qanday pechlarda suyuqlantirib olinadi?",
+      "v": [
+        "Domna pechlarida",
+        "Marten pechlarida",
+        "Elektr yoyi pechlarida",
+        "Kislorod konvertorlarida"
+      ],
+      "t": 0,
+      "izoh": "Cho'yan temir rudalaridan domna pechlarida suyuqlantirib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#bed0fb59"
+    },
+    {
+      "q": "Cho'yan olish uchun xomashyo tarkibiga qaysi moddalar kiradi?",
+      "v": [
+        "FeO, Fe2O3, Fe3O4, koks, flus (ohaktosh, qum)",
+        "CuO, ZnO, koks, ohaktosh",
+        "FeS2, NaCl, qum, suv",
+        "Al2O3, koks, kaolin, gips"
+      ],
+      "t": 0,
+      "izoh": "Xomashyo: FeO, Fe2O3, Fe3O4, koks va flus (ohaktosh, qum).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#d4ee83e4"
+    },
+    {
+      "q": "Domna pechlari qanday materialdan qurilgan va balandligi qancha bo'ladi?",
+      "v": [
+        "O'tga chidamli g'ishtdan, balandligi 27—31 m gacha",
+        "Temirdan, balandligi 10—12 m gacha",
+        "Beton g'ishtdan, balandligi 50—60 m gacha",
+        "Po'latdan, balandligi 5—7 m gacha"
+      ],
+      "t": 0,
+      "izoh": "Domna pechlari o'tga chidamli g'ishtlardan qurilgan, balandligi 27—31 m ga yetadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#ebc48199"
+    },
+    {
+      "q": "Domnaning pastki qismidan furmalar orqali qanday havo purkaladi?",
+      "v": [
+        "600—800 °C gacha qizdirilgan havo",
+        "Xona haroratidagi sovuq havo",
+        "100—150 °C gacha qizdirilgan havo",
+        "1200—1400 °C gacha qizdirilgan havo"
+      ],
+      "t": 0,
+      "izoh": "Furmalar orqali 600—800 °C gacha qizdirilgan havo purkaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#dce8d247"
+    },
+    {
+      "q": "Domnada koks qanday vazifalarni bajaradi?",
+      "v": [
+        "Zarur haroratni ta'minlaydi va qaytaruvchi CO olish uchun xizmat qiladi",
+        "Faqat shlak hosil qiladi",
+        "Faqat rudani eritadi",
+        "Cho'yanni legirlaydi"
+      ],
+      "t": 0,
+      "izoh": "Domnada koks zarur haroratni va qaytaruvchi CO ni olish uchun xizmat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#f0cff365"
+    },
+    {
+      "q": "Domnada koksning yonishi qanday reaksiya tenglamasi bilan ifodalanadi?",
+      "v": [
+        "C + O2 = CO2",
+        "2C + O2 = 2CO",
+        "C + CO2 = 2CO",
+        "2CO + O2 = 2CO2"
+      ],
+      "t": 0,
+      "izoh": "Koksning bir qismi yonib, CO2 hosil qiladi: C + O2 = CO2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#490b2397"
+    },
+    {
+      "q": "Domnada yuqori haroratda CO2 ning koks bilan ta'sirlashuvi qanday tenglama bilan ifodalanadi?",
+      "v": [
+        "CO2 + C = 2CO",
+        "CO2 + C = CO + O2",
+        "2CO2 + C = 2CO + O2",
+        "CO2 + 2C = 2CO + C"
+      ],
+      "t": 0,
+      "izoh": "Yuqori haroratda CO2 koks bilan ta'sirlashib, CO ga aylanadi: CO2 + C = 2CO.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#e4b1f95b"
+    },
+    {
+      "q": "Domnada temir rudasini erkin temirgacha qaytaruvchi asosiy modda qaysi?",
+      "v": [
+        "CO",
+        "CO2",
+        "O2",
+        "N2"
+      ],
+      "t": 0,
+      "izoh": "CO temir rudasini erkin temirgacha qaytaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#a4531e2a"
+    },
+    {
+      "q": "FeO + CO = Fe + CO2 reaksiyasi domnada qanday haroratda boradi?",
+      "v": [
+        "700—800 °C",
+        "450—500 °C",
+        "500—700 °C",
+        "100—200 °C"
+      ],
+      "t": 0,
+      "izoh": "FeO ning CO bilan temirgacha qaytarilishi 700—800 °C da sodir bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#263c49c9"
+    },
+    {
+      "q": "Domnada 3Fe2O3 + CO = 2Fe3O4 + CO2 reaksiyasi qanday haroratda boradi?",
+      "v": [
+        "450—500 °C",
+        "700—800 °C",
+        "1000—1200 °C",
+        "100—150 °C"
+      ],
+      "t": 0,
+      "izoh": "Bu reaksiya 450—500 °C da sodir bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#b4892b97"
+    },
+    {
+      "q": "Rudadagi qo'shimchalar flus bilan ta'sirlashib nimani hosil qiladi?",
+      "v": [
+        "Oson suyuqlanuvchan, yengil moddalar — shlak",
+        "Og'ir qotishmalar",
+        "Toza temir",
+        "Domna gazini"
+      ],
+      "t": 0,
+      "izoh": "Qo'shimchalar flus bilan oson suyuqlanuvchan, yengil moddalar — shlak hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#6b81c5cf"
+    },
+    {
+      "q": "Domnada shlak hosil bo'lishi qaysi reaksiyalar bilan ifodalanadi?",
+      "v": [
+        "CaCO3 = CaO + CO2; CaO + SiO2 = CaSiO3",
+        "Fe2O3 + 3CO = 2Fe + 3CO2; C + O2 = CO2",
+        "CaO + H2O = Ca(OH)2; CO2 + C = 2CO",
+        "SiO2 + 2C = Si + 2CO; FeO + CO = Fe + CO2"
+      ],
+      "t": 0,
+      "izoh": "CaCO3 = CaO + CO2 va CaO + SiO2 = CaSiO3 reaksiyalarida shlak hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#65612c03"
+    },
+    {
+      "q": "Gornda hosil bo'lgan ikki suyuq qatlam qanday joylashadi?",
+      "v": [
+        "Yuqorida shlak, pastda cho'yan qatlami",
+        "Yuqorida cho'yan, pastda shlak qatlami",
+        "Ikkalasi bir qatlamda aralash holda",
+        "Yuqorida koks, pastda cho'yan qatlami"
+      ],
+      "t": 0,
+      "izoh": "Gornda yuqorida shlak, pastda cho'yan qatlami hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#81243876"
+    },
+    {
+      "q": "Shlak qatlami cho'yanni nimadan himoya qiladi?",
+      "v": [
+        "Oksidlanishdan",
+        "Qotishdan",
+        "Bug'lanishdan",
+        "Karburizatsiyalanishdan"
+      ],
+      "t": 0,
+      "izoh": "Shlak qatlami cho'yanni oksidlanishdan himoya qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#7b4b4d1a"
+    },
+    {
+      "q": "Cho'yanning zichligi qancha?",
+      "v": [
+        "7,5 g/cm3",
+        "2,5 g/cm3",
+        "7,86 g/cm3",
+        "10,5 g/cm3"
+      ],
+      "t": 0,
+      "izoh": "Cho'yanning zichligi 7,5 g/cm3 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#73365b3d"
+    },
+    {
+      "q": "Shlak cho'yandan qancha yengil va uning zichligi qancha?",
+      "v": [
+        "Deyarli uch barobar yengil, zichligi 2,5 g/cm3",
+        "Ikki barobar yengil, zichligi 3,75 g/cm3",
+        "Yarim barobar yengil, zichligi 5 g/cm3",
+        "Xuddi shunday, zichligi 7,5 g/cm3"
+      ],
+      "t": 0,
+      "izoh": "Shlak cho'yandan deyarli uch barobar yengil, zichligi 2,5 g/cm3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#390461ab"
+    },
+    {
+      "q": "Tabiiy gaz tarkibidagi metan yonganda qanday moddalar hosil bo'ladi?",
+      "v": [
+        "Karbonat angidrid va suv bug'lari",
+        "Is gazi va azot",
+        "Vodorod va kislorod",
+        "Oltingugurt oksidi va suv"
+      ],
+      "t": 0,
+      "izoh": "CH4 + 2O2 = CO2 + 2H2O reaksiyasida karbonat angidrid va suv bug'lari hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#c9841951"
+    },
+    {
+      "q": "H2O + C = H2 + CO reaksiyasi natijasida domna qanday kuchli qaytaruvchilar bilan boyiydi?",
+      "v": [
+        "Is gazi va vodorod",
+        "Kislorod va azot",
+        "Karbonat angidrid va suv bug'i",
+        "Metan va etan"
+      ],
+      "t": 0,
+      "izoh": "Suv bug'i cho'g'langan ko'mir bilan ta'sirlashib, is gazi va vodorod — kuchli qaytaruvchilar hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#0a5fbaf0"
+    },
+    {
+      "q": "Domna jarayoniga tabiiy gaz qo'shilishi koks sarfiga qanday ta'sir qiladi?",
+      "v": [
+        "Koks sarfi 10—20 % ga kamaytiriladi",
+        "Koks sarfi ikki barobar ortadi",
+        "Koks sarfi o'zgarmaydi",
+        "Koks sarfi 50 % ga kamaytiriladi"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy gazni qo'shish bilan koks sarfi 10—20 % ga kamaytiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#d009e8ff"
+    },
+    {
+      "q": "Domnalarda olingan cho'yan tarkibida qancha uglerod bo'ladi?",
+      "v": [
+        "2—4,5 % C",
+        "0,1—0,5 % C",
+        "6—8 % C",
+        "10—12 % C"
+      ],
+      "t": 0,
+      "izoh": "Cho'yan 2—4,5 foiz C va oz miqdorda kremniy, marganes, oltingugurt, fosfor tutadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#b96aff45"
+    },
+    {
+      "q": "Cho'yan temirdan qanday xossalarga ega?",
+      "v": [
+        "Qattiq, mo'rt, bolg'alanmaydi",
+        "Yumshoq, egiluvchan, bolg'alanadi",
+        "Suyuq, oquvchan, yengil",
+        "Yengil, plastik, cho'ziluvchan"
+      ],
+      "t": 0,
+      "izoh": "Cho'yan temirdan qattiq, mo'rt bo'ladi, bolg'alanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#e7b62e82"
+    },
+    {
+      "q": "Cho'yanning qanday turlari farqlanadi?",
+      "v": [
+        "Quyma va to'yingan cho'yanlar",
+        "Oq va qora cho'yanlar",
+        "Yumshoq va qattiq cho'yanlar",
+        "Suyuq va qattiq cho'yanlar"
+      ],
+      "t": 0,
+      "izoh": "Quyma va to'yingan cho'yanlar farqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#3a11d6e5"
+    },
+    {
+      "q": "Quyma cho'yandan nima tayyorlanadi?",
+      "v": [
+        "Buyumlar",
+        "Po'lat",
+        "Shlak",
+        "Domna gazi"
+      ],
+      "t": 0,
+      "izoh": "Quyma cho'yandan buyumlar tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#ea8e44c1"
+    },
+    {
+      "q": "To'yingan cho'yandan nima olinadi?",
+      "v": [
+        "Po'lat",
+        "Buyumlar",
+        "Shlak",
+        "Koks"
+      ],
+      "t": 0,
+      "izoh": "To'yingan cho'yandan po'lat olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#21427706"
+    },
+    {
+      "q": "Quyma cho'yan qanday rangli bo'lib, undagi uglerod qanday shaklda mavjud?",
+      "v": [
+        "Kulrang, uglerod grafit shaklida",
+        "Oq, uglerod temir karbid shaklida",
+        "Qora, uglerod koks shaklida",
+        "Qizil, uglerod olmos shaklida"
+      ],
+      "t": 0,
+      "izoh": "Quyma cho'yan kulrang bo'lib, undagi uglerod grafit shaklida mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#fd69496f"
+    },
+    {
+      "q": "To'yingan cho'yan qanday rangli bo'lib, undagi uglerod qanday shaklda bo'ladi?",
+      "v": [
+        "Oq rangli, uglerod temir karbid shaklida",
+        "Kulrang, uglerod grafit shaklida",
+        "Qora, uglerod koks shaklida",
+        "Sariq, uglerod olmos shaklida"
+      ],
+      "t": 0,
+      "izoh": "To'yingan cho'yan oq rangli bo'lib, undagi uglerod temir karbid shaklida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#fbd37fca"
+    },
+    {
+      "q": "Quyma cho'yandan qanday buyumlar tayyorlanadi?",
+      "v": [
+        "Quvurlar, ko'priklar uchun panjaralar, mashina qismlari, kimyoviy uskunalar",
+        "Qog'oz, mato, charm buyumlar",
+        "Dori vositalari va oziq-ovqat mahsulotlari",
+        "Plastmassa idishlar va o'yinchoqlar"
+      ],
+      "t": 0,
+      "izoh": "Quyma cho'yandan quvurlar, ko'priklar uchun panjaralar, mashina qismlari, kimyoviy uskunalar tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#04971bfb"
+    },
+    {
+      "q": "Cho'yan tarkibida marganes va kremniy qancha miqdorda bo'lishi mumkin?",
+      "v": [
+        "1,5 % gacha Mn, 4,5 % gacha Si",
+        "4,5 % gacha Mn, 1,5 % gacha Si",
+        "10 % gacha Mn, 10 % gacha Si",
+        "0,01 % gacha Mn, 0,01 % gacha Si"
+      ],
+      "t": 0,
+      "izoh": "Cho'yan tarkibida 1,5 % gacha Mn, 4,5 % gacha Si va oz miqdorda S hamda P bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#c0438f5e"
+    },
+    {
+      "q": "Legirlangan cho'yan tarkibida qanday elementlar bo'ladi?",
+      "v": [
+        "Cr, Ni, Si va Mn",
+        "Au, Ag, Pt va Hg",
+        "Na, K, Ca va Mg",
+        "Pb, Sn, Zn va Cu"
+      ],
+      "t": 0,
+      "izoh": "Legirlangan cho'yan tarkibida Cr, Ni, Si va Mn lar bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#99cf12a9"
+    },
+    {
+      "q": "Cho'yan qora metallurgiyaning qanday mahsuloti hisoblanadi?",
+      "v": [
+        "Birlamchi mahsuloti",
+        "Ikkilamchi mahsuloti",
+        "Yakuniy mahsuloti",
+        "Chiqindi mahsuloti"
+      ],
+      "t": 0,
+      "izoh": "Cho'yan qora metallurgiyaning birlamchi mahsuloti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#219ed00f"
+    },
+    {
+      "q": "Kislorodli purkama domna jarayonida nimalarni ta'minlaydi?",
+      "v": [
+        "Haroratning ko'tarilishi va cho'yan suyuqlantirishning tezlashini",
+        "Shlakning qotishini va cho'yanning sovishini",
+        "Koksning so'nishini va rudaning qotishini",
+        "Domna gazining to'liq to'xtashini"
+      ],
+      "t": 0,
+      "izoh": "Kislorodli purkama haroratning ko'tarilishi va cho'yan suyuqlantirishning tezlashini ta'minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m36-choyan-ishlab-chiqarish#1ea82d05"
+    }
+  ]
+}

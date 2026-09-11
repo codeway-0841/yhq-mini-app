@@ -1,0 +1,1609 @@
+{
+  "nom": "Sonli tengsizliklar, ularning xossalari va sonli oraliqlar",
+  "bolim": "Tengsizliklar",
+  "blok": "tngs",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Ikki musbat son uchun 3 < x < 7 va 2 < y < 5 tengsizliklar bajariladi. Ularning x + y yig'indisi qaysi oraliqda yotadi?",
+      "v": [
+        "5 < x + y < 12",
+        "6 < x + y < 35",
+        "−2 < x + y < 5",
+        "6 < x + y < 12"
+      ],
+      "t": 0,
+      "izoh": "Bir xil ishorali tengsizliklarni qo'shish qoidasiga ko'ra quyi chegara quyi chegara bilan, yuqori chegara yuqori chegara bilan qo'shiladi. 3 + 2 = 5 va 7 + 5 = 12. Demak 5 < x + y < 12. Quyi chegarani noto'g'ri hisoblash (2·3 = 6) 6 dan 12 gacha degan javobni beradi, lekin x = 3,2 va y = 2,2 bo'lganda x + y = 5,4 bo'lib, u bunday oraliqdan tashqarida qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizliklarni-qoshish",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#769d4c41"
+    },
+    {
+      "q": "Anvar o'ylagan a soni uchun −4 < a < 1, Bekzod o'ylagan b soni uchun esa 6 < b < 9 shart bajariladi. a + b yig'indi qaysi oraliqqa tegishli bo'ladi?",
+      "v": [
+        "5 < a + b < 7",
+        "−24 < a + b < 9",
+        "−4 < a + b < 9",
+        "2 < a + b < 10"
+      ],
+      "t": 3,
+      "izoh": "Quyi chegaralarni qo'shamiz: −4 + 6 = 2. Yuqori chegaralarni qo'shamiz: 1 + 9 = 10. Demak 2 < a + b < 10. Chetdagi −4 va 9 sonlarini shunchaki ko'chirib yozish keng tarqalgan xato, chunki unda ikkinchi tengsizlik umuman hisobga olinmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizliklarni-qoshish",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#382295ab"
+    },
+    {
+      "q": "Tarozida ikkita xalta un tortildi: birinchisining massasi m uchun 1,5 < m < 2,4 va ikkinchisining massasi n uchun 3,1 < n < 4,6 (kilogrammda). Ikkala xaltaning umumiy massasi qaysi oraliqda bo'ladi?",
+      "v": [
+        "3,9 < m + n < 6,5",
+        "4,6 < m + n < 7",
+        "−3,1 < m + n < −0,7",
+        "4,65 < m + n < 11,04"
+      ],
+      "t": 1,
+      "izoh": "Umumiy massa m + n bo'lgani uchun tengsizliklar qo'shiladi. Quyi chegara: 1,5 + 3,1 = 4,6. Yuqori chegara: 2,4 + 4,6 = 7. Demak 4,6 < m + n < 7. Bitta xaltaning ikki chegarasini qo'shish (1,5 + 2,4 = 3,9) butunlay boshqa masalaning javobi: m = 2,3 va n = 4,5 bo'lganda umumiy massa 6,8 kg bo'lib, 3,9 dan 6,5 gacha degan oraliqqa sig'maydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizliklarni-qoshish",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#20168f0f"
+    },
+    {
+      "q": "Uchta o'zgaruvchi uchun 2 < x < 5, 1 < y < 3 va 4 < z < 6 tengsizliklar berilgan. x + y + z yig'indi nechta har xil butun qiymat qabul qilishi mumkin?",
+      "v": [
+        "8 ta",
+        "7 ta",
+        "6 ta",
+        "5 ta"
+      ],
+      "t": 2,
+      "izoh": "Avval yig'indi oralig'i topiladi: quyi chegara 2 + 1 + 4 = 7, yuqori chegara 5 + 3 + 6 = 14. Demak 7 < x + y + z < 14. Bu ochiq oraliqqa 8, 9, 10, 11, 12, 13 butun sonlari kiradi, jami 6 ta. 7 va 14 ning o'zi oraliqqa kirmaydi, ularni qo'shib yuborish 8 ta degan xato javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tengsizliklarni-qoshish",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#8ed116eb"
+    },
+    {
+      "q": "Ma'lumki a > b. Quyidagi tengsizliklardan qaysi biri a va b ning har qanday qiymatlarida to'g'ri bo'ladi?",
+      "v": [
+        "−5a < −5b",
+        "−5a > −5b",
+        "a/(−5) > b/(−5)",
+        "−a > −b"
+      ],
+      "t": 0,
+      "izoh": "Tengsizlikning ikki tomonini manfiy songa ko'paytirganda tengsizlik ishorasi teskarisiga o'zgaradi. a > b bo'lsa, −5 ga ko'paytirib −5a < −5b hosil qilamiz. Shu sababli −5a > −5b va −a > −b noto'g'ri, manfiy songa bo'lishda ham ishora o'zgargani uchun a/(−5) < b/(−5) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-songa-kopaytirish",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#b1de0ca5"
+    },
+    {
+      "q": "−3 < x < 5 tengsizlik berilgan bo'lsa, −2x ifodaning qiymati qaysi oraliqda yotishini aniqlang.",
+      "v": [
+        "−6 < −2x < 10",
+        "−10 < −2x < 6",
+        "6 < −2x < −10",
+        "−2,5 < −2x < 1,5"
+      ],
+      "t": 1,
+      "izoh": "Tengsizlikning barcha qismini −2 ga ko'paytiramiz: −2·(−3) = 6 va −2·5 = −10. Manfiy songa ko'paytirilgani uchun ishoralar teskarisiga o'zgaradi, ya'ni chegaralar o'rin almashadi va −10 < −2x < 6 hosil bo'ladi. Chegaralarni almashtirmasdan yozish eng ko'p uchraydigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-songa-kopaytirish",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#fe2b9d29"
+    },
+    {
+      "q": "Sinov davomida o'lchangan t kattalik uchun −4 ≤ t ≤ 9 shart bajariladi. Shu holda 3 − 2t ifodaning qiymati qaysi oraliqda o'zgaradi?",
+      "v": [
+        "11 ≤ 3 − 2t ≤ −15",
+        "−5 ≤ 3 − 2t ≤ 21",
+        "−15 ≤ 3 − 2t ≤ 11",
+        "−4 ≤ 3 − 2t ≤ 9"
+      ],
+      "t": 2,
+      "izoh": "Avval −4 ≤ t ≤ 9 ni −2 ga ko'paytiramiz: ishora o'zgaradi va −18 ≤ −2t ≤ 8 bo'ladi. Endi har uch qismga 3 qo'shamiz: −15 ≤ 3 − 2t ≤ 11. Agar chegaralar almashtirilmasa 11 va −15 noto'g'ri tartibda yoziladi, agar minus e'tiborga olinmasa −5 ≤ 3 − 2t ≤ 21 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "manfiy-songa-kopaytirish",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#da46e65b"
+    },
+    {
+      "q": "a < b va c < 0 shartlar berilgan. Bu holda ac va bc ko'paytmalar orasidagi to'g'ri munosabatni ko'rsating.",
+      "v": [
+        "ac < bc",
+        "a/c < b/c",
+        "c − a < c − b",
+        "ac > bc"
+      ],
+      "t": 3,
+      "izoh": "c manfiy son bo'lgani uchun a < b tengsizlikning ikki tomonini c ga ko'paytirganda ishora teskarisiga aylanadi va ac > bc hosil bo'ladi. Manfiy songa bo'lishda ham xuddi shunday: a/c > b/c. Ikkala tomondan c ni ayirsak a − c < b − c bo'ladi, lekin c − a > c − b bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-songa-kopaytirish",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#847bd431"
+    },
+    {
+      "q": "Musbat x va y sonlari uchun 2 < x < 6 va 3 < y < 5 tengsizliklar o'rinli bo'lsa, ularning xy ko'paytmasi qaysi oraliqda yotadi?",
+      "v": [
+        "5 < xy < 11",
+        "6 < xy < 30",
+        "6 < xy < 18",
+        "10 < xy < 18"
+      ],
+      "t": 1,
+      "izoh": "Ikkala son ham musbat bo'lgani uchun ko'paytmaning chegaralari mos chegaralarni ko'paytirish bilan topiladi: 2·3 = 6 va 6·5 = 30. Demak 6 < xy < 30. Qo'shish natijasi 5 va 11, kesishgan ko'paytmalar esa 10 va 18 bo'lib, ular ko'paytma oralig'ini bermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#ecfed65f"
+    },
+    {
+      "q": "Berilgan sonlar uchun −3 < x < 2 va 4 < y < 7 tengsizliklar bajariladi. xy ko'paytmaning mumkin bo'lgan qiymatlari oralig'ini toping.",
+      "v": [
+        "−21 < xy < 14",
+        "−12 < xy < 14",
+        "−21 < xy < 8",
+        "1 < xy < 9"
+      ],
+      "t": 0,
+      "izoh": "x manfiy qiymatlar ham qabul qilgani uchun to'rttala chegara ko'paytmasini hisoblash kerak: (−3)·4 = −12, (−3)·7 = −21, 2·4 = 8, 2·7 = 14. Ular ichida eng kichigi −21, eng kattasi 14. Demak −21 < xy < 14. Faqat mos chegaralarni ko'paytirish bu holda yetarli emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#71d353b5"
+    },
+    {
+      "q": "Ikkala son ham manfiy bo'lib, −5 < a < −2 va −4 < b < −1 shartlar berilgan. ab ko'paytma qaysi oraliqda yotadi?",
+      "v": [
+        "−20 < ab < −2",
+        "5 < ab < 8",
+        "2 < ab < 20",
+        "20 < ab < 2"
+      ],
+      "t": 2,
+      "izoh": "Ikki manfiy sonning ko'paytmasi musbat bo'ladi, shuning uchun javob musbat oraliq. To'rtta ko'paytmani hisoblaymiz: (−5)·(−4) = 20, (−5)·(−1) = 5, (−2)·(−4) = 8, (−2)·(−1) = 2. Eng kichigi 2, eng kattasi 20, ya'ni 2 < ab < 20. Ko'paytmani manfiy deb yozish ishora qoidasini unutish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#b3bb129b"
+    },
+    {
+      "q": "Do'kondagi bir dona buyum og'irligi x uchun 1,2 < x < 1,5 kg, uning narx koeffitsienti y uchun 2 < y < 2,5 shart bajariladi. xy ko'paytma 3 dan katta bo'lishi mumkinmi?",
+      "v": [
+        "Yo'q, chunki ko'paytma eng ko'pi 3 ga teng",
+        "Ha, lekin faqat x = 1,5 bo'lganda",
+        "Yo'q, chunki ko'paytma 2,4 dan oshmaydi",
+        "Ha, chunki ko'paytma 3,75 gacha qiymat olishi mumkin"
+      ],
+      "t": 3,
+      "izoh": "Musbat sonlar uchun ko'paytma chegaralari: 1,2·2 = 2,4 va 1,5·2,5 = 3,75, ya'ni 2,4 < xy < 3,75. Bu oraliqda 3 dan katta sonlar bor, masalan 3,4. Demak ko'paytma 3 dan oshishi mumkin. x = 1,5 qiymatning o'zi oraliqqa kirmasa ham, unga yaqin qiymatlar yetarli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytma-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#6239d060"
+    },
+    {
+      "q": "5 < x < 9 va 1 < y < 4 tengsizliklar berilgan bo'lsa, x − y ayirmaning qiymati qaysi oraliqda yotishini aniqlang.",
+      "v": [
+        "4 < x − y < 5",
+        "6 < x − y < 13",
+        "1 < x − y < 8",
+        "1 < x − y < 5"
+      ],
+      "t": 2,
+      "izoh": "Ayirish uchun ikkinchi tengsizlik chegaralari almashtiriladi: x ning quyi chegarasidan y ning yuqori chegarasi ayiriladi, 5 − 4 = 1. Yuqori chegara esa 9 − 1 = 8. Demak 1 < x − y < 8. Bir tomondagi chegaralarni to'g'ridan-to'g'ri ayirish (5 − 1 = 4) noto'g'ri natija beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#e9de4b82"
+    },
+    {
+      "q": "−2 < a < 3 va 4 < b < 10 shartlar bajarilsa, a − b ayirma qaysi oraliqqa tegishli bo'ladi?",
+      "v": [
+        "−12 < a − b < −1",
+        "−7 < a − b < −6",
+        "2 < a − b < 13",
+        "−10 < a − b < 1"
+      ],
+      "t": 0,
+      "izoh": "Eng kichik ayirma a eng kichik va b eng katta bo'lganda chiqadi: −2 − 10 = −12. Eng katta ayirma esa 3 − 4 = −1. Demak −12 < a − b < −1 va ayirma har doim manfiy. Chegaralarni almashtirmasdan ayirish −6 va −7 kabi noto'g'ri sonlarni beradi; a = −1,6 va b = 9,9 bo'lganda esa ayirma −11,5 bo'lib, −10 dan boshlanadigan oraliqqa tushmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#2714f54d"
+    },
+    {
+      "q": "Akrom o'ylagan x son uchun 12 < x < 20, Dilshod o'ylagan y son uchun 7 < y < 11 shart bajariladi. Akromning soni Dilshodnikidan qanchaga ko'p bo'lishi mumkin?",
+      "v": [
+        "5 < x − y < 9",
+        "19 < x − y < 31",
+        "1 < x − y < 9",
+        "1 < x − y < 13"
+      ],
+      "t": 3,
+      "izoh": "Farq x − y ga teng. Eng kichik farq 12 − 11 = 1, eng katta farq 20 − 7 = 13. Demak 1 < x − y < 13. Mos chegaralarni ayirish (12 − 7 = 5 va 20 − 11 = 9) haqiqiy chegaralarni bermaydi, qo'shish esa mutlaqo boshqa masala javobi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#69e2188c"
+    },
+    {
+      "q": "O'lchov natijalari bo'yicha 0,4 < p < 1,2 va 0,1 < q < 0,5 ekani ma'lum. p − q ayirmaning qiymati qaysi oraliqda o'zgaradi?",
+      "v": [
+        "0,3 < p − q < 0,7",
+        "−0,1 < p − q < 1,1",
+        "0,5 < p − q < 1,7",
+        "0,3 < p − q < 1,1"
+      ],
+      "t": 1,
+      "izoh": "Quyi chegara p ning eng kichigidan q ning eng kattasini ayirish bilan topiladi: 0,4 − 0,5 = −0,1. Yuqori chegara 1,2 − 0,1 = 1,1. Demak −0,1 < p − q < 1,1 va ayirma manfiy ham bo'lishi mumkin. Mos chegaralarni ayirish ayirmaning manfiy bo'la olishini yashirib qo'yadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#dc82e156"
+    },
+    {
+      "q": "Musbat sonlar uchun 6 < x < 12 va 2 < y < 3 tengsizliklar berilgan. x/y bo'linmaning qiymati qaysi oraliqda yotadi?",
+      "v": [
+        "3 < x/y < 4",
+        "12 < x/y < 36",
+        "2 < x/y < 4",
+        "2 < x/y < 6"
+      ],
+      "t": 3,
+      "izoh": "Musbat sonlarni bo'lishda eng kichik bo'linma eng kichik suratni eng katta maxrajga bo'lish bilan chiqadi: 6 : 3 = 2. Eng katta bo'linma esa 12 : 2 = 6. Demak 2 < x/y < 6. Mos chegaralarni bo'lish (6 : 2 = 3 va 12 : 3 = 4) tor va noto'g'ri oraliq beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolinma-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#6d720fa7"
+    },
+    {
+      "q": "10 < a < 20 va 4 < b < 5 shartlar bajarilgan holda a/b nisbatning mumkin bo'lgan qiymatlari oralig'ini toping.",
+      "v": [
+        "2,5 < a/b < 4",
+        "40 < a/b < 100",
+        "2 < a/b < 5",
+        "2 < a/b < 4"
+      ],
+      "t": 2,
+      "izoh": "Eng kichik nisbat 10 : 5 = 2, eng katta nisbat 20 : 4 = 5. Demak 2 < a/b < 5. Mos chegaralarni bo'lish 10 : 4 = 2,5 va 20 : 5 = 4 ni beradi, bu esa haqiqiy oraliqdan tor. Ko'paytirish natijasi 40 va 100 bu masalaga umuman aloqador emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolinma-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#d1c38fb8"
+    },
+    {
+      "q": "−8 < x < −2 va 1 < y < 4 tengsizliklar berilgan bo'lsa, x/y bo'linma qaysi oraliqda yotishini aniqlang.",
+      "v": [
+        "−8 < x/y < −0,5",
+        "−8 < x/y < −2",
+        "−2 < x/y < −0,5",
+        "−32 < x/y < −2"
+      ],
+      "t": 0,
+      "izoh": "Surat manfiy, maxraj musbat bo'lgani uchun bo'linma manfiy chiqadi. To'rtta bo'linmani hisoblaymiz: (−8) : 1 = −8, (−8) : 4 = −2, (−2) : 1 = −2, (−2) : 4 = −0,5. Eng kichigi −8, eng kattasi −0,5. Demak −8 < x/y < −0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolinma-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#5445b7b6"
+    },
+    {
+      "q": "3 < m < 9 va 0,5 < n < 2 shartlar berilgan. m/n bo'linmaning qiymati qaysi oraliqda o'zgarishi mumkin?",
+      "v": [
+        "4,5 < m/n < 6",
+        "1,5 < m/n < 18",
+        "1,5 < m/n < 4,5",
+        "6 < m/n < 18"
+      ],
+      "t": 1,
+      "izoh": "Eng kichik bo'linma kichik suratni katta maxrajga bo'lganda chiqadi: 3 : 2 = 1,5. Eng katta bo'linma 9 : 0,5 = 18. Demak 1,5 < m/n < 18. Maxraj birdan kichik bo'lganda bo'linma keskin kattalashishini unutish bu yerdagi asosiy xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolinma-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#f58b4a15"
+    },
+    {
+      "q": "Musbat x soni uchun 2 < x < 5 tengsizlik berilgan. x² ifodaning qiymati qaysi oraliqda yotadi?",
+      "v": [
+        "4 < x² < 25",
+        "4 < x² < 10",
+        "2 < x² < 5",
+        "0 ≤ x² < 16"
+      ],
+      "t": 0,
+      "izoh": "Oraliqdagi barcha sonlar musbat, shuning uchun kvadratga ko'tarish tartibni saqlaydi va chegaralar shunchaki kvadratga ko'tariladi: 2² = 4 va 5² = 25. Demak 4 < x² < 25. Ikkiga ko'paytirish (2·5 = 10) kvadratga ko'tarish emas; x = 4,5 bo'lganda esa x² = 20,25 bo'lib, yuqori chegarasi 16 bo'lgan oraliqdan tashqarida qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajaga-kotarish",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#a9434b9e"
+    },
+    {
+      "q": "−3 < x < 2 tengsizlik berilgan bo'lib, oraliqda manfiy sonlar ham bor. Shu holda x² ifoda qaysi oraliqda qiymat qabul qiladi?",
+      "v": [
+        "9 < x² < 4",
+        "0 ≤ x² < 9",
+        "4 < x² < 9",
+        "−9 < x² < 4"
+      ],
+      "t": 1,
+      "izoh": "Oraliqda nol ham bor, shuning uchun x² eng kichik qiymati aynan 0 ga teng bo'ladi va bu qiymatga erishiladi. Eng katta qiymatni chegaralar kvadratlari belgilaydi: (−3)² = 9 va 2² = 4, ularning kattasi 9, lekin −3 oraliqqa kirmagani uchun 9 ga erishilmaydi. Demak 0 ≤ x² < 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajaga-kotarish",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#029febc8"
+    },
+    {
+      "q": "Manfiy sonlardan iborat −5 ≤ x ≤ −1 kesma berilgan. x² ifodaning qiymatlari qaysi kesmani to'ldiradi?",
+      "v": [
+        "25 ≤ x² ≤ 1",
+        "0 ≤ x² ≤ 25",
+        "1 ≤ x² ≤ 25",
+        "−25 ≤ x² ≤ −1"
+      ],
+      "t": 2,
+      "izoh": "Oraliqdagi barcha sonlar manfiy bo'lgani uchun kvadratga ko'targanda tartib teskarisiga o'zgaradi: (−5)² = 25, (−1)² = 1. Demak eng kichigi 1, eng kattasi 25 va javob 1 ≤ x² ≤ 25. Nol bu kesmaga kirmagani uchun quyi chegara 0 bo'la olmaydi, kvadrat esa hech qachon manfiy bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajaga-kotarish",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#6d6cca9f"
+    },
+    {
+      "q": "−2 < x < 3 tengsizlik berilgan bo'lsa, x³ kubning qiymati qaysi oraliqda yotishini aniqlang.",
+      "v": [
+        "0 ≤ x³ < 27",
+        "−6 < x³ < 9",
+        "8 < x³ < 27",
+        "−8 < x³ < 27"
+      ],
+      "t": 3,
+      "izoh": "Toq daraja sonning ishorasini saqlaydi va kub funksiya butun sonlar o'qida o'suvchi bo'ladi. Shuning uchun chegaralar to'g'ridan-to'g'ri kubga ko'tariladi: (−2)³ = −8 va 3³ = 27, ya'ni −8 < x³ < 27. Kvadratdan farqli o'laroq bu yerda quyi chegara nol emas va manfiy qiymatlar saqlanib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajaga-kotarish",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#46b23eb1"
+    },
+    {
+      "q": "−3 ≤ x < 7 shartni qanoatlantiruvchi barcha haqiqiy sonlar to'plami oraliq belgilari yordamida qanday yoziladi?",
+      "v": [
+        "(−3; 7]",
+        "[−3; 7)",
+        "(−3; 7)",
+        "[−3; 7]"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat qavs chegara to'plamga kirishini, dumaloq qavs esa kirmasligini bildiradi. −3 ≤ x bo'lgani uchun −3 to'plamga kiradi va chap tomonda kvadrat qavs turadi. x < 7 qat'iy tengsizlik bo'lgani uchun 7 kirmaydi va o'ng tomonda dumaloq qavs turadi. Demak javob [−3; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-yozuvi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#a498b491"
+    },
+    {
+      "q": "Ob-havo ma'lumotida havo harorati t uchun (−∞; 4] oraliq ko'rsatilgan. Bu yozuvga mos keluvchi tengsizlikni tanlang.",
+      "v": [
+        "t ≤ 4",
+        "t < 4",
+        "t ≥ 4",
+        "0 ≤ t ≤ 4"
+      ],
+      "t": 0,
+      "izoh": "Cheksizlik tomonida har doim dumaloq qavs turadi, chunki ∞ son emas va to'plamga kira olmaydi. O'ng chegara 4 esa kvadrat qavs bilan yozilgan, demak 4 ning o'zi oraliqqa kiradi. Shuning uchun yozuv t ≤ 4 tengsizlikka teng kuchli, quyi chegara esa umuman qo'yilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-yozuvi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#9fbeb408"
+    },
+    {
+      "q": "Quyidagi sonli oraliqlardan qaysi biri yarim interval bo'lib, uning faqat bitta chegarasi to'plamga kiradi?",
+      "v": [
+        "(5; 12)",
+        "[5; 12]",
+        "[5; 12)",
+        "(−∞; 12)"
+      ],
+      "t": 2,
+      "izoh": "Kesma [5; 12] ikkala chegarani ham o'z ichiga oladi, interval (5; 12) esa ikkalasini ham chiqarib tashlaydi. Yarim intervalda faqat bitta chegara to'plamga kiradi, bu [5; 12) yozuvi: 5 kiradi, 12 kirmaydi. Cheksiz (−∞; 12) oraliq ham hech qanday chegarani o'z ichiga olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-yozuvi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#12a07b1d"
+    },
+    {
+      "q": "Do'kondagi chegirma 5 foizdan katta, 20 foizgacha va 20 foizning o'zi ham kiradi deb e'lon qilingan. Chegirma miqdori p uchun to'g'ri oraliq yozuvini tanlang.",
+      "v": [
+        "[5; 20)",
+        "(5; 20)",
+        "[5; 20]",
+        "(5; 20]"
+      ],
+      "t": 3,
+      "izoh": "5 foizdan katta degani 5 ning o'zi shartni qanoatlantirmaydi, shuning uchun chap tomonda dumaloq qavs qo'yiladi. 20 foizning o'zi ham kiradi degani o'ng chegara to'plamga tegishli, demak kvadrat qavs turadi. Shunday qilib p ∈ (5; 20] bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-yozuvi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#4d914f6a"
+    },
+    {
+      "q": "A = [−3; 5] kesma va B = (2; 8) interval berilgan. Ularning A ∩ B kesishmasini toping.",
+      "v": [
+        "[2; 5)",
+        "[−3; 8)",
+        "(2; 5]",
+        "(2; 5)"
+      ],
+      "t": 2,
+      "izoh": "Kesishmaga ikkala oraliqqa ham bir vaqtda tegishli sonlar kiradi. Chap chegara sifatida ikkitasining kattasi olinadi, ya'ni 2, lekin B da 2 kirmagani uchun dumaloq qavs saqlanadi. O'ng chegara sifatida kichigi olinadi, ya'ni 5, u A ga kirgani uchun kvadrat qavs qo'yiladi. Demak A ∩ B = (2; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqlar-kesishmasi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#5c1700fd"
+    },
+    {
+      "q": "(−∞; 4) va [−1; +∞) cheksiz oraliqlarning kesishmasi qaysi to'plamni beradi?",
+      "v": [
+        "[−1; 4)",
+        "(−1; 4]",
+        "(−∞; +∞)",
+        "(−1; 4)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi oraliq 4 dan kichik barcha sonlarni, ikkinchisi −1 dan katta yoki unga teng sonlarni oladi. Ikkala shart bir vaqtda bajarilishi uchun −1 ≤ x < 4 bo'lishi kerak. −1 ikkinchi oraliqqa kirgani uchun kvadrat qavs, 4 birinchisiga kirmagani uchun dumaloq qavs qo'yiladi. Javob [−1; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqlar-kesishmasi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#6ce6d11d"
+    },
+    {
+      "q": "Birinchi mashg'ulot guruhiga yoshi 12 dan 20 gacha bo'lgan bolalar qabul qilinadi va chegaralar ham kiradi, ikkinchi guruhga esa yoshi 15 dan katta va 25 gacha bo'lganlar olinadi. Ikkala guruhga ham mos keladigan yoshlar to'plami qaysi?",
+      "v": [
+        "[15; 20]",
+        "[12; 25]",
+        "(12; 25]",
+        "(15; 20]"
+      ],
+      "t": 3,
+      "izoh": "Birinchi shart [12; 20] kesmani, ikkinchi shart (15; 25] yarim oraliqni beradi. Ikkalasiga ham mos yoshlar kesishmada yotadi: chap chegara sifatida 15 olinadi, lekin ikkinchi shartda 15 kirmagani uchun dumaloq qavs qoladi. O'ng chegara 20 birinchi shartga kirgani uchun kvadrat qavs bilan yoziladi, natijada (15; 20].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqlar-kesishmasi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#5203c127"
+    },
+    {
+      "q": "x ≤ −2 va x > 1 shartlarni bir vaqtning o'zida qanoatlantiruvchi sonlar to'plami qanday bo'ladi?",
+      "v": [
+        "(−2; 1)",
+        "∅",
+        "[−2; 1]",
+        "(−∞; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Birinchi shart (−∞; −2] oraliqni, ikkinchisi (1; +∞) oraliqni beradi. Bu ikki oraliq sonlar o'qida hech qayerda ustma-ust tushmaydi, chunki −2 dan kichik son bir vaqtda 1 dan katta bo'la olmaydi. Demak kesishma bo'sh to'plam, ya'ni ∅. Bu yerda (−2; 1) oraliq aksincha, ikkala shartga ham javob bermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqlar-kesishmasi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#626bf510"
+    },
+    {
+      "q": "A = [−4; 1) va B = [1; 6] oraliqlar berilgan. Ularning A ∪ B birlashmasi qanday yoziladi?",
+      "v": [
+        "[−4; 6]",
+        "[−4; 6)",
+        "(−4; 6]",
+        "[−4; 1) ∪ (1; 6]"
+      ],
+      "t": 0,
+      "izoh": "Birinchi oraliq 1 gacha davom etadi, lekin 1 ni o'z ichiga olmaydi; ikkinchisi esa aynan 1 dan boshlanadi va 1 unga kiradi. Shuning uchun birlashmada hech qanday bo'shliq qolmaydi va 1 soni to'plamga kiradi. Chetki chegaralar −4 va 6 ikkalasi ham kvadrat qavsli, demak A ∪ B = [−4; 6].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqlar-birlashmasi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#5a29f4ed"
+    },
+    {
+      "q": "Biror haqiqiy x son uchun x < 0 yoki x > 3 sharti bajariladi. Bu shartga mos to'plamni oraliqlar birlashmasi ko'rinishida yozing.",
+      "v": [
+        "(0; 3)",
+        "(−∞; 0] ∪ [3; +∞)",
+        "(−∞; 0) ∪ (3; +∞)",
+        "(−∞; 3)"
+      ],
+      "t": 2,
+      "izoh": "Yoki bog'lovchisi to'plamlar birlashmasini bildiradi. x < 0 sharti (−∞; 0) oraliqni, x > 3 sharti esa (3; +∞) oraliqni beradi. Ikkala tengsizlikda ham qat'iy ishora turgani uchun 0 va 3 sonlari to'plamga kirmaydi va dumaloq qavslar yoziladi. Natija (−∞; 0) ∪ (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqlar-birlashmasi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#532c5c68"
+    },
+    {
+      "q": "Do'kon soat 9 dan 13 gacha va 15 dan 19 gacha ishlaydi, chegaraviy vaqtlar ham ish vaqtiga kiradi. Do'konning ish vaqti t ni oraliqlar yordamida yozing.",
+      "v": [
+        "[9; 19]",
+        "[9; 13] ∪ [15; 19]",
+        "(13; 15)",
+        "[9; 13] ∩ [15; 19]"
+      ],
+      "t": 1,
+      "izoh": "Do'kon ikkita alohida vaqt oralig'ida ishlaydi va ular orasida tanaffus bor. Shuning uchun javob ikkita kesmaning birlashmasi bo'ladi: [9; 13] ∪ [15; 19]. Yagona [9; 19] kesma tanaffusni ham ish vaqtiga qo'shib yuboradi, kesishma esa bo'sh to'plam beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqlar-birlashmasi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#4bcf78c4"
+    },
+    {
+      "q": "M = (2; 7) va N = [5; 10) oraliqlar bir-birining ustiga qisman tushadi. Ularning M ∪ N birlashmasini toping.",
+      "v": [
+        "[5; 7)",
+        "(2; 10]",
+        "[2; 10)",
+        "(2; 10)"
+      ],
+      "t": 3,
+      "izoh": "Ikki oraliq 5 dan 7 gacha bo'lgan qismda ustma-ust tushgani uchun birlashma yaxlit bitta oraliq bo'ladi. Chap chegara 2 bo'lib, u M ga kirmaydi, demak dumaloq qavs. O'ng chegara 10 bo'lib, u N ga kirmaydi, demak yana dumaloq qavs. Natijada M ∪ N = (2; 10), [5; 7) esa aksincha kesishma bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqlar-birlashmasi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#07eefc87"
+    },
+    {
+      "q": "(−3; 5] yarim oraliqqa nechta butun son tegishli ekanini aniqlang va to'g'ri javobni tanlang.",
+      "v": [
+        "9 ta",
+        "7 ta",
+        "6 ta",
+        "8 ta"
+      ],
+      "t": 3,
+      "izoh": "Chap chegara −3 dumaloq qavsli, demak oraliqqa kirmaydi; o'ng chegara 5 esa kvadrat qavsli va kiradi. Shunday qilib oraliqdagi butun sonlar −2, −1, 0, 1, 2, 3, 4, 5 bo'lib, ularning soni 8 ta. −3 ni qo'shib yuborish 9 ta, 5 ni tashlab ketish esa 7 ta xato javobni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqdagi-butun-sonlar",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#dfb74a0b"
+    },
+    {
+      "q": "Sonlar o'qidagi [−6; 2) yarim oraliqqa tegishli barcha butun sonlarning yig'indisini hisoblang.",
+      "v": [
+        "−21",
+        "−20",
+        "−18",
+        "−15"
+      ],
+      "t": 1,
+      "izoh": "Oraliqqa −6, −5, −4, −3, −2, −1, 0 va 1 butun sonlari kiradi, 2 esa dumaloq qavs sababli kirmaydi. Yig'indi (−6) + (−5) + (−4) + (−3) + (−2) + (−1) + 0 + 1 = −20 ga teng. Agar 2 ham qo'shib yuborilsa −18, agar 1 tushib qolsa −21 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-butun-sonlar",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#95f46f41"
+    },
+    {
+      "q": "Sinfdagi o'quvchilar soni n uchun 24 < n ≤ 31 shart ma'lum. O'quvchilar soni nechta har xil qiymat qabul qilishi mumkin?",
+      "v": [
+        "8 ta",
+        "6 ta",
+        "7 ta",
+        "5 ta"
+      ],
+      "t": 2,
+      "izoh": "O'quvchilar soni butun son bo'lgani uchun u 25, 26, 27, 28, 29, 30, 31 qiymatlarini olishi mumkin. Ularning soni 31 − 25 + 1 = 7 ta. 24 kirmaydi, chunki tengsizlik qat'iy, 31 esa kiradi, chunki ishora ostida tenglik bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqdagi-butun-sonlar",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#fd070cd6"
+    },
+    {
+      "q": "Sonlar o'qida −4,5 < x < 6,3 oraliq belgilangan. Bu oraliqda yotuvchi barcha butun sonlarning yig'indisi nechaga teng?",
+      "v": [
+        "11",
+        "6",
+        "15",
+        "21"
+      ],
+      "t": 0,
+      "izoh": "Oraliqqa −4 dan 6 gacha bo'lgan butun sonlar kiradi. −4 dan 4 gacha bo'lgan sonlar qarama-qarshi juftlar bo'lib bir-birini yo'qotadi va ularning yig'indisi 0 bo'ladi, qolgani esa 5 + 6 = 11. Agar manfiy sonlar umuman hisobga olinmasa 21, −5 ham qo'shib yuborilsa 6 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-butun-sonlar",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#3d88df13"
+    },
+    {
+      "q": "Quyidagi sonlardan qaysi biri [−2; 3) yarim oraliqqa tegishli emasligini aniqlang: −2; 0; 2,9; 3?",
+      "v": [
+        "−2",
+        "0",
+        "2,9",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Chap chegara −2 kvadrat qavs bilan yozilgani uchun u oraliqqa kiradi. 0 va 2,9 sonlari −2 bilan 3 orasida yotadi, demak ular ham oraliqqa tegishli. O'ng chegara 3 esa dumaloq qavsli, ya'ni to'plamdan chiqarib tashlangan. Shuning uchun tegishli bo'lmagan son 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "songa-tegishlilik",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#52e7b291"
+    },
+    {
+      "q": "Berilgan (−∞; −5] ∪ (1; 4) to'plamga quyidagi sonlardan qaysi biri tegishli ekanini aniqlang: −5; 0; 1; 4?",
+      "v": [
+        "−5",
+        "0",
+        "1",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Birinchi oraliqning o'ng chegarasi −5 kvadrat qavs bilan yozilgan, shuning uchun −5 to'plamga kiradi. 0 soni −5 dan katta, lekin 1 dan kichik bo'lgani uchun ikkala oraliqqa ham tushmaydi. 1 va 4 esa ikkinchi oraliqning dumaloq qavsli chegaralari bo'lgani uchun ular ham kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "songa-tegishlilik",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#168950c4"
+    },
+    {
+      "q": "Kvadrat ildizning taqribiy qiymati √2 ≈ 1,41 ekani ma'lum. Shu son quyidagi sonli oraliqlardan qaysi biriga tegishli bo'ladi?",
+      "v": [
+        "[1; 1,4)",
+        "[1,4; 2)",
+        "(0; 1)",
+        "[2; 3)"
+      ],
+      "t": 1,
+      "izoh": "√2 sonining taqribiy qiymati 1,41 bo'lib, u 1,4 dan katta va 2 dan kichik. Shuning uchun son [1,4; 2) yarim oraliqda yotadi. [1; 1,4) oraliqning o'ng chegarasi 1,4 bo'lib, 1,41 undan katta, demak bu oraliq mos kelmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "songa-tegishlilik",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#6c8ece4f"
+    },
+    {
+      "q": "O'zgaruvchi uchun x ∈ (−1; 5] shart berilgan. Quyidagi sonlardan qaysi biri x ning qiymati bo'la olmaydi: 4,99; 0; −1; 5?",
+      "v": [
+        "4,99",
+        "0",
+        "−1",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Oraliqning chap chegarasi −1 dumaloq qavs bilan yozilgani uchun −1 ning o'zi x ning qiymati bo'la olmaydi. 0 va 4,99 sonlari oraliqning ichida yotadi. 5 esa kvadrat qavsli o'ng chegara bo'lgani uchun ruxsat etilgan qiymat hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "songa-tegishlilik",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#973fffdc"
+    },
+    {
+      "q": "Ikkita tengsizlik berilgan: a < b va c < d. Bu shartlardan kelib chiqadigan va har doim to'g'ri bo'ladigan xulosani tanlang.",
+      "v": [
+        "a + c < b + d",
+        "a − c < b − d",
+        "ac < bd",
+        "a/c < b/d"
+      ],
+      "t": 0,
+      "izoh": "Bir xil ishorali tengsizliklarni faqat qo'shish mumkin, shuning uchun a + c < b + d har doim o'rinli. Ayirish mumkin emas: a = 1, b = 2, c = 0, d = 10 olsak, a − c = 1 va b − d = −8 bo'lib xulosa buziladi. Ko'paytirish va bo'lish esa faqat musbat sonlar uchun qo'shimcha shart bilan bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizlik-xossasini-tanlash",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#617c3853"
+    },
+    {
+      "q": "Ikki musbat son uchun 0 < a < b shart berilgan. Quyidagi tengsizliklardan qaysi biri bu shartdan har doim kelib chiqadi?",
+      "v": [
+        "a² > b²",
+        "1/a > 1/b",
+        "1/a < 1/b",
+        "−a < −b"
+      ],
+      "t": 1,
+      "izoh": "Musbat sonlar uchun son kattalashganda uning teskarisi kichrayadi, shuning uchun 0 < a < b dan 1/a > 1/b kelib chiqadi. Masalan a = 2 va b = 5 bo'lsa, 1/2 = 0,5 va 1/5 = 0,2. Musbat sonlarda a < b bo'lgani uchun a² < b², manfiy songa ko'paytirilganda esa −a > −b bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-xossasini-tanlash",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#039cbb0b"
+    },
+    {
+      "q": "Musbat sonlar uchun a > b > 0 shart berilgan. Ularning kvadrat ildizlari orasidagi to'g'ri munosabatni ko'rsating.",
+      "v": [
+        "√a < √b",
+        "√a = √b",
+        "√a > √b",
+        "a − b < 0"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat ildiz musbat sonlar uchun o'suvchi amal, ya'ni kattaroq sondan olingan ildiz ham kattaroq bo'ladi. a > b > 0 bo'lgani uchun √a > √b. Masalan a = 25 va b = 9 uchun √25 = 5 va √9 = 3. Bundan tashqari a > b bo'lgani uchun a − b ayirma musbat, demak oxirgi variant ham noto'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-xossasini-tanlash",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#e41adec5"
+    },
+    {
+      "q": "a < b bo'lganda a² < b² tengsizlik har doim ham bajarilavermaydi. Buni ko'rsatuvchi sonlar juftligini tanlang.",
+      "v": [
+        "a = 2, b = 5",
+        "a = 0, b = 4",
+        "a = 1, b = 3",
+        "a = −3, b = 2"
+      ],
+      "t": 3,
+      "izoh": "Har bir juftlik uchun kvadratlarni solishtiramiz. a = −3 va b = 2 bo'lganda a < b shart bajariladi, lekin a² = 9 va b² = 4, ya'ni a² > b². Qolgan juftliklarda ikkala son ham manfiy emas, shuning uchun kvadratga ko'tarish tartibni saqlaydi, masalan 2² = 4 va 5² = 25. Demak qarshi misol a = −3, b = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tengsizlik-xossasini-tanlash",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#522f176c"
+    },
+    {
+      "q": "Sonlar o'qida uchlari −7 va 11 nuqtalarda bo'lgan [−7; 11] kesma berilgan. Bu kesmaning uzunligini toping.",
+      "v": [
+        "4",
+        "18",
+        "−18",
+        "17"
+      ],
+      "t": 1,
+      "izoh": "Kesmaning uzunligi o'ng chegaradan chap chegarani ayirish bilan topiladi: 11 − (−7) = 11 + 7 = 18. Ikkita minus qo'shishga aylanadi, shuning uchun natija 4 emas, 18 chiqadi. Uzunlik hech qachon manfiy bo'lmaydi, shu sababli −18 ham javob bo'la olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-uzunligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#22f7bb47"
+    },
+    {
+      "q": "Sonlar o'qida ikkita kesma [2; 14] va [9; 20] berilgan. Ularning umumiy qismining uzunligi nechaga teng?",
+      "v": [
+        "18",
+        "12",
+        "5",
+        "11"
+      ],
+      "t": 2,
+      "izoh": "Avval kesishma topiladi: chap chegara sifatida kattarog'i 9, o'ng chegara sifatida kichigi 14 olinadi, ya'ni [9; 14]. Uning uzunligi 14 − 9 = 5. Birlashma [2; 20] ning uzunligi 18, birinchi kesmaniki 12, ikkinchisiniki 11 bo'lib, bular so'ralgan kattalik emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-uzunligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#6ae72465"
+    },
+    {
+      "q": "Sonlar o'qidagi [−5; 13] kesmaning o'rtasida yotgan nuqta qaysi songa mos kelishini aniqlang.",
+      "v": [
+        "9",
+        "−4",
+        "18",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Kesma o'rtasining koordinatasi chegaralarning o'rta arifmetigiga teng: (−5 + 13) : 2 = 8 : 2 = 4. Kesmaning uzunligi 18, uning yarmi esa 9 bo'lib, bular o'rta nuqtaning koordinatasi emas, balki masofa. Ishorani chalkashtirish −4 degan xato javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-uzunligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#265e1e73"
+    },
+    {
+      "q": "Quyidagi oraliqlarning qaysi biri eng uzun: (−4; 3), [0; 8), (−10; −3] yoki [5; 12)?",
+      "v": [
+        "[0; 8)",
+        "(−4; 3)",
+        "(−10; −3]",
+        "[5; 12)"
+      ],
+      "t": 0,
+      "izoh": "Har bir oraliqning uzunligi o'ng chegaradan chap chegarani ayirish bilan hisoblanadi: 3 − (−4) = 7, 8 − 0 = 8, −3 − (−10) = 7 va 12 − 5 = 7. Eng katta qiymat 8 bo'lib, u [0; 8) oraliqqa tegishli. Qavsning turi uzunlikka ta'sir qilmaydi, u faqat chegaraning kirish-kirmasligini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliq-uzunligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#e75876e2"
+    },
+    {
+      "q": "Do'kon tarozisi nonning massasini 0,6 kg deb ko'rsatdi, o'lchash xatoligi esa 0,02 kg dan oshmaydi. Nonning haqiqiy massasi qaysi oraliqda yotadi?",
+      "v": [
+        "[0,54; 0,58]",
+        "[0,58; 0,6]",
+        "[0,58; 0,62]",
+        "[0,6; 0,62]"
+      ],
+      "t": 2,
+      "izoh": "Haqiqiy massa ko'rsatilgan qiymatdan xatolik miqdoricha kam yoki ko'p bo'lishi mumkin. Quyi chegara 0,6 − 0,02 = 0,58, yuqori chegara esa 0,6 + 0,02 = 0,62. Demak massa [0,58; 0,62] kesmada yotadi. Xatolikni uch barobar qilib faqat bir tomonga qo'llash [0,54; 0,58], uni faqat bir yoqqa hisoblash esa [0,58; 0,6] degan xato oraliqni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "olchov-xatoligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#e3a10768"
+    },
+    {
+      "q": "Detalning uzunligi 45 mm bo'lishi va bu qiymatdan 0,3 mm dan ortiq chetlashmasligi kerak. O'lchangan quyidagi qiymatlardan qaysi biri talabga javob beradi?",
+      "v": [
+        "44,6 mm",
+        "45,4 mm",
+        "45,5 mm",
+        "44,8 mm"
+      ],
+      "t": 3,
+      "izoh": "Ruxsat etilgan oraliq 45 − 0,3 = 44,7 dan 45 + 0,3 = 45,3 gacha, ya'ni [44,7; 45,3] kesma. 44,6 quyi chegaradan kichik, 45,4 va 45,5 esa yuqori chegaradan katta bo'lgani uchun mos emas. Faqat 44,8 shu kesmada yotadi va talabga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "olchov-xatoligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#6f1d847b"
+    },
+    {
+      "q": "Xonadagi harorat 22 daraja atrofida ushlab turiladi va undan chetlanish 1,5 darajadan oshmaydi. Harorat qaysi oraliqda o'zgarishi mumkin?",
+      "v": [
+        "[20,5; 23,5]",
+        "[20,5; 22]",
+        "[21,5; 22,5]",
+        "[19; 22]"
+      ],
+      "t": 0,
+      "izoh": "Quyi chegara 22 − 1,5 = 20,5, yuqori chegara esa 22 + 1,5 = 23,5. Demak harorat [20,5; 23,5] kesmada o'zgaradi va bu oraliqning uzunligi 3 darajaga teng. Chetlanishni ikkilantirib faqat pastga qo'llash [19; 22], uni yarmiga bo'lib yuborish esa [21,5; 22,5] degan noto'g'ri javobni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "olchov-xatoligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#5cb9d9d5"
+    },
+    {
+      "q": "Shishadagi suyuqlik hajmi V uchun 495 ≤ V ≤ 505 millilitr shart bajariladi. Bu oraliqni nominal qiymat va chetlanish ko'rinishida qanday yozish mumkin?",
+      "v": [
+        "495 ± 5 ml",
+        "500 ± 5 ml",
+        "500 ± 10 ml",
+        "505 ± 5 ml"
+      ],
+      "t": 1,
+      "izoh": "Nominal qiymat oraliqning o'rtasi bo'ladi: (495 + 505) : 2 = 500. Chetlanish esa oraliq uzunligining yarmiga teng: (505 − 495) : 2 = 5. Demak yozuv 500 ± 5 ml ko'rinishida bo'ladi. Butun uzunlikni chetlanish deb olish 10 degan xato javobni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "olchov-xatoligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#38432a2e"
+    },
+    {
+      "q": "Bir dona daftar narxi 4500 dan 5200 so'mgacha, bir dona ruchka narxi esa 2800 dan 3500 so'mgacha. Bittadan daftar va ruchka olinsa, jami to'lov qaysi oraliqda bo'ladi?",
+      "v": [
+        "1000 dan 2400 so'mgacha",
+        "7300 dan 8700 so'mgacha",
+        "9000 dan 10400 so'mgacha",
+        "7300 dan 8000 so'mgacha"
+      ],
+      "t": 1,
+      "izoh": "Jami to'lov ikki narxning yig'indisi, shuning uchun tengsizliklar qo'shiladi. Eng kam to'lov 4500 + 2800 = 7300 so'm, eng ko'pi esa 5200 + 3500 = 8700 so'm. Demak to'lov 7300 dan 8700 so'mgacha bo'ladi. Ayirish narxlar farqini, ikkita daftar olish esa 9000 dan boshlanadigan oraliqni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "narx-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#a1fc1944"
+    },
+    {
+      "q": "Karim narxi 32000 dan 38000 so'mgacha bo'lgan bir xil kitobdan uchta sotib oldi. Uning jami to'lovi qaysi oraliqda yotadi?",
+      "v": [
+        "96000 dan 114000 so'mgacha",
+        "32000 dan 38000 so'mgacha",
+        "35000 dan 41000 so'mgacha",
+        "96000 dan 38000 so'mgacha"
+      ],
+      "t": 0,
+      "izoh": "Tengsizlikning barcha qismini musbat 3 soniga ko'paytiramiz, bunda ishora o'zgarmaydi: 3·32000 = 96000 va 3·38000 = 114000. Demak to'lov 96000 dan 114000 so'mgacha. Uchga ko'paytirishni butunlay unutish bitta kitob narxini, ya'ni 32000 dan 38000 gacha degan javobni, narxga 3 ni qo'shish esa 35000 dan 41000 gacha degan xato oraliqni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#3c4c5477"
+    },
+    {
+      "q": "Gulnoraning hamyonida 60000 so'm bor. U bittasi 7000 dan 9000 so'mgacha turadigan 6 ta daftar olmoqchi. Uning puli yetadimi?",
+      "v": [
+        "Yetmaydi, chunki eng kami 42000 so'm",
+        "Faqat eng arzon narxda yetadi",
+        "Har qanday holatda yetadi, chunki eng ko'pi 54000 so'm",
+        "Aniqlashning imkoni yo'q"
+      ],
+      "t": 2,
+      "izoh": "Jami to'lov oralig'ini topamiz: 6·7000 = 42000 va 6·9000 = 54000, ya'ni to'lov 42000 dan 54000 so'mgacha. Eng katta chegara 54000 ham 60000 dan kichik, shuning uchun narx qanday bo'lishidan qat'i nazar pul yetadi. Faqat quyi chegarani hisoblash to'liq xulosa chiqarishga imkon bermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "narx-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#b82a8eae"
+    },
+    {
+      "q": "Kitobning narxi 80000 so'm bo'lib, unga 10 foizdan 25 foizgacha chegirma qo'llaniladi. Chegirmadan keyingi narx qaysi oraliqda bo'ladi?",
+      "v": [
+        "8000 dan 20000 so'mgacha",
+        "55000 dan 70000 so'mgacha",
+        "72000 dan 88000 so'mgacha",
+        "60000 dan 72000 so'mgacha"
+      ],
+      "t": 3,
+      "izoh": "Avval chegirma miqdorini topamiz: 80000 ning 10 foizi 8000, 25 foizi esa 20000 so'm. To'lanadigan narx 80000 dan shu miqdorni ayirish bilan chiqadi: 80000 − 20000 = 60000 va 80000 − 8000 = 72000. Demak narx 60000 dan 72000 so'mgacha. Chegirmaning o'zini javob deb olish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "narx-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#55d35112"
+    },
+    {
+      "q": "Shaharlararo avtobusning tezligi 55 dan 70 km/soatgacha o'zgaradi va u yo'lda roppa-rosa 3 soat yurdi. Avtobus bosib o'tgan masofa qaysi oraliqda yotadi?",
+      "v": [
+        "165 dan 210 km gacha",
+        "55 dan 70 km gacha",
+        "58 dan 73 km gacha",
+        "165 dan 190 km gacha"
+      ],
+      "t": 0,
+      "izoh": "Masofa tezlik bilan vaqtning ko'paytmasiga teng. Tengsizlikning barcha qismini musbat 3 ga ko'paytiramiz, bunda ishora o'zgarmaydi: 3·55 = 165 va 3·70 = 210. Demak avtobus 165 dan 210 km gacha yo'l bosgan. Uchga ko'paytirishni unutish tezlik sonlarini (55 dan 70 gacha), tezlikka 3 ni qo'shish esa 58 dan 73 gacha degan xato javobni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-tezlik-vaqt",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#18ecfb87"
+    },
+    {
+      "q": "Velosipedchi bosib o'tgan masofa 45 dan 60 km gacha, sarflangan vaqt esa 1,5 dan 3 soatgacha. Uning o'rtacha tezligi qaysi oraliqda bo'lishi mumkin?",
+      "v": [
+        "15 dan 20 km/soatgacha",
+        "15 dan 40 km/soatgacha",
+        "30 dan 40 km/soatgacha",
+        "45 dan 60 km/soatgacha"
+      ],
+      "t": 1,
+      "izoh": "Tezlik masofani vaqtga bo'lish bilan topiladi. Eng kichik tezlik eng qisqa masofani eng uzoq vaqtga bo'lganda chiqadi: 45 : 3 = 15. Eng katta tezlik esa eng uzun masofani eng qisqa vaqtga bo'lganda: 60 : 1,5 = 40. Demak tezlik 15 dan 40 km/soatgacha. Ikkala masofani ham 3 ga bo'lish 15 dan 20 gacha, ikkalasini 1,5 ga bo'lish 30 dan 40 gacha, vaqtni umuman hisobga olmaslik esa 45 dan 60 gacha degan xato javobni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masofa-tezlik-vaqt",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#60a783fd"
+    },
+    {
+      "q": "Piyoda odam 4 dan 5 km/soatgacha tezlik bilan 2 dan 3 soatgacha yo'l yurdi. U bosib o'tgan masofa qaysi oraliqda yotadi?",
+      "v": [
+        "6 dan 8 km gacha",
+        "8 dan 12 km gacha",
+        "8 dan 15 km gacha",
+        "10 dan 15 km gacha"
+      ],
+      "t": 2,
+      "izoh": "Ikkala kattalik ham musbat bo'lgani uchun ko'paytmaning chegaralari mos chegaralarni ko'paytirish bilan topiladi: 4·2 = 8 va 5·3 = 15. Demak piyoda 8 dan 15 km gacha yurgan. Tezlik bilan vaqtni qo'shish 6 va 8 sonlarini beradi, ammo bu masofa emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-tezlik-vaqt",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#d63b7d21"
+    },
+    {
+      "q": "Ikki shahar orasidagi masofa 240 dan 300 km gacha, avtomobilning tezligi esa 60 dan 80 km/soatgacha o'zgaradi. Yo'lga sarflanadigan vaqt qaysi oraliqda bo'ladi?",
+      "v": [
+        "3,75 dan 4 soatgacha",
+        "4 dan 5 soatgacha",
+        "3 dan 5 soatgacha",
+        "3 dan 3,75 soatgacha"
+      ],
+      "t": 2,
+      "izoh": "Vaqt masofani tezlikka bo'lish bilan topiladi. Eng qisqa vaqt eng kichik masofani eng katta tezlikka bo'lganda chiqadi: 240 : 80 = 3 soat. Eng uzun vaqt esa 300 : 60 = 5 soat. Demak yo'l 3 dan 5 soatgacha davom etadi. Mos chegaralarni bo'lish 240 : 60 = 4 va 300 : 80 = 3,75 ni berib, haqiqatdan tor oraliq hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masofa-tezlik-vaqt",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#ba485635"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning bir tomoni 5 dan 8 sm gacha, ikkinchi tomoni esa 3 dan 4 sm gacha. Uning yuzasi qaysi oraliqda yotadi?",
+      "v": [
+        "8 sm² dan 12 sm² gacha",
+        "15 sm² dan 32 sm² gacha",
+        "16 sm² dan 24 sm² gacha",
+        "15 sm² dan 24 sm² gacha"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri to'rtburchakning yuzasi tomonlar ko'paytmasiga teng, tomonlar musbat bo'lgani uchun chegaralar to'g'ridan-to'g'ri ko'paytiriladi: 5·3 = 15 va 8·4 = 32. Demak yuza 15 dan 32 sm² gacha. 16 dan 24 gacha oraliq esa perimetrga tegishli, tomonlar yig'indisi esa 8 dan 12 gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-perimetr-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#8c57d800"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning tomonlari uchun 6 < a < 9 sm va 2 < b < 5 sm shartlar berilgan. Uning perimetri qaysi oraliqda o'zgaradi?",
+      "v": [
+        "16 sm dan 28 sm gacha",
+        "8 sm dan 14 sm gacha",
+        "12 sm dan 24 sm gacha",
+        "18 sm dan 45 sm gacha"
+      ],
+      "t": 0,
+      "izoh": "Perimetr P = 2·(a + b) formulasi bilan topiladi. Avval yig'indini baholaymiz: 6 + 2 = 8 va 9 + 5 = 14, ya'ni 8 < a + b < 14. Endi barcha qismini 2 ga ko'paytiramiz va 16 < P < 28 hosil bo'ladi. Ikkiga ko'paytirishni unutish 8 dan 14 gacha degan javobni beradi. Qolgan ikki oraliq ham noto'g'ri: a = 8,9 va b = 4,9 bo'lganda P = 27,6 sm bo'lib, 12 dan 24 gacha degan javobga sig'maydi; a = 6,1 va b = 2,1 bo'lganda esa P = 16,4 sm bo'lib, 18 dan 45 gacha degan javobdan tashqarida qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-perimetr-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#ea90aa12"
+    },
+    {
+      "q": "Kvadrat shaklidagi kafel plitkasining tomoni 4,5 dan 5,2 sm gacha bo'lishi mumkin. Plitkaning yuzasi qaysi oraliqda yotadi?",
+      "v": [
+        "18 sm² dan 20,8 sm² gacha",
+        "9 sm² dan 10,4 sm² gacha",
+        "20,25 sm² dan 26,4 sm² gacha",
+        "20,25 sm² dan 27,04 sm² gacha"
+      ],
+      "t": 3,
+      "izoh": "Kvadratning yuzasi tomonning kvadratiga teng: 4,5² = 20,25 va 5,2² = 27,04. Demak yuza 20,25 dan 27,04 sm² gacha. Tomonni 4 ga ko'paytirish perimetrni beradi, ya'ni 18 dan 20,8 gacha, ikkiga ko'paytirish esa 9 dan 10,4 gacha. 5,2² ni chala ko'paytirib 26,4 deb hisoblash ham xato: bunda tomoni 5,2 sm bo'lgan plitkaning haqiqiy yuzasi javobdan tashqarida qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-perimetr-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#8f7582c5"
+    },
+    {
+      "q": "Uchburchakning asosi 8 dan 10 sm gacha, shu asosga tushirilgan balandligi esa 5 dan 6 sm gacha, chegaralar ham kiradi. Uchburchakning yuzasi qaysi kesmada yotadi?",
+      "v": [
+        "[40; 60] sm²",
+        "[20; 25] sm²",
+        "[20; 30] sm²",
+        "[13; 16] sm²"
+      ],
+      "t": 2,
+      "izoh": "Uchburchak yuzasi S = a·h : 2 formulasi bilan topiladi. Avval ko'paytma chegaralarini olamiz: 8·5 = 40 va 10·6 = 60. Endi ikkalasini ham 2 ga bo'lamiz: 20 va 30. Demak yuza [20; 30] sm² kesmada yotadi. Ikkiga bo'lishni unutish [40; 60], asos bilan balandlikni qo'shish esa [13; 16] degan javobni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-perimetr-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#d5f0bfdb"
+    },
+    {
+      "q": "Toshkentda kunduzgi harorat 18 dan 26 gacha, kechasi esa 7 dan 13 darajagacha bo'ladi. Kunduzgi va tungi haroratlar farqi qaysi oraliqda yotadi?",
+      "v": [
+        "25°C dan 39°C gacha",
+        "11°C dan 13°C gacha",
+        "5°C dan 19°C gacha",
+        "5°C dan 13°C gacha"
+      ],
+      "t": 2,
+      "izoh": "Farq kunduzgi haroratdan tungi haroratni ayirish bilan topiladi. Eng kichik farq kunduzi eng sovuq, kechasi eng issiq bo'lganda chiqadi: 18 − 13 = 5. Eng katta farq esa 26 − 7 = 19. Demak farq 5 dan 19 darajagacha. Mos chegaralarni ayirish 11 va 13 ni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harorat-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#5a338cb3"
+    },
+    {
+      "q": "Sabzavotlar 2 dan 8 darajagacha, mevalar esa 5 dan 12 darajagacha haroratda saqlanadi va chegaraviy qiymatlar ham mos hisoblanadi. Ikkalasini bitta kamerada saqlash uchun harorat qaysi oraliqda bo'lishi kerak?",
+      "v": [
+        "[2; 12]",
+        "[2; 5]",
+        "[8; 12]",
+        "[5; 8]"
+      ],
+      "t": 3,
+      "izoh": "Ikkala mahsulot uchun ham mos harorat ikkita oraliqning kesishmasida yotadi. Chap chegara sifatida kattarog'i 5, o'ng chegara sifatida kichigi 8 olinadi, ya'ni [5; 8]. Ikki oraliqni birlashtirish [2; 12] ni beradi, lekin unda sabzavot ham, meva ham buziladigan haroratlar bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harorat-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#0ed314f1"
+    },
+    {
+      "q": "Muzlatgich kamerasidagi harorat −18 dan −14 darajagacha edi. Sozlash natijasida harorat 3 darajaga ko'tarildi, endi u qaysi oraliqda bo'ladi?",
+      "v": [
+        "−15 dan −11 gacha",
+        "−21 dan −17 gacha",
+        "−18 dan −14 gacha",
+        "−15 dan −17 gacha"
+      ],
+      "t": 0,
+      "izoh": "Tengsizlikning har uch qismiga bir xil son qo'shilganda ishora o'zgarmaydi va chegaralar shu songa siljiydi: −18 + 3 = −15 va −14 + 3 = −11. Demak yangi harorat −15 dan −11 darajagacha. Uchni qo'shish o'rniga ayirish −21 dan −17 gacha degan teskari natijani, uni umuman qo'shmaslik esa boshlang'ich −18 dan −14 gacha oraliqni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harorat-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#6102a60b"
+    },
+    {
+      "q": "Xonadagi isitgich harorat 16 darajadan past bo'lganda, konditsioner esa 26 darajadan yuqori bo'lganda ishga tushadi. Ikkala qurilma ham ishlamaydigan haroratlar to'plamini toping.",
+      "v": [
+        "(16; 26)",
+        "[16; 26]",
+        "(−∞; 16) ∪ (26; +∞)",
+        "[16; 26)"
+      ],
+      "t": 1,
+      "izoh": "Isitgich t < 16 shartda ishlaydi, demak u ishlamasligi uchun t ≥ 16 bo'lishi kerak. Konditsioner t > 26 da ishlaydi, u ishlamasligi uchun t ≤ 26 bo'lishi kerak. Ikkala shartni birga olsak 16 ≤ t ≤ 26 hosil bo'ladi. Chegaralarda qurilmalar hali ishga tushmagani uchun 16 va 26 ham to'plamga kiradi, javob [16; 26].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harorat-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#13466d28"
+    },
+    {
+      "q": "A = [−2; 8] va B = (3; 8] to'plamlar berilgan. A to'plamdan B ning barcha elementlarini olib tashlaganda qanday oraliq qoladi?",
+      "v": [
+        "[−2; 3)",
+        "[−2; 3]",
+        "(3; 8]",
+        "[−2; 8]"
+      ],
+      "t": 1,
+      "izoh": "Ayirmaga birinchi to'plamda bor, lekin ikkinchisida yo'q sonlar kiradi. B to'plam 3 dan katta barcha sonlarni olib qo'yadi, 3 ning o'zi esa B ga kirmaydi. Shuning uchun A da 3 soni saqlanib qoladi va javob [−2; 3] kesma bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqlar-ayirmasi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#b23197c4"
+    },
+    {
+      "q": "Barcha haqiqiy sonlar to'plamidan [−4; 5) yarim oraliq olib tashlansa, qanday to'plam hosil bo'ladi?",
+      "v": [
+        "(−∞; −4] ∪ (5; +∞)",
+        "(−4; 5)",
+        "(−∞; −4) ∪ [5; +∞)",
+        "(−∞; −4) ∪ (5; +∞)"
+      ],
+      "t": 2,
+      "izoh": "To'ldiruvchi to'plamga [−4; 5) ga kirmaydigan barcha haqiqiy sonlar kiradi. −4 asosiy oraliqqa kirgani uchun to'ldiruvchida u yo'q, demak chap qism (−∞; −4) ko'rinishida yoziladi. 5 esa asosiy oraliqqa kirmagani uchun to'ldiruvchida bor va o'ng qism [5; +∞) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqlar-ayirmasi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#4f60204c"
+    },
+    {
+      "q": "Kinoteatrda yoshi 6 dan 60 gacha bo'lganlarga chegirma berilmaydi, chegaradagi yoshlar ham shu qoidaga kiradi. Chegirma beriladigan tomoshabinning yoshi y qanday shartni qanoatlantiradi?",
+      "v": [
+        "0 ≤ y < 6 yoki y > 60",
+        "0 ≤ y < 6 yoki y > 65",
+        "6 ≤ y ≤ 60",
+        "6 < y < 60"
+      ],
+      "t": 0,
+      "izoh": "Chegirmasiz guruh [6; 60] kesmani egallaydi, chegirmali guruh esa uning to'ldiruvchisi bo'ladi. 6 va 60 chegirmasiz guruhga kirgani uchun ular chegirmali to'plamdan chiqarib tashlanadi. Yosh manfiy bo'lmagani uchun javob 0 ≤ y < 6 yoki y > 60 ko'rinishida yoziladi. Yuqori chegarani 65 deb olish 62 yoshli tomoshabinni chegirmadan noo'rin mahrum qiladi, [6; 60] kesmaning o'zi esa chegirmasiz guruhni ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqlar-ayirmasi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#1d6e1357"
+    },
+    {
+      "q": "A = (1; 9) va B = (4; 12) oraliqlar berilgan bo'lsa, A to'plamning B ga tegishli bo'lmagan qismini toping.",
+      "v": [
+        "(1; 4)",
+        "[4; 9)",
+        "(4; 9)",
+        "(1; 4]"
+      ],
+      "t": 3,
+      "izoh": "A dan B ga tegishli sonlarni olib tashlaymiz. B = (4; 12) to'plamda 4 ning o'zi yo'q, shuning uchun 4 soni A da qoladi va o'ng chegara kvadrat qavs bilan yoziladi. Chap chegara 1 esa A ning o'ziga kirmaydi, demak dumaloq qavs saqlanadi. Natijada izlangan to'plam (1; 4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqlar-ayirmasi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#c03ceaf9"
+    },
+    {
+      "q": "Ikki o'zgaruvchi uchun 1 < x < 4 va 2 < y < 5 tengsizliklar berilgan. 2x + 3y ifodaning qiymati qaysi oraliqda yotadi?",
+      "v": [
+        "3 < 2x + 3y < 9",
+        "12 < 2x + 3y < 60",
+        "8 < 2x + 3y < 20",
+        "8 < 2x + 3y < 23"
+      ],
+      "t": 3,
+      "izoh": "Avval har bir hadni alohida baholaymiz: 1 < x < 4 dan 2 < 2x < 8, 2 < y < 5 dan esa 6 < 3y < 15 kelib chiqadi. Endi ikkala tengsizlikni qo'shamiz: 2 + 6 = 8 va 8 + 15 = 23. Demak 8 < 2x + 3y < 23. Koeffitsientlarni hisobga olmaslik 3 dan 9 gacha degan tor oraliqni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-ifodani-baholash",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#0b8a19eb"
+    },
+    {
+      "q": "2 < a < 6 va 1 < b < 3 shartlar bajarilsa, 3a − 2b ifodaning qiymatlari qaysi oraliqni to'ldiradi?",
+      "v": [
+        "0 < 3a − 2b < 16",
+        "4 < 3a − 2b < 12",
+        "8 < 3a − 2b < 24",
+        "0 < 3a − 2b < 12"
+      ],
+      "t": 0,
+      "izoh": "3a uchun 6 < 3a < 18, 2b uchun esa 2 < 2b < 6 hosil bo'ladi. Ayirishda ikkinchi tengsizlikning chegaralari almashib qo'llaniladi: quyi chegara 6 − 6 = 0, yuqori chegara esa 18 − 2 = 16. Demak 0 < 3a − 2b < 16. Mos chegaralarni ayirish 4 dan 12 gacha, qo'shish esa 8 dan 24 gacha degan javobni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-ifodani-baholash",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#658f1135"
+    },
+    {
+      "q": "−3 < x < 1 va 2 < y < 5 tengsizliklar berilgan bo'lsa, x − 2y ifodaning eng kichik butun qiymati nechaga teng?",
+      "v": [
+        "−13",
+        "−12",
+        "−3",
+        "−4"
+      ],
+      "t": 1,
+      "izoh": "Avval 2y ni baholaymiz: 4 < 2y < 10. Ayirmaning chegaralari −3 − 10 = −13 va 1 − 4 = −3, ya'ni −13 < x − 2y < −3. Bu ochiq oraliqda −13 ning o'zi yo'q, undan keyingi butun son esa −12. Demak eng kichik butun qiymat −12 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-ifodani-baholash",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#cb1267fe"
+    },
+    {
+      "q": "Ikkita o'lchov natijasi uchun 0 < a < 2 va 1 < b < 4 shartlar ma'lum. Ularning o'rta arifmetigi qaysi oraliqda yotadi?",
+      "v": [
+        "1 < (a + b)/2 < 6",
+        "0,25 < (a + b)/2 < 1,5",
+        "0,5 < (a + b)/2 < 3",
+        "0,5 < (a + b)/2 < 2"
+      ],
+      "t": 2,
+      "izoh": "Avval yig'indi oralig'ini topamiz: 0 + 1 = 1 va 2 + 4 = 6, ya'ni 1 < a + b < 6. Endi tengsizlikning barcha qismini musbat 2 ga bo'lamiz: 0,5 < (a + b)/2 < 3. Ikkiga bo'lishni unutish 1 dan 6 gacha, har bir hadni alohida ikki marta bo'lish 0,25 dan 1,5 gacha, yuqori chegarada faqat b ni hisobga olish (4 : 2 = 2) esa 0,5 dan 2 gacha degan xato javobni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-ifodani-baholash",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#a7899dc6"
+    },
+    {
+      "q": "Attraksionga bo'yi 130 sm va undan baland bo'lgan bolalar kiritiladi. Bolaning bo'yi h uchun to'g'ri oraliq yozuvini tanlang.",
+      "v": [
+        "[130; +∞)",
+        "(130; +∞)",
+        "(−∞; 130]",
+        "[130; +∞]"
+      ],
+      "t": 0,
+      "izoh": "130 sm ning o'zi ham shartni qanoatlantiradi, shuning uchun chap chegara kvadrat qavs bilan yoziladi. Bo'y uchun yuqori chegara qo'yilmagani sababli o'ng tomonda +∞ turadi. Cheksizlik son emas, shuning uchun uning yonida har doim dumaloq qavs bo'ladi. Demak javob [130; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cheksiz-oraliq",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#dc619b54"
+    },
+    {
+      "q": "Sonlar o'qida (−∞; −2) cheksiz oraliq berilgan. Bu oraliqqa tegishli bo'lgan eng katta butun sonni toping.",
+      "v": [
+        "−2",
+        "−3",
+        "−1",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "Oraliqqa −2 dan qat'iy kichik barcha sonlar kiradi, −2 ning o'zi esa dumaloq qavs sababli kirmaydi. Undan kichik butun sonlar ichida eng kattasi −3 bo'ladi. Manfiy sonlarda tartibni chalkashtirib −1 yoki 0 ni tanlash tipik xato, chunki bu sonlar −2 dan katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cheksiz-oraliq",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#97b287b6"
+    },
+    {
+      "q": "Quyidagi yozuvlardan qaysi biri barcha haqiqiy sonlar to'plamini to'g'ri ifodalaydi?",
+      "v": [
+        "[−∞; +∞]",
+        "(0; +∞)",
+        "(−∞; +∞)",
+        "(−∞; 0) ∪ (0; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Barcha haqiqiy sonlar to'plami ikki tomonga ham cheksiz davom etadi va (−∞; +∞) ko'rinishida yoziladi. Cheksizlik son bo'lmagani uchun uni kvadrat qavs ichiga olib bo'lmaydi. (0; +∞) faqat musbat sonlarni beradi, oxirgi yozuv esa noldan boshqa barcha sonlarni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cheksiz-oraliq",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#d9ce9a74"
+    },
+    {
+      "q": "5 soni [5; +∞) va (5; +∞) oraliqlarning qaysilariga tegishli ekanini aniqlang.",
+      "v": [
+        "Faqat (5; +∞) ga",
+        "Ikkalasiga ham",
+        "Hech biriga",
+        "Faqat [5; +∞) ga"
+      ],
+      "t": 3,
+      "izoh": "Kvadrat qavs chegaraning to'plamga kirishini bildiradi, shuning uchun 5 soni [5; +∞) oraliqqa kiradi. Dumaloq qavsli (5; +∞) oraliqda esa faqat 5 dan qat'iy katta sonlar bor, demak 5 unga kirmaydi. Shuning uchun javob: faqat [5; +∞) ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cheksiz-oraliq",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#d2c792e2"
+    },
+    {
+      "q": "Quyidagi oraliqlardan qaysi biri to'liq [−1; 6] kesma ichida yotadi: (−2; 5), [0; 7), [2; 4) yoki (−1; 7]?",
+      "v": [
+        "(−2; 5)",
+        "[0; 7)",
+        "[2; 4)",
+        "(−1; 7]"
+      ],
+      "t": 2,
+      "izoh": "Qism to'plam bo'lishi uchun oraliqning ikkala chegarasi ham [−1; 6] ichida yotishi kerak. (−2; 5) da chap chegara −2 tashqariga chiqadi, [0; 7) va (−1; 7] da esa o'ng chegara 6 dan oshib ketadi. Faqat [2; 4) oraliqning barcha sonlari −1 bilan 6 orasida joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qism-toplam-oraliq",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#789c2899"
+    },
+    {
+      "q": "(3; 8) oraliq (a; 10) oraliqning qism to'plami bo'lishi uchun a ning eng katta butun qiymati qanday bo'lishi kerak?",
+      "v": [
+        "3",
+        "2",
+        "4",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Qism to'plam bo'lishi uchun (a; 10) ning chap chegarasi (3; 8) ning chap chegarasidan katta bo'lmasligi kerak, ya'ni a ≤ 3. a = 3 bo'lganda (3; 10) oraliq (3; 8) ni to'liq o'z ichiga oladi. a = 4 bo'lsa 3,5 kabi sonlar tashqarida qoladi, shuning uchun eng katta butun qiymat 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qism-toplam-oraliq",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#a760a8d3"
+    },
+    {
+      "q": "Detalning uzunligi [49,5; 50,5] mm oralig'ida bo'lishi shart. Quyidagi partiyalarning qaysi birida barcha detallar shu talabga javob beradi?",
+      "v": [
+        "[49,4; 50,3]",
+        "[49,8; 50,7]",
+        "[49,5; 50,6]",
+        "[49,6; 50,4]"
+      ],
+      "t": 3,
+      "izoh": "Partiya mos bo'lishi uchun uning butun oralig'i talab oralig'i ichida yotishi kerak. [49,4; 50,3] da quyi chegara 49,5 dan kichik, [49,8; 50,7] va [49,5; 50,6] da esa yuqori chegara 50,5 dan katta. Faqat [49,6; 50,4] oraliq talab qilingan kesma ichida to'liq joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qism-toplam-oraliq",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#2b3db768"
+    },
+    {
+      "q": "A va B sonli oraliqlar bo'lib, A to'plamning har bir elementi B ga ham tegishli. A ∩ B kesishma nimaga teng bo'ladi?",
+      "v": [
+        "B",
+        "∅",
+        "A ∪ B",
+        "A"
+      ],
+      "t": 3,
+      "izoh": "A ning barcha elementlari B da bor, ya'ni A to'plam B ning qism to'plami. Kesishmaga ikkala to'plamda ham uchraydigan elementlar kiradi, bunday elementlar esa aynan A ning elementlari. Demak A ∩ B = A bo'ladi, birlashma esa aksincha B ga teng chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qism-toplam-oraliq",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#9b25fc10"
+    },
+    {
+      "q": "To'qqizinchi sinf o'quvchilarining bo'yi 148 dan 172 sm gacha. Har biri tagligi 4 sm qalinlikdagi poyabzal kiysa, ularning umumiy balandligi qaysi oraliqda bo'ladi?",
+      "v": [
+        "148 sm dan 172 sm gacha",
+        "152 sm dan 176 sm gacha",
+        "144 sm dan 168 sm gacha",
+        "592 sm dan 688 sm gacha"
+      ],
+      "t": 1,
+      "izoh": "Har bir bo'yga bir xil 4 sm qo'shiladi, shuning uchun tengsizlikning ikkala chegarasi ham shu songa siljiydi: 148 + 4 = 152 va 172 + 4 = 176. Demak balandlik 152 dan 176 sm gacha bo'ladi. Poyabzal qalinligini umuman qo'shmaslik 148 dan 172 gacha, qo'shish o'rniga ayirish 144 dan 168 gacha, ko'paytirish esa haqiqatga mos kelmaydigan sonlarni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "statistika-diapazoni",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#bffb748e"
+    },
+    {
+      "q": "Guruhdagi beshta o'quvchining har birining bali 60 dan 85 ballgacha. Ularning o'rtacha bali qaysi oraliqda yotishi mumkin?",
+      "v": [
+        "60 dan 85 ballgacha",
+        "300 dan 425 ballgacha",
+        "12 dan 17 ballgacha",
+        "72,5 ball, boshqa qiymat bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Har bir ball 60 dan 85 gacha bo'lgani uchun beshtasining yig'indisi 300 dan 425 gacha bo'ladi. O'rtacha ball yig'indini 5 ga bo'lish bilan topiladi: 300 : 5 = 60 va 425 : 5 = 85. Demak o'rtacha ball ham 60 dan 85 gacha oraliqda yotadi va u albatta bitta aniq songa teng bo'lishi shart emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "statistika-diapazoni",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#ac16bfc5"
+    },
+    {
+      "q": "Do'konning kunlik savdosi 1,2 mln dan 1,8 mln so'mgacha o'zgaradi. Oyda 30 kun ishlansa, oylik savdo qaysi oraliqda bo'ladi?",
+      "v": [
+        "31,2 mln dan 31,8 mln so'mgacha",
+        "0,04 mln dan 0,06 mln so'mgacha",
+        "36 mln dan 45 mln so'mgacha",
+        "36 mln dan 54 mln so'mgacha"
+      ],
+      "t": 3,
+      "izoh": "Oylik savdo kunlik savdoni 30 ga ko'paytirish bilan topiladi: 30·1,2 = 36 va 30·1,8 = 54. Demak oylik savdo 36 mln dan 54 mln so'mgacha bo'ladi. Kunlik savdoga 30 ni qo'shish 31,2 dan 31,8 gacha degan xato oraliqni, bo'lish esa mantiqan mumkin bo'lmagan kichik sonlarni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "statistika-diapazoni",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#f2f99439"
+    },
+    {
+      "q": "So'rovnomada 200 dan 260 gacha odam qatnashdi va qatnashganlarning 45 foizdan 55 foizgacha qismi ayollar edi. Ayollar soni qaysi oraliqda bo'lishi mumkin?",
+      "v": [
+        "90 dan 117 gacha",
+        "110 dan 143 gacha",
+        "90 dan 143 gacha",
+        "245 dan 315 gacha"
+      ],
+      "t": 2,
+      "izoh": "Ayollar soni qatnashchilar soni bilan ularning ulushi ko'paytmasiga teng. Eng kichik qiymat eng kam qatnashchi va eng kichik ulushda chiqadi: 200·0,45 = 90. Eng katta qiymat esa 260·0,55 = 143. Demak ayollar soni 90 dan 143 gacha. Faqat bitta foizni olish 90 dan 117 gacha yoki 110 dan 143 gacha degan tor oraliqni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "statistika-diapazoni",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#64a52528"
+    },
+    {
+      "q": "Musbat x soni uchun 2 < x < 8 tengsizlik berilgan. Uning teskarisi bo'lgan 1/x ifoda qaysi oraliqda yotadi?",
+      "v": [
+        "1/8 < 1/x < 1/2",
+        "1/2 < 1/x < 1/8",
+        "2 < 1/x < 8",
+        "−8 < 1/x < −2"
+      ],
+      "t": 0,
+      "izoh": "Musbat sonlar uchun son kattalashganda uning teskarisi kichrayadi, shuning uchun chegaralar o'rin almashadi: 1 : 8 = 1/8 quyi chegara, 1 : 2 = 1/2 esa yuqori chegara bo'ladi. Demak 1/8 < 1/x < 1/2. Chegaralarni almashtirmasdan yozish mantiqsiz natijaga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-qiymat-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#8c6ece6b"
+    },
+    {
+      "q": "0,2 < a < 0,5 shart berilgan bo'lsa, 10/a ifodaning qiymati qaysi oraliqda o'zgaradi?",
+      "v": [
+        "50 < 10/a < 20",
+        "2 < 10/a < 5",
+        "20 < 10/a < 50",
+        "0,02 < 10/a < 0,05"
+      ],
+      "t": 2,
+      "izoh": "Bo'linmani chegaralar bo'yicha hisoblaymiz: a eng kichik bo'lganda 10 : 0,2 = 50, a eng katta bo'lganda esa 10 : 0,5 = 20. Maxraj kattalashganda bo'linma kichrayadi, shuning uchun chegaralar almashadi va 20 < 10/a < 50 hosil bo'ladi. Bo'lish o'rniga ko'paytirish 2 dan 5 gacha degan xato javobni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-qiymat-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#47198aad"
+    },
+    {
+      "q": "Manfiy x soni uchun −4 < x < −1 shart berilgan. 1/x ifodaning qiymati qaysi oraliqda yotadi?",
+      "v": [
+        "−0,25 < 1/x < −1",
+        "−1 < 1/x < −0,25",
+        "0,25 < 1/x < 1",
+        "−4 < 1/x < −1"
+      ],
+      "t": 1,
+      "izoh": "Chegaralarning teskarisini topamiz: 1 : (−4) = −0,25 va 1 : (−1) = −1. Manfiy sonlarda ham son kattalashganda uning teskarisi kichrayadi, shuning uchun chegaralar almashadi va −1 < 1/x < −0,25 bo'ladi. Manfiy sonning teskarisi ham manfiy, demak musbat oraliq javob bo'la olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-qiymat-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#edaebec9"
+    },
+    {
+      "q": "Bir ishchi butun ishni 6 kundan 10 kungacha bo'lgan muddatda bajaradi. U bir kunda ishning qanday qismini bajarishi mumkin?",
+      "v": [
+        "1/6 dan 1/10 gacha",
+        "6 dan 10 gacha",
+        "1/16 dan 1/8 gacha",
+        "1/10 dan 1/6 gacha"
+      ],
+      "t": 3,
+      "izoh": "Bir kunlik ish unumi butun ishni muddatga bo'lish bilan topiladi. Muddat 6 kun bo'lganda unum 1/6, 10 kun bo'lganda esa 1/10 bo'ladi. 1/10 son 1/6 dan kichik, shuning uchun oraliq 1/10 dan 1/6 gacha ko'rinishida yoziladi. Chegaralarni almashtirmaslik bu yerdagi asosiy xato; 1/16 dan 1/8 gacha degan javob esa 1/8 = 0,125 bo'lgani uchun haqiqiy 1/6 unumni qamrab olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-qiymat-oraligi",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#8c4e91ca"
+    },
+    {
+      "q": "Idishda 40 dan 50 litrgacha suv bor edi, undan 15 litr suv olindi. Idishda qolgan suv miqdori qaysi oraliqda bo'ladi?",
+      "v": [
+        "55 dan 65 litrgacha",
+        "40 dan 50 litrgacha",
+        "25 dan 35 litrgacha",
+        "15 dan 25 litrgacha"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlikning har uch qismidan bir xil 15 soni ayiriladi va bunda ishora o'zgarmaydi: 40 − 15 = 25 hamda 50 − 15 = 35. Demak qolgan suv 25 dan 35 litrgacha. Ayirish o'rniga qo'shish 55 dan 65 gacha, ayirishni butunlay unutish 40 dan 50 gacha, olingan 15 litrni quyi chegara deb olish esa 15 dan 25 gacha degan xato javobni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralashma-va-miqdor",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#54373520"
+    },
+    {
+      "q": "Aralashmadagi tuzning ulushi 12 foizdan 18 foizgacha, aralashmaning umumiy massasi esa 250 gramm. Tuzning massasi qaysi oraliqda yotadi?",
+      "v": [
+        "3 g dan 4,5 g gacha",
+        "12 g dan 18 g gacha",
+        "205 g dan 220 g gacha",
+        "30 g dan 45 g gacha"
+      ],
+      "t": 3,
+      "izoh": "Tuzning massasi umumiy massaning tegishli foiziga teng: 250 ning 12 foizi 30 g, 18 foizi esa 45 g. Demak tuz massasi 30 dan 45 g gacha. 205 dan 220 g gacha oraliq suvning massasini beradi, foizni to'g'ridan-to'g'ri gramm deb olish esa 12 dan 18 g gacha degan xato javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralashma-va-miqdor",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#49a84b08"
+    },
+    {
+      "q": "Birinchi idishda 3 dan 5 litrgacha, ikkinchi idishda esa 7 dan 9 litrgacha sut bor. Ikkinchi idishda birinchisiga qaraganda qancha ko'p sut bo'lishi mumkin?",
+      "v": [
+        "2 dan 6 litrgacha",
+        "10 dan 14 litrgacha",
+        "4 litr, boshqa qiymat bo'lmaydi",
+        "2 dan 4 litrgacha"
+      ],
+      "t": 0,
+      "izoh": "Farq ikkinchi idishdagi sutdan birinchisidagini ayirish bilan topiladi. Eng kichik farq 7 − 5 = 2, eng katta farq esa 9 − 3 = 6 litr. Demak farq 2 dan 6 litrgacha. Mos chegaralarni ayirish ikkala holda ham 4 ni berib, farq o'zgarmas degan noto'g'ri xulosaga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralashma-va-miqdor",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#e296eedf"
+    },
+    {
+      "q": "Fermer xo'jaligida 20 dan 25 tagacha qo'y va 30 dan 40 tagacha tovuq boqiladi. Barcha hayvonlarning oyoqlari jami soni qaysi oraliqda bo'ladi?",
+      "v": [
+        "50 dan 65 tagacha",
+        "140 dan 180 tagacha",
+        "100 dan 130 tagacha",
+        "140 dan 160 tagacha"
+      ],
+      "t": 1,
+      "izoh": "Qo'yning to'rtta, tovuqning esa ikkita oyog'i bor. Qo'y oyoqlari 4·20 = 80 dan 4·25 = 100 tagacha, tovuq oyoqlari 2·30 = 60 dan 2·40 = 80 tagacha. Endi ikkala oraliqni qo'shamiz: 80 + 60 = 140 va 100 + 80 = 180. Demak oyoqlar soni 140 dan 180 tagacha. Barcha hayvonni ikki oyoqli deb hisoblash 100 dan 130 gacha degan javobni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralashma-va-miqdor",
+      "id": "matematika_tngs_m01-sonli-tengsizliklar-ularning-xossalari-va#3f8f8f0c"
+    }
+  ]
+}

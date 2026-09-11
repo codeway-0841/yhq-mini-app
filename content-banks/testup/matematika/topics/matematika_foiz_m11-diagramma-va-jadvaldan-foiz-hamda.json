@@ -1,0 +1,1609 @@
+{
+  "nom": "Diagramma va jadvaldan foiz hamda nisbatni o'qish",
+  "bolim": "Nisbat, foiz va matnli masalalar",
+  "blok": "foiz",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Ustunli diagrammada kitob do'konining bir haftadagi savdosi berilgan. Payshanba kuni chorshanbaga qaraganda nechta ko'p kitob sotilgan?",
+      "v": [
+        "105 ta",
+        "22 ta",
+        "5 ta",
+        "15 ta"
+      ],
+      "t": 3,
+      "izoh": "Diagrammadan payshanba ustuni 60 ta, chorshanba ustuni 45 ta ekani o'qiladi. Farq: 60 − 45 = 15 ta. Javob: 15 ta.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='54.5' y='88.27' width='31.81' height='93.73' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='70.4' y='82.27' font-size='13' fill='%23334155' text-anchor='middle'%3E38%3C/text%3E%3Ctext x='70.4' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EDu%3C/text%3E%3Crect x='111.3' y='53.73' width='31.81' height='128.27' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='127.2' y='47.73' font-size='13' fill='%23334155' text-anchor='middle'%3E52%3C/text%3E%3Ctext x='127.2' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3ESe%3C/text%3E%3Crect x='168.1' y='71' width='31.81' height='111' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='184' y='65' font-size='13' fill='%23334155' text-anchor='middle'%3E45%3C/text%3E%3Ctext x='184' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EChor%3C/text%3E%3Crect x='224.9' y='34' width='31.81' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='240.8' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E60%3C/text%3E%3Ctext x='240.8' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EPay%3C/text%3E%3Crect x='281.7' y='46.33' width='31.81' height='135.67' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='297.6' y='40.33' font-size='13' fill='%23334155' text-anchor='middle'%3E55%3C/text%3E%3Ctext x='297.6' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EJu%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Esotilgan kitoblar soni%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ustun-qiymat-farqi",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#46ffae89"
+    },
+    {
+      "q": "Shu ustunli diagrammada haftalik savdo 250 ta kitobni tashkil etgan. Juma kunidagi savdo haftalik savdoning necha foizini tashkil qiladi?",
+      "v": [
+        "20%",
+        "55%",
+        "22%",
+        "27,5%"
+      ],
+      "t": 2,
+      "izoh": "Juma ustuni 55 ta kitobni ko'rsatadi. Ulush kasr sifatida 55 : 250 = 0,22 bo'ladi. Uni foizga aylantiramiz: 0,22 · 100 = 22%. Javob: 22%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='54.5' y='88.27' width='31.81' height='93.73' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='70.4' y='82.27' font-size='13' fill='%23334155' text-anchor='middle'%3E38%3C/text%3E%3Ctext x='70.4' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EDu%3C/text%3E%3Crect x='111.3' y='53.73' width='31.81' height='128.27' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='127.2' y='47.73' font-size='13' fill='%23334155' text-anchor='middle'%3E52%3C/text%3E%3Ctext x='127.2' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3ESe%3C/text%3E%3Crect x='168.1' y='71' width='31.81' height='111' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='184' y='65' font-size='13' fill='%23334155' text-anchor='middle'%3E45%3C/text%3E%3Ctext x='184' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EChor%3C/text%3E%3Crect x='224.9' y='34' width='31.81' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='240.8' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E60%3C/text%3E%3Ctext x='240.8' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EPay%3C/text%3E%3Crect x='281.7' y='46.33' width='31.81' height='135.67' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='297.6' y='40.33' font-size='13' fill='%23334155' text-anchor='middle'%3E55%3C/text%3E%3Ctext x='297.6' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EJu%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Esotilgan kitoblar soni%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ustun-ulush-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#a4b04118"
+    },
+    {
+      "q": "Kitob do'konining besh kunlik savdosi 250 ta kitob bo'lgan, ammo diagrammada seshanba ustuni ko'rinmay qolgan. Qolgan kunlarda 38, 45, 60 va 55 ta kitob sotilgan bo'lsa, seshanbada nechta sotilgan?",
+      "v": [
+        "50 ta",
+        "198 ta",
+        "52 ta",
+        "45 ta"
+      ],
+      "t": 2,
+      "izoh": "Ko'ringan to'rt ustunni qo'shamiz: 38 + 45 + 60 + 55 = 198. Yetishmagan ustun jami bilan farq orqali topiladi: 250 − 198 = 52 ta. Javob: 52 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ustun-yetishmagan",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#e314e47e"
+    },
+    {
+      "q": "Doiraviy diagrammada o'quvchilarning to'garaklar bo'yicha qiziqishi ko'rsatilgan. Sport sektorining markaziy burchagi necha gradusga teng?",
+      "v": [
+        "35°",
+        "63°",
+        "126°",
+        "108°"
+      ],
+      "t": 2,
+      "izoh": "Butun doira 360° va u 100% ga mos keladi. Demak 1% ga 3,6° to'g'ri keladi. Sport ulushi 35% bo'lgani uchun 35 · 3,6 = 126°. Javob: 126°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cpath d='M 118 112 L 118 28 A 84 84 0 0 1 185.96 161.37 Z' fill='%235b4bc4' fill-opacity='0.55' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 118 112 L 185.96 161.37 A 84 84 0 0 1 50.04 161.37 Z' fill='%235b4bc4' fill-opacity='0.38' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 118 112 L 50.04 161.37 A 84 84 0 0 1 50.04 62.63 Z' fill='%235b4bc4' fill-opacity='0.22' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 118 112 L 50.04 62.63 A 84 84 0 0 1 118 28 Z' fill='%235b4bc4' fill-opacity='0.1' stroke='%23334155' stroke-width='2'/%3E%3Crect x='226' y='33' width='13' height='13' fill='%235b4bc4' fill-opacity='0.55' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='246' y='44' font-size='13' fill='%23334155'%3Esport 35%25%3C/text%3E%3Crect x='226' y='57' width='13' height='13' fill='%235b4bc4' fill-opacity='0.38' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='246' y='68' font-size='13' fill='%23334155'%3Einformatika 30%25%3C/text%3E%3Crect x='226' y='81' width='13' height='13' fill='%235b4bc4' fill-opacity='0.22' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='246' y='92' font-size='13' fill='%23334155'%3Emusiqa 20%25%3C/text%3E%3Crect x='226' y='105' width='13' height='13' fill='%235b4bc4' fill-opacity='0.1' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='246' y='116' font-size='13' fill='%23334155'%3Etasviriy 15%25%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Eo'quvchilar qiziqishi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doira-sektor-burchak",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#a1d18f7d"
+    },
+    {
+      "q": "Shu doiraviy diagramma bo'yicha maktabda 640 nafar o'quvchi bor. Informatikani tanlagan o'quvchilar soni nechta?",
+      "v": [
+        "448 nafar",
+        "30 nafar",
+        "224 nafar",
+        "192 nafar"
+      ],
+      "t": 3,
+      "izoh": "Informatika sektori 30% ni egallaydi. Sonni topish uchun butunni ulushga ko'paytiramiz: 640 · 0,3 = 192. Javob: 192 nafar.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cpath d='M 118 112 L 118 28 A 84 84 0 0 1 185.96 161.37 Z' fill='%235b4bc4' fill-opacity='0.55' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 118 112 L 185.96 161.37 A 84 84 0 0 1 50.04 161.37 Z' fill='%235b4bc4' fill-opacity='0.38' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 118 112 L 50.04 161.37 A 84 84 0 0 1 50.04 62.63 Z' fill='%235b4bc4' fill-opacity='0.22' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M 118 112 L 50.04 62.63 A 84 84 0 0 1 118 28 Z' fill='%235b4bc4' fill-opacity='0.1' stroke='%23334155' stroke-width='2'/%3E%3Crect x='226' y='33' width='13' height='13' fill='%235b4bc4' fill-opacity='0.55' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='246' y='44' font-size='13' fill='%23334155'%3Esport 35%25%3C/text%3E%3Crect x='226' y='57' width='13' height='13' fill='%235b4bc4' fill-opacity='0.38' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='246' y='68' font-size='13' fill='%23334155'%3Einformatika 30%25%3C/text%3E%3Crect x='226' y='81' width='13' height='13' fill='%235b4bc4' fill-opacity='0.22' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='246' y='92' font-size='13' fill='%23334155'%3Emusiqa 20%25%3C/text%3E%3Crect x='226' y='105' width='13' height='13' fill='%235b4bc4' fill-opacity='0.1' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='246' y='116' font-size='13' fill='%23334155'%3Etasviriy 15%25%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Eo'quvchilar qiziqishi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "doira-foizdan-son",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#ffaecb5b"
+    },
+    {
+      "q": "O'quvchilar qiziqishi diagrammasida sport 35%, tasviriy san'at 15% ni egallagan. Sport bilan shug'ullanuvchilarning tasviriy san'at bilan shug'ullanuvchilarga nisbati qanday?",
+      "v": [
+        "3 : 7",
+        "5 : 2",
+        "7 : 3",
+        "7 : 4"
+      ],
+      "t": 2,
+      "izoh": "Nisbatni foizlar orqali yozamiz: 35 : 15. Ikkala hadni 5 ga bo'lamiz va 7 : 3 hosil bo'ladi. Tartib savolda sport birinchi bo'lgani uchun 7 oldinda turadi. Javob: 7 : 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-ikki-sektor",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#83ba7055"
+    },
+    {
+      "q": "Oilaviy byudjet diagrammasida oziq-ovqat 42%, kommunal 18%, transport 12%, jamg'arma 13% ko'rsatilgan, ta'lim sektorining yozuvi o'chib ketgan. Ta'limga byudjetning necha foizi ajratilgan?",
+      "v": [
+        "85%",
+        "28%",
+        "13%",
+        "15%"
+      ],
+      "t": 3,
+      "izoh": "Doiraviy diagrammada barcha sektorlar yig'indisi 100% bo'ladi. Ko'ringanlari: 42 + 18 + 12 + 13 = 85%. Qolgani ta'limga tegishli: 100 − 85 = 15%. Javob: 15%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doira-qolgan-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#e3d48ad2"
+    },
+    {
+      "q": "Chiziqli diagrammada saytga kirgan foydalanuvchilar soni berilgan. Fevraldan martga o'tganda tashriflar necha foizga ko'paygan?",
+      "v": [
+        "12,5%",
+        "16,7%",
+        "20%",
+        "35%"
+      ],
+      "t": 2,
+      "izoh": "Fevralda 2 700, martda 3 240 tashrif bo'lgan. O'sish miqdori 3 240 − 2 700 = 540. Nisbiy o'sish avvalgi qiymatga bo'linadi: 540 : 2 700 = 0,2, ya'ni 20%. Javob: 20%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='178' x2='322' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='20' x2='42' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='42,79.33 182,67 322,44.8' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='42' cy='79.33' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='42' y='71.33' font-size='13' fill='%23334155' text-anchor='middle'%3E2400%3C/text%3E%3Ccircle cx='182' cy='67' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='182' y='59' font-size='13' fill='%23334155' text-anchor='middle'%3E2700%3C/text%3E%3Ccircle cx='322' cy='44.8' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='322' y='36.8' font-size='13' fill='%23334155' text-anchor='middle'%3E3240%3C/text%3E%3Ctext x='42' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Eyanv%3C/text%3E%3Ctext x='182' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Efevr%3C/text%3E%3Ctext x='322' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Emart%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Esayt tashriflari%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-osish-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#50b59be3"
+    },
+    {
+      "q": "Chiziqli diagrammada bir haftaning kunlik harorati ko'rsatilgan. Eng issiq va eng salqin kun haroratining farqi qanchaga teng?",
+      "v": [
+        "27°",
+        "45°",
+        "5°",
+        "9°"
+      ],
+      "t": 3,
+      "izoh": "Chiziqning eng yuqori nuqtasi payshanbada 27°, eng past nuqtasi dushanbada 18° ni ko'rsatadi. Farq: 27 − 18 = 9°. Javob: 9°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='178' x2='322' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='20' x2='42' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='42,141 88.67,94.75 135.33,113.25 182,57.75 228.67,131.75 275.33,76.25 322,104' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='42' cy='141' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='42' y='133' font-size='13' fill='%23334155' text-anchor='middle'%3E18%3C/text%3E%3Ccircle cx='88.67' cy='94.75' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='88.67' y='86.75' font-size='13' fill='%23334155' text-anchor='middle'%3E23%3C/text%3E%3Ccircle cx='135.33' cy='113.25' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='135.33' y='105.25' font-size='13' fill='%23334155' text-anchor='middle'%3E21%3C/text%3E%3Ccircle cx='182' cy='57.75' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='182' y='49.75' font-size='13' fill='%23334155' text-anchor='middle'%3E27%3C/text%3E%3Ccircle cx='228.67' cy='131.75' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='228.67' y='123.75' font-size='13' fill='%23334155' text-anchor='middle'%3E19%3C/text%3E%3Ccircle cx='275.33' cy='76.25' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='275.33' y='68.25' font-size='13' fill='%23334155' text-anchor='middle'%3E25%3C/text%3E%3Ccircle cx='322' cy='104' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='322' y='96' font-size='13' fill='%23334155' text-anchor='middle'%3E22%3C/text%3E%3Ctext x='42' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3EDu%3C/text%3E%3Ctext x='88.67' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3ESe%3C/text%3E%3Ctext x='135.33' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3EChor%3C/text%3E%3Ctext x='182' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3EPay%3C/text%3E%3Ctext x='228.67' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3EJu%3C/text%3E%3Ctext x='275.33' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3ESha%3C/text%3E%3Ctext x='322' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3EYak%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Ekunlik harorat, °C%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-max-min",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#1caf2b0f"
+    },
+    {
+      "q": "Jadvalda to'rt shahar filialining mijozlari berilgan: Toshkent — 4 500, Samarqand — 3 000, Buxoro — 2 100, Namangan — 2 400. Samarqand filiali barcha mijozlarning necha foiziga xizmat ko'rsatgan?",
+      "v": [
+        "33,3%",
+        "25%",
+        "20%",
+        "40%"
+      ],
+      "t": 1,
+      "izoh": "Avval jadval yig'indisini topamiz: 4 500 + 3 000 + 2 100 + 2 400 = 12 000. Samarqand ulushi 3 000 : 12 000 = 0,25. Foizga o'tkazamiz: 25%. Javob: 25%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-qator-ulush",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#dc38e9c3"
+    },
+    {
+      "q": "Jadvalda uch sinf o'quvchilari berilgan: 9-A — 16 o'g'il va 24 qiz, 9-B — 18 o'g'il va 22 qiz, 9-V — 20 o'g'il va 20 qiz. O'g'il bolalar jami o'quvchilarning necha foizini tashkil qiladi?",
+      "v": [
+        "55%",
+        "54%",
+        "45%",
+        "30%"
+      ],
+      "t": 2,
+      "izoh": "O'g'illar ustuni yig'indisi: 16 + 18 + 20 = 54. Qizlar ustuni: 24 + 22 + 20 = 66. Jami 54 + 66 = 120 o'quvchi. Ulush: 54 : 120 = 0,45, ya'ni 45%. Javob: 45%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-ustun-jami-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#4b549f39"
+    },
+    {
+      "q": "Diagrammaga ko'ra kurs tinglovchilarining 24 foizi ingliz tilini tanlagan va ular 96 nafarni tashkil qiladi. Kursda jami nechta tinglovchi bor?",
+      "v": [
+        "2 304 nafar",
+        "320 nafar",
+        "120 nafar",
+        "400 nafar"
+      ],
+      "t": 3,
+      "izoh": "Ulush 24% = 0,24 ga teng. Butunni topish uchun qismni ulushga bo'lamiz: 96 : 0,24 = 400. Tekshiramiz: 400 ning 24 foizi 96 ga teng. Javob: 400 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-foizdan-tiklash",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#b1bd78a7"
+    },
+    {
+      "q": "Ustunli diagrammada to'rt sexning bir kunlik mahsuloti ko'rsatilgan. Uchinchi sex ikkinchi sexdan necha foizga ko'p mahsulot bergan?",
+      "v": [
+        "30%",
+        "50%",
+        "33,3%",
+        "150%"
+      ],
+      "t": 1,
+      "izoh": "Diagrammada 3-sex 90 ta, 2-sex 60 ta detal bergan. Farq 90 − 60 = 30 ta. Taqqoslash bazasi 2-sex bo'lgani uchun 30 : 60 = 0,5, ya'ni 50%. Javob: 50%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='60.5' y='58.67' width='34' height='123.33' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='77.5' y='52.67' font-size='13' fill='%23334155' text-anchor='middle'%3E75%3C/text%3E%3Ctext x='77.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E1-sex%3C/text%3E%3Crect x='131.5' y='83.33' width='34' height='98.67' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='148.5' y='77.33' font-size='13' fill='%23334155' text-anchor='middle'%3E60%3C/text%3E%3Ctext x='148.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E2-sex%3C/text%3E%3Crect x='202.5' y='34' width='34' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='219.5' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E90%3C/text%3E%3Ctext x='219.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E3-sex%3C/text%3E%3Crect x='273.5' y='108' width='34' height='74' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='290.5' y='102' font-size='13' fill='%23334155' text-anchor='middle'%3E45%3C/text%3E%3Ctext x='290.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E4-sex%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Etayyor mahsulot, dona%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ustun-ikki-taqqoslash-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#85267067"
+    },
+    {
+      "q": "Doiraviy diagrammada oila xarajati taqsimlangan: oziq-ovqat 45%, kommunal 20%, transport 15%, kiyim 10%, boshqa 10%. Quyidagi mulohazalardan qaysi biri to'g'ri?",
+      "v": [
+        "Transport xarajati kiyim xarajatidan 5 marta ko'p",
+        "Oziq-ovqat xarajati qolgan barcha xarajatlardan ko'p",
+        "Kommunal xarajat butun byudjetning beshdan biriga teng",
+        "Kiyim va boshqa xarajatlar birgalikda transportdan kam"
+      ],
+      "t": 2,
+      "izoh": "Kommunal ulush 20% ni beradi, 20 : 100 esa qisqartirilganda 1/5 ga teng. Boshqalari tekshiruvdan o'tmaydi: 15 : 10 = 1,5 marta, oziq-ovqat 45% qolgan 55% dan kam, kiyim bilan boshqa birga 20% bo'lib, transportdan ko'p. Javob: uchinchi mulohaza.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagramma-xulosa-togri",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#cf6ce1a3"
+    },
+    {
+      "q": "Jadvalda uch xo'jalikning bug'doy hosili berilgan: A — 240 t, B — 180 t, C — 300 t. Quyidagi xulosalardan qaysi biri noto'g'ri?",
+      "v": [
+        "C xo'jaligi hosili A xo'jaligidan 25 foizga ko'p",
+        "B xo'jaligi umumiy hosilning 25 foizini bergan",
+        "A va B birgalikda C dan 140 t ko'p hosil olgan",
+        "A xo'jaligi hosili B xo'jaligidan 33,3 foizga ko'p"
+      ],
+      "t": 2,
+      "izoh": "Uchinchi xulosani tekshiramiz: A va B birga 240 + 180 = 420 t, C esa 300 t, farq 420 − 300 = 120 t, 140 t emas. Qolganlari to'g'ri: 60 : 240 = 25%, 180 : 720 = 25%, 60 : 180 ≈ 33,3%. Javob: uchinchi xulosa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagramma-xulosa-notogri",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#a667b850"
+    },
+    {
+      "q": "Jadvalga ko'ra tumanda ishsizlik darajasi o'tgan yili 9 foizni, joriy yilda 6 foizni tashkil etgan. Ko'rsatkich nisbiy hisobda necha foizga kamaygan?",
+      "v": [
+        "66,7%",
+        "3%",
+        "50%",
+        "33,3%"
+      ],
+      "t": 3,
+      "izoh": "Kamayish miqdori 9 − 6 = 3 foiz punkt. Nisbiy kamayish esa boshlang'ich qiymatga bo'linadi: 3 : 9 ≈ 0,333, ya'ni 33,3%. Javob: 33,3%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "foiz-punkt-farqi",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#cadcb24a"
+    },
+    {
+      "q": "Ustunli diagrammada har bir katak 250 ta kitobni bildiradi: badiiy adabiyot 8 katak, ilmiy adabiyot 5 katak, darsliklar 7 katak. Badiiy adabiyot fondning necha foizini tashkil qiladi?",
+      "v": [
+        "8%",
+        "35%",
+        "25%",
+        "40%"
+      ],
+      "t": 3,
+      "izoh": "Kataklar soni bo'yicha jami 8 + 5 + 7 = 20 katak. Har katak bir xil miqdorni bildirgani uchun ulushni kataklar orqali topsa bo'ladi: 8 : 20 = 0,4, ya'ni 40%. Javob: 40%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ustun-masshtab-birlik",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#159e093a"
+    },
+    {
+      "q": "Jadvalda besh o'quvchining test bali berilgan: Aziz 68, Bekzod 74, Dilnoza 82, Elyor 56, Feruza 70. O'rtacha baldan yuqori natija olganlar o'quvchilarning necha foizini tashkil qiladi?",
+      "v": [
+        "70%",
+        "60%",
+        "20%",
+        "40%"
+      ],
+      "t": 3,
+      "izoh": "Ballar yig'indisi 68 + 74 + 82 + 56 + 70 = 350, o'rtacha esa 350 : 5 = 70. O'rtachadan qat'iy yuqori natija ikkita: 74 va 82. Ulush 2 : 5 = 0,4, ya'ni 40%. Javob: 40%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-ortacha-taqqos",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#1addddbb"
+    },
+    {
+      "q": "Doiraviy diagrammada ovoz berish natijasi berilgan: birinchi nomzod 45%, ikkinchisi 35%, uchinchisi 20% ovoz olgan. Uchinchi nomzod 240 ta ovoz olgan bo'lsa, jami nechta ovoz berilgan?",
+      "v": [
+        "600 ta",
+        "4 800 ta",
+        "960 ta",
+        "1 200 ta"
+      ],
+      "t": 3,
+      "izoh": "Uchinchi nomzodning ulushi 20% = 0,2. Jami ovozni topish uchun qismni ulushga bo'lamiz: 240 : 0,2 = 1 200. Javob: 1 200 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doira-jami-topish",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#bfc73824"
+    },
+    {
+      "q": "Jadvalda sinfdagi o'g'il va qizlar soni 5 : 4 nisbatda ekani ko'rsatilgan. Sinfda 36 nafar o'quvchi bo'lsa, qizlar nechta?",
+      "v": [
+        "18 nafar",
+        "20 nafar",
+        "9 nafar",
+        "16 nafar"
+      ],
+      "t": 3,
+      "izoh": "Nisbat hadlari yig'indisi 5 + 4 = 9 ulush beradi. Bitta ulush 36 : 9 = 4 nafarga teng. Qizlar to'rt ulush: 4 · 4 = 16 nafar. Javob: 16 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-nisbatdan-son",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#490c9ece"
+    },
+    {
+      "q": "Chiziqli diagrammada ikki do'konning to'rt oylik savdosi berilgan: to'liq chiziq A do'konni, punktir chiziq B do'konni bildiradi. Aprel oyida A do'kon savdosi B do'kondan necha foizga ko'p?",
+      "v": [
+        "125%",
+        "20%",
+        "12%",
+        "25%"
+      ],
+      "t": 3,
+      "izoh": "Aprelda A do'kon 60 mln, B do'kon 48 mln so'mlik savdo qilgan. Farq 60 − 48 = 12 mln. Taqqoslash B ga nisbatan: 12 : 48 = 0,25, ya'ni 25%. Javob: 25%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='178' x2='322' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='20' x2='42' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='42,93.43 135.33,82.86 228.67,61.71 322,51.14' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='42' cy='93.43' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='42' y='108.43' font-size='13' fill='%23334155' text-anchor='middle'%3E40%3C/text%3E%3Ccircle cx='135.33' cy='82.86' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='135.33' y='97.86' font-size='13' fill='%23334155' text-anchor='middle'%3E45%3C/text%3E%3Ccircle cx='228.67' cy='61.71' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='228.67' y='53.71' font-size='13' fill='%23334155' text-anchor='middle'%3E55%3C/text%3E%3Ccircle cx='322' cy='51.14' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='322' y='43.14' font-size='13' fill='%23334155' text-anchor='middle'%3E60%3C/text%3E%3Cpolyline points='42,61.71 135.33,72.29 228.67,68.06 322,76.51' fill='none' stroke='%235b4bc4' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='42' cy='61.71' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='42' y='53.71' font-size='13' fill='%23334155' text-anchor='middle'%3E55%3C/text%3E%3Ccircle cx='135.33' cy='72.29' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='135.33' y='64.29' font-size='13' fill='%23334155' text-anchor='middle'%3E50%3C/text%3E%3Ccircle cx='228.67' cy='68.06' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='228.67' y='83.06' font-size='13' fill='%23334155' text-anchor='middle'%3E52%3C/text%3E%3Ccircle cx='322' cy='76.51' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='322' y='91.51' font-size='13' fill='%23334155' text-anchor='middle'%3E48%3C/text%3E%3Ctext x='42' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Eyanv%3C/text%3E%3Ctext x='135.33' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Efevr%3C/text%3E%3Ctext x='228.67' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Emart%3C/text%3E%3Ctext x='322' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Eapr%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3EA do'kon — to'liq chiziq, B do'kon — punktir%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-ikki-chiziq",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#095f1314"
+    },
+    {
+      "q": "Ustunli diagrammada korxonaning Andijon va Farg'ona filiallaridagi ishchilar erkak va ayollarga ajratib ko'rsatilgan. Farg'ona filialida ayollar soni erkaklar sonidan necha foizga ko'p?",
+      "v": [
+        "18,2%",
+        "22,2%",
+        "20%",
+        "55%"
+      ],
+      "t": 1,
+      "izoh": "Farg'ona filiali ustunlari 90 erkak va 110 ayolni ko'rsatadi. Farq 110 − 90 = 20 nafar. Taqqoslash erkaklar soniga nisbatan: 20 : 90 ≈ 0,222, ya'ni 22,2%. Javob: 22,2%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='60.5' y='34' width='34' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='77.5' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E120%3C/text%3E%3Ctext x='77.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EAnd. er%3C/text%3E%3Crect x='131.5' y='83.33' width='34' height='98.67' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='148.5' y='77.33' font-size='13' fill='%23334155' text-anchor='middle'%3E80%3C/text%3E%3Ctext x='148.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EAnd. ay%3C/text%3E%3Crect x='202.5' y='71' width='34' height='111' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='219.5' y='65' font-size='13' fill='%23334155' text-anchor='middle'%3E90%3C/text%3E%3Ctext x='219.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EFarg. er%3C/text%3E%3Crect x='273.5' y='46.33' width='34' height='135.67' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='290.5' y='40.33' font-size='13' fill='%23334155' text-anchor='middle'%3E110%3C/text%3E%3Ctext x='290.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EFarg. ay%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Efilial ishchilari soni%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gistogramma-guruh-ulush",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#76a3ac3a"
+    },
+    {
+      "q": "Jadvalda korxona daromadi ko'rsatilgan: o'tgan yili 250 mln so'm, joriy yilda 325 mln so'm. Daromad necha foizga oshgan?",
+      "v": [
+        "130%",
+        "23,1%",
+        "75%",
+        "30%"
+      ],
+      "t": 3,
+      "izoh": "O'sish miqdori 325 − 250 = 75 mln so'm. Uni boshlang'ich daromadga bo'lamiz: 75 : 250 = 0,3. Foizga o'tkazsak 30% chiqadi. Javob: 30%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-ikki-davr-ozgarish",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#d65e80de"
+    },
+    {
+      "q": "Jadvalda ikki brigadaning bir kunda tayyorlagan detallari berilgan: birinchi brigada 45 ta, ikkinchi brigada 75 ta. Birinchi brigada ishining ikkinchisiga nisbati qanday?",
+      "v": [
+        "5 : 8",
+        "5 : 3",
+        "3 : 8",
+        "3 : 5"
+      ],
+      "t": 3,
+      "izoh": "Nisbatni yozamiz: 45 : 75. Ikkala hadni 15 ga bo'lamiz va 3 : 5 hosil qilamiz. Bu yerda jami 120 ta detalga emas, ikkinchi brigadaga taqqoslanadi. Javob: 3 : 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-soddalashtirish",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#69ad2c8b"
+    },
+    {
+      "q": "Sinfdagi 40 o'quvchidan 16 tasi futbolni, 10 tasi shaxmatni, 8 tasi suzishni, 6 tasi tennisni tanlagan. Bu ma'lumot doiraviy diagrammada qanday foizlar bilan ko'rsatiladi?",
+      "v": [
+        "40%, 25%, 20%, 15%",
+        "16%, 10%, 8%, 6%",
+        "45%, 25%, 20%, 10%",
+        "40%, 30%, 20%, 10%"
+      ],
+      "t": 0,
+      "izoh": "Har bir sonni 40 ga bo'lib foizga o'tkazamiz: 16 : 40 = 40%, 10 : 40 = 25%, 8 : 40 = 20%, 6 : 40 = 15%. Yig'indi 100% ni beradi, demak taqsimot to'g'ri. Javob: birinchi qator.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagramma-mos-taqsimot",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#34bd4347"
+    },
+    {
+      "q": "Ustunli diagrammada do'konda sotilgan muzlatkichlar soni oylar bo'yicha berilgan. May oyida aprelga qaraganda nechta ko'p muzlatkich sotilgan?",
+      "v": [
+        "8 ta",
+        "80 ta",
+        "24 ta",
+        "16 ta"
+      ],
+      "t": 3,
+      "izoh": "May ustuni 48 ta, aprel ustuni 32 ta muzlatkichni ko'rsatadi. Farqni olamiz: 48 − 32 = 16 ta. Javob: 16 ta.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='60.5' y='118.57' width='34' height='63.43' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='77.5' y='112.57' font-size='13' fill='%23334155' text-anchor='middle'%3E24%3C/text%3E%3Ctext x='77.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3Emart%3C/text%3E%3Crect x='131.5' y='97.43' width='34' height='84.57' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='148.5' y='91.43' font-size='13' fill='%23334155' text-anchor='middle'%3E32%3C/text%3E%3Ctext x='148.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3Eaprel%3C/text%3E%3Crect x='202.5' y='55.14' width='34' height='126.86' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='219.5' y='49.14' font-size='13' fill='%23334155' text-anchor='middle'%3E48%3C/text%3E%3Ctext x='219.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3Emay%3C/text%3E%3Crect x='273.5' y='34' width='34' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='290.5' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E56%3C/text%3E%3Ctext x='290.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3Eiyun%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Esotilgan muzlatkichlar%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ustun-qiymat-farqi",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#20298280"
+    },
+    {
+      "q": "Shu diagrammada to'rt oylik savdo 160 ta muzlatkichni tashkil etgan. May oyidagi savdo to'rt oylik savdoning necha foiziga to'g'ri keladi?",
+      "v": [
+        "25%",
+        "30%",
+        "48%",
+        "70%"
+      ],
+      "t": 1,
+      "izoh": "May ustuni 48 ta muzlatkichni ko'rsatadi. Ulush 48 : 160 = 0,3 ga teng. Foizga aylantiramiz: 30%. Javob: 30%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='60.5' y='118.57' width='34' height='63.43' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='77.5' y='112.57' font-size='13' fill='%23334155' text-anchor='middle'%3E24%3C/text%3E%3Ctext x='77.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3Emart%3C/text%3E%3Crect x='131.5' y='97.43' width='34' height='84.57' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='148.5' y='91.43' font-size='13' fill='%23334155' text-anchor='middle'%3E32%3C/text%3E%3Ctext x='148.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3Eaprel%3C/text%3E%3Crect x='202.5' y='55.14' width='34' height='126.86' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='219.5' y='49.14' font-size='13' fill='%23334155' text-anchor='middle'%3E48%3C/text%3E%3Ctext x='219.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3Emay%3C/text%3E%3Crect x='273.5' y='34' width='34' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='290.5' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E56%3C/text%3E%3Ctext x='290.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3Eiyun%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Esotilgan muzlatkichlar%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ustun-ulush-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#260692ba"
+    },
+    {
+      "q": "Doiraviy diagrammadagi bitta sektorning markaziy burchagi 54° ga teng. Bu sektor butun ma'lumotning necha foizini ifodalaydi?",
+      "v": [
+        "18%",
+        "54%",
+        "15%",
+        "30%"
+      ],
+      "t": 2,
+      "izoh": "Butun doira 360° va 100% ga mos keladi. Sektor ulushi 54 : 360 = 0,15 ni beradi. Foizga o'tkazamiz: 15%. Javob: 15%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doira-sektor-burchak",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#5f529523"
+    },
+    {
+      "q": "Doiraviy diagrammaga ko'ra fermer xo'jaligi yerining 35 foiziga bug'doy ekilgan. Xo'jalik yeri 80 gektar bo'lsa, bug'doy maydoni qancha?",
+      "v": [
+        "35 gektar",
+        "28 gektar",
+        "24 gektar",
+        "52 gektar"
+      ],
+      "t": 1,
+      "izoh": "Ulush 35% = 0,35. Maydonni topamiz: 80 · 0,35 = 28 gektar. Qolgan 52 gektarga boshqa ekinlar ekilgan. Javob: 28 gektar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "doira-foizdan-son",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#c6bd241a"
+    },
+    {
+      "q": "Chiziqli diagrammada bolaning bo'yi kuzatilgan: besh yoshda 110 sm, o'n yoshda 143 sm bo'lgan. Shu davrda bo'y necha foizga o'sgan?",
+      "v": [
+        "23,1%",
+        "33%",
+        "130%",
+        "30%"
+      ],
+      "t": 3,
+      "izoh": "O'sish miqdori 143 − 110 = 33 sm. Nisbiy o'sish boshlang'ich bo'yga bo'linadi: 33 : 110 = 0,3, ya'ni 30%. Javob: 30%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-osish-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#8c7e9245"
+    },
+    {
+      "q": "Jadvalda kutubxonaga bir oyda kelgan o'quvchilar berilgan: birinchi hafta 320, ikkinchi hafta 280, uchinchi hafta 450, to'rtinchi hafta 200 nafar. Uchinchi hafta tashriflari oylik tashrifning necha foizini tashkil qiladi?",
+      "v": [
+        "25%",
+        "36%",
+        "45%",
+        "56,3%"
+      ],
+      "t": 1,
+      "izoh": "Oylik tashrif: 320 + 280 + 450 + 200 = 1 250 nafar. Uchinchi hafta ulushi 450 : 1 250 = 0,36 ni beradi. Foizga o'tkazamiz: 36%. Javob: 36%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-qator-ulush",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#80b18cf8"
+    },
+    {
+      "q": "So'rov natijasi jadvalida qatnashganlarning 15 foizi, ya'ni 72 nafari transportdan norozi ekani qayd etilgan. So'rovda jami nechta kishi qatnashgan?",
+      "v": [
+        "600 nafar",
+        "87 nafar",
+        "480 nafar",
+        "1 080 nafar"
+      ],
+      "t": 2,
+      "izoh": "Ulush 15% = 0,15 ga teng. Butun so'rovdagilar soni 72 : 0,15 = 480 nafar. Tekshiruv: 480 ning 15 foizi 72 ga teng. Javob: 480 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-foizdan-tiklash",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#5dc6d2f2"
+    },
+    {
+      "q": "Ustunli diagrammada ikki mahsulot narxi taqqoslangan: birinchisi 24 000 so'm, ikkinchisi 30 000 so'm turadi. Birinchi mahsulot ikkinchisidan necha foizga arzon?",
+      "v": [
+        "25%",
+        "20%",
+        "6%",
+        "80%"
+      ],
+      "t": 1,
+      "izoh": "Narx farqi 30 000 − 24 000 = 6 000 so'm. Arzonlik qimmatroq narxga nisbatan o'lchanadi: 6 000 : 30 000 = 0,2, ya'ni 20%. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ustun-ikki-taqqoslash-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#32ef43ec"
+    },
+    {
+      "q": "Chiziqli diagrammada korxonaning choraklik foydasi berilgan. Quyidagi mulohazalardan qaysi biri to'g'ri?",
+      "v": [
+        "Foyda har chorakda oldingisiga nisbatan o'sib borgan",
+        "To'rtinchi chorak foydasi birinchi chorakdan 62,5 foizga ko'p",
+        "Uchinchi chorak foydasi yillik foydaning to'rtdan biriga teng",
+        "Ikkinchi chorak foydasi uchinchi chorakdan 15 foizga ko'p"
+      ],
+      "t": 1,
+      "izoh": "Diagrammada 120, 150, 135, 195 qiymatlari turibdi. Ikkinchi mulohazani tekshiramiz: 195 − 120 = 75 va 75 : 120 = 0,625, ya'ni 62,5%. Uchinchi chorak 135 bo'lib, yillik 600 ning to'rtdan biri 150 ga teng emas, foyda esa uchinchi chorakda kamaygan. Javob: ikkinchi mulohaza.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='178' x2='322' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='20' x2='42' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='42,97.27 135.33,77.09 228.67,87.18 322,46.82' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='42' cy='97.27' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='42' y='89.27' font-size='13' fill='%23334155' text-anchor='middle'%3E120%3C/text%3E%3Ccircle cx='135.33' cy='77.09' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='135.33' y='69.09' font-size='13' fill='%23334155' text-anchor='middle'%3E150%3C/text%3E%3Ccircle cx='228.67' cy='87.18' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='228.67' y='79.18' font-size='13' fill='%23334155' text-anchor='middle'%3E135%3C/text%3E%3Ccircle cx='322' cy='46.82' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='322' y='38.82' font-size='13' fill='%23334155' text-anchor='middle'%3E195%3C/text%3E%3Ctext x='42' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='135.33' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3EII%3C/text%3E%3Ctext x='228.67' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3EIII%3C/text%3E%3Ctext x='322' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3EIV%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Echorak foydasi, mln so'm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagramma-xulosa-togri",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#319a4703"
+    },
+    {
+      "q": "Jadvalda olti kunlik yog'ingarchilik miqdori berilgan: 4, 12, 0, 9, 15 va 8 mm. O'rtacha kunlik yog'ingarchilikdan ko'p bo'lgan kunlar barcha kunlarning necha foizini tashkil qiladi?",
+      "v": [
+        "33,3%",
+        "50%",
+        "66,7%",
+        "8%"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi 4 + 12 + 0 + 9 + 15 + 8 = 48 mm, o'rtacha esa 48 : 6 = 8 mm. O'rtachadan qat'iy ko'p kunlar: 12, 9 va 15 mm, ya'ni uchta. Ulush 3 : 6 = 0,5, ya'ni 50%. Javob: 50%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-ortacha-taqqos",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#469a1d3a"
+    },
+    {
+      "q": "Ustunli diagrammada maktab to'garaklaridagi a'zolar soni berilgan. Robototexnika to'garagida sayyohlar to'garagiga qaraganda nechta ko'p a'zo bor?",
+      "v": [
+        "63 nafar",
+        "14 nafar",
+        "21 nafar",
+        "7 nafar"
+      ],
+      "t": 2,
+      "izoh": "Robototexnika ustuni 45 nafarni, sayyohlar ustuni 24 nafarni ko'rsatadi. Farqni olamiz: 45 − 24 = 21 nafar. Javob: 21 nafar.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='54.5' y='114.73' width='31.81' height='67.27' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='70.4' y='108.73' font-size='13' fill='%23334155' text-anchor='middle'%3E30%3C/text%3E%3Ctext x='70.4' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EShaxmat%3C/text%3E%3Crect x='111.3' y='81.09' width='31.81' height='100.91' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='127.2' y='75.09' font-size='13' fill='%23334155' text-anchor='middle'%3E45%3C/text%3E%3Ctext x='127.2' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3ERobot.%3C/text%3E%3Crect x='168.1' y='103.52' width='31.81' height='78.48' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='184' y='97.52' font-size='13' fill='%23334155' text-anchor='middle'%3E35%3C/text%3E%3Ctext x='184' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3ETarjima%3C/text%3E%3Crect x='224.9' y='128.18' width='31.81' height='53.82' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='240.8' y='122.18' font-size='13' fill='%23334155' text-anchor='middle'%3E24%3C/text%3E%3Ctext x='240.8' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3ESayyoh%3C/text%3E%3Crect x='281.7' y='34' width='31.81' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='297.6' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E66%3C/text%3E%3Ctext x='297.6' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3ETeatr%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Eklub a'zolari soni%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ustun-qiymat-farqi",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#294e6d10"
+    },
+    {
+      "q": "Shu diagrammadagi barcha to'garaklarda jami 200 nafar o'quvchi shug'ullanadi. Teatr to'garagi a'zolari jami a'zolarning necha foizini tashkil qiladi?",
+      "v": [
+        "20%",
+        "33%",
+        "49,3%",
+        "66%"
+      ],
+      "t": 1,
+      "izoh": "Teatr ustuni 66 nafarni ko'rsatadi. Ulushni topamiz: 66 : 200 = 0,33. Foizga o'tkazamiz: 33%. Javob: 33%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='54.5' y='114.73' width='31.81' height='67.27' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='70.4' y='108.73' font-size='13' fill='%23334155' text-anchor='middle'%3E30%3C/text%3E%3Ctext x='70.4' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EShaxmat%3C/text%3E%3Crect x='111.3' y='81.09' width='31.81' height='100.91' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='127.2' y='75.09' font-size='13' fill='%23334155' text-anchor='middle'%3E45%3C/text%3E%3Ctext x='127.2' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3ERobot.%3C/text%3E%3Crect x='168.1' y='103.52' width='31.81' height='78.48' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='184' y='97.52' font-size='13' fill='%23334155' text-anchor='middle'%3E35%3C/text%3E%3Ctext x='184' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3ETarjima%3C/text%3E%3Crect x='224.9' y='128.18' width='31.81' height='53.82' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='240.8' y='122.18' font-size='13' fill='%23334155' text-anchor='middle'%3E24%3C/text%3E%3Ctext x='240.8' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3ESayyoh%3C/text%3E%3Crect x='281.7' y='34' width='31.81' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='297.6' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E66%3C/text%3E%3Ctext x='297.6' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3ETeatr%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Eklub a'zolari soni%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ustun-ulush-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#a62e8cb1"
+    },
+    {
+      "q": "Jadvalda to'rt oylik reja 1 800 ta detal deb berilgan, oylar bo'yicha 420, 510 va 390 ta ko'rsatkich o'qiladi, to'rtinchi oy katagi bo'sh qolgan. To'rtinchi oyda nechta detal tayyorlangan?",
+      "v": [
+        "1 320 ta",
+        "480 ta",
+        "450 ta",
+        "510 ta"
+      ],
+      "t": 1,
+      "izoh": "Ma'lum uch oyni qo'shamiz: 420 + 510 + 390 = 1 320 ta. Bo'sh katak jami bilan farq orqali topiladi: 1 800 − 1 320 = 480 ta. Javob: 480 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ustun-yetishmagan",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#e4a2aed2"
+    },
+    {
+      "q": "So'rovda qatnashgan 1 200 nafar tomoshabindan 320 nafari sport kanalini tanlagan. Doiraviy diagrammada bu guruhga mos sektorning markaziy burchagi necha gradus bo'ladi?",
+      "v": [
+        "120°",
+        "96°",
+        "26,7°",
+        "320°"
+      ],
+      "t": 1,
+      "izoh": "Avval ulushni topamiz: 320 : 1 200 ≈ 0,2667. Burchak butun doiradan olinadi: 0,2667 · 360° = 96°. Javob: 96°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "doira-sektor-burchak",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#c3ee9ee3"
+    },
+    {
+      "q": "Doiraviy diagrammaga ko'ra sayyohlik agentligi mijozlarining 42 foizi dengiz bo'yini tanlagan. Agentlik 350 nafar mijozga xizmat ko'rsatgan bo'lsa, dengizni tanlaganlar nechta?",
+      "v": [
+        "42 nafar",
+        "203 nafar",
+        "140 nafar",
+        "147 nafar"
+      ],
+      "t": 3,
+      "izoh": "Ulush 42% = 0,42 ga teng. Sonni topamiz: 350 · 0,42 = 147 nafar. Qolgan 58 foiz, ya'ni 203 nafar boshqa yo'nalishni tanlagan. Javob: 147 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "doira-foizdan-son",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#1819e42e"
+    },
+    {
+      "q": "Doiraviy diagrammada shahar aholisining 24 foizi yoshlar, 36 foizi o'rta yoshdagilar ekani ko'rsatilgan. Yoshlar sonining o'rta yoshdagilar soniga nisbati qanday?",
+      "v": [
+        "3 : 5",
+        "3 : 2",
+        "2 : 5",
+        "2 : 3"
+      ],
+      "t": 3,
+      "izoh": "Sektorlar bir xil butundan olingani uchun nisbatni foizlar orqali yozsa bo'ladi: 24 : 36. Ikkala hadni 12 ga bo'lamiz va 2 : 3 hosil bo'ladi. Javob: 2 : 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-ikki-sektor",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#14b8646b"
+    },
+    {
+      "q": "Doiraviy diagrammada uchta sektor 28%, 17% va 30% deb belgilangan, to'rtinchi sektor yozuvsiz qolgan. Yozuvsiz sektorning markaziy burchagi necha gradus?",
+      "v": [
+        "75°",
+        "90°",
+        "25°",
+        "270°"
+      ],
+      "t": 1,
+      "izoh": "Belgilangan sektorlar 28 + 17 + 30 = 75% ni egallaydi. Qolgan sektor 100 − 75 = 25%. Burchagi: 25 · 3,6 = 90°. Javob: 90°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "doira-qolgan-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#e4f1e205"
+    },
+    {
+      "q": "Chiziqli diagrammada kutubxona fondiga qo'shilgan yangi kitoblar soni ko'rsatilgan: dastlabki yili 450 ta, oxirgi yili 522 ta. Yillik to'ldirish necha foizga oshgan?",
+      "v": [
+        "13,8%",
+        "16%",
+        "72%",
+        "116%"
+      ],
+      "t": 1,
+      "izoh": "O'sish miqdori 522 − 450 = 72 ta. Uni boshlang'ich qiymatga bo'lamiz: 72 : 450 = 0,16, ya'ni 16%. Javob: 16%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-osish-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#8de3a2bf"
+    },
+    {
+      "q": "Chiziqli diagrammada do'konning olti oylik savdosi ko'rsatilgan. Eng yuqori oy savdosi eng past oy savdosidan necha foizga ko'p?",
+      "v": [
+        "42,9%",
+        "75%",
+        "27%",
+        "175%"
+      ],
+      "t": 1,
+      "izoh": "Chiziqning eng yuqori nuqtasi 63 mln, eng past nuqtasi 36 mln so'mni ko'rsatadi. Farq 63 − 36 = 27 mln. Taqqoslash eng past qiymatga nisbatan: 27 : 36 = 0,75, ya'ni 75%. Javob: 75%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='178' x2='322' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='20' x2='42' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='42,104 98,73.17 154,85.5 210,48.5 266,97.83 322,60.83' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='42' cy='104' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='42' y='96' font-size='13' fill='%23334155' text-anchor='middle'%3E36%3C/text%3E%3Ccircle cx='98' cy='73.17' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='98' y='65.17' font-size='13' fill='%23334155' text-anchor='middle'%3E51%3C/text%3E%3Ccircle cx='154' cy='85.5' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='154' y='77.5' font-size='13' fill='%23334155' text-anchor='middle'%3E45%3C/text%3E%3Ccircle cx='210' cy='48.5' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='210' y='40.5' font-size='13' fill='%23334155' text-anchor='middle'%3E63%3C/text%3E%3Ccircle cx='266' cy='97.83' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='266' y='89.83' font-size='13' fill='%23334155' text-anchor='middle'%3E39%3C/text%3E%3Ccircle cx='322' cy='60.83' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='322' y='52.83' font-size='13' fill='%23334155' text-anchor='middle'%3E57%3C/text%3E%3Ctext x='42' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Eyan%3C/text%3E%3Ctext x='98' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Efev%3C/text%3E%3Ctext x='154' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Emar%3C/text%3E%3Ctext x='210' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Eapr%3C/text%3E%3Ctext x='266' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Emay%3C/text%3E%3Ctext x='322' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Eiyun%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Eoylik savdo, mln so'm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-max-min",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#f31509a5"
+    },
+    {
+      "q": "Jadvalda do'konning bir kunlik tushumi bo'limlar bo'yicha berilgan: non — 180 000, sut — 260 000, meva — 350 000, boshqa — 210 000 so'm. Meva bo'limi kunlik tushumning necha foizini beradi?",
+      "v": [
+        "65%",
+        "26%",
+        "21%",
+        "35%"
+      ],
+      "t": 3,
+      "izoh": "Kunlik tushum: 180 000 + 260 000 + 350 000 + 210 000 = 1 000 000 so'm. Meva bo'limi ulushi 350 000 : 1 000 000 = 0,35, ya'ni 35%. Javob: 35%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-qator-ulush",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#9be8fc70"
+    },
+    {
+      "q": "Jadvalda ikki smenaning uch kunlik mahsuloti berilgan: birinchi smena 150, 170 va 180 ta, ikkinchi smena 100, 110 va 90 ta detal tayyorlagan. Ikkinchi smena jami mahsulotning necha foizini bergan?",
+      "v": [
+        "30%",
+        "37,5%",
+        "62,5%",
+        "60%"
+      ],
+      "t": 1,
+      "izoh": "Birinchi smena 150 + 170 + 180 = 500 ta, ikkinchi smena 100 + 110 + 90 = 300 ta detal beradi. Jami 800 ta. Ulush: 300 : 800 = 0,375, ya'ni 37,5%. Javob: 37,5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-ustun-jami-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#e32b4234"
+    },
+    {
+      "q": "Jadvalda ta'mir xarajatining 65 foizi, ya'ni 39 mln so'm qurilish materiallariga sarflangani qayd etilgan. Ta'mirning umumiy xarajati qancha bo'lgan?",
+      "v": [
+        "111,4 mln so'm",
+        "104 mln so'm",
+        "25,4 mln so'm",
+        "60 mln so'm"
+      ],
+      "t": 3,
+      "izoh": "Ulush 65% = 0,65. Butun xarajat qismni ulushga bo'lish orqali topiladi: 39 : 0,65 = 60 mln so'm. Tekshiruv: 60 ning 65 foizi 39 ga teng. Javob: 60 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-foizdan-tiklash",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#19065fb5"
+    },
+    {
+      "q": "Ustunli diagrammada ikki shahardagi yillik yog'ingarchilik taqqoslangan. Namangandagi yog'ingarchilik Toshkentnikidan necha foizga kam?",
+      "v": [
+        "84%",
+        "31,6%",
+        "76%",
+        "24%"
+      ],
+      "t": 3,
+      "izoh": "Ustunlar 350 mm va 266 mm ni ko'rsatadi. Farq 350 − 266 = 84 mm. Kamayish Toshkent ko'rsatkichiga nisbatan o'lchanadi: 84 : 350 = 0,24, ya'ni 24%. Javob: 24%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='96' y='34' width='34' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='113' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E350%3C/text%3E%3Ctext x='113' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EToshkent%3C/text%3E%3Crect x='238' y='69.52' width='34' height='112.48' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='255' y='63.52' font-size='13' fill='%23334155' text-anchor='middle'%3E266%3C/text%3E%3Ctext x='255' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3ENamangan%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Eyillik yog'ingarchilik, mm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ustun-ikki-taqqoslash-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#3abfa2c3"
+    },
+    {
+      "q": "Jadvalda to'rt tumandagi maktablar soni berilgan: A — 24 ta, B — 18 ta, C — 36 ta, D — 42 ta. Quyidagi xulosalardan qaysi biri to'g'ri?",
+      "v": [
+        "C tumandagi maktablar B tumanikidan ikki barobar ko'p",
+        "D tuman maktablari jami maktablarning yarmini tashkil qiladi",
+        "A tuman maktablari jami maktablarning 24 foizini tashkil qiladi",
+        "A va B tumanlari birgalikda D tumandan ko'p maktabga ega"
+      ],
+      "t": 0,
+      "izoh": "Birinchi xulosani tekshiramiz: 36 : 18 = 2, demak rost. Jami 120 ta maktab, yarmi 60 ta bo'lgani uchun D 42 ta bilan yarmini bermaydi. A ulushi 24 : 120 = 20%, A va B esa 42 ta bo'lib, D ga teng. Javob: birinchi xulosa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagramma-xulosa-togri",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#ebef7914"
+    },
+    {
+      "q": "Doiraviy diagrammada zavod mahsuloti turlarga bo'lingan: A — 40%, B — 25%, C — 20%, D — 15%. Quyidagi xulosalardan qaysi biri noto'g'ri?",
+      "v": [
+        "A tur mahsuloti D turdan uch barobardan ko'p",
+        "B va C turlar birgalikda A turdan ko'p",
+        "D tur sektorining markaziy burchagi 54° ga teng",
+        "C tur mahsuloti barcha mahsulotning beshdan biriga teng"
+      ],
+      "t": 0,
+      "izoh": "Birinchi xulosani tekshiramiz: 40 : 15 ≈ 2,67, ya'ni uch barobardan kam, demak noto'g'ri. Qolganlari rost: 25 + 20 = 45 > 40, 15 · 3,6 = 54°, 20% = 1/5. Javob: birinchi xulosa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagramma-xulosa-notogri",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#4f10b511"
+    },
+    {
+      "q": "Jadvalda partiya ovozlari o'tgan saylovda 28%, so'nggi saylovda 35% deb qayd etilgan. Ulush necha foiz punktga o'zgargan va bu nisbiy hisobda qanday o'sish beradi?",
+      "v": [
+        "7 foiz punkt, nisbiy o'sish 25%",
+        "7 foiz punkt, nisbiy o'sish 20%",
+        "25 foiz punkt, nisbiy o'sish 7%",
+        "7 foiz punkt, nisbiy o'sish 7%"
+      ],
+      "t": 0,
+      "izoh": "Foiz punktdagi farq oddiy ayirma bilan topiladi: 35 − 28 = 7 foiz punkt. Nisbiy o'sish esa boshlang'ich ulushga bo'linadi: 7 : 28 = 0,25, ya'ni 25%. Javob: birinchi qator.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "foiz-punkt-farqi",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#79ba1fec"
+    },
+    {
+      "q": "Ustunli diagrammada har bir bo'linma 40 tonna hosilni bildiradi: bug'doy ustuni 7 bo'linma, arpa 5 bo'linma, makkajo'xori 13 bo'linma. Bug'doy hosili jami hosilning necha foizini tashkil qiladi va bu necha tonna?",
+      "v": [
+        "7%, 280 t",
+        "35%, 280 t",
+        "28%, 700 t",
+        "28%, 280 t"
+      ],
+      "t": 3,
+      "izoh": "Bo'linmalar jami 7 + 5 + 13 = 25 ta. Bug'doy ulushi 7 : 25 = 0,28, ya'ni 28%. Massasi 7 · 40 = 280 tonna. Javob: 28% va 280 t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ustun-masshtab-birlik",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#068e8e43"
+    },
+    {
+      "q": "Jadvalda to'rt do'konning haftalik savdosi berilgan: 42, 58, 36 va 64 mln so'm. Eng katta savdo o'rtacha savdodan necha foizga ko'p?",
+      "v": [
+        "14%",
+        "21,9%",
+        "28%",
+        "128%"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi 42 + 58 + 36 + 64 = 200 mln so'm, o'rtacha esa 200 : 4 = 50 mln. Farq 64 − 50 = 14 mln. Taqqoslash o'rtachaga nisbatan: 14 : 50 = 0,28, ya'ni 28%. Javob: 28%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-ortacha-taqqos",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#be1b50d4"
+    },
+    {
+      "q": "Doiraviy diagrammada tennis sektori 16 foizni egallaydi va unga 8 nafar o'quvchi to'g'ri keladi. So'rovda jami nechta o'quvchi qatnashgan?",
+      "v": [
+        "128 nafar",
+        "24 nafar",
+        "42 nafar",
+        "50 nafar"
+      ],
+      "t": 3,
+      "izoh": "Sektor ulushi 16% = 0,16. Butun so'rov qatnashchilari: 8 : 0,16 = 50 nafar. Tekshiruv: 50 ning 16 foizi 8 ga teng. Javob: 50 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doira-jami-topish",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#e7025d89"
+    },
+    {
+      "q": "Jadvalga ko'ra korxonada muhandislar va ishchilar soni 3 : 8 nisbatda. Ishchilar muhandislardan 120 nafar ko'p bo'lsa, korxonada jami nechta xodim ishlaydi?",
+      "v": [
+        "72 nafar",
+        "264 nafar",
+        "192 nafar",
+        "440 nafar"
+      ],
+      "t": 1,
+      "izoh": "Nisbatdagi farq 8 − 3 = 5 ulushga to'g'ri keladi. Bitta ulush 120 : 5 = 24 nafar. Jami ulush 3 + 8 = 11, demak xodimlar 11 · 24 = 264 nafar. Javob: 264 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-nisbatdan-son",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#9f0066d9"
+    },
+    {
+      "q": "Chiziqli diagrammada ikki sinfning to'rt oylik o'rtacha bali berilgan. Qaysi sinf ko'rsatkichi ko'proq foizga o'sgan va o'sish qancha?",
+      "v": [
+        "B sinf, 9%",
+        "B sinf, 12%",
+        "A sinf, 21%",
+        "A sinf, 35%"
+      ],
+      "t": 3,
+      "izoh": "A sinf 60 dan 81 ga chiqqan: farq 21, o'sish 21 : 60 = 0,35, ya'ni 35%. B sinf 75 dan 84 ga chiqqan: farq 9, o'sish 9 : 75 = 0,12, ya'ni 12%. Katta o'sish A sinfda. Javob: A sinf, 35%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='178' x2='322' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='20' x2='42' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='42,145.11 135.33,125.38 228.67,99.07 322,76.04' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='42' cy='145.11' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='42' y='160.11' font-size='13' fill='%23334155' text-anchor='middle'%3E60%3C/text%3E%3Ccircle cx='135.33' cy='125.38' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='135.33' y='140.38' font-size='13' fill='%23334155' text-anchor='middle'%3E66%3C/text%3E%3Ccircle cx='228.67' cy='99.07' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='228.67' y='114.07' font-size='13' fill='%23334155' text-anchor='middle'%3E74%3C/text%3E%3Ccircle cx='322' cy='76.04' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='322' y='91.04' font-size='13' fill='%23334155' text-anchor='middle'%3E81%3C/text%3E%3Cpolyline points='42,95.78 135.33,92.49 228.67,79.33 322,66.18' fill='none' stroke='%235b4bc4' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='42' cy='95.78' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='42' y='87.78' font-size='13' fill='%23334155' text-anchor='middle'%3E75%3C/text%3E%3Ccircle cx='135.33' cy='92.49' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='135.33' y='84.49' font-size='13' fill='%23334155' text-anchor='middle'%3E76%3C/text%3E%3Ccircle cx='228.67' cy='79.33' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='228.67' y='71.33' font-size='13' fill='%23334155' text-anchor='middle'%3E80%3C/text%3E%3Ccircle cx='322' cy='66.18' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='322' y='58.18' font-size='13' fill='%23334155' text-anchor='middle'%3E84%3C/text%3E%3Ctext x='42' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Esent%3C/text%3E%3Ctext x='135.33' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Eokt%3C/text%3E%3Ctext x='228.67' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Enoy%3C/text%3E%3Ctext x='322' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3Edek%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3EA sinf — to'liq chiziq, B sinf — punktir%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-ikki-chiziq",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#f88098fa"
+    },
+    {
+      "q": "Ustunli diagrammada ikki yil bo'yicha eksport va import ko'rsatilgan. Joriy yilda eksport tashqi savdo aylanmasining necha foizini tashkil qiladi?",
+      "v": [
+        "44,4%",
+        "47,5%",
+        "52,5%",
+        "110,5%"
+      ],
+      "t": 2,
+      "izoh": "Joriy yil aylanmasi eksport bilan importning yig'indisi: 315 + 285 = 600 mln dollar. Eksport ulushi 315 : 600 = 0,525, ya'ni 52,5%. Javob: 52,5%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='60.5' y='69.24' width='34' height='112.76' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='77.5' y='63.24' font-size='13' fill='%23334155' text-anchor='middle'%3E240%3C/text%3E%3Ctext x='77.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EO'tgan eks.%3C/text%3E%3Crect x='131.5' y='41.05' width='34' height='140.95' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='148.5' y='35.05' font-size='13' fill='%23334155' text-anchor='middle'%3E300%3C/text%3E%3Ctext x='148.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EO'tgan imp.%3C/text%3E%3Crect x='202.5' y='34' width='34' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='219.5' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E315%3C/text%3E%3Ctext x='219.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EJoriy eks.%3C/text%3E%3Crect x='273.5' y='48.1' width='34' height='133.9' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='290.5' y='42.1' font-size='13' fill='%23334155' text-anchor='middle'%3E285%3C/text%3E%3Ctext x='290.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EJoriy imp.%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Emln dollar%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gistogramma-guruh-ulush",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#a5ecbf2e"
+    },
+    {
+      "q": "Jadvalda mahsulot narxi yanvarda 15 000 so'm, iyunda 12 300 so'm deb berilgan. Mahsulot narxi necha foizga arzonlashgan?",
+      "v": [
+        "12%",
+        "18%",
+        "22%",
+        "82%"
+      ],
+      "t": 1,
+      "izoh": "Narx farqi 15 000 − 12 300 = 2 700 so'm. Arzonlashish eski narxga nisbatan hisoblanadi: 2 700 : 15 000 = 0,18, ya'ni 18%. Javob: 18%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-ikki-davr-ozgarish",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#8216c423"
+    },
+    {
+      "q": "Jadvalda maktab kutubxonasidagi kitoblar ko'rsatilgan: badiiy adabiyot 128 ta, ilmiy adabiyot 96 ta. Badiiy kitoblarning ilmiy kitoblarga nisbatini eng sodda ko'rinishda toping.",
+      "v": [
+        "3 : 7",
+        "3 : 4",
+        "4 : 7",
+        "4 : 3"
+      ],
+      "t": 3,
+      "izoh": "Nisbatni yozamiz: 128 : 96. Ikkala hadning eng katta umumiy bo'luvchisi 32 ga teng. Bo'lamiz: 128 : 32 = 4 va 96 : 32 = 3, demak 4 : 3. Javob: 4 : 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-soddalashtirish",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#4d9fba20"
+    },
+    {
+      "q": "Doiraviy diagrammadagi to'rt sektorning markaziy burchaklari 108°, 126°, 72° va 54° ga teng. Bu sektorlar qanday foizlarga mos keladi?",
+      "v": [
+        "30%, 35%, 20%, 15%",
+        "28%, 32%, 22%, 18%",
+        "30%, 30%, 25%, 15%",
+        "36%, 42%, 24%, 18%"
+      ],
+      "t": 0,
+      "izoh": "Har bir burchakni 3,6 ga bo'lamiz, chunki 1% ga 3,6° to'g'ri keladi: 108 : 3,6 = 30, 126 : 3,6 = 35, 72 : 3,6 = 20, 54 : 3,6 = 15. Yig'indi 100% ni beradi. Javob: birinchi qator.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagramma-mos-taqsimot",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#6e9a30d4"
+    },
+    {
+      "q": "Jadvalda 200 nafar so'ralganning javobi berilgan: erkaklardan 72 nafari, ayollardan 32 nafari «ha» deb javob bergan, so'ralganlarning 120 nafari erkak. Erkaklar orasida «ha» deganlar ulushi necha foiz?",
+      "v": [
+        "36%",
+        "60%",
+        "40%",
+        "52%"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda baza butun so'rov emas, faqat erkaklar guruhi: 120 nafar. Ulush 72 : 120 = 0,6, ya'ni 60%. Javob: 60%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-ikki-shart-kesishma",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#eb8d0cec"
+    },
+    {
+      "q": "Doiraviy diagrammada 2 500 nafar talaba yo'nalishlar bo'yicha taqsimlangan. Diagrammaning 1 foiziga nechta talaba to'g'ri keladi va 18 foizli sektor nechta talabani bildiradi?",
+      "v": [
+        "18 nafar va 450 nafar",
+        "25 nafar va 360 nafar",
+        "250 nafar va 450 nafar",
+        "25 nafar va 450 nafar"
+      ],
+      "t": 3,
+      "izoh": "Butun doira 100% ga teng, demak 1% ga 2 500 : 100 = 25 nafar to'g'ri keladi. Sektor qiymati: 18 · 25 = 450 nafar. Javob: 25 va 450 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagramma-foiz-natura",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#064c5d6b"
+    },
+    {
+      "q": "Chiziqli diagrammada zavod mahsuloti besh oyda 120, 132, 150, 138 va 160 tonnani tashkil etgan. Oxirgi oy ko'rsatkichi besh oylik o'rtachadan necha foizga yuqori?",
+      "v": [
+        "12,5%",
+        "20%",
+        "14,3%",
+        "114,3%"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi 120 + 132 + 150 + 138 + 160 = 700 tonna, o'rtacha 700 : 5 = 140 tonna. Farq 160 − 140 = 20 tonna. Nisbiy farq 20 : 140 ≈ 0,143, ya'ni 14,3%. Javob: 14,3%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='178' x2='322' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='20' x2='42' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='42,79.33 112,69.47 182,54.67 252,64.53 322,46.44' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='42' cy='79.33' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='42' y='71.33' font-size='13' fill='%23334155' text-anchor='middle'%3E120%3C/text%3E%3Ccircle cx='112' cy='69.47' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='112' y='61.47' font-size='13' fill='%23334155' text-anchor='middle'%3E132%3C/text%3E%3Ccircle cx='182' cy='54.67' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='182' y='46.67' font-size='13' fill='%23334155' text-anchor='middle'%3E150%3C/text%3E%3Ccircle cx='252' cy='64.53' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='252' y='56.53' font-size='13' fill='%23334155' text-anchor='middle'%3E138%3C/text%3E%3Ccircle cx='322' cy='46.44' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='322' y='38.44' font-size='13' fill='%23334155' text-anchor='middle'%3E160%3C/text%3E%3Ctext x='42' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3E1-oy%3C/text%3E%3Ctext x='112' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3E2-oy%3C/text%3E%3Ctext x='182' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3E3-oy%3C/text%3E%3Ctext x='252' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3E4-oy%3C/text%3E%3Ctext x='322' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3E5-oy%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Emahsulot, tonna%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-ortacha-osish",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#af6830e8"
+    },
+    {
+      "q": "Jadvalda uch do'konning savdosi o'tgan va joriy yil bo'yicha berilgan: A — 200 va 250, B — 150 va 195, C — 400 va 480 mln so'm. Qaysi do'kon savdosi eng katta foizda o'sgan?",
+      "v": [
+        "A do'kon, 25% o'sish",
+        "B do'kon, 30% o'sish",
+        "C do'kon, 20% o'sish",
+        "C do'kon, 25% o'sish"
+      ],
+      "t": 1,
+      "izoh": "Har bir do'kon uchun o'sishni alohida hisoblaymiz: A da 50 : 200 = 25%, B da 45 : 150 = 30%, C da 80 : 400 = 20%. Eng katta foiz B do'konda, garchi so'mdagi o'sish C da katta bo'lsa ham. Javob: B do'kon, 30%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-reyting-tartib",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#e22317ea"
+    },
+    {
+      "q": "Sinfdagi 30 o'quvchidan 12 nafari matematikani, 9 nafari fizikani, 6 nafari kimyoni, 3 nafari biologiyani tanladi. Doiraviy diagrammada matematika sektorining markaziy burchagi necha gradus bo'ladi?",
+      "v": [
+        "120°",
+        "40°",
+        "144°",
+        "12°"
+      ],
+      "t": 2,
+      "izoh": "Matematikani tanlaganlar ulushi 12 : 30 = 0,4, ya'ni 40%. Burchak: 0,4 · 360° = 144°. Javob: 144°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doira-sektorlar-nisbati-sondan",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#ae5534d3"
+    },
+    {
+      "q": "Ikkita ustunli diagrammada ikki maktabning matematika olimpiadasidagi natijasi berilgan. Ikkinchi maktab ko'rsatkichi birinchi maktabnikining necha foizini tashkil qiladi?",
+      "v": [
+        "20%",
+        "125%",
+        "80%",
+        "9%"
+      ],
+      "t": 2,
+      "izoh": "Ustunlar 45 va 36 nafar g'olibni ko'rsatadi. Taqqoslashda baza birinchi maktab: 36 : 45 = 0,8, ya'ni 80%. Javob: 80%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='96' y='34' width='34' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='113' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E45%3C/text%3E%3Ctext x='113' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E1-mak. mat%3C/text%3E%3Crect x='238' y='63.6' width='34' height='118.4' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='255' y='57.6' font-size='13' fill='%23334155' text-anchor='middle'%3E36%3C/text%3E%3Ctext x='255' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E2-mak. mat%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Eg'olib o'quvchilar%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ustun-ikki-diagramma-taqqos",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#bdaee102"
+    },
+    {
+      "q": "Jadvalda tovar narxining o'zgarishi qayd etilgan: avval narx 20 foizga oshgan, keyin yangi narxdan 20 foizga tushgan. Boshlang'ich narx 50 000 so'm bo'lsa, oxirgi narx qancha bo'ladi?",
+      "v": [
+        "50 000 so'm",
+        "48 000 so'm",
+        "52 000 so'm",
+        "46 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Birinchi o'zgarishdan keyin 50 000 · 1,2 = 60 000 so'm. Ikkinchi o'zgarish yangi narxdan olinadi: 60 000 · 0,8 = 48 000 so'm. Ikki bosqichli foiz bir-birini qoplamaydi. Javob: 48 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-foiz-ketma-ket",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#fa79bf13"
+    },
+    {
+      "q": "Jadvalda qurilish aralashmasidagi qum va sement massalari 5 : 3 nisbatda berilgan. Qum aralashmaning necha foizini tashkil qiladi?",
+      "v": [
+        "37,5%",
+        "62,5%",
+        "60%",
+        "166,7%"
+      ],
+      "t": 1,
+      "izoh": "Nisbat hadlari yig'indisi 5 + 3 = 8 ulush beradi. Qum besh ulushni egallaydi: 5 : 8 = 0,625, ya'ni 62,5%. Qolgan 37,5% sementga to'g'ri keladi. Javob: 62,5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-foizga-aylantirish",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#79b1fa0c"
+    },
+    {
+      "q": "Jadvalda brigadaning oylik rejasi 750 ta detal, amalda bajarilgani 810 ta deb ko'rsatilgan. Reja necha foizga ortig'i bilan bajarilgan?",
+      "v": [
+        "108%",
+        "8%",
+        "7,4%",
+        "60%"
+      ],
+      "t": 1,
+      "izoh": "Rejadan ortiqcha bajarilgani 810 − 750 = 60 ta. Ortiqcha bajarish rejaga nisbatan o'lchanadi: 60 : 750 = 0,08, ya'ni 8%. Bajarilish darajasi esa 108% ni beradi. Javob: 8%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-normadan-bajarish",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#028a8795"
+    },
+    {
+      "q": "Jadvalda 400 nafar mijozning javobi umumlashtirilgan: xizmatdan 250 nafari mamnun, ulardan 145 nafari ayol. Mamnun mijozlar orasida erkaklar ulushi necha foiz?",
+      "v": [
+        "26,3%",
+        "58%",
+        "42%",
+        "62,5%"
+      ],
+      "t": 2,
+      "izoh": "Mamnun erkaklar soni 250 − 145 = 105 nafar. Baza sifatida barcha mijoz emas, mamnunlar guruhi olinadi: 105 : 250 = 0,42, ya'ni 42%. Javob: 42%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-ikki-shart-kesishma",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#e6d0cfaf"
+    },
+    {
+      "q": "Ustunli diagrammada tumandagi to'rt maktabning bitiruvchilari ko'rsatilgan. Eng ko'p va eng kam bitiruvchisi bo'lgan maktablar orasidagi farq nechta?",
+      "v": [
+        "56 nafar",
+        "40 nafar",
+        "16 nafar",
+        "400 nafar"
+      ],
+      "t": 0,
+      "izoh": "Eng baland ustun 128 nafarni, eng past ustun 72 nafarni ko'rsatadi. Farqni olamiz: 128 − 72 = 56 nafar. Javob: 56 nafar.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='60.5' y='98.75' width='34' height='83.25' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='77.5' y='92.75' font-size='13' fill='%23334155' text-anchor='middle'%3E72%3C/text%3E%3Ctext x='77.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E1-mak%3C/text%3E%3Crect x='131.5' y='80.25' width='34' height='101.75' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='148.5' y='74.25' font-size='13' fill='%23334155' text-anchor='middle'%3E88%3C/text%3E%3Ctext x='148.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E2-mak%3C/text%3E%3Crect x='202.5' y='52.5' width='34' height='129.5' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='219.5' y='46.5' font-size='13' fill='%23334155' text-anchor='middle'%3E112%3C/text%3E%3Ctext x='219.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E3-mak%3C/text%3E%3Crect x='273.5' y='34' width='34' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='290.5' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E128%3C/text%3E%3Ctext x='290.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E4-mak%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Ebitiruvchilar soni%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ustun-qiymat-farqi",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#1923a5eb"
+    },
+    {
+      "q": "Shu diagrammada to'rt maktabda jami 400 nafar bitiruvchi bor. To'rtinchi maktab bitiruvchilari jami bitiruvchilarning necha foizini tashkil qiladi?",
+      "v": [
+        "25%",
+        "32%",
+        "12,8%",
+        "68%"
+      ],
+      "t": 1,
+      "izoh": "To'rtinchi ustun 128 nafarni ko'rsatadi. Ulush 128 : 400 = 0,32 ga teng. Foizga o'tkazamiz: 32%. Javob: 32%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='60.5' y='98.75' width='34' height='83.25' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='77.5' y='92.75' font-size='13' fill='%23334155' text-anchor='middle'%3E72%3C/text%3E%3Ctext x='77.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E1-mak%3C/text%3E%3Crect x='131.5' y='80.25' width='34' height='101.75' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='148.5' y='74.25' font-size='13' fill='%23334155' text-anchor='middle'%3E88%3C/text%3E%3Ctext x='148.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E2-mak%3C/text%3E%3Crect x='202.5' y='52.5' width='34' height='129.5' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='219.5' y='46.5' font-size='13' fill='%23334155' text-anchor='middle'%3E112%3C/text%3E%3Ctext x='219.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E3-mak%3C/text%3E%3Crect x='273.5' y='34' width='34' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='290.5' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E128%3C/text%3E%3Ctext x='290.5' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E4-mak%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Ebitiruvchilar soni%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ustun-ulush-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#c94d6b8b"
+    },
+    {
+      "q": "Jadvalda besh filialning mijozlari berilgan: 140, 210, bo'sh katak, 175 va 195 nafar, jami esa 875 nafar. Bo'sh katakda qanday son turishi kerak?",
+      "v": [
+        "720 nafar",
+        "155 nafar",
+        "175 nafar",
+        "195 nafar"
+      ],
+      "t": 1,
+      "izoh": "Ma'lum to'rt filialni qo'shamiz: 140 + 210 + 175 + 195 = 720 nafar. Bo'sh katak jami bilan farq orqali topiladi: 875 − 720 = 155 nafar. Javob: 155 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ustun-yetishmagan",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#b7fba2ec"
+    },
+    {
+      "q": "Doiraviy diagrammada bitta sektor butun ma'lumotning 45 foizini egallaydi. Shu sektorning markaziy burchagi necha gradusga teng?",
+      "v": [
+        "162°",
+        "45°",
+        "81°",
+        "198°"
+      ],
+      "t": 0,
+      "izoh": "Bir foizga 360 : 100 = 3,6° to'g'ri keladi. Sektor burchagi 45 · 3,6 = 162°. Javob: 162°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "doira-sektor-burchak",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#573e2131"
+    },
+    {
+      "q": "Doiraviy diagrammaga ko'ra mahalladagi 1 500 nafar aholining 12 foizi pensiya yoshida. Pensiya yoshidagilar soni nechta?",
+      "v": [
+        "125 nafar",
+        "1 320 nafar",
+        "180 nafar",
+        "150 nafar"
+      ],
+      "t": 2,
+      "izoh": "Ulush 12% = 0,12 ga teng. Sonni topamiz: 1 500 · 0,12 = 180 nafar. Javob: 180 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "doira-foizdan-son",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#fafe95bf"
+    },
+    {
+      "q": "Doiraviy diagrammada shahar byudjetining 16 foizi sportga, 28 foizi madaniyatga ajratilgani ko'rsatilgan. Sport mablag'ining madaniyat mablag'iga nisbati qanday?",
+      "v": [
+        "4 : 7",
+        "7 : 4",
+        "2 : 5",
+        "4 : 11"
+      ],
+      "t": 0,
+      "izoh": "Nisbatni foizlar orqali yozamiz: 16 : 28. Ikkala hadni 4 ga bo'lamiz va 4 : 7 hosil bo'ladi. Javob: 4 : 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-ikki-sektor",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#ac834058"
+    },
+    {
+      "q": "Doiraviy diagrammada ikkita sektor 41% va 23% deb belgilangan, uchinchi sektorning yozuvi tushib qolgan. Uchinchi sektor necha foizni egallaydi?",
+      "v": [
+        "64%",
+        "36%",
+        "41%",
+        "18%"
+      ],
+      "t": 1,
+      "izoh": "Barcha sektorlar birgalikda 100% ni beradi. Belgilanganlari 41 + 23 = 64%. Qolgani: 100 − 64 = 36%. Javob: 36%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "doira-qolgan-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#103b4aca"
+    },
+    {
+      "q": "Chiziqli diagrammada fermer xo'jaligining tuxum yig'imi may oyida 3 200 ta, iyun oyida 3 744 ta bo'lgan. Yig'im necha foizga oshgan?",
+      "v": [
+        "1,7%",
+        "14,5%",
+        "17%",
+        "117%"
+      ],
+      "t": 2,
+      "izoh": "O'sish miqdori 3 744 − 3 200 = 544 ta. Uni boshlang'ich qiymatga bo'lamiz: 544 : 3 200 = 0,17, ya'ni 17%. Javob: 17%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-osish-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#90b6bf86"
+    },
+    {
+      "q": "Chiziqli diagrammada shifoxonaga bir haftada kelgan bemorlar soni ko'rsatilgan. Eng yuqori kunlik ko'rsatkich eng past kunlik ko'rsatkichdan nechtaga ko'p?",
+      "v": [
+        "23 ta",
+        "67 ta",
+        "11 ta",
+        "14 ta"
+      ],
+      "t": 0,
+      "izoh": "Chiziqning eng yuqori nuqtasi payshanbada 45 ta, eng past nuqtasi yakshanbada 22 ta bemorni ko'rsatadi. Farq: 45 − 22 = 23 ta. Javob: 23 ta.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='178' x2='322' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='20' x2='42' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='42,139.94 88.67,110.34 135.33,123.03 182,51.14 228.67,101.89 275.33,118.8 322,148.4' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='42' cy='139.94' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='42' y='131.94' font-size='13' fill='%23334155' text-anchor='middle'%3E24%3C/text%3E%3Ccircle cx='88.67' cy='110.34' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='88.67' y='102.34' font-size='13' fill='%23334155' text-anchor='middle'%3E31%3C/text%3E%3Ccircle cx='135.33' cy='123.03' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='135.33' y='115.03' font-size='13' fill='%23334155' text-anchor='middle'%3E28%3C/text%3E%3Ccircle cx='182' cy='51.14' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='182' y='43.14' font-size='13' fill='%23334155' text-anchor='middle'%3E45%3C/text%3E%3Ccircle cx='228.67' cy='101.89' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='228.67' y='93.89' font-size='13' fill='%23334155' text-anchor='middle'%3E33%3C/text%3E%3Ccircle cx='275.33' cy='118.8' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='275.33' y='110.8' font-size='13' fill='%23334155' text-anchor='middle'%3E29%3C/text%3E%3Ccircle cx='322' cy='148.4' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='322' y='140.4' font-size='13' fill='%23334155' text-anchor='middle'%3E22%3C/text%3E%3Ctext x='42' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3EDu%3C/text%3E%3Ctext x='88.67' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3ESe%3C/text%3E%3Ctext x='135.33' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3ECho%3C/text%3E%3Ctext x='182' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3EPay%3C/text%3E%3Ctext x='228.67' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3EJu%3C/text%3E%3Ctext x='275.33' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3ESha%3C/text%3E%3Ctext x='322' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3EYak%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Ekunlik bemorlar soni%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-max-min",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#288bca85"
+    },
+    {
+      "q": "Jadvalda tumandagi chorva mollari berilgan: qoramol 240 ta, qo'y 900 ta, echki 360 ta, tuya 100 ta. Qo'ylar butun chorvaning necha foizini tashkil qiladi?",
+      "v": [
+        "56,25%",
+        "45%",
+        "90%",
+        "43,75%"
+      ],
+      "t": 0,
+      "izoh": "Jami chorva: 240 + 900 + 360 + 100 = 1 600 bosh. Qo'ylar ulushi 900 : 1 600 = 0,5625, ya'ni 56,25%. Javob: 56,25%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-qator-ulush",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#57091dd3"
+    },
+    {
+      "q": "Jadvalda uch oy davomida sotilgan choy va qahva miqdori berilgan: choy 70, 76 va 76 kg, qahva 24, 26 va 28 kg. Qahva jami sotuvning necha foizini tashkil qiladi?",
+      "v": [
+        "26%",
+        "74%",
+        "35,1%",
+        "24%"
+      ],
+      "t": 0,
+      "izoh": "Choy ustuni 70 + 76 + 76 = 222 kg, qahva ustuni 24 + 26 + 28 = 78 kg. Jami 300 kg. Qahva ulushi 78 : 300 = 0,26, ya'ni 26%. Javob: 26%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-ustun-jami-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#be48609f"
+    },
+    {
+      "q": "Jadvalda maktabdagi a'lochilar soni 84 nafar bo'lib, bu barcha o'quvchilarning 12 foiziga to'g'ri keladi. Maktabda jami nechta o'quvchi o'qiydi?",
+      "v": [
+        "700 nafar",
+        "1 008 nafar",
+        "96 nafar",
+        "840 nafar"
+      ],
+      "t": 0,
+      "izoh": "Ulush 12% = 0,12 ga teng. Butun sonni topish uchun qismni ulushga bo'lamiz: 84 : 0,12 = 700 nafar. Javob: 700 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-foizdan-tiklash",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#8015a560"
+    },
+    {
+      "q": "Ustunli diagrammada ikki tumanning paxta hosili taqqoslangan. Ikkinchi tuman hosili birinchi tuman hosilidan necha foizga ko'p?",
+      "v": [
+        "3,8%",
+        "27,5%",
+        "38%",
+        "138%"
+      ],
+      "t": 2,
+      "izoh": "Ustunlar 1 800 t va 2 484 t ni ko'rsatadi. Farq 2 484 − 1 800 = 684 t. Taqqoslash birinchi tumanga nisbatan: 684 : 1 800 = 0,38, ya'ni 38%. Javob: 38%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='96' y='74.75' width='34' height='107.25' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='113' y='68.75' font-size='13' fill='%23334155' text-anchor='middle'%3E1800%3C/text%3E%3Ctext x='113' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E1-tuman%3C/text%3E%3Crect x='238' y='34' width='34' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='255' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E2484%3C/text%3E%3Ctext x='255' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E2-tuman%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Epaxta hosili, tonna%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ustun-ikki-taqqoslash-foiz",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#9a8a723a"
+    },
+    {
+      "q": "Doiraviy diagrammada bir kunlik vaqt taqsimoti berilgan: uyqu 34%, o'qish 25%, dam olish 16%, sport 9%, boshqa ishlar 16%. Quyidagi mulohazalardan qaysi biri to'g'ri?",
+      "v": [
+        "Uyquga kuniga sakkiz soatdan ko'proq vaqt ketgan",
+        "O'qish sektorining markaziy burchagi 100° ga teng",
+        "Sportga kunning o'ndan bir qismi ajratilgan",
+        "Dam olish va boshqa ishlar birgalikda uyqudan ko'p"
+      ],
+      "t": 0,
+      "izoh": "Uyqu ulushi 34% bo'lgani uchun 24 · 0,34 = 8,16 soat, ya'ni sakkiz soatdan ko'p. Qolganlari to'g'ri emas: 25 · 3,6 = 90°, sport 9% bo'lib o'ndan bir qismdan kam, dam olish bilan boshqa ishlar esa 32% berib, 34% dan kam. Javob: birinchi mulohaza.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagramma-xulosa-togri",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#e7f20b68"
+    },
+    {
+      "q": "Jadvalda to'rt oyning o'rtacha harorati berilgan: mart 12°, aprel 18°, may 24°, iyun 30°. Quyidagi xulosalardan qaysi biri noto'g'ri?",
+      "v": [
+        "Har oyda harorat oldingisiga nisbatan 6 gradusga oshgan",
+        "Iyun harorati mart haroratidan 150 foizga yuqori",
+        "Apreldan mayga o'tganda harorat 25 foizga oshgan",
+        "May harorati to'rt oylik o'rtachadan yuqori"
+      ],
+      "t": 2,
+      "izoh": "Apreldan mayga o'sish 24 − 18 = 6 daraja bo'lib, 6 : 18 ≈ 0,333, ya'ni 33,3%, 25% emas. Qolganlari rost: qadam 6 daraja, 18 : 12 = 1,5 ya'ni 150%, o'rtacha 21 daraja va 24 undan yuqori. Javob: uchinchi xulosa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagramma-xulosa-notogri",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#e4a2abd7"
+    },
+    {
+      "q": "Jadvalda a'lo baho olganlar ulushi o'tgan yili 45 foiz, joriy yilda 54 foiz deb qayd etilgan. Ulush necha foiz punktga va nisbiy hisobda necha foizga oshgan?",
+      "v": [
+        "9 foiz punkt va 20%",
+        "9 foiz punkt va 9%",
+        "20 foiz punkt va 9%",
+        "9 foiz punkt va 16,7%"
+      ],
+      "t": 0,
+      "izoh": "Foiz punktdagi o'zgarish oddiy ayirma: 54 − 45 = 9 foiz punkt. Nisbiy o'sish esa eski ulushga bo'linadi: 9 : 45 = 0,2, ya'ni 20%. Javob: birinchi qator.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foiz-punkt-farqi",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#62790d82"
+    },
+    {
+      "q": "Ustunli diagrammada vertikal o'qning har bir bo'linmasi 5 yashikni bildiradi: sabzavot ustuni 6 bo'linma, meva ustuni 9 bo'linma. Meva ustuni sabzavot ustunidan necha foizga baland va bu nechta yashikka teng?",
+      "v": [
+        "50% va 15 yashik",
+        "33,3% va 15 yashik",
+        "50% va 3 yashik",
+        "150% va 45 yashik"
+      ],
+      "t": 0,
+      "izoh": "Bo'linmalar farqi 9 − 6 = 3 ta, ya'ni 3 · 5 = 15 yashik. Nisbiy farq sabzavot ustuniga bo'linadi: 3 : 6 = 0,5, ya'ni 50%. Javob: 50% va 15 yashik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ustun-masshtab-birlik",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#2f337112"
+    },
+    {
+      "q": "Jadvalda besh shaharning kunlik harorati berilgan: 27, 31, 24, 29 va 34 daraja. O'rtacha harorat qancha va nechta shaharda harorat undan yuqori bo'lgan?",
+      "v": [
+        "29 daraja, 2 ta shahar",
+        "29 daraja, 3 ta shahar",
+        "28 daraja, 2 ta shahar",
+        "31 daraja, 2 ta shahar"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi 27 + 31 + 24 + 29 + 34 = 145, o'rtacha esa 145 : 5 = 29 daraja. O'rtachadan qat'iy yuqori qiymatlar: 31 va 34, ya'ni ikkita shahar. Javob: 29 daraja va 2 ta shahar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-ortacha-taqqos",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#1a09df32"
+    },
+    {
+      "q": "Doiraviy diagrammada olma sektori 35 foizni egallaydi va unga 63 kg meva to'g'ri keladi. Omborda jami necha kilogramm meva bor?",
+      "v": [
+        "220,5 kg",
+        "180 kg",
+        "98 kg",
+        "150 kg"
+      ],
+      "t": 1,
+      "izoh": "Sektor ulushi 35% = 0,35. Butun miqdor qismni ulushga bo'lish orqali topiladi: 63 : 0,35 = 180 kg. Javob: 180 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "doira-jami-topish",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#8e432f01"
+    },
+    {
+      "q": "Jadvalda bog'chadagi o'g'il va qizlar soni 7 : 5 nisbatda ko'rsatilgan. Bog'chaga 96 nafar bola qatnasa, o'g'illar nechta?",
+      "v": [
+        "56 nafar",
+        "40 nafar",
+        "48 nafar",
+        "84 nafar"
+      ],
+      "t": 0,
+      "izoh": "Ulushlar yig'indisi 7 + 5 = 12 ga teng, bitta ulush esa 96 : 12 = 8 nafar. O'g'illar yetti ulush: 7 · 8 = 56 nafar. Javob: 56 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-nisbatdan-son",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#6354e12c"
+    },
+    {
+      "q": "Chiziqli diagrammada ikki mahsulot narxi to'rt oy davomida kuzatilgan. Qaysi oyda narxlar bir-biriga eng yaqin kelgan va farq arzon mahsulotga nisbatan necha foizni tashkil qiladi?",
+      "v": [
+        "3-oy, 12,5%",
+        "3-oy, 11,1%",
+        "2-oy, 21,1%",
+        "4-oy, 42,9%"
+      ],
+      "t": 0,
+      "izoh": "Har oydagi farqni ko'ramiz: 8, 4, 2 va 6 ming so'm, eng kichigi uchinchi oyda. Uchinchi oyda narxlar 18 va 16 ming so'm, arzoni 16. Nisbiy farq 2 : 16 = 0,125, ya'ni 12,5%. Javob: 3-oy va 12,5%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='178' x2='322' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='20' x2='42' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='42,141 135.33,113.25 228.67,85.5 322,67' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='42' cy='141' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='42' y='133' font-size='13' fill='%23334155' text-anchor='middle'%3E12%3C/text%3E%3Ccircle cx='135.33' cy='113.25' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='135.33' y='105.25' font-size='13' fill='%23334155' text-anchor='middle'%3E15%3C/text%3E%3Ccircle cx='228.67' cy='85.5' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='228.67' y='77.5' font-size='13' fill='%23334155' text-anchor='middle'%3E18%3C/text%3E%3Ccircle cx='322' cy='67' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='322' y='59' font-size='13' fill='%23334155' text-anchor='middle'%3E20%3C/text%3E%3Cpolyline points='42,67 135.33,76.25 228.67,104 322,122.5' fill='none' stroke='%235b4bc4' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='42' cy='67' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='42' y='59' font-size='13' fill='%23334155' text-anchor='middle'%3E20%3C/text%3E%3Ccircle cx='135.33' cy='76.25' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='135.33' y='68.25' font-size='13' fill='%23334155' text-anchor='middle'%3E19%3C/text%3E%3Ccircle cx='228.67' cy='104' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='228.67' y='96' font-size='13' fill='%23334155' text-anchor='middle'%3E16%3C/text%3E%3Ccircle cx='322' cy='122.5' r='3' fill='none' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='322' y='114.5' font-size='13' fill='%23334155' text-anchor='middle'%3E14%3C/text%3E%3Ctext x='42' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3E1-oy%3C/text%3E%3Ctext x='135.33' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3E2-oy%3C/text%3E%3Ctext x='228.67' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3E3-oy%3C/text%3E%3Ctext x='322' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3E4-oy%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3EA mahsulot — to'liq chiziq, B mahsulot — punktir%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-ikki-chiziq",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#5e8b7927"
+    },
+    {
+      "q": "Ustunli diagrammada uch fan bo'yicha o'tgan va joriy yil g'oliblari juft ustunlarda berilgan. Qaysi fanda g'oliblar soni eng past foizda o'sgan?",
+      "v": [
+        "matematika, 25%",
+        "fizika, 25%",
+        "kimyo, 7,1%",
+        "kimyo, 6,7%"
+      ],
+      "t": 2,
+      "izoh": "Har fan uchun o'sishni alohida hisoblaymiz: matematikada 15 : 60 = 25%, fizikada 12 : 48 = 25%, kimyoda 3 : 42 ≈ 0,071, ya'ni 7,1%. Baza eski qiymat bo'lgani uchun kimyoda 3 : 45 emas, 3 : 42 olinadi. Javob: kimyo, 7,1%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='182' x2='326' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='22' x2='42' y2='182' stroke='%23334155' stroke-width='2'/%3E%3Crect x='52.41' y='63.6' width='26.51' height='118.4' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='65.67' y='57.6' font-size='13' fill='%23334155' text-anchor='middle'%3E60%3C/text%3E%3Ctext x='65.67' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EMat o'tg%3C/text%3E%3Crect x='99.75' y='34' width='26.51' height='148' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='113' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3E75%3C/text%3E%3Ctext x='113' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EMat jor%3C/text%3E%3Crect x='147.08' y='87.28' width='26.51' height='94.72' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='160.33' y='81.28' font-size='13' fill='%23334155' text-anchor='middle'%3E48%3C/text%3E%3Ctext x='160.33' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EFiz o'tg%3C/text%3E%3Crect x='194.41' y='63.6' width='26.51' height='118.4' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='207.67' y='57.6' font-size='13' fill='%23334155' text-anchor='middle'%3E60%3C/text%3E%3Ctext x='207.67' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EFiz jor%3C/text%3E%3Crect x='241.75' y='99.12' width='26.51' height='82.88' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='255' y='93.12' font-size='13' fill='%23334155' text-anchor='middle'%3E42%3C/text%3E%3Ctext x='255' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EKim o'tg%3C/text%3E%3Crect x='289.08' y='93.2' width='26.51' height='88.8' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='302.33' y='87.2' font-size='13' fill='%23334155' text-anchor='middle'%3E45%3C/text%3E%3Ctext x='302.33' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EKim jor%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Eg'olib o'quvchilar%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gistogramma-guruh-ulush",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#d1d0a85d"
+    },
+    {
+      "q": "Jadvalda shaharcha aholisi o'tgan yili 25 000, joriy yilda 26 500 kishi deb ko'rsatilgan. Aholi soni necha foizga ko'paygan?",
+      "v": [
+        "6%",
+        "5,7%",
+        "15%",
+        "106%"
+      ],
+      "t": 0,
+      "izoh": "O'sish miqdori 26 500 − 25 000 = 1 500 kishi. Uni eski songa bo'lamiz: 1 500 : 25 000 = 0,06, ya'ni 6%. Javob: 6%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-ikki-davr-ozgarish",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#11742828"
+    },
+    {
+      "q": "Jadvalda ikki xil qadoqdagi guruch massasi berilgan: birinchi qadoq 2 kg 500 g, ikkinchisi 4 kg. Birinchi qadoq massasining ikkinchisiga nisbati qanday?",
+      "v": [
+        "5 : 8",
+        "8 : 5",
+        "2 : 4",
+        "5 : 13"
+      ],
+      "t": 0,
+      "izoh": "Avval birliklarni tenglashtiramiz: 2 kg 500 g = 2 500 g, 4 kg = 4 000 g. Nisbat 2 500 : 4 000 bo'lib, ikkala hadni 500 ga bo'lsak 5 : 8 chiqadi. Javob: 5 : 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-soddalashtirish",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#a2618376"
+    },
+    {
+      "q": "Doiraviy diagrammada sektorlar mos ravishda butunning 1/4, 1/5, 3/10 qismini va qolgan qismini egallaydi. Bu sektorlar qanday foizlarga mos keladi?",
+      "v": [
+        "25%, 20%, 30%, 25%",
+        "25%, 20%, 3%, 52%",
+        "4%, 5%, 10%, 81%",
+        "25%, 20%, 30%, 15%"
+      ],
+      "t": 0,
+      "izoh": "Kasrlarni foizga o'tkazamiz: 1/4 = 25%, 1/5 = 20%, 3/10 = 30%. Qolgan sektor 100 − 75 = 25% ni beradi. Javob: birinchi qator.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagramma-mos-taqsimot",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#7dbd22e3"
+    },
+    {
+      "q": "Jadvalda 150 nafar talabaning natijasi berilgan: birinchi kursdagi 90 nafardan 78 tasi, ikkinchi kursdagi 60 nafardan 42 tasi imtihondan o'tgan. Imtihondan o'tganlarning necha foizi ikkinchi kurs talabasi?",
+      "v": [
+        "35%",
+        "28%",
+        "70%",
+        "40%"
+      ],
+      "t": 0,
+      "izoh": "Imtihondan o'tganlar soni 78 + 42 = 120 nafar. Baza aynan shu guruh bo'ladi: 42 : 120 = 0,35, ya'ni 35%. Javob: 35%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-ikki-shart-kesishma",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#3df5e8ad"
+    },
+    {
+      "q": "Ustunli diagrammada bitta bo'linma 250 ta kitobga teng va u kutubxona fondining 4 foizini tashkil qiladi. Fondda jami nechta kitob bor?",
+      "v": [
+        "6 250 ta",
+        "1 000 ta",
+        "62 500 ta",
+        "10 000 ta"
+      ],
+      "t": 0,
+      "izoh": "Bir bo'linma ulushi 4% = 0,04. Butun fond qismni ulushga bo'lish orqali topiladi: 250 : 0,04 = 6 250 ta. Javob: 6 250 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagramma-foiz-natura",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#f48b838e"
+    },
+    {
+      "q": "Chiziqli diagrammada to'rt yillik hosil 240, 260, 280 va 300 tonna deb ko'rsatilgan. Oxirgi yil hosili to'rt yillik o'rtachadan necha foizga yuqori?",
+      "v": [
+        "11,1%",
+        "10%",
+        "25%",
+        "111,1%"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi 240 + 260 + 280 + 300 = 1 080 tonna, o'rtacha esa 1 080 : 4 = 270 tonna. Farq 300 − 270 = 30 tonna. Nisbiy farq 30 : 270 ≈ 0,111, ya'ni 11,1%. Javob: 11,1%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='230' viewBox='0 0 340 230'%3E%3Crect width='340' height='230' fill='%23ffffff'/%3E%3Cline x1='42' y1='178' x2='322' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='42' y1='20' x2='42' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='42,132.46 135.33,109.69 228.67,86.92 322,64.15' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='42' cy='132.46' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='42' y='124.46' font-size='13' fill='%23334155' text-anchor='middle'%3E240%3C/text%3E%3Ccircle cx='135.33' cy='109.69' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='135.33' y='101.69' font-size='13' fill='%23334155' text-anchor='middle'%3E260%3C/text%3E%3Ccircle cx='228.67' cy='86.92' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='228.67' y='78.92' font-size='13' fill='%23334155' text-anchor='middle'%3E280%3C/text%3E%3Ccircle cx='322' cy='64.15' r='3' fill='none' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='322' y='56.15' font-size='13' fill='%23334155' text-anchor='middle'%3E300%3C/text%3E%3Ctext x='42' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3E1-yil%3C/text%3E%3Ctext x='135.33' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3E2-yil%3C/text%3E%3Ctext x='228.67' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3E3-yil%3C/text%3E%3Ctext x='322' y='195' font-size='13' fill='%23334155' text-anchor='middle'%3E4-yil%3C/text%3E%3Ctext x='170' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Eyillik hosil, tonna%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-ortacha-osish",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#3d0386ad"
+    },
+    {
+      "q": "Jadvalda uch tumanning suv sarfi ikki yil bo'yicha berilgan: A — 800 va 720, B — 500 va 460, C — 1 200 va 1 044 ming m³. Qaysi tumanda sarf eng katta foizda kamaygan?",
+      "v": [
+        "A tuman, 10% kamayish",
+        "B tuman, 8% kamayish",
+        "C tuman, 13% kamayish",
+        "C tuman, 15% kamayish"
+      ],
+      "t": 2,
+      "izoh": "Har tuman uchun kamayishni alohida hisoblaymiz: A da 80 : 800 = 10%, B da 40 : 500 = 8%, C da 156 : 1 200 = 0,13, ya'ni 13%. Eng katta foiz C tumanda. Javob: C tuman, 13%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-reyting-tartib",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#7456b9b9"
+    },
+    {
+      "q": "Jadvalda talabalar soni birinchi yili 10 foizga oshgani, ikkinchi yili yangi sondan 10 foizga kamaygani qayd etilgan. Dastlab 800 nafar talaba bo'lsa, ikki yildan keyin nechta qolgan?",
+      "v": [
+        "792 nafar",
+        "800 nafar",
+        "808 nafar",
+        "784 nafar"
+      ],
+      "t": 0,
+      "izoh": "Birinchi yildan keyin 800 · 1,1 = 880 nafar. Ikkinchi yilda kamayish yangi sondan olinadi: 880 · 0,9 = 792 nafar. Teng foizli o'sish va kamayish bir-birini qoplamaydi. Javob: 792 nafar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-foiz-ketma-ket",
+      "id": "matematika_foiz_m11-diagramma-va-jadvaldan-foiz-hamda#cef19b36"
+    }
+  ]
+}

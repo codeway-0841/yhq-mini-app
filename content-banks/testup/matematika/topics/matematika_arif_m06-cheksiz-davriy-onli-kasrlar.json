@@ -1,0 +1,1609 @@
+{
+  "nom": "Cheksiz davriy o'nli kasrlar",
+  "bolim": "Sonlar va ular ustida amallar",
+  "blok": "arif",
+  "rasmiyBolim": 1,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Toshkentdagi do'konda 7 kg qandolat 9 ta bir xil paketga teng taqsimlandi va har paketga 0,(7) kg to'g'ri keldi. Shu massani oddiy kasr ko'rinishida ifodalang.",
+      "v": [
+        "7/10",
+        "7/9",
+        "7/99",
+        "9/7"
+      ],
+      "t": 1,
+      "izoh": "x = 0,(7) deb olamiz. Davrda bitta raqam borligi uchun ikkala tomonni 10 ga ko'paytiramiz: 10x = 7,(7). Endi 10x − x = 7,(7) − 0,(7) = 7, ya'ni 9x = 7. Demak x = 7/9 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sof-davriy-kasrga",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#4a82710f"
+    },
+    {
+      "q": "Matematika to'garagida o'quvchilarga 0,(24) cheksiz davriy o'nli kasrini qisqarmas oddiy kasr ko'rinishida yozish topshirig'i berildi. To'g'ri natijani belgilang.",
+      "v": [
+        "8/3",
+        "6/25",
+        "8/33",
+        "4/15"
+      ],
+      "t": 2,
+      "izoh": "x = 0,(24) bo'lsin. Davrda 2 ta raqam bor, shuning uchun 100 ga ko'paytiramiz: 100x = 24,(24). Ayirsak 99x = 24, ya'ni x = 24/99. Surat va maxrajni 3 ga qisqartirib x = 8/33 hosil qilamiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sof-davriy-kasrga",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#43fe55af"
+    },
+    {
+      "q": "Uch xonali davrga ega bo'lgan 0,(135) davriy kasrni oddiy kasrga aylantirganda quyidagi variantlardan qaysi biri hosil bo'ladi?",
+      "v": [
+        "27/200",
+        "15/11",
+        "3/20",
+        "5/37"
+      ],
+      "t": 3,
+      "izoh": "Davrda 3 ta raqam bo'lgani uchun maxraj 999 bo'ladi: 0,(135) = 135/999. Surat va maxrajni 27 ga qisqartiramiz: 135 : 27 = 5, 999 : 27 = 37. Shunday qilib natija 5/37 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sof-davriy-kasrga",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#b014cd7f"
+    },
+    {
+      "q": "Sardor daftariga 0,(81) sonini oddiy kasr shaklida yozib qo'ymoqchi bo'ldi. U quyidagilardan qaysi birini tanlashi kerak?",
+      "v": [
+        "9/10",
+        "73/90",
+        "81/100",
+        "9/11"
+      ],
+      "t": 3,
+      "izoh": "x = 0,(81) uchun 100x = 81,(81) bo'ladi. Ayirish 99x = 81 tenglikni beradi, demak x = 81/99. Surat va maxrajni 9 ga qisqartirsak x = 9/11 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sof-davriy-kasrga",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#1dab7201"
+    },
+    {
+      "q": "Aralash davriy kasr 0,1(6) berilgan. Uni oddiy kasr ko'rinishida ifodalab, qisqarmas holdagi to'g'ri javobni tanlang.",
+      "v": [
+        "8/45",
+        "1/6",
+        "16/99",
+        "4/25"
+      ],
+      "t": 1,
+      "izoh": "Aralash davriy kasrda surat 16 − 1 = 15 ga teng bo'ladi, chunki davrgacha bitta raqam turibdi. Maxraj bitta 9 va bitta 0 dan tuziladi, ya'ni 90. Demak 0,1(6) = 15/90 = 1/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralash-davriy-kasrga",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#037e21ae"
+    },
+    {
+      "q": "Zebo dars vaqtida 0,2(3) sonini oddiy kasrga aylantirmoqchi bo'ldi. Quyidagilardan qaysi biri uning to'g'ri natijasini ko'rsatadi?",
+      "v": [
+        "7/30",
+        "23/90",
+        "23/99",
+        "23/100"
+      ],
+      "t": 0,
+      "izoh": "Aralash davriy kasr formulasiga ko'ra surat 23 − 2 = 21 bo'ladi, maxraj esa 90 ga teng. Shunday qilib 0,2(3) = 21/90 hosil bo'ladi. Uchga qisqartirsak 7/30 kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralash-davriy-kasrga",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#b4374ffc"
+    },
+    {
+      "q": "Aralash davriy kasr 0,08(3) berilgan bo'lsa, uni qisqarmas oddiy kasr shaklida yozing va to'g'ri variantni belgilang.",
+      "v": [
+        "83/900",
+        "83/990",
+        "1/12",
+        "83/1000"
+      ],
+      "t": 2,
+      "izoh": "Davrgacha 2 ta raqam (0 va 8), davrda esa 1 ta raqam bor. Surat 83 − 8 = 75, maxraj bitta 9 va ikkita 0 dan iborat, ya'ni 900. 75/900 kasrni 75 ga qisqartirsak 1/12 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-davriy-kasrga",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#72788f23"
+    },
+    {
+      "q": "Jasur 0,3(18) aralash davriy o'nli kasrni oddiy kasrga aylantirdi. Uning to'g'ri javobi qaysi variantda berilgan?",
+      "v": [
+        "159/500",
+        "53/165",
+        "7/22",
+        "7/20"
+      ],
+      "t": 2,
+      "izoh": "Surat 318 − 3 = 315 ga teng, maxraj esa ikkita 9 va bitta 0 dan tuzilgani uchun 990 bo'ladi. 315/990 kasrning surat va maxrajini 45 ga qisqartiramiz: 315 : 45 = 7, 990 : 45 = 22. Javob 7/22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-davriy-kasrga",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#ead65708"
+    },
+    {
+      "q": "Ustoz doskaga 1/7 kasrni yozib, uni o'nli kasrga aylantirishni so'radi. Hosil bo'lgan davr necha raqamdan iborat bo'ladi?",
+      "v": [
+        "3 ta",
+        "7 ta",
+        "1 ta",
+        "6 ta"
+      ],
+      "t": 3,
+      "izoh": "Bo'lish bajarilsa 1/7 = 0,(142857) hosil bo'ladi. Qavs ichidagi raqamlar 1, 4, 2, 8, 5 va 7 bo'lib, ular jami 6 ta. Demak davr uzunligi 6 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-uzunligi-topish",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#f79295c0"
+    },
+    {
+      "q": "Nurbek kalkulyatorda 4/11 kasrni o'nli kasrga aylantirdi. Hosil bo'lgan cheksiz davriy kasrning davri necha raqamli?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "4 ta",
+        "11 ta"
+      ],
+      "t": 1,
+      "izoh": "4/11 ni bo'lsak 0,363636… ya'ni 0,(36) chiqadi. Takrorlanuvchi qism 36 bo'lib, unda 2 ta raqam bor. Demak davr uzunligi 2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-uzunligi-topish",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#55f507c8"
+    },
+    {
+      "q": "Olimpiadaga tayyorlanayotgan o'quvchi 1/41 kasrning o'nli yozuvidagi davr uzunligini aniqlashi kerak. To'g'ri javobni belgilang.",
+      "v": [
+        "5 ta",
+        "4 ta",
+        "40 ta",
+        "41 ta"
+      ],
+      "t": 0,
+      "izoh": "Bo'lish bajarilganda 1/41 = 0,(02439) hosil bo'ladi, buni 99999 : 41 = 2439 tenglik ham tasdiqlaydi. Davr 0, 2, 4, 3, 9 raqamlaridan tuzilgan. Ular 5 ta, demak davr uzunligi 5 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davr-uzunligi-topish",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#1b3844fa"
+    },
+    {
+      "q": "Kompyuter dasturi 1/101 kasrni o'nli kasrga aylantirib ekranda ko'rsatdi. Bu yozuvdagi davr necha raqamdan iborat bo'ladi?",
+      "v": [
+        "2 ta",
+        "100 ta",
+        "4 ta",
+        "101 ta"
+      ],
+      "t": 2,
+      "izoh": "9999 sonini 101 ga bo'lsak 99 chiqadi, demak 1/101 = 99/9999. Maxrajda to'rtta 9 turgani uchun davr to'rt raqamli bo'ladi: 1/101 = 0,(0099). Shunday qilib davr uzunligi 4 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davr-uzunligi-topish",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#310bbe9e"
+    },
+    {
+      "q": "Ma'lumki 1/7 = 0,(142857) bo'ladi. Shu yozuvda verguldan keyingi 100-o'rinda turgan raqamni toping.",
+      "v": [
+        "2",
+        "5",
+        "7",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Davr 6 ta raqamdan iborat, shuning uchun 100 ni 6 ga bo'lamiz: 100 = 6·16 + 4. Qoldiq 4 bo'lgani uchun davrning 4-raqami kerak bo'ladi. 142857 sonida 4-o'rinda 8 turibdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-raqam-sof-davr",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#81c77442"
+    },
+    {
+      "q": "Ikki taqsim yetti kasrning o'nli yozuvi 0,(285714) ga teng. Verguldan keyingi 2026-raqam qaysi raqam bo'ladi?",
+      "v": [
+        "1",
+        "5",
+        "7",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "2026 ni davr uzunligi 6 ga bo'lamiz: 2026 = 6·337 + 4. Qoldiq 4 ga teng, demak davrdagi 4-raqam olinadi. 285714 sonida 4-o'rinda 7 turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-raqam-sof-davr",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#d4db7277"
+    },
+    {
+      "q": "Malika sinfda 5/13 ni hisoblab 0,(384615) natijasini oldi. Verguldan keyingi 200-raqamni aniqlab, to'g'ri javobni belgilang.",
+      "v": [
+        "3",
+        "4",
+        "8",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "200 = 6·33 + 2 bo'lgani uchun qoldiq 2 ga teng. Demak davrning 2-raqami izlanadi. 384615 sonida 2-o'rinda 8 raqami turibdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-raqam-sof-davr",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#38ecb17a"
+    },
+    {
+      "q": "Bir taqsim o'n uch kasri 0,(076923) ko'rinishida yoziladi. Shu yozuvda verguldan keyingi 1000-raqam nechaga teng bo'ladi?",
+      "v": [
+        "6",
+        "2",
+        "3",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "1000 ni 6 ga bo'lganda 1000 = 6·166 + 4 tenglik hosil bo'ladi. Qoldiq 4, ya'ni davrning 4-raqami izlanadi. 076923 sonida 4-o'rinda 9 raqami joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-raqam-sof-davr",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#1231499d"
+    },
+    {
+      "q": "Bir masalada 5/28 kasrning o'nli yozuvi 0,17(857142) ekani aniqlandi. Verguldan keyingi 50-raqamni toping.",
+      "v": [
+        "8",
+        "4",
+        "2",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "Davrgacha 2 ta raqam turibdi, shuning uchun 50-o'rin davrning 50 − 2 = 48-raqamiga to'g'ri keladi. 48 ni 6 ga bo'lsak qoldiq 0 chiqadi, ya'ni davrning oxirgi raqami olinadi. 857142 ning oxirgi raqami 2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "n-raqam-aralash-davr",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#be18d7e6"
+    },
+    {
+      "q": "Yetti taqsim qirq to'rt kasri 0,15(90) ko'rinishida yoziladi. Verguldan keyingi 33-raqam qaysi bo'lishini aniqlang.",
+      "v": [
+        "0",
+        "9",
+        "5",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Davrgacha 2 ta raqam (1 va 5) turibdi, demak 33-o'rin davrning 33 − 2 = 31-raqamidir. 31 ni 2 ga bo'lganda qoldiq 1 chiqadi, ya'ni davrning birinchi raqami kerak. 90 davrining birinchi raqami 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "n-raqam-aralash-davr",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#d7cf1c67"
+    },
+    {
+      "q": "Ma'lumki 7/30 kasrning o'nli yozuvi 0,2(3) ga teng bo'ladi. Verguldan keyingi 28-raqam nechaga teng?",
+      "v": [
+        "3",
+        "2",
+        "0",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "0,2(3) yozuvida faqat 2 raqami davrga kirmaydi, undan keyingi barcha o'rinlarda 3 takrorlanadi. 28-o'rin birinchi o'rindan keyin turgani uchun u davrga tegishli. Demak izlangan raqam 3 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "n-raqam-aralash-davr",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#ff37b0ea"
+    },
+    {
+      "q": "Ozoda 13/55 ulushni o'nli kasrga aylantirib 0,2(36) natijasini hosil qildi. Verguldan keyingi 101-raqamni aniqlang.",
+      "v": [
+        "6",
+        "3",
+        "2",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Davrgacha bitta raqam (2) bor, shuning uchun 101-o'rin davrning 101 − 1 = 100-raqamiga mos keladi. 100 ni 2 ga bo'lsak qoldiq 0, ya'ni davrning ikkinchi raqami olinadi. 36 davrining ikkinchi raqami 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-raqam-aralash-davr",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#f3b9bb33"
+    },
+    {
+      "q": "Besh taqsim olti kasrini o'nli kasr ko'rinishida yozganda quyidagi yozuvlardan qaysi biri to'g'ri bo'ladi?",
+      "v": [
+        "0,(83)",
+        "0,8(3)",
+        "0,83",
+        "0,(8)"
+      ],
+      "t": 1,
+      "izoh": "5 ni 6 ga bo'lsak 0,8333… hosil bo'ladi. Bu yerda 8 raqami bir marta yoziladi, keyin 3 raqami cheksiz takrorlanadi. Demak davr faqat 3 dan iborat va yozuv 0,8(3) ko'rinishida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrdan-davriy-yozuv",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#5f50935f"
+    },
+    {
+      "q": "To'rt taqsim o'n besh kasrini cheksiz davriy o'nli kasr shaklida yozing va to'g'ri variantni belgilang.",
+      "v": [
+        "0,(26)",
+        "0,26",
+        "0,2(6)",
+        "0,1(3)"
+      ],
+      "t": 2,
+      "izoh": "4 ni 15 ga bo'lganda 0,2666… natija chiqadi. Birinchi raqam 2 davrga kirmaydi, undan keyin 6 cheksiz takrorlanadi. Shuning uchun to'g'ri yozuv 0,2(6) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrdan-davriy-yozuv",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#d109bf38"
+    },
+    {
+      "q": "Guruhdagi 12 talabadan 7 tasi imtihonni birinchi urinishda topshirdi. Topshirganlar ulushini cheksiz davriy o'nli kasr ko'rinishida yozing.",
+      "v": [
+        "0,5(83)",
+        "0,58",
+        "0,(583)",
+        "0,58(3)"
+      ],
+      "t": 3,
+      "izoh": "Ulush 7/12 ga teng, uni bo'lish orqali 0,58333… hosil qilamiz. Verguldan keyin 5 va 8 raqamlari bir marta, so'ng 3 raqami cheksiz takrorlanadi. Demak ulush 0,58(3) ko'rinishida yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrdan-davriy-yozuv",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#2bba84f4"
+    },
+    {
+      "q": "Ikki taqsim o'n bir kasrini o'nli kasrga aylantirganda hosil bo'ladigan to'g'ri yozuvni tanlang.",
+      "v": [
+        "0,(18)",
+        "0,1(8)",
+        "0,18",
+        "0,(81)"
+      ],
+      "t": 0,
+      "izoh": "2 ni 11 ga bo'lsak 0,181818… chiqadi. Bu yerda 1 va 8 raqamlari juftlik bo'lib takrorlanadi, verguldan keyin darhol davr boshlanadi. Shuning uchun yozuv 0,(18) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrdan-davriy-yozuv",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#0c6d653e"
+    },
+    {
+      "q": "Ali daftarida 0,(4) va 0,(2) davriy kasrlarini qo'shdi. Yig'indini qisqarmas oddiy kasr ko'rinishida ifodalang.",
+      "v": [
+        "3/5",
+        "2/3",
+        "2/9",
+        "1/3"
+      ],
+      "t": 1,
+      "izoh": "0,(4) = 4/9 va 0,(2) = 2/9 ekanini bilamiz. Maxrajlar bir xil bo'lgani uchun suratlarni qo'shamiz: 4/9 + 2/9 = 6/9. Uchga qisqartirsak yig'indi 2/3 ga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-ustida-amal",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#1a4de141"
+    },
+    {
+      "q": "Hisoblang: 0,(5) va 0,(2) sonlarining yig'indisini yana cheksiz davriy o'nli kasr ko'rinishida yozing.",
+      "v": [
+        "0,7",
+        "0,(52)",
+        "0,(7)",
+        "0,(3)"
+      ],
+      "t": 2,
+      "izoh": "0,(5) = 5/9, 0,(2) = 2/9 bo'ladi. Yig'indi 5/9 + 2/9 = 7/9 ga teng. 7/9 ni yana o'nli kasrga aylantirsak 0,777… ya'ni 0,(7) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-ustida-amal",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#7595e557"
+    },
+    {
+      "q": "Amalni bajaring: 0,(72) sonini 0,(09) soniga bo'lganda qanday natija hosil bo'lishini aniqlang.",
+      "v": [
+        "8",
+        "80",
+        "0,8",
+        "11"
+      ],
+      "t": 0,
+      "izoh": "0,(72) = 72/99, 0,(09) = 9/99 ko'rinishida yoziladi. Bo'lishda maxrajlar bir xil bo'lgani uchun ular qisqaradi: 72/99 : 9/99 = 72/9. Bu esa 8 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davriy-kasr-ustida-amal",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#e0def4cf"
+    },
+    {
+      "q": "Aziz devor bo'yashning 0,(3) qismini, Bekzod esa 0,1(6) qismini bajardi. Ishning qancha qismi hali bajarilmagan?",
+      "v": [
+        "1/2",
+        "2/3",
+        "1/6",
+        "5/6"
+      ],
+      "t": 0,
+      "izoh": "0,(3) = 1/3 va 0,1(6) = 1/6 ekanini topamiz. Birgalikda bajarilgan qism 1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2. Demak ishning 1 − 1/2 = 1/2 qismi bajarilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davriy-kasr-ustida-amal",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#4608adff"
+    },
+    {
+      "q": "O'quvchi x = 0,(9) deb belgilab, 10x − x amalini bajardi. Shu tahlil natijasida x nimaga teng bo'ladi?",
+      "v": [
+        "0,99 ga teng",
+        "1 ga teng",
+        "0,9 ga teng",
+        "1 dan bir oz kichik songa teng"
+      ],
+      "t": 1,
+      "izoh": "x = 0,(9) bo'lsa, 10x = 9,(9) bo'ladi. Ayirsak 10x − x = 9,(9) − 0,(9) = 9, ya'ni 9x = 9. Bundan x = 1 kelib chiqadi, demak 0,(9) aynan 1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-nuqta-toqqiz",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#d320954c"
+    },
+    {
+      "q": "Cheksiz davriy kasrlar mavzusini o'rganayotgan o'quvchi 1,(9) sonini uchratdi. Bu son qaysi songa aynan teng bo'ladi?",
+      "v": [
+        "2",
+        "1,99",
+        "1",
+        "1,9"
+      ],
+      "t": 0,
+      "izoh": "1,(9) sonini 1 + 0,(9) ko'rinishida yozamiz. Yuqorida ko'rsatilganidek 0,(9) = 1 ga teng. Demak 1,(9) = 1 + 1 = 2 bo'ladi, ya'ni bu son aynan 2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-nuqta-toqqiz",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#a4770fb2"
+    },
+    {
+      "q": "Aralash davriy kasr 0,2(9) berilgan. Uni oddiy kasrga aylantirib, natijani eng sodda ko'rinishda yozing.",
+      "v": [
+        "3/10",
+        "29/90",
+        "27/100",
+        "2/9"
+      ],
+      "t": 0,
+      "izoh": "Formula bo'yicha surat 29 − 2 = 27, maxraj esa 90 bo'ladi. Demak 0,2(9) = 27/90 = 3/10. Bu qiziq natija: 0,2(9) aslida 0,3 sonining boshqacha yozuvi ekan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nol-nuqta-toqqiz",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#c88d8987"
+    },
+    {
+      "q": "Quyidagi kasrlardan qaysi biri chekli o'nli kasrga aylanadi: 3/14, 7/40, 5/12, 2/21?",
+      "v": [
+        "3/14",
+        "7/40",
+        "5/12",
+        "2/21"
+      ],
+      "t": 1,
+      "izoh": "Qisqarmas kasr chekli o'nli kasrga aylanishi uchun maxrajda faqat 2 va 5 ko'paytuvchilari bo'lishi kerak. 40 = 2·2·2·5 shu shartni bajaradi, qolgan maxrajlarda 7 yoki 3 bor. Demak faqat 7/40 chekli, u 0,175 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chekli-yoki-cheksiz",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#e4aabbc9"
+    },
+    {
+      "q": "5/6, 9/25, 4/33, 7/18 kasrlaridan qaysi biri cheksiz davriy o'nli kasrga aylanmaydi?",
+      "v": [
+        "5/6",
+        "9/25",
+        "4/33",
+        "7/18"
+      ],
+      "t": 1,
+      "izoh": "Maxrajlarni ko'paytuvchilarga ajratamiz: 6 = 2·3, 25 = 5·5, 33 = 3·11, 18 = 2·3·3. Faqat 25 da 3 yoki 11 kabi begona ko'paytuvchi yo'q. Shuning uchun 9/25 = 0,36 chekli kasr bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chekli-yoki-cheksiz",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#83a47912"
+    },
+    {
+      "q": "Qisqarmas kasrning maxraji 2·5³·7 ko'paytmaga teng. Bu kasr o'nli kasrga aylantirilganda qanday yozuv hosil bo'ladi?",
+      "v": [
+        "Chekli o'nli kasr",
+        "Sof davriy cheksiz kasr",
+        "Aralash davriy cheksiz kasr",
+        "Davriy bo'lmagan cheksiz kasr"
+      ],
+      "t": 2,
+      "izoh": "Maxrajda 7 ko'paytuvchisi borligi uchun kasr chekli bo'la olmaydi. Ayni paytda 2 va 5 ham bor, shuning uchun davr darhol boshlanmaydi, oldida davrga kirmaydigan raqamlar turadi. Bunday yozuv aralash davriy cheksiz kasr deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chekli-yoki-cheksiz",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#d2cc4bd8"
+    },
+    {
+      "q": "Anvar 11/40 va 11/60 kasrlarini o'nli kasrga aylantirdi. Ular haqidagi qaysi xulosa to'g'ri bo'ladi?",
+      "v": [
+        "Ikkalasi ham chekli o'nli kasr",
+        "Ikkalasi ham cheksiz davriy kasr",
+        "11/40 cheksiz davriy, 11/60 esa chekli",
+        "11/40 chekli, 11/60 esa cheksiz davriy"
+      ],
+      "t": 3,
+      "izoh": "40 = 2·2·2·5 bo'lgani uchun 11/40 = 0,275 chekli kasr bo'ladi. 60 = 2·2·3·5 da 3 ko'paytuvchisi bor, shuning uchun 11/60 = 0,18(3) cheksiz davriy bo'ladi. Demak birinchisi chekli, ikkinchisi cheksiz davriy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chekli-yoki-cheksiz",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#17c2d5b1"
+    },
+    {
+      "q": "Butun qismi bor 2,(45) davriy kasrni oddiy kasr ko'rinishida yozing va to'g'ri variantni tanlang.",
+      "v": [
+        "245/99",
+        "5/11",
+        "49/20",
+        "27/11"
+      ],
+      "t": 3,
+      "izoh": "Sonni 2 + 0,(45) ko'rinishida ajratamiz. Davriy qism 0,(45) = 45/99 = 5/11 ga teng. Demak son 2 + 5/11 = 22/11 + 5/11 = 27/11 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-qismli-davriy",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#41d122b2"
+    },
+    {
+      "q": "Suv sathining ko'tarilishi 3,1(6) sm deb qayd etildi. Shu qiymatni noto'g'ri kasr ko'rinishida ifodalang.",
+      "v": [
+        "316/90",
+        "79/25",
+        "19/6",
+        "19/60"
+      ],
+      "t": 2,
+      "izoh": "Sonni 3 + 0,1(6) ko'rinishida yozamiz. Aralash davriy qism uchun surat 16 − 1 = 15, maxraj 90, ya'ni 0,1(6) = 15/90 = 1/6. Demak 3 + 1/6 = 18/6 + 1/6 = 19/6 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-qismli-davriy",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#4458922f"
+    },
+    {
+      "q": "Sportchi mashg'ulotda 5,(27) km masofani bosib o'tdi. Shu masofani qisqarmas oddiy kasr ko'rinishida ifodalang.",
+      "v": [
+        "527/99",
+        "527/100",
+        "3/11",
+        "58/11"
+      ],
+      "t": 3,
+      "izoh": "Masofani 5 + 0,(27) deb ajratamiz. Davrda 2 ta raqam bo'lgani uchun 0,(27) = 27/99 = 3/11. Demak masofa 5 + 3/11 = 55/11 + 3/11 = 58/11 km ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-qismli-davriy",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#fabdf7b9"
+    },
+    {
+      "q": "Qishki kunda havo harorati −1,(6) daraja bo'lganligi qayd etildi. Shu ko'rsatkichni oddiy kasr ko'rinishida yozing.",
+      "v": [
+        "−16/9",
+        "−17/10",
+        "−5/9",
+        "−5/3"
+      ],
+      "t": 3,
+      "izoh": "Avval modulini ko'ramiz: 1,(6) = 1 + 6/9 = 1 + 2/3 = 5/3. Manfiy ishorani qaytarib qo'yamiz. Demak harorat −5/3 daraja ga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-qismli-davriy",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#cde46bc8"
+    },
+    {
+      "q": "Nodira 1/7 = 0,(142857) yozuvidagi davr raqamlarining yig'indisini hisoblamoqchi. To'g'ri natijani belgilang.",
+      "v": [
+        "20",
+        "27",
+        "22",
+        "19"
+      ],
+      "t": 1,
+      "izoh": "Davrdagi raqamlar 1, 4, 2, 8, 5 va 7 dan iborat. Ularni ketma-ket qo'shamiz: 1 + 4 = 5, 5 + 2 = 7, 7 + 8 = 15, 15 + 5 = 20, 20 + 7 = 27. Demak yig'indi 27 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-raqamlari-yigindisi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#4f88e516"
+    },
+    {
+      "q": "Ma'lumki 1/17 = 0,(0588235294117647) bo'ladi. Shu yozuvdagi davr raqamlarining barchasi yig'indisini toping.",
+      "v": [
+        "63",
+        "72",
+        "65",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "Davrdagi 16 ta raqamni ketma-ket qo'shamiz: 0 + 5 + 8 + 8 + 2 + 3 + 5 + 2 = 33. Qolganlari 9 + 4 + 1 + 1 + 7 + 6 + 4 + 7 = 39. Ikki qismni qo'shsak 33 + 39 = 72 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davr-raqamlari-yigindisi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#f70355ea"
+    },
+    {
+      "q": "Bir taqsim yigirma yetti kasri 0,(037) ko'rinishida yoziladi. Uning davridagi raqamlar yig'indisi nechaga teng?",
+      "v": [
+        "10",
+        "7",
+        "3",
+        "37"
+      ],
+      "t": 0,
+      "izoh": "Davr uch raqamdan iborat: 0, 3 va 7. Ularni qo'shamiz: 0 + 3 = 3, keyin 3 + 7 = 10. Demak davr raqamlarining yig'indisi 10 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-raqamlari-yigindisi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#ac59eb56"
+    },
+    {
+      "q": "Akmal daftariga 1/41 = 0,(02439) yozuvini ko'chirdi va davrdagi raqamlar yig'indisini hisobladi. U qanday son oldi?",
+      "v": [
+        "16",
+        "18",
+        "15",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Davrdagi raqamlar 0, 2, 4, 3 va 9 dan iborat. Ularni ketma-ket qo'shamiz: 0 + 2 = 2, 2 + 4 = 6, 6 + 3 = 9, 9 + 9 = 18. Demak yig'indi 18 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davr-raqamlari-yigindisi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#d22ba1da"
+    },
+    {
+      "q": "Bir taqsim uch kasrining o'nli yozuvida verguldan keyingi dastlabki 20 ta raqamning yig'indisini toping.",
+      "v": [
+        "3",
+        "23",
+        "30",
+        "60"
+      ],
+      "t": 3,
+      "izoh": "1/3 = 0,(3) bo'lgani uchun verguldan keyingi har bir o'rinda 3 raqami turadi. Demak 20 ta raqamning har biri 3 ga teng. Yig'indi 20·3 = 60 ga teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "n-ta-raqam-yigindisi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#633112f6"
+    },
+    {
+      "q": "Bir taqsim o'n bir kasri 0,(09) ko'rinishida yoziladi. Verguldan keyingi dastlabki 30 ta raqamning yig'indisi qanchaga teng?",
+      "v": [
+        "270",
+        "135",
+        "45",
+        "90"
+      ],
+      "t": 1,
+      "izoh": "Davr ikki raqamli, shuning uchun 30 ta raqamda 30 : 2 = 15 ta to'liq davr joylashadi. Bitta davrdagi raqamlar yig'indisi 0 + 9 = 9 ga teng. Demak umumiy yig'indi 15·9 = 135 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-ta-raqam-yigindisi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#02e724bf"
+    },
+    {
+      "q": "Bir taqsim yetti kasrining o'nli yozuvi 0,(142857) ga teng. Verguldan keyingi dastlabki 24 ta raqam yig'indisini hisoblang.",
+      "v": [
+        "135",
+        "81",
+        "108",
+        "162"
+      ],
+      "t": 2,
+      "izoh": "Davr 6 raqamli, demak 24 ta raqamda 24 : 6 = 4 ta to'liq davr bor. Bitta davrning raqamlari yig'indisi 1 + 4 + 2 + 8 + 5 + 7 = 27 ga teng. Umumiy yig'indi 4·27 = 108 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-ta-raqam-yigindisi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#79246590"
+    },
+    {
+      "q": "Aralash davriy kasr 0,2(3) berilgan bo'lsa, verguldan keyingi dastlabki 15 ta raqamning yig'indisini toping.",
+      "v": [
+        "44",
+        "45",
+        "47",
+        "42"
+      ],
+      "t": 0,
+      "izoh": "Birinchi o'rinda davrga kirmaydigan 2 raqami turadi, qolgan 14 o'rinda esa 3 takrorlanadi. Davriy qism yig'indisi 14·3 = 42 ga teng. Umumiy yig'indi 2 + 42 = 44 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "n-ta-raqam-yigindisi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#51b17aa8"
+    },
+    {
+      "q": "Doskaga 0,(3) va 0,3(3) sonlari yozildi. O'quvchi ularni taqqoslab qanday xulosaga kelishi kerak?",
+      "v": [
+        "0,(3) soni 0,3(3) dan katta",
+        "0,(3) soni 0,3(3) dan kichik",
+        "Ikkala son bir xil qiymatga ega",
+        "Bu sonlarni taqqoslab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Birinchi sonda 3 raqami verguldan keyin darhol takrorlanadi: 0,333… Ikkinchi sonda ham birinchi raqam 3, undan keyin ham faqat 3 takrorlanadi: 0,333… Ikkala yozuv aynan bir sonni beradi, demak ular teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasrlarni-taqqoslash",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#11a3382c"
+    },
+    {
+      "q": "Cheksiz davriy kasrlar 0,(45) va 0,4(5) berilgan. Ulardan qaysi biri kattaroq ekanini aniqlang.",
+      "v": [
+        "0,(45)",
+        "Ular o'zaro teng",
+        "0,4(5)",
+        "Taqqoslash mumkin emas"
+      ],
+      "t": 2,
+      "izoh": "Birinchi son 0,454545… ikkinchisi esa 0,45555… ko'rinishida yoziladi. Birinchi ikkita raqam bir xil, uchinchi o'rinda esa 4 va 5 turibdi. 5 raqami 4 dan katta bo'lgani uchun 0,4(5) kattaroq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasrlarni-taqqoslash",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#fb341366"
+    },
+    {
+      "q": "0,(7), 0,7 va 0,7(1) sonlarini o'sish tartibida joylashtiring va to'g'ri ketma-ketlikni tanlang.",
+      "v": [
+        "0,7 kichik, 0,(7) o'rtada, 0,7(1) katta",
+        "0,7(1) kichik, 0,7 o'rtada, 0,(7) katta",
+        "0,(7) kichik, 0,7(1) o'rtada, 0,7 katta",
+        "0,7 kichik, 0,7(1) o'rtada, 0,(7) katta"
+      ],
+      "t": 3,
+      "izoh": "Sonlarni bir xil ko'rinishda yozamiz: 0,7 = 0,7000…, 0,7(1) = 0,7111…, 0,(7) = 0,7777… Ikkinchi o'rindagi raqamlar 0, 1 va 7 ga teng. Shunga ko'ra eng kichigi 0,7, keyin 0,7(1), eng kattasi 0,(7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasrlarni-taqqoslash",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#4d621a68"
+    },
+    {
+      "q": "Ikki ishchi bir xil hajmdagi alohida buyurtmalar ustida ishladi: biri o'z buyurtmasining 0,(6) qismini, ikkinchisi esa o'z buyurtmasining 0,66 qismini bajardi. Kim ko'proq ish bajargan?",
+      "v": [
+        "Birinchi ishchi ko'proq bajargan",
+        "Ikkinchi ishchi ko'proq bajargan",
+        "Ikkalasi teng ish bajargan",
+        "Ma'lumot yetarli emas"
+      ],
+      "t": 0,
+      "izoh": "Buyurtmalar hajmi teng, shuning uchun ulushlarni taqqoslash yetarli. 0,(6) = 0,6666… ko'rinishida cheksiz davom etadi, 0,66 esa aynan ikkita raqamdan iborat, ya'ni 0,6600… . Uchinchi o'rinda birinchi sonda 6, ikkinchisida 0 turadi. Demak 0,(6) katta, ya'ni birinchi ishchi ko'proq ish bajargan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davriy-kasrlarni-taqqoslash",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#ed810253"
+    },
+    {
+      "q": "Tenglik 0,(a) = 5/9 ko'rinishida berilgan bo'lsa, undagi a raqami nechaga teng bo'ladi?",
+      "v": [
+        "a = 4",
+        "a = 5",
+        "a = 9",
+        "a = 45"
+      ],
+      "t": 1,
+      "izoh": "Bir raqamli davrga ega sof davriy kasr uchun 0,(a) = a/9 formulasi o'rinli. Shartga ko'ra a/9 = 5/9 bo'lishi kerak. Maxrajlar teng bo'lgani uchun suratlar ham teng, ya'ni a = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomalum-raqamni-topish",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#065120a9"
+    },
+    {
+      "q": "Agar 0,(2b) = 8/33 bo'lsa, davrdagi ikkinchi raqam b nimaga teng ekanini aniqlang.",
+      "v": [
+        "b = 2",
+        "b = 8",
+        "b = 3",
+        "b = 4"
+      ],
+      "t": 3,
+      "izoh": "O'ng tomonni 99 maxrajga keltiramiz: 8/33 = 24/99. Ikki raqamli davrga ega kasr uchun 0,(2b) = (20 + b)/99 bo'ladi. Demak 20 + b = 24, bundan b = 4 kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-raqamni-topish",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#a1cc4dc0"
+    },
+    {
+      "q": "Aralash davriy kasr 0,c(3) ning oddiy kasr ko'rinishi 7/30 ga teng bo'lsa, c raqamini toping.",
+      "v": [
+        "c = 7",
+        "c = 3",
+        "c = 2",
+        "c = 5"
+      ],
+      "t": 2,
+      "izoh": "Formulaga ko'ra 0,c(3) = (10c + 3 − c)/90 = (9c + 3)/90. Shartga ko'ra bu 7/30 = 21/90 ga teng bo'lishi kerak. Demak 9c + 3 = 21, bundan 9c = 18 va c = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-raqamni-topish",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#c62c21bb"
+    },
+    {
+      "q": "Aralash davriy kasr 0,1(m) ning oddiy kasr ko'rinishi 7/45 ga teng. Davrdagi m raqamini aniqlang.",
+      "v": [
+        "m = 5",
+        "m = 4",
+        "m = 7",
+        "m = 9"
+      ],
+      "t": 0,
+      "izoh": "Kasrni 90 maxrajga keltiramiz: 7/45 = 14/90. Formula bo'yicha 0,1(m) = (10 + m − 1)/90 = (9 + m)/90. Demak 9 + m = 14, bundan m = 5 kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nomalum-raqamni-topish",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#6e07c8d0"
+    },
+    {
+      "q": "Davr uzunligi 10⁶ − 1 sonining maxrajga bo'linishi bilan bog'liq. 3, 9, 11, 13 maxrajlaridan qaysi birida davr aynan 6 raqamli bo'ladi?",
+      "v": [
+        "3",
+        "9",
+        "11",
+        "13"
+      ],
+      "t": 3,
+      "izoh": "1/3 va 1/9 kasrlarda davr bitta raqamdan iborat, chunki 9 soni 3 ga ham, 9 ga ham bo'linadi. 1/11 da davr ikkita raqamli, chunki 99 soni 11 ga bo'linadi. 999999 esa 13 ga bo'linadi va undan kichik shunday son yo'q, shuning uchun 1/13 ning davri 6 raqamli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daraja-qoldiq-tahlil",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#d75feaa0"
+    },
+    {
+      "q": "Qisqarmas 1/n kasr sof davriy o'nli kasrga aylanishi uchun n maxraj qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "n faqat 2 va 5 ga bo'linishi kerak",
+        "n albatta tub son bo'lishi kerak",
+        "n 2 ga ham, 5 ga ham bo'linmasligi kerak",
+        "n juft son bo'lishi kerak"
+      ],
+      "t": 2,
+      "izoh": "Agar maxrajda 2 yoki 5 ko'paytuvchisi bo'lsa, davrdan oldin unga kirmaydigan raqamlar paydo bo'ladi va kasr aralash davriy bo'ladi. Faqat 2 va 5 bo'lsa, kasr umuman chekli bo'ladi. Demak sof davriylik uchun maxraj 2 ga ham, 5 ga ham bo'linmasligi shart. Aksincha, juft maxraj 2 ga bo'linadi va sof davriy kasr bera olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daraja-qoldiq-tahlil",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#64f3dcee"
+    },
+    {
+      "q": "999999 soni 7 ga qoldiqsiz bo'linadi. Bu fakt 1/7 kasrning o'nli yozuvi haqida nimani ko'rsatadi?",
+      "v": [
+        "Uning davri 6 raqamdan oshmaydi",
+        "U chekli o'nli kasrga aylanadi",
+        "Uning davri aynan 7 raqamli bo'ladi",
+        "U aralash davriy kasr bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "999999 soni 7 ga bo'linsa, 1/7 kasrni 999999 maxrajli kasr shaklida yozish mumkin bo'ladi. Maxrajda oltita 9 turgan kasr esa oltita raqamli davrga ega sof davriy kasrni beradi. Demak davr uzunligi 6 dan oshmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daraja-qoldiq-tahlil",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#184fc7f0"
+    },
+    {
+      "q": "Do'kondan olingan 7 kg un 3 ta bir xil xaltaga teng solindi. Har bir xaltadagi un massasi qanday bo'ladi?",
+      "v": [
+        "2,3 kg",
+        "3,(2) kg",
+        "2,(3) kg",
+        "2,(6) kg"
+      ],
+      "t": 2,
+      "izoh": "Massani topish uchun 7 ni 3 ga bo'lamiz. Bo'lishda butun qism 2, qoldiq esa 1 bo'ladi va keyingi har bir bosqichda 3 raqami takrorlanadi. Demak har xaltada 2,(3) kg un bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-ulush",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#385649db"
+    },
+    {
+      "q": "Kamola 5 litr sharbatni 9 ta bir xil stakanga teng quydi. Har bir stakandagi sharbat hajmi qanday yoziladi?",
+      "v": [
+        "0,5 l",
+        "0,(5) l",
+        "0,55 l",
+        "0,(4) l"
+      ],
+      "t": 1,
+      "izoh": "Hajmni topish uchun 5 ni 9 ga bo'lamiz. Har bosqichda qoldiq 5 ga teng bo'lib qoladi va bo'linmada 5 raqami cheksiz takrorlanadi. Demak har stakanda 0,(5) l sharbat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-ulush",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#390ddac6"
+    },
+    {
+      "q": "Uch nafar do'st sayohatdagi 50 000 so'mlik umumiy xarajatni o'zaro teng bo'lishdi. Har biriga to'g'ri keladigan ulushni aniq, ya'ni davriy kasr ko'rinishida yozing.",
+      "v": [
+        "16 666,(6) so'm",
+        "16 666 so'm",
+        "16 667 so'm",
+        "16 666,6 so'm"
+      ],
+      "t": 0,
+      "izoh": "Ulushni topish uchun 50 000 ni 3 ga bo'lamiz. Bo'linmada butun qism 16 666 chiqadi, qoldiq esa 2 bo'lib, keyingi barcha o'rinlarda 6 raqami takrorlanadi. Demak aniq qiymat 16 666,(6) so'mga teng; 16 667 so'm bu qiymatning yaxlitlangani, aniq ulush emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-ulush",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#5c74edf5"
+    },
+    {
+      "q": "Sinfdagi 9 o'quvchidan 4 tasi shaxmat to'garagiga qatnaydi. Qatnovchilar ulushini o'nli kasr ko'rinishida yozing.",
+      "v": [
+        "0,4",
+        "0,(4)",
+        "0,44",
+        "0,(5)"
+      ],
+      "t": 1,
+      "izoh": "Ulush 4/9 kasr bilan ifodalanadi. 4 ni 9 ga bo'lganda har bosqichda qoldiq 4 bo'lib qoladi va bo'linmada 4 raqami cheksiz takrorlanadi. Demak ulush 0,(4) ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-ulush",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#fdc7a746"
+    },
+    {
+      "q": "Ishchi bitta buyurtmani 6 soatda bajaradi. Bir soat ichida u buyurtmaning qancha qismini bajaradi?",
+      "v": [
+        "0,(16)",
+        "0,16",
+        "0,1(6)",
+        "0,(6)"
+      ],
+      "t": 2,
+      "izoh": "Bir soatdagi ish 1/6 qismga teng bo'ladi. 1 ni 6 ga bo'lsak 0,1666… hosil bo'ladi, ya'ni 1 raqami davrga kirmaydi, 6 esa cheksiz takrorlanadi. Demak javob 0,1(6) ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ish-vaqt",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#7610ff5d"
+    },
+    {
+      "q": "Nasos hovuzni 11 soatda to'ldiradi. Bir soat ichida hovuzning qancha qismi suvga to'ladi?",
+      "v": [
+        "0,09",
+        "0,(9)",
+        "0,(11)",
+        "0,(09)"
+      ],
+      "t": 3,
+      "izoh": "Bir soatda hovuzning 1/11 qismi to'ladi. 1 ni 11 ga bo'lganda 0,090909… hosil bo'ladi, ya'ni 0 va 9 raqamlari juftlik bo'lib takrorlanadi. Demak javob 0,(09) ko'rinishida yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-vaqt",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#c738ca29"
+    },
+    {
+      "q": "Traktor dalani 12 soatda to'liq haydaydi. Ishning 5 soatida dalaning qancha qismi haydalgan bo'ladi?",
+      "v": [
+        "0,41(6)",
+        "0,(416)",
+        "0,41",
+        "0,4(16)"
+      ],
+      "t": 0,
+      "izoh": "Haydalgan qism 5/12 kasrga teng. 5 ni 12 ga bo'lsak 0,41666… chiqadi: 4 va 1 raqamlari davrga kirmaydi, 6 esa takrorlanaveradi. Demak javob 0,41(6) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ish-vaqt",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#721957ea"
+    },
+    {
+      "q": "Usta buyurtmani 9 kunda, shogirdi esa 12 kunda bajaradi. Birga ishlaganda bir kunda buyurtmaning qancha qismi bajariladi?",
+      "v": [
+        "0,1(94)",
+        "0,19(4)",
+        "0,194",
+        "0,(194)"
+      ],
+      "t": 1,
+      "izoh": "Usta bir kunda 1/9, shogird 1/12 qismni bajaradi. Umumiy maxraj 36: 4/36 + 3/36 = 7/36. Endi 7 ni 36 ga bo'lamiz: 0,19444… ya'ni 1 va 9 davrga kirmaydi, 4 takrorlanadi. Javob 0,19(4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ish-vaqt",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#18805950"
+    },
+    {
+      "q": "Oshxonada tayyorlangan 60 litr aralashmada 11 litr sirka bor. Sirkaning aralashmadagi ulushini o'nli kasr ko'rinishida yozing.",
+      "v": [
+        "0,(183)",
+        "0,183",
+        "0,18(3)",
+        "0,1(83)"
+      ],
+      "t": 2,
+      "izoh": "Ulush 11/60 kasrga teng bo'ladi. 11 ni 60 ga bo'lganda 0,18333… hosil bo'ladi. Bu yerda 1 va 8 raqamlari davrga kirmaydi, 3 esa cheksiz takrorlanadi, ya'ni ulush 0,18(3) ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aralashma",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#82da7581"
+    },
+    {
+      "q": "Eritmani tayyorlash uchun 2 kg tuz va 7 kg suv olindi. Tuzning butun eritmadagi ulushi qanday yoziladi?",
+      "v": [
+        "0,2",
+        "0,22",
+        "0,(7)",
+        "0,(2)"
+      ],
+      "t": 3,
+      "izoh": "Eritmaning umumiy massasi 2 + 7 = 9 kg bo'ladi. Tuz ulushi 2/9 kasrga teng. 2 ni 9 ga bo'lganda 0,222… hosil bo'ladi, demak ulush 0,(2) ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-aralashma",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#57c79ca1"
+    },
+    {
+      "q": "Bog'bon 5 litr konsentratni 6 litr toza suvga aralashtirdi. Konsentratning tayyor aralashmadagi ulushi qancha bo'ladi?",
+      "v": [
+        "0,(45)",
+        "0,45",
+        "0,(54)",
+        "0,8(3)"
+      ],
+      "t": 0,
+      "izoh": "Aralashmaning umumiy hajmi 5 + 6 = 11 litr. Konsentrat ulushi 5/11 ga teng, uni bo'lsak 0,454545… hosil bo'ladi. Demak ulush 0,(45) ko'rinishida yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-aralashma",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#5f3b6ff3"
+    },
+    {
+      "q": "Sut mahsulotining 3 kg qismida 250 g yog' borligi aniqlandi. Yog'ning massaviy ulushini o'nli kasr shaklida ifodalang.",
+      "v": [
+        "0,(083)",
+        "0,08(3)",
+        "0,083",
+        "0,8(3)"
+      ],
+      "t": 1,
+      "izoh": "Massalarni bir birlikka keltiramiz: 250 g = 0,25 kg. Ulush 0,25 : 3 = 25/300 = 1/12 ga teng. 1 ni 12 ga bo'lsak 0,08333… ya'ni 0,08(3) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-aralashma",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#1986fb22"
+    },
+    {
+      "q": "Velosipedchi 100 km yo'lni 6 soatda bosib o'tdi. Uning o'rtacha tezligi qanday qiymatga teng bo'ladi?",
+      "v": [
+        "16,6 km/soat",
+        "17 km/soat",
+        "16,(6) km/soat",
+        "16,(3) km/soat"
+      ],
+      "t": 2,
+      "izoh": "Tezlik masofani vaqtga bo'lish bilan topiladi: 100 : 6. Bo'linmada butun qism 16, qoldiq 4 bo'ladi va keyin 6 raqami cheksiz takrorlanadi. Demak o'rtacha tezlik 16,(6) km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masofa-tezlik",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#3cfcb47e"
+    },
+    {
+      "q": "Avtobus 250 km masofani 9 soatda bosib o'tdi. Uning o'rtacha tezligini davriy kasr ko'rinishida yozing.",
+      "v": [
+        "27,7 km/soat",
+        "28 km/soat",
+        "27,(8) km/soat",
+        "27,(7) km/soat"
+      ],
+      "t": 3,
+      "izoh": "Tezlikni topamiz: 250 : 9. Butun qism 27, qoldiq 7 bo'ladi va keyingi bosqichlarda 7 raqami takrorlanaveradi. Demak o'rtacha tezlik 27,(7) km/soat ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-masofa-tezlik",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#a1471149"
+    },
+    {
+      "q": "Poyezd 400 km yo'lni 11 soatda bosib o'tdi. Uning o'rtacha tezligi qanday yoziladi?",
+      "v": [
+        "36,(36) km/soat",
+        "36,3 km/soat",
+        "36,(3) km/soat",
+        "36,36 km/soat"
+      ],
+      "t": 0,
+      "izoh": "400 ni 11 ga bo'lamiz: butun qism 36, qoldiq 4 bo'ladi. Keyin qoldiqlar 4 va 7 navbatma-navbat qaytadi, bo'linmada esa 3 va 6 raqamlari takrorlanadi. Demak tezlik 36,(36) km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-masofa-tezlik",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#5338f37a"
+    },
+    {
+      "q": "Yuk mashinasi 7 soat davomida jami 240 km yo'l bosdi. Har bir soatga to'g'ri keladigan o'rtacha masofani aniq yozing.",
+      "v": [
+        "34,2 km",
+        "34,(285714) km",
+        "34,28 km",
+        "34,(2) km"
+      ],
+      "t": 1,
+      "izoh": "240 ni 7 ga bo'lamiz: butun qism 34, qoldiq 2. Keyin 2/7 = 0,(285714) ekanini bilamiz. Demak aniq qiymat 34,(285714) km bo'ladi, chunki davr olti raqamdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-masofa-tezlik",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#518addad"
+    },
+    {
+      "q": "Ombordagi mahsulotning 0,(3) qismi sotildi. Sotilgan mahsulot ulushi foizda qanday ifodalanadi?",
+      "v": [
+        "33%",
+        "3,(3)%",
+        "33,(3)%",
+        "33,3%"
+      ],
+      "t": 2,
+      "izoh": "Ulushni foizga aylantirish uchun uni 100 ga ko'paytiramiz. 0,(3) = 1/3 bo'lgani uchun 1/3 · 100 = 100/3. Bu esa 33,(3)% ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foizga-aylantirish",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#1741cf0a"
+    },
+    {
+      "q": "Sinf o'quvchilarining 2/3 qismi qiz bolalar. Qizlar ulushi foizda qanday yozilishini aniqlang.",
+      "v": [
+        "66,6%",
+        "67%",
+        "66%",
+        "66,(6)%"
+      ],
+      "t": 3,
+      "izoh": "2/3 ulushni foizga o'tkazamiz: 2/3 · 100 = 200/3. 200 ni 3 ga bo'lsak 66,666… hosil bo'ladi. Demak qizlar ulushi 66,(6)% ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foizga-aylantirish",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#7ede87ed"
+    },
+    {
+      "q": "Tekshiruvda mahsulotlarning 0,(45) qismi birinchi navli deb topildi. Bu ulush necha foizni tashkil qiladi?",
+      "v": [
+        "45,(45)%",
+        "45%",
+        "4,5%",
+        "45,4%"
+      ],
+      "t": 0,
+      "izoh": "0,(45) = 45/99 = 5/11 ekanini topamiz. Foizga o'tkazish uchun 100 ga ko'paytiramiz: 5/11 · 100 = 500/11. Bu esa 45,4545… ya'ni 45,(45)% ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foizga-aylantirish",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#edf858fe"
+    },
+    {
+      "q": "Anjumanda qatnashgan 18 kishidan 5 nafari ma'ruza qildi. Ma'ruzachilar ulushi foizda qanchani tashkil etadi?",
+      "v": [
+        "27,7%",
+        "27,(7)%",
+        "28%",
+        "2,(7)%"
+      ],
+      "t": 1,
+      "izoh": "Ulush 5/18 kasrga teng. Foizga o'tkazamiz: 5/18 · 100 = 500/18 = 250/9. 250 ni 9 ga bo'lsak 27,777… hosil bo'ladi, ya'ni 27,(7)%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "foizga-aylantirish",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#6484a846"
+    },
+    {
+      "q": "O'lchov natijasi 0,(6) ga teng chiqdi. Uni yuzdan bir birligigacha yaxlitlaganda qanday son hosil bo'ladi?",
+      "v": [
+        "0,66",
+        "0,7",
+        "0,67",
+        "0,6"
+      ],
+      "t": 2,
+      "izoh": "0,(6) = 0,6666… ko'rinishida yoziladi. Yuzdan bir birligigacha yaxlitlashda uchinchi raqamga qaraymiz, u 6 ga teng va 5 dan katta. Shuning uchun ikkinchi raqam bittaga oshadi va natija 0,67 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yaxlitlash",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#25546a7d"
+    },
+    {
+      "q": "Hisob-kitobda 2/7 = 0,(285714) qiymat ishlatildi. Uni mingdan bir birligigacha yaxlitlab yozing.",
+      "v": [
+        "0,285",
+        "0,29",
+        "0,28",
+        "0,286"
+      ],
+      "t": 3,
+      "izoh": "Sonni ochib yozamiz: 0,285714… Mingdan bir birligigacha yaxlitlashda to'rtinchi raqamga qaraymiz, u 7 ga teng. 7 soni 5 dan katta bo'lgani uchun uchinchi raqam 5 dan 6 ga oshadi va natija 0,286 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yaxlitlash",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#0778979a"
+    },
+    {
+      "q": "Laboratoriya o'lchovi 0,58(3) natijani berdi. Shu qiymatni yuzdan bir birligigacha yaxlitlab yozing.",
+      "v": [
+        "0,58",
+        "0,59",
+        "0,6",
+        "0,583"
+      ],
+      "t": 0,
+      "izoh": "Sonni ochiq yozamiz: 0,58333… Yuzdan bir birligigacha yaxlitlashda uchinchi raqamga qaraymiz, u 3 ga teng. 3 soni 5 dan kichik bo'lgani uchun ikkinchi raqam o'zgarmaydi va natija 0,58 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yaxlitlash",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#8a1d1da0"
+    },
+    {
+      "q": "Ma'lumki 1/7 = 0,(142857). Shu ma'lumotdan foydalanib 3/7 kasrning o'nli yozuvini toping.",
+      "v": [
+        "0,(428571)",
+        "0,(342857)",
+        "0,(142857)",
+        "0,(285714)"
+      ],
+      "t": 0,
+      "izoh": "3/7 ni topish uchun 3 ni 7 ga bo'lamiz: birinchi raqam 4, keyin qoldiqlar 1/7 dagi kabi aylanadi. Natijada davr o'sha 142857 raqamlaridan tuziladi, faqat 4 dan boshlanadi. Demak 3/7 = 0,(428571).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "siklik-yetti-oilasi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#93aa2c22"
+    },
+    {
+      "q": "Olti taqsim yetti kasrining cheksiz davriy o'nli yozuvi qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "0,(714285)",
+        "0,(857142)",
+        "0,(571428)",
+        "0,(142857)"
+      ],
+      "t": 1,
+      "izoh": "6 ni 7 ga bo'lganda birinchi raqam 8 chiqadi, chunki 60 : 7 = 8 va qoldiq 4. Keyingi qoldiqlar 1/7 dagi tartibda takrorlanadi. Shuning uchun 6/7 = 0,(857142) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "siklik-yetti-oilasi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#c0e3b935"
+    },
+    {
+      "q": "142857 sonini 2 ga ko'paytirsak 285714 hosil bo'ladi, ya'ni raqamlar siklik siljiydi. Shu xossaga ko'ra 142857 ni 3 ga ko'paytirsak nima chiqadi?",
+      "v": [
+        "285714",
+        "571428",
+        "428571",
+        "857142"
+      ],
+      "t": 2,
+      "izoh": "142857 = 999999 : 7 bo'lgani uchun uni 3 ga ko'paytirish 3/7 kasrning davrini beradi. 3/7 = 0,(428571) ekanini yuqorida ko'rdik. Demak ko'paytma 428571 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siklik-yetti-oilasi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#01c0b82f"
+    },
+    {
+      "q": "Cheksiz davriy kasrlar 0,(142857) va 0,(714285) qo'shildi. Yig'indining davriy yozuvini aniqlang.",
+      "v": [
+        "0,(714285)",
+        "0,(571428)",
+        "0,(285714)",
+        "0,(857142)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi son 1/7, ikkinchisi 5/7 ga teng. Ularning yig'indisi 1/7 + 5/7 = 6/7 bo'ladi. 6/7 esa 0,(857142) ko'rinishida yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "siklik-yetti-oilasi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#d66ad03a"
+    },
+    {
+      "q": "Uch o'lchov natijasi 12, 15 va 17 birlikni ko'rsatdi. Ularning o'rtacha arifmetigini davriy kasr shaklida yozing.",
+      "v": [
+        "14,(6)",
+        "14,6",
+        "14,(3)",
+        "15"
+      ],
+      "t": 0,
+      "izoh": "Avval yig'indini topamiz: 12 + 15 + 17 = 44. So'ng uni o'lchovlar soniga bo'lamiz: 44 : 3. Butun qism 14, qoldiq 2 bo'ladi va keyin 6 raqami takrorlanaveradi, ya'ni 14,(6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-olchov-statistika",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#2e82169a"
+    },
+    {
+      "q": "Bir hafta davomida, ya'ni 7 kunda do'konda 100 ta buyurtma bajarildi. Kunlik o'rtacha buyurtmalar sonini aniq yozing.",
+      "v": [
+        "14,2",
+        "14,(285714)",
+        "14,28",
+        "14,(2)"
+      ],
+      "t": 1,
+      "izoh": "100 ni 7 ga bo'lamiz: butun qism 14, qoldiq 2 qoladi. Bundan keyin 2/7 = 0,(285714) davriy qismi hosil bo'ladi. Demak kunlik o'rtacha buyurtma 14,(285714) ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-olchov-statistika",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#d6cb7976"
+    },
+    {
+      "q": "Kutubxona hisobotiga ko'ra 11 o'quvchi bir oyda jami 30 ta kitob o'qigan. Har bir o'quvchiga o'rtacha nechta kitob to'g'ri keladi?",
+      "v": [
+        "2,7",
+        "2,72",
+        "2,(72)",
+        "2,(7)"
+      ],
+      "t": 2,
+      "izoh": "O'rtacha qiymat 30 : 11 amali bilan topiladi. Butun qism 2, qoldiq 8 bo'ladi, keyin qoldiqlar 8 va 3 navbatlashib qaytadi. Bo'linmada 7 va 2 raqamlari takrorlanadi, ya'ni natija 2,(72).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-olchov-statistika",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#6cfade50"
+    },
+    {
+      "q": "Zavod 9 ish kunida jami 400 ta detal ishlab chiqardi. Kunlik o'rtacha ishlab chiqarish hajmini toping.",
+      "v": [
+        "44,4",
+        "44",
+        "44,(5)",
+        "44,(4)"
+      ],
+      "t": 3,
+      "izoh": "400 ni 9 ga bo'lamiz: butun qism 44, qoldiq 4 bo'ladi. Har keyingi bosqichda qoldiq yana 4 bo'lib qoladi, shuning uchun 4 raqami cheksiz takrorlanadi. Demak kunlik o'rtacha 44,(4) detal.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-olchov-statistika",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#388c749d"
+    },
+    {
+      "q": "Uch taqsim yigirma ikki kasrini o'nli kasrga aylantirganda uning tuzilishi qanday bo'ladi?",
+      "v": [
+        "Davrgacha 1 ta raqam, davri 2 raqamli",
+        "Davr darhol boshlanadi, davri 2 raqamli",
+        "Davrgacha 1 ta raqam, davri 1 raqamli",
+        "Davrgacha 2 ta raqam, davri 2 raqamli"
+      ],
+      "t": 0,
+      "izoh": "Maxrajni ajratamiz: 22 = 2·11. Ikkilik ko'paytuvchi borligi uchun davrdan oldin bitta raqam turadi, 11 esa ikki raqamli davr beradi. Haqiqatan 3/22 = 0,1(36) ko'rinishida yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-davr-tuzilishi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#4f164d10"
+    },
+    {
+      "q": "Yetti taqsim o'n ikki kasr o'nli kasrga aylantirilganda davrgacha nechta raqam turadi?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "0 ta",
+        "3 ta"
+      ],
+      "t": 1,
+      "izoh": "Maxraj 12 = 2·2·3 ko'rinishida ajraladi. Ikkilikning darajasi 2 ga teng, shuning uchun davrdan oldin ikkita raqam turadi. Haqiqatan 7/12 = 0,58(3) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralash-davr-tuzilishi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#06f8a6e2"
+    },
+    {
+      "q": "Maxraji 700 ga teng bo'lgan qisqarmas kasrning o'nli yozuvida davrgacha nechta raqam bo'ladi?",
+      "v": [
+        "1 ta",
+        "3 ta",
+        "2 ta",
+        "6 ta"
+      ],
+      "t": 2,
+      "izoh": "700 sonini ajratamiz: 700 = 2²·5²·7. Davrgacha turadigan raqamlar soni ikkilik va beshlik darajalarining kattarog'iga teng. Ikkalasi ham 2 bo'lgani uchun davrdan oldin 2 ta raqam turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-davr-tuzilishi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#a3d7cc3d"
+    },
+    {
+      "q": "Qisqarmas kasrning maxraji 2⁵·5²·3 ko'paytmaga teng. Uning o'nli yozuvida davrgacha nechta raqam joylashadi?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "7 ta",
+        "5 ta"
+      ],
+      "t": 3,
+      "izoh": "Davrgacha turadigan raqamlar soni ikkilik va beshlik darajalarining kattarog'i bilan aniqlanadi. Bu yerda darajalar 5 va 2 ga teng, kattasi esa 5. Demak davrdan oldin 5 ta raqam turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-davr-tuzilishi",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#746cecac"
+    },
+    {
+      "q": "1/9, 1/11, 1/13, 1/15 kasrlaridan qaysi birining o'nli yozuvidagi davri eng uzun bo'ladi?",
+      "v": [
+        "1/9",
+        "1/11",
+        "1/13",
+        "1/15"
+      ],
+      "t": 2,
+      "izoh": "1/9 = 0,(1) va 1/15 = 0,0(6) da davr bitta raqamdan iborat. 1/11 = 0,(09) da davr ikkita raqamli. 1/13 = 0,(076923) da esa davr oltita raqamdan iborat, demak eng uzuni shu.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mahraj-tahlili",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#3117f36e"
+    },
+    {
+      "q": "Qisqarmas 1/n kasrning o'nli yozuvi bir raqamli davrga ega sof davriy kasr bo'lishi uchun n qanday bo'lishi kerak?",
+      "v": [
+        "n soni 9 ning bo'luvchisi bo'lishi kerak",
+        "n soni albatta tub bo'lishi kerak",
+        "n soni 10 ning bo'luvchisi bo'lishi kerak",
+        "n soni juft bo'lishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Bir raqamli davrga ega sof davriy kasrni a/9 ko'rinishida yozish mumkin. Demak 1/n kasr shu ko'rinishga kelishi uchun 9 soni n ga bo'linishi, ya'ni n 9 ning bo'luvchisi bo'lishi kerak. Bunday sonlar 3 va 9 dan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mahraj-tahlili",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#f7114c02"
+    },
+    {
+      "q": "Maxraji 33 ga teng bo'lgan qisqarmas kasrlarning o'nli yozuvida davr necha raqamdan iborat bo'ladi?",
+      "v": [
+        "1 raqamli",
+        "2 raqamli",
+        "3 raqamli",
+        "11 raqamli"
+      ],
+      "t": 1,
+      "izoh": "9 soni 33 ga bo'linmaydi, shuning uchun davr bitta raqamli bo'la olmaydi. Lekin 99 soni 33 ga bo'linadi (99 : 33 = 3), demak kasrni 99 maxrajli ko'rinishga keltirish mumkin va davr 2 raqamli bo'ladi. Masalan, 1/33 = 3/99 = 0,(03).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mahraj-tahlili",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#0807e01f"
+    },
+    {
+      "q": "Qisqarmas kasrning maxraji 55 ga teng. Uning o'nli yozuvi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Chekli o'nli kasr bo'ladi",
+        "Sof davriy bo'lib, davri 2 raqamli",
+        "Aralash davriy, davrgacha 2 raqam va davri 1 raqamli",
+        "Aralash davriy, davrgacha 1 raqam va davri 2 raqamli"
+      ],
+      "t": 3,
+      "izoh": "55 = 5·11 bo'lgani uchun maxrajda 5 ham, 11 ham bor. Beshlik ko'paytuvchi davrdan oldin bitta raqam paydo qiladi, 11 esa ikki raqamli davr beradi. Masalan 3/55 = 0,0(54) ko'rinishida yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mahraj-tahlili",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#1f77990e"
+    },
+    {
+      "q": "Hisoblang: 0,(3) va 0,(09) davriy kasrlarining yig'indisi qanday o'nli yozuvga ega bo'ladi?",
+      "v": [
+        "0,(42)",
+        "0,(39)",
+        "0,4(2)",
+        "0,42"
+      ],
+      "t": 0,
+      "izoh": "0,(3) = 1/3 va 0,(09) = 1/11 ekanini topamiz. Umumiy maxraj 33: 11/33 + 3/33 = 14/33. Endi 14 ni 33 ga bo'lsak 0,424242… ya'ni 0,(42) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasrlar-yigindisi-davri",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#c767a089"
+    },
+    {
+      "q": "Ikkita davriy kasr 0,(6) va 0,(3) o'zaro ko'paytirildi. Ko'paytmaning o'nli yozuvi qanday bo'ladi?",
+      "v": [
+        "0,(18)",
+        "0,(2)",
+        "0,2",
+        "0,(3)"
+      ],
+      "t": 1,
+      "izoh": "0,(6) = 2/3 va 0,(3) = 1/3 ekanini bilamiz. Ko'paytma 2/3 · 1/3 = 2/9 ga teng. 2 ni 9 ga bo'lsak 0,222… ya'ni 0,(2) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davriy-kasrlar-yigindisi-davri",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#39c72864"
+    },
+    {
+      "q": "Cheksiz davriy kasrlar 0,(142857) va 0,(09) qo'shildi. Hosil bo'lgan yig'indining davri necha raqamdan iborat bo'ladi?",
+      "v": [
+        "2 raqamli",
+        "8 raqamli",
+        "6 raqamli",
+        "12 raqamli"
+      ],
+      "t": 2,
+      "izoh": "Birinchi son 1/7, ikkinchisi 1/11 ga teng, yig'indi esa 11/77 + 7/77 = 18/77. Maxraj 77 = 7·11 bo'lgani uchun davr uzunligi 6 va 2 sonlarining eng kichik umumiy karralisiga teng. Bu esa 6, ya'ni 18/77 = 0,(233766).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davriy-kasrlar-yigindisi-davri",
+      "id": "matematika_arif_m06-cheksiz-davriy-onli-kasrlar#56484d89"
+    }
+  ]
+}

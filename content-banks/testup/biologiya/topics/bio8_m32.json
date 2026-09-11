@@ -1,0 +1,456 @@
+{
+  "nom": "Biologiya-8, 32-§. Vitaminlar va ularning ahamiyati, 100-102-bet",
+  "bolim": "VIII BOB. Moddalar va energiya almashinuvi",
+  "savollar": [
+    {
+      "q": "Organizmda vitamin yetishmasligi qanday nomlanadi?",
+      "v": [
+        "Avitaminoz",
+        "Gipertoniya",
+        "Metabolizm",
+        "Anabolizm"
+      ],
+      "t": 0,
+      "izoh": "Organizmda vitamin yetishmasligi avitaminoz deyiladi; vitaminlar organizmga juda kam miqdorda (sutkada bir necha mkg dan mg gacha) kerak boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#21be4e6e"
+    },
+    {
+      "q": "«Vitamin» terminini kim taklif etgan?",
+      "v": [
+        "K. Funk (1912-yilda)",
+        "N. I. Lunin",
+        "I. P. Pavlov",
+        "K. Landshteyner"
+      ],
+      "t": 0,
+      "izoh": "Vitaminlarni oʻrganishga rus olimi N. I. Lunin asos solgan; «vitamin» terminini esa 1912-yilda polyak olimi K. Funk taklif etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio8_m32#cd06803e"
+    },
+    {
+      "q": "A vitamini yetishmaganida qanday kasallik paydo boʻladi?",
+      "v": [
+        "Shabkoʻrlik",
+        "Singa",
+        "Raxit",
+        "Beri-beri"
+      ],
+      "t": 0,
+      "izoh": "A vitamini organizm oʻsishiga taʼsir qiladi; u yetishmaganida koʻpincha shabkoʻrlik paydo boʻladi, bolalarda boʻy va soch yaxshi oʻsmaydi. A vitamini baliq yogʻi, sariyogʻ, tuxum sarigʻida, sabzida (karotin) boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#463616c6"
+    },
+    {
+      "q": "C vitamini yetishmaganda qanday kasallik kelib chiqadi?",
+      "v": [
+        "Singa",
+        "Shabkoʻrlik",
+        "Raxit",
+        "Beri-beri"
+      ],
+      "t": 0,
+      "izoh": "C vitamini yetishmaganida singa kasalligi paydo boʻladi: tish milklari qonaydi, ogʻiz shilliq pardasiga yaralar toshadi, tishlar tushadi, immunitet pasayadi. C vitamini naʼmatak, limon, koʻkatlarda koʻp.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#dcef71d0"
+    },
+    {
+      "q": "B1 vitamini yetishmaganda qanday kasallik paydo boʻladi?",
+      "v": [
+        "Beri-beri",
+        "Singa",
+        "Raxit",
+        "Shabkoʻrlik"
+      ],
+      "t": 0,
+      "izoh": "B1 vitamini uglevodlar almashinuviga taʼsir qiladi; u yetishmaganida beri-beri kasalligi kelib chiqadi, muskullar shol boʻladi. Bu vitamin gʻalla va dukkakli ekinlar donida, tuxum sarigʻida boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#32e63687"
+    },
+    {
+      "q": "D vitamini yetishmaganda bolalarda qanday kasallik paydo boʻladi?",
+      "v": [
+        "Raxit",
+        "Singa",
+        "Beri-beri",
+        "Shabkoʻrlik"
+      ],
+      "t": 0,
+      "izoh": "D vitamini kalsiy va fosfor almashinuvi, suyaklanish jarayonida muhim; u yetishmaganida bolalarda raxit paydo boʻladi — suyaklar toʻgʻri shakllanmaydi, oyoqlar qiyshiq oʻsadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#81e6a031"
+    },
+    {
+      "q": "D vitamini organizmda qanday sintezlanadi?",
+      "v": [
+        "Quyosh nuri taʼsirida terida",
+        "Ichakda bakteriyalar yordamida",
+        "Jigarda",
+        "Oshqozonda"
+      ],
+      "t": 0,
+      "izoh": "Quyosh nuri taʼsirida odam terisida D vitamini sintezlanadi; shuning uchun yosh bolalarni ochiq havoda sayr qildirish lozim. D vitamini baliq yogʻi, jigar, sariyogʻda ham boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#f7d803a8"
+    },
+    {
+      "q": "B12 vitamini yetishmaganda qanday kasallik paydo boʻladi?",
+      "v": [
+        "Kamqonlik",
+        "Raxit",
+        "Singa",
+        "Shabkoʻrlik"
+      ],
+      "t": 0,
+      "izoh": "B12 vitamini qon hosil boʻlishida ishtirok etadi; u yetishmasa kamqonlik paydo boʻladi. B12 asosan hayvon mahsulotlaridan olinadi, ichakda bakteriyalar yordamida oz miqdorda sintezlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#1150e29f"
+    },
+    {
+      "q": "Oʻsimliklardagi vitamin hosil qiluvchi moddalar qanday nomlanadi?",
+      "v": [
+        "Provitaminlar (masalan, karotinoidlar)",
+        "Fermentlar",
+        "Gormonlar",
+        "Antitanalar"
+      ],
+      "t": 0,
+      "izoh": "Oʻsimliklarda vitamin hosil qiluvchi moddalar — provitaminlar (masalan, karotinoidlar) boʻladi; odam va hayvon organizmida ulardan vitaminlar hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio8_m32#90d8c77a"
+    },
+    {
+      "q": "C vitamini nima uchun sabzavotlarni emalli idishda pishirish tavsiya etiladi?",
+      "v": [
+        "C vitamini metall idishda tez parchalanadi",
+        "Emal ovqatni shirin qiladi",
+        "Emal tez qizdiradi",
+        "Metall idish yorilaydi"
+      ],
+      "t": 0,
+      "izoh": "C vitamini issiqlik va ochiq havoda oson yemiriladi, metall idishlarda ham tez parchalanadi; shuning uchun sabzavotlar emalli idishlarda pishiriladi va pishgach tezda isteʼmol qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#50bc9fdd"
+    },
+    {
+      "q": "Vitaminlar organizmda qanday vazifani bajaradi?",
+      "v": [
+        "Fermentlar tarkibiga kirib, kimyoviy reaksiyalarni kuchaytiradi",
+        "Qurilish materiali boʻladi",
+        "Energiya beradi",
+        "Suyakni mustahkamlaydi"
+      ],
+      "t": 0,
+      "izoh": "Vitaminlar organizmda kimyoviy reaksiyalarni kuchaytiradi, oziq moddalar oʻzlashtirilishiga taʼsir qiladi, fermentlar tarkibiga kirib ular funksiyasi va faolligini taʼminlaydi; ular qurilish yoki energiya manbai emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#4d082cf4"
+    },
+    {
+      "q": "C vitamini yetishmaganda immunitet bilan nima roʻy beradi?",
+      "v": [
+        "Keskin pasayadi",
+        "Kuchayadi",
+        "Oʻzgarmaydi",
+        "Yoʻqoladi"
+      ],
+      "t": 0,
+      "izoh": "C vitamini yetishmasa singa kasalligida kamqonlik paydo boʻlib, immunitet keskin pasayib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#00d22c18"
+    },
+    {
+      "q": "«Vitamin» soʻzi lotinchada qaysi soʻzlardan tashkil topgan?",
+      "v": [
+        "Vita — hayot va amin — hayot aminlari",
+        "Vitro — shisha va min — modda",
+        "Vivo — kuch va amin — tuz",
+        "Vena — qon va min — element"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra vitaminlar (lot. Vita — hayot va amin) — «hayot aminlari» maʼnosini bildiradi; ular tirik organizmda muhim biokimyoviy va fiziologik funksiyalarni bajaradigan yuqori molekulali birikmalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#b0753511"
+    },
+    {
+      "q": "Vitaminlarni oʻrganishga kim asos solgan?",
+      "v": [
+        "Rus olimi N. I. Lunin",
+        "Polyak olimi K. Funk",
+        "I. M. Sechenov",
+        "L. Paster"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra vitaminlarni oʻrganishga rus olimi N. I. Lunin asos solgan; «vitamin» terminini esa 1912-yilda polyak olimi K. Funk taklif etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#50aefd86"
+    },
+    {
+      "q": "A vitamini organizmda qaysi jarayonga taʼsir koʻrsatadi?",
+      "v": [
+        "Organizmning oʻsishi va rivojlanishiga",
+        "Faqat qonning ivishiga",
+        "Suyaklanish jarayoniga",
+        "Faqat immunitet hosil boʻlishiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra A vitamini organizmning oʻsishi va rivojlanishiga taʼsir koʻrsatadi; u yetishmaganida koʻpincha shabkoʻrlik paydo boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#96e1024e"
+    },
+    {
+      "q": "Qaysi oʻsimlik mahsulotlarida A vitaminini hosil qiladigan karotin moddasi boʻladi?",
+      "v": [
+        "Sabzi, ismaloq, pomidor, oʻrik va qizil garmdori",
+        "Limon, apelsin va naʼmatak",
+        "Guruch va makkajoʻxori doni",
+        "Non va shirinliklar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻsimliklardan sabzi, ismaloq, pomidor, oʻrik va qizil garmdorida A vitaminini hosil qiladigan karotin moddasi boʻladi; hayvon mahsulotlaridan esa baliq yogʻi, sariyogʻ, sut, tuxum sarigʻida uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#dddbe357"
+    },
+    {
+      "q": "Bolalar ovqatida A vitamini yetishmaganida nima kuzatiladi?",
+      "v": [
+        "Boʻyi va sochlari yaxshi oʻsmaydi, tishlar shakllanishi buziladi",
+        "Terisi sargʻayadi",
+        "Boʻyi tez oʻsadi",
+        "Ishtahasi ortadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bolalar ovqatida A vitamini yetishmaganida ularning boʻyi va sochlari yaxshi oʻsmaydi, tishlarining shakllanishi buziladi, oʻpka va ichakning jarohatlanishi kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#a12945eb"
+    },
+    {
+      "q": "C vitamini qaysi moddalar almashinuviga taʼsir qiladi?",
+      "v": [
+        "Oqsillar va karbonsuvlar almashinuviga",
+        "Faqat yogʻlar almashinuviga",
+        "Faqat suv-tuz almashinuviga",
+        "Kalsiy va fosfor almashinuviga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra C vitamini oqsillar va karbonsuvlar almashinuviga taʼsir qiladi; u naʼmatak, limon, apelsin, koʻkatlarda koʻp boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#c0d97ec7"
+    },
+    {
+      "q": "Singa kasalligida odamda qanday belgilar kuzatiladi?",
+      "v": [
+        "Tish milklari qonaydi, ogʻiz shilliq pardasiga yaralar toshadi, tishlar tushadi",
+        "Suyaklar qiyshiq oʻsadi",
+        "Muskullar shol boʻladi",
+        "Koʻrish qorongʻida yomonlashadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra C vitamini yetishmaganida singa kasalligida tish milklari qonaydi, ogʻiz shilliq pardasiga mayda yaralar toshadi, tishlar tushib ketadi, boʻgʻimlar ogʻriydi, kamqonlik paydo boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#44cfa37a"
+    },
+    {
+      "q": "B guruh vitaminlariga qaysilar kiradi?",
+      "v": [
+        "B1, B2, B6, B12",
+        "A, C, D, E",
+        "Faqat B1 va D",
+        "C, K, PP"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra B vitaminlari guruhiga B1, B2, B6, B12 kabi bir qancha vitaminlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#de059bee"
+    },
+    {
+      "q": "B1 vitamini qaysi moddalar almashinuviga taʼsir qiladi?",
+      "v": [
+        "Uglevodlar almashinuviga",
+        "Oqsillar almashinuviga",
+        "Yogʻlar almashinuviga",
+        "Suv almashinuviga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra B1 vitamini uglevodlar almashinuviga taʼsir qiladi; shuning uchun u yetishmaganida karbonsuvlar jadal almashinadigan organlar ishi buziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#9d27c921"
+    },
+    {
+      "q": "B1 vitamini yetishmaganida qaysi organ va toʻqimalar ishi buziladi?",
+      "v": [
+        "Yurak, nerv sistemasi va muskullar",
+        "Jigar va buyrak",
+        "Teri va soch",
+        "Koʻz va quloq"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra B1 vitamini yetishmaganida karbonsuvlar jadal almashinadigan organ va toʻqimalar — yurak, nerv sistemasi, muskullar ishi buziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#78439f79"
+    },
+    {
+      "q": "Beri-beri kasalligi ilgari kimlar orasida keng tarqalgan edi?",
+      "v": [
+        "Tinch okean orollarida koʻp guruch isteʼmol qiladigan xalqlar orasida",
+        "Choʻl aholisi orasida",
+        "Baliqchilar orasida",
+        "Togʻli hududlarda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra beri-beri kasalligida muskullar shol boʻladi; bu kasallik ilgari Tinch okean orollarida yashovchi, koʻp guruch isteʼmol qiladigan xalqlar orasida keng tarqalgan edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#1c022d41"
+    },
+    {
+      "q": "B12 vitamini organizmda qaysi jarayonlarda ishtirok etadi?",
+      "v": [
+        "Metionin aminokislotasi, nuklein kislotalar sintezi va qon hosil boʻlishida",
+        "Faqat suyaklanishda",
+        "Yogʻlarning parchalanishida",
+        "Faqat koʻrishni taʼminlashda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra B12 biologik oʻta faol modda boʻlib, metionin aminokislotasi, nuklein kislotalar sintezi va qon hosil boʻlishida ishtirok etadi; u yetishmasa kamqonlik paydo boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio8_m32#ed70a8a7"
+    },
+    {
+      "q": "D vitamini organizmda qaysi jarayonda katta ahamiyatga ega?",
+      "v": [
+        "Kalsiy va fosfor almashinuvi, suyaklanish jarayonida",
+        "Uglevodlar almashinuvida",
+        "Oqsillar sintezida",
+        "Koʻrishni taʼminlashda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra D vitamini organizmda kalsiy va fosfor almashinuvi, umuman suyaklanish jarayonida katta ahamiyatga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#c236e863"
+    },
+    {
+      "q": "Raxit kasalligida bolaning organizmida qanday oʻzgarishlar boʻladi?",
+      "v": [
+        "Suyaklari toʻgʻri shakllanmaydi, oyoqlari qiyshiq oʻsadi, qorni kattalashadi",
+        "Tish milklari qonaydi",
+        "Muskullari shol boʻladi",
+        "Koʻrishi pasayadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra D vitamini yetishmaganida kalsiy va fosfor almashinuvi buzilib, bolalarda raxit paydo boʻladi: suyaklari toʻgʻri shakllanmaydi, oyoqlari qiyshiq oʻsadi, qorni kattalashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#bc97cda1"
+    },
+    {
+      "q": "Qaysi mahsulotlar D vitaminiga boy boʻladi?",
+      "v": [
+        "Baliq yogʻi, jigar, sariyogʻ, baliq ikrasi va tuxum",
+        "Limon va apelsin",
+        "Guruch va karam",
+        "Faqat koʻkatlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra baliq yogʻi, jigar, sariyogʻ, baliq ikrasi, tuxum D vitaminiga boy boʻladi; bundan tashqari, quyosh nuri taʼsirida odam terisida ham D vitamini sintezlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#4cc799c4"
+    },
+    {
+      "q": "Qaysi vitaminlar har qanday taʼsirga chidamsiz boʻladi?",
+      "v": [
+        "A, B1, B2 vitaminlari",
+        "D va E vitaminlari",
+        "Faqat C vitamini",
+        "B12 va D vitaminlari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra A, B1, B2 vitaminlari har qanday taʼsirga chidamsiz boʻladi; A vitamini ovqat pishirish va quritish davomida parchalanib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio8_m32#05ba3e87"
+    },
+    {
+      "q": "A vitamini pishirilgan sabzida xom sabziga nisbatan qanday oʻzgaradi?",
+      "v": [
+        "Ikki marta kamayadi",
+        "Ikki marta koʻpayadi",
+        "Oʻzgarmaydi",
+        "Butunlay yoʻqoladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra A vitamini pishirilgan sabzida xom sabziga nisbatan ikki marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m32#17654abc"
+    },
+    {
+      "q": "Pishirilgan goʻshtda B guruh vitaminlarining qancha qismi saqlanib qoladi?",
+      "v": [
+        "15-60 %",
+        "90-100 %",
+        "Faqat 5 %",
+        "Umuman saqlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra pishirilgan goʻshtda B guruh vitaminlari 15-60 %, oʻsimlik mahsulotlarida esa toʻrtdan bir qismi saqlanib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio8_m32#554bbbfa"
+    }
+  ]
+}

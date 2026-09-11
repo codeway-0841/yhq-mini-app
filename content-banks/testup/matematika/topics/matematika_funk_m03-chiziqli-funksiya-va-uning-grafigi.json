@@ -1,0 +1,1609 @@
+{
+  "nom": "Chiziqli funksiya va uning grafigi",
+  "bolim": "Funksiyalar",
+  "blok": "funk",
+  "rasmiyBolim": 4,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Toshkentda taksi xizmati o'tirish haqi sifatida 8 000 so'm oladi, so'ngra har bir kilometr uchun 3 500 so'm qo'shadi. Nodira 12 km yo'l yursa, qancha to'laydi?",
+      "v": [
+        "50 000 so'm",
+        "42 000 so'm",
+        "53 500 so'm",
+        "99 500 so'm"
+      ],
+      "t": 0,
+      "izoh": "To'lov chiziqli funksiya bilan ifodalanadi: y = 3 500x + 8 000, bunda x — yurilgan kilometr. x = 12 ni qo'yamiz: 3 500·12 = 42 000 so'm yo'l haqi. Unga o'tirish haqi qo'shiladi: 42 000 + 8 000 = 50 000. Javob: 50 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "funksiya-qiymati-hayotiy",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#a60ca700"
+    },
+    {
+      "q": "Aloqa operatorining tarifida oylik abonent to'lovi 25 000 so'm, har bir daqiqa suhbat esa 120 so'm turadi. Jasur bir oyda 340 daqiqa gaplashsa, hisobiga qancha summa yoziladi?",
+      "v": [
+        "40 800 so'm",
+        "65 800 so'm",
+        "61 000 so'm",
+        "29 080 so'm"
+      ],
+      "t": 1,
+      "izoh": "Model: y = 120x + 25 000, bunda x — suhbat daqiqalari soni. Suhbat qiymati: 120·340 = 40 800 so'm. Bunga abonent to'lovi qo'shiladi: 40 800 + 25 000 = 65 800. Javob: 65 800 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "funksiya-qiymati-hayotiy",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#22f7730d"
+    },
+    {
+      "q": "Sardorning kartasida 240 000 so'm bor, u har kuni 15 000 so'mdan sarflaydi va kartaga boshqa pul tushmaydi. 9 kundan keyin kartada qancha pul qoladi?",
+      "v": [
+        "135 000 so'm",
+        "90 000 so'm",
+        "105 000 so'm",
+        "375 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Qoldiq kamayuvchi chiziqli funksiya: y = 240 000 − 15 000x. To'qqiz kunlik sarf: 15 000·9 = 135 000 so'm. Qoldiq: 240 000 − 135 000 = 105 000. Javob: 105 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "funksiya-qiymati-hayotiy",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#36044336"
+    },
+    {
+      "q": "Konda yer sathidan har 100 metr pastga tushilganda harorat 3°C ga ortadi, sathdagi harorat esa 12°C ga teng. 700 metr chuqurlikda harorat necha gradus bo'ladi?",
+      "v": [
+        "21°C",
+        "87°C",
+        "2 112°C",
+        "33°C"
+      ],
+      "t": 3,
+      "izoh": "Bu yerda x — yuz metrlar soni, model y = 3x + 12. 700 metr — bu 7 ta yuz metr, ya'ni x = 7. Demak y = 3·7 + 12 = 21 + 12 = 33. Javob: 33°C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "funksiya-qiymati-hayotiy",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#8a20e95f"
+    },
+    {
+      "q": "Bosmaxona har bir varaqni chop etish uchun 250 so'm, dizayn uchun esa bir martalik 40 000 so'm haq oladi. Kamola 180 varaq buyurtma qilsa, to'lovi qancha bo'ladi?",
+      "v": [
+        "45 000 so'm",
+        "85 000 so'm",
+        "44 500 so'm",
+        "125 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Narx funksiyasi: y = 250x + 40 000. Chop etish qiymati: 250·180 = 45 000 so'm. Dizayn haqi bir marta qo'shiladi: 45 000 + 40 000 = 85 000. Javob: 85 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "funksiya-qiymati-hayotiy",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#f5aefefa"
+    },
+    {
+      "q": "Taksi hisobida o'tirish haqi 9 000 so'm, har bir kilometr esa 3 000 so'm. Mijoz jami 69 000 so'm to'lagan bo'lsa, u necha kilometr yurgan?",
+      "v": [
+        "17 km",
+        "23 km",
+        "26 km",
+        "20 km"
+      ],
+      "t": 3,
+      "izoh": "Model: 3 000x + 9 000 = 69 000. Avval o'tirish haqini ayiramiz: 3 000x = 69 000 − 9 000 = 60 000. Endi bo'lamiz: x = 60 000 : 3 000 = 20. Javob: 20 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-topish-hayotiy",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#33429912"
+    },
+    {
+      "q": "Hovuzda 4 500 litr suv bor, nasos har soatda 750 litr suvni chiqarib yuboradi. Hovuzda 1 500 litr suv qolishi uchun necha soat o'tishi kerak?",
+      "v": [
+        "4 soat",
+        "2 soat",
+        "6 soat",
+        "8 soat"
+      ],
+      "t": 0,
+      "izoh": "Qoldiq: y = 4 500 − 750x. Shart bo'yicha y = 1 500, demak 750x = 4 500 − 1 500 = 3 000. Bundan x = 3 000 : 750 = 4. Javob: 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-topish-hayotiy",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#7b8d7dd8"
+    },
+    {
+      "q": "Malika kuniga 24 betdan kitob o'qiydi va u avval 48 betni o'qib qo'ygan edi. Kitob 360 betdan iborat bo'lsa, uni tugatishga yana necha kun kerak?",
+      "v": [
+        "11 kun",
+        "15 kun",
+        "13 kun",
+        "17 kun"
+      ],
+      "t": 2,
+      "izoh": "O'qilgan betlar soni: y = 24x + 48. Kitob tugashi uchun y = 360 bo'lishi kerak: 24x = 360 − 48 = 312. Demak x = 312 : 24 = 13. Javob: 13 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-topish-hayotiy",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#e6a0986e"
+    },
+    {
+      "q": "Kuryerga har bir yetkazilgan buyurtma uchun 7 000 so'm to'lanadi, bundan tashqari kunlik qat'iy 35 000 so'm beriladi. Bir kunda 154 000 so'm olgan kuryer nechta buyurtma yetkazgan?",
+      "v": [
+        "12 ta",
+        "22 ta",
+        "27 ta",
+        "17 ta"
+      ],
+      "t": 3,
+      "izoh": "Kunlik daromad: y = 7 000x + 35 000. Shart: 7 000x + 35 000 = 154 000. Qat'iy haqni ayiramiz: 7 000x = 119 000. Bundan x = 119 000 : 7 000 = 17. Javob: 17 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-topish-hayotiy",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#c79195e6"
+    },
+    {
+      "q": "Ustaxonadagi sham 24 sm balandlikda bo'lib, yonganda har soatda 3 sm qisqaradi. Shamning balandligi 6 sm bo'lib qolishi uchun u necha soat yonishi kerak?",
+      "v": [
+        "6 soat",
+        "2 soat",
+        "8 soat",
+        "10 soat"
+      ],
+      "t": 0,
+      "izoh": "Balandlik funksiyasi: y = 24 − 3x. Shart bo'yicha 24 − 3x = 6, demak 3x = 24 − 6 = 18. Bundan x = 18 : 3 = 6. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "argument-topish-hayotiy",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#3190f876"
+    },
+    {
+      "q": "y = 7 − 4x chiziqli funksiyaning burchak koeffitsienti qanday songa teng?",
+      "v": [
+        "7",
+        "4",
+        "−4",
+        "−7"
+      ],
+      "t": 2,
+      "izoh": "Chiziqli funksiya y = kx + b ko'rinishida yoziladi, k — burchak koeffitsienti. Berilgan formulani shu ko'rinishga keltiramiz: y = −4x + 7. Demak k = −4, b = 7. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-koeffitsienti-aniqlash",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#1a08f239"
+    },
+    {
+      "q": "3x + 5y = 20 tenglama bilan berilgan to'g'ri chiziqning burchak koeffitsientini toping.",
+      "v": [
+        "0,6",
+        "−0,6",
+        "3",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Tenglamani y ga nisbatan yechamiz: 5y = 20 − 3x. Ikkala tomonni 5 ga bo'lamiz: y = 4 − 0,6x. Bu y = kx + b ko'rinishida k = −0,6 ekanini bildiradi. Javob: −0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-koeffitsienti-aniqlash",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#35cf6fcc"
+    },
+    {
+      "q": "Jasurning telefon to'lovi y = 950x + 18 000 formula bo'yicha hisoblanadi, bunda x — yuborilgan SMS soni. Bu modelda burchak koeffitsienti 950 nimani bildiradi?",
+      "v": [
+        "Oylik abonent to'lovi 950 so'm ekanini",
+        "18 000 ta SMS yuborilganini",
+        "Bitta SMS narxi 950 so'm ekanini",
+        "Eng ko'pi bilan 950 ta SMS yuborish mumkinligini"
+      ],
+      "t": 2,
+      "izoh": "Chiziqli modelda burchak koeffitsienti argument bir birlikka ortganda funksiya qanchaga o'zgarishini ko'rsatadi. Bu yerda x bitta SMS ga ortsa, to'lov 950 so'mga ortadi. Demak 950 — bitta SMS narxi, 18 000 esa abonent to'lovi. Javob: bitta SMS narxi 950 so'm ekanini.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-koeffitsienti-aniqlash",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#b390d52b"
+    },
+    {
+      "q": "Grafigi abssissa o'qi bilan 45° li burchak hosil qilib ko'tariladigan chiziqli funksiyaning burchak koeffitsienti nechaga teng?",
+      "v": [
+        "1",
+        "45",
+        "0",
+        "−1"
+      ],
+      "t": 0,
+      "izoh": "Burchak koeffitsienti k = tg α formula bilan hisoblanadi, bunda α — to'g'ri chiziqning Ox o'qi bilan hosil qilgan burchagi. tg45° = 1 bo'lgani uchun k = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-koeffitsienti-aniqlash",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#2a93acad"
+    },
+    {
+      "q": "y = 2 − x/3 funksiya grafigining burchak koeffitsientini ko'rsating.",
+      "v": [
+        "2",
+        "3",
+        "1/3",
+        "−1/3"
+      ],
+      "t": 3,
+      "izoh": "Formulani y = kx + b tartibida yozamiz: y = −x/3 + 2, ya'ni y = −(1/3)·x + 2. Demak burchak koeffitsienti manfiy va u −1/3 ga teng. Javob: −1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-koeffitsienti-aniqlash",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#91aee037"
+    },
+    {
+      "q": "y = 6x − 11 to'g'ri chiziq ordinata o'qini qaysi nuqtada kesib o'tadi?",
+      "v": [
+        "(−11; 0)",
+        "(0; −11)",
+        "(0; 6)",
+        "(11; 0)"
+      ],
+      "t": 1,
+      "izoh": "Ordinata o'qidagi nuqtaning abssissasi nolga teng, shuning uchun x = 0 qo'yamiz: y = 6·0 − 11 = −11. Kesishish nuqtasi (0; −11) bo'ladi, ya'ni b ozod had. Javob: (0; −11).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ordinata-oqi-bilan-kesishish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#f6783b7b"
+    },
+    {
+      "q": "Ustaxona buyurtma narxini y = 12 000x + 90 000 formula bilan hisoblaydi, bunda x — tayyorlanadigan buyumlar soni. Grafik ordinata o'qini qaysi nuqtada kesadi?",
+      "v": [
+        "(0; 90 000)",
+        "(0; 12 000)",
+        "(90 000; 0)",
+        "(0; 102 000)"
+      ],
+      "t": 0,
+      "izoh": "Ordinata o'qi bilan kesishishda x = 0 bo'ladi: y = 12 000·0 + 90 000 = 90 000. Nuqta (0; 90 000). Bu buyurtma hajmidan qat'i nazar to'lanadigan qat'iy haq. Javob: (0; 90 000).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ordinata-oqi-bilan-kesishish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#ae2c6201"
+    },
+    {
+      "q": "2x − 5y = 30 tenglama bilan berilgan to'g'ri chiziq ordinata o'qini kesib o'tadigan nuqtani toping.",
+      "v": [
+        "(15; 0)",
+        "(0; 30)",
+        "(0; 6)",
+        "(0; −6)"
+      ],
+      "t": 3,
+      "izoh": "Ordinata o'qida x = 0, shuning uchun tenglamaga qo'yamiz: 2·0 − 5y = 30. Bundan −5y = 30 va y = −6. Kesishish nuqtasi (0; −6). Javob: (0; −6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ordinata-oqi-bilan-kesishish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#27ad717e"
+    },
+    {
+      "q": "y = 3(x − 4) + 5 ko'rinishida berilgan funksiya grafigi ordinata o'qini qaysi nuqtada kesadi?",
+      "v": [
+        "(0; 5)",
+        "(0; −7)",
+        "(0; −12)",
+        "(0; 1)"
+      ],
+      "t": 1,
+      "izoh": "Avval qavsni ochamiz: y = 3x − 12 + 5, ya'ni y = 3x − 7. Endi x = 0 qo'yamiz: y = −7. Demak grafik ordinata o'qini (0; −7) nuqtada kesadi. Javob: (0; −7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ordinata-oqi-bilan-kesishish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#46b37cb4"
+    },
+    {
+      "q": "y = 4x − 18 funksiya grafigi abssissa o'qini kesib o'tadigan nuqtaning abssissasini toping.",
+      "v": [
+        "−4,5",
+        "18",
+        "4,5",
+        "72"
+      ],
+      "t": 2,
+      "izoh": "Abssissa o'qida y = 0 bo'ladi, shuning uchun 4x − 18 = 0 tenglamani yechamiz. Bundan 4x = 18 va x = 18 : 4 = 4,5. Bu funksiyaning noli deb ataladi. Javob: 4,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "abssissa-oqi-bilan-kesishish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#e4e0894e"
+    },
+    {
+      "q": "Anvarning jamg'armasida 96 000 so'm bor va u har hafta 12 000 so'mdan sarflaydi. Pul qoldig'i funksiyasining grafigi vaqt o'qini necha haftadan keyin kesib o'tadi?",
+      "v": [
+        "8 hafta",
+        "12 hafta",
+        "7 hafta",
+        "84 hafta"
+      ],
+      "t": 0,
+      "izoh": "Qoldiq funksiyasi y = 96 000 − 12 000x. Grafik vaqt o'qini kesganda y = 0 bo'ladi, ya'ni 12 000x = 96 000. Bundan x = 96 000 : 12 000 = 8. Javob: 8 hafta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "abssissa-oqi-bilan-kesishish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#487eabc0"
+    },
+    {
+      "q": "y = −2x + 7 chiziqli funksiyaning grafigi Ox o'qini qaysi nuqtada kesadi?",
+      "v": [
+        "(0; 3,5)",
+        "(7; 0)",
+        "(−3,5; 0)",
+        "(3,5; 0)"
+      ],
+      "t": 3,
+      "izoh": "Ox o'qidagi nuqtaning ordinatasi nolga teng: −2x + 7 = 0. Bundan 2x = 7 va x = 3,5. Nuqtaning ikkinchi koordinatasi nol, demak u (3,5; 0). Javob: (3,5; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "abssissa-oqi-bilan-kesishish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#11cb9e6e"
+    },
+    {
+      "q": "5x − 3y = 45 tenglama bilan berilgan to'g'ri chiziq abssissa o'qini kesib o'tadigan nuqtaning koordinatalarini toping.",
+      "v": [
+        "(0; 9)",
+        "(9; 0)",
+        "(0; −15)",
+        "(15; 0)"
+      ],
+      "t": 1,
+      "izoh": "Abssissa o'qida y = 0, shuning uchun tenglamaga qo'yamiz: 5x − 3·0 = 45. Bundan 5x = 45 va x = 9. Izlangan nuqta (9; 0), (0; −15) esa ordinata o'qidagi nuqta. Javob: (9; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "abssissa-oqi-bilan-kesishish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#af9e9c8c"
+    },
+    {
+      "q": "Sayyohlar guruhi 42 km yo'lni bosib o'tishi kerak va ular soatiga 6 km tezlik bilan yuradi. Qolgan masofa funksiyasining grafigi vaqt o'qini qachon kesadi?",
+      "v": [
+        "7 soat",
+        "6 soat",
+        "36 soat",
+        "252 soat"
+      ],
+      "t": 0,
+      "izoh": "Qolgan masofa y = 42 − 6x ko'rinishida. Grafik vaqt o'qini kesganda qolgan masofa nolga aylanadi: 6x = 42. Bundan x = 42 : 6 = 7. Javob: 7 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "abssissa-oqi-bilan-kesishish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#b5678fa8"
+    },
+    {
+      "q": "Grafigi A(1; 5) va B(3; 11) nuqtalardan o'tuvchi chiziqli funksiyaning formulasini toping.",
+      "v": [
+        "y = 3x + 5",
+        "y = 2x + 3",
+        "y = 3x + 2",
+        "y = −3x + 8"
+      ],
+      "t": 2,
+      "izoh": "Burchak koeffitsienti k = (11 − 5) : (3 − 1) = 6 : 2 = 3. Endi b ni topamiz: A nuqtani qo'yamiz, 5 = 3·1 + b, demak b = 2. Formula y = 3x + 2 bo'ladi. Javob: y = 3x + 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-nuqta-orqali-tenglama",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#5479a33b"
+    },
+    {
+      "q": "Sovutgichga qo'yilgan mahsulot harorati chiziqli kamayadi: 2-soatda 14°C, 6-soatda esa 2°C bo'lgan. Haroratni vaqtga bog'lovchi formulani tanlang.",
+      "v": [
+        "y = −3x + 20",
+        "y = 3x + 8",
+        "y = −3x + 14",
+        "y = −4x + 22"
+      ],
+      "t": 0,
+      "izoh": "Burchak koeffitsienti k = (2 − 14) : (6 − 2) = −12 : 4 = −3. b ni topish uchun birinchi nuqtani qo'yamiz: 14 = −3·2 + b, demak b = 20. Formula y = −3x + 20. Tekshirish: x = 6 da y = −18 + 20 = 2. Javob: y = −3x + 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-nuqta-orqali-tenglama",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#e5f0bf6e"
+    },
+    {
+      "q": "To'g'ri chiziq (−2; 7) va (4; −5) nuqtalardan o'tadi. Uning tenglamasini yozing.",
+      "v": [
+        "y = 2x + 11",
+        "y = −2x + 7",
+        "y = −2x − 5",
+        "y = −2x + 3"
+      ],
+      "t": 3,
+      "izoh": "k = (−5 − 7) : (4 − (−2)) = −12 : 6 = −2. b ni topamiz: 7 = −2·(−2) + b, ya'ni 7 = 4 + b va b = 3. Demak y = −2x + 3. Tekshirish: x = 4 da y = −8 + 3 = −5. Javob: y = −2x + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-nuqta-orqali-tenglama",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#6a802ddf"
+    },
+    {
+      "q": "Ustaxonada 5 ta buyum tayyorlash 120 000 so'm, 9 ta buyum tayyorlash esa 184 000 so'm turadi. Narx chiziqli o'zgarsa, qaysi formula to'g'ri?",
+      "v": [
+        "y = 24 000x",
+        "y = 16 000x + 40 000",
+        "y = 16 000x + 120 000",
+        "y = 4 000x + 100 000"
+      ],
+      "t": 1,
+      "izoh": "Bitta buyumning qo'shimcha narxi k = (184 000 − 120 000) : (9 − 5) = 64 000 : 4 = 16 000 so'm. Qat'iy xarajat: 120 000 = 16 000·5 + b, demak b = 40 000. Formula y = 16 000x + 40 000. Javob: y = 16 000x + 40 000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-nuqta-orqali-tenglama",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#d583c939"
+    },
+    {
+      "q": "Chiziqli funksiya grafigi (0; −4) va (6; 8) nuqtalardan o'tsa, uning formulasi qanday bo'ladi?",
+      "v": [
+        "y = 2x + 4",
+        "y = −2x − 4",
+        "y = 2x − 4",
+        "y = 0,5x − 4"
+      ],
+      "t": 2,
+      "izoh": "Birinchi nuqta ordinata o'qida yotgani uchun b = −4. Burchak koeffitsienti k = (8 − (−4)) : (6 − 0) = 12 : 6 = 2. Demak y = 2x − 4. Javob: y = 2x − 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-nuqta-orqali-tenglama",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#59a993d1"
+    },
+    {
+      "q": "A(−3; 11) nuqta y = −4x − 1 to'g'ri chiziqqa tegishli ekanini tekshiring va to'g'ri xulosani tanlang.",
+      "v": [
+        "Yo'q, chunki hisob 13 chiqadi",
+        "Yo'q, chunki hisob −13 chiqadi",
+        "Ha, chunki koordinatalar ishorasi qarama-qarshi",
+        "Ha, chunki −4·(−3) − 1 = 11"
+      ],
+      "t": 3,
+      "izoh": "Nuqta chiziqqa tegishli bo'lishi uchun uning koordinatalari tenglamani qanoatlantirishi kerak. x = −3 ni qo'yamiz: y = −4·(−3) − 1 = 12 − 1 = 11. Hisoblangan qiymat nuqtaning ordinatasi bilan bir xil. Javob: ha, chunki −4·(−3) − 1 = 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-grafikka-tegishli",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#a4564967"
+    },
+    {
+      "q": "Berilgan nuqtalardan qaysi biri y = 5x − 8 to'g'ri chiziqda yotadi: (1; −3), (2; 3), (0; 8), (−1; 3)?",
+      "v": [
+        "(1; −3)",
+        "(2; 3)",
+        "(0; 8)",
+        "(−1; 3)"
+      ],
+      "t": 0,
+      "izoh": "Har bir nuqtaning abssissasini formulaga qo'yamiz. x = 1 da y = 5 − 8 = −3, bu birinchi nuqtaga mos keladi. x = 2 da y = 2, x = 0 da y = −8, x = −1 da y = −13 chiqadi. Javob: (1; −3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-grafikka-tegishli",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#c6fe7675"
+    },
+    {
+      "q": "Suv hisoblagichining ko'rsatkichi y = 8x + 30 formula bo'yicha o'sadi, bunda x — kunlar soni. Nazoratchi 12-kuni 126 m³ deb yozib olgan bo'lsa, bu qiymat modelga mos keladimi?",
+      "v": [
+        "Yo'q, model 96 m³ beradi",
+        "Ha, model aynan 126 m³ beradi",
+        "Yo'q, model 134 m³ beradi",
+        "Yo'q, model 456 m³ beradi"
+      ],
+      "t": 1,
+      "izoh": "Modelga x = 12 ni qo'yamiz: y = 8·12 + 30 = 96 + 30 = 126 m³. Hisoblangan qiymat yozib olingan ko'rsatkich bilan bir xil, demak nuqta grafikda yotadi. Javob: ha, model aynan 126 m³ beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-grafikka-tegishli",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#af5c579c"
+    },
+    {
+      "q": "m ning qanday qiymatida M(4; m) nuqta y = 2,5x − 6 to'g'ri chiziqda yotadi?",
+      "v": [
+        "10",
+        "−4",
+        "4",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "Nuqta chiziqda yotsa, uning koordinatalari formulani qanoatlantiradi. x = 4 ni qo'yamiz: m = 2,5·4 − 6. Avval ko'paytiramiz: 2,5·4 = 10, so'ng ayiramiz: 10 − 6 = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-grafikka-tegishli",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#e1a98857"
+    },
+    {
+      "q": "To'g'ri chiziq P(2; −1) va Q(7; 14) nuqtalardan o'tsa, uning burchak koeffitsienti nechaga teng?",
+      "v": [
+        "−3",
+        "1/3",
+        "2,6",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Burchak koeffitsienti k = (y₂ − y₁) : (x₂ − x₁) formula bilan topiladi. Bu yerda k = (14 − (−1)) : (7 − 2) = 15 : 5 = 3. Manfiy ordinatani ayirishda ikki minus qo'shishga aylanadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "k-ni-ikki-nuqtadan-topish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#d7d85857"
+    },
+    {
+      "q": "Zavodda 3-oyga kelib jami 44 ta, 8-oyga kelib esa jami 84 ta stanok o'rnatilgan edi. O'rnatish chiziqli borgan bo'lsa, har oyda o'rtacha nechta stanok qo'shilgan?",
+      "v": [
+        "5 ta",
+        "8 ta",
+        "10 ta",
+        "40 ta"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda burchak koeffitsienti oyiga qo'shilgan stanoklar sonini bildiradi. k = (84 − 44) : (8 − 3) = 40 : 5 = 8. Ya'ni har oyda o'rtacha 8 ta stanok o'rnatilgan. Javob: 8 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "k-ni-ikki-nuqtadan-topish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#dfd3aafc"
+    },
+    {
+      "q": "Funksiya grafigi C(−5; 12) va D(3; −4) nuqtalardan o'tadi, uning burchak koeffitsientini toping.",
+      "v": [
+        "−2",
+        "2",
+        "−1/2",
+        "−8"
+      ],
+      "t": 0,
+      "izoh": "k = (−4 − 12) : (3 − (−5)) = −16 : 8 = −2. Koeffitsient manfiy chiqdi, demak funksiya kamayuvchi. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "k-ni-ikki-nuqtadan-topish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#2e215b6e"
+    },
+    {
+      "q": "Jadvalda x = 4 bo'lganda y = 9, x = 10 bo'lganda esa y = 24 ekani ko'rsatilgan. Shu chiziqli bog'liqlikning burchak koeffitsientini hisoblang.",
+      "v": [
+        "15",
+        "6",
+        "2,5",
+        "0,4"
+      ],
+      "t": 2,
+      "izoh": "Argument o'zgarishi: 10 − 4 = 6. Funksiya o'zgarishi: 24 − 9 = 15. Burchak koeffitsienti bu ikkisining nisbati: k = 15 : 6 = 2,5. Javob: 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "k-ni-ikki-nuqtadan-topish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#8150d999"
+    },
+    {
+      "q": "Quyidagilardan qaysi to'g'ri chiziq y = −3x + 5 ga parallel: y = 3x + 5, y = −3x − 8, y = −x/3 + 5, y = 5x − 3?",
+      "v": [
+        "y = 3x + 5",
+        "y = −3x − 8",
+        "y = −x/3 + 5",
+        "y = 5x − 3"
+      ],
+      "t": 1,
+      "izoh": "Ikki to'g'ri chiziq parallel bo'lishi uchun burchak koeffitsientlari teng, ozod hadlari esa har xil bo'lishi kerak. Berilgan chiziqda k = −3. Faqat y = −3x − 8 da ham k = −3, ozod hadi esa boshqacha. Javob: y = −3x − 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallellik-sharti",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#548a6617"
+    },
+    {
+      "q": "y = kx + 4 va y = (2k − 6)x − 1 to'g'ri chiziqlar parallel bo'lishi uchun k qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "3",
+        "−6",
+        "2",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Parallellik sharti — burchak koeffitsientlarining tengligi: k = 2k − 6. Bundan 2k − k = 6, ya'ni k = 6. Ozod hadlar 4 va −1 har xil, demak chiziqlar ustma-ust tushmaydi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallellik-sharti",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#895ce0a5"
+    },
+    {
+      "q": "Ikki firma oylik ish haqini chiziqli hisoblaydi: birinchisi y = 30 000x + 400 000, ikkinchisi y = 30 000x + 550 000; bunda x — oyda bajarilgan qo'shimcha smenalar soni, y — ish haqi (so'm). Ularning grafiklari haqida qaysi xulosa to'g'ri?",
+      "v": [
+        "Ular bir nuqtada kesishadi va keyin birinchisi ustun bo'ladi",
+        "Ular ustma-ust tushadi, chunki burchak koeffitsientlari teng",
+        "Ular parallel, ikkinchi firma doim 150 000 so'm ko'p to'laydi",
+        "Ular perpendikulyar, chunki ozod hadlari har xil"
+      ],
+      "t": 2,
+      "izoh": "Ikkala modelda ham burchak koeffitsienti 30 000 ga teng, ozod hadlar esa har xil. Bunday to'g'ri chiziqlar parallel bo'ladi va hech qachon kesishmaydi. Har qanday x da farq 550 000 − 400 000 = 150 000 so'mni tashkil qiladi. Javob: ular parallel, ikkinchi firma doim 150 000 so'm ko'p to'laydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallellik-sharti",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#274d687b"
+    },
+    {
+      "q": "M(2; −3) nuqtadan o'tuvchi va y = 4x + 9 to'g'ri chiziqqa parallel bo'lgan chiziqning tenglamasini toping.",
+      "v": [
+        "y = 4x + 5",
+        "y = 4x − 11",
+        "y = −4x + 5",
+        "y = 4x + 9"
+      ],
+      "t": 1,
+      "izoh": "Parallel chiziqlarda burchak koeffitsientlari teng, demak k = 4. Endi M nuqtani qo'yamiz: −3 = 4·2 + b, ya'ni −3 = 8 + b. Bundan b = −11 va tenglama y = 4x − 11 bo'ladi. Javob: y = 4x − 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-chiziq-tenglamasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#fb9f72e3"
+    },
+    {
+      "q": "Bir kompaniyaning taksi tarifi y = 2 500x + 7 000 formula bilan beriladi. Raqobatchi har kilometr uchun aynan shuncha haq oladi, lekin o'tirish haqi 4 000 so'm. Raqobatchi tarifi qanday?",
+      "v": [
+        "y = 2 500x + 4 000",
+        "y = 4 000x + 2 500",
+        "y = 2 500x + 11 000",
+        "y = 2 500x + 3 000"
+      ],
+      "t": 0,
+      "izoh": "Kilometr narxi bir xil bo'lgani uchun burchak koeffitsienti o'zgarmaydi: k = 2 500. O'tirish haqi esa ozod hadga mos keladi, u endi 4 000. Demak yangi model y = 2 500x + 4 000 va uning grafigi eskisiga parallel. Javob: y = 2 500x + 4 000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallel-chiziq-tenglamasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#f1064193"
+    },
+    {
+      "q": "y = −0,5x + 6 to'g'ri chiziqqa parallel va (−4; 1) nuqtadan o'tuvchi chiziqning ozod hadi nechaga teng?",
+      "v": [
+        "3",
+        "1",
+        "6",
+        "−1"
+      ],
+      "t": 3,
+      "izoh": "Parallellik sharti bo'yicha k = −0,5. Nuqtani formulaga qo'yamiz: 1 = −0,5·(−4) + b. Ko'paytmani hisoblaymiz: −0,5·(−4) = 2, demak 1 = 2 + b va b = −1. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-chiziq-tenglamasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#3de4f18e"
+    },
+    {
+      "q": "3x + y = 8 to'g'ri chiziqqa parallel bo'lgan va koordinata boshidan o'tuvchi to'g'ri chiziq tenglamasi qanday?",
+      "v": [
+        "y = 3x",
+        "y = x/3",
+        "y = −3x",
+        "y = −3x + 8"
+      ],
+      "t": 2,
+      "izoh": "Avval berilgan tenglamani y ga nisbatan yozamiz: y = −3x + 8, demak k = −3. Parallel chiziqda ham k = −3 bo'ladi. Koordinata boshidan o'tishi b = 0 ekanini bildiradi. Javob: y = −3x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-chiziq-tenglamasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#7ef787eb"
+    },
+    {
+      "q": "y = 2x − 5 to'g'ri chiziqqa perpendikulyar bo'lgan chiziqning burchak koeffitsienti nechaga teng?",
+      "v": [
+        "−0,5",
+        "0,5",
+        "−2",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Perpendikulyarlik sharti: k₁·k₂ = −1. Bu yerda k₁ = 2, demak 2·k₂ = −1 va k₂ = −1 : 2 = −0,5. Javob: −0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perpendikulyarlik-sharti",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#f16b61e4"
+    },
+    {
+      "q": "Quyidagi juftliklardan qaysi birida to'g'ri chiziqlar o'zaro perpendikulyar bo'ladi?",
+      "v": [
+        "y = 3x + 1 va y = −3x + 1",
+        "y = 0,25x va y = −4x + 7",
+        "y = 5x − 2 va y = 0,2x",
+        "y = x + 6 va y = x − 6"
+      ],
+      "t": 1,
+      "izoh": "Har bir juftlik uchun koeffitsientlar ko'paytmasini tekshiramiz. Birinchisida 3·(−3) = −9, ikkinchisida 0,25·(−4) = −1, uchinchisida 5·0,2 = 1, to'rtinchisida 1·1 = 1. Faqat ikkinchi juftlikda ko'paytma −1 ga teng. Javob: y = 0,25x va y = −4x + 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyarlik-sharti",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#6f576092"
+    },
+    {
+      "q": "y = (m − 1)x + 3 va y = 4x − 7 to'g'ri chiziqlar o'zaro perpendikulyar bo'lsa, m nechaga teng?",
+      "v": [
+        "−0,75",
+        "1,25",
+        "0,75",
+        "−3"
+      ],
+      "t": 2,
+      "izoh": "Perpendikulyarlik sharti (m − 1)·4 = −1 ko'rinishida yoziladi. Bundan m − 1 = −1 : 4 = −0,25. Demak m = 1 − 0,25 = 0,75. Javob: 0,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perpendikulyarlik-sharti",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#1b2e5cf6"
+    },
+    {
+      "q": "AB to'g'ri chiziq y = −1,5x + 2 formula bilan berilgan. Unga perpendikulyar bo'lgan CD chiziqning burchak koeffitsientini toping.",
+      "v": [
+        "−1,5",
+        "1,5",
+        "−2/3",
+        "2/3"
+      ],
+      "t": 3,
+      "izoh": "k₁ = −1,5 ni kasr ko'rinishida yozamiz: −3/2. Perpendikulyarlik shartidan k₂ = −1 : (−3/2) = 2/3. Ikki manfiy sonning bo'linmasi musbat bo'ladi. Javob: 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyarlik-sharti",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#c323548c"
+    },
+    {
+      "q": "K(6; 1) nuqtadan o'tuvchi va y = 3x − 4 to'g'ri chiziqqa perpendikulyar chiziq tenglamasini yozing.",
+      "v": [
+        "y = 3x − 17",
+        "y = −x/3 + 3",
+        "y = −x/3 − 1",
+        "y = x/3 − 1"
+      ],
+      "t": 1,
+      "izoh": "Perpendikulyar chiziqning koeffitsienti k = −1 : 3 = −1/3. K nuqtani qo'yamiz: 1 = −1/3·6 + b, ya'ni 1 = −2 + b. Bundan b = 3 va tenglama y = −x/3 + 3. Javob: y = −x/3 + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyar-chiziq-tenglamasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#3f9addc1"
+    },
+    {
+      "q": "Kvadratning bir tomoni y = −4x + 5 to'g'ri chiziqda yotadi. Unga qo'shni tomon qaysi tenglama bilan berilishi mumkin?",
+      "v": [
+        "y = 0,25x − 3",
+        "y = −4x − 3",
+        "y = 4x − 3",
+        "y = −0,25x − 3"
+      ],
+      "t": 0,
+      "izoh": "Kvadratning qo'shni tomonlari o'zaro perpendikulyar. Berilgan tomonda k₁ = −4, demak qo'shni tomonda k₂ = −1 : (−4) = 0,25. Faqat y = 0,25x − 3 shu shartni bajaradi, y = −4x − 3 esa parallel tomon bo'lardi. Javob: y = 0,25x − 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perpendikulyar-chiziq-tenglamasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#4a46dcca"
+    },
+    {
+      "q": "y = 0,4x + 1 chiziqqa perpendikulyar bo'lgan va ordinata o'qini (0; −6) nuqtada kesuvchi to'g'ri chiziq tenglamasi qanday?",
+      "v": [
+        "y = 0,4x − 6",
+        "y = 2,5x − 6",
+        "y = −2,5x + 6",
+        "y = −2,5x − 6"
+      ],
+      "t": 3,
+      "izoh": "k₁ = 0,4 = 2/5 bo'lgani uchun k₂ = −1 : 0,4 = −2,5. Ordinata o'qini (0; −6) da kesishi b = −6 ekanini bildiradi. Demak tenglama y = −2,5x − 6. Javob: y = −2,5x − 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyar-chiziq-tenglamasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#50a329d3"
+    },
+    {
+      "q": "Uchburchakning AB tomoni y = x + 2 to'g'ri chiziqda yotadi, unga tushirilgan balandlik esa C(4; 0) nuqtadan o'tadi. Balandlik qaysi tenglama bilan beriladi?",
+      "v": [
+        "y = x − 4",
+        "y = x + 4",
+        "y = −x + 4",
+        "y = −x − 4"
+      ],
+      "t": 2,
+      "izoh": "Balandlik AB tomonga perpendikulyar, AB da k₁ = 1, demak balandlikda k₂ = −1. C nuqtani qo'yamiz: 0 = −1·4 + b, bundan b = 4. Balandlik tenglamasi y = −x + 4. Javob: y = −x + 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perpendikulyar-chiziq-tenglamasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#b1796743"
+    },
+    {
+      "q": "y = 2x − 1 va y = −x + 8 to'g'ri chiziqlarning kesishish nuqtasini toping.",
+      "v": [
+        "(3; 5)",
+        "(5; 3)",
+        "(3; −5)",
+        "(9; 17)"
+      ],
+      "t": 0,
+      "izoh": "Kesishish nuqtasida ordinatalar teng: 2x − 1 = −x + 8. Noma'lumlarni bir tomonga yig'amiz: 3x = 9, demak x = 3. Endi y ni topamiz: y = 2·3 − 1 = 5. Javob: (3; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesishish-nuqtasini-topish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#67d56b52"
+    },
+    {
+      "q": "Birinchi bosmaxona 400 ta varaqni tayyorlab qo'ygan va soatiga 120 tadan chiqaradi, ikkinchisi esa noldan boshlab soatiga 200 tadan chiqaradi. Necha soatdan keyin ularning varaqlari soni tenglashadi?",
+      "v": [
+        "2 soat",
+        "5 soat",
+        "1,25 soat",
+        "3 soat 20 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Birinchi bosmaxona uchun y = 120x + 400, ikkinchisi uchun y = 200x. Tenglashtiramiz: 120x + 400 = 200x. Bundan 80x = 400 va x = 5. Javob: 5 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishish-nuqtasini-topish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#9915b478"
+    },
+    {
+      "q": "2x + y = 11 va x − y = 1 tenglamalar bilan berilgan to'g'ri chiziqlar qaysi nuqtada kesishadi?",
+      "v": [
+        "(3; 4)",
+        "(1; 9)",
+        "(4; 3)",
+        "(4; −3)"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi tenglamadan y = x − 1 ni hosil qilamiz va birinchisiga qo'yamiz: 2x + x − 1 = 11. Bundan 3x = 12 va x = 4. So'ng y = 4 − 1 = 3. Javob: (4; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishish-nuqtasini-topish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#e1c99f1c"
+    },
+    {
+      "q": "y = −x + 6 to'g'ri chiziq y = 0,5x to'g'ri chiziq bilan qaysi nuqtada kesishadi?",
+      "v": [
+        "(2; 4)",
+        "(12; 6)",
+        "(4; 10)",
+        "(4; 2)"
+      ],
+      "t": 3,
+      "izoh": "Tenglashtiramiz: −x + 6 = 0,5x. Hadlarni yig'amiz: 6 = 1,5x, demak x = 6 : 1,5 = 4. Ordinatasi y = 0,5·4 = 2. Javob: (4; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishish-nuqtasini-topish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#d6657824"
+    },
+    {
+      "q": "y = 2x − 6 va y = −4x + m to'g'ri chiziqlar abssissa o'qining bir nuqtasida kesishsa, m nechaga teng bo'ladi?",
+      "v": [
+        "12",
+        "−12",
+        "6",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Birinchi chiziq Ox o'qini kesgan joyda 2x − 6 = 0, ya'ni x = 3. Demak kesishish nuqtasi (3; 0). Bu nuqta ikkinchi chiziqda ham yotadi: 0 = −4·3 + m, bundan m = 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesishish-nuqtasini-topish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#1642e7e0"
+    },
+    {
+      "q": "Berilgan funksiyalardan qaysi biri kamayuvchi: y = 0,3x − 7, y = 7 − 0,3x, y = x, y = 4x + 1?",
+      "v": [
+        "y = 0,3x − 7",
+        "y = 7 − 0,3x",
+        "y = x",
+        "y = 4x + 1"
+      ],
+      "t": 1,
+      "izoh": "Chiziqli funksiya k < 0 bo'lganda kamayadi. Birinchi funksiyada k = 0,3, uchinchisida k = 1, to'rtinchisida k = 4 — hammasi musbat. Ikkinchi funksiyani y = −0,3x + 7 deb yozsak, k = −0,3 < 0. Javob: y = 7 − 0,3x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "osish-kamayish-k-ishorasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#1a046a7c"
+    },
+    {
+      "q": "Do'kondagi mahsulot zaxirasi y = 850 − 35x formula bilan o'zgaradi, bunda x — kunlar soni. Bu funksiya haqida qaysi fikr to'g'ri?",
+      "v": [
+        "O'suvchi, chunki 850 musbat",
+        "Kamayuvchi, chunki har kuni zaxira 35 tadan kamayadi",
+        "Kamayuvchi, chunki har kuni zaxira 850 tadan kamayadi",
+        "O'zgarmas, chunki grafik gorizontal to'g'ri chiziq"
+      ],
+      "t": 1,
+      "izoh": "Funksiyani y = −35x + 850 ko'rinishida yozamiz, demak k = −35. Burchak koeffitsienti manfiy bo'lgani uchun funksiya kamayuvchi, 850 esa boshlang'ich zaxira. Har kuni zaxira 35 birlikka kamayadi. Javob: kamayuvchi, chunki har kuni zaxira 35 tadan kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "osish-kamayish-k-ishorasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#bf117632"
+    },
+    {
+      "q": "y = (a − 5)x + 2 funksiya butun aniqlanish sohasida o'suvchi bo'lishi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a < 5",
+        "a > 0",
+        "a ≠ 5",
+        "a > 5"
+      ],
+      "t": 3,
+      "izoh": "Chiziqli funksiya o'suvchi bo'lishi uchun burchak koeffitsienti musbat bo'lishi shart: a − 5 > 0. Bundan a > 5 kelib chiqadi. a = 5 bo'lsa funksiya o'zgarmas bo'lib qoladi. Javob: a > 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "osish-kamayish-k-ishorasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#6c9f80de"
+    },
+    {
+      "q": "y = 2x + 5 to'g'ri chiziq koordinata tekisligining qaysi chorakidan o'tmaydi?",
+      "v": [
+        "I chorak",
+        "II chorak",
+        "III chorak",
+        "IV chorak"
+      ],
+      "t": 3,
+      "izoh": "Bu yerda k = 2 > 0 va b = 5 > 0. x musbat bo'lganda y = 2x + 5 har doim 5 dan katta, ya'ni musbat bo'ladi, demak chiziq to'rtinchi chorakka (x > 0, y < 0) tushmaydi. Qolgan uch chorakda esa nuqtalari bor, masalan (−1; 3) va (−4; −3). Javob: IV chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-choraklari",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#f2de96e9"
+    },
+    {
+      "q": "y = −3x − 6 to'g'ri chiziq koordinata tekisligining qaysi choraklaridan o'tadi?",
+      "v": [
+        "I, II, III choraklardan",
+        "II, III, IV choraklardan",
+        "I, III, IV choraklardan",
+        "I, II, IV choraklardan"
+      ],
+      "t": 1,
+      "izoh": "k = −3 < 0 va b = −6 < 0. x = 0 da y = −6, demak chiziq ordinata o'qini pastda kesadi. x = 1 da y = −9 (IV chorak), x = −1 da y = −3 (III chorak), x = −3 da y = 3 (II chorak). Birinchi chorakda esa nuqtasi yo'q. Javob: II, III, IV choraklardan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-choraklari",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#3a299d76"
+    },
+    {
+      "q": "y = 4x to'g'ri chiziqning grafigi qaysi choraklarda joylashgan?",
+      "v": [
+        "I va III choraklarda",
+        "II va IV choraklarda",
+        "I va II choraklarda",
+        "Faqat I chorakda"
+      ],
+      "t": 0,
+      "izoh": "b = 0 bo'lgani uchun grafik koordinata boshidan o'tadi. k = 4 musbat, demak x > 0 da y > 0 (I chorak), x < 0 da esa y < 0 (III chorak). Javob: I va III choraklarda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-choraklari",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#8719efd6"
+    },
+    {
+      "q": "y = kx + b to'g'ri chiziq I, II va IV choraklardan o'tib, III chorakka tushmasa, k va b ning ishoralari qanday bo'ladi?",
+      "v": [
+        "k > 0, b > 0",
+        "k > 0, b < 0",
+        "k < 0, b > 0",
+        "k < 0, b < 0"
+      ],
+      "t": 2,
+      "izoh": "III chorakka tushmaslik uchun x < 0 bo'lganda y musbat bo'lishi kerak, bu k < 0 bo'lishini talab qiladi. Ordinata o'qini yuqorida kesishi esa b > 0 ekanini bildiradi. Masalan y = −x + 4 aynan shu uch chorakdan o'tadi. Javob: k < 0, b > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-choraklari",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#6ee1eb05"
+    },
+    {
+      "q": "y = 3x − 12 to'g'ri chiziq koordinata o'qlari bilan hosil qilgan uchburchakning yuzasini toping.",
+      "v": [
+        "16",
+        "24",
+        "48",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "Ox o'qi bilan kesishish: 3x − 12 = 0, x = 4. Oy o'qi bilan kesishish: x = 0 da y = −12. Katetlar uzunligi 4 va 12 birlik. Yuza S = (4·12) : 2 = 24. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqlar-bilan-uchburchak-yuzasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#620cdfe2"
+    },
+    {
+      "q": "y = −0,5x + 5 to'g'ri chiziq va koordinata o'qlari bilan chegaralangan uchburchakning yuzasi nechaga teng?",
+      "v": [
+        "25",
+        "50",
+        "15",
+        "12,5"
+      ],
+      "t": 0,
+      "izoh": "Oy o'qidagi kesim: b = 5. Ox o'qidagi kesim: −0,5x + 5 = 0, bundan x = 10. Uchburchak to'g'ri burchakli, katetlari 10 va 5. Yuza S = (10·5) : 2 = 25. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqlar-bilan-uchburchak-yuzasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#b3d171da"
+    },
+    {
+      "q": "y = kx + 6 to'g'ri chiziq koordinata o'qlari bilan yuzasi 9 birlikka teng uchburchak hosil qilsa, k ning manfiy qiymati nechaga teng?",
+      "v": [
+        "−4",
+        "−0,5",
+        "−3",
+        "−2"
+      ],
+      "t": 3,
+      "izoh": "Oy o'qidagi kesim 6 ga teng. Ox o'qidagi kesim: kx + 6 = 0, bundan x = −6/k va uning uzunligi 6/|k|. Yuza: (6·6/|k|) : 2 = 18/|k| = 9, demak |k| = 2. k manfiy bo'lgani uchun k = −2. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oqlar-bilan-uchburchak-yuzasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#09661856"
+    },
+    {
+      "q": "Bog' burchagida ariq y = −x + 12 to'g'ri chiziq bo'ylab qazilgan, o'lchov birligi — metr. Ariq va ikki devor orasida qolgan uchburchak maydonning yuzasini toping.",
+      "v": [
+        "144 m²",
+        "24 m²",
+        "72 m²",
+        "36 m²"
+      ],
+      "t": 2,
+      "izoh": "Ariq Oy o'qini y = 12 da, Ox o'qini esa −x + 12 = 0, ya'ni x = 12 da kesadi. Devorlar o'qlar bo'ylab ketgani uchun uchburchak to'g'ri burchakli, katetlari 12 m va 12 m. Yuza S = (12·12) : 2 = 72. Javob: 72 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oqlar-bilan-uchburchak-yuzasi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#2f61559e"
+    },
+    {
+      "q": "y = 5x funksiya grafigini Oy o'qi bo'ylab 3 birlik pastga ko'chirsak, qanday funksiya hosil bo'ladi?",
+      "v": [
+        "y = 5x − 3",
+        "y = 5x + 3",
+        "y = 5(x − 3)",
+        "y = 2x"
+      ],
+      "t": 0,
+      "izoh": "Grafikni pastga ko'chirish har bir nuqtaning ordinatasini 3 ga kamaytiradi, ya'ni formuladan 3 ayiriladi. Burchak koeffitsienti o'zgarmaydi, chunki chiziqning qiyaligi saqlanadi. Natijada y = 5x − 3 hosil bo'ladi. Javob: y = 5x − 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafikni-parallel-kochirish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#848dbd6a"
+    },
+    {
+      "q": "y = −2x + 7 grafigini qaysi yo'nalishda va necha birlikka ko'chirsak, y = −2x − 4 grafigi hosil bo'ladi?",
+      "v": [
+        "3 birlik pastga",
+        "11 birlik pastga",
+        "11 birlik yuqoriga",
+        "4 birlik pastga"
+      ],
+      "t": 1,
+      "izoh": "Ikki chiziqning burchak koeffitsienti bir xil, demak ular parallel va faqat ozod hadi bilan farq qiladi. Ozod had 7 dan −4 ga o'tgan, farq esa −4 − 7 = −11. Manfiy farq pastga ko'chirishni bildiradi. Javob: 11 birlik pastga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikni-parallel-kochirish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#52af183b"
+    },
+    {
+      "q": "y = 0,5x − 2 funksiya grafigi 6 birlik yuqoriga ko'chirilsa, yangi grafik ordinata o'qini qaysi nuqtada kesadi?",
+      "v": [
+        "(0; 8)",
+        "(0; −8)",
+        "(4; 0)",
+        "(0; 4)"
+      ],
+      "t": 3,
+      "izoh": "Yuqoriga ko'chirishda ozod hadga 6 qo'shiladi: b = −2 + 6 = 4. Yangi funksiya y = 0,5x + 4 bo'ladi. Ordinata o'qi bilan kesishish nuqtasi esa (0; 4). Javob: (0; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikni-parallel-kochirish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#a57c0a3b"
+    },
+    {
+      "q": "Kommunal to'lov y = 1 200x + 15 000 formula bilan hisoblanardi. Yangi yildan qat'iy qism 5 000 so'mga oshdi, kub metr narxi esa o'zgarmadi. Yangi formula va grafikdagi o'zgarish qanday?",
+      "v": [
+        "y = 1 200x + 10 000, grafik 5 000 birlik pastga ko'chadi",
+        "y = 6 200x + 15 000, grafik tikroq bo'ladi",
+        "y = 1 200x + 20 000, grafik 5 000 birlik yuqoriga ko'chadi",
+        "y = 1 200x + 20 000, grafik tikroq bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Kub metr narxi o'zgarmagani uchun burchak koeffitsienti 1 200 bo'lib qoladi va grafikning qiyaligi saqlanadi. Qat'iy qism ozod had bo'lib, u 15 000 + 5 000 = 20 000 ga aylanadi. Ozod hadning ortishi grafikni yuqoriga parallel ko'chiradi. Javob: y = 1 200x + 20 000, grafik 5 000 birlik yuqoriga ko'chadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafikni-parallel-kochirish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#f0456a94"
+    },
+    {
+      "q": "Suzish havzasiga yillik abonement 150 000 so'm turadi, har bir tashrif uchun esa qo'shimcha 12 000 so'm olinadi. x ta tashrif uchun umumiy to'lov formulasini tanlang.",
+      "v": [
+        "y = 12 000x + 150 000",
+        "y = 150 000x + 12 000",
+        "y = 162 000x",
+        "y = 150 000 − 12 000x"
+      ],
+      "t": 0,
+      "izoh": "Tashriflar soniga bog'liq qism — o'zgaruvchi xarajat, u 12 000x ni beradi. Abonement bir marta to'lanadi va tashriflar soniga bog'liq emas, demak u ozod had. Shunday qilib y = 12 000x + 150 000. Javob: y = 12 000x + 150 000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-model-tuzish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#2f87c54d"
+    },
+    {
+      "q": "Avtobus soatiga 45 km tezlik bilan yurmoqda, kuzatuv boshlanganda u Toshkentdan 20 km uzoqlashgan edi. Uning shahardan uzoqligini vaqtga bog'lovchi formulani ko'rsating.",
+      "v": [
+        "y = 20x + 45",
+        "y = 65x",
+        "y = 45x + 20",
+        "y = 45x − 20"
+      ],
+      "t": 2,
+      "izoh": "Har soatda masofa 45 km ga ortadi, demak burchak koeffitsienti 45. Kuzatuv boshida, ya'ni x = 0 da masofa 20 km edi, bu esa ozod had. Demak y = 45x + 20. Javob: y = 45x + 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-model-tuzish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#906256f2"
+    },
+    {
+      "q": "Avtomobil bakida 60 litr benzin bor, u har 100 kilometrda 8 litr sarflaydi. Bakdagi benzin miqdorini yurilgan yuz kilometrlar soniga bog'lovchi formulani toping.",
+      "v": [
+        "y = 60 + 8x",
+        "y = 60 − 8x",
+        "y = 8x − 60",
+        "y = 60 − 800x"
+      ],
+      "t": 1,
+      "izoh": "Benzin kamayadi, shuning uchun burchak koeffitsienti manfiy: k = −8. Boshlang'ich miqdor 60 litr, u x = 0 dagi qiymat, ya'ni ozod had. Demak y = 60 − 8x. Javob: y = 60 − 8x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-model-tuzish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#77e4b3be"
+    },
+    {
+      "q": "Quvvat to'plagichda zaryad darajasi har o'n daqiqada 6 foiz punktga (birlikka) ortadi, quvvatlash boshlanganda esa zaryad darajasi 22 foiz edi. Zaryadni o'n daqiqalar soniga bog'lovchi formulani tanlang.",
+      "v": [
+        "y = 22x + 6",
+        "y = 6x − 22",
+        "y = 28x",
+        "y = 6x + 22"
+      ],
+      "t": 3,
+      "izoh": "Har o'n daqiqada zaryad darajasi 6 foiz punktga ortadi — qo'shiladigan miqdor o'zgarmas, demak k = 6. Boshlang'ich zaryad 22 foiz — bu x = 0 dagi qiymat, ya'ni b = 22. Model y = 6x + 22 bo'ladi. Javob: y = 6x + 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-model-tuzish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#b4ea408f"
+    },
+    {
+      "q": "Sardor 480 000 so'mlik telefonni bo'lib to'lashga oldi va har oy 40 000 so'mdan to'laydi. Qarz qoldig'i formulasi va uning burchak koeffitsienti qanday bo'ladi?",
+      "v": [
+        "y = 480 000 − 40 000x, k = −40 000",
+        "y = 480 000 + 40 000x, k = 40 000",
+        "y = 40 000x − 480 000, k = 40 000",
+        "y = 480 000 − 40 000x, k = 480 000"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich qarz 480 000 so'm — bu ozod had. Har oy qarz 40 000 so'mga kamayadi, demak burchak koeffitsienti manfiy: k = −40 000. Model y = 480 000 − 40 000x ko'rinishida bo'ladi. Javob: y = 480 000 − 40 000x, k = −40 000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-model-tuzish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#b740daa0"
+    },
+    {
+      "q": "Jadvalda x ning 1, 2, 3, 4 qiymatlariga mos ravishda y ning 7, 11, 15, 19 qiymatlari berilgan. Shu bog'liqlikni ifodalovchi formulani toping.",
+      "v": [
+        "y = 4x + 7",
+        "y = 7x + 4",
+        "y = 4x + 3",
+        "y = 3x + 4"
+      ],
+      "t": 2,
+      "izoh": "x bir birlikka ortganda y har safar 4 ga ortadi, demak k = 4. Endi b ni topamiz: x = 1 da y = 7, ya'ni 7 = 4·1 + b va b = 3. Formula y = 4x + 3. Tekshirish: x = 4 da y = 16 + 3 = 19. Javob: y = 4x + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadvaldan-chiziqli-funksiya",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#5b662ac6"
+    },
+    {
+      "q": "x ning 1, 2, 3 qiymatlari uchun quyidagi y qatorlaridan qaysi biri chiziqli funksiyani bermaydi?",
+      "v": [
+        "5, 8, 11",
+        "2, 4, 8",
+        "9, 6, 3",
+        "−1, 3, 7"
+      ],
+      "t": 1,
+      "izoh": "Chiziqli funksiyada argument teng qadam bilan ortganda funksiya ham teng miqdorda o'zgaradi. Birinchi qatorda ayirma 3, uchinchisida −3, to'rtinchisida 4 — barchasi o'zgarmas. Ikkinchi qatorda esa ayirmalar 2 va 4, ya'ni bir xil emas. Javob: 2, 4, 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadvaldan-chiziqli-funksiya",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#d2442482"
+    },
+    {
+      "q": "Taksi jadvalida 3 km uchun 22 000 so'm, 5 km uchun 30 000 so'm, 8 km uchun esa 42 000 so'm ko'rsatilgan. Bog'liqlik chiziqli bo'lsa, 12 km uchun to'lov qancha bo'ladi?",
+      "v": [
+        "48 000 so'm",
+        "54 000 so'm",
+        "63 000 so'm",
+        "58 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Bir kilometr narxi: k = (30 000 − 22 000) : (5 − 3) = 4 000 so'm. O'tirish haqi: 22 000 = 4 000·3 + b, demak b = 10 000. Model y = 4 000x + 10 000 va u 8 km uchun ham to'g'ri: 32 000 + 10 000 = 42 000. Endi x = 12: 48 000 + 10 000 = 58 000. Javob: 58 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadvaldan-chiziqli-funksiya",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#6e5265a4"
+    },
+    {
+      "q": "Birinchi provayder oyiga 30 000 so'm abonent to'lovi va har gigabayt uchun 400 so'm oladi, ikkinchisi esa 54 000 so'm abonent to'lovi va gigabayti uchun 100 so'm oladi. Necha gigabaytda to'lovlar tenglashadi?",
+      "v": [
+        "80 GB",
+        "60 GB",
+        "48 GB",
+        "240 GB"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tarif: y = 400x + 30 000, ikkinchisi: y = 100x + 54 000. Tenglashtiramiz: 400x + 30 000 = 100x + 54 000. Bundan 300x = 24 000 va x = 80. Javob: 80 GB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-tarifni-tenglashtirish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#107a2121"
+    },
+    {
+      "q": "Birinchi sport zalida har bir mashg'ulot 25 000 so'm turadi, ikkinchisida esa 180 000 so'mlik abonement va har mashg'ulot uchun 10 000 so'm to'lanadi. Ikkinchi zal qachondan boshlab arzonga tushadi?",
+      "v": [
+        "7 tadan ko'p mashg'ulotda",
+        "12 tadan ko'p mashg'ulotda",
+        "12 tadan kam mashg'ulotda",
+        "18 tadan ko'p mashg'ulotda"
+      ],
+      "t": 1,
+      "izoh": "Birinchi zal: y = 25 000x, ikkinchisi: y = 10 000x + 180 000. Tenglik nuqtasi: 25 000x = 10 000x + 180 000, ya'ni 15 000x = 180 000 va x = 12. x > 12 bo'lganda birinchi zalning to'lovi tezroq o'sadi, demak ikkinchisi arzonroq bo'ladi. Javob: 12 tadan ko'p mashg'ulotda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tarifni-tenglashtirish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#8e7ee8e5"
+    },
+    {
+      "q": "Birinchi idishda 120 litr suv bor va unga daqiqasiga 80 litrdan quyiladi, ikkinchisida 360 litr bor va unga daqiqasiga 20 litrdan quyiladi. Necha daqiqadan keyin idishlardagi suv miqdori tenglashadi?",
+      "v": [
+        "3 daqiqa",
+        "12 daqiqa",
+        "4 daqiqa",
+        "2,4 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Birinchi idish uchun y = 80x + 120, ikkinchisi uchun y = 20x + 360. Tenglashtiramiz: 80x + 120 = 20x + 360. Bundan 60x = 240 va x = 4. Tekshirish: 80·4 + 120 = 440 va 20·4 + 360 = 440. Javob: 4 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-tarifni-tenglashtirish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#4b9106c1"
+    },
+    {
+      "q": "Ikki taksi kompaniyasining to'lov grafiklari (6; 54 000) nuqtada kesishdi, bunda x — kilometr, y — so'm. Bu kesishish nuqtasi nimani bildiradi?",
+      "v": [
+        "Har ikkala kompaniyaning o'tirish haqi 54 000 so'm",
+        "6 km dan keyin ikkinchi kompaniya doim arzon bo'ladi",
+        "Har bir kilometr narxi 6 000 so'mga teng",
+        "6 km yo'l uchun ikkala kompaniya ham 54 000 so'm oladi"
+      ],
+      "t": 3,
+      "izoh": "Ikki grafikning kesishish nuqtasi ikkala funksiya bir xil qiymat qabul qiladigan argumentni ko'rsatadi. Bu yerda x = 6 da ikkala to'lov ham 54 000 so'mga teng. O'tirish haqi esa grafiklarning ordinata o'qi bilan kesishish nuqtasida ko'rinadi. Javob: 6 km yo'l uchun ikkala kompaniya ham 54 000 so'm oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-tarifni-tenglashtirish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#755c2392"
+    },
+    {
+      "q": "Birinchi ishchi 40 ta detal tayyorlab qo'ygan va soatiga 12 tadan qo'shadi, ikkinchisi noldan boshlab soatiga 20 tadan tayyorlaydi. Ikkinchisi birinchisidan 24 ta ko'p detal tayyorlashi uchun necha soat kerak?",
+      "v": [
+        "8 soat",
+        "3 soat",
+        "2 soat",
+        "5 soat"
+      ],
+      "t": 0,
+      "izoh": "Birinchi ishchi: y = 12x + 40, ikkinchisi: y = 20x. Farq shartga ko'ra 24 ta: 20x − (12x + 40) = 24. Qavsni ochamiz: 8x − 40 = 24, demak 8x = 64 va x = 8. Javob: 8 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-tarifni-tenglashtirish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#2175f728"
+    },
+    {
+      "q": "y = (2a + 1)x − 5 to'g'ri chiziq (3; 4) nuqtadan o'tsa, a parametr nechaga teng bo'ladi?",
+      "v": [
+        "3",
+        "1",
+        "−1",
+        "0,5"
+      ],
+      "t": 1,
+      "izoh": "Nuqta koordinatalarini qo'yamiz: 4 = (2a + 1)·3 − 5. Bundan (2a + 1)·3 = 9, ya'ni 2a + 1 = 3. Demak 2a = 2 va a = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrni-shartdan-topish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#0a2ba0b9"
+    },
+    {
+      "q": "y = 7x + c to'g'ri chiziq abssissa o'qini x = −2 nuqtada kesib o'tsa, c nechaga teng?",
+      "v": [
+        "−14",
+        "2",
+        "14",
+        "−2"
+      ],
+      "t": 2,
+      "izoh": "Abssissa o'qidagi nuqtaning ordinatasi nol, demak (−2; 0) chiziqda yotadi. Formulaga qo'yamiz: 0 = 7·(−2) + c, ya'ni 0 = −14 + c. Bundan c = 14. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrni-shartdan-topish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#fe6dcbb4"
+    },
+    {
+      "q": "y = (n − 2)x + n to'g'ri chiziq koordinata boshidan o'tsa, uning burchak koeffitsienti nechaga teng bo'ladi?",
+      "v": [
+        "0",
+        "2",
+        "−1",
+        "−2"
+      ],
+      "t": 3,
+      "izoh": "Koordinata boshi (0; 0) chiziqda yotadi, demak 0 = (n − 2)·0 + n va n = 0. Endi burchak koeffitsientini hisoblaymiz: k = n − 2 = 0 − 2 = −2. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrni-shartdan-topish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#e64de6ad"
+    },
+    {
+      "q": "P(−2; 0) nuqtadan o'tuvchi y = mx + 8 to'g'ri chiziqda m parametrning qiymatini toping.",
+      "v": [
+        "4",
+        "−4",
+        "8",
+        "−16"
+      ],
+      "t": 0,
+      "izoh": "Nuqta koordinatalarini formulaga qo'yamiz: 0 = m·(−2) + 8. Bundan 2m = 8 va m = 4. Tekshirish: y = 4·(−2) + 8 = 0. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrni-shartdan-topish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#41c6ffde"
+    },
+    {
+      "q": "A(1; 2), B(3; 8) va C(5; 14) nuqtalar bitta to'g'ri chiziqda yotadimi?",
+      "v": [
+        "Yo'q, chunki C nuqta chiziqdan pastda qoladi",
+        "Ha, chunki har bir juftlik uchun k = 3",
+        "Ha, chunki abssissalar teng qadam bilan ortadi",
+        "Yo'q, chunki uchta nuqta bir chiziqda yota olmaydi"
+      ],
+      "t": 1,
+      "izoh": "AB kesma uchun k = (8 − 2) : (3 − 1) = 3. BC kesma uchun k = (14 − 8) : (5 − 3) = 3. Burchak koeffitsientlari teng va nuqtalar umumiy B nuqtaga ega, demak uchalasi bitta to'g'ri chiziqda yotadi. Javob: ha, chunki har bir juftlik uchun k = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-nuqta-bir-chiziqda",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#dd19934d"
+    },
+    {
+      "q": "A(−1; 4), B(2; −2) va C(4; p) nuqtalar bitta to'g'ri chiziqda yotsa, p nechaga teng?",
+      "v": [
+        "−4",
+        "6",
+        "−6",
+        "−8"
+      ],
+      "t": 2,
+      "izoh": "AB uchun k = (−2 − 4) : (2 − (−1)) = −6 : 3 = −2. Chiziq tenglamasi: −2 = −2·2 + b, demak b = 2 va y = −2x + 2. Endi x = 4 ni qo'yamiz: p = −8 + 2 = −6. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-nuqta-bir-chiziqda",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#7a3e4ad1"
+    },
+    {
+      "q": "Daraxt balandligi 1-yili 150 sm, 3-yili 210 sm, 5-yili esa 280 sm bo'lgan. Bu o'sishni chiziqli funksiya bilan ifodalash mumkinmi?",
+      "v": [
+        "Ha, chunki balandlik doim ortib borgan",
+        "Ha, chunki yillar teng oraliqda olingan",
+        "Yo'q, chunki balandlik butun songa bo'linmaydi",
+        "Yo'q, chunki o'sish tezligi 30 sm dan 35 sm ga o'zgargan"
+      ],
+      "t": 3,
+      "izoh": "Birinchi oraliqda o'sish: (210 − 150) : 2 = 30 sm har yili. Ikkinchi oraliqda: (280 − 210) : 2 = 35 sm har yili. Chiziqli funksiyada bu tezlik o'zgarmas bo'lishi kerak edi, bu yerda esa u ortgan. Javob: yo'q, chunki o'sish tezligi 30 sm dan 35 sm ga o'zgargan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-nuqta-bir-chiziqda",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#895b214b"
+    },
+    {
+      "q": "y = 6x − 5 va y = 6x + 1 to'g'ri chiziqlar nechta umumiy nuqtaga ega?",
+      "v": [
+        "Umumiy nuqtasi yo'q",
+        "Bitta umumiy nuqta",
+        "Ikkita umumiy nuqta",
+        "Cheksiz ko'p umumiy nuqta"
+      ],
+      "t": 0,
+      "izoh": "Burchak koeffitsientlari teng: k = 6, ozod hadlar esa har xil. Bunday chiziqlar parallel bo'ladi. Tenglashtirsak, 6x − 5 = 6x + 1 dan −5 = 1 kelib chiqadi, bu esa yolg'on tenglik. Javob: umumiy nuqtasi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-chiziqning-ozaro-joylashuvi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#1a3a0308"
+    },
+    {
+      "q": "2x − y = 3 va 4x − 2y = 6 tenglamalar bilan berilgan to'g'ri chiziqlar qanday joylashgan?",
+      "v": [
+        "Bir nuqtada kesishadi",
+        "Ustma-ust tushadi",
+        "Parallel, umumiy nuqtasi yo'q",
+        "O'zaro perpendikulyar"
+      ],
+      "t": 1,
+      "izoh": "Birinchisidan y = 2x − 3 hosil bo'ladi. Ikkinchisini 2 ga bo'lsak, 2x − y = 3, ya'ni yana y = 2x − 3 chiqadi. Ikkala tenglama bitta chiziqni beradi, demak ular ustma-ust tushadi. Javob: ustma-ust tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-chiziqning-ozaro-joylashuvi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#02566527"
+    },
+    {
+      "q": "y = ax + 3 va y = 2x + a to'g'ri chiziqlar ordinata o'qining bitta nuqtasida kesishsa, a nechaga teng?",
+      "v": [
+        "2",
+        "−3",
+        "3",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "Ordinata o'qidagi kesishish nuqtasining abssissasi nol. Birinchi chiziq bu o'qni y = 3 da, ikkinchisi esa y = a da kesadi. Nuqta umumiy bo'lishi uchun a = 3 bo'lishi kerak. Bunda chiziqlar y = 3x + 3 va y = 2x + 3 bo'lib, (0; 3) nuqtada kesishadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-chiziqning-ozaro-joylashuvi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#da032308"
+    },
+    {
+      "q": "Ikki xodimning oylik daromadi grafiklari bir nuqtada kesishdi va shu nuqtadan keyin ikkinchisining daromadi tezroq o'sib bordi. Qaysi xulosa to'g'ri?",
+      "v": [
+        "Ikkalasining burchak koeffitsienti teng",
+        "Ikkinchisining ozod hadi kattaroq",
+        "Ikkinchisining grafigi birinchisiga perpendikulyar",
+        "Ikkinchisining burchak koeffitsienti kattaroq"
+      ],
+      "t": 3,
+      "izoh": "Grafiklar kesishgani ularning burchak koeffitsientlari har xil ekanini bildiradi, teng bo'lsa parallel bo'lardi. Kesishishdan keyin tezroq ko'tarilgan chiziqning qiyaligi kattaroq. Demak ikkinchi xodim uchun k kattaroq, ozod hadi esa aksincha kichikroq bo'lishi mumkin. Javob: ikkinchisining burchak koeffitsienti kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-chiziqning-ozaro-joylashuvi",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#f52f7f13"
+    },
+    {
+      "q": "Berilgan funksiyalardan qaysi biri chiziqli: y = 8 − 0,2x, y = 3/x, y = x² − 1, y = √x?",
+      "v": [
+        "y = 8 − 0,2x",
+        "y = 3/x",
+        "y = x² − 1",
+        "y = √x"
+      ],
+      "t": 0,
+      "izoh": "Chiziqli funksiya y = kx + b ko'rinishida bo'ladi, ya'ni x faqat birinchi darajada va maxrajda emas. y = 3/x teskari proporsional, y = x² − 1 kvadratik, y = √x esa ildizli funksiya. Faqat y = 8 − 0,2x ni y = −0,2x + 8 deb yozish mumkin. Javob: y = 8 − 0,2x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-funksiyani-tanib-olish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#9ed2d94b"
+    },
+    {
+      "q": "y = (x − 4)/5 + 2x ifoda bilan berilgan funksiya chiziqlimi va uning burchak koeffitsienti nechaga teng?",
+      "v": [
+        "Ha, k = 0,2",
+        "Ha, k = 2,2",
+        "Yo'q, u kasrli funksiya",
+        "Ha, k = 2"
+      ],
+      "t": 1,
+      "izoh": "Kasrni hadlab yozamiz: (x − 4)/5 = 0,2x − 0,8. Endi qo'shamiz: 0,2x − 0,8 + 2x = 2,2x − 0,8. Bu y = kx + b ko'rinishidagi chiziqli funksiya va k = 2,2. Javob: ha, k = 2,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-funksiyani-tanib-olish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#a3aae5c1"
+    },
+    {
+      "q": "y = (m² − 4)x + 7 funksiya chiziqli bo'lib, o'zgarmas funksiyaga aylanib qolmasligi uchun m qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "m = 2 yoki m = −2",
+        "m > 2",
+        "m ≠ 2 va m ≠ −2",
+        "m ixtiyoriy haqiqiy son"
+      ],
+      "t": 2,
+      "izoh": "Funksiya o'zgarmas bo'lib qolmasligi uchun burchak koeffitsienti noldan farqli bo'lishi kerak: m² − 4 ≠ 0. Bundan m² ≠ 4, ya'ni m ≠ 2 va m ≠ −2. Bu qiymatlarda grafik gorizontal to'g'ri chiziqqa aylanib qolardi. Javob: m ≠ 2 va m ≠ −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-funksiyani-tanib-olish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#89c2caa4"
+    },
+    {
+      "q": "Bir mahsulot narxi har oy oldingi oyga nisbatan 3 foizga oshib bormoqda. Narxning oylar soniga bog'liqligi chiziqli funksiya bo'ladimi?",
+      "v": [
+        "Ha, chunki o'sish har oy bir xil foizda bo'ladi",
+        "Ha, chunki narx grafigi to'g'ri chiziq bo'ladi",
+        "Yo'q, chunki narx hech qachon kamaymaydi",
+        "Yo'q, chunki har oygi o'sish miqdori oldingi narxga qarab o'zgaradi"
+      ],
+      "t": 3,
+      "izoh": "Chiziqli funksiyada har qadamda qo'shiladigan miqdor o'zgarmas bo'lishi kerak. Bu yerda esa foiz oldingi narxdan olinadi, shuning uchun so'mdagi o'sish har oy kattalashib boradi. Bunday bog'liqlik ko'rsatkichli funksiya bilan ifodalanadi. Javob: yo'q, chunki har oygi o'sish miqdori oldingi narxga qarab o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-funksiyani-tanib-olish",
+      "id": "matematika_funk_m03-chiziqli-funksiya-va-uning-grafigi#256df230"
+    }
+  ]
+}

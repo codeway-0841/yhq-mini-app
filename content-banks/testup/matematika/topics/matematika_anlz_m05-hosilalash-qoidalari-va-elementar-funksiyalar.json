@@ -1,0 +1,1609 @@
+{
+  "nom": "Hosilalash qoidalari va elementar funksiyalar hosilalari",
+  "bolim": "Matematik analiz asoslari",
+  "blok": "anlz",
+  "rasmiyBolim": 5,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "f(x) = x⁷ funksiyaning hosilasini daraja qoidasi yordamida toping.",
+      "v": [
+        "7x⁷",
+        "x⁶",
+        "7x⁶",
+        "6x⁶"
+      ],
+      "t": 2,
+      "izoh": "Daraja qoidasi: (xⁿ)' = n·xⁿ⁻¹. Bu yerda n = 7, demak koeffitsient 7 bo'ladi, daraja esa bittaga kamayib 6 ga tushadi. Shunday qilib f'(x) = 7x⁶. Javob: 7x⁶.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-hosila-jadval",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#3ae461d6"
+    },
+    {
+      "q": "f(x) = 4x⁵ − 9x³ ko'phadning hosilasini toping va to'g'ri ifodani belgilang.",
+      "v": [
+        "20x⁴ − 27x³",
+        "20x⁴ − 27x²",
+        "4x⁴ − 9x²",
+        "20x⁵ − 27x³"
+      ],
+      "t": 1,
+      "izoh": "Har bir hadni alohida hosilalaymiz. (4x⁵)' = 4·5·x⁴ = 20x⁴, keyin (9x³)' = 9·3·x² = 27x². Ayirmaning hosilasi hosilalar ayirmasiga teng. Demak f'(x) = 20x⁴ − 27x². Javob: 20x⁴ − 27x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-hosila-jadval",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#a5fd2bf2"
+    },
+    {
+      "q": "f(x) = 6/x² funksiyani darajali ko'rinishga keltirib hosilalang.",
+      "v": [
+        "12/x³",
+        "−6/x³",
+        "−12/x⁴",
+        "−12/x³"
+      ],
+      "t": 3,
+      "izoh": "Avval kasrni darajaga aylantiramiz: 6/x² = 6x⁻². Endi daraja qoidasini qo'llaymiz: f'(x) = 6·(−2)·x⁻³ = −12x⁻³. Manfiy darajani yana kasr ko'rinishida yozamiz: −12/x³. Javob: −12/x³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-hosila-jadval",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#bb1cb1d4"
+    },
+    {
+      "q": "f(x) = x^(5/3) funksiyaning hosilasi quyidagi ifodalardan qaysi biriga teng?",
+      "v": [
+        "(5/3)x^(8/3)",
+        "(5/3)x^(2/3)",
+        "(3/5)x^(2/3)",
+        "(2/3)x^(2/3)"
+      ],
+      "t": 1,
+      "izoh": "Kasr daraja uchun ham (xⁿ)' = n·xⁿ⁻¹ qoidasi ishlaydi. Koeffitsient sifatida 5/3 chiqadi, daraja esa 5/3 − 1 = 2/3 bo'ladi. Demak f'(x) = (5/3)x^(2/3). Javob: (5/3)x^(2/3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-hosila-jadval",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#d28889e1"
+    },
+    {
+      "q": "f(x) = 5x⁴ + 17 funksiyaning hosilasini toping.",
+      "v": [
+        "20x³ + 17",
+        "5x³",
+        "20x³ + 1",
+        "20x³"
+      ],
+      "t": 3,
+      "izoh": "Birinchi had uchun (5x⁴)' = 5·4·x³ = 20x³ bo'ladi. O'zgarmas sonning hosilasi doimo nolga teng, ya'ni (17)' = 0. Shuning uchun 17 hosilada umuman qatnashmaydi. Javob: 20x³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "daraja-hosila-jadval",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#f3f3b542"
+    },
+    {
+      "q": "f(x) = √x funksiyaning x > 0 sohadagi hosilasini ko'rsatuvchi ifodani tanlang.",
+      "v": [
+        "1/(2√x)",
+        "1/√x",
+        "2√x",
+        "√x/2"
+      ],
+      "t": 0,
+      "izoh": "Ildizni daraja shaklida yozamiz: √x = x^(1/2). Daraja qoidasiga ko'ra hosila (1/2)·x^(−1/2) bo'ladi. Manfiy darajani kasrga o'tkazsak, natija 1/(2√x) ko'rinishini oladi. Javob: 1/(2√x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-hosila",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#d3db6839"
+    },
+    {
+      "q": "f(x) = 6√x bo'lsa, uning x = 4 nuqtadagi hosilasi qanday qiymatga ega?",
+      "v": [
+        "3",
+        "1,5",
+        "12",
+        "0,75"
+      ],
+      "t": 1,
+      "izoh": "Avval umumiy hosilani topamiz: f'(x) = 6·1/(2√x) = 3/√x. Endi x = 4 ni qo'yamiz: √4 = 2, demak f'(4) = 3/2. Bu 1,5 ga teng. Javob: 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-hosila",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#9705f68c"
+    },
+    {
+      "q": "y = ∛x funksiyaning hosilasi qaysi ifoda bilan to'g'ri ifodalanadi?",
+      "v": [
+        "1/(3·∛(x²))",
+        "1/(3·∛x)",
+        "3·∛(x²)",
+        "1/(2·√x)"
+      ],
+      "t": 0,
+      "izoh": "Kub ildizni daraja ko'rinishida yozamiz: ∛x = x^(1/3). Hosila (1/3)·x^(−2/3) ga teng bo'ladi. Manfiy darajani maxrajga o'tkazsak 1/(3·∛(x²)) hosil bo'ladi. Javob: 1/(3·∛(x²)).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-hosila",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#09fc10da"
+    },
+    {
+      "q": "f(x) = x√x ko'rinishdagi funksiyani darajaga keltirib hosilalang. Natija qanday bo'ladi?",
+      "v": [
+        "√x",
+        "1,5√x",
+        "(2/3)√x",
+        "1,5/√x"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytmani bitta darajaga yig'amiz: x·x^(1/2) = x^(3/2). Daraja qoidasi bo'yicha hosila (3/2)·x^(1/2) ga teng. Bu esa 1,5√x demakdir. Javob: 1,5√x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-hosila",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#4a8f14f9"
+    },
+    {
+      "q": "f(x) = x³ − 4x² + 7x − 2 funksiyaning x = 2 nuqtadagi hosilasi qiymatini toping.",
+      "v": [
+        "4",
+        "11",
+        "3",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "Hosila: f'(x) = 3x² − 8x + 7. Endi x = 2 ni qo'yamiz: 3·4 = 12, so'ng 8·2 = 16. Demak f'(2) = 12 − 16 + 7 = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopxad-hosila-nuqtada",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#a08a297f"
+    },
+    {
+      "q": "Chilonzordagi do'konda t kun ichida sotilgan telefonlar soni N(t) = t³ − 6t² + 15t formula bilan beriladi. Sotuv tezligi N'(t) bo'lsa, to'rtinchi kundagi tezlikni toping.",
+      "v": [
+        "28",
+        "51",
+        "0",
+        "15"
+      ],
+      "t": 3,
+      "izoh": "Avval tezlik funksiyasini yozamiz: N'(t) = 3t² − 12t + 15. So'ng t = 4 ni qo'yamiz: 3·16 = 48 va 12·4 = 48. Demak N'(4) = 48 − 48 + 15 = 15 telefon. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopxad-hosila-nuqtada",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#fb5540bc"
+    },
+    {
+      "q": "f(x) = 2x⁴ − 5x³ + x funksiya uchun f'(1) qiymatini hisoblang.",
+      "v": [
+        "−2",
+        "−7",
+        "−6",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Hosilani topamiz: f'(x) = 8x³ − 15x² + 1. Birlik nuqtada barcha darajalar bittaga aylanadi. Demak f'(1) = 8 − 15 + 1 = −6. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopxad-hosila-nuqtada",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#f7b45dfd"
+    },
+    {
+      "q": "f(x) = x⁵ − 20x funksiyaning x = −1 nuqtadagi hosila qiymatini aniqlang.",
+      "v": [
+        "−25",
+        "15",
+        "−15",
+        "19"
+      ],
+      "t": 2,
+      "izoh": "Hosila: f'(x) = 5x⁴ − 20. Manfiy sonning juft darajasi musbat bo'ladi, ya'ni (−1)⁴ = 1. Demak f'(−1) = 5·1 − 20 = −15. Javob: −15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopxad-hosila-nuqtada",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#32f6074a"
+    },
+    {
+      "q": "Navoiydagi zavodda x soatda tayyorlangan detallar soni P(x) = 4x³ − 3x² + 20x ga teng. Uchinchi soatdagi ishlab chiqarish tezligi P'(3) qanchaga teng?",
+      "v": [
+        "141 detal/soat",
+        "90 detal/soat",
+        "110 detal/soat",
+        "122 detal/soat"
+      ],
+      "t": 2,
+      "izoh": "Tezlik funksiyasi P'(x) = 12x² − 6x + 20 ko'rinishida bo'ladi. x = 3 da 12·9 = 108 va 6·3 = 18 chiqadi. Demak P'(3) = 108 − 18 + 20 = 110 detal/soat. Javob: 110 detal/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopxad-hosila-nuqtada",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#37d06dd1"
+    },
+    {
+      "q": "f(x) = 3sin x − 2cos x funksiyaning hosilasini hosilalar jadvali yordamida toping.",
+      "v": [
+        "3cos x − 2sin x",
+        "−3cos x + 2sin x",
+        "3sin x + 2cos x",
+        "3cos x + 2sin x"
+      ],
+      "t": 3,
+      "izoh": "Jadvaldan (sin x)' = cos x va (cos x)' = −sin x. Ikkinchi hadda minus ishorasi bor, u kosinus hosilasidagi minus bilan urishib plusga aylanadi. Demak f'(x) = 3cos x + 2sin x. Javob: 3cos x + 2sin x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-hosila-jadval",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#d610c47d"
+    },
+    {
+      "q": "f(x) = tg x funksiyaning hosilasi qaysi ifoda bilan beriladi?",
+      "v": [
+        "1/sin²x",
+        "1/cos²x",
+        "−1/sin²x",
+        "ctg x"
+      ],
+      "t": 1,
+      "izoh": "Hosilalar jadvalida tangens uchun (tg x)' = 1/cos²x formulasi keltirilgan. Kotangens uchun esa (ctg x)' = −1/sin²x bo'ladi, bu ikkisini chalkashtirmaslik kerak. Javob: 1/cos²x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-hosila-jadval",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#7d1470b7"
+    },
+    {
+      "q": "f(x) = 5x + 4cos x funksiya berilgan. f'(π/2) qiymatini hisoblang.",
+      "v": [
+        "1",
+        "9",
+        "5",
+        "−4"
+      ],
+      "t": 0,
+      "izoh": "Hosila: f'(x) = 5 − 4sin x, chunki kosinus hosilasi minus sinusga teng. x = π/2 da sin(π/2) = 1 bo'ladi. Demak f'(π/2) = 5 − 4 = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-hosila-jadval",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#e8d54543"
+    },
+    {
+      "q": "f(x) = ctg x + x² funksiyaning hosilasini ifodalovchi to'g'ri variantni tanlang.",
+      "v": [
+        "2x + 1/sin²x",
+        "2x − 1/cos²x",
+        "2 − 1/sin²x",
+        "2x − 1/sin²x"
+      ],
+      "t": 3,
+      "izoh": "Kotangens hosilasi manfiy: (ctg x)' = −1/sin²x. Ikkinchi had uchun (x²)' = 2x bo'ladi. Yig'indining hosilasi hosilalar yig'indisiga teng, demak f'(x) = 2x − 1/sin²x. Javob: 2x − 1/sin²x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-hosila-jadval",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#a97517f2"
+    },
+    {
+      "q": "f(x) = 4e^x − x⁵ funksiyaning hosilasini toping va to'g'ri variantni ko'rsating.",
+      "v": [
+        "4e^x − 5x⁴",
+        "4x·e^(x−1) − 5x⁴",
+        "4e^x − x⁴",
+        "e^x − 5x⁴"
+      ],
+      "t": 0,
+      "izoh": "Eksponentaning hosilasi o'ziga teng: (e^x)' = e^x, shuning uchun koeffitsient 4 saqlanadi. Ikkinchi had uchun daraja qoidasi ishlaydi: (x⁵)' = 5x⁴. Demak f'(x) = 4e^x − 5x⁴. Javob: 4e^x − 5x⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-funksiya-hosila",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#90c08b54"
+    },
+    {
+      "q": "y = 3^x ko'rsatkichli funksiyaning hosilasi quyidagilardan qaysi biri?",
+      "v": [
+        "3^x·ln 3",
+        "x·3^(x−1)",
+        "3^x/ln 3",
+        "3^x"
+      ],
+      "t": 0,
+      "izoh": "Umumiy asosli ko'rsatkichli funksiya uchun (a^x)' = a^x·ln a formulasi qo'llaniladi. Bu yerda a = 3, demak hosila 3^x·ln 3 bo'ladi. Daraja qoidasini qo'llash xato, chunki o'zgaruvchi asosda emas, ko'rsatkichda turibdi. Javob: 3^x·ln 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-funksiya-hosila",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#243db4e5"
+    },
+    {
+      "q": "f(x) = e^x + 2^x funksiyaning hosilasini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "e^x + 2^x",
+        "e^x + x·2^(x−1)",
+        "e^x + 2^x·ln 2",
+        "e^x·2^x·ln 2"
+      ],
+      "t": 2,
+      "izoh": "Eksponenta uchun (e^x)' = e^x, chunki ln e = 1. Asosi 2 bo'lgan had uchun esa (a^x)' = a^x·ln a formulasi ishlaydi. Demak f'(x) = e^x + 2^x·ln 2. Javob: e^x + 2^x·ln 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-funksiya-hosila",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#0d210c99"
+    },
+    {
+      "q": "f(x) = 5^x funksiyaning nol nuqtadagi hosilasi qanday qiymatga ega?",
+      "v": [
+        "ln 5",
+        "5",
+        "1",
+        "5·ln 5"
+      ],
+      "t": 0,
+      "izoh": "Umumiy hosila f'(x) = 5^x·ln 5 ko'rinishida bo'ladi. Nol nuqtada 5⁰ = 1 bo'lgani uchun ko'paytuvchi yo'qoladi. Demak f'(0) = 1·ln 5 = ln 5. Javob: ln 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-funksiya-hosila",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#769f9343"
+    },
+    {
+      "q": "Bir tadbirkorning yillik daromadi D(t) = 2^t mln so'm qonuniyat bilan ikki barobardan o'sib bormoqda. Uchinchi yilda daromadning o'sish tezligi (mln so'm/yil) qanchaga teng?",
+      "v": [
+        "8",
+        "3·ln 2",
+        "8/ln 2",
+        "8·ln 2"
+      ],
+      "t": 3,
+      "izoh": "O'sish tezligi hosila bilan o'lchanadi: D'(t) = 2^t·ln 2. Uchinchi yilda 2³ = 8 bo'ladi. Demak D'(3) = 8·ln 2 mln so'm/yil. Javob: 8·ln 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-funksiya-hosila",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#bf3a3cc6"
+    },
+    {
+      "q": "f(x) = 5ln x funksiyaning hosilasini toping va to'g'ri ifodani belgilang.",
+      "v": [
+        "1/x",
+        "5/x",
+        "5/(x·ln 5)",
+        "x/5"
+      ],
+      "t": 1,
+      "izoh": "Natural logarifm hosilasi (ln x)' = 1/x ga teng. O'zgarmas ko'paytuvchi hosila belgisidan tashqariga chiqadi, ya'ni saqlanib qoladi. Demak f'(x) = 5·(1/x) = 5/x. Javob: 5/x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-funksiya-hosila",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#f57bebb5"
+    },
+    {
+      "q": "y = log₂x funksiyaning hosilasi qaysi ifoda bilan beriladi?",
+      "v": [
+        "1/(x·ln 2)",
+        "1/x",
+        "ln 2/x",
+        "1/(2·ln x)"
+      ],
+      "t": 0,
+      "izoh": "Ixtiyoriy asosli logarifm uchun (logₐx)' = 1/(x·ln a) formulasi qo'llaniladi. Bu yerda asos a = 2, demak maxrajda x·ln 2 turadi. Javob: 1/(x·ln 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-funksiya-hosila",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#a47a9d1b"
+    },
+    {
+      "q": "f(x) = 4ln x − x² funksiyaning x = 2 nuqtadagi hosilasini hisoblang.",
+      "v": [
+        "0",
+        "6",
+        "−2",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "Hosila: f'(x) = 4/x − 2x. Endi x = 2 ni qo'yamiz: 4/2 = 2 va 2·2 = 4. Demak f'(2) = 2 − 4 = −2. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-funksiya-hosila",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#ad5aee46"
+    },
+    {
+      "q": "Marketing tadqiqotiga ko'ra tovarga bo'lgan talab T(x) = 500 − 40ln x qonuniyat bilan kamayadi, bunda x — narx. Narx 10 birlikka teng bo'lgan paytda talab qanday tezlikda o'zgaradi?",
+      "v": [
+        "4 birlik",
+        "−4 birlik",
+        "−40 birlik",
+        "−0,4 birlik"
+      ],
+      "t": 1,
+      "izoh": "O'zgarish tezligi hosila bilan topiladi: T'(x) = −40·(1/x) = −40/x. Narx x = 10 bo'lganda T'(10) = −40/10 = −4. Manfiy ishora talabning kamayayotganini bildiradi. Javob: −4 birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-funksiya-hosila",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#70052382"
+    },
+    {
+      "q": "O'nli logarifm bilan berilgan f(x) = lg x funksiyaning hosilasini ifodalovchi variantni tanlang.",
+      "v": [
+        "1/x",
+        "1/(10·ln x)",
+        "ln 10/x",
+        "1/(x·ln 10)"
+      ],
+      "t": 3,
+      "izoh": "O'nli logarifm — bu asosi 10 bo'lgan logarifm, ya'ni lg x = log₁₀x. Umumiy formula (logₐx)' = 1/(x·ln a) ga ko'ra a = 10 qo'yamiz. Demak hosila 1/(x·ln 10) bo'ladi. Javob: 1/(x·ln 10).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-funksiya-hosila",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#5c48c479"
+    },
+    {
+      "q": "f(x) = x²·sin x funksiyaning hosilasini ko'paytma qoidasi yordamida toping.",
+      "v": [
+        "2x·cos x",
+        "2x·sin x + x²·cos x",
+        "2x·sin x − x²·cos x",
+        "2x·cos x + x²·sin x"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma qoidasi: (u·v)' = u'·v + u·v'. Bu yerda u = x², u' = 2x va v = sin x, v' = cos x. O'rniga qo'ysak f'(x) = 2x·sin x + x²·cos x. Javob: 2x·sin x + x²·cos x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-qoidasi",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#75c2bdc6"
+    },
+    {
+      "q": "f(x) = (2x + 3)(x² − 1) funksiyaning hosilasini soddalashtirilgan ko'rinishda yozing.",
+      "v": [
+        "6x² + 6x − 2",
+        "6x² − 6x − 2",
+        "2x² − 2",
+        "4x"
+      ],
+      "t": 0,
+      "izoh": "u = 2x + 3 uchun u' = 2, v = x² − 1 uchun v' = 2x. Ko'paytma qoidasi bo'yicha f'(x) = 2(x² − 1) + (2x + 3)·2x. Qavslarni ochamiz: 2x² − 2 + 4x² + 6x = 6x² + 6x − 2. Javob: 6x² + 6x − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-qoidasi",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#3a93b3b3"
+    },
+    {
+      "q": "f(x) = x·e^x funksiyaning hosilasini ko'paytma qoidasi bilan toping.",
+      "v": [
+        "e^x",
+        "e^x(x + 1)",
+        "x·e^x",
+        "e^x(x − 1)"
+      ],
+      "t": 1,
+      "izoh": "u = x uchun u' = 1, v = e^x uchun v' = e^x bo'ladi. Demak f'(x) = 1·e^x + x·e^x. Umumiy ko'paytuvchini qavsdan chiqaramiz: e^x(x + 1). Javob: e^x(x + 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-qoidasi",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#8597447e"
+    },
+    {
+      "q": "f(x) = 3x·ln x funksiyaning hosilasini soddalashtirib yozing.",
+      "v": [
+        "3ln x",
+        "3/x",
+        "3ln x + 3",
+        "3ln x + 3x"
+      ],
+      "t": 2,
+      "izoh": "u = 3x uchun u' = 3, v = ln x uchun v' = 1/x. Ko'paytma qoidasiga ko'ra f'(x) = 3·ln x + 3x·(1/x). Ikkinchi qo'shiluvchida x qisqaradi va 3 qoladi. Javob: 3ln x + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-qoidasi",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#a1ba39ca"
+    },
+    {
+      "q": "To'quv sexida t oyda ishlayotgan ishchilar soni I(t) = t + 2 ga, bitta ishchining kunlik unumi U(t) = 5t + 10 mahsulotga teng. Umumiy kunlik mahsulot M(t) = I(t)·U(t) bo'lsa, M'(2) ni toping.",
+      "v": [
+        "5 mahsulot/kun har oyda",
+        "80 mahsulot/kun har oyda",
+        "40 mahsulot/kun har oyda",
+        "20 mahsulot/kun har oyda"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytma qoidasi: M'(t) = 1·(5t + 10) + (t + 2)·5 = 5t + 10 + 5t + 10 = 10t + 20. Endi t = 2 ni qo'yamiz: 10·2 + 20 = 40. Hosilalarni oddiy ko'paytirish (1·5 = 5) qo'pol xato bo'lardi. Birlikka e'tibor bering: M kunlik mahsulot, t esa oy, shuning uchun M'(2) = 40 — bu ikkinchi oyda kunlik ishlab chiqarish har oyda 40 mahsulotga ortayotganini bildiradi, M(2) = 80 mahsulot/kun ning o'zi emas. Javob: 40 mahsulot/kun har oyda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytma-qoidasi",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#d8534068"
+    },
+    {
+      "q": "f(x) = (x + 1)/(x − 2) funksiyaning hosilasini bo'linma qoidasi yordamida toping.",
+      "v": [
+        "−3/(x − 2)²",
+        "3/(x − 2)²",
+        "1",
+        "−3/(x − 2)"
+      ],
+      "t": 0,
+      "izoh": "Bo'linma qoidasi: (u/v)' = (u'·v − u·v')/v². Bu yerda u' = 1 va v' = 1, demak surat 1·(x − 2) − (x + 1)·1 bo'ladi. Qavslarni ochsak x − 2 − x − 1 = −3. Javob: −3/(x − 2)².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolinma-qoidasi",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#bbaffdfb"
+    },
+    {
+      "q": "f(x) = x²/(x + 3) funksiyaning hosilasini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "2x",
+        "(x² + 6x)/(x + 3)²",
+        "(x² − 6x)/(x + 3)²",
+        "(3x² + 6x)/(x + 3)²"
+      ],
+      "t": 1,
+      "izoh": "u = x², u' = 2x; v = x + 3, v' = 1. Surat: 2x(x + 3) − x²·1 = 2x² + 6x − x² = x² + 6x. Maxraj esa (x + 3)² bo'ladi. Javob: (x² + 6x)/(x + 3)².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolinma-qoidasi",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#1696a604"
+    },
+    {
+      "q": "f(x) = sin x / x funksiyaning hosilasi qaysi ifodaga teng bo'ladi?",
+      "v": [
+        "cos x",
+        "(x·cos x + sin x)/x²",
+        "(cos x − sin x)/x²",
+        "(x·cos x − sin x)/x²"
+      ],
+      "t": 3,
+      "izoh": "Bo'linma qoidasida surat u'·v − u·v' ko'rinishida bo'ladi. Bu yerda u' = cos x, v = x va v' = 1, demak surat cos x·x − sin x·1. Maxraj x², natijada (x·cos x − sin x)/x². Javob: (x·cos x − sin x)/x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolinma-qoidasi",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#94b9eb96"
+    },
+    {
+      "q": "f(x) = (3x − 1)/x² funksiyaning hosilasini eng sodda ko'rinishga keltiring.",
+      "v": [
+        "(2 − 3x)/x³",
+        "(3x − 2)/x³",
+        "3/(2x)",
+        "(2 − 3x)/x⁴"
+      ],
+      "t": 0,
+      "izoh": "Bo'linma qoidasi bo'yicha surat 3·x² − (3x − 1)·2x = 3x² − 6x² + 2x = −3x² + 2x. Maxraj (x²)² = x⁴ bo'ladi. Surat va maxrajni x ga qisqartirsak (2 − 3x)/x³ hosil bo'ladi. Javob: (2 − 3x)/x³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolinma-qoidasi",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#61aa1a74"
+    },
+    {
+      "q": "Korxonaning t oy davomidagi umumiy xarajati X(t) = t² + 100 mln so'mni tashkil qiladi. Bir oyga to'g'ri keladigan o'rtacha xarajat O(t) = X(t)/t bo'lsa, O'(t) qanday ifodalanadi?",
+      "v": [
+        "1 + 100/t²",
+        "2t",
+        "1 − 100/t",
+        "1 − 100/t²"
+      ],
+      "t": 3,
+      "izoh": "Avval bo'linmani ikkita hadga ajratamiz: O(t) = t + 100/t. Ikkinchi hadni daraja shaklida yozamiz: 100t⁻¹, uning hosilasi −100t⁻² bo'ladi. Demak O'(t) = 1 − 100/t². Javob: 1 − 100/t².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolinma-qoidasi",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#720625ad"
+    },
+    {
+      "q": "f(x) = (2x + 5)⁴ murakkab funksiyaning hosilasini zanjir qoidasi bilan toping.",
+      "v": [
+        "4(2x + 5)³",
+        "8(2x + 5)⁴",
+        "8(2x + 5)³",
+        "2(2x + 5)³"
+      ],
+      "t": 2,
+      "izoh": "Zanjir qoidasi: tashqi funksiya hosilasini ichki funksiya hosilasiga ko'paytiramiz. Tashqi hosila 4(2x + 5)³, ichki hosila esa (2x + 5)' = 2. Ularni ko'paytirsak 4·2 = 8 koeffitsient chiqadi. Javob: 8(2x + 5)³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zanjir-qoidasi-daraja",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#d7e63a54"
+    },
+    {
+      "q": "f(x) = (x² − 3x)⁵ funksiyaning hosilasini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "5(x² − 3x)⁴",
+        "(2x − 3)⁵",
+        "5(x² − 3x)⁴·(2x + 3)",
+        "5(x² − 3x)⁴·(2x − 3)"
+      ],
+      "t": 3,
+      "izoh": "Tashqi funksiya beshinchi daraja, uning hosilasi 5(x² − 3x)⁴ bo'ladi. Ichki funksiya x² − 3x ning hosilasi 2x − 3 ga teng. Zanjir qoidasiga ko'ra ularni ko'paytiramiz. Javob: 5(x² − 3x)⁴·(2x − 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zanjir-qoidasi-daraja",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#99ab0ecd"
+    },
+    {
+      "q": "f(x) = √(3x + 1) funksiyaning hosilasini zanjir qoidasi yordamida toping.",
+      "v": [
+        "1/(2√(3x + 1))",
+        "3/(2√(3x + 1))",
+        "3/√(3x + 1)",
+        "2√(3x + 1)/3"
+      ],
+      "t": 1,
+      "izoh": "Tashqi funksiya — kvadrat ildiz, uning hosilasi 1/(2√(3x + 1)) bo'ladi. Ichki funksiya 3x + 1 ning hosilasi 3 ga teng. Zanjir qoidasiga ko'ra ikkalasini ko'paytiramiz. Javob: 3/(2√(3x + 1)).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zanjir-qoidasi-daraja",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#73b2a2d0"
+    },
+    {
+      "q": "Kvadrat shaklidagi paxta maydonining tomoni har yili a(t) = 20 + 2t metrga o'sib bormoqda. Maydon yuzasi S = a² bo'lsa, beshinchi yilda yuza qanday tezlikda ortadi?",
+      "v": [
+        "120 m²/yil",
+        "60 m²/yil",
+        "900 m²/yil",
+        "30 m²/yil"
+      ],
+      "t": 0,
+      "izoh": "Yuza S(t) = (20 + 2t)² ko'rinishida bo'ladi. Zanjir qoidasi bilan S'(t) = 2(20 + 2t)·2 = 4(20 + 2t). t = 5 da tomon 30 m, demak S'(5) = 4·30 = 120 m²/yil. Javob: 120 m²/yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zanjir-qoidasi-daraja",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#4440cd20"
+    },
+    {
+      "q": "f(x) = (1 − x³)⁶ funksiyaning hosilasini to'g'ri ifodalagan variantni tanlang.",
+      "v": [
+        "18x²(1 − x³)⁵",
+        "6(1 − x³)⁵",
+        "−18x²(1 − x³)⁵",
+        "−18x²(1 − x³)⁶"
+      ],
+      "t": 2,
+      "izoh": "Tashqi hosila 6(1 − x³)⁵ bo'ladi, daraja bittaga kamayadi. Ichki funksiya 1 − x³ ning hosilasi −3x² ga teng. Ko'paytirsak 6·(−3x²) = −18x² koeffitsient chiqadi. Javob: −18x²(1 − x³)⁵.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zanjir-qoidasi-daraja",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#381ae7e1"
+    },
+    {
+      "q": "f(x) = sin(6x) funksiyaning hosilasi quyidagilardan qaysi biriga teng?",
+      "v": [
+        "cos(6x)",
+        "−6cos(6x)",
+        "6sin(6x)",
+        "6cos(6x)"
+      ],
+      "t": 3,
+      "izoh": "Sinusning hosilasi kosinus bo'ladi, argument esa o'zgarmaydi. Ichki funksiya 6x ning hosilasi 6 ga teng va u ko'paytuvchi sifatida oldinga chiqadi. Demak f'(x) = 6cos(6x). Javob: 6cos(6x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zanjir-qoidasi-trigonometrik",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#a38174a5"
+    },
+    {
+      "q": "f(x) = cos(3x − 1) funksiyaning hosilasini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "−3sin(3x − 1)",
+        "3sin(3x − 1)",
+        "−sin(3x − 1)",
+        "−3cos(3x − 1)"
+      ],
+      "t": 0,
+      "izoh": "Kosinus hosilasi manfiy sinus beradi: (cos u)' = −sin u. Ichki funksiya 3x − 1 ning hosilasi 3 ga teng. Ikkalasini birlashtirsak −3sin(3x − 1) hosil bo'ladi. Javob: −3sin(3x − 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zanjir-qoidasi-trigonometrik",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#5acb8344"
+    },
+    {
+      "q": "f(x) = sin²x funksiyaning hosilasi qanday ko'rinishda bo'ladi?",
+      "v": [
+        "2sin x",
+        "cos²x",
+        "2sin x·cos x",
+        "−2sin x·cos x"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda tashqi funksiya — kvadrat, ichki funksiya — sinus. Tashqi hosila 2sin x, ichki hosila esa cos x bo'ladi. Zanjir qoidasiga ko'ra f'(x) = 2sin x·cos x. Javob: 2sin x·cos x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zanjir-qoidasi-trigonometrik",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#e61ca10d"
+    },
+    {
+      "q": "f(x) = tg 4x funksiyaning hosilasini ifodalovchi to'g'ri variantni tanlang.",
+      "v": [
+        "1/cos²(4x)",
+        "4/cos²(4x)",
+        "4/sin²(4x)",
+        "1/(4·cos²(4x))"
+      ],
+      "t": 1,
+      "izoh": "Tangens hosilasi (tg u)' = 1/cos²u formulasi bilan topiladi. Ichki funksiya 4x ning hosilasi 4 ga teng va u suratga ko'paytuvchi bo'lib chiqadi. Demak f'(x) = 4/cos²(4x). Javob: 4/cos²(4x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zanjir-qoidasi-trigonometrik",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#b8ff7fe1"
+    },
+    {
+      "q": "Shahar bog'idagi charxpalak kabinasining yerdan balandligi h(t) = 25 + 20sin(πt/30) metr, bunda t daqiqada o'lchanadi. Harakat boshlangan payt kabina qanday tezlik bilan ko'tariladi?",
+      "v": [
+        "20 m/daq",
+        "π/30 m/daq",
+        "25 m/daq",
+        "2π/3 m/daq"
+      ],
+      "t": 3,
+      "izoh": "Tezlik — balandlikning hosilasi: h'(t) = 20·cos(πt/30)·(π/30). Koeffitsientlarni soddalashtirsak 20π/30 = 2π/3 chiqadi. t = 0 da cos 0 = 1, demak h'(0) = 2π/3 m/daq. Javob: 2π/3 m/daq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zanjir-qoidasi-trigonometrik",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#f1bd96da"
+    },
+    {
+      "q": "f(x) = 3√x + 2/x − 7 funksiyaning hosilasini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "3/(2√x) + 2/x²",
+        "3/(2√x) − 2/x",
+        "3/(2√x) − 2/x²",
+        "3/(2√x) − 2/x² − 7"
+      ],
+      "t": 2,
+      "izoh": "Birinchi had uchun (√x)' = 1/(2√x), koeffitsient 3 saqlanadi. Ikkinchi hadni 2x⁻¹ deb yozsak, uning hosilasi −2x⁻² = −2/x² bo'ladi. O'zgarmas 7 esa yo'qoladi. Javob: 3/(2√x) − 2/x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-elementar-funksiyalar",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#945055b0"
+    },
+    {
+      "q": "f(x) = 2sin x + ln x + e^x funksiyaning hosilasini toping.",
+      "v": [
+        "2cos x + 1/x + e^x",
+        "2cos x + 1/x + x·e^(x−1)",
+        "−2cos x + 1/x + e^x",
+        "2cos x + ln x + e^x"
+      ],
+      "t": 0,
+      "izoh": "Yig'indining hosilasi hadlar hosilalarining yig'indisiga teng. Jadvaldan (sin x)' = cos x, (ln x)' = 1/x va (e^x)' = e^x. Demak f'(x) = 2cos x + 1/x + e^x. Javob: 2cos x + 1/x + e^x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-elementar-funksiyalar",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#c3b8c404"
+    },
+    {
+      "q": "f(x) = x³ + 4√x + 6 funksiyaning x = 1 nuqtadagi hosila qiymatini toping.",
+      "v": [
+        "3",
+        "7",
+        "11",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Hosila: f'(x) = 3x² + 4/(2√x) = 3x² + 2/√x. Birlik nuqtada √1 = 1 bo'ladi, demak ikkinchi had 2 ga teng. Shunday qilib f'(1) = 3 + 2 = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-elementar-funksiyalar",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#34840473"
+    },
+    {
+      "q": "Sirdaryodagi ko'lda baliqlar soni B(t) = 400 + 60√t + 5t formula bilan o'zgaradi, bunda t oylarda. To'qqizinchi oyda baliqlar soni qanday tezlikda ortadi?",
+      "v": [
+        "25 ta/oy",
+        "15 ta/oy",
+        "10 ta/oy",
+        "20 ta/oy"
+      ],
+      "t": 1,
+      "izoh": "Hosila: B'(t) = 60/(2√t) + 5 = 30/√t + 5. t = 9 bo'lgani uchun √9 = 3 va 30/3 = 10. Demak B'(9) = 10 + 5 = 15 ta/oy. Javob: 15 ta/oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-elementar-funksiyalar",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#94063786"
+    },
+    {
+      "q": "f(x) = 5x − ctg x + 2^x funksiyaning hosilasini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "5 − 1/sin²x + 2^x·ln 2",
+        "5 + 1/cos²x + 2^x·ln 2",
+        "5 + 1/sin²x + 2^x·ln 2",
+        "5 + 1/sin²x + 2^x"
+      ],
+      "t": 2,
+      "izoh": "Kotangens hosilasi (ctg x)' = −1/sin²x, oldidagi minus bilan urishib plusga aylanadi. Ko'rsatkichli had uchun (2^x)' = 2^x·ln 2 formulasi ishlaydi. Demak f'(x) = 5 + 1/sin²x + 2^x·ln 2. Javob: 5 + 1/sin²x + 2^x·ln 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-elementar-funksiyalar",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#7065cdfe"
+    },
+    {
+      "q": "f(x) = x² − 6x + 5 funksiya uchun f'(x) = 0 tenglamani yeching.",
+      "v": [
+        "3",
+        "6",
+        "−3",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Avval hosilani topamiz: f'(x) = 2x − 6. Endi uni nolga tenglaymiz: 2x − 6 = 0. Bundan 2x = 6 va x = 3 kelib chiqadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-nolga-teng-tenglama",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#d2762ab1"
+    },
+    {
+      "q": "f(x) = x³ − 12x + 4 funksiyaning hosilasi nolga aylanadigan barcha x qiymatlarini toping.",
+      "v": [
+        "x = 2",
+        "x = ±2",
+        "x = ±4",
+        "x = ±√12"
+      ],
+      "t": 1,
+      "izoh": "Hosila f'(x) = 3x² − 12 ko'rinishida. Uni nolga tenglaymiz: 3x² − 12 = 0, ya'ni x² = 4. Bu tenglamaning ikkita ildizi bor, faqat musbatini olish xato bo'ladi. Javob: x = ±2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-nolga-teng-tenglama",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#64f21ea2"
+    },
+    {
+      "q": "f(x) = 2x³ − 9x² + 12x funksiya uchun f'(x) = 0 tenglamaning ildizlarini aniqlang.",
+      "v": [
+        "x = 2 va x = 3",
+        "x = −1 va x = −2",
+        "x = 0 va x = 3",
+        "x = 1 va x = 2"
+      ],
+      "t": 3,
+      "izoh": "Hosila: f'(x) = 6x² − 18x + 12. Tenglamani 6 ga qisqartiramiz: x² − 3x + 2 = 0. Viyet teoremasi bo'yicha ildizlar yig'indisi 3, ko'paytmasi 2, demak x = 1 va x = 2. Javob: x = 1 va x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-nolga-teng-tenglama",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#44e7ea6e"
+    },
+    {
+      "q": "Tepaga otilgan koptokning balandligi h(t) = 40t − 5t² metr bilan beriladi. Balandlik eng katta bo'lgan payt h'(t) = 0 shartdan topiladi, u qaysi vaqtga to'g'ri keladi?",
+      "v": [
+        "4 s",
+        "8 s",
+        "5 s",
+        "80 s"
+      ],
+      "t": 0,
+      "izoh": "Tezlik funksiyasi h'(t) = 40 − 10t ko'rinishida bo'ladi. Uni nolga tenglaymiz: 40 − 10t = 0, bundan t = 4 s. Shu paytda koptok to'xtab, pastga qayta boshlaydi. Javob: 4 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-nolga-teng-tenglama",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#72b705ce"
+    },
+    {
+      "q": "f(x) = e^x(x − 2) funksiyaning hosilasi qaysi nuqtada nolga aylanadi?",
+      "v": [
+        "x = 2",
+        "x = 0",
+        "x = 1",
+        "yechim yo'q"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytma qoidasi: f'(x) = e^x(x − 2) + e^x·1 = e^x(x − 1). Eksponenta hech qachon nolga teng bo'lmaydi, shuning uchun faqat x − 1 = 0 bo'lishi mumkin. Bundan x = 1. Javob: x = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-nolga-teng-tenglama",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#156a9c7e"
+    },
+    {
+      "q": "f(x) = x² − 5x funksiyaning hosilasi 3 ga teng bo'ladigan x qiymatini toping.",
+      "v": [
+        "8",
+        "4",
+        "−1",
+        "1,5"
+      ],
+      "t": 1,
+      "izoh": "Hosila f'(x) = 2x − 5 ko'rinishida bo'ladi. Shartga ko'ra 2x − 5 = 3 tenglamani yechamiz. Bundan 2x = 8 va x = 4 kelib chiqadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-berilgan-qiymatga-teng",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#f7882c2e"
+    },
+    {
+      "q": "Nurbek velosipedda harakatlanmoqda va bosib o'tgan yo'li s(t) = t² + 3t metr bilan ifodalanadi. Uning tezligi 15 m/s ga yetadigan vaqtni toping.",
+      "v": [
+        "12 s",
+        "7,5 s",
+        "5 s",
+        "6 s"
+      ],
+      "t": 3,
+      "izoh": "Tezlik — yo'lning vaqt bo'yicha hosilasi: s'(t) = 2t + 3. Shartga ko'ra 2t + 3 = 15 tenglamani yechamiz. Bundan 2t = 12 va t = 6 s. Javob: 6 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-berilgan-qiymatga-teng",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#28cee046"
+    },
+    {
+      "q": "f(x) = 2x³ + 5x funksiyaning hosilasi 59 ga teng bo'ladigan barcha x qiymatlarini toping.",
+      "v": [
+        "x = 3",
+        "x = ±9",
+        "x = ±3",
+        "yechim yo'q"
+      ],
+      "t": 2,
+      "izoh": "Hosila f'(x) = 6x² + 5 ko'rinishida bo'ladi. Shartga ko'ra 6x² + 5 = 59, bundan 6x² = 54 va x² = 9. Kvadrat tenglama ikkita ildiz beradi, faqat musbatini olish xato. Javob: x = ±3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-berilgan-qiymatga-teng",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#fa57c7c9"
+    },
+    {
+      "q": "Sexda q dona mahsulot tayyorlash xarajati X(q) = q² + 40q ming so'mni tashkil etadi. Marjinal xarajat X'(q) 100 ming so'mga yetadigan ishlab chiqarish hajmini toping.",
+      "v": [
+        "50 dona",
+        "60 dona",
+        "70 dona",
+        "30 dona"
+      ],
+      "t": 3,
+      "izoh": "Marjinal xarajat — bu xarajat funksiyasining hosilasi: X'(q) = 2q + 40. Shartga ko'ra 2q + 40 = 100 tenglamani yechamiz. Bundan 2q = 60 va q = 30 dona. Javob: 30 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-berilgan-qiymatga-teng",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#37e627a5"
+    },
+    {
+      "q": "f(x) = ax² + 3x funksiyada f'(1) = 7 shart bajarilsa, a parametrning qiymati nechaga teng?",
+      "v": [
+        "4",
+        "2",
+        "3,5",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "Avval hosilani yozamiz: f'(x) = 2ax + 3. Birlik nuqtada f'(1) = 2a + 3 bo'ladi. Shartga ko'ra 2a + 3 = 7, bundan 2a = 4 va a = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrni-hosiladan-topish",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#8c4b4398"
+    },
+    {
+      "q": "f(x) = x³ + bx² − 5 funksiyaning hosilasi x = 2 nuqtada nolga aylanadi. b parametrni toping.",
+      "v": [
+        "−3",
+        "3",
+        "−12",
+        "−6"
+      ],
+      "t": 0,
+      "izoh": "Hosila f'(x) = 3x² + 2bx ko'rinishida bo'ladi. x = 2 ni qo'yamiz: 3·4 + 2b·2 = 12 + 4b. Bu ifoda nolga teng, demak 4b = −12 va b = −3. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrni-hosiladan-topish",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#898c0acd"
+    },
+    {
+      "q": "Suv omborida to'plangan suv hajmi V(t) = at² + 10t m³ qonun bilan ortadi. Ikkinchi soatda hajmning o'sish tezligi 30 m³/soat bo'lsa, a ni aniqlang.",
+      "v": [
+        "20",
+        "10",
+        "5",
+        "7,5"
+      ],
+      "t": 2,
+      "izoh": "O'sish tezligi hosila bilan beriladi: V'(t) = 2at + 10. t = 2 da V'(2) = 4a + 10 bo'ladi. Shartga ko'ra 4a + 10 = 30, bundan 4a = 20 va a = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrni-hosiladan-topish",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#6f2cdc5f"
+    },
+    {
+      "q": "f(x) = a·sin x + 2x funksiyada f'(0) = 5 bo'lsa, a parametr qanday qiymat qabul qiladi?",
+      "v": [
+        "5",
+        "7",
+        "2,5",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Hosila f'(x) = a·cos x + 2 ko'rinishida yoziladi. Nol nuqtada cos 0 = 1, demak f'(0) = a + 2. Shartga ko'ra a + 2 = 5, bundan a = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrni-hosiladan-topish",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#82555e88"
+    },
+    {
+      "q": "f(x) = x² + px + q funksiyaning hosilasi x = 3 nuqtada nolga teng, shu bilan birga f(3) = −4 ekani ma'lum. q ning qiymatini toping.",
+      "v": [
+        "−4",
+        "−6",
+        "−13",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Hosila f'(x) = 2x + p, demak 2·3 + p = 0 va p = −6. Endi f(3) = 9 + 3·(−6) + q = 9 − 18 + q ni hisoblaymiz. Bu −4 ga teng bo'lgani uchun q − 9 = −4 va q = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrni-hosiladan-topish",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#b895615a"
+    },
+    {
+      "q": "Jismning harakat qonuni s(t) = 3t² + 2t metr bilan berilgan. Uning beshinchi sekunddagi oniy tezligini toping.",
+      "v": [
+        "32 m/s",
+        "30 m/s",
+        "85 m/s",
+        "17 m/s"
+      ],
+      "t": 0,
+      "izoh": "Oniy tezlik — yo'lning vaqt bo'yicha hosilasi: s'(t) = 6t + 2. t = 5 ni qo'yamiz: 6·5 = 30, unga 2 qo'shiladi. Demak v(5) = 32 m/s. Javob: 32 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-harakat-tezlik",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#91d75535"
+    },
+    {
+      "q": "Yo'l qonuni s(t) = t³ − 6t² + 9t bo'lgan jism qaysi vaqt momentlarida bir zumga to'xtaydi?",
+      "v": [
+        "t = 0 s va t = 3 s",
+        "t = 1 s va t = 3 s",
+        "t = 2 s",
+        "t = 3 s va t = 4 s"
+      ],
+      "t": 1,
+      "izoh": "To'xtash payti tezlik nolga teng bo'lgan payt: s'(t) = 3t² − 12t + 9 = 0. Tenglamani 3 ga qisqartiramiz: t² − 4t + 3 = 0. Ildizlar t = 1 va t = 3. Javob: t = 1 s va t = 3 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harakat-tezlik",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#25082664"
+    },
+    {
+      "q": "Tormozlanayotgan poyezdning bosib o'tgan yo'li s(t) = 20t − 0,5t² metr. O'ninchi sekunddagi tezligi qanchaga teng bo'ladi?",
+      "v": [
+        "20 m/s",
+        "15 m/s",
+        "10 m/s",
+        "150 m/s"
+      ],
+      "t": 2,
+      "izoh": "Tezlik hosila orqali topiladi: s'(t) = 20 − t, chunki (0,5t²)' = t. t = 10 ni qo'yamiz: 20 − 10 = 10. Demak o'ninchi sekundda tezlik 10 m/s. Javob: 10 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-harakat-tezlik",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#e88898e3"
+    },
+    {
+      "q": "Aziz s₁(t) = t² + 4t, Bekzod esa s₂(t) = 6t qonun bilan yugurmoqda (masofa metrda). Ularning tezliklari qaysi paytda tenglashadi?",
+      "v": [
+        "2 s",
+        "3 s",
+        "1 s",
+        "5 s"
+      ],
+      "t": 2,
+      "izoh": "Tezliklarni hosila bilan topamiz: s₁'(t) = 2t + 4 va s₂'(t) = 6. Ularni tenglaymiz: 2t + 4 = 6, bundan 2t = 2 va t = 1 s. Masofalar tenglashadigan payt (t = 2 s) bilan chalkashtirmaslik kerak. Javob: 1 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-harakat-tezlik",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#26da35c3"
+    },
+    {
+      "q": "Jism s(t) = t²/2 + 3t qonun bilan harakatlanadi, bunda s metrda, t sekundda. Oltinchi sekunddagi oniy tezlik dastlabki olti sekunddagi o'rtacha tezlikdan qanchaga ko'p?",
+      "v": [
+        "9 m/s",
+        "3 m/s",
+        "6 m/s",
+        "15 m/s"
+      ],
+      "t": 1,
+      "izoh": "Oniy tezlik uchun s'(t) = t + 3, demak s'(6) = 9 m/s. O'rtacha tezlik esa s(6)/6 ga teng: s(6) = 18 + 18 = 36, ya'ni 36/6 = 6 m/s. Farq 9 − 6 = 3 m/s. Javob: 3 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-harakat-tezlik",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#68507cea"
+    },
+    {
+      "q": "Korxonada q dona mahsulot ishlab chiqarish xarajati X(q) = 0,5q² + 20q + 500 ming so'm. Hajm 40 donaga yetganda marjinal xarajat qancha bo'ladi?",
+      "v": [
+        "2100 ming so'm",
+        "20 ming so'm",
+        "52,5 ming so'm",
+        "60 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Marjinal xarajat — hosila: X'(q) = q + 20, chunki (0,5q²)' = q. q = 40 ni qo'yamiz: 40 + 20 = 60 ming so'm. Bu qiymat 41-donaning taxminiy narxini bildiradi. Javob: 60 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-marjinal-xarajat",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#84cb3e00"
+    },
+    {
+      "q": "Savdodan olinadigan daromad D(q) = 500q − 5q² ming so'm formulasi bilan hisoblanadi. 30 dona sotilgan paytdagi marjinal daromadni toping.",
+      "v": [
+        "10500 ming so'm",
+        "350 ming so'm",
+        "200 ming so'm",
+        "500 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Marjinal daromad D'(q) = 500 − 10q ko'rinishida bo'ladi, chunki (5q²)' = 10q. q = 30 da 10·30 = 300 chiqadi. Demak D'(30) = 500 − 300 = 200 ming so'm. Javob: 200 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-marjinal-xarajat",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#73e21627"
+    },
+    {
+      "q": "Malikaning do'konida narx p ming so'm bo'lganda haftalik savdo S(p) = 800 − 12p² dona bo'ladi. Narx 5 ming so'mga teng paytda savdo narxga nisbatan qanday tezlikda o'zgaradi?",
+      "v": [
+        "−60 dona",
+        "−120 dona",
+        "500 dona",
+        "120 dona"
+      ],
+      "t": 1,
+      "izoh": "O'zgarish tezligi hosila bilan o'lchanadi: S'(p) = −24p, chunki (12p²)' = 24p. p = 5 da S'(5) = −24·5 = −120. Manfiy ishora narx oshsa savdo kamayishini ko'rsatadi. Javob: −120 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-marjinal-xarajat",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#c177bad0"
+    },
+    {
+      "q": "Kichik korxonaning foydasi F(q) = 60q − q² − 200 ming so'm. Foydaning o'sishi to'xtaydigan, ya'ni F'(q) = 0 bo'ladigan hajmni aniqlang.",
+      "v": [
+        "60 dona",
+        "30 dona",
+        "120 dona",
+        "15 dona"
+      ],
+      "t": 1,
+      "izoh": "Foydaning hosilasi F'(q) = 60 − 2q ko'rinishida bo'ladi. Uni nolga tenglaymiz: 60 − 2q = 0. Bundan 2q = 60 va q = 30 dona. Javob: 30 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-marjinal-xarajat",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#c4cbd8a3"
+    },
+    {
+      "q": "Rezervuarga suv quyilmoqda va undagi hajm V(t) = 8t² + 30t litr bilan ifodalanadi, bunda t daqiqada. Beshinchi daqiqadagi quyilish tezligini toping.",
+      "v": [
+        "80 l/daq",
+        "350 l/daq",
+        "70 l/daq",
+        "110 l/daq"
+      ],
+      "t": 3,
+      "izoh": "Quyilish tezligi — hajmning vaqt bo'yicha hosilasi: V'(t) = 16t + 30. t = 5 ni qo'yamiz: 16·5 = 80, unga 30 qo'shamiz. Demak V'(5) = 110 l/daq. Javob: 110 l/daq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-hajm-ozgarish-tezligi",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#87cd4b44"
+    },
+    {
+      "q": "Idishdagi suv sekin oqib chiqmoqda va hajm V(t) = 400 − 20t + 0,25t² litr qonuniga bo'ysunadi. O'ninchi daqiqada hajm qanday tezlikda o'zgaradi?",
+      "v": [
+        "−15 l/daq",
+        "15 l/daq",
+        "−20 l/daq",
+        "−17,5 l/daq"
+      ],
+      "t": 0,
+      "izoh": "Hosilani topamiz: V'(t) = −20 + 0,5t, chunki (0,25t²)' = 0,5t. t = 10 da 0,5·10 = 5 bo'ladi. Demak V'(10) = −20 + 5 = −15 l/daq, ya'ni suv kamaymoqda. Javob: −15 l/daq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-hajm-ozgarish-tezligi",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#d9ddf05d"
+    },
+    {
+      "q": "Sharsimon rezina koptok shishirilmoqda, uning hajmi V = (4/3)πr³ formula bilan hisoblanadi. Radius 5 sm bo'lgan paytda hajm radiusga nisbatan qanday tezlikda ortadi?",
+      "v": [
+        "100π sm²",
+        "20π sm²",
+        "25π sm²",
+        "500π sm²"
+      ],
+      "t": 0,
+      "izoh": "Hajmni radius bo'yicha hosilalaymiz: V'(r) = (4/3)π·3r² = 4πr². Endi r = 5 ni qo'yamiz: 4π·25 = 100π. Demak o'zgarish tezligi 100π sm². Javob: 100π sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-hajm-ozgarish-tezligi",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#ecbff32b"
+    },
+    {
+      "q": "Kub shaklidagi muz bo'lagining qirrasi a sm, hajmi esa V = a³ sm³. Qirra 6 sm ga teng paytda hajmning qirra bo'yicha o'zgarish tezligi qanday?",
+      "v": [
+        "108 sm²",
+        "216 sm²",
+        "36 sm²",
+        "18 sm²"
+      ],
+      "t": 0,
+      "izoh": "Hajmni qirra bo'yicha hosilalaymiz: V'(a) = 3a². a = 6 ni qo'yamiz: 3·36 = 108. Demak hajm 108 sm² tezlik bilan ortadi, bu kubning uchta yog'i yuzasiga (3·36 = 108 sm²) mos keladi, ya'ni to'la sirtning (6a² = 216 sm²) yarmiga teng. Javob: 108 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-hajm-ozgarish-tezligi",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#53ed0761"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni N(t) = 500·e^(0,2t) ta qonun bilan ko'payadi, bunda t soatlarda. Kuzatuv boshlangan paytda ko'payish tezligi qanday bo'ladi?",
+      "v": [
+        "500 ta/soat",
+        "100 ta/soat",
+        "0,2 ta/soat",
+        "2500 ta/soat"
+      ],
+      "t": 1,
+      "izoh": "Zanjir qoidasi bilan hosilalaymiz: N'(t) = 500·0,2·e^(0,2t) = 100·e^(0,2t). Kuzatuv boshida t = 0, demak e⁰ = 1. Shunday qilib N'(0) = 100 ta/soat. Javob: 100 ta/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-korsatkichli-osish",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#8d4a73c8"
+    },
+    {
+      "q": "Sovutgichga qo'yilgan taomning harorati H(t) = 20·e^(−0,5t) + 4 daraja, bunda t soatlarda o'lchanadi. Boshlang'ich paytdagi sovish tezligini toping.",
+      "v": [
+        "−10 °C/soat",
+        "−20 °C/soat",
+        "10 °C/soat",
+        "−0,5 °C/soat"
+      ],
+      "t": 0,
+      "izoh": "Ichki funksiya −0,5t ning hosilasi −0,5 ga teng, u ko'paytuvchi bo'lib chiqadi. Demak H'(t) = 20·(−0,5)·e^(−0,5t) = −10·e^(−0,5t). t = 0 da e⁰ = 1, ya'ni H'(0) = −10 °C/soat. Manfiy ishora sovishni bildiradi. Javob: −10 °C/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-korsatkichli-osish",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#d72bd0be"
+    },
+    {
+      "q": "Tumandagi aholi soni A(t) = 120·1,03^t ming kishi qonuniyat bilan ortmoqda. Aholining o'sish tezligini ifodalovchi to'g'ri formulani tanlang.",
+      "v": [
+        "120·t·1,03^(t−1)",
+        "120·1,03^t",
+        "120·1,03^t·ln 1,03",
+        "1,03^t·ln 1,03"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda o'zgaruvchi ko'rsatkichda turibdi, shuning uchun daraja qoidasi emas, (a^x)' = a^x·ln a formulasi ishlaydi. O'zgarmas ko'paytuvchi 120 saqlanadi. Demak A'(t) = 120·1,03^t·ln 1,03. Javob: 120·1,03^t·ln 1,03.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-korsatkichli-osish",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#e5c8e87c"
+    },
+    {
+      "q": "Bankdagi omonat summasi D(t) = 5·e^(0,12t) mln so'm qonun bilan o'sadi. Omonatning o'sish tezligi joriy summa bilan qanday bog'langan?",
+      "v": [
+        "D'(t) = 5·D(t)",
+        "D'(t) = D(t)",
+        "D'(t) = 0,12·t·D(t)",
+        "D'(t) = 0,12·D(t)"
+      ],
+      "t": 3,
+      "izoh": "Zanjir qoidasiga ko'ra D'(t) = 5·0,12·e^(0,12t) = 0,6·e^(0,12t). Endi bu ifodada 5·e^(0,12t) = D(t) ekanini payqaymiz. Demak D'(t) = 0,12·D(t), ya'ni o'sish tezligi summaga to'g'ri proporsional. Javob: D'(t) = 0,12·D(t).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-korsatkichli-osish",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#a2093566"
+    },
+    {
+      "q": "Shovqin darajasi Sh(x) = 10lg x desibel formula bilan hisoblanadi, bunda x — tovush quvvati. Quvvat 100 birlikka teng paytda daraja qanday tezlikda o'zgaradi?",
+      "v": [
+        "1/ln 10",
+        "0,1",
+        "0,1/ln 10",
+        "10/ln 10"
+      ],
+      "t": 2,
+      "izoh": "O'nli logarifm hosilasi (lg x)' = 1/(x·ln 10) ga teng. Demak Sh'(x) = 10/(x·ln 10). x = 100 ni qo'yamiz: 10/(100·ln 10) = 0,1/ln 10. Javob: 0,1/ln 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-logarifmik-model",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#d719cd89"
+    },
+    {
+      "q": "Reklamaga x mln so'm sarflanganda haftalik sotuv S(x) = 200 + 50ln x donani tashkil qiladi. Sarf 25 mln so'mga teng paytda sotuv qanday tezlikda ortadi?",
+      "v": [
+        "50 dona",
+        "2 dona",
+        "0,04 dona",
+        "1250 dona"
+      ],
+      "t": 1,
+      "izoh": "Logarifm hosilasi (ln x)' = 1/x, demak S'(x) = 50/x. Endi x = 25 ni qo'yamiz: 50/25 = 2. Ya'ni qo'shimcha bir mln so'm taxminan 2 dona sotuv qo'shadi. Javob: 2 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-logarifmik-model",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#c8eddba8"
+    },
+    {
+      "q": "Kursda o'quvchining o'zlashtirish darajasi O(t) = 40 + 12ln(t + 1) foiz bilan o'sadi, bunda t haftalarda. Uchinchi haftada o'zlashtirish qanday tezlikda ortadi?",
+      "v": [
+        "4 foiz/hafta",
+        "12 foiz/hafta",
+        "3 foiz/hafta",
+        "48 foiz/hafta"
+      ],
+      "t": 2,
+      "izoh": "Zanjir qoidasi bilan O'(t) = 12·1/(t + 1) = 12/(t + 1) bo'ladi. t = 3 ni qo'yamiz: maxraj 3 + 1 = 4 ga teng. Demak O'(3) = 12/4 = 3 foiz/hafta. Javob: 3 foiz/hafta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-logarifmik-model",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#2e1fe887"
+    },
+    {
+      "q": "Kompaniyaning bozordagi ulushi U(t) = 8ln(2t + 1) foiz qonuniyat bilan o'sadi, t oylarda hisoblanadi. Ikkinchi oyda ulush qanday tezlikda ortadi?",
+      "v": [
+        "1,6 foiz/oy",
+        "8 foiz/oy",
+        "16 foiz/oy",
+        "3,2 foiz/oy"
+      ],
+      "t": 3,
+      "izoh": "Ichki funksiya 2t + 1 ning hosilasi 2 ga teng, shuning uchun U'(t) = 8·2/(2t + 1) = 16/(2t + 1). t = 2 da maxraj 5 bo'ladi. Demak U'(2) = 16/5 = 3,2 foiz/oy. Javob: 3,2 foiz/oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-logarifmik-model",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#47023d8e"
+    },
+    {
+      "q": "f(x) = x·cos 2x funksiyaning hosilasini ko'paytma va zanjir qoidalarini birgalikda qo'llab toping.",
+      "v": [
+        "cos 2x − 2x·sin 2x",
+        "cos 2x + 2x·sin 2x",
+        "−2x·sin 2x",
+        "cos 2x − x·sin 2x"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytma qoidasida u = x, u' = 1 va v = cos 2x. Zanjir qoidasi bilan v' = −sin 2x·2 = −2sin 2x. Demak f'(x) = 1·cos 2x + x·(−2sin 2x) = cos 2x − 2x·sin 2x. Javob: cos 2x − 2x·sin 2x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-aralash-qoida",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#da1fe6a5"
+    },
+    {
+      "q": "f(x) = e^(2x)·sin x funksiyaning hosilasini soddalashtirilgan ko'rinishda yozing.",
+      "v": [
+        "e^(2x)(sin x + cos x)",
+        "e^(2x)(2sin x + cos x)",
+        "2e^(2x)·cos x",
+        "e^(2x)(2sin x − cos x)"
+      ],
+      "t": 1,
+      "izoh": "Birinchi ko'paytuvchi uchun zanjir qoidasi kerak: (e^(2x))' = 2e^(2x). Ko'paytma qoidasiga ko'ra f'(x) = 2e^(2x)·sin x + e^(2x)·cos x. Umumiy ko'paytuvchini qavsdan chiqaramiz: e^(2x)(2sin x + cos x). Javob: e^(2x)(2sin x + cos x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-aralash-qoida",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#518d3bd8"
+    },
+    {
+      "q": "f(x) = ln(x² + 1) murakkab funksiyaning hosilasi qaysi ifodaga teng?",
+      "v": [
+        "1/(x² + 1)",
+        "1/(2x)",
+        "2x/(x² + 1)",
+        "2x"
+      ],
+      "t": 2,
+      "izoh": "Tashqi funksiya — logarifm, uning hosilasi 1/(x² + 1) beradi. Ichki funksiya x² + 1 ning hosilasi 2x ga teng. Zanjir qoidasiga ko'ra ularni ko'paytiramiz. Javob: 2x/(x² + 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "murakkab-aralash-qoida",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#3af50f5d"
+    },
+    {
+      "q": "f(x) = sin x/(1 + cos x) funksiyaning hosilasini soddalashtirib toping.",
+      "v": [
+        "1/(1 + cos x)",
+        "cos x/(1 + cos x)",
+        "1/(1 − cos x)",
+        "−1/(1 + cos x)"
+      ],
+      "t": 0,
+      "izoh": "Bo'linma qoidasida surat cos x(1 + cos x) − sin x·(−sin x) = cos x + cos²x + sin²x bo'ladi. Asosiy trigonometrik ayniyat bo'yicha cos²x + sin²x = 1, demak surat cos x + 1. Uni maxraj (1 + cos x)² bilan qisqartiramiz. Javob: 1/(1 + cos x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-aralash-qoida",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#9de7db42"
+    },
+    {
+      "q": "O'quvchi f(x) = x⁵ funksiyaning hosilasini 5x⁵ deb yozdi. Bu yechimdagi xato nimadan iborat?",
+      "v": [
+        "Darajani bittaga kamaytirmagan",
+        "Koeffitsientni noto'g'ri tanlagan",
+        "Ishorani almashtirib yuborgan",
+        "Yechimda umuman xato yo'q"
+      ],
+      "t": 0,
+      "izoh": "Daraja qoidasi (xⁿ)' = n·xⁿ⁻¹ ikki amalni talab qiladi: darajani koeffitsientga chiqarish va darajani bittaga kamaytirish. O'quvchi koeffitsientni to'g'ri olgan, lekin darajani 4 ga tushirmagan. To'g'ri javob 5x⁴ bo'lishi kerak edi. Javob: darajani bittaga kamaytirmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xatoni-topish-hosilalashda",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#79b27035"
+    },
+    {
+      "q": "Talaba f(x) = x²·sin x funksiyaning hosilasini 2x·cos x deb hisobladi. Uning yechimidagi asosiy xatoni ko'rsating.",
+      "v": [
+        "Sinus hosilasini noto'g'ri olgan",
+        "Daraja qoidasini noto'g'ri qo'llagan",
+        "Javobda xato yo'q",
+        "Ko'paytma qoidasi o'rniga hosilalarni ko'paytirgan"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytmaning hosilasi hosilalar ko'paytmasiga teng emas. To'g'ri qoida (u·v)' = u'·v + u·v' ko'rinishida bo'ladi. Demak javob 2x·sin x + x²·cos x bo'lishi kerak edi. Javob: ko'paytma qoidasi o'rniga hosilalarni ko'paytirgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xatoni-topish-hosilalashda",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#79295bc9"
+    },
+    {
+      "q": "Sanjar f(x) = ln 5x funksiyaning hosilasini 5/x deb topdi. To'g'ri natijani ko'rsating.",
+      "v": [
+        "5/x",
+        "1/(5x)",
+        "5",
+        "1/x"
+      ],
+      "t": 3,
+      "izoh": "Zanjir qoidasiga ko'ra hosila 1/(5x) ni ichki hosila 5 ga ko'paytiramiz. Natijada 5/(5x) hosil bo'ladi va besh qisqaradi. Demak f'(x) = 1/x. Javob: 1/x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xatoni-topish-hosilalashda",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#d92d11c8"
+    },
+    {
+      "q": "Nodira f(x) = e^(3x) funksiyaning hosilasini e^(3x) deb yozdi. To'g'ri javob qanday bo'lishi kerak?",
+      "v": [
+        "e^(3x)",
+        "3e^(3x)",
+        "3x·e^(3x−1)",
+        "e^(3x)/3"
+      ],
+      "t": 1,
+      "izoh": "Eksponentaning hosilasi o'ziga teng, lekin ko'rsatkichda murakkab ifoda turibdi. Zanjir qoidasi bo'yicha ichki funksiya 3x ning hosilasi 3 ga ko'paytiriladi. Demak f'(x) = 3e^(3x). Javob: 3e^(3x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xatoni-topish-hosilalashda",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#15fb3610"
+    },
+    {
+      "q": "f(x) = x² + 5x va g(x) = 3x² − x funksiyalarning hosilalari qaysi nuqtada tenglashadi?",
+      "v": [
+        "x = 3",
+        "x = 6",
+        "x = 1,5",
+        "x = −1,5"
+      ],
+      "t": 2,
+      "izoh": "Hosilalarni yozamiz: f'(x) = 2x + 5 va g'(x) = 6x − 1. Ularni tenglaymiz: 2x + 5 = 6x − 1, bundan 4x = 6 va x = 1,5. Funksiyalarning o'zini tenglashtirish boshqa javob berardi. Javob: x = 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosilalarni-solishtirish",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#f4bdf911"
+    },
+    {
+      "q": "Quyidagi funksiyalardan qaysi birining hosilasi x = 1 nuqtada eng katta qiymatga ega bo'ladi?",
+      "v": [
+        "f(x) = x²",
+        "g(x) = x³",
+        "h(x) = ln x",
+        "k(x) = e^x"
+      ],
+      "t": 1,
+      "izoh": "Hosilalarni birlik nuqtada hisoblaymiz: 2x → 2, keyin 3x² → 3, so'ng 1/x → 1 va e^x → e. Bu yerda e taxminan 2,72 ga teng, ya'ni 3 dan kichik. Demak eng katta qiymat 3. Javob: g(x) = x³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosilalarni-solishtirish",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#e09848f8"
+    },
+    {
+      "q": "f(x) = 2^x va g(x) = x² funksiyalar berilgan. x = 2 nuqtada f'(2) ning g'(2) ga nisbati nechaga teng?",
+      "v": [
+        "ln 2",
+        "1",
+        "2",
+        "2·ln 2"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichli funksiya uchun f'(x) = 2^x·ln 2, demak f'(2) = 4·ln 2. Darajali funksiya uchun g'(x) = 2x, demak g'(2) = 4. Nisbatni tuzamiz: 4·ln 2 bo'linadi 4 ga va ln 2 qoladi. Javob: ln 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosilalarni-solishtirish",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#66b3835a"
+    },
+    {
+      "q": "Berilgan to'rt funksiyadan qaysi birining hosilasi x = 0 nuqtada nolga aylanadi?",
+      "v": [
+        "f(x) = sin x",
+        "h(x) = e^x",
+        "k(x) = ln(x + 1)",
+        "g(x) = cos x"
+      ],
+      "t": 3,
+      "izoh": "Nolda hosilalarni sanaymiz: cos 0 = 1, keyin e⁰ = 1, so'ng 1/(0 + 1) = 1. Kosinus uchun esa hosila −sin x bo'lib, −sin 0 = 0 chiqadi. Demak faqat kosinusda hosila nolga teng. Javob: g(x) = cos x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosilalarni-solishtirish",
+      "id": "matematika_anlz_m05-hosilalash-qoidalari-va-elementar-funksiyalar#a6203efd"
+    }
+  ]
+}

@@ -1,0 +1,531 @@
+{
+  "nom": "40-mavzu. Radioaktiv Nurlanishni Qayd Qilish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Radioaktiv nurlanishni o'rganishdagi asosiy maqsad nima?",
+      "v": [
+        "Zarralarning tabiatini, energiyasini va nurlanish intensivligini aniqlash",
+        "Moddaning rangini aniqlash",
+        "Moddaning haroratini o'lchash",
+        "Yadroning shaklini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Asosiy maqsad — radioaktiv yemirilishda chiqariladigan zarralarning tabiati, energiyasi va nurlanish intensivligini aniqlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#e58210c1"
+    },
+    {
+      "q": "Zarralarni qayd qilishning eng keng tarqalgan usullari nimaga asoslangan?",
+      "v": [
+        "Zarralarning ionlashtirish va fotokimyoviy ta'sirlariga",
+        "Zarralarning og'irligiga",
+        "Zarralarning rangiga",
+        "Zarralarning issiqligiga"
+      ],
+      "t": 0,
+      "izoh": "Zarralarni qayd qilish usullari ularning ionlashtirishiga va fotokimyoviy ta'sirlariga asoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#31a4b9ee"
+    },
+    {
+      "q": "Zarralarni qayd qiluvchi asboblar necha turga bo'linadi?",
+      "v": [
+        "Ikki turga",
+        "Uch turga",
+        "To'rt turga",
+        "Besh turga"
+      ],
+      "t": 0,
+      "izoh": "Asboblar ikki turga bo'linadi: zarra o'tganligini qayd qiluvchilar va zarra izini kuzatishga imkon beruvchilar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#e974591a"
+    },
+    {
+      "q": "Zarra o'tganligini qayd qiluvchi asboblarga qaysilar kiradi?",
+      "v": [
+        "Sintillatsion hisoblagich, Cherenkov hisoblagichi, gaz razryadli hisoblagich",
+        "Vilson kamerasi va pufakli kamera",
+        "Faqat fotoemulsiya",
+        "Mikroskop va teleskop"
+      ],
+      "t": 0,
+      "izoh": "Birinchi turga sintillatsion, Cherenkov, gaz razryadli, yarimo'tkazgichli hisoblagichlar va impulsli ionlashtiruvchi kamera kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#83e400ba"
+    },
+    {
+      "q": "Zarraning izini kuzatishga imkon beruvchi asboblarga qaysilar kiradi?",
+      "v": [
+        "Vilson kamerasi, diffuziyali kamera, pufakli kamera, fotoemulsiya usuli",
+        "Geyger hisoblagichi",
+        "Sintillatsion hisoblagich",
+        "Cherenkov hisoblagichi"
+      ],
+      "t": 0,
+      "izoh": "Zarra izini kuzatish (suratga tushirish) asboblariga Vilson kamerasi, diffuziyali kamera, pufakli kamera, fotoemulsiya usuli kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#521ac5b7"
+    },
+    {
+      "q": "Gaz razryadli hisoblagichlarning ikki xili qaysilar?",
+      "v": [
+        "Proporsional hisoblagich va Geyger–Myuller hisoblagichi",
+        "Vilson va pufakli kameralar",
+        "Sintillatsion va Cherenkov",
+        "Anod va katod"
+      ],
+      "t": 0,
+      "izoh": "Birinchisi — proporsional hisoblagich (nomustaqil gaz razryadi), ikkinchisi — Geyger–Myuller hisoblagichi (mustaqil gaz razryadi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#958887a3"
+    },
+    {
+      "q": "Geyger–Myuller hisoblagichida gaz razryadi qanday bo'ladi?",
+      "v": [
+        "Mustaqil",
+        "Nomustaqil",
+        "Yo'q",
+        "O'zgaruvchan"
+      ],
+      "t": 0,
+      "izoh": "Geyger–Myuller hisoblagichida gaz razryadi mustaqil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#75aebbd6"
+    },
+    {
+      "q": "Geyger–Myuller hisoblagichining ajrata olish vaqti qancha?",
+      "v": [
+        "10⁻³–10⁻⁷ s",
+        "1 s",
+        "10 s",
+        "10⁻¹⁰ s"
+      ],
+      "t": 0,
+      "izoh": "Geyger–Myuller hisoblagichlarining ajrata olish vaqti 10⁻³–10⁻⁷ s ni tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#0a475924"
+    },
+    {
+      "q": "Geyger hisoblagichining ish prinsipi nimaga asoslangan?",
+      "v": [
+        "Gazning ionlashishiga",
+        "Suyuqlikning qaynashiga",
+        "Bug'ning kondensatsiyasiga",
+        "Fotoemulsiyaga"
+      ],
+      "t": 0,
+      "izoh": "Geyger hisoblagichi gazning ionlashishiga asoslangan va faqat zarralarning o'tishinigina qayd etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#e5f6d862"
+    },
+    {
+      "q": "Geyger hisoblagichining tuzilishi qanday?",
+      "v": [
+        "Ichki tomoni metall qatlam (katod) bilan qoplangan shisha ballon va o'qi bo'ylab tortilgan ingichka metall tola (anod)",
+        "Ikkita linza va ekran",
+        "Porshen va kamera",
+        "Fotoemulsiya plastinkasi"
+      ],
+      "t": 0,
+      "izoh": "Geyger hisoblagichi katod sifatida metall qatlam qoplangan shisha ballon va anod sifatida ingichka metall toladan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#46a649ea"
+    },
+    {
+      "q": "Geyger hisoblagichini nima deb qarash mumkin?",
+      "v": [
+        "Silindrik kondensator deb",
+        "Rezistor deb",
+        "Diod deb",
+        "Transformator deb"
+      ],
+      "t": 0,
+      "izoh": "Geyger hisoblagichini silindrik kondensator deb qarash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#1f99c279"
+    },
+    {
+      "q": "Geyger hisoblagichida zarra uchib kirganda nima sodir bo'ladi?",
+      "v": [
+        "Gaz molekulalari ionlashib, gaz razryadi vujudga keladi va tok o'tadi",
+        "Gaz qaynaydi",
+        "Ballon yorilib ketadi",
+        "Tola eriydi"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlangan zarra gaz molekulalarini ionlashtirib, gaz razryadini vujudga keltiradi va hisoblagich orqali tok o'ta boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#c18fd977"
+    },
+    {
+      "q": "Geyger hisoblagichining sezgirligi qanday?",
+      "v": [
+        "Sekundiga 10 000 zarrani qayd qila oladi",
+        "Sekundiga 1 zarra",
+        "Sekundiga 100 zarra",
+        "Daqiqasiga 1 zarra"
+      ],
+      "t": 0,
+      "izoh": "Geyger hisoblagichining sezgirligi katta bo'lib, sekundiga 10 000 zarrani qayd qila oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#1ace92e4"
+    },
+    {
+      "q": "Pufakli kameraning ish prinsipi nimaga asoslangan?",
+      "v": [
+        "Qizdirilgan suyuqlikning zarra trayektoriyasi bo'ylab qaynashiga",
+        "Gazning ionlashishiga",
+        "Bug'ning kondensatsiyasiga",
+        "Metallning erishiga"
+      ],
+      "t": 0,
+      "izoh": "Pufakli kamera qizdirilgan suyuqlikning zarra trayektoriyasi bo'ylab qaynashiga asoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#a2c38864"
+    },
+    {
+      "q": "Pufakli kamerada ishchi modda sifatida nima ishlatiladi?",
+      "v": [
+        "Suyuq vodorod",
+        "Oddiy suv",
+        "Havo",
+        "Spirt bug'i"
+      ],
+      "t": 0,
+      "izoh": "Pufakli kamera suyuq vodorod solingan shisha kameradan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#6a1bca2c"
+    },
+    {
+      "q": "Pufakli kamerani kashf qilgani uchun kimga Nobel mukofoti berilgan?",
+      "v": [
+        "Gleyzerga, 1960-yilda",
+        "Vilsonga, 1911-yilda",
+        "Bekkerelga, 1896-yilda",
+        "Misovskiyga, 1927-yilda"
+      ],
+      "t": 0,
+      "izoh": "Pufakli kamerani kashf qilgani uchun Gleyzerga 1960-yilda Nobel mukofoti berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#288f511f"
+    },
+    {
+      "q": "Pufakli kamerada zarra uchib o'tganda pufakchalar qanday hosil bo'ladi?",
+      "v": [
+        "Bosim keskin pasaytiriladi, suyuqlik o'ta isitilgan holatga o'tib ionlarda bug' pufakchalari paydo bo'ladi",
+        "Suyuqlik muzlaydi",
+        "Gaz kengayadi",
+        "Kamera qiziydi"
+      ],
+      "t": 0,
+      "izoh": "Zarra o'tishida bosim keskin pasayadi, suyuqlik qaynaydi va ionlarda kichik bug' pufakchalari paydo bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#a2fe4c3d"
+    },
+    {
+      "q": "Pufakli kameraning Vilson kamerasidan afzalligi nimada?",
+      "v": [
+        "Ishchi modda zichligining katta bo'lishida — zarralar kuchli tormozlanib qisqa yo'l o'tadi",
+        "Kattaroq hajmli bo'lishida",
+        "Arzonligida",
+        "Yengil bo'lishida"
+      ],
+      "t": 0,
+      "izoh": "Pufakli kamerada ishchi modda zichligi katta; zarralar kuchli tormozlanadi va katta energiyali zarralarni ham tekshirish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#8dd503a1"
+    },
+    {
+      "q": "Sintillatsion hisoblagichning ish prinsipi nimaga asoslangan?",
+      "v": [
+        "Tez zarralarning fluoressiyalanuvchi ekranga tushishida ro'y beradigan chaqnash (sintillatsiya) kuzatilishiga",
+        "Gaz ionlashishiga",
+        "Suyuqlik qaynashiga",
+        "Bug' kondensatsiyasiga"
+      ],
+      "t": 0,
+      "izoh": "Sintillatsion hisoblagich zarra ekranga tushganda yuzaga keladigan chaqnashni kuzatishga asoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#65aff696"
+    },
+    {
+      "q": "Vilson kamerasi qachon va kim tomonidan yaratilgan?",
+      "v": [
+        "1911-yilda ingliz fizigi Ch. Vilson tomonidan",
+        "1927-yilda Misovskiy tomonidan",
+        "1960-yilda Gleyzer tomonidan",
+        "1932-yilda Chedvik tomonidan"
+      ],
+      "t": 0,
+      "izoh": "Vilson kamerasi 1911-yilda ingliz fizigi Ch. Vilson tomonidan yaratilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#20f9418c"
+    },
+    {
+      "q": "Vilson kamerasining ish prinsipi nimaga asoslangan?",
+      "v": [
+        "Tez zarralarning bug'simon holatdagi moddadan o'tganda molekulalarni ionlashtirishiga",
+        "Suyuqlikning qaynashiga",
+        "Gazning yonishiga",
+        "Metallning erishiga"
+      ],
+      "t": 0,
+      "izoh": "Vilson kamerasi tez zarralarning bug'simon holatdagi modda molekulalarini ionlashtirishiga asoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#d94f403e"
+    },
+    {
+      "q": "Vilson kamerasida porshen pastga tez harakatlanganda nima sodir bo'ladi?",
+      "v": [
+        "Gaz adiabatik kengayib soviydi va o'ta to'yingan holatga keladi",
+        "Gaz qiziydi",
+        "Gaz ionlashadi",
+        "Porshen eriydi"
+      ],
+      "t": 0,
+      "izoh": "Porshen pastga harakatlanganda gaz adiabatik kengayadi va soviydi, natijada o'ta to'yingan holatga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#08f792bc"
+    },
+    {
+      "q": "Vilson kamerasida zarra izi qanday hosil bo'ladi?",
+      "v": [
+        "Zarra vujudga keltirgan ionlarda bug' kondensatsiyalanib tomchilar hosil bo'ladi — ingichka tuman yo'l ko'rinishidagi iz qoladi",
+        "Zarra gazni yoqadi",
+        "Zarra porshenni itaradi",
+        "Zarra eriydi"
+      ],
+      "t": 0,
+      "izoh": "Zarra o'tganda ionlar hosil bo'ladi, ularda bug' kondensatsiyalanib tuman iz qoladi; uni kuzatish yoki rasmga olish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#fe39a5fd"
+    },
+    {
+      "q": "Vilson kamerasining ishchi hajmi nima bilan to'ldiriladi?",
+      "v": [
+        "Suvning yoki spirtning to'yingan bug'i bo'lgan havo yoki gaz bilan",
+        "Suyuq vodorod bilan",
+        "Vakuum bilan",
+        "Sof kislorod bilan"
+      ],
+      "t": 0,
+      "izoh": "Kameraning ishchi hajmi suvning yoki spirtning to'yingan bug'i bo'lgan havo yoki gaz bilan to'ldiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#c5ceee03"
+    },
+    {
+      "q": "Alfa-zarra Vilson kamerasida qanday iz qoldiradi?",
+      "v": [
+        "Qalin iz",
+        "Juda ingichka iz",
+        "Iz qoldirmaydi",
+        "Nuqtali iz"
+      ],
+      "t": 0,
+      "izoh": "Alfa-zarra gazni kuchli ionlashtiradi va shuning uchun Vilson kamerasida qalin iz qoldiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#39e0dd01"
+    },
+    {
+      "q": "Beta-zarra Vilson kamerasida qanday iz qoldiradi?",
+      "v": [
+        "Juda ingichka iz",
+        "Qalin iz",
+        "Iz qoldirmaydi",
+        "Keng chiziq"
+      ],
+      "t": 0,
+      "izoh": "Beta-zarra juda ingichka iz qoldiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#4f1f8103"
+    },
+    {
+      "q": "Gamma-nurlanish Vilson kamerasida qanday qayd etiladi?",
+      "v": [
+        "Gaz molekulalaridan urib chiqargan fotoelektronlari yordamida",
+        "To'g'ridan-to'g'ri qalin iz bilan",
+        "Suyuqlikni qaynatib",
+        "Iz qoldirib"
+      ],
+      "t": 0,
+      "izoh": "Gamma-nurlanish gaz molekulalaridan urib chiqargan fotoelektronlari yordamidagina qayd etilishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#07203e23"
+    },
+    {
+      "q": "Fotoemulsiya usulini kim va qachon taklif qilgan?",
+      "v": [
+        "1927-yilda rus fizigi L. Misovskiy",
+        "1911-yilda Vilson",
+        "1960-yilda Gleyzer",
+        "1919-yilda Rezerford"
+      ],
+      "t": 0,
+      "izoh": "1927-yilda rus fizigi L. Misovskiy zaryadlangan zarralar izini qayd qilishning fotoemulsiya usulini taklif qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#fd0cfaa2"
+    },
+    {
+      "q": "Fotoemulsiya usulida zarra izi qanday qoladi?",
+      "v": [
+        "Zarra emulsiya orqali o'tganda ionizatsiya vujudga keltiradi; surat ochilgandan keyin iz ko'rinadi",
+        "Zarra emulsiyani eritadi",
+        "Zarra emulsiyani qizdiradi",
+        "Zarra rang o'zgartiradi"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlangan zarralar fotoemulsiya orqali o'tganda ionizatsiya vujudga keltiradi; surat ochilgach izlar ko'rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#68f938d0"
+    },
+    {
+      "q": "Fotoemulsiya usuli qanday zarralarni o'rganishda ishlatiladi?",
+      "v": [
+        "Juda katta energiyali tezlatkich zarralari va kosmik nurlar reaksiyalarini o'rganishda",
+        "Faqat sekin elektronlarda",
+        "Faqat alfa-zarralarda",
+        "Faqat neytronlarda"
+      ],
+      "t": 0,
+      "izoh": "Emulsiya qalin bo'lgani uchun iz qisqa bo'ladi; usul katta energiyali zarralar va kosmik nurlar reaksiyalarini o'rganishda ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#618d81e1"
+    },
+    {
+      "q": "Nurlanish intensivligi deganda nima tushuniladi?",
+      "v": [
+        "Radioaktiv modda bir sekundda chiqaradigan zarralar soni",
+        "Zarralarning massasi",
+        "Zarralarning tezligi",
+        "Moddaning zichligi"
+      ],
+      "t": 0,
+      "izoh": "Nurlanish intensivligi — radioaktiv modda bir sekundda chiqaradigan zarralar soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#62f10f1e"
+    },
+    {
+      "q": "Geyger hisoblagichida R qarshilik bo'ylab potensial kamayishi qayerga uzatiladi?",
+      "v": [
+        "Kuchaytirgich va mexanik hisoblagichdan iborat qayd qiluvchi qurilmaga",
+        "Batareyaga",
+        "Katodga",
+        "Shisha ballonga"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish tebranishi kuchaytirgich va mexanik hisoblagichdan iborat qayd qiluvchi qurilmaga uzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#0524c3ee"
+    },
+    {
+      "q": "Pufakli kameraning hajmi qancha bo'lishi mumkin?",
+      "v": [
+        "3 sm³ dan bir necha metr kubgacha",
+        "Faqat 1 litr",
+        "Faqat 1 sm³",
+        "Faqat 10 m³"
+      ],
+      "t": 0,
+      "izoh": "Pufakli kameraning hajmi 3 sm³ dan bir necha metr kubgacha bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#62501017"
+    },
+    {
+      "q": "Pufakli kamerada boshlang'ich holatda suyuqlik nima uchun qaynab ketmaydi?",
+      "v": [
+        "Yuqori bosim ostida bo'lgani uchun",
+        "Juda sovuq bo'lgani uchun",
+        "Vakuumda bo'lgani uchun",
+        "Ionlashmaganini uchun"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich holatda suyuqlik yuqori bosim ostida bo'ladi, shuning uchun temperaturasi qaynashdan yuqori bo'lsa-da qanaydi emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#a1f688b6"
+    },
+    {
+      "q": "Vilson kamerasida izni qanday kuzatish mumkin?",
+      "v": [
+        "Kamerani yoritib, izlarni kuzatish yoki fotosuratga olish mumkin",
+        "Faqat mikroskop bilan",
+        "Faqat qorong'uda",
+        "Hech qanday mumkin emas"
+      ],
+      "t": 0,
+      "izoh": "Kamerani yoritib, izlarni kuzatish yoki fotosuratga olish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m40-radioaktiv-nurlanishni-qayd-qilish#608c4c65"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Uchburchak medianasi va o'rta chizig'i",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Toshkentdagi bog'da uchburchak shaklidagi gulzorning bir tomoni 34 m. Qolgan ikki tomonning o'rtalarini tutashtirib so'qmoq solindi. So'qmoq uzunligi necha metr?",
+      "v": [
+        "17 m",
+        "68 m",
+        "34 m",
+        "8,5 m"
+      ],
+      "t": 0,
+      "izoh": "Ikki tomonning o'rtalarini tutashtiruvchi kesma — uchburchakning o'rta chizig'i. O'rta chiziq uchinchi tomonga parallel va uning yarmiga teng, demak so'qmoq uzunligi 34 : 2 = 17 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='134.1,102.5 54,197.5 246,197.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='150' x2='190' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='94' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='190' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='131.3' y='89.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38' y='207.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.2' y='206.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='79.7' y='149.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='204.2' y='149.1' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='152.8' y='218.3' font-size='13' fill='%23334155' text-anchor='middle'%3E34 m%3C/text%3E%3Ctext x='142' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-topish",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#bfb4e39c"
+    },
+    {
+      "q": "Uchburchakning tomonlari 12 sm, 16 sm va 20 sm. Uning eng uzun tomoniga parallel bo'lgan o'rta chizig'i necha santimetrga teng?",
+      "v": [
+        "8 sm",
+        "6 sm",
+        "10 sm",
+        "40 sm"
+      ],
+      "t": 2,
+      "izoh": "Eng uzun tomon 20 sm. O'rta chiziq shu tomonga parallel bo'lib, uzunligi tomonning yarmiga teng: 20 : 2 = 10 sm. Boshqa tomonlarning yarmi bu yerda javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='176.9,103.9 54,196.1 246,196.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='115.4' y1='150' x2='211.4' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='115.4' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='211.4' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='181.7' y='91.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.7' y='204.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262' y='205.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='101.3' y='149' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='225.8' y='149.8' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='145.2' y='216.4' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='83.3' y='142.7' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='244' y='144.4' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='163.4' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-topish",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#abc0866d"
+    },
+    {
+      "q": "Tomning uchburchak shaklidagi peshtoqida pastki tayanch to'sini 5,6 m. Yon to'sinlarning o'rtalarini tutashtiruvchi mustahkamlagich uzunligi qancha bo'ladi?",
+      "v": [
+        "11,2 m",
+        "2,8 m",
+        "5,6 m",
+        "1,4 m"
+      ],
+      "t": 1,
+      "izoh": "Mustahkamlagich yon to'sinlarning o'rtalarini tutashtirgani uchun u o'rta chiziq bo'ladi. O'rta chiziq pastki to'singa parallel va uning yarmiga teng: 5,6 : 2 = 2,8 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,91.8 54,208.2 246,208.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='102' y1='150' x2='198' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='102' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='198' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='150' y='78.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.2' y='218.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.8' y='218.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='88.1' y='148.4' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='211.9' y='148.4' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='150' y='229.2' font-size='13' fill='%23334155' text-anchor='middle'%3E5,6 m%3C/text%3E%3Ctext x='150' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-topish",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#a74b9857"
+    },
+    {
+      "q": "ABC uchburchakda M nuqta AB tomonning, N nuqta esa AC tomonning o'rtasi. BC = 26 sm bo'lsa, MN kesmaning uzunligi qancha?",
+      "v": [
+        "52 sm",
+        "26 sm",
+        "6,5 sm",
+        "13 sm"
+      ],
+      "t": 3,
+      "izoh": "M va N — AB va AC tomonlarning o'rta nuqtalari, demak MN uchburchakning o'rta chizig'i. U BC ga parallel va BC ning yarmiga teng: MN = 26 : 2 = 13 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='128.4,99.4 54,200.6 246,200.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91.2' y1='150' x2='187.2' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='91.2' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='187.2' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='124.9' y='86.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.1' y='210.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.2' y='209.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='76.9' y='149.3' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='201.2' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='153.6' y='221.2' font-size='13' fill='%23334155' text-anchor='middle'%3E26 sm%3C/text%3E%3Ctext x='139.2' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-topish",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#cc6fae17"
+    },
+    {
+      "q": "Sirdaryo bo'yidagi uchburchak uchastkaning daryoga qaragan tomoni 96 m. Fermer qolgan ikki tomonning o'rtalarini tutashtirib ariq qazdi. Ariq uzunligi necha metr?",
+      "v": [
+        "192 m",
+        "96 m",
+        "48 m",
+        "32 m"
+      ],
+      "t": 2,
+      "izoh": "Ariq ikki tomonning o'rta nuqtalarini tutashtirgani uchun o'rta chiziq hisoblanadi. Shuning uchun uning uzunligi daryo tomonining yarmiga teng: 96 : 2 = 48 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='137.7,93.9 54,206.1 246,206.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='95.8' y1='150' x2='191.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='95.8' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='191.8' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='135.8' y='81' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='216.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.9' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='81.7' y='148.8' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='205.7' y='148.3' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='151.9' y='227' font-size='13' fill='%23334155' text-anchor='middle'%3E96 m%3C/text%3E%3Ctext x='143.8' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-topish",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#92766e72"
+    },
+    {
+      "q": "Muhandis uchburchak tayanch romning o'rta chizig'ini o'lchadi va 15 sm chiqdi. Shu o'rta chiziqqa parallel tomonning uzunligi necha santimetr?",
+      "v": [
+        "30 sm",
+        "7,5 sm",
+        "15 sm",
+        "45 sm"
+      ],
+      "t": 0,
+      "izoh": "O'rta chiziq o'ziga parallel tomonning yarmiga teng edi. Demak tomon o'rta chiziqdan ikki barobar uzun bo'ladi: 15 · 2 = 30 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='131.2,99 54,201 246,201' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='92.6' y1='150' x2='188.6' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='92.6' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='188.6' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='128.1' y='86.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.1' y='211' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.1' y='210.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='78.4' y='149.3' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='202.6' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='153.1' y='221.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='140.6' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-teskari",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#6f0628a8"
+    },
+    {
+      "q": "ABC uchburchakda K va L nuqtalar mos ravishda AB va AC tomonlarning o'rtalari. KL = 8,4 sm bo'lsa, BC tomonning uzunligi qancha?",
+      "v": [
+        "4,2 sm",
+        "8,4 sm",
+        "25,2 sm",
+        "16,8 sm"
+      ],
+      "t": 3,
+      "izoh": "KL — o'rta chiziq, u BC ga parallel. O'rta chiziq BC ning yarmiga teng bo'lgani uchun BC = 2 · 8,4 = 16,8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='141.5,97.2 54,202.8 246,202.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='97.7' y1='150' x2='193.7' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='97.7' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='193.7' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='140.1' y='84.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.1' y='212.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262' y='212.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='83.6' y='149' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='207.7' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3EL%3C/text%3E%3Ctext x='151.3' y='223.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='145.7' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E8,4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-teskari",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#01544f87"
+    },
+    {
+      "q": "Uchburchakning bir tomoni o'ziga parallel o'rta chiziqdan 11 sm uzunroq. Shu tomonning uzunligi necha santimetr?",
+      "v": [
+        "11 sm",
+        "22 sm",
+        "5,5 sm",
+        "33 sm"
+      ],
+      "t": 1,
+      "izoh": "Tomon uzunligini x deb olsak, o'rta chiziq x/2 bo'ladi. Shartga ko'ra x − x/2 = 11, ya'ni x/2 = 11 va bundan x = 22 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-teskari",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#c3dd53ff"
+    },
+    {
+      "q": "O'rta chiziq va unga parallel tomon uzunliklarining yig'indisi 39 sm ni tashkil etadi. Shu tomonning uzunligi qancha?",
+      "v": [
+        "26 sm",
+        "19,5 sm",
+        "13 sm",
+        "78 sm"
+      ],
+      "t": 0,
+      "izoh": "Tomonni x deb belgilaymiz, unga parallel o'rta chiziq x/2 ga teng. U holda x + x/2 = 39, ya'ni 3x/2 = 39 va x = 26 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-teskari",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#4a535b6a"
+    },
+    {
+      "q": "Duradgor uchburchak taxtaning ikki tomoni o'rtasini tutashtirib 24 sm li reyka qoqdi. Reykaga parallel tomonning uzunligi necha santimetr?",
+      "v": [
+        "12 sm",
+        "24 sm",
+        "48 sm",
+        "72 sm"
+      ],
+      "t": 2,
+      "izoh": "Reyka ikki tomonning o'rtalarini tutashtirgani uchun o'rta chiziq vazifasini bajaradi. O'rta chiziq parallel tomonning yarmi bo'lgani sababli tomon 24 · 2 = 48 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='131.5,94.1 54,205.9 246,205.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='92.8' y1='150' x2='188.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='92.8' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='188.8' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='128.7' y='81.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='216.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262' y='215.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='78.7' y='148.9' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='202.7' y='148.3' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='152.8' y='226.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='140.8' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-teskari",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#a7324da1"
+    },
+    {
+      "q": "Uchburchak simning perimetri 48 sm. Tomonlarning o'rta nuqtalari tutashtirilsa, hosil bo'lgan yangi uchburchakning perimetri necha santimetr bo'ladi?",
+      "v": [
+        "96 sm",
+        "24 sm",
+        "12 sm",
+        "48 sm"
+      ],
+      "t": 1,
+      "izoh": "Uchta o'rta chiziqning har biri mos tomonning yarmiga teng. Demak yangi uchburchak perimetri asl perimetrning yarmiga teng: 48 : 2 = 24 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='132.2,86.4 54,213.6 246,213.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='93.1,150 150,213.6 189.1,150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='93.1' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='150' cy='213.6' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='189.1' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='129.8' y='73.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.6' y='224.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='224.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='144.1' y='176.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-uchburchak-perimetri",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#548185e5"
+    },
+    {
+      "q": "Tomonlar o'rtalarini tutashtirishdan hosil bo'lgan uchburchakning perimetri 17,5 sm. Dastlabki uchburchakning perimetri qancha edi?",
+      "v": [
+        "8,75 sm",
+        "17,5 sm",
+        "52,5 sm",
+        "35 sm"
+      ],
+      "t": 3,
+      "izoh": "O'rta nuqtalarni tutashtirgan uchburchakning perimetri asl perimetrning yarmiga teng. Shuning uchun dastlabki perimetr 17,5 · 2 = 35 sm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='125,85.2 54,214.8 246,214.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='89.5,150 150,214.8 185.5,150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='89.5' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='150' cy='214.8' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='185.5' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='121.8' y='72.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.7' y='226.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='225.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='141.7' y='176.6' font-size='13' fill='%23334155' text-anchor='middle'%3E17,5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-uchburchak-perimetri",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#c10fd34f"
+    },
+    {
+      "q": "Uchburchakning tomonlari 13 sm, 14 sm va 15 sm. Uning uchta o'rta chizig'idan tuzilgan uchburchakning perimetri necha santimetr?",
+      "v": [
+        "42 sm",
+        "10,5 sm",
+        "21 sm",
+        "6,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Har bir o'rta chiziq mos tomonning yarmiga teng: 6,5 sm, 7 sm va 7,5 sm. Ularning yig'indisi 6,5 + 7 + 7,5 = 21 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='177.4,67.7 54,232.3 246,232.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='115.7,150 150,232.3 211.7,150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='115.7' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='150' cy='232.3' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='211.7' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='180.2' y='54.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.9' y='244.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.4' y='245.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='147.2' y='253.1' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='90.3' y='138' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='238.3' y='140.1' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-uchburchak-perimetri",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#3ca26bcd"
+    },
+    {
+      "q": "Rustam simdan tomonlari 24 sm, 30 sm va 36 sm bo'lgan uchburchak yasadi. So'ng tomonlarning o'rtalarini ham sim bilan tutashtirdi. Qo'shimcha sim uzunligi qancha?",
+      "v": [
+        "45 sm",
+        "90 sm",
+        "22,5 sm",
+        "180 sm"
+      ],
+      "t": 0,
+      "izoh": "Uchta o'rta chiziq mos tomonlarning yarmiga teng: 12 sm, 15 sm va 18 sm. Qo'shimcha sim ularning yig'indisi: 12 + 15 + 18 = 45 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='126,97.1 54,202.9 246,202.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='90,150 150,202.9 186,150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='90' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='150' cy='202.9' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='186' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='122.2' y='84.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.2' y='213.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.1' y='212.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='153.8' y='223.5' font-size='13' fill='%23334155' text-anchor='middle'%3E36 sm%3C/text%3E%3Ctext x='61.6' y='144.4' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='213.9' y='142.9' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-uchburchak-perimetri",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#a532b9ac"
+    },
+    {
+      "q": "Uchburchak shaklidagi maydonning yuzi 64 m². Tomonlar o'rtalarini tutashtirishdan hosil bo'lgan ichki uchburchakning yuzi necha kvadrat metr?",
+      "v": [
+        "32 m²",
+        "8 m²",
+        "4 m²",
+        "16 m²"
+      ],
+      "t": 3,
+      "izoh": "Ichki uchburchak asl uchburchakka o'xshash, o'xshashlik koeffitsiyenti 1/2. Yuzalar nisbati koeffitsiyent kvadratiga teng, demak yuz 64 : 4 = 16 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='131.4,87.6 54,212.4 246,212.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='92.7,150 150,212.4 188.7,150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='92.7' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='150' cy='212.4' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='188.7' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='128.9' y='74.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.6' y='223.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='222.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='143.8' y='175.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-yuza",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#02779d5b"
+    },
+    {
+      "q": "Tomonlar o'rta nuqtalaridan tuzilgan uchburchakning yuzi 9 sm². Dastlabki uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "18 sm²",
+        "36 sm²",
+        "27 sm²",
+        "81 sm²"
+      ],
+      "t": 1,
+      "izoh": "Ichki uchburchakning yuzi asl yuzning to'rtdan biriga teng. Demak asl yuz 9 · 4 = 36 sm². 18 javobi faqat ikkiga ko'paytirish xatosidan chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='130.5,89 54,211 246,211' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='92.3,150 150,211 188.3,150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='92.3' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='150' cy='211' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='188.3' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='127.8' y='76.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.5' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.8' y='221.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='143.5' y='175.3' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-yuza",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#161f80e0"
+    },
+    {
+      "q": "ABC uchburchakning yuzi 48 sm². M va N nuqtalar AB va AC tomonlarning o'rtalari. MNCB trapetsiyaning yuzi necha kvadrat santimetr?",
+      "v": [
+        "36 sm²",
+        "24 sm²",
+        "12 sm²",
+        "16 sm²"
+      ],
+      "t": 0,
+      "izoh": "AMN uchburchak ABC ga o'xshash, koeffitsiyenti 1/2, demak uning yuzi 48 : 4 = 12 sm². Trapetsiyaga qolgan qism tegadi: 48 − 12 = 36 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='94,150 190,150 246,208.3 54,208.3' fill='%235b4bc4' fill-opacity='0.1' stroke='none'/%3E%3Cpolygon points='134,91.7 54,208.3 246,208.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='150' x2='190' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='94' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='190' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='131.7' y='78.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.4' y='219' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.9' y='218.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='80' y='148.6' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='203.8' y='148.1' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-yuza",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#833eb96e"
+    },
+    {
+      "q": "Fermer uchburchak dalani tomonlar o'rtalarini tutashtirib to'rt qismga bo'ldi va o'rtadagi qismga beda ekdi. Dala yuzi 2,4 gektar bo'lsa, bedazor yuzi qancha?",
+      "v": [
+        "1,2 gektar",
+        "0,8 gektar",
+        "0,6 gektar",
+        "0,3 gektar"
+      ],
+      "t": 2,
+      "izoh": "Uchta o'rta chiziq dalani yuzalari o'zaro teng to'rtta uchburchakka ajratadi. Demak har bir qism butun yuzning choragiga teng: 2,4 : 4 = 0,6 gektar.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='134.6,90.3 54,209.7 246,209.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='94.3,150 150,209.7 190.3,150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='94.3' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='150' cy='209.7' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='190.3' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='132.4' y='77.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.4' y='220.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.8' y='219.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='144.9' y='174.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-yuza",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#7f0f45a8"
+    },
+    {
+      "q": "ABC uchburchakda M va N nuqtalar AB va AC tomonlarning o'rtalari, ∠ABC = 52°. MN kesma bilan AB tomon orasidagi ∠AMN burchak necha gradus?",
+      "v": [
+        "128°",
+        "52°",
+        "26°",
+        "104°"
+      ],
+      "t": 1,
+      "izoh": "MN — o'rta chiziq, shuning uchun u BC ga parallel. AB kesuvchi bo'lgani uchun ∠AMN va ∠ABC mos burchaklar bo'ladi, demak ∠AMN = 52°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='164.4,78.7 54,220 246,220' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='109.2' y1='149.4' x2='205.2' y2='149.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='109.2' cy='149.4' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='205.2' cy='149.4' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='164.4' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39' y='233' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='233' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='95' y='147' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='219' y='147' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-burchak",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#7ca874e1"
+    },
+    {
+      "q": "ABC uchburchakda ∠BAC = 74°, K va L nuqtalar esa AB va BC tomonlarning o'rtalari. KL to'g'ri chiziq AB bilan hosil qilgan ∠BKL burchakni toping.",
+      "v": [
+        "106°",
+        "37°",
+        "16°",
+        "74°"
+      ],
+      "t": 3,
+      "izoh": "K va L — AB va BC tomonlarning o'rtalari, demak KL o'rta chiziq va u AC ga parallel. AB kesuvchida ∠BKL va ∠BAC mos burchaklar, shuning uchun ∠BKL = 74°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='107.3,68.9 54,231.1 246,231.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80.7' y1='150' x2='176.7' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='80.7' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='176.7' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='103' y='56.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='39.8' y='244.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='261.3' y='242.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='67.2' y='147.4' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='189.2' y='145.7' font-size='13' fill='%23334155' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-burchak",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#b4245e7c"
+    },
+    {
+      "q": "Uchburchakning burchaklari 40°, 60° va 80°. Uning uchta o'rta chizig'idan tuzilgan uchburchakning eng katta burchagi necha gradus?",
+      "v": [
+        "40°",
+        "90°",
+        "80°",
+        "160°"
+      ],
+      "t": 2,
+      "izoh": "O'rta chiziqlardan tuzilgan uchburchak asl uchburchakka o'xshash, o'xshash shakllarda esa burchaklar o'zgarmaydi. Demak eng katta burchak yana 80° bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-burchak",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#ce6f7a8b"
+    },
+    {
+      "q": "ABC uchburchakda M — AB tomonning, N — AC tomonning o'rtasi. ∠ANM = 63° va ∠BAC = 47° bo'lsa, ∠ABC necha gradusga teng?",
+      "v": [
+        "70°",
+        "63°",
+        "47°",
+        "110°"
+      ],
+      "t": 0,
+      "izoh": "MN o'rta chiziq BC ga parallel bo'lgani uchun ∠ANM = ∠ACB = 63°. Uchburchak burchaklari yig'indisidan ∠ABC = 180° − 47° − 63° = 70°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='137.8,66 76.6,234 223.3,234' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107.2' y1='150' x2='180.6' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='107.2' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='180.6' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='137.8' y='55' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='61' y='247' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='238' y='247' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='93' y='148' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='195' y='148' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-burchak",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#054ad81d"
+    },
+    {
+      "q": "ABC uchburchakda AM mediana, O nuqta esa medianalarning kesishish nuqtasi. AM = 33 sm bo'lsa, AO kesma necha santimetr?",
+      "v": [
+        "16,5 sm",
+        "11 sm",
+        "24,75 sm",
+        "22 sm"
+      ],
+      "t": 3,
+      "izoh": "Medianalarning kesishish nuqtasi har bir medianani uchidan boshlab 2:1 nisbatda bo'ladi. Demak AO = (2/3) · 33 = 22 sm, qolgan OM esa 11 sm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='129,81.6 54,218.4 246,218.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='129' y1='81.6' x2='150' y2='218.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='218.4' x2='187.5' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='218.4' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='187.5' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='143' cy='172.8' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='126.4' y='68.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.9' y='230.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.5' y='229.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='152.3' y='237.2' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='200.8' y='147.2' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='134' y='187.8' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='146' y='131.2' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3EAM = 33 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "centroid-2-1-nisbat",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#5157b1ab"
+    },
+    {
+      "q": "Uchburchakda medianalar kesishgan nuqtadan uchgacha bo'lgan masofa 10 sm. Shu nuqtadan o'tuvchi to'liq mediananing uzunligi qancha?",
+      "v": [
+        "20 sm",
+        "15 sm",
+        "30 sm",
+        "5 sm"
+      ],
+      "t": 1,
+      "izoh": "Kesishish nuqtasi medianani 2:1 nisbatda bo'ladi, uchdan hisoblangan qism to'liq mediananing 2/3 qismidir. Demak mediana 10 · 3 : 2 = 15 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='127.8,82.6 54,217.4 246,217.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='127.8' y1='82.6' x2='150' y2='217.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='217.4' x2='186.9' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='217.4' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='186.9' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='142.6' cy='172.5' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='125' y='69.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.8' y='229.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.6' y='228.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='152.4' y='236.2' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='200.3' y='147.2' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='133.6' y='187.5' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='145.2' y='131.5' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "centroid-2-1-nisbat",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#6f4ec441"
+    },
+    {
+      "q": "Medianalar kesishish nuqtasidan tomonning o'rtasigacha bo'lgan masofa 4,5 sm. Shu mediananing to'liq uzunligi necha santimetr?",
+      "v": [
+        "13,5 sm",
+        "9 sm",
+        "6,75 sm",
+        "18 sm"
+      ],
+      "t": 0,
+      "izoh": "Tomon o'rtasidan kesishish nuqtasigacha bo'lgan bo'lak mediananing uchdan bir qismi. Demak to'liq mediana 4,5 · 3 = 13,5 sm ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='139.9,84.9 54,215.1 246,215.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='139.9' y1='84.9' x2='150' y2='215.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='215.1' x2='192.9' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='215.1' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='192.9' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='146.6' cy='171.7' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='138.6' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.6' y='226.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.6' y='225.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='151.2' y='234.1' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='206.5' y='147.6' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='137.6' y='186.7' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='158.3' y='197.4' font-size='13' fill='%23334155' text-anchor='start'%3E4,5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "centroid-2-1-nisbat",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#1cf91a91"
+    },
+    {
+      "q": "Uchburchak shaklidagi karton plastinka medianalar kesishgan nuqtada ipga osilsa muvozanatda turadi. Bir medianasi 27 sm bo'lsa, ip nuqtasi uchdan qanchada joylashgan?",
+      "v": [
+        "13,5 sm",
+        "9 sm",
+        "18 sm",
+        "20,25 sm"
+      ],
+      "t": 2,
+      "izoh": "Plastinkaning og'irlik markazi medianalarning kesishish nuqtasidir. U medianani uchidan 2:1 nisbatda bo'lgani uchun masofa (2/3) · 27 = 18 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='130.1,80.7 54,219.3 246,219.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='130.1' y1='80.7' x2='150' y2='219.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='219.3' x2='188' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='219.3' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='188' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='143.4' cy='173.1' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='127.7' y='67.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.9' y='231.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.5' y='230.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='152.1' y='238.1' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='201.3' y='147.1' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='134.4' y='188.1' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='146.7' y='130.9' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "centroid-2-1-nisbat",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#e3d7c4bd"
+    },
+    {
+      "q": "ABC uchburchakda BN mediana, O medianalar kesishgan nuqta va ON = 7 sm. BO kesmaning uzunligi necha santimetr?",
+      "v": [
+        "3,5 sm",
+        "14 sm",
+        "10,5 sm",
+        "21 sm"
+      ],
+      "t": 1,
+      "izoh": "O nuqta BN medianani BO : ON = 2 : 1 nisbatda bo'ladi. ON = 7 sm bo'lgani uchun BO = 2 · 7 = 14 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='160.9,77.6 54,222.4 246,222.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160.9' y1='77.6' x2='150' y2='222.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='222.4' x2='203.4' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='222.4' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='203.4' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='153.6' cy='174.1' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='162.2' y='64.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.7' y='233.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.1' y='234.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='148.9' y='241.4' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='216.9' y='147.5' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='144.6' y='189.1' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='103.8' y='195.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='178.5' y='159.1' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "centroid-2-1-nisbat",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#3863cfa7"
+    },
+    {
+      "q": "Uchburchakning bir medianasida kesishish nuqtasi ajratgan ikki bo'lakning ayirmasi 6 sm. Shu mediananing to'liq uzunligi qancha?",
+      "v": [
+        "12 sm",
+        "9 sm",
+        "24 sm",
+        "18 sm"
+      ],
+      "t": 3,
+      "izoh": "Bo'laklar 2x va x ko'rinishda bo'ladi. Ularning ayirmasi 2x − x = x, demak x = 6 sm. To'liq mediana esa 2x + x = 3x = 18 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='139.1,77.6 54,222.4 246,222.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='139.1' y1='77.6' x2='150' y2='222.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='222.4' x2='192.6' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='222.4' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='192.6' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='146.4' cy='174.1' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='137.8' y='64.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.9' y='234.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.3' y='233.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='151.1' y='241.4' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='205.9' y='147.1' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='137.4' y='189.1' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "centroid-kesma-yigindi-ayirma",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#adfc5f5c"
+    },
+    {
+      "q": "Mediananing kesishish nuqtasi ajratgan ikki bo'lagi yig'indisi 21 sm. Uchdan kesishish nuqtasigacha bo'lgan bo'lak necha santimetr?",
+      "v": [
+        "7 sm",
+        "10,5 sm",
+        "14 sm",
+        "21 sm"
+      ],
+      "t": 2,
+      "izoh": "Bo'laklarning yig'indisi mediananing o'zi, ya'ni 21 sm. Uchdan hisoblangan bo'lak medianaga nisbatan 2/3 qismni tashkil qiladi: 21 · 2 : 3 = 14 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "centroid-kesma-yigindi-ayirma",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#9814ba64"
+    },
+    {
+      "q": "ABC uchburchakda AM va BN medianalar O nuqtada kesishadi. AM = 21 sm va BN = 18 sm bo'lsa, AO va BO kesmalarning yig'indisi qancha?",
+      "v": [
+        "26 sm",
+        "39 sm",
+        "13 sm",
+        "19,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Har bir medianada uchdan kesishish nuqtasigacha bo'lgan qism mediananing 2/3 qismi. AO = (2/3) · 21 = 14 sm, BO = (2/3) · 18 = 12 sm, yig'indisi 26 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='139.7,76.9 54,223.1 246,223.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='139.7' y1='76.9' x2='150' y2='223.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='223.1' x2='192.9' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='223.1' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='192.9' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='146.6' cy='174.4' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='138.5' y='63.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39' y='235' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.3' y='234.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='151' y='242.1' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='206.2' y='147' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='137.6' y='189.4' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='153.1' y='129.6' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='100.3' y='195.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "centroid-kesma-yigindi-ayirma",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#3f725e51"
+    },
+    {
+      "q": "ABC uchburchakda O medianalar kesishish nuqtasi, M va N esa BC va AC tomonlarning o'rtalari. OM = 5 sm va ON = 6 sm bo'lsa, AM va BN medianalar uzunliklarining yig'indisi qancha?",
+      "v": [
+        "11 sm",
+        "22 sm",
+        "16,5 sm",
+        "33 sm"
+      ],
+      "t": 3,
+      "izoh": "Har bir mediana kesishish nuqtasidan tomon o'rtasigacha bo'lgan qismidan uch barobar uzun. AM = 3 · 5 = 15 sm, BN = 3 · 6 = 18 sm, yig'indisi 15 + 18 = 33 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='139.1,77.6 54,222.4 246,222.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='139.1' y1='77.6' x2='150' y2='222.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='222.4' x2='192.6' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='222.4' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='192.6' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='146.4' cy='174.1' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='137.8' y='64.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.9' y='234.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.3' y='233.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='151.1' y='241.4' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='205.9' y='147.1' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='137.4' y='189.1' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='158.2' y='202.3' font-size='13' fill='%23334155' text-anchor='start'%3E5 sm%3C/text%3E%3Ctext x='169.5' y='159.1' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "centroid-kesma-yigindi-ayirma",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#a5cba931"
+    },
+    {
+      "q": "Katetlari 6 sm va 8 sm bo'lgan to'g'ri burchakli uchburchakda to'g'ri burchak uchidan gipotenuzaga o'tkazilgan mediananing uzunligi qancha?",
+      "v": [
+        "10 sm",
+        "5 sm",
+        "7 sm",
+        "3 sm"
+      ],
+      "t": 1,
+      "izoh": "Avval gipotenuzani topamiz: c = √(6² + 8²) = √100 = 10 sm. To'g'ri burchakdan gipotenuzaga o'tkazilgan mediana gipotenuzaning yarmiga teng, ya'ni 10 : 2 = 5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,78 54,222 246,222' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54' y1='222' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='54,210 66,210 66,222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44.6' y='67.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.4' y='236.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.9' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='162' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='159.4' y='240.1' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='38.1' y='148' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='102' y='182' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gipotenuza-medianasi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#f43d87ee"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning gipotenuzasi 22 sm. To'g'ri burchak uchidan gipotenuza o'rtasiga o'tkazilgan kesma necha santimetr?",
+      "v": [
+        "11 sm",
+        "22 sm",
+        "44 sm",
+        "5,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Bu kesma gipotenuzaga o'tkazilgan mediana hisoblanadi. To'g'ri burchakli uchburchakda u gipotenuzaning yarmiga teng: 22 : 2 = 11 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,110 54,190 246,190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54' y1='190' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='54,178 66,178 66,190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='40.9' y='103.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='200.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.6' y='197.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163.9' y='148.2' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='177.7' y='142.5' font-size='13' fill='%23334155' text-anchor='middle'%3E22 sm%3C/text%3E%3Ctext x='102' y='166' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gipotenuza-medianasi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#9329eeb3"
+    },
+    {
+      "q": "Katetlari 9 sm va 12 sm bo'lgan to'g'ri burchakli uchburchakning gipotenuzasiga o'tkazilgan medianasi necha santimetr?",
+      "v": [
+        "15 sm",
+        "10,5 sm",
+        "7,5 sm",
+        "6 sm"
+      ],
+      "t": 2,
+      "izoh": "Gipotenuza c = √(9² + 12²) = √225 = 15 sm. Gipotenuzaga o'tkazilgan mediana uning yarmiga teng: 15 : 2 = 7,5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,78 54,222 246,222' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54' y1='222' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='54,210 66,210 66,222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44.6' y='67.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.4' y='236.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.9' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='162' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='159.4' y='240.1' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='38.1' y='148' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='102' y='182' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gipotenuza-medianasi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#a38fd98c"
+    },
+    {
+      "q": "Deraza romining to'g'ri burchakli uchburchak shaklidagi qismida katetlar 1,2 m va 1,6 m. Usta to'g'ri burchakdan gipotenuza o'rtasiga tayanch o'rnatdi. Tayanch uzunligi qancha?",
+      "v": [
+        "2 m",
+        "1 m",
+        "1,4 m",
+        "0,7 m"
+      ],
+      "t": 1,
+      "izoh": "Gipotenuza √(1,2² + 1,6²) = √4 = 2 m. Tayanch — gipotenuzaga o'tkazilgan mediana, u gipotenuzaning yarmiga teng: 2 : 2 = 1 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,78 54,222 246,222' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54' y1='222' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='54,210 66,210 66,222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44.6' y='67.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.4' y='236.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.9' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='162' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='159.4' y='240.1' font-size='13' fill='%23334155' text-anchor='middle'%3E1,6 m%3C/text%3E%3Ctext x='38.1' y='148' font-size='13' fill='%23334155' text-anchor='middle'%3E1,2 m%3C/text%3E%3Ctext x='102' y='182' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gipotenuza-medianasi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#7dc82d4f"
+    },
+    {
+      "q": "Katetlari 5 sm va 12 sm bo'lgan to'g'ri burchakli uchburchakda gipotenuza o'rtasi bilan to'g'ri burchak uchi orasidagi masofa necha santimetr?",
+      "v": [
+        "13 sm",
+        "8,5 sm",
+        "6 sm",
+        "6,5 sm"
+      ],
+      "t": 3,
+      "izoh": "Gipotenuza √(5² + 12²) = √169 = 13 sm. Izlangan masofa gipotenuzaga o'tkazilgan mediana bo'lib, gipotenuzaning yarmiga teng: 6,5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,110 54,190 246,190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54' y1='190' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='54,178 66,178 66,190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='40.9' y='103.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='200.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.6' y='197.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163.9' y='148.2' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='163.1' y='204.9' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='37.4' y='150.5' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='102' y='166' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gipotenuza-medianasi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#e8be28ce"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda gipotenuzaga o'tkazilgan mediana 12 sm ga teng. Gipotenuzaning uzunligi necha santimetr?",
+      "v": [
+        "6 sm",
+        "12 sm",
+        "24 sm",
+        "36 sm"
+      ],
+      "t": 2,
+      "izoh": "Gipotenuzaga o'tkazilgan mediana gipotenuzaning yarmiga teng edi. Demak gipotenuza mediananing ikki barobariga teng: 12 · 2 = 24 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,87.6 54,212.4 246,212.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54' y1='212.4' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='54,200.4 66,200.4 66,212.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43.6' y='78.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.7' y='225.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.2' y='221.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='162.6' y='145.8' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='175.2' y='137.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='102' y='177.2' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gipotenuza-medianasi-teskari",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#c7f4d900"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda gipotenuzaga o'tkazilgan mediana 8,5 sm, bir kateti esa 8 sm. Ikkinchi katet necha santimetr?",
+      "v": [
+        "15 sm",
+        "9 sm",
+        "17 sm",
+        "12 sm"
+      ],
+      "t": 0,
+      "izoh": "Gipotenuza c = 2 · 8,5 = 17 sm. Pifagor teoremasidan ikkinchi katet √(17² − 8²) = √(289 − 64) = √225 = 15 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,98.8 54,201.2 246,201.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54' y1='201.2' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='54,189.2 66,189.2 66,201.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='42.4' y='90.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39' y='213.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.4' y='209.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163.2' y='146.9' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='161.6' y='217.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='37.6' y='149.6' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='102' y='171.6' font-size='13' fill='%23334155' text-anchor='middle'%3E8,5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gipotenuza-medianasi-teskari",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#141f3b8f"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning gipotenuzasiga o'tkazilgan medianasi 10 sm, bir kateti 12 sm. Uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "60 sm²",
+        "120 sm²",
+        "48 sm²",
+        "96 sm²"
+      ],
+      "t": 3,
+      "izoh": "Gipotenuza 2 · 10 = 20 sm. Ikkinchi katet √(20² − 12²) = √256 = 16 sm. Yuz esa (12 · 16) : 2 = 96 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,78 54,222 246,222' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54' y1='222' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='54,210 66,210 66,222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44.6' y='67.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.4' y='236.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.9' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='162' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='38.1' y='148' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='102' y='182' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gipotenuza-medianasi-teskari",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#52bfe1e4"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning perimetri 30 sm, gipotenuzasiga o'tkazilgan medianasi esa 6,5 sm. Uchburchakning yuzi qancha?",
+      "v": [
+        "60 sm²",
+        "30 sm²",
+        "65 sm²",
+        "84,5 sm²"
+      ],
+      "t": 1,
+      "izoh": "Gipotenuza 2 · 6,5 = 13 sm, demak katetlar yig'indisi 30 − 13 = 17 sm. a + b = 17 va a² + b² = 169 dan 2ab = 289 − 169 = 120, ya'ni ab = 60 va yuz 60 : 2 = 30 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,110 54,190 246,190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54' y1='190' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='54,178 66,178 66,190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='40.9' y='103.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='200.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.6' y='197.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='163.9' y='148.2' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='102' y='166' font-size='13' fill='%23334155' text-anchor='middle'%3E6,5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gipotenuza-medianasi-teskari",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#2d3ea3f5"
+    },
+    {
+      "q": "Uchburchakda bir tomonga o'tkazilgan mediana shu tomonning yarmiga teng bo'lib chiqdi. Bu uchburchak haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Shu tomonga qarama-qarshi burchak to'g'ri burchak",
+        "Uchburchak albatta teng tomonli",
+        "Shu tomonga qarama-qarshi burchak 60° ga teng",
+        "Uchburchak albatta teng yonli"
+      ],
+      "t": 0,
+      "izoh": "Mediana tomonni teng ikkiga bo'lgani uchun hosil bo'lgan ikkala uchburchak teng yonli bo'ladi. Asosdagi burchaklarni α va β desak, 2α + 2β = 180°, ya'ni α + β = 90°. Demak qarama-qarshi burchak to'g'ri burchakdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='120,72 54,228 246,228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='120' y1='72' x2='150' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='102' y1='222' x2='102' y2='234' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='198' y1='222' x2='198' y2='234' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='228' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='120' y='61' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39' y='241' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='241' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='246' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gipotenuza-medianasi-teskari",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#27eede2c"
+    },
+    {
+      "q": "To'g'ri burchakli ABC uchburchakda ∠B = 90°, BM esa gipotenuzaga o'tkazilgan mediana. ∠A = 35° bo'lsa, ∠MBC burchak necha gradus?",
+      "v": [
+        "35°",
+        "45°",
+        "55°",
+        "70°"
+      ],
+      "t": 2,
+      "izoh": "M gipotenuzaning o'rtasi bo'lgani uchun MB = MC va MBC uchburchak teng yonli. ∠C = 90° − 35° = 55°, teng yonlilikdan ∠MBC = ∠C = 55°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='91.2,66 91.2,234 208.8,234' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91.2' y1='234' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='91.2,222 103.2,222 103.2,234' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='84' y='56' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='78' y='247' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='222' y='247' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='162' y='146' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gipotenuza-medianasi-burchak",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#cd68abc5"
+    },
+    {
+      "q": "To'g'ri burchakli ABC uchburchakda ∠B = 90° va BM mediana. ∠ABM = 28° bo'lsa, ∠C burchak nechaga teng?",
+      "v": [
+        "28°",
+        "62°",
+        "152°",
+        "31°"
+      ],
+      "t": 1,
+      "izoh": "M gipotenuza o'rtasi bo'lgani uchun MB = MA, demak ABM teng yonli va ∠A = ∠ABM = 28°. Uchburchakda ∠C = 90° − 28° = 62°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='96,54 96,246 204,246' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='96' y1='246' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='96,234 108,234 108,246' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='91.4' y='41.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='87.7' y='264.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='216.7' y='261.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='157.4' y='140.9' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gipotenuza-medianasi-burchak",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#f8dde0a1"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda gipotenuzaga o'tkazilgan mediana kichik katetning uzunligiga teng bo'lib chiqdi. Uchburchakning kichik o'tkir burchagi necha gradus?",
+      "v": [
+        "45°",
+        "60°",
+        "15°",
+        "30°"
+      ],
+      "t": 3,
+      "izoh": "Mediana gipotenuzaning yarmiga teng, demak kichik katet ham gipotenuzaning yarmi. 30 gradusli burchak qarshisida yotgan katet gipotenuzaning yarmiga teng bo'ladi, shuning uchun kichik burchak 30°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,70 54,231 246,231' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54' y1='231' x2='150' y2='150.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150.5' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='54,219 66,219 66,231' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44' y='60' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40' y='244' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='244' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='162' y='147' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gipotenuza-medianasi-burchak",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#adbadd3a"
+    },
+    {
+      "q": "To'g'ri burchakli ABC uchburchakda ∠B = 90°, BM mediana va ∠BMC = 104°. ∠A burchakni toping.",
+      "v": [
+        "38°",
+        "76°",
+        "52°",
+        "26°"
+      ],
+      "t": 2,
+      "izoh": "M gipotenuza o'rtasi bo'lgani uchun MB = MC. MBC teng yonli uchburchakda ∠MCB = (180° − 104°) : 2 = 38°. Demak ∠A = 90° − 38° = 52°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,76.2 54,223.8 246,223.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54' y1='223.8' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='54,211.8 66,211.8 66,223.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44.7' y='65.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.5' y='238.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.9' y='233.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='161.9' y='144.9' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gipotenuza-medianasi-burchak",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#bf178a5e"
+    },
+    {
+      "q": "Uchburchakning tomonlari BC = 10 sm, CA = 8 sm va AB = 6 sm. A uchidan BC tomonga o'tkazilgan mediananing uzunligi necha santimetr?",
+      "v": [
+        "5 sm",
+        "7 sm",
+        "4,8 sm",
+        "9 sm"
+      ],
+      "t": 0,
+      "izoh": "Mediana formulasi m² = (2b² + 2c² − a²)/4 dan foydalanamiz. Bu yerda a = 10, b = 8, c = 6, demak m² = (128 + 72 − 100)/4 = 25 va m = 5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='123.1,103.9 54,196.1 246,196.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123.1' y1='103.9' x2='150' y2='196.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='196.1' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='118.3' y='91.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38' y='205.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.3' y='204.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='154.2' y='214.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='159' y='230.8' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='72.3' y='149.2' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='200.6' y='148.3' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='147.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mediana-formulasi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#3d02bebe"
+    },
+    {
+      "q": "Tomonlari 8 sm, 7 sm va 9 sm bo'lgan uchburchakda 8 sm li tomonga o'tkazilgan mediananing uzunligi qancha?",
+      "v": [
+        "8 sm",
+        "4 sm",
+        "6 sm",
+        "7 sm"
+      ],
+      "t": 3,
+      "izoh": "m² = (2 · 7² + 2 · 9² − 8²)/4 = (98 + 162 − 64)/4 = 196/4 = 49. Demak mediana m = √49 = 7 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='198,69.5 54,230.5 246,230.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='198' y1='69.5' x2='150' y2='230.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='230.5' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='202.9' y='57.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.7' y='241.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.1' y='244' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='145.7' y='248.9' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='140.9' y='265.2' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='111.9' y='144.5' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='237.3' y='146.7' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='185' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mediana-formulasi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#970604ee"
+    },
+    {
+      "q": "Uchburchakning tomonlari 29 sm, 29 sm va 40 sm. 40 sm li tomonga o'tkazilgan mediananing uzunligi qancha?",
+      "v": [
+        "29 sm",
+        "21 sm",
+        "14,5 sm",
+        "20 sm"
+      ],
+      "t": 1,
+      "izoh": "m² = (2 · 29² + 2 · 29² − 40²)/4 = (1682 + 1682 − 1600)/4 = 441. Mediana m = 21 sm bo'lib, teng yonlilik tufayli u ayni paytda balandlik hamdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,60 50,165.0 250,165.0' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='60' x2='150' y2='165.0' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='165.0' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='150' y='49' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='36.0' y='179.0' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='264.0' y='179.0' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='183.0' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='150' y='201.0' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3Ctext x='78.0' y='108.5' font-size='13' fill='%23334155' text-anchor='middle'%3E29 sm%3C/text%3E%3Ctext x='222.0' y='108.5' font-size='13' fill='%23334155' text-anchor='middle'%3E29 sm%3C/text%3E%3Ctext x='159' y='120.5' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-formulasi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#bb481189"
+    },
+    {
+      "q": "Katetlari 6 sm va 8 sm bo'lgan to'g'ri burchakli uchburchakda 8 sm li katetga o'tkazilgan mediana uzunligi necha santimetr?",
+      "v": [
+        "2√13 sm",
+        "5 sm",
+        "√73 sm",
+        "4 sm"
+      ],
+      "t": 0,
+      "izoh": "Mediana 8 sm li katetga o'tkazilgan, qolgan tomonlar 6 sm va 10 sm. m² = (2 · 36 + 2 · 100 − 64)/4 = 208/4 = 52, demak m = √52 = 2√13 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,78 54,222 246,222' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54' y1='78' x2='150' y2='222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='222' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='54,210 66,210 66,222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44.6' y='67.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.4' y='236.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.9' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='158.3' y='238.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='166.6' y='251' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='38.1' y='148' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='112' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-formulasi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#5cba28b5"
+    },
+    {
+      "q": "Yer o'lchovchi uchburchak uchastkaning tomonlarini 17 m, 17 m va 16 m deb o'lchadi. 16 m li tomon o'rtasidan qarama-qarshi uchgacha bo'lgan masofa qancha?",
+      "v": [
+        "8 m",
+        "17 m",
+        "15 m",
+        "16 m"
+      ],
+      "t": 2,
+      "izoh": "Izlangan masofa 16 m li tomonga o'tkazilgan mediana. m² = (2 · 17² + 2 · 17² − 16²)/4 = (578 + 578 − 256)/4 = 225, demak masofa 15 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,60 54,240 246,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='60' x2='150' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='240' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='150' y='47' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.6' y='253' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.4' y='253' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='259' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3E16 m%3C/text%3E%3Ctext x='87.6' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E17 m%3C/text%3E%3Ctext x='212.4' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E17 m%3C/text%3E%3Ctext x='161' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-formulasi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#64736c85"
+    },
+    {
+      "q": "Uchburchakning ikki tomoni 7 sm va 9 sm. Uchinchi tomonga o'tkazilgan mediana 7 sm bo'lsa, uchinchi tomonning uzunligi qancha?",
+      "v": [
+        "16 sm",
+        "8 sm",
+        "14 sm",
+        "4 sm"
+      ],
+      "t": 1,
+      "izoh": "Mediana formulasidan a² = 2b² + 2c² − 4m². Bu yerda a² = 2 · 49 + 2 · 81 − 4 · 49 = 98 + 162 − 196 = 64, demak a = 8 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-formulasi-teskari",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#fdab9b21"
+    },
+    {
+      "q": "Uchburchakning bir tomoni 10 sm, unga o'tkazilgan mediana 12 sm, qolgan tomonlaridan biri esa 13 sm. Ikkinchi tomon necha santimetr?",
+      "v": [
+        "12 sm",
+        "10 sm",
+        "24 sm",
+        "13 sm"
+      ],
+      "t": 3,
+      "izoh": "4m² = 2b² + 2c² − a² formulasiga qiymatlarni qo'yamiz: 4 · 144 = 2 · 169 + 2c² − 100. Bundan 576 = 238 + 2c², ya'ni 2c² = 338 va c = 13 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-formulasi-teskari",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#08bc6af8"
+    },
+    {
+      "q": "Uchburchakning ikki tomoni 9 sm va 12 sm, ular orasidagi uchinchi tomonga o'tkazilgan mediana 7,5 sm. Uchinchi tomonning uzunligi qancha?",
+      "v": [
+        "21 sm",
+        "10,5 sm",
+        "15 sm",
+        "7,5 sm"
+      ],
+      "t": 2,
+      "izoh": "a² = 2b² + 2c² − 4m² = 2 · 81 + 2 · 144 − 4 · 56,25 = 450 − 225 = 225. Demak uchinchi tomon a = 15 sm va uchburchak to'g'ri burchakli ekan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-formulasi-teskari",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#d81933de"
+    },
+    {
+      "q": "Uchburchakning ikki tomoni 9 sm va 13 sm, uchinchi tomonga o'tkazilgan medianasi esa 10 sm. Uchinchi tomonning uzunligi necha santimetr?",
+      "v": [
+        "10 sm",
+        "20 sm",
+        "11 sm",
+        "4 sm"
+      ],
+      "t": 0,
+      "izoh": "a² = 2b² + 2c² − 4m² = 2 · 81 + 2 · 169 − 4 · 100 = 162 + 338 − 400 = 100. Demak uchinchi tomon a = 10 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-formulasi-teskari",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#6a3cd81e"
+    },
+    {
+      "q": "Uchburchakning tomonlari 6 sm, 8 sm va 10 sm. Uning uchta medianasi uzunliklari kvadratlarining yig'indisi nechaga teng?",
+      "v": [
+        "200",
+        "100",
+        "400",
+        "150"
+      ],
+      "t": 3,
+      "izoh": "Medianalar kvadratlari yig'indisi tomonlar kvadratlari yig'indisining 3/4 qismiga teng. Tomonlar kvadratlari yig'indisi 36 + 64 + 100 = 200, demak javob 200 · 3 : 4 = 150.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "medianalar-kvadratlari-yigindisi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#e7e13c22"
+    },
+    {
+      "q": "Uchburchakning medianalari uzunliklari kvadratlarining yig'indisi 96 ga teng. Uning tomonlari kvadratlarining yig'indisi qancha?",
+      "v": [
+        "72",
+        "128",
+        "192",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "Medianalar kvadratlari yig'indisi tomonlar kvadratlari yig'indisining 3/4 qismi edi. Demak tomonlar kvadratlari yig'indisi 96 · 4 : 3 = 128.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "medianalar-kvadratlari-yigindisi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#f9654db8"
+    },
+    {
+      "q": "Uchburchakning tomonlari 5 sm, 7 sm va 8 sm bo'lsa, uning uchta medianasi kvadratlarining yig'indisi nechaga teng?",
+      "v": [
+        "103,5",
+        "138",
+        "69",
+        "184"
+      ],
+      "t": 0,
+      "izoh": "Tomonlar kvadratlari yig'indisi 25 + 49 + 64 = 138. Medianalar kvadratlari yig'indisi uning 3/4 qismi: 138 · 3 : 4 = 103,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "medianalar-kvadratlari-yigindisi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#19a2a1e3"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning gipotenuzasi 10 sm. Uning uchta medianasi kvadratlarining yig'indisi nechaga teng?",
+      "v": [
+        "75",
+        "100",
+        "150",
+        "300"
+      ],
+      "t": 2,
+      "izoh": "Katetlar kvadratlarining yig'indisi gipotenuza kvadratiga, ya'ni 100 ga teng. Uchala tomon kvadratlari yig'indisi 100 + 100 = 200, medianalar kvadratlari yig'indisi esa uning 3/4 qismi: 150.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='123.1,103.9 54,196.1 246,196.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123.1' y1='103.9' x2='150' y2='196.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='196.1' x2='184.6' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='246' y1='196.1' x2='88.6' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='196.1' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='184.6' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='88.6' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='141' cy='165.4' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='118.3' y='91.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38' y='205.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.3' y='204.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='154.2' y='214.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='198.7' y='149' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='74.2' y='149.8' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "medianalar-kvadratlari-yigindisi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#7efd6860"
+    },
+    {
+      "q": "Uchburchakning ikki medianasi 6 sm va 9 sm, uchinchi medianasining kvadrati esa 27 ga teng. Tomonlar kvadratlarining yig'indisi qancha?",
+      "v": [
+        "108",
+        "192",
+        "144",
+        "288"
+      ],
+      "t": 1,
+      "izoh": "Medianalar kvadratlari yig'indisi 36 + 81 + 27 = 144. Tomonlar kvadratlari yig'indisi bundan 4/3 marta katta: 144 · 4 : 3 = 192.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "medianalar-kvadratlari-yigindisi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#baebdae2"
+    },
+    {
+      "q": "Uchburchak shaklidagi tomorqaning yuzi 54 m². Aka-uka uni bir tomon o'rtasidan qarama-qarshi uchgacha to'siq tortib bo'lishdi. Har biriga necha kvadrat metrdan tegadi?",
+      "v": [
+        "18 m²",
+        "36 m²",
+        "13,5 m²",
+        "27 m²"
+      ],
+      "t": 3,
+      "izoh": "To'siq uchburchakning medianasi bo'ladi. Mediana uchburchakni yuzalari teng ikki qismga ajratadi, chunki hosil bo'lgan uchburchaklarning asoslari teng va balandligi umumiy: 54 : 2 = 27 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='139.3,86.1 54,213.9 246,213.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='139.3' y1='86.1' x2='150' y2='213.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='213.9' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='137.9' y='73.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.6' y='225' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.6' y='224.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='151.3' y='232.8' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='155.7' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mediana-yuzani-teng-boladi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#37f6c66a"
+    },
+    {
+      "q": "ABC uchburchakda AM mediana va ABM uchburchakning yuzi 18 sm². ABC uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "18 sm²",
+        "9 sm²",
+        "36 sm²",
+        "54 sm²"
+      ],
+      "t": 2,
+      "izoh": "Mediana uchburchakni yuzalari teng ikkiga bo'ladi, ya'ni ABM va ACM yuzalari bir xil. Demak ABC yuzi 18 · 2 = 36 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='138.7,87.6 54,212.4 246,212.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='138.7' y1='87.6' x2='150' y2='212.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='212.4' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='137.2' y='74.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.5' y='223.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='222.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='151.4' y='231.3' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mediana-yuzani-teng-boladi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#a37e5fab"
+    },
+    {
+      "q": "ABC uchburchakda AM mediana, K nuqta esa AM kesmaning o'rtasi. ABC uchburchakning yuzi 48 sm² bo'lsa, ABK uchburchakning yuzi qancha?",
+      "v": [
+        "12 sm²",
+        "24 sm²",
+        "6 sm²",
+        "16 sm²"
+      ],
+      "t": 0,
+      "izoh": "AM mediana ABC ni teng ikkiga bo'ladi, demak ABM yuzi 48 : 2 = 24 sm². BK esa ABM uchburchakda AM tomonga o'tkazilgan mediana, shuning uchun ABK yuzi 24 : 2 = 12 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='126.5,83.9 54,216.1 246,216.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='126.5' y1='83.9' x2='150' y2='216.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='216.1' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='123.5' y='71.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.8' y='227.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.6' y='226.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='152.6' y='234.9' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-yuzani-teng-boladi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#987818f7"
+    },
+    {
+      "q": "ABC uchburchakning yuzi 60 sm². M — BC ning o'rtasi, N — AM ning o'rtasi, P esa BN kesmaning o'rtasi. ABP uchburchakning yuzi qancha?",
+      "v": [
+        "15 sm²",
+        "30 sm²",
+        "3,75 sm²",
+        "7,5 sm²"
+      ],
+      "t": 3,
+      "izoh": "AM mediana bo'lgani uchun ABM yuzi 30 sm². BN — ABM uchburchakning medianasi, demak ABN yuzi 15 sm². AP esa ABN uchburchakda BN ga o'tkazilgan mediana, shuning uchun ABP yuzi 7,5 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='127.8,82.6 54,217.4 246,217.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='127.8' y1='82.6' x2='150' y2='217.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='217.4' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='125' y='69.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.8' y='229.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.6' y='228.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='152.4' y='236.2' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-yuzani-teng-boladi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#4b53392f"
+    },
+    {
+      "q": "Uchburchakning uchala medianasi o'tkazilganda u oltita kichik uchburchakka ajraladi. Katta uchburchakning yuzi 72 sm² bo'lsa, har bir kichik uchburchakning yuzi qancha?",
+      "v": [
+        "36 sm²",
+        "12 sm²",
+        "24 sm²",
+        "6 sm²"
+      ],
+      "t": 1,
+      "izoh": "Uchala mediana uchburchakni yuzalari o'zaro teng oltita uchburchakka ajratadi. Demak har birining yuzi 72 : 6 = 12 sm² ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='139.9,84.9 54,215.1 246,215.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='139.9' y1='84.9' x2='150' y2='215.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='215.1' x2='192.9' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='246' y1='215.1' x2='96.9' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='215.1' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='192.9' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='96.9' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='146.6' cy='171.7' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='138.6' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.6' y='226.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.6' y='225.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='137.6' y='186.7' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "centroid-olti-uchburchak",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#b4c414b5"
+    },
+    {
+      "q": "Medianalar kesishish nuqtasi O bo'lgan ABC uchburchakda AOB uchburchakning yuzi 24 sm². ABC uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "72 sm²",
+        "48 sm²",
+        "96 sm²",
+        "144 sm²"
+      ],
+      "t": 0,
+      "izoh": "Medianalar kesishish nuqtasi uchburchakni yuzalari teng uchta uchburchakka bo'ladi: AOB, BOC va AOC. Demak ABC yuzi 24 · 3 = 72 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='127.8,82.6 54,217.4 246,217.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='127.8' y1='82.6' x2='150' y2='217.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='217.4' x2='186.9' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='246' y1='217.4' x2='90.9' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='217.4' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='186.9' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='90.9' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='142.6' cy='172.5' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='125' y='69.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.8' y='229.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.6' y='228.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='133.6' y='187.5' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "centroid-olti-uchburchak",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#d9a08cfb"
+    },
+    {
+      "q": "Uchburchak shaklidagi bog'ning yuzi 90 m². Bog'bon medianalar kesishgan nuqtadan uchala uchga so'qmoq soldi. Ikki so'qmoq orasidagi bitta qismning yuzi qancha?",
+      "v": [
+        "45 m²",
+        "15 m²",
+        "30 m²",
+        "22,5 m²"
+      ],
+      "t": 2,
+      "izoh": "So'qmoqlar bog'ni yuzalari teng uchta uchburchakka ajratadi, chunki kesishish nuqtasi har bir medianada bir xil nisbatda yotadi. Demak har bir qism 90 : 3 = 30 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='131.4,87.6 54,212.4 246,212.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='131.4' y1='87.6' x2='150' y2='212.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='212.4' x2='188.7' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='246' y1='212.4' x2='92.7' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='212.4' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='188.7' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='92.7' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='143.8' cy='170.8' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='128.9' y='74.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.6' y='223.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='222.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='134.8' y='185.8' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "centroid-olti-uchburchak",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#8fbb94f4"
+    },
+    {
+      "q": "ABC uchburchakda O medianalar kesishish nuqtasi, M esa BC tomonning o'rtasi. BOM uchburchakning yuzi 9 sm² bo'lsa, ABC uchburchakning yuzi qancha?",
+      "v": [
+        "27 sm²",
+        "54 sm²",
+        "36 sm²",
+        "18 sm²"
+      ],
+      "t": 1,
+      "izoh": "Uchala mediana uchburchakni yuzalari teng oltita uchburchakka ajratadi va BOM shulardan biri. Demak ABC yuzi 9 · 6 = 54 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='139.1,77.6 54,222.4 246,222.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='139.1' y1='77.6' x2='150' y2='222.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='222.4' x2='192.6' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='246' y1='222.4' x2='96.6' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='222.4' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='192.6' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='96.6' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='146.4' cy='174.1' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='137.8' y='64.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.9' y='234.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.3' y='233.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='151.1' y='241.4' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='205.9' y='147.1' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='83.1' y='147.5' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='137.4' y='189.1' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "centroid-olti-uchburchak",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#5fcdc84e"
+    },
+    {
+      "q": "Tomoni 12 sm bo'lgan teng tomonli uchburchakning medianasi necha santimetrga teng?",
+      "v": [
+        "6 sm",
+        "12√3 sm",
+        "3√3 sm",
+        "6√3 sm"
+      ],
+      "t": 3,
+      "izoh": "Teng tomonli uchburchakda mediana ayni paytda balandlik hamdir. U tomonni ikkiga bo'ladi, shuning uchun m = √(12² − 6²) = √108 = 6√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,66.9 54,233.1 246,233.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='66.9' x2='150' y2='233.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='233.1' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='150' y='53.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.3' y='245.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.7' y='245.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='252.1' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='150' y='269.1' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='87.3' y='145.5' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='212.7' y='145.5' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='161' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-tomonli-mediana",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#c1ca316f"
+    },
+    {
+      "q": "Teng tomonli uchburchak shaklidagi maydonchaning tomoni 18 m. Uning markazidan uchigacha bo'lgan masofa necha metr?",
+      "v": [
+        "9√3 m",
+        "3√3 m",
+        "6√3 m",
+        "9 m"
+      ],
+      "t": 2,
+      "izoh": "Mediana m = 18√3 : 2 = 9√3 m. Markaz — medianalarning kesishish nuqtasi, u uchdan 2/3 masofada joylashadi: (2/3) · 9√3 = 6√3 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,66.9 54,233.1 246,233.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='66.9' x2='150' y2='233.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='233.1' x2='198' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='246' y1='233.1' x2='102' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='233.1' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='198' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='102' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='150' cy='177.7' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='150' y='53.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.3' y='245.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.7' y='245.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='141' y='192.7' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-tomonli-mediana",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#56e2e515"
+    },
+    {
+      "q": "Teng tomonli uchburchakning medianasi 9√3 sm ga teng. Uning perimetri necha santimetr?",
+      "v": [
+        "54 sm",
+        "27 sm",
+        "36 sm",
+        "18 sm"
+      ],
+      "t": 0,
+      "izoh": "Teng tomonli uchburchakda mediana a√3/2 ga teng. a√3/2 = 9√3 tenglamadan a = 18 sm, perimetr esa 3 · 18 = 54 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,66.9 54,233.1 246,233.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='66.9' x2='150' y2='233.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='233.1' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='150' y='53.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.3' y='245.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.7' y='245.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='252.1' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='161' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E9√3 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-tomonli-mediana",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#7e00c5a2"
+    },
+    {
+      "q": "Teng tomonli uchburchakda medianalar kesishish nuqtasidan tomonigacha bo'lgan masofa 4 sm. Uchburchakning tomoni necha santimetr?",
+      "v": [
+        "12 sm",
+        "4√3 sm",
+        "24 sm",
+        "8√3 sm"
+      ],
+      "t": 3,
+      "izoh": "Bu masofa mediananing uchdan bir qismi: m/3 = 4, demak m = 12 sm. Mediana a√3/2 = 12 tenglamadan a = 24/√3 = 8√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,66.9 54,233.1 246,233.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='66.9' x2='150' y2='233.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='233.1' x2='198' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='246' y1='233.1' x2='102' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='233.1' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='198' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='102' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='150' cy='177.7' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='150' y='53.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.3' y='245.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.7' y='245.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='141' y='192.7' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-tomonli-mediana",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#e56ac445"
+    },
+    {
+      "q": "Teng tomonli uchburchakning uchta medianasi kvadratlarining yig'indisi 81 ga teng. Uning tomoni necha santimetr?",
+      "v": [
+        "9 sm",
+        "6 sm",
+        "3√3 sm",
+        "12 sm"
+      ],
+      "t": 1,
+      "izoh": "Uchala mediana teng, shuning uchun 3m² = 81 va m² = 27. Mediana kvadrati 3a²/4 ga teng, demak 3a²/4 = 27, a² = 36 va a = 6 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-tomonli-mediana",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#e040eeec"
+    },
+    {
+      "q": "Teng yonli uchburchakning yon tomonlari 25 sm, asosi esa 14 sm. Asosga o'tkazilgan mediananing uzunligi qancha?",
+      "v": [
+        "24 sm",
+        "7 sm",
+        "25 sm",
+        "12,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Asosga o'tkazilgan mediana teng yonli uchburchakda balandlik ham bo'ladi. Asosning yarmi 7 sm, Pifagor teoremasidan m = √(25² − 7²) = √(625 − 49) = √576 = 24 sm. 7 sm — faqat asosning yarmi, 25 sm — yon tomonning o'zi, 12,5 sm esa yon tomonning yarmi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,40 97.5,220.0 202.5,220.0' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='40' x2='150' y2='220.0' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='220.0' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='150' y='29' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='83.5' y='234.0' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='216.5' y='234.0' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='238.0' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='150' y='256.0' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='101.8' y='126.0' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Ctext x='198.3' y='126.0' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Ctext x='159' y='138.0' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-mediana",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#7e851c8a"
+    },
+    {
+      "q": "Chodirning old tomoni teng yonli uchburchak shaklida: yon qirralari 10 m, asosi 12 m. Asos o'rtasidan tepagacha tortilgan ustunning balandligi qancha?",
+      "v": [
+        "6 m",
+        "10 m",
+        "8 m",
+        "4 m"
+      ],
+      "t": 2,
+      "izoh": "Ustun asosga o'tkazilgan mediana bo'lib, teng yonli uchburchakda u balandlik hamdir. Asosning yarmi 6 m, demak ustun √(10² − 6²) = √64 = 8 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,86 54,214 246,214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='86' x2='150' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='214' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='150' y='73' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.5' y='224.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.5' y='224.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='233' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='150' y='250' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='86.5' y='147.1' font-size='13' fill='%23334155' text-anchor='middle'%3E10 m%3C/text%3E%3Ctext x='213.5' y='147.1' font-size='13' fill='%23334155' text-anchor='middle'%3E10 m%3C/text%3E%3Ctext x='161' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-mediana",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#0d9098cd"
+    },
+    {
+      "q": "Teng yonli uchburchakning asosi 16 sm, asosga o'tkazilgan medianasi esa 15 sm. Uning yon tomoni necha santimetr?",
+      "v": [
+        "31 sm",
+        "17 sm",
+        "23 sm",
+        "8 sm"
+      ],
+      "t": 1,
+      "izoh": "Mediana teng yonli uchburchakda balandlik bo'lib, asosni 8 sm dan ikkiga bo'ladi. Yon tomon √(15² + 8²) = √289 = 17 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,60 54,240 246,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='60' x2='150' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='240' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='150' y='47' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.6' y='253' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.4' y='253' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='259' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='161' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-mediana",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#385280e1"
+    },
+    {
+      "q": "Teng yonli uchburchakning perimetri 36 sm, asosga o'tkazilgan medianasi 6 sm. Uchburchakning asosi necha santimetr?",
+      "v": [
+        "10 sm",
+        "12 sm",
+        "8 sm",
+        "16 sm"
+      ],
+      "t": 3,
+      "izoh": "Asos a, yon tomon b bo'lsin: 2b + a = 36 va b² − (a/2)² = 36. Ikkinchi tenglamaga b = (36 − a)/2 ni qo'ysak, (1296 − 72a)/4 = 36 hosil bo'ladi, bundan a = 16 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,114 54,186 246,186' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='114' x2='150' y2='186' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='186' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='150' y='101' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.5' y='194.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.5' y='194.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='205' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='161' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-yonli-mediana",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#c21b6db0"
+    },
+    {
+      "q": "ABC uchburchakda AM mediana. AM nur bo'ylab M dan narida MD = AM bo'ladigan D nuqta belgilandi. AC = 14 sm bo'lsa, BD kesmaning uzunligi qancha?",
+      "v": [
+        "7 sm",
+        "28 sm",
+        "14 sm",
+        "21 sm"
+      ],
+      "t": 2,
+      "izoh": "ABDC to'rtburchakda AD va BC diagonallar kesishish nuqtasida teng ikkiga bo'linadi, demak u parallelogramm. Parallelogrammda qarama-qarshi tomonlar teng, shuning uchun BD = AC = 14 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='124.6,54 83.6,150 216.4,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='124.6' y1='54' x2='175.4' y2='246' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='83.6' y1='150' x2='175.4' y2='246' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='216.4' y1='150' x2='175.4' y2='246' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='120.3' y='41.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='66.6' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='233.4' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='179.7' y='266.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='177.2' y='90.4' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-uzaytirish-parallelogramm",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#ba1a3759"
+    },
+    {
+      "q": "ABC uchburchakda AB = 7 sm, AC = 11 sm va AM mediana 6 sm. AM ni M orqali ikki barobar uzaytirib D nuqta olindi. ABD uchburchakning perimetri qancha?",
+      "v": [
+        "30 sm",
+        "24 sm",
+        "18 sm",
+        "36 sm"
+      ],
+      "t": 0,
+      "izoh": "ABDC parallelogramm bo'lgani uchun BD = AC = 11 sm, AD esa 2 · 6 = 12 sm. Perimetr AB + BD + DA = 7 + 11 + 12 = 30 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='109.1,62.5 54,150 246,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='109.1' y1='62.5' x2='190.9' y2='237.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='54' y1='150' x2='190.9' y2='237.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='246' y1='150' x2='190.9' y2='237.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='101.9' y='51.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='263' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='198.1' y='256.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='67.3' y='101.1' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='186.7' y='95.9' font-size='13' fill='%23334155' text-anchor='middle'%3E11 sm%3C/text%3E%3Ctext x='139.6' y='110.3' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-uzaytirish-parallelogramm",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#25bbc9f4"
+    },
+    {
+      "q": "ABC uchburchakda AM mediana M nuqtadan narigacha MD = AM bo'ladigan qilib uzaytirildi. ABDC to'rtburchak qanday shakl bo'ladi?",
+      "v": [
+        "Trapetsiya",
+        "Romb",
+        "To'g'ri to'rtburchak",
+        "Parallelogramm"
+      ],
+      "t": 3,
+      "izoh": "AD va BC kesmalar M nuqtada kesishadi va shu nuqtada teng ikkiga bo'linadi: BM = MC hamda AM = MD. Diagonallari kesishish nuqtasida teng ikkiga bo'linadigan to'rtburchak parallelogrammdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='132,54 70,150 230,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='132' y1='54' x2='168' y2='246' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='70' y1='150' x2='168' y2='246' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='230' y1='150' x2='168' y2='246' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='128.9' y='41.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='53' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='247' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='171.1' y='266.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-uzaytirish-parallelogramm",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#65b871ae"
+    },
+    {
+      "q": "ABC uchburchakda AM mediana uzaytirilib MD = AM bo'ladigan D nuqta olindi. ABD uchburchakning yuzi ABC uchburchak yuziga nisbatan qanday?",
+      "v": [
+        "ABC yuzining yarmi",
+        "ABC yuziga teng",
+        "ABC yuzidan ikki marta katta",
+        "ABC yuzining uchdan biri"
+      ],
+      "t": 1,
+      "izoh": "Uzaytirish natijasida ABDC parallelogramm hosil bo'ladi. Uning BC diagonali shaklni ABC va DBC ga, AD diagonali esa ABD va ACD ga ajratadi. Har bir diagonal parallelogrammni teng ikkiga bo'lgani uchun ABD va ABC yuzalari bir xil.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='133.5,54 72.4,150 227.6,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='133.5' y1='54' x2='166.5' y2='246' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='72.4' y1='150' x2='166.5' y2='246' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='227.6' y1='150' x2='166.5' y2='246' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='130.6' y='41.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='55.4' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='244.6' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='169.4' y='266.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-uzaytirish-parallelogramm",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#5b603ed5"
+    },
+    {
+      "q": "Uchburchakning ikki tomoni 11 sm va 19 sm. Ular orasidagi burchakka qarama-qarshi tomonga o'tkazilgan mediana uchun quyidagi qiymatlardan qaysi biri mumkin emas?",
+      "v": [
+        "16 sm",
+        "5 sm",
+        "9 sm",
+        "14 sm"
+      ],
+      "t": 0,
+      "izoh": "Medianani ikki barobar uzaytirsak, tomonlari 11 sm, 19 sm va 2m bo'lgan uchburchak hosil bo'ladi. Uchburchak tengsizligidan 19 − 11 < 2m < 19 + 11, ya'ni 4 < m < 15. 16 bu oraliqqa tushmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-uzunlik-chegarasi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#a22a2c96"
+    },
+    {
+      "q": "Uchburchakning ikki tomoni 6 sm va 10 sm. Ular orasidagi burchakka qarama-qarshi tomonga o'tkazilgan mediananing eng katta butun qiymati necha santimetr?",
+      "v": [
+        "8 sm",
+        "5 sm",
+        "7 sm",
+        "6 sm"
+      ],
+      "t": 2,
+      "izoh": "Medianani ikki barobar uzaytirganda tomonlari 6 sm, 10 sm va 2m bo'lgan uchburchak chiqadi. Tengsizlikdan 10 − 6 < 2m < 10 + 6, ya'ni 2 < m < 8. Eng katta butun qiymat 7 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-uzunlik-chegarasi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#60b45538"
+    },
+    {
+      "q": "Uchburchakning ikki tomoni 9 sm va 15 sm bo'lsa, ular orasidagi burchakka qarshi tomonga o'tkazilgan mediana qaysi oraliqda yotadi?",
+      "v": [
+        "6 sm dan 24 sm gacha",
+        "3 sm dan 12 sm gacha",
+        "4,5 sm dan 7,5 sm gacha",
+        "9 sm dan 15 sm gacha"
+      ],
+      "t": 1,
+      "izoh": "Medianani ikki barobar uzaytirib tomonlari 9 sm, 15 sm va 2m bo'lgan uchburchak hosil qilamiz. Uchburchak tengsizligi 15 − 9 < 2m < 15 + 9 ni beradi, ya'ni 6 < 2m < 24 va 3 < m < 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-uzunlik-chegarasi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#33a0ed4a"
+    },
+    {
+      "q": "ABC uchburchakda AC = 6 sm va AB = 8 sm. B va C uchlaridan o'tkazilgan medianalar o'zaro perpendikulyar bo'lsa, BC tomonning uzunligi qancha?",
+      "v": [
+        "10 sm",
+        "√10 sm",
+        "4√5 sm",
+        "2√5 sm"
+      ],
+      "t": 3,
+      "izoh": "B va C uchlaridan chiqqan medianalar perpendikulyar bo'lganda b² + c² = 5a² munosabat o'rinli bo'ladi. Bu yerda 36 + 64 = 5a², ya'ni a² = 20 va a = 2√5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='236.8,54 63.2,246 207.8,246' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='63.2' y1='246' x2='222.3' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='207.8' y1='246' x2='150' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='222.3' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='169.3' cy='182' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='159,188.2 165.2,198.5 175.5,192.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='244.7' y='43' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='48.6' y='258.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='216.6' y='264.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='235.1' y='146.2' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='142.8' y='139' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='175' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "medianalar-perpendikulyar",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#4d71ee86"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari 6 sm va 8 sm. Katetlarga o'tkazilgan ikki mediana uzunliklari kvadratlarining yig'indisi nechaga teng?",
+      "v": [
+        "100",
+        "150",
+        "125",
+        "75"
+      ],
+      "t": 2,
+      "izoh": "6 sm li katetga o'tkazilgan mediana kvadrati (2 · 64 + 2 · 100 − 36)/4 = 73, 8 sm li katetga o'tkazilgani esa (2 · 36 + 2 · 100 − 64)/4 = 52. Ularning yig'indisi 73 + 52 = 125.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,78 54,222 246,222' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54' y1='78' x2='150' y2='222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='246' y1='222' x2='54' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='222' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='54' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Cpolyline points='54,210 66,210 66,222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44.6' y='67.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='40.4' y='236.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.9' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='158.3' y='238.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='42' y='156' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='150' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='36' y='114' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "katet-medianalari-yigindisi",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#f3ce37d5"
+    },
+    {
+      "q": "Uchburchakda B va C uchlaridan chiqqan medianalar o'zaro perpendikulyar va BC = 4 sm. AB va AC tomonlar kvadratlarining yig'indisi nechaga teng?",
+      "v": [
+        "80",
+        "20",
+        "16",
+        "40"
+      ],
+      "t": 0,
+      "izoh": "Medianalar perpendikulyar bo'lganda AB² + AC² = 5 · BC² munosabat bajariladi. BC = 4 sm bo'lgani uchun yig'indi 5 · 16 = 80 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "medianalar-perpendikulyar",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#4098e8fa"
+    },
+    {
+      "q": "Koordinata tekisligida uchburchakning uchlari A(1; 2), B(7; 4) va C(4; 9) nuqtalarda. Uning medianalari kesishish nuqtasining koordinatalarini toping.",
+      "v": [
+        "(6; 7,5)",
+        "(4; 3)",
+        "(12; 15)",
+        "(4; 5)"
+      ],
+      "t": 3,
+      "izoh": "Medianalar kesishish nuqtasining koordinatalari uchlar koordinatalarining o'rta arifmetigiga teng. x = (1 + 7 + 4) : 3 = 4, y = (2 + 4 + 9) : 3 = 5.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='60' y1='240' x2='240' y2='240' stroke='%23334155' stroke-width='1' fill='none'/%3E%3Cline x1='80' y1='260' x2='80' y2='40' stroke='%23334155' stroke-width='1' fill='none'/%3E%3Ctext x='236' y='234' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Ctext x='90' y='48' font-size='13' fill='%23334155' text-anchor='middle'%3Ey%3C/text%3E%3Cpolygon points='100,200 220,160 160,60' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='100' cy='200' r='3.2' fill='%23334155'/%3E%3Ctext x='85.9' y='218.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ccircle cx='220' cy='160' r='3.2' fill='%23334155'/%3E%3Ctext x='239' y='170.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ccircle cx='160' cy='60' r='3.2' fill='%23334155'/%3E%3Ctext x='160' y='44' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "centroid-koordinata",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#276e88f9"
+    },
+    {
+      "q": "Uchburchakning uchlari A(0; 0), B(6; 0) va C(3; 9) nuqtalarda joylashgan. Medianalar kesishgan nuqtaning ordinatasi nechaga teng?",
+      "v": [
+        "4,5",
+        "3",
+        "9",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Kesishish nuqtasining ordinatasi uchlar ordinatalarining o'rta arifmetigiga teng: (0 + 0 + 9) : 3 = 3. 4,5 javobi balandlikning yarmini olishdan kelib chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='70' y1='240' x2='230' y2='240' stroke='%23334155' stroke-width='1' fill='none'/%3E%3Cline x1='90' y1='260' x2='90' y2='40' stroke='%23334155' stroke-width='1' fill='none'/%3E%3Ctext x='226' y='234' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Ctext x='100' y='48' font-size='13' fill='%23334155' text-anchor='middle'%3Ey%3C/text%3E%3Cpolygon points='90,240 210,240 150,60' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='240' r='3.2' fill='%23334155'/%3E%3Ctext x='75.9' y='258.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ccircle cx='210' cy='240' r='3.2' fill='%23334155'/%3E%3Ctext x='224.1' y='258.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ccircle cx='150' cy='60' r='3.2' fill='%23334155'/%3E%3Ctext x='150' y='44' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "centroid-koordinata",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#bb469f27"
+    },
+    {
+      "q": "Uchburchakning ikki uchi A(2; 3) va B(8; 5), medianalar kesishish nuqtasi esa M(5; 6). Uchinchi uchning koordinatalarini toping.",
+      "v": [
+        "(5; 10)",
+        "(5; 4)",
+        "(11; 10)",
+        "(15; 18)"
+      ],
+      "t": 0,
+      "izoh": "Kesishish nuqtasining koordinatalari uchlarning o'rta arifmetigi: (2 + 8 + x) : 3 = 5 va (3 + 5 + y) : 3 = 6. Birinchisidan x = 5, ikkinchisidan y = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "centroid-koordinata",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#740066cc"
+    },
+    {
+      "q": "A(1; 1), B(9; 1) va C(5; 7) uchlarga ega uchburchakda C uchidan AB tomonga o'tkazilgan mediananing uzunligi qancha?",
+      "v": [
+        "√52",
+        "8",
+        "6",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "AB tomonning o'rtasi ((1 + 9) : 2; (1 + 1) : 2) = (5; 1) nuqta. C(5; 7) bilan orasidagi masofa √((5 − 5)² + (7 − 1)²) = √36 = 6.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='40' y1='220' x2='260' y2='220' stroke='%23334155' stroke-width='1' fill='none'/%3E%3Cline x1='60' y1='240' x2='60' y2='60' stroke='%23334155' stroke-width='1' fill='none'/%3E%3Ctext x='256' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Ctext x='70' y='68' font-size='13' fill='%23334155' text-anchor='middle'%3Ey%3C/text%3E%3Cpolygon points='80,200 240,200 160,80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='80' x2='160' y2='200' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='160' cy='200' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='80' cy='200' r='3.2' fill='%23334155'/%3E%3Ctext x='62.1' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ccircle cx='240' cy='200' r='3.2' fill='%23334155'/%3E%3Ctext x='257.9' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ccircle cx='160' cy='80' r='3.2' fill='%23334155'/%3E%3Ctext x='160' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "centroid-koordinata",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#af0d559c"
+    },
+    {
+      "q": "To'rtburchakning diagonallari 12 sm va 16 sm. Uning tomonlari o'rta nuqtalarini ketma-ket tutashtirishdan hosil bo'lgan to'rtburchakning perimetri qancha?",
+      "v": [
+        "14 sm",
+        "28 sm",
+        "56 sm",
+        "24 sm"
+      ],
+      "t": 1,
+      "izoh": "Hosil bo'lgan to'rtburchakning tomonlari uchburchaklarning o'rta chiziqlari bo'lib, diagonallarning yarmiga teng. Perimetr 2 · 6 + 2 · 8 = 28 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='78,138 138,54 222,138 150,246' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='78' y1='138' x2='222' y2='138' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='138' y1='54' x2='150' y2='246' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolygon points='108,96 180,96 186,192 114,192' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='108' cy='96' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='180' cy='96' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='186' cy='192' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='114' cy='192' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='61.1' y='140.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='136.3' y='41.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='238.9' y='140.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150.5' y='267' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='150' y='134' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='158' y='166' font-size='13' fill='%23334155' text-anchor='start'%3E16 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "varignon-orta-chiziq",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#31df4686"
+    },
+    {
+      "q": "To'rtburchak tomonlari o'rtalarini tutashtirishdan hosil bo'lgan parallelogrammning perimetri 30 sm. To'rtburchak diagonallari uzunliklarining yig'indisi qancha?",
+      "v": [
+        "60 sm",
+        "15 sm",
+        "45 sm",
+        "30 sm"
+      ],
+      "t": 3,
+      "izoh": "Parallelogrammning tomonlari diagonallarning yarmiga teng va har bir yarim diagonal perimetrga ikki martadan kiradi. Demak perimetr diagonallar yig'indisiga teng, ya'ni 30 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "varignon-orta-chiziq",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#33d4f24f"
+    },
+    {
+      "q": "Fermer to'rtburchak yer uchastkasi tomonlarining o'rtalarini tutashtirdi. Diagonallari 40 m va 30 m bo'lsa, ichki shaklning tomonlari qanday uzunlikda bo'ladi?",
+      "v": [
+        "40 m va 30 m",
+        "10 m va 7,5 m",
+        "20 m va 15 m",
+        "35 m va 35 m"
+      ],
+      "t": 2,
+      "izoh": "Ichki shakl parallelogramm bo'lib, uning tomonlari uchburchaklarning o'rta chiziqlaridir. Har biri mos diagonalning yarmiga teng: 40 : 2 = 20 m va 30 : 2 = 15 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,135.6 130.8,78 246,135.6 150,222' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54' y1='135.6' x2='246' y2='135.6' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='130.8' y1='78' x2='150' y2='222' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolygon points='92.4,106.8 188.4,106.8 198,178.8 102,178.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='92.4' cy='106.8' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='188.4' cy='106.8' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='198' cy='178.8' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='102' cy='178.8' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='37.1' y='138.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='127.1' y='65.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='263' y='138.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='151' y='243' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='150' y='131.6' font-size='13' fill='%23334155' text-anchor='middle'%3E40 m%3C/text%3E%3Ctext x='154.4' y='166' font-size='13' fill='%23334155' text-anchor='start'%3E30 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "varignon-orta-chiziq",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#1cdb4577"
+    },
+    {
+      "q": "ABC uchburchakda M va N nuqtalar AB va AC tomonlarning o'rtalari, AP esa BC tomonga o'tkazilgan mediana. AP kesma MN o'rta chiziqni qanday nisbatda bo'ladi?",
+      "v": [
+        "Teng ikkiga",
+        "2:1 nisbatda",
+        "1:3 nisbatda",
+        "3:1 nisbatda"
+      ],
+      "t": 0,
+      "izoh": "AMN uchburchak ABC ga o'xshash, koeffitsiyenti 1/2. AP mediana P nuqtaga borar ekan, MN ni AMN uchburchakning medianasi sifatida kesib o'tadi va uni teng ikkiga bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='129,81.6 54,218.4 246,218.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91.5' y1='150' x2='187.5' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='129' y1='81.6' x2='150' y2='218.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='91.5' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='187.5' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='150' cy='218.4' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='139.5' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='126.4' y='68.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.9' y='230.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.5' y='229.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='77.8' y='147.9' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='200.8' y='147.2' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='152' y='234' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-chiziq-mediana-birga",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#5efc74b6"
+    },
+    {
+      "q": "ABC uchburchakda AB = 14 sm, AC = 18 sm va BC = 20 sm. M va N nuqtalar AB va AC tomonlarning o'rtalari. MBCN trapetsiyaning perimetri qancha?",
+      "v": [
+        "52 sm",
+        "26 sm",
+        "36 sm",
+        "46 sm"
+      ],
+      "t": 3,
+      "izoh": "MB = 14 : 2 = 7 sm, CN = 18 : 2 = 9 sm, MN esa o'rta chiziq bo'lib 20 : 2 = 10 sm. Perimetr 7 + 20 + 9 + 10 = 46 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='119.3,91.3 54,208.7 246,208.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='86.6' y1='150' x2='182.6' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='86.6' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='182.6' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='115' y='78.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.5' y='219.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262' y='218.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='72.5' y='148.8' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='196.2' y='147.8' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='154.3' y='229.1' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='54.7' y='142.2' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='213.5' y='139.8' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-chiziq-mediana-birga",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#22d0475e"
+    },
+    {
+      "q": "ABC uchburchakda AB = 14 sm, AC = 12 sm va BC tomonga o'tkazilgan AM mediana 10 sm. N nuqta AB tomonning o'rtasi bo'lsa, AMN uchburchakning perimetri necha santimetr?",
+      "v": [
+        "29 sm",
+        "23 sm",
+        "30 sm",
+        "36 sm"
+      ],
+      "t": 1,
+      "izoh": "N — AB ning, M — BC ning o'rtasi, demak NM o'rta chiziq va NM = AC : 2 = 6 sm. AN = 14 : 2 = 7 sm. Perimetr AN + NM + MA = 7 + 6 + 10 = 23 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='164.9,102.6 69.7,197.4 230.3,197.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='164.9' y1='102.6' x2='150' y2='197.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='117.3' y1='150' x2='150' y2='197.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='197.4' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='117.3' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='164.9' y='92' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='55' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='245' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='105' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='93' y='126' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='217' y='136' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='163' y='158' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-chiziq-mediana-birga",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#56a7dd68"
+    },
+    {
+      "q": "Uchburchak tomonlarining o'rta nuqtalari yangi uchburchak hosil qiladi. Asl uchburchak medianalarining yangi uchburchak medianalariga nisbati qanday?",
+      "v": [
+        "2:1",
+        "1:1",
+        "4:1",
+        "3:1"
+      ],
+      "t": 0,
+      "izoh": "O'rta nuqtalardan hosil bo'lgan uchburchak asl uchburchakka o'xshash, o'xshashlik koeffitsiyenti 1/2. O'xshash shakllarda mos chiziqli elementlar, jumladan medianalar ham shu nisbatda bo'ladi, ya'ni 2:1.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='130.5,89 54,211 246,211' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='92.3,150 150,211 188.3,150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='92.3' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='150' cy='211' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='188.3' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='127.8' y='76.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.5' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.8' y='221.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-chiziq-mediana-birga",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#5e1617a5"
+    },
+    {
+      "q": "Ko'l qirg'og'idagi A va B nuqtalar orasini bevosita o'lchab bo'lmaydi. Geodezist C nuqtani tanlab CA va CB ning o'rtalarini belgiladi va ular orasini 46 m deb o'lchadi. AB masofa qancha?",
+      "v": [
+        "46 m",
+        "23 m",
+        "92 m",
+        "138 m"
+      ],
+      "t": 2,
+      "izoh": "O'rtalarni tutashtirgan kesma ACB uchburchakning o'rta chizig'i bo'lib, u AB ga parallel va uning yarmiga teng. Demak AB = 2 · 46 = 92 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='140.1,91 54,209 246,209' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='97' y1='150' x2='193' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='97' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='193' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='138.7' y='78.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='38.3' y='219.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='261.8' y='219.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='83.1' y='148.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='206.8' y='148.1' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='151.4' y='229.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='145' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E46 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-hayotiy-model",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#85d3cf3f"
+    },
+    {
+      "q": "Ko'prik uchburchak fermalardan yig'iladi. Pastki tayanch 7,2 m, yon tayanchlarning o'rtalari orasiga esa qo'shimcha to'sin qo'yiladi. Qancha uzunlikdagi to'sin kerak?",
+      "v": [
+        "14,4 m",
+        "3,6 m",
+        "7,2 m",
+        "1,8 m"
+      ],
+      "t": 1,
+      "izoh": "Qo'shimcha to'sin yon tayanchlarning o'rtalarini tutashtirgani uchun o'rta chiziq bo'ladi. Uning uzunligi pastki tayanchning yarmiga teng: 7,2 : 2 = 3,6 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,94.6 54,205.4 246,205.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='102' y1='150' x2='198' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='102' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='198' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='150' y='81.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.1' y='215.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.9' y='215.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='88' y='148.6' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='212' y='148.6' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='150' y='226.4' font-size='13' fill='%23334155' text-anchor='middle'%3E7,2 m%3C/text%3E%3Ctext x='150' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-hayotiy-model",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#4f750066"
+    },
+    {
+      "q": "Uchburchak bayroqcha matosining tomonlari 30 sm, 40 sm va 50 sm. Tomonlar o'rtalari tutashtirilib ichki uchburchak chizildi. Ichki uchburchakning perimetri va yuzi qancha?",
+      "v": [
+        "120 sm va 300 sm²",
+        "60 sm va 300 sm²",
+        "30 sm va 75 sm²",
+        "60 sm va 150 sm²"
+      ],
+      "t": 3,
+      "izoh": "Uchburchak to'g'ri burchakli, yuzi (30 · 40) : 2 = 600 sm². Ichki uchburchak tomonlari o'rta chiziqlar: 15 sm, 20 sm va 25 sm, perimetri 60 sm. Yuzi esa asl yuzning choragi: 600 : 4 = 150 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='176.9,103.9 54,196.1 246,196.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='115.4,150 150,196.1 211.4,150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='115.4' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='150' cy='196.1' r='3.2' fill='%235b4bc4'/%3E%3Ccircle cx='211.4' cy='150' r='3.2' fill='%235b4bc4'/%3E%3Ctext x='181.7' y='91.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.7' y='204.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262' y='205.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='145.2' y='216.4' font-size='13' fill='%23334155' text-anchor='middle'%3E50 sm%3C/text%3E%3Ctext x='87.1' y='144' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3Ctext x='240.2' y='145.5' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-chiziq-hayotiy-model",
+      "id": "matematika_plan_m03-uchburchak-medianasi-va-orta-chizigi#b823c6ce"
+    }
+  ]
+}

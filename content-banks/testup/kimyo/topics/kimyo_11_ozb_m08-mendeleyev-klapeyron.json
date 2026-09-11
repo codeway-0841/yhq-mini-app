@@ -1,0 +1,606 @@
+{
+  "nom": "08-mavzu. Mendeleyev-Klapeyron tenglamasi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Normal sharoit deganda harorat nechaga teng?",
+      "v": [
+        "0 °C (Selsiy shkalasi bo'yicha) yoki 273 K (Kelvin shkalasi bo'yicha)",
+        "25 °C yoki 298 K",
+        "100 °C yoki 373 K",
+        "20 °C yoki 293 K"
+      ],
+      "t": 0,
+      "izoh": "Normal sharoitda harorat 0 °C yoki 273 K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#3e26ad2a"
+    },
+    {
+      "q": "Normal sharoit deganda bosim nechaga teng?",
+      "v": [
+        "101,325 kPa (101325 Pa) yoki 1 atmosfera bosimi yoki 760 mm simob ustuni",
+        "100 kPa yoki 750 mm simob ustuni",
+        "98 kPa yoki 1 atm",
+        "1 kPa yoki 76 mm simob ustuni"
+      ],
+      "t": 0,
+      "izoh": "Bosim 101,325 kPa (101325 Pa) yoki 1 atmosfera bosimi yoki 760 mm simob ustuni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#8d99fdf9"
+    },
+    {
+      "q": "Ideal holatdagi gazlar tenglamasi yana qanday ataladi?",
+      "v": [
+        "Mendeleyev-Klapeyron (uni Klapeyron-Mendeleyev tenglamasi deb ham atiladi) tenglamasi",
+        "Avogadro tenglamasi",
+        "Gey-Lyussak tenglamasi",
+        "Boyl-Mariott tenglamasi"
+      ],
+      "t": 0,
+      "izoh": "Ideal holatdagi gazlar tenglamasi Mendeleyev-Klapeyron tenglamasi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#000c787a"
+    },
+    {
+      "q": "Mendeleyev-Klapeyron tenglamasi qanday yoziladi?",
+      "v": [
+        "PV = nRT",
+        "PV = mRT",
+        "P = nRT/V·M",
+        "PT = nRV"
+      ],
+      "t": 0,
+      "izoh": "Mendeleyev-Klapeyron tenglamasi: PV = nRT.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#ff1271df"
+    },
+    {
+      "q": "PV = nRT tenglamasidagi harflar nimani bildiradi?",
+      "v": [
+        "P — bosim (kPa), V — hajm (l), n — modda miqdori (mol), R — gazlarning universal doimiysi, T — harorat (K)",
+        "P — massa, V — hajm, n — atomlar soni, R — radius, T — vaqt",
+        "P — bosim (atm), V — hajm (ml), n — massa, R — doimiy, T — harorat (°C)",
+        "P — zichlik, V — hajm, n — mol, R — doimiy, T — temperatura (°C)"
+      ],
+      "t": 0,
+      "izoh": "P — bosim (kPa), V — hajm (l), n — modda miqdori (mol), R — universal doimiy, T — harorat (K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#62d1217d"
+    },
+    {
+      "q": "Bosim kiloPaskalda ifodalanganda universal gaz doimiysi (R) nechaga teng?",
+      "v": [
+        "8,31",
+        "0,082",
+        "22,4",
+        "1,987"
+      ],
+      "t": 0,
+      "izoh": "Bosim kiloPaskalda ifodalansa, universal gaz doimiysi R = 8,31.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#271bbfa9"
+    },
+    {
+      "q": "Bosim atmosfera bosimida ifodalanganda universal gaz doimiysi (R) nechaga teng?",
+      "v": [
+        "0,082",
+        "8,31",
+        "1,0",
+        "760"
+      ],
+      "t": 0,
+      "izoh": "8,314:101,325 = 0,082; masala ishlashda R qiymatini 0,082 deb olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#db21b08f"
+    },
+    {
+      "q": "Mendeleyev-Klapeyron formulasida temperatura qaysi shkala bo'yicha hisoblanadi?",
+      "v": [
+        "Kelvin shkalasi bo'yicha",
+        "Selsiy shkalasi bo'yicha",
+        "Farengeyt shkalasi bo'yicha",
+        "Istalgan shkala bo'yicha"
+      ],
+      "t": 0,
+      "izoh": "Bu formulada temperatura Kelvin shkalasi bo'yicha hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#e35094bd"
+    },
+    {
+      "q": "Selsiy shkalasidan Kelvin shkalasiga o'tish formulasi qanday?",
+      "v": [
+        "T = t + 273",
+        "T = t − 273",
+        "T = t + 273,15 °C dan ayirish",
+        "T = 273 − t"
+      ],
+      "t": 0,
+      "izoh": "T = t + 273, bunda T — Kelvin, t — Selsiy shkalasi bo'yicha harorat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#605e0e37"
+    },
+    {
+      "q": "Agar bosim mm simob ustunida berilgan bo'lsa, nima qilinadi?",
+      "v": [
+        "Uni atmosfera bosimiga (760 mm simob ustuni = 1 atm) o'tkazib olinadi",
+        "Uni bevosita formulaga qo'yiladi",
+        "Uni 8,31 ga ko'paytiriladi",
+        "Uni Kelvinga o'tkaziladi"
+      ],
+      "t": 0,
+      "izoh": "760 mm simob ustuni = 1 atm qilib atmosfera bosimiga o'tkazib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#8e86b0a8"
+    },
+    {
+      "q": "Modda miqdorini (n) aniqlash uchun modda massasini (m) nimaga bo'lish kerak?",
+      "v": [
+        "Molyar massasiga (M)",
+        "Avogadro soniga",
+        "Gaz doimiysiga",
+        "Hajmiga"
+      ],
+      "t": 0,
+      "izoh": "n = m/M.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#fe7ac6e9"
+    },
+    {
+      "q": "Modda miqdorini molyar massaga bo'lish orqali ifodalasak, Mendeleyev-Klapeyron formulasi qanday ko'rinishga ega bo'ladi?",
+      "v": [
+        "PV = (m/M)·RT",
+        "PV = m·M·RT",
+        "PV = (M/m)·RT",
+        "PVM = m/RT"
+      ],
+      "t": 0,
+      "izoh": "PV = (m/M)·RT yoki qulayroq qilib PVM = mRT.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#8be242b3"
+    },
+    {
+      "q": "PVM = mRT formulasidan hajmni topish ifodasi qanday?",
+      "v": [
+        "V = nRT/P",
+        "V = P·nRT",
+        "V = PT/nR",
+        "V = nR/PT"
+      ],
+      "t": 0,
+      "izoh": "PV = nRT dan V = nRT/P keltirib chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#de531748"
+    },
+    {
+      "q": "PV = nRT tenglamasidan bosimni topish formulasi qanday?",
+      "v": [
+        "P = nRT/V",
+        "P = V/nRT",
+        "P = nRV/T",
+        "P = nT/RV"
+      ],
+      "t": 0,
+      "izoh": "P = nRT/V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#96e04e84"
+    },
+    {
+      "q": "PV = nRT tenglamasidan haroratni topish formulasi qanday?",
+      "v": [
+        "T = PV/nR",
+        "T = nR/PV",
+        "T = PR/nV",
+        "T = nRV/P"
+      ],
+      "t": 0,
+      "izoh": "T = PV/nR.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#4dfb17dd"
+    },
+    {
+      "q": "PV = nRT tenglamasidan modda miqdorini topish formulasi qanday?",
+      "v": [
+        "n = PV/RT",
+        "n = RT/PV",
+        "n = PT/RV",
+        "n = PV·RT"
+      ],
+      "t": 0,
+      "izoh": "n = PV/RT.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#7bae7550"
+    },
+    {
+      "q": "1-masalada: 166,2 kPa bosim va −73 °C haroratda 12,8 g kislorodning hajmi necha litr?",
+      "v": [
+        "4 l",
+        "2 l",
+        "8 l",
+        "22,4 l"
+      ],
+      "t": 0,
+      "izoh": "n = 12,8/32 = 0,4 mol; T = 200 K; V = 0,4·8,31·200/166,2 = 4 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#585dde8e"
+    },
+    {
+      "q": "1-masalada −73 °C Kelvin shkalasida nechaga teng?",
+      "v": [
+        "200 K",
+        "346 K",
+        "273 K",
+        "73 K"
+      ],
+      "t": 0,
+      "izoh": "T = 273 + (−73) = 200 K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#df4bab05"
+    },
+    {
+      "q": "1-masalada 12,8 g kislorodning modda miqdori necha mol?",
+      "v": [
+        "0,4 mol",
+        "0,2 mol",
+        "1 mol",
+        "0,8 mol"
+      ],
+      "t": 0,
+      "izoh": "n = m/M = 12,8/32 = 0,4 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#0baaada6"
+    },
+    {
+      "q": "2-masalada: harorat 47 °C ga teng sharoitda 14 g is gazi 10 l hajmni egallasa, bosim necha kPa?",
+      "v": [
+        "132,96 kPa",
+        "101,325 kPa",
+        "166,2 kPa",
+        "66,48 kPa"
+      ],
+      "t": 0,
+      "izoh": "n = 14/28 = 0,5 mol; T = 320 K; P = 0,5·8,31·320/10 = 132,96 kPa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#5106ff0a"
+    },
+    {
+      "q": "2-masalada is gazining molyar massasi necha g/mol deb olingan?",
+      "v": [
+        "28 g/mol",
+        "12 g/mol",
+        "32 g/mol",
+        "44 g/mol"
+      ],
+      "t": 0,
+      "izoh": "n = m/M = 14/28 = 0,5 mol — is gazi (CO) M = 28 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#1e2611f4"
+    },
+    {
+      "q": "3-masalada: bosim 2 atm bo'lganda 1 mol uglerod (IV) oksidi 12,3 l hajmni egallasa, harorat necha °C?",
+      "v": [
+        "27 °C",
+        "0 °C",
+        "300 °C",
+        "127 °C"
+      ],
+      "t": 0,
+      "izoh": "P = 202,65 kPa; T = 202,65·12,3/(1·8,31) = 300 K; t = 300 − 273 = 27 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#0938cbf8"
+    },
+    {
+      "q": "3-masalada 2 atm kiloPaskalda nechaga teng deb olingan?",
+      "v": [
+        "202,65 kPa",
+        "101,325 kPa",
+        "152 kPa",
+        "200 kPa"
+      ],
+      "t": 0,
+      "izoh": "P = 2 atm · 101,325 kPa = 202,65 kPa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#d76347f1"
+    },
+    {
+      "q": "4-masalada: molyar massasi 32 g/mol bo'lgan 12 g gaz 1 l hajmni egallab, 2·10^6 Pa bosim ostida bo'lsa, gazning modda miqdori necha mol?",
+      "v": [
+        "0,375 mol",
+        "0,5 mol",
+        "0,25 mol",
+        "1 mol"
+      ],
+      "t": 0,
+      "izoh": "n = 12/32 = 0,375 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#1fa47964"
+    },
+    {
+      "q": "4-masalada 2·10^6 Pa kiloPaskalda nechaga teng?",
+      "v": [
+        "2·10^3 kPa",
+        "2·10^6 kPa",
+        "200 kPa",
+        "2 kPa"
+      ],
+      "t": 0,
+      "izoh": "P = 2·10^6 Pa = 2·10^3 kPa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#6f28a260"
+    },
+    {
+      "q": "4-masalada hisoblangan gaz temperaturasi necha K va necha °C?",
+      "v": [
+        "642 K va 369 °C",
+        "369 K va 96 °C",
+        "642 °C va 369 K",
+        "500 K va 227 °C"
+      ],
+      "t": 0,
+      "izoh": "T = 2·10^3·1/(0,375·8,31) = 642 K; 642 − 273 = 369 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#a68260a4"
+    },
+    {
+      "q": "5-masalada: 207,75 kPa bosimda, harorat 27 °C bo'lganda 42,5 g noma'lum gaz 30 l hajmni egallasa, gazning modda miqdori necha mol?",
+      "v": [
+        "2,5 mol",
+        "1,5 mol",
+        "3 mol",
+        "0,25 mol"
+      ],
+      "t": 0,
+      "izoh": "T = 300 K; n = 207,75·30/(8,31·300) = 2,5 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#265735be"
+    },
+    {
+      "q": "5-masalada noma'lum gaz qaysi gaz ekanligi aniqlandi?",
+      "v": [
+        "NH3 (molyar massasi 17 g/mol)",
+        "CO2 (molyar massasi 44 g/mol)",
+        "O2 (molyar massasi 32 g/mol)",
+        "CH4 (molyar massasi 16 g/mol)"
+      ],
+      "t": 0,
+      "izoh": "M = m/n = 42,5/2,5 = 17 g/mol, bu NH3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#8cdedc20"
+    },
+    {
+      "q": "Gazning molyar massasini massasi va modda miqdori orqali topish formulasi qanday?",
+      "v": [
+        "M = m/n",
+        "M = m·n",
+        "M = n/m",
+        "M = m + n"
+      ],
+      "t": 0,
+      "izoh": "M = m/n; masalan M = 42,5/2,5 = 17 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#5f662085"
+    },
+    {
+      "q": "6-masalada: 150 kPa bosim, harorat 27 °C bo'lganda 4,155 l azotning modda miqdori necha mol?",
+      "v": [
+        "0,25 mol",
+        "0,5 mol",
+        "1 mol",
+        "0,125 mol"
+      ],
+      "t": 0,
+      "izoh": "n = 150·4,155/(8,31·300) = 0,25 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#67a1772f"
+    },
+    {
+      "q": "Modda miqdori ma'lum bo'lganda molekulalar soni qanday topiladi?",
+      "v": [
+        "N = n·NA",
+        "N = n/NA",
+        "N = NA/n",
+        "N = n·M"
+      ],
+      "t": 0,
+      "izoh": "N = n·NA; masalan N = 0,25·6,02·10^23 = 1,505·10^23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#55b6daf7"
+    },
+    {
+      "q": "6-masalada 0,25 mol azot tarkibidagi molekulalar soni nechaga teng?",
+      "v": [
+        "1,505·10^23",
+        "6,02·10^23",
+        "3,01·10^23",
+        "1,505·10^24"
+      ],
+      "t": 0,
+      "izoh": "N = 0,25·6,02·10^23 = 1,505·10^23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#fa4f2eca"
+    },
+    {
+      "q": "7-masalada: 124,65 kPa bosim, harorat 77 °C bo'lganda 7 l metanning modda miqdori necha mol?",
+      "v": [
+        "0,3 mol",
+        "0,25 mol",
+        "0,5 mol",
+        "3 mol"
+      ],
+      "t": 0,
+      "izoh": "T = 350 K; n = 124,65·7/(8,31·350) = 0,3 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#749d19b6"
+    },
+    {
+      "q": "Bitta metan (CH4) molekulasida nechta atom bor?",
+      "v": [
+        "5 ta",
+        "4 ta",
+        "3 ta",
+        "6 ta"
+      ],
+      "t": 0,
+      "izoh": "CH4 tarkibida 5 ta atom bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#33978ce5"
+    },
+    {
+      "q": "Atomlar sonini topish formulasi (molekuladagi atomlar soni bilan) qanday?",
+      "v": [
+        "N = n·NA·A.s",
+        "N = n·NA/A.s",
+        "N = NA·A.s/n",
+        "N = n·M·A.s"
+      ],
+      "t": 0,
+      "izoh": "N = n·NA·A.s, bunda A.s — bitta molekuladagi atomlar soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#bf018589"
+    },
+    {
+      "q": "7-masalada 0,3 mol metan tarkibidagi atomlar soni nechaga teng?",
+      "v": [
+        "9,03·10^23",
+        "1,806·10^23",
+        "6,02·10^23",
+        "3,01·10^23"
+      ],
+      "t": 0,
+      "izoh": "N = 0,3·6,02·10^23·5 = 9,03·10^23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#e6ed33d8"
+    },
+    {
+      "q": "47 °C Kelvin shkalasida nechaga teng?",
+      "v": [
+        "320 K",
+        "226 K",
+        "300 K",
+        "47 K"
+      ],
+      "t": 0,
+      "izoh": "T = 273 + 47 = 320 K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#4a77d924"
+    },
+    {
+      "q": "27 °C Kelvin shkalasida nechaga teng?",
+      "v": [
+        "300 K",
+        "246 K",
+        "327 K",
+        "273 K"
+      ],
+      "t": 0,
+      "izoh": "T = 273 + 27 = 300 K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#9dd23722"
+    },
+    {
+      "q": "77 °C Kelvin shkalasida nechaga teng?",
+      "v": [
+        "350 K",
+        "196 K",
+        "300 K",
+        "400 K"
+      ],
+      "t": 0,
+      "izoh": "T = 273 + 77 = 350 K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#02e82dca"
+    },
+    {
+      "q": "Gaz moddalar ishtirok etadigan jarayon har doim ham normal sharoitda bo'lavermasa, hisoblashlar uchun nimadan foydalaniladi?",
+      "v": [
+        "Ideal holatdagi gazlar tenglamasi (Mendeleyev-Klapeyron tenglamasi)dan",
+        "Avogadro sonidan",
+        "Ekvivalentlik qonunidan",
+        "Massaning saqlanish qonunidan"
+      ],
+      "t": 0,
+      "izoh": "Har xil sharoitlar uchun ideal holatdagi gazlar tenglamasidan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m08-mendeleyev-klapeyron#f5af9f62"
+    }
+  ]
+}

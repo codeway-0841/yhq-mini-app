@@ -1,0 +1,486 @@
+{
+  "nom": "41-mavzu. Radioaktiv Yemirilish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Radioaktiv nurlar ilk bor kim tomonidan va qachon kashf qilingan?",
+      "v": [
+        "1896-yilda fransuz fizigi A. Bekkerel tomonidan",
+        "1900-yilda P. Villar tomonidan",
+        "1897-yilda J. Tomson tomonidan",
+        "1911-yilda E. Rezerford tomonidan"
+      ],
+      "t": 0,
+      "izoh": "A. Bekkerel 1896-yilda uran tuzlarini o'rganayotib radioaktiv nurlarni kashf qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#d168ff44"
+    },
+    {
+      "q": "Bekkerel radioaktiv nurlarni qanday hodisani o'rganayotib kashf qildi?",
+      "v": [
+        "Uran tuzlarining fotoplastinkani luminessensiya hodisasi o'rganilganda qoraytishi",
+        "Katod nurlarining o'tuvchanligi",
+        "Rentgen nurlarining sinishi",
+        "Elektronlar oqimining magnit maydonda og'ishi"
+      ],
+      "t": 0,
+      "izoh": "Bekkerel uran tuzlarida luminessensiyani o'rganayotib plastinkaga tuz surati o'tib qolganini ko'rdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#79e33617"
+    },
+    {
+      "q": "Radioaktiv nurlarning bir jinsli emasligi kimning tajribalari bilan aniqlangan?",
+      "v": [
+        "Rezerfordning",
+        "Bekkerelning",
+        "Kyurilarning",
+        "Fermining"
+      ],
+      "t": 0,
+      "izoh": "Rezerford magnit maydondan o'tkazilgan nur uchta α, β, γ nurlarga ajralishini aniqladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#b931d7e9"
+    },
+    {
+      "q": "α-zarralar nimadan iborat?",
+      "v": [
+        "Geliy yadrolari oqimidan",
+        "Elektronlar oqimidan",
+        "Fotonlar oqimidan",
+        "Neytronlar oqimidan"
+      ],
+      "t": 0,
+      "izoh": "α-zarra — ikki proton va ikki neytrondan tashkil topgan geliy yadrosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#4f9d729d"
+    },
+    {
+      "q": "β-zarralar nimadan iborat?",
+      "v": [
+        "Elektronlar oqimidan",
+        "Geliy yadrolari oqimidan",
+        "Fotonlar oqimidan",
+        "Protonlar oqimidan"
+      ],
+      "t": 0,
+      "izoh": "β-nurlar — elektronlar oqimidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#96be83b1"
+    },
+    {
+      "q": "γ-nurlar nimadan iborat?",
+      "v": [
+        "γ-kvantlar (fotonlar) oqimidan",
+        "Elektronlar oqimidan",
+        "Geliy yadrolari oqimidan",
+        "Neytronlar oqimidan"
+      ],
+      "t": 0,
+      "izoh": "γ-nurlar yuqori energiyali elektromagnit to'lqinlar — fotonlar oqimidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#7c280c22"
+    },
+    {
+      "q": "Uran rudasidan poloniy va radiyni ajratib olgan olimlar kimlar?",
+      "v": [
+        "Mariya va Pyer Kyurilar",
+        "Rezerford va Tomson",
+        "Gan va Strassmanlar",
+        "Bor va Geiger"
+      ],
+      "t": 0,
+      "izoh": "Er-xotin M. va P. Kyurilar uran rudasidan Po va Ra elementlarini ajratib oldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#3c5e6009"
+    },
+    {
+      "q": "Tabiatda eng ko'p tarqalgan radioaktiv izotoplar qaysilar?",
+      "v": [
+        "⁴⁰K, ¹⁴C, uran va toriy izotoplari oilasi",
+        "Faqat uran va toriy",
+        "Faqat ¹⁴C va ³H",
+        "Faqat poloniy va radiy"
+      ],
+      "t": 0,
+      "izoh": "Tabiatda ⁴⁰K, ¹⁴C hamda uran va toriy izotoplari oilasi eng ko'p tarqalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#32b5cc3c"
+    },
+    {
+      "q": "Radioaktivlik izotopning qanday holatiga bog'liq emas?",
+      "v": [
+        "Sof holda yoki birikma tarkibiga kirishiga, agregat holatiga, bosim va temperaturaga",
+        "Yadroning tarkibiga",
+        "Izotopning massa soniga",
+        "Yadrodagi nuklonlar soniga"
+      ],
+      "t": 0,
+      "izoh": "Radioaktivlik kimyoviy holat, bosim, temperatura, elektr va magnit maydonga ta'sir ko'rsatmaydigan yadro ichidagi jarayondir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#e3c4cd9d"
+    },
+    {
+      "q": "Tabiiy radioaktivlik deb nimaga aytiladi?",
+      "v": [
+        "Nostabil izotoplar yadrolarining zarralar chiqarish va energiya ajratish bilan stabil izotoplarga aylanishiga",
+        "Sun'iy nurlantirish natijasida yadroning parchalanishiga",
+        "Yadroning neytron yutishi bilan aylanishiga",
+        "Yadrolarning issiqlikda qizdirilganda yemirilishiga"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy radioaktivlik — nostabil yadrolarning o'z-o'zidan zarralar chiqarib stabil izotoplarga aylanishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#a718edbc"
+    },
+    {
+      "q": "Radioaktiv yemirilishda yemirilgan yadro nima deb ataladi?",
+      "v": [
+        "Ona yadro",
+        "Bola yadro",
+        "Birinchi yadro",
+        "Boshlang'ich zarra"
+      ],
+      "t": 0,
+      "izoh": "Yemirilgan yadro — ona yadro, hosil bo'lgan yadro esa bola yadro deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#961bb2aa"
+    },
+    {
+      "q": "Yadroning yemirilishi qanday hodisa hisoblanadi?",
+      "v": [
+        "Tasodifiy hodisa — statistika qonunlariga bo'ysunadi",
+        "Qat'iy belgilangan vaqtli jarayon",
+        "Tashqi haroratga bog'liq jarayon",
+        "Kimyoviy reaksiya jarayoni"
+      ],
+      "t": 0,
+      "izoh": "Har bir yadroning yemirilishi tasodifiy bo'lib, statistika qonunlariga bo'ysunadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#6f859a13"
+    },
+    {
+      "q": "Radioaktiv yemirilish qonuni qanday ifodalanadi?",
+      "v": [
+        "N = N₀e^(–λt)",
+        "N = N₀(1 – λt)",
+        "N = N₀λt",
+        "N = N₀ + e^(λt)"
+      ],
+      "t": 0,
+      "izoh": "Radioaktiv yemirilish qonuni: N = N₀e^(–λt).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#11f20899"
+    },
+    {
+      "q": "Yarim yemirilish davri T deb nimaga aytiladi?",
+      "v": [
+        "Boshlang'ich yadrolar soni o'rtacha ikki marta kamayishi uchun zarur bo'lgan vaqt",
+        "Barcha yadrolar yemirilib tugashi uchun zarur vaqt",
+        "Yadrolarning yarmi energiya chiqarishi uchun vaqt",
+        "Radioaktiv manba hosil bo'lgan vaqt"
+      ],
+      "t": 0,
+      "izoh": "T — boshlang'ich yadrolar sonining ikki marta kamayishiga ketadigan vaqt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#6502de7c"
+    },
+    {
+      "q": "Yarim yemirilish davri T va yemirilish doimiysi λ orasidagi bog'lanish qanday?",
+      "v": [
+        "T = ln2/λ ≈ 0,693/λ",
+        "T = λ·ln2",
+        "T = λ/0,693",
+        "T = 2λ"
+      ],
+      "t": 0,
+      "izoh": "T = ln2/λ = 0,693/λ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#a40b96be"
+    },
+    {
+      "q": "Radioaktiv yemirilish qonunining yarim yemirilish davri orqali yozilishi qanday?",
+      "v": [
+        "N = N₀·2^(–t/T)",
+        "N = N₀·2^(t/T)",
+        "N = N₀·T/t",
+        "N = N₀·e^(t/T)"
+      ],
+      "t": 0,
+      "izoh": "N = N₀·2^(–t/T), bu yerda T — yarim yemirilish davri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#57b42570"
+    },
+    {
+      "q": "Radioaktiv manbaning aktivligi (A) deb nimaga aytiladi?",
+      "v": [
+        "1 s dagi parchalanishlar soniga",
+        "Manbadagi barcha yadrolar soniga",
+        "Yarim yemirilish davriga",
+        "1 soat dagi energiya ajralishiga"
+      ],
+      "t": 0,
+      "izoh": "Aktivlik — birlik vaqtdagi parchalanishlar soni: A = |dN/dt| = λN.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#15a9d7ed"
+    },
+    {
+      "q": "Aktivlikning SI dagi birligi nima va u qanday aniqlanadi?",
+      "v": [
+        "Bekkerel (Bk) — 1 s da 1 ta parchalanish",
+        "Kyuri (Cu) — 1 s da 3,7·10¹⁰ parchalanish",
+        "Greyd — yutilgan energiya",
+        "Rentgen — havoni ionlashtirish"
+      ],
+      "t": 0,
+      "izoh": "1 Bk = 1 parch./1 s = 1 s⁻¹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#6c0a1910"
+    },
+    {
+      "q": "1 kyuri (Cu) necha Bekkerelga teng?",
+      "v": [
+        "3,7·10¹⁰ Bk",
+        "3,7·10¹⁰⁰ Bk",
+        "10¹⁰ Bk",
+        "1,6·10⁻¹⁹ Bk"
+      ],
+      "t": 0,
+      "izoh": "1 Cu = 3,7·10¹⁰ Bk.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#dabb7476"
+    },
+    {
+      "q": "Tartib raqami nechadan katta bo'lgan elementlarning barcha izotoplari radioaktiv?",
+      "v": [
+        "83 dan",
+        "92 dan",
+        "26 dan",
+        "50 dan"
+      ],
+      "t": 0,
+      "izoh": "Tartib raqami 83 dan katta elementlar izotoplarining barchasi radioaktivdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#c6276ef8"
+    },
+    {
+      "q": "²³⁸₉₂U uran oilasi qaysi stabil izotop bilan tugaydi?",
+      "v": [
+        "²⁰⁶₈₂Pb",
+        "²⁰⁸₈₂Pb",
+        "²⁰⁷₈₂Pb",
+        "²⁰⁹₈₃Bi"
+      ],
+      "t": 0,
+      "izoh": "Uran-238 oilasi qo'rg'oshin-206 stabil izotopi bilan tugaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#bf0187e6"
+    },
+    {
+      "q": "²³²₉₀Th toriy oilasi qaysi stabil izotop bilan tugaydi?",
+      "v": [
+        "²⁰⁸₈₂Pb",
+        "²⁰⁶₈₂Pb",
+        "²⁰⁷₈₂Pb",
+        "²⁰⁹₈₃Bi"
+      ],
+      "t": 0,
+      "izoh": "Toriy oilasi qo'rg'oshin-208 bilan tugaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#e7c180f0"
+    },
+    {
+      "q": "²³⁷₉₃Np neptuniy oilasi qaysi stabil izotop bilan tugaydi?",
+      "v": [
+        "²⁰⁹₈₃Bi",
+        "²⁰⁶₈₂Pb",
+        "²⁰⁷₈₂Pb",
+        "²⁰⁸₈₂Pb"
+      ],
+      "t": 0,
+      "izoh": "Neptuniy oilasi vismut-209 stabil izotopi bilan tugaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#c6f976cb"
+    },
+    {
+      "q": "Uranning yarim yemirilish davri taxminan qancha?",
+      "v": [
+        "4,56 mlrd yil",
+        "1,5·10⁻⁴ s",
+        "1600 yil",
+        "8 sutka"
+      ],
+      "t": 0,
+      "izoh": "Uran uchun T ≈ 4,56 mlrd yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#63953013"
+    },
+    {
+      "q": "Poloniy izotopining yarim yemirilish davri qancha?",
+      "v": [
+        "1,5·10⁻⁴ s",
+        "4,56 mlrd yil",
+        "1600 yil",
+        "30 yil"
+      ],
+      "t": 0,
+      "izoh": "Poloniy izotopi uchun T bor-yo'g'i 1,5·10⁻⁴ s ni tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#91042534"
+    },
+    {
+      "q": "Agar N₀ = 10⁶ ta radioaktiv yadro bo'lsa, ikki yarim yemirilish davridan keyin nechta yadro qoladi?",
+      "v": [
+        "2,5·10⁵",
+        "5·10⁵",
+        "0",
+        "7,5·10⁵"
+      ],
+      "t": 0,
+      "izoh": "N = N₀·2^(–2) = 10⁶/4 = 2,5·10⁵.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#8666dcab"
+    },
+    {
+      "q": "Radioaktiv elementlar oilasida dastlabki elementdan boshqa a'zolar qanday hosil bo'ladi?",
+      "v": [
+        "Oldingisining radioaktiv yemirilishi natijasida",
+        "Kimyoviy reaksiya natijasida",
+        "Sun'iy nurlantirish bilan",
+        "Harorat ta'sirida"
+      ],
+      "t": 0,
+      "izoh": "Oila a'zolari oldingi elementning radioaktiv yemirilishi natijasida hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#fe280b24"
+    },
+    {
+      "q": "\"Radioaktiv\" so'zi qaysi tildagi qaysi so'zdan olingan?",
+      "v": [
+        "Lotincha radius — nur",
+        "Grekcha atomos — bo'linmas",
+        "Lotincha energia — harakat",
+        "Inglizcha ray — nurlanish"
+      ],
+      "t": 0,
+      "izoh": "Radioaktiv nurlar lotincha radius (nur) so'zidan olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#9bb76957"
+    },
+    {
+      "q": "Radioaktivlik nimaga ta'sir ko'rsata olmaydi: bosim, temperatura, elektr va magnit maydon — bundan qanday xulosa chiqadi?",
+      "v": [
+        "Radioaktivlik yadro ichidagi jarayonlargagina bog'liq",
+        "Radioaktivlik atom qobig'ida ro'y beradi",
+        "Radioaktivlik kimyoviy jarayon",
+        "Nurlar tashqi maydondan umuman ta'sirlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Tashqi omillar ta'sir qilmasligi radioaktivlikning yadro ichidagi jarayon ekanini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#a72dbd05"
+    },
+    {
+      "q": "Yarim yemirilish davri 5 soat bo'lgan izotopning 15 soatdan keyingi qolgan yadrolari ulushi qanday?",
+      "v": [
+        "1/8",
+        "1/2",
+        "1/4",
+        "1/16"
+      ],
+      "t": 0,
+      "izoh": "15/5 = 3 davr; N = N₀·2^(–3) = N₀/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#c03a9fbf"
+    },
+    {
+      "q": "Radioaktivlik atom yadrosi haqida ma'lumot beruvchi manbalardan biri, chunki...",
+      "v": [
+        "u yadro va unda bo'ladigan jarayonlarni bevosita aks ettiradi",
+        "u atom qobig'i tuzilishini ko'rsatadi",
+        "u elektron orbitalarini belgilaydi",
+        "u kimyoviy bog'lanishlarni yaratadi"
+      ],
+      "t": 0,
+      "izoh": "Radioaktivlik atom yadrosi va undagi jarayonlar haqida ma'lumot beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#49a12a8c"
+    },
+    {
+      "q": "Radioaktiv elementning yemirilish doimiysi λ nimani bildiradi?",
+      "v": [
+        "Har bir yadroning bir sekund davomida yemirilish ehtimolini",
+        "Manbaning umumiy aktivligini",
+        "Yarim yemirilish davrining kvadratini",
+        "Chiqarilgan zarralarning tezligini"
+      ],
+      "t": 0,
+      "izoh": "λ — bir yadroning 1 s da yemirilish ehtimolini bildiruvchi kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m41-radioaktiv-yemirilish#1419e929"
+    }
+  ]
+}

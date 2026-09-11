@@ -1,0 +1,396 @@
+{
+  "nom": "31-mavzu. Laboratoriya Yoritilganlikning Yoruglik Kuchiga Bogliqligi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "31-laboratoriya ishining maqsadi nimadan iborat?",
+      "v": [
+        "Yoritilganlikning yorug'lik manbayi yorug'lik kuchiga bog'liqligini eksperimental tekshirish",
+        "Yorug'lik tezligini o'lchash",
+        "Yorug'likning sinish ko'rsatkichini aniqlash",
+        "Fotoeffekt qonunini tekshirish"
+      ],
+      "t": 0,
+      "izoh": "Ishning maqsadi — yoritilganlikning yorug'lik manbayi yorug'lik kuchiga bog'liqligini eksperimental ravishda tekshirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#e7d49054"
+    },
+    {
+      "q": "Laboratoriya ishida yoritilganlikni o'lchash uchun qanday asbob ishlatiladi?",
+      "v": [
+        "Lyuksmetr",
+        "Ampermetr",
+        "Voltmetr",
+        "Barometr"
+      ],
+      "t": 0,
+      "izoh": "Yoritilganlik lyuksmetr yordamida o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#31f54b0b"
+    },
+    {
+      "q": "Laboratoriya ishida kerakli jihozlar qatoriga qaysilari kiradi?",
+      "v": [
+        "Yoritilganlik qonunlarini o'rganadigan qurilma, yorug'lik manbayi, lyuksmetr, o'lchov tasmasi yoki chizg'ich",
+        "Mikroskop, termometr, tarozi",
+        "Osilograf, generator, to'xtatgich",
+        "Spektrometr, prizma, ekran"
+      ],
+      "t": 0,
+      "izoh": "Kerakli asboblar: yoritilganlik qonunlarini o'rganadigan qurilma, yorug'lik manbayi, lyuksmetr, o'lchov tasmasi yoki chizg'ich.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#ec9adede"
+    },
+    {
+      "q": "Qurilmadagi 1- va 3-lampochkalar qanday lampochkalar hisoblanadi?",
+      "v": [
+        "Yorug'lik kuchi ma'lum bo'lgan cho'g'lanma tolali lampochkalar",
+        "Luminestsent lampalar",
+        "Gaz razryadli lampalar",
+        "Svetodiodlar"
+      ],
+      "t": 0,
+      "izoh": "Qurilmada yorug'lik kuchi ma'lum bo'lgan cho'g'lanma tolali lampochkalar ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#2f9ec315"
+    },
+    {
+      "q": "Lyuksmetrning asosiy sezgir elementi nima?",
+      "v": [
+        "Fotoelement",
+        "Termopara",
+        "Katod nuri trubkasi",
+        "Galvanometr ramkasi"
+      ],
+      "t": 0,
+      "izoh": "Qurilma chizmasidagi 2 — lyuksmetrning fotoelelementi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#95d209b4"
+    },
+    {
+      "q": "1-lampochka qanday tok manbayiga ulanadi?",
+      "v": [
+        "Kuchlanishi o'zgartiriladigan tok manbayiga",
+        "Nominal kuchlanishli tok manbayiga",
+        "O'zgarmas tok batareyasiga faqat",
+        "Elektr paypasligichga"
+      ],
+      "t": 0,
+      "izoh": "1-lampochka kuchlanishi o'zgartiriladigan tok manbayiga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#cd2cb739"
+    },
+    {
+      "q": "2-lampochka qanday tok manbayiga ulanadi?",
+      "v": [
+        "Nominal kuchlanishli (lampochkaga yozilgan) tok manbayiga",
+        "Kuchlanishi o'zgartiriladigan tok manbayiga",
+        "Past kuchlanishli akkumulyatorga",
+        "Induksion g'alatakka"
+      ],
+      "t": 0,
+      "izoh": "2-lampochka nominal kuchlanishli tok manbayiga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#581f9a94"
+    },
+    {
+      "q": "Tajriba boshida 1-lampochkadan lyuksmetrgacha bo'lgan masofa bilan nima qilinadi?",
+      "v": [
+        "r₁ masofa o'lchab olinadi",
+        "Masofa hisobga olinmaydi",
+        "Masofa ixtiyoriy tanlanadi va yozilmaydi",
+        "Masofa maksimal qilib o'rnatiladi"
+      ],
+      "t": 0,
+      "izoh": "1-lampochkadan lyuksmetrgacha bo'lgan r₁ masofa o'lchab olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#3bb92221"
+    },
+    {
+      "q": "Tajribada 1-lampochkaga dastlab qanday kuchlanish beriladi?",
+      "v": [
+        "40 V",
+        "220 V",
+        "12 V",
+        "4,5 V"
+      ],
+      "t": 0,
+      "izoh": "1-lampochkaga 40 V kuchlanish beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#6bcf036c"
+    },
+    {
+      "q": "1-lampochkaga kuchlanish berilgach, lyuksmetrda nima aniqlanadi?",
+      "v": [
+        "Uning hosil qilgan yoritilganligi E₁",
+        "Lampochkaning kuchlanishi",
+        "Tok kuchi",
+        "Lampochka harorati"
+      ],
+      "t": 0,
+      "izoh": "Lyuksmetrda 1-lampochka hosil qilgan yoritilganlik E₁ aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#c76715fd"
+    },
+    {
+      "q": "E₁ aniqlangandan keyingi tajriba bosqichida nima qilinadi?",
+      "v": [
+        "1-lampochka o'chirilib, 2-lampochka yoqiladi va lyuksmetr unga qaratiladi",
+        "Ikkala lampochka birga yoqiladi",
+        "Lyuksmetr o'chiriladi",
+        "Masofa ixtiyoriy o'zgartiriladi"
+      ],
+      "t": 0,
+      "izoh": "1-lampochka o'chirilib, 2-lampochka yoqiladi, lyuksmetr 2-lampochkaga qaratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#24e87b97"
+    },
+    {
+      "q": "2-lampochka bilan ishlaganda r₂ masofa qanday tanlanadi?",
+      "v": [
+        "Lyuksmetr ko'rsatishi E₁ ga teng bo'lguncha r₂ masofa o'zgartiriladi",
+        "r₂ har doim r₁ ga teng qilib olinadi",
+        "r₂ r₁ dan 2 marta katta qilinadi",
+        "r₂ ixtiyoriy tanlanadi"
+      ],
+      "t": 0,
+      "izoh": "r₂ masofa lyuksmetr ko'rsatishi E₁ ga teng bo'lgan joyda qoldiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#39edeecb"
+    },
+    {
+      "q": "Bu laboratoriya ishida qiyoslash qanday shart asosida o'tkaziladi?",
+      "v": [
+        "Har ikki lampochka hosil qilgan yoritilganlik tenglashtiriladi",
+        "Ikkala lampochkaga bir xil kuchlanish beriladi",
+        "Masofalar tenglashtiriladi",
+        "Lampochkalar harorati tenglashtiriladi"
+      ],
+      "t": 0,
+      "izoh": "Lyuksmetr ko'rsatishlari tenglashtirilib (E₁ = E₂), masofalar o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#acbcc93b"
+    },
+    {
+      "q": "Yoritilganliklar teng bo'lganda (E₁ = E₂) lampochkalarning yorug'lik kuchlari bilan masofalar orasida qanday bog'liqlik kutiladi?",
+      "v": [
+        "I₁/I₂ = r₁²/r₂²",
+        "I₁/I₂ = r₁/r₂",
+        "I₁/I₂ = r₂²/r₁²",
+        "I₁/I₂ = r₂/r₁"
+      ],
+      "t": 0,
+      "izoh": "E = I/r² bo'lgani uchun E₁ = E₂ dan I₁/r₁² = I₂/r₂², ya'ni I₁/I₂ = r₁²/r₂².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#165ebfde"
+    },
+    {
+      "q": "Agar r₁ masofa r₂ dan 2 marta katta bo'lsa va yoritilganliklar teng bo'lsa, 1-lampochkaning yorug'lik kuchi 2-lampochkanikidan necha marta katta?",
+      "v": [
+        "4 marta",
+        "2 marta",
+        "8 marta",
+        "1,4 marta"
+      ],
+      "t": 0,
+      "izoh": "I₁/I₂ = r₁²/r₂² = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#14e35ca5"
+    },
+    {
+      "q": "Laboratoriya ishida masofalarni o'lchash uchun nima ishlatiladi?",
+      "v": [
+        "O'lchov tasmasi yoki chizg'ich",
+        "Shtangensirkul",
+        "Mikrometr",
+        "Nivelir"
+      ],
+      "t": 0,
+      "izoh": "Masofani o'lchash uchun o'lchov tasmasi yoki chizg'ich ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#f8983ab5"
+    },
+    {
+      "q": "Lyuksmetr yoritilganlikni qanday birlikda ko'rsatadi?",
+      "v": [
+        "Lyuks (lx)",
+        "Lyumen (lm)",
+        "Kandela (cd)",
+        "Vatt (W)"
+      ],
+      "t": 0,
+      "izoh": "Yoritilganlik lyuksda o'lchanadi, lyuksmetr shu birlikda ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#04ec97b5"
+    },
+    {
+      "q": "1-lampochkaga beriladigan kuchlanishni o'zgartirish nima uchun kerak?",
+      "v": [
+        "Uning yorug'lik kuchini o'zgartirib, yoritilganlikning kuchga bog'liqligini tekshirish uchun",
+        "Lampochkani erta eskirtish uchun",
+        "Tok manbeyni tekshirish uchun",
+        "Lyuksmetrni kalibrovkadan o'tkazish uchun"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish o'zgarishi lampochkaning yorug'lik kuchini o'zgartiradi — ishning maqsadi shu bog'liqlikni tekshirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#5334e0f4"
+    },
+    {
+      "q": "Lampochkaga berilgan kuchlanish oshirilsa, uning yorug'lik kuchi va hosil qilgan yoritilganlik qanday o'zgaradi?",
+      "v": [
+        "Ikkalasi ham ortadi",
+        "Ikkalasi ham kamayadi",
+        "Yorug'lik kuchi ortadi, yoritilganlik kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish oshsa cho'g'lanma tola issiqlanib yorug'lik kuchi ortadi, shunga mos yoritilganlik ham ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#1b9c2a22"
+    },
+    {
+      "q": "Tajribada 2-lampochka nominal kuchlanishda yoqilganda uning yorug'lik kuchi qanday bo'ladi?",
+      "v": [
+        "Ma'lum va doimiy (pasportidagi qiymatga mos)",
+        "Nolga teng",
+        "Har safar o'zgarib turadi",
+        "1-lampochkanikiga har doim teng"
+      ],
+      "t": 0,
+      "izoh": "Nominal kuchlanishda lampochka o'zining ma'lum (pasport) yorug'lik kuchida ishlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#d32d9035"
+    },
+    {
+      "q": "Yoritilganlik qonuniga ko'ra, lyuksmetrni manbadan uzoqlashtirganda uning ko'rsatishi qanday o'zgaradi?",
+      "v": [
+        "Masofa kvadratiga teskari proporsional kamayadi",
+        "Chiziqli kamayadi",
+        "Ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "E = I/r² bo'lgani uchun masofa ortganda ko'rsatish kvadratik kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#8d96fbbf"
+    },
+    {
+      "q": "Laboratoriya ishida lyuksmetr ko'rsatishlari tenglashtirilgach, aniqlanadigan noma'lum kattalik qaysi?",
+      "v": [
+        "Lampochkaning yorug'lik kuchi",
+        "Lampochkaning quvvati",
+        "Tok kuchi",
+        "Kuchlanish"
+      ],
+      "t": 0,
+      "izoh": "Yoritilganliklar tenglashtirilib, masofalar orqali lampochkaning yorug'lik kuchi aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#aefaae91"
+    },
+    {
+      "q": "Fotometrik o'lchovlarda ishlatiladigan qurilmalarda fotoelelementning roli nimadan iborat?",
+      "v": [
+        "Yorug'lik energiyasini elektr signaliga aylantirib, yoritilganlikni o'lchash imkonini beradi",
+        "Yorug'likni kuchaytiradi",
+        "Yorug'lik manbai bo'lib xizmat qiladi",
+        "Yorug'likni qaytaradi"
+      ],
+      "t": 0,
+      "izoh": "Fotoelement yorug'likni elektr signaliga aylantiruvchi sezgir element bo'lib, lyuksmetr ko'rsatishini ta'minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#c7805f80"
+    },
+    {
+      "q": "Agar 2-lampochkaning yorug'lik kuchi 1-lampochkanikidan katta bo'lsa, teng yoritilganlik shartida r₂ masofa r₁ dan qanday bo'ladi?",
+      "v": [
+        "Katta",
+        "Kichik",
+        "Teng",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "I₁/I₂ = r₁²/r₂² dan: I₂ katta bo'lsa, r₂ ham katta bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#0d0f7945"
+    },
+    {
+      "q": "Laboratoriya ishini bajarishda o'lchash aniqligini oshirish uchun qaysi choralarga rioya etish maqsadga muvofiq?",
+      "v": [
+        "Masofalarni chizg'ich bilan sinchiklab o'lchash va lyuksmetrni to'g'ri yo'naltirish",
+        "Xonani to'la yoritib qo'yish",
+        "Lampochkalarni bir-biriga yaqinlashtirish",
+        "Tajribani bir marta bajarib, natijani darhol yozish"
+      ],
+      "t": 0,
+      "izoh": "Masofalarni aniq o'lchash va lyuksmetrni lampochkaga to'g'ri qaratish aniqlikni oshiradi; xona yoritilishi esa xatolik kiritadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#d735d6d8"
+    },
+    {
+      "q": "Laboratoriya ishining nazariy asosi qaysi formula?",
+      "v": [
+        "E = I/r²",
+        "Ф = 4πI",
+        "B = I/S",
+        "Ω = S/R²"
+      ],
+      "t": 0,
+      "izoh": "Ish yoritilganlik qonuni E = I/r² asosida o'tkaziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m31-laboratoriya-yoritilganlikning-yoruglik-kuchiga-bogliqligi#02af9fd4"
+    }
+  ]
+}

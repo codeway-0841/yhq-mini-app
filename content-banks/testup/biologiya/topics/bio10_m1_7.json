@@ -1,0 +1,936 @@
+{
+  "nom": "Biologiya-10, 1.7. Oqsillar",
+  "bolim": "I BOB. Molekulyar biologiya",
+  "savollar": [
+    {
+      "q": "Oqsil (protein) hujayrada asosan qanday vazifa bajaradi?",
+      "v": [
+        "Hujayraning asosiy qurilish materiali hisoblanadi",
+        "Faqat energiya zaxirasi vazifasini bajaradi",
+        "Faqat irsiy axborotni saqlaydi",
+        "Hujayrada umuman uchramaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra oqsillar hujayraning asosiy qurilish materialidir va har bir tirik organizmda mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m1_7#f1ada3a1"
+    },
+    {
+      "q": "Oqsillar tarkibiga asosan qaysi kimyoviy elementlar kiradi?",
+      "v": [
+        "Uglerod, vodorod, kislorod, azot va oltingugurt",
+        "Faqat uglerod, vodorod va kislorod",
+        "Fosfor, kaliy, kalsiy va natriy",
+        "Temir, mis, rux va yod"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra oqsillar asosan uglerod (C), vodorod (H), kislorod (O), azot (N) va oltingugurt (S)dan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#48886795"
+    },
+    {
+      "q": "Oqsil molekulalarining monomerlari nima hisoblanadi?",
+      "v": [
+        "Aminokislotalar",
+        "Monosaxaridlar",
+        "Nukleotidlar",
+        "Yog' kislotalari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra aminokislotalar oqsil molekulalarining monomerlari hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m1_7#31332121"
+    },
+    {
+      "q": "Aminokislotalar qanday funksional guruhlarga ega organik birikmalardir?",
+      "v": [
+        "Aminoguruh (NH2) va karboksil guruhi (COOH)",
+        "Gidroksil guruhi (OH) va aldegid guruhi",
+        "Fosfat guruhi va karboksil guruhi",
+        "Faqat aminoguruh (NH2)"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra aminokislotalar aminoguruh (NH2) va karboksil guruhi (COOH)ga ega organik birikmalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#f6e11a93"
+    },
+    {
+      "q": "Aminokislotalar bir-biridan qaysi qismi bilan farqlanadi?",
+      "v": [
+        "Radikallari bilan",
+        "Aminoguruhi bilan",
+        "Karboksil guruhi bilan",
+        "Molekulyar og'irligi doim teng bo'lgani uchun farqlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra aminokislotalar bir-biridan radikallari bilan farqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#32664190"
+    },
+    {
+      "q": "Aminokislotaning xossalarini va oqsil funksiyalarining asosini nima belgilaydi?",
+      "v": [
+        "Radikalning o'ziga xos xususiyatlari",
+        "Aminoguruhning soni",
+        "Karboksil guruhining joylashuvi",
+        "Molekuladagi kislorod miqdori"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra radikallarning o'ziga xos xususiyatlari aminokislotaning xossalarini belgilaydi va oqsil funksiyalarining asosi hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#47a3f448"
+    },
+    {
+      "q": "Tabiatda aminokislotalarning necha turi mavjud?",
+      "v": [
+        "150 dan ortiq",
+        "Aynan 20 ta",
+        "Aynan 64 ta",
+        "1000 dan ortiq"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra aminokislotalarning turlari 150 dan ortiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#44bf7040"
+    },
+    {
+      "q": "Tabiiy oqsillarni hosil qilishda nechta aminokislota ishtirok etadi?",
+      "v": [
+        "20 ta",
+        "150 ta",
+        "10 ta",
+        "64 ta"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra tabiiy oqsillarni hosil qilishda faqat 20 ta aminokislota ishtirok etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m1_7#56b4d215"
+    },
+    {
+      "q": "Hujayraning quruq moddasida oqsillar ulushi qanchani tashkil qiladi?",
+      "v": [
+        "Yarmidan ko'pini",
+        "Beshdan bir qismini",
+        "Ondan bir qismini",
+        "Yuzdan bir qismini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra organik moddalar orasida oqsillar ulushi quruq moddaning yarmidan ko'pini tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#46c70dbd"
+    },
+    {
+      "q": "Kimyoviy tuzilishi jihatidan oqsillar nima hisoblanadi?",
+      "v": [
+        "Aminokislotalardan tashkil topgan polimerlar",
+        "Monosaxaridlardan iborat polimerlar",
+        "Yog' kislotalaridan iborat monomerlar",
+        "Nukleotidlardan tashkil topgan disaxaridlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra oqsillar aminokislotalardan tashkil topgan polimerlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m1_7#2f36825a"
+    },
+    {
+      "q": "Ovqat hazm qilish jarayonida oqsillar parchalanib nimani hosil qiladi?",
+      "v": [
+        "Erkin aminokislotalarni",
+        "Glyukoza molekulalarini",
+        "Yog' kislotalarini",
+        "Nukleotidlarni"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra oqsillar ovqat hazm qilish jarayonida parchalanib erkin aminokislotalarni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#22aaac98"
+    },
+    {
+      "q": "Aminokislotalar o'zaro birikkanda qanday bog' hosil bo'ladi?",
+      "v": [
+        "Peptid bog'i",
+        "Vodorod bog'i",
+        "Disulid bog'i",
+        "Ion bog'i"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra aminoguruh azot atomi va karboksil guruh uglerod atomi o'rtasida hosil bo'lgan kovalent bog' peptid bog'i deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#7a782d40"
+    },
+    {
+      "q": "Peptid bog'i hosil bo'lishida qaysi atomlar o'rtasida kovalent bog' vujudga keladi?",
+      "v": [
+        "Aminoguruh azoti va karboksil guruh uglerodi o'rtasida",
+        "Ikkita azot atomi o'rtasida",
+        "Ikkita kislorod atomi o'rtasida",
+        "Uglerod va vodorod atomlari o'rtasida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra peptid bog'i aminoguruh qoldig'ining azot atomi va karboksil guruh qoldig'ining uglerod atomi o'rtasida hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#bc787456"
+    },
+    {
+      "q": "Ikki aminokislotaning birikishida peptid bog'i hosil bo'lganda nima ajralib chiqadi?",
+      "v": [
+        "Bir molekula suv",
+        "Bir molekula karbonat angidrid",
+        "Bir molekula ammiak",
+        "Bir molekula kislorod"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra aminokislotalar bir molekula suv ajralishi hisobiga bir-biri bilan birikadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#640b5b3a"
+    },
+    {
+      "q": "Ikkita aminokislotadan iborat birikma qanday ataladi?",
+      "v": [
+        "Dipeptid",
+        "Polipeptid",
+        "Tripeptid",
+        "Monopeptid"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra ikkita aminokislotadan iborat birikma dipeptid deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m1_7#fb84be27"
+    },
+    {
+      "q": "Nechta aminokislota qoldig'idan iborat birikma polipeptid deyiladi?",
+      "v": [
+        "10 tadan ortiq",
+        "2 ta",
+        "5 ta",
+        "100 tadan ortiq"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra 10 tadan ortiq aminokislota qoldig'idan iborat birikma polipeptid deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#b102a6f5"
+    },
+    {
+      "q": "Odatda oqsil molekulalari qancha aminokislota qoldig'ini o'z ichiga oladi?",
+      "v": [
+        "Yuzlab va minglab",
+        "Faqat ikkita",
+        "Faqat o'ntadan kam",
+        "Milliardlab"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra oqsil molekulalari yuzlab va minglab aminokislota qoldiqlarini o'z ichiga olgan polipeptidlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#083b3848"
+    },
+    {
+      "q": "20 xil aminokislotadan juda ko'p turli oqsillar hosil qilinishi nima bilan izohlanadi?",
+      "v": [
+        "Aminokislotalar soni va ularning joylashish tartibi har xil bo'lishi bilan",
+        "Har bir aminokislota faqat bitta oqsil hosil qilishi bilan",
+        "Aminokislotalarning ranggi har xil bo'lishi bilan",
+        "Oqsillarning haroratga bog'liqligi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra 20 xil aminokislota yordamida tarkibidagi aminokislotalar soni va ularning tartibi bilan bir-biridan farq qiluvchi ko'plab oqsillarni hosil qilish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#136d2113"
+    },
+    {
+      "q": "Oqsildagi aminokislotalar ketma-ketligi nima bilan belgilanadi?",
+      "v": [
+        "DNKdagi irsiy axborot — gen strukturasi bilan",
+        "Hujayra harorati bilan",
+        "Membrana o'tkazuvchanligi bilan",
+        "Ovqatlanish tartibi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra aminokislotalar tartibi oqsilni kodlovchi DNKdagi irsiy axborot — gen strukturasi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#6d94c803"
+    },
+    {
+      "q": "Oqsil molekulasida aminokislotalarning joylashish tartibi nimani ifodalaydi?",
+      "v": [
+        "Turning o'zgarmas xossasini",
+        "Hujayraning yoshini",
+        "Organizmning haroratini",
+        "Tashqi muhit bosimini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra aminokislotalarning joylashish tartibi turning o'zgarmas xossasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#77608681"
+    },
+    {
+      "q": "Har xil turga mansub organizmlarda bir xil vazifa bajaruvchi oqsillar nimasi bilan farqlanadi?",
+      "v": [
+        "Aminokislotalar ketma-ketligi bilan",
+        "Bajaradigan funksiyasi bilan",
+        "Ranggi bilan",
+        "Elementar tarkibi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra har xil turga mansub organizmlarda bir xil vazifani bajaruvchi oqsillar aminokislotalar ketma-ketligi bilan farqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#5ad9f9aa"
+    },
+    {
+      "q": "Oqsilning birlamchi strukturasi nimani anglatadi?",
+      "v": [
+        "Peptid bog'lari orqali bog'langan aminokislotalarning aniq ketma-ketlikda joylashish tartibini",
+        "Polipeptid zanjirining spiralga buralishini",
+        "Bir necha subbirlikning birikishini",
+        "Zanjirning sharsimon shakl olishini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra peptid bog'lari orqali bog'langan aminokislota qoldiqlarining aniq ketma-ketlikdagi tartibi birlamchi strukturani belgilaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#593adf58"
+    },
+    {
+      "q": "Oqsilning shakli, xususiyatlari va biologik funksiyalarini qaysi struktura belgilaydi?",
+      "v": [
+        "Birlamchi struktura",
+        "To'rtlamchi struktura",
+        "Ikkilamchi struktura faqat",
+        "Uchlamchi struktura faqat"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra birlamchi struktura oqsilning shakli, xususiyatlari va biologik funksiyalarini belgilaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#756efff4"
+    },
+    {
+      "q": "Polipeptid zanjirining hosil qiladigan turli fazoviy shakllari qanday nomlanadi?",
+      "v": [
+        "Konformatsiyalar",
+        "Denaturatsiyalar",
+        "Renaturatsiyalar",
+        "Mutatsiyalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra polipeptid zanjiri bir necha xil fazoviy shakllarni — konformatsiyalarni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#8a0926e5"
+    },
+    {
+      "q": "Oqsilning ikkilamchi (alfa spiral) strukturasi qaysi bog'lar hisobiga hosil bo'ladi va barqaror turadi?",
+      "v": [
+        "Vodorod bog'lari",
+        "Peptid bog'lari",
+        "Disulid bog'lari",
+        "Ion bog'lari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra -NH va -CO guruhlarining vodorod bog'lar orqali birikishidan alfa spiral ikkilamchi struktura hosil bo'ladi va vodorod bog'lar hisobiga barqarordir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#f0499a34"
+    },
+    {
+      "q": "Alfa spiral ikkilamchi struktura hosil bo'lishida qaysi guruhlar o'zaro vodorod bog'i hosil qiladi?",
+      "v": [
+        "-NH va -CO guruhlari",
+        "-OH va -COOH guruhlari",
+        "-NH2 va -SH guruhlari",
+        "-CH3 va -OH guruhlari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra peptid bog'ini hosil qilishda ishtirok etadigan -NH va -CO guruhlari vodorod bog'lar orqali birikadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#225a81db"
+    },
+    {
+      "q": "Oqsilning uchlamchi strukturasi fazoda qanday shakl hosil qiladi?",
+      "v": [
+        "Globulyar (sharsimon) struktura",
+        "To'g'ri chiziqli zanjir",
+        "Ikki qavatli tekislik",
+        "Halqasimon yopiq zanjir"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra uchlamchi struktura spiral ko'rinishidagi polipeptid zanjirining fazoda globulyar (sharsimon) struktura hosil qilishi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#567071e9"
+    },
+    {
+      "q": "Oqsilning uchlamchi strukturasi barqarorligi vodorod bog'lardan tashqari yana qaysi bog'lar bilan ta'minlanadi?",
+      "v": [
+        "Ion, disulid va gidrofob bog'lar",
+        "Faqat peptid bog'lari",
+        "Faqat kovalent qo'sh bog'lar",
+        "Metall koordinatsion bog'lar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra uchlamchi struktura barqarorligi vodorod bog'lardan tashqari ion, disulid va gidrofob bog'lar bilan ta'minlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#10e8a2d2"
+    },
+    {
+      "q": "Oqsilning to'rtlamchi strukturasi nima bilan belgilanadi?",
+      "v": [
+        "Ikki yoki undan ortiq mustaqil sintezlangan polipeptid subbirliklarning birikishi bilan",
+        "Bitta zanjirning spiralga buralishi bilan",
+        "Aminokislotalar ketma-ketligi bilan",
+        "Peptid bog'ining hosil bo'lishi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra to'rtlamchi struktura ikki yoki undan ortiq mustaqil sintezlangan polipeptid subbirliklarning birikishi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#7a91ea9a"
+    },
+    {
+      "q": "Gemoglobin qanday subbirliklardan tashkil topgan?",
+      "v": [
+        "2 ta subbirlik (141 aminokislota) va 2 ta subbirlik (146 aminokislota)",
+        "Bitta 574 aminokislotali zanjir",
+        "4 ta bir xil subbirlik",
+        "2 ta subbirlik va 1 ta gem"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra gemoglobin 2 ta subbirlik (141 ta aminokislota qoldig'i) va 2 ta subbirlikdan (146 ta aminokislota qoldig'i) iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#aef62265"
+    },
+    {
+      "q": "Gemoglobinning har bir subbirligi qanday molekula bilan bog'langan?",
+      "v": [
+        "Temir atomiga ega gem molekulasi bilan",
+        "Mis atomiga ega molekula bilan",
+        "Magniy atomiga ega xlorofill bilan",
+        "Rux atomiga ega ferment bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra gemoglobinning har bir subbirligi temir atomiga ega gem molekulasi bilan bog'langan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#2697b9b2"
+    },
+    {
+      "q": "Oqsilning birlamchi strukturasi saqlangan holda turli omillar ta'sirida tabiiy tuzilishining buzilishi qanday ataladi?",
+      "v": [
+        "Denaturatsiya",
+        "Renaturatsiya",
+        "Replikatsiya",
+        "Polimerlanish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra birlamchi strukturani saqlagan holda turli omillar ta'sirida oqsil tabiiy tuzilishining buzilishi denaturatsiya deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#3c6f7171"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri oqsil denaturatsiyasiga sabab bo'luvchi omil hisoblanadi?",
+      "v": [
+        "Yuqori harorat va og'ir metallar",
+        "Past bosim va yorug'lik",
+        "Suvda erish",
+        "Aminokislotalar sonining ortishi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra oqsillar yuqori harorat va og'ir metallar ta'sirida tabiiy tuzilishi va xususiyatlarini o'zgartiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#97769fa3"
+    },
+    {
+      "q": "Denaturatsiya jarayonida oqsilning qaysi strukturalari buziladi?",
+      "v": [
+        "To'rtlamchi, uchlamchi va ikkilamchi strukturalari",
+        "Faqat birlamchi strukturasi",
+        "Faqat to'rtlamchi strukturasi",
+        "Barcha strukturalari, jumladan birlamchisi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra denaturatsiyada to'rtlamchi, uchlamchi va ikkilamchi strukturalar buziladi, birlamchi struktura saqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#95d06abb"
+    },
+    {
+      "q": "Denaturatsiya natijasida oqsilning qanday xususiyatlari yo'qoladi?",
+      "v": [
+        "Biologik faolligi va eruvchanligi",
+        "Faqat ranggi",
+        "Elementar tarkibi",
+        "Aminokislotalar ketma-ketligi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra denaturatsiya natijasida oqsilning biologik faolligi va eruvchanligi yo'qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#d03ae60e"
+    },
+    {
+      "q": "Denaturatsiya jarayoni asosan qanday xususiyatga ega?",
+      "v": [
+        "Ko'pincha qaytmas jarayon",
+        "Har doim qaytar jarayon",
+        "Faqat sovuqda sodir bo'ladi",
+        "Hech qachon sodir bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra denaturatsiya ko'pincha qaytmas jarayondir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#c8b86d58"
+    },
+    {
+      "q": "Denaturatsiyaga uchragan oqsilning asl holatini qayta tiklashi qanday hodisa deyiladi?",
+      "v": [
+        "Renaturatsiya",
+        "Denaturatsiya",
+        "Replikatsiya",
+        "Transkripsiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra omilning qisqa ta'siridan so'ng oqsilning asl holatini tiklashi renaturatsiya deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#52387520"
+    },
+    {
+      "q": "'Renaturatsiya' so'zidagi 're-' prefiksi lotinchada qanday ma'noni bildiradi?",
+      "v": [
+        "Yangilanish",
+        "Buzilish",
+        "Ikkilanish",
+        "Parchalanish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra re- lotincha yangilanish degan ma'noni bildiruvchi prefiksdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#0ded1b5e"
+    },
+    {
+      "q": "Renaturatsiya oqsilning fazoviy tuzilishi nima bilan belgilanishini isbotlaydi?",
+      "v": [
+        "Birlamchi strukturasi, ya'ni aminokislotalar ketma-ketligi bilan",
+        "Hujayra harorati bilan",
+        "To'rtlamchi strukturasi bilan",
+        "Tashqi muhit bosimi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra renaturatsiya oqsilning fazoviy strukturalari uning birlamchi strukturasi — aminokislotalar ketma-ketligi bilan belgilanishini anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#a5e846e8"
+    },
+    {
+      "q": "Tibbiyotda denaturatsiyadan qanday maqsadda foydalaniladi?",
+      "v": [
+        "Tibbiy asboblarni yuqori haroratda sterillash uchun",
+        "Oqsillarni sintez qilish uchun",
+        "Aminokislotalarni ko'paytirish uchun",
+        "Hujayralarni bo'lish uchun"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra tibbiyotda denaturatsiyadan tibbiy asboblarni yuqori haroratda sterillash maqsadida foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#31312f52"
+    },
+    {
+      "q": "Quyidagilardan qaysi moddalar antiseptik sifatida ishlatiladigan denaturatsiya qiluvchi vositalardir?",
+      "v": [
+        "Etil spirti, fenol va xloramin",
+        "Glyukoza, kraxmal va sellyuloza",
+        "Osh tuzi va soda",
+        "Kislorod va azot"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra etil spirti, fenol va xloramin kabi denaturatsiya qiluvchi vositalardan dezinfeksiya uchun antiseptik sifatida foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#59587111"
+    },
+    {
+      "q": "Kollagen oqsili qaysi funksional guruhga mansub?",
+      "v": [
+        "Struktura oqsillari",
+        "Fermentlar",
+        "Gormonlar",
+        "Transport oqsillari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra kollagen struktura oqsillari guruhiga kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#1dceb3f2"
+    },
+    {
+      "q": "Kollagen oqsili qanday vazifani bajaradi?",
+      "v": [
+        "Biriktiruvchi to'qima (suyak, pay, tog'ay)larga mustahkamlik beradi",
+        "Qon ivishini ta'minlaydi",
+        "Kraxmalni maltozaga parchalaydi",
+        "Muskullar qisqarishini ta'minlaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra kollagen biriktiruvchi to'qima — suyak, pay, tog'aylarga mustahkamlik beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#58ea69b8"
+    },
+    {
+      "q": "Sutemizuvchilar juni, tirnoqlari, qush patlari va reptiliyalar tangachalari tarkibida qaysi oqsil bo'ladi?",
+      "v": [
+        "Keratin",
+        "Kollagen",
+        "Gemoglobin",
+        "Amilaza"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra keratin sutemizuvchilar juni, tirnoqlari, qush patlari va reptiliyalar tangachalari tarkibida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#44ab1281"
+    },
+    {
+      "q": "Hujayradagi mikronaychalarning qurilish materiali qaysi oqsil hisoblanadi?",
+      "v": [
+        "Tubulin",
+        "Fibrinogen",
+        "Insulin",
+        "Miozin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra tubulin hujayradagi mikronaychalarning qurilish materialidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#c8184543"
+    },
+    {
+      "q": "Organizmga kirgan yot modda — antigenni (bakteriya, zamburug') zararsizlantiruvchi oqsil qaysi?",
+      "v": [
+        "Antitelo",
+        "Amilaza",
+        "Somatotropin",
+        "Aktin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra antitelo organizmga kirgan yot modda — antigenni zararsizlantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#e47614ff"
+    },
+    {
+      "q": "Qon ivishini qaysi oqsil ta'minlaydi?",
+      "v": [
+        "Fibrinogen",
+        "Gemoglobin",
+        "Pepsin",
+        "Tubulin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra fibrinogen qon ivishini ta'minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#ddfef220"
+    },
+    {
+      "q": "Virus replikatsiyasini bloklaydigan oqsillarni faollashtiruvchi himoya oqsili qaysi?",
+      "v": [
+        "Interferon",
+        "Insulin",
+        "Keratin",
+        "Mioglobin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra interferon virus replikatsiyasini bloklaydigan oqsillarni faollashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#4e883414"
+    },
+    {
+      "q": "Umurtqali hayvonlar qonida kislorod (O2) bilan birikuvchi oqsil qaysi?",
+      "v": [
+        "Gemoglobin",
+        "Mioglobin",
+        "Miozin",
+        "Opsin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra gemoglobin umurtqali hayvonlar qonida O2 bilan birikadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#a82c0e71"
+    },
+    {
+      "q": "Muskullarda kislorod (O2) zaxiralaydigan oqsil qaysi?",
+      "v": [
+        "Mioglobin",
+        "Gemoglobin",
+        "Fibrinogen",
+        "Amilaza"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra mioglobin muskullarda O2 zaxiralaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#b02da254"
+    },
+    {
+      "q": "Membrana orqali moddalarning aktiv va passiv transportini qaysi oqsillar ta'minlaydi?",
+      "v": [
+        "Membrana (transport) oqsillari",
+        "Struktura oqsillari",
+        "Zaxira oqsillari",
+        "Retseptor oqsillari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra membrana oqsillari moddalarning aktiv va passiv transportini ta'minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#eef55650"
+    },
+    {
+      "q": "Miofibrillalar tarkibiga kirib, muskullarning qisqarishini qaysi oqsillar ta'minlaydi?",
+      "v": [
+        "Aktin va miozin",
+        "Kollagen va keratin",
+        "Gemoglobin va mioglobin",
+        "Insulin va somatotropin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra aktin va miozin miofibrillalar tarkibiga kirib, muskullarning qisqarishini ta'minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#945e3d4e"
+    },
+    {
+      "q": "Amilaza fermenti qanday jarayonni amalga oshiradi?",
+      "v": [
+        "Kraxmalni maltozaga parchalaydi",
+        "Oqsillarni oshqozonda parchalaydi",
+        "Qon ivishini ta'minlaydi",
+        "Glyukozadan glikogen hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra amilaza kraxmalni maltozaga parchalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#209b8e7a"
+    },
+    {
+      "q": "Oshqozonda oqsillarni parchalaydigan ferment qaysi?",
+      "v": [
+        "Pepsin",
+        "Amilaza",
+        "Insulin",
+        "Tubulin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra pepsin oshqozonda oqsillarni parchalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#15381c06"
+    },
+    {
+      "q": "Jigar va muskullarda glyukozadan glikogen hosil bo'lishini qaysi gormon ta'minlaydi?",
+      "v": [
+        "Insulin",
+        "Somatotropin",
+        "Opsin",
+        "Pepsin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra insulin jigar va muskullarda glyukozadan glikogen hosil bo'lishini ta'minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#c3716a66"
+    },
+    {
+      "q": "Gipofizning oldingi bo'lagidan ajraladigan o'sish gormoni qaysi?",
+      "v": [
+        "Somatotropin",
+        "Insulin",
+        "Albumin",
+        "Interferon"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra somatotropin gipofizning oldingi bo'lagidan ajraladigan o'sish gormonidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#ca61fe70"
+    },
+    {
+      "q": "Tuxum albumini qanday vazifa bajaradi?",
+      "v": [
+        "Tuxum hujayrasining zaxira oqsili hisoblanadi",
+        "Qon ivishini ta'minlaydi",
+        "O2 ni tashiydi",
+        "Kraxmalni parchalaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra tuxum albumini tuxum hujayrasining zaxira oqsilidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_7#a49ab98e"
+    },
+    {
+      "q": "Opsin oqsili qanday vazifa bajaradi?",
+      "v": [
+        "Ko'z to'r pardasidagi ko'rish pigmenti rodopsin tarkibiga kiradi",
+        "Muskullar qisqarishini ta'minlaydi",
+        "Qon ivishini ta'minlaydi",
+        "Oshqozonda oqsil parchalaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra opsin ko'z to'r pardasidagi ko'rish pigmenti rodopsin tarkibiga kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#d681eadf"
+    },
+    {
+      "q": "Oqsillar energiya manbai sifatida qachon foydalaniladi?",
+      "v": [
+        "Faqat ekstremal holatlarda, uglevod va yog' zaxirasi tugaganda",
+        "Har doim asosiy energiya manbai sifatida",
+        "Faqat uxlash paytida",
+        "Hech qachon energiya manbai bo'la olmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra oqsillar energiya manbai sifatida faqat ekstremal holatlarda, ya'ni hujayrada uglevod va yog'lar zaxirasi tugasa foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#bc03d673"
+    },
+    {
+      "q": "Zamonaviy agrokimyoning asoschilaridan biri va o'simliklarning mineral oziqlanishi nazariyasini ishlab chiqqan olim kim?",
+      "v": [
+        "Yustus Fon Libix",
+        "Charlz Darvin",
+        "Gregor Mendel",
+        "Lui Paster"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra nemis kimyogari Yustus Fon Libix o'simliklarning mineral oziqlanishi nazariyasini ishlab chiqqan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#d2507de5"
+    },
+    {
+      "q": "Yustus Fon Libix qaysi yilda muhim ekologik-iqtisodiy qonunni shakllantirdi?",
+      "v": [
+        "1840 yilda",
+        "1859 yilda",
+        "1900 yilda",
+        "1753 yilda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra olim 1840 yilda muhim ekologik-iqtisodiy qonunni shakllantirdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#643cb99a"
+    },
+    {
+      "q": "Yustus Fon Libix madaniy o'simliklar hosildorligi nimaga bog'liqligini aniqladi?",
+      "v": [
+        "Tuproqda kam miqdorda bo'ladigan mineral moddalarga",
+        "Faqat suv miqdoriga",
+        "Faqat yorug'lik miqdoriga",
+        "Havodagi azot miqdoriga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka ko'ra Libix madaniy o'simliklar hosildorligi tuproqda kam miqdorda bo'ladigan mineral moddalarga bog'liqligini aniqladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_7#59a10d65"
+    }
+  ]
+}

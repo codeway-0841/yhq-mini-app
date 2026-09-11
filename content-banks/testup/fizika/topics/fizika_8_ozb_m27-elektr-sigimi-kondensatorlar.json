@@ -1,0 +1,516 @@
+{
+  "nom": "27-mavzu. Elektr Sigimi Kondensatorlar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektr zaryadlarini to'plash va saqlashda qanday asbobdan foydalaniladi?",
+      "v": [
+        "Kondensator",
+        "Rezistor",
+        "Reostat",
+        "Ampermetr"
+      ],
+      "t": 0,
+      "izoh": "Elektr zaryadlarini to'plash va saqlashda kondensator deb ataluvchi asbobdan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#15ad8517"
+    },
+    {
+      "q": "Kondensator deb qanday qurilmaga aytiladi?",
+      "v": [
+        "Bir-biridan yupqa dielektrik bilan ajratilgan ikki o'tkazgichdan iborat qurilmaga",
+        "Ikkita rezistordan iborat qurilmaga",
+        "O'tkazgich simdan iborat galtakka",
+        "Magnit o'rkachli bobinga"
+      ],
+      "t": 0,
+      "izoh": "Bir-biridan yupqa dielektrik bilan ajratilgan ikki o'tkazgichdan iborat qurilma (asbob) kondensator deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#7ca926ad"
+    },
+    {
+      "q": "Kondensator qanday elektrotexnik jihozlarning muhim elementi hisoblanadi?",
+      "v": [
+        "Radio, televizor, magnitofon, kompyuter kabi jihozlarning",
+        "Faqat elektr pechkalarining",
+        "Faqat transformatorlarning",
+        "Faqat elektr choynaklarning"
+      ],
+      "t": 0,
+      "izoh": "Kondensator radio, televizor, magnitofon, kompyuter kabi elektrotexnik jihozlarning muhim elementi hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#f001af2e"
+    },
+    {
+      "q": "Eng sodda kondensator qaysi?",
+      "v": [
+        "Yassi kondensator",
+        "Silindrsimon kondensator",
+        "Shar simon kondensator",
+        "O'zgaruvchan kondensator"
+      ],
+      "t": 0,
+      "izoh": "Eng sodda kondensator — bu yassi kondensator.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#f832a4c2"
+    },
+    {
+      "q": "Yassi kondensator nimadan iborat?",
+      "v": [
+        "O'zaro parallel bo'lgan ikkita yassi o'tkazgich — plastinkalardan",
+        "Ikkita galtakdan",
+        "Bitta o'tkazgich shardan",
+        "Uchta rezistordan"
+      ],
+      "t": 0,
+      "izoh": "Yassi kondensator o'zaro parallel bo'lgan ikkita yassi o'tkazgich — plastinkalardan iborat (78-rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#8dd2e20b"
+    },
+    {
+      "q": "Kondensator plastinkalari nima deb ataladi?",
+      "v": [
+        "Kondensator qoplamalari",
+        "Kondensator qutblari",
+        "Elektrod katakchalari",
+        "Zaryad to'plagichlari"
+      ],
+      "t": 0,
+      "izoh": "Yassi kondensator plastinkalari kondensator qoplamalari deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#488beddc"
+    },
+    {
+      "q": "Kondensatorning elektrostatik maydoni, asosan, qayerda bo'ladi?",
+      "v": [
+        "Qoplamalari orasida",
+        "Qoplamalarining tashqi tomonida",
+        "Ulanish simlarida",
+        "Dielektrikdan tashqarida"
+      ],
+      "t": 0,
+      "izoh": "Kondensatorning elektrostatik maydoni, asosan, ularning qoplamalari orasida bo'ladi va ularni bir jinsli deb hisoblash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#6b8edf93"
+    },
+    {
+      "q": "Kondensator zaryadlanganda uning qoplamalarida qanday zaryadlar to'planadi?",
+      "v": [
+        "Har ikki qoplamasida teng miqdorda turli ishorali zaryadlar",
+        "Faqat musbat zaryadlar",
+        "Faqat manfiy zaryadlar",
+        "Turli miqdorda bir xil ishorali zaryadlar"
+      ],
+      "t": 0,
+      "izoh": "Kondensator zaryadlanganda uning har ikki qoplamasida teng miqdorda turli ishorali zaryadlar to'planadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#bbfe8eb8"
+    },
+    {
+      "q": "Kondensatorning zaryad to'play olish xususiyatini tavsiflaydigan fizik kattalik nima deyiladi?",
+      "v": [
+        "Elektr sig'imi",
+        "Elektr qarshiligi",
+        "Elektr kuchlanishi",
+        "Tok kuchi"
+      ],
+      "t": 0,
+      "izoh": "Kondensatorning zaryad to'play olish xususiyatini tavsiflaydigan fizik kattalikka uning elektr sig'imi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#681217d2"
+    },
+    {
+      "q": "Kondensatorning elektr sig'imi qanday aniqlanadi?",
+      "v": [
+        "C = q/U",
+        "C = q·U",
+        "C = U/q",
+        "C = q/U²"
+      ],
+      "t": 0,
+      "izoh": "Kondensatorning sig'imi qoplamadagi zaryad miqdorining plastinkalar orasidagi kuchlanish nisbatiga teng: C = q/U.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#eef271ba"
+    },
+    {
+      "q": "C = q/U formulasida q nimalarni anglatadi?",
+      "v": [
+        "Kondensator qoplamasiga berilgan zaryad miqdorini",
+        "Plastinkalar orasidagi kuchlanishni",
+        "Kondensator sig'imini",
+        "Plastinkalar orasidagi masofani"
+      ],
+      "t": 0,
+      "izoh": "q — kondensator qoplamasiga berilgan zaryad miqdori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#ad9383a8"
+    },
+    {
+      "q": "Xalqaro birliklar sistemasida elektr sig'imining birligi nima?",
+      "v": [
+        "Farad (F)",
+        "Kulon (C)",
+        "Volt (V)",
+        "Om (Ω)"
+      ],
+      "t": 0,
+      "izoh": "Elektr sig'imining birligi qilib M. Faradey sharafiga farad (F) qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#9413d46d"
+    },
+    {
+      "q": "Elektr sig'imi birligi farad kimga nisbatan nomlangan?",
+      "v": [
+        "M. Faradey sharafiga",
+        "A. Volt sharafiga",
+        "Sh. Kulon sharafiga",
+        "G. Om sharafiga"
+      ],
+      "t": 0,
+      "izoh": "Birlik M. Faradey sharafiga farad deb nomlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#b32b51fe"
+    },
+    {
+      "q": "1 farad qanday aniqlanadi?",
+      "v": [
+        "1 kulon / 1 volt = 1 C/V",
+        "1 volt / 1 kulon",
+        "1 amper · 1 sekund",
+        "1 volt · 1 om"
+      ],
+      "t": 0,
+      "izoh": "[C] = [q/U] = 1 kulon/1 volt = 1 C/V = 1 F.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#598109c6"
+    },
+    {
+      "q": "1 mikrofarad (μF) necha faradga teng?",
+      "v": [
+        "10⁻⁶ F",
+        "10⁻⁹ F",
+        "10⁻¹² F",
+        "10⁻³ F"
+      ],
+      "t": 0,
+      "izoh": "1 μF = 0,000001 F = 10⁻⁶ F.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#25f0a4f4"
+    },
+    {
+      "q": "1 nanofarad (nF) necha faradga teng?",
+      "v": [
+        "10⁻⁹ F",
+        "10⁻⁶ F",
+        "10⁻¹² F",
+        "10⁻³ F"
+      ],
+      "t": 0,
+      "izoh": "1 nF = 0,000000001 F = 10⁻⁹ F.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#22fbecc0"
+    },
+    {
+      "q": "1 pikofarad (pF) necha faradga teng?",
+      "v": [
+        "10⁻¹² F",
+        "10⁻⁹ F",
+        "10⁻⁶ F",
+        "10⁻¹⁵ F"
+      ],
+      "t": 0,
+      "izoh": "1 pF = 0,000000000001 F = 10⁻¹² F.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#96dcc849"
+    },
+    {
+      "q": "Nima uchun amalda faradning ulushlari (μF, nF, pF) qo'llaniladi?",
+      "v": [
+        "1 farad juda katta birlik bo'lgani uchun",
+        "Farad juda kichik birlik bo'lgani uchun",
+        "Ulushlar aniqroq o'lchanadiganligi uchun",
+        "Farad eskirgan birlik bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "1 farad juda katta birlik bo'lgani uchun amalda, asosan, uning ulushlari — mikrofarad, nanofarad va pikofarad qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#3d2d4a48"
+    },
+    {
+      "q": "Yassi kondensatorning sig'imi qoplamalari yuzasiga qanday bog'liq?",
+      "v": [
+        "To'g'ri proporsional",
+        "Teskari proporsional",
+        "Kvadratik bog'liq",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Yassi kondensatorning sig'imi qoplamalari yuzasiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#700aaed2"
+    },
+    {
+      "q": "Yassi kondensatorning sig'imi qoplamalari orasidagi masofaga qanday bog'liq?",
+      "v": [
+        "Teskari proporsional",
+        "To'g'ri proporsional",
+        "Kvadratga proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Sig'im qoplamalar orasidagi masofaga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#e58cf221"
+    },
+    {
+      "q": "Yassi kondensator sig'imining formulasi qaysi?",
+      "v": [
+        "C = ε₀·ε·S/d",
+        "C = ε₀·ε·d/S",
+        "C = q/U²",
+        "C = ε·S·d"
+      ],
+      "t": 0,
+      "izoh": "C = ε₀·ε·S/d.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#0149b6d7"
+    },
+    {
+      "q": "Elektr doimiysi ε₀ ning qiymati qancha?",
+      "v": [
+        "8,85·10⁻¹² F/m",
+        "8,85·10⁻⁹ F/m",
+        "9·10⁹ F/m",
+        "1,6·10⁻¹⁹ F/m"
+      ],
+      "t": 0,
+      "izoh": "ε₀ = 8,85·10⁻¹² F/m — elektr doimiysi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#2707bd0b"
+    },
+    {
+      "q": "Havo uchun dielektrik singdiruvchanlik ε qanchaga teng?",
+      "v": [
+        "ε = 1",
+        "ε = 6",
+        "ε = 7",
+        "ε = 81"
+      ],
+      "t": 0,
+      "izoh": "Havo uchun ε = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#ac944452"
+    },
+    {
+      "q": "Sluda uchun dielektrik singdiruvchanlik ε qancha?",
+      "v": [
+        "ε = 6",
+        "ε = 1",
+        "ε = 7",
+        "ε = 2,1"
+      ],
+      "t": 0,
+      "izoh": "Sluda uchun ε = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#8b4dd37f"
+    },
+    {
+      "q": "Shisha uchun dielektrik singdiruvchanlik ε qancha?",
+      "v": [
+        "ε = 7",
+        "ε = 6",
+        "ε = 1",
+        "ε = 2,1"
+      ],
+      "t": 0,
+      "izoh": "Shisha uchun ε = 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#f396daf1"
+    },
+    {
+      "q": "Yassi kondensator qoplamalarining yuzasi S qancha katta bo'lsa, unda qancha zaryad to'plash mumkin?",
+      "v": [
+        "Shuncha ko'p zaryad",
+        "Shuncha kam zaryad",
+        "Zaryad miqdori o'zgarmaydi",
+        "Zaryad to'planmaydi"
+      ],
+      "t": 0,
+      "izoh": "Qoplamalar yuzasi S qancha katta bo'lsa, unda shuncha ko'p zaryad to'plash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#4515d9a1"
+    },
+    {
+      "q": "Qoplamalar orasidagi masofa d qancha katta bo'lsa, kondensator qanday zaryad to'playdi?",
+      "v": [
+        "Shuncha kam zaryad to'play oladi",
+        "Shuncha ko'p zaryad to'play oladi",
+        "Zaryad miqdori o'zgarmaydi",
+        "Ikki baravar ko'p zaryad to'playdi"
+      ],
+      "t": 0,
+      "izoh": "Qoplamalar orasidagi masofa d qancha katta bo'lsa, kondensatorda shuncha kam zaryad to'play oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#4862aee6"
+    },
+    {
+      "q": "Radiotexnikada qanday kondensatorlar keng qo'llaniladi?",
+      "v": [
+        "O'zgaruvchan sig'imli kondensatorlar",
+        "Faqat qat'iy sig'imli kondensatorlar",
+        "Faqat qutbli kondensatorlar",
+        "Faqat yassi kondensatorlar"
+      ],
+      "t": 0,
+      "izoh": "Radiotexnikada o'zgaruvchan sig'imli kondensatorlar keng qo'llaniladi (80-rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#125f8b7f"
+    },
+    {
+      "q": "O'zgaruvchan kondensatorning ishlash printsipi nimaga asoslangan?",
+      "v": [
+        "Qoplamalarning bir-biriga nisbatan siljishiga",
+        "Dielektrik qalinligining o'zgarishiga",
+        "Kuchlanishning o'zgarishiga",
+        "Zaryadning yo'qolishiga"
+      ],
+      "t": 0,
+      "izoh": "O'zgaruvchan kondensatorning ishlash printsipi qoplamalarning bir-biriga nisbatan siljishiga asoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#efffff43"
+    },
+    {
+      "q": "O'zgaruvchan kondensatorda murvat buralganda nima o'zgaradi?",
+      "v": [
+        "Qoplamalarning ustma-ust tushgan yuzalari (S)",
+        "Dielektrik turi",
+        "Kuchlanish birligi",
+        "Plastinkalar soni"
+      ],
+      "t": 0,
+      "izoh": "Murvat buralganda qo'zg'aluvchan qoplamalar qo'zg'almas qoplamalar orasiga kiradi va ustma-ust tushgan yuzalari (S) o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#5a1f43da"
+    },
+    {
+      "q": "Radioni kerakli to'lqinga sozlashda o'zgaruvchan kondensatorning qaysi elementi buraladi?",
+      "v": [
+        "Murvat",
+        "Qoplama qutbi",
+        "Dielektrik plastina",
+        "Korpus"
+      ],
+      "t": 0,
+      "izoh": "Radioni kerakli to'lqinga sozlash uchun murvat buralib, o'zgaruvchan kondensatorning sig'imi o'zgartirib boriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#955872e4"
+    },
+    {
+      "q": "Kondensatorlardan qayerlarda keng qo'llaniladi?",
+      "v": [
+        "Elektr dvigatellarini yurgizishda, elektromobillarni harakatlantirishda hamda sanoat elektronikasida",
+        "Faqat maishiy texnikada",
+        "Faqat tibbiyot asboblarida",
+        "Faqat yoritish tizimlarida"
+      ],
+      "t": 0,
+      "izoh": "Kondensatorlardan elektr dvigatellarini yurgizishda, elektromobillarni harakatlantirishda hamda sanoat elektronikasida keng qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#bef0bc1a"
+    },
+    {
+      "q": "Kompyuter klaviaturasini kodlash jarayonida kondensator sig'imining qaysi xossasidan foydalaniladi?",
+      "v": [
+        "Sig'imning qoplamalar orasidagi masofaga bog'liqligidan",
+        "Sig'imning kuchlanishga bog'liqligidan",
+        "Zaryadning doimiyligidan",
+        "Dielektrik rangidan"
+      ],
+      "t": 0,
+      "izoh": "Kondensator sig'imining qoplamalari orasidagi masofaga bog'liqligidan kompyuter klaviaturasini kodlash jarayonida foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#3b5064b8"
+    },
+    {
+      "q": "Kompyuter klaviaturasida klavish bosilganda kondensatorning nimalar o'zgaradi?",
+      "v": [
+        "Sig'imi",
+        "Zaryad birligi",
+        "Dielektrik turi",
+        "Korpus rangi"
+      ],
+      "t": 0,
+      "izoh": "Har bir klavish tagida kondensator joylashtirilgan bo'lib, klavishni bosish bilan uning sig'imi o'zgaradi (82-rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m27-elektr-sigimi-kondensatorlar#7adf44c2"
+    }
+  ]
+}

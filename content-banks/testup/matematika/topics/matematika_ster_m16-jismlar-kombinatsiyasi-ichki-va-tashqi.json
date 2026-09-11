@@ -1,0 +1,1609 @@
+{
+  "nom": "Jismlar kombinatsiyasi: ichki va tashqi chizilgan sferalar",
+  "bolim": "Stereometriya",
+  "blok": "ster",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Karim yasagan kubsimon karton qutining ichki qirrasi 24 sm. Qutiga to'liq sig'adigan va olti yog'iga ham tegib turadigan sharning radiusi necha santimetr?",
+      "v": [
+        "12 sm",
+        "24 sm",
+        "12√3 sm",
+        "8 sm"
+      ],
+      "t": 0,
+      "izoh": "Kubga ichki chizilgan sfera qarama-qarshi ikki yoqqa urinadi, demak uning diametri kub qirrasiga teng. Shundan 2r = 24, ya'ni r = 12 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='74,109 186,109 186,221 74,221' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='114,69 226,69 226,181' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='74' y1='109' x2='114' y2='69' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186' y1='109' x2='226' y2='69' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186' y1='221' x2='226' y2='181' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='114,69 114,181 226,181' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='74' y1='221' x2='114' y2='181' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='56' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='56' ry='16.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='145' x2='206' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='178' y='139' font-size='13' fill='%23334155' text-anchor='middle'%3Er = ?%3C/text%3E%3Ctext x='130' y='240' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 24 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#acd55f75"
+    },
+    {
+      "q": "Kubga ichki chizilgan sferaning hajmi 972π sm³ ga teng bo'lsa, kubning qirrasi necha santimetr?",
+      "v": [
+        "18√3 sm",
+        "18 sm",
+        "9 sm",
+        "36 sm"
+      ],
+      "t": 1,
+      "izoh": "Avval sfera radiusini topamiz: (4/3)πr³ = 972π, bundan r³ = 729 va r = 9 sm. Ichki chizilgan sferada qirra a = 2r bo'lgani uchun a = 18 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='74,109 186,109 186,221 74,221' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='114,69 226,69 226,181' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='74' y1='109' x2='114' y2='69' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186' y1='109' x2='226' y2='69' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186' y1='221' x2='226' y2='181' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='114,69 114,181 226,181' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='74' y1='221' x2='114' y2='181' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='56' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='56' ry='16.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='145' x2='206' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='178' y='139' font-size='13' fill='%23334155' text-anchor='middle'%3Er = ?%3C/text%3E%3Ctext x='130' y='240' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = ?%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#9ca58e8d"
+    },
+    {
+      "q": "Sanoat sexida qirrasi 30 sm bo'lgan kubsimon yog'och blokdan eng katta shar yo'nib olinmoqda. Yo'nib tashlanadigan chiqindining hajmi qancha?",
+      "v": [
+        "4500π sm³",
+        "27000 − 2250π sm³",
+        "27000 − 4500π sm³",
+        "27000 − 3375π sm³"
+      ],
+      "t": 2,
+      "izoh": "Blok hajmi 30³ = 27000 sm³. Eng katta sharning radiusi r = 30 : 2 = 15 sm, hajmi (4/3)π·15³ = 4500π sm³. Chiqindi ikkovining ayirmasi: 27000 − 4500π sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='74,109 186,109 186,221 74,221' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='114,69 226,69 226,181' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='74' y1='109' x2='114' y2='69' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186' y1='109' x2='226' y2='69' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186' y1='221' x2='226' y2='181' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='114,69 114,181 226,181' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='74' y1='221' x2='114' y2='181' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='56' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='56' ry='16.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='145' x2='206' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='178' y='139' font-size='13' fill='%23334155' text-anchor='middle'%3Er = ?%3C/text%3E%3Ctext x='130' y='240' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 30 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#b5fa5e83"
+    },
+    {
+      "q": "Kubga ichki chizilgan sferaning sirti 100π sm² ga teng. Shu kubning to'liq sirti necha kvadrat santimetr bo'ladi?",
+      "v": [
+        "400 sm²",
+        "150 sm²",
+        "2400 sm²",
+        "600 sm²"
+      ],
+      "t": 3,
+      "izoh": "Sfera sirtidan 4πr² = 100π, bundan r² = 25 va r = 5 sm. Kub qirrasi a = 2r = 10 sm. Kubning to'liq sirti 6a² = 6·100 = 600 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='74,109 186,109 186,221 74,221' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='114,69 226,69 226,181' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='74' y1='109' x2='114' y2='69' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186' y1='109' x2='226' y2='69' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186' y1='221' x2='226' y2='181' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='114,69 114,181 226,181' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='74' y1='221' x2='114' y2='181' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='56' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='56' ry='16.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='145' x2='206' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='178' y='139' font-size='13' fill='%23334155' text-anchor='middle'%3Er = ?%3C/text%3E%3Ctext x='130' y='240' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = ?%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#0e7c7d4f"
+    },
+    {
+      "q": "Muzeydagi qirrasi 8 dm bo'lgan kubsimon eksponatni shar shaklidagi shaffof qopqoq o'rab turadi va kubning sakkiz uchi ham qopqoqqa tegadi. Qopqoq radiusi qancha?",
+      "v": [
+        "4√3 dm",
+        "4 dm",
+        "8√3 dm",
+        "4√2 dm"
+      ],
+      "t": 0,
+      "izoh": "Tashqi chizilgan sferaning diametri kubning fazoviy diagonaliga teng: d = a√3 = 8√3 dm. Radius uning yarmi, ya'ni R = 4√3 dm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='87,114 181,114 181,208 87,208' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='119,82 213,82 213,176' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='87' y1='114' x2='119' y2='82' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='181' y1='114' x2='213' y2='82' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='181' y1='208' x2='213' y2='176' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='119,82 119,176 213,176' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='87' y1='208' x2='119' y2='176' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='81.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='81.4' ry='24.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='134' y='227' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 8 dm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#7711e263"
+    },
+    {
+      "q": "Kubga tashqi chizilgan sferaning radiusi 5√3 sm bo'lsa, kubning hajmi necha kub santimetr?",
+      "v": [
+        "1000√3 sm³",
+        "1000 sm³",
+        "125 sm³",
+        "8000 sm³"
+      ],
+      "t": 1,
+      "izoh": "R = a√3/2 formulasidan a√3/2 = 5√3 kelib chiqadi, bundan a = 10 sm. Kub hajmi V = a³ = 10³ = 1000 sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='87,114 181,114 181,208 87,208' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='119,82 213,82 213,176' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='87' y1='114' x2='119' y2='82' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='181' y1='114' x2='213' y2='82' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='181' y1='208' x2='213' y2='176' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='119,82 119,176 213,176' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='87' y1='208' x2='119' y2='176' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='81.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='81.4' ry='24.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='134' y='227' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = ?%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#2df0dbde"
+    },
+    {
+      "q": "Zargar qirrasi 6 sm bo'lgan kub shaklidagi kristallni sharsimon shisha idishga shunday joyladiki, kubning barcha uchlari idish devoriga tegdi. Idishning ichki diametri qancha?",
+      "v": [
+        "6√2 sm",
+        "12√3 sm",
+        "6√3 sm",
+        "3√3 sm"
+      ],
+      "t": 2,
+      "izoh": "Idish diametri kubning fazoviy diagonaliga teng. Fazoviy diagonal d = a√3 = 6√3 sm, demak ichki diametr ham 6√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='87,114 181,114 181,208 87,208' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='119,82 213,82 213,176' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='87' y1='114' x2='119' y2='82' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='181' y1='114' x2='213' y2='82' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='181' y1='208' x2='213' y2='176' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='119,82 119,176 213,176' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='87' y1='208' x2='119' y2='176' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='81.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='81.4' ry='24.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='134' y='227' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 6 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#4c0fa2c9"
+    },
+    {
+      "q": "Bir xil kubga tashqi chizilgan sferaning hajmi ichki chizilgan sferaning hajmidan necha marta katta?",
+      "v": [
+        "√3 marta",
+        "3 marta",
+        "9 marta",
+        "3√3 marta"
+      ],
+      "t": 3,
+      "izoh": "Ichki sfera radiusi r = a/2, tashqi sfera radiusi R = a√3/2. Radiuslar nisbati R : r = √3. Hajmlar nisbati radiuslar nisbatining kubiga teng: (√3)³ = 3√3 ≈ 5,196 marta.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='91,116 179,116 179,204 91,204' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='121,86 209,86 209,174' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='116' x2='121' y2='86' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='179' y1='116' x2='209' y2='86' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='179' y1='204' x2='209' y2='174' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='121,86 121,174 209,174' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91' y1='204' x2='121' y2='174' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='44' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='44' ry='13.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='76.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='76.2' ry='22.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='135' y='223' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#c6e261c0"
+    },
+    {
+      "q": "Qirrasi 10 sm bo'lgan kub ichiga shar shunday joylashtirildiki, u kubning barcha o'n ikki qirrasining o'rtasiga tegib turibdi. Shar radiusi necha santimetr?",
+      "v": [
+        "5√2 sm",
+        "5 sm",
+        "5√3 sm",
+        "10√2 sm"
+      ],
+      "t": 0,
+      "izoh": "Qirralarga urinuvchi sfera markazi kub markazida, urinish nuqtasi esa qirra o'rtasida. Markazdan qirra o'rtasigacha bo'lgan masofa yoq diagonalining yarmi: a√2/2 = 5√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='81,112 183,112 183,214 81,214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='117,76 219,76 219,178' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='81' y1='112' x2='117' y2='76' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='183' y1='112' x2='219' y2='76' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='183' y1='214' x2='219' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='117,76 117,178 219,178' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='81' y1='214' x2='117' y2='178' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='72.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='72.1' ry='21.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='132' y='233' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 10 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-qirraga-urinuvchi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#4d7a90ce"
+    },
+    {
+      "q": "Kubning barcha qirralariga urinuvchi sferaning radiusi 3√2 sm. Shu kubning to'liq sirti nechaga teng?",
+      "v": [
+        "864 sm²",
+        "216 sm²",
+        "108 sm²",
+        "144 sm²"
+      ],
+      "t": 1,
+      "izoh": "Qirralarga urinuvchi sfera uchun r = a√2/2. Tenglamadan a√2/2 = 3√2, bundan a = 6 sm. To'liq sirt S = 6a² = 6·36 = 216 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='81,112 183,112 183,214 81,214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='117,76 219,76 219,178' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='81' y1='112' x2='117' y2='76' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='183' y1='112' x2='219' y2='76' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='183' y1='214' x2='219' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='117,76 117,178 219,178' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='81' y1='214' x2='117' y2='178' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='72.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='72.1' ry='21.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='132' y='233' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = ?%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-qirraga-urinuvchi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#a25fb530"
+    },
+    {
+      "q": "Kubda uchta sfera qaraladi: yoqlarga urinuvchi, qirralarga urinuvchi va uchlardan o'tuvchi. Ularning radiuslari nisbati qanday bo'ladi?",
+      "v": [
+        "√3 : √2 : 1",
+        "1 : √3 : √2",
+        "1 : √2 : √3",
+        "1 : 2 : 3"
+      ],
+      "t": 2,
+      "izoh": "Yoqlarga urinuvchi sfera radiusi a/2, qirralarga urinuvchisi a√2/2, uchlardan o'tuvchisi a√3/2. Umumiy a/2 ko'paytuvchini qisqartirsak, nisbat 1 : √2 : √3 bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='92,117 178,117 178,203 92,203' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='122,87 208,87 208,173' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='92' y1='117' x2='122' y2='87' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='178' y1='117' x2='208' y2='87' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='178' y1='203' x2='208' y2='173' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='122,87 122,173 208,173' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='92' y1='203' x2='122' y2='173' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='43' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='43' ry='12.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='60.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='60.8' ry='18.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='74.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='74.5' ry='22.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='135' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-qirraga-urinuvchi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#a0b00cbd"
+    },
+    {
+      "q": "Ustaxonada qirrasi 8 sm bo'lgan kub karkas ichiga shar joylandi va shar har bir qirraning o'rtasiga tegdi. Sharning sirti necha kvadrat santimetr?",
+      "v": [
+        "64π sm²",
+        "192π sm²",
+        "32π sm²",
+        "128π sm²"
+      ],
+      "t": 3,
+      "izoh": "Qirralarga urinuvchi sfera radiusi r = a√2/2 = 4√2 sm. Uning sirti S = 4πr² = 4π·32 = 128π sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='81,112 183,112 183,214 81,214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='117,76 219,76 219,178' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='81' y1='112' x2='117' y2='76' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='183' y1='112' x2='219' y2='76' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='183' y1='214' x2='219' y2='178' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='117,76 117,178 219,178' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='81' y1='214' x2='117' y2='178' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='72.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='72.1' ry='21.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='132' y='233' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 8 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-qirraga-urinuvchi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#14d7c142"
+    },
+    {
+      "q": "Ombordagi o'lchamlari 2 m, 3 m va 6 m bo'lgan to'g'ri burchakli parallelepiped shaklidagi konteynerni to'liq o'rab oluvchi eng kichik sferaning radiusi qancha?",
+      "v": [
+        "3,5 m",
+        "7 m",
+        "5,5 m",
+        "1,75 m"
+      ],
+      "t": 0,
+      "izoh": "Bunday sferaning diametri parallelepiped fazoviy diagonaliga teng: d = √(2² + 3² + 6²) = √49 = 7 m. Radius uning yarmi, ya'ni 3,5 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='71,135 189,135 189,195 71,195' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='111,95 229,95 229,155' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='71' y1='135' x2='111' y2='95' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='189' y1='135' x2='229' y2='95' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='189' y1='195' x2='229' y2='155' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='111,95 111,155 229,155' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='71' y1='195' x2='111' y2='155' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='65.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='65.7' ry='19.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='130' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E6 m%3C/text%3E%3Ctext x='63' y='165' font-size='13' fill='%23334155' text-anchor='end'%3E3 m%3C/text%3E%3Ctext x='223' y='179' font-size='13' fill='%23334155' text-anchor='start'%3E2 m%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelepiped-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#057b6d1f"
+    },
+    {
+      "q": "Nodira tayyorlagan sovg'a qutisining o'lchamlari 6 sm, 6 sm va 7 sm. Qutining barcha uchlari orqali o'tuvchi sferaning diametri necha santimetr?",
+      "v": [
+        "9,5 sm",
+        "11 sm",
+        "5,5 sm",
+        "19 sm"
+      ],
+      "t": 1,
+      "izoh": "Fazoviy diagonalni topamiz: d = √(6² + 6² + 7²) = √(36 + 36 + 49) = √121 = 11 sm. Tashqi chizilgan sfera diametri aynan shu diagonalga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='71,131 171,131 171,217 71,217' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='129,73 229,73 229,159' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='71' y1='131' x2='129' y2='73' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='171' y1='131' x2='229' y2='73' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='171' y1='217' x2='229' y2='159' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='129,73 129,159 229,159' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='71' y1='217' x2='129' y2='159' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='68.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='68.4' ry='20.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='121' y='236' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='63' y='174' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Ctext x='214' y='192' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelepiped-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#a4d0e447"
+    },
+    {
+      "q": "To'g'ri burchakli parallelepipedning o'lchamlari 1 sm, 2 sm va 2 sm. Unga tashqi chizilgan sferaning hajmi necha kub santimetr?",
+      "v": [
+        "3,375π sm³",
+        "2,25π sm³",
+        "4,5π sm³",
+        "36π sm³"
+      ],
+      "t": 2,
+      "izoh": "Diagonal d = √(1 + 4 + 4) = 3 sm, demak R = 1,5 sm. Sfera hajmi V = (4/3)πR³ = (4/3)π·3,375 = 4,5π sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='78,121 174,121 174,217 78,217' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='126,73 222,73 222,169' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='78' y1='121' x2='126' y2='73' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='174' y1='121' x2='222' y2='73' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='174' y1='217' x2='222' y2='169' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='126,73 126,169 222,169' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='78' y1='217' x2='126' y2='169' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='68.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='68.4' ry='20.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='126' y='236' font-size='13' fill='%23334155' text-anchor='middle'%3E2 sm%3C/text%3E%3Ctext x='70' y='169' font-size='13' fill='%23334155' text-anchor='end'%3E2 sm%3C/text%3E%3Ctext x='212' y='197' font-size='13' fill='%23334155' text-anchor='start'%3E1 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelepiped-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#9fff65a7"
+    },
+    {
+      "q": "Qurilish maydonchasida o'lchamlari 4 dm, 4 dm va 2 dm bo'lgan beton blokni to'liq qoplaydigan eng kichik sfera hajmining blok hajmiga nisbati qanday?",
+      "v": [
+        "9π",
+        "8/(9π)",
+        "27π/32",
+        "9π/8"
+      ],
+      "t": 3,
+      "izoh": "Diagonal d = √(16 + 16 + 4) = 6 dm, R = 3 dm. Sfera hajmi (4/3)π·27 = 36π dm³, blok hajmi 4·4·2 = 32 dm³. Nisbat 36π : 32 = 9π/8.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='72,119 176,119 176,223 72,223' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='124,67 228,67 228,171' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='72' y1='119' x2='124' y2='67' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='176' y1='119' x2='228' y2='67' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='176' y1='223' x2='228' y2='171' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='124,67 124,171 228,171' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='72' y1='223' x2='124' y2='171' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='74.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='74.1' ry='22.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='124' y='242' font-size='13' fill='%23334155' text-anchor='middle'%3E4 dm%3C/text%3E%3Ctext x='64' y='171' font-size='13' fill='%23334155' text-anchor='end'%3E4 dm%3C/text%3E%3Ctext x='216' y='201' font-size='13' fill='%23334155' text-anchor='start'%3E2 dm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallelepiped-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#df5c6d30"
+    },
+    {
+      "q": "Konserva bankasining ichki diametri 14 sm, balandligi ham 14 sm. Bankaga aynan sig'adigan eng katta sharning radiusi necha santimetr?",
+      "v": [
+        "7 sm",
+        "14 sm",
+        "3,5 sm",
+        "7√2 sm"
+      ],
+      "t": 0,
+      "izoh": "Balandlik diametrga teng bo'lgani uchun sfera silindrga ichki chizila oladi. Bunday sferaning radiusi asos radiusiga teng: r = 14 : 2 = 7 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='87' rx='58' ry='17.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='92' y1='87' x2='92' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='208' y1='87' x2='208' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M92 203 A58 17.4 0 0 0 208 203' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M92 203 A58 17.4 0 0 1 208 203' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='58' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='58' ry='17.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='145' x2='208' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='179' y='139' font-size='13' fill='%23334155' text-anchor='middle'%3Er = ?%3C/text%3E%3Ctext x='150' y='229' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 14 sm%3C/text%3E%3Ctext x='220' y='145' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 14 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "silindr-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#6d140c14"
+    },
+    {
+      "q": "Sportzalda balandligi 40 sm va asos diametri ham 40 sm bo'lgan silindrsimon qutiga to'p aynan sig'di. To'p hajmining quti hajmiga nisbati qanday?",
+      "v": [
+        "3 : 4",
+        "2 : 3",
+        "1 : 2",
+        "1 : 3"
+      ],
+      "t": 1,
+      "izoh": "Radius r = 20 sm, balandlik h = 2r. Shar hajmi (4/3)πr³, silindr hajmi πr²·2r = 2πr³. Nisbat (4/3)πr³ : 2πr³ = 2 : 3.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='87' rx='58' ry='17.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='92' y1='87' x2='92' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='208' y1='87' x2='208' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M92 203 A58 17.4 0 0 0 208 203' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M92 203 A58 17.4 0 0 1 208 203' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='58' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='58' ry='17.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='229' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 40 sm%3C/text%3E%3Ctext x='220' y='145' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 40 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "silindr-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#7be06616"
+    },
+    {
+      "q": "Silindrga ichki chizilgan sferaning hajmi 288π sm³ ga teng. Silindrning balandligi necha santimetr?",
+      "v": [
+        "24 sm",
+        "18 sm",
+        "12 sm",
+        "6 sm"
+      ],
+      "t": 2,
+      "izoh": "(4/3)πr³ = 288π tenglamadan r³ = 216, ya'ni r = 6 sm. Ichki chizilgan sferada silindr balandligi h = 2r = 12 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='87' rx='58' ry='17.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='92' y1='87' x2='92' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='208' y1='87' x2='208' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M92 203 A58 17.4 0 0 0 208 203' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M92 203 A58 17.4 0 0 1 208 203' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='58' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='58' ry='17.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='145' x2='208' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='179' y='139' font-size='13' fill='%23334155' text-anchor='middle'%3Er%3C/text%3E%3Ctext x='150' y='229' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Ctext x='220' y='145' font-size='13' fill='%23334155' text-anchor='start'%3Eh = ?%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "silindr-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#a73c9697"
+    },
+    {
+      "q": "Og'zigacha suv to'ldirilgan silindrsimon idishga unga aynan sig'adigan metall shar tushirildi. Idish balandligi 30 sm bo'lsa, to'kilgan suv hajmi qancha?",
+      "v": [
+        "6750π sm³",
+        "2250π sm³",
+        "3375π sm³",
+        "4500π sm³"
+      ],
+      "t": 3,
+      "izoh": "Shar aynan sig'gani uchun r = 30 : 2 = 15 sm. To'kilgan suv hajmi sharning hajmiga teng: (4/3)π·15³ = (4/3)π·3375 = 4500π sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='87' rx='58' ry='17.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='92' y1='87' x2='92' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='208' y1='87' x2='208' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M92 203 A58 17.4 0 0 0 208 203' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M92 203 A58 17.4 0 0 1 208 203' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='58' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='58' ry='17.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='229' font-size='13' fill='%23334155' text-anchor='middle'%3Eh = 30 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "silindr-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#8929e415"
+    },
+    {
+      "q": "Radiusi 3 sm va balandligi 8 sm bo'lgan silindrga tashqi chizilgan sferaning radiusi necha santimetr?",
+      "v": [
+        "5 sm",
+        "√73 sm",
+        "4 sm",
+        "11 sm"
+      ],
+      "t": 0,
+      "izoh": "Sfera markazi silindr o'qining o'rtasida yotadi. R = √(r² + (h/2)²) = √(9 + 16) = √25 = 5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='80' rx='48.8' ry='14.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='101.3' y1='80' x2='101.3' y2='210' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='198.8' y1='80' x2='198.8' y2='210' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M101.3 210 A48.8 14.6 0 0 0 198.8 210' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M101.3 210 A48.8 14.6 0 0 1 198.8 210' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='81.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='81.3' ry='24.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='236' font-size='13' fill='%23334155' text-anchor='middle'%3Er = 3 sm%3C/text%3E%3Ctext x='212.8' y='145' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 8 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "silindr-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#0a94c9c4"
+    },
+    {
+      "q": "Anvar radiusi 6 sm va balandligi 16 sm bo'lgan silindrsimon bankani shar shaklidagi qadoqqa soldi, banka uchlari qadoqqa tegib turibdi. Qadoq radiusi qancha?",
+      "v": [
+        "11 sm",
+        "10 sm",
+        "2√73 sm",
+        "8 sm"
+      ],
+      "t": 1,
+      "izoh": "Qadoq radiusi silindrga tashqi chizilgan sfera radiusi: R = √(6² + (16/2)²) = √(36 + 64) = √100 = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='80' rx='48.8' ry='14.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='101.3' y1='80' x2='101.3' y2='210' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='198.8' y1='80' x2='198.8' y2='210' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M101.3 210 A48.8 14.6 0 0 0 198.8 210' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M101.3 210 A48.8 14.6 0 0 1 198.8 210' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='81.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='81.3' ry='24.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='236' font-size='13' fill='%23334155' text-anchor='middle'%3Er = 6 sm%3C/text%3E%3Ctext x='212.8' y='145' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 16 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "silindr-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#8d4a42bf"
+    },
+    {
+      "q": "Silindrning o'q kesimi to'g'ri to'rtburchak bo'lib, uning asosdagi tomoni 10 sm, yon tomoni 24 sm. Silindrga tashqi chizilgan sferaning radiusi nechaga teng?",
+      "v": [
+        "12 sm",
+        "17 sm",
+        "13 sm",
+        "26 sm"
+      ],
+      "t": 2,
+      "izoh": "Asosdagi tomon diametr, demak r = 5 sm, balandlik h = 24 sm. R = √(5² + 12²) = √169 = 13 sm. Bu o'q kesimi diagonalining yarmiga ham teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='80' rx='27.1' ry='8.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='122.9' y1='80' x2='122.9' y2='210' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.1' y1='80' x2='177.1' y2='210' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M122.9 210 A27.1 8.1 0 0 0 177.1 210' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M122.9 210 A27.1 8.1 0 0 1 177.1 210' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='70.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='70.4' ry='21.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='236' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 10 sm%3C/text%3E%3Ctext x='191.1' y='145' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 24 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "silindr-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#98a7e859"
+    },
+    {
+      "q": "Kompaniya balandligi 12 sm va asos radiusi 8 sm bo'lgan silindr shaklidagi mahsulotni sferik qadoqqa joylaydi. Qadoqning sirti necha kvadrat santimetr?",
+      "v": [
+        "100π sm²",
+        "1600π sm²",
+        "256π sm²",
+        "400π sm²"
+      ],
+      "t": 3,
+      "izoh": "Avval qadoq radiusi: R = √(8² + 6²) = √100 = 10 sm. Keyin sfera sirti S = 4πR² = 4π·100 = 400π sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='98.5' rx='62' ry='18.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='88' y1='98.5' x2='88' y2='191.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='212' y1='98.5' x2='212' y2='191.5' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M88 191.5 A62 18.6 0 0 0 212 191.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M88 191.5 A62 18.6 0 0 1 212 191.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='77.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='77.5' ry='23.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='217.5' font-size='13' fill='%23334155' text-anchor='middle'%3Er = 8 sm%3C/text%3E%3Ctext x='226' y='145' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 12 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "silindr-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#3543ffc8"
+    },
+    {
+      "q": "Do'kondagi asos radiusi 3 sm va balandligi 4 sm bo'lgan konus shaklidagi qog'oz qalpoqqa ichkaridan tegib turadigan sharning radiusi qancha?",
+      "v": [
+        "1,5 sm",
+        "2 sm",
+        "2,5 sm",
+        "0,75 sm"
+      ],
+      "t": 0,
+      "izoh": "Yasovchi l = √(3² + 4²) = 5 sm. O'q kesimi uchburchagiga ichki chizilgan aylana radiusi r = R·h/(R + l) = 3·4/(3 + 5) = 1,5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='129' x2='78' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='129' x2='222' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M78 225 A72 21.6 0 0 0 222 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M78 225 A72 21.6 0 0 1 222 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='189' r='36' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='189' rx='36' ry='10.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='251' font-size='13' fill='%23334155' text-anchor='middle'%3Er = 3 sm%3C/text%3E%3Ctext x='234' y='177' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 4 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konus-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#a528bbf8"
+    },
+    {
+      "q": "Konusning asos radiusi 6 sm, yasovchisi esa 10 sm. Unga ichki chizilgan sferaning hajmi necha kub santimetr?",
+      "v": [
+        "108π sm³",
+        "36π sm³",
+        "288π sm³",
+        "27π sm³"
+      ],
+      "t": 1,
+      "izoh": "Balandlik h = √(10² − 6²) = 8 sm. Ichki sfera radiusi r = 6·8/(6 + 10) = 3 sm. Hajmi V = (4/3)π·27 = 36π sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='129' x2='78' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='129' x2='222' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M78 225 A72 21.6 0 0 0 222 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M78 225 A72 21.6 0 0 1 222 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='189' r='36' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='189' rx='36' ry='10.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='251' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm%3C/text%3E%3Ctext x='234' y='177' font-size='13' fill='%23334155' text-anchor='start'%3El = 10 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konus-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#7346376d"
+    },
+    {
+      "q": "Ustaxonada asos diametri 14 sm va balandligi 24 sm bo'lgan konussimon idishga sig'adigan eng katta shar solindi. Shar radiusi necha santimetr?",
+      "v": [
+        "7 sm",
+        "3,5 sm",
+        "5,25 sm",
+        "5,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Asos radiusi R = 7 sm, yasovchi l = √(7² + 24²) = 25 sm. Ichki sfera radiusi r = R·h/(R + l) = 7·24/(7 + 25) = 168/32 = 5,25 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='60' x2='97.5' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='60' x2='202.5' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M97.5 240 A52.5 15.75 0 0 0 202.5 240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M97.5 240 A52.5 15.75 0 0 1 202.5 240' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='200.6' r='39.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='200.6' rx='39.4' ry='11.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='266' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 14 sm%3C/text%3E%3Ctext x='210' y='150' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 24 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konus-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#8b93b220"
+    },
+    {
+      "q": "Teng yonli konusning o'q kesimi tomoni 12 sm bo'lgan teng tomonli uchburchakdir. Konusga ichki chizilgan sferaning radiusi qancha?",
+      "v": [
+        "3√3 sm",
+        "4√3 sm",
+        "6 sm",
+        "2√3 sm"
+      ],
+      "t": 3,
+      "izoh": "Teng tomonli uchburchakka ichki chizilgan aylana radiusi tomonning 2√3 ga bo'lingani: 12/(2√3) = 6/√3 = 2√3 sm. Konusga ichki chizilgan sfera radiusi ham shunga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='100.3' x2='78' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='100.3' x2='222' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M78 225 A72 21.6 0 0 0 222 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M78 225 A72 21.6 0 0 1 222 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='183.4' r='41.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='183.4' rx='41.6' ry='12.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='251' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 12 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konus-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#7047d50a"
+    },
+    {
+      "q": "Konusning balandligi 8 sm, asos radiusi 6 sm. Uning uchi va asos aylanasi orqali o'tuvchi sferaning radiusi nechaga teng?",
+      "v": [
+        "6,25 sm",
+        "5 sm",
+        "10 sm",
+        "4 sm"
+      ],
+      "t": 0,
+      "izoh": "Yasovchi l = √(36 + 64) = 10 sm. Konusga tashqi chizilgan sfera radiusi R = l²/(2h) = 100/16 = 6,25 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='52' x2='67.4' y2='162.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='232.6' y2='162.1' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M67.4 162.1 A82.6 24.8 0 0 0 232.6 162.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M67.4 162.1 A82.6 24.8 0 0 1 232.6 162.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='138' r='86' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='138' rx='86' ry='25.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm%3C/text%3E%3Ctext x='150' y='278' font-size='13' fill='%23334155' text-anchor='middle'%3Eh = 8 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konus-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#8b301bc7"
+    },
+    {
+      "q": "Konusning balandligi 4 sm va asos radiusi 8 sm bo'lsa, unga tashqi chizilgan sferaning radiusi necha santimetr?",
+      "v": [
+        "2 sm",
+        "10 sm",
+        "8 sm",
+        "2√5 sm"
+      ],
+      "t": 1,
+      "izoh": "Yasovchining kvadrati l² = 4² + 8² = 80. Tashqi sfera radiusi R = l²/(2h) = 80/8 = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='52' x2='81.2' y2='86.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='218.8' y2='86.4' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M81.2 86.4 A68.8 20.6 0 0 0 218.8 86.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M81.2 86.4 A68.8 20.6 0 0 1 218.8 86.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='138' r='86' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='138' rx='86' ry='25.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 8 sm%3C/text%3E%3Ctext x='150' y='278' font-size='13' fill='%23334155' text-anchor='middle'%3Eh = 4 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konus-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#edaae1fb"
+    },
+    {
+      "q": "Bog'dagi balandligi 2 m va asos radiusi 4 m bo'lgan konus shaklidagi chodir sferik gumbaz ichiga joylashtirilgan; chodir uchi va asos aylanasi gumbazga tegadi. Gumbaz radiusi qancha?",
+      "v": [
+        "4 m",
+        "3 m",
+        "5 m",
+        "√5 m"
+      ],
+      "t": 2,
+      "izoh": "Yasovchi kvadrati l² = 2² + 4² = 20. Tashqi chizilgan sfera radiusi R = l²/(2h) = 20/4 = 5 m. Sfera markazi asosdan pastda joylashadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='52' x2='81.2' y2='86.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='218.8' y2='86.4' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M81.2 86.4 A68.8 20.6 0 0 0 218.8 86.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M81.2 86.4 A68.8 20.6 0 0 1 218.8 86.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='138' r='86' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='138' rx='86' ry='25.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 4 m%3C/text%3E%3Ctext x='150' y='278' font-size='13' fill='%23334155' text-anchor='middle'%3Eh = 2 m%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konus-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#1de2c553"
+    },
+    {
+      "q": "Konusning o'q kesimi teng tomonli uchburchak bo'lib, konusning asos radiusi 3 sm. Konusga tashqi chizilgan sferaning radiusi qancha?",
+      "v": [
+        "√3 sm",
+        "3√3 sm",
+        "3 sm",
+        "2√3 sm"
+      ],
+      "t": 3,
+      "izoh": "O'q kesimi tomoni 2R = 6 sm bo'lgan teng tomonli uchburchak. Unga tashqi chizilgan aylana radiusi 6/√3 = 2√3 sm, bu izlanayotgan sfera radiusidir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='52' x2='75.5' y2='181' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='224.5' y2='181' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M75.5 181 A74.5 22.3 0 0 0 224.5 181' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M75.5 181 A74.5 22.3 0 0 1 224.5 181' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='138' r='86' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='138' rx='86' ry='25.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 3 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konus-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#991a40ce"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidaning asos tomoni 6 sm, apofemasi 5 sm. Unga ichki chizilgan sferaning radiusi necha santimetr?",
+      "v": [
+        "1,5 sm",
+        "2 sm",
+        "3 sm",
+        "2,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Asos apofemasi 3 sm, balandlik h = √(5² − 3²) = 4 sm. Hajm V = (1/3)·36·4 = 48 sm³, to'liq sirt S = 36 + (1/2)·24·5 = 96 sm². Bundan r = 3V/S = 144/96 = 1,5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='72,220 150,246.5 228,220' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='72,220 150,193.5 228,220' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='116' x2='72' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='116' x2='228' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='116' x2='150' y2='246.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='116' x2='150' y2='193.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='181' r='39' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='181' rx='39' ry='11.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='270.5' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 6 sm%3C/text%3E%3Ctext x='240' y='168' font-size='13' fill='%23334155' text-anchor='start'%3Em = 5 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#30272668"
+    },
+    {
+      "q": "Me'mor asos tomoni 12 m va apofemasi 10 m bo'lgan muntazam to'rtburchakli piramida shaklidagi tomni loyihalayapti. Tom ichiga sig'adigan eng katta sharning radiusi qancha?",
+      "v": [
+        "6 m",
+        "3 m",
+        "4 m",
+        "5 m"
+      ],
+      "t": 1,
+      "izoh": "Balandlik h = √(10² − 6²) = 8 m. Hajm V = (1/3)·144·8 = 384 m³. To'liq sirt S = 144 + (1/2)·48·10 = 384 m². Demak r = 3V/S = 1152/384 = 3 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='72,220 150,246.5 228,220' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='72,220 150,193.5 228,220' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='116' x2='72' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='116' x2='228' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='116' x2='150' y2='246.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='116' x2='150' y2='193.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='181' r='39' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='181' rx='39' ry='11.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='270.5' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 12 m%3C/text%3E%3Ctext x='240' y='168' font-size='13' fill='%23334155' text-anchor='start'%3Em = 10 m%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#20ce34c6"
+    },
+    {
+      "q": "Muntazam uchburchakli piramidaning asos tomoni 6√3 sm, yon yoqlari esa asos tekisligi bilan 60° burchak tashkil qiladi. Ichki chizilgan sfera radiusi qancha?",
+      "v": [
+        "1,5 sm",
+        "3 sm",
+        "√3 sm",
+        "3√3 sm"
+      ],
+      "t": 2,
+      "izoh": "Asosga ichki chizilgan aylana radiusi ρ = 6√3/(2√3) = 3 sm. Apofema orqali o'tuvchi kesimda ichki aylana radiusi r = ρ·tg(60° : 2) = 3·tg30° = 3/√3 = √3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='72,220 150,246.5 228,220' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='72,220 150,193.5 228,220' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='84.9' x2='72' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='84.9' x2='228' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='84.9' x2='150' y2='246.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='84.9' x2='150' y2='193.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='175' r='45' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='175' rx='45' ry='13.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='270.5' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 6√3 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#a4e4b38b"
+    },
+    {
+      "q": "Zavod hajmi 96 sm³ va to'liq sirti 144 sm² bo'lgan piramida shaklidagi qolip ichiga tegib turadigan shar quymoqchi. Shar radiusi necha santimetr?",
+      "v": [
+        "2/3 sm",
+        "1,5 sm",
+        "4 sm",
+        "2 sm"
+      ],
+      "t": 3,
+      "izoh": "Ichki chizilgan sfera uchun piramida hajmi V = (1/3)·S·r bo'ladi, bundan r = 3V/S. Qo'yamiz: r = 3·96/144 = 288/144 = 2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='72,220 150,246.5 228,220' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='72,220 150,193.5 228,220' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='110.8' x2='72' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='110.8' x2='228' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='110.8' x2='150' y2='246.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='110.8' x2='150' y2='193.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='188.8' r='31.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='188.8' rx='31.2' ry='9.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='270.5' font-size='13' fill='%23334155' text-anchor='middle'%3EV = 96 sm³%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "piramida-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#eb080cc0"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidaning yon qirrasi 10 sm, balandligi 8 sm. Piramidaga tashqi chizilgan sferaning radiusi qancha?",
+      "v": [
+        "6,25 sm",
+        "5 sm",
+        "4 sm",
+        "8 sm"
+      ],
+      "t": 0,
+      "izoh": "Muntazam piramida uchun R = b²/(2h), bunda b — yon qirra. Hisoblaymiz: R = 100/(2·8) = 100/16 = 6,25 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='67.4,162.1 150,190.2 232.6,162.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='67.4,162.1 150,134 232.6,162.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='52' x2='67.4' y2='162.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='232.6' y2='162.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='150' y2='190.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='150' y2='134' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='138' r='86' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='138' rx='86' ry='25.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Eb = 10 sm%3C/text%3E%3Ctext x='150' y='278' font-size='13' fill='%23334155' text-anchor='middle'%3Eh = 8 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "piramida-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#1756d53f"
+    },
+    {
+      "q": "Toshkentdagi yodgorlik yon qirrasi 6 m va balandligi 4 m bo'lgan muntazam piramida shaklida. Uning barcha uchlaridan o'tuvchi sferaning radiusi qancha?",
+      "v": [
+        "6 m",
+        "4,5 m",
+        "3 m",
+        "2 m"
+      ],
+      "t": 1,
+      "izoh": "Tashqi chizilgan sfera radiusi R = b²/(2h) formulasidan topiladi: R = 36/(2·4) = 36/8 = 4,5 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='64,128.4 150,157.6 236,128.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='64,128.4 150,99.2 236,128.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='52' x2='64' y2='128.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='236' y2='128.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='150' y2='157.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='150' y2='99.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='138' r='86' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='138' rx='86' ry='25.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Eb = 6 m%3C/text%3E%3Ctext x='150' y='278' font-size='13' fill='%23334155' text-anchor='middle'%3Eh = 4 m%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "piramida-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#bd91555a"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidaning asos diagonali 8 sm, balandligi 2 sm. Unga tashqi chizilgan sferaning sirti nechaga teng?",
+      "v": [
+        "25π sm²",
+        "16π sm²",
+        "100π sm²",
+        "64π sm²"
+      ],
+      "t": 2,
+      "izoh": "Asos diagonalining yarmi 4 sm, demak yon qirra b² = 2² + 4² = 20. Tashqi sfera radiusi R = b²/(2h) = 20/4 = 5 sm. Sirt S = 4πR² = 100π sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='81.2,86.4 150,109.8 218.8,86.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='81.2,86.4 150,63 218.8,86.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='52' x2='81.2' y2='86.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='218.8' y2='86.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='150' y2='109.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='150' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='138' r='86' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='138' rx='86' ry='25.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 8 sm%3C/text%3E%3Ctext x='150' y='278' font-size='13' fill='%23334155' text-anchor='middle'%3Eh = 2 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#2649183d"
+    },
+    {
+      "q": "Muzey zalidagi shisha piramidaning yon qirrasi 5 m, balandligi esa 4 m. Uni to'liq qamrab oluvchi sferaning diametri necha metr?",
+      "v": [
+        "3,125 m",
+        "5 m",
+        "8 m",
+        "6,25 m"
+      ],
+      "t": 3,
+      "izoh": "Radius R = b²/(2h) = 25/8 = 3,125 m. Diametr uning ikki barobari: d = 2R = 6,25 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='67.4,162.1 150,190.2 232.6,162.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='67.4,162.1 150,134 232.6,162.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='52' x2='67.4' y2='162.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='232.6' y2='162.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='150' y2='190.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='52' x2='150' y2='134' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='138' r='86' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='138' rx='86' ry='25.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Eb = 5 m%3C/text%3E%3Ctext x='150' y='278' font-size='13' fill='%23334155' text-anchor='middle'%3Eh = 4 m%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#238aa310"
+    },
+    {
+      "q": "To'g'ri prizmaning asosi tomoni 26 sm bo'lgan kvadrat, balandligi ham 26 sm. Prizmaga ichki chizilgan sferaning radiusi necha santimetr?",
+      "v": [
+        "13 sm",
+        "26 sm",
+        "13√2 sm",
+        "6,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Sfera yon yoqlarga urinishi uchun radius asosga ichki chizilgan aylana radiusiga teng: 26 : 2 = 13 sm. Balandlik 26 = 2·13 bo'lgani uchun sfera asoslarga ham urinadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='74,109 186,109 186,221 74,221' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='114,69 226,69 226,181' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='74' y1='109' x2='114' y2='69' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186' y1='109' x2='226' y2='69' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186' y1='221' x2='226' y2='181' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='114,69 114,181 226,181' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='74' y1='221' x2='114' y2='181' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='56' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='56' ry='16.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='130' y='240' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 26 sm%3C/text%3E%3Ctext x='66' y='145' font-size='13' fill='%23334155' text-anchor='end'%3Eh = 26 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "prizma-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#7579aefe"
+    },
+    {
+      "q": "Asosi tomoni 6√3 sm bo'lgan muntazam uchburchakdan iborat to'g'ri prizmaga sfera ichki chizilgan. Shu sferaning hajmi qancha?",
+      "v": [
+        "108π sm³",
+        "36π sm³",
+        "288π sm³",
+        "18π sm³"
+      ],
+      "t": 1,
+      "izoh": "Asosga ichki chizilgan aylana radiusi ρ = 6√3/(2√3) = 3 sm, ichki sfera radiusi ham 3 sm. Hajm V = (4/3)π·27 = 36π sm³. Yarim shar hajmi formulasi (2/3)πr³ olinsa 18π sm³ chiqadi — bu xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='74' y1='94' x2='226' y2='94' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='74,94 150,68.2 226,94' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='74' y1='206' x2='226' y2='206' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='74,206 150,180.2 226,206' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='74' y1='94' x2='74' y2='206' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='226' y1='94' x2='226' y2='206' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='68.2' x2='150' y2='180.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='40' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='40' ry='12' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='236' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 6√3 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "prizma-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#f00ee20b"
+    },
+    {
+      "q": "Qadoqlash sexida asosi tomoni 10 sm bo'lgan kvadrat va balandligi 10 sm bo'lgan to'g'ri prizma qutiga eng katta shar joylanadi. Bo'sh qolgan hajm qancha?",
+      "v": [
+        "500π/3 sm³",
+        "1000 − 500π sm³",
+        "1000 − 500π/3 sm³",
+        "1000 − 125π sm³"
+      ],
+      "t": 2,
+      "izoh": "Quti hajmi 100·10 = 1000 sm³. Shar radiusi 5 sm, hajmi (4/3)π·125 = 500π/3 sm³. Bo'sh hajm ayirmaga teng: 1000 − 500π/3 sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='76,109 186,109 186,219 76,219' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='114,71 224,71 224,181' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='76' y1='109' x2='114' y2='71' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186' y1='109' x2='224' y2='71' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186' y1='219' x2='224' y2='181' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='114,71 114,181 224,181' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='76' y1='219' x2='114' y2='181' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='55' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='55' ry='16.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='131' y='238' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 10 sm%3C/text%3E%3Ctext x='68' y='145' font-size='13' fill='%23334155' text-anchor='end'%3Eh = 10 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "prizma-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#d6ecfd5a"
+    },
+    {
+      "q": "To'g'ri prizmaning asosi katetlari 6 sm va 8 sm bo'lgan to'g'ri burchakli uchburchak. Prizmaga sfera ichki chizilishi uchun balandlik qancha bo'lishi kerak?",
+      "v": [
+        "2 sm",
+        "5 sm",
+        "10 sm",
+        "4 sm"
+      ],
+      "t": 3,
+      "izoh": "Gipotenuza 10 sm, asosga ichki chizilgan aylana radiusi ρ = (6 + 8 − 10)/2 = 2 sm. Sfera asoslarga ham urinishi uchun h = 2ρ = 4 sm bo'lishi shart.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='78' y1='105' x2='222' y2='105' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='78,105 150,80.5 222,105' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='78' y1='195' x2='222' y2='195' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='78,195 150,170.5 222,195' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='78' y1='105' x2='78' y2='195' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='222' y1='105' x2='222' y2='195' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='80.5' x2='150' y2='170.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='32' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='32' ry='9.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='225' font-size='13' fill='%23334155' text-anchor='middle'%3Ekatetlar 6 sm va 8 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "prizma-ichki-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#04b8e4ca"
+    },
+    {
+      "q": "Asosi tomoni 3√3 sm bo'lgan muntazam uchburchak, balandligi esa 8 sm bo'lgan to'g'ri prizmaga tashqi chizilgan sferaning radiusi qancha?",
+      "v": [
+        "5 sm",
+        "√73 sm",
+        "4 sm",
+        "3 sm"
+      ],
+      "t": 0,
+      "izoh": "Asosga tashqi chizilgan aylana radiusi 3√3/√3 = 3 sm. Sfera radiusi R = √(3² + (8/2)²) = √(9 + 16) = 5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='90' y1='100' x2='210' y2='100' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='90,100 150,79.6 210,100' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='90' y1='200' x2='210' y2='200' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='90,200 150,179.6 210,200' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='90' y1='100' x2='90' y2='200' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='210' y1='100' x2='210' y2='200' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='79.6' x2='150' y2='179.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='76' ry='22.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='234' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 3√3 sm%3C/text%3E%3Ctext x='54' y='150' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 8 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "prizma-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#e1c53457"
+    },
+    {
+      "q": "To'g'ri prizmaning asosi katetlari 6 sm va 8 sm bo'lgan to'g'ri burchakli uchburchak, balandligi esa 24 sm. Tashqi chizilgan sferaning radiusi qancha?",
+      "v": [
+        "5 sm",
+        "13 sm",
+        "√601 sm",
+        "12 sm"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri burchakli uchburchakka tashqi chizilgan aylana radiusi gipotenuzaning yarmi: 10 : 2 = 5 sm. Sfera radiusi R = √(5² + 12²) = √169 = 13 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='112' y1='84' x2='188' y2='84' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='112,84 150,71.1 188,84' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='112' y1='216' x2='188' y2='216' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='112,216 150,203.1 188,216' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='112' y1='84' x2='112' y2='216' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='188' y1='84' x2='188' y2='216' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='71.1' x2='150' y2='203.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='72' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='72' ry='21.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='250' font-size='13' fill='%23334155' text-anchor='middle'%3Ekatetlar 6 sm va 8 sm%3C/text%3E%3Ctext x='60' y='150' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 24 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "prizma-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#1ad70588"
+    },
+    {
+      "q": "Sardor asosi tomoni 4√2 sm bo'lgan kvadrat va balandligi 6 sm bo'lgan quti uchun uni to'liq o'raydigan sferik g'ilof tayyorlaydi. G'ilof radiusi qancha?",
+      "v": [
+        "4 sm",
+        "3 sm",
+        "5 sm",
+        "2√13 sm"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat asosga tashqi chizilgan aylana radiusi diagonalning yarmi: 4√2·√2/2 = 4 sm. Sfera radiusi R = √(4² + 3²) = 5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='85,126 181,126 181,198 85,198' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='119,92 215,92 215,164' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='85' y1='126' x2='119' y2='92' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='181' y1='126' x2='215' y2='92' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='181' y1='198' x2='215' y2='164' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='119,92 119,164 215,164' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='85' y1='198' x2='119' y2='164' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='78' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='78' ry='23.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='133' y='217' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 4√2 sm%3C/text%3E%3Ctext x='75' y='145' font-size='13' fill='%23334155' text-anchor='end'%3Eh = 6 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "prizma-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#ce0e779e"
+    },
+    {
+      "q": "To'g'ri prizmaga tashqi chizilgan sferaning radiusi 13 sm, prizmaning balandligi 10 sm. Prizma asosiga tashqi chizilgan aylananing radiusi qancha?",
+      "v": [
+        "√69 sm",
+        "8 sm",
+        "3 sm",
+        "12 sm"
+      ],
+      "t": 3,
+      "izoh": "Formulani teskari qo'llaymiz: R² = ρ² + (h/2)². Bundan ρ² = 13² − 5² = 169 − 25 = 144, ya'ni ρ = 12 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='88' y1='108' x2='212' y2='108' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='88,108 150,86.9 212,108' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='88' y1='192' x2='212' y2='192' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='88,192 150,170.9 212,192' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='88' y1='108' x2='88' y2='192' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='212' y1='108' x2='212' y2='192' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='86.9' x2='150' y2='170.9' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='88' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='88' ry='26.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3ER sfera = 13 sm%3C/text%3E%3Ctext x='48' y='150' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 10 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "prizma-tashqi-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#6bc5ad04"
+    },
+    {
+      "q": "Muntazam tetraedrning qirrasi 12 sm bo'lsa, unga tashqi chizilgan sferaning radiusi necha santimetr?",
+      "v": [
+        "3√6 sm",
+        "√6 sm",
+        "4√6 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Muntazam tetraedr uchun tashqi sfera radiusi R = a√6/4. Qo'yamiz: R = 12√6/4 = 3√6 sm ≈ 7,35 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='78' y1='222' x2='222' y2='222' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='78' y1='222' x2='150' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='222' y1='222' x2='150' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='78' y1='222' x2='168' y2='190' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='222' y1='222' x2='168' y2='190' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='168' y1='190' x2='150' y2='72' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='178' r='84' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='178' rx='84' ry='25.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 12 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tetraedr-sferalari",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#1cc5214f"
+    },
+    {
+      "q": "Zargarlik ustaxonasida qirrasi 6 sm bo'lgan muntazam tetraedr shaklidagi kulon ichiga eng katta shar joylashtirildi. Shar radiusi necha santimetr?",
+      "v": [
+        "3 sm",
+        "√6/2 sm",
+        "3√6/2 sm",
+        "√6 sm"
+      ],
+      "t": 1,
+      "izoh": "Muntazam tetraedrga ichki chizilgan sfera radiusi r = a√6/12. Bundan r = 6√6/12 = √6/2 sm ≈ 1,22 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='78' y1='222' x2='222' y2='222' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='78' y1='222' x2='150' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='222' y1='222' x2='150' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='78' y1='222' x2='168' y2='190' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='222' y1='222' x2='168' y2='190' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='168' y1='190' x2='150' y2='72' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='190' r='30' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='190' rx='30' ry='9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 6 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tetraedr-sferalari",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#cf6af136"
+    },
+    {
+      "q": "Muntazam tetraedrga ichki va tashqi chizilgan sferalar hajmlarining nisbati qanday bo'ladi?",
+      "v": [
+        "1 : 9",
+        "1 : 81",
+        "1 : 27",
+        "1 : 3"
+      ],
+      "t": 2,
+      "izoh": "Ichki radius a√6/12, tashqi radius a√6/4. Ularning nisbati 1 : 3. Hajmlar nisbati kublanadi: 1³ : 3³ = 1 : 27.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='78' y1='222' x2='222' y2='222' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='78' y1='222' x2='150' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='222' y1='222' x2='150' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='78' y1='222' x2='168' y2='190' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='222' y1='222' x2='168' y2='190' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='168' y1='190' x2='150' y2='72' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='178' r='28' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='178' rx='28' ry='8.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='178' r='84' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='178' rx='84' ry='25.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tetraedr-sferalari",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#1459a3ed"
+    },
+    {
+      "q": "Muntazam tetraedr shaklidagi metall detalga tashqi chizilgan sferaning radiusi 6√6 sm ekan. Detalning qirrasi necha santimetr?",
+      "v": [
+        "72 sm",
+        "8 sm",
+        "12 sm",
+        "24 sm"
+      ],
+      "t": 3,
+      "izoh": "Tashqi sfera radiusi R = a√6/4 formulasiga qo'yamiz: a√6/4 = 6√6. Ikkala tomonni √6 ga bo'lib, a/4 = 6, ya'ni a = 24 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='78' y1='222' x2='222' y2='222' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='78' y1='222' x2='150' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='222' y1='222' x2='150' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='78' y1='222' x2='168' y2='190' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='222' y1='222' x2='168' y2='190' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='168' y1='190' x2='150' y2='72' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='178' r='88' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='178' rx='88' ry='26.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6√6 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tetraedr-sferalari",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#13162b8d"
+    },
+    {
+      "q": "Kubga ichki chizilgan sferaning hajmi shu kubning hajmiga qanday nisbatda bo'ladi?",
+      "v": [
+        "π/6",
+        "π/3",
+        "π/4",
+        "2π/3"
+      ],
+      "t": 0,
+      "izoh": "Qirra a bo'lsa, ichki sfera radiusi a/2. Sfera hajmi (4/3)π·a³/8 = πa³/6. Kub hajmi a³. Nisbat πa³/6 : a³ = π/6 ≈ 0,524.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='77,110 185,110 185,218 77,218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115,72 223,72 223,180' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='77' y1='110' x2='115' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='110' x2='223' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='218' x2='223' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='115,72 115,180 223,180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='77' y1='218' x2='115' y2='180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='54' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='54' ry='16.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='131' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sfera-kub-hajm-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#60edef0c"
+    },
+    {
+      "q": "Kubga tashqi chizilgan sferaning hajmi shu kubning hajmidan necha marta katta?",
+      "v": [
+        "3π/2 marta",
+        "π√3/2 marta",
+        "π/6 marta",
+        "π√3/6 marta"
+      ],
+      "t": 1,
+      "izoh": "Tashqi sfera radiusi R = a√3/2, demak R³ = 3√3a³/8. Sfera hajmi (4/3)π·3√3a³/8 = π√3a³/2. Kub hajmi a³ bo'lgani uchun nisbat π√3/2 ≈ 2,72.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='77,110 185,110 185,218 77,218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115,72 223,72 223,180' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='77' y1='110' x2='115' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='110' x2='223' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='218' x2='223' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='115,72 115,180 223,180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='77' y1='218' x2='115' y2='180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='93.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='93.5' ry='28.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='131' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sfera-kub-hajm-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#a8f4f32f"
+    },
+    {
+      "q": "Sovg'a do'konida qirrasi 20 sm bo'lgan kubsimon quti ichiga radiusi 10 sm bo'lgan to'p aynan joylandi. To'p qutining necha foizini egallaydi?",
+      "v": [
+        "≈ 39,3%",
+        "≈ 26,2%",
+        "≈ 52,4%",
+        "≈ 78,5%"
+      ],
+      "t": 2,
+      "izoh": "To'p hajmi (4/3)π·1000 ≈ 4188,8 sm³, quti hajmi 20³ = 8000 sm³. Nisbat 4188,8 : 8000 ≈ 0,524, ya'ni taxminan 52,4 foiz.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='77,110 185,110 185,218 77,218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115,72 223,72 223,180' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='77' y1='110' x2='115' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='110' x2='223' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='218' x2='223' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='115,72 115,180 223,180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='77' y1='218' x2='115' y2='180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='54' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='54' ry='16.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='131' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 20 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sfera-kub-hajm-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#4de0a51e"
+    },
+    {
+      "q": "Kub hajmi bilan unga ichki chizilgan sfera hajmi orasidagi farq kub hajmining necha foizini tashkil qiladi?",
+      "v": [
+        "≈ 52,4%",
+        "≈ 21,5%",
+        "≈ 60,7%",
+        "≈ 47,6%"
+      ],
+      "t": 3,
+      "izoh": "Ichki sfera hajmi kub hajmining π/6 ≈ 0,524 qismini egallaydi. Demak farq 1 − 0,524 = 0,476, ya'ni taxminan 47,6 foiz.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='77,110 185,110 185,218 77,218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115,72 223,72 223,180' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='77' y1='110' x2='115' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='110' x2='223' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='218' x2='223' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='115,72 115,180 223,180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='77' y1='218' x2='115' y2='180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='54' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='54' ry='16.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='131' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sfera-kub-hajm-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#cac23ea0"
+    },
+    {
+      "q": "Sferaga tashqi chizilgan silindrning hajmi shu sferaning hajmidan necha marta katta?",
+      "v": [
+        "1,5 marta",
+        "2 marta",
+        "3 marta",
+        "1,25 marta"
+      ],
+      "t": 0,
+      "izoh": "Silindr asos radiusi r, balandligi 2r. Silindr hajmi πr²·2r = 2πr³, sfera hajmi (4/3)πr³. Nisbat 2 : (4/3) = 1,5 marta.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='87' rx='58' ry='17.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='92' y1='87' x2='92' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='208' y1='87' x2='208' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M92 203 A58 17.4 0 0 0 208 203' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M92 203 A58 17.4 0 0 1 208 203' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='58' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='58' ry='17.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "silindr-sfera-hajm-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#0c8aa4df"
+    },
+    {
+      "q": "Anor sharbati solingan silindrsimon bankaning balandligi asos diametriga teng. Bankaga aynan sig'adigan to'p uning hajmining qanday qismini egallaydi?",
+      "v": [
+        "1/3",
+        "2/3",
+        "1/2",
+        "3/4"
+      ],
+      "t": 1,
+      "izoh": "Balandlik h = 2r bo'lgani uchun banka hajmi 2πr³. To'p hajmi (4/3)πr³. Qism (4/3)πr³ : 2πr³ = 2/3.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='87' rx='58' ry='17.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='92' y1='87' x2='92' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='208' y1='87' x2='208' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M92 203 A58 17.4 0 0 0 208 203' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M92 203 A58 17.4 0 0 1 208 203' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='58' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='58' ry='17.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "silindr-sfera-hajm-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#8f09c5c5"
+    },
+    {
+      "q": "Sferaga tashqi chizilgan silindrning to'liq sirti sfera sirtidan necha marta katta bo'ladi?",
+      "v": [
+        "2 marta",
+        "3 marta",
+        "1,5 marta",
+        "teng, 1 marta"
+      ],
+      "t": 2,
+      "izoh": "Silindr to'liq sirti 2πr² + 2πr·2r = 6πr². Sfera sirti 4πr². Nisbat 6πr² : 4πr² = 1,5 marta. Faqat yon sirt olinsa xato javob chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='87' rx='58' ry='17.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='92' y1='87' x2='92' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='208' y1='87' x2='208' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M92 203 A58 17.4 0 0 0 208 203' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M92 203 A58 17.4 0 0 1 208 203' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='58' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='58' ry='17.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "silindr-sfera-hajm-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#1e5342f3"
+    },
+    {
+      "q": "Sportzalga silindr shaklidagi 54 litrli idish keltirildi va unga aynan sig'adigan shar yasaldi. Sharning hajmi necha litr bo'ladi?",
+      "v": [
+        "27 litr",
+        "18 litr",
+        "81 litr",
+        "36 litr"
+      ],
+      "t": 3,
+      "izoh": "Aynan sig'adigan shar silindr hajmining 2/3 qismini egallaydi. Demak V = 54·2/3 = 36 litr.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='87' rx='58' ry='17.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='92' y1='87' x2='92' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='208' y1='87' x2='208' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M92 203 A58 17.4 0 0 0 208 203' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M92 203 A58 17.4 0 0 1 208 203' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='58' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='58' ry='17.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='231' font-size='13' fill='%23334155' text-anchor='middle'%3EV silindr = 54 l%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "silindr-sfera-hajm-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#d9f2d876"
+    },
+    {
+      "q": "Sferaga tashqi chizilgan teng yonli konusning o'q kesimi teng tomonli uchburchak. Konus hajmining sfera hajmiga nisbati qanday?",
+      "v": [
+        "2,25",
+        "1,5",
+        "3",
+        "4/9"
+      ],
+      "t": 0,
+      "izoh": "O'q kesimi tomoni a bo'lsin. Konus radiusi a/2, balandligi a√3/2, hajmi πa³√3/24. Ichki sfera radiusi a√3/6, hajmi πa³√3/54. Nisbat 54 : 24 = 2,25.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='103.8' x2='80' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='103.8' x2='220' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M80 225 A70 21 0 0 0 220 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M80 225 A70 21 0 0 1 220 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='184.6' r='40.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='184.6' rx='40.4' ry='12.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konus-sfera-hajm-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#ce20723b"
+    },
+    {
+      "q": "Konusga ichki chizilgan sferaning radiusi konus asos radiusidan 2 marta kichik. Konusning balandligi asos radiusidan necha marta katta?",
+      "v": [
+        "1,5 marta",
+        "4/3 marta",
+        "2 marta",
+        "3/4 marta"
+      ],
+      "t": 1,
+      "izoh": "r = R·h/(R + l) = R/2 dan R + l = 2h kelib chiqadi, ya'ni l = 2h − R. Bunga l² = R² + h² ni qo'ysak, 3h² = 4hR va h = 4R/3.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='131.7' x2='80' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='131.7' x2='220' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M80 225 A70 21 0 0 0 220 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M80 225 A70 21 0 0 1 220 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='190' r='35' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='190' rx='35' ry='10.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konus-sfera-hajm-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#742117f8"
+    },
+    {
+      "q": "Muzqaymoq konusining balandligi 12 sm, asos radiusi 5 sm. Unga ichki chizilgan sharning hajmi konus hajmining qanday qismini tashkil qiladi?",
+      "v": [
+        "1/3",
+        "2/3",
+        "40/81",
+        "4/9"
+      ],
+      "t": 2,
+      "izoh": "Yasovchi l = 13 sm, ichki sfera radiusi r = 5·12/(5 + 13) = 10/3 sm. Shar hajmi (4/3)π·1000/27 = 4000π/81, konus hajmi (1/3)π·25·12 = 100π. Nisbat 40/81.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='77' x2='88.3' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='77' x2='211.7' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M88.3 225 A61.7 18.5 0 0 0 211.7 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M88.3 225 A61.7 18.5 0 0 1 211.7 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='183.9' r='41.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='183.9' rx='41.1' ry='12.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='253' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm, h = 12 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konus-sfera-hajm-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#f4f55191"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan sferaga tashqi chizilgan konusning balandligi 18 sm ekan. Konusning asos radiusi necha santimetr?",
+      "v": [
+        "6 sm",
+        "12 sm",
+        "9 sm",
+        "6√3 sm"
+      ],
+      "t": 3,
+      "izoh": "r = R·h/(R + l) tenglamaga r = 6 va h = 18 ni qo'yamiz: 6(R + l) = 18R, ya'ni l = 2R. l² = R² + 324 dan 4R² = R² + 324, R² = 108 va R = 6√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='103.8' x2='80' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='103.8' x2='220' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M80 225 A70 21 0 0 0 220 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M80 225 A70 21 0 0 1 220 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='184.6' r='40.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='184.6' rx='40.4' ry='12.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='253' font-size='13' fill='%23334155' text-anchor='middle'%3Eh = 18 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konus-sfera-hajm-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#b8c85b0f"
+    },
+    {
+      "q": "Radiusi 6√3 sm bo'lgan sferik idish ichiga eng katta kub joylashtirildi. Kubning qirrasi necha santimetr?",
+      "v": [
+        "12 sm",
+        "6 sm",
+        "12√3 sm",
+        "4√3 sm"
+      ],
+      "t": 0,
+      "izoh": "Eng katta kubning fazoviy diagonali sfera diametriga teng: a√3 = 2·6√3 = 12√3. Bundan a = 12 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='26.4' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolygon points='82.4,111 184,111 184,212.6 82.4,212.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115.9,77.5 217.5,77.5 217.5,179.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='82.4' y1='111' x2='115.9' y2='77.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='184' y1='111' x2='217.5' y2='77.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='184' y1='212.6' x2='217.5' y2='179.1' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='115.9,77.5 115.9,179.1 217.5,179.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='82.4' y1='212.6' x2='115.9' y2='179.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6√3 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sferaga-ichki-kub",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#174b4d31"
+    },
+    {
+      "q": "Radiusi 3√3 sm bo'lgan sharga ichki chizilgan kubning hajmi necha kub santimetr bo'ladi?",
+      "v": [
+        "81√3 sm³",
+        "216 sm³",
+        "1728 sm³",
+        "27 sm³"
+      ],
+      "t": 1,
+      "izoh": "Kub qirrasi a√3 = 2R shartdan topiladi: a√3 = 6√3, ya'ni a = 6 sm. Kub hajmi V = 6³ = 216 sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='26.4' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolygon points='82.4,111 184,111 184,212.6 82.4,212.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115.9,77.5 217.5,77.5 217.5,179.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='82.4' y1='111' x2='115.9' y2='77.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='184' y1='111' x2='217.5' y2='77.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='184' y1='212.6' x2='217.5' y2='179.1' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='115.9,77.5 115.9,179.1 217.5,179.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='82.4' y1='212.6' x2='115.9' y2='179.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 3√3 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sferaga-ichki-kub",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#6d755713"
+    },
+    {
+      "q": "Diametri 10 sm bo'lgan sharsimon shisha ichiga uchlari devorga tegadigan kub joylashtirildi. Kubning to'liq sirti qancha?",
+      "v": [
+        "100 sm²",
+        "150 sm²",
+        "200 sm²",
+        "600 sm²"
+      ],
+      "t": 2,
+      "izoh": "Fazoviy diagonal a√3 = 10, bundan a² = 100/3. To'liq sirt S = 6a² = 6·100/3 = 200 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='26.4' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolygon points='82.4,111 184,111 184,212.6 82.4,212.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115.9,77.5 217.5,77.5 217.5,179.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='82.4' y1='111' x2='115.9' y2='77.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='184' y1='111' x2='217.5' y2='77.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='184' y1='212.6' x2='217.5' y2='179.1' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='115.9,77.5 115.9,179.1 217.5,179.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='82.4' y1='212.6' x2='115.9' y2='179.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 10 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sferaga-ichki-kub",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#4ec40b12"
+    },
+    {
+      "q": "Laboratoriyadagi sharning hajmi 36π sm³. Unga ichki chizilgan kubning hajmi shar hajmidan necha foizga kam?",
+      "v": [
+        "≈ 36,8%",
+        "≈ 52,4%",
+        "≈ 47,6%",
+        "≈ 63,2%"
+      ],
+      "t": 3,
+      "izoh": "(4/3)πR³ = 36π dan R = 3 sm. Kub qirrasi a = 2R/√3 = 2√3, hajmi (2√3)³ = 24√3 ≈ 41,6 sm³. Shar hajmi 36π ≈ 113,1 sm³. Kamayish (113,1 − 41,6)/113,1 ≈ 63,2 foiz.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='26.4' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolygon points='82.4,111 184,111 184,212.6 82.4,212.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115.9,77.5 217.5,77.5 217.5,179.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='82.4' y1='111' x2='115.9' y2='77.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='184' y1='111' x2='217.5' y2='77.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='184' y1='212.6' x2='217.5' y2='179.1' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='115.9,77.5 115.9,179.1 217.5,179.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='82.4' y1='212.6' x2='115.9' y2='179.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EV shar = 36π sm³%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sferaga-ichki-kub",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#83de7b8c"
+    },
+    {
+      "q": "Laboratoriya modelida radiusi 10 sm bo'lgan sferaga ichki chizilgan konusning balandligi 16 sm. Konus asosining radiusi necha santimetr?",
+      "v": [
+        "8 sm",
+        "6 sm",
+        "10 sm",
+        "12 sm"
+      ],
+      "t": 0,
+      "izoh": "Sfera markazidan asos tekisligigacha masofa 16 − 10 = 6 sm. Asos radiusi to'g'ri burchakli uchburchakdan: √(10² − 6²) = √64 = 8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='92' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='92' ry='27.6' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='53' x2='76.4' y2='200.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='53' x2='223.6' y2='200.2' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M76.4 200.2 A73.6 22.1 0 0 0 223.6 200.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M76.4 200.2 A73.6 22.1 0 0 1 223.6 200.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3ER sfera = 10 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sferaga-ichki-konus",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#23e3b96c"
+    },
+    {
+      "q": "Radiusi 13 sm bo'lgan sfera ichiga uchi va asos aylanasi sferaga tegadigan konus chizildi. Konus asosining radiusi 12 sm va konus balandligi 13 sm dan katta. Balandlik qancha?",
+      "v": [
+        "26 sm",
+        "18 sm",
+        "8 sm",
+        "5 sm"
+      ],
+      "t": 1,
+      "izoh": "Markazdan asos tekisligigacha masofa √(13² − 12²) = 5 sm. Balandlik 13 dan katta bo'lgani uchun uch va asos markaz qarama-qarshi tomonda: h = 13 + 5 = 18 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='92' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='92' ry='27.6' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='53' x2='65.1' y2='180.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='53' x2='234.9' y2='180.4' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M65.1 180.4 A84.9 25.5 0 0 0 234.9 180.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M65.1 180.4 A84.9 25.5 0 0 1 234.9 180.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3ER sfera = 13 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sferaga-ichki-konus",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#c28f45e2"
+    },
+    {
+      "q": "Sferaga ichki chizilgan konusning balandligi sfera radiusiga teng bo'lsa, konus hajmining sfera hajmiga nisbati qanday?",
+      "v": [
+        "1 : 3",
+        "3 : 8",
+        "1 : 4",
+        "1 : 2"
+      ],
+      "t": 2,
+      "izoh": "h = R bo'lsa, asos tekisligi markazdan o'tadi va asos radiusi R ga teng. Konus hajmi (1/3)πR³, sfera hajmi (4/3)πR³. Nisbat 1 : 4.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='92' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='92' ry='27.6' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='53' x2='58' y2='145' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='53' x2='242' y2='145' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M58 145 A92 27.6 0 0 0 242 145' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M58 145 A92 27.6 0 0 1 242 145' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sferaga-ichki-konus",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#326e49db"
+    },
+    {
+      "q": "Sferik akvarium radiusi 15 sm. Unga ichki chizilgan konusning asos radiusi 9 sm va konus uchi asosdan uzoq tomonda. Konusning hajmi qancha?",
+      "v": [
+        "81π sm³",
+        "2187π sm³",
+        "243π sm³",
+        "729π sm³"
+      ],
+      "t": 3,
+      "izoh": "Markazdan asosgacha masofa √(15² − 9²) = 12 sm. Uch qarama-qarshi tomonda bo'lgani uchun h = 15 + 12 = 27 sm. Hajm (1/3)π·81·27 = 729π sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='92' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='92' ry='27.6' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='53' x2='94.8' y2='218.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='53' x2='205.2' y2='218.6' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M94.8 218.6 A55.2 16.6 0 0 0 205.2 218.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M94.8 218.6 A55.2 16.6 0 0 1 205.2 218.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3ER sfera = 15 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sferaga-ichki-konus",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#777bb271"
+    },
+    {
+      "q": "Sharsimon idishga ichki chizilgan silindrning balandligi 12 sm, sharning radiusi esa 10 sm. Silindr asosining radiusi qancha?",
+      "v": [
+        "8 sm",
+        "6 sm",
+        "4 sm",
+        "10 sm"
+      ],
+      "t": 0,
+      "izoh": "Sfera markazi silindr o'qining o'rtasida. Asos radiusi √(R² − (h/2)²) = √(100 − 36) = √64 = 8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='92' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='92' ry='27.6' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cellipse cx='150' cy='89.8' rx='73.6' ry='22.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='76.4' y1='89.8' x2='76.4' y2='200.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='223.6' y1='89.8' x2='223.6' y2='200.2' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M76.4 200.2 A73.6 22.1 0 0 0 223.6 200.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M76.4 200.2 A73.6 22.1 0 0 1 223.6 200.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3ER sfera = 10 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sferaga-ichki-silindr",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#882fcbca"
+    },
+    {
+      "q": "Diametri 26 sm bo'lgan sharsimon idishga radiusi 5 sm bo'lgan silindrsimon g'altak aynan joylashdi. G'altakning balandligi necha santimetr?",
+      "v": [
+        "18 sm",
+        "24 sm",
+        "12 sm",
+        "√194 sm"
+      ],
+      "t": 1,
+      "izoh": "Sfera radiusi 13 sm. Balandlikning yarmi √(13² − 5²) = √144 = 12 sm, demak to'liq balandlik h = 24 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='92' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='92' ry='27.6' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cellipse cx='150' cy='60.1' rx='35.4' ry='10.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='114.6' y1='60.1' x2='114.6' y2='229.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185.4' y1='60.1' x2='185.4' y2='229.9' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M114.6 229.9 A35.4 10.6 0 0 0 185.4 229.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M114.6 229.9 A35.4 10.6 0 0 1 185.4 229.9' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 26 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sferaga-ichki-silindr",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#c88ee144"
+    },
+    {
+      "q": "Radiusi R bo'lgan sferaga ichki chizilgan silindrlar orasida hajmi eng katta bo'lganining balandligi nechaga teng?",
+      "v": [
+        "R",
+        "R√3",
+        "2R/√3",
+        "R√2"
+      ],
+      "t": 2,
+      "izoh": "Balandlik h bo'lsa, asos radiusi kvadrati R² − h²/4. Hajm V(h) = π(R² − h²/4)h. Hosila π(R² − 3h²/4) nolga tenglanadi, bundan h = 2R/√3.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='92' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='92' ry='27.6' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cellipse cx='150' cy='108.2' rx='84.3' ry='25.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='65.7' y1='108.2' x2='65.7' y2='181.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='234.3' y1='108.2' x2='234.3' y2='181.8' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M65.7 181.8 A84.3 25.3 0 0 0 234.3 181.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M65.7 181.8 A84.3 25.3 0 0 1 234.3 181.8' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='266' font-size='13' fill='%23334155' text-anchor='middle'%3Eixtiyoriy ichki chizilgan silindr%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sferaga-ichki-silindr",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#ba8a9d43"
+    },
+    {
+      "q": "Bo'yalgan sharsimon idishning radiusi 17 sm. Unga ichki chizilgan silindrning balandligi 16 sm bo'lsa, silindrning yon sirti qancha?",
+      "v": [
+        "240π sm²",
+        "510π sm²",
+        "960π sm²",
+        "480π sm²"
+      ],
+      "t": 3,
+      "izoh": "Asos radiusi √(17² − 8²) = √225 = 15 sm. Yon sirt S = 2πrh = 2π·15·16 = 480π sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='92' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='92' ry='27.6' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cellipse cx='150' cy='101.7' rx='81.2' ry='24.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68.8' y1='101.7' x2='68.8' y2='188.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='231.2' y1='101.7' x2='231.2' y2='188.3' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M68.8 188.3 A81.2 24.4 0 0 0 231.2 188.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M68.8 188.3 A81.2 24.4 0 0 1 231.2 188.3' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3ER sfera = 17 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sferaga-ichki-silindr",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#6565025a"
+    },
+    {
+      "q": "Kubga ichki chizilgan sferaning sirti shu kubning to'liq sirtiga qanday nisbatda bo'ladi?",
+      "v": [
+        "π/6",
+        "π/4",
+        "π/3",
+        "π/2"
+      ],
+      "t": 0,
+      "izoh": "Ichki sfera radiusi a/2, sirti 4π·a²/4 = πa². Kubning to'liq sirti 6a². Nisbat πa² : 6a² = π/6 ≈ 0,524.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='77,110 185,110 185,218 77,218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115,72 223,72 223,180' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='77' y1='110' x2='115' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='110' x2='223' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='218' x2='223' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='115,72 115,180 223,180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='77' y1='218' x2='115' y2='180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='54' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='54' ry='16.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='131' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sirtlar-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#5334a975"
+    },
+    {
+      "q": "Bo'yoqchi qirrasi 30 sm bo'lgan kubni va unga ichki chizilgan sharni bo'yaydi. Sharga ketgan bo'yoq kubga ketganning necha foizini tashkil qiladi?",
+      "v": [
+        "≈ 26,2%",
+        "≈ 52,4%",
+        "≈ 47,6%",
+        "≈ 78,5%"
+      ],
+      "t": 1,
+      "izoh": "Shar radiusi 15 sm, sirti 4π·225 = 900π ≈ 2827,4 sm². Kubning to'liq sirti 6·900 = 5400 sm². Nisbat 2827,4 : 5400 ≈ 0,524, ya'ni 52,4 foiz.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='77,110 185,110 185,218 77,218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115,72 223,72 223,180' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='77' y1='110' x2='115' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='110' x2='223' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='218' x2='223' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='115,72 115,180 223,180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='77' y1='218' x2='115' y2='180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='54' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='54' ry='16.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='131' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 30 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sirtlar-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#75a73ae6"
+    },
+    {
+      "q": "Sferaga tashqi chizilgan kubning to'liq sirti shu sferaning sirtidan necha marta katta?",
+      "v": [
+        "3/π marta",
+        "2/π marta",
+        "6/π marta",
+        "π/6 marta"
+      ],
+      "t": 2,
+      "izoh": "Tashqi chizilgan kub qirrasi a = 2r, to'liq sirti 6·4r² = 24r². Sfera sirti 4πr². Nisbat 24r² : 4πr² = 6/π ≈ 1,91.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='77,110 185,110 185,218 77,218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115,72 223,72 223,180' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='77' y1='110' x2='115' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='110' x2='223' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='218' x2='223' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='115,72 115,180 223,180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='77' y1='218' x2='115' y2='180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='54' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='54' ry='16.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='131' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 2r%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sirtlar-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#93f9554b"
+    },
+    {
+      "q": "Konussimon idishning asos radiusi 3 sm, yasovchisi 5 sm. Unga ichki chizilgan sfera sirtining konus to'liq sirtiga nisbati qanday?",
+      "v": [
+        "3 : 5",
+        "1 : 2",
+        "9 : 16",
+        "3 : 8"
+      ],
+      "t": 3,
+      "izoh": "Balandlik 4 sm, ichki sfera radiusi 3·4/(3 + 5) = 1,5 sm, sirti 4π·2,25 = 9π. Konus to'liq sirti πR(R + l) = π·3·8 = 24π. Nisbat 9 : 24 = 3 : 8.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='131.7' x2='80' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='131.7' x2='220' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M80 225 A70 21 0 0 0 220 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M80 225 A70 21 0 0 1 220 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='190' r='35' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='190' rx='35' ry='10.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='253' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 3 sm, l = 5 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sirtlar-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#8165355a"
+    },
+    {
+      "q": "Bitta kubga ichki va tashqi chizilgan sferalar sirtlarining nisbati qanday bo'ladi?",
+      "v": [
+        "1 : 3",
+        "1 : 9",
+        "1 : 6",
+        "1 : 27"
+      ],
+      "t": 0,
+      "izoh": "Ichki radius a/2, tashqi radius a√3/2, ularning nisbati 1 : √3. Sirtlar radiuslar kvadratiga proporsional, demak nisbat 1 : 3.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='91,116 179,116 179,204 91,204' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='121,86 209,86 209,174' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='116' x2='121' y2='86' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='179' y1='116' x2='209' y2='86' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='179' y1='204' x2='209' y2='174' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='121,86 121,174 209,174' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='91' y1='204' x2='121' y2='174' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='44' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='44' ry='13.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='76.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='76.2' ry='22.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='135' y='223' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-tashqi-sfera-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#bb18e3c0"
+    },
+    {
+      "q": "Muntazam tetraedrga ichki va tashqi chizilgan sferalar sirtlarining nisbati nechaga teng?",
+      "v": [
+        "1 : 6",
+        "1 : 9",
+        "1 : 3",
+        "1 : 27"
+      ],
+      "t": 1,
+      "izoh": "Tetraedrda ichki radius a√6/12, tashqi radius a√6/4, nisbat 1 : 3. Sirtlar radiuslar kvadratiga proporsional bo'lgani uchun 1 : 9.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='78' y1='222' x2='222' y2='222' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='78' y1='222' x2='150' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='222' y1='222' x2='150' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='78' y1='222' x2='168' y2='190' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='222' y1='222' x2='168' y2='190' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='168' y1='190' x2='150' y2='72' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='178' r='28' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='178' rx='28' ry='8.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='178' r='84' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='178' rx='84' ry='25.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-tashqi-sfera-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#d1a89d3d"
+    },
+    {
+      "q": "Zavoddagi balandligi asos diametriga teng silindrsimon bakka ichki va tashqi chizilgan sferalar radiuslarining nisbati qanday?",
+      "v": [
+        "√2 : 1",
+        "2 : 3",
+        "1 : √2",
+        "1 : 2"
+      ],
+      "t": 2,
+      "izoh": "Asos radiusi r, balandlik 2r. Ichki sfera radiusi r ga teng. Tashqi sfera radiusi √(r² + r²) = r√2. Nisbat r : r√2 = 1 : √2.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='93' rx='52' ry='15.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='98' y1='93' x2='98' y2='197' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='202' y1='93' x2='202' y2='197' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M98 197 A52 15.6 0 0 0 202 197' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M98 197 A52 15.6 0 0 1 202 197' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='52' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='52' ry='15.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='73.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='73.5' ry='22.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='239' font-size='13' fill='%23334155' text-anchor='middle'%3Eh = 2r%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-tashqi-sfera-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#c4f05db8"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidaning barcha qirralari 8 sm. Unga tashqi chizilgan sferaning radiusi ichki chizilganidan necha marta katta?",
+      "v": [
+        "√3 marta",
+        "2 marta",
+        "3 marta",
+        "√3 + 1 marta"
+      ],
+      "t": 3,
+      "izoh": "Balandlik h = √(64 − 32) = 4√2, tashqi radius R = 64/(2·4√2) = 4√2. Hajm 256√2/3, to'liq sirt 64 + 64√3, ichki radius r = 4√2/(1 + √3). Nisbat R : r = 1 + √3 ≈ 2,73.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='94,180 150,199 206,180' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='94,180 150,161 206,180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='124' x2='94' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='124' x2='206' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='124' x2='150' y2='199' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='124' x2='150' y2='161' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='159.5' r='20.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='159.5' rx='20.5' ry='6.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='180' r='56' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='180' rx='56' ry='16.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='252' font-size='13' fill='%23334155' text-anchor='middle'%3Ebarcha qirra 8 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-tashqi-sfera-nisbati",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#58a60bfe"
+    },
+    {
+      "q": "Balandligi 12 sm va asos radiusi 6 sm bo'lgan konusga silindr ichki chizilgan: silindr asosi konus asosida yotibdi, yuqori asos aylanasi esa yon sirtga tegib turibdi. Silindr balandligi 4 sm bo'lsa, radiusi qancha?",
+      "v": [
+        "4 sm",
+        "2 sm",
+        "6 sm",
+        "3 sm"
+      ],
+      "t": 0,
+      "izoh": "Konusning o'q kesimida o'xshash uchburchaklar hosil bo'ladi: r/R = (H − h)/H. Demak r = 6·(12 − 4)/12 = 6·8/12 = 4 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='81' x2='78' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='81' x2='222' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M78 225 A72 21.6 0 0 0 222 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M78 225 A72 21.6 0 0 1 222 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cellipse cx='150' cy='177' rx='48' ry='14.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='102' y1='177' x2='102' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='198' y1='177' x2='198' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M102 225 A48 14.4 0 0 0 198 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M102 225 A48 14.4 0 0 1 198 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm, H = 12 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konusga-ichki-silindr",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#0f634817"
+    },
+    {
+      "q": "Konusning balandligi 9 sm, asos radiusi 6 sm. Unga ichki chizilgan eng katta hajmli silindrning balandligi necha santimetr bo'ladi?",
+      "v": [
+        "2 sm",
+        "3 sm",
+        "4,5 sm",
+        "6 sm"
+      ],
+      "t": 1,
+      "izoh": "Silindr balandligi h bo'lsa, radiusi R(H − h)/H va hajmi πR²(H − h)²h/H². Bu ifoda h = H/3 da eng katta qiymatga erishadi, ya'ni h = 9 : 3 = 3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='117' x2='78' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='117' x2='222' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M78 225 A72 21.6 0 0 0 222 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M78 225 A72 21.6 0 0 1 222 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cellipse cx='150' cy='171' rx='36' ry='10.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='114' y1='171' x2='114' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186' y1='171' x2='186' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M114 225 A36 10.8 0 0 0 186 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M114 225 A36 10.8 0 0 1 186 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm, H = 9 sm%3C/text%3E%3Ctext x='150' y='273' font-size='13' fill='%23334155' text-anchor='middle'%3Eichki chizilgan silindrlardan biri%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konusga-ichki-silindr",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#37d329f8"
+    },
+    {
+      "q": "Konusning balandligi 15 sm, asos radiusi 10 sm. Unga ichki chizilgan silindrning radiusi 4 sm bo'lsa, silindrning balandligi qancha?",
+      "v": [
+        "11 sm",
+        "5 sm",
+        "9 sm",
+        "6 sm"
+      ],
+      "t": 2,
+      "izoh": "O'xshashlikdan h = H(1 − r/R). Qo'yamiz: h = 15·(1 − 4/10) = 15·0,6 = 9 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='117' x2='78' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='117' x2='222' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M78 225 A72 21.6 0 0 0 222 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M78 225 A72 21.6 0 0 1 222 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cellipse cx='150' cy='160.2' rx='28.8' ry='8.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.2' y1='160.2' x2='121.2' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='178.8' y1='160.2' x2='178.8' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M121.2 225 A28.8 8.6 0 0 0 178.8 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M121.2 225 A28.8 8.6 0 0 1 178.8 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm, H = 15 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konusga-ichki-silindr",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#7fff299b"
+    },
+    {
+      "q": "Konussimon idishning balandligi 20 sm, asos radiusi 10 sm. Ichiga radiusi 5 sm bo'lgan silindrsimon g'altak asosga tayanib, yuqori asos aylanasi idish yon sirtiga tegib turgan holda joylashtirildi. G'altakning hajmi qancha?",
+      "v": [
+        "500π sm³",
+        "125π sm³",
+        "750π sm³",
+        "250π sm³"
+      ],
+      "t": 3,
+      "izoh": "G'altak balandligi h = 20·(1 − 5/10) = 10 sm. Hajm V = πr²h = π·25·10 = 250π sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='81' x2='78' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='81' x2='222' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M78 225 A72 21.6 0 0 0 222 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M78 225 A72 21.6 0 0 1 222 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cellipse cx='150' cy='153' rx='36' ry='10.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='114' y1='153' x2='114' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186' y1='153' x2='186' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M114 225 A36 10.8 0 0 0 186 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M114 225 A36 10.8 0 0 1 186 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm, H = 20 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konusga-ichki-silindr",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#174f387e"
+    },
+    {
+      "q": "Zavod asosi tomoni 6 sm bo'lgan muntazam olti burchak va balandligi 16 sm bo'lgan prizma detalni sferik qadoqqa joylaydi. Qadoq radiusi qancha?",
+      "v": [
+        "10 sm",
+        "2√73 sm",
+        "8 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Muntazam olti burchakka tashqi chizilgan aylana radiusi tomonga teng, ya'ni 6 sm. Sfera radiusi R = √(6² + 8²) = √100 = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='198,86 174,99.3 126,99.3 102,86 126,72.7 174,72.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='198,214 174,227.3 126,227.3 102,214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='102,214 126,200.7 174,200.7 198,214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='198' y1='86' x2='198' y2='214' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='174' y1='99.3' x2='174' y2='227.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='126' y1='99.3' x2='126' y2='227.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='102' y1='86' x2='102' y2='214' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='126' y1='72.7' x2='126' y2='200.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='174' y1='72.7' x2='174' y2='200.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='80' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='80' ry='24' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 6 sm, h = 16 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "olti-burchakli-prizma-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#0f784254"
+    },
+    {
+      "q": "Muntazam olti burchakli prizmaga sfera ichki chizilgan. Prizma asosining tomoni 4 sm bo'lsa, sferaning radiusi va prizmaning balandligi qanday bo'ladi?",
+      "v": [
+        "r = 4√3 sm, h = 2√3 sm",
+        "r = 2√3 sm, h = 4√3 sm",
+        "r = 4 sm, h = 8 sm",
+        "r = 2 sm, h = 4 sm"
+      ],
+      "t": 1,
+      "izoh": "Olti burchakka ichki chizilgan aylana radiusi a√3/2 = 2√3 sm — sfera radiusi shu. Sfera asoslarga urinishi uchun h = 2r = 4√3 sm bo'lishi kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='210,98 180,114.6 120,114.6 90,98 120,81.4 180,81.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='210,202 180,218.6 120,218.6 90,202' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='90,202 120,185.4 180,185.4 210,202' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='210' y1='98' x2='210' y2='202' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='180' y1='114.6' x2='180' y2='218.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='120' y1='114.6' x2='120' y2='218.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='90' y1='98' x2='90' y2='202' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='120' y1='81.4' x2='120' y2='185.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='180' y1='81.4' x2='180' y2='185.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='52' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='52' ry='15.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='240' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 4 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "olti-burchakli-prizma-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#11618fb2"
+    },
+    {
+      "q": "Muntazam olti burchakli prizmaning asos tomoni 5 sm, balandligi esa 24 sm. Prizmaga tashqi chizilgan sferaning diametri qancha?",
+      "v": [
+        "24 sm",
+        "29 sm",
+        "26 sm",
+        "13 sm"
+      ],
+      "t": 2,
+      "izoh": "Asosga tashqi chizilgan aylana radiusi 5 sm. Sfera radiusi R = √(5² + 12²) = 13 sm, demak diametr 2R = 26 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='184,84 167,93.4 133,93.4 116,84 133,74.6 167,74.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='184,216 167,225.4 133,225.4 116,216' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='116,216 133,206.6 167,206.6 184,216' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='184' y1='84' x2='184' y2='216' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='167' y1='93.4' x2='167' y2='225.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='133' y1='93.4' x2='133' y2='225.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='116' y1='84' x2='116' y2='216' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='133' y1='74.6' x2='133' y2='206.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='167' y1='74.6' x2='167' y2='206.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='74' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='74' ry='22.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 5 sm, h = 24 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "olti-burchakli-prizma-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#d4dc65a2"
+    },
+    {
+      "q": "Muzeydagi muntazam olti burchakli prizma shaklidagi tosh ustunning asos tomoni 16 sm. Ustunga tashqi chizilgan sferaning radiusi 34 sm bo'lsa, ustun balandligi qancha?",
+      "v": [
+        "30 sm",
+        "18 sm",
+        "68 sm",
+        "60 sm"
+      ],
+      "t": 3,
+      "izoh": "Asosga tashqi chizilgan aylana radiusi 16 sm. R² = 16² + (h/2)² dan (h/2)² = 1156 − 256 = 900, ya'ni h/2 = 30 va h = 60 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='190,75 170,86.1 130,86.1 110,75 130,63.9 170,63.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='190,225 170,236.1 130,236.1 110,225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='110,225 130,213.9 170,213.9 190,225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='190' y1='75' x2='190' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='170' y1='86.1' x2='170' y2='236.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='130' y1='86.1' x2='130' y2='236.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='110' y1='75' x2='110' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='130' y1='63.9' x2='130' y2='213.9' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='170' y1='63.9' x2='170' y2='213.9' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='85' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='85' ry='25.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='271' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 16 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "olti-burchakli-prizma-sfera",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#342c8a6d"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan sharsimon idish ichiga eng katta kub joylashtirildi. Kubdan tashqarida qolgan bo'sh hajm qancha?",
+      "v": [
+        "288π − 192√3 sm³",
+        "288π − 216 sm³",
+        "192√3 sm³",
+        "216π − 192√3 sm³"
+      ],
+      "t": 0,
+      "izoh": "Kub qirrasi a√3 = 12 dan a = 4√3 sm, hajmi (4√3)³ = 192√3 sm³. Shar hajmi (4/3)π·216 = 288π sm³. Bo'shliq 288π − 192√3 sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='26.4' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolygon points='82.4,111 184,111 184,212.6 82.4,212.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115.9,77.5 217.5,77.5 217.5,179.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='82.4' y1='111' x2='115.9' y2='77.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='184' y1='111' x2='217.5' y2='77.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='184' y1='212.6' x2='217.5' y2='179.1' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='115.9,77.5 115.9,179.1 217.5,179.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='82.4' y1='212.6' x2='115.9' y2='179.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jismlar-orasidagi-hajm",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#573ba24c"
+    },
+    {
+      "q": "Balandligi 20 sm va radiusi 10 sm bo'lgan silindrsimon idishga aynan sig'adigan shar solindi, so'ng idish og'zigacha suv quyildi. Suvning hajmi qancha?",
+      "v": [
+        "2000π sm³",
+        "2000π/3 sm³",
+        "4000π/3 sm³",
+        "1000π/3 sm³"
+      ],
+      "t": 1,
+      "izoh": "Idish hajmi π·100·20 = 2000π sm³, shar hajmi (4/3)π·1000 = 4000π/3 sm³. Suv ayirmaga teng: 2000π − 4000π/3 = 2000π/3 sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='87' rx='58' ry='17.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='92' y1='87' x2='92' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='208' y1='87' x2='208' y2='203' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M92 203 A58 17.4 0 0 0 208 203' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M92 203 A58 17.4 0 0 1 208 203' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='58' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='58' ry='17.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='231' font-size='13' fill='%23334155' text-anchor='middle'%3Eh = 20 sm, r = 10 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jismlar-orasidagi-hajm",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#ce3d8b54"
+    },
+    {
+      "q": "Konussimon idishning balandligi 12 sm, asos radiusi 9 sm. Unga ichki chizilgan shar solingandan keyin qolgan bo'sh hajm qancha bo'ladi?",
+      "v": [
+        "36π sm³",
+        "445,5π sm³",
+        "202,5π sm³",
+        "121,5π sm³"
+      ],
+      "t": 2,
+      "izoh": "Yasovchi 15 sm, shar radiusi 9·12/(9 + 15) = 4,5 sm. Konus hajmi (1/3)π·81·12 = 324π, shar hajmi (4/3)π·91,125 = 121,5π. Bo'shliq 324π − 121,5π = 202,5π sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='131.7' x2='80' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='131.7' x2='220' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M80 225 A70 21 0 0 0 220 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M80 225 A70 21 0 0 1 220 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='190' r='35' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='190' rx='35' ry='10.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='253' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 9 sm, h = 12 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jismlar-orasidagi-hajm",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#836d0c07"
+    },
+    {
+      "q": "Metall kubning qirrasi 12 sm. Unga tashqi chizilgan sfera bilan kubning o'zi orasida qolgan hajm necha kub santimetr?",
+      "v": [
+        "6912√3π − 1728 sm³",
+        "432√3π − 1728 sm³",
+        "864√3π sm³",
+        "864√3π − 1728 sm³"
+      ],
+      "t": 3,
+      "izoh": "Sfera radiusi R = 6√3 sm, R³ = 648√3. Sfera hajmi (4/3)π·648√3 = 864√3π sm³. Kub hajmi 12³ = 1728 sm³. Ayirma 864√3π − 1728 sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='77,110 185,110 185,218 77,218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115,72 223,72 223,180' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='77' y1='110' x2='115' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='110' x2='223' y2='72' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='218' x2='223' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='115,72 115,180 223,180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='77' y1='218' x2='115' y2='180' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='93.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='93.5' ry='28.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='131' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 12 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jismlar-orasidagi-hajm",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#823ba17b"
+    },
+    {
+      "q": "Kubga ichki chizilgan sferaning markazidan kubning uchigacha bo'lgan masofa 6√3 sm ekan. Kubning qirrasi necha santimetr?",
+      "v": [
+        "12 sm",
+        "6 sm",
+        "6√3 sm",
+        "24 sm"
+      ],
+      "t": 0,
+      "izoh": "Ichki sfera markazi kub markazi bilan ustma-ust tushadi. Markazdan uchgacha masofa a√3/2 ga teng, demak a√3/2 = 6√3 va a = 12 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='80,111 184,111 184,215 80,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='116,75 220,75 220,179' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='111' x2='116' y2='75' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='184' y1='111' x2='220' y2='75' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='184' y1='215' x2='220' y2='179' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='116,75 116,179 220,179' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='80' y1='215' x2='116' y2='179' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='52' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='52' ry='15.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='145' x2='184' y2='215' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='180' y='175' font-size='13' fill='%23334155' text-anchor='start'%3E6√3 sm%3C/text%3E%3Ctext x='132' y='234' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = ?%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinish-masofa-tahlili",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#6b5aab86"
+    },
+    {
+      "q": "Konusga ichki chizilgan sferaning markazidan konus uchigacha bo'lgan masofa qancha, agar konus asos radiusi 6 sm va yasovchisi 10 sm bo'lsa?",
+      "v": [
+        "4 sm",
+        "5 sm",
+        "3 sm",
+        "8 sm"
+      ],
+      "t": 1,
+      "izoh": "Balandlik h = √(100 − 36) = 8 sm, ichki sfera radiusi r = 6·8/(6 + 10) = 3 sm. Markaz asosdan 3 sm balandda yotadi, uchgacha masofa 8 − 3 = 5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='150' y1='131.7' x2='80' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='131.7' x2='220' y2='225' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M80 225 A70 21 0 0 0 220 225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M80 225 A70 21 0 0 1 220 225' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='190' r='35' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='190' rx='35' ry='10.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='131.7' x2='150' y2='190' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='158' y='171.7' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='150' y='253' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm, l = 10 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinish-masofa-tahlili",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#79153bb8"
+    },
+    {
+      "q": "Sharsimon idish ichida yotgan kubning qirrasi 10 sm va kubning uchlari idish devoriga tegib turibdi. Idish markazidan kub yog'igacha bo'lgan masofa qancha?",
+      "v": [
+        "5√2 sm",
+        "10 sm",
+        "5 sm",
+        "5√3 sm"
+      ],
+      "t": 2,
+      "izoh": "Kub markazi sfera markazi bilan bir joyda. Markazdan yoqqacha masofa yoqqa tushirilgan perpendikulyar, u kub qirrasining yarmiga teng: 10 : 2 = 5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='26.4' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolygon points='82.4,111 184,111 184,212.6 82.4,212.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115.9,77.5 217.5,77.5 217.5,179.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='82.4' y1='111' x2='115.9' y2='77.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='184' y1='111' x2='217.5' y2='77.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='184' y1='212.6' x2='217.5' y2='179.1' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='115.9,77.5 115.9,179.1 217.5,179.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='82.4' y1='212.6' x2='115.9' y2='179.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 10 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinish-masofa-tahlili",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#f724fdd2"
+    },
+    {
+      "q": "Silindrga ichki chizilgan sferaning markazidan silindr asosi aylanasining nuqtasigacha bo'lgan masofa 5√2 sm. Silindrning hajmi qancha?",
+      "v": [
+        "500π/3 sm³",
+        "500π sm³",
+        "125π sm³",
+        "250π sm³"
+      ],
+      "t": 3,
+      "izoh": "Ichki sferada asos radiusi r va markaz balandlikning o'rtasida, ya'ni asosdan r masofada. Masofa √(r² + r²) = r√2 = 5√2 dan r = 5 sm, h = 10 sm. Hajm π·25·10 = 250π sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='89' rx='56' ry='16.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94' y1='89' x2='94' y2='201' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='206' y1='89' x2='206' y2='201' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M94 201 A56 16.8 0 0 0 206 201' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M94 201 A56 16.8 0 0 1 206 201' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Ccircle cx='150' cy='145' r='56' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='56' ry='16.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='150' y1='145' x2='206' y2='201' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='194' y='189' font-size='13' fill='%23334155' text-anchor='start'%3E5√2 sm%3C/text%3E%3Ctext x='150' y='291' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinish-masofa-tahlili",
+      "id": "matematika_ster_m16-jismlar-kombinatsiyasi-ichki-va-tashqi#be2815e6"
+    }
+  ]
+}

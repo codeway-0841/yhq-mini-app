@@ -1,0 +1,531 @@
+{
+  "nom": "07-mavzu. Tuzlarning gidrolizi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Toza suvning dissotsiatsiyalanish darajasi qancha?",
+      "v": [
+        "a = 10-9",
+        "a = 1",
+        "a = 0,5",
+        "a = 10-2"
+      ],
+      "t": 0,
+      "izoh": "Toza suv juda ham kuchsiz elektrolit, uning dissotsiatsiyalanish darajasi a = 10-9 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#e84cb1b7"
+    },
+    {
+      "q": "Toza suvdagi H+ va OH- ionlari konsentratsiyasi qanday?",
+      "v": [
+        "Bir-biriga teng",
+        "H+ ionlari ortiqcha",
+        "OH- ionlari ortiqcha",
+        "Ikkalasi ham yo'q"
+      ],
+      "t": 0,
+      "izoh": "Toza suvdagi H+ va OH- ionlari konsentratsiyasi bir-biriga teng: [H+] = [OH-].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#66f317b5"
+    },
+    {
+      "q": "Neytral muhitli eritma qanday eritma?",
+      "v": [
+        "Teng miqdorda H+ va OH- ionlari bo'lgan eritma",
+        "H+ ionlari ortiqcha bo'lgan eritma",
+        "OH- ionlari ortiqcha bo'lgan eritma",
+        "Ionlar umuman bo'lmagan eritma"
+      ],
+      "t": 0,
+      "izoh": "Teng miqdorda H+ va OH- ionlari bo'lgan eritma neytral muhitli bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#c7d807c8"
+    },
+    {
+      "q": "Kislotali muhit qanday hosil bo'ladi?",
+      "v": [
+        "H+ ionlari ortiqcha bo'lgan eritmada",
+        "OH- ionlari ortiqcha bo'lgan eritmada",
+        "Ionlar teng bo'lgan eritmada",
+        "Tuz eritmasida"
+      ],
+      "t": 0,
+      "izoh": "H+ ionlari ortiqcha bo'lgan eritma kislotali muhitda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#9fe4995c"
+    },
+    {
+      "q": "8-jadvalga ko'ra, kaliy nitrat eritmasi lakmusga qanday ta'sir qiladi?",
+      "v": [
+        "Binafsha rang (rang o'zgarmaydi)",
+        "Qizaradi",
+        "Ko'karadi",
+        "Rangsiz bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Kaliy nitrat eritmasida lakmus binafsha rangda qoladi — muhit neytral.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#71ba68e6"
+    },
+    {
+      "q": "8-jadvalga ko'ra, aluminiy nitrat eritmasida lakmus va metil zarg'aldog'i qanday bo'ladi?",
+      "v": [
+        "Lakmus qizaradi, metil zarg'aldog'i pushti",
+        "Lakmus ko'karadi, metil zarg'aldog'i sariq",
+        "Lakmus binafsha, metil zarg'aldog'i to'q sariq",
+        "Ikkalasi ham rangsiz"
+      ],
+      "t": 0,
+      "izoh": "Aluminiy nitrat eritmasida lakmus qizaradi, fenolftalein rangsiz, metil zarg'aldog'i pushti — muhit kislotali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#6409719a"
+    },
+    {
+      "q": "8-jadvalga ko'ra, natriy karbonat eritmasi indikatorlarga qanday ta'sir qiladi?",
+      "v": [
+        "Lakmus ko'karadi, fenolftalein to'q qizil, metil zarg'aldog'i sariq",
+        "Lakmus qizaradi, fenolftalein rangsiz",
+        "Lakmus binafsha, fenolftalein rangsiz",
+        "Barcha indikatorlar rangsiz"
+      ],
+      "t": 0,
+      "izoh": "Natriy karbonat eritmasida lakmus ko'karadi, fenolftalein to'q qizil, metil zarg'aldog'i sariq — muhit ishqoriy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#5312463a"
+    },
+    {
+      "q": "Kuchli asos va kuchli kislotalardan hosil bo'lgan tuzlarning eritmalari muhiti qanday bo'ladi?",
+      "v": [
+        "Neytral — bunday tuzlar gidrolizlanmaydi",
+        "Kislotali",
+        "Ishqoriy",
+        "Kuchsiz kislotali"
+      ],
+      "t": 0,
+      "izoh": "Kuchli asos va kuchli kislotalardan hosil bo'lgan tuzlarning eritmalari muhiti neytral bo'ladi, bunday tuzlar gidrolizlanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#3efaa123"
+    },
+    {
+      "q": "\"Gidroliz\" so'zi yunoncha qanday ma'noni anglatadi?",
+      "v": [
+        "\"gidro\" — suv, \"lizis\" — parchalayman",
+        "\"gidro\" — vodorod, \"lizis\" — ajralman",
+        "\"gidro\" — suv, \"lizis\" — birikaman",
+        "\"gidro\" — kislota, \"lizis\" — eriydi"
+      ],
+      "t": 0,
+      "izoh": "\"Gidroliz\" so'zi yunoncha \"gidro\" — suv, \"lizis\" — parchalayman degan ma'noni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#c1c9bcc7"
+    },
+    {
+      "q": "Aluminiy nitrat qanday tuz hisoblanadi va u gidrolizlanadimi?",
+      "v": [
+        "Kuchsiz asos va kuchli kislotadan hosil bo'lgan tuz, gidrolizlanadi",
+        "Kuchli asos va kuchli kislotadan hosil bo'lgan tuz, gidrolizlanmaydi",
+        "Kuchli asos va kuchsiz kislotadan hosil bo'lgan tuz",
+        "Gidrolizlanmaydigan tuz"
+      ],
+      "t": 0,
+      "izoh": "Aluminiy nitrat kuchsiz asos va kuchli kislotadan hosil bo'lgan tuz, bunday tuzlar gidrolizlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#63b87f8e"
+    },
+    {
+      "q": "Aluminiy nitrat gidrolizlanganda eritma muhiti qanday bo'ladi?",
+      "v": [
+        "Kislotali — H+ ionlari ortiqcha bo'lib qoladi",
+        "Ishqoriy — OH- ionlari ortiqcha bo'ladi",
+        "Neytral",
+        "Avval ishqoriy, keyin neytral"
+      ],
+      "t": 0,
+      "izoh": "OH- ionlari Al3+ ga birikib AlOH2+ ni hosil qiladi, eritmada H+ ionlari ortiqcha bo'lib qoladi — muhit kislotali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#29420ac8"
+    },
+    {
+      "q": "Al3+ ionining gidrolizlanish bosqichlari qanday ketma-ketlikda boradi?",
+      "v": [
+        "Al3+ → AlOH2+ → Al(OH)2+ → Al(OH)3",
+        "Al3+ → Al(OH)3 → AlOH2+",
+        "Al(OH)3 → Al3+",
+        "Al3+ → Al2O3"
+      ],
+      "t": 0,
+      "izoh": "Jarayon bosqichma-bosqich boradi: Al3+ → AlOH2+ → Al(OH)2+ → Al(OH)3. Avval Al3+ ioni AlOH2+ ioniga, so'ng AlOH2+ yana bir OH- biriktirib Al(OH)2+ ioniga aylanadi; jarayon Al(OH)3 gacha davom etishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#59bf0a4d"
+    },
+    {
+      "q": "Aluminiy nitrat gidrolizida Al(OH)3 hosil bo'lmasligining sababi nima?",
+      "v": [
+        "Eritmada yig'ilib borayotgan H+ ionlari suvning dissotsiatsiyalanishini to'xtatib qo'yadi",
+        "Al(OH)3 suvda yaxshi eriydi",
+        "OH- ionlari yetarli emas",
+        "Harorat past"
+      ],
+      "t": 0,
+      "izoh": "Jarayon davom etib Al(OH)3 ni hosil qilmasligiga sabab — eritmada yig'ilib borayotgan H+ ionlari suvni dissotsiatsiyalanishini to'xtatib qo'yadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#08e5ee93"
+    },
+    {
+      "q": "Kuchsiz asos va kuchli kislotadan hosil bo'lgan tuzlarning suvdagi eritmasining muhiti qanday?",
+      "v": [
+        "Kislotali",
+        "Ishqoriy",
+        "Neytral",
+        "Kuchsiz ishqoriy"
+      ],
+      "t": 0,
+      "izoh": "Kuchsiz asos va kuchli kislotadan hosil bo'lgan tuzlarning suvdagi eritmasining muhiti kislotali bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#5642fc7a"
+    },
+    {
+      "q": "Natriy karbonat qanday tuz va uning eritmasi muhiti qanday?",
+      "v": [
+        "Kuchli asos va kuchsiz kislotadan hosil bo'lgan tuz, muhit ishqoriy",
+        "Kuchsiz asos va kuchli kislotadan hosil bo'lgan tuz, muhit kislotali",
+        "Kuchli asos va kuchli kislotadan hosil bo'lgan tuz, muhit neytral",
+        "Gidrolizlanmaydigan tuz"
+      ],
+      "t": 0,
+      "izoh": "Natriy karbonat kuchli asos va kuchsiz kislotadan hosil bo'lgan tuz; eritma muhiti ishqoriy bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#1483a75e"
+    },
+    {
+      "q": "Natriy karbonat gidrolizlanganda qanday ion hosil bo'ladi?",
+      "v": [
+        "HCO3- ioni va OH- ioni",
+        "H2CO3 molekulasi va H+ ioni",
+        "CO2 gazi va H+ ioni",
+        "NaOH molekulasi"
+      ],
+      "t": 0,
+      "izoh": "Karbonat anioni suvning H+ ionini biriktirib dissotsiatsiyalanmaydigan HCO3- ionini hosil qiladi, eritmada OH- ortiqcha qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#56ab5399"
+    },
+    {
+      "q": "Natriy karbonat gidrolizida H2CO3 hosil bo'lmasligining sababi nima?",
+      "v": [
+        "Eritmadagi OH- ionlari suvning navbatdagi molekulasining dissotsiatsiyalanishiga yo'l qo'ymaydi",
+        "H2CO3 darhol CO2 ga parchalanadi",
+        "H+ ionlari yetarli emas",
+        "Na+ ionlari xalaqit beradi"
+      ],
+      "t": 0,
+      "izoh": "Eritmadagi OH- ionlari suvning navbatdagi molekulasining dissotsiatsiyalanishiga yo'l qo'ymaydi (H2CO3 → H2O + CO2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#da6193be"
+    },
+    {
+      "q": "Kuchli asos va kuchsiz kislotadan hosil bo'lgan tuzlar suvda eritilganda eritma muhiti qanday bo'ladi?",
+      "v": [
+        "Ishqoriy",
+        "Kislotali",
+        "Neytral",
+        "Amfoter"
+      ],
+      "t": 0,
+      "izoh": "Kuchli asos va kuchsiz kislotadan hosil bo'lgan tuzlar suvda eritilganda eritma muhiti ishqoriy bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#95d7816b"
+    },
+    {
+      "q": "Kuchsiz asos va kuchsiz kislotadan hosil bo'lgan tuzlar qanday gidrolizga uchraydi?",
+      "v": [
+        "To'liq gidrolizga uchab, kuchsiz asos va kuchsiz kislota hosil qiladi",
+        "Umuman gidrolizlanmaydi",
+        "Qisman gidrolizlanadi",
+        "Faqat qizdirilganda gidrolizlanadi"
+      ],
+      "t": 0,
+      "izoh": "Kuchsiz asos va kuchsiz kislotadan hosil bo'lgan tuzlar to'liq gidrolizga uchrab, kuchsiz asos va kuchsiz kislota hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#89b2687e"
+    },
+    {
+      "q": "Al2S3 ning suv bilan to'liq gidroliz tenglamasi qanday?",
+      "v": [
+        "Al2S3 + 6H2O → 2Al(OH)3↓ + 3H2S↑",
+        "Al2S3 + H2O → AlOH + H2S",
+        "Al2S3 + 2H2O → 2Al + 3H2S",
+        "Al2S3 → Al2O3 + 3S"
+      ],
+      "t": 0,
+      "izoh": "Al2S3 + 6H2O → 2Al(OH)3↓ + 3H2S↑.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#b58bdd93"
+    },
+    {
+      "q": "Kuchsiz asos va kuchsiz kislotadan hosil bo'lgan tuz gidrolizlanganda eritma muhiti nima bilan belgilanadi?",
+      "v": [
+        "Hosil bo'lgan asos bilan kislotaning nisbiy kuchi bilan",
+        "Tuzning konsentratsiyasi bilan",
+        "Harorat bilan",
+        "Suvning miqdori bilan"
+      ],
+      "t": 0,
+      "izoh": "Eritmaning muhiti hosil bo'lgan asos bilan kislotaning nisbiy kuchi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#74490b58"
+    },
+    {
+      "q": "Gidroliz deb qanday jarayonga aytiladi?",
+      "v": [
+        "Tuzning dissotsiatsiyalanishidan hosil bo'lgan ionlarni suv bilan o'zaro ta'sirlashuvidan kuchsiz elektrolitning hosil bo'lishi",
+        "Tuzlarning suvda erish jarayoni",
+        "Kislotalarning ishqorlar bilan reaksiyasi",
+        "Suvning qaynashi"
+      ],
+      "t": 0,
+      "izoh": "Tuzning dissotsiatsiyalanishidan hosil bo'lgan ionlarni suv bilan o'zaro ta'sirlashuvidan kuchsiz elektrolitning hosil bo'lishi gidroliz deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#a2719d51"
+    },
+    {
+      "q": "Tuzlar gidrolizi nimaga bog'liq?",
+      "v": [
+        "Tuzlarning tabiatiga, eritma konsentratsiyasi va haroratiga",
+        "Faqat haroratga",
+        "Faqat konsentratsiyaga",
+        "Eritmaning rangiga"
+      ],
+      "t": 0,
+      "izoh": "Tuzlar gidrolizi ularning tabiatiga, eritma konsentratsiyasi va haroratiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#5aa9e79f"
+    },
+    {
+      "q": "Harorat ko'tarilganda tuzlarning gidrolizlanishi qanday o'zgaradi va nima uchun?",
+      "v": [
+        "Ortadi, chunki harorat ortishi suvning dissotsiatsiyalanish muvozanatini o'ngga siljitadi",
+        "Kamayadi, chunki suv bug'lanadi",
+        "O'zgarmaydi",
+        "To'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "Harorat ko'tarilganda gidroliz ortadi, chunki harorat ortishi H2O → H+ + OH- muvozanatini o'ngga siljitadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#4478c0fd"
+    },
+    {
+      "q": "FeCl3 tuzining gidrolizi necha bosqichda boradi va odatdagi sharoitda qaysi bosqichi amalga oshadi?",
+      "v": [
+        "Uch bosqichda, odatda faqat I bosqich amalga oshadi",
+        "Ikki bosqichda, ikkalasi ham amalga oshadi",
+        "Bir bosqichda, to'liq gidrolizlanadi",
+        "To'rt bosqichda"
+      ],
+      "t": 0,
+      "izoh": "FeCl3 tuzi uch bosqichda gidrolizlanadi; odatdagi sharoitda faqat I bosqichi amalga oshadi: FeCl3 + HOH → HCl + Fe(OH)Cl2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#ec3c9925"
+    },
+    {
+      "q": "FeCl3 eritmasi qaynatilsa, gidrolizning qanday bosqichi sodir bo'ladi?",
+      "v": [
+        "II bosqich: Fe(OH)Cl2 + H2O → HCl + Fe(OH)2Cl",
+        "Faqat I bosqich",
+        "Darhol III bosqich",
+        "Gidroliz to'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "Eritma qaynatilsa, II bosqich ham sodir bo'ladi: Fe(OH)Cl2 + H2O → HCl + Fe(OH)2Cl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#1b2a5b1a"
+    },
+    {
+      "q": "FeCl3 gidrolizining III bosqichida qanday modda cho'kma holida hosil bo'ladi?",
+      "v": [
+        "Fe(OH)3↓",
+        "FeCl3",
+        "Fe(OH)2Cl",
+        "HCl"
+      ],
+      "t": 0,
+      "izoh": "Qizdirish davom ettirilsa, III bosqich sodir bo'ladi: Fe(OH)2Cl + H2O → HCl + Fe(OH)3↓.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#cb91cded"
+    },
+    {
+      "q": "Eritmalar suyultirilganda gidroliz darajasi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "To'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "Eritmalar suyultirilganda gidroliz darajasi ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#28616851"
+    },
+    {
+      "q": "SbCl3 eritmasiga qo'shimcha suv qo'shsak nima kuzatiladi?",
+      "v": [
+        "Muvozanat o'ngga siljiydi va Sb(OH)2Cl (yoki SbOCl) cho'kmasi hosil bo'ladi",
+        "Cho'kma eriydi",
+        "Gidroliz to'xtaydi",
+        "Eritma rangsiz bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Suv qo'shilsa muvozanat o'ngga siljiydi va cho'kma holida Sb(OH)2Cl (yoki SbOCl — antimonil xlorid) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#64c2877d"
+    },
+    {
+      "q": "Eritmalarda gidroliz jarayonini sekinlashtirish uchun ularni qanday saqlash lozim?",
+      "v": [
+        "Quyi haroratlarda va konsentrlangan holda",
+        "Yuqori haroratda va suyultirilgan holda",
+        "Qaynatilgan holda",
+        "Ochiq idishda"
+      ],
+      "t": 0,
+      "izoh": "Gidroliz jarayonini sekinlashtirish uchun eritmalarni quyi haroratlarda va konsentrlangan holda saqlash lozim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#517ac911"
+    },
+    {
+      "q": "Quyidagi tuzlardan qaysi biri gidrolizga uchraydi?",
+      "v": [
+        "CuSO4",
+        "NaCl",
+        "KNO3",
+        "BaSO4"
+      ],
+      "t": 0,
+      "izoh": "CuSO4 — kuchsiz asos (Cu(OH)2) va kuchli kislota (H2SO4) dan hosil bo'lgan tuz, gidrolizlanadi; NaCl va KNO3 esa kuchli asos va kuchli kislota tuzlari — gidrolizlanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#1d234e1b"
+    },
+    {
+      "q": "ZnCl2 eritmasining muhiti qanday bo'ladi?",
+      "v": [
+        "Kislotali — kuchsiz asos va kuchli kislota tuzi",
+        "Ishqoriy — kuchli asos va kuchsiz kislota tuzi",
+        "Neytral — kuchli asos va kuchli kislota tuzi",
+        "Gidrolizlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "ZnCl2 — kuchsiz asos (Zn(OH)2) va kuchli kislota (HCl) dan hosil bo'lgan tuz, eritma muhiti kislotali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#dd5a295c"
+    },
+    {
+      "q": "K2SO3 eritmasining muhiti qanday bo'ladi?",
+      "v": [
+        "Ishqoriy — kuchli asos va kuchsiz kislota tuzi",
+        "Kislotali",
+        "Neytral",
+        "Gidrolizlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "K2SO3 — kuchli asos (KOH) va kuchsiz kislota (H2SO3) dan hosil bo'lgan tuz, eritma muhiti ishqoriy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#9e572759"
+    },
+    {
+      "q": "Na2SO4 eritmasining muhiti qanday bo'ladi?",
+      "v": [
+        "Neytral — kuchli asos va kuchli kislota tuzi, gidrolizlanmaydi",
+        "Kislotali",
+        "Ishqoriy",
+        "Kuchsiz kislotali"
+      ],
+      "t": 0,
+      "izoh": "Na2SO4 — kuchli asos (NaOH) va kuchli kislota (H2SO4) dan hosil bo'lgan tuz, gidrolizlanmaydi, muhit neytral.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#86ad6a62"
+    },
+    {
+      "q": "Kuchli kislota va kuchsiz asosdan hosil bo'lgan tuz eritmalarida kislotali muhitni ta'minlash nima uchun muhim?",
+      "v": [
+        "Tuzlarning gidrolizlanishini oldini olish uchun",
+        "Eritmani rangsiz saqlash uchun",
+        "Cho'kma hosil qilish uchun",
+        "Eritmani qaynatish uchun"
+      ],
+      "t": 0,
+      "izoh": "Kuchli kislota va kuchsiz asosdan hosil bo'lgan tuz eritmalarida kislotali muhitni, kuchsiz kislota va kuchli asos tuzlarida ishqoriy muhitni saqlab turish gidrolizni oldini oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m07-tuzlarning-gidrolizi#21173101"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Bo'linish belgilari va qoldiqli bo'lish",
+  "bolim": "Sonlar va ular ustida amallar",
+  "blok": "arif",
+  "rasmiyBolim": 1,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Toshkent metrosi kassasida to'rt xil chipta rulonlari bor: 1356, 2470, 3985 va 5007 ta. Qaysi rulondagi chiptalar soni ham 2 ga, ham 5 ga bo'linadi?",
+      "v": [
+        "1356",
+        "2470",
+        "3985",
+        "5007"
+      ],
+      "t": 1,
+      "izoh": "Son bir vaqtda 2 ga ham, 5 ga ham bo'linishi uchun u 10 ga bo'linishi, ya'ni oxirgi raqami 0 bo'lishi kerak. 1356 juft, lekin 5 ga bo'linmaydi. 3985 esa 5 ga bo'linadi, ammo toq. 5007 na juft, na oxiri 0 yoki 5. Faqat 2470 ning oxirgi raqami 0. Javob: 2470.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-2-5-10-tanlash",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#814ce3d2"
+    },
+    {
+      "q": "Do'kondagi to'rtta qutida mos ravishda 738, 815, 924 va 1150 dona shokolad bor. Qaysi qutidagi shokoladni 10 ta bolaga qoldiqsiz teng bo'lib berish mumkin?",
+      "v": [
+        "738 dona",
+        "815 dona",
+        "924 dona",
+        "1150 dona"
+      ],
+      "t": 3,
+      "izoh": "10 ta bolaga qoldiqsiz bo'lish uchun shokolad soni 10 ga bo'linishi, demak oxirgi raqami 0 bo'lishi shart. 738 va 924 juft bo'lsa ham oxirgi raqami 0 emas, 815 esa toq. 1150 ning oxirgi raqami 0, shuning uchun har bir bolaga 115 tadan tegadi. Javob: 1150 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-2-5-10-tanlash",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#f243a723"
+    },
+    {
+      "q": "Quyidagi sonlardan qaysi biri 5 ga bo'linadi, lekin 2 ga bo'linmaydi: 2340, 4675, 5628, 7890?",
+      "v": [
+        "2340",
+        "4675",
+        "5628",
+        "7890"
+      ],
+      "t": 1,
+      "izoh": "5 ga bo'linish uchun oxirgi raqam 0 yoki 5 bo'lishi kerak, 2 ga bo'linmaslik uchun esa son toq bo'lishi kerak. 2340 va 7890 oxiri 0 bo'lgani uchun ikkala songa ham bo'linadi. 5628 ning oxirgi raqami 8, u 5 ga bo'linmaydi. 4675 ning oxiri 5, ya'ni 5 ga bo'linadi va toq. Javob: 4675.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "belgi-2-5-10-tanlash",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#c1d86056"
+    },
+    {
+      "q": "Farhod uch xonali son o'yladi: uning yuzlar raqami 6, o'nlar raqami 4. Bu son 10 ga qoldiqsiz bo'linishi uchun u qaysi songa teng bo'lishi kerak?",
+      "v": [
+        "640",
+        "645",
+        "642",
+        "644"
+      ],
+      "t": 0,
+      "izoh": "10 ga bo'linadigan sonning oxirgi raqami faqat 0 bo'ladi. Yuzlar raqami 6, o'nlar raqami 4 bo'lgani uchun son 6 va 4 dan keyin bitta birlar raqamiga ega. Birlar raqami 0 bo'lsa 640 hosil bo'ladi va 640 : 10 = 64. 645 faqat 5 ga, 642 va 644 faqat 2 ga bo'linadi. Javob: 640.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "belgi-2-5-10-tanlash",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#b5824d8d"
+    },
+    {
+      "q": "Maktab hovlisiga 5217 dona g'isht keltirildi. Bu g'ishtlarni 3 ta teng qatorga qoldiqsiz taqsimlash mumkinmi va nima uchun?",
+      "v": [
+        "Yo'q, chunki 5217 toq son",
+        "Yo'q, chunki oxirgi raqami 3 ga bo'linmaydi",
+        "Ha, chunki raqamlari yig'indisi 15 ga teng va 3 ga bo'linadi",
+        "Ha, chunki sonning birinchi raqami 5 ga teng"
+      ],
+      "t": 2,
+      "izoh": "3 ga bo'linish belgisi sonning raqamlari yig'indisiga qaraydi, sonning juft yoki toqligiga emas. 5 + 2 + 1 + 7 = 15, 15 esa 3 ga bo'linadi. Demak 5217 ham 3 ga bo'linadi va har bir qatorga 1739 tadan g'isht tushadi. Javob: ha, chunki raqamlari yig'indisi 15 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-3-raqamlar-yigindisi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#5d9da5ee"
+    },
+    {
+      "q": "2471, 3158, 4236 va 5093 sonlaridan qaysi biri 3 ga qoldiqsiz bo'linadi?",
+      "v": [
+        "2471",
+        "3158",
+        "4236",
+        "5093"
+      ],
+      "t": 2,
+      "izoh": "Har bir sonning raqamlari yig'indisini topamiz: 2 + 4 + 7 + 1 = 14, 3 + 1 + 5 + 8 = 17, 4 + 2 + 3 + 6 = 15, 5 + 0 + 9 + 3 = 17. Bu yig'indilardan faqat 15 soni 3 ga bo'linadi. Demak 3 ga bo'linadigan yagona son 4236. Javob: 4236.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-3-raqamlar-yigindisi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#0775c22d"
+    },
+    {
+      "q": "Samarqand kutubxonasiga to'rtta partiyada 1236, 2043, 3500 va 4118 ta kitob keltirildi. Nechta partiyadagi kitoblarni 3 ta filialga qoldiqsiz bo'lish mumkin?",
+      "v": [
+        "1 ta partiya",
+        "2 ta partiya",
+        "3 ta partiya",
+        "4 ta partiya"
+      ],
+      "t": 1,
+      "izoh": "Raqamlar yig'indilarini hisoblaymiz: 1 + 2 + 3 + 6 = 12, 2 + 0 + 4 + 3 = 9, 3 + 5 + 0 + 0 = 8, 4 + 1 + 1 + 8 = 14. Ulardan 12 va 9 soni 3 ga bo'linadi, 8 va 14 esa bo'linmaydi. Demak faqat birinchi va ikkinchi partiya 3 ga bo'linadi. Javob: 2 ta partiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "belgi-3-raqamlar-yigindisi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#30dd5a7f"
+    },
+    {
+      "q": "45782 sonidan eng kichik qanday natural sonni ayirsak, natija 3 ga qoldiqsiz bo'linadigan bo'ladi?",
+      "v": [
+        "2",
+        "1",
+        "3",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Avval raqamlar yig'indisini topamiz: 4 + 5 + 7 + 8 + 2 = 26. Endi 26 ni 3 ga bo'lamiz: 26 = 3 · 8 + 2, ya'ni qoldiq 2. Sonning 3 ga bo'lingandagi qoldig'i ham aynan 2 ga teng. Shu qoldiqni yo'qotish uchun 2 ni ayirish yetarli: 45782 − 2 = 45780. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "belgi-3-raqamlar-yigindisi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#9af4311a"
+    },
+    {
+      "q": "Quyidagi 4653, 5128, 6742 va 7205 sonlari ichidan 9 ga qoldiqsiz bo'linadiganini toping.",
+      "v": [
+        "5128",
+        "6742",
+        "7205",
+        "4653"
+      ],
+      "t": 3,
+      "izoh": "9 ga bo'linish belgisi bo'yicha raqamlar yig'indisi 9 ga bo'linishi kerak. Yig'indilar: 5 + 1 + 2 + 8 = 16, 6 + 7 + 4 + 2 = 19, 7 + 2 + 0 + 5 = 14, 4 + 6 + 5 + 3 = 18. Faqat 18 soni 9 ga bo'linadi. Javob: 4653.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-9-raqamlar-yigindisi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#009754cc"
+    },
+    {
+      "q": "Bekzod 8, 1, 0 va 9 raqamlarining har birini bir martadan ishlatib to'rt xonali son tuzdi. Bunday son qanday tuzilishidan qat'i nazar albatta qaysi songa bo'linadi?",
+      "v": [
+        "4 ga",
+        "9 ga",
+        "7 ga",
+        "11 ga"
+      ],
+      "t": 1,
+      "izoh": "Raqamlarni qanday tartibda joylashtirsak ham ularning yig'indisi o'zgarmaydi: 8 + 1 + 0 + 9 = 18. 18 soni 9 ga bo'linadi, demak 9 ga bo'linish belgisiga ko'ra hosil bo'lgan har qanday son 9 ga bo'linadi. 4 va 11 ga bo'linish oxirgi raqamlarga bog'liq, u esa tartib bilan o'zgaradi. Javob: 9 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "belgi-9-raqamlar-yigindisi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#abdbf6f3"
+    },
+    {
+      "q": "Fabrikada 45936 dona quti tayyorlandi. Bu sonning 9 ga bo'linishini aniqlang va bo'linish natijasini ko'rsating.",
+      "v": [
+        "Bo'linmaydi, qoldiq 3 qoladi",
+        "Bo'linadi, bo'linma 5140",
+        "Bo'linadi, bo'linma 5104",
+        "Bo'linmaydi, qoldiq 6 qoladi"
+      ],
+      "t": 2,
+      "izoh": "Raqamlar yig'indisi: 4 + 5 + 9 + 3 + 6 = 27, bu son 9 ga bo'linadi, demak 45936 ham 9 ga bo'linadi. Endi bo'linmani topamiz: 45936 : 9 = 5104, chunki 9 · 5104 = 45936. 5140 javobi bo'lishi mumkin emas, chunki 9 · 5140 = 46260. Javob: bo'linadi, bo'linma 5104.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "belgi-9-raqamlar-yigindisi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#8bf4828b"
+    },
+    {
+      "q": "Ikki xonali sonning raqamlari o'rni almashtiriladi. Dastlabki son bilan yangi son ayirmasi bunday har qanday juftlik uchun qaysi songa doim bo'linadi?",
+      "v": [
+        "2 ga",
+        "10 ga",
+        "11 ga",
+        "9 ga"
+      ],
+      "t": 3,
+      "izoh": "Ikki xonali sonni 10a + b ko'rinishida yozamiz, bu yerda a — o'nlar, b — birlar raqami. Raqamlar almashtirilgach 10b + a hosil bo'ladi. Ayirmasi: (10a + b) − (10b + a) = 9a − 9b = 9 · (a − b). Ko'paytuvchida 9 turgani uchun ayirma doim 9 ga bo'linadi. Javob: 9 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "belgi-9-raqamlar-yigindisi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#c5f7406b"
+    },
+    {
+      "q": "Sport zaliga 3516 ta gantel keltirildi. Bu sonning 4 ga bo'linishini tekshirish uchun nimaga qarash yetarli bo'ladi?",
+      "v": [
+        "Barcha raqamlar yig'indisiga",
+        "Oxirgi ikki raqamdan tuzilgan 16 soniga",
+        "Faqat oxirgi raqam 6 ga",
+        "Birinchi ikki raqamdan tuzilgan 35 soniga"
+      ],
+      "t": 1,
+      "izoh": "4 ga bo'linish belgisi: son oxirgi ikki raqamidan tuzilgan son 4 ga bo'linsagina 4 ga bo'linadi, chunki undan oldingi hamma xonalar 100 ga karrali va 100 o'zi 4 ga bo'linadi. Bu yerda oxirgi ikki raqam 16 ni beradi, 16 : 4 = 4. Demak 3516 soni 4 ga bo'linadi. Javob: oxirgi ikki raqamdan tuzilgan 16 soniga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-4-oxirgi-ikki-raqam",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#e5781674"
+    },
+    {
+      "q": "4 ga qoldiqsiz bo'linadigan sonni ko'rsating: 2314, 6350, 5728 yoki 8106?",
+      "v": [
+        "2314",
+        "6350",
+        "5728",
+        "8106"
+      ],
+      "t": 2,
+      "izoh": "Har bir sonning oxirgi ikki raqamiga qaraymiz: 14, 50, 28, 06. Endi ularni 4 ga bo'lamiz: 14 = 4 · 3 + 2, 50 = 4 · 12 + 2, 28 = 4 · 7, 6 = 4 · 1 + 2. Faqat 28 qoldiqsiz bo'linadi. Demak javob 5728 soni bo'ladi. Javob: 5728.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-4-oxirgi-ikki-raqam",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#f227f91d"
+    },
+    {
+      "q": "Ustaxonadagi birinchi qutida 1234 ta, ikkinchisida 5616 ta, uchinchisida 9048 ta mix bor. Qaysi qutidagi mixlarni 4 ta ustaga qoldiqsiz taqsimlash mumkin?",
+      "v": [
+        "Faqat ikkinchi qutidagini",
+        "Faqat uchinchi qutidagini",
+        "Uchala qutidagini ham",
+        "Ikkinchi va uchinchi qutidagilarni"
+      ],
+      "t": 3,
+      "izoh": "Oxirgi ikki raqamni tekshiramiz: 1234 uchun 34, 5616 uchun 16, 9048 uchun 48. 34 soni 4 ga bo'linmaydi, chunki 34 = 4 · 8 + 2. 16 : 4 = 4 va 48 : 4 = 12, ikkalasi ham qoldiqsiz. Demak ikkinchi va uchinchi qutidagi mixlar teng taqsimlanadi. Javob: ikkinchi va uchinchi qutidagilarni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "belgi-4-oxirgi-ikki-raqam",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#7c764af6"
+    },
+    {
+      "q": "Kabisa yil deb 4 ga qoldiqsiz bo'linadigan yil aytiladi. 1998, 2014, 2036 va 2050 yillaridan qaysi biri kabisa yil bo'ladi?",
+      "v": [
+        "1998",
+        "2014",
+        "2036",
+        "2050"
+      ],
+      "t": 2,
+      "izoh": "Yil sonining oxirgi ikki raqamiga qaraymiz: 98, 14, 36, 50. Ularni 4 ga bo'lib ko'ramiz: 98 = 4 · 24 + 2, 14 = 4 · 3 + 2, 36 = 4 · 9, 50 = 4 · 12 + 2. Faqat 36 qoldiqsiz bo'lindi. Demak kabisa yil — 2036. Javob: 2036.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "belgi-4-oxirgi-ikki-raqam",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#ade6b358"
+    },
+    {
+      "q": "Natural sonning 8 ga bo'linishini aniqlash uchun eng kami bilan uning oxirgi nechta raqamiga qarash kifoya qiladi?",
+      "v": [
+        "Oxirgi uchtasiga",
+        "Oxirgi bittasiga",
+        "Oxirgi ikkitasiga",
+        "Barcha raqamlariga"
+      ],
+      "t": 0,
+      "izoh": "Har qanday sonni mingliklar qismi va oxirgi uch raqamdan tuzilgan son yig'indisi shaklida yozish mumkin. Mingliklar qismi 1000 ga karrali, 1000 esa 8 ga bo'linadi, chunki 1000 = 8 · 125. Shuning uchun butun sonning 8 ga bo'linishi faqat oxirgi uch raqamga bog'liq. Ikki raqam yetmaydi: 100 soni 8 ga bo'linmaydi, 200 esa bo'linadi, oxirgi ikki raqam esa ikkalasida ham 00. Javob: oxirgi uchtasiga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-8-oxirgi-uch-raqam",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#fdd876bd"
+    },
+    {
+      "q": "25166, 12344, 31420, 47006 sonlarining qaysi biri 8 ga bo'linishini aniqlang.",
+      "v": [
+        "25166",
+        "12344",
+        "31420",
+        "47006"
+      ],
+      "t": 1,
+      "izoh": "Oxirgi uch raqamdan tuzilgan sonlarni olamiz: 166, 344, 420, 6. Ularni 8 ga bo'lamiz: 166 = 8 · 20 + 6, 344 = 8 · 43, 420 = 8 · 52 + 4, 6 esa 8 dan kichik. Faqat 344 qoldiqsiz bo'lindi. Javob: 12344.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-8-oxirgi-uch-raqam",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#4353546f"
+    },
+    {
+      "q": "Yuk mashinasi bir reysda 8 tonna g'alla tashiydi. Omborda 5736 tonna g'alla bor bo'lsa, hammasini tashish uchun nechta reys kerak va oxirgi reys to'la bo'ladimi?",
+      "v": [
+        "716 reys, oxirgi reysda 8 tonna",
+        "718 reys, oxirgi reysda 2 tonna",
+        "717 reys, oxirgi reysda 4 tonna",
+        "717 reys, oxirgi reys to'la"
+      ],
+      "t": 3,
+      "izoh": "Avval 5736 ning 8 ga bo'linishini tekshiramiz: oxirgi uch raqam 736, 736 = 8 · 92, demak bo'linadi. Endi bo'linmani topamiz: 5736 : 8 = 717, chunki 8 · 717 = 5736. Qoldiq nolga teng bo'lgani uchun oxirgi reys ham to'liq yuk bilan ketadi. Javob: 717 reys, oxirgi reys to'la.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "belgi-8-oxirgi-uch-raqam",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#b99c8319"
+    },
+    {
+      "q": "n natural soni 8 ga qoldiqsiz bo'linadi. Quyidagi tasdiqlardan qaysi biri bunday har qanday n uchun doim to'g'ri bo'ladi?",
+      "v": [
+        "n soni 16 ga ham bo'linadi",
+        "n soni 6 ga ham bo'linadi",
+        "n soni 4 ga ham bo'linadi",
+        "n soni 24 ga ham bo'linadi"
+      ],
+      "t": 2,
+      "izoh": "n soni 8 ga bo'linsa, uni n = 8k ko'rinishida yozish mumkin. 8 = 4 · 2 bo'lgani uchun n = 4 · (2k), ya'ni n albatta 4 ga ham bo'linadi. Qolgan tasdiqlar noto'g'ri: n = 8 uchun u 16 ga ham, 6 ga ham, 24 ga ham bo'linmaydi. Javob: n soni 4 ga ham bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "belgi-8-oxirgi-uch-raqam",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#29d38dab"
+    },
+    {
+      "q": "Sonning 11 ga bo'linishini tekshirishda toq va juft o'rinlarda turgan raqamlar yig'indilari bilan nima qilinadi?",
+      "v": [
+        "Ularning ayirmasi olinadi va u 11 ga bo'linishi tekshiriladi",
+        "Ularning yig'indisi olinadi va u 11 ga bo'linishi tekshiriladi",
+        "Ularning ko'paytmasi olinadi va u 11 ga bo'linishi tekshiriladi",
+        "Faqat oxirgi raqam 11 ga bo'linishi tekshiriladi"
+      ],
+      "t": 0,
+      "izoh": "11 ga bo'linish belgisi sonning o'rinlarini o'ngdan chapga toq va juft deb ajratadi. Toq o'rinlardagi raqamlar yig'indisidan juft o'rinlardagilar yig'indisi ayiriladi. Hosil bo'lgan ayirma 11 ga bo'linsa yoki nolga teng bo'lsa, sonning o'zi ham 11 ga bo'linadi. Javob: ularning ayirmasi olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-11-almashinuvchi-yigindi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#1946b093"
+    },
+    {
+      "q": "Berilgan 3861, 4753, 5091 va 6238 sonlaridan 11 ga bo'linadigani qaysi?",
+      "v": [
+        "3861",
+        "4753",
+        "5091",
+        "6238"
+      ],
+      "t": 0,
+      "izoh": "Har bir son uchun o'ngdan boshlab toq va juft o'rin raqamlarining ayirmasini topamiz. 3861 uchun (1 + 8) − (6 + 3) = 0, nol esa 11 ga bo'linadi. 4753 uchun (3 + 7) − (5 + 4) = 1, 5091 uchun (1 + 0) − (9 + 5) = −13, 6238 uchun (8 + 2) − (3 + 6) = 1. Javob: 3861.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-11-almashinuvchi-yigindi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#222c0122"
+    },
+    {
+      "q": "Omborga kelgan yukning hujjat raqami 90728 ekanligi ma'lum. Bu raqam 11 ga bo'linadimi va nima uchun?",
+      "v": [
+        "Yo'q, chunki raqamlar yig'indisi 26 va u 11 ga bo'linmaydi",
+        "Yo'q, chunki oxirgi ikki raqamdan tuzilgan 28 soni 11 ga bo'linmaydi",
+        "Ha, chunki 24 − 2 = 22 va 22 soni 11 ga bo'linadi",
+        "Ha, chunki son juft, demak u 11 ga ham bo'linadi"
+      ],
+      "t": 2,
+      "izoh": "O'ngdan sanaganda toq o'rinlarda 8, 7 va 9 turadi, ularning yig'indisi 24. Juft o'rinlarda 2 va 0 turadi, yig'indisi 2. Ayirma 24 − 2 = 22, bu son 11 ga bo'linadi. Demak 90728 ham 11 ga bo'linadi va 90728 : 11 = 8248. Javob: ha, chunki 24 − 2 = 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "belgi-11-almashinuvchi-yigindi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#f83b743f"
+    },
+    {
+      "q": "Uch xonali sonni ketma-ket ikki marta yozib olti xonali son hosil qilindi, masalan 372 dan 372372 olindi. Bunday son doim qaysi sonlarga bo'linadi?",
+      "v": [
+        "2, 5 va 11 ga",
+        "3, 9 va 11 ga",
+        "Faqat 11 ga",
+        "7, 11 va 13 ga"
+      ],
+      "t": 3,
+      "izoh": "Uch xonali sonni n bilan belgilaymiz. Uni ikki marta yozish n ni 1000 ga ko'paytirib ustiga yana n qo'shish demakdir: 1000n + n = 1001n. Endi 1001 ni ko'paytuvchilarga ajratamiz: 1001 = 7 · 11 · 13. Demak hosil bo'lgan son n ning qiymatidan qat'i nazar 7, 11 va 13 ga bo'linadi. Javob: 7, 11 va 13 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "belgi-11-almashinuvchi-yigindi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#45400c5a"
+    },
+    {
+      "q": "To'rt xonali 47a2 sonining o'nlar raqami a o'chib ketgan. Bu son 3 ga bo'linishi uchun a ning eng kichik qiymati nechaga teng bo'ladi?",
+      "v": [
+        "2",
+        "0",
+        "3",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Raqamlar yig'indisini yozamiz: 4 + 7 + a + 2 = 13 + a. Bu yig'indi 3 ga bo'linishi kerak. a = 0 da 13, a = 1 da 14, a = 2 da 15 hosil bo'ladi va 15 birinchi marta 3 ga bo'linadi. Demak eng kichik qiymat 2 ga teng va son 4722 bo'ladi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-raqam-topish",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#49341c5a"
+    },
+    {
+      "q": "Besh xonali 2b418 soni 9 ga qoldiqsiz bo'linadi. Bu holda noma'lum b raqami nechaga teng bo'lishi kerak?",
+      "v": [
+        "0",
+        "3",
+        "6",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Raqamlar yig'indisi 2 + b + 4 + 1 + 8 = 15 + b ko'rinishida bo'ladi. U 9 ga bo'linishi uchun 15 + b soni 18 ga teng bo'lishi kerak, chunki b bir xonali raqam va 27 ga yetish uchun b = 12 kerak bo'lardi. 15 + b = 18 dan b = 3 kelib chiqadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-raqam-topish",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#e8c7c6a1"
+    },
+    {
+      "q": "Chipta raqami 51c ko'rinishida bo'lib, uning oxirgi raqami o'chib ketgan. Bu uch xonali son ham 2 ga, ham 3 ga bo'linishi uchun c qanday qiymatlarni qabul qilishi mumkin?",
+      "v": [
+        "0 yoki 3",
+        "3 yoki 9",
+        "0 yoki 6",
+        "Faqat 6"
+      ],
+      "t": 2,
+      "izoh": "3 ga bo'linish uchun 5 + 1 + c = 6 + c yig'indi 3 ga bo'linishi kerak, bundan c ning qiymatlari 0, 3, 6, 9 bo'ladi. 2 ga bo'linish uchun esa c juft bo'lishi shart, ya'ni 0, 2, 4, 6, 8 dan biri. Ikkala shartga birdan mos keladigan qiymatlar 0 va 6. Javob: 0 yoki 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-raqam-topish",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#777228a2"
+    },
+    {
+      "q": "To'rt xonali 3m5n soni 10 ga qoldiqsiz bo'linadi va uning raqamlari yig'indisi 15 ga teng. m raqami nechaga teng?",
+      "v": [
+        "2",
+        "5",
+        "8",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Son 10 ga bo'lingani uchun oxirgi raqami nolga teng, ya'ni n = 0. Endi raqamlar yig'indisi shartini yozamiz: 3 + m + 5 + 0 = 15. Bundan m + 8 = 15, ya'ni m = 7 kelib chiqadi. Izlangan son 3750 bo'ladi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nomalum-raqam-topish",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#391f98ee"
+    },
+    {
+      "q": "To'rt xonali 8k4k soni 4 ga qoldiqsiz bo'linadi. Bunday k raqamining eng katta qiymati nechaga teng bo'ladi?",
+      "v": [
+        "9",
+        "8",
+        "4",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "4 ga bo'linish faqat oxirgi ikki raqamga bog'liq, bu yerda ular 4 va k, ya'ni 40 + k soni. 40 soni 4 ga bo'linadi, demak k ning o'zi ham 4 ga bo'linishi kerak. Bir xonali raqamlar orasida bunday qiymatlar 0, 4 va 8. Ularning eng kattasi 8, son esa 8848 bo'ladi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nomalum-raqam-topish",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#603c3194"
+    },
+    {
+      "q": "Natural son 6 ga bo'linishi uchun u bir vaqtning o'zida qaysi ikki songa bo'linishi kerak?",
+      "v": [
+        "2 va 3 ga",
+        "3 va 9 ga",
+        "3 va 4 ga",
+        "2 va 4 ga"
+      ],
+      "t": 0,
+      "izoh": "6 sonini o'zaro tub ko'paytuvchilarga ajratamiz: 6 = 2 · 3, bu yerda 2 va 3 ning umumiy bo'luvchisi yo'q. Shuning uchun son 2 ga ham, 3 ga ham bo'linsa, u albatta 6 ga bo'linadi. 3 va 9 juftligi yaramaydi: 9 soni ikkalasiga ham bo'linadi, lekin 6 ga bo'linmaydi. 2 va 4 juftligi ham yaramaydi, chunki ular o'zaro tub emas. Javob: 2 va 3 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-vaqtda-bir-necha-belgi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#2c659efd"
+    },
+    {
+      "q": "Anor sharbati quyilgan 7452 ta shishani 6 ta yashikka teng taqsimlamoqchimiz. Bu ishni qoldiqsiz bajarish mumkinmi?",
+      "v": [
+        "Yo'q, chunki son 3 ga bo'linmaydi",
+        "Ha, har bir yashikka 1224 tadan tushadi",
+        "Ha, har bir yashikka 1242 tadan tushadi",
+        "Yo'q, chunki son toq"
+      ],
+      "t": 2,
+      "izoh": "6 ga bo'linish uchun son ham 2 ga, ham 3 ga bo'linishi kerak. 7452 juft son, demak 2 ga bo'linadi. Raqamlar yig'indisi 7 + 4 + 5 + 2 = 18, u 3 ga bo'linadi. Demak 7452 soni 6 ga bo'linadi: 7452 : 6 = 1242. Javob: ha, har bir yashikka 1242 tadan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-vaqtda-bir-necha-belgi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#7a6b3574"
+    },
+    {
+      "q": "1625, 2440, 3645 va 5410 sonlari orasidan 45 ga qoldiqsiz bo'linadiganini tanlang.",
+      "v": [
+        "1625",
+        "2440",
+        "3645",
+        "5410"
+      ],
+      "t": 2,
+      "izoh": "45 = 9 · 5 va bu ko'paytuvchilar o'zaro tub, shuning uchun son 9 ga ham, 5 ga ham bo'linishi kerak. To'rttala son ham 5 ga bo'linadi, chunki oxirgi raqami 0 yoki 5. Endi raqamlar yig'indilariga qaraymiz: 14, 10, 18, 10. Ulardan faqat 18 soni 9 ga bo'linadi. Javob: 3645.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-vaqtda-bir-necha-belgi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#5f452070"
+    },
+    {
+      "q": "O'quvchi sonning 12 ga bo'linishini tekshirish uchun uni 2 ga va 6 ga bo'linishini tekshirdi va son 12 ga bo'linadi degan xulosaga keldi. Uning mulohazasidagi xato nimada?",
+      "v": [
+        "Xato yo'q, bunday tekshirish har doim to'g'ri natija beradi",
+        "2 va 6 o'zaro tub emas, 4 va 3 ga bo'linishni tekshirish kerak edi",
+        "12 ga bo'linishni aniqlash uchun faqat oxirgi ikki raqamga qarash yetarli",
+        "2 o'rniga 10 ga bo'linishni tekshirish kerak edi"
+      ],
+      "t": 1,
+      "izoh": "Ikki songa bo'linishdan ularning ko'paytmasiga bo'linish faqat bo'luvchilar o'zaro tub bo'lgandagina kelib chiqadi. 2 va 6 ning umumiy bo'luvchisi 2 ga teng, ya'ni ular o'zaro tub emas. Masalan 18 soni 2 ga ham, 6 ga ham bo'linadi, lekin 12 ga bo'linmaydi. To'g'ri usul 12 = 4 · 3 ajratmasidan foydalanish. Javob: 2 va 6 o'zaro tub emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-vaqtda-bir-necha-belgi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#3f754ec1"
+    },
+    {
+      "q": "Do'konga 437 ta daftar keltirildi va ular 12 tadan qilib to'plamlarga joylandi. Nechta to'liq to'plam hosil bo'ladi va nechta daftar ortib qoladi?",
+      "v": [
+        "36 ta to'plam, 5 ta daftar ortadi",
+        "36 ta to'plam, 7 ta daftar ortadi",
+        "37 ta to'plam, 5 ta daftar ortadi",
+        "35 ta to'plam, 17 ta daftar ortadi"
+      ],
+      "t": 0,
+      "izoh": "Qoldiqli bo'lish yozuvi a = b · q + r ko'rinishida bo'ladi. Bu yerda a = 437, b = 12. 12 · 36 = 432 bo'lgani uchun bo'linma 36 ga teng. Qoldiq esa 437 − 432 = 5. Qoldiq bo'luvchidan kichik bo'lishi shart, 17 javobi shu sababdan yaroqsiz. Javob: 36 ta to'plam, 5 ta daftar ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoldiq-hisoblash",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#242f9001"
+    },
+    {
+      "q": "a = b · q + r yozuvidan foydalanib 253 sonini 7 ga bo'lgandagi r qoldiqni toping.",
+      "v": [
+        "6",
+        "3",
+        "2",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "7 ning 253 dan oshmaydigan eng katta karralisini qidiramiz: 7 · 36 = 252, 7 · 37 = 259 esa katta. Demak bo'linma q = 36 bo'ladi. Qoldiq r = 253 − 252 = 1. Tekshiramiz: 253 = 7 · 36 + 1 va qoldiq 7 dan kichik. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoldiq-hisoblash",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#3344444d"
+    },
+    {
+      "q": "Sardor 1000 betlik kitobni har kuni 23 betdan o'qiydi. Oxirgi, to'liq bo'lmagan kunida u necha bet o'qishiga to'g'ri keladi?",
+      "v": [
+        "13 bet",
+        "12 bet",
+        "11 bet",
+        "23 bet"
+      ],
+      "t": 2,
+      "izoh": "Kitobni to'liq kunlarga bo'lamiz: 23 · 43 = 989, keyingi karrali 23 · 44 = 1012 esa 1000 dan katta. Demak 43 kun davomida u 989 bet o'qiydi. Qolgan betlar soni 1000 − 989 = 11. Aynan shu 11 bet oxirgi kunga to'g'ri keladi. Javob: 11 bet.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-hisoblash",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#9464a490"
+    },
+    {
+      "q": "Natural son 15 ga bo'lganda 8 qoldiq qoladi. Shu sonni 5 ga bo'lganda qanday qoldiq hosil bo'ladi?",
+      "v": [
+        "8",
+        "3",
+        "0",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Shartni yozamiz: n = 15k + 8, bu yerda k butun son. 15k qismi 5 ga qoldiqsiz bo'linadi, chunki 15 = 5 · 3. Demak qoldiq faqat 8 dan kelib chiqadi: 8 = 5 · 1 + 3. Qoldiq 3 ga teng, chunki qoldiq bo'luvchi 5 dan kichik bo'lishi kerak. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-hisoblash",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#44be9ee6"
+    },
+    {
+      "q": "Natural son 7 ga bo'lganda 4 qoldiq qoldiradi. Shu sondan 100 ni ayirgandan keyin hosil bo'lgan son 7 ga bo'lganda qanday qoldiq qoladi?",
+      "v": [
+        "Qoldiq 2 ga teng bo'ladi",
+        "Qoldiq 4 ga teng bo'ladi",
+        "Qoldiq 3 ga teng bo'ladi",
+        "Qoldiq 6 ga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Sonni n = 7k + 4 ko'rinishida yozamiz. Endi 100 ni ham qoldiqli bo'lamiz: 100 = 7 · 14 + 2. Ayirmani hisoblaymiz: n − 100 = 7k + 4 − 7 · 14 − 2 = 7 · (k − 14) + 2. Qavs oldidagi qism 7 ga bo'linadi, qoldiq esa 2 bo'lib qoladi. Masalan n = 704 da 704 − 100 = 604 = 7 · 86 + 2. Javob: qoldiq 2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoldiq-hisoblash",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#92f85f61"
+    },
+    {
+      "q": "Bir sonni 14 ga bo'lganda bo'linma 23, qoldiq esa 9 chiqdi. Bo'linuvchi qaysi songa teng bo'ladi?",
+      "v": [
+        "331",
+        "322",
+        "313",
+        "448"
+      ],
+      "t": 0,
+      "izoh": "Qoldiqli bo'lish formulasi a = b · q + r dan foydalanamiz. Bu yerda b = 14, q = 23, r = 9. Avval ko'paytmani topamiz: 14 · 23 = 322. Endi qoldiqni qo'shamiz: 322 + 9 = 331. 322 javobi qoldiqni tashlab ketish, 448 esa bo'linmaga qoldiqni qo'shib yuborish xatosidir. Javob: 331.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoldiqli-bolish-teskari",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#83c63fa4"
+    },
+    {
+      "q": "Nodira 528 ta konfetni bolalarga 7 tadan tarqatdi va oxirida 3 ta konfet ortib qoldi deb aytdi. Uning hisobida xatolik bormi?",
+      "v": [
+        "Xato bor, qoldiq 4 ga teng bo'lishi kerak",
+        "Xato bor, qoldiq 2 ga teng bo'lishi kerak",
+        "Xato yo'q, chunki 528 = 7 · 75 + 3",
+        "Xato bor, chunki qoldiq bo'luvchidan katta chiqadi"
+      ],
+      "t": 2,
+      "izoh": "Konfetlar sonini 7 ga qoldiqli bo'lamiz. 7 · 75 = 525, keyingi karrali 7 · 76 = 532 esa 528 dan katta. Demak bo'linma 75, qoldiq esa 528 − 525 = 3. Bu Nodira aytgan qiymat bilan mos tushadi va qoldiq 3 soni bo'luvchi 7 dan kichik. Javob: xato yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiqli-bolish-teskari",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#1bc4822d"
+    },
+    {
+      "q": "Bir nechta qutiga 250 ta olma joylandi: har bir qutiga teng miqdorda tushdi va 3 ta olma ortib qoldi. Qutilar soni 19 ta bo'lsa, har bir qutida nechta olma bor?",
+      "v": [
+        "13 ta",
+        "12 ta",
+        "14 ta",
+        "19 ta"
+      ],
+      "t": 0,
+      "izoh": "Qoldiqli bo'lish yozuvidan foydalanamiz: 250 = 19 · q + 3. Avval qoldiqni ayiramiz: 250 − 3 = 247. Endi 247 ni quti soniga bo'lamiz: 247 : 19 = 13, chunki 19 · 13 = 247. Demak har bir qutida 13 tadan olma bor. Javob: 13 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiqli-bolish-teskari",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#efe3c48f"
+    },
+    {
+      "q": "Toshkentdan Buxoroga boradigan yo'l 617 km. Avtobus har 45 km da bekat qiladi, birinchi bekat yo'lning 45-kilometrida. Oxirgi bekatdan Buxorogacha necha kilometr qoladi?",
+      "v": [
+        "45 km",
+        "13 km",
+        "12 km",
+        "32 km"
+      ],
+      "t": 3,
+      "izoh": "Bekatlar soni 617 ning ichiga 45 necha marta to'liq kirishi bilan aniqlanadi: 45 · 13 = 585, keyingi karrali 45 · 14 = 630 esa yo'ldan uzun. Demak 13 ta bekat bo'ladi va ular 585 km ni qoplaydi. Qolgan masofa 617 − 585 = 32 km. Javob: 32 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiqli-bolish-teskari",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#07d065bc"
+    },
+    {
+      "q": "Ikki natural sonning 9 ga bo'lgandagi qoldiqlari 4 va 7 ga teng. Ularning yig'indisini 9 ga bo'lganda qanday qoldiq hosil bo'ladi?",
+      "v": [
+        "11",
+        "2",
+        "3",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "Sonlarni 9a + 4 va 9b + 7 ko'rinishida yozamiz. Yig'indisi 9a + 9b + 11 = 9 · (a + b) + 11 bo'ladi. Birinchi qism 9 ga bo'linadi, 11 esa hali bo'luvchidan katta: 11 = 9 + 2. Demak haqiqiy qoldiq 2 ga teng, chunki qoldiq 9 dan kichik bo'lishi shart. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoldiq-kopaytma-yigindi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#c8715e64"
+    },
+    {
+      "q": "Ikki natural sonning 7 ga bo'lgandagi qoldiqlari 3 va 4 ga teng. Ularning ko'paytmasini 7 ga bo'lganda qanday qoldiq qoladi?",
+      "v": [
+        "12",
+        "0",
+        "5",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "Sonlarni 7a + 3 va 7b + 4 deb olamiz. Ko'paytirsak 49ab + 28a + 21b + 12 hosil bo'ladi, dastlabki uch qo'shiluvchi 7 ga bo'linadi. Qolgan 12 ni 7 ga bo'lamiz: 12 = 7 + 5, ya'ni qoldiq 5. Yig'indi bilan chalkashtirmaslik kerak: 3 + 4 = 7 bo'lgani uchun yig'indining qoldig'i nolga teng bo'lardi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-kopaytma-yigindi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#1ec2ae8f"
+    },
+    {
+      "q": "Aziz 4 ga bo'lganda 1 qoldiq beradigan natural sonni o'yladi. Shu sonning kvadratini 4 ga bo'lganda qanday qoldiq hosil bo'ladi?",
+      "v": [
+        "Qoldiq 1 ga teng",
+        "Qoldiq 2 ga teng",
+        "Qoldiq 0 ga teng",
+        "Qoldiq 3 ga teng"
+      ],
+      "t": 0,
+      "izoh": "Sonni n = 4k + 1 ko'rinishida yozamiz. Kvadratga ko'taramiz: (4k + 1)² = 16k² + 8k + 1. Birinchi ikki qo'shiluvchi 4 ga bo'linadi, chunki 16 va 8 ning ikkalasi ham 4 ga karrali. Demak qoldiq faqat 1 dan iborat bo'ladi. Tekshirish: 9 : 4 da qoldiq 1, 25 : 4 da ham qoldiq 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoldiq-kopaytma-yigindi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#4b188deb"
+    },
+    {
+      "q": "n soni 6 ga bo'lganda 5 qoldiq beradi. 4n + 1 ifodasini 6 ga bo'lganda qanday qoldiq hosil bo'ladi?",
+      "v": [
+        "5",
+        "21",
+        "2",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Shartdan n = 6k + 5 kelib chiqadi. Ifodaga qo'yamiz: 4n + 1 = 4 · (6k + 5) + 1 = 24k + 21. 24k qismi 6 ga bo'linadi, 21 ni esa qoldiqli bo'lamiz: 21 = 6 · 3 + 3. Demak qoldiq 3 ga teng. Tekshirish uchun n = 11 olamiz: 4 · 11 + 1 = 45 va 45 = 6 · 7 + 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoldiq-kopaytma-yigindi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#01103a99"
+    },
+    {
+      "q": "Hisob-kitobsiz aniqlang: 2⁵⁰ sonining oxirgi raqami nechaga teng bo'ladi?",
+      "v": [
+        "2",
+        "6",
+        "4",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "2 ning darajalari oxirgi raqami 2, 4, 8, 6 tartibida takrorlanadi, ya'ni davr uzunligi 4 ga teng. Ko'rsatkichni davrga bo'lamiz: 50 = 4 · 12 + 2, qoldiq 2. Qoldiq 2 bo'lgani uchun davrning ikkinchi raqami olinadi. Bu raqam 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoldiq-daraja-oxirgi-raqam",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#6fc7d866"
+    },
+    {
+      "q": "Katta darajani to'liq hisoblamasdan aniqlang: 3¹⁰⁰ sonini 10 ga bo'lganda qanday qoldiq qoladi?",
+      "v": [
+        "3",
+        "1",
+        "9",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "Songa 10 ga bo'lgandagi qoldiq uning oxirgi raqamiga teng. 3 ning darajalari oxirgi raqami 3, 9, 7, 1 bo'lib takrorlanadi, davr 4 ga teng. 100 soni 4 ga qoldiqsiz bo'linadi, demak davrning oxirgi, to'rtinchi raqami olinadi. Bu raqam 1 ga teng. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-daraja-oxirgi-raqam",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#49127fe1"
+    },
+    {
+      "q": "Dastur har qadamda natijani 7 ga ko'paytiradi, boshlang'ich qiymat esa 1 ga teng. 2026-qadamdan keyingi natijaning oxirgi raqami nechaga teng bo'ladi?",
+      "v": [
+        "9",
+        "7",
+        "3",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich qiymat 1 bo'lgani uchun har bir qadam ko'rsatkichni bittaga oshiradi: 2026-qadamdan keyin natija 7 ning 2026-darajasiga teng bo'ladi. 7 ning darajalari oxirgi raqami 7, 9, 3, 1 ketma-ketligida takrorlanadi, davr uzunligi 4. Ko'rsatkichni bo'lamiz: 2026 = 4 · 506 + 2, qoldiq 2. Demak davrning ikkinchi raqami, ya'ni 9 olinadi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoldiq-daraja-oxirgi-raqam",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#eb41d65c"
+    },
+    {
+      "q": "4ⁿ ko'rinishidagi sonlarning oxirgi raqami faqat ikkita qiymat oladi. n = 2027 bo'lganda bu raqam qanday bo'ladi?",
+      "v": [
+        "Oxirgi raqam 4 bo'ladi",
+        "Oxirgi raqam 6 bo'ladi",
+        "Oxirgi raqam 2 bo'ladi",
+        "Oxirgi raqam 8 bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "4 ning darajalarini yozib chiqamiz: 4, 16, 64, 256, ya'ni oxirgi raqamlar 4 va 6 bo'lib almashinadi. Ko'rsatkich toq bo'lsa oxirgi raqam 4, juft bo'lsa 6 bo'ladi. 2027 soni toq, chunki oxirgi raqami 7. Demak izlangan raqam 4 ga teng. Javob: oxirgi raqam 4 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoldiq-daraja-oxirgi-raqam",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#7e0d2b90"
+    },
+    {
+      "q": "Birdan 15 gacha bo'lgan barcha natural sonlar ko'paytmasining oxirgi raqami nechaga teng bo'ladi?",
+      "v": [
+        "5 raqami",
+        "0 raqami",
+        "2 raqami",
+        "6 raqami"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma ichida 2 va 5 sonlari bor, ularning ko'paytmasi 10 ga teng. Undan tashqari 10 sonining o'zi ham ko'paytuvchilar orasida turibdi. Demak butun ko'paytma 100 ga bo'linadi va oxirida kamida ikkita nol bo'ladi. Shuning uchun oxirgi raqam 0 ga teng. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxirgi-raqam-ifoda",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#27c1b70b"
+    },
+    {
+      "q": "7¹⁵ + 3¹⁵ yig'indisining oxirgi raqami qanday bo'lishini aniqlang.",
+      "v": [
+        "6",
+        "4",
+        "0",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "7 ning darajalari oxirgi raqami 7, 9, 3, 1 davr bilan takrorlanadi; 15 = 4 · 3 + 3, demak uchinchi raqam, ya'ni 3 olinadi. 3 ning darajalari uchun davr 3, 9, 7, 1 va o'sha qoldiq 3 uchinchi raqam 7 ni beradi. Yig'indining oxirgi raqami 3 + 7 = 10 dan olinadi, ya'ni 0. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxirgi-raqam-ifoda",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#eb35c8d6"
+    },
+    {
+      "q": "9¹⁰⁰ − 1 ifodaning oxirgi raqami nechaga teng bo'lishini toping.",
+      "v": [
+        "8",
+        "9",
+        "1",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "9 ning darajalari oxirgi raqami 9 va 1 bo'lib almashinadi: toq ko'rsatkichda 9, juft ko'rsatkichda 1. 100 soni juft, demak 9¹⁰⁰ oxirgi raqami 1 ga teng. Endi 1 dan 1 ni ayiramiz va oxirgi raqam 0 chiqadi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxirgi-raqam-ifoda",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#706d6a63"
+    },
+    {
+      "q": "Natural sonning kvadrati hech qachon qaysi raqam bilan tugay olmaydi?",
+      "v": [
+        "6",
+        "4",
+        "7",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "Bir xonali sonlarning kvadratlarini yozamiz: 0, 1, 4, 9, 16, 25, 36, 49, 64, 81. Ularning oxirgi raqamlari faqat 0, 1, 4, 5, 6, 9 to'plamidan chiqadi. Kvadratning oxirgi raqami asosning oxirgi raqami bilan aniqlanadi, shuning uchun boshqa raqam paydo bo'lmaydi. Ro'yxatda 7 yo'q. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxirgi-raqam-ifoda",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#dc820560"
+    },
+    {
+      "q": "Ikkita ketma-ket natural sonning ko'paytmasi har qanday holatda ham qaysi songa bo'linadi?",
+      "v": [
+        "2 ga",
+        "3 ga",
+        "4 ga",
+        "5 ga"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket sonlardan biri albatta juft bo'ladi, chunki juft va toq sonlar navbatlashib keladi. Juft ko'paytuvchi bo'lgani uchun butun ko'paytma 2 ga bo'linadi. 4 ga bo'linish har doim bajarilmaydi: 2 · 3 = 6 soni 4 ga bo'linmaydi. Javob: 2 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ketma-ket-sonlar-kopaytmasi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#f95fed76"
+    },
+    {
+      "q": "Uchta ketma-ket natural sonning ko'paytmasi har doim qaysi songa qoldiqsiz bo'linadi?",
+      "v": [
+        "4 ga",
+        "6 ga",
+        "9 ga",
+        "12 ga"
+      ],
+      "t": 1,
+      "izoh": "Uchta ketma-ket son ichida albatta bitta juft son bo'ladi, demak ko'paytma 2 ga bo'linadi. Shuningdek ular orasida 3 ga karrali son ham albatta topiladi, demak ko'paytma 3 ga ham bo'linadi. 2 va 3 o'zaro tub bo'lgani uchun ko'paytma 6 ga bo'linadi. 12 ga bo'linish har doim bajarilmaydi: 1 · 2 · 3 = 6. Javob: 6 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ketma-ket-sonlar-kopaytmasi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#8c200eb1"
+    },
+    {
+      "q": "To'rtta ketma-ket natural sonning ko'paytmasi n(n + 1)(n + 2)(n + 3) doim bo'linadigan eng katta son qaysi?",
+      "v": [
+        "12 ga",
+        "8 ga",
+        "48 ga",
+        "24 ga"
+      ],
+      "t": 3,
+      "izoh": "To'rtta ketma-ket son orasida ikkita juft son bor va ulardan biri 4 ga bo'linadi, demak ko'paytma 8 ga bo'linadi. Yana ular ichida 3 ga karrali son ham albatta bor. 8 va 3 o'zaro tub, shuning uchun ko'paytma 24 ga bo'linadi. Eng kichik holat 1 · 2 · 3 · 4 = 24 bo'lgani uchun bundan katta kafolat bermaydi. Javob: 24 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ketma-ket-sonlar-kopaytmasi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#419c16cf"
+    },
+    {
+      "q": "n natural son bo'lganda n² + n ifodasining qiymati haqida qaysi tasdiq har doim to'g'ri bo'ladi?",
+      "v": [
+        "Har doim toq son",
+        "Har doim juft son",
+        "Har doim 3 ga karrali",
+        "Har doim 4 ga karrali"
+      ],
+      "t": 1,
+      "izoh": "Ifodani ko'paytuvchilarga ajratamiz: n² + n = n · (n + 1). Bu ikkita ketma-ket sonning ko'paytmasi, ulardan biri albatta juft. Demak natija har doim juft son bo'ladi. 3 ga karralilik bajarilmaydi: n = 1 da qiymat 2 ga teng. Javob: har doim juft son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-sonlar-kopaytmasi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#809a510a"
+    },
+    {
+      "q": "O'quvchi 12, 13 va 14 sonlarining ko'paytmasini hisoblamasdan uning 6 ga bo'linishini asoslamoqchi. Qaysi mulohaza to'g'ri hisoblanadi?",
+      "v": [
+        "Ko'paytmaning oxirgi raqami 4, demak u 6 ga bo'linadi",
+        "Har uchala son ham alohida-alohida 6 ga bo'linadi",
+        "Uchta ketma-ket son ichida albatta 2 ga va 3 ga bo'linadigani bor",
+        "Sonlar yig'indisi 39 ga teng, demak ko'paytma 6 ga bo'linadi"
+      ],
+      "t": 2,
+      "izoh": "12, 13 va 14 — uchta ketma-ket son. Ular ichida 12 va 14 juft, demak ko'paytma 2 ga bo'linadi. Shuningdek 12 soni 3 ga bo'linadi, demak ko'paytma 3 ga ham bo'linadi. 2 va 3 o'zaro tub bo'lgani uchun ko'paytma 6 ga bo'linadi. Oxirgi raqam yoki yig'indi bu yerda hech narsani isbotlamaydi. Javob: uchta ketma-ket son ichida albatta 2 ga va 3 ga bo'linadigani bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-sonlar-kopaytmasi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#f0a7c496"
+    },
+    {
+      "q": "n toq son bo'lsa, n² − 1 ifodasi doim bo'linadigan eng katta son qaysi bo'ladi?",
+      "v": [
+        "8 ga",
+        "6 ga",
+        "4 ga",
+        "16 ga"
+      ],
+      "t": 0,
+      "izoh": "Ifodani yoyamiz: n² − 1 = (n − 1)(n + 1). n toq bo'lgani uchun n − 1 va n + 1 ikkita ketma-ket juft son bo'ladi. Ketma-ket juft sonlardan biri albatta 4 ga bo'linadi, ikkinchisi esa 2 ga, demak ko'paytma 8 ga bo'linadi. 16 ga bo'linish kafolatlanmaydi: n = 3 da qiymat 8 ga teng. Javob: 8 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-bolinuvchanligi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#0ebaf1ad"
+    },
+    {
+      "q": "Har qanday natural n uchun n³ − n ifodasi doim bo'linadigan eng katta son nechaga teng?",
+      "v": [
+        "5 ga",
+        "6 ga",
+        "4 ga",
+        "9 ga"
+      ],
+      "t": 1,
+      "izoh": "Ifodani ko'paytuvchilarga ajratamiz: n³ − n = n · (n² − 1) = (n − 1) · n · (n + 1). Bu uchta ketma-ket sonning ko'paytmasi. Ular ichida albatta bitta juft son va bitta 3 ga karrali son bor, demak ifoda 6 ga bo'linadi. Bundan kattaroq kafolat yo'q: n = 2 da qiymat 6 ga teng. Javob: 6 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-bolinuvchanligi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#a413a728"
+    },
+    {
+      "q": "5 ga bo'linadigan ikkita sonning yig'indisi haqida qaysi tasdiq to'g'ri bo'ladi?",
+      "v": [
+        "Yig'indi ham 5 ga bo'linadi",
+        "Yig'indi 10 ga bo'linadi",
+        "Yig'indi 5 ga bo'linmasligi ham mumkin",
+        "Yig'indi doim toq son bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Sonlarni 5a va 5b ko'rinishida yozamiz. Yig'indisi 5a + 5b = 5 · (a + b) bo'ladi va ko'paytuvchida 5 turibdi. Demak yig'indi ham 5 ga bo'linadi. 10 ga bo'linish esa shart emas: 5 + 20 = 25 yig'indisi 5 ga bo'linadi, lekin 10 ga bo'linmaydi. Javob: yig'indi ham 5 ga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifoda-bolinuvchanligi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#3f82cc2c"
+    },
+    {
+      "q": "Ikki natural sonning ko'paytmasi 6 ga bo'linadi. Ko'paytuvchilardan biri albatta 6 ga bo'linishi shartmi?",
+      "v": [
+        "Ha, kamida bittasi albatta 6 ga bo'linadi",
+        "Yo'q, masalan 2 · 9 = 18 da hech bir ko'paytuvchi 6 ga bo'linmaydi",
+        "Ha, ikkala son ham 6 ga bo'linishi shart",
+        "Yo'q, lekin ikkala son ham juft bo'lishi shart"
+      ],
+      "t": 1,
+      "izoh": "6 soni tub emas, u 2 va 3 ning ko'paytmasi. Shuning uchun 2 va 3 ko'paytuvchilari har xil sonlarga tarqalishi mumkin. 2 · 9 = 18 ko'paytmada 18 soni 6 ga bo'linadi, ammo 2 ham, 9 ham 6 ga bo'linmaydi. Ikkala sonning juft bo'lishi ham shart emas, chunki 9 toq. Javob: yo'q, masalan 2 · 9 = 18 da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-bolinuvchanligi",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#8474a2d4"
+    },
+    {
+      "q": "Maktabdagi 384 ta o'quvchi ekskursiyaga 16 tadan qilib avtobuslarga o'tqazilmoqda. Barcha o'quvchilar to'la avtobuslarga joylashadimi?",
+      "v": [
+        "Ha, aynan 24 ta avtobus to'liq to'ladi",
+        "Ha, 23 ta avtobus to'ladi va 16 o'quvchi qoladi",
+        "Yo'q, 8 ta o'quvchiga joy yetmaydi",
+        "Yo'q, 24 ta avtobusdan tashqari yana 4 o'quvchi qoladi"
+      ],
+      "t": 0,
+      "izoh": "384 sonining 16 ga bo'linishini tekshiramiz. Oxirgi ikki raqam 84 soni 4 ga bo'linadi, demak son 4 ga bo'linadi, ammo 16 uchun to'g'ridan-to'g'ri bo'lish qulayroq. 16 · 24 = 384 bo'lgani uchun bo'linma 24, qoldiq esa nolga teng. Demak hamma o'quvchi to'la avtobuslarga joylashadi. Javob: aynan 24 ta avtobus to'liq to'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-taqsimlash-qoldiq",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#03e623fc"
+    },
+    {
+      "q": "Oshpaz 175 ta somsani 8 tadan qilib laganlarga terdi. Nechta lagan to'la bo'ladi va nechta somsa ortib qoladi?",
+      "v": [
+        "22 ta lagan, 1 ta somsa ortadi",
+        "20 ta lagan, 15 ta somsa ortadi",
+        "21 ta lagan, 7 ta somsa ortadi",
+        "21 ta lagan, 5 ta somsa ortadi"
+      ],
+      "t": 2,
+      "izoh": "175 ni 8 ga qoldiqli bo'lamiz. 8 · 21 = 168, keyingi karrali 8 · 22 = 176 esa 175 dan katta. Demak bo'linma 21, qoldiq 175 − 168 = 7. Qoldiq bo'luvchidan kichik bo'lishi shart, shuning uchun 15 ta ortishi mumkin emas. Javob: 21 ta lagan, 7 ta somsa ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-taqsimlash-qoldiq",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#84d4e627"
+    },
+    {
+      "q": "Fermer 1250 kg kartoshkani 30 kg sig'imli qoplarga joyladi. To'la bo'lmagan oxirgi qopda necha kilogramm kartoshka bo'ladi?",
+      "v": [
+        "10 kg",
+        "20 kg",
+        "25 kg",
+        "5 kg"
+      ],
+      "t": 1,
+      "izoh": "1250 ni 30 ga qoldiqli bo'lamiz. 30 · 41 = 1230, keyingi karrali 30 · 42 = 1260 esa kartoshkadan ko'p. Demak 41 ta qop to'la to'ladi va ular 1230 kg ni oladi. Oxirgi qopga 1250 − 1230 = 20 kg qoladi. Javob: 20 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-taqsimlash-qoldiq",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#4dc08688"
+    },
+    {
+      "q": "Kitob do'konida 2024 ta kitob bor va ular javonlarga 45 tadan terildi. To'la bo'lmagan oxirgi javonda nechta kitob turadi?",
+      "v": [
+        "45 ta",
+        "40 ta",
+        "4 ta",
+        "44 ta"
+      ],
+      "t": 3,
+      "izoh": "2024 ni 45 ga bo'lamiz: 45 · 44 = 1980, keyingi karrali 45 · 45 = 2025 esa kitoblardan ko'p. Demak 44 ta javon to'la to'ladi. Qolgan kitoblar soni 2024 − 1980 = 44. Tasodifan bo'linma ham, qoldiq ham 44 ga teng chiqdi, lekin savolda qoldiq so'ralgan. Javob: 44 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-taqsimlash-qoldiq",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#7e80165c"
+    },
+    {
+      "q": "Zavodda 5000 ta detal tayyorlandi. Ular avval 24 tadan qutilarga, so'ng har 12 ta quti bitta yashikka joylandi. Nechta to'la yashik chiqadi va nechta detal qutiga sig'may qoladi?",
+      "v": [
+        "17 ta yashik, 8 ta detal ortadi",
+        "17 ta yashik, 4 ta detal ortadi",
+        "18 ta yashik, 8 ta detal ortadi",
+        "16 ta yashik, 12 ta detal ortadi"
+      ],
+      "t": 0,
+      "izoh": "Avval detallarni qutilarga joylaymiz: 24 · 208 = 4992, demak 208 ta quti to'ladi va 5000 − 4992 = 8 ta detal ortadi. Endi qutilarni yashiklarga joylaymiz: 208 = 12 · 17 + 4, ya'ni 17 ta yashik to'la bo'ladi va 4 ta quti ortadi. Savolda detallar qoldig'i so'ralgan, u 8 ga teng. Javob: 17 ta yashik, 8 ta detal ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-taqsimlash-qoldiq",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#b33eea2d"
+    },
+    {
+      "q": "Bugun payshanba kuni. Shu kundan boshlab 100 kun o'tgach haftaning qaysi kuni bo'ladi?",
+      "v": [
+        "Juma",
+        "Shanba",
+        "Yakshanba",
+        "Payshanba"
+      ],
+      "t": 1,
+      "izoh": "Hafta 7 kundan iborat, shuning uchun 100 ni 7 ga qoldiqli bo'lamiz. 7 · 14 = 98, demak 100 = 7 · 14 + 2 va qoldiq 2 ga teng. To'liq 14 hafta hech narsani o'zgartirmaydi, faqat 2 kun oldinga siljiymiz. Payshanbadan 2 kun keyin shanba keladi. Javob: shanba.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-davriylik",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#bf0a98c2"
+    },
+    {
+      "q": "Kabisa bo'lmagan yilning 1-yanvari chorshanbaga to'g'ri keldi. Shu yilning 1-apreli haftaning qaysi kuniga to'g'ri keladi?",
+      "v": [
+        "Seshanba",
+        "Dushanba",
+        "Chorshanba",
+        "Payshanba"
+      ],
+      "t": 0,
+      "izoh": "1-yanvardan 1-aprelgacha o'tgan kunlarni sanaymiz: yanvar 31, fevral 28, mart 31 kun, jami 90 kun. Endi 90 ni 7 ga bo'lamiz: 7 · 12 = 84, qoldiq 90 − 84 = 6. Chorshanbadan 6 kun oldinga siljisak seshanba kelib chiqadi. Javob: seshanba.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-davriylik",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#638d47cd"
+    },
+    {
+      "q": "Aylanma yo'lda 8 ta bekat bor va ular 1 dan 8 gacha raqamlangan. Avtobus birinchi bekatdan yo'lga chiqib ketma-ket 350 ta bekatni bosib o'tdi. U qaysi bekatda to'xtaydi?",
+      "v": [
+        "6-bekatda",
+        "8-bekatda",
+        "7-bekatda",
+        "2-bekatda"
+      ],
+      "t": 2,
+      "izoh": "Bekatlar davriy takrorlangani uchun 350 ni 8 ga qoldiqli bo'lamiz. 8 · 43 = 344, demak qoldiq 350 − 344 = 6. To'liq 43 aylanish avtobusni o'sha joyga qaytaradi, qolgan 6 bekat esa oldinga siljitadi. Birinchi bekatdan 6 bekat oldinda 7-bekat turadi. Javob: 7-bekatda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-davriylik",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#e1904223"
+    },
+    {
+      "q": "Do'kon har 6 kunda, kutubxona esa har 8 kunda bir marta dam oladi. Bugun ikkalasi ham dam olyapti. Necha kundan keyin ular yana bir kunda dam oladi?",
+      "v": [
+        "24 kundan keyin",
+        "48 kundan keyin",
+        "14 kundan keyin",
+        "12 kundan keyin"
+      ],
+      "t": 0,
+      "izoh": "Ikkala muassasa dam oladigan kun ham 6 ga, ham 8 ga bo'linishi kerak. Bunday kunlarning eng kichigi 6 va 8 ning eng kichik umumiy karralisi bo'ladi. 6 = 2 · 3, 8 = 2³, demak umumiy karrali 2³ · 3 = 24. 14 javobi sonlarni qo'shish, 48 esa ularni oddiy ko'paytirish xatosidan chiqadi. Javob: 24 kundan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-davriylik",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#f14579b2"
+    },
+    {
+      "q": "Dorixona har 9 kunda navbatchilik qiladi, birinchi navbatchiligi yanvarning 4-kunida bo'ldi. Yanvar oyi 31 kun ekanini hisobga olib, u shu oyda necha marta navbatchilik qilishini toping.",
+      "v": [
+        "3 marta",
+        "4 marta",
+        "5 marta",
+        "9 marta"
+      ],
+      "t": 1,
+      "izoh": "Navbatchilik kunlarini ketma-ket yozamiz: 4, keyin 4 + 9 = 13, keyin 13 + 9 = 22, keyin 22 + 9 = 31. Keyingi kun 31 + 9 = 40 bo'lardi, lekin yanvarda 40-kun yo'q. Demak oy ichida to'rtta sana to'g'ri keladi. Javob: 4 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-davriylik",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#bf3e793e"
+    },
+    {
+      "q": "Bir dona daftar 3500 so'm turadi. Kassada 47000 so'm bor bo'lsa, shu pulga eng ko'pi bilan nechta daftar olinadi va necha so'm ortadi?",
+      "v": [
+        "13 ta daftar, 1500 so'm qoladi",
+        "13 ta daftar, 2500 so'm qoladi",
+        "14 ta daftar, 500 so'm qoladi",
+        "12 ta daftar, 5000 so'm qoladi"
+      ],
+      "t": 0,
+      "izoh": "47000 ni 3500 ga qoldiqli bo'lamiz. 3500 · 13 = 45500, keyingi qiymat 3500 · 14 = 49000 esa pulimizdan ko'p. Demak 13 ta daftar olinadi. Qoldiq 47000 − 45500 = 1500 so'm. Javob: 13 ta daftar, 1500 so'm qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-pul-narx",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#8398d414"
+    },
+    {
+      "q": "Yetti kishilik guruh 385000 so'mlik hisobni o'zaro teng bo'lib to'lamoqchi. Har bir kishi qancha to'laydi va qoldiq qoladimi?",
+      "v": [
+        "Har biri 54000 so'm, 7000 so'm qoladi",
+        "Har biri 56000 so'm, qoldiq yo'q",
+        "Har biri 55000 so'm, 5000 so'm qoladi",
+        "Har biri 55000 so'm, qoldiq yo'q"
+      ],
+      "t": 3,
+      "izoh": "385000 ni 7 ga bo'lamiz. 7 · 55000 = 385000 bo'lgani uchun bo'linish qoldiqsiz bajariladi. Demak har bir kishi 55000 so'mdan to'laydi va hech qanday qoldiq qolmaydi. 56000 javobi yuqoriga yaxlitlash, 54000 esa pastga yaxlitlash xatosidan kelib chiqadi. Javob: har biri 55000 so'm, qoldiq yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-pul-narx",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#eef8847c"
+    },
+    {
+      "q": "Bir mahsulotning so'mdagi narxi 2 ga ham, 3 ga ham, 5 ga ham qoldiqsiz bo'linadigan eng kichik to'rt xonali son. Bu narx qanchaga teng?",
+      "v": [
+        "1000 so'm",
+        "1020 so'm",
+        "1030 so'm",
+        "1050 so'm"
+      ],
+      "t": 1,
+      "izoh": "Son 2, 3 va 5 ga birdan bo'linishi uchun u ularning ko'paytmasi 30 ga bo'linishi kerak, chunki bu sonlar juft-jufti bilan o'zaro tub. Eng kichik to'rt xonali son 1000 dan boshlab 30 ga karrali sonni qidiramiz: 30 · 33 = 990 hali uch xonali, 30 · 34 = 1020 esa to'rt xonali. 1050 ham 30 ga bo'linadi, lekin u kattaroq. Javob: 1020 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-pul-narx",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#84f54dc1"
+    },
+    {
+      "q": "Kassada faqat 5000 so'mlik va 2000 so'mlik kupyuralar bor. 31000 so'mni shu kupyuralar bilan qoldiqsiz to'lash mumkinmi?",
+      "v": [
+        "Mumkin emas, chunki 31000 soni 5000 ga bo'linmaydi",
+        "Mumkin, masalan 3 ta beshminglik va 8 ta ikkiminglik bilan",
+        "Mumkin emas, chunki 31 soni toq",
+        "Mumkin, faqat 5 ta ikkiminglik olinadi va 21000 so'm qoldiq qoladi"
+      ],
+      "t": 1,
+      "izoh": "Summani mingliklarda yozamiz va 5a + 2b = 31 tenglamani natural yechimlarda qidiramiz. a = 3 da 5 · 3 = 15 va qolgan 31 − 15 = 16 ni 2 ga bo'lamiz, b = 8 chiqadi. Demak 3 ta beshminglik va 8 ta ikkiminglik aynan 31000 so'm beradi. Toq bo'lish bu yerda to'siq emas, chunki 5000 lik kupyura toq sondagi mingliklarni qoplaydi. Javob: mumkin, 3 ta beshminglik va 8 ta ikkiminglik bilan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-pul-narx",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#cf150b49"
+    },
+    {
+      "q": "Guruhdagi o'quvchilar 4 tadan safga tursa 3 kishi, 5 tadan tursa 2 kishi ortib qoladi. O'quvchilar soni 20 dan ko'p va 40 dan kam bo'lsa, u nechaga teng?",
+      "v": [
+        "23",
+        "27",
+        "32",
+        "35"
+      ],
+      "t": 1,
+      "izoh": "5 ga bo'lganda 2 qoldiq beradigan sonlarni yozamiz: 22, 27, 32, 37. Endi ular orasidan 4 ga bo'lganda 3 qoldiq beradiganini tanlaymiz: 22 = 4 · 5 + 2, 27 = 4 · 6 + 3, 32 = 4 · 8, 37 = 4 · 9 + 1. Faqat 27 ikkala shartni bajaradi. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-necha-bolgan-qoldiq",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#19b90ac1"
+    },
+    {
+      "q": "Natural son 3 ga bo'lganda ham, 4 ga bo'lganda ham 1 qoldiq beradi. Bunday sonlarning 1 dan katta eng kichigi nechaga teng?",
+      "v": [
+        "13",
+        "7",
+        "25",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Sondan 1 ni ayirsak, hosil bo'lgan son ham 3 ga, ham 4 ga bo'linishi kerak. 3 va 4 o'zaro tub bo'lgani uchun bu son 12 ga karrali bo'ladi. Eng kichik musbat karrali 12, demak izlanayotgan son 12 + 1 = 13. Tekshiramiz: 13 = 3 · 4 + 1 va 13 = 4 · 3 + 1. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-necha-bolgan-qoldiq",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#0bb0e51d"
+    },
+    {
+      "q": "Savatdagi olmalarni 6 tadan olganda 4 ta, 8 tadan olganda 6 ta olma ortib qoladi. Olmalar soni 40 dan kichik bo'lsa, ular nechta?",
+      "v": [
+        "20 ta",
+        "34 ta",
+        "22 ta",
+        "46 ta"
+      ],
+      "t": 2,
+      "izoh": "Har ikkala holatda ham qoldiq bo'luvchidan 2 taga kam: 6 − 4 = 2 va 8 − 6 = 2. Demak olmalar soniga 2 ta qo'shsak, natija ham 6 ga, ham 8 ga bo'linadi, ya'ni 24 ga karrali bo'ladi. 24 dan 2 ni ayiramiz va 22 ni olamiz, keyingi imkoniyat 46 esa 40 dan katta. Javob: 22 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-necha-bolgan-qoldiq",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#e6618252"
+    },
+    {
+      "q": "Kitoblarni 7 tadan taxlaganda ham, 9 tadan taxlaganda ham 5 ta kitob ortib qoladi. Kitoblar soni 5 dan katta va 100 dan kichik bo'lsa, ular nechta?",
+      "v": [
+        "50 ta",
+        "63 ta",
+        "71 ta",
+        "68 ta"
+      ],
+      "t": 3,
+      "izoh": "Kitoblar sonidan 5 ni ayirsak, natija ham 7 ga, ham 9 ga bo'linishi kerak. 7 va 9 o'zaro tub bo'lgani uchun bu natija 63 ga karrali bo'ladi. Eng kichik musbat karrali 63, demak kitoblar soni 63 + 5 = 68. Keyingi imkoniyat 126 + 5 bo'lardi, u esa 100 dan katta. Javob: 68 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-necha-bolgan-qoldiq",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#7e0053ce"
+    },
+    {
+      "q": "Natural son 10 ga bo'lganda 7 qoldiq beradi. Shu sonni 5 ga bo'lganda qanday qoldiq hosil bo'ladi?",
+      "v": [
+        "7",
+        "0",
+        "1",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Sonni n = 10k + 7 ko'rinishida yozamiz. 10k qismi 5 ga qoldiqsiz bo'linadi, chunki 10 = 5 · 2. Qolgan 7 ni 5 ga bo'lamiz: 7 = 5 + 2, ya'ni qoldiq 2. Qoldiq bo'luvchi 5 dan kichik bo'lishi shart, shuning uchun 7 javob bo'la olmaydi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-necha-bolgan-qoldiq",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#62f00dc8"
+    },
+    {
+      "q": "3 ga qoldiqsiz bo'linadigan eng katta uch xonali son qaysi?",
+      "v": [
+        "996",
+        "990",
+        "999",
+        "993"
+      ],
+      "t": 2,
+      "izoh": "Eng katta uch xonali son 999 ga teng, shuning uchun tekshirishni undan boshlaymiz. Raqamlar yig'indisi 9 + 9 + 9 = 27, bu son 3 ga bo'linadi. Demak 999 ning o'zi shartni bajaradi va undan kattaroq uch xonali son yo'q. Javob: 999.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-kichik-eng-katta-son",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#2262152a"
+    },
+    {
+      "q": "4 ga qoldiqsiz bo'linadigan eng kichik to'rt xonali son nechaga teng?",
+      "v": [
+        "1002",
+        "1004",
+        "1000",
+        "1008"
+      ],
+      "t": 2,
+      "izoh": "Eng kichik to'rt xonali son 1000 ga teng. 4 ga bo'linishni oxirgi ikki raqamdan tuzilgan son bo'yicha tekshiramiz, u bu yerda 0 ga teng va 0 soni 4 ga bo'linadi. Boshqacha aytganda 1000 = 4 · 250. Demak qidiruvni davom ettirishga hojat yo'q. Javob: 1000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-kichik-eng-katta-son",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#7e6bacd0"
+    },
+    {
+      "q": "9 ga qoldiqsiz bo'linadigan eng kichik besh xonali son qaysi songa teng bo'ladi?",
+      "v": [
+        "10000",
+        "10009",
+        "10017",
+        "10008"
+      ],
+      "t": 3,
+      "izoh": "Eng kichik besh xonali son 10000, uning raqamlari yig'indisi 1 ga teng va 9 ga bo'linmaydi. Yig'indini 9 ga yetkazish uchun birlar raqamiga 8 qo'yamiz: 10008 sonining raqamlari yig'indisi 1 + 8 = 9. 10000 dan 10008 gacha bo'lgan sonlarda yig'indi 1 dan 8 gacha o'zgaradi, ya'ni hech biri yaramaydi. Javob: 10008.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-eng-katta-son",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#11b0de14"
+    },
+    {
+      "q": "Ikki xonali sonlar orasida 7 ga bo'lganda 3 qoldiq qoldiradiganlarining eng kattasi qaysi?",
+      "v": [
+        "98",
+        "96",
+        "94",
+        "87"
+      ],
+      "t": 2,
+      "izoh": "Izlanayotgan son 7k + 3 ko'rinishida va u 99 dan oshmasligi kerak. 7k ≤ 96 shartdan k ning eng katta qiymati 13 bo'ladi, chunki 7 · 13 = 91 va 7 · 14 = 98 ga 3 qo'shsak 101 chiqadi. Demak son 91 + 3 = 94. Tekshiramiz: 94 = 7 · 13 + 3. Javob: 94.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-eng-katta-son",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#a8446d81"
+    },
+    {
+      "q": "Uch xonali sonlar orasida ham 6 ga, ham 8 ga bo'linadiganlarining eng kichigi nechaga teng?",
+      "v": [
+        "144",
+        "108",
+        "100",
+        "120"
+      ],
+      "t": 3,
+      "izoh": "Son ham 6 ga, ham 8 ga bo'linishi uchun u ularning eng kichik umumiy karralisiga bo'linishi kerak. 6 = 2 · 3 va 8 = 2³ bo'lgani uchun umumiy karrali 24 ga teng. 24 ning karralilarini yozamiz: 24, 48, 72, 96, 120. Uch xonali birinchisi 120. 108 soni 6 ga bo'linadi, lekin 8 ga bo'linmaydi. Javob: 120.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-kichik-eng-katta-son",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#085fbdb1"
+    },
+    {
+      "q": "Natural sonni 9 ga bo'lganda quyidagi qoldiqlardan qaysi biri hech qachon hosil bo'lmaydi?",
+      "v": [
+        "9",
+        "8",
+        "0",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Qoldiqli bo'lishda qoldiq har doim bo'luvchidan kichik bo'lishi shart, aks holda bo'linmani yana bittaga oshirish mumkin edi. 9 ga bo'lganda qoldiq 0 dan 8 gacha bo'lgan qiymatlarni oladi. Demak 9 qiymati qoldiq bo'la olmaydi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoldiq-mumkin-emas-tahlil",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#72f588a2"
+    },
+    {
+      "q": "Qoldiqli bo'lishda bo'luvchi 12 ga teng bo'lsa, qoldiq eng ko'pi bilan nechaga teng bo'lishi mumkin?",
+      "v": [
+        "6",
+        "12",
+        "13",
+        "11"
+      ],
+      "t": 3,
+      "izoh": "Qoldiq bo'luvchidan qat'iy kichik bo'ladi, ya'ni r < 12 shart bajarilishi kerak. Butun sonlar ichida 12 dan kichik eng katta qiymat 11 ga teng. Masalan 35 = 12 · 2 + 11 yozuvida qoldiq aynan 11. Agar qoldiq 12 bo'lganda bo'linmani bittaga oshirish mumkin edi. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoldiq-mumkin-emas-tahlil",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#74545491"
+    },
+    {
+      "q": "Toq sonning kvadratini 8 ga bo'lganda qanday qoldiq hosil bo'lishini aniqlang.",
+      "v": [
+        "Qoldiq 0 bo'ladi",
+        "Qoldiq 1 bo'ladi",
+        "Qoldiq 4 bo'ladi",
+        "Qoldiq 7 bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Toq sonni n = 2k + 1 ko'rinishida yozamiz va kvadratga ko'taramiz: (2k + 1)² = 4k² + 4k + 1 = 4k(k + 1) + 1. Bu yerda k va k + 1 ketma-ket sonlar, ularning ko'paytmasi juft, demak 4k(k + 1) qismi 8 ga bo'linadi. Qoldiq faqat 1 bo'lib qoladi. Tekshirish: 9 : 8 va 25 : 8 da ham qoldiq 1. Javob: qoldiq 1 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoldiq-mumkin-emas-tahlil",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#fa808aec"
+    },
+    {
+      "q": "Natural sonning kvadratini 3 ga bo'lganda qanday qoldiqlar hosil bo'lishi mumkin?",
+      "v": [
+        "0, 1 yoki 2",
+        "Faqat 0 yoki 2",
+        "Faqat 0 yoki 1",
+        "Faqat 1 yoki 2"
+      ],
+      "t": 2,
+      "izoh": "Sonni 3 ga bo'lgandagi qoldig'iga qarab uch holatga ajratamiz: n = 3k, n = 3k + 1, n = 3k + 2. Kvadratlari mos ravishda 9k², 9k² + 6k + 1 va 9k² + 12k + 4 bo'ladi. Birinchisi 3 ga bo'linadi, ikkinchisi 1 qoldiq beradi, uchinchisida esa 4 = 3 + 1 bo'lgani uchun yana 1 qoldiq chiqadi. Demak 2 qoldiq hech qachon paydo bo'lmaydi. Javob: faqat 0 yoki 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoldiq-mumkin-emas-tahlil",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#4557de5e"
+    },
+    {
+      "q": "Dilnoza 516 sonining raqamlarini har xil tartiblarda qayta joylashtirdi. Hosil bo'lgan sonlar haqidagi qaysi fikr to'g'ri bo'ladi?",
+      "v": [
+        "Hosil bo'lgan har qanday son 3 ga bo'linadi, chunki raqamlar yig'indisi o'zgarmaydi",
+        "Faqat 516 sonining o'zi 3 ga bo'linadi",
+        "Faqat oxirgi raqami juft bo'lgan variantlar 3 ga bo'linadi",
+        "Hosil bo'lgan sonlarning hech qaysisi 3 ga bo'linmaydi"
+      ],
+      "t": 0,
+      "izoh": "Raqamlarni qayta joylashtirish ularning yig'indisiga ta'sir qilmaydi: 5 + 1 + 6 = 12 har doim o'zgarishsiz qoladi. 12 soni 3 ga bo'linadi, demak 3 ga bo'linish belgisi barcha variantlar uchun bajariladi. Masalan 165, 561 va 651 sonlarining hammasi 3 ga bo'linadi. Javob: hosil bo'lgan har qanday son 3 ga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "raqam-tartibi-va-bolinish",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#25d845ea"
+    },
+    {
+      "q": "473 sonining raqamlari o'rnini almashtirib olingan barcha uch xonali sonlardan nechtasi 2 ga bo'linadi?",
+      "v": [
+        "1 ta",
+        "3 ta",
+        "6 ta",
+        "2 ta"
+      ],
+      "t": 3,
+      "izoh": "Uchta har xil raqamdan jami 6 ta son tuziladi: 473, 437, 743, 734, 347, 374. Son 2 ga bo'linishi uchun oxirgi raqami juft bo'lishi kerak, berilgan raqamlardan esa faqat 4 juft. Oxiri 4 bilan tugaydiganlar 734 va 374, ya'ni 2 ta. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "raqam-tartibi-va-bolinish",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#0d27c4b2"
+    },
+    {
+      "q": "Uch xonali sondan uning raqamlari yig'indisi ayirilsa, natija doim bo'linadigan eng katta son qaysi?",
+      "v": [
+        "11 ga",
+        "9 ga",
+        "99 ga",
+        "5 ga"
+      ],
+      "t": 1,
+      "izoh": "Sonni 100a + 10b + c ko'rinishida yozamiz, raqamlar yig'indisi esa a + b + c bo'ladi. Ayirmani hisoblaymiz: 100a + 10b + c − a − b − c = 99a + 9b = 9 · (11a + b). Ko'paytuvchida 9 turgani uchun natija doim 9 ga bo'linadi. 99 ga bo'linish kafolatlanmaydi: 110 uchun ayirma 108 ga teng. Javob: 9 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "raqam-tartibi-va-bolinish",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#83237ae1"
+    },
+    {
+      "q": "To'rt xonali sonning raqamlari yig'indisi 20 ga teng. Bu son 9 ga bo'linadimi, bo'linmasa qanday qoldiq qoladi?",
+      "v": [
+        "Ha, chunki raqamlar yig'indisi 9 dan katta",
+        "Yo'q, lekin qoldiq 20 ga teng bo'ladi",
+        "Yo'q, chunki 20 soni 9 ga bo'linmaydi, qoldiq 2 bo'ladi",
+        "Ha, chunki 20 juft son"
+      ],
+      "t": 2,
+      "izoh": "Sonning 9 ga bo'lingandagi qoldig'i uning raqamlari yig'indisining 9 ga bo'lingandagi qoldig'iga teng. Bu yerda yig'indi 20 ga teng, uni bo'lamiz: 20 = 9 · 2 + 2. Demak qoldiq 2 ga teng va son 9 ga bo'linmaydi. Qoldiq bo'luvchidan kichik bo'lishi kerak, shuning uchun 20 javob bo'la olmaydi. Javob: yo'q, qoldiq 2 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "raqam-tartibi-va-bolinish",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#f24ba94b"
+    },
+    {
+      "q": "Bo'linish haqidagi quyidagi tasdiqlardan qaysi biri noto'g'ri bo'ladi?",
+      "v": [
+        "10 ga bo'linadigan har qanday son 5 ga ham bo'linadi",
+        "4 ga bo'linadigan har qanday son 2 ga ham bo'linadi",
+        "9 ga bo'linadigan har qanday son 3 ga ham bo'linadi",
+        "3 ga bo'linadigan har qanday son 9 ga ham bo'linadi"
+      ],
+      "t": 3,
+      "izoh": "Agar son katta bo'luvchiga bo'linsa, u shu bo'luvchining har bir bo'luvchisiga ham bo'linadi. Shuning uchun dastlabki uchta tasdiq to'g'ri: 5 soni 10 ning, 2 soni 4 ning, 3 soni 9 ning bo'luvchisi. Teskari yo'nalish esa ishlamaydi: 12 soni 3 ga bo'linadi, lekin 9 ga bo'linmaydi. Javob: 3 ga bo'linadigan har qanday son 9 ga ham bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-umumiy-mulohaza",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#1dceea8e"
+    },
+    {
+      "q": "Ikkita toq sonning yig'indisi haqida qaysi tasdiq har doim o'rinli bo'ladi?",
+      "v": [
+        "Yig'indi doim toq son bo'ladi",
+        "Yig'indi doim 2 ga bo'linadi",
+        "Yig'indi doim 4 ga bo'linadi",
+        "Yig'indi 2 ga hech qachon bo'linmaydi"
+      ],
+      "t": 1,
+      "izoh": "Toq sonlarni 2a + 1 va 2b + 1 ko'rinishida yozamiz. Yig'indisi 2a + 2b + 2 = 2 · (a + b + 1) bo'ladi, ya'ni ko'paytuvchida 2 turadi. Demak yig'indi har doim juft va 2 ga bo'linadi. 4 ga bo'linish kafolatlanmaydi: 1 + 3 = 4, lekin 1 + 5 = 6 soni 4 ga bo'linmaydi. Javob: yig'indi doim 2 ga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-umumiy-mulohaza",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#1bf46e72"
+    },
+    {
+      "q": "5 ga bo'linadigan, ammo 2 ga bo'linmaydigan sonlarning oxirgi raqami haqida nima deyish mumkin?",
+      "v": [
+        "Oxirgi raqami har doim juft bo'ladi",
+        "Oxirgi raqami faqat 0 bo'ladi",
+        "Oxirgi raqami faqat 5 bo'ladi",
+        "Oxirgi raqami toq bo'lishi yetarli"
+      ],
+      "t": 2,
+      "izoh": "5 ga bo'linish belgisiga ko'ra oxirgi raqam 0 yoki 5 bo'lishi kerak. 2 ga bo'linmaslik sharti esa sonning toq bo'lishini talab qiladi, ya'ni oxirgi raqam toq. Bu ikki shartni birga qo'ysak, faqat 5 raqami qoladi, chunki 0 juft. Demak oxirgi raqam juft ham, 0 ham bo'la olmaydi. Masalan 35, 145 va 2075 shunday sonlardir. Javob: oxirgi raqami faqat 5 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-umumiy-mulohaza",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#784eddeb"
+    },
+    {
+      "q": "a soni b ga qoldiqsiz bo'linadi, b soni esa c ga qoldiqsiz bo'linadi. Bundan qanday xulosa kelib chiqadi?",
+      "v": [
+        "c soni a ga bo'linadi",
+        "a va c o'zaro tub bo'ladi",
+        "Hech qanday xulosa chiqarib bo'lmaydi",
+        "a soni c ga ham bo'linadi"
+      ],
+      "t": 3,
+      "izoh": "Shartni yozuvda ifodalaymiz: a = b · m va b = c · k, bu yerda m va k butun sonlar. Birinchi tenglikka ikkinchisini qo'yamiz: a = c · k · m. O'ng tomonda c ko'paytuvchi sifatida turibdi, demak a soni c ga bo'linadi. Masalan 36 soni 12 ga, 12 esa 4 ga bo'linadi va haqiqatan 36 soni 4 ga bo'linadi. Javob: a soni c ga ham bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "belgi-umumiy-mulohaza",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#70c8458c"
+    },
+    {
+      "q": "Uchta ketma-ket toq sonning yig'indisi har doim bo'linadigan eng katta son nechaga teng?",
+      "v": [
+        "9 ga",
+        "6 ga",
+        "2 ga",
+        "3 ga"
+      ],
+      "t": 3,
+      "izoh": "Ketma-ket toq sonlarni 2k + 1, 2k + 3 va 2k + 5 deb olamiz. Yig'indisi 6k + 9 = 3 · (2k + 3) bo'ladi, demak u doim 3 ga bo'linadi. 9 ga bo'linish kafolatlanmaydi: 3 + 5 + 7 = 15 soni 9 ga bo'linmaydi. 2 ga ham bo'linmaydi, chunki uchta toq sonning yig'indisi toq. Javob: 3 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "belgi-umumiy-mulohaza",
+      "id": "matematika_arif_m02-bolinish-belgilari-va-qoldiqli-bolish#82b52507"
+    }
+  ]
+}

@@ -1,0 +1,1306 @@
+{
+  "nom": "Personality adjectives",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "\"honest\" so'zining ma'nosi qaysi?",
+      "v": [
+        "mehnatkash",
+        "halol",
+        "xudbin",
+        "quvnoq"
+      ],
+      "t": 1,
+      "izoh": "'honest' = halol.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#dc9ecded"
+    },
+    {
+      "q": "\"generous\" so'zining ma'nosi qaysi?",
+      "v": [
+        "o'ziga ishonchli",
+        "saxiy",
+        "jasur",
+        "odobli"
+      ],
+      "t": 1,
+      "izoh": "'generous' = saxiy.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#81987403"
+    },
+    {
+      "q": "\"shy\" so'zining ma'nosi qaysi?",
+      "v": [
+        "uyatchan",
+        "xotirjam",
+        "intiluvchan",
+        "kulgili"
+      ],
+      "t": 0,
+      "izoh": "'shy' = uyatchan.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#e6dbabb0"
+    },
+    {
+      "q": "\"confident\" so'zining ma'nosi qaysi?",
+      "v": [
+        "ishonchli",
+        "o'ziga ishonchli",
+        "mehribon",
+        "intiluvchan"
+      ],
+      "t": 1,
+      "izoh": "'confident' = o'ziga ishonchli.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#d8ea28f6"
+    },
+    {
+      "q": "\"patient\" so'zining ma'nosi qaysi?",
+      "v": [
+        "sabrli",
+        "o'ziga ishonchli",
+        "xudbin",
+        "odobli"
+      ],
+      "t": 0,
+      "izoh": "'patient' = sabrli.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#3d4c3c5c"
+    },
+    {
+      "q": "\"lazy\" so'zining ma'nosi qaysi?",
+      "v": [
+        "odobli",
+        "dangasa",
+        "quvnoq",
+        "mehnatkash"
+      ],
+      "t": 1,
+      "izoh": "'lazy' = dangasa.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#dc95c7e0"
+    },
+    {
+      "q": "\"hard-working\" so'zining ma'nosi qaysi?",
+      "v": [
+        "odobli",
+        "uyatchan",
+        "mehnatkash",
+        "kulgili"
+      ],
+      "t": 2,
+      "izoh": "'hard-working' = mehnatkash.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#c1824881"
+    },
+    {
+      "q": "\"friendly\" so'zining ma'nosi qaysi?",
+      "v": [
+        "jasur",
+        "dangasa",
+        "do'stona",
+        "mehribon"
+      ],
+      "t": 2,
+      "izoh": "'friendly' = do'stona.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#eaff60fd"
+    },
+    {
+      "q": "\"polite\" so'zining ma'nosi qaysi?",
+      "v": [
+        "intiluvchan",
+        "kulgili",
+        "odobli",
+        "mehnatkash"
+      ],
+      "t": 2,
+      "izoh": "'polite' = odobli.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#9a5fb587"
+    },
+    {
+      "q": "\"rude\" so'zining ma'nosi qaysi?",
+      "v": [
+        "saxiy",
+        "odobli",
+        "qo'pol",
+        "do'stona"
+      ],
+      "t": 2,
+      "izoh": "'rude' = qo'pol.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#6c4e35c1"
+    },
+    {
+      "q": "\"kind\" so'zining ma'nosi qaysi?",
+      "v": [
+        "mehribon",
+        "do'stona",
+        "dangasa",
+        "quvnoq"
+      ],
+      "t": 0,
+      "izoh": "'kind' = mehribon.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#0e55ea10"
+    },
+    {
+      "q": "\"selfish\" so'zining ma'nosi qaysi?",
+      "v": [
+        "dangasa",
+        "xudbin",
+        "mehnatkash",
+        "xotirjam"
+      ],
+      "t": 1,
+      "izoh": "'selfish' = xudbin.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#dbcada63"
+    },
+    {
+      "q": "\"brave\" so'zining ma'nosi qaysi?",
+      "v": [
+        "jiddiy",
+        "jasur",
+        "do'stona",
+        "xotirjam"
+      ],
+      "t": 1,
+      "izoh": "'brave' = jasur.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#92c7aada"
+    },
+    {
+      "q": "\"funny\" so'zining ma'nosi qaysi?",
+      "v": [
+        "kulgili",
+        "dangasa",
+        "mehribon",
+        "ishonchli"
+      ],
+      "t": 0,
+      "izoh": "'funny' = kulgili.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#c14227d2"
+    },
+    {
+      "q": "\"serious\" so'zining ma'nosi qaysi?",
+      "v": [
+        "sabrli",
+        "jiddiy",
+        "mehribon",
+        "mehnatkash"
+      ],
+      "t": 1,
+      "izoh": "'serious' = jiddiy.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#124294a3"
+    },
+    {
+      "q": "\"reliable\" so'zining ma'nosi qaysi?",
+      "v": [
+        "mehnatkash",
+        "xudbin",
+        "intiluvchan",
+        "ishonchli"
+      ],
+      "t": 3,
+      "izoh": "'reliable' = ishonchli.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#0f803bfd"
+    },
+    {
+      "q": "\"ambitious\" so'zining ma'nosi qaysi?",
+      "v": [
+        "intiluvchan",
+        "jiddiy",
+        "sabrli",
+        "odobli"
+      ],
+      "t": 0,
+      "izoh": "'ambitious' = intiluvchan.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#c8e59001"
+    },
+    {
+      "q": "\"cheerful\" so'zining ma'nosi qaysi?",
+      "v": [
+        "quvnoq",
+        "saxiy",
+        "qo'pol",
+        "odobli"
+      ],
+      "t": 0,
+      "izoh": "'cheerful' = quvnoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#6ae656f6"
+    },
+    {
+      "q": "\"calm\" so'zining ma'nosi qaysi?",
+      "v": [
+        "quvnoq",
+        "halol",
+        "ishonchli",
+        "xotirjam"
+      ],
+      "t": 3,
+      "izoh": "'calm' = xotirjam.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#ed8000a0"
+    },
+    {
+      "q": "\"halol\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "rude",
+        "serious",
+        "calm",
+        "honest"
+      ],
+      "t": 3,
+      "izoh": "'halol' inglizcha 'honest'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#f6cac950"
+    },
+    {
+      "q": "\"saxiy\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "kind",
+        "friendly",
+        "generous",
+        "cheerful"
+      ],
+      "t": 2,
+      "izoh": "'saxiy' inglizcha 'generous'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#934cb72e"
+    },
+    {
+      "q": "\"uyatchan\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "hard-working",
+        "shy",
+        "funny",
+        "polite"
+      ],
+      "t": 1,
+      "izoh": "'uyatchan' inglizcha 'shy'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#1af0181a"
+    },
+    {
+      "q": "\"o'ziga ishonchli\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "confident",
+        "shy",
+        "serious",
+        "hard-working"
+      ],
+      "t": 0,
+      "izoh": "'o'ziga ishonchli' inglizcha 'confident'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#c9e68892"
+    },
+    {
+      "q": "\"sabrli\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "funny",
+        "patient",
+        "reliable",
+        "generous"
+      ],
+      "t": 1,
+      "izoh": "'sabrli' inglizcha 'patient'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#598e78d0"
+    },
+    {
+      "q": "\"dangasa\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "lazy",
+        "honest",
+        "shy",
+        "patient"
+      ],
+      "t": 0,
+      "izoh": "'dangasa' inglizcha 'lazy'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#5d2a82ac"
+    },
+    {
+      "q": "\"mehnatkash\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "cheerful",
+        "kind",
+        "honest",
+        "hard-working"
+      ],
+      "t": 3,
+      "izoh": "'mehnatkash' inglizcha 'hard-working'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#48cdc738"
+    },
+    {
+      "q": "\"do'stona\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "funny",
+        "friendly",
+        "shy",
+        "ambitious"
+      ],
+      "t": 1,
+      "izoh": "'do'stona' inglizcha 'friendly'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#83013875"
+    },
+    {
+      "q": "\"odobli\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "polite",
+        "ambitious",
+        "cheerful",
+        "honest"
+      ],
+      "t": 0,
+      "izoh": "'odobli' inglizcha 'polite'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#d045e068"
+    },
+    {
+      "q": "\"qo'pol\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "shy",
+        "brave",
+        "funny",
+        "rude"
+      ],
+      "t": 3,
+      "izoh": "'qo'pol' inglizcha 'rude'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#ac28d8af"
+    },
+    {
+      "q": "\"mehribon\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "brave",
+        "honest",
+        "ambitious",
+        "kind"
+      ],
+      "t": 3,
+      "izoh": "'mehribon' inglizcha 'kind'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#39029a65"
+    },
+    {
+      "q": "\"xudbin\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "selfish",
+        "shy",
+        "ambitious",
+        "friendly"
+      ],
+      "t": 0,
+      "izoh": "'xudbin' inglizcha 'selfish'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#171f47b5"
+    },
+    {
+      "q": "\"jasur\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "funny",
+        "reliable",
+        "brave",
+        "ambitious"
+      ],
+      "t": 2,
+      "izoh": "'jasur' inglizcha 'brave'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#ba071953"
+    },
+    {
+      "q": "\"kulgili\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "funny",
+        "selfish",
+        "honest",
+        "confident"
+      ],
+      "t": 0,
+      "izoh": "'kulgili' inglizcha 'funny'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#562d7caa"
+    },
+    {
+      "q": "\"jiddiy\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "ambitious",
+        "rude",
+        "polite",
+        "serious"
+      ],
+      "t": 3,
+      "izoh": "'jiddiy' inglizcha 'serious'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#791ddcfe"
+    },
+    {
+      "q": "\"ishonchli\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "lazy",
+        "serious",
+        "reliable",
+        "hard-working"
+      ],
+      "t": 2,
+      "izoh": "'ishonchli' inglizcha 'reliable'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#3c1abc32"
+    },
+    {
+      "q": "\"intiluvchan\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "brave",
+        "reliable",
+        "confident",
+        "ambitious"
+      ],
+      "t": 3,
+      "izoh": "'intiluvchan' inglizcha 'ambitious'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#d290373e"
+    },
+    {
+      "q": "\"quvnoq\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "honest",
+        "cheerful",
+        "brave",
+        "calm"
+      ],
+      "t": 1,
+      "izoh": "'quvnoq' inglizcha 'cheerful'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#9dfef3c0"
+    },
+    {
+      "q": "\"xotirjam\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "shy",
+        "calm",
+        "ambitious",
+        "kind"
+      ],
+      "t": 1,
+      "izoh": "'xotirjam' inglizcha 'calm'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#0c2926fb"
+    },
+    {
+      "q": "Which word means: \"always telling the truth and not cheating\"?",
+      "v": [
+        "ambitious",
+        "confident",
+        "polite",
+        "honest"
+      ],
+      "t": 3,
+      "izoh": "Bu ta'rif 'honest' so'ziga mos: halol.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#5c29a79c"
+    },
+    {
+      "q": "Which word means: \"happy to give money, help or time to others\"?",
+      "v": [
+        "ambitious",
+        "patient",
+        "generous",
+        "lazy"
+      ],
+      "t": 2,
+      "izoh": "Bu ta'rif 'generous' so'ziga mos: saxiy.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#90320925"
+    },
+    {
+      "q": "Which word means: \"nervous and quiet with people you do not know\"?",
+      "v": [
+        "generous",
+        "honest",
+        "shy",
+        "selfish"
+      ],
+      "t": 2,
+      "izoh": "Bu ta'rif 'shy' so'ziga mos: uyatchan.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#4128a892"
+    },
+    {
+      "q": "Which word means: \"sure about yourself and your abilities\"?",
+      "v": [
+        "polite",
+        "confident",
+        "generous",
+        "brave"
+      ],
+      "t": 1,
+      "izoh": "Bu ta'rif 'confident' so'ziga mos: o'ziga ishonchli.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#1834df9a"
+    },
+    {
+      "q": "Which word means: \"able to wait calmly without getting angry\"?",
+      "v": [
+        "generous",
+        "patient",
+        "friendly",
+        "lazy"
+      ],
+      "t": 1,
+      "izoh": "Bu ta'rif 'patient' so'ziga mos: sabrli.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#aeaa2cc3"
+    },
+    {
+      "q": "Which word means: \"not wanting to work or make an effort\"?",
+      "v": [
+        "lazy",
+        "calm",
+        "serious",
+        "polite"
+      ],
+      "t": 0,
+      "izoh": "Bu ta'rif 'lazy' so'ziga mos: dangasa.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#f962856b"
+    },
+    {
+      "q": "Which word means: \"doing a lot of work with great effort\"?",
+      "v": [
+        "shy",
+        "polite",
+        "confident",
+        "hard-working"
+      ],
+      "t": 3,
+      "izoh": "Bu ta'rif 'hard-working' so'ziga mos: mehnatkash.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#16136c8c"
+    },
+    {
+      "q": "Which word means: \"kind, warm and pleasant to other people\"?",
+      "v": [
+        "selfish",
+        "reliable",
+        "patient",
+        "friendly"
+      ],
+      "t": 3,
+      "izoh": "Bu ta'rif 'friendly' so'ziga mos: do'stona.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#44474ea9"
+    },
+    {
+      "q": "Which word means: \"behaving with good manners and respect\"?",
+      "v": [
+        "friendly",
+        "polite",
+        "ambitious",
+        "cheerful"
+      ],
+      "t": 1,
+      "izoh": "Bu ta'rif 'polite' so'ziga mos: odobli.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#6d2e3c2e"
+    },
+    {
+      "q": "Which word means: \"not polite and offensive to others\"?",
+      "v": [
+        "confident",
+        "serious",
+        "rude",
+        "lazy"
+      ],
+      "t": 2,
+      "izoh": "Bu ta'rif 'rude' so'ziga mos: qo'pol.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#ab6f3493"
+    },
+    {
+      "q": "Which word means: \"caring and gentle towards other people\"?",
+      "v": [
+        "reliable",
+        "generous",
+        "confident",
+        "kind"
+      ],
+      "t": 3,
+      "izoh": "Bu ta'rif 'kind' so'ziga mos: mehribon.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#d8f0e975"
+    },
+    {
+      "q": "Which word means: \"caring only about yourself, not others\"?",
+      "v": [
+        "selfish",
+        "ambitious",
+        "rude",
+        "cheerful"
+      ],
+      "t": 0,
+      "izoh": "Bu ta'rif 'selfish' so'ziga mos: xudbin.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#b0df1fed"
+    },
+    {
+      "q": "Which word means: \"not afraid to do dangerous or difficult things\"?",
+      "v": [
+        "confident",
+        "brave",
+        "cheerful",
+        "serious"
+      ],
+      "t": 1,
+      "izoh": "Bu ta'rif 'brave' so'ziga mos: jasur.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#2ad3ef17"
+    },
+    {
+      "q": "Which word means: \"making other people laugh\"?",
+      "v": [
+        "funny",
+        "shy",
+        "serious",
+        "honest"
+      ],
+      "t": 0,
+      "izoh": "Bu ta'rif 'funny' so'ziga mos: kulgili.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#7af89f73"
+    },
+    {
+      "q": "Which word means: \"not joking, thinking about things deeply\"?",
+      "v": [
+        "generous",
+        "rude",
+        "patient",
+        "serious"
+      ],
+      "t": 3,
+      "izoh": "Bu ta'rif 'serious' so'ziga mos: jiddiy.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#62903fc5"
+    },
+    {
+      "q": "Which word means: \"can be trusted to do what is needed\"?",
+      "v": [
+        "friendly",
+        "patient",
+        "calm",
+        "reliable"
+      ],
+      "t": 3,
+      "izoh": "Bu ta'rif 'reliable' so'ziga mos: ishonchli.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#39374efb"
+    },
+    {
+      "q": "Which word means: \"strongly wanting success in life or work\"?",
+      "v": [
+        "honest",
+        "ambitious",
+        "selfish",
+        "lazy"
+      ],
+      "t": 1,
+      "izoh": "Bu ta'rif 'ambitious' so'ziga mos: intiluvchan.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#a14e82ec"
+    },
+    {
+      "q": "Which word means: \"happy, positive and full of good mood\"?",
+      "v": [
+        "cheerful",
+        "lazy",
+        "friendly",
+        "brave"
+      ],
+      "t": 0,
+      "izoh": "Bu ta'rif 'cheerful' so'ziga mos: quvnoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#fdd4d39c"
+    },
+    {
+      "q": "Which word means: \"relaxed and not worried or nervous\"?",
+      "v": [
+        "calm",
+        "confident",
+        "reliable",
+        "patient"
+      ],
+      "t": 0,
+      "izoh": "Bu ta'rif 'calm' so'ziga mos: xotirjam.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#c97d2495"
+    },
+    {
+      "q": "What is the opposite of \"honest\"?",
+      "v": [
+        "rude",
+        "dishonest",
+        "employed",
+        "lazy"
+      ],
+      "t": 1,
+      "izoh": "'honest' teskarisi — 'dishonest'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#434ceb2d"
+    },
+    {
+      "q": "What is the opposite of \"generous\"?",
+      "v": [
+        "patient",
+        "unambitious",
+        "selfish",
+        "friendly"
+      ],
+      "t": 2,
+      "izoh": "'generous' teskarisi — 'selfish'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#b6e6d424"
+    },
+    {
+      "q": "What is the opposite of \"shy\"?",
+      "v": [
+        "polite",
+        "confident",
+        "reliable",
+        "dishonest"
+      ],
+      "t": 1,
+      "izoh": "'shy' teskarisi — 'confident'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#ceb444bb"
+    },
+    {
+      "q": "What is the opposite of \"confident\"?",
+      "v": [
+        "shy",
+        "hard-working",
+        "honest",
+        "nervous"
+      ],
+      "t": 0,
+      "izoh": "'confident' teskarisi — 'shy'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#32b8e80b"
+    },
+    {
+      "q": "What is the opposite of \"patient\"?",
+      "v": [
+        "impatient",
+        "funny",
+        "gloomy",
+        "cruel"
+      ],
+      "t": 0,
+      "izoh": "'patient' teskarisi — 'impatient'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#b1a36cc8"
+    },
+    {
+      "q": "What is the opposite of \"lazy\"?",
+      "v": [
+        "friendly",
+        "hard-working",
+        "gloomy",
+        "confident"
+      ],
+      "t": 1,
+      "izoh": "'lazy' teskarisi — 'hard-working'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#02ef00be"
+    },
+    {
+      "q": "What is the opposite of \"hard-working\"?",
+      "v": [
+        "reliable",
+        "lazy",
+        "cruel",
+        "gloomy"
+      ],
+      "t": 1,
+      "izoh": "'hard-working' teskarisi — 'lazy'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#a8437ddb"
+    },
+    {
+      "q": "What is the opposite of \"friendly\"?",
+      "v": [
+        "unreliable",
+        "unfriendly",
+        "kind",
+        "selfish"
+      ],
+      "t": 1,
+      "izoh": "'friendly' teskarisi — 'unfriendly'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#49961173"
+    },
+    {
+      "q": "What is the opposite of \"polite\"?",
+      "v": [
+        "friendly",
+        "cowardly",
+        "rude",
+        "serious"
+      ],
+      "t": 2,
+      "izoh": "'polite' teskarisi — 'rude'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#ade5689f"
+    },
+    {
+      "q": "What is the opposite of \"rude\"?",
+      "v": [
+        "calm",
+        "friendly",
+        "polite",
+        "gloomy"
+      ],
+      "t": 2,
+      "izoh": "'rude' teskarisi — 'polite'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#756c7142"
+    },
+    {
+      "q": "What is the opposite of \"kind\"?",
+      "v": [
+        "patient",
+        "cruel",
+        "serious",
+        "mean"
+      ],
+      "t": 1,
+      "izoh": "'kind' teskarisi — 'cruel'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#4b0b55cf"
+    },
+    {
+      "q": "What is the opposite of \"selfish\"?",
+      "v": [
+        "unreliable",
+        "shy",
+        "generous",
+        "confident"
+      ],
+      "t": 2,
+      "izoh": "'selfish' teskarisi — 'generous'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#4b797cc5"
+    },
+    {
+      "q": "What is the opposite of \"brave\"?",
+      "v": [
+        "unambitious",
+        "cowardly",
+        "cruel",
+        "mean"
+      ],
+      "t": 1,
+      "izoh": "'brave' teskarisi — 'cowardly'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#22c95a89"
+    },
+    {
+      "q": "What is the opposite of \"funny\"?",
+      "v": [
+        "unkind",
+        "miserable",
+        "gloomy",
+        "serious"
+      ],
+      "t": 3,
+      "izoh": "'funny' teskarisi — 'serious'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#75500d38"
+    },
+    {
+      "q": "What is the opposite of \"serious\"?",
+      "v": [
+        "selfish",
+        "funny",
+        "dishonest",
+        "gloomy"
+      ],
+      "t": 1,
+      "izoh": "'serious' teskarisi — 'funny'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#4b5bd6b7"
+    },
+    {
+      "q": "What is the opposite of \"reliable\"?",
+      "v": [
+        "impatient",
+        "unreliable",
+        "mean",
+        "shy"
+      ],
+      "t": 1,
+      "izoh": "'reliable' teskarisi — 'unreliable'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#34343308"
+    },
+    {
+      "q": "What is the opposite of \"ambitious\"?",
+      "v": [
+        "selfish",
+        "cowardly",
+        "kind",
+        "unambitious"
+      ],
+      "t": 3,
+      "izoh": "'ambitious' teskarisi — 'unambitious'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#6b332392"
+    },
+    {
+      "q": "What is the opposite of \"cheerful\"?",
+      "v": [
+        "cowardly",
+        "gloomy",
+        "funny",
+        "employed"
+      ],
+      "t": 1,
+      "izoh": "'cheerful' teskarisi — 'gloomy'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#d5b11431"
+    },
+    {
+      "q": "What is the opposite of \"calm\"?",
+      "v": [
+        "unambitious",
+        "dishonest",
+        "unfriendly",
+        "nervous"
+      ],
+      "t": 3,
+      "izoh": "'calm' teskarisi — 'nervous'.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#b78ddd93"
+    },
+    {
+      "q": "She never lies; she is a very ___ person.",
+      "v": [
+        "shy",
+        "honest",
+        "lazy",
+        "confident"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'honest' — ma'nosi: halol.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#2a7ba038"
+    },
+    {
+      "q": "He always shares his money and food; he is so ___.",
+      "v": [
+        "confident",
+        "friendly",
+        "generous",
+        "rude"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'generous' — ma'nosi: saxiy.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#d06372f9"
+    },
+    {
+      "q": "At the party she didn't speak to anyone because she is ___.",
+      "v": [
+        "shy",
+        "cheerful",
+        "polite",
+        "generous"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob 'shy' — ma'nosi: uyatchan.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#c35cabad"
+    },
+    {
+      "q": "Before the exam he felt sure and ___ about his answers.",
+      "v": [
+        "ambitious",
+        "patient",
+        "generous",
+        "confident"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'confident' — ma'nosi: o'ziga ishonchli.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#889c0585"
+    },
+    {
+      "q": "You must be ___ when you teach small children.",
+      "v": [
+        "confident",
+        "shy",
+        "patient",
+        "reliable"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'patient' — ma'nosi: sabrli.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#c84d26d3"
+    },
+    {
+      "q": "He never does his homework; he is really ___.",
+      "v": [
+        "cheerful",
+        "calm",
+        "kind",
+        "lazy"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'lazy' — ma'nosi: dangasa.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#4b4ca066"
+    },
+    {
+      "q": "She studies eight hours every day; she is very ___.",
+      "v": [
+        "lazy",
+        "hard-working",
+        "generous",
+        "kind"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'hard-working' — ma'nosi: mehnatkash.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#fd84be9f"
+    },
+    {
+      "q": "Our new neighbours are warm and ___.",
+      "v": [
+        "serious",
+        "hard-working",
+        "friendly",
+        "funny"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'friendly' — ma'nosi: do'stona.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#e067e8f8"
+    },
+    {
+      "q": "A ___ person always says please and thank you.",
+      "v": [
+        "lazy",
+        "reliable",
+        "funny",
+        "polite"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'polite' — ma'nosi: odobli.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#a0e646e2"
+    },
+    {
+      "q": "It is ___ to interrupt people while they are speaking.",
+      "v": [
+        "calm",
+        "rude",
+        "selfish",
+        "patient"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'rude' — ma'nosi: qo'pol.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#86e40fe1"
+    },
+    {
+      "q": "The nurse was gentle and ___ to every patient.",
+      "v": [
+        "shy",
+        "kind",
+        "polite",
+        "generous"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'kind' — ma'nosi: mehribon.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#84f48557"
+    },
+    {
+      "q": "He only thinks about himself; he is ___.",
+      "v": [
+        "selfish",
+        "generous",
+        "shy",
+        "honest"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob 'selfish' — ma'nosi: xudbin.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#744c6d7d"
+    },
+    {
+      "q": "The ___ soldier ran into the fire to save the child.",
+      "v": [
+        "selfish",
+        "brave",
+        "shy",
+        "hard-working"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'brave' — ma'nosi: jasur.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#e4d7af0c"
+    },
+    {
+      "q": "His jokes are great; he is really ___.",
+      "v": [
+        "generous",
+        "calm",
+        "funny",
+        "rude"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'funny' — ma'nosi: kulgili.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#5889db4b"
+    },
+    {
+      "q": "During the meeting she was quiet and ___.",
+      "v": [
+        "generous",
+        "selfish",
+        "friendly",
+        "serious"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'serious' — ma'nosi: jiddiy.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#7191e47a"
+    },
+    {
+      "q": "You can always trust him; he is very ___.",
+      "v": [
+        "cheerful",
+        "reliable",
+        "polite",
+        "patient"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'reliable' — ma'nosi: ishonchli.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#a783d01d"
+    },
+    {
+      "q": "She wants to become a director one day; she is very ___.",
+      "v": [
+        "cheerful",
+        "rude",
+        "reliable",
+        "ambitious"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'ambitious' — ma'nosi: intiluvchan.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#c4e69bbc"
+    },
+    {
+      "q": "He smiled all morning; he was in a ___ mood.",
+      "v": [
+        "shy",
+        "reliable",
+        "polite",
+        "cheerful"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'cheerful' — ma'nosi: quvnoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#e6b95ef3"
+    },
+    {
+      "q": "Even in danger she stayed relaxed and ___.",
+      "v": [
+        "confident",
+        "reliable",
+        "calm",
+        "hard-working"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'calm' — ma'nosi: xotirjam.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#f36aad9f"
+    },
+    {
+      "q": "Don't be ___; give some of your sweets to your sister.",
+      "v": [
+        "kind",
+        "selfish",
+        "patient",
+        "generous"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'selfish' — ma'nosi: xudbin.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#e45153c1"
+    },
+    {
+      "q": "He told the teacher the truth, which was very ___ of him.",
+      "v": [
+        "rude",
+        "selfish",
+        "honest",
+        "kind"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'honest' — ma'nosi: halol.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#1c190ee1"
+    },
+    {
+      "q": "Please be ___ and wait; the doctor is coming soon.",
+      "v": [
+        "kind",
+        "lazy",
+        "patient",
+        "calm"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'patient' — ma'nosi: sabrli.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#f97b8e20"
+    },
+    {
+      "q": "She helped the old man cross the road; she is so ___.",
+      "v": [
+        "patient",
+        "honest",
+        "kind",
+        "serious"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'kind' — ma'nosi: mehribon.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#c0dd0f15"
+    },
+    {
+      "q": "He is ___ enough to speak in front of 500 people.",
+      "v": [
+        "generous",
+        "shy",
+        "confident",
+        "ambitious"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'confident' — ma'nosi: o'ziga ishonchli.",
+      "qiy": "orta",
+      "id": "ing_b1_m25#36b361f6"
+    }
+  ]
+}

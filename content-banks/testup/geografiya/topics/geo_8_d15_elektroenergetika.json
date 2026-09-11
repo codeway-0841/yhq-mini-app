@@ -1,0 +1,681 @@
+{
+  "nom": "15-dars: Elektroenergetika",
+  "bolim": "III bob. Milliy iqtisodiyotning tarkibiy tuzilishi",
+  "savollar": [
+    {
+      "q": "Milliy iqtisodiyotni jadal rivojlantirish uchun sanoatning qaysi tarmog’ida mahsulot ishlab chiqarishni boshqa tarmoqlarga qaraganda tezroq o’stirish lozim?",
+      "v": [
+        "elektroenergetika",
+        "yoqilg’i",
+        "metallurgiya",
+        "kimyo"
+      ],
+      "t": 0,
+      "izoh": "Milliy iqtisodiyotni jadal rivojlantirish uchun elektr energiyasi ishlab chiqarishni boshqa tarmoqlarga qaraganda tezroq o’stirish lozim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#f71fe8a5"
+    },
+    {
+      "q": "Mamlakatimizda ishlab chiqarilayotgan elektr energiyaning necha foizini issiqlik elektrostansiyalari bermoqda?",
+      "v": [
+        "90",
+        "80",
+        "85",
+        "95"
+      ],
+      "t": 0,
+      "izoh": "Mamlakatda ishlab chiqarilayotgan elektr energiyasining 90 foiziga yaqinini issiqlik elektrostansiya (IES)lari bermoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#48a94010"
+    },
+    {
+      "q": "Quvvati 1000 MW dan katta bo’lgan IESlarni belgilang: 1) Toshkent; 2) Farg’ona; 3) Sirdaryo; 4) Angren; 5) Yangi Angren; 6) Navoiy; 7) Muborak; 8) Tallimarjon",
+      "v": [
+        "1, 3, 5, 6, 8",
+        "2, 3, 5, 6, 7",
+        "1, 3, 4, 6, 8",
+        "2, 4, 5, 6, 7"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 29-rasm ma’lumotiga ko’ra, quvvati 1000 MW dan katta IESlar: Toshkent, Sirdaryo, Yangi Angren, Navoiy va Tallimarjon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#20786452"
+    },
+    {
+      "q": "Irtijor GESi qaysi viloyatda joylashgan?",
+      "v": [
+        "Samarqand",
+        "Toshkent",
+        "Farg’ona",
+        "Qashqadaryo"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 29-rasm (asosiy elektr stansiyalar) ma’lumotiga ko’ra, Irtijor GESi Samarqand viloyatida, Zarafshon daryosi havzasida joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#f90f441a"
+    },
+    {
+      "q": "Elektr energiyaning uchinchi afzalligi nimada?",
+      "v": [
+        "mahalliy yoqilg’ilardan keng foydalanish mumkinligi",
+        "simlar orqali uzatilishi",
+        "elektr energiyani qudratli elektr stansiyalarda ishlab chiqarish imkoniyati",
+        "iqtisodiyotning hamma jabhalarida foydalanilishi"
+      ],
+      "t": 0,
+      "izoh": "Elektr energiyaning simlar orqali uzatilishi - birinchi, iqtisodiyotning hamma jabhalarida foydalanilishi - ikkinchi, mahalliy yoqilg’idan keng foydalanish mumkinligi - uchinchi, qudratli elektr stansiyalarda ishlab chiqarish imkoniyati to’rtinchi afzallikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#aba5b4cb"
+    },
+    {
+      "q": "Quyidagi elektr stansiyalardan qaysi biri issiqlik elektr markazi (IEM) hisoblanadi?",
+      "v": [
+        "Muborak",
+        "Angren",
+        "Tallimarjon",
+        "Sirdaryo"
+      ],
+      "t": 0,
+      "izoh": "O’zbekistonda Farg’ona, Muborak va Toshkent IEMlari mavjud. Angren, Tallimarjon va Sirdaryo esa yirik IESlar hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#4b1fce38"
+    },
+    {
+      "q": "Ko’mir koni yaqinida joylashgan IESlarni toping.",
+      "v": [
+        "Angren va Yangi Angren",
+        "Toshkent va Navoiy",
+        "Sirdaryo va Tallimarjon",
+        "Taxiatosh va Navoiy"
+      ],
+      "t": 0,
+      "izoh": "Angren va Yangi Angren IESlari ko’mir koni yaqinida joylashtirilgan - bu yoqilg’ini tashib kelish xarajatini tejaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#581f0ccc"
+    },
+    {
+      "q": "Mamlakatimizdagi eng yirik Sirdaryo IES yiliga qancha miqdorda elektr energiya ishlab chiqaradi?",
+      "v": [
+        "13 mlrd kW·h",
+        "12 mlrd kW·h",
+        "10 mlrd kW·h",
+        "15 mlrd kW·h"
+      ],
+      "t": 0,
+      "izoh": "Birgina Sirdaryo IESning o’zi yiliga 13 mlrd kW·h elektr energiya beradi. Bunday ulkan IESlar boshqa viloyatlarni ham elektr bilan ta’minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#f654efb1"
+    },
+    {
+      "q": "Tallimarjon IESi qaysi viloyatda joylashgan?",
+      "v": [
+        "Qashqadaryo",
+        "Surxondaryo",
+        "Samarqand",
+        "Navoiy"
+      ],
+      "t": 0,
+      "izoh": "Istiqlol yillarida Qashqadaryo viloyatida Tallimarjon IESining 800 MWli birinchi blokining ishga tushirilishi tizimdagi ulkan loyihalardan biri sifatida e’tirof etildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#cf5a5d57"
+    },
+    {
+      "q": "Bir vaqtda issiqlik energiyasi ham ishlab chiqaradigan elektr stansiya qanday ataladi?",
+      "v": [
+        "issiqlik elektr markazi (IEM)",
+        "issiqlik markazi (IM)",
+        "termal stansiya (TS)",
+        "gidroelektroenergetika stansiyasi (GRES)"
+      ],
+      "t": 0,
+      "izoh": "Bir vaqtda issiqlik energiyasi ham ishlab chiqaradigan elektr stansiya issiqlik elektr markazi (IEM) deb ataladi. Ularda hosil bo’lgan issiq suvdan issiqxonalarni, binolarni isitishda foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#8dc77404"
+    },
+    {
+      "q": "Tallimarjon IESining ishga tushirilgan birinchi blokining quvvati qancha?",
+      "v": [
+        "800 MW",
+        "1000 MW",
+        "500 MW",
+        "600 MW"
+      ],
+      "t": 0,
+      "izoh": "Tallimarjon IESining 800 MWli birinchi blokining ishga tushirilishi tizimdagi ulkan loyihalardan biri sifatida e’tirof etildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#1819d118"
+    },
+    {
+      "q": "IEMdan yuboriladigan issiq suv necha km dan olis masofada sovib qoladi?",
+      "v": [
+        "20",
+        "10",
+        "15",
+        "30"
+      ],
+      "t": 0,
+      "izoh": "Issiq suv 20 km dan olis masofada sovib qoladi. Shu sababli IEMlar yirik korxonalar yaqinida va yirik shaharlardagina quriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#2df7c9e1"
+    },
+    {
+      "q": "IEMlar qayerlarda quriladi?",
+      "v": [
+        "yirik korxonalar yaqinida va yirik shaharlarda",
+        "faqat viloyat markazlarida",
+        "faqat yoqilg’i konlari yaqinida",
+        "faqat qishloq joylarda"
+      ],
+      "t": 0,
+      "izoh": "Issiq suv 20 km dan olis masofada sovib qolgani sababli IEMlar yirik korxonalar yaqinida va yirik shaharlardagina quriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#3874b090"
+    },
+    {
+      "q": "O’zbekistonda qaysi shaharlarda yirik IEMlar mavjud?",
+      "v": [
+        "Toshkent, Muborak, Farg’ona",
+        "Toshkent, Samarqand, Andijon",
+        "Toshkent, Farg’ona, Kattaqo’rg’on",
+        "Toshkent, Samarqand, Olmaliq"
+      ],
+      "t": 0,
+      "izoh": "O’zbekistonda Farg’ona, Muborak va Toshkent IEMlari mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#c6ad6d25"
+    },
+    {
+      "q": "Qanday turdagi elektr stansiya ancha tez va arzon quriladi?",
+      "v": [
+        "issiqlik elektrostansiyasi",
+        "gidroelektrostansiya",
+        "atom elektrostansiyasi",
+        "shamol elektrostansiyasi"
+      ],
+      "t": 0,
+      "izoh": "IES ancha tez va arzon quriladi. Iqtisodiyot uchun elektr energiya tannarxining past bo’lishi muhimdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#76f2b7d8"
+    },
+    {
+      "q": "Eng arzon elektr energiya qanday turdagi elektr stansiyalarda ishlab chiqarilmoqda?",
+      "v": [
+        "tog’ daryolariga qurilgan GESlar",
+        "tabiiy gaz asosida ishlaydigan IESlar",
+        "tekislik daryolariga qurilgan GESlar",
+        "ko’mir asosida ishlaydigan IESlar"
+      ],
+      "t": 0,
+      "izoh": "Tog’ daryolariga qurilgan GESlarda eng arzon elektr energiya ishlab chiqarilmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#211ba5e4"
+    },
+    {
+      "q": "GESlar ishlab chiqargan elektr energiyaning tannarxi quvvati teng bo’lgan IESlardagidan necha barobar arzon bo’ladi?",
+      "v": [
+        "4",
+        "2",
+        "3",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "GESlar ishlab chiqargan elektr energiyaning tannarxi arzon bo’ladi - quvvati teng bo’lgan IESlardagidan 4 barobar arzon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#1c19c7c3"
+    },
+    {
+      "q": "Mamlakatimizda birinchi GES qachon va qayerda qurilgan?",
+      "v": [
+        "1926-yilda Bo’zsuv kanalida",
+        "1926-yilda Chirchiq daryosida",
+        "1924-yilda Bo’zsuv kanalida",
+        "1924-yilda Chirchiq daryosida"
+      ],
+      "t": 0,
+      "izoh": "Mamlakatimizda birinchi GES 1926-yil Bo’zsuv kanalida qurildi. O’zbekistonda dastlab, asosan, GESlar qurilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#70fb369d"
+    },
+    {
+      "q": "Mamlakat sanoatining rivojlanishida muhim ahamiyat kasb etgan GESlarni belgilang: 1) G’azalkent; 2) Xishrav; 3) Farhod; 4) Salor; 5) Tuyamo’yin; 6) Tovoqsoy; 7) Xo’jakent",
+      "v": [
+        "2, 3, 5, 7",
+        "1, 3, 5, 7",
+        "2, 4, 6, 7",
+        "1, 2, 3, 5"
+      ],
+      "t": 0,
+      "izoh": "Keyinchalik qurilgan Xishrav, Tuyamo’yin, Farhod, Xo’jakent GESlari mamlakat sanoatining rivojlanishida muhim ahamiyat kasb etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#c90332cd"
+    },
+    {
+      "q": "O’zbekistonda GES qurish bilan bir yo’la qanday imkoniyatlar yaratiladi?",
+      "v": [
+        "elektr energiya olish, yerlarni sug’orish, xo’jaliklarni suv bilan ta’minlash va baliqchilikni rivojlantirish",
+        "faqat elektr energiya olish",
+        "faqat yerlarni sug’orish",
+        "faqat baliqchilikni rivojlantirish"
+      ],
+      "t": 0,
+      "izoh": "O’zbekistonda GES qurish bilan bir yo’la elektr energiya ishlab chiqarish, yerlarni sug’orish, xo’jaliklarni suv bilan ta’minlash, baliqchilikni rivojlantirish imkoniyatlari yaratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#b7f8e35d"
+    },
+    {
+      "q": "GESlar kaskadi - bu...",
+      "v": [
+        "bir daryoda qurilgan GESlar pog’onasi",
+        "bir-biriga uzoq qurilgan GESlar",
+        "yirik shaharlar atrofida qurilgan GESlar",
+        "suv ombori to’g’onida qurilgan GESlar"
+      ],
+      "t": 0,
+      "izoh": "Tezoqar daryolarda GESlarni bir-biriga yaqin qurish mumkin. Natijada GESlar kaskadi (pog’onasi) shakllanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#c0d45092"
+    },
+    {
+      "q": "Chirchiq-Bo’zsuv gidroenergetika kaskadida nechta GES mavjud?",
+      "v": [
+        "19 ta",
+        "12 ta",
+        "17 ta",
+        "21 ta"
+      ],
+      "t": 0,
+      "izoh": "Chirchiq-Bo’zsuv energetika inshootidagi GESlar kaskadi GESlar soniga (19 ta) ko’ra jahonda oldingi o’rinlardan birini egallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#802bb43b"
+    },
+    {
+      "q": "Chirchiq-Bo’zsuv gidroenergetika kaskadida quvvati 100 ming kW dan katta bo’lgan GESlarni aniqlang.",
+      "v": [
+        "Chorvoq, Xo’jakent, G’azalkent",
+        "Bo’zsuv, Salor, Bo’rijar",
+        "Tovoqsoy, Loginov, Oqtepa",
+        "Chorvoq, Bo’zsuv, G’azalkent"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 31-rasm ma’lumotiga ko’ra, kaskaddagi quvvati 100 ming kW dan katta GESlar: Chorvoq, Xo’jakent va G’azalkent.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#2c2777db"
+    },
+    {
+      "q": "O’zbekistonda mavjud bo’lgan IES va GESlarning umumiy soni qancha?",
+      "v": [
+        "37 ta",
+        "42 ta",
+        "35 ta",
+        "32 ta"
+      ],
+      "t": 0,
+      "izoh": "O’zbekistondagi yirik issiqlik elektrostansiyalari va gidroelektrostansiyalarning umumiy soni 37 tani tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#9ddbee8c"
+    },
+    {
+      "q": "O’zbekistondagi barcha elektrostansiyalarda yiliga qancha elektr energiya ishlab chiqariladi?",
+      "v": [
+        "60,1 mlrd kW·h",
+        "50,7 mlrd kW·h",
+        "53,3 mlrd kW·h",
+        "55,9 mlrd kW·h"
+      ],
+      "t": 0,
+      "izoh": "Elektr stansiyalarda yiliga 60 mlrd kW·h atrofida elektr energiya hosil qilinmoqda (32-rasmga ko’ra 2017-yilda 60,1 mlrd kW·h).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#d77c64b5"
+    },
+    {
+      "q": "Quvvati 10-100 ming kW bo’lgan GESlarni belgilang: 1) Tovoqsoy; 2) 1-Oqqovoq; 3) Oqtepa; 4) 1-Quyibo’zsuv; 5) 4-Quyibo’zsuv; 6) Bo’zsuv; 7) Qibray",
+      "v": [
+        "1, 3, 4, 7",
+        "1, 2, 5, 6",
+        "2, 5, 6, 7",
+        "2, 4, 6, 7"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 31-rasm ma’lumotiga ko’ra, quvvati 10-100 ming kW bo’lgan GESlar: Tovoqsoy, Oqtepa, 1-Quyibo’zsuv va Qibray.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#a407e89b"
+    },
+    {
+      "q": "1970-yilga nisbatan 1980-yilda elektr energiya ishlab chiqarish qanchaga o’sdi?",
+      "v": [
+        "15,6 mlrd kW·h",
+        "20,1 mlrd kW·h",
+        "21,0 mlrd kW·h",
+        "12,6 mlrd kW·h"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 32-rasm ma’lumotiga ko’ra, elektr energiya ishlab chiqarish 1970-yilda 18,3 mlrd kW·h, 1980-yilda 33,9 mlrd kW·h bo’lgan - o’sish 15,6 mlrd kW·h.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#9c1da11f"
+    },
+    {
+      "q": "1 kg uran (shartli uran yoqilg’isi) qancha ko’mir yonganda beradigan miqdorda issiqlik beradi?",
+      "v": [
+        "2,5 ming t",
+        "2,0 ming t",
+        "3,0 ming t",
+        "3,5 ming t"
+      ],
+      "t": 0,
+      "izoh": "1 kg uran (shartli uran yoqilg’isi) 2,5 ming tonna ko’mir yonganda beradigan miqdorda issiqlik beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#b43d69e9"
+    },
+    {
+      "q": "Bugungi kunda O’zbekistonda elektr energiyasiga bo’lgan talab qanchani tashkil etadi?",
+      "v": [
+        "69 mlrd kW·h",
+        "60 mlrd kW·h",
+        "72 mlrd kW·h",
+        "65 mlrd kW·h"
+      ],
+      "t": 0,
+      "izoh": "Ma’lumotlarga ko’ra, bugungi kunda O’zbekistonda elektr energiyasiga bo’lgan talab 69 milliard kW·h ni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#7c231b3c"
+    },
+    {
+      "q": "Issiqlik elektrostansiyalarida yiliga qancha miqdorda tabiiy gaz, mazut va ko’mir yoqilmoqda (2018-yil)?",
+      "v": [
+        "16,5 mlrd m kub; 86 ming t; 2,3 mln t",
+        "15,5 mlrd m kub; 90 ming t; 2,0 mln t",
+        "17,5 mlrd m kub; 86 ming t; 2,0 mln t",
+        "16,5 mlrd m kub; 95 ming t; 2,5 mln t"
+      ],
+      "t": 0,
+      "izoh": "Elektr energiyaning asosiy qismini hosil qilish uchun IESlarda yiliga 16,5 milliard kub metr tabiiy gaz, 86 ming tonna mazut va 2,3 million tonna ko’mir sarflanmoqda (2018-yil).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#57be356a"
+    },
+    {
+      "q": "Xalqaro atom energiyasi agentligining ma’lumotlariga ko’ra, hozirda jahonning nechta mamlakatida AESlar ishlab turibdi?",
+      "v": [
+        "31",
+        "25",
+        "20",
+        "35"
+      ],
+      "t": 0,
+      "izoh": "Xalqaro atom energiyasi agentligining ma’lumotlariga ko’ra, hozirda jahonning 31 mamlakatida AESlar ishlab turibdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#d5cd412a"
+    },
+    {
+      "q": "«Fizika-Quyosh» inshooti Toshkent viloyatining qaysi tumanida joylashgan?",
+      "v": [
+        "Parkent",
+        "Bostonliq",
+        "Ohangaron",
+        "Piskent"
+      ],
+      "t": 0,
+      "izoh": "Ilmiy izlanishlar natijasida Toshkent viloyatining Parkent tumanida Quyosh energiyasidan foydalanadigan «Fizika-Quyosh» inshooti faoliyat ko’rsatmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#f9d333db"
+    },
+    {
+      "q": "AESlarda yoqilg’i sifatida nimadan foydalaniladi?",
+      "v": [
+        "uran",
+        "torf",
+        "slanes",
+        "mazut"
+      ],
+      "t": 0,
+      "izoh": "Boshqa issiqlik elektr stansiyalaridan farqli ravishda, AESlarda elektr quvvatini olishda faol radioaktiv unsur - uran atomlaridan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo_8_d15_elektroenergetika#45b9af30"
+    },
+    {
+      "q": "O’zbekiston AES qurish bo’yicha qaysi mamlakat korporatsiyasi bilan kelishuvga erishdi?",
+      "v": [
+        "Rossiya",
+        "Fransiya",
+        "Xitoy",
+        "Hindiston"
+      ],
+      "t": 0,
+      "izoh": "Rossiyaning «Rosatom» davlat korporatsiyasi bilan hamkorlikda atom elektr stansiyasini qurish bo’yicha kelishuvga erishildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#4030534c"
+    },
+    {
+      "q": "AES barpo etilishi natijasida yiliga qancha miqdordagi tabiiy gaz tejaladi?",
+      "v": [
+        "3,7 mlrd kub m",
+        "5,0 mlrd kub m",
+        "2,5 mlrd kub m",
+        "4,2 mlrd kub m"
+      ],
+      "t": 0,
+      "izoh": "Atom elektr stansiyasi barpo etilishi natijasida yiliga 3,7 milliard kub metr tabiiy gaz tejaladi. Bu manba qayta ishlanib, yuqori qo’shilgan qiymatli neft-kimyo mahsulotlari ishlab chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#5f165940"
+    },
+    {
+      "q": "Turli xildagi elektr stansiyalarning yuqori voltli elektr uzatish liniyalari bilan birlashtirilib, bir markazdan boshqarib turilishi nima deyiladi?",
+      "v": [
+        "energetika tizimi",
+        "elektroenergetika tizimi",
+        "markazlashtirilgan energetika",
+        "elektroenergetika majmuasi"
+      ],
+      "t": 0,
+      "izoh": "Darslik ta’rifiga ko’ra, turli xildagi elektr stansiyalarning yuqori voltli elektr uzatish liniyalari bilan birlashtirilib, bir markazdan boshqarib turilishi energetika tizimi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#379168e0"
+    },
+    {
+      "q": "AES qurilishi natijasida atrof-muhitga tarqaladigan is gazi hajmi yiliga qanchaga kamayadi?",
+      "v": [
+        "3 mln t",
+        "2 mln t",
+        "5 mln t",
+        "1 mln t"
+      ],
+      "t": 0,
+      "izoh": "Atom energiyasi ekologik toza ham: bunday stansiyalar zararli is gazini hosil qilmaydi. Natijada tabiiy gazni yoqishdan hosil bo’ladigan is gazi hajmi yiliga 3 million tonnaga kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#a663b5e7"
+    },
+    {
+      "q": "O’zbekiston o’z ehtiyojidan ortgan elektr energiyani qaysi davlatlarga eksport qilmoqda?",
+      "v": [
+        "Tojikiston, Qozog’iston, Afg’oniston",
+        "Qozog’iston, Qirg’iziston, Tojikiston",
+        "Qozog’iston, Turkmaniston, Tojikiston",
+        "Qirg’iziston, Tojikiston, Afg’oniston"
+      ],
+      "t": 0,
+      "izoh": "O’zbekiston o’z ehtiyojidan ortgan elektr energiyasini Tojikiston, Qozog’iston va Afg’onistonga eksport qilmoqda. Davlatlararo import-eksport O’zbekiston energetika tizimi vositasida qulay amalga oshmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#7ad62ae7"
+    },
+    {
+      "q": "O’zbekistonda qurilayotgan AESning umumiy quvvati (megavatt) qanchaga teng bo’lishi ko’zda tutilmoqda?",
+      "v": [
+        "2400",
+        "1200",
+        "2000",
+        "3500"
+      ],
+      "t": 0,
+      "izoh": "Mazkur kompleks 2 ta energoblokdan iborat bo’lib, har birining quvvati 1 ming 200 megavatt bo’lishi ko’zda tutilmoqda - jami 2400 MW.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#3eec5d77"
+    },
+    {
+      "q": "GES nomlari to’g’ri ko’rsatilgan javobni belgilang.",
+      "v": [
+        "Xo’jakent, To’palang, Xonobod",
+        "Muborak, Shirmonbuloq, Tuyamo’yin",
+        "Shohimardon, Tallimarjon, Chorvoq",
+        "G’azalkent, Xo’jakent, Quvasoy"
+      ],
+      "t": 0,
+      "izoh": "Xo’jakent, To’palang va Xonobod - GESlardir. Muborak IEM, Tallimarjon esa IES hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#e3112c17"
+    },
+    {
+      "q": "Elektr energiyaning tannarxi, avvalo, nimaga bog’liq?",
+      "v": [
+        "elektr stansiyalarda ishlatiladigan yoqilg’ini qazib olish va tashib keltirish xarajatlariga",
+        "faqat stansiya quvvatiga",
+        "faqat ishchilar soniga",
+        "faqat stansiyaning yoshiga"
+      ],
+      "t": 0,
+      "izoh": "Elektr energiyaning tannarxi, avvalo, elektr stansiyalarda ishlatiladigan yoqilg’ini qazib olish va tashib keltirish xarajatlariga bog’liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#0a0f57ca"
+    },
+    {
+      "q": "Agar yoqilg’ini tashib kelish xarajati elektr energiyasini uzatish xarajatidan ortiq bo’lsa, elektr stansiyani qayerda qurish foydali?",
+      "v": [
+        "yoqilg’i manbayiga yaqin joyda",
+        "iste’molchiga yaqin joyda",
+        "mamlakat markazida",
+        "chegara hududlarida"
+      ],
+      "t": 0,
+      "izoh": "Agar yoqilg’ini tashib kelish xarajati elektr energiyasini uzatish xarajatidan ortiq bo’lsa, elektr stansiyani yoqilg’i manbayiga yaqin joyda, agar energiyani uzatish qimmatga tushsa, uni iste’molchiga yaqin joyda qurish foydalidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#89fca577"
+    },
+    {
+      "q": "O’zbekistonda dastlab, asosan, nima uchun GESlar qurilgan?",
+      "v": [
+        "suv quvvati manbalari mavjudligi va IESda ishlatishga yoqilg’i bo’lmagani uchun",
+        "GES qurish IESdan tezroq bo’lgani uchun",
+        "chet el mutaxassislari tavsiya qilgani uchun",
+        "daryolar sersuv bo’lmagani uchun"
+      ],
+      "t": 0,
+      "izoh": "O’zbekistonda suv quvvati manbalarining mavjudligi va ayni vaqtda issiqlik elektr stansiyasida ishlatishga yoqilg’i bo’lmaganidan dastlab, asosan, GESlar qurilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#295c9e2b"
+    },
+    {
+      "q": "O’zbekistonda qurilayotgan AESni qachongacha ishga tushirish rejalashtirilgan?",
+      "v": [
+        "2028-yilgacha",
+        "2025-yilgacha",
+        "2030-yilgacha",
+        "2035-yilgacha"
+      ],
+      "t": 0,
+      "izoh": "Atom elektr stansiyasi uchun dunyodagi eng xavfsiz va zamonaviy energoblok tanlab olingan. Uni 2028-yilgacha ishga tushirish rejalashtirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d15_elektroenergetika#99ae1f9d"
+    },
+    {
+      "q": "Energetika tizimi tufayli qanday qulaylik yuzaga keladi?",
+      "v": [
+        "yil fasllari va sutka vaqtidan qat’i nazar iste’molchilar elektr energiya bilan bir maromda ta’minlanadi",
+        "elektr energiya narxi keskin arzonlashadi",
+        "yoqilg’i sarfi butunlay to’xtaydi",
+        "barcha stansiyalar GESga aylantiriladi"
+      ],
+      "t": 0,
+      "izoh": "Energetika tizimi tufayli yil fasllaridan va sutkaning qaysi vaqtidan qat’i nazar iste’molchilar elektr energiya bilan bir maromda ta’minlanadi. O’zbekistondagi barcha yirik elektr stansiyalar o’zaro birlashtirilib, yagona energetika tizimi bunyod etildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d15_elektroenergetika#dbf7c86e"
+    }
+  ]
+}

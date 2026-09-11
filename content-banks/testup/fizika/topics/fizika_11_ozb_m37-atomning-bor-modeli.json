@@ -1,0 +1,606 @@
+{
+  "nom": "37-mavzu. Atomning Bor Modeli",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Atomning tuzilishi haqidagi birinchi modelni kim taklif qilgan?",
+      "v": [
+        "J. J. Tomson",
+        "D. Rezerford",
+        "N. Bor",
+        "I. Balmer"
+      ],
+      "t": 0,
+      "izoh": "1903-yilda ingliz fizigi J. J. Tomson atomning birinchi modelini taklif qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#0dbd8998"
+    },
+    {
+      "q": "Tomson modeliga ko'ra atom nima sifatida tasavvur qilinadi?",
+      "v": [
+        "Massasi tekis taqsimlangan musbat zaryadli shar, uning ichida elektronlar joylashgan",
+        "Musbat zaryadli kichik yadro va uning atrofida aylanuvchi elektronlar",
+        "Faqat neytral zarradan iborat kichik shar",
+        "Proton va neytronlardan iborat zich yadro"
+      ],
+      "t": 0,
+      "izoh": "Tomson modelida atom — tekis musbat zaryadli shar bo'lib, elektronlar uning ichida (tarvuz urug'lari singari) joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#275bdb49"
+    },
+    {
+      "q": "Tomson modelida atom qanday jismga o'xshatiladi?",
+      "v": [
+        "Tarvuzga (elektronlar — tarvuz urug'lari singari)",
+        "Quyosh sistemasiga",
+        "Shar tayoqchasiga",
+        "Zanjirga"
+      ],
+      "t": 0,
+      "izoh": "Tomson modelida atom tarvuzga, elektronlar esa tarvuzning urug'lariga o'xshatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#5ea3540c"
+    },
+    {
+      "q": "Atomning planetar (yadroviy) modelini kim va qachon taklif qilgan?",
+      "v": [
+        "D. Rezerford, 1911-yilda",
+        "J. J. Tomson, 1903-yilda",
+        "N. Bor, 1913-yilda",
+        "A. Eynshteyn, 1905-yilda"
+      ],
+      "t": 0,
+      "izoh": "Rezerford 1911-yilda o'z tajribalariga tayanib atomning yadroviy (planetar) modelini taklif qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#e5373fe7"
+    },
+    {
+      "q": "Rezerfordning planetar modeliga ko'ra atom nimadan tashkil topgan?",
+      "v": [
+        "Yadrodan va uning atrofida harakatlanuvchi elektronlardan",
+        "Tekis taqsimlangan musbat zaryadli shardan",
+        "Faqat proton va neytronlardan",
+        "Ikkita bir xil zaryadli shardan"
+      ],
+      "t": 0,
+      "izoh": "Planetar modelda atom yadro va uning atrofida yopiq orbitalar bo'ylab harakatlanuvchi elektronlardan tashkil topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#4b06c9a3"
+    },
+    {
+      "q": "Atomning o'lchami taxminan qancha?",
+      "v": [
+        "10⁻¹⁰ m",
+        "10⁻¹⁴ m",
+        "10⁻¹⁵ m",
+        "10⁻⁸ m"
+      ],
+      "t": 0,
+      "izoh": "Atomning o'lchami ≈10⁻¹⁰ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#480a2b11"
+    },
+    {
+      "q": "Atomning tuzilishini bilvosita o'rganishda qanday xarakteristikadan foydalaniladi?",
+      "v": [
+        "Atomning nurlanish spektri",
+        "Atomning og'irligi",
+        "Atomning rangi",
+        "Atomning harorati"
+      ],
+      "t": 0,
+      "izoh": "Atomning tuzilishini bilvosita o'rganish uchun nurlanish spektri ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#39e50376"
+    },
+    {
+      "q": "Vodorod spektri chiziqlari chastotalari uchun formulani kim topgan?",
+      "v": [
+        "I. Balmer",
+        "N. Bor",
+        "D. Rezerford",
+        "A. Eynshteyn"
+      ],
+      "t": 0,
+      "izoh": "Shveysariyalik fizik I. Balmer 1885-yilda vodorod spektri chiziqlari chastotalari formulasini topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#412c9761"
+    },
+    {
+      "q": "Balmer formulasidagi Ridberg doimiysi R qanchaga teng?",
+      "v": [
+        "3,29·10¹⁵ Gs",
+        "1,6·10⁻¹⁹ Gs",
+        "6,63·10⁻³⁴ Gs",
+        "3·10⁸ Gs"
+      ],
+      "t": 0,
+      "izoh": "R = 3,29·10¹⁵ Hz — Ridberg doimiysi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#42bc7d0b"
+    },
+    {
+      "q": "Balmer formulasiga ko'ra vodorod spektri qanday ko'rinishga ega?",
+      "v": [
+        "Uzlukli chiziqlardan iborat",
+        "Uzluksiz spektr",
+        "Bitta qalin chiziq",
+        "Spektr yo'q"
+      ],
+      "t": 0,
+      "izoh": "Balmer formulasiga muvofiq vodorod spektri uzlukli (chiziqli) spektrdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#f2d826e4"
+    },
+    {
+      "q": "Rezerfordning yadroviy modeli nimani tushuntirib bera olmadi?",
+      "v": [
+        "Atomning spektral qonuniyatlarini",
+        "Atomning massasini",
+        "Atomning zaryadini",
+        "Elektronning mavjudligini"
+      ],
+      "t": 0,
+      "izoh": "Rezerford modeli atomning spektral qonuniyatlarini tushuntirib bera olmadi va klassik fizika qonunlariga zid edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#39dc2f2f"
+    },
+    {
+      "q": "Rezerford modelining birinchi kamchiligi nimadan iborat?",
+      "v": [
+        "Elektron tezlanish bilan harakatlanganda energiya yo'qotib, yadroga qulashi kerak (atom nostabil)",
+        "Elektron yadrodan juda uzoqda joylashgan",
+        "Atomda protonlar mavjud emas",
+        "Elektronlar harakatlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Klassik nazariyaga ko'ra tezlanish bilan harakatlanuvchi elektron energiya yo'qotib yadroga qulashi, atom esa yo'qolishi kerak edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#1ef05aaa"
+    },
+    {
+      "q": "Rezerford modelining ikkinchi kamchiligi nimadan iborat?",
+      "v": [
+        "Model bo'yicha uzluksiz spektr kuzatilishi kerak, amalda esa spektr chiziqli",
+        "Model atomning massasini noto'g'ri ko'rsatadi",
+        "Modelda neytron hisobga olinmagan",
+        "Modelda foton mavjud emas"
+      ],
+      "t": 0,
+      "izoh": "Model bo'yicha elektron nurlanishi chastotasi uzluksiz ortib, uzluksiz spektr hosil qilishi kerak edi, lekin tajribada spektr chiziqli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#6779cd53"
+    },
+    {
+      "q": "Vodorod atomi nazariyasi qachon yaratilgan?",
+      "v": [
+        "1913-yilda",
+        "1903-yilda",
+        "1911-yilda",
+        "1885-yilda"
+      ],
+      "t": 0,
+      "izoh": "1913-yilda Rezerford modeliga kvant nazariyasi tatbiq etilib, vodorod atomi nazariyasi yaratildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#c669bfd3"
+    },
+    {
+      "q": "Bor nazariyasining asosini nechta postulat tashkil qiladi?",
+      "v": [
+        "Ikkita",
+        "Uchta",
+        "Bitta",
+        "To'rtta"
+      ],
+      "t": 0,
+      "izoh": "Bor nazariyasining asosini ikkita postulat tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#6816e7fc"
+    },
+    {
+      "q": "Borning birinchi postulati nimani bildiradi?",
+      "v": [
+        "Atomda statsionar holatlar mavjud va elektron bu holatlarda nurlanmaydi",
+        "Elektron har doim foton chiqaradi",
+        "Elektron istalgan orbitada harakatlanishi mumkin",
+        "Atom doimo uyg'ongan holatda bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Statsionar holatlar haqidagi postulat: elektron statsionar orbitalarda tezlanish bilan harakatlansa ham nurlanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#c933331a"
+    },
+    {
+      "q": "Statsionar orbitadagi elektronning impuls momenti qanday shartni qanoatlantiradi?",
+      "v": [
+        "mₑυₙrₙ = nħ",
+        "mₑυₙrₙ = nR",
+        "mₑυₙrₙ = hν",
+        "mₑυₙrₙ = Eₙ"
+      ],
+      "t": 0,
+      "izoh": "Elektronning impuls momenti kvantlangan: mₑ·υₙ·rₙ = n·ħ, bu yerda n — bosh kvant soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#c44990bd"
+    },
+    {
+      "q": "Bosh kvant soni n qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "Nolga teng bo'lmagan butun sonlar",
+        "Istalgan haqiqiy sonlar",
+        "Faqat manfiy sonlar",
+        "Faqat kasr sonlar"
+      ],
+      "t": 0,
+      "izoh": "n — nolga teng bo'lmagan butun son bo'lib, bosh kvant soni deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#424566d2"
+    },
+    {
+      "q": "Borning birinchi postulati Rezerford modelining qaysi kamchiligini bartaraf qiladi?",
+      "v": [
+        "Atomning nostabil (yo'qolib ketuvchi) ekanligi kamchiligini",
+        "Uzluksiz spektr kamchiligini",
+        "Yadro massasi kamchiligini",
+        "Proton zaryadi kamchiligini"
+      ],
+      "t": 0,
+      "izoh": "Birinchi postulat bo'yicha elektron statsionar orbitada energiya yo'qotmaydi, demak yadroga tushmaydi — atom barqaror.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#4a52a281"
+    },
+    {
+      "q": "Borning chastotalar haqidagi (ikkinchi) postulati nimani bildiradi?",
+      "v": [
+        "Elektron bir statsionar orbitadan ikkinchisiga o'tganda energiyasi holatlar energiyalari farqiga teng bitta foton chiqaradi yoki yutadi",
+        "Elektron istalgan chastotali foton chiqaradi",
+        "Atom faqat infraqizil nur chiqaradi",
+        "Elektron o'tishsiz doimiy nurlanadi"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi postulat: hν = Eₙ − Eₘ, foton energiyasi ikki statsionar holat energiyalari farqiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#64b0e571"
+    },
+    {
+      "q": "Agar Eₙ > Eₘ bo'lsa, elektron o'tishida nima ro'y beradi?",
+      "v": [
+        "Foton chiqariladi",
+        "Foton yutiladi",
+        "Atom parchalanadi",
+        "Hech narsa bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Eₙ > Eₘ bo'lsa, elektron katta energiyali holatdan kichikroq holatga o'tib, foton chiqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#08545be1"
+    },
+    {
+      "q": "Elektron yadrodan uzoqroq orbitadan yaqinroq orbitaga o'tganda nima sodir bo'ladi?",
+      "v": [
+        "Foton chiqariladi",
+        "Foton yutiladi",
+        "Elektron yo'qoladi",
+        "Atom ionlashadi"
+      ],
+      "t": 0,
+      "izoh": "Elektron katta energiyali holatdan kichik energiyali holatga o'tganda foton chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#7d78b5f2"
+    },
+    {
+      "q": "Agar Eₙ < Eₘ bo'lsa, nima yuz beradi?",
+      "v": [
+        "Foton yutiladi va elektron uzoqroq orbitaga o'tadi",
+        "Foton chiqariladi",
+        "Atom yemiriladi",
+        "Elektron tinch qoladi"
+      ],
+      "t": 0,
+      "izoh": "Eₙ < Eₘ bo'lsa foton yutiladi va elektron yadrodan uzoqroq statsionar orbitaga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#2eff6d16"
+    },
+    {
+      "q": "Borning ikkinchi postulati Rezerford modelining qaysi kamchiligini bartaraf qiladi?",
+      "v": [
+        "Uzluksiz spektr kamchiligini (spektr chiziqli ekanini tushuntiradi)",
+        "Atomning nostabilligi kamchiligini",
+        "Yadro kattaligi kamchiligini",
+        "Neytron yo'qligi kamchiligini"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi postulatga ko'ra foton faqat ma'lum chastotalarda chiqariladi, shuning uchun spektr uzlukli (chiziqli) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#7618eaae"
+    },
+    {
+      "q": "Birinchi Bor radiusi rB qanchaga teng?",
+      "v": [
+        "0,529·10⁻¹⁰ m",
+        "1,6·10⁻¹⁹ m",
+        "3·10⁸ m",
+        "10⁻¹⁴ m"
+      ],
+      "t": 0,
+      "izoh": "Birinchi statsionar orbita radiusi — birinchi Bor radiusi: rB = 0,529·10⁻¹⁰ m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#79b282e2"
+    },
+    {
+      "q": "Birinchi Bor radiusi atom fizikasida nima sifatida ishlatiladi?",
+      "v": [
+        "Uzunlik birligi sifatida",
+        "Vaqt birligi sifatida",
+        "Energiya birligi sifatida",
+        "Massa birligi sifatida"
+      ],
+      "t": 0,
+      "izoh": "Birinchi Bor radiusi atom fizikasida uzunlik birligi sifatida foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#dddc23b1"
+    },
+    {
+      "q": "Vodorod atomining to'la energiyasi qanday ishoraga ega va bu nimani bildiradi?",
+      "v": [
+        "Manfiy; elektron va protonni bir butun atom sifatida saqlab turuvchi energiyani bildiradi",
+        "Musbat; atomning erkinligini bildiradi",
+        "Nol; atomning beqarorligini bildiradi",
+        "Manfiy; atomning parchalanishini bildiradi"
+      ],
+      "t": 0,
+      "izoh": "Vodorod atomining energiyasi manfiy bo'lib, elektronning bog'langan holatda ekanligini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#ac06ff25"
+    },
+    {
+      "q": "n = 1 holat qanday ataladi?",
+      "v": [
+        "Asosiy energetik holat",
+        "G'alayonlangan holat",
+        "Metastabil holat",
+        "Erkin holat"
+      ],
+      "t": 0,
+      "izoh": "n = 1 holat eng turg'un holat bo'lib, asosiy energetik holat deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#d236adc8"
+    },
+    {
+      "q": "n > 1 holatlar qanday ataladi?",
+      "v": [
+        "G'alayonlangan (uyg'ongan) holatlar",
+        "Asosiy holatlar",
+        "Erkin holatlar",
+        "Statsionar bo'lmagan holatlar"
+      ],
+      "t": 0,
+      "izoh": "n > 1 holatlar g'alayonlangan (uyg'ongan) holatlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#e6b8b2bc"
+    },
+    {
+      "q": "Vodorod atomini asosiy holatdan ionlashtirish energiyasi qancha?",
+      "v": [
+        "13,6 eV",
+        "3,4 eV",
+        "10,2 eV",
+        "1,51 eV"
+      ],
+      "t": 0,
+      "izoh": "Vodorod atomini ionlashtirish energiyasi 13,6 eV ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#300c3eb4"
+    },
+    {
+      "q": "Vodorod atomining asosiy holatidagi elektron energiyasi qancha?",
+      "v": [
+        "−13,6 eV",
+        "+13,6 eV",
+        "0 eV",
+        "−3,4 eV"
+      ],
+      "t": 0,
+      "izoh": "Asosiy holatda elektronning energiyasi −13,6 eV; manfiylik elektronning bog'langanligini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#acc1dbb9"
+    },
+    {
+      "q": "Erkin holatdagi elektronning energiyasi qanchaga teng deb qabul qilingan?",
+      "v": [
+        "Nolga",
+        "13,6 eV ga",
+        "−13,6 eV ga",
+        "1 eV ga"
+      ],
+      "t": 0,
+      "izoh": "Erkin holatdagi elektron energiyasi nolga teng deb qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#d47833cc"
+    },
+    {
+      "q": "Elektronni n₁=1 orbitadan n₂→∞ ga o'tkazish nimani anglatadi?",
+      "v": [
+        "Atomni ionlashtirish",
+        "Atomni qizdirish",
+        "Atomni yemirish",
+        "Foton chiqarish"
+      ],
+      "t": 0,
+      "izoh": "Elektronni birinchi orbitadan cheksizlikka o'tkazish — atomni ionlashtirish demakdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#066ce788"
+    },
+    {
+      "q": "Elektronning n-orbitasining radiusi n ga qanday bog'liq?",
+      "v": [
+        "rₙ n² ga proporsional",
+        "rₙ n ga proporsional",
+        "rₙ 1/n² ga proporsional",
+        "rₙ n dan bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "rₙ = n²h²ε₀/(πmₑe²) formuladan ko'rinadiki, orbita radiusi n² ga proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#0f6c4e35"
+    },
+    {
+      "q": "Elektron n₂=2 orbitadan n₁=1 orbitaga o'tganda nima bo'ladi?",
+      "v": [
+        "Foton chiqariladi",
+        "Foton yutiladi",
+        "Elektron erkin bo'ladi",
+        "Hech narsa bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Elektron katta energiyali holatdan (n=2) kichik energiyali holatga (n=1) o'tganda foton chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#e3028317"
+    },
+    {
+      "q": "Atom energiyasi Eₙ n ga qanday bog'liq?",
+      "v": [
+        "Eₙ 1/n² ga proporsional (modul bo'yicha kamayadi)",
+        "Eₙ n² ga proporsional",
+        "Eₙ n dan bog'liq emas",
+        "Eₙ n ga proporsional"
+      ],
+      "t": 0,
+      "izoh": "Eₙ ifodada 1/n² ko'rinishida kiradi; n ortishi bilan energiya moduli kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#64019025"
+    },
+    {
+      "q": "Balmer formulasini Bor nazariyasidan chiqqan holda olish qaysi ifoda bilan bog'liq?",
+      "v": [
+        "hν = E₂ − E₁ energiya farqi ifodasidan",
+        "F = ma formulasidan",
+        "E = mc² formulasidan",
+        "Kulon qonunidan"
+      ],
+      "t": 0,
+      "izoh": "(7–7) ifoda — foton energiyasi holatlar energiyalari farqiga tengligi — Balmer formulasiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#7d853a9b"
+    },
+    {
+      "q": "Elektron statsionar orbitada tezlanish bilan harakatlanganda nima bo'ladi?",
+      "v": [
+        "Nurlanmaydi",
+        "Doimiy nurlanadi",
+        "Yadroga qulaydi",
+        "Orbitadan chiqib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Borning birinchi postulatiga ko'ra elektron statsionar orbitada tezlanish bilan harakatlansa ham nurlanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#9b55bdf5"
+    },
+    {
+      "q": "ħ belgisi nimani anglatadi?",
+      "v": [
+        "h/(2π) — Plank doimiysining 2π ga bo'lingan qiymati",
+        "Plank doimiysining o'zi",
+        "Ridberg doimiysi",
+        "Zarracha zaryadi"
+      ],
+      "t": 0,
+      "izoh": "ħ = h/2π — keltirilgan Plank doimiysi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#bdb3ffdc"
+    },
+    {
+      "q": "Vodorod atomi spektrining chiziqli ekanligini qaysi faktdan bilish mumkin?",
+      "v": [
+        "Balmer formulasining tajriba bilan mos kelishidan",
+        "Atomning kattaligidan",
+        "Elektronning massasidan",
+        "Yadroning zaryadidan"
+      ],
+      "t": 0,
+      "izoh": "Tajribalar va ular bilan mos keluvchi Balmer formulasi spektrning uzlukli (chiziqli) ekanligini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m37-atomning-bor-modeli#e3b75d73"
+    }
+  ]
+}

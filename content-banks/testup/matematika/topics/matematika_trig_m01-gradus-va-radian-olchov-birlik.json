@@ -1,0 +1,1609 @@
+{
+  "nom": "Gradus va radian o'lchov, birlik aylana",
+  "bolim": "Trigonometriya",
+  "blok": "trig",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Geometriya darsida Nilufar transportir yordamida 75° li burchak yasadi va uni radian o'lchoviga o'tkazmoqchi. Bu burchak necha radianga teng?",
+      "v": [
+        "5π/6",
+        "5π/12",
+        "12π/5",
+        "7π/12"
+      ],
+      "t": 1,
+      "izoh": "Gradusni radianga aylantirish uchun uni π/180 ga ko'paytiramiz: 75·π/180. 75 va 180 ning eng katta umumiy bo'luvchisi 15, shuning uchun 75/180 = 5/12. Javob: 5π/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gradus-radianga",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#55d1a3a6"
+    },
+    {
+      "q": "Sardor velosiped g'ildiragining bir spitsasi 108° ga burildi. Shu burilish burchagini radianda ifodalang va to'g'ri variantni belgilang.",
+      "v": [
+        "3π/5",
+        "3π/10",
+        "5π/3",
+        "2π/5"
+      ],
+      "t": 0,
+      "izoh": "108° ni radianga o'tkazish uchun π/180 ga ko'paytiramiz: 108π/180. Surat va maxrajni 36 ga qisqartiramiz, chunki 108 = 36·3 va 180 = 36·5. Javob: 3π/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gradus-radianga",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#70c29d06"
+    },
+    {
+      "q": "Aylanma zinapoyaning bir qavatga ko'tarilishi 210° li burilishga to'g'ri keladi. Bu burchakning radian o'lchovi qanday bo'ladi?",
+      "v": [
+        "7π/12",
+        "6π/7",
+        "5π/6",
+        "7π/6"
+      ],
+      "t": 3,
+      "izoh": "210·π/180 ni hisoblaymiz. 210 va 180 ni 30 ga qisqartiramiz: 210 : 30 = 7, 180 : 30 = 6. Demak burchak 7π/6 radianga teng, ya'ni π dan 30° ortiq. Javob: 7π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gradus-radianga",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#d4088c82"
+    },
+    {
+      "q": "Quyosh panelining gorizontga nisbatan og'ish burchagi 24° qilib o'rnatildi. Muhandis hisob-kitob uchun bu burchakni radianda yozishi kerak. U qanday qiymat oladi?",
+      "v": [
+        "π/15",
+        "15π/2",
+        "2π/15",
+        "4π/15"
+      ],
+      "t": 2,
+      "izoh": "24·π/180 ni soddalashtiramiz. 24 va 180 ning eng katta umumiy bo'luvchisi 12: 24 : 12 = 2, 180 : 12 = 15. Shunday qilib burchak 2π/15 radianga teng. Javob: 2π/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gradus-radianga",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#46b23d3d"
+    },
+    {
+      "q": "Aziza kompas ustida 130° li yo'nalishni belgiladi va shu burchakni radian o'lchoviga o'tkazishi so'raldi. To'g'ri natijani tanlang.",
+      "v": [
+        "13π/36",
+        "18π/13",
+        "13π/18",
+        "11π/18"
+      ],
+      "t": 2,
+      "izoh": "130·π/180 kasrini 10 ga qisqartiramiz va 13π/18 hosil bo'ladi. Natija π dan kichik chiqishi kerak, chunki 130° soni 180° dan kichik. Javob: 13π/18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gradus-radianga",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#01b94bb2"
+    },
+    {
+      "q": "Fizika masalasida burchak 7π/12 radian deb berilgan. Shu burchakni gradus o'lchoviga o'tkazsangiz, qanday qiymat hosil bo'ladi?",
+      "v": [
+        "105°",
+        "210°",
+        "75°",
+        "150°"
+      ],
+      "t": 0,
+      "izoh": "Radianni gradusga o'tkazish uchun 180/π ga ko'paytiramiz: (7π/12)·(180/π) = 7·180/12 = 7·15 = 105. π lar qisqarib ketadi. Javob: 105°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radian-gradusga",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#9fd21851"
+    },
+    {
+      "q": "Kran strelasi 11π/9 radianga buriladi. Operator jurnalga burilishni gradusda yozishi kerak, u qanday sonni yozadi?",
+      "v": [
+        "440°",
+        "110°",
+        "220°",
+        "200°"
+      ],
+      "t": 2,
+      "izoh": "(11π/9)·(180/π) = 11·180/9 = 11·20 = 220. Demak burilish 220° ga teng va bu III chorak burchagi. Javob: 220°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radian-gradusga",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#bf29b408"
+    },
+    {
+      "q": "Radian o'lchovi 5π/8 ga teng burchakning gradus o'lchovini toping va javobni o'nli kasr ko'rinishida belgilang.",
+      "v": [
+        "112,5°",
+        "225°",
+        "56,25°",
+        "100°"
+      ],
+      "t": 0,
+      "izoh": "(5π/8)·(180/π) = 5·180/8 = 900/8. Bo'lishni bajaramiz: 900 : 8 = 112,5. Javob: 112,5°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radian-gradusga",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#e6405a53"
+    },
+    {
+      "q": "Elektr motorining roteri ishga tushganda boshlang'ich holatdan 14π/15 radianga burildi. Bu burilish necha gradusga to'g'ri keladi?",
+      "v": [
+        "336°",
+        "84°",
+        "156°",
+        "168°"
+      ],
+      "t": 3,
+      "izoh": "(14π/15)·(180/π) = 14·180/15 = 14·12 = 168. Natija 180° dan kichik, demak roter to'liq yarim aylanani ham bosib o'tmagan. Javob: 168°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radian-gradusga",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#33a08d8f"
+    },
+    {
+      "q": "Tishli g'ildirak o'z o'qi atrofida 17π/12 radianga burildi. Shu burilishning gradus o'lchovini hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "510°",
+        "255°",
+        "127,5°",
+        "245°"
+      ],
+      "t": 1,
+      "izoh": "(17π/12)·(180/π) = 17·15 = 255. Bu burchak 180° dan katta, 270° dan kichik, shuning uchun uchinchi chorakda tugaydi. Javob: 255°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radian-gradusga",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#3f0f8650"
+    },
+    {
+      "q": "Astronomik kuzatuvda yo'nalish burchagi 236° deb qayd etildi. Bu burchak birlik aylananing qaysi choragida yotadi?",
+      "v": [
+        "I chorak",
+        "II chorak",
+        "III chorak",
+        "IV chorak"
+      ],
+      "t": 2,
+      "izoh": "Choraklar chegarasi: I — 0° dan 90° gacha, II — 90° dan 180° gacha, III — 180° dan 270° gacha, IV — 270° dan 360° gacha. 236 soni 180 va 270 orasida yotadi. Javob: III chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-aniqlash-gradus",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#89348c46"
+    },
+    {
+      "q": "Dengiz kemasining kursi 317° ga teng. Shu burchakka mos nuqta birlik aylananing qaysi choragiga tushadi?",
+      "v": [
+        "I chorak",
+        "II chorak",
+        "III chorak",
+        "IV chorak"
+      ],
+      "t": 3,
+      "izoh": "317 soni 270 dan katta va 360 dan kichik. Bu oraliq to'rtinchi chorakka to'g'ri keladi: unda abssissa musbat, ordinata manfiy bo'ladi. Javob: IV chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-aniqlash-gradus",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#a582caf8"
+    },
+    {
+      "q": "Robot qo'li boshlang'ich holatidan soat strelkasiga teskari 128° ga burildi. Hosil bo'lgan burchak birlik aylanada qayerda joylashadi?",
+      "v": [
+        "I chorak",
+        "II chorak",
+        "IV chorak",
+        "Oy o'qida yotadi"
+      ],
+      "t": 1,
+      "izoh": "128 soni 90 dan katta va 180 dan kichik, demak nuqta ikkinchi chorakka tushadi. O'q ustida yotishi uchun burchak aynan 90° yoki 180° bo'lishi kerak edi. Javob: II chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-aniqlash-gradus",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#ce49b981"
+    },
+    {
+      "q": "Karusel harakat boshlanganidan beri 1000° ga aylandi. Karusel o'rindig'i hozir birlik aylananing qaysi choragida turibdi?",
+      "v": [
+        "II chorak",
+        "III chorak",
+        "IV chorak",
+        "Ox o'qi bo'ylab"
+      ],
+      "t": 2,
+      "izoh": "Ortiqcha to'la aylanishlarni tashlaymiz: 1000 − 360 = 640, so'ng 640 − 360 = 280. Demak burchak 280° bilan bir joyda tugaydi. 280 soni 270 va 360 orasida, ya'ni to'rtinchi chorakda. Javob: IV chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chorak-aniqlash-gradus",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#9ef61087"
+    },
+    {
+      "q": "Sun'iy yo'ldosh antennasi soat strelkasiga teskari 843° ga burildi. Antennaning yakuniy yo'nalishi qaysi chorakka to'g'ri kelishini aniqlang.",
+      "v": [
+        "I chorak",
+        "II chorak",
+        "III chorak",
+        "Oy o'qida"
+      ],
+      "t": 1,
+      "izoh": "843 dan 360 ni ikki marta ayiramiz: 843 − 720 = 123. Yakuniy yo'nalish 123° bilan bir xil bo'ladi. 123 soni 90 va 180 orasida, demak burchak ikkinchi chorakda. Javob: II chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chorak-aniqlash-gradus",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#8960c84e"
+    },
+    {
+      "q": "Quyidagi radian o'lchovlaridan qaysi biri birlik aylananing uchinchi choragida yotishini aniqlang: 5π/6, 7π/5, 11π/6, π/7.",
+      "v": [
+        "5π/6",
+        "7π/5",
+        "11π/6",
+        "π/7"
+      ],
+      "t": 1,
+      "izoh": "Har birini gradusga o'tkazamiz: 5π/6 = 150°, 7π/5 = 252°, 11π/6 = 330°, π/7 ≈ 26°. Uchinchi chorak 180° dan 270° gacha bo'lgan oraliq. Faqat 252° shu oraliqqa tushadi. Javob: 7π/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chorak-aniqlash-radian",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#619e88cf"
+    },
+    {
+      "q": "19π/16 radian bilan berilgan burchak birlik aylananing qaysi choragida joylashganini aniqlang va tegishli variantni belgilang.",
+      "v": [
+        "II chorak",
+        "IV chorak",
+        "Ox o'qi ustida",
+        "III chorak"
+      ],
+      "t": 3,
+      "izoh": "Chegaralarni maxraji 16 bo'lgan kasrga keltiramiz: π = 16π/16, 3π/2 = 24π/16. Endi 16π/16 < 19π/16 < 24π/16 ekani ko'rinadi, ya'ni burchak π va 3π/2 orasida. Javob: III chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chorak-aniqlash-radian",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#9b1808d8"
+    },
+    {
+      "q": "Navigatsiya dasturi to'rt burchak beradi; ulardan ikkinchi chorakda yotganini toping: 3π/7, 8π/9, 5π/4, 9π/5 radian.",
+      "v": [
+        "3π/7",
+        "8π/9",
+        "5π/4",
+        "9π/5"
+      ],
+      "t": 1,
+      "izoh": "Gradusga o'tkazamiz: 3π/7 ≈ 77°, 8π/9 = 160°, 5π/4 = 225°, 9π/5 = 324°. Ikkinchi chorak 90° dan 180° gacha, shu oraliqqa faqat 160° tushadi. Javob: 8π/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chorak-aniqlash-radian",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#04cc706e"
+    },
+    {
+      "q": "Fizika mashg'ulotida burchak 23π/12 radian deb olindi. Bu burchakka mos nuqta birlik aylanada qaysi chorakda bo'ladi?",
+      "v": [
+        "I chorak",
+        "III chorak",
+        "IV chorak",
+        "Oy o'qida yotadi"
+      ],
+      "t": 2,
+      "izoh": "23π/12 ni gradusga o'tkazamiz: 23·180/12 = 23·15 = 345°. Bu son 270 va 360 orasida, demak nuqta to'rtinchi chorakda va to'la aylanishga atigi π/12 qolgan. Javob: IV chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chorak-aniqlash-radian",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#25acd1b5"
+    },
+    {
+      "q": "Radiusi 15 sm bo'lgan aylanada markaziy burchak 4π/9 radianga teng. Shu burchakka tortilgan yoyning uzunligini toping.",
+      "v": [
+        "10π/3 sm",
+        "40π/3 sm",
+        "20π/9 sm",
+        "20π/3 sm"
+      ],
+      "t": 3,
+      "izoh": "Yoy uzunligi formulasi l = R·α, bunda α radianda olinadi. l = 15·(4π/9) = 60π/9. Kasrni 3 ga qisqartiramiz va 20π/3 hosil bo'ladi. Javob: 20π/3 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoy-uzunligi-topish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#6d1d3232"
+    },
+    {
+      "q": "Yugurish yo'lakchasining radiusi 36 m, burilish qismi 5π/6 radianli markaziy burchakka to'g'ri keladi. Yo'lakcha yoyining uzunligi qancha?",
+      "v": [
+        "30 m",
+        "180π m",
+        "30π m",
+        "15π m"
+      ],
+      "t": 2,
+      "izoh": "l = R·α formulasidan foydalanamiz: l = 36·(5π/6) = 180π/6 = 30π. Demak yoy uzunligi 30π metr, ya'ni taxminan 94 metr. Javob: 30π m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoy-uzunligi-topish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#56e7b241"
+    },
+    {
+      "q": "Aylananing radiusi 21 sm, markaziy burchak esa 120°. Shu markaziy burchakka mos yoy uzunligini π orqali ifodalang.",
+      "v": [
+        "7π sm",
+        "28π sm",
+        "42π sm",
+        "14π sm"
+      ],
+      "t": 3,
+      "izoh": "Avval 120° ni radianga o'tkazamiz: 120π/180 = 2π/3. So'ng l = R·α = 21·(2π/3) = 42π/3 = 14π. Javob: 14π sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoy-uzunligi-topish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#2848d148"
+    },
+    {
+      "q": "Birlik aylanada, ya'ni radiusi 1 ga teng aylanada, markaziy burchak 7π/10 radianga teng. Shu burchakka tortilgan yoy uzunligi qanday?",
+      "v": [
+        "7π/10 birlik",
+        "10π/7 birlik",
+        "7π/5 birlik",
+        "126 birlik"
+      ],
+      "t": 0,
+      "izoh": "Birlik aylanada R = 1 bo'lgani uchun l = R·α = 1·(7π/10) = 7π/10. Demak birlik aylanada yoy uzunligi burchakning radian o'lchoviga aynan teng chiqadi. Javob: 7π/10 birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-aylana-yoy-tarifi",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#4b71dbaf"
+    },
+    {
+      "q": "Uzunligi 45 sm bo'lgan mayatnik ipi vertikaldan ikki tomonga 0,2 radiandan og'adi. Mayatnik uchi bir chetdan ikkinchi chetiga o'tguncha qanday uzunlikdagi yoy bo'ylab harakatlanadi?",
+      "v": [
+        "9 sm",
+        "22,5 sm",
+        "112,5 sm",
+        "18 sm"
+      ],
+      "t": 3,
+      "izoh": "Bir chetdan ikkinchi chetga o'tishda ip vertikaldan chap tomonga 0,2 va o'ng tomonga 0,2 radian, jami 0,4 radian burchak supuradi. Yoy uzunligi l = R·α = 45·0,4 = 18. Javob: 18 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoy-uzunligi-topish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#4942ce3b"
+    },
+    {
+      "q": "Markaziy burchagi 3π/8 radian bo'lgan yoyning uzunligi 21π sm ga teng. Aylananing radiusini hisoblab, to'g'ri javobni belgilang.",
+      "v": [
+        "56 sm",
+        "28 sm",
+        "8 sm",
+        "63 sm"
+      ],
+      "t": 0,
+      "izoh": "l = R·α tenglikdan R = l/α. R = 21π : (3π/8) = 21π·8/(3π) = 168/3 = 56. Bo'lishda π lar qisqarib ketadi. Javob: 56 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-yoydan-topish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#bbe8fafa"
+    },
+    {
+      "q": "Bog'dagi doira shaklidagi yo'lakning 33π m li qismi 110° li markaziy burchakka to'g'ri keladi. Yo'lak aylanasining radiusi qancha?",
+      "v": [
+        "27 m",
+        "108 m",
+        "18 m",
+        "54 m"
+      ],
+      "t": 3,
+      "izoh": "110° ni radianga o'tkazamiz: 110π/180 = 11π/18. Endi R = l/α = 33π : (11π/18) = 33π·18/(11π) = 3·18 = 54. Javob: 54 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-yoydan-topish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#c4266841"
+    },
+    {
+      "q": "Aylana yoyining uzunligi 6,3 sm, unga mos markaziy burchak 0,7 radian. Shu aylananing radiusi necha santimetrga teng?",
+      "v": [
+        "4,41 sm",
+        "18 sm",
+        "9 sm",
+        "4,5 sm"
+      ],
+      "t": 2,
+      "izoh": "l = R·α formulasidan radiusni ajratamiz: R = l/α. R = 6,3 : 0,7 = 9. Burchak allaqachon radianda berilgani uchun qo'shimcha aylantirish talab qilinmaydi. Javob: 9 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radius-yoydan-topish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#f82d05d9"
+    },
+    {
+      "q": "G'ildirak 2 radianga burilganda uning gardishidagi nuqta 76 sm yo'l bosdi. G'ildirakning diametri necha santimetr?",
+      "v": [
+        "38 sm",
+        "76 sm",
+        "152 sm",
+        "19 sm"
+      ],
+      "t": 1,
+      "izoh": "Nuqta bosgan yo'l — bu yoy uzunligi, ya'ni 76 = R·2, bundan R = 38 sm. Savolda esa diametr so'ralgan: d = 2R = 76 sm. Javob: 76 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "radius-yoydan-topish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#e3b2e0d6"
+    },
+    {
+      "q": "Radiusi 24 sm bo'lgan aylanada yoy uzunligi 18 sm. Shu yoyga tortilgan markaziy burchakning radian o'lchovini toping.",
+      "v": [
+        "0,375 rad",
+        "0,75 rad",
+        "1,33 rad",
+        "1,5 rad"
+      ],
+      "t": 1,
+      "izoh": "Yoy uzunligi formulasi l = R·α dan α = l/R kelib chiqadi. α = 18 : 24 = 0,75 radian. Radiusni yoyga bo'lib yuborish eng keng tarqalgan xato. Javob: 0,75 rad.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "markaziy-burchak-yoydan",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#86d69cef"
+    },
+    {
+      "q": "Diametri 40 sm bo'lgan gardishda yoy uzunligi 5π sm. Bu yoyga mos markaziy burchak necha gradus?",
+      "v": [
+        "22,5°",
+        "90°",
+        "60°",
+        "45°"
+      ],
+      "t": 3,
+      "izoh": "Diametr 40 sm bo'lsa, radius R = 20 sm. α = l/R = 5π/20 = π/4 radian. Uni gradusga o'tkazamiz: (π/4)·(180/π) = 45. Javob: 45°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markaziy-burchak-yoydan",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#63c752eb"
+    },
+    {
+      "q": "Sirk maydonchasi doira shaklida, uning radiusi 12 m. Akrobat chekka bo'ylab 8 m yurdi. U markazdan qaralganda necha radianlik burchakni bosib o'tdi?",
+      "v": [
+        "2/3 rad",
+        "3/2 rad",
+        "1/3 rad",
+        "4/3 rad"
+      ],
+      "t": 0,
+      "izoh": "Akrobat bosgan yo'l aylana yoyi bo'lgani uchun α = l/R. α = 8 : 12 = 2/3 radian, ya'ni taxminan 0,67 radian. Javob: 2/3 rad.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markaziy-burchak-yoydan",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#84333b22"
+    },
+    {
+      "q": "Aylananing radiusi 7 sm, yoy uzunligi esa 7 sm ga teng bo'lsa, unga tortilgan markaziy burchak nimaga teng?",
+      "v": [
+        "1 radian",
+        "7 radian",
+        "π radian",
+        "57 radian"
+      ],
+      "t": 0,
+      "izoh": "α = l/R = 7 : 7 = 1 kelib chiqadi. Demak yoy uzunligi radiusga teng bo'lganda markaziy burchak aynan 1 radian bo'ladi — bu radianning ta'rifi. Javob: 1 radian.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markaziy-burchak-yoydan",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#8efec873"
+    },
+    {
+      "q": "Radiusi 9 sm bo'lgan doiradan markaziy burchagi 2π/3 radian bo'lgan sektor kesib olindi. Uning yuzasini toping.",
+      "v": [
+        "27π sm²",
+        "54π sm²",
+        "13,5π sm²",
+        "6π sm²"
+      ],
+      "t": 0,
+      "izoh": "Sektor yuzasi S = (1/2)·R²·α formulasi bilan topiladi. S = (1/2)·81·(2π/3) = 81π/3 = 27π. Bu yerda 6π — yoy uzunligi, yuza emas. Javob: 27π sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sektor-yuzasi",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#d547e481"
+    },
+    {
+      "q": "Diametri 32 sm bo'lgan pitsa 45° li markaziy burchak ostida bo'laklarga bo'lindi. Bitta bo'lakning yuzasi qancha?",
+      "v": [
+        "64π sm²",
+        "16π sm²",
+        "128π sm²",
+        "32π sm²"
+      ],
+      "t": 3,
+      "izoh": "Pitsaning radiusi R = 32 : 2 = 16 sm, burchak esa 45° = π/4 radian. S = (1/2)·16²·(π/4) = (1/2)·256·(π/4) = 32π. Javob: 32π sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sektor-yuzasi",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#8605eb7b"
+    },
+    {
+      "q": "Doira sektorining radiusi 10 sm, markaziy burchagi 1,2 radian. Shu sektorning yuzasini kvadrat santimetrlarda hisoblang.",
+      "v": [
+        "12 sm²",
+        "30 sm²",
+        "60 sm²",
+        "120 sm²"
+      ],
+      "t": 2,
+      "izoh": "S = (1/2)·R²·α formulasiga qo'yamiz: S = (1/2)·100·1,2 = 60. Yoy uzunligi 12 sm chiqadi, lekin u yuza bilan chalkashtirilmasligi kerak. Javob: 60 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sektor-yuzasi",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#1d96921c"
+    },
+    {
+      "q": "Sug'orish qurilmasi 25 m radiusda 288° li sektorni sug'oradi. Sug'orilgan yerning yuzasi necha kvadrat metr, π orqali yozing.",
+      "v": [
+        "500π m²",
+        "1000π m²",
+        "250π m²",
+        "625π m²"
+      ],
+      "t": 0,
+      "izoh": "Avval burchakni radianga o'tkazamiz: 288π/180 = 8π/5. So'ng S = (1/2)·25²·(8π/5) = (1/2)·625·(8π/5) = 500π. To'liq doira yuzasi 625π bo'lar edi. Javob: 500π m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sektor-yuzasi",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#c1591049"
+    },
+    {
+      "q": "Radiusi 14 sm bo'lgan sektorning yoy uzunligi 22 sm. Shu sektorning yuzasini yoy uzunligidan foydalanib toping.",
+      "v": [
+        "308 sm²",
+        "77 sm²",
+        "36 sm²",
+        "154 sm²"
+      ],
+      "t": 3,
+      "izoh": "Sektor yuzasini S = (1/2)·l·R ko'rinishida ham yozish mumkin. S = (1/2)·22·14 = 11·14 = 154. 36 soni esa yoy bilan radius yig'indisi, yuza emas. Javob: 154 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sektor-yuzasi",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#bc946b6c"
+    },
+    {
+      "q": "Doira sektorining yuzasi 96 sm², markaziy burchagi esa 3 radian. Shu sektorning radiusi necha santimetrga teng?",
+      "v": [
+        "64 sm",
+        "16 sm",
+        "8 sm",
+        "32 sm"
+      ],
+      "t": 2,
+      "izoh": "S = (1/2)·R²·α formulasiga qo'yamiz: 96 = (1/2)·R²·3, ya'ni 96 = 1,5·R². Bundan R² = 64 va R = 8. Ildiz olish bosqichini tashlab ketmaslik kerak. Javob: 8 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sektor-yuzasidan-topish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#1e7b6af2"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan doira sektorining yuzasi 15π sm² ga teng. Shu sektorning markaziy burchagini radianda toping.",
+      "v": [
+        "5π/12",
+        "5π/3",
+        "6π/5",
+        "5π/6"
+      ],
+      "t": 3,
+      "izoh": "S = (1/2)·R²·α tenglikdan 15π = (1/2)·36·α = 18α kelib chiqadi. Demak α = 15π/18 = 5π/6 radian, ya'ni 150°. Javob: 5π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sektor-yuzasidan-topish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#56ea6f2c"
+    },
+    {
+      "q": "Chodirning tomi doira sektori shaklida kesilgan: yuzasi 54π m², radiusi 12 m. Sektorning markaziy burchagi necha gradus?",
+      "v": [
+        "67,5°",
+        "270°",
+        "135°",
+        "120°"
+      ],
+      "t": 2,
+      "izoh": "S = (1/2)·R²·α dan 54π = (1/2)·144·α = 72α. Demak α = 54π/72 = 3π/4 radian. Gradusga o'tkazamiz: (3π/4)·(180/π) = 135. Javob: 135°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sektor-yuzasidan-topish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#343e38b9"
+    },
+    {
+      "q": "Ikkita sektorning markaziy burchagi bir xil, lekin birinchisining radiusi ikkinchisinikidan 3 marta katta. Ularning yuzalari nisbati qanday?",
+      "v": [
+        "3 : 1",
+        "6 : 1",
+        "9 : 1",
+        "27 : 1"
+      ],
+      "t": 2,
+      "izoh": "Sektor yuzasi S = (1/2)·R²·α, burchak bir xil bo'lgani uchun yuza faqat R² ga bog'liq bo'ladi. Radius 3 marta katta bo'lsa, yuza 3² = 9 marta katta chiqadi. Javob: 9 : 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sektor-yuzasidan-topish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#3a6b9c77"
+    },
+    {
+      "q": "Birlik aylana bo'ylab boshlang'ich nuqtadan 11π/6 uzunlikdagi yoy o'lchandi. Yoy oxiridagi nuqta qaysi chorakda bo'ladi?",
+      "v": [
+        "II chorak",
+        "III chorak",
+        "IV chorak",
+        "Ox o'qidagi nuqta"
+      ],
+      "t": 2,
+      "izoh": "Birlik aylanada yoy uzunligi burchakning radian o'lchoviga teng, demak burchak 11π/6 radian. Gradusda bu 11·180/6 = 330°. 330 soni 270 va 360 orasida yotadi. Javob: IV chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-aylana-yoy-tarifi",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#b5adf7ed"
+    },
+    {
+      "q": "Radiusi bir birlikka teng aylananing to'liq uzunligi qanchaga teng va bu uzunlik necha radianli burchakka mos keladi?",
+      "v": [
+        "π birlik, 360 radian",
+        "2π birlik, 360 radian",
+        "2π birlik, 2π radian",
+        "4π birlik, 2π radian"
+      ],
+      "t": 2,
+      "izoh": "Aylana uzunligi L = 2πR formulasi bilan topiladi, birlik aylanada R = 1 bo'lgani uchun L = 2π. To'liq aylanish 360° ga, ya'ni 2π radianga to'g'ri keladi. Javob: 2π birlik, 2π radian.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-aylana-yoy-tarifi",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#ca2fa83a"
+    },
+    {
+      "q": "Birlik aylana bo'ylab yurgan chumoli 4 birlik masofani bosib o'tdi. U aylananing necha foizini aylanib chiqdi?",
+      "v": [
+        "taxminan 64%",
+        "taxminan 40%",
+        "taxminan 25%",
+        "taxminan 80%"
+      ],
+      "t": 0,
+      "izoh": "Birlik aylananing uzunligi 2π ≈ 6,28 birlik. Chumoli bosgan ulush 4 : 6,28 ≈ 0,637 ga teng. Uni foizga o'tkazsak taxminan 64% chiqadi. Javob: taxminan 64%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-aylana-yoy-tarifi",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#a65abbbc"
+    },
+    {
+      "q": "Muhandis o'lchagichda 1125° burilish qayd etildi. Shu burchakka teng kuchli, 0° va 360° orasidagi eng kichik musbat burchakni toping.",
+      "v": [
+        "135°",
+        "405°",
+        "45°",
+        "315°"
+      ],
+      "t": 2,
+      "izoh": "1125 dan 360 ni ketma-ket ayiramiz: 1125 − 360 = 765, 765 − 360 = 405, 405 − 360 = 45. Natija 0 va 360 orasiga tushgani uchun to'xtaymiz. Javob: 45°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koterminal-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#866bb47f"
+    },
+    {
+      "q": "Trigonometriya darsida berilgan 29π/6 radianli burchakka teng kuchli va 0 dan 2π gacha oraliqda yotgan burchakni aniqlang.",
+      "v": [
+        "5π/6",
+        "17π/6",
+        "5π/3",
+        "7π/6"
+      ],
+      "t": 0,
+      "izoh": "Avval 2π ni 12π/6 ko'rinishida yozamiz. 29π/6 − 12π/6 = 17π/6, bu hali 2π dan katta. Yana ayiramiz: 17π/6 − 12π/6 = 5π/6. Javob: 5π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koterminal-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#e110c0e3"
+    },
+    {
+      "q": "Quyidagi burchaklardan qaysi biri 40° bilan birlik aylanada bir xil nuqtaga tushadi: 400°, 320°, 220°, 140°?",
+      "v": [
+        "320°",
+        "220°",
+        "140°",
+        "400°"
+      ],
+      "t": 3,
+      "izoh": "Ikki burchak bir nuqtaga tushishi uchun ularning farqi 360° ning butun karrali bo'lishi kerak. 400 − 40 = 360, demak 400° mos keladi. Qolgan uchtasining farqi 360 ga bo'linmaydi. Javob: 400°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koterminal-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#4342ed9a"
+    },
+    {
+      "q": "Aylanma eshik 5 marta to'liq aylanib, yana 130° ga burildi. Uning boshlang'ich holatidan hisoblangan yakuniy burchagi qancha?",
+      "v": [
+        "1800°",
+        "1930°",
+        "490°",
+        "2130°"
+      ],
+      "t": 1,
+      "izoh": "Har bir to'liq aylanish 360° beradi, beshtasi esa 5·360 = 1800°. Unga qolgan 130° ni qo'shamiz: 1800 + 130 = 1930. Javob: 1930°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koterminal-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#96231fb7"
+    },
+    {
+      "q": "Burchak −1000° ga teng. Unga teng kuchli va 0° dan 360° gacha oraliqda yotgan burchakni toping.",
+      "v": [
+        "280°",
+        "−280°",
+        "80°",
+        "−80°"
+      ],
+      "t": 2,
+      "izoh": "Manfiy burchakka 360° ni ketma-ket qo'shamiz: −1000 + 360 = −640, −640 + 360 = −280, −280 + 360 = 80. Natija musbat va 360 dan kichik bo'ldi. Javob: 80°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koterminal-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#f8740f95"
+    },
+    {
+      "q": "Vint soat strelkasi yo'nalishida burilgani uchun burchak −215° deb yozildi. Bu burchak qaysi chorakda tugaydi?",
+      "v": [
+        "I chorak",
+        "II chorak",
+        "III chorak",
+        "Ox o'qida"
+      ],
+      "t": 1,
+      "izoh": "Manfiy burchakka 360° qo'shamiz: −215 + 360 = 145. Demak burilish 145° bilan bir joyda tugaydi. 145 soni 90 va 180 orasida bo'lgani uchun ikkinchi chorak. Javob: II chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-burchak-chorak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#294e1330"
+    },
+    {
+      "q": "Trigonometriya masalasida burchak −7π/4 radian deb berilgan. Shu burchakka mos nuqta birlik aylanada qayerda joylashadi?",
+      "v": [
+        "I chorak",
+        "II chorak",
+        "IV chorak",
+        "Ox o'qi ustida"
+      ],
+      "t": 0,
+      "izoh": "Manfiy burchakka 2π ni qo'shamiz: −7π/4 + 8π/4 = π/4. Bu 45° ga teng va birinchi chorakka tushadi. Javob: I chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-burchak-chorak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#0e243157"
+    },
+    {
+      "q": "Kompas ko'rsatkichi soat strelkasi bo'ylab burilganda burchak manfiy yoziladi. Quyidagilardan qaysi biri uchinchi chorakda yotadi: −60°, −150°, −200°, −310°?",
+      "v": [
+        "−60°",
+        "−150°",
+        "−200°",
+        "−310°"
+      ],
+      "t": 1,
+      "izoh": "Har biriga 360° qo'shamiz: −60 → 300°, −150 → 210°, −200 → 160°, −310 → 50°. Uchinchi chorak 180° dan 270° gacha, unga faqat 210° tushadi. Javob: −150°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-burchak-chorak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#0e8e4961"
+    },
+    {
+      "q": "Drenaj nasosi o'qi soat strelkasi bo'ylab 500° ga burildi, ya'ni burchak −500° deb belgilandi. Yakuniy holat qaysi chorakda?",
+      "v": [
+        "II chorak",
+        "III chorak",
+        "IV chorak",
+        "Oy o'qida yotadi"
+      ],
+      "t": 1,
+      "izoh": "Manfiy burchakka 360° ni ikki marta qo'shamiz: −500 + 360 = −140, −140 + 360 = 220. Yakuniy burchak 220° ga teng, u 180 va 270 orasida. Javob: III chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "manfiy-burchak-chorak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#63d8ffc5"
+    },
+    {
+      "q": "Devor soatida vaqt 3:00 dan 3:25 gacha o'tdi. Daqiqa strelkasi shu davrda necha radianga burildi?",
+      "v": [
+        "5π/6",
+        "5π/12",
+        "π/6",
+        "2π/5"
+      ],
+      "t": 0,
+      "izoh": "Bir soatda daqiqa strelkasi to'liq aylanadi, ya'ni 2π radian buriladi. 25 daqiqa bir soatning 25/60 = 5/12 qismi. Demak burchak (5/12)·2π = 5π/6 radian. Javob: 5π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soat-strelkasi-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#64aa1db2"
+    },
+    {
+      "q": "Devor soatining qisqa strelkasi ciferblat bo'ylab tushdan keyingi to'rt soat davomida necha gradusga buriladi?",
+      "v": [
+        "30°",
+        "120°",
+        "1440°",
+        "90°"
+      ],
+      "t": 1,
+      "izoh": "Qisqa strelka 12 soatda to'liq 360° aylanadi, demak bir soatda 360 : 12 = 30° buriladi. To'rt soatda esa 4·30 = 120°. Javob: 120°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soat-strelkasi-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#b04182c9"
+    },
+    {
+      "q": "Devor soatida vaqt aynan 2:00 bo'lganda uning ikki strelkasi orasidagi kichik burchakni radianda ifodalang va to'g'ri variantni tanlang.",
+      "v": [
+        "π/6",
+        "2π/3",
+        "π/3",
+        "π/2"
+      ],
+      "t": 2,
+      "izoh": "Ciferblatda ikki qo'shni son orasidagi burchak 30° ga teng. Soat 2:00 da qisqa strelka 2 raqamida, uzun strelka 12 da turadi, ular orasida ikki bo'linma bor: 2·30 = 60°. 60° = π/3 radian. Javob: π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soat-strelkasi-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#3322c610"
+    },
+    {
+      "q": "Devor soatining daqiqa strelkasi 7π/6 radianga burilgan bo'lsa, soat boshidan beri necha daqiqa o'tgani aniqlansin.",
+      "v": [
+        "35 daqiqa",
+        "30 daqiqa",
+        "42 daqiqa",
+        "21 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "To'liq aylanish 2π radianga va 60 daqiqaga to'g'ri keladi. Burilgan ulush (7π/6) : (2π) = 7/12 ga teng. Demak vaqt 60·7/12 = 35 daqiqa. Javob: 35 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "soat-strelkasi-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#a42ca55c"
+    },
+    {
+      "q": "Fanat parragi 3 marta to'liq aylanib, yana chorak aylana burildi. Burilishning umumiy radian o'lchovi qancha?",
+      "v": [
+        "6π",
+        "25π/4",
+        "7π/2",
+        "13π/2"
+      ],
+      "t": 3,
+      "izoh": "Har bir to'liq aylanish 2π radian, uchtasi esa 3·2π = 6π. Chorak aylana 2π : 4 = π/2 ga teng. Yig'indi: 6π + π/2 = 12π/2 + π/2 = 13π/2. Javob: 13π/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylanish-soni-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#31a73f72"
+    },
+    {
+      "q": "Konveyer shkivi ish boshlaganidan beri 1080° ga burildi. Bu burilish necha ta to'liq aylanishga teng?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "6 ta",
+        "1,5 ta"
+      ],
+      "t": 1,
+      "izoh": "Bir to'liq aylanish 360° ga teng bo'ladi. Aylanishlar soni 1080 : 360 = 3. Demak shkiv aynan uch marta to'liq aylangan. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylanish-soni-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#6e80498c"
+    },
+    {
+      "q": "Sanoat markazidagi val bir daqiqada 45π radianga aylandi. U shu vaqtda necha marta to'liq aylangan?",
+      "v": [
+        "45 marta",
+        "11,25 marta",
+        "90 marta",
+        "22,5 marta"
+      ],
+      "t": 3,
+      "izoh": "Bir to'liq aylanish 2π radianga teng. Aylanishlar soni 45π : 2π = 22,5. Ya'ni val yigirma ikki marta to'liq va yana yarim marta aylangan. Javob: 22,5 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylanish-soni-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#0d46e0d6"
+    },
+    {
+      "q": "Aravaning g'ildiragi radiusi 35 sm. G'ildirak 10 marta to'liq aylanganda arava necha metr yo'l bosadi?",
+      "v": [
+        "taxminan 11 m",
+        "taxminan 22 m",
+        "taxminan 35 m",
+        "taxminan 44 m"
+      ],
+      "t": 1,
+      "izoh": "Bir aylanishda g'ildirak o'z aylanasi uzunligicha yo'l bosadi: L = 2πR = 2·3,14·35 = 219,8 sm. O'n aylanishda 2198 sm, ya'ni taxminan 22 metr. Javob: taxminan 22 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylanish-soni-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#9f6d63b8"
+    },
+    {
+      "q": "Kompyuter diskining burchak tezligi 12π rad/s ga teng. U bir soniyada necha marta to'liq aylanadi?",
+      "v": [
+        "6 marta",
+        "12 marta",
+        "3 marta",
+        "24 marta"
+      ],
+      "t": 0,
+      "izoh": "Bir to'liq aylanish 2π radianga teng bo'ladi. Bir soniyadagi aylanishlar soni 12π : 2π = 6. Demak disk sekundiga olti marta aylanadi. Javob: 6 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-tezlik",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#329c30f3"
+    },
+    {
+      "q": "Bolalar bog'idagi karusel bir daqiqada 8 marta aylanadi. Uning burchak tezligi necha rad/s ga teng?",
+      "v": [
+        "2π/15 rad/s",
+        "4π/15 rad/s",
+        "8π/15 rad/s",
+        "16π rad/s"
+      ],
+      "t": 1,
+      "izoh": "Bir daqiqada 8 ta aylanish bajariladi, bu 8·2π = 16π radian. Bir daqiqa 60 soniya, demak ω = 16π : 60 = 4π/15 rad/s. Javob: 4π/15 rad/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-tezlik",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#2297e36c"
+    },
+    {
+      "q": "Radiusi 0,4 m bo'lgan g'ildirak 5 rad/s burchak tezlik bilan aylanadi. Gardish nuqtasining chiziqli tezligi qancha?",
+      "v": [
+        "12,5 m/s",
+        "0,08 m/s",
+        "20 m/s",
+        "2 m/s"
+      ],
+      "t": 3,
+      "izoh": "Chiziqli tezlik v = ω·R formulasi bilan topiladi. v = 5·0,4 = 2. Burchak tezlikni radiusga bo'lib yuborish keng tarqalgan xato. Javob: 2 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-tezlik",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#e39ec108"
+    },
+    {
+      "q": "Yer o'z o'qi atrofida 24 soatda bir marta to'liq aylanadi. Uning burchak tezligi soatiga necha radian?",
+      "v": [
+        "π/24 rad/soat",
+        "15 rad/soat",
+        "π/6 rad/soat",
+        "π/12 rad/soat"
+      ],
+      "t": 3,
+      "izoh": "To'liq aylanish 2π radianni tashkil qiladi va u 24 soatda bajariladi. Burchak tezlik ω = 2π : 24 = π/12 radian/soat. Gradusda bu 15° ga teng, lekin radian so'ralgan. Javob: π/12 rad/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-tezlik",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#03fb0b0f"
+    },
+    {
+      "q": "Geodezik o'lchovda burchak 42°30′ deb yozildi. Shu burchakni faqat gradusda, o'nli kasr ko'rinishida ifodalang va to'g'ri variantni belgilang.",
+      "v": [
+        "42,5°",
+        "42,3°",
+        "42,05°",
+        "43,2°"
+      ],
+      "t": 0,
+      "izoh": "Bir gradus 60 daqiqadan iborat, shuning uchun 30′ = 30 : 60 = 0,5°. Demak 42°30′ = 42 + 0,5 = 42,5°. Javob: 42,5°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gradus-minut-soniya",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#cc774aa4"
+    },
+    {
+      "q": "Kartografiya dasturi 18,4° qiymatni gradus va daqiqa ko'rinishida chiqarishi kerak. U ekranga qanday yozuvni chiqaradi?",
+      "v": [
+        "18°40′",
+        "18°24′",
+        "18°04′",
+        "18°14′"
+      ],
+      "t": 1,
+      "izoh": "Kasr qismini 60 ga ko'paytiramiz: 0,4·60 = 24. Demak 18,4° = 18°24′. Kasr qismini to'g'ridan-to'g'ri daqiqa deb ko'chirish xato bo'ladi. Javob: 18°24′.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gradus-minut-soniya",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#90688a29"
+    },
+    {
+      "q": "Yer o'lchovchi ikki burchakni qayd etdi: birinchisi 37°45′, ikkinchisi 22°30′. Ularning yig'indisini gradus va daqiqada toping.",
+      "v": [
+        "60°15′",
+        "60°30′",
+        "59°15′",
+        "60°75′"
+      ],
+      "t": 0,
+      "izoh": "Alohida qo'shamiz: 37 + 22 = 59 gradus, 45 + 30 = 75 daqiqa. 75 daqiqa 60 dan katta, shuning uchun uni 1°15′ deb yozamiz — 1°30′ deb yaxlitlash xato. Natija 59° + 1°15′ = 60°15′. Javob: 60°15′.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gradus-minut-soniya",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#189f0e55"
+    },
+    {
+      "q": "Bir radian necha gradus va daqiqaga yaqin ekanini aniqlang; hisoblashda π ≈ 3,1416 deb oling.",
+      "v": [
+        "57°30′",
+        "1°57′",
+        "57°18′",
+        "114°36′"
+      ],
+      "t": 2,
+      "izoh": "Radianni gradusga o'tkazish uchun 180/π ni hisoblaymiz: 180 : 3,1416 ≈ 57,2958°. Kasr qismini 60 ga ko'paytiramiz: 0,2958·60 ≈ 17,7, ya'ni taxminan 18 daqiqa. Javob: 57°18′.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gradus-minut-soniya",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#74ca45e2"
+    },
+    {
+      "q": "Doira sektorining radiusi 18 sm, markaziy burchagi 2π/9 radian. Shu sektorning perimetrini taxminan hisoblang, π ≈ 3,14 deb oling.",
+      "v": [
+        "taxminan 12,6 sm",
+        "taxminan 30,6 sm",
+        "taxminan 36 sm",
+        "taxminan 48,6 sm"
+      ],
+      "t": 3,
+      "izoh": "Sektor perimetri ikki radius va yoydan iborat: P = 2R + l. Yoy uzunligi l = R·α = 18·(2π/9) = 4π ≈ 12,56 sm. Demak P = 36 + 12,56 ≈ 48,6 sm. Javob: taxminan 48,6 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sektor-perimetri",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#d41c73dd"
+    },
+    {
+      "q": "Doira sektorining perimetri 34 sm, radiusi esa 12 sm. Uning yoy uzunligi necha santimetrga teng?",
+      "v": [
+        "10 sm",
+        "22 sm",
+        "17 sm",
+        "46 sm"
+      ],
+      "t": 0,
+      "izoh": "Sektor perimetri P = 2R + l ko'rinishida yoziladi. Berilganlarni qo'yamiz: 34 = 2·12 + l, ya'ni 34 = 24 + l. Bundan l = 34 − 24 = 10. Javob: 10 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sektor-perimetri",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#c7ad4d0b"
+    },
+    {
+      "q": "Bog'dagi gulzor sektor shaklida: radiusi 20 m, markaziy burchagi 90°. Gulzor atrofiga panjara o'rnatiladi, uning uzunligi qancha?",
+      "v": [
+        "taxminan 31,4 m",
+        "taxminan 71,4 m",
+        "taxminan 51,4 m",
+        "taxminan 40 m"
+      ],
+      "t": 1,
+      "izoh": "90° = π/2 radian, demak yoy uzunligi l = 20·(π/2) = 10π ≈ 31,4 m. Panjara ikkita radius va yoy bo'ylab o'tadi: P = 2·20 + 31,4 = 71,4. Javob: taxminan 71,4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sektor-perimetri",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#d00f758d"
+    },
+    {
+      "q": "Yarim doira shaklidagi deraza radiusi 70 sm. Uning butun konturi bo'ylab ramka o'rnatilsa, ramka uzunligi qancha bo'ladi?",
+      "v": [
+        "taxminan 219,8 sm",
+        "taxminan 289,8 sm",
+        "taxminan 359,8 sm",
+        "taxminan 439,6 sm"
+      ],
+      "t": 2,
+      "izoh": "Yarim doiraning markaziy burchagi π radian, shuning uchun yoy l = 70·π ≈ 219,8 sm. Kontur yoy va diametrdan iborat: 219,8 + 140 = 359,8. Javob: taxminan 359,8 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sektor-perimetri",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#a08d1cb2"
+    },
+    {
+      "q": "Qaysi burchak kattaroq: 2 radianmi yoki 100° mi, va ularning farqi taxminan qanchani tashkil qiladi?",
+      "v": [
+        "2 radian, taxminan 15° ga",
+        "100°, taxminan 15° ga",
+        "2 radian, taxminan 98° ga",
+        "Ular o'zaro teng"
+      ],
+      "t": 0,
+      "izoh": "2 radianni gradusga o'tkazamiz: 2·180/π ≈ 2·57,3 = 114,6°. Bu 100° dan katta. Farqi 114,6 − 100 = 14,6, ya'ni taxminan 15°. Javob: 2 radian, taxminan 15° ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-burchak-taqqoslash",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#b83db699"
+    },
+    {
+      "q": "Uch burchak berilgan: 3π/5 radian, 105° va 1,9 radian. Ularni o'sish tartibida joylashtiring va to'g'ri qatorni tanlang.",
+      "v": [
+        "3π/5, 105°, 1,9 radian",
+        "1,9 radian, 105°, 3π/5",
+        "105°, 1,9 radian, 3π/5",
+        "105°, 3π/5, 1,9 radian"
+      ],
+      "t": 3,
+      "izoh": "Hammasini gradusga keltiramiz: 3π/5 = 108°, 1,9 radian ≈ 1,9·57,3 ≈ 108,9°, uchinchisi esa 105°. O'sish tartibi: 105° < 108° < 108,9°. Javob: 105°, 3π/5, 1,9 radian.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-burchak-taqqoslash",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#b9731300"
+    },
+    {
+      "q": "Ikki burchakning yig'indisi 5π/4 radianga, farqi esa 45° ga teng. Ulardan kattarog'ini gradus o'lchovida toping.",
+      "v": [
+        "90°",
+        "112,5°",
+        "135°",
+        "180°"
+      ],
+      "t": 2,
+      "izoh": "Avval 5π/4 ni gradusga o'tkazamiz: 5·180/4 = 225°. Kattarog'i (225 + 45) : 2 = 135°, kichigi esa (225 − 45) : 2 = 90°. Javob: 135°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-burchak-taqqoslash",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#f00fb28e"
+    },
+    {
+      "q": "Loyihada bir burchak 7π/18 radian, ikkinchisi esa 65° qilib olingan. Ularning ayirmasi necha gradusni tashkil qiladi?",
+      "v": [
+        "15°",
+        "5°",
+        "25°",
+        "10°"
+      ],
+      "t": 1,
+      "izoh": "7π/18 ni gradusga o'tkazamiz: 7·180/18 = 7·10 = 70°. Endi ayirmani topamiz: 70 − 65 = 5. Javob: 5°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-burchak-taqqoslash",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#a43cc961"
+    },
+    {
+      "q": "Quyidagi radian o'lchovlaridan qaysi biri koordinata o'qi ustida yotishini aniqlang: 3π/2, 5π/8, 4π/7 va 7π/9.",
+      "v": [
+        "3π/2",
+        "5π/8",
+        "4π/7",
+        "7π/9"
+      ],
+      "t": 0,
+      "izoh": "O'q ustidagi burchaklar 0, π/2, π va 3π/2 ga mos keladi. 3π/2 aynan 270° ga teng va ordinata o'qining manfiy qismida yotadi. Qolganlari gradusda 112,5°, taxminan 103° va 140° chiqadi. Javob: 3π/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-oqidagi-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#3870d388"
+    },
+    {
+      "q": "Robot boshlang'ich yo'nalishdan soat strelkasiga teskari 630° ga burildi. U endi qaysi yo'nalishga qarab turibdi?",
+      "v": [
+        "Yuqoriga, Oy o'qi bo'ylab",
+        "Pastga, Oy o'qi bo'ylab",
+        "O'ngga, Ox o'qi bo'ylab",
+        "Chapga, Ox o'qi bo'ylab"
+      ],
+      "t": 1,
+      "izoh": "630 dan bitta to'liq aylanishni ayiramiz: 630 − 360 = 270. Demak robot 270° li yo'nalishda turadi, bu ordinata o'qining manfiy qismi. Javob: pastga, Oy o'qi bo'ylab.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-oqidagi-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#14cb77a0"
+    },
+    {
+      "q": "Trigonometrik doirada burchak aynan 4π radianga teng bo'lsa, unga mos nuqta aylananing qaysi joyida bo'ladi?",
+      "v": [
+        "(0; 1) nuqtada",
+        "(−1; 0) nuqtada",
+        "Boshlang'ich nuqtada, (1; 0)",
+        "(0; −1) nuqtada"
+      ],
+      "t": 2,
+      "izoh": "4π radian 2·2π ga teng, ya'ni ikkita to'liq aylanish. Ikki marta aylanib bo'lgach nuqta yana boshlang'ich holatiga qaytadi. Birlik aylanada bu (1; 0) nuqta. Javob: boshlang'ich nuqtada, (1; 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-oqidagi-burchak",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#85f625cc"
+    },
+    {
+      "q": "Velosiped g'ildiragining radiusi 33 sm. Velosiped to'g'ri chiziq bo'ylab 99 m yo'l bosganda g'ildirak necha radianga aylangan?",
+      "v": [
+        "300 radian",
+        "3 radian",
+        "150 radian",
+        "3300 radian"
+      ],
+      "t": 0,
+      "izoh": "Avval birliklarni moslashtiramiz: 99 m = 9900 sm. Bosilgan yo'l aylana yoyiga teng, shuning uchun α = l/R = 9900 : 33 = 300 radian. Javob: 300 radian.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gildirak-masofa-kontekst",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#ab4a59ec"
+    },
+    {
+      "q": "Yuk mashinasi g'ildiragining diametri 1,2 m. G'ildirak 250 marta to'liq aylanganda mashina taxminan necha metr yuradi?",
+      "v": [
+        "taxminan 471 m",
+        "taxminan 1884 m",
+        "taxminan 300 m",
+        "taxminan 942 m"
+      ],
+      "t": 3,
+      "izoh": "Bir aylanishda bosilgan yo'l aylana uzunligiga teng: L = πd = 3,14·1,2 = 3,768 m. 250 aylanishda esa 250·3,768 = 942 m. Javob: taxminan 942 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gildirak-masofa-kontekst",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#72d1eca0"
+    },
+    {
+      "q": "Do'kondagi gilam roliki radiusi 15 sm. Rolik 6π radianga aylanganda undan necha metr gilam yechiladi?",
+      "v": [
+        "taxminan 5,7 m",
+        "taxminan 2,8 m",
+        "taxminan 1,4 m",
+        "taxminan 0,9 m"
+      ],
+      "t": 1,
+      "izoh": "Yechilgan gilam uzunligi yoy uzunligiga teng: l = R·α = 15·6π = 90π ≈ 282,6 sm. Buni metrga o'tkazamiz: 282,6 sm ≈ 2,8 m. Javob: taxminan 2,8 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gildirak-masofa-kontekst",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#862e1a73"
+    },
+    {
+      "q": "Ikki tishli g'ildirak bir-biriga tegib aylanadi: birinchisining radiusi 8 sm, ikkinchisiniki 20 sm. Birinchisi 5π radianga aylansa, ikkinchisi necha radianga aylanadi?",
+      "v": [
+        "5π radian",
+        "12,5π radian",
+        "2π radian",
+        "π radian"
+      ],
+      "t": 2,
+      "izoh": "Tegib turgan g'ildiraklarda tegish chizig'i bo'ylab yoy uzunliklari teng bo'ladi: l = 8·5π = 40π sm. Ikkinchisi uchun α = l/R = 40π : 20 = 2π radian. Javob: 2π radian.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gildirak-masofa-kontekst",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#271f65b0"
+    },
+    {
+      "q": "Soat mexanizmidagi shkiv radiusi 4,5 sm, unga o'ralgan ip esa 27 sm ga tortildi. Shkiv necha radianga burildi?",
+      "v": [
+        "3 radian",
+        "121,5 radian",
+        "12 radian",
+        "6 radian"
+      ],
+      "t": 3,
+      "izoh": "Ipning tortilgan uzunligi shkiv yoyiga teng, shuning uchun α = l/R = 27 : 4,5 = 6 radian. Radius o'rniga diametrni qo'yish natijani ikki barobar kamaytiradi. Javob: 6 radian.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gildirak-masofa-kontekst",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#2f22c8c4"
+    },
+    {
+      "q": "Doira shaklidagi tort 9 ta teng bo'lakka bo'lindi. Har bir bo'lakka mos markaziy burchak radianda qanday?",
+      "v": [
+        "2π/9",
+        "π/9",
+        "9π/2",
+        "4π/9"
+      ],
+      "t": 0,
+      "izoh": "To'liq aylana 2π radianni tashkil qiladi. Uni 9 ta teng bo'lakka bo'lsak, har bir bo'lakka 2π : 9 = 2π/9 radian to'g'ri keladi. Javob: 2π/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylanani-teng-bolish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#bc00540e"
+    },
+    {
+      "q": "Aylana shaklidagi maydon bo'ylab teng oraliqda 15 ta chiroq o'rnatildi. Qo'shni ikki chiroq orasidagi markaziy burchak necha gradus?",
+      "v": [
+        "15°",
+        "24°",
+        "36°",
+        "12°"
+      ],
+      "t": 1,
+      "izoh": "Chiroqlar aylanani 15 ta teng yoyga ajratadi. Har bir yoyga mos markaziy burchak 360 : 15 = 24°. Javob: 24°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylanani-teng-bolish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#cb90d6b3"
+    },
+    {
+      "q": "Tort 8 ta teng bo'lakka bo'lingan. Uchta bo'lak olinsa, qolgan qismga mos markaziy burchak radianda qancha bo'ladi?",
+      "v": [
+        "3π/4",
+        "5π/8",
+        "π/4",
+        "5π/4"
+      ],
+      "t": 3,
+      "izoh": "Bir bo'lakka 2π : 8 = π/4 radian to'g'ri keladi. Uchta bo'lak olingach 8 − 3 = 5 ta bo'lak qoladi. Qolgan qismga 5·(π/4) = 5π/4 radian mos keladi. Javob: 5π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylanani-teng-bolish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#86bae9ee"
+    },
+    {
+      "q": "Aylana teng bo'laklarga bo'lingan va har bir bo'lakning markaziy burchagi π/7 radianga teng. Aylana necha bo'lakka bo'lingan?",
+      "v": [
+        "7 ta",
+        "14 ta",
+        "28 ta",
+        "21 ta"
+      ],
+      "t": 1,
+      "izoh": "To'liq aylana 2π radian. Bo'laklar soni 2π : (π/7) = 2π·7/π = 14 ta. Maxrajdagi 7 ni to'g'ridan-to'g'ri javob deb olish keng tarqalgan xato. Javob: 14 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylanani-teng-bolish",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#fd1e7594"
+    },
+    {
+      "q": "Uchburchakning ikki burchagi π/4 radian va 75° ga teng. Uning uchinchi burchagini gradus o'lchovida toping.",
+      "v": [
+        "60°",
+        "70°",
+        "105°",
+        "80°"
+      ],
+      "t": 0,
+      "izoh": "Avval π/4 radianni gradusga o'tkazamiz: 180 : 4 = 45°. Uchburchak burchaklari yig'indisi 180°, demak uchinchisi 180 − 45 − 75 = 60°. Javob: 60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-yigindi-aralash-birlik",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#a8620b55"
+    },
+    {
+      "q": "Ikki burchakning yig'indisi 2π/3 radianga teng. Ulardan biri 50° bo'lsa, ikkinchisi necha gradusni tashkil qiladi?",
+      "v": [
+        "170°",
+        "60°",
+        "70°",
+        "110°"
+      ],
+      "t": 2,
+      "izoh": "2π/3 ni gradusga o'tkazamiz: 2·180/3 = 120°. Ikkinchi burchak 120 − 50 = 70° ga teng. Javob: 70°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-yigindi-aralash-birlik",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#49bd6a34"
+    },
+    {
+      "q": "Loyihada burchak 5π/12 radianga teng olingan; unga to'ldiruvchi, ya'ni π/2 gacha yetmaydigan burchakni radianda toping.",
+      "v": [
+        "7π/12",
+        "11π/12",
+        "π/6",
+        "π/12"
+      ],
+      "t": 3,
+      "izoh": "To'ldiruvchi burchaklar yig'indisi π/2 ga teng bo'ladi. π/2 ni 6π/12 ko'rinishida yozamiz, so'ng 6π/12 − 5π/12 = π/12. Javob: π/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-yigindi-aralash-birlik",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#d0632bd6"
+    },
+    {
+      "q": "To'rtburchakning uch burchagi 80°, π/2 radian va 2π/9 radianga teng. Uning to'rtinchi burchagi necha gradus?",
+      "v": [
+        "110°",
+        "170°",
+        "190°",
+        "150°"
+      ],
+      "t": 3,
+      "izoh": "Radianlarni gradusga o'tkazamiz: π/2 = 90°, 2π/9 = 2·180/9 = 40°. To'rtburchak burchaklari yig'indisi 360°, demak to'rtinchisi 360 − 80 − 90 − 40 = 150°. Javob: 150°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-yigindi-aralash-birlik",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#2e18a149"
+    },
+    {
+      "q": "Yer meridiani bo'ylab 1° ga mos yoy uzunligi taxminan 111 km. Ikki shahar kengliklari farqi 2° bo'lsa, ular orasidagi meridian yoyi qancha?",
+      "v": [
+        "222 km",
+        "111 km",
+        "55,5 km",
+        "444 km"
+      ],
+      "t": 0,
+      "izoh": "Bir gradusga mos meridian yoyi 111 km ga teng deb berilgan. Kengliklar farqi 2° bo'lgani uchun yoy uzunligi 2·111 = 222 km. Javob: 222 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geografik-yoy-kenglik",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#c51c44c0"
+    },
+    {
+      "q": "Yer radiusi taxminan 6370 km ga teng. Ekvator bo'ylab 0,05 radianli yoyning uzunligi necha kilometr?",
+      "v": [
+        "637 km",
+        "127400 km",
+        "318,5 km",
+        "159,25 km"
+      ],
+      "t": 2,
+      "izoh": "Yoy uzunligi l = R·α formulasi bilan topiladi. l = 6370·0,05 = 318,5 km. Radiusni burchakka bo'lib yuborish juda katta xato beradi. Javob: 318,5 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "geografik-yoy-kenglik",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#69ec130f"
+    },
+    {
+      "q": "Samolyot ekvator bo'ylab 2000 km uchdi. Yer radiusi 6370 km deb olinsa, u markazdan qaralganda necha radianlik burchakni bosdi?",
+      "v": [
+        "taxminan 3,19 radian",
+        "taxminan 0,16 radian",
+        "taxminan 1,57 radian",
+        "taxminan 0,31 radian"
+      ],
+      "t": 3,
+      "izoh": "Uchish yo'li aylana yoyi bo'lgani uchun α = l/R = 2000 : 6370 ≈ 0,314 radian. Radiusni yo'lga bo'lish teskari natija beradi. Javob: taxminan 0,31 radian.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "geografik-yoy-kenglik",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#76572cd4"
+    },
+    {
+      "q": "Globusda ikki nuqta orasidagi meridian yoyi 5π/36 radianga teng. Bu nuqtalarning kengliklari farqi necha gradus?",
+      "v": [
+        "36°",
+        "50°",
+        "25°",
+        "5°"
+      ],
+      "t": 2,
+      "izoh": "5π/36 ni gradusga o'tkazamiz: 5·180/36 = 5·5 = 25. Demak kengliklar farqi 25° ga teng. Maxrajdagi 36 ni javob deb olish xato. Javob: 25°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geografik-yoy-kenglik",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#9649d391"
+    },
+    {
+      "q": "α burchak birlik aylananing birinchi choragida yotadi. U holda 90° + α burchagi qaysi chorakda bo'ladi?",
+      "v": [
+        "II chorak",
+        "III chorak",
+        "IV chorak",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Birinchi chorakda 0° < α < 90° bo'ladi. Tengsizlikning har uch qismiga 90° qo'shamiz: 90° < 90 + α < 180°. Bu oraliq to'liq ikkinchi chorakka to'g'ri keladi. Javob: II chorak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chorak-chegarasi-oraliq",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#b156a223"
+    },
+    {
+      "q": "180° < α < 270° bo'lgani ma'lum, ya'ni α uchinchi chorakda yotadi. U holda α/2 burchagi birlik aylanada qanday oraliqda yotadi?",
+      "v": [
+        "45° dan 90° gacha",
+        "90° dan 135° gacha",
+        "135° dan 180° gacha",
+        "180° dan 270° gacha"
+      ],
+      "t": 1,
+      "izoh": "Shartga ko'ra 180° < α < 270°. Tengsizlikning barcha qismini 2 ga bo'lamiz: 90° < α/2 < 135°, ya'ni yarim burchak ikkinchi chorakning boshlanish qismida yotadi. Eslatma: shart aynan shu aylanish uchun berilgani muhim — burchakka 360° qo'shilsa (masalan α = 585° ham uchinchi chorak burchagi), α/2 endi 270° dan 315° gacha oraliqqa, ya'ni to'rtinchi chorakka tushadi. Javob: 90° dan 135° gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chorak-chegarasi-oraliq",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#e62ea082"
+    },
+    {
+      "q": "Trigonometriya masalasida π/2 < α < π sharti berilgan. Shu burchak qaysi oraliqdagi gradus qiymatlarni oladi?",
+      "v": [
+        "0° dan 90° gacha",
+        "90° dan 180° gacha",
+        "180° dan 270° gacha",
+        "270° dan 360° gacha"
+      ],
+      "t": 1,
+      "izoh": "π/2 radian 90° ga, π radian esa 180° ga teng. Shuning uchun shart gradusda 90° < α < 180° ko'rinishini oladi, ya'ni ikkinchi chorak oralig'i. Javob: 90° dan 180° gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chorak-chegarasi-oraliq",
+      "id": "matematika_trig_m01-gradus-va-radian-olchov-birlik#e82e33d0"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Ikkinchi tartibli hosila, qavariqlik va egilish nuqtasi",
+  "bolim": "Matematik analiz asoslari",
+  "blok": "anlz",
+  "rasmiyBolim": 5,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Anvar f(x) = 2x⁴ − 5x³ + 7x − 9 funksiyani ketma-ket ikki marta hosilaladi. U oxirida qanday ifoda olishi kerak?",
+      "v": [
+        "f''(x) = 8x³ − 15x² + 7",
+        "f''(x) = 24x³ − 30x²",
+        "f''(x) = 24x² − 30x",
+        "f''(x) = 24x² − 30x + 7"
+      ],
+      "t": 2,
+      "izoh": "Avval birinchi hosila olinadi: f'(x) = 8x³ − 15x² + 7. Endi shu ifodani yana hosilalaymiz: (8x³)' = 24x², (−15x²)' = −30x, o'zgarmas 7 ning hosilasi nolga teng. Demak f''(x) = 24x² − 30x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-kopxad-hisoblash",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#15b59962"
+    },
+    {
+      "q": "f(x) = x⁵ − 4x³ + 6x² funksiya berilgan. Uning ikkinchi tartibli hosilasi f''(x) ni to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "f''(x) = 20x³ − 24x + 12",
+        "f''(x) = 5x⁴ − 12x² + 12x",
+        "f''(x) = 20x³ − 24x² + 12x",
+        "f''(x) = 20x⁴ − 24x + 12"
+      ],
+      "t": 0,
+      "izoh": "Birinchi hosila: f'(x) = 5x⁴ − 12x² + 12x. Ikkinchi marta hosilalaymiz: (5x⁴)' = 20x³, (−12x²)' = −24x, (12x)' = 12. Shunday qilib f''(x) = 20x³ − 24x + 12 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-kopxad-hisoblash",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#132bb844"
+    },
+    {
+      "q": "Nozima −x⁴ + 8x³ − 3x + 5 ko'phadning ikkinchi tartibli hosilasini qidirmoqda. Quyidagilardan qaysi biri to'g'ri natija?",
+      "v": [
+        "12x² − 48x",
+        "−4x³ + 24x² − 3",
+        "−12x² + 48x − 3",
+        "−12x² + 48x"
+      ],
+      "t": 3,
+      "izoh": "Birinchi hosila: f'(x) = −4x³ + 24x² − 3. Ikkinchi hosilada har bir had yana hosilalanadi: (−4x³)' = −12x², (24x²)' = 48x, o'zgarmas −3 yo'qoladi. Natija f''(x) = −12x² + 48x bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-kopxad-hisoblash",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#2b304536"
+    },
+    {
+      "q": "Grafik chizishdan oldin f(x) = x³/3 − 2x² + 5x funksiyaning ikkinchi hosilasi kerak bo'ldi. Uni toping.",
+      "v": [
+        "x² − 4x + 5",
+        "2x − 4",
+        "6x − 4",
+        "2x + 4"
+      ],
+      "t": 1,
+      "izoh": "x³/3 ning hosilasi 3x²/3 = x², −2x² ning hosilasi −4x, 5x niki 5. Demak f'(x) = x² − 4x + 5. Yana hosilalaymiz: (x²)' = 2x, (−4x)' = −4, 5 yo'qoladi. Javob f''(x) = 2x − 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-kopxad-hisoblash",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#1e919835"
+    },
+    {
+      "q": "Sardor 4x³ + 3x² − 12x + 1 ifodani ikki marta hosilalab, chiziqli ifoda hosil qildi. U qaysi ifodani yozgan?",
+      "v": [
+        "12x² + 6x − 12",
+        "12x + 6",
+        "24x + 6",
+        "24x − 12"
+      ],
+      "t": 2,
+      "izoh": "Birinchi hosila f'(x) = 12x² + 6x − 12 ko'rinishida bo'ladi. Uni yana hosilalaymiz: (12x²)' = 24x, (6x)' = 6, o'zgarmas −12 yo'qoladi. Demak f''(x) = 24x + 6 chiziqli ifoda chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-kopxad-hisoblash",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#e841c2ea"
+    },
+    {
+      "q": "Nozima f(x) = x³ − 6x² + 9x + 2 funksiyaning ikkinchi tartibli hosilasini x = 4 nuqtada hisobladi. Natija nechaga teng?",
+      "v": [
+        "12",
+        "9",
+        "−12",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Avval f'(x) = 3x² − 12x + 9, so'ng f''(x) = 6x − 12 topiladi. Endi x = 4 ni qo'yamiz: f''(4) = 6·4 − 12 = 24 − 12 = 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-nuqtadagi-qiymat",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#b39a5217"
+    },
+    {
+      "q": "f(x) = 2x³ − 5x² + x − 7 bo'lsa, f''(−2) ning qiymatini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "34",
+        "−14",
+        "45",
+        "−34"
+      ],
+      "t": 3,
+      "izoh": "Birinchi hosila f'(x) = 6x² − 10x + 1, ikkinchisi f''(x) = 12x − 10. Endi x = −2 ni qo'yamiz: f''(−2) = 12·(−2) − 10 = −24 − 10 = −34. Manfiy sondan keyin ham 10 ayiriladi, qo'shilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-nuqtadagi-qiymat",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#dceb9050"
+    },
+    {
+      "q": "Dilnoza f(x) = x⁴ − 3x³ + 2x funksiya uchun f''(3) ni hisoblashi kerak. To'g'ri natijani ko'rsating.",
+      "v": [
+        "29",
+        "54",
+        "162",
+        "−54"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 4x³ − 9x² + 2 bo'ladi, undan f''(x) = 12x² − 18x. x = 3 da: f''(3) = 12·9 − 18·3 = 108 − 54 = 54. Javob: 54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-nuqtadagi-qiymat",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#1cadbbf4"
+    },
+    {
+      "q": "Zavodda t soatda tayyorlangan mahsulot soni N(t) = 3t³ − 4t² + 20t formula bilan beriladi. N''(2) nechaga teng?",
+      "v": [
+        "40",
+        "44",
+        "28",
+        "36"
+      ],
+      "t": 2,
+      "izoh": "Birinchi hosila N'(t) = 9t² − 8t + 20 ishlab chiqarish tezligini beradi. Ikkinchi hosila N''(t) = 18t − 8. t = 2 da: N''(2) = 18·2 − 8 = 36 − 8 = 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f2-nuqtadagi-qiymat",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#6abf8d65"
+    },
+    {
+      "q": "Jasur f(x) = 5x⁴ − 2x³ + x² funksiyaning ikkinchi hosilasini x = −1 nuqtada hisoblamoqchi. Qaysi son to'g'ri?",
+      "v": [
+        "74",
+        "50",
+        "62",
+        "−28"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 20x³ − 6x² + 2x, undan f''(x) = 60x² − 12x + 2. x = −1 ni qo'yamiz: 60·1 − 12·(−1) + 2 = 60 + 12 + 2 = 74. Manfiy x da o'rta had qo'shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f2-nuqtadagi-qiymat",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#d6e8a568"
+    },
+    {
+      "q": "Prujinadagi tebranish f(x) = 3sin x + 2cos x funksiya bilan tasvirlangan. Uning ikkinchi tartibli hosilasi qaysi ifodaga teng?",
+      "v": [
+        "3cos x − 2sin x",
+        "−3sin x − 2cos x",
+        "3sin x + 2cos x",
+        "−3cos x + 2sin x"
+      ],
+      "t": 1,
+      "izoh": "Birinchi hosila: f'(x) = 3cos x − 2sin x. Yana hosilalaymiz: (3cos x)' = −3sin x, (−2sin x)' = −2cos x. Demak f''(x) = −3sin x − 2cos x, ya'ni boshlang'ich funksiyaning qarama-qarshisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-trigonometrik",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#4002f825"
+    },
+    {
+      "q": "Malika f(x) = sin 2x funksiyani ikki marta hosilaladi. Zanjir qoidasini to'g'ri qo'llaganda u qanday natija oladi?",
+      "v": [
+        "f''(x) = 2cos 2x",
+        "f''(x) = −sin 2x",
+        "f''(x) = 4sin 2x",
+        "f''(x) = −4sin 2x"
+      ],
+      "t": 3,
+      "izoh": "Ichki funksiya 2x ning hosilasi 2 ga teng, shuning uchun f'(x) = 2cos 2x. Ikkinchi marta: (2cos 2x)' = 2·(−sin 2x)·2 = −4sin 2x. Zanjir koeffitsienti ikki marta ko'paytirilgani uchun 4 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f2-trigonometrik",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#4c14030c"
+    },
+    {
+      "q": "Bekzod f(x) = cos 3x funksiya uchun ikkinchi tartibli hosilani hisoblamoqda. Quyidagi javoblardan qaysi biri to'g'ri?",
+      "v": [
+        "f''(x) = −9cos 3x",
+        "f''(x) = 9cos 3x",
+        "f''(x) = −3sin 3x",
+        "f''(x) = −9sin 3x"
+      ],
+      "t": 0,
+      "izoh": "Birinchi hosila f'(x) = −3sin 3x bo'ladi, chunki ichki funksiya hosilasi 3 ga teng. Ikkinchi hosila: (−3sin 3x)' = −3·cos 3x·3 = −9cos 3x. Belgi manfiy, funksiya esa kosinus bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-trigonometrik",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#9fcdb3ac"
+    },
+    {
+      "q": "Mayatnikning siljishi f(x) = 4sin x formulasi bilan berilgan. Ikkinchi tartibli hosilaning x = π/6 nuqtadagi qiymatini toping.",
+      "v": [
+        "2",
+        "2√3",
+        "−2",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 4cos x, f''(x) = −4sin x. Endi x = π/6 ni qo'yamiz: sin(π/6) = 1/2, demak f''(π/6) = −4·(1/2) = −2. Javob manfiy, chunki sinusning ikkinchi hosilasi ishorani almashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f2-trigonometrik",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#7f578ef1"
+    },
+    {
+      "q": "Zilola f(x) = e^(3x) funksiyaning ikkinchi tartibli hosilasini yozmoqchi. Ko'rsatkichli funksiya uchun to'g'ri natijani tanlang.",
+      "v": [
+        "3e^(3x)",
+        "9e^(3x)",
+        "6e^(3x)",
+        "e^(3x)"
+      ],
+      "t": 1,
+      "izoh": "Har hosilalashda ko'rsatkichdagi 3 koeffitsient sifatida oldinga chiqadi: f'(x) = 3e^(3x). Yana hosilalaymiz: f''(x) = 3·3e^(3x) = 9e^(3x). Koeffitsient ikki barobar emas, kvadratga ko'tariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-korsatkichli-logarifmik",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#8a11a255"
+    },
+    {
+      "q": "Otabek f(x) = ln x funksiyani ikki marta hosilaladi. U olgan ifoda quyidagilardan qaysi biriga mos keladi?",
+      "v": [
+        "1/x",
+        "1/x²",
+        "−2/x³",
+        "−1/x²"
+      ],
+      "t": 3,
+      "izoh": "Logarifmning birinchi hosilasi f'(x) = 1/x. Buni x^(−1) ko'rinishida yozib hosilalaymiz: (x^(−1))' = −x^(−2). Demak f''(x) = −1/x². Ishora manfiy, chunki daraja ko'rsatkichi oldinga manfiy son bo'lib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-korsatkichli-logarifmik",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#e787e696"
+    },
+    {
+      "q": "f(x) = x·ln x funksiya berilgan bo'lsa, uning ikkinchi tartibli hosilasi qanday sodda ko'rinishga keladi?",
+      "v": [
+        "1/x",
+        "ln x + 1",
+        "1/x + 1",
+        "−1/x²"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytma qoidasi bo'yicha f'(x) = 1·ln x + x·(1/x) = ln x + 1. Endi shuni hosilalaymiz: (ln x)' = 1/x, o'zgarmas 1 yo'qoladi. Demak f''(x) = 1/x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-korsatkichli-logarifmik",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#43d5aa0d"
+    },
+    {
+      "q": "Radioaktiv moddaning massasi m(t) = 5e^(−2t) qonuniyat bo'yicha kamayadi. m''(t) ifodasini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "−10e^(−2t)",
+        "10e^(−2t)",
+        "20e^(−2t)",
+        "−20e^(−2t)"
+      ],
+      "t": 2,
+      "izoh": "Birinchi hosila: m'(t) = 5·(−2)e^(−2t) = −10e^(−2t). Ikkinchi hosila: m''(t) = −10·(−2)e^(−2t) = 20e^(−2t). Ikki manfiy ko'paytuvchi musbat natija beradi, shuning uchun javob musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f2-korsatkichli-logarifmik",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#e49aa16a"
+    },
+    {
+      "q": "Gulnora f(x) = ln(2x + 1) funksiyaning ikkinchi tartibli hosilasini topmoqchi. Quyidagi ifodalardan qaysi biri to'g'ri?",
+      "v": [
+        "2/(2x + 1)",
+        "4/(2x + 1)²",
+        "−2/(2x + 1)²",
+        "−4/(2x + 1)²"
+      ],
+      "t": 3,
+      "izoh": "Birinchi hosila: f'(x) = 2/(2x + 1). Bu kasrni hosilalaymiz: surat o'zgarmas, maxraj (2x + 1) ning hosilasi 2. Demak f''(x) = −2·2/(2x + 1)² = −4/(2x + 1)². Ishora manfiy chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f2-korsatkichli-logarifmik",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#276d2ffc"
+    },
+    {
+      "q": "Idishdagi suv sathi h(x) = √x formula bilan o'sadi. Ikkinchi tartibli hosilaning x = 4 dagi qiymati nechaga teng?",
+      "v": [
+        "1/32",
+        "−1/32",
+        "−1/16",
+        "1/4"
+      ],
+      "t": 1,
+      "izoh": "√x = x^(1/2) deb yozamiz. Birinchi hosila h'(x) = (1/2)x^(−1/2), ikkinchisi h''(x) = −(1/4)x^(−3/2). x = 4 da 4^(3/2) = 8, demak h''(4) = −1/(4·8) = −1/32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "f2-kasr-va-ildiz",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#68bd976d"
+    },
+    {
+      "q": "Ulug'bek f(x) = 1/x funksiyani ikki marta hosilalab, natijani sodda ko'rinishda yozmoqchi. Qaysi ifoda to'g'ri?",
+      "v": [
+        "2/x³",
+        "−2/x³",
+        "−1/x²",
+        "1/x²"
+      ],
+      "t": 0,
+      "izoh": "1/x ni x^(−1) deb yozamiz. Birinchi hosila: −x^(−2), ya'ni −1/x². Ikkinchi hosila: (−1)·(−2)x^(−3) = 2x^(−3). Demak f''(x) = 2/x³ va ishora musbat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-kasr-va-ildiz",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#25d1f8fe"
+    },
+    {
+      "q": "Gaz bosimi P(x) = 6/x² formula bilan berilgan bo'lsa, P''(x) ifodasi qanday ko'rinishga ega bo'ladi?",
+      "v": [
+        "−36/x⁴",
+        "36/x⁴",
+        "−12/x³",
+        "36/x³"
+      ],
+      "t": 1,
+      "izoh": "P(x) = 6x^(−2) deb yozamiz. Birinchi hosila P'(x) = 6·(−2)x^(−3) = −12x^(−3). Ikkinchi hosila P''(x) = −12·(−3)x^(−4) = 36x^(−4) = 36/x⁴. Ikki manfiy ko'paytuvchi musbat natija berdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f2-kasr-va-ildiz",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#7328afc1"
+    },
+    {
+      "q": "Kub shaklidagi idish qirrasi hajmga bog'liq ravishda a(V) = ∛V ko'rinishda o'zgaradi. a''(8) qiymatini hisoblang.",
+      "v": [
+        "1/144",
+        "1/12",
+        "−1/144",
+        "−1/72"
+      ],
+      "t": 2,
+      "izoh": "∛V = V^(1/3) deb yozamiz. Birinchi hosila (1/3)V^(−2/3), ikkinchisi (1/3)·(−2/3)V^(−5/3) = −(2/9)V^(−5/3). V = 8 da 8^(5/3) = 32, demak a''(8) = −2/(9·32) = −1/144.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "f2-kasr-va-ildiz",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#f4fcd290"
+    },
+    {
+      "q": "Farrux f(x) = x²·e^x ko'paytmani ikki marta hosilaladi. Ko'paytma qoidasini to'g'ri qo'llagan javobni tanlang.",
+      "v": [
+        "e^x(x² + 2x)",
+        "2e^x",
+        "e^x(x² + 4x)",
+        "e^x(x² + 4x + 2)"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytma qoidasi bo'yicha f'(x) = 2x·e^x + x²·e^x = e^x(x² + 2x). Buni yana hosilalaymiz: e^x(x² + 2x) + e^x(2x + 2) = e^x(x² + 4x + 2). Ko'rsatkichli ko'paytuvchi har qadamda saqlanib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f2-kopaytma-va-boluv",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#e6d1d3c1"
+    },
+    {
+      "q": "Kamola f(x) = x²·ln x funksiyaning ikkinchi tartibli hosilasini topdi. Uning to'g'ri natijasi qaysi variantda ko'rsatilgan?",
+      "v": [
+        "2ln x + 3",
+        "2ln x + 2",
+        "2x·ln x + x",
+        "2/x"
+      ],
+      "t": 0,
+      "izoh": "Birinchi hosila: f'(x) = 2x·ln x + x²·(1/x) = 2x·ln x + x. Ikkinchi hosila: 2ln x + 2x·(1/x) + 1 = 2ln x + 2 + 1. Demak f''(x) = 2ln x + 3, oxirgi qo'shiluvchi x ning hosilasidan keldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f2-kopaytma-va-boluv",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#3c62a916"
+    },
+    {
+      "q": "Sevara f(x) = (2x + 1)·cos x funksiyani ikki marta hosilaladi. U olgan to'g'ri ifodani quyidagilardan tanlang.",
+      "v": [
+        "−2sin x − (2x + 1)cos x",
+        "−4sin x − (2x + 1)cos x",
+        "2cos x − (2x + 1)sin x",
+        "−4sin x + (2x + 1)cos x"
+      ],
+      "t": 1,
+      "izoh": "Birinchi hosila: f'(x) = 2cos x − (2x + 1)sin x. Ikkinchi hosilada har ikkala had yana hosilalanadi: −2sin x − [2sin x + (2x + 1)cos x]. Qavsni ochib f''(x) = −4sin x − (2x + 1)cos x hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f2-kopaytma-va-boluv",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#8e95d0bc"
+    },
+    {
+      "q": "Aralashmadagi tuz ulushi u(x) = x/(x + 2) formula bilan beriladi. Bu funksiyaning ikkinchi tartibli hosilasi qanday?",
+      "v": [
+        "4/(x + 2)³",
+        "−2/(x + 2)³",
+        "−4/(x + 2)³",
+        "2/(x + 2)²"
+      ],
+      "t": 2,
+      "izoh": "Bo'linma qoidasi bo'yicha u'(x) = [(x + 2) − x]/(x + 2)² = 2/(x + 2)². Buni 2(x + 2)^(−2) deb yozib hosilalaymiz: 2·(−2)(x + 2)^(−3) = −4/(x + 2)³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f2-kopaytma-va-boluv",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#8ea1bbab"
+    },
+    {
+      "q": "Rustam (2x − 5)⁴ ifodani ikki marta hosilaladi. Zanjir qoidasi ikki bosqichda qo'llanganda qanday natija chiqadi?",
+      "v": [
+        "8(2x − 5)³",
+        "24(2x − 5)²",
+        "12(2x − 5)²",
+        "48(2x − 5)²"
+      ],
+      "t": 3,
+      "izoh": "Birinchi hosila: 4(2x − 5)³·2 = 8(2x − 5)³. Ikkinchi hosila: 8·3(2x − 5)²·2 = 48(2x − 5)². Ichki funksiyaning hosilasi 2 har ikki qadamda ham ko'paytiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "f2-murakkab-funksiya",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#a256449d"
+    },
+    {
+      "q": "Konussimon idishdagi suv sathi h(x) = √(3x + 1) bo'lsa, h''(1) qiymatini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "−9/32",
+        "9/32",
+        "−9/16",
+        "3/4"
+      ],
+      "t": 0,
+      "izoh": "h(x) = (3x + 1)^(1/2). Birinchi hosila (3/2)(3x + 1)^(−1/2), ikkinchisi (3/2)·(−1/2)·3·(3x + 1)^(−3/2) = −(9/4)(3x + 1)^(−3/2). x = 1 da 4^(3/2) = 8, demak h''(1) = −9/32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "f2-murakkab-funksiya",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#3760a4a5"
+    },
+    {
+      "q": "Feruza f(x) = e^(x²) funksiyani ikki marta hosilalash uchun zanjir va ko'paytma qoidalarini birga ishlatdi. Natija qaysi?",
+      "v": [
+        "4x²e^(x²)",
+        "(4x² + 2)e^(x²)",
+        "2e^(x²)",
+        "2x·e^(x²)"
+      ],
+      "t": 1,
+      "izoh": "Birinchi hosila: f'(x) = 2x·e^(x²). Endi ko'paytma qoidasi: (2x)'·e^(x²) + 2x·(e^(x²))' = 2e^(x²) + 2x·2x·e^(x²). Bir xil ko'paytuvchini qavsga chiqarib f''(x) = (4x² + 2)e^(x²) olamiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f2-murakkab-funksiya",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#4c06865b"
+    },
+    {
+      "q": "Aziz sin²x funksiyani ikki marta hosilalab, javobni ikkilangan burchak orqali yozdi. To'g'ri ifodani ko'rsating.",
+      "v": [
+        "f''(x) = sin 2x",
+        "f''(x) = −2cos 2x",
+        "f''(x) = 2cos 2x",
+        "f''(x) = cos 2x"
+      ],
+      "t": 2,
+      "izoh": "Birinchi hosila: 2sin x·cos x, bu esa sin 2x ga teng. Endi sin 2x ni hosilalaymiz: ichki funksiya 2x ning hosilasi 2, demak natija 2cos 2x bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f2-murakkab-funksiya",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#f4b897a1"
+    },
+    {
+      "q": "f(x) = x³ − 6x² + 5x funksiya grafigi qaysi oraliqda botiq, ya'ni f''(x) > 0 sharti bajariladi?",
+      "v": [
+        "(−∞; 2)",
+        "(0; 2)",
+        "(−2; +∞)",
+        "(2; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Avval f'(x) = 3x² − 12x + 5, so'ng f''(x) = 6x − 12 topiladi. 6x − 12 > 0 tengsizlikdan x > 2 kelib chiqadi. Demak grafik (2; +∞) oraliqda botiq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qavariqlik-oraligi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#edd12df2"
+    },
+    {
+      "q": "Madina −x³ + 9x² − 2x + 1 funksiya grafigi qaysi oraliqda qavariq ekanini aniqlamoqchi. To'g'ri oraliqni ko'rsating.",
+      "v": [
+        "(3; +∞)",
+        "(−∞; 3)",
+        "(−3; +∞)",
+        "(0; 3)"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = −3x² + 18x − 2, undan f''(x) = −6x + 18. Qavariqlik sharti f''(x) < 0, ya'ni −6x + 18 < 0. Bundan 6x > 18, x > 3. Demak grafik (3; +∞) da qavariq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qavariqlik-oraligi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#15964ad9"
+    },
+    {
+      "q": "Shahzod f(x) = x⁴ − 6x² + 4 funksiya grafigi botiq bo'ladigan barcha oraliqlarni topmoqchi. Qaysi javob to'g'ri?",
+      "v": [
+        "(−1; 1)",
+        "(−∞; −1) ∪ (1; +∞)",
+        "(0; 1)",
+        "(−∞; +∞)"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 4x³ − 12x, demak f''(x) = 12x² − 12 = 12(x² − 1). Bu ifoda x² > 1 bo'lganda musbat, ya'ni x < −1 yoki x > 1. Demak grafik (−∞; −1) ∪ (1; +∞) oraliqlarda botiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qavariqlik-oraligi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#8a21d045"
+    },
+    {
+      "q": "Kompaniya daromadi D(t) = t³ − 12t² + 45t (mln so'm) bo'lib, t oy raqamini bildiradi. Grafik qachondan botiq bo'ladi?",
+      "v": [
+        "4-oygacha",
+        "8-oydan keyin",
+        "4-oydan keyin",
+        "2-oydan keyin"
+      ],
+      "t": 2,
+      "izoh": "D'(t) = 3t² − 24t + 45 daromad o'sish tezligi. D''(t) = 6t − 24 bo'lib, u t > 4 da musbat. Demak daromad grafigi to'rtinchi oydan keyin botiq bo'ladi, ya'ni o'sish tezligi orta boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qavariqlik-oraligi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#f049a60d"
+    },
+    {
+      "q": "Nigora f(x) = x⁴ − 2x³ + 5x funksiya grafigi qaysi oraliqda qavariq ekanini aniqlashi kerak. To'g'ri javobni tanlang.",
+      "v": [
+        "(−∞; 0) ∪ (1; +∞)",
+        "(0; +∞)",
+        "(−1; 0)",
+        "(0; 1)"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 4x³ − 6x² + 5, demak f''(x) = 12x² − 12x = 12x(x − 1). Bu ko'paytma 0 va 1 orasida manfiy bo'ladi. Qavariqlik sharti f''(x) < 0 bo'lgani uchun javob (0; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qavariqlik-oraligi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#360f8226"
+    },
+    {
+      "q": "f(x) = x³ − 3x² + x funksiya grafigi x = 0 nuqta atrofida qanday joylashganini ikkinchi hosila yordamida aniqlang.",
+      "v": [
+        "Qavariq, chunki f''(0) < 0",
+        "Botiq, chunki f''(0) > 0",
+        "Egilish nuqtasi, chunki f''(0) = 0",
+        "Aniqlab bo'lmaydi, chunki f'(0) ≠ 0"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² − 6x + 1, undan f''(x) = 6x − 6. Nuqtada f''(0) = −6 chiqadi. Ikkinchi hosila manfiy bo'lgani uchun grafik shu nuqta atrofida qavariq, ya'ni qavariqligi yuqoriga qaragan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qavariqlik-nuqtada-belgi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#c047e5ec"
+    },
+    {
+      "q": "Otabek y = ln x funksiya grafigining qavariqligini o'rganmoqda. Ikkinchi hosila ishorasiga ko'ra qaysi xulosa to'g'ri?",
+      "v": [
+        "Butun aniqlanish sohasida botiq",
+        "Butun aniqlanish sohasida qavariq",
+        "x > 1 da botiq, x < 1 da qavariq",
+        "x = 1 nuqtada egilish nuqtasi bor"
+      ],
+      "t": 1,
+      "izoh": "Logarifm uchun y' = 1/x, y'' = −1/x². Har qanday x > 0 uchun x² musbat, demak −1/x² doim manfiy. Ikkinchi hosila hech qachon ishorasini o'zgartirmaydi, shuning uchun grafik butun aniqlanish sohasida qavariq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qavariqlik-nuqtada-belgi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#0125902a"
+    },
+    {
+      "q": "Bakteriyalar soni y = e^x qonuniyat bilan ortadi. Bu funksiya grafigining qavariqligi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Grafik x < 0 da qavariq, x > 0 da botiq",
+        "x = 0 nuqtada egilish nuqtasi mavjud",
+        "Grafik har bir nuqtada botiq, egilish nuqtasi yo'q",
+        "Grafik har bir nuqtada qavariq"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkichli funksiyada y' = e^x va y'' = e^x. Ko'rsatkichli ifoda hech qachon nolga aylanmaydi va doim musbat. Demak ikkinchi hosila hamma joyda musbat, grafik butunlay botiq va egilish nuqtasi mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qavariqlik-nuqtada-belgi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#ecd7424f"
+    },
+    {
+      "q": "Do'kondagi kunlik sotuv hajmi S(t) = 40t − t³/6 (dona) bo'lsa, t = 2 kunda grafik qanday joylashganini aniqlang.",
+      "v": [
+        "Botiq, chunki S''(2) = 2 > 0",
+        "Egilish nuqtasi, chunki S''(2) = 0",
+        "Botiq, chunki S'(2) > 0",
+        "Qavariq, chunki S''(2) = −2 < 0"
+      ],
+      "t": 3,
+      "izoh": "Birinchi hosila S'(t) = 40 − t²/2, ikkinchisi S''(t) = −t. t = 2 ni qo'ysak S''(2) = −2 chiqadi. Manfiy natija grafikning shu nuqtada qavariq ekanini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qavariqlik-nuqtada-belgi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#58d4a810"
+    },
+    {
+      "q": "Zilola f(x) = x⁴ + 2x² funksiya grafigi turli nuqtalarda qanday joylashganini tekshirdi. To'g'ri xulosani tanlang.",
+      "v": [
+        "Har bir nuqtada botiq",
+        "Har bir nuqtada qavariq",
+        "x = 0 da egilish nuqtasi bor",
+        "x < 0 da qavariq, x > 0 da botiq"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 4x³ + 4x, undan f''(x) = 12x² + 4. Bu ifodada 12x² hech qachon manfiy bo'lmaydi, ustiga 4 qo'shiladi. Demak f''(x) doim musbat va grafik har bir nuqtada botiq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qavariqlik-nuqtada-belgi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#6cea2b00"
+    },
+    {
+      "q": "f(x) = x³ − 9x² + 15x funksiya grafigining egilish nuqtasi abssissasini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "x = 9",
+        "x = 3",
+        "x = 6",
+        "x = −3"
+      ],
+      "t": 1,
+      "izoh": "Avval f'(x) = 3x² − 18x + 15, so'ng f''(x) = 6x − 18 hisoblanadi. Egilish nuqtasida f''(x) = 0 bo'ladi: 6x − 18 = 0, bundan x = 3. Shu nuqtadan o'tganda f'' ishorasini almashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "egilish-abssissasi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#c1edbc02"
+    },
+    {
+      "q": "Bekzod x³ + 6x² − 4x + 7 funksiya grafigi qaysi nuqtada qavariqlikdan botiqlikka o'tishini bilmoqchi. Abssissani ko'rsating.",
+      "v": [
+        "x = 2",
+        "x = −6",
+        "x = −2",
+        "x = −4"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 3x² + 12x − 4 bo'lgani uchun f''(x) = 6x + 12. Nolga tenglashtiramiz: 6x + 12 = 0, demak x = −2. Chapda f'' manfiy, o'ngda musbat, ya'ni qavariqlik botiqlikka almashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "egilish-abssissasi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#2c455fc4"
+    },
+    {
+      "q": "Sevara f(x) = x⁴ − 4x³ + 12x funksiya grafigining barcha egilish nuqtalari abssissalarini topmoqchi. Qaysi javob to'g'ri?",
+      "v": [
+        "faqat x = 2",
+        "x = 0 va x = 4",
+        "faqat x = 0",
+        "x = 0 va x = 2"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 4x³ − 12x² + 12, undan f''(x) = 12x² − 24x = 12x(x − 2). Ildizlar x = 0 va x = 2. Har ikkala ildizda ko'paytma ishorasini almashtiradi, chunki har bir ko'paytuvchi birinchi darajali. Demak ikkita egilish nuqtasi bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "egilish-abssissasi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#d8bb990b"
+    },
+    {
+      "q": "Sardorning velosipeddagi yo'li s(t) = t³ − 7,5t² + 18t (m) bo'lsa, tezlanish ishorasi qaysi vaqtda o'zgaradi?",
+      "v": [
+        "t = 2,5 s",
+        "t = 5 s",
+        "t = 1,5 s",
+        "t = 3 s"
+      ],
+      "t": 0,
+      "izoh": "Tezlik s'(t) = 3t² − 15t + 18, tezlanish esa s''(t) = 6t − 15. Tezlanish nolga aylanadigan vaqt: 6t = 15, ya'ni t = 2,5 s. Shu paytdan keyin tezlanish musbat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egilish-abssissasi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#6c8190d7"
+    },
+    {
+      "q": "Malika f(x) = (x − 1)³ + 4x funksiya grafigining egilish nuqtasini aniqlashi kerak. Uning abssissasini ko'rsating.",
+      "v": [
+        "x = −1",
+        "x = 1",
+        "x = 0",
+        "x = 4"
+      ],
+      "t": 1,
+      "izoh": "Zanjir qoidasi bilan f'(x) = 3(x − 1)² + 4, so'ng f''(x) = 6(x − 1). Nolga tenglashtiramiz: 6(x − 1) = 0, demak x = 1. Qo'shilgan 4x hadi ikkinchi hosilaga ta'sir qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egilish-abssissasi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#09c54afe"
+    },
+    {
+      "q": "f(x) = x³ − 3x² + 2 funksiya grafigining egilish nuqtasi koordinatalarini to'liq yozing va to'g'ri variantni tanlang.",
+      "v": [
+        "(1; 2)",
+        "(0; 2)",
+        "(1; 0)",
+        "(2; −2)"
+      ],
+      "t": 2,
+      "izoh": "f''(x) = 6x − 6 bo'lgani uchun egilish nuqtasining abssissasi x = 1. Ordinatasini asosiy funksiyadan topamiz: f(1) = 1 − 3 + 2 = 0. Demak egilish nuqtasi (1; 0) koordinatalarga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "egilish-koordinatalari",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#53db5fdb"
+    },
+    {
+      "q": "Jasur x³ + 3x² − 9x + 1 funksiya grafigining egilish nuqtasini koordinatalari bilan yozmoqchi. Qaysi juftlik to'g'ri?",
+      "v": [
+        "(1; −4)",
+        "(−1; −12)",
+        "(−3; 28)",
+        "(−1; 12)"
+      ],
+      "t": 3,
+      "izoh": "f''(x) = 6x + 6 dan x = −1 kelib chiqadi. Ordinata: f(−1) = −1 + 3 + 9 + 1 = 12. Manfiy argumentda −9x hadi musbat 9 beradi. Demak egilish nuqtasi (−1; 12).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egilish-koordinatalari",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#0bb7b45f"
+    },
+    {
+      "q": "Nigora f(x) = x⁴ − 6x² + 8x funksiya grafigining ikkita egilish nuqtasini topdi. Ularning koordinatalari qanday?",
+      "v": [
+        "(1; 3) va (−1; −13)",
+        "(1; 3) va (−1; 13)",
+        "faqat (1; 3)",
+        "(0; 0) va (1; 3)"
+      ],
+      "t": 0,
+      "izoh": "f''(x) = 12x² − 12 = 0 dan x = 1 va x = −1 chiqadi. f(1) = 1 − 6 + 8 = 3, f(−1) = 1 − 6 − 8 = −13. Manfiy argumentda 8x hadi manfiy bo'ladi, shuning uchun ikkinchi ordinata −13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egilish-koordinatalari",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#c3aab0d8"
+    },
+    {
+      "q": "Aziz 2x³ − 6x² + 4x − 1 funksiya grafigining egilish nuqtasini izlamoqda. To'g'ri koordinatalar juftligini ko'rsating.",
+      "v": [
+        "(1; 1)",
+        "(1; −1)",
+        "(0; −1)",
+        "(2; −1)"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 6x² − 12x + 4, demak f''(x) = 12x − 12 va x = 1. Ordinata: f(1) = 2 − 6 + 4 − 1 = −1. Shunday qilib egilish nuqtasi (1; −1) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "egilish-koordinatalari",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#7455c5f4"
+    },
+    {
+      "q": "Shaharda aholi soni N(t) = t³ − 15t² + 60t + 500 (ming kishi) modeliga bo'ysunadi. Egilish nuqtasi koordinatalari qanday?",
+      "v": [
+        "(5; 500)",
+        "(10; 600)",
+        "(5; 550)",
+        "(5; 625)"
+      ],
+      "t": 2,
+      "izoh": "N'(t) = 3t² − 30t + 60, undan N''(t) = 6t − 30. Nolga tenglashtirsak t = 5. Endi N(5) = 125 − 375 + 300 + 500 = 550. Demak egilish nuqtasi (5; 550), ya'ni beshinchi yilda o'sish sur'ati burilish yasaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "egilish-koordinatalari",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#487ae725"
+    },
+    {
+      "q": "f(x) = x⁴ + 5x funksiyada x = 0 nuqta egilish nuqtasi bo'ladimi? Javobingizni ikkinchi hosila orqali asoslang.",
+      "v": [
+        "Ha, chunki f''(0) = 0",
+        "Ha, chunki f'(0) ≠ 0",
+        "Yo'q, chunki f''(0) ≠ 0",
+        "Yo'q, chunki f''(x) = 12x² ishorasini o'zgartirmaydi"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 4x³ + 5, undan f''(x) = 12x². Nolda bu ifoda haqiqatan nolga teng, lekin chapda ham, o'ngda ham musbat qoladi. Egilish nuqtasi uchun ikkinchi hosila ishorasini almashtirishi shart, shuning uchun x = 0 egilish nuqtasi emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "egilish-mavjudmasligi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#3839dcc5"
+    },
+    {
+      "q": "Kamola y = x² + 3x − 4 parabolaning egilish nuqtasini qidirmoqda. Uning izlanishi qanday natija bilan tugaydi?",
+      "v": [
+        "Egilish nuqtasi yo'q, grafik hamma yerda botiq",
+        "x = −1,5 nuqtada egilish nuqtasi bor",
+        "Egilish nuqtasi x = 0 da joylashgan",
+        "Egilish nuqtasi yo'q, grafik hamma yerda qavariq"
+      ],
+      "t": 0,
+      "izoh": "Parabolada y' = 2x + 3 va y'' = 2. Ikkinchi hosila o'zgarmas musbat son bo'lib, hech qachon nolga aylanmaydi. Demak egilish nuqtasi mavjud emas va grafik butun sonlar o'qida botiq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egilish-mavjudmasligi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#5dbf0604"
+    },
+    {
+      "q": "Feruza f(x) = e^(2x) + x² funksiyaning egilish nuqtalarini aniqlamoqchi. Ikkinchi hosilani tekshirgach qanday xulosa chiqadi?",
+      "v": [
+        "x = 0 da bitta egilish nuqtasi bor",
+        "Egilish nuqtasi mavjud emas",
+        "Ikkita egilish nuqtasi bor",
+        "x = 1 da egilish nuqtasi bor"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 2e^(2x) + 2x, undan f''(x) = 4e^(2x) + 2. Ko'rsatkichli qism doim musbat, ustiga 2 qo'shilgan. Demak f''(x) hech qachon nolga aylanmaydi va egilish nuqtasi mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egilish-mavjudmasligi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#bd9660b9"
+    },
+    {
+      "q": "Giperbola y = 1/x uchun ikkinchi hosila x = 0 dan o'tganda ishorasini o'zgartiradi. Bu nuqta egilish nuqtasi bo'ladimi?",
+      "v": [
+        "Ha, x = 0 egilish nuqtasi bo'ladi",
+        "Ha, x = 1 egilish nuqtasi bo'ladi",
+        "Yo'q, chunki x = 0 aniqlanish sohasiga kirmaydi",
+        "Yo'q, chunki funksiya toq"
+      ],
+      "t": 2,
+      "izoh": "Haqiqatan y'' = 2/x³ bo'lib, x < 0 da manfiy, x > 0 da musbat. Lekin egilish nuqtasi grafikning nuqtasi bo'lishi kerak. x = 0 da funksiya aniqlanmagan, shuning uchun bu yerda egilish nuqtasi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "egilish-mavjudmasligi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#aa04fb47"
+    },
+    {
+      "q": "Rustam f(x) = x⁵ − 5x⁴ + 2x funksiya grafigida nechta egilish nuqtasi borligini aniqlashi kerak. To'g'ri sonni tanlang.",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "Egilish nuqtasi yo'q",
+        "1 ta"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 5x⁴ − 20x³ + 2, undan f''(x) = 20x³ − 60x² = 20x²(x − 3). Ildizlar x = 0 va x = 3. Ammo x² ko'paytuvchi ishorasini almashtirmaydi, shuning uchun faqat x = 3 da egilish bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egilish-nuqtalari-soni",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#0c1c2a4f"
+    },
+    {
+      "q": "Gulnora x⁴ − 8x³ + 18x² + x funksiya grafigining egilish nuqtalari sonini hisobladi. Uning to'g'ri javobi qaysi?",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "3 ta",
+        "0 ta"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 4x³ − 24x² + 36x + 1, undan f''(x) = 12x² − 48x + 36 = 12(x² − 4x + 3). Kvadrat uchhad (x − 1)(x − 3) ko'rinishida yoyiladi. Ikkala ildizda ham ishora almashadi, demak egilish nuqtalari 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egilish-nuqtalari-soni",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#2d79f809"
+    },
+    {
+      "q": "y = sin x funksiya grafigida (0; 2π) oralig'ida nechta egilish nuqtasi bor va u qayerda joylashgan?",
+      "v": [
+        "2 ta: x = π/2 va x = 3π/2",
+        "1 ta: x = π",
+        "3 ta egilish nuqtasi",
+        "Egilish nuqtasi mavjud emas"
+      ],
+      "t": 1,
+      "izoh": "Sinus uchun y' = cos x va y'' = −sin x. Berilgan oraliqda −sin x = 0 tenglamaning yechimi faqat x = π. Shu nuqtadan o'tganda sinus ishorasini almashtiradi, demak bitta egilish nuqtasi bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egilish-nuqtalari-soni",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#a90d179c"
+    },
+    {
+      "q": "Otabek 3x⁵ − 5x⁴ + 7 funksiya uchun f''(x) = 0 tenglamaning ikkita ildizini topdi. Nechta egilish nuqtasi bor?",
+      "v": [
+        "Ikkita, x = 0 va x = 1 da",
+        "Uchta egilish nuqtasi bor",
+        "Bitta, x = 1 da",
+        "Umuman egilish nuqtasi yo'q"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 15x⁴ − 20x³, undan f''(x) = 60x³ − 60x² = 60x²(x − 1). Tenglama ildizlari x = 0 va x = 1. Juft darajali x² ko'paytuvchi ishorani saqlaydi, shuning uchun faqat x = 1 haqiqiy egilish nuqtasi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "egilish-nuqtalari-soni",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#3e6a979b"
+    },
+    {
+      "q": "f(x) = x³ + ax² + 3x funksiya grafigining egilish nuqtasi x = 2 bo'lsa, a parametrning qiymatini toping.",
+      "v": [
+        "a = 6",
+        "a = −3",
+        "a = −12",
+        "a = −6"
+      ],
+      "t": 3,
+      "izoh": "Birinchi hosila f'(x) = 3x² + 2ax + 3, ikkinchisi f''(x) = 6x + 2a. Egilish nuqtasida f''(2) = 0, ya'ni 12 + 2a = 0. Bundan 2a = −12 va a = −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-egilish-sharti",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#040ba93a"
+    },
+    {
+      "q": "f(x) = ax³ + 6x² + x funksiya grafigining egilish nuqtasi x = −1 da bo'lishi uchun a nechaga teng?",
+      "v": [
+        "a = 2",
+        "a = −2",
+        "a = 1/2",
+        "a = 6"
+      ],
+      "t": 0,
+      "izoh": "Birinchi hosila f'(x) = 3ax² + 12x + 1, ikkinchisi f''(x) = 6ax + 12. Egilish nuqtasida f''(−1) = 0, ya'ni −6a + 12 = 0. Bundan 6a = 12 va a = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-egilish-sharti",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#0b38b748"
+    },
+    {
+      "q": "Malika f(x) = x⁴ + ax³ + 2x funksiyaning egilish nuqtalaridan biri x = 1 ekanini biladi. a ni toping.",
+      "v": [
+        "a = 2",
+        "a = −2",
+        "a = −1/2",
+        "a = −4"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 4x³ + 3ax² + 2, undan f''(x) = 12x² + 6ax = 6x(2x + a). Ildizlardan biri x = 0, ikkinchisi 2x + a = 0 dan x = −a/2. Shart bo'yicha −a/2 = 1, demak a = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-egilish-sharti",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#3f9f0154"
+    },
+    {
+      "q": "Zavod ishlab chiqarishi Q(t) = t³ − kt² + 40t + 20 (dona) modeli bilan tasvirlanadi. O'sish sur'ati t = 3 oyda burilsa, k nechaga teng?",
+      "v": [
+        "k = 3",
+        "k = 18",
+        "k = 9",
+        "k = 6"
+      ],
+      "t": 2,
+      "izoh": "O'sish sur'ati Q'(t) = 3t² − 2kt + 40, uning burilishi Q''(t) = 6t − 2k = 0 shartdan topiladi. t = 3 ni qo'yamiz: 18 − 2k = 0. Bundan 2k = 18 va k = 9. Bu qiymatda Q(3) = 27 − 81 + 120 + 20 = 86 dona, ya'ni hajm musbat bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-egilish-sharti",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#8df3665f"
+    },
+    {
+      "q": "f(x) = x³ + bx² + cx funksiya grafigining egilish nuqtasi (2; 4) bo'lsa, b va c koeffitsientlarni aniqlang.",
+      "v": [
+        "b = 6, c = 10",
+        "b = −6, c = −10",
+        "b = −3, c = 4",
+        "b = −6, c = 10"
+      ],
+      "t": 3,
+      "izoh": "f''(x) = 6x + 2b bo'lgani uchun 6·2 + 2b = 0, bundan b = −6. Endi nuqta grafikda yotishidan foydalanamiz: f(2) = 8 − 24 + 2c = 4. Demak 2c = 20 va c = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-egilish-sharti",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#6ec6b62b"
+    },
+    {
+      "q": "f(x) = x⁴ + ax² funksiya grafigi butun sonlar o'qida botiq bo'lishi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a ≥ 0",
+        "a ≤ 0",
+        "a > 12",
+        "a ≥ 12"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 4x³ + 2ax, undan f''(x) = 12x² + 2a. Bu ifoda barcha x lar uchun manfiy bo'lmasligi kerak. Eng kichik qiymati x = 0 da 2a ga teng, demak 2a ≥ 0 va a ≥ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-qavariqlik-sharti",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#aae2d518"
+    },
+    {
+      "q": "Parabola y = ax² + 3x − 1 grafigi qavariq bo'lishi uchun bosh koeffitsient a qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "a > 0",
+        "a < 0",
+        "a ≠ 0",
+        "a < 3"
+      ],
+      "t": 1,
+      "izoh": "Bu funksiyaning birinchi hosilasi y' = 2ax + 3, ikkinchi hosilasi esa y'' = 2a. Qavariqlik sharti y'' < 0 bo'lgani uchun 2a < 0 bo'lishi kerak. Bundan a < 0 kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-qavariqlik-sharti",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#ccaac5eb"
+    },
+    {
+      "q": "f(x) = x³ − 6x² + ax funksiya grafigi x = 2 dan chapda qavariq bo'lishi a parametrga qanday bog'liq?",
+      "v": [
+        "faqat a > 0 da",
+        "faqat a = 0 da",
+        "a ning har qanday qiymatida",
+        "faqat a < 12 da"
+      ],
+      "t": 2,
+      "izoh": "Birinchi hosila f'(x) = 3x² − 12x + a, ikkinchisi f''(x) = 6x − 12. Ko'ramizki ax hadi ikkinchi hosilaga umuman kirmaydi. 6x − 12 < 0 sharti x < 2 da bajariladi, demak javob a ga bog'liq emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-qavariqlik-sharti",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#eba18177"
+    },
+    {
+      "q": "Bekzod f(x) = mx³ + 3x² − x funksiya grafigi butun o'qda botiq bo'ladigan m qiymatlarini qidirmoqda. Qaysi javob to'g'ri?",
+      "v": [
+        "m > 0",
+        "m < 0",
+        "Hech qanday m da bo'lmaydi",
+        "m = 0"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 3mx² + 6x − 1, undan f''(x) = 6mx + 6. Agar m ≠ 0 bo'lsa, bu chiziqli ifoda albatta manfiy qiymatlar ham qabul qiladi. Faqat m = 0 da f''(x) = 6 doim musbat bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-qavariqlik-sharti",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#0cbe14d6"
+    },
+    {
+      "q": "f(x) = x³ − 3x² + 4 funksiyaning x = 2 kritik nuqtasida qanday ekstremum borligini ikkinchi hosila mezoni bilan aniqlang.",
+      "v": [
+        "Maksimum, chunki f''(2) = 6 > 0",
+        "Minimum, chunki f''(2) < 0",
+        "Egilish nuqtasi, chunki f''(2) = 0",
+        "Minimum, chunki f''(2) = 6 > 0"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 3x² − 6x bo'lib, x = 2 da nolga aylanadi. Ikkinchi hosila f''(x) = 6x − 6, demak f''(2) = 6. Musbat qiymat minimum nuqtasini bildiradi, chunki grafik shu yerda botiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstremum-turi-ikkinchi-hosila",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#2894e645"
+    },
+    {
+      "q": "Nigora f(x) = x⁴ − 8x² + 3 funksiyaning x = 0 kritik nuqtasi turini aniqlashi kerak. To'g'ri javobni tanlang.",
+      "v": [
+        "Maksimum nuqtasi",
+        "Minimum nuqtasi",
+        "Egilish nuqtasi",
+        "Ekstremum emas"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 4x³ − 16x nolga aylanadigan nuqtalar x = 0 va x = ±2. Ikkinchi hosila f''(x) = 12x² − 16, nolda esa f''(0) = −16. Manfiy qiymat maksimum nuqtasini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekstremum-turi-ikkinchi-hosila",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#e81dc299"
+    },
+    {
+      "q": "Jasur 2x³ − 9x² + 12x funksiyaning ikkita kritik nuqtasini topdi. Ikkinchi hosila mezoni qanday xulosa beradi?",
+      "v": [
+        "x = 1 da minimum, x = 2 da maksimum",
+        "x = 1 da maksimum, x = 2 da minimum",
+        "Ikkala nuqtada ham minimum",
+        "Ekstremum yo'q, faqat egilish nuqtasi bor"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 6x² − 18x + 12 = 6(x − 1)(x − 2), demak kritik nuqtalar 1 va 2. f''(x) = 12x − 18 bo'lgani uchun f''(1) = −6 va f''(2) = 6. Manfiy qiymat maksimumni, musbat qiymat minimumni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremum-turi-ikkinchi-hosila",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#eb414f4d"
+    },
+    {
+      "q": "Ferma daromadi D(x) = −x³ + 12x² − 36x + 50 (mln so'm) bo'lsa, qaysi x da daromad maksimal bo'ladi?",
+      "v": [
+        "x = 2",
+        "x = 4",
+        "x = 6",
+        "x = 12"
+      ],
+      "t": 2,
+      "izoh": "D'(x) = −3x² + 24x − 36 = −3(x − 2)(x − 6), demak kritik nuqtalar 2 va 6. D''(x) = −6x + 24 bo'lgani uchun D''(6) = −12 manfiy, D''(2) = 12 musbat. Manfiy ikkinchi hosila maksimumni bildiradi, javob x = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremum-turi-ikkinchi-hosila",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#72a12ae4"
+    },
+    {
+      "q": "f(x) = x + 4/x funksiya x > 0 sohada berilgan. Kritik nuqtadagi ekstremum turi va qiymatini ikkinchi hosila mezoni bilan aniqlang.",
+      "v": [
+        "Maksimum, f(2) = 4",
+        "Minimum, f(2) = 2",
+        "Ekstremum mavjud emas",
+        "Minimum, f(2) = 4"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 1 − 4/x² nolga aylanganda x² = 4, musbat soha uchun x = 2. Ikkinchi hosila f''(x) = 8/x³ bo'lib, f''(2) = 1 musbat, demak minimum. Qiymati f(2) = 2 + 2 = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremum-turi-ikkinchi-hosila",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#052baf94"
+    },
+    {
+      "q": "Zarrachaning yo'li s(t) = t³ − 4t² + 6t (m) qonuniyat bilan o'zgaradi. t = 3 s dagi tezlanishini hisoblang.",
+      "v": [
+        "10 m/s²",
+        "9 m/s²",
+        "18 m/s²",
+        "−10 m/s²"
+      ],
+      "t": 0,
+      "izoh": "Tezlik birinchi hosila: v(t) = 3t² − 8t + 6. Tezlanish ikkinchi hosila: a(t) = 6t − 8. t = 3 ni qo'yamiz: a(3) = 18 − 8 = 10 m/s². Tezlikni tezlanish deb olish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlanish-hisoblash",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#5ef7ee22"
+    },
+    {
+      "q": "Yugurish yo'lakchasida sportchining bosib o'tgan yo'li s(t) = 1,5t² + 3t (m). Uning tezlanishi nechaga teng?",
+      "v": [
+        "6 m/s²",
+        "3 m/s²",
+        "1,5 m/s²",
+        "4,5 m/s²"
+      ],
+      "t": 1,
+      "izoh": "Tezlik v(t) = 3t + 3 vaqtga bog'liq, tezlanish esa a(t) = 3 o'zgarmas son. Demak sportchi butun harakat davomida 3 m/s² tezlanish bilan harakatlanadi. Bosh koeffitsient 1,5 ning o'zini olish xato bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlanish-hisoblash",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#77a11293"
+    },
+    {
+      "q": "Tepaga otilgan koptok balandligi h(t) = 40t − 5t² (m) formula bilan beriladi. Koptokning tezlanishi qanday?",
+      "v": [
+        "10 m/s²",
+        "−5 m/s²",
+        "−10 m/s²",
+        "20 m/s²"
+      ],
+      "t": 2,
+      "izoh": "Birinchi hosila tezlikni beradi: v(t) = 40 − 10t. Ikkinchi hosila esa a(t) = −10 m/s². Manfiy ishora tezlanish pastga, ya'ni harakatga qarama-qarshi yo'nalganini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlanish-hisoblash",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#d70d6e2f"
+    },
+    {
+      "q": "Mexanizm detalining siljishi s(t) = 2t⁴ − 3t² (m) bo'lsa, t = 1 s dagi tezlanish qiymatini toping.",
+      "v": [
+        "24 m/s²",
+        "2 m/s²",
+        "−6 m/s²",
+        "18 m/s²"
+      ],
+      "t": 3,
+      "izoh": "Tezlik v(t) = 8t³ − 6t, tezlanish a(t) = 24t² − 6. Endi t = 1 ni qo'yamiz: a(1) = 24 − 6 = 18 m/s². Ikkinchi haddagi o'zgarmas −6 ni tashlab yuborish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-hisoblash",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#744bc00b"
+    },
+    {
+      "q": "Liftning ko'tarilish yo'li s(t) = 0,05t³ − 0,15t² + 0,4t (m) bo'lsa, to'rtinchi soniyadagi tezlanishi nechaga teng?",
+      "v": [
+        "1,6 m/s²",
+        "1,2 m/s²",
+        "0,9 m/s²",
+        "0,3 m/s²"
+      ],
+      "t": 2,
+      "izoh": "Birinchi hosila v(t) = 0,15t² − 0,3t + 0,4, ikkinchisi a(t) = 0,3t − 0,3. t = 4 da a(4) = 1,2 − 0,3 = 0,9 m/s². Tezlik esa v(4) = 1,6 m/s bo'lib, uni tezlanish bilan chalkashtirmaslik kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-hisoblash",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#f697f705"
+    },
+    {
+      "q": "Vagon harakati s(t) = t³ − 6t² + 9t (m) tenglama bilan berilgan. Tezlanish nolga aylanadigan vaqtni aniqlang.",
+      "v": [
+        "t = 2 s",
+        "t = 3 s",
+        "t = 1 s",
+        "t = 4 s"
+      ],
+      "t": 0,
+      "izoh": "Tezlik v(t) = 3t² − 12t + 9, tezlanish a(t) = 6t − 12. Tenglamani yechamiz: 6t − 12 = 0, demak t = 2 s. Tezlik nolga aylanadigan t = 1 va t = 3 boshqa savolning javobi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlanish-nolga-aylanish-vaqti",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#bd058ae4"
+    },
+    {
+      "q": "Zarrachaning tezligi v(t) = t² − 8t + 12 (m/s) formula bilan berilgan. Tezlanish qaysi vaqtda nolga teng bo'ladi?",
+      "v": [
+        "t = 2 s",
+        "t = 4 s",
+        "t = 6 s",
+        "t = 8 s"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda tezlik berilgan, shuning uchun tezlanishni topish uchun bir marta hosilalash yetarli: a(t) = 2t − 8. Tenglama 2t − 8 = 0 dan t = 4 s chiqadi. Tezlikning nollari t = 2 va t = 6 boshqa masala.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlanish-nolga-aylanish-vaqti",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#4051090a"
+    },
+    {
+      "q": "Poyezdning bosib o'tgan yo'li s(t) = 0,2t³ − 3t² + 20t (m). Tezlanish nolga aylanadigan payt qachon keladi?",
+      "v": [
+        "t = 5 s",
+        "t = 6 s",
+        "t = 10 s",
+        "t = 15 s"
+      ],
+      "t": 0,
+      "izoh": "Tezlik v(t) = 0,6t² − 6t + 20, tezlanish esa a(t) = 1,2t − 6. Tenglamani yechamiz: 1,2t = 6, bundan t = 5 s. Shu paytgacha poyezd sekinlashadi, keyin tezlasha boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-nolga-aylanish-vaqti",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#9de623d8"
+    },
+    {
+      "q": "Zarracha s(t) = t⁴/12 − t³/2 + 5t (m) qonun bo'yicha harakatlanadi. Tezlanish qaysi vaqt paytlarida nolga aylanadi?",
+      "v": [
+        "faqat t = 3 s",
+        "t = 0 va t = 3 s",
+        "t = 0 va t = 1,5 s",
+        "faqat t = 1,5 s"
+      ],
+      "t": 1,
+      "izoh": "Birinchi hosila v(t) = t³/3 − 1,5t² + 5, ikkinchi hosila a(t) = t² − 3t. Uni ko'paytuvchilarga ajratamiz: t(t − 3) = 0. Demak tezlanish t = 0 va t = 3 s paytlarida nolga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlanish-nolga-aylanish-vaqti",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#81d3c041"
+    },
+    {
+      "q": "Raketaning balandligi h(t) = t³ − 9t² + 30t (m). Tezlanish nolga aylangan paytdagi vaqt va tezlikni birgalikda ko'rsating.",
+      "v": [
+        "t = 3 s, v = 30 m/s",
+        "t = 5 s, v = 5 m/s",
+        "t = 3 s, v = 3 m/s",
+        "t = 3 s, v = 0 m/s"
+      ],
+      "t": 2,
+      "izoh": "Tezlik v(t) = 3t² − 18t + 30, tezlanish a(t) = 6t − 18. Tezlanish nolga aylanadi: 6t = 18, t = 3 s. Endi shu paytdagi tezlik: v(3) = 27 − 54 + 30 = 3 m/s. Tezlanish nol bo'lgani tezlik nol degani emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlanish-nolga-aylanish-vaqti",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#f5d9c433"
+    },
+    {
+      "q": "Zarrachaning yo'li s(t) = t³ − 12t² + 36t (m) bo'lsa, tezlanish manfiy bo'lgan vaqt oralig'ini toping.",
+      "v": [
+        "t > 4",
+        "0 < t < 2",
+        "t > 6",
+        "0 < t < 4"
+      ],
+      "t": 3,
+      "izoh": "Tezlik v(t) = 3t² − 24t + 36, tezlanish a(t) = 6t − 24. Tengsizlik 6t − 24 < 0 dan t < 4 kelib chiqadi. Vaqt musbat bo'lgani uchun javob 0 < t < 4 oralig'i bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-kontekst-tahlil",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#3b3c2745"
+    },
+    {
+      "q": "Dron balandligi h(t) = 2t³ − 18t² + 48t (m) bo'lsa, t = 1 s dagi tezlanish ishorasi nimani anglatadi?",
+      "v": [
+        "Tezlanish manfiy, tezlik kamayib bormoqda",
+        "Tezlanish musbat, tezlik ortib bormoqda",
+        "Tezlanish nol, tezlik o'zgarmaydi",
+        "Dron albatta pastga tushmoqda"
+      ],
+      "t": 0,
+      "izoh": "Tezlik v(t) = 6t² − 36t + 48, tezlanish a(t) = 12t − 36. t = 1 da a(1) = 12 − 36 = −24, ya'ni manfiy: tezlik kamayib bormoqda. Ayni paytda v(1) = 6 − 36 + 48 = 18 m/s musbat, shuning uchun dron hali yuqoriga ko'tarilishda davom etadi, faqat tobora sekinlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-kontekst-tahlil",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#ff1fb638"
+    },
+    {
+      "q": "Avtobusning tezligi v(t) = 3t² − 12t + 9 (m/s). Tezlanish musbat bo'lgan, ya'ni harakat tezlashadigan oraliqni toping.",
+      "v": [
+        "t < 2 s",
+        "t > 2 s",
+        "t > 3 s",
+        "1 < t < 3"
+      ],
+      "t": 1,
+      "izoh": "Tezlik berilgani uchun tezlanish bir marta hosilalash bilan topiladi: a(t) = 6t − 12. Tengsizlik 6t − 12 > 0 dan t > 2 kelib chiqadi. Tezlikning nollari t = 1 va t = 3 bu yerda kerak emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlanish-kontekst-tahlil",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#6f0658c1"
+    },
+    {
+      "q": "A avtomobilning yo'li s₁(t) = t³ − 3t² + 10t, B niki esa s₂(t) = 4t² + t (m). t = 1 s da qaysi birining tezlanishi katta?",
+      "v": [
+        "A avtomobil, uning tezlanishi 6 m/s²",
+        "Tezlanishlari bir xil",
+        "B avtomobil, uning tezlanishi 8 m/s²",
+        "A avtomobil, uning tezlanishi 3 m/s²"
+      ],
+      "t": 2,
+      "izoh": "Birinchi avtomobil uchun s₁'(t) = 3t² − 6t + 10 va s₁''(t) = 6t − 6, demak t = 1 da tezlanish nolga teng (tezligi esa v₁(1) = 7 m/s). Ikkinchisi uchun s₂'(t) = 8t + 1 va s₂''(t) = 8. Shuning uchun B avtomobilning tezlanishi kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlanish-kontekst-tahlil",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#be192aec"
+    },
+    {
+      "q": "Zarracha s(t) = t³ − 9t² + 24t (m) bo'yicha harakatlanadi. t = 1 s da tezlik va tezlanish ishoralari bir xilmi?",
+      "v": [
+        "Ha, ikkalasi ham musbat va zarracha tezlashmoqda",
+        "Ha, ikkalasi ham manfiy qiymatga ega",
+        "Yo'q: tezlik manfiy, tezlanish musbat",
+        "Yo'q: tezlik musbat, tezlanish manfiy, zarracha sekinlashmoqda"
+      ],
+      "t": 3,
+      "izoh": "Tezlik v(t) = 3t² − 18t + 24 bo'lib, v(1) = 3 − 18 + 24 = 9 musbat. Tezlanish a(t) = 6t − 18 bo'lib, a(1) = −12 manfiy. Ishoralar qarama-qarshi bo'lgani uchun zarracha oldinga harakatlanadi, lekin sekinlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlanish-kontekst-tahlil",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#b3511a04"
+    },
+    {
+      "q": "f(x) = x³ − 6x² + 9x funksiya grafigining egilish nuqtasidan o'tuvchi urinma tenglamasini yozing va to'g'ri javobni tanlang.",
+      "v": [
+        "y = −3x + 8",
+        "y = −3x + 2",
+        "y = 3x − 4",
+        "y = 2"
+      ],
+      "t": 0,
+      "izoh": "f''(x) = 6x − 12 dan egilish nuqtasi x = 2, uning ordinatasi f(2) = 8 − 24 + 18 = 2. Urinma koeffitsienti f'(2) = 12 − 24 + 9 = −3. Tenglama: y = −3(x − 2) + 2 = −3x + 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egilish-nuqtasidagi-urinma",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#c420cfa1"
+    },
+    {
+      "q": "Kamola x³ − 3x² + 2x funksiyaning egilish nuqtasidagi urinmasini tuzmoqchi. To'g'ri tenglamani ko'rsating.",
+      "v": [
+        "y = −x − 1",
+        "y = −x + 1",
+        "y = x − 1",
+        "y = −1"
+      ],
+      "t": 1,
+      "izoh": "f''(x) = 6x − 6 dan x = 1, ordinata esa f(1) = 1 − 3 + 2 = 0. Burchak koeffitsienti f'(1) = 3 − 6 + 2 = −1. Urinma tenglamasi: y = −1·(x − 1) + 0, ya'ni y = −x + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egilish-nuqtasidagi-urinma",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#429bac00"
+    },
+    {
+      "q": "Otabek f(x) = x³ + 3x² + 5 funksiya grafigining egilish nuqtasiga o'tkazilgan urinmani topmoqchi. Qaysi javob to'g'ri?",
+      "v": [
+        "y = −3x + 7",
+        "y = 3x + 10",
+        "y = −3x + 4",
+        "y = 7"
+      ],
+      "t": 2,
+      "izoh": "f''(x) = 6x + 6 dan egilish nuqtasi x = −1, ordinatasi f(−1) = −1 + 3 + 5 = 7. Burchak koeffitsienti f'(−1) = 3 − 6 = −3. Urinma: y = −3(x + 1) + 7 = −3x + 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egilish-nuqtasidagi-urinma",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#ab796379"
+    },
+    {
+      "q": "f(x) = 2x³ − 12x² + 5x + 1 funksiya grafigining egilish nuqtasidagi urinma burchak koeffitsienti nechaga teng?",
+      "v": [
+        "19",
+        "0",
+        "5",
+        "−19"
+      ],
+      "t": 3,
+      "izoh": "Avval f''(x) = 12x − 24 dan egilish nuqtasi x = 2 topiladi. Burchak koeffitsienti birinchi hosilaning shu nuqtadagi qiymati: f'(2) = 24 − 48 + 5 = −19. Egilish nuqtasida urinma gorizontal bo'lishi shart emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "egilish-nuqtasidagi-urinma",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#8c2b3a62"
+    },
+    {
+      "q": "Onlayn do'kon obunachilari N(t) = −t³ + 18t² + 40t (kishi) bo'yicha ko'paymoqda. O'sish sur'ati qachondan pasaya boshlaydi?",
+      "v": [
+        "6-oydan keyin",
+        "6-oygacha",
+        "12-oydan keyin",
+        "18-oydan keyin"
+      ],
+      "t": 0,
+      "izoh": "O'sish sur'ati N'(t) = −3t² + 36t + 40, uning o'zgarishi N''(t) = −6t + 36. Bu ifoda t > 6 da manfiy bo'ladi. Demak obunachilar hamon ko'payadi, lekin oltinchi oydan keyin qo'shilish sur'ati pasayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "osish-surati-burilishi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#0bacec79"
+    },
+    {
+      "q": "Yangi ilovani yuklab olishlar soni D(t) = 60t² − t³ modeliga mos keladi. Kunlik o'sish tezligi qaysi kunda eng katta?",
+      "v": [
+        "40-kunda",
+        "20-kunda",
+        "60-kunda",
+        "30-kunda"
+      ],
+      "t": 1,
+      "izoh": "Kunlik o'sish tezligi D'(t) = 120t − 3t². Uning eng katta qiymatini topish uchun D''(t) = 120 − 6t ni nolga tenglashtiramiz: t = 20. Bu nuqtadan keyin D'' manfiy, demak o'sish tezligi aynan yigirmanchi kunda eng yuqori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "osish-surati-burilishi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#84157b02"
+    },
+    {
+      "q": "Bug'doy poyasining balandligi h(t) = 0,01t³ − 0,3t² + 3t (sm) formula bilan o'zgaradi. O'sish tezligi qaysi kunda eng kichik?",
+      "v": [
+        "20-kunda",
+        "5-kunda",
+        "10-kunda",
+        "30-kunda"
+      ],
+      "t": 2,
+      "izoh": "O'sish tezligi h'(t) = 0,03t² − 0,6t + 3 bo'ladi. Uning eng kichik qiymati h''(t) = 0,06t − 0,6 nolga aylanganda, ya'ni t = 10 kunda erishiladi. Undan oldin tezlik kamayadi, keyin esa orta boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "osish-surati-burilishi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#8003b84c"
+    },
+    {
+      "q": "Korxona xarajati C(x) = x³ − 30x² + 400x (ming so'm) bo'lsa, marjinal xarajat C'(x) qaysi hajmda eng kichik bo'ladi?",
+      "v": [
+        "x = 20",
+        "x = 30",
+        "x = 15",
+        "x = 10"
+      ],
+      "t": 3,
+      "izoh": "Marjinal xarajat C'(x) = 3x² − 60x + 400 funksiyasi bilan beriladi. Uning eng kichik qiymati C''(x) = 6x − 60 nolga aylangan joyda, ya'ni x = 10 da bo'ladi. Shu hajmdan keyin qo'shimcha xarajat qayta o'sa boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "osish-surati-burilishi",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#ab52cc81"
+    },
+    {
+      "q": "Biror oraliqda f'(x) > 0 va f''(x) < 0 shartlari bir vaqtda bajarilsa, funksiya grafigi haqida nima deyish mumkin?",
+      "v": [
+        "Funksiya o'sadi, grafigi qavariq",
+        "Funksiya kamayadi, grafigi qavariq",
+        "Funksiya o'sadi, grafigi botiq",
+        "Funksiya kamayadi, grafigi botiq"
+      ],
+      "t": 0,
+      "izoh": "Birinchi hosilaning musbatligi funksiyaning o'sishini bildiradi. Ikkinchi hosilaning manfiyligi esa grafikning qavariq ekanini ko'rsatadi. Ya'ni funksiya o'sadi, lekin o'sish tezligi asta-sekin kamayib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f1-f2-belgisidan-xulosa",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#88f4ea90"
+    },
+    {
+      "q": "Bir oraliqda f'(x) < 0 va f''(x) > 0 bo'lsa, shu oraliqdagi funksiya va grafik haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "Kamayadi, kamayish tezligi esa ortib boradi",
+        "Kamayadi va grafigi botiq",
+        "O'sadi va grafigi botiq",
+        "Funksiya o'zgarmas bo'lib qoladi"
+      ],
+      "t": 1,
+      "izoh": "Manfiy birinchi hosila funksiyaning kamayishini bildiradi. Musbat ikkinchi hosila esa grafikning botiq ekanini ko'rsatadi. Bunday holda kamayish davom etadi, lekin uning tezligi sekinlashib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f1-f2-belgisidan-xulosa",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#666ea7c3"
+    },
+    {
+      "q": "Nuqta egilish nuqtasi bo'lishi uchun f''(x₀) = 0 shartining o'zi yetarlimi? To'g'ri javobni asosi bilan tanlang.",
+      "v": [
+        "Yetarli: f''(x₀) = 0 bo'lsa albatta egilish nuqtasi bo'ladi",
+        "Yetarli emas: qo'shimcha ravishda f'(x₀) = 0 ham kerak",
+        "Yetarli emas: f'' shu nuqtadan o'tganda ishorasini almashtirishi kerak",
+        "Yetarli, agar f'(x₀) musbat bo'lsa"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi hosilaning nolga aylanishi faqat zaruriy shart hisoblanadi. Masalan y = x⁴ funksiyada f''(0) = 0, lekin grafik hamma joyda botiq qoladi. Egilish nuqtasi bo'lishi uchun f'' shu nuqtada ishorasini almashtirishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "f1-f2-belgisidan-xulosa",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#207953dd"
+    },
+    {
+      "q": "Tadqiqotda f'(3) = 0 va f''(3) = 0 ekani aniqlandi. Bu nuqta haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Bu nuqta albatta maksimum nuqtasi bo'ladi",
+        "Bu nuqta albatta minimum nuqtasi bo'ladi",
+        "Bu nuqta albatta egilish nuqtasi bo'ladi",
+        "Ikkinchi hosila mezoni javob bermaydi, qo'shimcha tekshiruv kerak"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi hosila mezoni faqat f''(x₀) noldan farqli bo'lganda xulosa beradi. Nol chiqqanda nuqta minimum ham, maksimum ham, egilish nuqtasi ham bo'lishi mumkin. Shuning uchun birinchi hosilaning ishorasini nuqta atrofida alohida tekshirish talab qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "f1-f2-belgisidan-xulosa",
+      "id": "matematika_anlz_m06-ikkinchi-tartibli-hosila-qavariqlik-va#b2c9cdbe"
+    }
+  ]
+}

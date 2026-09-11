@@ -1,0 +1,2331 @@
+{
+  "fan": "sertifikat",
+  "nom": "Milliy sertifikat",
+  "tur": "daraja",
+  "birlikNomi": "Bo'lim",
+  "quyiIzoh": "ONA TILI VA ADABIYOT · BMBA SPETSIFIKATSIYASIGA MOS",
+  "jamiSavol": 1238,
+  "jamiMavzu": 110,
+  "maqsadSavol": 18750,
+  "qiy": {
+    "oson": 91,
+    "orta": 508,
+    "qiyin": 639
+  },
+  "sinflar": [
+    {
+      "sinf": "til",
+      "badge": "TILSHUNOSLIK",
+      "daraja": "1-12-topshiriq · 19 ball",
+      "mavzu": 64,
+      "savol": 445,
+      "kitoblar": [
+        {
+          "nom": "Imlo qoidalari",
+          "izoh": "1-2-o'rin · 2,2 ball",
+          "mavzu": 11,
+          "savol": 415,
+          "mavzular": [
+            {
+              "id": "sert_til_m01-unli-harflar",
+              "nom": "Unli harflar imlosi",
+              "bolim": "Imlo qoidalari",
+              "savol": 99,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 66,
+                "qiyin": 33
+              },
+              "orin": [
+                1,
+                2
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_til_m02-undosh-qosh-undosh",
+              "nom": "Undosh va qo'sh undoshlar imlosi",
+              "bolim": "Imlo qoidalari",
+              "savol": 99,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 66,
+                "qiyin": 33
+              },
+              "orin": [
+                1,
+                2
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_til_m03-tutuq-belgisi",
+              "nom": "Tutuq belgisi",
+              "bolim": "Imlo qoidalari",
+              "savol": 90,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 60,
+                "qiyin": 30
+              },
+              "orin": [
+                1,
+                2
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_til_m04-arab-fors",
+              "nom": "Arab-fors o'zlashmalari imlosi",
+              "bolim": "Imlo qoidalari",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                1,
+                2
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m05-baynalmilal",
+              "nom": "Rus-baynalmilal o'zlashmalar imlosi",
+              "bolim": "Imlo qoidalari",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                1,
+                2
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m06-asos-qoshimcha",
+              "nom": "Asos va qo'shimchalar imlosi",
+              "bolim": "Imlo qoidalari",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                1,
+                2
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m07-qoshib-yozish",
+              "nom": "Qo'shib yozish",
+              "bolim": "Imlo qoidalari",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                1,
+                2
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m08-ajratib-yozish",
+              "nom": "Ajratib yozish",
+              "bolim": "Imlo qoidalari",
+              "savol": 69,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 46,
+                "qiyin": 23
+              },
+              "orin": [
+                1,
+                2
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_til_m09-chiziqcha",
+              "nom": "Chiziqcha bilan yozish",
+              "bolim": "Imlo qoidalari",
+              "savol": 58,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 38,
+                "qiyin": 20
+              },
+              "orin": [
+                1,
+                2
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_til_m10-bosh-harflar",
+              "nom": "Bosh harflar imlosi",
+              "bolim": "Imlo qoidalari",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                1,
+                2
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m11-xato-toifasi",
+              "nom": "Matn ichidan xato toifasini aniqlash",
+              "bolim": "Imlo qoidalari",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                1,
+                2
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            }
+          ]
+        },
+        {
+          "nom": "Lug'at boyligi — so'z ma'nosi",
+          "izoh": "3-o'rin · 1,1 ball",
+          "mavzu": 3,
+          "savol": 0,
+          "mavzular": [
+            {
+              "id": "sert_til_m12-oz-mano",
+              "nom": "So'zning o'z ma'nosi",
+              "bolim": "Lug'at boyligi — so'z ma'nosi",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                3
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m13-kochma-mano",
+              "nom": "Ko'chma ma'no: metafora, metonimiya, sinekdoxa",
+              "bolim": "Lug'at boyligi — so'z ma'nosi",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                3
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m14-berilgan-mano",
+              "nom": "Berilgan ma'noda qo'llangan gapni topish",
+              "bolim": "Lug'at boyligi — so'z ma'nosi",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                3
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            }
+          ]
+        },
+        {
+          "nom": "Lug'at boyligi — so'zlar munosabati",
+          "izoh": "4-o'rin · 1,7 ball",
+          "mavzu": 8,
+          "savol": 0,
+          "mavzular": [
+            {
+              "id": "sert_til_m15-sinonim",
+              "nom": "Sinonim (ma'nodoshlik)",
+              "bolim": "Lug'at boyligi — so'zlar munosabati",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                4
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m16-sinonimik-qator",
+              "nom": "Sinonimik qator va moslashtirish",
+              "bolim": "Lug'at boyligi — so'zlar munosabati",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                4
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m17-antonim",
+              "nom": "Antonim (zid ma'nolilik)",
+              "bolim": "Lug'at boyligi — so'zlar munosabati",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                4
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m18-omonim",
+              "nom": "Omonim (shakldoshlik)",
+              "bolim": "Lug'at boyligi — so'zlar munosabati",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                4
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m19-paronim",
+              "nom": "Paronim (talaffuzdoshlik)",
+              "bolim": "Lug'at boyligi — so'zlar munosabati",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                4
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m20-uyadosh",
+              "nom": "Uyadosh so'zlar",
+              "bolim": "Lug'at boyligi — so'zlar munosabati",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                4
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m21-iboralar",
+              "nom": "Iboralar (frazeologizm)",
+              "bolim": "Lug'at boyligi — so'zlar munosabati",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                4
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m22-manodoshlik-diagramma",
+              "nom": "Nutqiy ma'nodoshlik diagrammasi",
+              "bolim": "Lug'at boyligi — so'zlar munosabati",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                4
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            }
+          ]
+        },
+        {
+          "nom": "Izohli lug'at atamalari",
+          "izoh": "4-5-o'rin · yangi tip",
+          "mavzu": 2,
+          "savol": 0,
+          "mavzular": [
+            {
+              "id": "sert_til_m23-atama-tarif",
+              "nom": "Atama-ta'rif mosligi (xato izohni topish)",
+              "bolim": "Izohli lug'at atamalari",
+              "savol": 0,
+              "maqsad": 300,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                4,
+                5
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m24-xorijiy-muqobil",
+              "nom": "Xorijiy atamalarning o'zbekcha muqobili",
+              "bolim": "Izohli lug'at atamalari",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                4,
+                5
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            }
+          ]
+        },
+        {
+          "nom": "Til birliklari uslubiyati",
+          "izoh": "5-6-o'rin · 2,2 ball",
+          "mavzu": 6,
+          "savol": 0,
+          "mavzular": [
+            {
+              "id": "sert_til_m25-qoshimcha-uslub",
+              "nom": "Qo'shimcha qo'llashdagi uslubiy xato",
+              "bolim": "Til birliklari uslubiyati",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                5,
+                6
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m26-kelishik-noorin",
+              "nom": "Kelishik qo'shimchasining noo'rin qo'llanishi",
+              "bolim": "Til birliklari uslubiyati",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                5,
+                6
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m27-yasovchi-noorin",
+              "nom": "So'z yasovchi qo'shimchaning noo'rin qo'llanishi",
+              "bolim": "Til birliklari uslubiyati",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                5,
+                6
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m28-qoshimcha-almashtirish",
+              "nom": "Qo'shimchalarni almashtirish mumkinmi",
+              "bolim": "Til birliklari uslubiyati",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                5,
+                6
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m29-soz-qollash-xato",
+              "nom": "So'z qo'llashdagi uslubiy xato",
+              "bolim": "Til birliklari uslubiyati",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                5,
+                6
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m30-nutq-uslublari",
+              "nom": "Nutq uslublari (besh uslub)",
+              "bolim": "Til birliklari uslubiyati",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                5,
+                6
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "reja"
+            }
+          ]
+        },
+        {
+          "nom": "Morfemika",
+          "izoh": "7-o'rin · 1,7 ball",
+          "mavzu": 6,
+          "savol": 12,
+          "mavzular": [
+            {
+              "id": "sert_til_m31-yasovchi",
+              "nom": "So'z yasovchi qo'shimchalar",
+              "bolim": "Morfemika",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                7
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m32-lugaviy-shakl",
+              "nom": "Lug'aviy shakl yasovchilar",
+              "bolim": "Morfemika",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                7
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m33-sintaktik-shakl",
+              "nom": "Sintaktik shakl yasovchilar",
+              "bolim": "Morfemika",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                7
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m34-shakldosh-qoshimcha",
+              "nom": "Shakldosh qo'shimchalar",
+              "bolim": "Morfemika",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                7
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m35-nuqtali-gap",
+              "nom": "Nuqtali gap — qo'shimcha turlari",
+              "bolim": "Morfemika",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                7
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m36-qoshimcha-hukm",
+              "nom": "Qo'shimchalar haqida hukm (sanoq/kombinatsiya)",
+              "bolim": "Morfemika",
+              "savol": 12,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 12
+              },
+              "orin": [
+                7
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            }
+          ]
+        },
+        {
+          "nom": "Fe'l so'z turkumi",
+          "izoh": "8-o'rin · 2,5 ball",
+          "mavzu": 6,
+          "savol": 9,
+          "mavzular": [
+            {
+              "id": "sert_til_m37-fel-tuzilishi",
+              "nom": "Fe'l tuzilishi: sodda, qo'shma, juft, ko'makchili",
+              "bolim": "Fe'l so'z turkumi",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                8
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m38-nisbat",
+              "nom": "Fe'l nisbatlari",
+              "bolim": "Fe'l so'z turkumi",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                8
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m39-mayl-zamon",
+              "nom": "Mayl va zamon",
+              "bolim": "Fe'l so'z turkumi",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                8
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m40-vazifa-shakllari",
+              "nom": "Vazifa shakllari: sifatdosh, ravishdosh, harakat nomi",
+              "bolim": "Fe'l so'z turkumi",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                8
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m41-otimlilik",
+              "nom": "O'timlilik, bo'lishsizlik, shaxs-son",
+              "bolim": "Fe'l so'z turkumi",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                8
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m42-parcha-kesishma",
+              "nom": "Parchalar kesishmasi (fe'l belgilari)",
+              "bolim": "Fe'l so'z turkumi",
+              "savol": 9,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 9
+              },
+              "orin": [
+                8
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            }
+          ]
+        },
+        {
+          "nom": "So'z turkumlari",
+          "izoh": "9-o'rin · 1,7 ball",
+          "mavzu": 7,
+          "savol": 0,
+          "mavzular": [
+            {
+              "id": "sert_til_m43-ot",
+              "nom": "Ot: ma'no turlari va tuzilishi",
+              "bolim": "So'z turkumlari",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                9
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m44-sifat",
+              "nom": "Sifat: ma'no turlari va darajalari",
+              "bolim": "So'z turkumlari",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                9
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m45-son-olmosh",
+              "nom": "Son va olmosh",
+              "bolim": "So'z turkumlari",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                9
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m46-ravish",
+              "nom": "Ravish ma'no turlari",
+              "bolim": "So'z turkumlari",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                9
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m47-komakchi",
+              "nom": "Ko'makchilarning ma'no munosabatlari",
+              "bolim": "So'z turkumlari",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                9
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m48-yordamchilar",
+              "nom": "Bog'lovchi, yuklama, undov, modal so'zlar",
+              "bolim": "So'z turkumlari",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                9
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m49-yordamchi-sanoq",
+              "nom": "Yordamchi so'zlar sanog'i",
+              "bolim": "So'z turkumlari",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                9
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            }
+          ]
+        },
+        {
+          "nom": "Sintaksis",
+          "izoh": "10-11-o'rin · 3,4 ball",
+          "mavzu": 8,
+          "savol": 0,
+          "mavzular": [
+            {
+              "id": "sert_til_m50-gap-bolaklari",
+              "nom": "Gap bo'laklari",
+              "bolim": "Sintaksis",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                10,
+                11
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m51-tobe-boglanish",
+              "nom": "Tobe bog'lanish: bitishuv, boshqaruv, moslashuv",
+              "bolim": "Sintaksis",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                10,
+                11
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m52-teng-boglanish",
+              "nom": "Teng bog'lanish va uyushiq bo'laklar",
+              "bolim": "Sintaksis",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                10,
+                11
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m53-boglanish-sanoq",
+              "nom": "Bog'lanishlar sonini hisoblash",
+              "bolim": "Sintaksis",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                10,
+                11
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m54-mazmuniy-boglanish",
+              "nom": "So'zlarning mazmuniy-grammatik bog'lanishi",
+              "bolim": "Sintaksis",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                10,
+                11
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m55-qoshma-gap",
+              "nom": "Qo'shma gap turlari",
+              "bolim": "Sintaksis",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                10,
+                11
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m56-gap-turlari",
+              "nom": "Gap turlari: ifoda maqsadi va tuzilishi",
+              "bolim": "Sintaksis",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                10,
+                11
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m57-ergash-aylantirish",
+              "nom": "Sodda gapni ergashgan qo'shma gapga aylantirish",
+              "bolim": "Sintaksis",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                10,
+                11
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            }
+          ]
+        },
+        {
+          "nom": "Punktuatsiya",
+          "izoh": "12-o'rin · 2,5 ball",
+          "mavzu": 7,
+          "savol": 9,
+          "mavzular": [
+            {
+              "id": "sert_til_m58-tire",
+              "nom": "Tire",
+              "bolim": "Punktuatsiya",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                12
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m59-vergul",
+              "nom": "Vergul",
+              "bolim": "Punktuatsiya",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                12
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m60-ikki-nuqta",
+              "nom": "Ikki nuqta va nuqtali vergul",
+              "bolim": "Punktuatsiya",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                12
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m61-qoshtirnoq",
+              "nom": "Qo'shtirnoq va ko'chirma gap",
+              "bolim": "Punktuatsiya",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                12
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m62-qavs-undov",
+              "nom": "Qavs, undov va so'roq belgisi",
+              "bolim": "Punktuatsiya",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                12
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m63-vergul-olinsa",
+              "nom": "Vergul olib tashlansa — grammatik o'zgarish",
+              "bolim": "Punktuatsiya",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                12
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_til_m64-bir-xil-qoida",
+              "nom": "Bir xil qoida asosida qo'yilgan belgilar",
+              "bolim": "Punktuatsiya",
+              "savol": 9,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 9
+              },
+              "orin": [
+                12
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "adb",
+      "badge": "ADABIYOT",
+      "daraja": "13-17-topshiriq · 8,5 ball",
+      "mavzu": 10,
+      "savol": 96,
+      "kitoblar": [
+        {
+          "nom": "Badiiy asarlar bo'yicha bilim",
+          "izoh": "13-17-o'rin · 8,5 ball",
+          "mavzu": 5,
+          "savol": 96,
+          "mavzular": [
+            {
+              "id": "sert_adb_m65-syujet",
+              "nom": "Asar syujeti va voqealar",
+              "bolim": "Badiiy asarlar bo'yicha bilim",
+              "savol": 0,
+              "maqsad": 400,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_adb_m66-obrazlar",
+              "nom": "Obrazlar va ularning tavsifi",
+              "bolim": "Badiiy asarlar bo'yicha bilim",
+              "savol": 0,
+              "maqsad": 400,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_adb_m67-goya",
+              "nom": "Asar g'oyasi va muallif maqsadi",
+              "bolim": "Badiiy asarlar bo'yicha bilim",
+              "savol": 0,
+              "maqsad": 300,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_adb_m68-muallif-davr",
+              "nom": "Muallif, davr va janr mosligi",
+              "bolim": "Badiiy asarlar bo'yicha bilim",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_adb_m69-bir-xil-nomli",
+              "nom": "Bir xil nomli asarlar (tuzoq)",
+              "bolim": "Badiiy asarlar bo'yicha bilim",
+              "savol": 96,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 26,
+                "qiyin": 70
+              },
+              "orin": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            }
+          ]
+        },
+        {
+          "nom": "Adabiyot nazariyasi",
+          "izoh": "13-17-o'rin · nazariy qism",
+          "mavzu": 5,
+          "savol": 0,
+          "mavzular": [
+            {
+              "id": "sert_adb_m70-tur-janr",
+              "nom": "Adabiy turlar va janrlar",
+              "bolim": "Adabiyot nazariyasi",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_adb_m71-sheriy-sanat",
+              "nom": "She'riy san'atlar (nazariy)",
+              "bolim": "Adabiyot nazariyasi",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_adb_m72-aruz",
+              "nom": "Aruz vaznlari (nazariy)",
+              "bolim": "Adabiyot nazariyasi",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_adb_m73-qofiya",
+              "nom": "Qofiya nazariyasi: raviy, radif, mutlaq/muqayyad",
+              "bolim": "Adabiyot nazariyasi",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_adb_m74-ogzaki-ijod",
+              "nom": "Xalq og'zaki ijodi",
+              "bolim": "Adabiyot nazariyasi",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "reja"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "oqi",
+      "badge": "O'QISH",
+      "daraja": "18-32-topshiriq · 26,5 ball",
+      "mavzu": 15,
+      "savol": 597,
+      "kitoblar": [
+        {
+          "nom": "Ilmiy-ommabop matn",
+          "izoh": "18-22-o'rin · 8,5 ball",
+          "mavzu": 5,
+          "savol": 460,
+          "mavzular": [
+            {
+              "id": "sert_oqi_m75-ilmiy-musbat",
+              "nom": "Matn mazmuniga mos ma'lumot",
+              "bolim": "Ilmiy-ommabop matn",
+              "savol": 91,
+              "maqsad": 300,
+              "qiy": {
+                "oson": 91,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                18,
+                19,
+                20,
+                21,
+                22
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_oqi_m76-ilmiy-teskari",
+              "nom": "Matn mazmuniga xos bo'lmagan ma'lumot",
+              "bolim": "Ilmiy-ommabop matn",
+              "savol": 92,
+              "maqsad": 300,
+              "qiy": {
+                "oson": 0,
+                "orta": 92,
+                "qiyin": 0
+              },
+              "orin": [
+                18,
+                19,
+                20,
+                21,
+                22
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_oqi_m77-uslubiy-galizlik",
+              "nom": "Uslubiy g'alizlikni topish",
+              "bolim": "Ilmiy-ommabop matn",
+              "savol": 95,
+              "maqsad": 300,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 95
+              },
+              "orin": [
+                18,
+                19,
+                20,
+                21,
+                22
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_oqi_m78-togri-notogri",
+              "nom": "To'g'ri va noto'g'ri hukmlarni ajratish",
+              "bolim": "Ilmiy-ommabop matn",
+              "savol": 95,
+              "maqsad": 300,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 95
+              },
+              "orin": [
+                18,
+                19,
+                20,
+                21,
+                22
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_oqi_m79-jumla-toldirish",
+              "nom": "Jumlani to'ldirish",
+              "bolim": "Ilmiy-ommabop matn",
+              "savol": 87,
+              "maqsad": 300,
+              "qiy": {
+                "oson": 0,
+                "orta": 87,
+                "qiyin": 0
+              },
+              "orin": [
+                18,
+                19,
+                20,
+                21,
+                22
+              ],
+              "ball": 1.7,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            }
+          ]
+        },
+        {
+          "nom": "Badiiy matn",
+          "izoh": "23-27-o'rin · 5,5 ball",
+          "mavzu": 4,
+          "savol": 51,
+          "mavzular": [
+            {
+              "id": "sert_oqi_m80-badiiy-goya",
+              "nom": "Umumiy g'oya va badiiy maqsad",
+              "bolim": "Badiiy matn",
+              "savol": 10,
+              "maqsad": 300,
+              "qiy": {
+                "oson": 0,
+                "orta": 10,
+                "qiyin": 0
+              },
+              "orin": [
+                23,
+                24,
+                25,
+                26,
+                27
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_oqi_m81-obraz-tavsifi",
+              "nom": "Obraz tavsifi",
+              "bolim": "Badiiy matn",
+              "savol": 17,
+              "maqsad": 400,
+              "qiy": {
+                "oson": 0,
+                "orta": 17,
+                "qiyin": 0
+              },
+              "orin": [
+                23,
+                24,
+                25,
+                26,
+                27
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_oqi_m82-belgi-1",
+              "nom": "[1] belgilangan qism — qahramon holati",
+              "bolim": "Badiiy matn",
+              "savol": 12,
+              "maqsad": 300,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 12
+              },
+              "orin": [
+                23,
+                24,
+                25,
+                26,
+                27
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_oqi_m83-belgi-2",
+              "nom": "[2] belgilangan gap — uslubiy ma'no",
+              "bolim": "Badiiy matn",
+              "savol": 12,
+              "maqsad": 300,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 12
+              },
+              "orin": [
+                23,
+                24,
+                25,
+                26,
+                27
+              ],
+              "ball": 1.1,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            }
+          ]
+        },
+        {
+          "nom": "She'riy matn — g'azal",
+          "izoh": "28-32-o'rin · 12,5 ball — eng qimmat blok",
+          "mavzu": 6,
+          "savol": 86,
+          "mavzular": [
+            {
+              "id": "sert_oqi_m84-matla",
+              "nom": "Matla' tahlili",
+              "bolim": "She'riy matn — g'azal",
+              "savol": 14,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 14
+              },
+              "orin": [
+                28,
+                29,
+                30,
+                31,
+                32
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_oqi_m85-bayt",
+              "nom": "Muayyan bayt tahlili",
+              "bolim": "She'riy matn — g'azal",
+              "savol": 22,
+              "maqsad": 300,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 22
+              },
+              "orin": [
+                28,
+                29,
+                30,
+                31,
+                32
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_oqi_m86-oxshatish",
+              "nom": "O'xshatish (bor/yo'q)",
+              "bolim": "She'riy matn — g'azal",
+              "savol": 18,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 18
+              },
+              "orin": [
+                28,
+                29,
+                30,
+                31,
+                32
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_oqi_m87-sanat",
+              "nom": "She'riy san'at (ta'rifi bilan)",
+              "bolim": "She'riy matn — g'azal",
+              "savol": 14,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 14
+              },
+              "orin": [
+                28,
+                29,
+                30,
+                31,
+                32
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_oqi_m88-maqta",
+              "nom": "Maqta' tahlili",
+              "bolim": "She'riy matn — g'azal",
+              "savol": 18,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 18
+              },
+              "orin": [
+                28,
+                29,
+                30,
+                31,
+                32
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_oqi_m89-vazn",
+              "nom": "Aruz vaznini aniqlash",
+              "bolim": "She'riy matn — g'azal",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                28,
+                29,
+                30,
+                31,
+                32
+              ],
+              "ball": 2.5,
+              "tur": "Y-1",
+              "holat": "reja"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "thl",
+      "badge": "TAHLIL",
+      "daraja": "33-44-topshiriq · 22 ball",
+      "mavzu": 15,
+      "savol": 100,
+      "kitoblar": [
+        {
+          "nom": "Moslashtirish",
+          "izoh": "33-35-o'rin · 5,1 ball",
+          "mavzu": 1,
+          "savol": 40,
+          "mavzular": [
+            {
+              "id": "sert_thl_m90-gap-moslash",
+              "nom": "Gap turlarini izoh bilan moslashtirish",
+              "bolim": "Moslashtirish",
+              "savol": 40,
+              "maqsad": 300,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 40
+              },
+              "orin": [
+                33,
+                34,
+                35
+              ],
+              "ball": 1.7,
+              "tur": "Y-2",
+              "holat": "tayyor"
+            }
+          ]
+        },
+        {
+          "nom": "Ochiq javob — leksika",
+          "izoh": "36-o'rin · 1,7 ball",
+          "mavzu": 3,
+          "savol": 0,
+          "mavzular": [
+            {
+              "id": "sert_thl_m91-manodosh-yozish",
+              "nom": "Uch birikmaga mos ma'nodosh so'z yozish",
+              "bolim": "Ochiq javob — leksika",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                36
+              ],
+              "ball": 1.7,
+              "tur": "O-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_thl_m92-omonim-yozish",
+              "nom": "Ikki ta'rifga mos omonim yozish",
+              "bolim": "Ochiq javob — leksika",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                36
+              ],
+              "ball": 1.7,
+              "tur": "O-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_thl_m93-antonim-yozish",
+              "nom": "Antonim yozish",
+              "bolim": "Ochiq javob — leksika",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                36
+              ],
+              "ball": 1.7,
+              "tur": "O-1",
+              "holat": "reja"
+            }
+          ]
+        },
+        {
+          "nom": "Ochiq javob — grammatika",
+          "izoh": "37-41-o'rin · 10,1 ball",
+          "mavzu": 5,
+          "savol": 60,
+          "mavzular": [
+            {
+              "id": "sert_thl_m94-tinish-ketmaketlik",
+              "nom": "Tinish belgilari ketma-ketligini yozish",
+              "bolim": "Ochiq javob — grammatika",
+              "savol": 20,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 20
+              },
+              "orin": [
+                37
+              ],
+              "ball": 2.5,
+              "tur": "O-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_thl_m95-xato-qoshimcha",
+              "nom": "Xato qo'shimchani aniqlab yozish",
+              "bolim": "Ochiq javob — grammatika",
+              "savol": 10,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 10
+              },
+              "orin": [
+                38
+              ],
+              "ball": 1.7,
+              "tur": "O-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_thl_m96-sintaktik-birlik",
+              "nom": "Sintaktik birlik turi va vazifasi",
+              "bolim": "Ochiq javob — grammatika",
+              "savol": 16,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 16
+              },
+              "orin": [
+                39
+              ],
+              "ball": 1.7,
+              "tur": "O-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_thl_m97-tobe-teng",
+              "nom": "a) tobelanib, b) teng bog'langan so'z",
+              "bolim": "Ochiq javob — grammatika",
+              "savol": 8,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 8
+              },
+              "orin": [
+                40
+              ],
+              "ball": 2.5,
+              "tur": "O-1",
+              "holat": "tayyor"
+            },
+            {
+              "id": "sert_thl_m98-boglovchi-vosita",
+              "nom": "a) bog'lovchi vosita, b) qo'shma gap turi",
+              "bolim": "Ochiq javob — grammatika",
+              "savol": 6,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 6
+              },
+              "orin": [
+                41
+              ],
+              "ball": 1.7,
+              "tur": "O-1",
+              "holat": "tayyor"
+            }
+          ]
+        },
+        {
+          "nom": "Ochiq javob — mumtoz adabiyot",
+          "izoh": "42-44-o'rin · 5,1 ball",
+          "mavzu": 6,
+          "savol": 0,
+          "mavzular": [
+            {
+              "id": "sert_thl_m99-sanat-yozish",
+              "nom": "a) she'riy san'at, b) ikkinchi san'at yoki izohi",
+              "bolim": "Ochiq javob — mumtoz adabiyot",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                42
+              ],
+              "ball": 1.7,
+              "tur": "O-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_thl_m100-raviy",
+              "nom": "a) raviy, b) qofiya turi",
+              "bolim": "Ochiq javob — mumtoz adabiyot",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                43
+              ],
+              "ball": 1.7,
+              "tur": "O-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_thl_m101-qita",
+              "nom": "Qit'a: illat, fazilat, timsol, o'xshatish",
+              "bolim": "Ochiq javob — mumtoz adabiyot",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                44
+              ],
+              "ball": 1.7,
+              "tur": "O-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_thl_m102-janr",
+              "nom": "Janr aniqlash va qofiyalanish shakli",
+              "bolim": "Ochiq javob — mumtoz adabiyot",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                44
+              ],
+              "ball": 1.7,
+              "tur": "O-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_thl_m103-chiston",
+              "nom": "Chiston: yashirin predmet va turi",
+              "bolim": "Ochiq javob — mumtoz adabiyot",
+              "savol": 0,
+              "maqsad": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                44
+              ],
+              "ball": 1.7,
+              "tur": "O-1",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_thl_m104-taqti",
+              "nom": "Aruz taqti' chizmasi",
+              "bolim": "Ochiq javob — mumtoz adabiyot",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                44
+              ],
+              "ball": 1.7,
+              "tur": "O-1",
+              "holat": "reja"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "yoz",
+      "badge": "ESSE",
+      "daraja": "45-topshiriq · 24 ball",
+      "mavzu": 6,
+      "savol": 0,
+      "kitoblar": [
+        {
+          "nom": "Esse",
+          "izoh": "45-o'rin · yakuniy bahoning 50 % i",
+          "mavzu": 6,
+          "savol": 0,
+          "mavzular": [
+            {
+              "id": "sert_yoz_m105-esse",
+              "nom": "Esse mashqi — to'liq yozish va baho",
+              "bolim": "Esse",
+              "savol": 0,
+              "maqsad": 300,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                45
+              ],
+              "ball": 24,
+              "tur": "O-2",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_yoz_m106-kirish",
+              "nom": "Kirish mashqi (2-3 jumla, ko'chirmasdan)",
+              "bolim": "Esse",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                45
+              ],
+              "ball": 24,
+              "tur": "O-2",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_yoz_m107-dalillash",
+              "nom": "Dalillash mashqi (ikki qarash va hayotiy misol)",
+              "bolim": "Esse",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                45
+              ],
+              "ball": 24,
+              "tur": "O-2",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_yoz_m108-xulosa",
+              "nom": "Xulosa mashqi",
+              "bolim": "Esse",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                45
+              ],
+              "ball": 24,
+              "tur": "O-2",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_yoz_m109-uslub",
+              "nom": "Uslub mashqi (publitsistik / badiiy / so'zlashuv)",
+              "bolim": "Esse",
+              "savol": 0,
+              "maqsad": 150,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                45
+              ],
+              "ball": 24,
+              "tur": "O-2",
+              "holat": "reja"
+            },
+            {
+              "id": "sert_yoz_m110-xato-topish",
+              "nom": "Tayyor esseda 12 mezon bo'yicha xato topish",
+              "bolim": "Esse",
+              "savol": 0,
+              "maqsad": 200,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 0
+              },
+              "orin": [
+                45
+              ],
+              "ball": 24,
+              "tur": "O-2",
+              "holat": "reja"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

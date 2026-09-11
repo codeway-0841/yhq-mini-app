@@ -1,0 +1,486 @@
+{
+  "nom": "50-mavzu. Tokli Otkazgichni Kochirishdagi Ish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Magnit oqimi deganda qanday kattalik tushuniladi?",
+      "v": [
+        "Induksiya qiymatini sirt yuzasiga va induksiya vektori bilan normal orasidagi burchak kosinusiga ko'paytmasiga teng kattalik",
+        "Sirtni kesib o'tuvchi tok kuchi",
+        "Sirt yuzasining induksiyaga nisbati",
+        "Induksiyaning masofaga ko'paytmasi"
+      ],
+      "t": 0,
+      "izoh": "Ф = B·S·cosα — magnit oqimi ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#93405e22"
+    },
+    {
+      "q": "Magnit oqimi qanday harf bilan belgilanadi?",
+      "v": [
+        "Ф",
+        "B",
+        "Ψ",
+        "Δ"
+      ],
+      "t": 0,
+      "izoh": "Magnit oqimi Ф harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#9fe86db6"
+    },
+    {
+      "q": "Magnit oqimining ifodasi qanday?",
+      "v": [
+        "Ф = B·S·cosα",
+        "Ф = B·S·sinα",
+        "Ф = B/(S·cosα)",
+        "Ф = I·B·S"
+      ],
+      "t": 0,
+      "izoh": "Ф = BScosα, bu yerda α — induksiya vektori bilan normal orasidagi burchak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#584243af"
+    },
+    {
+      "q": "Magnit oqimi ifodasidagi α burchak qaysi yo'nalishlar orasidagi burchak?",
+      "v": [
+        "Induksiya vektori bilan sirtga o'tkazilgan normal orasidagi",
+        "Induksiya vektori bilan sirt tekisligi orasidagi",
+        "Tok yo'nalishi bilan sirt orasidagi",
+        "Ikki sirt orasidagi"
+      ],
+      "t": 0,
+      "izoh": "α — induksiya vektori yo'nalishi bilan sirtga o'tkazilgan normal n vektor orasidagi burchak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#c28e6314"
+    },
+    {
+      "q": "Magnit maydon induksiya chiziqlari sirtga tik yo'nalgan bo'lsa (α = 0), magnit oqimi qanday bo'ladi?",
+      "v": [
+        "Ф = B·S",
+        "Ф = 0",
+        "Ф = B·S/2",
+        "Ф = B/S"
+      ],
+      "t": 0,
+      "izoh": "α = 0 da cosα = 1, shuning uchun Ф = B·S.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#17c766e6"
+    },
+    {
+      "q": "Magnit oqimining XBSdagi birligi nima?",
+      "v": [
+        "Veber (Wb)",
+        "Tesla (T)",
+        "Nyuton (N)",
+        "Amper (A)"
+      ],
+      "t": 0,
+      "izoh": "Magnit oqimi birligi nemis fizigi D. Veber sharafiga Veber (Wb) deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#7607d2b3"
+    },
+    {
+      "q": "Veber birligi kim sharafiga nomlangan?",
+      "v": [
+        "Nemis fizigi D. Veber",
+        "Serbiyalik fizik N. Tesla",
+        "Fransuz fizigi A. Amper",
+        "Ingliz fizigi M. Faradey"
+      ],
+      "t": 0,
+      "izoh": "Veber birligi nemis fizigi D. Veber sharafiga nomlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#d6a2b323"
+    },
+    {
+      "q": "1 Veber qanday birliklar orqali ifodalanadi?",
+      "v": [
+        "1 Wb = 1 T·1 m²",
+        "1 Wb = 1 T/m²",
+        "1 Wb = 1 N·A",
+        "1 Wb = 1 J/s"
+      ],
+      "t": 0,
+      "izoh": "Ф = B·S dan 1 Wb = 1 T·1 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#d335c341"
+    },
+    {
+      "q": "1 Veberlik magnit oqimi qanday ta'riflanadi?",
+      "v": [
+        "Induksiyasi 1 T bo'lgan maydon kuch chiziqlariga tik joylashtirilgan 1 m² yuzani kesib o'tuvchi oqim",
+        "1 m² yuzadagi ixtiyoriy oqim",
+        "1 T maydondagi tok kuchi",
+        "1 s da o'zgaruvchi oqim"
+      ],
+      "t": 0,
+      "izoh": "B = 1 T bo'lgan maydonda kuch chiziqlariga tik 1 m² yuzadan o'tuvchi oqim 1 Wb ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#4dee5f77"
+    },
+    {
+      "q": "Magnit maydonda tokli o'tkazgichni ko'chirishda bajarilgan ishning umumiy ifodasi qanday?",
+      "v": [
+        "A = I·ΔФ",
+        "A = F·ΔФ",
+        "A = B·S",
+        "A = I·B/S"
+      ],
+      "t": 0,
+      "izoh": "A = I·ΔФ — ish tok kuchi va magnit oqimi o'zgarishining ko'paytmasiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#0e8c3589"
+    },
+    {
+      "q": "Tok yo'nalishi bilan induksiya yo'nalishi orasidagi burchak 90° bo'lganda, o'tkazgichni d masofaga ko'chirishda bajariladigan ish qanday?",
+      "v": [
+        "A = I·B·l·d",
+        "A = I·B·l·d·sinα (sinα = 0)",
+        "A = nol",
+        "A = B·l·d/I"
+      ],
+      "t": 0,
+      "izoh": "90° da A = Fd = IBld.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#beb9671c"
+    },
+    {
+      "q": "Ixtiyoriy α burchakda tokli o'tkazgichni ko'chirishda bajarilgan ish qanday hisoblanadi?",
+      "v": [
+        "A = I·B·l·d·sinα",
+        "A = I·B·l·d·cosα",
+        "A = I·B·l·d",
+        "A = I·B·l·d·tgα"
+      ],
+      "t": 0,
+      "izoh": "A = I·B·l·d·sinα (masala yechish namunasidagi formula).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#fe346836"
+    },
+    {
+      "q": "Tokli o'tkazgichni magnit maydonda ko'chirishda bajariladigan ish qaysi energiya hisobidan amalga oshadi?",
+      "v": [
+        "Zanjirni tok bilan ta'minlab turuvchi manba hisobidan",
+        "Magnit maydonning o'z energiyasi hisobidan",
+        "O'tkazgichning issiqlik energiyasi hisobidan",
+        "Gravitatsiya energiyasi hisobidan"
+      ],
+      "t": 0,
+      "izoh": "Bu ish magnit maydon tomonidan emas, balki tok manbai hisobidan bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#1e7cd2c6"
+    },
+    {
+      "q": "A = I·ΔФ ifodadagi ΔФ qanday aniqlanadi?",
+      "v": [
+        "ΔФ = B·ΔS, bu yerda ΔS — o'tkazgich harakati davomida chizgan yuza",
+        "ΔФ = I·ΔS",
+        "ΔФ = B/ΔS",
+        "ΔФ = B·l·t"
+      ],
+      "t": 0,
+      "izoh": "ΔФ = B·ΔS, bu yerda ΔS = l·d — o'tkazgich chizgan to'rtburchak yuzasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#877eaa4a"
+    },
+    {
+      "q": "Tok yo'nalishi bilan magnit maydon induksiyasi bir xil yo'nalishda bo'lsa, ko'chirishda bajarilgan ish qancha bo'ladi?",
+      "v": [
+        "Nolga teng",
+        "Maksimal qiymatga teng",
+        "I·B·l·d ga teng",
+        "I·B·l·d/2 ga teng"
+      ],
+      "t": 0,
+      "izoh": "α = 0° da Amper kuchi nolga teng, shuning uchun ish ham nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#c09fca54"
+    },
+    {
+      "q": "Tajriba sxemasida ikki parallel silliq metall sim ustiga qo'yilgan yengil o'tkazgich tok ulanganda nima sababdan harakatlanadi?",
+      "v": [
+        "Unga magnit maydon tomonidan Amper kuchi ta'sir qiladi",
+        "Og'irlik kuchi ta'sirida sirpanadi",
+        "Simlar qiziydi",
+        "Havo oqimi suradi"
+      ],
+      "t": 0,
+      "izoh": "Tokli o'tkazgichga maydon tomonidan F = IBl Amper kuchi ta'sir qilib, uni harakatga keltiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#8b6ad999"
+    },
+    {
+      "q": "O'tkazgichni harakatga keltiruvchi kuchning yo'nalishi qanday aniqlanadi?",
+      "v": [
+        "Chap qo'l qoidasi bilan",
+        "O'ng vintli parma qoidasi bilan",
+        "Lenz qoidasi bilan",
+        "Energiya saqlanish qonuni bilan"
+      ],
+      "t": 0,
+      "izoh": "Kuchning yo'nalishi chap qo'l qoidasiga binoan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#e196cb9a"
+    },
+    {
+      "q": "Amper kuchining bajargan ishi qaysi kattaliklar ko'paytmasiga teng?",
+      "v": [
+        "Tok kuchi va magnit oqimi o'zgarishining ko'paytmasiga",
+        "Tok kuchi va vaqtning ko'paytmasiga",
+        "Induksiya va masofaning ko'paytmasiga",
+        "Kuch va tezlikning ko'paytmasiga"
+      ],
+      "t": 0,
+      "izoh": "A = I·ΔФ: ish tok kuchi bilan oqim o'zgarishi ko'paytmasiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#7bd6b83f"
+    },
+    {
+      "q": "Tokli o'tkazgichni magnit maydonda ko'chirish ishi amaliyotda qaysi sohalarda qo'llaniladi?",
+      "v": [
+        "Transport, maishiy texnika va elektronika sohalarida",
+        "Faqat tibbiyotda",
+        "Faqat qishloq xo'jaligida",
+        "Amaliyotda qo'llanilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Bu ish transport, maishiy texnika va elektronika sohalarida keng qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#addaa73b"
+    },
+    {
+      "q": "Magnit maydonda tokli o'tkazgichni ko'chirish ishidan foydalanadigan zamonaviy qurilmaga misol?",
+      "v": [
+        "Elektron qulflar",
+        "Mexanik soatlar",
+        "Termometrlar",
+        "Barometrlar"
+      ],
+      "t": 0,
+      "izoh": "Keng ishlatiladigan elektron qulflar bunga misol bo'la oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#d9c0284d"
+    },
+    {
+      "q": "Agar induksiya chiziqlari sirt tekisligiga parallel bo'lsa (α = 90°), sirtdan o'tuvchi magnit oqimi qancha?",
+      "v": [
+        "Nolga teng",
+        "B·S ga teng",
+        "B·S/2 ga teng",
+        "Maksimal qiymatga teng"
+      ],
+      "t": 0,
+      "izoh": "cos 90° = 0 bo'lgani uchun Ф = BScosα = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#f395404f"
+    },
+    {
+      "q": "Sirt yuzasi 2 marta oshirilsa (B va α o'zgarmasa), magnit oqimi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ф = BScosα ga ko'ra S 2 marta ortsa, Ф 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#7bb19c36"
+    },
+    {
+      "q": "Magnit induksiyasi 2 marta oshirilsa, magnit oqimi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi",
+        "4 marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "Ф ~ B bo'lgani uchun induksiya 2 marta ortsa, oqim ham 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#a69858a4"
+    },
+    {
+      "q": "α = 60° bo'lganda magnit oqimi maksimal qiymatining qanday qismini tashkil qiladi?",
+      "v": [
+        "Yarmini (1/2)",
+        "To'rtdan birini",
+        "3/4 qismini",
+        "To'liq qiymatini"
+      ],
+      "t": 0,
+      "izoh": "cos 60° = 1/2, shuning uchun Ф maksimal qiymatning yarmini tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#11c6cd1c"
+    },
+    {
+      "q": "O'tkazgich uzunligi 2 marta oshirilsa (I, B, d o'zgarmasa), bajarilgan ish qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "A = IBld·sinα ga ko'ra l 2 marta ortsa, ish 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#fb0863e4"
+    },
+    {
+      "q": "Tokli o'tkazgich 30° burchak ostida joylashgan holda Amper kuchi yo'nalishida ko'chirilganda ish qanday formula bilan hisoblanadi?",
+      "v": [
+        "A = I·B·l·d·sin30°",
+        "A = I·B·l·d·cos30°",
+        "A = I·B·l·d",
+        "A = nol"
+      ],
+      "t": 0,
+      "izoh": "A = I·B·l·d·sinα, bu yerda α = 30°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#2403e2c7"
+    },
+    {
+      "q": "Magnit maydonda tokli o'tkazgichni ko'chirishda ishning ishorati qaysi kuch tomonidan bajariladi?",
+      "v": [
+        "Amper kuchi tomonidan (tok manbai energiyasi hisobiga)",
+        "Lorens kuchi tomonidan",
+        "Kulon kuchi tomonidan",
+        "Elastiklik kuchi tomonidan"
+      ],
+      "t": 0,
+      "izoh": "Ish Amper kuchi tomonidan, tok manbai energiyasi hisobidan bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#3237fb30"
+    },
+    {
+      "q": "Rasmdagi (×) yoki (•) belgisi magnit maydon induksiya vektorining qanday yo'nalishini bildiradi?",
+      "v": [
+        "Rasm tekisligiga tik yo'nalishni (bizdan yoki bizga tomon)",
+        "Tok yo'nalishini",
+        "Kuch yo'nalishini",
+        "Maydonning yo'qligini"
+      ],
+      "t": 0,
+      "izoh": "Bunday belgilar induksiya vektorining rasm tekisligiga tik yo'nalganligini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#a36902d3"
+    },
+    {
+      "q": "O'tkazgichning harakati davomida chizgan yuzasi qanday topiladi?",
+      "v": [
+        "ΔS = l·d (uzunlik va siljish masofasi ko'paytmasi)",
+        "ΔS = l·d/2",
+        "ΔS = l²",
+        "ΔS = d²"
+      ],
+      "t": 0,
+      "izoh": "O'tkazgich harakati davomida to'rtburchak shaklidagi yuzani chizadi: ΔS = l·d.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#b07d4e0a"
+    },
+    {
+      "q": "Magnit oqimi qanday kattalik?",
+      "v": [
+        "Skalyar kattalik",
+        "Vektor kattalik",
+        "Birliksiz kattalik",
+        "Faoliyatsiz kattalik"
+      ],
+      "t": 0,
+      "izoh": "Magnit oqimi Ф = BScosα ko'paytmalar bilan aniqlanadigan skalyar kattalikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#9d990215"
+    },
+    {
+      "q": "Uzunligi 30 sm, toki 2 A bo'lgan o'tkazgich B = 1,5 T maydonda 30° burchak ostida 4 sm ga ko'chirilsa, bajarilgan ish qancha?",
+      "v": [
+        "18·10⁻³ J",
+        "36·10⁻³ J",
+        "9·10⁻³ J",
+        "1,8 J"
+      ],
+      "t": 0,
+      "izoh": "A = 2·1,5·0,3·0,04·0,5 = 18·10⁻³ J = 18 mJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#1e53c44e"
+    },
+    {
+      "q": "Bir jinsli magnit maydonda tokli o'tkazgichni ko'chirish ishining amaliy ahamiyati nimada?",
+      "v": [
+        "Elektrodvigatellar va elektron qurilmalarning ishlashiga asos bo'ladi",
+        "Hech qanday ahamiyati yo'q",
+        "Faqat o'lchash asboblarida ishlatiladi",
+        "Faqat yoritishda ishlatiladi"
+      ],
+      "t": 0,
+      "izoh": "Bu ish transport, maishiy texnika, elektronika sohalarida muhim ahamiyatga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m50-tokli-otkazgichni-kochirishdagi-ish#80ce2568"
+    }
+  ]
+}

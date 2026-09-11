@@ -1,0 +1,1609 @@
+{
+  "nom": "Keltirish formulalari",
+  "bolim": "Trigonometriya",
+  "blok": "trig",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "cos(90° − α) ifodasini keltirish formulasi bilan soddalashtirganda qanday natija hosil bo'ladi?",
+      "v": [
+        "cos α",
+        "sin α",
+        "−cos α",
+        "−sin α"
+      ],
+      "t": 1,
+      "izoh": "90° qatnashgan keltirishda funksiya nomi almashadi: kosinus sinusga o'tadi. α o'tkir bo'lsa 90° − α burchagi I chorakda yotadi, u yerda kosinus musbat, shuning uchun ishora saqlanadi. Demak cos(90° − α) = sin α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-90-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#4e036c2e"
+    },
+    {
+      "q": "Do'stlar sin 55° va cos 35° sonlaridan qaysi biri katta ekani haqida bahslashmoqda. To'g'ri xulosani tanlang.",
+      "v": [
+        "sin 55° katta",
+        "cos 35° katta",
+        "Ular teng",
+        "Burchaklar har xil, solishtirib bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "cos 35° = cos(90° − 55°) yozuvini olamiz. 90° ga keltirishda kosinus sinusga aylanadi va I chorakda ishora musbat qoladi, demak cos 35° = sin 55°. Ikkala son ham bir xil qiymatga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "keltirish-90-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#c20efdb6"
+    },
+    {
+      "q": "tg(90° − γ) ifodasi keltirish formulasiga ko'ra qaysi funksiyaga aylanadi?",
+      "v": [
+        "tg γ",
+        "−tg γ",
+        "ctg γ",
+        "−ctg γ"
+      ],
+      "t": 2,
+      "izoh": "Argumentda 90° turgani uchun funksiya nomi o'zining kofunksiyasiga o'tadi: tangens kotangensga aylanadi. 90° − γ burchagi I chorakda bo'lgani sababli tangens musbat, ishora o'zgarmaydi. Demak tg(90° − γ) = ctg γ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-90-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#492212e2"
+    },
+    {
+      "q": "Narvon devorga tirab qo'yilgan va u yer bilan α burchak hosil qiladi, bunda sin α = 0,8. Narvon bilan devor orasidagi burchak 90° − α ga teng. Shu burchakning kosinusini toping.",
+      "v": [
+        "0,8",
+        "0,6",
+        "−0,8",
+        "0,2"
+      ],
+      "t": 0,
+      "izoh": "cos(90° − α) = sin α, chunki 90° ga keltirishda kosinus sinusga almashadi va I chorakda ishora musbat qoladi. sin α = 0,8 bo'lgani uchun izlanayotgan kosinus ham 0,8 ga teng. 0,6 — bu cos α ning qiymati, savolda esa cos(90° − α) so'ralgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "keltirish-90-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#a8407d7b"
+    },
+    {
+      "q": "cos(90° + β) ifodasini keltirish formulasi yordamida yozing.",
+      "v": [
+        "sin β",
+        "cos β",
+        "−cos β",
+        "−sin β"
+      ],
+      "t": 3,
+      "izoh": "90° qatnashgani uchun kosinus sinusga aylanadi. β o'tkir bo'lsa 90° + β burchagi II chorakda yotadi, u yerda kosinus manfiy, demak ishora minusga o'zgaradi: cos(90° + β) = −sin β.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-90-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#37b40730"
+    },
+    {
+      "q": "sin(90° + t) ifodasi soddalashtirilganda quyidagilardan qaysi biri hosil bo'ladi?",
+      "v": [
+        "−cos t",
+        "cos t",
+        "sin t",
+        "−sin t"
+      ],
+      "t": 1,
+      "izoh": "90° ishtirok etgani uchun sinus kosinusga almashadi. 90° + t burchagi II chorakda joylashadi, u yerda sinus musbat bo'lgani sababli ishora saqlanadi: sin(90° + t) = cos t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-90-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#2b527b0e"
+    },
+    {
+      "q": "Quyidagi tengliklardan qaysi biri 90° + α uchun keltirish qoidasiga to'liq mos keladi?",
+      "v": [
+        "tg(90° + α) = ctg α",
+        "tg(90° + α) = −ctg α",
+        "tg(90° + α) = tg α",
+        "tg(90° + α) = −tg α"
+      ],
+      "t": 1,
+      "izoh": "90° qatnashganda tangens kotangensga aylanadi, ya'ni nom albatta o'zgaradi. 90° + α burchagi II chorakda bo'lib, u yerda tangens manfiy. Ikkala shart birga tg(90° + α) = −ctg α ni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "keltirish-90-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#40692ced"
+    },
+    {
+      "q": "Aylanma sahna dastlab gorizontal o'qdan α burchakka burilgan edi, so'ng yana 90° ga burildi. sin α = 0,28 bo'lsa, yangi holatdagi burchakning kosinusi nechaga teng?",
+      "v": [
+        "−0,28",
+        "0,28",
+        "0,96",
+        "−0,96"
+      ],
+      "t": 0,
+      "izoh": "Yangi burchak 90° + α ga teng. cos(90° + α) = −sin α, chunki nom almashadi va II chorakda kosinus manfiy. sin α = 0,28 bo'lgani uchun natija −0,28. 0,96 esa cos α ning qiymati bo'lib, nomni almashtirmaslik xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "keltirish-90-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#73436405"
+    },
+    {
+      "q": "cos(180° − γ) ifodasini keltirish formulasi bilan soddalashtiring.",
+      "v": [
+        "cos γ",
+        "sin γ",
+        "−cos γ",
+        "−sin γ"
+      ],
+      "t": 2,
+      "izoh": "180° — 90° ning juft karralisi, shuning uchun funksiya nomi o'zgarmaydi. 180° − γ burchagi II chorakda yotadi, u yerda kosinus manfiy. Shuning uchun cos(180° − γ) = −cos γ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-180-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#0a055ae8"
+    },
+    {
+      "q": "Uchburchakning bir burchagi 150° ga teng. Shu burchak kosinusining aniq qiymatini toping.",
+      "v": [
+        "1/2",
+        "−1/2",
+        "−√3/2",
+        "√3/2"
+      ],
+      "t": 2,
+      "izoh": "150° = 180° − 30° deb yozamiz. cos(180° − 30°) = −cos 30°, chunki nom saqlanadi va II chorakda kosinus manfiy. cos 30° = √3/2 bo'lgani uchun natija −√3/2. 1/2 — bu sin 150° ning qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-180-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#57696c0b"
+    },
+    {
+      "q": "tg(180° − φ) ifodasi qanday ko'rinishga keladi?",
+      "v": [
+        "tg φ",
+        "−tg φ",
+        "ctg φ",
+        "−ctg φ"
+      ],
+      "t": 1,
+      "izoh": "180° da funksiya nomi o'zgarmaydi, demak tangens tangensligicha qoladi. 180° − φ burchagi II chorakda bo'lib, u yerda tangens manfiy. Natija: tg(180° − φ) = −tg φ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-180-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#71badf9b"
+    },
+    {
+      "q": "Kran strelkasi gorizontal o'qdan 130° ga burildi, ikkinchi kranniki esa 50° ga. Strelkalar uzunligi bir xil bo'lsa, ularning uchlari yerdan bir xil balandlikda bo'ladimi?",
+      "v": [
+        "Yo'q, 130° li strelka uchi balandroq",
+        "Yo'q, 50° li strelka uchi balandroq",
+        "Ha, chunki cos 130° = cos 50°",
+        "Ha, chunki sin 130° = sin 50°"
+      ],
+      "t": 3,
+      "izoh": "Strelka uchining o'qdan balandligi strelka uzunligi bilan burilish burchagi sinusining ko'paytmasiga teng. sin 130° = sin(180° − 50°) = sin 50°, chunki 180° da nom saqlanadi va II chorakda sinus musbat. Demak balandliklar bir xil. Kosinuslar esa teng emas: cos 130° = −cos 50°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "keltirish-180-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#69dcad55"
+    },
+    {
+      "q": "sin(180° + x) ifodasini keltirish formulasi asosida yozing.",
+      "v": [
+        "sin x",
+        "cos x",
+        "−cos x",
+        "−sin x"
+      ],
+      "t": 3,
+      "izoh": "180° qo'shilganda funksiya nomi o'zgarmaydi. 180° + x burchagi III chorakda yotadi, u yerda sinus manfiy bo'ladi. Shuning uchun sin(180° + x) = −sin x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-180-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#23ab8e78"
+    },
+    {
+      "q": "ctg(180° + α) ifodasini soddalashtirganda qanday natija chiqadi?",
+      "v": [
+        "−ctg α",
+        "tg α",
+        "ctg α",
+        "−tg α"
+      ],
+      "t": 2,
+      "izoh": "180° da nom saqlanadi, ya'ni kotangens kotangensligicha qoladi. 180° + α burchagi III chorakda bo'lib, u yerda kotangens musbat. Demak ctg(180° + α) = ctg α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-180-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#dfdd2a95"
+    },
+    {
+      "q": "sin 225° ning aniq qiymatini keltirish formulasi yordamida hisoblang.",
+      "v": [
+        "√2/2",
+        "−√3/2",
+        "−√2/2",
+        "√3/2"
+      ],
+      "t": 2,
+      "izoh": "225° = 180° + 45°. sin(180° + 45°) = −sin 45°, chunki 180° nomni o'zgartirmaydi, III chorakda esa sinus manfiy. sin 45° = √2/2, demak javob −√2/2. √3/2 li variantlar tayanch burchakni 60° deb olish xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-180-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#fbb219e8"
+    },
+    {
+      "q": "Yo'lning bir qismi gorizontga nisbatan α burchak ostida ko'tariladi va tg α = 0,4 ga teng. Navigatsiya dasturi bu yo'nalishni 180° + α burchak sifatida yozib qo'ydi. Dastur ko'rsatgan burchakning tangensi nechaga teng?",
+      "v": [
+        "−0,4",
+        "0,4",
+        "2,5",
+        "−2,5"
+      ],
+      "t": 1,
+      "izoh": "tg(180° + α) = tg α, chunki 180° funksiya nomini o'zgartirmaydi va III chorakda tangens musbat bo'ladi. Demak qiymat o'zgarmaydi va 0,4 ga teng. 2,5 — tangens o'rniga kotangensni olish xatosi, chunki ctg α = 1 : 0,4 = 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "keltirish-180-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#6085e808"
+    },
+    {
+      "q": "cos(270° − t) ifodasini keltirish formulasi yordamida soddalashtiring.",
+      "v": [
+        "−sin t",
+        "sin t",
+        "cos t",
+        "−cos t"
+      ],
+      "t": 0,
+      "izoh": "270° — 90° ning toq karralisi, shuning uchun funksiya nomi almashadi: kosinus sinusga o'tadi. 270° − t burchagi III chorakda yotadi, u yerda kosinus manfiy. Demak cos(270° − t) = −sin t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-270-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#47650bb5"
+    },
+    {
+      "q": "tg(270° − β) ifodasi qaysi funksiyaga teng bo'ladi?",
+      "v": [
+        "−ctg β",
+        "ctg β",
+        "tg β",
+        "−tg β"
+      ],
+      "t": 1,
+      "izoh": "270° da nom o'zgaradi, ya'ni tangens kotangensga aylanadi. 270° − β burchagi III chorakda bo'lib, u yerda tangens musbat. Shuning uchun tg(270° − β) = ctg β.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-270-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#2b54972f"
+    },
+    {
+      "q": "cos 240° ni 270° − 30° ko'rinishida yozib, aniq qiymatini hisoblang.",
+      "v": [
+        "−√3/2",
+        "1/2",
+        "√3/2",
+        "−1/2"
+      ],
+      "t": 3,
+      "izoh": "cos(270° − 30°) da 270° nomni almashtiradi: kosinus sinusga o'tadi. 240° III chorakda yotadi, u yerda kosinus manfiy, demak cos 240° = −sin 30° = −1/2. −√3/2 — nomni almashtirmay cos 30° ni olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "keltirish-270-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#622acc57"
+    },
+    {
+      "q": "Vertolyot uchish maydonchasidan chiqib, shimoldan hisoblaganda 270° − α burchakka burildi. Uchuvchi jadvalidan sin α = 0,6 ekani ma'lum. Shu yo'nalish burchagining kosinusi nechaga teng?",
+      "v": [
+        "−0,6",
+        "0,6",
+        "−0,8",
+        "0,8"
+      ],
+      "t": 0,
+      "izoh": "cos(270° − α) = −sin α: 270° da kosinus sinusga aylanadi, III chorakda esa kosinus manfiy bo'ladi. sin α = 0,6 bo'lgani uchun natija −0,6. −0,8 — nomni almashtirgach xatosan cos α = 0,8 ni olish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "keltirish-270-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#ac54388b"
+    },
+    {
+      "q": "sin(270° + φ) ifodasini keltirish formulasi bilan yozing.",
+      "v": [
+        "cos φ",
+        "sin φ",
+        "−cos φ",
+        "−sin φ"
+      ],
+      "t": 2,
+      "izoh": "270° — 90° ning toq karralisi bo'lgani uchun sinus kosinusga almashadi. 270° + φ burchagi IV chorakda yotadi, u yerda sinus manfiy. Demak sin(270° + φ) = −cos φ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-270-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#91cf7721"
+    },
+    {
+      "q": "ctg(270° + x) ifodasi soddalashtirilganda nima hosil bo'ladi?",
+      "v": [
+        "ctg x",
+        "−ctg x",
+        "tg x",
+        "−tg x"
+      ],
+      "t": 3,
+      "izoh": "270° da kotangens tangensga aylanadi. 270° + x burchagi IV chorakda bo'lib, u yerda kotangens manfiy. Shuning uchun ctg(270° + x) = −tg x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-270-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#a11b1e5c"
+    },
+    {
+      "q": "cos 315° burchakni 270° + 45° ko'rinishida yozib, uning aniq qiymatini toping.",
+      "v": [
+        "−√2/2",
+        "−√3/2",
+        "√2/2",
+        "√3/2"
+      ],
+      "t": 2,
+      "izoh": "cos(270° + 45°) da 270° kosinusni sinusga aylantiradi. 315° IV chorakda yotadi, u yerda kosinus musbat, demak ishora saqlanadi: cos 315° = sin 45° = √2/2. Manfiy variantlar chorak ishorasini noto'g'ri olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-270-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#986da504"
+    },
+    {
+      "q": "Charxpalak o'zining boshlang'ich holatidan 270° + α burchakka burildi, bunda cos α = 0,96 ekani ma'lum. Kabinaning balandligini topish uchun sin(270° + α) qiymati kerak bo'ldi. U nechaga teng?",
+      "v": [
+        "0,96",
+        "−0,96",
+        "0,28",
+        "−0,28"
+      ],
+      "t": 1,
+      "izoh": "sin(270° + α) = −cos α, chunki 270° da sinus kosinusga aylanadi va IV chorakda sinus manfiy. cos α = 0,96 bo'lgani uchun natija −0,96. −0,28 esa sin α ning qarama-qarshi qiymati bo'lib, nomni almashtirmaslik xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "keltirish-270-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#6db3780d"
+    },
+    {
+      "q": "cos(360° − α) ifodasi keltirish formulasidan keyin qanday ko'rinishga keladi?",
+      "v": [
+        "−cos α",
+        "cos α",
+        "sin α",
+        "−sin α"
+      ],
+      "t": 1,
+      "izoh": "360° to'liq aylanish bo'lgani uchun funksiya nomi saqlanadi. 360° − α burchagi IV chorakda yotadi, u yerda kosinus musbat. Shuning uchun cos(360° − α) = cos α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-360-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#cc015135"
+    },
+    {
+      "q": "tg(360° − β) ifodasini keltirish formulasi yordamida soddalashtiring.",
+      "v": [
+        "−tg β",
+        "tg β",
+        "ctg β",
+        "−ctg β"
+      ],
+      "t": 0,
+      "izoh": "360° to'liq aylanish bo'lgani uchun funksiya nomi o'zgarmaydi. 360° − β burchagi IV chorakda yotadi, u yerda tangens manfiy. Demak tg(360° − β) = −tg β.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-360-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#6bb44227"
+    },
+    {
+      "q": "tg 300° ning aniq qiymatini 360° − 60° yoyilmasidan foydalanib hisoblang.",
+      "v": [
+        "√3/3",
+        "√3",
+        "−√3/3",
+        "−√3"
+      ],
+      "t": 3,
+      "izoh": "tg(360° − 60°) = −tg 60°, chunki 360° nomni o'zgartirmaydi va IV chorakda tangens manfiy. tg 60° = √3 bo'lgani uchun javob −√3. −√3/3 — tangens o'rniga kotangensni olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-360-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#226a56f9"
+    },
+    {
+      "q": "Charxpalak kabinasi to'liq bir aylanishni tugatishiga α burchak qolgan, ya'ni uning holati 360° − α ga to'g'ri keladi. sin α = 0,45 bo'lsa, shu holat burchagining sinusi nechaga teng?",
+      "v": [
+        "−0,45",
+        "0,45",
+        "0,55",
+        "−0,55"
+      ],
+      "t": 0,
+      "izoh": "sin(360° − α) = −sin α: 360° nomni o'zgartirmaydi, IV chorakda esa sinus manfiy. sin α = 0,45 bo'lgani uchun natija −0,45. 0,55 — qiymatni 1 dan ayirish xatosidan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "keltirish-360-ayirma",
+      "id": "matematika_trig_m04-keltirish-formulalari#245c0a32"
+    },
+    {
+      "q": "sin(−γ) ifodasi sinusning toqligi asosida qanday yoziladi?",
+      "v": [
+        "sin γ",
+        "cos γ",
+        "−cos γ",
+        "−sin γ"
+      ],
+      "t": 3,
+      "izoh": "Sinus toq funksiya, ya'ni argument ishorasi almashsa qiymat ishorasi ham almashadi. Shuning uchun sin(−γ) = −sin γ. Kosinusda esa bunday bo'lmaydi, u juft funksiya va cos(−γ) = cos γ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-burchak",
+      "id": "matematika_trig_m04-keltirish-formulalari#3f27c806"
+    },
+    {
+      "q": "ctg(−t) ifodasini kotangens funksiyasining toqligidan foydalanib soddalashtiring.",
+      "v": [
+        "ctg t",
+        "tg t",
+        "−ctg t",
+        "−tg t"
+      ],
+      "t": 2,
+      "izoh": "Kotangens toq funksiya bo'lgani uchun manfiy argumentda minus tashqariga chiqadi: ctg(−t) = −ctg t. Funksiya nomi esa o'zgarmaydi, chunki bu yerda 90° ga bog'liq keltirish bajarilmayapti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-burchak",
+      "id": "matematika_trig_m04-keltirish-formulalari#b6819861"
+    },
+    {
+      "q": "Tangensning toqligi va keltirish formulasidan foydalanib, tg(−135°) ifodasining aniq qiymatini hisoblang.",
+      "v": [
+        "1",
+        "−1",
+        "√2/2",
+        "−√2/2"
+      ],
+      "t": 0,
+      "izoh": "tg(−135°) = −tg 135°, chunki tangens toq funksiya. 135° = 180° − 45°, demak tg 135° = −tg 45° = −1. Ikki minus birlashib, natija −(−1) = 1 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-burchak",
+      "id": "matematika_trig_m04-keltirish-formulalari#45ba73dc"
+    },
+    {
+      "q": "Robot qo'li boshlang'ich holatidan soat strelkasi yo'nalishida 65° ga burildi, bu −65° burchak deb yoziladi. Dastur sin 65° ≈ 0,91 qiymatini biladi. Burilgan holat sinusi taxminan nechaga teng?",
+      "v": [
+        "−0,91",
+        "0,91",
+        "0,42",
+        "−0,42"
+      ],
+      "t": 0,
+      "izoh": "Soat strelkasi yo'nalishidagi burilish manfiy burchak bilan yoziladi, ya'ni sin(−65°) kerak. Sinus toq funksiya bo'lgani uchun sin(−65°) = −sin 65° ≈ −0,91. 0,42 — bu cos 65° ning taxminiy qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-burchak",
+      "id": "matematika_trig_m04-keltirish-formulalari#0c163089"
+    },
+    {
+      "q": "1000° burchakni 0° va 360° oralig'idagi burchakka keltiring hamda uning chorak raqamini aniqlang.",
+      "v": [
+        "640°, IV chorak",
+        "280°, III chorak",
+        "280°, IV chorak",
+        "100°, II chorak"
+      ],
+      "t": 2,
+      "izoh": "1000° dan to'liq aylanishlarni ayiramiz: 1000° − 2·360° = 1000° − 720° = 280°. 280° burchagi 270° dan katta va 360° dan kichik, demak IV chorakda yotadi. 640° faqat bitta aylanish ayirilganda chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "katta-burchakni-keltirish",
+      "id": "matematika_trig_m04-keltirish-formulalari#1457ef5a"
+    },
+    {
+      "q": "sin 750° ni hisoblash uchun burchakni avval o'tkir burchakka keltirish kerak. Natija aniq nechaga teng?",
+      "v": [
+        "1/2",
+        "−1/2",
+        "√3/2",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "750° = 2·360° + 30°. To'liq aylanishlar sinus qiymatiga ta'sir qilmaydi, chunki sinusning davri 360°. Demak sin 750° = sin 30° = 1/2. 0 javobi burchakni butunlay aylanish deb hisoblash xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "katta-burchakni-keltirish",
+      "id": "matematika_trig_m04-keltirish-formulalari#83732b81"
+    },
+    {
+      "q": "Sport g'ildiragi bir mashqda 1125° ga aylandi. Murabbiy uning oxirgi holatini 0° dan 360° gacha oraliqda yozmoqchi. Qaysi burchakni yozishi kerak?",
+      "v": [
+        "405°",
+        "315°",
+        "225°",
+        "45°"
+      ],
+      "t": 3,
+      "izoh": "1125° dan uchta to'liq aylanishni ayiramiz: 1125° − 3·360° = 1125° − 1080° = 45°. 405° faqat ikkita aylanish ayirilganda qoladi va hali kerakli oraliqda emas. 315° — aylanishni teskari yo'nalishda hisoblash, 225° esa 1125° ni beshga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "katta-burchakni-keltirish",
+      "id": "matematika_trig_m04-keltirish-formulalari#1d6f3aeb"
+    },
+    {
+      "q": "Aylanma darvoza sensori burilish burchagini −870° deb qayd etdi. Bu holatga 0° dan 360° gacha oraliqdagi qaysi burchak mos keladi?",
+      "v": [
+        "210°",
+        "−150°",
+        "150°",
+        "330°"
+      ],
+      "t": 0,
+      "izoh": "Manfiy burchakka to'liq aylanishlarni qo'shamiz: −870° + 3·360° = −870° + 1080° = 210°. Ikkita aylanish qo'shilsa −150° chiqadi, bu hali kerakli oraliqda emas, uning modulini javob deb olish ham xato. 330° esa 360° dan 30° ayirish chalkashligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "katta-burchakni-keltirish",
+      "id": "matematika_trig_m04-keltirish-formulalari#96ba0c53"
+    },
+    {
+      "q": "sin 120° + cos 180° ifodasining aniq qiymatini keltirish formulalari yordamida hisoblang.",
+      "v": [
+        "√3/2 − 1",
+        "1 − √3/2",
+        "√3/2 + 1",
+        "−√3/2 − 1"
+      ],
+      "t": 0,
+      "izoh": "sin 120° = sin(180° − 60°) = sin 60° = √3/2, chunki 180° nomni saqlaydi va II chorakda sinus musbat. cos 180° = −1. Yig'indi √3/2 − 1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniq-qiymat-hisoblash",
+      "id": "matematika_trig_m04-keltirish-formulalari#4899a7cc"
+    },
+    {
+      "q": "sin 210° · cos 300° ko'paytmasining aniq qiymatini toping.",
+      "v": [
+        "1/4",
+        "−1/4",
+        "√3/4",
+        "−√3/4"
+      ],
+      "t": 1,
+      "izoh": "sin 210° = sin(180° + 30°) = −sin 30° = −1/2, chunki III chorakda sinus manfiy. cos 300° = cos(360° − 60°) = cos 60° = 1/2. Ko'paytma: (−1/2)·(1/2) = −1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniq-qiymat-hisoblash",
+      "id": "matematika_trig_m04-keltirish-formulalari#cf3b923d"
+    },
+    {
+      "q": "Uchburchakli tomorqaning bir burchagi 135°, shu burchakni hosil qilgan tomonlari 8 m va 6 m. Yuza S = 0,5·a·b·sin C formula bilan topiladi, demak sin 135° kerak. U nechaga teng?",
+      "v": [
+        "1/2",
+        "−√2/2",
+        "√2/2",
+        "√3/2"
+      ],
+      "t": 2,
+      "izoh": "135° = 180° − 45°. sin(180° − 45°) = sin 45°, chunki 180° nomni o'zgartirmaydi va II chorakda sinus musbat. sin 45° = √2/2. −√2/2 esa II chorakda sinusni manfiy deb hisoblash xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniq-qiymat-hisoblash",
+      "id": "matematika_trig_m04-keltirish-formulalari#9da44f9b"
+    },
+    {
+      "q": "cos 480° + sin 690° yig'indisining aniq qiymatini hisoblang.",
+      "v": [
+        "0",
+        "1",
+        "−1/2",
+        "−1"
+      ],
+      "t": 3,
+      "izoh": "cos 480° = cos(360° + 120°) = cos 120° = −cos 60° = −1/2. sin 690° = sin(360° + 330°) = sin(360° − 30°) = −sin 30° = −1/2. Yig'indi −1 ga teng. 0 javobi bitta qo'shiluvchining ishorasini yo'qotishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniq-qiymat-hisoblash",
+      "id": "matematika_trig_m04-keltirish-formulalari#67c44dfc"
+    },
+    {
+      "q": "Radian o'lchovida berilgan cos(π + β) ifodasini keltirish formulasi bilan soddalashtiring.",
+      "v": [
+        "cos β",
+        "−cos β",
+        "sin β",
+        "−sin β"
+      ],
+      "t": 1,
+      "izoh": "π radian 180° ga teng, shuning uchun funksiya nomi o'zgarmaydi. π + β burchagi III chorakda yotadi, u yerda kosinus manfiy. Demak cos(π + β) = −cos β.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radian-keltirish",
+      "id": "matematika_trig_m04-keltirish-formulalari#9c8560fe"
+    },
+    {
+      "q": "sin(3π/2 − x) ifodasini soddalashtirib, to'g'ri natijani ko'rsating.",
+      "v": [
+        "−cos x",
+        "cos x",
+        "−sin x",
+        "sin x"
+      ],
+      "t": 0,
+      "izoh": "3π/2 radian 270° ga to'g'ri keladi, ya'ni funksiya nomi almashadi: sinus kosinusga o'tadi. 3π/2 − x burchagi III chorakda yotadi, u yerda sinus manfiy. Natija: −cos x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radian-keltirish",
+      "id": "matematika_trig_m04-keltirish-formulalari#dd667e41"
+    },
+    {
+      "q": "cos(5π/6) ning aniq qiymatini keltirish formulasi orqali hisoblang.",
+      "v": [
+        "√3/2",
+        "−√3/2",
+        "1/2",
+        "−√2/2"
+      ],
+      "t": 1,
+      "izoh": "5π/6 = π − π/6 deb yozamiz. cos(π − π/6) = −cos(π/6), chunki π nomni saqlaydi va II chorakda kosinus manfiy. cos(π/6) = √3/2, demak javob −√3/2. 1/2 esa sinus qiymati bilan chalkashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radian-keltirish",
+      "id": "matematika_trig_m04-keltirish-formulalari#28c34445"
+    },
+    {
+      "q": "Mayatnik tebranishining fazasi φ = 7π/6 radianga teng bo'lgan onda og'ish x = A·sin φ formula bilan topiladi. Shu fazadagi sin φ qiymati nechaga teng?",
+      "v": [
+        "1/2",
+        "−√3/2",
+        "−1/2",
+        "−√2/2"
+      ],
+      "t": 2,
+      "izoh": "7π/6 = π + π/6. sin(π + π/6) = −sin(π/6), chunki π funksiya nomini o'zgartirmaydi va III chorakda sinus manfiy. sin(π/6) = 1/2, demak natija −1/2. −√3/2 — tayanch burchak sinusi o'rniga kosinusini olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radian-keltirish",
+      "id": "matematika_trig_m04-keltirish-formulalari#a5782b9c"
+    },
+    {
+      "q": "tg(180° + α)·ctg(360° − α) ko'paytmasini soddalashtiring va natijani tanlang.",
+      "v": [
+        "1",
+        "−1",
+        "tg²α",
+        "−tg²α"
+      ],
+      "t": 1,
+      "izoh": "tg(180° + α) = tg α, chunki 180° nomni saqlaydi va III chorakda tangens musbat. ctg(360° − α) = −ctg α, chunki IV chorakda kotangens manfiy. Ko'paytma: tg α·(−ctg α) = −1, chunki tg α·ctg α = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soddalashtirish-kopaytma",
+      "id": "matematika_trig_m04-keltirish-formulalari#3f45618c"
+    },
+    {
+      "q": "cos(180° − β)·cos(360° − β) ko'paytmasi qanday ifodaga teng bo'ladi?",
+      "v": [
+        "cos²β",
+        "−sin²β",
+        "−cos²β",
+        "sin²β"
+      ],
+      "t": 2,
+      "izoh": "cos(180° − β) = −cos β, chunki II chorakda kosinus manfiy. cos(360° − β) = cos β, chunki IV chorakda kosinus musbat. Ularning ko'paytmasi (−cos β)·cos β = −cos²β.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soddalashtirish-kopaytma",
+      "id": "matematika_trig_m04-keltirish-formulalari#0512562b"
+    },
+    {
+      "q": "Fizikada bajarilgan ish A = F·s·cos(180° − γ) formula bilan hisoblanadi. Kuch F = 20 N, ko'chish s = 3 m va cos γ = 0,5 bo'lsa, ish nechaga teng?",
+      "v": [
+        "30 J",
+        "−30 J",
+        "−60 J",
+        "60 J"
+      ],
+      "t": 1,
+      "izoh": "cos(180° − γ) = −cos γ, chunki 180° da nom saqlanadi va II chorakda kosinus manfiy. cos γ = 0,5 bo'lgani uchun cos(180° − γ) = −0,5. Ish: A = 20·3·(−0,5) = −30 J, ya'ni kuch harakatga qarshilik qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soddalashtirish-kopaytma",
+      "id": "matematika_trig_m04-keltirish-formulalari#666fd5b1"
+    },
+    {
+      "q": "cos(90° + α)·ctg(180° − α)·sin(360° − α) ko'paytmasi soddalashtirilganda qanday ifoda qoladi?",
+      "v": [
+        "sin α·cos α",
+        "−sin²α",
+        "cos²α",
+        "−sin α·cos α"
+      ],
+      "t": 3,
+      "izoh": "cos(90° + α) = −sin α, ctg(180° − α) = −ctg α, sin(360° − α) = −sin α. Ko'paytma: (−sin α)·(−ctg α)·(−sin α) = −sin²α·ctg α. ctg α = cos α : sin α bo'lgani uchun natija −sin α·cos α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "soddalashtirish-kopaytma",
+      "id": "matematika_trig_m04-keltirish-formulalari#ae07bf9a"
+    },
+    {
+      "q": "sin(90° + γ) + cos(180° + γ) ifodasini soddalashtiring.",
+      "v": [
+        "2cos γ",
+        "−2cos γ",
+        "2sin γ",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "sin(90° + γ) = cos γ, chunki 90° nomni almashtiradi va II chorakda sinus musbat. cos(180° + γ) = −cos γ, chunki III chorakda kosinus manfiy. Yig'indi: cos γ − cos γ = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soddalashtirish-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#90d33c17"
+    },
+    {
+      "q": "cos(90° − t) + sin(180° − t) + sin(180° + t) yig'indisini soddalashtiring.",
+      "v": [
+        "2sin t",
+        "sin t",
+        "−sin t",
+        "3sin t"
+      ],
+      "t": 1,
+      "izoh": "cos(90° − t) = sin t, sin(180° − t) = sin t, sin(180° + t) = −sin t. Bularni qo'shsak sin t + sin t − sin t = sin t hosil bo'ladi. 3sin t javobi uchinchi haddagi minusni tashlab ketishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soddalashtirish-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#dc8ef4ad"
+    },
+    {
+      "q": "Ikki nasos suv sathini o'zgartiradi: birinchisining ta'siri sin(180° − φ) ga, ikkinchisiniki sin(360° − φ) ga proporsional. Ularning umumiy ta'siri qanday ifodaga teng bo'ladi?",
+      "v": [
+        "0",
+        "2sin φ",
+        "sin φ",
+        "−2sin φ"
+      ],
+      "t": 0,
+      "izoh": "sin(180° − φ) = sin φ, chunki II chorakda sinus musbat va nom saqlanadi. sin(360° − φ) = −sin φ, chunki IV chorakda sinus manfiy. Ikkalasining yig'indisi nolga teng, ya'ni nasoslar ta'siri o'zaro so'nadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soddalashtirish-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#eebd9039"
+    },
+    {
+      "q": "cos(270° + α) + sin(180° − α) + cos(360° − α) + sin(90° + α) ifodasini soddalashtiring.",
+      "v": [
+        "2sin α",
+        "2sin α − 2cos α",
+        "2sin α + 2cos α",
+        "sin α + cos α"
+      ],
+      "t": 2,
+      "izoh": "cos(270° + α) = sin α, sin(180° − α) = sin α, cos(360° − α) = cos α, sin(90° + α) = cos α. Hammasini qo'shsak 2sin α + 2cos α hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "soddalashtirish-yigindi",
+      "id": "matematika_trig_m04-keltirish-formulalari#1d01b94c"
+    },
+    {
+      "q": "α o'tkir burchak bo'lsa, 180° + α burchagi qaysi chorakda yotadi va uning kosinusi qanday ishoraga ega bo'ladi?",
+      "v": [
+        "II chorak, manfiy",
+        "III chorak, musbat",
+        "IV chorak, musbat",
+        "III chorak, manfiy"
+      ],
+      "t": 3,
+      "izoh": "α o'tkir bo'lgani uchun 180° dan katta va 270° dan kichik burchak hosil bo'ladi, bu esa III chorak. III chorakda kosinus ham, sinus ham manfiy, tangens esa musbat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-ishorasi",
+      "id": "matematika_trig_m04-keltirish-formulalari#2bce9860"
+    },
+    {
+      "q": "cos(270° + α) ifodasini keltirishda ishora qanday tanlanadi va nima uchun shunday bo'ladi?",
+      "v": [
+        "Manfiy, chunki 270° + α III chorakda yotadi",
+        "Musbat, chunki 270° + α IV chorakda va u yerda kosinus musbat",
+        "Musbat, chunki keltirishda ishora hech qachon o'zgarmaydi",
+        "Manfiy, chunki 270° toq marta 90° ga teng"
+      ],
+      "t": 1,
+      "izoh": "Keltirishda ishora dastlabki funksiyaning argument yotgan chorakdagi ishorasi bilan aniqlanadi. α o'tkir bo'lsa 270° + α burchagi IV chorakda yotadi, u yerda kosinus musbat. Shuning uchun cos(270° + α) = sin α, ya'ni ishora saqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chorak-ishorasi",
+      "id": "matematika_trig_m04-keltirish-formulalari#29301864"
+    },
+    {
+      "q": "100°, 170°, 200°, 80° burchaklaridan qaysi birining sinusi manfiy qiymatga ega?",
+      "v": [
+        "100°",
+        "80°",
+        "200°",
+        "170°"
+      ],
+      "t": 2,
+      "izoh": "Sinus I va II chorakda musbat, III va IV chorakda manfiy. 80°, 100° va 170° burchaklari birinchi hamda ikkinchi chorakda yotadi, ularning sinusi musbat. 200° esa III chorakda, demak sin 200° = −sin 20° manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chorak-ishorasi",
+      "id": "matematika_trig_m04-keltirish-formulalari#acd7d0bc"
+    },
+    {
+      "q": "Meteorologiya modelida shamol yo'nalishi burchagi 250° ni tashkil etdi va formulada shu burchakning tangensi ishlatiladi. Uning ishorasi qanday va nega shunday?",
+      "v": [
+        "Musbat, chunki 250° III chorakda va u yerda tangens musbat",
+        "Manfiy, chunki 250° III chorakda va u yerda tangens manfiy",
+        "Musbat, chunki 250° IV chorakda yotadi",
+        "Manfiy, chunki burchak 180° dan katta"
+      ],
+      "t": 0,
+      "izoh": "250° = 180° + 70°, demak burchak III chorakda yotadi. III chorakda sinus ham, kosinus ham manfiy, ularning nisbati esa musbat bo'ladi: tg 250° = tg 70°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chorak-ishorasi",
+      "id": "matematika_trig_m04-keltirish-formulalari#eea1ec64"
+    },
+    {
+      "q": "Keltirish formulalarida funksiya nomi qaysi hollarda o'zgaradi? To'g'ri qoidani tanlang.",
+      "v": [
+        "Argumentda 180° yoki 360° qatnashganda",
+        "Har doim o'zgaradi",
+        "Faqat burchak manfiy bo'lganda",
+        "Argumentda 90° yoki 270° qatnashganda"
+      ],
+      "t": 3,
+      "izoh": "Funksiya nomi argumentdagi burchak 90° ning toq karralisi bo'lganda, ya'ni 90° va 270° da almashadi. 180° hamda 360° juft karrali bo'lgani uchun nom saqlanib qoladi, faqat ishora tekshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "funksiya-nomi-qoidasi",
+      "id": "matematika_trig_m04-keltirish-formulalari#1a36818f"
+    },
+    {
+      "q": "Quyidagi keltirishlardan qaysi birida funksiya nomi o'zgarmaydi: sin(90° + α), cos(270° − α), tg(180° + α), ctg(90° − α)?",
+      "v": [
+        "tg(180° + α)",
+        "sin(90° + α)",
+        "cos(270° − α)",
+        "ctg(90° − α)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi, ikkinchi va to'rtinchi ifodalarda argumentda 90° ning toq karralisi turibdi, shuning uchun nom albatta almashadi. tg(180° + α) da esa 180° juft karrali, nom o'zgarmaydi va tg α hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "funksiya-nomi-qoidasi",
+      "id": "matematika_trig_m04-keltirish-formulalari#0a94910e"
+    },
+    {
+      "q": "O'quvchi sin(270° − α) = −sin α deb yozdi. Uning yechimida qanday xato bor?",
+      "v": [
+        "Ishora noto'g'ri, to'g'ri javob sin α",
+        "Xato yo'q, yozuv to'g'ri",
+        "Funksiya nomi almashtirilmagan, to'g'ri javob −cos α",
+        "Chorak noto'g'ri aniqlangan, to'g'ri javob cos α"
+      ],
+      "t": 2,
+      "izoh": "270° — 90° ning toq karralisi, shuning uchun sinus albatta kosinusga aylanadi. 270° − α burchagi III chorakda yotadi, u yerda sinus manfiy. Demak sin(270° − α) = −cos α, o'quvchi esa nomni almashtirishni unutgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "funksiya-nomi-qoidasi",
+      "id": "matematika_trig_m04-keltirish-formulalari#f6f56dfa"
+    },
+    {
+      "q": "n butun son bo'lsin. sin(90°·n + α) ifodasida funksiya nomi qachon kosinusga aylanadi?",
+      "v": [
+        "n toq bo'lganda",
+        "n juft bo'lganda",
+        "n manfiy bo'lganda",
+        "har qanday n da"
+      ],
+      "t": 0,
+      "izoh": "Nom faqat argumentdagi burchak 90° ning toq karralisi bo'lganda almashadi. 90°·n toq karrali bo'lishi uchun n toq bo'lishi kerak: n = 1 da 90° + α, n = 3 da 270° + α. n juft bo'lganda 180° yoki 360° hosil bo'ladi va nom saqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "funksiya-nomi-qoidasi",
+      "id": "matematika_trig_m04-keltirish-formulalari#df424ecd"
+    },
+    {
+      "q": "sin²(90° + α) + sin²(180° + α) ifodasini soddalashtiring va natijani ko'rsating.",
+      "v": [
+        "0",
+        "2sin²α",
+        "2cos²α",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "sin(90° + α) = cos α, demak birinchi qo'shiluvchi cos²α. sin(180° + α) = −sin α, kvadratga ko'tarilganda minus yo'qoladi va sin²α qoladi. Asosiy ayniyat bo'yicha cos²α + sin²α = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "keltirish-va-asosiy-ayniyat",
+      "id": "matematika_trig_m04-keltirish-formulalari#41537e76"
+    },
+    {
+      "q": "cos(90° − β) = 0,6 va β o'tkir burchak ekani ma'lum. cos(180° − β) qiymatini toping.",
+      "v": [
+        "0,8",
+        "−0,6",
+        "0,6",
+        "−0,8"
+      ],
+      "t": 3,
+      "izoh": "cos(90° − β) = sin β, demak sin β = 0,6. β o'tkir bo'lgani uchun cos β = √(1 − 0,36) = 0,8. cos(180° − β) = −cos β = −0,8, chunki II chorakda kosinus manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "keltirish-va-asosiy-ayniyat",
+      "id": "matematika_trig_m04-keltirish-formulalari#a55755a3"
+    },
+    {
+      "q": "Do'kon tomining qiyaligi α bo'lib, tg α = 3/4 ga teng. Loyihachi hisobda tg(180° − α) va ctg(90° + α) qiymatlari kerakligini aytdi. Bu ikkala qiymat qanday?",
+      "v": [
+        "Birinchisi −3/4, ikkinchisi 3/4",
+        "Ikkalasi ham 3/4 ga teng",
+        "Birinchisi 3/4, ikkinchisi −4/3",
+        "Ikkalasi ham −3/4 ga teng"
+      ],
+      "t": 3,
+      "izoh": "tg(180° − α) = −tg α = −3/4, chunki 180° nomni saqlaydi va II chorakda tangens manfiy. ctg(90° + α) = −tg α, chunki 90° da kotangens tangensga aylanadi va II chorakda kotangens manfiy. Demak ikkala ifoda ham −3/4 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "keltirish-va-asosiy-ayniyat",
+      "id": "matematika_trig_m04-keltirish-formulalari#4c200ef3"
+    },
+    {
+      "q": "tg(90° + α)·tg(180° − α) ko'paytmasini soddalashtiring, bunda α o'tkir burchak.",
+      "v": [
+        "−1",
+        "tg²α",
+        "1",
+        "ctg²α"
+      ],
+      "t": 2,
+      "izoh": "tg(90° + α) = −ctg α, chunki 90° da nom almashadi va II chorakda tangens manfiy. tg(180° − α) = −tg α. Ko'paytma: (−ctg α)·(−tg α) = ctg α·tg α = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "keltirish-va-asosiy-ayniyat",
+      "id": "matematika_trig_m04-keltirish-formulalari#61bcc106"
+    },
+    {
+      "q": "tg(90° + γ) ifodasini keltirish formulasi yordamida soddalashtiring.",
+      "v": [
+        "ctg γ",
+        "−ctg γ",
+        "tg γ",
+        "−tg γ"
+      ],
+      "t": 1,
+      "izoh": "90° argumentda turgani uchun tangens kotangensga aylanadi. 90° + γ burchagi II chorakda yotadi, u yerda tangens manfiy bo'ladi. Demak tg(90° + γ) = −ctg γ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg-ctg-keltirish",
+      "id": "matematika_trig_m04-keltirish-formulalari#ad2cf49a"
+    },
+    {
+      "q": "ctg(180° − α) ifodasi soddalashtirilganda qaysi natija hosil bo'ladi?",
+      "v": [
+        "ctg α",
+        "−ctg α",
+        "tg α",
+        "−tg α"
+      ],
+      "t": 1,
+      "izoh": "180° juft karrali bo'lgani uchun kotangens nomi saqlanadi. 180° − α burchagi II chorakda yotadi, u yerda kotangens manfiy. Shuning uchun ctg(180° − α) = −ctg α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg-ctg-keltirish",
+      "id": "matematika_trig_m04-keltirish-formulalari#88df745c"
+    },
+    {
+      "q": "ctg 300° ning aniq qiymatini keltirish formulasi orqali toping.",
+      "v": [
+        "√3/3",
+        "−√3",
+        "√3",
+        "−√3/3"
+      ],
+      "t": 3,
+      "izoh": "300° = 360° − 60°. ctg(360° − 60°) = −ctg 60°, chunki 360° nomni saqlaydi va IV chorakda kotangens manfiy. ctg 60° = √3/3 bo'lgani uchun natija −√3/3. −√3 esa kotangens o'rniga tangensni olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tg-ctg-keltirish",
+      "id": "matematika_trig_m04-keltirish-formulalari#23d1a766"
+    },
+    {
+      "q": "Tog' yo'lining pastga tushish qismi navigatorda 360° − α burchak bilan belgilangan va ctg α = 2,5 ga teng. Shu belgidagi burchakning kotangensi nechaga teng?",
+      "v": [
+        "2,5",
+        "−2,5",
+        "0,4",
+        "−0,4"
+      ],
+      "t": 1,
+      "izoh": "ctg(360° − α) = −ctg α, chunki 360° funksiya nomini o'zgartirmaydi va IV chorakda kotangens manfiy. ctg α = 2,5 bo'lgani uchun natija −2,5. 0,4 esa tg α ning qiymati bo'lib, nomni chalkashtirish xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-ctg-keltirish",
+      "id": "matematika_trig_m04-keltirish-formulalari#ea9fb6c5"
+    },
+    {
+      "q": "sin α = 0,35 va α o'tkir burchak. Shu ma'lumotga ko'ra sin(180° − α) qiymatini hisoblang va to'g'ri variantni tanlang.",
+      "v": [
+        "0,35",
+        "−0,35",
+        "0,65",
+        "−0,65"
+      ],
+      "t": 0,
+      "izoh": "sin(180° − α) = sin α, chunki 180° nomni o'zgartirmaydi va II chorakda sinus musbat. Demak qiymat o'zgarmasdan 0,35 bo'lib qoladi. 0,65 — qiymatni 1 dan ayirish xatosining natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatdan-boshqa-burchakka",
+      "id": "matematika_trig_m04-keltirish-formulalari#0dcf9621"
+    },
+    {
+      "q": "cos φ = −0,7 bo'lsa, cos(180° + φ) ifodasining qiymati nechaga teng bo'ladi?",
+      "v": [
+        "−0,7",
+        "0,3",
+        "−0,3",
+        "0,7"
+      ],
+      "t": 3,
+      "izoh": "cos(180° + φ) = −cos φ, chunki 180° nomni saqlaydi va III chorakda kosinus manfiy bo'ladi. cos φ = −0,7 bo'lgani uchun natija −(−0,7) = 0,7. 0,3 esa 1 dan ayirish chalkashligidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatdan-boshqa-burchakka",
+      "id": "matematika_trig_m04-keltirish-formulalari#65300c21"
+    },
+    {
+      "q": "Uy tomidagi quyosh panelining og'ish burchagi α uchun tg α = 1,25 ekani ma'lum. Muhandis hisobda ctg(270° + α) qiymatini ishlatdi. Bu qiymat nechaga teng?",
+      "v": [
+        "−1,25",
+        "1,25",
+        "0,8",
+        "−0,8"
+      ],
+      "t": 0,
+      "izoh": "270° da kotangens tangensga aylanadi, 270° + α burchagi esa IV chorakda yotadi va u yerda kotangens manfiy. Demak ctg(270° + α) = −tg α = −1,25. 0,8 esa ctg α ning qiymati bo'lib, nomni almashtirmaslik xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatdan-boshqa-burchakka",
+      "id": "matematika_trig_m04-keltirish-formulalari#1054f115"
+    },
+    {
+      "q": "tg x = 3 bo'lsa, tg(180° − x) + ctg(90° + x) ifodasining qiymatini hisoblang.",
+      "v": [
+        "6",
+        "−6",
+        "0",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "tg(180° − x) = −tg x = −3, chunki II chorakda tangens manfiy. ctg(90° + x) = −tg x = −3, chunki 90° da kotangens tangensga aylanadi va II chorakda kotangens manfiy. Yig'indi: −3 + (−3) = −6. 0 javobi ikkinchi hadni ctg x deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatdan-boshqa-burchakka",
+      "id": "matematika_trig_m04-keltirish-formulalari#eb4697f8"
+    },
+    {
+      "q": "Charxpalak markazi yerdan 20 m balandlikda, radiusi 15 m. Kabina balandligi h = 20 + 15·sin β formula bilan topiladi. β = 150° bo'lganda kabina qanday balandlikda bo'ladi?",
+      "v": [
+        "12,5 m",
+        "35 m",
+        "27,5 m",
+        "20 m"
+      ],
+      "t": 2,
+      "izoh": "sin 150° = sin(180° − 30°) = sin 30° = 0,5, chunki 180° nomni saqlaydi va II chorakda sinus musbat. Demak h = 20 + 15·0,5 = 20 + 7,5 = 27,5 m. 12,5 m — sinusni manfiy deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-aylanma-harakat",
+      "id": "matematika_trig_m04-keltirish-formulalari#0005dc7b"
+    },
+    {
+      "q": "Suv g'ildiragidagi belgi boshlang'ich nuqtadan 200° ga burildi va uning gorizontal siljishi 4·cos 200° metrga teng. cos 20° ≈ 0,94 bo'lsa, siljish taxminan nechaga teng?",
+      "v": [
+        "−3,76",
+        "3,76",
+        "−0,94",
+        "0,94"
+      ],
+      "t": 0,
+      "izoh": "200° = 180° + 20°, demak cos 200° = −cos 20° ≈ −0,94, chunki III chorakda kosinus manfiy. Siljish: 4·(−0,94) = −3,76 m. Minus belgining boshlang'ich yo'nalishga qarama-qarshi tomonda ekanini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-aylanma-harakat",
+      "id": "matematika_trig_m04-keltirish-formulalari#fec21ae9"
+    },
+    {
+      "q": "Shamol generatorining parragi 400° ga burildi va parrak uchining balandligi h = 30 + 12·sin 400° ga teng. sin 40° ≈ 0,64 bo'lsa, balandlikni hisoblang.",
+      "v": [
+        "22,32 m",
+        "37,68 m",
+        "42 m",
+        "30 m"
+      ],
+      "t": 1,
+      "izoh": "400° = 360° + 40°, to'liq aylanish sinusni o'zgartirmaydi, demak sin 400° = sin 40° ≈ 0,64. Balandlik: h = 30 + 12·0,64 = 30 + 7,68 = 37,68 m. 30 m javobi burchakni butun aylanish deb hisoblashdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-aylanma-harakat",
+      "id": "matematika_trig_m04-keltirish-formulalari#eb894559"
+    },
+    {
+      "q": "Aylanma eshik sensori burchakni 480° deb yozdi, lekin dastur faqat 0° dan 360° gacha qiymatni qabul qiladi. Dasturga qaysi burchak kiritiladi va uning sinusi qanday ishoraga ega?",
+      "v": [
+        "240°, sinusi manfiy",
+        "60°, sinusi musbat",
+        "120°, sinusi manfiy",
+        "120°, sinusi musbat"
+      ],
+      "t": 3,
+      "izoh": "480° − 360° = 120°, chunki bitta to'liq aylanish qiymatlarni o'zgartirmaydi. 120° II chorakda yotadi, u yerda sinus musbat: sin 120° = sin(180° − 60°) = sin 60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-aylanma-harakat",
+      "id": "matematika_trig_m04-keltirish-formulalari#9adc04b4"
+    },
+    {
+      "q": "Soat mili 12 raqamidan boshlab 210° ga burildi. Milning uchi gorizontal yo'nalishda qancha siljiganini topish uchun sin 210° kerak. U nechaga teng?",
+      "v": [
+        "−0,5",
+        "0,5",
+        "−0,87",
+        "0,87"
+      ],
+      "t": 0,
+      "izoh": "210° = 180° + 30°, demak sin 210° = −sin 30° = −0,5, chunki III chorakda sinus manfiy. −0,87 — sinus o'rniga kosinus jadval qiymatini olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-soat-strelkasi",
+      "id": "matematika_trig_m04-keltirish-formulalari#2eb1e832"
+    },
+    {
+      "q": "Devor soatining daqiqa mili 45 daqiqada 270° ga buriladi. Shu holat uchun cos 270° − sin 270° ifodasining qiymatini toping.",
+      "v": [
+        "−1",
+        "1",
+        "0",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "270° burchagi koordinata o'qida yotadi: cos 270° = 0 va sin 270° = −1. Demak ifoda 0 − (−1) = 1 ga teng. −1 javobi sinusni musbat deb olish, 2 esa kosinusni 1 deb olish xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-soat-strelkasi",
+      "id": "matematika_trig_m04-keltirish-formulalari#c9378ee1"
+    },
+    {
+      "q": "Soat aynan 4 ni ko'rsatganda soat va daqiqa millari orasidagi burchak 120° ni tashkil etadi. Shu burchak kosinusining aniq qiymatini toping.",
+      "v": [
+        "1/2",
+        "−√3/2",
+        "−1/2",
+        "√2/2"
+      ],
+      "t": 2,
+      "izoh": "120° = 180° − 60°, demak cos 120° = −cos 60° = −1/2, chunki 180° nomni saqlaydi va II chorakda kosinus manfiy. −√3/2 esa tayanch burchakni 30° deb olish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-soat-strelkasi",
+      "id": "matematika_trig_m04-keltirish-formulalari#1456eddc"
+    },
+    {
+      "q": "Sekund mili bir daqiqada 360° aylanadi. Laborant 80 sekunddan keyingi holat uchun sin 480° qiymatini so'radi. Bu qiymat nechaga teng?",
+      "v": [
+        "√3/2",
+        "1/2",
+        "−√3/2",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "80 sekundda mil 480° ga aylanadi. 480° = 360° + 120°, to'liq aylanish sinusni o'zgartirmaydi: sin 480° = sin 120° = sin(180° − 60°) = sin 60° = √3/2. 0 javobi aylanishni butunlay yo'q deb hisoblashdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-soat-strelkasi",
+      "id": "matematika_trig_m04-keltirish-formulalari#7fc922b2"
+    },
+    {
+      "q": "Dengizchi kompasda 150° yo'nalishni tanladi va kemaning shimolga siljishi cos 150° ga proporsional. Bu ko'paytuvchining ishorasi hamda qiymati qanday?",
+      "v": [
+        "Manfiy, −√3/2",
+        "Musbat, √3/2",
+        "Manfiy, −1/2",
+        "Musbat, 1/2"
+      ],
+      "t": 0,
+      "izoh": "150° = 180° − 30°, demak cos 150° = −cos 30° = −√3/2. Ishora manfiy, chunki II chorakda kosinus manfiy — kema aslida janubga siljiydi. −1/2 esa sin 150° qiymatini olib, unga minus qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-kompas-yonalish",
+      "id": "matematika_trig_m04-keltirish-formulalari#f666e0df"
+    },
+    {
+      "q": "Samolyot 300° yo'nalishda uchmoqda va uning sharqqa qarab tezlik tashkil etuvchisi 500·sin 300° ga teng. sin 60° ≈ 0,87 bo'lsa, bu tashkil etuvchi taxminan nechaga teng?",
+      "v": [
+        "435",
+        "−435",
+        "250",
+        "−250"
+      ],
+      "t": 1,
+      "izoh": "300° = 360° − 60°, demak sin 300° = −sin 60° ≈ −0,87, chunki IV chorakda sinus manfiy. Tashkil etuvchi: 500·(−0,87) = −435, ya'ni samolyot sharqqa emas, g'arbga siljiydi. 250 li javoblar tayanch burchakni 30° deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-kompas-yonalish",
+      "id": "matematika_trig_m04-keltirish-formulalari#3233b015"
+    },
+    {
+      "q": "Turistlar guruhi kompas bo'yicha 225° yo'nalishda 12 km yurdi. Yo'lning shimoliy tashkil etuvchisi 12·cos 225° ga teng. Uning aniq qiymatini toping.",
+      "v": [
+        "6√2 km",
+        "−6 km",
+        "−6√2 km",
+        "−6√3 km"
+      ],
+      "t": 2,
+      "izoh": "225° = 180° + 45°, demak cos 225° = −cos 45° = −√2/2, chunki III chorakda kosinus manfiy. Tashkil etuvchi: 12·(−√2/2) = −6√2 km, ya'ni harakat janubga yo'nalgan. −6 km javobi cos 45° o'rniga cos 60° ni olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-kompas-yonalish",
+      "id": "matematika_trig_m04-keltirish-formulalari#7a7b8803"
+    },
+    {
+      "q": "Ikki qayiq bitta nuqtadan suzib ketdi: biri 40°, ikkinchisi 140° yo'nalishda. Ularning sharqqa siljishlari sin 40° va sin 140° ga proporsional. To'g'ri xulosani tanlang.",
+      "v": [
+        "Birinchi qayiqniki katta",
+        "Ikkinchi qayiqniki katta",
+        "Ikkinchisiniki manfiy",
+        "Sharqqa siljishlari teng"
+      ],
+      "t": 3,
+      "izoh": "sin 140° = sin(180° − 40°) = sin 40°, chunki 180° nomni saqlaydi va II chorakda sinus musbat. Demak ikkala qayiqning sharqqa siljishi bir xil. Shimolga siljishlari esa qarama-qarshi, chunki cos 140° = −cos 40°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-kompas-yonalish",
+      "id": "matematika_trig_m04-keltirish-formulalari#e280b57f"
+    },
+    {
+      "q": "O'zgaruvchan tok kuchi i = 5·sin φ formulasi bilan beriladi. Faza φ = 210° bo'lgan onda tok kuchi nechaga teng?",
+      "v": [
+        "−2,5 A",
+        "2,5 A",
+        "−4,33 A",
+        "5 A"
+      ],
+      "t": 0,
+      "izoh": "sin 210° = sin(180° + 30°) = −sin 30° = −0,5, chunki III chorakda sinus manfiy. Demak i = 5·(−0,5) = −2,5 A. Minus tok yo'nalishi teskari ekanini bildiradi, −4,33 A esa sin 60° ni olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-tebranish",
+      "id": "matematika_trig_m04-keltirish-formulalari#c00ffcfc"
+    },
+    {
+      "q": "Prujinaga osilgan yukning og'ishi x = 8·cos t formulasi bilan tasvirlanadi. t = 180° + 60° bo'lgan paytda og'ish nechaga teng?",
+      "v": [
+        "4 sm",
+        "−4 sm",
+        "−6,93 sm",
+        "8 sm"
+      ],
+      "t": 1,
+      "izoh": "cos(180° + 60°) = −cos 60° = −0,5, chunki 180° nomni saqlaydi va III chorakda kosinus manfiy. Og'ish: x = 8·(−0,5) = −4 sm, ya'ni yuk muvozanatdan pastga siljigan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-tebranish",
+      "id": "matematika_trig_m04-keltirish-formulalari#d105c81f"
+    },
+    {
+      "q": "Tovush to'lqinining bosimi p = 3·sin(90° + α) ko'rinishida yozilgan. Muhandis uni kosinus orqali yozmoqchi. Qaysi ifoda to'g'ri bo'ladi?",
+      "v": [
+        "p = −3·cos α",
+        "p = 3·sin α",
+        "p = 3·cos α",
+        "p = −3·sin α"
+      ],
+      "t": 2,
+      "izoh": "sin(90° + α) = cos α, chunki 90° da sinus kosinusga aylanadi va II chorakda sinus musbat bo'lgani uchun ishora saqlanadi. Demak p = 3·cos α, ya'ni bosim tebranishi kosinus qonuni bilan ham yozilishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-tebranish",
+      "id": "matematika_trig_m04-keltirish-formulalari#9085a7d7"
+    },
+    {
+      "q": "Ikki generator kuchlanishi u₁ = 10·sin(180° − t) va u₂ = 10·sin(180° + t) formulalari bilan berilgan. Ularning yig'indisi qanday bo'ladi?",
+      "v": [
+        "0",
+        "20·sin t",
+        "−20·sin t",
+        "10·sin t"
+      ],
+      "t": 0,
+      "izoh": "sin(180° − t) = sin t va sin(180° + t) = −sin t, chunki 180° nomni saqlaydi, II chorakda sinus musbat, III chorakda manfiy. Yig'indi: 10·sin t − 10·sin t = 0, ya'ni generatorlar bir-birining ta'sirini so'ndiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-tebranish",
+      "id": "matematika_trig_m04-keltirish-formulalari#b1a5cd88"
+    },
+    {
+      "q": "sin(90° + x) = 0,5 tenglamasini 0° dan 90° gacha oraliqda yeching.",
+      "v": [
+        "30°",
+        "60°",
+        "150°",
+        "120°"
+      ],
+      "t": 1,
+      "izoh": "sin(90° + x) = cos x, chunki 90° da nom almashadi va II chorakda sinus musbat. Demak cos x = 0,5 va berilgan oraliqda x = 60°. 30° javobi nomni almashtirmay sin x = 0,5 deb yechishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "keltirish-orqali-tenglama",
+      "id": "matematika_trig_m04-keltirish-formulalari#792dd519"
+    },
+    {
+      "q": "cos(180° − x) = −0,75 tenglamasidan cos x ning qiymatini aniqlang.",
+      "v": [
+        "0,75",
+        "−0,75",
+        "0,25",
+        "−0,25"
+      ],
+      "t": 0,
+      "izoh": "cos(180° − x) = −cos x, chunki 180° nomni saqlaydi va II chorakda kosinus manfiy. Tenglama −cos x = −0,75 ko'rinishga keladi, bundan cos x = 0,75. −0,75 javobi ishorani o'zgartirmaslik xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "keltirish-orqali-tenglama",
+      "id": "matematika_trig_m04-keltirish-formulalari#ab5be334"
+    },
+    {
+      "q": "tg(180° + x) = 1 tenglamasining 0° dan 90° gacha oraliqdagi yechimini toping.",
+      "v": [
+        "135°",
+        "30°",
+        "45°",
+        "60°"
+      ],
+      "t": 2,
+      "izoh": "tg(180° + x) = tg x, chunki 180° nomni o'zgartirmaydi va III chorakda tangens musbat. Demak tg x = 1 va berilgan oraliqda x = 45°. 135° esa oraliqdan tashqarida yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "keltirish-orqali-tenglama",
+      "id": "matematika_trig_m04-keltirish-formulalari#7b6bf167"
+    },
+    {
+      "q": "Ferma egasi suv burg'usi burchagini cos(270° + α) = 0,6 shart bajariladigan qilib tanladi. α o'tkir burchak bo'lsa, cos α nechaga teng?",
+      "v": [
+        "0,6",
+        "0,4",
+        "−0,8",
+        "0,8"
+      ],
+      "t": 3,
+      "izoh": "cos(270° + α) = sin α, chunki 270° da nom almashadi va IV chorakda kosinus musbat. Demak sin α = 0,6. α o'tkir bo'lgani uchun cos α = √(1 − 0,36) = 0,8. 0,6 javobi keltirishni bajarmay, qiymatni to'g'ridan-to'g'ri kosinusga bog'lashdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "keltirish-orqali-tenglama",
+      "id": "matematika_trig_m04-keltirish-formulalari#d356d083"
+    },
+    {
+      "q": "140°, 220°, 320°, 230° burchaklaridan qaysi birining sinusi sin 40° ga teng?",
+      "v": [
+        "140°",
+        "220°",
+        "320°",
+        "230°"
+      ],
+      "t": 0,
+      "izoh": "sin(180° − 40°) = sin 40°, demak sin 140° = sin 40°. sin 220° = −sin 40° va sin 320° = −sin 40°, ular manfiy. sin 230° esa −sin 50° ga teng, u ham mos kelmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-qiymatli-burchak",
+      "id": "matematika_trig_m04-keltirish-formulalari#f60e6c3a"
+    },
+    {
+      "q": "cos 310° qiymatiga teng bo'lgan burchakni ko'rsating: 50°, 130°, 230°, 250° orasidan tanlang.",
+      "v": [
+        "130°",
+        "50°",
+        "230°",
+        "250°"
+      ],
+      "t": 1,
+      "izoh": "cos(360° − 50°) = cos 50°, chunki 360° nomni saqlaydi va IV chorakda kosinus musbat. Demak cos 310° = cos 50°. 130° va 230° burchaklarining kosinusi esa −cos 50° ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-qiymatli-burchak",
+      "id": "matematika_trig_m04-keltirish-formulalari#2fa1ef88"
+    },
+    {
+      "q": "Bog'bon daraxtga yorug'lik 160° burchak ostida, hamkasbi esa 20° burchak ostida tushishini o'lchadi. Ikkala o'lchovda sinus qiymati bir xil chiqdi. Buning sababi nima?",
+      "v": [
+        "sinus juft funksiya bo'lgani uchun",
+        "160° va 20° bitta chorakda yotgani uchun",
+        "sin(180° − 20°) = sin 20° bo'lgani uchun",
+        "sinusning davri 180° bo'lgani uchun"
+      ],
+      "t": 2,
+      "izoh": "160° = 180° − 20° ko'rinishida yoziladi. 180° funksiya nomini o'zgartirmaydi, II chorakda esa sinus musbat, shuning uchun sin 160° = sin 20°. Sinus toq funksiya va uning davri 360°, demak qolgan izohlar noto'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-qiymatli-burchak",
+      "id": "matematika_trig_m04-keltirish-formulalari#690192cf"
+    },
+    {
+      "q": "tg 200° qiymatiga teng ifodani toping: tg 20°, −tg 20°, ctg 20°, −ctg 20° orasidan tanlang.",
+      "v": [
+        "tg 20°",
+        "−tg 20°",
+        "ctg 20°",
+        "−ctg 20°"
+      ],
+      "t": 0,
+      "izoh": "200° = 180° + 20° deb yozamiz. 180° funksiya nomini o'zgartirmaydi, III chorakda esa tangens musbat. Shuning uchun tg 200° = tg 20°. Nom almashishi faqat 90° va 270° qatnashganda yuz beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-qiymatli-burchak",
+      "id": "matematika_trig_m04-keltirish-formulalari#3cef9be1"
+    },
+    {
+      "q": "sin(90° + α) + sin(180° + α) + sin(270° + α) + sin(360° + α) yig'indisini soddalashtiring.",
+      "v": [
+        "0",
+        "2cos α",
+        "2sin α",
+        "−2sin α"
+      ],
+      "t": 0,
+      "izoh": "sin(90° + α) = cos α, sin(180° + α) = −sin α, sin(270° + α) = −cos α, sin(360° + α) = sin α. Ularni qo'shsak cos α − sin α − cos α + sin α = 0 hosil bo'ladi, ya'ni to'rt hol bir-birini yo'qotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumlashgan-tahlil",
+      "id": "matematika_trig_m04-keltirish-formulalari#fc980be8"
+    },
+    {
+      "q": "sin(180° − α)·cos(270° + α) − cos(360° − α)·sin(90° + α) ifodasini soddalashtiring.",
+      "v": [
+        "cos²α − sin²α",
+        "sin²α − cos²α",
+        "1",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "sin(180° − α) = sin α va cos(270° + α) = sin α, demak birinchi ko'paytma sin²α. cos(360° − α) = cos α va sin(90° + α) = cos α, demak ikkinchi ko'paytma cos²α. Ayirma sin²α − cos²α ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumlashgan-tahlil",
+      "id": "matematika_trig_m04-keltirish-formulalari#b8f048ff"
+    },
+    {
+      "q": "n juft son bo'lganda cos(180°·n + φ) ifodasi nimaga teng bo'ladi?",
+      "v": [
+        "cos φ",
+        "−cos φ",
+        "sin φ",
+        "−sin φ"
+      ],
+      "t": 0,
+      "izoh": "n juft bo'lsa 180°·n to'liq aylanishlarning karralisiga aylanadi: n = 2 da 360°, n = 4 da 720°. To'liq aylanishlar kosinusni o'zgartirmaydi, shuning uchun cos(180°·n + φ) = cos φ. n toq bo'lganda esa natija −cos φ bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumlashgan-tahlil",
+      "id": "matematika_trig_m04-keltirish-formulalari#b6c30b0d"
+    },
+    {
+      "q": "O'quvchi ixtiyoriy o'tkir α uchun sin(90° + α) + cos(90° + α) ifodasi doim musbat deb da'vo qildi. Bu da'vo to'g'rimi?",
+      "v": [
+        "Yo'q, ifoda cos α − sin α ga teng va α = 60° da manfiy",
+        "Ha, chunki ikkala qo'shiluvchi ham musbat",
+        "Ha, chunki ifoda doim 1 ga teng",
+        "Yo'q, chunki ifoda doim manfiy"
+      ],
+      "t": 0,
+      "izoh": "sin(90° + α) = cos α va cos(90° + α) = −sin α, demak ifoda cos α − sin α ga teng. α = 30° da u musbat, lekin α = 60° da cos 60° − sin 60° = 0,5 − 0,87 manfiy chiqadi. Demak da'vo noto'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumlashgan-tahlil",
+      "id": "matematika_trig_m04-keltirish-formulalari#162c32f4"
+    }
+  ]
+}

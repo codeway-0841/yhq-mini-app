@@ -1,0 +1,456 @@
+{
+  "nom": "24-mavzu. Issiqlik Jarayonlarining Qaytmasligi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Qaytar jarayon deb qanday jarayonga aytiladi?",
+      "v": [
+        "Sistemada jarayon avvaliga bir yo'nalishda, so'ngra unga teskari yo'nalishda sodir bo'lib, u o'zining boshlang'ich holatiga qaytib kelganda tashqi muhitda hech qanday o'zgarish sodir bo'lmasa, bunday jarayon qaytar jarayon deyiladi",
+        "Sistema o'z holatidan chiqarilganda u boshlang'ich holatiga qaytmasa, bunday jarayon qaytar jarayon deyiladi",
+        "Faqat issiqlik uzatish bilan boradigan jarayon",
+        "Faqat gaz kengayishi bilan boradigan jarayon"
+      ],
+      "t": 0,
+      "izoh": "Qaytar jarayon ta'rifi: sistema boshlang'ich holatiga qaytib, tashqi muhitda o'zgarish bo'lmasligi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#fbd051ab"
+    },
+    {
+      "q": "Qaytmas jarayon deb qanday jarayonga aytiladi?",
+      "v": [
+        "Sistemada jarayon sodir bo'lib, o'z holatidan chiqarilganda u o'z-o'zidan yoki tashqi muhitda biror o'zgarish sodir qilmay, boshlang'ich holatiga qaytmasa, bunday jarayon qaytmas jarayon deyiladi",
+        "Sistema boshlang'ich holatiga o'z-o'zidan qaytadigan jarayon",
+        "Tashqi muhitda o'zgarish qilmaydigan jarayon",
+        "Faqat mexanik tebranishlardan iborat jarayon"
+      ],
+      "t": 0,
+      "izoh": "Qaytmas jarayon — sistema boshlang'ich holatiga o'z-o'zidan qaytmaydigan jarayon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#5e247493"
+    },
+    {
+      "q": "Tabiatdagi jarayonlar qanday yo'nalishda sodir bo'ladi?",
+      "v": [
+        "Faqat tayinli bir yo'nalishda; ular o'z-o'zidan teskari yo'nalishda sodir bo'la olmaydi",
+        "Har qanday yo'nalishda",
+        "Faqat teskari yo'nalishda",
+        "Tasodifiy yo'nalishda"
+      ],
+      "t": 0,
+      "izoh": "Tabiatdagi barcha jarayonlar faqat tayinli bir yo'nalishda sodir bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#f46c9d31"
+    },
+    {
+      "q": "Qaytar jarayonga misol qaysi?",
+      "v": [
+        "Izolyatsiyalangan sistemada ishqalanish va noelastik deformatsiya bo'lmagan sharoitda o'tadigan matematik mayatnikning tebranishi",
+        "Issiq choyning sovishi",
+        "Gazning bo'sh idishga o'tishi",
+        "O'qning to'siqqa urilishi"
+      ],
+      "t": 0,
+      "izoh": "Ishqalanish bo'lmagan mayatnik tebranishi qaytar jarayonga yaqin mexanik jarayon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#8fa0bd5f"
+    },
+    {
+      "q": "Issiqlik jarayonlari mexanik jarayonlardan nimasi bilan tubdan farq qiladi?",
+      "v": [
+        "Ularning barchasi qaytmasdir",
+        "Ularning barchasi qaytar",
+        "Ular faqat gazlarda sodir bo'ladi",
+        "Ular energiya saqlanish qonuniga bo'ysunmaydi"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik jarayonlarining barchasi qaytmasdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#2a3ff0b6"
+    },
+    {
+      "q": "Isitilgan jism atrofdagi sovuqroq jismlarga energiya berib asta-sekin soviydi. Bu jarayonning teskari jarayoni nima uchun yuz bermaydi?",
+      "v": [
+        "Sovuq jismdan issiq jismga issiqlik o'z-o'zidan uzatilmaydi, chunki bu jarayon qaytmas",
+        "Chunki energiya saqlanish qonuni buziladi",
+        "Chunki jismlar bir-biriga tegmaydi",
+        "Chunki atmosfera bosimi xalaqit beradi"
+      ],
+      "t": 0,
+      "izoh": "Sovuq jismdan issiq jismga o'z-o'zidan issiqlik uzatish jarayoni hech qachon yuz bermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#0b65d130"
+    },
+    {
+      "q": "Bir-biri bilan jo'mrakli nay orqali tutashtirilgan gazli va gazsiz idishlar orasidagi jo'mrak ochilsa, nima sodir bo'ladi?",
+      "v": [
+        "Gazning bir qismi bo'sh idishga o'tadi, ikkala idishdagi bosim tenglashadi va gaz o'z-o'zidan avvalgi holatiga qaytmaydi",
+        "Gaz butunlay bo'sh idishga o'tib, keyin qaytib keladi",
+        "Gaz faqat gazli idishda qoladi",
+        "Ikkala idishdagi temperatura keskin oshadi"
+      ],
+      "t": 0,
+      "izoh": "Jo'mrak ochilsa bosim tenglashadi, lekin gaz o'z-o'zidan avvalgi holatiga qaytmaydi — qaytmas jarayon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#b380dc55"
+    },
+    {
+      "q": "Miltiqdan otilgan o'q to'siqqa urilganda qanday jarayon sodir bo'ladi?",
+      "v": [
+        "O'q o'zini ham, to'siqni ham isitadi; ichki energiyalar ortadi, lekin bu energiya o'z-o'zidan o'qni yana harakatga keltirmaydi",
+        "O'qning ichki energiyasi kamayadi",
+        "To'siq soviydi",
+        "O'q qaytib miltiqka qaytadi"
+      ],
+      "t": 0,
+      "izoh": "O'q urilganda ichki energiyalar ortadi; teskari jarayon o'z-o'zidan sodir bo'lmaydi — qaytmas jarayon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#4742c1ca"
+    },
+    {
+      "q": "Termodinamikaning ikkinchi qonunini kim ta'riflagan?",
+      "v": [
+        "Nemis olimi R. Klauzius",
+        "Fransuz injeneri S. Karno",
+        "Ingliz olimi J. Joul",
+        "Nemis olimi R. Mayer"
+      ],
+      "t": 0,
+      "izoh": "R. Klauzius qaytmas jarayonlar to'g'risidagi tasavvurlarni umumlashtirib ikkinchi qonunni ta'riflagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#22062654"
+    },
+    {
+      "q": "Termodinamikaning ikkinchi qonuni qanday ta'riflangan?",
+      "v": [
+        "Agar sovuqroq sistema bilan issiqroq sistemaning ikkalasida yoki atrofdagi jismlarda biror o'zgarish bo'lmasa, sovuqroq sistemadan issiqroq sistemaga issiqlik o'tkazib bo'lmaydi",
+        "Energiya yo'qdan bo'lmaydi va yo'qolmaydi",
+        "Sistemaga berilgan issiqlik ishga aylanadi",
+        "Har qanday jarayon qaytar bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi qonun: hech qanday o'zgarishsiz sovuq sistemadan issiq sistemaga issiqlik o'tkazib bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#e638e8ca"
+    },
+    {
+      "q": "Termodinamikaning ikkinchi qonunining muhimligi nimadan iborat?",
+      "v": [
+        "Bu qonun faqat issiqlik uzatish jarayonining emas, balki tabiatdagi boshqa jarayonlarning ham qaytmas ekanligi to'g'risida xulosa chiqarish imkonini beradi",
+        "Bu qonun faqat gazlarga tatbiq etiladi",
+        "Bu qonun energiya saqlanishini inkor etadi",
+        "Bu qonun faqat mexanik jarayonlarni tavsiflaydi"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi qonun tabiatdagi boshqa jarayonlarning ham qaytmasligini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#767d579b"
+    },
+    {
+      "q": "Qaytmas jarayonlarga qaysi misol kiritilmaydi?",
+      "v": [
+        "Ishqalanishsiz matematik mayatnikning tebranishi",
+        "Issiq jismning sovishi",
+        "Gazning bo'sh idishga tarqalishi",
+        "O'qning to'siqni isitishi"
+      ],
+      "t": 0,
+      "izoh": "Ishqalanishsiz mayatnik tebranishi qaytar jarayonga misol; qolganlari qaytmas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#1534dca1"
+    },
+    {
+      "q": "Kishi organizmining qarish jarayonini teskari yo'nalishda o'tkazish mumkinmi?",
+      "v": [
+        "Yo'q, mumkin emas — bu qaytmas jarayon",
+        "Ha, mumkin",
+        "Faqat tibbiyot yordamida",
+        "Faqat issiqlik berib"
+      ],
+      "t": 0,
+      "izoh": "Organizmning qarish jarayonini teskari aylantirib bo'lmaydi — qaytmas jarayon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#227981b3"
+    },
+    {
+      "q": "Issiqlik jarayonlarining mexanik jarayonlardan farqini qanday tushuntirish mumkin?",
+      "v": [
+        "Mexanik jarayonlar qaytarga yaqin bo'lishi mumkin, issiqlik jarayonlari esa qaytmas",
+        "Mexanik jarayonlar hamisha qaytmas, issiqlik jarayonlari qaytar",
+        "Ikkalasi ham har doim qaytar",
+        "Ikkalasi orasida farq yo'q"
+      ],
+      "t": 0,
+      "izoh": "Mexanik jarayonlar (ishqalanishsiz) qaytarga yaqin, issiqlik jarayonlari qaytmas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#6b575c6b"
+    },
+    {
+      "q": "Sovuq jismdan issiq jismga issiqlik uzatish qachon mumkin?",
+      "v": [
+        "Bunda sistemada yoki atrofdagi jismlarda biror o'zgarish (ish bajarilishi) sodir bo'lishi kerak",
+        "Hech qachon mumkin emas",
+        "O'z-o'zidan har doim mumkin",
+        "Faqat metallarda"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi qonunga ko'ra, o'zgarishsiz sovuqdan issiqqa issiqlik o'tkazib bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#df94e136"
+    },
+    {
+      "q": "Prujinaga osilgan yukning tebranishi qanday sharoitda qaytar jarayonga misol bo'ladi?",
+      "v": [
+        "Izolyatsiyalangan sistemada ishqalanish va noelastik deformatsiya bo'lmasa",
+        "Har qanday sharoitda",
+        "Faqat havoda",
+        "Faqat yuk og'ir bo'lsa"
+      ],
+      "t": 0,
+      "izoh": "Ishqalanish va noelastik deformatsiya bo'lmagan sharoitdagi tebranishlar qaytar jarayonlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#9ccec625"
+    },
+    {
+      "q": "Tabiatda qaytar jarayonlar bormi?",
+      "v": [
+        "Tabiatda har qanday jarayon qaytmas; ammo qaytar jarayonga ancha yaqin mexanik jarayonlar mavjud",
+        "Ha, barcha jarayonlar qaytar",
+        "Ha, issiqlik jarayonlari qaytar",
+        "Yo'q, hech qanday yaqin jarayon ham yo'q"
+      ],
+      "t": 0,
+      "izoh": "Tabiatda barcha jarayonlar qaytmas, lekin qaytarga yaqin mexanik jarayonlar bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#e1b417d2"
+    },
+    {
+      "q": "Issiqlik uzatish jarayoni qanday jarayon hisoblanadi?",
+      "v": [
+        "Qaytmas jarayon",
+        "Qaytar jarayon",
+        "Izotermik jarayon",
+        "Adiabatik jarayon"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik uzatish — qaytmas jarayon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#3e1b385f"
+    },
+    {
+      "q": "Gazli va gazsiz idishlar orasidagi jo'mrak ochilgach, qancha vaqt o'tsa ham gaz avvalgi holatiga qaytmaydi. Bu nimani ko'rsatadi?",
+      "v": [
+        "Jarayonning qaytmasligini",
+        "Jarayonning qaytarligini",
+        "Energiya saqlanishini",
+        "Gazning issiqlik sig'imini"
+      ],
+      "t": 0,
+      "izoh": "Bu hodisa gaz tarqalish jarayonining qaytmasligini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#fc25fdbb"
+    },
+    {
+      "q": "O'q va to'siqning ichki energiyasi ortishi natijasida nima uchun o'q qayta harakatga kelmaydi?",
+      "v": [
+        "Chunki ichki energiya o'z-o'zidan o'qning mexanik energiyasiga aylanmaydi — jarayon qaytmas",
+        "Chunki o'q juda og'ir",
+        "Chunki to'siq issiqlikni yutib yuboradi",
+        "Chunki energiya yo'qolib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Ichki energiya o'z-o'zidan mexanik energiyaga aylanib, o'qni qayta harakatga keltirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#7721ebdd"
+    },
+    {
+      "q": "R. Klauzius nimani umumlashtirib termodinamikaning ikkinchi qonunini ta'riflagan?",
+      "v": [
+        "Qaytmas jarayonlar to'g'risidagi tasavvurlarni",
+        "Energiya saqlanish qonunini",
+        "Karno siklini",
+        "Gaz qonunlarini"
+      ],
+      "t": 0,
+      "izoh": "Klauzius qaytmas jarayonlar to'g'risidagi tasavvurlarni umumlashtirdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#42107105"
+    },
+    {
+      "q": "Isitilgan jismning sovishi qanday jarayonga misol?",
+      "v": [
+        "Qaytmas issiqlik jarayoniga",
+        "Qaytar mexanik jarayonga",
+        "Adiabatik jarayonga",
+        "Izotermik jarayonga"
+      ],
+      "t": 0,
+      "izoh": "Jismning sovishi qaytmas issiqlik jarayoni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#622f33af"
+    },
+    {
+      "q": "Termodinamikaning ikkinchi qonuniga ko'ra, issiqlik o'z-o'zidan qanday o'tadi?",
+      "v": [
+        "Issiqroq jismdan sovuqroq jismga",
+        "Sovuqroq jismdan issiqroq jismga",
+        "Istalgan yo'nalishda",
+        "Hech qanday o'tmaydi"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik o'z-o'zidan faqat issiq jismdan sovuq jismga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#a12c7806"
+    },
+    {
+      "q": "Qaysi jarayon qaytmas jarayonlarga kirmaydi?",
+      "v": [
+        "Ishqalanishsiz prujinada tebranayotgan yuk harakati",
+        "Choynakdagi choyning sovishi",
+        "Bo'sh idishga gaz o'tishi",
+        "O'qning to'siqqa urilib isishi"
+      ],
+      "t": 0,
+      "izoh": "Ishqalanishsiz tebranish qaytar jarayon; qolganlari qaytmas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#a43fc6c0"
+    },
+    {
+      "q": "Tabiatdagi jarayonlarning tayinli bir yo'nalishda sodir bo'lishi qaysi qonun bilan bog'liq?",
+      "v": [
+        "Termodinamikaning ikkinchi qonuni bilan",
+        "Nyutonning birinchi qonuni bilan",
+        "Om qonuni bilan",
+        "Guk qonuni bilan"
+      ],
+      "t": 0,
+      "izoh": "Jarayonlarning bir yo'nalishliligi termodinamikaning ikkinchi qonuni bilan tushuntiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#7947f978"
+    },
+    {
+      "q": "Ikkinchi qonun ta'rifida 'atrofdagi jismlarda biror o'zgarish bo'lmasa' sharti nima uchun kiritilgan?",
+      "v": [
+        "Chunki tashqi ta'sir (ish bajarish) hisobiga sovuqdan issiqqa issiqlik uzatish mumkin",
+        "Chunki jismlar har doim o'zgaradi",
+        "Chunki bu shart keraksiz",
+        "Chunki issiqlik faqat vakuumda o'tadi"
+      ],
+      "t": 0,
+      "izoh": "Tashqi ta'sirsiz (o'zgarishsiz) sovuqdan issiqqa issiqlik o'tkazib bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#63224e5c"
+    },
+    {
+      "q": "Issiqlik jarayonlari uchun umumiy xususiyat qaysi?",
+      "v": [
+        "Barchasi qaytmasdir",
+        "Barchasi qaytar",
+        "Barchasi izotermik",
+        "Barchasi adiabatik"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik jarayonlarining barchasi qaytmasdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#a1accd47"
+    },
+    {
+      "q": "Mayatnikning haqiqiy (ishqalanishli) tebranishi qanday jarayon hisoblanadi?",
+      "v": [
+        "Qaytmas jarayon",
+        "Qaytar jarayon",
+        "Izoxorik jarayon",
+        "Izobarik jarayon"
+      ],
+      "t": 0,
+      "izoh": "Haqiqatda ishqalanish mavjud bo'lgani uchun har qanday jarayon qaytmasdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#acc022df"
+    },
+    {
+      "q": "31-rasmda qaytar jarayonga misol sifatida nimalar keltirilgan?",
+      "v": [
+        "Osmaga osilgan matematik mayatnik va prujinaga osilgan yukning tebranishi",
+        "Issiq choy va sovuq suv",
+        "Gazli idish va jo'mrak",
+        "Miltiq va o'q"
+      ],
+      "t": 0,
+      "izoh": "31-rasmda matematik mayatnik va prujinali yuk tebranishi keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#5ca4fa27"
+    },
+    {
+      "q": "Termodinamikaning birinchi va ikkinchi qonunlarining farqi nimada?",
+      "v": [
+        "Birinchi qonun energiya saqlanishini bildiradi, ikkinchi qonun esa jarayonlarning yo'nalishi va qaytmasligini ko'rsatadi",
+        "Ikkalasi bir xil",
+        "Birinchi qonun faqat gazlar uchun, ikkinchisi suyuqliklar uchun",
+        "Ikkinchi qonun energiya saqlanishini inkor etadi"
+      ],
+      "t": 0,
+      "izoh": "Birinchi qonun — energiya saqlanishi; ikkinchi qonun — jarayonlarning qaytmasligi va yo'nalishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m24-issiqlik-jarayonlarining-qaytmasligi#c5a4dd7c"
+    }
+  ]
+}

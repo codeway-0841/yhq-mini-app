@@ -1,0 +1,486 @@
+{
+  "nom": "03-mavzu. Elektrolitlar va noelektrolitlar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Tajribada asbob elektrodlarini quruq osh tuziga qo'yilganda lampochka nima uchun yonmadi?",
+      "v": [
+        "Quruq osh tuzi elektr tokini o'tkazmaydi",
+        "Osh tuzi juda oz olingan",
+        "Elektrodlar iflos bo'lgan",
+        "Lampochka buzilgan"
+      ],
+      "t": 0,
+      "izoh": "Quruq osh tuzi elektr tokini o'tkazmaydi, shuning uchun lampochka yonmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#f85bf21a"
+    },
+    {
+      "q": "Distillangan suvga elektrodlar tushirilganda lampochka yonadimi?",
+      "v": [
+        "Yonmaydi, chunki distillangan suv elektr tokini o'tkazmaydi",
+        "Yonadi, chunki suv elektrolit",
+        "Yarim yorug' yonadi",
+        "Avval yonib keyin o'chadi"
+      ],
+      "t": 0,
+      "izoh": "Distillangan suv elektr tokini o'tkazmaydi, lampochka yonmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#21b40769"
+    },
+    {
+      "q": "Osh tuzining suvdagi eritmasiga elektrodlar tushirilganda nima kuzatiladi?",
+      "v": [
+        "Lampochka yonadi, chunki eritma elektr tokini o'tkazadi",
+        "Lampochka yonmaydi",
+        "Eritma qaynaydi",
+        "Cho'kma hosil bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Osh tuzining suvdagi eritmasi elektr tokini o'tkazadi, lampochka yonadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#2606922b"
+    },
+    {
+      "q": "Elektrolitlar deb qanday moddalarga aytiladi?",
+      "v": [
+        "Eritmalari yoki suyuqlanmalari elektr tokini o'tkazadigan moddalarga",
+        "Eritmalari elektr tokini o'tkazmaydigan moddalarga",
+        "Faqat qattiq holatda tok o'tkazadigan moddalarga",
+        "Suvda erimaydigan moddalarga"
+      ],
+      "t": 0,
+      "izoh": "Eritmalari yoki suyuqlanmalari elektr tokini o'tkazadigan moddalar elektrolitlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#e9115843"
+    },
+    {
+      "q": "Elektrolitlarga qaysi moddalar kiradi?",
+      "v": [
+        "Suvda eriydigan kislotalar, ishqorlar va tuzlar",
+        "Shakar, spirtlar va distillangan suv",
+        "Metan va karbonat angidrid",
+        "Qutbsiz kovalent bog'lanishli moddalar"
+      ],
+      "t": 0,
+      "izoh": "Elektrolitlarga suvda eriydigan kislotalar, ishqorlar va tuzlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#08c3ca09"
+    },
+    {
+      "q": "Noelektrolitlarga (elektrolitmaslarga) qaysi moddalar kiradi?",
+      "v": [
+        "Qutbsiz kovalent bog'lanishli moddalar, metan, karbonat angidrid, shakar, spirtlar va distillangan suv",
+        "Kislotalar, ishqorlar va tuzlar",
+        "Suvda eriydigan barcha tuzlar",
+        "Metallar"
+      ],
+      "t": 0,
+      "izoh": "Elektrolitmaslarga qutbsiz kovalent bog'lanishli moddalar hamda metan, karbonat angidrid, shakar, spirtlar va distillangan suv kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#ba902cfb"
+    },
+    {
+      "q": "Elektrolitlar qachon elektr tokini o'tkazadi?",
+      "v": [
+        "Faqat suvda eritilganda yoki suyuqlantirilganda",
+        "Kristall holda",
+        "Har qanday holatda",
+        "Faqat qizdirilganda"
+      ],
+      "t": 0,
+      "izoh": "Elektrolitlar faqat suvda eritilganda yoki suyuqlantirilgandagina elektr tokini o'tkazadi; kristall holda yomon o'tkazadi yoki butunlay o'tkazmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#5b2776be"
+    },
+    {
+      "q": "KCl suvda eritilganda qanday ionlarga ajraladi?",
+      "v": [
+        "K+ va Cl-",
+        "K- va Cl+",
+        "K2+ va Cl2-",
+        "K va Cl atomlariga"
+      ],
+      "t": 0,
+      "izoh": "KCl → K+ + Cl-.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#e50ce793"
+    },
+    {
+      "q": "NaOH suvda eritilganda qanday ionlarga ajraladi?",
+      "v": [
+        "Na+ va OH-",
+        "Na- va OH+",
+        "Na+ va H-",
+        "Na2+ va O2-"
+      ],
+      "t": 0,
+      "izoh": "NaOH → Na+ + OH-.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#2efc5924"
+    },
+    {
+      "q": "Kationlar qanday zarralar?",
+      "v": [
+        "Musbat zaryadlangan ionlar",
+        "Manfiy zaryadlangan ionlar",
+        "Zaryadsiz atomlar",
+        "Elektroneytral molekulalar"
+      ],
+      "t": 0,
+      "izoh": "Ionlar musbat zaryadlangan (kationlar) yoki manfiy zaryadlangan (anionlar) zarralardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#6b5b6ede"
+    },
+    {
+      "q": "5-jadvalga ko'ra, natriy ionining (Na+) elektron konfiguratsiyasi qanday?",
+      "v": [
+        "1s2 2s2 2p6",
+        "1s2 2s2 2p6 3s1",
+        "1s2 2s2 2p6 3s2",
+        "1s2 2s2 2p5"
+      ],
+      "t": 0,
+      "izoh": "Na+ ionining elektron konfiguratsiyasi 1s2 2s2 2p6 (2; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#f42de82a"
+    },
+    {
+      "q": "5-jadvalga ko'ra, xlor ionining (Cl-) tashqi qavatida nechta elektron bor?",
+      "v": [
+        "8 ta",
+        "7 ta",
+        "6 ta",
+        "2 ta"
+      ],
+      "t": 0,
+      "izoh": "Cl- ioni elektron taqsimoti 2) 8) 8) — tashqi qavatda 8 ta elektron.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#3df97fd7"
+    },
+    {
+      "q": "Ion bog'lanishli birikmalarning suvda eritilganda ionlarga ajralishi nima deb ataladi?",
+      "v": [
+        "Dissotsiatsiya",
+        "Gidroliz",
+        "Elektroliz",
+        "Sublimatsiya"
+      ],
+      "t": 0,
+      "izoh": "Ion bog'lanishli birikmalarning suvda eritilganda ionlarga ajralishiga dissotsiatsiya deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#75cf278c"
+    },
+    {
+      "q": "Osh tuzi kristallarining panjara tugunlarida nima joylashgan?",
+      "v": [
+        "Ionlar",
+        "Neytral atomlar",
+        "Molekulalar",
+        "Elektron gazi"
+      ],
+      "t": 0,
+      "izoh": "Osh tuzi kristallari ion bog'lanishli birikma bo'lib, kristall panjara tugunlarida ionlar bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#f7e4b543"
+    },
+    {
+      "q": "Osh tuzi suvda eriganda qanday ionlar hosil qiladi?",
+      "v": [
+        "Gidratlangan ionlar",
+        "Quruq ionlar",
+        "Zaryadsiz zarralar",
+        "Atomlar"
+      ],
+      "t": 0,
+      "izoh": "Eritmada osh tuzi kristallari suvning qutblangan molekulalari ta'sirida erib, gidratlangan ionlarni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#4f86b4de"
+    },
+    {
+      "q": "Musbat zaryadlangan ionlar elektr maydonida qayoqqa harakatlanadi?",
+      "v": [
+        "Katod tomon",
+        "Anod tomon",
+        "Harakatlanmaydi",
+        "Eritma yuzasiga"
+      ],
+      "t": 0,
+      "izoh": "Musbat zaryadlangan ionlar katod tomon harakatlanadi, shuning uchun ular kation deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#b548905a"
+    },
+    {
+      "q": "Manfiy zaryadlangan ionlar elektr maydonida qayoqqa harakatlanadi va nima deb ataladi?",
+      "v": [
+        "Anod tomon harakatlanadi va anion deyiladi",
+        "Katod tomon harakatlanadi va kation deyiladi",
+        "Anod tomon harakatlanadi va kation deyiladi",
+        "Markazga harakatlanadi va neytron deyiladi"
+      ],
+      "t": 0,
+      "izoh": "Manfiy zaryadlangan ionlar anod tomon harakatlanadi, shuning uchun ular anion deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#2d841ae0"
+    },
+    {
+      "q": "Elektrolitlar (tuzlar va ishqorlar) suyultirilganda nima uchun ionlarga ajraladi?",
+      "v": [
+        "Zarrachalarning tebranma harakati kuchayib, orasidagi bog'lanish zaiflashadi",
+        "Zarrachalar orasidagi bog'lanish kuchayadi",
+        "Suv molekulalari yo'qoladi",
+        "Elektronlar hosil bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Modda suyultirilganda zarrachalarning tebranma harakati kuchayib, bog'lanish zaiflashadi va elektrolit ionlarga oson ajralib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#823b2ad8"
+    },
+    {
+      "q": "Vodorod xlorid suvda eriganda qanday ion hosil bo'ladi?",
+      "v": [
+        "H3O+ (gidroksoniy) ioni",
+        "H2+ ioni",
+        "OH- ioni",
+        "H- ioni"
+      ],
+      "t": 0,
+      "izoh": "Vodorod elektronini qoldirib suv molekulasiga ko'chadi va H3O+ (gidroksoniy) ioni hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#43dd8f7e"
+    },
+    {
+      "q": "Gidroksoniy ioni suvda qanday dissotsiatsiyalanadi?",
+      "v": [
+        "H3O+ → H+ + H2O",
+        "H3O+ → H2 + OH-",
+        "H3O+ → H2O + O2",
+        "H3O+ → 3H+ + O2-"
+      ],
+      "t": 0,
+      "izoh": "H3O+ → H+ + H2O: gidroksoniy ioni suv va vodorod ionini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#d32acd3e"
+    },
+    {
+      "q": "H3O+ ionida kimyoviy bog'lanishning qanday turi mavjud?",
+      "v": [
+        "Donor-akseptor bog'lanish",
+        "Ion bog'lanish",
+        "Metall bog'lanish",
+        "Vodorod bog'lanish"
+      ],
+      "t": 0,
+      "izoh": "H3O+ donor-akseptor bog'lanishli modda hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#ab7f45bc"
+    },
+    {
+      "q": "Kislotalarning dissotsiatsiyalanish tenglamasini qisqaroq ko'rinishda yozish odat tusiga kirgan. H2SO4 ning qisqaroq yozilishi qanday?",
+      "v": [
+        "H2SO4 → 2H+ + SO4 2-",
+        "H2SO4 → H2 + SO4",
+        "H2SO4 → H+ + HSO4-",
+        "H2SO4 → 2H + SO4 2-"
+      ],
+      "t": 0,
+      "izoh": "Qisqaroq ko'rinish: H2SO4 → 2H+ + SO4 2-.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#8e34e7a1"
+    },
+    {
+      "q": "Ammiak qanday qilib kationga aylanadi?",
+      "v": [
+        "O'zining xususiy juft elektroni hisobiga proton biriktirib olib",
+        "Elektron berib",
+        "Elektron yo'qotib",
+        "Suv molekulasini uzib"
+      ],
+      "t": 0,
+      "izoh": "Ammiak o'zining xususiy juft elektroni hisobiga proton biriktirib olib NH4+ kationiga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#d926a172"
+    },
+    {
+      "q": "Quyidagi ionlardan qaysi biri kation hisoblanadi?",
+      "v": [
+        "NH4+",
+        "Cl-",
+        "SO4 2-",
+        "NO3-"
+      ],
+      "t": 0,
+      "izoh": "NH4+ musbat zaryadli ion — kation; qolganlari anionlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#cc3ab397"
+    },
+    {
+      "q": "Kislota qoldiqlari va gidroksid guruhlari qanday ionlar ko'rinishida bo'ladi?",
+      "v": [
+        "Anionlar",
+        "Kationlar",
+        "Neytral zarralar",
+        "Molekulalar"
+      ],
+      "t": 0,
+      "izoh": "Kislota qoldiqlari, gidroksid guruhlari anionlar ko'rinishida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#d38f9b50"
+    },
+    {
+      "q": "Kislotalar molekularining tuzlar va ishqorlardan farqli jihati nima?",
+      "v": [
+        "Kislotalar molekulalari kuchli qutblangandir",
+        "Kislotalar ion panjaraga ega",
+        "Kislotalar suvda erimaydi",
+        "Kislotalar elektroneytral emas"
+      ],
+      "t": 0,
+      "izoh": "Kislotalar molekulalari kuchli qutblangandir, ular ham suvda eriganda ionlarga ajraladi, ammo tuzlar va ishqorlardan farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#6ab3ca8c"
+    },
+    {
+      "q": "Natriy atomi bilan natriy ionining xossalari bir xilmi?",
+      "v": [
+        "Yo'q, natriy atomi o'yuvchi xossaga ega kuchli qaytaruvchi, ion esa boshqa xossalarga ega",
+        "Ha, xossalari bir xil",
+        "Natriy ioni ham o'yuvchi",
+        "Ikkalasi ham kuchli oksidlovchi"
+      ],
+      "t": 0,
+      "izoh": "Atomlar bilan ionlar keskin farq qiladi: natriy o'yuvchi xossaga ega bo'lib, kuchli qaytaruvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#d569a712"
+    },
+    {
+      "q": "Xlor atomi qanday xossalarga ega?",
+      "v": [
+        "Kuchli zahar bo'lib, oksidlovchi",
+        "O'yuvchi va kuchli qaytaruvchi",
+        "Zaharsiz va inert",
+        "Kuchli qaytaruvchi"
+      ],
+      "t": 0,
+      "izoh": "Xlor kuchli zahar bo'lib, oksidlovchi; xlor ioni esa bu xossalarga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#36a97fad"
+    },
+    {
+      "q": "Suvda HCl, HBr, H2S, HNO3, H2SO4 kislotalari eriganda umumiy qanday ion hosil bo'ladi?",
+      "v": [
+        "H3O+ (gidroksoniy) ioni",
+        "OH- ioni",
+        "Metall kationi",
+        "Cl- ioni"
+      ],
+      "t": 0,
+      "izoh": "Suvda barcha bu kislotalar eriganda H3O+ (gidroksoniy) ioni hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#e97fcc3d"
+    },
+    {
+      "q": "Quyidagi moddalardan qaysi biri elektrolit hisoblanadi?",
+      "v": [
+        "Suvda eriydigan tuzlar",
+        "Shakar",
+        "Spirt",
+        "Distillangan suv"
+      ],
+      "t": 0,
+      "izoh": "Elektrolitlarga suvda eriydigan kislotalar, ishqorlar va tuzlar kiradi; shakar, spirt va distillangan suv noelektrolit.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#e912f72e"
+    },
+    {
+      "q": "Quyidagi moddalardan qaysi biri noelektrolit?",
+      "v": [
+        "Metan",
+        "Kaliy xlorid",
+        "Sulfat kislota",
+        "O'yuvchi natriy"
+      ],
+      "t": 0,
+      "izoh": "Metan noelektrolitlar qatoriga kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#526292fa"
+    },
+    {
+      "q": "HNO3 ning suvda dissotsiatsiyalanishining qisqaroq yozilishi qanday?",
+      "v": [
+        "HNO3 → H+ + NO3-",
+        "HNO3 → H+ + NO2-",
+        "HNO3 → H3O+ + N2",
+        "HNO3 → 2H+ + NO3 2-"
+      ],
+      "t": 0,
+      "izoh": "HNO3 → H+ + NO3-.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m03-elektrolitlar-va-noelektrolitlar#7f67560e"
+    }
+  ]
+}

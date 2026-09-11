@@ -1,0 +1,1506 @@
+{
+  "nom": "So'z yasalishi va uning usullari",
+  "bolim": "So'z tarkibi va so'z yasalishi",
+  "savollar": [
+    {
+      "q": "«gulzor» qaysi javobda to'g'ri izohlangan?",
+      "v": [
+        "ikki asosni birlashtirish",
+        "asosga qo'shimcha qo'shish",
+        "bir so'zni takrorlash",
+        "ikki so'zni juftlash"
+      ],
+      "t": 1,
+      "izoh": "«gulzor» — «gul» asosiga «-zor» qo'shimchasi qo'shilgan. Qolgan javoblar mos emas: ikki asosni birlashtirish — bunda ikki asos qo'shilib bitta so'z bo'ladi; bir so'zni takrorlash — bunda bir so'z aynan takrorlanadi; ikki so'zni juftlash — bunda ikki so'z yonma-yon keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#121307da"
+    },
+    {
+      "q": "«tez-tez» qaysi yo'l bilan tuzilgan?",
+      "v": [
+        "ikki asosni birlashtirish",
+        "asosga qo'shimcha qo'shish",
+        "bir so'zni takrorlash",
+        "ikki so'zni juftlash"
+      ],
+      "t": 2,
+      "izoh": "«tez-tez» — bitta so'z aynan takrorlangan. Qolgan javoblar mos emas: asosga qo'shimcha qo'shish — bunda asosga yasovchi qo'shimcha qo'shiladi; ikki asosni birlashtirish — bunda ikki asos qo'shilib bitta so'z bo'ladi; ikki so'zni juftlash — bunda ikki so'z yonma-yon keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#82e1eb51"
+    },
+    {
+      "q": "«do'stlik» haqida qaysi javob to'g'ri?",
+      "v": [
+        "bir so'zni takrorlash",
+        "asosga qo'shimcha qo'shish",
+        "ikki so'zni juftlash",
+        "ikki asosni birlashtirish"
+      ],
+      "t": 1,
+      "izoh": "«do'stlik» — «do'st» asosiga «-lik» qo'shimchasi qo'shilgan. Qolgan javoblar mos emas: bir so'zni takrorlash — bunda bir so'z aynan takrorlanadi; ikki so'zni juftlash — bunda ikki so'z yonma-yon keladi; ikki asosni birlashtirish — bunda ikki asos qo'shilib bitta so'z bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#854ea5a2"
+    },
+    {
+      "q": "«idish-tovoq» so'zi qanday usul bilan hosil qilingan?",
+      "v": [
+        "ikki asosni birlashtirish",
+        "bir so'zni takrorlash",
+        "ikki so'zni juftlash",
+        "asosga qo'shimcha qo'shish"
+      ],
+      "t": 2,
+      "izoh": "«idish-tovoq» — ikki so'z birikib, umumlashgan ma'no bergan. Qolgan javoblar mos emas: ikki asosni birlashtirish — bunda ikki asos qo'shilib bitta so'z bo'ladi; bir so'zni takrorlash — bunda bir so'z aynan takrorlanadi; asosga qo'shimcha qo'shish — bunda asosga yasovchi qo'shimcha qo'shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#2d427ced"
+    },
+    {
+      "q": "Qaysi javobdagi so'z qo'shimcha bilan yasalgan so'z sanaladi?",
+      "v": [
+        "ota-ona",
+        "toshloq",
+        "asta-asta",
+        "katta-katta"
+      ],
+      "t": 1,
+      "izoh": "«toshloq» — qo'shimcha bilan yasalgan so'z: u «tosh» asosiga «-loq» qo'shimchasi qo'shilgan. Qolgan javoblar boshqa guruhga oid: «ota-ona» — juft so'z; «katta-katta» va «asta-asta» — takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#9629c8ab"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida qo'shimcha bilan yasalgan so'z berilgan?",
+      "v": [
+        "katta-katta",
+        "bog'bon",
+        "oz-oz",
+        "kiyim-kechak"
+      ],
+      "t": 1,
+      "izoh": "«bog'bon» — qo'shimcha bilan yasalgan so'z: u «bog'» asosiga «-bon» qo'shimchasi qo'shilgan. Qolgan javoblar boshqa guruhga oid: «katta-katta» va «oz-oz» — takroriy so'z; «kiyim-kechak» — juft so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#7485aea7"
+    },
+    {
+      "q": "Qaysi javobdagi so'z qo'shimcha bilan yasalgan so'z sanaladi?",
+      "v": [
+        "kiyim-kechak",
+        "oshqozon",
+        "sekin-sekin",
+        "kitobxon"
+      ],
+      "t": 3,
+      "izoh": "«kitobxon» — qo'shimcha bilan yasalgan so'z: u «kitob» asosiga «-xon» qo'shimchasi qo'shilgan. Qolgan javoblar boshqa guruhga oid: «kiyim-kechak» — juft so'z; «oshqozon» — qo'shma so'z; «sekin-sekin» — takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#25db3df9"
+    },
+    {
+      "q": "Qaysi so'z qo'shimcha bilan yasalgan so'z deb baholanadi?",
+      "v": [
+        "idish-tovoq",
+        "aka-uka",
+        "to'p-to'p",
+        "kuchsiz"
+      ],
+      "t": 3,
+      "izoh": "«kuchsiz» — qo'shimcha bilan yasalgan so'z: u «kuch» asosiga «-siz» qo'shimchasi qo'shilgan. Qolgan javoblar boshqa guruhga oid: «idish-tovoq» va «aka-uka» — juft so'z; «to'p-to'p» — takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#bb5b0403"
+    },
+    {
+      "q": "Quyidagilardan qaysisi qo'shma so'zga misol bo'la oladi?",
+      "v": [
+        "sartarosh",
+        "aybdor",
+        "to'p-to'p",
+        "tez-tez"
+      ],
+      "t": 0,
+      "izoh": "«sartarosh» — qo'shma so'z: u «sar» va «tarosh» asoslari birikib, bitta so'z bo'lgan. Qolgan javoblar boshqa guruhga oid: «aybdor» — qo'shimcha bilan yasalgan so'z; «to'p-to'p» va «tez-tez» — takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#14b494a7"
+    },
+    {
+      "q": "Qaysi javobdagi so'z qo'shma so'z sanaladi?",
+      "v": [
+        "tez-tez",
+        "aqlli",
+        "kungaboqar",
+        "toshloq"
+      ],
+      "t": 2,
+      "izoh": "«kungaboqar» — qo'shma so'z: u «kunga» va «boqar» qismlari birikib, bitta so'z hosil qilgan. Qolgan javoblar boshqa guruhga oid: «tez-tez» — takroriy so'z; «aqlli» va «toshloq» — qo'shimcha bilan yasalgan so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#8a7b10f9"
+    },
+    {
+      "q": "Quyidagilardan qaysisi qo'shma so'zga misol bo'la oladi?",
+      "v": [
+        "oshqozon",
+        "oz-oz",
+        "guruh-guruh",
+        "bolalik"
+      ],
+      "t": 0,
+      "izoh": "«oshqozon» — qo'shma so'z: u «osh» va «qozon» asoslari qo'shilib, bitta so'zga aylangan. Qolgan javoblar boshqa guruhga oid: «bolalik» — qo'shimcha bilan yasalgan so'z; «oz-oz» va «guruh-guruh» — takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#397a26cd"
+    },
+    {
+      "q": "Qaysi so'z qo'shma so'z deb baholanadi?",
+      "v": [
+        "kiyim-kechak",
+        "kecha-kunduz",
+        "toshloq",
+        "ertapishar"
+      ],
+      "t": 3,
+      "izoh": "«ertapishar» — qo'shma so'z: u «erta» va «pishar» qismlari birikib, bitta so'z hosil qilgan. Qolgan javoblar boshqa guruhga oid: «kecha-kunduz» va «kiyim-kechak» — juft so'z; «toshloq» — qo'shimcha bilan yasalgan so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#069b7261"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida juft so'z berilgan?",
+      "v": [
+        "katta-katta",
+        "guruh-guruh",
+        "kitobxona",
+        "quda-anda"
+      ],
+      "t": 3,
+      "izoh": "«quda-anda» — juft so'z: u ikki so'z bir xil huquqda birikib, umumlashgan ma'no bergan. Qolgan javoblar boshqa guruhga oid: «guruh-guruh» va «katta-katta» — takroriy so'z; «kitobxona» — qo'shimcha bilan yasalgan so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#409ff226"
+    },
+    {
+      "q": "Berilganlardan qaysisi juft so'z hisoblanadi?",
+      "v": [
+        "kecha-kunduz",
+        "asta-asta",
+        "oz-oz",
+        "kuchsiz"
+      ],
+      "t": 0,
+      "izoh": "«kecha-kunduz» — juft so'z: u ikki qarama-qarshi ma'noli so'z bir xil huquqda birikkan. Qolgan javoblar boshqa guruhga oid: «oz-oz» va «asta-asta» — takroriy so'z; «kuchsiz» — qo'shimcha bilan yasalgan so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#be2606f4"
+    },
+    {
+      "q": "Berilganlardan qaysisi juft so'z hisoblanadi?",
+      "v": [
+        "idish-tovoq",
+        "oqsoqol",
+        "gultojixo'roz",
+        "aybdor"
+      ],
+      "t": 0,
+      "izoh": "«idish-tovoq» — juft so'z: u ikki so'z birikib, umumlashgan ma'no bergan. Qolgan javoblar boshqa guruhga oid: «oqsoqol» va «gultojixo'roz» — qo'shma so'z; «aybdor» — qo'shimcha bilan yasalgan so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#a677a412"
+    },
+    {
+      "q": "Qaysi javobdagi so'z juft so'z sanaladi?",
+      "v": [
+        "suvsiz",
+        "katta-kichik",
+        "toshko'mir",
+        "kuchsiz"
+      ],
+      "t": 1,
+      "izoh": "«katta-kichik» — juft so'z: u ikki qarama-qarshi ma'noli so'z bir xil huquqda birikkan. Qolgan javoblar boshqa guruhga oid: «suvsiz» va «kuchsiz» — qo'shimcha bilan yasalgan so'z; «toshko'mir» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#c7f16b37"
+    },
+    {
+      "q": "Qaysi so'z takroriy so'z deb baholanadi?",
+      "v": [
+        "bola-chaqa",
+        "paxtakor",
+        "er-xotin",
+        "sekin-sekin"
+      ],
+      "t": 3,
+      "izoh": "«sekin-sekin» — takroriy so'z: u bitta so'z aynan takrorlangan. Qolgan javoblar boshqa guruhga oid: «bola-chaqa» va «er-xotin» — juft so'z; «paxtakor» — qo'shimcha bilan yasalgan so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#ebc74d52"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida takroriy so'z berilgan?",
+      "v": [
+        "katta-katta",
+        "toshko'mir",
+        "er-xotin",
+        "guldasta"
+      ],
+      "t": 0,
+      "izoh": "«katta-katta» — takroriy so'z: u bitta so'z aynan takrorlangan. Qolgan javoblar boshqa guruhga oid: «toshko'mir» va «guldasta» — qo'shma so'z; «er-xotin» — juft so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#c74da036"
+    },
+    {
+      "q": "Quyidagilardan qaysisi takroriy so'zga misol bo'la oladi?",
+      "v": [
+        "toshloq",
+        "gultojixo'roz",
+        "sekin-sekin",
+        "mehnatkash"
+      ],
+      "t": 2,
+      "izoh": "«sekin-sekin» — takroriy so'z: u bitta so'z aynan takrorlangan. Qolgan javoblar boshqa guruhga oid: «toshloq» va «mehnatkash» — qo'shimcha bilan yasalgan so'z; «gultojixo'roz» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#9d5b8bd0"
+    },
+    {
+      "q": "Qaysi javobdagi so'z takroriy so'z sanaladi?",
+      "v": [
+        "bola-chaqa",
+        "mehnatkash",
+        "oz-oz",
+        "aybdor"
+      ],
+      "t": 2,
+      "izoh": "«oz-oz» — takroriy so'z: u bitta so'z aynan takrorlanib, ma'no kuchaytirilgan. Qolgan javoblar boshqa guruhga oid: «bola-chaqa» — juft so'z; «mehnatkash» va «aybdor» — qo'shimcha bilan yasalgan so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#8c8a0740"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "belkurak",
+        "kecha-kunduz",
+        "ertapishar",
+        "gultojixo'roz"
+      ],
+      "t": 1,
+      "izoh": "«kecha-kunduz» — juft so'z: u ikki qarama-qarshi ma'noli so'z bir xil huquqda birikkan. Qolgan uchtasi esa qo'shma so'z: «belkurak» — «bel» va «kurak» asoslari qo'shilib, bitta so'z bo'lgan; «ertapishar» — «erta» va «pishar» qismlari birikib, bitta so'z hosil qilgan; «gultojixo'roz» — bir necha asos birikib, bitta so'z hosil qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#bbb8ccbc"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "aka-uka",
+        "katta-kichik",
+        "ota-ona",
+        "toshloq"
+      ],
+      "t": 3,
+      "izoh": "«toshloq» — qo'shimcha bilan yasalgan so'z: u «tosh» asosiga «-loq» qo'shimchasi qo'shilgan. Qolgan uchtasi esa juft so'z: «katta-kichik» — ikki qarama-qarshi ma'noli so'z bir xil huquqda birikkan; «ota-ona» — ikki mustaqil so'z chiziqcha bilan yonma-yon kelgan; «aka-uka» — ikki mustaqil so'z bir xil huquqda birikkan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#1714f8ca"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "kitobxon",
+        "oshqozon",
+        "guldasta",
+        "beliboq"
+      ],
+      "t": 0,
+      "izoh": "«kitobxon» — qo'shimcha bilan yasalgan so'z: u «kitob» asosiga «-xon» qo'shimchasi qo'shilgan. Qolgan uchtasi esa qo'shma so'z: «beliboq» — ikki asos — «bel» va «bog'» qo'shilib, bitta so'z hosil qilgan; «oshqozon» — «osh» va «qozon» asoslari qo'shilib, bitta so'zga aylangan; «guldasta» — «gul» va «dasta» asoslari qo'shilib, bitta so'z bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#24729733"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "katta-katta",
+        "bo'lak-bo'lak",
+        "sekin-sekin",
+        "gultojixo'roz"
+      ],
+      "t": 3,
+      "izoh": "«gultojixo'roz» — qo'shma so'z: u bir necha asos birikib, bitta so'z hosil qilgan. Qolgan uchtasi esa takroriy so'z: «katta-katta», «sekin-sekin» va «bo'lak-bo'lak» — bitta so'z aynan takrorlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#7bc2b1a2"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "tez-tez",
+        "idish-tovoq",
+        "aka-uka",
+        "ota-ona"
+      ],
+      "t": 0,
+      "izoh": "«tez-tez» — takroriy so'z: u bitta so'z aynan takrorlangan. Qolgan uchtasi esa juft so'z: «idish-tovoq» — ikki so'z birikib, umumlashgan ma'no bergan; «aka-uka» — ikki mustaqil so'z bir xil huquqda birikkan; «ota-ona» — ikki mustaqil so'z chiziqcha bilan yonma-yon kelgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#c1034da6"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "gulzor",
+        "katta-katta",
+        "asta-asta",
+        "guruh-guruh"
+      ],
+      "t": 0,
+      "izoh": "«gulzor» — qo'shimcha bilan yasalgan so'z: u «gul» asosiga «-zor» qo'shimchasi qo'shilgan. Qolgan uchtasi esa takroriy so'z: «guruh-guruh» va «katta-katta» — bitta so'z aynan takrorlangan; «asta-asta» — bitta so'z aynan takrorlanib, ma'no kuchaytirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#0d4eb7d4"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "guldasta",
+        "kitobxona",
+        "gultojixo'roz",
+        "toshko'mir"
+      ],
+      "t": 1,
+      "izoh": "«kitobxona» — qo'shimcha bilan yasalgan so'z: u «kitob» asosiga «-xona» qo'shimchasi qo'shilgan. Qolgan uchtasi esa qo'shma so'z: «guldasta» — «gul» va «dasta» asoslari qo'shilib, bitta so'z bo'lgan; «gultojixo'roz» — bir necha asos birikib, bitta so'z hosil qilgan; «toshko'mir» — «tosh» va «ko'mir» asoslari birikib, bitta so'z bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#d5c798a6"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "to'p-to'p",
+        "er-xotin",
+        "oz-oz",
+        "katta-katta"
+      ],
+      "t": 1,
+      "izoh": "«er-xotin» — juft so'z: u ikki mustaqil so'z bir xil huquqda birikkan. Qolgan uchtasi esa takroriy so'z: «to'p-to'p» va «katta-katta» — bitta so'z aynan takrorlangan; «oz-oz» — bitta so'z aynan takrorlanib, ma'no kuchaytirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#638636b8"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "kiyim-kechak",
+        "idish-tovoq",
+        "tez-tez",
+        "bola-chaqa"
+      ],
+      "t": 2,
+      "izoh": "«tez-tez» — takroriy so'z: u bitta so'z aynan takrorlangan. Qolgan uchtasi esa juft so'z: «kiyim-kechak» — ikki so'z bir xil huquqda birikkan, umumlashgan ma'no bergan; «idish-tovoq» va «bola-chaqa» — ikki so'z birikib, umumlashgan ma'no bergan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#cc9ab14e"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "to'p-to'p",
+        "tez-tez",
+        "toshko'mir",
+        "asta-asta"
+      ],
+      "t": 2,
+      "izoh": "«toshko'mir» — qo'shma so'z: u «tosh» va «ko'mir» asoslari birikib, bitta so'z bo'lgan. Qolgan uchtasi esa takroriy so'z: «tez-tez» va «to'p-to'p» — bitta so'z aynan takrorlangan; «asta-asta» — bitta so'z aynan takrorlanib, ma'no kuchaytirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#67902c33"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "aka-uka",
+        "bola-chaqa",
+        "kuchsiz",
+        "er-xotin"
+      ],
+      "t": 2,
+      "izoh": "«kuchsiz» — qo'shimcha bilan yasalgan so'z: u «kuch» asosiga «-siz» qo'shimchasi qo'shilgan. Qolgan uchtasi esa juft so'z: «aka-uka» va «er-xotin» — ikki mustaqil so'z bir xil huquqda birikkan; «bola-chaqa» — ikki so'z birikib, umumlashgan ma'no bergan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#a2b1bc20"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "aka-uka",
+        "paxtakor",
+        "er-xotin",
+        "kecha-kunduz"
+      ],
+      "t": 1,
+      "izoh": "«paxtakor» — qo'shimcha bilan yasalgan so'z: u «paxta» asosiga «-kor» qo'shimchasi qo'shilgan. Qolgan uchtasi esa juft so'z: «aka-uka» va «er-xotin» — ikki mustaqil so'z bir xil huquqda birikkan; «kecha-kunduz» — ikki qarama-qarshi ma'noli so'z bir xil huquqda birikkan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#45e6bbcb"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "oz-oz",
+        "oqsoqol",
+        "kungaboqar",
+        "gultojixo'roz"
+      ],
+      "t": 0,
+      "izoh": "«oz-oz» — takroriy so'z: u bitta so'z aynan takrorlanib, ma'no kuchaytirilgan. Qolgan uchtasi esa qo'shma so'z: «oqsoqol» — «oq» va «soqol» asoslari birikib, bitta so'z hosil qilgan; «kungaboqar» — «kunga» va «boqar» qismlari birikib, bitta so'z hosil qilgan; «gultojixo'roz» — bir necha asos birikib, bitta so'z hosil qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#46778740"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "bo'lak-bo'lak",
+        "bog'bon",
+        "ishchan",
+        "temirchi"
+      ],
+      "t": 0,
+      "izoh": "«bo'lak-bo'lak» — takroriy so'z: u bitta so'z aynan takrorlangan. Qolgan uchtasi esa qo'shimcha bilan yasalgan so'z: «ishchan» — «ish» asosiga «-chan» qo'shimchasi qo'shilgan; xuddi shunday «bog'bon» — «bog'» va «-bon»; «temirchi» — «temir» va «-chi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#2dd0a127"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "sinfdosh",
+        "katta-kichik",
+        "yosh-yalang",
+        "ota-ona"
+      ],
+      "t": 0,
+      "izoh": "«sinfdosh» — qo'shimcha bilan yasalgan so'z: u «sinf» asosiga «-dosh» qo'shimchasi qo'shilgan. Qolgan uchtasi esa juft so'z: «katta-kichik» — ikki qarama-qarshi ma'noli so'z bir xil huquqda birikkan; «yosh-yalang» — ikki so'z birikib, umumlashgan ma'no bergan; «ota-ona» — ikki mustaqil so'z chiziqcha bilan yonma-yon kelgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m04-soz-yasalishi#95161f65"
+    },
+    {
+      "q": "Qaysi javobda qo'shma so'z berilgan?",
+      "v": [
+        "oshqozon",
+        "aka-uka",
+        "aqlli",
+        "gulzor"
+      ],
+      "t": 0,
+      "izoh": "«oshqozon» — «osh» va «qozon» asoslari qo'shilib, bitta so'zga aylangan, shu bois u qo'shma so'z. Boshqalari: «aka-uka» — ikki mustaqil so'z bir xil huquqda birikkan; «aqlli» — «aql» asosiga «-li» qo'shimchasi qo'shilgan; xuddi shunday «gulzor» — «gul» va «-zor».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#041abf59"
+    },
+    {
+      "q": "Quyidagilardan takroriy so'z ni toping.",
+      "v": [
+        "kuchsiz",
+        "asta-asta",
+        "kitobxon",
+        "sinfdosh"
+      ],
+      "t": 1,
+      "izoh": "«asta-asta» — bitta so'z aynan takrorlanib, ma'no kuchaytirilgan, shu bois u takroriy so'z. Boshqalari: «kuchsiz» — «kuch» asosiga «-siz» qo'shimchasi qo'shilgan; xuddi shunday «kitobxon» — «kitob» va «-xon»; «sinfdosh» — «sinf» va «-dosh».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#a93934ed"
+    },
+    {
+      "q": "Quyidagilardan qo'shma so'z ni toping.",
+      "v": [
+        "mehnatkash",
+        "ishchan",
+        "sabzavotchi",
+        "gultojixo'roz"
+      ],
+      "t": 3,
+      "izoh": "«gultojixo'roz» — bir necha asos birikib, bitta so'z hosil qilgan, shu bois u qo'shma so'z. Boshqalari: «ishchan» — «ish» asosiga «-chan» qo'shimchasi qo'shilgan; xuddi shunday «sabzavotchi» — «sabzavot» va «-chi»; «mehnatkash» — «mehnat» va «-kash».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#330da7e9"
+    },
+    {
+      "q": "Qaysi javobda takroriy so'z berilgan?",
+      "v": [
+        "yosh-yalang",
+        "bo'lak-bo'lak",
+        "suvsiz",
+        "oshqozon"
+      ],
+      "t": 1,
+      "izoh": "«bo'lak-bo'lak» — bitta so'z aynan takrorlangan, shu bois u takroriy so'z. Boshqalari: «yosh-yalang» — ikki so'z birikib, umumlashgan ma'no bergan; «suvsiz» — «suv» asosiga «-siz» qo'shimchasi qo'shilgan; «oshqozon» — «osh» va «qozon» asoslari qo'shilib, bitta so'zga aylangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#2ab21e4a"
+    },
+    {
+      "q": "Qaysi javobdagi so'z qo'shma so'z sanaladi?",
+      "v": [
+        "katta-katta",
+        "asta-asta",
+        "to'p-to'p",
+        "beliboq"
+      ],
+      "t": 3,
+      "izoh": "«beliboq» — qo'shma so'z: u ikki asos — «bel» va «bog'» qo'shilib, bitta so'z hosil qilgan. Qolgan javoblar boshqa guruhga oid: «katta-katta», «asta-asta» va «to'p-to'p» — takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#bbccf042"
+    },
+    {
+      "q": "Qaysi so'z qo'shimcha bilan yasalgan so'z deb baholanadi?",
+      "v": [
+        "oqsoqol",
+        "guldasta",
+        "toshko'mir",
+        "aybdor"
+      ],
+      "t": 3,
+      "izoh": "«aybdor» — qo'shimcha bilan yasalgan so'z: u «ayb» asosiga «-dor» qo'shimchasi qo'shilgan. Qolgan javoblar boshqa guruhga oid: «oqsoqol», «toshko'mir» va «guldasta» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#019a7a55"
+    },
+    {
+      "q": "Berilganlardan qaysisi qo'shimcha bilan yasalgan so'z hisoblanadi?",
+      "v": [
+        "asta-asta",
+        "gulzor",
+        "bo'lak-bo'lak",
+        "guruh-guruh"
+      ],
+      "t": 1,
+      "izoh": "«gulzor» — qo'shimcha bilan yasalgan so'z: u «gul» asosiga «-zor» qo'shimchasi qo'shilgan. Qolgan javoblar boshqa guruhga oid: «asta-asta», «bo'lak-bo'lak» va «guruh-guruh» — takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#1e9e11d6"
+    },
+    {
+      "q": "Quyidagilardan qaysisi juft so'zga misol bo'la oladi?",
+      "v": [
+        "belkurak",
+        "er-xotin",
+        "sartarosh",
+        "oqsoqol"
+      ],
+      "t": 1,
+      "izoh": "«er-xotin» — juft so'z: u ikki mustaqil so'z bir xil huquqda birikkan. Qolgan javoblar boshqa guruhga oid: «belkurak», «sartarosh» va «oqsoqol» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#c86aaaa3"
+    },
+    {
+      "q": "Qaysi javobdagi so'z juft so'z sanaladi?",
+      "v": [
+        "ertapishar",
+        "toshko'mir",
+        "quda-anda",
+        "guldasta"
+      ],
+      "t": 2,
+      "izoh": "«quda-anda» — juft so'z: u ikki so'z bir xil huquqda birikib, umumlashgan ma'no bergan. Qolgan javoblar boshqa guruhga oid: «ertapishar», «toshko'mir» va «guldasta» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#e7e2860c"
+    },
+    {
+      "q": "Quyidagilardan qaysisi qo'shma so'zga misol bo'la oladi?",
+      "v": [
+        "kuchsiz",
+        "suvsiz",
+        "gultojixo'roz",
+        "mehnatkash"
+      ],
+      "t": 2,
+      "izoh": "«gultojixo'roz» — qo'shma so'z: u bir necha asos birikib, bitta so'z hosil qilgan. Qolgan javoblar boshqa guruhga oid: «kuchsiz», «suvsiz» va «mehnatkash» — qo'shimcha bilan yasalgan so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#4f2f0da5"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida takroriy so'z berilgan?",
+      "v": [
+        "kitobxon",
+        "sinfdosh",
+        "paxtakor",
+        "sekin-sekin"
+      ],
+      "t": 3,
+      "izoh": "«sekin-sekin» — takroriy so'z: u bitta so'z aynan takrorlangan. Qolgan javoblar boshqa guruhga oid: «sinfdosh», «paxtakor» va «kitobxon» — qo'shimcha bilan yasalgan so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#8807290e"
+    },
+    {
+      "q": "Qaysi so'z takroriy so'z deb baholanadi?",
+      "v": [
+        "sinfdosh",
+        "guruh-guruh",
+        "toshloq",
+        "sabzavotchi"
+      ],
+      "t": 1,
+      "izoh": "«guruh-guruh» — takroriy so'z: u bitta so'z aynan takrorlangan. Qolgan javoblar boshqa guruhga oid: «sinfdosh», «toshloq» va «sabzavotchi» — qo'shimcha bilan yasalgan so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#a7adddf7"
+    },
+    {
+      "q": "Berilganlardan qaysisi qo'shimcha bilan yasalgan so'z hisoblanadi?",
+      "v": [
+        "kecha-kunduz",
+        "temirchi",
+        "idish-tovoq",
+        "kiyim-kechak"
+      ],
+      "t": 1,
+      "izoh": "«temirchi» — qo'shimcha bilan yasalgan so'z: u «temir» asosiga «-chi» qo'shimchasi qo'shilgan. Qolgan javoblar boshqa guruhga oid: «kecha-kunduz», «idish-tovoq» va «kiyim-kechak» — juft so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#7fd6cdf9"
+    },
+    {
+      "q": "Berilganlardan qaysisi qo'shma so'z hisoblanadi?",
+      "v": [
+        "to'p-to'p",
+        "guruh-guruh",
+        "asta-asta",
+        "guldasta"
+      ],
+      "t": 3,
+      "izoh": "«guldasta» — qo'shma so'z: u «gul» va «dasta» asoslari qo'shilib, bitta so'z bo'lgan. Qolgan javoblar boshqa guruhga oid: «to'p-to'p», «guruh-guruh» va «asta-asta» — takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#a0119413"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida juft so'z berilgan?",
+      "v": [
+        "kungaboqar",
+        "toshko'mir",
+        "katta-kichik",
+        "beliboq"
+      ],
+      "t": 2,
+      "izoh": "«katta-kichik» — juft so'z: u ikki qarama-qarshi ma'noli so'z bir xil huquqda birikkan. Qolgan javoblar boshqa guruhga oid: «kungaboqar», «toshko'mir» va «beliboq» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#9c811e84"
+    },
+    {
+      "q": "Berilganlardan qaysisi qo'shma so'z hisoblanadi?",
+      "v": [
+        "to'p-to'p",
+        "beliboq",
+        "tez-tez",
+        "katta-katta"
+      ],
+      "t": 1,
+      "izoh": "«beliboq» — qo'shma so'z: u ikki asos — «bel» va «bog'» qo'shilib, bitta so'z hosil qilgan. Qolgan javoblar boshqa guruhga oid: «to'p-to'p», «tez-tez» va «katta-katta» — takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#a9d08964"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar juft so'z sanaladi?",
+      "v": [
+        "kecha-kunduz, yosh-yalang, gultojixo'roz",
+        "bola-chaqa, kecha-kunduz, kitobxon",
+        "er-xotin, kiyim-kechak, aka-uka",
+        "guruh-guruh, bola-chaqa, quda-anda"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri qatordagi uchala so'z ham juft so'z: «er-xotin» va «aka-uka» — ikki mustaqil so'z bir xil huquqda birikkan; «kiyim-kechak» — ikki so'z bir xil huquqda birikkan, umumlashgan ma'no bergan. Qolgan qatorlarga begona so'z aralashgan: «gultojixo'roz» — qo'shma so'z; «kitobxon» — qo'shimcha bilan yasalgan so'z; «guruh-guruh» — takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#07b04e95"
+    },
+    {
+      "q": "Qaysi qatorda faqat takroriy so'z berilgan?",
+      "v": [
+        "to'p-to'p, oz-oz, bo'lak-bo'lak",
+        "bo'lak-bo'lak, oz-oz, toshko'mir",
+        "sartarosh, oz-oz, asta-asta",
+        "oz-oz, idish-tovoq, tez-tez"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham takroriy so'z: «to'p-to'p» va «bo'lak-bo'lak» — bitta so'z aynan takrorlangan; «oz-oz» — bitta so'z aynan takrorlanib, ma'no kuchaytirilgan. Qolgan qatorlarga begona so'z aralashgan: «toshko'mir» va «sartarosh» — qo'shma so'z; «idish-tovoq» — juft so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#aece5599"
+    },
+    {
+      "q": "Qaysi qatorda faqat takroriy so'z berilgan?",
+      "v": [
+        "katta-katta, oshqozon, guruh-guruh",
+        "to'p-to'p, guruh-guruh, sekin-sekin",
+        "asta-asta, oz-oz, bola-chaqa",
+        "ishchan, sekin-sekin, asta-asta"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham takroriy so'z: «to'p-to'p», «guruh-guruh» va «sekin-sekin» — bitta so'z aynan takrorlangan. Qolgan qatorlarga begona so'z aralashgan: «oshqozon» — qo'shma so'z; «ishchan» — qo'shimcha bilan yasalgan so'z; «bola-chaqa» — juft so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#9e86e0e3"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar takroriy so'z sanaladi?",
+      "v": [
+        "asta-asta, tez-tez, guruh-guruh",
+        "bilimdon, oz-oz, tez-tez",
+        "mehnatkash, to'p-to'p, guruh-guruh",
+        "kecha-kunduz, katta-katta, to'p-to'p"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham takroriy so'z: «asta-asta» — bitta so'z aynan takrorlanib, ma'no kuchaytirilgan; «tez-tez» va «guruh-guruh» — bitta so'z aynan takrorlangan. Qolgan qatorlarga begona so'z aralashgan: «bilimdon» va «mehnatkash» — qo'shimcha bilan yasalgan so'z; «kecha-kunduz» — juft so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#95926e13"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar takroriy so'z sanaladi?",
+      "v": [
+        "bo'lak-bo'lak, asta-asta, oz-oz",
+        "sinfdosh, asta-asta, bo'lak-bo'lak",
+        "asta-asta, bola-chaqa, sekin-sekin",
+        "tez-tez, oz-oz, kiyim-kechak"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham takroriy so'z: «bo'lak-bo'lak» — bitta so'z aynan takrorlangan; «asta-asta» va «oz-oz» — bitta so'z aynan takrorlanib, ma'no kuchaytirilgan. Qolgan qatorlarga begona so'z aralashgan: «kiyim-kechak» va «bola-chaqa» — juft so'z; «sinfdosh» — qo'shimcha bilan yasalgan so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#a32b6cd4"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar qo'shma so'z sanaladi?",
+      "v": [
+        "kungaboqar, gultojixo'roz, toshko'mir",
+        "gultojixo'roz, beliboq, toshloq",
+        "toshko'mir, guldasta, to'p-to'p",
+        "er-xotin, toshko'mir, sartarosh"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham qo'shma so'z: «kungaboqar» — «kunga» va «boqar» qismlari birikib, bitta so'z hosil qilgan; «gultojixo'roz» — bir necha asos birikib, bitta so'z hosil qilgan; «toshko'mir» — «tosh» va «ko'mir» asoslari birikib, bitta so'z bo'lgan. Qolgan qatorlarga begona so'z aralashgan: «toshloq» — qo'shimcha bilan yasalgan so'z; «to'p-to'p» — takroriy so'z; «er-xotin» — juft so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#122bd1a6"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham juft so'zga misol bo'ladi?",
+      "v": [
+        "kecha-kunduz, ota-ona, kiyim-kechak",
+        "yosh-yalang, katta-kichik, aqlli",
+        "bola-chaqa, ota-ona, katta-katta",
+        "ertapishar, kecha-kunduz, yosh-yalang"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham juft so'z: «kecha-kunduz» — ikki qarama-qarshi ma'noli so'z bir xil huquqda birikkan; «ota-ona» — ikki mustaqil so'z chiziqcha bilan yonma-yon kelgan; «kiyim-kechak» — ikki so'z bir xil huquqda birikkan, umumlashgan ma'no bergan. Qolgan qatorlarga begona so'z aralashgan: «ertapishar» — qo'shma so'z; «aqlli» — qo'shimcha bilan yasalgan so'z; «katta-katta» — takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#cc7e6c7a"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq qo'shma so'zga oid?",
+      "v": [
+        "belkurak, to'p-to'p, gultojixo'roz",
+        "ertapishar, do'stlik, belkurak",
+        "oshqozon, oqsoqol, beliboq",
+        "bo'lak-bo'lak, toshko'mir, gultojixo'roz"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri qatordagi uchala so'z ham qo'shma so'z: «oshqozon» — «osh» va «qozon» asoslari qo'shilib, bitta so'zga aylangan; «oqsoqol» — «oq» va «soqol» asoslari birikib, bitta so'z hosil qilgan; «beliboq» — ikki asos — «bel» va «bog'» qo'shilib, bitta so'z hosil qilgan. Qolgan qatorlarga begona so'z aralashgan: «to'p-to'p» va «bo'lak-bo'lak» — takroriy so'z; «do'stlik» — qo'shimcha bilan yasalgan so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#92bfbcf8"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq qo'shimcha bilan yasalgan so'zga oid?",
+      "v": [
+        "tez-tez, sabzavotchi, sinfdosh",
+        "ertapishar, sabzavotchi, kitobxon",
+        "er-xotin, kitobxon, aqlli",
+        "bog'bon, kuzgi, bolalik"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham qo'shimcha bilan yasalgan so'z: «bog'bon» — «bog'» asosiga «-bon» qo'shimchasi qo'shilgan; xuddi shunday «kuzgi» — «kuz» va «-gi»; «bolalik» — «bola» va «-lik». Qolgan qatorlarga begona so'z aralashgan: «ertapishar» — qo'shma so'z; «er-xotin» — juft so'z; «tez-tez» — takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#75cbab7b"
+    },
+    {
+      "q": "Qaysi qatorda faqat qo'shma so'z berilgan?",
+      "v": [
+        "sekin-sekin, gultojixo'roz, beliboq",
+        "beliboq, bo'lak-bo'lak, ertapishar",
+        "to'p-to'p, belkurak, oqsoqol",
+        "sartarosh, gultojixo'roz, oqsoqol"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham qo'shma so'z: «sartarosh» — «sar» va «tarosh» asoslari birikib, bitta so'z bo'lgan; «gultojixo'roz» — bir necha asos birikib, bitta so'z hosil qilgan; «oqsoqol» — «oq» va «soqol» asoslari birikib, bitta so'z hosil qilgan. Qolgan qatorlarga begona so'z aralashgan: «sekin-sekin», «to'p-to'p» va «bo'lak-bo'lak» — takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#65cc9346"
+    },
+    {
+      "q": "Qaysi qatorda faqat qo'shimcha bilan yasalgan so'z berilgan?",
+      "v": [
+        "sabzavotchi, gulzor, er-xotin",
+        "bolalik, toshloq, belkurak",
+        "oqsoqol, kitobxona, do'stlik",
+        "aybdor, terakzor, ishchan"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham qo'shimcha bilan yasalgan so'z: «aybdor» — «ayb» asosiga «-dor» qo'shimchasi qo'shilgan; xuddi shunday «terakzor» — «terak» va «-zor»; «ishchan» — «ish» va «-chan». Qolgan qatorlarga begona so'z aralashgan: «er-xotin» — juft so'z; «belkurak» va «oqsoqol» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#ac0d65f8"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar juft so'z sanaladi?",
+      "v": [
+        "sabzavotchi, er-xotin, kiyim-kechak",
+        "er-xotin, quda-anda, bola-chaqa",
+        "aka-uka, sekin-sekin, kecha-kunduz",
+        "bo'lak-bo'lak, bola-chaqa, quda-anda"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham juft so'z: «er-xotin» — ikki mustaqil so'z bir xil huquqda birikkan; «quda-anda» — ikki so'z bir xil huquqda birikib, umumlashgan ma'no bergan; «bola-chaqa» — ikki so'z birikib, umumlashgan ma'no bergan. Qolgan qatorlarga begona so'z aralashgan: «sabzavotchi» — qo'shimcha bilan yasalgan so'z; «bo'lak-bo'lak» va «sekin-sekin» — takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#90d219f1"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«to'p-to'p» — takroriy so'z",
+        "«tez-tez» — juft so'z",
+        "«bola-chaqa» — qo'shma so'z",
+        "«bo'lak-bo'lak» — juft so'z"
+      ],
+      "t": 0,
+      "izoh": "«to'p-to'p» — takroriy so'z, chunki u bitta so'z aynan takrorlangan. Boshqa javoblarda baho chalkashtirilgan: «bola-chaqa» aslida juft so'z; «tez-tez» va «bo'lak-bo'lak» aslida takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#79d5a21b"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«paxtakor» — qo'shma so'z",
+        "«gulzor» — takroriy so'z",
+        "«katta-katta» — qo'shma so'z",
+        "«guldasta» — qo'shma so'z"
+      ],
+      "t": 3,
+      "izoh": "«guldasta» — qo'shma so'z, chunki u «gul» va «dasta» asoslari qo'shilib, bitta so'z bo'lgan. Boshqa javoblarda baho chalkashtirilgan: «gulzor» va «paxtakor» aslida qo'shimcha bilan yasalgan so'z; «katta-katta» aslida takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#dd6670ed"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«belkurak» — qo'shma so'z",
+        "«kuzgi» — takroriy so'z",
+        "«guruh-guruh» — juft so'z",
+        "«tuzli» — takroriy so'z"
+      ],
+      "t": 0,
+      "izoh": "«belkurak» — qo'shma so'z, chunki u «bel» va «kurak» asoslari qo'shilib, bitta so'z bo'lgan. Boshqa javoblarda baho chalkashtirilgan: «guruh-guruh» aslida takroriy so'z; «kuzgi» va «tuzli» aslida qo'shimcha bilan yasalgan so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#4f3ac600"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«temirchi» — takroriy so'z",
+        "«yosh-yalang» — takroriy so'z",
+        "«katta-kichik» — juft so'z",
+        "«mehnatkash» — juft so'z"
+      ],
+      "t": 2,
+      "izoh": "«katta-kichik» — juft so'z, chunki u ikki qarama-qarshi ma'noli so'z bir xil huquqda birikkan. Boshqa javoblarda baho chalkashtirilgan: «temirchi» va «mehnatkash» aslida qo'shimcha bilan yasalgan so'z; «yosh-yalang» aslida juft so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#934c85a5"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«aka-uka» — qo'shma so'z",
+        "«idish-tovoq» — juft so'z",
+        "«oz-oz» — qo'shma so'z",
+        "«er-xotin» — takroriy so'z"
+      ],
+      "t": 1,
+      "izoh": "«idish-tovoq» — juft so'z, chunki u ikki so'z birikib, umumlashgan ma'no bergan. Boshqa javoblarda baho chalkashtirilgan: «aka-uka» va «er-xotin» aslida juft so'z; «oz-oz» aslida takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#ac1a547e"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«sekin-sekin» — takroriy so'z",
+        "«bog'bon» — qo'shma so'z",
+        "«bo'lak-bo'lak» — juft so'z",
+        "«ishchi» — qo'shma so'z"
+      ],
+      "t": 0,
+      "izoh": "«sekin-sekin» — takroriy so'z, chunki u bitta so'z aynan takrorlangan. Boshqa javoblarda baho chalkashtirilgan: «bog'bon» va «ishchi» aslida qo'shimcha bilan yasalgan so'z; «bo'lak-bo'lak» aslida takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#db8a3b06"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«yosh-yalang» — takroriy so'z",
+        "«belkurak» — takroriy so'z",
+        "«katta-kichik» — takroriy so'z",
+        "«idish-tovoq» — juft so'z"
+      ],
+      "t": 3,
+      "izoh": "«idish-tovoq» — juft so'z, chunki u ikki so'z birikib, umumlashgan ma'no bergan. Boshqa javoblarda baho chalkashtirilgan: «yosh-yalang» va «katta-kichik» aslida juft so'z; «belkurak» aslida qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#0d83358e"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«oshqozon» — takroriy so'z",
+        "«asta-asta» — takroriy so'z",
+        "«to'p-to'p» — juft so'z",
+        "«sinfdosh» — juft so'z"
+      ],
+      "t": 1,
+      "izoh": "«asta-asta» — takroriy so'z, chunki u bitta so'z aynan takrorlanib, ma'no kuchaytirilgan. Boshqa javoblarda baho chalkashtirilgan: «oshqozon» aslida qo'shma so'z; «to'p-to'p» aslida takroriy so'z; «sinfdosh» aslida qo'shimcha bilan yasalgan so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#fc2b7456"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«paxtakor» — qo'shma so'z",
+        "«kecha-kunduz» — takroriy so'z",
+        "«bo'lak-bo'lak» — takroriy so'z",
+        "«kungaboqar» — juft so'z"
+      ],
+      "t": 2,
+      "izoh": "«bo'lak-bo'lak» — takroriy so'z, chunki u bitta so'z aynan takrorlangan. Boshqa javoblarda baho chalkashtirilgan: «paxtakor» aslida qo'shimcha bilan yasalgan so'z; «kecha-kunduz» aslida juft so'z; «kungaboqar» aslida qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#840e1d36"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«bilimdon» — takroriy so'z",
+        "«er-xotin» — takroriy so'z",
+        "«belkurak» — qo'shma so'z",
+        "«yosh-yalang» — qo'shma so'z"
+      ],
+      "t": 2,
+      "izoh": "«belkurak» — qo'shma so'z, chunki u «bel» va «kurak» asoslari qo'shilib, bitta so'z bo'lgan. Boshqa javoblarda baho chalkashtirilgan: «bilimdon» aslida qo'shimcha bilan yasalgan so'z; «er-xotin» va «yosh-yalang» aslida juft so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#afc2bf6d"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«yosh-yalang» — takroriy so'z",
+        "«sabzavotchi» — juft so'z",
+        "«toshko'mir» — qo'shma so'z",
+        "«tuzli» — takroriy so'z"
+      ],
+      "t": 2,
+      "izoh": "«toshko'mir» — qo'shma so'z, chunki u «tosh» va «ko'mir» asoslari birikib, bitta so'z bo'lgan. Boshqa javoblarda baho chalkashtirilgan: «sabzavotchi» va «tuzli» aslida qo'shimcha bilan yasalgan so'z; «yosh-yalang» aslida juft so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#5165f6ea"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«mehnatkash» — juft so'z",
+        "«er-xotin» — juft so'z",
+        "«aka-uka» — qo'shma so'z",
+        "«oz-oz» — juft so'z"
+      ],
+      "t": 1,
+      "izoh": "«er-xotin» — juft so'z, chunki u ikki mustaqil so'z bir xil huquqda birikkan. Boshqa javoblarda baho chalkashtirilgan: «mehnatkash» aslida qo'shimcha bilan yasalgan so'z; «aka-uka» aslida juft so'z; «oz-oz» aslida takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m04-soz-yasalishi#77a2bb8a"
+    },
+    {
+      "q": "Qaysi so'z tarkibida ikkita asos qatnashgan?",
+      "v": [
+        "ishchi",
+        "sinfdosh",
+        "gultojixo'roz",
+        "aybdor"
+      ],
+      "t": 2,
+      "izoh": "«gultojixo'roz» — bir necha asos birikib, bitta so'z hosil qilgan. «ishchi» — «ish» asosiga «-chi» qo'shimchasi qo'shilgan, ya'ni bitta asos; xuddi shunday «sinfdosh» — «sinf» va «-dosh»; «aybdor» — «ayb» va «-dor».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#79b7bc0e"
+    },
+    {
+      "q": "Quyidagilardan qaysisi bir emas, ikki asosdan tuzilgan?",
+      "v": [
+        "bilimdon",
+        "kitobxona",
+        "kuzgi",
+        "toshko'mir"
+      ],
+      "t": 3,
+      "izoh": "«toshko'mir» — «tosh» va «ko'mir» asoslari birikib, bitta so'z bo'lgan. «kitobxona» — «kitob» asosiga «-xona» qo'shimchasi qo'shilgan, ya'ni bitta asos; xuddi shunday «kuzgi» — «kuz» va «-gi»; «bilimdon» — «bilim» va «-don».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#3a78a705"
+    },
+    {
+      "q": "Qaysi so'z tarkibida ikkita asos qatnashgan?",
+      "v": [
+        "ota-ona",
+        "ishchan",
+        "do'stlik",
+        "terakzor"
+      ],
+      "t": 0,
+      "izoh": "«ota-ona» — ikki mustaqil so'z chiziqcha bilan yonma-yon kelgan. «ishchan» — «ish» asosiga «-chan» qo'shimchasi qo'shilgan, ya'ni bitta asos; xuddi shunday «do'stlik» — «do'st» va «-lik»; «terakzor» — «terak» va «-zor».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#44a39df2"
+    },
+    {
+      "q": "Qaysi so'z tarkibida ikkita asos qatnashgan?",
+      "v": [
+        "gulzor",
+        "kuchsiz",
+        "sinfdosh",
+        "aka-uka"
+      ],
+      "t": 3,
+      "izoh": "«aka-uka» — ikki mustaqil so'z bir xil huquqda birikkan. «gulzor» — «gul» asosiga «-zor» qo'shimchasi qo'shilgan, ya'ni bitta asos; xuddi shunday «sinfdosh» — «sinf» va «-dosh»; «kuchsiz» — «kuch» va «-siz».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#a59c7d77"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq takroriy so'zdan iborat emas?",
+      "v": [
+        "sekin-sekin, oz-oz, katta-katta",
+        "oz-oz, tez-tez, to'p-to'p",
+        "yosh-yalang, to'p-to'p, asta-asta",
+        "tez-tez, asta-asta, guruh-guruh"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «yosh-yalang» — juft so'z: u ikki so'z birikib, umumlashgan ma'no bergan. Yonidagi «asta-asta» va «to'p-to'p» esa takroriy so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#c83ce7c4"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri takroriy so'z emas?",
+      "v": [
+        "bo'lak-bo'lak, guruh-guruh, to'p-to'p",
+        "kitobxona, bo'lak-bo'lak, oz-oz",
+        "guruh-guruh, bo'lak-bo'lak, sekin-sekin",
+        "sekin-sekin, guruh-guruh, oz-oz"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «kitobxona» — qo'shimcha bilan yasalgan so'z: u «kitob» asosiga «-xona» qo'shimchasi qo'shilgan. Yonidagi «oz-oz» va «bo'lak-bo'lak» esa takroriy so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#1446a082"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida qo'shimcha bilan yasalgan so'z bo'lmagan so'z bor?",
+      "v": [
+        "to'p-to'p, kitobxon, tuzli",
+        "bilimdon, aqlli, aybdor",
+        "ishchi, sabzavotchi, kuzgi",
+        "paxtakor, sinfdosh, kuzgi"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javobdagi «to'p-to'p» — takroriy so'z: u bitta so'z aynan takrorlangan. Yonidagi «tuzli» va «kitobxon» esa qo'shimcha bilan yasalgan so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#28608575"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq takroriy so'zdan iborat emas?",
+      "v": [
+        "tez-tez, sekin-sekin, bo'lak-bo'lak",
+        "katta-katta, asta-asta, guruh-guruh",
+        "to'p-to'p, asta-asta, gultojixo'roz",
+        "oz-oz, guruh-guruh, bo'lak-bo'lak"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «gultojixo'roz» — qo'shma so'z: u bir necha asos birikib, bitta so'z hosil qilgan. Yonidagi «asta-asta» va «to'p-to'p» esa takroriy so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#32f608d1"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq qo'shimcha bilan yasalgan so'zdan iborat emas?",
+      "v": [
+        "suvsiz, temirchi, kitobxon",
+        "temirchi, kuchsiz, do'stlik",
+        "sabzavotchi, do'stlik, bilimdon",
+        "terakzor, tuzli, oqsoqol"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «oqsoqol» — qo'shma so'z: u «oq» va «soqol» asoslari birikib, bitta so'z hosil qilgan. Yonidagi «tuzli» va «terakzor» esa qo'shimcha bilan yasalgan so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#fb5ec0a6"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq qo'shimcha bilan yasalgan so'zdan iborat emas?",
+      "v": [
+        "kitobxona, gulzor, suvsiz",
+        "kuzgi, paxtakor, ishchan",
+        "kitobxon, aybdor, gulzor",
+        "mehnatkash, sinfdosh, tez-tez"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «tez-tez» — takroriy so'z: u bitta so'z aynan takrorlangan. Yonidagi «sinfdosh» va «mehnatkash» esa qo'shimcha bilan yasalgan so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#0b1bbcb3"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida juft so'z bo'lmagan so'z bor?",
+      "v": [
+        "kiyim-kechak, aka-uka, quda-anda",
+        "quda-anda, yosh-yalang, er-xotin",
+        "kecha-kunduz, ota-ona, tuzli",
+        "bola-chaqa, yosh-yalang, katta-kichik"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «tuzli» — qo'shimcha bilan yasalgan so'z: u «tuz» asosiga «-li» qo'shimchasi qo'shilgan. Yonidagi «ota-ona» va «kecha-kunduz» esa juft so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#3c899314"
+    },
+    {
+      "q": "Uch qatorda faqat qo'shma so'z berilgan. Qaysi qatorga begona so'z aralashgan?",
+      "v": [
+        "ertapishar, gultojixo'roz, asta-asta",
+        "gultojixo'roz, oshqozon, ertapishar",
+        "toshko'mir, oqsoqol, beliboq",
+        "sartarosh, gultojixo'roz, oqsoqol"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javobdagi «asta-asta» — takroriy so'z: u bitta so'z aynan takrorlanib, ma'no kuchaytirilgan. Yonidagi «ertapishar» va «gultojixo'roz» esa qo'shma so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#66dca3e5"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida juft so'z bo'lmagan so'z bor?",
+      "v": [
+        "er-xotin, quda-anda, idish-tovoq",
+        "kitobxona, bola-chaqa, idish-tovoq",
+        "kecha-kunduz, ota-ona, idish-tovoq",
+        "kiyim-kechak, aka-uka, yosh-yalang"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «kitobxona» — qo'shimcha bilan yasalgan so'z: u «kitob» asosiga «-xona» qo'shimchasi qo'shilgan. Yonidagi «bola-chaqa» va «idish-tovoq» esa juft so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#40128d28"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq qo'shimcha bilan yasalgan so'zdan iborat emas?",
+      "v": [
+        "paxtakor, tuzli, bolalik",
+        "suvsiz, aybdor, kitobxon",
+        "tuzli, ishchi, temirchi",
+        "sabzavotchi, bilimdon, asta-asta"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «asta-asta» — takroriy so'z: u bitta so'z aynan takrorlanib, ma'no kuchaytirilgan. Yonidagi «bilimdon» va «sabzavotchi» esa qo'shimcha bilan yasalgan so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#e93b06f5"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq qo'shimcha bilan yasalgan so'zdan iborat emas?",
+      "v": [
+        "temirchi, aqlli, toshloq",
+        "kitobxon, mehnatkash, kuzgi",
+        "paxtakor, to'p-to'p, kuchsiz",
+        "kuzgi, paxtakor, kuchsiz"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «to'p-to'p» — takroriy so'z: u bitta so'z aynan takrorlangan. Yonidagi «kuchsiz» va «paxtakor» esa qo'shimcha bilan yasalgan so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#8ddb9637"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq qo'shimcha bilan yasalgan so'zdan iborat emas?",
+      "v": [
+        "sinfdosh, bog'bon, paxtakor",
+        "kitobxon, kuzgi, oqsoqol",
+        "gulzor, paxtakor, tuzli",
+        "kitobxona, terakzor, gulzor"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «oqsoqol» — qo'shma so'z: u «oq» va «soqol» asoslari birikib, bitta so'z hosil qilgan. Yonidagi «kitobxon» va «kuzgi» esa qo'shimcha bilan yasalgan so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#9c57c83d"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«idish-tovoq» — juft so'z",
+        "«oshqozon» — qo'shma so'z",
+        "«sekin-sekin» — takroriy so'z",
+        "«tuzli» — qo'shma so'z"
+      ],
+      "t": 3,
+      "izoh": "Bu javobda «tuzli» so'ziga qo'shma so'z deb baho berilgan, holbuki u — qo'shimcha bilan yasalgan so'z: «tuz» asosiga «-li» qo'shimchasi qo'shilgan. Qolgan javoblardagi baho o'rinli: «idish-tovoq» rostdan ham juft so'z; «oshqozon» rostdan ham qo'shma so'z; «sekin-sekin» rostdan ham takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#318ba6a5"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi xato?",
+      "v": [
+        "«tez-tez» — qo'shma so'z",
+        "«toshko'mir» — qo'shma so'z",
+        "«oqsoqol» — qo'shma so'z",
+        "«bola-chaqa» — juft so'z"
+      ],
+      "t": 0,
+      "izoh": "Bu javobda «tez-tez» so'ziga qo'shma so'z deb baho berilgan, holbuki u — takroriy so'z: bitta so'z aynan takrorlangan. Qolgan javoblardagi baho o'rinli: «bola-chaqa» rostdan ham juft so'z; «toshko'mir» va «oqsoqol» rostdan ham qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#4e4eb7fc"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«oz-oz» — takroriy so'z",
+        "«bolalik» — takroriy so'z",
+        "«to'p-to'p» — takroriy so'z",
+        "«gultojixo'roz» — qo'shma so'z"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «bolalik» so'ziga takroriy so'z deb baho berilgan, holbuki u — qo'shimcha bilan yasalgan so'z: «bola» asosiga «-lik» qo'shimchasi qo'shilgan. Qolgan javoblardagi baho o'rinli: «oz-oz» va «to'p-to'p» rostdan ham takroriy so'z; «gultojixo'roz» rostdan ham qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#fd01347e"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi xato?",
+      "v": [
+        "«sekin-sekin» — takroriy so'z",
+        "«oshqozon» — qo'shma so'z",
+        "«bola-chaqa» — juft so'z",
+        "«kitobxona» — takroriy so'z"
+      ],
+      "t": 3,
+      "izoh": "Bu javobda «kitobxona» so'ziga takroriy so'z deb baho berilgan, holbuki u — qo'shimcha bilan yasalgan so'z: «kitob» asosiga «-xona» qo'shimchasi qo'shilgan. Qolgan javoblardagi baho o'rinli: «sekin-sekin» rostdan ham takroriy so'z; «oshqozon» rostdan ham qo'shma so'z; «bola-chaqa» rostdan ham juft so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#5a6120a2"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi xato?",
+      "v": [
+        "«sekin-sekin» — takroriy so'z",
+        "«tez-tez» — takroriy so'z",
+        "«beliboq» — juft so'z",
+        "«kiyim-kechak» — juft so'z"
+      ],
+      "t": 2,
+      "izoh": "Bu javobda «beliboq» so'ziga juft so'z deb baho berilgan, holbuki u — qo'shma so'z: ikki asos — «bel» va «bog'» qo'shilib, bitta so'z hosil qilgan. Qolgan javoblardagi baho o'rinli: «sekin-sekin» va «tez-tez» rostdan ham takroriy so'z; «kiyim-kechak» rostdan ham juft so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#e1b184f6"
+    },
+    {
+      "q": "Qaysi javobdagi baho noto'g'ri berilgan?",
+      "v": [
+        "«to'p-to'p» — takroriy so'z",
+        "«yosh-yalang» — juft so'z",
+        "«idish-tovoq» — juft so'z",
+        "«asta-asta» — qo'shma so'z"
+      ],
+      "t": 3,
+      "izoh": "Bu javobda «asta-asta» so'ziga qo'shma so'z deb baho berilgan, holbuki u — takroriy so'z: bitta so'z aynan takrorlanib, ma'no kuchaytirilgan. Qolgan javoblardagi baho o'rinli: «yosh-yalang» va «idish-tovoq» rostdan ham juft so'z; «to'p-to'p» rostdan ham takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#0fb28ee5"
+    },
+    {
+      "q": "Qaysi javobdagi baho noto'g'ri berilgan?",
+      "v": [
+        "«sartarosh» — takroriy so'z",
+        "«tez-tez» — takroriy so'z",
+        "«toshko'mir» — qo'shma so'z",
+        "«guldasta» — qo'shma so'z"
+      ],
+      "t": 0,
+      "izoh": "Bu javobda «sartarosh» so'ziga takroriy so'z deb baho berilgan, holbuki u — qo'shma so'z: «sar» va «tarosh» asoslari birikib, bitta so'z bo'lgan. Qolgan javoblardagi baho o'rinli: «toshko'mir» va «guldasta» rostdan ham qo'shma so'z; «tez-tez» rostdan ham takroriy so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#2c293ae6"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«ertapishar» — qo'shma so'z",
+        "«oz-oz» — takroriy so'z",
+        "«yosh-yalang» — qo'shma so'z",
+        "«bo'lak-bo'lak» — takroriy so'z"
+      ],
+      "t": 2,
+      "izoh": "Bu javobda «yosh-yalang» so'ziga qo'shma so'z deb baho berilgan, holbuki u — juft so'z: ikki so'z birikib, umumlashgan ma'no bergan. Qolgan javoblardagi baho o'rinli: «oz-oz» va «bo'lak-bo'lak» rostdan ham takroriy so'z; «ertapishar» rostdan ham qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#dea2d7cb"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«bola-chaqa» — juft so'z",
+        "«beliboq» — qo'shma so'z",
+        "«toshloq» — takroriy so'z",
+        "«katta-kichik» — juft so'z"
+      ],
+      "t": 2,
+      "izoh": "Bu javobda «toshloq» so'ziga takroriy so'z deb baho berilgan, holbuki u — qo'shimcha bilan yasalgan so'z: «tosh» asosiga «-loq» qo'shimchasi qo'shilgan. Qolgan javoblardagi baho o'rinli: «bola-chaqa» va «katta-kichik» rostdan ham juft so'z; «beliboq» rostdan ham qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m04-soz-yasalishi#8c4d3e3a"
+    }
+  ]
+}

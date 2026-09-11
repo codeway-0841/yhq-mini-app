@@ -1,0 +1,1150 @@
+{
+  "nom": "Days & months (Kun va oylar)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "What day comes after Monday?",
+      "v": [
+        "Tuesday",
+        "Sunday",
+        "Friday",
+        "Saturday"
+      ],
+      "t": 0,
+      "izoh": "Dushanbadan keyin seshanba.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#16dbd8e1"
+    },
+    {
+      "q": "What day comes before Wednesday?",
+      "v": [
+        "Tuesday",
+        "Thursday",
+        "Friday",
+        "Monday"
+      ],
+      "t": 0,
+      "izoh": "Chorshanbadan oldin seshanba.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#58ee6456"
+    },
+    {
+      "q": "Which one is a day of the week?",
+      "v": [
+        "Sunday",
+        "July",
+        "March",
+        "April"
+      ],
+      "t": 0,
+      "izoh": "Sunday - yakshanba, hafta kuni.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#8f4218bf"
+    },
+    {
+      "q": "Which one is a month?",
+      "v": [
+        "June",
+        "Monday",
+        "Friday",
+        "Tuesday"
+      ],
+      "t": 0,
+      "izoh": "June - iyun, oy nomi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#fa566b12"
+    },
+    {
+      "q": "What month comes after June?",
+      "v": [
+        "July",
+        "May",
+        "March",
+        "January"
+      ],
+      "t": 0,
+      "izoh": "Iyundan keyin iyul.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#f26f4c70"
+    },
+    {
+      "q": "What month comes before December?",
+      "v": [
+        "November",
+        "January",
+        "October",
+        "August"
+      ],
+      "t": 0,
+      "izoh": "Dekabrdan oldin noyabr.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#98de3d40"
+    },
+    {
+      "q": "How many days are there in a week?",
+      "v": [
+        "Seven",
+        "Five",
+        "Ten",
+        "Twelve"
+      ],
+      "t": 0,
+      "izoh": "Bir haftada yetti kun.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#c032879f"
+    },
+    {
+      "q": "How many months are there in a year?",
+      "v": [
+        "Twelve",
+        "Ten",
+        "Seven",
+        "Twenty"
+      ],
+      "t": 0,
+      "izoh": "Bir yilda o'n ikki oy.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#6c9e6f04"
+    },
+    {
+      "q": "What is the first month of the year?",
+      "v": [
+        "January",
+        "December",
+        "June",
+        "March"
+      ],
+      "t": 0,
+      "izoh": "Yilning birinchi oyi yanvar.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#66152d9c"
+    },
+    {
+      "q": "Which day is a weekend day?",
+      "v": [
+        "Saturday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "t": 0,
+      "izoh": "Saturday - shanba, dam olish kuni.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#97045aba"
+    },
+    {
+      "q": "Which month is in summer?",
+      "v": [
+        "July",
+        "January",
+        "November",
+        "February"
+      ],
+      "t": 0,
+      "izoh": "Iyul yozgi oy.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#9e2f0523"
+    },
+    {
+      "q": "Which month is in winter?",
+      "v": [
+        "December",
+        "May",
+        "July",
+        "September"
+      ],
+      "t": 0,
+      "izoh": "Dekabr qishki oy.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#e219f720"
+    },
+    {
+      "q": "What day comes after Friday?",
+      "v": [
+        "Saturday",
+        "Monday",
+        "Wednesday",
+        "Sunday"
+      ],
+      "t": 0,
+      "izoh": "Jumadan keyin shanba.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#378ed72e"
+    },
+    {
+      "q": "What month comes after March?",
+      "v": [
+        "April",
+        "May",
+        "June",
+        "February"
+      ],
+      "t": 0,
+      "izoh": "Martdan keyin aprel.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#d44e5553"
+    },
+    {
+      "q": "Which one is the last month of the year?",
+      "v": [
+        "December",
+        "November",
+        "October",
+        "January"
+      ],
+      "t": 0,
+      "izoh": "Yilning oxirgi oyi dekabr.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#a1ff5f0e"
+    },
+    {
+      "q": "Which day comes after Sunday?",
+      "v": [
+        "Monday",
+        "Saturday",
+        "Friday",
+        "Tuesday"
+      ],
+      "t": 0,
+      "izoh": "Yakshanbadan keyin dushanba.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#2c9ec6db"
+    },
+    {
+      "q": "Which day comes before Saturday?",
+      "v": [
+        "Friday",
+        "Sunday",
+        "Monday",
+        "Tuesday"
+      ],
+      "t": 0,
+      "izoh": "Shanbadan oldin juma.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#7849d898"
+    },
+    {
+      "q": "Which of these is a month?",
+      "v": [
+        "January",
+        "Monday",
+        "Friday",
+        "Sunday"
+      ],
+      "t": 0,
+      "izoh": "January — oy.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#7aa40839"
+    },
+    {
+      "q": "Which of these is a day of the week?",
+      "v": [
+        "Wednesday",
+        "March",
+        "August",
+        "April"
+      ],
+      "t": 0,
+      "izoh": "Wednesday — hafta kuni.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#660dc917"
+    },
+    {
+      "q": "Which month comes after June?",
+      "v": [
+        "July",
+        "May",
+        "March",
+        "January"
+      ],
+      "t": 0,
+      "izoh": "Iyundan keyin iyul.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#8e81e4db"
+    },
+    {
+      "q": "Which month comes before December?",
+      "v": [
+        "November",
+        "October",
+        "January",
+        "September"
+      ],
+      "t": 0,
+      "izoh": "Dekabrdan oldin noyabr.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#7cef0485"
+    },
+    {
+      "q": "The first month of the year is ___.",
+      "v": [
+        "January",
+        "December",
+        "June",
+        "March"
+      ],
+      "t": 0,
+      "izoh": "Birinchi oy — January.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#f75cc9f7"
+    },
+    {
+      "q": "The last month of the year is ___.",
+      "v": [
+        "December",
+        "November",
+        "January",
+        "October"
+      ],
+      "t": 0,
+      "izoh": "Oxirgi oy — December.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#1ab2b895"
+    },
+    {
+      "q": "Which day comes after Thursday?",
+      "v": [
+        "Friday",
+        "Wednesday",
+        "Sunday",
+        "Monday"
+      ],
+      "t": 0,
+      "izoh": "Payshanbadan keyin juma.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#343e680e"
+    },
+    {
+      "q": "Which day comes before Wednesday?",
+      "v": [
+        "Tuesday",
+        "Thursday",
+        "Friday",
+        "Sunday"
+      ],
+      "t": 0,
+      "izoh": "Chorshanbadan oldin seshanba.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#c8618660"
+    },
+    {
+      "q": "___ and Sunday are the weekend.",
+      "v": [
+        "Saturday",
+        "Monday",
+        "Tuesday",
+        "March"
+      ],
+      "t": 0,
+      "izoh": "Saturday va Sunday dam olish kunlari.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#7f360d0b"
+    },
+    {
+      "q": "Which month comes after February?",
+      "v": [
+        "March",
+        "January",
+        "April",
+        "December"
+      ],
+      "t": 0,
+      "izoh": "Fevraldan keyin mart.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#826a9e40"
+    },
+    {
+      "q": "In which season is December (in the UK)?",
+      "v": [
+        "winter",
+        "summer",
+        "spring",
+        "autumn"
+      ],
+      "t": 0,
+      "izoh": "Dekabr — qish.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#89f94786"
+    },
+    {
+      "q": "In which season is July (in the UK)?",
+      "v": [
+        "summer",
+        "winter",
+        "spring",
+        "autumn"
+      ],
+      "t": 0,
+      "izoh": "Iyul — yoz.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#fafeea26"
+    },
+    {
+      "q": "Which month comes after September?",
+      "v": [
+        "October",
+        "August",
+        "July",
+        "January"
+      ],
+      "t": 0,
+      "izoh": "Sentabrdan keyin oktabr.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#6b2bf24b"
+    },
+    {
+      "q": "Which day comes after Saturday?",
+      "v": [
+        "Sunday",
+        "Friday",
+        "Monday",
+        "Thursday"
+      ],
+      "t": 0,
+      "izoh": "Shanbadan keyin yakshanba.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#f3d0ecb3"
+    },
+    {
+      "q": "Which of these is NOT a day of the week?",
+      "v": [
+        "April",
+        "Monday",
+        "Friday",
+        "Sunday"
+      ],
+      "t": 0,
+      "izoh": "April — oy, hafta kuni emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#c3be52ff"
+    },
+    {
+      "q": "Which of these is NOT a month?",
+      "v": [
+        "Tuesday",
+        "May",
+        "June",
+        "August"
+      ],
+      "t": 0,
+      "izoh": "Tuesday — hafta kuni, oy emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#38c4fe84"
+    },
+    {
+      "q": "The month after April is ___.",
+      "v": [
+        "May",
+        "March",
+        "June",
+        "July"
+      ],
+      "t": 0,
+      "izoh": "Apreldan keyin may.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#2d2ad384"
+    },
+    {
+      "q": "The day before Monday is ___.",
+      "v": [
+        "Sunday",
+        "Tuesday",
+        "Friday",
+        "Saturday"
+      ],
+      "t": 0,
+      "izoh": "Dushanbadan oldin yakshanba.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#adb57a84"
+    },
+    {
+      "q": "In which season is April (in the UK)?",
+      "v": [
+        "spring",
+        "summer",
+        "winter",
+        "autumn"
+      ],
+      "t": 0,
+      "izoh": "Aprel — bahor.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#88315876"
+    },
+    {
+      "q": "Which month comes before May?",
+      "v": [
+        "April",
+        "June",
+        "March",
+        "July"
+      ],
+      "t": 0,
+      "izoh": "Maydan oldin aprel.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#b2c80940"
+    },
+    {
+      "q": "Today is Tuesday. Tomorrow is ___.",
+      "v": [
+        "Wednesday",
+        "Monday",
+        "Friday",
+        "Sunday"
+      ],
+      "t": 0,
+      "izoh": "Seshanbadan keyin chorshanba.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#93eb84d4"
+    },
+    {
+      "q": "Today is Friday. Yesterday was ___.",
+      "v": [
+        "Thursday",
+        "Saturday",
+        "Sunday",
+        "Monday"
+      ],
+      "t": 0,
+      "izoh": "Jumadan oldin payshanba.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#42305527"
+    },
+    {
+      "q": "The middle day of the week is often ___.",
+      "v": [
+        "Wednesday",
+        "Monday",
+        "Sunday",
+        "Friday"
+      ],
+      "t": 0,
+      "izoh": "Chorshanba — hafta o'rtasi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#832a34fc"
+    },
+    {
+      "q": "Which month comes after November?",
+      "v": [
+        "December",
+        "October",
+        "January",
+        "September"
+      ],
+      "t": 0,
+      "izoh": "Noyabrdan keyin dekabr.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#4def06ba"
+    },
+    {
+      "q": "In which season is October (in the UK)?",
+      "v": [
+        "autumn",
+        "spring",
+        "summer",
+        "winter"
+      ],
+      "t": 0,
+      "izoh": "Oktabr — kuz.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#2ef0696d"
+    },
+    {
+      "q": "What day comes after Tuesday?",
+      "v": [
+        "Wednesday",
+        "Monday",
+        "Tuesday",
+        "Thursday"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#3beae15f"
+    },
+    {
+      "q": "What day comes after Wednesday?",
+      "v": [
+        "Thursday",
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#8fb161e1"
+    },
+    {
+      "q": "What day comes after Thursday?",
+      "v": [
+        "Friday",
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#92823ed6"
+    },
+    {
+      "q": "What day comes after Saturday?",
+      "v": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#d86b9c8d"
+    },
+    {
+      "q": "What day comes after Sunday?",
+      "v": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#ef8e43c7"
+    },
+    {
+      "q": "What day comes before Tuesday?",
+      "v": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#8a737a0a"
+    },
+    {
+      "q": "What day comes before Thursday?",
+      "v": [
+        "Wednesday",
+        "Monday",
+        "Tuesday",
+        "Thursday"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#7103522c"
+    },
+    {
+      "q": "What day comes before Friday?",
+      "v": [
+        "Thursday",
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#7c823ae9"
+    },
+    {
+      "q": "What day comes before Saturday?",
+      "v": [
+        "Friday",
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#850ce529"
+    },
+    {
+      "q": "What day comes before Sunday?",
+      "v": [
+        "Saturday",
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#b3ec20b1"
+    },
+    {
+      "q": "What day comes before Monday?",
+      "v": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#2e0d7156"
+    },
+    {
+      "q": "Which month comes after January?",
+      "v": [
+        "February",
+        "January",
+        "March",
+        "April"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#d4ce7497"
+    },
+    {
+      "q": "Which month comes after March?",
+      "v": [
+        "April",
+        "January",
+        "February",
+        "March"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#71417a5e"
+    },
+    {
+      "q": "Which month comes after April?",
+      "v": [
+        "May",
+        "January",
+        "February",
+        "March"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#2ac8ddfd"
+    },
+    {
+      "q": "Which month comes after May?",
+      "v": [
+        "June",
+        "January",
+        "February",
+        "March"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#90ffebd0"
+    },
+    {
+      "q": "Which month comes after July?",
+      "v": [
+        "August",
+        "January",
+        "February",
+        "March"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#ab4a77ed"
+    },
+    {
+      "q": "Which month comes after August?",
+      "v": [
+        "September",
+        "January",
+        "February",
+        "March"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#0c026c88"
+    },
+    {
+      "q": "Which month comes after October?",
+      "v": [
+        "November",
+        "January",
+        "February",
+        "March"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#4150a1db"
+    },
+    {
+      "q": "Which month comes after December?",
+      "v": [
+        "January",
+        "February",
+        "March",
+        "April"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#b44d698a"
+    },
+    {
+      "q": "Which is the first month of the year?",
+      "v": [
+        "January",
+        "December",
+        "March",
+        "June"
+      ],
+      "t": 0,
+      "izoh": "Yilning 1-oyi - January.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#025e17c7"
+    },
+    {
+      "q": "Which is the second month of the year?",
+      "v": [
+        "February",
+        "January",
+        "April",
+        "March"
+      ],
+      "t": 0,
+      "izoh": "2-oy - February.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#6d24f53c"
+    },
+    {
+      "q": "Which is the third month of the year?",
+      "v": [
+        "March",
+        "May",
+        "February",
+        "July"
+      ],
+      "t": 0,
+      "izoh": "3-oy - March.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#b414010c"
+    },
+    {
+      "q": "Which is the last month of the year?",
+      "v": [
+        "December",
+        "November",
+        "January",
+        "October"
+      ],
+      "t": 0,
+      "izoh": "Oxirgi oy - December.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#a3daf7cd"
+    },
+    {
+      "q": "How many months are there in a year?",
+      "v": [
+        "12",
+        "10",
+        "7",
+        "30"
+      ],
+      "t": 0,
+      "izoh": "Bir yilda 12 oy bor.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#6c9e6f04~2"
+    },
+    {
+      "q": "How many days are there in a week?",
+      "v": [
+        "7",
+        "5",
+        "10",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Bir haftada 7 kun bor.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#c032879f~2"
+    },
+    {
+      "q": "Which month has only 28 days (usually)?",
+      "v": [
+        "February",
+        "January",
+        "March",
+        "April"
+      ],
+      "t": 0,
+      "izoh": "February odatda 28 kun.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#b347e948"
+    },
+    {
+      "q": "Which is the first day of the week (English calendar)?",
+      "v": [
+        "Monday",
+        "Sunday",
+        "Friday",
+        "Saturday"
+      ],
+      "t": 0,
+      "izoh": "Ish haftasi Monday'dan boshlanadi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#3b7619f1"
+    },
+    {
+      "q": "Which two days are the weekend?",
+      "v": [
+        "Saturday and Sunday",
+        "Monday and Tuesday",
+        "Friday and Monday",
+        "Sunday and Monday"
+      ],
+      "t": 0,
+      "izoh": "Dam olish kunlari - Saturday va Sunday.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#33a78285"
+    },
+    {
+      "q": "Which day is a weekend day?",
+      "v": [
+        "Sunday",
+        "Monday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "t": 0,
+      "izoh": "Sunday - dam olish kuni.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#97045aba~2"
+    },
+    {
+      "q": "Which day is NOT a weekend day?",
+      "v": [
+        "Wednesday",
+        "Saturday",
+        "Sunday",
+        "Friday"
+      ],
+      "t": 0,
+      "izoh": "Wednesday ish kuni.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#83e2e9ad"
+    },
+    {
+      "q": "Complete: 'Today is Monday. Tomorrow is ___.'",
+      "v": [
+        "Tuesday",
+        "Sunday",
+        "Friday",
+        "Monday"
+      ],
+      "t": 0,
+      "izoh": "Monday'dan keyin Tuesday.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#c1b4df78"
+    },
+    {
+      "q": "Complete: 'Today is Friday. Yesterday was ___.'",
+      "v": [
+        "Thursday",
+        "Saturday",
+        "Monday",
+        "Sunday"
+      ],
+      "t": 0,
+      "izoh": "Friday'dan oldin Thursday.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#c11047e8"
+    },
+    {
+      "q": "Put the days in order: Wednesday, Monday, Tuesday",
+      "v": [
+        "Monday, Tuesday, Wednesday",
+        "Tuesday, Monday, Wednesday",
+        "Wednesday, Tuesday, Monday",
+        "Monday, Wednesday, Tuesday"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri tartib: Monday, Tuesday, Wednesday.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#07284190"
+    },
+    {
+      "q": "Put the months in order: March, January, February",
+      "v": [
+        "January, February, March",
+        "February, January, March",
+        "March, February, January",
+        "January, March, February"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri tartib: January, February, March.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#a540ae5a"
+    },
+    {
+      "q": "Put the days in order: Sunday, Friday, Saturday",
+      "v": [
+        "Friday, Saturday, Sunday",
+        "Saturday, Friday, Sunday",
+        "Sunday, Saturday, Friday",
+        "Friday, Sunday, Saturday"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri tartib: Friday, Saturday, Sunday.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#950f4c73"
+    },
+    {
+      "q": "Which month comes between May and July?",
+      "v": [
+        "June",
+        "April",
+        "August",
+        "March"
+      ],
+      "t": 0,
+      "izoh": "May va July orasida June.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#ad8703ff"
+    },
+    {
+      "q": "Which day comes between Tuesday and Thursday?",
+      "v": [
+        "Wednesday",
+        "Monday",
+        "Friday",
+        "Sunday"
+      ],
+      "t": 0,
+      "izoh": "Tuesday va Thursday orasida Wednesday.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#43baed04"
+    },
+    {
+      "q": "In which month is New Year's Day (1 January)?",
+      "v": [
+        "January",
+        "December",
+        "March",
+        "May"
+      ],
+      "t": 0,
+      "izoh": "Yangi yil - 1 January.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#419fa1aa"
+    },
+    {
+      "q": "How many days are there in a weekend?",
+      "v": [
+        "2",
+        "1",
+        "3",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Dam olish - 2 kun.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#9b657755"
+    },
+    {
+      "q": "Find the mistake: I play football on saturday.",
+      "v": [
+        "saturday",
+        "play",
+        "football",
+        "on"
+      ],
+      "t": 0,
+      "izoh": "Kun nomi bosh harf bilan: Saturday.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#da29b95c"
+    },
+    {
+      "q": "Find the mistake: School starts in september.",
+      "v": [
+        "september",
+        "School",
+        "starts",
+        "in"
+      ],
+      "t": 0,
+      "izoh": "Oy nomi bosh harf bilan: September.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#e8e658ff"
+    },
+    {
+      "q": "Find the mistake: We have a test on friday.",
+      "v": [
+        "friday",
+        "test",
+        "have",
+        "We"
+      ],
+      "t": 0,
+      "izoh": "Kun nomi bosh harf bilan: Friday.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#331cc518"
+    },
+    {
+      "q": "Which month comes before March?",
+      "v": [
+        "February",
+        "January",
+        "March",
+        "April"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#197e6baa"
+    },
+    {
+      "q": "Which month comes before July?",
+      "v": [
+        "June",
+        "January",
+        "February",
+        "March"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#596952a5"
+    },
+    {
+      "q": "Which month comes before September?",
+      "v": [
+        "August",
+        "January",
+        "February",
+        "March"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#b8a2d930"
+    },
+    {
+      "q": "Which month comes before November?",
+      "v": [
+        "October",
+        "January",
+        "February",
+        "March"
+      ],
+      "t": 0,
+      "izoh": "Kunlar/oylar tartibi.",
+      "qiy": "oson",
+      "id": "ing_a1_m23#e7cde748"
+    }
+  ]
+}

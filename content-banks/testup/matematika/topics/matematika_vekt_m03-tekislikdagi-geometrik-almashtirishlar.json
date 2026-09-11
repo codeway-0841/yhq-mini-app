@@ -1,0 +1,1609 @@
+{
+  "nom": "Tekislikdagi geometrik almashtirishlar",
+  "bolim": "Koordinatalar va vektorlar",
+  "blok": "vekt",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Toshkent metrosining sxemasida A(−4; 7) nuqtada bekat belgilangan. Ushbu bekatning Ox o'qiga nisbatan simmetrik nuqtasi qaysi koordinatalarga ega bo'ladi?",
+      "v": [
+        "(−4; −7)",
+        "(4; 7)",
+        "(4; −7)",
+        "(7; −4)"
+      ],
+      "t": 0,
+      "izoh": "Ox o'qiga nisbatan simmetriyada abssissa o'zgarmaydi, ordinata esa qarama-qarshi ishorani oladi: (x; y) nuqta (x; −y) ga o'tadi. Demak A(−4; 7) nuqtaning tasviri (−4; −7) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqqa-simmetriya-koordinata",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#ef2f501e"
+    },
+    {
+      "q": "B(5; −3) nuqta Oy o'qiga nisbatan akslantirildi. Akslantirish natijasida hosil bo'lgan nuqtaning koordinatalarini ko'rsating.",
+      "v": [
+        "(5; 3)",
+        "(−5; −3)",
+        "(−5; 3)",
+        "(−3; 5)"
+      ],
+      "t": 1,
+      "izoh": "Oy o'qiga nisbatan simmetriyada ordinata saqlanadi, abssissa esa ishorasini almashtiradi: (x; y) nuqta (−x; y) ga o'tadi. B(5; −3) uchun abssissa 5 dan −5 ga o'zgaradi, ordinata −3 bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqqa-simmetriya-koordinata",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#88729fb8"
+    },
+    {
+      "q": "Kesmaning uchlari C(−1; 4) va D(3; 4) nuqtalarda joylashgan. Bu kesma Ox o'qiga nisbatan akslantirilganda hosil bo'lgan kesmaning uchlari qaysilar?",
+      "v": [
+        "(1; 4) va (−3; 4)",
+        "(1; −4) va (−3; −4)",
+        "(−1; −4) va (3; −4)",
+        "(4; −1) va (4; 3)"
+      ],
+      "t": 2,
+      "izoh": "Ox o'qiga nisbatan har bir uch (x; y) dan (x; −y) ga o'tadi. C(−1; 4) uchun tasvir (−1; −4), D(3; 4) uchun tasvir (3; −4) bo'ladi. Abssissalar o'zgarmaydi, chunki akslantirish faqat ordinatani teskari qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oqqa-simmetriya-koordinata",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#ed387d8e"
+    },
+    {
+      "q": "K(−6; 0) nuqta Ox o'qiga nisbatan akslantirilganda o'z o'rnida qoladimi va bu javob nima uchun aynan shunday bo'ladi?",
+      "v": [
+        "Yo'q, u (6; 0) nuqtaga o'tadi",
+        "Yo'q, u (0; −6) nuqtaga o'tadi",
+        "Ha, chunki uning abssissasi manfiy",
+        "Ha, chunki nuqta Ox o'qining o'zida yotadi"
+      ],
+      "t": 3,
+      "izoh": "Akslantirish qoidasi (x; y) nuqtani (x; −y) ga o'tkazadi. Bu yerda y = 0, ya'ni −y = 0. Demak tasvir yana (−6; 0) bo'ladi. Simmetriya o'qida yotgan har qanday nuqta qo'zg'almas nuqta bo'ladi, ishorasi esa ahamiyatsiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqqa-simmetriya-koordinata",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#58de6c64"
+    },
+    {
+      "q": "Shahar bog'idagi fontan koordinata boshida joylashgan. Aylanma yo'lda turgan bolaning o'rni P(3; −8) nuqta bilan berilgan bo'lsa, uning fontanga nisbatan simmetrik nuqtasi qanday koordinatalarga ega?",
+      "v": [
+        "(−3; 8)",
+        "(3; 8)",
+        "(−3; −8)",
+        "(−8; 3)"
+      ],
+      "t": 0,
+      "izoh": "Koordinata boshiga nisbatan markaziy simmetriyada ikkala koordinata ham ishorasini almashtiradi: (x; y) nuqta (−x; −y) ga o'tadi. P(3; −8) uchun abssissa −3, ordinata esa 8 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "markaziy-simmetriya-koordinata",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#bfd936b7"
+    },
+    {
+      "q": "A(7; 2) nuqtaning C(3; 5) markazga nisbatan simmetrik nuqtasi qaysi koordinatalarda joylashadi?",
+      "v": [
+        "(−4; 3)",
+        "(−1; 8)",
+        "(10; 7)",
+        "(−7; −2)"
+      ],
+      "t": 1,
+      "izoh": "C markaz A va A' kesmaning o'rtasi bo'lgani uchun A' = (2a − x; 2b − y) formuladan topiladi. Bu yerda 2·3 − 7 = −1 va 2·5 − 2 = 8. Demak simmetrik nuqta (−1; 8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markaziy-simmetriya-koordinata",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#45657503"
+    },
+    {
+      "q": "Parallelogramm ABCD ning diagonallari kesishish nuqtasi O(2; −1) da, A uchi esa (−3; 4) nuqtada joylashgan. C uchining koordinatalarini toping.",
+      "v": [
+        "(5; −5)",
+        "(−1; 3)",
+        "(7; −6)",
+        "(3; −4)"
+      ],
+      "t": 2,
+      "izoh": "Parallelogramm diagonallari kesishish nuqtasida teng ikkiga bo'linadi, ya'ni O nuqta A va C ga nisbatan simmetriya markazi. Shuning uchun C = (2·2 − (−3); 2·(−1) − 4) = (7; −6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markaziy-simmetriya-koordinata",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#75da1ad4"
+    },
+    {
+      "q": "Sardor xaritada Q(−5; −2) nuqtani M(0; 3) markazga nisbatan simmetrik akslantirdi. Hosil bo'lgan nuqtaning ordinatasi abssissasidan necha birlik katta?",
+      "v": [
+        "0",
+        "−3",
+        "5",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Markaziy simmetriyada Q' = (2·0 − (−5); 2·3 − (−2)) = (5; 8). Endi ordinata bilan abssissa ayirmasini olamiz: 8 − 5 = 3. Demak ordinata abssissadan 3 birlik katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markaziy-simmetriya-koordinata",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#2e344952"
+    },
+    {
+      "q": "Markaziy simmetriyada A(−2; 5) nuqta A'(6; −1) nuqtaga o'tgan bo'lsa, simmetriya markazining koordinatalarini aniqlang.",
+      "v": [
+        "(2; 2)",
+        "(4; 4)",
+        "(4; −6)",
+        "(−4; 6)"
+      ],
+      "t": 0,
+      "izoh": "Simmetriya markazi nuqta bilan uning tasviri orasidagi kesmaning o'rtasi bo'ladi. O'rta nuqta formulasi bo'yicha ((−2 + 6) : 2; (5 + (−1)) : 2) = (2; 2). Ayirma olish emas, aynan o'rtacha qiymat kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-markazini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#510597e1"
+    },
+    {
+      "q": "Uchburchakning A(1; 3) uchi markaziy simmetriyada yana A(1; 3) nuqtaning o'ziga o'tdi. Simmetriya markazi qayerda joylashgan bo'lishi kerak?",
+      "v": [
+        "Koordinata boshida",
+        "(1; 3) nuqtada, ya'ni A ning o'zida",
+        "(2; 6) nuqtada",
+        "Bunday markaz mavjud emas"
+      ],
+      "t": 1,
+      "izoh": "Markaziy simmetriyada faqat bitta qo'zg'almas nuqta bor, u ham bo'lsa simmetriya markazining o'zi. Nuqta o'z o'rnida qolgan ekan, u markaz bilan ustma-ust tushadi. Demak markaz (1; 3) nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-markazini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#5e2b7c86"
+    },
+    {
+      "q": "Zilola naqsh chizmasini markaziy simmetriya bilan ko'chirdi va chizmadagi (4; −7) nuqta (−2; 1) nuqtaga tushdi. Simmetriya markazi qanday koordinatalarga ega?",
+      "v": [
+        "(2; −6)",
+        "(3; −4)",
+        "(1; −3)",
+        "(−3; 4)"
+      ],
+      "t": 2,
+      "izoh": "Markaz nuqta va uning tasviri orasidagi kesmaning o'rtasi: ((4 + (−2)) : 2; (−7 + 1) : 2). Hisoblaymiz: 2 : 2 = 1 va (−6) : 2 = −3. Demak simmetriya markazi (1; −3) nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-markazini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#0a4bce13"
+    },
+    {
+      "q": "Markazi K(0; 4) bo'lgan simmetriyada N nuqta N'(−6; 9) nuqtaga o'tgan bo'lsa, N nuqtaning koordinatalari qanday?",
+      "v": [
+        "(6; −5)",
+        "(6; −9)",
+        "(−6; −1)",
+        "(6; −1)"
+      ],
+      "t": 3,
+      "izoh": "Markaziy simmetriya o'ziga teskari almashtirish, shuning uchun N = (2·0 − (−6); 2·4 − 9). Birinchi koordinata 6, ikkinchisi 8 − 9 = −1. Demak dastlabki nuqta (6; −1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-markazini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#fff2be62"
+    },
+    {
+      "q": "Yuk mashinasining joylashuvi xaritada A(−3; 2) nuqta bilan belgilangan. Mashina (5; −4) vektor bo'yicha parallel ko'chirilsa, uning yangi o'rni qaysi nuqtada bo'ladi?",
+      "v": [
+        "(2; −2)",
+        "(−8; 6)",
+        "(2; 6)",
+        "(−2; 2)"
+      ],
+      "t": 0,
+      "izoh": "Parallel ko'chirishda vektor koordinatalari nuqta koordinatalariga qo'shiladi: (x + m; y + n). Bu yerda −3 + 5 = 2 va 2 + (−4) = −2. Demak yangi o'rin (2; −2) nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallel-kochirish-nuqta",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#9dbb4159"
+    },
+    {
+      "q": "Kvadratning bir uchi B(−2; −5) nuqtada joylashgan. Kvadrat (0; 7) vektorga parallel ko'chirilganda bu uchning yangi koordinatalari qanday bo'ladi?",
+      "v": [
+        "(−2; −12)",
+        "(−2; 2)",
+        "(7; 2)",
+        "(−2; 7)"
+      ],
+      "t": 1,
+      "izoh": "Vektorning abssissasi nol bo'lgani uchun x koordinata o'zgarmaydi: −2 + 0 = −2. Ordinata esa 7 ga ortadi: −5 + 7 = 2. Demak uch (−2; 2) nuqtaga ko'chadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallel-kochirish-nuqta",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#2856a462"
+    },
+    {
+      "q": "Sanoat robotining uchi (1; 6) nuqtada turibdi va u har safar (−2; −1) vektorga siljiydi. Uchinchi siljishdan keyin robot uchi qaysi nuqtada bo'ladi?",
+      "v": [
+        "(−1; 5)",
+        "(−3; 4)",
+        "(−5; 3)",
+        "(−6; −3)"
+      ],
+      "t": 2,
+      "izoh": "Bir xil ko'chirish uch marta takrorlangani uchun umumiy vektor (3·(−2); 3·(−1)) = (−6; −3) bo'ladi. Uni boshlang'ich nuqtaga qo'shamiz: 1 + (−6) = −5 va 6 + (−3) = 3. Demak robot uchi (−5; 3) nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallel-kochirish-nuqta",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#37137077"
+    },
+    {
+      "q": "Dilnoza ekrandagi belgini avval (3; 2) vektorga, so'ngra (−7; 5) vektorga ko'chirdi. Belgi dastlab koordinata boshida turgan bo'lsa, oxirida qaysi nuqtada bo'ladi?",
+      "v": [
+        "(10; −3)",
+        "(−4; 3)",
+        "(4; 7)",
+        "(−4; 7)"
+      ],
+      "t": 3,
+      "izoh": "Ketma-ket ikki ko'chirish bitta ko'chirishga teng, uning vektori esa vektorlar yig'indisi: (3 + (−7); 2 + 5) = (−4; 7). Boshlang'ich nuqta (0; 0) bo'lgani uchun oxirgi nuqta shu vektorning o'zi, ya'ni (−4; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-kochirish-nuqta",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#b52576a1"
+    },
+    {
+      "q": "Parallel ko'chirishda A(−4; 3) nuqta A'(2; −1) nuqtaga o'tdi. Ko'chirish vektorining koordinatalari qanday?",
+      "v": [
+        "(6; −4)",
+        "(−6; 4)",
+        "(−2; 2)",
+        "(6; 4)"
+      ],
+      "t": 0,
+      "izoh": "Ko'chirish vektori tasvir koordinatalaridan boshlang'ich koordinatalar ayirilib topiladi. Abssissa uchun 2 − (−4) = 6, ordinata uchun −1 − 3 = −4. Demak vektor (6; −4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kochirish-vektorini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#13563ba2"
+    },
+    {
+      "q": "Konveyerdagi quti (2; −3) nuqtadan (8; 5) nuqtaga siljidi. Bu siljishni bajargan parallel ko'chirish vektorining uzunligi necha birlikka teng?",
+      "v": [
+        "14",
+        "10",
+        "100",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Avval vektorni topamiz: (8 − 2; 5 − (−3)) = (6; 8). Vektor uzunligi √(6² + 8²) formuladan hisoblanadi: 36 + 64 = 100, √100 = 10. Koordinatalarni oddiy qo'shish emas, Pifagor formulasi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kochirish-vektorini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#56563cbe"
+    },
+    {
+      "q": "Uchburchak ABC parallel ko'chirilganda uning A(1; 1) uchi A'(−3; 6) nuqtaga o'tdi. Shu ko'chirishda B(5; −2) uch qaysi nuqtaga tushadi?",
+      "v": [
+        "(9; −7)",
+        "(2; 4)",
+        "(1; 3)",
+        "(1; −2)"
+      ],
+      "t": 2,
+      "izoh": "Ko'chirish vektori (−3 − 1; 6 − 1) = (−4; 5) ga teng. Shakl butunlay bir xil vektorga siljigani uchun B uchga ham shu vektorni qo'shamiz: (5 + (−4); −2 + 5) = (1; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kochirish-vektorini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#cc33d990"
+    },
+    {
+      "q": "Bir xil ikkita parallel ko'chirish ketma-ket bajarilib, nuqta (−1; 8) holatdan (7; −4) holatga o'tdi. Har bir ko'chirishning vektori qanday?",
+      "v": [
+        "(8; −12)",
+        "(−4; 6)",
+        "(2; −3)",
+        "(4; −6)"
+      ],
+      "t": 3,
+      "izoh": "Umumiy siljish vektori (7 − (−1); −4 − 8) = (8; −12). Ikkala ko'chirish bir xil bo'lgani uchun umumiy vektor bitta vektorning ikki hissasi. Demak har biri (8 : 2; −12 : 2) = (4; −6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kochirish-vektorini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#e1fc41f8"
+    },
+    {
+      "q": "y = 2x² tenglama bilan berilgan parabola (0; −5) vektorga parallel ko'chirildi. Hosil bo'lgan chiziqning tenglamasi qanday bo'ladi?",
+      "v": [
+        "y = 2x² − 5",
+        "y = 2x² + 5",
+        "y = 2(x − 5)²",
+        "y = 2(x + 5)²"
+      ],
+      "t": 0,
+      "izoh": "Vektorning abssissasi nol, ordinatasi −5. Vertikal ko'chirishda tenglamaning o'ng tomoniga ko'chirish miqdori qo'shiladi. Demak y = 2x² + (−5), ya'ni y = 2x² − 5 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallel-kochirish-tenglama",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#0478b2d5"
+    },
+    {
+      "q": "Markazi (3; −1) va radiusi 4 bo'lgan aylana (−5; 2) vektorga parallel ko'chirildi. Yangi aylananing tenglamasini ko'rsating.",
+      "v": [
+        "(x − 2)² + (y + 1)² = 16",
+        "(x + 2)² + (y − 1)² = 16",
+        "(x − 8)² + (y + 3)² = 16",
+        "(x + 2)² + (y − 1)² = 4"
+      ],
+      "t": 1,
+      "izoh": "Parallel ko'chirishda faqat markaz siljiydi, radius o'zgarmaydi. Yangi markaz (3 + (−5); −1 + 2) = (−2; 1). Radius 4 bo'lgani uchun o'ng tomonda 4² = 16 turadi va tenglama (x + 2)² + (y − 1)² = 16 ko'rinishini oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-kochirish-tenglama",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#8cab987f"
+    },
+    {
+      "q": "To'g'ri chiziq y = 3x + 1 tenglama bilan berilgan. U (2; 0) vektorga parallel ko'chirilgandan keyin qaysi tenglamaga ega bo'ladi?",
+      "v": [
+        "y = 3x + 7",
+        "y = 3x + 3",
+        "y = 3x − 5",
+        "y = 3x − 1"
+      ],
+      "t": 2,
+      "izoh": "Gorizontal ko'chirishda tenglamada x o'rniga x − 2 qo'yiladi. Shunda y = 3(x − 2) + 1 = 3x − 6 + 1 = 3x − 5 hosil bo'ladi. Burchak koeffitsienti o'zgarmaydi, chunki chiziq o'z yo'nalishini saqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-kochirish-tenglama",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#db517f65"
+    },
+    {
+      "q": "Parabola y = x² − 6x + 11 ni y = x² ko'rinishiga keltirish uchun uni qaysi vektorga parallel ko'chirish kerak?",
+      "v": [
+        "(3; 2)",
+        "(−3; 2)",
+        "(3; −2)",
+        "(−3; −2)"
+      ],
+      "t": 3,
+      "izoh": "To'liq kvadrat ajratamiz: x² − 6x + 11 = (x − 3)² + 2. Demak parabola uchi (3; 2) nuqtada. Uchni koordinata boshiga qaytarish uchun 3 birlik chapga va 2 birlik pastga siljitish kerak, ya'ni vektor (−3; −2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallel-kochirish-tenglama",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#0a9bed7c"
+    },
+    {
+      "q": "Koordinata boshi atrofida soat strelkasiga teskari yo'nalishda 90° ga burishda A(5; 2) nuqta qaysi nuqtaga o'tadi?",
+      "v": [
+        "(−2; 5)",
+        "(2; −5)",
+        "(−5; 2)",
+        "(5; −2)"
+      ],
+      "t": 0,
+      "izoh": "Soat strelkasiga teskari 90° burishda (x; y) nuqta (−y; x) nuqtaga o'tadi. A(5; 2) uchun yangi abssissa −2, yangi ordinata esa 5 bo'ladi. Demak tasvir (−2; 5) nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burish-90-koordinata",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#dd2d0300"
+    },
+    {
+      "q": "Chizmachilik dasturida (−3; 6) nuqtadagi belgi koordinata boshi atrofida soat strelkasi yo'nalishida 90° ga burildi. Belgi qaysi nuqtaga keladi?",
+      "v": [
+        "(−6; −3)",
+        "(6; 3)",
+        "(6; −3)",
+        "(−6; 3)"
+      ],
+      "t": 1,
+      "izoh": "Soat strelkasi yo'nalishidagi 90° burish qoidasi: (x; y) nuqta (y; −x) ga o'tadi. Bu yerda y = 6, −x = 3. Demak belgi (6; 3) nuqtaga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burish-90-koordinata",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#5f5442e0"
+    },
+    {
+      "q": "OABC kvadratning O uchi koordinata boshida, A uchi esa (4; 0) nuqtada joylashgan. Kvadrat O atrofida soat strelkasiga teskari 90° ga burilsa, A uchi qayerga o'tadi?",
+      "v": [
+        "(0; −4)",
+        "(−4; 0)",
+        "(0; 4)",
+        "(4; 0)"
+      ],
+      "t": 2,
+      "izoh": "Qoidaga ko'ra (x; y) nuqta (−y; x) ga o'tadi. A(4; 0) uchun yangi abssissa −0 = 0, yangi ordinata esa 4. Demak uch Oy o'qining musbat qismidagi (0; 4) nuqtaga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burish-90-koordinata",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#0a64187a"
+    },
+    {
+      "q": "Nuqta koordinata boshi atrofida soat strelkasiga teskari 90° ga burilib (−7; −3) nuqtaga kelgan bo'lsa, dastlabki nuqta qanday koordinatalarga ega edi?",
+      "v": [
+        "(3; −7)",
+        "(−3; −7)",
+        "(7; 3)",
+        "(−3; 7)"
+      ],
+      "t": 3,
+      "izoh": "Berilgan burish (x; y) nuqtani (−y; x) ga o'tkazadi. Demak −y = −7 va x = −3, bundan y = 7. Tekshiramiz: (−3; 7) nuqtani teskari yo'nalishda 90° burganda (−7; −3) hosil bo'ladi. Javob: (−3; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burish-90-koordinata",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#ff208e16"
+    },
+    {
+      "q": "Koordinata boshi atrofida 180° ga burishda D(−9; 4) nuqta qaysi nuqtaga o'tadi va bu almashtirish yana qanday nomlanadi?",
+      "v": [
+        "(9; −4), koordinata boshiga nisbatan markaziy simmetriya",
+        "(9; 4), Oy o'qiga nisbatan simmetriya",
+        "(−9; −4), Ox o'qiga nisbatan simmetriya",
+        "(4; −9), koordinata boshi atrofida 90° ga burish"
+      ],
+      "t": 0,
+      "izoh": "180° ga burishda har bir koordinata ishorasini almashtiradi: (x; y) nuqta (−x; −y) ga o'tadi. Demak D(−9; 4) nuqtaning tasviri (9; −4). Bu qoida markaziy simmetriya qoidasi bilan aynan bir xil, shuning uchun 180° burish markaziy simmetriya deb ham ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burish-180-va-teskari",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#f9a9ee27"
+    },
+    {
+      "q": "Aylanma stolning markazi (2; 3) nuqtada. Stol ustidagi (5; 7) nuqtada turgan buyum stol 180° ga burilgandan keyin qaysi nuqtaga o'tadi?",
+      "v": [
+        "(−5; −7)",
+        "(−1; −1)",
+        "(3; 4)",
+        "(−1; 1)"
+      ],
+      "t": 1,
+      "izoh": "Markazi (2; 3) bo'lgan 180° burish markaziy simmetriyaga teng: tasvir (2a − x; 2b − y) formuladan topiladi. Hisoblaymiz: 2·2 − 5 = −1 va 2·3 − 7 = −1. Demak buyum (−1; −1) nuqtaga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burish-180-va-teskari",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#4a731b39"
+    },
+    {
+      "q": "Nuqta koordinata boshi atrofida soat strelkasiga teskari 270° ga burilganda (−6; 1) nuqtaga keldi. Dastlabki nuqtani toping.",
+      "v": [
+        "(6; −1)",
+        "(1; 6)",
+        "(−1; −6)",
+        "(−6; −1)"
+      ],
+      "t": 2,
+      "izoh": "Teskari yo'nalishdagi 270° burish (x; y) nuqtani (y; −x) ga o'tkazadi. Shartga ko'ra y = −6 va −x = 1, bundan x = −1. Demak dastlabki nuqta (−1; −6) bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burish-180-va-teskari",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#d70d63b2"
+    },
+    {
+      "q": "Kompyuter o'yinida qahramon (8; −5) nuqtada turibdi va u koordinata boshi atrofida 180° ga buriladi. Qahramonning yangi koordinatalari yig'indisi nechaga teng?",
+      "v": [
+        "3",
+        "13",
+        "−13",
+        "−3"
+      ],
+      "t": 3,
+      "izoh": "180° burishda (8; −5) nuqta (−8; 5) nuqtaga o'tadi. Endi yangi koordinatalarni qo'shamiz: −8 + 5 = −3. Dastlabki yig'indi 3 edi, burishdan keyin u qarama-qarshi ishorani oldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burish-180-va-teskari",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#08bc1802"
+    },
+    {
+      "q": "Muntazam sakkizburchak shaklidagi gilam o'z markazi atrofida burilganda dastlabki holati bilan ustma-ust tushadi. Eng kichik musbat burish burchagi qanday?",
+      "v": [
+        "45°",
+        "60°",
+        "90°",
+        "22,5°"
+      ],
+      "t": 0,
+      "izoh": "Muntazam n burchakli shakl markaz atrofida 360° : n burchakka burilganda o'zi bilan mos tushadi. Bu yerda n = 8, demak 360° : 8 = 45°. Undan kichik burchakda uchlar bir-birining o'rniga tushmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burish-burchagini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#c4b2cd8a"
+    },
+    {
+      "q": "Devor soatining daqiqa strelkasi 10 daqiqa davomida soat markazi atrofida necha gradusga buriladi?",
+      "v": [
+        "30°",
+        "60°",
+        "36°",
+        "10°"
+      ],
+      "t": 1,
+      "izoh": "Daqiqa strelkasi 60 daqiqada to'liq bir aylanani, ya'ni 360° ni bosib o'tadi. Demak bir daqiqada 360° : 60 = 6° buriladi. 10 daqiqada esa 6° · 10 = 60° hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burish-burchagini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#1c6ffac7"
+    },
+    {
+      "q": "Tishli g'ildirak 24 ta tishga ega. Uni 9 ta tishga oldinga surish uchun g'ildirakni markazi atrofida necha gradusga burish kerak?",
+      "v": [
+        "120°",
+        "150°",
+        "135°",
+        "216°"
+      ],
+      "t": 2,
+      "izoh": "Bir tishga mos keluvchi burchak 360° : 24 = 15°. To'qqiz tish uchun bu burchakni 9 marta olamiz: 15° · 9 = 135°. Demak g'ildirak 135° ga buriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burish-burchagini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#05ec5f40"
+    },
+    {
+      "q": "Markazi koordinata boshida va koeffitsienti k = 3 bo'lgan gomotetiyada A(−2; 5) nuqta qaysi nuqtaga o'tadi?",
+      "v": [
+        "(6; 15)",
+        "(1; 8)",
+        "(−6; 5)",
+        "(−6; 15)"
+      ],
+      "t": 3,
+      "izoh": "Markazi koordinata boshida bo'lgan gomotetiyada har ikkala koordinata koeffitsientga ko'paytiriladi: (x; y) nuqta (kx; ky) ga o'tadi. Bu yerda 3·(−2) = −6 va 3·5 = 15. Demak tasvir (−6; 15) nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gomotetiya-markaz-boshi",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#08545941"
+    },
+    {
+      "q": "Markazi koordinata boshida va koeffitsienti k = −2 bo'lgan gomotetiyada B(3; −4) nuqtaning tasviri qanday koordinatalarga ega bo'ladi?",
+      "v": [
+        "(−6; 8)",
+        "(6; −8)",
+        "(−6; −8)",
+        "(1; −6)"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsient manfiy bo'lganda nuqta markazning qarama-qarshi tomoniga o'tadi. Koordinatalarni k ga ko'paytiramiz: (−2)·3 = −6 va (−2)·(−4) = 8. Demak tasvir (−6; 8) nuqtada joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gomotetiya-markaz-boshi",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#7f9b50d7"
+    },
+    {
+      "q": "Loyihada nuqta koordinata boshiga nisbatan k = 0,5 koeffitsientli gomotetiya bilan kichraytirildi. C(−9; 7) nuqta qaysi nuqtaga o'tadi?",
+      "v": [
+        "(−18; 14)",
+        "(−4,5; 3,5)",
+        "(−8,5; 6,5)",
+        "(−4,5; 7)"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsient birdan kichik bo'lgani uchun shakl kichrayadi. Koordinatalarni 0,5 ga ko'paytiramiz: 0,5·(−9) = −4,5 va 0,5·7 = 3,5. Demak nuqta (−4,5; 3,5) ga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gomotetiya-markaz-boshi",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#3249f445"
+    },
+    {
+      "q": "Markazi koordinata boshida bo'lgan gomotetiyada uchburchakning P(4; 2) uchi P'(10; 5) nuqtaga o'tdi. Xuddi shu gomotetiyada Q(−6; 8) uch qayerga o'tadi?",
+      "v": [
+        "(−12; 16)",
+        "(−3; 4)",
+        "(−15; 20)",
+        "(−15; 8)"
+      ],
+      "t": 2,
+      "izoh": "Avval koeffitsientni topamiz: 10 : 4 = 2,5 va 5 : 2 = 2,5, ya'ni k = 2,5. Endi shu koeffitsientni Q uchga qo'llaymiz: 2,5·(−6) = −15 va 2,5·8 = 20. Demak tasvir (−15; 20) nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gomotetiya-markaz-boshi",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#ffc8b6aa"
+    },
+    {
+      "q": "Markazi C(1; 2) va koeffitsienti k = 3 bo'lgan gomotetiyada A(4; 6) nuqta qaysi nuqtaga o'tadi?",
+      "v": [
+        "(12; 18)",
+        "(13; 20)",
+        "(7; 10)",
+        "(10; 14)"
+      ],
+      "t": 3,
+      "izoh": "Markaz koordinata boshida bo'lmasa, avval markazdan nuqtagacha bo'lgan siljish olinadi: (4 − 1; 6 − 2) = (3; 4). Uni k ga ko'paytiramiz: (9; 12). So'ng markazga qo'shamiz: (1 + 9; 2 + 12) = (10; 14).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gomotetiya-ixtiyoriy-markaz",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#7118815b"
+    },
+    {
+      "q": "Gomotetiyaning markazi K(−2; 3), koeffitsienti esa k = −1. Bu almashtirish D(5; −1) nuqtani qaysi nuqtaga o'tkazadi?",
+      "v": [
+        "(−9; 7)",
+        "(9; −7)",
+        "(−5; 1)",
+        "(−9; −7)"
+      ],
+      "t": 0,
+      "izoh": "Markazdan nuqtagacha siljish (5 − (−2); −1 − 3) = (7; −4). Uni −1 ga ko'paytiramiz va (−7; 4) hosil bo'ladi. Markazga qo'shamiz: (−2 − 7; 3 + 4) = (−9; 7). Koeffitsienti −1 bo'lgan gomotetiya markazga nisbatan markaziy simmetriya bilan bir xil natija beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gomotetiya-ixtiyoriy-markaz",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#8d98938f"
+    },
+    {
+      "q": "Kartograf xaritani B(6; 6) nuqtani markaz qilib 1/3 koeffitsient bilan kichraytirdi. Xaritadagi E(−3; 15) nuqta qaysi nuqtaga ko'chadi?",
+      "v": [
+        "(−1; 5)",
+        "(3; 9)",
+        "(9; 3)",
+        "(0; 12)"
+      ],
+      "t": 1,
+      "izoh": "Markazdan nuqtagacha siljish (−3 − 6; 15 − 6) = (−9; 9). Uni uchdan biriga qisqartiramiz: (−3; 3). Markazga qo'shsak (6 − 3; 6 + 3) = (3; 9) chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gomotetiya-ixtiyoriy-markaz",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#dcc5cb0f"
+    },
+    {
+      "q": "Gomotetiyaning markazi F(0; −4), koeffitsienti k = 2. Bu almashtirishda F nuqtaning o'zi qayerga o'tadi va nima uchun?",
+      "v": [
+        "(0; −8) nuqtaga o'tadi",
+        "(0; 0) nuqtaga o'tadi",
+        "(0; −4) da qoladi, chunki markaz qo'zg'almas nuqta",
+        "(0; 4) nuqtaga o'tadi"
+      ],
+      "t": 2,
+      "izoh": "Markazdan markazgacha bo'lgan siljish nol vektorga teng, uni istalgan koeffitsientga ko'paytirsak yana nol chiqadi. Shuning uchun gomotetiya markazi har doim o'z o'rnida qoladi. Demak F(0; −4) nuqta o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gomotetiya-ixtiyoriy-markaz",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#d143d680"
+    },
+    {
+      "q": "Gomotetiyaning markazi koordinata boshida. Bu almashtirishda M(6; −8) nuqta M'(−3; 4) nuqtaga o'tgan bo'lsa, gomotetiya koeffitsienti nechaga teng?",
+      "v": [
+        "0,5",
+        "−2",
+        "2",
+        "−0,5"
+      ],
+      "t": 3,
+      "izoh": "Koeffitsient tasvir koordinatasini boshlang'ich koordinataga bo'lib topiladi: (−3) : 6 = −0,5. Ikkinchi koordinata ham tekshiriladi: 4 : (−8) = −0,5. Ikkala nisbat mos kelgani uchun k = −0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gomotetiya-koeffitsientini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#86dbdf40"
+    },
+    {
+      "q": "Ikki o'xshash uchburchakning mos tomonlari 12 sm va 30 sm ga teng. Kichigidan kattasiga o'tkazuvchi gomotetiyaning koeffitsienti musbat bo'lsa, u nechaga teng?",
+      "v": [
+        "2,5",
+        "0,4",
+        "18",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Gomotetiya koeffitsienti tasvir tomonining asl tomonga nisbatiga teng. Bu yerda tasvir 30 sm, asl tomon 12 sm, demak k = 30 : 12 = 2,5. Tomonlar ayirmasi emas, aynan nisbati olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gomotetiya-koeffitsientini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#cbf7d52b"
+    },
+    {
+      "q": "Gomotetiyaning markazi P(2; 1) nuqtada. Shu almashtirishda A(6; 4) nuqta A'(−2; −2) nuqtaga o'tgan bo'lsa, koeffitsientni aniqlang.",
+      "v": [
+        "1",
+        "−1",
+        "−2",
+        "0,5"
+      ],
+      "t": 1,
+      "izoh": "Markazdan A gacha siljish (6 − 2; 4 − 1) = (4; 3). Markazdan A' gacha siljish (−2 − 2; −2 − 1) = (−4; −3). Ikkinchi siljish birinchisiga qarama-qarshi va uzunligi bir xil, demak k = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gomotetiya-koeffitsientini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#f97d88e9"
+    },
+    {
+      "q": "Zavodda detalning chizmasi 1 : 20 masshtabda chizilgan. Chizmadan haqiqiy detalga o'tuvchi gomotetiyaning koeffitsienti nechaga teng?",
+      "v": [
+        "0,05",
+        "400",
+        "20",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "Masshtab 1 : 20 bo'lsa, chizmadagi 1 birlik haqiqatda 20 birlikka mos keladi. Chizmadan detalga o'tishda o'lchamlar 20 marta ortadi, demak k = 20. Teskari yo'nalishda koeffitsient 0,05 bo'lar edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gomotetiya-koeffitsientini-topish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#e809fbb6"
+    },
+    {
+      "q": "Perimetri 9 sm bo'lgan uchburchakka koeffitsienti 4 ga teng gomotetiya qo'llandi. Hosil bo'lgan uchburchakning perimetri necha santimetrga teng?",
+      "v": [
+        "144",
+        "13",
+        "2,25",
+        "36"
+      ],
+      "t": 3,
+      "izoh": "Gomotetiyada barcha tomonlar koeffitsientga ko'payadi, shuning uchun perimetr ham shuncha marta ortadi. Demak yangi perimetr 9 · 4 = 36 sm. Kvadratga ko'tarish faqat yuza uchun ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshashlik-perimetr",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#b665b0fa"
+    },
+    {
+      "q": "Bir ko'pburchak ikkinchisiga koeffitsienti 0,6 bo'lgan gomotetiya bilan o'tkazildi. Dastlabki ko'pburchakning perimetri 45 sm bo'lsa, hosil bo'lganining perimetri qancha?",
+      "v": [
+        "27",
+        "75",
+        "16,2",
+        "125"
+      ],
+      "t": 0,
+      "izoh": "Perimetr chiziqli kattalik, shuning uchun u koeffitsientga to'g'ridan-to'g'ri ko'payadi. Hisoblaymiz: 45 · 0,6 = 27 sm. Agar koeffitsientni kvadratga ko'targanimizda yuza uchun javob chiqar edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshashlik-perimetr",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#164fec55"
+    },
+    {
+      "q": "Bog'dagi gulzorning kichik maketi tayyorlandi. Haqiqiy gulzorning perimetri 24 m, maketdagisi esa 60 sm. O'xshashlik koeffitsienti nechaga teng?",
+      "v": [
+        "1 : 4",
+        "1 : 40",
+        "1 : 400",
+        "1 : 24"
+      ],
+      "t": 1,
+      "izoh": "Avval birliklarni tenglashtiramiz: 24 m = 2400 sm. Endi maket perimetrini haqiqiy perimetrga bo'lamiz: 60 : 2400 = 1 : 40. Birliklarni aylantirmaslik eng ko'p uchraydigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxshashlik-perimetr",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#e28da8ec"
+    },
+    {
+      "q": "Uchburchakning tomonlari 6 sm, 8 sm va 10 sm ga teng. Unga koeffitsienti 1,5 bo'lgan gomotetiya qo'llanilsa, yangi uchburchakning perimetri necha santimetr bo'ladi?",
+      "v": [
+        "54",
+        "25,5",
+        "36",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki perimetr 6 + 8 + 10 = 24 sm. Gomotetiyada perimetr koeffitsientga ko'payadi: 24 · 1,5 = 36 sm. Har bir tomonni alohida ko'paytirib qo'shsak ham xuddi shu natija chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshashlik-perimetr",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#a9f6ede4"
+    },
+    {
+      "q": "Kvadratning yuzasi 12 sm² ga teng. Unga koeffitsienti 3 bo'lgan gomotetiya qo'llanilsa, hosil bo'lgan kvadratning yuzasi necha sm² bo'ladi?",
+      "v": [
+        "36",
+        "15",
+        "4",
+        "108"
+      ],
+      "t": 3,
+      "izoh": "Gomotetiyada tomonlar 3 marta uzayadi, yuza esa koeffitsientning kvadratiga ko'payadi. Demak yangi yuza 12 · 3² = 12 · 9 = 108 sm². Yuzani faqat 3 ga ko'paytirish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oxshashlik-yuza",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#f2db93cd"
+    },
+    {
+      "q": "Ikki o'xshash uchburchakning yuzalari 18 sm² va 50 sm² ga teng. Kichik uchburchakdan kattasiga o'tkazuvchi o'xshashlik koeffitsienti nechaga teng?",
+      "v": [
+        "5/3",
+        "25/9",
+        "3/5",
+        "9/25"
+      ],
+      "t": 0,
+      "izoh": "O'xshash shakllarning yuzalari nisbati koeffitsient kvadratiga teng. Kichikdan kattaga o'tilayotgani uchun nisbat aynan 50 : 18 tartibida olinadi: k² = 50 : 18 = 25/9. Bundan k = √(25/9) = 5/3. Teskari yo'nalishda 3/5 chiqadi, ildiz olishni unutish esa 25/9 ni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshashlik-yuza",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#a777e9a2"
+    },
+    {
+      "q": "Fermer yer maydonining rejasi 1 : 5000 masshtabda chizilgan. Rejada maydonning yuzasi 8 sm² bo'lsa, haqiqiy yuza necha kvadrat metrga teng?",
+      "v": [
+        "4 m²",
+        "20 000 m²",
+        "40 000 m²",
+        "2 000 m²"
+      ],
+      "t": 1,
+      "izoh": "Chiziqli o'lchamlar 5000 marta ortsa, yuza 5000² = 25 000 000 marta ortadi. Demak haqiqiy yuza 8 · 25 000 000 = 200 000 000 sm². Kvadrat metrga o'tkazamiz: 200 000 000 : 10 000 = 20 000 m², ya'ni 2 gektar. Masshtabni kvadratga ko'tarishni unutgan o'quvchi 4 m² deb xato qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxshashlik-yuza",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#4aacaf15"
+    },
+    {
+      "q": "Telefon ekranidagi fotosurat gomotetiya yordamida 1,2 marta kattalashtirildi. Suratning yuzasi dastlabkiga nisbatan necha foizga ortadi?",
+      "v": [
+        "20%",
+        "144%",
+        "44%",
+        "24%"
+      ],
+      "t": 2,
+      "izoh": "Yuza koeffitsient kvadratiga ko'payadi: 1,2² = 1,44. Demak yangi yuza dastlabkining 144 foizini tashkil qiladi. Ortish esa 144% − 100% = 44% ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxshashlik-yuza",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#35028f4a"
+    },
+    {
+      "q": "Ikki o'xshash uchburchakning perimetrlari nisbati 2 : 7 ga teng. Ularning yuzalari nisbati qanday bo'ladi?",
+      "v": [
+        "2 : 7",
+        "7 : 2",
+        "8 : 343",
+        "4 : 49"
+      ],
+      "t": 3,
+      "izoh": "Perimetrlar nisbati o'xshashlik koeffitsientiga teng, ya'ni k = 2/7. Yuzalar nisbati esa koeffitsient kvadratiga teng: (2/7)² = 4/49. Demak yuzalar nisbati 4 : 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshashlik-yuza",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#a2e6f952"
+    },
+    {
+      "q": "Xaritaning masshtabi 1 : 25 000 ga teng. Xaritadagi 6 sm uzunlikda tasvirlangan yo'l haqiqatda necha kilometrni tashkil qiladi?",
+      "v": [
+        "1,5 km",
+        "15 km",
+        "0,15 km",
+        "150 km"
+      ],
+      "t": 0,
+      "izoh": "Haqiqiy uzunlik 6 · 25 000 = 150 000 sm ga teng. Endi santimetrni kilometrga aylantiramiz: 1 km = 100 000 sm. Demak 150 000 : 100 000 = 1,5 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab-xarita",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#4107ed54"
+    },
+    {
+      "q": "Samarqand va Buxoro orasidagi haqiqiy masofa 270 km. Masshtabi 1 : 1 500 000 bo'lgan xaritada bu masofa necha santimetr bilan tasvirlanadi?",
+      "v": [
+        "1,8 sm",
+        "18 sm",
+        "180 sm",
+        "45 sm"
+      ],
+      "t": 1,
+      "izoh": "Avval masofani santimetrga o'tkazamiz: 270 km = 27 000 000 sm. So'ng masshtab maxrajiga bo'lamiz: 27 000 000 : 1 500 000 = 18 sm. Demak xaritada masofa 18 sm bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab-xarita",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#4aeaa86f"
+    },
+    {
+      "q": "Maktab hovlisining rejasi 1 : 200 masshtabda chizilgan. Rejadagi to'g'ri to'rtburchakning tomonlari 7 sm va 4 sm bo'lsa, hovlining haqiqiy perimetri necha metr?",
+      "v": [
+        "22 m",
+        "88 m",
+        "44 m",
+        "4400 m"
+      ],
+      "t": 2,
+      "izoh": "Haqiqiy tomonlar 7 · 200 = 1400 sm = 14 m va 4 · 200 = 800 sm = 8 m. Perimetr formulasi P = 2·(a + b) bo'yicha 2·(14 + 8) = 44 m. Rejadagi perimetrni to'g'ridan-to'g'ri metrga aylantirish xato bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtab-xarita",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#5165d634"
+    },
+    {
+      "q": "Bir hudud ikki xil xaritada tasvirlangan: birinchisining masshtabi 1 : 50 000, ikkinchisiniki esa 1 : 200 000. Birinchi xaritadagi tasvir ikkinchisidagiga nisbatan chiziqli o'lchamda necha marta katta?",
+      "v": [
+        "16 marta",
+        "2 marta",
+        "0,25 marta",
+        "4 marta"
+      ],
+      "t": 3,
+      "izoh": "Masshtab maxraji qancha kichik bo'lsa, tasvir shuncha katta bo'ladi. Ikki xaritaning maxrajlarini solishtiramiz: 200 000 : 50 000 = 4. Demak birinchi xaritadagi tasvir chiziqli o'lchamda 4 marta katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masshtab-xarita",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#23009e2c"
+    },
+    {
+      "q": "Nodira 10 sm va 15 sm o'lchamli fotosuratni gomotetiya bilan kattalashtirdi, natijada uzun tomoni 24 sm bo'ldi. Qisqa tomon necha santimetrga teng bo'ladi?",
+      "v": [
+        "16 sm",
+        "19 sm",
+        "9 sm",
+        "25 sm"
+      ],
+      "t": 0,
+      "izoh": "Gomotetiya koeffitsientini uzun tomon bo'yicha topamiz: 24 : 15 = 1,6. Endi qisqa tomonni ham shu koeffitsientga ko'paytiramiz: 10 · 1,6 = 16 sm. Tomonga 9 sm qo'shish xato, chunki gomotetiyada o'lchamlar ko'payadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foto-kattalashtirish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#624d2607"
+    },
+    {
+      "q": "Bosmaxonada balandligi 12 sm bo'lgan logotip koeffitsienti 1,75 ga teng gomotetiya bilan kattalashtirildi. Yangi logotipning balandligi necha santimetr?",
+      "v": [
+        "13,75 sm",
+        "21 sm",
+        "36,75 sm",
+        "6,9 sm"
+      ],
+      "t": 1,
+      "izoh": "Chiziqli o'lcham koeffitsientga ko'paytiriladi: 12 · 1,75 = 21 sm. Koeffitsientni balandlikka qo'shish yoki uni kvadratga ko'tarish tipik xatolar hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "foto-kattalashtirish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#a7aeaf21"
+    },
+    {
+      "q": "Jasurning devoriy rasmi dastlab 8 sm kenglikda edi, kattalashtirilgandan keyin uning kengligi 20 sm bo'ldi. Rasm yuzasi necha marta ortdi?",
+      "v": [
+        "2,5 marta",
+        "5 marta",
+        "6,25 marta",
+        "12,5 marta"
+      ],
+      "t": 2,
+      "izoh": "O'xshashlik koeffitsienti 20 : 8 = 2,5 ga teng. Yuza esa koeffitsient kvadratiga ko'payadi: 2,5² = 6,25. Demak rasm yuzasi 6,25 marta ortgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foto-kattalashtirish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#e475d1da"
+    },
+    {
+      "q": "Bosma ustaxonada afishani shunday kattalashtirish kerakki, uning yuzasi 9 marta ortsin. Afishaning har bir tomoni necha marta uzaytiriladi?",
+      "v": [
+        "9 marta",
+        "81 marta",
+        "4,5 marta",
+        "3 marta"
+      ],
+      "t": 3,
+      "izoh": "Yuza koeffitsient kvadratiga ko'payadi, ya'ni k² = 9. Bundan k = √9 = 3. Demak har bir tomonni 3 marta uzaytirish kerak, yuzani esa 9 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "foto-kattalashtirish",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#1affebd8"
+    },
+    {
+      "q": "Registon maydonining maketi 1 : 150 masshtabda tayyorlandi. Maketdagi minoraning balandligi 24 sm bo'lsa, haqiqiy minora necha metr balandlikda?",
+      "v": [
+        "36 m",
+        "3,6 m",
+        "360 m",
+        "6,25 m"
+      ],
+      "t": 0,
+      "izoh": "Haqiqiy balandlik 24 · 150 = 3600 sm ga teng. Santimetrni metrga aylantiramiz: 3600 : 100 = 36 m. Demak minoraning haqiqiy balandligi 36 metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gomotetiya-maket-model",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#db3c8caf"
+    },
+    {
+      "q": "Samolyot maketi haqiqiy samolyotdan 1 : 50 nisbatda kichraytirilgan. Maket qanotining yuzasi 40 sm² bo'lsa, haqiqiy qanotning yuzasi necha kvadrat metr?",
+      "v": [
+        "0,2 m²",
+        "10 m²",
+        "100 m²",
+        "1000 m²"
+      ],
+      "t": 1,
+      "izoh": "Chiziqli o'lchamlar 50 marta ortsa, yuza 50² = 2500 marta ortadi. Demak haqiqiy yuza 40 · 2500 = 100 000 sm². Kvadrat metrga o'tkazamiz: 100 000 : 10 000 = 10 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gomotetiya-maket-model",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#d43c0542"
+    },
+    {
+      "q": "Me'mor binoning maketini 1 : 80 masshtabda yasadi. Haqiqiy binoning eshigi 2 m balandlikda bo'lsa, maketdagi eshikning balandligi necha santimetr bo'ladi?",
+      "v": [
+        "25 sm",
+        "0,25 sm",
+        "2,5 sm",
+        "40 sm"
+      ],
+      "t": 2,
+      "izoh": "Avval haqiqiy balandlikni santimetrga o'tkazamiz: 2 m = 200 sm. Maketga o'tishda o'lcham 80 marta kichrayadi: 200 : 80 = 2,5 sm. Demak maketdagi eshik 2,5 sm balandlikda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gomotetiya-maket-model",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#d9bc9744"
+    },
+    {
+      "q": "To'g'ri chiziq y = 2x + 5 tenglama bilan berilgan va u Ox o'qiga nisbatan akslantirildi. Hosil bo'lgan to'g'ri chiziqning tenglamasi qanday?",
+      "v": [
+        "y = −2x + 5",
+        "y = 2x − 5",
+        "y = 2x + 5",
+        "y = −2x − 5"
+      ],
+      "t": 3,
+      "izoh": "Ox o'qiga nisbatan akslantirishda y o'rniga −y qo'yiladi. Shunda −y = 2x + 5 tenglama hosil bo'ladi. Ikkala tomonni −1 ga ko'paytirsak y = −2x − 5 chiqadi, ya'ni burchak koeffitsienti ham, ozod had ham ishorasini almashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqqa-simmetriya-tenglama",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#805ac7e6"
+    },
+    {
+      "q": "Aylana (x − 3)² + (y + 2)² = 9 tenglama bilan berilgan. U Oy o'qiga nisbatan akslantirilsa, tenglama qanday ko'rinishga keladi?",
+      "v": [
+        "(x + 3)² + (y + 2)² = 9",
+        "(x − 3)² + (y − 2)² = 9",
+        "(x + 3)² + (y − 2)² = 9",
+        "(x − 3)² + (y + 2)² = 9"
+      ],
+      "t": 0,
+      "izoh": "Aylananing markazi (3; −2), radiusi esa 3. Oy o'qiga nisbatan akslantirishda markaz (−3; −2) ga o'tadi, radius o'zgarmaydi. Demak yangi tenglama (x + 3)² + (y + 2)² = 9 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqqa-simmetriya-tenglama",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#51517c37"
+    },
+    {
+      "q": "Parabola y = x² − 4x koordinata boshiga nisbatan markaziy simmetriya bilan akslantirildi. Yangi chiziqning tenglamasini toping.",
+      "v": [
+        "y = −x² + 4x",
+        "y = −x² − 4x",
+        "y = x² + 4x",
+        "y = x² − 4x"
+      ],
+      "t": 1,
+      "izoh": "Markaziy simmetriyada x o'rniga −x, y o'rniga −y qo'yiladi. Shunda −y = (−x)² − 4·(−x) = x² + 4x hosil bo'ladi. Ikkala tomonni −1 ga ko'paytirib y = −x² − 4x tenglamasini olamiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oqqa-simmetriya-tenglama",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#b0c43d95"
+    },
+    {
+      "q": "Tekislikda har bir (x; y) nuqta (x + 4; y − 3) nuqtaga o'tkazilmoqda. Bu qanday geometrik almashtirish hisoblanadi?",
+      "v": [
+        "Koordinata boshiga nisbatan markaziy simmetriya",
+        "Ox o'qiga nisbatan simmetriya",
+        "(4; −3) vektorga parallel ko'chirish",
+        "Koeffitsienti 4 bo'lgan gomotetiya"
+      ],
+      "t": 2,
+      "izoh": "Qoidada har ikkala koordinataga o'zgarmas son qo'shilmoqda, ya'ni barcha nuqtalar bir xil vektorga siljiydi. Bu esa parallel ko'chirishning ta'rifi. Ko'chirish vektori (4; −3) ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "almashtirish-turini-aniqlash",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#7eef2949"
+    },
+    {
+      "q": "Almashtirish qoidasi (x; y) nuqtani (−x; −y) nuqtaga o'tkazadi. Bu almashtirishni qanday nomlash mumkin?",
+      "v": [
+        "Ox o'qiga nisbatan simmetriya",
+        "Oy o'qiga nisbatan simmetriya",
+        "(−1; −1) vektorga parallel ko'chirish",
+        "Koordinata boshi atrofida 180° ga burish"
+      ],
+      "t": 3,
+      "izoh": "Ikkala koordinata ham ishorasini almashtirsa, nuqta koordinata boshining qarama-qarshi tomoniga bir xil masofada tushadi. Bu koordinata boshiga nisbatan markaziy simmetriya, u esa 180° ga burish bilan aynan bir xil natija beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-turini-aniqlash",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#0970d560"
+    },
+    {
+      "q": "Almashtirish har bir nuqtani (x; y) holatdan (3x; 3y) holatga o'tkazadi. Bu almashtirish haqida qaysi fikr to'g'ri?",
+      "v": [
+        "Bu gomotetiya; burchaklarni saqlaydi, masofalarni 3 marta orttiradi",
+        "Bu harakat; barcha masofalarni o'zgarishsiz saqlaydi",
+        "Bu parallel ko'chirish; shakl o'lchamini saqlaydi",
+        "Bu burish; burchaklarni 3 marta orttiradi"
+      ],
+      "t": 0,
+      "izoh": "Koordinatalar bir xil songa ko'paytirilgani uchun bu markazi koordinata boshida bo'lgan gomotetiya. Gomotetiya o'xshashlik almashtirishi bo'lgani sababli burchaklarni o'zgartirmaydi, masofalarni esa koeffitsientga, ya'ni 3 ga ko'paytiradi. Shuning uchun u harakat hisoblanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-turini-aniqlash",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#6a3f35ec"
+    },
+    {
+      "q": "Almashtirishda (x; y) nuqta (y; x) nuqtaga o'tkazilsa, bu qaysi to'g'ri chiziqqa nisbatan simmetriya bo'ladi?",
+      "v": [
+        "Ox o'qiga nisbatan",
+        "y = x to'g'ri chiziqqa nisbatan",
+        "y = −x to'g'ri chiziqqa nisbatan",
+        "Oy o'qiga nisbatan"
+      ],
+      "t": 1,
+      "izoh": "Koordinatalar o'rin almashganda nuqta bilan uning tasviri orasidagi kesmaning o'rtasi ((x + y) : 2; (x + y) : 2) bo'ladi, ya'ni abssissa va ordinata teng. Bunday nuqtalar y = x chizig'ida yotadi. Demak simmetriya o'qi y = x to'g'ri chizig'i.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-turini-aniqlash",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#0523ee6c"
+    },
+    {
+      "q": "M(3; −5) nuqta avval Ox o'qiga, so'ngra Oy o'qiga nisbatan ketma-ket akslantirildi. Oxirgi nuqtaning koordinatalari qanday bo'ladi?",
+      "v": [
+        "(3; 5)",
+        "(−3; −5)",
+        "(−3; 5)",
+        "(3; −5)"
+      ],
+      "t": 2,
+      "izoh": "Birinchi akslantirishdan keyin ordinata ishorasini almashtiradi va (3; 5) hosil bo'ladi. Ikkinchi akslantirishda abssissa ishorasini almashtiradi va (−3; 5) chiqadi. Natija koordinata boshiga nisbatan markaziy simmetriya bilan bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirishlar-kompozitsiyasi",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#bc455b58"
+    },
+    {
+      "q": "Ikkita parallel to'g'ri chiziqqa nisbatan ketma-ket akslantirish natijasida qanday almashtirish hosil bo'ladi?",
+      "v": [
+        "Markaziy simmetriya",
+        "Gomotetiya",
+        "Koordinata boshi atrofida 90° ga burish",
+        "Parallel ko'chirish"
+      ],
+      "t": 3,
+      "izoh": "Har bir nuqta birinchi o'qdan keyin ikkinchi o'qqa nisbatan akslanadi va natijada o'qlarga perpendikulyar yo'nalishda siljiydi. Siljish miqdori o'qlar orasidagi masofaning ikki hissasiga teng va u barcha nuqtalar uchun bir xil. Demak kompozitsiya parallel ko'chirish bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirishlar-kompozitsiyasi",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#11997a5e"
+    },
+    {
+      "q": "Nuqta avval (2; 3) vektorga parallel ko'chirildi, so'ngra koordinata boshi atrofida 180° ga burildi. Dastlabki nuqta (1; −4) bo'lsa, oxirgi nuqtani toping.",
+      "v": [
+        "(−3; 1)",
+        "(3; −1)",
+        "(1; 7)",
+        "(−3; −1)"
+      ],
+      "t": 0,
+      "izoh": "Avval ko'chirishni bajaramiz: (1 + 2; −4 + 3) = (3; −1). So'ngra 180° burishda ikkala koordinata ishorasini almashtiradi: (−3; 1). Amallar tartibini almashtirsak boshqa natija chiqadi, chunki bu ikki almashtirish o'rin almashtirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirishlar-kompozitsiyasi",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#2e97fa79"
+    },
+    {
+      "q": "Kesishuvchi ikkita to'g'ri chiziqqa nisbatan ketma-ket akslantirish natijasi qanday almashtirishga teng bo'ladi?",
+      "v": [
+        "Parallel ko'chirish",
+        "O'qlar kesishgan nuqta atrofida burish",
+        "Gomotetiya",
+        "Har doim markaziy simmetriya"
+      ],
+      "t": 1,
+      "izoh": "Ikkala akslantirishda ham o'qlarning kesishish nuqtasi o'z o'rnida qoladi, demak natijada qo'zg'almas nuqta bor. Masofalar saqlanadi va shakl burilib qoladi, ya'ni bu burish. Burish burchagi o'qlar orasidagi burchakning ikki hissasiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirishlar-kompozitsiyasi",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#54bab0e4"
+    },
+    {
+      "q": "Quyidagi almashtirishlardan qaysi biri harakat, ya'ni masofani saqlovchi almashtirish emas: parallel ko'chirish, burish, o'qqa nisbatan simmetriya yoki koeffitsienti 2 bo'lgan gomotetiya?",
+      "v": [
+        "Parallel ko'chirish",
+        "Burish",
+        "Koeffitsienti 2 bo'lgan gomotetiya",
+        "O'qqa nisbatan simmetriya"
+      ],
+      "t": 2,
+      "izoh": "Parallel ko'chirish, burish va o'qqa nisbatan simmetriya nuqtalar orasidagi masofani o'zgartirmaydi, shuning uchun ular harakat deb ataladi. Koeffitsienti 2 bo'lgan gomotetiyada esa har bir masofa 2 marta ortadi. Demak u harakat emas, balki o'xshashlik almashtirishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harakat-xossalari",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#747e8d33"
+    },
+    {
+      "q": "Uchburchakka koeffitsienti 5 bo'lgan gomotetiya qo'llanildi. Uchburchak burchaklarining kattaligi qanday o'zgaradi?",
+      "v": [
+        "5 marta ortadi",
+        "25 marta ortadi",
+        "5 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 3,
+      "izoh": "Gomotetiyada shakl o'xshash shaklga o'tadi, ya'ni tomonlar nisbati saqlanadi. Burchak esa tomonlar yo'nalishlariga bog'liq, uzunlikka emas. Shuning uchun barcha burchaklar o'zgarishsiz qoladi, faqat tomonlar 5 marta uzayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harakat-xossalari",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#0ad2f6d1"
+    },
+    {
+      "q": "Kesma parallel ko'chirilganda uning uzunligi va yo'nalishi qanday o'zgaradi?",
+      "v": [
+        "Uzunlik ham, yo'nalish ham saqlanadi",
+        "Uzunlik saqlanadi, yo'nalish o'zgaradi",
+        "Uzunlik o'zgaradi, yo'nalish saqlanadi",
+        "Ikkalasi ham o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Parallel ko'chirishda kesmaning ikkala uchi bir xil vektorga siljiydi. Shuning uchun tasvir kesma dastlabkisiga teng va unga parallel bo'ladi. Demak uzunlik ham, yo'nalish ham saqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harakat-xossalari",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#4b1b6086"
+    },
+    {
+      "q": "Koeffitsienti k = −3 bo'lgan gomotetiyada to'g'ri chiziq va uning tasviri bir-biriga nisbatan qanday joylashadi?",
+      "v": [
+        "Doim kesishadi",
+        "Parallel bo'ladi yoki ustma-ust tushadi",
+        "Perpendikulyar bo'ladi",
+        "60° li burchak hosil qiladi"
+      ],
+      "t": 1,
+      "izoh": "Gomotetiya har qanday to'g'ri chiziqni unga parallel to'g'ri chiziqqa o'tkazadi. Agar chiziq gomotetiya markazidan o'tsa, tasvir chiziq bilan ustma-ust tushadi. Koeffitsientning manfiy bo'lishi chiziqning faqat markazning qaysi tomoniga tushishini o'zgartiradi, yo'nalishini emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harakat-xossalari",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#41cec576"
+    },
+    {
+      "q": "Muntazam beshburchak shaklidagi choyshab naqshi nechta simmetriya o'qiga ega bo'ladi?",
+      "v": [
+        "10 ta",
+        "1 ta",
+        "5 ta",
+        "Simmetriya o'qi umuman yo'q"
+      ],
+      "t": 2,
+      "izoh": "Muntazam n burchakli shaklda simmetriya o'qlari soni n ga teng. Beshburchakda har bir o'q bitta uchdan o'tib qarama-qarshi tomonning o'rtasini kesib o'tadi. Demak simmetriya o'qlari 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriya-oqlari-soni",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#2c54b371"
+    },
+    {
+      "q": "Kvadrat bo'lmagan to'g'ri to'rtburchak shaklidagi deraza nechta simmetriya o'qiga ega?",
+      "v": [
+        "4 ta",
+        "1 ta",
+        "Cheksiz ko'p",
+        "2 ta"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri to'rtburchakda qarama-qarshi tomonlarning o'rtalarini tutashtiruvchi ikkita to'g'ri chiziq simmetriya o'qi bo'ladi. Diagonallar esa simmetriya o'qi emas, chunki ular bo'ylab bukilganda tomonlar mos tushmaydi. Demak o'qlar soni 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriya-oqlari-soni",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#5243aeda"
+    },
+    {
+      "q": "Teng yonli, lekin teng tomonli bo'lmagan uchburchak shaklidagi yo'l belgisi nechta simmetriya o'qiga ega?",
+      "v": [
+        "1 ta",
+        "3 ta",
+        "2 ta",
+        "Simmetriya o'qi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Teng yonli uchburchakda faqat asosga o'tkazilgan balandlik simmetriya o'qi bo'ladi. Qolgan ikki balandlik bo'ylab bukilganda tomonlar ustma-ust tushmaydi. Uch o'q faqat teng tomonli uchburchakda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-oqlari-soni",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#3670021a"
+    },
+    {
+      "q": "Kvadrat va muntazam oltiburchakning simmetriya o'qlari sonlari yig'indisi nechaga teng?",
+      "v": [
+        "8",
+        "10",
+        "12",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Muntazam ko'pburchakda o'qlar soni tomonlar soniga teng. Kvadratda 4 ta o'q, muntazam oltiburchakda esa 6 ta o'q bor. Yig'indi 4 + 6 = 10 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-oqlari-soni",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#9110f07e"
+    },
+    {
+      "q": "Quyidagi shakllardan qaysi birida simmetriya markazi bor: teng tomonli uchburchak, parallelogramm, teng yonli trapetsiya yoki muntazam beshburchak?",
+      "v": [
+        "Teng tomonli uchburchak",
+        "Teng yonli trapetsiya",
+        "Parallelogramm",
+        "Muntazam beshburchak"
+      ],
+      "t": 2,
+      "izoh": "Simmetriya markazi shaklni 180° ga burganda uni o'ziga o'tkazuvchi nuqta. Parallelogrammda diagonallar kesishish nuqtasi shunday xossaga ega. Toq tomonli muntazam ko'pburchakda va teng yonli trapetsiyada bunday nuqta mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-markazi-bormi",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#8677a2e7"
+    },
+    {
+      "q": "Muntazam ko'pburchakda simmetriya markazi bo'lishi uchun uning tomonlari soni qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "Toq bo'lishi kerak",
+        "3 ga karrali bo'lishi kerak",
+        "Har qanday bo'lishi mumkin",
+        "Juft bo'lishi kerak"
+      ],
+      "t": 3,
+      "izoh": "Markaziy simmetriya shaklni 180° ga buradi, ya'ni har bir uchni qarama-qarshi uchga o'tkazadi. Bunday juftlik faqat uchlar soni juft bo'lgandagina tuziladi. Masalan oltiburchakda markaz bor, beshburchakda esa yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetriya-markazi-bormi",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#4cffe136"
+    },
+    {
+      "q": "Doiraning simmetriya markazi va simmetriya o'qlari soni haqida qaysi javob to'g'ri?",
+      "v": [
+        "Markazi bor, o'qlari cheksiz ko'p",
+        "Markazi bor, o'qlari 2 ta",
+        "Markazi yo'q, o'qlari cheksiz ko'p",
+        "Markazi bor, o'qlari 4 ta"
+      ],
+      "t": 0,
+      "izoh": "Doira markazi atrofida istalgan burchakka burilganda o'zgarmaydi, demak 180° burish ham uni o'ziga o'tkazadi va markaz mavjud. Markazdan o'tuvchi har qanday to'g'ri chiziq doirani ikkita teng qismga bo'ladi. Bunday chiziqlar cheksiz ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriya-markazi-bormi",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#b5ade516"
+    },
+    {
+      "q": "Aziz to'g'ri chiziqli daryo bo'yiga borib chelakka suv olishi, so'ng do'stining oldiga yetib borishi kerak. Eng qisqa yo'lni topish uchun qaysi geometrik almashtirishdan foydalaniladi?",
+      "v": [
+        "Parallel ko'chirish",
+        "Daryo chizig'iga nisbatan simmetriya",
+        "Gomotetiya",
+        "Koordinata boshi atrofida 90° ga burish"
+      ],
+      "t": 1,
+      "izoh": "Do'stning turgan joyi daryo chizig'iga nisbatan simmetrik akslantiriladi. Aziz turgan nuqta bilan bu tasvir nuqtani to'g'ri chiziq bilan tutashtiramiz. Chiziqning daryo bilan kesishgan nuqtasi suv olish joyi bo'ladi, chunki to'g'ri chiziq eng qisqa yo'ldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-qisqa-yol-simmetriya",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#ede82daf"
+    },
+    {
+      "q": "Uy A(1; 2) nuqtada, do'kon esa B(9; 4) nuqtada joylashgan. Ikkalasi ham Ox o'qidan yuqorida, yo'l esa aynan Ox o'qi bo'ylab o'tadi. Uydan yo'lga chiqib, so'ngra do'konga borishning eng qisqa umumiy uzunligi qancha?",
+      "v": [
+        "14",
+        "6",
+        "10",
+        "√68"
+      ],
+      "t": 2,
+      "izoh": "A nuqtani Ox o'qiga nisbatan akslantiramiz va A'(1; −2) hosil bo'ladi. Har qanday yo'l uzunligi A' dan B gacha boruvchi siniq chiziqqa teng, eng qisqasi esa to'g'ri kesma: √((9 − 1)² + (4 − (−2))²) = √(64 + 36) = √100 = 10. Uy va do'kon o'qning bir tomonida bo'lgani uchun to'g'ridan-to'g'ri |AB| = √68 olish xato — yo'lga tushmay bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-qisqa-yol-simmetriya",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#ed81652e"
+    },
+    {
+      "q": "Bilyard stolining bir bortiga urib, koptokni ikkinchi koptokka tekkizish kerak. Koptok yo'lini oldindan chizishda qaysi almashtirish qo'llaniladi?",
+      "v": [
+        "Koptoklarni parallel ko'chirish",
+        "Stolni 90° ga burish",
+        "Stolni gomotetiya bilan kichraytirish",
+        "Ikkinchi koptokni bortga nisbatan simmetrik akslantirish"
+      ],
+      "t": 3,
+      "izoh": "Koptokning bortdan qaytish burchagi tushish burchagiga teng, bu esa aynan o'qqa nisbatan simmetriya qonuni. Ikkinchi koptokni bort chizig'iga nisbatan akslantirib, birinchi koptok bilan to'g'ri chiziq orqali tutashtiriladi. Chiziqning bort bilan kesishgan nuqtasi urish nuqtasi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-qisqa-yol-simmetriya",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#169a6fc8"
+    },
+    {
+      "q": "Ikki qishloq to'g'ri chiziqli temir yo'lning bir tomonida joylashgan va ular uchun umumiy bekat quriladi. Bekat joyini yo'llar yig'indisi eng kichik bo'ladigan qilib tanlash uchun nima qilinadi?",
+      "v": [
+        "Bir qishloq temir yo'lga nisbatan akslantiriladi va ikkinchisi bilan tutashtiriladi",
+        "Ikki qishloq orasidagi kesmaning o'rtasi olinadi",
+        "Qishloqlar temir yo'lga parallel ko'chiriladi",
+        "Qishloqlar orasidagi masofa teng ikkiga bo'linadi"
+      ],
+      "t": 0,
+      "izoh": "Bir qishloq temir yo'l chizig'iga nisbatan akslantirilsa, undan bekatgacha bo'lgan masofa o'zgarmaydi. Endi masala ikki nuqtani tutashtirishga keladi, eng qisqasi esa to'g'ri chiziq. Shu chiziqning temir yo'l bilan kesishgan nuqtasi izlangan bekat joyi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-qisqa-yol-simmetriya",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#978fae53"
+    },
+    {
+      "q": "Diametri 40 m bo'lgan aylanma charxda 12 ta kabina bir tekis joylashgan. Qo'shni ikkita kabina charx markazidan qanday burchak ostida ko'rinadi?",
+      "v": [
+        "45°",
+        "30°",
+        "60°",
+        "15°"
+      ],
+      "t": 1,
+      "izoh": "Kabinalar aylana bo'ylab teng oraliqda joylashgani uchun to'liq burilish 12 ta teng qismga bo'linadi. Har bir qism 360° : 12 = 30° ga teng. Diametr qiymati bu burchakka ta'sir qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burish-hayotiy",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#cb625813"
+    },
+    {
+      "q": "Devor soatining soat strelkasi 14:00 dan 16:30 gacha bo'lgan vaqtda markaz atrofida necha gradusga buriladi?",
+      "v": [
+        "60°",
+        "90°",
+        "75°",
+        "150°"
+      ],
+      "t": 2,
+      "izoh": "Soat strelkasi 12 soatda to'liq aylanadi, ya'ni bir soatda 360° : 12 = 30° buriladi. 14:00 dan 16:30 gacha 2,5 soat o'tadi. Demak burilish 30° · 2,5 = 75° ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burish-hayotiy",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#2273f67a"
+    },
+    {
+      "q": "Tegirmon parragi 5 soniyada bir marta to'liq aylanib chiqadi. Shu tezlikda 2 soniya davomida parrak necha gradusga buriladi?",
+      "v": [
+        "72°",
+        "180°",
+        "120°",
+        "144°"
+      ],
+      "t": 3,
+      "izoh": "Bir soniyada parrak 360° : 5 = 72° ga buriladi. Ikki soniyada esa bu burchak ikki marta olinadi: 72° · 2 = 144°. Demak parrak 144° ga buriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burish-hayotiy",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#c14198a5"
+    },
+    {
+      "q": "Kvadrat shaklidagi pol plitkasi o'z markazi atrofida burilganda naqsh o'zgarmasligi uchun eng kichik burish burchagi qanday bo'lishi kerak?",
+      "v": [
+        "90°",
+        "45°",
+        "180°",
+        "60°"
+      ],
+      "t": 0,
+      "izoh": "Kvadrat markazi atrofida burilganda uchlar bir-birining o'rniga tushishi kerak. Kvadratda 4 ta uch bor, demak eng kichik mos burchak 360° : 4 = 90°. 45° da uchlar tomonlarning o'rtasiga tushib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burish-hayotiy",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#263c1f40"
+    },
+    {
+      "q": "AB kesmaning uzunligi 15 sm ga teng. Unga koeffitsienti −0,8 bo'lgan gomotetiya qo'llanilsa, hosil bo'lgan kesmaning uzunligi necha santimetr?",
+      "v": [
+        "18,75 sm",
+        "12 sm",
+        "9,6 sm",
+        "3 sm"
+      ],
+      "t": 1,
+      "izoh": "Gomotetiyada kesma uzunligi koeffitsientning moduliga ko'payadi, chunki uzunlik manfiy bo'lmaydi. Demak yangi uzunlik 15 · 0,8 = 12 sm. Koeffitsientning manfiy ishorasi faqat kesmaning markazga nisbatan qaysi tomonda yotishini belgilaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-masofa-va-yuza",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#6b92be47"
+    },
+    {
+      "q": "Uchburchak ABC ning yuzasi 20 sm² ga teng. U avval (3; −2) vektorga ko'chirildi, so'ngra koordinata boshi atrofida 90° ga burildi. Oxirgi shaklning yuzasi qancha bo'ladi?",
+      "v": [
+        "40 sm²",
+        "80 sm²",
+        "20 sm²",
+        "10 sm²"
+      ],
+      "t": 2,
+      "izoh": "Parallel ko'chirish ham, burish ham harakat hisoblanadi va ular nuqtalar orasidagi masofani o'zgartirmaydi. Masofalar saqlangani uchun shakl o'z o'lchamini to'liq saqlaydi. Demak yuza yana 20 sm² bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-masofa-va-yuza",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#52e1ce81"
+    },
+    {
+      "q": "Uzunligi 6 sm bo'lgan kesma avval to'g'ri chiziqqa nisbatan akslantirildi, so'ngra unga koeffitsienti 2,5 bo'lgan gomotetiya qo'llandi. Oxirgi kesmaning uzunligi qancha?",
+      "v": [
+        "6 sm",
+        "37,5 sm",
+        "8,5 sm",
+        "15 sm"
+      ],
+      "t": 3,
+      "izoh": "Akslantirish harakat bo'lgani uchun kesma uzunligi 6 sm bo'lib qoladi. So'ngra gomotetiya uzunlikni koeffitsientga ko'paytiradi: 6 · 2,5 = 15 sm. Yuza uchun ishlatiladigan kvadratga ko'tarish bu yerda qo'llanilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-masofa-va-yuza",
+      "id": "matematika_vekt_m03-tekislikdagi-geometrik-almashtirishlar#32f16d36"
+    }
+  ]
+}

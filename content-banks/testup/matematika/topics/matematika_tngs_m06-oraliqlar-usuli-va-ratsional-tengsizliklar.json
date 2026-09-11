@@ -1,0 +1,1609 @@
+{
+  "nom": "Oraliqlar usuli va ratsional tengsizliklar",
+  "bolim": "Tengsizliklar",
+  "blok": "tngs",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "(x − 3)(x + 4) ifodaning x = 1 nuqtadagi ishorasi qanday bo'ladi?",
+      "v": [
+        "Musbat",
+        "Manfiy",
+        "Nolga teng",
+        "Ifoda aniqlanmagan"
+      ],
+      "t": 1,
+      "izoh": "x = 1 ni har bir ko'paytuvchiga qo'yamiz: 1 − 3 = −2 manfiy, 1 + 4 = 5 musbat. Manfiy sonni musbatga ko'paytirsak, natija manfiy: (−2)·5 = −10. Javob: manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishora-nuqtada",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#e63f0fb8"
+    },
+    {
+      "q": "f(x) = (x + 2)(x − 1)(x − 6) ifodaning x = 3 va x = 7 nuqtalardagi ishoralari mos ravishda qanday bo'lishini aniqlang.",
+      "v": [
+        "Manfiy va musbat",
+        "Musbat va manfiy",
+        "Ikkalasida ham musbat",
+        "Ikkalasida ham manfiy"
+      ],
+      "t": 0,
+      "izoh": "x = 3 da ko'paytuvchilar 5, 2 va −3 bo'ladi, ko'paytmasi 5·2·(−3) = −30, ya'ni manfiy. x = 7 da esa ular 9, 6 va 1 bo'ladi, ko'paytmasi 54, ya'ni musbat. Demak avval manfiy, keyin musbat. Javob: manfiy va musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishora-nuqtada",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#0fc113df"
+    },
+    {
+      "q": "(x − 5)/(x + 1) kasr x = −1 nuqtada qanday qiymat qabul qiladi?",
+      "v": [
+        "Musbat",
+        "Manfiy",
+        "Nolga teng",
+        "Aniqlanmagan, chunki maxraj nolga aylanadi"
+      ],
+      "t": 3,
+      "izoh": "x = −1 ni maxrajga qo'yamiz: −1 + 1 = 0. Nolga bo'lish mumkin emas, shuning uchun kasr bu nuqtada aniqlanmagan. Oraliqlar usulida maxrajning ildizi doimo ochiq nuqta bilan belgilanadi. Javob: aniqlanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishora-nuqtada",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#b1065b40"
+    },
+    {
+      "q": "Xonaning bo'yi (x + 5) metr, eni esa (x − 2) metr. Xona yuzasi 60 m² dan katta bo'lishi uchun x qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "x > 10",
+        "x > 60",
+        "x > 7",
+        "2 < x < 7"
+      ],
+      "t": 2,
+      "izoh": "Yuza (x + 5)(x − 2) ga teng, shart esa (x + 5)(x − 2) > 60. Qavslarni ochamiz: x² + 3x − 10 > 60, ya'ni x² + 3x − 70 > 0. Uchhadni ajratamiz: (x + 10)(x − 7) > 0, yechimi x < −10 yoki x > 7. En musbat bo'lishi uchun x > 2, shuning uchun manfiy oraliq tashlanadi. Javob: x > 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-maydon",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#9fd97be4"
+    },
+    {
+      "q": "(x + 3)(x − 5) ≤ 0 tengsizlikni oraliqlar usuli yordamida yeching.",
+      "v": [
+        "[−3; 5]",
+        "(−3; 5)",
+        "(−∞; −3] ∪ [5; +∞)",
+        "(−∞; −3) ∪ (5; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Kritik nuqtalar −3 va 5 bo'lib, tengsizlik qat'iy emas, shuning uchun ular yopiq belgilanadi. x = 0 ni qo'ysak, 3·(−5) = −15 manfiy chiqadi, demak o'rtadagi oraliq bizga kerak. Javob: [−3; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-kopaytma-tengsizlik",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#760f9a6b"
+    },
+    {
+      "q": "Bolalar maydonchasida to'p yuqoriga otildi va uning balandligi h = 20t − 5t² metr (t — soniya). To'p 15 metrdan baland bo'ladigan vaqt oralig'ini toping.",
+      "v": [
+        "[1; 3]",
+        "(1; 3)",
+        "(0; 4)",
+        "(−∞; 1) ∪ (3; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Shartni tengsizlik ko'rinishida yozamiz: 20t − 5t² > 15. Hammasini bir tomonga o'tkazamiz: −5t² + 20t − 15 > 0. Ikki tomonni −5 ga bo'lib belgini almashtiramiz: t² − 4t + 3 < 0, ya'ni (t − 1)(t − 3) < 0. Ko'paytma ildizlar orasida manfiy bo'ladi. Javob: (1; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-balandlik",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#78e0c84a"
+    },
+    {
+      "q": "2x² + 5x − 12 ≥ 0 tengsizlikning yechimlar to'plamini aniqlang.",
+      "v": [
+        "[−4; 3/2]",
+        "(−∞; −3/2] ∪ [4; +∞)",
+        "(−∞; −4] ∪ [3/2; +∞)",
+        "[−3/2; 4]"
+      ],
+      "t": 2,
+      "izoh": "Uchhadni ajratamiz: 2x² + 5x − 12 = (2x − 3)(x + 4). Kritik nuqtalar 3/2 va −4. x = 0 da ifoda −12, ya'ni manfiy, demak o'rtadagi oraliq yaramaydi. Tengsizlik qat'iy emas, nuqtalar yopiq. Javob: (−∞; −4] ∪ [3/2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-uchhadni-ajratib",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#8858e55f"
+    },
+    {
+      "q": "(x − 4)²(x + 3) > 0 tengsizlikning yechimini toping.",
+      "v": [
+        "(−3; +∞)",
+        "(−∞; −3) ∪ (4; +∞)",
+        "(−3; 4)",
+        "(−3; 4) ∪ (4; +∞)"
+      ],
+      "t": 3,
+      "izoh": "(x − 4)² ko'paytuvchi hech qachon manfiy bo'lmaydi, x = 4 da esa nolga aylanadi. Demak ifodaning ishorasi (x + 3) bilan aniqlanadi: u x > −3 da musbat. x = 4 nuqtada butun ifoda nol bo'lgani uchun uni chiqarib tashlaymiz. Javob: (−3; 4) ∪ (4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "karrali-ildiz-ishora",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#23129b16"
+    },
+    {
+      "q": "(x + 5)(x − 2)² ≤ 0 tengsizlikni oraliqlar usuli bilan yeching.",
+      "v": [
+        "(−∞; −5]",
+        "(−∞; −5] ∪ {2}",
+        "[−5; 2]",
+        "(−∞; −5] ∪ [2; +∞)"
+      ],
+      "t": 1,
+      "izoh": "(x − 2)² manfiy bo'lmaydi, shuning uchun ko'paytma manfiy bo'lishi uchun x + 5 < 0, ya'ni x < −5 bo'lishi kerak. Bundan tashqari x = 2 da ifoda nolga teng, tengsizlik esa qat'iy emas, demak bu nuqta ham yechimga kiradi. x = −5 ham nol beradi. Javob: (−∞; −5] ∪ {2}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "karrali-ildiz-ishora",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#cf58136f"
+    },
+    {
+      "q": "(x + 1)(x − 3)(x − 6) < 0 tengsizlikning yechimlar to'plamini toping.",
+      "v": [
+        "(−∞; −1) ∪ (3; 6)",
+        "(−1; 3) ∪ (6; +∞)",
+        "(−∞; −1] ∪ [3; 6]",
+        "(−1; 6)"
+      ],
+      "t": 0,
+      "izoh": "Kritik nuqtalar −1, 3 va 6. Eng o'ng oraliqda (x = 10 da) uchala ko'paytuvchi musbat, demak ishora musbat. Chapga siljiganda ishoralar navbat bilan almashadi: −, +, −, + tartibida chapdan o'ngga. Manfiy oraliqlarni tanlaymiz. Javob: (−∞; −1) ∪ (3; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-kopaytuvchi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#3e592d0b"
+    },
+    {
+      "q": "x(x − 4)(x + 7) ≥ 0 tengsizlikni yeching va javobni oraliqlar orqali ifodalang.",
+      "v": [
+        "(−∞; −7] ∪ [0; 4]",
+        "[−7; 4]",
+        "[−7; 0] ∪ [4; +∞)",
+        "[0; 4] ∪ [7; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Kritik nuqtalar −7, 0 va 4. Eng o'ngda (x = 5 da) ifoda 5·1·12 = 60, ya'ni musbat. Chapga qarab ishoralar almashadi: (0; 4) da manfiy, (−7; 0) da musbat, x < −7 da manfiy. Tengsizlik qat'iy emas, nuqtalar yopiq. Javob: [−7; 0] ∪ [4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-kopaytuvchi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#a3917f62"
+    },
+    {
+      "q": "(x − 8)/(x + 2) ≥ 0 tengsizlikni yechishda sonlar o'qidagi 8 va −2 nuqtalari qanday belgilanadi?",
+      "v": [
+        "Ikkalasi ham yopiq",
+        "8 — ochiq, −2 — yopiq",
+        "Ikkalasi ham ochiq",
+        "8 — yopiq, −2 — ochiq"
+      ],
+      "t": 3,
+      "izoh": "Tengsizlik qat'iy emas, shuning uchun suratni nolga aylantiruvchi x = 8 yechimga kiradi va yopiq belgilanadi. Maxrajni nolga aylantiruvchi x = −2 da kasr aniqlanmagan, shuning uchun u har doim ochiq qoladi. Javob: 8 — yopiq, −2 — ochiq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-ochiq-yopiq",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#6807013d"
+    },
+    {
+      "q": "x²(x − 9) ≤ 0 tengsizlikning yechimiga x = 0 nuqta kiradimi?",
+      "v": [
+        "Kirmaydi, chunki 0 ikki karrali ildiz",
+        "Kiradi, chunki x = 0 da ifoda nolga teng, tengsizlik esa qat'iy emas",
+        "Kirmaydi, chunki bu nuqtada ishora almashmaydi",
+        "Kiradi, lekin yechim faqat shu nuqtadan iborat"
+      ],
+      "t": 1,
+      "izoh": "x = 0 ni qo'ysak, 0·(0 − 9) = 0 chiqadi. Tengsizlik ≤ belgisi bilan berilgan, ya'ni nol qiymat ham qanoatlantiradi. Karrali ildiz ishoraning almashmasligiga ta'sir qiladi, lekin nuqtaning yechimga kirishiga to'sqinlik qilmaydi. Javob: kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-ochiq-yopiq",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#bccc4d63"
+    },
+    {
+      "q": "Sayohat uchun avtobus ijarasi 900 ming so'm bo'lib, u qatnashchilar orasida teng bo'linadi. Har bir qatnashchi bundan tashqari 30 ming so'm ovqat puli to'laydi. Bir kishining umumiy xarajati 105 ming so'mdan kam bo'lishi uchun kamida nechta qatnashchi kerak?",
+      "v": [
+        "13",
+        "12",
+        "9",
+        "30"
+      ],
+      "t": 0,
+      "izoh": "x nafar qatnashchi bo'lsa, bir kishining xarajati 900/x + 30 ming so'm bo'ladi. Shart: 900/x + 30 < 105, ya'ni 900/x < 75. Qatnashchilar soni musbat, shuning uchun 900 < 75x va x > 12. Eng kichik butun qiymat 13. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ortacha-xarajat",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#ccc709db"
+    },
+    {
+      "q": "(2x + 5)/(x − 4) ≥ 0 tengsizlikni yeching va yechimni oraliqlar birlashmasi bilan ifodalang.",
+      "v": [
+        "[−5/2; 4)",
+        "(−∞; −5/2) ∪ (4; +∞)",
+        "(−∞; −5/2] ∪ (4; +∞)",
+        "(−∞; −5/2] ∪ [4; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Surat noli −5/2, maxraj noli 4. x = 0 da kasr 5/(−4), ya'ni manfiy, demak o'rtadagi oraliq yaramaydi. Chekka ikki oraliqda kasr musbat. Surat noli yopiq, maxraj noli esa har doim ochiq bo'ladi. Javob: (−∞; −5/2] ∪ (4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sodda-kasr-tengsizlik",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#8b5c6193"
+    },
+    {
+      "q": "Ahror (x + 3)/(x − 2) ≤ 1 tengsizlikni ikki tomonni (x − 2) ga ko'paytirib yechmoqchi. To'g'ri yechim to'plamini ko'rsating.",
+      "v": [
+        "(−∞; 2]",
+        "(2; +∞)",
+        "[−3; 2)",
+        "(−∞; 2)"
+      ],
+      "t": 3,
+      "izoh": "(x − 2) ning ishorasi noma'lum, shuning uchun unga ko'paytirish mumkin emas. Hammasini bir tomonga o'tkazamiz: (x + 3)/(x − 2) − 1 ≤ 0. Umumiy maxrajga keltirsak, (x + 3 − x + 2)/(x − 2) = 5/(x − 2) ≤ 0. Surat musbat o'zgarmas, demak x − 2 < 0 bo'lishi kerak. Javob: (−∞; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrni-bir-tomonga",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#2832fa47"
+    },
+    {
+      "q": "(x − 1)/(x + 4) > 2 tengsizlikni yeching.",
+      "v": [
+        "(−∞; −9) ∪ (−4; +∞)",
+        "(−9; −4)",
+        "(−∞; −9)",
+        "(−4; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Ikkini chap tomonga o'tkazamiz: (x − 1)/(x + 4) − 2 > 0. Umumiy maxraj: (x − 1 − 2x − 8)/(x + 4) = (−x − 9)/(x + 4) > 0. Ikki tomonni −1 ga ko'paytirib belgini almashtiramiz: (x + 9)/(x + 4) < 0. Kritik nuqtalar −9 va −4, kasr ular orasida manfiy. Javob: (−9; −4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrni-bir-tomonga",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#b8396275"
+    },
+    {
+      "q": "Ustaxonada bir kunda x ta stul yasaladi. Kunlik xarajat (50x + 9000) ming so'm bo'lib, bitta stulga to'g'ri keladigan xarajat 650 ming so'mdan kam bo'lishi kerak. x eng kami nechta bo'lishi lozim?",
+      "v": [
+        "16",
+        "15",
+        "13",
+        "180"
+      ],
+      "t": 0,
+      "izoh": "Bitta stulga to'g'ri keladigan xarajat (50x + 9000)/x ming so'm. Shart: (50x + 9000)/x < 650. x musbat bo'lgani uchun ikki tomonni x ga ko'paytiramiz: 50x + 9000 < 650x, ya'ni 9000 < 600x va x > 15. Eng kichik butun qiymat 16. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ortacha-xarajat",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#01577143"
+    },
+    {
+      "q": "Nodira 60 km masofani o'zgarmas v km/soat tezlik bilan bosib o'tadi. Yo'lga 1 soatdan kam vaqt sarflashi uchun tezlik qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "(0; 60)",
+        "(0; 60]",
+        "(60; +∞)",
+        "[60; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Vaqt 60/v soatga teng, shart esa 60/v < 1. Tezlik musbat bo'lgani uchun ikki tomonni v ga ko'paytiramiz: 60 < v. Tenglik holati (v = 60) aynan 1 soat beradi, u yaramaydi. Javob: (60; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tezlik-vaqt",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#93170ef2"
+    },
+    {
+      "q": "Zavodda tayyorlangan val uzunligi x mm bo'lib, u (x − 48)(x − 55) < 0 shartini qanoatlantirsa sifatli hisoblanadi. Nechta butun uzunlik sifatli deb topiladi?",
+      "v": [
+        "8 ta",
+        "5 ta",
+        "7 ta",
+        "6 ta"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytma ildizlar orasida manfiy bo'ladi, demak shart 48 < x < 55 ga teng. Tengsizlik qat'iy, shuning uchun 48 va 55 chegaralari yechimga kirmaydi. Butun qiymatlar: 49, 50, 51, 52, 53, 54 — jami 6 ta. Javob: 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#4d2a3b44"
+    },
+    {
+      "q": "√((x − 5)(x + 2)) ifoda qaysi x qiymatlarda ma'noga ega bo'ladi?",
+      "v": [
+        "[−2; 5]",
+        "(−∞; −2] ∪ [5; +∞)",
+        "(−∞; −2) ∪ (5; +∞)",
+        "(−2; 5)"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat ildiz ostidagi ifoda manfiy bo'lmasligi kerak: (x − 5)(x + 2) ≥ 0. Kritik nuqtalar 5 va −2. x = 0 da ko'paytma (−5)·2 = −10 manfiy, demak o'rtadagi oraliq yaramaydi. Chegara nuqtalarida ildiz nolga teng, ular kiradi. Javob: (−∞; −2] ∪ [5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#81e0f7a5"
+    },
+    {
+      "q": "f(x) = √((x + 8)/(3 − x)) funksiyaning aniqlanish sohasini toping.",
+      "v": [
+        "[−8; 3)",
+        "(−8; 3)",
+        "[−8; 3]",
+        "(−∞; −8] ∪ (3; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Shart: (x + 8)/(3 − x) ≥ 0. Kritik nuqtalar −8 (surat noli) va 3 (maxraj noli). x = 0 da kasr 8/3, ya'ni musbat — o'rtadagi oraliq yaraydi. Surat noli yopiq, maxraj noli esa ochiq qoladi. Javob: [−8; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#786ba96a"
+    },
+    {
+      "q": "√(x² − 7x + 10) va 1/(x − 1) ifodalar bir vaqtda ma'noga ega bo'ladigan barcha x qiymatlari to'plamini toping.",
+      "v": [
+        "(−∞; 2] ∪ [5; +∞)",
+        "[2; 5]",
+        "(−∞; 1) ∪ (1; 2] ∪ [5; +∞)",
+        "(−∞; 1) ∪ (1; 2) ∪ (5; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Birinchi shart: x² − 7x + 10 = (x − 2)(x − 5) ≥ 0, bundan x ≤ 2 yoki x ≥ 5. Ikkinchi shart: x ≠ 1. Ikkalasini kesishtiramiz va 1 nuqtani chiqarib tashlaymiz. Javob: (−∞; 1) ∪ (1; 2] ∪ [5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#8078ca3b"
+    },
+    {
+      "q": "(x + 6)(x − 1)(x − 4)(x − 9) ifodaning ildizlari sonlar o'qini nechta oraliqqa ajratadi?",
+      "v": [
+        "3 ta",
+        "4 ta",
+        "6 ta",
+        "5 ta"
+      ],
+      "t": 3,
+      "izoh": "Ifodaning ildizlari −6, 1, 4 va 9 — jami 4 ta har xil nuqta. Sonlar o'qidagi n ta nuqta uni n + 1 ta oraliqqa ajratadi. Demak 4 + 1 = 5 ta oraliq hosil bo'ladi. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqlar-soni",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#604dfe40"
+    },
+    {
+      "q": "x(x − 3)²(x + 5) ifoda sonlar o'qidagi nechta oraliqda musbat qiymat qabul qiladi?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "1 ta"
+      ],
+      "t": 1,
+      "izoh": "Kritik nuqtalar −5, 0 va 3, ular o'qni 4 ta oraliqqa ajratadi. x = 4 da ifoda musbat. x = 3 juft karrali ildiz, shuning uchun unda ishora almashmaydi va (0; 3) da ham musbat. Keyin (−5; 0) da manfiy, x < −5 da yana musbat. Musbat oraliqlar: (−∞; −5), (0; 3), (3; +∞). Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqlar-soni",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#e8dbb026"
+    },
+    {
+      "q": "Bir ifodaning kritik nuqtalari −4, 1 va 6 bo'lib, ishoralar chapdan o'ngga −, +, −, + tarzida joylashgan. Shu ifoda uchun f(x) > 0 tengsizlikning yechimini ko'rsating.",
+      "v": [
+        "(−4; 1) ∪ (6; +∞)",
+        "(−∞; −4) ∪ (1; 6)",
+        "(−4; 6)",
+        "(−∞; −4] ∪ [1; 6]"
+      ],
+      "t": 0,
+      "izoh": "Nuqtalar o'qni to'rt oraliqqa ajratadi: (−∞; −4), (−4; 1), (1; 6) va (6; +∞). Berilgan ishoralarga ko'ra musbat oraliqlar ikkinchi va to'rtinchisi. Tengsizlik qat'iy bo'lgani uchun chegaralar qo'shilmaydi. Javob: (−4; 1) ∪ (6; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishora-jadvali-oqish",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#2d8893c9"
+    },
+    {
+      "q": "Tengsizlikni oraliqlar usuli bilan yechganda kritik nuqtalar −3, 2 va 7 chiqdi, ishoralar esa chapdan o'ngga +, −, −, + bo'ldi. Qaysi nuqtada ifodaning juft karrali ildizi bor?",
+      "v": [
+        "−3 nuqtada",
+        "7 nuqtada",
+        "2 nuqtada",
+        "Hech qaysisida"
+      ],
+      "t": 2,
+      "izoh": "Toq karrali ildizdan o'tganda ishora almashadi, juft karralida esa almashmaydi. −3 da + dan − ga o'tilgan — almashgan. 7 da − dan + ga o'tilgan — almashgan. 2 da esa ikki tomonda ham minus turibdi, ya'ni ishora saqlangan. Javob: 2 nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ishora-jadvali-oqish",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#2c198b66"
+    },
+    {
+      "q": "(x + 1)³(x − 2)²(x − 5) ≥ 0 tengsizlikning yechimini toping.",
+      "v": [
+        "(−∞; −1] ∪ [5; +∞)",
+        "[−1; 5]",
+        "(−∞; −1] ∪ [2; 5]",
+        "(−∞; −1] ∪ {2} ∪ [5; +∞)"
+      ],
+      "t": 3,
+      "izoh": "x = 6 da uchala ko'paytuvchi musbat, demak o'ng oraliqda ishora musbat. x = 5 toq karrali — ishora almashadi, (2; 5) da manfiy. x = 2 juft karrali — ishora almashmaydi, (−1; 2) da ham manfiy. x = −1 toq karrali — almashadi, x < −1 da musbat. Nol qiymatlar ham yaraydi, shuning uchun ajralib qolgan x = 2 qo'shiladi. Javob: (−∞; −1] ∪ {2} ∪ [5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "karrali-ildiz-daraja",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#dc9dcd13"
+    },
+    {
+      "q": "x⁴(x − 3)(x + 6) < 0 tengsizlikning yechimlar to'plamini aniqlang.",
+      "v": [
+        "(−6; 0) ∪ (0; 3)",
+        "(−6; 3)",
+        "(−∞; −6) ∪ (0; 3)",
+        "(0; 3)"
+      ],
+      "t": 0,
+      "izoh": "x⁴ hech qachon manfiy emas va faqat x = 0 da nolga aylanadi. Demak ifoda manfiy bo'lishi uchun (x − 3)(x + 6) < 0, ya'ni −6 < x < 3 kerak. Ammo x = 0 da butun ifoda nol bo'ladi, qat'iy tengsizlik esa nolni qabul qilmaydi. Javob: (−6; 0) ∪ (0; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "karrali-ildiz-daraja",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#7bdffdca"
+    },
+    {
+      "q": "(x − 7)²(x + 4)/(x − 1) ≤ 0 tengsizlikni oraliqlar usuli bilan yeching.",
+      "v": [
+        "[−4; 1]",
+        "[−4; 1) ∪ {7}",
+        "[−4; 1)",
+        "(−∞; −4] ∪ (1; 7]"
+      ],
+      "t": 1,
+      "izoh": "Kritik nuqtalar: 7 (juft karrali), −4 va 1 (maxraj). x = 8 da ifoda musbat. x = 7 juft karrali bo'lgani uchun (1; 7) da ham musbat. x = 1 dan o'tganda ishora almashadi: (−4; 1) da manfiy. x = −4 dan chapda yana musbat. Nol beruvchi nuqtalar −4 va 7 kiradi, maxraj noli 1 esa chiqadi. Javob: [−4; 1) ∪ {7}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "karrali-ildiz-daraja",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#9a3f7321"
+    },
+    {
+      "q": "(x + 3)/(x² − 4x − 21) > 0 tengsizlikning yechimini toping.",
+      "v": [
+        "(−3; 7)",
+        "(−∞; −3) ∪ (7; +∞)",
+        "(7; +∞)",
+        "(−3; 7) ∪ (7; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Maxrajni ajratamiz: x² − 4x − 21 = (x − 7)(x + 3). Kasr (x + 3)/((x − 7)(x + 3)) ko'rinishini oladi, x ≠ −3 shartida u 1/(x − 7) ga teng. Bu kasr faqat x > 7 da musbat. x = −3 aniqlanish sohasidan chiqarilgan, lekin u baribir yechim oralig'iga tushmaydi. Javob: (7; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maxraj-kvadrat-uchhad",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#e8fbd39e"
+    },
+    {
+      "q": "(x − 2)/(x² − 9) ≥ 0 tengsizlikning yechimini oraliqlar birlashmasi ko'rinishida yozing.",
+      "v": [
+        "(−∞; −3) ∪ [2; 3)",
+        "[−3; 2] ∪ (3; +∞)",
+        "(−3; 2) ∪ (3; +∞)",
+        "(−3; 2] ∪ (3; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Maxraj x² − 9 = (x − 3)(x + 3). Kritik nuqtalar −3, 2 va 3. x = 4 da kasr 2/7 musbat. x = 3 dan chapda (2; 3) da manfiy, (−3; 2) da musbat, x < −3 da manfiy. Surat noli 2 yopiq, maxraj nollari ±3 ochiq. Javob: (−3; 2] ∪ (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxraj-kvadrat-uchhad",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#6aef0ec3"
+    },
+    {
+      "q": "Bekzod (x + 5)/(x − 3) > 2 tengsizlikni yechishda ikki tomonni (x − 3) ga ko'paytirib, x + 5 > 2x − 6 dan x < 11 deb javob berdi. Uning xatosi nimada?",
+      "v": [
+        "(x − 3) ning ishorasi noma'lum, unga ko'paytirish mumkin emas; to'g'ri javob (3; 11)",
+        "Tengsizlik belgisini almashtirmagan, to'g'ri javob x > 11",
+        "Ikkini chap tomonga o'tkazmagan, to'g'ri javob (−∞; 11)",
+        "Xato yo'q, x < 11 javobi to'g'ri"
+      ],
+      "t": 0,
+      "izoh": "x − 3 manfiy ham bo'lishi mumkin, u holda ko'paytirishda tengsizlik belgisi almashadi. To'g'ri yo'l: (x + 5)/(x − 3) − 2 > 0, ya'ni (x + 5 − 2x + 6)/(x − 3) = (11 − x)/(x − 3) > 0. Kritik nuqtalar 3 va 11, kasr ular orasida musbat. Javob: yechim (3; 11).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xato-topish",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#b2cc41a0"
+    },
+    {
+      "q": "O'quvchi (x − 1)²(x + 6) > 0 tengsizlikda oraliqlarning ishoralarini chapdan o'ngga −, +, − deb belgiladi. Bu belgilashdagi xatoni ko'rsating.",
+      "v": [
+        "x = −6 nuqtada ishora almashmasligi kerak edi",
+        "x = 1 juft karrali ildiz, unda ishora almashmaydi; to'g'ri ketma-ketlik −, +, +",
+        "Eng chapdagi oraliqda ishora musbat bo'lishi kerak",
+        "Ishoralar to'g'ri, faqat javob (−6; 1) bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "x = 2 ni qo'yamiz: 1·8 = 8 musbat, demak o'ng oraliq musbat. x = 1 ikki karrali ildiz bo'lgani uchun undan o'tganda ishora saqlanadi, ya'ni (−6; 1) da ham musbat. x = −6 toq karrali, undan chapda manfiy. To'g'ri ketma-ketlik −, +, +. Javob: x = 1 da ishora almashmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xato-topish",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#defc661a"
+    },
+    {
+      "q": "Fermer x gektar yerga bug'doy ekkanda sof daromadi (x − 3)(30 − x) mln so'mni tashkil qiladi. Daromad musbat bo'ladigan eng katta butun gektar sonini toping.",
+      "v": [
+        "30",
+        "27",
+        "29",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Daromad musbat bo'lishi uchun (x − 3)(30 − x) > 0 bo'lishi kerak. Kritik nuqtalar 3 va 30. x = 10 da ko'paytma 7·20 = 140, ya'ni musbat, demak yechim (3; 30). Tengsizlik qat'iy, shuning uchun 30 gektar yaramaydi. Eng katta butun qiymat 29. Javob: 29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-butun-yechim",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#6fc9703f"
+    },
+    {
+      "q": "x² − 13x + 30 < 0 tengsizlikni qanoatlantiruvchi eng katta butun sonni aniqlang.",
+      "v": [
+        "10",
+        "11",
+        "3",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "Uchhad ildizlari yig'indisi 13, ko'paytmasi 30 — bular 3 va 10. Demak (x − 3)(x − 10) < 0 va yechim (3; 10). Tengsizlik qat'iy, shuning uchun 10 kirmaydi. Oraliqdagi eng katta butun son 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-butun-yechim",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#34a4dd00"
+    },
+    {
+      "q": "Idishda 40 litr eritma bo'lib, uning 6 litri tuz. Eritmaga yana x litr toza suv qo'shilganda tuz ulushi 10 foizdan kam bo'lishi kerak. x ning eng kichik natural qiymatini toping.",
+      "v": [
+        "21",
+        "20",
+        "15",
+        "60"
+      ],
+      "t": 0,
+      "izoh": "Suv qo'shilgach tuz miqdori 6 litrligicha qoladi, umumiy hajm esa 40 + x bo'ladi. Shart: 6/(40 + x) < 0,1. Hajm musbat, shuning uchun 60 < 40 + x, bundan x > 20. Eng kichik natural qiymat 21. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-konsentratsiya",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#b5b411e9"
+    },
+    {
+      "q": "Usta bir buyumni x soatda, shogirdi esa (x + 6) soatda tayyorlaydi. Ikkalasi birga ishlaganda bir soatda bajaradigan ishi butun ishning 1/4 qismidan ko'p bo'lishi uchun x qanday oraliqda yotadi?",
+      "v": [
+        "(0; 6)",
+        "(−4; 6)",
+        "(0; 4)",
+        "(6; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Bir soatlik ish unumi 1/x + 1/(x + 6) va shart 1/x + 1/(x + 6) > 1/4. Umumiy maxrajga keltiramiz: (2x + 6)/(x(x + 6)) > 1/4. x > 0 bo'lgani uchun 4(2x + 6) > x² + 6x, ya'ni x² − 2x − 24 < 0. Bu (x − 6)(x + 4) < 0 ga teng, yechimi −4 < x < 6. Vaqt musbat bo'lgani uchun javob (0; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#fb4a5400"
+    },
+    {
+      "q": "Nonvoyxonada bir kunda x ta non yopiladi, kunlik xarajat esa (1200x + 360000) so'm. Bitta nonning tannarxi 1800 so'mdan past bo'lishi uchun kunlik non soni eng kami nechta bo'lishi kerak?",
+      "v": [
+        "600",
+        "300",
+        "601",
+        "120"
+      ],
+      "t": 2,
+      "izoh": "Bitta nonning tannarxi (1200x + 360000)/x so'm. Shart: (1200x + 360000)/x < 1800. x musbat, shuning uchun 1200x + 360000 < 1800x, bundan 360000 < 600x va x > 600. Tengsizlik qat'iy, demak 600 ning o'zi yaramaydi. Javob: 601.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ortacha-xarajat",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#84afde32"
+    },
+    {
+      "q": "Quyidagi tengsizliklardan qaysi birining yechimlar to'plami bo'sh to'plam bo'ladi?",
+      "v": [
+        "(x − 4)² > 0",
+        "x² + 9 > 0",
+        "(x + 3)² ≥ 0",
+        "(x − 6)² < 0"
+      ],
+      "t": 3,
+      "izoh": "Kvadrat hech qachon manfiy bo'lmaydi, shuning uchun (x − 6)² < 0 shartini birorta ham son qanoatlantirmaydi. Qolganlari esa yechimga ega: birinchisi 4 dan boshqa hamma sonlar, ikkinchisi va uchinchisi barcha haqiqiy sonlar. Javob: (x − 6)² < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-bosh-toplam",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#df81cc6a"
+    },
+    {
+      "q": "(x − 8)(2x + 6)/(x − 1) ifodaning ishorasi qaysi nuqtalarda o'zgarishi mumkin?",
+      "v": [
+        "−3; 1; 8",
+        "−3; 8",
+        "3; 1; 8",
+        "−6; 1; 8"
+      ],
+      "t": 0,
+      "izoh": "Ishora faqat suratning va maxrajning nollarida o'zgarishi mumkin. Suratdan: x − 8 = 0 dan x = 8, 2x + 6 = 0 dan x = −3. Maxrajdan: x − 1 = 0 dan x = 1. Uchala nuqta ham sonlar o'qida belgilanadi. Javob: −3; 1; 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlarni-topish",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#0850d41f"
+    },
+    {
+      "q": "Farhod x(x − 5)/(x − 7) ifodani oraliqlar usuli bilan tekshirmoqchi. U sonlar o'qida qaysi nuqtalarni belgilashi kerak?",
+      "v": [
+        "5; 7",
+        "0; 5; 7",
+        "0; 7",
+        "−5; 0; 7"
+      ],
+      "t": 1,
+      "izoh": "Surat x(x − 5) ikki ildiz beradi: x = 0 va x = 5. Maxraj x − 7 esa x = 7 ni beradi. Maxrajning ildizini tashlab ketish keng tarqalgan xato — u ham belgilanadi, faqat ochiq nuqta sifatida. Javob: 0; 5; 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlarni-topish",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#cfa52936"
+    },
+    {
+      "q": "(x² − 16)/(x² + 3x) kasr uchun sonlar o'qida belgilanadigan barcha kritik nuqtalarni toping.",
+      "v": [
+        "−4; 0; 4",
+        "−4; −3; 4",
+        "−4; −3; 0; 4",
+        "−4; 0; 3; 4"
+      ],
+      "t": 2,
+      "izoh": "Surat x² − 16 = (x − 4)(x + 4) ildizlari −4 va 4. Maxraj x² + 3x = x(x + 3) ildizlari 0 va −3. Hammasi birga to'rtta nuqta beradi. Javob: −4; −3; 0; 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlarni-topish",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#96f70c6d"
+    },
+    {
+      "q": "x = 5 soni (x − 2)(x − 5)(x + 1) > 0 tengsizlikning yechimi bo'ladimi?",
+      "v": [
+        "Ha, chunki 5 ildiz hisoblanadi",
+        "Ha, chunki ifoda musbat qiymat oladi",
+        "Aniqlab bo'lmaydi",
+        "Yo'q, chunki ifoda nolga aylanadi, tengsizlik esa qat'iy"
+      ],
+      "t": 3,
+      "izoh": "x = 5 ni qo'yamiz: (5 − 2)(5 − 5)(5 + 1) = 3·0·6 = 0. Tengsizlik > belgisi bilan berilgan, ya'ni qat'iy, nol qiymat uni qanoatlantirmaydi. Shuning uchun bu ildiz sonlar o'qida ochiq nuqta bo'lib qoladi. Javob: yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimga-tegishlimi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#00301dd0"
+    },
+    {
+      "q": "Berilgan (x + 2)/(x − 6) ≤ 0 tengsizlik uchun x = 6 nuqta yechimga kiradimi?",
+      "v": [
+        "Kirmaydi, chunki bu nuqtada kasr aniqlanmagan",
+        "Kiradi, chunki kasr nolga teng",
+        "Kiradi, chunki tengsizlik qat'iy emas",
+        "Kirmaydi, chunki kasr musbat bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "x = 6 da maxraj 6 − 6 = 0 bo'ladi, kasr esa maxraji nol bo'lganda mavjud emas. Tengsizlik qat'iy bo'lmasa ham, aniqlanmagan nuqta yechimga kira olmaydi. Shuning uchun maxraj nollari doim ochiq belgilanadi. Javob: kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimga-tegishlimi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#b16391c8"
+    },
+    {
+      "q": "Poyezd 300 km yo'lni v km/soat tezlik bilan bosib o'tadi. Yo'l 4 soatdan ko'proq davom etishi uchun tezlik qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "(75; +∞)",
+        "(0; 75)",
+        "(0; 75]",
+        "[75; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Yo'lga ketadigan vaqt 300/v soat, shart esa 300/v > 4. Tezlik musbat bo'lgani uchun ikki tomonni v ga ko'paytiramiz: 300 > 4v, bundan v < 75. Tezlik manfiy bo'la olmaydi, shuning uchun oraliq pastdan nol bilan chegaralanadi. v = 75 da vaqt aynan 4 soat bo'ladi va shart bajarilmaydi. Javob: (0; 75).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tezlik-vaqt",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#9b944241"
+    },
+    {
+      "q": "(3 − x)(x + 8) > 0 tengsizlikni oraliqlar usuli yordamida yeching.",
+      "v": [
+        "(−∞; −8) ∪ (3; +∞)",
+        "(−3; 8)",
+        "(−8; 3)",
+        "[−8; 3]"
+      ],
+      "t": 2,
+      "izoh": "Kritik nuqtalar 3 va −8. Birinchi qavsdagi x manfiy ishora bilan turgani uchun eng o'ngdagi oraliqda ifoda manfiy bo'ladi: x = 4 da (−1)·12 = −12. Demak musbat qiymat o'rtadagi oraliqda. Javob: (−8; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-kopaytma-tengsizlik",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#dc8f8182"
+    },
+    {
+      "q": "Ekskursiyaga chiqqan 24 nafar o'quvchi transport haqi 480 ming so'mni teng bo'lib to'laydi. Yana bir necha o'quvchi qo'shilsa, har birning ulushi 16 ming so'mdan kam bo'ladi. Kamida nechta o'quvchi qo'shilishi kerak?",
+      "v": [
+        "6",
+        "8",
+        "30",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "n nafar o'quvchi qo'shilsa, jami 24 + n kishi bo'ladi va har birning ulushi 480/(24 + n) ming so'm. Shart: 480/(24 + n) < 16. Maxraj musbat, shuning uchun 480 < 384 + 16n, bundan 96 < 16n va n > 6. Eng kichik butun qiymat 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-guruh-ulush",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#5bb2b43d"
+    },
+    {
+      "q": "(5 − x)/(x + 3) ≥ 0 tengsizlikni yechib, javobni oraliq ko'rinishida yozing.",
+      "v": [
+        "(−3; 5]",
+        "[−3; 5]",
+        "(−∞; −3) ∪ [5; +∞)",
+        "(−3; 5)"
+      ],
+      "t": 0,
+      "izoh": "Kritik nuqtalar 5 va −3. x = 0 da kasr 5/3, ya'ni musbat — o'rtadagi oraliq yaraydi. Surat noli 5 da kasr nolga teng, tengsizlik qat'iy emas, demak u kiradi. Maxraj noli −3 esa ochiq qoladi. Javob: (−3; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sodda-kasr-tengsizlik",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#b4a9f052"
+    },
+    {
+      "q": "x(x − 3)/(x + 5) ≥ 0 tengsizlikda 0, 3 va −5 nuqtalarining qaysilari to'ldirilgan bo'ladi?",
+      "v": [
+        "Faqat −5",
+        "0 va 3",
+        "Barchasi to'ldirilgan",
+        "Faqat 3"
+      ],
+      "t": 1,
+      "izoh": "Tengsizlik qat'iy emas, shuning uchun ifodani nolga aylantiruvchi nuqtalar yechimga kiradi. Bular suratning nollari: x = 0 va x = 3. Maxrajni nolga aylantiruvchi x = −5 da kasr mavjud emas, u ochiq qoladi. Javob: 0 va 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-ochiq-yopiq",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#c4d3b8ed"
+    },
+    {
+      "q": "Qaysi holatda oraliqlar usulida kritik nuqta albatta ochiq qoldiriladi?",
+      "v": [
+        "Tengsizlik ≥ belgisi bilan berilganda",
+        "Nuqta suratning ildizi bo'lganda",
+        "Nuqta maxrajni nolga aylantirganda",
+        "Ildiz juft karrali bo'lganda"
+      ],
+      "t": 2,
+      "izoh": "Maxraj nolga aylangan nuqtada kasr umuman aniqlanmagan bo'ladi, shuning uchun u tengsizlik belgisidan qat'i nazar yechimga kira olmaydi. Suratning ildizi esa qat'iy bo'lmagan tengsizlikda yopiq belgilanadi. Juft karralilik ishoraga ta'sir qiladi, ochiq-yopiqlikka emas. Javob: maxrajni nolga aylantirganda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-ochiq-yopiq",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#9614e4b3"
+    },
+    {
+      "q": "Korxona oyiga x ming dona mahsulot sotganda foydasi (−x² + 26x − 120) mln so'm bo'ladi. Foyda musbat bo'lishi uchun sotuv hajmi qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "(−∞; 6) ∪ (20; +∞)",
+        "[6; 20]",
+        "(0; 6)",
+        "(6; 20)"
+      ],
+      "t": 3,
+      "izoh": "Shart: −x² + 26x − 120 > 0. Ikki tomonni −1 ga ko'paytirib belgini almashtiramiz: x² − 26x + 120 < 0. Diskriminant D = 676 − 480 = 196, √196 = 14, ildizlar (26 ± 14)/2, ya'ni 6 va 20. Uchhad ildizlari orasida manfiy qiymat oladi. Javob: (6; 20).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-foyda",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#0b79a9db"
+    },
+    {
+      "q": "6x − x² < 8 tengsizlikni standart ko'rinishga keltirib yeching.",
+      "v": [
+        "(−∞; 2) ∪ (4; +∞)",
+        "(2; 4)",
+        "[2; 4]",
+        "(−∞; 2] ∪ [4; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Hammasini bir tomonga o'tkazamiz: −x² + 6x − 8 < 0. Ikki tomonni −1 ga ko'paytirib belgini almashtiramiz: x² − 6x + 8 > 0. Ildizlari 2 va 4, demak (x − 2)(x − 4) > 0. Musbat qiymat ildizlardan tashqarida. Javob: (−∞; 2) ∪ (4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-uchhadni-ajratib",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#e76c5442"
+    },
+    {
+      "q": "Zamira uyidan maktabgacha 1200 m yo'lni piyoda bosib o'tadi. Tezligi v m/min bo'lsa, yo'lga 15 minutdan kam vaqt sarflashi uchun tezlik qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "(0; 80)",
+        "(80; +∞)",
+        "[80; +∞)",
+        "(0; 80]"
+      ],
+      "t": 1,
+      "izoh": "Yo'lga ketadigan vaqt 1200/v minut. Shart: 1200/v < 15. Tezlik musbat bo'lgani uchun 1200 < 15v, bundan v > 80. v = 80 da vaqt aynan 15 minut bo'ladi, bu esa shartni qanoatlantirmaydi. Javob: (80; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tezlik-vaqt",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#822d21f3"
+    },
+    {
+      "q": "Bir guruh o'quvchi 840 ming so'mlik sovg'a puligini teng bo'lib to'laydi. Har birining ulushi 60 ming so'mdan oshmasligi uchun guruhda kamida nechta o'quvchi bo'lishi kerak?",
+      "v": [
+        "13",
+        "15",
+        "14",
+        "28"
+      ],
+      "t": 2,
+      "izoh": "Guruhda x nafar o'quvchi bo'lsa, har birining ulushi 840/x ming so'm. Shart: 840/x ≤ 60. x musbat bo'lgani uchun 840 ≤ 60x, bundan x ≥ 14. Eng kichik mumkin bo'lgan son 14. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-guruh-ulush",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#60e123fc"
+    },
+    {
+      "q": "Bir sinfda 24 o'quvchi bor, ulardan x nafari qizlar. Qizlarning ulushi 25 foizdan yuqori, lekin 50 foizdan past bo'lsa, x qanday butun qiymatlarni qabul qiladi?",
+      "v": [
+        "6 dan 12 gacha",
+        "7 dan 12 gacha",
+        "6 dan 11 gacha",
+        "7 dan 11 gacha"
+      ],
+      "t": 3,
+      "izoh": "Birinchi shart: x/24 > 0,25, bundan x > 6. Ikkinchi shart: x/24 < 0,5, bundan x < 12. Ikkala tengsizlik ham qat'iy, shuning uchun 6 va 12 chegaralari kirmaydi. Butun qiymatlar: 7, 8, 9, 10, 11. Javob: 7 dan 11 gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-statistika-ulush",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#81e49230"
+    },
+    {
+      "q": "(x + 4)/(x − 5) ≤ 0 tengsizlikning nechta butun yechimi bor?",
+      "v": [
+        "9 ta",
+        "10 ta",
+        "8 ta",
+        "11 ta"
+      ],
+      "t": 0,
+      "izoh": "Kritik nuqtalar −4 va 5. x = 0 da kasr 4/(−5) manfiy, demak yechim o'rtadagi oraliq. Surat noli −4 yopiq, maxraj noli 5 ochiq, ya'ni yechim [−4; 5). Butun sonlar: −4, −3, −2, −1, 0, 1, 2, 3, 4 — jami 9 ta. Javob: 9 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#09366368"
+    },
+    {
+      "q": "x(x − 2)(x + 3)(x − 8)(x + 11) ko'paytma sonlar o'qini nechta oraliqqa bo'ladi va ulardan nechtasida ifoda musbat?",
+      "v": [
+        "5 ta oraliq, 3 tasida musbat",
+        "6 ta oraliq, 3 tasida musbat",
+        "6 ta oraliq, 2 tasida musbat",
+        "5 ta oraliq, 2 tasida musbat"
+      ],
+      "t": 1,
+      "izoh": "Ildizlar −11, −3, 0, 2 va 8 — beshta nuqta o'qni 6 ta oraliqqa ajratadi. Barcha ildizlar toq karrali, shuning uchun ishoralar navbat bilan almashadi. Eng o'ng oraliqda ifoda musbat, keyin −, +, −, +, − tarzida chapga boradi. Musbat oraliqlar 3 ta. Javob: 6 ta oraliq, 3 tasida musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqlar-soni",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#f896bd1a"
+    },
+    {
+      "q": "Do'kondagi 60 ta mahsulotdan x tasi chegirmada sotilmoqda. Chegirmadagi mahsulotlar ulushi 20 foizdan ko'p, lekin 35 foizdan kam bo'lsa, x qanday butun qiymatlarni oladi?",
+      "v": [
+        "12 dan 21 gacha",
+        "13 dan 21 gacha",
+        "13 dan 20 gacha",
+        "12 dan 20 gacha"
+      ],
+      "t": 2,
+      "izoh": "Birinchi shart: x/60 > 0,2, bundan x > 12. Ikkinchi shart: x/60 < 0,35, bundan x < 21. Ikkala tengsizlik ham qat'iy, shuning uchun 12 va 21 chegaralari kirmaydi. Butun qiymatlar 13 dan 20 gacha bo'ladi. Javob: 13 dan 20 gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-statistika-ulush",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#06aa7e68"
+    },
+    {
+      "q": "Do'kon mahsulot narxini x ming so'm qilib belgilaganda oylik foydasi (x − 8)(40 − x) mln so'm bo'ladi. Foyda musbat bo'ladigan narx oralig'ini toping.",
+      "v": [
+        "(0; 8)",
+        "[8; 40]",
+        "(−∞; 8) ∪ (40; +∞)",
+        "(8; 40)"
+      ],
+      "t": 3,
+      "izoh": "Foyda musbat bo'lishi sharti (x − 8)(40 − x) > 0. Kritik nuqtalar 8 va 40. x = 20 da ko'paytma 12·20 = 240, ya'ni musbat, demak yechim ular orasida. Chegaralarda foyda nolga teng, qat'iy tengsizlik esa nol qiymatni qabul qilmaydi. Javob: (8; 40).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-foyda",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#777bac97"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi tomorqaning eni x metr, bo'yi esa undan 6 metr uzun. Tomorqa yuzasi 55 m² dan katta bo'lishi uchun en qanday bo'lishi kerak?",
+      "v": [
+        "x > 5",
+        "x > 11",
+        "0 < x < 5",
+        "x > 55"
+      ],
+      "t": 0,
+      "izoh": "Yuza x(x + 6) ga teng, shart esa x(x + 6) > 55, ya'ni x² + 6x − 55 > 0. Uchhadni ajratamiz: (x + 11)(x − 5) > 0, yechimi x < −11 yoki x > 5. En musbat kattalik bo'lgani uchun birinchi oraliq tashlanadi. Javob: x > 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-maydon",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#568aeb92"
+    },
+    {
+      "q": "Suv havzasini birinchi nasos x soatda, ikkinchisi esa undan 3 soat tez to'ldiradi. Ikkala nasos birga ishlaganda havza 2 soatdan kam vaqtda to'lishi uchun x qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "(1; 6)",
+        "(3; 6)",
+        "(0; 6)",
+        "(3; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi nasos (x − 3) soatda to'ldiradi, demak x > 3. Bir soatlik unum 1/x + 1/(x − 3) va u 1/2 dan katta bo'lishi kerak. Umumiy maxrajga keltiramiz: (2x − 3)/(x(x − 3)) > 1/2. x > 3 da maxraj musbat, shuning uchun 4x − 6 > x² − 3x, ya'ni x² − 7x + 6 < 0. Bu (x − 1)(x − 6) < 0, yechimi 1 < x < 6. x > 3 sharti bilan kesishtiramiz. Javob: (3; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#28314251"
+    },
+    {
+      "q": "Taksi haydovchisining bir kunlik xarajati (2000x + 90000) so'm, bunda x — bajarilgan buyurtmalar soni. Bitta buyurtmaga to'g'ri keladigan xarajat 8000 so'mdan kam bo'lishi uchun x qanday bo'lishi kerak?",
+      "v": [
+        "x > 9",
+        "x < 15",
+        "x > 15",
+        "x > 45"
+      ],
+      "t": 2,
+      "izoh": "Bitta buyurtmaga to'g'ri keladigan xarajat (2000x + 90000)/x so'm. Shart: (2000x + 90000)/x < 8000. Buyurtmalar soni musbat, shuning uchun 2000x + 90000 < 8000x. Bundan 90000 < 6000x va x > 15. Javob: x > 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ortacha-xarajat",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#25b9efe4"
+    },
+    {
+      "q": "Dehqon 240 litr suvga x litr suyuq o'g'itni qo'shadi. Aralashmadagi o'g'it ulushi 4 foizdan oshmasligi kerak. x ning eng katta butun qiymatini toping.",
+      "v": [
+        "9",
+        "11",
+        "9,6",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Aralashmaning umumiy hajmi 240 + x litr, o'g'it esa x litr. Shart: x/(240 + x) ≤ 0,04. Ikki tomonni musbat maxrajga ko'paytiramiz: x ≤ 9,6 + 0,04x, bundan 0,96x ≤ 9,6 va x ≤ 10. Eng katta butun qiymat 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-konsentratsiya",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#87d7f8b7"
+    },
+    {
+      "q": "Aziza uyali aloqa uchun oyiga 25 000 so'm abonent to'lovi va har bir daqiqaga 200 so'm to'laydi. Bir daqiqaning o'rtacha qiymati 450 so'mdan past bo'lishi uchun u kamida necha daqiqa gaplashishi kerak?",
+      "v": [
+        "101",
+        "100",
+        "125",
+        "56"
+      ],
+      "t": 0,
+      "izoh": "x daqiqa gaplashsa, jami to'lov 25 000 + 200x so'm, bir daqiqaning o'rtacha qiymati esa (25 000 + 200x)/x. Shart: (25 000 + 200x)/x < 450. Bundan 25 000 + 200x < 450x, ya'ni 25 000 < 250x va x > 100. Eng kichik butun qiymat 101. Javob: 101.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ortacha-xarajat",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#463cf252"
+    },
+    {
+      "q": "Nilufarning 6 ta bahosi yig'indisi 25 ball. U yana n ta 5 baho olsa, o'rtacha bahosi 4,5 dan yuqori bo'ladi. n ning eng kichik qiymatini toping.",
+      "v": [
+        "1",
+        "5",
+        "4",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "n ta yangi baho qo'shilgach, ballar yig'indisi 25 + 5n, baholar soni esa 6 + n bo'ladi. Shart: (25 + 5n)/(6 + n) > 4,5. Maxraj musbat, shuning uchun 25 + 5n > 27 + 4,5n, bundan 0,5n > 2 va n > 4. Eng kichik butun qiymat 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ortacha-baho",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#55afa3f5"
+    },
+    {
+      "q": "(2x − 1)/(x + 3) < 2 tengsizlikni yeching.",
+      "v": [
+        "(−∞; −3)",
+        "(−3; 7)",
+        "(−3; +∞)",
+        "(−∞; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Ikkini chapga o'tkazamiz: (2x − 1)/(x + 3) − 2 < 0. Umumiy maxrajga keltiramiz: (2x − 1 − 2x − 6)/(x + 3) = −7/(x + 3) < 0. Surat o'zgarmas manfiy, demak kasr manfiy bo'lishi uchun maxraj musbat bo'lishi kerak: x + 3 > 0. Javob: (−3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrni-bir-tomonga",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#6e14dec3"
+    },
+    {
+      "q": "Kamola 3/(x − 2) ≥ 1 tengsizlikni yechmoqda. To'g'ri yechim to'plamini tanlang.",
+      "v": [
+        "[2; 5]",
+        "(2; 5)",
+        "(−∞; 2) ∪ [5; +∞)",
+        "(2; 5]"
+      ],
+      "t": 3,
+      "izoh": "Birni chapga o'tkazamiz: 3/(x − 2) − 1 ≥ 0. Umumiy maxraj: (3 − x + 2)/(x − 2) = (5 − x)/(x − 2) ≥ 0. Kritik nuqtalar 5 va 2. x = 3 da kasr 2/1 musbat, demak o'rtadagi oraliq yaraydi. Surat noli 5 yopiq, maxraj noli 2 ochiq. Javob: (2; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrni-bir-tomonga",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#3068f11c"
+    },
+    {
+      "q": "1/(x − 3) < 1/(x + 2) tengsizlikning yechimini toping.",
+      "v": [
+        "(−2; 3)",
+        "(−∞; −2) ∪ (3; +∞)",
+        "(−3; 2)",
+        "[−2; 3]"
+      ],
+      "t": 0,
+      "izoh": "Hammasini bir tomonga o'tkazamiz: 1/(x − 3) − 1/(x + 2) < 0. Umumiy maxrajga keltiramiz: (x + 2 − x + 3)/((x − 3)(x + 2)) = 5/((x − 3)(x + 2)) < 0. Surat musbat, demak maxraj manfiy bo'lishi kerak: (x − 3)(x + 2) < 0. Javob: (−2; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-maxrajga-keltirish",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#dcb36b65"
+    },
+    {
+      "q": "1/x ≥ 1/(x − 4) tengsizlikning yechimlar to'plamini aniqlang.",
+      "v": [
+        "(−∞; 0) ∪ (4; +∞)",
+        "(0; 4)",
+        "[0; 4]",
+        "(0; 4]"
+      ],
+      "t": 1,
+      "izoh": "Ayirmani tuzamiz: 1/x − 1/(x − 4) ≥ 0. Umumiy maxrajga keltiramiz: (x − 4 − x)/(x(x − 4)) = −4/(x(x − 4)) ≥ 0. Surat manfiy o'zgarmas, demak maxraj manfiy bo'lishi kerak: x(x − 4) < 0. Kasr hech qachon nolga aylanmaydi, shuning uchun chegaralar kirmaydi. Javob: (0; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-maxrajga-keltirish",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#b42e2d69"
+    },
+    {
+      "q": "x/(x + 5) ≤ 1/2 tengsizlikni umumiy maxrajga keltirib yeching.",
+      "v": [
+        "[−5; 5]",
+        "(−∞; −5) ∪ [5; +∞)",
+        "(−5; 5]",
+        "(−5; 5)"
+      ],
+      "t": 2,
+      "izoh": "Hammasini chapga o'tkazamiz: x/(x + 5) − 1/2 ≤ 0. Umumiy maxraj 2(x + 5): (2x − x − 5)/(2(x + 5)) = (x − 5)/(2(x + 5)) ≤ 0. Ikkilik musbat ko'paytuvchi bo'lgani uchun ishoraga ta'sir qilmaydi. Kritik nuqtalar 5 va −5; x = 0 da kasr manfiy. Surat noli yopiq, maxraj noli ochiq. Javob: (−5; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-maxrajga-keltirish",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#480fb14e"
+    },
+    {
+      "q": "Basseynni birinchi quvur 15 soatda to'ldiradi, ikkinchisi esa x soatda. Ikkala quvur birga ishlaganda basseyn 6 soatdan kam vaqtda to'lishi uchun x qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "(10; +∞)",
+        "(0; 15)",
+        "[0; 10]",
+        "(0; 10)"
+      ],
+      "t": 3,
+      "izoh": "Bir soatlik umumiy unum 1/15 + 1/x bo'lib, u 1/6 dan katta bo'lishi kerak. Bundan 1/x > 1/6 − 1/15, o'ng tomonni hisoblaymiz: 5/30 − 2/30 = 1/10. Vaqt musbat bo'lgani uchun 1/x > 1/10 dan x < 10 kelib chiqadi. Demak x nol bilan 10 orasida yotadi va chegaralar kirmaydi. Javob: (0; 10).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ish-unumi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#7c82096b"
+    },
+    {
+      "q": "(x + 7)(x − 1)(x − 4) ≤ 0 tengsizlik yechimidagi chegaralangan oraliqning uzunligini toping.",
+      "v": [
+        "3",
+        "8",
+        "11",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Kritik nuqtalar −7, 1 va 4. x = 5 da ifoda musbat, chapga qarab ishoralar almashadi: (1; 4) da manfiy, (−7; 1) da musbat, x < −7 da manfiy. Yechim (−∞; −7] ∪ [1; 4]. Chegaralangan oraliq [1; 4] va uning uzunligi 4 − 1 = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-oraliqlar-uzunligi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#83504bd6"
+    },
+    {
+      "q": "Bir tengsizlikning yechimi (−∞; −5) ∪ (2; +∞) ekani ma'lum. Quyidagilardan qaysi biri shunday yechimga ega?",
+      "v": [
+        "(x + 5)(x − 2) < 0",
+        "(x + 5)(x − 2) > 0",
+        "(x − 5)(x + 2) > 0",
+        "(x + 5)(x − 2) ≥ 0"
+      ],
+      "t": 1,
+      "izoh": "Yechim chekka ikki oraliqdan iborat, demak ko'paytma musbat bo'lishi kerak. Chegaralar −5 va 2, shuning uchun ko'paytuvchilar (x + 5) va (x − 2). Chegaralar ochiq bo'lgani uchun tengsizlik qat'iy. Javob: (x + 5)(x − 2) > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-masala",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#eecb3ae3"
+    },
+    {
+      "q": "Yechimi [−3; 6) oralig'idan iborat bo'lgan tengsizlikni tanlang.",
+      "v": [
+        "(x + 3)/(x − 6) ≥ 0",
+        "(x − 3)/(x + 6) ≤ 0",
+        "(x + 3)/(x − 6) ≤ 0",
+        "(x + 3)(x − 6) ≤ 0"
+      ],
+      "t": 2,
+      "izoh": "Chegara −3 yopiq, 6 esa ochiq — bu 6 ning maxrajda turishini bildiradi. Demak kasr (x + 3)/(x − 6) ko'rinishida. x = 0 da kasr 3/(−6) manfiy, shuning uchun ≤ belgisi kerak. Javob: (x + 3)/(x − 6) ≤ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-masala",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#974adbe4"
+    },
+    {
+      "q": "(x + 1)(x − 4)(x − 9) ifoda x = 5 nuqtada qanday ishoraga ega?",
+      "v": [
+        "Musbat",
+        "Nolga teng",
+        "Ishorani aniqlab bo'lmaydi",
+        "Manfiy"
+      ],
+      "t": 3,
+      "izoh": "x = 5 ni qo'yamiz: 5 + 1 = 6, 5 − 4 = 1, 5 − 9 = −4. Ko'paytma 6·1·(−4) = −24 bo'ladi. Bitta manfiy ko'paytuvchi natijani manfiy qiladi. Javob: manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishora-nuqtada",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#b16d811f"
+    },
+    {
+      "q": "x = −2 soni (x + 2)²(x − 7) ≤ 0 tengsizlikning yechimi bo'ladimi?",
+      "v": [
+        "Ha, chunki ifoda nolga aylanadi va tengsizlik qat'iy emas",
+        "Yo'q, chunki ifoda manfiy emas",
+        "Yo'q, chunki −2 juft karrali ildiz",
+        "Ha, chunki ifoda manfiy qiymat oladi"
+      ],
+      "t": 0,
+      "izoh": "x = −2 ni qo'yamiz: (−2 + 2)²·(−2 − 7) = 0·(−9) = 0. Tengsizlik ≤ belgisi bilan berilgan, ya'ni nol qiymat ham yaraydi. Juft karrali ildiz bo'lishi nuqtaning yechimga kirishiga to'sqinlik qilmaydi. Javob: ha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimga-tegishlimi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#88f7d6b3"
+    },
+    {
+      "q": "(x² − 25)(x + 4)/(x² − x) ifodaning kritik nuqtalari nechta?",
+      "v": [
+        "4 ta",
+        "5 ta",
+        "7 ta",
+        "3 ta"
+      ],
+      "t": 1,
+      "izoh": "Surat: x² − 25 = (x − 5)(x + 5) ildizlari 5 va −5, yana x + 4 dan −4. Maxraj: x² − x = x(x − 1) ildizlari 0 va 1. Hammasi har xil: −5, −4, 0, 1, 5. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlarni-topish",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#e2b326d1"
+    },
+    {
+      "q": "Uchta har xil kritik nuqtaga ega ifoda sonlar o'qini nechta oraliqqa ajratadi va ulardan nechtasi cheksiz bo'ladi?",
+      "v": [
+        "3 ta oraliq, 2 tasi cheksiz",
+        "4 ta oraliq, 1 tasi cheksiz",
+        "4 ta oraliq, 2 tasi cheksiz",
+        "5 ta oraliq, 2 tasi cheksiz"
+      ],
+      "t": 2,
+      "izoh": "Sonlar o'qidagi 3 ta nuqta uni 3 + 1 = 4 ta oraliqqa ajratadi. Bulardan eng chapdagisi minus cheksizlikdan, eng o'ngdagisi plyus cheksizlikkacha cho'ziladi. Demak cheksiz oraliqlar ikkita, qolgan ikkitasi chegaralangan. Javob: 4 ta oraliq, 2 tasi cheksiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqlar-soni",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#21c3bfde"
+    },
+    {
+      "q": "x² − 3x − 28 ≤ 0 tengsizlikning butun yechimlari nechta?",
+      "v": [
+        "11 ta",
+        "13 ta",
+        "10 ta",
+        "12 ta"
+      ],
+      "t": 3,
+      "izoh": "Uchhad ildizlari yig'indisi 3, ko'paytmasi −28 — bular 7 va −4. Demak (x − 7)(x + 4) ≤ 0 va yechim [−4; 7]. Tengsizlik qat'iy emas, chegaralar ham kiradi. Butun sonlar −4 dan 7 gacha, ya'ni 7 − (−4) + 1 = 12 ta. Javob: 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-yechimlar-soni",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#b1baf126"
+    },
+    {
+      "q": "(x − 2)(x + 6)/(x − 11) ifodaning x = 3 nuqtadagi ishorasini aniqlang.",
+      "v": [
+        "Manfiy",
+        "Musbat",
+        "Nol",
+        "Kasr aniqlanmagan"
+      ],
+      "t": 0,
+      "izoh": "x = 3 ni qo'yamiz: surat (3 − 2)(3 + 6) = 1·9 = 9, maxraj esa 3 − 11 = −8. Musbat sonni manfiyga bo'lsak, natija manfiy bo'ladi. Javob: manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishora-nuqtada",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#c03df3ef"
+    },
+    {
+      "q": "Bo'yoq tayyorlash uchun 18 litr suvga x litr konsentrat qo'shiladi. Aralashmadagi konsentrat ulushi 25 foizdan ko'p bo'lishi uchun x qanday bo'lishi kerak?",
+      "v": [
+        "x > 4,5",
+        "x > 6",
+        "x > 24",
+        "x > 3"
+      ],
+      "t": 1,
+      "izoh": "Aralashmaning umumiy hajmi 18 + x litr, konsentrat esa x litr. Shart: x/(18 + x) > 0,25. Maxraj musbat bo'lgani uchun ikki tomonni unga ko'paytiramiz: 4x > 18 + x, bundan 3x > 18 va x > 6. Javob: x > 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-konsentratsiya",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#8354d612"
+    },
+    {
+      "q": "3x² − 10x + 3 < 0 tengsizlikni yeching.",
+      "v": [
+        "(−3; −1/3)",
+        "(−∞; 1/3) ∪ (3; +∞)",
+        "(1/3; 3)",
+        "[1/3; 3]"
+      ],
+      "t": 2,
+      "izoh": "Diskriminant D = 100 − 36 = 64, √64 = 8. Ildizlar (10 ± 8)/6, ya'ni 3 va 1/3. Bosh koeffitsient musbat bo'lgani uchun uchhad ildizlar orasida manfiy qiymat oladi. Tengsizlik qat'iy, chegaralar ochiq. Javob: (1/3; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-uchhadni-ajratib",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#50d9cf2b"
+    },
+    {
+      "q": "(x + 8)²(x − 1) < 0 tengsizlikning yechimini toping.",
+      "v": [
+        "(−∞; 1)",
+        "(−8; 1)",
+        "(−∞; −8) ∪ (1; +∞)",
+        "(−∞; −8) ∪ (−8; 1)"
+      ],
+      "t": 3,
+      "izoh": "(x + 8)² manfiy bo'lmaydi va x = −8 da nolga aylanadi. Demak ifodaning ishorasi (x − 1) bilan aniqlanadi: u x < 1 da manfiy. Ammo x = −8 da butun ifoda nolga teng, qat'iy tengsizlik esa nolni qabul qilmaydi. Javob: (−∞; −8) ∪ (−8; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "karrali-ildiz-ishora",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#617a58d3"
+    },
+    {
+      "q": "(x − 4)⁴(x + 2)³ ≥ 0 tengsizlikning yechimlar to'plamini aniqlang.",
+      "v": [
+        "[−2; +∞)",
+        "[−2; 4) ∪ (4; +∞)",
+        "(−∞; −2]",
+        "(−∞; −2] ∪ [4; +∞)"
+      ],
+      "t": 0,
+      "izoh": "(x − 4)⁴ juft darajali, ya'ni hech qachon manfiy emas. (x + 2)³ esa toq darajali va uning ishorasi (x + 2) bilan bir xil. Demak ko'paytma x ≥ −2 da manfiy emas. x = 4 da ifoda nolga teng, tengsizlik qat'iy bo'lmagani uchun bu nuqta ham kiradi va oraliq uzilmaydi. Javob: [−2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "karrali-ildiz-ishora",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#dc6738b6"
+    },
+    {
+      "q": "(2x − 1)(x + 5)(x − 3) > 0 tengsizlikni oraliqlar usuli bilan yeching.",
+      "v": [
+        "(−∞; −5) ∪ (1/2; 3)",
+        "(−5; 1/2) ∪ (3; +∞)",
+        "(−5; 3)",
+        "(−∞; −5) ∪ (3; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Kritik nuqtalar: 2x − 1 = 0 dan 1/2, keyin −5 va 3. Ularni tartibga solamiz: −5, 1/2, 3. x = 4 da uchala ko'paytuvchi musbat, demak o'ngda ishora musbat. Chapga qarab ishoralar almashadi: (1/2; 3) da manfiy, (−5; 1/2) da musbat, x < −5 da manfiy. Javob: (−5; 1/2) ∪ (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-kopaytuvchi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#38d1c9d4"
+    },
+    {
+      "q": "(x + 3)(x − 2)(x − 5)(x − 10) ≥ 0 tengsizlikning yechimida nechta chegaralangan oraliq bor?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "1 ta",
+        "0 ta"
+      ],
+      "t": 2,
+      "izoh": "Kritik nuqtalar −3, 2, 5 va 10. x = 11 da to'rtala ko'paytuvchi musbat, demak o'ngda ishora musbat. Chapga qarab almashadi: (5; 10) manfiy, (2; 5) musbat, (−3; 2) manfiy, x < −3 musbat. Yechim (−∞; −3] ∪ [2; 5] ∪ [10; +∞). Bulardan faqat [2; 5] chegaralangan. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-kopaytuvchi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#f8ebfaca"
+    },
+    {
+      "q": "(x − 6)²/(x + 4) > 0 tengsizlikda x = 6 nuqta yechimga kiradimi?",
+      "v": [
+        "Kiradi, chunki juft karrali ildizda ishora almashmaydi",
+        "Kiradi, chunki kasr musbat bo'ladi",
+        "Kirmaydi, chunki maxraj nolga aylanadi",
+        "Kirmaydi, chunki kasr nolga teng, tengsizlik esa qat'iy"
+      ],
+      "t": 3,
+      "izoh": "x = 6 da surat (6 − 6)² = 0, maxraj esa 10 bo'ladi, ya'ni kasr nolga teng. Tengsizlik > belgisi bilan qat'iy berilgan, shuning uchun nol qiymat yaramaydi. Juft karralilik faqat ishoraning almashmasligini bildiradi. Javob: kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-ochiq-yopiq",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#113468a8"
+    },
+    {
+      "q": "(x − 13)/(x + 7) ≤ 0 tengsizlikning yechimini toping.",
+      "v": [
+        "(−7; 13]",
+        "[−7; 13]",
+        "(−7; 13)",
+        "(−∞; −7) ∪ [13; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Kritik nuqtalar 13 va −7. x = 0 da kasr (−13)/7 manfiy, demak o'rtadagi oraliq yaraydi. Surat noli 13 da kasr nolga teng va tengsizlik qat'iy emas, shuning uchun u kiradi. Maxraj noli −7 esa ochiq qoladi. Javob: (−7; 13].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-kasr-tengsizlik",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#ce6787e0"
+    },
+    {
+      "q": "(x + 6)/(x − 1) ≥ 3 tengsizlikni yeching.",
+      "v": [
+        "[1; 9/2]",
+        "(1; 9/2]",
+        "(−∞; 1) ∪ [9/2; +∞)",
+        "(1; 9/2)"
+      ],
+      "t": 1,
+      "izoh": "Uchni chapga o'tkazamiz: (x + 6)/(x − 1) − 3 ≥ 0. Umumiy maxraj: (x + 6 − 3x + 3)/(x − 1) = (9 − 2x)/(x − 1) ≥ 0. Kritik nuqtalar 9/2 va 1. x = 2 da kasr 5/1 musbat, demak o'rtadagi oraliq yaraydi. Surat noli 9/2 yopiq, maxraj noli 1 ochiq. Javob: (1; 9/2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrni-bir-tomonga",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#1470626a"
+    },
+    {
+      "q": "Yuk mashinasi 480 km yo'lni bosib o'tishi kerak. Agar u tezligini soatiga 20 km ga oshirsa, yo'lga ketadigan vaqt 8 soatdan kam bo'ladi. Boshlang'ich tezlik v qanday qiymatlardan katta bo'lishi kerak?",
+      "v": [
+        "v > 60",
+        "v > 20",
+        "v > 40",
+        "v > 80"
+      ],
+      "t": 2,
+      "izoh": "Oshirilgan tezlik v + 20 km/soat, sarflanadigan vaqt esa 480/(v + 20) soat. Shart: 480/(v + 20) < 8. Maxraj musbat bo'lgani uchun 480 < 8v + 160, bundan 320 < 8v va v > 40. Javob: v > 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tezlik-vaqt",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#f4977a39"
+    },
+    {
+      "q": "Guruhdagi 8 ta imtihon natijasining yig'indisi 640 ball. Yana n nafar o'quvchi 90 balldan olsa, o'rtacha ball 85 dan oshadi. n ning eng kichik qiymatini toping.",
+      "v": [
+        "8",
+        "10",
+        "40",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "n ta yangi natija qo'shilgach, ballar yig'indisi 640 + 90n, natijalar soni esa 8 + n bo'ladi. Shart: (640 + 90n)/(8 + n) > 85. Maxraj musbat, shuning uchun 640 + 90n > 680 + 85n, bundan 5n > 40 va n > 8. Eng kichik butun qiymat 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ortacha-baho",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#eb76c601"
+    },
+    {
+      "q": "y = √(x² − 8x) funksiya qaysi qiymatlarda aniqlangan bo'ladi?",
+      "v": [
+        "(−∞; 0] ∪ [8; +∞)",
+        "[0; 8]",
+        "(−∞; 0) ∪ (8; +∞)",
+        "(0; 8)"
+      ],
+      "t": 0,
+      "izoh": "Ildiz ostidagi ifoda manfiy bo'lmasligi kerak: x² − 8x ≥ 0, ya'ni x(x − 8) ≥ 0. Kritik nuqtalar 0 va 8. x = 1 da ifoda −7 manfiy, demak o'rtadagi oraliq yaramaydi. Chegaralarda ildiz nolga teng va u ma'noga ega. Javob: (−∞; 0] ∪ [8; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#95383b7b"
+    },
+    {
+      "q": "Oraliqlar usulida eng o'ngdagi oraliqning ishorasi qanday aniqlanadi?",
+      "v": [
+        "Har doim musbat bo'ladi",
+        "Eng katta kritik nuqtadan katta ixtiyoriy son qo'yib tekshiriladi",
+        "Har doim manfiy bo'ladi",
+        "Kritik nuqtalar soniga qarab aniqlanadi"
+      ],
+      "t": 1,
+      "izoh": "Eng o'ng oraliqdan istalgan bitta sonni tanlab, uni ifodaga qo'yish yetarli, chunki bir oraliq ichida ishora o'zgarmaydi. Masalan barcha kritik nuqtalardan katta sonni olish qulay. Keyin qolgan oraliqlarning ishoralari karralilikka qarab belgilanadi. Javob: katta son qo'yib tekshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishora-jadvali-oqish",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#1d8a2829"
+    },
+    {
+      "q": "(x² − 5x + 6)/(x² − 9) ≤ 0 tengsizlikni yeching.",
+      "v": [
+        "(−3; 2] ∪ {3}",
+        "[−3; 2]",
+        "(−3; 2]",
+        "(−3; 2) ∪ (3; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Surat x² − 5x + 6 = (x − 2)(x − 3), maxraj x² − 9 = (x − 3)(x + 3). x ≠ 3 va x ≠ −3 shartida kasr (x − 2)/(x + 3) ga qisqaradi. Bu kasr −3 < x ≤ 2 da manfiy yoki nolga teng. x = 3 aniqlanish sohasidan chiqarilgan, lekin u topilgan oraliqqa kirmaydi. Javob: (−3; 2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maxraj-kvadrat-uchhad",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#547f1b14"
+    },
+    {
+      "q": "O'quvchi (x² − 4)/(x − 2) ≥ 0 tengsizlikni qisqartirib, x + 2 ≥ 0 dan x ≥ −2 deb javob berdi. Bu javobdagi kamchilik nimada?",
+      "v": [
+        "Qisqartirish mumkin emas edi, to'g'ri javob (2; +∞)",
+        "Tengsizlik belgisi almashishi kerak edi",
+        "Javob to'g'ri, hech qanday kamchilik yo'q",
+        "x = 2 chiqarib tashlanmagan; to'g'ri javob [−2; 2) ∪ (2; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Surat x² − 4 = (x − 2)(x + 2) bo'lgani uchun kasr haqiqatan x + 2 ga qisqaradi. Ammo qisqartirish faqat x ≠ 2 shartida o'rinli: boshlang'ich kasr x = 2 da umuman aniqlanmagan. Shuning uchun bu nuqta yechimdan chiqariladi. Javob: x = 2 chiqarib tashlanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xato-topish",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#ef594ca6"
+    },
+    {
+      "q": "Yugurish yo'lakchasining uzunligi 600 metr. Sportchi uni t soniyada bosib o'tadi va o'rtacha tezligi 4 m/s dan yuqori bo'lishi kerak. t qanday oraliqda bo'ladi?",
+      "v": [
+        "(0; 150)",
+        "(150; +∞)",
+        "(0; 150]",
+        "[150; +∞)"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha tezlik 600/t m/s ga teng, shart esa 600/t > 4. Vaqt musbat bo'lgani uchun ikki tomonni t ga ko'paytiramiz: 600 > 4t, bundan t < 150. Vaqt nolga teng bo'la olmaydi, shuning uchun oraliq pastdan noldan boshlanadi. t = 150 da tezlik aynan 4 m/s chiqadi va shart bajarilmaydi. Javob: (0; 150).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tezlik-vaqt",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#65d16615"
+    },
+    {
+      "q": "Bog'chadagi to'g'ri to'rtburchak qumloq maydonchaning eni x metr, bo'yi esa undan 2 metr uzun. Yuza 24 m² dan katta, lekin 63 m² dan kichik bo'lsa, en qanday oraliqda yotadi?",
+      "v": [
+        "(0; 4)",
+        "(4; 7)",
+        "[4; 7]",
+        "(6; 9)"
+      ],
+      "t": 1,
+      "izoh": "Yuza x(x + 2) ga teng. Birinchi shart: x² + 2x − 24 > 0, ya'ni (x + 6)(x − 4) > 0; en musbat bo'lgani uchun x > 4. Ikkinchi shart: x² + 2x − 63 < 0, ya'ni (x + 9)(x − 7) < 0, bundan x < 7. Ikkala shartni birlashtiramiz. Javob: (4; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-maydon",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#2a1a1579"
+    },
+    {
+      "q": "Qaysi tengsizlikning yechimi faqat bitta sondan iborat bo'ladi?",
+      "v": [
+        "(x − 7)² < 0",
+        "(x − 7)² ≥ 0",
+        "(x − 7)² ≤ 0",
+        "(x − 7)² > 0"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat manfiy bo'lmaydi, shuning uchun (x − 7)² ≤ 0 sharti faqat kvadrat aynan nolga teng bo'lganda bajariladi, ya'ni x = 7 da. Qat'iy manfiylik shartining yechimi yo'q, ≥ shartini esa barcha sonlar qanoatlantiradi, > shartini 7 dan boshqa hamma son. Javob: (x − 7)² ≤ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-masala",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#8e484b3d"
+    },
+    {
+      "q": "Bog'dagi kvadrat maydonning tomoni x metr. Maydon yuzasi 144 m² dan katta, lekin 400 m² dan kichik bo'lsa, tomon uzunligi qaysi oraliqda yotadi?",
+      "v": [
+        "(0; 12)",
+        "(12; 400)",
+        "[12; 20]",
+        "(12; 20)"
+      ],
+      "t": 3,
+      "izoh": "Yuza x² ga teng, shart esa 144 < x² < 400. Birinchi tengsizlikdan (x − 12)(x + 12) > 0, musbat tomon uchun x > 12. Ikkinchisidan (x − 20)(x + 20) < 0, ya'ni x < 20. Ikkalasini birlashtiramiz va chegaralar qat'iy bo'lgani uchun ochiq qoldiramiz. Javob: (12; 20).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-maydon",
+      "id": "matematika_tngs_m06-oraliqlar-usuli-va-ratsional-tengsizliklar#33ba6f03"
+    }
+  ]
+}

@@ -1,0 +1,531 @@
+{
+  "nom": "17-mavzu. Zichlik",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Zichlik nima?",
+      "v": [
+        "Hajm birligidagi moddaning massasiga son jihatdan teng fizik kattalik",
+        "Jismning umumiy massasi",
+        "Jismning harakat tezligi",
+        "Jismga ta'sir qiluvchi kuch"
+      ],
+      "t": 0,
+      "izoh": "Zichlik — birlik hajmdagi modda massasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#7d6dbdc4"
+    },
+    {
+      "q": "Zichlik qaysi harf bilan belgilanadi?",
+      "v": [
+        "ρ (ro)",
+        "m",
+        "V",
+        "F"
+      ],
+      "t": 0,
+      "izoh": "Zichlik ρ (ro) bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m17-zichlik#3b16955e"
+    },
+    {
+      "q": "Zichlik formulasini to'g'ri ko'rsating.",
+      "v": [
+        "ρ = m/V",
+        "ρ = m·V",
+        "ρ = V/m",
+        "ρ = m + V"
+      ],
+      "t": 0,
+      "izoh": "ρ = m/V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m17-zichlik#e25a33ef"
+    },
+    {
+      "q": "SI da zichlik birligi nima?",
+      "v": [
+        "kg/m³",
+        "g/cm³",
+        "kg/l",
+        "g/l"
+      ],
+      "t": 0,
+      "izoh": "SI da zichlik birligi kg/m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#2f0a240d"
+    },
+    {
+      "q": "Suvning zichligi kg/m³ da qanchaga teng?",
+      "v": [
+        "1000 kg/m³",
+        "100 kg/m³",
+        "10 kg/m³",
+        "10 000 kg/m³"
+      ],
+      "t": 0,
+      "izoh": "Suvning zichligi 1000 kg/m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#b3bce44c"
+    },
+    {
+      "q": "Suvning zichligi g/cm³ da qanchaga teng?",
+      "v": [
+        "1 g/cm³",
+        "0,1 g/cm³",
+        "10 g/cm³",
+        "100 g/cm³"
+      ],
+      "t": 0,
+      "izoh": "Suvning zichligi 1 g/cm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#c0d91c4a"
+    },
+    {
+      "q": "Suyuqliklarning zichligini o'lchaydigan asbob nima deb ataladi?",
+      "v": [
+        "Areometr",
+        "Dinamometr",
+        "Tarozi",
+        "Menzurka"
+      ],
+      "t": 0,
+      "izoh": "Areometr suyuqlik zichligini o'lchaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#0c1cfd6d"
+    },
+    {
+      "q": "1 litr nechaga teng?",
+      "v": [
+        "1 dm³",
+        "1 m³",
+        "100 cm³",
+        "10 cm³"
+      ],
+      "t": 0,
+      "izoh": "1 l = 1 dm³ = 1000 cm³ = 0,001 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m17-zichlik#38df9867"
+    },
+    {
+      "q": "1 cm³ hajmli alyuminiyning massasi qancha?",
+      "v": [
+        "2,7 g",
+        "7,8 g",
+        "8,9 g",
+        "1 g"
+      ],
+      "t": 0,
+      "izoh": "Alyuminiy zichligi 2,7 g/cm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m17-zichlik#5c5f1ceb"
+    },
+    {
+      "q": "1 cm³ hajmli temirning massasi qancha?",
+      "v": [
+        "7,8 g",
+        "2,7 g",
+        "8,9 g",
+        "19,3 g"
+      ],
+      "t": 0,
+      "izoh": "Temirning zichligi 7,8 g/cm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m17-zichlik#b59908e2"
+    },
+    {
+      "q": "1 cm³ hajmli misning massasi qancha?",
+      "v": [
+        "8,9 g",
+        "7,8 g",
+        "10,5 g",
+        "2,7 g"
+      ],
+      "t": 0,
+      "izoh": "Misning zichligi 8,9 g/cm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m17-zichlik#8af4707d"
+    },
+    {
+      "q": "Qattiq jismlar ichida jadval bo'yicha zichligi eng katta modda qaysi?",
+      "v": [
+        "Oltin",
+        "Qo'rg'oshin",
+        "Kumush",
+        "Mis"
+      ],
+      "t": 0,
+      "izoh": "Oltin 19,3 g/cm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#0efa2cb6"
+    },
+    {
+      "q": "Oltinning zichligi kg/m³ da qancha?",
+      "v": [
+        "19 300 kg/m³",
+        "11 300 kg/m³",
+        "10 500 kg/m³",
+        "8 900 kg/m³"
+      ],
+      "t": 0,
+      "izoh": "Oltin 19 300 kg/m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#ed6748af"
+    },
+    {
+      "q": "Qo'rg'oshinning zichligi qancha?",
+      "v": [
+        "11,3 g/cm³",
+        "10,5 g/cm³",
+        "13,6 g/cm³",
+        "8,9 g/cm³"
+      ],
+      "t": 0,
+      "izoh": "Qo'rg'oshin 11,3 g/cm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#d5121cb2"
+    },
+    {
+      "q": "Kumushning zichligi qancha?",
+      "v": [
+        "10,5 g/cm³",
+        "11,3 g/cm³",
+        "19,3 g/cm³",
+        "7,8 g/cm³"
+      ],
+      "t": 0,
+      "izoh": "Kumush 10,5 g/cm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#f1a0edb8"
+    },
+    {
+      "q": "Suyuqliklar ichida zichligi eng katta modda qaysi?",
+      "v": [
+        "Simob",
+        "Asal",
+        "Suv",
+        "O'simlik yog'i"
+      ],
+      "t": 0,
+      "izoh": "Simob 13,6 g/cm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#7ec8a7d7"
+    },
+    {
+      "q": "Simobning zichligi kg/m³ da qancha?",
+      "v": [
+        "13 600 kg/m³",
+        "10 000 kg/m³",
+        "11 300 kg/m³",
+        "19 300 kg/m³"
+      ],
+      "t": 0,
+      "izoh": "Simob 13 600 kg/m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#05c780c4"
+    },
+    {
+      "q": "Muzning zichligi qancha?",
+      "v": [
+        "900 kg/m³",
+        "1000 kg/m³",
+        "700 kg/m³",
+        "800 kg/m³"
+      ],
+      "t": 0,
+      "izoh": "Muz 900 kg/m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#582e63e2"
+    },
+    {
+      "q": "Muz suvda cho'kmaydi, chunki ...",
+      "v": [
+        "muzning zichligi suvniki dan kichik",
+        "muzning zichligi suvniki dan katta",
+        "muz har doim qattiq",
+        "suv muzni eritadi"
+      ],
+      "t": 0,
+      "izoh": "Muz zichligi 900 kg/m³ < suv 1000 kg/m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#ebab27ce"
+    },
+    {
+      "q": "Suv ustida qalqib turgan muzning qancha qismi suv ustida bo'ladi?",
+      "v": [
+        "10 %",
+        "50 %",
+        "90 %",
+        "25 %"
+      ],
+      "t": 0,
+      "izoh": "10 % suv ustida, 90 % suv ostida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#dcc91849"
+    },
+    {
+      "q": "Gazlarda zarralar joylashuvi qanday?",
+      "v": [
+        "Siyrak",
+        "Ancha zich",
+        "Zich",
+        "Juda zich"
+      ],
+      "t": 0,
+      "izoh": "Gazlarda zarralar siyrak joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#f13eb185"
+    },
+    {
+      "q": "Qattiq jismlarda zarralar qanday joylashgan?",
+      "v": [
+        "Ancha zich",
+        "Siyrak",
+        "Tasodifiy",
+        "Harakatsiz"
+      ],
+      "t": 0,
+      "izoh": "Qattiq jismlarda zarralar ancha zich.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#458f587e"
+    },
+    {
+      "q": "Havoning (0°C da) zichligi qancha?",
+      "v": [
+        "1,29 kg/m³",
+        "1,43 kg/m³",
+        "1,25 kg/m³",
+        "0,59 kg/m³"
+      ],
+      "t": 0,
+      "izoh": "Havo 1,29 kg/m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m17-zichlik#ac8dc0c6"
+    },
+    {
+      "q": "Vodorodning zichligi qancha?",
+      "v": [
+        "0,09 kg/m³",
+        "0,18 kg/m³",
+        "1,25 kg/m³",
+        "0,8 kg/m³"
+      ],
+      "t": 0,
+      "izoh": "Vodorod 0,09 kg/m³ — eng yengil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#dd2d1975"
+    },
+    {
+      "q": "Balsa daraxtining zichligi qancha?",
+      "v": [
+        "120 kg/m³",
+        "240 kg/m³",
+        "700 kg/m³",
+        "1120 kg/m³"
+      ],
+      "t": 0,
+      "izoh": "Balsa 120 kg/m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#7aebb09b"
+    },
+    {
+      "q": "O'zbekistonda o'sadigan, zichligi yuqori bo'lgan daraxt qaysi?",
+      "v": [
+        "Saksovul",
+        "Balsa",
+        "Tol",
+        "Chinor"
+      ],
+      "t": 0,
+      "izoh": "Saksovul zichligi 1120 kg/m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#d24ecabf"
+    },
+    {
+      "q": "Balsa daraxtidan nima yasaladi?",
+      "v": [
+        "Stol tennisi raketkasi va qutqaruv kamarlari",
+        "Sement",
+        "Oyna",
+        "G'isht"
+      ],
+      "t": 0,
+      "izoh": "Balsadan raketka va qutqaruv kamarlari yasaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#8038fdff"
+    },
+    {
+      "q": "1 cm³ hajmli suvning massasi qancha?",
+      "v": [
+        "1 g",
+        "10 g",
+        "0,1 g",
+        "100 g"
+      ],
+      "t": 0,
+      "izoh": "ρ=1 g/cm³ bo'lgani uchun 1 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m17-zichlik#9efd7f22"
+    },
+    {
+      "q": "Asalning zichligi qancha?",
+      "v": [
+        "1,435 g/cm³",
+        "1 g/cm³",
+        "0,93 g/cm³",
+        "0,8 g/cm³"
+      ],
+      "t": 0,
+      "izoh": "Asal 1,435 g/cm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#4382ec86"
+    },
+    {
+      "q": "Benzinning zichligi qancha?",
+      "v": [
+        "0,71 g/cm³",
+        "0,8 g/cm³",
+        "0,93 g/cm³",
+        "0,9 g/cm³"
+      ],
+      "t": 0,
+      "izoh": "Benzin 0,71 g/cm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#c2814371"
+    },
+    {
+      "q": "Yog'ochning zichligi qancha?",
+      "v": [
+        "700 kg/m³",
+        "1800 kg/m³",
+        "240 kg/m³",
+        "2500 kg/m³"
+      ],
+      "t": 0,
+      "izoh": "Yog'och 0,7 g/cm³ = 700 kg/m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#a786f04d"
+    },
+    {
+      "q": "Suvning zichligi 1000 kg/m³ ga tengligining fizik ma'nosi nima?",
+      "v": [
+        "Hajmi 1 m³ bo'lgan suvning massasi 1000 kg",
+        "1 kg suv 1 m³ egallaydi",
+        "Suv har doim 1000 kg",
+        "Suv har doim 1 m³"
+      ],
+      "t": 0,
+      "izoh": "1 m³ suvning massasi 1000 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#068ddb23"
+    },
+    {
+      "q": "Massani topish formulasi qanday?",
+      "v": [
+        "m = ρ·V",
+        "m = ρ/V",
+        "m = V/ρ",
+        "m = ρ + V"
+      ],
+      "t": 0,
+      "izoh": "m = ρ·V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m17-zichlik#0c6f301a"
+    },
+    {
+      "q": "G'ishtning zichligi qancha?",
+      "v": [
+        "1,8 g/cm³",
+        "2,5 g/cm³",
+        "2,7 g/cm³",
+        "0,9 g/cm³"
+      ],
+      "t": 0,
+      "izoh": "G'isht 1,8 g/cm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#f1728758"
+    },
+    {
+      "q": "Marmar va alyuminiyning zichliklari qanday nisbatda?",
+      "v": [
+        "Ikkalasiniki teng (2,7 g/cm³)",
+        "Marmarniki katta",
+        "Alyuminiyniki katta",
+        "Taqqoslab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ikkalasi ham 2,7 g/cm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m17-zichlik#368d4408"
+    }
+  ]
+}

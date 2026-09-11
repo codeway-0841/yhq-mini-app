@@ -1,0 +1,1609 @@
+{
+  "nom": "Progressiyalarga doir amaliy masalalar",
+  "bolim": "Ketma-ketliklar va progressiyalar",
+  "blok": "prog",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Quruvchi Anvar birinchi kuni 24 m² devor suvadi va har kuni oldingi kunga nisbatan 3 m² ko'proq suvaydi. U 9-kuni necha m² devor suvaydi?",
+      "v": [
+        "51 m²",
+        "48 m²",
+        "45 m²",
+        "72 m²"
+      ],
+      "t": 1,
+      "izoh": "Kunlik ish hajmi arifmetik progressiya: a₁ = 24, d = 3. To'qqizinchi had aₙ = a₁ + (n − 1)d formulasi bilan topiladi: a₉ = 24 + 8·3 = 48. 51 m² — koeffitsientga n = 9 ni qo'yish xatosi, 45 m² esa 8-kunning ishi. Javob: 48 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-unumi-kunlik-had",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#6dbeaea6"
+    },
+    {
+      "q": "Toshkentdagi mebel sexida birinchi oyda 140 ta stul yig'ilgan, keyingi har oyda yig'ilgan stullar soni 15 tadan ortib borgan. Sexda 12-oyda nechta stul yig'iladi?",
+      "v": [
+        "290 ta",
+        "275 ta",
+        "305 ta",
+        "320 ta"
+      ],
+      "t": 2,
+      "izoh": "Oylik ish unumi arifmetik progressiya bo'ladi: a₁ = 140, d = 15. a₁₂ = 140 + (12 − 1)·15 = 140 + 165 = 305 ta. Ko'p uchraydigan xato — (n − 1) o'rniga n ni olish, u 320 beradi; 290 esa 11-oyning natijasi. Javob: 305 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-unumi-kunlik-had",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#4ffce5f8"
+    },
+    {
+      "q": "Dilnoza mashg'ulotni birinchi kuni 1 200 m yugurishdan boshladi va har kuni masofani 250 m ga oshirib bordi. U nechanchi kuni birinchi marta 5 km dan ortiq masofa yuguradi?",
+      "v": [
+        "17-kuni",
+        "16-kuni",
+        "18-kuni",
+        "20-kuni"
+      ],
+      "t": 0,
+      "izoh": "5 km = 5 000 m. Shart: 1 200 + (n − 1)·250 > 5 000, ya'ni (n − 1)·250 > 3 800 va n − 1 > 15,2. Demak n − 1 = 16 va n = 17. Tekshiramiz: 16-kuni 4 950 m, 17-kuni esa 5 200 m yuguriladi. Javob: 17-kuni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-unumi-kunlik-had",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#a6d14597"
+    },
+    {
+      "q": "Sexda ikki brigada ishlaydi. Birinchi brigada har kuni bir xil — 60 ta detal tayyorlaydi. Ikkinchi brigada birinchi kuni 24 ta detal tayyorlagan va har kuni oldingi kundagidan 6 taga ko'p tayyorlamoqda. Ikkinchi brigada nechanchi kuni birinchi marta birinchisidan ko'p detal tayyorlaydi?",
+      "v": [
+        "6-kuni",
+        "7-kuni",
+        "9-kuni",
+        "8-kuni"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi brigada uchun aₙ = 24 + (n − 1)·6. Shart aₙ > 60 bo'lgani uchun (n − 1)·6 > 36 va n − 1 > 6. Demak n = 8. 7-kuni ikkala brigada ham aynan 60 tadan tayyorlaydi — bu «ko'p» emas, shuning uchun 7-kuni javob bo'la olmaydi. Javob: 8-kuni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ish-unumi-kunlik-had",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#1bca27e4"
+    },
+    {
+      "q": "G'isht zavodida birinchi kuni 640 ta g'isht quyildi, keyin har kuni quyilgan g'ishtlar soni 40 tadan ortib bordi. 10 kunda jami nechta g'isht quyilgan?",
+      "v": [
+        "6 400 ta",
+        "8 200 ta",
+        "8 400 ta",
+        "10 000 ta"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda a₁ = 640, d = 40, n = 10. Yig'indi Sₙ = n/2·(2a₁ + (n − 1)d) formulasi bilan topiladi: S₁₀ = 5·(1 280 + 9·40) = 5·1 640 = 8 200. Agar (n − 1) o'rniga n olinsa 8 400 chiqadi, o'sishni butunlay unutsa 6 400 chiqadi. Javob: 8 200 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-hajmi-jami-yigindi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#574e9b6f"
+    },
+    {
+      "q": "Kutubxonachi Malika birinchi kuni 12 ta kitobni ro'yxatga oldi va har kuni oldingi kundagidan 5 ta ko'p kitob ro'yxatga oldi. 16 kun ichida u jami nechta kitobni ro'yxatga olgan?",
+      "v": [
+        "192 ta",
+        "832 ta",
+        "1 392 ta",
+        "792 ta"
+      ],
+      "t": 3,
+      "izoh": "a₁ = 12, d = 5, n = 16. Oxirgi kun ishi a₁₆ = 12 + 15·5 = 87. Yig'indi S₁₆ = 16·(12 + 87)/2 = 8·99 = 792 ta. 1 392 — oxirgi kun ishini 16 kunga ko'paytirish xatosi, 192 esa o'sishni hisobga olmaslik. Javob: 792 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-hajmi-jami-yigindi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#032c58be"
+    },
+    {
+      "q": "Andijondagi omborga birinchi hafta 90 quti, ikkinchi hafta 105 quti, uchinchi hafta 120 quti mahsulot keltirildi. Shu tartib saqlansa, 8 hafta davomida omborga jami nechta quti keltiriladi?",
+      "v": [
+        "1 140 quti",
+        "720 quti",
+        "1 200 quti",
+        "1 560 quti"
+      ],
+      "t": 0,
+      "izoh": "Ayirma d = 105 − 90 = 15, birinchi had a₁ = 90. Sakkiz haftalik yig'indi S₈ = 8/2·(2·90 + 7·15) = 4·(180 + 105) = 4·285 = 1 140 quti. 1 560 — oxirgi hafta miqdorini 8 ga ko'paytirish xatosi. Javob: 1 140 quti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-hajmi-jami-yigindi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#bcfeb8ea"
+    },
+    {
+      "q": "Tikuvchilik sexi buyurtmani 20 kunda bajarishi kerak edi. Sex birinchi kuni 45 ta ko'ylak tikdi va har kuni tikilgan ko'ylaklar soni 5 tadan ortib bordi. 20 kun oxirida buyurtma 100 ta ko'ylakka kam bajarilgan bo'lsa, buyurtma hajmi qancha edi?",
+      "v": [
+        "1 750 ta",
+        "1 850 ta",
+        "1 950 ta",
+        "2 000 ta"
+      ],
+      "t": 2,
+      "izoh": "Yigirma kunda tikilgan: S₂₀ = 20/2·(2·45 + 19·5) = 10·(90 + 95) = 1 850 ta. Buyurtma shundan 100 ta ko'p bo'lgani uchun 1 850 + 100 = 1 950 ta. 1 850 — oxirgi qadamni tashlab ketish, 1 750 esa qo'shish o'rniga ayirish xatosi. Javob: 1 950 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ish-hajmi-jami-yigindi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#85a4fcf6"
+    },
+    {
+      "q": "Bog'bonlar birinchi kuni 5 ta ko'chat ekishdi va har kuni oldingi kundagidan 2 ta ko'p ko'chat ekishdi. Jami 96 ta ko'chat ekilgan bo'lsa, ish necha kun davom etgan?",
+      "v": [
+        "6 kun",
+        "10 kun",
+        "8 kun",
+        "12 kun"
+      ],
+      "t": 2,
+      "izoh": "Sₙ = n/2·(2·5 + (n − 1)·2) = n/2·(2n + 8) = n² + 4n. Tenglama n² + 4n = 96, ya'ni n² + 4n − 96 = 0 bo'ladi. Ildizlari n = 8 va n = −12; kun soni musbat, demak n = 8. Tekshirish: 6 kunda 60 ta, 10 kunda 140 ta ko'chat chiqadi. Javob: 8 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-muddatini-topish",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#40628d50"
+    },
+    {
+      "q": "Yozuvchi kitobning birinchi kuni 8 sahifasini yozdi va har kuni oldingi kundagidan 4 sahifa ko'p yozdi. Kitob 360 sahifadan iborat bo'lsa, u necha kunda yozib tugatiladi?",
+      "v": [
+        "12 kun",
+        "10 kun",
+        "14 kun",
+        "9 kun"
+      ],
+      "t": 0,
+      "izoh": "Sₙ = n/2·(16 + (n − 1)·4) = n/2·(4n + 12) = 2n² + 6n. Tenglama 2n² + 6n = 360, soddalashtirsak n² + 3n − 180 = 0. Diskriminant D = 9 + 720 = 729, √729 = 27, demak n = (−3 + 27)/2 = 12. Taqqoslash uchun: 10 kunda atigi 260 sahifa, 14 kunda esa 476 sahifa yozilar edi. Javob: 12 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-muddatini-topish",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#04d82fdc"
+    },
+    {
+      "q": "Yangi kompaniya birinchi oyda 3 ta filial ochdi va har oyda ochilgan filiallar soni oldingi oynikidan 2 baravar ko'p bo'ldi. Jami 93 ta filial ochilgan bo'lsa, bu jarayon necha oy davom etgan?",
+      "v": [
+        "4 oy",
+        "6 oy",
+        "7 oy",
+        "5 oy"
+      ],
+      "t": 3,
+      "izoh": "Bu geometrik progressiya: b₁ = 3, q = 2. Yig'indi Sₙ = b₁·(qⁿ − 1)/(q − 1) = 3·(2ⁿ − 1) = 93, bundan 2ⁿ − 1 = 31 va 2ⁿ = 32, ya'ni n = 5. Tekshiramiz: 3 + 6 + 12 + 24 + 48 = 93. To'rt oyda 45 ta, olti oyda 189 ta filial chiqar edi. Javob: 5 oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-muddatini-topish",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#1fe05f89"
+    },
+    {
+      "q": "Metro qurilishida birinchi oyda 180 m tunnel qazilgan, keyingi har oyda qazilgan tunnel uzunligi 20 m ga ortib borgan. Loyiha bo'yicha 5 km tunnel qazilishi kerak. Qazish nechanchi oyda tugaydi?",
+      "v": [
+        "14-oyda",
+        "16-oyda",
+        "15-oyda",
+        "17-oyda"
+      ],
+      "t": 1,
+      "izoh": "Sₙ = n/2·(360 + (n − 1)·20) = n·(10n + 170) = 10n² + 170n. Kerakli uzunlik 5 km = 5 000 m. 15 oyda S₁₅ = 2 250 + 2 550 = 4 800 m — yetmaydi. 16 oyda S₁₆ = 2 560 + 2 720 = 5 280 m, ya'ni loyiha aynan shu oyda yakunlanadi. Javob: 16-oyda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ish-muddatini-topish",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#9ddf9c29"
+    },
+    {
+      "q": "Qandolat sexida birinchi yili 5 000 kg mahsulot ishlab chiqarilgan va har yili ishlab chiqarish oldingi yilga nisbatan 20% ga oshib borgan. Sexda 4-yili necha kg mahsulot ishlab chiqariladi?",
+      "v": [
+        "8 640 kg",
+        "7 200 kg",
+        "8 000 kg",
+        "10 368 kg"
+      ],
+      "t": 0,
+      "izoh": "Har yili 1,2 ga ko'payish geometrik progressiya beradi: b₁ = 5 000, q = 1,2. To'rtinchi had b₄ = 5 000·1,2³ = 5 000·1,728 = 8 640 kg. 8 000 kg — foizlarni oddiy qo'shish (60%) xatosi, 10 368 kg esa 1,2 ni uch emas, to'rt marta ko'paytirish xatosi. Javob: 8 640 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishlab-chiqarish-geometrik-had",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#c62c0e26"
+    },
+    {
+      "q": "Zavodda 2020-yilda 640 ta traktor yig'ilgan, keyingi har yili yig'ilgan traktorlar soni oldingi yilnikidan 1,5 baravar ko'p bo'lgan. 2023-yilda nechta traktor yig'ilgan?",
+      "v": [
+        "1 440 ta",
+        "2 880 ta",
+        "3 240 ta",
+        "2 160 ta"
+      ],
+      "t": 3,
+      "izoh": "2020-yil birinchi had, 2023-yil esa to'rtinchi had bo'ladi. b₄ = 640·1,5³ = 640·3,375 = 2 160 ta. 2 880 — 1,5 ni darajaga ko'tarish o'rniga 3 ga ko'paytirish xatosi, 1 440 esa 2022-yilning natijasi. Javob: 2 160 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishlab-chiqarish-geometrik-had",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#8cd5c726"
+    },
+    {
+      "q": "Fermer xo'jaligida quyonlar soni har chorakda 3 baravar ortmoqda va hozir ularning soni 12 ta. To'rt chorakdan, ya'ni bir yildan keyin xo'jalikda nechta quyon bo'ladi?",
+      "v": [
+        "324 ta",
+        "972 ta",
+        "144 ta",
+        "2 916 ta"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi son b₁ = 12 deb olinsa, bir yildan keyingi son to'rtta ko'payishdan so'ng topiladi: 12·3⁴ = 12·81 = 972 ta. 324 — faqat uchta chorak hisobga olingan hol, 144 — 3 ni 4 ga ko'paytirib qo'yish xatosi. Javob: 972 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishlab-chiqarish-geometrik-had",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#4907ffa7"
+    },
+    {
+      "q": "Startap birinchi oyda 800 ta foydalanuvchi to'plagan va har oyda foydalanuvchilar soni oldingi oyga nisbatan 50% ga ortmoqda. Foydalanuvchilar soni birinchi marta 6 000 dan oshadigan oyni aniqlang.",
+      "v": [
+        "5-oyda",
+        "7-oyda",
+        "6-oyda",
+        "8-oyda"
+      ],
+      "t": 2,
+      "izoh": "Har oyda son 1,5 ga ko'payadi: bₙ = 800·1,5^(n−1). 5-oyda 800·5,0625 = 4 050 ta — yetarli emas. 6-oyda 800·7,59375 = 6 075 ta bo'lib, birinchi marta 6 000 dan oshadi. Javob: 6-oyda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ishlab-chiqarish-geometrik-had",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#36cad0a8"
+    },
+    {
+      "q": "Kichik korxona birinchi yili 300 mln so'mlik mahsulot sotdi, keyingi har yili savdo hajmi oldingi yilnikidan 2 baravar ortdi. Besh yil ichida korxona jami qancha so'mlik mahsulot sotgan?",
+      "v": [
+        "1 500 mln so'm",
+        "4 800 mln so'm",
+        "9 300 mln so'm",
+        "9 600 mln so'm"
+      ],
+      "t": 2,
+      "izoh": "b₁ = 300, q = 2, n = 5. Yig'indi S₅ = 300·(2⁵ − 1)/(2 − 1) = 300·31 = 9 300 mln so'm. 4 800 mln — bu faqat beshinchi yilning savdosi, 9 600 mln esa (qⁿ − 1) o'rniga qⁿ olish xatosi. Javob: 9 300 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishlab-chiqarish-geometrik-yigindi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#cf7a932d"
+    },
+    {
+      "q": "Dehqon birinchi yili 4 tup uzum ekdi, keyingi har yili oldingi yildagidan 3 baravar ko'p tup ekdi. Besh yil davomida u jami nechta tup uzum ekkan?",
+      "v": [
+        "324 tup",
+        "484 tup",
+        "486 tup",
+        "972 tup"
+      ],
+      "t": 1,
+      "izoh": "b₁ = 4, q = 3, n = 5. S₅ = 4·(3⁵ − 1)/(3 − 1) = 4·242/2 = 484 tup. To'g'ridan-to'g'ri qo'shsak ham 4 + 12 + 36 + 108 + 324 = 484 chiqadi. 486 — suratda 3⁵ − 1 o'rniga 3⁵ olish xatosi, 324 esa faqat oxirgi yil. Javob: 484 tup.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishlab-chiqarish-geometrik-yigindi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#ca7e532b"
+    },
+    {
+      "q": "Kutubxonaga birinchi oyda 1 280 ta kitob keltirildi, har keyingi oyda keltirilgan kitoblar soni oldingi oynikining yarmiga teng bo'ldi. Olti oyda kutubxonaga jami nechta kitob keltirilgan?",
+      "v": [
+        "1 280 ta",
+        "2 480 ta",
+        "2 560 ta",
+        "2 520 ta"
+      ],
+      "t": 3,
+      "izoh": "b₁ = 1 280, q = 1/2, n = 6. S₆ = 1 280·(1 − (1/2)⁶)/(1 − 1/2) = 2 560·63/64 = 2 520 ta. Qo'shib tekshirish: 1 280 + 640 + 320 + 160 + 80 + 40 = 2 520. 2 560 — cheksiz yig'indi qiymati, 2 480 esa besh oylik natija. Javob: 2 520 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ishlab-chiqarish-geometrik-yigindi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#d1a2988b"
+    },
+    {
+      "q": "Kompaniya reklamaga birinchi hafta 6 mln so'm sarfladi va har hafta sarfni 2 baravarga oshirdi. Reklama byudjeti 400 mln so'm. Jami sarf nechanchi haftada birinchi marta byudjetdan oshib ketadi?",
+      "v": [
+        "7-haftada",
+        "6-haftada",
+        "8-haftada",
+        "5-haftada"
+      ],
+      "t": 0,
+      "izoh": "Jami sarf Sₙ = 6·(2ⁿ − 1). Olti haftada S₆ = 6·63 = 378 mln so'm — byudjet ichida. Yetti haftada S₇ = 6·127 = 762 mln so'm bo'lib, 400 mln dan oshadi. Demak byudjet 7-haftada tugaydi. Javob: 7-haftada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ishlab-chiqarish-geometrik-yigindi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#d5bb1430"
+    },
+    {
+      "q": "Karim bankka 8 000 000 so'm omonat qo'ydi. Bank har yili hisobdagi summaga 15% ustama qo'shadi va ustama ham keyingi yillarda daromad keltiradi. Uch yildan keyin hisobda qancha pul bo'ladi?",
+      "v": [
+        "11 600 000 so'm",
+        "12 167 000 so'm",
+        "10 580 000 so'm",
+        "13 992 050 so'm"
+      ],
+      "t": 1,
+      "izoh": "Murakkab foizda summa har yili 1,15 ga ko'payadi, ya'ni geometrik progressiya hosil bo'ladi. Uch yildan keyin 8 000 000·1,15³ = 8 000 000·1,520875 = 12 167 000 so'm. 11 600 000 — foizlarni oddiy qo'shish (45%) xatosi, 10 580 000 esa ikki yillik natija. Javob: 12 167 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "omonat-murakkab-foiz",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#dcd4db34"
+    },
+    {
+      "q": "Omonat hisobiga 500 000 so'm qo'yilgan va har oy oxirida hisobdagi summaga 10% qo'shiladi. To'rt oydan keyin hisobdagi mablag' qancha bo'ladi?",
+      "v": [
+        "700 000 so'm",
+        "665 500 so'm",
+        "805 255 so'm",
+        "732 050 so'm"
+      ],
+      "t": 3,
+      "izoh": "Har oy oxirida summa 1,1 ga ko'payadi, shuning uchun to'rt oydan keyingi qiymat 500 000·1,1⁴ bo'ladi. 1,1⁴ = 1,4641, demak 500 000·1,4641 = 732 050 so'm. 700 000 — oddiy foiz (40%) xatosi, 665 500 esa uch oylik natija. Javob: 732 050 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "omonat-murakkab-foiz",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#78c6ce73"
+    },
+    {
+      "q": "Bankka qo'yilgan 400 000 so'm omonat ikki yildan keyin 484 000 so'mga aylandi. Ustama har yili hisobdagi summaga qo'shilgan bo'lsa, bank yillik necha foiz ustama bergan?",
+      "v": [
+        "10%",
+        "21%",
+        "10,5%",
+        "20%"
+      ],
+      "t": 0,
+      "izoh": "Ikki yillik ko'payish koeffitsienti q² = 484 000 : 400 000 = 1,21. Bundan q = √1,21 = 1,1, ya'ni yillik ustama 10%. 21% — ikki yillik umumiy o'sishni yillik deb olish, 10,5% esa shu 21% ni shunchaki ikkiga bo'lish xatosi. Javob: 10%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "omonat-murakkab-foiz",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#a9005435"
+    },
+    {
+      "q": "Ikki bank yillik 25% ustama beradi, lekin birinchi bank ustamani yiliga bir marta qo'shadi, ikkinchisi esa har yarim yilda 12,5% dan qo'shadi. 640 000 so'm bir yilga qo'yilsa, ikkinchi bankda birinchisiga qaraganda qancha ko'p pul to'planadi?",
+      "v": [
+        "0 so'm",
+        "80 000 so'm",
+        "10 000 so'm",
+        "160 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi bankda 640 000·1,25 = 800 000 so'm bo'ladi. Ikkinchi bankda koeffitsient ikki marta qo'llanadi: 640 000·1,125² = 640 000·1,265625 = 810 000 so'm. Farq 810 000 − 800 000 = 10 000 so'm. 0 so'm — ikkala sxemani teng deb hisoblash xatosi. Javob: 10 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "omonat-murakkab-foiz",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#fc695f68"
+    },
+    {
+      "q": "Nodira jamg'arma hisobini 1 000 000 so'm bilan ochdi va har oy oxirida hisobga 250 000 so'mdan qo'shib bordi. Yetti oy o'tgach hisobda qancha pul to'planadi?",
+      "v": [
+        "1 750 000 so'm",
+        "2 500 000 so'm",
+        "2 750 000 so'm",
+        "3 000 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Har oy oxiridagi qoldiqlar arifmetik progressiya tashkil qiladi: boshlang'ich 1 000 000, ayirma 250 000. Yetti oydan keyin 1 000 000 + 7·250 000 = 2 750 000 so'm. 2 500 000 — olti oylik qo'shimchani olish, 1 750 000 esa boshlang'ich summani unutish xatosi. Javob: 2 750 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "omonat-oddiy-foiz-jamgarma",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#ade31c8e"
+    },
+    {
+      "q": "Sarmoyador 6 000 000 so'mni oddiy foiz shartida qo'ydi: har yili faqat boshlang'ich summaning 12% i qo'shiladi. Nechanchi yil oxirida hisobdagi mablag' 10 000 000 so'mdan oshadi?",
+      "v": [
+        "6-yil oxirida",
+        "5-yil oxirida",
+        "7-yil oxirida",
+        "4-yil oxirida"
+      ],
+      "t": 0,
+      "izoh": "Yillik qo'shimcha bir xil: 6 000 000·0,12 = 720 000 so'm, demak qoldiqlar arifmetik progressiya. Shart 6 000 000 + 720 000n > 10 000 000 dan 720 000n > 4 000 000 va n > 5,55 kelib chiqadi. Beshinchi yil oxirida 9 600 000, oltinchi yil oxirida esa 10 320 000 so'm bo'ladi. Javob: 6-yil oxirida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "omonat-oddiy-foiz-jamgarma",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#8f44f42c"
+    },
+    {
+      "q": "Alisher jamg'armaga birinchi oyda 100 000 so'm, ikkinchi oyda 130 000 so'm, uchinchi oyda 160 000 so'm qo'ydi va shu tartibni yil oxirigacha saqladi. O'n ikki oyda u jami qancha pul jamg'argan?",
+      "v": [
+        "1 200 000 so'm",
+        "3 360 000 so'm",
+        "5 160 000 so'm",
+        "3 180 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Oylik badallar arifmetik progressiya: a₁ = 100 000, d = 30 000. S₁₂ = 12/2·(2·100 000 + 11·30 000) = 6·530 000 = 3 180 000 so'm. 3 360 000 — (n − 1) o'rniga n olish xatosi, 5 160 000 esa oxirgi oy badalini 12 ga ko'paytirish. Javob: 3 180 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "omonat-oddiy-foiz-jamgarma",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#3707fe77"
+    },
+    {
+      "q": "Bir omonat sxemasida birinchi yili 900 000 so'm ustama beriladi, keyingi har yili ustama 150 000 so'mga kamayadi va ustama nolga aylanishi bilan to'lovlar to'xtaydi. Omonatchi shu sxema bo'yicha jami qancha ustama oladi?",
+      "v": [
+        "3 000 000 so'm",
+        "3 150 000 so'm",
+        "5 400 000 so'm",
+        "1 050 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Ustamalar 900 000, 750 000, 600 000, 450 000, 300 000, 150 000 — jami 6 ta musbat had. Yig'indi S₆ = 6·(900 000 + 150 000)/2 = 3·1 050 000 = 3 150 000 so'm. 1 050 000 — birinchi va oxirgi hadni qo'shib, n/2 ga ko'paytirmaslik xatosi. Javob: 3 150 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "omonat-oddiy-foiz-jamgarma",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#ae34ba8b"
+    },
+    {
+      "q": "Bahodir olgan qarzini shunday to'laydi: birinchi oyda 900 000 so'm, keyingi har oyda oldingi oydagidan 50 000 so'm kam. Uning 10-oydagi to'lovi qancha bo'ladi?",
+      "v": [
+        "400 000 so'm",
+        "500 000 so'm",
+        "850 000 so'm",
+        "450 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "To'lovlar kamayuvchi arifmetik progressiya: a₁ = 900 000, d = −50 000. a₁₀ = 900 000 + 9·(−50 000) = 900 000 − 450 000 = 450 000 so'm. 400 000 — ayirmani 10 marta ayirish xatosi, 500 000 esa 9-oyning to'lovi. Javob: 450 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarz-tolash-kamayuvchi-tolov",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#bbaafbd0"
+    },
+    {
+      "q": "Qarzni to'lash jadvalida birinchi oy to'lovi 1 200 000 so'm bo'lib, har oyda to'lov 80 000 so'mga kamayadi. To'lovlar 12 oy davom etgan bo'lsa, qarz jami qancha edi?",
+      "v": [
+        "8 640 000 so'm",
+        "9 120 000 so'm",
+        "14 400 000 so'm",
+        "3 840 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "a₁ = 1 200 000, d = −80 000, n = 12. S₁₂ = 12/2·(2 400 000 − 11·80 000) = 6·1 520 000 = 9 120 000 so'm. 8 640 000 — 11 o'rniga 12 ta ayirma olish, 14 400 000 esa to'lovni o'zgarmas deb hisoblash xatosi. Javob: 9 120 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarz-tolash-kamayuvchi-tolov",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#4797d080"
+    },
+    {
+      "q": "Zuhra bergan qarz 6 750 000 so'mni tashkil etadi. Qarzdor birinchi hafta 900 000 so'm to'ladi, keyingi har haftada to'lovi 50 000 so'mga kamaydi. Qarz necha haftada to'liq qaytariladi?",
+      "v": [
+        "9 hafta",
+        "12 hafta",
+        "10 hafta",
+        "15 hafta"
+      ],
+      "t": 2,
+      "izoh": "Sₙ = n/2·(1 800 000 − (n − 1)·50 000) = 25 000n·(37 − n). Tenglama 25 000n(37 − n) = 6 750 000 dan n(37 − n) = 270, ya'ni n² − 37n + 270 = 0. Diskriminant D = 1 369 − 1 080 = 289, √289 = 17, ildizlari n = 10 va n = 27. To'lov musbat qolishi uchun n = 10. Javob: 10 hafta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarz-tolash-kamayuvchi-tolov",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#ef806323"
+    },
+    {
+      "q": "Qarzdor har oyda oldingi oydagidan 30 000 so'mga kam to'lash sharti bilan qarzni roppa-rosa 15 oyda uzdi. Uning 8-oydagi to'lovi 640 000 so'm bo'lgan bo'lsa, qarz miqdori qancha edi?",
+      "v": [
+        "9 600 000 so'm",
+        "5 120 000 so'm",
+        "12 750 000 so'm",
+        "4 800 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "O'n besh hadli arifmetik progressiyada 8-had o'rta had bo'ladi, ya'ni u barcha to'lovlarning o'rtachasiga teng. Shuning uchun S₁₅ = 15·a₈ = 15·640 000 = 9 600 000 so'm. Tekshirish: a₁ = 640 000 + 7·30 000 = 850 000 va a₁₅ = 430 000, ularning o'rtachasi ham 640 000. 4 800 000 — yig'indini n/2·a₈ deb olish xatosi. Javob: 9 600 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qarz-tolash-kamayuvchi-tolov",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#ce91a370"
+    },
+    {
+      "q": "Omborda un zaxirasi saqlanadi. Birinchi kuni 90 kg, keyingi har kuni oldingi kundagidan 10 kg ko'p un sarflanadi. O'n ikki kunda ombordan jami necha kg un sarflanadi?",
+      "v": [
+        "1 080 kg",
+        "1 740 kg",
+        "1 800 kg",
+        "2 400 kg"
+      ],
+      "t": 1,
+      "izoh": "Kunlik sarf arifmetik progressiya: a₁ = 90, d = 10. S₁₂ = 12/2·(2·90 + 11·10) = 6·290 = 1 740 kg. 1 080 kg — sarfni o'zgarmas deb olish, 2 400 kg esa oxirgi kun sarfini 12 ga ko'paytirish xatosi. Javob: 1 740 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zaxira-tugash-muddati",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#c19eb559"
+    },
+    {
+      "q": "Suv omborida 3 375 m³ suv bor. Birinchi kuni undan 120 m³, keyingi har kuni oldingi kundagidan 15 m³ ko'p suv olinadi. Ombordagi suv necha kunda tugaydi?",
+      "v": [
+        "12 kun",
+        "14 kun",
+        "15 kun",
+        "18 kun"
+      ],
+      "t": 2,
+      "izoh": "Sₙ = n/2·(240 + (n − 1)·15) = 7,5n·(n + 15). Tenglama 7,5n(n + 15) = 3 375 dan n² + 15n − 450 = 0 kelib chiqadi. D = 225 + 1 800 = 2 025, √2 025 = 45, demak n = (−15 + 45)/2 = 15. Tekshirish: 12 kunda 2 430 m³, 18 kunda 4 455 m³ olinar edi. Javob: 15 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zaxira-tugash-muddati",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#38902e40"
+    },
+    {
+      "q": "Kasalxona omborida dorining 7 280 dozasi bor. Birinchi kuni 20 doza, keyingi har kuni oldingi kundagidan 3 baravar ko'p doza ishlatilmoqda. Dori zaxirasi necha kunda tugaydi?",
+      "v": [
+        "6 kun",
+        "5 kun",
+        "7 kun",
+        "8 kun"
+      ],
+      "t": 0,
+      "izoh": "Kunlik sarf geometrik progressiya: b₁ = 20, q = 3. Sₙ = 20·(3ⁿ − 1)/2 = 10·(3ⁿ − 1). Tenglama 10(3ⁿ − 1) = 7 280 dan 3ⁿ = 729, ya'ni n = 6. Besh kunda atigi 2 420 doza, yetti kunda esa 21 860 doza kerak bo'lar edi. Javob: 6 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zaxira-tugash-muddati",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#304a859d"
+    },
+    {
+      "q": "Ikki omborda bir xil miqdorda g'alla bor. Birinchi ombordan har kuni 500 kg dan olinadi. Ikkinchi ombordan birinchi kuni 200 kg olindi va har kuni olinadigan miqdor 60 kg ga ortib bormoqda. Nechanchi kuni ikkinchi ombordagi qoldiq birinchi ombordagidan kam bo'lib qoladi?",
+      "v": [
+        "10-kuni",
+        "11-kuni",
+        "13-kuni",
+        "12-kuni"
+      ],
+      "t": 3,
+      "izoh": "Birinchi ombordan n kunda 500n kg olinadi. Ikkinchisidan n/2·(400 + (n − 1)·60) = 30n² + 170n kg olinadi. Qoldiq kamroq bo'lishi uchun 30n² + 170n > 500n, ya'ni 30n² > 330n va n > 11 bo'lishi kerak. 11-kuni ikkala ombordan ham 5 500 kg dan olinadi — qoldiqlar teng, shuning uchun javob 12-kuni. Javob: 12-kuni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zaxira-tugash-muddati",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#12ac31c1"
+    },
+    {
+      "q": "Yangi avtomobil 250 mln so'm turadi va har yili uning qiymati oldingi yilgi qiymatining 20% iga kamayib boradi. Uch yildan keyin avtomobil qancha turadi?",
+      "v": [
+        "100 mln so'm",
+        "160 mln so'm",
+        "128 mln so'm",
+        "102,4 mln so'm"
+      ],
+      "t": 2,
+      "izoh": "Har yili qiymat 0,8 ga ko'payadi, ya'ni maxraji 0,8 bo'lgan geometrik progressiya hosil bo'ladi. Uch yildan keyin 250·0,8³ = 250·0,512 = 128 mln so'm. 100 mln — 60% ni birdaniga ayirish xatosi, 160 mln esa ikki yillik qiymat. Javob: 128 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymat-amortizatsiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#fecba819"
+    },
+    {
+      "q": "Sanoat stanogining qiymati har yili oldingi yilgi qiymatining 25% iga kamayadi. Hozir stanok 81 mln so'm turadi. Ikki yil oldin uning qiymati qancha bo'lgan?",
+      "v": [
+        "144 mln so'm",
+        "108 mln so'm",
+        "121,5 mln so'm",
+        "126,5625 mln so'm"
+      ],
+      "t": 0,
+      "izoh": "Har yili qiymat 0,75 ga ko'payadi, demak orqaga qarab 0,75 ga bo'lish kerak. Bir yil oldin 81 : 0,75 = 108 mln, ikki yil oldin esa 108 : 0,75 = 144 mln so'm. 108 mln — faqat bir yil orqaga qaytish, 126,5625 mln esa bo'lish o'rniga 1,25 ga ikki marta ko'paytirish xatosi. Javob: 144 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymat-amortizatsiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#48893dbf"
+    },
+    {
+      "q": "Kompyuter texnikasining qiymati har yili roppa-rosa yarmiga kamayadi. Bugun 96 mln so'm turadigan server necha yildan keyin 6 mln so'mdan arzon bo'lib qoladi?",
+      "v": [
+        "3 yil",
+        "6 yil",
+        "4 yil",
+        "5 yil"
+      ],
+      "t": 3,
+      "izoh": "Qiymatlar ketma-ketligi: 96, 48, 24, 12, 6, 3 mln so'm. To'rt yildan keyin qiymat aynan 6 mln so'm bo'ladi — bu «arzonroq» degani emas. Faqat besh yildan keyin qiymat 3 mln so'mga tushib, 6 mln dan arzon bo'ladi. Javob: 5 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymat-amortizatsiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#6b5f7ec8"
+    },
+    {
+      "q": "Sexda ikki uskuna bor: birinchisi hozir 320 mln so'm turadi va qiymati har yili 25% ga kamayadi, ikkinchisi 405 mln so'm turadi va qiymati har yili uchdan bir qismiga kamayadi. Necha yildan keyin ikkala uskunaning qiymati tenglashadi?",
+      "v": [
+        "1 yildan keyin",
+        "2 yildan keyin",
+        "3 yildan keyin",
+        "4 yildan keyin"
+      ],
+      "t": 1,
+      "izoh": "Birinchi uskuna qiymati 320·(3/4)ⁿ, ikkinchisiniki 405·(2/3)ⁿ. Tenglikdan (3/4)ⁿ : (2/3)ⁿ = 405 : 320, ya'ni (9/8)ⁿ = 81/64 = (9/8)², demak n = 2. Tekshirish: ikki yildan keyin 320·0,5625 = 180 va 405·4/9 = 180 mln so'm. Bir yildan keyin esa 240 va 270 — teng emas. Javob: 2 yildan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymat-amortizatsiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#f537ec32"
+    },
+    {
+      "q": "Tumandagi aholi soni hozir 40 000 kishi va har yili 10% ga ortib bormoqda. Ikki yildan keyin tumanda necha kishi yashaydi?",
+      "v": [
+        "48 400 kishi",
+        "48 000 kishi",
+        "44 000 kishi",
+        "53 240 kishi"
+      ],
+      "t": 0,
+      "izoh": "Aholi soni har yili 1,1 ga ko'payadi, ya'ni geometrik progressiya hosil bo'ladi. Ikki yildan keyin 40 000·1,1² = 40 000·1,21 = 48 400 kishi. 48 000 — foizlarni oddiy qo'shish (20%) xatosi, 44 000 esa bir yillik natija. Javob: 48 400 kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aholi-va-obunachi-osishi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#c880c0f0"
+    },
+    {
+      "q": "Ijtimoiy tarmoqdagi sahifa obunachilari soni har oyda 25% ga ortmoqda va hozir sahifada 8 192 ta obunachi bor. Uch oydan keyin sahifada nechta obunachi bo'ladi?",
+      "v": [
+        "12 800 ta",
+        "14 336 ta",
+        "16 000 ta",
+        "20 000 ta"
+      ],
+      "t": 2,
+      "izoh": "Har oy koeffitsient 1,25: 8 192 → 10 240 → 12 800 → 16 000 ta. Formula bilan ham 8 192·1,25³ = 8 192·1,953125 = 16 000 chiqadi. 14 336 — 75% ni birdaniga qo'shish xatosi, 12 800 esa ikki oylik natija. Javob: 16 000 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aholi-va-obunachi-osishi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#2bb48d98"
+    },
+    {
+      "q": "Shahar aholisi har yili 20% ga ortib boradi va hozir shaharda 43 200 kishi yashaydi. Ikki yil oldin shaharda necha kishi bo'lgan?",
+      "v": [
+        "36 000 kishi",
+        "30 000 kishi",
+        "27 648 kishi",
+        "34 560 kishi"
+      ],
+      "t": 1,
+      "izoh": "Oldinga qarab koeffitsient 1,2 bo'lgani uchun orqaga qarab 1,2 ga bo'lish kerak. Bir yil oldin 43 200 : 1,2 = 36 000, ikki yil oldin esa 36 000 : 1,2 = 30 000 kishi. 34 560 va 27 648 — bo'lish o'rniga 0,8 ga ko'paytirish xatosi. Javob: 30 000 kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aholi-va-obunachi-osishi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#e5b30e77"
+    },
+    {
+      "q": "Ikki qishloqda hozir 8 000 kishidan yashaydi. Birinchi qishloqda aholi har yili 300 kishiga, ikkinchisida esa har yili 5% ga ortadi. Uch yildan keyin qaysi qishloqda aholi ko'p bo'ladi va farq qancha?",
+      "v": [
+        "Birinchisida, 361 kishiga ko'p",
+        "Ikkinchisida, 300 kishiga ko'p",
+        "Ikkinchisida, 1 261 kishiga ko'p",
+        "Ikkinchisida, 361 kishiga ko'p"
+      ],
+      "t": 3,
+      "izoh": "Birinchi qishloqda o'sish arifmetik: 8 000 + 3·300 = 8 900 kishi. Ikkinchisida geometrik: 8 000·1,05³ = 8 000·1,157625 = 9 261 kishi. Farq 9 261 − 8 900 = 361 kishi va ko'proq aholi ikkinchi qishloqda. Oddiy foiz bilan hisoblansa 8 000·1,15 = 9 200 chiqib, farq 300 kishi bo'lib ko'rinadi — bu xato. Javob: ikkinchisida, 361 kishiga ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aholi-va-obunachi-osishi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#d957e5d6"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni har 20 daqiqada 2 baravar ortadi. Boshlanishida 500 ta bakteriya bo'lgan bo'lsa, 3 soatdan keyin nechta bakteriya bo'ladi?",
+      "v": [
+        "4 500 ta",
+        "256 000 ta",
+        "128 000 ta",
+        "512 000 ta"
+      ],
+      "t": 1,
+      "izoh": "3 soat = 180 daqiqa, ya'ni 180 : 20 = 9 marta ikkilanish sodir bo'ladi. Demak 500·2⁹ = 500·512 = 256 000 ta bakteriya bo'ladi. 128 000 — sakkizinchi ikkilanishda to'xtash, 4 500 esa 2 ga emas, 9 ga ko'paytirish xatosi. Javob: 256 000 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bakteriya-va-hujayra-kopayishi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#eec5bdb4"
+    },
+    {
+      "q": "Ko'lda o'sadigan suvo'tning maydoni har kuni 3 baravar kengayadi va 8-kuni u ko'lni to'liq qopladi. Ko'l yuzasining to'qqizdan bir qismi nechanchi kuni qoplangan edi?",
+      "v": [
+        "7-kuni",
+        "4-kuni",
+        "5-kuni",
+        "6-kuni"
+      ],
+      "t": 3,
+      "izoh": "Har kun maydon 3 baravar ortgani uchun orqaga qarab har kunda 3 ga bo'linadi. 7-kuni ko'lning uchdan bir qismi, 6-kuni esa to'qqizdan bir qismi qoplangan bo'ladi, chunki 9 = 3². Javob: 6-kuni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bakteriya-va-hujayra-kopayishi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#e63ceece"
+    },
+    {
+      "q": "Probirkadagi hujayralar soni har soatda 4 baravar ortadi va hozir probirkada 12 288 ta hujayra bor. To'rt soat oldin probirkada nechta hujayra bo'lgan?",
+      "v": [
+        "3 072 ta",
+        "768 ta",
+        "48 ta",
+        "192 ta"
+      ],
+      "t": 2,
+      "izoh": "Orqaga qarab har soatda son 4 ga bo'linadi: 12 288 → 3 072 → 768 → 192 → 48. Formula bilan 12 288 : 4⁴ = 12 288 : 256 = 48 ta. 192 ta — uchta bosqichda to'xtab qolish xatosi. Javob: 48 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bakteriya-va-hujayra-kopayishi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#ac5ec26a"
+    },
+    {
+      "q": "Idishdagi bakteriyalar soni har soatda 2 baravar ko'payadi va idish roppa-rosa 10 soatda to'lib ketadi. Agar tajriba boshida bakteriyalar soni 2 baravar ko'p olinganida, idish necha soatda to'lar edi?",
+      "v": [
+        "9 soat",
+        "5 soat",
+        "8 soat",
+        "20 soat"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich sonni 2 baravar oshirish — bu jarayonni bir qadam oldinga surish bilan bir xil, chunki bir soatda son aynan 2 baravar ortadi. Demak idish 10 − 1 = 9 soatda to'ladi. 5 soat — vaqtni yarimga bo'lish, 20 soat esa vaqtni ikkilantirish xatosi. Javob: 9 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bakteriya-va-hujayra-kopayishi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#f306a926"
+    },
+    {
+      "q": "Sportchi Jasur birinchi kuni turnikda 15 marta tortildi va har kuni oldingi kundagidan 3 martaga ko'p tortila boshladi. U 14-kuni necha marta tortiladi?",
+      "v": [
+        "51 marta",
+        "57 marta",
+        "54 marta",
+        "45 marta"
+      ],
+      "t": 2,
+      "izoh": "Kunlik takrorlar arifmetik progressiya: a₁ = 15, d = 3. a₁₄ = 15 + (14 − 1)·3 = 15 + 39 = 54 marta. 57 — 13 o'rniga 14 ta ayirma qo'shish, 51 esa 13-kunning natijasi. Javob: 54 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mashq-rejasi-progressiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#98be878c"
+    },
+    {
+      "q": "Suzuvchi mashg'ulotning birinchi kuni 400 m suzdi va har kuni masofani 150 m ga oshirib bordi. Oxirgi kuni u 2 500 m suzgan bo'lsa, mashg'ulotlar necha kun davom etgan?",
+      "v": [
+        "15 kun",
+        "14 kun",
+        "16 kun",
+        "17 kun"
+      ],
+      "t": 0,
+      "izoh": "aₙ = a₁ + (n − 1)d formulasiga qo'yamiz: 400 + (n − 1)·150 = 2 500. Bundan (n − 1)·150 = 2 100 va n − 1 = 14, ya'ni n = 15. 14 kun — (n − 1) ni javob deb olish xatosi. Javob: 15 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mashq-rejasi-progressiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#5d15e8af"
+    },
+    {
+      "q": "Yugurish rejasida birinchi hafta 12 km, o'ninchi hafta esa 48 km yugurish belgilangan va haftalik masofa bir xil miqdorda ortib boradi. Sportchi o'n hafta davomida jami necha km yuguradi?",
+      "v": [
+        "120 km",
+        "480 km",
+        "600 km",
+        "300 km"
+      ],
+      "t": 3,
+      "izoh": "Yig'indini Sₙ = n·(a₁ + aₙ)/2 formulasi bilan topamiz: S₁₀ = 10·(12 + 48)/2 = 5·60 = 300 km. 600 km — ikkiga bo'lishni unutish, 480 km esa oxirgi hafta masofasini 10 ga ko'paytirish xatosi. Javob: 300 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mashq-rejasi-progressiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#db09faa4"
+    },
+    {
+      "q": "Murabbiy ikki reja taklif qildi. Birinchi rejada har kuni 60 tadan qorin mashqi bajariladi. Ikkinchi rejada birinchi kuni 20 ta, keyingi har kuni oldingi kundagidan 5 tadan ko'p bajariladi. 17 kunlik mashg'ulotdan so'ng qaysi rejada qancha mashq ko'p bajarilgan bo'ladi?",
+      "v": [
+        "Birinchi rejada 40 ta ko'p",
+        "Ikkala rejada ham teng",
+        "Ikkinchi rejada 40 ta ko'p",
+        "Ikkinchi rejada 680 ta ko'p"
+      ],
+      "t": 1,
+      "izoh": "Birinchi rejada jami 60·17 = 1 020 ta mashq. Ikkinchi rejada a₁ = 20, d = 5 va S₁₇ = 17/2·(40 + 16·5) = 17/2·120 = 1 020 ta. Demak natijalar aynan teng. Faqat birinchi kunni solishtirsak 40 ta farq, faqat oxirgi kunni solishtirsak yana 40 ta farq ko'rinadi — ikkalasi ham noto'g'ri xulosa. Javob: ikkala rejada ham teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mashq-rejasi-progressiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#aa7c27ae"
+    },
+    {
+      "q": "Teatr zalining birinchi qatorida 18 ta o'rindiq bor, keyingi har qatorda oldingi qatordagidan 2 ta ko'p o'rindiq joylashgan. Zalning 14-qatorida nechta o'rindiq bor?",
+      "v": [
+        "46 ta",
+        "42 ta",
+        "36 ta",
+        "44 ta"
+      ],
+      "t": 3,
+      "izoh": "Qatorlardagi o'rindiqlar arifmetik progressiya: a₁ = 18, d = 2. a₁₄ = 18 + 13·2 = 44 ta. 46 — 13 o'rniga 14 ta ayirma qo'shish, 42 esa 13-qatorning o'rindiqlari soni. Javob: 44 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zal-qatorlaridagi-orindiqlar",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#bc691d5c"
+    },
+    {
+      "q": "Amfiteatrning birinchi qatorida 24 ta, eng oxirgi qatorida esa 68 ta o'rindiq bor. Har qatorda o'rindiqlar soni 4 tadan ortib boradi. Amfiteatrda jami nechta o'rindiq bor?",
+      "v": [
+        "1 104 ta",
+        "552 ta",
+        "816 ta",
+        "506 ta"
+      ],
+      "t": 1,
+      "izoh": "Avval qatorlar sonini topamiz: 24 + (n − 1)·4 = 68, bundan n − 1 = 11 va n = 12. Yig'indi S₁₂ = 12·(24 + 68)/2 = 6·92 = 552 ta. 1 104 — ikkiga bo'lishni unutish, 816 esa oxirgi qator o'rindiqlarini 12 ga ko'paytirish, 506 — qatorlar sonini 12 emas, 11 deb olish xatosi. Javob: 552 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zal-qatorlaridagi-orindiqlar",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#902efd69"
+    },
+    {
+      "q": "Konsert zalida 20 ta qator bor: birinchi qatorda 30 ta o'rindiq bo'lib, har qatorda o'rindiqlar soni 3 tadan ortadi. Zalning dastlabki 10 qatorida jami nechta o'rindiq bor?",
+      "v": [
+        "435 ta",
+        "450 ta",
+        "300 ta",
+        "570 ta"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki 10 qator uchun a₁ = 30, d = 3, n = 10. S₁₀ = 10/2·(2·30 + 9·3) = 5·87 = 435 ta. 450 — (n − 1) o'rniga n olish, 570 esa 10-qator o'rindiqlarini (57 ta) 10 ga ko'paytirish xatosi. Javob: 435 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zal-qatorlaridagi-orindiqlar",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#f146c19c"
+    },
+    {
+      "q": "Stadion sektorida 11 ta qator bor. Birinchi qatorda 40 ta o'rindiq bo'lib, keyingi qatorlarda o'rindiqlar soni bir xil miqdorda ortib boradi. Sektorda jami 660 ta o'rindiq bo'lsa, oxirgi qatorda nechta o'rindiq bor?",
+      "v": [
+        "60 ta",
+        "120 ta",
+        "80 ta",
+        "96 ta"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi formulasidan foydalanamiz: S₁₁ = 11·(40 + a₁₁)/2 = 660. Bundan 40 + a₁₁ = 120 va a₁₁ = 80 ta, ya'ni har qatorda 4 tadan ortib boradi. 120 ta — birinchi va oxirgi hadlar yig'indisini oxirgi had deb olish, 60 ta esa 660 : 11, ya'ni qatordagi o'rtacha o'rindiqlar soni. Javob: 80 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zal-qatorlaridagi-orindiqlar",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#41a3963a"
+    },
+    {
+      "q": "Quvurlar shtabelga taxlangan: eng yuqori qatorda 5 ta quvur bor, har quyi qatorda esa bittadan ko'p quvur joylashgan. Shtabelda 12 qator bo'lsa, eng quyi qatorda nechta quvur bor?",
+      "v": [
+        "17 ta",
+        "16 ta",
+        "12 ta",
+        "15 ta"
+      ],
+      "t": 1,
+      "izoh": "Yuqoridan pastga qarab a₁ = 5, d = 1 bo'lgan arifmetik progressiya hosil bo'ladi. Eng quyi qator — 12-had: a₁₂ = 5 + 11·1 = 16 ta. 17 ta — 11 o'rniga 12 ta ayirma qo'shish, 15 ta esa 11-qatorning quvurlari soni. Javob: 16 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taxlangan-shtabel-piramida",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#f8718917"
+    },
+    {
+      "q": "G'ishtlar piramida shaklida taxlangan: eng yuqori qatorda 3 ta, har quyi qatorda 4 tadan ko'p g'isht bor. Piramidada 9 qator bo'lsa, unda jami nechta g'isht taxlangan?",
+      "v": [
+        "315 ta",
+        "136 ta",
+        "171 ta",
+        "189 ta"
+      ],
+      "t": 2,
+      "izoh": "a₁ = 3, d = 4, n = 9 deb olamiz. S₉ = 9/2·(2·3 + 8·4) = 4,5·38 = 171 ta. 315 ta — eng quyi qatordagi 35 ta g'ishtni 9 ga ko'paytirish, 189 ta esa yig'indi formulasida (n − 1) o'rniga n olish, ya'ni 9/2·(6 + 9·4) deb hisoblash xatosi. Javob: 171 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taxlangan-shtabel-piramida",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#1f1d684e"
+    },
+    {
+      "q": "Bozorda tarvuzlar uchburchak uyum qilib terilgan: eng yuqorida 1 ta, undan pastdagi qatorda 2 ta, keyingisida 3 ta va shu tartibda davom etadi. Uyumda jami 210 ta tarvuz bo'lsa, uyum necha qatordan iborat?",
+      "v": [
+        "21 ta",
+        "15 ta",
+        "19 ta",
+        "20 ta"
+      ],
+      "t": 3,
+      "izoh": "Bunday uyumdagi tarvuzlar soni Sₙ = n(n + 1)/2 formulasi bilan topiladi. Tenglama n(n + 1)/2 = 210 dan n² + n − 420 = 0 kelib chiqadi. D = 1 + 1 680 = 1 681, √1 681 = 41, demak n = (−1 + 41)/2 = 20. 19 qatorda 190 ta, 21 qatorda esa 231 ta tarvuz bo'lar edi. Javob: 20 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taxlangan-shtabel-piramida",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#cc809a63"
+    },
+    {
+      "q": "Yog'och xodalar shtabelga taxlangan: eng quyi qatorda 26 ta xoda bor, har yuqori qatorda 2 tadan kam, eng yuqori qatorda esa 8 ta xoda bor. Shtabelning eng yuqori 5 qatorida jami nechta xoda bor?",
+      "v": [
+        "60 ta",
+        "110 ta",
+        "170 ta",
+        "50 ta"
+      ],
+      "t": 0,
+      "izoh": "Qatorlar soni: 26 − 2(n − 1) = 8 dan n − 1 = 9 va n = 10 qator. Eng yuqori 5 qator yuqoridan pastga 8, 10, 12, 14, 16 ta xodadan iborat, ularning yig'indisi 5·(8 + 16)/2 = 60 ta. 110 ta — eng quyi 5 qator, 170 ta esa butun shtabeldagi xodalar soni. Javob: 60 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taxlangan-shtabel-piramida",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#8ff3edc9"
+    },
+    {
+      "q": "Devor soati har soatda o'sha soatning raqamiga teng marta zang uradi: soat 1 da bir marta, soat 2 da ikki marta va hokazo. Soat 1 dan soat 12 gacha bo'lgan davrda soat jami necha marta zang uradi?",
+      "v": [
+        "66 marta",
+        "72 marta",
+        "78 marta",
+        "144 marta"
+      ],
+      "t": 2,
+      "izoh": "Zanglar soni 1, 2, 3, …, 12 arifmetik progressiyani beradi. Yig'indi S₁₂ = 12·(1 + 12)/2 = 6·13 = 78 marta. 66 marta — o'n birinchi hadda to'xtash, 72 marta esa oxirgi hadni 12 emas, 11 deb olish natijasi. Javob: 78 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soat-zangi-va-signal",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#f6e0590b"
+    },
+    {
+      "q": "Signal qurilmasi birinchi daqiqada 2 marta, keyingi har daqiqada esa oldingi daqiqadagidan 3 taga ko'p signal beradi. O'n besh daqiqada qurilma jami necha marta signal beradi?",
+      "v": [
+        "345 marta",
+        "690 marta",
+        "660 marta",
+        "30 marta"
+      ],
+      "t": 0,
+      "izoh": "a₁ = 2, d = 3, n = 15. S₁₅ = 15/2·(2·2 + 14·3) = 7,5·46 = 345 marta. 690 marta — ikkiga bo'lishni unutish, 660 marta esa oxirgi daqiqadagi 44 ta signalni 15 ga ko'paytirish xatosi. Javob: 345 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soat-zangi-va-signal",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#7a881e51"
+    },
+    {
+      "q": "Mayoq chirog'i birinchi daqiqada 1 marta, ikkinchi daqiqada 3 marta, uchinchi daqiqada 5 marta yonib-o'chadi va shu tartib davom etadi. Dastlabki 20 daqiqada chiroq jami necha marta yonadi?",
+      "v": [
+        "780 marta",
+        "420 marta",
+        "200 marta",
+        "400 marta"
+      ],
+      "t": 3,
+      "izoh": "Bu toq sonlar ketma-ketligi: a₁ = 1, d = 2. Yigirmanchi had a₂₀ = 1 + 19·2 = 39, yig'indi esa S₂₀ = 20·(1 + 39)/2 = 400 marta. Umuman, dastlabki n ta toq sonning yig'indisi n² ga teng. 420 marta — oxirgi hadni 41 deb olish xatosi. Javob: 400 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soat-zangi-va-signal",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#29d9ec6d"
+    },
+    {
+      "q": "Devor soati har soatda soat raqamiga teng marta, bundan tashqari har yarim soatda bir marta zang uradi. Soat 1:00 dan 12:30 gacha bo'lgan davrda qurilma jami necha marta zang uradi?",
+      "v": [
+        "78 marta",
+        "90 marta",
+        "156 marta",
+        "102 marta"
+      ],
+      "t": 1,
+      "izoh": "Soatlik zanglar 1 + 2 + … + 12 = 12·13/2 = 78 martani beradi. Yarim soat belgilari esa 1:30, 2:30, …, 12:30 — jami 12 ta va har birida bittadan zang uriladi. Demak jami 78 + 12 = 90 marta. 78 marta — yarim soatlarni unutish, 102 marta esa yarim soatlarda ham soat raqamicha zang bo'ladi deb hisoblash xatosi. Javob: 90 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "soat-zangi-va-signal",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#e16b656b"
+    },
+    {
+      "q": "Quduq qazishda birinchi metr uchun 120 000 so'm, keyingi har metr uchun oldingi metrdagidan 25 000 so'm ko'p to'lanadi. To'qqizinchi metrni qazish uchun qancha to'lanadi?",
+      "v": [
+        "320 000 so'm",
+        "345 000 so'm",
+        "295 000 so'm",
+        "1 080 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Metrlar bo'yicha narx arifmetik progressiya: a₁ = 120 000, d = 25 000. a₉ = 120 000 + 8·25 000 = 320 000 so'm. 345 000 — 8 o'rniga 9 ta ayirma qo'shish, 1 080 000 esa narxni o'zgarmas deb 9 ga ko'paytirish xatosi. Javob: 320 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quduq-qazish-narxi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#3aa819ae"
+    },
+    {
+      "q": "Quduq qazish uchun birinchi metrga 90 000 so'm, keyingi har metrga oldingisidan 20 000 so'm ko'p to'lanadi. O'n ikki metrli quduqni qazish jami qancha turadi?",
+      "v": [
+        "1 080 000 so'm",
+        "3 720 000 so'm",
+        "2 520 000 so'm",
+        "2 400 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "a₁ = 90 000, d = 20 000, n = 12. S₁₂ = 12/2·(180 000 + 11·20 000) = 6·400 000 = 2 400 000 so'm. 2 520 000 — 11 o'rniga 12 ta ayirma olish, 3 720 000 esa oxirgi metr narxini (310 000) 12 ga ko'paytirish xatosi. Javob: 2 400 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quduq-qazish-narxi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#31b17906"
+    },
+    {
+      "q": "Quduq qazishga jami 4 400 000 so'm sarflandi. Birinchi metr 150 000 so'm turgan, har keyingi metr esa oldingisidan 50 000 so'm qimmat bo'lgan. Quduq necha metr chuqurlikda qazilgan?",
+      "v": [
+        "10 metr",
+        "11 metr",
+        "12 metr",
+        "14 metr"
+      ],
+      "t": 1,
+      "izoh": "Sₙ = n/2·(300 000 + (n − 1)·50 000) = 25 000n·(n + 5). Tenglama 25 000n(n + 5) = 4 400 000 dan n² + 5n − 176 = 0 chiqadi. D = 25 + 704 = 729, √729 = 27, demak n = (−5 + 27)/2 = 11. O'n metrda 3 750 000, o'n ikki metrda esa 5 100 000 so'm bo'lar edi. Javob: 11 metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quduq-qazish-narxi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#cc6b1ee7"
+    },
+    {
+      "q": "Ikki brigada bir quduqni qazishga narx taklif qildi. Birinchi brigada har metr uchun o'zgarmas 340 000 so'm so'radi. Ikkinchi brigada birinchi metrga 100 000 so'm, keyingi har metrga oldingisidan 40 000 so'm ko'p so'radi. Quduq chuqurligi qancha bo'lganda ikkala taklif bir xil summani beradi?",
+      "v": [
+        "11 metr",
+        "12 metr",
+        "13 metr",
+        "15 metr"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi brigada narxi Sₙ = n/2·(200 000 + (n − 1)·40 000) = n·(20 000n + 80 000). Birinchi brigadaniki 340 000n. Tenglikdan 20 000n + 80 000 = 340 000, ya'ni 20 000n = 260 000 va n = 13. Tekshirish: 13 metrda ikkalasi ham 4 420 000 so'm. Javob: 13 metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quduq-qazish-narxi",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#b18fef9e"
+    },
+    {
+      "q": "Erkin tushayotgan jism birinchi sekundda 5 m, keyingi har sekundda esa oldingi sekunddagidan 10 m ko'p yo'l bosadi. Jism oltinchi sekundda necha metr yo'l bosadi?",
+      "v": [
+        "60 m",
+        "45 m",
+        "65 m",
+        "55 m"
+      ],
+      "t": 3,
+      "izoh": "Sekundlar bo'yicha yo'llar arifmetik progressiya: a₁ = 5, d = 10. a₆ = 5 + 5·10 = 55 m. 65 m — 5 o'rniga 6 ta ayirma qo'shish, 45 m esa beshinchi sekunddagi yo'l, 60 m — sekundlar sonini 10 ga ko'paytirish xatosi. Javob: 55 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "erkin-tushish-va-tormozlanish",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#4cdf4793"
+    },
+    {
+      "q": "Erkin tushayotgan jism birinchi sekundda 5 m yo'l bosadi va har keyingi sekundda oldingisidan 10 m ko'p yo'l bosadi. Jism sakkiz sekundda jami necha metr yo'l bosadi?",
+      "v": [
+        "360 m",
+        "600 m",
+        "320 m",
+        "40 m"
+      ],
+      "t": 2,
+      "izoh": "a₁ = 5, d = 10, n = 8. S₈ = 8/2·(2·5 + 7·10) = 4·80 = 320 m. 360 m — 7 o'rniga 8 ta ayirma olish, 600 m esa sakkizinchi sekunddagi 75 m ni 8 ga ko'paytirish, 40 m — o'sishni butunlay hisobga olmaslik. Javob: 320 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "erkin-tushish-va-tormozlanish",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#cbde652e"
+    },
+    {
+      "q": "Tormozlanayotgan poyezd birinchi sekundda 30 m, har keyingi sekundda oldingisidan 2 m kam yo'l bosadi va shu tartibda to'liq to'xtaydi. Poyezd to'xtaguncha necha metr yo'l bosadi?",
+      "v": [
+        "240 m",
+        "450 m",
+        "480 m",
+        "225 m"
+      ],
+      "t": 0,
+      "izoh": "Sekundlik yo'llar 30, 28, 26, …, 2 ni tashkil qiladi. Hadlar soni: 30 − 2(n − 1) = 2 dan n = 15. Yig'indi S₁₅ = 15·(30 + 2)/2 = 15·16 = 240 m. 480 m — ikkiga bo'lishni unutish, 450 m esa tezlikni o'zgarmas deb 15·30 ni olish xatosi. Javob: 240 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "erkin-tushish-va-tormozlanish",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#c0881ccc"
+    },
+    {
+      "q": "Ikki avtomobil bir vaqtda bir nuqtadan bir yo'nalishda yo'lga chiqdi. Birinchisi har soatda 60 km dan bir tekis yuradi. Ikkinchisi birinchi soatda 30 km yuradi va har soatda bosib o'tadigan masofasini 10 km ga oshiradi. Nechanchi soat oxirida ikkinchi avtomobil birinchisidan oldinda bo'ladi?",
+      "v": [
+        "6-soat oxirida",
+        "8-soat oxirida",
+        "7-soat oxirida",
+        "9-soat oxirida"
+      ],
+      "t": 1,
+      "izoh": "Birinchi avtomobil n soatda 60n km yuradi. Ikkinchisi n/2·(60 + (n − 1)·10) = 5n² + 25n km yuradi. Shart 5n² + 25n > 60n dan 5n² > 35n va n > 7 kelib chiqadi. Yettinchi soat oxirida ikkalasi ham 420 km da — teng, faqat sakkizinchi soat oxirida 520 km va 480 km bo'lib, ikkinchisi oldinga chiqadi. Javob: 8-soat oxirida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "erkin-tushish-va-tormozlanish",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#ada571aa"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning tomonlari arifmetik progressiya tashkil qiladi va eng kichik tomoni 9 sm ga teng. Bu uchburchakning perimetri necha sm?",
+      "v": [
+        "30 sm",
+        "36 sm",
+        "27 sm",
+        "45 sm"
+      ],
+      "t": 1,
+      "izoh": "Tomonlar 9, 9 + d va 9 + 2d bo'lsin. Pifagor teoremasidan 81 + (9 + d)² = (9 + 2d)², bundan d = 3 chiqadi va tomonlar 9, 12, 15 bo'ladi. Perimetr 9 + 12 + 15 = 36 sm. 27 sm — uchburchakni teng tomonli deb olish, 45 sm esa ayirmani 6 deb noto'g'ri tanlash xatosi. Javob: 36 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tomonlari-arifmetik-progressiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#7c46804a"
+    },
+    {
+      "q": "Uchburchakning tomonlari arifmetik progressiya tashkil etadi. Uning perimetri 60 sm, eng katta tomoni esa 25 sm. Uchburchakning eng kichik tomoni necha sm?",
+      "v": [
+        "15 sm",
+        "20 sm",
+        "17,5 sm",
+        "35 sm"
+      ],
+      "t": 0,
+      "izoh": "Arifmetik progressiyada o'rta tomon uchta tomonning o'rta arifmetigiga teng: 60 : 3 = 20 sm. Qolgan ikki tomon yig'indisi 60 − 20 = 40 sm, ulardan biri 25 sm bo'lgani uchun ikkinchisi 15 sm. 35 sm — ikki tomon yig'indisini bitta tomon deb olish, 17,5 sm esa shu yig'indini teng ikkiga bo'lish xatosi. Javob: 15 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tomonlari-arifmetik-progressiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#825bbcd6"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning tomonlari arifmetik progressiya tashkil qiladi va gipotenuzasi 40 sm. Bu uchburchakning yuzasi necha sm² ga teng?",
+      "v": [
+        "480 sm²",
+        "768 sm²",
+        "384 sm²",
+        "640 sm²"
+      ],
+      "t": 2,
+      "izoh": "Tomonlari arifmetik progressiya bo'lgan to'g'ri burchakli uchburchak 3 : 4 : 5 nisbatda bo'ladi. Gipotenuza 40 sm bo'lgani uchun koeffitsient 8 va katetlar 24 sm hamda 32 sm. Yuza S = 24·32/2 = 384 sm². 768 sm² — ikkiga bo'lishni unutish, 480 sm² esa katet o'rniga gipotenuzani formulaga qo'yish xatosi. Javob: 384 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tomonlari-arifmetik-progressiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#b6e96e51"
+    },
+    {
+      "q": "Uchburchakning tomonlari arifmetik progressiya tashkil qiladi. Uning perimetri 42 sm, eng kichik tomoni esa eng katta tomonidan 6 sm qisqa. Uchburchakning eng katta tomoni necha sm?",
+      "v": [
+        "11 sm",
+        "14 sm",
+        "20 sm",
+        "17 sm"
+      ],
+      "t": 3,
+      "izoh": "O'rta tomon perimetrning uchdan biriga teng: 42 : 3 = 14 sm. Eng katta va eng kichik tomonlar farqi 2d ga teng, ya'ni 2d = 6 va d = 3. Demak eng katta tomon 14 + 3 = 17 sm. 20 sm — ayirmani 6 deb olish, 11 sm esa eng kichik tomon. Javob: 17 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tomonlari-arifmetik-progressiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#d5d6ec6b"
+    },
+    {
+      "q": "Uchburchakning tomonlari geometrik progressiya tashkil qiladi: eng kichik tomoni 4 sm, progressiyaning maxraji esa 1,5. Bu uchburchakning perimetri necha sm?",
+      "v": [
+        "18 sm",
+        "28 sm",
+        "19 sm",
+        "28,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Tomonlar 4, 4·1,5 = 6 va 6·1,5 = 9 sm bo'ladi. Uchburchak sharti bajariladi, chunki 4 + 6 = 10 > 9. Perimetr 4 + 6 + 9 = 19 sm. 18 sm — progressiyani arifmetik deb olib 4, 6, 8 tomonlarni hisoblash, 28 sm — maxrajni 2 deb olib 4, 8, 16 deyish, 28,5 sm esa eng kichik tomonni 6 deb olib 6 + 9 + 13,5 tarzida qo'shish xatosi. Javob: 19 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tomonlari-geometrik-progressiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#20b3b599"
+    },
+    {
+      "q": "To'g'ri burchakli parallelepipedning uch o'lchovi geometrik progressiya tashkil etadi va uning hajmi 1 728 sm³ ga teng. Parallelepipedning ikkinchi, ya'ni o'rta o'lchovi necha sm?",
+      "v": [
+        "8 sm",
+        "12 sm",
+        "24 sm",
+        "144 sm"
+      ],
+      "t": 1,
+      "izoh": "O'lchovlar b/q, b va b·q bo'lsin. Ularning ko'paytmasi (b/q)·b·(b·q) = b³ ga teng, ya'ni hajm faqat o'rta o'lchovga bog'liq. Demak b³ = 1 728 va b = ∛1 728 = 12 sm. 144 sm — hajmni 12 ga bo'lish, 8 sm esa kub ildizni noto'g'ri hisoblash xatosi. Javob: 12 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tomonlari-geometrik-progressiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#7ef3e56f"
+    },
+    {
+      "q": "Tomoni 24 sm bo'lgan kvadratning tomonlari o'rtalari tutashtirilib yangi kvadrat hosil qilindi va bu amal ketma-ket takrorlandi. Dastlabki kvadratni birinchi deb hisoblaganda, to'rtinchi kvadratning yuzasi necha sm²?",
+      "v": [
+        "144 sm²",
+        "288 sm²",
+        "36 sm²",
+        "72 sm²"
+      ],
+      "t": 3,
+      "izoh": "Tomonlari o'rtalari tutashtirilganda yangi kvadratning yuzasi oldingisining yarmiga teng bo'ladi, ya'ni maxraji 1/2 bo'lgan geometrik progressiya hosil bo'ladi. Birinchi kvadrat yuzasi 24² = 576 sm². Keyingilari 288 sm² (ikkinchi), 144 sm² (uchinchi) va 72 sm² (to'rtinchi). 144 sm² — uchinchi kvadrat yuzasi, 36 sm² esa beshinchisiniki. Javob: 72 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tomonlari-geometrik-progressiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#dd9f6e64"
+    },
+    {
+      "q": "Uchburchakning tomonlari geometrik progressiya tashkil qiladi. Uning perimetri 38 sm, eng katta tomoni esa eng kichik tomonidan 10 sm uzun. Uchburchakning o'rta tomoni necha sm?",
+      "v": [
+        "12 sm",
+        "10 sm",
+        "13 sm",
+        "16 sm"
+      ],
+      "t": 0,
+      "izoh": "Eng kichik tomon a bo'lsa, eng kattasi a + 10 va o'rta tomon b = 38 − a − (a + 10) = 28 − 2a. Geometrik progressiya xossasidan b² = a(a + 10), ya'ni (28 − 2a)² = a² + 10a. Soddalashtirsak 3a² − 122a + 784 = 0, D = 5 476 va √5 476 = 74, bundan a = 8. Demak tomonlar 8, 12, 18 sm. 13 sm — o'rta tomonni o'rta arifmetik deb olish xatosi. Javob: 12 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tomonlari-geometrik-progressiya",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#63be2ed7"
+    },
+    {
+      "q": "Tomoni 12 sm bo'lgan teng tomonli uchburchakning tomonlari o'rtalari tutashtirilib yangi uchburchak quriladi va bu jarayon cheksiz davom etadi. Barcha uchburchaklar perimetrlarining yig'indisi necha sm?",
+      "v": [
+        "36 sm",
+        "48 sm",
+        "54 sm",
+        "72 sm"
+      ],
+      "t": 3,
+      "izoh": "Birinchi uchburchak perimetri 3·12 = 36 sm, har keyingisi esa yarmiga teng, ya'ni q = 1/2. Cheksiz kamayuvchi progressiya yig'indisi S = 36/(1 − 1/2) = 72 sm. 48 sm — yuzalar uchun to'g'ri keladigan 1/4 maxrajni perimetrlarga qo'llash, 54 sm esa faqat dastlabki ikki hadning yig'indisi. Javob: 72 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichma-ich-shakllar-cheksiz",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#9676a58a"
+    },
+    {
+      "q": "Tomoni 20 sm bo'lgan kvadratning tomonlari o'rtalari tutashtirilib yangi kvadrat quriladi va jarayon cheksiz takrorlanadi. Shu tarzda hosil bo'lgan barcha kvadratlar yuzalarining yig'indisi necha sm² ga teng?",
+      "v": [
+        "600 sm²",
+        "800 sm²",
+        "400 sm²",
+        "1 600 sm²"
+      ],
+      "t": 1,
+      "izoh": "Birinchi kvadrat yuzasi 20² = 400 sm², har keyingisi oldingisining yarmiga teng, ya'ni q = 1/2. Cheksiz yig'indi S = 400/(1 − 1/2) = 800 sm². 400 sm² — faqat birinchi kvadrat, 600 sm² esa dastlabki ikki had, 1 600 sm² — maxrajni 3/4 deb olish xatosi. Javob: 800 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichma-ich-shakllar-cheksiz",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#53734461"
+    },
+    {
+      "q": "Kvadratning yuzasi 90 sm². Uning ichiga tomonlari o'rtalarini tutashtirib kvadrat, so'ng shu tartibda yana kvadratlar cheksiz quriladi. Ikkinchisidan boshlab barcha kvadratlar yuzalarining yig'indisi necha sm²?",
+      "v": [
+        "90 sm²",
+        "180 sm²",
+        "45 sm²",
+        "135 sm²"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi kvadrat yuzasi 90 : 2 = 45 sm² va keyingilari yana yarmiga kamayadi, ya'ni b₁ = 45, q = 1/2. Yig'indi S = 45/(1 − 1/2) = 90 sm². 180 sm² — birinchi kvadratni ham qo'shib yuborish, 45 sm² esa faqat ikkinchi kvadrat yuzasi. Javob: 90 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichma-ich-shakllar-cheksiz",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#0a7b41ef"
+    },
+    {
+      "q": "Doiraga ichki chizilgan kvadrat, so'ng shu kvadratga ichki chizilgan doira, keyin unga ichki chizilgan kvadrat va shu tartibda cheksiz shakllar quriladi. Birinchi kvadratning tomoni 8 sm bo'lsa, barcha kvadratlar yuzalarining yig'indisi necha sm²?",
+      "v": [
+        "96 sm²",
+        "192 sm²",
+        "128 sm²",
+        "256 sm²"
+      ],
+      "t": 2,
+      "izoh": "Tomoni a bo'lgan kvadratga ichki chizilgan doira diametri a ga teng, unga ichki chizilgan kvadratning diagonali ham a, demak tomoni a/√2 va yuzasi ikki barobar kichik. Shunday qilib q = 1/2 va b₁ = 8² = 64 sm². Yig'indi S = 64/(1 − 1/2) = 128 sm². 96 sm² — dastlabki ikki had, 256 sm² esa maxrajni 3/4 deb olish xatosi. Javob: 128 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichma-ich-shakllar-cheksiz",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#cec89ba2"
+    },
+    {
+      "q": "Koptok 9 m balandlikdan tashlandi va har safar yerga urilgandan keyin oldingi balandlikning uchdan bir qismiga ko'tariladi. Uchinchi marta urilgandan keyin koptok qanday balandlikka ko'tariladi?",
+      "v": [
+        "1/3 m",
+        "1 m",
+        "3 m",
+        "1/9 m"
+      ],
+      "t": 0,
+      "izoh": "Ko'tarilish balandliklari geometrik progressiya: b₁ = 3 m, q = 1/3. Uchinchi urilishdan keyingi balandlik 9·(1/3)³ = 9/27 = 1/3 m. 3 m — birinchi, 1 m esa ikkinchi urilishdan keyingi balandlik. Javob: 1/3 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koptok-sakrashi-masofa",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#ce8de459"
+    },
+    {
+      "q": "Koptok 16 m balandlikdan tashlandi va har safar urilgandan keyin o'zi tushgan balandlikning yarmiga ko'tariladi. Koptok ikkinchi marta yerga urilgunga qadar jami necha metr yo'l bosadi?",
+      "v": [
+        "24 m",
+        "40 m",
+        "32 m",
+        "48 m"
+      ],
+      "t": 2,
+      "izoh": "Koptok avval 16 m pastga tushadi, so'ng 8 m ko'tariladi va yana 8 m pastga tushib ikkinchi marta uriladi. Jami yo'l 16 + 8 + 8 = 32 m. 24 m — qaytib tushishni hisobga olmaslik, 48 m esa to'liq to'xtagunga qadar bosiladigan masofa. Javob: 32 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koptok-sakrashi-masofa",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#c7481100"
+    },
+    {
+      "q": "Koptok 12 m balandlikdan tushirildi va har urilishdan keyin oldingi balandlikning 0,6 qismiga ko'tariladi. Koptok to'liq to'xtaguncha jami necha metr yo'l bosadi?",
+      "v": [
+        "30 m",
+        "36 m",
+        "60 m",
+        "48 m"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tushish 12 m. Keyin har ko'tarilish va qaytib tushish juft bo'lib takrorlanadi, ularning yig'indisi 2·12·0,6/(1 − 0,6) = 14,4/0,4 = 36 m. Jami 12 + 36 = 48 m. 30 m — faqat tushishlar yig'indisi, 36 m esa birinchi tushishni unutish natijasi. Javob: 48 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koptok-sakrashi-masofa",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#a4b2d815"
+    },
+    {
+      "q": "Koptok ma'lum balandlikdan tushirildi va har urilishdan keyin oldingi balandlikning 3/5 qismiga ko'tariladi. To'liq to'xtaguncha koptok jami 200 m yo'l bosgan bo'lsa, u qanday balandlikdan tushirilgan?",
+      "v": [
+        "80 m",
+        "50 m",
+        "125 m",
+        "40 m"
+      ],
+      "t": 1,
+      "izoh": "Agar boshlang'ich balandlik h bo'lsa, jami yo'l h·(1 + q)/(1 − q) ga teng. Bu yerda q = 3/5, demak (1 + 3/5)/(1 − 3/5) = (8/5)/(2/5) = 4 va jami yo'l 4h. Tenglama 4h = 200 dan h = 50 m. 80 m — faqat tushishlar yig'indisi formulasini, ya'ni h/(1 − q) = 200 ni qo'llash, 125 m esa (1 − q) ga bo'lishni unutib, h·(1 + q) = 200 deb yechish xatosi. Javob: 50 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koptok-sakrashi-masofa",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#21987fcf"
+    },
+    {
+      "q": "Dorining qondagi miqdori har 4 soatda yarmiga kamayadi. Bemorga 640 mg dori berilgan bo'lsa, 12 soatdan keyin uning qonida necha mg dori qoladi?",
+      "v": [
+        "160 mg",
+        "80 mg",
+        "320 mg",
+        "40 mg"
+      ],
+      "t": 1,
+      "izoh": "12 soat ichida yarimlanish 12 : 4 = 3 marta sodir bo'ladi. Demak qolgan miqdor 640·(1/2)³ = 640 : 8 = 80 mg. 160 mg — ikkita yarimlanishda to'xtash, 40 mg esa to'rtta yarimlanishni hisoblash xatosi. Javob: 80 mg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modda-kamayishi-yarimlanish",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#4fb524d3"
+    },
+    {
+      "q": "Radioaktiv moddaning massasi har 30 kunda yarmiga kamayadi. Boshlanishida 960 g modda bo'lgan bo'lsa, 150 kundan keyin undan necha gramm qoladi?",
+      "v": [
+        "60 g",
+        "120 g",
+        "15 g",
+        "30 g"
+      ],
+      "t": 3,
+      "izoh": "Yarimlanishlar soni 150 : 30 = 5 ta. Qolgan massa 960·(1/2)⁵ = 960 : 32 = 30 g. Ketma-ketlik ko'rinishi: 960, 480, 240, 120, 60, 30. 60 g — to'rtta bosqichda to'xtash, 15 g esa oltinchi bosqichgacha davom ettirish xatosi. Javob: 30 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modda-kamayishi-yarimlanish",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#253aa1d4"
+    },
+    {
+      "q": "Suv havzasidagi ifloslanish ko'rsatkichi har hafta 20% ga kamayib bormoqda va hozir u 3 125 birlikni tashkil qiladi. To'rt haftadan keyin ko'rsatkich qanday bo'ladi?",
+      "v": [
+        "1 600 birlik",
+        "625 birlik",
+        "1 280 birlik",
+        "2 500 birlik"
+      ],
+      "t": 2,
+      "izoh": "Har hafta ko'rsatkich 0,8 ga ko'payadi, ya'ni maxraji 0,8 bo'lgan geometrik progressiya hosil bo'ladi. To'rt haftadan keyin 3 125·0,8⁴ = 3 125·0,4096 = 1 280 birlik. 625 birlik — 20% ni qoldiq deb olish, 2 500 birlik esa bir haftalik natija. Javob: 1 280 birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modda-kamayishi-yarimlanish",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#5c5f553b"
+    },
+    {
+      "q": "Idishdagi eritmadan har safar uning to'rtdan bir qismi olinib, o'rniga shuncha toza suv quyiladi. Boshida idishda 320 g tuz erigan edi. Shu amal uch marta bajarilgandan keyin idishda necha gramm tuz qoladi?",
+      "v": [
+        "135 g",
+        "240 g",
+        "80 g",
+        "180 g"
+      ],
+      "t": 0,
+      "izoh": "Har amaldan keyin tuzning 3/4 qismi qoladi, ya'ni maxraji 3/4 bo'lgan geometrik progressiya hosil bo'ladi. Uch amaldan keyin 320·(3/4)³ = 320·27/64 = 135 g. 240 g — faqat bitta amal, 180 g — ikkita amal natijasi, 80 g esa har safar boshlang'ich miqdorning choragini ayirish xatosi. Javob: 135 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modda-kamayishi-yarimlanish",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#9a5cff4f"
+    },
+    {
+      "q": "Yangilikni bilgan bir kishi uni bir soat ichida 3 kishiga aytadi, ular ham keyingi soatda har biri 3 kishidan xabardor qiladi va jarayon shu tarzda davom etadi. To'rtinchi soatda yangilikni nechta yangi kishi eshitadi?",
+      "v": [
+        "27 ta",
+        "243 ta",
+        "81 ta",
+        "12 ta"
+      ],
+      "t": 2,
+      "izoh": "Soatlar bo'yicha yangi xabardorlar soni geometrik progressiya: 3, 9, 27, 81. To'rtinchi had 3·3³ = 81 ta. 27 ta — uchinchi soat natijasi, 243 ta — beshinchi soatniki, 12 ta esa 3 ni 4 ga ko'paytirish xatosi. Javob: 81 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xabar-tarqalishi-zanjir",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#f7f7f5d5"
+    },
+    {
+      "q": "Maktabda e'lon shunday tarqatiladi: birinchi bosqichda 2 o'quvchi xabardor qilinadi, har keyingi bosqichda xabardor qilinganlar soni 2 baravar ortadi. Besh bosqichdan keyin jami nechta o'quvchi xabardor qilingan bo'ladi?",
+      "v": [
+        "62 ta",
+        "32 ta",
+        "64 ta",
+        "30 ta"
+      ],
+      "t": 0,
+      "izoh": "Bosqichlar bo'yicha 2, 4, 8, 16, 32 o'quvchi xabardor qilinadi. Yig'indi S₅ = 2·(2⁵ − 1)/(2 − 1) = 2·31 = 62 ta. Qo'shib ham tekshirish mumkin: 2 + 4 + 8 + 16 + 32 = 62. 32 ta — faqat oxirgi bosqich, 64 ta esa (2⁵ − 1) o'rniga 2⁵ olish xatosi. Javob: 62 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xabar-tarqalishi-zanjir",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#ae3061ab"
+    },
+    {
+      "q": "Reklama xabari zanjir bo'ylab tarqaladi: birinchi kuni 5 kishi, keyingi har kuni oldingi kundagidan 4 baravar ko'p kishi xabarni oladi. Nechanchi kuni bir kunlik xabar oluvchilar soni birinchi marta 1 000 dan oshadi?",
+      "v": [
+        "4-kuni",
+        "5-kuni",
+        "6-kuni",
+        "7-kuni"
+      ],
+      "t": 1,
+      "izoh": "Kunlik son bₙ = 5·4^(n−1) ko'rinishida. To'rtinchi kuni 5·64 = 320 kishi — yetarli emas. Beshinchi kuni 5·256 = 1 280 kishi bo'lib, birinchi marta 1 000 dan oshadi. Javob: 5-kuni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xabar-tarqalishi-zanjir",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#a5567770"
+    },
+    {
+      "q": "Xayriya aksiyasida har bir ishtirokchi keyingi bosqichda ikki kishini jalb qiladi. Birinchi bosqichda faqat bitta tashkilotchi bor edi. Aksiyada jami 1 023 kishi qatnashgan bo'lsa, jarayon necha bosqichdan iborat bo'lgan?",
+      "v": [
+        "9 bosqich",
+        "11 bosqich",
+        "12 bosqich",
+        "10 bosqich"
+      ],
+      "t": 3,
+      "izoh": "Bosqichlardagi ishtirokchilar 1, 2, 4, 8, … geometrik progressiyani beradi. Yig'indi Sₙ = (2ⁿ − 1)/(2 − 1) = 2ⁿ − 1. Tenglama 2ⁿ − 1 = 1 023 dan 2ⁿ = 1 024 va n = 10. To'qqiz bosqichda 511 kishi, o'n bir bosqichda esa 2 047 kishi qatnashar edi. Javob: 10 bosqich.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xabar-tarqalishi-zanjir",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#c03648cd"
+    },
+    {
+      "q": "Ish beruvchi ikki variant taklif qildi. Birinchisida boshlang'ich oylik 4 000 000 so'm bo'lib, har oy 200 000 so'mga oshadi. Ikkinchisida ham boshlang'ich oylik 4 000 000 so'm, lekin u har oy 5% ga oshadi. Ikkinchi oyda qaysi variantda maosh ko'proq bo'ladi?",
+      "v": [
+        "Birinchi variantda 200 000 so'mga ko'p",
+        "Ikkinchi variantda 200 000 so'mga ko'p",
+        "Ikkinchi variantda 100 000 so'mga ko'p",
+        "Maoshlar teng bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Birinchi variantda ikkinchi oy maoshi 4 000 000 + 200 000 = 4 200 000 so'm. Ikkinchi variantda 4 000 000·1,05 = 4 200 000 so'm, chunki 4 000 000 ning 5% i aynan 200 000 so'mga teng. Demak ikkinchi oyda maoshlar bir xil bo'ladi; farq keyingi oylarda paydo bo'ladi. Javob: maoshlar teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-taklifni-taqqoslash",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#adb66883"
+    },
+    {
+      "q": "Ikki ish o'rni taklif qilindi. Birinchisida yillik maosh 24 mln so'm bo'lib, har yili 3 mln so'mga oshadi. Ikkinchisida yillik maosh ham 24 mln so'm, lekin u har yili 10% ga oshadi. Uchinchi yilda qaysi taklif bo'yicha qancha ko'p maosh olinadi?",
+      "v": [
+        "Ikkinchisida 0,96 mln so'mga ko'p",
+        "Maoshlar teng bo'ladi",
+        "Birinchisida 0,96 mln so'mga ko'p",
+        "Birinchisida 1,2 mln so'mga ko'p"
+      ],
+      "t": 2,
+      "izoh": "Birinchi taklifda uchinchi yil maoshi 24 + 2·3 = 30 mln so'm. Ikkinchisida 24·1,1² = 24·1,21 = 29,04 mln so'm. Farq 30 − 29,04 = 0,96 mln so'm va u birinchi taklif foydasiga. Oddiy foiz bilan hisoblansa 24·1,2 = 28,8 chiqib, farq 1,2 mln bo'lib ko'rinadi — bu xato. Javob: birinchisida 0,96 mln so'mga ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-taklifni-taqqoslash",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#0cbce010"
+    },
+    {
+      "q": "Bir ish uchun ikki to'lov sxemasi taklif qilindi. Birinchi sxemada har kuni 100 000 so'mdan to'lanadi. Ikkinchi sxemada birinchi kuni 1 000 so'm to'lanadi va har keyingi kuni to'lov 2 baravar oshadi. Nechanchi kuni ikkinchi sxema bo'yicha jami to'lov birinchisidan oshib ketadi?",
+      "v": [
+        "10-kuni",
+        "9-kuni",
+        "11-kuni",
+        "8-kuni"
+      ],
+      "t": 0,
+      "izoh": "Birinchi sxemada n kunda 100 000n so'm to'lanadi. Ikkinchisida jami to'lov 1 000·(2ⁿ − 1) so'm. To'qqizinchi kuni 900 000 va 511 000 so'm — birinchi sxema oldinda. O'ninchi kuni 1 000 000 va 1 023 000 so'm bo'lib, ikkinchi sxema birinchi marta oshib ketadi. Javob: 10-kuni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-taklifni-taqqoslash",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#e9f016b9"
+    },
+    {
+      "q": "Ikki brigada bir xil — 1 300 m² maydonni bo'yaydi. Birinchi brigada har kuni 130 m² dan bo'yaydi. Ikkinchi brigada birinchi kuni 40 m² bo'yadi va har kuni bo'yaydigan maydonini 10 m² ga oshirib boradi. Ikkinchi brigada ishni birinchisidan necha kun kech tugatadi?",
+      "v": [
+        "2 kun",
+        "3 kun",
+        "10 kun",
+        "13 kun"
+      ],
+      "t": 1,
+      "izoh": "Birinchi brigada 1 300 : 130 = 10 kunda tugatadi. Ikkinchisi uchun Sₙ = n/2·(80 + (n − 1)·10) = 5n² + 35n va tenglama 5n² + 35n = 1 300 dan n² + 7n − 260 = 0 chiqadi. D = 49 + 1 040 = 1 089, √1 089 = 33, demak n = (−7 + 33)/2 = 13 kun. Farq 13 − 10 = 3 kun. 13 kun — ikkinchi brigada muddatini javob deb olish xatosi. Javob: 3 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-taklifni-taqqoslash",
+      "id": "matematika_prog_m08-progressiyalarga-doir-amaliy-masalalar#64a495b9"
+    }
+  ]
+}

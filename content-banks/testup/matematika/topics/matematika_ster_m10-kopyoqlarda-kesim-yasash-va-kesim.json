@@ -1,0 +1,1609 @@
+{
+  "nom": "Ko'pyoqlarda kesim yasash va kesim yuzi",
+  "bolim": "Stereometriya",
+  "blok": "ster",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Duradgor Anvar qirrasi 6 sm bo'lgan yog'och kubni AA₁C₁C diagonal tekisligi bo'ylab arraladi. Hosil bo'lgan kesim yuzi qancha?",
+      "v": [
+        "36√2 sm²",
+        "36 sm²",
+        "72 sm²",
+        "18√2 sm²"
+      ],
+      "t": 0,
+      "izoh": "Diagonal kesim AA₁C₁C — to'g'ri to'rtburchak. Uning bir tomoni kub qirrasi 6 sm, ikkinchisi asos diagonali AC = 6√2 sm. Demak S = 6 · 6√2 = 36√2 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,237 55,114.5 245,63 245,185.5' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-diagonal-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#92090f16"
+    },
+    {
+      "q": "Muzeydagi shisha kub eksponatning AA₁C₁C diagonal kesimi yuzi 36√2 sm² ga teng bo'lsa, uning qirrasi necha santimetr?",
+      "v": [
+        "12 sm",
+        "6 sm",
+        "36 sm",
+        "6√2 sm"
+      ],
+      "t": 1,
+      "izoh": "Diagonal kesim yuzi S = a · a√2 = a²√2 formulasi bilan topiladi. Shartga ko'ra a²√2 = 36√2, bundan a² = 36 va a = 6 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,237 55,114.5 245,63 245,185.5' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3Ea%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzi 36√2 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-diagonal-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#a673b359"
+    },
+    {
+      "q": "Akvarium tubi 8 dm va 6 dm o'lchamli to'g'ri to'rtburchak, balandligi 5 dm. Uni tub diagonali bo'ylab tik shisha to'siq ikkiga ajratadi. To'siq yuzi qancha?",
+      "v": [
+        "30 dm²",
+        "24 dm²",
+        "50 dm²",
+        "40 dm²"
+      ],
+      "t": 2,
+      "izoh": "Avval tub diagonalini topamiz: d = √(8² + 6²) = √100 = 10 dm. To'siq — tik turgan to'g'ri to'rtburchak: eni 10 dm, bo'yi 5 dm. Demak S = 10 · 5 = 50 dm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='213.2' x2='110.5' y2='170.8' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='110.5' y1='170.8' x2='245' y2='170.8' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='110.5' y1='170.8' x2='110.5' y2='86.8' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='213.2' x2='189.5' y2='213.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='189.5' y1='213.2' x2='245' y2='170.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='213.2' x2='55' y2='129.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='189.5' y1='213.2' x2='189.5' y2='129.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='170.8' x2='245' y2='86.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='129.2' x2='189.5' y2='129.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='189.5' y1='129.2' x2='245' y2='86.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='86.8' x2='110.5' y2='86.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='110.5' y1='86.8' x2='55' y2='129.2' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,213.2 55,129.2 245,86.8 245,170.8' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='42.5' y='225.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='197.5' y='229.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='259.7' y='178.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='97.2' y='181.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='40.3' y='129.9' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='202.8' y='126.2' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='257.5' y='82.5' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='102.5' y='78.1' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3Ctext x='117' y='229.1' font-size='13' fill='%23334155' text-anchor='end'%3E8 dm%3C/text%3E%3Ctext x='228.3' y='202.9' font-size='13' fill='%23334155' text-anchor='start'%3E6 dm%3C/text%3E%3Ctext x='201' y='181.3' font-size='13' fill='%23334155' text-anchor='start'%3E5 dm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-diagonal-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#f6a9d762"
+    },
+    {
+      "q": "Qirrasi 5 sm bo'lgan kubning diagonal kesimi yuzi bilan bitta yon yog'i yuzasining nisbati qanday bo'ladi?",
+      "v": [
+        "2 : 1",
+        "1 : √2",
+        "√2 : 4",
+        "√2 : 1"
+      ],
+      "t": 3,
+      "izoh": "Yon yoq — tomoni 5 sm kvadrat, yuzi 25 sm². Diagonal kesim to'g'ri to'rtburchak: 5 · 5√2 = 25√2 sm². Nisbat 25√2 : 25 = √2 : 1.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,237 55,114.5 245,63 245,185.5' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Cpolygon points='55,237 177.6,237 177.6,114.5 55,114.5' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-diagonal-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#5d74eada"
+    },
+    {
+      "q": "Ustaxonadagi karton quti asosi 12 sm va 9 sm, balandligi 20 sm. Qutini asos diagonali bo'ylab tik kesib o'tuvchi ajratgich yuzi qancha?",
+      "v": [
+        "180 sm²",
+        "150 sm²",
+        "300 sm²",
+        "240 sm²"
+      ],
+      "t": 2,
+      "izoh": "Asos diagonali √(12² + 9²) = √225 = 15 sm ga teng. Ajratgich — tomonlari 15 sm va 20 sm bo'lgan to'g'ri to'rtburchak, shuning uchun S = 15 · 20 = 300 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='86.6' y1='239' x2='123.6' y2='210.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='123.6' y1='210.7' x2='213.4' y2='210.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='123.6' y1='210.7' x2='123.6' y2='61' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='86.6' y1='239' x2='176.4' y2='239' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='176.4' y1='239' x2='213.4' y2='210.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='86.6' y1='239' x2='86.6' y2='89.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='176.4' y1='239' x2='176.4' y2='89.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='213.4' y1='210.7' x2='213.4' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='86.6' y1='89.3' x2='176.4' y2='89.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='176.4' y1='89.3' x2='213.4' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='213.4' y1='61' x2='123.6' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='123.6' y1='61' x2='86.6' y2='89.3' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='86.6,239 86.6,89.3 213.4,61 213.4,210.7' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='77.9' y='255.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='180.6' y='257.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='224.3' y='225.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='117.6' y='228.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='75.7' y='82.9' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='182.4' y='79.5' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='222.1' y='52.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='119.4' y='50.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='128.8' y='255.7' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='201.6' y='240' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3Ctext x='187.8' y='174.3' font-size='13' fill='%23334155' text-anchor='start'%3E20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-diagonal-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#4aa95202"
+    },
+    {
+      "q": "Qirrasi 4 sm bo'lgan kubda A, C va B₁ uchlaridan tekislik o'tkazildi. Hosil bo'lgan kesim qanday shakl bo'ladi?",
+      "v": [
+        "to'g'ri burchakli uchburchak",
+        "faqat teng yonli uchburchak",
+        "kvadrat",
+        "teng tomonli uchburchak"
+      ],
+      "t": 3,
+      "izoh": "AC, AB₁ va CB₁ kesmalarning har biri kub yog'ining diagonali, ya'ni 4√2 sm. Uchala tomon teng bo'lgani uchun kesim teng tomonli uchburchak bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='55' cy='237' r='3.2' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='245' cy='185.5' r='3.2' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='177.6' cy='114.5' r='3.2' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-uchburchakli-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#0acfe6de"
+    },
+    {
+      "q": "Qirrasi 6 sm bo'lgan kubning A, C va B₁ uchlaridan o'tuvchi tekislik bilan hosil qilingan kesimining yuzini hisoblang.",
+      "v": [
+        "18√3 sm²",
+        "36√3 sm²",
+        "9√3 sm²",
+        "18√2 sm²"
+      ],
+      "t": 0,
+      "izoh": "Kesim — tomoni 6√2 sm bo'lgan teng tomonli uchburchak. Teng tomonli uchburchak yuzi S = (√3/4) · (6√2)² = (√3/4) · 72 = 18√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,237 245,185.5 177.6,114.5' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-uchburchakli-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#ac208443"
+    },
+    {
+      "q": "Kubning uchta uchidan o'tkazilgan teng tomonli uchburchak shaklidagi kesimning yuzi 8√3 sm² ga teng. Kub qirrasini toping.",
+      "v": [
+        "16 sm",
+        "4 sm",
+        "8 sm",
+        "2√2 sm"
+      ],
+      "t": 1,
+      "izoh": "Bunday kesim tomoni a√2 bo'lgan teng tomonli uchburchak, uning yuzi S = (√3/4) · 2a² = a²√3/2. a²√3/2 = 8√3 tenglamadan a² = 16, demak a = 4 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,237 245,185.5 177.6,114.5' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3Ea%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzi 8√3 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-uchburchakli-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#ffebdbcf"
+    },
+    {
+      "q": "Muzqaymoq zavodida qirrasi 10 sm bo'lgan muzlatilgan kubning bir burchagi uchta qo'shni uchdan o'tuvchi tekislik bilan kesib olindi. Kesim yuzi qancha?",
+      "v": [
+        "100√3 sm²",
+        "25√3 sm²",
+        "50√2 sm²",
+        "50√3 sm²"
+      ],
+      "t": 3,
+      "izoh": "Kesib olingan burchakning kesimi tomoni 10√2 sm bo'lgan teng tomonli uchburchakdir. S = (√3/4) · (10√2)² = (√3/4) · 200 = 50√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='177.6,237 55,114.5 245,63' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-uchburchakli-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#c970ea07"
+    },
+    {
+      "q": "Novvoy Zulfiya qirrasi 8 sm bo'lgan pishloq kubining burchagini qo'shni uchta uch orqali kesib tashladi. Yangi paydo bo'lgan yuza qancha?",
+      "v": [
+        "32√3 sm²",
+        "16√3 sm²",
+        "64√3 sm²",
+        "32√2 sm²"
+      ],
+      "t": 0,
+      "izoh": "Yangi yuza — tomoni 8√2 sm bo'lgan teng tomonli uchburchak. Uning yuzi S = (√3/4) · (8√2)² = (√3/4) · 128 = 32√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='177.6,237 55,114.5 245,63' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-uchburchakli-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#260f74f1"
+    },
+    {
+      "q": "Qirrasi 6 sm bo'lgan kubning oltita qirrasi o'rtalaridan o'tuvchi tekislik muntazam olti burchak hosil qildi. Uning tomoni qancha?",
+      "v": [
+        "2√3 sm",
+        "3√2 sm",
+        "6√2 sm",
+        "3 sm"
+      ],
+      "t": 1,
+      "izoh": "Olti burchakning har bir tomoni kub yog'idagi ikki qirra o'rtasini tutashtiruvchi o'rta chiziq, ya'ni yoq diagonalining yarmi: 6√2 : 2 = 3√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='116.3,237 211.3,211.3 245,124.3 183.7,63 88.7,88.7 55,175.7' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ccircle cx='116.3' cy='237' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='211.3' cy='211.3' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='245' cy='124.3' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='183.7' cy='63' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='88.7' cy='88.7' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='55' cy='175.7' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-oltiburchakli-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#f3675359"
+    },
+    {
+      "q": "Qirrasi 4 sm bo'lgan kub markazidan o'tib, uning fazoviy diagonaliga perpendikulyar qilingan tekislik kesimining yuzi qancha?",
+      "v": [
+        "6√3 sm²",
+        "12√2 sm²",
+        "12√3 sm²",
+        "24√3 sm²"
+      ],
+      "t": 2,
+      "izoh": "Bunday tekislik oltita qirrani o'rtalarida kesadi va tomoni 4√2 : 2 = 2√2 sm bo'lgan muntazam olti burchak beradi. S = (3√3/2) · (2√2)² = (3√3/2) · 8 = 12√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='245' y2='63' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='157' y='146' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-oltiburchakli-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#df64f09b"
+    },
+    {
+      "q": "Kub markazidan o'tib, uning fazoviy diagonaliga perpendikulyar qilib o'tkazilgan tekislik qanday ko'pburchak shaklidagi kesim beradi?",
+      "v": [
+        "to'g'ri to'rtburchak",
+        "muntazam olti burchak",
+        "kvadrat",
+        "muntazam uch burchak"
+      ],
+      "t": 1,
+      "izoh": "Bu tekislik kubning oltita qirrasini aynan o'rtalarida kesadi. Hosil bo'lgan oltita tomon o'zaro teng va burchaklari ham teng, ya'ni muntazam olti burchak chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='245' y2='63' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ccircle cx='150' cy='150' r='3.2' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='157' y='146' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3EAC₁ — fazoviy diagonal, O — kub markazi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-oltiburchakli-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#194b7e74"
+    },
+    {
+      "q": "Sovun sexida qirrasi 10 sm bo'lgan sovun kubi oltita qirrasining o'rtalari orqali tortilgan sim bilan ikkiga bo'lindi. Kesim yuzi qancha?",
+      "v": [
+        "50√3 sm²",
+        "75√2 sm²",
+        "75√3 sm²",
+        "150√3 sm²"
+      ],
+      "t": 2,
+      "izoh": "Kesim — tomoni 10√2 : 2 = 5√2 sm bo'lgan muntazam olti burchak. Uning yuzi S = (3√3/2) · (5√2)² = (3√3/2) · 50 = 75√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='116.3,237 211.3,211.3 245,124.3 183.7,63 88.7,88.7 55,175.7' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ccircle cx='116.3' cy='237' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='211.3' cy='211.3' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='245' cy='124.3' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='183.7' cy='63' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='88.7' cy='88.7' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='55' cy='175.7' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-oltiburchakli-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#bfb29cc9"
+    },
+    {
+      "q": "Qirrasi 7 sm bo'lgan kub asosiga parallel tekislik bilan kesildi. Kesim qanday shakl va uning yuzi qancha bo'ladi?",
+      "v": [
+        "kvadrat, 24,5 sm²",
+        "to'g'ri to'rtburchak, 98 sm²",
+        "romb, 49√2 sm²",
+        "kvadrat, 49 sm²"
+      ],
+      "t": 3,
+      "izoh": "Asosga parallel tekislik prizmani asos bilan tengdosh shakl bo'ylab kesadi. Kub uchun bu tomoni 7 sm kvadrat, yuzi 7 · 7 = 49 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,167 177.6,167 245,115.5 122.4,115.5' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-parallel-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#79cbd69d"
+    },
+    {
+      "q": "Yotoqxonadagi 15 sm, 10 sm va 8 sm o'lchamli quti tagiga parallel qilib kesilsa, kesim yuzasi qanday bo'ladi?",
+      "v": [
+        "150 sm²",
+        "120 sm²",
+        "80 sm²",
+        "1200 sm²"
+      ],
+      "t": 0,
+      "izoh": "Asosga parallel kesim asos bilan tengdosh to'g'ri to'rtburchak beradi, tomonlari 15 sm va 10 sm. Demak S = 15 · 10 = 150 sm², balandlik bunda ishtirok etmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='206.5' x2='106' y2='167.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='106' y1='167.6' x2='245' y2='167.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='106' y1='167.6' x2='106' y2='93.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='206.5' x2='194' y2='206.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='194' y1='206.5' x2='245' y2='167.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='206.5' x2='55' y2='132.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='194' y1='206.5' x2='194' y2='132.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='167.6' x2='245' y2='93.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='132.4' x2='194' y2='132.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='194' y1='132.4' x2='245' y2='93.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='93.5' x2='106' y2='93.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='106' y1='93.5' x2='55' y2='132.4' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,164.8 194,164.8 245,125.9 106,125.9' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='42.1' y='218.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='203.2' y='222.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='259.7' y='174.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='92' y='177.2' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='40.3' y='133.7' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='208' y='130.8' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='257.9' y='89.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='96.8' y='85.6' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3Ctext x='119.2' y='222.4' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3Ctext x='231' y='197.2' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3Ctext x='205.9' y='178.7' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-parallel-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#be84a3fd"
+    },
+    {
+      "q": "O'lchamlari 6 sm, 8 sm va 10 sm bo'lgan parallelepipedni yoqlaridan biriga parallel qilib kesamiz. Eng katta kesim yuzi qancha?",
+      "v": [
+        "80 sm²",
+        "60 sm²",
+        "48 sm²",
+        "480 sm²"
+      ],
+      "t": 0,
+      "izoh": "Yoqqa parallel kesim o'sha yoq bilan tengdosh bo'ladi. Yoq yuzalari: 6 · 8 = 48, 6 · 10 = 60 va 8 · 10 = 80 sm². Eng kattasi 80 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='80.7' y1='239' x2='139.3' y2='194.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='139.3' y1='194.2' x2='219.3' y2='194.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='139.3' y1='194.2' x2='139.3' y2='61' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='80.7' y1='239' x2='160.7' y2='239' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='160.7' y1='239' x2='219.3' y2='194.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='80.7' y1='239' x2='80.7' y2='105.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='160.7' y1='239' x2='160.7' y2='105.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='219.3' y1='194.2' x2='219.3' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='80.7' y1='105.8' x2='160.7' y2='105.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='160.7' y1='105.8' x2='219.3' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='219.3' y1='61' x2='139.3' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='139.3' y1='61' x2='80.7' y2='105.8' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='71.5' y='254.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='162.4' y='257.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='231.9' y='206.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='135.8' y='212.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='68.1' y='101.7' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='164.2' y='95.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB₁%3C/text%3E%3Ctext x='228.5' y='53.2' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='137.6' y='50.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='116.6' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='196.7' y='231.8' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3Ctext x='166.2' y='188.1' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-parallel-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#f90e9f73"
+    },
+    {
+      "q": "To'g'ri prizmada asosga parallel qilib bir nechta kesim o'tkazildi. Bu kesimlarning yuzalari haqida nima deyish mumkin?",
+      "v": [
+        "asos yuzasidan ikki marta kichik",
+        "hammasi o'zaro teng",
+        "balandlik ortgani sari kamayadi",
+        "balandlik ortgani sari ortadi"
+      ],
+      "t": 1,
+      "izoh": "Prizmaning yon qirralari parallel, shuning uchun asosga parallel har qanday kesim asos bilan tengdosh ko'pburchak beradi. Tengdosh shakllarning yuzalari esa bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-parallel-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#f51f824b"
+    },
+    {
+      "q": "Quyidagi shakllardan qaysi biri kubning tekis kesimi sifatida hech qachon hosil bo'la olmaydi?",
+      "v": [
+        "trapetsiya",
+        "muntazam olti burchak",
+        "to'g'ri burchakli uchburchak",
+        "teng tomonli uchburchak"
+      ],
+      "t": 2,
+      "izoh": "Uchburchakli kesim uchlari bitta uchdan chiquvchi qirralarda yotadi, tomonlari √(p² + q²), √(q² + r²), √(p² + r²) bo'ladi. Eng katta tomonga qarshi burchak uchun a² + b² − c² = 2r² > 0, ya'ni burchak doim o'tkir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-kesim-shakli-tahlil",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#461efcc0"
+    },
+    {
+      "q": "Kubni bitta tekislik bilan kesganda hosil bo'ladigan ko'pburchakning tomonlari soni ko'pi bilan nechta bo'lishi mumkin?",
+      "v": [
+        "4",
+        "8",
+        "12",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Kesim ko'pburchagining har bir tomoni kubning bitta yog'ida yotadi, kubda esa yoqlar 6 ta. Demak tomonlar soni 6 dan oshmaydi, muntazam olti burchakli kesim shu chegaraga erishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-kesim-shakli-tahlil",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#d13ae393"
+    },
+    {
+      "q": "Kubning kesimi beshburchak bo'la oladimi va u muntazam beshburchakka aylanishi mumkinmi?",
+      "v": [
+        "har doim muntazam beshburchak bo'ladi",
+        "faqat qirra o'rtalaridan o'tsa muntazam bo'ladi",
+        "beshburchak bo'ladi, lekin muntazam bo'lmaydi",
+        "beshburchak umuman hosil bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Beshta yoqni kesib o'tgan tekislik beshburchak beradi. Ammo kubning yoqlari juft-juft parallel, shu sababli beshburchakning kamida ikki tomoni parallel chiqadi; muntazam beshburchakda esa parallel tomon yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-kesim-shakli-tahlil",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#155b2d4e"
+    },
+    {
+      "q": "Kubning uchta yog'ini kesib o'tgan tekislik hosil qilgan kesim haqida qaysi tasdiq to'g'ri?",
+      "v": [
+        "kesim har doim teng tomonli uchburchak bo'ladi",
+        "kesim to'g'ri burchakli uchburchak bo'ladi",
+        "bunday tekislik kesim hosil qilmaydi",
+        "kesim uchburchak bo'ladi va uning barcha burchaklari o'tkir"
+      ],
+      "t": 3,
+      "izoh": "Uchta yoqni kesgan tekislik uchta kesishish chizig'i beradi, demak kesim uchburchak. Bunday uchburchakning tomonlari kvadrat ildizlar orqali ifodalanadi va hisob har qanday burchak o'tkir ekanini ko'rsatadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='95.9,237 177.6,196.2 222.5,202.7' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-kesim-shakli-tahlil",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#7fabb3c3"
+    },
+    {
+      "q": "Qirrasi 8 sm bo'lgan yog'och kubning oltita qirrasi o'rtalari orqali sim tortildi. Sim hosil qilgan olti burchak perimetri qancha?",
+      "v": [
+        "24√2 sm",
+        "48√2 sm",
+        "24 sm",
+        "12√2 sm"
+      ],
+      "t": 0,
+      "izoh": "Olti burchak tomoni yoq diagonalining yarmiga teng: 8√2 : 2 = 4√2 sm. Muntazam olti burchak perimetri P = 6 · 4√2 = 24√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='116.3,237 211.3,211.3 245,124.3 183.7,63 88.7,88.7 55,175.7' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ccircle cx='116.3' cy='237' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='211.3' cy='211.3' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='245' cy='124.3' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='183.7' cy='63' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='88.7' cy='88.7' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='55' cy='175.7' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-kesim-perimetri",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#0ec23c8a"
+    },
+    {
+      "q": "Qirrasi 5 sm bo'lgan kubda A, C va B₁ uchlari orqali o'tgan kesim ko'pburchagining perimetrini toping.",
+      "v": [
+        "5√3 sm",
+        "15√2 sm",
+        "15 sm",
+        "10√2 sm"
+      ],
+      "t": 1,
+      "izoh": "Kesim uchburchakning har bir tomoni yoq diagonali bo'lib, 5√2 sm ga teng. Uchala tomon teng, demak P = 3 · 5√2 = 15√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,237 245,185.5 177.6,114.5' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-kesim-perimetri",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#8297f584"
+    },
+    {
+      "q": "Asosi 3 sm va 4 sm, balandligi 12 sm bo'lgan to'g'ri parallelepipedning diagonal kesimi perimetri necha santimetr?",
+      "v": [
+        "24 sm",
+        "30 sm",
+        "17 sm",
+        "34 sm"
+      ],
+      "t": 3,
+      "izoh": "Asos diagonali √(3² + 4²) = √25 = 5 sm. Diagonal kesim tomonlari 5 sm va 12 sm bo'lgan to'g'ri to'rtburchak, shuning uchun P = 2 · (5 + 12) = 34 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='116.2' y1='239' x2='144.8' y2='217.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='144.8' y1='217.1' x2='183.8' y2='217.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='144.8' y1='217.1' x2='144.8' y2='61' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='116.2' y1='239' x2='155.2' y2='239' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='155.2' y1='239' x2='183.8' y2='217.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='116.2' y1='239' x2='116.2' y2='82.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='155.2' y1='239' x2='155.2' y2='82.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='183.8' y1='217.1' x2='183.8' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='116.2' y1='82.9' x2='155.2' y2='82.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='155.2' y1='82.9' x2='183.8' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='183.8' y1='61' x2='144.8' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='144.8' y1='61' x2='116.2' y2='82.9' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='116.2,239 116.2,82.9 183.8,61 183.8,217.1' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='110.8' y='257' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='156.1' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='190.6' y='234.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='143.6' y='236.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='109.4' y='73.5' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='156.4' y='71.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB₁%3C/text%3E%3Ctext x='189.2' y='51' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='143.9' y='50' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='133.6' y='255.8' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3Ctext x='172.7' y='244.7' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='160.8' y='176.7' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-kesim-perimetri",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#96405b9b"
+    },
+    {
+      "q": "Qirrasi 6 sm bo'lgan kubning AA₁C₁C diagonal kesimi perimetri qaysi ifoda bilan to'g'ri beriladi?",
+      "v": [
+        "12 + 12√2 sm",
+        "24√2 sm",
+        "12√2 sm",
+        "24 + 12√2 sm"
+      ],
+      "t": 0,
+      "izoh": "Kesim to'g'ri to'rtburchak bo'lib, tomonlari 6 sm va 6√2 sm. Perimetr P = 2 · (6 + 6√2) = 12 + 12√2 sm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,237 55,114.5 245,63 245,185.5' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-kesim-perimetri",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#bb498b5a"
+    },
+    {
+      "q": "To'g'ri parallelepiped asosining tomonlari 9 sm va 12 sm, balandligi esa 10 sm. Uning diagonal kesimi yuzini toping.",
+      "v": [
+        "54 sm²",
+        "150 sm²",
+        "120 sm²",
+        "90 sm²"
+      ],
+      "t": 1,
+      "izoh": "Avval asos diagonalini topamiz: d = √(9² + 12²) = √225 = 15 sm. Diagonal kesim tomonlari 15 sm va 10 sm bo'lgan to'g'ri to'rtburchak, demak S = 15 · 10 = 150 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='57.7' y1='239' x2='135.8' y2='179.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='135.8' y1='179.4' x2='242.3' y2='179.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='135.8' y1='179.4' x2='135.8' y2='61' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='57.7' y1='239' x2='164.2' y2='239' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='164.2' y1='239' x2='242.3' y2='179.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='57.7' y1='239' x2='57.7' y2='120.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='164.2' y1='239' x2='164.2' y2='120.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='242.3' y1='179.4' x2='242.3' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='57.7' y1='120.6' x2='164.2' y2='120.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='164.2' y1='120.6' x2='242.3' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='242.3' y1='61' x2='135.8' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='135.8' y1='61' x2='57.7' y2='120.6' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='57.7,239 57.7,120.6 242.3,61 242.3,179.4' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='46.9' y='253.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='166.6' y='257.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='256.6' y='187.9' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='129.3' y='196.9' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='43.4' y='120.1' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='170.7' y='111.1' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='253.1' y='54.6' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='133.4' y='50.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='105.7' y='254.9' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='212' y='222.8' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='169.8' y='195.6' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "prizma-diagonal-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#b2e2afa3"
+    },
+    {
+      "q": "To'g'ri prizmaning diagonal kesimi yuzi 130 sm², asosining diagonali esa 13 sm ga teng. Prizma balandligi qancha?",
+      "v": [
+        "5 sm",
+        "20 sm",
+        "10 sm",
+        "13 sm"
+      ],
+      "t": 2,
+      "izoh": "Diagonal kesim to'g'ri to'rtburchak bo'lib, uning tomonlari asos diagonali va balandlikdir. S = d · h dan h = 130 : 13 = 10 sm kelib chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='215.1' x2='90.4' y2='188' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='90.4' y1='188' x2='245' y2='188' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='90.4' y1='188' x2='90.4' y2='84.9' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='215.1' x2='209.6' y2='215.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='209.6' y1='215.1' x2='245' y2='188' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='215.1' x2='55' y2='112' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='209.6' y1='215.1' x2='209.6' y2='112' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='188' x2='245' y2='84.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='112' x2='209.6' y2='112' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='209.6' y1='112' x2='245' y2='84.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='84.9' x2='90.4' y2='84.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='90.4' y1='84.9' x2='55' y2='112' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,215.1 55,112 245,84.9 245,188' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='42.6' y='227.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='219.7' y='230.1' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='258.9' y='197.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='77.8' y='200.1' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41.1' y='110.4' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='222.2' y='107.9' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='257.4' y='80.5' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='80.3' y='77.9' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3Ctext x='150' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 13 sm%3C/text%3E%3Ctext x='222.3' y='170.4' font-size='13' fill='%23334155' text-anchor='start'%3Eh%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzi 130 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "prizma-diagonal-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#09e36d8a"
+    },
+    {
+      "q": "Asosi tomoni 4 sm bo'lgan kvadrat, balandligi 6 sm bo'lgan to'g'ri prizmaning diagonal kesimi yuzasi qancha?",
+      "v": [
+        "12√2 sm²",
+        "24√2 sm²",
+        "24 sm²",
+        "48 sm²"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat asosning diagonali 4√2 sm. Diagonal kesim to'g'ri to'rtburchak: tomonlari 4√2 sm va 6 sm, demak S = 4√2 · 6 = 24√2 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='78.2' y1='239' x2='129.1' y2='200.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='129.1' y1='200.1' x2='221.8' y2='200.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='129.1' y1='200.1' x2='129.1' y2='61' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='78.2' y1='239' x2='170.9' y2='239' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='170.9' y1='239' x2='221.8' y2='200.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='78.2' y1='239' x2='78.2' y2='99.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='170.9' y1='239' x2='170.9' y2='99.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='221.8' y1='200.1' x2='221.8' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='78.2' y1='99.9' x2='170.9' y2='99.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='170.9' y1='99.9' x2='221.8' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='221.8' y1='61' x2='129.1' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='129.1' y1='61' x2='78.2' y2='99.9' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='78.2,239 78.2,99.9 221.8,61 221.8,200.1' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='68.7' y='254.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='174.3' y='257.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='234.2' y='212.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='123.4' y='217.9' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='65.8' y='95.4' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='176.6' y='90.1' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='231.3' y='53.3' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='125.7' y='50.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='120.9' y='255.5' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='180.4' y='182.3' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "prizma-diagonal-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#ae8106d7"
+    },
+    {
+      "q": "Yuk konteyneri tagi 6 m va 8 m o'lchamli, balandligi 3 m. Uning ichiga tag diagonali bo'ylab metall to'siq o'rnatildi. To'siq yuzi qancha?",
+      "v": [
+        "18 m²",
+        "48 m²",
+        "30 m²",
+        "24 m²"
+      ],
+      "t": 2,
+      "izoh": "Tag diagonali √(6² + 8²) = √100 = 10 m. To'siq — balandligi 3 m, eni 10 m bo'lgan tik to'g'ri to'rtburchak, shuning uchun S = 10 · 3 = 30 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='208.1' x2='135.4' y2='146.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='135.4' y1='146.7' x2='245' y2='146.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='135.4' y1='146.7' x2='135.4' y2='91.9' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='208.1' x2='164.6' y2='208.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='164.6' y1='208.1' x2='245' y2='146.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='208.1' x2='55' y2='153.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='164.6' y1='208.1' x2='164.6' y2='153.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='146.7' x2='245' y2='91.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='153.3' x2='164.6' y2='153.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='164.6' y1='153.3' x2='245' y2='91.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='91.9' x2='135.4' y2='91.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='135.4' y1='91.9' x2='55' y2='153.3' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,208.1 55,153.3 245,91.9 245,146.7' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='42.2' y='219.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='168.3' y='226.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260' y='150.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='120.8' y='147.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='40' y='157.8' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='179.2' y='160.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='257.8' y='88.1' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='131.7' y='81.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='102.4' y='222.8' font-size='13' fill='%23334155' text-anchor='end'%3E6 m%3C/text%3E%3Ctext x='216.4' y='187.2' font-size='13' fill='%23334155' text-anchor='start'%3E8 m%3C/text%3E%3Ctext x='170.2' y='196.4' font-size='13' fill='%23334155' text-anchor='start'%3E3 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "prizma-diagonal-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#8d805fe1"
+    },
+    {
+      "q": "Asos tomonlari 5 sm va 12 sm bo'lgan to'g'ri parallelepipedning diagonal kesimi yuzi 91 sm² ga teng. Uning balandligini toping.",
+      "v": [
+        "13 sm",
+        "91 sm",
+        "6 sm",
+        "7 sm"
+      ],
+      "t": 3,
+      "izoh": "Asos diagonali √(5² + 12²) = √169 = 13 sm. Diagonal kesim yuzi S = d · h bo'lgani uchun h = 91 : 13 = 7 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='208.6' x2='90.4' y2='181.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='90.4' y1='181.6' x2='245' y2='181.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='90.4' y1='181.6' x2='90.4' y2='91.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='208.6' x2='209.6' y2='208.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='209.6' y1='208.6' x2='245' y2='181.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='208.6' x2='55' y2='118.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='209.6' y1='208.6' x2='209.6' y2='118.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='181.6' x2='245' y2='91.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='118.4' x2='209.6' y2='118.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='209.6' y1='118.4' x2='245' y2='91.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='91.4' x2='90.4' y2='91.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='90.4' y1='91.4' x2='55' y2='118.4' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,208.6 55,118.4 245,91.4 245,181.6' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='42.2' y='220.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='220.3' y='223.1' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='259.2' y='190.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='77.2' y='192.6' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='40.8' y='117.7' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='222.8' y='115.4' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='257.8' y='87.5' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='79.7' y='84.9' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3Ctext x='128.5' y='225.1' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='238.5' y='205.6' font-size='13' fill='%23334155' text-anchor='start'%3E5 sm%3C/text%3E%3Ctext x='222.3' y='170.4' font-size='13' fill='%23334155' text-anchor='start'%3Eh%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzi 91 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "prizma-diagonal-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#b82278bf"
+    },
+    {
+      "q": "Og'ma prizmaning yon qirrasi 10 sm, unga perpendikulyar o'tkazilgan kesimning perimetri 12 sm. Prizma yon sirti yuzasi qancha?",
+      "v": [
+        "120 sm²",
+        "60 sm²",
+        "22 sm²",
+        "1200 sm²"
+      ],
+      "t": 0,
+      "izoh": "Og'ma prizmaning yon sirti perpendikulyar kesim perimetri bilan yon qirra uzunligining ko'paytmasiga teng. Demak S = 12 · 10 = 120 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "prizma-perpendikulyar-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#47ca3579"
+    },
+    {
+      "q": "Og'ma prizmaning yon qirrasi 8 sm, unga perpendikulyar kesimning yuzi 15 sm². Prizmaning hajmini hisoblang.",
+      "v": [
+        "120 sm³",
+        "60 sm³",
+        "23 sm³",
+        "240 sm³"
+      ],
+      "t": 0,
+      "izoh": "Og'ma prizma hajmi perpendikulyar kesim yuzi bilan yon qirra ko'paytmasiga teng: V = 15 · 8 = 120 sm³. Asos yuzi bu yerda kerak emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "prizma-perpendikulyar-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#540a525c"
+    },
+    {
+      "q": "Og'ma prizmaning yon sirti 96 sm², yon qirrasi esa 8 sm. Yon qirraga perpendikulyar kesimning perimetri qancha?",
+      "v": [
+        "6 sm",
+        "12 sm",
+        "88 sm",
+        "24 sm"
+      ],
+      "t": 1,
+      "izoh": "S = P · l formulasidan perimetrni ajratamiz: P = S : l = 96 : 8 = 12 sm. Bu yerda P — perpendikulyar kesim perimetri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "prizma-perpendikulyar-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#ecb06615"
+    },
+    {
+      "q": "Zavodda tayyorlangan og'ma beton ustunning qiya qirrasi 2,5 m, unga perpendikulyar kesim yuzi 0,4 m². Ustun hajmi necha kub metr?",
+      "v": [
+        "6,25 m³",
+        "2,9 m³",
+        "1 m³",
+        "0,16 m³"
+      ],
+      "t": 2,
+      "izoh": "Og'ma prizma hajmi V = S⊥ · l ko'rinishida hisoblanadi, bunda S⊥ — perpendikulyar kesim yuzi. Demak V = 0,4 · 2,5 = 1 m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "prizma-perpendikulyar-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#9712edfe"
+    },
+    {
+      "q": "Uchburchakli prizmani bitta tekislik bilan kesganda hosil bo'ladigan ko'pburchakning tomonlari soni ko'pi bilan nechta?",
+      "v": [
+        "3",
+        "4",
+        "6",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Uchburchakli prizmada jami beshta yoq bor: uchta yon yoq va ikkita asos. Kesimning har bir tomoni bitta yoqqa to'g'ri keladi, demak tomonlar soni beshtadan oshmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchakli-prizma-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#9c4d87b1"
+    },
+    {
+      "q": "Asosi tomoni 6 sm bo'lgan teng tomonli uchburchak, balandligi 8 sm bo'lgan to'g'ri prizmada AA₁ qirra va BC tomon o'rtasi orqali kesim o'tkazildi. Uning yuzi qancha?",
+      "v": [
+        "12√3 sm²",
+        "24 sm²",
+        "24√3 sm²",
+        "48√3 sm²"
+      ],
+      "t": 2,
+      "izoh": "Kesim to'g'ri to'rtburchak: bir tomoni prizma balandligi 8 sm, ikkinchisi asos medianasi 6√3 : 2 = 3√3 sm. Demak S = 3√3 · 8 = 24√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='202.4' y1='239' x2='200' y2='200.9' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='200' y1='200.9' x2='97.6' y2='239' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='200' y1='200.9' x2='200' y2='61' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='97.6' y1='239' x2='202.4' y2='239' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='97.6' y1='99.1' x2='202.4' y2='99.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='97.6' y1='239' x2='97.6' y2='99.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='202.4' y1='99.1' x2='200' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='202.4' y1='239' x2='202.4' y2='99.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='200' y1='61' x2='97.6' y2='99.1' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='97.6,239 97.6,99.1 201.2,80.1 201.2,219.9' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='87.9' y='254.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='208.4' y='256.8' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='208.9' y='216.9' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='86' y='93.6' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='210.4' y='90.4' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='204.9' y='50.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC₁%3C/text%3E%3Ctext x='147.4' y='255.7' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='84.8' y='175.4' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchakli-prizma-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#dd6948d2"
+    },
+    {
+      "q": "To'g'ri uchburchakli prizmada bitta yon qirra va unga qarama-qarshi asos tomonining o'rtasi orqali o'tgan kesim qanday shakl bo'ladi?",
+      "v": [
+        "teng yonli trapetsiya",
+        "to'g'ri to'rtburchak bo'lmagan parallelogramm",
+        "uchburchak",
+        "to'g'ri to'rtburchak"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri prizmada yon qirra asos tekisligiga perpendikulyar. Kesimning ikki tomoni yon qirraga parallel, qolgan ikkitasi asoslarda yotadi, burchaklari to'g'ri — demak to'g'ri to'rtburchak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='208.2' y1='239' x2='205.4' y2='196.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='205.4' y1='196.7' x2='91.8' y2='239' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='205.4' y1='196.7' x2='205.4' y2='61' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='91.8' y1='239' x2='208.2' y2='239' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='91.8' y1='103.3' x2='208.2' y2='103.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='91.8' y1='239' x2='91.8' y2='103.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='208.2' y1='103.3' x2='205.4' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='208.2' y1='239' x2='208.2' y2='103.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='205.4' y1='61' x2='91.8' y2='103.3' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='91.8,239 91.8,103.3 206.8,82.2 206.8,217.8' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='81.6' y='254' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='214.7' y='256.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='215.6' y='211.7' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='79.6' y='98.7' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='217.1' y='95.2' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='210.8' y='51' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchakli-prizma-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#2ef0758c"
+    },
+    {
+      "q": "Uy tomi uchburchakli prizma shaklida: asosi tomonlari 5 m, 5 m va 6 m bo'lgan teng yonli uchburchak, uzunligi 10 m. Tomni asos balandligi bo'ylab bo'lgan to'siq yuzi qancha?",
+      "v": [
+        "40 m²",
+        "60 m²",
+        "30 m²",
+        "50 m²"
+      ],
+      "t": 0,
+      "izoh": "Teng yonli uchburchakda asosga tushirilgan balandlik h = √(5² − 3²) = √16 = 4 m. To'siq to'g'ri to'rtburchak: 4 · 10 = 40 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='195.7' y1='239' x2='183.5' y2='213.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='183.5' y1='213.4' x2='104.3' y2='239' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='183.5' y1='213.4' x2='183.5' y2='61' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='104.3' y1='239' x2='195.7' y2='239' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='104.3' y1='86.6' x2='195.7' y2='86.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='104.3' y1='239' x2='104.3' y2='86.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='195.7' y1='86.6' x2='183.5' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='195.7' y1='239' x2='195.7' y2='86.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='183.5' y1='61' x2='104.3' y2='86.6' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='150,239 150,86.6 183.5,61 183.5,213.4' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='95.9' y='255.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='201.4' y='256.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='188.8' y='231.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='94.6' y='79.1' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='202.5' y='77.2' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='187' y='50.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC₁%3C/text%3E%3Ctext x='148.3' y='255.9' font-size='13' fill='%23334155' text-anchor='middle'%3E6 m%3C/text%3E%3Ctext x='194.4' y='242.3' font-size='13' fill='%23334155' text-anchor='start'%3E5 m%3C/text%3E%3Ctext x='91.4' y='168.7' font-size='13' fill='%23334155' text-anchor='end'%3E10 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchakli-prizma-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#dbe84852"
+    },
+    {
+      "q": "Muntazam olti burchakli prizmaning asos tomoni 4 sm, balandligi 7 sm. Katta diagonal orqali o'tgan kesimning yuzi qancha?",
+      "v": [
+        "112 sm²",
+        "56 sm²",
+        "28 sm²",
+        "28√3 sm²"
+      ],
+      "t": 1,
+      "izoh": "Muntazam olti burchakning katta diagonali 2a = 2 · 4 = 8 sm. Kesim to'g'ri to'rtburchak bo'lgani uchun S = 8 · 7 = 56 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='228.4' y1='195.7' x2='187.8' y2='181.3' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='187.8' y1='181.3' x2='109.4' y2='195.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='187.8' y1='181.3' x2='187.8' y2='61' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='190.6' y1='224.6' x2='228.4' y2='195.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='190.6' y1='104.3' x2='228.4' y2='75.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='190.6' y1='224.6' x2='190.6' y2='104.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='228.4' y1='75.4' x2='187.8' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='228.4' y1='195.7' x2='228.4' y2='75.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='187.8' y1='61' x2='109.4' y2='75.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='109.4' y1='195.7' x2='71.6' y2='224.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='109.4' y1='75.4' x2='71.6' y2='104.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='109.4' y1='195.7' x2='109.4' y2='75.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='71.6' y1='224.6' x2='112.2' y2='239' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='71.6' y1='104.3' x2='112.2' y2='118.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='71.6' y1='224.6' x2='71.6' y2='104.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='112.2' y1='239' x2='190.6' y2='224.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='112.2' y1='118.7' x2='190.6' y2='104.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='112.2' y1='239' x2='112.2' y2='118.7' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='190.6,224.6 190.6,104.3 109.4,75.4 109.4,195.7' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='197.8' y='241.7' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='241.4' y='207.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='199.4' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='99.4' y='210.9' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='200.6' y='97.1' font-size='13' fill='%23334155' text-anchor='start'%3EA₁%3C/text%3E%3Ctext x='102.2' y='66.3' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3Ctext x='218.7' y='223.4' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3Ctext x='202.9' y='172.8' font-size='13' fill='%23334155' text-anchor='start'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "olti-burchakli-prizma-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#29bc61f0"
+    },
+    {
+      "q": "Asos tomoni 4 sm, balandligi 7 sm bo'lgan muntazam olti burchakli prizmada kichik diagonal orqali kesim o'tkazildi. Uning yuzasi qancha?",
+      "v": [
+        "56 sm²",
+        "28 sm²",
+        "14√3 sm²",
+        "28√3 sm²"
+      ],
+      "t": 3,
+      "izoh": "Muntazam olti burchakning kichik diagonali a√3 = 4√3 sm ga teng. Kesim to'g'ri to'rtburchak, demak S = 4√3 · 7 = 28√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='228.4' y1='195.7' x2='187.8' y2='181.3' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='187.8' y1='181.3' x2='109.4' y2='195.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='187.8' y1='181.3' x2='187.8' y2='61' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='190.6' y1='224.6' x2='228.4' y2='195.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='190.6' y1='104.3' x2='228.4' y2='75.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='190.6' y1='224.6' x2='190.6' y2='104.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='228.4' y1='75.4' x2='187.8' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='228.4' y1='195.7' x2='228.4' y2='75.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='187.8' y1='61' x2='109.4' y2='75.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='109.4' y1='195.7' x2='71.6' y2='224.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='109.4' y1='75.4' x2='71.6' y2='104.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='109.4' y1='195.7' x2='109.4' y2='75.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='71.6' y1='224.6' x2='112.2' y2='239' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='71.6' y1='104.3' x2='112.2' y2='118.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='71.6' y1='224.6' x2='71.6' y2='104.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='112.2' y1='239' x2='190.6' y2='224.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='112.2' y1='118.7' x2='190.6' y2='104.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='112.2' y1='239' x2='112.2' y2='118.7' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='190.6,224.6 190.6,104.3 187.8,61 187.8,181.3' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='197.8' y='241.7' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='241.4' y='207.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='199.4' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='200.6' y='97.1' font-size='13' fill='%23334155' text-anchor='start'%3EA₁%3C/text%3E%3Ctext x='193.7' y='51.2' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='218.7' y='223.4' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3Ctext x='202.9' y='172.8' font-size='13' fill='%23334155' text-anchor='start'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "olti-burchakli-prizma-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#41fc9092"
+    },
+    {
+      "q": "Muntazam olti burchakli prizmada katta diagonal orqali va kichik diagonal orqali o'tgan kesimlar yuzalarining nisbatini toping.",
+      "v": [
+        "2 : √3",
+        "√3 : 2",
+        "2 : 1",
+        "4 : 3"
+      ],
+      "t": 0,
+      "izoh": "Katta diagonal 2a, kichik diagonal a√3, balandlik esa ikkala kesimda bir xil. Shuning uchun nisbat 2a · h : a√3 · h = 2 : √3 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "olti-burchakli-prizma-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#a8e4b0bb"
+    },
+    {
+      "q": "Olti qirrali yog'och qalamning ko'ndalang kesimi tomoni 3 mm bo'lgan muntazam olti burchak, uzunligi 175 mm. Qalam qarama-qarshi ikki qirra bo'ylab tilinsa, kesim yuzi qancha?",
+      "v": [
+        "1750 mm²",
+        "1050 mm²",
+        "525 mm²",
+        "525√3 mm²"
+      ],
+      "t": 1,
+      "izoh": "Qarama-qarshi qirralar orasidagi masofa — katta diagonal, u 2 · 3 = 6 mm. Kesim to'g'ri to'rtburchak: S = 6 · 175 = 1050 mm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "olti-burchakli-prizma-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#1d7a61d6"
+    },
+    {
+      "q": "Kesuvchi tekislik asos tekisligi bilan 60° burchak hosil qiladi, kesimning asosdagi proyeksiyasi yuzi esa 18 sm². Kesim yuzini toping.",
+      "v": [
+        "18√3 sm²",
+        "12√3 sm²",
+        "36 sm²",
+        "9 sm²"
+      ],
+      "t": 2,
+      "izoh": "Proyeksiya yuzi S_pr = S · cos φ munosabati bilan bog'langan. Bundan S = 18 : cos 60° = 18 : 0,5 = 36 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesim-proyeksiya-burchak",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#043c47e9"
+    },
+    {
+      "q": "Kesimning yuzi 20 sm², uning asos tekisligidagi proyeksiyasi yuzi 10 sm². Kesuvchi tekislik asos bilan qanday burchak hosil qiladi?",
+      "v": [
+        "75°",
+        "60°",
+        "30°",
+        "45°"
+      ],
+      "t": 1,
+      "izoh": "cos φ = S_pr : S = 10 : 20 = 0,5. Kosinusi 0,5 ga teng burchak 60° ga teng, demak kesuvchi tekislik asos bilan 60° burchak hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-proyeksiya-burchak",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#14a6371d"
+    },
+    {
+      "q": "Kesuvchi tekislik asos bilan 45° burchak ostida joylashgan va kesim yuzi 24√2 sm². Bu kesimning asosdagi proyeksiyasi yuzi qancha?",
+      "v": [
+        "12√2 sm²",
+        "12 sm²",
+        "24 sm²",
+        "48 sm²"
+      ],
+      "t": 2,
+      "izoh": "S_pr = S · cos φ formulasini qo'llaymiz: S_pr = 24√2 · cos 45° = 24√2 · (√2/2) = 24 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-proyeksiya-burchak",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#8e809d87"
+    },
+    {
+      "q": "Kubning A, C va B₁ uchlari orqali o'tgan kesimi hamda uning ABC asosdagi proyeksiyasi yuzalarining nisbati qanday bo'ladi?",
+      "v": [
+        "1 : √3",
+        "2 : √3",
+        "√2 : 1",
+        "√3 : 1"
+      ],
+      "t": 3,
+      "izoh": "B₁ nuqta asosga B ga proyeksiyalanadi, demak proyeksiya — ABC uchburchak, yuzi a²/2. Kesim esa yuzi a²√3/2 bo'lgan teng tomonli uchburchak. Nisbat (a²√3/2) : (a²/2) = √3 : 1.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,237 245,185.5 177.6,114.5' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Cpolygon points='55,237 177.6,237 245,185.5' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3Ea%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesim-proyeksiya-burchak",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#ae437365"
+    },
+    {
+      "q": "To'g'ri prizmani asos tekisligiga parallel tekislik bilan kessak, hosil bo'lgan kesim qanday ko'pburchak bo'ladi?",
+      "v": [
+        "asos bilan tengdosh ko'pburchak",
+        "asosdan ikki marta kichik ko'pburchak",
+        "har doim uchburchak",
+        "har doim to'g'ri to'rtburchak"
+      ],
+      "t": 0,
+      "izoh": "Prizmaning yon qirralari o'zaro parallel va teng, shuning uchun asosga parallel tekislik uni asos bilan tengdosh ko'pburchak bo'ylab kesadi. Yuzalari ham teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "prizma-kesim-shakli",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#5fb64b49"
+    },
+    {
+      "q": "Uchburchakli prizmada yon qirraga parallel qilib o'tkazilgan tekislik qanday shakldagi kesim beradi?",
+      "v": [
+        "parallelogramm",
+        "uchburchak",
+        "trapetsiya",
+        "muntazam beshburchak"
+      ],
+      "t": 0,
+      "izoh": "Bunday tekislik ikkita yon yoqni kesadi va kesishish chiziqlari yon qirraga parallel bo'ladi. Qolgan ikki tomon parallel asoslarda yotadi, demak kesim parallelogramm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "prizma-kesim-shakli",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#437ba7d5"
+    },
+    {
+      "q": "To'rtburchakli prizmaning tekis kesimi olti burchak bo'lishi mumkinmi degan savolga to'g'ri javobni tanlang.",
+      "v": [
+        "faqat asosi kvadrat bo'lganda mumkin",
+        "mumkin, chunki prizmada oltita yoq bor",
+        "mumkin emas, ko'pi bilan besh burchak",
+        "mumkin emas, ko'pi bilan to'rt burchak"
+      ],
+      "t": 1,
+      "izoh": "To'rtburchakli prizmada to'rtta yon yoq va ikkita asos, jami oltita yoq bor. Tekislik oltala yoqni ham kesib o'tsa, kesim olti burchak bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "prizma-kesim-shakli",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#f28c2c44"
+    },
+    {
+      "q": "Non zavodida asosi muntazam olti burchak bo'lgan qutini asos tekisligiga parallel qilib kesishdi. Kesim qanday shakl bo'ladi?",
+      "v": [
+        "to'g'ri to'rtburchak",
+        "asosdan kichik olti burchak",
+        "asosga teng muntazam olti burchak",
+        "muntazam uch burchak"
+      ],
+      "t": 2,
+      "izoh": "Quti prizma shaklida, uning yon qirralari parallel. Asosga parallel kesim asos bilan tengdosh, ya'ni tomoni ham, burchaklari ham o'sha muntazam olti burchak bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "prizma-kesim-shakli",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#501e2085"
+    },
+    {
+      "q": "Piramida balandligining o'rtasidan asos tekisligiga parallel tekislik o'tkazildi. Asos yuzi 64 sm² bo'lsa, kesim yuzi qancha?",
+      "v": [
+        "32 sm²",
+        "8 sm²",
+        "4 sm²",
+        "16 sm²"
+      ],
+      "t": 3,
+      "izoh": "Asosga parallel kesim asosga o'xshash bo'lib, o'xshashlik koeffitsienti k = 1/2. Yuzalar nisbati k² = 1/4, demak S = 64 : 4 = 16 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='216.5' x2='122.4' y2='165' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='165' x2='245' y2='165' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='165' x2='150' y2='83.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='216.5' x2='177.6' y2='216.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='216.5' x2='245' y2='165' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='216.5' x2='150' y2='83.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='216.5' x2='150' y2='83.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='165' x2='150' y2='83.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='102.5,150 163.8,150 197.5,124.3 136.2,124.3' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Cline x1='150' y1='83.5' x2='150' y2='190.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='41.6' y='227.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='185.1' y='233.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='260' y='168.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='107.6' y='166.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='72.5' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Easos yuzi 64 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "piramida-parallel-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#90945570"
+    },
+    {
+      "q": "Piramidaning asosga parallel kesimi yuzi 9 sm², asos yuzi esa 81 sm². Kesuvchi tekislik balandlikni uchidan boshlab qanday nisbatda bo'ladi?",
+      "v": [
+        "1 : 9",
+        "2 : 1",
+        "1 : 2",
+        "1 : 3"
+      ],
+      "t": 2,
+      "izoh": "Yuzalar nisbati o'xshashlik koeffitsientining kvadratiga teng: k² = 9 : 81 = 1/9, bundan k = 1/3. Demak uchdan balandlikning uchdan biri, qolgani ikki ulush — nisbat 1 : 2.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='217.4' x2='122.4' y2='165.9' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='165.9' x2='245' y2='165.9' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='165.9' x2='150' y2='82.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='217.4' x2='177.6' y2='217.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='217.4' x2='245' y2='165.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='217.4' x2='150' y2='82.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='217.4' x2='150' y2='82.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='165.9' x2='150' y2='82.6' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='102.5,150 163.8,150 197.5,124.3 136.2,124.3' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Cline x1='150' y1='82.6' x2='150' y2='191.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='41.6' y='228.1' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='185.1' y='234.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='260' y='169.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='107.6' y='167.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='71.6' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-parallel-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#3fcb8859"
+    },
+    {
+      "q": "Chodir muntazam piramida shaklida: balandligi 4 m, asos yuzi 36 m². Yerdan 3 m balandlikda gorizontal to'r tortilgan bo'lsa, to'r yuzi qancha?",
+      "v": [
+        "9 m²",
+        "4,5 m²",
+        "27 m²",
+        "2,25 m²"
+      ],
+      "t": 3,
+      "izoh": "To'r chodir uchidan 4 − 3 = 1 m masofada joylashgan, demak o'xshashlik koeffitsienti k = 1 : 4. Yuzalar nisbati k² = 1/16, shuning uchun S = 36 : 16 = 2,25 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='203.7' x2='122.4' y2='152.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='152.2' x2='245' y2='152.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='152.2' x2='150' y2='96.3' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='203.7' x2='177.6' y2='203.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='203.7' x2='245' y2='152.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='203.7' x2='150' y2='96.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='203.7' x2='150' y2='96.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='152.2' x2='150' y2='96.3' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='126.3,123.1 156.9,123.1 173.8,110.3 143.1,110.3' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Cline x1='150' y1='96.3' x2='150' y2='178' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='41.3' y='213.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='185.8' y='220.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='259.9' y='154.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='108.2' y='151.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='85.3' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='150' y='128.1' font-size='13' fill='%23334155' text-anchor='middle'%3E4 m%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Easos yuzi 36 m²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-parallel-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#f4ad45d6"
+    },
+    {
+      "q": "Piramidaning yon qirralarini uchidan boshlab 1 : 2 nisbatda bo'luvchi nuqtalar orqali asosga parallel tekislik o'tkazildi. Kesim va asos yuzalari nisbati qanday?",
+      "v": [
+        "1 : 9",
+        "1 : 3",
+        "1 : 4",
+        "1 : 6"
+      ],
+      "t": 0,
+      "izoh": "Nuqta yon qirrani uchidan 1 : 2 bo'lgani uchun kesim uchdan qirraning uchdan bir qismida, ya'ni k = 1/3. Yuzalar nisbati k² = 1 : 9 bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='224.2' x2='122.4' y2='172.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='172.7' x2='245' y2='172.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='172.7' x2='150' y2='75.8' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='224.2' x2='177.6' y2='224.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='224.2' x2='245' y2='172.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='224.2' x2='150' y2='75.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='224.2' x2='150' y2='75.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='172.7' x2='150' y2='75.8' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='102.5,150 163.8,150 197.5,124.3 136.2,124.3' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Cline x1='150' y1='75.8' x2='150' y2='198.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='41.7' y='235.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='184.8' y='241.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='260' y='176.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='107.4' y='176' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='64.8' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-parallel-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#c211b56a"
+    },
+    {
+      "q": "Muntazam piramida asosining yuzi 100 sm². Balandlikning uchidan hisoblab 0,4 ulushida asosga parallel kesim o'tkazilsa, uning yuzi qancha?",
+      "v": [
+        "64 sm²",
+        "16 sm²",
+        "40 sm²",
+        "20 sm²"
+      ],
+      "t": 1,
+      "izoh": "O'xshashlik koeffitsienti kesimning uchdan uzoqligiga teng: k = 0,4. Kesim yuzi S = k² · 100 = 0,16 · 100 = 16 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='211.9' x2='122.4' y2='160.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='160.4' x2='245' y2='160.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='160.4' x2='150' y2='88.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='211.9' x2='177.6' y2='211.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='211.9' x2='245' y2='160.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='211.9' x2='150' y2='88.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='211.9' x2='150' y2='88.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='160.4' x2='150' y2='88.1' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='112,137.6 161,137.6 188,117 139,117' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Cline x1='150' y1='88.1' x2='150' y2='186.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='41.5' y='222.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='185.4' y='228.7' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='260' y='163.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='107.8' y='161.2' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='77.1' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Easos yuzi 100 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-parallel-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#3c7c4256"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidaning asos tomoni 6 sm, balandligi 4 sm. Asos diagonali va piramida uchi orqali o'tgan kesim yuzi qancha?",
+      "v": [
+        "24√2 sm²",
+        "12 sm²",
+        "6√2 sm²",
+        "12√2 sm²"
+      ],
+      "t": 3,
+      "izoh": "Diagonal kesim — asosi AC = 6√2 sm, balandligi piramida balandligi 4 sm bo'lgan uchburchak. S = (6√2 · 4)/2 = 12√2 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='203.7' x2='122.4' y2='152.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='152.2' x2='245' y2='152.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='152.2' x2='150' y2='96.3' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='203.7' x2='177.6' y2='203.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='203.7' x2='245' y2='152.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='203.7' x2='150' y2='96.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='203.7' x2='150' y2='96.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='152.2' x2='150' y2='96.3' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,203.7 245,152.2 150,96.3' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Cline x1='150' y1='96.3' x2='150' y2='178' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='41.3' y='213.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='185.8' y='220.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='259.9' y='154.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='108.2' y='151.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='85.3' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='108.2' y='217.9' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Ctext x='150' y='128.1' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "piramida-diagonal-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#39c1adaf"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidaning asos tomoni 8 sm, yon qirrasi 9 sm. Diagonal kesimning yuzasini hisoblang.",
+      "v": [
+        "28√2 sm²",
+        "56√2 sm²",
+        "28 sm²",
+        "32√2 sm²"
+      ],
+      "t": 0,
+      "izoh": "Asos diagonali 8√2 sm, uning yarmi 4√2 sm. Balandlik H = √(9² − (4√2)²) = √(81 − 32) = 7 sm. Kesim yuzi S = (8√2 · 7)/2 = 28√2 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='216.5' x2='122.4' y2='165' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='165' x2='245' y2='165' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='165' x2='150' y2='83.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='216.5' x2='177.6' y2='216.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='216.5' x2='245' y2='165' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='216.5' x2='150' y2='83.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='216.5' x2='150' y2='83.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='165' x2='150' y2='83.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,216.5 245,165 150,83.5' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='41.6' y='227.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='185.1' y='233.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='260' y='168.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='107.6' y='166.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='72.5' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='108.7' y='231.1' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='171.3' y='143.4' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-diagonal-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#01be6ed1"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidaning diagonal kesimi yuzi 12√2 sm², asos tomoni esa 6 sm. Piramidaning balandligini toping.",
+      "v": [
+        "8 sm",
+        "4 sm",
+        "6 sm",
+        "2√2 sm"
+      ],
+      "t": 1,
+      "izoh": "Diagonal kesim asosi AC = 6√2 sm. S = (AC · H)/2 formulasidan 12√2 = (6√2 · H)/2 = 3√2 · H, demak H = 4 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='203.7' x2='122.4' y2='152.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='152.2' x2='245' y2='152.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='152.2' x2='150' y2='96.3' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='203.7' x2='177.6' y2='203.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='203.7' x2='245' y2='152.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='203.7' x2='150' y2='96.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='203.7' x2='150' y2='96.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='152.2' x2='150' y2='96.3' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,203.7 245,152.2 150,96.3' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Cline x1='150' y1='96.3' x2='150' y2='178' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='41.3' y='213.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='185.8' y='220.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='259.9' y='154.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='108.2' y='151.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='85.3' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='108.2' y='217.9' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-diagonal-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#35be46f6"
+    },
+    {
+      "q": "Bog'dagi piramidasimon gazebo asosi tomoni 4 m bo'lgan kvadrat, balandligi 3 m. Diagonal bo'ylab o'rnatilgan to'sinlar tekisligining yuzi qancha?",
+      "v": [
+        "6 m²",
+        "8√2 m²",
+        "6√2 m²",
+        "12√2 m²"
+      ],
+      "t": 2,
+      "izoh": "Asos diagonali 4√2 m. To'sinlar tekisligi uchburchak: asosi 4√2 m, balandligi 3 m. Demak S = (4√2 · 3)/2 = 6√2 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='208.8' x2='122.4' y2='157.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='157.4' x2='245' y2='157.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='157.4' x2='150' y2='91.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='208.8' x2='177.6' y2='208.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='208.8' x2='245' y2='157.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='208.8' x2='150' y2='91.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='208.8' x2='150' y2='91.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='157.4' x2='150' y2='91.2' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,208.8 245,157.4 150,91.2' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Cline x1='150' y1='91.2' x2='150' y2='183.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='41.4' y='219.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='185.5' y='225.6' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='260' y='160.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='107.9' y='157.5' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='80.2' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='108.4' y='223.2' font-size='13' fill='%23334155' text-anchor='end'%3E4 m%3C/text%3E%3Ctext x='150' y='128.1' font-size='13' fill='%23334155' text-anchor='middle'%3E3 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-diagonal-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#026a3bf0"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidada uch va asosning qarama-qarshi ikki tomoni o'rtalari orqali kesim o'tkazildi. Asos tomoni 10 sm, apofema 13 sm. Kesim yuzi qancha?",
+      "v": [
+        "50 sm²",
+        "60 sm²",
+        "120 sm²",
+        "30 sm²"
+      ],
+      "t": 1,
+      "izoh": "Kesim — SMN uchburchak, bunda M va N qarama-qarshi tomonlar o'rtalari, MN = 10 sm va u asos markazi O dan o'tadi. SO ⊥ asos bo'lgani uchun uchburchak balandligi piramida balandligi H ga teng: H = √(13² − 5²) = √144 = 12 sm. Demak S = (10 · 12)/2 = 60 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='229.7' x2='122.4' y2='178.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='178.2' x2='245' y2='178.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='178.2' x2='150' y2='56.85' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='229.7' x2='177.6' y2='229.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='229.7' x2='245' y2='178.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='229.7' x2='150' y2='56.85' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='229.7' x2='150' y2='56.85' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='178.2' x2='150' y2='56.85' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='150,56.85 116.3,229.7 183.7,178.2' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='41.9' y='240.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='184.6' y='247' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='260' y='182.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='107.4' y='182.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='45.85' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='109.3' y='244.6' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Ctext x='126.3' y='136.2' font-size='13' fill='%23334155' text-anchor='end'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-uchidan-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#7b7b9876"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidada uch va asos tomonlari o'rtalaridan o'tgan kesimning yuzi 84 sm², asos tomoni 14 sm. Piramida balandligini toping.",
+      "v": [
+        "24 sm",
+        "14 sm",
+        "12 sm",
+        "6 sm"
+      ],
+      "t": 2,
+      "izoh": "Bu kesim asosi 14 sm bo'lgan uchburchak. Uning balandligi apofema emas, piramida balandligi H, chunki asos tomonlari o'rtalarini tutashtiruvchi kesma asos markazidan o'tadi. (14 · H)/2 = 84 tenglamadan 7H = 84, demak H = 12 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='215.4' x2='122.4' y2='163.9' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='163.9' x2='245' y2='163.9' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='163.9' x2='150' y2='84.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='215.4' x2='177.6' y2='215.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='215.4' x2='245' y2='163.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='215.4' x2='150' y2='84.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='215.4' x2='150' y2='84.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='163.9' x2='150' y2='84.6' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='150,84.6 116.3,215.4 183.7,163.9' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='41.5' y='226' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='185.2' y='232.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='260' y='167.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='107.6' y='165.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='73.6' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='108.7' y='230' font-size='13' fill='%23334155' text-anchor='end'%3E14 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzi 84 sm² · chizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "piramida-uchidan-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#3b08bceb"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidada uch va asos tomonlari o'rtalari orqali o'tgan kesim yuzi bitta yon yoq yuzasi bilan qanday bog'langan?",
+      "v": [
+        "kesim yuzi yon yoq yuzasidan katta",
+        "kesim yuzi yon yoq yuzasidan kichik",
+        "ular o'zaro teng",
+        "kesim yuzi yon yoq yuzasidan doim aynan ikki marta kichik"
+      ],
+      "t": 1,
+      "izoh": "Kesim uchburchagining asosi a, balandligi esa piramida balandligi H, chunki asos tomonlari o'rtalarini tutashtiruvchi kesma markazdan o'tadi; yuzi a·H/2. Yon yoqning asosi ham a, lekin balandligi apofema m, yuzi a·m/2. Har qanday piramidada m = √(H² + (a/2)²) > H, demak kesim yuzi yon yoq yuzasidan kichik. Ularning nisbati H : m bo'lib, piramida shakliga qarab o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-uchidan-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#dea6a4f8"
+    },
+    {
+      "q": "Sirk chodiri muntazam to'rtburchakli piramida shaklida: asos tomoni 12 m, apofemasi 10 m. Uch va asos tomonlari o'rtalari bo'ylab parda tortildi. Parda yuzi qancha?",
+      "v": [
+        "48 m²",
+        "120 m²",
+        "60 m²",
+        "72 m²"
+      ],
+      "t": 0,
+      "izoh": "Parda — asosi 12 m bo'lgan teng yonli uchburchak, lekin uning balandligi apofema emas, chodir balandligi: H = √(10² − 6²) = √64 = 8 m. Demak S = (12 · 8)/2 = 48 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='203.7' x2='122.4' y2='152.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='152.2' x2='245' y2='152.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='152.2' x2='150' y2='96.3' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='203.7' x2='177.6' y2='203.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='203.7' x2='245' y2='152.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='203.7' x2='150' y2='96.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='203.7' x2='150' y2='96.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='152.2' x2='150' y2='96.3' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='150,96.3 116.3,203.7 183.7,152.2' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='41.3' y='213.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='185.8' y='220.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='259.9' y='154.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='108.2' y='151.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='85.3' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='108.2' y='217.9' font-size='13' fill='%23334155' text-anchor='end'%3E12 m%3C/text%3E%3Ctext x='122.4' y='146.6' font-size='13' fill='%23334155' text-anchor='end'%3E10 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-uchidan-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#6f7458fd"
+    },
+    {
+      "q": "Muntazam tetraedrning qirrasi 6 sm. AB, BC, CD va DA qirralarining o'rtalari orqali o'tgan kesimning yuzi qancha?",
+      "v": [
+        "9 sm²",
+        "18 sm²",
+        "4,5 sm²",
+        "9√3 sm²"
+      ],
+      "t": 0,
+      "izoh": "Bu to'rt o'rta nuqta parallelogramm hosil qiladi; uning tomonlari AC va BD ning yarmiga, ya'ni 3 sm ga teng. Muntazam tetraedrda AC ⊥ BD, demak kesim kvadrat va S = 3 · 3 = 9 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55.1' y1='239' x2='240.4' y2='169.9' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55.1' y1='239' x2='244.9' y2='239' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55.1' y1='239' x2='180.2' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='244.9' y1='239' x2='180.2' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='240.4' y1='169.9' x2='180.2' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='244.9' y1='239' x2='240.4' y2='169.9' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='150,239 242.7,204.5 210.3,115.5 117.6,150' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='41.6' y='249.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='255.8' y='253.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='255.3' y='172.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='180.2' y='50' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='144.3' y='254.7' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tetraedr-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#d46c4b94"
+    },
+    {
+      "q": "Muntazam tetraedrda to'rtta qirraning o'rtalari orqali o'tkazilgan kesim qanday shakl bo'lishini aniqlang.",
+      "v": [
+        "teng tomonli uchburchak",
+        "kvadrat",
+        "kvadrat bo'lmagan romb",
+        "teng yonli trapetsiya"
+      ],
+      "t": 1,
+      "izoh": "Kesim tomonlari qarama-qarshi qirralarga parallel o'rta chiziqlar, shuning uchun ular teng va juft-juft parallel. Muntazam tetraedrda qarama-qarshi qirralar perpendikulyar, demak burchaklar to'g'ri — kvadrat chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tetraedr-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#4e72bf0f"
+    },
+    {
+      "q": "Uchburchakli piramidani bitta tekislik bilan kesganda hosil bo'ladigan ko'pburchakning tomonlari soni ko'pi bilan nechta?",
+      "v": [
+        "5",
+        "6",
+        "4",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Uchburchakli piramidada to'rtta yoq bor: asos va uchta yon yoq. Kesimning har bir tomoni bitta yoqda yotgani uchun tomonlar soni to'rtdan oshmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tetraedr-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#ec0d8148"
+    },
+    {
+      "q": "Muntazam tetraedrning to'rtta qirrasi o'rtalari orqali o'tgan kesim kvadrat bo'lib, uning yuzi 25 sm². Tetraedr qirrasini toping.",
+      "v": [
+        "5 sm",
+        "25 sm",
+        "20 sm",
+        "10 sm"
+      ],
+      "t": 3,
+      "izoh": "Kvadrat yuzi 25 sm² bo'lsa, tomoni √25 = 5 sm. Bu tomon tetraedr qirrasining yarmiga teng, demak qirra 2 · 5 = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55.1' y1='239' x2='240.4' y2='169.9' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55.1' y1='239' x2='244.9' y2='239' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55.1' y1='239' x2='180.2' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='244.9' y1='239' x2='180.2' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='240.4' y1='169.9' x2='180.2' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='244.9' y1='239' x2='240.4' y2='169.9' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='150,239 242.7,204.5 210.3,115.5 117.6,150' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='41.6' y='249.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='255.8' y='253.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='255.3' y='172.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='180.2' y='50' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzi 25 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tetraedr-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#78039b53"
+    },
+    {
+      "q": "To'rtburchakli piramidaning tekis kesimi ko'pi bilan necha tomonli ko'pburchak bo'lishi mumkin?",
+      "v": [
+        "6",
+        "8",
+        "5",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "To'rtburchakli piramidada beshta yoq bor: to'rtta yon yoq va asos. Har bir yoq kesimga ko'pi bilan bitta tomon beradi, demak kesim beshburchakdan ortmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-kesim-shakli",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#aa0bf072"
+    },
+    {
+      "q": "Uchburchakli piramidada asos tekisligiga parallel qilib o'tkazilgan kesim qanday bo'ladi?",
+      "v": [
+        "asosga teng uchburchak",
+        "trapetsiya",
+        "to'rtburchak",
+        "asosga o'xshash uchburchak"
+      ],
+      "t": 3,
+      "izoh": "Parallel tekislik yon yoqlarni asos tomonlariga parallel chiziqlar bo'ylab kesadi. Shu sababli kesim asosga o'xshash uchburchak bo'ladi, lekin unga teng emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "piramida-kesim-shakli",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#15e34a09"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidada AB tomoniga parallel tekislik asos tekisligini ham, SAB yon yog'ini ham kesma bo'ylab kesib o'tdi. Hosil bo'lgan kesim qanday shakl bo'ladi?",
+      "v": [
+        "trapetsiya",
+        "parallelogramm",
+        "uchburchak",
+        "kvadrat"
+      ],
+      "t": 0,
+      "izoh": "Tekislik AB ga parallel bo'lgani uchun asosni ham, SAB yog'ini ham AB ga parallel kesmalar bo'ylab kesadi. Asosdagi kesma asos tomoniga teng, yog'dagi kesma esa uchga yaqinlashgani sari qisqaradi, ya'ni undan kalta. Ikki tomoni parallel, uzunliklari har xil bo'lgan to'rtburchak — trapetsiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-kesim-shakli",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#04129b8a"
+    },
+    {
+      "q": "Muntazam to'rtburchakli piramidaning kesimi kvadrat bo'lishi uchun kesuvchi tekislik qanday joylashishi kerak?",
+      "v": [
+        "yon qirraga parallel bo'lishi kerak",
+        "asos tekisligiga parallel bo'lishi kerak",
+        "asos diagonali orqali o'tishi kerak",
+        "piramida uchi orqali o'tishi kerak"
+      ],
+      "t": 1,
+      "izoh": "Asosga parallel kesim asosga o'xshash bo'ladi, asos esa kvadrat. Boshqa holatlarda kesim uchburchak, trapetsiya yoki beshburchak chiqadi, kvadrat bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-kesim-shakli",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#9ce21b51"
+    },
+    {
+      "q": "Piramidaning yon qirralarini uchidan boshlab 2 : 1 nisbatda bo'lgan nuqtalar orqali asosga parallel kesim o'tkazildi. Asos yuzi 45 sm² bo'lsa, kesim yuzi qancha?",
+      "v": [
+        "30 sm²",
+        "10 sm²",
+        "5 sm²",
+        "20 sm²"
+      ],
+      "t": 3,
+      "izoh": "Nuqta yon qirrani uchidan 2 : 1 bo'lgani uchun o'xshashlik koeffitsienti k = 2/3. Yuzalar nisbati k² = 4/9, demak S = 45 · 4/9 = 20 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='224.2' x2='122.4' y2='172.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='172.7' x2='245' y2='172.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='172.7' x2='150' y2='75.8' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='224.2' x2='177.6' y2='224.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='224.2' x2='245' y2='172.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='224.2' x2='150' y2='75.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='224.2' x2='150' y2='75.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='172.7' x2='150' y2='75.8' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='86.7,174.7 168.4,174.7 213.3,140.4 131.6,140.4' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Cline x1='150' y1='75.8' x2='150' y2='198.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='41.7' y='235.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='184.8' y='241.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='260' y='176.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='107.4' y='176' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='64.8' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Easos yuzi 45 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-nisbat-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#c1634c6f"
+    },
+    {
+      "q": "Kesik piramidaning asoslari yuzalari 36 sm² va 4 sm². Yon qirralarning o'rtalari orqali o'tgan kesimning yuzi qancha?",
+      "v": [
+        "16 sm²",
+        "20 sm²",
+        "24 sm²",
+        "18 sm²"
+      ],
+      "t": 0,
+      "izoh": "O'rta kesim chiziqli o'lchamlari asoslar chiziqli o'lchamlarining o'rta arifmetigiga teng. √36 = 6, √4 = 2, o'rtachasi (6 + 2)/2 = 4, demak yuzi 4² = 16 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-nisbat-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#98aeffb0"
+    },
+    {
+      "q": "Asosga parallel kesimning yuzi asos yuzasining yarmiga teng bo'lsa, kesuvchi tekislik piramida balandligining qaysi qismidan o'tadi?",
+      "v": [
+        "uchidan to'rtdan bir qismida",
+        "uchidan √2/2 ulushida",
+        "uchidan yarmida",
+        "uchidan uchdan bir qismida"
+      ],
+      "t": 1,
+      "izoh": "Yuzalar nisbati k² = 1/2 bo'lsa, k = 1/√2 = √2/2 ≈ 0,71. O'xshashlik koeffitsienti balandlik ulushiga teng, demak tekislik uchdan √2/2 ulushida o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-nisbat-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#be4e6c0e"
+    },
+    {
+      "q": "Ehromsimon suvenirning asos yuzi 72 sm². Balandligining uchidan hisoblab uchdan bir qismida asosga parallel kesim o'tkazilsa, kesim yuzi qancha?",
+      "v": [
+        "36 sm²",
+        "18 sm²",
+        "8 sm²",
+        "24 sm²"
+      ],
+      "t": 2,
+      "izoh": "O'xshashlik koeffitsienti k = 1/3, yuzalar nisbati esa k² = 1/9. Demak kesim yuzi S = 72 : 9 = 8 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='224.2' x2='122.4' y2='172.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='172.7' x2='245' y2='172.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='172.7' x2='150' y2='75.8' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='224.2' x2='177.6' y2='224.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='224.2' x2='245' y2='172.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='224.2' x2='150' y2='75.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='224.2' x2='150' y2='75.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='172.7' x2='150' y2='75.8' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='118.3,125.3 159.2,125.3 181.7,108.1 140.8,108.1' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Cline x1='150' y1='75.8' x2='150' y2='198.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='41.7' y='235.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='184.8' y='241.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='260' y='176.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='107.4' y='176' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='64.8' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Easos yuzi 72 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-nisbat-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#358d2d97"
+    },
+    {
+      "q": "Ko'pyoqda kesim yasashda kesuvchi tekislikning asos tekisligi bilan kesishish chizig'i qanday ataladi?",
+      "v": [
+        "piramidaning apofemasi",
+        "kesuvchi tekislikning izi",
+        "kesimning diagonali",
+        "yon qirraning proyeksiyasi"
+      ],
+      "t": 1,
+      "izoh": "Ikki kesishuvchi tekislik umumiy to'g'ri chiziq bo'ylab kesishadi. Kesuvchi tekislik bilan asos tekisligining shu umumiy chizig'i iz deb ataladi va kesim yasash undan boshlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "iz-metodi",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#37620e0b"
+    },
+    {
+      "q": "Kesim yasashda ko'pyoqning bitta yog'ida yotgan ikkita nuqta bilan qanday amal bajariladi?",
+      "v": [
+        "ular orasidagi masofa o'lchanadi",
+        "ular yon qirraga ko'chiriladi",
+        "ular bevosita to'g'ri chiziq bilan tutashtiriladi",
+        "ular asos tekisligiga proyeksiyalanadi"
+      ],
+      "t": 2,
+      "izoh": "Bir tekislikda yotgan ikki nuqta orqali faqat bitta to'g'ri chiziq o'tadi va u ham shu tekislikda yotadi. Shu sababli bitta yoqdagi nuqtalar darhol tutashtiriladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='145.1' x2='228.1' y2='198.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='177.6' cy='145.1' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ccircle cx='228.1' cy='198.4' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='192.3' y='146.5' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='240.9' y='210.3' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "iz-metodi",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#18a8ce3a"
+    },
+    {
+      "q": "Kubning yoqlarida berilgan uchta nuqta bitta yoqda yotmasa, iz metodi bo'yicha birinchi qadam qanday bajariladi?",
+      "v": [
+        "uchala nuqta darhol o'zaro tutashtiriladi",
+        "nuqtalar kub markaziga proyeksiyalanadi",
+        "avval kubning fazoviy diagonali chiziladi",
+        "bitta yoqda yotgan ikki nuqta tutashtirilib, chiziq yoq chegarasidan tashqariga davom ettiriladi"
+      ],
+      "t": 3,
+      "izoh": "Bitta yoqda yotgan juftlik tutashtiriladi, so'ng bu chiziq yoq tekisligida davom ettirilib, asos tekisligi bilan kesishtiriladi. Shu kesishish nuqtasi iz uchun tayanch nuqta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "iz-metodi",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#69a8ba69"
+    },
+    {
+      "q": "Iz metodida kesim tekisligining izi bilan asos tomonining kesishish nuqtasi nima uchun zarur?",
+      "v": [
+        "u kesim ko'pburchagining asos tekisligidagi uchi bo'ladi",
+        "u piramidaning balandligini beradi",
+        "u kesim yuzini bevosita beradi",
+        "u yon qirraning o'rtasini belgilaydi"
+      ],
+      "t": 0,
+      "izoh": "Iz asos tekisligida yotadi, kesim esa ko'pyoq ichida. Iz asos tomonini kesib o'tgan nuqta ikkalasiga ham tegishli, demak u kesim ko'pburchagining haqiqiy uchi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "iz-metodi",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#be52ef32"
+    },
+    {
+      "q": "Ichki proyeksiyalash usulida kesim nuqtalari odatda qaysi tekislikka proyeksiyalanadi?",
+      "v": [
+        "asos tekisligiga",
+        "yon yoq tekisligiga",
+        "kesim tekisligining o'ziga",
+        "piramida uchidan o'tuvchi ixtiyoriy tekislikka"
+      ],
+      "t": 0,
+      "izoh": "Ichki proyeksiyalashda har bir nuqta asos tekisligiga tushiriladi va asosda oddiy planimetrik masala hal qilinadi. Topilgan nuqtalar keyin yana fazoga qaytariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-proyeksiyalash",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#268bf7ab"
+    },
+    {
+      "q": "Qanday holatda iz metodi o'rniga ichki proyeksiyalash usulini tanlash qulayroq bo'ladi?",
+      "v": [
+        "kesim asosga parallel bo'lganda",
+        "iz chizma chegarasidan uzoqqa chiqib ketganda",
+        "kesim uchburchak bo'lganda",
+        "ko'pyoq faqat kub bo'lganda"
+      ],
+      "t": 1,
+      "izoh": "Kesuvchi tekislik asosga deyarli parallel bo'lsa, iz chizmadan juda uzoqda hosil bo'ladi va qurish noqulay. Bunday paytda nuqtalarni asosga proyeksiyalab ishlash aniqroq natija beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-proyeksiyalash",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#97a00bb1"
+    },
+    {
+      "q": "Piramidaning yon qirrasida olingan nuqtaning asos tekisligidagi ichki proyeksiyasi qanday topiladi?",
+      "v": [
+        "nuqta apofema bo'ylab siljitiladi",
+        "nuqta asos diagonaliga ko'chiriladi",
+        "nuqta piramida uchidan o'tuvchi to'g'ri chiziq bo'ylab asosga tushiriladi",
+        "nuqta yon qirraga perpendikulyar tushiriladi"
+      ],
+      "t": 2,
+      "izoh": "Piramidada proyeksiya markazi uning uchi hisoblanadi. Uchdan nuqta orqali o'tkazilgan nur asos tekisligini kesib o'tadi va shu kesishish nuqtasi izlangan proyeksiya bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='224.2' x2='122.4' y2='172.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='172.7' x2='245' y2='172.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='172.7' x2='150' y2='75.8' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='224.2' x2='177.6' y2='224.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='224.2' x2='245' y2='172.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='224.2' x2='150' y2='75.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='224.2' x2='150' y2='75.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='172.7' x2='150' y2='75.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='75.8' x2='177.6' y2='224.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='163.8' cy='150' r='2.6' fill='%235b4bc4' stroke='none'/%3E%3Ctext x='41.7' y='235.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='184.8' y='241.3' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='260' y='176.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='107.4' y='176' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='64.8' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='171.3' y='141' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-proyeksiyalash",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#eac71883"
+    },
+    {
+      "q": "Prizmada ichki proyeksiyalash qaysi yo'nalish bo'yicha amalga oshiriladi?",
+      "v": [
+        "asos markaziga qarab tortiladi",
+        "yuqori asosga ko'chirilib o'lchanadi",
+        "asos diagonali bo'ylab siljitiladi",
+        "yon qirraga parallel yo'nalishda asosga tushiriladi"
+      ],
+      "t": 3,
+      "izoh": "Prizmaning yon qirralari o'zaro parallel, shuning uchun proyeksiya markaziy emas, balki parallel bo'ladi. Har bir nuqta yon qirraga parallel yo'nalishda asosga tushiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-proyeksiyalash",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#d10a2760"
+    },
+    {
+      "q": "Beshburchakli prizmani bitta tekislik bilan kesganda hosil bo'ladigan ko'pburchak ko'pi bilan necha tomonli bo'ladi?",
+      "v": [
+        "6",
+        "10",
+        "7",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Beshburchakli prizmada beshta yon yoq va ikkita asos, jami 7 ta yoq bor. Kesimning har bir tomoni alohida yoqda yotgani uchun tomonlar soni 7 dan oshmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesim-tomonlar-soni",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#540fba4e"
+    },
+    {
+      "q": "Olti burchakli piramidaning tekis kesimi ko'pi bilan necha tomonli ko'pburchak bo'lishi mumkin?",
+      "v": [
+        "6",
+        "8",
+        "12",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Olti burchakli piramidada oltita yon yoq va bitta asos, ya'ni 7 ta yoq bor. Shuning uchun kesim ko'pburchagi eng ko'pi bilan yetti tomonli bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesim-tomonlar-soni",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#5764466d"
+    },
+    {
+      "q": "Kubning tekis kesimi yettiburchak bo'la oladimi degan savolga to'g'ri javobni tanlang.",
+      "v": [
+        "yo'q, chunki kubda atigi oltita yoq bor",
+        "ha, agar tekislik kub markazidan o'tsa",
+        "ha, agar tekislik oltita qirrani kessa",
+        "ha, faqat qiya kesimda"
+      ],
+      "t": 0,
+      "izoh": "Kesim ko'pburchagining har bir tomoni bitta yoqqa tegishli. Kubda oltita yoq bo'lgani uchun tomonlar soni oltitadan oshmaydi, demak yettiburchak hosil bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-tomonlar-soni",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#106cdd78"
+    },
+    {
+      "q": "Sakkiz burchakli prizmani bitta tekislik bilan kesganda eng ko'pi bilan necha tomonli ko'pburchak chiqadi?",
+      "v": [
+        "16",
+        "10",
+        "8",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Sakkiz burchakli prizmada sakkizta yon yoq va ikkita asos bor, jami 10 ta yoq. Demak kesim ko'pburchagi ko'pi bilan o'n tomonli bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-tomonlar-soni",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#11d2ef87"
+    },
+    {
+      "q": "Tug'ilgan kun torti qirrasi 20 sm bo'lgan kub shaklida. Uni tag diagonali bo'ylab tik kesib ikkiga bo'lishdi. Kesim yuzi qancha?",
+      "v": [
+        "400 sm²",
+        "800 sm²",
+        "200√2 sm²",
+        "400√2 sm²"
+      ],
+      "t": 3,
+      "izoh": "Tag diagonali 20√2 sm, kesim balandligi esa tort balandligi 20 sm. Kesim to'g'ri to'rtburchak, demak S = 20√2 · 20 = 400√2 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,237 55,114.5 245,63 245,185.5' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E20 sm%3C/text%3E%3Ctext x='187.1' y='188.6' font-size='13' fill='%23334155' text-anchor='start'%3E20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-oziq-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#cf913cd7"
+    },
+    {
+      "q": "Pishloq bo'lagi 8 sm, 6 sm va 4 sm o'lchamli to'g'ri parallelepiped shaklida. Uni tag diagonali bo'ylab tik kesishdi; kesim yuzi qancha?",
+      "v": [
+        "40 sm²",
+        "24 sm²",
+        "32 sm²",
+        "48 sm²"
+      ],
+      "t": 0,
+      "izoh": "Tag diagonali √(8² + 6²) = √100 = 10 sm. Kesim to'g'ri to'rtburchak bo'lib, tomonlari 10 sm va 4 sm, shuning uchun S = 10 · 4 = 40 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='204.8' x2='110.5' y2='162.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='110.5' y1='162.4' x2='245' y2='162.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='110.5' y1='162.4' x2='110.5' y2='95.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='204.8' x2='189.5' y2='204.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='189.5' y1='204.8' x2='245' y2='162.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='204.8' x2='55' y2='137.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='189.5' y1='204.8' x2='189.5' y2='137.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='162.4' x2='245' y2='95.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='137.6' x2='189.5' y2='137.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='189.5' y1='137.6' x2='245' y2='95.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='95.2' x2='110.5' y2='95.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='110.5' y1='95.2' x2='55' y2='137.6' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,204.8 55,137.6 245,95.2 245,162.4' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='42' y='216.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='198.3' y='221' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='259.9' y='168.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='96.2' y='170.9' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='40.1' y='139.6' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='203.8' y='137.1' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='258' y='91.7' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='101.7' y='87' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3Ctext x='116.4' y='220.4' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='228.9' y='193.4' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3Ctext x='201' y='181.3' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-oziq-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#415ece22"
+    },
+    {
+      "q": "Qand bo'lagi qirrasi 12 mm bo'lgan kub. Uni uchta qo'shni uchdan o'tuvchi tekislik bo'ylab sindirishsa, yangi yuza qancha bo'ladi?",
+      "v": [
+        "72√2 mm²",
+        "72√3 mm²",
+        "144√3 mm²",
+        "36√3 mm²"
+      ],
+      "t": 1,
+      "izoh": "Sinish yuzasi tomoni 12√2 mm bo'lgan teng tomonli uchburchak. S = (√3/4) · (12√2)² = (√3/4) · 288 = 72√3 mm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='237' x2='122.4' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='245' y2='185.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='122.4' y1='185.5' x2='122.4' y2='63' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='237' x2='177.6' y2='237' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='245' y2='185.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='237' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='237' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='185.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='114.5' x2='177.6' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='177.6' y1='114.5' x2='245' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='63' x2='122.4' y2='63' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='122.4' y1='63' x2='55' y2='114.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='177.6,237 55,114.5 245,63' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.9' y='251.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='182.1' y='255.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259' y='194.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='113.2' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='41' y='113.2' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='186.8' y='106.6' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.1' y='56.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='117.9' y='52.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='111.6' y='253.2' font-size='13' fill='%23334155' text-anchor='end'%3E12 mm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-oziq-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#8e204af4"
+    },
+    {
+      "q": "Muzqaymoq briketi 12 sm, 8 sm va 5 sm o'lchamli. Uni biror yog'iga parallel qilib ikkiga bo'lishdi; eng kichik kesim yuzi qancha?",
+      "v": [
+        "96 sm²",
+        "480 sm²",
+        "40 sm²",
+        "60 sm²"
+      ],
+      "t": 2,
+      "izoh": "Yoqqa parallel kesim o'sha yoq bilan tengdosh. Mumkin bo'lgan yuzalar: 12 · 8 = 96, 12 · 5 = 60 va 8 · 5 = 40 sm². Eng kichigi 40 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='198.4' x2='106' y2='159.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='106' y1='159.5' x2='245' y2='159.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='106' y1='159.5' x2='106' y2='101.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='198.4' x2='194' y2='198.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='194' y1='198.4' x2='245' y2='159.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='198.4' x2='55' y2='140.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='194' y1='198.4' x2='194' y2='140.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='159.5' x2='245' y2='101.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='140.5' x2='194' y2='140.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='194' y1='140.5' x2='245' y2='101.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='101.6' x2='106' y2='101.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='106' y1='101.6' x2='55' y2='140.5' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='41.6' y='209.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='204.1' y='213.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='259.9' y='165' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='91.3' y='166.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='40.1' y='143' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='208.7' y='141.3' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='258.4' y='98.8' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='95.9' y='94.5' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3Ctext x='118.5' y='213.9' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='231.5' y='188' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3Ctext x='205.9' y='178.7' font-size='13' fill='%23334155' text-anchor='start'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-oziq-kesim",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#136419c3"
+    },
+    {
+      "q": "Ombor xonasi 9 m, 12 m va 3 m o'lchamli. Pol diagonali bo'ylab shiftgacha to'siq devor ko'tarildi; uning yuzi qancha?",
+      "v": [
+        "54 m²",
+        "45 m²",
+        "36 m²",
+        "27 m²"
+      ],
+      "t": 1,
+      "izoh": "Pol diagonali √(9² + 12²) = √225 = 15 m. To'siq devor tomonlari 15 m va 3 m bo'lgan to'g'ri to'rtburchak, demak S = 15 · 3 = 45 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='199' x2='135.4' y2='137.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='135.4' y1='137.6' x2='245' y2='137.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='135.4' y1='137.6' x2='135.4' y2='101' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='199' x2='164.6' y2='199' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='164.6' y1='199' x2='245' y2='137.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='199' x2='55' y2='162.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='164.6' y1='199' x2='164.6' y2='162.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='137.6' x2='245' y2='101' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='162.4' x2='164.6' y2='162.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='164.6' y1='162.4' x2='245' y2='101' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='101' x2='135.4' y2='101' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='135.4' y1='101' x2='55' y2='162.4' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,199 55,162.4 245,101 245,137.6' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='41.7' y='209.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='168.9' y='217.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259.9' y='139.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='124' y='131.9' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='40.1' y='168.4' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='176' y='176.1' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='258.3' y='98.2' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='131.1' y='90.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='101.6' y='213' font-size='13' fill='%23334155' text-anchor='end'%3E9 m%3C/text%3E%3Ctext x='217.1' y='176.4' font-size='13' fill='%23334155' text-anchor='start'%3E12 m%3C/text%3E%3Ctext x='170.2' y='196.4' font-size='13' fill='%23334155' text-anchor='start'%3E3 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-quti-tosiq",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#57727696"
+    },
+    {
+      "q": "Sovg'a qutisi 25 sm, 20 sm va 15 sm o'lchamli. Ichiga yoqlardan biriga parallel ajratgich solindi; eng katta ajratgich yuzi qancha?",
+      "v": [
+        "300 sm²",
+        "7500 sm²",
+        "500 sm²",
+        "375 sm²"
+      ],
+      "t": 2,
+      "izoh": "Yoqqa parallel ajratgich o'sha yoq bilan tengdosh bo'ladi. Yuzalar: 25 · 20 = 500, 25 · 15 = 375 va 20 · 15 = 300 sm². Eng kattasi 500 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='211.8' x2='113.1' y2='167.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='113.1' y1='167.4' x2='245' y2='167.4' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='113.1' y1='167.4' x2='113.1' y2='88.3' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='211.8' x2='186.9' y2='211.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186.9' y1='211.8' x2='245' y2='167.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='211.8' x2='55' y2='132.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186.9' y1='211.8' x2='186.9' y2='132.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='167.4' x2='245' y2='88.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='132.6' x2='186.9' y2='132.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='186.9' y1='132.6' x2='245' y2='88.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='88.3' x2='113.1' y2='88.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='113.1' y1='88.3' x2='55' y2='132.6' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='42.4' y='223.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='194.6' y='228.6' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='259.8' y='174.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='99.5' y='177.8' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='40.2' y='133.9' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='200.5' y='130.2' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='257.6' y='84.1' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='105.4' y='79.4' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3Ctext x='115.4' y='227.5' font-size='13' fill='%23334155' text-anchor='end'%3E25 sm%3C/text%3E%3Ctext x='227.1' y='200.3' font-size='13' fill='%23334155' text-anchor='start'%3E20 sm%3C/text%3E%3Ctext x='198.1' y='182.9' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-quti-tosiq",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#1f9d0bdf"
+    },
+    {
+      "q": "Akvarium tagi 60 sm va 80 sm, balandligi 50 sm. Suv sathi bo'ylab gorizontal kesim o'tkazilsa, uning yuzi qancha?",
+      "v": [
+        "5000 sm²",
+        "3000 sm²",
+        "4000 sm²",
+        "4800 sm²"
+      ],
+      "t": 3,
+      "izoh": "Gorizontal kesim tag bilan tengdosh to'g'ri to'rtburchak beradi, balandlik unga ta'sir qilmaydi. Demak S = 60 · 80 = 4800 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='226.4' x2='135.4' y2='165' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='135.4' y1='165' x2='245' y2='165' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='135.4' y1='165' x2='135.4' y2='73.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='226.4' x2='164.6' y2='226.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='164.6' y1='226.4' x2='245' y2='165' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='226.4' x2='55' y2='135' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='164.6' y1='226.4' x2='164.6' y2='135' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='165' x2='245' y2='73.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='135' x2='164.6' y2='135' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='164.6' y1='135' x2='245' y2='73.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='73.6' x2='135.4' y2='73.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='135.4' y1='73.6' x2='55' y2='135' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,171.6 164.6,171.6 245,110.2 135.4,110.2' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='43.3' y='239.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='167.4' y='245.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259.8' y='171.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='124.9' y='179.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='40.2' y='136.7' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='175.1' y='128.3' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='256.7' y='68.2' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='132.6' y='62.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='103.8' y='241.9' font-size='13' fill='%23334155' text-anchor='end'%3E60 sm%3C/text%3E%3Ctext x='214.8' y='208' font-size='13' fill='%23334155' text-anchor='start'%3E80 sm%3C/text%3E%3Ctext x='170.2' y='196.4' font-size='13' fill='%23334155' text-anchor='start'%3E50 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-quti-tosiq",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#ae56441a"
+    },
+    {
+      "q": "Yuk konteyneri 12 m, 5 m va 4 m o'lchamli. Ichiga tag diagonali bo'ylab shiftgacha to'r tortildi; to'r yuzi qancha?",
+      "v": [
+        "52 m²",
+        "48 m²",
+        "60 m²",
+        "20 m²"
+      ],
+      "t": 0,
+      "izoh": "Tag diagonali √(12² + 5²) = √169 = 13 m. To'r to'g'ri to'rtburchak: tomonlari 13 m va 4 m, demak S = 13 · 4 = 52 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='189.3' x2='90.4' y2='162.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='90.4' y1='162.2' x2='245' y2='162.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='90.4' y1='162.2' x2='90.4' y2='110.7' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='189.3' x2='209.6' y2='189.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='209.6' y1='189.3' x2='245' y2='162.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='189.3' x2='55' y2='137.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='209.6' y1='189.3' x2='209.6' y2='137.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='162.2' x2='245' y2='110.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='137.8' x2='209.6' y2='137.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='209.6' y1='137.8' x2='245' y2='110.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='110.7' x2='90.4' y2='110.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='90.4' y1='110.7' x2='55' y2='137.8' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,189.3 55,137.8 245,110.7 245,162.2' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='41.1' y='199' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='222.1' y='201.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='259.9' y='168.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='75.7' y='169.3' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='40.1' y='139.8' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='224.3' y='138.7' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='258.9' y='109' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='77.9' y='106.5' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3Ctext x='126.9' y='205.1' font-size='13' fill='%23334155' text-anchor='end'%3E12 m%3C/text%3E%3Ctext x='239.6' y='183.9' font-size='13' fill='%23334155' text-anchor='start'%3E5 m%3C/text%3E%3Ctext x='222.3' y='170.4' font-size='13' fill='%23334155' text-anchor='start'%3E4 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-quti-tosiq",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#30c9931a"
+    },
+    {
+      "q": "Yog'och brusning ko'ndalang kesimi tomoni 10 sm bo'lgan kvadrat. Brus o'qiga 45° burchak ostida arralansa, kesim yuzi qancha?",
+      "v": [
+        "100√2 sm²",
+        "50√2 sm²",
+        "200 sm²",
+        "100 sm²"
+      ],
+      "t": 0,
+      "izoh": "Ko'ndalang kesim yuzi 10 · 10 = 100 sm² va u qiya kesimning proyeksiyasi. S_pr = S · cos 45° bo'lgani uchun S = 100 : (√2/2) = 100√2 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-yogoch-metall",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#9be0aa1e"
+    },
+    {
+      "q": "Metall zagotovka 4 sm, 4 sm va 30 sm o'lchamli. Uni uzunligi bo'ylab qarama-qarshi ikki qirra orqali tilishsa, kesim yuzi qancha?",
+      "v": [
+        "60√2 sm²",
+        "120√2 sm²",
+        "120 sm²",
+        "240 sm²"
+      ],
+      "t": 1,
+      "izoh": "Qarama-qarshi qirralar orqali o'tgan kesim diagonal kesim bo'ladi. Uning eni asos diagonali 4√2 sm, bo'yi 30 sm, demak S = 4√2 · 30 = 120√2 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='132.6' y1='239' x2='144.9' y2='229.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='144.9' y1='229.6' x2='167.4' y2='229.6' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='144.9' y1='229.6' x2='144.9' y2='61' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='132.6' y1='239' x2='155.1' y2='239' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='155.1' y1='239' x2='167.4' y2='229.6' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='132.6' y1='239' x2='132.6' y2='70.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='155.1' y1='239' x2='155.1' y2='70.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='167.4' y1='229.6' x2='167.4' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='132.6' y1='70.4' x2='155.1' y2='70.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='155.1' y1='70.4' x2='167.4' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='167.4' y1='61' x2='144.9' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='144.9' y1='61' x2='132.6' y2='70.4' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='132.6,239 132.6,70.4 167.4,61 167.4,229.6' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='129.7' y='257.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='155.9' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='170.6' y='248.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='144' y='248.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='129.4' y='59.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA₁%3C/text%3E%3Ctext x='156' y='59.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB₁%3C/text%3E%3Ctext x='170.3' y='50.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC₁%3C/text%3E%3Ctext x='144.1' y='50' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='142.9' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='164.6' y='167.6' font-size='13' fill='%23334155' text-anchor='start'%3E30 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-yogoch-metall",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#eb88032f"
+    },
+    {
+      "q": "Beton ustunning asosi tomoni 30 sm bo'lgan muntazam olti burchak, balandligi 4 m. Ustun katta diagonal bo'ylab tilinsa, kesim yuzi necha kvadrat metr?",
+      "v": [
+        "4,8 m²",
+        "12 m²",
+        "2,4 m²",
+        "1,2 m²"
+      ],
+      "t": 2,
+      "izoh": "Katta diagonal 2 · 30 = 60 sm, ya'ni 0,6 m. Kesim to'g'ri to'rtburchak bo'lgani uchun S = 0,6 · 4 = 2,4 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='198.7' y1='212.1' x2='173.5' y2='203.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='173.5' y1='203.2' x2='124.8' y2='212.1' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='173.5' y1='203.2' x2='173.5' y2='61' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='175.2' y1='230' x2='198.7' y2='212.1' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='175.2' y1='87.9' x2='198.7' y2='70' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='175.2' y1='230' x2='175.2' y2='87.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='198.7' y1='70' x2='173.5' y2='61' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='198.7' y1='212.1' x2='198.7' y2='70' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='173.5' y1='61' x2='124.8' y2='70' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='124.8' y1='212.1' x2='101.3' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='124.8' y1='70' x2='101.3' y2='87.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='124.8' y1='212.1' x2='124.8' y2='70' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='101.3' y1='230' x2='126.5' y2='239' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='101.3' y1='87.9' x2='126.5' y2='96.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='101.3' y1='230' x2='101.3' y2='87.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='126.5' y1='239' x2='175.2' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='126.5' y1='96.8' x2='175.2' y2='87.9' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='126.5' y1='239' x2='126.5' y2='96.8' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='175.2,230 175.2,87.9 124.8,70 124.8,212.1' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='179.7' y='248.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='207.9' y='227.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='179.5' y='220.9' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='119.2' y='230' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='180.8' y='78' font-size='13' fill='%23334155' text-anchor='start'%3EA₁%3C/text%3E%3Ctext x='120.3' y='59.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED₁%3C/text%3E%3Ctext x='192.9' y='236.6' font-size='13' fill='%23334155' text-anchor='start'%3E30 sm%3C/text%3E%3Ctext x='187.5' y='167.3' font-size='13' fill='%23334155' text-anchor='start'%3E4 m%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-yogoch-metall",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#da857983"
+    },
+    {
+      "q": "Marmar plita 200 sm, 100 sm va 3 sm o'lchamli. Plitani eng katta yog'iga parallel qilib ikkiga bo'lsak, kesim yuzi qancha?",
+      "v": [
+        "600 sm²",
+        "300 sm²",
+        "60000 sm²",
+        "20000 sm²"
+      ],
+      "t": 3,
+      "izoh": "Eng katta yoq tomonlari 200 sm va 100 sm bo'lgan to'g'ri to'rtburchak. Unga parallel kesim shu yoq bilan tengdosh, demak S = 200 · 100 = 20000 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='55' y1='166.8' x2='96' y2='135.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='96' y1='135.5' x2='245' y2='135.5' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='96' y1='135.5' x2='96' y2='133.2' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4'/%3E%3Cline x1='55' y1='166.8' x2='204' y2='166.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='204' y1='166.8' x2='245' y2='135.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='166.8' x2='55' y2='164.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='204' y1='166.8' x2='204' y2='164.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='135.5' x2='245' y2='133.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='164.5' x2='204' y2='164.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='204' y1='164.5' x2='245' y2='133.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='133.2' x2='96' y2='133.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='96' y1='133.2' x2='55' y2='164.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolygon points='55,165.6 204,165.6 245,134.4 96,134.4' fill='none' stroke='%235b4bc4' stroke-width='1.8'/%3E%3Ctext x='40.2' y='173.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='218.3' y='175.2' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='259.8' y='137.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='81.5' y='135.6' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='40.2' y='170.8' font-size='13' fill='%23334155' text-anchor='end'%3EA₁%3C/text%3E%3Ctext x='218.5' y='172.4' font-size='13' fill='%23334155' text-anchor='start'%3EB₁%3C/text%3E%3Ctext x='259.8' y='134.6' font-size='13' fill='%23334155' text-anchor='start'%3EC₁%3C/text%3E%3Ctext x='81.7' y='132.8' font-size='13' fill='%23334155' text-anchor='end'%3ED₁%3C/text%3E%3Ctext x='119.4' y='179' font-size='13' fill='%23334155' text-anchor='end'%3E200 sm%3C/text%3E%3Ctext x='237.5' y='155.3' font-size='13' fill='%23334155' text-anchor='start'%3E100 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-yogoch-metall",
+      "id": "matematika_ster_m10-kopyoqlarda-kesim-yasash-va-kesim#e6e18dfe"
+    }
+  ]
+}

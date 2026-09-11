@@ -1,0 +1,1609 @@
+{
+  "nom": "Arifmetik kvadrat ildiz",
+  "bolim": "Daraja, ildiz va logarifm",
+  "blok": "dari",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Anvar oilasining kvadrat shaklidagi tomorqasi qog'ozda 289 m² yuza bilan ko'rsatilgan. Shu tomorqaning bir tomoni necha metrga teng?",
+      "v": [
+        "17 m",
+        "144,5 m",
+        "68 m",
+        "289 m"
+      ],
+      "t": 0,
+      "izoh": "Kvadratning yuzasi S = a² bo'lgani uchun tomoni a = √S. Demak a = √289 = 17, chunki 17² = 289. Yuzani ikkiga bo'lish (144,5) yoki perimetr bilan chalkashtirish (68) tipik xato. Javob: 17 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-tomon-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#2e26eae8"
+    },
+    {
+      "q": "Dilnoza xonasiga kvadrat gilam sotib oldi, uning yuzasi hujjatda 1,96 m² deb yozilgan. Gilamning bir tomoni necha metr?",
+      "v": [
+        "0,98 m",
+        "1,4 m",
+        "0,49 m",
+        "3,92 m"
+      ],
+      "t": 1,
+      "izoh": "Tomonni topish uchun yuzadan arifmetik kvadrat ildiz chiqariladi: a = √1,96. 1,4² = 1,96 bo'lgani uchun a = 1,4 m. Yuzani ikkiga bo'lish 0,98 ni, to'rtga bo'lish 0,49 ni beradi — ikkalasi ham noto'g'ri. Javob: 1,4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-tomon-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#9c5009bf"
+    },
+    {
+      "q": "Maktab hovlisidagi kvadrat sport maydonchasining yuzasi 1225 m² ekani o'lchandi. Maydonchani sim to'r bilan aylantirib chiqish uchun necha metr to'r kerak bo'ladi?",
+      "v": [
+        "35 m",
+        "70 m",
+        "140 m",
+        "4900 m"
+      ],
+      "t": 2,
+      "izoh": "Avval tomon topiladi: a = √1225 = 35 m, chunki 35² = 1225. So'ng perimetr hisoblanadi: P = 4·35 = 140 m. Faqat tomonni aytib qo'yish (35) yoki ikkalangan tomonni berish (70) oxirgi qadamni tashlab ketish xatosi. Javob: 140 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-tomon-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#626aaafd"
+    },
+    {
+      "q": "Bosmaxonada kvadrat shaklidagi karton varaq tayyorlandi va uning yuzasi 0,64 m² chiqdi. Varaqning tomoni necha santimetrga teng?",
+      "v": [
+        "8 sm",
+        "800 sm",
+        "80 sm",
+        "0,8 sm"
+      ],
+      "t": 2,
+      "izoh": "Tomon a = √0,64 = 0,8 m, chunki 0,8² = 0,64. Endi metrni santimetrga o'tkazamiz: 0,8 m = 0,8·100 = 80 sm. Birlikni aylantirmaslik 0,8 ni, noto'g'ri aylantirish 8 yoki 800 ni beradi. Javob: 80 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-tomon-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#a0b3bd45"
+    },
+    {
+      "q": "√12 · √3 ko'paytmaning qiymatini ildizlarning ko'paytma xossasidan foydalanib hisoblang.",
+      "v": [
+        "6",
+        "36",
+        "√15",
+        "15"
+      ],
+      "t": 0,
+      "izoh": "Ildizlarning ko'paytma xossasi: √a · √b = √(ab). Demak √12 · √3 = √36 = 6. Ildiz belgisini tushirib qoldirish 36 ni, ildiz ostida sonlarni qo'shib yuborish √15 ni beradi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-kopaytma-xossasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#fc763c42"
+    },
+    {
+      "q": "Duradgor to'g'ri to'rtburchak shaklidagi taxta bo'lagini o'lchadi: eni √8 dm, bo'yi esa √18 dm chiqdi. Taxta bo'lagining yuzasi necha kvadrat detsimetr?",
+      "v": [
+        "26",
+        "√26",
+        "12",
+        "144"
+      ],
+      "t": 2,
+      "izoh": "Yuza S = a·b = √8 · √18 = √(8·18) = √144 = 12 dm². Tomonlarni qo'shib yuborish 26 yoki √26 ni beradi, ildizni ochmasdan qoldirish 144 ni beradi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-kopaytma-xossasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#0d352c77"
+    },
+    {
+      "q": "√2 · √50 ko'paytmani hisoblab, to'g'ri natijani ko'rsating.",
+      "v": [
+        "√52",
+        "52",
+        "100",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "√a · √b = √(ab) xossasiga ko'ra √2 · √50 = √100 = 10. Ildiz ostida qo'shish (√52) yoki ildizni umuman chiqarmaslik (100) tipik xato. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-kopaytma-xossasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#58d5dc52"
+    },
+    {
+      "q": "Karim uy vazifasida √27 · √3 ifodani soddalashtirishi kerak, lekin ildizlarni alohida taqriban hisoblamoqchi. Aslida bu ko'paytma nechaga teng?",
+      "v": [
+        "√30",
+        "9",
+        "81",
+        "30"
+      ],
+      "t": 1,
+      "izoh": "Ildizlarni taqriban hisoblash shart emas: √27 · √3 = √(27·3) = √81 = 9. Ildiz ostida qo'shib yuborsa √30, ildizni chiqarmasa 81 chiqadi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-kopaytma-xossasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#52f93663"
+    },
+    {
+      "q": "√98 : √2 bo'linmaning qiymati nechaga teng ekanini aniqlang.",
+      "v": [
+        "√96",
+        "7",
+        "49",
+        "96"
+      ],
+      "t": 1,
+      "izoh": "Ildizlarning bo'linma xossasi: √a : √b = √(a:b). Demak √98 : √2 = √49 = 7. Ildiz ostida ayirish √96 ni, ildizni chiqarmaslik 49 ni beradi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-bolinma-xossasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#f034cb8b"
+    },
+    {
+      "q": "Fermer issiqxonasining to'g'ri to'rtburchak shaklidagi poli yuzasi √2400 m², eni esa √96 m deb belgilangan. Polning bo'yi necha metrga teng?",
+      "v": [
+        "5 m",
+        "25 m",
+        "48 m",
+        "480 m"
+      ],
+      "t": 0,
+      "izoh": "Bo'y = yuza : en = √2400 : √96 = √(2400:96) = √25 = 5 m. Ildizni chiqarmasdan qoldirish 25 ni, bo'lish o'rniga ildiz ostida ayirish √2304 = 48 ni, ko'paytirish esa √230400 = 480 ni beradi. Javob: 5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-bolinma-xossasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#9d5debf5"
+    },
+    {
+      "q": "Laboratoriyada Zilola oqim tezligini topish uchun √605 : √5 nisbatni hisoblashi kerak bo'ldi. Bu nisbat qanday songa teng?",
+      "v": [
+        "121",
+        "√600",
+        "11",
+        "600"
+      ],
+      "t": 2,
+      "izoh": "Bo'linma xossasiga ko'ra √605 : √5 = √(605:5) = √121 = 11. Bu yerda 121 = 11² ekanini eslash muhim. Ildiz ostida ayirish √600 ni, ildizni tushirib qoldirish 121 ni beradi. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-bolinma-xossasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#d0a35fee"
+    },
+    {
+      "q": "Ikki xil kvadrat maydonning yuzalari 128 m² va 8 m² ga teng. Katta maydonning tomoni kichik maydon tomonidan necha marta uzun ekanini aniqlang.",
+      "v": [
+        "16 marta",
+        "2 marta",
+        "4 marta",
+        "120 marta"
+      ],
+      "t": 2,
+      "izoh": "Tomonlar √128 m va √8 m. Ularning nisbati √128 : √8 = √(128:8) = √16 = 4. Yuzalar nisbatini to'g'ridan-to'g'ri olish 16 ni beradi, bu tomonlar emas yuzalar nisbati. Yuzalarni ayirish 120 ni beradi. Javob: 4 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-bolinma-xossasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#f23b1e20"
+    },
+    {
+      "q": "√72 ifodani ildiz ostidan ko'paytuvchini chiqarish yo'li bilan eng sodda ko'rinishga keltiring.",
+      "v": [
+        "2√6",
+        "6√2",
+        "3√6",
+        "36√2"
+      ],
+      "t": 1,
+      "izoh": "72 sonini to'la kvadratga ajratamiz: 72 = 36·2. U holda √72 = √36 · √2 = 6√2. Ko'paytuvchilarni o'rin almashtirib yuborish 2√6 ni, ildiz ostidagi sonni chiqarmay qoldirish 36√2 ni beradi. Javob: 6√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytuvchini-chiqarish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#e0e97fd6"
+    },
+    {
+      "q": "Kvadrat shaklidagi kafel plitkasining yuzasi 200 sm² ga teng. Plitka tomonini ildiz ostidan ko'paytuvchi chiqarilgan holda ifodalang.",
+      "v": [
+        "2√10 sm",
+        "10√20 sm",
+        "10√2 sm",
+        "20 sm"
+      ],
+      "t": 2,
+      "izoh": "Tomon a = √200. 200 = 100·2 bo'lgani uchun √200 = √100 · √2 = 10√2 sm. Ko'paytuvchilarni almashtirib qo'yish 2√10 ni, 100 ni chiqargandan keyin ildiz ostida 20 qoldirish 10√20 ni beradi. Javob: 10√2 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytuvchini-chiqarish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#146432e0"
+    },
+    {
+      "q": "√128 ifodani ildiz ostidan eng katta to'la kvadratni chiqarib soddalashtiring.",
+      "v": [
+        "2√8",
+        "8√4",
+        "64√2",
+        "8√2"
+      ],
+      "t": 3,
+      "izoh": "128 = 64·2, bunda 64 — eng katta to'la kvadrat ko'paytuvchi. Demak √128 = √64 · √2 = 8√2. Ko'paytuvchilarni o'rin almashtirib yuborish 2√8 ni, ildiz ostidagi to'la kvadratni noto'g'ri tanlash 8√4 ni, ildizni umuman ochmaslik esa 64√2 ni beradi (chala chiqarish 4√8 ni berardi). Javob: 8√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytuvchini-chiqarish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#5dcedda1"
+    },
+    {
+      "q": "Rustam devorga suyalgan narvon uzunligini hisoblab, natijani √245 dm ko'rinishida yozib qo'ydi. Shu uzunlikni ildiz ostidan ko'paytuvchi chiqarilgan holda qaysi ifoda to'g'ri ko'rsatadi?",
+      "v": [
+        "5√7 dm",
+        "49√5 dm",
+        "7√5 dm",
+        "7√35 dm"
+      ],
+      "t": 2,
+      "izoh": "245 = 49·5 deb yoyamiz, chunki 49 — to'la kvadrat. U holda √245 = √49 · √5 = 7√5 dm. Ko'paytuvchilar o'rnini almashtirish 5√7 ni, 49 ni ildiz oldiga o'zgarishsiz chiqarish 49√5 ni beradi. Javob: 7√5 dm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytuvchini-chiqarish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#0bb60024"
+    },
+    {
+      "q": "5√3 ifodani ko'paytuvchini ildiz ostiga kiritib, bitta ildiz ko'rinishida yozing.",
+      "v": [
+        "√75",
+        "√15",
+        "√8",
+        "√45"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytuvchini ildiz ostiga kiritishda u kvadratga ko'tariladi: 5√3 = √(5²·3) = √75. Kvadratga ko'tarmasdan kiritish √15 ni, sonlarni qo'shib yuborish √8 ni, noto'g'ri ko'paytuvchini kvadratga ko'tarish √45 ni beradi. Javob: √75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytuvchini-kiritish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#e1276d63"
+    },
+    {
+      "q": "Geodezist chizmada kvadrat uchastka tomonini 3√7 sm deb belgiladi va uni bitta ildiz ostida yozmoqchi. Qaysi yozuv to'g'ri bo'ladi?",
+      "v": [
+        "√21",
+        "√10",
+        "√63",
+        "√147"
+      ],
+      "t": 2,
+      "izoh": "Ildiz oldidagi ko'paytuvchi ildiz ostiga kvadrati bilan kiradi: 3√7 = √(3²·7) = √63. Kvadratga ko'tarmay kiritish √21 ni, qo'shib yuborish √10 ni, 7 ni kvadratga ko'tarish √147 ni beradi. Javob: √63.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytuvchini-kiritish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#df581930"
+    },
+    {
+      "q": "a musbat son bo'lib, a√5 = √245 tenglik bajariladi. Shu shartga ko'ra a ning qiymatini toping.",
+      "v": [
+        "35",
+        "49",
+        "7",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Chap tomonni bitta ildiz ostiga kiritamiz: a√5 = √(5a²). Demak 5a² = 245, bundan a² = 49 va a musbat bo'lgani uchun a = 7. 245 ni 5 ga bo'lib to'xtab qolish 49 ni, 245 ni 7 ga bo'lish 35 ni beradi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytuvchini-kiritish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#5105440f"
+    },
+    {
+      "q": "Muhandis 2√30 m uzunlikdagi trosni hujjatda √120 m deb yozdi. Xuddi shu qoida bo'yicha 3√10 m uzunlikdagi tros qanday yoziladi?",
+      "v": [
+        "√30",
+        "√90",
+        "√13",
+        "√810"
+      ],
+      "t": 1,
+      "izoh": "Muhandis ko'paytuvchini ildiz ostiga kvadrati bilan kiritgan: 2√30 = √(4·30) = √120. Xuddi shunday 3√10 = √(3²·10) = √90. Kvadratga ko'tarmasdan kiritish √30 ni, koeffitsientni ikki marta kvadratga ko'tarish (3⁴·10 = 810) esa √810 ni beradi. Javob: √90.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytuvchini-kiritish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#8f1087c0"
+    },
+    {
+      "q": "√((−13)²) ifodaning qiymatini hisoblab, to'g'ri javobni belgilang.",
+      "v": [
+        "13",
+        "−13",
+        "169",
+        "±13"
+      ],
+      "t": 0,
+      "izoh": "Arifmetik kvadrat ildiz hech qachon manfiy bo'lmaydi: √(a²) = |a|. Demak √((−13)²) = |−13| = 13. Ildiz ostidagi minusni javobga ko'chirish −13 ni, kvadratni ochmaslik 169 ni beradi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ayniyat",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#7df5731c"
+    },
+    {
+      "q": "a = −7 bo'lganda √(a²) ifodaning qiymati nechaga teng bo'lishini aniqlang.",
+      "v": [
+        "−7",
+        "7",
+        "49",
+        "±7"
+      ],
+      "t": 1,
+      "izoh": "√(a²) = |a| ayniyatidan foydalanamiz. a = −7 bo'lgani uchun |a| = 7, ya'ni natija musbat son. Minusni saqlab qolish −7 ni, ildizni chiqarmaslik 49 ni beradi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ayniyat",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#54d565ef"
+    },
+    {
+      "q": "Meteorolog kechasi harorat o'zgarishini t = −9 daraja deb qayd etdi va hisobotda √(t²) ifodani hisobladi. U qanday son oldi?",
+      "v": [
+        "81",
+        "−9",
+        "3",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "√(t²) = |t| bo'lgani uchun natija haroratning o'zgarish kattaligi, ya'ni ishorasiz qiymati. |−9| = 9. Kvadratni ochmaslik 81 ni, ildizni ikki marta chiqarish 3 ni, minusni saqlash −9 ni beradi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ayniyat",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#27c911ee"
+    },
+    {
+      "q": "x soni manfiy bo'lsa, √(x²) ifoda quyidagi yozuvlardan qaysi biriga aynan teng bo'ladi?",
+      "v": [
+        "x",
+        "−x",
+        "x²",
+        "x + |x|"
+      ],
+      "t": 1,
+      "izoh": "Umumiy qoida: √(x²) = |x|. Manfiy x uchun modul ta'rifiga ko'ra |x| = −x, va bu ifoda musbat qiymat beradi. Modulni tushirib yuborib x deb yozish eng ko'p uchraydigan xato. Javob: −x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ayniyat",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#e01d01ca"
+    },
+    {
+      "q": "5√7 + 3√7 − 2√7 ifodani o'xshash hadlarni ixchamlash yo'li bilan soddalashtiring.",
+      "v": [
+        "6√21",
+        "10√7",
+        "6√7",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Ildizlari bir xil hadlar o'xshash hadlardir, ularning koeffitsientlari qo'shiladi: 5 + 3 − 2 = 6. Demak natija 6√7. Ildiz ostidagi sonlarni ham qo'shish 6√21 ni, ayirishni tashlab ketish 10√7 ni beradi. Javob: 6√7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-qoshish-ayirish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#9b9d4e2e"
+    },
+    {
+      "q": "Uchburchak shaklidagi gulzorning tomonlari 2√5 m, 4√5 m va 5√5 m ga teng. Gulzorni aylantirib chiqadigan bordyur uzunligini toping.",
+      "v": [
+        "11√5 m",
+        "11√15 m",
+        "11 m",
+        "40√5 m"
+      ],
+      "t": 0,
+      "izoh": "Perimetr tomonlar yig'indisiga teng: 2√5 + 4√5 + 5√5. Koeffitsientlar qo'shiladi: 2 + 4 + 5 = 11, ildiz o'zgarmaydi. Demak P = 11√5 m. Ildiz ostidagi sonlarni ham qo'shish 11√15 ni, ildizni tushirib qoldirish 11 ni beradi. Javob: 11√5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-qoshish-ayirish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#67a86df1"
+    },
+    {
+      "q": "√75 + √12 yig'indini avval ildiz ostidan ko'paytuvchi chiqarib, so'ngra soddalashtiring.",
+      "v": [
+        "√87",
+        "7√6",
+        "7√3",
+        "10√3"
+      ],
+      "t": 2,
+      "izoh": "√75 = √(25·3) = 5√3 va √12 = √(4·3) = 2√3. Endi o'xshash hadlar qo'shiladi: 5√3 + 2√3 = 7√3. Ildiz ostida qo'shish √87 ni, ildiz ostidagi sonlarni ko'paytirish 7√6 ni beradi. Javob: 7√3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-qoshish-ayirish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#42e8704d"
+    },
+    {
+      "q": "Bog'bon ikki uchastkani o'lchadi: birinchisining tomoni √147 m, ikkinchisiniki esa √108 m chiqdi. Birinchi tomon ikkinchisidan necha metrga uzun?",
+      "v": [
+        "13√3 m",
+        "√3 m",
+        "√39 m",
+        "39 m"
+      ],
+      "t": 1,
+      "izoh": "Har ikkala ildizni soddalashtiramiz: √147 = 7√3, √108 = 6√3. Farq 7√3 − 6√3 = √3 m. Ildiz ostida ayirish √39 ni, koeffitsientlarni qo'shib yuborish 13√3 ni beradi. Javob: √3 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizli-qoshish-ayirish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#cdd21d68"
+    },
+    {
+      "q": "3√5 va 5√2 sonlarini taqqoslab, ular orasidagi to'g'ri munosabatni ko'rsating.",
+      "v": [
+        "3√5 > 5√2",
+        "3√5 < 5√2",
+        "3√5 = 5√2",
+        "Bu sonlarni taqqoslab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Taqqoslash uchun ikkala sonni bitta ildiz ostiga kiritamiz: 3√5 = √(9·5) = √45, 5√2 = √(25·2) = √50. 45 < 50 bo'lgani uchun 3√5 < 5√2. Faqat ildiz oldidagi koeffitsientlarga qarash noto'g'ri xulosaga olib keladi. Javob: 3√5 < 5√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqqoslash-ikki-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#cd2b661c"
+    },
+    {
+      "q": "Ustaxonada ikki bo'lak sim bor: birinchisi 4√6 m, ikkinchisi 6√3 m uzunlikda. Qaysi bo'lak uzunroq ekanini aniqlang.",
+      "v": [
+        "Birinchi bo'lak, ya'ni 4√6 m",
+        "Ikkinchi bo'lak, ya'ni 6√3 m",
+        "Ikkala bo'lak teng uzunlikda",
+        "Uzunliklarni taqqoslab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytuvchini ildiz ostiga kiritamiz: 4√6 = √(16·6) = √96, 6√3 = √(36·3) = √108. 108 > 96 bo'lgani uchun ikkinchi bo'lak uzunroq. Koeffitsient katta bo'lsa son ham katta degan xulosa bu yerda tasodifan to'g'ri chiqadi, lekin uni tekshirmasdan aytish mumkin emas. Javob: ikkinchi bo'lak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-ikki-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#d032bb13"
+    },
+    {
+      "q": "2√11, 3√5, 5√2 va 4√3 sonlaridan eng kattasini tanlang.",
+      "v": [
+        "2√11",
+        "3√5",
+        "5√2",
+        "4√3"
+      ],
+      "t": 2,
+      "izoh": "Har birini bitta ildiz ostiga kiritamiz: 2√11 = √44, 3√5 = √45, 5√2 = √50, 4√3 = √48. Ildiz ostidagi sonlar solishtirilganda eng kattasi 50. Demak eng katta son 5√2. Javob: 5√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqqoslash-ikki-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#411702b8"
+    },
+    {
+      "q": "Zargar to'rt bo'lak simni o'lchadi: 5√3 sm, 4√5 sm, 3√7 sm va 2√17 sm. Eng qisqa bo'lak qaysi ekanini aniqlang.",
+      "v": [
+        "5√3 sm",
+        "4√5 sm",
+        "3√7 sm",
+        "2√17 sm"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytuvchilarni ildiz ostiga kiritamiz: 5√3 = √75, 4√5 = √80, 3√7 = √63, 2√17 = √68. Eng kichik ildiz osti soni 63, demak eng qisqasi 3√7 sm. Ildiz oldidagi koeffitsientga qarab 2√17 ni tanlash tipik xato. Javob: 3√7 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-ikki-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#07544230"
+    },
+    {
+      "q": "√x = 12 tenglamaning ildizini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "144",
+        "12",
+        "6",
+        "24"
+      ],
+      "t": 0,
+      "izoh": "Tenglamaning ikkala tomonini kvadratga ko'taramiz: (√x)² = 12², ya'ni x = 144. Tekshiramiz: √144 = 12, tenglik bajariladi. 12 ni javob deb qoldirish yoki uni ikkiga bo'lish tipik xato. Javob: 144.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-tenglama-sodda",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#c996beb0"
+    },
+    {
+      "q": "Sardor uy vazifasida √(x + 7) = 9 tenglamani yechmoqda. x ning qiymati nechaga teng bo'lishi kerak?",
+      "v": [
+        "88",
+        "2",
+        "74",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonni kvadratga ko'taramiz: x + 7 = 81. Bundan x = 81 − 7 = 74. Tekshirish: √(74 + 7) = √81 = 9. Qo'shish o'rniga 81 ga 7 ni qo'shish 88 ni, kvadratga ko'tarmaslik 2 yoki 16 ni beradi. Javob: 74.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-tenglama-sodda",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#4a4c9675"
+    },
+    {
+      "q": "√(3x − 5) = 4 tenglamaning yechimini topib, to'g'ri variantni belgilang.",
+      "v": [
+        "21",
+        "3",
+        "4",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomon kvadratga ko'tariladi: 3x − 5 = 16. Bundan 3x = 21 va x = 7. Tekshirish: √(3·7 − 5) = √16 = 4. 3x ning qiymatini javob deb olish 21 ni, kvadratga ko'tarmaslik 3 ni beradi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-tenglama-sodda",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#8cfcd09a"
+    },
+    {
+      "q": "Fizika darsida tushish vaqti taqriban t = √(h : 5) formula bilan hisoblanadi, bunda h — balandlik metrda. Tosh 3 sekundda yerga tushgan bo'lsa, h nechaga teng?",
+      "v": [
+        "15 m",
+        "9 m",
+        "1,8 m",
+        "45 m"
+      ],
+      "t": 3,
+      "izoh": "Formulaga t = 3 ni qo'yamiz: 3 = √(h : 5). Ikkala tomonni kvadratga ko'taramiz: 9 = h : 5, bundan h = 9·5 = 45 m. Kvadratga ko'tarishni unutib 3·5 qilish 15 ni, 5 ga ko'paytirishni unutish 9 ni, ko'paytirish o'rniga bo'lish 1,8 ni beradi. Javob: 45 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizli-tenglama-sodda",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#6263f5eb"
+    },
+    {
+      "q": "y musbat son bo'lganda √(49y²) ifoda qanday ko'rinishda soddalashishini aniqlang.",
+      "v": [
+        "49y",
+        "7y²",
+        "14y",
+        "7y"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytmadan ildiz chiqaramiz: √(49y²) = √49 · √(y²) = 7·|y|. y musbat bo'lgani uchun |y| = y, natija 7y. Ildiz belgisini faqat songa qo'llash 49y ni, darajani saqlab qolish 7y² ni beradi. Javob: 7y.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-ostida-ozgaruvchi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#b3e65f28"
+    },
+    {
+      "q": "a musbat son bo'lsa, √(25a⁴) ifodani eng sodda ko'rinishga keltiring.",
+      "v": [
+        "5a⁴",
+        "25a²",
+        "5a²",
+        "5a"
+      ],
+      "t": 2,
+      "izoh": "Ildizni ko'paytuvchilarga ajratamiz: √(25a⁴) = √25 · √(a⁴) = 5·a², chunki (a²)² = a⁴ va a musbat. Darajani o'zgarishsiz qoldirish 5a⁴ ni, darajani ortiqcha kamaytirish 5a ni beradi. Javob: 5a².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ostida-ozgaruvchi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#7205dab5"
+    },
+    {
+      "q": "Kvadrat shaklidagi xonaning yuzasi 36b² m² ga teng, bunda b musbat son. Xona tomonining uzunligini ifodalang.",
+      "v": [
+        "18b m",
+        "36b m",
+        "6b² m",
+        "6b m"
+      ],
+      "t": 3,
+      "izoh": "Tomon a = √S = √(36b²) = √36 · √(b²) = 6·|b|. b musbat bo'lgani uchun a = 6b m. Yuzani ikkiga bo'lish 18b ni, ildiz chiqarmaslik 36b ni, darajani saqlab qolish 6b² ni beradi. Javob: 6b m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-ostida-ozgaruvchi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#8a244ec9"
+    },
+    {
+      "q": "b soni manfiy bo'lgan holda √(16b²) ifodaning to'g'ri soddalashuvini tanlang.",
+      "v": [
+        "4b",
+        "4b²",
+        "−4b",
+        "16b"
+      ],
+      "t": 2,
+      "izoh": "√(16b²) = √16 · √(b²) = 4·|b|. b manfiy bo'lgani uchun |b| = −b, demak ifoda 4·(−b) = −4b ga teng va bu qiymat musbat. Modulni e'tiborsiz qoldirib 4b deb yozish natijani manfiy qilib qo'yadi. Javob: −4b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-ostida-ozgaruvchi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#5b8046f0"
+    },
+    {
+      "q": "6/√3 kasrning maxrajidan ildizni yo'qotib, ifodani soddalashtiring.",
+      "v": [
+        "2√3",
+        "6√3",
+        "3√3",
+        "√2"
+      ],
+      "t": 0,
+      "izoh": "Kasrning surat va maxrajini √3 ga ko'paytiramiz: 6·√3 / (√3·√3) = 6√3/3 = 2√3. Maxrajga bo'lishni unutish 6√3 ni, 6 ni 2 ga bo'lish 3√3 ni beradi. Javob: 2√3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxrajdan-qutulish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#26c5e51e"
+    },
+    {
+      "q": "1/√5 ifodani maxrajida ildiz qatnashmaydigan ko'rinishda yozing.",
+      "v": [
+        "√5",
+        "√5/5",
+        "1/5",
+        "5√5"
+      ],
+      "t": 1,
+      "izoh": "Surat va maxrajni √5 ga ko'paytiramiz: 1·√5 / (√5·√5) = √5/5. Maxrajdagi 5 ni tushirib qoldirish √5 ni, ildizni umuman yo'qotish 1/5 ni beradi. Javob: √5/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxrajdan-qutulish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#af451ef9"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi oynaning yuzasi 12 dm², eni esa √6 dm ga teng. Oynaning bo'yi qanday ifoda bilan beriladi?",
+      "v": [
+        "2√6 dm",
+        "12√6 dm",
+        "6√6 dm",
+        "√2 dm"
+      ],
+      "t": 0,
+      "izoh": "Bo'y = yuza : en = 12/√6. Maxrajdan qutulamiz: 12·√6 / (√6·√6) = 12√6/6 = 2√6 dm. Maxrajga bo'lishni unutish 12√6 ni, sonlarni ildiz ostida bo'lish √2 ni beradi. Javob: 2√6 dm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxrajdan-qutulish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#795b4dcd"
+    },
+    {
+      "q": "Ikki ifoda berilgan: a = 8/√2 va b = 3√2. Shu ifodalarning ayirmasi a − b nechaga teng bo'ladi?",
+      "v": [
+        "5√2",
+        "√2",
+        "√5",
+        "7√2"
+      ],
+      "t": 1,
+      "izoh": "Avval a ni soddalashtiramiz: 8/√2 = 8√2/2 = 4√2. Endi ayiramiz: 4√2 − 3√2 = √2. a ni soddalashtirmasdan 8 − 3 qilish 5√2 ni, koeffitsientlarni qo'shish 7√2 ni beradi. Javob: √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maxrajdan-qutulish",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#10234749"
+    },
+    {
+      "q": "√3·(√12 − √3) ifodaning qiymatini hisoblab, to'g'ri javobni belgilang.",
+      "v": [
+        "3",
+        "6",
+        "9",
+        "−3"
+      ],
+      "t": 0,
+      "izoh": "Qavsni ochamiz: √3·√12 − √3·√3 = √36 − 3 = 6 − 3 = 3. Ikkinchi hadni ayirishni unutish 6 ni, √3·√3 ni 9 deb olish esa boshqa xatolarga olib keladi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-kopaytirish-qavs",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#800d4669"
+    },
+    {
+      "q": "√5·(√20 + √5) ifodaning qiymatini qavsni ochish yo'li bilan toping.",
+      "v": [
+        "10",
+        "15",
+        "25",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Qavsni ochamiz: √5·√20 + √5·√5 = √100 + 5 = 10 + 5 = 15. Ikkinchi hadni qo'shishni unutish 10 ni, ildizlarni noto'g'ri ko'paytirish 25 ni beradi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-kopaytirish-qavs",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#07d26fb9"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi taxta bo'lagining eni √2 sm, bo'yi esa (√18 + √8) sm ga teng. Bo'lakning yuzasini hisoblang.",
+      "v": [
+        "√26 sm²",
+        "26 sm²",
+        "10 sm²",
+        "5√2 sm²"
+      ],
+      "t": 2,
+      "izoh": "Yuza = √2·(√18 + √8) = √36 + √16 = 6 + 4 = 10 sm². Ildiz ostidagi sonlarni qo'shib yuborish √26 yoki 26 ni, enga ko'paytirishni unutib faqat qavsni soddalashtirish 5√2 ni beradi. Javob: 10 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-kopaytirish-qavs",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#028702f1"
+    },
+    {
+      "q": "√2·(√8 + √50 − √18) ifodaning qiymatini hisoblang va to'g'ri variantni belgilang.",
+      "v": [
+        "4√2",
+        "4",
+        "40",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Avval qavs ichini soddalashtiramiz: √8 = 2√2, √50 = 5√2, √18 = 3√2, demak qavs 2√2 + 5√2 − 3√2 = 4√2. Endi √2·4√2 = 4·2 = 8. Oxirgi ko'paytirishni tashlab ketish 4√2 ni, ildizni hisobga olmaslik 4 ni beradi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizli-kopaytirish-qavs",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#d224e3cf"
+    },
+    {
+      "q": "(√11 − √6)(√11 + √6) ko'paytmaning qiymatini hisoblang.",
+      "v": [
+        "5",
+        "17",
+        "√5",
+        "√17"
+      ],
+      "t": 0,
+      "izoh": "Bu yig'indi va ayirma ko'paytmasi, ya'ni (a − b)(a + b) = a² − b². Demak natija (√11)² − (√6)² = 11 − 6 = 5. Sonlarni qo'shib yuborish 17 ni, ildiz belgisini saqlab qolish √5 ni beradi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirmalar-kopaytmasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#95be2496"
+    },
+    {
+      "q": "(√13 + 2)(√13 − 2) ifodaning qiymatini kvadratlar ayirmasi formulasidan foydalanib toping.",
+      "v": [
+        "9",
+        "11",
+        "17",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "(a + b)(a − b) = a² − b² formulasiga ko'ra natija (√13)² − 2² = 13 − 4 = 9. Ikkini kvadratga ko'tarmasdan ayirish 11 ni, qo'shib yuborish 17 ni beradi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirmalar-kopaytmasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#55398b25"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi bog' bo'lagining tomonlari (√30 + 3) m va (√30 − 3) m ga teng. Bo'lakning yuzasi necha kvadrat metr?",
+      "v": [
+        "39 m²",
+        "33 m²",
+        "27 m²",
+        "21 m²"
+      ],
+      "t": 3,
+      "izoh": "Yuza = (√30 + 3)(√30 − 3) = (√30)² − 3² = 30 − 9 = 21 m². Uchni kvadratga ko'tarmaslik 27 ni, ayirma o'rniga yig'indi olish 39 ni, uchni faqat bir marta qo'shish 33 ni beradi. Javob: 21 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirmalar-kopaytmasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#b2414b0c"
+    },
+    {
+      "q": "(√5 + √2)² ifodani yig'indi kvadrati formulasi bo'yicha yoyib, soddalashtiring.",
+      "v": [
+        "7",
+        "7 + √10",
+        "10 + 2√7",
+        "7 + 2√10"
+      ],
+      "t": 3,
+      "izoh": "(a + b)² = a² + 2ab + b² formulasini qo'llaymiz: (√5)² + 2·√5·√2 + (√2)² = 5 + 2√10 + 2 = 7 + 2√10. O'rta hadni tashlab ketish 7 ni, koeffitsient 2 ni yozmaslik 7 + √10 ni beradi. Javob: 7 + 2√10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayirmalar-kopaytmasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#2546fb14"
+    },
+    {
+      "q": "√50 soni qaysi ikki ketma-ket butun son orasida joylashganini aniqlang.",
+      "v": [
+        "6 va 7",
+        "7 va 8",
+        "8 va 9",
+        "24 va 26"
+      ],
+      "t": 1,
+      "izoh": "Eng yaqin to'la kvadratlarni topamiz: 49 < 50 < 64, ya'ni 7² < 50 < 8². Ildizning monotonligiga ko'ra 7 < √50 < 8. Sonni ikkiga bo'lib chamalash 24 va 26 ni beradi. Javob: 7 va 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-taqribiy-baholash",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#6a8fc04b"
+    },
+    {
+      "q": "Kvadrat shaklidagi maydonchaning yuzasi 150 m² ga teng. Uning tomoni qaysi ikki ketma-ket butun son orasida yotadi?",
+      "v": [
+        "11 va 12",
+        "13 va 14",
+        "74 va 76",
+        "12 va 13"
+      ],
+      "t": 3,
+      "izoh": "Tomon √150 ga teng. 144 < 150 < 169, ya'ni 12² < 150 < 13². Demak 12 < √150 < 13. Yuzani ikkiga bo'lib baholash 74 va 76 ni beradi, bu tomon emas. Javob: 12 va 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-taqribiy-baholash",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#86ea169c"
+    },
+    {
+      "q": "Ma'lumotnomada √2 ≈ 1,414 deb berilgan. Shundan foydalanib 5√2 ifodaning taqribiy qiymatini toping.",
+      "v": [
+        "7,07",
+        "70,7",
+        "2,828",
+        "1,414"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytuvchini ildiz qiymatiga ko'paytiramiz: 5·1,414 = 7,07. Vergul o'rnini adashtirish 70,7 ni, koeffitsientni 2 deb olish 2,828 ni, ko'paytirishni umuman bajarmaslik 1,414 ni beradi. Javob: 7,07.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-taqribiy-baholash",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#9aa5377b"
+    },
+    {
+      "q": "Do'kondor kvadrat shaklidagi oyna buyurtma qilmoqchi, oynaning yuzasi 320 dm² bo'lishi kerak. Oyna tomonini eng yaqin butun songa yaxlitlaganda necha detsimetr chiqadi?",
+      "v": [
+        "17 dm",
+        "18 dm",
+        "160 dm",
+        "80 dm"
+      ],
+      "t": 1,
+      "izoh": "Tomon √320 ga teng. 17² = 289, 18² = 324, ya'ni √320 son 17 va 18 orasida, lekin 324 ga ancha yaqin. Demak yaxlitlangan qiymat 18 dm. Yuzani ikkiga yoki to'rtga bo'lish 160 va 80 ni beradi. Javob: 18 dm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-taqribiy-baholash",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#577b4c1e"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchak shaklidagi bayroqchaning katetlari 9 sm va 12 sm ga teng. Uning gipotenuzasi necha santimetr?",
+      "v": [
+        "15 sm",
+        "21 sm",
+        "√21 sm",
+        "225 sm"
+      ],
+      "t": 0,
+      "izoh": "Pifagor teoremasiga ko'ra c = √(9² + 12²) = √(81 + 144) = √225 = 15 sm. Katetlarni oddiy qo'shish 21 ni, ildiz ostida qo'shish √21 ni, ildiz chiqarmaslik 225 ni beradi. Javob: 15 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "pifagor-masofa-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#bd62e500"
+    },
+    {
+      "q": "Xonaning to'g'ri to'rtburchak shaklidagi poli 5 m va 12 m tomonlarga ega. Polning burchakdan burchakka o'tkazilgan diagonali necha metr?",
+      "v": [
+        "17 m",
+        "13 m",
+        "√17 m",
+        "60 m"
+      ],
+      "t": 1,
+      "izoh": "Diagonal d = √(5² + 12²) = √(25 + 144) = √169 = 13 m. Tomonlarni qo'shish 17 ni, ildiz ostida qo'shish √17 ni, ko'paytirish 60 ni beradi. Javob: 13 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "pifagor-masofa-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#d6800aa3"
+    },
+    {
+      "q": "Nodir dala chekkasidagi ustundan g'arbga qarab 7 m, so'ngra shimolga qarab 24 m yurdi. U ustundan qanday to'g'ri chiziqli masofada turibdi?",
+      "v": [
+        "31 m",
+        "√31 m",
+        "25 m",
+        "625 m"
+      ],
+      "t": 2,
+      "izoh": "Yo'nalishlar o'zaro perpendikulyar, shuning uchun masofa gipotenuza bo'ladi: √(7² + 24²) = √(49 + 576) = √625 = 25 m. Masofalarni qo'shish 31 ni, ildiz chiqarmaslik 625 ni beradi. Javob: 25 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "pifagor-masofa-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#fffe70a0"
+    },
+    {
+      "q": "Kvadrat shaklidagi xontaxta qopqog'ining tomoni 9 dm ga teng. Qopqoqning diagonali qanday ifoda bilan beriladi?",
+      "v": [
+        "18 dm",
+        "√18 dm",
+        "9√2 dm",
+        "81√2 dm"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat diagonali d = √(a² + a²) = √(2a²) = a√2. Bu yerda a = 9, demak d = 9√2 dm. Tomonni ikkilantirish 18 ni, ildizni faqat 2 ga qo'llab a ni kvadratda qoldirish 81√2 ni beradi. Javob: 9√2 dm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "pifagor-masofa-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#1cadb904"
+    },
+    {
+      "q": "√(x − 5) ifoda qanday x qiymatlarida ma'noga ega bo'lishini aniqlang.",
+      "v": [
+        "x ≥ 5",
+        "x > 5",
+        "x ≤ 5",
+        "x ≥ −5"
+      ],
+      "t": 0,
+      "izoh": "Arifmetik kvadrat ildiz faqat manfiy bo'lmagan sondan chiqariladi, ya'ni x − 5 ≥ 0. Bundan x ≥ 5. Tenglik holatini unutib x > 5 deb yozish x = 5 nuqtani noo'rin chiqarib tashlaydi, chunki √0 = 0 mavjud. Javob: x ≥ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-aniqlanish-sohasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#41ad91ba"
+    },
+    {
+      "q": "√(12 − 3x) ifoda aniqlangan bo'lishi uchun x qanday shartni qanoatlantirishi kerakligini toping.",
+      "v": [
+        "x ≥ 4",
+        "x ≤ 12",
+        "x ≤ 4",
+        "x ≥ −4"
+      ],
+      "t": 2,
+      "izoh": "Ildiz ostidagi ifoda manfiy bo'lmasligi kerak: 12 − 3x ≥ 0. Bundan 3x ≤ 12 va x ≤ 4. Manfiy songa bo'lishda tengsizlik ishorasini almashtirmaslik x ≥ 4 xatosini keltirib chiqaradi. Javob: x ≤ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-aniqlanish-sohasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#89e99855"
+    },
+    {
+      "q": "Muhandis dasturi kirish qiymati t bo'yicha √(2t − 14) ifodani hisoblaydi va manfiy ildiz ostida xato beradi. Dastur xato bermaydigan eng kichik butun t nechaga teng?",
+      "v": [
+        "14",
+        "6",
+        "7",
+        "28"
+      ],
+      "t": 2,
+      "izoh": "Dastur ishlashi uchun 2t − 14 ≥ 0 bo'lishi kerak, bundan 2t ≥ 14 va t ≥ 7. Eng kichik butun qiymat t = 7, chunki bunda ildiz ostida 0 hosil bo'ladi. Ikkiga bo'lishni unutish 14 ni, ikkiga ko'paytirish 28 ni beradi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-aniqlanish-sohasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#ba2b22bf"
+    },
+    {
+      "q": "√(x + 3) · √(6 − x) ko'paytma qaysi oraliqdagi x lar uchun ma'noga ega bo'lishini aniqlang.",
+      "v": [
+        "x ≥ −3",
+        "x ≤ 6",
+        "−6 ≤ x ≤ 3",
+        "−3 ≤ x ≤ 6"
+      ],
+      "t": 3,
+      "izoh": "Har ikkala ildiz bir vaqtda aniqlangan bo'lishi kerak: x + 3 ≥ 0 va 6 − x ≥ 0. Birinchisidan x ≥ −3, ikkinchisidan x ≤ 6. Ikkala shartning kesishmasi −3 ≤ x ≤ 6. Faqat bitta shartni olish yarim javobga olib keladi. Javob: −3 ≤ x ≤ 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-aniqlanish-sohasi",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#a6abdc82"
+    },
+    {
+      "q": "√(√625) ifodaning qiymatini bosqichma-bosqich hisoblang.",
+      "v": [
+        "25",
+        "5",
+        "125",
+        "√5"
+      ],
+      "t": 1,
+      "izoh": "Avval ichki ildiz: √625 = 25, chunki 25² = 625. So'ng tashqi ildiz: √25 = 5. Bitta ildiz bilan to'xtash 25 ni, ortiqcha ildiz olish √5 ni beradi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-ichida-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#8e503997"
+    },
+    {
+      "q": "√(9·√16) ifodaning qiymati nechaga teng bo'lishini toping.",
+      "v": [
+        "12",
+        "36",
+        "6",
+        "√12"
+      ],
+      "t": 2,
+      "izoh": "Avval ichki ildiz hisoblanadi: √16 = 4. Endi √(9·4) = √36 = 6. Tashqi ildizni har bir ko'paytuvchiga alohida qo'llab 3·4 = 12 deb olish tipik xato, chunki 16 allaqachon ildiz ostida edi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-ichida-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#75cec14e"
+    },
+    {
+      "q": "√(25·√256) ifodani hisoblab, to'g'ri natijani ko'rsating.",
+      "v": [
+        "80",
+        "400",
+        "100",
+        "20"
+      ],
+      "t": 3,
+      "izoh": "Ichki ildiz: √256 = 16. So'ng √(25·16) = √400 = 20. Ildizlarni alohida chiqarib 5·16 = 80 deb olish yoki tashqi ildizni unutib 400 deb qoldirish tipik xatolar. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ichida-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#e4bc2de1"
+    },
+    {
+      "q": "Dasturchi ikki bosqichli hisob yozdi: kirish sonidan avval kvadrat ildiz, so'ngra natijadan yana kvadrat ildiz olinadi. Kirishga 10000 berilsa, dastur qanday son qaytaradi?",
+      "v": [
+        "100",
+        "1000",
+        "√10",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Birinchi bosqich: √10000 = 100. Ikkinchi bosqich: √100 = 10. Demak dastur 10 ni qaytaradi. Faqat birinchi bosqichda to'xtash 100 ni, uchinchi marta ildiz olish √10 ni beradi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-ichida-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#4d7c0caa"
+    },
+    {
+      "q": "Erkin tushayotgan jismning yerga urilish tezligi v = √(2gh) formula bilan topiladi, bunda g = 10 m/s². Jism 45 m balandlikdan tushsa, tezlik qanday bo'ladi?",
+      "v": [
+        "45 m/s",
+        "900 m/s",
+        "90 m/s",
+        "30 m/s"
+      ],
+      "t": 3,
+      "izoh": "Formulaga qiymatlarni qo'yamiz: v = √(2·10·45) = √900 = 30 m/s. Ildiz chiqarishni unutish 900 ni, faqat 2h ni hisoblab qo'yish 90 ni, balandlikni javob deb olish 45 ni beradi. Javob: 30 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-ildiz-kontekst",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#a5b731cf"
+    },
+    {
+      "q": "Kvadrat shaklidagi tokchaning yuzasi 0,49 m² ga teng bo'lsa, tomon uzunligi a = √S formula bilan topiladi. Tomon necha metr?",
+      "v": [
+        "0,7 m",
+        "0,245 m",
+        "7 m",
+        "0,07 m"
+      ],
+      "t": 0,
+      "izoh": "a = √0,49 ni hisoblaymiz. 0,7² = 0,49 bo'lgani uchun a = 0,7 m. Yuzani ikkiga bo'lish 0,245 ni, o'nli vergul o'rnini adashtirish 7 yoki 0,07 ni beradi. Javob: 0,7 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-ildiz-kontekst",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#e9302ab9"
+    },
+    {
+      "q": "Fizika to'garagida mayatnik tebranish davri taqriban T = 2√L formula bilan baholanadi, bunda L — ip uzunligi metrda. L = 2,25 m bo'lganda T necha sekund?",
+      "v": [
+        "4,5 s",
+        "3 s",
+        "1,5 s",
+        "2,25 s"
+      ],
+      "t": 1,
+      "izoh": "Avval ildiz hisoblanadi: √2,25 = 1,5, chunki 1,5² = 2,25. So'ng T = 2·1,5 = 3 s. Ildiz o'rniga uzunlikni ikkilantirish 4,5 ni, ikkiga ko'paytirishni unutish 1,5 ni beradi. Javob: 3 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-ildiz-kontekst",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#c4ce1d48"
+    },
+    {
+      "q": "Avtohalokat ekspertizasida tezlik tormoz izi uzunligi bo'yicha v = 12√s formula bilan baholanadi. Tormoz izi 4 marta uzun bo'lgan ikkinchi avtomobilning tezligi birinchisinikidan necha marta katta?",
+      "v": [
+        "4 marta",
+        "2 marta",
+        "16 marta",
+        "8 marta"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi holda v₂ = 12√(4s) = 12·√4·√s = 2·12√s = 2v₁. Ya'ni iz uzunligi 4 marta ortsa, tezlik faqat √4 = 2 marta ortadi. Iz nisbatini to'g'ridan-to'g'ri ko'chirish 4 ni, uni kvadratga ko'tarish 16 ni beradi. Javob: 2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "formula-ildiz-kontekst",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#40103ae9"
+    },
+    {
+      "q": "Sinf o'quvchilarining bo'yi bo'yicha to'plangan ma'lumotlarda dispersiya 36 sm² chiqdi. Standart chetlanish dispersiyaning kvadrat ildizi ekanini hisobga olib, uni toping.",
+      "v": [
+        "18 sm",
+        "36 sm",
+        "6 sm",
+        "72 sm"
+      ],
+      "t": 2,
+      "izoh": "Standart chetlanish σ = √D. Bu yerda D = 36, demak σ = √36 = 6 sm. Dispersiyani ikkiga bo'lish 18 ni, ildiz chiqarmaslik 36 ni, ikkilantirish 72 ni beradi. Javob: 6 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "statistika-ildiz-kontekst",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#5c46563e"
+    },
+    {
+      "q": "Zavod nazorat bo'limi detallar og'irligi bo'yicha dispersiyani 2,25 g² deb hisobladi. Shu ma'lumotlar uchun standart chetlanish nechaga teng?",
+      "v": [
+        "4,5 g",
+        "1,5 g",
+        "1,125 g",
+        "2,25 g"
+      ],
+      "t": 1,
+      "izoh": "Standart chetlanish σ = √D = √2,25. 1,5² = 2,25 bo'lgani uchun σ = 1,5 g. Dispersiyani ikkilantirish 4,5 ni, ikkiga bo'lish 1,125 ni, ildiz chiqarmaslik 2,25 ni beradi. Javob: 1,5 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "statistika-ildiz-kontekst",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#a00883dd"
+    },
+    {
+      "q": "Ikki sinfda yozilgan nazorat ishi ballari uchun dispersiya mos ravishda 49 va 121 ga teng chiqdi. Ularning standart chetlanishlari ayirmasi nechaga teng?",
+      "v": [
+        "72",
+        "√72",
+        "4",
+        "18"
+      ],
+      "t": 2,
+      "izoh": "Standart chetlanishlar: √49 = 7 va √121 = 11. Ularning ayirmasi 11 − 7 = 4. Avval dispersiyalarni ayirib keyin ildiz olish √72 ni, umuman ildiz olmaslik 72 ni, chetlanishlarni qo'shish 18 ni beradi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "statistika-ildiz-kontekst",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#a2c0e895"
+    },
+    {
+      "q": "Statistik hisobotda ballar bo'yicha standart chetlanish 9 ball deb ko'rsatilgan. Shu ko'rsatkichning kvadrati bo'lgan dispersiya nechaga teng?",
+      "v": [
+        "81",
+        "18",
+        "3",
+        "4,5"
+      ],
+      "t": 0,
+      "izoh": "σ = √D bo'lgani uchun D = σ². Demak D = 9² = 81. Bu yerda amal teskari yo'nalishda bajariladi: ildiz emas, kvadratga ko'tarish kerak. Yana bir marta ildiz olish 3 ni, ikkilantirish 18 ni beradi. Javob: 81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "statistika-ildiz-kontekst",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#9bbb79d8"
+    },
+    {
+      "q": "√(x² − 10x + 25) ifodani x > 5 shartida soddalashtiring va to'g'ri javobni tanlang.",
+      "v": [
+        "5 − x",
+        "x − 5",
+        "x + 5",
+        "x² − 5"
+      ],
+      "t": 1,
+      "izoh": "Ildiz ostidagi uchhad to'la kvadrat: x² − 10x + 25 = (x − 5)². Demak ifoda √((x − 5)²) = |x − 5| ga teng. x > 5 bo'lgani uchun x − 5 musbat va modul ochiladi: x − 5. Javob: x − 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ostidagi-tola-kvadrat",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#9f078c3f"
+    },
+    {
+      "q": "√(a² + 6a + 9) ifodaning qiymati a < −3 bo'lganda qaysi ifodaga teng bo'ladi?",
+      "v": [
+        "a + 3",
+        "a − 3",
+        "−a − 3",
+        "|a| + 3"
+      ],
+      "t": 2,
+      "izoh": "Ildiz ostidagi ifoda (a + 3)² ko'rinishida yoyiladi, demak natija |a + 3|. a < −3 bo'lganda a + 3 manfiy, shuning uchun |a + 3| = −(a + 3) = −a − 3. Modulni e'tibordan chetda qoldirib a + 3 deb yozish manfiy natija beradi. Javob: −a − 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-ostidagi-tola-kvadrat",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#5a128969"
+    },
+    {
+      "q": "√(49 − 14y + y²) ifodani y < 7 shartida eng sodda ko'rinishga keltiring.",
+      "v": [
+        "y − 7",
+        "7 − y",
+        "y + 7",
+        "49 − y"
+      ],
+      "t": 1,
+      "izoh": "Ildiz ostidagi ifoda (y − 7)² ga teng, chunki y² − 14y + 49 to'la kvadratdir. Demak natija |y − 7|. y < 7 bo'lgani uchun y − 7 manfiy va modul 7 − y ko'rinishida ochiladi. Javob: 7 − y.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ostidagi-tola-kvadrat",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#baad75d1"
+    },
+    {
+      "q": "√((m − 8)²) ifoda m > 8 bo'lganda qaysi ifodaga aynan teng bo'lishini aniqlang.",
+      "v": [
+        "8 − m",
+        "m − 8",
+        "m + 8",
+        "m² − 8"
+      ],
+      "t": 1,
+      "izoh": "√(A²) = |A| ayniyatiga ko'ra ifoda |m − 8| ga teng. m > 8 bo'lgani uchun m − 8 musbat, demak modul o'zgarishsiz ochiladi va natija m − 8 bo'ladi. Ishorani teskari olish 8 − m ni beradi. Javob: m − 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-ostidagi-tola-kvadrat",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#802b7296"
+    },
+    {
+      "q": "Kvadrat shaklidagi gulzorning yuzasi 9 marta kattalashtirildi. Yangi gulzorning tomoni eskisidan necha marta uzun bo'ladi?",
+      "v": [
+        "3 marta",
+        "9 marta",
+        "81 marta",
+        "4,5 marta"
+      ],
+      "t": 0,
+      "izoh": "Tomon a = √S bo'lgani uchun yuza 9 marta ortsa, tomon √9 = 3 marta ortadi. Yuza nisbatini to'g'ridan-to'g'ri ko'chirish 9 ni, uni kvadratga ko'tarish 81 ni, ikkiga bo'lish 4,5 ni beradi. Javob: 3 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-nisbat-marta",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#1132db4f"
+    },
+    {
+      "q": "Kvadrat shaklidagi suzish havzasining tomoni 5 marta uzaytirildi. Havzaning yuzasi necha marta ortadi?",
+      "v": [
+        "5 marta",
+        "10 marta",
+        "125 marta",
+        "25 marta"
+      ],
+      "t": 3,
+      "izoh": "Yuza S = a² bo'lgani uchun tomon 5 marta ortsa, yuza 5² = 25 marta ortadi. Bu yerda amal teskari yo'nalishda: ildiz emas, kvadratga ko'tarish kerak. Tomon nisbatini o'zgarishsiz olish 5 ni, ikkilantirish 10 ni beradi. Javob: 25 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-nisbat-marta",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#2362e772"
+    },
+    {
+      "q": "Ikki kvadrat xonaning yuzalari 16 : 25 nisbatda. Shu xonalarning tomonlari qanday nisbatda bo'ladi?",
+      "v": [
+        "4 : 5",
+        "16 : 25",
+        "2 : 5",
+        "5 : 4"
+      ],
+      "t": 0,
+      "izoh": "Tomonlar nisbati yuzalar nisbatining kvadrat ildiziga teng: √(16:25) = √16 : √25 = 4 : 5. Yuzalar nisbatini o'zgarishsiz ko'chirish 16 : 25 ni, nisbatni teskari yozish 5 : 4 ni beradi. Javob: 4 : 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-nisbat-marta",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#d9822e77"
+    },
+    {
+      "q": "Kvadrat shaklidagi bayroq yuzasi 44 foizga kattalashtirilishi kerak. Buning uchun bayroq tomoni necha foizga uzaytiriladi?",
+      "v": [
+        "22%",
+        "44%",
+        "120%",
+        "20%"
+      ],
+      "t": 3,
+      "izoh": "Yangi yuza eskisining 1,44 qismini tashkil qiladi. Tomon esa √1,44 = 1,2 marta, ya'ni 20 foizga ortadi. Foizni ikkiga bo'lish 22 ni, yuza foizini ko'chirish 44 ni, koeffitsientning o'zini foiz deb olish 120 ni beradi. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-nisbat-marta",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#4db18f7e"
+    },
+    {
+      "q": "√64, √50, √72 va √20 sonlaridan qaysi biri ratsional son ekanini aniqlang.",
+      "v": [
+        "√64",
+        "√50",
+        "√72",
+        "√20"
+      ],
+      "t": 0,
+      "izoh": "Kvadrat ildiz ratsional bo'lishi uchun ildiz ostidagi son to'la kvadrat bo'lishi kerak. 64 = 8², demak √64 = 8 — ratsional son. 50, 72 va 20 to'la kvadrat emas, ularning ildizi irratsional. Javob: √64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ratsional-irratsional-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#0562c5a7"
+    },
+    {
+      "q": "Quyidagi ildizlardan qaysi birining qiymati butun son bo'ladi: √169, √170, √171 yoki √172?",
+      "v": [
+        "√169",
+        "√170",
+        "√171",
+        "√172"
+      ],
+      "t": 0,
+      "izoh": "13² = 169 bo'lgani uchun √169 = 13, ya'ni butun son. Qolgan uch son 169 va 196 orasida yotadi, ular to'la kvadrat emas, shuning uchun ildizlari butun bo'lmaydi. Javob: √169.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ratsional-irratsional-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#71032277"
+    },
+    {
+      "q": "O'quvchi to'rtta kvadrat plitkaning yuzasini o'lchadi: 121 sm², 130 sm², 140 sm² va 150 sm². Qaysi plitkaning tomoni butun songa teng chiqadi?",
+      "v": [
+        "Yuzasi 121 sm² bo'lgani",
+        "Yuzasi 130 sm² bo'lgani",
+        "Yuzasi 140 sm² bo'lgani",
+        "Yuzasi 150 sm² bo'lgani"
+      ],
+      "t": 0,
+      "izoh": "Tomon a = √S. Faqat 121 to'la kvadrat: 11² = 121, demak tomon 11 sm. Qolgan yuzalar 121 va 144 orasida yoki undan yuqorida yotadi va to'la kvadrat emas. Javob: yuzasi 121 sm² bo'lgani.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ratsional-irratsional-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#291d7bc4"
+    },
+    {
+      "q": "n — natural son. √n butun son bo'lishi sharti bilan 200 dan kichik eng katta n qiymatini toping.",
+      "v": [
+        "199",
+        "190",
+        "169",
+        "196"
+      ],
+      "t": 3,
+      "izoh": "√n butun bo'lishi uchun n to'la kvadrat bo'lishi kerak. 200 dan kichik to'la kvadratlar: 169 = 13², 196 = 14². Keyingisi 225 = 15² bo'lib, u 200 dan katta. Demak eng kattasi 196. 200 dan kichik eng katta natural sonni olish 199 ni beradi. Javob: 196.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ratsional-irratsional-ildiz",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#d3cba3a4"
+    },
+    {
+      "q": "2√7, 3√3 va 4√2 sonlarini o'sish tartibida joylashtirgan qatorni tanlang.",
+      "v": [
+        "3√3 < 2√7 < 4√2",
+        "2√7 < 3√3 < 4√2",
+        "4√2 < 2√7 < 3√3",
+        "3√3 < 4√2 < 2√7"
+      ],
+      "t": 0,
+      "izoh": "Har birini bitta ildiz ostiga kiritamiz: 2√7 = √28, 3√3 = √27, 4√2 = √32. Ildiz ostidagi sonlar 27 < 28 < 32 tartibida joylashadi. Demak 3√3 < 2√7 < 4√2. Faqat koeffitsientlarga qarash noto'g'ri tartibga olib keladi. Javob: 3√3 < 2√7 < 4√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlarni-tartiblash",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#5ea438e9"
+    },
+    {
+      "q": "√3, √11 va √7 sonlarini kamayish tartibida to'g'ri joylashtirgan qatorni belgilang.",
+      "v": [
+        "√11 > √7 > √3",
+        "√3 > √7 > √11",
+        "√7 > √11 > √3",
+        "√11 > √3 > √7"
+      ],
+      "t": 0,
+      "izoh": "Kvadrat ildiz o'suvchi funksiya: ildiz ostidagi son katta bo'lsa, ildiz ham katta bo'ladi. 11 > 7 > 3 bo'lgani uchun √11 > √7 > √3. Tartibni teskari yozish yoki o'rtadagi sonni almashtirish tipik xato. Javob: √11 > √7 > √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlarni-tartiblash",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#4de739f1"
+    },
+    {
+      "q": "Uchta lenta bo'lagining uzunligi 5√2 dm, 2√13 dm va 3√6 dm ga teng. Ularni uzunligi bo'yicha o'sish tartibida joylashtiring.",
+      "v": [
+        "2√13 < 5√2 < 3√6",
+        "3√6 < 2√13 < 5√2",
+        "5√2 < 3√6 < 2√13",
+        "5√2 < 2√13 < 3√6"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytuvchilarni ildiz ostiga kiritamiz: 5√2 = √50, 2√13 = √52, 3√6 = √54. Ildiz ostidagi sonlar 50 < 52 < 54 tartibida, demak 5√2 < 2√13 < 3√6. Faqat ildiz ostidagi sonlarni (2, 13, 6) solishtirish 5√2 < 3√6 < 2√13 xatosiga, faqat koeffitsientlarga qarash esa 2√13 ni eng kichik deb hisoblashga olib keladi. Javob: 5√2 < 2√13 < 3√6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlarni-tartiblash",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#5139cbbb"
+    },
+    {
+      "q": "a = √20 + √5, b = 3√5 va c = √45 ifodalar berilgan. Shu uch son orasidagi to'g'ri munosabatni tanlang.",
+      "v": [
+        "a = b = c",
+        "a < b < c",
+        "a > b > c",
+        "a = b < c"
+      ],
+      "t": 0,
+      "izoh": "Har birini soddalashtiramiz: √20 = 2√5, demak a = 2√5 + √5 = 3√5. Shuningdek c = √45 = √(9·5) = 3√5. Uchala ifoda ham 3√5 ga teng chiqdi. Ko'rinishi har xil bo'lgani uchun ularni turlicha deb hisoblash tipik xato. Javob: a = b = c.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlarni-tartiblash",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#81f00493"
+    },
+    {
+      "q": "Mahsulot narxi ikki yil davomida har yili bir xil marta oshib, jami 6,25 marta qimmatlashdi. Bir yilda narx necha marta oshgan?",
+      "v": [
+        "2,5 marta",
+        "3,125 marta",
+        "6,25 marta",
+        "12,5 marta"
+      ],
+      "t": 0,
+      "izoh": "Yillik ko'payish koeffitsienti k bo'lsa, ikki yilda k² = 6,25 bo'ladi. Bundan k = √6,25 = 2,5, chunki 2,5² = 6,25. Jami koeffitsientni ikkiga bo'lish 3,125 ni, ikkilantirish 12,5 ni beradi. Javob: 2,5 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "iqtisod-ildiz-kontekst",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#062a9929"
+    },
+    {
+      "q": "Zavod quvvati ikki yil ichida har yili bir xil marta ortib, jami 2,25 marta oshdi. Bir yildagi ortish ko'rsatkichini toping.",
+      "v": [
+        "1,125 marta",
+        "2,25 marta",
+        "4,5 marta",
+        "1,5 marta"
+      ],
+      "t": 3,
+      "izoh": "Yillik koeffitsient k uchun k² = 2,25 tenglik o'rinli. Bundan k = √2,25 = 1,5, chunki 1,5² = 2,25. Umumiy koeffitsientni ikkiga bo'lish 1,125 ni, ikkiga ko'paytirish 4,5 ni beradi. Javob: 1,5 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "iqtisod-ildiz-kontekst",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#34313949"
+    },
+    {
+      "q": "Xonaning kvadrat shaklidagi poli bir xil kafellar bilan to'liq qoplandi va qoplama yuzasi 196 m² chiqdi. Polning bir tomoni necha metr?",
+      "v": [
+        "14 m",
+        "98 m",
+        "49 m",
+        "28 m"
+      ],
+      "t": 0,
+      "izoh": "Kvadratning tomoni a = √S = √196. 14² = 196 bo'lgani uchun a = 14 m. Yuzani ikkiga bo'lish 98 ni, to'rtga bo'lish 49 ni, tomonni ikkilantirish 28 ni beradi. Javob: 14 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "iqtisod-ildiz-kontekst",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#f2a2e949"
+    },
+    {
+      "q": "Tovar narxi ikki bosqichda bir xil foizga oshirilib, natijada jami 69 foizga qimmatlashdi. Har bosqichda narx necha foizga oshirilgan?",
+      "v": [
+        "34,5%",
+        "69%",
+        "13%",
+        "30%"
+      ],
+      "t": 3,
+      "izoh": "Umumiy koeffitsient 1,69 ga teng. Har bosqichdagi koeffitsient k uchun k² = 1,69, bundan k = √1,69 = 1,3. Demak har bosqichda narx 30 foizga oshgan. Umumiy foizni ikkiga bo'lish 34,5 ni beradi, bu esa noto'g'ri, chunki foizlar qo'shilmaydi. Javob: 30%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "iqtisod-ildiz-kontekst",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#ff0600cc"
+    },
+    {
+      "q": "√81 + √49 − √16 ifodaning qiymatini bosqichma-bosqich hisoblang.",
+      "v": [
+        "12",
+        "√114",
+        "20",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Har bir ildizni alohida hisoblaymiz: √81 = 9, √49 = 7, √16 = 4. Endi amallarni bajaramiz: 9 + 7 − 4 = 12. Ildiz ostidagi sonlar ustida amal bajarish √114 ni, ayirishni tashlab ketish 20 ni beradi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralash-ildizli-ifoda",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#d5efb601"
+    },
+    {
+      "q": "2√9 · 3√25 ko'paytmaning qiymatini hisoblab, to'g'ri javobni ko'rsating.",
+      "v": [
+        "30",
+        "225",
+        "15",
+        "90"
+      ],
+      "t": 3,
+      "izoh": "Avval ildizlarni hisoblaymiz: √9 = 3, √25 = 5. Demak ifoda 2·3 · 3·5 = 6·15 = 90 ga teng. Koeffitsientlarni e'tibordan chetda qoldirib faqat ildizlarni ko'paytirish 15 ni, ko'paytuvchilarning bir qismini tashlab ketish 30 ni beradi. Javob: 90.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-ildizli-ifoda",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#d89ca421"
+    },
+    {
+      "q": "Sport zaliga uchta kvadrat kurash gilami olindi, ularning yuzalari 16 m², 36 m² va 64 m². Uchala gilam tomonlarining yig'indisi necha metr?",
+      "v": [
+        "18 m",
+        "116 m",
+        "√116 m",
+        "9 m"
+      ],
+      "t": 0,
+      "izoh": "Har bir gilam tomonini alohida topamiz: √16 = 4, √36 = 6, √64 = 8. Tomonlar yig'indisi 4 + 6 + 8 = 18 m. Yuzalarni qo'shib yuborish 116 ni yoki √116 ni, natijani ikkiga bo'lish 9 ni beradi. Javob: 18 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralash-ildizli-ifoda",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#a475f9d4"
+    },
+    {
+      "q": "√(2² + 3² + 6²) ifodaning qiymatini hisoblab, to'g'ri variantni belgilang.",
+      "v": [
+        "11",
+        "√11",
+        "49",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Avval ildiz ostini hisoblaymiz: 4 + 9 + 36 = 49. So'ng √49 = 7. Har bir hadning ildizini alohida olib qo'shish 2 + 3 + 6 = 11 xatosini beradi, chunki √(a² + b²) ildizlar yig'indisiga teng emas. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-ildizli-ifoda",
+      "id": "matematika_dari_m02-arifmetik-kvadrat-ildiz#e925f061"
+    }
+  ]
+}

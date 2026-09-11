@@ -1,0 +1,1609 @@
+{
+  "nom": "Murakkab trigonometrik tenglamalar",
+  "bolim": "Trigonometriya",
+  "blok": "trig",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "2sin²x − 3sinx + 1 = 0 tenglamani sinx ga nisbatan kvadrat tenglama deb qarab yechganda sinx qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "1 va 2",
+        "−1 va 1/2",
+        "1 va 1/2",
+        "−1 va −1/2"
+      ],
+      "t": 2,
+      "izoh": "sinx = s deb belgilaymiz: 2s² − 3s + 1 = 0. Diskriminant D = 9 − 8 = 1, demak s = (3 ± 1)/4. Bundan s = 1 va s = 1/2. Ikkala qiymat ham [−1; 1] oraliqda yotadi, shuning uchun ikkalasi ham yaroqli. Javob: 1 va 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-sinusga-keltirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#874dfa1c"
+    },
+    {
+      "q": "2sin²x + sinx − 1 = 0 tenglamaning [0; π] kesmadagi barcha ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "π/2",
+        "π",
+        "3π/2",
+        "5π/2"
+      ],
+      "t": 1,
+      "izoh": "s = sinx bo'lsin: 2s² + s − 1 = 0, D = 1 + 8 = 9, s = (−1 ± 3)/4. Demak s = 1/2 yoki s = −1. Kesmada sinx = 1/2 dan x = π/6 va x = 5π/6 chiqadi; sinx = −1 ga mos x = 3π/2 bu kesmaga kirmaydi. Yig'indi π/6 + 5π/6 = π. Javob: π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-sinusga-keltirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#1c582b9c"
+    },
+    {
+      "q": "Mahmud fizika mashg'ulotida moddiy nuqtaning og'ishini y(t) = 2sin²t − sint − 1 formulasi bilan yozdi. y = 0 bo'ladigan paytlar t ∈ [0; 2π] oraliqda nechta?",
+      "v": [
+        "2",
+        "4",
+        "3",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "s = sint deb olsak, 2s² − s − 1 = 0 bo'ladi. Ko'paytmaga ajratsak (2s + 1)(s − 1) = 0, ya'ni s = 1 yoki s = −1/2. Oraliqda sint = 1 dan t = π/2, sint = −1/2 dan t = 7π/6 va t = 11π/6 chiqadi. Jami 3 ta payt. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-sinusga-keltirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#a65eedf1"
+    },
+    {
+      "q": "6sin²x − 5sinx + 1 = 0 tenglamada sinx uchun topilgan ikki qiymatning ko'paytmasi nechaga teng?",
+      "v": [
+        "5/6",
+        "1/6",
+        "6",
+        "1/5"
+      ],
+      "t": 1,
+      "izoh": "s = sinx bilan 6s² − 5s + 1 = 0 hosil bo'ladi. Vyet teoremasiga ko'ra ildizlar ko'paytmasi c/a = 1/6 ga teng. Tekshiramiz: D = 25 − 24 = 1, s = (5 ± 1)/12, ya'ni 1/2 va 1/3; ularning ko'paytmasi haqiqatan 1/6. Javob: 1/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-sinusga-keltirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#15069852"
+    },
+    {
+      "q": "2sin²x − 3cosx = 0 tenglamani cosx ga nisbatan keltirib yeching va umumiy yechimni ko'rsating.",
+      "v": [
+        "x = ±π/6 + 2πn, n ∈ Z",
+        "x = ±2π/3 + 2πn, n ∈ Z",
+        "x = ±π/3 + πn, n ∈ Z",
+        "x = ±π/3 + 2πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "sin²x = 1 − cos²x almashtiramiz: 2 − 2cos²x − 3cosx = 0, ya'ni 2cos²x + 3cosx − 2 = 0. D = 9 + 16 = 25, cosx = (−3 ± 5)/4. Bundan cosx = 1/2 yoki cosx = −2; ikkinchisi begona, chunki |cosx| ≤ 1. cosx = 1/2 dan x = ±π/3 + 2πn. Javob: x = ±π/3 + 2πn, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-kosinusga-keltirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#404efc6a"
+    },
+    {
+      "q": "3sin²x + 4cosx − 4 = 0 tenglamani cosx ga nisbatan kvadrat tenglamaga keltirsak, qaysi tenglama hosil bo'ladi?",
+      "v": [
+        "3cos²x − 4cosx + 1 = 0",
+        "3cos²x + 4cosx − 1 = 0",
+        "3cos²x + 4cosx − 7 = 0",
+        "3cos²x − 4cosx − 1 = 0"
+      ],
+      "t": 0,
+      "izoh": "sin²x o'rniga 1 − cos²x qo'yamiz: 3(1 − cos²x) + 4cosx − 4 = 0. Qavsni ochamiz: 3 − 3cos²x + 4cosx − 4 = 0, ya'ni −3cos²x + 4cosx − 1 = 0. Ikkala tomonni −1 ga ko'paytiramiz va 3cos²x − 4cosx + 1 = 0 hosil bo'ladi. Javob: shu tenglama.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-kosinusga-keltirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#378b5b44"
+    },
+    {
+      "q": "Anvar yasagan mayatnikning tebranish energiyasi E(t) = 4sin²t + 4cost + 4 birlik bilan o'lchanadi. E = 9 bo'lgan paytlarda cost qanday qiymatga ega bo'ladi?",
+      "v": [
+        "−1/2",
+        "1/4",
+        "1/2",
+        "−1/4"
+      ],
+      "t": 2,
+      "izoh": "4(1 − cos²t) + 4cost + 4 = 9 tenglamani yozamiz. Soddalashtirsak −4cos²t + 4cost − 1 = 0, ya'ni 4cos²t − 4cost + 1 = 0. Bu (2cost − 1)² = 0 to'la kvadrat, demak 2cost = 1 va cost = 1/2. E(t) ning eng katta qiymati ham aynan 9 ga teng, ya'ni energiya hech qachon manfiy bo'lmaydi. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-kosinusga-keltirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#56ce6e0f"
+    },
+    {
+      "q": "4sin²x + 8cosx − 7 = 0 tenglamaning [0; 2π] kesmada yotgan ildizlari yig'indisini toping.",
+      "v": [
+        "4π/3",
+        "2π",
+        "π",
+        "5π/3"
+      ],
+      "t": 1,
+      "izoh": "sin²x = 1 − cos²x qo'ysak: 4 − 4cos²x + 8cosx − 7 = 0, ya'ni 4cos²x − 8cosx + 3 = 0. D = 64 − 48 = 16, cosx = (8 ± 4)/8, ya'ni 3/2 yoki 1/2. Birinchisi begona ildiz. cosx = 1/2 dan x = π/3 va x = 5π/3. Yig'indi π/3 + 5π/3 = 2π. Javob: 2π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-kosinusga-keltirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#5f2cf299"
+    },
+    {
+      "q": "tg²x − 4tgx + 3 = 0 tenglamaning umumiy yechimini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "x = π/4 + 2πn va x = arctg3 + 2πn, n ∈ Z",
+        "x = π/3 + πn va x = arctg4 + πn, n ∈ Z",
+        "x = π/4 + πn va x = arctg(−3) + πn, n ∈ Z",
+        "x = π/4 + πn va x = arctg3 + πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "z = tgx deb olsak z² − 4z + 3 = 0, bundan z = 1 yoki z = 3. tgx = 1 dan x = π/4 + πn, tgx = 3 dan x = arctg3 + πn. Tangens davri π ga teng, shuning uchun 2πn emas, πn yoziladi. Javob: x = π/4 + πn va x = arctg3 + πn, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-tangensga-keltirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#156bc857"
+    },
+    {
+      "q": "Tog' yo'lining ikki qismi qiyaligi tgα bilan o'lchanadi va bu qiyaliklar 50tg²α − 15tgα + 1 = 0 tenglamaning ildizlari. Ularning ko'paytmasi nechaga teng?",
+      "v": [
+        "3/10",
+        "1/50",
+        "50",
+        "1/15"
+      ],
+      "t": 1,
+      "izoh": "Tenglama tgα ga nisbatan kvadrat: 50z² − 15z + 1 = 0. Vyet teoremasiga ko'ra ildizlar ko'paytmasi c/a = 1/50 ga teng. Tekshiramiz: D = 225 − 200 = 25, z = (15 ± 5)/100, ya'ni 0,2 va 0,1 — ikkalasi ham real tog' yo'li qiyaligiga mos (11° va 6° atrofida). Ko'paytmasi 0,2 · 0,1 = 0,02 = 1/50. Javob: 1/50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-tangensga-keltirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#96fcc903"
+    },
+    {
+      "q": "tg²x − (1 + √3)·tgx + √3 = 0 tenglamaning (0; π/2) oraliqdagi ikkala ildizi yig'indisini toping.",
+      "v": [
+        "π/12",
+        "π/2",
+        "7π/12",
+        "5π/12"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytmaga ajratamiz: (tgx − 1)(tgx − √3) = 0. Demak tgx = 1 yoki tgx = √3. Berilgan oraliqda x = π/4 va x = π/3 chiqadi. Yig'indi π/4 + π/3 = 3π/12 + 4π/12 = 7π/12. Javob: 7π/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-tangensga-keltirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#befc8cf6"
+    },
+    {
+      "q": "2tg²x + 3tgx − 2 = 0 tenglamaning [0; 2π) oraliqda nechta ildizi bor?",
+      "v": [
+        "4",
+        "2",
+        "3",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "z = tgx bilan 2z² + 3z − 2 = 0, D = 9 + 16 = 25, z = (−3 ± 5)/4. Demak tgx = 1/2 yoki tgx = −2. Tangens davri π bo'lgani uchun aylananing berilgan qismida har bir qiymat ikki martadan ildiz beradi. Jami 2 + 2 = 4 ta ildiz. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-tangensga-keltirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#058ae49f"
+    },
+    {
+      "q": "2cos²x + 3cosx − 2 = 0 tenglamani yechishda kvadrat tenglamaning qaysi ildizi begona bo'ladi va buning sababi nima?",
+      "v": [
+        "1/2, chunki u butun son emas",
+        "−2, chunki kosinus qiymati [−1; 1] dan chiqmaydi",
+        "−2, chunki kosinus manfiy bo'lmaydi",
+        "hech qaysi ildiz begona emas"
+      ],
+      "t": 1,
+      "izoh": "z = cosx bilan 2z² + 3z − 2 = 0 bo'ladi. D = 25, z = (−3 ± 5)/4, ya'ni z = 1/2 va z = −2. Kosinus faqat [−1; 1] oraliqda qiymat oladi, shuning uchun z = −2 begona ildiz. Faqat cosx = 1/2 qoladi. Javob: −2, chunki kosinus qiymati [−1; 1] dan chiqmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "begona-ildizni-ajratish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#38f523cb"
+    },
+    {
+      "q": "3sin²x − 7sinx − 6 = 0 tenglamada sinx ning yaroqli qiymatini toping va begona ildizni chiqarib tashlang.",
+      "v": [
+        "3",
+        "−2/3",
+        "2/3",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "z = sinx deb olamiz: 3z² − 7z − 6 = 0. D = 49 + 72 = 121, √121 = 11, z = (7 ± 11)/6. Bundan z = 3 yoki z = −2/3. Sinus 1 dan katta bo'lmagani uchun z = 3 begona ildiz. Javob: −2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "begona-ildizni-ajratish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#de84738d"
+    },
+    {
+      "q": "Injener aylanma mexanizm burchagi uchun 4cos²α − 9cosα + 2 = 0 tenglamani tuzdi. Mexanizm haqiqatda ishlashi uchun cosα qanday qiymatga ega bo'lishi kerak?",
+      "v": [
+        "2",
+        "−1/4",
+        "1/4",
+        "1/2"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat tenglamani yechamiz: D = 81 − 32 = 49, cosα = (9 ± 7)/8. Bundan cosα = 2 yoki cosα = 1/4. Kosinus 1 dan katta bo'lmaydi, shuning uchun 2 qiymati mumkin emas. Javob: 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "begona-ildizni-ajratish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#fd1c91d0"
+    },
+    {
+      "q": "sin²x + 4sinx + 5 = 0 tenglamaning ildizlari haqida qanday xulosa chiqarish to'g'ri bo'ladi?",
+      "v": [
+        "Cheksiz ko'p ildizi bor",
+        "Yagona ildizi bor",
+        "Ildizlari x = π/2 + 2πn ko'rinishida",
+        "Ildizi yo'q, chunki mos kvadrat tenglamaning diskriminanti manfiy"
+      ],
+      "t": 3,
+      "izoh": "z = sinx almashtirishdan keyin z² + 4z + 5 = 0 hosil bo'ladi. Uning diskriminanti D = 16 − 20 = −4 bo'lib, manfiy. Demak z uchun haqiqiy ildiz yo'q va sinx hech qanday haqiqiy qiymatda tenglamani qanoatlantirmaydi. Javob: ildizi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "begona-ildizni-ajratish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#04d5dcf5"
+    },
+    {
+      "q": "cos2x + 5cosx + 3 = 0 tenglamani ikkilangan burchak formulasi yordamida yechib, umumiy yechimini toping.",
+      "v": [
+        "x = ±π/3 + 2πn, n ∈ Z",
+        "x = ±2π/3 + 2πn, n ∈ Z",
+        "x = ±2π/3 + πn, n ∈ Z",
+        "x = ±5π/6 + 2πn, n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "cos2x = 2cos²x − 1 ni qo'yamiz: 2cos²x − 1 + 5cosx + 3 = 0, ya'ni 2cos²x + 5cosx + 2 = 0. D = 25 − 16 = 9, cosx = (−5 ± 3)/4, ya'ni −1/2 yoki −2. Ikkinchisi begona. cosx = −1/2 dan x = ±2π/3 + 2πn. Javob: x = ±2π/3 + 2πn, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilangan-burchak-orqali-kvadrat",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#7653328e"
+    },
+    {
+      "q": "cos2x + 4sinx = 3 tenglamaning [0; 2π] kesmada nechta ildizi borligini aniqlang.",
+      "v": [
+        "2",
+        "1",
+        "3",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "cos2x = 1 − 2sin²x ni qo'yamiz: 1 − 2sin²x + 4sinx = 3. Soddalashtirsak 2sin²x − 4sinx + 2 = 0, ya'ni sin²x − 2sinx + 1 = 0. Bu (sinx − 1)² = 0 to'la kvadrat, demak sinx = 1. Kesmada bunga faqat x = π/2 mos keladi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkilangan-burchak-orqali-kvadrat",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#037a2368"
+    },
+    {
+      "q": "cos2x = cosx tenglamaning [0; 2π) oraliqdagi barcha ildizlarini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "0; π/3; 5π/3",
+        "2π/3; 4π/3",
+        "0; 2π/3; 4π/3",
+        "0; π; 2π/3"
+      ],
+      "t": 2,
+      "izoh": "cos2x = 2cos²x − 1 ni qo'yib 2cos²x − cosx − 1 = 0 hosil qilamiz. Ko'paytmaga ajratsak (2cosx + 1)(cosx − 1) = 0, ya'ni cosx = −1/2 yoki cosx = 1. Berilgan oraliqda cosx = 1 dan x = 0, cosx = −1/2 dan x = 2π/3 va x = 4π/3 chiqadi. Javob: 0; 2π/3; 4π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilangan-burchak-orqali-kvadrat",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#9357ae13"
+    },
+    {
+      "q": "Radio uzatgichdagi signal ko'rsatkichi P(t) = cos2t + 7cost + 4 formulasi bilan hisoblanadi. Ko'rsatkich nolga aylangan paytlarda cost qanday qiymat oladi?",
+      "v": [
+        "−3",
+        "1/2",
+        "−1/2",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "cos2t = 2cos²t − 1 ni qo'yamiz: 2cos²t − 1 + 7cost + 4 = 0, ya'ni 2cos²t + 7cost + 3 = 0. D = 49 − 24 = 25, cost = (−7 ± 5)/4, ya'ni −1/2 yoki −3. Kosinus −1 dan kichik bo'lmaydi, shuning uchun −3 begona. Javob: −1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilangan-burchak-orqali-kvadrat",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#9d40c198"
+    },
+    {
+      "q": "√3·sinx − cosx = 0 tenglamaning umumiy yechimi qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "x = π/3 + πn, n ∈ Z",
+        "x = π/6 + 2πn, n ∈ Z",
+        "x = −π/6 + πn, n ∈ Z",
+        "x = π/6 + πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomonni cosx ga bo'lamiz; cosx = 0 bo'lganda sinx ham nol bo'lishi kerak edi, bu esa mumkin emas. Natijada √3·tgx − 1 = 0, ya'ni tgx = 1/√3. Bundan x = π/6 + πn, chunki tangensning davri π. Javob: x = π/6 + πn, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-jinsli-birinchi-daraja",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#a5378360"
+    },
+    {
+      "q": "Jismga ta'sir etuvchi ikki kuchning tashkil etuvchilari sinα + cosα = 0 shartini bajaradi. α burchakning (0; 2π) oraliqdagi qiymatlarini toping.",
+      "v": [
+        "π/4 va 5π/4",
+        "3π/4 va 7π/4",
+        "π/4 va 3π/4",
+        "3π/4 va 5π/4"
+      ],
+      "t": 1,
+      "izoh": "Tenglamani cosα ga bo'lamiz: tgα + 1 = 0, ya'ni tgα = −1. Umumiy yechim α = −π/4 + πn. Berilgan oraliqda n = 1 da α = 3π/4, n = 2 da α = 7π/4 chiqadi. Javob: 3π/4 va 7π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-jinsli-birinchi-daraja",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#795a27c2"
+    },
+    {
+      "q": "5sinx − 2cosx = 0 tenglamani yechish uchun ikkala tomon nimaga bo'linadi va natijada qanday tenglik hosil bo'ladi?",
+      "v": [
+        "sinx ga, ctgx = 2/5 hosil bo'ladi",
+        "cosx ga, tgx = 5/2 hosil bo'ladi",
+        "cosx ga, tgx = 2/5 hosil bo'ladi",
+        "5 ga, sinx = 2cosx hosil bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Bir jinsli birinchi darajali tenglamada ikkala tomon cosx ga bo'linadi. Natijada 5tgx − 2 = 0, ya'ni tgx = 2/5 hosil bo'ladi. Bu bo'lish ildiz yo'qotmaydi, chunki cosx = 0 bo'lganda sinx ham nolga teng bo'lishi kerak edi. Javob: cosx ga, tgx = 2/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-jinsli-birinchi-daraja",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#a3023266"
+    },
+    {
+      "q": "Qiya tekislikda jismga ta'sir etuvchi ikki kuch 4sinβ + 3cosβ = 0 shartini qanoatlantiradi. tgβ nechaga teng?",
+      "v": [
+        "3/4",
+        "−4/3",
+        "4/3",
+        "−3/4"
+      ],
+      "t": 3,
+      "izoh": "Tenglamani cosβ ga bo'lamiz: 4tgβ + 3 = 0. Bundan tgβ = −3/4. Bo'lish ildiz yo'qotmaydi, chunki cosβ = 0 bo'lganda sinβ ham nolga teng bo'lar edi. Javob: −3/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-jinsli-birinchi-daraja",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#50233ab1"
+    },
+    {
+      "q": "sin²x − 4sinx·cosx + 3cos²x = 0 tenglamani cos²x ga bo'lib yechganda tgx qanday qiymatlarni oladi?",
+      "v": [
+        "1 va 1/3",
+        "−1 va −3",
+        "1 va 3",
+        "2 va 3"
+      ],
+      "t": 2,
+      "izoh": "Avval cosx = 0 holatini tekshiramiz: u holda sin²x = 0 bo'lishi kerak, bu mumkin emas. Demak cos²x ga bo'lish mumkin va tg²x − 4tgx + 3 = 0 hosil bo'ladi. Bundan tgx = 1 yoki tgx = 3. Javob: 1 va 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-jinsli-ikkinchi-daraja",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#16871c0a"
+    },
+    {
+      "q": "2sin²x + sinx·cosx − cos²x = 0 tenglamaning yechimlar to'plamini to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "x = arctg2 + πn va x = π/4 + πn, n ∈ Z",
+        "x = arctg(1/2) + πn va x = −π/4 + πn, n ∈ Z",
+        "x = arctg(1/2) + πn va x = π/4 + πn, n ∈ Z",
+        "x = arctg(1/2) + 2πn va x = −π/4 + 2πn, n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "cos²x ga bo'lamiz: 2tg²x + tgx − 1 = 0. D = 1 + 8 = 9, tgx = (−1 ± 3)/4, ya'ni tgx = 1/2 yoki tgx = −1. Birinchisidan x = arctg(1/2) + πn, ikkinchisidan x = −π/4 + πn. Javob: shu ikki oila.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-jinsli-ikkinchi-daraja",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#8e106f4d"
+    },
+    {
+      "q": "sin²x = 3cos²x tenglamaning [0; π) oraliqda yotgan barcha ildizlarini toping.",
+      "v": [
+        "π/6 va 5π/6",
+        "π/3 va π/6",
+        "faqat π/3",
+        "π/3 va 2π/3"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomonni cos²x ga bo'lamiz: tg²x = 3, ya'ni tgx = √3 yoki tgx = −√3. Berilgan oraliqda tgx = √3 dan x = π/3, tgx = −√3 dan x = 2π/3 chiqadi. Javob: π/3 va 2π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-jinsli-ikkinchi-daraja",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#41ae1113"
+    },
+    {
+      "q": "Tomning qiyalik burchagi α uchun quruvchilar 6sin²α − 5sinα·cosα + cos²α = 0 munosabatini oldi. tgα ning mumkin bo'lgan qiymatlarini toping.",
+      "v": [
+        "1/2 va 1/3",
+        "2 va 3",
+        "1/2 va 1/6",
+        "−1/2 va −1/3"
+      ],
+      "t": 0,
+      "izoh": "cos²α ga bo'lamiz: 6tg²α − 5tgα + 1 = 0. D = 25 − 24 = 1, tgα = (5 ± 1)/12. Bundan tgα = 1/2 yoki tgα = 1/3. Ikkala ildiz ham musbat, ya'ni ikkala burchak ham o'tkir (α ≈ 26,6° va α ≈ 18,4°) — ikkalasi ham tom qiyaligi uchun mos. Javob: 1/2 va 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-jinsli-ikkinchi-daraja",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#47cb7896"
+    },
+    {
+      "q": "2sin²x − 5sinx·cosx + 7cos²x = 1 tenglamani bir jinsli ko'rinishga keltirib, tgx ning qiymatlarini toping.",
+      "v": [
+        "5 va 6",
+        "1/2 va 1/3",
+        "2 va 3",
+        "−2 va −3"
+      ],
+      "t": 2,
+      "izoh": "O'ng tomondagi 1 ni sin²x + cos²x deb yozamiz: 2sin²x − 5sinx·cosx + 7cos²x = sin²x + cos²x. Hadlarni bir tomonga o'tkazsak sin²x − 5sinx·cosx + 6cos²x = 0. cos²x ga bo'lamiz: tg²x − 5tgx + 6 = 0, bundan tgx = 2 yoki tgx = 3. Javob: 2 va 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-jinsli-ongi-nolmas",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#01a0fe98"
+    },
+    {
+      "q": "3sin²x − 3sinx·cosx − 2cos²x = 2 tenglamaning umumiy yechimini ko'rsating.",
+      "v": [
+        "x = arctg4 + πn va x = π/4 + πn, n ∈ Z",
+        "x = arctg(1/4) + πn va x = −π/4 + πn, n ∈ Z",
+        "x = arctg4 + 2πn va x = −π/4 + 2πn, n ∈ Z",
+        "x = arctg4 + πn va x = −π/4 + πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "O'ng tomondagi 2 ni 2(sin²x + cos²x) ko'rinishida yozamiz. U holda 3sin²x − 3sinx·cosx − 2cos²x = 2sin²x + 2cos²x, ya'ni sin²x − 3sinx·cosx − 4cos²x = 0. cos²x ga bo'lsak tg²x − 3tgx − 4 = 0, bundan tgx = 4 yoki tgx = −1. Javob: shu ikki oila.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-jinsli-ongi-nolmas",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#722a1fe1"
+    },
+    {
+      "q": "Optik asbobda nur tushish burchagi α uchun 3sin²α − 3sinα·cosα + 2cos²α = 1 munosabat olindi. tgα ning kichik qiymati nechaga teng?",
+      "v": [
+        "1/3",
+        "1/2",
+        "1",
+        "2/3"
+      ],
+      "t": 1,
+      "izoh": "1 ni sin²α + cos²α bilan almashtiramiz: 3sin²α − 3sinα·cosα + 2cos²α = sin²α + cos²α. Bundan 2sin²α − 3sinα·cosα + cos²α = 0. cos²α ga bo'lsak 2tg²α − 3tgα + 1 = 0, ya'ni tgα = 1 yoki tgα = 1/2. Kichigi 1/2. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-jinsli-ongi-nolmas",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#45297b44"
+    },
+    {
+      "q": "3sin²x + 5sinx·cosx + 8cos²x = 2 tenglamada o'ng tomonni 2(sin²x + cos²x) deb yozgach hosil bo'ladigan bir jinsli tenglamani ko'rsating.",
+      "v": [
+        "sin²x + 5sinx·cosx + 6cos²x = 0",
+        "sin²x + 5sinx·cosx + 10cos²x = 0",
+        "5sin²x + 5sinx·cosx + 6cos²x = 0",
+        "sin²x + 3sinx·cosx + 6cos²x = 0"
+      ],
+      "t": 0,
+      "izoh": "Tenglama 3sin²x + 5sinx·cosx + 8cos²x = 2sin²x + 2cos²x ko'rinishga keladi. O'xshash hadlarni bir tomonga yig'amiz: (3 − 2)sin²x + 5sinx·cosx + (8 − 2)cos²x = 0. Natijada sin²x + 5sinx·cosx + 6cos²x = 0 bo'ladi. Javob: shu tenglama.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-jinsli-ongi-nolmas",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#a597157d"
+    },
+    {
+      "q": "sin2x = sinx tenglamani ko'paytmaga ajratib yechganda hosil bo'ladigan yechimlar to'plamini toping.",
+      "v": [
+        "x = πn va x = ±π/6 + 2πn, n ∈ Z",
+        "x = 2πn va x = ±π/3 + 2πn, n ∈ Z",
+        "x = π/2 + πn va x = ±π/3 + 2πn, n ∈ Z",
+        "x = πn va x = ±π/3 + 2πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "sin2x = 2sinx·cosx bo'lgani uchun 2sinx·cosx − sinx = 0. Umumiy ko'paytuvchini chiqaramiz: sinx(2cosx − 1) = 0. Bundan sinx = 0, ya'ni x = πn, yoki cosx = 1/2, ya'ni x = ±π/3 + 2πn. Javob: shu ikki oila.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-kopaytuvchini-ajratish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#5167d913"
+    },
+    {
+      "q": "Mayatnik uchining tezligi v(t) = sin2t − cost formulasi bilan beriladi. Tezlik nolga aylanadigan t qiymatlari to'plamini toping.",
+      "v": [
+        "t = πn va t = (−1)ⁿ·π/6 + πn, n ∈ Z",
+        "t = π/2 + πn va t = (−1)ⁿ·π/6 + πn, n ∈ Z",
+        "t = π/2 + πn va t = ±π/6 + 2πn, n ∈ Z",
+        "t = π/2 + 2πn va t = (−1)ⁿ·π/3 + πn, n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "sin2t = 2sint·cost ekanini hisobga olamiz: 2sint·cost − cost = 0. Umumiy ko'paytuvchi cost bo'ladi: cost(2sint − 1) = 0. Bundan cost = 0, ya'ni t = π/2 + πn, yoki sint = 1/2, ya'ni t = (−1)ⁿ·π/6 + πn. Javob: shu ikki oila.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-kopaytuvchini-ajratish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#62d5a1e5"
+    },
+    {
+      "q": "cos²x + sinx·cosx = 0 tenglamani cosx umumiy ko'paytuvchisini chiqarish orqali yeching.",
+      "v": [
+        "x = π/2 + πn va x = π/4 + πn, n ∈ Z",
+        "x = πn va x = −π/4 + πn, n ∈ Z",
+        "x = π/2 + πn va x = −π/4 + πn, n ∈ Z",
+        "x = π/2 + 2πn va x = −π/4 + 2πn, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "Umumiy ko'paytuvchini chiqaramiz: cosx(cosx + sinx) = 0. Birinchi holda cosx = 0, ya'ni x = π/2 + πn. Ikkinchi holda cosx + sinx = 0, bundan tgx = −1 va x = −π/4 + πn. Javob: shu ikki oila.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-kopaytuvchini-ajratish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#fae6ba9d"
+    },
+    {
+      "q": "2sin²x = sinx tenglamaning [0; 2π] kesmadagi barcha ildizlari yig'indisini hisoblang.",
+      "v": [
+        "4π",
+        "3π",
+        "2π",
+        "7π/2"
+      ],
+      "t": 0,
+      "izoh": "Barcha hadlarni chap tomonga o'tkazamiz: 2sin²x − sinx = 0, ya'ni sinx(2sinx − 1) = 0. Bundan sinx = 0 yoki sinx = 1/2. Kesmada sinx = 0 dan x = 0, π va 2π; sinx = 1/2 dan x = π/6 va x = 5π/6. Yig'indi 0 + π + 2π + π/6 + 5π/6 = 4π. Javob: 4π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-kopaytuvchini-ajratish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#4120dfde"
+    },
+    {
+      "q": "2sinx·cosx − sinx + 2cosx − 1 = 0 tenglamani guruhlash usuli bilan ko'paytmaga ajratib yeching.",
+      "v": [
+        "x = ±π/3 + 2πn va x = −π/2 + 2πn, n ∈ Z",
+        "x = ±π/3 + 2πn va x = π/2 + 2πn, n ∈ Z",
+        "x = ±π/6 + 2πn va x = −π/2 + 2πn, n ∈ Z",
+        "x = ±π/3 + πn va x = −π/2 + πn, n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "Birinchi ikki hadni va oxirgi ikki hadni guruhlaymiz: sinx(2cosx − 1) + (2cosx − 1) = 0. Umumiy ko'paytuvchini chiqaramiz: (2cosx − 1)(sinx + 1) = 0. Bundan cosx = 1/2, ya'ni x = ±π/3 + 2πn, yoki sinx = −1, ya'ni x = −π/2 + 2πn. Javob: shu ikki oila.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "guruhlab-kopaytmaga-ajratish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#9e280751"
+    },
+    {
+      "q": "sin2x − 2cosx + 2sinx − 2 = 0 tenglamaning [0; 2π) oraliqdagi barcha ildizlarini toping.",
+      "v": [
+        "faqat π/2",
+        "π/2 va π",
+        "faqat π",
+        "0 va π"
+      ],
+      "t": 1,
+      "izoh": "sin2x = 2sinx·cosx ni qo'yamiz: 2sinx·cosx − 2cosx + 2sinx − 2 = 0. Guruhlaymiz: 2cosx(sinx − 1) + 2(sinx − 1) = 0, ya'ni 2(sinx − 1)(cosx + 1) = 0. Bundan sinx = 1 yoki cosx = −1. Berilgan oraliqda x = π/2 va x = π. Javob: π/2 va π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "guruhlab-kopaytmaga-ajratish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#bcd2f496"
+    },
+    {
+      "q": "Konditsioner sensori ko'rsatkichi f(t) = 2sint·cost + sint − 2cost − 1 formulasi bilan yoziladi. f = 0 bo'ladigan t qiymatlarini toping.",
+      "v": [
+        "t = ±π/3 + 2πn va t = π/2 + 2πn, n ∈ Z",
+        "t = ±2π/3 + 2πn va t = −π/2 + 2πn, n ∈ Z",
+        "t = ±2π/3 + 2πn va t = π/2 + 2πn, n ∈ Z",
+        "t = ±2π/3 + πn va t = π/2 + πn, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "Hadlarni guruhlaymiz: sint(2cost + 1) − (2cost + 1) = 0. Umumiy ko'paytuvchini chiqarsak (2cost + 1)(sint − 1) = 0. Bundan cost = −1/2, ya'ni t = ±2π/3 + 2πn, yoki sint = 1, ya'ni t = π/2 + 2πn. Javob: shu ikki oila.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "guruhlab-kopaytmaga-ajratish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#2b7ff755"
+    },
+    {
+      "q": "sinx·cosx − sinx − cosx + 1 = 0 tenglamani guruhlab yechganda qanday ko'paytuvchilar hosil bo'ladi?",
+      "v": [
+        "(cosx + 1)(sinx + 1) = 0",
+        "(cosx − 1)(sinx + 1) = 0",
+        "sinx·cosx·(1 − sinx) = 0",
+        "(cosx − 1)(sinx − 1) = 0"
+      ],
+      "t": 3,
+      "izoh": "Birinchi va uchinchi hadni, ikkinchi va to'rtinchi hadni guruhlaymiz: sinx(cosx − 1) − (cosx − 1) = 0. Umumiy ko'paytuvchi (cosx − 1) ni qavsdan chiqaramiz: (cosx − 1)(sinx − 1) = 0. Javob: (cosx − 1)(sinx − 1) = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "guruhlab-kopaytmaga-ajratish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#f1b57d23"
+    },
+    {
+      "q": "sin5x + sinx = 0 tenglamani yig'indini ko'paytmaga aylantirish formulasi yordamida yeching.",
+      "v": [
+        "x = πn/3 va x = π/4 + πn/2, n ∈ Z",
+        "x = πn/5 va x = π/4 + πn/2, n ∈ Z",
+        "x = πn/3 va x = π/2 + πn, n ∈ Z",
+        "x = πn/3 va x = π/4 + πn, n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "Yig'indini ko'paytmaga aylantiramiz: sin5x + sinx = 2sin3x·cos2x. Demak 2sin3x·cos2x = 0. Bundan sin3x = 0, ya'ni 3x = πn va x = πn/3, yoki cos2x = 0, ya'ni 2x = π/2 + πn va x = π/4 + πn/2. Javob: shu ikki oila.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindini-kopaytmaga-aylantirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#fcfcb502"
+    },
+    {
+      "q": "cos3x + cosx = 0 tenglamaning [0; π] kesmadagi ildizlari sonini toping.",
+      "v": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Yig'indini ko'paytmaga aylantiramiz: cos3x + cosx = 2cos2x·cosx, demak 2cos2x·cosx = 0. cos2x = 0 dan x = π/4 + πn/2 va kesmada x = π/4 hamda x = 3π/4 chiqadi. cosx = 0 dan x = π/2. Jami 3 ta ildiz. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindini-kopaytmaga-aylantirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#cd6ef7ad"
+    },
+    {
+      "q": "Ikki karnaydan chiqqan tovush bosimi p(t) = sin7t + sin3t formulasi bilan yoziladi. Bu ifodaning ko'paytma ko'rinishi qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "2sin5t·sin2t",
+        "2cos5t·cos2t",
+        "2sin5t·cos2t",
+        "2sin10t·cos4t"
+      ],
+      "t": 2,
+      "izoh": "Yig'indini ko'paytmaga aylantirish formulasi: sinA + sinB = 2sin((A + B)/2)·cos((A − B)/2). Bu yerda A = 7t va B = 3t, demak yarim yig'indi 5t, yarim ayirma 2t. Natijada sin7t + sin3t = 2sin5t·cos2t. Javob: 2sin5t·cos2t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindini-kopaytmaga-aylantirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#6116dc84"
+    },
+    {
+      "q": "sin4x = sin2x tenglamaning umumiy yechimini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "x = πn va x = π/6 + πn/3, n ∈ Z",
+        "x = πn va x = π/6 + πn, n ∈ Z",
+        "x = 2πn va x = π/6 + πn/3, n ∈ Z",
+        "x = πn va x = π/3 + πn/3, n ∈ Z"
+      ],
+      "t": 0,
+      "izoh": "Barcha hadni chap tomonga o'tkazamiz: sin4x − sin2x = 0. Ayirmani ko'paytmaga aylantiramiz: 2cos3x·sinx = 0. Bundan sinx = 0, ya'ni x = πn, yoki cos3x = 0, ya'ni 3x = π/2 + πn va x = π/6 + πn/3. Oxirgi variantdagi π/3 + πn/3 oilasi π/3 ning barcha karralarini beradi, lekin x = π/3 da sin(4π/3) = −0,866 va sin(2π/3) = 0,866 — teng emas, demak u yaroqsiz. Javob: shu ikki oila.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindini-kopaytmaga-aylantirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#52be0428"
+    },
+    {
+      "q": "cos5x − cosx = 0 tenglamani ayirmani ko'paytmaga aylantirish orqali yeching.",
+      "v": [
+        "x = πn/5 va x = πn/2, n ∈ Z",
+        "x = πn/3 va x = πn/2, n ∈ Z",
+        "x = πn/3 va x = πn, n ∈ Z",
+        "x = πn/6, n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "Ayirmani ko'paytmaga aylantiramiz: cos5x − cosx = −2sin3x·sin2x. Demak sin3x = 0 yoki sin2x = 0. Birinchisidan x = πn/3, ikkinchisidan x = πn/2 chiqadi. Bu ikki oila bir-birining ichida joylashmagan, shuning uchun ikkalasi ham javobda qoladi. Javob: x = πn/3 va x = πn/2, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirmani-kopaytmaga-aylantirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#d831c5e5"
+    },
+    {
+      "q": "sin5x − sin3x = 0 tenglamaning [0; π] kesmada nechta ildizi bor?",
+      "v": [
+        "6",
+        "4",
+        "5",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Ayirmani ko'paytmaga aylantiramiz: sin5x − sin3x = 2cos4x·sinx. cos4x = 0 dan x = π/8 + πn/4 va kesmada π/8, 3π/8, 5π/8, 7π/8 — to'rtta ildiz. sinx = 0 dan x = 0 va x = π — yana ikkita. Jami 6 ta ildiz. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirmani-kopaytmaga-aylantirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#ee0e9a51"
+    },
+    {
+      "q": "Ikki generator kuchlanishi U₁ = cos8t va U₂ = cos2t. Ular teng bo'ladigan paytni topish uchun cos8t − cos2t ifodasi ko'paytmaga aylantiriladi. To'g'ri ko'rinish qaysi?",
+      "v": [
+        "2sin5t·sin3t",
+        "−2sin5t·sin3t",
+        "−2cos5t·sin3t",
+        "2cos5t·cos3t"
+      ],
+      "t": 1,
+      "izoh": "Formula: cosA − cosB = −2sin((A + B)/2)·sin((A − B)/2). Bu yerda A = 8t va B = 2t, yarim yig'indi 5t, yarim ayirma 3t. Demak cos8t − cos2t = −2sin5t·sin3t. Minus ishorasini tushirib qoldirish eng ko'p uchraydigan xato. Javob: −2sin5t·sin3t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirmani-kopaytmaga-aylantirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#7c83d5a6"
+    },
+    {
+      "q": "cos3x = cos7x tenglamaning eng kichik musbat ildizini toping.",
+      "v": [
+        "π/2",
+        "π/10",
+        "π/5",
+        "π/7"
+      ],
+      "t": 2,
+      "izoh": "Tenglamani cos3x − cos7x = 0 ko'rinishida yozamiz va ayirmani ko'paytmaga aylantiramiz: 2sin5x·sin2x = 0. Bundan sin5x = 0, ya'ni x = πn/5, yoki sin2x = 0, ya'ni x = πn/2. Musbat ildizlarning eng kichigi π/5, chunki π/5 qiymati π/2 dan kichik. Javob: π/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayirmani-kopaytmaga-aylantirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#6e22fda5"
+    },
+    {
+      "q": "sinx + sin2x + sin3x = 0 tenglamani ko'paytmaga ajratib yechganda hosil bo'ladigan ildizlar oilalarini toping.",
+      "v": [
+        "x = πn va x = ±2π/3 + 2πn, n ∈ Z",
+        "x = πn/2 va x = ±π/3 + 2πn, n ∈ Z",
+        "x = πn/3 va x = ±2π/3 + 2πn, n ∈ Z",
+        "x = πn/2 va x = ±2π/3 + 2πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Chekka hadlarni juftlaymiz: sinx + sin3x = 2sin2x·cosx. Tenglama 2sin2x·cosx + sin2x = 0 ko'rinishga keladi, ya'ni sin2x(2cosx + 1) = 0. Bundan sin2x = 0, ya'ni x = πn/2, yoki cosx = −1/2, ya'ni x = ±2π/3 + 2πn. Javob: shu ikki oila.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-hadli-yigindini-kopaytmaga",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#73f42938"
+    },
+    {
+      "q": "cosx + cos2x + cos3x = 0 tenglamaning [0; π] kesmadagi ildizlari sonini aniqlang.",
+      "v": [
+        "5",
+        "3",
+        "2",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Chekka hadlarni juftlaymiz: cosx + cos3x = 2cos2x·cosx. Tenglama 2cos2x·cosx + cos2x = 0, ya'ni cos2x(2cosx + 1) = 0 bo'ladi. cos2x = 0 dan kesmada x = π/4 va x = 3π/4; cosx = −1/2 dan x = 2π/3. Jami 3 ta ildiz. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-hadli-yigindini-kopaytmaga",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#c0e078e9"
+    },
+    {
+      "q": "Uch xil chastotali tebranish yig'indisi S(t) = sin2t + sin4t + sin6t ko'rinishida berilgan. Bu ifodaning ko'paytmaga ajratilgan shakli qaysi?",
+      "v": [
+        "sin4t·(2cos2t + 1)",
+        "sin4t·(2cos2t − 1)",
+        "cos4t·(2sin2t + 1)",
+        "sin2t·(2cos4t + 1)"
+      ],
+      "t": 0,
+      "izoh": "Chekka hadlarni juftlaymiz: sin2t + sin6t = 2sin4t·cos2t. Unga o'rtadagi sin4t ni qo'shamiz va 2sin4t·cos2t + sin4t hosil bo'ladi. Umumiy ko'paytuvchi sin4t ni qavsdan chiqaramiz. Javob: sin4t·(2cos2t + 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-hadli-yigindini-kopaytmaga",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#b895d1fa"
+    },
+    {
+      "q": "sin3x − sinx = cos2x tenglamani ko'paytmaga ajratib yeching va umumiy yechimni ko'rsating.",
+      "v": [
+        "x = π/4 + πn va x = (−1)ⁿ·π/6 + πn, n ∈ Z",
+        "x = π/4 + πn/2 va x = ±π/6 + 2πn, n ∈ Z",
+        "x = π/4 + πn/2 va x = (−1)ⁿ·π/6 + πn, n ∈ Z",
+        "x = π/2 + πn va x = (−1)ⁿ·π/6 + πn, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "Chap tomonni ko'paytmaga aylantiramiz: sin3x − sinx = 2cos2x·sinx. Tenglama 2cos2x·sinx − cos2x = 0, ya'ni cos2x(2sinx − 1) = 0 bo'ladi. cos2x = 0 dan x = π/4 + πn/2, sinx = 1/2 dan x = (−1)ⁿ·π/6 + πn. Javob: shu ikki oila.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-hadli-yigindini-kopaytmaga",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#25cee6f1"
+    },
+    {
+      "q": "Tenglama yechimi x = π/2 + 2πn va x = −π/2 + 2πn ko'rinishida topildi. Bu ikki to'plamni bitta formula bilan qanday yozish mumkin?",
+      "v": [
+        "x = π/2 + 2πn, n ∈ Z",
+        "x = πn, n ∈ Z",
+        "x = π/2 + πn, n ∈ Z",
+        "x = π/4 + πn/2, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "Birinchi oila π/2, 5π/2, −3π/2 nuqtalarini, ikkinchisi −π/2, 3π/2, −5π/2 nuqtalarini beradi. Ikkalasi birgalikda π/2 dan boshlab har π qadamda takrorlanadigan nuqtalar to'plamini hosil qiladi. Demak umumiy yozuv x = π/2 + πn bo'ladi. Javob: x = π/2 + πn, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-toplamini-birlashtirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#a155a457"
+    },
+    {
+      "q": "Ko'paytmaga ajratish natijasida x = 2πn va x = π + 2πn ildizlari olindi. Bu to'plamlarni birlashtirgan yagona yozuv qaysi?",
+      "v": [
+        "x = 2πn, n ∈ Z",
+        "x = πn, n ∈ Z",
+        "x = πn/2, n ∈ Z",
+        "x = π/2 + πn, n ∈ Z"
+      ],
+      "t": 1,
+      "izoh": "Birinchi oila π ning juft karralarini (0, 2π, −2π), ikkinchisi toq karralarini (π, 3π, −π) beradi. Ular birgalikda π ning barcha butun karralarini qoplaydi. Shuning uchun javob x = πn ko'rinishida ixchamlashadi. Javob: x = πn, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-toplamini-birlashtirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#c38c6987"
+    },
+    {
+      "q": "sinx·cosx = 0 tenglamaning ikki oilasi x = πn va x = π/2 + πn ko'rinishida chiqdi. Ularning birlashmasini eng ixcham holda yozing.",
+      "v": [
+        "x = πn/4, n ∈ Z",
+        "x = π/2 + πn, n ∈ Z",
+        "x = πn, n ∈ Z",
+        "x = πn/2, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Birinchi oila 0, π, 2π nuqtalarini, ikkinchisi π/2 va 3π/2 nuqtalarini beradi. Ikkalasi qo'shilib π/2 qadamli to'plamni hosil qiladi: 0, π/2, π, 3π/2, 2π. Demak birlashma x = πn/2 ko'rinishida yoziladi. Javob: x = πn/2, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-toplamini-birlashtirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#f94e83dd"
+    },
+    {
+      "q": "Tenglamani yechishda x = πn/3 va x = πn ildiz to'plamlari hosil bo'ldi. Yakuniy javobni eng ixcham va to'g'ri ko'rinishda ko'rsating.",
+      "v": [
+        "x = πn/3, chunki ikkinchi to'plam birinchisining ichida joylashgan",
+        "x = πn, chunki bu to'plam kengroq",
+        "x = πn/6, n ∈ Z",
+        "ikkala to'plam alohida yoziladi, ularni birlashtirib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "x = πn to'plamining har bir nuqtasi (0, π, 2π) x = πn/3 to'plamida ham bor, chunki π soni π/3 ning uch karrasi. Demak ikkinchi oila birinchisining qismi bo'ladi va uni alohida yozish ortiqcha. Yakuniy javob kengroq to'plam bo'ladi. Javob: x = πn/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-toplamini-birlashtirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#5354af7a"
+    },
+    {
+      "q": "2cos²x − cosx − 1 = 0 tenglamaning [0; 2π) oraliqda nechta ildizi borligini aniqlang.",
+      "v": [
+        "4",
+        "3",
+        "2",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "z = cosx bilan 2z² − z − 1 = 0 hosil bo'ladi, ko'paytmaga ajratsak (2z + 1)(z − 1) = 0. Demak cosx = 1 yoki cosx = −1/2. Berilgan oraliqda cosx = 1 dan x = 0, cosx = −1/2 dan x = 2π/3 va x = 4π/3 chiqadi. Jami 3 ta ildiz. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-ildizlar-soni",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#cec2afc7"
+    },
+    {
+      "q": "sin2x = cosx tenglamaning [0; 2π) oraliqdagi ildizlari soni nechta?",
+      "v": [
+        "4",
+        "6",
+        "2",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "sin2x = 2sinx·cosx ni qo'yamiz va cosx(2sinx − 1) = 0 hosil qilamiz. cosx = 0 dan x = π/2 va x = 3π/2 chiqadi; sinx = 1/2 dan x = π/6 va x = 5π/6. Jami 4 ta ildiz. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-ildizlar-soni",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#36eabb4e"
+    },
+    {
+      "q": "3tg²x − 2√3·tgx − 3 = 0 tenglamaning [0; 2π) oraliqdagi ildizlari sonini aniqlang.",
+      "v": [
+        "8",
+        "4",
+        "2",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "z = tgx bilan 3z² − 2√3·z − 3 = 0 hosil bo'ladi. D = 12 + 36 = 48, √48 = 4√3, demak z = (2√3 ± 4√3)/6. Bundan z = √3 yoki z = −√3/3. Tangens davri π bo'lgani uchun har bir qiymat berilgan oraliqda ikki martadan ildiz beradi. Jami 4 ta. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-ildizlar-soni",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#0d94d613"
+    },
+    {
+      "q": "sin²x − sinx·cosx = 0 tenglamaning (0; 2π) ochiq oralig'ida nechta ildizi bor?",
+      "v": [
+        "6",
+        "5",
+        "3",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "Umumiy ko'paytuvchini chiqaramiz: sinx(sinx − cosx) = 0. sinx = 0 dan ochiq oraliqda faqat x = π qoladi, chunki 0 va 2π chetlari kirmaydi. sinx = cosx dan tgx = 1 va x = π/4 hamda x = 5π/4. Jami 3 ta ildiz. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-ildizlar-soni",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#0560e1ce"
+    },
+    {
+      "q": "2cos²x + cosx − 1 = 0 tenglamaning eng kichik musbat ildizini toping.",
+      "v": [
+        "π/6",
+        "π",
+        "π/3",
+        "2π/3"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytmaga ajratamiz: (2cosx − 1)(cosx + 1) = 0. Bundan cosx = 1/2 yoki cosx = −1. Birinchisidan eng kichik musbat ildiz x = π/3, ikkinchisidan x = π. π/3 qiymati π dan kichik bo'lgani uchun javob π/3. Javob: π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-musbat-ildiz",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#31d0082b"
+    },
+    {
+      "q": "Prujinaga osilgan yukning og'ishi s(t) = sin2t + sint santimetr bilan o'lchanadi. Yuk birinchi marta muvozanat holatiga qaytadigan musbat t qiymatini toping.",
+      "v": [
+        "2π/3",
+        "π/3",
+        "π",
+        "π/2"
+      ],
+      "t": 0,
+      "izoh": "s = 0 deb yozamiz: 2sint·cost + sint = 0, ya'ni sint(2cost + 1) = 0. Bundan sint = 0, ya'ni t = πn, yoki cost = −1/2, ya'ni t = ±2π/3 + 2πn. Musbat ildizlar 2π/3 va π bo'lib, ulardan kichigi 2π/3. Javob: 2π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-kichik-musbat-ildiz",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#6475a16c"
+    },
+    {
+      "q": "2sin²x − 3sinx + 1 = 0 tenglamaning eng kichik musbat ildizi qaysi songa teng?",
+      "v": [
+        "π/2",
+        "π/3",
+        "5π/6",
+        "π/6"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytmaga ajratamiz: (2sinx − 1)(sinx − 1) = 0. Bundan sinx = 1/2 yoki sinx = 1. sinx = 1/2 dan eng kichik musbat ildiz x = π/6, sinx = 1 dan x = π/2. π/6 qiymati π/2 dan kichik. Javob: π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-musbat-ildiz",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#b9700b8b"
+    },
+    {
+      "q": "cos2x + cosx = 0 tenglamaning [0; 2π] kesmadagi eng katta ildizini toping.",
+      "v": [
+        "5π/3",
+        "2π",
+        "π",
+        "π/3"
+      ],
+      "t": 0,
+      "izoh": "Yig'indini ko'paytmaga aylantiramiz: cos2x + cosx = 2cos(3x/2)·cos(x/2). Birinchi ko'paytuvchi nol bo'lganda x = π/3 + 2πn/3 va kesmada x = π/3, π, 5π/3 chiqadi. Ikkinchisi nol bo'lganda x = π + 2πn, kesmada x = π. Eng kattasi 5π/3. Javob: 5π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-kichik-musbat-ildiz",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#e31f4c1a"
+    },
+    {
+      "q": "2cos²x − 3cosx + 1 = 0 tenglamaning [0; π] kesmadagi ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "π",
+        "4π/3",
+        "π/3",
+        "2π/3"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytmaga ajratamiz: (2cosx − 1)(cosx − 1) = 0, ya'ni cosx = 1/2 yoki cosx = 1. Kesmada cosx = 1/2 dan x = π/3, cosx = 1 dan x = 0 chiqadi. Yig'indi 0 + π/3 = π/3 bo'ladi. Javob: π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqdagi-ildizlar-yigindisi",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#98d9506f"
+    },
+    {
+      "q": "sin2x = √3·sinx tenglamaning [0; 2π) oraliqdagi barcha ildizlari yig'indisini hisoblang.",
+      "v": [
+        "2π",
+        "3π",
+        "4π",
+        "5π/2"
+      ],
+      "t": 1,
+      "izoh": "sin2x = 2sinx·cosx ni qo'yib sinx(2cosx − √3) = 0 hosil qilamiz. sinx = 0 dan x = 0 va x = π; cosx = √3/2 dan x = π/6 va x = 11π/6. Yig'indi 0 + π + π/6 + 11π/6 = π + 2π = 3π. Javob: 3π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-ildizlar-yigindisi",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#bee0b187"
+    },
+    {
+      "q": "Elektr zanjiridagi tok kuchi i(t) = sin2t + cost amperga teng. Tok nolga aylanadigan t ∈ [0; 2π] paytlarning yig'indisini toping.",
+      "v": [
+        "4π",
+        "3π",
+        "5π",
+        "6π"
+      ],
+      "t": 2,
+      "izoh": "sin2t = 2sint·cost ni qo'yamiz: 2sint·cost + cost = cost(2sint + 1) = 0. cost = 0 dan t = π/2 va t = 3π/2; sint = −1/2 dan t = 7π/6 va t = 11π/6. Yig'indi (π/2 + 3π/2) + (7π/6 + 11π/6) = 2π + 3π = 5π. Javob: 5π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-ildizlar-yigindisi",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#0771f752"
+    },
+    {
+      "q": "cos2x + 3cosx + 2 = 0 tenglamaning [0; π] kesmadagi ildizlari yig'indisini hisoblang.",
+      "v": [
+        "8π/3",
+        "5π/3",
+        "2π/3",
+        "π"
+      ],
+      "t": 1,
+      "izoh": "cos2x = 2cos²x − 1 ni qo'yamiz: 2cos²x + 3cosx + 1 = 0. Ko'paytmaga ajratsak (2cosx + 1)(cosx + 1) = 0, ya'ni cosx = −1/2 yoki cosx = −1. Kesmada x = 2π/3 va x = π chiqadi. Yig'indi 2π/3 + π = 5π/3. Javob: 5π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqdagi-ildizlar-yigindisi",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#885361c3"
+    },
+    {
+      "q": "Prujinaga osilgan yukning muvozanatdan og'ishi y(t) = 2sin²t + 3sint − 2 santimetrga teng. Yuk birinchi marta muvozanatga kelgan payt qachon bo'ladi?",
+      "v": [
+        "t = π/3",
+        "t = 5π/6",
+        "t = π/6",
+        "t = π/2"
+      ],
+      "t": 2,
+      "izoh": "y = 0 deb 2sin²t + 3sint − 2 = 0 tenglamani yechamiz. D = 9 + 16 = 25, sint = (−3 ± 5)/4, ya'ni 1/2 yoki −2. Ikkinchisi begona, chunki sinus −1 dan kichik bo'lmaydi. sint = 1/2 dan eng kichik musbat payt t = π/6. Javob: t = π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-prujina-tebranishi",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#e4ee69cc"
+    },
+    {
+      "q": "Mayatnik tebranishida muvozanatdan og'ish E(α) = sin²α − sinα·cosα kattaligiga proporsional. E = 0 bo'ladigan α ning (0; π) oralig'idagi qiymatlarini toping.",
+      "v": [
+        "π/4 va 3π/4",
+        "faqat π/4",
+        "π/4 va π/2",
+        "0 va π/4"
+      ],
+      "t": 1,
+      "izoh": "Umumiy ko'paytuvchini chiqaramiz: sinα(sinα − cosα) = 0. sinα = 0 ga mos 0 va π nuqtalari ochiq oraliqqa kirmaydi. Qolgan holda sinα = cosα, ya'ni tgα = 1 va α = π/4. Javob: faqat π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-prujina-tebranishi",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#ba2462e2"
+    },
+    {
+      "q": "Ikki prujinaning cho'zilishi x₁ = sin3t va x₂ = sint formulalari bilan beriladi. Cho'zilishlar teng bo'ladigan t qiymatlari to'plamini toping.",
+      "v": [
+        "t = πn va t = π/4 + πn, n ∈ Z",
+        "t = πn/2 va t = π/4 + πn/2, n ∈ Z",
+        "t = 2πn va t = π/4 + πn/2, n ∈ Z",
+        "t = πn va t = π/4 + πn/2, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Shart sin3t = sint, ya'ni sin3t − sint = 0. Ayirmani ko'paytmaga aylantiramiz: 2cos2t·sint = 0. Bundan sint = 0, ya'ni t = πn, yoki cos2t = 0, ya'ni 2t = π/2 + πn va t = π/4 + πn/2. Javob: shu ikki oila.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-prujina-tebranishi",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#4d0d844d"
+    },
+    {
+      "q": "Rezinali arqonga bog'langan yukning tezligi v(t) = 2cos²t + cost − 1 (m/s) formulasi bilan beriladi. Tezlik nolga aylanadigan t ∈ [0; 2π) paytlarning yig'indisini toping.",
+      "v": [
+        "3π",
+        "2π",
+        "π",
+        "4π"
+      ],
+      "t": 0,
+      "izoh": "v = 0 deb 2cos²t + cost − 1 = 0 tenglamani yechamiz. Ko'paytmaga ajratsak (2cost − 1)(cost + 1) = 0, ya'ni cost = 1/2 yoki cost = −1. Berilgan oraliqda t = π/3, t = 5π/3 va t = π chiqadi. Yig'indi π/3 + 5π/3 + π = 3π. Javob: 3π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-prujina-tebranishi",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#dabe1a0e"
+    },
+    {
+      "q": "Toshkentdagi charxpalak kabinasining balandligi h(t) = 10 − 8cos(πt/6) metr, bu yerda t daqiqada o'lchanadi. Kabina 14 metr balandlikda bo'ladigan paytlar t ∈ [0; 12] oraliqda nechta?",
+      "v": [
+        "1",
+        "4",
+        "6",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Tenglamani tuzamiz: 10 − 8cos(πt/6) = 14, bundan cos(πt/6) = −1/2. Demak πt/6 = 2π/3 yoki πt/6 = 4π/3. Birinchisidan t = 4, ikkinchisidan t = 8 chiqadi va ikkalasi ham berilgan oraliqda yotadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-charxpalak",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#610865c2"
+    },
+    {
+      "q": "Bog'dagi ikki charxpalak kabinasining balandligi h₁ = 10 + 8sin2φ va h₂ = 10 + 8sinφ formulalari bilan beriladi, ya'ni kichigi ikki barobar tez aylanadi. Ular bir xil balandlikda bo'ladigan φ ∈ [0; 2π) burchaklari nechta?",
+      "v": [
+        "4",
+        "3",
+        "5",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Shart 10 + 8sin2φ = 10 + 8sinφ, ya'ni sin2φ = sinφ yoki 2sinφ·cosφ − sinφ = 0. Umumiy ko'paytuvchini chiqaramiz: sinφ(2cosφ − 1) = 0. sinφ = 0 dan φ = 0 va φ = π; cosφ = 1/2 dan φ = π/3 va φ = 5π/3. Jami 4 ta burchak. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-charxpalak",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#e4d51d9a"
+    },
+    {
+      "q": "Charxpalak kabinasining balandligi h(t) = 15 + 12sin(πt/8) metr. Kabina 21 metr balandlikka birinchi marta chiqadigan t vaqtini daqiqada toping.",
+      "v": [
+        "4/3",
+        "3/4",
+        "20/3",
+        "8/3"
+      ],
+      "t": 0,
+      "izoh": "15 + 12sin(πt/8) = 21 dan 12sin(πt/8) = 6, ya'ni sin(πt/8) = 1/2. Bundan πt/8 = π/6 yoki πt/8 = 5π/6. Birinchisidan t = 4/3, ikkinchisidan t = 20/3 chiqadi. Eng kichigi 4/3 daqiqa. Javob: 4/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-charxpalak",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#da439587"
+    },
+    {
+      "q": "Aylanma mexanizm tishli g'ildiragining burchagi α uchun 2sin²α = 3cosα + 3 tenglama tuzildi. cosα ning mumkin bo'lgan qiymatlarini toping.",
+      "v": [
+        "1/2 va 1",
+        "−1/2 va 1",
+        "1/2 va −1",
+        "−1/2 va −1"
+      ],
+      "t": 3,
+      "izoh": "sin²α = 1 − cos²α ni qo'yamiz: 2 − 2cos²α = 3cosα + 3. Hadlarni bir tomonga yig'sak 2cos²α + 3cosα + 1 = 0. Ko'paytmaga ajratamiz: (2cosα + 1)(cosα + 1) = 0. Bundan cosα = −1/2 yoki cosα = −1; ikkalasi ham [−1; 1] da yotadi. Javob: −1/2 va −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-charxpalak",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#7f810fe7"
+    },
+    {
+      "q": "Dengiz sathining balandligi h(t) = 5 + 3sin(πt/6) metr, t esa soatlarda o'lchanadi. Bir sutkada, ya'ni t ∈ [0; 24) oraliqda h = 6,5 metr bo'ladigan paytlar nechta?",
+      "v": [
+        "2",
+        "6",
+        "12",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "5 + 3sin(πt/6) = 6,5 dan 3sin(πt/6) = 1,5, ya'ni sin(πt/6) = 1/2. Bundan πt/6 = π/6 yoki πt/6 = 5π/6, ya'ni t = 1 yoki t = 5. Model davri 12 soat bo'lgani uchun t = 13 va t = 17 ham yechim bo'ladi. Jami 4 ta payt. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-suv-sathi",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#d0cac497"
+    },
+    {
+      "q": "Kanal suvi sathining muvozanatdan og'ishi s(t) = sin²t + sint·cost metr bilan o'lchanadi. Og'ish nolga aylanadigan t ∈ (0; π) qiymatini toping.",
+      "v": [
+        "π/4",
+        "π/2",
+        "5π/4",
+        "3π/4"
+      ],
+      "t": 3,
+      "izoh": "Umumiy ko'paytuvchini chiqaramiz: sint(sint + cost) = 0. sint = 0 ga mos 0 va π nuqtalari ochiq oraliqqa kirmaydi. Qolgan holda sint = −cost, ya'ni tgt = −1 va t = 3π/4. Javob: 3π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-suv-sathi",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#16592ee9"
+    },
+    {
+      "q": "Suv omboridagi sath og'ishi d(t) = 4cos²t + 4cost + 1 santimetrga teng. Og'ish nolga aylangan paytda cost qanday qiymat oladi?",
+      "v": [
+        "−1/2",
+        "1/2",
+        "−1/4",
+        "−2"
+      ],
+      "t": 0,
+      "izoh": "4cos²t + 4cost + 1 = 0 tenglamani yechamiz. Chap tomon (2cost + 1)² to'la kvadratiga teng, demak 2cost + 1 = 0. Bundan cost = −1/2 va bu qiymat [−1; 1] oralig'ida yotadi. Javob: −1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-suv-sathi",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#34c8acb1"
+    },
+    {
+      "q": "Ariq suvi sathining o'zgarishi w(t) = sin4t + sin2t formulasi bilan yoziladi. w = 0 bo'ladigan t larning umumiy yechimini toping.",
+      "v": [
+        "t = πn/3 va t = πn, n ∈ Z",
+        "t = πn/4 va t = π/2 + πn, n ∈ Z",
+        "t = πn/3 va t = π/2 + 2πn, n ∈ Z",
+        "t = πn/3 va t = π/2 + πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Yig'indini ko'paytmaga aylantiramiz: sin4t + sin2t = 2sin3t·cost. Demak sin3t = 0 yoki cost = 0. Birinchisidan 3t = πn va t = πn/3, ikkinchisidan t = π/2 + πn. Javob: shu ikki oila.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-suv-sathi",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#e0c745c1"
+    },
+    {
+      "q": "Samarqandda o'rtacha oylik harorat T(m) = 14 − 12cos(πm/6) daraja, m esa oyning tartib raqami. Harorat 20 darajaga teng bo'ladigan oylarni toping.",
+      "v": [
+        "fevral va oktabr",
+        "iyun va dekabr",
+        "mart va sentabr",
+        "aprel va avgust"
+      ],
+      "t": 3,
+      "izoh": "14 − 12cos(πm/6) = 20 dan cos(πm/6) = −1/2 kelib chiqadi. Bundan πm/6 = 2π/3 yoki πm/6 = 4π/3, ya'ni m = 4 va m = 8. To'rtinchi oy aprel, sakkizinchi oy avgust bo'ladi. Javob: aprel va avgust.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-oylik-harorat",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#a4cfeef1"
+    },
+    {
+      "q": "Farg'onada havo haroratining o'zgarishi T(t) = 2sin²t + 7sint − 4 modeli bilan tasvirlangan. T = 0 bo'lganda sint nechaga teng?",
+      "v": [
+        "1/2",
+        "−4",
+        "−1/2",
+        "−7/2"
+      ],
+      "t": 0,
+      "izoh": "z = sint bilan 2z² + 7z − 4 = 0 hosil bo'ladi. D = 49 + 32 = 81, √81 = 9, z = (−7 ± 9)/4. Bundan z = 1/2 yoki z = −4. Sinus −1 dan kichik bo'lmagani uchun z = −4 begona ildiz. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-oylik-harorat",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#ac260b18"
+    },
+    {
+      "q": "Yillik harorat o'zgarishining ikki tashkil etuvchisi T₁ = 6sin5t va T₂ = 6sin3t. Ular teng bo'ladigan paytni topish uchun sin5t − sin3t ifodasini ko'paytmaga aylantiring.",
+      "v": [
+        "2sin4t·cost",
+        "2cos4t·cost",
+        "2cos4t·sint",
+        "2sin4t·sint"
+      ],
+      "t": 2,
+      "izoh": "Formula: sinA − sinB = 2cos((A + B)/2)·sin((A − B)/2). Bu yerda A = 5t va B = 3t, yarim yig'indi 4t, yarim ayirma t. Demak sin5t − sin3t = 2cos4t·sint. Kosinus bilan sinusning o'rnini almashtirish tipik xato. Javob: 2cos4t·sint.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-oylik-harorat",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#3243df48"
+    },
+    {
+      "q": "Buxoroda haroratning kunlik o'rtachadan og'ishi F(t) = 3sin²t − 4sint·cost + cos²t ifodasi bilan baholanadi. F = 0 bo'lgan paytlarda tgt qanday qiymat oladi?",
+      "v": [
+        "1 va 3",
+        "−1 va −1/3",
+        "1/3 va 1/4",
+        "1 va 1/3"
+      ],
+      "t": 3,
+      "izoh": "Bu bir jinsli ikkinchi darajali tenglama. cost = 0 bo'lsa 3sin²t = 3 chiqadi, bu nolga teng emas, demak cos²t ga bo'lish mumkin: 3tg²t − 4tgt + 1 = 0. D = 16 − 12 = 4, tgt = (4 ± 2)/6, ya'ni 1 yoki 1/3. Javob: 1 va 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-oylik-harorat",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#195cb728"
+    },
+    {
+      "q": "O'zgaruvchan tok kuchi i(t) = 2sin²t − sint − 1 amperga teng. Tok birinchi marta nolga aylanadigan musbat t qiymatini toping.",
+      "v": [
+        "π/2",
+        "π/6",
+        "7π/6",
+        "π"
+      ],
+      "t": 0,
+      "izoh": "2sin²t − sint − 1 = 0 ni ko'paytmaga ajratamiz: (2sint + 1)(sint − 1) = 0. Bundan sint = 1, ya'ni t = π/2, yoki sint = −1/2, ya'ni t = 7π/6 va t = 11π/6. Musbat ildizlarning eng kichigi π/2. Javob: π/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ozgaruvchan-tok",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#4cdc9744"
+    },
+    {
+      "q": "Generator kuchlanishi U(t) = √3·sin2t − 3sint volt bilan o'lchanadi. Kuchlanish nolga aylanadigan t ∈ [0; 2π) qiymatlari nechta?",
+      "v": [
+        "6",
+        "4",
+        "3",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "sin2t = 2sint·cost ni qo'yamiz: 2√3·sint·cost − 3sint = 0, ya'ni sint(2√3·cost − 3) = 0. sint = 0 dan t = 0 va t = π. Ikkinchi ko'paytuvchidan cost = 3/(2√3) = √3/2 va t = π/6 hamda t = 11π/6. Jami 4 ta. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-ozgaruvchan-tok",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#4120a05e"
+    },
+    {
+      "q": "Ikki fazadagi kuchlanishlar U₁ = 40cos7t va U₂ = 40cos3t volt. cos7t − cos3t ifodasini ko'paytmaga aylantirgan to'g'ri variantni tanlang.",
+      "v": [
+        "−2sin5t·sin2t",
+        "2sin5t·sin2t",
+        "−2cos5t·sin2t",
+        "−2sin5t·cos2t"
+      ],
+      "t": 0,
+      "izoh": "Formula: cosA − cosB = −2sin((A + B)/2)·sin((A − B)/2). Bu yerda A = 7t va B = 3t, yarim yig'indi 5t, yarim ayirma 2t. Demak cos7t − cos3t = −2sin5t·sin2t. Javob: −2sin5t·sin2t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ozgaruvchan-tok",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#e150af45"
+    },
+    {
+      "q": "Zanjirdagi quvvat P(α) = 5sin²α + 2sinα·cosα − 3cos²α vattga teng. P = 0 bo'lganda tgα ning qiymatlarini toping.",
+      "v": [
+        "−3/5 va 1",
+        "3/5 va 1",
+        "5/3 va −1",
+        "3/5 va −1"
+      ],
+      "t": 3,
+      "izoh": "Bu bir jinsli tenglama. cosα = 0 bo'lsa 5sin²α = 5 chiqadi va nolga teng bo'lmaydi, demak cos²α ga bo'lish mumkin: 5tg²α + 2tgα − 3 = 0. D = 4 + 60 = 64, tgα = (−2 ± 8)/10, ya'ni 3/5 yoki −1. Javob: 3/5 va −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-ozgaruvchan-tok",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#6bf91b40"
+    },
+    {
+      "q": "Ikki kamertondan chiqqan tovush bosimi p(t) = sin6t + sin2t formulasi bilan yoziladi. p = 0 bo'ladigan t larning eng ixcham yakuniy yechimini toping.",
+      "v": [
+        "t = πn/2, n ∈ Z",
+        "t = π/4 + πn/2, n ∈ Z",
+        "t = πn/4, n ∈ Z",
+        "t = πn/6, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "Yig'indini ko'paytmaga aylantiramiz: sin6t + sin2t = 2sin4t·cos2t. sin4t = 0 dan t = πn/4, cos2t = 0 dan t = π/4 + πn/2. Ikkinchi oila π/4, 3π/4, 5π/4 nuqtalarini beradi va ular πn/4 to'plamining ichida joylashgan. Demak yakuniy javob t = πn/4. Javob: t = πn/4, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-tovush-tolqini",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#d8dfaf43"
+    },
+    {
+      "q": "Karnaydan chiqayotgan to'lqinning og'ishi A(x) = 2cos²x − 3cosx + 1 ko'rinishida beriladi. A = 0 bo'ladigan x ∈ [0; 2π) qiymatlarining yig'indisi nechaga teng?",
+      "v": [
+        "π",
+        "2π",
+        "8π/3",
+        "5π/3"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytmaga ajratamiz: (2cosx − 1)(cosx − 1) = 0, ya'ni cosx = 1/2 yoki cosx = 1. Berilgan oraliqda cosx = 1/2 dan x = π/3 va x = 5π/3; cosx = 1 dan x = 0. Yig'indi π/3 + 5π/3 + 0 = 2π. Javob: 2π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-tovush-tolqini",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#60c0f43f"
+    },
+    {
+      "q": "Ikki tovush manbaidan hosil bo'lgan bosim p(t) = cos5t + cos3t ko'rinishida. p = 0 bo'lish shartini qanoatlantiruvchi t larni toping.",
+      "v": [
+        "t = π/8 + πn/4, n ∈ Z",
+        "t = πn/8, n ∈ Z",
+        "t = π/8 + πn/2 va t = π/2 + πn, n ∈ Z",
+        "t = π/8 + πn/4 va t = π/2 + πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Yig'indini ko'paytmaga aylantiramiz: cos5t + cos3t = 2cos4t·cost. cos4t = 0 dan 4t = π/2 + πn va t = π/8 + πn/4. cost = 0 dan t = π/2 + πn. Ikkinchi oila birinchisining ichida yotmaydi, chunki π/8 + πn/4 qatorida π/2 uchramaydi. Javob: ikkala oila ham javobda qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-tovush-tolqini",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#bc85153c"
+    },
+    {
+      "q": "Musiqa asbobi torining og'ishi y(x) = sin²x − 2sinx·cosx − 3cos²x bilan beriladi. y = 0 bo'lganda tgx ning qiymatlarini toping.",
+      "v": [
+        "−3 va 1",
+        "3 va 1",
+        "3 va −1",
+        "1/3 va −1"
+      ],
+      "t": 2,
+      "izoh": "cosx = 0 bo'lsa sin²x = 1 chiqadi va tenglama bajarilmaydi, demak cos²x ga bo'lish mumkin. Natijada tg²x − 2tgx − 3 = 0 hosil bo'ladi. Ko'paytmaga ajratsak (tgx − 3)(tgx + 1) = 0, ya'ni tgx = 3 yoki tgx = −1. Javob: 3 va −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-tovush-tolqini",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#0d618c90"
+    },
+    {
+      "q": "sinx·(2cosx − 1) = 0 ko'paytma nolga teng bo'lishi uchun qanday shart bajarilishi kerak?",
+      "v": [
+        "sinx = 0 va cosx = 1/2 shartlari birgalikda",
+        "sinx = 0 yoki cosx = 1/2",
+        "sinx = 0 yoki cosx = 2",
+        "faqat sinx = 0"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma nolga teng bo'lishi uchun uning kamida bitta ko'paytuvchisi nolga teng bo'lishi yetarli. Demak sinx = 0 yoki 2cosx − 1 = 0. Ikkinchi shartdan cosx = 1/2 kelib chiqadi. Ikki shart birgalikda emas, balki alohida-alohida qaraladi. Javob: sinx = 0 yoki cosx = 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-almashtirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#ae8134ad"
+    },
+    {
+      "q": "2sin²x = 3sinx tenglamani yechishda o'quvchi ikkala tomonni sinx ga bo'lib, sinx = 3/2 deb javob berdi. Xato qayerda?",
+      "v": [
+        "sinx = 0 holati yo'qotilgan, aslida yechim x = πn",
+        "javob to'g'ri, hech qanday xato yo'q",
+        "tenglamani avval 2 ga bo'lish kerak edi",
+        "sinx o'rniga cosx olish kerak edi"
+      ],
+      "t": 0,
+      "izoh": "Noma'lum ifodaga bo'lish taqiqlanadi, chunki u nolga teng bo'lishi mumkin. To'g'ri yo'l: 2sin²x − 3sinx = 0, ya'ni sinx(2sinx − 3) = 0. Bundan sinx = 0 yoki sinx = 3/2; ikkinchisi begona, chunki sinus 1 dan katta bo'lmaydi. Demak yagona yechim x = πn. Javob: sinx = 0 holati yo'qotilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-almashtirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#c07eaeeb"
+    },
+    {
+      "q": "Bir jinsli a·sinx + b·cosx = 0 tenglamani tgx ga o'tkazish uchun ikkala tomon cosx ga bo'linadi. Bu bo'lish nima uchun ildiz yo'qotmaydi?",
+      "v": [
+        "cosx hech qachon nolga teng bo'lmaydi",
+        "har qanday bo'lish ildiz yo'qotmaydi",
+        "chunki a va b sonlari doim musbat",
+        "cosx = 0 bo'lganda sinx ham nol bo'lishi kerak, bu esa mumkin emas"
+      ],
+      "t": 3,
+      "izoh": "Faraz qilaylik cosx = 0 bo'lsin. U holda tenglamadan a·sinx = 0 kelib chiqadi va a noldan farqli bo'lgani uchun sinx = 0 bo'lishi kerak. Lekin sin²x + cos²x = 1 ayniyati bo'yicha sinx va cosx bir vaqtda nolga teng bo'la olmaydi. Demak cosx = 0 yechim emas va unga bo'lish xavfsiz. Javob: cosx = 0 bo'lganda sinx ham nol bo'lishi kerak edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-almashtirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#acd5439a"
+    },
+    {
+      "q": "3sin²x + 2sinx·cosx − cos²x = 1 tenglamani bir jinsli qilish uchun o'ng tomondagi 1 ni qanday almashtirish kerak?",
+      "v": [
+        "1 = sin²x + cos²x",
+        "1 = cos²x − sin²x",
+        "1 = 2sinx·cosx",
+        "1 = sin²x − cos²x"
+      ],
+      "t": 0,
+      "izoh": "Bir jinsli tenglamada barcha hadlar bir xil darajali bo'lishi kerak. O'ng tomondagi 1 ni asosiy trigonometrik ayniyat orqali ikkinchi darajali ifodaga aylantiramiz: 1 = sin²x + cos²x. Shundan keyin barcha hadlar chap tomonga o'tkaziladi va tenglama bir jinsli bo'lib qoladi. Javob: 1 = sin²x + cos²x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-almashtirish",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#f56d29ab"
+    },
+    {
+      "q": "tg²x − tgx = 0 tenglamani aniqlanish sohasini hisobga olgan holda yeching.",
+      "v": [
+        "x = πn/2 va x = π/4 + πn, n ∈ Z",
+        "x = πn va x = π/4 + 2πn, n ∈ Z",
+        "x = π/2 + πn va x = π/4 + πn, n ∈ Z",
+        "x = πn va x = π/4 + πn, n ∈ Z"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi: cosx ≠ 0, ya'ni x ≠ π/2 + πn. Umumiy ko'paytuvchini chiqaramiz: tgx(tgx − 1) = 0. Bundan tgx = 0, ya'ni x = πn, yoki tgx = 1, ya'ni x = π/4 + πn. Ikkala oila ham aniqlanish sohasiga kiradi. Javob: shu ikki oila.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-va-begona-ildiz",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#9bc33cca"
+    },
+    {
+      "q": "tgx + ctgx = 2 tenglamaning umumiy yechimini toping.",
+      "v": [
+        "x = π/4 + 2πn, n ∈ Z",
+        "x = ±π/4 + πn, n ∈ Z",
+        "x = π/4 + πn, n ∈ Z",
+        "x = π/2 + πn, n ∈ Z"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi: sinx ≠ 0 va cosx ≠ 0. z = tgx belgilash bilan ctgx = 1/z bo'ladi va z + 1/z = 2 tenglama hosil bo'ladi. Uni z ga ko'paytirsak z² − 2z + 1 = 0, ya'ni (z − 1)² = 0 va z = 1. tgx = 1 dan x = π/4 + πn. Javob: x = π/4 + πn, n ∈ Z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-va-begona-ildiz",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#b8c40267"
+    },
+    {
+      "q": "Kuzatuvchi ikki qiyalik burchagi uchun tgα − 6ctgα = 1 munosabatini oldi. tgα ning mumkin bo'lgan qiymatlarini toping.",
+      "v": [
+        "−3 va 2",
+        "3 va 2",
+        "6 va −1",
+        "3 va −2"
+      ],
+      "t": 3,
+      "izoh": "z = tgα belgilaymiz, u holda ctgα = 1/z va tenglama z − 6/z = 1 ko'rinishga keladi. Ikkala tomonni z ga ko'paytiramiz: z² − z − 6 = 0. D = 1 + 24 = 25, z = (1 ± 5)/2, ya'ni z = 3 yoki z = −2. Ikkalasi ham noldan farqli, demak ikkalasi ham yaroqli. Javob: 3 va −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi-va-begona-ildiz",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#7df709b0"
+    },
+    {
+      "q": "sinx·tgx = 0 tenglamaning [0; 2π) oraliqdagi ildizlari sonini aniqlanish sohasini hisobga olib toping.",
+      "v": [
+        "2",
+        "4",
+        "1",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi: cosx ≠ 0, ya'ni x ≠ π/2 va x ≠ 3π/2. Ko'paytma nolga teng bo'lishi uchun sinx = 0 yoki tgx = 0 bo'lishi kerak, lekin tgx = 0 sharti ham sinx = 0 ga olib keladi. Berilgan oraliqda sinx = 0 dan x = 0 va x = π chiqadi, ikkalasi ham aniqlanish sohasida. Jami 2 ta ildiz. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi-va-begona-ildiz",
+      "id": "matematika_trig_m12-murakkab-trigonometrik-tenglamalar#3a9d8b8a"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "nom": "23-mavzu. Masala. Gidrostatik Bosim",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Chuqurligi 8 m bo‘lgan hovuz tubidagi gidrostatik bosimni hisoblang. (g = 10 N/kg)",
+      "v": [
+        "80 kPa",
+        "8 kPa",
+        "800 kPa",
+        "800 Pa"
+      ],
+      "t": 0,
+      "izoh": "p = ρgh = 1000·10·8 = 80 000 Pa = 80 kPa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim#a1859ea4"
+    },
+    {
+      "q": "Stakandagi suv ustunining balandligi 10 cm. Suv stakan tubiga qanday bosim beradi? (g = 10 N/kg)",
+      "v": [
+        "1000 Pa",
+        "100 Pa",
+        "10 000 Pa",
+        "10 Pa"
+      ],
+      "t": 0,
+      "izoh": "p = ρgh = 1000·10·0,1 = 1000 Pa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim#92098818"
+    },
+    {
+      "q": "Stakanga 10 cm balandlikda o‘simlik yog‘i (ρ = 930 kg/m³) quyilgan. Yog‘ stakan tubiga qanday bosim beradi? (g = 10 N/kg)",
+      "v": [
+        "930 Pa",
+        "1000 Pa",
+        "93 Pa",
+        "9300 Pa"
+      ],
+      "t": 0,
+      "izoh": "p = ρgh = 930·10·0,1 = 930 Pa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim#9f67cf92"
+    },
+    {
+      "q": "Balandligi 0,5 m bo‘lgan kerosin (ρ = 800 kg/m³) qatlami idish tubiga qanday bosim ko‘rsatadi? (g = 10 N/kg)",
+      "v": [
+        "4 kPa",
+        "400 Pa",
+        "40 kPa",
+        "1600 Pa"
+      ],
+      "t": 0,
+      "izoh": "p = ρgh = 800·10·0,5 = 4000 Pa = 4 kPa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim#ee8a8fa8"
+    },
+    {
+      "q": "Suv sathidan 6 m chuqurlikdagi gidrostatik bosim, 2 m chuqurlikdagi bosimdan necha marta katta?",
+      "v": [
+        "3 marta",
+        "4 marta",
+        "12 marta",
+        "2 marta"
+      ],
+      "t": 0,
+      "izoh": "p = ρgh bo‘lgani uchun p₁/p₂ = h₁/h₂ = 6/2 = 3 marta",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim#3f7e83d6"
+    },
+    {
+      "q": "Suvning gidrostatik bosimi 30 kPa ga teng bo‘ladigan chuqurlikni toping. (g = 10 N/kg)",
+      "v": [
+        "3 m",
+        "30 m",
+        "0,3 m",
+        "300 m"
+      ],
+      "t": 0,
+      "izoh": "h = p/(ρg) = 30 000/(1000·10) = 3 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim#473ab7da"
+    },
+    {
+      "q": "Suv minorasining tubiga o‘rnatilgan manometr 150 kPa bosimni ko‘rsatmoqda. Minoradagi suv sathining balandligini aniqlang. (g = 10 N/kg)",
+      "v": [
+        "15 m",
+        "1,5 m",
+        "150 m",
+        "147 m"
+      ],
+      "t": 0,
+      "izoh": "h = p/(ρg) = 150 000/(1000·10) = 15 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim#ee0b6ec9"
+    },
+    {
+      "q": "Balandligi 40 cm bo‘lgan idishga noma’lum suyuqlik quyilgan. Uning tubiga beradigan bosimi 3200 Pa bo‘lsa, suyuqlikning zichligi qanday? (g = 10 N/kg)",
+      "v": [
+        "800 kg/m³",
+        "320 kg/m³",
+        "1000 kg/m³",
+        "1280 kg/m³"
+      ],
+      "t": 0,
+      "izoh": "ρ = p/(gh) = 3200/(10·0,4) = 800 kg/m³ (kerosin)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim#f6c9def2"
+    },
+    {
+      "q": "Ikki bir xil idishning biriga suv, ikkinchisiga kerosin (ρ = 800 kg/m³) 20 cm balandlikda quyilgan. Ularning tubiga beradigan bosimlari farqini toping. (g = 10 N/kg)",
+      "v": [
+        "400 Pa",
+        "4000 Pa",
+        "40 Pa",
+        "3600 Pa"
+      ],
+      "t": 0,
+      "izoh": "Δp = (ρ₁−ρ₂)gh = (1000−800)·10·0,2 = 400 Pa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim#68432821"
+    },
+    {
+      "q": "Akvariumda suv sathidan tubgacha bo‘lgan masofa 60 cm. Akvarium tubiga ta’sir qilayotgan gidrostatik bosimni aniqlang. (g = 10 N/kg)",
+      "v": [
+        "6 kPa",
+        "3 kPa",
+        "600 Pa",
+        "60 kPa"
+      ],
+      "t": 0,
+      "izoh": "p = ρgh = 1000·10·0,6 = 6000 Pa = 6 kPa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim#1793e442"
+    },
+    {
+      "q": "Dengiz suvi (ρ = 1030 kg/m³) gidrostatik bosimi 412 kPa ga teng bo‘ladigan chuqurlikni toping. (g = 10 N/kg)",
+      "v": [
+        "40 m",
+        "4 m",
+        "400 m",
+        "41,2 m"
+      ],
+      "t": 0,
+      "izoh": "h = p/(ρg) = 412 000/(1030·10) = 40 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim#f256e103"
+    },
+    {
+      "q": "Suv bilan to‘ldirilgan idish tubida yuzasi 20 cm² bo‘lgan teshik probka bilan berkitilgan. Teshik markazi suv sathidan 2 m pastda. Probka ta’sir etuvchi gidrostatik bosim kuchini toping. (g = 10 N/kg)",
+      "v": [
+        "40 N",
+        "400 N",
+        "4 N",
+        "20 N"
+      ],
+      "t": 0,
+      "izoh": "p = ρgh = 1000·10·2 = 20 000 Pa; F = pS = 20 000·0,002 = 40 N",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim#aa5d3286"
+    },
+    {
+      "q": "Idish tubida yuzasi 24 cm² bo‘lgan teshik tiqin bilan berkitilgan. Tiqin 12 N kuch ta’sirida teshikdan sug‘urilib chiqadi. Tiqin chiqib ketmasligi uchun idishga eng ko‘pi bilan qanday balandlikda suv quyish mumkin? (g = 10 N/kg)",
+      "v": [
+        "0,5 m",
+        "5 m",
+        "0,05 m",
+        "50 m"
+      ],
+      "t": 0,
+      "izoh": "p = F/S = 12/0,0024 = 5000 Pa; h = p/(ρg) = 5000/(1000·10) = 0,5 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim#6397de4d"
+    },
+    {
+      "q": "Dengizning 1 km chuqurligidagi gidrostatik bosimni hisoblang. (ρ = 1030 kg/m³, g = 10 N/kg)",
+      "v": [
+        "10,3 MPa",
+        "1,03 MPa",
+        "10 MPa",
+        "103 MPa"
+      ],
+      "t": 0,
+      "izoh": "p = ρgh = 1030·10·1000 = 10 300 000 Pa = 10,3 MPa",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m23-gidrostatik-bosim#4357ed0f"
+    }
+  ]
+}

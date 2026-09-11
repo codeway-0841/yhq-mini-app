@@ -1,0 +1,558 @@
+{
+  "nom": "[2] belgilangan gap — uslubiy ma'no",
+  "bolim": "Badiiy matn",
+  "savollar": [
+    {
+      "id": "sert_oqi_m83-belgi-2#585b3006",
+      "q": "[2] bilan belgilangan gapning uslubiy ma'nosi to'g'ri ko'rsatilgan javobni toping.",
+      "v": [
+        "taajjub, hayratlanish",
+        "uyalish, xijolat",
+        "sabr, bosiqlik",
+        "achinish, qayg'urish"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Gapda uyalish, xijolat ohangi bor: bola minnatdorligini so'z bilan ayta olmaydi, chunki hali xijolat tortib turibdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m83-belgi-2",
+      "teg": [
+        "badiiy/uslub",
+        "hikoya/olma",
+        "uslub/uyalish-xijolat"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma",
+        "belgi": [
+          {
+            "n": 2,
+            "qism": 7,
+            "jumla": 1
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m83-belgi-2#101632f8",
+      "q": "[2] bilan belgilangan gapda qanday uslubiy ma'no ifodalangan?",
+      "v": [
+        "g'azab, nafrat",
+        "shubha, ishonchsizlik",
+        "sabr, bosiqlik",
+        "achinish, qayg'urish"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Gapda sabr, bosiqlik ohangi bor: chol hamma narsani ko'rgan, lekin ta'na qilmay, gapni shu yerda to'xtatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m83-belgi-2",
+      "teg": [
+        "badiiy/uslub",
+        "hikoya/olma",
+        "uslub/sabr-bosiqlik"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma",
+        "belgi": [
+          {
+            "n": 2,
+            "qism": 4,
+            "jumla": 5
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m83-belgi-2#752ea30a",
+      "q": "[2] bilan belgilangan gap qanday ohangda aytilgan?",
+      "v": [
+        "shubha, ishonchsizlik",
+        "kinoya, kesatiq",
+        "jerkish, malomat",
+        "mehr, rahm"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Gapda mehr, rahm ohangi bor: chol bolani uyaltirmaslik uchun ayb haqida gapirmay, unga ish topib beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m83-belgi-2",
+      "teg": [
+        "badiiy/uslub",
+        "hikoya/olma",
+        "uslub/mehr-rahm"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma",
+        "belgi": [
+          {
+            "n": 2,
+            "qism": 4,
+            "jumla": 2
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m83-belgi-2#f82f0798",
+      "q": "[2] bilan belgilangan gapda qanday uslubiy ma'no ifodalangan?",
+      "v": [
+        "kinoya, kesatiq",
+        "alam, iztirob",
+        "jerkish, malomat",
+        "shubha, ishonchsizlik"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Gapda kinoya, kesatiq ohangi bor: chol o'g'irlik ustida tutgan bolaga to'g'ridan-to'g'ri emas, yumshoq kesatiq bilan murojaat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m83-belgi-2",
+      "teg": [
+        "badiiy/uslub",
+        "hikoya/olma",
+        "uslub/kinoya-kesatiq"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma",
+        "belgi": [
+          {
+            "n": 2,
+            "qism": 2,
+            "jumla": 0
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m83-belgi-2#d08bb705",
+      "q": "[2] bilan belgilangan gapda qanday uslubiy ma'no ifodalangan?",
+      "v": [
+        "achinish, qayg'urish",
+        "uyalish, xijolat",
+        "quvonch, shodlik",
+        "alam, iztirob"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Gapda alam, iztirob ohangi bor: o'sha davrdagi og'ir ahvol va nochorlik tuyg'usi eslanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m83-belgi-2",
+      "teg": [
+        "badiiy/uslub",
+        "hikoya/xat",
+        "uslub/alam-iztirob"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat",
+        "belgi": [
+          {
+            "n": 2,
+            "qism": 6,
+            "jumla": 0
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m83-belgi-2#629fe63e",
+      "q": "[2] bilan belgilangan gap qanday ohangda aytilgan?",
+      "v": [
+        "jahl, qahr",
+        "quvonch, shodlik",
+        "uyalish, xijolat",
+        "g'azab, nafrat"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Gapda uyalish, xijolat ohangi bor: yigit kechikkani uchun xijolat tortadi, lekin gapni aytmay qololmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m83-belgi-2",
+      "teg": [
+        "badiiy/uslub",
+        "hikoya/xat",
+        "uslub/uyalish-xijolat"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat",
+        "belgi": [
+          {
+            "n": 2,
+            "qism": 8,
+            "jumla": 1
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m83-belgi-2#cd152b29",
+      "q": "[2] bilan belgilangan gapda qanday uslubiy ma'no ifodalangan?",
+      "v": [
+        "mehr, rahm",
+        "taajjub, hayratlanish",
+        "achinish, qayg'urish",
+        "uyalish, xijolat"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Gapda mehr, rahm ohangi bor: muallima majburlamaydi, bolaning ahvolini tushunib, yumshoq taklif qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m83-belgi-2",
+      "teg": [
+        "badiiy/uslub",
+        "hikoya/xat",
+        "uslub/mehr-rahm"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat",
+        "belgi": [
+          {
+            "n": 2,
+            "qism": 5,
+            "jumla": 3
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m83-belgi-2#4bfd1eb1",
+      "q": "[2] bilan belgilangan gapning uslubiy ma'nosi to'g'ri ko'rsatilgan javobni toping.",
+      "v": [
+        "jerkish, malomat",
+        "sabr, bosiqlik",
+        "alam, iztirob",
+        "uyalish, xijolat"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "Gapda sabr, bosiqlik ohangi bor: muallima voqeani ko'pirtirmaydi, qisqa javob bilan cheklanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m83-belgi-2",
+      "teg": [
+        "badiiy/uslub",
+        "hikoya/xat",
+        "uslub/sabr-bosiqlik"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat",
+        "belgi": [
+          {
+            "n": 2,
+            "qism": 12,
+            "jumla": 4
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m83-belgi-2#77f5d1f3",
+      "q": "[2] bilan belgilangan gapda qanday uslubiy ma'no ifodalangan?",
+      "v": [
+        "mamnunlik, iqrorlik",
+        "sabr, bosiqlik",
+        "shubha, ishonchsizlik",
+        "kinoya, kesatiq"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Gapda mamnunlik, iqrorlik ohangi bor: bobo shogirdining birinchi tugal mehnatini qadrlaganini ochiq bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m83-belgi-2",
+      "teg": [
+        "badiiy/uslub",
+        "hikoya/kosa",
+        "uslub/mamnunlik-iqrorlik"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa",
+        "belgi": [
+          {
+            "n": 2,
+            "qism": 8,
+            "jumla": 1
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m83-belgi-2#3fd7eae7",
+      "q": "[2] bilan belgilangan gapda qanday uslubiy ma'no ifodalangan?",
+      "v": [
+        "quvonch, shodlik",
+        "shubha, ishonchsizlik",
+        "sabr, bosiqlik",
+        "alam, iztirob"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "Gapda sabr, bosiqlik ohangi bor: bobo uzoq kutilgan ruxsatni bir og'iz so'z bilan, ortiqcha tantanasiz beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m83-belgi-2",
+      "teg": [
+        "badiiy/uslub",
+        "hikoya/kosa",
+        "uslub/sabr-bosiqlik"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa",
+        "belgi": [
+          {
+            "n": 2,
+            "qism": 2,
+            "jumla": 1
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m83-belgi-2#de6b5087",
+      "q": "[2] bilan belgilangan gapda qanday uslubiy ma'no ifodalangan?",
+      "v": [
+        "taajjub, hayratlanish",
+        "sabr, bosiqlik",
+        "mamnunlik, iqrorlik",
+        "mehr, rahm"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "Gapda mehr, rahm ohangi bor: bobo aybni bolaga ham, loyga ham to'nkamay, uni yupatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m83-belgi-2",
+      "teg": [
+        "badiiy/uslub",
+        "hikoya/kosa",
+        "uslub/mehr-rahm"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa",
+        "belgi": [
+          {
+            "n": 2,
+            "qism": 3,
+            "jumla": 4
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m83-belgi-2#19435a6a",
+      "q": "[2] bilan belgilangan gapda qanday uslubiy ma'no ifodalangan?",
+      "v": [
+        "taajjub, hayratlanish",
+        "bepisandlik, piching",
+        "shubha, ishonchsizlik",
+        "jahl, qahr"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "Gapda taajjub, hayratlanish ohangi bor: qo'shni bolaning qo'lidan bunday ish kelishiga ishonqiramay hayratlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m83-belgi-2",
+      "teg": [
+        "badiiy/uslub",
+        "hikoya/kosa",
+        "uslub/taajjub-hayrat"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa",
+        "belgi": [
+          {
+            "n": 2,
+            "qism": 7,
+            "jumla": 1
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    }
+  ]
+}

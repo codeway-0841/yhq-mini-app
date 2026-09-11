@@ -1,0 +1,996 @@
+{
+  "nom": "Biologiya-11, 9-§. Harorat - muhitning abiotik omili",
+  "bolim": "II BOB. Hayotning ekosistema darajasidagi umumbiologik qonuniyatlari",
+  "savollar": [
+    {
+      "q": "Harorat ekologik omil sifatida tirik organizmlar hayotida nimalarga ta'sir qiladi?",
+      "v": [
+        "Moddalar almashinuvi, biokimyoviy va fiziologik jarayonlarning sodir boʻlishi va tezligiga",
+        "Faqat organizmlarning rangiga",
+        "Faqat tuproqning namligiga",
+        "Faqat suvning tarkibiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra harorat hayvon va oʻsimliklar hayotida moddalar almashinuvi, biokimyoviy va fiziologik jarayonlarning sodir boʻlishi va tezligiga taʼsir qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m9#6eef72b7"
+    },
+    {
+      "q": "Harorat qanday oʻzgaruvchan omil hisoblanadi?",
+      "v": [
+        "Sutka davomida, mavsumiy hamda geografik zonallik jihatdan oʻzgaruvchan",
+        "Faqat bir marta oʻzgaradigan barqaror omil",
+        "Umuman oʻzgarmaydigan omil",
+        "Faqat kunduzi oʻzgaradigan omil"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra harorat sutka davomida yil fasllari bilan bogʻliq holda mavsumiy hamda geografik zonallik jihatdan oʻzgaruvchan omildir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#fde0301d"
+    },
+    {
+      "q": "Tirik organizm uchun haroratning chidamlilik chegarasi nima bilan belgilanadi?",
+      "v": [
+        "Oqsillar va fermentlar faoliyatining buzilishiga - denaturatsiyasiga olib keluvchi harorat bilan",
+        "Faqat suvning bugʻlanish harorati bilan",
+        "Faqat havoning namligi bilan",
+        "Faqat organizmning oʻlchami bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra chidamlilik chegarasi oqsillar, hayotiy muhim fermentlar faoliyatining buzilishiga - denaturatsiyasiga olib keluvchi harorat bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#e00d4b12"
+    },
+    {
+      "q": "Fermentlar va oqsillar faoliyatining buzilishi qanday nomlanadi?",
+      "v": [
+        "Denaturatsiya",
+        "Regeneratsiya",
+        "Transpiratsiya",
+        "Termoregulatsiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oqsillar va fermentlar faoliyatining buzilishi denaturatsiya deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#834cf9c2"
+    },
+    {
+      "q": "Harorat 0°C dan pasayganda hujayrada nima sodir boʻladi?",
+      "v": [
+        "Suvning muzlashi tufayli muz kristallari hosil boʻlib, hujayra membranasi shikastlanadi",
+        "Hujayra membranasi qalinlashadi va mustahkamlanadi",
+        "Sitoplazmada shakar butunlay yoʻqoladi",
+        "Hujayra tez koʻpayishni boshlaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra harorat 0°C dan pasayganda muz kristallari hosil boʻladi, bu hujayra membranasining shikastlanishiga va hujayraning nobud boʻlishiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#066572a2"
+    },
+    {
+      "q": "Turli organizmlar normal hayot kechirishi mumkin boʻlgan oʻrtacha harorat qancha?",
+      "v": [
+        "0°C dan +50°C gacha",
+        "-70°C dan +55°C gacha",
+        "+3°C dan +35°C gacha",
+        "+25°C dan +90°C gacha"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra turli organizmlar normal hayot kechirishi mumkin boʻlgan harorat oʻrtacha 0°C dan +50°C gacha hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m9#60d06013"
+    },
+    {
+      "q": "Quruqlikda organizmlar hayot faoliyati kechadigan eng minimal harorat qancha?",
+      "v": [
+        "-70°C",
+        "+3°C",
+        "0°C",
+        "-30°C"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra quruqlikda eng minimal harorat -70°C ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#0fa906c1"
+    },
+    {
+      "q": "Quruqlikda organizmlar hayot faoliyati kechadigan maksimal harorat qancha?",
+      "v": [
+        "+55°C",
+        "+35°C",
+        "+90°C",
+        "+50°C"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra quruqlikda maksimal harorat +55°C ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#8fadc900"
+    },
+    {
+      "q": "Dengizda organizmlar hayoti kechadigan harorat oraligʻi qancha?",
+      "v": [
+        "Minimal +3°C, maksimal +35°C",
+        "Minimal -70°C, maksimal +55°C",
+        "Minimal +25°C, maksimal +90°C",
+        "Minimal +5°C, maksimal +7°C"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra dengizda minimal harorat +3°C, maksimal harorat +35°C ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#b8baaa7b"
+    },
+    {
+      "q": "Chuchuk suvda qish faslida harorat qancha boʻladi?",
+      "v": [
+        "+5°C dan +7°C gacha",
+        "+20°C dan +35°C gacha",
+        "+25°C dan +90°C gacha",
+        "+3°C dan +35°C gacha"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra chuchuk suvda qishda harorat +5°C dan +7°C gacha boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m9#9be97bb4"
+    },
+    {
+      "q": "Chuchuk suvda yoz oylarida harorat qancha boʻladi?",
+      "v": [
+        "+20°C dan +35°C gacha",
+        "+5°C dan +7°C gacha",
+        "+25°C dan +90°C gacha",
+        "0°C dan +2°C gacha"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra chuchuk suvda yoz oylarida harorat +20°C dan +35°C gacha boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m9#850196d0"
+    },
+    {
+      "q": "Geotermal suv manbalarida harorat qancha boʻlishi mumkin?",
+      "v": [
+        "+25°C dan +90°C gacha",
+        "+3°C dan +35°C gacha",
+        "0°C dan +50°C gacha",
+        "-70°C dan +55°C gacha"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra geotermal suv manbalarida harorat +25°C dan +90°C gacha boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#bf5398c1"
+    },
+    {
+      "q": "Yunoncha \"geo\" va \"terme\" soʻzlari nimani anglatadi?",
+      "v": [
+        "\"geo\" - yer, \"terme\" - issiq",
+        "\"geo\" - suv, \"terme\" - sovuq",
+        "\"geo\" - havo, \"terme\" - yorugʻlik",
+        "\"geo\" - issiq, \"terme\" - yer"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yunoncha \"geo\" - yer, \"terme\" - issiq degan maʼnoni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#732885ec"
+    },
+    {
+      "q": "Issiq suv havzalarida qaysi organizmlar yashashi mumkin?",
+      "v": [
+        "Ayrim bakteriyalar va koʻk-yashil suvoʻtlar",
+        "Faqat baliqlar",
+        "Faqat qushlar",
+        "Faqat sutemizuvchilar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ayrim bakteriyalar, koʻk-yashil suvoʻtlar issiq suv havzalarida yashaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#f6fb2039"
+    },
+    {
+      "q": "Qizib yotgan tuproqqa nimalar bardoshli boʻladi?",
+      "v": [
+        "Yopishqoq lishayniklar sporalari, choʻl oʻsimliklari urugʻlari va vegetativ organlari",
+        "Faqat baliqlar tuxumlari",
+        "Faqat suv oʻsimliklari",
+        "Faqat qush patlari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yopishqoq lishayniklar sporalari, choʻl oʻsimliklarining urugʻlari va vegetativ organlari qizib yotgan tuproqqa bardoshlidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#eb94c12f"
+    },
+    {
+      "q": "Oʻta sovuqqa chidamli suvoʻtlar, chuvalchanglar, molluskalar, baliqlarning hayotiy faoliyati qanday haroratda kechadi?",
+      "v": [
+        "0°C dan +2°C da",
+        "+20°C dan +35°C da",
+        "+25°C dan +90°C da",
+        "-70°C dan -50°C da"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻta sovuqqa chidamli suvoʻtlar, chuvalchanglar, molluskalar, qisqichbaqasimonlar, baliqlar va kurakoyoqli sutemizuvchilarning hayotiy faoliyati 0°C dan +2°C da kechadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m9#a55c6db7"
+    },
+    {
+      "q": "Termoregulatsiya usullariga koʻra organizmlar qaysi ikki guruhga ajratiladi?",
+      "v": [
+        "Poykiloterm (sovuqqonli) va gomoyoterm (issiqqonli)",
+        "Issiqsevar va sovuqqa chidamli",
+        "Efemer va efemeroid",
+        "Bakteriyalar va suvoʻtlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra termoregulatsiya usullari va moslanish darajasiga koʻra organizmlar poykiloterm (sovuqqonli) va gomoyoterm (issiqqonli) guruhlarga ajratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#81d8790d"
+    },
+    {
+      "q": "Poykiloterm organizmlar deb qanday organizmlarga aytiladi?",
+      "v": [
+        "Tana harorati tashqi muhit haroratiga bogʻliq ravishda oʻzgaruvchi organizmlarga",
+        "Tana haroratini doimiy saqlaydigan organizmlarga",
+        "Faqat suvda yashaydigan organizmlarga",
+        "Faqat qushlar va sutemizuvchilarga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra poykiloterm organizmlar - tana harorati tashqi muhit haroratiga bogʻliq ravishda oʻzgaruvchi organizmlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#55f2cef6"
+    },
+    {
+      "q": "Yunoncha \"poykilos\" soʻzi nimani anglatadi?",
+      "v": [
+        "Oʻzgaruvchan",
+        "Oʻxshash, bir xil",
+        "Issiqlik",
+        "Sovuq"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yunoncha \"poykilos\" - oʻzgaruvchan, \"therme\" - issiqlik degan maʼnoni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#cff9148e"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri poykiloterm (sovuqqonli) organizmlarga kiradi?",
+      "v": [
+        "Umurtqasiz hayvonlar, baliqlar, suvda-quruqlikda yashovchilar, sudralib yuruvchilar",
+        "Qushlar",
+        "Sutemizuvchilar",
+        "Faqat pingvinlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra poykiloterm organizmlarga umurtqasiz hayvonlar, baliqlar, suvda hamda quruqlikda yashovchilar va sudralib yuruvchilar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#cff15e19"
+    },
+    {
+      "q": "Atrof-muhit harorati koʻtarilganda poykiloterm organizmlarda nima sodir boʻladi?",
+      "v": [
+        "Moddalar almashinuvi, nafas olish, qon aylanish tezlashib, oʻsish va koʻpayish sur'ati ortadi",
+        "Barcha fiziologik jarayonlar butunlay toʻxtaydi",
+        "Organizm darhol nobud boʻladi",
+        "Tana harorati oʻzgarmay qoladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra atrof-muhit haroratining koʻtarilishi poykilotermlarda moddalar almashinuvi, nafas olish, qon aylanish tezlashishiga sabab boʻladi, oʻsish, rivojlanish va koʻpayish sur'ati ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m9#0ce0fad1"
+    },
+    {
+      "q": "Haroratning pasayishi poykiloterm organizmlarda qanday oqibatlarga olib keladi?",
+      "v": [
+        "Moddalar almashinuvi sustlashadi, karaxt holga keladi, uyquga ketadi yoki nobud boʻladi",
+        "Koʻpayish sur'ati keskin ortadi",
+        "Nafas olish tezlashadi",
+        "Tana harorati koʻtariladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra haroratning pasayishi poykilotermlarda moddalar almashinuvining sustlashishi, karaxt holga kelishi, uyquga ketishi, baʼzan nobud boʻlishiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#838d32a6"
+    },
+    {
+      "q": "Gomoyoterm organizmlar deb qanday organizmlarga aytiladi?",
+      "v": [
+        "Tana haroratini tashqi muhitga bogʻliq boʻlmagan holda nisbatan doimiy saqlaydigan organizmlarga",
+        "Tana harorati tashqi muhitga qarab oʻzgaradigan organizmlarga",
+        "Faqat suvda yashaydigan organizmlarga",
+        "Faqat urugʻlari bilan koʻpayadigan oʻsimliklarga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra gomoyoterm organizmlar - tana haroratini tashqi muhit haroratiga bogʻliq boʻlmagan holda nisbatan doimiy holatda saqlashga moslashgan organizmlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#e16488b8"
+    },
+    {
+      "q": "Yunoncha \"gomoyos\" soʻzi nimani anglatadi?",
+      "v": [
+        "Oʻxshash, bir xil",
+        "Oʻzgaruvchan",
+        "Issiq",
+        "Yer"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yunoncha \"gomoyos\" - oʻxshash, bir xil, \"therme\" - issiqlik degan maʼnoni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#592e5d51"
+    },
+    {
+      "q": "Qaysi hayvonlar gomoyoterm (issiqqonli) organizmlarga kiradi?",
+      "v": [
+        "Qushlar va sutemizuvchilar",
+        "Baliqlar va sudralib yuruvchilar",
+        "Umurtqasiz hayvonlar",
+        "Suvda-quruqlikda yashovchilar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra gomoyoterm organizmlarga qushlar va sutemizuvchilar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m9#293773bc"
+    },
+    {
+      "q": "Issiqlikka boʻlgan talabiga koʻra oʻsimliklar qaysi ekologik guruhlarga ajratiladi?",
+      "v": [
+        "Issiqsevar va sovuqqa chidamli oʻsimliklar",
+        "Poykiloterm va gomoyoterm oʻsimliklar",
+        "Efemer va efemeroid oʻsimliklar",
+        "Bakteriya va suvoʻtlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra issiqlikka boʻlgan talabiga koʻra oʻsimliklar issiqsevar va sovuqqa chidamli oʻsimliklarga ajratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m9#77f16aa0"
+    },
+    {
+      "q": "Issiqsevar oʻsimliklar qaysi mintaqalarda oʻsadi?",
+      "v": [
+        "Tropik, subtropik va moʻtadil iqlimning quyosh yaxshi isitadigan joylarida",
+        "Faqat qutb va sovuq mintaqalarda",
+        "Faqat suv ostida",
+        "Faqat gʻorlarda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra issiqsevar oʻsimliklar tropik, subtropik iqlim mintaqalarida hamda moʻtadil iqlimning quyosh yaxshi isitadigan joylarida oʻsadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#bfd2af8f"
+    },
+    {
+      "q": "Sovuqqa chidamli oʻsimliklar qayerda tarqalgan?",
+      "v": [
+        "Yer sharining sovuq va moʻtadil iqlim mintaqalarida",
+        "Faqat tropik iqlimda",
+        "Faqat geotermal suvlarda",
+        "Faqat choʻllarda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sovuqqa chidamli oʻsimliklar Yer sharining sovuq va moʻtadil iqlim mintaqalarida tarqalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m9#465c7e20"
+    },
+    {
+      "q": "Oʻsimliklarda haroratga nisbatan qanday moslanishlar (adaptatsiyalar) paydo boʻlgan?",
+      "v": [
+        "Biokimyoviy, fiziologik, morfologik",
+        "Faqat morfologik",
+        "Etologik va biokimyoviy",
+        "Faqat fiziologik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra evolutsiya jarayonida oʻsimliklarda haroratga nisbatan biokimyoviy, fiziologik, morfologik adaptatsiyalar paydo boʻlgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#b6237acc"
+    },
+    {
+      "q": "Yuqori harorat taʼsirida issiqsevar oʻsimliklar hujayralarida qanday biokimyoviy oʻzgarish yuz beradi?",
+      "v": [
+        "Sitoplazmada organik kislota va tuz konsentratsiyasi ortadi",
+        "Sitoplazmadagi suv butunlay yoʻqoladi",
+        "Hujayra membranasi yoʻqoladi",
+        "Shakar miqdori keskin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yuqori harorat taʼsirida issiqsevar oʻsimliklar sitoplazmasida organik kislota va tuz konsentratsiyasi ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m9#872db303"
+    },
+    {
+      "q": "Issiqsevar oʻsimliklar sitoplazmasida ortgan organik kislota va tuz qanday vazifani bajaradi?",
+      "v": [
+        "Sitoplazmaning ivib qolishiga toʻsqinlik qiladi va zaharli toksinlarni neytrallaydi",
+        "Hujayrani muzlatib qoʻyadi",
+        "Fotosintezni toʻxtatadi",
+        "Hujayrani boʻlinishga majbur qiladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bu moddalar sitoplazmaning ivib qolishiga toʻsqinlik qiladi va zaharli toksinlarni neytrallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m9#defb6052"
+    },
+    {
+      "q": "Sovuqqa chidamli oʻsimliklarni muzlashdan nima himoya qiladi?",
+      "v": [
+        "Hujayra shirasida suv kamayishi hisobiga ortadigan shakar miqdori",
+        "Sitoplazmadagi muz kristallari",
+        "Barglardagi tikanlar",
+        "Teri osti yogʻ qatlami"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sovuqqa chidamli oʻsimliklar hujayra shirasida sovuq haroratda suv kamayishi hisobiga shakar miqdori ortadi, bu ularni muzlashdan himoya qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m9#202f6838"
+    },
+    {
+      "q": "Issiq haroratda oʻsimliklarni qizib ketishdan himoya qiluvchi samarali fiziologik vosita nima?",
+      "v": [
+        "Barg ogʻizchalari orqali transpiratsiya - suv bugʻlatish",
+        "Barglardagi shakar miqdorining ortishi",
+        "Ildizning chuqurlashishi",
+        "Sitoplazmaning ivishi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra issiq haroratda qizib ketishdan himoya qiluvchi samarali vosita barg ogʻizchalari orqali transpiratsiya - suv bugʻlatishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#4fad73d5"
+    },
+    {
+      "q": "Choʻl oʻsimliklarining vegetatsiya davri asosan qaysi faslga toʻgʻri keladi?",
+      "v": [
+        "Bahorga",
+        "Yozga",
+        "Qishga",
+        "Kuzga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra choʻl oʻsimliklarining vegetatsiya davri bahorga toʻgʻri keladi, yozda ular tinim davriga oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#dc5aeb96"
+    },
+    {
+      "q": "Urugʻi tinim davrini oʻtadigan bir yillik oʻsimliklar qanday nomlanadi?",
+      "v": [
+        "Efemerlar",
+        "Efemeroidlar",
+        "Lishayniklar",
+        "Suvoʻtlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra urugʻi tinim davrini oʻtadigan bir yillik oʻsimliklar efemerlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#ecfda332"
+    },
+    {
+      "q": "Piyozboshi, tugunagi va ildizpoyasi tinim davrini oʻtadigan koʻp yillik oʻsimliklar qanday nomlanadi?",
+      "v": [
+        "Efemeroidlar",
+        "Efemerlar",
+        "Lishayniklar",
+        "Yoʻsinlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra piyozboshi, tugunagi, ildizpoyasi tinim davrini oʻtadigan koʻp yillik oʻsimliklar efemeroidlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#87d9b95d"
+    },
+    {
+      "q": "Anabioz nima?",
+      "v": [
+        "Hayotiy jarayonlarning vaqtinchalik toʻxtashi",
+        "Hujayraning tez koʻpayishi",
+        "Moddalar almashinuvining jadallashuvi",
+        "Barg ogʻizchalari orqali suv bugʻlatish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra anabioz - hayotiy jarayonlarning vaqtinchalik toʻxtashidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#a8038643"
+    },
+    {
+      "q": "Qaysi organizmlar suv tanqis boʻlgan davrlarda anabioz holatiga oʻtadi?",
+      "v": [
+        "Yoʻsinlar va lishayniklar",
+        "Baliqlar va molluskalar",
+        "Qushlar va sutemizuvchilar",
+        "Bakteriyalar va agamalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ayrim oʻsimliklar (yoʻsinlar) va lishayniklar suv tanqis boʻlgan haddan tashqari issiq va sovuq davrlarda anabioz holatiga oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#1f528f06"
+    },
+    {
+      "q": "Barglarning tikanlarga aylanishi qaysi oʻsimlikda morfologik moslanish sifatida uchraydi?",
+      "v": [
+        "Kaktus",
+        "Palma",
+        "Kovul",
+        "Qaragʻay"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra barglarning tikanlarga aylanganligi kaktusga xos morfologik moslanishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#d34bdcd0"
+    },
+    {
+      "q": "Barglarning mayda qipiqsimon shaklda boʻlishi qaysi oʻsimliklarga xos?",
+      "v": [
+        "Saksovul va archa",
+        "Kaktus va palma",
+        "Qayin va tol",
+        "Kovul va qarag'ay"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra barglarning mayda qipiqsimon shaklda boʻlishi saksovul va archaga xosdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#dba1ef2e"
+    },
+    {
+      "q": "Barglarning qirqilgan shaklda boʻlishi qaysi oʻsimlikka xos?",
+      "v": [
+        "Palma",
+        "Kaktus",
+        "Saksovul",
+        "Kovul"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra barglarning qirqilgan boʻlishi palmaga xos morfologik moslanishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#a9d0ab0f"
+    },
+    {
+      "q": "Barglarning buralgan shaklda boʻlishi qaysi oʻsimlikka xos?",
+      "v": [
+        "Kovul",
+        "Kaktus",
+        "Palma",
+        "Qaragʻay"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra barglarning buralgan boʻlishi kovulga xos morfologik moslanishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m9#4b9d2d1b"
+    },
+    {
+      "q": "Barglarning ignasimon shaklda boʻlishi qaysi oʻsimliklarga xos?",
+      "v": [
+        "Qaragʻay va qoraqaragʻay",
+        "Kaktus va palma",
+        "Kovul va saksovul",
+        "Qayin va tol"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra barglarning ignasimon shaklda boʻlishi qaragʻay va qoraqaragʻayga xosdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#f351480d"
+    },
+    {
+      "q": "Barg yaproqlarining yorugʻlikka nisbatan vertikal joylashishi qanday ahamiyatga ega?",
+      "v": [
+        "Barglarni ortiqcha qizib ketishdan himoya qiladi",
+        "Barglarning yuzasini kattalashtiradi",
+        "Fotosintezni butunlay toʻxtatadi",
+        "Barglarni muzlatadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra barg yaprogʻining burilishi natijasida barglar vertikal joylashadi, bu ularni ortiqcha qizib ketishdan himoyalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#9da48ef6"
+    },
+    {
+      "q": "Sovuq iqlimda oʻsadigan daraxtlarning boʻyi past boʻlishi qaysi oʻsimliklarga xos?",
+      "v": [
+        "Qayin va tol",
+        "Kaktus va palma",
+        "Saksovul va qaragʻay",
+        "Kovul va archa"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sovuq iqlimda oʻsadigan daraxtlarning boʻyi past boʻlishi (qayin, tol) morfologik moslanishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#04c03a24"
+    },
+    {
+      "q": "Yer bagʻirlab yotib oʻsish qaysi oʻsimlikka xos morfologik moslanish?",
+      "v": [
+        "Turkiston archasi",
+        "Kaktus",
+        "Palma",
+        "Saksovul"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yer bagʻirlab yotib oʻsish Turkiston archasiga xos morfologik moslanishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m9#3dc2334b"
+    },
+    {
+      "q": "Yaylov oʻsimliklarining yostiqsimon shaklda boʻlishi qanday moslanish hisoblanadi?",
+      "v": [
+        "Morfologik moslanish",
+        "Biokimyoviy moslanish",
+        "Etologik moslanish",
+        "Fiziologik moslanish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻt oʻsimliklarning yostiqsimon shaklda (yaylov oʻsimliklari) boʻlishi morfologik moslanish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#5df510ce"
+    },
+    {
+      "q": "Sovuq iqlimdagi past boʻyli oʻsimliklar qishda qanday himoyalanadi?",
+      "v": [
+        "Qor bilan qoplanib, sovuq taʼsiridan himoyalanadi",
+        "Barglarini toʻkib tashlaydi",
+        "Ildizini yer ostiga tortadi",
+        "Shakar miqdorini kamaytiradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bu oʻsimliklar qishda qor bilan qoplanib sovuq taʼsiridan koʻproq himoyalanadi, yozda tuproq issiqligidan foydalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#23a3acd4"
+    },
+    {
+      "q": "Hayvonlarda haroratga nisbatan moslanishlar necha turga boʻlinadi?",
+      "v": [
+        "Biokimyoviy, fiziologik, morfologik, etologik",
+        "Faqat biokimyoviy va fiziologik",
+        "Faqat morfologik",
+        "Faqat etologik va morfologik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra hayvonlarda moslanishlar biokimyoviy, fiziologik, morfologik va etologik moslanishlarga boʻlinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#37fdfd48"
+    },
+    {
+      "q": "Past haroratli suvda yashovchi baliqlar tanasida muz kristallari hosil boʻlishiga qaysi modda yoʻl qoʻymaydi?",
+      "v": [
+        "Glikoproteinlar",
+        "Glitsirin",
+        "Shakar",
+        "Organik kislota"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sovuq suv muhitida yashovchi baliqlar tanasida muz kristallari hosil boʻlishiga yoʻl qoʻymaydigan glikoproteinlar toʻplanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m9#d40f0f4e"
+    },
+    {
+      "q": "Sovuq haroratda hasharotlar tanasida qaysi modda toʻplanadi?",
+      "v": [
+        "Glitsirin",
+        "Glikoprotein",
+        "Shakar",
+        "Tuz"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sovuq haroratda hasharotlarda glitsirin toʻplanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m9#7b2972c3"
+    },
+    {
+      "q": "Issiqqonli hayvonlarda sovuq muhitga biokimyoviy moslanish qanday namoyon boʻladi?",
+      "v": [
+        "Moddalar almashinuvi jadalligi ortadi",
+        "Moddalar almashinuvi butunlay toʻxtaydi",
+        "Tana harorati muhit haroratiga tenglashadi",
+        "Glitsirin toʻplanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra issiqqonli hayvonlarda past haroratda moddalar almashinuvi jadalligi ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#46c0d22a"
+    },
+    {
+      "q": "Hayvonlarda fiziologik moslanishlar qaysi sistema tomonidan boshqariladi?",
+      "v": [
+        "Markaziy nerv sistemasi tomonidan reflektor tarzda",
+        "Faqat qon aylanish sistemasi tomonidan",
+        "Faqat ovqat hazm qilish sistemasi tomonidan",
+        "Hech qanday sistema tomonidan boshqarilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fiziologik moslanishlar issiqlik ajralish darajasi oʻzgarishi bilan bogʻliq boʻlib, markaziy nerv sistemasi tomonidan reflektor tarzda boshqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#800c6394"
+    },
+    {
+      "q": "Yuqori haroratda poykiloterm va gomoyoterm hayvonlarda issiqlik qanday ajraladi?",
+      "v": [
+        "Tana yuzasidan suv bugʻlanishi hisobiga issiqlik ajralishi kuchayadi",
+        "Titrash tufayli issiqlik ajraladi",
+        "Teri osti yogʻi hisobiga ajraladi",
+        "Issiqlik umuman ajralmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yuqori haroratda poykiloterm va gomoyoterm hayvonlarda tana yuzasidan suv bugʻlanishi hisobiga issiqlik ajralishi kuchayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#cd14c08f"
+    },
+    {
+      "q": "Sutemizuvchilarda termoregulatsiya qanday taʼminlanadi?",
+      "v": [
+        "Teridagi qon tomirlarining kengayishi va torayishi tufayli",
+        "Barg ogʻizchalari orqali",
+        "Glitsirin toʻplanishi hisobiga",
+        "Tangachalar yordamida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sutemizuvchilarda termoregulatsiya teridagi qon tomirlarining kengayishi va torayishi tufayli taʼminlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#270e9a76"
+    },
+    {
+      "q": "Sovuq haroratda hayvonlarda muskullarning beixtiyor qisqarishi - titrash nima uchun sodir boʻladi?",
+      "v": [
+        "Issiqlik hosil boʻlishini kuchaytirish uchun",
+        "Suv bugʻlatishni kuchaytirish uchun",
+        "Moddalar almashinuvini sustlashtirish uchun",
+        "Tana yuzasini kichraytirish uchun"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sovuq haroratda muskullarning beixtiyor qisqarishi - titrash tufayli issiqlik hosil boʻlishi kuchayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#bd08ccd0"
+    },
+    {
+      "q": "Quyidagi qaysi hayvonlar qishda uyquga ketadi?",
+      "v": [
+        "Yumronqoziq, sugʻur, tipratikan, koʻrshapalak",
+        "Qush, baliq, kit, pingvin",
+        "Agama, ilon, baqa, chuvalchang",
+        "Bakteriya, suvoʻt, lishaynik, yoʻsin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra baʼzi hayvonlar qishda uyquga ketadi: yumronqoziq, sugʻur, tipratikan, koʻrshapalak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#08ec7808"
+    },
+    {
+      "q": "Qaysi hayvonlarda tana haroratini saqlashda teri osti yogʻ qatlami katta ahamiyatga ega?",
+      "v": [
+        "Pingvin, kurakoyoqlilar, kitsimonlar",
+        "Baliqlar va molluskalar",
+        "Sudralib yuruvchilar va hasharotlar",
+        "Choʻl agamasi va ilon"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tana harorati doimiyligini saqlashda teri osti yogʻ qatlami pingvin, kurakoyoqlilar va kitsimonlarda katta ahamiyatga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#310e38de"
+    },
+    {
+      "q": "Qushlar va sutemizuvchilarda tana haroratini bir xil saqlashda qaysi tuzilish muhim oʻrin tutadi?",
+      "v": [
+        "Toʻrt kamerali yurak va takomillashgan nafas organlari",
+        "Ikki kamerali yurak",
+        "Tangachali teri",
+        "Glitsirin qatlami"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra qushlar va sutemizuvchilarda toʻrt kamerali yurakning boʻlishi, nafas organlarining takomillashuvi va kislorod bilan taʼminlanishi tana haroratini bir xil saqlashda muhim oʻrin tutadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio11_m9#6fe8d8d4"
+    },
+    {
+      "q": "Sudralib yuruvchilarning tanasi nima bilan qoplangan (morfologik moslanish)?",
+      "v": [
+        "Tangachalar",
+        "Pat",
+        "Qalin jun",
+        "Mum"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra morfologik moslanish sifatida sudralib yuruvchilar tanasi tangachalar bilan qoplangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio11_m9#e357c954"
+    },
+    {
+      "q": "Qushlar va sutemizuvchilarning tanasi qanday morfologik qoplamaga ega?",
+      "v": [
+        "Qushlar - pat, sutemizuvchilar - qalin jun",
+        "Qushlar - tangacha, sutemizuvchilar - pat",
+        "Qushlar - jun, sutemizuvchilar - tangacha",
+        "Ikkalasi ham mum bilan qoplangan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra qushlarning tanasi pat, sutemizuvchilarning tanasi qalin jun bilan qoplangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#786aab88"
+    },
+    {
+      "q": "Hayvonlarda uya qurish, joy topish va migratsiya qilish qaysi turdagi moslanishga misol boʻladi?",
+      "v": [
+        "Etologik moslanish",
+        "Biokimyoviy moslanish",
+        "Morfologik moslanish",
+        "Fiziologik moslanish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yashash uchun joy topish, uya qurish, migratsiya qilish kabi xatti-harakatlar etologik moslanishga misoldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#51266906"
+    },
+    {
+      "q": "Choʻl agamasi qizib yotgan qumdan qanday himoyalanadi?",
+      "v": [
+        "Butalarning shoxiga chiqib oladi",
+        "Qumga koʻmiladi",
+        "Anabioz holatiga oʻtadi",
+        "Suvga kiradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra choʻl agamasi qizib yotgan qumdan oʻzini himoya qilish uchun butalarning shoxiga chiqib oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#c702ba4e"
+    },
+    {
+      "q": "Sudralib yuruvchilar va hasharotlar kunning salqin vaqtlarida isinish uchun nima qiladi?",
+      "v": [
+        "Tana holatini oʻzgartirib quyoshga tutadilar",
+        "Yer ostiga koʻmiladilar",
+        "Migratsiya qiladilar",
+        "Uyquga ketadilar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra koʻpchilik sudralib yuruvchilar, suvda-quruqlikda yashovchilar va hasharotlar salqin vaqtlarda isinish uchun tana holatini oʻzgartirib quyoshga tutadilar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#94b32c3b"
+    },
+    {
+      "q": "Migratsiya nima?",
+      "v": [
+        "Qulay haroratli joylarga koʻchib oʻtish",
+        "Qishda uyquga ketish",
+        "Tana holatini quyoshga tutish",
+        "Anabioz holatiga oʻtish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra migratsiya - qulay haroratli joylarga koʻchib oʻtishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#32efaf05"
+    },
+    {
+      "q": "Quyidagi qaysi jonzotlar yil davomida migratsiyani amalga oshiradi?",
+      "v": [
+        "Hasharotlar, baʼzi baliq turlari, qushlar, kitlar",
+        "Faqat oʻsimliklar",
+        "Faqat bakteriyalar",
+        "Faqat lishayniklar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra hasharotlar, baʼzi baliq turlari, qushlar va kitlar yil davomida migratsiyani amalga oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio11_m9#31f1869f"
+    }
+  ]
+}

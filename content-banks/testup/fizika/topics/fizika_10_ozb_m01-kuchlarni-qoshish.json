@@ -1,0 +1,456 @@
+{
+  "nom": "01-mavzu. Kuchlarni Qoshish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Muvozanatlashgan kuchlar deb qanday kuchlarga aytiladi?",
+      "v": [
+        "Jismning tinch holatini yoki harakat tezligini o'zgartirmaydigan kuchlar",
+        "Jismning tezligini oshiradigan kuchlar",
+        "Jismning harakat yo'nalishini o'zgartiradigan kuchlar",
+        "Jismga tezlanish beradigan kuchlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikda: jismning tinch holatini yoki harakat tezligini o'zgartirmaydigan kuchlar muvozanatlashgan kuchlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#70cb2f01"
+    },
+    {
+      "q": "Muvozanatlashmagan kuchlar deb qanday kuchlarga aytiladi?",
+      "v": [
+        "Jism tezligining o'zgarishiga sabab bo'ladigan kuchlar",
+        "Yig'indisi nolga teng bo'lgan kuchlar",
+        "Jismning tinch holatini saqlaydigan kuchlar",
+        "Moduli teng, yo'nalishi qarama-qarshi kuchlar"
+      ],
+      "t": 0,
+      "izoh": "Jism tezligining o'zgarishiga sabab bo'ladigan kuchlar muvozanatlashmagan kuchlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#d6a31619"
+    },
+    {
+      "q": "Stol ustida tinch turgan kitobga qanday kuchlar ta'sir qiladi?",
+      "v": [
+        "Og'irlik kuchi va stolning normal reaksiya kuchi",
+        "Ishqalanish kuchi va tortish kuchi",
+        "Og'irlik kuchi va markazga intilma kuch",
+        "Tortish kuchi va reaksiya kuchi"
+      ],
+      "t": 0,
+      "izoh": "Kitobga og'irlik kuchi va stol tomonidan yuqoriga ko'taruvchi normal reaksiya kuchi ta'sir qiladi; ular bir-birini muvozanatlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#2c9c06b7"
+    },
+    {
+      "q": "Jismga ta'sir etuvchi muvozanatlashgan kuchlarning yig'indisi nimaga teng?",
+      "v": [
+        "Nolga",
+        "Og'irlik kuchiga",
+        "Eng katta kuchning ikki baravariga",
+        "Erkin tushish tezlanishiga"
+      ],
+      "t": 0,
+      "izoh": "Muvozanatlashgan kuchlarning vektor yig'indisi nolga teng: F1+F2+...+Fn=0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#e797db2e"
+    },
+    {
+      "q": "Teng ta'sir etuvchi kuch deb nimaga aytiladi?",
+      "v": [
+        "Jismga ta'sir qiluvchi kuchlarning vektor yig'indisiga",
+        "Jismga ta'sir qiluvchi eng katta kuchga",
+        "Bir nuqtaga qo'yilgan ixtiyoriy kuchga",
+        "Jismni tinch holatda saqlovchi kuchga"
+      ],
+      "t": 0,
+      "izoh": "Jismga ta'sir qiluvchi kuchlarning vektor yig'indisi shu kuchlarning teng ta'sir etuvchisi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#e3033fc5"
+    },
+    {
+      "q": "F = F1 + F2 + ... + Fn formuladagi F1, F2, ..., Fn kuchlar nima deb ataladi?",
+      "v": [
+        "Tashkil etuvchi kuchlar",
+        "Muvozanatlashgan kuchlar",
+        "Reaksiya kuchlari",
+        "Normal kuchlar"
+      ],
+      "t": 0,
+      "izoh": "Teng ta'sir etuvchini hosil qiluvchi kuchlar tashkil etuvchi kuchlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#b5c2b020"
+    },
+    {
+      "q": "Ikki kuch orasidagi burchak 0° bo'lsa, ularning teng ta'sir etuvchisi qanday topiladi?",
+      "v": [
+        "F = F1 + F2",
+        "F = F1 − F2",
+        "F = √(F1² + F2²)",
+        "F = 0"
+      ],
+      "t": 0,
+      "izoh": "Kuchlar bir yo'nalishda bo'lsa (α=0°), teng ta'sir etuvchi F = F1 + F2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#3d57fa68"
+    },
+    {
+      "q": "Ikki kuch o'zaro tik yo'nalgan (α=90°) bo'lsa, teng ta'sir etuvchi qanday topiladi?",
+      "v": [
+        "F = √(F1² + F2²)",
+        "F = F1 + F2",
+        "F = F1 − F2",
+        "F = 2F1F2"
+      ],
+      "t": 0,
+      "izoh": "α=90° da cosα=0 bo'lgani uchun F = √(F1² + F2²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#8b23fd3e"
+    },
+    {
+      "q": "Ikki kuch qarama-qarshi yo'nalgan (α=180°) bo'lsa, teng ta'sir etuvchi qanday topiladi?",
+      "v": [
+        "F = F1 − F2 (modul bo'yicha ayirma)",
+        "F = F1 + F2",
+        "F = √(F1² + F2²)",
+        "F = F1·F2"
+      ],
+      "t": 0,
+      "izoh": "α=180° da cosα=−1 bo'lgani uchun teng ta'sir etuvchi kuchlar ayirmasiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#20993500"
+    },
+    {
+      "q": "Umumiy holda ikki kuchning teng ta'sir etuvchisi qanday formula bilan topiladi?",
+      "v": [
+        "F = √(F1² + F2² + 2F1F2·cosα)",
+        "F = √(F1² + F2² − 2F1F2·cosα)",
+        "F = F1² + F2²",
+        "F = (F1 + F2)·cosα"
+      ],
+      "t": 0,
+      "izoh": "Natijaviy kuch F = √(F1² + F2² + 2F1F2·cosα) formula bilan topiladi, α — kuchlar orasidagi burchak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#97211d14"
+    },
+    {
+      "q": "Har birining moduli 5 N bo'lgan, orasidagi burchak 120° bo'lgan ikki kuchning teng ta'sir etuvchisi necha N?",
+      "v": [
+        "5 N",
+        "10 N",
+        "7,5 N",
+        "0 N"
+      ],
+      "t": 0,
+      "izoh": "F = √(25+25+2·25·cos120°) = √(50−25) = 5 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#309dab3a"
+    },
+    {
+      "q": "Qiymatlari 30 N va 40 N bo'lgan kuchlarning teng ta'sir etuvchisi 50 N bo'lishi uchun ular o'zaro qanday yo'nalishda bo'lishi kerak?",
+      "v": [
+        "O'zaro tik yo'nalgan",
+        "Bir yo'nalishda",
+        "Qarama-qarshi yo'nalishda",
+        "60° burchak ostida"
+      ],
+      "t": 0,
+      "izoh": "√(30²+40²)=50 N bo'lgani uchun kuchlar o'zaro tik bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#b7962d4e"
+    },
+    {
+      "q": "Nyutonning I qonuniga asosan, jismga qo'shimcha kuchlar ta'sir qilmasa, jism qanday holatda bo'ladi?",
+      "v": [
+        "Nisbiy tinch holatini saqlaydi yoki to'g'ri chiziqli tekis harakat qiladi",
+        "Tezlanish bilan harakat qiladi",
+        "Aylanma harakat qiladi",
+        "Darhol to'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "Nyutonning I qonuni: kuchlar ta'sir qilmasa, jism tinch holatini yoki tekis harakatini davom ettiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#afca0b05"
+    },
+    {
+      "q": "Parashyutchi to'g'ri chiziqli tekis harakatlanib tushayotganda qaysi kuchlar muvozanatlashgan bo'ladi?",
+      "v": [
+        "Og'irlik kuchi va havoning qarshilik kuchi",
+        "Og'irlik kuchi va markazga intilma kuch",
+        "Tortish kuchi va ishqalanish kuchi",
+        "Normal reaksiya va og'irlik kuchi"
+      ],
+      "t": 0,
+      "izoh": "Tekis tushishda og'irlik kuchini havo qarshilik kuchi muvozanatlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#07202297"
+    },
+    {
+      "q": "Moduli teng, yo'nalishi qarama-qarshi bo'lgan ikki kuch bir nuqtaga qo'yilsa, ular qanday kuchlar hisoblanadi?",
+      "v": [
+        "Muvozanatlashgan kuchlar",
+        "Muvozanatlashmagan kuchlar",
+        "Tashkil etuvchi kuchlar emas",
+        "Tezlashtiruvchi kuchlar"
+      ],
+      "t": 0,
+      "izoh": "Bunday kuchlarning yig'indisi nolga teng bo'lgani uchun ular bir-birini muvozanatlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#972a34cf"
+    },
+    {
+      "q": "Teng ta'sir etuvchi kuchning o'lchov birligi nima?",
+      "v": [
+        "Nyuton (N)",
+        "Kilogramm (kg)",
+        "Metr/sekund (m/s)",
+        "Joul (J)"
+      ],
+      "t": 0,
+      "izoh": "Kuch SI sistemasida nyuton bilan o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#056690d0"
+    },
+    {
+      "q": "Kuchlarni qo'shishda ularning qaysi xossalari e'tiborga olinadi?",
+      "v": [
+        "Yo'nalishi va moduli",
+        "Faqat moduli",
+        "Faqat yo'nalishi",
+        "Faqat qo'yilish nuqtasi"
+      ],
+      "t": 0,
+      "izoh": "Teng ta'sir etuvchini aniqlashda kuchlarning yo'nalishi va moduli e'tiborga olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#e62f8723"
+    },
+    {
+      "q": "Arqon tortishda ikki sportchi o'ng tomonga 250 N va 300 N, yana ikki sportchi chap tomonga 100 N va 350 N kuch bilan tortsa, teng ta'sir etuvchi kuch qanday bo'ladi?",
+      "v": [
+        "100 N, o'ng tomonga",
+        "100 N, chap tomonga",
+        "550 N, o'ng tomonga",
+        "450 N, chap tomonga"
+      ],
+      "t": 0,
+      "izoh": "O'ngga: 250+300=550 N; chapga: 100+350=450 N; ayirma 100 N o'ng tomonga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#3917551b"
+    },
+    {
+      "q": "Modullari o'zgarmas bo'lgan ikki kuch orasidagi burchak ortib borsa, ularning teng ta'sir etuvchisi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Avval ortib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "F = √(F1²+F2²+2F1F2cosα) formulada α ortganda cosα kamayadi, demak F kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#416d196e"
+    },
+    {
+      "q": "Ikki kuchning teng ta'sir etuvchisi eng katta qiymatga qachon erishadi?",
+      "v": [
+        "Kuchlar bir yo'nalishda bo'lganda (α=0°)",
+        "Kuchlar qarama-qarshi bo'lganda (α=180°)",
+        "Kuchlar tik bo'lganda (α=90°)",
+        "Kuchlar 120° burchak ostida bo'lganda"
+      ],
+      "t": 0,
+      "izoh": "α=0° da cosα=1 bo'lib, F=F1+F2 eng katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#8fd2e2d1"
+    },
+    {
+      "q": "Ikki kuchning teng ta'sir etuvchisi eng kichik qiymatga qachon erishadi?",
+      "v": [
+        "Kuchlar qarama-qarshi yo'nalganda (α=180°)",
+        "Kuchlar bir yo'nalishda bo'lganda (α=0°)",
+        "Kuchlar tik bo'lganda (α=90°)",
+        "Kuchlar 60° burchak ostida bo'lganda"
+      ],
+      "t": 0,
+      "izoh": "α=180° da teng ta'sir etuvchi kuchlar ayirmasiga teng bo'lib, eng kichik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#c494a91f"
+    },
+    {
+      "q": "Jismga ta'sir etuvchi kuchlarning teng ta'sir etuvchisi nolga teng bo'lsa, jismning tezlanishi qanday bo'ladi?",
+      "v": [
+        "a = 0",
+        "a = g",
+        "a > 0",
+        "a < 0"
+      ],
+      "t": 0,
+      "izoh": "Kuchlar yig'indisi nol bo'lsa, Nyutonning II qonuniga ko'ra a=0 va v=const.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#6dbaeeef"
+    },
+    {
+      "q": "Kuch qanday asbob yordamida o'lchanadi?",
+      "v": [
+        "Dinamometr",
+        "Tarozi",
+        "Ampermetr",
+        "Barometr"
+      ],
+      "t": 0,
+      "izoh": "Kuch dinamometrda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#36e13cdd"
+    },
+    {
+      "q": "Muvozanatlashgan kuchlar ta'siridagi jismning tezligi qanday bo'ladi?",
+      "v": [
+        "O'zgarmas (v = const)",
+        "Tekis ortib boradi",
+        "Tekis kamayib boradi",
+        "Nolga teng bo'lishi shart"
+      ],
+      "t": 0,
+      "izoh": "Muvozanatlashgan kuchlarda a=0, v=const bo'ladi; jism tinch ham bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#05101acb"
+    },
+    {
+      "q": "Har biri 4 N bo'lgan ikki kuch orasidagi burchak 60° bo'lsa, teng ta'sir etuvchi kuch taxminan necha N?",
+      "v": [
+        "6,9 N",
+        "8 N",
+        "4 N",
+        "5,7 N"
+      ],
+      "t": 0,
+      "izoh": "F=√(16+16+2·16·0,5)=√48≈6,9 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#9abca8f7"
+    },
+    {
+      "q": "Teng ta'sir etuvchi kuch tashkil etuvchi kuchlarning har biridan har doim katta bo'ladimi?",
+      "v": [
+        "Yo'q, u tashkil etuvchilardan kichik bo'lishi ham mumkin",
+        "Ha, har doim katta bo'ladi",
+        "Faqat kuchlar tik bo'lganda katta bo'ladi",
+        "Faqat kuchlar qarama-qarshi bo'lganda katta bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Masalan, qarama-qarshi yo'nalgan kuchlarda teng ta'sir etuvchi ayirmaga teng bo'lib, tashkil etuvchilardan kichik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#56eba1ec"
+    },
+    {
+      "q": "Gorizontal yo'lda tekis harakatlanayotgan avtomobilga tortish kuchi va qarshilik kuchi ta'sir etmoqda. Bu kuchlar qanday kuchlarga misol?",
+      "v": [
+        "Muvozanatlashgan kuchlar",
+        "Muvozanatlashmagan kuchlar",
+        "Markazga intilma kuchlar",
+        "Tortishish kuchlari"
+      ],
+      "t": 0,
+      "izoh": "Tekis harakatda kuchlar yig'indisi nol, ya'ni kuchlar muvozanatlashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#bc8a1688"
+    },
+    {
+      "q": "Har biri 5 N bo'lgan ikki kuch qarama-qarshi yo'nalishda bir nuqtaga qo'yilsa, teng ta'sir etuvchi necha N?",
+      "v": [
+        "0 N",
+        "10 N",
+        "5 N",
+        "2,5 N"
+      ],
+      "t": 0,
+      "izoh": "Qarama-qarshi teng kuchlarning yig'indisi nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#8439b88f"
+    },
+    {
+      "q": "Yonilg'isi tugab to'xtab qolgan avtomobilni joyidan qo'zg'atish uchun unga qanday kuch qo'yish kerak?",
+      "v": [
+        "Muvozanatdan chiqaruvchi kuch",
+        "Muvozanatlovchi kuch",
+        "Normal reaksiya kuchi",
+        "Markazdan qochma kuch"
+      ],
+      "t": 0,
+      "izoh": "Jismni joyidan qo'zg'atish uchun muvozanatdan chiqaruvchi (muvozanatlashmagan) kuch kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#88b179d2"
+    },
+    {
+      "q": "Tabiatda jismning faqat bitta kuch ta'siri ostidagi harakati qanchalik uchraydi?",
+      "v": [
+        "Deyarli uchramaydi",
+        "Juda ko'p uchraydi",
+        "Faqat kosmik fazoda uchraydi",
+        "Faqat laboratoriyada uchraydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikda: jismning faqat bitta kuch ta'siridagi harakatini deyarli uchratmaymiz; ko'p hollarda bir nechta kuch ta'sir qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m01-kuchlarni-qoshish#a95dd740"
+    }
+  ]
+}

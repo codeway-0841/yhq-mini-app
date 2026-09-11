@@ -1,0 +1,1609 @@
+{
+  "nom": "Klassik tengsizliklar va ularni isbotlash",
+  "bolim": "Tengsizliklar",
+  "blok": "tngs",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Anvar 8 va 18 sonlari uchun o'rta arifmetik va o'rta geometrik qiymatlarni topdi. Bu ikki qiymatning ayirmasi nechaga teng?",
+      "v": [
+        "14",
+        "12",
+        "26",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "O'rta arifmetik (8 + 18)/2 = 13 ga teng. O'rta geometrik √(8·18) = √144 = 12. Ularning ayirmasi 13 − 12 = 1. 14 varianti yig'indini 2 ga bo'lishni unutgan o'quvchining xatosi, 26 esa shunchaki yig'indi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "am-gm-farqini-hisoblash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#14a51f4b"
+    },
+    {
+      "q": "Dilnoza 3 va 27 sonlarining o'rta geometrik qiymatini hisobladi, so'ngra undan o'rta arifmetik qiymatni ayirdi. U qanday natija oldi?",
+      "v": [
+        "−6",
+        "6",
+        "−21",
+        "21"
+      ],
+      "t": 0,
+      "izoh": "Avval o'rta geometrik: √(3·27) = √81 = 9. Keyin o'rta arifmetik: (3 + 27)/2 = 15. Shart bo'yicha 9 − 15 = −6 chiqadi. Tartibni almashtirgan o'quvchi 6 ni, yig'indini 2 ga bo'lmagan o'quvchi −21 ni oladi. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "am-gm-farqini-hisoblash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#6acd160a"
+    },
+    {
+      "q": "Ikki navli choyning 1 kilogrammi 40 000 so'm va 90 000 so'm turadi. Shu narxlarning o'rta arifmetigi o'rta geometrigidan necha so'mga katta?",
+      "v": [
+        "25 000 so'm",
+        "50 000 so'm",
+        "5 000 so'm",
+        "10 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "O'rta arifmetik (40 000 + 90 000)/2 = 65 000 so'm. O'rta geometrik √(40 000·90 000) = √3 600 000 000 = 60 000 so'm. Farq 65 000 − 60 000 = 5 000 so'm. 25 000 — narxlar ayirmasining yarmi, bu boshqa kattalik. Javob: 5 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "am-gm-farqini-hisoblash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#b1623cc5"
+    },
+    {
+      "q": "Kamola 2 va 32 sonlarining o'rta arifmetik qiymati o'rta geometrik qiymatidan necha birlik katta ekanini aniqlamoqchi. Bu farq qancha?",
+      "v": [
+        "17",
+        "8",
+        "9",
+        "−15"
+      ],
+      "t": 2,
+      "izoh": "O'rta arifmetik (2 + 32)/2 = 17, o'rta geometrik √(2·32) = √64 = 8. Farq 17 − 8 = 9. O'rta geometrikni (2·32):2 = 32 deb hisoblagan o'quvchi −15 ni oladi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "am-gm-farqini-hisoblash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#909b2b21"
+    },
+    {
+      "q": "Zavodda ikki smenada 12 ta va 48 ta detal tayyorlandi. Shu ikki sonning o'rta geometrigi o'rta arifmetigidan qancha kam chiqadi?",
+      "v": [
+        "24",
+        "6",
+        "30",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "O'rta arifmetik (12 + 48)/2 = 30 ta. O'rta geometrik √(12·48) = √576 = 24 ta. Demak o'rta geometrik 30 − 24 = 6 ga kam. 18 varianti sonlar ayirmasining yarmi bo'lib, bu boshqa kattalik. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "am-gm-farqini-hisoblash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#72d0da28"
+    },
+    {
+      "q": "Musbat a va b sonlari uchun (a + b)/2 va √(ab) ifodalari orasidagi munosabatni to'g'ri ifodalagan fikrni tanlang.",
+      "v": [
+        "(a + b)/2 ≤ √(ab), tenglik a = b da",
+        "(a + b)/2 ≥ √(ab), tenglik a = b da",
+        "(a + b)/2 > √(ab) har doim",
+        "(a + b)/2 = √(ab) har doim"
+      ],
+      "t": 1,
+      "izoh": "Farqni yozamiz: (a + b)/2 − √(ab) = (a − 2√(ab) + b)/2 = (√a − √b)²/2. To'la kvadrat manfiy emas, demak (a + b)/2 ≥ √(ab). Qat'iy tengsizlik noto'g'ri, chunki a = b da tenglik yuz beradi. Javob: ikkinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "am-gm-umumiy-munosabat",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#12239923"
+    },
+    {
+      "q": "Bahodir 5 va 5 sonlari uchun o'rta arifmetik va o'rta geometrik qiymatlarni hisoblab, ular teng chiqqanini ko'rdi. Buning sababi nima?",
+      "v": [
+        "O'rta geometrik har doim o'rta arifmetikka teng",
+        "Sonlar toq bo'lgani uchun",
+        "Sonlar yig'indisi 10 ga teng bo'lgani uchun",
+        "Sonlar o'zaro teng bo'lgani uchun tenglik sharti bajarildi"
+      ],
+      "t": 3,
+      "izoh": "O'rta arifmetik (5 + 5)/2 = 5, o'rta geometrik √(5·5) = 5. AM ≥ GM tengsizligida tenglik faqat sonlar o'zaro teng bo'lgandagina yuz beradi. Bu yerda ikkala son 5 ga teng, shuning uchun tenglik sharti bajarilgan. Javob: sonlar o'zaro teng bo'lgani uchun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "am-gm-umumiy-munosabat",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#f73ea43b"
+    },
+    {
+      "q": "Quyidagi juftliklardan qaysi birida o'rta arifmetik va o'rta geometrik qiymatlar bir-biriga eng yaqin turadi: 1 va 100, 4 va 25, 9 va 16, 2 va 50?",
+      "v": [
+        "1 va 100",
+        "4 va 25",
+        "9 va 16",
+        "2 va 50"
+      ],
+      "t": 2,
+      "izoh": "Har juft uchun farqni topamiz: 1 va 100 da 50,5 − 10 = 40,5; 4 va 25 da 14,5 − 10 = 4,5; 9 va 16 da 12,5 − 12 = 0,5; 2 va 50 da 26 − 10 = 16. Eng kichik farq 9 va 16 juftida. Sonlar bir-biriga qanchalik yaqin bo'lsa, ikki o'rtacha ham shunchalik yaqin bo'ladi. Javob: 9 va 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "am-gm-yaqinlik-tahlili",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#e47d2f35"
+    },
+    {
+      "q": "Ikkita musbat sonning o'rta arifmetigi 10 ga, o'rta geometrigi 8 ga teng. Shu sonlarning yig'indisi va ko'paytmasi mos ravishda nechaga teng?",
+      "v": [
+        "20 va 64",
+        "10 va 8",
+        "20 va 16",
+        "40 va 64"
+      ],
+      "t": 0,
+      "izoh": "O'rta arifmetik (a + b)/2 = 10 tenglikdan a + b = 20. O'rta geometrik √(ab) = 8 tenglikdan ab = 8² = 64. Demak yig'indi 20, ko'paytma 64. Ko'paytmani 2·8 = 16 deb olish tipik xato. Javob: 20 va 64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ortachalardan-sonlarni-tiklash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#d41177e0"
+    },
+    {
+      "q": "Ikki sonning o'rta arifmetigi 15 ga, o'rta geometrigi 9 ga teng bo'lsa, bu sonlarni toping.",
+      "v": [
+        "9 va 21",
+        "5 va 25",
+        "6 va 24",
+        "3 va 27"
+      ],
+      "t": 3,
+      "izoh": "Shartdan a + b = 30 va ab = 81 kelib chiqadi. Bu sonlar t² − 30t + 81 = 0 tenglamaning ildizlari. D = 900 − 324 = 576, √576 = 24. Demak t = (30 ± 24)/2, ya'ni 27 va 3. Qolgan variantlarda yig'indi 30 bo'lsa ham, ko'paytma 81 chiqmaydi. Javob: 3 va 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortachalardan-sonlarni-tiklash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#2064a9d0"
+    },
+    {
+      "q": "Ikki ishchining kunlik ish haqi o'rta arifmetigi 300 000 so'm, o'rta geometrigi esa 240 000 so'm. Kichik ish haqi qancha ekanini toping.",
+      "v": [
+        "240 000 so'm",
+        "480 000 so'm",
+        "120 000 so'm",
+        "60 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi 2·300 000 = 600 000 so'm, ko'paytma 240 000² = 57 600 000 000. Sonlar t² − 600 000t + 57 600 000 000 = 0 tenglamaning ildizlari. D = 129 600 000 000, √D = 360 000. t = (600 000 ± 360 000)/2, ya'ni 480 000 va 120 000. Kichigi 120 000 so'm. Javob: 120 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortachalardan-sonlarni-tiklash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#38258fa0"
+    },
+    {
+      "q": "x > 0 shartda x + 1/x ifodasining eng kichik qiymati va u erishiladigan x ni to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "Eng kichik qiymat 1, x = 1 da",
+        "Eng kichik qiymat 0, x = 0 da",
+        "Eng kichik qiymat 2, x = 2 da",
+        "Eng kichik qiymat 2, x = 1 da"
+      ],
+      "t": 3,
+      "izoh": "AM ≥ GM tengsizligini x va 1/x sonlariga qo'llaymiz: (x + 1/x)/2 ≥ √(x·1/x) = 1. Ikkala tomonni 2 ga ko'paytirsak x + 1/x ≥ 2. Tenglik x = 1/x, ya'ni x² = 1 va x > 0 bo'lgani uchun x = 1 da erishiladi. Javob: eng kichik qiymat 2, x = 1 da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-plus-teskarisi-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#71d26ebd"
+    },
+    {
+      "q": "Musbat x uchun 3x + 3/x ifodasi qabul qila oladigan eng kichik qiymatni toping.",
+      "v": [
+        "3",
+        "9",
+        "6",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "Ifodani 3(x + 1/x) ko'rinishida yozamiz. Qavs ichidagi ifoda x > 0 da 2 dan kichik emas, tenglik x = 1 da. Demak butun ifoda 3·2 = 6 dan kichik emas. Koeffitsientning o'zini javob deb olgan o'quvchi 3 ni, qavs ichidagi minimumni javob deb olgan o'quvchi 2 ni tanlaydi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kx-plus-m-bolinadi-x-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#6663ac1a"
+    },
+    {
+      "q": "Musbat x uchun x + 25/x ifodasi eng kichik qiymatini qaysi x da qabul qiladi va bu qiymat qancha bo'ladi?",
+      "v": [
+        "x = 25, qiymat 26",
+        "x = 5, qiymat 10",
+        "x = 5, qiymat 25",
+        "x = 1, qiymat 26"
+      ],
+      "t": 1,
+      "izoh": "AM ≥ GM bo'yicha x + 25/x ≥ 2√(x·25/x) = 2·5 = 10. Tenglik x = 25/x, ya'ni x² = 25 va x > 0 bo'lgani uchun x = 5 da erishiladi. x = 1 ni qo'yib 26 olish — minimumni tekshirmasdan chekka nuqtani tanlash xatosi. Javob: x = 5, qiymat 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kx-plus-m-bolinadi-x-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#5e0fb403"
+    },
+    {
+      "q": "Musbat x qiymatlarida 4x + 9/x ifodasining eng kichik qiymati nechaga teng bo'ladi?",
+      "v": [
+        "12",
+        "13",
+        "6",
+        "36"
+      ],
+      "t": 0,
+      "izoh": "AM ≥ GM ni qo'llaymiz: 4x + 9/x ≥ 2√(4x·9/x) = 2√36 = 12. Tenglik 4x = 9/x, ya'ni x² = 9/4 va x = 3/2 da erishiladi. Koeffitsientlarni qo'shib 13 olish, ildiz oldidagi 2 ni tashlab 6 olish — ikki tipik xato. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kx-plus-m-bolinadi-x-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#8baab622"
+    },
+    {
+      "q": "Yuk mashinasining 100 km yo'lga sarflaydigan yoqilg'isi litr hisobida 0,3v + 480/v formula bilan topiladi, bu yerda v — tezlik (km/soat). Sarf eng kam bo'ladigan tezlikni aniqlang.",
+      "v": [
+        "1600 km/soat",
+        "40 km/soat",
+        "24 km/soat",
+        "69 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Ifodaga AM ≥ GM ni qo'llaymiz: 0,3v + 480/v ≥ 2√(0,3v·480/v) = 2√144 = 24. Tenglik 0,3v = 480/v shartida, ya'ni 0,3v² = 480, v² = 1600, v = 40 km/soat. 1600 — bu v², 24 esa eng kam sarf (litr), tezlik emas. Javob: 40 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kx-plus-m-bolinadi-x-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#585f5e53"
+    },
+    {
+      "q": "Musbat x uchun 5x + 20/x ifodasining eng kichik qiymati qaysi x da erishiladi?",
+      "v": [
+        "x = 4",
+        "x = 2",
+        "x = 10",
+        "x = 5"
+      ],
+      "t": 1,
+      "izoh": "AM ≥ GM bo'yicha 5x + 20/x ≥ 2√(5x·20/x) = 2√100 = 20. Tenglik 5x = 20/x shartida bo'ladi, bundan x² = 4 va x > 0 bo'lgani uchun x = 2. x² ni javob deb olgan o'quvchi 4 ni, koeffitsientni javob deb olgan o'quvchi 5 ni tanlaydi. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kx-plus-m-bolinadi-x-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#eb0850ea"
+    },
+    {
+      "q": "a² + b² ≥ 2ab tengsizligi qanday ayniyat yordamida isbotlanadi va tenglik qachon o'rinli bo'ladi?",
+      "v": [
+        "(a + b)² ≥ 0 dan, tenglik a = −b da",
+        "(a − b)² ≤ 0 dan, tenglik a = 0 da",
+        "(a − b)² ≥ 0 dan, tenglik a = b da",
+        "a² − b² ≥ 0 dan, tenglik a = b da"
+      ],
+      "t": 2,
+      "izoh": "Barcha hadni bir tomonga o'tkazamiz: a² + b² − 2ab = (a − b)². To'la kvadrat hech qachon manfiy emas, demak a² + b² ≥ 2ab. Tenglik (a − b)² = 0 bo'lganda, ya'ni a = b da. Javob: (a − b)² ≥ 0 dan, tenglik a = b da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-kvadrat-ajratish-isboti",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#841fd472"
+    },
+    {
+      "q": "(a + b)² ≥ 4ab tengsizligini isbotlash uchun chap tomondan o'ng tomon ayiriladi. Bu ayirma qanday ifodaga aylanadi?",
+      "v": [
+        "2ab",
+        "(a − b)²",
+        "(a + b)²",
+        "a² − b²"
+      ],
+      "t": 1,
+      "izoh": "Qavsni ochamiz: (a + b)² − 4ab = a² + 2ab + b² − 4ab = a² − 2ab + b². Bu ifoda (a − b)² to'la kvadratiga teng va u manfiy emas. Shuning uchun (a + b)² ≥ 4ab barcha haqiqiy a va b uchun o'rinli. Javob: (a − b)².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-kvadrat-ajratish-isboti",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#005d5907"
+    },
+    {
+      "q": "x² + 9 ≥ 6x tengsizligi barcha haqiqiy x uchun o'rinlimi va tenglik qaysi x da bajariladi?",
+      "v": [
+        "Ha, tenglik x = 3 da",
+        "Ha, tenglik x = 9 da",
+        "Yo'q, manfiy x larda buziladi",
+        "Ha, tenglik x = 6 da"
+      ],
+      "t": 0,
+      "izoh": "Hamma hadni chap tomonga o'tkazamiz: x² − 6x + 9 ≥ 0. Chap tomon (x − 3)² to'la kvadrati bo'lib, u har qanday x da manfiy emas. Demak tengsizlik barcha haqiqiy x uchun o'rinli, tenglik esa x − 3 = 0, ya'ni x = 3 da. Javob: ha, tenglik x = 3 da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadrat-ajratish-isboti",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#5b0497f0"
+    },
+    {
+      "q": "Quyidagi ifodalardan qaysi biri barcha haqiqiy x uchun manfiy bo'lmaydi: x² − 4x + 3, x² − 10x + 25, x² + 2x − 8, x² − 6x + 5?",
+      "v": [
+        "x² − 4x + 3",
+        "x² − 10x + 25",
+        "x² + 2x − 8",
+        "x² − 6x + 5"
+      ],
+      "t": 1,
+      "izoh": "Har bir ifodada to'la kvadrat ajratishga urinamiz. x² − 10x + 25 = (x − 5)², bu manfiy bo'lmaydi. Qolganlari ko'paytuvchilarga yoyiladi: (x − 1)(x − 3), (x + 4)(x − 2), (x − 1)(x − 5) — ildizlar orasida ular manfiy qiymat oladi. Javob: x² − 10x + 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-kvadrat-ajratish-isboti",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#11f2dbb2"
+    },
+    {
+      "q": "4x² + 1 ≥ 4x tengsizligi qanday to'la kvadratga keltiriladi va tenglik qaysi x qiymatida bajariladi?",
+      "v": [
+        "(2x + 1)² ≥ 0, tenglik x = −1/2 da",
+        "(x − 2)² ≥ 0, tenglik x = 2 da",
+        "(4x − 1)² ≥ 0, tenglik x = 1/4 da",
+        "(2x − 1)² ≥ 0, tenglik x = 1/2 da"
+      ],
+      "t": 3,
+      "izoh": "Hamma hadni chapga o'tkazamiz: 4x² − 4x + 1 ≥ 0. Chap tomonni (2x)² − 2·2x·1 + 1² ko'rinishida yozsak, u (2x − 1)² ga teng. To'la kvadrat manfiy emas, tenglik esa 2x − 1 = 0, ya'ni x = 1/2 da. Javob: (2x − 1)² ≥ 0, tenglik x = 1/2 da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadrat-ajratish-isboti",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#dc153a95"
+    },
+    {
+      "q": "Ikki musbat sonning yig'indisi 24 ga teng. Ularning ko'paytmasi eng katta bo'lganda bu ko'paytma nechaga teng bo'ladi?",
+      "v": [
+        "144",
+        "576",
+        "143",
+        "48"
+      ],
+      "t": 0,
+      "izoh": "(a + b)² ≥ 4ab tengsizligidan ab ≤ (a + b)²/4 = 24²/4 = 576/4 = 144. Tenglik a = b = 12 da, ya'ni ko'paytma 12·12 = 144. 576 — yig'indining kvadrati, 143 esa 11·13 ko'paytmasi, ya'ni sonlarni har xil deb olish natijasi: yig'indi yana 24, lekin ko'paytma kichikroq. Javob: 144.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-berilgan-kopaytma-maksimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#9d033e86"
+    },
+    {
+      "q": "Sirdaryolik fermer 46 metr sim to'r bilan to'g'ri to'rtburchak shaklidagi tovuqxona hovlisini o'ramoqchi. Yuza eng katta bo'lishi uchun tomonlar qanday bo'lishi kerak?",
+      "v": [
+        "10 m va 13 m",
+        "8 m va 15 m",
+        "23 m va 23 m",
+        "11,5 m va 11,5 m"
+      ],
+      "t": 3,
+      "izoh": "Perimetr 46 m bo'lgani uchun tomonlar yig'indisi a + b = 23 m. Yuza ab ≤ (a + b)²/4 = 529/4 = 132,25 va tenglik a = b da. Demak a = b = 11,5 m. 23 m va 23 m varianti yarim perimetrni tomon deb olish xatosi. Javob: 11,5 m va 11,5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-yuza-maksimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#e554670d"
+    },
+    {
+      "q": "Nodira devorga tegib turgan to'g'ri to'rtburchak gulzorni uch tomondan 40 metr panjara bilan o'ramoqchi, to'rtinchi tomoni devor. Gulzorning eng katta yuzasi qancha bo'ladi?",
+      "v": [
+        "100 m²",
+        "200 m²",
+        "800 m²",
+        "400 m²"
+      ],
+      "t": 1,
+      "izoh": "Devorga perpendikulyar tomonlarni x deb olsak, 2x + y = 40, ya'ni y = 40 − 2x. Yuza S = xy = 2·x·(20 − x). x va 20 − x yig'indisi 20 o'zgarmas, shuning uchun ko'paytma x = 10 da eng katta bo'ladi va u 100 ga teng. Demak S = 2·100 = 200 m², bunda y = 20 m. Kvadrat deb o'ylab 10·10 = 100 olish tipik xato. Javob: 200 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "devorga-tutash-maydon-maksimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#a27f95a8"
+    },
+    {
+      "q": "Ikki musbat sonning ko'paytmasi 49 ga teng. Ularning yig'indisi eng kichik bo'lganda qanday qiymatga ega bo'ladi?",
+      "v": [
+        "7",
+        "49",
+        "14",
+        "98"
+      ],
+      "t": 2,
+      "izoh": "AM ≥ GM bo'yicha (a + b)/2 ≥ √(ab) = √49 = 7, demak a + b ≥ 14. Tenglik a = b = 7 da erishiladi. 7 — o'rta geometrikning o'zi, uni yig'indi deb olish tipik xato. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-berilgan-yigindi-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#6995b192"
+    },
+    {
+      "q": "Omborning to'g'ri to'rtburchak shaklidagi maydoni 64 m² ga teng. Uning perimetri eng kichik bo'lganda necha metrni tashkil qiladi?",
+      "v": [
+        "32 m",
+        "16 m",
+        "64 m",
+        "128 m"
+      ],
+      "t": 0,
+      "izoh": "Tomonlar a va b bo'lsin, ab = 64. AM ≥ GM bo'yicha a + b ≥ 2√64 = 16 m. Perimetr P = 2(a + b) ≥ 32 m. Tenglik a = b = 8 m, ya'ni kvadratda. 16 m — bu yarim perimetr, uni javob deb olish tipik xato. Javob: 32 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-berilgan-yigindi-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#8e7d3046"
+    },
+    {
+      "q": "Musbat a va b sonlari uchun ab = 100 bo'lsa, a + b yig'indisi qaysi sondan kichik bo'la olmaydi?",
+      "v": [
+        "10",
+        "20",
+        "50",
+        "100"
+      ],
+      "t": 1,
+      "izoh": "AM ≥ GM tengsizligiga ko'ra (a + b)/2 ≥ √(ab) = √100 = 10. Ikkala tomonni 2 ga ko'paytiramiz: a + b ≥ 20. Tenglik a = b = 10 da bajariladi. 10 — o'rta geometrik, 50 esa ko'paytmaning yarmi, ikkalasi ham yig'indi emas. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-berilgan-yigindi-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#f173d531"
+    },
+    {
+      "q": "Kitob varag'ining yuzasi 400 sm². Varaqning bo'yi va eni yig'indisi eng kam bo'lganda bu yig'indi necha santimetrga teng bo'ladi?",
+      "v": [
+        "20 sm",
+        "80 sm",
+        "40 sm",
+        "200 sm"
+      ],
+      "t": 2,
+      "izoh": "Bo'y va en ko'paytmasi 400 sm². AM ≥ GM bo'yicha yig'indi 2√400 = 2·20 = 40 sm dan kichik bo'lmaydi. Tenglik bo'y va en teng, ya'ni 20 sm bo'lganda. 20 sm — bir tomon uzunligi, 200 sm esa yuzaning yarmi. Javob: 40 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-berilgan-yigindi-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#3a066383"
+    },
+    {
+      "q": "y = x² − 8x + 21 ifodaning eng kichik qiymatini hosiladan foydalanmasdan, to'la kvadrat ajratish yo'li bilan toping.",
+      "v": [
+        "5",
+        "21",
+        "4",
+        "−5"
+      ],
+      "t": 0,
+      "izoh": "x² − 8x + 21 = (x² − 8x + 16) + 5 = (x − 4)² + 5. To'la kvadrat manfiy emas, shuning uchun ifoda 5 dan kichik bo'lmaydi. Tenglik x = 4 da. 4 — minimumga erishiladigan x, qiymatning o'zi emas. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-uchhad-ekstremum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#39f64dff"
+    },
+    {
+      "q": "y = −x² + 6x + 1 ifodasining eng katta qiymati nechaga teng bo'ladi?",
+      "v": [
+        "1",
+        "9",
+        "10",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Ifodani shunday yozamiz: −x² + 6x + 1 = −(x² − 6x + 9) + 9 + 1 = −(x − 3)² + 10. To'la kvadrat manfiy emas, shuning uchun −(x − 3)² eng kattasi 0 bo'ladi. Demak ifodaning eng katta qiymati 10, u x = 3 da. 9 varianti oxirgi qadamda erkin hadni qo'shishni unutish xatosi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-uchhad-ekstremum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#3737a540"
+    },
+    {
+      "q": "Zilola do'konda mahsulot narxini x ming so'mga oshirsa, kunlik daromadi (40 − x)(20 + x) ming so'm bo'ladi. Daromad eng katta bo'ladigan x ni toping.",
+      "v": [
+        "x = 5",
+        "x = 10",
+        "x = 20",
+        "x = 30"
+      ],
+      "t": 1,
+      "izoh": "Ikki ko'paytuvchining yig'indisi (40 − x) + (20 + x) = 60 o'zgarmas. Yig'indisi o'zgarmas ikki musbat sonning ko'paytmasi ular teng bo'lganda eng katta bo'ladi. 40 − x = 20 + x dan 2x = 20, x = 10. Bunda daromad 30·30 = 900 ming so'm. Javob: x = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daromad-narx-maksimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#e720b837"
+    },
+    {
+      "q": "y = 2x² − 12x + 25 ifodaning eng kichik qiymati va u erishiladigan x qiymatini birgalikda ko'rsating.",
+      "v": [
+        "x = 3 da 25",
+        "x = 6 da 7",
+        "x = −3 da 7",
+        "x = 3 da 7"
+      ],
+      "t": 3,
+      "izoh": "Bosh koeffitsientni qavsdan chiqaramiz: 2(x² − 6x) + 25 = 2(x² − 6x + 9) − 18 + 25 = 2(x − 3)² + 7. To'la kvadrat manfiy emas, demak eng kichik qiymat 7 va u x = 3 da. Qavsdan chiqarilgan 2 ni hisobga olmagan o'quvchi x = 6 deb xato qiladi. Javob: x = 3 da 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-uchhad-ekstremum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#3205c6ff"
+    },
+    {
+      "q": "Yuqoriga otilgan toshning balandligi h = 20t − 5t² metr formula bilan beriladi. Tosh erishadigan eng katta balandlik necha metr?",
+      "v": [
+        "20 m",
+        "15 m",
+        "40 m",
+        "5 m"
+      ],
+      "t": 0,
+      "izoh": "Ifodani to'la kvadratga keltiramiz: 20t − 5t² = −5(t² − 4t) = −5(t² − 4t + 4) + 20 = 20 − 5(t − 2)². To'la kvadrat manfiy emas, shuning uchun balandlik 20 m dan oshmaydi va bu qiymat t = 2 sekundda bo'ladi. 15 m — t = 1 dagi balandlik, u eng katta emas. Javob: 20 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-uchhad-ekstremum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#2b4b0078"
+    },
+    {
+      "q": "x va y musbat sonlari uchun x + y = 14 shart berilgan. Bunda x² + y² yig'indisining eng kichik qiymati nechaga teng?",
+      "v": [
+        "196",
+        "49",
+        "98",
+        "14"
+      ],
+      "t": 2,
+      "izoh": "x² + y² ≥ 2xy tengsizligiga x² + y² ni qo'shamiz: 2(x² + y²) ≥ (x + y)². Demak x² + y² ≥ (x + y)²/2 = 196/2 = 98. Tenglik x = y = 7 da, tekshirsak 49 + 49 = 98. 196 — yig'indining kvadrati, 49 esa bitta hadning qiymati. Javob: 98.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadratlar-yigindisi-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#58b58465"
+    },
+    {
+      "q": "Musbat a va b sonlari uchun a + b = 18 bo'lsa, ab ko'paytma qanday eng katta qiymatga erishadi va bunda a nechaga teng bo'ladi?",
+      "v": [
+        "ab = 81, a = 9",
+        "ab = 324, a = 18",
+        "ab = 81, a = 18",
+        "ab = 36, a = 9"
+      ],
+      "t": 0,
+      "izoh": "(a + b)² ≥ 4ab tengsizligidan ab ≤ 18²/4 = 324/4 = 81. Tenglik a = b bo'lganda, ya'ni a = b = 9 da. Tekshiramiz: 9·9 = 81. 324 — yig'indining kvadrati, uni ko'paytma deb olish tipik xato. Javob: ab = 81, a = 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-berilgan-kopaytma-maksimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#e1e2d42f"
+    },
+    {
+      "q": "Ikki brigada birgalikda 26 ta stanokni ta'mirladi. Ular ta'mirlagan stanoklar sonining ko'paytmasi eng ko'pi bilan qancha bo'lishi mumkin?",
+      "v": [
+        "168",
+        "676",
+        "169",
+        "26"
+      ],
+      "t": 2,
+      "izoh": "Stanoklar soni a + b = 26. (a + b)² ≥ 4ab dan ab ≤ 676/4 = 169. Tenglik a = b = 13 da, ya'ni har brigada 13 tadan ta'mirlaganda. 676 — yig'indining kvadrati, 168 esa 12 va 14 juftining ko'paytmasi, u 169 dan kichik. Javob: 169.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-berilgan-kopaytma-maksimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#917a36bb"
+    },
+    {
+      "q": "Perimetri 100 sm bo'lgan quyidagi to'g'ri to'rtburchaklardan qaysi birining yuzasi eng katta: 10 sm · 40 sm, 20 sm · 30 sm, 25 sm · 25 sm, 5 sm · 45 sm?",
+      "v": [
+        "10 sm · 40 sm",
+        "20 sm · 30 sm",
+        "25 sm · 25 sm",
+        "5 sm · 45 sm"
+      ],
+      "t": 2,
+      "izoh": "Hamma to'rtburchakda tomonlar yig'indisi 50 sm. Yuzalarni hisoblaymiz: 400, 600, 625 va 225 sm². Eng kattasi 625 sm², u tomonlar teng bo'lgan holatga to'g'ri keladi. Bu (a + b)² ≥ 4ab tengsizligining natijasi: yig'indi o'zgarmas bo'lganda ko'paytma tomonlar teng bo'lganda maksimal. Javob: 25 sm · 25 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-yuzani-tanlash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#e6c90c3a"
+    },
+    {
+      "q": "Jasur 60 metr arqon bilan to'g'ri to'rtburchak chodir maydonini belgilamoqchi. Eng katta yuza qanday o'lchamlarda hosil bo'ladi va u qancha?",
+      "v": [
+        "10 m · 20 m, 200 m²",
+        "12 m · 18 m, 216 m²",
+        "30 m · 30 m, 900 m²",
+        "15 m · 15 m, 225 m²"
+      ],
+      "t": 3,
+      "izoh": "Perimetr 60 m bo'lgani uchun a + b = 30 m. Ko'paytma ab ≤ (a + b)²/4 = 900/4 = 225 va tenglik a = b = 15 m da. Demak eng katta yuza 225 m². 30 m · 30 m variantida perimetr 120 m chiqadi, bu shartga zid. Javob: 15 m · 15 m, 225 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-yuza-maksimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#a6ce032a"
+    },
+    {
+      "q": "a + b = 12 va ab = 32 bo'lsa, (a + b)² ≥ 4ab tengsizligi qanday sonli munosabatga aylanadi va u o'rinlimi?",
+      "v": [
+        "144 ≥ 32, o'rinli",
+        "24 ≥ 128, o'rinli emas",
+        "144 ≥ 128, o'rinli",
+        "144 ≥ 128, o'rinli emas"
+      ],
+      "t": 2,
+      "izoh": "Chap tomon (a + b)² = 12² = 144. O'ng tomon 4ab = 4·32 = 128. Demak munosabat 144 ≥ 128 ko'rinishini oladi va u to'g'ri. Tenglik yo'q, chunki a = 4, b = 8 va ular teng emas. 24 varianti (a + b)² o'rniga 2(a + b) hisoblash xatosi. Javob: 144 ≥ 128, o'rinli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ab-kvadrat-tengsizlik-qollash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#4251d5ac"
+    },
+    {
+      "q": "Musbat a, b va c sonlari uchun o'rta arifmetik va o'rta geometrik qiymatlar orasidagi to'g'ri munosabatni ko'rsating.",
+      "v": [
+        "(a + b + c)/3 ≤ ∛(abc)",
+        "(a + b + c)/2 ≥ ∛(abc)",
+        "(a + b + c)/3 ≥ √(abc)",
+        "(a + b + c)/3 ≥ ∛(abc)"
+      ],
+      "t": 3,
+      "izoh": "Uchta musbat son uchun o'rta arifmetik yig'indini 3 ga bo'lish bilan, o'rta geometrik esa ko'paytmadan kub ildiz olish bilan topiladi. AM ≥ GM tengsizligi uchta son uchun ham o'rinli: (a + b + c)/3 ≥ ∛(abc). Tenglik faqat a = b = c bo'lgandagina. Ikki son uchun ishlatiladigan 2 ga bo'lish va kvadrat ildiz bu yerda mos kelmaydi. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "am-gm-uch-son-munosabat",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#466179c5"
+    },
+    {
+      "q": "2, 4 va 8 sonlarining o'rta arifmetik qiymati o'rta geometrik qiymatidan qanchaga katta ekanini aniqlang.",
+      "v": [
+        "3",
+        "2/3",
+        "−10/3",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "O'rta arifmetik (2 + 4 + 8)/3 = 14/3. O'rta geometrik ∛(2·4·8) = ∛64 = 4 = 12/3. Farq 14/3 − 12/3 = 2/3. Yig'indini 2 ga bo'lgan o'quvchi 7 − 4 = 3 ni, kub ildiz o'rniga kvadrat ildiz olgan o'quvchi −10/3 ni oladi. Javob: 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-son-ortacha-hisoblash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#648ab0ae"
+    },
+    {
+      "q": "Uchta paketning og'irligi 1 kg, 4 kg va 16 kg. Ularning o'rta geometrik og'irligi necha kilogrammga teng bo'ladi?",
+      "v": [
+        "4 kg",
+        "7 kg",
+        "64 kg",
+        "21 kg"
+      ],
+      "t": 0,
+      "izoh": "Uchta son uchun o'rta geometrik ∛(1·4·16) = ∛64 = 4 kg. 7 kg — bu o'rta arifmetik (1 + 4 + 16)/3, 64 kg — ko'paytmaning o'zi, 21 kg esa og'irliklar yig'indisi. Javob: 4 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-son-ortacha-hisoblash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#c0e688df"
+    },
+    {
+      "q": "Musbat a, b va c sonlari uchun a + b + c = 15 bo'lsa, abc ko'paytmaning eng katta qiymati nechaga teng bo'ladi?",
+      "v": [
+        "45",
+        "125",
+        "225",
+        "3375"
+      ],
+      "t": 1,
+      "izoh": "AM ≥ GM ni uchta songa qo'llaymiz: (a + b + c)/3 ≥ ∛(abc), ya'ni 5 ≥ ∛(abc). Ikkala tomonni kubga ko'taramiz: abc ≤ 125. Tenglik a = b = c = 5 da, tekshiramiz: 5·5·5 = 125. 3375 — yig'indining kubi, 225 — yig'indining kvadrati. Javob: 125.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-son-kopaytma-maksimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#46b78f0b"
+    },
+    {
+      "q": "Hajmi 216 sm³ bo'lgan to'g'ri burchakli parallelepiped shaklidagi qutining bir uchidan chiqqan uch qirrasi yig'indisi eng kam bo'lishi uchun o'lchamlari qanday bo'lishi kerak?",
+      "v": [
+        "4 sm · 6 sm · 9 sm",
+        "3 sm · 8 sm · 9 sm",
+        "6 sm · 6 sm · 6 sm",
+        "2 sm · 12 sm · 9 sm"
+      ],
+      "t": 2,
+      "izoh": "O'lchamlar a, b, c bo'lsa abc = 216. Uchta son uchun AM ≥ GM: a + b + c ≥ 3∛216 = 3·6 = 18 sm. Tenglik a = b = c = 6 sm da, ya'ni kubda. Boshqa variantlarda hajm ham 216 sm³, lekin bir uchidan chiqqan uch qirra yig'indisi mos ravishda 19, 20 va 23 sm, ya'ni kattaroq. Javob: 6 sm · 6 sm · 6 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quti-olcham-optimallashtirish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#09fe471c"
+    },
+    {
+      "q": "Uchta musbat sonning o'rta arifmetigi 6 ga teng. Bu sonlar ko'paytmasi qanday qiymatdan katta bo'la olmaydi?",
+      "v": [
+        "216",
+        "36",
+        "18",
+        "108"
+      ],
+      "t": 0,
+      "izoh": "O'rta arifmetik 6 bo'lgani uchun yig'indi 3·6 = 18. AM ≥ GM bo'yicha ∛(abc) ≤ 6, demak abc ≤ 6³ = 216. Tenglik uchala son 6 ga teng bo'lganda. 18 — yig'indi, 36 esa 6² bo'lib, ikkita son uchun mos keladigan javob. Javob: 216.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-son-kopaytma-maksimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#595661f6"
+    },
+    {
+      "q": "Musbat a va b sonlari uchun a/b + b/a ifodasining eng kichik qiymati nechaga teng va u qachon erishiladi?",
+      "v": [
+        "1, a = b da",
+        "2, a = b da",
+        "2, a = 2b da",
+        "0, a = b da"
+      ],
+      "t": 1,
+      "izoh": "a/b va b/a musbat sonlar bo'lib, ularning ko'paytmasi 1 ga teng. AM ≥ GM bo'yicha a/b + b/a ≥ 2√1 = 2. Tenglik a/b = b/a, ya'ni a² = b² va sonlar musbat bo'lgani uchun a = b da. Javob: 2, a = b da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-va-teskarisi-yigindisi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#156215f1"
+    },
+    {
+      "q": "Musbat a va b sonlari uchun a/b + b/a ≥ 2 tengsizligi qaysi mulohaza bilan isbotlanadi?",
+      "v": [
+        "Ayirma (a + b)²/(ab) ≥ 0 bo'lgani uchun",
+        "a/b va b/a har doim 1 dan katta bo'lgani uchun",
+        "a va b musbat bo'lgani uchun yig'indi ham musbat bo'ladi",
+        "Ayirma (a − b)²/(ab) ≥ 0 bo'lgani uchun"
+      ],
+      "t": 3,
+      "izoh": "Chap tomondan 2 ni ayiramiz: a/b + b/a − 2 = (a² + b² − 2ab)/(ab) = (a − b)²/(ab). Surat to'la kvadrat, maxraj musbat, demak butun kasr manfiy emas. Shundan a/b + b/a ≥ 2 kelib chiqadi. a/b nisbat 1 dan kichik ham bo'lishi mumkin, shuning uchun ikkinchi mulohaza noto'g'ri. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-va-teskarisi-yigindisi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#539d583f"
+    },
+    {
+      "q": "Sanjar ikki paxta navining hosildorligi uchun p/q + q/p ifodasini hisoblab, 2,9 natijani oldi. Bu natija mumkinmi?",
+      "v": [
+        "Mumkin emas, ifoda 2 dan oshmaydi",
+        "Mumkin emas, ifoda har doim 2 ga teng",
+        "Mumkin, chunki ifoda 2 dan kichik bo'lmaydi",
+        "Mumkin emas, chunki ifoda 2,5 dan oshmaydi"
+      ],
+      "t": 2,
+      "izoh": "Musbat p va q uchun p/q + q/p ≥ 2 va yuqoridan chegaralanmagan: nisbat 1 dan uzoqlashgani sari ifoda cheksiz o'sadi. 2,9 soni 2 dan katta, demak u mumkin. Masalan p/q = 2,5 bo'lsa, 2,5 + 0,4 = 2,9 — aynan Sanjar olgan natija. Shu sababli \"ifoda 2 dan oshmaydi\" ham, \"2,5 dan oshmaydi\" ham noto'g'ri. Javob: mumkin, chunki ifoda 2 dan kichik bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-va-teskarisi-yigindisi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#0aae5f45"
+    },
+    {
+      "q": "Musbat a va b sonlari uchun a/b + b/a ifodasi 5/2 ga teng bo'lsa, a/b nisbati qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "5/2 yoki 2/5",
+        "1 yoki 5",
+        "2 yoki 1/2",
+        "faqat 2"
+      ],
+      "t": 2,
+      "izoh": "a/b = k deb belgilaymiz, shunda k + 1/k = 5/2. Maxrajlardan qutulamiz: 2k² − 5k + 2 = 0. Diskriminant D = 25 − 16 = 9, √D = 3, k = (5 ± 3)/4. Demak k = 2 yoki k = 1/2. Ikkala qiymat ham mos, chunki ular o'zaro teskari. Javob: 2 yoki 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-va-teskarisi-yigindisi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#133ea47b"
+    },
+    {
+      "q": "x < 0 bo'lganda x + 1/x ifodasi qanday qiymatlar sohasida yotishini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "x + 1/x ≤ −2",
+        "x + 1/x ≥ 2",
+        "x + 1/x = 0",
+        "x + 1/x ≥ −2"
+      ],
+      "t": 0,
+      "izoh": "x < 0 bo'lsin, u holda −x > 0 va (−x) + 1/(−x) ≥ 2 tengsizlik o'rinli. Chap tomon −(x + 1/x) ga teng, demak −(x + 1/x) ≥ 2 va ikkala tomonni −1 ga ko'paytirsak x + 1/x ≤ −2. Tenglik x = −1 da. Javob: x + 1/x ≤ −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-son-plus-teskarisi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#2c04632f"
+    },
+    {
+      "q": "x + 1/x ifodasi noldan farqli haqiqiy x larda quyidagi sonlardan qaysi birini qabul qila olmaydi: −3, 0, 2,5, −2?",
+      "v": [
+        "−3",
+        "0",
+        "2,5",
+        "−2"
+      ],
+      "t": 1,
+      "izoh": "x > 0 da x + 1/x ≥ 2, x < 0 da esa x + 1/x ≤ −2. Demak ifodaning qiymatlari faqat 2 dan katta yoki −2 dan kichik sonlar hamda ±2 bo'ladi. −3 va −2 chap sohaga, 2,5 esa o'ng sohaga tushadi. 0 soni −2 bilan 2 orasida yotgani uchun mumkin emas. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "manfiy-son-plus-teskarisi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#03d13261"
+    },
+    {
+      "q": "a < 0 shartda a + 9/a ifodasining eng katta qiymati nechaga teng bo'ladi?",
+      "v": [
+        "−6",
+        "6",
+        "−3",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "a < 0 bo'lgani uchun −a > 0. AM ≥ GM ni (−a) va 9/(−a) ga qo'llaymiz: (−a) + 9/(−a) ≥ 2√9 = 6. Bu −(a + 9/a) ≥ 6, ya'ni a + 9/a ≤ −6. Demak eng katta qiymat −6 va u a = −3 da. −3 — bu a ning qiymati, ifodaniki emas. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "manfiy-son-plus-teskarisi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#493082f5"
+    },
+    {
+      "q": "Quyidagi tengsizliklardan qaysi biri barcha haqiqiy a va b uchun o'rinli: a² + b² ≥ ab + 1, ab ≥ 0, a + b ≥ 2√(ab), a² + b² ≥ 2ab?",
+      "v": [
+        "a² + b² ≥ ab + 1",
+        "ab ≥ 0",
+        "a + b ≥ 2√(ab)",
+        "a² + b² ≥ 2ab"
+      ],
+      "t": 3,
+      "izoh": "a² + b² − 2ab = (a − b)² ≥ 0, demak oxirgi tengsizlik har qanday a va b uchun o'rinli. Birinchisi a = b = 0 da buziladi. Ikkinchisi a = 2, b = −5 da buziladi. Uchinchisida √(ab) manfiy sonlar uchun aniqlanmagan, shuning uchun u faqat manfiy bo'lmagan sonlarda o'rinli. Javob: a² + b² ≥ 2ab.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizlik-hamma-uchun-orinlimi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#aed6282a"
+    },
+    {
+      "q": "a + 1/a ≥ 2 tengsizligi a ning qaysi qiymatlarida o'rinli bo'ladi?",
+      "v": [
+        "Faqat a > 0 uchun",
+        "Barcha haqiqiy a uchun",
+        "Faqat a ≥ 1 uchun",
+        "Barcha a ≠ 0 uchun"
+      ],
+      "t": 0,
+      "izoh": "Tengsizlikni ko'paytirib ko'ramiz: a > 0 da a² + 1 ≥ 2a, ya'ni (a − 1)² ≥ 0 — bu doim to'g'ri. a < 0 bo'lganda esa yig'indi manfiy chiqadi, masalan a = −1 da −2 hosil bo'ladi va tengsizlik buziladi. Demak shart faqat musbat a lar uchun o'rinli. Javob: faqat a > 0 uchun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "am-gm-shartini-buzish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#1035995d"
+    },
+    {
+      "q": "Talaba √(ab) ≤ (a + b)/2 tengsizligini a = −4 va b = −9 sonlari uchun qo'llamoqchi bo'ldi. Uning xatosi nimada?",
+      "v": [
+        "Tengsizlikda ildiz belgisi noto'g'ri qo'yilgan",
+        "a va b albatta butun son bo'lishi kerak",
+        "Tengsizlik faqat manfiy bo'lmagan sonlar uchun o'rinli",
+        "Xato yo'q, tengsizlik bu sonlarda ham bajariladi"
+      ],
+      "t": 2,
+      "izoh": "AM ≥ GM tengsizligi manfiy bo'lmagan sonlar uchun isbotlanadi, chunki isbotda (√a − √b)² ifodasi qatnashadi. Berilgan sonlarda tekshirsak √((−4)·(−9)) = √36 = 6, (a + b)/2 = −6,5 va 6 ≤ −6,5 noto'g'ri. Demak shart buzilgan. Javob: tengsizlik faqat manfiy bo'lmagan sonlar uchun o'rinli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "am-gm-shartini-buzish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#1a16b12e"
+    },
+    {
+      "q": "Quyidagi juftliklardan qaysi birida AM ≥ GM tengsizligini qo'llash mumkin emas: a = 2 va b = 8; a = 0,5 va b = 32; a = −3 va b = −12; a = 7 va b = 7?",
+      "v": [
+        "a = 2 va b = 8",
+        "a = 0,5 va b = 32",
+        "a = −3 va b = −12",
+        "a = 7 va b = 7"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlik manfiy bo'lmagan sonlar uchun ta'riflanadi. Birinchi, ikkinchi va to'rtinchi juftlikda ikkala son musbat, demak qo'llash mumkin. Uchinchi juftlikda ikkala son manfiy: o'rta arifmetik −7,5 chiqadi, o'rta geometrik esa 6 va tengsizlik buziladi. Javob: a = −3 va b = −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "am-gm-shartini-buzish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#1ce29db4"
+    },
+    {
+      "q": "Avtomobil borishda 60 km/soat, qaytishda esa 90 km/soat tezlik bilan yurdi. Butun yo'l bo'yicha o'rtacha tezlik tezliklarning o'rta arifmetigidan qanday farq qiladi?",
+      "v": [
+        "Katta, chunki o'rtacha tezlik 78 km/soat",
+        "Teng, ikkalasi ham 75 km/soat",
+        "Kichik, chunki o'rtacha tezlik 70 km/soat",
+        "Kichik, chunki o'rtacha tezlik 72 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Yo'l uzunligi s bo'lsin. Umumiy vaqt s/60 + s/90 = 5s/180 = s/36, umumiy yo'l 2s. O'rtacha tezlik 2s : (s/36) = 72 km/soat. Tezliklarning o'rta arifmetigi esa (60 + 90)/2 = 75 km/soat. Demak o'rtacha tezlik kichik, chunki u o'rta garmonik bo'ladi. Javob: kichik, chunki o'rtacha tezlik 72 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-tezlik-garmonik",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#81c4e243"
+    },
+    {
+      "q": "Musbat a va b sonlari uchun o'rta garmonik 2ab/(a + b), o'rta geometrik √(ab) va o'rta arifmetik (a + b)/2 qanday tartibda joylashadi?",
+      "v": [
+        "o'rta arifmetik ≤ o'rta geometrik ≤ o'rta garmonik",
+        "o'rta geometrik ≤ o'rta garmonik ≤ o'rta arifmetik",
+        "o'rta garmonik ≤ o'rta geometrik ≤ o'rta arifmetik",
+        "uchalasi barcha holatda teng bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "AM ≥ GM tengsizligidan (a + b)/2 ≥ √(ab). Ikkinchi tomondan 2ab/(a + b) ni √(ab) bilan solishtirsak, u √(ab)·2√(ab)/(a + b) ko'rinishini oladi va 2√(ab) ≤ a + b bo'lgani uchun bu kasr √(ab) dan katta emas. Demak o'rta garmonik ≤ o'rta geometrik ≤ o'rta arifmetik. Tenglik faqat a = b da. Javob: uchinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchta-ortacha-tartibi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#ba3b6062"
+    },
+    {
+      "q": "Farhod ikki kun bir xil summaga yoqilg'i quydi: birinchi kuni 1 litri 12 000 so'm, ikkinchi kuni 8 000 so'm edi. Sotib olingan yoqilg'ining o'rtacha narxi qancha bo'ldi?",
+      "v": [
+        "10 000 so'm",
+        "9 800 so'm",
+        "20 000 so'm",
+        "9 600 so'm"
+      ],
+      "t": 3,
+      "izoh": "Har kuni sarflangan pul m so'm bo'lsin. Olingan litrlar m/12 000 va m/8 000, jami 5m/24 000. To'langan pul 2m. O'rtacha narx 2m : (5m/24 000) = 48 000/5 = 9 600 so'm. Bu narxlarning o'rta garmonigi bo'lib, o'rta arifmetik 10 000 so'mdan kichik. Javob: 9 600 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-narx-garmonik",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#f48c2b2d"
+    },
+    {
+      "q": "O'quvchi a + 1/a ≥ 2 ni isbotlab, a + 1/a − 2 = (a² − 2a + 1)/a = (a − 1)²/a ≥ 0 deb yozdi. Bu isbot to'liqmi?",
+      "v": [
+        "To'liq, hech qanday qo'shimcha shart kerak emas",
+        "To'liq emas, surat noto'g'ri hisoblangan",
+        "To'liq emas, a > 0 ekani alohida aytilishi kerak",
+        "To'liq emas, (a − 1)² manfiy bo'lishi mumkin"
+      ],
+      "t": 2,
+      "izoh": "Surat (a − 1)² haqiqatan manfiy emas, lekin kasrning ishorasi maxrajga ham bog'liq. a < 0 bo'lsa kasr manfiy chiqadi va xulosa buziladi: masalan a = −1 da a + 1/a = −2. Demak isbotda a > 0 sharti yozilishi shart. Javob: to'liq emas, a > 0 ekani alohida aytilishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "isbot-qadami-xatosi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#e5b0bfee"
+    },
+    {
+      "q": "Musbat a va b uchun quyidagi zanjir yozildi: (1) a + b ≥ 2√(ab); (2) kvadratga ko'tarib (a + b)² ≥ 4ab; (3) demak a² + b² ≥ 2ab; (4) tenglik a = −b da. Qaysi qadam noto'g'ri?",
+      "v": [
+        "1-qadam",
+        "2-qadam",
+        "3-qadam",
+        "4-qadam"
+      ],
+      "t": 3,
+      "izoh": "Birinchi uch qadam to'g'ri: musbat sonlar uchun AM ≥ GM o'rinli, kvadratga ko'tarish ham qonuniy, uchinchi qadamda esa 2ab ni chapga o'tkazish a² + b² ≥ 2ab ni beradi. Xato oxirgi qadamda: (a − b)² = 0 shartidan tenglik a = b da chiqadi, a = −b da emas. Javob: 4-qadam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "isbot-qadami-xatosi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#163cf5b3"
+    },
+    {
+      "q": "O'quvchi x + 4/x ifodasining eng kichik qiymatini topishda x = 4 deb olib, javobni 5 deb yozdi. Xato qayerda?",
+      "v": [
+        "Xato yo'q, eng kichik qiymat 5",
+        "Tenglik x = 2 da bo'ladi, lekin qiymat 6 chiqadi",
+        "Ifoda umuman eng kichik qiymatga ega emas",
+        "Tenglik x = 4/x da, ya'ni x = 2 va qiymat 4"
+      ],
+      "t": 3,
+      "izoh": "AM ≥ GM bo'yicha x + 4/x ≥ 2√4 = 4. Tenglik sharti x = 4/x, bundan x² = 4 va x > 0 uchun x = 2. Tekshiramiz: 2 + 4/2 = 4, bu 5 dan kichik. Demak o'quvchi tenglik shartini yozmasdan tasodifiy x tanlagan. Javob: tenglik x = 4/x da, ya'ni x = 2 va qiymat 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "isbot-qadami-xatosi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#43b383ce"
+    },
+    {
+      "q": "2x + 8/x ifodasining eng kichik qiymatini izlagan o'quvchi koeffitsientlarni qo'shib 10 deb javob berdi. To'g'ri javob qanday?",
+      "v": [
+        "10",
+        "16",
+        "8",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "AM ≥ GM ni ikki hadga qo'llaymiz: 2x + 8/x ≥ 2√(2x·8/x) = 2√16 = 8. Tenglik 2x = 8/x, ya'ni x² = 4 va x = 2 da. Tekshiramiz: 4 + 4 = 8. Koeffitsientlarni qo'shish 10 ni, ularni ko'paytirish 16 ni beradi, ikkalasi ham xato. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "isbot-qadami-xatosi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#fbe090e0"
+    },
+    {
+      "q": "x > 0 bo'lganda 6/(x + 1/x) ifodasi qanday eng katta qiymatga erisha oladi?",
+      "v": [
+        "3",
+        "6",
+        "2",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Maxraj x + 1/x musbat va u 2 dan kichik emas. Musbat surat o'zgarmas bo'lganda kasr maxraj eng kichik bo'lganda eng katta bo'ladi. Demak 6/(x + 1/x) ≤ 6/2 = 3 va tenglik x = 1 da. 2 — maxrajning eng kichik qiymati, kasrniki emas. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-qiymatlar-oraligi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#c327986c"
+    },
+    {
+      "q": "Musbat x qiymatlarida (x² + 9)/x kasrning eng kichik qiymati nechaga teng bo'ladi?",
+      "v": [
+        "9",
+        "3",
+        "6",
+        "18"
+      ],
+      "t": 2,
+      "izoh": "Kasrni hadma-had bo'lamiz: (x² + 9)/x = x + 9/x. AM ≥ GM bo'yicha bu yig'indi 2√9 = 6 dan kichik emas. Tenglik x = 9/x, ya'ni x = 3 da. 3 — minimumga erishiladigan x, 9 esa erkin had. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-qiymatlar-oraligi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#044b80a6"
+    },
+    {
+      "q": "Musbat x uchun x/(x² + 16) kasrning eng katta qiymati nechaga teng bo'ladi?",
+      "v": [
+        "8",
+        "1/8",
+        "1/16",
+        "1/4"
+      ],
+      "t": 1,
+      "izoh": "Surat va maxrajni x ga bo'lamiz: x/(x² + 16) = 1/(x + 16/x). Maxraj x + 16/x ≥ 2√16 = 8, demak kasr 1/8 dan katta emas. Tenglik x = 16/x, ya'ni x = 4 da. 8 — maxrajning eng kichik qiymati, kasrning qiymati emas. Javob: 1/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-qiymatlar-oraligi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#a398a698"
+    },
+    {
+      "q": "Musbat a va b sonlari uchun (a + b)(1/a + 1/b) ko'paytmaning eng kichik qiymatini toping.",
+      "v": [
+        "2",
+        "1",
+        "8",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Qavslarni ochamiz: (a + b)(1/a + 1/b) = 1 + a/b + b/a + 1 = 2 + (a/b + b/a). Ma'lumki a/b + b/a ≥ 2, demak butun ifoda 2 + 2 = 4 dan kichik emas. Tenglik a = b da. Faqat qo'shiluvchi qismni hisoblab 2 deb javob berish tipik xato. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifoda-qiymatlar-oraligi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#53409119"
+    },
+    {
+      "q": "Musbat x uchun 2x + 27/x² ifodasini x + x + 27/x² ko'rinishida yozib, uning eng kichik qiymatini toping.",
+      "v": [
+        "6",
+        "27",
+        "9",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Uchta had uchun AM ≥ GM: x + x + 27/x² ≥ 3∛(x·x·27/x²) = 3∛27 = 3·3 = 9. Tenglik uchala had teng bo'lganda, ya'ni x = 27/x², bundan x³ = 27 va x = 3. Tekshiramiz: 3 + 3 + 3 = 9. Ikki had uchun qo'llash bu yerda natija bermaydi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-son-am-gm-hadga-bolish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#10c75a38"
+    },
+    {
+      "q": "Musbat x va y sonlari uchun x + y = 6 shart berilgan. Bunda x²y ko'paytmaning eng katta qiymati nechaga teng bo'ladi?",
+      "v": [
+        "32",
+        "27",
+        "36",
+        "18"
+      ],
+      "t": 0,
+      "izoh": "Yig'indini uchga bo'lamiz: x/2 + x/2 + y = 6. Uchta son uchun AM ≥ GM: (x/2)·(x/2)·y ≤ (6/3)³ = 8, ya'ni x²y/4 ≤ 8 va x²y ≤ 32. Tenglik x/2 = y, ya'ni x = 4, y = 2 da: 16·2 = 32. Sonlarni teng deb x = y = 3 olgan o'quvchi 27 ni oladi, lekin bu maksimum emas. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-son-am-gm-hadga-bolish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#d835e710"
+    },
+    {
+      "q": "x + 12/x ifodasi musbat x larda eng kichik qiymatga erishganda x nechaga teng bo'ladi?",
+      "v": [
+        "x = 12",
+        "x = 2√3",
+        "x = 6",
+        "x = 3"
+      ],
+      "t": 1,
+      "izoh": "AM ≥ GM da tenglik ikki had teng bo'lganda: x = 12/x, bundan x² = 12. Musbat ildiz x = √12 = 2√3. Bunda ifodaning qiymati 2√12 = 4√3 bo'ladi. x = 6 varianti 12 ni ikkiga bo'lish xatosidan chiqadi. Javob: x = 2√3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglik-sharti-topish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#10b5f79a"
+    },
+    {
+      "q": "2x + 50/x ifodasining eng kichik qiymati musbat x ning qaysi qiymatida qabul qilinadi?",
+      "v": [
+        "x = 25",
+        "x = 10",
+        "x = 2",
+        "x = 5"
+      ],
+      "t": 3,
+      "izoh": "Tenglik sharti ikki hadning tengligi: 2x = 50/x. Maxrajdan qutulamiz: 2x² = 50, x² = 25, musbat ildiz x = 5. Bunda ifoda 10 + 10 = 20 ga teng. x² ni javob deb olgan o'quvchi 25 ni tanlaydi. Javob: x = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglik-sharti-topish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#9d782f33"
+    },
+    {
+      "q": "Musbat a va b sonlarining ko'paytmasi 36 ga teng. Ularning yig'indisi eng kichik bo'lganda a va b qanday qiymat oladi?",
+      "v": [
+        "a = 4, b = 9",
+        "a = 2, b = 18",
+        "a = 6, b = 6",
+        "a = 3, b = 12"
+      ],
+      "t": 2,
+      "izoh": "AM ≥ GM da tenglik faqat sonlar teng bo'lganda yuz beradi, ya'ni a = b = √36 = 6 va yig'indi 12. Boshqa variantlarda ko'paytma ham 36, lekin yig'indilar 13, 20 va 15 bo'lib, 12 dan katta. Javob: a = 6, b = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglik-sharti-topish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#28ca66dd"
+    },
+    {
+      "q": "Bo'yi va eni yig'indisi 44 sm bo'lgan to'g'ri to'rtburchak ramkaning yuzasi eng katta bo'lishi uchun bo'yi necha santimetr bo'lsin?",
+      "v": [
+        "11 sm",
+        "22 sm",
+        "44 sm",
+        "20 sm"
+      ],
+      "t": 1,
+      "izoh": "Yuza ab ko'paytma, a + b = 44 o'zgarmas. (a + b)² ≥ 4ab tengsizligidan ab ≤ 484 va tenglik a = b da. Demak bo'y a = 22 sm, en ham 22 sm. 11 sm varianti yig'indini to'rtga bo'lish xatosi. Javob: 22 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglik-sharti-topish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#5d443443"
+    },
+    {
+      "q": "Konsert chiptasi narxi p ming so'm bo'lganda tomoshabinlar soni (80 − 2p) ta bo'ladi. Tushum eng katta bo'ladigan chipta narxini aniqlang.",
+      "v": [
+        "40 ming so'm",
+        "20 ming so'm",
+        "10 ming so'm",
+        "80 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Tushum T = p(80 − 2p) = 2·p·(40 − p). Qavsdagi p va 40 − p yig'indisi 40 o'zgarmas, shuning uchun ko'paytma ular teng bo'lganda, ya'ni p = 20 da eng katta. Bunda tomoshabinlar 40 ta, tushum 800 ming so'm. 40 ming so'm da tomoshabin qolmaydi. Javob: 20 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daromad-narx-maksimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#64ebf92a"
+    },
+    {
+      "q": "Do'kon har bir mahsulotdan (60 − x) ming so'm foyda oladi va kuniga x dona sotadi. Kunlik foyda eng katta bo'ladigan x ni toping.",
+      "v": [
+        "15",
+        "60",
+        "20",
+        "30"
+      ],
+      "t": 3,
+      "izoh": "Kunlik foyda F = x(60 − x). Ikki ko'paytuvchining yig'indisi x + (60 − x) = 60 o'zgarmas, demak ko'paytma ular teng bo'lganda maksimal. x = 60 − x dan x = 30, bunda foyda 30·30 = 900 ming so'm. x = 60 da foyda nolga aylanadi. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daromad-narx-maksimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#b2cb9efc"
+    },
+    {
+      "q": "Musbat x uchun x² + 1/x² ifodasining eng kichik qiymati nechaga teng bo'ladi?",
+      "v": [
+        "1",
+        "4",
+        "2",
+        "1/2"
+      ],
+      "t": 2,
+      "izoh": "x² va 1/x² musbat sonlar, ularning ko'paytmasi 1. AM ≥ GM bo'yicha x² + 1/x² ≥ 2√1 = 2. Tenglik x² = 1/x², ya'ni x⁴ = 1 va musbat x uchun x = 1 da. Tekshiramiz: 1 + 1 = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-plus-teskarisi-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#bcb6b436"
+    },
+    {
+      "q": "x > 0 bo'lganda x + 1/x ifodasi 2 dan kichik qiymat qabul qila oladimi va buning sababi nima?",
+      "v": [
+        "Ha, x birdan kichik bo'lganda",
+        "Yo'q, chunki (√x − 1/√x)² ≥ 0 bo'ladi",
+        "Ha, x juda katta bo'lganda",
+        "Yo'q, chunki bu ifoda har doim 1 ga teng"
+      ],
+      "t": 1,
+      "izoh": "Ifodadan 2 ni ayiramiz: x + 1/x − 2 = (√x)² − 2·√x·(1/√x) + (1/√x)² = (√x − 1/√x)². To'la kvadrat manfiy emas, demak x + 1/x ≥ 2 va 2 dan kichik qiymat mumkin emas. Tenglik x = 1 da. Javob: yo'q, chunki (√x − 1/√x)² ≥ 0 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-plus-teskarisi-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#dadcfec5"
+    },
+    {
+      "q": "Musbat a uchun 10/(a + 4/a) ifodasining eng katta qiymati nechaga teng bo'ladi?",
+      "v": [
+        "2,5",
+        "10",
+        "4",
+        "0,4"
+      ],
+      "t": 0,
+      "izoh": "Maxrajga AM ≥ GM ni qo'llaymiz: a + 4/a ≥ 2√4 = 4, tenglik a = 2 da. Surat musbat va o'zgarmas bo'lgani uchun kasr maxraj eng kichik bo'lganda eng katta bo'ladi: 10/4 = 2,5. 4 — maxrajning eng kichik qiymati, 0,4 esa kasrni teskari yozish natijasi. Javob: 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-qiymatlar-oraligi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#f94cc1a8"
+    },
+    {
+      "q": "Isbotda «a² + b² ≥ 2ab bo'lgani uchun a + b ≥ 2√(ab)» deb yozildi. Bu o'tish qanday shartda va qanday almashtirish bilan to'g'ri bo'ladi?",
+      "v": [
+        "a va b manfiy bo'lmaganda, a o'rniga √a va b o'rniga √b qo'yiladi",
+        "Har qanday haqiqiy a va b uchun hech qanday almashtirishsiz",
+        "Faqat a = b bo'lgan holda",
+        "Faqat a va b butun sonlar bo'lganda"
+      ],
+      "t": 0,
+      "izoh": "a² + b² ≥ 2ab ayniyati barcha haqiqiy sonlar uchun o'rinli. Unda a o'rniga √a, b o'rniga √b qo'ysak a + b ≥ 2√a·√b = 2√(ab) hosil bo'ladi. Bu almashtirish faqat ildiz ostidagi sonlar manfiy bo'lmaganda ma'noga ega. Demak shart a ≥ 0 va b ≥ 0. Javob: birinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "isbot-qadami-xatosi",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#94584b60"
+    },
+    {
+      "q": "Ikki do'konda bir xil daftar 4 000 so'm va 9 000 so'm turadi. Shu ikki narxning o'rta geometrik qiymati necha so'mga teng?",
+      "v": [
+        "6 500 so'm",
+        "5 000 so'm",
+        "6 000 so'm",
+        "13 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "O'rta geometrik ikki sonning ko'paytmasidan kvadrat ildiz olish bilan topiladi: √(4 000·9 000) = √36 000 000 = 6 000 so'm. 6 500 so'm — o'rta arifmetik, 13 000 so'm esa narxlar yig'indisi. Javob: 6 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-son-orta-geometrik-hisoblash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#f57d4319"
+    },
+    {
+      "q": "Dala uchastkasining bo'yi 45 m, eni 20 m. Xuddi shu yuzaga ega bo'lgan kvadrat uchastkaning tomoni necha metr bo'ladi?",
+      "v": [
+        "32,5 m",
+        "65 m",
+        "25 m",
+        "30 m"
+      ],
+      "t": 3,
+      "izoh": "Uchastka yuzasi 45·20 = 900 m². Kvadratning tomoni a bo'lsa a² = 900, demak a = 30 m. Bu aynan 45 va 20 sonlarining o'rta geometrigi. 32,5 m — o'rta arifmetik bo'lib, u har doim o'rta geometrikdan katta. Javob: 30 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-orta-mano",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#f5f6fe00"
+    },
+    {
+      "q": "Korxona mablag'i ikki yilda 100 mln so'mdan 144 mln so'mga yetdi. Har yili bir xil foizda o'sgan bo'lsa, birinchi yil oxirida u qancha edi?",
+      "v": [
+        "120 mln so'm",
+        "122 mln so'm",
+        "121 mln so'm",
+        "112 mln so'm"
+      ],
+      "t": 0,
+      "izoh": "Bir xil foizda o'sishda oraliq qiymat chetki ikki qiymatning o'rta geometrigi bo'ladi: √(100·144) = √14 400 = 120 mln so'm. Tekshiramiz: 100 dan 120 ga o'sish 20 foiz, 120 dan 144 ga o'sish ham 20 foiz. 122 mln — o'rta arifmetik, u bu yerda mos kelmaydi. Javob: 120 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "geometrik-orta-mano",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#00ceb837"
+    },
+    {
+      "q": "Musbat sonlar uchun o'rta arifmetik va o'rta geometrik qiymatlarning tengligini ta'minlaydigan shartni to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "Sonlardan biri nolga teng bo'lganda",
+        "Barcha sonlar o'zaro teng bo'lganda",
+        "Sonlar yig'indisi ko'paytmasiga teng bo'lganda",
+        "Sonlar butun son bo'lganda"
+      ],
+      "t": 1,
+      "izoh": "AM ≥ GM tengsizligining isboti (√a − √b)² ≥ 0 ga tayanadi. Tenglik faqat kvadrat nolga aylanganda, ya'ni √a = √b va a = b bo'lganda yuz beradi. Uchta son uchun ham xuddi shunday: a = b = c. Sonning butunligi yoki yig'indi bilan bog'liq shartlar bunga aloqador emas. Javob: barcha sonlar o'zaro teng bo'lganda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglik-sharti-nazariy",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#d0193a1a"
+    },
+    {
+      "q": "a + b ≥ 2√(ab) tengsizligiga a = 16 va b = 4 qiymatlar qo'yilsa, chap va o'ng tomonlar mos ravishda nechaga teng bo'ladi?",
+      "v": [
+        "20 va 8",
+        "20 va 20",
+        "20 va 16",
+        "10 va 16"
+      ],
+      "t": 2,
+      "izoh": "Chap tomon a + b = 16 + 4 = 20. O'ng tomon 2√(16·4) = 2√64 = 2·8 = 16. Demak 20 ≥ 16 va tengsizlik o'rinli, tenglik yo'q chunki a ≠ b. Ildiz oldidagi 2 ni unutgan o'quvchi 8 ni oladi. Javob: 20 va 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizlikni-sonlarda-tekshirish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#a43b88a1"
+    },
+    {
+      "q": "a + b ≥ 2√(ab) tengsizligi a = 9 va b = 9 sonlari uchun qanday holatga keladi?",
+      "v": [
+        "18 = 18, tenglik yuz beradi",
+        "18 > 18, tengsizlik qat'iy bo'ladi",
+        "18 < 18, tengsizlik buziladi",
+        "18 = 81, tenglik yuz beradi"
+      ],
+      "t": 0,
+      "izoh": "Chap tomon 9 + 9 = 18. O'ng tomon 2√(9·9) = 2√81 = 2·9 = 18. Ikkala tomon ham 18 ga teng, ya'ni tenglik yuz berdi. Bu kutilgan natija, chunki sonlar o'zaro teng. Javob: 18 = 18, tenglik yuz beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizlikni-sonlarda-tekshirish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#9cc0e0d2"
+    },
+    {
+      "q": "Ikki nav olmaning bir tonnasi 3 mln so'm va 12 mln so'm turadi. Bu narxlarning o'rta geometrigi o'rta arifmetigidan necha million so'mga kam?",
+      "v": [
+        "4,5 mln so'm",
+        "3 mln so'm",
+        "9 mln so'm",
+        "1,5 mln so'm"
+      ],
+      "t": 3,
+      "izoh": "O'rta geometrik √(3·12) = √36 = 6 mln so'm. O'rta arifmetik (3 + 12)/2 = 7,5 mln so'm. Farq 7,5 − 6 = 1,5 mln so'm. 4,5 mln — narxlar ayirmasining yarmi, 9 mln esa narxlar ayirmasi. Javob: 1,5 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-ortachalari-taqqoslash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#002dc30a"
+    },
+    {
+      "q": "Perimetri 36 sm bo'lgan to'g'ri to'rtburchakning yuzasi 81 sm² dan katta bo'la oladimi va nima uchun?",
+      "v": [
+        "Yo'q, chunki eng katta yuza 81 sm²",
+        "Ha, tomonlar bir-biridan juda farq qilsa",
+        "Ha, faqat u kvadrat bo'lgan holda",
+        "Yo'q, chunki eng katta yuza 324 sm²"
+      ],
+      "t": 0,
+      "izoh": "Perimetr 36 sm bo'lgani uchun tomonlar yig'indisi a + b = 18 sm. (a + b)² ≥ 4ab tengsizligidan ab ≤ 324/4 = 81 sm². Tenglik a = b = 9 sm, ya'ni kvadratda. Demak yuza 81 sm² dan oshmaydi. 324 sm² — yarim perimetrning kvadrati, yuza emas. Javob: yo'q, chunki eng katta yuza 81 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-chegarasini-baholash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#fef38cea"
+    },
+    {
+      "q": "16 va 49 sonlarining o'rta geometrik qiymati nechaga teng va u o'rta arifmetik qiymatdan kichikmi?",
+      "v": [
+        "32,5, yo'q katta",
+        "28, yo'q katta",
+        "28, ha kichik",
+        "65, ha kichik"
+      ],
+      "t": 2,
+      "izoh": "O'rta geometrik √(16·49) = √784 = 28. O'rta arifmetik (16 + 49)/2 = 32,5. 28 < 32,5, demak o'rta geometrik kichik. Bu AM ≥ GM tengsizligiga to'liq mos, chunki sonlar teng emas. 65 — sonlar yig'indisi. Javob: 28, ha kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-son-orta-geometrik-hisoblash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#033ba1f7"
+    },
+    {
+      "q": "Sotuvchi bir xil summaga ikki marta olma sotib oldi: birinchi safar 1 kg 9 000 so'm, ikkinchi safar 18 000 so'm edi. O'rtacha xarid narxi qancha bo'ldi?",
+      "v": [
+        "13 500 so'm",
+        "12 730 so'm",
+        "27 000 so'm",
+        "12 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Har safar sarflangan pul m so'm bo'lsin. Olingan olma m/9 000 + m/18 000 = 3m/18 000 = m/6 000 kg. To'langan pul 2m so'm. O'rtacha narx 2m : (m/6 000) = 12 000 so'm. Bu narxlarning o'rta garmonigi bo'lib, o'rta arifmetik 13 500 so'mdan kichik. Javob: 12 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ortacha-narx-garmonik",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#38542a74"
+    },
+    {
+      "q": "3x + 27/x ifodasi musbat x larda eng kichik qiymati bo'lgan 18 ga qaysi x da erishadi?",
+      "v": [
+        "x = 3",
+        "x = 9",
+        "x = 6",
+        "x = 18"
+      ],
+      "t": 0,
+      "izoh": "AM ≥ GM da tenglik ikki had teng bo'lganda: 3x = 27/x. Maxrajdan qutulamiz: 3x² = 27, x² = 9, musbat ildiz x = 3. Tekshiramiz: 3·3 + 27/3 = 9 + 9 = 18. x² ni javob deb olgan o'quvchi 9 ni tanlaydi. Javob: x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglik-sharti-topish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#364bc858"
+    },
+    {
+      "q": "Musbat a va b sonlari uchun (a + b)² ≥ 4ab tengsizligining so'z bilan aytilgan ma'nosini to'g'ri ifodalagan variantni tanlang.",
+      "v": [
+        "Yig'indi kvadrati ko'paytmaga teng bo'ladi",
+        "Ko'paytma yig'indi kvadratidan katta bo'ladi",
+        "Yig'indi kvadrati ko'paytmaning to'rt barobaridan kichik emas",
+        "Yig'indi ko'paytmadan to'rt marta katta bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlikning chap tomoni yig'indining kvadrati, o'ng tomoni ko'paytmaning to'rt barobari. ≥ belgisi chap tomon o'ngidan kichik emasligini bildiradi. Bu (a − b)² ≥ 0 dan kelib chiqadi va tenglik a = b da. Javob: yig'indi kvadrati ko'paytmaning to'rt barobaridan kichik emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizlik-manosini-tushunish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#1e689415"
+    },
+    {
+      "q": "Ikki paxta dalasidan mos ravishda 25 tonna va 36 tonna hosil olindi. Shu ikki sonning o'rta geometrik qiymati necha tonna bo'ladi?",
+      "v": [
+        "30,5 t",
+        "30 t",
+        "61 t",
+        "11 t"
+      ],
+      "t": 1,
+      "izoh": "O'rta geometrik √(25·36) = √900 = 30 tonna. 30,5 t — o'rta arifmetik (25 + 36)/2, 61 t — yig'indi, 11 t esa ayirma. Ko'rinib turibdiki o'rta geometrik o'rta arifmetikdan kichik. Javob: 30 t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-son-orta-geometrik-hisoblash",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#3adaa60d"
+    },
+    {
+      "q": "To'g'ri burchakli parallelepipedning bir uchidan chiqqan uch qirrasi yig'indisi 21 sm. Uning hajmi eng ko'pi bilan qancha bo'lishi mumkin?",
+      "v": [
+        "441 sm³",
+        "63 sm³",
+        "343 sm³",
+        "9261 sm³"
+      ],
+      "t": 2,
+      "izoh": "Qirralar a + b + c = 21 sm. Uchta son uchun AM ≥ GM: ∛(abc) ≤ 21/3 = 7, demak abc ≤ 7³ = 343 sm³. Tenglik a = b = c = 7 sm da, ya'ni kubda. 441 — yig'indining kvadrati, 9261 esa kubi. Javob: 343 sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-son-kopaytma-maksimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#d6cd01b0"
+    },
+    {
+      "q": "Ikkita musbat son haqidagi quyidagi tasdiqlardan qaysi biri har qanday holatda ham to'g'ri bo'ladi?",
+      "v": [
+        "O'rta geometrik har doim butun son bo'ladi",
+        "O'rta arifmetik ikkala sondan ham katta bo'ladi",
+        "O'rta geometrik sonlar ayirmasiga teng bo'ladi",
+        "O'rta geometrik o'rta arifmetikdan katta bo'la olmaydi"
+      ],
+      "t": 3,
+      "izoh": "AM ≥ GM tengsizligiga ko'ra o'rta geometrik o'rta arifmetikdan oshmaydi, tenglik esa sonlar teng bo'lganda. O'rta geometrik butun bo'lishi shart emas, masalan 2 va 3 uchun u √6. O'rta arifmetik esa ikki son orasida yotadi, kattasidan oshmaydi. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizlik-manosini-tushunish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#5ec38136"
+    },
+    {
+      "q": "Bir ishni birinchi usta 4 soatda, ikkinchisi 9 soatda bajaradi. Shu ikki vaqtning o'rta geometrik qiymati necha soatga teng?",
+      "v": [
+        "6,5 soat",
+        "2,77 soat",
+        "6 soat",
+        "13 soat"
+      ],
+      "t": 2,
+      "izoh": "O'rta geometrik √(4·9) = √36 = 6 soat. 6,5 soat — o'rta arifmetik, 13 soat — vaqtlar yig'indisi. 2,77 soat esa ikkovi birgalikda ishlaganda ketadigan vaqt bo'lib, u butunlay boshqa kattalik. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-vaqti-ortacha",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#78a51faf"
+    },
+    {
+      "q": "O'quvchi x + 1/x ≥ 2 tengsizligini x = 0,25 qiymatda tekshirmoqchi. Hisoblash natijasida qanday munosabat hosil bo'ladi?",
+      "v": [
+        "4,25 < 2",
+        "4,25 > 2",
+        "2,25 > 2",
+        "1,25 < 2"
+      ],
+      "t": 1,
+      "izoh": "x = 0,25 bo'lsa 1/x = 4. Demak x + 1/x = 0,25 + 4 = 4,25. Bu son 2 dan katta, ya'ni tengsizlik bajariladi. Kasrni teskari aylantirmasdan 0,25 ni qo'shgan o'quvchi 1,25 hosil qiladi va noto'g'ri xulosaga keladi. Javob: 4,25 > 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizlikni-sonlarda-tekshirish",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#9eff98d0"
+    },
+    {
+      "q": "Ikki musbat sonning yig'indisi 40 ga teng. Ularning kvadratlari yig'indisi eng kichik bo'lganda qanday qiymatga ega bo'ladi?",
+      "v": [
+        "1600",
+        "400",
+        "200",
+        "800"
+      ],
+      "t": 3,
+      "izoh": "a² + b² ≥ 2ab tengsizligining ikkala tomoniga a² + b² qo'shamiz: 2(a² + b²) ≥ (a + b)². Demak a² + b² ≥ 1600/2 = 800. Tenglik a = b = 20 da: 400 + 400 = 800. 1600 — yig'indining kvadrati, 400 esa bitta hadning qiymati. Javob: 800.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratlar-yigindisi-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#8f9a8fc1"
+    },
+    {
+      "q": "Fermer 4 900 m² yerni to'g'ri to'rtburchak shaklida panjara bilan o'ramoqchi. Panjara eng kam bo'lganda uchastkaning bo'yi necha metr bo'ladi?",
+      "v": [
+        "70 m",
+        "140 m",
+        "280 m",
+        "49 m"
+      ],
+      "t": 0,
+      "izoh": "Tomonlar ko'paytmasi ab = 4 900. AM ≥ GM bo'yicha a + b ≥ 2√4 900 = 140 m va tenglik a = b da. Demak uchastka kvadrat, tomoni √4 900 = 70 m. 140 m — tomonlar yig'indisi, 280 m esa eng kichik perimetr. Javob: 70 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-berilgan-yigindi-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#a275f91b"
+    },
+    {
+      "q": "Musbat a va b sonlari uchun a + b = 1 shart berilgan. Shu holda (1 + 1/a)(1 + 1/b) ko'paytmaning eng kichik qiymati nechaga teng?",
+      "v": [
+        "4",
+        "9",
+        "5",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Qavslarni ochamiz: 1 + 1/a + 1/b + 1/(ab) = 1 + (a + b)/(ab) + 1/(ab). a + b = 1 bo'lgani uchun bu 1 + 2/(ab) ga aylanadi. (a + b)² ≥ 4ab dan ab ≤ 1/4, demak 2/(ab) ≥ 8 va butun ifoda 9 dan kichik emas. Tenglik a = b = 1/2 da. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-ifoda-minimum",
+      "id": "matematika_tngs_m03-klassik-tengsizliklar-va-ularni-isbotlash#9c7cb4fc"
+    }
+  ]
+}

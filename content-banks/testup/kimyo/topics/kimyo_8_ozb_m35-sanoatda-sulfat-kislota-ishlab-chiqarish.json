@@ -1,0 +1,576 @@
+{
+  "nom": "35-mavzu. Sanoatda sulfat kislota ishlab chiqarish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kimyo sanoati uchun juda muhim bo'lgan anorganik birikmalardan biri qaysi?",
+      "v": [
+        "Sulfat kislota",
+        "Xlorid kislota",
+        "Nitrat kislota",
+        "Karbonat kislota"
+      ],
+      "t": 0,
+      "izoh": "Darslikda sulfat kislota kimyo sanoati uchun juda muhim deb ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#ba9784ce"
+    },
+    {
+      "q": "Sanoatda sulfat kislota ishlab chiqarish uchun xomashyo sifatida qaysi moddalar ishlatiladi?",
+      "v": [
+        "Sof oltingugurt, temir kolchedan (pirit), rangli metallar sulfidlari, vodorod sulfid",
+        "Ohaktosh, gips, qum, tuz",
+        "Kaliy selitrasi, xrompik, dolomit",
+        "Apatit, fosforit, kaliy tuzi"
+      ],
+      "t": 0,
+      "izoh": "Xomashyolar: S, FeS2, CuS, ZnS, PbS, H2S.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#37d82872"
+    },
+    {
+      "q": "Temir kolchedan (pirit)ning kimyoviy formulasi qanday?",
+      "v": [
+        "FeS2",
+        "FeS",
+        "Fe2S3",
+        "FeSO4"
+      ],
+      "t": 0,
+      "izoh": "Pirit — FeS2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#ce8ce34d"
+    },
+    {
+      "q": "Sanoatda H2SO4 ishlab chiqarish uchun asosan qaysi xomashyodan foydalaniladi?",
+      "v": [
+        "Piritdan",
+        "Ohaktoshdan",
+        "Gipsdan",
+        "Kaliy selitrasidan"
+      ],
+      "t": 0,
+      "izoh": "Sanoatda H2SO4 ishlab chiqarish uchun piritdan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#ec4bf1e7"
+    },
+    {
+      "q": "Sanoatda xomashyodan sulfat kislota ishlab chiqarish jarayoni necha bosqichga bo'linadi?",
+      "v": [
+        "Bir necha bosqichga",
+        "Faqat bitta bosqichga",
+        "Ikki bosqichga",
+        "O'n bosqichga"
+      ],
+      "t": 0,
+      "izoh": "Jarayonlar bir necha bosqichga bo'linadi: SO2 olish, tozalash, oksidlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#2c061a76"
+    },
+    {
+      "q": "Sulfat kislota ishlab chiqarishning birinchi bosqichi nima?",
+      "v": [
+        "Oltingugurt(IV)-oksidni olish",
+        "Oltingugurt(VI)-oksidni gidratlash",
+        "Oleum olish",
+        "Sulfat kislotani suyultirish"
+      ],
+      "t": 0,
+      "izoh": "1-bosqich — oltingugurt(IV)-oksidni olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#5a881284"
+    },
+    {
+      "q": "Sulfat kislota ishlab chiqarish bosqichlari to'g'ri ketma-ketligini toping.",
+      "v": [
+        "SO2 olish → SO2 ni tozalash → SO2 ni oksidlab SO3 olish",
+        "SO3 olish → SO2 olish → tozalash",
+        "Tozalash → SO2 olish → gidratlash",
+        "Gidratlash → tozalash → oksidlash"
+      ],
+      "t": 0,
+      "izoh": "Bosqichlar: 1) SO2 olish, 2) SO2 tozalash, 3) SO2 ni oksidlab SO3 olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#2bba9818"
+    },
+    {
+      "q": "Sof oltingugurtdan SO2 olish reaksiyasi tenglamasi qaysi?",
+      "v": [
+        "S + O2 = SO2",
+        "S + O2 = SO3",
+        "2S + 3O2 = 2SO3",
+        "S + 2O2 = SO4"
+      ],
+      "t": 0,
+      "izoh": "S + O2 = SO2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#ecd42f8c"
+    },
+    {
+      "q": "Vodorod sulfiddan SO2 olish reaksiyasi tenglamasi qaysi?",
+      "v": [
+        "2H2S + 3O2 = 2SO2 + 2H2O",
+        "H2S + O2 = SO2 + H2",
+        "2H2S + O2 = 2S + 2H2O",
+        "H2S + 2O2 = H2SO4"
+      ],
+      "t": 0,
+      "izoh": "2H2S + 3O2 = 2SO2 + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#baac9eab"
+    },
+    {
+      "q": "Piritni kuydirish (oksidlash) reaksiyasi tenglamasi qaysi?",
+      "v": [
+        "4FeS2 + 11O2 = 2Fe2O3 + 8SO2",
+        "FeS2 + O2 = FeO + SO2",
+        "2FeS2 + 3O2 = 2FeS + 4SO2",
+        "FeS2 + 2O2 = FeSO4 + S"
+      ],
+      "t": 0,
+      "izoh": "4FeS2 + 11O2 = 2Fe2O3 + 8SO2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#3aef80ad"
+    },
+    {
+      "q": "Pirit kuydirilganda SO2 bilan birga qanday mahsulot hosil bo'ladi?",
+      "v": [
+        "Fe2O3",
+        "FeO",
+        "Fe3O4",
+        "FeS"
+      ],
+      "t": 0,
+      "izoh": "4FeS2 + 11O2 = 2Fe2O3 + 8SO2 — kuyundi sifatida Fe2O3 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#716572c7"
+    },
+    {
+      "q": "Cu2S dan SO2 olish reaksiyasi tenglamasi qaysi?",
+      "v": [
+        "Cu2S + 2O2 = 2CuO + SO2",
+        "Cu2S + O2 = 2Cu + SO2",
+        "CuS + O2 = CuO + SO2",
+        "2Cu2S + 3O2 = 2Cu2O + 2SO2"
+      ],
+      "t": 0,
+      "izoh": "Cu2S + 2O2 = 2CuO + SO2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#9735dfa5"
+    },
+    {
+      "q": "Piritni kuydirish reaksiyasini yuqori unum bilan amalga oshirish uchun havo o'rniga nima yuboriladi?",
+      "v": [
+        "Toza kislorod",
+        "Azot",
+        "Vodorod",
+        "Uglerod(IV)-oksid"
+      ],
+      "t": 0,
+      "izoh": "Havo o'rniga toza kislorod yuborilsa, kislorod konsentratsiyasi ortib, reaksiya tezlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#0c722416"
+    },
+    {
+      "q": "Pirit bo'laklari nima uchun maydalanadi?",
+      "v": [
+        "Piritning kislorod bilan to'qnashuvlar sirti kattalashib, reaksiya tezlashishi uchun",
+        "Piritning massasini kamaytirish uchun",
+        "Katalizatorni zararlamaslik uchun",
+        "Pech gazini kamaytirish uchun"
+      ],
+      "t": 0,
+      "izoh": "Maydalash sirtni kattalashtirib, reaksiyani tezlashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#082471b9"
+    },
+    {
+      "q": "Piritni haddan tashqari maydalash nima uchun zararli?",
+      "v": [
+        "Pirit zichlashib qoladi va kislorod zichlashgan qatlam oralariga kira olmaydi",
+        "Katalizatorni zararlaydi",
+        "SO2 tarkibida chang ko'payadi",
+        "Reaksiya portlash bilan kechadi"
+      ],
+      "t": 0,
+      "izoh": "Haddan ortiq mayda pirit zichlashib, kislorod kira olmay, reaksiya sekinlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#c8f578e7"
+    },
+    {
+      "q": "Kolchedanni kuydirish pechida kukun holagi pirit qayerdan sochiladi?",
+      "v": [
+        "Yuqoridan pastga",
+        "Pastdan yuqoriga",
+        "Yon tomondan",
+        "Markazdan"
+      ],
+      "t": 0,
+      "izoh": "Kukun holagi pirit yuqoridan pastga sochiladi, pastdan esa havo haydaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#63ce3abb"
+    },
+    {
+      "q": "Piritning mayda zarrachalari bilan havoning aralashmasi nima deb yuritiladi?",
+      "v": [
+        "Qaynovchi qatlam",
+        "Kontakt qatlami",
+        "Filtr qatlami",
+        "Katalitik qatlam"
+      ],
+      "t": 0,
+      "izoh": "Bunday aralashma qaynovchi qatlam deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#76694b5f"
+    },
+    {
+      "q": "Qaynovchi qatlam sharoitida piritni oksidlash uchun qanday muddat kifoya qiladi?",
+      "v": [
+        "Juda oz muddat",
+        "Bir necha soat",
+        "Bir necha kun",
+        "Bir necha hafta"
+      ],
+      "t": 0,
+      "izoh": "Qaynovchi qatlamda piritni oksidlash uchun juda oz muddat kifoya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#e6c33cd2"
+    },
+    {
+      "q": "Oltingugurt(VI)-oksidning olinishi qanday jarayon bo'lib, qaysi katalizator ishlatiladi?",
+      "v": [
+        "Katalitik jarayon, vanadiy(V)-oksid — V2O5",
+        "Katalitik jarayon, mangan(IV)-oksid — MnO2",
+        "Qaytmas jarayon, temir(III)-oksid — Fe2O3",
+        "Fotokimyoviy jarayon, platina — Pt"
+      ],
+      "t": 0,
+      "izoh": "SO3 olish katalitik jarayon bo'lib, V2O5 katalizator sifatida ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#c7b83437"
+    },
+    {
+      "q": "SO2 ga qo'shilgan chang va har xil qo'shimchalar katalizatorga qanday ta'sir qiladi?",
+      "v": [
+        "Katalizatorni zararlaydi, ya'ni katalitik xossasini susaytiradi",
+        "Katalizatorni faollashtiradi",
+        "Katalizatorga ta'sir qilmaydi",
+        "Katalizatorni eritib yuboradi"
+      ],
+      "t": 0,
+      "izoh": "Chang va qo'shimchalar katalizatorning katalitik xossasini susaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#0907f09d"
+    },
+    {
+      "q": "Kuydirish pechidan chiqayotgan SO2 qanday qurilmalarda tozalanadi?",
+      "v": [
+        "Siklon va elektrofiltr deb ataluvchi qurilmalarda",
+        "Quritish minorasi va kontakt apparatida",
+        "Issiq almashtirgich va yuttirish minorasida",
+        "Faqat suv bilan yuvish apparatida"
+      ],
+      "t": 0,
+      "izoh": "SO2 siklon va elektrofiltr qurilmalarida tozalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#1c6532f4"
+    },
+    {
+      "q": "SO2 ni suv bug'laridan tozalash uchun qayerda quritiladi?",
+      "v": [
+        "Quritish minorasida",
+        "Kontakt apparatida",
+        "Kuydirish pechida",
+        "Yuttirish minorasida"
+      ],
+      "t": 0,
+      "izoh": "Suv bug'laridan tozalash uchun quritish minorasida quritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#ecaaba18"
+    },
+    {
+      "q": "Quritish minorasida SO2 ni quritish uchun qaysi moddadan foydalaniladi?",
+      "v": [
+        "Konsentrlangan H2SO4",
+        "Distillangan suv",
+        "Suyultirilgan HCl",
+        "Natriy gidroksid eritmasi"
+      ],
+      "t": 0,
+      "izoh": "Quritish uchun konsentrlangan H2SO4 dan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#ffe2fddc"
+    },
+    {
+      "q": "SO2 ni SO3 ga oksidlash reaksiyasi tenglamasi qaysi?",
+      "v": [
+        "2SO2 + O2 ⇄ 2SO3 + Q",
+        "SO2 + O2 = SO3",
+        "2SO2 + 3O2 = 2SO4",
+        "SO2 + H2O = H2SO4"
+      ],
+      "t": 0,
+      "izoh": "2SO2 + O2 ⇄ 2SO3 + Q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#8e4072f6"
+    },
+    {
+      "q": "SO2 ni oksidlash reaksiyasi qanday turdagi reaksiya?",
+      "v": [
+        "Ekzotermik reaksiya",
+        "Endotermik reaksiya",
+        "Qaytmas reaksiya",
+        "Fotokimyoviy reaksiya"
+      ],
+      "t": 0,
+      "izoh": "Reaksiya ekzotermik (+ Q) va qaytar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#bc6e46fb"
+    },
+    {
+      "q": "SO2 oksidlanishida 400 °C da oltingugurt(VI)-oksidning hosil bo'lishi necha foizga yetadi?",
+      "v": [
+        "99,2 %",
+        "73 %",
+        "50 %",
+        "98 %"
+      ],
+      "t": 0,
+      "izoh": "400 °C da 99,2 % SO3 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#d878dc74"
+    },
+    {
+      "q": "SO2 oksidlanishida 600 °C da oltingugurt(VI)-oksidning hosil bo'lishi necha foizni tashkil qiladi?",
+      "v": [
+        "73 %",
+        "99,2 %",
+        "90 %",
+        "45 %"
+      ],
+      "t": 0,
+      "izoh": "600 °C da 73 % ni tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#edcf9702"
+    },
+    {
+      "q": "SO2 ni oksidlash reaksiyasida ajralib chiqadigan issiqlik nima uchun sarflanadi?",
+      "v": [
+        "Issiq almashtirgichlarda SO2 ni isitish uchun",
+        "Kuydirish pechini isitish uchun",
+        "Quritish minorasini isitish uchun",
+        "Oleumni suyultirish uchun"
+      ],
+      "t": 0,
+      "izoh": "Ajralgan issiqlik issiq almashtirgichlarda SO2 ni isitishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#6e6562c1"
+    },
+    {
+      "q": "SO3 hosil bo'lish unumini oshirish uchun reaksiya haroratini qanday o'zgartirish kerak?",
+      "v": [
+        "600 °C dan asta-sekinlik bilan 400—450 °C ga tushirish",
+        "400 °C dan 600 °C ga ko'tarish",
+        "Doimiy 600 °C da ushlab turish",
+        "Xona haroratiga tushirish"
+      ],
+      "t": 0,
+      "izoh": "Unumni oshirish uchun 600 °C dan 400—450 °C ga tushiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#3407ec8f"
+    },
+    {
+      "q": "SO2 ni oksidlashda katalizator bo'la oladigan moddalar qaysi?",
+      "v": [
+        "Temir, platina va vanadiy oksidlari",
+        "Mangan, nikel va kobalt oksidlari",
+        "Mis, rux va qo'rg'oshin oksidlari",
+        "Natriy, kaliy va kalsiy oksidlari"
+      ],
+      "t": 0,
+      "izoh": "Temir, platina va vanadiy oksidlari katalizator bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#2b321338"
+    },
+    {
+      "q": "Hozirgi kunda SO2 ni oksidlashda katalizator sifatida qaysi modda ishlatiladi?",
+      "v": [
+        "Vanadiy(V)-oksid",
+        "Platina",
+        "Temir(III)-oksid",
+        "Nikel(II)-oksid"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi kunda katalizator sifatida vanadiy(V)-oksid ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#fbff1514"
+    },
+    {
+      "q": "Katalizatorga qo'yiladigan talablarga kirmaydigan variantni toping.",
+      "v": [
+        "Qimmat bo'lishi",
+        "Arzon bo'lishi",
+        "Katalitik donorlarga chidamli bo'lishi",
+        "Uzoq muddatga yetishi"
+      ],
+      "t": 0,
+      "izoh": "Talablar: arzon, katalitik donorlarga chidamli, uzoq muddatga yetadigan bo'lishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#a62785dd"
+    },
+    {
+      "q": "Yuttirish minorasida SO3 to'g'ridan-to'g'ri suv bilan nima uchun reaksiyaga kiritilmaydi?",
+      "v": [
+        "Chunki H2SO4 ning juda mayda tomchilari hosil bo'lib, minora tuman bilan qoplanadi va bu tuman juda qiyin kondensatlanadi",
+        "Chunki reaksiya juda sekin kechadi",
+        "Chunki reaksiya portlash bilan kechadi",
+        "Chunki suv SO3 bilan umuman reaksiyaga kirishmaydi"
+      ],
+      "t": 0,
+      "izoh": "Sulfat kislotali tuman qiyin kondensatlangani uchun SO3 suv bilan kiritilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#597099ed"
+    },
+    {
+      "q": "Yuttirish minorasida SO3 qanday konsentratsiyadagi sulfat kislota yordamida yutiriladi?",
+      "v": [
+        "98 % li sulfat kislota",
+        "10 % li sulfat kislota",
+        "50 % li sulfat kislota",
+        "Sof distillangan suv"
+      ],
+      "t": 0,
+      "izoh": "SO3 98 % li sulfat kislota yordamida yutiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#9cd6c2b0"
+    },
+    {
+      "q": "SO3 ni gidratlash reaksiyasi tenglamasi qaysi?",
+      "v": [
+        "SO3 + H2O = H2SO4 + Q",
+        "SO3 + H2O = H2SO3",
+        "SO2 + H2O = H2SO4",
+        "2SO3 + H2O = H2S2O7"
+      ],
+      "t": 0,
+      "izoh": "SO3 + H2O = H2SO4 + Q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#dfd07864"
+    },
+    {
+      "q": "Oleum deb ataluvchi birikmaning umumiy formulasi qanday?",
+      "v": [
+        "H2SO4 · nSO3",
+        "H2SO3 · nSO2",
+        "H2SO4 · nH2O",
+        "H2S · nSO3"
+      ],
+      "t": 0,
+      "izoh": "H2SO4 + nSO3 = H2SO4 · nSO3 — oleum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#c1e56b99"
+    },
+    {
+      "q": "Oleum qanday hosil bo'ladi?",
+      "v": [
+        "Suvsiz H2SO4 SO3 ni biriktirib olganda",
+        "Sulfat kislota suv bilan aralashtirilganda",
+        "SO2 suvda eritilganda",
+        "Pirit kuydirilganda"
+      ],
+      "t": 0,
+      "izoh": "Suvsiz H2SO4 SO3 ni biriktirib oleumni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#a5d042fc"
+    },
+    {
+      "q": "Sanoatda H2SO4 ishlab chiqarish qanday jarayondir?",
+      "v": [
+        "Uzluksiz jarayon",
+        "Davriy jarayon",
+        "Bir martalik jarayon",
+        "Laboratoriya jarayoni"
+      ],
+      "t": 0,
+      "izoh": "Sanoatda H2SO4 ishlab chiqarish uzluksiz jarayondir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m35-sanoatda-sulfat-kislota-ishlab-chiqarish#bdd30686"
+    }
+  ]
+}

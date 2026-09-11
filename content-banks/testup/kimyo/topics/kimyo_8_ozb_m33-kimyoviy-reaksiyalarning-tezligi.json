@@ -1,0 +1,531 @@
+{
+  "nom": "33-mavzu. Kimyoviy reaksiyalarning tezligi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kimyoviy reaksiyaning tezligi deb nimaga aytiladi?",
+      "v": [
+        "Kimyoviy reaksiyada ishtirok etayotgan moddalarning konsentratsiyalarini vaqt birligi ichida o'zgarishi",
+        "Reaksiyada ishtirok etgan moddalarning umumiy massasi",
+        "Reaksiya mahsulotlarining hajm birligi ichida ortishi",
+        "Reaksiyada ajralib chiqqan issiqlik miqdori"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi ta'rif shunday berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#e587798c"
+    },
+    {
+      "q": "Kimyoviy reaksiya tezligining o'lchov birligi nima?",
+      "v": [
+        "mol/l·sek",
+        "mol/l",
+        "g/mol",
+        "l/mol"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi misolda tezlik 0,06 mol/l·sek deb topilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#89df625b"
+    },
+    {
+      "q": "Reaksiyaga kirishayotgan moddaning dastlabki konsentratsiyasi 1 mol/l, 10 sekunddan so'ng 0,4 mol/l bo'lsa, reaksiya tezligi qancha?",
+      "v": [
+        "0,06 mol/l·sek",
+        "0,04 mol/l·sek",
+        "0,6 mol/l·sek",
+        "0,1 mol/l·sek"
+      ],
+      "t": 0,
+      "izoh": "υ = (1−0,4)/10 = 0,06 mol/l·sek — darslikdagi misol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#4789015c"
+    },
+    {
+      "q": "Darslikdagi misolda reaksiya davomida moddaning konsentratsiyasi qanchaga kamaygan?",
+      "v": [
+        "0,6 mol/l",
+        "0,4 mol/l",
+        "1 mol/l",
+        "0,06 mol/l"
+      ],
+      "t": 0,
+      "izoh": "1 mol/l − 0,4 mol/l = 0,6 mol/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#a3ae3fa4"
+    },
+    {
+      "q": "Darslikdagi misolda reaksiya qancha vaqt davom etgan?",
+      "v": [
+        "10 sekund",
+        "5 sekund",
+        "20 sekund",
+        "60 sekund"
+      ],
+      "t": 0,
+      "izoh": "Reaksiya 10 sekund davom etgan deb ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#f7579c97"
+    },
+    {
+      "q": "Kimyoviy reaksiya tezligiga ta'sir etuvchi omillardan biri qaysi?",
+      "v": [
+        "Reaksiyada ishtirok etayotgan moddalar konsentratsiyasi",
+        "Idishning shakli",
+        "Eritmaning rangi",
+        "Moddaning hidi"
+      ],
+      "t": 0,
+      "izoh": "Tezlik konsentratsiyaga, haroratga, moddalar tabiatiga, sirtga va katalizatorga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#766573e2"
+    },
+    {
+      "q": "Oltingugurt havoda qanday yonadi?",
+      "v": [
+        "Sekin yonadi",
+        "Ravshan alanga berib juda tez yonadi",
+        "Umuman yonmaydi",
+        "Portlash bilan yonadi"
+      ],
+      "t": 0,
+      "izoh": "Oltingugurt havoda sekin, sof kislorodda ravshan alanga berib tez yonadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#899b1185"
+    },
+    {
+      "q": "Oltingugurt sof kislorodda qanday yonadi?",
+      "v": [
+        "Ravshan alanga berib juda tez yonadi",
+        "Sekin yonadi",
+        "Yonmaydi",
+        "Faqat qiziydi, lekin alangalanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Sof kislorodda kislorod molekulalari soni ko'p bo'lgani uchun tez yonadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#9d622c68"
+    },
+    {
+      "q": "Havoda kislorod hajm jihatdan qancha ulushni tashkil qiladi?",
+      "v": [
+        "21 %",
+        "78 %",
+        "50 %",
+        "1 %"
+      ],
+      "t": 0,
+      "izoh": "Havoda kislorod hajm jihatdan 21 % ni tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#00467094"
+    },
+    {
+      "q": "Kimyoviy reaksiyalarning tezligi nimaga teng?",
+      "v": [
+        "Reaksiyaga kirishayotgan moddalarning konsentratsiyalar ko'paytmasiga",
+        "Reaksiya mahsulotlarining massalari yig'indisiga",
+        "Reaksiya vaqtining kvadratiga",
+        "Moddalarning zichliklari nisbatiga"
+      ],
+      "t": 0,
+      "izoh": "υ = k[A]^m · [B]^n ko'rinishida ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#d5f80fb0"
+    },
+    {
+      "q": "mA + nB = C reaksiyasi uchun tezlik formulasi qanday?",
+      "v": [
+        "υ = k[A]^m · [B]^n",
+        "υ = k[A] + [B]",
+        "υ = [A] · [B] / t",
+        "υ = k / ([A] · [B])"
+      ],
+      "t": 0,
+      "izoh": "Darslikda aynan shu formula keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#7ba718d5"
+    },
+    {
+      "q": "υ = k[A]^m · [B]^n formulasida [A] va [B] nimani bildiradi?",
+      "v": [
+        "A va B moddalarning molyar konsentratsiyasini",
+        "A va B moddalarning massasini",
+        "A va B moddalarning hajmini",
+        "A va B moddalarning zichligini"
+      ],
+      "t": 0,
+      "izoh": "[A] va [B] — molyar konsentratsiyalar, k — proporsionallik koeffitsiyenti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#fffe3414"
+    },
+    {
+      "q": "υ = k[A]^m · [B]^n formulasida k nima?",
+      "v": [
+        "Proporsionallik koeffitsiyenti",
+        "Harorat koeffitsiyenti",
+        "Molyar konsentratsiya",
+        "Reaksiya vaqti"
+      ],
+      "t": 0,
+      "izoh": "k — proporsionallik koeffitsiyenti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#5d4eb957"
+    },
+    {
+      "q": "Harorat har 10 °C ga oshirilganda reaksiya tezligi necha marta ortadi?",
+      "v": [
+        "2–4 marta",
+        "10 marta",
+        "1,5 marta",
+        "100 marta"
+      ],
+      "t": 0,
+      "izoh": "Darslikda har 10 °C da tezlik 2–4 marta ortishi keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#b54adfd0"
+    },
+    {
+      "q": "υ_t2 = υ_t1 · γ^((t2−t1)/10) formulasidagi γ nimani bildiradi?",
+      "v": [
+        "Kimyoviy reaksiya tezligining harorat koeffitsiyentini",
+        "Moddaning molyar massasini",
+        "Reaksiyaning davomiyligini",
+        "Moddaning konsentratsiyasini"
+      ],
+      "t": 0,
+      "izoh": "γ — reaksiya tezligining harorat koeffitsiyenti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#27942ad6"
+    },
+    {
+      "q": "Harorat koeffitsiyenti γ = 2 bo'lganda, harorat 40 °C ga ko'tarilsa, reaksiya tezligi necha marta ortadi?",
+      "v": [
+        "16 marta",
+        "8 marta",
+        "32 marta",
+        "4 marta"
+      ],
+      "t": 0,
+      "izoh": "2^4 = 16 marta (darslikdagi misol).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#3da24160"
+    },
+    {
+      "q": "Harorat koeffitsiyenti γ = 2 bo'lganda, harorat 50 °C ga ko'tarilsa, reaksiya tezligi necha marta ortadi?",
+      "v": [
+        "32 marta",
+        "16 marta",
+        "64 marta",
+        "10 marta"
+      ],
+      "t": 0,
+      "izoh": "2^5 = 32 marta (darslikdagi misol).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#24bb9e68"
+    },
+    {
+      "q": "Harorat koeffitsiyenti γ = 2 bo'lganda, harorat 70 °C ga ko'tarilsa, reaksiya tezligi necha marta ortadi?",
+      "v": [
+        "128 marta",
+        "64 marta",
+        "32 marta",
+        "256 marta"
+      ],
+      "t": 0,
+      "izoh": "2^7 = 128 marta (darslikdagi misol).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#9279253c"
+    },
+    {
+      "q": "Harorat ko'tarilganda reaksiya tezligining keskin ortishi nima bilan tushuntiriladi?",
+      "v": [
+        "Molekulalar harakati tezlashib, to'qnashuvlar sonining ortishi va faol molekulalarning ko'payishi bilan",
+        "Molekulalarning massasining ortishi bilan",
+        "Moddaning hajmining kamayishi bilan",
+        "Eritmaning rangining o'zgarishi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikda aynan shunday izohlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#ef5c88f0"
+    },
+    {
+      "q": "2K + 2H2O = 2KOH + H2 reaksiyasi qanday kechadi?",
+      "v": [
+        "Juda tez, ajralib chiqayotgan vodorod yonib ketadi",
+        "Juda sekin, uzoq muddat davom etadi",
+        "Umuman sodir bo'lmaydi",
+        "Faqat qizdirilganda sodir bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Kaliy suv bilan juda tez, yonish bilan reaksiyaga kirishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#1f378f17"
+    },
+    {
+      "q": "Natriyning suv bilan reaksiyasi kaliyga nisbatan qanday kechadi?",
+      "v": [
+        "Tez, ammo kaliyga qaraganda sekinroq",
+        "Kaliynikidan tezroq",
+        "Bir xil tezlikda",
+        "Umuman kechmaydi"
+      ],
+      "t": 0,
+      "izoh": "2Na + 2H2O = 2NaOH + H2 reaksiyasi kaliyga qaraganda sekinroq kechadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#c2b7e055"
+    },
+    {
+      "q": "Temirning suv bilan o'zaro reaksiyasi qanday sharoitda kechadi?",
+      "v": [
+        "Atmosfera kislorodi ishtirokida juda sekin va uzoq muddat davom etadi",
+        "Portlash bilan juda tez kechadi",
+        "Yonish bilan ro'y beradi",
+        "Umuman sodir bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Temir suv bilan atmosfera kislorodi ishtirokida juda sekin reaksiyaga kirishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#8193d84f"
+    },
+    {
+      "q": "Mis suv bilan qanday o'zaro ta'sirda bo'ladi?",
+      "v": [
+        "Reaksiyaga kirishmaydi",
+        "Juda tez reaksiyaga kirishadi",
+        "Yonish bilan reaksiyaga kirishadi",
+        "Sekin, ammo baribir eriydi"
+      ],
+      "t": 0,
+      "izoh": "Mis suv bilan reaksiyaga kirishmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#a188431c"
+    },
+    {
+      "q": "Qattiq moddalar uchun reaksiya tezligi nimaga to'g'ri proporsional?",
+      "v": [
+        "Reaksiyaga kirishayotgan moddalarning sirtiga",
+        "Moddalarning massasiga",
+        "Idishning hajmiga",
+        "Eritmaning zichligiga"
+      ],
+      "t": 0,
+      "izoh": "Qattiq moddalar uchun tezlik moddalar sirtiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#a33e342a"
+    },
+    {
+      "q": "Fe + S = FeS reaksiyasida temir bo'laklari maydalangan sari reaksiya qanday boradi?",
+      "v": [
+        "Tez boradi",
+        "Susayib ketadi",
+        "To'xtaydi",
+        "O'zgarishsiz qoladi"
+      ],
+      "t": 0,
+      "izoh": "Maydalangan sari sirt kattalashib, reaksiya tez boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#b3c687fc"
+    },
+    {
+      "q": "Temir maydalanganlik darajasi ortib, tolqon holatiga yetganda reaksiya nima uchun susayib ketadi?",
+      "v": [
+        "Modda zichlashib, molekulalarning o'zaro to'qnashuvlar soni kamayadi",
+        "Moddaning massasi kamayadi",
+        "Harorat tushib ketadi",
+        "Katalizator zararlanadi"
+      ],
+      "t": 0,
+      "izoh": "Haddan tashqari maydalanishda modda zichlashib, to'qnashuvlar kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#297fd5c5"
+    },
+    {
+      "q": "Vodorod peroksidning parchalanish reaksiyasini qaysi modda tezlashtiradi?",
+      "v": [
+        "MnO2",
+        "CaO",
+        "NaCl",
+        "Fe2O3"
+      ],
+      "t": 0,
+      "izoh": "MnO2 vodorod peroksid parchalanishini tezlashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#05f2d2df"
+    },
+    {
+      "q": "SO3 ni olishda qaysi modda katalizator sifatida jarayonni tezlashtiradi?",
+      "v": [
+        "Vanadiy(V)-oksid",
+        "Mangan(IV)-oksid",
+        "Temir(III)-oksid",
+        "Mis(II)-oksid"
+      ],
+      "t": 0,
+      "izoh": "SO3 olishda vanadiy(V)-oksid katalizator sifatida ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#55fc3921"
+    },
+    {
+      "q": "Katalizatorlar deb qanday moddalarga aytiladi?",
+      "v": [
+        "Kimyoviy reaksiyalarni tezlashtiradigan, ammo o'zi o'zgarmay qoladigan moddalarga",
+        "Reaksiyani sekinlashtiradigan moddalarga",
+        "Reaksiyada to'liq sarflanadigan moddalarga",
+        "Reaksiya mahsuloti bo'ladigan moddalarga"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi katalizator ta'rifi shunday.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#fbd98245"
+    },
+    {
+      "q": "Ingibitorlar nima?",
+      "v": [
+        "Moddalarning kimyoviy reaksiyaga kirishish imkoniyatini susaytiradigan moddalar",
+        "Reaksiyani tezlashtiradigan moddalar",
+        "Reaksiya mahsulotlari",
+        "Erigich sifatida ishlatiladigan moddalar"
+      ],
+      "t": 0,
+      "izoh": "Ingibitorlar reaksiya tezligini susaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#448e7103"
+    },
+    {
+      "q": "Temir buyumlarning zanglash jarayonini qanday qilish zarur?",
+      "v": [
+        "Sekinlashtirish",
+        "Tezlashtirish",
+        "To'xtatmasdan davom ettirish",
+        "Haroratini oshirish"
+      ],
+      "t": 0,
+      "izoh": "Zanglash jarayonini sekinlashtirish zarur deb ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#11d11984"
+    },
+    {
+      "q": "Kaliy suv bilan reaksiyaga kirishganda qanday mahsulotlar hosil bo'ladi?",
+      "v": [
+        "KOH va H2",
+        "K2O va H2",
+        "KOH va O2",
+        "KH va H2O"
+      ],
+      "t": 0,
+      "izoh": "2K + 2H2O = 2KOH + H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#480f8b00"
+    },
+    {
+      "q": "Natriy suv bilan reaksiyasining tenglamasi qaysi?",
+      "v": [
+        "2Na + 2H2O = 2NaOH + H2",
+        "Na + H2O = NaOH + H2",
+        "2Na + H2O = Na2O + H2",
+        "Na + 2H2O = Na(OH)2 + H2"
+      ],
+      "t": 0,
+      "izoh": "Darslikda aynan shu tenglama keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#2df4dc14"
+    },
+    {
+      "q": "Temir bilan oltingugurtning birikish reaksiyasi tenglamasi qaysi?",
+      "v": [
+        "Fe + S = FeS",
+        "Fe + S = FeS2",
+        "2Fe + 3S = Fe2S3",
+        "Fe + 2S = FeS2"
+      ],
+      "t": 0,
+      "izoh": "Darslikda Fe + S = FeS reaksiyasi misol qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#b7755a02"
+    },
+    {
+      "q": "Kimyoviy reaksiya tezligiga ta'sir etuvchi omillarga kirmaydigan variantni toping.",
+      "v": [
+        "Reaksiya mahsulotining rangi",
+        "Moddalar konsentratsiyasi",
+        "Harorat",
+        "Katalizator"
+      ],
+      "t": 0,
+      "izoh": "Tezlikka konsentratsiya, harorat, moddalar tabiati, sirt va katalizator ta'sir qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m33-kimyoviy-reaksiyalarning-tezligi#242918bb"
+    }
+  ]
+}

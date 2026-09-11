@@ -1,0 +1,486 @@
+{
+  "nom": "36-mavzu. Metall Qarshiligining Temperaturaga Bogliqligi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Metall o'tkazgichning temperaturasi ortganda uning qarshiligi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Avval kamayib, keyin ortadi"
+      ],
+      "t": 0,
+      "izoh": "Harorat oshishi bilan metallarning qarshiligi ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#44a52745"
+    },
+    {
+      "q": "Metallarda temperatura ortishi qarshilikning ortishiga nima sabab bo'ladi?",
+      "v": [
+        "Kristall panjara tugunlaridagi ionlarning tebranish amplitudasi va elektronlar bilan to'qnashuvlar sonining ortishi",
+        "Erkin elektronlar konsentratsiyasining keskin kamayishi",
+        "O'tkazgich uzunligining sezilarli qisqarishi",
+        "Elektronlar zaryadining kamayishi"
+      ],
+      "t": 0,
+      "izoh": "Temperatura ortganda ionlarning tebranish amplitudasi va to'qnashuvlar soni ortadi, bu qarshilikni oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#98a78afd"
+    },
+    {
+      "q": "Metall o'tkazgichdagi erkin elektronlar konsentratsiyasi temperaturaga qanday bog'liq?",
+      "v": [
+        "Ma'lum o'tkazgich uchun amalda doimiy bo'lib, temperaturaga bog'liq emas",
+        "Temperatura ortishi bilan keskin ortadi",
+        "Temperatura ortishi bilan kamayadi",
+        "0 °C da nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Erkin elektronlar konsentratsiyasi temperaturaga bog'liq emas, amalda doimiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#41442c6d"
+    },
+    {
+      "q": "Metall qizdirilganda zaryadlangan zarralarning tartibli harakat (dreyf) tezligi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "To'qnashuvlar ko'paygandan dreyf tezligi kamayadi, bu tok kuchining kamayishiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#904ddbaf"
+    },
+    {
+      "q": "Galvanometr va metall simli spiralli zanjirda spiral qizdirilsa, galvanometr ko'rsatkichi qanday o'zgaradi?",
+      "v": [
+        "Pasayadi",
+        "Oshadi",
+        "O'zgarmaydi",
+        "Nolga sakraydi"
+      ],
+      "t": 0,
+      "izoh": "Spiral qizdirilganda qarshiligi ortadi, tok kamayadi — galvanometr ko'rsatkichi pasayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#b75066c5"
+    },
+    {
+      "q": "Lampochka va metall spiral ketma-ket ulangan zanjirda spiral qizdirilsa, lampochka ravshanligi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Oshadi",
+        "O'zgarmaydi",
+        "Lampochka o'chadi"
+      ],
+      "t": 0,
+      "izoh": "Spiral qarshiligi ortib, tok kamaygani uchun lampochka ravshanligi kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#7f7621bc"
+    },
+    {
+      "q": "Qarshilikning temperatura koeffitsiyenti α nimani ko'rsatadi?",
+      "v": [
+        "Temperatura 1 °C ga o'zgarganda o'tkazgich qarshiligining o'zgarishi 0 °C dagi qarshiligining qancha qismini tashkil etishini",
+        "O'tkazgichning 0 °C dagi qarshiligini",
+        "Qarshilikning 100 °C dagi qiymatini",
+        "O'tkazgich qiziganda uzunligining o'zgarishini"
+      ],
+      "t": 0,
+      "izoh": "α — temperatura 1 °C ga o'zgarganda qarshilik o'zgarishining 0 °C dagi qarshilikka nisbati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#90283aa0"
+    },
+    {
+      "q": "O'tkazgich moddasining T temperaturadagi solishtirma qarshiligi qanday ifodalanadi?",
+      "v": [
+        "ρ = ρ₀·(1 + α·∆T)",
+        "ρ = ρ₀·(1 − α·∆T)",
+        "ρ = ρ₀·α·∆T",
+        "ρ = ρ₀/(1 + α·∆T)"
+      ],
+      "t": 0,
+      "izoh": "ρ = ρ₀·(1 + α·∆T), bunda ∆T = T − T₀.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#b9e6bfb2"
+    },
+    {
+      "q": "O'tkazgichning t °C dagi qarshiligini 0 °C dagi qarshiligi orqali ifodalovchi formula qaysi?",
+      "v": [
+        "R = R₀·(1 + α·∆T)",
+        "R = R₀·(1 − α·∆T)",
+        "R = R₀ + α/∆T",
+        "R = R₀·α·∆T"
+      ],
+      "t": 0,
+      "izoh": "R = R₀·(1 + α·∆T).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#25aa8775"
+    },
+    {
+      "q": "Qarshilikning temperatura koeffitsiyenti α ning o'lchov birligi nima?",
+      "v": [
+        "°C⁻¹ (1/°C)",
+        "Ω/°C",
+        "Ω·m",
+        "1/K²"
+      ],
+      "t": 0,
+      "izoh": "α birligi — °C⁻¹ (jadvalda α, °C⁻¹ ko'rinishida berilgan).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#db13c5e8"
+    },
+    {
+      "q": "Metall o'tkazgichlar uchun qarshilikning temperatura koeffitsiyenti α qanday qiymatga ega?",
+      "v": [
+        "Musbat",
+        "Manfiy",
+        "Har doim nol",
+        "Har doim birdan katta"
+      ],
+      "t": 0,
+      "izoh": "Barcha metallarda qarshilik temperatura bilan ortadi, ya'ni α musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#201627d2"
+    },
+    {
+      "q": "R = R₀·(1 + α·∆T) formulasi metall o'tkazgichlar uchun qaysi temperaturalarda qo'llanadi?",
+      "v": [
+        "T > 140 K temperaturalarda",
+        "Faqat 0 °C da",
+        "Faqat 100 °C dan yuqorida",
+        "Har qanday temperaturada"
+      ],
+      "t": 0,
+      "izoh": "Bu formulalar metallar uchun T > 140 K da qo'llanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#6d1b800c"
+    },
+    {
+      "q": "Ko'pgina metallar (qotishmalar emas) uchun 0 dan 100 °C gacha qarshilikning termik koeffitsiyentining o'rtacha qiymati qancha?",
+      "v": [
+        "α ≈ 1/273 °C⁻¹",
+        "α ≈ 1 °C⁻¹",
+        "α ≈ 1/100 °C⁻¹",
+        "α ≈ 273 °C⁻¹"
+      ],
+      "t": 0,
+      "izoh": "Ko'pgina metallar uchun α ≈ 1/273 °C⁻¹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#042307da"
+    },
+    {
+      "q": "Jadvalga ko'ra mis uchun qarshilikning temperatura koeffitsiyenti qancha?",
+      "v": [
+        "0,0039 °C⁻¹",
+        "0,0042 °C⁻¹",
+        "0,0065 °C⁻¹",
+        "0,0002 °C⁻¹"
+      ],
+      "t": 0,
+      "izoh": "Mis uchun α = 0,0039 °C⁻¹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#7cebfb75"
+    },
+    {
+      "q": "Jadvalga ko'ra volfram uchun qarshilikning temperatura koeffitsiyenti qancha?",
+      "v": [
+        "0,0045 °C⁻¹",
+        "0,0039 °C⁻¹",
+        "0,0060 °C⁻¹",
+        "0,0010 °C⁻¹"
+      ],
+      "t": 0,
+      "izoh": "Volfram uchun α = 0,0045 °C⁻¹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#43b3a45a"
+    },
+    {
+      "q": "Jadvalga ko'ra nixrom qotishmasi uchun α qancha?",
+      "v": [
+        "0,0002 °C⁻¹",
+        "0,0062 °C⁻¹",
+        "0,0044 °C⁻¹",
+        "0,0050 °C⁻¹"
+      ],
+      "t": 0,
+      "izoh": "Nixrom uchun α = 0,0002 °C⁻¹ — juda kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#35a829ca"
+    },
+    {
+      "q": "Jadvaldagi moddalar ichida eng kichik α qaysi qotishmaga tegishli?",
+      "v": [
+        "Xromal (0,000065 °C⁻¹)",
+        "Nixrom (0,0002 °C⁻¹)",
+        "Simob (0,0010 °C⁻¹)",
+        "Niobiy (0,003 °C⁻¹)"
+      ],
+      "t": 0,
+      "izoh": "Xromal uchun α = 0,000065 °C⁻¹ — jadvaldagi eng kichik qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#5f986a57"
+    },
+    {
+      "q": "Qotishmalarning (masalan, nixrom, xromal) α koeffitsiyenti sof metallarnikiga nisbatan qanday?",
+      "v": [
+        "Ancha kichik",
+        "Ancha katta",
+        "Bir xil",
+        "Manfiy"
+      ],
+      "t": 0,
+      "izoh": "Qotishmalarda α metallarnikidan ancha kichik (masalan, nixromda 0,0002 °C⁻¹).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#182db5a1"
+    },
+    {
+      "q": "O'tkazgich qizdirilganda uning geometrik o'lchamlari qanday o'zgaradi va qarshilik asosan nima hisobiga o'zgaradi?",
+      "v": [
+        "O'lchamlar kam o'zgaradi, qarshilik asosan solishtirma qarshilik o'zgarishi tufayli o'zgaradi",
+        "O'lchamlar keskin o'zgaradi, qarshilik faqat uzunlik hisobiga o'zgaradi",
+        "O'lchamlar o'zgarmaydi, qarshilik faqat kesim hisobiga o'zgaradi",
+        "O'lchamlar kamayadi, qarshilik pasayadi"
+      ],
+      "t": 0,
+      "izoh": "Qizdirilganda geometrik o'lchamlar kam o'zgaradi; qarshilik asosan ρ ning o'zgarishi tufayli o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#82d493c2"
+    },
+    {
+      "q": "Qarshilik termometrlarining ish prinsipi nimaga asoslangan?",
+      "v": [
+        "Metallar elektr qarshiligining temperaturaga bog'liqligiga",
+        "Suyuqlik hajmining temperaturaga bog'liqligiga",
+        "Gaz bosimining temperaturaga bog'liqligiga",
+        "Metall rangining temperaturaga bog'liqligiga"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik termometrlari metall qarshiligining temperaturaga bog'liqligiga asoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#914a0b58"
+    },
+    {
+      "q": "Qarshilik termometrlari temperaturani qanday aniqlikda o'lchashga imkon beradi?",
+      "v": [
+        "0,003 K gacha",
+        "0,1 K gacha",
+        "1 K gacha",
+        "10 K gacha"
+      ],
+      "t": 0,
+      "izoh": "Bunday termometrlar temperaturani 0,003 K gacha aniqlikda o'lchaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#2beb04f4"
+    },
+    {
+      "q": "O'ta o'tkazuvchanlik hodisasini birinchi marta kim va qachon kashf etgan?",
+      "v": [
+        "Gollandiyalik fizik G. Kamerling Onnes, 1911-yilda",
+        "A. Eynshteyn, 1905-yilda",
+        "M. Faradey, 1831-yilda",
+        "G. Om, 1826-yilda"
+      ],
+      "t": 0,
+      "izoh": "O'ta o'tkazuvchanlikni 1911-yil 28-aprelda G. Kamerling Onnes kashf etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#6a45c88c"
+    },
+    {
+      "q": "Kamerling Onnes o'ta o'tkazuvchanlikni qaysi moddada kuzatgan?",
+      "v": [
+        "Simobda",
+        "Misda",
+        "Qalayda",
+        "Volframda"
+      ],
+      "t": 0,
+      "izoh": "U suyuq geliyda sovitilgan simobning qarshiligi 4,1 K da nolga tushganini aniqlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#e7fefcca"
+    },
+    {
+      "q": "Simob qarshiligi sakrab nolga tushadigan kritik temperatura qancha?",
+      "v": [
+        "4,1 K",
+        "0,14 K",
+        "20 K",
+        "100 K"
+      ],
+      "t": 0,
+      "izoh": "Simobda temperatura 4,1 K ga yetganda qarshilik birdan nolga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#f2c4b391"
+    },
+    {
+      "q": "O'ta o'tkazuvchanlik holatida o'tkazgichning elektr qarshiligi qanday bo'ladi?",
+      "v": [
+        "Nolga teng",
+        "Juda katta",
+        "Boshlang'ich qiymatining yarmiga teng",
+        "Cheksiz katta"
+      ],
+      "t": 0,
+      "izoh": "O'ta o'tkazuvchan holatda qarshilik nolga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#f788186c"
+    },
+    {
+      "q": "O'ta o'tkazuvchan halqa shaklidagi o'tkazgichda tok hosil qilib, keyin manba uzib qo'yilsa, tok kuchi qanday bo'ladi?",
+      "v": [
+        "Istalgancha uzoq vaqt o'zgarmay qolaveradi",
+        "Darhol nolga tushadi",
+        "Bir necha soniyada so'nadi",
+        "Sekin-asta ortib boradi"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik nol bo'lgani uchun tok uzoq vaqt o'zgarmay qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#66f26b68"
+    },
+    {
+      "q": "Kamerling Onnes 7 K temperaturadagi qo'rg'oshinda EYK ta'siri to'xtagandan keyin tok qancha vaqt o'tib turganini kuzatgan?",
+      "v": [
+        "4 sutka davomida",
+        "4 soniya davomida",
+        "4 soat davomida",
+        "4 yil davomida"
+      ],
+      "t": 0,
+      "izoh": "Qo'rg'oshinda tok manba uzilgach 4 sutka davomida o'tib turgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#724135ff"
+    },
+    {
+      "q": "1957-yilda Kollinz tajribasida tok manbai bo'lmagan berk zanjirda tok qancha vaqt to'xtovsiz oqqan?",
+      "v": [
+        "2,5 yil mobaynida",
+        "2,5 sutka mobaynida",
+        "2,5 oy mobaynida",
+        "2,5 soat mobaynida"
+      ],
+      "t": 0,
+      "izoh": "Kollinz tajribasida tok 2,5 yil mobaynida to'xtovsiz oqib turgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#1244c280"
+    },
+    {
+      "q": "1986-yilda qanday o'ta o'tkazuvchanlik kuzatilgan?",
+      "v": [
+        "Metallokeramika materiallarida yuqori temperaturali (100 K) o'ta o'tkazuvchanlik",
+        "Simobda 4,1 K da o'ta o'tkazuvchanlik",
+        "Qo'rg'oshinda 7 K da o'ta o'tkazuvchanlik",
+        "Misda xona temperaturasida o'ta o'tkazuvchanlik"
+      ],
+      "t": 0,
+      "izoh": "1986-yilda metallokeramikada 100 K li yuqori temperaturali o'ta o'tkazuvchanlik kuzatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#870bc285"
+    },
+    {
+      "q": "Ayrim sof metallarda o'ta o'tkazuvchanlik qanday temperaturalarda kuzatiladi?",
+      "v": [
+        "Absolyut nolga yaqin temperaturalarda (Tₖ = 0,14 – 20 K)",
+        "Xona temperaturasida",
+        "100 °C dan yuqorida",
+        "Faqat 273 K da"
+      ],
+      "t": 0,
+      "izoh": "O'ta o'tkazuvchanlik absolyut nolga yaqin (0,14–20 K) temperaturalarda kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#e60935f2"
+    },
+    {
+      "q": "O'ta o'tkazuvchanlik hodisasidan amalda foydalanishdagi asosiy qiyinchilik nimada?",
+      "v": [
+        "Kritik temperaturaning pastligida",
+        "O'ta o'tkazgich materiallarning yo'qligida",
+        "Kuchli magnit maydon talab qilinishida",
+        "Tok kuchining tez so'nishida"
+      ],
+      "t": 0,
+      "izoh": "Kritik temperaturaning pastligi amaliy qo'llashda qiyinchilik tug'diradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#36feefa9"
+    },
+    {
+      "q": "Temperatura ortganda metall qarshiligining ortishi tok kuchiga qanday ta'sir qiladi (kuchlanish o'zgarmas bo'lganda)?",
+      "v": [
+        "Tok kuchi kamayadi",
+        "Tok kuchi ortadi",
+        "Tok kuchi o'zgarmaydi",
+        "Tok yo'nalishi o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik ortganda Om qonuniga ko'ra tok kuchi kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m36-metall-qarshiligining-temperaturaga-bogliqligi#31b9f730"
+    }
+  ]
+}

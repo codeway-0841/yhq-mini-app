@@ -1,0 +1,1293 @@
+{
+  "nom": "Countable & uncountable",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "I have ___ apple.",
+      "v": [
+        "a",
+        "some",
+        "an",
+        "any"
+      ],
+      "t": 2,
+      "izoh": "Unli tovushdan oldin 'an apple'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#fa5324ca"
+    },
+    {
+      "q": "There is ___ water in the bottle.",
+      "v": [
+        "any",
+        "many",
+        "some",
+        "a"
+      ],
+      "t": 2,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#46fce32b"
+    },
+    {
+      "q": "I don't have ___ water.",
+      "v": [
+        "many",
+        "a",
+        "much",
+        "an"
+      ],
+      "t": 2,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'water'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#9388414d"
+    },
+    {
+      "q": "We use 'many' with:",
+      "v": [
+        "water",
+        "apples",
+        "bread",
+        "tea"
+      ],
+      "t": 1,
+      "izoh": "'many' + sanaladigan koplik ot.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#89f4011e"
+    },
+    {
+      "q": "Which word is uncountable?",
+      "v": [
+        "apple",
+        "water",
+        "dog",
+        "table"
+      ],
+      "t": 1,
+      "izoh": "'water' sanalmaydi, koplik shakli yoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#c7aba0de"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "I don't drink many water.",
+        "I don't drink much water.",
+        "I don't drink much apples.",
+        "I don't drink a water."
+      ],
+      "t": 1,
+      "izoh": "'water' sanalmaydi -> much.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#21ac92a9"
+    },
+    {
+      "q": "Find the mistake: 'I have many water.'",
+      "v": [
+        "many",
+        "I",
+        "have",
+        "water"
+      ],
+      "t": 0,
+      "izoh": "'water' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#6352329f"
+    },
+    {
+      "q": "How ___ books do you want?",
+      "v": [
+        "much",
+        "some",
+        "any",
+        "many"
+      ],
+      "t": 3,
+      "izoh": "'books' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#3f22ab52"
+    },
+    {
+      "q": "I have ___ orange.",
+      "v": [
+        "a",
+        "some",
+        "any",
+        "an"
+      ],
+      "t": 3,
+      "izoh": "Unli tovushdan oldin 'an orange'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#9e84b07c"
+    },
+    {
+      "q": "There is ___ money in the bottle.",
+      "v": [
+        "any",
+        "many",
+        "a",
+        "some"
+      ],
+      "t": 3,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#2e57d2dc"
+    },
+    {
+      "q": "I don't have ___ money.",
+      "v": [
+        "many",
+        "a",
+        "an",
+        "much"
+      ],
+      "t": 3,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'money'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#1cc9dbe4"
+    },
+    {
+      "q": "Find the mistake: 'I have many money.'",
+      "v": [
+        "I",
+        "many",
+        "have",
+        "money"
+      ],
+      "t": 1,
+      "izoh": "'money' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#fca78db8"
+    },
+    {
+      "q": "How ___ eggs do you want?",
+      "v": [
+        "many",
+        "much",
+        "some",
+        "any"
+      ],
+      "t": 0,
+      "izoh": "'eggs' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#cb90e996"
+    },
+    {
+      "q": "I have ___ egg.",
+      "v": [
+        "an",
+        "a",
+        "some",
+        "any"
+      ],
+      "t": 0,
+      "izoh": "Unli tovushdan oldin 'an egg'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#5e39e53c"
+    },
+    {
+      "q": "There is ___ time in the bottle.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#50fb88cf"
+    },
+    {
+      "q": "I don't have ___ time.",
+      "v": [
+        "much",
+        "many",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'time'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#55d58031"
+    },
+    {
+      "q": "Find the mistake: 'I have many time.'",
+      "v": [
+        "I",
+        "have",
+        "many",
+        "time"
+      ],
+      "t": 2,
+      "izoh": "'time' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#d2a8baab"
+    },
+    {
+      "q": "How ___ chairs do you want?",
+      "v": [
+        "much",
+        "many",
+        "some",
+        "any"
+      ],
+      "t": 1,
+      "izoh": "'chairs' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#5abdab83"
+    },
+    {
+      "q": "I have ___ umbrella.",
+      "v": [
+        "a",
+        "an",
+        "some",
+        "any"
+      ],
+      "t": 1,
+      "izoh": "Unli tovushdan oldin 'an umbrella'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#868e3cc8"
+    },
+    {
+      "q": "There is ___ bread in the bottle.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a"
+      ],
+      "t": 1,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#7d44840e"
+    },
+    {
+      "q": "I don't have ___ bread.",
+      "v": [
+        "many",
+        "much",
+        "a",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'bread'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#043def11"
+    },
+    {
+      "q": "Find the mistake: 'I have many bread.'",
+      "v": [
+        "I",
+        "have",
+        "bread",
+        "many"
+      ],
+      "t": 3,
+      "izoh": "'bread' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#d851cff5"
+    },
+    {
+      "q": "How ___ cars do you want?",
+      "v": [
+        "much",
+        "some",
+        "many",
+        "any"
+      ],
+      "t": 2,
+      "izoh": "'cars' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#b638666a"
+    },
+    {
+      "q": "I have ___ hour.",
+      "v": [
+        "a",
+        "some",
+        "an",
+        "any"
+      ],
+      "t": 2,
+      "izoh": "Unli tovushdan oldin 'an hour'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#3e920bdf"
+    },
+    {
+      "q": "There is ___ milk in the bottle.",
+      "v": [
+        "any",
+        "many",
+        "some",
+        "a"
+      ],
+      "t": 2,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#17a4a8b5"
+    },
+    {
+      "q": "I don't have ___ milk.",
+      "v": [
+        "many",
+        "a",
+        "much",
+        "an"
+      ],
+      "t": 2,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'milk'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#ec79b36f"
+    },
+    {
+      "q": "Find the mistake: 'I have many milk.'",
+      "v": [
+        "many",
+        "I",
+        "have",
+        "milk"
+      ],
+      "t": 0,
+      "izoh": "'milk' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#f76f46db"
+    },
+    {
+      "q": "How ___ dogs do you want?",
+      "v": [
+        "much",
+        "some",
+        "any",
+        "many"
+      ],
+      "t": 3,
+      "izoh": "'dogs' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#19010230"
+    },
+    {
+      "q": "I have ___ idea.",
+      "v": [
+        "a",
+        "some",
+        "any",
+        "an"
+      ],
+      "t": 3,
+      "izoh": "Unli tovushdan oldin 'an idea'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#9df92a9a"
+    },
+    {
+      "q": "There is ___ rice in the bottle.",
+      "v": [
+        "any",
+        "many",
+        "a",
+        "some"
+      ],
+      "t": 3,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#429a013e"
+    },
+    {
+      "q": "I don't have ___ rice.",
+      "v": [
+        "many",
+        "a",
+        "an",
+        "much"
+      ],
+      "t": 3,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'rice'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#daa2b51c"
+    },
+    {
+      "q": "Find the mistake: 'I have many rice.'",
+      "v": [
+        "I",
+        "many",
+        "have",
+        "rice"
+      ],
+      "t": 1,
+      "izoh": "'rice' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#b5af98f9"
+    },
+    {
+      "q": "How ___ oranges do you want?",
+      "v": [
+        "many",
+        "much",
+        "some",
+        "any"
+      ],
+      "t": 0,
+      "izoh": "'oranges' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#95c347a5"
+    },
+    {
+      "q": "I have ___ elephant.",
+      "v": [
+        "an",
+        "a",
+        "some",
+        "any"
+      ],
+      "t": 0,
+      "izoh": "Unli tovushdan oldin 'an elephant'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#bb265df3"
+    },
+    {
+      "q": "There is ___ sugar in the bottle.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#fa07fbaa"
+    },
+    {
+      "q": "I don't have ___ sugar.",
+      "v": [
+        "much",
+        "many",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'sugar'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#ccf2c674"
+    },
+    {
+      "q": "Find the mistake: 'I have many sugar.'",
+      "v": [
+        "I",
+        "have",
+        "many",
+        "sugar"
+      ],
+      "t": 2,
+      "izoh": "'sugar' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#7bd99d30"
+    },
+    {
+      "q": "How ___ boys do you want?",
+      "v": [
+        "much",
+        "many",
+        "some",
+        "any"
+      ],
+      "t": 1,
+      "izoh": "'boys' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#da5257d0"
+    },
+    {
+      "q": "I have ___ onion.",
+      "v": [
+        "a",
+        "an",
+        "some",
+        "any"
+      ],
+      "t": 1,
+      "izoh": "Unli tovushdan oldin 'an onion'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#66f14752"
+    },
+    {
+      "q": "There is ___ tea in the bottle.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a"
+      ],
+      "t": 1,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#fbd49fd9"
+    },
+    {
+      "q": "I don't have ___ tea.",
+      "v": [
+        "many",
+        "much",
+        "a",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'tea'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#3d02bba3"
+    },
+    {
+      "q": "Find the mistake: 'I have many tea.'",
+      "v": [
+        "I",
+        "have",
+        "tea",
+        "many"
+      ],
+      "t": 3,
+      "izoh": "'tea' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#7480bc6f"
+    },
+    {
+      "q": "How ___ girls do you want?",
+      "v": [
+        "much",
+        "some",
+        "many",
+        "any"
+      ],
+      "t": 2,
+      "izoh": "'girls' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#4332ec72"
+    },
+    {
+      "q": "I have ___ island.",
+      "v": [
+        "a",
+        "some",
+        "an",
+        "any"
+      ],
+      "t": 2,
+      "izoh": "Unli tovushdan oldin 'an island'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#e86ecf25"
+    },
+    {
+      "q": "There is ___ coffee in the bottle.",
+      "v": [
+        "any",
+        "many",
+        "some",
+        "a"
+      ],
+      "t": 2,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#eacb7240"
+    },
+    {
+      "q": "I don't have ___ coffee.",
+      "v": [
+        "many",
+        "a",
+        "much",
+        "an"
+      ],
+      "t": 2,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'coffee'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#c2a7e021"
+    },
+    {
+      "q": "Find the mistake: 'I have many coffee.'",
+      "v": [
+        "many",
+        "I",
+        "have",
+        "coffee"
+      ],
+      "t": 0,
+      "izoh": "'coffee' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#9d839af6"
+    },
+    {
+      "q": "How ___ tables do you want?",
+      "v": [
+        "much",
+        "some",
+        "any",
+        "many"
+      ],
+      "t": 3,
+      "izoh": "'tables' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#bcb5bf41"
+    },
+    {
+      "q": "I have ___ animal.",
+      "v": [
+        "a",
+        "some",
+        "any",
+        "an"
+      ],
+      "t": 3,
+      "izoh": "Unli tovushdan oldin 'an animal'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#8a1f6680"
+    },
+    {
+      "q": "There is ___ cheese in the bottle.",
+      "v": [
+        "any",
+        "many",
+        "a",
+        "some"
+      ],
+      "t": 3,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#ce879c9b"
+    },
+    {
+      "q": "I don't have ___ cheese.",
+      "v": [
+        "many",
+        "a",
+        "an",
+        "much"
+      ],
+      "t": 3,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'cheese'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#3af4a329"
+    },
+    {
+      "q": "Find the mistake: 'I have many cheese.'",
+      "v": [
+        "I",
+        "many",
+        "have",
+        "cheese"
+      ],
+      "t": 1,
+      "izoh": "'cheese' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#6e24c475"
+    },
+    {
+      "q": "How ___ pens do you want?",
+      "v": [
+        "many",
+        "much",
+        "some",
+        "any"
+      ],
+      "t": 0,
+      "izoh": "'pens' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#d62b0852"
+    },
+    {
+      "q": "I have ___ uncle.",
+      "v": [
+        "an",
+        "a",
+        "some",
+        "any"
+      ],
+      "t": 0,
+      "izoh": "Unli tovushdan oldin 'an uncle'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#2f591f16"
+    },
+    {
+      "q": "There is ___ information in the bottle.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#673f60ee"
+    },
+    {
+      "q": "I don't have ___ information.",
+      "v": [
+        "much",
+        "many",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'information'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#e108b844"
+    },
+    {
+      "q": "Find the mistake: 'I have many information.'",
+      "v": [
+        "I",
+        "have",
+        "many",
+        "information"
+      ],
+      "t": 2,
+      "izoh": "'information' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#7609e364"
+    },
+    {
+      "q": "How ___ bananas do you want?",
+      "v": [
+        "much",
+        "many",
+        "some",
+        "any"
+      ],
+      "t": 1,
+      "izoh": "'bananas' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#ab10ef94"
+    },
+    {
+      "q": "I have ___ engineer.",
+      "v": [
+        "a",
+        "an",
+        "some",
+        "any"
+      ],
+      "t": 1,
+      "izoh": "Unli tovushdan oldin 'an engineer'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#dee6f870"
+    },
+    {
+      "q": "There is ___ music in the bottle.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a"
+      ],
+      "t": 1,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#f5056a8b"
+    },
+    {
+      "q": "I don't have ___ music.",
+      "v": [
+        "many",
+        "much",
+        "a",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'music'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#b11a15fb"
+    },
+    {
+      "q": "Find the mistake: 'I have many music.'",
+      "v": [
+        "I",
+        "have",
+        "music",
+        "many"
+      ],
+      "t": 3,
+      "izoh": "'music' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#8296bee7"
+    },
+    {
+      "q": "How ___ students do you want?",
+      "v": [
+        "much",
+        "some",
+        "many",
+        "any"
+      ],
+      "t": 2,
+      "izoh": "'students' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#7ffb5a87"
+    },
+    {
+      "q": "I have ___ artist.",
+      "v": [
+        "a",
+        "some",
+        "an",
+        "any"
+      ],
+      "t": 2,
+      "izoh": "Unli tovushdan oldin 'an artist'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#59493a49"
+    },
+    {
+      "q": "There is ___ homework in the bottle.",
+      "v": [
+        "any",
+        "many",
+        "some",
+        "a"
+      ],
+      "t": 2,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#ef9d12dc"
+    },
+    {
+      "q": "I don't have ___ homework.",
+      "v": [
+        "many",
+        "a",
+        "much",
+        "an"
+      ],
+      "t": 2,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'homework'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#f861c6bd"
+    },
+    {
+      "q": "Find the mistake: 'I have many homework.'",
+      "v": [
+        "many",
+        "I",
+        "have",
+        "homework"
+      ],
+      "t": 0,
+      "izoh": "'homework' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#799aadb9"
+    },
+    {
+      "q": "How ___ friends do you want?",
+      "v": [
+        "much",
+        "some",
+        "any",
+        "many"
+      ],
+      "t": 3,
+      "izoh": "'friends' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#03af2d13"
+    },
+    {
+      "q": "I have ___ actor.",
+      "v": [
+        "a",
+        "some",
+        "any",
+        "an"
+      ],
+      "t": 3,
+      "izoh": "Unli tovushdan oldin 'an actor'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#be6b99d4"
+    },
+    {
+      "q": "There is ___ salt in the bottle.",
+      "v": [
+        "any",
+        "many",
+        "a",
+        "some"
+      ],
+      "t": 3,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#97da531f"
+    },
+    {
+      "q": "I don't have ___ salt.",
+      "v": [
+        "many",
+        "a",
+        "an",
+        "much"
+      ],
+      "t": 3,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'salt'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#0437e54d"
+    },
+    {
+      "q": "Find the mistake: 'I have many salt.'",
+      "v": [
+        "I",
+        "many",
+        "have",
+        "salt"
+      ],
+      "t": 1,
+      "izoh": "'salt' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#994a621f"
+    },
+    {
+      "q": "How ___ cups do you want?",
+      "v": [
+        "many",
+        "much",
+        "some",
+        "any"
+      ],
+      "t": 0,
+      "izoh": "'cups' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#86e33f5b"
+    },
+    {
+      "q": "I have ___ office.",
+      "v": [
+        "an",
+        "a",
+        "some",
+        "any"
+      ],
+      "t": 0,
+      "izoh": "Unli tovushdan oldin 'an office'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#d9b416ed"
+    },
+    {
+      "q": "There is ___ oil in the bottle.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#421b1575"
+    },
+    {
+      "q": "I don't have ___ oil.",
+      "v": [
+        "much",
+        "many",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'oil'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#c7cc84cc"
+    },
+    {
+      "q": "Find the mistake: 'I have many oil.'",
+      "v": [
+        "I",
+        "have",
+        "many",
+        "oil"
+      ],
+      "t": 2,
+      "izoh": "'oil' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#db2d1461"
+    },
+    {
+      "q": "How ___ rooms do you want?",
+      "v": [
+        "much",
+        "many",
+        "some",
+        "any"
+      ],
+      "t": 1,
+      "izoh": "'rooms' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#787e6ee8"
+    },
+    {
+      "q": "I have ___ exercise.",
+      "v": [
+        "a",
+        "an",
+        "some",
+        "any"
+      ],
+      "t": 1,
+      "izoh": "Unli tovushdan oldin 'an exercise'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#18b33cee"
+    },
+    {
+      "q": "There is ___ juice in the bottle.",
+      "v": [
+        "any",
+        "some",
+        "many",
+        "a"
+      ],
+      "t": 1,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#7b2a5fe1"
+    },
+    {
+      "q": "I don't have ___ juice.",
+      "v": [
+        "many",
+        "much",
+        "a",
+        "an"
+      ],
+      "t": 1,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'juice'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#d22f3d97"
+    },
+    {
+      "q": "Find the mistake: 'I have many juice.'",
+      "v": [
+        "I",
+        "have",
+        "juice",
+        "many"
+      ],
+      "t": 3,
+      "izoh": "'juice' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#130885d9"
+    },
+    {
+      "q": "How ___ trees do you want?",
+      "v": [
+        "much",
+        "some",
+        "many",
+        "any"
+      ],
+      "t": 2,
+      "izoh": "'trees' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#2a63644c"
+    },
+    {
+      "q": "I have ___ email.",
+      "v": [
+        "a",
+        "some",
+        "an",
+        "any"
+      ],
+      "t": 2,
+      "izoh": "Unli tovushdan oldin 'an email'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#ac38014a"
+    },
+    {
+      "q": "There is ___ snow in the bottle.",
+      "v": [
+        "any",
+        "many",
+        "some",
+        "a"
+      ],
+      "t": 2,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#382c7016"
+    },
+    {
+      "q": "I don't have ___ snow.",
+      "v": [
+        "many",
+        "a",
+        "much",
+        "an"
+      ],
+      "t": 2,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'snow'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#89d0b348"
+    },
+    {
+      "q": "Find the mistake: 'I have many snow.'",
+      "v": [
+        "many",
+        "I",
+        "have",
+        "snow"
+      ],
+      "t": 0,
+      "izoh": "'snow' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#91306ce3"
+    },
+    {
+      "q": "How ___ tickets do you want?",
+      "v": [
+        "much",
+        "some",
+        "any",
+        "many"
+      ],
+      "t": 3,
+      "izoh": "'tickets' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#0f30067e"
+    },
+    {
+      "q": "I have ___ apricot.",
+      "v": [
+        "a",
+        "some",
+        "any",
+        "an"
+      ],
+      "t": 3,
+      "izoh": "Unli tovushdan oldin 'an apricot'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#df222725"
+    },
+    {
+      "q": "There is ___ food in the bottle.",
+      "v": [
+        "any",
+        "many",
+        "a",
+        "some"
+      ],
+      "t": 3,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#d3bcca0a"
+    },
+    {
+      "q": "I don't have ___ food.",
+      "v": [
+        "many",
+        "a",
+        "an",
+        "much"
+      ],
+      "t": 3,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'food'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#1d7f2dcf"
+    },
+    {
+      "q": "Find the mistake: 'I have many food.'",
+      "v": [
+        "I",
+        "many",
+        "have",
+        "food"
+      ],
+      "t": 1,
+      "izoh": "'food' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#13eeb332"
+    },
+    {
+      "q": "How ___ windows do you want?",
+      "v": [
+        "many",
+        "much",
+        "some",
+        "any"
+      ],
+      "t": 0,
+      "izoh": "'windows' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#3e86c914"
+    },
+    {
+      "q": "I have ___ apron.",
+      "v": [
+        "an",
+        "a",
+        "some",
+        "any"
+      ],
+      "t": 0,
+      "izoh": "Unli tovushdan oldin 'an apron'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#460725de"
+    },
+    {
+      "q": "There is ___ meat in the bottle.",
+      "v": [
+        "some",
+        "any",
+        "many",
+        "a"
+      ],
+      "t": 0,
+      "izoh": "Tasdiq gapda 'some'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#f8c40371"
+    },
+    {
+      "q": "I don't have ___ meat.",
+      "v": [
+        "much",
+        "many",
+        "a",
+        "an"
+      ],
+      "t": 0,
+      "izoh": "Inkorda sanalmaydigan ot: much + 'meat'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#3884c5ba"
+    },
+    {
+      "q": "Find the mistake: 'I have many meat.'",
+      "v": [
+        "I",
+        "have",
+        "many",
+        "meat"
+      ],
+      "t": 2,
+      "izoh": "'meat' sanalmaydi -> 'much'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#8e83400c"
+    },
+    {
+      "q": "How ___ coins do you want?",
+      "v": [
+        "much",
+        "many",
+        "some",
+        "any"
+      ],
+      "t": 1,
+      "izoh": "'coins' sanaladi (koplik) -> many.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#53063169"
+    },
+    {
+      "q": "I have ___ eagle.",
+      "v": [
+        "a",
+        "an",
+        "some",
+        "any"
+      ],
+      "t": 1,
+      "izoh": "Unli tovushdan oldin 'an eagle'.",
+      "qiy": "orta",
+      "id": "ing_a2_m10#4eb0b7d4"
+    }
+  ]
+}

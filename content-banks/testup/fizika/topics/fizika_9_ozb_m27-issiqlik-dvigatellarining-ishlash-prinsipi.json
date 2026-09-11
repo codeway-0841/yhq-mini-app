@@ -1,0 +1,486 @@
+{
+  "nom": "27-mavzu. Issiqlik Dvigatellarining Ishlash Prinsipi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Har qanday issiqlik dvigateli nimadan tashkil topgan?",
+      "v": [
+        "Q₁ issiqlik miqdorini beradigan T₁ temperaturali isitgich, Q₂ issiqlik miqdorini oladigan T₂ temperaturali sovitgich va mexanik ish bajaradigan ishchi modda (gaz)dan",
+        "Faqat isitgich va porshendan",
+        "Faqat sovitgichdan",
+        "Faqat yoqilg'i bakidan"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik dvigateli isitgich, sovitgich va ishchi moddadan tashkil topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#249cfb4c"
+    },
+    {
+      "q": "Issiqlik dvigatelida ishchi jism (ish bajaradigan jism) nima?",
+      "v": [
+        "Gaz",
+        "Suyuqlik",
+        "Metall porshen",
+        "Qattiq jism"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik dvigatellarida ishchi jism gaz bo'lib, u kengayganda ish bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#3572f8a7"
+    },
+    {
+      "q": "Issiqlik dvigatelining ishlash prinsipi qanday?",
+      "v": [
+        "Yoqilg'ining ichki energiyasi mexanik energiyaga aylanadi",
+        "Mexanik energiya issiqlikka aylanadi",
+        "Elektr energiyasi issiqlikka aylanadi",
+        "Issiqlik yo'qoladi"
+      ],
+      "t": 0,
+      "izoh": "Har qanday issiqlik dvigatelida yoqilg'ining ichki energiyasi mexanik energiyaga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#725757b5"
+    },
+    {
+      "q": "Issiqlik dvigatellarining ishlashi uchun qanday shart zarur?",
+      "v": [
+        "Turli temperaturali isitgich va sovitgichning bo'lishi shart",
+        "Faqat isitgich bo'lishi kifoya",
+        "Faqat sovitgich bo'lishi kifoya",
+        "Hech qanday shart kerak emas"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik dvigatelining ishlashi uchun turli temperaturali isitgich va sovitgich bo'lishi shart.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#069812e7"
+    },
+    {
+      "q": "Istalgan issiqlik dvigatelining ishlashi nimadan iborat?",
+      "v": [
+        "Ishchi jism (gaz) holati o'zgarishining takrorlanuvchi sikllaridan",
+        "Bir martalik kengayishdan",
+        "Doimiy bir xil harakatdan",
+        "Faqat yoqilg'i yonishidan"
+      ],
+      "t": 0,
+      "izoh": "Dvigatel ishi ishchi jism holati o'zgarishining takrorlanuvchi sikllaridan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#969caa95"
+    },
+    {
+      "q": "Issiqlik dvigatelining bajargan ishi qanday aniqlanadi?",
+      "v": [
+        "A = Q₁ − Q₂",
+        "A = Q₁ + Q₂",
+        "A = Q₂ − Q₁",
+        "A = Q₁·Q₂"
+      ],
+      "t": 0,
+      "izoh": "A = Q₁ − Q₂; Q₁ — isitgichdan olingan, Q₂ — sovitgichga berilgan issiqlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#6be77a2b"
+    },
+    {
+      "q": "Karno sikli nimalardan iborat?",
+      "v": [
+        "Ikkita izoterma va ikkita adiabatadan",
+        "To'rtta izotermadan",
+        "To'rtta adiabatadan",
+        "Ikkita izobara va ikkita izoxoradan"
+      ],
+      "t": 0,
+      "izoh": "Ideal issiqlik dvigatelining ishlash sikli ikkita izoterma va ikkita adiabatadan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#99836dca"
+    },
+    {
+      "q": "To'rt siklli ideal issiqlik dvigatelining ishlash prinsipini birinchi bo'lib kim tushuntirib bergan?",
+      "v": [
+        "Fransuz injeneri Sadi Karno",
+        "Rudolf Dizel",
+        "R. Klauzius",
+        "J. Joul"
+      ],
+      "t": 0,
+      "izoh": "Birinchi bo'lib fransuz injeneri Sadi Karno tushuntirib bergan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#5ebf4b5c"
+    },
+    {
+      "q": "Karno siklida gaz 1-holatdan 2-holatga qanday o'tadi?",
+      "v": [
+        "T₁ temperaturada izotermik kengayib, isitgichdan Q₁ issiqlik olib, tashqi kuchga qarshi A₁ ish bajaradi",
+        "Adiabatik siqiladi",
+        "Izotermik siqiladi",
+        "Sovitgichga issiqlik beradi"
+      ],
+      "t": 0,
+      "izoh": "1→2: T₁ da izotermik kengayish, Q₁ olinadi, A₁ > 0 ish bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#e1ec1973"
+    },
+    {
+      "q": "Karno siklida gaz 2-holatdan 3-holatga qanday o'tadi?",
+      "v": [
+        "Isitgichdan ajralib, adiabatik kengayadi; ichki energiyasi hisobiga A₂ ish bajaradi va temperaturasi T₂ gacha pasayadi",
+        "Izotermik siqiladi",
+        "Isitgichdan issiqlik oladi",
+        "Temperaturasi T₁ gacha ko'tariladi"
+      ],
+      "t": 0,
+      "izoh": "2→3: adiabatik kengayish, ichki energiya hisobiga ish, temperatura T₂ gacha pasayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#2fcf4613"
+    },
+    {
+      "q": "Karno siklida gaz 3-holatdan 4-holatga qanday o'tadi?",
+      "v": [
+        "T₂ temperaturali sovitgich bilan kontaktga kelib izotermik siqiladi; tashqi kuchlar A₃ ish bajaradi va ishchi modda sovitgichga Q₂ issiqlik beradi",
+        "Adiabatik kengayadi",
+        "Isitgichdan Q₁ oladi",
+        "Temperaturasi ko'tariladi"
+      ],
+      "t": 0,
+      "izoh": "3→4: T₂ da izotermik siqilish, sovitgichga Q₂ beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#26af13ef"
+    },
+    {
+      "q": "Karno siklida gaz 4-holatdan 1-holatga qanday qaytadi?",
+      "v": [
+        "Sovitgichdan ajralib adiabatik siqiladi; tashqi kuchlar A₄ ish bajaradi va gaz temperaturasi T₂ dan T₁ gacha ko'tariladi",
+        "Izotermik kengayadi",
+        "Isitgichdan issiqlik oladi",
+        "Temperaturasi pasayadi"
+      ],
+      "t": 0,
+      "izoh": "4→1: adiabatik siqilish, temperatura T₂ dan T₁ gacha ko'tariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#70fb4add"
+    },
+    {
+      "q": "Karno sikli bo'yicha ishlaydigan issiqlik dvigatelining foydali ishi qanday aniqlanadi?",
+      "v": [
+        "A_foy = Q₁ − Q₂",
+        "A_foy = Q₁ + Q₂",
+        "A_foy = Q₂ − Q₁",
+        "A_foy = Q₁/Q₂"
+      ],
+      "t": 0,
+      "izoh": "A_foy = Q₁ − Q₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#006283cd"
+    },
+    {
+      "q": "A_foy = Q₁ − Q₂ ifodada Q₂ nimani bildiradi?",
+      "v": [
+        "Sovitgichga berilgan issiqlik miqdorini",
+        "Isitgichdan olingan issiqlik miqdorini",
+        "Bajarilgan ishni",
+        "Yoqilg'i massasini"
+      ],
+      "t": 0,
+      "izoh": "Q₂ — sovitgichga berilgan issiqlik miqdori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#9674bda9"
+    },
+    {
+      "q": "Issiqlik dvigatelining foydali ish koeffitsiyenti (FIK) deb nimaga aytiladi?",
+      "v": [
+        "Dvigatel bajargan A_foy ishning isitgichdan olingan Q₁ issiqlik miqdoriga nisbatiga",
+        "Sovitgichga berilgan issiqlikning isitgichdan olingan issiqlikka nisbatiga",
+        "Bajarilgan ishning vaqtga nisbatiga",
+        "Yoqilg'i massasining hajmga nisbatiga"
+      ],
+      "t": 0,
+      "izoh": "FIK — A_foy ishning Q₁ ga nisbati: η = A_foy/Q₁.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#703b63c1"
+    },
+    {
+      "q": "Issiqlik dvigatelining FIK formulasini yozing.",
+      "v": [
+        "η = A_foy/Q₁ = (Q₁ − Q₂)/Q₁",
+        "η = Q₂/Q₁",
+        "η = Q₁/(Q₁ − Q₂)",
+        "η = A_foy·Q₁"
+      ],
+      "t": 0,
+      "izoh": "η = A_foy/Q₁ = (Q₁ − Q₂)/Q₁.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#487d063f"
+    },
+    {
+      "q": "Nima uchun hamma hollarda issiqlik dvigatelining FIK η < 1 bo'ladi?",
+      "v": [
+        "Chunki barcha dvigatellarda ma'lum miqdor issiqlik sovitgichga beriladi",
+        "Chunki dvigatel ishlamaydi",
+        "Chunki isitgich temperaturasi past",
+        "Chunki yoqilg'i yonmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ma'lum miqdor issiqlik sovitgichga berilgani uchun η < 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#cc1748dd"
+    },
+    {
+      "q": "Hozirgi issiqlik mashinalarida dizel dvigatellarining FIK o'rtacha qancha?",
+      "v": [
+        "≈ 40%",
+        "≈ 10%",
+        "≈ 90%",
+        "≈ 5%"
+      ],
+      "t": 0,
+      "izoh": "Dizel dvigatellarida FIK o'rtacha ≈ 40%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#ba916166"
+    },
+    {
+      "q": "Karbyuratorli dvigatellarining foydali ish koeffitsiyenti qanchani tashkil qiladi?",
+      "v": [
+        "25–30%",
+        "50–60%",
+        "70–80%",
+        "5–10%"
+      ],
+      "t": 0,
+      "izoh": "Karbyuratorli dvigatellar FIK 25–30%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#51f3ff46"
+    },
+    {
+      "q": "Ideal issiqlik mashinasi uchun FIK qanday ifoda bilan aniqlanadi?",
+      "v": [
+        "η = (T₁ − T₂)/T₁ · 100%",
+        "η = T₂/T₁ · 100%",
+        "η = T₁/(T₁ − T₂) · 100%",
+        "η = (T₁ + T₂)/T₁ · 100%"
+      ],
+      "t": 0,
+      "izoh": "Ideal mashina uchun η = (T₁ − T₂)/T₁ · 100%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#f78530e1"
+    },
+    {
+      "q": "Ideal issiqlik mashinasining FIK nimaga bog'liq?",
+      "v": [
+        "Faqat isitgich va sovitgich temperaturalariga bog'liq",
+        "Yoqilg'i turiga",
+        "Porshen massasiga",
+        "Silindr hajmiga"
+      ],
+      "t": 0,
+      "izoh": "Ideal mashina FIK faqat isitgich va sovitgich temperaturalari farqiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#47162cd8"
+    },
+    {
+      "q": "Issiqlik mashinasining FIK ni oshirish uchun nima qilish kerak?",
+      "v": [
+        "Isitgichning temperaturasini ko'tarib, sovitgichning temperaturasini pasaytirish kerak",
+        "Isitgich temperaturasini pasaytirish kerak",
+        "Sovitgich temperaturasini ko'tarish kerak",
+        "Temperaturalarni tenglashtirish kerak"
+      ],
+      "t": 0,
+      "izoh": "FIK ni oshirish uchun T₁ ni ko'tarish, T₂ ni pasaytirish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#66d3e9b0"
+    },
+    {
+      "q": "Agar isitgich va sovitgich temperaturalarining farqi T₁ − T₂ = 0 bo'lsa, nima bo'ladi?",
+      "v": [
+        "Dvigatel ish bajara olmaydi",
+        "Dvigatel FIK 100% bo'ladi",
+        "Dvigatel tezroq ishlaydi",
+        "Dvigatel soviydi"
+      ],
+      "t": 0,
+      "izoh": "T₁ − T₂ = 0 bo'lsa, dvigatel ish bajara olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#66008009"
+    },
+    {
+      "q": "Ideal issiqlik mashinasi FIK ni birinchi bo'lib kim hisoblab topgan?",
+      "v": [
+        "Fransuz injeneri va olimi Sadi Karno",
+        "Rudolf Dizel",
+        "R. Mayer",
+        "G. Gelmgols"
+      ],
+      "t": 0,
+      "izoh": "Eng katta FIK ni birinchi bo'lib Sadi Karno hisoblab topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#f4d9fdb9"
+    },
+    {
+      "q": "Karno siklida adiabatik kengayish qaysi holatlar orasida sodir bo'ladi?",
+      "v": [
+        "2-holatdan 3-holatga o'tishda",
+        "1-holatdan 2-holatga o'tishda",
+        "3-holatdan 4-holatga o'tishda",
+        "4-holatdan 1-holatga o'tishda"
+      ],
+      "t": 0,
+      "izoh": "Adiabatik kengayish 2→3 o'tishda; adiabatik siqilish 4→1 o'tishda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#868abf9e"
+    },
+    {
+      "q": "Karno siklida ishchi modda sovitgichga Q₂ issiqlikni qaysi jarayonda beradi?",
+      "v": [
+        "3-holatdan 4-holatga izotermik siqilishda",
+        "1-holatdan 2-holatga izotermik kengayishda",
+        "2-holatdan 3-holatga adiabatik kengayishda",
+        "4-holatdan 1-holatga adiabatik siqilishda"
+      ],
+      "t": 0,
+      "izoh": "Q₂ 3→4 izotermik siqilishda sovitgichga beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#0585fb3d"
+    },
+    {
+      "q": "Adiabatik kengayishda gaz temperaturasi nima uchun pasayadi?",
+      "v": [
+        "Gaz o'z ichki energiyasi hisobiga ish bajaradi",
+        "Gaz isitgichdan issiqlik oladi",
+        "Gaz siqiladi",
+        "Gaz sovitgichga issiqlik beradi"
+      ],
+      "t": 0,
+      "izoh": "Adiabatik kengayishda ish ichki energiya kamayishi hisobiga bajariladi, temperatura pasayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#39c3bd58"
+    },
+    {
+      "q": "Ishchi jism isitgichdan 840 J issiqlik oldi, FIK 30% bo'lsa, gaz qancha ish bajaradi?",
+      "v": [
+        "252 J",
+        "840 J",
+        "588 J",
+        "280 J"
+      ],
+      "t": 0,
+      "izoh": "A = η·Q₁ = 0,30·840 = 252 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#8bf02259"
+    },
+    {
+      "q": "FIK formulasida T₁ va T₂ qanday shkalada olinishi kerak?",
+      "v": [
+        "Absolut (Kelvin) shkalasida",
+        "Selsiy shkalasida",
+        "Farengeyt shkalasida",
+        "Istalgan shkalada"
+      ],
+      "t": 0,
+      "izoh": "η = (T₁ − T₂)/T₁ formulasida temperaturalar absolut shkalada olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#b970c9e6"
+    },
+    {
+      "q": "37-rasmda issiqlik dvigatelining qanday elementlari ko'rsatilgan?",
+      "v": [
+        "T₁ temperaturali isitgich, T₂ temperaturali sovitgich va ishchi modda (gaz)",
+        "Faqat porshen va silindr",
+        "Faqat yoqilg'i baki",
+        "Faqat svecha"
+      ],
+      "t": 0,
+      "izoh": "37-rasmda isitgich, sovitgich va ishchi modda ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#b340c46b"
+    },
+    {
+      "q": "Dvigatelning foydali ishi A_foy, isitgichdan olingan issiqlik Q₁ va sovitgichga berilgan Q₂ orasidagi bog'liqlik qaysi energiya qonunidan kelib chiqadi?",
+      "v": [
+        "Energiyaning saqlanish qonunidan (termodinamikaning birinchi qonuni)",
+        "Termodinamikaning ikkinchi qonunidan",
+        "Nyuton qonunidan",
+        "Paskal qonunidan"
+      ],
+      "t": 0,
+      "izoh": "A = Q₁ − Q₂ energiya saqlanish qonunining ifodasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#3222bf3b"
+    },
+    {
+      "q": "«GENERAL MOTORS» kompaniyasi tomonidan ishlab chiqarilgan mahsulot sifatida darslikda nima keltirilgan?",
+      "v": [
+        "Ichki yonuv dvigatelining tashqi ko'rinishi",
+        "Reaktiv dvigatel",
+        "Bug' turbina",
+        "Elektr dvigatel"
+      ],
+      "t": 0,
+      "izoh": "Darslikda «GENERAL MOTORS» kompaniyasining ichki yonuv dvigateli tashqi ko'rinishi keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m27-issiqlik-dvigatellarining-ishlash-prinsipi#35bac79d"
+    }
+  ]
+}

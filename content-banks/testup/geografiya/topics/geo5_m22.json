@@ -1,0 +1,546 @@
+{
+  "nom": "Geografiya-5, 22-§. Havo harorati va bosimi, 75-78-bet",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Havoning harorati qanday asbob yordamida oʻlchanadi?",
+      "v": [
+        "Termometr",
+        "Barometr",
+        "Gigrometr",
+        "Anemometr"
+      ],
+      "t": 0,
+      "izoh": "Havoning harorati termometr yordamida oʻlchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m22#9eb6500a"
+    },
+    {
+      "q": "Termometr yer yuzasidan necha metr balandga oʻrnatiladi?",
+      "v": [
+        "2 metr",
+        "1 metr",
+        "5 metr",
+        "10 metr"
+      ],
+      "t": 0,
+      "izoh": "Termometr yer yuzasidan 2 m balandga, Quyosh nuri tushmaydigan soya joyga oʻrnatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#b323a1d8"
+    },
+    {
+      "q": "Meteorologik quti eshigi qaysi tomonda boʻladi?",
+      "v": [
+        "Shimol tomonda",
+        "Janub tomonda",
+        "Sharq tomonda",
+        "Gʻarb tomonda"
+      ],
+      "t": 0,
+      "izoh": "Qutining eshigi shimol tomonda boʻladi. Shunda quti eshigi ochilganda Quyosh nuri termometrga tushmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#b6e06728"
+    },
+    {
+      "q": "Koʻpchilik meteorologik stansiyalarda havo harorati necha soatda bir kuzatib turiladi?",
+      "v": [
+        "Har 3 soatda",
+        "Har soatda",
+        "Har 6 soatda",
+        "Har 12 soatda"
+      ],
+      "t": 0,
+      "izoh": "Dunyodagi koʻpchilik meteorologik stansiyalarda ob-havo holati, shu jumladan, havo harorati har 3 soatda kuzatib turiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#6e1065ca"
+    },
+    {
+      "q": "Sutkalik oʻrtacha harorat qanday aniqlanadi?",
+      "v": [
+        "Sutka davomidagi barcha natijalar qoʻshilib, necha marta kuzatilgan boʻlsa shunchaga boʻlinadi",
+        "Tush vaqtidagi harorat olinadi",
+        "Eng yuqori va eng past harorat qoʻshilib ikkiga boʻlinadi",
+        "Ertalabki harorat hisobga olinadi"
+      ],
+      "t": 0,
+      "izoh": "Oʻrtacha harorat aniqlash uchun sutka davomidagi barcha natijalar qoʻshilib, necha marta kuzatilgan boʻlsa, shunchaga boʻlinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#7b54e2fa"
+    },
+    {
+      "q": "Toshkentda 10 apreldagi misolda sutkalik oʻrtacha harorat qancha boʻlgan (haroratlar yigʻindisi 72°C, 8 marta kuzatilgan)?",
+      "v": [
+        "+9 °C",
+        "+12 °C",
+        "+14 °C",
+        "+6 °C"
+      ],
+      "t": 0,
+      "izoh": "Haroratlar yigʻindisi 72 °C : 8 = 9 °C. Sutkalik oʻrtacha harorat +9 °C ekan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo5_m22#064fb889"
+    },
+    {
+      "q": "Toshkentdagi 10 apreldagi misolda sutka davomidagi eng yuqori va eng past harorat farqi qancha boʻlgan?",
+      "v": [
+        "12 °C",
+        "9 °C",
+        "16 °C",
+        "6 °C"
+      ],
+      "t": 0,
+      "izoh": "Lekin sutka davomidagi eng yuqori harorat bilan eng past harorat farqi 12 °C ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo5_m22#e1a2b35f"
+    },
+    {
+      "q": "Oylik oʻrtacha haroratni topish uchun nima qilinadi?",
+      "v": [
+        "Oydagi kunlik oʻrtacha haroratlar qoʻshilib, oyning kunlari soniga boʻlinadi",
+        "Oyning birinchi va oxirgi kuni harorati oʻrtacha olinadi",
+        "Haftalik oʻrtacha haroratlar qoʻshilib toʻrtga boʻlinadi",
+        "Eng issiq va eng sovuq kun harorati oʻrtacha olinadi"
+      ],
+      "t": 0,
+      "izoh": "Oylik oʻrtacha haroratni topish uchun oydagi kunlik oʻrtacha haroratlar qoʻshilib, oyning kunlari soniga boʻlinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#a02ab992"
+    },
+    {
+      "q": "Yillik oʻrtacha haroratni topish uchun nima qilinadi?",
+      "v": [
+        "Hamma oylar oʻrtacha harorati qoʻshilib, 12 ga taqsimlanadi",
+        "Yozgi oylar harorati oʻrtacha olinadi",
+        "Eng issiq va eng sovuq oy harorati oʻrtacha olinadi",
+        "Yanvar va iyul oylari harorati oʻrtacha olinadi"
+      ],
+      "t": 0,
+      "izoh": "Yillik oʻrtacha haroratni topish uchun hamma oylar oʻrtacha harorati qoʻshilib, 12 ga taqsimlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#f9ac89f2"
+    },
+    {
+      "q": "Havoning harorati kunduz kuni qachon eng yuqori boʻladi?",
+      "v": [
+        "Soat 14 va 15 larda",
+        "Soat 10 va 11 larda",
+        "Soat 18 va 19 larda",
+        "Tush payti, soat 12 da"
+      ],
+      "t": 0,
+      "izoh": "Havoning harorati kunduz kuni soat 14 va 15 larda eng yuqori boʻlishi aniqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#6852d138"
+    },
+    {
+      "q": "Havoning harorati qachon eng past boʻladi?",
+      "v": [
+        "Erta bilan Quyosh chiqishi oldidan",
+        "Kechqurun Quyosh botganda",
+        "Tun yarmida",
+        "Kunduzi tush vaqtida"
+      ],
+      "t": 0,
+      "izoh": "Erta bilan Quyosh chiqishi oldidan havo harorati eng past boʻlishi aniqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#197c0976"
+    },
+    {
+      "q": "Sutkalik havo haroratining eng yuqori va eng past koʻrsatkichlari orasidagi farq nima deb ataladi?",
+      "v": [
+        "Havo haroratining sutkalik amplitudasi",
+        "Havo haroratining yillik amplitudasi",
+        "Havo bosimi",
+        "Namlanish darajasi"
+      ],
+      "t": 0,
+      "izoh": "Sutkalik havo haroratining eng yuqori va eng past koʻrsatkichlari orasidagi farq havo haroratining sutkalik amplitudasi (farqi) deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#b680eae7"
+    },
+    {
+      "q": "Yil davomidagi eng yuqori va eng past harorat orasidagi tafovut nima deb ataladi?",
+      "v": [
+        "Havo haroratining yillik amplitudasi",
+        "Havo haroratining sutkalik amplitudasi",
+        "Namlanish darajasi",
+        "Mutlaq namlik"
+      ],
+      "t": 0,
+      "izoh": "Yil davomidagi eng yuqori harorat bilan eng past harorat orasidagi tafovut esa havo haroratining yillik amplitudasi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#73142989"
+    },
+    {
+      "q": "Okean va dengizlar ustida haroratning sutkalik oʻzgarishi qancha boʻladi?",
+      "v": [
+        "1-2 °C",
+        "15-20 °C gacha",
+        "28 °C",
+        "5-10 °C"
+      ],
+      "t": 0,
+      "izoh": "Haroratning sutkalik oʻzgarishi okean va dengizlar ustida 1-2 °C boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#d4684b28"
+    },
+    {
+      "q": "Dasht va choʻllarda haroratning sutkalik oʻzgarishi qancha boʻladi?",
+      "v": [
+        "15-20 °C gacha",
+        "1-2 °C",
+        "5-10 °C",
+        "28 °C"
+      ],
+      "t": 0,
+      "izoh": "Dasht va choʻllarda haroratning sutkalik oʻzgarishi 15-20 °C gacha boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#092e5e13"
+    },
+    {
+      "q": "Yillik amplituda ekvator atroflarida qancha boʻladi?",
+      "v": [
+        "5-10 °C dan oshmaydi",
+        "15-20 °C gacha boradi",
+        "28 °C ga teng boʻladi",
+        "50 °C dan oshadi"
+      ],
+      "t": 0,
+      "izoh": "Yillik amplituda esa ekvator atroflarida 5-10 °C dan oshmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#77387a14"
+    },
+    {
+      "q": "Ekvatordan qutblarga tomon yillik amplituda qanday oʻzgaradi?",
+      "v": [
+        "Kattalashib boradi",
+        "Kichrayib boradi",
+        "Oʻzgarmaydi",
+        "Nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Ekvatordan qutblarga tomon yillik amplituda kattalashib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#9050aaf3"
+    },
+    {
+      "q": "Toshkentda yillik amplituda qancha (iyul +27°C, yanvar -1°C)?",
+      "v": [
+        "28 °C",
+        "1 °C",
+        "27 °C",
+        "17 °C"
+      ],
+      "t": 0,
+      "izoh": "Toshkentda yillik amplituda 28 °C ga teng (iyul oyidagi oʻrtacha harorat +27 °C, yanvar oyidagi oʻrtacha harorat esa -1 °C, binobarin, yillik farq 28 °C ga teng).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo5_m22#d46998dc"
+    },
+    {
+      "q": "Havoning harorati Quyosh nurining tushish burchagidan tashqari yana nimaga bogʻliq?",
+      "v": [
+        "Joyning dengiz sathidan balandligiga",
+        "Shamol tezligiga",
+        "Havo namligiga",
+        "Yer relyefiga"
+      ],
+      "t": 0,
+      "izoh": "Havoning harorati quyosh nurining tik yoki qiya tushishiga, joyning dengiz sathidan balandligiga ham bogʻliq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#355b0d61"
+    },
+    {
+      "q": "Har 1000 metr yuqoriga koʻtarilganda quruq iqlim sharoitida havo harorati necha darajaga pasayadi?",
+      "v": [
+        "6 °C ga",
+        "1 °C ga",
+        "10 °C ga",
+        "33 °C ga"
+      ],
+      "t": 0,
+      "izoh": "Yer yuzidan har 1000 metr yuqoriga koʻtarilganda quruq iqlim sharoitida havo harorati 6 °C ga pasayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#b5340a15"
+    },
+    {
+      "q": "Tekislikda havo harorati +20°C boʻlganda, togʻda 3000 m balandda harorat qancha boʻladi?",
+      "v": [
+        "+2 °C",
+        "-4 °C",
+        "+8 °C",
+        "0 °C"
+      ],
+      "t": 0,
+      "izoh": "Masalan, tekislikda havo harorati +20 °C boʻlganda, togʻda 3000 m balandda +2 °C, 4000 m balandda esa -4 °C boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo5_m22#60e9b9c7"
+    },
+    {
+      "q": "Nega baland togʻlarda qor va muzliklar yozda ham erimay turadi?",
+      "v": [
+        "Chunki balandlikka koʻtarilgan sari havo harorati pasayib boradi",
+        "Chunki togʻlarda quyosh nuri umuman tushmaydi",
+        "Chunki togʻlarda doim shamol esadi",
+        "Chunki togʻlarda havo bosimi juda yuqori"
+      ],
+      "t": 0,
+      "izoh": "Yer yuzidan har 1000 metr yuqoriga koʻtarilganda havo harorati pasayadi. Shuning uchun ham baland togʻlarda qor va muzliklar yozda ham erimay turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#ab9f0b5f"
+    },
+    {
+      "q": "Dengiz sathida 1 m3 havo qancha keladi?",
+      "v": [
+        "1 kg 330 gramm",
+        "1 kg",
+        "10 kg",
+        "500 gramm"
+      ],
+      "t": 0,
+      "izoh": "Havo juda yengil. Dengiz sathida 1 m3 havo atigi 1 kg 330 gramm (g) keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#6704bc6e"
+    },
+    {
+      "q": "1 sm2 yuzaga havo qancha kuch bilan bosadi?",
+      "v": [
+        "1 kg ga teng boʻlgan kuch bilan",
+        "1 gramm kuch bilan",
+        "10 kg kuch bilan",
+        "100 gramm kuch bilan"
+      ],
+      "t": 0,
+      "izoh": "1 cm2 yuzaga 1 kg ga teng boʻlgan kuch bilan bosadi. Yer yuzasidagi har bir predmet va organizmlarga ham shunday kuch bilan taʼsir koʻrsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#60d3c356"
+    },
+    {
+      "q": "Havo bosimi nima?",
+      "v": [
+        "Havoning Yer yuzasiga va undagi barcha narsalarga boʻlgan bosimi",
+        "Havoning tarkibidagi gazlar nisbati",
+        "Havo haroratining oʻzgarishi",
+        "Havoning namlik darajasi"
+      ],
+      "t": 0,
+      "izoh": "Havoning Yer yuzasiga va undagi barcha narsalarga boʻlgan bosimini havo bosimi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m22#e903215e"
+    },
+    {
+      "q": "Odam nega havo bosimini oddiy holatda sezmaydi?",
+      "v": [
+        "Chunki havo bosimi odam tanasidagi ichki bosim bilan muvozanatlashgan",
+        "Chunki havo bosimi juda kuchsiz",
+        "Chunki odam tanasi havoga sezgir emas",
+        "Chunki havo bosimi doim nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Odam bu bosimni sezmaydi, chunki havo bosimi odam tanasidagi ichki bosim bilan bir xil, yaʼni muvozanatlashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#ffa9f1fa"
+    },
+    {
+      "q": "Togʻda 3000 m balandga koʻtarilgan odamga nima seziladi?",
+      "v": [
+        "Nafas qisiladi, bosh aylanadi",
+        "Hech narsa sezilmaydi",
+        "Sovuq boʻladi",
+        "Charchoq seziladi"
+      ],
+      "t": 0,
+      "izoh": "Yuqoriga koʻtarilgan odamga havo bosimining kamayishi seziladi. Agar togʻda 3000 m balandga koʻtarilsa, nafas qisiladi, bosh aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#ec1f8fde"
+    },
+    {
+      "q": "4000-5000 m balandlikda nima roʻy berishi mumkin?",
+      "v": [
+        "Burun qonashi, tomirlar yorilishi",
+        "Charchoq",
+        "Hech qanday oʻzgarish boʻlmaydi",
+        "Uyquchanlik"
+      ],
+      "t": 0,
+      "izoh": "4000-5000 m balandda burun qonashi, tomirlar yorilishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#08055510"
+    },
+    {
+      "q": "Havo bosimi qanday asbob bilan oʻlchanadi?",
+      "v": [
+        "Barometr",
+        "Termometr",
+        "Gigrometr",
+        "Anemometr"
+      ],
+      "t": 0,
+      "izoh": "Havo bosimi barometr asbobi bilan oʻlchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo5_m22#4454b015"
+    },
+    {
+      "q": "«Barometr» soʻzi qaysi qismlardan tashkil topgan va nima maʼnoni bildiradi?",
+      "v": [
+        "«Baros» — ogʻirlik, bosim, «metreo» — oʻlchash",
+        "«Baros» — issiqlik, «metreo» — kuzatish",
+        "«Baros» — havo, «metreo» — hisoblash",
+        "«Baros» — suv, «metreo» — tutish"
+      ],
+      "t": 0,
+      "izoh": "Barometr — («baros» — ogʻirlik, bosim, «metreo» — oʻlchash).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#cf0886b9"
+    },
+    {
+      "q": "Barometr necha xil boʻladi?",
+      "v": [
+        "Ikki xil: simobli barometr va metall barometr (aneroid)",
+        "Uch xil: simobli, metall va suyuq barometr",
+        "Bir xil, faqat simobli",
+        "Toʻrt xil barometr"
+      ],
+      "t": 0,
+      "izoh": "Barometr ikki xil boʻladi: simobli barometr va metall barometr — aneroid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#d11a049f"
+    },
+    {
+      "q": "Simobli barometr asosan qanday naychadan iborat?",
+      "v": [
+        "Uzunligi 1 m va kengligi 1 sm boʻlgan shisha naychadan",
+        "Uzunligi 10 sm boʻlgan metall naychadan",
+        "Uzunligi 2 m boʻlgan plastik naychadan",
+        "Uzunligi 50 sm boʻlgan yogʻoch naychadan"
+      ],
+      "t": 0,
+      "izoh": "Simobli barometr asosan uzunligi 1 m va kengligi 1 cm boʻlgan shisha naychadan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#fe6d3316"
+    },
+    {
+      "q": "Dengiz boʻyida havo harorati 0°C boʻlganda barometr naychasidagi simob qancha koʻrsatadi?",
+      "v": [
+        "760 millimetr",
+        "720 millimetr",
+        "800 millimetr",
+        "700 millimetr"
+      ],
+      "t": 0,
+      "izoh": "Dengiz boʻyida havo harorati 0° C boʻlganda barometr naychasidagi simob 760 millimetr (mm)ni koʻrsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#31add521"
+    },
+    {
+      "q": "760 mm simob ustuni bosimiga teng bosim nima deb ataladi?",
+      "v": [
+        "Normal (meʼyordagi) bosim",
+        "Yuqori bosim",
+        "Past bosim",
+        "Kritik bosim"
+      ],
+      "t": 0,
+      "izoh": "Shunda havo bosimi 760 mm simob ustuni bosimi (Hg) ga teng boʻladi. Bunday bosim normal (meʼyordagi) bosim deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#a9992971"
+    },
+    {
+      "q": "Dengiz boʻyidan balandlikka koʻtarilganda har 100 metrda barometrdagi simob qancha pasayadi?",
+      "v": [
+        "10 millimetr",
+        "1 millimetr",
+        "100 millimetr",
+        "50 millimetr"
+      ],
+      "t": 0,
+      "izoh": "Dengiz boʻyidan balandlikka koʻtariladigan boʻlsa, har 100 m koʻtarilganda barometrdagi simob 10 mm pasayadi (yoki har 10 m da 1 mm pasayadi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#96e5f170"
+    },
+    {
+      "q": "22-§ oxiridagi tayanch soʻz va tushunchalar qatorida qanday atamalar keltirilgan?",
+      "v": [
+        "Havo harorati, Termometr, Havo bosimi, Amplituda, Yillik amplituda, Normal bosim, Yillik oʻrtacha harorat, Barometr, Sutkalik va oylik oʻrtacha harorat",
+        "Briz shamollari, Passat shamollari, Anemometr, Musson shamollari",
+        "Havoning namligi, Mutlaq namlik, Nisbiy namlik, Toʻp-toʻp bulut",
+        "Ob-havo, Beqaror ob-havo, Barqaror ob-havo, Iqlim"
+      ],
+      "t": 0,
+      "izoh": "22-§ oxiridagi tayanch soʻz va tushunchalar: Havo harorati, Termometr, Havo bosimi, Amplituda, Yillik amplituda, Normal bosim, Yillik oʻrtacha harorat, Barometr, Sutkalik va oylik oʻrtacha harorat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo5_m22#ff08911b"
+    }
+  ]
+}

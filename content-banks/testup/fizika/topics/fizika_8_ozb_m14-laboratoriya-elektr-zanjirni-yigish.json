@@ -1,0 +1,381 @@
+{
+  "nom": "14-mavzu. Laboratoriya Elektr Zanjirni Yigish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "14-§ laboratoriya ishining maqsadi nima?",
+      "v": [
+        "Elektr zanjirini yig'ishni hamda zanjirning turli qismlaridagi tok kuchi va kuchlanishni o'lchashni o'rganish",
+        "Elektr qarshilikni hisoblashni o'rganish",
+        "Galvanik element yasashni o'rganish",
+        "Tok manbalarini ta'mirlashni o'rganish"
+      ],
+      "t": 0,
+      "izoh": "Ishning maqsadi: elektr zanjirini yig'ishni hamda zanjirning turli qismlaridagi tok kuchi va kuchlanishni o'lchashni o'rganish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#5005bdb0"
+    },
+    {
+      "q": "Laboratoriya ishi uchun kerakli jihozlar qaysilar?",
+      "v": [
+        "Tok manbai, ampermetr, voltmetr, ikkita lampochka, kalit va ulovchi o'tkazgichlar",
+        "Tok manbai, ommetr, ikkita lampochka",
+        "Faqat voltmetr va ampermetr",
+        "Galvanik element, elektrometr, kalit"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar: tok manbai, ampermetr, voltmetr, ikkita lampochka, kalit va ulovchi o'tkazgichlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#d6c1c4b1"
+    },
+    {
+      "q": "Laboratoriya ishida voltmetr dastlab qayerga ulanadi?",
+      "v": [
+        "Birinchi lampochkaning uchlariga",
+        "Ikkinchi lampochkaning uchlariga",
+        "Tok manbaining qutblariga",
+        "Kalitning uchlariga"
+      ],
+      "t": 0,
+      "izoh": "Ishni bajarish tartibining 1-bandiga ko'ra zanjir yig'ilganda voltmetr birinchi lampochkaning uchlariga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#8ce9cec9"
+    },
+    {
+      "q": "Tajribaning boshida tok manbaining iste'molchilarga kuchlanish beradigan murvati qanday holatga qo'yiladi?",
+      "v": [
+        "4 V holatiga",
+        "6 V holatiga",
+        "10 V holatiga",
+        "12 V holatiga"
+      ],
+      "t": 0,
+      "izoh": "Tok manbaining iste'molchilarga kuchlanish beradigan murvatini 4 V holatiga qo'yish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#bbdc534a"
+    },
+    {
+      "q": "Zanjir yig'ilgach, kalit ulanganda nima kuzatiladi?",
+      "v": [
+        "Zanjirga ulangan ikkala lampochka ham yonadi, ampermetr va voltmetr ko'rsatishi qayd qilinadi",
+        "Faqat birinchi lampochka yonadi",
+        "Lampochkalar yonmaydi",
+        "Faqat voltmetr ishlaydi"
+      ],
+      "t": 0,
+      "izoh": "Kalitni ulanganda zanjirga ulangan ikkala lampochka ham yonadi, ampermetr va voltmetr ko'rsatishini qayd qilib, jadvalga yozish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#12c7a34b"
+    },
+    {
+      "q": "Tajribada voltmetr birinchi lampochkaga ulanganda u nimani o'lchaydi?",
+      "v": [
+        "Birinchi lampochka uchlaridagi kuchlanishni",
+        "Zanjirdagi tok kuchini",
+        "Tok manbai kuchlanishini",
+        "Ikkinchi lampochka kuchlanishini"
+      ],
+      "t": 0,
+      "izoh": "Voltmetr birinchi lampochka uchlaridagi kuchlanishni o'lchaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#42c4b9d7"
+    },
+    {
+      "q": "Ikkinchi lampochka uchlaridagi kuchlanishni o'lchash uchun avval nima qilish kerak?",
+      "v": [
+        "Kalitni uzib, voltmetr klemmalarini ikkinchi lampochkaning uchlariga ulash kerak",
+        "Kalitni ulab, voltmetrni tok manbaiga ulash kerak",
+        "Zanjirni butunlay qayta yig'ish kerak",
+        "Ampermetrni zanjirdan olib tashlash kerak"
+      ],
+      "t": 0,
+      "izoh": "Kalitni uzib, voltmetr klemmalarini ikkinchi lampochkaning uchlariga ulash, so'ng kalitni ulash kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#491a87db"
+    },
+    {
+      "q": "Laboratoriya ishida o'lchanadigan kattaliklar jadvalga qanday yoziladi?",
+      "v": [
+        "Har bir murvat holatida 1-lampochka uchun U₁ va I₁, 2-lampochka uchun U₂ va I₂ qiymatlari yoziladi",
+        "Faqat tok kuchi yoziladi",
+        "Faqat kuchlanish yoziladi",
+        "Faqat manba kuchlanishi yoziladi"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda murvat holatlari bo'yicha 1-lampochka U₁, I₁ va 2-lampochka U₂, I₂ qiymatlari qayd etiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#4ace466c"
+    },
+    {
+      "q": "Tajribani takrorlashda tok manbai murvati qanday holatga qo'yiladi?",
+      "v": [
+        "6 V holatiga",
+        "2 V holatiga",
+        "12 V holatiga",
+        "O'zgartirilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Kalitni uzib, tok manbaining kuchlanish beradigan murvatini 6 V holatiga qo'yib, tajriba 3–5-bandlardagidek takrorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#20a64d9b"
+    },
+    {
+      "q": "Laboratoriya ishining oxirgi bosqichida nima qilinadi?",
+      "v": [
+        "Tajriba natijalarini tahlil qilib, xulosa chiqariladi",
+        "Zanjir darhol qayta yig'iladi",
+        "Asboblar o'lchanmay turib yig'ishtiriladi",
+        "Yangi tok manbai olinadi"
+      ],
+      "t": 0,
+      "izoh": "Oxirgi bandda tajriba natijalarini tahlil qilish va xulosa chiqarish ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#54261f0e"
+    },
+    {
+      "q": "Voltmetr klemmalarini almashtirishdan oldin kalit nega uziladi?",
+      "v": [
+        "Zanjirda tok bo'lmasligi va xavfsiz ishlash uchun",
+        "O'lchov tezroq bo'lishi uchun",
+        "Lampochkalar yorqinroq yonishi uchun",
+        "Ampermetr ko'rsatishi oshishi uchun"
+      ],
+      "t": 0,
+      "izoh": "Voltmetr klemmalarini boshqa lampochkaga ulashdan oldin kalit uzilib, zanjir ochiqlanadi — bu laboratoriya ishining tartibida ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#7acd5bec"
+    },
+    {
+      "q": "Laboratoriya zanjirida ampermetr lampochkalarga nisbatan qanday ulanadi?",
+      "v": [
+        "Ketma-ket ulanadi",
+        "Parallel ulanadi",
+        "Faqat birinchi lampochkaga parallel ulanadi",
+        "Tok manbaiga parallel ulanadi"
+      ],
+      "t": 0,
+      "izoh": "47-rasm sxemasida ampermetr zanjirga ketma-ket ulangan, chunki tok kuchi faqat ketma-ket ulashda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#c9aa7a29"
+    },
+    {
+      "q": "Laboratoriya zanjirida voltmetr lampochkaga nisbatan qanday ulanadi?",
+      "v": [
+        "Parallel ulanadi",
+        "Ketma-ket ulanadi",
+        "Kalit orqali ketma-ket ulanadi",
+        "Ulanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Voltmetr kuchlanishi o'lchanadigan lampochkaga parallel ulanadi (47-rasm sxemasida L₁ lampochkaga parallel ulangan).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#60b16ff8"
+    },
+    {
+      "q": "Laboratoriya ishida nechta lampochka ishlatiladi?",
+      "v": [
+        "Ikkita",
+        "Bitta",
+        "Uchta",
+        "To'rtta"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar ro'yxatida ikkita lampochka ko'rsatilgan (sxemada L₁ va L₂).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#4202d61d"
+    },
+    {
+      "q": "Murvat holati oshirilganda (4 V dan 6 V ga) zanjirdagi tok kuchi va lampochkalar kuchlanishi qanday o'zgarishi kutiladi?",
+      "v": [
+        "Tok kuchi va kuchlanish ortadi",
+        "Tok kuchi kamayadi",
+        "Hech narsa o'zgarmaydi",
+        "Tok kuchi nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Manba kuchlanishi oshirilsa, zanjirdagi tok kuchi va lampochkalar uchlaridagi kuchlanish ham ortadi — tajriba natijalarini tahlil qilish shunga qaratilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#0b5873ad"
+    },
+    {
+      "q": "12-§ oxiridagi tajribada («Ampermetr yordamida zanjirdagi tok kuchini o'lchash») zanjir yig'ilganda kalit qanday holatda qoldiriladi?",
+      "v": [
+        "Ochiq holatda",
+        "Yopiq (ulangan) holatda",
+        "Yarim ochiq holatda",
+        "Kalit ishlatilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Tajribada elektr zanjirini yig'ishda kalitni ochiq holda qoldirish ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#8dfb1ff9"
+    },
+    {
+      "q": "12-§ oxiridagi tajribada qanday lampochka olinishi izohlanadi?",
+      "v": [
+        "12 voltga mo'ljallangan cho'g'lanma lampochka",
+        "220 V li lampochka",
+        "1,5 V li neon lampochka",
+        "9 V li lampochka"
+      ],
+      "t": 0,
+      "izoh": "Izohda: 12 voltga mo'ljallangan cho'g'lanma lampochka oling.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#32b24b19"
+    },
+    {
+      "q": "12-§ oxiridagi tajribada lampochkadan o'tayotgan tok kuchi qanday asbob yordamida o'lchanadi?",
+      "v": [
+        "Milliampermetr yordamida",
+        "Voltmetr yordamida",
+        "Ommetr yordamida",
+        "Elektrometr yordamida"
+      ],
+      "t": 0,
+      "izoh": "Kalitni ulab, lampochkadan o'tayotgan tok kuchini milliampermetr yordamida o'lchash ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#3c5bef11"
+    },
+    {
+      "q": "12-§ oxiridagi tajribada tok manbai murvati qanday holatlarga qo'yib tajriba takrorlanadi?",
+      "v": [
+        "6, 8 va 10 V holatlariga",
+        "2, 4 va 6 V holatlariga",
+        "12, 24 va 36 V holatlariga",
+        "Faqat 4 V holatiga"
+      ],
+      "t": 0,
+      "izoh": "Murvatni 6, 8 va 10 V holatlariga qo'yib tajriba takrorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#b42f13d5"
+    },
+    {
+      "q": "12-§ oxiridagi tajriba jadvalida qanday ustunlar bor?",
+      "v": [
+        "Murvat holatlari (V): 4, 6, 8, 10 va milliampermetrning ko'rsatishi (mA)",
+        "Murvat holatlari va voltmetr ko'rsatishi",
+        "Faqat tok kuchi",
+        "Faqat kuchlanish"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda murvat holatlari (4, 6, 8, 10 V) va milliampermetrning ko'rsatishi (mA) ustunlari bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#85207be2"
+    },
+    {
+      "q": "Eng oddiy elektr zanjir qanday asboblardan tashkil topgan?",
+      "v": [
+        "Tok manbai, o'tkazgichlar, elektr iste'molchi (lampochka) va kalitdan",
+        "Faqat tok manbai va simdan",
+        "Tok manbai, voltmetr va ommetrdan",
+        "Faqat lampochka va kalitdan"
+      ],
+      "t": 0,
+      "izoh": "Eng sodda elektr zanjir tok manbai, o'tkazgich (ulovchi simlar), elektr iste'molchi va kalitdan tashkil topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#08d30d19"
+    },
+    {
+      "q": "Zanjirdagi kalitning vazifasi nima?",
+      "v": [
+        "Elektr lampochkani o'chirib-yoqish (zanjirni ochish-berkitish) uchun kerak",
+        "Tok kuchini o'lchash uchun",
+        "Kuchlanishni oshirish uchun",
+        "Zaryadlarni to'plash uchun"
+      ],
+      "t": 0,
+      "izoh": "Kalit elektr lampochkani o'chirib-yoqish uchun kerak bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#7e8ecb00"
+    },
+    {
+      "q": "Nima uchun ampermetr zanjirda iste'molchiga ketma-ket ulanadi?",
+      "v": [
+        "Chunki u birlik vaqtda o'tkazgich kesimidan o'tgan zaryad miqdorini o'lchashi kerak",
+        "Chunki u kuchlanishni o'lchaydi",
+        "Chunki zanjir qarshiligini kamaytiradi",
+        "Chunki lampochkani himoya qiladi"
+      ],
+      "t": 0,
+      "izoh": "Ampermetr birlik vaqt davomida o'tkazgichning ko'ndalang kesimidan o'tgan zaryad miqdorini o'lchashi kerak, shu sababli zanjirga ketma-ket ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#09c13665"
+    },
+    {
+      "q": "Laboratoriya ishida tok kuchi o'lchanayotganda ampermetr zanjirning qaysi qismiga ulanganining ahamiyati bormi?",
+      "v": [
+        "Yo'q, chunki ketma-ket zanjirning barcha qismida tok kuchi bir xil",
+        "Ha, faqat manba yoniga ulanadi",
+        "Ha, faqat lampochkadan keyin ulanadi",
+        "Ha, faqat kalit yoniga ulanadi"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket zanjirning hamma qismida tok kuchi bir xil bo'lgani uchun ampermetrning ulanish o'rni natijaga ta'sir qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#c237a6c8"
+    },
+    {
+      "q": "Tajriba natijalariga ko'ra manba murvati oshirilganda milliampermetr ko'rsatishi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Murvat holati oshirilib, kuchlanish ko'tarilganda zanjirdagi tok kuchi ham ortadi — tajriba shu bog'liqlikni tekshirishga qaratilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m14-laboratoriya-elektr-zanjirni-yigish#8a0e3348"
+    }
+  ]
+}

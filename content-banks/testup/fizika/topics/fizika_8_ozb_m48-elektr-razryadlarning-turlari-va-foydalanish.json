@@ -1,0 +1,546 @@
+{
+  "nom": "48-mavzu. Elektr Razryadlarning Turlari Va Foydalanish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Gazdan o'tayotgan tok kuchining qo'yilgan elektr kuchlanishga bog'liqligini o'rganishda anod va katod orasidagi kuchlanish qanday asbob bilan o'lchanadi?",
+      "v": [
+        "Voltmetr bilan",
+        "Ampermetr bilan",
+        "Galvanometr bilan",
+        "Elektrometr bilan"
+      ],
+      "t": 0,
+      "izoh": "Anod va katod orasidagi kuchlanish V voltmetr bilan, gazdan o'tayotgan tok kuchi A ampermetr bilan o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#74b8a361"
+    },
+    {
+      "q": "Gaz razryadini o'rganish zanjirida anod va katod orasidagi kuchlanishni o'zgartirib borish uchun nima ishlatiladi?",
+      "v": [
+        "R reostat",
+        "K kalit",
+        "I ionizator",
+        "Yassi kondensator"
+      ],
+      "t": 0,
+      "izoh": "R reostat yordamida anod va katod orasidagi kuchlanishni o'zgartira borish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#a8aceac6"
+    },
+    {
+      "q": "Anod va katod orasidagi havoni doimiy ionlashtirib turish uchun zanjirga nima o'rnatilgan?",
+      "v": [
+        "I ionizator",
+        "R reostat",
+        "A ampermetr",
+        "V voltmetr"
+      ],
+      "t": 0,
+      "izoh": "Havoni doimiy ravishda ionlashtirib turish uchun I ionizator o'rnatilgan; u havo qiziydi va ionlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#1c4e565e"
+    },
+    {
+      "q": "Kuchlanishni oshira borganda tok kuchining o'zgarishi qanday bo'ladi (123-rasm)?",
+      "v": [
+        "Avval tok ortadi, ma'lum kuchlanishdan keyin oshmasdan o'zgarmas bo'lib qoladi",
+        "Tok doimiy ravishda ortib boraveradi",
+        "Tok doimiy kamayadi",
+        "Tok darhol nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish ma'lum qiymatga yetgach, tok kuchi oshmasdan o'zgarmas bo'lib qoladi (123-rasm AB qismi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#25ad6393"
+    },
+    {
+      "q": "To'yinish toki deb qanday tokka aytiladi?",
+      "v": [
+        "Kuchlanish oshirilganda ham oshmaydigan, o'zgarmas bo'lib qolgan tok kuchining qiymatiga",
+        "Eng kichik tok qiymatiga",
+        "Nolga teng tokka",
+        "Ionizator o'chirilgandagi tokka"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish ma'lum qiymatga yetgach oshmasdan o'zgarmas bo'lib qolgan tok qiymati to'yinish toki Iₜ deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#2bd8627a"
+    },
+    {
+      "q": "Tok kuchining to'yinishiga sabab nima?",
+      "v": [
+        "Kuchlanish ma'lum qiymatga erishganda, havoda hosil bo'lgan zaryadlarning hammasi anod va katodga yetib boradi",
+        "Ionizator kuchi tugaydi",
+        "Elektrodlar qizib ketadi",
+        "Reostat uzilib qoladi"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish ma'lum qiymatga erishganda havoda hosil bo'lgan zaryadlarning hammasi anod va katodga yetib boradi — tok bundan ortiq oshmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#6865b839"
+    },
+    {
+      "q": "Kuchlanish past bo'lganda anod va katod orasida birlik vaqt ichida hosil bo'layotgan zaryadlarning qancha qismi elektrodlarga yetib boradi?",
+      "v": [
+        "Bir qismigina",
+        "Hammasi",
+        "Yarmini",
+        "To'rtdan uchi"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish past bo'lganda hosil bo'layotgan zaryadlarning bir qismigina anod va katodga yetib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#56cb9e4c"
+    },
+    {
+      "q": "Nomustaqil razryad deb qanday razryadga aytiladi?",
+      "v": [
+        "Ionizator ta'siri to'xtatilishi bilan to'xtaydigan razryadga",
+        "Ionizatorsiz ham davom etadigan razryadga",
+        "Faqat yuqori kuchlanishda yuzaga keladigan razryadga",
+        "Faqat vakuumda yuzaga keladigan razryadga"
+      ],
+      "t": 0,
+      "izoh": "Ionizator ta'siri to'xtatilishi bilan to'xtaydigan razryad nomustaqil razryad deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#d9852c80"
+    },
+    {
+      "q": "Ionizator o'chirilsa, zanjirdagi tok kuchi qanday o'zgaradi va nima uchun?",
+      "v": [
+        "Nolga teng bo'lib qoladi, chunki elektr razryad to'xtaydi",
+        "O'zgarishsiz qoladi",
+        "Ikki baravar oshadi",
+        "Sekin kamayadi, lekin to'xtamaydi"
+      ],
+      "t": 0,
+      "izoh": "Ionizator o'chirilsa, tok kuchi nolga teng bo'ladi, chunki ionizatorsiz mustaqil ravishda razryad bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#538bc5fd"
+    },
+    {
+      "q": "Kuchlanishni yanada oshirib borganda, u ma'lum Uₘ qiymatga yetganda tok kuchi qanday o'zgaradi?",
+      "v": [
+        "Keskin orta boshlaydi",
+        "Kamaya boshlaydi",
+        "O'zgarmas qoladi",
+        "Nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish ma'lum Uₘ qiymatga yetganda tok kuchi keskin orta boshlaydi (123-rasm BC qismi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#ca4c1f73"
+    },
+    {
+      "q": "Kuchlanish Uₘ qiymatdan oshganda tok keskin ortishining sababi nima?",
+      "v": [
+        "Anod tomon harakatlanayotgan elektronlar o'z yo'lida gazdagi neytral atomlar bilan ko'p to'qnashadi va ularni ionlashtiradi",
+        "Ionizator kuchli ishlaydi",
+        "Elektrodlar eriydi",
+        "Reostat qisqaradi"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish ortishi bilan elektronlarning kinetik energiyasi neytral atomlarning elektronini urib chiqarishga yetarli bo'ladi — gazning ionlashishi keskin ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#d7277da3"
+    },
+    {
+      "q": "Mustaqil razryad deb qanday razryadga aytiladi?",
+      "v": [
+        "Ionizator ta'siri to'xtatilganda ham davom eta veradigan razryadga",
+        "Faqat ionizator bilan yuritiladigan razryadga",
+        "Faqat past kuchlanishdagi razryadga",
+        "Katod qizdirilgandagi razryadga"
+      ],
+      "t": 0,
+      "izoh": "Ionizator ta'siri to'xtatilganda ham davom eta veradigan razryad mustaqil razryad deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#278f1ab4"
+    },
+    {
+      "q": "Elektr yoy razryadi qanday hosil qilinadi?",
+      "v": [
+        "Ikkita ko'mir elektrodga 40–50 V kuchlanish berilib, ularning uchlari bir-biriga tekkizilib, biroz uzoqlashtiriladi",
+        "Ikki elektrodga juda yuqori kuchlanish beriladi",
+        "Yopiq naydagi havo so'rib olinadi",
+        "Katod qizdiriladi"
+      ],
+      "t": 0,
+      "izoh": "Ikkita ko'mir elektrodga 40–50 V berilib, uchlari tekkizilib, biroz uzoqlashtirilsa, elektrodlar uchlari orasida ko'zni qamashtiradigan yarqirash — elektr yoy razryadi hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#47273188"
+    },
+    {
+      "q": "Elektr yoy razryadi uchun ko'mir elektrodlarga qancha kuchlanish beriladi?",
+      "v": [
+        "40–50 V",
+        "3000 000 V",
+        "100 000 000 V",
+        "9 V"
+      ],
+      "t": 0,
+      "izoh": "Ko'mir elektrodlarga 40–50 V kuchlanish beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#78fc8cda"
+    },
+    {
+      "q": "Elektr yoy qachongacha davom etadi?",
+      "v": [
+        "Elektrodlar orasidagi kuchlanish olinmaguncha",
+        "Ionizator o'chirilguncha",
+        "Bir necha millisekund",
+        "Ko'mir elektrodlar tugaguncha"
+      ],
+      "t": 0,
+      "izoh": "Hosil bo'lgan elektr yoy elektrodlar orasidagi kuchlanish olinmaguncha davom etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#4025d77f"
+    },
+    {
+      "q": "Elektr yoy razryadi qanday yorug'lik manbaidir va qayerlarda foydalaniladi?",
+      "v": [
+        "Juda quvvatli yorug'lik manbai — proyektorlarda, mayoqlarda va boshqa qurilmalarda",
+        "Zaif yorug'lik manbai — faqat tungi chiroqlarda",
+        "Issiqlik manbai — faqat pechkalarda",
+        "Yorug'lik bermaydi"
+      ],
+      "t": 0,
+      "izoh": "Elektr yoy juda quvvatli yorug'lik manbaidir; bunday yoylardan proyektorlarda, mayoqlarda va boshqa qurilmalarda foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#4bdd0977"
+    },
+    {
+      "q": "Elektr yoy temperaturasi juda yuqori bo'lganligi sababli undan qanday maqsadlarda foydalaniladi?",
+      "v": [
+        "Metallarni eritish va payvandlashda, yuqori navli po'lat olishda",
+        "Faqat yoritishda",
+        "Faqat gazlarni ionlashtirishda",
+        "Faqat metallarni qoplashda"
+      ],
+      "t": 0,
+      "izoh": "Elektr yoydan metallarni eritish va payvandlashda hamda yuqori navli po'lat olishda kuchli elektr yoydan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#b7ce48e2"
+    },
+    {
+      "q": "Uchqun razryad qanday hosil bo'ladi?",
+      "v": [
+        "Bir-biridan izolyatsiyalangan ikkita elektrod yuqori kuchlanish manbaiga ulanib, ular orasidagi kuchlanish ma'lum katta qiymatga yetganda chaqnash hosil bo'ladi",
+        "Ikki elektrod past kuchlanishda tekkizilganda",
+        "Naydagi havo so'rib olinganda",
+        "Katod qizdirilganda"
+      ],
+      "t": 0,
+      "izoh": "Elektrodlar orasidagi kuchlanish ma'lum katta qiymatga yetgach, ular orasida chaqnash — uchqun razryad hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#0846ecad"
+    },
+    {
+      "q": "Uchqun razryad vaqtida qanday hodisalar kuzatiladi?",
+      "v": [
+        "O'ziga xos charsillash eshitiladi va ko'zni qamashtiradigan darajada ravshan yorug'lik chiqadi",
+        "Sokin yorug'lik taraladi",
+        "Hech qanday tovush va yorug'lik bo'lmaydi",
+        "Faqat issiqlik ajraladi"
+      ],
+      "t": 0,
+      "izoh": "Uchqun razryad vaqtida o'ziga xos charsillash eshitiladi va ko'zni qamashtiradigan darajada ravshan yorug'lik chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#c4695b9d"
+    },
+    {
+      "q": "Odatdagi sharoitda havodagi elektr maydon kuchlanganligi qanchaga yetganda uchqun razryad hosil bo'ladi?",
+      "v": [
+        "3000 000 N/C ga",
+        "40–50 N/C ga",
+        "96500 N/C ga",
+        "100 N/C ga"
+      ],
+      "t": 0,
+      "izoh": "Havodagi elektr maydon kuchlanganligi 3000 000 N/C ga yetganda uchqun razryad hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#33133a7e"
+    },
+    {
+      "q": "Uchqun razryad tabiatda qanday ko'rinishda yuz beradi?",
+      "v": [
+        "Chaqmoq tarzida",
+        "Yomg'ir tarzida",
+        "Qor tarzida",
+        "Momaqaldiroq tovushi tarzida"
+      ],
+      "t": 0,
+      "izoh": "Uchqun razryad tabiatda chaqmoq tarzida yuz beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#d8776ef7"
+    },
+    {
+      "q": "Chaqmoq qayerlarda sodir bo'ladi?",
+      "v": [
+        "Bulutlar orasida yoki bulut bilan yer orasida",
+        "Faqat yer ustida",
+        "Faqat dengizda",
+        "Faqat osmonda"
+      ],
+      "t": 0,
+      "izoh": "Chaqmoq bulutlar orasida yoki bulut bilan yer orasida sodir bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#add1d0a3"
+    },
+    {
+      "q": "Bulutlar orasidagi kuchlanish qanchadan oshishi mumkin?",
+      "v": [
+        "100 000 000 V dan",
+        "40 V dan",
+        "3000 V dan",
+        "10 000 V dan"
+      ],
+      "t": 0,
+      "izoh": "Bulutlar orasidagi kuchlanish 100 000 000 V dan oshishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#ccb36e39"
+    },
+    {
+      "q": "Bulutlar orasidagi chaqmoq paytida havo orqali o'tgan tokning kattaligi qanchaga boradi?",
+      "v": [
+        "10 000 A ga",
+        "100 A ga",
+        "1 A ga",
+        "1 000 000 A ga"
+      ],
+      "t": 0,
+      "izoh": "Chaqmoq paytida havo orqali o'tgan tokning kattaligi 10 000 A ga boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#6cf35078"
+    },
+    {
+      "q": "Chaqmoq paytida uchqun razryadning davomiyligi qancha bo'ladi?",
+      "v": [
+        "Bor-yo'g'i 0,001–0,02 s",
+        "Bir necha daqiqa",
+        "Bir necha soat",
+        "Bir necha sekund"
+      ],
+      "t": 0,
+      "izoh": "Chaqmoq paytida uchqun razryadning davomiyligi bor-yo'g'i 0,001–0,02 s bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#a38f8b25"
+    },
+    {
+      "q": "Ikki elektrodga yuqori kuchlanish berib uchqun razryad hosil qilinganda anodda va katodda nima hosil bo'ladi?",
+      "v": [
+        "Anodda chuqurcha, katodda do'ngcha",
+        "Anodda do'ngcha, katodda chuqurcha",
+        "Ikkalasida ham chuqurcha",
+        "Ikkalasida ham do'ngcha"
+      ],
+      "t": 0,
+      "izoh": "Uchqun razryad hosil qilinganda anodda chuqurcha, katodda esa do'ngcha hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#ee833bb5"
+    },
+    {
+      "q": "Uchqun razryaddan metallarga ishlov berishda qanday foydalaniladi?",
+      "v": [
+        "Teshik ochish kerak bo'lgan metall anod qilib olinib, unga katod yaqinlashtirilsa, anodda chuqurcha hosil bo'ladi",
+        "Metall katod qilib olinadi",
+        "Metall elektrolitga tushiriladi",
+        "Metall qizdiriladi"
+      ],
+      "t": 0,
+      "izoh": "Teshik ochish kerak bo'lgan metall anod qilib olinib, unga katod yaqinlashtirilsa, anodda chuqurcha hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#78c40eda"
+    },
+    {
+      "q": "Uchqun razryad yordamida metallarni ishlash usuli qayerlarda qo'llaniladi?",
+      "v": [
+        "Turli xil shtamplar yasashda, metallarni kesishda va qirquvchi asboblarni charxlashda",
+        "Faqat yoritishda",
+        "Faqat metallarni qoplashda",
+        "Faqat payvandlashda"
+      ],
+      "t": 0,
+      "izoh": "Ushbu usuldan turli xil shtamplar yasashda, metallarni kesishda va qirquvchi asboblarni charxlashda foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#0a6d3276"
+    },
+    {
+      "q": "Toblangan po'latlarda ham uchqun razryaddan foydalanib teshik ochish mumkinligi nimani ko'rsatadi?",
+      "v": [
+        "Uchqun razryad juda yuqori energiya ajratib, eng qattiq qotishmalarni ham erita olishini",
+        "Uchqun razryad zaif ekanini",
+        "Po'lat yaxshi o'tkazgich ekanini",
+        "Po'lat oson erishini"
+      ],
+      "t": 0,
+      "izoh": "Toblangan po'latlarda, hatto undan qattiq qotishmalarda ham belgilangan o'lchamda va shaklda teshik ochish mumkin — razryad juda katta energiyaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#a41cb3cb"
+    },
+    {
+      "q": "Miltillama razryad qanday hosil qilinadi?",
+      "v": [
+        "Yopiq shisha nay ichiga qarama-qarshi anod va katod o'rnatilib, nay ichidagi havo maxsus nasos yordamida sekin-asta so'rib olinadi",
+        "Ikki ko'mir elektrod tekkizilib uzoqlashtiriladi",
+        "Elektrodlarga 40–50 V beriladi",
+        "Katod qizdiriladi"
+      ],
+      "t": 0,
+      "izoh": "Yopiq shisha nayda anod va katod o'rnatilib, ichidagi havo so'rib olinsa, razryad sezila boshlaydi — miltillama razryad hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#7bb3775b"
+    },
+    {
+      "q": "Naydagi havo qancha siyraklashtirilganda miltillagan yorug'lik qoplaydi?",
+      "v": [
+        "Taxminan o'n marta siyraklashtirilganda razryad seziladi, bir necha yuz marta siyraklashtirilganda miltillagan yorug'lik qoplaydi",
+        "Ikki marta siyraklashtirilganda",
+        "Bosim ikki baravar oshirilganda",
+        "Havo to'liq so'rib olinganda"
+      ],
+      "t": 0,
+      "izoh": "Nay ichidagi havo taxminan o'n marta siyraklashtirilganda razryad sezila boshlaydi; havo odatdagiga nisbatan bir necha yuz marta siyraklashtirilsa, anod va katod orasini miltillagan yorug'lik qoplaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#e112f8dd"
+    },
+    {
+      "q": "Miltillama razryad qanday lampalarda yorug'lik manbai sifatida foydalaniladi?",
+      "v": [
+        "Sovuq lampalar yoki kunduzgi lampalar deb ataluvchi lampalarda",
+        "Faqat choynak lampalarda",
+        "Faqat projektorlarda",
+        "Faqat chiroqlarda"
+      ],
+      "t": 0,
+      "izoh": "Miltillama razryaddan sovuq lampalar yoki kunduzgi lampalar deb ataluvchi lampalarda yorug'lik manbai sifatida foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#f124447f"
+    },
+    {
+      "q": "Kunduzgi lampalarning nayning ichiga nima surtiladi va undan qanday yorug'lik chiqadi?",
+      "v": [
+        "Oq rangdagi «lyuminofor» deb ataladigan moddalar surtiladi, undan oq yorug'lik chiqadi",
+        "Grafit surtiladi, qizil yorug'lik chiqadi",
+        "Mis changi surtiladi",
+        "Lak surtiladi"
+      ],
+      "t": 0,
+      "izoh": "Nayning ichiga oq rangdagi «lyuminofor» deb ataladigan moddalar surtiladi, undan oq yorug'lik chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#55d0fcde"
+    },
+    {
+      "q": "Yuqori kuchlanishli elektr uzatish tarmoqlarida uchqun chiqmasligi uchun qanday chorak ko'riladi?",
+      "v": [
+        "Kuchlanish qanchalik yuqori bo'lsa, tayanch bilan o'tkazuvchi sim orasidagi izolyator shunchalik katta bo'lishi kerak",
+        "Simlar yerga tushiriladi",
+        "Kuchlanish kamaytiriladi",
+        "Izolyatorlar kichik qilinadi"
+      ],
+      "t": 0,
+      "izoh": "Uchqun chiqmasligi uchun tarmoqlarda kuchlanish qanchalik yuqori bo'lsa, tayanch bilan sim orasidagi izolyator shunchalik katta bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#67a93234"
+    },
+    {
+      "q": "Nomustaqil va mustaqil razryadlarning asosiy farqi nimada?",
+      "v": [
+        "Nomustaqil razryad ionizator to'xtatilganda so'nadi, mustaqil razryad esa ionizatorsiz ham davom etadi",
+        "Nomustaqil razryad kuchliroq",
+        "Mustaqil razryad faqat vakuumda bo'ladi",
+        "Ularning orasida farq yo'q"
+      ],
+      "t": 0,
+      "izoh": "Nomustaqil razryad faqat ionizator ta'sirida davom etadi; mustaqil razryad esa elektronlarning o'zi atomlarni ionlashtirishi hisobiga ionizatorsiz ham davom etaveradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#d6b0aa77"
+    },
+    {
+      "q": "Bulut va yer orasida hosil bo'lgan yashinni elektr toki deyish mumkinmi?",
+      "v": [
+        "Mumkin, chunki yashin (chaqmoq) zaryadlarning tartibli harakati — uchqun razryaddan iborat",
+        "Mumkin emas, chunki u faqat yorug'lik hodisasi",
+        "Mumkin emas, chunki havo dielektrik",
+        "Faqat bulutlar orasida bo'lganda mumkin"
+      ],
+      "t": 0,
+      "izoh": "Chaqmoq — kuchli uchqun razryad, ya'ni zaryadlarning tartibli harakati, demak uni elektr toki deyish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m48-elektr-razryadlarning-turlari-va-foydalanish#0a68e4b2"
+    }
+  ]
+}

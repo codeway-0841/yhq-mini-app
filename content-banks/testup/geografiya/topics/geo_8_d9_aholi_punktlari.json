@@ -1,0 +1,636 @@
+{
+  "nom": "9-dars: Aholi punktlari",
+  "bolim": "II bob. O’zbekistonning tabiiy boyliklari, aholisi va mehnat resurslari",
+  "savollar": [
+    {
+      "q": "Mamlakatimizda nechta shahar, shaharcha va qanchadan ortiq qishloq va ovul mavjud (2019-yil)?",
+      "v": [
+        "119 ta shahar, 1071 ta shaharcha, 11 mingdan ortiq qishloq va ovul",
+        "119 ta shahar, 114 ta shaharcha, 12 mingdan ortiq qishloq va ovul",
+        "119 ta shahar, 1065 ta shaharcha, 12 mingdan ortiq qishloq va ovul",
+        "119 ta shahar, 1056 ta shaharcha, 11 mingdan ortiq qishloq va ovul"
+      ],
+      "t": 0,
+      "izoh": "Mamlakatimizda 119 ta shahar, 1071 ta shaharcha hamda 11 mingdan ortiq qishloq va ovul bor (2019-yil).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#a220615f"
+    },
+    {
+      "q": "XX asr boshlarida O’zbekiston hududida nechta shahar bo’lgan?",
+      "v": [
+        "20 ga yaqin",
+        "30 ga yaqin",
+        "20 dan ortiq",
+        "30 dan ortiq"
+      ],
+      "t": 0,
+      "izoh": "Darslikda aniq yozilgan: XX asr boshlarida O’zbekiston hududida 20 ga yaqin shahar bo’lgan, ular daryo hamda soy bo’ylarida yoki karvon yo’llarida vujudga kelgan. Eslatma: 2019-yilgi test to’plami kalitida \"20 dan ortiq\" varianti to’g’ri deb berilgan, ammo darslik matnida \"20 ga yaqin\" deb ko’rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#df720030"
+    },
+    {
+      "q": "Jahongashta arab sayyohi Ibn Battuta shunday ta’riflagan shaharni toping: «Biz sahroni kesib o’tib, ushbu shaharga keldik. Bu turkiylarning katta, muhim, chiroyli va ulug’vor shahri bo’lib, ajoyib bozorlari, keng ko’chalari juda ko’p, imoratlari jozibador, ko’rkam joylari bor. Shaharda hayot qaynaydi, aholisi shunchalik ko’pki, u mavjlanib turgan dengizni eslatadi».",
+      "v": [
+        "Xorazm",
+        "Toshkent",
+        "Samarqand",
+        "Buxoro"
+      ],
+      "t": 0,
+      "izoh": "Ibn Battuta ushbu ta’rifni Xorazm shahriga bergan: «Biz sahroni kesib o’tib Xorazmga keldik...».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#0940ca3f"
+    },
+    {
+      "q": "Ibn Battuta qaysi shahar bo’ylab sayr etib, uni shunday ta’riflagan: «... - juda yirik va g’oyat go’zal shaharlardan biridir. U Voha al-Qassirin daryosining qirg’og’ida joylashgan. Daryo qirg’og’ida shunday ulkan saroylar va binolar qad ko’tarib turibdiki, ular ushbu shahar aholisining yuksak mahorat sohibi ekanligidan dalolatdir».",
+      "v": [
+        "Samarqand",
+        "Buxoro",
+        "Toshkent",
+        "Jizzax"
+      ],
+      "t": 0,
+      "izoh": "Ibn Battuta Samarqand shahri bo’ylab sayr etarkan, uni Voha al-Qassirin daryosi qirg’og’idagi juda yirik va g’oyat go’zal shahar deb ta’riflagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#d04967f3"
+    },
+    {
+      "q": "Ibn Battuta asarlarida ta’riflagan Voha al-Qassirin hozirgi qaysi daryo nomini anglatadi?",
+      "v": [
+        "Zarafshon",
+        "Amudaryo",
+        "Sirdaryo",
+        "Chirchiq"
+      ],
+      "t": 0,
+      "izoh": "Samarqand shahri Zarafshon daryosi bo’yida joylashgan bo’lib, Ibn Battuta uni Voha al-Qassirin deb atagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#09876681"
+    },
+    {
+      "q": "Yirik shaharlar aholisi qancha bo’ladi?",
+      "v": [
+        "250 ming - 500 ming",
+        "100 ming - 250 ming",
+        "500 ming - 1 mln",
+        "1 mln dan ortiq"
+      ],
+      "t": 0,
+      "izoh": "Shaharlar aholi soniga qarab katta shaharlar (aholisi 100 mingdan ortiq), yirik shaharlar (aholisi 250 mingdan ortiq), juda yirik shaharlar (aholisi 500 mingdan ortiq) va «millioner shaharlar»ga ajratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#06d10731"
+    },
+    {
+      "q": "Katta shaharlar aholisi qancha bo’ladi?",
+      "v": [
+        "100 ming - 250 ming",
+        "250 ming - 500 ming",
+        "500 ming - 1 mln",
+        "1 mln dan ortiq"
+      ],
+      "t": 0,
+      "izoh": "Katta shaharlar — aholisi 100 mingdan ortiq bo’lgan shaharlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#3d4f544a"
+    },
+    {
+      "q": "O’zbekistondagi juda yirik shaharni belgilang.",
+      "v": [
+        "Samarqand",
+        "Nukus",
+        "Toshkent",
+        "Andijon"
+      ],
+      "t": 0,
+      "izoh": "Juda yirik shaharlar — aholisi 500 mingdan ortiq shaharlar. Samarqand shu toifaga kiradi; Toshkent esa aholisi 1 mln dan oshgani uchun «millioner shahar» hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#3b6be185"
+    },
+    {
+      "q": "Toshkent shahri qanday funksiyalarni bajaradi? 1) mamlakat poytaxti; 2) sanoat shahri; 3) sanoat markazi; 4) tarixiy-madaniy markaz; 5) viloyat markazi; 6) transport tuguni",
+      "v": [
+        "1, 2, 4, 6",
+        "1, 3, 4, 6",
+        "1, 2, 3, 6",
+        "1, 3, 5, 6"
+      ],
+      "t": 0,
+      "izoh": "Toshkent — mamlakat poytaxti, sanoat shahri, transport tuguni, tarixiy-madaniy markaz. Bunday shaharlar ko’p funksiyali shaharlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#27f2e0cc"
+    },
+    {
+      "q": "Ko’p funksiyali shaharlar juda tez rivojlanadi, ular yonida yo’ldosh shaharlar vujudga kelib, ... larni hosil qiladi.",
+      "v": [
+        "aglomeratsiya",
+        "urbanizatsiya",
+        "megapolis",
+        "«millioner» shahar"
+      ],
+      "t": 0,
+      "izoh": "Ko’p funksiyali shaharlar juda tez rivojlanadi, ular yonida yo’ldosh shaharlar vujudga kelib, aglomeratsiyalarni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#7e3a19b8"
+    },
+    {
+      "q": "Samarqand shahri qanday funksiyalarni bajaradi? 1) mamlakat poytaxti; 2) sanoat shahri; 3) sanoat markazi; 4) tarixiy-madaniy markaz; 5) viloyat markazi; 6) transport tuguni",
+      "v": [
+        "3, 4, 5",
+        "2, 4, 5",
+        "1, 4, 6",
+        "2, 5, 6"
+      ],
+      "t": 0,
+      "izoh": "Samarqand — viloyat markazi, sanoat markazi va tarixiy-madaniy markazdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#355dec98"
+    },
+    {
+      "q": "Aholisi soni 50 mingdan 100 minggacha boradigan shaharlar guruhiga kiruvchi viloyat markazini aniqlang.",
+      "v": [
+        "Guliston",
+        "Navoiy",
+        "Termiz",
+        "Urganch"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 14-rasm ma’lumotlariga ko’ra, Guliston shahri aholisi 100 mingga yetmagan viloyat markazi hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#47d69606"
+    },
+    {
+      "q": "Mamlakatimizdagi eng katta shahar aglomeratsiyasi - bu...",
+      "v": [
+        "Toshkent",
+        "Samarqand",
+        "Farg’ona",
+        "Buxoro"
+      ],
+      "t": 0,
+      "izoh": "Toshkent mamlakatimizda eng katta shahar aglomeratsiyasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo_8_d9_aholi_punktlari#2e5ebbb2"
+    },
+    {
+      "q": "Mamlakatimizdagi yirik shaharlarni belgilang.",
+      "v": [
+        "Andijon, Nukus, Farg’ona",
+        "Buxoro, Namangan, Qarshi",
+        "Toshkent, Angren, Olmaliq",
+        "Samarqand, Marg’ilon, Jizzax"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 14-rasm ma’lumotlariga ko’ra, Andijon, Nukus, Farg’ona shaharlari yirik shaharlar (aholisi 250 mingdan ortiq) guruhiga kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#344c865e"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri katta shaharlar guruhiga kirmaydi?",
+      "v": [
+        "Qarshi",
+        "Marg’ilon",
+        "Jizzax",
+        "Qo’qon"
+      ],
+      "t": 0,
+      "izoh": "14-rasm ma’lumotlariga ko’ra, Qarshi shahri aholisi 250 mingdan oshgani uchun u katta emas, yirik shaharlar guruhiga kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#4a3c7702"
+    },
+    {
+      "q": "Shahrisabzda qancha aholi yashaydi?",
+      "v": [
+        "137 ming",
+        "136 ming",
+        "142 ming",
+        "129 ming"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 14-rasm (aholisi 100 ming kishidan ko’p bo’lgan shaharlar) ma’lumotiga ko’ra, Shahrisabzda 137 ming aholi yashaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#81fc90f2"
+    },
+    {
+      "q": "O’zbekistonda aholi soni 100 ming kishidan ko’p bo’lgan nechta shahar mavjud?",
+      "v": [
+        "18 ta",
+        "20 ta",
+        "15 ta",
+        "19 ta"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 14-rasm ma’lumotiga ko’ra, O’zbekistonda aholi soni 100 ming kishidan ko’p bo’lgan 18 ta shahar mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#3d54aa2f"
+    },
+    {
+      "q": "O’zbekistonda aholi punkti shahar maqomini olishi uchun...",
+      "v": [
+        "aholisi 7 ming va undan ko’p bo’lishi, yashayotgan aholining 2/3 qismi ishchi va xizmatchilar hamda ularning oilalaridan iborat bo’lishi kerak",
+        "aholisi 5 ming va undan ko’p bo’lishi, yashayotgan aholining 1/2 qismi ishchi va xizmatchilar hamda ularning oilalaridan iborat bo’lishi kerak",
+        "aholisi 5 ming va undan ko’p bo’lishi, yashayotgan aholining 2/3 qismi ishchi va xizmatchilar hamda ularning oilalaridan iborat bo’lishi kerak",
+        "aholisi 7 ming va undan ko’p bo’lishi, yashayotgan aholining 1/2 qismi ishchi va xizmatchilar hamda ularning oilalaridan iborat bo’lishi kerak"
+      ],
+      "t": 0,
+      "izoh": "O’zbekistonda aholi punkti shahar maqomini olishi uchun uning aholisi 7 ming va undan ko’p bo’lishi, yashayotgan aholining 2/3 qismi ishchi va xizmatchilar hamda ularning oilalaridan iborat bo’lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#894001ab"
+    },
+    {
+      "q": "Shahar turmush tarzi ifodalanadigan sohalar soni nechta?",
+      "v": [
+        "8 ta",
+        "9 ta",
+        "10 ta",
+        "7 ta"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 15-rasmga ko’ra, shahar turmush tarzi 8 ta sohada ifodalanadi. Aholi punktiga shahar maqomini berishda unda shahar turmush tarzining holati ham hisobga olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#40306f26"
+    },
+    {
+      "q": "Sanoat rivojlanayotgan, tabiiy boyliklar o’zlashtirilayotgan yerlarda qanday aholi punktlari vujudga keladi?",
+      "v": [
+        "shaharchalar",
+        "shaharlar",
+        "qishloqlar",
+        "ovullar"
+      ],
+      "t": 0,
+      "izoh": "Shaharchalar sanoat rivojlanayotgan, tabiiy boyliklar o’zlashtirilayotgan joylarda vujudga keladi. Iskandar, Kegayli, Ulug’bek, G’ozg’on, Zomin shaharchalari shular jumlasidandir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#5b256fa1"
+    },
+    {
+      "q": "Quyidagi shahar(cha)lardan qaysilarida aholining aksariyati muayyan tarmoqdagina xizmat qiladi?",
+      "v": [
+        "Ulug’bek, G’ozg’on, Zomin",
+        "Gazli, Taxiatosh, Shirin",
+        "Yangiobod, Zarafshon, Uchquduq",
+        "Angren, Bekobod, Olmaliq"
+      ],
+      "t": 0,
+      "izoh": "Iskandar, Kegayli, Ulug’bek, G’ozg’on, Zomin kabi shaharchalarning ko’pchiligida aholining aksariyati muayyan tarmoqdagina xizmat qiladi (neftchilar shaharchasi, konchilar shaharchasi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#0aeec2b3"
+    },
+    {
+      "q": "Surxondaryo viloyatidagi Tohchiyon shaharchasi nimaning negizida vujudga kelgan?",
+      "v": [
+        "ko’mir koni",
+        "neft koni",
+        "yangi yerlarni o’zlashtirish",
+        "qishloq xo’jalik xomashyosini qayta ishlovchi sanoat"
+      ],
+      "t": 0,
+      "izoh": "Tohchiyon shaharchasi (Surxondaryo viloyati) ko’mir koni negizida vujudga kelgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#d4299685"
+    },
+    {
+      "q": "O’zbekistonda 1989-yilga nisbatan 2019-yilda shahar aholisi salmog’i necha foizga o’sdi?",
+      "v": [
+        "10,5",
+        "10",
+        "12",
+        "11,5"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 16-rasm (qishloq va shahar aholisi salmog’ining o’zgarishi) ma’lumotiga ko’ra, 1989-2019-yillarda shahar aholisi salmog’i 10,5 foizga o’sgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#6426ae0d"
+    },
+    {
+      "q": "O’zbekistonda yirik shaharlar soni nechta?",
+      "v": [
+        "5 ta",
+        "4 ta",
+        "10 ta",
+        "8 ta"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 14-rasm ma’lumotlariga ko’ra, O’zbekistonda yirik shaharlar (aholisi 250 mingdan ortiq) soni 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#b7af54e6"
+    },
+    {
+      "q": "Yangi yerlarni o’zlashtirish, qishloq xo’jalik xomashyosini qayta ishlovchi sanoat negizida qad ko’targan shaharlarni belgilang.",
+      "v": [
+        "Yangiyo’l, Guliston, Yangiyer",
+        "Yangiobod, Sirdaryo, Chirchiq",
+        "Jizzax, Shirin, Taxiatosh",
+        "Olmaliq, Zarafshon, Navoiy"
+      ],
+      "t": 0,
+      "izoh": "Yangi yerlarni o’zlashtirish, qishloq xo’jalik xomashyosini qayta ishlovchi sanoat negizida Yangiyo’l, Guliston, Yangiyer kabi shaharlar qad ko’tardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#21d71c26"
+    },
+    {
+      "q": "Nima sababdan O’zbekistonda shahar aholisi salmog’i keskin ko’payib ketdi?",
+      "v": [
+        "ko’pgina qishloq aholi punktlariga shaharcha maqomining berilishi tufayli",
+        "viloyat markazlari hududining kengayib, yondosh tuman hududining bir qismini egallashi tufayli",
+        "shaharlarda tug’ilish salmog’ining yuqoriligi tufayli",
+        "qishloq aholisining shaharlarga ko’chib ketishi tufayli"
+      ],
+      "t": 0,
+      "izoh": "Qishloq joylarda kichik biznes va tadbirkorlik rivojlanishi tufayli ko’pgina qishloq aholi punktlariga shaharcha maqomi berildi, natijada mustaqillikkacha 60 foiz aholisi qishloqda istiqomat qilgan agrar respublika aholisining yarmidan ortig’i shaharlarda yashamoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#d35df715"
+    },
+    {
+      "q": "Foydali qazilmalar va suv boyliklari mavjud hududlarda bunyod bo’lgan shaharlarni aniqlang.",
+      "v": [
+        "Uchquduq, Taxiatosh, Zarafshon",
+        "Yangiyo’l, Guliston, Yangiyer",
+        "Zomin, Ulug’bek, G’ozg’on",
+        "Shahrisabz, Denov, Kattaqo’rg’on"
+      ],
+      "t": 0,
+      "izoh": "Yangi shaharlar (Angren, Bekobod, Olmaliq, Chirchiq, Navoiy, Uchquduq, Taxiatosh, Zarafshon va boshqalar) asosan foydali qazilmalar va suv boyliklari mavjud hududlarda bunyod bo’lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#f13e0ed3"
+    },
+    {
+      "q": "Qanday sabablarga ko’ra mamlakatimizda qishloqlar bir-biriga yaqin joylashgan va aholisi ko’p?",
+      "v": [
+        "tabiiy, iqtisodiy va tarixiy sabablarga ko’ra",
+        "faqat tabiiy sabablarga ko’ra",
+        "faqat iqtisodiy sabablarga ko’ra",
+        "faqat diniy sabablarga ko’ra"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy, iqtisodiy va tarixiy sabablarga ko’ra mamlakatimizda qishloqlar bir-biriga yaqin joylashgan va aholisi ko’p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo_8_d9_aholi_punktlari#228fc5f5"
+    },
+    {
+      "q": "Shaharlarni rejalashtirishda kishilarning turar joyi bilan ish joyi orasi necha km dan uzoq bo’lmasligi kerak?",
+      "v": [
+        "4-5",
+        "2-3",
+        "3-4",
+        "5-6"
+      ],
+      "t": 0,
+      "izoh": "Aholi punktlarini yuksaltirishda shaharlarni rejalashtirishda kishilarning turar joyi bilan ish joyi orasi 4-5 km dan uzoq bo’lmasligi e’tiborda bo’ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#59d99b64"
+    },
+    {
+      "q": "Qishloq aholi punktlari aholisi soniga ko’ra nechta turga bo’linadi?",
+      "v": [
+        "4 ta",
+        "2 ta",
+        "3 ta",
+        "5 ta"
+      ],
+      "t": 0,
+      "izoh": "Qishloq aholi punktlari aholisi soniga ko’ra 4 turga bo’linadi: yirik (5 mingdan ko’p), katta (3-5 ming), o’rta (1-3 ming) va kichik (1 minggacha) aholi punktlari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#0df16b32"
+    },
+    {
+      "q": "Aholi punktlarini yuksaltirishda nechta omilga e’tibor qaratiladi?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "4 ta",
+        "5 ta"
+      ],
+      "t": 0,
+      "izoh": "Aholi punktlarini yuksaltirishda 3 ta omil e’tiborda bo’ladi: turar joy bilan ish joyi orasi 4-5 km dan oshmasligi; qadimiy shaharlarni zamonaviy qulayliklarga ega qilib qayta qurish; yirik shaharlarda ekologik vaziyatni buzadigan korxonalar qurilishini cheklash va borlarini ko’chirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#04193676"
+    },
+    {
+      "q": "Navoiy shahrida qancha aholi istiqomat qiladi?",
+      "v": [
+        "136 000 kishi",
+        "141 000 kishi",
+        "138 000 kishi",
+        "134 000 kishi"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 14-rasm ma’lumotiga ko’ra, Navoiy shahrida 136 000 kishi istiqomat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#95219f60"
+    },
+    {
+      "q": "Mamlakatimizdagi qaysi shaharda 174 000 kishi istiqomat qiladi?",
+      "v": [
+        "Jizzax",
+        "Chirchiq",
+        "Termiz",
+        "Angren"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 14-rasm ma’lumotiga ko’ra, Jizzax shahrida 174 000 kishi istiqomat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#a06114e0"
+    },
+    {
+      "q": "1989-yilda mamlakatimizda qishloq aholisi salmog’i necha foizni tashkil etgan?",
+      "v": [
+        "60",
+        "49",
+        "51",
+        "40"
+      ],
+      "t": 0,
+      "izoh": "Mustaqillikkacha O’zbekiston aholisining 60 foizi qishloqda istiqomat qilgan agrar respublika edi. Hozirda aholining yarmidan ortig’i shaharlarda yashamoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#ec8200d1"
+    },
+    {
+      "q": "Samarqand, Qo’qon, Buxoro, Xiva, Toshkent kabi shahar qiyofasidagi aholi punktlari nima paydo bo’lgandan so’ng vujudga kelgan?",
+      "v": [
+        "hunarmandchilik va savdo-sotiq",
+        "dehqonchilik va chorvachilik",
+        "sanoat va transport",
+        "konchilik va metallurgiya"
+      ],
+      "t": 0,
+      "izoh": "Shahar qiyofasidagi Samarqand, Qo’qon, Buxoro, Xiva, Toshkent kabi aholi punktlari hunarmandchilik va savdo-sotiq paydo bo’lgandan so’ng vujudga kelgan. Ular dunyodagi eng qadimiy shaharlardan hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#7ac64fc4"
+    },
+    {
+      "q": "XX asr boshlaridagi shaharlar qayerlarda vujudga kelgan?",
+      "v": [
+        "daryo hamda soy bo’ylarida yoki karvon yo’llarida",
+        "faqat tog’ etaklarida",
+        "faqat cho’l markazlarida",
+        "temiryo’l stansiyalari atrofida"
+      ],
+      "t": 0,
+      "izoh": "XX asr boshlarida O’zbekiston hududidagi 20 ga yaqin shahar daryo hamda soy bo’ylarida yoki karvon yo’llarida vujudga kelgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#a77b8fcd"
+    },
+    {
+      "q": "Juda yirik shaharlar aholisi qancha bo’ladi?",
+      "v": [
+        "500 mingdan ortiq",
+        "100 mingdan ortiq",
+        "250 mingdan ortiq",
+        "50 mingdan ortiq"
+      ],
+      "t": 0,
+      "izoh": "Juda yirik shaharlar — aholisi 500 mingdan ortiq bo’lgan shaharlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#12a05f81"
+    },
+    {
+      "q": "Bir qancha vazifalarni (funksiyalarni) bajaradigan shaharlar qanday shaharlar deyiladi?",
+      "v": [
+        "ko’p funksiyali shaharlar",
+        "yo’ldosh shaharlar",
+        "millioner shaharlar",
+        "sanoat shaharlari"
+      ],
+      "t": 0,
+      "izoh": "Bir qancha vazifalarni (funksiyalarni) bajaradigan shaharlar ko’p funksiyali shaharlar deyiladi. Ular juda tez rivojlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo_8_d9_aholi_punktlari#c7cf374d"
+    },
+    {
+      "q": "Qishloq aholi punktlari deb qanday joylar yuritiladi?",
+      "v": [
+        "aholisining asosiy faoliyat turi qishloq xo’jaligini yuritish, qishloq xo’jalik mahsulotlarini qayta ishlash va boshqa qishloq joylarga xos faoliyat hisoblanadigan joylar",
+        "aholisining asosiy qismi sanoatda band bo’lgan joylar",
+        "aholisi 7 mingdan ortiq bo’lgan barcha joylar",
+        "faqat chorvachilik bilan shug’ullanadigan joylar"
+      ],
+      "t": 0,
+      "izoh": "Aholisining asosiy faoliyat turi qishloq xo’jaligini yuritish, qishloq xo’jalik mahsulotlarini qayta ishlash va boshqa qishloq joylarga xos bo’lgan faoliyatni yuritish hisoblanadigan joylar qishloq aholi punktlari deb yuritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#55c7680a"
+    },
+    {
+      "q": "Yirik qishloq aholi punktlarining aholisi soni qancha bo’ladi?",
+      "v": [
+        "5 ming kishidan ko’p",
+        "3 ming kishidan 5 ming kishigacha",
+        "1 ming kishidan 3 ming kishigacha",
+        "bir ming kishigacha"
+      ],
+      "t": 0,
+      "izoh": "Yirik qishloq aholi punktlari — aholisi soni 5 ming kishidan ko’p bo’lgan punktlardir. Katta punktlar 3-5 ming, o’rta punktlar 1-3 ming, kichik punktlar 1 minggacha aholiga ega bo’ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#277afbfb"
+    },
+    {
+      "q": "Qishloq aholi punktlari chegarasini belgilash va o’zgartirish kim tomonidan amalga oshiriladi?",
+      "v": [
+        "tuman hokimiyat organlari tomonidan",
+        "viloyat kengashlari tomonidan",
+        "Vazirlar Mahkamasi tomonidan",
+        "mahalla fuqarolar yig’ini tomonidan"
+      ],
+      "t": 0,
+      "izoh": "Qishloq aholi punktlari chegarasini belgilash va o’zgartirish tuman hokimiyat organlari tomonidan, ularning rejalashtirilishi, qurilishi hamda xo’jalik ichidagi yer tuzilishi loyihalariga muvofiq amalga oshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d9_aholi_punktlari#db60254d"
+    },
+    {
+      "q": "Qishloq aholi punktlarining kengayishi nimaga olib kelmoqda?",
+      "v": [
+        "qishloq xo’jaligiga yaroqli yerlarning kamayishiga",
+        "shahar aholisining kamayishiga",
+        "aholi zichligining pasayishiga",
+        "yaylovlarning ko’payishiga"
+      ],
+      "t": 0,
+      "izoh": "Qishloq aholi punktlarining kengayishi qishloq xo’jaligiga yaroqli yerlarning kamayishiga olib kelmoqda. Shu sababli ularning chegarasini belgilash qonuniy tartibga solingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d9_aholi_punktlari#297426d0"
+    }
+  ]
+}

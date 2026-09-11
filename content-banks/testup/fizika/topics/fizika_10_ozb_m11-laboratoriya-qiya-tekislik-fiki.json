@@ -1,0 +1,396 @@
+{
+  "nom": "11-mavzu. Laboratoriya Qiya Tekislik Fiki",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "\"Qiya tekislikning FIKini aniqlash\" laboratoriya ishining maqsadi nima?",
+      "v": [
+        "Qiya tekislikda bajariladigan foydali va to'la ishlar hamda FIK haqidagi bilimlarni mustahkamlash",
+        "Erkin tushish tezlanishini aniqlash",
+        "Ishqalanish koeffitsiyentini aniqlash",
+        "Jismning massasini o'lchash"
+      ],
+      "t": 0,
+      "izoh": "Laboratoriya ishining maqsadi qiya tekislik FIKi bo'yicha bilimlarni mustahkamlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#318a5f70"
+    },
+    {
+      "q": "Laboratoriya ishida qaysi asboblar kerak bo'ladi?",
+      "v": [
+        "Uzun yupqa taxta, qisqichli shtativ, yog'och brusok, chizg'ich, yuklar to'plami, dinamometr",
+        "Tarozi, sekundomer, lineyka, prokladka",
+        "Barometr, termometr, chizg'ich",
+        "Faqat dinamometr"
+      ],
+      "t": 0,
+      "izoh": "Kerakli asboblar: uzun yupqa taxta, shtativ, brusok, chizg'ich, yuklar, dinamometr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#9a814ef3"
+    },
+    {
+      "q": "Laboratoriya ishida qiya tekislikning uzunligi va balandligi qanday o'lchanadi?",
+      "v": [
+        "Chizg'ich yordamida",
+        "Dinamometr yordamida",
+        "Tarozi yordamida",
+        "Sekundomer yordamida"
+      ],
+      "t": 0,
+      "izoh": "l va h chizg'ich yordamida o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#69248d6e"
+    },
+    {
+      "q": "Laboratoriya ishida yog'och brusokning og'irligi qanday aniqlanadi?",
+      "v": [
+        "Dinamometr yordamida",
+        "Chizg'ich yordamida",
+        "Tarozi yordamida",
+        "Formula orqali hisoblanadi"
+      ],
+      "t": 0,
+      "izoh": "Brusok og'irligi P dinamometr yordamida aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#daa87faa"
+    },
+    {
+      "q": "Brusok qiya tekislik bo'ylab qanday tortiladi?",
+      "v": [
+        "Dinamometr yordamida F kuch bilan bir tekisda",
+        "Dinamometr yordamida tezlanish bilan",
+        "Qo'lda, o'zgaruvchan tezlik bilan",
+        "Shtativ yordamida"
+      ],
+      "t": 0,
+      "izoh": "Brusok dinamometr bilan bir tekisda tortiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#a5220753"
+    },
+    {
+      "q": "Laboratoriya ishida to'la ish qanday formula bilan hisoblanadi?",
+      "v": [
+        "At = F · l",
+        "At = P · h",
+        "At = mgh",
+        "At = F · h"
+      ],
+      "t": 0,
+      "izoh": "To'la ish At = Fl formulasi bilan hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#74fb0455"
+    },
+    {
+      "q": "Laboratoriya ishida foydali ish qanday formula bilan hisoblanadi?",
+      "v": [
+        "Af = P · h",
+        "Af = F · l",
+        "Af = P · l",
+        "Af = F · h"
+      ],
+      "t": 0,
+      "izoh": "Foydali ish Af = Ph formulasi bilan hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#e94d842d"
+    },
+    {
+      "q": "Laboratoriya ishida qiya tekislikning FIKi qanday hisoblanadi?",
+      "v": [
+        "η = (Af / At) · 100%",
+        "η = (At / Af) · 100%",
+        "η = (F / P) · 100%",
+        "η = (h / l) · 100%"
+      ],
+      "t": 0,
+      "izoh": "η = Af/At · 100% ifoda yordamida hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#bf0bee95"
+    },
+    {
+      "q": "Laboratoriya ishida tajriba necha marta takrorlanadi?",
+      "v": [
+        "Kamida uch marta",
+        "Bir marta",
+        "Ikki marta",
+        "O'n marta"
+      ],
+      "t": 0,
+      "izoh": "Tajriba kamida uch marta takrorlanadi, natijalar jadvalga yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#01088e29"
+    },
+    {
+      "q": "Laboratoriya ishida tajribani qiya tekislikning har xil balandliklari uchun o'tkazishdan qanday xulosa chiqariladi?",
+      "v": [
+        "FIK qiya tekislik burchagiga bog'liqligi haqida",
+        "Ishqalanish kuchi massaga bog'liqligi haqida",
+        "Tezlanish massaga bog'liqligi haqida",
+        "Quvvat vaqtga bog'liqligi haqida"
+      ],
+      "t": 0,
+      "izoh": "FIKning qiya tekislik burchagiga bog'liqligi haqida xulosa chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#01a08abb"
+    },
+    {
+      "q": "Foydali ish to'la ishdan kam bo'lishining sababi nimada?",
+      "v": [
+        "Ishqalanish kuchini yengishga ish sarflanishida",
+        "Kuch noto'g'ri o'lchanishida",
+        "Chizg'ichning xatoligida",
+        "Brusok massasining kattaligida"
+      ],
+      "t": 0,
+      "izoh": "Ishqalanishga qarshi zararli ish sarflangani uchun foydali ish to'la ishdan kam.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#ee2536c7"
+    },
+    {
+      "q": "Qiya tekislik qanday qurilma?",
+      "v": [
+        "Ish bajarishda kuchdan yutish beruvchi oddiy mexanizm",
+        "Faqat massani o'lchaydigan asbob",
+        "Tezlikni oshiruvchi qurilma",
+        "Quvvatni saqlovchi qurilma"
+      ],
+      "t": 0,
+      "izoh": "Qiya tekislik kuchdan yutish beruvchi oddiy mexanizm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#d6dc0756"
+    },
+    {
+      "q": "Laboratoriya ishida dinamometr necha marta ishlatiladi va nimalar uchun?",
+      "v": [
+        "Ikki marta: brusok og'irligini va tortish kuchini o'lchash uchun",
+        "Bir marta: faqat tortish kuchini o'lchash uchun",
+        "Uch marta: har xil yuklar uchun",
+        "Umuman ishlatilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Dinamometr P ni va F ni o'lchash uchun ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#86666d36"
+    },
+    {
+      "q": "Laboratoriya ishida yupqa taxta qanday o'rnatiladi?",
+      "v": [
+        "Qisqichli shtativga mahkamlanadi",
+        "Stol ustiga yotqiziladi",
+        "Devorga osiladi",
+        "Qo'lda ushlab turiladi"
+      ],
+      "t": 0,
+      "izoh": "Yupqa taxta shtativga mahkamlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#3212b72e"
+    },
+    {
+      "q": "Tajribada brusokni bir tekisda tortishning ahamiyati nima?",
+      "v": [
+        "Tortish kuchi o'zgarmas bo'lib, umumiy ishni to'g'ri hisoblash uchun",
+        "Tajribani tezroq tugatish uchun",
+        "Ishqalanishni yo'qotish uchun",
+        "Brusokni buzmaslik uchun"
+      ],
+      "t": 0,
+      "izoh": "Bir tekis harakatda kuch o'zgarmas bo'lib, At = Fl to'g'ri hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#d2a91720"
+    },
+    {
+      "q": "Laboratoriya ishida o'lchanadigan kattaliklar qaysilar?",
+      "v": [
+        "l, h, F, P",
+        "l, h, m, t",
+        "F, P, a, v",
+        "Faqat F va l"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda l, h, F, P o'lchanadi, At, Af, η hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#76955792"
+    },
+    {
+      "q": "Laboratoriya jadvalida qaysi kattaliklar hisoblab yoziladi?",
+      "v": [
+        "At, Af, η",
+        "l, h, F",
+        "m, v, a",
+        "P, t, s"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda At, Af va η hisoblab yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#3325fbc6"
+    },
+    {
+      "q": "Qiya tekislik burchagi orttirilsa, tajribada FIK qanday o'zgarishi kutiladi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Nazariyaga ko'ra burchak ortishi bilan FIK ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#3802de2b"
+    },
+    {
+      "q": "Laboratoriya ishida xatoliklarni hisoblash ko'nikmasi nima uchun shakllantiriladi?",
+      "v": [
+        "O'lchov natijalarining aniqligini baholash uchun",
+        "Tajribani tezlashtirish uchun",
+        "Asboblarni tejash uchun",
+        "Jadvalni chiroyli to'ldirish uchun"
+      ],
+      "t": 0,
+      "izoh": "Ish maqsadlarida xatoliklarni hisoblash ko'nikmasi ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#56dba70d"
+    },
+    {
+      "q": "Tajribada qiya tekislikning uzunligi l o'zgartirib, balandligi h o'zgarmas qoldirilsa, qiyalik burchagi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi, chunki sin α = h/l kichrayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "h o'zgarmasa, l ortishi sinα ni kichraytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#eefc70c7"
+    },
+    {
+      "q": "Laboratoriya ishida brusok og'irligi P va tortish kuchi F qanday o'lchov birligida ifodalanadi?",
+      "v": [
+        "Nyuton (N)",
+        "Joul (J)",
+        "Vatt (V)",
+        "Kilogramm (kg)"
+      ],
+      "t": 0,
+      "izoh": "Kuchlar nyutonlarda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#17a0b1cb"
+    },
+    {
+      "q": "Laboratoriya jadvalida qiya tekislikning uzunligi l va balandligi h qanday o'lchov birligida yoziladi?",
+      "v": [
+        "Metr (m)",
+        "Nyuton (N)",
+        "Joul (J)",
+        "Foiz (%)"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda l va h metrda, F va P nyutonda, At va Af joulda, η foizda yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#c5cbe8c7"
+    },
+    {
+      "q": "Qiya tekislikning FIKini oshirish uchun tajribada nima qilish mumkin?",
+      "v": [
+        "Qiyalik burchagini orttirish yoki ishqalanishni kamaytirish",
+        "Jism massasini oshirish",
+        "Tortish kuchini oshirish",
+        "Tekislik uzunligini oshirish"
+      ],
+      "t": 0,
+      "izoh": "η = 1/(1 + μctgα) bo'yicha burchak ortishi va μ kamayishi FIKni oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#d87730e3"
+    },
+    {
+      "q": "Laboratoriya ishida foydali ish nimaga teng?",
+      "v": [
+        "Brusokni h balandlikka ko'tarish uchun bajariladigan P·h ishga",
+        "Tortish kuchi bajargan F·l ishga",
+        "Ishqalanish kuchi bajargan ishga",
+        "Nolga"
+      ],
+      "t": 0,
+      "izoh": "Foydali ish Af = Ph.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#23bb8ead"
+    },
+    {
+      "q": "Uyga vazifada tajribani qanday asbob bilan o'tkazish tavsiya etilgan?",
+      "v": [
+        "Dinamometrli tarozi yordamida",
+        "Sekundomer yordamida",
+        "Barometr yordamida",
+        "Termometr yordamida"
+      ],
+      "t": 0,
+      "izoh": "Uyda dinamometrli tarozi yordamida tajribani o'tkazish tavsiya qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#f5c573e8"
+    },
+    {
+      "q": "Laboratoriya ishida foydali ish va to'la ishni aniqlash uchun qaysi kattaliklar oldindan o'lchanishi shart?",
+      "v": [
+        "F, P, l, h",
+        "Faqat F va P",
+        "Faqat l va h",
+        "Faqat massa"
+      ],
+      "t": 0,
+      "izoh": "At = Fl va Af = Ph uchun F, P, l, h o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m11-laboratoriya-qiya-tekislik-fiki#4229ac2a"
+    }
+  ]
+}

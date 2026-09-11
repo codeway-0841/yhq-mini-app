@@ -1,0 +1,456 @@
+{
+  "nom": "49-mavzu. Tok Kuchi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Tok kuchi nima deb ataladi?",
+      "v": [
+        "O‘tkazgichning ko‘ndalang kesim yuzidan vaqt birligida o‘tgan zaryad miqdoriga qiymat jihatidan teng kattalik",
+        "O‘tkazgichning uzunligi",
+        "O‘tkazgichning qarshiligi",
+        "Zanjirdagi umumiy zaryad"
+      ],
+      "t": 0,
+      "izoh": "Vaqt birligida ko‘ndalang kesimdan o‘tgan zaryad miqdori tok kuchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#39b89097"
+    },
+    {
+      "q": "Tok kuchi qanday harf bilan belgilanadi?",
+      "v": [
+        "I",
+        "U",
+        "q",
+        "R"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi I harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m49-tok-kuchi#cf36a745"
+    },
+    {
+      "q": "Tok kuchini aniqlash formulasi qaysi?",
+      "v": [
+        "I = q/t",
+        "I = U/q",
+        "I = q·t",
+        "I = A/q"
+      ],
+      "t": 0,
+      "izoh": "I = q/t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m49-tok-kuchi#f3c350da"
+    },
+    {
+      "q": "SI sistemasida tok kuchining birligi nima?",
+      "v": [
+        "Amper",
+        "Volt",
+        "Kulon",
+        "Om"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi birligi — amper (A).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#7a8983f7"
+    },
+    {
+      "q": "Amper birligi kim sharafiga qabul qilingan?",
+      "v": [
+        "Fransuz fizigi Andre Mari Amper",
+        "Alessandro Volta",
+        "Georg Simon Om",
+        "Charlz Kulon"
+      ],
+      "t": 0,
+      "izoh": "Andre Mari Amper sharafiga amper qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#161c7b4b"
+    },
+    {
+      "q": "Andre Mari Amper qaysi yillarda yashagan?",
+      "v": [
+        "1775–1836",
+        "1745–1827",
+        "1789–1854",
+        "1642–1727"
+      ],
+      "t": 0,
+      "izoh": "Andre Mari Amper (1775–1836) fransuz fizigi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m49-tok-kuchi#3a43e839"
+    },
+    {
+      "q": "1 amper qanday ta’riflanadi?",
+      "v": [
+        "O‘tkazgichning ko‘ndalang kesim yuzidan 1 s da 1 C zaryad o‘tgandagi tok kuchi",
+        "1 s da 1 J ish bajarilishi",
+        "1 m da 1 C zaryad",
+        "1 V da 1 Om"
+      ],
+      "t": 0,
+      "izoh": "1 A = 1 C / 1 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#22da4455"
+    },
+    {
+      "q": "t vaqt davomida o‘tkazgichdan o‘tgan zaryad miqdorini ifodalovchi formula qaysi?",
+      "v": [
+        "q = I·t",
+        "q = I/t",
+        "q = U·t",
+        "q = A/U"
+      ],
+      "t": 0,
+      "izoh": "q = I·t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m49-tok-kuchi#dfddbf0f"
+    },
+    {
+      "q": "Zaryad miqdorining birligi amper va sekund orqali qanday ifodalanadi?",
+      "v": [
+        "1 C = 1 A · 1 s",
+        "1 C = 1 A / 1 s",
+        "1 C = 1 V · 1 A",
+        "1 C = 1 J · 1 s"
+      ],
+      "t": 0,
+      "izoh": "1 C = 1 A·1 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m49-tok-kuchi#2e76c6ef"
+    },
+    {
+      "q": "Tok kuchi qanday kattalik?",
+      "v": [
+        "Skalyar",
+        "Vektor",
+        "O‘lchamsiz",
+        "Davriy"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi skalyar kattalikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#51775f11"
+    },
+    {
+      "q": "Xonadonni yoritishda ishlatiladigan elektr lampochkalardan o‘tayotgan tok kuchi taxminan qancha?",
+      "v": [
+        "0,2 A – 0,5 A",
+        "10 A – 20 A",
+        "100 A",
+        "0,0001 A"
+      ],
+      "t": 0,
+      "izoh": "Lampochkalardan o‘tuvchi tok 0,2 A – 0,5 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#216d3172"
+    },
+    {
+      "q": "Kalkulyator, elektron qo‘l soat, mobil telefon kabi qurilmalar qanday tok iste’mol qiladi?",
+      "v": [
+        "1 A ga nisbatan bir necha million marta kichik tok",
+        "Bir necha amper",
+        "100 A",
+        "Hech qanday tok iste’mol qilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Bunday qurilmalar mikroamperlar darajasida tok iste’mol qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#2a1e6096"
+    },
+    {
+      "q": "1 milliamper nechaga teng?",
+      "v": [
+        "0,001 A",
+        "1000 A",
+        "0,000001 A",
+        "0,1 A"
+      ],
+      "t": 0,
+      "izoh": "1 mA = 0,001 A = 10⁻³ A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m49-tok-kuchi#87a14e0c"
+    },
+    {
+      "q": "1 mikroamper nechaga teng?",
+      "v": [
+        "0,000 001 A",
+        "0,001 A",
+        "1000 A",
+        "0,1 A"
+      ],
+      "t": 0,
+      "izoh": "1 µA = 0,000001 A = 10⁻⁶ A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m49-tok-kuchi#7a320369"
+    },
+    {
+      "q": "Tok kuchi qanday asbob bilan o‘lchanadi?",
+      "v": [
+        "Ampermetr",
+        "Voltmetr",
+        "Ommetr",
+        "Dinamometr"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi ampermetr yordamida o‘lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#a714162a"
+    },
+    {
+      "q": "Ampermetr zanjirga qanday ulanadi?",
+      "v": [
+        "Ketma-ket",
+        "Parallel",
+        "Aralash",
+        "Ulanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ampermetr zanjirga ketma-ket ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#a7ce43ad"
+    },
+    {
+      "q": "Ampermetrni zanjirga ulashda uning “+” belgili qutbi qayerga ulanadi?",
+      "v": [
+        "Tok manbaining musbat qutbidan kelayotgan o‘tkazgichga",
+        "Tok manbaining manfiy qutbiga",
+        "Yerga",
+        "Istalgan joyga"
+      ],
+      "t": 0,
+      "izoh": "“+” qutb tok manbaining musbat qutbidan kelayotgan o‘tkazgichga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#41785b7b"
+    },
+    {
+      "q": "Ampermetrning “–” belgili qisqichi qayerga ulanadi?",
+      "v": [
+        "Iste’molchi orqali tok manbaining manfiy qutbiga",
+        "Tok manbaining musbat qutbiga",
+        "Voltmetrga",
+        "Yerga"
+      ],
+      "t": 0,
+      "izoh": "“–” qisqich iste’molchi orqali manfiy qutbga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#ea03a5df"
+    },
+    {
+      "q": "Ampermetr iste’molchidan oldin yoki keyin ulansa, ko‘rsatishi qanday bo‘ladi?",
+      "v": [
+        "Bir xil bo‘ladi",
+        "Oldin ulansa katta bo‘ladi",
+        "Keyin ulansa katta bo‘ladi",
+        "Nolga teng bo‘ladi"
+      ],
+      "t": 0,
+      "izoh": "Ampermetr iste’molchidan oldin ham, keyin ulansa ham ko‘rsatishi bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#cc520764"
+    },
+    {
+      "q": "Maktab fizika xonasida qanday asbobdan foydalaniladi?",
+      "v": [
+        "Milliampermetr",
+        "Barometr",
+        "Manometr",
+        "Termometr"
+      ],
+      "t": 0,
+      "izoh": "Maktabda milliampermetr ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#abb2bb68"
+    },
+    {
+      "q": "O‘tkazgichdan 4 minutda 60 C zaryad o‘tgan bo‘lsa, tok kuchi qancha?",
+      "v": [
+        "0,25 A",
+        "15 A",
+        "240 A",
+        "4 A"
+      ],
+      "t": 0,
+      "izoh": "I = q/t = 60/240 = 0,25 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m49-tok-kuchi#65a5bfcd"
+    },
+    {
+      "q": "Lampochka spiralidan 0,4 A tok o‘tmoqda. 5 minutda qancha zaryad o‘tadi?",
+      "v": [
+        "120 C",
+        "2 C",
+        "0,08 C",
+        "750 C"
+      ],
+      "t": 0,
+      "izoh": "q = I·t = 0,4·300 = 120 C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m49-tok-kuchi#f1bb3648"
+    },
+    {
+      "q": "Lampochkadan 0,3 A tok o‘tganda 360 C zaryad qancha vaqtda o‘tadi?",
+      "v": [
+        "1200 s",
+        "108 s",
+        "360 s",
+        "0,3 s"
+      ],
+      "t": 0,
+      "izoh": "t = q/I = 360/0,3 = 1200 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m49-tok-kuchi#74356d08"
+    },
+    {
+      "q": "Tok kuchi nimani tavsiflaydi?",
+      "v": [
+        "O‘tkazgichdan o‘tayotgan tokni",
+        "O‘tkazgichning issiqligini",
+        "Lampochkaning yorug‘ligini",
+        "O‘tkazgichning massasini"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi zanjirdan o‘tayotgan tokni tavsiflaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#85962331"
+    },
+    {
+      "q": "Nima uchun ampermetr elektr zanjirga iste’molchi orqali ulanadi?",
+      "v": [
+        "Zanjirdagi tok kuchini o‘zgartirmasdan o‘lchash uchun ketma-ket ulanishi zarur",
+        "Kuchlanishni oshirish uchun",
+        "Lampochkani qizdirish uchun",
+        "Zaryadni ko‘paytirish uchun"
+      ],
+      "t": 0,
+      "izoh": "Ampermetr zanjirga ketma-ket, iste’molchi orqali ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#58855669"
+    },
+    {
+      "q": "Hozirgi kunda elektr tokini o‘lchashda qanday ampermetrlar qo‘llanadi?",
+      "v": [
+        "Zamonaviy raqamli, elektron ampermetrlar ham",
+        "Faqat strelkali",
+        "Faqat mexanik",
+        "Hech qanday"
+      ],
+      "t": 0,
+      "izoh": "Raqamli, elektron ampermetrlar ham qo‘llanmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#ab8d4f3b"
+    },
+    {
+      "q": "Elektron zaryadining moduli qancha?",
+      "v": [
+        "1,6·10⁻¹⁹ C",
+        "1 C",
+        "9,1·10⁻³¹ C",
+        "0,001 C"
+      ],
+      "t": 0,
+      "izoh": "|e| = 1,6·10⁻¹⁹ C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#9cc3d1ae"
+    },
+    {
+      "q": "I = q/t formulasidagi q nima?",
+      "v": [
+        "O‘tkazgichning ko‘ndalang kesim yuzidan t vaqt ichida o‘tgan zaryad",
+        "Vaqt",
+        "Tok kuchi",
+        "Kuchlanish"
+      ],
+      "t": 0,
+      "izoh": "q — t vaqt ichida o‘tgan zaryad miqdori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m49-tok-kuchi#27f6a865"
+    },
+    {
+      "q": "Tok kuchi 1 A bo‘lganda o‘tkazgichning ko‘ndalang kesim yuzasidan 1 s da qancha zaryad o‘tadi?",
+      "v": [
+        "1 kulon",
+        "0,5 C",
+        "10 C",
+        "1,6·10⁻¹⁹ C"
+      ],
+      "t": 0,
+      "izoh": "1 A tokda 1 s da 1 C zaryad o‘tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m49-tok-kuchi#6d91c689"
+    },
+    {
+      "q": "Kundalik turmushdagi kichik tokli qurilmalarni o‘lchashda amperdan tashqari qanday birliklar qo‘llanadi?",
+      "v": [
+        "Milliamper va mikroamper",
+        "Volt va om",
+        "Kulon va joul",
+        "Vatt va gers"
+      ],
+      "t": 0,
+      "izoh": "Milliamper (mA) va mikroamper (µA) birliklari qo‘llanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m49-tok-kuchi#edbb1321"
+    }
+  ]
+}

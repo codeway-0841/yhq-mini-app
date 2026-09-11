@@ -1,0 +1,1241 @@
+{
+  "nom": "Body (Tana a'zolari)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "\"Qo'l\" (panja) inglizcha qanday?",
+      "v": [
+        "hand",
+        "ear",
+        "nose",
+        "knee"
+      ],
+      "t": 0,
+      "izoh": "Qo'l panjasi - hand.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#1c1c953a"
+    },
+    {
+      "q": "\"Quloq\" inglizcha qanday?",
+      "v": [
+        "eye",
+        "mouth",
+        "ear",
+        "hair"
+      ],
+      "t": 2,
+      "izoh": "Quloq - ear.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#35e7e684"
+    },
+    {
+      "q": "\"Burun\" inglizcha qanday?",
+      "v": [
+        "nose",
+        "neck",
+        "back",
+        "knee"
+      ],
+      "t": 0,
+      "izoh": "Burun - nose.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#69493072"
+    },
+    {
+      "q": "\"Og'iz\" inglizcha qanday?",
+      "v": [
+        "hair",
+        "mouth",
+        "foot",
+        "arm"
+      ],
+      "t": 1,
+      "izoh": "Og'iz - mouth.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#1e3a8b0d"
+    },
+    {
+      "q": "\"Oyoq\" (butun) inglizcha qanday?",
+      "v": [
+        "leg",
+        "arm",
+        "hand",
+        "ear"
+      ],
+      "t": 0,
+      "izoh": "Oyoq - leg.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#f03e9bf4"
+    },
+    {
+      "q": "\"Oyoq kafti\" (foot) inglizcha qanday?",
+      "v": [
+        "knee",
+        "neck",
+        "foot",
+        "finger"
+      ],
+      "t": 2,
+      "izoh": "Oyoq kafti - foot.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#cfc02c11"
+    },
+    {
+      "q": "\"Soch\" inglizcha qanday?",
+      "v": [
+        "hair",
+        "head",
+        "hand",
+        "heel"
+      ],
+      "t": 0,
+      "izoh": "Soch - hair.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#4e1dc8fc"
+    },
+    {
+      "q": "\"Barmoq\" (qo'l) inglizcha qanday?",
+      "v": [
+        "knee",
+        "finger",
+        "foot",
+        "back"
+      ],
+      "t": 1,
+      "izoh": "Barmoq - finger.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#ad3ea809"
+    },
+    {
+      "q": "\"Tizza\" inglizcha qanday?",
+      "v": [
+        "knee",
+        "neck",
+        "nose",
+        "ear"
+      ],
+      "t": 0,
+      "izoh": "Tizza - knee.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#0df88a6f"
+    },
+    {
+      "q": "\"Yelka\" inglizcha qanday?",
+      "v": [
+        "back",
+        "shoulder",
+        "arm",
+        "leg"
+      ],
+      "t": 1,
+      "izoh": "Yelka - shoulder.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#507e4a05"
+    },
+    {
+      "q": "\"Orqa\" inglizcha qanday?",
+      "v": [
+        "back",
+        "neck",
+        "knee",
+        "hand"
+      ],
+      "t": 0,
+      "izoh": "Orqa - back.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#4ab05b4b"
+    },
+    {
+      "q": "\"Bo'yin\" inglizcha qanday?",
+      "v": [
+        "nose",
+        "back",
+        "neck",
+        "foot"
+      ],
+      "t": 2,
+      "izoh": "Bo'yin - neck.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#e8044537"
+    },
+    {
+      "q": "\"Tish\" (bitta) inglizcha qanday?",
+      "v": [
+        "tooth",
+        "teeth",
+        "tongue",
+        "ear"
+      ],
+      "t": 0,
+      "izoh": "Bitta tish - tooth.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#f3057eac"
+    },
+    {
+      "q": "\"Tishlar\" (ko'plik) inglizcha qanday?",
+      "v": [
+        "tooths",
+        "teeth",
+        "toothes",
+        "tootheses"
+      ],
+      "t": 1,
+      "izoh": "Ko'plik: teeth.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#e390686d"
+    },
+    {
+      "q": "I see with my ___.",
+      "v": [
+        "eyes",
+        "ears",
+        "nose",
+        "feet"
+      ],
+      "t": 0,
+      "izoh": "Ko'z bilan ko'ramiz - eyes.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#ad8f538b"
+    },
+    {
+      "q": "I hear with my ___.",
+      "v": [
+        "eyes",
+        "ears",
+        "hands",
+        "legs"
+      ],
+      "t": 1,
+      "izoh": "Quloq bilan eshitamiz - ears.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#3043b38e"
+    },
+    {
+      "q": "I smell with my ___.",
+      "v": [
+        "hair",
+        "hand",
+        "nose",
+        "knee"
+      ],
+      "t": 2,
+      "izoh": "Burun bilan hidlaymiz - nose.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#007f9ae8"
+    },
+    {
+      "q": "I eat with my ___.",
+      "v": [
+        "mouth",
+        "ear",
+        "back",
+        "foot"
+      ],
+      "t": 0,
+      "izoh": "Og'iz bilan yeymiz - mouth.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#5b753680"
+    },
+    {
+      "q": "I walk with my ___.",
+      "v": [
+        "ears",
+        "legs",
+        "eyes",
+        "hair"
+      ],
+      "t": 1,
+      "izoh": "Oyoqlar bilan yuramiz - legs.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#e3703ea7"
+    },
+    {
+      "q": "I hold a pen with my ___.",
+      "v": [
+        "nose",
+        "neck",
+        "hand",
+        "foot"
+      ],
+      "t": 2,
+      "izoh": "Qo'l bilan ushlaymiz - hand.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#57d354b6"
+    },
+    {
+      "q": "How many fingers are on one hand?",
+      "v": [
+        "five",
+        "two",
+        "ten",
+        "one"
+      ],
+      "t": 0,
+      "izoh": "Bir qo'lda besh barmoq - five.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#910d472e"
+    },
+    {
+      "q": "Choose the correct plural.",
+      "v": [
+        "foots",
+        "feet",
+        "feets",
+        "footes"
+      ],
+      "t": 1,
+      "izoh": "Foot ning ko'pligi - feet.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#59bafa92"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "My hair is black.",
+        "My hairs is black.",
+        "My hair are black.",
+        "My hair be black."
+      ],
+      "t": 0,
+      "izoh": "Hair sanalmaydi: My hair is.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#9a16dc9c"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I have two eye.",
+        "I have two eyes.",
+        "I have two eyeses.",
+        "I have two eys."
+      ],
+      "t": 1,
+      "izoh": "Ko'plik: two eyes.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#9a16dc9c~2"
+    },
+    {
+      "q": "The ___ is on top of your body.",
+      "v": [
+        "foot",
+        "head",
+        "knee",
+        "hand"
+      ],
+      "t": 1,
+      "izoh": "Bosh tanadan yuqorida - head.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#a810fbe4"
+    },
+    {
+      "q": "Your ___ connects your head and body.",
+      "v": [
+        "neck",
+        "arm",
+        "leg",
+        "finger"
+      ],
+      "t": 0,
+      "izoh": "Bo'yin boshni tanaga ulaydi - neck.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#82b02702"
+    },
+    {
+      "q": "You bend your leg at the ___.",
+      "v": [
+        "ear",
+        "knee",
+        "nose",
+        "mouth"
+      ],
+      "t": 1,
+      "izoh": "Oyoq tizzada bukiladi - knee.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#38e14fce"
+    },
+    {
+      "q": "A hand has five ___.",
+      "v": [
+        "fingers",
+        "ears",
+        "noses",
+        "backs"
+      ],
+      "t": 0,
+      "izoh": "Qo'lda besh barmoq - fingers.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#cb6178e0"
+    },
+    {
+      "q": "Which part is on your face?",
+      "v": [
+        "knee",
+        "nose",
+        "back",
+        "foot"
+      ],
+      "t": 1,
+      "izoh": "Burun yuzda - nose.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#536251ef"
+    },
+    {
+      "q": "Which part is on your face?",
+      "v": [
+        "shoulder",
+        "back",
+        "eye",
+        "knee"
+      ],
+      "t": 2,
+      "izoh": "Ko'z yuzda - eye.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#536251ef~2"
+    },
+    {
+      "q": "Choose: My ___ hurts. I cannot chew.",
+      "v": [
+        "tooth",
+        "ear",
+        "back",
+        "foot"
+      ],
+      "t": 0,
+      "izoh": "Tish og'risa chaynash qiyin - tooth.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#eea191bd"
+    },
+    {
+      "q": "You wear a bag on your ___.",
+      "v": [
+        "nose",
+        "shoulder",
+        "tooth",
+        "eye"
+      ],
+      "t": 1,
+      "izoh": "Sumkani yelkaga osamiz - shoulder.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#8eff1e98"
+    },
+    {
+      "q": "Choose the part between hand and shoulder.",
+      "v": [
+        "arm",
+        "leg",
+        "neck",
+        "ear"
+      ],
+      "t": 0,
+      "izoh": "Qo'l va yelka orasi - arm.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#cba064bf"
+    },
+    {
+      "q": "Which is a body part?",
+      "v": [
+        "table",
+        "finger",
+        "apple",
+        "house"
+      ],
+      "t": 1,
+      "izoh": "Finger - tana a'zosi.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#189773f6"
+    },
+    {
+      "q": "Which is a body part?",
+      "v": [
+        "chair",
+        "cloud",
+        "ear",
+        "book"
+      ],
+      "t": 2,
+      "izoh": "Ear - tana a'zosi.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#189773f6~2"
+    },
+    {
+      "q": "I close my ___ when I sleep.",
+      "v": [
+        "eyes",
+        "legs",
+        "hands",
+        "ears"
+      ],
+      "t": 0,
+      "izoh": "Uxlaganda ko'zni yumamiz - eyes.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#f6b861a7"
+    },
+    {
+      "q": "\"Teeth\" so'zi nimani bildiradi?",
+      "v": [
+        "bitta tish",
+        "tishlar (ko'plik)",
+        "til",
+        "lab"
+      ],
+      "t": 1,
+      "izoh": "Teeth - tishlar (ko'plik).",
+      "qiy": "oson",
+      "id": "ing_a1_m33#637d386f"
+    },
+    {
+      "q": "'Bosh' inglizcha ___.",
+      "v": [
+        "head",
+        "hand",
+        "leg",
+        "foot"
+      ],
+      "t": 0,
+      "izoh": "'Bosh' = head.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#c6866988"
+    },
+    {
+      "q": "'Qo'l panjasi' (hand) inglizcha ___.",
+      "v": [
+        "hand",
+        "head",
+        "eye",
+        "ear"
+      ],
+      "t": 0,
+      "izoh": "'Panja' = hand.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#689c2083"
+    },
+    {
+      "q": "'Bilak/qo'l' (arm) inglizcha ___.",
+      "v": [
+        "arm",
+        "leg",
+        "nose",
+        "mouth"
+      ],
+      "t": 0,
+      "izoh": "'Qo'l (arm)' = arm.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#954a17fb"
+    },
+    {
+      "q": "'Oyoq' inglizcha ___.",
+      "v": [
+        "leg",
+        "arm",
+        "hand",
+        "ear"
+      ],
+      "t": 0,
+      "izoh": "'Oyoq' = leg.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#dcf7d9a0"
+    },
+    {
+      "q": "'Oyoq panjasi' (bitta) inglizcha ___.",
+      "v": [
+        "foot",
+        "feet",
+        "hand",
+        "head"
+      ],
+      "t": 0,
+      "izoh": "birlik = foot.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#a0373f1f"
+    },
+    {
+      "q": "'Ko'z' inglizcha ___.",
+      "v": [
+        "eye",
+        "ear",
+        "nose",
+        "mouth"
+      ],
+      "t": 0,
+      "izoh": "'Ko'z' = eye.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#71d4116d"
+    },
+    {
+      "q": "'Quloq' inglizcha ___.",
+      "v": [
+        "ear",
+        "eye",
+        "nose",
+        "lip"
+      ],
+      "t": 0,
+      "izoh": "'Quloq' = ear.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#d944bc11"
+    },
+    {
+      "q": "'Burun' inglizcha ___.",
+      "v": [
+        "nose",
+        "mouth",
+        "ear",
+        "eye"
+      ],
+      "t": 0,
+      "izoh": "'Burun' = nose.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#f6fde1ab"
+    },
+    {
+      "q": "'Og'iz' inglizcha ___.",
+      "v": [
+        "mouth",
+        "nose",
+        "ear",
+        "eye"
+      ],
+      "t": 0,
+      "izoh": "'Og'iz' = mouth.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#97755778"
+    },
+    {
+      "q": "'Soch' inglizcha ___.",
+      "v": [
+        "hair",
+        "hand",
+        "head",
+        "ear"
+      ],
+      "t": 0,
+      "izoh": "'Soch' = hair.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#5e21d3e3"
+    },
+    {
+      "q": "'Barmoq' inglizcha ___.",
+      "v": [
+        "finger",
+        "foot",
+        "knee",
+        "back"
+      ],
+      "t": 0,
+      "izoh": "'Barmoq' = finger.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#9a0aa024"
+    },
+    {
+      "q": "'Tizza' inglizcha ___.",
+      "v": [
+        "knee",
+        "neck",
+        "nose",
+        "ear"
+      ],
+      "t": 0,
+      "izoh": "'Tizza' = knee.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#0874ea24"
+    },
+    {
+      "q": "'Yelka' inglizcha ___.",
+      "v": [
+        "shoulder",
+        "stomach",
+        "chin",
+        "lip"
+      ],
+      "t": 0,
+      "izoh": "'Yelka' = shoulder.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#1b8058c5"
+    },
+    {
+      "q": "'Orqa/bel' (back) inglizcha ___.",
+      "v": [
+        "back",
+        "neck",
+        "knee",
+        "hair"
+      ],
+      "t": 0,
+      "izoh": "'Orqa' = back.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#a0bb8ea3"
+    },
+    {
+      "q": "'Bo'yin' inglizcha ___.",
+      "v": [
+        "neck",
+        "back",
+        "knee",
+        "shoulder"
+      ],
+      "t": 0,
+      "izoh": "'Bo'yin' = neck.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#47e58446"
+    },
+    {
+      "q": "'Tish' (bitta) inglizcha ___.",
+      "v": [
+        "tooth",
+        "teeth",
+        "foot",
+        "hand"
+      ],
+      "t": 0,
+      "izoh": "birlik = tooth.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#1be81418"
+    },
+    {
+      "q": "'Yuz' (face) inglizcha ___.",
+      "v": [
+        "face",
+        "hair",
+        "neck",
+        "back"
+      ],
+      "t": 0,
+      "izoh": "'Yuz' = face.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#a4dd23c9"
+    },
+    {
+      "q": "'Lablar' inglizcha ___.",
+      "v": [
+        "lips",
+        "legs",
+        "ears",
+        "eyes"
+      ],
+      "t": 0,
+      "izoh": "'Lablar' = lips.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#2877203c"
+    },
+    {
+      "q": "'Iyak' inglizcha ___.",
+      "v": [
+        "chin",
+        "knee",
+        "neck",
+        "nose"
+      ],
+      "t": 0,
+      "izoh": "'Iyak' = chin.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#406617b2"
+    },
+    {
+      "q": "'Qorin/oshqozon' inglizcha ___.",
+      "v": [
+        "stomach",
+        "shoulder",
+        "back",
+        "neck"
+      ],
+      "t": 0,
+      "izoh": "'Qorin' = stomach.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#f466fae9"
+    },
+    {
+      "q": "I think with my ___ (miya shu yerda).",
+      "v": [
+        "head",
+        "foot",
+        "hand",
+        "knee"
+      ],
+      "t": 0,
+      "izoh": "o'ylayman = head.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#677470c9"
+    },
+    {
+      "q": "I smile with my ___.",
+      "v": [
+        "mouth",
+        "ear",
+        "knee",
+        "back"
+      ],
+      "t": 0,
+      "izoh": "jilmayaman = mouth.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#860bcee8"
+    },
+    {
+      "q": "I kick a ball with my ___.",
+      "v": [
+        "foot",
+        "eye",
+        "ear",
+        "nose"
+      ],
+      "t": 0,
+      "izoh": "tepaman = foot.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#32b9299e"
+    },
+    {
+      "q": "I clap with my ___.",
+      "v": [
+        "hands",
+        "feet",
+        "ears",
+        "eyes"
+      ],
+      "t": 0,
+      "izoh": "chapak = hands.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#41595469"
+    },
+    {
+      "q": "Gloves go on my ___.",
+      "v": [
+        "hands",
+        "feet",
+        "head",
+        "nose"
+      ],
+      "t": 0,
+      "izoh": "qo'lqop = hands.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#6e6edc24"
+    },
+    {
+      "q": "Shoes go on my ___.",
+      "v": [
+        "feet",
+        "hands",
+        "head",
+        "ears"
+      ],
+      "t": 0,
+      "izoh": "poyabzal = feet.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#9b294542"
+    },
+    {
+      "q": "A hat goes on my ___.",
+      "v": [
+        "head",
+        "hand",
+        "foot",
+        "knee"
+      ],
+      "t": 0,
+      "izoh": "shapka = head.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#c8e6ffe6"
+    },
+    {
+      "q": "I taste food with my ___.",
+      "v": [
+        "mouth",
+        "eyes",
+        "ears",
+        "hands"
+      ],
+      "t": 0,
+      "izoh": "ta'mini bilaman = mouth.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#ef9c2452"
+    },
+    {
+      "q": "I write with my ___.",
+      "v": [
+        "hand",
+        "foot",
+        "ear",
+        "eye"
+      ],
+      "t": 0,
+      "izoh": "yozaman = hand.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#c04389f1"
+    },
+    {
+      "q": "One eye, two ___.",
+      "v": [
+        "eyes",
+        "eye",
+        "eyies",
+        "eies"
+      ],
+      "t": 0,
+      "izoh": "ko'plik: eyes.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#2b74f578"
+    },
+    {
+      "q": "One ear, two ___.",
+      "v": [
+        "ears",
+        "ear",
+        "eares",
+        "earz"
+      ],
+      "t": 0,
+      "izoh": "ko'plik: ears.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#6aa74f02"
+    },
+    {
+      "q": "One hand, two ___.",
+      "v": [
+        "hands",
+        "hand",
+        "handes",
+        "handz"
+      ],
+      "t": 0,
+      "izoh": "ko'plik: hands.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#a2762b50"
+    },
+    {
+      "q": "One leg, two ___.",
+      "v": [
+        "legs",
+        "leg",
+        "leges",
+        "legz"
+      ],
+      "t": 0,
+      "izoh": "ko'plik: legs.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#d2fc6da3"
+    },
+    {
+      "q": "One finger, two ___.",
+      "v": [
+        "fingers",
+        "finger",
+        "fingeres",
+        "fingerz"
+      ],
+      "t": 0,
+      "izoh": "ko'plik: fingers.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#d8eac80c"
+    },
+    {
+      "q": "One arm, two ___.",
+      "v": [
+        "arms",
+        "arm",
+        "armes",
+        "armz"
+      ],
+      "t": 0,
+      "izoh": "ko'plik: arms.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#a3ef32ba"
+    },
+    {
+      "q": "How many fingers on one hand? ___.",
+      "v": [
+        "five",
+        "two",
+        "one",
+        "ten"
+      ],
+      "t": 0,
+      "izoh": "bitta qo'lda 5 barmoq.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#14c609df"
+    },
+    {
+      "q": "How many eyes do you have? ___.",
+      "v": [
+        "two",
+        "one",
+        "three",
+        "four"
+      ],
+      "t": 0,
+      "izoh": "2 ta ko'z.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#5ea4da8c"
+    },
+    {
+      "q": "How many noses do you have? ___.",
+      "v": [
+        "one",
+        "two",
+        "three",
+        "five"
+      ],
+      "t": 0,
+      "izoh": "1 ta burun.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#60b8aa87"
+    },
+    {
+      "q": "How many feet do you have? ___.",
+      "v": [
+        "two",
+        "one",
+        "four",
+        "ten"
+      ],
+      "t": 0,
+      "izoh": "2 ta oyoq panjasi.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#b3473bbd"
+    },
+    {
+      "q": "A dog has four ___.",
+      "v": [
+        "legs",
+        "heads",
+        "noses",
+        "mouths"
+      ],
+      "t": 0,
+      "izoh": "it 4 oyoqli.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#8e094c8f"
+    },
+    {
+      "q": "My ___ are blue.",
+      "v": [
+        "eyes",
+        "nose",
+        "mouth",
+        "hair"
+      ],
+      "t": 0,
+      "izoh": "ko'k rang = eyes (ko'plik).",
+      "qiy": "oson",
+      "id": "ing_a1_m33#10801289"
+    },
+    {
+      "q": "My ___ is long and black.",
+      "v": [
+        "hair",
+        "eyes",
+        "ears",
+        "feet"
+      ],
+      "t": 0,
+      "izoh": "soch birlik: hair is.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#15aef712"
+    },
+    {
+      "q": "'Bosh og'riyapti' — I have a ___ache.",
+      "v": [
+        "head",
+        "hand",
+        "leg",
+        "arm"
+      ],
+      "t": 0,
+      "izoh": "headache = bosh og'rig'i.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#5ef16939"
+    },
+    {
+      "q": "'Tish og'riyapti' — I have a ___ache.",
+      "v": [
+        "tooth",
+        "hand",
+        "leg",
+        "nose"
+      ],
+      "t": 0,
+      "izoh": "toothache = tish og'rig'i.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#eaf3c9ee"
+    },
+    {
+      "q": "'Qorin og'riyapti' — I have a ___ache.",
+      "v": [
+        "stomach",
+        "head",
+        "foot",
+        "ear"
+      ],
+      "t": 0,
+      "izoh": "stomachache = qorin og'rig'i.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#28990d3b"
+    },
+    {
+      "q": "The fingers are on the ___.",
+      "v": [
+        "hand",
+        "head",
+        "leg",
+        "nose"
+      ],
+      "t": 0,
+      "izoh": "barmoqlar = qo'lda.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#c9b07159"
+    },
+    {
+      "q": "The toes are on the ___.",
+      "v": [
+        "foot",
+        "hand",
+        "ear",
+        "eye"
+      ],
+      "t": 0,
+      "izoh": "oyoq barmoqlari = oyoqda.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#0f4b1464"
+    },
+    {
+      "q": "The hair is on the ___.",
+      "v": [
+        "head",
+        "foot",
+        "hand",
+        "knee"
+      ],
+      "t": 0,
+      "izoh": "soch = boshda.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#09401244"
+    },
+    {
+      "q": "Head va tana orasidagi qism ___.",
+      "v": [
+        "neck",
+        "knee",
+        "back",
+        "lip"
+      ],
+      "t": 0,
+      "izoh": "bo'yin = neck.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#1224a379"
+    },
+    {
+      "q": "O'tirganda bukiladigan qism ___.",
+      "v": [
+        "knee",
+        "nose",
+        "ear",
+        "eye"
+      ],
+      "t": 0,
+      "izoh": "tizza = knee.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#492ff8af"
+    },
+    {
+      "q": "Sumka tasmasi turadigan ikki qism ___.",
+      "v": [
+        "shoulders",
+        "noses",
+        "mouths",
+        "chins"
+      ],
+      "t": 0,
+      "izoh": "yelkalar = shoulders.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#1ce9b6f2"
+    },
+    {
+      "q": "Qaysi biri yuzda EMAS?",
+      "v": [
+        "knee",
+        "eye",
+        "nose",
+        "mouth"
+      ],
+      "t": 0,
+      "izoh": "tizza (knee) yuzda emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#65f5934e"
+    },
+    {
+      "q": "Qaysi biri boshda EMAS?",
+      "v": [
+        "foot",
+        "eye",
+        "ear",
+        "hair"
+      ],
+      "t": 0,
+      "izoh": "oyoq (foot) boshda emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#6f0c6f78"
+    },
+    {
+      "q": "Face has two eyes, one nose and one ___.",
+      "v": [
+        "mouth",
+        "hand",
+        "foot",
+        "knee"
+      ],
+      "t": 0,
+      "izoh": "bitta og'iz = mouth.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#1b07cccc"
+    },
+    {
+      "q": "I wave with my ___.",
+      "v": [
+        "hand",
+        "foot",
+        "knee",
+        "back"
+      ],
+      "t": 0,
+      "izoh": "qo'l silkitaman = hand.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#7bab118f"
+    },
+    {
+      "q": "Glasses go on my ___ and ears.",
+      "v": [
+        "nose",
+        "feet",
+        "knees",
+        "back"
+      ],
+      "t": 0,
+      "izoh": "ko'zoynak burun va quloqda.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#f0e15fee"
+    },
+    {
+      "q": "I nod my ___ to say yes.",
+      "v": [
+        "head",
+        "foot",
+        "hand",
+        "knee"
+      ],
+      "t": 0,
+      "izoh": "bosh qimirlataman = head.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#6f75db45"
+    },
+    {
+      "q": "'Uzun soch' means long ___.",
+      "v": [
+        "hair",
+        "hand",
+        "leg",
+        "ear"
+      ],
+      "t": 0,
+      "izoh": "uzun soch = long hair.",
+      "qiy": "oson",
+      "id": "ing_a1_m33#5b93dfa5"
+    }
+  ]
+}

@@ -1,0 +1,531 @@
+{
+  "nom": "58-mavzu. Magnit Maydon Energiyasi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Tokli o'tkazgich atrofida hosil bo'lgan magnit maydon nimaga ega?",
+      "v": [
+        "Energiyaga",
+        "Massaga",
+        "Zaryadga",
+        "Haroratga"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlangan jism elektr maydon energiyasiga ega bo'lgani kabi, tokli o'tkazgichning atrofida hosil bo'lgan magnit maydon ham energiyaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#c2f990c0"
+    },
+    {
+      "q": "Tokli konturning magnit maydon energiyasi formulasi qanday?",
+      "v": [
+        "W = L·I²/2",
+        "W = L·I/2",
+        "W = I²·R·t",
+        "W = q·U"
+      ],
+      "t": 0,
+      "izoh": "Tokli konturning magnit maydon energiyasi W = I·Ф/2 = L·I²/2 = Ф²/(2L).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#8b38b30b"
+    },
+    {
+      "q": "Magnit maydon energiyasi nimaga teng?",
+      "v": [
+        "Konturning induktivligi bilan tok kuchi kvadrati ko'paytmasining yarmiga",
+        "Tok kuchi bilan kuchlanish ko'paytmasiga",
+        "Induktivlik bilan tok kuchi ko'paytmasiga",
+        "Magnit oqimi bilan vaqt ko'paytmasiga"
+      ],
+      "t": 0,
+      "izoh": "Tokli konturning magnit maydon energiyasi uning induktivligi bilan konturdan o'tayotgan tok kuchi kvadrati ko'paytmasining yarmiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#dfb741a5"
+    },
+    {
+      "q": "G'altakdan o'tayotgan tok 2 marta ortsa, magnit maydon energiyasi qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "W = L·I²/2: energiya tok kvadratiga proporsional, shuning uchun 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#e4256865"
+    },
+    {
+      "q": "Magnit maydon energiyasi formulasi mexanikadagi qaysi formulaga o'xshaydi?",
+      "v": [
+        "Kinetik energiya E = mυ²/2 formulasiga",
+        "Potensial energiya E = mgh formulasiga",
+        "Ish A = F·s formulasiga",
+        "Quvvat N = A/t formulasiga"
+      ],
+      "t": 0,
+      "izoh": "W = L·I²/2 ifodani E = mυ²/2 bilan taqqoslaganda induktivlik massaga, tok kuchi esa tezlikka o'xshash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#0298fe8f"
+    },
+    {
+      "q": "Bu o'xshatishda induktivlik mexanikadagi qaysi kattalikka o'xshash?",
+      "v": [
+        "Massaga",
+        "Tezlikka",
+        "Kuchga",
+        "Impulsga"
+      ],
+      "t": 0,
+      "izoh": "Induktivlik mexanikadagi massaga, tok kuchi esa tezlikka o'xshash fizik kattaliklar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#c07bbc33"
+    },
+    {
+      "q": "Tokli solenoid magnit maydoni energiyasining asosiy qismi qayerda mujassamlashgan?",
+      "v": [
+        "Solenoid ichida",
+        "Solenoid tashqarisida",
+        "Simlarda",
+        "Tok manbaida"
+      ],
+      "t": 0,
+      "izoh": "Tokli solenoid magnit maydoni energiyasining asosiy qismi solenoid ichida mujassamlashgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#0c53ce7c"
+    },
+    {
+      "q": "Magnit maydon energiya zichligi nima?",
+      "v": [
+        "Maydon energiyasining solenoid ichki hajmiga nisbati bilan aniqlanadigan kattalik",
+        "Maydon energiyasining tok kuchiga nisbati",
+        "Energiyaning o'ramlar soniga nisbati",
+        "Energiyaning vaqtga nisbati"
+      ],
+      "t": 0,
+      "izoh": "Solenoid ichidagi magnit maydon energiyasining solenoid ichki hajmiga nisbati magnit maydon energiya zichligi deyiladi: ω = W/(S·l).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#9848153f"
+    },
+    {
+      "q": "XBSda magnit maydon energiya zichligi qanday birlikda o'lchanadi?",
+      "v": [
+        "J/m³",
+        "J/m²",
+        "Wb/m²",
+        "J/s"
+      ],
+      "t": 0,
+      "izoh": "XBSda magnit maydon energiya zichligi J/m³ da o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#3f132214"
+    },
+    {
+      "q": "Elektromagnitning asosini nima tashkil qiladi?",
+      "v": [
+        "Solenoid g'altagi",
+        "Doimiy magnit",
+        "Kollektor",
+        "Kondensator"
+      ],
+      "t": 0,
+      "izoh": "Elektromagnitning asosini solenoid g'altagi tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#3d863272"
+    },
+    {
+      "q": "Solenoid ichiga ferromagnit o'zak kiritilsa nima sodir bo'ladi?",
+      "v": [
+        "Unning induktivligi keskin oshadi va magnit maydon kuchayadi",
+        "Induktivligi kamayadi",
+        "Maydon yo'qoladi",
+        "Tok o'tmay qoladi"
+      ],
+      "t": 0,
+      "izoh": "Ferromagnit o'zak solenoidning induktivligini keskin oshiradi, natijada magnit maydon ham kuchayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#ce85c545"
+    },
+    {
+      "q": "Elektromagnit kranlar qayerda qo'llanadi?",
+      "v": [
+        "Og'ir yuklarni ko'tarishda — xalq xo'jaligining turli sohalarida",
+        "Faqat tibbiyotda",
+        "Faqat uy-ro'zg'or buyumlarida",
+        "Faqat aloqa qurilmalarida"
+      ],
+      "t": 0,
+      "izoh": "Og'ir yuklarni ko'tara oladigan elektromagnit kranlar xalq xo'jaligining turli sohalarida keng qo'llanmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#d68563a0"
+    },
+    {
+      "q": "Magnit maydon ta'sirida magnitlanib qoladigan moddalar qanday ataladi?",
+      "v": [
+        "Magnetiklar",
+        "Dielektriklar",
+        "Yarimo'tkazgichlar",
+        "O'tkazgichlar"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydon ta'sirida magnitlanib qoladigan moddalarga magnetiklar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#202d1cf8"
+    },
+    {
+      "q": "Magnetiklarga qaysi moddalar misol bo'ladi?",
+      "v": [
+        "Temir, nikel, kobalt",
+        "Mis, alyuminiy, rux",
+        "Oltin, kumush, qo'rg'oshin",
+        "Yog'och, shisha, rezina"
+      ],
+      "t": 0,
+      "izoh": "Temir, nikel, kobalt kabi moddalar magnit maydonga kiritilganda magnitlanib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#77834955"
+    },
+    {
+      "q": "Muhitning magnit singdiruvchanligi formulasi qanday?",
+      "v": [
+        "μ = B/B₀",
+        "μ = B·B₀",
+        "μ = B₀/B",
+        "μ = B + B₀"
+      ],
+      "t": 0,
+      "izoh": "B = μ·B₀ tenglikdan μ = B/B₀.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#27c8a5d0"
+    },
+    {
+      "q": "Muhitning magnit singdiruvchanligi nimani bildiradi?",
+      "v": [
+        "Muhitdagi maydon induksiyasi vakuumdagi induksiyadan necha marta farq qilishini",
+        "Moddaning zichligini",
+        "Moddaning qarshiligini",
+        "Moddaning haroratini"
+      ],
+      "t": 0,
+      "izoh": "μ faqat muhitning tabiatiga bog'liq bo'lib, muhitdagi maydon induksiyasi vakuumdagi induksiyadan necha marta farq qilishini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#ba23e8bd"
+    },
+    {
+      "q": "Moddalar magnit singdiruvchanligiga qarab nechta turga bo'linadi?",
+      "v": [
+        "Uch turga: diamagnetiklar, paramagnetiklar va ferromagnetiklar",
+        "Ikki turga: o'tkazgichlar va dielektriklar",
+        "To'rt turga",
+        "Besh turga"
+      ],
+      "t": 0,
+      "izoh": "Barcha moddalar magnit singdiruvchanligiga qarab uch turga bo'linadi: diamagnetiklar, paramagnetiklar va ferromagnetiklar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#b1c0fe8b"
+    },
+    {
+      "q": "Diamagnetiklar qanday moddalar?",
+      "v": [
+        "Magnit singdiruvchanligi birdan kichik (μ < 1) bo'lgan moddalar",
+        "μ > 1 bo'lgan moddalar",
+        "μ >> 1 bo'lgan moddalar",
+        "μ = 1 bo'lgan moddalar"
+      ],
+      "t": 0,
+      "izoh": "Magnit singdiruvchanligi birdan kichik bo'lgan (μ < 1) moddalarga diamagnetiklar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#e66117b0"
+    },
+    {
+      "q": "Diamagnetiklarga qaysi moddalar kiradi?",
+      "v": [
+        "Oltin, kumush, vismut, mis, rux",
+        "Temir, nikel, kobalt",
+        "Platina, alyuminiy, kislorod",
+        "Po'lat, cho'yan"
+      ],
+      "t": 0,
+      "izoh": "Oltin, kumush, vismut, mis, rux va ba'zi gazlar diamagnetiklardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#3c4d24ef"
+    },
+    {
+      "q": "Diamagnetiklar magnit maydoniga qanday ta'sir ko'rsatadi?",
+      "v": [
+        "Maydonni susaytiradi va maydondan uzoqlashadi",
+        "Maydonni kuchaytiradi",
+        "Maydonga tortiladi",
+        "Hech qanday ta'sir ko'rsatmaydi"
+      ],
+      "t": 0,
+      "izoh": "Diamagnetiklar magnit maydonini susaytiradi; maydon yaqinlashtirilganda ular maydondan uzoqlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#18578913"
+    },
+    {
+      "q": "Paramagnetiklar qanday moddalar?",
+      "v": [
+        "Magnit singdiruvchanligi birdan biroz katta (μ > 1) bo'lgan moddalar",
+        "μ < 1 bo'lgan moddalar",
+        "μ >> 1 bo'lgan moddalar",
+        "μ = 0 bo'lgan moddalar"
+      ],
+      "t": 0,
+      "izoh": "Magnit singdiruvchanligi birdan biroz katta bo'lgan (μ > 1) moddalar paramagnetiklar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#ee768cb1"
+    },
+    {
+      "q": "Paramagnetiklarga qaysi moddalar kiradi?",
+      "v": [
+        "Platina, alyuminiy, xrom, marganes, kislorod",
+        "Temir, nikel, kobalt",
+        "Oltin, kumush, vismut",
+        "Mis, rux, qo'rg'oshin"
+      ],
+      "t": 0,
+      "izoh": "Paramagnetiklarga platina, alyuminiy, xrom, marganes, kislorod kabi moddalar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#dc2df376"
+    },
+    {
+      "q": "Paramagnetiklar magnit maydoniga qanday ta'sir qiladi?",
+      "v": [
+        "Maydonni qisman kuchaytiradi",
+        "Maydonni susaytiradi",
+        "Maydonni butunlay yo'q qiladi",
+        "Hech qanday ta'sir qilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydonga kiritilgan paramagnetiklar maydonni qisman kuchaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#bb03b559"
+    },
+    {
+      "q": "Ferromagnetiklar qanday moddalar?",
+      "v": [
+        "Magnit singdiruvchanligi birdan juda katta (μ >> 1) bo'lgan moddalar",
+        "μ < 1 bo'lgan moddalar",
+        "μ > 1 bo'lgan moddalar",
+        "μ = 1 bo'lgan moddalar"
+      ],
+      "t": 0,
+      "izoh": "Magnit singdiruvchanligi birdan juda katta bo'lgan (μ >> 1) moddalar ferromagnetiklar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#5c306a30"
+    },
+    {
+      "q": "Ferromagnetiklarga qaysi moddalar kiradi?",
+      "v": [
+        "Temir, nikel, kobalt va ularning ba'zi qotishmalari",
+        "Platina va alyuminiy",
+        "Oltin va kumush",
+        "Kislorod va azot"
+      ],
+      "t": 0,
+      "izoh": "Temir, nikel, kobalt va ularning ba'zi qotishmalari ferromagnetiklardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#e73775df"
+    },
+    {
+      "q": "Ferromagnetikdan yasalgan jism magnit maydonga kiritilganda qanday harakat qiladi?",
+      "v": [
+        "Maydonga tortiladi",
+        "Maydondan uzoqlashadi",
+        "Qimir etmaydi",
+        "Erib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Ferromagnetik moddalardan yasalgan jismlar magnit maydonga kiritilganda maydonga tortiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#d476a0a6"
+    },
+    {
+      "q": "Transformator, tok generatori va elektrodvigatel o'zaklari qanday materiallardan yasaladi?",
+      "v": [
+        "Ferromagnit materiallardan",
+        "Diamagnit materiallardan",
+        "Paramagnit materiallardan",
+        "Yarimo'tkazgichlardan"
+      ],
+      "t": 0,
+      "izoh": "Transformator, tok generatori, elektrodvigatel va boshqa qurilmalarning o'zaklari ferromagnit materiallardan yasaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#bdaf73e6"
+    },
+    {
+      "q": "Magnit maydon induksiyasi 0,5 T bo'lgan o'zaksiz g'altakka μ = 60 bo'lgan ferromagnit kiritilsa, g'altak ichidagi induksiya qancha bo'ladi?",
+      "v": [
+        "30 T",
+        "60 T",
+        "0,5 T",
+        "120 T"
+      ],
+      "t": 0,
+      "izoh": "B = μ·B₀ = 60 · 0,5 T = 30 T.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#d240b113"
+    },
+    {
+      "q": "Vakuumdagi g'altak ichida induksiya B₀ = 2·10⁻⁴ T bo'lib, po'lat o'zak kiritilganda B = 1,2 T bo'lsa, po'latning magnit singdiruvchanligi qancha?",
+      "v": [
+        "6000",
+        "600",
+        "60",
+        "12000"
+      ],
+      "t": 0,
+      "izoh": "μ = B/B₀ = 1,2 T / 2·10⁻⁴ T = 6000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#892bf5e9"
+    },
+    {
+      "q": "Induktivligi 0,6 H bo'lgan g'altakdan 5 A tok o'tsa, magnit maydon energiyasi qancha?",
+      "v": [
+        "7,5 J",
+        "3 J",
+        "15 J",
+        "0,75 J"
+      ],
+      "t": 0,
+      "izoh": "W = L·I²/2 = 0,6 · 25 / 2 = 7,5 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#a58eb2cc"
+    },
+    {
+      "q": "G'altakdan 2 A tok o'tayotganda magnit maydon energiyasi 2 J bo'lsa, g'altakning induktivligi qancha?",
+      "v": [
+        "1 H",
+        "0,5 H",
+        "2 H",
+        "4 H"
+      ],
+      "t": 0,
+      "izoh": "L = 2W/I² = 2·2/4 = 1 H.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#4eb513d0"
+    },
+    {
+      "q": "Doimiy magnitlar tibbiyotda qanday qo'llanmoqda?",
+      "v": [
+        "Qon bosimini pasaytiruvchi bilaguzuklar tayyorlashda",
+        "Rentgen apparatlarida",
+        "Operatsiya asboblarida",
+        "Tish davolashda"
+      ],
+      "t": 0,
+      "izoh": "Doimiy magnitlardan qon bosimini pasaytiruvchi moslama sifatida qo'lga taqiladigan bilaguzuk tayyorlanmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#2da72cc5"
+    },
+    {
+      "q": "G'altakdagi tok energiyasining bir qismi nimagacha sarflanadi?",
+      "v": [
+        "G'altakda magnit maydonni hosil qilishga",
+        "Faqat simlarni qizdirishga",
+        "G'altakni harakatlantirishga",
+        "Yoritishga"
+      ],
+      "t": 0,
+      "izoh": "G'altakdan o'tayotgan elektr toki energiyasining bir qismi unda magnit maydonni hosil qilishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#085aeae4"
+    },
+    {
+      "q": "Magnit temir predmetlarni tortib, rezina, yog'och, shishani tortmasligining sababi nima?",
+      "v": [
+        "Temir ferromagnetik, qolganlari esa amalda magnitlanmaydigan moddalar",
+        "Temir og'irroq bo'lgani uchun",
+        "Rezina issiq bo'lgani uchun",
+        "Shisha shaffof bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Temir ferromagnetik bo'lib maydonga tortiladi, rezina, yog'och, shisha kabi moddalar esa magnit xossalarini namoyon etmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#301b6645"
+    },
+    {
+      "q": "Reostat jilgichini surib g'altakdagi tokni tekis oshirganda magnit oqimi qanday o'zgaradi?",
+      "v": [
+        "Tok bilan chiziqli (to'g'ri proporsional) ortadi",
+        "Kvadratik kamayadi",
+        "O'zgarmay qoladi",
+        "Tebranma o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Ф = L·I bo'lgani uchun magnit oqimi tok ortgan sari chiziqli ortib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m58-magnit-maydon-energiyasi#79bf19c3"
+    }
+  ]
+}

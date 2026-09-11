@@ -1,0 +1,651 @@
+{
+  "nom": "Biologiya-10, 1.6. Lipidlar",
+  "bolim": "I BOB. Molekulyar biologiya",
+  "savollar": [
+    {
+      "q": "Lipidlar kimyoviy tabiati jihatidan qanday birikmalardir?",
+      "v": [
+        "Qutblanmagan, gidrofob birikmalar",
+        "Qutbli, gidrofil birikmalar",
+        "Suvda yaxshi eriydigan birikmalar",
+        "Faqat mineral tuzlardan iborat birikmalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra lipid qutblanmagan, gidrofob birikmalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m1_6#9c5d934f"
+    },
+    {
+      "q": "Lipidlar qaysi erituvchilarda eriydi?",
+      "v": [
+        "Benzin, xloroform, efir kabi qutblanmagan organik erituvchilarda",
+        "Faqat suvda",
+        "Faqat kislotalarda",
+        "Faqat ishqorlarda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra lipidlar benzin, xloroform, efir kabi qutblanmagan organik erituvchilarda eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m1_6#8f8f6dea"
+    },
+    {
+      "q": "Lipidlar tirik organizmlarning qaysi qismi tarkibiga kiradi?",
+      "v": [
+        "Barcha tirik organizm hujayralari tarkibiga",
+        "Faqat oʻsimlik hujayralari tarkibiga",
+        "Faqat hayvon hujayralari tarkibiga",
+        "Faqat bakteriya hujayralari tarkibiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra lipidlar barcha tirik organizm hujayralari tarkibiga kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m1_6#6641549a"
+    },
+    {
+      "q": "Tirik organizmlarda lipidlar miqdori tana quruq massasining necha foizini tashkil etadi?",
+      "v": [
+        "5-15%",
+        "1-2%",
+        "25-40%",
+        "50-60%"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tirik organizmlarda lipidlar miqdori tana quruq massasining 5-15% ini tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#629698e8"
+    },
+    {
+      "q": "Yogʻ toʻqimalari hujayralarida lipidlar miqdori necha foizga yetadi?",
+      "v": [
+        "90%",
+        "50%",
+        "15%",
+        "30%"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yogʻ toʻqimalari hujayralarida lipidlarning miqdori 90% ga yetadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#6d0e9c35"
+    },
+    {
+      "q": "Quyidagilardan qaysi toʻqima va joylarda lipidlar yuqori miqdorda uchraydi?",
+      "v": [
+        "Nerv toʻqimalarida, gipodermada va sutemizuvchilar sutida",
+        "Faqat suyak toʻqimasida",
+        "Faqat qon plazmasida",
+        "Faqat tirnoq va sochda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yuqori lipidlar miqdori nerv toʻqimalarida, gipodermada, sutemizuvchilar sutida koʻp miqdorda uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#1c6493d0"
+    },
+    {
+      "q": "Qaysi oʻsimliklarning urugʻ va mevalarida juda koʻp moylar mavjud?",
+      "v": [
+        "Kungaboqar, yeryongʻoq, zaytun, zigʻir, kunjut, soya",
+        "Bugʻdoy, arpa, sholi, makkajoʻxori",
+        "Kartoshka, sabzi, lavlagi, piyoz",
+        "Olma, nok, uzum, oʻrik"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra kungaboqar, yeryongʻoq, zaytun, zigʻir, kunjut, soya urugʻlari va mevalarida juda koʻp moylar mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#13bfbf8b"
+    },
+    {
+      "q": "Sanoatda oʻsimlik moylari nimalardan olinadi?",
+      "v": [
+        "Moyga boy oʻsimliklarning urugʻ va mevalaridan",
+        "Oʻsimlik ildizlaridan",
+        "Daraxt poʻstlogʻidan",
+        "Barglardagi xlorofilldan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra moyga boy oʻsimliklardan sanoatda oʻsimlik moylari olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m1_6#3f00b12c"
+    },
+    {
+      "q": "Lipidlar kimyoviy jihatdan qanday reaksiya natijasida hosil boʻladi?",
+      "v": [
+        "Yogʻ kislotalari va spirtning kondensatsiya reaksiyasi natijasida",
+        "Oqsillarning gidrolizi natijasida",
+        "Uglevodlarning fermentatsiyasi natijasida",
+        "Nuklein kislotalarning replikatsiyasi natijasida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra lipidlar yogʻ kislotalari va spirtning kondensatsiya reaksiyasi natijasida hosil boʻlgan efirlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_6#583d7c9a"
+    },
+    {
+      "q": "Neytral yogʻlar qanday tarkibiy qismlarning birikishidan hosil boʻladi?",
+      "v": [
+        "3 ta yogʻ kislota va uch atomli spirt glitserindan",
+        "2 ta yogʻ kislota va fosfor kislotadan",
+        "Uglevod va yogʻ kislotadan",
+        "Oqsil va glitserindan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra neytral yogʻlar 3 ta yogʻ kislota va uch atomli spirt glitserinning birikishidan hosil boʻlgan murakkab efirlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_6#7f57f77a"
+    },
+    {
+      "q": "Neytral yogʻlar haqida qaysi maʼlumot toʻgʻri?",
+      "v": [
+        "Tabiatda koʻp tarqalgan lipidlar boʻlib, xona haroratida qattiq yoki suyuq boʻladi",
+        "Faqat suyuq holatda uchraydi",
+        "Faqat oʻsimliklarda uchraydi",
+        "Suvda yaxshi eriydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra neytral yogʻlar tabiatda koʻp tarqalgan lipidlar boʻlib, xona haroratida qattiq yoki suyuq boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#dfdb19ce"
+    },
+    {
+      "q": "Mumlar qanday moddalarning birikishidan hosil boʻladi?",
+      "v": [
+        "Yogʻ kislotalar va koʻp atomli spirtlarning birikishidan",
+        "Yogʻ kislotalar va glitserinning birikishidan",
+        "Uglevod va fosfor kislotaning birikishidan",
+        "Oqsil va xolesterinning birikishidan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mumlar yogʻ kislotalar va koʻp atomli spirtlarning birikishidan hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_6#aa8a6450"
+    },
+    {
+      "q": "Hayvonlarda mumlar qanday funksiyani bajaradi?",
+      "v": [
+        "Terini, junini, patini qoplab, yumshatib, suvdan himoya qiladi",
+        "Energiya ajratib beradi",
+        "Gormonlar sintezini boshqaradi",
+        "Oqsil sintezini tezlashtiradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mumlar terini, hayvonlarning junini, qushlarning patini qoplab turadi, yumshatadi va suvdan himoya qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#848fba82"
+    },
+    {
+      "q": "Oʻsimliklarda mum qoplami qanday vazifani bajaradi?",
+      "v": [
+        "Barg, poya, mevalarni suv taʼsiridan va qurib qolishdan himoya qiladi",
+        "Fotosintezni amalga oshiradi",
+        "Mineral tuzlarni yutadi",
+        "Urugʻlanishni taʼminlaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra mum qoplami barg, poya, mevalarni suv taʼsiridan, qurib qolishdan himoya qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#9d129edb"
+    },
+    {
+      "q": "Fosfolipidlar hujayrada nimani hosil qiladi?",
+      "v": [
+        "Hujayraning membranali tuzilmalarini",
+        "Hujayra devorini",
+        "Yadro membranasidagi xromosomalarni",
+        "Ribosomalarni"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fosfolipidlar hujayraning membranali tuzilmalarini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#17304d1b"
+    },
+    {
+      "q": "Fosfolipid molekulasi tuzilishi jihatidan yogʻlardan qanday farq qiladi?",
+      "v": [
+        "Bitta yogʻ kislota qoldigʻi fosfor kislotasi qoldigʻiga ega radikal bilan almashgan",
+        "Barcha yogʻ kislotalari glitserin bilan almashgan",
+        "Uch atomli spirt oʻrniga uglevod boʻladi",
+        "Umuman yogʻ kislota tutmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fosfolipidlarda bitta yogʻ kislota qoldigʻi fosfor kislotasi qoldigʻiga ega radikal bilan almashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_6#199848e5"
+    },
+    {
+      "q": "Fosfolipidlar hujayra membranalari uchun qanday ahamiyatga ega?",
+      "v": [
+        "Hujayra membranalarining asosiy tarkibiy qismidir",
+        "Hujayra membranalarini parchalaydi",
+        "Membranalarda energiya zaxirasi vazifasini bajaradi",
+        "Membranalar tarkibiga umuman kirmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fosfolipidlar hujayra membranalarining asosiy tarkibiy qismidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#02ea7500"
+    },
+    {
+      "q": "Fosfolipid molekulasi qaysi ikki qismdan iborat?",
+      "v": [
+        "Qutbli gidrofil bosh va qutbsiz gidrofob dum",
+        "Ikkita gidrofob bosh",
+        "Ikkita gidrofil dum",
+        "Qutbli bosh va qutbli dum"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fosfolipid molekulasi qutbli gidrofil bosh va yogʻ kislotalarning qutbsiz gidrofob dumidan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_6#96d5e479"
+    },
+    {
+      "q": "Fosfolipidlarning ikki qismli (gidrofil bosh va gidrofob dum) tabiati nimani belgilaydi?",
+      "v": [
+        "Ularning biologik membranalar tuzilishini shakllantirishdagi asosiy rolini",
+        "Ularning suvda toʻliq erishini",
+        "Ularning gormon sintezidagi rolini",
+        "Ularning energiya zaxirasi ekanligini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fosfolipidlarning bunday tabiati ularning biologik membranalar tuzilishini shakllantirishdagi asosiy rolini belgilaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_6#57ae46b4"
+    },
+    {
+      "q": "Glikolipidlar qanday moddalarning qoʻshilishidan hosil boʻladi?",
+      "v": [
+        "Lipidlarning uglevodlar bilan qoʻshilishidan",
+        "Lipidlarning oqsillar bilan qoʻshilishidan",
+        "Lipidlarning fosfor kislotasi bilan qoʻshilishidan",
+        "Uglevodlarning oqsil bilan qoʻshilishidan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra glikolipidlar lipidlarning uglevodlar bilan qoʻshilishi natijasida hosil boʻlgan moddalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#178faa97"
+    },
+    {
+      "q": "Glikolipidlar hujayrada asosan qayerda joylashgan va nimani hosil qilishda ishtirok etadi?",
+      "v": [
+        "Plazmatik membrananing tashqi yuzasida, glikokaliksni hosil qilishda",
+        "Hujayra ichida, ribosomalarni hosil qilishda",
+        "Yadroda, xromosomalarni hosil qilishda",
+        "Mitoxondriyada, kristalarni hosil qilishda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra glikolipidlar asosan plazmatik membrananing tashqi yuzasida joylashgan boʻlib, glikokaliksni hosil qilishda ishtirok etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_6#6822e6be"
+    },
+    {
+      "q": "Xolesterin hujayrada qanday tarkibiy rol oʻynaydi?",
+      "v": [
+        "Hujayra membranasining asosiy tarkibiy qismidir",
+        "Hujayra devorining asosiy qismidir",
+        "Ribosomalarning asosiy qismidir",
+        "Xromosomalarning asosiy qismidir"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra xolesterin steroidi hujayra membranasining asosiy tarkibiy qismidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#1819490c"
+    },
+    {
+      "q": "Steroid gormonlar organizmda qayerda va nimadan sintezlanadi?",
+      "v": [
+        "Buyrak usti bezi va jinsiy bezlarda xolesterindan",
+        "Jigarda uglevodlardan",
+        "Oshqozon osti bezida oqsillardan",
+        "Qalqonsimon bezda yodadan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra buyrak usti bezida va jinsiy bezlarda xolesterindan steroid gormonlar sintezlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#8e245706"
+    },
+    {
+      "q": "Xolesterin qaysi vitamin sintezi uchun zarur?",
+      "v": [
+        "D vitamini",
+        "C vitamini",
+        "B12 vitamini",
+        "K vitamini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra xolesterin D vitamini sintezi uchun zarur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#4a9e9fba"
+    },
+    {
+      "q": "Ortiqcha xolesterin qon tomirlarida qanday oʻzgarishga olib keladi?",
+      "v": [
+        "Tomir devorlarida toʻplanib, tomirlarni toraytiradi",
+        "Tomirlarni kengaytiradi",
+        "Qon bosimini keskin tushiradi",
+        "Qonni suyultiradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ortiqcha xolesterin qon tomirlari devorlarida toʻplanib, tomirlarni toraytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#1aef968d"
+    },
+    {
+      "q": "Ortiqcha xolesterinning qon tomirlarida toʻplanishi qaysi kasallikka sabab boʻladi?",
+      "v": [
+        "Ateroskleroz",
+        "Anemiya",
+        "Diabet",
+        "Gastrit"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ortiqcha xolesterin tomirlarni toraytirib, ateroskleroz kasalligiga sabab boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#251c2677"
+    },
+    {
+      "q": "Ateroskleroz natijasida qon bilan taʼminlanishi birinchi navbatda buziladigan organ qaysi?",
+      "v": [
+        "Yurak muskullari",
+        "Jigar",
+        "Buyrak",
+        "Oshqozon"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ateroskleroz natijasida birinchi navbatda yurak muskullarining qon bilan taʼminlanishi buziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_6#9df7a47f"
+    },
+    {
+      "q": "Ateroskleroz qaysi kasalliklar rivojlanish xavfini oshiradi?",
+      "v": [
+        "Miokard infarkti va insult",
+        "Anemiya va raxit",
+        "Sil va gripp",
+        "Gastrit va yara kasalligi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ateroskleroz miokard infarkti, insult va boshqa kasalliklar rivojlanish xavfini oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#ca2bc839"
+    },
+    {
+      "q": "Xolesterin miqdorini oshiradigan omillarga qaysilar kiradi?",
+      "v": [
+        "Chekish, jismoniy faollik yetishmasligi, notoʻgʻri ovqatlanish",
+        "Koʻp suv ichish va uyqu",
+        "Sport bilan shugʻullanish",
+        "Sabzavotlar isteʼmol qilish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra chekish, jismoniy faollikning yetishmasligi, notoʻgʻri ovqatlanish xolesterin miqdorini oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#cbd59839"
+    },
+    {
+      "q": "Steroidlar guruhiga qaysi yogʻda eruvchi vitaminlar kiradi?",
+      "v": [
+        "A, D, E, K vitaminlari",
+        "B1, B6, B12 vitaminlari",
+        "C va PP vitaminlari",
+        "Faqat C vitamini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra steroidlar guruhiga A, D, E, K kabi yogʻda eruvchi vitaminlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#35d7aae7"
+    },
+    {
+      "q": "Struktura (qurilish) funksiyasini bajaradigan lipidlarga qaysilar misol boʻladi?",
+      "v": [
+        "Fosfolipidlar, xolesterin, lipoproteinlar, glikolipidlar",
+        "Faqat neytral yogʻlar",
+        "Faqat mumlar",
+        "Faqat vitaminlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra struktura funksiyasini fosfolipidlar, xolesterin, lipoproteinlar, glikolipidlar bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_6#b049d083"
+    },
+    {
+      "q": "Boshqarish (gormonal) funksiyani bajaruvchi steroid gormonlar qaysilar?",
+      "v": [
+        "Kortikosteroidlar hamda estrogen va androgen gormonlari",
+        "Insulin va glyukagon",
+        "Adrenalin va noradrenalin",
+        "Tiroksin va kaltsitonin"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra buyrakusti bezidan ajraladigan kortikosteroidlar va jinsiy bezlarning estrogen va androgen gormonlari steroidlar qatoriga kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_6#0e0a082d"
+    },
+    {
+      "q": "1 g yogʻ toʻliq oksidlanganda qancha energiya ajraladi?",
+      "v": [
+        "9,3 kkal yoki 38,9 kJ",
+        "4,1 kkal yoki 17 kJ",
+        "2,5 kkal yoki 10 kJ",
+        "15 kkal yoki 60 kJ"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra 1 g yogʻ toʻliq oksidlanganda 9,3 kkal yoki 38,9 kJ energiya ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_6#3fd43bd4"
+    },
+    {
+      "q": "Uyquga ketadigan hayvonlar qishda hayotiy jarayonlarni saqlab qolish uchun nimadan foydalanadi?",
+      "v": [
+        "Yoz va kuzda toʻplangan yogʻ zaxiralaridan",
+        "Suvdagi mineral tuzlardan",
+        "Havodagi kisloroddan",
+        "Uglevod zaxiralaridan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra uyquga ketadigan hayvonlar yoz va kuzda toʻplangan yogʻ zaxiralaridan qishda foydalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#440d1d85"
+    },
+    {
+      "q": "Oʻsimlik urugʻlaridagi yuqori lipid miqdori nima uchun kerak?",
+      "v": [
+        "Murtakning va niholning mustaqil oziqlanishga oʻtguncha rivojlanishi uchun energiya berish",
+        "Urugʻning rangini hosil qilish",
+        "Suvni yutish",
+        "Fotosintezni tezlashtirish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻsimlik urugʻlaridagi lipidlar murtakning rivojlanishi va nihol mustaqil oziqlanishga oʻtguncha rivojlanishi uchun energiya beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#ae33f85e"
+    },
+    {
+      "q": "Yogʻlar tarkibidagi uzun uglevodorod zanjirli yogʻ kislotalar oksidlanganda koʻp miqdorda nima hosil boʻladi?",
+      "v": [
+        "Suv molekulalari",
+        "Oqsil molekulalari",
+        "Uglevod molekulalari",
+        "Mineral tuzlar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yogʻ kislotalarning oksidlanishidan koʻp miqdorda suv molekulalari hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#70891981"
+    },
+    {
+      "q": "Choʻl hayvonlari va tuxumdagi embrionning suvga boʻlgan ehtiyoji asosan qanday yoʻl bilan qondiriladi?",
+      "v": [
+        "Yogʻ kislotalar oksidlanishi hisobiga",
+        "Terisidan suv yutish hisobiga",
+        "Havodan bugʻ yutish hisobiga",
+        "Oqsil parchalanishi hisobiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra choʻl hayvonlarining va embrionning suvga ehtiyoji asosan yogʻ kislotalar oksidlanishi hisobiga qondiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_6#bb546e1b"
+    },
+    {
+      "q": "1 kg yogʻ oksidlanganda undan qancha suv hosil boʻladi?",
+      "v": [
+        "1,05-1,1 kg suv",
+        "0,1-0,2 kg suv",
+        "2-3 kg suv",
+        "0,5 kg suv"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra 1 kg yogʻ oksidlanganda undan 1,05-1,1 kg suv hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_6#81cff044"
+    },
+    {
+      "q": "Teri osti yogʻ kletchatkasi qanday himoya funksiyasini bajaradi?",
+      "v": [
+        "Mexanik taʼsirlardan himoya qiladi",
+        "Ultrabinafsha nurlardan himoya qiladi",
+        "Mikroblardan himoya qiladi",
+        "Kimyoviy zaharlardan himoya qiladi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra teri osti yogʻ kletchatkasi mexanik taʼsirlardan himoya qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#60c27816"
+    },
+    {
+      "q": "Lipidlar issiqlikni yomon oʻtkazganligi tufayli organizmda qanday vazifani bajaradi?",
+      "v": [
+        "Issiqlikni saqlashga yordam beradi",
+        "Tanani sovutadi",
+        "Suvni bugʻlantiradi",
+        "Harakatni tezlashtiradi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra lipidlar issiqlikni yomon oʻtkazganligi tufayli organizmda issiqlikni saqlashga yordam beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#6386f4cc"
+    },
+    {
+      "q": "Zaxira funksiyasiga koʻra oʻsimlik va hayvonlarda yogʻ qanday holda toʻplanadi?",
+      "v": [
+        "Zahira holida",
+        "Faqat gaz holida",
+        "Faqat suvda erigan holda",
+        "Faqat gormon holida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻsimlikda va hayvonlarda yogʻ zahira holda toʻplanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio10_m1_6#1838abcb"
+    },
+    {
+      "q": "Choʻl hayvonlari va qishda uyquga ketadigan hayvonlarda zahira yogʻ nimaning manbai boʻlib xizmat qiladi?",
+      "v": [
+        "Energiya va suv manbai",
+        "Faqat oqsil manbai",
+        "Faqat mineral tuz manbai",
+        "Faqat vitamin manbai"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra choʻl va qishda uyquga ketadigan hayvonlarda zahira yogʻ energiya va suv manbai boʻlib xizmat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio10_m1_6#67033f60"
+    },
+    {
+      "q": "Yogʻda eruvchi A, D, E, K vitaminlari fermentlarda qanday vazifa bajaradi?",
+      "v": [
+        "Fermentlarning koferment qismini tashkil qiladi",
+        "Fermentlarni parchalaydi",
+        "Fermentlar sintezini toʻxtatadi",
+        "Fermentlarni suvda eritadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra yogʻda eruvchi A, D, E, K vitaminlari fermentlarning koferment qismini tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio10_m1_6#a8a8acd4"
+    }
+  ]
+}

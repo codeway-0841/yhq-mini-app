@@ -1,0 +1,456 @@
+{
+  "nom": "44-mavzu. Zaryad Taqsimlanishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Metall sharga berilgan musbat zaryadlar qanday taqsimlanadi?",
+      "v": [
+        "Sharning sirti bo‘ylab bir tekis",
+        "Shar ichida bir tekis",
+        "Shar markazida",
+        "Shar ichida va sirtida teng"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlar bir-biridan qochib, shar sirtiga chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#493dabca"
+    },
+    {
+      "q": "Zaryadlar shar ichida emas, sirtida joylashishining sababi nima?",
+      "v": [
+        "Zaryadlar orasidagi itarish kuchi",
+        "Zaryadlarning og‘irligi",
+        "Sharning harorati",
+        "Sharning magnitlanishi"
+      ],
+      "t": 0,
+      "izoh": "Bir xil ishorali zaryadlar bir-biridan qochib, sirtga chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#8cafb5d2"
+    },
+    {
+      "q": "Yakkalangan o‘tkazgichda elektr zaryadlari qayerda taqsimlanadi?",
+      "v": [
+        "Uning sirti bo‘ylab",
+        "Uning ichida",
+        "Markazida",
+        "Tashqarisida, havoda"
+      ],
+      "t": 0,
+      "izoh": "Yakkalangan o‘tkazgichda zaryadlar sirt bo‘ylab taqsimlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#73c7a9d9"
+    },
+    {
+      "q": "O‘tkazgich ichida zaryad bormi?",
+      "v": [
+        "Yo‘q, o‘tkazgich ichida zaryad bo‘lmaydi",
+        "Ha, ichida ko‘p zaryad bor",
+        "Faqat markazida bor",
+        "Faqat teshiklarida bor"
+      ],
+      "t": 0,
+      "izoh": "O‘tkazgich ichida zaryad bo‘lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#a5fd2824"
+    },
+    {
+      "q": "Shar ichida zaryad yo‘qligini tekshirishda nechta elektrometr ishlatiladi?",
+      "v": [
+        "Ikkita",
+        "Bitta",
+        "Uchta",
+        "To‘rtta"
+      ],
+      "t": 0,
+      "izoh": "Biriga kovak shar, ikkinchisiga butun shar o‘rnatilgan ikkita elektrometr ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#bcb5ea1d"
+    },
+    {
+      "q": "Tayoqcha uchidagi sharcha kovak shar ichiga tekkizmasdan kiritilganda, ikkinchi elektrometr ko‘rsatkichi qanday bo‘ladi?",
+      "v": [
+        "Joyidan qo‘zg‘almaydi",
+        "Katta burchakka buriladi",
+        "Biroz buriladi",
+        "Maksimal buriladi"
+      ],
+      "t": 0,
+      "izoh": "Bu shar ichida elektr zaryadi yo‘qligini ko‘rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#9db8aee2"
+    },
+    {
+      "q": "Tayoqcha uchidagi sharcha elektrometr ustidagi shar sirtiga tekkizilsa, nima kuzatiladi?",
+      "v": [
+        "Elektrometr ko‘rsatkichi undagi zaryadning biroz kamayganini ko‘rsatadi",
+        "Ko‘rsatkich o‘zgarmaydi",
+        "Ko‘rsatkich nolga tushadi",
+        "Elektrometr buziladi"
+      ],
+      "t": 0,
+      "izoh": "Sharcha shar sirtidan zaryad oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#a2d534e4"
+    },
+    {
+      "q": "Faradey qafasi nima?",
+      "v": [
+        "O‘tkazgich ichida elektr zaryadlari bo‘lmasligini isbotlash uchun yasalgan qurilma",
+        "Zaryad hosil qiluvchi qurilma",
+        "Tokni o‘lchovchi asbob",
+        "Tovush asbobi"
+      ],
+      "t": 0,
+      "izoh": "Faradey qafasi — o‘tkazgich ichida zaryad yo‘qligini isbotlaydigan qurilma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#3ba1f5dc"
+    },
+    {
+      "q": "Faradey qafasini yasashda yog‘och qafasning tashqi sirti nima bilan qoplangan?",
+      "v": [
+        "Yupqa folga bilan",
+        "Qog‘oz bilan",
+        "Rezina bilan",
+        "Bo‘yoq bilan"
+      ],
+      "t": 0,
+      "izoh": "Qafasning tashqi sirti yupqa folga bilan qoplangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#de329ad4"
+    },
+    {
+      "q": "Faradey tajribasida qafas ichidagi elektroskop qafasning zaryadlanishini qanday sezdi?",
+      "v": [
+        "Umuman sezmadi",
+        "Kuchli sezdi",
+        "Biroz sezdi",
+        "Elektroskop sinadi"
+      ],
+      "t": 0,
+      "izoh": "Metall qafas ichida elektr zaryadi bo‘lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#23bf8590"
+    },
+    {
+      "q": "Faradey qafas tajribasida qafas nima bilan osilgan?",
+      "v": [
+        "Ipak arqonlar bilan",
+        "Metall zanjir bilan",
+        "Mis sim bilan",
+        "Temir arqon bilan"
+      ],
+      "t": 0,
+      "izoh": "Qafas ipak arqonlar bilan osilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#52bf62c5"
+    },
+    {
+      "q": "Maykl Faradey qaysi yillarda yashagan?",
+      "v": [
+        "1791–1867-yillar",
+        "1736–1806-yillar",
+        "1871–1937-yillar",
+        "1879–1955-yillar"
+      ],
+      "t": 0,
+      "izoh": "Maykl Faradey 1791–1867-yillarda yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#7094d045"
+    },
+    {
+      "q": "Faradey tajribasi nimani isbotlaydi?",
+      "v": [
+        "Elektr zaryadlari faqat o‘tkazgich sirti bo‘ylab joylashishini",
+        "Zaryadlar o‘tkazgich ichida joylashishini",
+        "Zaryadlar havoda joylashishini",
+        "Zaryadlar yo‘qolishini"
+      ],
+      "t": 0,
+      "izoh": "O‘tkazgich ichida zaryad bo‘lmaydi, faqat sirtida joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#dde85fb6"
+    },
+    {
+      "q": "Yuqori kuchlanishli elektr tarmoqlari bilan ishlaydigan kishilar uchun qanday kiyimlar tikiladi?",
+      "v": [
+        "Po‘lat va mis tolalaridan maxsus kiyimlar",
+        "Rezina kiyimlar",
+        "Ipak kiyimlar",
+        "Jun kiyimlar"
+      ],
+      "t": 0,
+      "izoh": "Kiyimlar insonlarni elektrlanishdan himoya qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#7aacc145"
+    },
+    {
+      "q": "Yuqori kuchlanishli tarmoqlarda ishlaydigan kishilar kiyimi qanday himoya qiladi?",
+      "v": [
+        "Faradey qafasi kabi zaryadni kiyim sirtida saqlab, insonni himoya qiladi",
+        "Zaryadni yutadi",
+        "Zaryadni kuchaytiradi",
+        "Zaryadni sovutadi"
+      ],
+      "t": 0,
+      "izoh": "Zaryad kiyim sirtida qoladi, inson himoyalangan bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#abbe621f"
+    },
+    {
+      "q": "Turli shakldagi yakka o‘tkazgichga zaryad berilganda zaryad sirt bo‘ylab qanday taqsimlanadi?",
+      "v": [
+        "Notekis",
+        "Bir tekis",
+        "Faqat ichida",
+        "Tasodifiy, qonuniyatsiz"
+      ],
+      "t": 0,
+      "izoh": "Turli shakldagi o‘tkazgichda zaryad notekis taqsimlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#3338605c"
+    },
+    {
+      "q": "O‘tkir uchli jismning qaysi joylarida elektr zaryadi zichroq taqsimlanadi?",
+      "v": [
+        "Sirt yuzasi kichik bo‘lgan o‘tkir uchli joylarida",
+        "Silindr shaklidagi qismida",
+        "Ichki qismida",
+        "Tekis joylarida"
+      ],
+      "t": 0,
+      "izoh": "O‘tkir uchli joylarda zaryad zichroq to‘planadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#f72a71c8"
+    },
+    {
+      "q": "Silindr shakldagi qismda zaryadlar qanday joylashadi?",
+      "v": [
+        "Siyrak joylashadi",
+        "Zich joylashadi",
+        "Umuman bo‘lmaydi",
+        "Ichida joylashadi"
+      ],
+      "t": 0,
+      "izoh": "Silindr qismda zaryadlar siyrak bo‘lgani uchun yaproqchalar kichikroq ochiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#b8b63633"
+    },
+    {
+      "q": "Jismlarning uchli qismlarida zaryad qanday to‘planadi?",
+      "v": [
+        "Ko‘proq zaryad to‘planadi",
+        "Kamroq zaryad to‘planadi",
+        "Zaryad to‘planmaydi",
+        "Manfiy zaryad yo‘qoladi"
+      ],
+      "t": 0,
+      "izoh": "Jismlarning uchli qismlarida ko‘proq zaryad to‘planadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#d166ea64"
+    },
+    {
+      "q": "4.24-rasmdagi tajribada o‘tkazgichning turli joylariga nima yopishtirilgan?",
+      "v": [
+        "Folga yaproqchalari",
+        "Qog‘oz bo‘laklari",
+        "Skotch",
+        "Rezina parchalari"
+      ],
+      "t": 0,
+      "izoh": "Folga yaproqchalarining turlicha ochilishi notekis taqsimlanishni tasdiqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#0bebc7d2"
+    },
+    {
+      "q": "Kovak shar tajribasida elektrometr ko‘rsatkichi nega buriladi?",
+      "v": [
+        "Kovak sharga elektr zaryadi berilgani uchun",
+        "Shar qizigani uchun",
+        "Shar magnitlangani uchun",
+        "Havo bosimi uchun"
+      ],
+      "t": 0,
+      "izoh": "Kovak sharga zaryad berilganda elektrometr ko‘rsatkichi buriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#43859d2f"
+    },
+    {
+      "q": "Ba’zi kiyimlar kiyim quritkichdan chiqarilgandan keyin nima uchun bir-biriga yopishadi?",
+      "v": [
+        "Ishqalanish tufayli elektrlanib qoladi",
+        "Namlik tufayli",
+        "Issiqlik tufayli",
+        "Matoning og‘irligi tufayli"
+      ],
+      "t": 0,
+      "izoh": "Kiyimlar quritishda ishqalanib elektrlanadi va yopishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#e613d8d6"
+    },
+    {
+      "q": "Elektr zaryadi o‘tkazgich sirti bo‘ylab taqsimlanishini qaysi tajriba tasdiqlaydi?",
+      "v": [
+        "Tayoqcha uchidagi sharchani shar sirtiga tekkizish tajribasi",
+        "Lampochka tajribasi",
+        "Pufak tajribasi",
+        "Cho‘p tajribasi"
+      ],
+      "t": 0,
+      "izoh": "Sharcha sirtga tekkizilganda elektrometr zaryad olganini ko‘rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#d1b27c38"
+    },
+    {
+      "q": "Shar shaklidagi yakkalangan o‘tkazgich sirti bo‘ylab zaryad qanday taqsimlanadi?",
+      "v": [
+        "Tekis",
+        "Notekis",
+        "Faqat tepasida",
+        "Faqat ostida"
+      ],
+      "t": 0,
+      "izoh": "Shar sirtida zaryad bir tekis taqsimlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#15c0ecfd"
+    },
+    {
+      "q": "Metall qafas ichida elektr zaryadi bo‘lmasligini kim isbotlagan?",
+      "v": [
+        "Maykl Faradey",
+        "Sharl Kulon",
+        "Ernest Rezerford",
+        "Demokrit"
+      ],
+      "t": 0,
+      "izoh": "Faradey o‘z qafasi bilan bu hodisani isbotlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#b522905b"
+    },
+    {
+      "q": "Elektr tarmoqlarida hatto uzilgan bo‘lganda ham nima to‘planishi mumkin?",
+      "v": [
+        "Katta miqdordagi zaryadlar",
+        "Suv bug‘lari",
+        "Chang zarralari",
+        "Magnit maydon"
+      ],
+      "t": 0,
+      "izoh": "Yuzlab kilometr tarmoqlarda katta zaryadlar to‘planishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#9b829fd5"
+    },
+    {
+      "q": "O‘tkazgich sirtida zaryadlarning notekis taqsimlanishi qanday tekshiriladi?",
+      "v": [
+        "Turli joylarga yopishtirilgan folga yaproqchalarining ochilishiga qarab",
+        "Termometr bilan",
+        "Barometr bilan",
+        "Tortish bilan"
+      ],
+      "t": 0,
+      "izoh": "Yaproqchalarning turlicha ochilishi notekislikni tasdiqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#737ef6b7"
+    },
+    {
+      "q": "Kovak shar ichiga tekkizilmasdan kiritilgan sharcha nima uchun zaryad olmaydi?",
+      "v": [
+        "Shar ichida elektr zaryadi bo‘lmaydi",
+        "Sharcha dielektrikdan yasalgan",
+        "Tayoqcha qisqa",
+        "Havo to‘sqinlik qiladi"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlar faqat o‘tkazgich sirtida joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#aa4da71e"
+    },
+    {
+      "q": "Faradey qafas ichida elektr zaryadi bo‘lmasligining amaliy qo‘llanishiga misol:",
+      "v": [
+        "Yuqori kuchlanishli tarmoqlarda ishlaydiganlarning po‘lat va mis tolali maxsus kiyimlari",
+        "Rezina qo‘lqoplar",
+        "Shisha kozoynaklar",
+        "Kauchuk poyabzallar"
+      ],
+      "t": 0,
+      "izoh": "Faradey qafasi hodisasidan himoya kiyimlarida foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#99732dc5"
+    },
+    {
+      "q": "O‘tkazgichga berilgan zaryad uning sirtida joylashishiga asosiy sabab nima?",
+      "v": [
+        "Zaryadlar orasidagi itarish kuchining mavjudligi",
+        "Zaryadlarning tortishish kuchi",
+        "O‘tkazgichning massasi",
+        "Havo bosimi"
+      ],
+      "t": 0,
+      "izoh": "Itarish kuchi zaryadlarni bir-biridan uzoqroq — sirtga suradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m44-zaryad-taqsimlanishi#b85bb5f5"
+    }
+  ]
+}

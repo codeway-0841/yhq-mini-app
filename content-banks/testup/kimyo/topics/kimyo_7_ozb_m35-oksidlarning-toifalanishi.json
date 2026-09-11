@@ -1,0 +1,456 @@
+{
+  "nom": "35-mavzu. Oksidlarning toifalanishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Oksidlar kimyoviy xossalariga ko'ra qanday katta guruhlarga bo'linadi?",
+      "v": [
+        "Tuz hosil qiluvchi va tuz hosil qilmaydigan oksidlarga",
+        "Qattiq va gaz oksidlarga",
+        "Erkin va bog'langan oksidlarga",
+        "Metall va metallmas oksidlariga"
+      ],
+      "t": 0,
+      "izoh": "35-§ dagi asosiy bo'linish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#331bec20"
+    },
+    {
+      "q": "Tuz hosil qiluvchi oksidlar qanday toifalarga ajratiladi?",
+      "v": [
+        "Asosli, kislotali, amfoter",
+        "Qattiq, suyuq, gaz",
+        "Befarq, neytral, aralash",
+        "Oddiy va murakkab"
+      ],
+      "t": 0,
+      "izoh": "Uch toifa: asosli, kislotali, amfoter.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#5c3aaff6"
+    },
+    {
+      "q": "Quyidagilarning qaysi biri asosli oksid?",
+      "v": [
+        "CaO",
+        "SO2",
+        "CO2",
+        "P2O5"
+      ],
+      "t": 0,
+      "izoh": "CaO — asosli oksid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#8d205aff"
+    },
+    {
+      "q": "Quyidagilarning qaysi biri kislotali oksid?",
+      "v": [
+        "SO2",
+        "Na2O",
+        "FeO",
+        "ZnO"
+      ],
+      "t": 0,
+      "izoh": "SO2 — kislotali oksid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#4719ba9c"
+    },
+    {
+      "q": "Amfoter oksidlarga misol qaysi qatorda to'g'ri keltirilgan?",
+      "v": [
+        "ZnO, Cr2O3, Al2O3",
+        "Na2O, CaO, FeO",
+        "CO2, SO2, P2O5",
+        "NO, CO, N2O"
+      ],
+      "t": 0,
+      "izoh": "Kitobdagi amfoter oksidlar ro'yxati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#d3d450d7"
+    },
+    {
+      "q": "Befarq (tuz hosil qilmaydigan) oksidlar qaysilar?",
+      "v": [
+        "NO, CO, N2O",
+        "CO2, SO3, SiO2",
+        "Na2O, BaO, K2O",
+        "Al2O3, ZnO, Cr2O3"
+      ],
+      "t": 0,
+      "izoh": "Befarq oksidlar: NO, CO, N2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#b5e1133e"
+    },
+    {
+      "q": "Amfoterlik deganda nima tushuniladi?",
+      "v": [
+        "Ham asoslilik, ham kislotalilikning namoyon bo'lishi (ikki taraflama xossa)",
+        "Faqat kislotalilik xossasini namoyon qilish",
+        "Hech qanday xossa namoyon qilmaslik",
+        "Faqat suv bilan reaksiyaga kirishish"
+      ],
+      "t": 0,
+      "izoh": "Amfoterlik ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#ace6bc91"
+    },
+    {
+      "q": "Asosli oksidlar deb qanday oksidlarga aytiladi?",
+      "v": [
+        "Kislotalar yoki kislotali oksidlar bilan tuz hosil qiluvchi oksidlar",
+        "Suv bilan reaksiyaga kirmaydigan oksidlar",
+        "Tuz hosil qilmaydigan oksidlar",
+        "Asoslar bilan tuz hosil qiluvchi oksidlar"
+      ],
+      "t": 0,
+      "izoh": "Asosli oksid ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#f0bf25df"
+    },
+    {
+      "q": "Amfoter oksidlar deb qanday oksidlarga aytiladi?",
+      "v": [
+        "Kislotalar bilan ham, ishqorlar bilan ham tuz hosil qiluvchi oksidlar",
+        "Faqat kislotalar bilan tuz hosil qiluvchi oksidlar",
+        "Tuz hosil qilmaydigan oksidlar",
+        "Faqat asoslar bilan tuz hosil qiluvchi oksidlar"
+      ],
+      "t": 0,
+      "izoh": "Amfoter oksid ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#bbb87c96"
+    },
+    {
+      "q": "10-jadvalga ko'ra, asosli oksidlar ishqorlar bilan qanday ta'sirlashadi?",
+      "v": [
+        "Ta'sirlashmaydi",
+        "Tuz hosil qiladi",
+        "Gaz ajratadi",
+        "Suv hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Asosli oksid ishqor bilan ta'sirlashmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#994e5b92"
+    },
+    {
+      "q": "10-jadvalga ko'ra, kislotali oksidlar kislotali oksidlar bilan qanday ta'sirlashadi?",
+      "v": [
+        "Ta'sirlashmaydi",
+        "Tuz hosil qiladi",
+        "Asos hosil qiladi",
+        "Kislota hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Kislotali + kislotali — reaksiya kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#2e3f7e04"
+    },
+    {
+      "q": "10-jadvalga ko'ra, kislotali oksidlar qanday agregat holatda bo'lishi mumkin?",
+      "v": [
+        "Qattiq, suyuq, gaz",
+        "Faqat qattiq",
+        "Faqat gaz",
+        "Faqat suyuq"
+      ],
+      "t": 0,
+      "izoh": "Kislotali oksidlar uchala holatda ham bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#1822b077"
+    },
+    {
+      "q": "10-jadvalga ko'ra, amfoter oksidlarga mos keladigan gidroksidlar qanday xossa namoyon qiladi?",
+      "v": [
+        "Kislota-asos xossalarini",
+        "Faqat asos xossasi",
+        "Faqat kislota xossasi",
+        "Hech qanday xossa"
+      ],
+      "t": 0,
+      "izoh": "Amfoter gidroksidlar ikkala xossani namoyon qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#77c30c44"
+    },
+    {
+      "q": "FeO qaysi toifadagi oksidga kiradi?",
+      "v": [
+        "Asosli",
+        "Kislotali",
+        "Befarq",
+        "Amfoter"
+      ],
+      "t": 0,
+      "izoh": "FeO — asosli oksid (kitob misoli).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#ee6c579a"
+    },
+    {
+      "q": "ZnO qaysi toifadagi oksidga kiradi?",
+      "v": [
+        "Amfoter",
+        "Asosli",
+        "Kislotali",
+        "Befarq"
+      ],
+      "t": 0,
+      "izoh": "ZnO — amfoter oksid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#0184d091"
+    },
+    {
+      "q": "Oltingugurt (VI)-oksid (SO3) qaysi toifaga mansub?",
+      "v": [
+        "Kislotali",
+        "Asosli",
+        "Amfoter",
+        "Befarq"
+      ],
+      "t": 0,
+      "izoh": "SO3 — kislotali oksid (sulfat angidrid).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#e1137553"
+    },
+    {
+      "q": "20 g magniy oksid va 63 g nitrat kislota orasidagi reaksiyadan hosil bo'ladigan tuzning massasini toping. (Mg=24, O=16, N=14, H=1)",
+      "v": [
+        "74 g",
+        "148 g",
+        "37 g",
+        "83 g"
+      ],
+      "t": 0,
+      "izoh": "MgO+2HNO3=Mg(NO3)2+H2O; 0,5 mol Mg(NO3)2, M=148 → 74 g (kitob javobi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#b8053b55"
+    },
+    {
+      "q": "Asosli oksidlar va kislotali oksidlar bir-biriga nisbatan qanday xossalarga ega?",
+      "v": [
+        "Qarama-qarshi xossalarga",
+        "Bir xil xossalarga",
+        "Hech qanday xossaga ega emas",
+        "Faqat fizik xossalarga"
+      ],
+      "t": 0,
+      "izoh": "Ular qarama-qarshi xossalarga ega, amfoter oksidlar sharoitga qarab xossa ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#fe713d63"
+    },
+    {
+      "q": "Na2O qaysi toifadagi oksidga kiradi?",
+      "v": [
+        "Asosli oksid",
+        "Kislotali oksid",
+        "Amfoter oksid",
+        "Befarq oksid"
+      ],
+      "t": 0,
+      "izoh": "Kitobda asosli oksidlarga Na2O, CaO, FeO misol qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#82ea2158"
+    },
+    {
+      "q": "CO2 qaysi toifadagi oksidga kiradi?",
+      "v": [
+        "Kislotali oksid",
+        "Asosli oksid",
+        "Amfoter oksid",
+        "Befarq oksid"
+      ],
+      "t": 0,
+      "izoh": "Kitobda kislotali oksidlarga CO2, SO2, P2O5 misol qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#b3937deb"
+    },
+    {
+      "q": "Al2O3 qaysi toifadagi oksidga kiradi?",
+      "v": [
+        "Amfoter oksid",
+        "Asosli oksid",
+        "Kislotali oksid",
+        "Befarq oksid"
+      ],
+      "t": 0,
+      "izoh": "Kitobda amfoter oksidlarga ZnO, Cr2O3, Al2O3 misol qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#8c7199ff"
+    },
+    {
+      "q": "CO (uglerod (II)-oksid) qaysi toifadagi oksidga kiradi?",
+      "v": [
+        "Befarq oksid",
+        "Asosli oksid",
+        "Kislotali oksid",
+        "Amfoter oksid"
+      ],
+      "t": 0,
+      "izoh": "NO, CO, N2O — befarq oksidlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#f0bda368"
+    },
+    {
+      "q": "Befarq oksidlar deb qanday oksidlarga aytiladi?",
+      "v": [
+        "Kimyoviy reaksiyalarda tuz hosil qilmaydigan oksidlar",
+        "Kislotalar bilan tuz hosil qiluvchi oksidlar",
+        "Asoslar bilan tuz hosil qiluvchi oksidlar",
+        "Suv bilan ta'sirlashuvchi oksidlar"
+      ],
+      "t": 0,
+      "izoh": "Befarq oksidlar — tuz hosil qilmaydigan oksidlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#d5ad2aba"
+    },
+    {
+      "q": "Kislotali oksidlar deb qanday oksidlarga aytiladi?",
+      "v": [
+        "Asoslar yoki asosli oksidlar bilan tuz hosil qiluvchi oksidlar",
+        "Kislotalar bilan tuz hosil qiluvchi oksidlar",
+        "Tuz hosil qilmaydigan oksidlar",
+        "Faqat suv bilan ta'sirlashuvchi oksidlar"
+      ],
+      "t": 0,
+      "izoh": "Kitobdagi kislotali oksidlar ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#eaf3909e"
+    },
+    {
+      "q": "10-jadvalga ko'ra, asosli oksidlar qanday agregat holatda bo'ladi?",
+      "v": [
+        "Qattiq",
+        "Suyuq",
+        "Gaz",
+        "Qattiq, suyuq va gaz"
+      ],
+      "t": 0,
+      "izoh": "10-jadval: asosli oksidlar qattiq holatda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#fad58b8e"
+    },
+    {
+      "q": "10-jadvalga ko'ra, amfoter oksidlar kislotalar bilan qanday ta'sirlashadi?",
+      "v": [
+        "Ta'sirlashib tuz hosil qiladi",
+        "Ta'sirlashmaydi",
+        "Faqat suv hosil qiladi",
+        "Faqat gaz ajratadi"
+      ],
+      "t": 0,
+      "izoh": "10-jadval: amfoter oksidlar kislota bilan ta'sirlashib tuz hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#b9733071"
+    },
+    {
+      "q": "10-jadvalga ko'ra, amfoter oksidlar ishqorlar bilan qanday ta'sirlashadi?",
+      "v": [
+        "Ta'sirlashib tuz hosil qiladi",
+        "Ta'sirlashmaydi",
+        "Faqat kislorod ajratadi",
+        "Faqat suv hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "10-jadval: amfoter oksidlar ishqor bilan ham ta'sirlashib tuz hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#2544d68e"
+    },
+    {
+      "q": "10-jadvalga ko'ra, kislotali oksidlar asosli oksidlar bilan qanday ta'sirlashadi?",
+      "v": [
+        "Ta'sirlashib tuz hosil qiladi",
+        "Ta'sirlashmaydi",
+        "Faqat gaz hosil qiladi",
+        "Bir-birini eritadi"
+      ],
+      "t": 0,
+      "izoh": "10-jadval: kislotali oksid asosli oksid bilan ta'sirlashib tuz hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#6e25f843"
+    },
+    {
+      "q": "P2O5 qaysi toifadagi oksidga kiradi?",
+      "v": [
+        "Kislotali oksid",
+        "Asosli oksid",
+        "Amfoter oksid",
+        "Befarq oksid"
+      ],
+      "t": 0,
+      "izoh": "Kitobda kislotali oksidlarga P2O5 misol qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#cf1ede0c"
+    },
+    {
+      "q": "Cr2O3 qaysi toifadagi oksidga kiradi?",
+      "v": [
+        "Amfoter oksid",
+        "Asosli oksid",
+        "Kislotali oksid",
+        "Befarq oksid"
+      ],
+      "t": 0,
+      "izoh": "Kitobda amfoter oksidlarga Cr2O3 misol qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m35-oksidlarning-toifalanishi#8fbcb548"
+    }
+  ]
+}

@@ -1,0 +1,771 @@
+{
+  "nom": "Geografiya-10, 6-§. Tugamaydigan va tiklanadigan tabiiy resurslar geografiyasi, 21-24-bet",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Qishloq xoʻjaligiga bevosita taʼsir koʻrsatuvchi iqlimiy resurslar nima deb ataladi?",
+      "v": [
+        "Agroiqlimiy resurslar",
+        "Geotermal resurslar",
+        "Biologik resurslar",
+        "Yer resurslari"
+      ],
+      "t": 0,
+      "izoh": "Qishloq xoʻjaligiga bevosita taʼsir koʻrsatuvchi iqlimiy resurslar agroiqlimiy resurslar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#a61cb9ee"
+    },
+    {
+      "q": "Eng muhim agroiqlimiy koʻrsatkichlar qaysilar?",
+      "v": [
+        "Effektiv haroratlar (+10°C dan yuqori) yillik yigʻindisi hamda namlanish koeffitsiyenti",
+        "Yillik yogʻin miqdori",
+        "Yozgi harorat",
+        "Qishki harorat"
+      ],
+      "t": 0,
+      "izoh": "Eng muhim agroiqlimiy koʻrsatkichlar effektiv haroratlar (+10°C dan yuqori) yillik yigʻindisi hamda namlanish koeffitsiyenti (yogʻinlar miqdorining mumkin boʻlgan bugʻlanishga nisbati) hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#2f30feca"
+    },
+    {
+      "q": "Namlanish koeffitsiyenti nimani ifodalaydi?",
+      "v": [
+        "Yogʻinlar miqdorining mumkin boʻlgan bugʻlanishga nisbatini",
+        "Yillik harorat yigʻindisini",
+        "Daryolar suv sarfini",
+        "Tuproq unumdorligini"
+      ],
+      "t": 0,
+      "izoh": "Namlanish koeffitsiyenti — yogʻinlar miqdorining mumkin boʻlgan bugʻlanishga nisbati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#3688bcaa"
+    },
+    {
+      "q": "Iqlimning termik resurslari qanday yoʻnalishda kamayib boradi?",
+      "v": [
+        "Ekvatordan qutblarga tomon",
+        "Qutblardan ekvatorga tomon",
+        "Gʻarbdan sharqqa tomon",
+        "Shimoldan janubga bir tekis"
+      ],
+      "t": 0,
+      "izoh": "Iqlimning termik resurslari ekvatordan qutblarga tomon kamayib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#44d37cf9"
+    },
+    {
+      "q": "Ekvator atrofida effektiv haroratning yillik yigʻindisi qancha?",
+      "v": [
+        "8000°C dan yuqori",
+        "400°C dan past",
+        "1000°C atrofida",
+        "2000°C atrofida"
+      ],
+      "t": 0,
+      "izoh": "Ekvator atrofida effektiv haroratning yillik yigʻindisi 8000°C dan yuqori boʻlsa, arktika va subarktika iqlim mintaqalarida u 400°C ga ham yetmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#b4294601"
+    },
+    {
+      "q": "Arktika va subarktika iqlim mintaqalarida effektiv haroratning yillik yigʻindisi qancha?",
+      "v": [
+        "400°C ga ham yetmaydi",
+        "8000°C dan yuqori",
+        "2000°C atrofida",
+        "1000°C dan yuqori"
+      ],
+      "t": 0,
+      "izoh": "Arktika va subarktika iqlim mintaqalarida effektiv haroratning yillik yigʻindisi 400°C ga ham yetmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#48e66648"
+    },
+    {
+      "q": "Tropik, subekvatorial va ekvatorial iqlim mintaqalarida yil davomida necha marotaba hosil olish imkoniyati mavjud?",
+      "v": [
+        "2-3 marotaba",
+        "1 marotaba",
+        "4-5 marotaba",
+        "Umuman imkoniyat yoʻq"
+      ],
+      "t": 0,
+      "izoh": "Shuning uchun ham tropik, subekvatorial va ekvatorial iqlim mintaqalarida turli issiqsevar ekinlarni yetishtirish hamda yil davomida 2-3 marotaba hosil olish imkoniyati mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#031b1d0b"
+    },
+    {
+      "q": "Iqlimi issiq, ammo qurgʻoqchil boʻlgan ichki kontinental oʻlkalar uchun qanday dehqonchilik xos?",
+      "v": [
+        "Sugʻorma dehqonchilik",
+        "Lalmikor dehqonchilik",
+        "Koʻchma dehqonchilik",
+        "Terrasali dehqonchilik"
+      ],
+      "t": 0,
+      "izoh": "Iqlimi issiq, ammo qurgʻoqchil boʻlgan ichki kontinental oʻlkalar uchun esa tabiiy namgarchilikning ozligi hisobiga sugʻorma dehqonchilik xosdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#47755fff"
+    },
+    {
+      "q": "Issiq musson iqlimli hududlarda sunʼiy sugʻorish qachon qoʻllanadi?",
+      "v": [
+        "Iliq va quruq qishda",
+        "Sernam yozda",
+        "Yil boʻyi doimiy",
+        "Bahorda"
+      ],
+      "t": 0,
+      "izoh": "Issiq musson iqlimli hududlarda sunʼiy sugʻorish asosan iliq va quruq qishda qoʻllanadi, sernam yoz faslida esa dehqonchilik yogʻingarchilik hisobiga rivojlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#c7d16a54"
+    },
+    {
+      "q": "Darslikka koʻra, hozirgi vaqtda jahon yer fondining umumiy hajmi qancha?",
+      "v": [
+        "13,4 milliard gektar",
+        "4 milliard gektar",
+        "40 mln km²",
+        "34 milliard gektar"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi vaqtda jahon yer fondining umumiy hajmi 13,4 milliard gektarga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#027ff8d4"
+    },
+    {
+      "q": "Qishloq xoʻjaligida foydalaniladigan yerlar jahon umumiy yer fondining necha foizini tashkil qiladi?",
+      "v": [
+        "34 %",
+        "11 %",
+        "23 %",
+        "30 %"
+      ],
+      "t": 0,
+      "izoh": "Insoniyat uchun eng katta iqtisodiy ahamiyatga ega boʻlgan qishloq xoʻjaligida foydalaniladigan yerlar jahon umumiy yer fondining 34% ini tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#aa3f45be"
+    },
+    {
+      "q": "Ishlov beriladigan yerlar jahon yer fondining necha foizini tashkil qiladi?",
+      "v": [
+        "11 %",
+        "34 %",
+        "23 %",
+        "30 %"
+      ],
+      "t": 0,
+      "izoh": "Jumladan, ishlov beriladigan yerlar ulushi 11% ga, yaylovlarniki esa 23% ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#59544ff1"
+    },
+    {
+      "q": "Yaylovlar jahon yer fondining necha foizini tashkil qiladi?",
+      "v": [
+        "23 %",
+        "11 %",
+        "34 %",
+        "30 %"
+      ],
+      "t": 0,
+      "izoh": "Jumladan, ishlov beriladigan yerlar ulushi 11% ga, yaylovlarniki esa 23% ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#5a129dee"
+    },
+    {
+      "q": "Ishlov beriladigan yerlar dunyoda yetishtirilayotgan oziq-ovqat mahsulotlarining necha foizini yetkazib beradi?",
+      "v": [
+        "88 %",
+        "10 %",
+        "34 %",
+        "50 %"
+      ],
+      "t": 0,
+      "izoh": "Ishlov beriladigan yerlar dunyoda yetishtirilayotgan oziq-ovqat mahsulotlarining 88% ini, yaylovlar esa 10% ini yetkazib bermoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#822d871f"
+    },
+    {
+      "q": "Yaylovlar dunyoda yetishtirilayotgan oziq-ovqat mahsulotlarining necha foizini yetkazib beradi?",
+      "v": [
+        "10 %",
+        "88 %",
+        "34 %",
+        "23 %"
+      ],
+      "t": 0,
+      "izoh": "Ishlov beriladigan yerlar dunyoda yetishtirilayotgan oziq-ovqat mahsulotlarining 88% ini, yaylovlar esa 10% ini yetkazib bermoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#3ef12c21"
+    },
+    {
+      "q": "Yer resurslarining eng qimmatli qismi nima hisoblanadi?",
+      "v": [
+        "Ishlov beriladigan (ekin ekiladigan) maydonlar",
+        "Yaylovlar",
+        "Oʻrmonlar",
+        "Texnogen yerlar"
+      ],
+      "t": 0,
+      "izoh": "Demak, yer resurslarining eng qimmatli qismi ishlov beriladigan (ekin ekiladigan) maydonlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#bc0a6583"
+    },
+    {
+      "q": "Jahon yer fondi tarkibida oʻrmonlar necha foizni tashkil qiladi?",
+      "v": [
+        "30 %",
+        "34 %",
+        "11 %",
+        "3 %"
+      ],
+      "t": 0,
+      "izoh": "Yer fondi tarkibiga, shu bilan birga, oʻrmonlar (30%), aholi punktlari va muhandislik inshootlari bilan band boʻlgan texnogen yerlar (3%) hamda kam foydalaniladigan yoki unumsiz yerlar (33%) kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#0ca3cb77"
+    },
+    {
+      "q": "Jahon yer fondi tarkibida texnogen yerlar (aholi punktlari va muhandislik inshootlari) necha foizni tashkil qiladi?",
+      "v": [
+        "3 %",
+        "30 %",
+        "33 %",
+        "34 %"
+      ],
+      "t": 0,
+      "izoh": "Yer fondi tarkibiga aholi punktlari va muhandislik inshootlari bilan band boʻlgan texnogen yerlar (3%) kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#4568fdda"
+    },
+    {
+      "q": "Jahon yer fondi tarkibida kam foydalaniladigan yoki unumsiz yerlar necha foizni tashkil qiladi?",
+      "v": [
+        "33 %",
+        "3 %",
+        "30 %",
+        "11 %"
+      ],
+      "t": 0,
+      "izoh": "Yer fondi tarkibiga ... kam foydalaniladigan yoki unumsiz yerlar (33%) kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#a134402a"
+    },
+    {
+      "q": "Dehqonchilikda foydalaniladigan yerlarning eng katta maydonlari qaysi davlatlarga toʻgʻri keladi?",
+      "v": [
+        "AQSH, Hindiston, Rossiya, Xitoy, Braziliya, Argentina, Kanada, Nigeriya, Ukraina va Avstraliya",
+        "Saudiya Arabistoni, Eron, Iroq, BAA",
+        "Islandiya, Yaponiya, Yangi Zelandiya",
+        "Vatikan, Andorra, San-Marino"
+      ],
+      "t": 0,
+      "izoh": "Dehqonchilikda foydalaniladigan yerlarning eng katta maydonlari AQSH, Hindiston, Rossiya, Xitoy, Braziliya, Argentina, Kanada, Nigeriya, Ukraina va Avstraliyaga toʻgʻri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#8e797f19"
+    },
+    {
+      "q": "XX asr davomida ishlov beriladigan maydonlar hajmi dunyo boʻyicha qanday oʻzgardi?",
+      "v": [
+        "Ikki baravar kengaytirildi",
+        "Ikki baravar qisqardi",
+        "Oʻzgarmadi",
+        "Uch baravar kengaydi"
+      ],
+      "t": 0,
+      "izoh": "XX asr davomida ishlov beriladigan maydonlar hajmi dunyo boʻyicha ikki baravar kengaytirildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#38b382d8"
+    },
+    {
+      "q": "Ekin maydonlarini kengaytirish ishlari qaysi davlatlarda keng koʻlamda olib borildi?",
+      "v": [
+        "AQSH, Kanada, Avstraliya, Rossiya, Qozogʻiston, Xitoy, Braziliya, Oʻzbekiston",
+        "Saudiya Arabistoni, Eron, Iroq, BAA",
+        "Islandiya, Yaponiya, Yangi Zelandiya",
+        "Vatikan, Andorra, San-Marino"
+      ],
+      "t": 0,
+      "izoh": "Qoʻriq yerlarni oʻzlashtirish, botqoqli va zaxkash yerlarni ishga solish, choʻl yerlarga suv chiqarish yoʻli bilan ekin maydonlarini kengaytirish ishlari ayniqsa AQSH, Kanada, Avstraliya, Rossiya, Qozogʻiston, Xitoy, Braziliya, Oʻzbekistonda keng koʻlamda olib borildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#f94a0deb"
+    },
+    {
+      "q": "Eroziya (tuproq yuvilishi) jarayoni tufayli har yili qancha yer ishdan chiqmoqda?",
+      "v": [
+        "6-7 mln gektar",
+        "1-1,5 mln gektar",
+        "25 mln gektar",
+        "40 mln gektar"
+      ],
+      "t": 0,
+      "izoh": "Eroziya (tuproq yuvilishi) jarayoni tufayli har yili qishloq xoʻjaligida foydalaniladigan 6-7 mln gektar yer ishdan chiqmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#bada0fef"
+    },
+    {
+      "q": "Yerlarning botqoqlanishi va shoʻr bosishi oqibatida ekin maydonlari qancha qisqarib ketmoqda?",
+      "v": [
+        "1-1,5 mln gektarga",
+        "6-7 mln gektarga",
+        "25 mln gektarga",
+        "40 mln gektarga"
+      ],
+      "t": 0,
+      "izoh": "Bundan tashqari, yerlarning botqoqlanishi va shoʻr bosishi oqibatida ekin maydonlari 1-1,5 mln gektarga qisqarib ketmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#3ee6bb06"
+    },
+    {
+      "q": "Chuchuk suv resurslari gidrosfera umumiy hajmining necha foizini tashkil qiladi?",
+      "v": [
+        "Atigi 3 %",
+        "30 %",
+        "50 %",
+        "10 %"
+      ],
+      "t": 0,
+      "izoh": "Chuchuk suv resurslari gidrosfera umumiy hajmining atigi 3% inigina tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#3b7e11c4"
+    },
+    {
+      "q": "Chuchuk suvning asosiy qismi qayerda toʻplangan?",
+      "v": [
+        "Antarktida, Arktika va baland togʻlardagi qor va muzliklarda",
+        "Daryolarda",
+        "Koʻllarda",
+        "Yerosti suvlarida"
+      ],
+      "t": 0,
+      "izoh": "Lekin uning asosiy qismi sayyoramizning chekka, foydalanish qiyin boʻlgan Antarktida, Arktika va baland togʻlardagi qor va muzliklarda toʻplangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#07c30071"
+    },
+    {
+      "q": "Insoniyatning chuchuk suvga boʻlgan ehtiyojini qondiradigan asosiy manba nima?",
+      "v": [
+        "Daryolar",
+        "Koʻllar",
+        "Muzliklar",
+        "Yerosti suvlari"
+      ],
+      "t": 0,
+      "izoh": "Insoniyatning chuchuk suvga boʻlgan ehtiyojini qondiradigan asosiy manba daryolar boʻlib, ulardagi suvning umumiy miqdori atigi 47 ming km³ dir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#f82c3b57"
+    },
+    {
+      "q": "Daryolardagi suvning umumiy miqdori qancha?",
+      "v": [
+        "47 ming km³",
+        "13,4 mlrd km³",
+        "3 ming km³",
+        "100 ming km³"
+      ],
+      "t": 0,
+      "izoh": "Insoniyatning chuchuk suvga boʻlgan ehtiyojini qondiradigan asosiy manba daryolar boʻlib, ulardagi suvning umumiy miqdori atigi 47 ming km³ dir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#af0c279c"
+    },
+    {
+      "q": "Chuchuk suv bilan eng yaxshi taʼminlangan davlatlar qatoriga qaysilar kiradi?",
+      "v": [
+        "Braziliya, Rossiya, Kanada, AQSH, Venesuela, Peru, Kolumbiya, Kongo Demokratik Respublikasi",
+        "Saudiya Arabistoni, Eron, Iroq, BAA",
+        "Islandiya, Yaponiya, Yangi Zelandiya",
+        "Vatikan, Andorra, San-Marino"
+      ],
+      "t": 0,
+      "izoh": "Chuchuk suv bilan eng yaxshi taʼminlangan davlatlar qatoriga Braziliya, Rossiya, Kanada, AQSH, Venesuela, Peru, Kolumbiya, Kongo Demokratik Respublikasi va boshqalar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#4c4a3262"
+    },
+    {
+      "q": "Quruqlikning qancha qismini qurgʻoqchil mintaqalar tashkil qiladi?",
+      "v": [
+        "1/3 qismini",
+        "1/2 qismini",
+        "1/5 qismini",
+        "1/10 qismini"
+      ],
+      "t": 0,
+      "izoh": "Quruqlikning 1/3 qismini tashkil qiladigan qurgʻoqchil mintaqalarda suv tanqisligi juda keskin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#e5df019a"
+    },
+    {
+      "q": "Shimoliy Afrika va Janubi-gʻarbiy Osiyo mamlakatlarida qishloq xoʻjalik ishlari asosan qanday olib boriladi?",
+      "v": [
+        "Sunʼiy sugʻorish orqali",
+        "Yomgʻir suvi hisobiga",
+        "Daryo toshqini hisobiga",
+        "Yerosti suvi hisobiga"
+      ],
+      "t": 0,
+      "izoh": "Buning ustiga ularda qishloq xoʻjalik ishlari asosan sunʼiy sugʻorish orqali olib boriladi. Shimoliy Afrika, Janubi-gʻarbiy Osiyo mamlakatlari shunday hududlar qatoriga kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#92900e2a"
+    },
+    {
+      "q": "Darslikka koʻra, hozir jahonda qurilgan suv omborlarining soni qancha?",
+      "v": [
+        "40 mingdan oshib ketdi",
+        "4 mingdan oshdi",
+        "400 mingdan oshdi",
+        "4 mlndan oshdi"
+      ],
+      "t": 0,
+      "izoh": "Daryolar suvidan samaraliroq foydalanishga erishish uchun koʻplab suv omborlari qurilgan. Hozir jahonda qurilgan suv omborlarining soni 40 mingdan oshib ketdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#739a15a7"
+    },
+    {
+      "q": "Yirik suv omborlarining soni boʻyicha qaysi davlatlar alohida ajralib turadi?",
+      "v": [
+        "AQSH, Xitoy, Hindiston, Braziliya va Rossiya",
+        "Islandiya, Yaponiya, Yangi Zelandiya",
+        "Saudiya Arabistoni, Eron, Iroq",
+        "Vatikan, Andorra, San-Marino"
+      ],
+      "t": 0,
+      "izoh": "Yirik suv omborlarining soni boʻyicha AQSH, Xitoy, Hindiston, Braziliya va Rossiya alohida ajralib turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#f9fb7f25"
+    },
+    {
+      "q": "Chuchitilgan dengiz suvidan foydalanish hajmiga koʻra eng katta davlat qaysi?",
+      "v": [
+        "Kuvayt",
+        "Saudiya Arabistoni",
+        "AQSH",
+        "Yaponiya"
+      ],
+      "t": 0,
+      "izoh": "Chuchitilgan dengiz suvidan foydalanish hajmiga koʻra eng katta davlat Kuvayt hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#7c7c63ef"
+    },
+    {
+      "q": "Dengiz suvini chuchitish ishlari hozirgi paytda qaysi hududlarda kengaymoqda?",
+      "v": [
+        "Fors qoʻltigʻi, Oʻrta dengizboʻyi mamlakatlari, AQSH, Yaponiya, Karib dengizi mamlakatlarida",
+        "Shimoliy Muz okeani atrofida",
+        "Antarktida atrofida",
+        "Boltiq dengizi atrofida"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi paytda Fors qoʻltigʻi, Oʻrta dengizboʻyi mamlakatlari, AQSH, Yaponiya, Karib dengizi mamlakatlarida dengiz suvini chuchitish ishlari kengayib bormoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#17688877"
+    },
+    {
+      "q": "Biologik resurslar deb nimaga aytiladi?",
+      "v": [
+        "Yer yuzasining oʻsimlik va hayvonot boyliklariga",
+        "Mineral boyliklarga",
+        "Suv resurslariga",
+        "Yer resurslariga"
+      ],
+      "t": 0,
+      "izoh": "Biologik resurslar deb, Yer yuzasining oʻsimlik va hayvonot boyliklariga aytiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#733fb05a"
+    },
+    {
+      "q": "Jahonda oʻrmonlar necha mln km² (yoki necha milliard gektar) maydonni egallaydi?",
+      "v": [
+        "40 mln km² (4 milliard gektar)",
+        "13,4 mln km² (1,3 milliard gektar)",
+        "20 mln km² (2 milliard gektar)",
+        "60 mln km² (6 milliard gektar)"
+      ],
+      "t": 0,
+      "izoh": "Jahonda oʻrmonlar 40 mln km² (4 milliard gektar) ni, yoki butun quruqlikning 30% iga yaqinini tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#478d7267"
+    },
+    {
+      "q": "Keyingi 200 yil davomida sayyoramiz oʻrmonlari qanday oʻzgardi?",
+      "v": [
+        "2 baravarga kamaydi",
+        "2 baravarga koʻpaydi",
+        "Oʻzgarishsiz qoldi",
+        "3 baravarga kamaydi"
+      ],
+      "t": 0,
+      "izoh": "Darhaqiqat, keyingi 200 yil davomida sayyoramiz oʻrmonlari 2 baravarga kamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#fe41dac0"
+    },
+    {
+      "q": "Soʻnggi yillarda jahon boʻyicha oʻrmonli maydonlar yiliga oʻrtacha qancha qisqarib bormoqda?",
+      "v": [
+        "25 mln gektardan",
+        "6-7 mln gektardan",
+        "1-1,5 mln gektardan",
+        "40 mln gektardan"
+      ],
+      "t": 0,
+      "izoh": "Soʻnggi yillarda esa jahon boʻyicha oʻrmonli maydonlar yiliga oʻrtacha 25 mln gektardan qisqarib bormoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#4f2902fe"
+    },
+    {
+      "q": "Dunyoda kenglik boʻylab choʻzilgan nechta yirik oʻrmon mintaqasi mavjud?",
+      "v": [
+        "Ikkita: Shimoliy va Janubiy oʻrmon mintaqalari",
+        "Bitta yaxlit oʻrmon mintaqasi",
+        "Uchta oʻrmon mintaqasi",
+        "Toʻrtta oʻrmon mintaqasi"
+      ],
+      "t": 0,
+      "izoh": "Dunyoda kenglik boʻylab katta masofaga choʻzilgan ikkita — Shimoliy va Janubiy oʻrmon mintaqalari mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#caec8085"
+    },
+    {
+      "q": "Shimoliy oʻrmon mintaqasi qaysi iqlim mintaqalarida joylashgan?",
+      "v": [
+        "Moʻtadil va qisman subtropik iqlimli hududlarda",
+        "Tropik va ekvatorial iqlimli hududlarda",
+        "Arktika iqlimli hududlarda",
+        "Subekvatorial iqlimli hududlarda"
+      ],
+      "t": 0,
+      "izoh": "Shimoliy oʻrmon mintaqasi moʻtadil va qisman subtropik iqlimli hududlar boʻylab joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#5e3f1d98"
+    },
+    {
+      "q": "Shimoliy oʻrmon mintaqasi oʻrmonlarining muhim xususiyati nimada?",
+      "v": [
+        "Ularda asosan tik oʻsadigan sifatli, ignabargli daraxtlarning oʻsishida",
+        "Ularda keng bargli daraxtlarning koʻp yarusli oʻsishida",
+        "Ularda faqat butalarning oʻsishida",
+        "Ularda daraxt umuman oʻsmasligida"
+      ],
+      "t": 0,
+      "izoh": "Bu mintaqa oʻrmonlarining muhim xususiyati ularda asosan tik oʻsadigan sifatli, ignabargli daraxtlarning oʻsishidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#449bfa98"
+    },
+    {
+      "q": "Ignabargli oʻrmonlarga qaysi davlatlar boy?",
+      "v": [
+        "Rossiya, Kanada, AQSH, Finlyandiya",
+        "Braziliya, Peru, Kolumbiya, Venesuela",
+        "Saudiya Arabistoni, Eron, Iroq",
+        "Islandiya, Yaponiya, Yangi Zelandiya"
+      ],
+      "t": 0,
+      "izoh": "Bunday oʻrmonlarga Rossiya, Kanada, AQSH, Finlyandiya davlatlari boy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#7d56d44f"
+    },
+    {
+      "q": "Janubiy oʻrmon mintaqasi asosan qaysi iqlim mintaqalarida joylashgan?",
+      "v": [
+        "Tropik va ekvatorial iqlim mintaqalarida",
+        "Moʻtadil va subtropik iqlim mintaqalarida",
+        "Arktika iqlim mintaqasida",
+        "Moʻtadil iqlim mintaqasida"
+      ],
+      "t": 0,
+      "izoh": "Janubiy oʻrmon mintaqasi asosan tropik va ekvatorial iqlim mintaqalarida joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#0f59c964"
+    },
+    {
+      "q": "Janubiy oʻrmon mintaqasida qaysi mamlakatlar eng katta oʻrmonli maydonlarga ega?",
+      "v": [
+        "Braziliya, Peru, Kolumbiya, Venesuela, Kongo Demokratik Respublikasi, Hindiston, Myanma, Indoneziya",
+        "Rossiya, Kanada, AQSH, Finlyandiya",
+        "Saudiya Arabistoni, Eron, Iroq",
+        "Islandiya, Yaponiya, Yangi Zelandiya"
+      ],
+      "t": 0,
+      "izoh": "Janubiy oʻrmon mintaqasida Braziliya, Peru, Kolumbiya, Venesuela, Kongo Demokratik Respublikasi, Hindiston, Myanma, Indoneziya kabi mamlakatlar eng katta oʻrmonli maydonlarga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#fb075012"
+    },
+    {
+      "q": "Dunyo aholisining oqsillarga boʻlgan ehtiyojining necha foizidan koʻprogʻi dengiz hayvonlari va oʻsimliklari hisobiga qoplanadi?",
+      "v": [
+        "20 %",
+        "50 %",
+        "5 %",
+        "80 %"
+      ],
+      "t": 0,
+      "izoh": "Maʼlumotlarga koʻra, dunyo aholisining oqsillarga boʻlgan ehtiyojining 20% idan koʻprogʻi dengiz hayvonlari va oʻsimliklari hisobiga qoplanmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#23455e88"
+    },
+    {
+      "q": "Qaysi okean qismlari baliqlarga juda boy?",
+      "v": [
+        "Tinch okeanning shimoli-gʻarbiy va janubi-sharqiy qismlari, Atlantika okeanining shimoliy dengizlari",
+        "Hind okeanining markaziy qismi",
+        "Shimoliy Muz okeanining barcha qismi",
+        "Janubiy okeanning barcha qismi"
+      ],
+      "t": 0,
+      "izoh": "Ayniqsa, Tinch okeanning Shimoli-gʻarbiy va Janubi-sharqiy qismlari, Atlantika okeanining shimoliy dengizlari baliqlarga juda boy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#d22b212b"
+    },
+    {
+      "q": "Geotermal resurslar nima hisoblanadi?",
+      "v": [
+        "Yerning ichki energiyasi, muhim noanʼanaviy energiya manbalaridan biri",
+        "Quyosh energiyasi manbai",
+        "Shamol energiyasi manbai",
+        "Suv energiyasi manbai"
+      ],
+      "t": 0,
+      "izoh": "Geotermal resurslar. Yerning ichki energiyasi, yaʼni geotermal resurslar muhim noanʼanaviy energiya manbalaridan biri hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#44fb49f5"
+    },
+    {
+      "q": "Geotermal energiyaga qanday mintaqalar boy?",
+      "v": [
+        "Tektonik harakatlar faol davom etayotgan, iqlimi sernam boʻlgan mintaqalar",
+        "Qurgʻoqchil choʻl mintaqalari",
+        "Tekislik mintaqalari",
+        "Qutbiy mintaqalar"
+      ],
+      "t": 0,
+      "izoh": "Geotermal energiyaga asosan tektonik harakatlar faol davom etayotgan, iqlimi sernam boʻlgan mintaqalar boydir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#c972f900"
+    },
+    {
+      "q": "Geotermal resurslarga boy davlatlarga qanday misollar keltirilgan?",
+      "v": [
+        "Islandiya, Yaponiya, Yangi Zelandiya, Filippin, Papua-Yangi Gvineya, Italiya, Meksika, AQSH, Rossiya",
+        "Braziliya, Peru, Kolumbiya, Venesuela",
+        "Saudiya Arabistoni, Eron, Iroq, BAA",
+        "Rossiya, Kanada, Finlyandiya"
+      ],
+      "t": 0,
+      "izoh": "Islandiya, Yaponiya, Yangi Zelandiya, Filippin, Papua-Yangi Gvineya, Italiya, Meksika, AQSH, Rossiya geotermal resurslarga boy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#194eac53"
+    },
+    {
+      "q": "6-§ mavzu boshida qanday kalit soʻzlar keltirilgan?",
+      "v": [
+        "Agroiqlimiy resurslar, yer resurslari, suv resurslari, biologik resurslar, geotermal resurslar",
+        "Tabiiy resurslar, mineral resurslar, yoqilgʻi resurslar, rudali resurslar",
+        "Ijtimoiy-iqtisodiy rivojlanish, yalpi ichki mahsulot, «Katta yettilik» guruhi",
+        "Boshqaruv shakli, respublika, monarxiya, davlat tuzilishi"
+      ],
+      "t": 0,
+      "izoh": "6-§ mavzu boshidagi kalit soʻzlar: agroiqlimiy resurslar, yer resurslari, suv resurslari, biologik resurslar, geotermal resurslar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo10_m5#312b5cce"
+    }
+  ]
+}

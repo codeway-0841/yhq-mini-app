@@ -1,0 +1,1609 @@
+{
+  "nom": "Chiziqli va kvadrat tenglamada parametr",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": false,
+  "savollar": [
+    {
+      "q": "Toshkentdagi taksi xizmatida yo'l haqi (a − 4)x = 12 tenglamasidan topiladi, bunda x — bir kilometr uchun to'lov. Parametr a ning qanday qiymatlarida bu tenglama yagona yechimga ega bo'ladi?",
+      "v": [
+        "a = 4",
+        "a ≠ 4",
+        "a ≠ 0",
+        "a ≠ −4"
+      ],
+      "t": 1,
+      "izoh": "Chiziqli tenglama kx = m ko'rinishida yagona yechimga ega bo'lishi uchun k ≠ 0 bo'lishi shart. Bu yerda k = a − 4, demak a − 4 ≠ 0, ya'ni a ≠ 4. a = 4 bo'lganda 0·x = 12 hosil bo'ladi va yechim umuman topilmaydi. Javob: a ≠ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-yagona-yechim-sharti",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#79789717"
+    },
+    {
+      "q": "5m − 3 = (2m + 6)x tenglamasi x noma'lumga nisbatan yagona yechimga ega bo'lishi uchun m parametr qanday qiymatni qabul qilmasligi kerak?",
+      "v": [
+        "m = −3",
+        "m = 3",
+        "m = 0",
+        "m = −6"
+      ],
+      "t": 0,
+      "izoh": "Tenglamani (2m + 6)x = 5m − 3 ko'rinishida yozamiz. Yagona yechim x oldidagi koeffitsient noldan farqli bo'lganda mavjud: 2m + 6 ≠ 0, ya'ni m ≠ −3. Demak m = −3 qiymati mumkin emas, chunki unda 0·x = −18 chiqadi. Javob: m = −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-yagona-yechim-sharti",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#65b23af1"
+    },
+    {
+      "q": "Anvar daftar sotib oldi, uning to'lovi (k² − 9)x = 45 tenglamadan aniqlanadi, bunda x — bitta daftarning narxi. k ning qaysi qiymatlarida narx yagona aniqlanadi?",
+      "v": [
+        "faqat k ≠ 3",
+        "k ≠ 9",
+        "k ≠ 3 va k ≠ −3",
+        "k ≠ 0"
+      ],
+      "t": 2,
+      "izoh": "Yagona yechim uchun x oldidagi koeffitsient nolga teng bo'lmasligi kerak: k² − 9 ≠ 0. k² = 9 tenglamaning ildizlari k = 3 va k = −3. Ikkala qiymat ham chiqarib tashlanadi, chunki har ikkalasida koeffitsient nolga aylanadi. Javob: k ≠ 3 va k ≠ −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-yagona-yechim-sharti",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#34b63abe"
+    },
+    {
+      "q": "(a − 5)x + 3 = 2x + a tenglamasi x ga nisbatan yagona ildizga ega bo'lishi uchun a parametr qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a ≠ 5",
+        "a ≠ 3",
+        "a ≠ 2",
+        "a ≠ 7"
+      ],
+      "t": 3,
+      "izoh": "Noma'lumli hadlarni chap tomonga yig'amiz: (a − 5)x − 2x = a − 3, ya'ni (a − 7)x = a − 3. Yagona ildiz uchun koeffitsient noldan farqli bo'lishi kerak: a − 7 ≠ 0. Demak a ≠ 7. Javob: a ≠ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-yagona-yechim-sharti",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#441f6f16"
+    },
+    {
+      "q": "Zavodda bir smenada tayyorlanadigan detallar soni (b − 8)x = 7 tenglamadan topiladi. Bu tenglama umuman yechimga ega bo'lmasligi uchun b nechaga teng bo'lishi kerak?",
+      "v": [
+        "b = 8",
+        "b = 7",
+        "b = −8",
+        "b ≠ 8"
+      ],
+      "t": 0,
+      "izoh": "Yechim bo'lmasligi uchun x oldidagi koeffitsient nolga, o'ng tomon esa noldan farqli bo'lishi kerak. b − 8 = 0 shartdan b = 8 kelib chiqadi. Bunda tenglama 0·x = 7 ko'rinishini oladi, bu esa hech qanday x da bajarilmaydi. Javob: b = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-yechimsiz-shart",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#de44cf20"
+    },
+    {
+      "q": "m parametrning qanday qiymatida (m² − 4)x = m + 2 tenglamasi x ga nisbatan bitta ham yechimga ega bo'lmaydi?",
+      "v": [
+        "m = −2",
+        "m = 2",
+        "m = 2 va m = −2",
+        "m = 4"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsient nolga aylanishi uchun m² − 4 = 0, ya'ni m = 2 yoki m = −2 bo'lishi kerak. m = 2 da tenglama 0·x = 4 ko'rinishini oladi va yechimi yo'q. m = −2 da esa 0·x = 0 bo'lib, aksincha cheksiz ko'p yechim chiqadi. Javob: m = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-yechimsiz-shart",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#a6b403ea"
+    },
+    {
+      "q": "3(x − 2) + a = 2x + x − 1 tenglamasi hech qanday yechimga ega bo'lmasligi uchun a parametr qanday bo'lishi kerak?",
+      "v": [
+        "a = 5",
+        "a ≠ −5",
+        "a ≠ 5",
+        "a ≠ 6"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonni soddalashtiramiz: chapda 3x + a − 6, o'ngda 3x − 1 hosil bo'ladi. 3x hadlar qisqaradi va a − 6 = −1 sharti qoladi. Bu tenglik faqat a = 5 da bajariladi, ya'ni a = 5 da cheksiz ko'p yechim bo'ladi. Qolgan hollarda, ya'ni a ≠ 5 da yechim yo'q. Javob: a ≠ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-yechimsiz-shart",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#2d089892"
+    },
+    {
+      "q": "Sartaroshxonaning bir kunlik rejasi (2p − 14)x = 6 tenglamasi bilan beriladi va bu tenglama yechimga ega emas. p ning qiymati nechaga teng?",
+      "v": [
+        "28",
+        "14",
+        "−7",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Yechim bo'lmasligi uchun x oldidagi koeffitsient nolga aylanishi, o'ng tomon esa noldan farqli qolishi kerak. 2p − 14 = 0 dan 2p = 14 va p = 7. Bunda tenglama 0·x = 6 ko'rinishini oladi va bajarilmaydi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-yechimsiz-shart",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#db4a38f2"
+    },
+    {
+      "q": "(a − 6)x = a² − 36 tenglamasi cheksiz ko'p yechimga ega bo'lishi uchun a parametr nechaga teng bo'lishi kerak?",
+      "v": [
+        "−6",
+        "6",
+        "36",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "Cheksiz ko'p yechim uchun ikkala tomon ham nolga aylanishi kerak: a − 6 = 0 va a² − 36 = 0. Birinchi shartdan a = 6, bu qiymat ikkinchisini ham qanoatlantiradi. a = −6 da esa −12·x = 0 bo'lib, faqat bitta x = 0 ildiz chiqadi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-cheksiz-yechim",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#30bec886"
+    },
+    {
+      "q": "2(x + m) = 2x + 8 tenglamasi x ning barcha qiymatlarida to'g'ri bo'lishi uchun m nechaga teng bo'lishi kerak?",
+      "v": [
+        "8",
+        "2",
+        "4",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "Qavsni ochamiz: 2x + 2m = 2x + 8. Ikkala tomondagi 2x hadlar qisqaradi va 2m = 8 tengligi qoladi. Bundan m = 4 kelib chiqadi. Aynan shu qiymatda tenglama ayniyatga aylanadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-cheksiz-yechim",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#281a1c21"
+    },
+    {
+      "q": "(k² − 1)x = k − 1 tenglamasi cheksiz ko'p ildizga ega bo'ladigan k parametrning qiymatini toping.",
+      "v": [
+        "1",
+        "−1",
+        "1 va −1",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Cheksiz ko'p ildiz uchun ikkala koeffitsient ham nolga teng bo'lishi kerak: k² − 1 = 0 va k − 1 = 0. Birinchisidan k = 1 yoki k = −1, ikkinchisidan esa faqat k = 1 chiqadi. Ikkala shartni birdaniga k = 1 qanoatlantiradi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-cheksiz-yechim",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#5fc7c0a7"
+    },
+    {
+      "q": "Kitob do'konida chegirma miqdori (c − 10)x = 5c − 50 tenglamasidan hisoblanadi. Bu tenglik x ning har qanday qiymatida bajarilishi uchun c nechaga teng bo'lishi kerak?",
+      "v": [
+        "50",
+        "5",
+        "−10",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Tenglik har qanday x uchun bajarilishi shart bo'lgani sababli c − 10 = 0 va 5c − 50 = 0 bo'lishi kerak. Birinchi shartdan c = 10 topiladi. Bu qiymat ikkinchi shartni ham qanoatlantiradi, chunki 5·10 − 50 = 0. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-cheksiz-yechim",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#c1249793"
+    },
+    {
+      "q": "(a − 2)x = a² − 4 tenglamaning yechimini parametrga bog'liq holda to'liq ko'rsatgan javob jadvalini tanlang.",
+      "v": [
+        "a = 2 da yechim yo'q, a ≠ 2 da x = a + 2",
+        "a = 2 da cheksiz ko'p yechim, a ≠ 2 da x = a − 2",
+        "a = 2 da cheksiz ko'p yechim, a ≠ 2 da x = a + 2",
+        "a = −2 da cheksiz ko'p yechim, a ≠ −2 da x = a + 2"
+      ],
+      "t": 2,
+      "izoh": "O'ng tomonni ko'paytuvchilarga ajratamiz: a² − 4 = (a − 2)(a + 2). a ≠ 2 bo'lganda ikkala tomonni a − 2 ga bo'lish mumkin va x = a + 2 chiqadi. a = 2 bo'lganda esa 0·x = 0 bo'lib, har qanday x yechim bo'ladi. Javob: a = 2 da cheksiz ko'p yechim, a ≠ 2 da x = a + 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-parametr-javob-jadvali",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#a1b68169"
+    },
+    {
+      "q": "(a + 3)x = 5 tenglamaning parametr bo'yicha barcha hollarini to'g'ri ko'rsatgan javobni belgilang.",
+      "v": [
+        "a ≠ −3 da x = 5/(a + 3), a = −3 da cheksiz ko'p yechim",
+        "a ≠ −3 da x = 5/(a + 3), a = −3 da yechim yo'q",
+        "a ≠ 3 da x = 5/(a − 3), a = 3 da yechim yo'q",
+        "har qanday a da x = 5/(a + 3)"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsient a + 3 noldan farqli bo'lsa, ikkala tomonni unga bo'lamiz va x = 5/(a + 3) hosil bo'ladi. a = −3 bo'lganda tenglama 0·x = 5 ko'rinishini oladi, bunday x esa mavjud emas. Javob: a ≠ −3 da x = 5/(a + 3), a = −3 da yechim yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-parametr-javob-jadvali",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#8b134609"
+    },
+    {
+      "q": "mx = 4m − 8 tenglamasining yechimini m parametrga bog'liq holda to'g'ri yozgan variantni toping.",
+      "v": [
+        "m ≠ 0 da x = (4m − 8)/m, m = 0 da cheksiz ko'p yechim",
+        "m ≠ 2 da x = (4m − 8)/m, m = 2 da yechim yo'q",
+        "m ≠ 0 da x = (4m + 8)/m, m = 0 da yechim yo'q",
+        "m ≠ 0 da x = (4m − 8)/m, m = 0 da yechim yo'q"
+      ],
+      "t": 3,
+      "izoh": "m ≠ 0 bo'lsa, ikkala tomonni m ga bo'lish mumkin va x = (4m − 8)/m chiqadi. m = 0 bo'lganda tenglama 0·x = −8 ko'rinishini oladi, bu esa hech qachon bajarilmaydi. Javob: m ≠ 0 da x = (4m − 8)/m, m = 0 da yechim yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-parametr-javob-jadvali",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#d4c8b8b1"
+    },
+    {
+      "q": "(a² − 9)x = a + 3 tenglamasi uchun parametrning barcha hollarini qamrab olgan to'g'ri xulosani tanlang.",
+      "v": [
+        "a = 3 da yechim yo'q, a = −3 da cheksiz ko'p yechim, qolganda x = 1/(a − 3)",
+        "a = 3 da cheksiz ko'p yechim, a = −3 da yechim yo'q, qolganda x = 1/(a − 3)",
+        "a = 3 va a = −3 da yechim yo'q, qolganda x = 1/(a − 3)",
+        "a = 3 da yechim yo'q, a = −3 da cheksiz ko'p yechim, qolganda x = 1/(a + 3)"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsientni ajratamiz: a² − 9 = (a − 3)(a + 3). a = 3 da 0·x = 6 bo'lib yechim yo'q, a = −3 da esa 0·x = 0 bo'lib har qanday x yaraydi. Qolgan hollarda x = (a + 3)/((a − 3)(a + 3)) = 1/(a − 3). Javob: a = 3 da yechim yo'q, a = −3 da cheksiz ko'p yechim, qolganda x = 1/(a − 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-parametr-javob-jadvali",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#17857a01"
+    },
+    {
+      "q": "Dilnoza 3x − a = 5x + 7 tenglamani yechib, uning yagona ildizi x = −4 ekanini aniqladi. Parametr a nechaga teng?",
+      "v": [
+        "−1",
+        "15",
+        "−15",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "Ildizni tenglamaga qo'yamiz: 3·(−4) − a = 5·(−4) + 7. Chap tomonda −12 − a, o'ng tomonda −20 + 7 = −13 hosil bo'ladi. −12 − a = −13 tenglikdan −a = −1, ya'ni a = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-ildizdan-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#3b78b799"
+    },
+    {
+      "q": "Ustaxonada mahsulot narxi 4x + b = 3(x + 5) tenglamadan topiladi. Narx x = 8 ming so'mga teng bo'lsa, b nechaga teng?",
+      "v": [
+        "−7",
+        "−3",
+        "7",
+        "27"
+      ],
+      "t": 2,
+      "izoh": "x = 8 qiymatini qo'yamiz: 4·8 + b = 3·(8 + 5). Chap tomonda 32 + b, o'ng tomonda 3·13 = 39 hosil bo'ladi. Demak b = 39 − 32 = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-ildizdan-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#7b13f98c"
+    },
+    {
+      "q": "(a + 2)x = 15 tenglamaning ildizi x = 3 ga teng bo'lsa, a parametrning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "3",
+        "5",
+        "13",
+        "−3"
+      ],
+      "t": 0,
+      "izoh": "Ildizni o'rniga qo'yamiz: (a + 2)·3 = 15. Ikkala tomonni 3 ga bo'lsak, a + 2 = 5 tenglik hosil bo'ladi. Bundan a = 5 − 2 = 3 kelib chiqadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-ildizdan-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#3c820582"
+    },
+    {
+      "q": "Shahar avtobusida chipta narxi (2k − 1)x = 30 tenglamadan aniqlanadi. Chipta narxi x = 5 ming so'm bo'lsa, k nechaga teng?",
+      "v": [
+        "3",
+        "3,5",
+        "7",
+        "2,5"
+      ],
+      "t": 1,
+      "izoh": "x = 5 ni qo'yib, (2k − 1)·5 = 30 tenglamani hosil qilamiz. Ikkala tomonni 5 ga bo'lsak, 2k − 1 = 6 chiqadi. Bundan 2k = 7 va k = 3,5. Javob: 3,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-ildizdan-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#00f4783d"
+    },
+    {
+      "q": "Maktab zaliga 18 ta stul a ta qatorga teng taqsimlanadi, ya'ni ax = 18. Har bir qatorga butun sondagi stul tushishi uchun a ning nechta natural qiymati mos keladi?",
+      "v": [
+        "5",
+        "6",
+        "4",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "x = 18/a butun bo'lishi uchun a soni 18 ning bo'luvchisi bo'lishi kerak. 18 ning natural bo'luvchilari: 1, 2, 3, 6, 9 va 18. Ular jami 6 ta. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-butun-yechim-sharti",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#e5e740f3"
+    },
+    {
+      "q": "3x + 5 = a tenglamaning ildizi musbat son bo'lishi uchun a parametr qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a > 5",
+        "a > 0",
+        "a > 5/3",
+        "a < 5"
+      ],
+      "t": 0,
+      "izoh": "Tenglamadan 3x = a − 5, ya'ni x = (a − 5)/3 kelib chiqadi. Ildiz musbat bo'lishi uchun (a − 5)/3 > 0 bo'lsin. Maxraj musbat bo'lgani uchun a − 5 > 0, ya'ni a > 5. Javob: a > 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-yechim-ishorasi-shart",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#4e1d990f"
+    },
+    {
+      "q": "Havo haroratining o'zgarishi 2x − a = 6 tenglamasi bilan modellashtirilgan. Bu tenglamaning ildizi manfiy bo'lishi uchun a parametr qanday shartni qanoatlantiradi?",
+      "v": [
+        "a > −6",
+        "a < 6",
+        "a < −6",
+        "a < −3"
+      ],
+      "t": 2,
+      "izoh": "Tenglamadan 2x = a + 6, demak x = (a + 6)/2. Ildiz manfiy bo'lishi uchun (a + 6)/2 < 0 shart bajarilsin. Ikkala tomonni 2 ga ko'paytirsak, a + 6 < 0, ya'ni a < −6. Javob: a < −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-yechim-ishorasi-shart",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#cda1edf0"
+    },
+    {
+      "q": "Anvar 24 ta shokoladni (n + 1)x = 24 shartga ko'ra do'stlariga teng ulashdi. Har biriga butun sondagi shokolad tushishi uchun n ning eng katta natural qiymati nechaga teng?",
+      "v": [
+        "24",
+        "12",
+        "11",
+        "23"
+      ],
+      "t": 3,
+      "izoh": "Har biriga tegadigan miqdor x = 24/(n + 1) butun bo'lishi uchun n + 1 soni 24 ning bo'luvchisi bo'lishi kerak. n eng katta bo'lishi uchun n + 1 eng katta bo'luvchi, ya'ni 24 ga teng bo'lsin. Bundan n = 24 − 1 = 23. Javob: 23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-butun-yechim-sharti",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#c38fcba9"
+    },
+    {
+      "q": "(x + a)/(x − 3) = 2 tenglamasi birorta ham ildizga ega bo'lmasligi uchun a parametr nechaga teng bo'lishi kerak?",
+      "v": [
+        "−3",
+        "3",
+        "−6",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Maxraj nolga teng bo'lmasligi kerak, ya'ni x ≠ 3. Kasrdan qutulamiz: x + a = 2x − 6, bundan x = a + 6. Bu ildiz taqiqlangan qiymatga tushib qolsa, yechim yo'qoladi: a + 6 = 3, ya'ni a = −3. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-tenglama-parametr-odz",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#3b3bc463"
+    },
+    {
+      "q": "(2x − a)/(x + 4) = 3 tenglamasi yechimga ega bo'lmaydigan a parametrning qiymatini toping.",
+      "v": [
+        "8",
+        "−8",
+        "4",
+        "−4"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi: x ≠ −4. Kasrdan qutulamiz: 2x − a = 3x + 12, bundan x = −12 − a. Bu ildiz x = −4 ga teng bo'lganda tenglama yechimsiz qoladi: −12 − a = −4, ya'ni a = −8. Javob: −8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-tenglama-parametr-odz",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#53c7be98"
+    },
+    {
+      "q": "(x + 5)/(x − a) = 1 tenglamasi cheksiz ko'p yechimga ega bo'ladigan a parametrning qiymatini aniqlang.",
+      "v": [
+        "5",
+        "0",
+        "−5",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "Kasr maxraji noldan farqli bo'lishi kerak: x ≠ a. Tenglikdan x + 5 = x − a, ya'ni 5 = −a hosil bo'ladi. Bu shart faqat a = −5 da bajariladi va unda tenglik x ≠ −5 bo'lgan barcha x larda o'rinli bo'ladi. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrli-tenglama-parametr-odz",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#193e7d02"
+    },
+    {
+      "q": "Bog'dagi 36 tup ko'chat qatorlarga 36/(x − a) = 6 shartga ko'ra joylashtirilgan. Agar x = 9 bo'lsa, a parametr nechaga teng?",
+      "v": [
+        "6",
+        "−3",
+        "15",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "x = 9 ni qo'yamiz: 36/(9 − a) = 6. Ikkala tomonni 9 − a ga ko'paytiramiz: 36 = 6·(9 − a). Bundan 9 − a = 6 va a = 3. Maxraj 6 ga teng, ya'ni nolga aylanmaydi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrli-tenglama-parametr-odz",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#222188af"
+    },
+    {
+      "q": "|x − 4| = a tenglamasi ikkita turli ildizga ega bo'lishi uchun a parametr qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a > 0",
+        "a ≥ 0",
+        "a > 4",
+        "a ≠ 0"
+      ],
+      "t": 0,
+      "izoh": "Modul tenglamasi ikkita ildiz beradi, agar o'ng tomon qat'iy musbat bo'lsa: x − 4 = a va x − 4 = −a. a = 0 bo'lganda ikkala holat bitta x = 4 ildizni beradi, a < 0 da esa yechim yo'q. Demak a > 0. Javob: a > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-tenglama-yechim-soni",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#8623a0ab"
+    },
+    {
+      "q": "|x + 7| = a − 2 tenglamasi hech qanday yechimga ega bo'lmasligi uchun a qanday shartni qanoatlantiradi?",
+      "v": [
+        "a > 2",
+        "a < 2",
+        "a < 7",
+        "a ≤ 2"
+      ],
+      "t": 1,
+      "izoh": "Modul hech qachon manfiy qiymat qabul qilmaydi. Demak yechim bo'lmasligi uchun o'ng tomon manfiy bo'lishi kerak: a − 2 < 0, ya'ni a < 2. a = 2 da esa x = −7 degan bitta yechim mavjud bo'ladi. Javob: a < 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-tenglama-yechim-soni",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#8ceb2e2f"
+    },
+    {
+      "q": "|2x − 6| = m tenglamasi aynan bitta yechimga ega bo'ladigan m parametrning qiymatini toping.",
+      "v": [
+        "3",
+        "6",
+        "0",
+        "−3"
+      ],
+      "t": 2,
+      "izoh": "Modul nolga teng bo'lgandagina ikkita hol bitta ildizga qo'shilib ketadi. Demak m = 0 bo'lishi kerak va unda 2x − 6 = 0 dan x = 3 chiqadi. m > 0 da ikkita, m < 0 da esa umuman yechim bo'lmaydi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-tenglama-yechim-soni",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#905c1da1"
+    },
+    {
+      "q": "Sifat nazoratida detal uzunligi x mm bo'lib, |x − 25| = d − 1 shartni qanoatlantiradi. Ikki xil uzunlik mumkin bo'lishi uchun d qanday bo'lishi kerak?",
+      "v": [
+        "d > 0",
+        "d ≥ 1",
+        "d > 25",
+        "d > 1"
+      ],
+      "t": 3,
+      "izoh": "Ikkita turli yechim uchun modul tenglamasining o'ng tomoni qat'iy musbat bo'lishi kerak: d − 1 > 0. Bundan d > 1 kelib chiqadi. d = 1 da faqat bitta uzunlik, ya'ni 25 mm mumkin bo'lardi. Javob: d > 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-tenglama-yechim-soni",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#dd7d5720"
+    },
+    {
+      "q": "Uyali aloqa tarifida oylik to'lov T = (k − 3)·d + 15 ming so'm, bunda d — ishlatilgan kunlar soni. To'lov kunlar soniga bog'liq bo'lmasligi uchun k nechaga teng bo'lishi kerak?",
+      "v": [
+        "3",
+        "15",
+        "−3",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "To'lov d ga bog'liq bo'lmasligi uchun d oldidagi koeffitsient nolga aylanishi kerak: k − 3 = 0. Bundan k = 3 kelib chiqadi va to'lov har doim 15 ming so'm bo'lib qoladi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tarif-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#d7563115"
+    },
+    {
+      "q": "Birinchi taksi xizmati 12x + 5, ikkinchisi esa (a + 4)x + 5 ming so'm oladi, bunda x — bosib o'tilgan kilometr. Har qanday masofada to'lovlar teng bo'lishi uchun a nechaga teng?",
+      "v": [
+        "12",
+        "8",
+        "16",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Ikki ifoda barcha x larda teng bo'lishi uchun x oldidagi koeffitsientlar tenglashishi kerak: a + 4 = 12. Bundan a = 8 kelib chiqadi. Ozod hadlar allaqachon teng, ikkalasi ham 5 ga teng. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tarif-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#55b8e490"
+    },
+    {
+      "q": "Suv hisoblagichi bo'yicha to'lov (m − 9)x = 3m − 27 tenglamasidan topiladi, bunda x — bir kub metr suv narxi. Narxni yagona aniqlab bo'lmaydigan m qiymati nechaga teng?",
+      "v": [
+        "27",
+        "3",
+        "9",
+        "−9"
+      ],
+      "t": 2,
+      "izoh": "Koeffitsient nolga aylanganda narx yagona aniqlanmaydi: m − 9 = 0, ya'ni m = 9. Bu qiymatda o'ng tomon ham 3·9 − 27 = 0 bo'ladi va tenglama 0·x = 0 ko'rinishini oladi. Demak har qanday narx tenglamani qanoatlantiradi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tarif-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#a002d334"
+    },
+    {
+      "q": "Savdo nuqtasida kunlik foyda (t − 5)x = 40 tenglamadan topiladi, bunda x — sotilgan mahsulot soni. t = 5 bo'lganda savdogar qanday xulosaga keladi?",
+      "v": [
+        "x = 40, ya'ni 40 ta mahsulot sotilgan",
+        "x = 8, ya'ni 8 ta mahsulot sotilgan",
+        "x ning har qanday qiymati tenglamani qanoatlantiradi",
+        "tenglama yechimga ega emas, bunday x mavjud emas"
+      ],
+      "t": 3,
+      "izoh": "t = 5 ni qo'ysak, (5 − 5)x = 40, ya'ni 0·x = 40 hosil bo'ladi. Nol har qanday songa ko'paytirilganda nol beradi, 40 ga aylana olmaydi. Demak bunday x mavjud emas va tenglama yechimsiz. Javob: tenglama yechimga ega emas, bunday x mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tarif-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#9afcc309"
+    },
+    {
+      "q": "Brigada kunlik ish hajmini (n − 2)x = 60 tenglamasidan hisoblaydi, bunda x — bitta ishchining unumi. Ish unumi yagona aniqlanishi uchun n qanday bo'lishi kerak?",
+      "v": [
+        "n ≠ 2",
+        "n ≠ 60",
+        "n ≠ 0",
+        "n = 2"
+      ],
+      "t": 0,
+      "izoh": "Unum yagona aniqlanishi uchun x oldidagi koeffitsient noldan farqli bo'lishi shart: n − 2 ≠ 0. Bundan n ≠ 2 kelib chiqadi. n = 2 bo'lganda 0·x = 60 hosil bo'lib, hech qanday unum mos kelmaydi. Javob: n ≠ 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ish-unumi-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#a72b29bb"
+    },
+    {
+      "q": "Hovuzni to'ldirish vaqti (5 − a)t = 20 tenglamasidan topiladi, bunda t — soatlar soni. a = 5 bo'lgan holat qanday izohlanadi?",
+      "v": [
+        "t = 4 soat, hovuz to'ladi",
+        "hovuz to'lmaydi, chunki tenglama yechimga ega emas",
+        "t = 20 soat, hovuz to'ladi",
+        "har qanday t qiymati tenglamani qanoatlantiradi"
+      ],
+      "t": 1,
+      "izoh": "a = 5 ni qo'ysak, (5 − 5)t = 20, ya'ni 0·t = 20 chiqadi. Chap tomon t ning har qanday qiymatida nolga teng bo'ladi. Demak tenglik hech qachon bajarilmaydi va hovuz to'lmaydi. Javob: hovuz to'lmaydi, chunki tenglama yechimga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ish-unumi-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#64a65a04"
+    },
+    {
+      "q": "Dehqon 120 kg hosilni (p + 3) ta qopga teng joyladi, ya'ni (p + 3)x = 120. Har bir qopda kamida 15 kg bo'lishi sharti bilan p ning eng katta natural qiymati qanday?",
+      "v": [
+        "117",
+        "5",
+        "7",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Bir qopdagi og'irlik x = 120/(p + 3) butun bo'lishi kerak, demak p + 3 soni 120 ning bo'luvchisi. Shart bo'yicha har bir qopda kamida 15 kg bo'lsin: 120/(p + 3) ≥ 15, bundan p + 3 ≤ 8. 120 ning 8 dan oshmaydigan eng katta bo'luvchisi 8, shuning uchun p = 8 − 3 = 5 va har bir qopga roppa-rosa 15 kg tushadi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ish-unumi-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#1f33e76c"
+    },
+    {
+      "q": "Ikki usta bir kunda mos ravishda (a + 300) ta va (3a − 200) ta g'isht teradi. Ularning kunlik unumi teng bo'lishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "500",
+        "100",
+        "125",
+        "250"
+      ],
+      "t": 3,
+      "izoh": "Unumlar tengligidan a + 300 = 3a − 200 tenglamani hosil qilamiz. Noma'lumlarni bir tomonga yig'amiz: 300 + 200 = 3a − a, ya'ni 2a = 500. Bundan a = 250 kelib chiqadi va ikkala usta ham kuniga 550 tadan g'isht teradi. Javob: 250.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-ish-unumi-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#bddcc026"
+    },
+    {
+      "q": "x² − 6x + a = 0 tenglamasi ikkita turli haqiqiy ildizga ega bo'lishi uchun a parametr qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a > 9",
+        "a < 9",
+        "a < 36",
+        "a ≤ 9"
+      ],
+      "t": 1,
+      "izoh": "Ikkita turli ildiz uchun diskriminant musbat bo'lishi shart. D = (−6)² − 4·1·a = 36 − 4a. D > 0 shartdan 36 − 4a > 0, ya'ni 4a < 36 va a < 9. Javob: a < 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-ikkita-ildiz-sharti",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#2df09733"
+    },
+    {
+      "q": "2x² − 5x + k = 0 tenglamasi ikkita har xil ildizga ega bo'lsa, k parametr qanday qiymatlar qabul qiladi?",
+      "v": [
+        "k < 25/8",
+        "k > 25/8",
+        "k < 8/25",
+        "k < 25"
+      ],
+      "t": 0,
+      "izoh": "Bu yerda a = 2, b = −5, c = k. Diskriminant D = 25 − 8k bo'ladi. Ikkita har xil ildiz uchun D > 0 kerak: 25 − 8k > 0, ya'ni 8k < 25. Bundan k < 25/8. Javob: k < 25/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-ikkita-ildiz-sharti",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#e967616e"
+    },
+    {
+      "q": "x² − (a + 1)x + 9 = 0 tenglamasi ikkita turli haqiqiy ildizga ega bo'ladigan a parametrning barcha qiymatlarini toping.",
+      "v": [
+        "−7 < a < 5",
+        "a > 5",
+        "a < −7 yoki a > 5",
+        "a < −7"
+      ],
+      "t": 2,
+      "izoh": "Diskriminant D = (a + 1)² − 36 bo'ladi va u musbat bo'lishi kerak: (a + 1)² > 36. Bundan |a + 1| > 6, ya'ni a + 1 > 6 yoki a + 1 < −6. Birinchisidan a > 5, ikkinchisidan a < −7. Javob: a < −7 yoki a > 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-ikkita-ildiz-sharti",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#d34b3e9e"
+    },
+    {
+      "q": "Fermer to'rtburchak maydonning ikki o'lchamini x² − 14x + a = 0 tenglamadan topmoqchi. Ikkita har xil o'lcham chiqishi uchun a parametr qanday bo'lishi kerak?",
+      "v": [
+        "a < 49",
+        "0 < a < 196",
+        "a > 0",
+        "0 < a < 49"
+      ],
+      "t": 3,
+      "izoh": "Ikkita har xil o'lcham — bu ikkita turli musbat ildiz demakdir. Avval diskriminant sharti: D = 196 − 4a > 0, bundan a < 49. Viyet teoremasiga ko'ra ildizlar yig'indisi 14, ko'paytmasi esa a ga teng. Yig'indi musbat bo'lgani uchun ikkala o'lcham musbat chiqishi ko'paytmaning musbatligiga bog'liq: a > 0. Ikkala shartni birlashtiramiz: 0 < a < 49. Javob: 0 < a < 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ikkita-ildiz-sharti",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#a7ba2822"
+    },
+    {
+      "q": "x² + 8x + c = 0 tenglamasi yagona (karrali) ildizga ega bo'lishi uchun c parametr nechaga teng bo'lishi kerak?",
+      "v": [
+        "16",
+        "8",
+        "4",
+        "64"
+      ],
+      "t": 0,
+      "izoh": "Yagona ildiz diskriminant nolga teng bo'lganda paydo bo'ladi. D = 8² − 4·1·c = 64 − 4c. 64 − 4c = 0 dan 4c = 64 va c = 16. Bunda tenglama (x + 4)² = 0 ko'rinishini oladi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-yagona-ildiz-D-nol",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#cf1571f1"
+    },
+    {
+      "q": "x² − ax + 25 = 0 tenglamasi karrali ildizga ega bo'lsa, a parametr qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "a = 5",
+        "a = 10 yoki a = −10",
+        "a = 10",
+        "a = 25"
+      ],
+      "t": 1,
+      "izoh": "Karrali ildiz uchun D = 0 bo'lishi kerak: a² − 4·1·25 = 0, ya'ni a² = 100. Bu tenglamaning ikkita ildizi bor: a = 10 va a = −10. Ikkalasi ham to'la kvadrat beradi, shuning uchun ikkalasi ham javobga kiradi. Javob: a = 10 yoki a = −10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-yagona-ildiz-D-nol",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#7bcc3355"
+    },
+    {
+      "q": "kx² − 12x + 9 = 0 tenglamasi yagona ildizga ega bo'ladigan k parametrning noldan farqli qiymatini toping.",
+      "v": [
+        "16",
+        "9",
+        "4",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "k ≠ 0 bo'lgani uchun tenglama kvadrat tenglama bo'lib qoladi va yagona ildiz uchun D = 0 shart. D = (−12)² − 4·k·9 = 144 − 36k. 144 − 36k = 0 dan 36k = 144 va k = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-yagona-ildiz-D-nol",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#d60fab71"
+    },
+    {
+      "q": "Yuqoriga otilgan koptokning balandligi h = 30t − 5t² formula bilan beriladi. Koptok a metr balandlikka aynan bir marta chiqishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "30",
+        "90",
+        "15",
+        "45"
+      ],
+      "t": 3,
+      "izoh": "Balandlik a ga teng bo'lgan payt uchun 30t − 5t² = a, ya'ni 5t² − 30t + a = 0 tenglamani yozamiz. Aynan bir marta chiqish bitta ildiz demak, demak D = 0. D = 900 − 20a bo'lgani uchun 900 − 20a = 0 va a = 45. Javob: 45.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-yagona-ildiz-D-nol",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#68899bd7"
+    },
+    {
+      "q": "x² + 4x + m = 0 tenglamasi haqiqiy ildizga ega bo'lmasligi uchun m parametr qanday bo'lishi kerak?",
+      "v": [
+        "m > 4",
+        "m < 4",
+        "m > 16",
+        "m ≥ 4"
+      ],
+      "t": 0,
+      "izoh": "Haqiqiy ildiz bo'lmasligi uchun diskriminant manfiy bo'lishi kerak. D = 16 − 4m bo'lgani uchun 16 − 4m < 0 shartni yozamiz. Bundan 4m > 16 va m > 4 kelib chiqadi. m = 4 da bitta ildiz bo'lardi, shuning uchun tenglik olinmaydi. Javob: m > 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-ildizsiz-shart",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#690bbe41"
+    },
+    {
+      "q": "x² − 2x + (3 − b) = 0 tenglamasining haqiqiy ildizi bo'lmasligi uchun b parametr qanday shartni qanoatlantiradi?",
+      "v": [
+        "b > 2",
+        "b < 2",
+        "b < 3",
+        "b ≤ 2"
+      ],
+      "t": 1,
+      "izoh": "Diskriminantni hisoblaymiz: D = 4 − 4·(3 − b) = 4 − 12 + 4b = 4b − 8. Ildiz bo'lmasligi uchun D < 0, ya'ni 4b − 8 < 0. Bundan 4b < 8 va b < 2. Javob: b < 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-ildizsiz-shart",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#5bedc178"
+    },
+    {
+      "q": "y = x² − 5x + p parabola abssissalar o'qi bilan umuman kesishmasligi uchun p parametr qanday bo'lishi kerak?",
+      "v": [
+        "p < 25/4",
+        "p > 5",
+        "p > 25/4",
+        "p > 4/25"
+      ],
+      "t": 2,
+      "izoh": "Parabola abssissalar o'qini kesib o'tishi x² − 5x + p = 0 tenglamaning ildizi borligini bildiradi. Kesishmasligi uchun D < 0 bo'lishi kerak: 25 − 4p < 0. Bundan 4p > 25 va p > 25/4. Javob: p > 25/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ildizsiz-shart",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#736c1000"
+    },
+    {
+      "q": "Firmaning foydasi F = −x² + 10x − c formula bilan berilgan, bunda x — sotilgan mahsulot hajmi. Foyda hech qachon nolga teng bo'lmasligi uchun c qanday bo'lishi kerak?",
+      "v": [
+        "c < 25",
+        "c > 100",
+        "c > 10",
+        "c > 25"
+      ],
+      "t": 3,
+      "izoh": "Foyda nolga teng bo'lgan holni tekshiramiz: −x² + 10x − c = 0, ya'ni x² − 10x + c = 0. Bu tenglamaning ildizi bo'lmasligi uchun D < 0 kerak: 100 − 4c < 0. Bundan 4c > 100 va c > 25. Javob: c > 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ildizsiz-shart",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#c6d30e0e"
+    },
+    {
+      "q": "(a − 2)x² + 4x + 1 = 0 tenglamasi aynan bitta ildizga ega bo'ladigan a parametrning barcha qiymatlarini aniqlang.",
+      "v": [
+        "a = 2 yoki a = 6",
+        "faqat a = 6",
+        "faqat a = 2",
+        "a = 6 yoki a = −2"
+      ],
+      "t": 0,
+      "izoh": "Ikki holni ajratamiz. Agar a = 2 bo'lsa, tenglama 4x + 1 = 0 chiziqli ko'rinishga tushadi va bitta ildizi bor. Agar a ≠ 2 bo'lsa, D = 16 − 4(a − 2) = 24 − 4a nolga teng bo'lishi kerak, bundan a = 6. Javob: a = 2 yoki a = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bosh-koeffitsient-nol-holati",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#58f0d741"
+    },
+    {
+      "q": "mx² + (m + 1)x + 1 = 0 tenglamasi faqat bitta ildizga ega bo'ladigan m parametrning qiymatlarini toping.",
+      "v": [
+        "faqat m = 1",
+        "m = 0 yoki m = 1",
+        "faqat m = 0",
+        "m = 1 yoki m = −1"
+      ],
+      "t": 1,
+      "izoh": "m = 0 bo'lganda tenglama x + 1 = 0 ko'rinishini oladi va yagona ildizi x = −1 bo'ladi. m ≠ 0 bo'lganda D = (m + 1)² − 4m = m² − 2m + 1 = (m − 1)². D = 0 shartdan m = 1 chiqadi. Javob: m = 0 yoki m = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bosh-koeffitsient-nol-holati",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#c3fbc663"
+    },
+    {
+      "q": "(k + 3)x² − 6x + 3 = 0 tenglamasi bitta ildizga ega bo'ladigan k parametr qiymatlarining yig'indisi nechaga teng?",
+      "v": [
+        "3",
+        "0",
+        "−3",
+        "−6"
+      ],
+      "t": 2,
+      "izoh": "k = −3 da tenglama −6x + 3 = 0 chiziqli ko'rinishga o'tadi va bitta ildizi bor. k ≠ −3 da D = 36 − 12(k + 3) = −12k va D = 0 shartdan k = 0. Demak mos qiymatlar −3 va 0, ularning yig'indisi −3. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bosh-koeffitsient-nol-holati",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#62b63079"
+    },
+    {
+      "q": "(b − 1)x² + 8x + 16 = 0 tenglamasi kvadrat bo'lmay qolishi uchun b nechaga teng bo'lishi va shu holda ildiz nimaga teng bo'lishi kerak?",
+      "v": [
+        "b = 1, x = 2",
+        "b = 0, x = −2",
+        "b = 1, x = −16",
+        "b = 1, x = −2"
+      ],
+      "t": 3,
+      "izoh": "Tenglama kvadrat bo'lmasligi uchun bosh koeffitsient nolga aylanishi kerak: b − 1 = 0, ya'ni b = 1. Bunda tenglama 8x + 16 = 0 ko'rinishini oladi. Bundan 8x = −16 va x = −2. Javob: b = 1, x = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bosh-koeffitsient-nol-holati",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#bc92ceb8"
+    },
+    {
+      "q": "Bog' uchastkasi to'g'ri to'rtburchak shaklida, perimetri 40 m. Tomonlari x² − 20x + S = 0 tenglamadan topilsa, yuza S ning eng katta qiymati nechaga teng?",
+      "v": [
+        "100",
+        "400",
+        "200",
+        "50"
+      ],
+      "t": 0,
+      "izoh": "Tomonlar haqiqiy son bo'lishi uchun D ≥ 0 bo'lishi kerak: 400 − 4S ≥ 0. Bundan 4S ≤ 400 va S ≤ 100 kelib chiqadi. Eng katta yuza S = 100 m² bo'lib, unda tomonlar 10 m va 10 m, ya'ni uchastka kvadrat bo'ladi. Javob: 100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-geometrik-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#fc6df3b3"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchak katetlarining yig'indisi 14 sm. Katetlar x² − 14x + 2Q = 0 tenglamadan topilsa, yuza Q ning eng katta qiymati nechaga teng?",
+      "v": [
+        "49",
+        "24,5",
+        "12,25",
+        "24"
+      ],
+      "t": 1,
+      "izoh": "Katetlar haqiqiy bo'lishi uchun D ≥ 0 kerak: 196 − 8Q ≥ 0. Bundan 8Q ≤ 196 va Q ≤ 24,5. Eng katta yuza Q = 24,5 sm² bo'lib, unda ikkala katet ham 7 sm ga teng bo'ladi. Javob: 24,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-geometrik-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#95c7f134"
+    },
+    {
+      "q": "Kvadrat shaklidagi maydonning tomoni (a − 3) metrga teng va uning yuzasi 49 m² ni tashkil qiladi. a ning musbat qiymati nechaga teng?",
+      "v": [
+        "7",
+        "52",
+        "10",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat yuzasi tomonning kvadratiga teng: (a − 3)² = 49. Bundan a − 3 = 7 yoki a − 3 = −7 kelib chiqadi. Birinchisidan a = 10, ikkinchisidan a = −4. Shart bo'yicha musbat qiymat kerak, demak a = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-geometrik-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#23d46929"
+    },
+    {
+      "q": "Yer uchastkasining bo'yi enidan a metr ortiq, yuzasi esa 84 m². En uchun x² + ax − 84 = 0 tenglama tuzilgan. a = 5 bo'lganda en nechaga teng?",
+      "v": [
+        "12",
+        "9",
+        "6",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "a = 5 ni qo'yamiz: x² + 5x − 84 = 0. Diskriminant D = 25 + 336 = 361, undan √361 = 19. Ildizlar x = (−5 + 19)/2 = 7 va x = (−5 − 19)/2 = −12. Uzunlik manfiy bo'lmaydi, demak en 7 m. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-geometrik-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#c8b5ece2"
+    },
+    {
+      "q": "x² − (2a − 3)x + 8 = 0 tenglamaning ildizlari yig'indisi 7 ga teng bo'lsa, a parametr nechaga teng bo'ladi?",
+      "v": [
+        "10",
+        "5",
+        "2",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Viyet teoremasiga ko'ra ildizlar yig'indisi x oldidagi koeffitsientning qarama-qarshisiga teng, ya'ni x₁ + x₂ = 2a − 3. Shartga ko'ra 2a − 3 = 7. Bundan 2a = 10 va a = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "viyet-yigindi-kopaytma-sharti",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#d84629a0"
+    },
+    {
+      "q": "x² + 5x + (m − 2) = 0 tenglamaning ildizlari ko'paytmasi −8 ga teng bo'lsa, m parametrning qiymati nechaga teng?",
+      "v": [
+        "−6",
+        "−8",
+        "6",
+        "−10"
+      ],
+      "t": 0,
+      "izoh": "Viyet teoremasi bo'yicha ildizlar ko'paytmasi ozod hadga teng: x₁·x₂ = m − 2. Shartga ko'ra m − 2 = −8, bundan m = −6. Diskriminant D = 25 + 32 = 57 musbat, demak ildizlar haqiqatan mavjud. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "viyet-yigindi-kopaytma-sharti",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#3b02bc1d"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 12 ga, ayirmasi esa 4 ga teng va ular x² − 12x + p = 0 tenglamaning ildizlaridir. p parametr nechaga teng?",
+      "v": [
+        "36",
+        "20",
+        "48",
+        "32"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi va ayirmadan sonlarni topamiz: x₁ = (12 + 4)/2 = 8 va x₂ = (12 − 4)/2 = 4. Viyet teoremasiga ko'ra p ildizlar ko'paytmasiga teng. Demak p = 8·4 = 32. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "viyet-yigindi-kopaytma-sharti",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#8ec04fc0"
+    },
+    {
+      "q": "x² − 2ax + (a + 6) = 0 tenglamaning ildizlari yig'indisi ularning ko'paytmasiga teng bo'lsa, a parametr nechaga teng?",
+      "v": [
+        "2",
+        "12",
+        "6",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Viyet teoremasidan x₁ + x₂ = 2a va x₁·x₂ = a + 6. Shartga ko'ra bu ikki ifoda teng: 2a = a + 6. Bundan a = 6 kelib chiqadi. Tekshiramiz: D = 144 − 48 = 96 musbat, ildizlar haqiqiy. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "viyet-yigindi-kopaytma-sharti",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#e0ec2638"
+    },
+    {
+      "q": "x² − 4x + a = 0 tenglamaning ildizlari uchun x₁² + x₂² = 10 tenglik bajarilsa, a parametrning qiymatini toping.",
+      "v": [
+        "3",
+        "6",
+        "−3",
+        "13"
+      ],
+      "t": 0,
+      "izoh": "Ildizlar kvadratlari yig'indisini Viyet orqali yozamiz: x₁² + x₂² = (x₁ + x₂)² − 2x₁x₂. Bu yerda x₁ + x₂ = 4 va x₁x₂ = a, demak 16 − 2a = 10. Bundan 2a = 6 va a = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-ifodadan-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#678a44a9"
+    },
+    {
+      "q": "x² + 6x + c = 0 tenglamaning ildizlari kvadratlarining yig'indisi 20 ga teng bo'lsa, c parametr nechaga teng?",
+      "v": [
+        "16",
+        "−8",
+        "8",
+        "28"
+      ],
+      "t": 2,
+      "izoh": "Viyet teoremasidan x₁ + x₂ = −6 va x₁x₂ = c. Kvadratlar yig'indisi (x₁ + x₂)² − 2x₁x₂ = 36 − 2c bo'ladi. Shartga ko'ra 36 − 2c = 20, bundan 2c = 16 va c = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "viyet-ifodadan-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#5fc2508e"
+    },
+    {
+      "q": "x² − 7x + k = 0 tenglamaning ildizlari uchun 1/x₁ + 1/x₂ ifoda 7/12 ga teng bo'lsa, k nechaga teng?",
+      "v": [
+        "7",
+        "12",
+        "5",
+        "84"
+      ],
+      "t": 1,
+      "izoh": "Teskari sonlar yig'indisini umumiy maxrajga keltiramiz: 1/x₁ + 1/x₂ = (x₁ + x₂)/(x₁x₂). Viyet bo'yicha bu 7/k ga teng. Demak 7/k = 7/12, bundan k = 12. Diskriminant D = 49 − 48 = 1 musbat. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "viyet-ifodadan-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#0c84ad9a"
+    },
+    {
+      "q": "x² − 9x + m = 0 tenglama ildizlari ayirmasining moduli 3 ga teng bo'lsa, m parametrning qiymati qanday?",
+      "v": [
+        "24",
+        "27",
+        "36",
+        "18"
+      ],
+      "t": 3,
+      "izoh": "Ayirma kvadratini Viyet orqali ifodalaymiz: (x₁ − x₂)² = (x₁ + x₂)² − 4x₁x₂ = 81 − 4m. Modul 3 bo'lgani uchun (x₁ − x₂)² = 9. Demak 81 − 4m = 9, bundan 4m = 72 va m = 18. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "viyet-ifodadan-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#af5d9009"
+    },
+    {
+      "q": "x² − 8x + (m + 3) = 0 tenglamaning ildizlari har xil ishorali bo'lishi uchun m parametr qanday shartni qanoatlantiradi?",
+      "v": [
+        "m < −3",
+        "m > −3",
+        "m < 3",
+        "m > 3"
+      ],
+      "t": 0,
+      "izoh": "Ildizlar har xil ishorali bo'lishi uchun ularning ko'paytmasi manfiy bo'lishi kifoya. Viyet bo'yicha x₁·x₂ = m + 3, demak m + 3 < 0 va m < −3. Bunda diskriminant ham avtomatik musbat bo'ladi. Javob: m < −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-ishorasi-tahlili",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#86bc93ea"
+    },
+    {
+      "q": "x² + (a − 2)x + 9 = 0 tenglamaning ikkala ildizi ham manfiy bo'lishi uchun a parametr qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "a > 2",
+        "a ≥ 8",
+        "a ≤ −4",
+        "a ≥ 6"
+      ],
+      "t": 1,
+      "izoh": "Uchta shartni birga qaraymiz. Ko'paytma x₁x₂ = 9 musbat, demak ildizlar bir xil ishorali. Yig'indi x₁ + x₂ = 2 − a manfiy bo'lishi kerak, bundan a > 2. Diskriminant D = (a − 2)² − 36 ≥ 0 shartdan a − 2 ≥ 6, ya'ni a ≥ 8. Javob: a ≥ 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-ishorasi-tahlili",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#d5d5daf8"
+    },
+    {
+      "q": "x² − 3x + (2k − 6) = 0 tenglamaning bitta ildizi musbat, ikkinchisi manfiy bo'lishi uchun k qanday bo'lishi kerak?",
+      "v": [
+        "k > 3",
+        "k < 6",
+        "k < 3",
+        "k > 6"
+      ],
+      "t": 2,
+      "izoh": "Turli ishorali ildizlar ko'paytmasi manfiy bo'ladi. Viyet teoremasidan x₁·x₂ = 2k − 6, demak 2k − 6 < 0 shartni yechamiz. Bundan 2k < 6 va k < 3 kelib chiqadi. Javob: k < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-ishorasi-tahlili",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#75797e93"
+    },
+    {
+      "q": "x² − (m + 1)x + m = 0 tenglamaning ildizlaridan biri nolga teng bo'lishi uchun m parametr nechaga teng bo'lishi kerak?",
+      "v": [
+        "1",
+        "−1",
+        "2",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "Agar ildizlardan biri nol bo'lsa, ildizlar ko'paytmasi ham nolga teng bo'ladi. Viyet bo'yicha x₁·x₂ = m, demak m = 0. Bu qiymatda tenglama x² − x = 0 ko'rinishini oladi va ildizlari 0 hamda 1 bo'ladi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-ishorasi-tahlili",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#02aa47df"
+    },
+    {
+      "q": "x² − 15x + a = 0 tenglamaning bir ildizi ikkinchisidan ikki marta katta bo'lsa, a parametr nechaga teng bo'ladi?",
+      "v": [
+        "25",
+        "56",
+        "50",
+        "45"
+      ],
+      "t": 2,
+      "izoh": "Ildizlarni x va 2x deb belgilaymiz. Viyet bo'yicha yig'indi x + 2x = 15, bundan 3x = 15 va x = 5. Demak ildizlar 5 va 10. Ko'paytma a = 5·10 = 50. Javob: 50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-orasidagi-bogliqlik",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#aee32aa1"
+    },
+    {
+      "q": "x² + bx + 27 = 0 tenglamaning ikkala ildizi musbat va biri ikkinchisidan uch marta katta bo'lsa, b nechaga teng?",
+      "v": [
+        "−12",
+        "12",
+        "−6",
+        "−36"
+      ],
+      "t": 0,
+      "izoh": "Ildizlarni x va 3x deb olamiz. Ularning ko'paytmasi 27 ga teng: 3x² = 27, bundan x² = 9 va musbat ildiz x = 3. Demak ildizlar 3 va 9, yig'indisi 12. Viyet bo'yicha yig'indi −b ga teng, shuning uchun b = −12. Javob: −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-orasidagi-bogliqlik",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#056cb70d"
+    },
+    {
+      "q": "Ikki avtomobilning tezliklari x² − 200x + k = 0 tenglamaning ildizlari bo'lib, biri ikkinchisidan 40 km/soat ortiq. k parametr nechaga teng?",
+      "v": [
+        "10000",
+        "8000",
+        "6400",
+        "9600"
+      ],
+      "t": 3,
+      "izoh": "Tezliklar yig'indisi Viyet bo'yicha 200 ga teng, ayirmasi esa shartga ko'ra 40. Demak tezliklar (200 + 40)/2 = 120 va (200 − 40)/2 = 80 km/soat. Ularning ko'paytmasi k = 120 · 80 = 9600. Javob: 9600.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-orasidagi-bogliqlik",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#1dc83794"
+    },
+    {
+      "q": "x² − 10x + m = 0 tenglamaning ildizlari 2 : 3 nisbatda bo'lsa, m parametrning qiymati nechaga teng?",
+      "v": [
+        "25",
+        "24",
+        "21",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "Ildizlarni 2t va 3t ko'rinishida yozamiz. Ularning yig'indisi 5t = 10 bo'lgani uchun t = 2. Demak ildizlar 4 va 6 ga teng. Viyet bo'yicha m ildizlar ko'paytmasiga teng: m = 4·6 = 24. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-orasidagi-bogliqlik",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#6f349251"
+    },
+    {
+      "q": "x² − (a + 4)x + 4a = 0 tenglamaning ildizlaridan biri 4 ga teng ekani ma'lum. Ikkinchi ildiz parametr orqali qanday ifodalanadi?",
+      "v": [
+        "4a",
+        "a + 4",
+        "a − 4",
+        "a"
+      ],
+      "t": 3,
+      "izoh": "Viyet teoremasiga ko'ra ildizlar ko'paytmasi 4a ga teng. Bitta ildiz 4 bo'lgani uchun 4·x₂ = 4a, bundan x₂ = a. Buni yig'indi ham tasdiqlaydi: 4 + a = a + 4. Javob: a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bitta-ildiz-malum-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#d0f34108"
+    },
+    {
+      "q": "3x² − ax + 12 = 0 tenglamaning ildizlaridan biri x = 3 ga teng bo'lsa, a parametrning qiymati nechaga teng?",
+      "v": [
+        "9",
+        "26",
+        "13",
+        "39"
+      ],
+      "t": 2,
+      "izoh": "Ildizni tenglamaga qo'yamiz: 3·9 − a·3 + 12 = 0. Bundan 27 − 3a + 12 = 0, ya'ni 39 = 3a. Demak a = 13. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-ildiz-malum-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#95c1b87a"
+    },
+    {
+      "q": "x² + kx − 21 = 0 tenglamaning bitta ildizi 3 ga teng bo'lsa, uning ikkinchi ildizi nechaga teng bo'ladi?",
+      "v": [
+        "−7",
+        "7",
+        "−21",
+        "−3"
+      ],
+      "t": 0,
+      "izoh": "Viyet teoremasiga ko'ra ildizlar ko'paytmasi ozod hadga teng: x₁·x₂ = −21. Bitta ildiz 3 bo'lgani uchun 3·x₂ = −21. Bundan x₂ = −7 kelib chiqadi. Javob: −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-ildiz-malum-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#655bdd5c"
+    },
+    {
+      "q": "Anvar x² − 11x + c = 0 tenglamani yechib, ildizlardan biri 4 ekanini aniqladi. c parametr va ikkinchi ildizni to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "c = 28, ikkinchi ildiz −7",
+        "c = 28, ikkinchi ildiz 7",
+        "c = 7, ikkinchi ildiz 28",
+        "c = 44, ikkinchi ildiz 7"
+      ],
+      "t": 1,
+      "izoh": "Viyet teoremasidan ildizlar yig'indisi 11 ga teng, demak ikkinchi ildiz 11 − 4 = 7. Ko'paytma esa ozod hadni beradi: c = 4·7 = 28. Tekshirish: 16 − 44 + 28 = 0 to'g'ri. Javob: c = 28, ikkinchi ildiz 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bitta-ildiz-malum-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#5d45fd50"
+    },
+    {
+      "q": "x⁴ − 5x² + a = 0 tenglama to'rtta har xil haqiqiy ildizga ega bo'lishi uchun a parametr qanday oraliqda yotishi kerak?",
+      "v": [
+        "0 < a < 25/4",
+        "a < 25/4",
+        "a > 0",
+        "0 < a < 5"
+      ],
+      "t": 0,
+      "izoh": "x² = t almashtirish kiritamiz, bunda t ≥ 0 va t² − 5t + a = 0 hosil bo'ladi. To'rtta har xil x uchun t ning ikkita har xil musbat qiymati kerak. Bu uchta shart bajarilsin: D = 25 − 4a > 0, ko'paytma t₁t₂ = a > 0 va yig'indi 5 > 0. Birinchisidan a < 25/4, ikkinchisidan a > 0. Javob: 0 < a < 25/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bikvadrat-parametr-ildiz-soni",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#bbd5dd08"
+    },
+    {
+      "q": "x⁴ − 13x² + a = 0 tenglamaning ildizlaridan biri x = 2 ga teng bo'lsa, a parametr nechaga teng bo'ladi?",
+      "v": [
+        "52",
+        "36",
+        "68",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Ildizni tenglamaga qo'yamiz: 2⁴ − 13·2² + a = 0. Bundan 16 − 52 + a = 0, ya'ni −36 + a = 0. Demak a = 36. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bikvadrat-parametr-ildiz-soni",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#1c383d7a"
+    },
+    {
+      "q": "x⁴ + ax² − 16 = 0 tenglama a parametrning turli qiymatlarida nechta haqiqiy ildizga ega bo'lishini aniqlang.",
+      "v": [
+        "har doim 4 ta haqiqiy ildiz",
+        "a > 0 da 4 ta, a < 0 da 2 ta",
+        "a ning har qanday qiymatida 2 ta",
+        "haqiqiy ildizga umuman ega emas"
+      ],
+      "t": 2,
+      "izoh": "x² = t almashtirishdan keyin t² + at − 16 = 0 hosil bo'ladi. Bu tenglamaning ildizlari ko'paytmasi −16 ga teng, ya'ni manfiy. Demak t ning bittasi musbat, ikkinchisi manfiy bo'ladi. Manfiy t dan x chiqmaydi, musbat t esa ikkita x beradi. Javob: a ning har qanday qiymatida 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bikvadrat-parametr-ildiz-soni",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#73e2560b"
+    },
+    {
+      "q": "x⁴ − 6x² + k = 0 tenglama aynan uchta har xil haqiqiy ildizga ega bo'ladigan k parametrning qiymatini toping.",
+      "v": [
+        "9",
+        "6",
+        "−9",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "x² = t belgilash bilan t² − 6t + k = 0 ga o'tamiz. Uchta ildiz faqat shunda bo'ladiki, t ning bir qiymati nolga (bitta x beradi), ikkinchisi musbatga (ikkita x beradi) teng bo'lsin. t = 0 ildiz bo'lishi uchun k = 0, unda t = 0 va t = 6 chiqadi. Ildizlar: 0, √6 va −√6. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bikvadrat-parametr-ildiz-soni",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#1bdba1d0"
+    },
+    {
+      "q": "y = x² parabola va y = x + a to'g'ri chiziq ikkita turli nuqtada kesishishi uchun a parametr qanday bo'lishi kerak?",
+      "v": [
+        "a < −1/4",
+        "a > −1/4",
+        "a > 1/4",
+        "a > 0"
+      ],
+      "t": 1,
+      "izoh": "Kesishish nuqtalari x² = x + a tenglamadan topiladi, ya'ni x² − x − a = 0. Ikkita turli nuqta uchun D > 0 bo'lsin: D = 1 + 4a. Demak 1 + 4a > 0, bundan 4a > −1 va a > −1/4. Javob: a > −1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-kesishish-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#91a791eb"
+    },
+    {
+      "q": "y = x² − 4x + 5 parabola va y = c gorizontal to'g'ri chiziq umumiy nuqtaga ega bo'lmasligi uchun c qanday bo'lishi kerak?",
+      "v": [
+        "c > 1",
+        "c < 5",
+        "c < 1",
+        "c ≤ 1"
+      ],
+      "t": 2,
+      "izoh": "Parabolani to'la kvadratga keltiramiz: y = (x − 2)² + 1. Demak uning eng kichik qiymati 1 ga teng va u x = 2 da erishiladi. Gorizontal chiziq parabolani kesib o'tmasligi uchun u shu eng kichik qiymatdan pastda yotishi kerak, ya'ni c < 1. Javob: c < 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-kesishish-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#332ff5b6"
+    },
+    {
+      "q": "y = 2x + b to'g'ri chiziq y = x² parabolaga urinma bo'lishi uchun b parametr nechaga teng bo'lishi kerak?",
+      "v": [
+        "1",
+        "0",
+        "−4",
+        "−1"
+      ],
+      "t": 3,
+      "izoh": "Urinma bo'lish umumiy nuqta aynan bitta bo'lishini bildiradi. x² = 2x + b, ya'ni x² − 2x − b = 0 tenglamada D = 0 bo'lsin. D = 4 + 4b bo'lgani uchun 4 + 4b = 0 va b = −1. Bunda urinish nuqtasi x = 1 bo'ladi. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-kesishish-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#500f628a"
+    },
+    {
+      "q": "y = 3x + 7 va y = (a − 1)x + 2 to'g'ri chiziqlar umuman kesishmasligi uchun a parametr nechaga teng bo'lishi kerak?",
+      "v": [
+        "4",
+        "3",
+        "2",
+        "−2"
+      ],
+      "t": 0,
+      "izoh": "Ikki to'g'ri chiziq kesishmasligi uchun ular parallel, ya'ni burchak koeffitsientlari teng bo'lishi kerak: a − 1 = 3. Bundan a = 4 kelib chiqadi. Ozod hadlar 7 va 2 har xil bo'lgani uchun chiziqlar ustma-ust tushmaydi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-kesishish-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#9346c9a4"
+    },
+    {
+      "q": "x² − 6x + a = 0 tenglamaning bitta ildizi 1 dan kichik, ikkinchisi esa 1 dan katta bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a > 5",
+        "a < 9",
+        "a < 5",
+        "a > 9"
+      ],
+      "t": 2,
+      "izoh": "f(x) = x² − 6x + a funksiyaning tarmoqlari yuqoriga qaragan. Ildizlar 1 sonining ikki tomonida yotishi uchun shu nuqtadagi qiymat manfiy bo'lishi kerak: f(1) < 0. f(1) = 1 − 6 + a = a − 5, demak a − 5 < 0 va a < 5. Javob: a < 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-berilgan-songa-nisbatan",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#b95c8a5f"
+    },
+    {
+      "q": "x² − 10x + 3a = 0 tenglamaning bir ildizi 2 dan kichik, ikkinchisi esa 8 dan katta bo'lishi uchun a qanday shartni qanoatlantiradi?",
+      "v": [
+        "a > 16/3",
+        "a < 16",
+        "a < 48",
+        "a < 16/3"
+      ],
+      "t": 3,
+      "izoh": "Tarmoqlari yuqoriga qaragan parabola uchun 2 va 8 nuqtalarning ikkalasi ham ildizlar orasida yotishi kerak, ya'ni f(2) < 0 va f(8) < 0. f(2) = 4 − 20 + 3a = 3a − 16 va f(8) = 64 − 80 + 3a = 3a − 16. Ikkala shart ham 3a < 16, ya'ni a < 16/3 ni beradi. Javob: a < 16/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-berilgan-songa-nisbatan",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#456c2bb1"
+    },
+    {
+      "q": "x² − 7x + (b + 5) = 0 kvadrat tenglamaning bir ildizi 3 dan kichik, ikkinchisi esa 3 dan katta bo'lishi uchun b parametr qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "b < 7",
+        "b > 7",
+        "b < 12",
+        "b > 12"
+      ],
+      "t": 0,
+      "izoh": "Kvadrat uchhadning qiymati ildizlar orasida manfiy bo'ladi. Demak 3 nuqta ildizlar orasida yotishi uchun f(3) < 0 shart bajarilsin. f(3) = 9 − 21 + b + 5 = b − 7, shuning uchun b − 7 < 0 va b < 7. Javob: b < 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-berilgan-songa-nisbatan",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#9b02d024"
+    },
+    {
+      "q": "x² − 9x + a = 0 tenglamaning ildizlari 4 sonining ikki tomonida joylashishi uchun a parametr qanday shartni qanoatlantiradi?",
+      "v": [
+        "a > 20",
+        "a < 20",
+        "a < 36",
+        "a > 36"
+      ],
+      "t": 1,
+      "izoh": "Bosh koeffitsient musbat bo'lgani uchun uchhad faqat ildizlar orasida manfiy qiymat oladi. Shuning uchun f(4) < 0 bo'lishi kerak. f(4) = 16 − 36 + a = a − 20, demak a − 20 < 0 va a < 20. Javob: a < 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-berilgan-songa-nisbatan",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#db269a9c"
+    },
+    {
+      "q": "2x + 3y = 7 va 4x + ay = 5 tenglamalar sistemasi yagona yechimga ega bo'lmasligi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "3",
+        "12",
+        "−6",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Yagona yechim bo'lishi uchun koeffitsientlar nisbati har xil bo'lishi kerak edi. Yagona yechim yo'qolishi uchun 2/4 = 3/a, ya'ni 2a = 12 va a = 6. Bu qiymatda ikkinchi tenglama 4x + 6y = 5 bo'lib, birinchisidan 4x + 6y = 14 kelib chiqadi, ya'ni sistema qarama-qarshi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-parametr-yechim-soni",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#d7e9dbf6"
+    },
+    {
+      "q": "x + 4y = 3 va 2x + my = 6 tenglamalar sistemasi cheksiz ko'p yechimga ega bo'lishi uchun m nechaga teng bo'lishi kerak?",
+      "v": [
+        "8",
+        "4",
+        "2",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Cheksiz ko'p yechim uchun ikkinchi tenglama birinchisining karrali nusxasi bo'lishi kerak. Ozod hadlarda 6 : 3 = 2, demak barcha koeffitsientlar 2 marta ortishi lozim. Shunda m = 4·2 = 8 bo'ladi va ikkinchi tenglama 2x + 8y = 6 ko'rinishini oladi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sistema-parametr-yechim-soni",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#28680aa3"
+    },
+    {
+      "q": "5x + ky = 8 va 2x + 3y = 4 sistemasi hech qanday yechimga ega bo'lmasligi uchun k parametr nechaga teng bo'lishi kerak?",
+      "v": [
+        "6",
+        "7,5",
+        "10",
+        "2,5"
+      ],
+      "t": 1,
+      "izoh": "Yechim bo'lmasligi uchun chap tomonlar proporsional, o'ng tomonlar esa mos kelmasligi kerak: 5/2 = k/3. Bundan 2k = 15 va k = 7,5. Tekshiramiz: ikkinchi tenglamani 2,5 ga ko'paytirsak 5x + 7,5y = 10 chiqadi, bu esa 8 ga teng emas. Javob: 7,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-parametr-yechim-soni",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#02e6c7ec"
+    },
+    {
+      "q": "Ikki xil mahsulot narxi uchun 3x + 2y = 26 va 6x + by = 52 sistemasi tuzildi. Narxlarni yagona aniqlab bo'lmasligi uchun b nechaga teng?",
+      "v": [
+        "2",
+        "8",
+        "4",
+        "13"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi tenglamaning ozod hadi 52 = 2·26, ya'ni u birinchisidan 2 marta katta. Sistema aynan bir xil shartni ikki marta yozgan bo'lishi uchun b = 2·2 = 4 bo'lishi kerak. Bunda cheksiz ko'p narx juftligi mos keladi va yagona javob chiqmaydi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-parametr-yechim-soni",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#5e2abaca"
+    },
+    {
+      "q": "Mahsulot narxi p ming so'm bo'lganda sotuv hajmi 100 − 2p dona bo'ladi. Kunlik tushum p·(100 − 2p) ga teng bo'lsa, eng katta tushum nechaga teng?",
+      "v": [
+        "1250",
+        "2500",
+        "1000",
+        "625"
+      ],
+      "t": 0,
+      "izoh": "Tushum a ga teng bo'lgan holni yozamiz: p·(100 − 2p) = a, ya'ni 2p² − 100p + a = 0. Bu tenglamaning haqiqiy yechimi bo'lishi uchun D ≥ 0 kerak: 10000 − 8a ≥ 0. Bundan a ≤ 1250 kelib chiqadi, eng katta tushum esa a = 1250 ming so'm (narx 25 ming so'm). Javob: 1250.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-narx-va-daromad-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#7c6733eb"
+    },
+    {
+      "q": "Novvoyxonada bitta nonning tannarxi a so'm, sotuv narxi x so'm. 40 ta nondan olingan foyda (x − a)·40 = 60000 so'm va a = 2500 bo'lsa, x nechaga teng?",
+      "v": [
+        "3500",
+        "4000",
+        "5000",
+        "1500"
+      ],
+      "t": 1,
+      "izoh": "a = 2500 ni qo'yamiz: (x − 2500)·40 = 60000. Ikkala tomonni 40 ga bo'lamiz: x − 2500 = 1500. Bundan x = 1500 + 2500 = 4000 so'm. Javob: 4000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-va-daromad-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#92a55c22"
+    },
+    {
+      "q": "Ikki firmaning t oydagi daromadi (a + 2)t + 10 va 7t + 25 million so'mni tashkil qiladi. Daromadlar hech qachon tenglashmasligi uchun a nechaga teng?",
+      "v": [
+        "7",
+        "9",
+        "5",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "Daromadlarni tenglashtiramiz: (a + 2)t + 10 = 7t + 25. Bu tenglama t ga nisbatan yechimga ega bo'lmasligi uchun t oldidagi koeffitsientlar teng, ozod hadlar esa har xil bo'lishi kerak. a + 2 = 7 dan a = 5, ozod hadlar 10 va 25 esa har xil. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-va-daromad-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#bb78a566"
+    },
+    {
+      "q": "Sayohat uchun yig'ilgan 720 ming so'm (n − 2) nafar ishtirokchiga teng bo'linadi. n ning qaysi qiymatida bunday bo'lish umuman mumkin emas?",
+      "v": [
+        "8",
+        "12",
+        "18",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Har bir ishtirokchiga tegadigan mablag' 720/(n − 2) kasr bilan hisoblanadi. Kasr maxraji nolga aylanganda bo'lish ma'noga ega bo'lmaydi: n − 2 = 0, ya'ni n = 2. Bu holda ishtirokchilar soni nolga teng bo'lib qoladi. Qolgan qiymatlarda bo'lish bemalol bajariladi: n = 8 da 120 ming, n = 12 da 72 ming, n = 18 da 45 ming so'mdan tushadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-va-daromad-parametr",
+      "id": "matematika_teng_m14-chiziqli-va-kvadrat-tenglamada-parametr#a0adb902"
+    }
+  ]
+}

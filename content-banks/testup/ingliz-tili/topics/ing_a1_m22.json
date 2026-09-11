@@ -1,0 +1,1306 @@
+{
+  "nom": "Kundalik so'zlar",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "You wear these on your feet: ___.",
+      "v": [
+        "hat",
+        "shoes",
+        "gloves",
+        "scarf"
+      ],
+      "t": 1,
+      "izoh": "Oyoqqa → shoes (poyabzal).",
+      "qiy": "oson",
+      "id": "ing_a1_m22#9db5b2e0"
+    },
+    {
+      "q": "You use it to open a door: ___.",
+      "v": [
+        "key",
+        "spoon",
+        "pen",
+        "cup"
+      ],
+      "t": 0,
+      "izoh": "Eshik → key (kalit).",
+      "qiy": "oson",
+      "id": "ing_a1_m22#3324717e"
+    },
+    {
+      "q": "The opposite of \"hot\" is ___.",
+      "v": [
+        "cold",
+        "big",
+        "happy",
+        "fast"
+      ],
+      "t": 0,
+      "izoh": "hot ↔ cold (issiq ↔ sovuq).",
+      "qiy": "oson",
+      "id": "ing_a1_m22#753900a4"
+    },
+    {
+      "q": "You sleep in a ___.",
+      "v": [
+        "chair",
+        "bed",
+        "table",
+        "car"
+      ],
+      "t": 1,
+      "izoh": "Uxlash → bed (krovat).",
+      "qiy": "oson",
+      "id": "ing_a1_m22#32e62042"
+    },
+    {
+      "q": "The ___ gives us light in the day.",
+      "v": [
+        "moon",
+        "sun",
+        "star",
+        "lamp"
+      ],
+      "t": 1,
+      "izoh": "Kunduzi yorug'lik → sun.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#ba699058"
+    },
+    {
+      "q": "You read a ___.",
+      "v": [
+        "book",
+        "door",
+        "shoe",
+        "spoon"
+      ],
+      "t": 0,
+      "izoh": "O'qish → book (kitob).",
+      "qiy": "oson",
+      "id": "ing_a1_m22#d4318967"
+    },
+    {
+      "q": "The sky on a clear day is ___.",
+      "v": [
+        "green",
+        "blue",
+        "brown",
+        "black"
+      ],
+      "t": 1,
+      "izoh": "Osmon → blue (ko'k).",
+      "qiy": "oson",
+      "id": "ing_a1_m22#5924e74d"
+    },
+    {
+      "q": "You eat soup with a ___.",
+      "v": [
+        "fork",
+        "spoon",
+        "knife",
+        "plate"
+      ],
+      "t": 1,
+      "izoh": "Sho'rva → spoon (qoshiq).",
+      "qiy": "oson",
+      "id": "ing_a1_m22#0ace8012"
+    },
+    {
+      "q": "A baby dog is called a ___.",
+      "v": [
+        "kitten",
+        "puppy",
+        "cub",
+        "foal"
+      ],
+      "t": 1,
+      "izoh": "Kuchukcha → puppy.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#0434ed06"
+    },
+    {
+      "q": "The opposite of \"big\" is ___.",
+      "v": [
+        "tall",
+        "small",
+        "long",
+        "wide"
+      ],
+      "t": 1,
+      "izoh": "big ↔ small (katta ↔ kichik).",
+      "qiy": "oson",
+      "id": "ing_a1_m22#ba251df4"
+    },
+    {
+      "q": "What is the opposite of 'big'?",
+      "v": [
+        "tall",
+        "small",
+        "long",
+        "wide"
+      ],
+      "t": 1,
+      "izoh": "'big' aksi 'small'.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#9b7c4da9"
+    },
+    {
+      "q": "What is the opposite of 'hot'?",
+      "v": [
+        "warm",
+        "cold",
+        "cool",
+        "dry"
+      ],
+      "t": 1,
+      "izoh": "'hot' aksi 'cold'.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#1d5f0a7b"
+    },
+    {
+      "q": "Which one is a fruit?",
+      "v": [
+        "carrot",
+        "potato",
+        "apple",
+        "onion"
+      ],
+      "t": 2,
+      "izoh": "'apple' — meva.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#af895086"
+    },
+    {
+      "q": "Which one is an animal?",
+      "v": [
+        "table",
+        "dog",
+        "chair",
+        "spoon"
+      ],
+      "t": 1,
+      "izoh": "'dog' — hayvon.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#1341138a"
+    },
+    {
+      "q": "What is the opposite of 'happy'?",
+      "v": [
+        "sad",
+        "glad",
+        "kind",
+        "nice"
+      ],
+      "t": 0,
+      "izoh": "'happy' aksi 'sad'.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#6602abd9"
+    },
+    {
+      "q": "You write with a ___.",
+      "v": [
+        "cup",
+        "pen",
+        "shoe",
+        "door"
+      ],
+      "t": 1,
+      "izoh": "'pen' — ruchka bilan yozamiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#f1b1c376"
+    },
+    {
+      "q": "What is the opposite of 'old'?",
+      "v": [
+        "young",
+        "big",
+        "tall",
+        "fast"
+      ],
+      "t": 0,
+      "izoh": "'old' aksi 'young'.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#3c22e449"
+    },
+    {
+      "q": "Which one is a colour?",
+      "v": [
+        "blue",
+        "book",
+        "milk",
+        "fish"
+      ],
+      "t": 0,
+      "izoh": "'blue' — rang.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#d767b8f8"
+    },
+    {
+      "q": "What is the opposite of 'open'?",
+      "v": [
+        "clean",
+        "closed",
+        "start",
+        "empty"
+      ],
+      "t": 1,
+      "izoh": "'open' aksi 'closed'.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#4db2fe6a"
+    },
+    {
+      "q": "Which one is a vegetable?",
+      "v": [
+        "banana",
+        "tomato",
+        "orange",
+        "grape"
+      ],
+      "t": 1,
+      "izoh": "'tomato' — sabzavot.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#6b416ca3"
+    },
+    {
+      "q": "What is the opposite of 'fast'?",
+      "v": [
+        "slow",
+        "quick",
+        "near",
+        "high"
+      ],
+      "t": 0,
+      "izoh": "'fast' aksi 'slow'.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#21ac6a92"
+    },
+    {
+      "q": "Which one is a drink?",
+      "v": [
+        "water",
+        "bread",
+        "apple",
+        "rice"
+      ],
+      "t": 0,
+      "izoh": "'water' — ichimlik.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#2db7ba70"
+    },
+    {
+      "q": "What is the opposite of 'day'?",
+      "v": [
+        "night",
+        "week",
+        "noon",
+        "time"
+      ],
+      "t": 0,
+      "izoh": "'day' aksi 'night'.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#b8a07877"
+    },
+    {
+      "q": "You wear ___ on your feet.",
+      "v": [
+        "gloves",
+        "shoes",
+        "a hat",
+        "a scarf"
+      ],
+      "t": 1,
+      "izoh": "'shoes' — oyoqqa.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#0969c83b"
+    },
+    {
+      "q": "Which one is a part of the body?",
+      "v": [
+        "hand",
+        "chair",
+        "plate",
+        "door"
+      ],
+      "t": 0,
+      "izoh": "'hand' — tananing qismi.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#bde9cc40"
+    },
+    {
+      "q": "What is the opposite of 'good'?",
+      "v": [
+        "bad",
+        "nice",
+        "fine",
+        "kind"
+      ],
+      "t": 0,
+      "izoh": "'good' aksi 'bad'.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#fcfc8a23"
+    },
+    {
+      "q": "You cut paper with ___.",
+      "v": [
+        "a fork",
+        "scissors",
+        "a cup",
+        "a shoe"
+      ],
+      "t": 1,
+      "izoh": "'scissors' — qaychi.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#2eab6ca3"
+    },
+    {
+      "q": "Which one is a family member?",
+      "v": [
+        "mother",
+        "teacher",
+        "doctor",
+        "driver"
+      ],
+      "t": 0,
+      "izoh": "'mother' — oila a'zosi.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#d7838ca8"
+    },
+    {
+      "q": "What is the opposite of 'up'?",
+      "v": [
+        "down",
+        "in",
+        "on",
+        "out"
+      ],
+      "t": 0,
+      "izoh": "'up' aksi 'down'.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#42bd2091"
+    },
+    {
+      "q": "You tell the time with a ___.",
+      "v": [
+        "book",
+        "clock",
+        "cup",
+        "bag"
+      ],
+      "t": 1,
+      "izoh": "'clock' — soat.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#46d1db7d"
+    },
+    {
+      "q": "Which one is a day of the week?",
+      "v": [
+        "Monday",
+        "January",
+        "summer",
+        "morning"
+      ],
+      "t": 0,
+      "izoh": "'Monday' — hafta kuni.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#8f4218bf"
+    },
+    {
+      "q": "What is the opposite of 'left'?",
+      "v": [
+        "right",
+        "up",
+        "near",
+        "front"
+      ],
+      "t": 0,
+      "izoh": "'left' aksi 'right'.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#03b99279"
+    },
+    {
+      "q": "You keep money in a ___.",
+      "v": [
+        "spoon",
+        "wallet",
+        "shoe",
+        "book"
+      ],
+      "t": 1,
+      "izoh": "'wallet' — hamyon.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#f609f70e"
+    },
+    {
+      "q": "Which one is a season?",
+      "v": [
+        "winter",
+        "Friday",
+        "April",
+        "night"
+      ],
+      "t": 0,
+      "izoh": "'winter' — fasl.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#0c193405"
+    },
+    {
+      "q": "What is the opposite of 'clean'?",
+      "v": [
+        "dirty",
+        "new",
+        "dry",
+        "full"
+      ],
+      "t": 0,
+      "izoh": "'clean' aksi 'dirty'.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#daa363fe"
+    },
+    {
+      "q": "You see with your ___.",
+      "v": [
+        "ears",
+        "eyes",
+        "nose",
+        "hands"
+      ],
+      "t": 1,
+      "izoh": "'eyes' — ko'z bilan ko'ramiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#4f172323"
+    },
+    {
+      "q": "Which one is a number?",
+      "v": [
+        "seven",
+        "red",
+        "dog",
+        "big"
+      ],
+      "t": 0,
+      "izoh": "'seven' — son.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#9048a1dc"
+    },
+    {
+      "q": "What is the opposite of 'full'?",
+      "v": [
+        "empty",
+        "heavy",
+        "short",
+        "wide"
+      ],
+      "t": 0,
+      "izoh": "'full' aksi 'empty'.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#a67ac76b"
+    },
+    {
+      "q": "\"Kitob\" inglizcha qanday?",
+      "v": [
+        "book",
+        "pen",
+        "door",
+        "house"
+      ],
+      "t": 0,
+      "izoh": "kitob = book.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#a70f79a8"
+    },
+    {
+      "q": "\"Ruchka\" inglizcha qanday?",
+      "v": [
+        "pencil",
+        "pen",
+        "paper",
+        "bag"
+      ],
+      "t": 1,
+      "izoh": "ruchka = pen (pencil = qalam).",
+      "qiy": "oson",
+      "id": "ing_a1_m22#0cef5bd3"
+    },
+    {
+      "q": "\"Eshik\" inglizcha qanday?",
+      "v": [
+        "window",
+        "wall",
+        "door",
+        "floor"
+      ],
+      "t": 2,
+      "izoh": "eshik = door.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#c9277793"
+    },
+    {
+      "q": "\"Uy\" inglizcha qanday?",
+      "v": [
+        "house",
+        "horse",
+        "mouse",
+        "hous"
+      ],
+      "t": 0,
+      "izoh": "uy = house.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#b6e66b7f"
+    },
+    {
+      "q": "\"Suv\" inglizcha qanday?",
+      "v": [
+        "milk",
+        "water",
+        "juice",
+        "tea"
+      ],
+      "t": 1,
+      "izoh": "suv = water.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#d0994de0"
+    },
+    {
+      "q": "\"Yugurmoq\" inglizcha qanday?",
+      "v": [
+        "walk",
+        "jump",
+        "run",
+        "sit"
+      ],
+      "t": 2,
+      "izoh": "yugurmoq = run.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#3ce00892"
+    },
+    {
+      "q": "\"Yemoq\" inglizcha qanday?",
+      "v": [
+        "drink",
+        "eat",
+        "cook",
+        "bite"
+      ],
+      "t": 1,
+      "izoh": "yemoq = eat.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#8546d788"
+    },
+    {
+      "q": "\"Ko'rmoq\" inglizcha qanday?",
+      "v": [
+        "hear",
+        "look",
+        "see",
+        "smell"
+      ],
+      "t": 2,
+      "izoh": "ko'rmoq = see.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#c1874215"
+    },
+    {
+      "q": "\"Katta\" inglizcha qanday?",
+      "v": [
+        "small",
+        "big",
+        "thin",
+        "short"
+      ],
+      "t": 1,
+      "izoh": "katta = big.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#f9f88184"
+    },
+    {
+      "q": "\"Kichik\" inglizcha qanday?",
+      "v": [
+        "small",
+        "big",
+        "long",
+        "tall"
+      ],
+      "t": 0,
+      "izoh": "kichik = small.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#9a2f0e4b"
+    },
+    {
+      "q": "\"Ochmoq\" inglizcha qanday?",
+      "v": [
+        "close",
+        "open",
+        "lock",
+        "push"
+      ],
+      "t": 1,
+      "izoh": "ochmoq = open.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#6d8a297c"
+    },
+    {
+      "q": "\"Yopmoq\" inglizcha qanday?",
+      "v": [
+        "open",
+        "close",
+        "start",
+        "begin"
+      ],
+      "t": 1,
+      "izoh": "yopmoq = close.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#e2a12175"
+    },
+    {
+      "q": "\"Baxtli\" inglizcha qanday?",
+      "v": [
+        "sad",
+        "angry",
+        "happy",
+        "tired"
+      ],
+      "t": 2,
+      "izoh": "baxtli = happy.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#66c5de57"
+    },
+    {
+      "q": "\"Deraza\" inglizcha qanday?",
+      "v": [
+        "door",
+        "window",
+        "wall",
+        "roof"
+      ],
+      "t": 1,
+      "izoh": "deraza = window.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#0b0eba14"
+    },
+    {
+      "q": "\"Stol\" inglizcha qanday?",
+      "v": [
+        "chair",
+        "table",
+        "bed",
+        "shelf"
+      ],
+      "t": 1,
+      "izoh": "stol = table.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#a93e9b23"
+    },
+    {
+      "q": "\"Stul\" inglizcha qanday?",
+      "v": [
+        "chair",
+        "table",
+        "sofa",
+        "bench"
+      ],
+      "t": 0,
+      "izoh": "stul = chair.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#9dfcfc3e"
+    },
+    {
+      "q": "\"It\" (hayvon) inglizcha qanday?",
+      "v": [
+        "cat",
+        "dog",
+        "fox",
+        "wolf"
+      ],
+      "t": 1,
+      "izoh": "it = dog.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#f59dd563"
+    },
+    {
+      "q": "\"Mushuk\" inglizcha qanday?",
+      "v": [
+        "dog",
+        "cat",
+        "cow",
+        "rat"
+      ],
+      "t": 1,
+      "izoh": "mushuk = cat.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#123af88a"
+    },
+    {
+      "q": "\"Ichmoq\" inglizcha qanday?",
+      "v": [
+        "eat",
+        "drink",
+        "pour",
+        "fill"
+      ],
+      "t": 1,
+      "izoh": "ichmoq = drink.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#5c4be462"
+    },
+    {
+      "q": "\"Uxlamoq\" inglizcha qanday?",
+      "v": [
+        "sleep",
+        "wake",
+        "rest",
+        "dream"
+      ],
+      "t": 0,
+      "izoh": "uxlamoq = sleep.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#0b9d0842"
+    },
+    {
+      "q": "\"Non\" inglizcha qanday?",
+      "v": [
+        "rice",
+        "bread",
+        "meat",
+        "soup"
+      ],
+      "t": 1,
+      "izoh": "non = bread.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#834d2dc9"
+    },
+    {
+      "q": "\"Olma\" inglizcha qanday?",
+      "v": [
+        "apple",
+        "orange",
+        "banana",
+        "grape"
+      ],
+      "t": 0,
+      "izoh": "olma = apple.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#8942a137"
+    },
+    {
+      "q": "\"Qizil\" inglizcha qanday?",
+      "v": [
+        "blue",
+        "green",
+        "red",
+        "black"
+      ],
+      "t": 2,
+      "izoh": "qizil = red.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#14d90926"
+    },
+    {
+      "q": "\"Ko'k / Moviy\" inglizcha qanday?",
+      "v": [
+        "blue",
+        "red",
+        "yellow",
+        "white"
+      ],
+      "t": 0,
+      "izoh": "moviy = blue.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#3b4ae41c"
+    },
+    {
+      "q": "\"Bir\" inglizcha qanday?",
+      "v": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "t": 0,
+      "izoh": "bir = one.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#b395fd72"
+    },
+    {
+      "q": "\"Ikki\" inglizcha qanday?",
+      "v": [
+        "one",
+        "two",
+        "three",
+        "ten"
+      ],
+      "t": 1,
+      "izoh": "ikki = two.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#e38b4eae"
+    },
+    {
+      "q": "\"Bola\" inglizcha qanday?",
+      "v": [
+        "man",
+        "woman",
+        "child",
+        "baby"
+      ],
+      "t": 2,
+      "izoh": "bola = child.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#19f268fc"
+    },
+    {
+      "q": "\"Ona\" inglizcha qanday?",
+      "v": [
+        "father",
+        "mother",
+        "sister",
+        "aunt"
+      ],
+      "t": 1,
+      "izoh": "ona = mother.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#de955e46"
+    },
+    {
+      "q": "\"Ota\" inglizcha qanday?",
+      "v": [
+        "father",
+        "brother",
+        "son",
+        "uncle"
+      ],
+      "t": 0,
+      "izoh": "ota = father.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#bfb90d25"
+    },
+    {
+      "q": "\"Maktab\" inglizcha qanday?",
+      "v": [
+        "school",
+        "shop",
+        "house",
+        "park"
+      ],
+      "t": 0,
+      "izoh": "maktab = school.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#00551e82"
+    },
+    {
+      "q": "I read a ___.",
+      "v": [
+        "book",
+        "water",
+        "run",
+        "happy"
+      ],
+      "t": 0,
+      "izoh": "biz kitob (book) o'qiymiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#c31dddb8"
+    },
+    {
+      "q": "Please ___ the door.",
+      "v": [
+        "eat",
+        "open",
+        "run",
+        "see"
+      ],
+      "t": 1,
+      "izoh": "eshikni ochish = open the door.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#e93c1cc0"
+    },
+    {
+      "q": "I drink ___ every day.",
+      "v": [
+        "book",
+        "water",
+        "door",
+        "pen"
+      ],
+      "t": 1,
+      "izoh": "biz suv (water) ichamiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#ef339448"
+    },
+    {
+      "q": "The elephant is very ___.",
+      "v": [
+        "small",
+        "big",
+        "short",
+        "thin"
+      ],
+      "t": 1,
+      "izoh": "fil katta = big.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#dccdd957"
+    },
+    {
+      "q": "I write with a ___.",
+      "v": [
+        "book",
+        "pen",
+        "door",
+        "cup"
+      ],
+      "t": 1,
+      "izoh": "biz ruchka (pen) bilan yozamiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#ba847ce0"
+    },
+    {
+      "q": "She is ___ because it is her birthday.",
+      "v": [
+        "sad",
+        "happy",
+        "tired",
+        "angry"
+      ],
+      "t": 1,
+      "izoh": "tug'ilgan kun sabab baxtli = happy.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#235ed604"
+    },
+    {
+      "q": "We ___ in the park every morning.",
+      "v": [
+        "run",
+        "see",
+        "open",
+        "close"
+      ],
+      "t": 0,
+      "izoh": "parkda yuguramiz = run.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#acffb987"
+    },
+    {
+      "q": "Cats like to ___ fish.",
+      "v": [
+        "eat",
+        "open",
+        "run",
+        "read"
+      ],
+      "t": 0,
+      "izoh": "baliqni yeydi = eat.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#df9c7114"
+    },
+    {
+      "q": "\"Yozmoq\" inglizcha qanday?",
+      "v": [
+        "read",
+        "write",
+        "draw",
+        "speak"
+      ],
+      "t": 1,
+      "izoh": "yozmoq = write.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#bb8f7ea1"
+    },
+    {
+      "q": "\"O'qimoq\" inglizcha qanday?",
+      "v": [
+        "write",
+        "read",
+        "talk",
+        "hear"
+      ],
+      "t": 1,
+      "izoh": "o'qimoq = read.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#249e3124"
+    },
+    {
+      "q": "\"Sut\" inglizcha qanday?",
+      "v": [
+        "water",
+        "milk",
+        "tea",
+        "juice"
+      ],
+      "t": 1,
+      "izoh": "sut = milk.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#7e114b94"
+    },
+    {
+      "q": "\"Qo'l\" inglizcha qanday?",
+      "v": [
+        "leg",
+        "hand",
+        "foot",
+        "head"
+      ],
+      "t": 1,
+      "izoh": "qo'l = hand.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#d72c3057"
+    },
+    {
+      "q": "\"Oyoq\" inglizcha qanday?",
+      "v": [
+        "arm",
+        "hand",
+        "leg",
+        "head"
+      ],
+      "t": 2,
+      "izoh": "oyoq = leg.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#94cee66d"
+    },
+    {
+      "q": "\"Bosh\" inglizcha qanday?",
+      "v": [
+        "head",
+        "hair",
+        "face",
+        "neck"
+      ],
+      "t": 0,
+      "izoh": "bosh = head.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#5c84fb50"
+    },
+    {
+      "q": "\"Ko'z\" inglizcha qanday?",
+      "v": [
+        "ear",
+        "eye",
+        "nose",
+        "mouth"
+      ],
+      "t": 1,
+      "izoh": "ko'z = eye.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#10d0e6f8"
+    },
+    {
+      "q": "\"Yaxshi\" inglizcha qanday?",
+      "v": [
+        "bad",
+        "good",
+        "new",
+        "old"
+      ],
+      "t": 1,
+      "izoh": "yaxshi = good.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#0ff4287e"
+    },
+    {
+      "q": "\"Yomon\" inglizcha qanday?",
+      "v": [
+        "good",
+        "bad",
+        "nice",
+        "kind"
+      ],
+      "t": 1,
+      "izoh": "yomon = bad.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#680d01c0"
+    },
+    {
+      "q": "\"Yangi\" inglizcha qanday?",
+      "v": [
+        "old",
+        "new",
+        "big",
+        "small"
+      ],
+      "t": 1,
+      "izoh": "yangi = new.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#f44eade6"
+    },
+    {
+      "q": "\"Eski\" inglizcha qanday?",
+      "v": [
+        "new",
+        "old",
+        "young",
+        "fresh"
+      ],
+      "t": 1,
+      "izoh": "eski = old.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#b9e7292d"
+    },
+    {
+      "q": "\"Issiq\" inglizcha qanday?",
+      "v": [
+        "cold",
+        "hot",
+        "wet",
+        "dark"
+      ],
+      "t": 1,
+      "izoh": "issiq = hot.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#4cbe2c36"
+    },
+    {
+      "q": "\"Sovuq\" inglizcha qanday?",
+      "v": [
+        "hot",
+        "warm",
+        "cold",
+        "dry"
+      ],
+      "t": 2,
+      "izoh": "sovuq = cold.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#42344c4c"
+    },
+    {
+      "q": "The tea is ___, be careful!",
+      "v": [
+        "cold",
+        "hot",
+        "big",
+        "new"
+      ],
+      "t": 1,
+      "izoh": "choy issiq = hot.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#dd5f538c"
+    },
+    {
+      "q": "In summer the weather is ___.",
+      "v": [
+        "cold",
+        "hot",
+        "snowy",
+        "icy"
+      ],
+      "t": 1,
+      "izoh": "yozda issiq = hot.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#29e240b1"
+    },
+    {
+      "q": "\"Kun\" inglizcha qanday?",
+      "v": [
+        "night",
+        "day",
+        "week",
+        "month"
+      ],
+      "t": 1,
+      "izoh": "kun = day.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#e7465cd5"
+    },
+    {
+      "q": "\"Tun\" inglizcha qanday?",
+      "v": [
+        "day",
+        "night",
+        "noon",
+        "morning"
+      ],
+      "t": 1,
+      "izoh": "tun = night.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#b062425e"
+    },
+    {
+      "q": "\"Do'st\" inglizcha qanday?",
+      "v": [
+        "friend",
+        "enemy",
+        "teacher",
+        "student"
+      ],
+      "t": 0,
+      "izoh": "do'st = friend.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#6688ae1e"
+    },
+    {
+      "q": "\"O'qituvchi\" inglizcha qanday?",
+      "v": [
+        "student",
+        "teacher",
+        "doctor",
+        "driver"
+      ],
+      "t": 1,
+      "izoh": "o'qituvchi = teacher.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#585bab43"
+    },
+    {
+      "q": "\"O'quvchi / Talaba\" inglizcha qanday?",
+      "v": [
+        "teacher",
+        "student",
+        "doctor",
+        "nurse"
+      ],
+      "t": 1,
+      "izoh": "talaba = student.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#c4dc7d72"
+    },
+    {
+      "q": "\"Shifokor\" inglizcha qanday?",
+      "v": [
+        "doctor",
+        "teacher",
+        "driver",
+        "cook"
+      ],
+      "t": 0,
+      "izoh": "shifokor = doctor.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#64088bd3"
+    },
+    {
+      "q": "\"Mashina\" inglizcha qanday?",
+      "v": [
+        "bus",
+        "car",
+        "bike",
+        "train"
+      ],
+      "t": 1,
+      "izoh": "mashina = car.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#2bbe29f9"
+    },
+    {
+      "q": "Open your ___ and read page five.",
+      "v": [
+        "book",
+        "water",
+        "door",
+        "run"
+      ],
+      "t": 0,
+      "izoh": "kitobni ochish = book.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#71097983"
+    },
+    {
+      "q": "The window is open, please ___ it.",
+      "v": [
+        "open",
+        "close",
+        "eat",
+        "see"
+      ],
+      "t": 1,
+      "izoh": "yopish = close.",
+      "qiy": "oson",
+      "id": "ing_a1_m22#bf74848e"
+    }
+  ]
+}

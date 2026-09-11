@@ -1,0 +1,1609 @@
+{
+  "nom": "Ikki aylananing o'zaro joylashuvi va umumiy urinmalar",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Bog'ga o'rnatilgan ikki purkagichdan biri 7 metr, ikkinchisi 4 metr radiusli doirani sug'oradi. Purkagichlar orasidagi masofa 15 metr bo'lsa, sug'oriladigan ikki doira o'zaro qanday joylashgan?",
+      "v": [
+        "Bir-biridan tashqarida, umumiy nuqtasi yo'q",
+        "Ikki nuqtada kesishadi",
+        "Bir nuqtada tashqi urinadi",
+        "Kichigi kattasining ichida"
+      ],
+      "t": 0,
+      "izoh": "Avval radiuslar yig'indisini topamiz: R + r = 7 + 4 = 11 m. Markazlar orasidagi masofa d = 15 m. 15 > 11 bo'lgani uchun d > R + r sharti bajariladi, ya'ni doiralar bir-biriga tegmaydi ham, kesishmaydi ham.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "holat-aniqlash",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#b4c9b3ee"
+    },
+    {
+      "q": "Radiuslari 9 sm va 5 sm bo'lgan ikki aylananing markazlari orasidagi masofa 12 sm ga teng. Bu aylanalar bir-biriga nisbatan qanday holatda turadi?",
+      "v": [
+        "Tashqi urinadi",
+        "Ichki urinadi",
+        "Ikki nuqtada kesishadi",
+        "Umumiy nuqtasi yo'q"
+      ],
+      "t": 2,
+      "izoh": "Radiuslar ayirmasi |R − r| = 9 − 5 = 4 sm, yig'indisi R + r = 14 sm. Markazlar orasi 12 sm bo'lib, 4 < 12 < 14 qo'sh tengsizlik bajariladi. Bu esa aylanalarning roppa-rosa ikkita umumiy nuqtasi borligini, ya'ni kesishishini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "holat-aniqlash",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#813d4728"
+    },
+    {
+      "q": "Kartada chizilgan ikki aylanaviy xavfsizlik zonasining radiuslari 10 km va 3 km, markazlari orasidagi masofa esa 7 km. Bu zonalar o'zaro qanday joylashgan?",
+      "v": [
+        "Tashqi urinadi",
+        "Ichki urinadi, bitta umumiy nuqtasi bor",
+        "Ikki nuqtada kesishadi",
+        "Kichigi kattasi ichida, tegmaydi"
+      ],
+      "t": 1,
+      "izoh": "Radiuslar ayirmasi |R − r| = 10 − 3 = 7 km. Markazlar orasidagi masofa ham 7 km. d = |R − r| bo'lganda kichik aylana katta aylanaga ichkaridan urinadi va ularning faqat bitta umumiy nuqtasi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "holat-aniqlash",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#1937a8c2"
+    },
+    {
+      "q": "Xonaga radiuslari 8 dm va 5 dm bo'lgan ikkita dumaloq gilam yozildi. Gilamlar markazlari orasidagi masofa 13 dm bo'lsa, ular qanday joylashgan bo'ladi?",
+      "v": [
+        "Ikki nuqtada kesishadi",
+        "Orasida bo'shliq qoladi",
+        "Biri ikkinchisining ustiga tushadi",
+        "Bir nuqtada tashqi urinadi"
+      ],
+      "t": 3,
+      "izoh": "Radiuslar yig'indisi R + r = 8 + 5 = 13 dm va markazlar orasidagi masofa ham aynan 13 dm. d = R + r shart bajarilgani uchun gilamlar chetlari faqat bitta nuqtada tegib turadi, ya'ni tashqi urinish holati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "holat-aniqlash",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#dfd04615"
+    },
+    {
+      "q": "Radiuslari 12 sm va 4 sm bo'lgan ikki aylana markazlari orasidagi masofa atigi 5 sm. Kichik aylana katta aylanaga nisbatan qanday joylashadi?",
+      "v": [
+        "Ichki urinadi",
+        "Ikki nuqtada kesishadi",
+        "Katta aylana ichida, unga tegmaydi",
+        "Katta aylanadan tashqarida"
+      ],
+      "t": 2,
+      "izoh": "Radiuslar ayirmasi |R − r| = 12 − 4 = 8 sm, markazlar orasi esa 5 sm. 5 < 8 bo'lgani uchun d < |R − r| sharti bajariladi. Bunda kichik aylana butunlay kattasining ichida yotadi va umumiy nuqta bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "holat-aniqlash",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#ec9556dc"
+    },
+    {
+      "q": "Tishli uzatmadagi ikki shesternyaning radiuslari 13 mm va 9 mm bo'lib, ular tashqi tomondan bir-biriga tegib aylanadi. Shesternyalar o'qlari orasidagi masofa necha millimetr?",
+      "v": [
+        "22 mm",
+        "4 mm",
+        "11 mm",
+        "44 mm"
+      ],
+      "t": 0,
+      "izoh": "Tashqi urinishda markazlar orasidagi masofa radiuslar yig'indisiga teng bo'ladi: d = R + r. Demak d = 13 + 9 = 22 mm. Ayirma 4 mm ichki urinishga tegishli, 44 mm esa diametrlar yig'indisi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='105.8' cy='150' r='63.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='213.8' cy='150' r='44.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='105.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='213.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='105.8' y1='150' x2='213.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='159.8' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Cline x1='105.8' y1='150' x2='66.5' y2='99.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='81.2' y='121.9' font-size='13' fill='%23334155' text-anchor='end'%3E13 mm%3C/text%3E%3Cline x1='213.8' y1='150' x2='241' y2='115.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='232.4' y='129.6' font-size='13' fill='%23334155' text-anchor='start'%3E9 mm%3C/text%3E%3Ctext x='105.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='213.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-urinish-masofa",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#7f92c3fd"
+    },
+    {
+      "q": "Ikki aylana tashqi urinadi, markazlari orasidagi masofa 30 sm, kattasining radiusi esa 18 sm. Kichik aylananing radiusi necha santimetr?",
+      "v": [
+        "48 sm",
+        "15 sm",
+        "9 sm",
+        "12 sm"
+      ],
+      "t": 3,
+      "izoh": "Tashqi urinishda d = R + r, demak r = d − R. Bu yerda r = 30 − 18 = 12 sm. Agar ichki urinish formulasi ishlatilsa 30 + 18 = 48 sm chiqadi, bu esa xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='106.8' cy='150' r='64.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='214.8' cy='150' r='43.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='106.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='214.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='106.8' y1='150' x2='214.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160.8' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Cline x1='106.8' y1='150' x2='66.9' y2='98.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='81.9' y='121.5' font-size='13' fill='%23334155' text-anchor='end'%3E18 sm%3C/text%3E%3Cline x1='214.8' y1='150' x2='241.4' y2='116' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='233.1' y='130' font-size='13' fill='%23334155' text-anchor='start'%3Er = ?%3C/text%3E%3Ctext x='106.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='214.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-urinish-masofa",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#9a143668"
+    },
+    {
+      "q": "Kafe hovlisiga radiuslari 1,2 m va 0,8 m bo'lgan ikki dumaloq stol qo'yildi. Stol chetlari bir-biriga tegib tursa, stol markazlari orasidagi masofa necha metr bo'ladi?",
+      "v": [
+        "0,4 m",
+        "2 m",
+        "1 m",
+        "4 m"
+      ],
+      "t": 1,
+      "izoh": "Stol chetlari tegib tursa, bu tashqi urinish holati va d = R + r bo'ladi. Hisoblaymiz: d = 1,2 + 0,8 = 2 m. Radiuslar ayirmasi 0,4 m bu yerda javob emas, diametrlar yig'indisi 4 m ham noto'g'ri.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='106.8' cy='150' r='64.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='214.8' cy='150' r='43.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='106.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='214.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='106.8' y1='150' x2='214.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160.8' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Cline x1='106.8' y1='150' x2='66.9' y2='98.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='81.9' y='121.5' font-size='13' fill='%23334155' text-anchor='end'%3E1,2 m%3C/text%3E%3Cline x1='214.8' y1='150' x2='241.4' y2='116' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='233.1' y='130' font-size='13' fill='%23334155' text-anchor='start'%3E0,8 m%3C/text%3E%3Ctext x='106.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='214.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-urinish-masofa",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#d2af8344"
+    },
+    {
+      "q": "Tashqi urinuvchi ikki aylananing radiuslari 5 : 3 nisbatda, markazlari orasidagi masofa esa 24 sm. Katta aylananing radiusi necha santimetr?",
+      "v": [
+        "15 sm",
+        "9 sm",
+        "40 sm",
+        "12 sm"
+      ],
+      "t": 0,
+      "izoh": "Radiuslarni 5k va 3k deb belgilaymiz. Tashqi urinishda d = R + r, ya'ni 5k + 3k = 24, bundan 8k = 24 va k = 3. Katta radius R = 5 · 3 = 15 sm, kichigi esa 9 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='109.5' cy='150' r='67.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='217.5' cy='150' r='40.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='109.5' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='217.5' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='109.5' y1='150' x2='217.5' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='163.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Cline x1='109.5' y1='150' x2='67.9' y2='96.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='83.7' y='120.4' font-size='13' fill='%23334155' text-anchor='end'%3E5k%3C/text%3E%3Cline x1='217.5' y1='150' x2='242.4' y2='118.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='235' y='131' font-size='13' fill='%23334155' text-anchor='start'%3E3k%3C/text%3E%3Ctext x='109.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='217.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-urinish-masofa",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#e1182d19"
+    },
+    {
+      "q": "Ichki urinuvchi ikki aylananing radiuslari 15 sm va 6 sm ga teng. Ularning markazlari orasidagi masofa necha santimetr?",
+      "v": [
+        "21 sm",
+        "10,5 sm",
+        "9 sm",
+        "30 sm"
+      ],
+      "t": 2,
+      "izoh": "Ichki urinishda markazlar orasidagi masofa radiuslar ayirmasining moduliga teng: d = |R − r|. Demak d = 15 − 6 = 9 sm. Yig'indi 21 sm tashqi urinishga tegishli bo'lgani uchun javob bo'la olmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='108' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='214.8' cy='150' r='43.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='214.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='150' y1='150' x2='214.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='182.4' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Cline x1='150' y1='150' x2='83.5' y2='64.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='111.8' y='104.4' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3Cline x1='214.8' y1='150' x2='241.4' y2='116' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='233.1' y='130' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3Ctext x='150' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='214.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-urinish-masofa",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#ddab5db8"
+    },
+    {
+      "q": "Dumaloq hovuz ichiga, uning chetiga tegib turadigan qilib radiusi 5 m bo'lgan dumaloq gulzor joylashtirildi. Hovuz va gulzor markazlari orasidagi masofa 7 m bo'lsa, hovuz radiusi necha metr?",
+      "v": [
+        "2 m",
+        "12 m",
+        "24 m",
+        "14 m"
+      ],
+      "t": 1,
+      "izoh": "Gulzor hovuzga ichkaridan urinadi, shuning uchun d = R − r. Bundan R = d + r = 7 + 5 = 12 m. Agar tashqi urinish formulasi qo'llansa 7 − 5 = 2 m chiqadi, bu esa gulzordan kichik bo'lib mantiqsiz.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='108' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='213' cy='150' r='45' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='213' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='150' y1='150' x2='213' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='181.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E7 m%3C/text%3E%3Cline x1='150' y1='150' x2='83.5' y2='64.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='111.8' y='104.4' font-size='13' fill='%23334155' text-anchor='end'%3ER = ?%3C/text%3E%3Cline x1='213' y1='150' x2='240.7' y2='114.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='231.9' y='129.3' font-size='13' fill='%23334155' text-anchor='start'%3E5 m%3C/text%3E%3Ctext x='150' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='213' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-urinish-masofa",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#37fd6000"
+    },
+    {
+      "q": "Katta aylananing radiusi 20 sm bo'lib, unga kichik aylana ichkaridan urinadi. Markazlar orasidagi masofa 8 sm bo'lsa, kichik aylananing radiusi necha santimetr?",
+      "v": [
+        "28 sm",
+        "4 sm",
+        "10 sm",
+        "12 sm"
+      ],
+      "t": 3,
+      "izoh": "Ichki urinishda d = R − r ekanligidan r = R − d. Hisoblaymiz: r = 20 − 8 = 12 sm. Yig'indi 28 sm tashqi urinishga mos keladi va bu yerda javob bo'la olmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='108' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='193.2' cy='150' r='64.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='193.2' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='150' y1='150' x2='193.2' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='171.6' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Cline x1='150' y1='150' x2='83.5' y2='64.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='111.8' y='104.4' font-size='13' fill='%23334155' text-anchor='end'%3E20 sm%3C/text%3E%3Cline x1='193.2' y1='150' x2='233.1' y2='98.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='218.1' y='121.5' font-size='13' fill='%23334155' text-anchor='start'%3Er = ?%3C/text%3E%3Ctext x='150' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='193.2' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-urinish-masofa",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#9ca8acc5"
+    },
+    {
+      "q": "Ichki urinuvchi ikki aylana radiuslarining nisbati 8 : 5, markazlari orasidagi masofa esa 21 sm. Kichik aylananing radiusi necha santimetr?",
+      "v": [
+        "56 sm",
+        "7 sm",
+        "35 sm",
+        "91 sm"
+      ],
+      "t": 2,
+      "izoh": "Radiuslarni 8k va 5k deb olamiz. Ichki urinishda d = R − r, ya'ni 8k − 5k = 21, bundan 3k = 21 va k = 7. Kichik radius r = 5 · 7 = 35 sm, kattasi esa 56 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='108' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='190.5' cy='150' r='67.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='190.5' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='150' y1='150' x2='190.5' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='170.3' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E21 sm%3C/text%3E%3Cline x1='150' y1='150' x2='83.5' y2='64.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='111.8' y='104.4' font-size='13' fill='%23334155' text-anchor='end'%3E8k%3C/text%3E%3Cline x1='190.5' y1='150' x2='232.1' y2='96.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='216.7' y='116.5' font-size='13' fill='%23334155' text-anchor='start'%3E5k%3C/text%3E%3Ctext x='150' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='190.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-urinish-masofa",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#359b1c2b"
+    },
+    {
+      "q": "Radiuslari 6 sm va 4 sm bo'lgan ikki aylananing markazlari orasidagi masofa 10 sm. Bu aylanalarning nechta umumiy urinmasi bor?",
+      "v": [
+        "3 ta",
+        "4 ta",
+        "2 ta",
+        "1 ta"
+      ],
+      "t": 0,
+      "izoh": "Radiuslar yig'indisi 6 + 4 = 10 sm, markazlar orasi ham 10 sm, demak d = R + r va aylanalar tashqi urinadi. Tashqi urinishda ikkita umumiy tashqi urinma va urinish nuqtasidan o'tuvchi bitta ichki urinma bo'ladi, jami 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-soni",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#f78adadb"
+    },
+    {
+      "q": "Daftarga sirkul bilan chizilgan ikki aylananing radiuslari 8 sm va 3 sm, markazlari orasidagi masofa 15 sm. Ularga nechta umumiy urinma o'tkazish mumkin?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "Cheksiz ko'p",
+        "4 ta"
+      ],
+      "t": 3,
+      "izoh": "Radiuslar yig'indisi 8 + 3 = 11 sm, markazlar orasi esa 15 sm. 15 > 11 bo'lgani uchun aylanalar bir-biridan tashqarida yotadi. Bunday holatda ikkita tashqi va ikkita ichki urinma, jami 4 ta umumiy urinma o'tkaziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-soni",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#56a0829f"
+    },
+    {
+      "q": "Radiuslari 9 sm va 6 sm bo'lgan aylanalarning markazlari orasidagi masofa atigi 2 sm ga teng. Bu aylanalarning umumiy urinmalari soni nechta?",
+      "v": [
+        "1 ta",
+        "0 ta",
+        "2 ta",
+        "4 ta"
+      ],
+      "t": 1,
+      "izoh": "Radiuslar ayirmasi 9 − 6 = 3 sm, markazlar orasi 2 sm. 2 < 3 bo'lgani uchun kichik aylana kattasining ichida yotadi va ularning umumiy nuqtasi yo'q. Ichkaridagi aylanaga urinuvchi to'g'ri chiziq kattasini albatta kesib o'tadi, shuning uchun umumiy urinma yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-soni",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#3d50e031"
+    },
+    {
+      "q": "Radiuslari 10 sm va 4 sm bo'lgan ikki aylana markazlari orasidagi masofa 6 sm ga teng. Bunday aylanalarga o'tkazish mumkin bo'lgan umumiy urinmalar soni nechta?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "0 ta"
+      ],
+      "t": 0,
+      "izoh": "Radiuslar ayirmasi 10 − 4 = 6 sm va markazlar orasi ham 6 sm, demak ichki urinish holati. Ichki urinishda faqat urinish nuqtasidan o'tuvchi bitta umumiy urinma mavjud bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-soni",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#dc2cc74c"
+    },
+    {
+      "q": "Ikki velosiped chirog'i yoritayotgan doiralarning radiuslari 7 m va 5 m, chiroqlar orasidagi masofa 9 m. Shu ikki doira chegarasiga nechta umumiy urinma o'tkazish mumkin?",
+      "v": [
+        "4 ta",
+        "3 ta",
+        "2 ta",
+        "1 ta"
+      ],
+      "t": 2,
+      "izoh": "Radiuslar ayirmasi 2 m, yig'indisi 12 m, markazlar orasi esa 9 m. 2 < 9 < 12 bo'lgani uchun aylanalar kesishadi. Kesishuvchi aylanalarda faqat ikkita umumiy tashqi urinma mavjud, ichki urinma o'tkazib bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-soni",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#8a8e9a1d"
+    },
+    {
+      "q": "Radiuslari 8 sm va 3 sm bo'lgan ikki aylananing roppa-rosa 3 ta umumiy urinmasi bor. Markazlari orasidagi masofa necha santimetr?",
+      "v": [
+        "5 sm",
+        "11 sm",
+        "22 sm",
+        "16 sm"
+      ],
+      "t": 1,
+      "izoh": "Umumiy urinmalar soni aynan 3 ta bo'lishi tashqi urinishga xos xususiyat. Tashqi urinishda d = R + r, demak d = 8 + 3 = 11 sm. Ayirma 5 sm bo'lsa urinma bitta bo'lib qolardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-sonidan-masofa",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#14560047"
+    },
+    {
+      "q": "Radiuslari 9 sm va 5 sm bo'lgan ikki aylananing faqat bitta umumiy urinmasi bor. Ularning markazlari orasidagi masofa nechaga teng?",
+      "v": [
+        "14 sm",
+        "7 sm",
+        "0 sm",
+        "4 sm"
+      ],
+      "t": 3,
+      "izoh": "Bitta umumiy urinma faqat ichki urinishda bo'ladi. Ichki urinishda d = |R − r| = 9 − 5 = 4 sm. Yig'indi 14 sm tashqi urinishga mos kelib, u holda urinmalar soni 3 ta bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-sonidan-masofa",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#0a57d8b4"
+    },
+    {
+      "q": "Radiuslari 6 sm va 2 sm bo'lgan aylanalar roppa-rosa ikkita umumiy urinmaga ega bo'lishi uchun markazlar orasidagi masofa 3 sm, 4 sm, 5 sm va 9 sm qiymatlaridan qaysi biriga teng bo'lishi kerak?",
+      "v": [
+        "3 sm",
+        "4 sm",
+        "5 sm",
+        "9 sm"
+      ],
+      "t": 2,
+      "izoh": "Ikkita umumiy urinma faqat kesishuvchi aylanalarda bo'ladi, ya'ni |R − r| < d < R + r shart kerak. Bu yerda 4 < d < 8 oralig'i chiqadi. Berilgan qiymatlardan faqat 5 sm shu oraliqqa tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-sonidan-masofa",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#0d59abdf"
+    },
+    {
+      "q": "Radiuslari 10 sm va 6 sm bo'lgan ikki aylananing umumiy urinmasi umuman bo'lmasligi uchun markazlar orasidagi masofa d qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "0 ≤ d < 4",
+        "4 < d < 16",
+        "d > 16",
+        "d = 16"
+      ],
+      "t": 0,
+      "izoh": "Umumiy urinma bo'lmasligi uchun bir aylana ikkinchisining ichida to'liq yotishi kerak, ya'ni d < |R − r| bo'lsin. Bu yerda |R − r| = 10 − 6 = 4 sm. Demak masofa 0 dan 4 gacha bo'lgan oraliqda, 4 ni o'z ichiga olmagan holda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-sonidan-masofa",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#ff3ec0e6"
+    },
+    {
+      "q": "Ikki dumaloq rezervuarning radiuslari 8 m va 3 m, markazlari orasidagi masofa esa 13 m. Ularga tashqi tomondan tortilgan umumiy urinmaning urinish nuqtalari orasidagi masofa necha metr?",
+      "v": [
+        "4√3 m",
+        "5 m",
+        "13 m",
+        "12 m"
+      ],
+      "t": 3,
+      "izoh": "Umumiy tashqi urinma kesmasi L = √(d² − (R − r)²) formulasi bilan topiladi. Radiuslar ayirmasi 8 − 3 = 5 m, demak L = √(169 − 25) = √144 = 12 m. Agar ayirma o'rniga yig'indi olinsa 4√3 m chiqadi, bu esa xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='114' cy='150' r='72' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='231' cy='150' r='27' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='114' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='231' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='127.8' y1='77.8' x2='255.2' y2='130.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='141.7' cy='83.5' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='241.4' cy='125.1' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='191.5' y='96.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='114' y1='150' x2='231' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='172.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E13 m%3C/text%3E%3Cline x1='114' y1='150' x2='69.7' y2='93.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='86.8' y='118.6' font-size='13' fill='%23334155' text-anchor='end'%3E8 m%3C/text%3E%3Cline x1='231' y1='150' x2='247.6' y2='128.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='244.3' y='136.4' font-size='13' fill='%23334155' text-anchor='start'%3E3 m%3C/text%3E%3Ctext x='114' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='231' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-urinma-uzunligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#c5857cbc"
+    },
+    {
+      "q": "Radiuslari 10 sm va 2 sm bo'lgan ikki aylananing markazlari orasidagi masofa 17 sm. Umumiy tashqi urinmaning ikki urinish nuqtasini tutashtiruvchi kesma uzunligi necha santimetr?",
+      "v": [
+        "√145 sm",
+        "15 sm",
+        "8 sm",
+        "17 sm"
+      ],
+      "t": 1,
+      "izoh": "Urinish nuqtalari orasidagi kesma L = √(d² − (R − r)²). Bu yerda R − r = 10 − 2 = 8 sm, shuning uchun L = √(289 − 64) = √225 = 15 sm. Ayirma o'rniga yig'indi 12 olinsa √145 chiqadi, bu tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='116.5' cy='150' r='74.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='243.1' cy='150' r='14.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='116.5' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='243.1' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='138.3' y1='77.2' x2='263.3' y2='143.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='151.5' cy='84.3' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='250.1' cy='136.9' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='200.8' y='102.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='116.5' y1='150' x2='243.1' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.8' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E17 sm%3C/text%3E%3Cline x1='116.5' y1='150' x2='70.6' y2='91.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='88.6' y='117.7' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Cline x1='243.1' y1='150' x2='252.3' y2='138.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='252.7' y='141.1' font-size='13' fill='%23334155' text-anchor='start'%3E2 sm%3C/text%3E%3Ctext x='116.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='243.1' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-urinma-uzunligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#239c8ee6"
+    },
+    {
+      "q": "Zavod tomiga radiuslari 12 sm va 5 sm bo'lgan ikki dumaloq quvur yotqizilgan, ularning o'qlari orasidagi masofa 25 sm. Quvurlarga tashqaridan tekkizib qo'yilgan tekis plastinaning ikki tegish nuqtasi orasi necha santimetr?",
+      "v": [
+        "24 sm",
+        "7 sm",
+        "√336 sm",
+        "20 sm"
+      ],
+      "t": 0,
+      "izoh": "Plastina umumiy tashqi urinma vazifasini bajaradi, uning kesmasi L = √(d² − (R − r)²). Ayirma 12 − 5 = 7 sm, demak L = √(625 − 49) = √576 = 24 sm. Radiuslar yig'indisi 17 ishlatilsa √336 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='103.7' cy='150' r='61.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='232.3' cy='150' r='25.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='103.7' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='232.3' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='106.6' y1='86.6' x2='253.9' y2='129.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='121' cy='90.8' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='239.5' cy='125.3' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='180.2' y='100' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='103.7' y1='150' x2='232.3' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='168' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Cline x1='103.7' y1='150' x2='65.7' y2='101.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='79.7' y='122.7' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Cline x1='232.3' y1='150' x2='248.1' y2='129.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='245.2' y='136.9' font-size='13' fill='%23334155' text-anchor='start'%3E5 sm%3C/text%3E%3Ctext x='103.7' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='232.3' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-urinma-uzunligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#b0e0b7da"
+    },
+    {
+      "q": "Kesishuvchi ikki aylananing radiuslari 6 mm va 2 mm, markazlari orasidagi masofa esa 5 mm. Umumiy tashqi urinmaning urinish nuqtalari orasidagi masofa necha millimetr?",
+      "v": [
+        "4 mm",
+        "5 mm",
+        "3 mm",
+        "8 mm"
+      ],
+      "t": 2,
+      "izoh": "Aylanalar kesishsa ham umumiy tashqi urinma mavjud va uning kesmasi L = √(d² − (R − r)²). Bu yerda R − r = 4 mm, demak L = √(25 − 16) = √9 = 3 mm. Javob sifatida ayirmaning o'zi 4 mm yoki markazlar orasi 5 mm olinmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='141.7' cy='150' r='99.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='224.8' cy='150' r='33.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='141.7' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='224.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='212.4' y1='78.2' x2='260.4' y2='142.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='221.4' cy='90.2' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='251.4' cy='130.1' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='236.4' y='102.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='141.7' y1='150' x2='224.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='183.2' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E5 mm%3C/text%3E%3Cline x1='141.7' y1='150' x2='80.3' y2='71.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='106' y='107.7' font-size='13' fill='%23334155' text-anchor='end'%3E6 mm%3C/text%3E%3Cline x1='224.8' y1='150' x2='245.2' y2='123.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='240' y='133.9' font-size='13' fill='%23334155' text-anchor='start'%3E2 mm%3C/text%3E%3Ctext x='141.7' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='224.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-urinma-uzunligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#2aaca9b8"
+    },
+    {
+      "q": "Radiuslari 5 sm va 3 sm bo'lgan ikki aylananing markazlari orasidagi masofa 17 sm. Umumiy ichki urinmaning urinish nuqtalari orasidagi kesma uzunligi necha santimetr?",
+      "v": [
+        "√285 sm",
+        "15 sm",
+        "8 sm",
+        "17 sm"
+      ],
+      "t": 1,
+      "izoh": "Ichki urinma kesmasi L = √(d² − (R + r)²) formulasi bilan hisoblanadi. Radiuslar yig'indisi 5 + 3 = 8 sm, demak L = √(289 − 64) = √225 = 15 sm. Agar yig'indi o'rniga ayirma 2 olinsa √285 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='85.2' cy='150' r='43.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='232.1' cy='150' r='25.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='85.2' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='232.1' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='92.3' y1='104.8' x2='233.1' y2='179.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='105.5' cy='111.9' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='219.9' cy='172.9' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='168.7' y='136.4' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='85.2' y1='150' x2='232.1' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='158.6' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E17 sm%3C/text%3E%3Cline x1='85.2' y1='150' x2='58.6' y2='116' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='66.9' y='130' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3Cline x1='232.1' y1='150' x2='248' y2='129.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='245.1' y='136.8' font-size='13' fill='%23334155' text-anchor='start'%3E3 sm%3C/text%3E%3Ctext x='85.2' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='232.1' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-urinma-uzunligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#91966e19"
+    },
+    {
+      "q": "Ikki dumaloq ustunning radiuslari 6 dm va 4 dm, markazlari orasidagi masofa 26 dm. Ustunlar oralig'idan kesib o'tuvchi umumiy ichki urinmaning urinish nuqtalari orasi necha detsimetr?",
+      "v": [
+        "√672 dm",
+        "10 dm",
+        "26 dm",
+        "24 dm"
+      ],
+      "t": 3,
+      "izoh": "Ichki urinma aylanalar orasidan o'tadi, uning kesmasi L = √(d² − (R + r)²). Yig'indi 6 + 4 = 10 dm, shuning uchun L = √(676 − 100) = √576 = 24 dm. Ayirma 2 ishlatilsa √672 chiqadi, bu xato yo'l.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='78' cy='150' r='36' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='234' cy='150' r='24' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='78' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='234' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='78' y1='111' x2='238.6' y2='177.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='91.8' cy='116.8' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='224.8' cy='172.2' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='164.3' y='138.5' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='78' y1='150' x2='234' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E26 dm%3C/text%3E%3Cline x1='78' y1='150' x2='55.8' y2='121.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='61.9' y='132.8' font-size='13' fill='%23334155' text-anchor='end'%3E6 dm%3C/text%3E%3Cline x1='234' y1='150' x2='248.8' y2='131.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='246.4' y='137.5' font-size='13' fill='%23334155' text-anchor='start'%3E4 dm%3C/text%3E%3Ctext x='78' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='234' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-urinma-uzunligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#a2b8bef2"
+    },
+    {
+      "q": "Markazlari orasidagi masofa 15 sm bo'lgan ikki aylananing radiuslari 7 sm va 2 sm. Ular orasidan o'tuvchi umumiy urinma kesmasining uzunligini toping.",
+      "v": [
+        "√200 sm",
+        "9 sm",
+        "12 sm",
+        "15 sm"
+      ],
+      "t": 2,
+      "izoh": "Aylanalar orasidan o'tuvchi urinma ichki urinma deyiladi va L = √(d² − (R + r)²). Yig'indi 7 + 2 = 9 sm, demak L = √(225 − 81) = √144 = 12 sm. Yig'indi o'rniga ayirma 5 olinsa √(225 − 25) = √200 chiqadi, bu tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='105' cy='150' r='63' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='240' cy='150' r='18' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='105' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='240' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='130.8' y1='90.6' x2='241.2' y2='173.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='142.8' cy='99.6' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='229.2' cy='164.4' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='192' y='126' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='105' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='172.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Cline x1='105' y1='150' x2='66.2' y2='100.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='80.6' y='122.2' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3Cline x1='240' y1='150' x2='251.1' y2='135.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='250.5' y='139.9' font-size='13' fill='%23334155' text-anchor='start'%3E2 sm%3C/text%3E%3Ctext x='105' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='240' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-urinma-uzunligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#3d700f62"
+    },
+    {
+      "q": "Radiuslari 9 sm va 6 sm bo'lgan aylanalar markazlari 25 sm masofada joylashgan. Umumiy ichki urinma ularga tekkan ikki nuqta orasidagi masofa necha santimetr?",
+      "v": [
+        "20 sm",
+        "√616 sm",
+        "15 sm",
+        "25 sm"
+      ],
+      "t": 0,
+      "izoh": "Ichki urinma uzunligi L = √(d² − (R + r)²) ga teng. Radiuslar yig'indisi 9 + 6 = 15 sm, demak L = √(625 − 225) = √400 = 20 sm. Yig'indi o'rniga ayirma 3 qo'yilsa √616 chiqadi va bu xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='90.6' cy='150' r='48.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='225.6' cy='150' r='32.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='90.6' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='225.6' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='107.8' y1='102.1' x2='218.2' y2='184.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='119.8' cy='111.1' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='206.2' cy='175.9' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='169' y='137.5' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='90.6' y1='150' x2='225.6' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='158.1' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Cline x1='90.6' y1='150' x2='60.7' y2='111.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='70.6' y='127.9' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Cline x1='225.6' y1='150' x2='245.5' y2='124.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='240.6' y='134.2' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3Ctext x='90.6' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='225.6' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-urinma-uzunligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#4cf03d2f"
+    },
+    {
+      "q": "Ikki dumaloq bochka markazlari orasidagi masofa 20 dm, radiuslari esa 8 dm va 4 dm. Bochkalar oralig'idan tortilgan ichki urinma kesmasi necha detsimetr?",
+      "v": [
+        "12 dm",
+        "√384 dm",
+        "20 dm",
+        "16 dm"
+      ],
+      "t": 3,
+      "izoh": "Ichki urinma kesmasi uchun L = √(d² − (R + r)²) formulasini qo'llaymiz. Yig'indi 8 + 4 = 12 dm, demak L = √(400 − 144) = √256 = 16 dm. Yig'indining o'zi 12 dm javob emas, u faqat oraliq qiymat.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='96' cy='150' r='54' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='231' cy='150' r='27' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='96' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='231' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='116.4' y1='97.8' x2='226.8' y2='180.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='128.4' cy='106.8' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='214.8' cy='171.6' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='177.6' y='133.2' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='96' y1='150' x2='231' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='163.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E20 dm%3C/text%3E%3Cline x1='96' y1='150' x2='62.8' y2='107.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='74.4' y='125.7' font-size='13' fill='%23334155' text-anchor='end'%3E8 dm%3C/text%3E%3Cline x1='231' y1='150' x2='247.6' y2='128.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='244.3' y='136.4' font-size='13' fill='%23334155' text-anchor='start'%3E4 dm%3C/text%3E%3Ctext x='96' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='231' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-urinma-uzunligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#2d58a09e"
+    },
+    {
+      "q": "Ikki aylananing umumiy tashqi urinmasi urinish nuqtalari orasida 12 sm li kesma hosil qiladi, radiuslari ayirmasi esa 5 sm. Markazlar orasidagi masofa necha santimetr?",
+      "v": [
+        "17 sm",
+        "13 sm",
+        "7 sm",
+        "√119 sm"
+      ],
+      "t": 1,
+      "izoh": "L = √(d² − (R − r)²) formulasidan d² = L² + (R − r)² kelib chiqadi. Demak d² = 144 + 25 = 169 va d = 13 sm. Uzunliklarni oddiy qo'shish 12 + 5 = 17 sm noto'g'ri natija beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='116.8' cy='150' r='74.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='224.8' cy='150' r='33.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='116.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='224.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='131.7' y1='75.2' x2='251.4' y2='125.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='145.5' cy='81' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='237.6' cy='119.3' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='191.5' y='92.2' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Cline x1='116.8' y1='150' x2='224.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='170.8' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Ctext x='116.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='224.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-uzunligidan-teskari",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#df433407"
+    },
+    {
+      "q": "Radiusi 25 sm bo'lgan katta aylana bilan kichik aylana markazlari orasidagi masofa 29 sm, umumiy tashqi urinma kesmasi esa 20 sm. Kichik aylananing radiusi necha santimetr?",
+      "v": [
+        "4 sm",
+        "21 sm",
+        "46 sm",
+        "9 sm"
+      ],
+      "t": 0,
+      "izoh": "Avval radiuslar ayirmasini topamiz: R − r = √(d² − L²) = √(841 − 400) = √441 = 21 sm. Endi r = R − 21 = 25 − 21 = 4 sm. Ayirmaning o'zi 21 sm javob emas, u faqat oraliq natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='135.1' cy='150' r='93.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='243.1' cy='150' r='14.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='135.1' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='243.1' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='192.2' y1='74.9' x2='264.2' y2='150.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='202.5' cy='85.8' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='253.9' cy='139.7' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='228.2' y='104.8' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Cline x1='135.1' y1='150' x2='243.1' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='189.1' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E29 sm%3C/text%3E%3Cline x1='135.1' y1='150' x2='77.8' y2='76.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='101.4' y='110.3' font-size='13' fill='%23334155' text-anchor='end'%3E25 sm%3C/text%3E%3Cline x1='243.1' y1='150' x2='252.3' y2='138.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='252.7' y='141.1' font-size='13' fill='%23334155' text-anchor='start'%3Er = ?%3C/text%3E%3Ctext x='135.1' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='243.1' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-uzunligidan-teskari",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#3669109a"
+    },
+    {
+      "q": "Ikki aylananing umumiy ichki urinma kesmasi 15 sm, radiuslari esa 5 sm va 3 sm. Ularning markazlari orasidagi masofa necha santimetr?",
+      "v": [
+        "√229 sm",
+        "23 sm",
+        "17 sm",
+        "8 sm"
+      ],
+      "t": 2,
+      "izoh": "Ichki urinma uchun L² = d² − (R + r)², bundan d² = L² + (R + r)². Yig'indi 8 sm bo'lgani uchun d² = 225 + 64 = 289 va d = 17 sm. Yig'indi o'rniga ayirma 2 ishlatilsa d² = 225 + 4 = 229 bo'lib, √229 kabi noto'g'ri natija chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='85.2' cy='150' r='43.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='232.1' cy='150' r='25.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='85.2' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='232.1' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='92.3' y1='104.8' x2='233.1' y2='179.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='105.5' cy='111.9' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='219.9' cy='172.9' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='168.7' y='136.4' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3Cline x1='85.2' y1='150' x2='232.1' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='158.6' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Cline x1='85.2' y1='150' x2='58.6' y2='116' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='66.9' y='130' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3Cline x1='232.1' y1='150' x2='248' y2='129.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='245.1' y='136.8' font-size='13' fill='%23334155' text-anchor='start'%3E3 sm%3C/text%3E%3Ctext x='85.2' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='232.1' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-uzunligidan-teskari",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#2a5ff18e"
+    },
+    {
+      "q": "Ikki g'ildirak markazi orasidagi masofa 13 sm, ularni kesishtirib bog'lagan tasmaning to'g'ri qismi 12 sm. Bir g'ildirak radiusi 2 sm bo'lsa, ikkinchisiniki necha santimetr?",
+      "v": [
+        "5 sm",
+        "3 sm",
+        "7 sm",
+        "1 sm"
+      ],
+      "t": 1,
+      "izoh": "Kesishtirilgan tasmaning to'g'ri qismi ichki urinma bo'lib, R + r = √(d² − L²) = √(169 − 144) = √25 = 5 sm. Demak ikkinchi radius 5 − 2 = 3 sm. Yig'indining o'zi 5 sm javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='78' cy='150' r='36' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='234' cy='150' r='24' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='78' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='234' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='78' y1='111' x2='238.6' y2='177.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='91.8' cy='116.8' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='224.8' cy='172.2' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='164.3' y='138.5' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Cline x1='78' y1='150' x2='234' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3Ctext x='78' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='234' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-uzunligidan-teskari",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#bca3257b"
+    },
+    {
+      "q": "Radiuslari 13 sm dan bo'lgan ikki teng aylana markazlari orasidagi masofa 10 sm bo'lgan holda kesishdi. Ularning umumiy vatari necha santimetr?",
+      "v": [
+        "12 sm",
+        "26 sm",
+        "10 sm",
+        "24 sm"
+      ],
+      "t": 3,
+      "izoh": "Teng aylanalarda umumiy vatar markazlar kesmasining o'rtasidan perpendikular o'tadi, ya'ni har bir markazdan 5 sm uzoqlikda. Vatarning yarmi √(13² − 5²) = √144 = 12 sm. To'liq vatar 2 · 12 = 24 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='120' cy='150' r='78' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='180' cy='150' r='78' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='120' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='180' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='150' y1='78' x2='150' y2='222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='157' y='94' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='120' y1='150' x2='180' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Cline x1='120' y1='150' x2='72' y2='88.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='91' y='116.3' font-size='13' fill='%23334155' text-anchor='end'%3E13 sm%3C/text%3E%3Cline x1='180' y1='150' x2='228' y2='88.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='209' y='116.3' font-size='13' fill='%23334155' text-anchor='start'%3E13 sm%3C/text%3E%3Ctext x='120' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='180' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-vatar-uzunligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#afa5c5a7"
+    },
+    {
+      "q": "Radiuslari 17 sm va 25 sm bo'lgan ikki aylana kesishadi, markazlari orasidagi masofa 28 sm. Umumiy vatarning uzunligi necha santimetr?",
+      "v": [
+        "15 sm",
+        "42 sm",
+        "30 sm",
+        "34 sm"
+      ],
+      "t": 2,
+      "izoh": "Kichik aylana markazidan vatargacha masofa x = (d² + r² − R²) : (2d) = (784 + 289 − 625) : 56 = 8 sm. Vatarning yarmi √(289 − 64) = 15 sm, to'liq vatar esa 2 · 15 = 30 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='94.5' cy='150' r='52.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='180.9' cy='150' r='77.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='94.5' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='180.9' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='119.2' y1='103.7' x2='119.2' y2='196.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='126.2' y='130' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='94.5' y1='150' x2='180.9' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='137.7' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E28 sm%3C/text%3E%3Cline x1='94.5' y1='150' x2='62.2' y2='108.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='72.5' y='121.8' font-size='13' fill='%23334155' text-anchor='end'%3E17 sm%3C/text%3E%3Cline x1='180.9' y1='150' x2='228.4' y2='89.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='209.6' y='113.2' font-size='13' fill='%23334155' text-anchor='start'%3E25 sm%3C/text%3E%3Ctext x='94.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='180.9' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "umumiy-vatar-uzunligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#928e7222"
+    },
+    {
+      "q": "Ikki bir xil dumaloq dasturxon (radiusi 5 dm) markazlari 6 dm masofada bo'ladigan qilib ustma-ust yozildi. Ular chegaralarining kesishish nuqtalari orasidagi masofa necha detsimetr?",
+      "v": [
+        "8 dm",
+        "4 dm",
+        "6 dm",
+        "10 dm"
+      ],
+      "t": 0,
+      "izoh": "Teng aylanalarning umumiy vatari markazlar kesmasini teng ikkiga bo'ladi, ya'ni har bir markazdan 3 dm uzoqda. Vatar yarmi √(25 − 9) = √16 = 4 dm, demak kesishish nuqtalari orasi 2 · 4 = 8 dm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='109.5' cy='150' r='67.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='190.5' cy='150' r='67.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='109.5' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='190.5' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='150' y1='96' x2='150' y2='204' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='157' y='112' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='109.5' y1='150' x2='190.5' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E6 dm%3C/text%3E%3Cline x1='109.5' y1='150' x2='67.9' y2='96.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='83.7' y='120.4' font-size='13' fill='%23334155' text-anchor='end'%3E5 dm%3C/text%3E%3Cline x1='190.5' y1='150' x2='232.1' y2='96.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='216.3' y='120.4' font-size='13' fill='%23334155' text-anchor='start'%3E5 dm%3C/text%3E%3Ctext x='109.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='190.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-vatar-uzunligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#c52c5c0c"
+    },
+    {
+      "q": "Radiuslari 9 sm va 12 sm bo'lgan ikki aylananing markazlari orasidagi masofa 15 sm bo'lib, ular kesishadi. Umumiy vatar uzunligi necha santimetr?",
+      "v": [
+        "7,2 sm",
+        "10,8 sm",
+        "21 sm",
+        "14,4 sm"
+      ],
+      "t": 3,
+      "izoh": "15² = 9² + 12² bo'lgani uchun kesishish nuqtasidagi radiuslar o'zaro perpendikular. Bunda markazlar uchburchagining gipotenuzasiga tushirilgan balandlik vatarning yarmiga teng: h = (9 · 12) : 15 = 7,2 sm. To'liq vatar 2 · 7,2 = 14,4 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='96' cy='150' r='54' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='186' cy='150' r='72' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='96' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='186' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='128.4' y1='106.8' x2='128.4' y2='193.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='135.4' y='122.8' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='96' y1='150' x2='186' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='141' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Cline x1='96' y1='150' x2='62.8' y2='107.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='74.4' y='125.7' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Cline x1='186' y1='150' x2='230.3' y2='93.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='213.2' y='118.6' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='96' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='186' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-vatar-uzunligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#5780478b"
+    },
+    {
+      "q": "Radiuslari 13 sm va 15 sm bo'lgan ikki aylana kesishadi, markazlari orasi 14 sm. Umumiy vatardan kichik aylana markazigacha bo'lgan masofa necha santimetr?",
+      "v": [
+        "9 sm",
+        "5 sm",
+        "12 sm",
+        "7 sm"
+      ],
+      "t": 1,
+      "izoh": "Kichik aylana markazidan vatargacha masofa x = (d² + r² − R²) : (2d) formulasi bilan topiladi (r — kichik, R — katta radius). Qo'yamiz: x = (196 + 169 − 225) : 28 = 140 : 28 = 5 sm. Qolgan 9 sm katta aylana markazigacha bo'lgan masofa.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='108.9' cy='150' r='66.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='180.9' cy='150' r='77.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='108.9' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='180.9' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='134.6' y1='88.3' x2='134.6' y2='211.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='108.9' y1='150' x2='180.9' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='144.9' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Cline x1='108.9' y1='150' x2='67.7' y2='97.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='83.3' y='120.7' font-size='13' fill='%23334155' text-anchor='end'%3E13 sm%3C/text%3E%3Cline x1='180.9' y1='150' x2='228.4' y2='89.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='209.6' y='116.6' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3Ctext x='108.9' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='180.9' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vatar-va-markazlar-chizigi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#87ea0f65"
+    },
+    {
+      "q": "Radiuslari 25 sm va 17 sm bo'lgan aylanalar kesishgan, markazlari orasi 28 sm. Umumiy vatar markazlarni tutashtiruvchi kesmani qanday ikki bo'lakka ajratadi?",
+      "v": [
+        "20 sm va 8 sm",
+        "14 sm va 14 sm",
+        "15 sm va 13 sm",
+        "25 sm va 17 sm"
+      ],
+      "t": 0,
+      "izoh": "Katta aylana markazidan vatargacha masofa x = (784 + 625 − 289) : 56 = 1120 : 56 = 20 sm. Qolgan bo'lak 28 − 20 = 8 sm. Teng bo'linish faqat radiuslar teng bo'lganda yuz beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='119.1' cy='150' r='77.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='205.5' cy='150' r='52.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='119.1' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='205.5' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='180.9' y1='103.7' x2='180.9' y2='196.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='119.1' y1='150' x2='205.5' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162.3' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E28 sm%3C/text%3E%3Cline x1='119.1' y1='150' x2='71.6' y2='89.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='90.4' y='116.6' font-size='13' fill='%23334155' text-anchor='end'%3E25 sm%3C/text%3E%3Cline x1='205.5' y1='150' x2='237.8' y2='108.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='226.7' y='126.3' font-size='13' fill='%23334155' text-anchor='start'%3E17 sm%3C/text%3E%3Ctext x='119.1' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='205.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vatar-va-markazlar-chizigi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#90c0ebc8"
+    },
+    {
+      "q": "Radiuslari 25 sm dan bo'lgan ikki teng aylana kesishadi va markazlari orasi 14 sm. Umumiy vatar har bir markazdan qanday masofada joylashgan?",
+      "v": [
+        "24 sm",
+        "14 sm",
+        "7 sm",
+        "48 sm"
+      ],
+      "t": 2,
+      "izoh": "Radiuslar teng bo'lganda markazlar uchburchagi teng yonli bo'lib, umumiy vatar markazlar kesmasini teng ikkiga bo'ladi. Demak masofa 14 : 2 = 7 sm. Vatarning yarmi esa √(625 − 49) = 24 sm, bu boshqa kattalik.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='126.4' cy='150' r='84.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='173.6' cy='150' r='84.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='126.4' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='173.6' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='150' y1='69' x2='150' y2='231' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='126.4' y1='150' x2='173.6' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Cline x1='126.4' y1='150' x2='74.4' y2='83.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.2' y='108.8' font-size='13' fill='%23334155' text-anchor='end'%3E25 sm%3C/text%3E%3Cline x1='173.6' y1='150' x2='225.6' y2='83.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='205.8' y='108.8' font-size='13' fill='%23334155' text-anchor='start'%3E25 sm%3C/text%3E%3Ctext x='126.4' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='173.6' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vatar-va-markazlar-chizigi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#ac371887"
+    },
+    {
+      "q": "Radiuslari 15 sm va 20 sm bo'lgan aylanalar kesishadi va kesishish nuqtasida o'tkazilgan radiuslari o'zaro perpendikular. Markazlar orasidagi masofa necha santimetr?",
+      "v": [
+        "35 sm",
+        "25 sm",
+        "5 sm",
+        "12 sm"
+      ],
+      "t": 1,
+      "izoh": "Kesishish nuqtasi va ikki markaz to'g'ri burchakli uchburchak hosil qiladi, unda katetlar radiuslar, gipotenuza esa markazlar orasidagi masofa. Pifagor teoremasiga ko'ra d = √(225 + 400) = √625 = 25 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='96' cy='150' r='54' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='186' cy='150' r='72' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='96' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='186' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='128.4' y1='106.8' x2='128.4' y2='193.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='96' y1='150' x2='186' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='141' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Cline x1='96' y1='150' x2='62.8' y2='107.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='74.4' y='125.7' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3Cline x1='186' y1='150' x2='230.3' y2='93.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='213.2' y='118.6' font-size='13' fill='%23334155' text-anchor='start'%3E20 sm%3C/text%3E%3Ctext x='96' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='186' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vatar-va-markazlar-chizigi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#a8758e19"
+    },
+    {
+      "q": "Radiuslari 9 sm va 5 sm bo'lgan ikki aylana ikki nuqtada kesishishi uchun markazlar orasidagi masofa 3 sm, 4 sm, 6 sm va 15 sm qiymatlaridan qaysi biriga teng bo'lishi mumkin?",
+      "v": [
+        "3 sm",
+        "4 sm",
+        "15 sm",
+        "6 sm"
+      ],
+      "t": 3,
+      "izoh": "Kesishish sharti |R − r| < d < R + r ko'rinishida yoziladi. Bu yerda 4 < d < 14 oralig'i hosil bo'ladi. Berilgan qiymatlardan faqat 6 sm shu oraliqda yotadi, 4 sm esa chegara bo'lgani uchun urinishga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesishish-oraligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#030a6728"
+    },
+    {
+      "q": "Radiuslari 12 sm va 7 sm bo'lgan ikki aylana ikki nuqtada kesishadi. Markazlar orasidagi masofa butun son bo'lsa, u nechta har xil qiymat qabul qilishi mumkin?",
+      "v": [
+        "15 ta",
+        "14 ta",
+        "13 ta",
+        "12 ta"
+      ],
+      "t": 2,
+      "izoh": "Kesishish sharti 5 < d < 19 bo'ladi. Chegaralar kirmagani uchun d butun qiymatlari 6 dan 18 gacha. Ularning soni 18 − 6 + 1 = 13 ta. Agar chegaralar ham qo'shilsa 15 ta chiqadi, bu esa urinish holatlarini ham hisoblash demakdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishish-oraligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#54816453"
+    },
+    {
+      "q": "Ikki radiostansiyaning qamrov radiuslaridan biri 6 km, ular orasidagi masofa esa 10 km. Qamrov doiralari kesishishi uchun ikkinchi radiusning eng kichik butun qiymati necha kilometr?",
+      "v": [
+        "5 km",
+        "4 km",
+        "6 km",
+        "11 km"
+      ],
+      "t": 0,
+      "izoh": "Kesishish uchun |6 − r| < 10 < 6 + r shart bajarilishi kerak. O'ng tengsizlikdan r > 4, chap tengsizlikdan esa r < 16 kelib chiqadi. Butun qiymatlar ichida eng kichigi r = 5 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesishish-oraligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#f3541915"
+    },
+    {
+      "q": "Radiuslari 8 sm va 3 sm bo'lgan ikki aylananing kamida bitta umumiy nuqtasi bo'lishi uchun markazlar orasidagi masofa qanday oraliqda yotishi kerak?",
+      "v": [
+        "5 < d < 11",
+        "0 ≤ d ≤ 11",
+        "d ≥ 11",
+        "5 ≤ d ≤ 11"
+      ],
+      "t": 3,
+      "izoh": "Umumiy nuqta bo'lishi uchun aylanalar yo kesishishi, yo urinishi kerak. Kesishish uchun 5 < d < 11, urinish uchun esa d = 5 yoki d = 11. Bularni birlashtirsak 5 ≤ d ≤ 11 oralig'i hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishish-oraligi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#488eafa0"
+    },
+    {
+      "q": "Radiuslari 3 sm, 4 sm va 5 sm bo'lgan uchta aylana juft-jufti bilan tashqi urinadi. Markazlari hosil qilgan uchburchakning perimetri necha santimetr?",
+      "v": [
+        "12 sm",
+        "24 sm",
+        "48 sm",
+        "22 sm"
+      ],
+      "t": 1,
+      "izoh": "Tashqi urinuvchi aylanalar markazlari orasidagi masofa radiuslar yig'indisiga teng. Tomonlar 3 + 4 = 7, 4 + 5 = 9 va 3 + 5 = 8 sm. Perimetr 7 + 9 + 8 = 24 sm, ya'ni radiuslar yig'indisining ikki baravari.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='94.3' cy='210.3' r='41.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='191.8' cy='210.3' r='55.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='126.1' cy='103.6' r='69.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='94.3' cy='210.3' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='191.8' cy='210.3' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='126.1' cy='103.6' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='94.3' y1='210.3' x2='191.8' y2='210.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='191.8' y1='210.3' x2='126.1' y2='103.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='94.3' y1='210.3' x2='126.1' y2='103.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.3' y='227.3' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='191.8' y='227.3' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3Ctext x='126.1' y='120.6' font-size='13' fill='%23334155' text-anchor='middle'%3EO₃%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-aylana-markaz-uchburchagi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#84ee0779"
+    },
+    {
+      "q": "Juft-jufti bilan tashqi urinuvchi uchta aylananing markazlari 9 sm, 10 sm va 11 sm tomonli uchburchak hosil qiladi. Eng kichik aylananing radiusi necha santimetr?",
+      "v": [
+        "4 sm",
+        "5 sm",
+        "6 sm",
+        "4,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Radiuslarni a, b, c deb belgilaymiz: a + b = 9, b + c = 10, a + c = 11. Uchala tenglamani qo'shsak 2(a + b + c) = 30, ya'ni a + b + c = 15. Bundan c = 15 − 9 = 6, a = 15 − 10 = 5, b = 15 − 11 = 4 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='104.6' cy='209.2' r='56.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='206.8' cy='209.2' r='45.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='168.9' cy='102.1' r='68.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='104.6' cy='209.2' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='206.8' cy='209.2' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='168.9' cy='102.1' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='104.6' y1='209.2' x2='206.8' y2='209.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='206.8' y1='209.2' x2='168.9' y2='102.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='104.6' y1='209.2' x2='168.9' y2='102.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='104.6' y='226.2' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='206.8' y='226.2' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3Ctext x='168.9' y='119.1' font-size='13' fill='%23334155' text-anchor='middle'%3EO₃%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-aylana-markaz-uchburchagi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#9da32147"
+    },
+    {
+      "q": "Uchta aylana juft-jufti bilan tashqi urinadi va markazlari 5 sm, 12 sm hamda 13 sm tomonli uchburchakni tashkil etadi. Eng katta aylananing radiusi necha santimetr?",
+      "v": [
+        "6,5 sm",
+        "13 sm",
+        "10 sm",
+        "3 sm"
+      ],
+      "t": 2,
+      "izoh": "Radiuslar uchun a + b = 5, b + c = 12, a + c = 13 sistemasini yozamiz. Qo'shsak a + b + c = 15 kelib chiqadi. Demak c = 15 − 5 = 10, a = 15 − 12 = 3, b = 15 − 13 = 2 sm va eng kattasi 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='103.6' cy='238.2' r='27.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='238.2' r='18.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='126.8' r='92.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='103.6' cy='238.2' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='150' cy='238.2' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='150' cy='126.8' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='103.6' y1='238.2' x2='150' y2='238.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='238.2' x2='150' y2='126.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='103.6' y1='238.2' x2='150' y2='126.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='103.6' y='255.2' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='150' y='255.2' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3Ctext x='150' y='143.8' font-size='13' fill='%23334155' text-anchor='middle'%3EO₃%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-aylana-markaz-uchburchagi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#e6da7c8c"
+    },
+    {
+      "q": "Omborga radiuslari 5 dm, 7 dm va 9 dm bo'lgan uchta dumaloq bochka bir-biriga tegib turadigan qilib qo'yildi. Bochka markazlarini tutashtiruvchi uchburchakning perimetri necha detsimetr?",
+      "v": [
+        "21 dm",
+        "42 dm",
+        "84 dm",
+        "63 dm"
+      ],
+      "t": 1,
+      "izoh": "Har ikki bochka markazi orasidagi masofa ularning radiuslari yig'indisiga teng: 12 dm, 16 dm va 14 dm. Perimetr 12 + 16 + 14 = 42 dm. Buni tez hisoblash uchun radiuslar yig'indisini ikkilantirish yetarli.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='97' cy='211.1' r='39.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='191.2' cy='211.1' r='54.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='124.5' cy='104.6' r='70.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='97' cy='211.1' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='191.2' cy='211.1' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='124.5' cy='104.6' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='97' y1='211.1' x2='191.2' y2='211.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='191.2' y1='211.1' x2='124.5' y2='104.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='97' y1='211.1' x2='124.5' y2='104.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='97' y='228.1' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='191.2' y='228.1' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3Ctext x='124.5' y='121.6' font-size='13' fill='%23334155' text-anchor='middle'%3EO₃%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-aylana-markaz-uchburchagi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#4fc38af5"
+    },
+    {
+      "q": "Radiuslari 1 sm, 2 sm va 3 sm bo'lgan uchta aylana juft-jufti bilan tashqi urinadi. Markazlar orqali o'tkazilgan uchburchak qanday uchburchak bo'ladi?",
+      "v": [
+        "Teng tomonli",
+        "Teng yonli, ammo to'g'ri burchakli emas",
+        "O'tmas burchakli",
+        "To'g'ri burchakli"
+      ],
+      "t": 3,
+      "izoh": "Tomonlar radiuslar yig'indisiga teng: 1 + 2 = 3, 2 + 3 = 5 va 1 + 3 = 4 sm. Endi tekshiramiz: 3² + 4² = 9 + 16 = 25 = 5². Pifagor teoremasiga teskari teorema bo'yicha uchburchak to'g'ri burchakli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-aylana-markaz-uchburchagi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#2c2bafd3"
+    },
+    {
+      "q": "Yo'lakka radiuslari 4 sm, 6 sm va 9 sm bo'lgan uchta disk markazlari bir to'g'ri chiziqda yotadigan va ketma-ket tashqi urinadigan qilib terildi. Birinchi va uchinchi disk markazlari orasidagi masofa necha santimetr?",
+      "v": [
+        "13 sm",
+        "19 sm",
+        "25 sm",
+        "31 sm"
+      ],
+      "t": 2,
+      "izoh": "Qo'shni disklar tashqi urinadi, shuning uchun birinchi va ikkinchi markaz orasi 4 + 6 = 10 sm, ikkinchi va uchinchi orasi 6 + 9 = 15 sm. Markazlar bir to'g'ri chiziqda yotgani uchun izlangan masofa 10 + 15 = 25 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='58.4' cy='150' r='24.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='119.5' cy='150' r='36.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='211.1' cy='150' r='54.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='58.4' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='119.5' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='211.1' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='58.4' y1='150' x2='119.5' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='119.5' y1='150' x2='211.1' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='58.4' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='119.5' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3Ctext x='211.1' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO₃%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-urinma-zanjir",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#99975be1"
+    },
+    {
+      "q": "Bir to'g'ri chiziqda ketma-ket tashqi urinuvchi to'rtta aylananing radiuslari 2 sm, 3 sm, 5 sm va 6 sm. Chetki ikki markaz orasidagi masofa necha santimetr?",
+      "v": [
+        "24 sm",
+        "16 sm",
+        "32 sm",
+        "8 sm"
+      ],
+      "t": 0,
+      "izoh": "Qo'shni markazlar orasidagi masofalarni topamiz: 2 + 3 = 5, 3 + 5 = 8 va 5 + 6 = 11 sm. Markazlar bitta to'g'ri chiziqda bo'lgani uchun ularni qo'shamiz: 5 + 8 + 11 = 24 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='48.5' cy='150' r='14.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='84.8' cy='150' r='21.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='142.8' cy='150' r='36.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='222.5' cy='150' r='43.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='48.5' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='84.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='142.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='222.5' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='48.5' y1='150' x2='84.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='84.8' y1='150' x2='142.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='142.8' y1='150' x2='222.5' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='48.5' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='84.8' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3Ctext x='142.8' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO₃%3C/text%3E%3Ctext x='222.5' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO₄%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-urinma-zanjir",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#c8a8122c"
+    },
+    {
+      "q": "Radiusi 12 sm bo'lgan aylananing diametri bo'ylab, unga ichki urinuvchi va o'zaro tashqi urinuvchi ikkita teng aylana joylashtirildi. Kichik aylanalarning har birining radiusi necha santimetr?",
+      "v": [
+        "4 sm",
+        "3 sm",
+        "8 sm",
+        "6 sm"
+      ],
+      "t": 3,
+      "izoh": "Ikki teng aylana diametr bo'ylab yonma-yon yotadi, ularning diametrlari yig'indisi katta aylana diametriga teng. Demak 2r + 2r = 24, ya'ni 4r = 24 va r = 6 sm. Markazlari katta markazdan 6 sm uzoqlikda joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziqli-urinma-zanjir",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#e9ef525a"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan aylana ichida unga ichki urinuvchi radiusi 6 sm bo'lgan aylana joylashgan. Ikki aylana orasidagi bo'shliqning eng keng joyi necha santimetr?",
+      "v": [
+        "4 sm",
+        "8 sm",
+        "16 sm",
+        "2 sm"
+      ],
+      "t": 1,
+      "izoh": "Markazlar orasidagi masofa d = 10 − 6 = 4 sm. Urinish nuqtasidan diametral qarama-qarshi tomonda bo'shliq eng keng bo'ladi va u 2R − 2r ga teng. Hisoblaymiz: 20 − 12 = 8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='108' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='193.2' cy='150' r='64.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='193.2' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='150' y1='150' x2='83.5' y2='64.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='111.8' y='104.4' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Cline x1='193.2' y1='150' x2='233.1' y2='98.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='218.1' y='121.5' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-urinish-halqasi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#3e67f9d4"
+    },
+    {
+      "q": "Radiusi 30 sm bo'lgan dumaloq stol markazidan 8 sm siljitib, ustiga radiusi 22 sm bo'lgan dumaloq patnis qo'yildi. Patnis stol chetidan chiqib ketadimi?",
+      "v": [
+        "Chiqmaydi, cheti stol chetiga aynan tegib turadi",
+        "8 sm chiqib ketadi",
+        "Chiqmaydi, chet bilan orasi 8 sm qoladi",
+        "Chiqmaydi, chet bilan orasi 22 sm qoladi"
+      ],
+      "t": 0,
+      "izoh": "Radiuslar ayirmasi 30 − 22 = 8 sm, markazlar orasidagi siljish ham 8 sm. d = R − r bo'lgani uchun patnis stolga ichkaridan urinadi: chetidan chiqmaydi, lekin bir nuqtada aynan tegib turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-urinish-halqasi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#9225e351"
+    },
+    {
+      "q": "Ichki urinuvchi ikki aylananing radiuslari 14 sm va 9 sm. Katta aylananing urinish nuqtasidan o'tuvchi diametrining kichik aylanadan tashqarida qolgan qismi necha santimetr?",
+      "v": [
+        "5 sm",
+        "23 sm",
+        "10 sm",
+        "19 sm"
+      ],
+      "t": 2,
+      "izoh": "Urinish nuqtasi va ikkala markaz bir to'g'ri chiziqda yotadi, shuning uchun katta diametr kichik aylananing diametri ustidan o'tadi. Katta diametr 28 sm, kichigi 18 sm. Tashqarida qolgan qism 28 − 18 = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='108' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='188.6' cy='150' r='69.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='188.6' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='150' y1='150' x2='83.5' y2='64.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='111.8' y='104.4' font-size='13' fill='%23334155' text-anchor='end'%3E14 sm%3C/text%3E%3Cline x1='188.6' y1='150' x2='231.3' y2='95.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='214.9' y='119.6' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-urinish-halqasi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#3d281d68"
+    },
+    {
+      "q": "Radiusi 18 sm bo'lgan metall diskka unga ichki urinuvchi, radiusi 7 sm bo'lgan dumaloq teshik o'yildi. Teshik markazi disk markazidan necha santimetr uzoqda joylashgan?",
+      "v": [
+        "25 sm",
+        "11 sm",
+        "5,5 sm",
+        "22 sm"
+      ],
+      "t": 1,
+      "izoh": "Teshik chegarasi disk chetiga ichkaridan urinadi, demak d = R − r. Hisoblaymiz: d = 18 − 7 = 11 sm. Radiuslar yig'indisi 25 sm tashqi urinishga tegishli bo'lgani uchun bu yerda javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='108' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='216' cy='150' r='42' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='216' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='150' y1='150' x2='216' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='183' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Cline x1='150' y1='150' x2='83.5' y2='64.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='111.8' y='104.4' font-size='13' fill='%23334155' text-anchor='end'%3E18 sm%3C/text%3E%3Cline x1='216' y1='150' x2='241.9' y2='116.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='233.9' y='130.5' font-size='13' fill='%23334155' text-anchor='start'%3E7 sm%3C/text%3E%3Ctext x='150' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='216' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-urinish-halqasi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#40ffc027"
+    },
+    {
+      "q": "Ikki shkivning radiuslari 11 sm va 3 sm, o'qlari orasidagi masofa 17 sm. Ularga tashqi tomondan tortilgan tasmaning ikkita to'g'ri qismi jami necha santimetr?",
+      "v": [
+        "15 sm",
+        "34 sm",
+        "44 sm",
+        "30 sm"
+      ],
+      "t": 3,
+      "izoh": "Tasmaning to'g'ri qismi umumiy tashqi urinma bo'lib, uzunligi √(d² − (R − r)²) ga teng. Ayirma 8 sm, demak bitta qism √(289 − 64) = 15 sm. Ikkita qism bo'lgani uchun jami 2 · 15 = 30 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='114' cy='150' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='250' cy='150' r='24' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='114' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='250' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='155.4' y1='72.4' x2='261.3' y2='128.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='155.4' cy='72.4' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='261.3' cy='128.8' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='155.4' y1='227.6' x2='261.3' y2='171.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='155.4' cy='227.6' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='261.3' cy='171.2' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='205' y='95' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='114' y1='150' x2='250' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='182' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E17 sm%3C/text%3E%3Cline x1='114' y1='150' x2='61.2' y2='79.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='84' y='112' font-size='13' fill='%23334155' text-anchor='end'%3E11 sm%3C/text%3E%3Cline x1='250' y1='150' x2='233.2' y2='133' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='231' y='130' font-size='13' fill='%23334155' text-anchor='end'%3E3 sm%3C/text%3E%3Ctext x='114' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='250' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shkiv-tasma",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#d6cb731c"
+    },
+    {
+      "q": "Radiuslari 8 sm va 7 sm bo'lgan ikki shkiv o'qlari 17 sm masofada bo'lib, ular kesishtirilgan tasma bilan bog'langan. Tasmaning ikki to'g'ri qismi jami necha santimetr?",
+      "v": [
+        "8 sm",
+        "15 sm",
+        "16 sm",
+        "34 sm"
+      ],
+      "t": 2,
+      "izoh": "Kesishtirilgan tasmaning to'g'ri qismi ichki urinma bo'ladi va u √(d² − (R + r)²) ga teng. Yig'indi 15 sm, demak bitta qism √(289 − 225) = 8 sm. Ikkita qism uchun jami 16 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='96' cy='150' r='54' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='210.8' cy='150' r='47.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='96' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='210.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='136.6' y1='111.4' x2='176.1' y2='185.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='143.6' cy='124.6' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='169.1' cy='172.2' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='136.6' y1='188.6' x2='176.1' y2='114.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='96' y1='150' x2='210.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='153.4' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E17 sm%3C/text%3E%3Cline x1='96' y1='150' x2='62.8' y2='107.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='74.4' y='125.7' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Cline x1='210.8' y1='150' x2='239.8' y2='112.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230.3' y='128.4' font-size='13' fill='%23334155' text-anchor='start'%3E7 sm%3C/text%3E%3Ctext x='96' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='210.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shkiv-tasma",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#dbcd7c3e"
+    },
+    {
+      "q": "Mexanizm zanjiri radiuslari 7 sm va 1 sm bo'lgan ikki yulduzchaga tashqaridan o'ralgan, o'qlar orasidagi masofa 10 sm. Zanjirning to'g'ri qismlaridan bittasi necha santimetr?",
+      "v": [
+        "8 sm",
+        "6 sm",
+        "14 sm",
+        "16 sm"
+      ],
+      "t": 0,
+      "izoh": "Zanjirning to'g'ri qismi umumiy tashqi urinma vazifasini bajaradi. Uzunligi √(d² − (R − r)²) = √(100 − 36) = √64 = 8 sm. Radiuslar ayirmasi 6 sm faqat oraliq kattalik bo'lib, javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='122' cy='150' r='98' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='262' cy='150' r='14' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='122' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='262' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='180.8' y1='71.6' x2='270.4' y2='138.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='180.8' cy='71.6' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='270.4' cy='138.8' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='222' y='100' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='122' y1='150' x2='262' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='192' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Cline x1='122' y1='150' x2='63.2' y2='71.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='86' y='106' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3Cline x1='262' y1='150' x2='253.6' y2='138.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='251' y='144' font-size='13' fill='%23334155' text-anchor='end'%3E1 sm%3C/text%3E%3Ctext x='122' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='262' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shkiv-tasma",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#4908c2c7"
+    },
+    {
+      "q": "Ikki tegirmon g'ildiragiga tashqaridan tortilgan tasmaning to'g'ri qismi 40 sm, g'ildirak radiuslari esa 13 sm va 4 sm. G'ildiraklar o'qlari orasidagi masofa necha santimetr?",
+      "v": [
+        "49 sm",
+        "40 sm",
+        "√1519 sm",
+        "41 sm"
+      ],
+      "t": 3,
+      "izoh": "Tashqi urinma uchun L² = d² − (R − r)², bundan d² = L² + (R − r)². Ayirma 9 sm, demak d² = 1600 + 81 = 1681 va d = 41 sm. Uzunliklarni to'g'ridan-to'g'ri qo'shish 49 sm noto'g'ri natija beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='90.4' cy='150' r='48.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='243.1' cy='150' r='14.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='90.4' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='243.1' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='86.4' y1='99.5' x2='261' y2='138.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='101' cy='102.8' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='246.4' cy='135.5' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='173.7' y='111.1' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3Cline x1='90.4' y1='150' x2='243.1' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='166.8' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Cline x1='90.4' y1='150' x2='60.6' y2='111.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='70.5' y='127.9' font-size='13' fill='%23334155' text-anchor='end'%3E13 sm%3C/text%3E%3Cline x1='243.1' y1='150' x2='252.3' y2='138.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='252.7' y='141.1' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3Ctext x='90.4' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='243.1' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shkiv-tasma",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#4bac8631"
+    },
+    {
+      "q": "Ikki dumaloq robot bir-biriga qarab yurmoqda: radiuslari 20 sm va 15 sm, hozir markazlari orasi 350 sm. Ular soniyasiga 5 sm dan yaqinlashsa, necha soniyadan keyin bir-biriga tegib qoladi?",
+      "v": [
+        "70 s",
+        "63 s",
+        "64 s",
+        "10 s"
+      ],
+      "t": 1,
+      "izoh": "Robotlar tegishi tashqi urinish demakdir, unda markazlar orasi 20 + 15 = 35 sm bo'lishi kerak. Masofa 350 − 35 = 315 sm ga qisqarishi lozim. Vaqt 315 : 5 = 63 soniya, radiuslarni hisobga olmaslik 70 soniya degan xato javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakatdagi-aylanalar",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#3d1909fe"
+    },
+    {
+      "q": "Ko'lga tashlangan toshdan tarqalayotgan to'lqin doirasi soniyasiga 4 sm dan kengayadi. Undan 96 sm narida tashlangan ikkinchi toshning to'lqini esa soniyasiga 8 sm dan kengayadi. To'lqinlar necha soniyadan keyin birinchi marta uchrashadi?",
+      "v": [
+        "8 s",
+        "12 s",
+        "24 s",
+        "16 s"
+      ],
+      "t": 0,
+      "izoh": "To'lqinlar birinchi marta tegishganda radiuslar yig'indisi markazlar orasidagi masofaga teng bo'ladi. Tenglama: 4t + 8t = 96, ya'ni 12t = 96 va t = 8 soniya. Faqat bitta to'lqin hisobga olinsa 24 yoki 12 kabi noto'g'ri javob chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harakatdagi-aylanalar",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#e30c8773"
+    },
+    {
+      "q": "Radiuslari 6 sm va 2 sm bo'lgan ikki disk markazlari orasi 32 sm, kichigi kattasiga soniyasiga 4 sm tezlikda yaqinlashadi. Disklar birinchi marta necha soniyadan keyin tegib qoladi?",
+      "v": [
+        "8 s",
+        "10 s",
+        "6 s",
+        "4 s"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tegish tashqi urinish paytida yuz beradi, unda markazlar orasi 6 + 2 = 8 sm bo'ladi. Bosib o'tilishi kerak bo'lgan masofa 32 − 8 = 24 sm. Vaqt 24 : 4 = 6 soniya, radiuslar hisobga olinmasa 8 soniya chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='74.4' cy='150' r='32.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='247.2' cy='150' r='10.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='74.4' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='247.2' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='74.4' y1='150' x2='247.2' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160.8' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E32 sm%3C/text%3E%3Cline x1='74.4' y1='150' x2='54.5' y2='124.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='59.4' y='134.2' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Cline x1='247.2' y1='150' x2='253.8' y2='141.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='255.5' y='142.7' font-size='13' fill='%23334155' text-anchor='start'%3E2 sm%3C/text%3E%3Ctext x='74.4' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='247.2' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harakatdagi-aylanalar",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#79e31472"
+    },
+    {
+      "q": "Radiusi 3 sm bo'lgan sovun pufagi soniyasiga 2 sm dan kattalashmoqda, undan 25 sm narida esa radiusi 4 sm bo'lgan qo'zg'almas doira bor. Pufak doiraga necha soniyadan keyin tashqi uriniladi?",
+      "v": [
+        "11 s",
+        "9 s",
+        "14 s",
+        "4 s"
+      ],
+      "t": 1,
+      "izoh": "Tashqi urinish paytida radiuslar yig'indisi markazlar orasidagi masofaga teng bo'ladi. Tenglama: (3 + 2t) + 4 = 25, bundan 2t = 18 va t = 9 soniya. Qo'zg'almas doiraning 4 sm radiusi hisobga olinmasa, 3 + 2t = 25 tenglamadan 11 soniya kabi xato javob chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='62.3' cy='150' r='20.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='231' cy='150' r='27' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='62.3' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='231' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='62.3' y1='150' x2='231' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='146.6' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Cline x1='62.3' y1='150' x2='49.8' y2='134' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='51' y='139' font-size='13' fill='%23334155' text-anchor='end'%3E3 sm%3C/text%3E%3Cline x1='231' y1='150' x2='247.6' y2='128.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='244.3' y='136.4' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3Ctext x='62.3' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='231' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harakatdagi-aylanalar",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#acd86f73"
+    },
+    {
+      "q": "Koordinata tekisligida (x − 1)² + (y − 2)² = 9 va (x − 5)² + (y − 5)² = 4 tenglamalar bilan berilgan aylanalar o'zaro qanday joylashgan?",
+      "v": [
+        "Ikki nuqtada kesishadi",
+        "Ichki urinadi",
+        "Umumiy nuqtasi yo'q",
+        "Tashqi urinadi"
+      ],
+      "t": 3,
+      "izoh": "Markazlar (1; 2) va (5; 5), radiuslar 3 va 2. Markazlar orasidagi masofa d = √(16 + 9) = 5. Radiuslar yig'indisi 3 + 2 = 5 bo'lgani uchun d = R + r, ya'ni aylanalar tashqi urinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinatada-joylashuv",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#f4b1f71a"
+    },
+    {
+      "q": "Markazlari (0; 0) va (6; 8) nuqtalarda bo'lgan, radiuslari 5 va 2 birlikka teng aylanalarga nechta umumiy urinma o'tkazish mumkin?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "4 ta",
+        "0 ta"
+      ],
+      "t": 2,
+      "izoh": "Markazlar orasidagi masofa d = √(36 + 64) = √100 = 10 birlik. Radiuslar yig'indisi 5 + 2 = 7 birlik. 10 > 7 bo'lgani uchun aylanalar bir-biridan tashqarida yotadi va 4 ta umumiy urinma o'tkaziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinatada-joylashuv",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#d056dae2"
+    },
+    {
+      "q": "Markazi (0; 0) nuqtada va radiusi 13 bo'lgan aylanaga markazi (5; 12) nuqtada joylashgan aylana ichki urinadi. Ikkinchi aylananing radiusi nechaga teng?",
+      "v": [
+        "26",
+        "13",
+        "39",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Markazlar orasidagi masofa d = √(25 + 144) = √169 = 13. Ichki urinish sharti |R − r| = d, ya'ni |13 − r| = 13. Bundan r = 26 (yoki r = 0, lekin bunday aylana mavjud emas), demak ikkinchi aylana kattaroq va birinchisini ichiga oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinatada-joylashuv",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#8804c9fc"
+    },
+    {
+      "q": "x² + y² = 169 va (x − 14)² + y² = 225 tenglamalar bilan berilgan aylanalarning umumiy vatari uzunligi nechaga teng?",
+      "v": [
+        "12",
+        "28",
+        "14",
+        "24"
+      ],
+      "t": 3,
+      "izoh": "Radiuslar 13 va 15, markazlar orasi 14. Birinchi markazdan vatargacha masofa (196 + 169 − 225) : 28 = 5. Vatarning yarmi √(169 − 25) = 12, to'liq vatar esa 24 birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinatada-joylashuv",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#09217ad8"
+    },
+    {
+      "q": "Ikki aylananing markazlari bitta nuqtaga to'g'ri keladi, radiuslari esa 9 sm va 5 sm. Bunday aylanalarning nechta umumiy urinmasi bor?",
+      "v": [
+        "1 ta",
+        "0 ta",
+        "2 ta",
+        "Cheksiz ko'p"
+      ],
+      "t": 1,
+      "izoh": "Markazlar ustma-ust tushganda d = 0 bo'ladi va 0 < |9 − 5| = 4, ya'ni kichik aylana kattasining ichida yotadi. Ichkaridagi aylanaga urinuvchi har qanday to'g'ri chiziq kattasini kesib o'tadi, shuning uchun umumiy urinma yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konsentrik-aylanalar",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#ebbd8dd3"
+    },
+    {
+      "q": "Stadion o'rtasidagi dumaloq maydonning radiusi 20 m, uni o'rab turgan yugurish yo'lagining tashqi chegarasi ham shu markazli aylana bo'lib, radiusi 26 m. Yo'lak kengligi qancha va bu aylanalarning umumiy nuqtasi bormi?",
+      "v": [
+        "6 m, umumiy nuqtasi yo'q",
+        "6 m, bitta umumiy nuqtasi bor",
+        "46 m, umumiy nuqtasi yo'q",
+        "3 m, umumiy nuqtasi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Markazlar bir xil bo'lgani uchun yo'lak kengligi radiuslar ayirmasiga teng: 26 − 20 = 6 m. Markazlar orasidagi masofa nolga teng va u ayirmadan kichik, shuning uchun aylanalar kesishmaydi ham, urinmaydi ham.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konsentrik-aylanalar",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#2f13a8d4"
+    },
+    {
+      "q": "Markazlari bir nuqtada bo'lgan ikki aylananing radiuslari 25 sm va 7 sm. Kichik aylanaga urinib, katta aylanani kesib o'tuvchi vatarning uzunligi necha santimetr?",
+      "v": [
+        "24 sm",
+        "50 sm",
+        "48 sm",
+        "32 sm"
+      ],
+      "t": 2,
+      "izoh": "Vatar kichik aylanaga urinsa, urinish nuqtasiga o'tkazilgan radius vatarga perpendikular bo'ladi va uni teng ikkiga bo'ladi. Vatarning yarmi √(25² − 7²) = √576 = 24 sm, to'liq vatar esa 2 · 24 = 48 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konsentrik-aylanalar",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#49096b21"
+    },
+    {
+      "q": "Ikki dumaloq truba bir-biriga tashqi tomondan tegib turibdi. Ular tegib turgan nuqta haqida quyidagi fikrlardan qaysi biri to'g'ri?",
+      "v": [
+        "U markazlar chizig'idan tashqarida yotadi",
+        "U markazlarni tutashtiruvchi kesmada yotadi",
+        "U ikki markazdan doim teng uzoqlikda bo'ladi",
+        "U katta truba markaziga yaqinroq bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Urinish nuqtasida o'tkazilgan umumiy urinma ikkala radiusga ham perpendikular. Shuning uchun ikki radius bitta to'g'ri chiziqda yotadi va urinish nuqtasi markazlarni tutashtiruvchi kesmaga tushadi. Teng uzoqlik faqat radiuslar teng bo'lgandagina bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinish-nuqtasi-xossalari",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#78d96e45"
+    },
+    {
+      "q": "Radiuslari 8 sm va 12 sm bo'lgan ikki aylana tashqi urinadi. Urinish nuqtasidan o'tkazilgan umumiy urinma markazlarni tutashtiruvchi kesma bilan qanday burchak hosil qiladi?",
+      "v": [
+        "45°",
+        "60°",
+        "30°",
+        "90°"
+      ],
+      "t": 3,
+      "izoh": "Urinma urinish nuqtasiga o'tkazilgan radiusga har doim perpendikular bo'ladi. Tashqi urinishda ikkala radius va markazlar kesmasi bitta to'g'ri chiziqda yotadi. Demak urinma bu chiziq bilan 90° burchak hosil qiladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='106.8' cy='150' r='64.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='214.8' cy='150' r='43.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='106.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='214.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='106.8' y1='150' x2='214.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160.8' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Cline x1='106.8' y1='150' x2='66.9' y2='98.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='81.9' y='121.5' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Cline x1='214.8' y1='150' x2='241.4' y2='116' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='233.1' y='130' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3Ctext x='106.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='214.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinish-nuqtasi-xossalari",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#af56be42"
+    },
+    {
+      "q": "Tashqi urinuvchi ikki aylananing radiuslari 9 sm va 6 sm. Urinish nuqtasi markazlarni tutashtiruvchi kesmani katta markazdan boshlab qanday nisbatda bo'ladi?",
+      "v": [
+        "2 : 3",
+        "1 : 1",
+        "3 : 2",
+        "9 : 15"
+      ],
+      "t": 2,
+      "izoh": "Urinish nuqtasi katta markazdan 9 sm, kichik markazdan esa 6 sm uzoqlikda yotadi. Demak nisbat 9 : 6 bo'lib, uni qisqartirsak 3 : 2 hosil bo'ladi. Teng bo'linish faqat radiuslar teng bo'lgandagina yuz beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='106.8' cy='150' r='64.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='214.8' cy='150' r='43.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='106.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='214.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='106.8' y1='150' x2='214.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160.8' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Cline x1='106.8' y1='150' x2='66.9' y2='98.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='81.9' y='121.5' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Cline x1='214.8' y1='150' x2='241.4' y2='116' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='233.1' y='130' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3Ctext x='106.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='214.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinish-nuqtasi-xossalari",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#c0958beb"
+    },
+    {
+      "q": "Ichki urinuvchi ikki aylananing radiuslari 16 sm va 7 sm. Urinish nuqtasidan kichik aylana markazi orqali o'tkazilgan to'g'ri chiziq katta aylanani ikkinchi marta kesadi; shu ikki nuqta orasidagi masofa necha santimetr?",
+      "v": [
+        "32 sm",
+        "16 sm",
+        "23 sm",
+        "14 sm"
+      ],
+      "t": 0,
+      "izoh": "Ichki urinishda urinish nuqtasi va ikkala markaz bitta to'g'ri chiziqda yotadi. Demak bu chiziq katta aylananing diametri bo'ladi. Diametr uzunligi 2 · 16 = 32 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='108' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='210.8' cy='150' r='47.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='210.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='150' y1='150' x2='83.5' y2='64.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='111.8' y='104.4' font-size='13' fill='%23334155' text-anchor='end'%3E16 sm%3C/text%3E%3Cline x1='210.8' y1='150' x2='239.8' y2='112.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230.3' y='128.4' font-size='13' fill='%23334155' text-anchor='start'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinish-nuqtasi-xossalari",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#42ffbc81"
+    },
+    {
+      "q": "Tashqi urinuvchi ikki aylananing radiuslari 9 sm va 4 sm. Ularning umumiy tashqi urinmasidagi urinish nuqtalari orasidagi masofa necha santimetr?",
+      "v": [
+        "13 sm",
+        "5 sm",
+        "6 sm",
+        "12 sm"
+      ],
+      "t": 3,
+      "izoh": "Tashqi urinishda d = R + r = 13 sm. Urinma kesmasi L = √(d² − (R − r)²) = √(169 − 25) = 12 sm. Bu holat uchun qisqa formula ham bor: L = 2√(Rr) = 2√36 = 12 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='116.8' cy='150' r='74.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='224.8' cy='150' r='33.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='116.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='224.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='131.7' y1='75.2' x2='251.4' y2='125.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='145.5' cy='81' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='237.6' cy='119.3' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='191.5' y='92.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='116.8' y1='150' x2='70.7' y2='91.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='88.8' y='117.5' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Cline x1='224.8' y1='150' x2='245.2' y2='123.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='240' y='133.9' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3Ctext x='116.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='224.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-urinuvchilar-urinma-kesmasi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#4a7000c3"
+    },
+    {
+      "q": "Yerga yonma-yon qo'yilgan, radiuslari 8 sm va 2 sm bo'lgan ikki dumaloq quvur bir-biriga tegib turibdi. Ustiga qo'yilgan tekis taxta quvurlarga tegadigan ikki nuqta orasidagi masofa necha santimetr?",
+      "v": [
+        "10 sm",
+        "8 sm",
+        "6 sm",
+        "4 sm"
+      ],
+      "t": 1,
+      "izoh": "Taxta umumiy tashqi urinma bo'ladi, tashqi urinuvchi aylanalar uchun esa L = 2√(Rr). Hisoblaymiz: L = 2√(8 · 2) = 2√16 = 2 · 4 = 8 sm. Radiuslar yig'indisi 10 sm markazlar orasidagi masofa bo'lib, javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='128.4' cy='150' r='86.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='236.4' cy='150' r='21.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='128.4' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='236.4' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='168.2' y1='71.9' x2='261.4' y2='141.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='180.2' cy='80.9' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='249.4' cy='132.7' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='214.8' y='98.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='128.4' y1='150' x2='75.2' y2='81.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='96.8' y='113' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Cline x1='236.4' y1='150' x2='249.7' y2='133' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='248' y='138.5' font-size='13' fill='%23334155' text-anchor='start'%3E2 sm%3C/text%3E%3Ctext x='128.4' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='236.4' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-urinuvchilar-urinma-kesmasi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#09334981"
+    },
+    {
+      "q": "Bir-biriga tashqi urinuvchi ikki aylana radiuslari 16 sm va 9 sm. Umumiy tashqi urinma bu aylanalarga tegadigan nuqtalar orasidagi kesmani toping.",
+      "v": [
+        "24 sm",
+        "25 sm",
+        "7 sm",
+        "12 sm"
+      ],
+      "t": 0,
+      "izoh": "Tashqi urinuvchi aylanalar uchun urinma kesmasi L = 2√(Rr) formulasi bilan topiladi. Demak L = 2√(16 · 9) = 2√144 = 2 · 12 = 24 sm. Radiuslar yig'indisi 25 sm markazlar orasidagi masofa bo'lgani uchun javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='111.1' cy='150' r='69.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='219.1' cy='150' r='38.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='111.1' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='219.1' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='116.1' y1='79.4' x2='244.4' y2='116.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='130.5' cy='83.6' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='230' cy='112.7' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='180.2' y='90.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='111.1' y1='150' x2='68.6' y2='95.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='84.8' y='119.8' font-size='13' fill='%23334155' text-anchor='end'%3E16 sm%3C/text%3E%3Cline x1='219.1' y1='150' x2='243.1' y2='119.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='236.1' y='131.7' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3Ctext x='111.1' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='219.1' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-urinuvchilar-urinma-kesmasi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#810b3ba0"
+    },
+    {
+      "q": "Tashqi urinuvchi ikki aylananing umumiy tashqi urinmasi urinish nuqtalari orasida 20 sm li kesma hosil qiladi. Kichik aylananing radiusi 4 sm bo'lsa, kattasiniki necha santimetr?",
+      "v": [
+        "16 sm",
+        "100 sm",
+        "25 sm",
+        "5 sm"
+      ],
+      "t": 2,
+      "izoh": "Tashqi urinuvchi aylanalar uchun L = 2√(Rr) bo'lgani uchun 2√(4R) = 20, bundan √(4R) = 10. Ikkala tomonni kvadratga ko'tarsak 4R = 100 va R = 25 sm. 4R = 100 oraliq natijada to'xtab qolinsa, 100 kabi xato javob tanlanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='135.1' cy='150' r='93.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='243.1' cy='150' r='14.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='135.1' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='243.1' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='192.2' y1='74.9' x2='264.2' y2='150.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='202.5' cy='85.8' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='253.9' cy='139.7' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='228.2' y='104.8' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Cline x1='135.1' y1='150' x2='77.8' y2='76.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='101.4' y='110.3' font-size='13' fill='%23334155' text-anchor='end'%3ER = ?%3C/text%3E%3Cline x1='243.1' y1='150' x2='252.3' y2='138.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='252.7' y='141.1' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3Ctext x='135.1' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='243.1' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tashqi-urinuvchilar-urinma-kesmasi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#097182fa"
+    },
+    {
+      "q": "Yo'l chetiga radiusi 9 dm va radiusi 4 dm bo'lgan ikki quvur bir-biriga tegib turgan holda yotqizilgan, ikkalasi ham tekis yerga tegib turibdi. Quvurlarning yerga tegish nuqtalari orasidagi masofa necha detsimetr?",
+      "v": [
+        "13 dm",
+        "12 dm",
+        "5 dm",
+        "6 dm"
+      ],
+      "t": 1,
+      "izoh": "Yer ikkala quvur uchun umumiy tashqi urinma vazifasini bajaradi, quvurlar esa tashqi urinadi. Shuning uchun tegish nuqtalari orasi L = 2√(Rr) = 2√(9 · 4) = 2 · 6 = 12 dm. Radiuslar yig'indisi 13 dm bu yerda markazlar orasidagi masofa.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='10' y1='233.5' x2='290' y2='233.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='117.5' cy='150' r='83.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='228.9' cy='196.4' r='37.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='117.5' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='228.9' cy='196.4' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='117.5' y1='150' x2='228.9' y2='196.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='117.5' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='228.9' y='213.4' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tashqi-urinuvchilar-urinma-kesmasi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#1bd88966"
+    },
+    {
+      "q": "Radiuslari 9 sm va 3 sm bo'lgan ikki aylananing markazlari orasi 12 sm. Ularning ikkita umumiy tashqi urinmasi kesishganda hosil bo'lgan burchak necha gradus?",
+      "v": [
+        "30°",
+        "90°",
+        "120°",
+        "60°"
+      ],
+      "t": 3,
+      "izoh": "Tashqi urinmalar kesishgan nuqtadan markazlar chizig'igacha bo'lgan burchakning sinusi (R − r) : d ga teng. Bu yerda (9 − 3) : 12 = 0,5, demak yarim burchak 30° ga teng. To'liq burchak 2 · 30° = 60°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='123' cy='150' r='81' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='231' cy='150' r='27' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='123' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='231' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='123' y1='150' x2='231' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='177' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Cline x1='123' y1='150' x2='73.1' y2='86.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='93.1' y='115.1' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Cline x1='231' y1='150' x2='247.6' y2='128.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='244.3' y='136.4' font-size='13' fill='%23334155' text-anchor='start'%3E3 sm%3C/text%3E%3Ctext x='123' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='231' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinmalar-burchagi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#b87c9dc5"
+    },
+    {
+      "q": "Radiuslari 8 sm va 2 sm bo'lgan aylanalar markazlari orasidagi masofa 12 sm. Umumiy tashqi urinma markazlar chizig'i bilan necha gradusli burchak hosil qiladi?",
+      "v": [
+        "60°",
+        "45°",
+        "30°",
+        "15°"
+      ],
+      "t": 2,
+      "izoh": "Markazlardan urinmagacha bo'lgan perpendikularlar farqi R − r = 6 sm, markazlar orasi esa 12 sm. Burchak sinusi 6 : 12 = 0,5 bo'lgani uchun burchak 30° ga teng. Ikki urinma orasidagi burchak esa uning ikki baravari bo'lardi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='120.5' cy='150' r='78.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='238.4' cy='150' r='19.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='120.5' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='238.4' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='120.5' y1='150' x2='238.4' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Cline x1='120.5' y1='150' x2='72.2' y2='88.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='91.4' y='116.1' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Cline x1='238.4' y1='150' x2='250.5' y2='134.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='249.4' y='139.3' font-size='13' fill='%23334155' text-anchor='start'%3E2 sm%3C/text%3E%3Ctext x='120.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='238.4' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinmalar-burchagi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#49a54a7f"
+    },
+    {
+      "q": "Radiuslari teng bo'lgan va tashqi urinuvchi ikki aylanaga o'tkazilgan umumiy tashqi urinma markazlar chizig'i bilan qanday burchak hosil qiladi?",
+      "v": [
+        "0°, chunki u markazlar chizig'iga parallel",
+        "90°",
+        "45°",
+        "30°"
+      ],
+      "t": 0,
+      "izoh": "Radiuslar teng bo'lganda R − r = 0 bo'ladi, ya'ni burchak sinusi nolga teng. Markazlardan urinmagacha bo'lgan perpendikularlar bir xil uzunlikda bo'lgani uchun urinma markazlar chizig'iga parallel bo'ladi va ular kesishmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinmalar-burchagi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#c7cf5b5c"
+    },
+    {
+      "q": "Radiuslari 5 sm dan bo'lgan ikki teng aylana tashqi urinadi. Urinish nuqtasidan o'tuvchi umumiy urinma bilan umumiy tashqi urinmalar orasidagi burchak necha gradus?",
+      "v": [
+        "45°",
+        "60°",
+        "0°",
+        "90°"
+      ],
+      "t": 3,
+      "izoh": "Teng aylanalarda tashqi urinmalar markazlar chizig'iga parallel bo'ladi. Urinish nuqtasidan o'tuvchi umumiy urinma esa shu chiziqqa perpendikular. Parallel chiziqqa perpendikular bo'lgan to'g'ri chiziq bilan burchak 90° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='96' cy='150' r='54' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='204' cy='150' r='54' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='96' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='204' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='96' y1='150' x2='204' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='96' y1='150' x2='62.8' y2='107.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='74.4' y='125.7' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3Cline x1='204' y1='150' x2='237.2' y2='107.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='225.6' y='125.7' font-size='13' fill='%23334155' text-anchor='start'%3E5 sm%3C/text%3E%3Ctext x='96' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='204' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinmalar-burchagi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#2e69b333"
+    },
+    {
+      "q": "Radiuslari 9 sm va 5 sm bo'lgan aylanalarning markazlari orasi 16 sm bo'lib, umumiy tashqi urinmalari bir nuqtada kesishadi. Bu nuqta kichik aylana markazidan necha santimetr uzoqda?",
+      "v": [
+        "36 sm",
+        "20 sm",
+        "14 sm",
+        "16 sm"
+      ],
+      "t": 1,
+      "izoh": "Kesishish nuqtasi markazlar chizig'ida yotadi va undan markazlargacha masofalar radiuslarga proporsional: SO₁ : SO₂ = 9 : 5. Agar SO₂ = x bo'lsa, SO₁ = x + 16 va 5(x + 16) = 9x. Bundan 4x = 80 va x = 20 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='106.8' cy='150' r='64.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='222' cy='150' r='36' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='106.8' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='222' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='108.5' y1='83.6' x2='245.5' y2='118.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='123' cy='87.3' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='231' cy='115.1' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='108.5' y1='216.4' x2='245.5' y2='181.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='106.8' y1='150' x2='222' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='164.4' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Cline x1='106.8' y1='150' x2='66.9' y2='98.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='81.9' y='118.1' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Cline x1='222' y1='150' x2='244.2' y2='121.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='241.3' y='125.4' font-size='13' fill='%23334155' text-anchor='start'%3E5 sm%3C/text%3E%3Ctext x='106.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='222' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinmalar-kesishish-nuqtasi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#72f9ef86"
+    },
+    {
+      "q": "Radiuslari 10 sm va 6 sm bo'lgan aylanalarning markazlari orasi 32 sm. Umumiy ichki urinmalar kesishgan nuqta katta aylana markazidan necha santimetr uzoqda joylashgan?",
+      "v": [
+        "20 sm",
+        "12 sm",
+        "16 sm",
+        "24 sm"
+      ],
+      "t": 0,
+      "izoh": "Ichki urinmalar kesishgan nuqta markazlar kesmasini radiuslar nisbatida ichdan bo'ladi. Katta markazdan masofa d · R : (R + r) = 32 · 10 : 16 = 20 sm. Kichik markazdan esa 12 sm qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='87' cy='150' r='45' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='231' cy='150' r='27' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='87' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='231' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='96.5' y1='103.5' x2='230.5' y2='180.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='109.5' cy='111' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='217.5' cy='173.4' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='96.5' y1='196.5' x2='230.5' y2='119.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='87' y1='150' x2='231' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='159' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E32 sm%3C/text%3E%3Cline x1='87' y1='150' x2='59.3' y2='114.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='68.1' y='129.3' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Cline x1='231' y1='150' x2='247.6' y2='128.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='244.3' y='136.4' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3Ctext x='87' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='231' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinmalar-kesishish-nuqtasi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#e92fd246"
+    },
+    {
+      "q": "Ikki dumaloq idishning radiuslari 12 sm va 4 sm, markazlari orasi 20 sm. Ularga tashqaridan tortilgan ikki ip davom ettirilsa bir nuqtada kesishadi; shu nuqta kichik idish markazidan necha santimetr uzoqda?",
+      "v": [
+        "30 sm",
+        "5 sm",
+        "10 sm",
+        "20 sm"
+      ],
+      "t": 2,
+      "izoh": "Tashqi urinmalar kesishgan nuqta uchun SO₁ : SO₂ = R : r = 3. Kichik markazgacha masofani x desak, katta markazgacha x + 20 bo'ladi va x + 20 = 3x. Bundan 2x = 20 va x = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='114' cy='150' r='72' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='234' cy='150' r='24' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='114' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='234' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='129.1' y1='78' x2='257.3' y2='134' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='142.8' cy='84' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='243.6' cy='128' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='129.1' y1='222' x2='257.3' y2='166' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='114' y1='150' x2='234' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='174' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Cline x1='114' y1='150' x2='69.7' y2='93.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='86.8' y='118.6' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Cline x1='234' y1='150' x2='248.8' y2='131.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='246.4' y='137.5' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3Ctext x='114' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='234' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinmalar-kesishish-nuqtasi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#e2b4c120"
+    },
+    {
+      "q": "Radiuslari 10 sm va 4 sm bo'lgan aylanalarning umumiy tashqi urinmalari kesishgan nuqta katta aylana markazidan 35 sm uzoqda. Markazlar orasidagi masofa necha santimetr?",
+      "v": [
+        "14 sm",
+        "21 sm",
+        "35 sm",
+        "49 sm"
+      ],
+      "t": 1,
+      "izoh": "Kesishish nuqtasidan markazlargacha masofalar radiuslarga proporsional: SO₁ : SO₂ = 10 : 4 = 2,5. Demak SO₂ = 35 : 2,5 = 14 sm. Markazlar orasidagi masofa d = 35 − 14 = 21 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='103.7' cy='150' r='61.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='233.3' cy='150' r='24.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='103.7' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='233.3' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='106.9' y1='86.6' x2='254.7' y2='130.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='121.3' cy='90.9' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='240.3' cy='126.3' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='106.9' y1='213.4' x2='254.7' y2='169.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='103.7' y1='150' x2='233.3' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='168.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Cline x1='103.7' y1='150' x2='65.7' y2='101.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='80' y='119.6' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Cline x1='233.3' y1='150' x2='248.5' y2='130.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='246.5' y='133.1' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3Ctext x='103.7' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='233.3' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinmalar-kesishish-nuqtasi",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#3acb610e"
+    },
+    {
+      "q": "Markazlari orasidagi masofa 14 sm bo'lgan ikki aylananing biri 10 sm radiusli. Ular ikki nuqtada kesishishi uchun ikkinchi radius r qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "4 < r < 14",
+        "0 < r < 24",
+        "r > 24",
+        "4 < r < 24"
+      ],
+      "t": 3,
+      "izoh": "Kesishish sharti |10 − r| < 14 < 10 + r ko'rinishida. O'ng tengsizlikdan r > 4, chap tengsizlikni yechsak −4 < r < 24. Ikkalasini birlashtirsak 4 < r < 24 oralig'i hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "radius-oraligini-topish",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#2dffec77"
+    },
+    {
+      "q": "Radiusi 8 sm bo'lgan aylana bilan undan 13 sm uzoqlikda markazlashgan ikkinchi aylana urinishi kerak. Ikkinchi radiusning barcha mumkin qiymatlari yig'indisi necha santimetr?",
+      "v": [
+        "13 sm",
+        "5 sm",
+        "26 sm",
+        "21 sm"
+      ],
+      "t": 2,
+      "izoh": "Tashqi urinish uchun 8 + r = 13, bundan r = 5 sm. Ichki urinish uchun |8 − r| = 13, bundan r = 21 sm (r = −5 mos kelmaydi). Ikkala qiymat yig'indisi 5 + 21 = 26 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "radius-oraligini-topish",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#096ba9f1"
+    },
+    {
+      "q": "Ikki sug'orish purkagichi markazlari orasi 18 m, birinchisining qamrov radiusi 11 m. Birinchi doira ikkinchisining chetiga tegmasdan uning ichida qolishi uchun ikkinchi radiusning eng kichik butun qiymati necha metr?",
+      "v": [
+        "30 m",
+        "29 m",
+        "7 m",
+        "18 m"
+      ],
+      "t": 0,
+      "izoh": "Birinchi doira ikkinchisining chetiga tegmasdan ichida yotishi uchun d < r − 11 sharti bajarilishi kerak. Bundan r > 18 + 11 = 29 m kelib chiqadi. r = 29 m bo'lganda ichki urinish yuz beradi va chetiga tegib qoladi, shuning uchun eng kichik butun qiymat 30 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "radius-oraligini-topish",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#8cd0353a"
+    },
+    {
+      "q": "Radiuslari 5 sm va r sm bo'lgan ikki aylananing markazlari orasi 12 sm va ularning roppa-rosa 4 ta umumiy urinmasi bor. r ning eng katta butun qiymati nechaga teng?",
+      "v": [
+        "7",
+        "17",
+        "5",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "To'rtta umumiy urinma faqat aylanalar bir-biridan tashqarida yotganda bo'ladi, ya'ni d > R + r. Demak 12 > 5 + r va r < 7. Eng katta butun qiymat r = 6 sm, chunki r = 7 bo'lsa urinish yuz berib urinmalar soni 3 taga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "radius-oraligini-topish",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#023f150a"
+    },
+    {
+      "q": "Ustaxonada radiuslari 20 sm va 5 sm bo'lgan ikki g'ildirak tasma bilan tashqaridan bog'langan, tasmaning to'g'ri qismlari 36 sm dan. G'ildiraklar o'qlari orasidagi masofa necha santimetr?",
+      "v": [
+        "51 sm",
+        "39 sm",
+        "36 sm",
+        "√1071 sm"
+      ],
+      "t": 1,
+      "izoh": "Tashqi urinma uchun L² = d² − (R − r)², bundan d² = L² + (R − r)². Radiuslar ayirmasi 15 sm, demak d² = 1296 + 225 = 1521 va d = 39 sm. Uzunliklarni oddiy qo'shish 51 sm noto'g'ri javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='109.5' cy='150' r='67.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='241.1' cy='150' r='16.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='109.5' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='241.1' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='121.6' y1='81.9' x2='261.5' y2='140.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='135.5' cy='87.7' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='247.6' cy='134.4' r='2.5' fill='%23334155' stroke='none'/%3E%3Ctext x='191.5' y='103.1' font-size='13' fill='%23334155' text-anchor='middle'%3E36 sm%3C/text%3E%3Cline x1='109.5' y1='150' x2='241.1' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='175.3' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Cline x1='109.5' y1='150' x2='67.9' y2='96.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='83.7' y='120.4' font-size='13' fill='%23334155' text-anchor='end'%3E20 sm%3C/text%3E%3Cline x1='241.1' y1='150' x2='251.5' y2='136.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='251.3' y='140.4' font-size='13' fill='%23334155' text-anchor='start'%3E5 sm%3C/text%3E%3Ctext x='109.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='241.1' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-tahlil",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#8b35f432"
+    },
+    {
+      "q": "Bog'da radiuslari 3 m, 4 m va 5 m bo'lgan uchta dumaloq gulzor juft-jufti bilan bir-biriga tegib turibdi. Gulzor markazlari hosil qilgan uchburchakning yuzi necha kvadrat metr?",
+      "v": [
+        "12√5 m²",
+        "24 m²",
+        "36 m²",
+        "6√5 m²"
+      ],
+      "t": 0,
+      "izoh": "Markazlar uchburchagining tomonlari 7 m, 9 m va 8 m. Yarim perimetr p = 12 m. Geron formulasi bo'yicha S = √(12 · 5 · 3 · 4) = √720 = 12√5 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='94.3' cy='210.3' r='41.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='191.8' cy='210.3' r='55.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='126.1' cy='103.6' r='69.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='94.3' cy='210.3' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='191.8' cy='210.3' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='126.1' cy='103.6' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='94.3' y1='210.3' x2='191.8' y2='210.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='191.8' y1='210.3' x2='126.1' y2='103.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='94.3' y1='210.3' x2='126.1' y2='103.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.3' y='227.3' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='191.8' y='227.3' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3Ctext x='126.1' y='120.6' font-size='13' fill='%23334155' text-anchor='middle'%3EO₃%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-tahlil",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#1275fa0d"
+    },
+    {
+      "q": "Diametri 24 sm bo'lgan dumaloq qopqoqqa diametri 8 sm bo'lgan teshik, uning cheti qopqoq chetiga ichkaridan tegib turadigan qilib o'yildi. Teshik markazi qopqoq markazidan necha santimetr uzoqda bo'ladi?",
+      "v": [
+        "16 sm",
+        "4 sm",
+        "8 sm",
+        "20 sm"
+      ],
+      "t": 2,
+      "izoh": "Avval radiuslarni topamiz: qopqoqniki 12 sm, teshikniki 4 sm. Ichki urinish sharti d = R − r bo'lgani uchun d = 12 − 4 = 8 sm. Diametrlar bilan ishlash 16 sm kabi xato javobga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='108' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='222' cy='150' r='36' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='222' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='150' y1='150' x2='222' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='186' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Cline x1='150' y1='150' x2='83.5' y2='64.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='111.8' y='104.4' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Cline x1='222' y1='150' x2='244.2' y2='121.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='238.1' y='132.8' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3Ctext x='150' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='222' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-tahlil",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#52108199"
+    },
+    {
+      "q": "Ikki radiolokatorning qamrov radiuslari 15 km va 20 km, stansiyalar orasidagi masofa esa 25 km. Ikkala qamrov ichida qoladigan hudud chegarasining eng katta kengligi necha kilometr?",
+      "v": [
+        "12 km",
+        "24 km",
+        "35 km",
+        "5 km"
+      ],
+      "t": 1,
+      "izoh": "Bu kenglik umumiy vatarga teng. 25² = 15² + 20² bo'lgani uchun markazlar uchburchagi to'g'ri burchakli. Gipotenuzaga tushirilgan balandlik (15 · 20) : 25 = 12 km, u vatarning yarmi, demak to'liq vatar 24 km.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='96' cy='150' r='54' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='186' cy='150' r='72' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='96' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Ccircle cx='186' cy='150' r='2.5' fill='%23334155' stroke='none'/%3E%3Cline x1='128.4' y1='106.8' x2='128.4' y2='193.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='135.4' y='122.8' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='96' y1='150' x2='186' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='141' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E25 km%3C/text%3E%3Cline x1='96' y1='150' x2='62.8' y2='107.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='74.4' y='125.7' font-size='13' fill='%23334155' text-anchor='end'%3E15 km%3C/text%3E%3Cline x1='186' y1='150' x2='230.3' y2='93.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='213.2' y='118.6' font-size='13' fill='%23334155' text-anchor='start'%3E20 km%3C/text%3E%3Ctext x='96' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₁%3C/text%3E%3Ctext x='186' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3EO₂%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-tahlil",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#84cc4e19"
+    },
+    {
+      "q": "Diametri 60 sm bo'lgan diskka diametri 36 sm bo'lgan ikkita teshik, ular bir-biriga va disk chetiga tegadigan qilib o'yilmoqchi. Bu reja amalga oshadimi?",
+      "v": [
+        "Amalga oshadi, markazlari orasi 36 sm bo'ladi",
+        "Amalga oshadi, markazlari orasi 24 sm bo'ladi",
+        "Amalga oshadi, teshik markazlari disk markaziga to'g'ri keladi",
+        "Amalga oshmaydi, teshiklar bir-birining ustiga tushadi"
+      ],
+      "t": 3,
+      "izoh": "Disk radiusi 30 sm, teshikniki 18 sm. Har bir teshik disk chetiga ichkaridan urinsa, markazi disk markazidan 30 − 18 = 12 sm uzoqda bo'ladi. Eng uzoq holatda ikki teshik markazi orasi 24 sm, teshiklar tegishi uchun esa 36 sm kerak edi. 24 < 36 bo'lgani uchun ular kesishib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-tahlil",
+      "id": "matematika_plan_m17-ikki-aylananing-ozaro-joylashuvi-va#a04b62e2"
+    }
+  ]
+}

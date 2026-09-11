@@ -1,0 +1,582 @@
+{
+  "nom": "[1] belgilangan qism — qahramon holati",
+  "bolim": "Badiiy matn",
+  "savollar": [
+    {
+      "id": "sert_oqi_m82-belgi-1#00a028a9",
+      "q": "[1] bilan belgilangan qismda qahramonning qanday holati ifodalangan?",
+      "v": [
+        "Hech narsadan cho'chimay, xotirjam turgani",
+        "Qo'lga tushishdan qo'rqib, birdan qotib qolgani",
+        "Qo'rquvdan butunlay hushini yo'qotib qo'ygani",
+        "Olmani ololmaganidan qattiq afsuslanib turgani"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — B: belgilangan qismda — «qo'lga tushishdan qo'rqib, birdan qotib qolgani». Qolganlari matndagi tafsilotga tayanmaydi: A — inkor; C — bo'rttirish; D — almashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m82-belgi-1",
+      "teg": [
+        "badiiy/holat",
+        "hikoya/olma",
+        "buzish/inkor",
+        "buzish/borttirish",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma",
+        "belgi": [
+          {
+            "n": 1,
+            "qism": 2,
+            "jumla": 2
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m82-belgi-1#48e666d8",
+      "q": "[1] bilan belgilangan parchadan qanday ma'no anglashilmoqda?",
+      "v": [
+        "Sovuqdan qo'llari titrab turgani",
+        "Hayajonga berilib, ishdan voz kechgani",
+        "Hayajonini yengib, ishga kirishgani",
+        "Hayajondan daraxtga chiqolmay qolgani"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — C: belgilangan qismda — «hayajonini yengib, ishga kirishgani». Qolganlari matndagi tafsilotga tayanmaydi: A — almashtirish; B — inkor; D — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m82-belgi-1",
+      "teg": [
+        "badiiy/holat",
+        "hikoya/olma",
+        "buzish/borttirish",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma",
+        "belgi": [
+          {
+            "n": 1,
+            "qism": 5,
+            "jumla": 1
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m82-belgi-1#5616e3ac",
+      "q": "[1] bilan belgilangan o'rinda qahramon kechinmasi to'g'ri izohlangan javobni toping.",
+      "v": [
+        "Hech qanday uyat tuyg'usini sezmagani",
+        "Havoning issiqligidan yuzi qizargani",
+        "Uyatdan butunlay o'zini yo'qotib qo'ygani",
+        "Uyalish tuyg'usi tanasida sezilib turgani"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — D: belgilangan qismda — «uyalish tuyg'usi tanasida sezilib turgani». Qolganlari matndagi tafsilotga tayanmaydi: A — inkor; B — almashtirish; C — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m82-belgi-1",
+      "teg": [
+        "badiiy/holat",
+        "hikoya/olma",
+        "buzish/borttirish",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma",
+        "belgi": [
+          {
+            "n": 1,
+            "qism": 3,
+            "jumla": 4
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m82-belgi-1#385f0772",
+      "q": "[1] bilan belgilangan qismda qahramonning qanday holati ifodalangan?",
+      "v": [
+        "Rostini aytish bilan yashirish orasida ikkilangani",
+        "Qilgan aybini butunlay esdan chiqarib yuborgani",
+        "Onasining savolini butunlay eshitmay qolgani",
+        "Hech ikkilanmasdan darhol javob berib qo'ygani"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — A: belgilangan qismda — «rostini aytish bilan yashirish orasida ikkilangani». Qolganlari matndagi tafsilotga tayanmaydi: B — bo'rttirish; C — almashtirish; D — inkor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m82-belgi-1",
+      "teg": [
+        "badiiy/holat",
+        "hikoya/olma",
+        "buzish/borttirish",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma",
+        "belgi": [
+          {
+            "n": 1,
+            "qism": 9,
+            "jumla": 1
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m82-belgi-1#4b841030",
+      "q": "[1] bilan belgilangan o'rinda qahramon kechinmasi to'g'ri izohlangan javobni toping.",
+      "v": [
+        "Eslashga urinib, esiga tushira olmagani",
+        "Eslay olmaganidan qattiq iztirobga tushgani",
+        "Hech eslashga urinmay, xatni yopib qo'ygani",
+        "O'sha kunni aniq va tiniq eslab turgani"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — A: belgilangan qismda — «eslashga urinib, esiga tushira olmagani». Qolganlari matndagi tafsilotga tayanmaydi: B — bo'rttirish; C — inkor; D — almashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m82-belgi-1",
+      "teg": [
+        "badiiy/holat",
+        "hikoya/xat",
+        "buzish/inkor",
+        "buzish/almashtirish",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat",
+        "belgi": [
+          {
+            "n": 1,
+            "qism": 9,
+            "jumla": 0
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m82-belgi-1#7219b040",
+      "q": "[1] bilan belgilangan parchadan qanday ma'no anglashilmoqda?",
+      "v": [
+        "Sinfga umuman e'tibor bermay chiqib ketgani",
+        "Ishiga bo'lgan bog'liqligi shu qarashda sezilgani",
+        "Sinfda biror narsasini unutganini eslab qolgani",
+        "Ishdan butunlay bezib, chiqib ketmoqchi bo'lgani"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — B: belgilangan qismda — «ishiga bo'lgan bog'liqligi shu qarashda sezilgani». Qolganlari matndagi tafsilotga tayanmaydi: A — inkor; C — almashtirish; D — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m82-belgi-1",
+      "teg": [
+        "badiiy/holat",
+        "hikoya/xat",
+        "buzish/inkor",
+        "buzish/borttirish",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat",
+        "belgi": [
+          {
+            "n": 1,
+            "qism": 10,
+            "jumla": 2
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m82-belgi-1#d5f39661",
+      "q": "[1] bilan belgilangan qismda qahramonning qanday holati ifodalangan?",
+      "v": [
+        "Charchaganidan qo'li to'xtab qolgani",
+        "Kutilmagan xabardan bir zum qotib qolgani",
+        "Xabardan qattiq larzaga tushib yig'lagani",
+        "Xabarni befarq qabul qilib, ishiga qaytgani"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — B: belgilangan qismda — «kutilmagan xabardan bir zum qotib qolgani». Qolganlari matndagi tafsilotga tayanmaydi: A — almashtirish; C — bo'rttirish; D — inkor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m82-belgi-1",
+      "teg": [
+        "badiiy/holat",
+        "hikoya/xat",
+        "buzish/almashtirish",
+        "buzish/inkor",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat",
+        "belgi": [
+          {
+            "n": 1,
+            "qism": 3,
+            "jumla": 3
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m82-belgi-1#ee70b871",
+      "q": "[1] bilan belgilangan parchadan qanday ma'no anglashilmoqda?",
+      "v": [
+        "O'yga tolib, xayoli o'tmishga ketgani",
+        "Deraza ortidagi shovqindan cho'chigani",
+        "O'ylashdan butunlay bosh tortib qo'ygani",
+        "Xatga umuman e'tibor bermay qo'ygani"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — A: belgilangan qismda — «o'yga tolib, xayoli o'tmishga ketgani». Qolganlari matndagi tafsilotga tayanmaydi: B — almashtirish; C — bo'rttirish; D — inkor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m82-belgi-1",
+      "teg": [
+        "badiiy/holat",
+        "hikoya/xat",
+        "buzish/borttirish",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat",
+        "belgi": [
+          {
+            "n": 1,
+            "qism": 8,
+            "jumla": 3
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m82-belgi-1#c28dbd46",
+      "q": "[1] bilan belgilangan parchadan qanday ma'no anglashilmoqda?",
+      "v": [
+        "Loyning sifatsizligidan noroziligini ochiq bildirib qo'ygani",
+        "Jahli chiqib, ustaxonani o'sha kuniyoq tashlab chiqib ketgani",
+        "Muvaffaqiyatsizlikka mutlaqo befarq qarab, ishda davom etgani",
+        "Muvaffaqiyatsizlikdan jahli chiqib, mehnatini yo'q qilmoqchi bo'lgani"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — D: belgilangan qismda — «muvaffaqiyatsizlikdan jahli chiqib, mehnatini yo'q qilmoqchi bo'lgani». Qolganlari matndagi tafsilotga tayanmaydi: A — almashtirish; B — bo'rttirish; C — inkor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m82-belgi-1",
+      "teg": [
+        "badiiy/holat",
+        "hikoya/kosa",
+        "buzish/almashtirish",
+        "buzish/inkor",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa",
+        "belgi": [
+          {
+            "n": 1,
+            "qism": 3,
+            "jumla": 2
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m82-belgi-1#b11bf083",
+      "q": "[1] bilan belgilangan o'rinda qahramon kechinmasi to'g'ri izohlangan javobni toping.",
+      "v": [
+        "Tokchadagi kosalarni bobo yasagan deb o'ylagani",
+        "Tokchadagi kosalarning ma'nosini birdan anglab yetgani",
+        "Tokchadagi kosalarga umuman e'tibor bermay qo'ygani",
+        "Shu ondan boshlab o'zini tugal usta deb bilgani"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — B: belgilangan qismda — «tokchadagi kosalarning ma'nosini birdan anglab yetgani». Qolganlari matndagi tafsilotga tayanmaydi: A — almashtirish; C — inkor; D — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m82-belgi-1",
+      "teg": [
+        "badiiy/holat",
+        "hikoya/kosa",
+        "buzish/borttirish",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa",
+        "belgi": [
+          {
+            "n": 1,
+            "qism": 8,
+            "jumla": 4
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m82-belgi-1#eae4f6b7",
+      "q": "[1] bilan belgilangan o'rinda qahramon kechinmasi to'g'ri izohlangan javobni toping.",
+      "v": [
+        "Alamdan qattiq kasal bo'lib yotib qolgani",
+        "Uzoq mehnati zoye ketganidan alam chekkani",
+        "O'choqning issig'idan holsizlanib o'tirgani",
+        "Mehnati zoye ketganini darrov unutib yuborgani"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — B: belgilangan qismda — «uzoq mehnati zoye ketganidan alam chekkani». Qolganlari matndagi tafsilotga tayanmaydi: A — bo'rttirish; C — almashtirish; D — inkor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m82-belgi-1",
+      "teg": [
+        "badiiy/holat",
+        "hikoya/kosa",
+        "buzish/borttirish",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa",
+        "belgi": [
+          {
+            "n": 1,
+            "qism": 5,
+            "jumla": 1
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m82-belgi-1#56ee3a96",
+      "q": "[1] bilan belgilangan qismda qahramonning qanday holati ifodalangan?",
+      "v": [
+        "O'z ishiga hech qanday qiziqish bildirmagani",
+        "Kosaning shaklini bobonikiga solishtirib ko'rgani",
+        "O'z qo'li bilan qilgan ishidan quvonib ketgani",
+        "Quvonchdan o'zini butunlay yo'qotib qo'ygani"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — C: belgilangan qismda — «o'z qo'li bilan qilgan ishidan quvonib ketgani». Qolganlari matndagi tafsilotga tayanmaydi: A — inkor; B — almashtirish; D — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m82-belgi-1",
+      "teg": [
+        "badiiy/holat",
+        "hikoya/kosa",
+        "buzish/inkor",
+        "buzish/almashtirish",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa",
+        "belgi": [
+          {
+            "n": 1,
+            "qism": 4,
+            "jumla": 1
+          }
+        ]
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    }
+  ]
+}

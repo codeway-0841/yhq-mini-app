@@ -1,0 +1,216 @@
+{
+  "nom": "46-mavzu. Masala. Elektr Toki",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "O'tkazgichdan 0,5 A tok o'tmoqda. 40 s da o'tkazgichning ko'ndalang kesimidan qancha zaryad o'tadi?",
+      "v": [
+        "20 C",
+        "8 C",
+        "80 C",
+        "0,0125 C"
+      ],
+      "t": 0,
+      "izoh": "q = I·t = 0,5·40 = 20 C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m46-elektr-toki#5067d1d1"
+    },
+    {
+      "q": "Elektr zanjirida tok kuchi 2 A. 3 minutda zanjirdan qancha zaryad o'tadi?",
+      "v": [
+        "360 C",
+        "6 C",
+        "90 C",
+        "36 C"
+      ],
+      "t": 0,
+      "izoh": "t = 3 min = 180 s; q = I·t = 2·180 = 360 C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m46-elektr-toki#0272fe0b"
+    },
+    {
+      "q": "Elektr zanjirdagi o'tkazgichdan 4 minutda 60 C zaryad o'tgan bo'lsa, zanjirdagi tok kuchi nimaga teng?",
+      "v": [
+        "0,25 A",
+        "240 A",
+        "15 A",
+        "4 A"
+      ],
+      "t": 0,
+      "izoh": "t = 4 min = 240 s; I = q/t = 60/240 = 0,25 A",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m46-elektr-toki#b4a2ada0"
+    },
+    {
+      "q": "Elektr zanjirdagi lampochka spiralidan o'tayotgan tok kuchi 0,3 A ga teng. Lampochka spiralidan qancha vaqtda 360 C zaryad o'tadi?",
+      "v": [
+        "20 min",
+        "2 min",
+        "12 min",
+        "108 min"
+      ],
+      "t": 0,
+      "izoh": "t = q/I = 360/0,3 = 1200 s = 20 min",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m46-elektr-toki#f8dddfe2"
+    },
+    {
+      "q": "Elektr zanjirdagi lampochka spiralidan 0,4 A tok o'tmoqda. 5 minutda spiral orqali qancha zaryad o'tadi?",
+      "v": [
+        "120 C",
+        "2 C",
+        "72 C",
+        "12 C"
+      ],
+      "t": 0,
+      "izoh": "t = 5 min = 300 s; q = I·t = 0,4·300 = 120 C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m46-elektr-toki#9ba09f15"
+    },
+    {
+      "q": "Lampochka spiralidan 0,4 A tok o'tmoqda. 5 minutda spiraldan nechta elektron o'tadi?",
+      "v": [
+        "7,5·10²⁰ ta",
+        "7,5·10¹⁹ ta",
+        "1,2·10²⁰ ta",
+        "4,8·10²¹ ta"
+      ],
+      "t": 0,
+      "izoh": "q = I·t = 0,4·300 = 120 C; N = q/e = 120/1,6·10⁻¹⁹ = 7,5·10²⁰ ta",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m46-elektr-toki#a3af763a"
+    },
+    {
+      "q": "Tok kuchi 0,32 A bo'lsa, 0,5 minut davomida o'tkazgichning ko'ndalang kesimidan nechta elektron oqib o'tadi?",
+      "v": [
+        "6·10¹⁹ ta",
+        "6·10¹⁸ ta",
+        "9,6·10¹⁹ ta",
+        "1,2·10²⁰ ta"
+      ],
+      "t": 0,
+      "izoh": "t = 0,5 min = 30 s; q = I·t = 0,32·30 = 9,6 C; N = q/e = 9,6/1,6·10⁻¹⁹ = 6·10¹⁹ ta",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m46-elektr-toki#a02bb800"
+    },
+    {
+      "q": "O'tkazgichdan 0,25 A tok 10 minut davomida o'tdi. O'tgan zaryad miqdorini toping.",
+      "v": [
+        "150 C",
+        "2,5 C",
+        "25 C",
+        "1500 C"
+      ],
+      "t": 0,
+      "izoh": "t = 10 min = 600 s; q = I·t = 0,25·600 = 150 C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m46-elektr-toki#0af0cff6"
+    },
+    {
+      "q": "O'tkazgichdan 48 C zaryad 0,4 A tok kuchida o'tdi. Bu jarayon qancha vaqt davom etgan?",
+      "v": [
+        "120 s",
+        "19,2 s",
+        "12 s",
+        "480 s"
+      ],
+      "t": 0,
+      "izoh": "t = q/I = 48/0,4 = 120 s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m46-elektr-toki#14c2b5aa"
+    },
+    {
+      "q": "O'tkazgichning ko'ndalang kesimidan 30 s da 24 C zaryad o'tsa, tok kuchi qancha?",
+      "v": [
+        "0,8 A",
+        "720 A",
+        "1,25 A",
+        "8 A"
+      ],
+      "t": 0,
+      "izoh": "I = q/t = 24/30 = 0,8 A",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m46-elektr-toki#0249270d"
+    },
+    {
+      "q": "Elektron soat 0,05 A tok iste'mol qiladi. U 1 soatda qancha zaryad o'tkazadi?",
+      "v": [
+        "180 C",
+        "0,05 C",
+        "18 C",
+        "720 C"
+      ],
+      "t": 0,
+      "izoh": "t = 1 soat = 3600 s; q = I·t = 0,05·3600 = 180 C",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m46-elektr-toki#ab9fa990"
+    },
+    {
+      "q": "Tok kuchi 50 mA ga teng. Buni amperlarda ifodalang.",
+      "v": [
+        "0,05 A",
+        "0,5 A",
+        "50 000 A",
+        "5 A"
+      ],
+      "t": 0,
+      "izoh": "1 mA = 0,001 A; 50 mA = 50·0,001 = 0,05 A",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m46-elektr-toki#c0a6df5e"
+    },
+    {
+      "q": "Elektr zanjirdagi lampochkadan 0,5 A tok o'tmoqda. 4 minutda lampochkadan qancha zaryad va nechta elektron o'tadi?",
+      "v": [
+        "120 C; 7,5·10²⁰ ta",
+        "120 C; 1,92·10²¹ ta",
+        "2 C; 1,25·10¹⁹ ta",
+        "72 C; 4,5·10²⁰ ta"
+      ],
+      "t": 0,
+      "izoh": "t = 4 min = 240 s; q = I·t = 0,5·240 = 120 C; N = q/e = 120/1,6·10⁻¹⁹ = 7,5·10²⁰ ta",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m46-elektr-toki#b7538a50"
+    },
+    {
+      "q": "O'tkazgichning ko'ndalang kesimidan 2 minutda 1,5·10²⁰ ta elektron o'tdi. Zanjirdagi tok kuchi qancha?",
+      "v": [
+        "0,2 A",
+        "2 A",
+        "0,1 A",
+        "1,25 A"
+      ],
+      "t": 0,
+      "izoh": "q = N·e = 1,5·10²⁰·1,6·10⁻¹⁹ = 24 C; t = 120 s; I = q/t = 24/120 = 0,2 A",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m46-elektr-toki#bedd9334"
+    }
+  ]
+}

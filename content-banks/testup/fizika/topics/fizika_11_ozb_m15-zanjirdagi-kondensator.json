@@ -1,0 +1,456 @@
+{
+  "nom": "15-mavzu. Zanjirdagi Kondensator",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "O'zgarmas tok zanjiriga kondensator ulansa, zanjirdan tok o'tadimi?",
+      "v": [
+        "Yo'q, chunki kondensator qoplamalari orasi dielektrik bilan ajratilgan",
+        "Ha, doimiy tok o'tadi",
+        "Ha, lekin juda kichik tok o'tadi",
+        "Faqat katta kuchlanishda o'tadi"
+      ],
+      "t": 0,
+      "izoh": "Tajribalar o'zgarmas tok zanjiriga kondensator ulansa, undan tok o'tmasligini ko'rsatadi, chunki kondensator qoplamalari orasi dielektrik bilan ajratilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#8d0d0190"
+    },
+    {
+      "q": "Kondensatorni o'zgaruvchan tok zanjiriga ulansa, zanjirdan tok o'tadimi?",
+      "v": [
+        "Ha, tok o'tadi",
+        "Yo'q, tok o'tmaydi",
+        "Faqat bir marta tok o'tadi",
+        "Faqat ulanish paytida tok o'tadi"
+      ],
+      "t": 0,
+      "izoh": "Kondensatorni o'zgaruvchan tok zanjiriga ulansa, undan tok o'tadi — kondensator davriy ravishda zaryadlanib, razryadlanib turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#02a68f1d"
+    },
+    {
+      "q": "O'zgaruvchan tok zanjirida kondensator orqali tok o'tishining sababi nima?",
+      "v": [
+        "Kondensator davriy ravishda zaryadlanish va qayta zaryadlanish jarayonida zanjirda tok hosil bo'ladi",
+        "Dielektrikdan erkin zaryadlar o'tadi",
+        "Kondensator qoplamalari qisqa tutashadi",
+        "Dielektrik ionlashadi"
+      ],
+      "t": 0,
+      "izoh": "O'zgaruvchan tokda kondensator qoplamalari davriy ravishda zaryadlanib-qayta zaryadlanib turadi, bu jarayon zanjirda o'zgaruvchan tok hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#32081bd2"
+    },
+    {
+      "q": "Kondensator ulangan zanjirda tok kuchining amplituda qiymati qanday aniqlanadi?",
+      "v": [
+        "Im = Um·C·ω",
+        "Im = Um/(C·ω)",
+        "Im = Um·C/ω",
+        "Im = Um·ω/C"
+      ],
+      "t": 0,
+      "izoh": "Kondensator ulangan zanjirda tok kuchining amplitudasi Im = Um·Cω ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#0a821f0f"
+    },
+    {
+      "q": "Faqat kondensator ulangan zanjirda tok kuchi tebranishlari kuchlanish tebranishlaridan faza bo'yicha qanday farq qiladi?",
+      "v": [
+        "π/2 ga oldinga boradi",
+        "π/2 ga orqada qoladi",
+        "π ga orqada qoladi",
+        "Bir xil fazada bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Kondensator ulangan zanjirda tok kuchi tebranishlari kuchlanish tebranishlaridan faza bo'yicha π/2 ga oldinga boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#2462d785"
+    },
+    {
+      "q": "Kondensator ulangan zanjirda tok kuchining tenglamasi qanday?",
+      "v": [
+        "i = Im·cos(ωt + π/2)",
+        "i = Im·cosωt",
+        "i = Im·cos(ωt − π/2)",
+        "i = Im·cos(ωt + π)"
+      ],
+      "t": 0,
+      "izoh": "Kondensatordan o'tuvchi tok kuchining tenglamasi i = Im·cos(ωt + π/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#2e0b1870"
+    },
+    {
+      "q": "Sig'im qarshilik qanday formula bilan aniqlanadi?",
+      "v": [
+        "Xc = 1/(ωC)",
+        "Xc = ωC",
+        "Xc = ω/C",
+        "Xc = C/ω"
+      ],
+      "t": 0,
+      "izoh": "Zanjirdagi kondensatorning sig'im qarshiligi Xc = 1/(ωC).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#7405980a"
+    },
+    {
+      "q": "Sig'im qarshilik qanday birlikda o'lchanadi?",
+      "v": [
+        "Om (Ω) da",
+        "Faradda",
+        "Genrida",
+        "Voltda"
+      ],
+      "t": 0,
+      "izoh": "Sig'im qarshilik ham Ω (Om) larda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#330a34af"
+    },
+    {
+      "q": "Sig'im qarshilik nega reaktiv qarshilik deb ataladi?",
+      "v": [
+        "Chunki u aktiv qarshilik o'rnida turadi, lekin unda energiya issiqlikka aylanmaydi",
+        "Chunki u har doim nolga teng",
+        "Chunki u faqat o'zgarmas tokda namoyon bo'ladi",
+        "Chunki u kuchlanishga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Im = Um/Xc ifoda zanjirning bir qismi uchun Om qonuni bo'lib, aktiv qarshilik o'rnida Xc kattalik turibdi, shuning uchun uni sig'im (reaktiv) qarshilik deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#7a077af0"
+    },
+    {
+      "q": "Kondensatordan o'tuvchi tok kuchi qanday kattaliklarga bog'liq?",
+      "v": [
+        "Kondensator sig'imi va o'zgaruvchan tok chastotasiga",
+        "Faqat kuchlanishga",
+        "Faqat qoplamalar yuzasiga",
+        "Faqat simlar uzunligiga"
+      ],
+      "t": 0,
+      "izoh": "Kondensatordan o'tuvchi tok kuchi kondensator sig'imi va o'zgaruvchan tok chastotasiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#ed94579f"
+    },
+    {
+      "q": "Sig'im va chastota qancha katta bo'lsa, zanjir qarshiligi qanday bo'ladi?",
+      "v": [
+        "Shuncha kichik bo'ladi va tok kuchi katta bo'ladi",
+        "Shuncha katta bo'ladi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Sig'im va chastota qancha katta bo'lsa, zanjir qarshiligi shuncha kichik bo'ladi va mos ravishda tok kuchi katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#78e5bb45"
+    },
+    {
+      "q": "Xc = 1/(2πvC) formulada v nimani bildiradi?",
+      "v": [
+        "O'zgaruvchan tok chastotasini",
+        "Tok kuchini",
+        "Kuchlanishni",
+        "Tezlikni"
+      ],
+      "t": 0,
+      "izoh": "v — o'zgaruvchan tok chastotasi, ω = 2πv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#8c3c2d87"
+    },
+    {
+      "q": "Chastotasi 50 Gz bo'lgan o'zgaruvchan tok zanjiriga sig'imi 50 μF bo'lgan kondensator ulangan. Sig'im qarshilik taxminan qancha?",
+      "v": [
+        "63,7 Ω",
+        "50 Ω",
+        "100 Ω",
+        "31,8 Ω"
+      ],
+      "t": 0,
+      "izoh": "Xc = 1/(2πvC) = 1/(2·3,14·50·50·10⁻⁶) ≈ 63,69 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#8847a3cb"
+    },
+    {
+      "q": "Kondensator sig'imi 2 marta ortirilsa, sig'im qarshilik qanday o'zgaradi?",
+      "v": [
+        "2 marta kamayadi",
+        "2 marta ortadi",
+        "4 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Xc = 1/(ωC) bo'lgani uchun C 2 marta ortsa, Xc 2 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#d37a2e34"
+    },
+    {
+      "q": "O'zgaruvchan tok chastotasi 2 marta ortirilsa, sig'im qarshilik qanday o'zgaradi?",
+      "v": [
+        "2 marta kamayadi",
+        "2 marta ortadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Xc = 1/(ωC) bo'lgani uchun chastota 2 marta ortsa, Xc 2 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#d41aa88e"
+    },
+    {
+      "q": "Kondensator sig'imi 2 marta ortirilsa, undan o'tuvchi tok kuchi qanday o'zgaradi (kuchlanish o'zgarmasa)?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Im = Um·Cω bo'lgani uchun sig'im 2 marta ortsa, tok kuchi 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#6b6b8e49"
+    },
+    {
+      "q": "Kondensator qoplamalaridagi zaryad qanday ifodalanadi (u = Um·cosωt)?",
+      "v": [
+        "q = C·Um·cosωt",
+        "q = Um·cosωt/C",
+        "q = C/(Um·cosωt)",
+        "q = Um·ω·cosωt"
+      ],
+      "t": 0,
+      "izoh": "Kondensatordagi kuchlanish u = q/C bo'lgani uchun q = C·Um·cosωt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#286c2278"
+    },
+    {
+      "q": "Kondensator ulangan zanjirning vektor diagrammasida tok kuchi vektori kuchlanish vektoriga nisbatan qanday joylashadi?",
+      "v": [
+        "π/2 burchakka oldinga siljigan",
+        "π/2 burchakka orqada",
+        "Parallel",
+        "Qarama-qarshi yo'nalgan"
+      ],
+      "t": 0,
+      "izoh": "Vektor diagrammada tok kuchi vektori kuchlanish vektoridan π/2 ga oldinga bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#6c178d7d"
+    },
+    {
+      "q": "Kondensator uchun Om qonuni qanday ko'rinishda yoziladi?",
+      "v": [
+        "Im = Um/Xc",
+        "Im = Um·Xc",
+        "Im = Xc/Um",
+        "Im = Um/Xc²"
+      ],
+      "t": 0,
+      "izoh": "Im = Um/Xc — bu ifoda zanjirning bir qismi uchun Om qonuni hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#635f218b"
+    },
+    {
+      "q": "Kondensator nima uchun o'zgarmas tokda zanjirni uzilgan qiladi?",
+      "v": [
+        "Chunki qoplamalar orasidagi dielektrikdan erkin zaryadlar o'ta olmaydi",
+        "Chunki kondensator juda katta qarshilikka ega",
+        "Chunki kondensator portlab ketadi",
+        "Chunki tok yo'nalishi o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas tokda kondensator qoplamalari zaryadlanib bo'lingach, dielektrikdan zaryadlar o'ta olmaydi va zanjirda tok to'xtaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#00695a52"
+    },
+    {
+      "q": "Chastota nolga yaqinlashganda (o'zgarmas tokga yaqin) sig'im qarshilik qanday bo'ladi?",
+      "v": [
+        "Cheksiz katta bo'ladi (tok o'tmaydi)",
+        "Nolga teng bo'ladi",
+        "O'zgarmas qoladi",
+        "Kichrayadi"
+      ],
+      "t": 0,
+      "izoh": "Xc = 1/(ωC) bo'lgani uchun ω → 0 da Xc cheksiz katta bo'ladi — o'zgarmas tok kondensatordan o'tmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#53a95ca0"
+    },
+    {
+      "q": "Juda yuqori chastotalarda kondensatorning sig'im qarshiligi qanday bo'ladi?",
+      "v": [
+        "Nolga yaqinlashadi (kondensator tokga deyarli qarshilik ko'rsatmaydi)",
+        "Cheksiz oshadi",
+        "O'zgarmas qoladi",
+        "Salbiy bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "ω juda katta bo'lganda Xc = 1/(ωC) nolga yaqinlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#1687883a"
+    },
+    {
+      "q": "Kondensator ulangan zanjirda kuchlanish u = Um·cosωt bo'lsa, qaysi momentda tok kuchi maksimal bo'ladi?",
+      "v": [
+        "Kuchlanish nolga teng bo'lgan momentda",
+        "Kuchlanish maksimal bo'lgan momentda",
+        "Kuchlanish o'rtacha qiymatda bo'lgan momentda",
+        "Istalgan momentda"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi kuchlanishdan π/2 ga oldinga bo'lgani uchun kuchlanish nolga teng bo'lgan momentda tok maksimal qiymatga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#5d7803e8"
+    },
+    {
+      "q": "Sig'imi 100 μF bo'lgan kondensator 50 Gz chastotali zanjirga ulangan. Sig'im qarshilik taxminan qancha?",
+      "v": [
+        "31,8 Ω",
+        "63,7 Ω",
+        "100 Ω",
+        "15,9 Ω"
+      ],
+      "t": 0,
+      "izoh": "Xc = 1/(2π·50·100·10⁻⁶) = 1/(0,0314) ≈ 31,8 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#f1dd1574"
+    },
+    {
+      "q": "Kondensatorning o'zgaruvchan tok zanjiridagi asosiy vazifasi nima?",
+      "v": [
+        "Zanjirga sig'im (reaktiv) qarshilik kiritish va faza siljishi hosil qilish",
+        "Energiyani issiqlikka aylantirish",
+        "Tokni to'g'rilash",
+        "Kuchlanishni oshirish"
+      ],
+      "t": 0,
+      "izoh": "Kondensator o'zgaruvchan tok zanjirida sig'im qarshilik kiritadi va tok kuchini kuchlanishdan π/2 fazaga siljitadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#7b3b9917"
+    },
+    {
+      "q": "Kondensator qoplamalaridagi kuchlanish va zaryad tebranishlari qanday fazada bo'ladi?",
+      "v": [
+        "Bir xil fazada (U = q/C)",
+        "π/2 fazada farq bilan",
+        "π fazada farq bilan",
+        "Tasodifiy fazada"
+      ],
+      "t": 0,
+      "izoh": "U = q/C bo'lgani uchun kuchlanish va zaryad bir xil fazada o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#c2f856b0"
+    },
+    {
+      "q": "Xc ifodasidagi ω nimani anglatadi?",
+      "v": [
+        "Siklik (burchak) chastotani, ω = 2πv",
+        "Oddiy chastotani",
+        "Tebranish davrini",
+        "Fazani"
+      ],
+      "t": 0,
+      "izoh": "ω — siklik (burchak) chastota bo'lib, ω = 2πv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#02791c85"
+    },
+    {
+      "q": "1 μF sig'imli kondensatorning 1000 Gz chastotadagi sig'im qarshiligi taxminan qancha?",
+      "v": [
+        "159 Ω",
+        "15,9 Ω",
+        "1590 Ω",
+        "1,59 Ω"
+      ],
+      "t": 0,
+      "izoh": "Xc = 1/(2π·1000·10⁻⁶) = 1/(6,28·10⁻³) ≈ 159 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#6c28635d"
+    },
+    {
+      "q": "Kondensator va rezistor o'zgaruvchan tok zanjirida qanday farq qiladi?",
+      "v": [
+        "Kondensatorda faza siljishi π/2, rezistorda faza siljishi nol",
+        "Kondensatorda faza siljishi nol, rezistorda π/2",
+        "Ikkalasida ham faza siljishi π/2",
+        "Ikkalasida ham faza siljishi nol"
+      ],
+      "t": 0,
+      "izoh": "Kondensator ulangan zanjirda tok kuchlanishdan π/2 ga oldinga boradi, aktiv qarshilikda esa faza siljishi nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#5c8a951f"
+    },
+    {
+      "q": "Kondensator sig'imi birligi qanday?",
+      "v": [
+        "Farad (F)",
+        "Genri (Gn)",
+        "Om (Ω)",
+        "Kulon (Kl)"
+      ],
+      "t": 0,
+      "izoh": "Kondensator sig'imi Farad (F) larda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m15-zanjirdagi-kondensator#2823412b"
+    }
+  ]
+}

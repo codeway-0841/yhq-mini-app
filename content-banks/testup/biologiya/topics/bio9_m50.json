@@ -1,0 +1,531 @@
+{
+  "nom": "Biologiya-9, 50-§. Di-poliduragay chatishtirish. Mendelning uchinchi qonuni, 138-bet",
+  "bolim": "VII BOB. Genetika asoslari",
+  "savollar": [
+    {
+      "q": "Ikki va undan ortiq belgilarning irsiylanish qonuniyatlarini qanday chatishtirish orqali oʻrganish mumkin?",
+      "v": [
+        "Diduragay va poliduragay chatishtirish",
+        "Faqat monoduragay chatishtirish",
+        "Faqat tahliliy chatishtirish",
+        "Vegetativ koʻpaytirish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ikki va undan ortiq belgilarni irsiylanish qonuniyatlarini diduragay va poliduragay chatishtirish orqali oʻrganish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m50#ec539d13"
+    },
+    {
+      "q": "Diduragay yoki poliduragay chatishtirish deb nimaga aytiladi?",
+      "v": [
+        "Ikki yoki undan ortiq juft belgilari bilan farq qiladigan ota-ona organizmlarni oʻzaro chatishtirishga",
+        "Bir juft belgisi bilan farq qiladigan organizmlarni chatishtirishga",
+        "Faqat retsessiv organizmlarni chatishtirishga",
+        "Organizmni oʻzi bilan chatishtirishga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra diduragay yoki poliduragay chatishtirish deb, ikki yoki undan ortiq juft belgilari bilan farq qiladigan ota-ona organizmlarni oʻzaro chatishtirishga aytiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m50#c4d68a26"
+    },
+    {
+      "q": "Mendel diduragay chatishtirishni tekshirish uchun noʻxatning nechta juft belgisidan foydalangan?",
+      "v": [
+        "Ikki juft belgi",
+        "Bir juft belgi",
+        "Uch juft belgi",
+        "Toʻrt juft belgi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Mendel diduragay chatishtirishni tekshirish uchun ikki juft belgisi bilan farq qiladigan noʻxat oʻsimliklarini chatishtirgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#1f887bf6"
+    },
+    {
+      "q": "Mendel diduragay chatishtirishda noʻxatning qaysi ikki juft belgisini kuzatgan?",
+      "v": [
+        "Don rangi (sariq va yashil) hamda shakli (silliq va burishgan)",
+        "Poya uzunligi va gultojibarg rangi",
+        "Meva shakli va urugʻ soni",
+        "Ildiz uzunligi va barg rangi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Mendel don rangi (sariq va yashil) va shakli (silliq va burishgan) boʻlgan noʻxatni chatishtirgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#65001e76"
+    },
+    {
+      "q": "Noʻxat donining qaysi belgilari dominant hisoblanadi?",
+      "v": [
+        "Sariq rang (A) va silliq shakl (B)",
+        "Yashil rang (a) va burishgan shakl (b)",
+        "Sariq rang (A) va burishgan shakl (b)",
+        "Yashil rang (a) va silliq shakl (B)"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra noʻxat donining sariq rangi (A) va silliq shakli (B) dominant belgidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#7853a563"
+    },
+    {
+      "q": "Noʻxat donining qaysi belgilari retsessiv hisoblanadi?",
+      "v": [
+        "Yashil rang (a) va burishgan shakl (b)",
+        "Sariq rang (A) va silliq shakl (B)",
+        "Sariq rang (A) va burishgan shakl (b)",
+        "Yashil rang (a) va silliq shakl (B)"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra noʻxat donining yashil rangi (a) va burishgan shakli (b) retsessivdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#dc4573a1"
+    },
+    {
+      "q": "Gomozigota ota-ona noʻxat oʻsimligi qanday gametalar hosil qiladi?",
+      "v": [
+        "Bir tipdagi gametalarni",
+        "Toʻrt tipdagi gametalarni",
+        "Ikki tipdagi gametalarni",
+        "Sakkiz tipdagi gametalarni"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra har bir gomozigota oʻsimlik bir tipdagi gametalarni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#1a1d02f0"
+    },
+    {
+      "q": "Sariq-silliq va yashil-burishgan gomozigota ota-onalar chatishtirilganda F1 nasl qanday boʻladi?",
+      "v": [
+        "Barchasi bir xil — sariq-silliq",
+        "Barchasi yashil-burishgan",
+        "9:3:3:1 nisbatda ajraladi",
+        "Yarmi sariq, yarmi yashil"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra gomozigota gametalarning qoʻshilishidan olingan naslning (F1) barchasi bir xil, yaʼni sariq-silliq boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#b5b6c243"
+    },
+    {
+      "q": "Birinchi boʻgʻin duragaylarida har juft allel genlardan nechtasi gametaga tushadi?",
+      "v": [
+        "Faqat bittasi",
+        "Ikkitasi",
+        "Toʻrttasi",
+        "Uchtasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra birinchi boʻgʻin duragaylarida har juft allel genlardan faqat bittasi gametalarga tushib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#64f698d7"
+    },
+    {
+      "q": "AaBb genotipli F1 duragay qanday tipdagi gametalar hosil qiladi?",
+      "v": [
+        "AB, Ab, aB, ab — har biri 25 % dan",
+        "Faqat AB va ab",
+        "Faqat AB",
+        "AB, Ab, aB, ab, AA, bb"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra statistik qonuniyat boʻyicha har bir F1 duragayda toʻrt xilda 25 % dan — AB, Ab, aB, ab gametalar hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m50#147da1d6"
+    },
+    {
+      "q": "F1 duragayda toʻrt xil gametaning har biri qancha ulushda hosil boʻladi?",
+      "v": [
+        "25 % dan",
+        "50 % dan",
+        "10 % dan",
+        "75 % dan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra har bir F1 duragayda toʻrt xilda 25 % dan gametalar hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#c84fd9f4"
+    },
+    {
+      "q": "Gametalarning tasodifan uchrashishidan hosil boʻlgan zigotalarni osongina aniqlash uchun qaysi usuldan foydalaniladi?",
+      "v": [
+        "Pennet katakchasi",
+        "Mikroskop",
+        "Xromatografiya",
+        "Elektroforez"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra gametalarning qoʻshilishini Pennet katakchasi yordamida osongina aniqlash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#b192eddc"
+    },
+    {
+      "q": "Pennet katakchasida gorizontal boʻyicha nima yoziladi?",
+      "v": [
+        "Bitta organizmning gametalari",
+        "Ikkinchi organizmning gametalari",
+        "Zigotalarning genotipi",
+        "Fenotip nisbatlari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Pennet katakchasiga gorizontal boʻyicha bitta organizm gametalari yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m50#3caec13d"
+    },
+    {
+      "q": "Pennet katakchasining ichiga (kataklar ichiga) nima yoziladi?",
+      "v": [
+        "Gametalar qoʻshilishidan hosil boʻlgan zigotalarning genotipi",
+        "Faqat gametalar",
+        "Fenotip guruhlari nomi",
+        "Ota-ona organizm belgilari"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Pennet katakchalari ichiga gametalar qoʻshilishidan hosil boʻlgan zigotalarning genotipi yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#0f561e09"
+    },
+    {
+      "q": "Diduragay chatishtirishda F2 duragaylar fenotip boʻyicha necha guruhga boʻlinadi?",
+      "v": [
+        "Toʻrtta guruhga",
+        "Ikkita guruhga",
+        "Uchta guruhga",
+        "Beshta guruhga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra duragaylar fenotip boʻyicha toʻrtta guruhga boʻlinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#c5b17b9f"
+    },
+    {
+      "q": "Diduragay chatishtirishda F2 fenotip guruhlaridagi eng koʻp uchraydigan (9 ta) tur qaysi?",
+      "v": [
+        "Sariq silliq",
+        "Yashil silliq",
+        "Sariq burishgan",
+        "Yashil burishgan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra F2da 9 ta sariq silliq, 3 ta yashil silliq, 3 ta sariq burishgan va 1 ta yashil burishgan duragay hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#b879d45b"
+    },
+    {
+      "q": "Diduragay chatishtirishda F2 fenotip guruhlaridan eng kam (1 ta) uchraydigani qaysi?",
+      "v": [
+        "Yashil burishgan",
+        "Sariq silliq",
+        "Yashil silliq",
+        "Sariq burishgan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra F2da 1 ta yashil burishgan duragay hosil boʻladi (9:3:3:1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#13084470"
+    },
+    {
+      "q": "Diduragay chatishtirishda har bir alohida belgi boʻyicha ajralish nisbati qanday boʻladi?",
+      "v": [
+        "3:1",
+        "9:3:3:1",
+        "1:1",
+        "1:2:1"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra har bir belgi boʻyicha sariq don soni yashilga, silliq shakl soni burishganga nisbatan 3:1 boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#d55353be"
+    },
+    {
+      "q": "Diduragay chatishtirishda har juft belgi boshqa juft belgiga qanday munosabatda ajraladi?",
+      "v": [
+        "Boshqa juft belgiga bogʻliq boʻlmagan holda, mustaqil",
+        "Boshqa juft belgiga toʻliq bogʻliq holda",
+        "Faqat dominant belgi bilan birga",
+        "Har doim birga, ajralmasdan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra diduragay chatishtirishda har juft belgi boshqa juft belgilarga bogʻliq boʻlmagan holda, monoduragaydagidek ajralishga uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m50#95348b17"
+    },
+    {
+      "q": "Diduragay chatishtirishda F2 boʻgʻinda fenotip jihatdan nisbat qanday boʻladi?",
+      "v": [
+        "9:3:3:1",
+        "3:1",
+        "1:1:1:1",
+        "1:2:1"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra diduragay chatishtirishda F2 boʻgʻinda fenotip jihatdan nisbat 9:3:3:1 boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#d3ea2ef3"
+    },
+    {
+      "q": "Diduragay chatishtirishda F2 boʻgʻinda genotip jihatdan nisbat qanday boʻladi?",
+      "v": [
+        "1:2:2:4:1:2:1:2:1",
+        "9:3:3:1",
+        "1:2:1",
+        "1:1:1:1"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra diduragay chatishtirishda F2 boʻgʻinda genotip jihatdan nisbat 1:2:2:4:1:2:1:2:1 boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m50#31d89105"
+    },
+    {
+      "q": "Belgilarning mustaqil taqsimlanishi qaysi shartda amalga oshadi?",
+      "v": [
+        "Juft allel genlar har xil gomologik xromosomalarda joylashgan boʻlsa",
+        "Juft allel genlar bitta xromosomada joylashgan boʻlsa",
+        "Barcha genlar retsessiv boʻlsa",
+        "Faqat gomozigota organizmlarda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra belgilarning mustaqil taqsimlanishi juft allel genlar har xil gomologik xromosomalarda joylashgan boʻlsagina amalga oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m50#bdc68326"
+    },
+    {
+      "q": "Mendelning uchinchi qonuni yana qanday nomlanadi?",
+      "v": [
+        "Belgilarning mustaqil holda irsiylanish qonuni",
+        "Belgilar ajralishi qonuni",
+        "Gametalar sofligi qonuni",
+        "Bir xillik qonuni"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Mendelning uchinchi qonuni belgilarning mustaqil holda irsiylanish qonuni deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#a23f9200"
+    },
+    {
+      "q": "Mendelning uchinchi qonuniga koʻra ota-ona organizmlar chatishtirilganda genlar va belgilar qanday irsiylanadi?",
+      "v": [
+        "Bir-biridan mustaqil holda",
+        "Bir-biriga bogʻliq holda",
+        "Faqat dominant belgilar irsiylanadi",
+        "Faqat onaga oʻxshab"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Mendelning uchinchi qonuniga binoan ikki yoki undan ortiq juft muqobil belgi bilan farq qiladigan organizmlar chatishtirilganda genlar va mos belgilar bir-biridan mustaqil holda irsiylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#1afd8437"
+    },
+    {
+      "q": "Poliduragaylarda gametalarning umumiy sonini hisoblash formulasi qanday?",
+      "v": [
+        "2ⁿ (n — geterozigota juft genlar soni)",
+        "n² (n — genlar soni)",
+        "2n (n — xromosomalar soni)",
+        "nⁿ"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra poliduragaylardagi gametalarning umumiy sonini hisoblash formulasi 2ⁿ, bunda n — genotipdagi geterozigota juft genlarning soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m50#a5ba0f26"
+    },
+    {
+      "q": "Aa (monoduragay) geterozigota organizm necha xil gameta hosil qiladi?",
+      "v": [
+        "Ikki xil",
+        "Bir xil",
+        "Toʻrt xil",
+        "Sakkiz xil"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra 2ⁿ formulaga koʻra Aa duragayda ikki xil gameta hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#7c7bfb9d"
+    },
+    {
+      "q": "AaBb diduragay organizm necha xil gameta hosil qiladi?",
+      "v": [
+        "Toʻrt xil",
+        "Ikki xil",
+        "Sakkiz xil",
+        "Oltmish toʻrt xil"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra AaBb duragayda toʻrt xil tipdagi gameta hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#1743fda7"
+    },
+    {
+      "q": "AaBbCc triduragay organizm necha xil gameta hosil qiladi?",
+      "v": [
+        "Sakkiz xil",
+        "Toʻrt xil",
+        "Olti xil",
+        "Oʻn olti xil"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra AaBbCc triduragayda sakkiz xil tipdagi gameta hosil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m50#9739d9ba"
+    },
+    {
+      "q": "Mendelning duragaylash usuli dominant fenotipli organizm haqida nimani aniqlash imkonini bermaydi?",
+      "v": [
+        "Genotipi gomozigota yoki geterozigota ekanligini",
+        "Uning fenotipini",
+        "Ota-onasi kim ekanligini",
+        "Gametalar sonini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra duragaylash usuli dominant genli fenotipli organizmning genotipi gomozigota yoki geterozigota ekanligini aniqlash imkonini bermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m50#e71e9ef2"
+    },
+    {
+      "q": "Noaniq genotipli organizmning genotipini aniqlash uchun uni nima bilan chatishtiriladi?",
+      "v": [
+        "Sof gomozigota holdagi retsessiv organizm bilan",
+        "Sof gomozigota dominant organizm bilan",
+        "Boshqa geterozigota organizm bilan",
+        "Oʻzi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tahliliy chatishtirishda noaniq genotipli organizm sof gomozigota holdagi retsessiv organizm bilan qayta chatishtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#0ff88060"
+    },
+    {
+      "q": "Dominant belgili organizm genotipini aniqlashga qaratilgan chatishtirish qanday nomlanadi?",
+      "v": [
+        "Tahliliy chatishtirish",
+        "Monoduragay chatishtirish",
+        "Poliduragay chatishtirish",
+        "Erkin chatishtirish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra organizmning noaniq genotipini aniqlash uchun oʻtkaziladigan chatishtirish tahliliy chatishtirish deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#8b975250"
+    },
+    {
+      "q": "Ikki juft belgi boʻyicha geterozigota organizmning tahliliy chatishtirishida qanday fenotip nisbat hosil boʻladi?",
+      "v": [
+        "1:1:1:1",
+        "9:3:3:1",
+        "3:1",
+        "1:2:1"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ikki juft belgi boʻyicha geterozigota organizm tahliliy chatishtirilganda toʻrt xil fenotip, nisbat 1:1:1:1 boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m50#2d4828b8"
+    },
+    {
+      "q": "Ikki juft belgi boʻyicha geterozigota organizmning tahliliy chatishtirishidan necha xil fenotip olinadi?",
+      "v": [
+        "Toʻrt xil",
+        "Ikki xil",
+        "Uch xil",
+        "Bir xil"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bunday tahliliy chatishtirishdan olingan duragaylar bir-biridan farq qiladigan toʻrt xildagi fenotipni hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#89531e57"
+    },
+    {
+      "q": "Agar ota-ona organizm bir juft belgisi bilan farq qilsa, ikkinchi boʻgʻinda ajralish nisbati qanday boʻladi?",
+      "v": [
+        "3:1",
+        "9:3:3:1",
+        "1:1",
+        "1:2:2:1"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ota-ona bir juft belgi bilan farq qilsa F2da ajralish 3:1, diduragay chatishtirishda esa 9:3:3:1 nisbatda kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#40f7a652"
+    },
+    {
+      "q": "Urugʻlanish jarayonida gametalarning tasodifan uchrashish ehtimoli qanday boʻladi?",
+      "v": [
+        "Barchasi uchun bir xil boʻladi",
+        "Har bir gameta uchun har xil boʻladi",
+        "Faqat dominant gametalar uchun yuqori",
+        "Faqat retsessiv gametalar uchun past"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra urugʻlanish jarayonida gametalarning tasodifan uchrashish ehtimoli barchasi uchun bir xil boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m50#738df1aa"
+    }
+  ]
+}

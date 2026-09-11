@@ -1,0 +1,456 @@
+{
+  "nom": "05-mavzu. Jism Ogirligining Harakat Turiga Bogliqligi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Jism og'irligi deb nimaga aytiladi?",
+      "v": [
+        "Jismning tayanchga yoki osmaga ko'rsatadigan ta'siriga",
+        "Jismning massasiga",
+        "Yerning jismni tortish kuchiga",
+        "Jismning inersiyasiga"
+      ],
+      "t": 0,
+      "izoh": "Jismning tayanchga yoki osmaga ko'rsatadigan ta'siri jismning og'irligi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#85b1c147"
+    },
+    {
+      "q": "Jism og'irligi qanday asbobda o'lchanadi?",
+      "v": [
+        "Dinamometrda",
+        "Tarozida",
+        "Termometrda",
+        "Manometrda"
+      ],
+      "t": 0,
+      "izoh": "Jismning og'irligi dinamometrda o'lchanadi (tarozida massa o'lchanadi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#0124df83"
+    },
+    {
+      "q": "Jismning massasi qanday asbobda o'lchanadi?",
+      "v": [
+        "Tarozida",
+        "Dinamometrda",
+        "Ampermetrda",
+        "Sekundomerda"
+      ],
+      "t": 0,
+      "izoh": "Odatda tarozida jismlarning massasi o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#512f0a88"
+    },
+    {
+      "q": "Tayanchda tinch turgan jismning og'irligi nimaga teng?",
+      "v": [
+        "P = mg",
+        "P = m(g + a)",
+        "P = m(g − a)",
+        "P = 0"
+      ],
+      "t": 0,
+      "izoh": "Jism tinch turganda og'irligi og'irlik kuchiga teng: P = mg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#a5027bff"
+    },
+    {
+      "q": "Jism og'irligi va og'irlik kuchining farqi nimada?",
+      "v": [
+        "Bu kuchlar turli xil jismlarga qo'yilganligida",
+        "Ularning o'lchov birliklarida",
+        "Ularning formulalarida",
+        "Farqi yo'q, bir xil kattaliklar"
+      ],
+      "t": 0,
+      "izoh": "Jism og'irligi va og'irlik kuchining farqi bu kuchlarning turli xil jismlarga qo'yilganligida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#b77a4fbb"
+    },
+    {
+      "q": "Og'irlik kuchi har doim qaysi jismga ta'sir qiladi?",
+      "v": [
+        "Jismning o'ziga",
+        "Tayanchga",
+        "Osmaga",
+        "Yer sirtiga"
+      ],
+      "t": 0,
+      "izoh": "Og'irlik kuchi har doim jismning o'ziga ta'sir qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#757c8f3c"
+    },
+    {
+      "q": "Jism pastga tekis tezlanuvchan harakat qilganda uning og'irligi qanday topiladi?",
+      "v": [
+        "P = m(g − a)",
+        "P = m(g + a)",
+        "P = mg",
+        "P = 0"
+      ],
+      "t": 0,
+      "izoh": "α = 0° bo'lsa, P = m(g − a): pastga tekis tezlanuvchan yoki yuqoriga tekis sekinlanuvchan harakat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#310c5051"
+    },
+    {
+      "q": "Jism yuqoriga tekis tezlanuvchan harakat qilganda uning og'irligi qanday topiladi?",
+      "v": [
+        "P = m(g + a)",
+        "P = m(g − a)",
+        "P = mg",
+        "P = ma"
+      ],
+      "t": 0,
+      "izoh": "α = 180° bo'lsa, P = m(g + a): yuqoriga tekis tezlanuvchan yoki pastga tekis sekinlanuvchan harakat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#a08676c4"
+    },
+    {
+      "q": "Jism gorizontal yo'nalishda a tezlanish bilan harakat qilsa, uning og'irligi qanday bo'ladi?",
+      "v": [
+        "P = m√(g² + a²)",
+        "P = m(g − a)",
+        "P = m(g + a)",
+        "P = 0"
+      ],
+      "t": 0,
+      "izoh": "α = 90° bo'lsa, P = m√(g² + a²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#23ccff1b"
+    },
+    {
+      "q": "Qavariq ko'prikning eng yuqori nuqtasida harakatlanayotgan avtomobilning og'irligi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi, P < mg",
+        "Ortadi, P > mg",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Ko'prik yuqorisida P = m(g − υ²/R), ya'ni og'irlik kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#a6d29cbc"
+    },
+    {
+      "q": "Qavariq sirt bo'ylab harakatlanayotgan jismning og'irligi qanday formula bilan topiladi?",
+      "v": [
+        "P = m(g − υ²/R)",
+        "P = m(g + υ²/R)",
+        "P = mg",
+        "P = mυ²/R"
+      ],
+      "t": 0,
+      "izoh": "Qavariq sirt yuqorisida P = mg − ma = m(g − υ²/R).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#8dbbd4a7"
+    },
+    {
+      "q": "Samolyotning vertikal tekislikdagi egri chiziqli trayektoriya bo'ylab harakati nima deb ataladi?",
+      "v": [
+        "Nesterov halqasi",
+        "Galiley halqasi",
+        "Nyuton halqasi",
+        "Kavendish halqasi"
+      ],
+      "t": 0,
+      "izoh": "Samolyotning bunday trayektoriya bo'yicha harakati \"Nesterov halqasi\" deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#935e7281"
+    },
+    {
+      "q": "Nesterov halqasining eng quyi nuqtasida uchuvchining og'irligi qanday bo'ladi?",
+      "v": [
+        "P = m(g + υ²/R), ya'ni ortadi",
+        "P = m(g − υ²/R), ya'ni kamayadi",
+        "P = mg, o'zgarmaydi",
+        "P = 0"
+      ],
+      "t": 0,
+      "izoh": "Trayektoriyaning eng quyi nuqtasida P = m(g + υ²/R), og'irlik mυ²/R ga ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#4074086c"
+    },
+    {
+      "q": "Jism botiq sirt bo'ylab harakatlanganda trayektoriyaning eng quyi nuqtasida og'irligi qanday o'zgaradi?",
+      "v": [
+        "mυ²/R ga ortadi",
+        "mυ²/R ga kamayadi",
+        "mg ga kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Botiq sirtning eng quyi nuqtasida og'irlik mυ²/R ga ortadi; jism yuklanish oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#4c49686c"
+    },
+    {
+      "q": "Jism oladigan yuklanish qanday aniqlanadi?",
+      "v": [
+        "Harakat davomidagi og'irligining tinch holdagi og'irligiga nisbati orqali",
+        "Massasining og'irlikka nisbati orqali",
+        "Tezligining vaqtga nisbati orqali",
+        "Tezlanishning massaga nisbati orqali"
+      ],
+      "t": 0,
+      "izoh": "Yuklanish n = P/(mg) = 1 + a/g orqali aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#cd6e421d"
+    },
+    {
+      "q": "Yuklanishning formulasi qaysi?",
+      "v": [
+        "n = 1 + a/g",
+        "n = g/a",
+        "n = a/g",
+        "n = 1 − a/g"
+      ],
+      "t": 0,
+      "izoh": "n = (mg + ma)/(mg) = 1 + a/g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#c7173394"
+    },
+    {
+      "q": "Vaznsizlik holati deb qanday holatga aytiladi?",
+      "v": [
+        "Jismning tayanchga yoki osmaga ko'rsatadigan ta'sir kuchi nolga teng bo'lgan holatga",
+        "Jismning massasi nolga teng bo'lgan holatga",
+        "Jismga og'irlik kuchi ta'sir qilmaydigan holatga",
+        "Jism tinch turgan holatga"
+      ],
+      "t": 0,
+      "izoh": "Jismning tayanchga yoki osmaga ta'siri nolga teng bo'lsa, ya'ni og'irligi yo'qolsa, bu vaznsizlik holatidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#d2e88e05"
+    },
+    {
+      "q": "Qanday jism vaznsizlik holatida bo'ladi?",
+      "v": [
+        "Faqat gravitatsiya kuchi ta'sirida erkin harakat qilayotgan jism",
+        "Faqat tinch turgan jism",
+        "Faqat suvda suzayotgan jism",
+        "Faqat magnit maydondagi jism"
+      ],
+      "t": 0,
+      "izoh": "Faqat gravitatsiya kuchi ta'sirida erkin harakat qilayotgan har qanday jism vaznsizlik holatida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#0741b6eb"
+    },
+    {
+      "q": "Vaznsizlik holatida jismning og'irligi formulasi qanday ko'rinish oladi?",
+      "v": [
+        "P = mg − ma = 0 N",
+        "P = mg + ma",
+        "P = mg",
+        "P = ma"
+      ],
+      "t": 0,
+      "izoh": "Erkin tushishda a = g bo'lgani uchun P = mg − ma = 0 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#40cdfef2"
+    },
+    {
+      "q": "Jism og'irligining o'zgarishi bilan birga uning massasi ham o'zgaradimi?",
+      "v": [
+        "Yo'q, massa o'zgarmaydi",
+        "Ha, massa ham o'zgaradi",
+        "Massa nolga aylanadi",
+        "Massa ikki baravar oshadi"
+      ],
+      "t": 0,
+      "izoh": "Og'irlik harakat turiga bog'liq bo'lsa-da, massa o'zgarmas kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#079a3204"
+    },
+    {
+      "q": "Kosmik kemani orbitaga eltuvchi raketa uchirilganda fazogirning og'irligi qanday o'zgaradi?",
+      "v": [
+        "Ortadi, chunki raketa yuqoriga tezlanish bilan harakatlanadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Darhol nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Raketa yuqoriga tezlanish bilan harakatlanganda P = m(g + a), og'irlik ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#0afeb288"
+    },
+    {
+      "q": "Lift yuqoriga tezlanish bilan harakatlanganda lift ichidagi odamning og'irligi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Yuqoriga tezlanuvchan harakatda P = m(g + a) > mg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#be624007"
+    },
+    {
+      "q": "Lift pastga tezlanish bilan harakatlanganda odamning og'irligi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Ikki baravar ortadi"
+      ],
+      "t": 0,
+      "izoh": "Pastga tezlanuvchan harakatda P = m(g − a) < mg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#640ad70f"
+    },
+    {
+      "q": "Massasi 100 kg bo'lgan yuk 0,3 m/s² tezlanish bilan yuqoriga ko'tarilganda uning og'irligi necha N (g = 10 m/s²)?",
+      "v": [
+        "1030 N",
+        "1000 N",
+        "970 N",
+        "300 N"
+      ],
+      "t": 0,
+      "izoh": "P = m(g + a) = 100·(10 + 0,3) = 1030 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#6b298373"
+    },
+    {
+      "q": "Massasi 100 kg bo'lgan yuk erkin tushganda uning og'irligi necha N?",
+      "v": [
+        "0 N",
+        "1000 N",
+        "980 N",
+        "100 N"
+      ],
+      "t": 0,
+      "izoh": "P = m(g − g) = 0 N — vaznsizlik holati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#af3cba03"
+    },
+    {
+      "q": "Ortiqcha yuklanishda uchuvchi nima his qiladi?",
+      "v": [
+        "Tanasida og'riq sezadi",
+        "Vaznsizlik his qiladi",
+        "Hech narsa his qilmaydi",
+        "Massasining kamayganini sezadi"
+      ],
+      "t": 0,
+      "izoh": "Ortiqcha yuklanishda uchuvchi tanasida og'riq sezadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#3c91057f"
+    },
+    {
+      "q": "Qavariq ko'prik yuqorisida avtomobilning markazga intilma tezlanishi qanday yo'nalgan?",
+      "v": [
+        "Vertikal pastga",
+        "Vertikal yuqoriga",
+        "Harakat yo'nalishida",
+        "Gorizontal qarama-qarshi yo'nalishda"
+      ],
+      "t": 0,
+      "izoh": "Ko'prikning yuqori nuqtasida markazga intilma tezlanish vertikal bo'ylab pastga yo'naladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#b6cb2fbf"
+    },
+    {
+      "q": "Botiq sirtning eng quyi nuqtasida jismning markazga intilma tezlanishi qanday yo'nalgan?",
+      "v": [
+        "Vertikal yuqoriga",
+        "Vertikal pastga",
+        "Harakat yo'nalishida",
+        "Radius bo'ylab tashqariga"
+      ],
+      "t": 0,
+      "izoh": "Trayektoriyaning quyi qismida markazga intilma tezlanish vertikal yuqoriga yo'nalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#b6de614e"
+    },
+    {
+      "q": "Avtomobilning qavariq ko'prikka bosish kuchi qavariq ko'prikning reaksiya kuchiga qanday munosabatda (Nyutonning III qonuni)?",
+      "v": [
+        "Modul jihatidan teng",
+        "Reaksiya kuchidan katta",
+        "Reaksiya kuchidan kichik",
+        "Munosabatsiz"
+      ],
+      "t": 0,
+      "izoh": "Nyutonning III qonuniga asosan P = −N, ya'ni modullar teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#e3108f40"
+    },
+    {
+      "q": "Jism og'irligi nimalar tufayli vujudga keladi?",
+      "v": [
+        "Yerning tortish kuchi ta'siri va jismning harakat turi tufayli",
+        "Faqat jismning massasi tufayli",
+        "Faqat havoning bosimi tufayli",
+        "Faqat ishqalanish kuchi tufayli"
+      ],
+      "t": 0,
+      "izoh": "Jism og'irligi unga Yerning tortish kuchi ta'siri hamda uning harakat turi tufayli vujudga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m05-jism-ogirligining-harakat-turiga-bogliqligi#d1c130a4"
+    }
+  ]
+}

@@ -1,0 +1,1306 @@
+{
+  "nom": "Question tags (isn't it?)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "Your brother is a doctor, ___?",
+      "v": [
+        "is he",
+        "does he",
+        "isn't it",
+        "isn't he"
+      ],
+      "t": 3,
+      "izoh": "is → isn't he (#20).",
+      "qiy": "orta",
+      "id": "ing_b1_m16#08934ced"
+    },
+    {
+      "q": "The children don't like cold soup, ___?",
+      "v": [
+        "don't they",
+        "do they",
+        "aren't they",
+        "are they"
+      ],
+      "t": 1,
+      "izoh": "Inkor gap → tasdiq dum: do they (#112).",
+      "qiy": "orta",
+      "id": "ing_b1_m16#7b605396"
+    },
+    {
+      "q": "You paid the cashier, ___?",
+      "v": [
+        "did you",
+        "don't you",
+        "didn't you",
+        "weren't you"
+      ],
+      "t": 2,
+      "izoh": "O'tmish, yordamchi yo'q → didn't you.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#376aefcf"
+    },
+    {
+      "q": "The film is long, ___?",
+      "v": [
+        "isn't it",
+        "is it",
+        "doesn't it",
+        "isn't film"
+      ],
+      "t": 0,
+      "izoh": "is → isn't it.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#b554f7f1"
+    },
+    {
+      "q": "Could you tell me what time ___?",
+      "v": [
+        "the post office closes",
+        "closes the post office",
+        "does the post office close",
+        "the post office close"
+      ],
+      "t": 0,
+      "izoh": "Ichkarida ega + fe'l, does yo'q (#17).",
+      "qiy": "orta",
+      "id": "ing_b1_m16#4d65c49d"
+    },
+    {
+      "q": "Do you know ___ she likes fish?",
+      "v": [
+        "does she",
+        "what",
+        "do",
+        "if"
+      ],
+      "t": 3,
+      "izoh": "Ha/yo'q savoli — if (#111).",
+      "qiy": "orta",
+      "id": "ing_b1_m16#66b96333"
+    },
+    {
+      "q": "I wonder what time the shop ___.",
+      "v": [
+        "does open",
+        "open",
+        "opens",
+        "does it open"
+      ],
+      "t": 2,
+      "izoh": "does yo'q, fe'l -s: opens.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#c3f56002"
+    },
+    {
+      "q": "Find the mistake in the tag: 'You can swim, can you?'",
+      "v": [
+        "You",
+        "can swim",
+        "can you",
+        "swim"
+      ],
+      "t": 2,
+      "izoh": "Tasdiq gap → inkor dum: can't you.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#af364edd"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "Do you know where is the hospital?",
+        "Do you know where does the hospital?",
+        "Do you know where hospital is?",
+        "Do you know where the hospital is?"
+      ],
+      "t": 3,
+      "izoh": "Ichkarida ega + fe'l (#17).",
+      "qiy": "orta",
+      "id": "ing_b1_m16#21ac92a9"
+    },
+    {
+      "q": "I'm late, ___?",
+      "v": [
+        "are I",
+        "amn't I",
+        "aren't I",
+        "isn't I"
+      ],
+      "t": 2,
+      "izoh": "I am → aren't I.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#d5620edb"
+    },
+    {
+      "q": "Which word should be «if»? 'Do you know does she work here?'",
+      "v": [
+        "Do you know",
+        "does",
+        "she",
+        "work here"
+      ],
+      "t": 1,
+      "izoh": "does → if, fe'l works (#111).",
+      "qiy": "orta",
+      "id": "ing_b1_m16#a067e259"
+    },
+    {
+      "q": "He has finished, ___?",
+      "v": [
+        "has he",
+        "hasn't he",
+        "doesn't he",
+        "didn't he"
+      ],
+      "t": 1,
+      "izoh": "has → hasn't he.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#2af0966e"
+    },
+    {
+      "q": "She works hard, ___?",
+      "v": [
+        "isn't she",
+        "doesn't he",
+        "does she",
+        "doesn't she"
+      ],
+      "t": 3,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#c68d45d9"
+    },
+    {
+      "q": "He plays football, ___?",
+      "v": [
+        "isn't he",
+        "doesn't he",
+        "doesn't she",
+        "does he"
+      ],
+      "t": 1,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#d985aaa5"
+    },
+    {
+      "q": "We know him, ___?",
+      "v": [
+        "do we",
+        "don't they",
+        "don't we",
+        "aren't we"
+      ],
+      "t": 2,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#a15697b2"
+    },
+    {
+      "q": "You don't smoke, ___?",
+      "v": [
+        "don't you",
+        "do they",
+        "do you",
+        "are you"
+      ],
+      "t": 2,
+      "izoh": "Inkor gapdan keyin IJOBIY savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#474dd58a"
+    },
+    {
+      "q": "She doesn't drive, ___?",
+      "v": [
+        "is she",
+        "does he",
+        "doesn't she",
+        "does she"
+      ],
+      "t": 3,
+      "izoh": "Inkor gapdan keyin IJOBIY savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#99d745f0"
+    },
+    {
+      "q": "They don't agree, ___?",
+      "v": [
+        "are they",
+        "don't they",
+        "do they",
+        "do you"
+      ],
+      "t": 2,
+      "izoh": "Inkor gapdan keyin IJOBIY savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#b6df1f5e"
+    },
+    {
+      "q": "He doesn't care, ___?",
+      "v": [
+        "is he",
+        "does he",
+        "doesn't he",
+        "does she"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapdan keyin IJOBIY savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#c796d11f"
+    },
+    {
+      "q": "You went home early, ___?",
+      "v": [
+        "did you",
+        "didn't they",
+        "haven't you",
+        "didn't you"
+      ],
+      "t": 3,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#a64735bb"
+    },
+    {
+      "q": "She called you, ___?",
+      "v": [
+        "haven't she",
+        "did she",
+        "didn't he",
+        "didn't she"
+      ],
+      "t": 3,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#039260bb"
+    },
+    {
+      "q": "They arrived late, ___?",
+      "v": [
+        "did they",
+        "haven't they",
+        "didn't you",
+        "didn't they"
+      ],
+      "t": 3,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#9ca61a2a"
+    },
+    {
+      "q": "He finished it, ___?",
+      "v": [
+        "didn't he",
+        "did he",
+        "didn't she",
+        "haven't he"
+      ],
+      "t": 0,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#369e41a3"
+    },
+    {
+      "q": "We won the game, ___?",
+      "v": [
+        "didn't we",
+        "haven't we",
+        "didn't they",
+        "did we"
+      ],
+      "t": 0,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#4822c7ab"
+    },
+    {
+      "q": "You didn't see it, ___?",
+      "v": [
+        "did you",
+        "have you",
+        "did they",
+        "didn't you"
+      ],
+      "t": 0,
+      "izoh": "Inkor gapdan keyin IJOBIY savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#f74bce24"
+    },
+    {
+      "q": "She didn't come, ___?",
+      "v": [
+        "have she",
+        "did he",
+        "didn't she",
+        "did she"
+      ],
+      "t": 3,
+      "izoh": "Inkor gapdan keyin IJOBIY savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#2a0e8567"
+    },
+    {
+      "q": "They didn't call, ___?",
+      "v": [
+        "didn't they",
+        "have they",
+        "did you",
+        "did they"
+      ],
+      "t": 3,
+      "izoh": "Inkor gapdan keyin IJOBIY savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#0930bb87"
+    },
+    {
+      "q": "You have finished, ___?",
+      "v": [
+        "don't you",
+        "have you",
+        "haven't you",
+        "haven't they"
+      ],
+      "t": 2,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#b3952ebb"
+    },
+    {
+      "q": "She has left, ___?",
+      "v": [
+        "hasn't he",
+        "has she",
+        "doesn't she",
+        "hasn't she"
+      ],
+      "t": 3,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#4f5e918d"
+    },
+    {
+      "q": "They have arrived, ___?",
+      "v": [
+        "haven't they",
+        "have they",
+        "don't they",
+        "haven't you"
+      ],
+      "t": 0,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#2d0ce98a"
+    },
+    {
+      "q": "He has eaten, ___?",
+      "v": [
+        "has he",
+        "hasn't he",
+        "hasn't she",
+        "doesn't he"
+      ],
+      "t": 1,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#b19c9a49"
+    },
+    {
+      "q": "You haven't paid, ___?",
+      "v": [
+        "do you",
+        "have you",
+        "have they",
+        "haven't you"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapdan keyin IJOBIY savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#0be20e7f"
+    },
+    {
+      "q": "She hasn't called, ___?",
+      "v": [
+        "has she",
+        "does she",
+        "has he",
+        "hasn't she"
+      ],
+      "t": 0,
+      "izoh": "Inkor gapdan keyin IJOBIY savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#796b2c1f"
+    },
+    {
+      "q": "You will help me, ___?",
+      "v": [
+        "will you",
+        "don't you",
+        "won't they",
+        "won't you"
+      ],
+      "t": 3,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#93e1ca15"
+    },
+    {
+      "q": "She will come, ___?",
+      "v": [
+        "won't he",
+        "will she",
+        "don't she",
+        "won't she"
+      ],
+      "t": 3,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#50cc0281"
+    },
+    {
+      "q": "They will win, ___?",
+      "v": [
+        "will they",
+        "don't they",
+        "won't they",
+        "won't you"
+      ],
+      "t": 2,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#eb5faf6c"
+    },
+    {
+      "q": "He won't mind, ___?",
+      "v": [
+        "will she",
+        "won't he",
+        "do he",
+        "will he"
+      ],
+      "t": 3,
+      "izoh": "Inkor gapdan keyin IJOBIY savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#4b02a8c2"
+    },
+    {
+      "q": "You won't tell anyone, ___?",
+      "v": [
+        "won't you",
+        "will you",
+        "will they",
+        "do you"
+      ],
+      "t": 1,
+      "izoh": "Inkor gapdan keyin IJOBIY savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#139015c4"
+    },
+    {
+      "q": "You can swim, ___?",
+      "v": [
+        "can't they",
+        "can you",
+        "can't you",
+        "don't you"
+      ],
+      "t": 2,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#97bd3229"
+    },
+    {
+      "q": "She can drive, ___?",
+      "v": [
+        "don't she",
+        "can't he",
+        "can't she",
+        "can she"
+      ],
+      "t": 2,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#9f6b7162"
+    },
+    {
+      "q": "They can wait, ___?",
+      "v": [
+        "don't they",
+        "can they",
+        "can't they",
+        "can't you"
+      ],
+      "t": 2,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#63a6f64d"
+    },
+    {
+      "q": "He can't come, ___?",
+      "v": [
+        "can he",
+        "can she",
+        "can't he",
+        "do he"
+      ],
+      "t": 0,
+      "izoh": "Inkor gapdan keyin IJOBIY savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#625701f1"
+    },
+    {
+      "q": "You can't see it, ___?",
+      "v": [
+        "do you",
+        "can they",
+        "can you",
+        "can't you"
+      ],
+      "t": 2,
+      "izoh": "Inkor gapdan keyin IJOBIY savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#c46a1a49"
+    },
+    {
+      "q": "You should rest, ___?",
+      "v": [
+        "don't you",
+        "shouldn't you",
+        "shouldn't they",
+        "should you"
+      ],
+      "t": 1,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#06b53194"
+    },
+    {
+      "q": "We must go now, ___?",
+      "v": [
+        "mustn't they",
+        "don't we",
+        "must we",
+        "mustn't we"
+      ],
+      "t": 3,
+      "izoh": "Ijobiy gapdan keyin INKOR savol qo'shimchasi keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#39ef838b"
+    },
+    {
+      "q": "Choose the correct question tag sentence. (T1)",
+      "v": [
+        "You are from Tashkent, aren't they?",
+        "You are from Tashkent, don't you?",
+        "You are from Tashkent, are you?",
+        "You are from Tashkent, aren't you?"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#13f1315d"
+    },
+    {
+      "q": "Which sentence has the correct question tag? (T2)",
+      "v": [
+        "She is a teacher, isn't he?",
+        "She is a teacher, doesn't she?",
+        "She is a teacher, isn't she?",
+        "She is a teacher, is she?"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#b8d0df20"
+    },
+    {
+      "q": "Pick the sentence with the right tag. (T3)",
+      "v": [
+        "They are ready, don't they?",
+        "They are ready, aren't you?",
+        "They are ready, are they?",
+        "They are ready, aren't they?"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#46ee05be"
+    },
+    {
+      "q": "Select the correct tag question. (T4)",
+      "v": [
+        "He is late, doesn't he?",
+        "He is late, isn't he?",
+        "He is late, isn't she?",
+        "He is late, is he?"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#ba469a22"
+    },
+    {
+      "q": "Choose the correct question tag sentence. (T5)",
+      "v": [
+        "It is cold today, doesn't it?",
+        "It is cold today, is it?",
+        "It is cold today, isn't it?",
+        "It is cold today, isn't they?"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#a4d4aa74"
+    },
+    {
+      "q": "Which sentence has the correct question tag? (T6)",
+      "v": [
+        "You aren't tired, aren't you?",
+        "You aren't tired, are you?",
+        "You aren't tired, are they?",
+        "You aren't tired, do you?"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#52dd405f"
+    },
+    {
+      "q": "Pick the sentence with the right tag. (T7)",
+      "v": [
+        "She isn't here, isn't she?",
+        "She isn't here, is he?",
+        "She isn't here, does she?",
+        "She isn't here, is she?"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#ad7c8cca"
+    },
+    {
+      "q": "Select the correct tag question. (T8)",
+      "v": [
+        "They aren't students, are they?",
+        "They aren't students, do they?",
+        "They aren't students, aren't they?",
+        "They aren't students, are you?"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#2b35f85c"
+    },
+    {
+      "q": "Choose the correct question tag sentence. (T9)",
+      "v": [
+        "He isn't happy, does he?",
+        "He isn't happy, is he?",
+        "He isn't happy, is she?",
+        "He isn't happy, isn't he?"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#f01038f2"
+    },
+    {
+      "q": "Which sentence has the correct question tag? (T10)",
+      "v": [
+        "It isn't easy, is they?",
+        "It isn't easy, isn't it?",
+        "It isn't easy, does it?",
+        "It isn't easy, is it?"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#c7d3e59c"
+    },
+    {
+      "q": "Pick the sentence with the right tag. (T11)",
+      "v": [
+        "You like tea, don't they?",
+        "You like tea, don't you?",
+        "You like tea, aren't you?",
+        "You like tea, do you?"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#e7ff8a69"
+    },
+    {
+      "q": "Select the correct tag question. (T12)",
+      "v": [
+        "They live here, don't you?",
+        "They live here, aren't they?",
+        "They live here, don't they?",
+        "They live here, do they?"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#e3f66885"
+    },
+    {
+      "q": "Choose the correct question tag sentence. (T13)",
+      "v": [
+        "She works hard, isn't she?",
+        "She works hard, does she?",
+        "She works hard, doesn't he?",
+        "She works hard, doesn't she?"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#74feb9a1"
+    },
+    {
+      "q": "Which sentence has the correct question tag? (T14)",
+      "v": [
+        "He plays football, doesn't she?",
+        "He plays football, isn't he?",
+        "He plays football, does he?",
+        "He plays football, doesn't he?"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#650bc41e"
+    },
+    {
+      "q": "Pick the sentence with the right tag. (T15)",
+      "v": [
+        "We know him, do we?",
+        "We know him, don't they?",
+        "We know him, aren't we?",
+        "We know him, don't we?"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#6fae85fe"
+    },
+    {
+      "q": "Select the correct tag question. (T16)",
+      "v": [
+        "You don't smoke, do you?",
+        "You don't smoke, are you?",
+        "You don't smoke, do they?",
+        "You don't smoke, don't you?"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#fbbe47f4"
+    },
+    {
+      "q": "Choose the correct question tag sentence. (T17)",
+      "v": [
+        "She doesn't drive, is she?",
+        "She doesn't drive, does he?",
+        "She doesn't drive, doesn't she?",
+        "She doesn't drive, does she?"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#5c99f18f"
+    },
+    {
+      "q": "Which sentence has the correct question tag? (T18)",
+      "v": [
+        "They don't agree, don't they?",
+        "They don't agree, do you?",
+        "They don't agree, are they?",
+        "They don't agree, do they?"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#f78ada19"
+    },
+    {
+      "q": "Pick the sentence with the right tag. (T19)",
+      "v": [
+        "He doesn't care, is he?",
+        "He doesn't care, does he?",
+        "He doesn't care, doesn't he?",
+        "He doesn't care, does she?"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#3bb0968d"
+    },
+    {
+      "q": "Select the correct tag question. (T20)",
+      "v": [
+        "You went home early, did you?",
+        "You went home early, didn't they?",
+        "You went home early, didn't you?",
+        "You went home early, haven't you?"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri savol qo'shimchali gapni tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#5ebcb68c"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T1)",
+      "v": [
+        "You are from Tashkent, are you?",
+        "They live here, don't they?",
+        "You aren't tired, are you?",
+        "You are from Tashkent, aren't you?"
+      ],
+      "t": 0,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#e78dcaa5"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T2)",
+      "v": [
+        "She isn't here, is she?",
+        "He is late, is he?",
+        "She is a teacher, isn't she?",
+        "She works hard, doesn't she?"
+      ],
+      "t": 1,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#1d23dfbc"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T3)",
+      "v": [
+        "She isn't here, isn't she?",
+        "They are ready, aren't they?",
+        "They aren't students, are they?",
+        "He plays football, doesn't he?"
+      ],
+      "t": 0,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#e11ae839"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T4)",
+      "v": [
+        "He is late, isn't he?",
+        "We know him, don't we?",
+        "He isn't happy, is he?",
+        "It isn't easy, isn't it?"
+      ],
+      "t": 3,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#3519ae01"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T5)",
+      "v": [
+        "It is cold today, isn't it?",
+        "You don't smoke, do you?",
+        "It isn't easy, is it?",
+        "She works hard, does she?"
+      ],
+      "t": 3,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#b452593d"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T6)",
+      "v": [
+        "You don't smoke, don't you?",
+        "She doesn't drive, does she?",
+        "You aren't tired, are you?",
+        "You like tea, don't you?"
+      ],
+      "t": 0,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#17eacd82"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T7)",
+      "v": [
+        "They live here, don't they?",
+        "They don't agree, do they?",
+        "He doesn't care, doesn't he?",
+        "She isn't here, is she?"
+      ],
+      "t": 2,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#e42ccfe0"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T8)",
+      "v": [
+        "He doesn't care, does he?",
+        "She works hard, doesn't she?",
+        "They aren't students, are they?",
+        "They arrived late, did they?"
+      ],
+      "t": 3,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#9816117e"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T9)",
+      "v": [
+        "He isn't happy, is he?",
+        "You went home early, didn't you?",
+        "He plays football, doesn't he?",
+        "You didn't see it, didn't you?"
+      ],
+      "t": 3,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#9324abff"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T10)",
+      "v": [
+        "You have finished, have you?",
+        "We know him, don't we?",
+        "It isn't easy, is it?",
+        "She called you, didn't she?"
+      ],
+      "t": 0,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#19041831"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T11)",
+      "v": [
+        "He has eaten, has he?",
+        "You don't smoke, do you?",
+        "You like tea, don't you?",
+        "They arrived late, didn't they?"
+      ],
+      "t": 0,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#5a8473f0"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T12)",
+      "v": [
+        "They live here, don't they?",
+        "He finished it, didn't he?",
+        "She doesn't drive, does she?",
+        "You will help me, will you?"
+      ],
+      "t": 3,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#ad3ee628"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T13)",
+      "v": [
+        "We won the game, didn't we?",
+        "She works hard, doesn't she?",
+        "He won't mind, won't he?",
+        "They don't agree, do they?"
+      ],
+      "t": 2,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#150b22b5"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T14)",
+      "v": [
+        "You didn't see it, did you?",
+        "He doesn't care, does he?",
+        "He plays football, doesn't he?",
+        "She can drive, can she?"
+      ],
+      "t": 3,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#4e9bcaca"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T15)",
+      "v": [
+        "She didn't come, did she?",
+        "We know him, don't we?",
+        "You went home early, didn't you?",
+        "You can't see it, can't you?"
+      ],
+      "t": 3,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#30835ea2"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T16)",
+      "v": [
+        "They didn't call, did they?",
+        "There is a problem, is there?",
+        "You don't smoke, do you?",
+        "She called you, didn't she?"
+      ],
+      "t": 1,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#fd7fc9d9"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T17)",
+      "v": [
+        "You have finished, haven't you?",
+        "They arrived late, didn't they?",
+        "You are from Tashkent, are you?",
+        "She doesn't drive, does she?"
+      ],
+      "t": 2,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#f33e6d0e"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T18)",
+      "v": [
+        "He is late, is he?",
+        "She has left, hasn't she?",
+        "He finished it, didn't he?",
+        "They don't agree, do they?"
+      ],
+      "t": 0,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#f5440bcf"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T19)",
+      "v": [
+        "They have arrived, haven't they?",
+        "He doesn't care, does he?",
+        "She isn't here, isn't she?",
+        "We won the game, didn't we?"
+      ],
+      "t": 2,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#e0b2f17c"
+    },
+    {
+      "q": "Which sentence has the WRONG question tag? (T20)",
+      "v": [
+        "He has eaten, hasn't he?",
+        "You went home early, didn't you?",
+        "You didn't see it, did you?",
+        "It isn't easy, isn't it?"
+      ],
+      "t": 3,
+      "izoh": "Noto'g'ri savol qo'shimchali gapni toping.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#73962d5e"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'You are from Tashkent, ...' — ? / you / aren't",
+      "v": [
+        "You are from Tashkent, don't you?",
+        "You are from Tashkent, aren't you?",
+        "You are from Tashkent, are you?",
+        "You are from Tashkent, aren't they?"
+      ],
+      "t": 1,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#b9f1d2e9"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'She is a teacher, ...' — she / ? / isn't",
+      "v": [
+        "She is a teacher, isn't she?",
+        "She is a teacher, is she?",
+        "She is a teacher, doesn't she?",
+        "She is a teacher, isn't he?"
+      ],
+      "t": 0,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#d04d134e"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'They are ready, ...' — aren't / ? / they",
+      "v": [
+        "They are ready, aren't they?",
+        "They are ready, don't they?",
+        "They are ready, aren't you?",
+        "They are ready, are they?"
+      ],
+      "t": 0,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#c0af5707"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'He is late, ...' — isn't / ? / he",
+      "v": [
+        "He is late, doesn't he?",
+        "He is late, isn't she?",
+        "He is late, is he?",
+        "He is late, isn't he?"
+      ],
+      "t": 3,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#a9ca235f"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'It is cold today, ...' — isn't / ? / it",
+      "v": [
+        "It is cold today, is it?",
+        "It is cold today, doesn't it?",
+        "It is cold today, isn't it?",
+        "It is cold today, isn't they?"
+      ],
+      "t": 2,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#ec3fd46a"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'You aren't tired, ...' — you / are / ?",
+      "v": [
+        "You aren't tired, are you?",
+        "You aren't tired, are they?",
+        "You aren't tired, aren't you?",
+        "You aren't tired, do you?"
+      ],
+      "t": 0,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#998846b4"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'She isn't here, ...' — ? / she / is",
+      "v": [
+        "She isn't here, isn't she?",
+        "She isn't here, is she?",
+        "She isn't here, does she?",
+        "She isn't here, is he?"
+      ],
+      "t": 1,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#2b05226f"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'They aren't students, ...' — are / ? / they",
+      "v": [
+        "They aren't students, are you?",
+        "They aren't students, aren't they?",
+        "They aren't students, are they?",
+        "They aren't students, do they?"
+      ],
+      "t": 2,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#4893259c"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'He isn't happy, ...' — he / ? / is",
+      "v": [
+        "He isn't happy, isn't he?",
+        "He isn't happy, is he?",
+        "He isn't happy, is she?",
+        "He isn't happy, does he?"
+      ],
+      "t": 1,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#e7ca5041"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'It isn't easy, ...' — ? / it / is",
+      "v": [
+        "It isn't easy, is it?",
+        "It isn't easy, isn't it?",
+        "It isn't easy, does it?",
+        "It isn't easy, is they?"
+      ],
+      "t": 0,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#e5ab4fd3"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'You like tea, ...' — ? / you / don't",
+      "v": [
+        "You like tea, aren't you?",
+        "You like tea, do you?",
+        "You like tea, don't you?",
+        "You like tea, don't they?"
+      ],
+      "t": 2,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#5e65420c"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'They live here, ...' — they / don't / ?",
+      "v": [
+        "They live here, aren't they?",
+        "They live here, do they?",
+        "They live here, don't you?",
+        "They live here, don't they?"
+      ],
+      "t": 3,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#9b3e678b"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'She works hard, ...' — ? / doesn't / she",
+      "v": [
+        "She works hard, doesn't he?",
+        "She works hard, doesn't she?",
+        "She works hard, does she?",
+        "She works hard, isn't she?"
+      ],
+      "t": 1,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#621004cb"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'He plays football, ...' — he / doesn't / ?",
+      "v": [
+        "He plays football, doesn't he?",
+        "He plays football, isn't he?",
+        "He plays football, doesn't she?",
+        "He plays football, does he?"
+      ],
+      "t": 0,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#969f9c58"
+    },
+    {
+      "q": "Complete with the tag in the correct form: 'We know him, ...' — don't / ? / we",
+      "v": [
+        "We know him, don't we?",
+        "We know him, don't they?",
+        "We know him, do we?",
+        "We know him, aren't we?"
+      ],
+      "t": 0,
+      "izoh": "Savol qo'shimchasini to'g'ri shaklda tuzing.",
+      "qiy": "orta",
+      "id": "ing_b1_m16#654f95ba"
+    }
+  ]
+}

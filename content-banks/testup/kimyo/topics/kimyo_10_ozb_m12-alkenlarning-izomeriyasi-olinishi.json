@@ -1,0 +1,531 @@
+{
+  "nom": "12-mavzu. Alkenlarning izomeriyasi va olinishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Alkenlarda necha xil izomeriya uchraydi?",
+      "v": [
+        "3 xil",
+        "2 xil",
+        "4 xil",
+        "5 xil"
+      ],
+      "t": 0,
+      "izoh": "Darslikda alkenlarda 3 xil izomeriya uchrashi aytilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#5b620bdb"
+    },
+    {
+      "q": "Buten-1 (CH2=CH-CH2-CH3) va 2-metilpropen qanday izomeriya turiga misol bo'ladi?",
+      "v": [
+        "Uglerod zanjirining izomeriyasi",
+        "Qo'shbog'ning holat izomeriyasi",
+        "Geometrik izomeriya",
+        "Golog izomeriyasi"
+      ],
+      "t": 0,
+      "izoh": "Bu moddalar uglerod zanjirining izomeriyasiga misol qilib keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#89a30b7c"
+    },
+    {
+      "q": "Darslikda C5H10 formulali alkenning uglerod zanjiri izomerlari sifatida nechta modda keltirilgan?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "4 ta",
+        "5 ta"
+      ],
+      "t": 0,
+      "izoh": "Penten-1, 2-metilbuten-1 va 3-metilbuten-1 — 3 ta izomer keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#7b6405e5"
+    },
+    {
+      "q": "Qo'shbog'ning holat izomeriyasi nimaga bog'liq bo'lgan izomeriya?",
+      "v": [
+        "Uglerod zanjiridagi qo'shbog'ning o'rniga",
+        "Radikallarning soniga",
+        "Molekulaning massasiga",
+        "Vodorod atomlarining rangiga"
+      ],
+      "t": 0,
+      "izoh": "Uglerod zanjiridagi qo'shbog'ning o'rniga bog'liq izomeriyaga qo'shbog'ning holat izomeriyasi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#5b09263d"
+    },
+    {
+      "q": "Buten-1 va buten-2 qanday izomeriya turiga misol?",
+      "v": [
+        "Qo'shbog'ning holat izomeriyasi",
+        "Uglerod zanjirining izomeriyasi",
+        "Geometrik izomeriya",
+        "Funksional izomeriya"
+      ],
+      "t": 0,
+      "izoh": "Buten-1 va buten-2 qo'shbog'ning holat izomeriyasiga misol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#e35dd316"
+    },
+    {
+      "q": "CH3-CH=CH-CH3 moddaning nomi qanday?",
+      "v": [
+        "Buten-2",
+        "Buten-1",
+        "Penten-2",
+        "2-metilpropen"
+      ],
+      "t": 0,
+      "izoh": "CH3-CH=CH-CH3 — buten-2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#4c8c145a"
+    },
+    {
+      "q": "CH3-CH=CH-CH2-CH3 moddaning nomi qanday?",
+      "v": [
+        "Penten-2",
+        "Penten-1",
+        "Buten-2",
+        "3-metilbuten-1"
+      ],
+      "t": 0,
+      "izoh": "Bu formula penten-2 ga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#c9cd80ea"
+    },
+    {
+      "q": "Geometrik izomeriya nimadan kelib chiqadi?",
+      "v": [
+        "Atomlarning fazoviy konformatsiyasi har xil bo'lishidan",
+        "Atomlarning molekulada o'zaro turli ketma-ketlikda birikkanligidan",
+        "Molekula massasining farq qilishidan",
+        "Radikallar sonining har xilligidan"
+      ],
+      "t": 0,
+      "izoh": "Geometrik izomeriya atomlarning fazoviy konformatsiyasi har xil bo'lishidan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#84e6cf30"
+    },
+    {
+      "q": "Buten-2 molekulasining modelini necha xil tasvirlash mumkin?",
+      "v": [
+        "Ikki xil",
+        "Bir xil",
+        "Uch xil",
+        "To'rt xil"
+      ],
+      "t": 0,
+      "izoh": "Buten-2 molekulasining modelini ikki xil tasvirlash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#9980b45d"
+    },
+    {
+      "q": "Qo'shbog' orqali birikkan uglerod atomlari erkin aylana oladimi?",
+      "v": [
+        "Erkin aylana olmaydi",
+        "Erkin aylanadi",
+        "Faqat qizdirilganda aylanadi",
+        "Faqat suvda aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Qo'shbog' orqali birikkan uglerod atomlari erkin aylana olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#d3401a00"
+    },
+    {
+      "q": "Biror moddaning geometrik izomerlari bo'lishi uchun qanday shart kerak?",
+      "v": [
+        "Qo'shbog' bilan bog'langan ikkala uglerod atomi ikki xil zarracha bilan bog'langan bo'lishi kerak",
+        "Qo'shbog' bilan bog'langan uglerodlar bir xil zarrachalar bilan bog'langan bo'lishi kerak",
+        "Molekulada kamida 6 ta uglerod bo'lishi kerak",
+        "Molekulada halqa bo'lishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Geometrik izomerlar bo'lishi uchun qo'shbog'dagi ikkala uglerod ikki xil zarracha bilan bog'langan bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#e665b6f6"
+    },
+    {
+      "q": "Darslikda sis va trans izomerlari bor deb ko'rsatilgan modda qaysi?",
+      "v": [
+        "Buten-2",
+        "Buten-1",
+        "Eten",
+        "2-metilpropen"
+      ],
+      "t": 0,
+      "izoh": "Buten-2 da sis va trans izomerlari borligi aytilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#e132ff9f"
+    },
+    {
+      "q": "Buten-2 ning sis va trans izomerlarini oson tushunish uchun modda nimaning hosilasi sifatida qaraladi?",
+      "v": [
+        "Etilenning",
+        "Metanning",
+        "Benzolning",
+        "Atsetilenning"
+      ],
+      "t": 0,
+      "izoh": "Buten-2 etilenning hosilasi sifatida qaraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#5ac75043"
+    },
+    {
+      "q": "Dastlabki modda tarkibidagi vodorod atomlarining o'rniga almashayotgan zarrachalar nima deyiladi?",
+      "v": [
+        "O'rinbosarlar",
+        "Radikallar izotoplari",
+        "Katalizatorlar",
+        "Ionlar"
+      ],
+      "t": 0,
+      "izoh": "Vodorod atomlari o'rniga almashayotgan zarrachalar (Cl, Br, J, CH3, C2H5 va boshqalar) o'rinbosarlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#8038f616"
+    },
+    {
+      "q": "Buten-2 misolida o'rinbosarlar qaysi zarrachalar hisoblanadi?",
+      "v": [
+        "Metil radikallari",
+        "Etil radikallari",
+        "Xlor atomlari",
+        "Vodorod atomlari"
+      ],
+      "t": 0,
+      "izoh": "Buten-2 misolida metil radikallari o'rinbosarlar hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#99630d94"
+    },
+    {
+      "q": "O'rinbosarlar qo'shbog'ning bir tomonida (yuqori yoki quyi tarafida) bo'lsa, qanday izomer deyiladi?",
+      "v": [
+        "Sis izomer",
+        "Trans izomer",
+        "Zanjir izomeri",
+        "Holat izomeri"
+      ],
+      "t": 0,
+      "izoh": "O'rinbosarlar qo'shbog'ning bir tomonida bo'lsa sis izomer deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#4506f982"
+    },
+    {
+      "q": "Sis-buten-2 da birinchi uglerod o'rnida qolib, ikkinchi uglerod 180° aylantirilsa, qanday molekula hosil bo'ladi?",
+      "v": [
+        "Trans-buten-2",
+        "Sis-penten-2",
+        "Buten-1",
+        "2-metilpropen"
+      ],
+      "t": 0,
+      "izoh": "180° aylantirish natijasida trans-buten-2 molekulasi hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#dfd37fc8"
+    },
+    {
+      "q": "Sis-buten-2 va trans-buten-2 xossalari bo'yicha qanday moddalar?",
+      "v": [
+        "Xossalari bilan ham farq qiladigan boshqa-boshqa moddalar",
+        "Xossalari bir xil bo'lgan bir xil modda",
+        "Faqat rangi farq qiladigan moddalar",
+        "Faqat hidi farq qiladigan moddalar"
+      ],
+      "t": 0,
+      "izoh": "Sis- va trans-buten-2 xossalari bilan ham farq qiladi, ular boshqa-boshqa moddalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#982c34b3"
+    },
+    {
+      "q": "Penten-2 ni etilenning hosilasi deb qarasak, birinchi ugleroddagi vodorodning o'rmini qaysi radikal egallaydi?",
+      "v": [
+        "Metil radikali",
+        "Etil radikali",
+        "Propil radikali",
+        "Xlor atomi"
+      ],
+      "t": 0,
+      "izoh": "Penten-2 da birinchi ugleroddagi vodorodning o'rmini metil radikali egallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#5aa94dea"
+    },
+    {
+      "q": "Penten-2 da ikkinchi ugleroddagi vodorodning o'rmini qaysi radikal egallaydi?",
+      "v": [
+        "Etil radikali",
+        "Metil radikali",
+        "Brom atomi",
+        "Vinil radikali"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi ugleroddagi vodorodni etil radikali egallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#7fa45edc"
+    },
+    {
+      "q": "Etilen molekulasidagi uchta yoki to'rtta vodorod atomining o'rnini har xil radikallar egallagan bo'lsa, sis- va trans-izomerlarning o'rniga qaysi izomerlar qo'llaniladi?",
+      "v": [
+        "Z va E izomerlar",
+        "Alfa va beta izomerlar",
+        "Orto va para izomerlar",
+        "D va L izomerlar"
+      ],
+      "t": 0,
+      "izoh": "Bunday holda sis- va trans o'rniga Z va E izomerlar qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#4692f173"
+    },
+    {
+      "q": "E harfi qaysi so'zdan olingan va qanday ma'noni bildiradi?",
+      "v": [
+        "Entgegen — qarama-qarshi",
+        "Zusammen — birga",
+        "Etilen — hosila",
+        "Energetik — faol"
+      ],
+      "t": 0,
+      "izoh": "E — entgegen, qarama-qarshi degan ma'noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#cfe414d2"
+    },
+    {
+      "q": "Z harfi qaysi so'zdan olingan va qanday ma'noni bildiradi?",
+      "v": [
+        "Zusammen — birga",
+        "Entgegen — qarama-qarshi",
+        "Zanjir — ketma-ket",
+        "Zich — og'ir"
+      ],
+      "t": 0,
+      "izoh": "Z — zusammen, birga degan ma'noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#a949e20b"
+    },
+    {
+      "q": "Qo'shbog'dagi har ikki uglerodda katta molekulyar massali radikallar bir tomonda bo'lsa, izomer qanday nomlanadi?",
+      "v": [
+        "Z",
+        "E",
+        "Trans",
+        "Sis"
+      ],
+      "t": 0,
+      "izoh": "Katta molekulyar massali radikallar bir tomonda bo'lsa Z, har xil tomonda bo'lsa E deb nomlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#6bddfc8f"
+    },
+    {
+      "q": "(E)-3-metil-4-etilgepten-3 nomidagi E harfi nimani bildiradi?",
+      "v": [
+        "Katta molekulyar massali radikallar qo'shbog'ning har xil tomonida joylashganini",
+        "Katta radikallar bir tomonda joylashganini",
+        "Molekulada etil guruhi yo'qligini",
+        "Qo'shbog'ning 3-ugleroddan ekanini"
+      ],
+      "t": 0,
+      "izoh": "E harfi katta massali radikallarning har xil tomonda joylashganini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#a06e067b"
+    },
+    {
+      "q": "Etilen laboratoriyada qanday olinadi?",
+      "v": [
+        "Etil spirtini konsentrlangan sulfat kislota bilan qizdirish orqali",
+        "Metanni suv bug'i bilan qizdirish orqali",
+        "Benzolni gidrogenlash orqali",
+        "Kalsiy karbidga suv ta'sir ettirish orqali"
+      ],
+      "t": 0,
+      "izoh": "Etilen laboratoriyada etil spirtini (konsentrlangan sulfat kislota bilan) qizdirish bilan olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#b9e919f1"
+    },
+    {
+      "q": "C2H5OH → C2H4 + H2O reaksiyasida etil spirtidan qanday modda ajralib chiqadi?",
+      "v": [
+        "Suv",
+        "Vodorod",
+        "Kislorod",
+        "Karbonat angidrid"
+      ],
+      "t": 0,
+      "izoh": "Etil spirtidan suv ajralib, etilen hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#d6d6dcda"
+    },
+    {
+      "q": "2CH4 → C2H4 + 2H2 reaksiyasida metan oldidagi koeffitsiyent qanday?",
+      "v": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Tenglamada metan oldida 2 koeffitsiyenti turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#cb2f99e3"
+    },
+    {
+      "q": "Etan degidrogenlanganda qanday moddalar hosil bo'ladi?",
+      "v": [
+        "Etilen va vodorod",
+        "Metan va vodorod",
+        "Propen va suv",
+        "Etilen va suv"
+      ],
+      "t": 0,
+      "izoh": "C2H6 → C2H4 + H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#abe0452d"
+    },
+    {
+      "q": "To'yingan uglevodorodlarni degidrogenlash qanday sharoitda boradi?",
+      "v": [
+        "Katalizator ishtirokida, yuqori temperaturada",
+        "Oddiy temperaturada, yorug'likda",
+        "Suvli eritmada, sovutib",
+        "Bosim ostida, katalizatorsiz"
+      ],
+      "t": 0,
+      "izoh": "Degidrogenlash katalizator ishtirokida, yuqori temperaturada amalga oshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#b07aeb62"
+    },
+    {
+      "q": "1,2-dibrompropanga rux (Zn) ta'sir ettirilganda qanday moddalar hosil bo'ladi?",
+      "v": [
+        "Propen va ZnBr2",
+        "Propan va ZnBr2",
+        "Etilen va Br2",
+        "Propen va HBr"
+      ],
+      "t": 0,
+      "izoh": "CH2Br-CHBr-CH3 + Zn → CH2=CH-CH3 + ZnBr2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#3f84e90b"
+    },
+    {
+      "q": "Monogalogenli hosilalarga ishqorning spirtdagi eritmasi ta'sir ettirilganda nima ajralib chiqadi?",
+      "v": [
+        "Vodorod galogenid",
+        "Suv bug'i",
+        "Kislorod",
+        "Galogen"
+      ],
+      "t": 0,
+      "izoh": "Vodorod galogenid ajralib chiqib, alken hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#c427490b"
+    },
+    {
+      "q": "C3H7Cl + KOH(spirt) reaksiyasida qanday alken hosil bo'ladi?",
+      "v": [
+        "Propen",
+        "Etilen",
+        "Buten-1",
+        "Penten"
+      ],
+      "t": 0,
+      "izoh": "C3H7Cl + KOH(spirt) → C3H6 + KCl + H2O; C3H6 — propen.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#fcfb9e54"
+    },
+    {
+      "q": "Spirtning degidratlanishida suv va alken qanday mol nisbatda hosil bo'ladi?",
+      "v": [
+        "Teng mol nisbatda",
+        "1:2 nisbatda",
+        "2:1 nisbatda",
+        "1:3 nisbatda"
+      ],
+      "t": 0,
+      "izoh": "CnH2n+1OH → CnH2n + H2O; suv va alken teng mol nisbatda hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#9d58df17"
+    },
+    {
+      "q": "3,6 g suv necha molni tashkil etadi?",
+      "v": [
+        "0,2 mol",
+        "0,5 mol",
+        "2 mol",
+        "0,36 mol"
+      ],
+      "t": 0,
+      "izoh": "3,6:18=0,2 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m12-alkenlarning-izomeriyasi-olinishi#ab52d2a7"
+    }
+  ]
+}

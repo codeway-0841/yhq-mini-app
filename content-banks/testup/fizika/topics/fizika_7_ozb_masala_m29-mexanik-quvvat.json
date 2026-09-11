@@ -1,0 +1,216 @@
+{
+  "nom": "29-mavzu. Masala. Mexanik Quvvat",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Mashina 600 J ishni 30 s da bajardi. Uning quvvatini toping.",
+      "v": [
+        "20 W",
+        "18 000 W",
+        "0,05 W",
+        "40 W"
+      ],
+      "t": 0,
+      "izoh": "N = A/t = 600/30 = 20 W",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m29-mexanik-quvvat#93441d9e"
+    },
+    {
+      "q": "5 kW necha vattga teng?",
+      "v": [
+        "5 000 W",
+        "500 W",
+        "50 W",
+        "50 000 W"
+      ],
+      "t": 0,
+      "izoh": "1 kW = 1000 W → 5·1000 = 5000 W",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m29-mexanik-quvvat#ebf5756a"
+    },
+    {
+      "q": "0,05 MW necha vattga teng?",
+      "v": [
+        "50 000 W",
+        "5 000 W",
+        "500 W",
+        "500 000 W"
+      ],
+      "t": 0,
+      "izoh": "1 MW = 1 000 000 W → 0,05·1 000 000 = 50 000 W",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m29-mexanik-quvvat#e47d8a42"
+    },
+    {
+      "q": "Quvvati 2 kW bo'lgan changyutkich 0,5 soat ishlatilsa, qancha ish bajaradi?",
+      "v": [
+        "3,6 MJ",
+        "1 MJ",
+        "3 600 MJ",
+        "60 MJ"
+      ],
+      "t": 0,
+      "izoh": "N = 2000 W; t = 0,5·3600 = 1800 s; A = N·t = 2000·1800 = 3 600 000 J = 3,6 MJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m29-mexanik-quvvat#e002b3cc"
+    },
+    {
+      "q": "60 kg massali odam zina bo'ylab 12 m balandlikka 30 s da chiqdi. Uning o'rtacha quvvatini toping. (g = 10 m/s²)",
+      "v": [
+        "240 W",
+        "24 W",
+        "2 400 W",
+        "120 W"
+      ],
+      "t": 0,
+      "izoh": "N = m·g·h/t = 60·10·12/30 = 7 200/30 = 240 W",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m29-mexanik-quvvat#e36a6558"
+    },
+    {
+      "q": "Tortish kuchi 4 kN bo'lgan mashina 90 km/soat tezlik bilan harakatlanmoqda. Uning quvvatini toping.",
+      "v": [
+        "100 kW",
+        "360 kW",
+        "100 000 kW",
+        "10 kW"
+      ],
+      "t": 0,
+      "izoh": "F = 4000 N; υ = 90/3,6 = 25 m/s; N = F·υ = 4000·25 = 100 000 W = 100 kW",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m29-mexanik-quvvat#39361e96"
+    },
+    {
+      "q": "8 kW quvvatli ko'tarish krani yukni ko'tarishda 240 kJ ish bajardi. Ko'tarilish vaqtini toping.",
+      "v": [
+        "30 s",
+        "300 s",
+        "3 s",
+        "1 800 s"
+      ],
+      "t": 0,
+      "izoh": "A = 240 kJ = 240 000 J; N = 8 kW = 8 000 W; t = A/N = 240 000/8 000 = 30 s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m29-mexanik-quvvat#af0cb549"
+    },
+    {
+      "q": "8 kW quvvatli kran qanday massali yukni 0,5 m/s tezlik bilan tekis ko'tara oladi? (g = 10 m/s²)",
+      "v": [
+        "1 600 kg",
+        "16 000 kg",
+        "160 kg",
+        "1,6 kg"
+      ],
+      "t": 0,
+      "izoh": "N = 8000 W; N = m·g·υ → m = N/(g·υ) = 8000/(10·0,5) = 8 000/5 = 1 600 kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m29-mexanik-quvvat#a5c521f1"
+    },
+    {
+      "q": "Mexanizm 300 J umumiy ish sarflab, 240 J foydali ish bajardi. Uning FIK qancha?",
+      "v": [
+        "80 %",
+        "125 %",
+        "40 %",
+        "20 %"
+      ],
+      "t": 0,
+      "izoh": "η = A_foydali/A_umumiy·100% = 240/300·100% = 80%",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m29-mexanik-quvvat#b2287f5d"
+    },
+    {
+      "q": "20 ot kuchi necha vattga teng? (1 ot kuchi ≈ 736 W)",
+      "v": [
+        "14 720 W",
+        "1 472 W",
+        "147 200 W",
+        "736 W"
+      ],
+      "t": 0,
+      "izoh": "N = 20·736 = 14 720 W",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m29-mexanik-quvvat#77ecedd7"
+    },
+    {
+      "q": "Foydali quvvati 50 ot kuchiga teng avtomobil tekis harakatlanib, 30 s da 600 m yo'l bosdi. Uning tortish kuchi qanday? (1 ot kuchi ≈ 736 W)",
+      "v": [
+        "1 840 N",
+        "920 N",
+        "61,33 N",
+        "3 680 N"
+      ],
+      "t": 0,
+      "izoh": "N = 50·736 = 36 800 W; υ = s/t = 600/30 = 20 m/s; F = N/υ = 36 800/20 = 1 840 N",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m29-mexanik-quvvat#9c0ac207"
+    },
+    {
+      "q": "Quvvati 3 kW bo'lgan motor 10 minut ishlaydi. U qancha ish bajaradi? Javobni kJ da bering.",
+      "v": [
+        "1 800 kJ",
+        "30 kJ",
+        "1 800 000 kJ",
+        "18 000 kJ"
+      ],
+      "t": 0,
+      "izoh": "t = 10·60 = 600 s; A = N·t = 3000·600 = 1 800 000 J = 1 800 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m29-mexanik-quvvat#fdfc2795"
+    },
+    {
+      "q": "Mexanizmning foydali quvvati 30 kW, umumiy sarflangan quvvati 40 kW. FIK ni toping.",
+      "v": [
+        "75 %",
+        "133,33 %",
+        "25 %",
+        "10 %"
+      ],
+      "t": 0,
+      "izoh": "η = N_foydali/N_umumiy·100% = 30/40·100% = 75%",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m29-mexanik-quvvat#c51113f4"
+    },
+    {
+      "q": "Kran 500 kg massali yukni 20 m balandlikka 25 s da tekis ko'tardi. Kran dvigatelining foydali quvvatini toping. (g = 10 m/s²)",
+      "v": [
+        "4 kW",
+        "4 000 kW",
+        "40 kW",
+        "0,4 kW"
+      ],
+      "t": 0,
+      "izoh": "N = m·g·h/t = 500·10·20/25 = 100 000/25 = 4 000 W = 4 kW",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m29-mexanik-quvvat#cfbc307f"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Yig'indini ko'paytmaga va ko'paytmani yig'indiga aylantirish",
+  "bolim": "Trigonometriya",
+  "blok": "trig",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Nazira trigonometrik ifodalarni ko'paytmaga aylantirish qoidasini mashq qilmoqda. U sin70° + sin20° yig'indisini ko'paytma ko'rinishida yozsa, qaysi natijani oladi?",
+      "v": [
+        "2·sin45°·cos25°",
+        "2·cos45°·sin25°",
+        "2·sin45°·cos45°",
+        "2·sin90°·cos50°"
+      ],
+      "t": 0,
+      "izoh": "sinα + sinβ = 2·sin((α+β)/2)·cos((α−β)/2) formulasi ishlatiladi. Yarim yig'indi (70° + 20°)/2 = 45°, yarim ayirma (70° − 20°)/2 = 25°. Demak sin70° + sin20° = 2·sin45°·cos25°. Ikkinchi variant ayirma formulasi bilan chalkashtirishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-kopaytma-sinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#e9946f97"
+    },
+    {
+      "q": "sin50° + sin30° yig'indisini ikkita trigonometrik funksiya ko'paytmasi ko'rinishida ifodalang va to'g'ri javobni belgilang.",
+      "v": [
+        "2·sin80°·cos20°",
+        "2·cos40°·sin10°",
+        "2·sin40°·cos40°",
+        "2·sin40°·cos10°"
+      ],
+      "t": 3,
+      "izoh": "Yarim yig'indi (50° + 30°)/2 = 40°, yarim ayirma (50° − 30°)/2 = 10°. Sinuslar yig'indisi formulasiga ko'ra natija 2·sin40°·cos10° bo'ladi. Birinchi variant burchaklarni ikkiga bo'lishni unutgan o'quvchining xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-kopaytma-sinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#7d73fcc9"
+    },
+    {
+      "q": "Tenglama yechishda sin3x + sinx yig'indisini ko'paytmaga aylantirish kerak bo'ldi. Bu yig'indi qaysi ifodaga aynan teng?",
+      "v": [
+        "2·cos2x·sinx",
+        "2·sin2x·cosx",
+        "2·sin2x·cos2x",
+        "sin4x·cos2x"
+      ],
+      "t": 1,
+      "izoh": "Yarim yig'indi (3x + x)/2 = 2x, yarim ayirma (3x − x)/2 = x. Sinuslar yig'indisi formulasi bo'yicha sin3x + sinx = 2·sin2x·cosx. Birinchi variantda sinus bilan kosinus o'rni almashtirilgan, oxirgisida 2 ko'paytuvchi tushib qolgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-kopaytma-sinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#8453a284"
+    },
+    {
+      "q": "Fizika masalasida ikkita tebranishning yig'indisi sin80° + sin40° ko'rinishida chiqdi. Uni ko'paytmaga aylantirgan to'g'ri variantni tanlang.",
+      "v": [
+        "2·sin120°·cos40°",
+        "2·cos60°·sin20°",
+        "2·sin60°·cos60°",
+        "2·sin60°·cos20°"
+      ],
+      "t": 3,
+      "izoh": "Yarim yig'indi (80° + 40°)/2 = 60° va yarim ayirma (80° − 40°)/2 = 20°. Formulaga ko'ra sin80° + sin40° = 2·sin60°·cos20°. Ikkinchi variant ayirma formulasini qo'llash xatosi, birinchisida burchaklar yarimlanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-kopaytma-sinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#a2fac846"
+    },
+    {
+      "q": "sin5α + sin3α yig'indisi qanday ko'paytmaga aylanadi? Javobni yarim yig'indi va yarim ayirma orqali yozing.",
+      "v": [
+        "2·cos4α·sinα",
+        "2·sin4α·cos4α",
+        "2·sin8α·cos2α",
+        "2·sin4α·cosα"
+      ],
+      "t": 3,
+      "izoh": "Yarim yig'indi (5α + 3α)/2 = 4α, yarim ayirma (5α − 3α)/2 = α. Shuning uchun sin5α + sin3α = 2·sin4α·cosα. Uchinchi variant burchaklarni ikkiga bo'lmagan holatga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-kopaytma-sinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#796b15cd"
+    },
+    {
+      "q": "Anvar sin65° − sin25° ayirmasini ko'paytmaga aylantirmoqchi. Qaysi variant bu ayirmaning to'g'ri ko'rinishi bo'ladi?",
+      "v": [
+        "2·sin45°·cos20°",
+        "2·cos45°·sin20°",
+        "2·cos45°·sin45°",
+        "2·cos90°·sin40°"
+      ],
+      "t": 1,
+      "izoh": "sinα − sinβ = 2·cos((α+β)/2)·sin((α−β)/2). Yarim yig'indi 45°, yarim ayirma 20°. Demak ayirma 2·cos45°·sin20° ga teng. Birinchi variant yig'indi formulasi bilan chalkashtirishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-kopaytma-sinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#e06359c4"
+    },
+    {
+      "q": "sin7α − sin3α ayirmasini ko'paytma ko'rinishiga keltiring va to'g'ri natijani ko'rsating.",
+      "v": [
+        "2·cos10α·sin4α",
+        "2·sin5α·cos2α",
+        "2·cos5α·sin2α",
+        "2·cos5α·sin5α"
+      ],
+      "t": 2,
+      "izoh": "Yarim yig'indi (7α + 3α)/2 = 5α, yarim ayirma (7α − 3α)/2 = 2α. Sinuslar ayirmasi formulasidan sin7α − sin3α = 2·cos5α·sin2α chiqadi. Birinchi variantda burchaklar ikkiga bo'linmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-kopaytma-sinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#a5657e30"
+    },
+    {
+      "q": "sin100° − sin20° ayirmasi soddalashtirilganda qaysi ifodaga teng bo'ladi? Yarim yig'indi 60° ekanini hisobga oling.",
+      "v": [
+        "sin40°",
+        "sin60°",
+        "cos40°",
+        "2·sin80°·cos60°"
+      ],
+      "t": 0,
+      "izoh": "sinα − sinβ = 2·cos((α+β)/2)·sin((α−β)/2). Yarim yig'indi (100° + 20°)/2 = 60°, yarim ayirma (100° − 20°)/2 = 40°. Demak ayirma 2·cos60°·sin40° = 2·0,5·sin40° = sin40°. Ikkinchi variant burchaklarni almashtirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-kopaytma-sinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#a20dc29e"
+    },
+    {
+      "q": "Ikki generator kuchlanishi sin3t va sint funksiyalari bilan berilgan. Ularning ayirmasi sin3t − sint ko'paytma sifatida qanday yoziladi?",
+      "v": [
+        "2·sin2t·cost",
+        "2·cos2t·sint",
+        "2·cos2t·sin2t",
+        "2·cos4t·sin2t"
+      ],
+      "t": 1,
+      "izoh": "Yarim yig'indi (3t + t)/2 = 2t, yarim ayirma (3t − t)/2 = t. Ayirma formulasi 2·cos((α+β)/2)·sin((α−β)/2) bo'lgani uchun sin3t − sint = 2·cos2t·sint. Birinchi variantda kosinus va sinus almashtirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-kopaytma-sinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#3cb3cbfa"
+    },
+    {
+      "q": "Ravshan cos50° + cos10° yig'indisini ko'paytmaga aylantirish uchun formulani qo'lladi. To'g'ri bajarilgan natijani tanlang.",
+      "v": [
+        "2·sin30°·sin20°",
+        "−2·sin30°·sin20°",
+        "2·cos60°·cos40°",
+        "2·cos30°·cos20°"
+      ],
+      "t": 3,
+      "izoh": "cosα + cosβ = 2·cos((α+β)/2)·cos((α−β)/2). Yarim yig'indi 30°, yarim ayirma 20°. Natija 2·cos30°·cos20° bo'ladi. Sinusli variantlar ayirma formulasini yig'indiga qo'llash xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-kopaytma-kosinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#facf17a6"
+    },
+    {
+      "q": "cos7α + cosα yig'indisini ko'paytma ko'rinishida yozing. Qaysi variant to'g'ri javob bo'ladi?",
+      "v": [
+        "2·sin4α·sin3α",
+        "−2·sin4α·sin3α",
+        "2·cos4α·cos3α",
+        "2·cos8α·cos6α"
+      ],
+      "t": 2,
+      "izoh": "Yarim yig'indi (7α + α)/2 = 4α, yarim ayirma (7α − α)/2 = 3α. Kosinuslar yig'indisi formulasidan cos7α + cosα = 2·cos4α·cos3α. Sinusli variantlar ayirma formulasidan noto'g'ri ko'chirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-kopaytma-kosinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#fe04009a"
+    },
+    {
+      "q": "Muhandis o'z hisobida cos80° + cos20° yig'indisiga duch keldi. Bu yig'indini ko'paytmaga aylantirgan to'g'ri variantni belgilang.",
+      "v": [
+        "2·cos100°·cos60°",
+        "2·sin50°·sin30°",
+        "2·cos50°·cos30°",
+        "−2·sin50°·sin30°"
+      ],
+      "t": 2,
+      "izoh": "Yarim yig'indi (80° + 20°)/2 = 50° va yarim ayirma (80° − 20°)/2 = 30°. Demak cos80° + cos20° = 2·cos50°·cos30°. Birinchi variantda burchaklar ikkiga bo'linmagan, qolganlarida ayirma formulasi qo'llangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-kopaytma-kosinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#cebaf0a2"
+    },
+    {
+      "q": "cos(x + y) + cos(x − y) yig'indisi soddalashtirilsa, qaysi ko'paytma hosil bo'ladi?",
+      "v": [
+        "2·sinx·siny",
+        "2·cosx·siny",
+        "2·sinx·cosy",
+        "2·cosx·cosy"
+      ],
+      "t": 3,
+      "izoh": "Yarim yig'indi ((x + y) + (x − y))/2 = x, yarim ayirma ((x + y) − (x − y))/2 = y. Kosinuslar yig'indisi formulasi bo'yicha natija 2·cosx·cosy bo'ladi. Birinchi variant sinuslar ko'paytmasi bilan chalkashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-kopaytma-kosinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#b6a4a4c0"
+    },
+    {
+      "q": "Ovoz to'lqinlari modelida cos5t + cos3t yig'indisi uchraydi. Uni ko'paytma ko'rinishiga keltiring va to'g'ri variantni tanlang.",
+      "v": [
+        "2·cos4t·cost",
+        "2·sin4t·sint",
+        "2·cos8t·cos2t",
+        "2·cos4t·cos4t"
+      ],
+      "t": 0,
+      "izoh": "Yarim yig'indi (5t + 3t)/2 = 4t, yarim ayirma (5t − 3t)/2 = t. Demak cos5t + cos3t = 2·cos4t·cost. Ikkinchi variant ayirma formulasiga tegishli, uchinchisida burchaklar yarimlanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-kopaytma-kosinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#5851aaae"
+    },
+    {
+      "q": "cos80° − cos20° ayirmasini ko'paytmaga aylantirganda qaysi ifoda hosil bo'ladi? Ishoraga alohida e'tibor bering.",
+      "v": [
+        "2·sin50°·sin30°",
+        "−2·sin50°·sin30°",
+        "−2·cos50°·cos30°",
+        "−2·sin100°·sin60°"
+      ],
+      "t": 1,
+      "izoh": "cosα − cosβ = −2·sin((α+β)/2)·sin((α−β)/2). Yarim yig'indi 50°, yarim ayirma 30°. Demak natija −2·sin50°·sin30°. Birinchi variantda formuladagi minus ishorasi tushirib qoldirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-kopaytma-kosinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#d689fc2e"
+    },
+    {
+      "q": "cos3x − cos5x ayirmasi qaysi ko'paytmaga teng? Manfiy yarim ayirma ishorani qanday o'zgartirishini hisobga oling.",
+      "v": [
+        "−2·sin4x·sinx",
+        "2·sin4x·sinx",
+        "2·cos4x·cosx",
+        "2·sin8x·sin2x"
+      ],
+      "t": 1,
+      "izoh": "cosα − cosβ = −2·sin((α+β)/2)·sin((α−β)/2). Bu yerda yarim yig'indi 4x, yarim ayirma esa −x. Sinus toq funksiya bo'lgani uchun sin(−x) = −sinx, demak −2·sin4x·(−sinx) = 2·sin4x·sinx. Birinchi variant ishorani tuzatmagan holat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayirma-kopaytma-kosinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#9aff01cb"
+    },
+    {
+      "q": "Ikkita ixtiyoriy burchak uchun cosα − cosβ ayirmasi umumiy holda qaysi ko'paytmaga aylanadi? To'g'ri formulani tanlang.",
+      "v": [
+        "2·sin((α+β)/2)·sin((α−β)/2)",
+        "2·cos((α+β)/2)·cos((α−β)/2)",
+        "−2·sin((α+β)/2)·sin((α−β)/2)",
+        "−2·cos((α+β)/2)·sin((α−β)/2)"
+      ],
+      "t": 2,
+      "izoh": "Kosinuslar ayirmasi formulasi cosα − cosβ = −2·sin((α+β)/2)·sin((α−β)/2) ko'rinishida bo'ladi. Minus ishorasi bu formulaning ajralmas qismi. Ikkinchi variant yig'indi formulasi, oxirgisi esa sinuslar ayirmasiga tegishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-kopaytma-kosinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#e5470fd3"
+    },
+    {
+      "q": "cos(x − y) − cos(x + y) ayirmasi soddalashtirilganda qaysi ifoda hosil bo'lishini aniqlang.",
+      "v": [
+        "2·cosx·cosy",
+        "−2·sinx·siny",
+        "2·sinx·siny",
+        "2·siny·cosx"
+      ],
+      "t": 2,
+      "izoh": "Yarim yig'indi ((x − y) + (x + y))/2 = x, yarim ayirma ((x − y) − (x + y))/2 = −y. Formulaga ko'ra −2·sinx·sin(−y) = 2·sinx·siny. Ikkinchi variantda sinusning toqlik xossasi qo'llanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayirma-kopaytma-kosinus",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#3f2fac05"
+    },
+    {
+      "q": "Dilnoza sin75° + sin15° yig'indisining aniq qiymatini topishi kerak. U to'g'ri hisoblasa, qanday son chiqadi?",
+      "v": [
+        "√6/4",
+        "√2/2",
+        "√3",
+        "√6/2"
+      ],
+      "t": 3,
+      "izoh": "sin75° + sin15° = 2·sin45°·cos30° ko'rinishiga keladi. Bunda sin45° = √2/2 va cos30° = √3/2. Demak 2·(√2/2)·(√3/2) = √6/2. Birinchi variant oldidagi 2 ko'paytuvchini unutish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniq-son-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#3874eb9b"
+    },
+    {
+      "q": "cos15° − cos75° ayirmasining aniq qiymatini hisoblang va to'g'ri javobni ko'rsating.",
+      "v": [
+        "√2/4",
+        "√2/2",
+        "√6/2",
+        "−√2/2"
+      ],
+      "t": 1,
+      "izoh": "cos15° − cos75° = −2·sin45°·sin(−30°) = 2·sin45°·sin30°. Bunda sin45° = √2/2 va sin30° = 0,5. Demak natija 2·(√2/2)·0,5 = √2/2. Oxirgi variant minus ishorasini tuzatmaganlarning xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniq-son-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#dc5f1878"
+    },
+    {
+      "q": "Sinuslar yig'indisi formulasidan foydalanib sin40° + sin20° ifodasining eng sodda ko'rinishini toping.",
+      "v": [
+        "cos10°",
+        "sin10°",
+        "2·cos10°",
+        "cos20°"
+      ],
+      "t": 0,
+      "izoh": "sin40° + sin20° = 2·sin30°·cos10° ko'rinishiga keladi. sin30° = 0,5 bo'lgani uchun 2·0,5·cos10° = cos10°. Uchinchi variant sin30° qiymatini qo'yishni unutganda chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniq-son-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#cf0c9072"
+    },
+    {
+      "q": "Ali cos25° + cos95° yig'indisini soddalashtirdi. Agar u amallarni to'g'ri bajargan bo'lsa, qanday natijaga kelgan?",
+      "v": [
+        "2·cos35°",
+        "cos35°",
+        "sin35°",
+        "cos60°"
+      ],
+      "t": 1,
+      "izoh": "cos25° + cos95° = 2·cos60°·cos35° ko'rinishida yoziladi. cos60° = 0,5, shuning uchun 2·0,5·cos35° = cos35°. Birinchi variant cos60° qiymatini hisobga olmaslik xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniq-son-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#1222ce2c"
+    },
+    {
+      "q": "Meteorologiya jadvalidagi hisobda sin85° − sin35° ayirmasi uchradi. Bu ayirmaning eng sodda ko'rinishi qanday bo'ladi?",
+      "v": [
+        "2·sin25°",
+        "cos25°",
+        "sin25°",
+        "sin60°"
+      ],
+      "t": 2,
+      "izoh": "sin85° − sin35° = 2·cos60°·sin25° ko'rinishiga keltiriladi. cos60° = 0,5, demak 2·0,5·sin25° = sin25°. Birinchi variant koeffitsientni qisqartirmagan, ikkinchisi sinus o'rniga kosinus olgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniq-son-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#2b118cc1"
+    },
+    {
+      "q": "2·sin50°·cos20° ko'paytmasini yig'indi ko'rinishiga aylantiring va to'g'ri variantni belgilang.",
+      "v": [
+        "sin70° − sin30°",
+        "cos70° + cos30°",
+        "sin100° + sin40°",
+        "sin70° + sin30°"
+      ],
+      "t": 3,
+      "izoh": "2·sinα·cosβ = sin(α + β) + sin(α − β) formulasidan foydalanamiz. Bu yerda α = 50°, β = 20°, demak yig'indi sin70° + sin30° bo'ladi. Uchinchi variant burchaklarni ikkiga ko'paytirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-yigindiga-sin-cos",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#49e6c550"
+    },
+    {
+      "q": "sin5x·cos3x ko'paytmasi qaysi yig'indiga teng? Ikkiga bo'lish zarurligini unutmang.",
+      "v": [
+        "sin8x + sin2x",
+        "(sin8x − sin2x)/2",
+        "(sin8x + sin2x)/2",
+        "(cos8x + cos2x)/2"
+      ],
+      "t": 2,
+      "izoh": "2·sinα·cosβ = sin(α + β) + sin(α − β) bo'lgani uchun sinα·cosβ = (sin(α+β) + sin(α−β))/2. α = 5x va β = 3x bo'lsa natija (sin8x + sin2x)/2. Birinchi variant ikkiga bo'lishni unutgan holat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-yigindiga-sin-cos",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#472ba6f2"
+    },
+    {
+      "q": "Elektr zanjiri hisobida 2·sin75°·cos15° ko'paytmasi paydo bo'ldi. Uning aniq son qiymati qanchaga teng?",
+      "v": [
+        "1 + √3/2",
+        "1 − √3/2",
+        "√3/2",
+        "2 + √3"
+      ],
+      "t": 0,
+      "izoh": "2·sin75°·cos15° = sin(75° + 15°) + sin(75° − 15°) = sin90° + sin60°. Bunda sin90° = 1 va sin60° = √3/2. Demak natija 1 + √3/2. Uchinchi variant sin90° hadini tushirib qoldirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-yigindiga-sin-cos",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#6df86852"
+    },
+    {
+      "q": "Doira bo'ylab harakat masalasida 4·sin15°·cos15° ifodasi uchraydi. Uning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "0,5",
+        "1",
+        "2",
+        "√3/2"
+      ],
+      "t": 1,
+      "izoh": "Avval 2·sin15°·cos15° = sin(15° + 15°) + sin(15° − 15°) = sin30° = 0,5 topiladi. Berilgan ifoda bundan ikki barobar katta, ya'ni 4·sin15°·cos15° = 2·0,5 = 1. Birinchi variant ikki barobarga ko'paytirishni unutgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-yigindiga-sin-cos",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#42d6cc28"
+    },
+    {
+      "q": "2·cos75°·cos15° ko'paytmasining aniq qiymatini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "1",
+        "0,5",
+        "√3/2",
+        "0,25"
+      ],
+      "t": 1,
+      "izoh": "2·cosα·cosβ = cos(α − β) + cos(α + β) formulasi qo'llanadi. Bu yerda cos60° + cos90° = 0,5 + 0 = 0,5. Oxirgi variant natijani yana ikkiga bo'lish xatosidan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-yigindiga-cos-cos",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#a60b3d45"
+    },
+    {
+      "q": "cos4x·cos2x ko'paytmasini yig'indi shaklida yozing. Qaysi variant to'g'ri natija hisoblanadi?",
+      "v": [
+        "(cos2x + cos6x)/2",
+        "cos2x + cos6x",
+        "(cos2x − cos6x)/2",
+        "(cos6x + cos8x)/2"
+      ],
+      "t": 0,
+      "izoh": "2·cosα·cosβ = cos(α − β) + cos(α + β), demak cosα·cosβ = (cos(α−β) + cos(α+β))/2. α = 4x va β = 2x bo'lgani uchun (cos2x + cos6x)/2 chiqadi. Uchinchi variant sinuslar ko'paytmasi formulasi bilan chalkashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-yigindiga-cos-cos",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#775e1928"
+    },
+    {
+      "q": "Botanika tajribasi hisobida 2·cos50°·cos10° ifodasi paydo bo'ldi. Uni yig'indiga aylantirgan to'g'ri variantni tanlang.",
+      "v": [
+        "cos40° − 0,5",
+        "cos60° + cos50°",
+        "cos40° + 0,5",
+        "cos40° + cos10°"
+      ],
+      "t": 2,
+      "izoh": "2·cos50°·cos10° = cos(50° − 10°) + cos(50° + 10°) = cos40° + cos60°. cos60° = 0,5 bo'lgani uchun natija cos40° + 0,5. Birinchi variant ikkinchi hadning ishorasini noto'g'ri olgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-yigindiga-cos-cos",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#ff5bf8e6"
+    },
+    {
+      "q": "cos3α·cosα ko'paytmasi yig'indi ko'rinishida qanday yoziladi? Yarim koeffitsientga e'tibor bering.",
+      "v": [
+        "cos2α + cos4α",
+        "(cos2α + cos4α)/2",
+        "(cos4α − cos2α)/2",
+        "(cos3α + cosα)/2"
+      ],
+      "t": 1,
+      "izoh": "cosα·cosβ = (cos(α − β) + cos(α + β))/2 formulasidan foydalanamiz. Bu yerda 3α − α = 2α va 3α + α = 4α. Demak natija (cos2α + cos4α)/2 bo'ladi. Birinchi variant ikkiga bo'lmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-yigindiga-cos-cos",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#b93ec37b"
+    },
+    {
+      "q": "2·sin50°·sin20° ko'paytmasini kosinuslar ayirmasi ko'rinishida yozing va to'g'ri variantni ko'rsating.",
+      "v": [
+        "cos30° + cos70°",
+        "cos70° − cos30°",
+        "cos30° − cos70°",
+        "sin30° − sin70°"
+      ],
+      "t": 2,
+      "izoh": "2·sinα·sinβ = cos(α − β) − cos(α + β) formulasi ishlatiladi. Bu yerda α = 50° va β = 20°, demak natija cos30° − cos70°. Ikkinchi variant hadlar o'rnini almashtirib manfiy qiymat beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-yigindiga-sin-sin",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#0b53b49f"
+    },
+    {
+      "q": "sin7x·sin3x ko'paytmasi qaysi ifodaga teng? Kosinuslar ayirmasi formulasidan foydalaning.",
+      "v": [
+        "(cos4x + cos10x)/2",
+        "cos4x − cos10x",
+        "(cos10x − cos4x)/2",
+        "(cos4x − cos10x)/2"
+      ],
+      "t": 3,
+      "izoh": "sinα·sinβ = (cos(α − β) − cos(α + β))/2 formulasi qo'llanadi. Bu yerda 7x − 3x = 4x va 7x + 3x = 10x. Demak natija (cos4x − cos10x)/2. Ikkinchi variant ikkiga bo'lishni unutgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-yigindiga-sin-sin",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#48370971"
+    },
+    {
+      "q": "Suv sathi tebranishini o'lchashda 2·sin80°·sin40° ifodasi chiqdi. Uning eng sodda ko'rinishi qanday bo'ladi?",
+      "v": [
+        "cos40° − 0,5",
+        "cos40° + 0,5",
+        "cos120° − cos40°",
+        "0,5 − cos40°"
+      ],
+      "t": 1,
+      "izoh": "2·sin80°·sin40° = cos(80° − 40°) − cos(80° + 40°) = cos40° − cos120°. Bunda cos120° = −0,5 bo'lgani uchun cos40° − (−0,5) = cos40° + 0,5. Birinchi variant cos120° ning manfiy ekanini hisobga olmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytma-yigindiga-sin-sin",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#8c74c1b5"
+    },
+    {
+      "q": "sin(α + β)·sin(α − β) ko'paytmasini faqat kosinuslar orqali ifodalang. Qaysi variant to'g'ri javob?",
+      "v": [
+        "(cos2α − cos2β)/2",
+        "(cos2β − cos2α)/2",
+        "(cos2α + cos2β)/2",
+        "cos2β − cos2α"
+      ],
+      "t": 1,
+      "izoh": "sinA·sinB = (cos(A − B) − cos(A + B))/2 formulasidan foydalanamiz. Bu yerda A − B = 2β va A + B = 2α. Demak natija (cos2β − cos2α)/2 bo'ladi. Birinchi variantda ayirma tartibi teskari olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytma-yigindiga-sin-sin",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#5b6e355c"
+    },
+    {
+      "q": "(sin40° + sin20°)/(cos40° + cos20°) kasrini soddalashtiring va uning aniq son qiymatini toping.",
+      "v": [
+        "√3/3",
+        "√3",
+        "1",
+        "√3/2"
+      ],
+      "t": 0,
+      "izoh": "Surat 2·sin30°·cos10°, maxraj esa 2·cos30°·cos10° ko'rinishiga keladi. Umumiy 2·cos10° ko'paytuvchi qisqaradi va sin30°/cos30° = tg30° qoladi. tg30° = √3/3. Ikkinchi variant tg60° bilan chalkashtirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-tangensga",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#4d0cb18b"
+    },
+    {
+      "q": "Nilufar (sin70° + sin20°)/(cos70° + cos20°) ifodasini qisqartirdi. U qanday qiymatga kelgan bo'lishi kerak?",
+      "v": [
+        "√2/2",
+        "1",
+        "√2",
+        "tg25°"
+      ],
+      "t": 1,
+      "izoh": "Suratni 2·sin45°·cos25°, maxrajni 2·cos45°·cos25° deb yozamiz. 2·cos25° qisqargach tg45° qoladi, u esa 1 ga teng. Oxirgi variant yarim ayirmani javob deb olish xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-tangensga",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#0ce5d9e8"
+    },
+    {
+      "q": "(sin3x + sinx)/(cos3x + cosx) kasri qaysi bitta trigonometrik funksiyaga teng bo'lishini aniqlang.",
+      "v": [
+        "ctg2x",
+        "tgx",
+        "tg4x",
+        "tg2x"
+      ],
+      "t": 3,
+      "izoh": "Surat 2·sin2x·cosx, maxraj 2·cos2x·cosx ko'rinishiga keladi. Umumiy 2·cosx ko'paytuvchi qisqargach sin2x/cos2x = tg2x qoladi. Birinchi variant surat va maxrajni almashtirib qo'yish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-tangensga",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#41da889e"
+    },
+    {
+      "q": "(cos20° − cos80°)/(sin80° − sin20°) kasrini soddalashtirib, natijani bitta funksiya ko'rinishida yozing.",
+      "v": [
+        "tg30°",
+        "tg50°",
+        "ctg50°",
+        "tg100°"
+      ],
+      "t": 1,
+      "izoh": "Surat cos20° − cos80° = 2·sin50°·sin30° = sin50°, maxraj sin80° − sin20° = 2·cos50°·sin30° = cos50°. Ularning nisbati sin50°/cos50° = tg50°. Birinchi variant yarim ayirmani javob deb olishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-tangensga",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#27cc6763"
+    },
+    {
+      "q": "Geodezist o'lchov hisobida (sin80° − sin40°)/(cos80° + cos40°) kasriga duch keldi. Bu kasr nimaga teng?",
+      "v": [
+        "tg60°",
+        "ctg20°",
+        "tg20°",
+        "tg40°"
+      ],
+      "t": 2,
+      "izoh": "Surat sin80° − sin40° = 2·cos60°·sin20° = sin20°, maxraj cos80° + cos40° = 2·cos60°·cos20° = cos20°. Nisbat sin20°/cos20° = tg20° bo'ladi. Birinchi variant yarim yig'indi burchagini javob deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-tangensga",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#6ca50400"
+    },
+    {
+      "q": "sin3x + sinx = 0 tenglama ko'paytmaga aylantirilgandan keyin qaysi ikkita sodda tenglamaga ajraladi?",
+      "v": [
+        "sin2x = 0 yoki cosx = 0",
+        "sin4x = 0 yoki cosx = 0",
+        "cos2x = 0 yoki sinx = 0",
+        "sinx = 0 yoki cosx = 1"
+      ],
+      "t": 0,
+      "izoh": "sin3x + sinx = 2·sin2x·cosx bo'lgani uchun tenglama 2·sin2x·cosx = 0 ko'rinishini oladi. Ko'paytma nolga teng bo'lishi uchun ko'paytuvchilardan biri nol bo'lishi kerak. Demak sin2x = 0 yoki cosx = 0. Ikkinchi variant sin2x o'rniga sin4x olib, ortiqcha yechimlar qo'shib yuboradi: x = π/4 da sin4x = 0, lekin sin3x + sinx = √2 ≠ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglama-kopaytmaga-ajratish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#149820e8"
+    },
+    {
+      "q": "cos5x − cosx = 0 tenglamani ko'paytmaga keltirgach, hosil bo'ladigan shartlar to'plamini tanlang.",
+      "v": [
+        "cos3x = 0 yoki cos2x = 0",
+        "cos3x = 0 yoki sin2x = 0",
+        "sin3x = 0 yoki sin2x = 0",
+        "sin3x = 0 yoki cos2x = 0"
+      ],
+      "t": 2,
+      "izoh": "cos5x − cosx = −2·sin3x·sin2x, demak tenglama −2·sin3x·sin2x = 0 ko'rinishini oladi. Minus koeffitsient yechimga ta'sir qilmaydi. Shuning uchun sin3x = 0 yoki sin2x = 0 bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglama-kopaytmaga-ajratish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#c18c301e"
+    },
+    {
+      "q": "cosx + cos3x = 0 tenglamaning [0; π] kesmasiga tegishli nechta yechimi borligini aniqlang.",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "5 ta"
+      ],
+      "t": 1,
+      "izoh": "cosx + cos3x = 2·cos2x·cosx, demak cos2x = 0 yoki cosx = 0. Birinchi shartdan x = π/4 va x = 3π/4, ikkinchisidan x = π/2 chiqadi. Kesmada jami uchta yechim bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglama-kopaytmaga-ajratish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#793ff012"
+    },
+    {
+      "q": "Prujinaga osilgan yukning og'ishi sin4t − sin2t formula bilan berilgan. Og'ish birinchi marta nolga aylanadigan eng kichik musbat t qiymatini toping.",
+      "v": [
+        "π/12",
+        "π/6",
+        "π/4",
+        "π/3"
+      ],
+      "t": 1,
+      "izoh": "sin4t − sin2t = 2·cos3t·sint, demak cos3t = 0 yoki sint = 0. Ikkinchi shartdan eng kichik musbat qiymat t = π ga teng. Birinchi shartdan 3t = π/2, ya'ni t = π/6 chiqadi va bu kichikroq. Javob π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglama-kopaytmaga-ajratish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#6611d47a"
+    },
+    {
+      "q": "cos7x = cos3x tenglamasi ko'paytmaga keltirilganda hosil bo'ladigan tenglamani tanlang.",
+      "v": [
+        "cos5x·cos2x = 0",
+        "sin5x·cos2x = 0",
+        "cos5x·sin2x = 0",
+        "sin5x·sin2x = 0"
+      ],
+      "t": 3,
+      "izoh": "Tenglamani cos7x − cos3x = 0 ko'rinishiga keltiramiz. Kosinuslar ayirmasi formulasidan −2·sin5x·sin2x = 0 chiqadi. Koeffitsientni qisqartirsak sin5x·sin2x = 0 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglama-kopaytmaga-ajratish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#fa7afb8c"
+    },
+    {
+      "q": "3·sinx + 4·cosx ifodasi bitta sinusga keltirilsa, uning amplitudasi qanday bo'ladi?",
+      "v": [
+        "5",
+        "7",
+        "12",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "a·sinx + b·cosx ifodaning amplitudasi √(a² + b²) formulasi bilan topiladi. Bu yerda √(3² + 4²) = √25 = 5. Ikkinchi variant koeffitsientlarni oddiy qo'shish xatosi, oxirgisi ildiz chiqarishni unutish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amplituda-hisoblash",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#c0e610e0"
+    },
+    {
+      "q": "5·sinx + 12·cosx ifodasini R·sin(x + φ) ko'rinishida yozganda R koeffitsienti nechaga teng bo'ladi?",
+      "v": [
+        "17",
+        "13",
+        "169",
+        "√17"
+      ],
+      "t": 1,
+      "izoh": "R = √(a² + b²) formulasiga ko'ra R = √(5² + 12²) = √169 = 13. Birinchi variant koeffitsientlarni qo'shish, uchinchisi esa ildiz chiqarmaslik xatosidan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amplituda-hisoblash",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#0c782e1d"
+    },
+    {
+      "q": "8·sinx − 6·cosx ifodasining amplitudasini toping. Manfiy koeffitsient natijaga qanday ta'sir qiladi?",
+      "v": [
+        "2",
+        "14",
+        "10",
+        "√14"
+      ],
+      "t": 2,
+      "izoh": "Amplituda √(a² + b²) ga teng, kvadratga ko'tarishda ishora yo'qoladi. Demak √(8² + (−6)²) = √100 = 10. Birinchi variant koeffitsientlarni ayirish, ikkinchisi qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amplituda-hisoblash",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#a40afa66"
+    },
+    {
+      "q": "Generator kuchlanishi U(t) = 7·sint + 24·cost formula bilan beriladi. Uning amplitudasi necha volt bo'ladi?",
+      "v": [
+        "31",
+        "17",
+        "625",
+        "25"
+      ],
+      "t": 3,
+      "izoh": "Amplituda √(7² + 24²) = √(49 + 576) = √625 = 25 volt. Birinchi variant koeffitsientlarni qo'shish, ikkinchisi ayirish xatosi. Uchinchi variantda ildiz chiqarilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amplituda-hisoblash",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#86914057"
+    },
+    {
+      "q": "sinx + √3·cosx ifodasini bitta sinusga keltirganda oldidagi koeffitsient qanday son bo'ladi?",
+      "v": [
+        "1 + √3",
+        "2",
+        "4",
+        "√3"
+      ],
+      "t": 1,
+      "izoh": "R = √(1² + (√3)²) = √(1 + 3) = √4 = 2. Birinchi variant koeffitsientlarni to'g'ridan-to'g'ri qo'shish xatosi, uchinchisi ildiz chiqarmaslik natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "amplituda-hisoblash",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#4901a9c5"
+    },
+    {
+      "q": "Sardorning do'konidagi kunlik daromad D(t) = 40 + 6·sint + 8·cost mln so'm bilan modellashtirilgan. Eng katta daromad qancha bo'ladi?",
+      "v": [
+        "54 mln so'm",
+        "46 mln so'm",
+        "50 mln so'm",
+        "90 mln so'm"
+      ],
+      "t": 2,
+      "izoh": "6·sint + 8·cost qo'shiluvchining amplitudasi √(36 + 64) = 10. Bu qism eng kattasi 10 ga teng bo'ladi. Demak eng katta daromad 40 + 10 = 50 mln so'm. Birinchi variant koeffitsientlarni qo'shib 14 olgan xatoga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#06f2acdc"
+    },
+    {
+      "q": "Issiqxonadagi harorat T(x) = 18 + 3·sinx + 4·cosx daraja bilan beriladi. Kun davomidagi eng yuqori harorat qancha bo'ladi?",
+      "v": [
+        "23 daraja",
+        "25 daraja",
+        "21 daraja",
+        "22 daraja"
+      ],
+      "t": 0,
+      "izoh": "3·sinx + 4·cosx ifodaning amplitudasi √(9 + 16) = 5. Eng katta qiymat 18 + 5 = 23 daraja. Ikkinchi variant koeffitsientlarni qo'shib 7 olgan xatoga, uchinchisi faqat 3 ni qo'shishga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#d0068fb3"
+    },
+    {
+      "q": "y = 9·sinx + 12·cosx + 5 funksiyaning eng katta qiymatini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "26",
+        "21",
+        "10",
+        "20"
+      ],
+      "t": 3,
+      "izoh": "Amplituda √(81 + 144) = √225 = 15. Funksiyaning eng katta qiymati 5 + 15 = 20. Birinchi variant amplitudani xato — koeffitsientlarni qo'shib 21 deb olib, unga 5 ni qo'shishdan (26) chiqadi; ikkinchi variant xuddi shu 21 ni javob deb qoldirishdan, uchinchisi esa doimiy hadni qo'shish o'rniga ayirishdan (15 − 5 = 10) kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#e9246af3"
+    },
+    {
+      "q": "Shamol turbinasining bir vaqtdagi quvvati P = 35 + 20·sint + 21·cost kVt formula bilan hisoblanadi. Eng katta quvvat qancha?",
+      "v": [
+        "76 kVt",
+        "64 kVt",
+        "56 kVt",
+        "35 kVt"
+      ],
+      "t": 1,
+      "izoh": "Tebranuvchi qismning amplitudasi √(20² + 21²) = √(400 + 441) = √841 = 29. Demak eng katta quvvat 35 + 29 = 64 kVt. Birinchi variant koeffitsientlarni oddiy qo'shib 41 olishdan (35 + 41 = 76), uchinchisi faqat kattaroq koeffitsientni qo'shishdan (35 + 21 = 56), oxirgisi esa tebranishni umuman hisobga olmaslikdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#60d0c332"
+    },
+    {
+      "q": "Aylanma eshikning burchak og'ishi f(x) = 2·sinx + 2·cosx bilan beriladi. Bu funksiyaning eng katta qiymatini toping.",
+      "v": [
+        "2",
+        "4",
+        "2√2",
+        "√2"
+      ],
+      "t": 2,
+      "izoh": "Amplituda √(2² + 2²) = √8 = 2√2 ga teng. Sinusning eng katta qiymati 1 bo'lgani uchun funksiyaning eng kattasi ham 2√2. Ikkinchi variant koeffitsientlarni qo'shish, birinchisi faqat bitta koeffitsientni olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#d8f3dfc6"
+    },
+    {
+      "q": "y = 6·sinx + 8·cosx funksiyaning eng kichik qiymati qanday songa teng bo'lishini aniqlang.",
+      "v": [
+        "−14",
+        "0",
+        "−6",
+        "−10"
+      ],
+      "t": 3,
+      "izoh": "Amplituda √(36 + 64) = √100 = 10 ga teng. Bitta sinusga keltirilgan ifoda 10·sin(x + φ) ko'rinishida bo'ladi. Sinusning eng kichigi −1, demak eng kichik qiymat −10. Birinchi variant koeffitsientlarni qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#3b5f17c9"
+    },
+    {
+      "q": "Suv nasosi bosimi B(x) = 30 + 15·sinx + 8·cosx atmosfera bilan beriladi. Eng past bosim qanday bo'ladi?",
+      "v": [
+        "13 atm",
+        "7 atm",
+        "15 atm",
+        "22 atm"
+      ],
+      "t": 0,
+      "izoh": "Amplituda √(225 + 64) = √289 = 17. Eng kichik bosim 30 − 17 = 13 atmosfera. Ikkinchi variant koeffitsientlarni qo'shib 23 olishdan, oxirgisi faqat 8 ni ayirishdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-kichik-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#b0339727"
+    },
+    {
+      "q": "y = sinx − cosx funksiyaning eng kichik qiymatini bitta sinusga keltirish orqali toping.",
+      "v": [
+        "−1",
+        "0",
+        "−√2",
+        "−2"
+      ],
+      "t": 2,
+      "izoh": "Amplituda √(1² + (−1)²) = √2 bo'ladi. Ifoda √2·sin(x − π/4) ko'rinishiga keladi va sinusning eng kichigi −1. Demak eng kichik qiymat −√2. Birinchi variant amplitudani hisobga olmaslik xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#482c58cb"
+    },
+    {
+      "q": "Ko'l tubidagi chuqurlik h(t) = 12 + 3·sint + 4·cost metr bilan o'lchanadi. Eng kichik chuqurlik necha metr bo'ladi?",
+      "v": [
+        "5 m",
+        "7 m",
+        "9 m",
+        "8 m"
+      ],
+      "t": 1,
+      "izoh": "Amplituda √(9 + 16) = 5 metr. Eng kichik chuqurlik 12 − 5 = 7 metr. Birinchi variant koeffitsientlarni qo'shib 7 ni ayirish xatosi, uchinchisi faqat 3 ni ayirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#eb156413"
+    },
+    {
+      "q": "Sovutgich kamerasidagi harorat y = −18 − 4·sinx − 3·cosx daraja bilan berilgan. Eng past harorat qanday bo'ladi?",
+      "v": [
+        "−25 daraja",
+        "−13 daraja",
+        "−18 daraja",
+        "−23 daraja"
+      ],
+      "t": 3,
+      "izoh": "4·sinx + 3·cosx ifodaning amplitudasi √(16 + 9) = √25 = 5. Demak y ning eng kichigi −18 − 5 = −23 daraja. Birinchi variant koeffitsientlarni qo'shib 7 olishdan (−18 − 7 = −25), ikkinchisi eng past emas, eng yuqori haroratni (−18 + 5 = −13) topishdan, uchinchisi esa tebranishni umuman hisobga olmaslikdan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-kichik-qiymat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#a3370429"
+    },
+    {
+      "q": "y = 3·sinx − 4·cosx funksiyaning qiymatlar sohasini aniqlang va to'g'ri variantni belgilang.",
+      "v": [
+        "[−5; 5]",
+        "[−1; 1]",
+        "[−7; 7]",
+        "[−25; 25]"
+      ],
+      "t": 0,
+      "izoh": "Amplituda √(9 + 16) = 5 ga teng, ifoda 5·sin(x + φ) ko'rinishiga keladi. Sinus −1 dan 1 gacha o'zgargani uchun funksiya −5 dan 5 gacha qiymat oladi. Uchinchi variant koeffitsientlarni qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#847f4b8f"
+    },
+    {
+      "q": "y = 5·sinx + 12·cosx + 7 funksiyaning qiymatlar sohasini toping. Doimiy hadni unutmang.",
+      "v": [
+        "[−13; 13]",
+        "[−10; 24]",
+        "[−6; 20]",
+        "[7; 20]"
+      ],
+      "t": 2,
+      "izoh": "Amplituda √(25 + 144) = 13, demak sinusli qism −13 dan 13 gacha o'zgaradi. Unga 7 qo'shilsa soha [−6; 20] bo'ladi. Birinchi variant doimiy hadni qo'shishni unutgan, oxirgisi faqat yuqori chegarani siljitgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#ff334a07"
+    },
+    {
+      "q": "Radioantenna signal kuchi y = 8·cosx + 15·sinx bilan berilgan. Bu kattalik qanday oraliqda o'zgaradi?",
+      "v": [
+        "[−23; 23]",
+        "[−17; 17]",
+        "[−7; 7]",
+        "[−289; 289]"
+      ],
+      "t": 1,
+      "izoh": "Amplituda √(64 + 225) = √289 = 17 ga teng. Shuning uchun signal kuchi −17 dan 17 gacha oraliqda o'zgaradi. Birinchi variant koeffitsientlarni qo'shish, oxirgisi ildiz chiqarmaslik xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#b9e61083"
+    },
+    {
+      "q": "y = 24·sinx − 7·cosx − 10 funksiyaning qiymatlar sohasi qanday oraliqdan iborat bo'lishini aniqlang.",
+      "v": [
+        "[−25; 25]",
+        "[−15; 35]",
+        "[−27; 7]",
+        "[−35; 15]"
+      ],
+      "t": 3,
+      "izoh": "Amplituda √(576 + 49) = √625 = 25. Sinusli qism −25 dan 25 gacha, undan 10 ayrilsa soha [−35; 15] bo'ladi. Ikkinchi variantda doimiy had qo'shilgan, uchinchisida koeffitsientlar ayirmasi olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#1ce7dd44"
+    },
+    {
+      "q": "Suv omborida sath h(t) = 50 + 9·sint + 40·cost metr bilan modellashtirilgan. Sath qanday oraliqda tebranadi?",
+      "v": [
+        "[9; 91]",
+        "[10; 90]",
+        "[1; 99]",
+        "[−41; 41]"
+      ],
+      "t": 0,
+      "izoh": "Amplituda √(81 + 1600) = √1681 = 41 metr. Demak sath 50 − 41 = 9 dan 50 + 41 = 91 metrgacha o'zgaradi. Ikkinchi variant amplitudani 40 deb olish, uchinchisi 49 deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#b59febf3"
+    },
+    {
+      "q": "sinx + cosx ifodasini bitta sinus funksiyasi ko'rinishida yozing va to'g'ri variantni tanlang.",
+      "v": [
+        "√2·sin(x + π/4)",
+        "√2·sin(x − π/4)",
+        "2·sin(x + π/4)",
+        "√2·cos(x + π/4)"
+      ],
+      "t": 0,
+      "izoh": "Amplituda √(1 + 1) = √2 bo'ladi va ifoda √2·(sinx·cos(π/4) + cosx·sin(π/4)) ko'rinishiga keltiriladi. Qavs ichi sin(x + π/4) ga teng. Demak natija √2·sin(x + π/4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-sinusga-keltirish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#c75149b6"
+    },
+    {
+      "q": "√3·sinx + cosx ifodasini R·sin(x + φ) ko'rinishiga keltiring. Qaysi yozuv to'g'ri?",
+      "v": [
+        "2·sin(x + π/3)",
+        "2·sin(x + π/6)",
+        "2·cos(x + π/6)",
+        "√3·sin(x + π/6)"
+      ],
+      "t": 1,
+      "izoh": "Amplituda √(3 + 1) = 2. Ifodani 2·((√3/2)·sinx + (1/2)·cosx) deb yozamiz, bu esa 2·(sinx·cos(π/6) + cosx·sin(π/6)). Qavs ichi sin(x + π/6) ga teng. Birinchi variant faza burchagini chalkashtirgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-sinusga-keltirish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#1e6b86bb"
+    },
+    {
+      "q": "sinx − √3·cosx ifodasi qaysi bitta sinusga aynan teng bo'lishini aniqlang. Faza ishorasiga e'tibor bering.",
+      "v": [
+        "2·sin(x + π/3)",
+        "2·sin(x − π/6)",
+        "2·sin(x − π/3)",
+        "2·cos(x − π/3)"
+      ],
+      "t": 2,
+      "izoh": "Amplituda √(1 + 3) = 2 ga teng. Ifoda 2·((1/2)·sinx − (√3/2)·cosx) = 2·(sinx·cos(π/3) − cosx·sin(π/3)) ko'rinishiga keladi. Qavs ichi sin(x − π/3). Birinchi variant minus ishorasini hisobga olmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bitta-sinusga-keltirish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#9c205c7f"
+    },
+    {
+      "q": "3·sinx + 4·cosx = 5·sin(x + φ) tenglik o'rinli bo'lsin. Bunda φ o'tkir burchak uchun tgφ nechaga teng?",
+      "v": [
+        "3/4",
+        "4/3",
+        "4/5",
+        "3/5"
+      ],
+      "t": 1,
+      "izoh": "Yoyib yozsak 5·sin(x + φ) = 5·cosφ·sinx + 5·sinφ·cosx. Koeffitsientlarni tenglashtiramiz: 5·cosφ = 3 va 5·sinφ = 4. Demak tgφ = sinφ/cosφ = 4/3. Birinchi variant nisbatni teskari olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bitta-sinusga-keltirish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#f68287ec"
+    },
+    {
+      "q": "cosx − sinx ayirmasini bitta kosinus funksiyasi ko'rinishida yozing va to'g'ri variantni belgilang.",
+      "v": [
+        "√2·cos(x + π/4)",
+        "√2·cos(x − π/4)",
+        "√2·sin(x + π/4)",
+        "2·cos(x + π/4)"
+      ],
+      "t": 0,
+      "izoh": "Amplituda √(1 + 1) = √2. Yoyib tekshiramiz: √2·cos(x + π/4) = √2·(cosx·cos(π/4) − sinx·sin(π/4)) = cosx − sinx. Ikkinchi variant qo'shish formulasini beradi, ya'ni cosx + sinx.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bitta-sinusga-keltirish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#38d69b8b"
+    },
+    {
+      "q": "sinα + sin3α + sin5α yig'indisini ko'paytma ko'rinishiga keltiring. Umumiy ko'paytuvchini qavsdan chiqarishni unutmang.",
+      "v": [
+        "sin3α·(2·cos2α + 1)",
+        "sin3α·(2·cos2α − 1)",
+        "cos3α·(2·sin2α + 1)",
+        "2·sin3α·cos2α"
+      ],
+      "t": 0,
+      "izoh": "Chetdagi ikki hadni juftlaymiz: sinα + sin5α = 2·sin3α·cos2α. Qolgan sin3α ni qo'shsak 2·sin3α·cos2α + sin3α hosil bo'ladi. Umumiy sin3α ni qavsdan chiqarsak sin3α·(2·cos2α + 1) chiqadi. Oxirgi variant o'rtadagi hadni tashlab ketgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-hadli-yigindi",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#4c3a8039"
+    },
+    {
+      "q": "cos20° + cos100° + cos140° yig'indisining aniq qiymatini hisoblang va to'g'ri variantni belgilang.",
+      "v": [
+        "1",
+        "0,5",
+        "−0,5",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "Chetdagi hadlarni juftlaymiz: cos20° + cos140° = 2·cos80°·cos60° = cos80°. Endi cos80° + cos100° qoladi. cos100° = −cos80° bo'lgani uchun bu yig'indi nolga teng. Ikkinchi variant cos60° ni javob deb qoldirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-hadli-yigindi",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#300a09df"
+    },
+    {
+      "q": "sin10° + sin50° + sin70° yig'indisi qaysi ifodaga teng bo'ladi? Avval mos hadlarni juftlashga harakat qiling.",
+      "v": [
+        "cos20°",
+        "sin20°",
+        "2·cos20°",
+        "√3·cos20°"
+      ],
+      "t": 2,
+      "izoh": "Dastlab sin10° + sin50° = 2·sin30°·cos20° = cos20° bo'ladi. Qolgan sin70° esa cos20° ga teng, chunki sin70° = cos(90° − 70°). Demak jami cos20° + cos20° = 2·cos20°. Birinchi variant oxirgi hadni qo'shishni unutgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-hadli-yigindi",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#0c9947f0"
+    },
+    {
+      "q": "cosx + cos3x + cos5x ifodasini ko'paytmaga ajrating va to'g'ri natijani ko'rsating.",
+      "v": [
+        "cos3x·(2·cos2x − 1)",
+        "cos3x·(2·sin2x + 1)",
+        "2·cos3x·cos2x",
+        "cos3x·(2·cos2x + 1)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi va uchinchi hadni juftlaymiz: cosx + cos5x = 2·cos3x·cos2x. Bunga o'rtadagi cos3x qo'shiladi. Umumiy ko'paytuvchi cos3x ni qavsdan chiqarsak cos3x·(2·cos2x + 1) hosil bo'ladi. Uchinchi variant o'rtadagi hadni hisobga olmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-hadli-yigindi",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#30d3f655"
+    },
+    {
+      "q": "ABC uchburchakning burchaklari uchun sinA + sinB + sinC yig'indisi qaysi ko'paytmaga teng bo'lishini aniqlang.",
+      "v": [
+        "4·cos(A/2)·cos(B/2)·cos(C/2)",
+        "4·sin(A/2)·sin(B/2)·sin(C/2)",
+        "2·cos(A/2)·cos(B/2)",
+        "4·cosA·cosB·cosC"
+      ],
+      "t": 0,
+      "izoh": "Avval sinA + sinB = 2·cos(C/2)·cos((A−B)/2), chunki (A + B)/2 = 90° − C/2. Uchinchi hadni sinC = 2·sin(C/2)·cos(C/2) deb yozamiz. Umumiy 2·cos(C/2) ni qavsdan chiqarib, qavs ichini yana yig'indidan ko'paytmaga aylantirsak 4·cos(A/2)·cos(B/2)·cos(C/2) chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-ayniyat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#937ef03c"
+    },
+    {
+      "q": "ABC uchburchakda cosA + cosB + cosC yig'indisi qaysi ifodaga aynan teng bo'ladi?",
+      "v": [
+        "4·sin(A/2)·sin(B/2)·sin(C/2)",
+        "1 + 4·cos(A/2)·cos(B/2)·cos(C/2)",
+        "1 − 4·sin(A/2)·sin(B/2)·sin(C/2)",
+        "1 + 4·sin(A/2)·sin(B/2)·sin(C/2)"
+      ],
+      "t": 3,
+      "izoh": "cosA + cosB = 2·sin(C/2)·cos((A−B)/2), chunki (A + B)/2 = 90° − C/2. Uchinchi hadni cosC = 1 − 2·sin²(C/2) ko'rinishida yozamiz. Hadlarni birlashtirib 2·sin(C/2) ni qavsdan chiqarsak natija 1 + 4·sin(A/2)·sin(B/2)·sin(C/2) bo'ladi. Birinchi variant birni qo'shishni unutgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-ayniyat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#2da2bac6"
+    },
+    {
+      "q": "ABC uchburchakda A + B + C = 180°. sinA + sinB yig'indisini C burchak orqali ifodalagan variantni tanlang.",
+      "v": [
+        "2·cos(C/2)·cos((A−B)/2)",
+        "2·sin(C/2)·cos((A−B)/2)",
+        "2·cos(C/2)·sin((A−B)/2)",
+        "2·cos(C/2)·cos((A+B)/2)"
+      ],
+      "t": 0,
+      "izoh": "sinA + sinB = 2·sin((A+B)/2)·cos((A−B)/2). Uchburchakda A + B = 180° − C, demak (A + B)/2 = 90° − C/2. Bundan sin(90° − C/2) = cos(C/2). Shuning uchun natija 2·cos(C/2)·cos((A−B)/2) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-ayniyat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#3188425f"
+    },
+    {
+      "q": "ABC uchburchak burchaklari uchun cosA + cosB yig'indisi C burchak orqali qanday ifodalanadi?",
+      "v": [
+        "2·cos(C/2)·cos((A−B)/2)",
+        "2·sin(C/2)·sin((A−B)/2)",
+        "2·sin(C/2)·cos((A−B)/2)",
+        "2·sin(C/2)·cos((A+B)/2)"
+      ],
+      "t": 2,
+      "izoh": "cosA + cosB = 2·cos((A+B)/2)·cos((A−B)/2). Uchburchakda (A + B)/2 = 90° − C/2 va cos(90° − C/2) = sin(C/2). Demak yig'indi 2·sin(C/2)·cos((A−B)/2) ga teng. Birinchi variant almashtirishni bajarmagan holat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-ayniyat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#ab34ad1f"
+    },
+    {
+      "q": "Ikki karnay bir vaqtda y₁ = sin300t va y₂ = sin280t tovush to'lqinlarini chiqarmoqda. Ularning yig'indisi qaysi ko'paytmaga aylanadi?",
+      "v": [
+        "2·sin290t·cos10t",
+        "2·cos290t·sin10t",
+        "2·sin290t·cos290t",
+        "2·sin580t·cos20t"
+      ],
+      "t": 0,
+      "izoh": "Yarim yig'indi (300t + 280t)/2 = 290t, yarim ayirma (300t − 280t)/2 = 10t. Sinuslar yig'indisi formulasidan natija 2·sin290t·cos10t bo'ladi. Oxirgi variant burchaklarni yarimlashni unutgan o'quvchining xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tebranish-qoshilish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#7af3c713"
+    },
+    {
+      "q": "Ikkita antenna signali cos50t va cos46t funksiyalari bilan tavsiflanadi. Bu signallar yig'indisi qanday ko'paytma bilan almashtiriladi?",
+      "v": [
+        "2·sin48t·sin2t",
+        "2·cos96t·cos4t",
+        "2·cos48t·cos2t",
+        "2·cos48t·cos48t"
+      ],
+      "t": 2,
+      "izoh": "Yarim yig'indi (50t + 46t)/2 = 48t, yarim ayirma (50t − 46t)/2 = 2t. Kosinuslar yig'indisi formulasidan natija 2·cos48t·cos2t. Birinchi variant ayirma formulasini qo'llash xatosi, ikkinchisida burchaklar yarimlanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tebranish-qoshilish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#73325166"
+    },
+    {
+      "q": "Zavoddagi ikki motorning tebranishlari sin120t va sin100t bilan berilgan. Ularning ayirmasi qaysi ko'paytmaga teng bo'ladi?",
+      "v": [
+        "2·sin110t·cos10t",
+        "2·cos110t·cos10t",
+        "2·cos220t·sin20t",
+        "2·cos110t·sin10t"
+      ],
+      "t": 3,
+      "izoh": "Yarim yig'indi (120t + 100t)/2 = 110t, yarim ayirma (120t − 100t)/2 = 10t. Sinuslar ayirmasi formulasiga ko'ra natija 2·cos110t·sin10t. Birinchi variantda sinus va kosinus o'rni almashtirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tebranish-qoshilish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#52d2af05"
+    },
+    {
+      "q": "Ikki tor 440 gers va 436 gers chastotada jaranglaganda yig'indi tebranish 2·sin(2π·438t)·cos(2π·2t) ko'rinishini oladi. Sekin o'zgaruvchi kosinus ko'paytuvchining chastotasi qancha?",
+      "v": [
+        "4 gers",
+        "438 gers",
+        "2 gers",
+        "876 gers"
+      ],
+      "t": 2,
+      "izoh": "Yig'indini ko'paytmaga aylantirganda yarim ayirma (440 − 436)/2 = 2 gers chiqadi. Aynan shu son sekin o'zgaruvchi kosinus ko'paytuvchining chastotasi bo'ladi. Birinchi variant chastotalar ayirmasini yarimlashni unutgan javob.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tebranish-qoshilish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#f2c8d96b"
+    },
+    {
+      "q": "Quyidagi to'rt tenglamadan qaysi biri hech qanday yechimga ega emas: 3·sinx + 4·cosx = 5, sinx + cosx = 1, 5·sinx + 12·cosx = 14, 8·sinx + 6·cosx = 10?",
+      "v": [
+        "3·sinx + 4·cosx = 5",
+        "sinx + cosx = 1",
+        "5·sinx + 12·cosx = 14",
+        "8·sinx + 6·cosx = 10"
+      ],
+      "t": 2,
+      "izoh": "Har bir chap tomonning amplitudasi √(a² + b²) ga teng: mos ravishda 5, √2, 13 va 10. Tenglama yechimga ega bo'lishi uchun o'ng tomon modul bo'yicha amplitudadan katta bo'lmasligi kerak. Uchinchi tenglamada 14 amplituda 13 dan katta, demak yechim yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglama-yechim-sharti",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#afd54cdb"
+    },
+    {
+      "q": "a·sinx + b·cosx = c tenglamasi yechimga ega bo'lishining zaruriy va yetarli sharti qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "c² ≤ a² + b²",
+        "c² ≥ a² + b²",
+        "c ≤ a + b",
+        "c² = a² + b²"
+      ],
+      "t": 0,
+      "izoh": "Chap tomon R·sin(x + φ) ko'rinishiga keladi, bunda R = √(a² + b²). Sinus faqat −1 dan 1 gacha qiymat olgani uchun chap tomon −R dan R gacha o'zgaradi. Demak yechim bo'lishi uchun c ning moduli R dan katta bo'lmasligi, ya'ni c² ≤ a² + b² bo'lishi shart.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglama-yechim-sharti",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#d52ed261"
+    },
+    {
+      "q": "7·sinx + 24·cosx = m tenglamasi yechimga ega bo'lishi uchun m parametr qanday oraliqdan qiymat olishi kerak?",
+      "v": [
+        "[−31; 31]",
+        "[−24; 24]",
+        "[0; 25]",
+        "[−25; 25]"
+      ],
+      "t": 3,
+      "izoh": "Chap tomonning amplitudasi √(49 + 576) = √625 = 25 ga teng. Shuning uchun ifoda −25 dan 25 gacha qiymat oladi. Demak tenglama yechimga ega bo'lishi uchun m shu oraliqda yotishi kerak. Birinchi variant koeffitsientlarni qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglama-yechim-sharti",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#545cc806"
+    },
+    {
+      "q": "y = sinx + √3·cosx funksiya [0; 2π) oralig'ida eng katta qiymatiga qaysi x da erishadi?",
+      "v": [
+        "π/6",
+        "π/2",
+        "2π/3",
+        "π/3"
+      ],
+      "t": 0,
+      "izoh": "Amplituda √(1 + 3) = 2. Ifoda 2·((1/2)·sinx + (√3/2)·cosx) = 2·(sinx·cos(π/3) + cosx·sin(π/3)) = 2·sin(x + π/3) ko'rinishiga keltiriladi. Sinus eng katta qiymatni argumenti π/2 bo'lganda oladi: x + π/3 = π/2, bundan x = π/2 − π/3 = π/6. Oxirgi variant (π/3) faza burchagining o'zini javob deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-erishish-burchagi",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#f2e9fdb0"
+    },
+    {
+      "q": "y = √3·sinx − cosx funksiyaning eng katta qiymatiga mos keluvchi x ni [0; 2π) oralig'idan toping.",
+      "v": [
+        "π/3",
+        "π/2",
+        "2π/3",
+        "5π/6"
+      ],
+      "t": 2,
+      "izoh": "Amplituda √(3 + 1) = 2, ifoda 2·sin(x − π/6) ko'rinishiga keladi. Eng katta qiymat x − π/6 = π/2 bo'lganda olinadi. Demak x = π/2 + π/6 = 2π/3. Ikkinchi variant faza siljishini hisobga olmagan javob.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-erishish-burchagi",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#582cb196"
+    },
+    {
+      "q": "Quyosh panelining quvvati P(x) = 60 + 8·sinx + 15·cosx vatt bilan beriladi. Eng katta va eng kichik quvvat orasidagi farq qancha?",
+      "v": [
+        "34 vatt",
+        "17 vatt",
+        "23 vatt",
+        "46 vatt"
+      ],
+      "t": 0,
+      "izoh": "Amplituda √(64 + 225) = √289 = 17 vatt. Eng katta quvvat 60 + 17 = 77, eng kichigi esa 60 − 17 = 43 vatt. Farq 77 − 43 = 34 vatt, ya'ni amplitudaning ikki barobari. Ikkinchi variant faqat amplitudaning o'zini javob deb olgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-eng-kichik-munosabat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#40eab352"
+    },
+    {
+      "q": "y = 9·sinx + 40·cosx funksiyaning eng katta va eng kichik qiymatlari yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "82",
+        "41",
+        "49",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "Amplituda √(81 + 1600) = √1681 = 41. Eng katta qiymat 41, eng kichigi esa −41 ga teng. Ularning yig'indisi 41 + (−41) = 0 bo'ladi. Birinchi variant ikkala qiymatni ham musbat deb qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-eng-kichik-munosabat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#8a530532"
+    },
+    {
+      "q": "y = 12·sinx − 5·cosx + 3 funksiyaning eng katta va eng kichik qiymatlari ko'paytmasini hisoblang.",
+      "v": [
+        "−169",
+        "−160",
+        "160",
+        "−16"
+      ],
+      "t": 1,
+      "izoh": "Amplituda √(144 + 25) = √169 = 13 ga teng. Eng katta qiymat 3 + 13 = 16, eng kichigi 3 − 13 = −10. Ularning ko'paytmasi 16·(−10) = −160. Birinchi variant doimiy hadni hisobga olmay 13 va −13 ni ko'paytirgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-eng-kichik-munosabat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#215c5ab7"
+    },
+    {
+      "q": "Shamol tezligi v(t) = 20 + 12·sint + 16·cost m/s formula bilan modellashtirilgan. Eng tez va eng sekin shamol tezligi orasidagi farq qancha?",
+      "v": [
+        "20 m/s",
+        "28 m/s",
+        "40 m/s",
+        "56 m/s"
+      ],
+      "t": 2,
+      "izoh": "Amplituda √(144 + 256) = √400 = 20 m/s. Eng katta tezlik 20 + 20 = 40, eng kichigi 20 − 20 = 0 m/s. Demak farq 40 m/s, ya'ni amplitudaning ikki barobari. Ikkinchi variant koeffitsientlarni qo'shish xatosidan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-eng-kichik-munosabat",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#5b2d067f"
+    },
+    {
+      "q": "Yig'indini ko'paytmaga aylantirish formulalaridan qaysi biri noto'g'ri yozilgan?",
+      "v": [
+        "sinα + sinβ = 2·sin((α+β)/2)·cos((α−β)/2)",
+        "sinα − sinβ = 2·cos((α+β)/2)·sin((α−β)/2)",
+        "cosα − cosβ = 2·sin((α+β)/2)·sin((α−β)/2)",
+        "cosα + cosβ = 2·cos((α+β)/2)·cos((α−β)/2)"
+      ],
+      "t": 2,
+      "izoh": "Kosinuslar ayirmasi formulasida oldida minus ishorasi turishi shart: cosα − cosβ = −2·sin((α+β)/2)·sin((α−β)/2). Uchinchi variantda aynan shu minus tushirib qoldirilgan. Qolgan uchta tenglik to'g'ri yozilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-tekshirish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#d60003cf"
+    },
+    {
+      "q": "Ko'paytmani yig'indiga aylantirish formulalaridan qaysi biri xato ko'rsatilgan?",
+      "v": [
+        "2·sinα·cosβ = sin(α + β) + sin(α − β)",
+        "2·cosα·cosβ = cos(α − β) + cos(α + β)",
+        "2·cosα·sinβ = sin(α + β) − sin(α − β)",
+        "2·sinα·sinβ = cos(α + β) − cos(α − β)"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri formula 2·sinα·sinβ = cos(α − β) − cos(α + β) ko'rinishida bo'ladi. Oxirgi variantda hadlar o'rni almashtirilgan va natija qarama-qarshi ishorali chiqadi. Qolgan uchta tenglik to'g'ri yozilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniyat-tekshirish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#5a752e49"
+    },
+    {
+      "q": "Quyidagi to'rt tenglikdan faqat bittasi to'g'ri. Hisoblashda xato qilinmagan tenglikni toping.",
+      "v": [
+        "sin40° + sin20° = 2·sin30°·cos10°",
+        "cos40° + cos20° = 2·sin30°·sin10°",
+        "sin40° − sin20° = 2·sin30°·cos10°",
+        "cos40° − cos20° = 2·sin30°·sin10°"
+      ],
+      "t": 0,
+      "izoh": "Yarim yig'indi 30°, yarim ayirma 10°. Sinuslar yig'indisi 2·sin30°·cos10° ga teng, demak birinchi tenglik to'g'ri. Ikkinchisida 2·cos30°·cos10° bo'lishi kerak edi, uchinchisida 2·cos30°·sin10°, oxirgisida esa oldida minus turishi shart.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyat-tekshirish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#f221c2a9"
+    },
+    {
+      "q": "cos20°·cos40°·cos80° ko'paytmasining aniq qiymatini ko'paytmani yig'indiga aylantirish orqali toping.",
+      "v": [
+        "1/2",
+        "1/4",
+        "1/16",
+        "1/8"
+      ],
+      "t": 3,
+      "izoh": "Avval cos20°·cos40° = (cos20° + cos60°)/2 = (cos20° + 0,5)/2 bo'ladi. Uni cos80° ga ko'paytiramiz va cos20°·cos80° = (cos60° + cos100°)/2 = (0,5 − cos80°)/2 ekanini qo'yamiz. Hadlar birlashganda kosinusli qismlar qisqaradi va 0,25/2 = 0,125, ya'ni 1/8 qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchlik-kopaytma-qiymati",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#98bb467b"
+    },
+    {
+      "q": "4·sin20°·sin40°·sin80° ko'paytmasi qanday aniq songa teng bo'lishini hisoblang.",
+      "v": [
+        "√3/2",
+        "√3/8",
+        "√3/4",
+        "√3"
+      ],
+      "t": 0,
+      "izoh": "Avval 2·sin20°·sin40° = cos20° − cos60° = cos20° − 0,5. Endi uni 2·sin80° ga ko'paytiramiz: 2·sin80°·cos20° − sin80°. Birinchi qism sin100° + sin60° ga teng va sin100° = sin80° bo'lgani uchun ular qisqaradi. Natijada sin60° = √3/2 qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchlik-kopaytma-qiymati",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#d6ef788b"
+    },
+    {
+      "q": "2·cos10°·cos50° − cos40° ifodasining qiymatini hisoblang va to'g'ri variantni belgilang.",
+      "v": [
+        "0",
+        "0,5",
+        "1",
+        "cos40°"
+      ],
+      "t": 1,
+      "izoh": "2·cos10°·cos50° = cos(50° − 10°) + cos(50° + 10°) = cos40° + cos60°. Bundan cos40° ayrilsa faqat cos60° qoladi. cos60° = 0,5, demak natija 0,5 ga teng. Birinchi variant ikkala kosinusni ham qisqartirib yuborish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-soddalashtirish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#4fb70cd1"
+    },
+    {
+      "q": "sin²75° − sin²15° ayirmasini yig'indi va ayirma formulalari yordamida hisoblang.",
+      "v": [
+        "√3/2",
+        "1/2",
+        "√3/4",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Ayirmani (sin75° − sin15°)·(sin75° + sin15°) ko'paytma ko'rinishida yozamiz. Birinchi qavs 2·cos45°·sin30° = √2/2, ikkinchi qavs 2·sin45°·cos30° = √6/2. Ularning ko'paytmasi √12/4 = √3/2 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-soddalashtirish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#f86d67a1"
+    },
+    {
+      "q": "(sin4x + sin2x)/(cos4x − cos2x) kasrini soddalashtirib, natijani bitta funksiya ko'rinishida yozing.",
+      "v": [
+        "ctgx",
+        "tgx",
+        "−tgx",
+        "−ctgx"
+      ],
+      "t": 3,
+      "izoh": "Surat sin4x + sin2x = 2·sin3x·cosx ga teng. Maxraj cos4x − cos2x = −2·sin3x·sinx bo'ladi. Umumiy 2·sin3x qisqargach −cosx/sinx, ya'ni −ctgx qoladi. Birinchi variant maxrajdagi minus ishorasini hisobga olmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-soddalashtirish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#86cffefc"
+    },
+    {
+      "q": "2·cos35°·cos25° − cos60° ifodasi qaysi ifodaga aynan teng bo'lishini aniqlang.",
+      "v": [
+        "cos10°",
+        "cos60°",
+        "0,5",
+        "cos10° + 0,5"
+      ],
+      "t": 0,
+      "izoh": "2·cos35°·cos25° = cos(35° − 25°) + cos(35° + 25°) = cos10° + cos60°. Undan cos60° ayrilsa faqat cos10° qoladi. Oxirgi variant ayirish amalini bajarmagan holat, ikkinchisi esa noto'g'ri hadni qoldirgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-soddalashtirish",
+      "id": "matematika_trig_m07-yigindini-kopaytmaga-va-kopaytmani-yigindiga#4eb66983"
+    }
+  ]
+}

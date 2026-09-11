@@ -1,0 +1,1609 @@
+{
+  "nom": "Nisbat va proporsiya",
+  "bolim": "Nisbat, foiz va matnli masalalar",
+  "blok": "foiz",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "9 : 12 = 15 : 20 proporsiyada asosiy xossaga ko'ra qaysi tenglik o'rinli bo'ladi?",
+      "v": [
+        "9 · 20 = 12 · 15",
+        "9 · 15 = 12 · 20",
+        "9 · 12 = 15 · 20",
+        "20 · 15 = 9 · 12"
+      ],
+      "t": 0,
+      "izoh": "Proporsiyaning asosiy xossasi: tashqi hadlar ko'paytmasi ichki hadlar ko'paytmasiga teng. Bu yerda tashqi hadlar 9 va 20, ichki hadlar esa 12 va 15. Demak 9 · 20 = 12 · 15, ya'ni 180 = 180. Qolgan tengliklar bir tomondagi hadlarni o'zaro ko'paytirish xatosidan kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsiya-asosiy-xossa",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#a756e7a8"
+    },
+    {
+      "q": "Anvar daftariga a : b = 7 : 4 proporsiyani yozdi va uni asosiy xossa yordamida ko'paytma ko'rinishida ifodalamoqchi. To'g'ri tenglikni ko'rsating.",
+      "v": [
+        "7a = 4b",
+        "a · b = 28",
+        "4a = 7b",
+        "a + b = 11"
+      ],
+      "t": 2,
+      "izoh": "a : b = 7 : 4 yozuvi a/b = 7/4 degani. Krest bo'yicha ko'paytirsak a · 4 = b · 7, ya'ni 4a = 7b hosil bo'ladi. Ko'p o'quvchi hadlarni to'g'ridan-to'g'ri qo'yib 7a = 4b deb yozadi, bu xato. a · b = 28 ko'paytirish, a + b = 11 esa qo'shish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsiya-asosiy-xossa",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#27871035"
+    },
+    {
+      "q": "Quyidagi tengliklardan qaysi biri x : 6 = 15 : 9 proporsiyaning asosiy xossasidan bevosita kelib chiqadi?",
+      "v": [
+        "6x = 135",
+        "9x = 90",
+        "15x = 54",
+        "9x = 21"
+      ],
+      "t": 1,
+      "izoh": "Tashqi hadlar x va 9, ichki hadlar 6 va 15 bo'ladi. Asosiy xossaga ko'ra x · 9 = 6 · 15, ya'ni 9x = 90. 6x = 135 hadlarni noto'g'ri juftlash, 15x = 54 chetki va o'rta hadlarni almashtirish, 9x = 21 esa 6 bilan 15 ni qo'shish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsiya-asosiy-xossa",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#7f0e47fa"
+    },
+    {
+      "q": "To'g'ri tuzilgan proporsiyada ichki hadlar ko'paytmasi 84 ga teng. Bunda tashqi hadlar ko'paytmasi qanday son bo'ladi?",
+      "v": [
+        "42",
+        "168",
+        "Aniqlab bo'lmaydi",
+        "84"
+      ],
+      "t": 3,
+      "izoh": "Proporsiyaning asosiy xossasi tashqi hadlar ko'paytmasi ichki hadlar ko'paytmasiga teng ekanini bildiradi. Ichki hadlar ko'paytmasi 84 bo'lsa, tashqi hadlar ko'paytmasi ham aynan 84 chiqadi. 42 va 168 javoblari yarmiga bo'lish yoki ikkilantirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsiya-asosiy-xossa",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#81354110"
+    },
+    {
+      "q": "Quyidagi to'rtta yozuvdan qaysi biri haqiqiy proporsiya emasligini aniqlang: 3 : 8 = 9 : 24, 7 : 4 = 21 : 14, 5 : 6 = 15 : 18, 2 : 9 = 8 : 36.",
+      "v": [
+        "3 : 8 = 9 : 24",
+        "7 : 4 = 21 : 14",
+        "5 : 6 = 15 : 18",
+        "2 : 9 = 8 : 36"
+      ],
+      "t": 1,
+      "izoh": "Har bir yozuvni asosiy xossa bilan tekshiramiz. 3 · 24 = 72 va 8 · 9 = 72, to'g'ri. 7 · 14 = 98, lekin 4 · 21 = 84, tenglik buzilgan. 5 · 18 = 90 va 6 · 15 = 90, to'g'ri. 2 · 36 = 72 va 9 · 8 = 72, to'g'ri. Demak 7 : 4 = 21 : 14 proporsiya emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsiya-togriligini-tekshirish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#70d1c942"
+    },
+    {
+      "q": "Nodira 12 : 18 nisbatga teng bo'lgan nisbatni tanlashi kerak. Quyidagilardan qaysi biri unga teng?",
+      "v": [
+        "8 : 12",
+        "6 : 12",
+        "9 : 15",
+        "15 : 21"
+      ],
+      "t": 0,
+      "izoh": "12 : 18 nisbatni 6 ga qisqartirsak 2 : 3 hosil bo'ladi. 8 : 12 ni 4 ga qisqartirsak ham 2 : 3 chiqadi, demak ular teng. 6 : 12 ikkala haddan 6 ni ayirish, 9 : 15 uchni ayirish, 15 : 21 esa uchni qo'shish natijasi; nisbat hadlariga bir xil son qo'shib yoki ayirib bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsiya-togriligini-tekshirish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#1cf654d8"
+    },
+    {
+      "q": "Berilgan 3, 5, 12 va 20 sonlaridan to'g'ri proporsiya tuzish mumkin. Quyidagilardan qaysi biri ana shunday proporsiya?",
+      "v": [
+        "3 : 12 = 20 : 5",
+        "5 : 3 = 12 : 20",
+        "12 : 3 = 5 : 20",
+        "3 : 5 = 12 : 20"
+      ],
+      "t": 3,
+      "izoh": "Proporsiya bo'lishi uchun tashqi hadlar ko'paytmasi ichki hadlar ko'paytmasiga teng bo'lishi kerak. 3 · 20 = 60 va 5 · 12 = 60, demak 3 : 5 = 12 : 20 to'g'ri. Qolgan uch yozuvda ko'paytmalar teng emas, masalan 3 · 5 = 15, lekin 12 · 20 = 240.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsiya-togriligini-tekshirish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#54f45ff1"
+    },
+    {
+      "q": "Do'konda 5 kg olma 60 000 so'm, 8 kg olma esa 96 000 so'm turadi. Narx miqdorga proporsional ekanini tekshirish uchun qaysi tenglik yoziladi?",
+      "v": [
+        "5 : 60 000 = 96 000 : 8",
+        "8 : 5 = 60 000 : 96 000",
+        "5 : 8 = 60 000 : 96 000",
+        "5 : 8 = 96 000 : 60 000"
+      ],
+      "t": 2,
+      "izoh": "Nisbatlar bir xil tartibda yozilishi shart: kilogramm kilogrammga, narx narxga solishtiriladi. 5 : 8 = 60 000 : 96 000 shu talabga javob beradi. Tekshiramiz: 5 · 96 000 = 480 000 va 8 · 60 000 = 480 000, tenglik o'rinli. Qolgan yozuvlarda kattaliklar tartibi buzilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proporsiya-togriligini-tekshirish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#0c097ca7"
+    },
+    {
+      "q": "4 : 7 = 20 : x proporsiyadagi noma'lum tashqi hadni toping.",
+      "v": [
+        "23",
+        "80",
+        "35",
+        "140"
+      ],
+      "t": 2,
+      "izoh": "Asosiy xossaga ko'ra 4 · x = 7 · 20, ya'ni 4x = 140. Bundan x = 140 : 4 = 35 kelib chiqadi. 140 javobi bo'lish amalini tashlab ketish, 23 javobi hadlarni qo'shib-ayirish, 80 esa 20 ni 4 ga ko'paytirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomalum-tashqi-had",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#d2dc6435"
+    },
+    {
+      "q": "x : 12 = 15 : 20 proporsiyada noma'lum hadning qiymatini hisoblang.",
+      "v": [
+        "7",
+        "16",
+        "180",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "Krest bo'yicha ko'paytiramiz: x · 20 = 12 · 15 = 180. Demak x = 180 : 20 = 9. 180 javobi oxirgi bo'lishni bajarmaslik, 16 javobi nisbatni teskari qo'yish, ya'ni 12 · 20 : 15, 7 esa 12 + 15 − 20 ko'rinishidagi qo'shish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomalum-tashqi-had",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#dfd4a024"
+    },
+    {
+      "q": "Bir xil qalinlikdagi simning 6 metri 480 gramm keladi. Xuddi shu simning 15 metri necha gramm bo'ladi?",
+      "v": [
+        "1 200 g",
+        "192 g",
+        "960 g",
+        "1 440 g"
+      ],
+      "t": 0,
+      "izoh": "Sim bir xil qalinlikda, demak massa uzunlikka to'g'ri proporsional: 6 : 480 = 15 : x. Bundan 6x = 480 · 15 = 7 200 va x = 1 200 g. Bir metri 80 g kelishini topib 80 · 15 = 1 200 deb ham yechish mumkin. 192 g nisbatni teskari qo'yish, 960 g va 1 440 g esa uzunlikni ikki yoki uch barobar deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-tashqi-had",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#c0fc3f55"
+    },
+    {
+      "q": "Dilnoza retseptga ko'ra 3 stakan unga 250 ml sut qo'shadi. 12 stakan un uchun necha millilitr sut kerak bo'ladi?",
+      "v": [
+        "750 ml",
+        "1 000 ml",
+        "500 ml",
+        "3 000 ml"
+      ],
+      "t": 1,
+      "izoh": "Un miqdori 12 : 3 = 4 marta ortdi, demak sut ham 4 marta ortadi: 250 · 4 = 1 000 ml. Proporsiya ko'rinishida 3 : 250 = 12 : x, bundan 3x = 3 000 va x = 1 000. 750 ml uch barobar olish, 500 ml sut miqdorini faqat ikki barobar oshirish (250 · 2), 3 000 ml esa bo'lishni unutish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-tashqi-had",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#465d8a5e"
+    },
+    {
+      "q": "30 : x = 20 : 12 proporsiyada noma'lum ichki hadni hisoblang.",
+      "v": [
+        "22",
+        "24",
+        "50",
+        "18"
+      ],
+      "t": 3,
+      "izoh": "Asosiy xossaga ko'ra 30 · 12 = x · 20, ya'ni 20x = 360 va x = 18. 50 javobi nisbatni teskari qo'yish, ya'ni 30 · 20 : 12, 22 javobi x − 30 = 12 − 20 ko'rinishidagi ayirish xatosi, 24 esa 30 bilan 18 ning o'rta arifmetigidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomalum-ichki-had",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#698d2179"
+    },
+    {
+      "q": "Proporsiyaning ichki hadlaridan biri 14 ga, tashqi hadlari esa 8 va 35 ga teng. Ikkinchi ichki hadni toping.",
+      "v": [
+        "29",
+        "20",
+        "112",
+        "280"
+      ],
+      "t": 1,
+      "izoh": "Tashqi hadlar ko'paytmasi 8 · 35 = 280. Asosiy xossaga ko'ra ichki hadlar ko'paytmasi ham 280 bo'ladi: 14 · x = 280, bundan x = 20. 280 javobi bo'lishni bajarmaslik, 112 javobi 14 bilan 8 ni ko'paytirish, 29 esa hadlarni qo'shish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-ichki-had",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#e4b72157"
+    },
+    {
+      "q": "Avtobus bir tekis harakatlanib 5 soatda 275 km yo'l bosdi. Xuddi shu tezlikda 8 soatda necha kilometr yo'l bosadi?",
+      "v": [
+        "278 km",
+        "1 375 km",
+        "440 km",
+        "2 200 km"
+      ],
+      "t": 2,
+      "izoh": "Bir tekis harakatda masofa vaqtga to'g'ri proporsional: 5 : 275 = 8 : x. Tezlik 275 : 5 = 55 km/soat, demak 8 soatda 55 · 8 = 440 km yo'l bosiladi. 278 km vaqt farqini masofaga qo'shish, 2 200 km 275 ni 8 ga ko'paytirib bo'lishni unutish, 1 375 km esa noto'g'ri had bilan ko'paytirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-ichki-had",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#e14b90af"
+    },
+    {
+      "q": "Bo'yoq tayyorlashda har 4 litr suyultirgichga 18 kg quruq aralashma qo'shiladi. 27 kg aralashma uchun necha litr suyultirgich kerak?",
+      "v": [
+        "6 l",
+        "9 l",
+        "13 l",
+        "108 l"
+      ],
+      "t": 0,
+      "izoh": "Miqdorlar proporsional, shuning uchun 4 : 18 = x : 27 deb yozamiz. Asosiy xossaga ko'ra 18x = 4 · 27 = 108, bundan x = 6 l. 108 l javobi bo'lish amalini tashlab ketish, 13 l javobi 4 + (27 − 18) ko'rinishidagi qo'shish xatosi, 9 l esa 27 ni 3 ga bo'lish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-ichki-had",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#b5d5699e"
+    },
+    {
+      "q": "(x + 3) : 5 = 12 : 4 proporsiyadan x ning qiymatini toping.",
+      "v": [
+        "12",
+        "15",
+        "9",
+        "18"
+      ],
+      "t": 0,
+      "izoh": "Asosiy xossaga ko'ra 4 · (x + 3) = 5 · 12 = 60, demak x + 3 = 15 va x = 12. 15 javobi x + 3 ifodaning qiymatini javob deb olish, 9 javobi x + 3 = 12 deb yechish, 18 esa 15 ga yana 3 ni qo'shish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifodali-proporsiya",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#9bd0582d"
+    },
+    {
+      "q": "3 : (2x − 1) = 9 : 21 tenglikdan x ning qiymatini aniqlang.",
+      "v": [
+        "3",
+        "4",
+        "7",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Krest bo'yicha ko'paytiramiz: 3 · 21 = 9 · (2x − 1), ya'ni 63 = 18x − 9. Bundan 18x = 72 va x = 4. 7 javobi 2x − 1 ifodaning qiymatini javob deb olish, 8 javobi 2x ni javob deb olish, 3 esa ishorani noto'g'ri hisobga olish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodali-proporsiya",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#362f457d"
+    },
+    {
+      "q": "x : 2,5 = 6 : 1,5 proporsiyadagi noma'lum hadni hisoblang.",
+      "v": [
+        "7",
+        "9",
+        "15",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Asosiy xossaga ko'ra x · 1,5 = 2,5 · 6 = 15, bundan x = 15 : 1,5 = 10. 15 javobi 1,5 ga bo'lishni unutish, 9 javobi 6 ni 1,5 ga ko'paytirish, 7 esa 6 + (2,5 − 1,5) ko'rinishidagi qo'shish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifodali-proporsiya",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#b0b1f2bf"
+    },
+    {
+      "q": "Sinfdagi o'g'il va qiz bolalar soni 3 : 4 nisbatda. Sinfda 24 nafar qiz bola bo'lsa, o'g'il bolalar nechta?",
+      "v": [
+        "6",
+        "32",
+        "18",
+        "42"
+      ],
+      "t": 2,
+      "izoh": "Nisbatda qizlar 4 qismni tashkil qiladi va ular 24 nafar, demak bir qism 24 : 4 = 6 nafarga teng. O'g'il bolalar 3 qism, ya'ni 3 · 6 = 18 nafar. 6 javobi bir qismning o'zi, 32 javobi nisbatni teskari qo'llash, 42 esa sinfdagi jami o'quvchi sonidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodali-proporsiya",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#1c663c7a"
+    },
+    {
+      "q": "Aka va uka 84 000 so'mni bajargan ishlariga qarab 3 : 4 nisbatda bo'lishdi. Kichik ulush necha so'm bo'ladi?",
+      "v": [
+        "12 000 so'm",
+        "36 000 so'm",
+        "42 000 so'm",
+        "48 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Nisbat hadlari yig'indisi 3 + 4 = 7 qism. Bir qism 84 000 : 7 = 12 000 so'mga teng. Kichik ulush 3 qism, ya'ni 3 · 12 000 = 36 000 so'm. 48 000 so'm katta ulush, 42 000 so'm pulni teng bo'lish natijasi, 12 000 so'm esa bir qismning o'zi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-qismga-bolish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#59701ad4"
+    },
+    {
+      "q": "Uzunligi 168 metr bo'lgan simni 5 : 7 nisbatda ikki bo'lakka bo'lishdi. Uzun bo'lakning uzunligi qancha?",
+      "v": [
+        "14 m",
+        "70 m",
+        "84 m",
+        "98 m"
+      ],
+      "t": 3,
+      "izoh": "Qismlar yig'indisi 5 + 7 = 12, bir qism 168 : 12 = 14 m. Uzun bo'lak 7 qism, ya'ni 7 · 14 = 98 m. 70 m kalta bo'lakning uzunligi, 84 m simni teng ikkiga bo'lish natijasi, 14 m esa bir qismning uzunligidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-qismga-bolish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#d3523816"
+    },
+    {
+      "q": "Fermer 96 gektar yerni bug'doy va makkajo'xori uchun 5 : 3 nisbatda ajratdi. Makkajo'xoriga necha gektar yer to'g'ri keladi?",
+      "v": [
+        "36 ga",
+        "12 ga",
+        "48 ga",
+        "60 ga"
+      ],
+      "t": 0,
+      "izoh": "Yer 5 + 3 = 8 qismga bo'linadi, bir qism 96 : 8 = 12 gektar. Makkajo'xori 3 qism oladi, ya'ni 3 · 12 = 36 gektar. 60 ga bug'doy ulushi, 48 ga yerni teng bo'lish natijasi, 12 ga esa bir qismning o'zidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-qismga-bolish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#887e0fda"
+    },
+    {
+      "q": "Ikki ishchi 255 000 so'm ish haqini sarflagan vaqtiga qarab 8 : 9 nisbatda bo'lishdi. Ko'proq ishlagan ishchi qancha oldi?",
+      "v": [
+        "15 000 so'm",
+        "120 000 so'm",
+        "135 000 so'm",
+        "127 500 so'm"
+      ],
+      "t": 2,
+      "izoh": "Qismlar yig'indisi 8 + 9 = 17, bir qism 255 000 : 17 = 15 000 so'm. Ko'proq ishlagan ishchi 9 qism oladi: 9 · 15 000 = 135 000 so'm. 120 000 so'm ikkinchi ishchining ulushi, 127 500 so'm pulni teng bo'lish, 15 000 so'm esa bir qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-qismga-bolish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#f071f601"
+    },
+    {
+      "q": "270 ta kitob uch sinf o'rtasida 2 : 3 : 4 nisbatda taqsimlandi. Eng ko'p kitob olgan sinfda nechta kitob bor?",
+      "v": [
+        "30",
+        "60",
+        "120",
+        "90"
+      ],
+      "t": 2,
+      "izoh": "Qismlar yig'indisi 2 + 3 + 4 = 9, bir qism 270 : 9 = 30 ta kitob. Eng katta ulush 4 qism, ya'ni 4 · 30 = 120 ta kitob. 60 ta eng kam ulush, 90 ta kitoblarni teng bo'lish natijasi, 30 ta esa bir qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-qismga-bolish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#5b561e74"
+    },
+    {
+      "q": "Uchburchakning ichki burchaklari 2 : 3 : 5 nisbatda. Uchburchakdagi eng katta burchak necha gradusga teng?",
+      "v": [
+        "36°",
+        "90°",
+        "54°",
+        "72°"
+      ],
+      "t": 1,
+      "izoh": "Uchburchak ichki burchaklari yig'indisi 180°. Qismlar yig'indisi 2 + 3 + 5 = 10, bir qism 180° : 10 = 18°. Eng katta burchak 5 qism, ya'ni 5 · 18° = 90°. 36° eng kichik burchak, 54° o'rtancha burchak, 72° esa qismlar sonini noto'g'ri olish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-qismga-bolish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#55b12e6c"
+    },
+    {
+      "q": "Qotishmadagi mis, rux va qalay massalari 4 : 5 : 7 nisbatda. Qotishmaning umumiy massasi 64 kg bo'lsa, ruxning massasi qancha?",
+      "v": [
+        "4 kg",
+        "16 kg",
+        "28 kg",
+        "20 kg"
+      ],
+      "t": 3,
+      "izoh": "Qismlar yig'indisi 4 + 5 + 7 = 16, bir qism 64 : 16 = 4 kg. Rux 5 qismni egallaydi, ya'ni 5 · 4 = 20 kg. 16 kg misning massasi, 28 kg qalayning massasi, 4 kg esa bir qismning massasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-qismga-bolish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#b0225b5f"
+    },
+    {
+      "q": "Uch do'st 385 000 so'mlik xarajatni 3 : 5 : 6 nisbatda qopladi. Eng ko'p va eng kam to'lagan do'stlarning to'lovlari farqi qancha?",
+      "v": [
+        "82 500 so'm",
+        "27 500 so'm",
+        "55 000 so'm",
+        "110 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Qismlar yig'indisi 3 + 5 + 6 = 14, bir qism 385 000 : 14 = 27 500 so'm. Eng ko'p to'lov 6 qism, eng kam to'lov 3 qism, farqi 6 − 3 = 3 qism: 3 · 27 500 = 82 500 so'm. 55 000 so'm ikki qism, 110 000 so'm to'rt qism, 27 500 so'm esa bir qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-qismga-bolish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#e11ef24a"
+    },
+    {
+      "q": "Ikki sonning nisbati 7 : 4, ularning ayirmasi esa 39 ga teng. Katta sonni toping.",
+      "v": [
+        "52",
+        "156",
+        "273",
+        "91"
+      ],
+      "t": 3,
+      "izoh": "Sonlarni 7k va 4k deb belgilaymiz. Ayirmasi 7k − 4k = 3k = 39, demak k = 13. Katta son 7k = 7 · 13 = 91 bo'ladi. 52 kichik son, 156 va 273 esa ayirmani bir qism deb olib 39 ni 4 yoki 7 ga ko'paytirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-va-ayirma",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#03bf62be"
+    },
+    {
+      "q": "Ikki idishdagi suv miqdorlari 9 : 5 nisbatda bo'lib, birinchisida ikkinchisiga qaraganda 12 litr ko'p suv bor. Ikkinchi idishda necha litr suv bor?",
+      "v": [
+        "15 l",
+        "3 l",
+        "27 l",
+        "42 l"
+      ],
+      "t": 0,
+      "izoh": "Miqdorlarni 9k va 5k deb olamiz. Ayirma 9k − 5k = 4k = 12, bundan k = 3. Ikkinchi idishda 5k = 5 · 3 = 15 litr suv bor. 27 l birinchi idishdagi suv, 42 l ikkalasidagi jami suv, 3 l esa bir qismning hajmi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-va-ayirma",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#6f4ab27b"
+    },
+    {
+      "q": "Otaning yoshi bilan o'g'lining yoshi 8 : 3 nisbatda bo'lib, ota o'g'lidan 35 yosh katta. Otaning yoshi nechada?",
+      "v": [
+        "21",
+        "35",
+        "56",
+        "77"
+      ],
+      "t": 2,
+      "izoh": "Yoshlarni 8k va 3k deb belgilaymiz. Farqi 8k − 3k = 5k = 35, bundan k = 7. Otaning yoshi 8k = 56, o'g'lining yoshi esa 3k = 21. 35 javobi farqning o'zini javob deb olish, 77 esa ikkalasining yoshi yig'indisidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-va-ayirma",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#abaf4737"
+    },
+    {
+      "q": "Ikki sonning nisbati 5 : 2, ayirmasi esa 21 ga teng. Shu ikki sonning yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "14",
+        "49",
+        "35",
+        "63"
+      ],
+      "t": 1,
+      "izoh": "Sonlar 5k va 2k ko'rinishida. Ayirma 3k = 21, demak k = 7. Sonlar 35 va 14, ularning yig'indisi 5k + 2k = 7k = 7 · 7 = 49. 35 katta son, 14 kichik son, 63 esa ayirmani uch marta olish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-va-ayirma",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#4766fa99"
+    },
+    {
+      "q": "Ikki xonali sonning o'nlar va birlar xonasidagi raqamlari 2 : 3 nisbatda, ularning yig'indisi esa 10 ga teng. Shu sonning o'zini toping.",
+      "v": [
+        "46",
+        "64",
+        "23",
+        "32"
+      ],
+      "t": 0,
+      "izoh": "Raqamlarni 2k va 3k deb olamiz. Yig'indisi 2k + 3k = 5k = 10, demak k = 2. O'nlar xonasida 4, birlar xonasida 6 turadi, ya'ni son 46 ga teng. 64 javobi raqamlarni o'rin almashtirish, 23 va 32 esa nisbat hadlarini sonning raqamlari deb olish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-va-yigindi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#73020949"
+    },
+    {
+      "q": "Bog'da olma va o'rik daraxtlari 7 : 5 nisbatda ekilgan, ularning umumiy soni 132 ta. Olma daraxtlari nechta?",
+      "v": [
+        "11",
+        "55",
+        "77",
+        "66"
+      ],
+      "t": 2,
+      "izoh": "Qismlar yig'indisi 7 + 5 = 12, bir qism 132 : 12 = 11 ta daraxt. Olma daraxtlari 7 qism, ya'ni 7 · 11 = 77 ta. 55 ta o'rik daraxtlari soni, 66 ta daraxtlarni teng bo'lish natijasi, 11 ta esa bir qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-va-yigindi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#645271e6"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 156 ga, nisbati esa 9 : 4 ga teng. Bu sonlarning ayirmasini toping.",
+      "v": [
+        "48",
+        "60",
+        "108",
+        "72"
+      ],
+      "t": 1,
+      "izoh": "Qismlar yig'indisi 9 + 4 = 13, bir qism 156 : 13 = 12. Sonlar 108 va 48 bo'ladi, ularning ayirmasi 9k − 4k = 5k = 5 · 12 = 60. 108 va 48 sonlarning o'zlari, 72 esa qismlar sonini noto'g'ri olish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-va-yigindi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#b1ddbfa8"
+    },
+    {
+      "q": "a : b = 3 : 4 va b : c = 6 : 7 bo'lsa, a : c nisbatni eng sodda ko'rinishda toping.",
+      "v": [
+        "3 : 7",
+        "18 : 7",
+        "14 : 9",
+        "9 : 14"
+      ],
+      "t": 3,
+      "izoh": "Ikkala nisbatda b hadini tenglashtiramiz: 4 va 6 ning eng kichik umumiy karralisi 12. Birinchi nisbatni 3 ga kengaytiramiz: a : b = 9 : 12. Ikkinchisini 2 ga kengaytiramiz: b : c = 12 : 14. Demak a : b : c = 9 : 12 : 14 va a : c = 9 : 14. 3 : 7 o'rta hadni tenglashtirmaslik, 14 : 9 teskari yozuv, 18 : 7 esa hadlarni to'g'ridan-to'g'ri ko'paytirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbatlar-zanjiri",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#89bdbfd5"
+    },
+    {
+      "q": "Qalam narxining ruchka narxiga nisbati 2 : 5, ruchka narxining daftar narxiga nisbati esa 3 : 4. Qalam narxining daftar narxiga nisbatini toping.",
+      "v": [
+        "1 : 2",
+        "6 : 15",
+        "3 : 10",
+        "10 : 3"
+      ],
+      "t": 2,
+      "izoh": "Ruchka hadini tenglashtiramiz: 5 va 3 ning umumiy karralisi 15. Qalam : ruchka = 6 : 15, ruchka : daftar = 15 : 20. Demak qalam : daftar = 6 : 20, uni 2 ga qisqartirsak 3 : 10 chiqadi. 6 : 15 faqat birinchi nisbatni javob deb olish, 1 : 2 chetki hadlarni olish, 10 : 3 esa teskari yozuv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbatlar-zanjiri",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#51d8b326"
+    },
+    {
+      "q": "Uch shaharcha aholisi haqida ma'lum: A ning B ga nisbati 5 : 6, B ning C ga nisbati esa 4 : 9. A : B : C nisbatni ko'rsating.",
+      "v": [
+        "5 : 6 : 9",
+        "10 : 12 : 27",
+        "20 : 24 : 27",
+        "5 : 4 : 9"
+      ],
+      "t": 1,
+      "izoh": "B hadini tenglashtirish kerak: 6 va 4 ning eng kichik umumiy karralisi 12. Birinchi nisbatni 2 ga kengaytiramiz: A : B = 10 : 12. Ikkinchisini 3 ga kengaytiramiz: B : C = 12 : 27. Demak A : B : C = 10 : 12 : 27. 5 : 6 : 9 va 5 : 4 : 9 hadlarni tenglashtirmasdan ko'chirish, 20 : 24 : 27 esa faqat dastlabki ikki hadni ikkilantirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbatlar-zanjiri",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#5758de0d"
+    },
+    {
+      "q": "x : y = 4 : 5 va y : z = 10 : 3 bo'lsa, x : y : z nisbatni soddalashtirilgan ko'rinishda yozing.",
+      "v": [
+        "4 : 5 : 3",
+        "4 : 10 : 3",
+        "8 : 10 : 3",
+        "8 : 10 : 6"
+      ],
+      "t": 2,
+      "izoh": "y hadini tenglashtiramiz: 5 va 10 ning umumiy karralisi 10. Birinchi nisbatni 2 ga kengaytiramiz: x : y = 8 : 10. Ikkinchisi o'zgarmaydi: y : z = 10 : 3. Demak x : y : z = 8 : 10 : 3. 4 : 5 : 3 va 4 : 10 : 3 hadni tenglashtirmaslik, 8 : 10 : 6 esa z ni ham keraksiz ikkilantirish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbatlar-zanjiri",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#8b4ec6df"
+    },
+    {
+      "q": "a : b = 2 : 3, b : c = 4 : 5 va c : d = 6 : 7 bo'lsa, a : d nisbat qanday bo'ladi?",
+      "v": [
+        "2 : 7",
+        "8 : 15",
+        "16 : 35",
+        "35 : 16"
+      ],
+      "t": 2,
+      "izoh": "Avval a : b : c ni topamiz: 3 va 4 ni tenglashtirib a : b : c = 8 : 12 : 15 hosil qilamiz. Endi c hadini c : d = 6 : 7 bilan tenglashtiramiz: 15 va 6 ning umumiy karralisi 30, shuning uchun birinchi zanjirni 2 ga kengaytiramiz: 16 : 24 : 30, ikkinchisini 5 ga: 30 : 35. Demak a : b : c : d = 16 : 24 : 30 : 35 va a : d = 16 : 35. 2 : 7 chetki hadlarni olish, 8 : 15 oxirgi bo'g'inni tashlab ketish, 35 : 16 esa teskari yozuv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-boginli-zanjir",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#b803b4be"
+    },
+    {
+      "q": "Zavodda uch turdagi mahsulot chiqariladi: birinchisining ikkinchisiga nisbati 3 : 5, ikkinchisining uchinchisiga nisbati 2 : 7. Birinchi mahsulot 90 ta bo'lsa, uchinchisi nechta?",
+      "v": [
+        "150",
+        "210",
+        "525",
+        "630"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi mahsulot hadini tenglashtiramiz: 5 va 2 ning umumiy karralisi 10. Birinchi : ikkinchi = 6 : 10, ikkinchi : uchinchi = 10 : 35. Demak nisbat 6 : 10 : 35. Birinchisi 90 ta bo'lsa, koeffitsient 90 : 6 = 15. Uchinchisi 35 · 15 = 525 ta. 150 ikkinchi mahsulot soni, 210 o'rta bo'g'inni tashlab yuborish, 630 esa 90 ni 7 ga ko'paytirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-boginli-zanjir",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#8f5ff50e"
+    },
+    {
+      "q": "Uch tishli g'ildirak bog'langan: birinchisining ikkinchisiga nisbati 5 : 2, ikkinchisining uchinchisiga nisbati 3 : 8. Birinchisining uchinchisiga nisbatini toping.",
+      "v": [
+        "15 : 16",
+        "5 : 8",
+        "16 : 15",
+        "15 : 8"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi g'ildirak hadini tenglashtiramiz: 2 va 3 ning umumiy karralisi 6. Birinchi : ikkinchi = 15 : 6, ikkinchi : uchinchi = 6 : 16. Demak birinchi : uchinchi = 15 : 16. 5 : 8 o'rta hadni e'tiborga olmaslik, 16 : 15 teskari yozuv, 15 : 8 esa faqat birinchi nisbatni kengaytirib qo'yish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-boginli-zanjir",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#430b3a58"
+    },
+    {
+      "q": "Agar m : n = 7 : 2 va n : p = 8 : 5 bo'lsa, m + p yig'indining n ga nisbati nechaga teng bo'ladi?",
+      "v": [
+        "8 : 33",
+        "12 : 10",
+        "36 : 8",
+        "33 : 8"
+      ],
+      "t": 3,
+      "izoh": "n hadini tenglashtiramiz: 2 va 8 ning umumiy karralisi 8. m : n = 28 : 8, n : p = 8 : 5, demak m : n : p = 28 : 8 : 5. Endi m + p = 28 + 5 = 33 va n = 8, ya'ni nisbat 33 : 8. 12 : 10 hadlarni tenglashtirmasdan qo'shish, 36 : 8 p o'rniga n ni qo'shish, 8 : 33 esa teskari yozuv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-boginli-zanjir",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#80753bc8"
+    },
+    {
+      "q": "a/b = c/d = 3/8 bo'lsa, (a + c)/(b + d) kasrning qiymati nimaga teng bo'ladi?",
+      "v": [
+        "3/16",
+        "3/8",
+        "6/8",
+        "11/16"
+      ],
+      "t": 1,
+      "izoh": "Teng nisbatlarning yig'indi xossasiga ko'ra, bir nechta teng kasrning suratlari yig'indisini maxrajlari yig'indisiga bo'lsak, o'sha kasrning o'zi chiqadi. Demak (a + c)/(b + d) = 3/8. Buni tekshirish oson: a = 3t, b = 8t, c = 3s, d = 8s bo'lsa, (3t + 3s)/(8t + 8s) = 3/8. 6/8 faqat suratlarni, 3/16 faqat maxrajlarni qo'shish, 11/16 esa surat bilan maxrajni qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-nisbatlar-yigindi-xossasi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#cd241c2f"
+    },
+    {
+      "q": "Ikki fermer xo'jaligida hosildorlik bir xil: birinchisida 45 gektardan 270 tonna, ikkinchisida 35 gektardan 210 tonna hosil olindi. Ikkala xo'jalik birgalikda bir gektardan necha tonna hosil olgan?",
+      "v": [
+        "6 t",
+        "3 t",
+        "12 t",
+        "60 t"
+      ],
+      "t": 0,
+      "izoh": "Birinchi xo'jalikda 270 : 45 = 6 t/ga, ikkinchisida 210 : 35 = 6 t/ga. Nisbatlar teng bo'lgani uchun yig'indi xossasi qo'llanadi: (270 + 210) : (45 + 35) = 480 : 80 = 6 t/ga. 12 t ikkita hosildorlikni qo'shish, 3 t natijani yana ikkiga bo'lish, 60 t esa birliklarni chalkashtirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-nisbatlar-yigindi-xossasi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#ca313c25"
+    },
+    {
+      "q": "Uchta kasr o'zaro teng: 4/7 = 12/21 = 20/35. Ularning suratlari yig'indisining maxrajlari yig'indisiga nisbati nimaga teng?",
+      "v": [
+        "7/4",
+        "36/7",
+        "12/63",
+        "4/7"
+      ],
+      "t": 3,
+      "izoh": "Suratlar yig'indisi 4 + 12 + 20 = 36, maxrajlar yig'indisi 7 + 21 + 35 = 63. Nisbat 36/63 bo'ladi, uni 9 ga qisqartirsak 4/7 chiqadi. Bu teng nisbatlarning yig'indi xossasini tasdiqlaydi. 36/7 faqat suratlarni qo'shish, 12/63 o'rtadagi suratni olish, 7/4 esa teskari yozuv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-nisbatlar-yigindi-xossasi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#ad040a14"
+    },
+    {
+      "q": "x/3 = y/5 = z/8 tenglik o'rinli va x + y + z = 96 ekani ma'lum. Bunda z − x ayirmasi nechaga teng bo'ladi?",
+      "v": [
+        "5",
+        "30",
+        "18",
+        "48"
+      ],
+      "t": 1,
+      "izoh": "Umumiy nisbatni k deb olamiz: x = 3k, y = 5k, z = 8k. Yig'indi 3k + 5k + 8k = 16k = 96, demak k = 6. Bundan x = 18, y = 30, z = 48 va z − x = 48 − 18 = 30. 18 va 48 sonlarning o'zlari, 5 esa nisbat hadlarining ayirmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-nisbatlar-yigindi-xossasi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#1451935b"
+    },
+    {
+      "q": "a/b = c/d = 5/9 va a − c = 20 bo'lsa, b − d ayirmasi nechaga teng?",
+      "v": [
+        "5",
+        "11",
+        "36",
+        "24"
+      ],
+      "t": 2,
+      "izoh": "Teng nisbatlarning ayirma xossasiga ko'ra (a − c)/(b − d) ham 5/9 ga teng bo'ladi. Demak 20/(b − d) = 5/9, bundan 5 · (b − d) = 180 va b − d = 36. 11 javobi nisbatni teskari qo'llash, 24 javobi 20 + 9 − 5 ko'rinishidagi qo'shish xatosi, 5 esa 20 ni hadlar farqi 4 ga bo'lish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-nisbatlar-ayirma-xossasi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#5bbb177c"
+    },
+    {
+      "q": "Ikki xil qotishmada mis va ruxning nisbati bir xil, ya'ni 7 : 4. Birinchi qotishmada misdan ikkinchisiga qaraganda 42 kg ko'p. Rux miqdorlari orasidagi farq qancha?",
+      "v": [
+        "12 kg",
+        "24 kg",
+        "18 kg",
+        "66 kg"
+      ],
+      "t": 1,
+      "izoh": "Nisbatlar teng bo'lgani uchun mis miqdorlari farqining rux miqdorlari farqiga nisbati ham 7 : 4 bo'ladi. Demak 42 : x = 7 : 4, bundan 7x = 168 va x = 24 kg. 12 kg 42 ni 7 ga bo'lib 2 ga ko'paytirish, 18 kg 42 dan 24 ni ayirish, 66 kg esa ikki farqni qo'shish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-nisbatlar-ayirma-xossasi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#db822225"
+    },
+    {
+      "q": "p/q = r/s tenglik o'rinli va q ≠ s. Quyidagi tengliklardan qaysi biri bundan har doim kelib chiqadi?",
+      "v": [
+        "p/r = s/q",
+        "(p + r)/(q − s) = p/q",
+        "(p − r)/(q − s) = p/q",
+        "(p − r)/(q + s) = r/s"
+      ],
+      "t": 2,
+      "izoh": "Teng nisbatlarning ayirma xossasi: agar p/q = r/s bo'lsa, suratlar ayirmasining maxrajlar ayirmasiga nisbati ham o'sha qiymatga teng bo'ladi, ya'ni (p − r)/(q − s) = p/q. Buni p = kq, r = ks deb qo'yib tekshirish mumkin: (kq − ks)/(q − s) = k. Qolgan uch yozuvda surat va maxrajdagi amallar mos kelmaydi, shuning uchun ular har doim o'rinli emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-nisbatlar-ayirma-xossasi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#22db2911"
+    },
+    {
+      "q": "a : b = c : d = 9 : 5 bo'lib, a − c = 36 ekani ma'lum. b − d ni topib, so'ng (a − c) − (b − d) ayirmani hisoblang.",
+      "v": [
+        "16",
+        "20",
+        "36",
+        "56"
+      ],
+      "t": 0,
+      "izoh": "Ayirma xossasiga ko'ra (a − c) : (b − d) = 9 : 5. Demak 36 : (b − d) = 9 : 5, bundan 9 · (b − d) = 180 va b − d = 20. So'ralgan ayirma 36 − 20 = 16 ga teng. 20 javobi oraliq natijani javob deb olish, 36 javobi shartdagi sonni qaytarish, 56 esa ikki ayirmani qo'shish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-nisbatlar-ayirma-xossasi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#b9956e17"
+    },
+    {
+      "q": "a/b = 4/9 bo'lsa, (a + b)/b nisbat nimaga teng bo'ladi?",
+      "v": [
+        "9/13",
+        "4/13",
+        "13/4",
+        "13/9"
+      ],
+      "t": 3,
+      "izoh": "a/b = 4/9 bo'lgani uchun a = 4t va b = 9t deb olamiz. U holda a + b = 13t, demak (a + b)/b = 13t/9t = 13/9. Bu hosila proporsiya deyiladi: kasrga bir qo'shsak (a + b)/b = a/b + 1 = 4/9 + 9/9 = 13/9. 13/4 maxraj o'rniga suratni olish, 4/13 va 9/13 esa yig'indini noto'g'ri joyga qo'yish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-proporsiya",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#85fd70f0"
+    },
+    {
+      "q": "x : y = 7 : 3 bo'lsa, (x − y) : y nisbat qanday bo'ladi?",
+      "v": [
+        "3 : 4",
+        "10 : 3",
+        "4 : 7",
+        "4 : 3"
+      ],
+      "t": 3,
+      "izoh": "x = 7t va y = 3t deb olamiz. U holda x − y = 7t − 3t = 4t, demak (x − y) : y = 4t : 3t = 4 : 3. 10 : 3 ayirish o'rniga qo'shish, 4 : 7 maxrajga x ni qo'yish, 3 : 4 esa teskari yozuv natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hosila-proporsiya",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#b6374fe6"
+    },
+    {
+      "q": "Do'kondagi mahsulot sotuv narxining tannarxga nisbati 6 : 5. Sotuvchi foydasining tannarxga nisbatini toping.",
+      "v": [
+        "1 : 6",
+        "1 : 5",
+        "5 : 6",
+        "6 : 11"
+      ],
+      "t": 1,
+      "izoh": "Sotuv narxini 6t, tannarxni 5t deb olamiz. Foyda sotuv narxi bilan tannarx ayirmasiga teng: 6t − 5t = t. Demak foydaning tannarxga nisbati t : 5t = 1 : 5. 1 : 6 foydani sotuv narxiga solishtirish, 5 : 6 tannarxni sotuv narxiga solishtirish, 6 : 11 esa maxrajga yig'indini qo'yish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hosila-proporsiya",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#5b95d67d"
+    },
+    {
+      "q": "m/n = 5/2 bo'lsa, (3m + 2n)/(2m − n) ifodaning qiymatini toping.",
+      "v": [
+        "8/19",
+        "19/12",
+        "19/8",
+        "17/8"
+      ],
+      "t": 2,
+      "izoh": "m = 5t va n = 2t deb olamiz. Surat 3m + 2n = 15t + 4t = 19t, maxraj esa 2m − n = 10t − 2t = 8t. Demak ifodaning qiymati 19t/8t = 19/8. 8/19 teskari yozuv, 19/12 maxrajda ayirish o'rniga qo'shish, 17/8 esa suratdagi koeffitsientni noto'g'ri olish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hosila-proporsiya",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#c52d6c02"
+    },
+    {
+      "q": "4 va 25 sonlari orasidagi o'rta proporsional sonning musbat qiymatini toping.",
+      "v": [
+        "10",
+        "14,5",
+        "29",
+        "100"
+      ],
+      "t": 0,
+      "izoh": "O'rta proporsional x uchun 4 : x = x : 25 proporsiya tuziladi. Asosiy xossaga ko'ra x² = 4 · 25 = 100, demak x = 10. 14,5 javobi o'rta arifmetikni hisoblash, 100 javobi ildiz olishni unutish, 29 esa sonlarni qo'shish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-proporsional",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#7d1a897c"
+    },
+    {
+      "q": "16 : x = x : 49 uzluksiz proporsiyada noma'lum o'rta hadning musbat qiymatini toping.",
+      "v": [
+        "32,5",
+        "28",
+        "65",
+        "784"
+      ],
+      "t": 1,
+      "izoh": "Asosiy xossaga ko'ra x² = 16 · 49 = 784. Bundan x = √784 = 28. Buni √16 · √49 = 4 · 7 = 28 deb ham hisoblash mumkin. 784 javobi ildiz olmaslik, 32,5 javobi o'rta arifmetik, 65 esa sonlar yig'indisidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-proporsional",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#fc2166f6"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi bog'ning tomonlari 8 m va 18 m. Xuddi shunday yuzaga ega kvadrat tomonining uzunligini toping.",
+      "v": [
+        "13 m",
+        "26 m",
+        "144 m",
+        "12 m"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri to'rtburchakning yuzasi 8 · 18 = 144 m². Kvadrat tomoni a bo'lsa, a² = 144 va a = 12 m. Aslida 12 soni 8 bilan 18 orasidagi o'rta proporsional, chunki 8 : 12 = 12 : 18. 13 m o'rta arifmetik, 26 m tomonlar yig'indisi, 144 m esa yuzani tomon deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-proporsional",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#ce7a9977"
+    },
+    {
+      "q": "Uchta son uzluksiz proporsiya tashkil qiladi: birinchisi 5, uchinchisi esa 45 ga teng. O'rta hadning musbat qiymati va uchala son yig'indisi qanday bo'ladi?",
+      "v": [
+        "15 va 65",
+        "25 va 75",
+        "15 va 60",
+        "225 va 275"
+      ],
+      "t": 0,
+      "izoh": "Uzluksiz proporsiyada 5 : x = x : 45, demak x² = 5 · 45 = 225 va x = 15. Uchala son 5, 15 va 45, ularning yig'indisi 5 + 15 + 45 = 65. 225 va 275 javobi ildiz olishni unutish, 15 va 60 javobi yig'indida birinchi sonni tashlab ketish, 25 va 75 esa o'rta hadni noto'g'ri topish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-proporsional",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#0d04e188"
+    },
+    {
+      "q": "Xarita masshtabi 1 : 200 000 ga teng. Xaritadagi 7 sm masofa yerda necha kilometrga to'g'ri keladi?",
+      "v": [
+        "1,4 km",
+        "140 km",
+        "14 km",
+        "1 400 km"
+      ],
+      "t": 2,
+      "izoh": "Masshtab 1 : 200 000 xaritadagi 1 sm yerdagi 200 000 sm ga tengligini bildiradi. Demak 7 sm yerda 7 · 200 000 = 1 400 000 sm ni beradi. 1 400 000 sm ni kilometrga aylantiramiz: 1 400 000 : 100 000 = 14 km. Qolgan javoblar birlikni aylantirishda vergulni noto'g'ri ko'chirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#a006b444"
+    },
+    {
+      "q": "Ikki shahar orasidagi haqiqiy masofa 48 km. Masshtabi 1 : 800 000 bo'lgan xaritada bu masofa necha santimetr bo'ladi?",
+      "v": [
+        "0,6 sm",
+        "60 sm",
+        "16 sm",
+        "6 sm"
+      ],
+      "t": 3,
+      "izoh": "Avval masofani santimetrga aylantiramiz: 48 km = 4 800 000 sm. Masshtabga ko'ra xaritadagi uzunlik 4 800 000 : 800 000 = 6 sm. 60 sm va 0,6 sm javoblari birlik aylantirishda o'nlik xatosi, 16 sm esa 48 ni 3 ga bo'lish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#af9edaa2"
+    },
+    {
+      "q": "Binoning chizmasi 1 : 50 masshtabda bajarilgan. Chizmada devor uzunligi 24 sm bo'lsa, haqiqiy devor necha metr keladi?",
+      "v": [
+        "1,2 m",
+        "120 m",
+        "12 m",
+        "48 m"
+      ],
+      "t": 2,
+      "izoh": "Haqiqiy uzunlik chizmadagi uzunlikni masshtab maxrajiga ko'paytirish bilan topiladi: 24 · 50 = 1 200 sm. Buni metrga aylantiramiz: 1 200 : 100 = 12 m. 120 m va 1,2 m javoblari metrga o'tkazishda xato, 48 m esa 24 ni ikkiga ko'paytirish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#d8d75997"
+    },
+    {
+      "q": "Bir hududning ikkita xaritasi bor: birinchisining masshtabi 1 : 25 000, ikkinchisiniki 1 : 100 000. Birinchi xaritada 12 sm bo'lgan yo'l ikkinchisida necha santimetr bo'ladi?",
+      "v": [
+        "3 sm",
+        "4 sm",
+        "6 sm",
+        "48 sm"
+      ],
+      "t": 0,
+      "izoh": "Avval haqiqiy uzunlikni topamiz: 12 · 25 000 = 300 000 sm. Ikkinchi xaritada bu 300 000 : 100 000 = 3 sm ni beradi. Qisqaroq yo'l: maxrajlar nisbati 100 000 : 25 000 = 4, demak uzunlik 4 marta kichrayadi. 4 sm javobi koeffitsientning o'zini javob deb olish, 48 sm ko'paytirish, 6 sm esa ikkiga bo'lish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masshtab",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#a8033662"
+    },
+    {
+      "q": "Sharbat tayyorlashda konsentrat va suv 2 : 9 nisbatda aralashtiriladi. 4,4 litr sharbat olish uchun necha litr konsentrat kerak?",
+      "v": [
+        "0,4 l",
+        "0,8 l",
+        "1,1 l",
+        "3,6 l"
+      ],
+      "t": 1,
+      "izoh": "Qismlar yig'indisi 2 + 9 = 11, bir qism 4,4 : 11 = 0,4 litr. Konsentrat 2 qism, ya'ni 2 · 0,4 = 0,8 litr. 3,6 l suvning hajmi, 1,1 l sharbatni to'rtga bo'lish, 0,4 l esa bir qismning o'zi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralashma-nisbati",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#fb7bb7b0"
+    },
+    {
+      "q": "Betonga sement, qum va shag'al 1 : 3 : 5 nisbatda solinadi. 720 kg beton tayyorlash uchun necha kilogramm qum kerak bo'ladi?",
+      "v": [
+        "80 kg",
+        "144 kg",
+        "240 kg",
+        "400 kg"
+      ],
+      "t": 2,
+      "izoh": "Qismlar yig'indisi 1 + 3 + 5 = 9, bir qism 720 : 9 = 80 kg. Qum 3 qism, demak 3 · 80 = 240 kg. 80 kg sement miqdori, 400 kg shag'al miqdori, 144 kg esa 720 ni 5 ga bo'lish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralashma-nisbati",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#f50d255a"
+    },
+    {
+      "q": "Bo'yoqchi oq va ko'k bo'yoqni 3 : 2 nisbatda aralashtirib 15 litr aralashma oldi. Unga yana 5 litr ko'k bo'yoq qo'shsa, yangi nisbat qanday bo'ladi?",
+      "v": [
+        "3 : 7",
+        "9 : 11",
+        "9 : 6",
+        "1 : 1"
+      ],
+      "t": 1,
+      "izoh": "Dastlab qismlar yig'indisi 3 + 2 = 5, bir qism 15 : 5 = 3 litr. Oq bo'yoq 9 litr, ko'k bo'yoq 6 litr. Ko'k bo'yoq 5 litrga ortsa 11 litr bo'ladi, oq bo'yoq esa o'zgarmaydi. Yangi nisbat 9 : 11. 9 : 6 eski nisbat, 3 : 7 nisbat hadlariga to'g'ridan-to'g'ri 5 ni qo'shish, 1 : 1 esa hajmlarni tenglashib qoldi deb o'ylash xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralashma-nisbati",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#0c85d65f"
+    },
+    {
+      "q": "Choy aralashmasida qora va ko'k choy 5 : 3 nisbatda. Qora choy ko'k choydan 1,2 kg ko'p bo'lsa, aralashmaning umumiy massasi qancha?",
+      "v": [
+        "4,8 kg",
+        "1,8 kg",
+        "3 kg",
+        "9,6 kg"
+      ],
+      "t": 0,
+      "izoh": "Massalarni 5k va 3k deb olamiz. Ayirma 5k − 3k = 2k = 1,2 kg, demak k = 0,6 kg. Umumiy massa 5k + 3k = 8k = 8 · 0,6 = 4,8 kg. 3 kg qora choy massasi, 1,8 kg ko'k choy massasi, 9,6 kg esa natijani keraksiz ikkilantirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralashma-nisbati",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#a9e0192f"
+    },
+    {
+      "q": "Do'konda 8 ta bir xil daftar 24 000 so'm turadi. Xuddi shunday 15 ta daftar necha so'm bo'ladi?",
+      "v": [
+        "3 000 so'm",
+        "12 800 so'm",
+        "31 000 so'm",
+        "45 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Bitta daftar 24 000 : 8 = 3 000 so'm turadi. Demak 15 ta daftar 15 · 3 000 = 45 000 so'm. Proporsiya ko'rinishida 8 : 24 000 = 15 : x, bundan 8x = 360 000 va x = 45 000. 31 000 so'm daftarlar farqini narxga qo'shish, 12 800 so'm nisbatni teskari qo'yish, 3 000 so'm esa bitta daftar narxi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "togri-proporsionallik",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#d9d1f5bf"
+    },
+    {
+      "q": "Traktor 6 kunda 42 gektar yerni haydaydi. Xuddi shu unumdorlikda 11 kunda necha gektar yer haydaydi?",
+      "v": [
+        "77 ga",
+        "7 ga",
+        "47 ga",
+        "63 ga"
+      ],
+      "t": 0,
+      "izoh": "Bir kunda traktor 42 : 6 = 7 gektar yer haydaydi. Demak 11 kunda 11 · 7 = 77 gektar haydaydi. 47 ga kunlar farqini yuzaga qo'shish, 63 ga 9 kunlik ish hajmi, 7 ga esa bir kunlik unumdorlikning o'zi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "togri-proporsionallik",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#5852c562"
+    },
+    {
+      "q": "Bosmaxonada 3 ta mashina 5 soatda 1 800 ta nusxa chiqaradi. Xuddi shunday 5 ta mashina 4 soatda necha nusxa chiqaradi?",
+      "v": [
+        "1 080",
+        "1 440",
+        "3 000",
+        "2 400"
+      ],
+      "t": 3,
+      "izoh": "Bitta mashina bir soatda 1 800 : (3 · 5) = 120 ta nusxa chiqaradi. Demak 5 ta mashina 4 soatda 5 · 4 · 120 = 2 400 ta nusxa chiqaradi. 1 440 faqat vaqt o'zgarishini hisobga olish, 3 000 faqat mashinalar sonini hisobga olish, 1 080 esa nisbatni teskari qo'yish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "togri-proporsionallik",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#a6106e11"
+    },
+    {
+      "q": "6 ta ishchi bir ishni 15 kunda bajaradi. Xuddi shu ishni 10 ta ishchi necha kunda tugatadi?",
+      "v": [
+        "11 kun",
+        "9 kun",
+        "19 kun",
+        "25 kun"
+      ],
+      "t": 1,
+      "izoh": "Ishchilar soni bilan kun soni teskari proporsional: ko'paytmasi o'zgarmaydi. Umumiy ish hajmi 6 · 15 = 90 ishchi-kun. Demak 10 ishchi uchun 90 : 10 = 9 kun kerak. 25 kun bog'liqlikni to'g'ri proporsional deb hisoblash, 19 kun va 11 kun esa ishchilar farqini kunlarga qo'shish yoki ayirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-proporsionallik",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#82c8eb37"
+    },
+    {
+      "q": "Avtomobil 80 km/soat tezlik bilan yo'lni 6 soatda bosib o'tdi. Tezlik 120 km/soat bo'lsa, xuddi shu yo'lni necha soatda bosib o'tadi?",
+      "v": [
+        "3 soat",
+        "5 soat",
+        "4 soat",
+        "9 soat"
+      ],
+      "t": 2,
+      "izoh": "Masofa o'zgarmaydi, u 80 · 6 = 480 km ga teng. Tezlik va vaqt teskari proporsional, shuning uchun 480 : 120 = 4 soat kerak bo'ladi. 9 soat bog'liqlikni to'g'ri proporsional deb olish, 3 soat vaqtni ikkiga bo'lish, 5 soat esa tezlik ortgani uchun vaqtni taxminan bir soatga kamaytirish (6 − 1) kabi asossiz taxmin natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-proporsionallik",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#f11aa3d0"
+    },
+    {
+      "q": "Omborda oziq-ovqat zaxirasi 24 ta askarga 30 kunga yetadi. Askarlar soni 36 ta bo'lsa, shu zaxira necha kunga yetadi?",
+      "v": [
+        "18 kun",
+        "20 kun",
+        "42 kun",
+        "45 kun"
+      ],
+      "t": 1,
+      "izoh": "Zaxira hajmi o'zgarmaydi: 24 · 30 = 720 askar-kun. Odam soni ortsa, kun soni kamayadi, chunki bog'liqlik teskari proporsional. Demak 720 : 36 = 20 kun. 45 kun to'g'ri proporsiya sifatida hisoblash, 42 kun askarlar farqini kunlarga qo'shish, 18 kun esa o'sha farqni kunlardan ayirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-proporsionallik",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#5d6ef75f"
+    },
+    {
+      "q": "Hovuzni to'ldirish uchun 12 ta bir xil quvur 8 soat ishlaydi. Quvurlarning 4 tasi ishdan chiqsa, hovuz necha soatda to'ladi?",
+      "v": [
+        "12 soat",
+        "16 soat",
+        "24 soat",
+        "32 soat"
+      ],
+      "t": 0,
+      "izoh": "Umumiy ish hajmi 12 · 8 = 96 quvur-soat. Ishdan 4 tasi chiqsa, 12 − 4 = 8 ta quvur qoladi. Teskari proporsionallikka ko'ra vaqt 96 : 8 = 12 soat bo'ladi. 16 soat quvurlar soni yarmiga kamaydi deb o'ylash, 32 soat vaqtni ishdan chiqqan quvurlar soniga ko'paytirish (8 · 4 = 32), 24 soat esa 96 ni ishdan chiqqan 4 ta quvurga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-proporsionallik",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#059f824f"
+    },
+    {
+      "q": "Ikki sonning nisbati 11 : 6. Har biridan 15 tadan ayirilsa, hosil bo'lgan sonlar nisbati 8 : 3 bo'ladi. Katta sonni toping.",
+      "v": [
+        "30",
+        "40",
+        "55",
+        "88"
+      ],
+      "t": 2,
+      "izoh": "Sonlarni 11k va 6k deb belgilaymiz. Shartga ko'ra (11k − 15) : (6k − 15) = 8 : 3, ya'ni 3 · (11k − 15) = 8 · (6k − 15). Bundan 33k − 45 = 48k − 120 va 15k = 75, demak k = 5. Katta son 11 · 5 = 55, kichigi 30. Tekshiramiz: 40 : 15 = 8 : 3. 40 ayirilgandan keyingi katta son, 30 kichik son, 88 esa k ni noto'g'ri topish natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-ozgarishi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#ec5bf763"
+    },
+    {
+      "q": "Aka va ukaning hozirgi yoshlari nisbati 5 : 2. Olti yildan keyin bu nisbat 2 : 1 bo'ladi. Hozir akaning yoshi nechada?",
+      "v": [
+        "12",
+        "18",
+        "36",
+        "30"
+      ],
+      "t": 3,
+      "izoh": "Yoshlarni 5k va 2k deb olamiz. Olti yildan keyin (5k + 6) : (2k + 6) = 2 : 1, ya'ni 5k + 6 = 2 · (2k + 6). Bundan 5k + 6 = 4k + 12 va k = 6. Akaning hozirgi yoshi 5 · 6 = 30, ukasiniki 12. Tekshiramiz: 36 : 18 = 2 : 1. 36 akaning olti yildan keyingi yoshi, 18 ukaning o'sha paytdagi yoshi, 12 esa ukaning hozirgi yoshi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-ozgarishi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#dbdc756b"
+    },
+    {
+      "q": "Idishdagi spirt va suvning hajmlari 3 : 2 nisbatda. Unga 10 litr suv qo'shilgach nisbat 3 : 4 bo'ldi. Boshlang'ich aralashmada necha litr spirt bor edi?",
+      "v": [
+        "10 l",
+        "20 l",
+        "25 l",
+        "15 l"
+      ],
+      "t": 3,
+      "izoh": "Hajmlarni 3k va 2k deb olamiz. Suv qo'shilgach 3k : (2k + 10) = 3 : 4, ya'ni 4 · 3k = 3 · (2k + 10). Bundan 12k = 6k + 30 va k = 5. Spirt 3k = 15 litr. Tekshiramiz: suv 10 + 10 = 20 litr va 15 : 20 = 3 : 4. 10 l dastlabki suv hajmi, 20 l yangi suv hajmi, 25 l esa dastlabki aralashmaning jami hajmi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-ozgarishi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#c9d18f9e"
+    },
+    {
+      "q": "Ikki sonning nisbati 4 : 7. Kichik songa 12 qo'shilsa, nisbat 8 : 7 bo'ladi. Katta sonni toping.",
+      "v": [
+        "12",
+        "24",
+        "21",
+        "33"
+      ],
+      "t": 2,
+      "izoh": "Sonlarni 4k va 7k deb belgilaymiz. Shartga ko'ra (4k + 12) : 7k = 8 : 7, ya'ni 7 · (4k + 12) = 8 · 7k. Bundan 28k + 84 = 56k va 28k = 84, demak k = 3. Katta son 7 · 3 = 21, kichigi 12. Tekshiramiz: 24 : 21 = 8 : 7. 12 kichik son, 24 o'zgargandan keyingi kichik son, 33 esa ikkala sonning yig'indisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-ozgarishi",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#4c1511c3"
+    },
+    {
+      "q": "Uch usta 1 260 000 so'mlik ishni bajardi va haqni ishlagan soatlariga qarab 4 : 5 : 6 nisbatda bo'lishdi. Eng ko'p ishlagan usta qancha oladi?",
+      "v": [
+        "336 000 so'm",
+        "504 000 so'm",
+        "420 000 so'm",
+        "84 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Qismlar yig'indisi 4 + 5 + 6 = 15, bir qism 1 260 000 : 15 = 84 000 so'm. Eng ko'p ishlagan usta 6 qism oladi: 6 · 84 000 = 504 000 so'm. 336 000 so'm eng kam ishlaganning ulushi, 420 000 so'm pulni teng bo'lish natijasi, 84 000 so'm esa bir qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-taqsimoti-nisbat",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#d192ff86"
+    },
+    {
+      "q": "Ikki brigada birgalikda 480 ta g'isht terdi. Birinchi brigada ikkinchisiga qaraganda 1,4 marta ko'p ishladi. Ikkinchi brigada nechta g'isht terdi?",
+      "v": [
+        "200 ta",
+        "240 ta",
+        "280 ta",
+        "192 ta"
+      ],
+      "t": 0,
+      "izoh": "1,4 marta ko'p degani nisbat 1,4 : 1, ya'ni 7 : 5 ga teng. Qismlar yig'indisi 7 + 5 = 12, bir qism 480 : 12 = 40 ta g'isht. Ikkinchi brigada 5 qism tergan: 5 · 40 = 200 ta. 280 ta birinchi brigada ulushi, 240 ta ishni teng bo'lish, 192 ta esa 480 ni 2,5 ga bo'lish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-taqsimoti-nisbat",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#1dabcccc"
+    },
+    {
+      "q": "Fermer xo'jaligida uch ishchi mos ravishda 3, 5 va 7 kun ishladi. Jami 900 000 so'm haq kunlar soniga proporsional taqsimlansa, uchinchi ishchi qancha oladi?",
+      "v": [
+        "60 000 so'm",
+        "180 000 so'm",
+        "420 000 so'm",
+        "300 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Haq kunlar soniga proporsional, demak nisbat 3 : 5 : 7. Qismlar yig'indisi 3 + 5 + 7 = 15, bir qism 900 000 : 15 = 60 000 so'm. Uchinchi ishchi 7 qism oladi: 7 · 60 000 = 420 000 so'm. 180 000 so'm birinchi ishchining ulushi, 300 000 so'm haqni teng bo'lish, 60 000 so'm esa bir kunlik haq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-taqsimoti-nisbat",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#8b8f9c14"
+    },
+    {
+      "q": "Ikki kompaniya loyihaga 8 : 5 nisbatda mablag' kiritdi va foydani ham shu nisbatda bo'lishdi. Birinchisi ikkinchisidan 4 500 000 so'm ko'p foyda olgan bo'lsa, umumiy foyda qancha?",
+      "v": [
+        "12 000 000 so'm",
+        "19 500 000 so'm",
+        "7 500 000 so'm",
+        "1 500 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Ulushlarni 8k va 5k deb olamiz. Farqi 8k − 5k = 3k = 4 500 000, demak k = 1 500 000 so'm. Umumiy foyda 8k + 5k = 13k = 13 · 1 500 000 = 19 500 000 so'm. 12 000 000 so'm birinchi kompaniya ulushi, 7 500 000 so'm ikkinchisiniki, 1 500 000 so'm esa bir qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ish-taqsimoti-nisbat",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#c68222e3"
+    },
+    {
+      "q": "Sinfda o'g'il va qiz bolalar soni 3 : 5 nisbatda. Qizlarning ulushi sinfdagi o'quvchilarning necha foizini tashkil qiladi?",
+      "v": [
+        "37,5%",
+        "60%",
+        "160%",
+        "62,5%"
+      ],
+      "t": 3,
+      "izoh": "Qismlar yig'indisi 3 + 5 = 8, qizlar 5 qismni egallaydi. Demak ularning ulushi 5/8 ga teng. Foizga aylantiramiz: 5 : 8 = 0,625, ya'ni 62,5%. 37,5% o'g'il bolalar ulushi, 60% nisbatni 3 : 5 emas, 5 ga bo'lgan holda hisoblash, 160% esa nisbatni teskari olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbatdan-foizga",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#a3e0e2e7"
+    },
+    {
+      "q": "Mahsulotning sotuv narxi bilan tannarxi 5 : 4 nisbatda. Sotuvchining foydasi tannarxning necha foizini tashkil qiladi?",
+      "v": [
+        "25%",
+        "20%",
+        "80%",
+        "125%"
+      ],
+      "t": 0,
+      "izoh": "Sotuv narxini 5t, tannarxni 4t deb olamiz. Foyda 5t − 4t = t ga teng. Foydaning tannarxga nisbati t : 4t = 1/4, ya'ni 25%. 20% foydani sotuv narxiga solishtirish, 80% tannarxning sotuv narxidagi ulushi, 125% esa sotuv narxining tannarxga nisbati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbatdan-foizga",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#3ed70250"
+    },
+    {
+      "q": "Ikki sonning nisbati 7 : 10 ga teng. Birinchi son ikkinchisidan necha foizga kam ekanini aniqlang.",
+      "v": [
+        "3%",
+        "30%",
+        "43%",
+        "70%"
+      ],
+      "t": 1,
+      "izoh": "Sonlarni 7t va 10t deb olamiz. Farqi 10t − 7t = 3t. Kamlik ikkinchi songa nisbatan o'lchanadi: 3t : 10t = 0,3, ya'ni 30%. 70% birinchi sonning ikkinchisidagi ulushi, 43% farqni birinchi songa solishtirish, 3% esa farqni foiz deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbatdan-foizga",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#e53bca37"
+    },
+    {
+      "q": "Aralashmada tuz va suvning massalari 3 : 22 nisbatda. Aralashmadagi tuzning foiz ulushini toping.",
+      "v": [
+        "3%",
+        "13,6%",
+        "12%",
+        "88%"
+      ],
+      "t": 2,
+      "izoh": "Aralashmaning umumiy massasi 3 + 22 = 25 qism. Tuz 3 qismni egallaydi, demak ulushi 3 : 25 = 0,12, ya'ni 12%. 13,6% tuzni butun aralashmaga emas, faqat suvga solishtirish, 88% suvning ulushi, 3% esa nisbat hadini foiz deb olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbatdan-foizga",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#1500d6d2"
+    },
+    {
+      "q": "45 daqiqaning 3 soatga nisbatini eng sodda ko'rinishda yozing.",
+      "v": [
+        "1 : 4",
+        "4 : 1",
+        "15 : 1",
+        "3 : 4"
+      ],
+      "t": 0,
+      "izoh": "Nisbat tuzishdan oldin kattaliklar bir xil birlikda ifodalanishi shart. 3 soat = 180 daqiqa. Demak nisbat 45 : 180 bo'ladi, uni 45 ga qisqartirsak 1 : 4 chiqadi. 15 : 1 birlikni aylantirmasdan 45 ni 3 ga bo'lish, 4 : 1 teskari yozuv, 3 : 4 esa soat va daqiqani aralashtirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-almashtirish-nisbat",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#3321c5b9"
+    },
+    {
+      "q": "250 grammning 2 kilogrammga nisbatini eng sodda ko'rinishda ifodalang.",
+      "v": [
+        "8 : 1",
+        "125 : 1",
+        "1 : 4",
+        "1 : 8"
+      ],
+      "t": 3,
+      "izoh": "Birliklarni tenglashtiramiz: 2 kg = 2 000 g. Nisbat 250 : 2 000 ko'rinishida bo'ladi, uni 250 ga qisqartirsak 1 : 8 hosil bo'ladi. 125 : 1 birlikni aylantirmasdan 250 ni 2 ga bo'lish, 8 : 1 teskari yozuv, 1 : 4 esa 2 000 o'rniga 1 000 ni olish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-almashtirish-nisbat",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#d5740547"
+    },
+    {
+      "q": "1,5 metrning 30 santimetrga nisbati nechaga teng bo'ladi?",
+      "v": [
+        "5 : 1",
+        "1 : 5",
+        "1 : 20",
+        "20 : 1"
+      ],
+      "t": 0,
+      "izoh": "Metrni santimetrga aylantiramiz: 1,5 m = 150 sm. Nisbat 150 : 30 bo'ladi, uni 30 ga qisqartirsak 5 : 1 chiqadi. 1 : 5 teskari yozuv, 1 : 20 birlikni aylantirmasdan 1,5 ni 30 ga bo'lish, 20 : 1 esa o'sha xatoning teskari ko'rinishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-almashtirish-nisbat",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#98a96fa2"
+    },
+    {
+      "q": "Bir idishda 3 litr, ikkinchisida esa 600 millilitr suv bor. Ikkinchi idishdagi suvning birinchisidagiga nisbati qanday?",
+      "v": [
+        "5 : 1",
+        "1 : 200",
+        "200 : 1",
+        "1 : 5"
+      ],
+      "t": 3,
+      "izoh": "Birliklarni tenglashtiramiz: 3 l = 3 000 ml. Nisbat 600 : 3 000, uni 600 ga qisqartirsak 1 : 5 hosil bo'ladi. 5 : 1 nisbatni teskari tartibda yozish, 1 : 200 va 200 : 1 esa litrni millilitrga aylantirmasdan 3 va 600 ni to'g'ridan-to'g'ri solishtirish xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-almashtirish-nisbat",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#e57a1fd2"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning tomonlari 80 sm va 1,2 m. Kichik tomonning katta tomonga nisbatini eng sodda ko'rinishda yozing.",
+      "v": [
+        "2 : 5",
+        "3 : 2",
+        "2 : 3",
+        "5 : 2"
+      ],
+      "t": 2,
+      "izoh": "Birliklarni tenglashtiramiz: 1,2 m = 120 sm. Kichik tomon 80 sm, katta tomon 120 sm, nisbat 80 : 120. Uni 40 ga qisqartirsak 2 : 3 chiqadi. 3 : 2 teskari yozuv, 2 : 5 esa 1,2 m ni 200 sm deb olish, 5 : 2 o'sha xatoning teskarisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-almashtirish-nisbat",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#d6dcf219"
+    },
+    {
+      "q": "Palov retseptida 4 kishi uchun 800 g guruch olinadi. 7 kishi uchun necha gramm guruch kerak bo'ladi?",
+      "v": [
+        "457 g",
+        "1 400 g",
+        "1 200 g",
+        "5 600 g"
+      ],
+      "t": 1,
+      "izoh": "Bir kishiga 800 : 4 = 200 g guruch to'g'ri keladi. Demak 7 kishi uchun 7 · 200 = 1 400 g kerak. 5 600 g bo'lish amalini tashlab ketish, 457 g nisbatni teskari qo'yish, 1 200 g esa 6 kishiga mo'ljallangan miqdordir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "retsept-miqdorini-oshirish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#c351e3f7"
+    },
+    {
+      "q": "Xamir uchun har 500 g unga 15 g xamirturush qo'shiladi. 2 kg un uchun necha gramm xamirturush kerak?",
+      "v": [
+        "30 g",
+        "45 g",
+        "600 g",
+        "60 g"
+      ],
+      "t": 3,
+      "izoh": "Avval birliklarni tenglashtiramiz: 2 kg = 2 000 g. Un miqdori 2 000 : 500 = 4 marta ortdi, demak xamirturush ham 4 marta ortadi: 15 · 4 = 60 g. 30 g un miqdorini 2 marta ortgan deb olish, 45 g uch barobar olish, 600 g esa birlikni aylantirishda o'nlik xatosiga yo'l qo'yib 2 kg ni 20 000 g deb olish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "retsept-miqdorini-oshirish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#92441fdd"
+    },
+    {
+      "q": "Murabbo tayyorlashda meva va shakar 5 : 3 nisbatda olinadi. 6 kg meva uchun necha kilogramm shakar kerak?",
+      "v": [
+        "3,6 kg",
+        "3 kg",
+        "4 kg",
+        "10 kg"
+      ],
+      "t": 0,
+      "izoh": "Nisbatga ko'ra 5 : 3 = 6 : x. Asosiy xossaga ko'ra 5x = 18, bundan x = 3,6 kg. 10 kg nisbatni teskari qo'yish, 3 kg nisbat hadini javob deb olish, 4 kg esa natijani yaxlitlash xatosidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "retsept-miqdorini-oshirish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#cf84968c"
+    },
+    {
+      "q": "Bo'yoq tayyorlashda 2 qism pigmentga 15 qism asos qo'shiladi. 4,5 litr asos uchun necha litr pigment kerak bo'ladi?",
+      "v": [
+        "0,3 l",
+        "0,6 l",
+        "2,25 l",
+        "33,75 l"
+      ],
+      "t": 1,
+      "izoh": "Nisbatni proporsiya ko'rinishida yozamiz: 2 : 15 = x : 4,5. Asosiy xossaga ko'ra 15x = 9, bundan x = 0,6 litr. 0,3 l bir qismning hajmi, 2,25 l 4,5 ni 2 ga bo'lish, 33,75 l esa nisbatni teskari qo'yish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "retsept-miqdorini-oshirish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#6684a903"
+    },
+    {
+      "q": "Retsept bo'yicha 12 ta pechenye uchun 180 g sariyog' va 240 g un ketadi. Oshpazda 300 g sariyog' va 360 g un bor. Eng ko'pi bilan nechta pechenye pishirish mumkin?",
+      "v": [
+        "20 ta",
+        "24 ta",
+        "18 ta",
+        "38 ta"
+      ],
+      "t": 2,
+      "izoh": "Sariyog' bo'yicha imkoniyat: 300 : 180 = 5/3, demak 12 · 5/3 = 20 ta pechenye. Un bo'yicha: 360 : 240 = 3/2, demak 12 · 3/2 = 18 ta. Ikkala mahsulot birdan yetishi kerak, shuning uchun kichigi olinadi va javob 18 ta bo'ladi. 20 ta faqat sariyog'ga qarash, 24 ta retseptni ikkilantirish, 38 ta esa ikki natijani (20 va 18) qo'shib yuborish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "retsept-miqdorini-oshirish",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#2326df90"
+    },
+    {
+      "q": "a : b = 2 : 3 va b : c = 5 : 4 bo'lib, a + b + c = 148 ekani ma'lum. c ning qiymatini toping.",
+      "v": [
+        "37",
+        "40",
+        "48",
+        "60"
+      ],
+      "t": 2,
+      "izoh": "b hadini tenglashtiramiz: 3 va 5 ning umumiy karralisi 15. a : b = 10 : 15, b : c = 15 : 12, demak a : b : c = 10 : 15 : 12. Qismlar yig'indisi 10 + 15 + 12 = 37, bir qism 148 : 37 = 4. Bundan c = 12 · 4 = 48. 40 a ning qiymati, 60 b ning qiymati, 37 esa qismlar yig'indisining o'zi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-tahlil",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#35e184e3"
+    },
+    {
+      "q": "Ikki sondan birinchisining ikkinchisiga nisbati 3 : 5. Birinchi son 20 foizga oshirilib, ikkinchisi 10 foizga kamaytirilsa, yangi nisbat qanday bo'ladi?",
+      "v": [
+        "3 : 5",
+        "5 : 4",
+        "36 : 55",
+        "4 : 5"
+      ],
+      "t": 3,
+      "izoh": "Sonlarni 3t va 5t deb olamiz. Birinchisi 20% ga ortsa 3t · 1,2 = 3,6t bo'ladi, ikkinchisi 10% ga kamaysa 5t · 0,9 = 4,5t bo'ladi. Yangi nisbat 3,6 : 4,5, uni 10 ga kengaytirsak 36 : 45, so'ng 9 ga qisqartirsak 4 : 5 chiqadi. 3 : 5 nisbat o'zgarmaydi deb o'ylash, 5 : 4 teskari yozuv, 36 : 55 esa ikkinchi sonni kamaytirish o'rniga uni ham 10 foizga oshirib yuborish (3,6 : 5,5) xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-tahlil",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#b0d968f4"
+    },
+    {
+      "q": "Birinchi ishchi ikkinchisidan 1,5 marta tez, uchinchi ishchi esa ikkinchisidan 2 marta sekin ishlaydi. Ularning bir soatdagi ish unumlari nisbatini eng sodda ko'rinishda yozing.",
+      "v": [
+        "1,5 : 1 : 2",
+        "3 : 2 : 1",
+        "6 : 4 : 3",
+        "2 : 3 : 1"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi ishchining unumini 2 birlik deb olamiz. Birinchisi 1,5 marta tez, demak uning unumi 2 · 1,5 = 3 birlik. Uchinchisi 2 marta sekin, demak 2 : 2 = 1 birlik. Nisbat 3 : 2 : 1 bo'ladi. 1,5 : 1 : 2 shartdagi sonlarni to'g'ridan-to'g'ri ko'chirish, 2 : 3 : 1 birinchi ikki hadni almashtirish, 6 : 4 : 3 esa uchinchi hadni bo'lish o'rniga boshqacha olish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-tahlil",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#e9129b11"
+    },
+    {
+      "q": "a, b, c va d sonlari uchun a : b = b : c = c : d = 2 : 3 tenglik o'rinli. Agar a = 16 bo'lsa, d ning qiymatini toping.",
+      "v": [
+        "54",
+        "36",
+        "24",
+        "81"
+      ],
+      "t": 0,
+      "izoh": "Har bir qadamda son 3/2 marta ortadi. a = 16 bo'lsa, b = 16 · 3/2 = 24, keyin c = 24 · 3/2 = 36 va nihoyat d = 36 · 3/2 = 54. Zanjirni birdaniga yozsak a : d = 2³ : 3³ = 8 : 27, demak d = 16 · 27 : 8 = 54. 24 va 36 oraliq hadlar, 81 esa yana bir qadam ortiq bajarish natijasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-tahlil",
+      "id": "matematika_foiz_m03-nisbat-va-proporsiya#2f8f2bb1"
+    }
+  ]
+}

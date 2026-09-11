@@ -1,0 +1,1609 @@
+{
+  "nom": "Ko'rsatkichli funksiya va uning grafigi",
+  "bolim": "Funksiyalar",
+  "blok": "funk",
+  "rasmiyBolim": 4,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Quyidagi ko'rsatkichli funksiyalardan qaysi biri butun sonlar o'qi bo'yicha kamayuvchi: y = 3^x, y = 1,4^x, y = (7/2)^x, y = (3/8)^x?",
+      "v": [
+        "y = 3^x",
+        "y = 1,4^x",
+        "y = (7/2)^x",
+        "y = (3/8)^x"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkichli funksiya y = a^x asos a > 1 bo'lganda o'suvchi, 0 < a < 1 bo'lganda kamayuvchi. Berilgan asoslar 3, 1,4 va 7/2 — uchalasi ham birdan katta. Faqat 3/8 = 0,375 birdan kichik. Javob: y = (3/8)^x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-turi-osish-kamayish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#4f2c036a"
+    },
+    {
+      "q": "Nodira daftariga y = 0,6^x funksiyani yozdi. Bu funksiyaning butun aniqlanish sohasidagi xatti-harakati haqida qaysi fikr to'g'ri?",
+      "v": [
+        "Butun o'qda kamayadi, chunki 0 < 0,6 < 1",
+        "Butun o'qda o'sadi, chunki 0,6 musbat son",
+        "x < 0 da o'sadi, x > 0 da kamayadi",
+        "O'zgarmas qoladi, chunki 0,6 birga yaqin"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichli funksiyaning yo'nalishi faqat asosga bog'liq. Bu yerda a = 0,6 va 0 < 0,6 < 1. Asos birdan kichik bo'lganda ko'rsatkich ortishi bilan daraja kamayadi: 0,6¹ = 0,6, 0,6² = 0,36, 0,6³ = 0,216. Javob: butun o'qda kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-turi-osish-kamayish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#0024263f"
+    },
+    {
+      "q": "Jasur y = (√7)^x funksiyaning grafigini chizmoqchi. Grafik chapdan o'ngga qarab ko'tariladimi yoki tushadimi va nima uchun?",
+      "v": [
+        "Tushadi, chunki asos ildiz ostida turibdi",
+        "Tushadi, chunki √7 soni 7 dan kichik",
+        "Ko'tariladi, chunki √7 ≈ 2,65 > 1",
+        "Ko'tariladi, chunki ko'rsatkich musbat"
+      ],
+      "t": 2,
+      "izoh": "Avval asosni sonli baholaymiz: √7 ≈ 2,646, ya'ni asos birdan katta. y = a^x da a > 1 bo'lsa funksiya o'suvchi, demak grafik chapdan o'ngga ko'tariladi. Ildiz belgisining borligi bu xulosaga ta'sir qilmaydi. Javob: ko'tariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-turi-osish-kamayish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#ac445b19"
+    },
+    {
+      "q": "Bir necha funksiya berilgan: y = (1/5)^x, y = 5^x, y = (1/5)^(−x), y = 5^(−x). Ulardan nechtasi o'suvchi funksiya?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 1,
+      "izoh": "Har birini y = a^x ko'rinishiga keltiramiz. (1/5)^x asosi 1/5 < 1, kamayuvchi. 5^x asosi 5 > 1, o'suvchi. (1/5)^(−x) = 5^x, o'suvchi. 5^(−x) = (1/5)^x, kamayuvchi. Demak o'suvchilari 2 ta. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-turi-osish-kamayish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#12765502"
+    },
+    {
+      "q": "Ko'rsatkichli funksiyaning monotonligidan foydalanib 2^(3,4) va 2^(3,7) sonlarini solishtiring.",
+      "v": [
+        "2^(3,4) < 2^(3,7)",
+        "2^(3,4) > 2^(3,7)",
+        "Ular o'zaro teng",
+        "Solishtirib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ikkala sonning asosi bir xil: a = 2 > 1. Asos birdan katta bo'lganda y = 2^x o'suvchi, ya'ni katta ko'rsatkichga katta qiymat mos keladi. 3,4 < 3,7 bo'lgani uchun 2^(3,4) < 2^(3,7). Javob: birinchi son kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlarni-solishtirish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#a4255eba"
+    },
+    {
+      "q": "0,3^(1,2) va 0,3^(1,5) sonlarini solishtirganda qaysi munosabat o'rinli bo'ladi?",
+      "v": [
+        "0,3^(1,2) < 0,3^(1,5)",
+        "Ikkala son ham teng",
+        "Munosabatni aniqlab bo'lmaydi",
+        "0,3^(1,2) > 0,3^(1,5)"
+      ],
+      "t": 3,
+      "izoh": "Asos a = 0,3 va 0 < 0,3 < 1, demak y = 0,3^x kamayuvchi funksiya. Kamayuvchi funksiyada ko'rsatkich ortsa qiymat kichrayadi. 1,2 < 1,5 bo'lgani uchun 0,3^(1,2) > 0,3^(1,5). Javob: birinchi son katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlarni-solishtirish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#3ab33722"
+    },
+    {
+      "q": "Amir 5^(−2) va 5^(−3) sonlaridan qaysi biri kattaroq ekanligini kalkulyatorsiz aniqlashi kerak. To'g'ri xulosa qaysi qatorda?",
+      "v": [
+        "5^(−3) > 5^(−2), chunki 3 > 2",
+        "5^(−2) > 5^(−3), chunki −2 > −3",
+        "Ikkalasi ham manfiy son bo'ladi",
+        "Ikkalasi teng qiymatga ega"
+      ],
+      "t": 1,
+      "izoh": "5^x funksiyada asos 5 > 1, demak funksiya o'suvchi va katta ko'rsatkichga katta qiymat to'g'ri keladi. Ko'rsatkichlarni solishtiramiz: −2 > −3. Tekshiruv: 5^(−2) = 1/25 = 0,04, 5^(−3) = 1/125 = 0,008. Javob: 5^(−2) katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlarni-solishtirish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#63bb9527"
+    },
+    {
+      "q": "(2/3)^x funksiyaning monotonligiga tayanib (2/3)^(−1,5) va (2/3)^(0,5) sonlarini solishtiring.",
+      "v": [
+        "(2/3)^(−1,5) < (2/3)^(0,5)",
+        "Ular bir xil qiymatga ega",
+        "(2/3)^(−1,5) > (2/3)^(0,5)",
+        "(2/3)^(−1,5) manfiy son"
+      ],
+      "t": 2,
+      "izoh": "Asos 2/3 ≈ 0,67 birdan kichik, demak funksiya kamayuvchi: kichik ko'rsatkichga katta qiymat mos keladi. −1,5 < 0,5 bo'lgani uchun birinchi son kattaroq. Sonli tekshiruv: (2/3)^(−1,5) = (3/2)^(1,5) ≈ 1,84 va (2/3)^(0,5) ≈ 0,82. Javob: birinchisi katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlarni-solishtirish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#bc0304fb"
+    },
+    {
+      "q": "Sardor 0,8^(−0,4) sonini 1 bilan solishtirmoqchi, lekin kalkulyator ishlatishga ruxsat yo'q. To'g'ri xulosani tanlang.",
+      "v": [
+        "1 dan katta",
+        "1 dan kichik",
+        "Aynan 1 ga teng",
+        "Manfiy son"
+      ],
+      "t": 0,
+      "izoh": "y = 0,8^x kamayuvchi funksiya, chunki 0 < 0,8 < 1. Uning nol nuqtadagi qiymati 0,8⁰ = 1. Kamayuvchi funksiyada manfiy argumentga nolinchi qiymatdan katta qiymat mos keladi. −0,4 < 0 bo'lgani uchun 0,8^(−0,4) > 1. Javob: 1 dan katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatlarni-solishtirish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#a2061ba8"
+    },
+    {
+      "q": "y = 4^x funksiya grafigining gorizontal asimptotasi qaysi to'g'ri chiziq va grafik unga qaysi tomondan yaqinlashadi?",
+      "v": [
+        "y = 0, x → +∞ da",
+        "x = 0, y → +∞ da",
+        "y = 4, x → −∞ da",
+        "y = 0, x → −∞ da"
+      ],
+      "t": 3,
+      "izoh": "y = 4^x da asos 4 > 1. x cheksiz kichrayganda 4^x qiymatlari 1/4, 1/16, 1/64 tarzida nolga intiladi, lekin nolga teng bo'lmaydi. Demak gorizontal asimptota y = 0 va grafik unga chap tomondan, x → −∞ da yaqinlashadi. Javob: y = 0, x → −∞ da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-asimptota",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#6d83da3b"
+    },
+    {
+      "q": "y = (1/6)^x funksiyaning grafigi qaysi to'g'ri chiziqqa cheksiz yaqinlashadi, lekin unga hech qachon tegmaydi?",
+      "v": [
+        "Ordinata o'qiga, ya'ni x = 0 chiziqqa",
+        "Abssissa o'qiga, ya'ni y = 0 chiziqqa",
+        "y = 1 to'g'ri chiziqqa",
+        "y = 6 to'g'ri chiziqqa"
+      ],
+      "t": 1,
+      "izoh": "Asos 1/6 birdan kichik, funksiya kamayuvchi. x → +∞ da qiymatlar 1/6, 1/36, 1/216 tarzida nolga intiladi, lekin hech qachon nolga aylanmaydi, chunki daraja doim musbat. Demak grafik abssissa o'qiga yaqinlashadi. Javob: y = 0 chizig'iga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-asimptota",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#c776cd81"
+    },
+    {
+      "q": "y = 3^x + 5 funksiya grafigining gorizontal asimptotasi tenglamasini toping.",
+      "v": [
+        "y = 0",
+        "y = 3",
+        "y = 5",
+        "y = −5"
+      ],
+      "t": 2,
+      "izoh": "y = 3^x grafigining asimptotasi y = 0 to'g'ri chiziq. Funksiyaga 5 qo'shilishi grafikni 5 birlik yuqoriga ko'chiradi va asimptota ham u bilan birga ko'chadi. Demak yangi asimptota y = 0 + 5, ya'ni y = 5. Javob: y = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-asimptota",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#460fceb9"
+    },
+    {
+      "q": "Sovutgichdan chiqarilgan ichimlikning harorati T(t) = 22 − 18·0,85^t daraja formula bilan o'zgaradi, bu yerda t — daqiqa. Vaqt uzoq davom etganda harorat qanday qiymatga yaqinlashadi?",
+      "v": [
+        "22 °C ga",
+        "18 °C ga",
+        "4 °C ga",
+        "0 °C ga"
+      ],
+      "t": 0,
+      "izoh": "0 < 0,85 < 1 bo'lgani uchun 0,85^t kamayuvchi va t → +∞ da nolga intiladi. Unda 18·0,85^t ham nolga intiladi va T(t) → 22 − 0 = 22. Ya'ni T = 22 gorizontal asimptota bo'lib, u xonaning haroratini bildiradi. Javob: 22 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorizontal-asimptota",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#5101a9a5"
+    },
+    {
+      "q": "y = 2^x − 7 funksiyaning qiymatlari qaysi sondan doim katta bo'ladi, lekin unga hech qachon yetmaydi?",
+      "v": [
+        "7",
+        "0",
+        "2",
+        "−7"
+      ],
+      "t": 3,
+      "izoh": "2^x har qanday x da musbat, ya'ni 2^x > 0. Ikkala tomondan 7 ayiramiz: 2^x − 7 > −7. x → −∞ da 2^x nolga intiladi, shuning uchun funksiya qiymati −7 ga cheksiz yaqinlashadi, lekin unga teng bo'lmaydi. Javob: −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorizontal-asimptota",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#4f446069"
+    },
+    {
+      "q": "y = a^x ko'rinishidagi funksiya grafigi (3; 64) nuqtadan o'tadi. Funksiyaning asosi a ni toping.",
+      "v": [
+        "8",
+        "4",
+        "16",
+        "64/3"
+      ],
+      "t": 1,
+      "izoh": "Nuqtaning koordinatalarini formulaga qo'yamiz: 64 = a³. Bundan a = ∛64 = 4, chunki 4³ = 64. Asos musbat bo'lishi shart, shuning uchun yagona javob a = 4. Kub ildiz o'rniga kvadrat ildiz olinsa 8 chiqadi — bu tipik xato. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikdan-asos-topish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#be077dc6"
+    },
+    {
+      "q": "Grafigi (−2; 9) nuqtadan o'tuvchi y = a^x funksiyaning asosini aniqlang.",
+      "v": [
+        "3",
+        "9/2",
+        "1/3",
+        "−3"
+      ],
+      "t": 2,
+      "izoh": "Nuqtani formulaga qo'yamiz: a^(−2) = 9, ya'ni 1/a² = 9. Bundan a² = 1/9 va asos musbat bo'lgani uchun a = 1/3. Tekshiramiz: (1/3)^(−2) = 3² = 9 — mos keldi. Manfiy ko'rsatkichni e'tiborsiz qoldirsa 3 chiqadi. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikdan-asos-topish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#8ec91b30"
+    },
+    {
+      "q": "Gulnora chizgan y = a^x grafigi (1; 2,5) va (2; 6,25) nuqtalardan o'tadi. Bu grafikning asosi nechaga teng?",
+      "v": [
+        "2,5",
+        "6,25",
+        "3,75",
+        "1,25"
+      ],
+      "t": 0,
+      "izoh": "x = 1 bo'lganda y = a¹ = a, demak birinchi nuqtadan bevosita a = 2,5 kelib chiqadi. Buni ikkinchi nuqta bilan tekshiramiz: 2,5² = 6,25 — mos keldi. Demak grafik haqiqatan y = 2,5^x funksiyaga tegishli. Javob: 2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafikdan-asos-topish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#13bc311d"
+    },
+    {
+      "q": "Ikki ko'rsatkichli funksiya y = a^x va y = b^x grafiklari mos ravishda (2; 49) va (3; 0,008) nuqtalardan o'tadi. a·b ko'paytmani hisoblang.",
+      "v": [
+        "3,5",
+        "0,35",
+        "14",
+        "1,4"
+      ],
+      "t": 3,
+      "izoh": "Birinchi shartdan a² = 49 va asos musbat, demak a = 7. Ikkinchi shartdan b³ = 0,008. 0,008 = (0,2)³ bo'lgani uchun b = 0,2. Ko'paytma a·b = 7·0,2 = 1,4. Javob: 1,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafikdan-asos-topish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#ea947ae4"
+    },
+    {
+      "q": "Farhod f(x) = 5·2^x − 3 funksiyani tuzdi va f(−1) qiymatini topmoqchi. To'g'ri natijani tanlang.",
+      "v": [
+        "0,5",
+        "−0,5",
+        "−2,5",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "Avval darajani hisoblaymiz: 2^(−1) = 1/2 = 0,5. So'ng f(−1) = 5·0,5 − 3 = 2,5 − 3 = −0,5. Manfiy ko'rsatkich sonni teskarisiga aylantiradi, natijani manfiy qilmaydi. Javob: −0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "funksiya-qiymatini-hisoblash",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#4e19f175"
+    },
+    {
+      "q": "g(x) = (1/2)^x funksiyada g(x) = 32 bo'lsa, x ning qiymati nechaga teng?",
+      "v": [
+        "5",
+        "1/5",
+        "−5",
+        "−32"
+      ],
+      "t": 2,
+      "izoh": "(1/2)^x ni 2^(−x) ko'rinishida yozamiz. O'ng tomonni ham ikki asosiga keltiramiz: 32 = 2⁵. Asoslar tenglashgach ko'rsatkichlar tenglashadi: −x = 5, demak x = −5. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "funksiya-qiymatini-hisoblash",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#1278e86e"
+    },
+    {
+      "q": "Alisher f(x) = 4^x funksiya uchun f(1,5) − f(0,5) ayirmani hisoblamoqchi. U qanday natija olishi kerak?",
+      "v": [
+        "4",
+        "2",
+        "6",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "Avval darajalarni alohida hisoblaymiz: 4^(1,5) = 4^(3/2) = (√4)³ = 2³ = 8 va 4^(0,5) = √4 = 2. Ayirma 8 − 2 = 6. Darajalarni ayirishda ko'rsatkichlarni ayirib bo'lmaydi — bu keng tarqalgan xato. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "funksiya-qiymatini-hisoblash",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#fb085eae"
+    },
+    {
+      "q": "Bir dastur zaxira xotira hajmini h(x) = 2^(x−3) megabayt deb hisoblaydi. x = 7 bo'lganda dastur qancha megabayt ko'rsatadi?",
+      "v": [
+        "128",
+        "16",
+        "125",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Avval ko'rsatkichni hisoblaymiz: x − 3 = 7 − 3 = 4. Demak h(7) = 2⁴ = 16 megabayt. Bu yerda tartib muhim: avval ko'rsatkich topiladi, keyin daraja olinadi. 2⁷ − 3 = 125 deb yozish xato. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "funksiya-qiymatini-hisoblash",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#290baa6e"
+    },
+    {
+      "q": "y = 7^x funksiyaning aniqlanish sohasi va qiymatlar sohasi qaysi javobda to'g'ri ko'rsatilgan?",
+      "v": [
+        "D(y) = (−∞; +∞), E(y) = (0; +∞)",
+        "D(y) = (0; +∞), E(y) = (−∞; +∞)",
+        "D(y) = (−∞; +∞), E(y) = [0; +∞)",
+        "D(y) = [0; +∞), E(y) = (0; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichli funksiyaga istalgan haqiqiy sonni qo'yish mumkin, demak aniqlanish sohasi butun sonlar o'qi. Har qanday x uchun 7^x qat'iy musbat va nolga hech qachon teng bo'lmaydi, shuning uchun qiymatlar sohasida nol chegara ochiq qoladi. Javob: D(y) = (−∞; +∞), E(y) = (0; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-va-qiymatlar-sohasi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#532382c5"
+    },
+    {
+      "q": "y = 5^x + 2 funksiyaning qiymatlar sohasini toping.",
+      "v": [
+        "[2; +∞)",
+        "(0; +∞)",
+        "(−∞; 2)",
+        "(2; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Har qanday x uchun 5^x > 0. Tengsizlikning ikkala tomoniga 2 qo'shamiz: 5^x + 2 > 2. Funksiya 2 qiymatiga yetmaydi, faqat unga cheksiz yaqinlashadi, shuning uchun chegara ochiq bo'ladi. Javob: (2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-va-qiymatlar-sohasi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#5aa85078"
+    },
+    {
+      "q": "y = 3 − 2^x funksiyaning qiymatlar sohasi qanday oraliqdan iborat?",
+      "v": [
+        "(3; +∞)",
+        "(−∞; 3]",
+        "(−∞; 3)",
+        "(0; 3)"
+      ],
+      "t": 2,
+      "izoh": "2^x > 0 bo'lgani uchun −2^x < 0. Unga 3 qo'shsak 3 − 2^x < 3 kelib chiqadi. x → −∞ da 2^x nolga intiladi va funksiya 3 ga yaqinlashadi, lekin unga yetmaydi. Demak qiymatlar sohasi cheksizlikdan 3 gacha ochiq oraliq. Javob: (−∞; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-va-qiymatlar-sohasi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#ca23684b"
+    },
+    {
+      "q": "Bir korxonada ishlab chiqarish hajmi V(t) = 120 − 80·(0,7)^t tonna formula bilan o'sadi, t nol va musbat qiymatlar oladi. Modelga ko'ra hajm qaysi oraliqdagi qiymatlarni qabul qiladi?",
+      "v": [
+        "[40; 120)",
+        "(40; 120]",
+        "[0; 120)",
+        "[40; 200)"
+      ],
+      "t": 0,
+      "izoh": "t = 0 da V = 120 − 80·1 = 40 tonna — bu boshlang'ich hajm va u haqiqatan erishiladi, shuning uchun chap chegara yopiq. t ortganda (0,7)^t kamayib nolga intiladi, V esa 120 ga yaqinlashadi, lekin unga yetmaydi. Javob: [40; 120).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-va-qiymatlar-sohasi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#8218274c"
+    },
+    {
+      "q": "y = 2^x grafigi qanday siljitilsa y = 2^x − 6 funksiyaning grafigi hosil bo'ladi?",
+      "v": [
+        "6 birlik yuqoriga",
+        "6 birlik o'ngga",
+        "6 birlik chapga",
+        "6 birlik pastga"
+      ],
+      "t": 3,
+      "izoh": "Funksiya qiymatidan o'zgarmas son ayirilsa, grafikning har bir nuqtasi shuncha birlik pastga tushadi. Bu yerda 6 ayirilgan, demak grafik 6 birlik pastga siljiydi. Asimptota ham y = 0 dan y = −6 ga tushadi. Javob: 6 birlik pastga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-siljish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#0eabfc37"
+    },
+    {
+      "q": "y = 3^x grafigi 4 birlik yuqoriga ko'tarilishi natijasida hosil bo'lgan funksiyaning formulasi va asimptotasi qaysi javobda to'g'ri?",
+      "v": [
+        "y = 3^x − 4, asimptota y = −4",
+        "y = 3^x + 4, asimptota y = 4",
+        "y = 3^(x+4), asimptota y = 0",
+        "y = 3^x + 4, asimptota y = 0"
+      ],
+      "t": 1,
+      "izoh": "Yuqoriga siljish funksiya qiymatiga son qo'shilishi demak, ya'ni yangi formula 3^x + 4. Asimptota grafik bilan birga ko'chadi va y = 0 dan y = 4 ga ko'tariladi. Ko'rsatkichga 4 qo'shish esa gorizontal siljish beradi — bu butunlay boshqa almashtirish. Javob: y = 3^x + 4, asimptota y = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-siljish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#71be40b0"
+    },
+    {
+      "q": "Bir shahar aholisi N(t) = 250 + 40·(1,2)^t ming kishi deb modellashtirilgan. Bu grafik y = 40·(1,2)^t grafigidan qanday farq qiladi?",
+      "v": [
+        "250 birlik pastga siljigan",
+        "250 marta cho'zilgan",
+        "250 birlik yuqoriga siljigan",
+        "250 birlik o'ngga siljigan"
+      ],
+      "t": 2,
+      "izoh": "Formulada 40·(1,2)^t ifodasiga 250 qo'shilgan. Funksiyaga o'zgarmas son qo'shilishi grafikni shuncha birlik yuqoriga ko'chiradi. Egrilikning shakli o'zgarmaydi, faqat asimptota y = 0 dan y = 250 ga ko'tariladi. Javob: 250 birlik yuqoriga siljigan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-siljish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#43837c79"
+    },
+    {
+      "q": "y = 6^x + c funksiyaning grafigi (0; −2) nuqtadan o'tsa, c ning qiymati nechaga teng?",
+      "v": [
+        "−3",
+        "−2",
+        "−1",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Nuqtaning koordinatalarini formulaga qo'yamiz: 6⁰ + c = −2. Nol darajali har qanday musbat asos birga teng, ya'ni 6⁰ = 1. Demak 1 + c = −2 va bundan c = −3. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-siljish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#bd70adff"
+    },
+    {
+      "q": "y = 2^x + k funksiyaning grafigi abssissa o'qini kesib o'tishi uchun k parametr qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "k > 0",
+        "k = 0",
+        "k ≥ 0",
+        "k < 0"
+      ],
+      "t": 3,
+      "izoh": "Abssissa o'qi bilan kesishish y = 0 bo'lganda ro'y beradi: 2^x + k = 0, ya'ni 2^x = −k. 2^x har doim qat'iy musbat bo'lgani uchun o'ng tomon ham musbat bo'lishi shart: −k > 0. Bundan k < 0 kelib chiqadi. Javob: k < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vertikal-siljish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#fa7e3d29"
+    },
+    {
+      "q": "y = 5^(x−2) funksiyaning grafigi y = 5^x grafigiga nisbatan qanday joylashgan?",
+      "v": [
+        "2 birlik chapga siljigan",
+        "2 birlik o'ngga siljigan",
+        "2 birlik yuqoriga siljigan",
+        "2 birlik pastga siljigan"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichdagi x o'rniga x − 2 qo'yilgan. Argumentdan son ayirilishi grafikni o'sha son qadar o'ngga siljitadi, chunki bir xil qiymatga endi kattaroq x kerak bo'ladi. Asimptota o'zgarmaydi va y = 0 bo'lib qoladi. Javob: 2 birlik o'ngga siljigan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-siljish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#2cb4d1b7"
+    },
+    {
+      "q": "y = 3^(x+4) funksiyani y = a·3^x ko'rinishida yozganda a koeffitsient nechaga teng bo'ladi?",
+      "v": [
+        "81",
+        "12",
+        "64",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Daraja xossasidan foydalanamiz: 3^(x+4) = 3^x·3⁴. Bu yerda 3⁴ = 81, demak funksiya 81·3^x ko'rinishida yoziladi. Ya'ni chapga 4 birlik siljish grafikni vertikal ravishda 81 marta cho'zish bilan bir xil natija beradi. Javob: 81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorizontal-siljish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#9aab630a"
+    },
+    {
+      "q": "Do'kondagi mahsulot zaxirasi Z(t) = 500·(0,5)^(t−3) dona formula bilan kamayadi, t — kunlar soni. t = 3 bo'lganda zaxira nechta dona bo'ladi?",
+      "v": [
+        "250 dona",
+        "1500 dona",
+        "500 dona",
+        "125 dona"
+      ],
+      "t": 2,
+      "izoh": "t = 3 ni qo'yamiz: ko'rsatkich t − 3 = 0 bo'ladi. Nol darajali son birga teng, ya'ni (0,5)⁰ = 1. Demak Z(3) = 500·1 = 500 dona. Gorizontal siljish tufayli boshlang'ich qiymat t = 0 da emas, t = 3 da erishiladi. Javob: 500 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorizontal-siljish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#c716021e"
+    },
+    {
+      "q": "y = 2^(x−1) va y = 2^x + m funksiyalarning grafiklari ustma-ust tushishi uchun m nechaga teng bo'lishi kerak?",
+      "v": [
+        "m = −1",
+        "m = −0,5",
+        "m = 1",
+        "Bunday m mavjud emas"
+      ],
+      "t": 3,
+      "izoh": "Birinchi funksiyani almashtiramiz: 2^(x−1) = 2^x·2^(−1) = 0,5·2^x. Bu — grafikni vertikal ravishda ikki marta siqish. Ikkinchi funksiya esa grafikni m birlik vertikal siljitadi. Siqish va siljish har xil almashtirishlar, ular hech qanday m da ustma-ust tushmaydi. Javob: bunday m mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gorizontal-siljish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#371987d9"
+    },
+    {
+      "q": "y = (1/3)^x funksiyaning grafigi y = 3^x grafigidan qaysi almashtirish yordamida hosil bo'ladi?",
+      "v": [
+        "Abssissa o'qiga nisbatan akslantirish",
+        "Ordinata o'qiga nisbatan akslantirish",
+        "3 birlik pastga siljitish",
+        "Koordinata boshiga nisbatan siljitish"
+      ],
+      "t": 1,
+      "izoh": "Funksiyani qayta yozamiz: (1/3)^x = 3^(−x). Argument oldidagi minus grafikni ordinata o'qiga nisbatan akslantiradi: har bir (x; y) nuqta (−x; y) nuqtaga o'tadi. Qiymatlar musbat bo'lib qolgani uchun abssissa o'qiga akslantirish emas. Javob: ordinata o'qiga nisbatan akslantirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "akslantirish-simmetriya",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#da1e92ea"
+    },
+    {
+      "q": "y = −4^x funksiyaning qiymatlar sohasi qanday va uning grafigi qaysi choraklarda yotadi?",
+      "v": [
+        "(−∞; 0), III va IV choraklar",
+        "(0; +∞), I va II choraklar",
+        "(−∞; 0), I va IV choraklar",
+        "(−∞; 0], III va IV choraklar"
+      ],
+      "t": 0,
+      "izoh": "4^x > 0 bo'lgani uchun −4^x < 0, ya'ni funksiya faqat manfiy qiymatlar oladi va nolga yetmaydi. Demak grafik butunlay abssissa o'qidan pastda yotadi. Manfiy qiymatlar sohasi chap va o'ng yarim tekislikni qamrab, III va IV choraklarga tushadi. Javob: (−∞; 0), III va IV choraklar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "akslantirish-simmetriya",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#bd547a3d"
+    },
+    {
+      "q": "y = 2^(−x) funksiya o'suvchimi yoki kamayuvchimi va uning asosi nechaga teng?",
+      "v": [
+        "O'suvchi, asosi 2",
+        "Kamayuvchi, asosi −2",
+        "Kamayuvchi, asosi 1/2",
+        "O'suvchi, asosi 1/2"
+      ],
+      "t": 2,
+      "izoh": "Manfiy ko'rsatkichni asosga o'tkazamiz: 2^(−x) = (1/2)^x. Yangi asos 1/2 va 0 < 1/2 < 1, demak funksiya kamayuvchi. Ko'rsatkichli funksiyada asos manfiy bo'la olmaydi, shuning uchun −2 javob bo'lolmaydi. Javob: kamayuvchi, asosi 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "akslantirish-simmetriya",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#1752cc6b"
+    },
+    {
+      "q": "Farrux y = 3^x grafigini avval ordinata o'qiga, so'ngra abssissa o'qiga nisbatan akslantirdi. Natijada qanday funksiya hosil bo'ldi?",
+      "v": [
+        "y = (1/3)^x",
+        "y = −3^x",
+        "y = 3^x",
+        "y = −(1/3)^x"
+      ],
+      "t": 3,
+      "izoh": "Ordinata o'qiga akslantirish x o'rniga −x qo'yadi: y = 3^(−x) = (1/3)^x. Abssissa o'qiga akslantirish esa butun funksiya oldiga minus qo'yadi: y = −(1/3)^x. Natijada grafik III va IV choraklarga tushadi va y = 0 chizig'iga pastdan yaqinlashadi. Javob: y = −(1/3)^x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "akslantirish-simmetriya",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#e0986971"
+    },
+    {
+      "q": "0,5^x > 0,5⁴ tengsizlikni yechishda nima uchun x < 4 natijasi kelib chiqadi?",
+      "v": [
+        "Chunki asos birdan katta va funksiya o'suvchi",
+        "Chunki asos birdan kichik va funksiya kamayuvchi",
+        "Chunki tengsizlikning ikkala tomoni musbat",
+        "Chunki 0,5 soni manfiy hisoblanadi"
+      ],
+      "t": 1,
+      "izoh": "y = 0,5^x funksiyada 0 < 0,5 < 1, demak u kamayuvchi. Kamayuvchi funksiyada kattaroq qiymatga kichikroq argument mos keladi. Tengsizlikda chap tomon kattaroq, shuning uchun uning ko'rsatkichi kichikroq bo'lishi shart: x < 4. Ishora aynan shu sababdan almashadi. Javob: asos birdan kichik va funksiya kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-ishora-sababi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#e9c40435"
+    },
+    {
+      "q": "3^x < 3⁵ tengsizligi x < 5 ga, 0,2^x < 0,2⁵ tengsizligi esa x > 5 ga aylanadi. Bu farqning sababi nimada?",
+      "v": [
+        "Ko'rsatkichlarning musbatligida",
+        "Asoslarning 1 ga nisbatan joylashuvida",
+        "Tengsizlik belgisining turida",
+        "Sonlarning butun bo'lishida"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tengsizlikda asos 3 > 1, funksiya o'suvchi, shuning uchun ishora saqlanadi. Ikkinchisida asos 0,2 va 0 < 0,2 < 1, funksiya kamayuvchi: kichik qiymatga katta argument mos keladi, demak ishora almashadi. Hamma narsa asosning birga nisbatan joyiga bog'liq. Javob: asoslarning 1 ga nisbatan joylashuvida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-ishora-sababi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#0d63fd76"
+    },
+    {
+      "q": "Talaba (2/5)^(x+1) ≥ (2/5)³ tengsizlikni yecha turib x + 1 ≥ 3 deb yozdi. Uning xatosi nimada?",
+      "v": [
+        "Ishorani almashtirmagan, x + 1 ≤ 3 bo'lishi kerak",
+        "Asosni noto'g'ri ko'chirgan",
+        "Ko'rsatkichdagi qavsni noto'g'ri ochgan",
+        "Xato yo'q, yechim to'liq to'g'ri"
+      ],
+      "t": 0,
+      "izoh": "Asos 2/5 = 0,4 birdan kichik, demak (2/5)^t kamayuvchi funksiya. Kamayuvchi funksiyada tengsizlik ko'rsatkichlarga o'tkazilganda ishora teskarisiga almashadi: x + 1 ≤ 3, ya'ni x ≤ 2. Talaba ishorani o'zgarishsiz saqlab qolgan. Javob: ishorani almashtirmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-ishora-sababi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#9da81676"
+    },
+    {
+      "q": "a^x > a⁷ tengsizlikning yechimi x < 7 bo'lib chiqdi. Bundan a asos haqida qanday xulosa chiqadi?",
+      "v": [
+        "a > 1",
+        "a > 7",
+        "a < 0",
+        "0 < a < 1"
+      ],
+      "t": 3,
+      "izoh": "Tengsizlik ko'rsatkichlarga o'tkazilganda ishora teskarisiga almashgan: dastlab katta belgisi bor edi, natijada kichik belgisi chiqdi. Bu faqat kamayuvchi funksiyada sodir bo'ladi. y = a^x kamayuvchi bo'lishi uchun 0 < a < 1 sharti bajarilishi kerak. Javob: 0 < a < 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tengsizlik-ishora-sababi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#7e9eba6f"
+    },
+    {
+      "q": "y = 2^(x−1) funksiyaning grafigi qaysi x qiymatlarida y = 32 gorizontal chizig'idan pastda yotadi?",
+      "v": [
+        "x < 5",
+        "x > 6",
+        "x < 6",
+        "x < 16"
+      ],
+      "t": 2,
+      "izoh": "Grafik chiziqdan pastda yotishi 2^(x−1) < 32 shartini bildiradi. O'ng tomonni bir xil asosda yozamiz: 32 = 2⁵, ya'ni chiziq grafikni x − 1 = 5 bo'lgan nuqtada kesib o'tadi. Asos 2 > 1 bo'lgani uchun grafik o'suvchi, demak kesishish nuqtasidan chapda u chiziqdan pastda qoladi: x − 1 < 5, bundan x < 6. Javob: x < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-va-gorizontal-chiziq",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#6174290f"
+    },
+    {
+      "q": "y = (1/3)^x funksiyaning grafigi qaysi oraliqda y = 1/81 gorizontal chizig'idan yuqorida yoki aynan unda yotadi?",
+      "v": [
+        "x ≥ 4",
+        "x ≤ 4",
+        "x ≤ 81",
+        "x ≥ −4"
+      ],
+      "t": 1,
+      "izoh": "Shart (1/3)^x ≥ 1/81 ko'rinishida yoziladi. O'ng tomonni bir xil asosda yozamiz: 1/81 = (1/3)⁴, demak chiziq grafikni x = 4 nuqtada kesadi. Asos 1/3 birdan kichik va grafik kamayuvchi, shuning uchun kesishish nuqtasidan chapda grafik chiziqdan yuqorida yotadi: x ≤ 4. Javob: x ≤ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-va-gorizontal-chiziq",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#4e5dff1a"
+    },
+    {
+      "q": "Laboratoriya termostatidagi ozuqa muhitida bakteriyalar soni B(t) = 200·2^t ta bo'lib, t — soat. Bakteriya soni 3200 tadan oshmasligi uchun tajriba ko'pi bilan necha soat davom etishi mumkin?",
+      "v": [
+        "4 soat",
+        "16 soat",
+        "5 soat",
+        "3 soat"
+      ],
+      "t": 0,
+      "izoh": "Shartni tengsizlik ko'rinishida yozamiz: 200·2^t ≤ 3200. Ikkala tomonni 200 ga bo'lamiz: 2^t ≤ 16, ya'ni 2^t ≤ 2⁴. Asos ikki birdan katta bo'lgani uchun funksiya o'suvchi va ishora saqlanadi: t ≤ 4. Javob: 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-tengsizlik-yechish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#c2968f10"
+    },
+    {
+      "q": "y = 0,4^x funksiyaning grafigi koordinata tekisligining qaysi choraklarida joylashadi?",
+      "v": [
+        "Faqat I chorakda",
+        "I va IV choraklarda",
+        "I va II choraklarda",
+        "Barcha to'rt chorakda"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkichli funksiyaning qiymatlari doim musbat: har qanday x uchun 0,4^x > 0. Demak grafikning birorta nuqtasi abssissa o'qidan pastga tushmaydi va III hamda IV choraklarda nuqta bo'lmaydi. x > 0 bo'lganda nuqtalar I chorakda, x < 0 bo'lganda esa II chorakda yotadi, chegarada grafik (0; 1) nuqtadan o'tadi. Javob: I va II choraklarda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-joylashgan-choraklar",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#02398c53"
+    },
+    {
+      "q": "Sardor 5^(x²) ≤ 5^(4x) tengsizlikni yechdi. Yechimlar to'plami qaysi javobda to'g'ri ko'rsatilgan?",
+      "v": [
+        "(−∞; 0] ∪ [4; +∞)",
+        "[0; 4)",
+        "(0; 4)",
+        "[0; 4]"
+      ],
+      "t": 3,
+      "izoh": "Asos 5 birdan katta, funksiya o'suvchi, shuning uchun ishora saqlanadi: x² ≤ 4x. Hamma hadni chap tomonga o'tkazamiz: x² − 4x ≤ 0, ya'ni x(x − 4) ≤ 0. Bu kvadrat tengsizlikning yechimi noldan to'rtgacha bo'lgan yopiq kesma. Javob: [0; 4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-tengsizlik-yechish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#d846105d"
+    },
+    {
+      "q": "Asosi qanday bo'lishidan qat'i nazar, har qanday y = a^x funksiyaning grafigi qaysi umumiy nuqtadan o'tadi?",
+      "v": [
+        "(0; 1)",
+        "(1; 0)",
+        "(1; 1)",
+        "(0; 0)"
+      ],
+      "t": 0,
+      "izoh": "Ixtiyoriy musbat a uchun a⁰ = 1 tenglik o'rinli. Demak x = 0 bo'lganda har qanday ko'rsatkichli funksiyaning qiymati birga teng chiqadi. Shu sababli barcha y = a^x grafiklari bitta nuqtada kesishadi. Javob: (0; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oy-kesishish-nuqtasi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#11f4de91"
+    },
+    {
+      "q": "y = (1/4)^x + 9 funksiyaning grafigi ordinata o'qini qaysi nuqtada kesib o'tadi?",
+      "v": [
+        "(0; 9)",
+        "(0; 10)",
+        "(0; 1)",
+        "(0; 13)"
+      ],
+      "t": 1,
+      "izoh": "Ordinata o'qini kesish nuqtasida x = 0 bo'ladi. Nol darajali son birga teng, ya'ni (1/4)⁰ = 1. Demak y = 1 + 9 = 10 va nuqta (0; 10). Nol darajani hisobga olmaslik eng ko'p uchraydigan xato. Javob: (0; 10).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oy-kesishish-nuqtasi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#48980607"
+    },
+    {
+      "q": "Zilola bank omonatini D(t) = 4 000 000·(1,14)^t so'm formula bilan hisobladi. Grafik ordinata o'qini kesgan nuqta qanday ma'noga ega?",
+      "v": [
+        "Bir yildan keyingi summa — 4 560 000 so'm",
+        "Yillik foiz stavkasi — 14 foiz",
+        "Omonatning eng katta mumkin qiymati",
+        "Boshlang'ich omonat — 4 000 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Ordinata o'qini kesish t = 0 bo'lganda ro'y beradi. (1,14)⁰ = 1 bo'lgani uchun D(0) = 4 000 000·1 = 4 000 000 so'm. Bu — hisob boshlanganda kassaga qo'yilgan summa, ya'ni boshlang'ich omonat. Javob: boshlang'ich omonat 4 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oy-kesishish-nuqtasi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#1a29b7c7"
+    },
+    {
+      "q": "y = 2^(x+3) − 8 funksiyaning grafigi koordinata o'qlarini nechta nuqtada kesib o'tadi?",
+      "v": [
+        "2 ta nuqtada",
+        "3 ta nuqtada",
+        "1 ta nuqtada",
+        "Kesib o'tmaydi"
+      ],
+      "t": 2,
+      "izoh": "Ordinata o'qi bilan: x = 0 da y = 2³ − 8 = 0, ya'ni (0; 0) nuqta chiqadi. Abssissa o'qi bilan: 2^(x+3) = 8 = 2³ dan x + 3 = 3 va x = 0 — yana o'sha nuqta. Grafik koordinata boshidan o'tgani uchun kesishish nuqtasi bitta. Javob: 1 ta nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oy-kesishish-nuqtasi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#f32bc889"
+    },
+    {
+      "q": "Quyidagi sonlarni o'sish tartibida joylashtiring: 2^(−1), 2^(0,5), 2⁰ va 2^(1,5).",
+      "v": [
+        "2^(−1), 2^(0,5), 2⁰, 2^(1,5)",
+        "2⁰, 2^(−1), 2^(0,5), 2^(1,5)",
+        "2^(1,5), 2^(0,5), 2⁰, 2^(−1)",
+        "2^(−1), 2⁰, 2^(0,5), 2^(1,5)"
+      ],
+      "t": 3,
+      "izoh": "Asos 2 > 1, demak funksiya o'suvchi va sonlar ko'rsatkichlar tartibida joylashadi. Ko'rsatkichlarni tartiblaymiz: −1 < 0 < 0,5 < 1,5. Sonli tekshiruv: 0,5 < 1 < 1,41 < 2,83. Javob: 2^(−1), 2⁰, 2^(0,5), 2^(1,5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonlarni-tartiblash",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#c426a60d"
+    },
+    {
+      "q": "0,7², 0,7^(−1), 0,7⁰ va 0,7³ sonlaridan eng kattasini aniqlang.",
+      "v": [
+        "0,7^(−1)",
+        "0,7⁰",
+        "0,7²",
+        "0,7³"
+      ],
+      "t": 0,
+      "izoh": "Asos 0,7 birdan kichik, demak funksiya kamayuvchi: ko'rsatkich qancha kichik bo'lsa, qiymat shuncha katta bo'ladi. Ko'rsatkichlar orasida eng kichigi −1. Sonli tekshiruv: 0,7^(−1) = 10/7 ≈ 1,43, qolganlari esa birdan kichik. Javob: 0,7^(−1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonlarni-tartiblash",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#244b0f74"
+    },
+    {
+      "q": "y = 2^x, y = 3^x va y = 4^x funksiyalarning mos ravishda x = 7, x = 4 va x = 3 nuqtalardagi qiymatlarini kamayish tartibida joylashtiring.",
+      "v": [
+        "4³, 3⁴, 2⁷",
+        "3⁴, 2⁷, 4³",
+        "2⁷, 3⁴, 4³",
+        "2⁷, 4³, 3⁴"
+      ],
+      "t": 2,
+      "izoh": "Qiymatlarni hisoblaymiz: 2⁷ = 128, 3⁴ = 81 va 4³ = 64. Kamayish tartibi kattadan kichikka boradi: 128, 81, 64. Bu misol katta asos har doim katta qiymat bermasligini ko'rsatadi — ko'rsatkich ham hal qiluvchi rol o'ynaydi. Javob: 2⁷, 3⁴, 4³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonlarni-tartiblash",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#16b40764"
+    },
+    {
+      "q": "f(x) = 1,5^x funksiya uchun f(2), f(−2) va f(0) qiymatlarini o'sish tartibida joylashtiring.",
+      "v": [
+        "f(0), f(−2), f(2)",
+        "f(−2), f(0), f(2)",
+        "f(2), f(0), f(−2)",
+        "f(−2), f(2), f(0)"
+      ],
+      "t": 1,
+      "izoh": "Asos 1,5 > 1, demak funksiya o'suvchi va qiymatlar argumentlar tartibida joylashadi. Argumentlarni tartiblaymiz: −2 < 0 < 2. Sonli tekshiruv: f(−2) ≈ 0,44, f(0) = 1 va f(2) = 2,25. Javob: f(−2), f(0), f(2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonlarni-tartiblash",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#e0500ffc"
+    },
+    {
+      "q": "Bir grafik (0; 1) nuqtadan o'tadi, chapdan o'ngga qarab tushadi va y = 0 chizig'iga yaqinlashadi. Bunga qaysi funksiya mos keladi?",
+      "v": [
+        "y = 4^x",
+        "y = 4^x − 1",
+        "y = (0,4)^x",
+        "y = −(0,4)^x"
+      ],
+      "t": 2,
+      "izoh": "Grafikning (0; 1) nuqtadan o'tishi formulada qo'shimcha siljish yo'qligini bildiradi, ya'ni u sof y = a^x ko'rinishida. Chapdan o'ngga tushishi esa asos birdan kichik ekanini ko'rsatadi. Berilganlar orasida faqat 0,4 shu shartni qanoatlantiradi. Javob: y = (0,4)^x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-tavsifiga-moslash",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#78095d44"
+    },
+    {
+      "q": "Bir grafik y = 3 chizig'iga yuqoridan yaqinlashadi va o'ngga qarab pastga tushadi. Qaysi formula bunday grafikka mos keladi?",
+      "v": [
+        "y = (0,5)^x − 3",
+        "y = 2^x + 3",
+        "y = 3 − 2^x",
+        "y = (0,5)^x + 3"
+      ],
+      "t": 3,
+      "izoh": "Asimptota y = 3 bo'lishi uchun funksiyaga 3 qo'shilgan bo'lishi kerak, ya'ni ko'rinish y = a^x + 3. Grafikning pastga tushishi uchun asos birdan kichik bo'lishi shart, shuning uchun a = 0,5 olinadi. a^x musbat bo'lgani uchun grafik y = 3 ga yuqoridan yaqinlashadi. Javob: y = (0,5)^x + 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-tavsifiga-moslash",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#a5ea68a8"
+    },
+    {
+      "q": "O'quvchi chizgan grafik x → +∞ da cheksiz o'sadi, x → −∞ da esa y = −2 chizig'iga yaqinlashadi. Qaysi funksiya shunday grafikka ega?",
+      "v": [
+        "y = 2^x − 2",
+        "y = 2^x + 2",
+        "y = (0,5)^x − 2",
+        "y = −2^x + 2"
+      ],
+      "t": 0,
+      "izoh": "x → −∞ da a^x nolga intiladi, shuning uchun asimptota qo'shilgan songa teng bo'ladi: bu son −2. x → +∞ da funksiya cheksiz o'sishi uchun esa asos birdan katta bo'lishi kerak. Ikkala shartni ham y = 2^x − 2 qanoatlantiradi. Javob: y = 2^x − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-tavsifiga-moslash",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#dc4d8f83"
+    },
+    {
+      "q": "Bir tekislikda ikkita o'suvchi grafik chizilgan: biri (0; 1) nuqtadan, ikkinchisi (0; 4) nuqtadan o'tadi va ikkalasi ham y = 0 chizig'iga yaqinlashadi. Ular qanday funksiyalar bo'lishi mumkin?",
+      "v": [
+        "y = 3^x va y = 3^x + 3",
+        "y = 3^x va y = 4·3^x",
+        "y = 3^x va y = (0,25)^x",
+        "y = 3^x va y = 3^(x+4)"
+      ],
+      "t": 1,
+      "izoh": "Ikkala grafik ham y = 0 chizig'iga yaqinlashgani uchun formulada qo'shiluvchi o'zgarmas bo'lmaydi — bu y = 3^x + 3 variantini chiqarib tashlaydi. (0; 4) nuqtadan o'tish uchun funksiya oldida 4 koeffitsient kerak, chunki 4·3⁰ = 4. Ikkalasi ham o'suvchi, chunki asos 3 birdan katta. Javob: y = 3^x va y = 4·3^x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-tavsifiga-moslash",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#3143d57a"
+    },
+    {
+      "q": "Fermer xo'jaligida tovuqlar soni har yili 1,5 marta ortib boradi. Hozir xo'jalikda 800 ta tovuq bor. 3 yildan keyin ularning soni qancha bo'ladi?",
+      "v": [
+        "3600 ta",
+        "2400 ta",
+        "2700 ta",
+        "1200 ta"
+      ],
+      "t": 2,
+      "izoh": "Model ko'rsatkichli: N(t) = 800·(1,5)^t. Uch yil uchun (1,5)³ = 3,375 ni hisoblaymiz. Demak N(3) = 800·3,375 = 2700 ta. Har yili son 1,5 ga ko'paytiriladi, unga 1,5 qo'shilmaydi — shuning uchun o'sish chiziqli emas. Javob: 2700 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-osish-modeli",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#570f792b"
+    },
+    {
+      "q": "Do'kon savdosi har oyda 20 foizga ortib bormoqda. Yanvarda 15 million so'mlik savdo bo'lgan. Aprelda savdo qancha bo'ladi?",
+      "v": [
+        "25,92 million so'm",
+        "31,104 million so'm",
+        "24 million so'm",
+        "18 million so'm"
+      ],
+      "t": 0,
+      "izoh": "Har oydagi 20 foizlik o'sish 1,2 ga ko'paytirishga teng: S(t) = 15·(1,2)^t. Yanvardan aprelgacha 3 oy o'tadi, demak t = 3. (1,2)³ = 1,728 va S = 15·1,728 = 25,92 million so'm. Javob: 25,92 million so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-osish-modeli",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#3c559fa7"
+    },
+    {
+      "q": "Bakteriya koloniyasi har 20 daqiqada ikki barobar ko'payadi. Boshida idishda 300 ta bakteriya bor edi. 2 soatdan keyin ularning soni qancha bo'ladi?",
+      "v": [
+        "1800 ta",
+        "9600 ta",
+        "38 400 ta",
+        "19 200 ta"
+      ],
+      "t": 3,
+      "izoh": "Avval davrlar sonini topamiz: 2 soat 120 daqiqaga teng va 120 : 20 = 6, ya'ni ikkilanish 6 marta ro'y beradi. Demak N = 300·2⁶ = 300·64 = 19 200 ta. Vaqtni to'g'ridan-to'g'ri ko'paytuvchi sifatida olish xato natija beradi. Javob: 19 200 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-osish-modeli",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#07c08c9d"
+    },
+    {
+      "q": "Anvarning oylik maoshi har yili 10 foizga oshadi va hozir u 4 000 000 so'm. 2 yildan keyin maosh qancha bo'ladi?",
+      "v": [
+        "4 800 000 so'm",
+        "4 840 000 so'm",
+        "4 400 000 so'm",
+        "5 324 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Har yillik 10 foizlik o'sish 1,1 ga ko'paytirish demak: M(t) = 4 000 000·(1,1)^t. Ikki yil uchun (1,1)² = 1,21. Demak M = 4 000 000·1,21 = 4 840 000 so'm. Oddiy 20 foiz qo'shish noto'g'ri, chunki ikkinchi yil foizi yangi summadan olinadi. Javob: 4 840 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-osish-modeli",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#6dc687a1"
+    },
+    {
+      "q": "Ikki startap bir vaqtda ishga tushdi: birinchisining oylik daromadi A(t) = 5·4^t, ikkinchisiniki B(t) = 80·2^t million so'm. Necha oydan keyin ularning daromadi tenglashadi?",
+      "v": [
+        "2 oydan keyin",
+        "8 oydan keyin",
+        "4 oydan keyin",
+        "16 oydan keyin"
+      ],
+      "t": 2,
+      "izoh": "Tenglama tuzamiz: 5·4^t = 80·2^t. Ikkala tomonni 5·2^t ga bo'lamiz va (4/2)^t = 16, ya'ni 2^t = 16 hosil bo'ladi. 16 = 2⁴ bo'lgani uchun t = 4. Tekshirish: A(4) = 5·256 = 1280 va B(4) = 80·16 = 1280. Javob: 4 oydan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-osish-modeli",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#a1d0f0b8"
+    },
+    {
+      "q": "Yangi avtomobilning narxi har yili 15 foizga tushadi. Bugun u 240 million so'm turadi. 2 yildan keyin narxi qancha bo'ladi?",
+      "v": [
+        "204 million so'm",
+        "168 million so'm",
+        "147,39 million so'm",
+        "173,4 million so'm"
+      ],
+      "t": 3,
+      "izoh": "Har yili 15 foiz tushish 0,85 ga ko'paytirishga teng: P(t) = 240·(0,85)^t. Ikki yil uchun (0,85)² = 0,7225. Demak P = 240·0,7225 = 173,4 million so'm. Ikki yilga 30 foiz ayirish noto'g'ri, chunki ikkinchi yil chegirmasi kichraygan summadan olinadi. Javob: 173,4 million so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kamayish-modeli",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#27786f06"
+    },
+    {
+      "q": "Bir ko'lning suv sathi har yili 8 foizga pasaymoqda. Hozir sath 25 metr. 2 yildan keyin sath qanday bo'ladi?",
+      "v": [
+        "21,16 m",
+        "23 m",
+        "21 m",
+        "19,47 m"
+      ],
+      "t": 0,
+      "izoh": "Har yillik 8 foizlik kamayish 0,92 ga ko'paytirishga teng: H(t) = 25·(0,92)^t. Ikki yil uchun (0,92)² = 0,8464. Demak H = 25·0,8464 = 21,16 metr. Ikki yilga 16 foiz ayirib 21 m olish noto'g'ri natija beradi. Javob: 21,16 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kamayish-modeli",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#0517f16a"
+    },
+    {
+      "q": "Kompyuter texnikasining qiymati har yili 25 foizga tushadi. Maktab 64 million so'mlik texnika sotib oldi. 3 yildan keyin uning qiymati qancha bo'ladi?",
+      "v": [
+        "16 million so'm",
+        "27 million so'm",
+        "36 million so'm",
+        "48 million so'm"
+      ],
+      "t": 1,
+      "izoh": "Har yili qiymat 0,75 ga ko'paytiriladi: Q(t) = 64·(0,75)^t. Uch yil uchun (0,75)³ = 27/64 ni hisoblaymiz. Demak Q = 64·27/64 = 27 million so'm. Ikki yilga to'xtab qolsak 36 million chiqadi — bu tez-tez uchraydigan xato. Javob: 27 million so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kamayish-modeli",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#4d31b1a6"
+    },
+    {
+      "q": "Zavodda chiqindi miqdori har chorakda 30 foizga kamaymoqda. Birinchi chorakda u 2000 tonna edi. To'rtinchi chorakda qancha bo'ladi?",
+      "v": [
+        "980 tonna",
+        "1400 tonna",
+        "480,2 tonna",
+        "686 tonna"
+      ],
+      "t": 3,
+      "izoh": "30 foizlik kamayish 0,7 ga ko'paytirish demak: C(n) = 2000·(0,7)^n, bu yerda n — o'tgan choraklar soni. Birinchi chorakdan to'rtinchisigacha 3 chorak o'tadi, ya'ni n = 3. (0,7)³ = 0,343 va C = 2000·0,343 = 686 tonna. Javob: 686 tonna.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kamayish-modeli",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#713bd69d"
+    },
+    {
+      "q": "Ikki idishdagi suv bug'lanmoqda: birinchisida V₁(t) = 90·(0,8)^t litr, ikkinchisida V₂(t) = 30·(0,9)^t litr. Qaysi idishda suv nisbatan tezroq kamayadi?",
+      "v": [
+        "Ikkinchisida, chunki hajmi kichik",
+        "Birinchisida, chunki boshlang'ich hajmi katta",
+        "Birinchisida, chunki uning asosi kichikroq",
+        "Ikkalasida bir xil tezlikda"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkichli modelda nisbiy kamayish tezligini boshlang'ich hajm emas, asos belgilaydi. Birinchi idishda har birlik vaqtda hajm 0,8 ga, ikkinchisida esa 0,9 ga ko'paytiriladi, ya'ni birinchisida har qadamda hajmning 20 foizi, ikkinchisida 10 foizi yo'qoladi. 0,8 < 0,9 bo'lgani uchun birinchi idishda har qadamda kattaroq ulush yo'qoladi. Javob: birinchisida, chunki asosi kichikroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-kamayish-modeli",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#7acb1732"
+    },
+    {
+      "q": "Korxonada ishlab chiqarish P(t) = P₀·a^t ko'rinishida o'sadi. P(0) = 60 va P(2) = 240 bo'lsa, a nechaga teng?",
+      "v": [
+        "2",
+        "4",
+        "3",
+        "1,5"
+      ],
+      "t": 0,
+      "izoh": "Birinchi shartdan P(0) = P₀·a⁰ = P₀ = 60 kelib chiqadi. Ikkinchi shartdan 60·a² = 240, ya'ni a² = 4. Asos musbat bo'lgani uchun a = 2. Demak ishlab chiqarish har yili ikki barobar ortadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-nuqtadan-model-qurish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#61088ff6"
+    },
+    {
+      "q": "Suv havzasidagi baliqlar soni ko'rsatkichli qonun bilan kamaydi: ikki yil oldin 4500 ta, hozir 2880 ta. Yillik o'zgarish koeffitsienti nechaga teng?",
+      "v": [
+        "0,64",
+        "0,8",
+        "0,9",
+        "1,25"
+      ],
+      "t": 1,
+      "izoh": "Model N(t) = 4500·a^t ko'rinishida. Ikki yildan keyin 4500·a² = 2880, bundan a² = 2880/4500 = 0,64. Musbat ildizni olamiz: a = 0,8. Demak har yili baliqlar soni 20 foizga kamaygan. Javob: 0,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-nuqtadan-model-qurish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#c1668854"
+    },
+    {
+      "q": "Ko'rsatkichli funksiya f(x) = c·b^x ning grafigi (0; 7) va (3; 189) nuqtalardan o'tadi. c va b ning qiymatlarini toping.",
+      "v": [
+        "c = 7, b = 27",
+        "c = 3, b = 7",
+        "c = 7, b = 9",
+        "c = 7, b = 3"
+      ],
+      "t": 3,
+      "izoh": "x = 0 nuqtada f(0) = c·b⁰ = c, demak birinchi shartdan c = 7. Ikkinchi nuqtani qo'yamiz: 7·b³ = 189, ya'ni b³ = 27. Kub ildiz olamiz: b = 3. Javob: c = 7, b = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-nuqtadan-model-qurish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#7ace5f7e"
+    },
+    {
+      "q": "Telefon narxi ko'rsatkichli qonun bilan tushmoqda: sotuvga chiqqan kuni 8 000 000 so'm, ikki yildan keyin 5 120 000 so'm. Uch yildan keyin narx qancha bo'ladi?",
+      "v": [
+        "4 000 000 so'm",
+        "3 276 800 so'm",
+        "4 096 000 so'm",
+        "6 400 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Model N(t) = 8 000 000·a^t. Ikkinchi yil uchun 8 000 000·a² = 5 120 000, bundan a² = 0,64 va a = 0,8. Endi uchinchi yilni hisoblaymiz: N(3) = 8 000 000·(0,8)³ = 8 000 000·0,512 = 4 096 000 so'm. Javob: 4 096 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-nuqtadan-model-qurish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#c9dccfd6"
+    },
+    {
+      "q": "Dori vositasining qondagi miqdori har 4 soatda yarmiga kamayadi. Bemorga 400 mg dori berildi. 12 soatdan keyin qonda qancha dori qoladi?",
+      "v": [
+        "100 mg",
+        "50 mg",
+        "133 mg",
+        "25 mg"
+      ],
+      "t": 1,
+      "izoh": "Avval yarimlanishlar sonini topamiz: 12 : 4 = 3, ya'ni miqdor uch marta yarimlanadi. Demak M = 400·(1/2)³ = 400 : 8 = 50 mg. Har yarimlanish oldingi qiymatdan olinadi, boshlang'ich miqdordan emas. Javob: 50 mg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-yemirilish-davri",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#11647599"
+    },
+    {
+      "q": "Radioaktiv moddaning massasi m(t) = 80·(0,5)^(t/6) gramm formula bilan kamayadi, bu yerda t kunlarda o'lchanadi. 18 kundan keyin massa qancha bo'ladi?",
+      "v": [
+        "10 g",
+        "20 g",
+        "40 g",
+        "13,3 g"
+      ],
+      "t": 0,
+      "izoh": "Avval ko'rsatkichni hisoblaymiz: t/6 = 18/6 = 3. Demak m = 80·(0,5)³ = 80 : 8 = 10 gramm. Formuladagi 6 soni yarim yemirilish davri bo'lib, 18 kunda u aynan uch marta takrorlanadi. Javob: 10 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-yemirilish-davri",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#e7c8afd5"
+    },
+    {
+      "q": "Bir moddaning yarim yemirilish davri 25 yilga teng. Boshlang'ich massa 1600 gramm bo'lsa, 100 yildan keyin qancha modda qoladi?",
+      "v": [
+        "400 g",
+        "200 g",
+        "100 g",
+        "64 g"
+      ],
+      "t": 2,
+      "izoh": "Davrlar sonini topamiz: 100 : 25 = 4, ya'ni massa to'rt marta yarimlanadi. Demak m = 1600·(1/2)⁴ = 1600 : 16 = 100 gramm. Har yarimlanishda oldingi massa ikkiga bo'linadi, boshlang'ich massa emas. Javob: 100 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-yemirilish-davri",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#da28231f"
+    },
+    {
+      "q": "Bir izotopning 64 grammidan 300 kundan keyin atigi 2 gramm qoldi. Uning yarim yemirilish davri necha kun?",
+      "v": [
+        "50 kun",
+        "75 kun",
+        "30 kun",
+        "60 kun"
+      ],
+      "t": 3,
+      "izoh": "Massa qancha marta yarimlanganini sanaymiz: 64 → 32 → 16 → 8 → 4 → 2, ya'ni 5 marta. Bu 5 ta yarim yemirilish davri 300 kunga to'g'ri keladi. Demak bir davr 300 : 5 = 60 kun. Javob: 60 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yarim-yemirilish-davri",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#85b329b3"
+    },
+    {
+      "q": "y = (2a − 6)^x funksiya kamayuvchi bo'lishi uchun a parametr qaysi oraliqda yotishi kerak?",
+      "v": [
+        "a > 3,5",
+        "3 < a < 3,5",
+        "a < 3",
+        "3,5 < a < 4"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichli funksiya kamayuvchi bo'lishi uchun asos nol bilan bir orasida bo'lishi shart: 0 < 2a − 6 < 1. Har uch tomonga 6 qo'shamiz: 6 < 2a < 7. Ikkiga bo'lamiz va 3 < a < 3,5 kelib chiqadi. Javob: 3 < a < 3,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrli-monotonlik",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#4038e836"
+    },
+    {
+      "q": "y = (m − 4)^x funksiya ko'rsatkichli va o'suvchi bo'lishi uchun m qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "m > 5",
+        "m > 4",
+        "m ≥ 5",
+        "4 < m < 5"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichli funksiyada asos musbat va birga teng bo'lmasligi kerak. O'suvchi bo'lishi uchun esa asos birdan katta bo'lishi shart: m − 4 > 1. Bundan m > 5. Tenglik holatida asos birga aylanib, funksiya o'zgarmasga aylanadi. Javob: m > 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrli-monotonlik",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#a5fe7ae9"
+    },
+    {
+      "q": "y = a^x ifoda a ning qaysi musbat qiymatida na o'suvchi, na kamayuvchi funksiyaga aylanadi va shu sabab ta'rifda qanday cheklov qo'yiladi?",
+      "v": [
+        "a = 1/2, shu sababli ta'rifda a > 1 sharti qo'yiladi",
+        "Har qanday musbat a da funksiya monoton, bunday qiymat yo'q",
+        "a = 2, shu sababli ta'rifda a ≠ 2 sharti qo'yiladi",
+        "a = 1, shu sababli ta'rifda a ≠ 1 sharti qo'yiladi"
+      ],
+      "t": 3,
+      "izoh": "Asos birga teng bo'lganda har qanday x uchun 1^x = 1 bo'ladi va grafik y = 1 gorizontal to'g'ri chiziqqa aylanadi — bunday ifoda na o'sadi, na kamayadi. Aynan shu sababdan ko'rsatkichli funksiya ta'rifiga a ≠ 1 cheklovi kiritiladi. a = 1/2 da funksiya kamayuvchi, a = 2 da esa o'suvchi, ular monotonlikni yo'qotmaydi. Javob: a = 1, ta'rifda a ≠ 1 sharti qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrli-monotonlik",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#be37d476"
+    },
+    {
+      "q": "y = (a² − 5)^x funksiya o'suvchi bo'lishi uchun musbat a parametr qaysi oraliqda bo'lishi kerak?",
+      "v": [
+        "a > √6",
+        "a > 6",
+        "a > √5",
+        "√5 < a < √6"
+      ],
+      "t": 0,
+      "izoh": "O'suvchi bo'lishi uchun asos birdan katta bo'lishi shart: a² − 5 > 1. Har ikki tomonga 5 qo'shamiz: a² > 6. Shart bo'yicha a musbat, shuning uchun a > √6 ≈ 2,45. Asosning shunchaki musbat bo'lishi yetarli emas, u birdan ham katta bo'lishi kerak. Javob: a > √6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrli-monotonlik",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#39ad2d40"
+    },
+    {
+      "q": "y = 3^x funksiyaning grafigi y = 81 gorizontal chizig'i bilan qaysi nuqtada kesishadi?",
+      "v": [
+        "(27; 81)",
+        "(4; 81)",
+        "(3; 81)",
+        "(81; 4)"
+      ],
+      "t": 1,
+      "izoh": "Kesishish nuqtasida ikkala funksiyaning qiymati teng: 3^x = 81. O'ng tomonni bir xil asosda yozamiz: 81 = 3⁴. Asoslar tenglashgach x = 4 kelib chiqadi, ordinatasi esa 81 bo'lib qoladi. Javob: (4; 81).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-asosga-keltirish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#e3de48f2"
+    },
+    {
+      "q": "y = (1/2)^x va y = 8 grafiklari kesishgan nuqtaning abssissasini toping.",
+      "v": [
+        "3",
+        "−8",
+        "−3",
+        "1/3"
+      ],
+      "t": 2,
+      "izoh": "Chap tomonni ikki asosiga keltiramiz: (1/2)^x = 2^(−x). O'ng tomon esa 8 = 2³. Tenglama 2^(−x) = 2³ ko'rinishini oladi, demak −x = 3 va x = −3. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-asosga-keltirish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#89f7f10d"
+    },
+    {
+      "q": "Bir zavod har yili mahsulot hajmini 3 barobar oshirmoqda va hozirgi hajm 5 ming tonna. Necha yildan keyin hajm 405 ming tonnaga yetadi?",
+      "v": [
+        "5 yildan keyin",
+        "3 yildan keyin",
+        "81 yildan keyin",
+        "4 yildan keyin"
+      ],
+      "t": 3,
+      "izoh": "Model V(t) = 5·3^t ko'rinishida yoziladi. Shartga ko'ra 5·3^t = 405. Ikkala tomonni 5 ga bo'lamiz: 3^t = 81. 81 = 3⁴ bo'lgani uchun asoslar tenglashadi va t = 4. Javob: 4 yildan keyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-asosga-keltirish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#3394d4c2"
+    },
+    {
+      "q": "y = 2^x va y = 4^(x−1) funksiyalarning grafiklari qaysi nuqtada kesishadi?",
+      "v": [
+        "(2; 4)",
+        "(1; 2)",
+        "(4; 16)",
+        "(−2; 0,25)"
+      ],
+      "t": 0,
+      "izoh": "O'ng tomonni ikki asosiga keltiramiz: 4^(x−1) = (2²)^(x−1) = 2^(2x−2). Tenglama 2^x = 2^(2x−2) ko'rinishini oladi, demak x = 2x − 2 va bundan x = 2. Ordinatasi y = 2² = 4. Javob: (2; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-asosga-keltirish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#80c96ba3"
+    },
+    {
+      "q": "Bir koordinata tekisligida y = 2^x, y = 5^x va y = 10^x grafiklari chizilgan. x > 0 sohada qaysi grafik eng tik ko'tariladi?",
+      "v": [
+        "y = 2^x",
+        "y = 5^x",
+        "y = 10^x",
+        "Uchalasi bir xil tiklikda"
+      ],
+      "t": 2,
+      "izoh": "Musbat argumentlarda asos qancha katta bo'lsa, funksiya shuncha tez o'sadi. Buni x = 1 nuqtada tekshirish oson: qiymatlar mos ravishda 2, 5 va 10 bo'ladi. Demak eng tik ko'tariladigani asosi eng katta bo'lgan funksiya. Javob: y = 10^x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-tikligi-asos-solishtirish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#3613d372"
+    },
+    {
+      "q": "Bitta chizmada y = (0,3)^x va y = (0,7)^x grafiklari tasvirlangan. x > 0 sohada qaysi grafik tezroq nolga yaqinlashadi?",
+      "v": [
+        "y = (0,7)^x",
+        "y = (0,3)^x",
+        "Ikkalasi bir xil tezlikda",
+        "Ular nolga yaqinlashmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ikkala funksiya ham kamayuvchi, chunki asoslari birdan kichik. Kichikroq asos har qadamda qiymatni ko'proq kamaytiradi: x = 2 da (0,3)² = 0,09, (0,7)² = 0,49. Demak asosi kichik bo'lgan grafik nolga tezroq yaqinlashadi. Javob: y = (0,3)^x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-tikligi-asos-solishtirish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#70f6adb0"
+    },
+    {
+      "q": "y = a^x va y = b^x grafiklari x = 1 nuqtada mos ravishda 6 va 2,5 qiymatlarni beradi. a va b haqida qanday xulosa chiqadi?",
+      "v": [
+        "b > a > 1, ikkalasi ham o'suvchi",
+        "a > 1 > b, biri kamayuvchi",
+        "a va b ni aniqlab bo'lmaydi",
+        "a > b > 1, ikkalasi ham o'suvchi"
+      ],
+      "t": 3,
+      "izoh": "x = 1 bo'lganda a¹ = a va b¹ = b, demak grafiklardan bevosita a = 6 va b = 2,5 kelib chiqadi. Ikkala asos ham birdan katta, shuning uchun ikkala funksiya o'suvchi. a kattaroq bo'lgani uchun uning grafigi tikroq ko'tariladi. Javob: a > b > 1, ikkalasi ham o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-tikligi-asos-solishtirish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#c3059298"
+    },
+    {
+      "q": "y = 3^x va y = (1/3)^x grafiklari koordinata boshiga yaqin joyda kesishadi. x = −2 nuqtada ular orasidagi vertikal masofa nechaga teng?",
+      "v": [
+        "80/9",
+        "8",
+        "9",
+        "82/9"
+      ],
+      "t": 0,
+      "izoh": "x = −2 da birinchi funksiya 3^(−2) = 1/9 qiymatni, ikkinchisi esa (1/3)^(−2) = 3² = 9 qiymatni beradi. Vertikal masofa — bu qiymatlar ayirmasi: 9 − 1/9. Umumiy maxrajga keltiramiz: 81/9 − 1/9 = 80/9. Javob: 80/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-tikligi-asos-solishtirish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#dea17147"
+    },
+    {
+      "q": "y = 2^x funksiyaning [−1; 3] kesmadagi eng katta va eng kichik qiymatlarini toping.",
+      "v": [
+        "Eng kattasi 8, eng kichigi 0",
+        "Eng kattasi 6, eng kichigi 0,5",
+        "Eng kattasi 8, eng kichigi 0,5",
+        "Eng kattasi 9, eng kichigi 1"
+      ],
+      "t": 2,
+      "izoh": "Asos 2 > 1, demak funksiya o'suvchi va chekka qiymatlarni kesmaning uchlarida oladi. Chap uchda y(−1) = 2^(−1) = 0,5 — eng kichik qiymat. O'ng uchda y(3) = 2³ = 8 — eng katta qiymat. Javob: eng kattasi 8, eng kichigi 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesmada-eng-katta-kichik",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#b014227d"
+    },
+    {
+      "q": "y = (0,5)^x funksiya [−2; 1] kesmada qanday eng katta qiymatga erishadi?",
+      "v": [
+        "0,5",
+        "4",
+        "2",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Asos 0,5 birdan kichik, demak funksiya kamayuvchi va eng katta qiymatni kesmaning chap uchida oladi. Chap uch x = −2 nuqta: y(−2) = (0,5)^(−2) = 2² = 4. Kamayuvchi funksiyada maksimumni o'ng uchdan izlash tipik xato. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesmada-eng-katta-kichik",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#eaee24ee"
+    },
+    {
+      "q": "Isitgich yoqilgandan keyin xona harorati T(t) = 26 − 12·(0,7)^t daraja bo'ladi, bu yerda t soatlarda o'lchanadi. Dastlabki 3 soat ichida harorat qanday oraliqda o'zgaradi?",
+      "v": [
+        "14 dan 21,884 gacha",
+        "14 dan 26 gacha",
+        "12 dan 26 gacha",
+        "21,884 dan 26 gacha"
+      ],
+      "t": 0,
+      "izoh": "(0,7)^t kamayuvchi bo'lgani uchun 12·(0,7)^t ham kamayadi, demak T(t) o'sib boradi va chekka qiymatlar oraliq uchlarida bo'ladi. t = 0 da T = 26 − 12 = 14 daraja. t = 3 da (0,7)³ = 0,343 va T = 26 − 4,116 = 21,884 daraja. Javob: 14 dan 21,884 gacha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmada-eng-katta-kichik",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#f4fdadc0"
+    },
+    {
+      "q": "y = 3^x + k funksiyaning [0; 2] kesmadagi eng katta qiymati 11 ga teng. k parametrni toping.",
+      "v": [
+        "1",
+        "8",
+        "−2",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Asos 3 > 1 bo'lgani uchun funksiya o'suvchi, demak eng katta qiymat kesmaning o'ng uchida, x = 2 nuqtada bo'ladi. U yerda qiymat 3² + k = 9 + k. Shartga ko'ra 9 + k = 11, bundan k = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmada-eng-katta-kichik",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#5dbb22ef"
+    },
+    {
+      "q": "Suvo'tlar bosgan hovuz yuzasi har haftada ikki barobar ortadi va 10-haftada butun hovuzni to'liq qoplaydi. Hovuz yuzasining yarmi qachon qoplangan bo'ladi?",
+      "v": [
+        "5-haftada",
+        "8-haftada",
+        "9-haftada",
+        "10-haftada"
+      ],
+      "t": 2,
+      "izoh": "Har hafta yuza ikki barobar ortadi, demak oldingi haftadagi yuza hozirgisining aynan yarmiga teng. Hovuz 10-haftada to'la qoplansa, undan bir hafta oldingi holat yarim qoplangan holat bo'ladi. Vaqtni ikkiga bo'lish bu yerda ishlamaydi, chunki o'sish chiziqli emas. Javob: 9-haftada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "model-chegaraga-qachon-yetadi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#ee3a6c56"
+    },
+    {
+      "q": "Bankdagi omonat S(t) = 2 000 000·(1,2)^t so'm formula bilan o'sadi. Summa 3 456 000 so'mdan oshishi uchun kamida necha yil kerak?",
+      "v": [
+        "3 yil",
+        "4 yil",
+        "5 yil",
+        "2 yil"
+      ],
+      "t": 1,
+      "izoh": "Tengsizlik tuzamiz: 2 000 000·(1,2)^t > 3 456 000. Ikkala tomonni 2 000 000 ga bo'lamiz: (1,2)^t > 1,728. Bu yerda 1,728 = (1,2)³ va asos birdan katta, shuning uchun ishora saqlanadi: t > 3. Butun yillar orasida eng kichigi 4. Javob: 4 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-chegaraga-qachon-yetadi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#50c79371"
+    },
+    {
+      "q": "Dorining organizmdagi miqdori M(n) = 240·(0,5)^n mg, bu yerda n — o'tgan olti soatlik davrlar soni. Miqdor 30 mg dan pastga tushishi uchun nechta davr o'tishi kerak?",
+      "v": [
+        "4 ta davr",
+        "3 ta davr",
+        "8 ta davr",
+        "5 ta davr"
+      ],
+      "t": 0,
+      "izoh": "Tengsizlikni yozamiz: 240·(0,5)^n < 30. Ikkala tomonni 240 ga bo'lamiz: (0,5)^n < 0,125. Bu yerda 0,125 = (0,5)³ va asos birdan kichik, shuning uchun ishora almashadi: n > 3. Butun davrlar orasida eng kichigi 4. Javob: 4 ta davr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-chegaraga-qachon-yetadi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#139e3cee"
+    },
+    {
+      "q": "Kompyuter virusi tarqalishi V(t) = 3·4^t ta qurilma bilan ifodalanadi, t — kunlar soni. Zararlangan qurilmalar soni qaysi kundan boshlab 3072 tadan oshadi?",
+      "v": [
+        "5-kun",
+        "4-kun",
+        "10-kun",
+        "6-kun"
+      ],
+      "t": 3,
+      "izoh": "Tengsizlik tuzamiz: 3·4^t > 3072. Ikkala tomonni 3 ga bo'lamiz: 4^t > 1024. Bu yerda 1024 = 4⁵ va asos birdan katta, shuning uchun ishora saqlanadi: t > 5. Butun kunlar orasida shartni qanoatlantiruvchi birinchisi oltinchi kun. Javob: 6-kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "model-chegaraga-qachon-yetadi",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#62697375"
+    },
+    {
+      "q": "Ko'rsatkichli funksiya uchun f(x + 1) : f(x) nisbat har qanday x da o'zgarmas bo'lishi isbotlangan. y = a^x uchun bu nisbat nimaga teng?",
+      "v": [
+        "x ga",
+        "a^x ga",
+        "a ga",
+        "1 ga"
+      ],
+      "t": 2,
+      "izoh": "Nisbatni yozamiz: f(x + 1) : f(x) = a^(x+1) : a^x. Daraja xossasiga ko'ra a^(x+1) = a^x·a, demak nisbat a^x·a ni a^x ga bo'lishga teng, ya'ni a. Bu ko'rsatkichli o'sishning asosiy belgisi: har birlik qadamda qiymat bir xil songa — asos a ga ko'paytiriladi (qo'shilmaydi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-tahlil-notanish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#41a3c63f"
+    },
+    {
+      "q": "Karim y = 2^x va y = x + 1 grafiklarini bitta chizmada tasvirladi. Bu ikki chiziq nechta umumiy nuqtaga ega?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "Umumiy nuqtasi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Aniq qiymatlarni tekshiramiz: x = 0 da 2⁰ = 1 va 0 + 1 = 1 — mos keldi. x = 1 da 2¹ = 2 va 1 + 1 = 2 — yana mos keldi. Ko'rsatkichli funksiya grafigi qavariq, to'g'ri chiziq esa qavariq egrini ko'pi bilan ikki nuqtada kesadi, demak boshqa yechim yo'q. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-tahlil-notanish",
+      "id": "matematika_funk_m06-korsatkichli-funksiya-va-uning-grafigi#16945f74"
+    }
+  ]
+}

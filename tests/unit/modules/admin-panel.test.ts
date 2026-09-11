@@ -59,8 +59,11 @@ describe('Admin Panel Module & API Logic', () => {
     expect(subjectToBank.get('ingliz')).toBe('english_db')
     expect(subjectToBank.get('tarix')).toBe('history_db')
     expect(subjectToBank.get('biologiya')).toBe('biology_db')
+    expect(subjectToBank.get('geografiya')).toBe('geography_db')
+    expect(subjectToBank.get('onatili')).toBe('onatili_db')
+    expect(subjectToBank.get('adabiyot')).toBe('adabiyot_db')
 
-    // Ensure all 8 subjects are registered in server registry
-    expect(SUBJECT_REGISTRY.length).toBe(8)
+    // Ensure all 11 subjects are registered in server registry
+    expect(SUBJECT_REGISTRY.length).toBe(11)
   })
 })

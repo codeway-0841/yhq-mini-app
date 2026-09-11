@@ -1,0 +1,1306 @@
+{
+  "nom": "There is / There are",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "___ a book on the table.",
+      "v": [
+        "There is",
+        "There are",
+        "There am",
+        "It is"
+      ],
+      "t": 0,
+      "izoh": "Birlik ot → There is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#57fe16af"
+    },
+    {
+      "q": "___ three windows in this room.",
+      "v": [
+        "There are",
+        "There is",
+        "There be",
+        "There am"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik ot → There are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#2b93205c"
+    },
+    {
+      "q": "There ___ some milk in the fridge.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Sanalmaydigan ot → There is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#35ea20d3"
+    },
+    {
+      "q": "___ any apples in the basket?",
+      "v": [
+        "Are there",
+        "Is there",
+        "There are",
+        "Have there"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik bilan savol → Are there?",
+      "qiy": "oson",
+      "id": "ing_a1_m7#d509928c"
+    },
+    {
+      "q": "There ___ a big park near my house.",
+      "v": [
+        "is",
+        "are",
+        "have",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Bitta park → There is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#e77f84c1"
+    },
+    {
+      "q": "There ___ many students in the classroom.",
+      "v": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Many + ko'plik → There are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#7a54da61"
+    },
+    {
+      "q": "___ a cat under the chair?",
+      "v": [
+        "Is there",
+        "Are there",
+        "There is",
+        "Has there"
+      ],
+      "t": 0,
+      "izoh": "Birlik bilan savol → Is there?",
+      "qiy": "oson",
+      "id": "ing_a1_m7#4ca464b1"
+    },
+    {
+      "q": "There ___ not any water in the bottle.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Water sanalmaydi → There is not.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#9c4615a8"
+    },
+    {
+      "q": "There ___ two teachers in the room.",
+      "v": [
+        "are",
+        "is",
+        "be",
+        "am"
+      ],
+      "t": 0,
+      "izoh": "Two + ot → There are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#22a033ef"
+    },
+    {
+      "q": "How many chairs ___ there in the hall?",
+      "v": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "How many + ko'plik → are there.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#10ba1d1c"
+    },
+    {
+      "q": "___ three cats in the garden.",
+      "v": [
+        "There is",
+        "There are",
+        "There be",
+        "Is there"
+      ],
+      "t": 1,
+      "izoh": "Ko'plik 'There are'.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#f19787f1"
+    },
+    {
+      "q": "There ___ some milk in the glass.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Sanalmaydigan 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#bf3050b1"
+    },
+    {
+      "q": "___ any apples in the fridge?",
+      "v": [
+        "Is there",
+        "Are there",
+        "There are",
+        "There is"
+      ],
+      "t": 1,
+      "izoh": "Ko'plik savoli: Are there.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#addb4da1"
+    },
+    {
+      "q": "There ___ two windows in my room.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "Ikkita = are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#bebdcb73"
+    },
+    {
+      "q": "___ a dog in the street.",
+      "v": [
+        "There is",
+        "There are",
+        "Is there",
+        "Are there"
+      ],
+      "t": 0,
+      "izoh": "Bitta = There is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#ca0cf225"
+    },
+    {
+      "q": "There ___ not any water here.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "water sanalmaydi = is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#e1539d8d"
+    },
+    {
+      "q": "Is there a pen in your bag? Yes, ___.",
+      "v": [
+        "there is",
+        "there are",
+        "it is",
+        "there be"
+      ],
+      "t": 0,
+      "izoh": "there is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#891c6bc1"
+    },
+    {
+      "q": "Are there any students? No, ___.",
+      "v": [
+        "there aren't",
+        "there isn't",
+        "they aren't",
+        "there are"
+      ],
+      "t": 0,
+      "izoh": "there aren't.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#8a72d678"
+    },
+    {
+      "q": "There ___ many people at the party.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "many + are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#e998c8ed"
+    },
+    {
+      "q": "___ a chair near the door.",
+      "v": [
+        "There is",
+        "There are",
+        "Are there",
+        "There am"
+      ],
+      "t": 0,
+      "izoh": "Bitta = There is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#5e01ab92"
+    },
+    {
+      "q": "There ___ four eggs in the box.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "To'rtta = are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#174f8a96"
+    },
+    {
+      "q": "___ any bread on the plate?",
+      "v": [
+        "Are there",
+        "Is there",
+        "There is",
+        "There are"
+      ],
+      "t": 1,
+      "izoh": "bread sanalmaydi = Is there.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#9cd90a8e"
+    },
+    {
+      "q": "There ___ a big tree in the park.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Bitta = is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#b40f6554"
+    },
+    {
+      "q": "There ___ some children in the room.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "children = are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#8c41750b"
+    },
+    {
+      "q": "___ there a school near your house?",
+      "v": [
+        "Is",
+        "Are",
+        "Am",
+        "Be"
+      ],
+      "t": 0,
+      "izoh": "Birlik: Is there.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#16fc052d"
+    },
+    {
+      "q": "There ___ not a car in the garage.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Bitta = is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#255442df"
+    },
+    {
+      "q": "How many books ___ there on the shelf?",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "How many + are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#4b958047"
+    },
+    {
+      "q": "There ___ five boys in the team.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "Beshta = are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#8a7806e3"
+    },
+    {
+      "q": "Is there any sugar? No, there ___.",
+      "v": [
+        "isn't",
+        "aren't",
+        "not",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "sugar = isn't.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#b57b8777"
+    },
+    {
+      "q": "___ some flowers in the vase.",
+      "v": [
+        "There are",
+        "There is",
+        "Is there",
+        "There am"
+      ],
+      "t": 0,
+      "izoh": "Gullar = There are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#2bbc08f0"
+    },
+    {
+      "q": "There ___ a cat under the bed.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Bitta = is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#eaf38936"
+    },
+    {
+      "q": "Are there any shops here? Yes, ___.",
+      "v": [
+        "there are",
+        "there is",
+        "they are",
+        "there be"
+      ],
+      "t": 0,
+      "izoh": "there are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#a5bdbeb9"
+    },
+    {
+      "q": "There ___ a lot of noise outside.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "noise sanalmaydi = is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#9e1418b8"
+    },
+    {
+      "q": "___ two teachers in the class.",
+      "v": [
+        "There are",
+        "There is",
+        "Is there",
+        "There am"
+      ],
+      "t": 0,
+      "izoh": "Ikkita = There are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#fc25ccff"
+    },
+    {
+      "q": "There ___ an orange on the table.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Bitta = is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#7bdb4390"
+    },
+    {
+      "q": "___ any milk in the bottle?",
+      "v": [
+        "Is there",
+        "Are there",
+        "There is",
+        "There are"
+      ],
+      "t": 0,
+      "izoh": "milk sanalmaydi = Is there.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#6d526ea4"
+    },
+    {
+      "q": "There ___ six chairs in the kitchen.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "Oltita = are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#9b3b2040"
+    },
+    {
+      "q": "Is there a park in your town? Yes, ___.",
+      "v": [
+        "there is",
+        "there are",
+        "it has",
+        "there be"
+      ],
+      "t": 0,
+      "izoh": "there is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#d26adb53"
+    },
+    {
+      "q": "There ___ many stars in the sky.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "many + are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#83cb383b"
+    },
+    {
+      "q": "___ a cat under the chair.",
+      "v": [
+        "There is",
+        "There are",
+        "There be",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Yakka (a cat): There is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#f0155d56"
+    },
+    {
+      "q": "___ an apple in the bag.",
+      "v": [
+        "There is",
+        "There are",
+        "There be",
+        "It has"
+      ],
+      "t": 0,
+      "izoh": "Bitta apple uchun There is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#bf634522"
+    },
+    {
+      "q": "___ a big tree in the garden.",
+      "v": [
+        "There is",
+        "There are",
+        "There have",
+        "Is there a"
+      ],
+      "t": 0,
+      "izoh": "Yakka: There is a tree.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#5a5c7d5d"
+    },
+    {
+      "q": "___ some milk in the glass.",
+      "v": [
+        "There is",
+        "There are",
+        "There be",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Milk sanalmaydi, There is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#c71d1127"
+    },
+    {
+      "q": "___ a pen in my pocket.",
+      "v": [
+        "There is",
+        "There are",
+        "There have",
+        "It is"
+      ],
+      "t": 0,
+      "izoh": "Bitta pen: There is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#8b926c78"
+    },
+    {
+      "q": "___ a school near my house.",
+      "v": [
+        "There is",
+        "There are",
+        "There be",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Yakka bino: There is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#988913cb"
+    },
+    {
+      "q": "___ water in the bottle.",
+      "v": [
+        "There is",
+        "There are",
+        "There be",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Water sanalmas, There is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#2a21902a"
+    },
+    {
+      "q": "___ a dog in the yard.",
+      "v": [
+        "There is",
+        "There are",
+        "There have",
+        "Is"
+      ],
+      "t": 0,
+      "izoh": "Bitta it: There is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#56debc1e"
+    },
+    {
+      "q": "___ some bread on the plate.",
+      "v": [
+        "There is",
+        "There are",
+        "There be",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Bread sanalmas: There is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#c0835bfa"
+    },
+    {
+      "q": "___ three cats in the room.",
+      "v": [
+        "There are",
+        "There is",
+        "There be",
+        "It are"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik (three cats): There are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#c1c808be"
+    },
+    {
+      "q": "___ many books on the shelf.",
+      "v": [
+        "There are",
+        "There is",
+        "There be",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Many + ko'plik: There are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#58948aa3"
+    },
+    {
+      "q": "___ five students in the class.",
+      "v": [
+        "There are",
+        "There is",
+        "There be",
+        "It is"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik: There are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#db5ec3bf"
+    },
+    {
+      "q": "___ some apples in the basket.",
+      "v": [
+        "There are",
+        "There is",
+        "There be",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Apples ko'plik: There are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#460eb369"
+    },
+    {
+      "q": "___ two windows in the room.",
+      "v": [
+        "There are",
+        "There is",
+        "There be",
+        "It are"
+      ],
+      "t": 0,
+      "izoh": "Two windows: There are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#3885c412"
+    },
+    {
+      "q": "___ four chairs at the table.",
+      "v": [
+        "There are",
+        "There is",
+        "There be",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik: There are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#240e751a"
+    },
+    {
+      "q": "___ many people in the park.",
+      "v": [
+        "There are",
+        "There is",
+        "There be",
+        "It is"
+      ],
+      "t": 0,
+      "izoh": "People ko'plik: There are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#6a22275f"
+    },
+    {
+      "q": "___ some eggs in the fridge.",
+      "v": [
+        "There are",
+        "There is",
+        "There be",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Eggs ko'plik: There are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#77d5156a"
+    },
+    {
+      "q": "___ ten questions in the test.",
+      "v": [
+        "There are",
+        "There is",
+        "There be",
+        "It is"
+      ],
+      "t": 0,
+      "izoh": "Ten questions: There are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#ac7d1441"
+    },
+    {
+      "q": "There ___ a chair in the room. (negative)",
+      "v": [
+        "isn't",
+        "aren't",
+        "not is",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "Yakka inkor: There isn't.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#e0d9da2f"
+    },
+    {
+      "q": "There ___ any books here. (negative)",
+      "v": [
+        "aren't",
+        "isn't",
+        "not are",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik inkor: There aren't.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#521baf9c"
+    },
+    {
+      "q": "There ___ any milk in the glass.",
+      "v": [
+        "isn't",
+        "aren't",
+        "not is",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "Milk sanalmas: There isn't.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#59e81762"
+    },
+    {
+      "q": "There ___ three cars outside. (negative)",
+      "v": [
+        "aren't",
+        "isn't",
+        "not are",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik: There aren't.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#894e4f80"
+    },
+    {
+      "q": "There ___ a dog in the garden. (negative)",
+      "v": [
+        "isn't",
+        "aren't",
+        "not is",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "Yakka: There isn't.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#e0f24247"
+    },
+    {
+      "q": "There ___ any students in the class.",
+      "v": [
+        "aren't",
+        "isn't",
+        "not are",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik: There aren't.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#8a512d16"
+    },
+    {
+      "q": "There ___ any water in the bottle.",
+      "v": [
+        "isn't",
+        "aren't",
+        "not is",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "Water: There isn't.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#08009bde"
+    },
+    {
+      "q": "There ___ any apples in the bag.",
+      "v": [
+        "aren't",
+        "isn't",
+        "not are",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "Apples: There aren't.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#de8fc84f"
+    },
+    {
+      "q": "There ___ a problem here. (negative)",
+      "v": [
+        "isn't",
+        "aren't",
+        "not is",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "Yakka: There isn't.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#c96052b9"
+    },
+    {
+      "q": "There ___ many people today. (negative)",
+      "v": [
+        "aren't",
+        "isn't",
+        "not are",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "People: There aren't.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#fe348950"
+    },
+    {
+      "q": "___ a book on the desk?",
+      "v": [
+        "Is there",
+        "Are there",
+        "There is",
+        "Have there"
+      ],
+      "t": 0,
+      "izoh": "Yakka savol: Is there?",
+      "qiy": "oson",
+      "id": "ing_a1_m7#6fbb8cfc"
+    },
+    {
+      "q": "___ any cats in the house?",
+      "v": [
+        "Are there",
+        "Is there",
+        "There are",
+        "Have there"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik savol: Are there?",
+      "qiy": "oson",
+      "id": "ing_a1_m7#e752e5c5"
+    },
+    {
+      "q": "___ a bank near here?",
+      "v": [
+        "Is there",
+        "Are there",
+        "There is",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Yakka: Is there a bank?",
+      "qiy": "oson",
+      "id": "ing_a1_m7#c5e84907"
+    },
+    {
+      "q": "___ any students in the room?",
+      "v": [
+        "Are there",
+        "Is there",
+        "There are",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik: Are there?",
+      "qiy": "oson",
+      "id": "ing_a1_m7#c69263ae"
+    },
+    {
+      "q": "___ any milk in the fridge?",
+      "v": [
+        "Is there",
+        "Are there",
+        "There is",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Milk sanalmas: Is there?",
+      "qiy": "oson",
+      "id": "ing_a1_m7#274c0e5b"
+    },
+    {
+      "q": "___ three eggs in the box?",
+      "v": [
+        "Are there",
+        "Is there",
+        "There are",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Three eggs: Are there?",
+      "qiy": "oson",
+      "id": "ing_a1_m7#b931d024"
+    },
+    {
+      "q": "___ a park in your town?",
+      "v": [
+        "Is there",
+        "Are there",
+        "There is",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Yakka: Is there?",
+      "qiy": "oson",
+      "id": "ing_a1_m7#80b3cdb0"
+    },
+    {
+      "q": "___ any chairs in the hall?",
+      "v": [
+        "Are there",
+        "Is there",
+        "There are",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Chairs ko'plik: Are there?",
+      "qiy": "oson",
+      "id": "ing_a1_m7#c80e5e2d"
+    },
+    {
+      "q": "___ a pen in the bag?",
+      "v": [
+        "Is there",
+        "Are there",
+        "There is",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Yakka: Is there a pen?",
+      "qiy": "oson",
+      "id": "ing_a1_m7#fad514e4"
+    },
+    {
+      "q": "___ many shops in the street?",
+      "v": [
+        "Are there",
+        "Is there",
+        "There are",
+        "Have"
+      ],
+      "t": 0,
+      "izoh": "Many shops: Are there?",
+      "qiy": "oson",
+      "id": "ing_a1_m7#304b888d"
+    },
+    {
+      "q": "There is ___ juice in the glass.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "many"
+      ],
+      "t": 0,
+      "izoh": "Ijobiy gapda some ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#7ee4961e"
+    },
+    {
+      "q": "There aren't ___ books on the desk.",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "much"
+      ],
+      "t": 0,
+      "izoh": "Inkor gapda any.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#569ca4c6"
+    },
+    {
+      "q": "Is there ___ bread in the kitchen?",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "many"
+      ],
+      "t": 0,
+      "izoh": "Savolda any ko'p ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#4889edfe"
+    },
+    {
+      "q": "There are ___ apples in the bowl.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "much"
+      ],
+      "t": 0,
+      "izoh": "Ijobiy ko'plik: some.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#9d9e03f4"
+    },
+    {
+      "q": "There isn't ___ water here.",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "many"
+      ],
+      "t": 0,
+      "izoh": "Inkorda any.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#5f4e1d04"
+    },
+    {
+      "q": "Are there ___ students outside?",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "much"
+      ],
+      "t": 0,
+      "izoh": "Savolda any.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#75b50a08"
+    },
+    {
+      "q": "There is ___ cheese on the plate.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "many"
+      ],
+      "t": 0,
+      "izoh": "Ijobiy, sanalmas: some.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#9e5a8c65"
+    },
+    {
+      "q": "There aren't ___ chairs in the room.",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "much"
+      ],
+      "t": 0,
+      "izoh": "Inkor ko'plik: any.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#cb7933ff"
+    },
+    {
+      "q": "There are ___ eggs in the fridge.",
+      "v": [
+        "some",
+        "any",
+        "a",
+        "much"
+      ],
+      "t": 0,
+      "izoh": "Ijobiy ko'plik: some.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#26759e00"
+    },
+    {
+      "q": "Is there ___ milk in the cup?",
+      "v": [
+        "any",
+        "some",
+        "a",
+        "many"
+      ],
+      "t": 0,
+      "izoh": "Savolda any.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#4b22ba06"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "There is a cat.",
+        "There are a cat.",
+        "There be a cat.",
+        "There a cat is."
+      ],
+      "t": 0,
+      "izoh": "Yakka: There is a cat.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#9a16dc9c"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "There are two dogs.",
+        "There is two dogs.",
+        "There be two dogs.",
+        "There two dogs are."
+      ],
+      "t": 0,
+      "izoh": "Ko'plik: There are two dogs.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#9a16dc9c~2"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Is there a pen?",
+        "There is a pen?",
+        "Are there a pen?",
+        "Is a pen there?"
+      ],
+      "t": 0,
+      "izoh": "Yakka savol: Is there a pen?",
+      "qiy": "oson",
+      "id": "ing_a1_m7#9a16dc9c~3"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "There aren't any books.",
+        "There isn't any books.",
+        "There not any books.",
+        "There don't any books."
+      ],
+      "t": 0,
+      "izoh": "Ko'plik inkor: aren't.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#9a16dc9c~4"
+    },
+    {
+      "q": "Find the mistake: 'There are a book.'",
+      "v": [
+        "are",
+        "There",
+        "a",
+        "book"
+      ],
+      "t": 0,
+      "izoh": "Yakka book uchun is kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#31b844db"
+    },
+    {
+      "q": "Find the mistake: 'There is three cats.'",
+      "v": [
+        "is",
+        "There",
+        "three",
+        "cats"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik cats uchun are kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#790f424c"
+    },
+    {
+      "q": "Find the mistake: 'Are there a dog?'",
+      "v": [
+        "Are",
+        "there",
+        "a",
+        "dog"
+      ],
+      "t": 0,
+      "izoh": "Yakka dog uchun Is there.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#2398e9a5"
+    },
+    {
+      "q": "Find the mistake: 'There isn't any apples.'",
+      "v": [
+        "isn't",
+        "There",
+        "any",
+        "apples"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik apples: aren't.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#85ec3df5"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "There are many chairs.",
+        "There is many chairs.",
+        "There be many chairs.",
+        "There many chairs are."
+      ],
+      "t": 0,
+      "izoh": "Many + are.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#9a16dc9c~5"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "There is some water.",
+        "There are some water.",
+        "There be some water.",
+        "There some water is."
+      ],
+      "t": 0,
+      "izoh": "Water sanalmas: is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#9a16dc9c~6"
+    },
+    {
+      "q": "There ___ a clock on the wall.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Yakka clock: There is.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#41e54bbd"
+    },
+    {
+      "q": "Put in order: is / there / a / mistake",
+      "v": [
+        "There is a mistake.",
+        "Is there a mistake.",
+        "A mistake there is.",
+        "There a mistake is."
+      ],
+      "t": 0,
+      "izoh": "There is + yakka ot.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#12ab6f89"
+    },
+    {
+      "q": "Put in order: are / there / two / boys",
+      "v": [
+        "There are two boys.",
+        "Are there two boys.",
+        "Two boys there are.",
+        "There two boys are."
+      ],
+      "t": 0,
+      "izoh": "There are + ko'plik.",
+      "qiy": "oson",
+      "id": "ing_a1_m7#4577f802"
+    }
+  ]
+}

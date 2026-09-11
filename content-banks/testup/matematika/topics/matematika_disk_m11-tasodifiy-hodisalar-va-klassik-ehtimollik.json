@@ -1,0 +1,1609 @@
+{
+  "nom": "Tasodifiy hodisalar va klassik ehtimollik",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Dilnoza avval bitta tangani, so'ng bitta o'yin zarini tashlaydi va ikkala natijani ham daftariga yozib qo'yadi. Bu tajribaning elementar hodisalar fazosida nechta element bor?",
+      "v": [
+        "8",
+        "12",
+        "36",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Tanga 2 xil natija beradi, zar esa 6 xil natija beradi. Ikki bosqichli tajribada natijalar soni ko'paytiriladi: 2·6 = 12. 8 varianti 2 va 6 ni qo'shish xatosidan, 36 varianti tajribani ikkita zar deb tushunishdan, 2 esa faqat tangani hisoblashdan chiqadi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "elementar-fazo-olchami",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#7ba7dcfe"
+    },
+    {
+      "q": "Bir qutida 1 dan 24 gacha raqamlangan 24 ta jeton bor va Bekzod qutidan tasodifiy bittasini oladi. Elementar hodisalar fazosi nechta elementar hodisadan iborat?",
+      "v": [
+        "23",
+        "12",
+        "24",
+        "25"
+      ],
+      "t": 2,
+      "izoh": "Har bir jeton bitta elementar natijaga mos keladi va ular teng imkoniyatli. Jetonlar 1 dan 24 gacha raqamlangani uchun elementar hodisalar soni ham 24 ta. 23 varianti oraliqni noto'g'ri sanashdan, 12 varianti faqat juft raqamlarni olishdan, 25 esa bitta ortiqcha qo'shishdan kelib chiqadi. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "elementar-fazo-olchami",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#e72eebee"
+    },
+    {
+      "q": "Sanjar 100 so'mlik va 500 so'mlik ikkita tangani tashladi. Bu tajribaning elementar hodisalar fazosini to'g'ri yozgan variantni tanlang (G — gerb, R — raqam; birinchi harf 100 so'mlik tanganing natijasi).",
+      "v": [
+        "{GG, GR, RG, RR}",
+        "{GG, GR, RR}",
+        "{GG, RR}",
+        "{G, R}"
+      ],
+      "t": 0,
+      "izoh": "Tangalar bir-biridan farq qiladi, shuning uchun har birining natijasi alohida yoziladi: har bir tanga uchun 2 ta natija bor, demak jami 2·2 = 4 ta juftlik hosil bo'ladi: GG, GR, RG, RR. GR (100 so'mlikda gerb, 500 so'mlikda raqam) va RG (aksincha) har xil elementar hodisa, chunki tangalar farqlanadi. {GG, GR, RR} ularni bitta deb sanash xatosi, {GG, RR} faqat bir xil natijalarni olish, {G, R} esa bitta tanga fazosi. Javob: {GG, GR, RG, RR}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "elementar-fazo-olchami",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#6e29d26a"
+    },
+    {
+      "q": "Uchta tanga ketma-ket tashlanib, har birining natijasi tartib bilan yozib boriladi. Elementar hodisalar fazosidagi elementlar sonini toping.",
+      "v": [
+        "9",
+        "6",
+        "16",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Har bir tanga 2 xil natija beradi va tashlashlar bir-biriga bog'liq emas. Shuning uchun jami natijalar soni 2·2·2 = 2³ = 8 ta. 6 varianti 2 va 3 ni ko'paytirishdan, 9 varianti 3² dan, 16 esa to'rtta tanga uchun 2⁴ dan chiqadi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "elementar-fazo-olchami",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#43128fbc"
+    },
+    {
+      "q": "Savatda olma, nok, anor va shaftoli bor. Zilola savatdan qaytarmasdan ketma-ket ikkita meva oladi va olish tartibini yozadi. Nechta har xil natija bo'lishi mumkin?",
+      "v": [
+        "16",
+        "12",
+        "6",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Birinchi meva 4 xil tanlanadi, u qaytarilmagani uchun ikkinchisi endi faqat 3 xil tanlanadi. Tartib hisobga olingani uchun jami 4·3 = 12 ta natija bor. 16 varianti mevani qaytarib qo'yish holatidan, 6 varianti tartibni hisobga olmaslikdan, 8 esa 4 va 2 ni ko'paytirish xatosidan chiqadi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "elementar-fazo-olchami",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#4f0ae85c"
+    },
+    {
+      "q": "Bir qutida 15 ta shar bor va ularning hammasi oq rangda. Qutidan tasodifiy bitta shar olinadi. «Olingan shar oq» hodisasi qanday hodisa hisoblanadi?",
+      "v": [
+        "Tasodifiy hodisa",
+        "Imkonsiz hodisa",
+        "Muqarrar hodisa",
+        "Qarama-qarshi hodisa"
+      ],
+      "t": 2,
+      "izoh": "Qutida boshqa rangdagi shar umuman yo'q, shuning uchun qaysi shar olinmasin u albatta oq bo'ladi. Har qanday sinovda ro'y berishi shart bo'lgan hodisa muqarrar hodisa deyiladi va uning ehtimolligi 1 ga teng. Tasodifiy hodisa ro'y berishi ham, bermasligi ham mumkin edi. Javob: muqarrar hodisa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "muqarrar-imkonsiz-hodisa",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#75009930"
+    },
+    {
+      "q": "O'yin zari bir marta tashlanadi. «Tushgan ochkolar soni 7 dan katta bo'ladi» hodisasi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Ehtimolligi 1/6 ga teng tasodifiy hodisa",
+        "Ehtimolligi 0 ga teng imkonsiz hodisa",
+        "Ehtimolligi 1 ga teng muqarrar hodisa",
+        "Ehtimolligi 0,5 ga teng tasodifiy hodisa"
+      ],
+      "t": 1,
+      "izoh": "Zarning yoqlarida faqat 1 dan 6 gacha ochkolar bor, demak 7 dan katta natija umuman chiqa olmaydi. Bunday hodisa imkonsiz deyiladi: unga qulaylik tug'diruvchi elementar hodisa 0 ta, shuning uchun P = 0/6 = 0. Javob: ehtimolligi 0 ga teng imkonsiz hodisa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "muqarrar-imkonsiz-hodisa",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#35d848c0"
+    },
+    {
+      "q": "Quyidagi to'rt hodisadan qaysi biri muqarrar hodisa ekanligini aniqlang.",
+      "v": [
+        "Zar tashlanganda tushgan ochkolar soni 6 dan oshmasligi",
+        "Tanga tashlanganda gerb tomoni tushishi",
+        "Lotereyaning birinchi biletidan yutuq chiqishi",
+        "52 ta kartadan tasodifiy olingan karta qizil bo'lishi"
+      ],
+      "t": 0,
+      "izoh": "Zarning eng katta yog'idagi son 6 ga teng, shuning uchun ochkolar soni hech qachon 6 dan oshmaydi — bu har bir sinovda ro'y beradi. Qolgan uchtasi ro'y berishi ham, bermasligi ham mumkin bo'lgan tasodifiy hodisalar: gerb uchun ehtimollik 1/2, yutuq va qizil karta uchun esa 1 dan kichik. Javob: zar tashlanganda tushgan ochkolar soni 6 dan oshmasligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "muqarrar-imkonsiz-hodisa",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#4f63966a"
+    },
+    {
+      "q": "Kamola 1 dan 36 gacha raqamlangan 36 ta bilet ichidan tasodifiy bittasini oladi. «Bilet raqami 40 dan kichik» hodisasining ehtimolligi nechaga teng?",
+      "v": [
+        "0",
+        "36/40",
+        "1/36",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "36 ta biletning hammasining raqami 40 dan kichik, demak qulaylik tug'diruvchi natijalar soni ham 36 ta. Klassik ta'rifga ko'ra P = 36/36 = 1, ya'ni hodisa muqarrar. 36/40 nisbati shartdagi 40 ni umumiy natijalar soni deb olish xatosi, 1/36 esa aniq bitta biletni olish ehtimolligi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "muqarrar-imkonsiz-hodisa",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#ce128423"
+    },
+    {
+      "q": "Ikkita o'yin zari bir yo'la tashlanadi. «Tushgan ochkolar yig'indisi 1 ga teng» hodisasini baholang.",
+      "v": [
+        "Tasodifiy hodisa, ehtimolligi 1/36",
+        "Muqarrar hodisa, ehtimolligi 1",
+        "Imkonsiz hodisa, ehtimolligi 0",
+        "Tasodifiy hodisa, ehtimolligi 1/12"
+      ],
+      "t": 2,
+      "izoh": "Har bir zarda eng kichik natija 1 ga teng, demak ikkita zar ochkolarining yig'indisi kamida 2 bo'ladi. Yig'indisi 1 ga teng bo'ladigan birorta ham juftlik yo'q, shuning uchun hodisa imkonsiz va P = 0/36 = 0. 1/36 varianti «bunday juftlik bitta bor» degan noto'g'ri taxmindan chiqadi. Javob: imkonsiz hodisa, ehtimolligi 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "muqarrar-imkonsiz-hodisa",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#b2fa7681"
+    },
+    {
+      "q": "Farrux tangani ketma-ket uch marta tashladi. Uchala tashlashda ham gerb tomoni tushish ehtimolligini toping.",
+      "v": [
+        "1/6",
+        "1/8",
+        "3/8",
+        "1/4"
+      ],
+      "t": 1,
+      "izoh": "Uch marta tashlashda elementar hodisalar soni 2³ = 8 ta. Uchala tashlashda gerb tushishi faqat bitta natijaga — GGG ga mos keladi. Demak P = 1/8. 3/8 varianti aynan bitta gerb tushishining ehtimolligi, 1/4 ikkita tanga uchun hisoblash, 1/6 esa zar bilan chalkashtirish. Javob: 1/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tanga-tashlash-ehtimolligi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#47b22ff0"
+    },
+    {
+      "q": "Tanga to'rt marta tashlanadi. Aynan ikki marta raqam tomoni tushish ehtimolligi qanchaga teng?",
+      "v": [
+        "3/16",
+        "1/4",
+        "3/8",
+        "1/16"
+      ],
+      "t": 2,
+      "izoh": "To'rt tashlashda elementar natijalar soni 2⁴ = 16 ta. Ikkita raqam qaysi tashlashlarda chiqishini tanlash 6 xil usulda bajariladi: RRGG, RGRG, RGGR, GRRG, GRGR, GGRR. Demak P = 6/16 = 3/8. 1/4 varianti qulay natijalarni 4 ta deb sanash, 3/16 joylashuvlarni 3 ta deb sanash, 1/16 esa faqat bitta ketma-ketlikni olish. Javob: 3/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tanga-tashlash-ehtimolligi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#9f4c43af"
+    },
+    {
+      "q": "Nodira tangani ikki marta tashladi. Kamida bir marta gerb tushish ehtimolligini hisoblang.",
+      "v": [
+        "3/4",
+        "1/2",
+        "1/4",
+        "2/3"
+      ],
+      "t": 0,
+      "izoh": "Ikki tashlashda 4 ta elementar natija bor: GG, GR, RG, RR. «Kamida bitta gerb» ga qarama-qarshi hodisa — birorta gerb tushmasligi, ya'ni RR, uning ehtimolligi 1/4. Demak P = 1 − 1/4 = 3/4. 1/2 varianti bitta tashlash ehtimolligini ko'chirish, 2/3 esa natijalarni uchta deb sanash. Javob: 3/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tanga-tashlash-ehtimolligi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#9af9039b"
+    },
+    {
+      "q": "Sinfdagi tajribada Otabek tangani besh marta tashladi va beshalasida ham raqam tomoni tushdi. Oltinchi tashlashda gerb tushish ehtimolligi qanchaga teng?",
+      "v": [
+        "1/32",
+        "1/6",
+        "5/6",
+        "1/2"
+      ],
+      "t": 3,
+      "izoh": "Tanga oldingi natijalarni «eslab qolmaydi», har bir tashlash mustaqil sinov. Oltinchi tashlashda ham elementar natijalar 2 ta — gerb va raqam, ulardan bittasi qulay. Demak P = 1/2. 1/32 varianti besh tashlashning umumiy fazosini bu yerga ko'chirish, 5/6 esa «endi gerb chiqishi kerak» degan noto'g'ri fikrdan chiqadi. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tanga-tashlash-ehtimolligi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#d90ef807"
+    },
+    {
+      "q": "Uchta tanga bir yo'la tashlanganda gerblar soni raqamlar sonidan ko'p bo'lish ehtimolligini toping.",
+      "v": [
+        "3/8",
+        "1/2",
+        "5/8",
+        "1/8"
+      ],
+      "t": 1,
+      "izoh": "Uch tanga uchun 8 ta elementar natija bor. Gerblar soni raqamlardan ko'p bo'lishi uchun gerb 2 yoki 3 marta tushishi kerak: ikkita gerbli 3 ta natija va uchta gerbli 1 ta natija, jami 4 ta. Demak P = 4/8 = 1/2. 3/8 varianti faqat «aynan ikkita gerb» ni sanash, 1/8 esa faqat GGG ni olish. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tanga-tashlash-ehtimolligi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#357a8deb"
+    },
+    {
+      "q": "Bahodir bitta o'yin zarini tashladi. Tushgan ochkolar soni 3 ga karrali bo'lish ehtimolligini toping.",
+      "v": [
+        "1/3",
+        "1/2",
+        "1/6",
+        "2/3"
+      ],
+      "t": 0,
+      "izoh": "Zarda 6 ta teng imkoniyatli elementar natija bor: 1, 2, 3, 4, 5 va 6. Ulardan 3 ga karralisi ikkitasi — 3 va 6. Klassik ta'rifga ko'ra P = 2/6 = 1/3. 1/6 varianti faqat 3 ni sanash, 1/2 esa juft sonlar bilan chalkashtirish natijasi. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-zar-ehtimolligi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#117c696a"
+    },
+    {
+      "q": "Nazokat stol o'yinida yurish qilishi uchun zarda 6 ochko tushishi kerak. U bir marta tashlaganda kerakli natijani olish ehtimolligini toping.",
+      "v": [
+        "1/6",
+        "5/6",
+        "1/3",
+        "1/36"
+      ],
+      "t": 0,
+      "izoh": "Zar tashlanganda 6 ta teng imkoniyatli natija bor. Nazokatga ulardan faqat bittasi — 6 ochko qulaylik tug'diradi. Klassik ta'rifga ko'ra P = 1/6. 5/6 varianti qarama-qarshi hodisaning ehtimolligi, 1/3 ikkita natijani qulay deb sanash, 1/36 esa ikkita zar fazosini olish. Javob: 1/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bitta-zar-ehtimolligi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#6c0e9195"
+    },
+    {
+      "q": "Ravshan o'yin zarini tashlaydi. Uning yurishi o'tishi uchun tushgan ochkolar soni 2 dan katta bo'lishi kerak. Shu hodisaning ehtimolligini toping.",
+      "v": [
+        "1/2",
+        "1/3",
+        "5/6",
+        "2/3"
+      ],
+      "t": 3,
+      "izoh": "Zarda 6 ta elementar natija bor. 2 dan katta bo'lganlari: 3, 4, 5 va 6 — jami 4 ta. Demak P = 4/6 = 2/3. 1/2 varianti 3, 4 va 5 nigina sanab, 6 ni unutishdan, 5/6 esa faqat 1 ni chiqarib tashlashdan chiqadi. Javob: 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bitta-zar-ehtimolligi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#50c5cc75"
+    },
+    {
+      "q": "Zar bir marta tashlanadi. A hodisasi — toq ochko tushishi, B hodisasi — 4 dan katta ochko tushishi. Qaysi hodisaning ehtimolligi kattaroq va farq qanchaga teng?",
+      "v": [
+        "A hodisasi, farqi 1/6",
+        "B hodisasi, farqi 1/6",
+        "A hodisasi, farqi 1/2",
+        "Ikkalasining ehtimolligi teng"
+      ],
+      "t": 0,
+      "izoh": "A hodisasiga 1, 3 va 5 natijalari qulay, demak P(A) = 3/6 = 1/2. B hodisasiga 5 va 6 qulay, demak P(B) = 2/6 = 1/3. 1/2 soni 1/3 dan katta, farq esa 3/6 − 2/6 = 1/6 ga teng. Javob: A hodisasi, farqi 1/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bitta-zar-ehtimolligi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#d910db6b"
+    },
+    {
+      "q": "Maxsus zarning yoqlariga 2, 3, 3, 5, 7 va 11 sonlari yozilgan. Bu zar tashlanganda tushgan son toq bo'lish ehtimolligini toping.",
+      "v": [
+        "2/3",
+        "1/6",
+        "5/6",
+        "1/3"
+      ],
+      "t": 2,
+      "izoh": "Zarda 6 ta yoq bor va ular teng imkoniyatli. Toq sonlar yozilgan yoqlar: 3, 3, 5, 7 va 11 — jami 5 ta, faqat bitta yoqda juft son (2) turibdi. Demak P = 5/6. 2/3 varianti ikkita bir xil 3 ni bitta yoq deb sanashdan, 1/6 esa juft sonli yoqni hisoblashdan chiqadi. Javob: 5/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bitta-zar-ehtimolligi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#9515a83f"
+    },
+    {
+      "q": "Anvar ikkita o'yin zarini bir yo'la tashladi. Tushgan ochkolar yig'indisi 8 ga teng bo'lish ehtimolligini toping.",
+      "v": [
+        "1/12",
+        "5/36",
+        "1/9",
+        "1/36"
+      ],
+      "t": 1,
+      "izoh": "Ikki zar tashlanganda elementar natijalar tartiblangan juftliklardan iborat va ular soni 6·6 = 36 ta. Yig'indi 8 ga teng bo'ladigan juftliklar: (2; 6), (3; 5), (4; 4), (5; 3), (6; 2) — jami 5 ta. Demak P = 5/36. 1/9 varianti (4; 4) juftligini unutish, 1/12 tartibni hisobga olmay 3 ta juftlik sanash, 1/36 esa bitta juftlikni olish. Javob: 5/36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-zar-yigindi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#65d214a7"
+    },
+    {
+      "q": "Ikkita zar tashlanadi. Tushgan ochkolar yig'indisi 10 dan katta bo'lish ehtimolligi nechaga teng?",
+      "v": [
+        "1/12",
+        "1/18",
+        "1/9",
+        "1/6"
+      ],
+      "t": 0,
+      "izoh": "Umumiy natijalar soni 36 ta. Yig'indi 10 dan katta bo'lishi uchun u 11 yoki 12 ga teng bo'lishi kerak: (5; 6), (6; 5) va (6; 6) — jami 3 ta juftlik. Demak P = 3/36 = 1/12. 1/18 varianti tartibni hisobga olmay ikkita juftlik sanash, 1/6 esa yig'indisi 10 bo'lgan holatlarni ham qo'shib yuborish. Javob: 1/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-zar-yigindi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#23db70c2"
+    },
+    {
+      "q": "Ikki zar tashlanganda ikkala zarda ham bir xil ochko tushish ehtimolligini toping.",
+      "v": [
+        "1/36",
+        "1/3",
+        "1/6",
+        "5/36"
+      ],
+      "t": 2,
+      "izoh": "Jami 36 ta tartiblangan juftlik bor. Ikkala zarda bir xil ochko tushishi 6 ta juftlikka mos keladi: (1; 1), (2; 2), (3; 3), (4; 4), (5; 5) va (6; 6). Demak P = 6/36 = 1/6. 1/36 varianti faqat bitta juftlikni sanash, 1/3 esa qulay juftliklarni 12 ta deb ikki marta hisoblash. Javob: 1/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-zar-yigindi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#026e980b"
+    },
+    {
+      "q": "Zulfiya nardda yurishi uchun ikkita zarda tushgan ochkolar ko'paytmasi 12 ga teng bo'lishini kutmoqda. Shu hodisaning ehtimolligini hisoblang.",
+      "v": [
+        "1/18",
+        "1/9",
+        "1/36",
+        "1/6"
+      ],
+      "t": 1,
+      "izoh": "36 ta tartiblangan juftlik ichidan ko'paytmasi 12 ga teng bo'lganlarini ajratamiz: (2; 6), (6; 2), (3; 4) va (4; 3) — jami 4 ta. Demak P = 4/36 = 1/9. 1/18 varianti tartibni hisobga olmay ikkita juftlik sanash, 1/36 yig'indisi 12 bo'lgan yagona holatni olish, 1/6 esa qulay juftliklarni 6 ta deb sanash. Javob: 1/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-zar-yigindi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#96f4a8da"
+    },
+    {
+      "q": "Ikkita zar tashlanadi. Tushgan ochkolar ayirmasining moduli 1 ga teng bo'lish ehtimolligini hisoblang.",
+      "v": [
+        "5/36",
+        "1/3",
+        "2/9",
+        "5/18"
+      ],
+      "t": 3,
+      "izoh": "36 ta juftlik ichidan ayirmasi modul bo'yicha 1 ga teng bo'lganlarini sanaymiz: (1; 2), (2; 1), (2; 3), (3; 2), (3; 4), (4; 3), (4; 5), (5; 4), (5; 6), (6; 5) — jami 10 ta. Demak P = 10/36 = 5/18. 5/36 varianti tartibni hisobga olmay 5 ta juftlik sanash, 2/9 esa chekka juftliklardan bir juftini tushirib qoldirish. Javob: 5/18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-zar-yigindi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#016577d0"
+    },
+    {
+      "q": "Qutida 7 ta qizil, 5 ta ko'k va 8 ta yashil shar bor. Qutidan tasodifiy bitta shar olinadi. Olingan shar ko'k bo'lish ehtimolligini toping.",
+      "v": [
+        "5/8",
+        "1/5",
+        "1/4",
+        "7/20"
+      ],
+      "t": 2,
+      "izoh": "Qutidagi sharlarning umumiy soni 7 + 5 + 8 = 20 ta va har biri teng imkoniyat bilan olinadi. Ko'k sharlar 5 ta, demak qulay natijalar soni 5. Klassik ta'rifga ko'ra P = 5/20 = 1/4. 5/8 varianti ko'kni faqat yashil bilan solishtirish, 1/5 maxrajni sharlar rangining soniga bog'lash, 7/20 esa qizil shar chiqish ehtimolligi. Javob: 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qutidan-bitta-shar",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#9cac4436"
+    },
+    {
+      "q": "Sportzalda 10 ta futbol, 6 ta voleybol va 4 ta basketbol to'pi saqlanadi. Murabbiy ko'zini yumib bitta to'p oladi. Olingan to'p futbol to'pi bo'lmasligi ehtimolligini toping.",
+      "v": [
+        "3/10",
+        "1/5",
+        "1/2",
+        "4/5"
+      ],
+      "t": 2,
+      "izoh": "Jami to'plar soni 10 + 6 + 4 = 20 ta. Futbol to'pi bo'lmaganlari — voleybol va basketbol to'plari, ya'ni 6 + 4 = 10 ta. Demak P = 10/20 = 1/2. Qarama-qarshi hodisa orqali ham tekshiriladi: 1 − 10/20 = 1/2. 3/10 varianti faqat voleybol to'plarini sanash, 1/5 faqat basketbolni sanash, 4/5 esa faqat basketbol to'plarini chiqarib tashlash xatosi. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qutidan-bitta-shar",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#179fd340"
+    },
+    {
+      "q": "Bir qutida 12 ta shar bor: ularning 4 tasi oq, qolganlari qora. Tasodifiy olingan shar qora bo'lish ehtimolligi qanchaga teng?",
+      "v": [
+        "2/3",
+        "1/3",
+        "3/4",
+        "1/12"
+      ],
+      "t": 0,
+      "izoh": "Qora sharlar soni 12 − 4 = 8 ta. Umumiy natijalar 12 ta, qulaylari 8 ta, demak P = 8/12 = 2/3. 1/3 varianti oq shar chiqish ehtimolligi, 3/4 qora sharlarni 9 ta deb xato sanash, 1/12 esa aniq bitta sharni olish ehtimolligi. Javob: 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qutidan-bitta-shar",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#1bce9dc1"
+    },
+    {
+      "q": "Do'kondagi qutida 25 ta bir xil ko'rinishdagi lampochka bor, ulardan 3 tasi nosoz. Xaridor tasodifiy bitta lampochka oldi. Uning soz bo'lish ehtimolligini toping.",
+      "v": [
+        "3/25",
+        "22/25",
+        "1/25",
+        "19/25"
+      ],
+      "t": 1,
+      "izoh": "Soz lampochkalar soni 25 − 3 = 22 ta, umumiy natijalar esa 25 ta. Klassik ta'rifga ko'ra P = 22/25. Buni qarama-qarshi hodisa orqali tekshirish mumkin: nosoz chiqish ehtimolligi 3/25, demak soz chiqishi 1 − 3/25 = 22/25. 19/25 varianti 3 ni ikki marta ayirish, 1/25 esa aniq bitta lampochkani olish. Javob: 22/25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qutidan-bitta-shar",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#2be2d090"
+    },
+    {
+      "q": "Bir qutidagi 30 ta jeton 1 dan 30 gacha raqamlangan. Tasodifiy olingan jeton raqami 4 ga karrali bo'lish ehtimolligini toping.",
+      "v": [
+        "1/4",
+        "4/15",
+        "7/30",
+        "1/5"
+      ],
+      "t": 2,
+      "izoh": "1 dan 30 gacha bo'lgan 4 ga karrali sonlar: 4, 8, 12, 16, 20, 24 va 28 — jami 7 ta. Umumiy natijalar 30 ta, demak P = 7/30. 1/4 varianti «har to'rtinchi son» degan taxminiy fikr, 4/15 karralilarni 8 ta deb sanash, 1/5 esa 28 ni tushirib qoldirish. Javob: 7/30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qutidan-bitta-shar",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#e4be0b38"
+    },
+    {
+      "q": "Qutida 5 ta oq va 3 ta qora shar bor. Undan ketma-ket, qaytarmasdan ikkita shar olinadi. Ikkalasi ham oq bo'lish ehtimolligini toping.",
+      "v": [
+        "25/64",
+        "5/14",
+        "5/8",
+        "3/28"
+      ],
+      "t": 1,
+      "izoh": "Qutidagi 8 ta shardan 2 tasini tanlash usullari soni C(8; 2) = 28 ta. Ikkalasi ham oq bo'lishi C(5; 2) = 10 usulda ro'y beradi. Demak P = 10/28 = 5/14. 25/64 varianti sharni qaytarib qo'yish holatiga mos keladi, 5/8 bitta shar olish ehtimolligi, 3/28 esa ikkala sharning qora chiqishi. Javob: 5/14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qutidan-ikki-shar",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#25210463"
+    },
+    {
+      "q": "Qutida 6 ta qizil va 4 ta sariq qalam bor. Malika qutiga qaramasdan ikkita qalam oldi. Ikkalasi ham sariq bo'lish ehtimolligini toping.",
+      "v": [
+        "4/25",
+        "1/3",
+        "2/5",
+        "2/15"
+      ],
+      "t": 3,
+      "izoh": "10 ta qalamdan 2 tasini tanlash C(10; 2) = 45 usulda bajariladi. Ikkala qalam sariq bo'lishi C(4; 2) = 6 usulda ro'y beradi. Demak P = 6/45 = 2/15. 4/25 varianti qalamni qaytarib qo'yish holati, 2/5 bitta sariq qalam olish ehtimolligi, 1/3 esa qulay usullarni 15 ta deb ortiqcha sanash. Javob: 2/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qutidan-ikki-shar",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#a0adb4fa"
+    },
+    {
+      "q": "Bir savatda 9 ta olma bor, ulardan 2 tasi chirigan. Nodir savatdan tasodifiy ikkita olma oldi. Ikkalasi ham sog'lom bo'lish ehtimolligini toping.",
+      "v": [
+        "7/12",
+        "7/9",
+        "49/81",
+        "1/36"
+      ],
+      "t": 0,
+      "izoh": "9 ta olmadan 2 tasini tanlash C(9; 2) = 36 usulda bajariladi. Sog'lom olmalar 9 − 2 = 7 ta, ulardan 2 tasini tanlash C(7; 2) = 21 usul. Demak P = 21/36 = 7/12. 7/9 varianti bitta olma olish ehtimolligi, 49/81 olmani qaytarib qo'yish holati, 1/36 esa aniq bitta juftlikni olish. Javob: 7/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qutidan-ikki-shar",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#13e1c633"
+    },
+    {
+      "q": "Qutida 4 ta oq va 5 ta ko'k shar bor. Undan bir yo'la ikkita shar olinadi. Olingan sharlarning rangi har xil bo'lish ehtimolligini toping.",
+      "v": [
+        "4/9",
+        "20/81",
+        "5/9",
+        "1/2"
+      ],
+      "t": 2,
+      "izoh": "9 ta shardan 2 tasini tanlash C(9; 2) = 36 usul. Ranglari har xil bo'lishi uchun bitta oq va bitta ko'k olinadi, bu 4·5 = 20 usulda bo'ladi. Demak P = 20/36 = 5/9. 4/9 varianti bir xil rangli juftliklarni sanash, 20/81 sharlarni qaytarib qo'yish holati, 1/2 esa «yo bir xil, yo har xil» degan asossiz taxmin. Javob: 5/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qutidan-ikki-shar",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#b6a86119"
+    },
+    {
+      "q": "Qutida 3 ta yashil va 7 ta jigarrang shar bor. Ketma-ket qaytarmasdan ikkita shar olinganda kamida bittasi yashil bo'lish ehtimolligini toping.",
+      "v": [
+        "7/15",
+        "3/10",
+        "1/2",
+        "8/15"
+      ],
+      "t": 3,
+      "izoh": "10 ta shardan 2 tasini tanlash C(10; 2) = 45 usul. Qarama-qarshi hodisa — ikkala sharning jigarrang chiqishi: C(7; 2) = 21 usul, uning ehtimolligi 21/45 = 7/15. Demak kamida bitta yashil chiqishi P = 1 − 7/15 = 8/15. 7/15 varianti qarama-qarshi hodisani javob deb olish, 3/10 esa bitta yashil shar olish ehtimolligi. Javob: 8/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qutidan-ikki-shar",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#8dc2b43d"
+    },
+    {
+      "q": "To'liq 52 ta kartali taxlamdan tasodifiy bitta karta olinadi. Olingan karta shoh bo'lish ehtimolligini toping.",
+      "v": [
+        "1/13",
+        "1/4",
+        "1/52",
+        "4/13"
+      ],
+      "t": 0,
+      "izoh": "Taxlamda 52 ta karta bor va ularning har biri teng imkoniyat bilan olinadi. Shohlar to'rtta mastda bittadan, ya'ni jami 4 ta. Demak P = 4/52 = 1/13. 1/4 varianti mastlar soni bilan chalkashtirish, 1/52 aniq bitta kartani olish, 4/13 esa nisbatni teskari yozish xatosi. Javob: 1/13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kartadan-bitta-olish",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#a8252b26"
+    },
+    {
+      "q": "52 ta kartali taxlamdan bitta karta olindi. Uning qizil rangdagi surat kartasi (valet, xonim yoki shoh) bo'lish ehtimolligini toping.",
+      "v": [
+        "3/13",
+        "1/13",
+        "3/26",
+        "6/13"
+      ],
+      "t": 2,
+      "izoh": "Har bir mastda 3 ta surat kartasi bor: valet, xonim va shoh. Qizil mastlar ikkita — chirva va g'isht, demak qizil surat kartalari 2·3 = 6 ta. Shunday qilib P = 6/52 = 3/26. 3/13 varianti barcha 12 ta surat kartasini olish, 6/13 maxrajni 13 deb qoldirish, 1/13 esa bitta qiymatning ehtimolligi. Javob: 3/26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kartadan-bitta-olish",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#cc5456ea"
+    },
+    {
+      "q": "Do'stlar o'yin uchun 36 ta kartali taxlamdan foydalanmoqda. Tasodifiy olingan karta g'isht mastida yoki tuz bo'lish ehtimolligini toping.",
+      "v": [
+        "13/36",
+        "1/3",
+        "1/4",
+        "1/9"
+      ],
+      "t": 1,
+      "izoh": "36 ta kartali taxlamda har bir mastda 9 tadan karta bor, tuzlar esa har mastdan bittadan — jami 4 ta. G'isht mastida 9 ta karta bor, lekin g'isht tuzi ikkala guruhda ham sanaladi. Shuning uchun qulay natijalar 9 + 4 − 1 = 12 ta va P = 12/36 = 1/3. 13/36 varianti umumiy kartani ikki marta sanash, 1/4 faqat mast ehtimolligi, 1/9 esa tuzlar ehtimolligi. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kartadan-bitta-olish",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#165b3e88"
+    },
+    {
+      "q": "36 ta kartali taxlamdan tasodifiy bitta karta olindi. Uning qiymati 6, 7, 8 yoki 9 bo'lish ehtimolligini toping.",
+      "v": [
+        "4/9",
+        "1/9",
+        "1/4",
+        "5/9"
+      ],
+      "t": 0,
+      "izoh": "36 ta kartali taxlamda har bir qiymatdan 4 tadan karta bor — har mastda bittadan. 6, 7, 8 va 9 to'rtta qiymat, demak qulay kartalar 4·4 = 16 ta. P = 16/36 = 4/9. 1/9 varianti faqat bitta qiymatni sanash, 1/4 mastlar bilan chalkashtirish, 5/9 esa qarama-qarshi hodisaning ehtimolligi. Javob: 4/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kartadan-bitta-olish",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#675c0291"
+    },
+    {
+      "q": "Aziz 52 ta kartali taxlamdan bitta karta oldi va uning qora rangda ekanini ko'rdi. Shu kartaning surat kartasi bo'lish ehtimolligi qanchaga teng?",
+      "v": [
+        "3/26",
+        "1/2",
+        "6/13",
+        "3/13"
+      ],
+      "t": 3,
+      "izoh": "Kartaning qora ekani ma'lum, demak elementar natijalar fazosi endi 26 ta qora kartadan iborat. Qora mastlar ikkita — qarg'a (trefa) va pik, har birida 3 tadan surat kartasi bor, jami 6 ta. Demak P = 6/26 = 3/13. 3/26 varianti fazoni 52 ta deb qoldirish, 6/13 maxrajni 13 ga tushirish, 1/2 esa rang ehtimolligini javob deb olish. Javob: 3/13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kartadan-bitta-olish",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#56ce914b"
+    },
+    {
+      "q": "Lotereyada 500 ta bilet chiqarilgan va ulardan 20 tasiga yutuq tushgan. Sherzod bitta bilet sotib oldi. Uning biletidan yutuq chiqish ehtimolligini toping.",
+      "v": [
+        "1/25",
+        "1/20",
+        "1/50",
+        "2/25"
+      ],
+      "t": 0,
+      "izoh": "Umumiy natijalar soni 500 ta, chunki har bir bilet teng imkoniyat bilan yutishi mumkin. Yutuqli biletlar 20 ta, demak P = 20/500 = 1/25. 1/20 varianti sonlarni almashtirib qo'yish, 1/50 yutuqlarni 10 ta deb sanash, 2/25 esa 40 ta yutuq bor deb hisoblash. Javob: 1/25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lotereya-bileti",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#f9f910dd"
+    },
+    {
+      "q": "Maktab lotereyasida 250 ta bilet bor: 5 tasida bosh yutuq, 20 tasida tasalli sovg'asi. Dilshod bitta bilet oldi. Uning biletidan hech qanday yutuq chiqmasligi ehtimolligini toping.",
+      "v": [
+        "1/10",
+        "9/10",
+        "23/25",
+        "1/50"
+      ],
+      "t": 1,
+      "izoh": "Yutuqli biletlar jami 5 + 20 = 25 ta, demak yutuqsizlari 250 − 25 = 225 ta. Klassik ta'rifga ko'ra P = 225/250 = 9/10. Qarama-qarshi hodisa orqali tekshiramiz: 1 − 25/250 = 1 − 1/10 = 9/10. 1/10 varianti qarama-qarshi hodisani javob deb olish, 23/25 esa faqat tasalli sovg'alarini ayirish xatosi. Javob: 9/10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lotereya-bileti",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#51b67aff"
+    },
+    {
+      "q": "«Omad» lotereyasining har 40 ta biletidan 6 tasi yutuqli. Gulnora bitta bilet sotib oldi, ammo yutuq chiqmadi. Shu hodisaning ehtimolligi qanday edi?",
+      "v": [
+        "3/20",
+        "3/17",
+        "17/20",
+        "7/20"
+      ],
+      "t": 2,
+      "izoh": "40 ta biletdan 6 tasi yutuqli, demak yutuqsizlari 40 − 6 = 34 ta. P = 34/40 = 17/20. 3/20 varianti yutuq chiqish ehtimolligi, 3/17 nisbatni yutuqli va yutuqsiz biletlar orasida olish, 7/20 esa yutuqsiz biletlarni 14 ta deb noto'g'ri sanash. Javob: 17/20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lotereya-bileti",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#802080b2"
+    },
+    {
+      "q": "Lotereya barabanida 1 dan 49 gacha raqamlangan sharlar aylanmoqda. Birinchi bo'lib chiqqan sharning raqami 7 ga karrali bo'lish ehtimolligini toping.",
+      "v": [
+        "6/49",
+        "1/49",
+        "2/7",
+        "1/7"
+      ],
+      "t": 3,
+      "izoh": "1 dan 49 gacha 7 ga karrali sonlar: 7, 14, 21, 28, 35, 42 va 49 — jami 7 ta. Umumiy natijalar 49 ta, demak P = 7/49 = 1/7. 6/49 varianti 49 ning o'zini karrali deb sanamaslik, 1/49 aniq bitta sharni olish, 2/7 esa karralilarni 14 ta deb hisoblash. Javob: 1/7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lotereya-bileti",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#6d3e18e9"
+    },
+    {
+      "q": "Tadbirda 120 ta ishtirokchiga bittadan raqamli kupon berildi, so'ngra 3 ta kupon tasodifiy tanlanib sovg'a topshiriladi. Ozodaning sovg'a yutib olish ehtimolligini toping.",
+      "v": [
+        "3/40",
+        "1/40",
+        "1/120",
+        "1/3"
+      ],
+      "t": 1,
+      "izoh": "Barcha kuponlar teng imkoniyatga ega, umumiy natijalar 120 ta. Ozodaning kuponi g'olib 3 ta kupon orasida bo'lishi kerak, demak qulay natijalar 3 ta. P = 3/120 = 1/40. 3/40 varianti maxrajni noto'g'ri qisqartirish, 1/120 sovg'a bittagina deb hisoblash, 1/3 esa nisbatni teskari olish. Javob: 1/40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lotereya-bileti",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#d64ff64d"
+    },
+    {
+      "q": "Biror hodisaning ro'y berish ehtimolligi 0,35 ga teng ekani ma'lum. Unga qarama-qarshi hodisaning ehtimolligini toping.",
+      "v": [
+        "0,35",
+        "1,35",
+        "0,65",
+        "0,55"
+      ],
+      "t": 2,
+      "izoh": "Hodisa va unga qarama-qarshi hodisa ehtimolliklarining yig'indisi doim 1 ga teng. Demak izlanayotgan qiymat 1 − 0,35 = 0,65 bo'ladi. 1,35 varianti ayirish o'rniga qo'shish, 0,55 varianti 1 o'rniga 0,9 dan ayirish, 0,35 esa berilganni takrorlash. Javob: 0,65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-hodisa",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#34bffe84"
+    },
+    {
+      "q": "Otishmada Jasurning nishonga tegizish ehtimolligi 4/5 ga teng. Uning bitta o'q bilan nishonga tegiza olmaslik ehtimolligini toping.",
+      "v": [
+        "1/5",
+        "4/5",
+        "1/4",
+        "3/5"
+      ],
+      "t": 0,
+      "izoh": "Tegizish va tegiza olmaslik hodisalari qarama-qarshi, ularning ehtimolliklari yig'indisi 1 ga teng. Demak P = 1 − 4/5 = 1/5. 4/5 varianti berilgan ehtimollikni takrorlash, 1/4 kasrni ag'darish, 3/5 esa 1 o'rniga 4/5 dan 1/5 ni ayirish xatosi. Javob: 1/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-hodisa",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#fd3a636e"
+    },
+    {
+      "q": "Qutida faqat qizil va yashil sharlar bor. Qizil shar olish ehtimolligi 3/8 ga teng bo'lsa, yashil shar olish ehtimolligi qanchaga teng?",
+      "v": [
+        "3/8",
+        "1/8",
+        "2/5",
+        "5/8"
+      ],
+      "t": 3,
+      "izoh": "Qutida faqat ikki xil shar bo'lgani uchun qizil va yashil olish hodisalari qarama-qarshi. Demak P(yashil) = 1 − 3/8 = 5/8. 3/8 varianti berilganni takrorlash, 1/8 3 ni 8 dan emas 4 dan ayirish, 2/5 esa nisbatni 3 va 5 orasida olish. Javob: 5/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qarama-qarshi-hodisa",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#294f9bd3"
+    },
+    {
+      "q": "Sinfda 24 nafar o'quvchi bor. Tasodifiy chaqirilgan o'quvchining shaxmat to'garagiga qatnashish ehtimolligi 5/12 ga teng. To'garakka qatnashmaydiganlar soni nechta?",
+      "v": [
+        "10",
+        "14",
+        "12",
+        "19"
+      ],
+      "t": 1,
+      "izoh": "To'garakka qatnashuvchilar soni 24·5/12 = 10 nafar. Demak qatnashmaydiganlar 24 − 10 = 14 nafar. 10 varianti oxirgi qadamni tashlab, qatnashuvchilarni javob deb olish, 12 varianti 24 ning yarmini olish, 19 esa 5 nafarni ayirish xatosi. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qarama-qarshi-hodisa",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#543baa9e"
+    },
+    {
+      "q": "Tajribada A hodisasining ehtimolligi 0,18 ga teng, B hodisasining ehtimolligi esa A ga qarama-qarshi hodisanikidan 0,3 ga kichik. P(B) ni toping.",
+      "v": [
+        "0,52",
+        "0,82",
+        "0,48",
+        "0,12"
+      ],
+      "t": 0,
+      "izoh": "Avval A ga qarama-qarshi hodisaning ehtimolligini topamiz: 1 − 0,18 = 0,82. Shartga ko'ra P(B) = 0,82 − 0,3 = 0,52. 0,82 varianti oxirgi qadamni tashlab ketish, 0,48 varianti 0,18 va 0,3 ni qo'shib qo'yish, 0,12 esa 0,3 dan 0,18 ni ayirish. Javob: 0,52.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qarama-qarshi-hodisa",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#aa149492"
+    },
+    {
+      "q": "Quyidagi sonlardan qaysi biri biror hodisaning ehtimolligi bo'la olmaydi?",
+      "v": [
+        "0,73",
+        "1,04",
+        "0",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Har qanday hodisaning ehtimolligi 0 dan 1 gacha oraliqda yotadi, ya'ni 0 ≤ P ≤ 1. Nol imkonsiz hodisaga, 1 esa muqarrar hodisaga mos keladi, 0,73 oddiy tasodifiy hodisa uchun mumkin bo'lgan qiymat. 1,04 soni 1 dan katta bo'lgani uchun ehtimollik bo'la olmaydi. Javob: 1,04.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ehtimollik-qiymati-xossalari",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#9c12c052"
+    },
+    {
+      "q": "Bir tajribada o'zaro birgalikda bo'lmagan uchta hodisa butun fazoni qoplaydi. Birinchisining ehtimolligi 2/9, ikkinchisiniki 1/3 ga teng. Uchinchisining ehtimolligini toping.",
+      "v": [
+        "5/9",
+        "2/3",
+        "4/9",
+        "1/9"
+      ],
+      "t": 2,
+      "izoh": "Fazoni to'liq qoplovchi va o'zaro birgalikda bo'lmagan hodisalar ehtimolliklarining yig'indisi 1 ga teng. Avval 2/9 + 1/3 = 2/9 + 3/9 = 5/9 ni topamiz. Demak uchinchisi 1 − 5/9 = 4/9. 5/9 varianti dastlabki ikkitasining yig'indisini javob deb olish, 2/3 faqat 1/3 ni ayirish, 1/9 esa maxrajlarni tenglashtirmasdan ayirish. Javob: 4/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ehtimollik-qiymati-xossalari",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#394eb098"
+    },
+    {
+      "q": "Tasodifiy tajribada A hodisasiga 15 ta, unga qarama-qarshi hodisaga esa 25 ta elementar natija qulaylik tug'diradi. P(A) ni toping.",
+      "v": [
+        "5/8",
+        "3/5",
+        "1/40",
+        "3/8"
+      ],
+      "t": 3,
+      "izoh": "Elementar natijalarning umumiy soni 15 + 25 = 40 ta. A hodisasiga ulardan 15 tasi qulay, demak P(A) = 15/40 = 3/8. 5/8 varianti qarama-qarshi hodisaning ehtimolligi, 3/5 nisbatni 15 va 25 orasida olish, 1/40 esa aniq bitta elementar natijaning ehtimolligi. Javob: 3/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ehtimollik-qiymati-xossalari",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#f81b07d2"
+    },
+    {
+      "q": "Bir tajribaning elementar natijalari soni 20 ta. A hodisasining ehtimolligi 0,45 ga teng bo'lsa, unga nechta elementar natija qulaylik tug'diradi?",
+      "v": [
+        "9",
+        "45",
+        "11",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "Klassik ta'rifga ko'ra P(A) = m/n, bu yerda n = 20. Bundan m = P(A)·n = 0,45·20 = 9 ta. 11 varianti qarama-qarshi hodisaga qulay natijalar soni, 45 sondagi raqamlarni javobga ko'chirish, 10 esa 0,45 ni 0,5 ga yaxlitlash natijasi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ehtimollik-qiymati-xossalari",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#7222335f"
+    },
+    {
+      "q": "Tajribada A va B hodisalari o'zaro birgalikda emas: P(A) = 0,26 va P(B) = 0,37. A yoki B ro'y berish ehtimolligini toping.",
+      "v": [
+        "0,37",
+        "0,74",
+        "0,63",
+        "0,11"
+      ],
+      "t": 2,
+      "izoh": "Birgalikda bo'lmagan hodisalar uchun P(A yoki B) = P(A) + P(B) = 0,26 + 0,37 = 0,63. Bu hodisalar bir vaqtda ro'y bera olmagani uchun kesishma ayirilmaydi. 0,74 varianti 1 dan 0,26 ni ayirish, 0,11 ehtimolliklarni ayirish, 0,37 esa faqat kattarog'ini javob deb olish. Javob: 0,63.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ehtimollik-qiymati-xossalari",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#5d0c4e2b"
+    },
+    {
+      "q": "Qutida 12 ta oq va bir nechta qora shar bor. Tasodifiy olingan sharning oq bo'lish ehtimolligi 3/5 ga teng. Qutidagi qora sharlar sonini toping.",
+      "v": [
+        "20",
+        "5",
+        "10",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Qora sharlar soni k bo'lsin, u holda 12/(12 + k) = 3/5 tenglama hosil bo'ladi. Krest usulida 60 = 3·(12 + k), ya'ni 60 = 36 + 3k va bundan k = 8. 20 varianti umumiy sharlar sonini javob deb olish, 5 va 10 esa kasr maxrajlarini to'g'ridan-to'g'ri ko'chirish xatosi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-masala-son-topish",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#f06b8498"
+    },
+    {
+      "q": "Bir qutiga 18 ta bir xil shar solingan, ularning bir qismi yashil. Tasodifiy olingan shar yashil bo'lish ehtimolligi 5/9 ga teng bo'lsa, qutida nechta yashil shar bor?",
+      "v": [
+        "10",
+        "9",
+        "5",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Yashil sharlar soni m bo'lsin, u holda m/18 = 5/9 nisbat o'rinli. Bundan m = 18·5/9 = 10 ta. 8 varianti yashil bo'lmagan sharlar soni, 9 varianti 18 ning yarmi, 5 esa kasr suratini to'g'ridan-to'g'ri javob deb olish. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-masala-son-topish",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#6059c017"
+    },
+    {
+      "q": "Zavod omboridagi 400 ta buyumning bir qismi brak deb ajratildi. Tasodifiy olingan buyumning brak bo'lish ehtimolligi 0,015 ga teng. Nechta buyum brak deb ajratilgan?",
+      "v": [
+        "15",
+        "6",
+        "60",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Brak buyumlar soni m = P·n formulasi bo'yicha topiladi: m = 0,015·400 = 6 ta. 15 varianti sondagi raqamlarni javobga ko'chirish, 60 varianti 0,015 o'rniga 0,15 bilan hisoblash, 4 esa 400 ni 100 ga bo'lish natijasi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-masala-son-topish",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#da29ff40"
+    },
+    {
+      "q": "Kitob javonida faqat matematika va fizika kitoblari turibdi. Matematika kitoblari 21 ta va tasodifiy olingan kitob matematika kitobi bo'lish ehtimolligi 7/10 ga teng. Fizika kitoblari nechta?",
+      "v": [
+        "30",
+        "3",
+        "9",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "Umumiy kitoblar soni n bo'lsin: 21/n = 7/10, bundan 7n = 210 va n = 30 ta. Fizika kitoblari 30 − 21 = 9 ta. 30 varianti oxirgi qadamni tashlab, umumiy sonni javob deb olish, 3 varianti 21 ni 7 ga bo'lish, 10 esa kasr maxrajini ko'chirish. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-masala-son-topish",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#afe1739b"
+    },
+    {
+      "q": "Qutidagi qizil va ko'k sharlar jami 45 ta. Qizil shar olish ehtimolligi ko'k shar olish ehtimolligidan 2 marta katta. Qutidagi ko'k sharlar sonini toping.",
+      "v": [
+        "30",
+        "22",
+        "9",
+        "15"
+      ],
+      "t": 3,
+      "izoh": "Ehtimolliklar nisbati sharlar soni nisbatiga teng, shuning uchun ko'k sharlar soni k bo'lsa, qizillari 2k ta bo'ladi. U holda k + 2k = 45, ya'ni 3k = 45 va k = 15 ta. 30 varianti qizil sharlar soni, 22 varianti 45 ni ikkiga bo'lishga urinish, 9 esa 45 ni 5 ga bo'lish natijasi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-masala-son-topish",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#ae180185"
+    },
+    {
+      "q": "Sinfda 14 nafar qiz va 16 nafar o'g'il bola o'qiydi. Sinf rahbari navbatchini tasodifiy tanlaydi. Tanlangan o'quvchining qiz bola bo'lish ehtimolligini toping.",
+      "v": [
+        "7/15",
+        "8/15",
+        "7/8",
+        "1/2"
+      ],
+      "t": 0,
+      "izoh": "Sinfdagi o'quvchilarning umumiy soni 14 + 16 = 30 nafar va har biri teng imkoniyat bilan tanlanadi. Qizlar 14 nafar, demak P = 14/30 = 7/15. 8/15 varianti o'g'il bola tanlanish ehtimolligi, 7/8 nisbatni qizlar va o'g'il bolalar orasida olish, 1/2 esa «ikkitadan bir» degan asossiz taxmin. Javob: 7/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinf-statistikasidan-tanlov",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#7fade26c"
+    },
+    {
+      "q": "Guruhdagi 25 nafar talabaning 10 nafari ingliz tilini, 7 nafari nemis tilini o'rganadi, qolganlari boshqa tilni tanlagan. Tasodifiy tanlangan talaba nemis tilini o'rganayotgan bo'lish ehtimolligini toping.",
+      "v": [
+        "2/5",
+        "7/25",
+        "8/25",
+        "7/17"
+      ],
+      "t": 1,
+      "izoh": "Umumiy natijalar soni 25 ta, chunki har bir talaba teng imkoniyat bilan tanlanadi. Nemis tilini 7 nafari o'rganadi, demak P = 7/25. 2/5 varianti ingliz tilini o'rganuvchilarning ehtimolligi, 8/25 boshqa til tanlaganlarniki, 7/17 esa maxrajga faqat til o'rganuvchilarni olish xatosi. Javob: 7/25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinf-statistikasidan-tanlov",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#640cbc62"
+    },
+    {
+      "q": "Kutubxonadagi 60 ta kitobning 24 tasi o'zbek adabiyoti, 21 tasi jahon adabiyoti, qolganlari lug'atlar. Tasodifiy olingan kitob lug'at bo'lish ehtimolligini toping.",
+      "v": [
+        "2/5",
+        "7/20",
+        "1/4",
+        "3/4"
+      ],
+      "t": 2,
+      "izoh": "Lug'atlar soni 60 − 24 − 21 = 15 ta. Umumiy natijalar 60 ta, demak P = 15/60 = 1/4. 2/5 varianti o'zbek adabiyoti kitoblarining ehtimolligi, 7/20 jahon adabiyoti kitoblariniki, 3/4 esa qarama-qarshi hodisaning ehtimolligi. Javob: 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinf-statistikasidan-tanlov",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#b3ec7c18"
+    },
+    {
+      "q": "Nazorat ishida 32 nafar o'quvchidan 8 nafari «5», 12 nafari «4», 9 nafari «3» baho oldi, qolganlari esa «2» oldi. Tasodifiy tanlangan o'quvchi ijobiy baho olgan bo'lish ehtimolligini toping.",
+      "v": [
+        "3/32",
+        "5/8",
+        "7/8",
+        "29/32"
+      ],
+      "t": 3,
+      "izoh": "«2» baho olganlar soni 32 − 8 − 12 − 9 = 3 nafar. Demak ijobiy baho olganlar 32 − 3 = 29 nafar va P = 29/32. Qarama-qarshi hodisa orqali ham tekshiriladi: 1 − 3/32 = 29/32. 3/32 varianti qarama-qarshi hodisani javob deb olish, 5/8 faqat «4» va «5» olganlarni sanash, 7/8 esa 28 nafar deb xato hisoblash. Javob: 29/32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinf-statistikasidan-tanlov",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#52bbe8c0"
+    },
+    {
+      "q": "Sinfdagi 28 nafar o'quvchidan 12 nafari futbol, 9 nafari shaxmat to'garagiga qatnaydi, 4 nafari esa ikkalasiga ham qatnaydi. Tasodifiy tanlangan o'quvchi hech qaysi to'garakka qatnamasligi ehtimolligini toping.",
+      "v": [
+        "11/28",
+        "17/28",
+        "1/4",
+        "3/28"
+      ],
+      "t": 0,
+      "izoh": "Kamida bitta to'garakka qatnaydiganlar soni 12 + 9 − 4 = 17 nafar, chunki ikkalasiga qatnovchi 4 nafar ikki marta sanalgan edi. Demak hech qaysisiga qatnamaydiganlar 28 − 17 = 11 nafar va P = 11/28. 17/28 varianti qarama-qarshi hodisani javob deb olish, 1/4 kesishmani ayirmasdan 21 nafar deb sanash, 3/28 esa kesishmadagi 4 nafarni ayirish o'rniga qo'shib yuborish (12 + 9 + 4 = 25, 28 − 25 = 3) natijasi. Javob: 11/28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sinf-statistikasidan-tanlov",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#17328a00"
+    },
+    {
+      "q": "Fabrikada tayyorlangan 800 ta idishdan 24 tasi nuqsonli chiqdi. Nazoratchi omborga kirib tasodifiy bitta idish oldi. Uning nuqsonli bo'lish ehtimolligini toping.",
+      "v": [
+        "1/24",
+        "3/100",
+        "3/80",
+        "97/100"
+      ],
+      "t": 1,
+      "izoh": "Umumiy natijalar 800 ta, nuqsonli idishlar esa 24 ta. Demak P = 24/800 = 3/100. 97/100 varianti nuqsonsiz idish chiqish ehtimolligi, 3/80 varianti 800 ni 80 deb noto'g'ri qisqartirish, 1/24 esa nisbatni teskari olish. Javob: 3/100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sifat-nazorati",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#50305373"
+    },
+    {
+      "q": "Sifat nazoratiga kelgan 150 ta telefondan 6 tasida ekran nuqsoni, 3 tasida batareya nuqsoni aniqlandi. Tasodifiy olingan telefon nuqsonsiz bo'lish ehtimolligini toping.",
+      "v": [
+        "3/50",
+        "24/25",
+        "47/50",
+        "1/50"
+      ],
+      "t": 2,
+      "izoh": "Nuqsonli telefonlar jami 6 + 3 = 9 ta, demak nuqsonsizlari 150 − 9 = 141 ta. P = 141/150 = 47/50. 3/50 varianti nuqsonli telefon chiqish ehtimolligi, 24/25 faqat ekran nuqsonlarini ayirish, 1/50 esa batareya nuqsonining ulushi. Javob: 47/50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sifat-nazorati",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#27f03d79"
+    },
+    {
+      "q": "Omborga uchta zavoddan mahsulot keldi: birinchisidan 200 ta, ikkinchisidan 300 ta, uchinchisidan 500 ta. Tasodifiy olingan mahsulot ikkinchi zavodniki bo'lish ehtimolligini toping.",
+      "v": [
+        "1/3",
+        "1/5",
+        "7/10",
+        "3/10"
+      ],
+      "t": 3,
+      "izoh": "Mahsulotlarning umumiy soni 200 + 300 + 500 = 1000 ta. Ikkinchi zavodnikilar 300 ta, demak P = 300/1000 = 3/10. 1/3 varianti «uchta zavod bor, demak uchdan bir» degan taxmin, 1/5 birinchi zavod mahsulotining ehtimolligi, 7/10 esa qarama-qarshi hodisaniki. Javob: 3/10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sifat-nazorati",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#9921f809"
+    },
+    {
+      "q": "Ustaxonaga kelgan partiyadan tasodifiy olingan detalning yaroqsiz bo'lish ehtimolligi 0,04 ga teng. Partiyada 25 ta yaroqsiz detal bo'lsa, partiyadagi detallarning umumiy soni nechta?",
+      "v": [
+        "625",
+        "500",
+        "1250",
+        "100"
+      ],
+      "t": 0,
+      "izoh": "Klassik ta'rifga ko'ra P = m/n, demak n = m : P. Bundan n = 25 : 0,04 = 625 ta. 500 varianti 0,04 o'rniga 0,05 bilan hisoblash, 1250 varianti 0,02 bilan hisoblash, 100 esa 25 ni 0,25 ga bo'lish natijasi. Javob: 625.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sifat-nazorati",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#f25a2da8"
+    },
+    {
+      "q": "Yig'ish sexida 200 ta buyumdan 8 tasi past nav deb topildi. Direktor «har 50 ta buyumdan bittasi past nav» dedi. Past nav buyum chiqishining haqiqiy ehtimolligini toping.",
+      "v": [
+        "1/50",
+        "1/25",
+        "4/25",
+        "1/8"
+      ],
+      "t": 1,
+      "izoh": "Umumiy natijalar 200 ta, past nav buyumlar 8 ta. Demak P = 8/200 = 1/25, ya'ni har 25 ta buyumdan bittasi past nav bo'lar ekan va direktorning bahosi ikki barobar past. 1/50 varianti direktorning xato bahosi, 4/25 past nav buyumlarni 32 ta deb sanash, 1/8 esa nisbatni teskari olish. Javob: 1/25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sifat-nazorati",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#7bb31d1c"
+    },
+    {
+      "q": "1 dan 100 gacha bo'lgan natural sonlardan biri tasodifiy tanlanadi. Tanlangan son 10 ga karrali bo'lish ehtimolligini toping.",
+      "v": [
+        "1/100",
+        "9/100",
+        "1/10",
+        "1/5"
+      ],
+      "t": 2,
+      "izoh": "1 dan 100 gacha 10 ga karrali sonlar: 10, 20, 30, 40, 50, 60, 70, 80, 90 va 100 — jami 10 ta. Demak P = 10/100 = 1/10. 9/100 varianti 100 ning o'zini sanamay qoldirish, 1/100 aniq bitta sonni olish, 1/5 esa karralilarni 20 ta deb hisoblash. Javob: 1/10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-tanlash-bolinuvchanlik",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#810aa64d"
+    },
+    {
+      "q": "1 dan 50 gacha bo'lgan natural sonlardan bittasi tasodifiy tanlandi. Tanlangan sonning tub son bo'lish ehtimolligini toping.",
+      "v": [
+        "7/25",
+        "8/25",
+        "2/25",
+        "3/10"
+      ],
+      "t": 3,
+      "izoh": "1 dan 50 gacha tub sonlar: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43 va 47 — jami 15 ta. Demak P = 15/50 = 3/10. 7/25 varianti 2 ni tub deb hisoblamaslik, 8/25 varianti 1 ni ham tub sonlar qatoriga qo'shish, 2/25 esa faqat bir xonali tub sonlarni sanash. Javob: 3/10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-tanlash-bolinuvchanlik",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#dc8c4a50"
+    },
+    {
+      "q": "1, 2, 3, 4 va 5 raqamlaridan raqamlari takrorlanmaydigan barcha uch xonali sonlar tuzildi. Ular ichidan tasodifiy olingan son juft bo'lish ehtimolligini toping.",
+      "v": [
+        "2/5",
+        "1/2",
+        "3/5",
+        "1/5"
+      ],
+      "t": 0,
+      "izoh": "Raqamlari takrorlanmaydigan uch xonali sonlar soni 5·4·3 = 60 ta. Son juft bo'lishi uchun oxirgi raqam 2 yoki 4 bo'lishi kerak — 2 xil tanlov, qolgan ikki o'rin esa 4·3 = 12 xil to'ldiriladi, ya'ni juft sonlar 2·12 = 24 ta. Demak P = 24/60 = 2/5. 1/2 varianti juft va toq sonlar teng degan taxmin, 3/5 toq sonlarning ehtimolligi, 1/5 esa faqat bitta oxirgi raqamni sanash. Javob: 2/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "son-tanlash-bolinuvchanlik",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#1eb6b7a6"
+    },
+    {
+      "q": "Barcha ikki xonali sonlardan bittasi tasodifiy tanlanadi. Tanlangan sonning 7 ga karrali bo'lish ehtimolligini toping.",
+      "v": [
+        "7/45",
+        "13/90",
+        "13/100",
+        "1/7"
+      ],
+      "t": 1,
+      "izoh": "Ikki xonali sonlar 10 dan 99 gacha, ularning soni 90 ta. 7 ga karralilari: 14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84, 91 va 98 — jami 13 ta. Demak P = 13/90. 7/45 varianti 7 ning o'zini ham qo'shib 14 ta deb sanash, 13/100 ikki xonali sonlarni 100 ta deb olish, 1/7 esa «har yettinchi son» degan taxmin. Javob: 13/90.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-tanlash-bolinuvchanlik",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#4ce5e5a3"
+    },
+    {
+      "q": "Karim 2, 5 va 8 raqamlaridan raqamlari takrorlanmaydigan ikki xonali sonlar tuzdi va ulardan bittasini tasodifiy tanladi. Tanlangan son 50 dan katta bo'lish ehtimolligini toping.",
+      "v": [
+        "1/3",
+        "5/6",
+        "2/3",
+        "1/6"
+      ],
+      "t": 2,
+      "izoh": "Raqamlari takrorlanmaydigan ikki xonali sonlar: 25, 28, 52, 58, 82, 85 — jami 3·2 = 6 ta. Ulardan 50 dan kattalari 52, 58, 82 va 85, ya'ni 4 ta. Demak P = 4/6 = 2/3. 1/3 varianti 50 dan kichiklarning ehtimolligi, 5/6 varianti 25 ni ham qo'shib yuborish, 1/6 esa faqat bitta sonni sanash. Javob: 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-tanlash-bolinuvchanlik",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#fbed1b37"
+    },
+    {
+      "q": "Kodli qulf uch xonali kod bilan ochiladi va har bir o'rinda 0 dan 9 gacha raqam turishi mumkin. Kodni unutgan odam bir marta tasodifiy kod terganda qulfni ochish ehtimolligini toping.",
+      "v": [
+        "1/30",
+        "1/100",
+        "3/1000",
+        "1/1000"
+      ],
+      "t": 3,
+      "izoh": "Har bir o'rin 10 xil raqam bilan to'ldiriladi, demak barcha kodlar soni 10·10·10 = 1000 ta. Ulardan faqat bittasi to'g'ri, shuning uchun P = 1/1000. 1/30 varianti raqamlarni ko'paytirish o'rniga qo'shish, 1/100 kodni ikki xonali deb hisoblash, 3/1000 esa uchta urinish berilgan deb tushunish. Javob: 1/1000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kod-va-parol",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#e41b94de"
+    },
+    {
+      "q": "Sardor telefon raqamining oxirgi ikki raqamini unutdi, lekin ular bir-biridan farqli ekanini eslaydi. U tasodifiy terganda raqamni to'g'ri terish ehtimolligini toping.",
+      "v": [
+        "1/90",
+        "1/100",
+        "1/45",
+        "1/20"
+      ],
+      "t": 0,
+      "izoh": "Birinchi unutilgan o'ringa 10 xil raqam, ikkinchisiga esa undan farqli 9 xil raqam qo'yiladi: jami 10·9 = 90 ta variant. Faqat bittasi to'g'ri, demak P = 1/90. 1/100 varianti raqamlar takrorlanishi mumkin deb olish, 1/45 tartibni hisobga olmaslik, 1/20 esa 10 va 2 ni ko'paytirish xatosi. Javob: 1/90.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kod-va-parol",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#ad491f58"
+    },
+    {
+      "q": "Seyf kodi 4 ta har xil raqamdan iborat va Nigora birinchi raqam 7 ekanini eslaydi. Qolgan uchtasini tasodifiy terganda seyfni ochish ehtimolligini toping.",
+      "v": [
+        "1/729",
+        "1/504",
+        "1/1000",
+        "1/720"
+      ],
+      "t": 1,
+      "izoh": "Birinchi raqam ma'lum, qolgan uch o'rin esa qolgan 9 ta raqamdan takrorlanmasdan to'ldiriladi: 9·8·7 = 504 ta variant. Ulardan bittasi to'g'ri, demak P = 1/504. 1/729 varianti raqamlar takrorlanishi mumkin deb 9³ olish, 1/1000 birinchi raqamni ham noma'lum deb hisoblash, 1/720 esa 10·9·8 ni maxraj deb olish. Javob: 1/504.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kod-va-parol",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#c7237907"
+    },
+    {
+      "q": "Velosiped qulfida 4 ta g'ildirak bor va har birida 0 dan 5 gacha raqamlar yozilgan. Bahrom kodning barcha raqamlari juft ekanini biladi. U shu shartga mos kodni tasodifiy terganda qulf ochilish ehtimolligini toping.",
+      "v": [
+        "1/1296",
+        "1/64",
+        "1/81",
+        "1/12"
+      ],
+      "t": 2,
+      "izoh": "0 dan 5 gacha raqamlar orasida juftlari uchta: 0, 2 va 4. To'rt g'ildirakning har biri shu uchta raqamdan biriga qo'yiladi, demak shartga mos kodlar soni 3⁴ = 81 ta. Faqat bittasi to'g'ri, shuning uchun P = 1/81. 1/1296 varianti barcha kodlarni sanash, 1/64 asosni 4 deb olib 4³ hisoblash, 1/12 esa 3 va 4 ni ko'paytirish. Javob: 1/81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kod-va-parol",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#1f9207d0"
+    },
+    {
+      "q": "Musobaqada 6 nafar sportchi teng imkoniyat bilan start oldi va tasodifiy tartibda marraga keldi. Anvar bilan Dilmurod birinchi ikki o'rinni egallashi ehtimolligini toping.",
+      "v": [
+        "1/30",
+        "1/36",
+        "2/15",
+        "1/15"
+      ],
+      "t": 3,
+      "izoh": "Barcha kelish tartiblari soni 6! = 720 ta. Anvar va Dilmurod birinchi ikki o'rinni 2! = 2 usulda bo'lishadi, qolgan 4 nafari esa 4! = 24 usulda joylashadi, ya'ni qulay natijalar 2·24 = 48 ta. Demak P = 48/720 = 1/15. 1/30 varianti tartibni hisobga olmay 24 ta natija sanash, 1/36 maxrajni 6·6 deb olish, 2/15 esa qulay natijalarni ikki marta sanash. Javob: 1/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tartib-va-joylashuv",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#7960d1a1"
+    },
+    {
+      "q": "Besh nafar do'st kinoteatrda bir qatorga tasodifiy tartibda o'tirishdi. Ular orasidagi Aziza chetdagi ikki o'rindan biriga tushishi ehtimolligini toping.",
+      "v": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "1/120"
+      ],
+      "t": 1,
+      "izoh": "Besh nafarni qatorga joylashtirish 5! = 120 usulda bajariladi. Aziza chetdagi ikki o'rindan biriga tushsa, qolgan to'rt nafari 4! = 24 usulda o'tiradi, ya'ni qulay natijalar 2·24 = 48 ta. Demak P = 48/120 = 2/5. 1/5 varianti faqat bitta chetni sanash, 3/5 o'rtadagi uch o'ringa tushish ehtimolligi, 1/120 esa aniq bitta joylashuvni olish. Javob: 2/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tartib-va-joylashuv",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#7ff8d4ea"
+    },
+    {
+      "q": "«TASODIF» so'zining harflaridan biri tasodifiy tanlanadi. Tanlangan harfning unli bo'lish ehtimolligini toping.",
+      "v": [
+        "3/7",
+        "4/7",
+        "3/4",
+        "1/7"
+      ],
+      "t": 0,
+      "izoh": "So'zda 7 ta harf bor: T, A, S, O, D, I va F. Ulardan unlilari A, O va I — jami 3 ta. Demak P = 3/7. 4/7 varianti undosh harflarning ehtimolligi, 3/4 nisbatni unlilar va undoshlar orasida olish, 1/7 esa faqat bitta harfni qulay deb sanash. Javob: 3/7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soz-harflaridan-tanlov",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#0dd5cec2"
+    },
+    {
+      "q": "Javonga 5 ta har xil kitob tasodifiy tartibda terildi, ulardan 3 tasi o'zbek tili darsligi. Uchala darslikning ketma-ket turishi ehtimolligini toping.",
+      "v": [
+        "1/10",
+        "1/20",
+        "3/10",
+        "2/5"
+      ],
+      "t": 2,
+      "izoh": "Beshta kitobni terish 5! = 120 usulda bajariladi. Uchala darslikni bitta blok deb qarasak, blok va qolgan 2 ta kitobni joylashtirish 3! = 6 usul, blok ichida darsliklar yana 3! = 6 usulda o'rin almashadi: qulay natijalar 6·6 = 36 ta. Demak P = 36/120 = 3/10. 1/20 varianti blok ichidagi tartibni hisobga olmaslik, 1/10 blok ichida faqat 2 xil tartib bor deb olish, 2/5 esa qulay natijalarni 48 ta deb sanash. Javob: 3/10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tartib-va-joylashuv",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#f219784f"
+    },
+    {
+      "q": "Uch nafar o'quvchi — Olim, Pulat va Rustam navbatga tasodifiy tartibda turishdi. Olim birinchi, Rustam esa oxirgi bo'lish ehtimolligini toping.",
+      "v": [
+        "1/9",
+        "1/2",
+        "1/12",
+        "1/6"
+      ],
+      "t": 3,
+      "izoh": "Uch o'quvchini navbatga qo'yish 3! = 6 usulda bajariladi. Faqat bitta joylashuvda Olim birinchi va Rustam oxirgi bo'ladi, ya'ni qulay natija bitta. Demak P = 1/6. 1/2 varianti «Olim Rustamdan oldin turadi» degan boshqa hodisa bilan chalkashtirish, 1/9 natijalar sonini 3·3 deb olish, 1/12 esa 12 ta joylashuv bor deb hisoblash. Javob: 1/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tartib-va-joylashuv",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#01626511"
+    },
+    {
+      "q": "«KITOB» so'zining beshta harfi tasodifiy tartibda qatorga terildi. Hosil bo'lgan qator aynan «KITOB» so'ziga teng bo'lish ehtimolligini toping.",
+      "v": [
+        "1/24",
+        "1/120",
+        "1/5",
+        "1/25"
+      ],
+      "t": 1,
+      "izoh": "So'zda 5 ta har xil harf bor, ulardan tuzilishi mumkin bo'lgan barcha qatorlar soni 5! = 120 ta. Faqat bittasi asl so'zga teng, demak P = 1/120. 1/24 varianti 4! ni maxraj deb olish, 1/5 harflar sonini maxrajga qo'yish, 1/25 esa 5·5 ni hisoblash xatosi. Javob: 1/120.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soz-harflaridan-tanlov",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#12e41f49"
+    },
+    {
+      "q": "Bir tajribada P(A) = 0,5 va P(B) = 0,4 ga teng, ikkala hodisaning bir vaqtda ro'y berish ehtimolligi esa 0,2 ga teng. A yoki B ro'y berish ehtimolligini toping.",
+      "v": [
+        "0,9",
+        "0,2",
+        "0,7",
+        "1,1"
+      ],
+      "t": 2,
+      "izoh": "Birgalikda bo'lgan hodisalar uchun P(A yoki B) = P(A) + P(B) − P(A va B) formulasi qo'llanadi. Demak 0,5 + 0,4 − 0,2 = 0,7. 0,9 varianti kesishmani ayirishni unutish, 1,1 varianti kesishmani ayirish o'rniga qo'shish, 0,2 esa kesishmaning o'zini javob deb olish. Javob: 0,7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hodisalar-birlashmasi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#86d95bd1"
+    },
+    {
+      "q": "Qutidagi 20 ta jeton 1 dan 20 gacha raqamlangan. Tasodifiy olingan jeton raqamining 2 ga yoki 5 ga bo'linishi ehtimolligini toping.",
+      "v": [
+        "7/10",
+        "2/5",
+        "1/5",
+        "3/5"
+      ],
+      "t": 3,
+      "izoh": "1 dan 20 gacha 2 ga bo'linuvchi sonlar 10 ta, 5 ga bo'linuvchilari 4 ta, ikkalasiga ham bo'linuvchilari esa 10 va 20, ya'ni 2 ta. Qulay natijalar 10 + 4 − 2 = 12 ta, demak P = 12/20 = 3/5. 7/10 varianti umumiy ikkita sonni ikki marta sanash, 2/5 qarama-qarshi hodisaning ehtimolligi, 1/5 esa faqat 5 ga bo'linuvchilarni olish. Javob: 3/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hodisalar-birlashmasi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#169fce60"
+    },
+    {
+      "q": "Sinfdagi 30 nafar o'quvchidan 18 nafari sport, 14 nafari musiqa bilan shug'ullanadi, 6 nafari esa ikkalasi bilan ham shug'ullanadi. Tasodifiy tanlangan o'quvchi kamida bittasi bilan shug'ullanish ehtimolligini toping.",
+      "v": [
+        "13/15",
+        "4/5",
+        "2/15",
+        "3/5"
+      ],
+      "t": 0,
+      "izoh": "Kamida bittasi bilan shug'ullanuvchilar soni 18 + 14 − 6 = 26 nafar, chunki 6 nafar ikkala guruhda ham sanalgan edi. Demak P = 26/30 = 13/15. 4/5 varianti 30 dan faqat 6 nafarni ayirib, 24 nafar deb hisoblash, 2/15 hech qaysisi bilan shug'ullanmaydiganlarning ehtimolligi, 3/5 esa faqat sport bilan shug'ullanuvchilarniki. Javob: 13/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hodisalar-birlashmasi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#8e5d7f8d"
+    },
+    {
+      "q": "Tajribada A va B hodisalari o'zaro birgalikda emas: P(A) = 0,32 va P(B) = 0,45. Ikkala hodisaning ham ro'y bermasligi ehtimolligini toping.",
+      "v": [
+        "0,77",
+        "0,23",
+        "0,68",
+        "0,55"
+      ],
+      "t": 1,
+      "izoh": "Birgalikda bo'lmagan hodisalardan kamida bittasi ro'y berish ehtimolligi 0,32 + 0,45 = 0,77 ga teng. Ikkalasi ham ro'y bermasligi shu hodisaga qarama-qarshi, shuning uchun P = 1 − 0,77 = 0,23. 0,77 varianti oxirgi qadamni tashlab ketish, 0,68 faqat 0,32 ni 1 dan ayirish, 0,55 esa faqat 0,45 ni ayirish. Javob: 0,23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hodisalar-birlashmasi",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#2834e2dd"
+    },
+    {
+      "q": "To'liq domino to'plamida 28 ta tosh bor. Tasodifiy olingan toshning ikkala yarmidagi ochkolar yig'indisi 6 ga teng bo'lish ehtimolligini toping.",
+      "v": [
+        "3/28",
+        "2/7",
+        "1/7",
+        "5/28"
+      ],
+      "t": 2,
+      "izoh": "Domino toshining har yarmida 0 dan 6 gacha ochko bo'ladi va har juftlik to'plamda bir marta uchraydi. Yig'indisi 6 ga teng toshlar: 0 va 6, 1 va 5, 2 va 4, 3 va 3 — jami 4 ta. Demak P = 4/28 = 1/7. 3/28 varianti qo'sh toshni sanamay qoldirish, 2/7 tartibni hisobga olib 8 ta tosh deb sanash, 5/28 esa mavjud bo'lmagan yana bitta toshni qo'shish. Javob: 1/7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "domino-va-oyin-toshlari",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#dc07263c"
+    },
+    {
+      "q": "Domino to'plamidan tasodifiy bitta tosh olindi. Uning ikkala yarmi ham bir xil ochkoli, ya'ni qo'sh tosh bo'lish ehtimolligini toping.",
+      "v": [
+        "1/7",
+        "3/28",
+        "2/7",
+        "1/4"
+      ],
+      "t": 3,
+      "izoh": "To'plamdagi qo'sh toshlar: 0 va 0, 1 va 1, 2 va 2, 3 va 3, 4 va 4, 5 va 5, 6 va 6 — jami 7 ta. Umumiy toshlar soni 28 ta, demak P = 7/28 = 1/4. 1/7 varianti ochkolar turini maxraj deb olish, 3/28 qo'sh toshlarni 3 ta deb sanash, 2/7 esa 8 ta qo'sh tosh bor deb hisoblash. Javob: 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "domino-va-oyin-toshlari",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#6f98734e"
+    },
+    {
+      "q": "Qopchada 1 dan 90 gacha raqamlangan lotto bochkachalari bor. Tasodifiy olingan bochkacha raqami ikki xonali va 5 ga karrali bo'lish ehtimolligini toping.",
+      "v": [
+        "17/90",
+        "1/5",
+        "2/9",
+        "8/45"
+      ],
+      "t": 0,
+      "izoh": "1 dan 90 gacha 5 ga karrali sonlar 18 ta, lekin ular orasida bir xonali 5 ham bor. Ikki xonalilari: 10, 15, 20, … , 90 — jami 17 ta. Umumiy natijalar 90 ta, demak P = 17/90. 1/5 varianti bir xonali 5 ni ham qo'shib yuborish, 8/45 varianti 90 ni sanamay qoldirish, 2/9 esa karralilarni 20 ta deb hisoblash. Javob: 17/90.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "domino-va-oyin-toshlari",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#95acd88b"
+    },
+    {
+      "q": "Noyabr oyi 30 kundan iborat va shu oyda 5 ta yakshanba bor. Oyning kuni tasodifiy tanlanganda u yakshanbaga to'g'ri kelishi ehtimolligini toping.",
+      "v": [
+        "1/7",
+        "1/6",
+        "5/7",
+        "1/30"
+      ],
+      "t": 1,
+      "izoh": "Oyning 30 ta kuni teng imkoniyat bilan tanlanadi, ya'ni umumiy natijalar 30 ta. Yakshanbalar 5 ta, demak P = 5/30 = 1/6. 1/7 varianti «haftada yetti kun» degan taxminiy javob, 5/7 nisbatni hafta kunlariga bog'lash, 1/30 esa faqat bitta kunni qulay deb sanash. Javob: 1/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kalendar-va-vaqt",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#ff3f9fee"
+    },
+    {
+      "q": "Tug'ilgan kunlar yil davomida teng taqsimlangan deb hisoblansa va yil 365 kundan iborat bo'lsa, tasodifiy tanlangan odamning tug'ilgan kuni yanvarga to'g'ri kelishi ehtimolligi qanchaga teng?",
+      "v": [
+        "1/12",
+        "30/365",
+        "31/365",
+        "1/31"
+      ],
+      "t": 2,
+      "izoh": "Yildagi kunlar soni 365 ta va ularning har biri teng imkoniyatli deb qaraladi. Yanvarda 31 kun bor, demak qulay natijalar 31 ta va P = 31/365. 1/12 varianti oylar sonidan kelib chiqqan taxmin, 30/365 yanvarni 30 kun deb olish, 1/31 esa nisbatni teskari yozish. Javob: 31/365.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kalendar-va-vaqt",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#cdd8dc2f"
+    },
+    {
+      "q": "Hafta kunlaridan biri tasodifiy tanlanadi. Tanlangan kunning dam olish kuni, ya'ni shanba yoki yakshanba bo'lish ehtimolligini toping.",
+      "v": [
+        "5/7",
+        "1/7",
+        "2/5",
+        "2/7"
+      ],
+      "t": 3,
+      "izoh": "Haftada 7 ta kun bor va ularning har biri teng imkoniyat bilan tanlanadi. Dam olish kunlari ikkita — shanba va yakshanba, demak P = 2/7. 5/7 varianti ish kunlarining ehtimolligi, 1/7 faqat bitta kunni sanash, 2/5 esa nisbatni dam olish va ish kunlari orasida olish. Javob: 2/7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kalendar-va-vaqt",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#6d109e0d"
+    },
+    {
+      "q": "Birinchi qutida 3 ta oq va 5 ta qora shar, ikkinchi qutida esa 4 ta oq va 8 ta qora shar bor. Qaysi qutidan oq shar olish ehtimolligi kattaroq?",
+      "v": [
+        "Birinchi qutida, chunki 3/8 kattaroq",
+        "Ikkinchi qutida, chunki oq sharlar ko'p",
+        "Ikkinchi qutida, chunki sharlar ko'p",
+        "Ikkala qutida ham bir xil"
+      ],
+      "t": 0,
+      "izoh": "Birinchi qutida oq shar olish ehtimolligi 3/8, ikkinchisida esa 4/12 ni qisqartirsak 1/3 bo'ladi. Taqqoslash uchun umumiy maxrajga keltiramiz: 3/8 = 9/24, 1/3 = 8/24. Demak birinchi qutining ehtimolligi kattaroq. Bu yerda sharlarning soni emas, ularning ulushi solishtiriladi. Javob: birinchi quti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ehtimollik-taqqoslash-tahlil",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#d1a7535b"
+    },
+    {
+      "q": "Sotuvchi «bu lotereyada har 8 ta biletdan 3 tasi yutuqli» dedi. Xaridor esa 200 ta biletdan 70 tasi yutuqli ekanini bildi. Sotuvchining bahosi haqiqiy ehtimollikdan qanchaga farq qiladi?",
+      "v": [
+        "0,25",
+        "0,025",
+        "0,05",
+        "0,375"
+      ],
+      "t": 1,
+      "izoh": "Sotuvchining aytgani P₁ = 3/8 = 0,375, haqiqiy ehtimollik esa P₂ = 70/200 = 0,35. Farq 0,375 − 0,35 = 0,025 ga teng, ya'ni sotuvchi yutuq imkoniyatini biroz oshirib ko'rsatgan. 0,25 varianti vergul o'rnini adashtirish, 0,05 varianti 0,4 dan ayirish, 0,375 esa faqat sotuvchining bahosini javob deb olish. Javob: 0,025.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ehtimollik-taqqoslash-tahlil",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#6d1accfb"
+    },
+    {
+      "q": "Ikki zar tashlanganda «ochkolar yig'indisi 7 ga teng» va «ochkolar yig'indisi 6 ga teng» hodisalaridan qaysi biri ehtimolliroq va qulay natijasi qanchaga ko'p?",
+      "v": [
+        "Yig'indi 6, qulay natijasi bittaga ko'p",
+        "Ikkalasining ehtimolligi teng",
+        "Yig'indi 7, qulay natijasi bittaga ko'p",
+        "Yig'indi 7, qulay natijasi ikkitaga ko'p"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi 7 bo'ladigan juftliklar: (1; 6), (2; 5), (3; 4), (4; 3), (5; 2), (6; 1) — jami 6 ta. Yig'indi 6 bo'ladiganlari esa: (1; 5), (2; 4), (3; 3), (4; 2), (5; 1) — jami 5 ta. Demak 6/36 > 5/36 va yig'indi 7 ehtimolliroq, qulay natijasi bittaga ko'p. Javob: yig'indi 7, bittaga ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ehtimollik-taqqoslash-tahlil",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#110d287e"
+    },
+    {
+      "q": "Qutida 6 ta yashil va 9 ta sariq shar bor. Qutiga yana nechta yashil shar solinsa, tasodifiy olingan sharning yashil bo'lish ehtimolligi 0,5 ga teng bo'ladi?",
+      "v": [
+        "4",
+        "6",
+        "9",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Qo'shiladigan yashil sharlar soni x bo'lsin, u holda (6 + x)/(15 + x) = 0,5 tenglama hosil bo'ladi. Ikki tomonni 2 ga ko'paytirsak 12 + 2x = 15 + x, bundan x = 3. Tekshiramiz: 9 ta yashil va 9 ta sariq shardan yashil olish ehtimolligi 9/18 = 0,5. 4 varianti tenglamani noto'g'ri yechish, 6 va 9 esa shartdagi sonlarni javobga ko'chirish. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ehtimollik-taqqoslash-tahlil",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#8c189606"
+    },
+    {
+      "q": "Yulduz ikkita tanga tashlab «kamida bitta gerb» ga, Kamola esa bitta zar tashlab «4 dan katta ochko» ga tikdi. Kimning yutish ehtimolligi katta va farq qanchaga teng?",
+      "v": [
+        "Yulduz, farqi 5/12",
+        "Kamola, farqi 5/12",
+        "Yulduz, farqi 1/4",
+        "Yulduz, farqi 1/12"
+      ],
+      "t": 0,
+      "izoh": "Ikkita tanga uchun 4 ta elementar natija bor va «kamida bitta gerb» ga ulardan 3 tasi qulay: P₁ = 3/4. Zarda 4 dan katta ochkolar 5 va 6, demak P₂ = 2/6, ya'ni qisqartirilganda 1/3. Endi farqni topamiz: 9/12 − 4/12 = 5/12. Yulduzning imkoniyati kattaroq. 1/4 varianti Kamolaning ehtimolligini 1/2 deb olish, 1/12 varianti «4 dan katta» ni 4, 5 va 6 deb sanab 2/3 olish, «Kamola, farqi 5/12» varianti esa g'olibni chalkashtirishdan chiqadi. Javob: Yulduz, farqi 5/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ehtimollik-taqqoslash-tahlil",
+      "id": "matematika_disk_m11-tasodifiy-hodisalar-va-klassik-ehtimollik#39febf03"
+    }
+  ]
+}

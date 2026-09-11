@@ -1,0 +1,486 @@
+{
+  "nom": "52-mavzu. Elektr Qarshilik",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektr qarshilik nima deb ataladi?",
+      "v": [
+        "O‘tkazgichning zanjirda tok o‘tishiga qarshilik qilish xossasini tavsiflaydigan fizik kattalik",
+        "O‘tkazgichning uzunligi",
+        "Zanjirdagi tok kuchi",
+        "O‘tkazgichning massasi"
+      ],
+      "t": 0,
+      "izoh": "Tok o‘tishiga qarshilik xossasini tavsiflovchi kattalik elektr qarshilik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#4e905828"
+    },
+    {
+      "q": "Elektr qarshilik qanday harf bilan belgilanadi?",
+      "v": [
+        "R",
+        "I",
+        "U",
+        "q"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik R harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#ea550dad"
+    },
+    {
+      "q": "SI sistemasida qarshilik birligi nima?",
+      "v": [
+        "Om (Ω)",
+        "Volt",
+        "Amper",
+        "Kulon"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik birligi — Om (Ω).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#6cdd8456"
+    },
+    {
+      "q": "Om birligi kim sharafiga qabul qilingan?",
+      "v": [
+        "Nemis fizigi Georg Simon Om",
+        "Alessandro Volta",
+        "Andre Mari Amper",
+        "Charlz Kulon"
+      ],
+      "t": 0,
+      "izoh": "Georg Simon Om sharafiga Om qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#b6379f27"
+    },
+    {
+      "q": "1 milliom nechaga teng?",
+      "v": [
+        "0,001 Ω",
+        "1000 Ω",
+        "1 000 000 Ω",
+        "0,1 Ω"
+      ],
+      "t": 0,
+      "izoh": "1 mΩ = 0,001 Ω = 10⁻³ Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#6f024ad5"
+    },
+    {
+      "q": "1 kiloom nechaga teng?",
+      "v": [
+        "1000 Ω",
+        "0,001 Ω",
+        "100 Ω",
+        "1 000 000 Ω"
+      ],
+      "t": 0,
+      "izoh": "1 kΩ = 1000 Ω = 10³ Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#4fbf0eae"
+    },
+    {
+      "q": "1 megaom nechaga teng?",
+      "v": [
+        "1 000 000 Ω",
+        "1000 Ω",
+        "0,001 Ω",
+        "100 Ω"
+      ],
+      "t": 0,
+      "izoh": "1 MΩ = 1 000 000 Ω = 10⁶ Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#bd366ade"
+    },
+    {
+      "q": "O‘tkazgichning elektr qarshiligi qanday asbob bilan o‘lchanadi?",
+      "v": [
+        "Ommetr",
+        "Ampermetr",
+        "Voltmetr",
+        "Dinamometr"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik ommetr yordamida o‘lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#fc3e97ac"
+    },
+    {
+      "q": "Nikelin sim spiral zanjirga ketma-ket ulanganda nima kuzatiladi?",
+      "v": [
+        "Lampochka xira yonadi va ampermetr tokning kamayganini ko‘rsatadi",
+        "Lampochka ravshanroq yonadi",
+        "Hech narsa o‘zgarmaydi",
+        "Ampermetr nolni ko‘rsatadi"
+      ],
+      "t": 0,
+      "izoh": "Nikelin sim tok o‘tishiga qarshilik qiladi, tok kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#510b689d"
+    },
+    {
+      "q": "O‘tkazgichning uzunligi necha marta ortsa, zanjirdagi tok kuchi qanday o‘zgaradi?",
+      "v": [
+        "Shuncha marta kamayadi",
+        "Shuncha marta ortadi",
+        "O‘zgarmaydi",
+        "Ikki baravar kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Uzunlik ortsa tok kamayadi, qarshilik ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#246427d4"
+    },
+    {
+      "q": "O‘tkazgichning elektr qarshiligi uning uzunligiga qanday bog‘liq?",
+      "v": [
+        "To‘g‘ri proporsional",
+        "Teskari proporsional",
+        "Bog‘liq emas",
+        "Kvadratik bog‘liq"
+      ],
+      "t": 0,
+      "izoh": "R ~ l, ya’ni uzunlikka to‘g‘ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#bfe60666"
+    },
+    {
+      "q": "4.55-rasm tajribasida manfiy qutb 2 qisqichdan 3 qisqichga ko‘chirilsa, ampermetr ko‘rsatishi qanday o‘zgaradi?",
+      "v": [
+        "40 mA dan 20 mA ga kamayadi",
+        "20 mA dan 40 mA ga ortadi",
+        "O‘zgarmaydi",
+        "Nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Uzunlik ikki baravar oshganda tok 40 mA dan 20 mA ga kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#f6ff09ac"
+    },
+    {
+      "q": "O‘tkazgichning ko‘ndalang kesim yuzi necha marta ortsa, uning qarshiligi qanday o‘zgaradi?",
+      "v": [
+        "Shuncha marta kamayadi",
+        "Shuncha marta ortadi",
+        "O‘zgarmaydi",
+        "Ikki marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "Kesim yuzi ortsa qarshilik kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#2398f181"
+    },
+    {
+      "q": "O‘tkazgichning elektr qarshiligi uning ko‘ndalang kesim yuzasiga qanday bog‘liq?",
+      "v": [
+        "Teskari proporsional",
+        "To‘g‘ri proporsional",
+        "Bog‘liq emas",
+        "Kvadratik"
+      ],
+      "t": 0,
+      "izoh": "R ~ 1/S, kesim yuzasiga teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#7c9ad4e3"
+    },
+    {
+      "q": "4.56-rasm tajribasida nixrom sim ikki qavat qilinganda ampermetr nimani ko‘rsatadi?",
+      "v": [
+        "1 A",
+        "0,5 A",
+        "1,5 A",
+        "2 A"
+      ],
+      "t": 0,
+      "izoh": "Kesim yuzi 2 marta oshganda tok 0,5 A dan 1 A ga ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#54af4af7"
+    },
+    {
+      "q": "2, 4 va 6 qisqichlar tutashtirilsa (yuzi 3 marta oshsa), ampermetr qanday tokni ko‘rsatadi?",
+      "v": [
+        "1,5 A",
+        "0,5 A",
+        "1 A",
+        "3 A"
+      ],
+      "t": 0,
+      "izoh": "Yuz 3 marta oshganda tok 1,5 A bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#0facb297"
+    },
+    {
+      "q": "O‘tkazgich qarshiligining uzunlik va kesim yuzasiga bog‘liqligini ifodalovchi formula qaysi?",
+      "v": [
+        "R = ρ·l/S",
+        "R = ρ·S/l",
+        "R = S/(ρ·l)",
+        "R = l·S"
+      ],
+      "t": 0,
+      "izoh": "R = ρl/S.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#837d9808"
+    },
+    {
+      "q": "Formuladagi ρ (ro) nima deb ataladi?",
+      "v": [
+        "O‘tkazgichning solishtirma elektr qarshiligi (proporsionallik koeffitsiyenti)",
+        "Qarshilik",
+        "Tok kuchi",
+        "Zaryad"
+      ],
+      "t": 0,
+      "izoh": "ρ — o‘tkazgichning solishtirma elektr qarshiligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#fbd8c78d"
+    },
+    {
+      "q": "Solishtirma elektr qarshilik nimani ifodalaydi?",
+      "v": [
+        "Qarshilikning o‘tkazgich qanday materialdan tayyorlanganligini",
+        "O‘tkazgichning uzunligini",
+        "Tok kuchini",
+        "Kuchlanishni"
+      ],
+      "t": 0,
+      "izoh": "Solishtirma qarshilik materialning elektr xossasini ifodalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#c1d12aae"
+    },
+    {
+      "q": "SI sistemasida solishtirma qarshilik birligi nima?",
+      "v": [
+        "Ω·m",
+        "Ω",
+        "Ω/m",
+        "Ω·m²"
+      ],
+      "t": 0,
+      "izoh": "Solishtirma qarshilik birligi — 1 Ω·m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#82c46d6b"
+    },
+    {
+      "q": "Solishtirma qarshilik qiymati qanday topiladi?",
+      "v": [
+        "Tajriba yo‘li bilan topiladi va maxsus jadvallarda beriladi",
+        "Nazariy hisob bilan",
+        "Tasodifiy",
+        "Taxmin bilan"
+      ],
+      "t": 0,
+      "izoh": "Tajriba yo‘li bilan topilib, maxsus jadvallarda beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#3d683edd"
+    },
+    {
+      "q": "Misning solishtirma qarshiligi qancha?",
+      "v": [
+        "0,017·10⁻⁶ Ω·m",
+        "0,028·10⁻⁶ Ω·m",
+        "0,055·10⁻⁶ Ω·m",
+        "1,1·10⁻⁶ Ω·m"
+      ],
+      "t": 0,
+      "izoh": "Mis uchun ρ = 0,017·10⁻⁶ Ω·m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#ecf2fad4"
+    },
+    {
+      "q": "Alyuminiyni solishtirma qarshiligi qancha?",
+      "v": [
+        "0,028·10⁻⁶ Ω·m",
+        "0,017·10⁻⁶ Ω·m",
+        "0,098·10⁻⁶ Ω·m",
+        "0,4·10⁻⁶ Ω·m"
+      ],
+      "t": 0,
+      "izoh": "Alyuminiy uchun ρ = 0,028·10⁻⁶ Ω·m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#1a548bf4"
+    },
+    {
+      "q": "Nixromning solishtirma qarshiligi qancha?",
+      "v": [
+        "1,1·10⁻⁶ Ω·m",
+        "0,4·10⁻⁶ Ω·m",
+        "0,14·10⁻⁶ Ω·m",
+        "0,205·10⁻⁶ Ω·m"
+      ],
+      "t": 0,
+      "izoh": "Nixrom uchun ρ = 1,1·10⁻⁶ Ω·m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#024f3ab3"
+    },
+    {
+      "q": "Jadvalda keltirilgan eng katta solishtirma qarshilikka ega modda qaysi?",
+      "v": [
+        "Nixrom",
+        "Mis",
+        "Nikelin",
+        "Temir"
+      ],
+      "t": 0,
+      "izoh": "Nixrom — 1,1·10⁻⁶ Ω·m, jadvaldagi eng katta qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#18f39e10"
+    },
+    {
+      "q": "Uzunligi va kesim yuzi bir xil alyuminiy va mis simlardan qaysi birining qarshiligi katta?",
+      "v": [
+        "Alyuminiy simning",
+        "Mis simning",
+        "Bir xil",
+        "Aniqlab bo‘lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Alyuminiyni solishtirma qarshiligi katta, demak qarshiligi ham katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#2538ef41"
+    },
+    {
+      "q": "Turli moddalardan (nikelin, nixrom, xromel) tayyorlangan bir xil o‘lchamli simlar zanjirga ulanganda ampermetr ko‘rsatishi qanday bo‘ladi?",
+      "v": [
+        "Har xil",
+        "Bir xil",
+        "Nolga teng",
+        "Aniqlab bo‘lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Turli moddalarning qarshiligi har xil, ampermetr har xil ko‘rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#2e33725d"
+    },
+    {
+      "q": "ρ = R·S/l formulasidan nima aniqlanadi?",
+      "v": [
+        "Solishtirma elektr qarshilik",
+        "Tok kuchi",
+        "Kuchlanish",
+        "Zaryad"
+      ],
+      "t": 0,
+      "izoh": "ρ = RS/l — solishtirma qarshilik formulasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#23948a19"
+    },
+    {
+      "q": "Volframning solishtirma qarshiligi qancha?",
+      "v": [
+        "0,055·10⁻⁶ Ω·m",
+        "0,098·10⁻⁶ Ω·m",
+        "0,14·10⁻⁶ Ω·m",
+        "0,017·10⁻⁶ Ω·m"
+      ],
+      "t": 0,
+      "izoh": "Volfram uchun ρ = 0,055·10⁻⁶ Ω·m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#f6b62f31"
+    },
+    {
+      "q": "O‘tkazgichning elektr qarshiligi nimaga bog‘liq?",
+      "v": [
+        "O‘tkazgich moddasining turiga va geometrik o‘lchamlariga (uzunlik, kesim yuzi)",
+        "Faqat uzunligiga",
+        "Faqat rangiga",
+        "Faqat tok kuchiga"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik modda turiga va geometrik o‘lchamlarga bog‘liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#fed92589"
+    },
+    {
+      "q": "Elektr qarshilik tufayli o‘tkazgichda qanday hodisa yuzaga keladi?",
+      "v": [
+        "O‘tkazgich qizib, elektr energiyasi issiqlik energiyasiga aylanadi",
+        "O‘tkazgich soviydi",
+        "O‘tkazgich yorug‘lik chiqaradi",
+        "Hech narsa bo‘lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik tufayli elektr energiyasi issiqlik energiyasiga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#f73fe3a1"
+    },
+    {
+      "q": "Temirning solishtirma qarshiligi qancha?",
+      "v": [
+        "0,098·10⁻⁶ Ω·m",
+        "0,055·10⁻⁶ Ω·m",
+        "0,028·10⁻⁶ Ω·m",
+        "0,205·10⁻⁶ Ω·m"
+      ],
+      "t": 0,
+      "izoh": "Temir uchun ρ = 0,098·10⁻⁶ Ω·m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m52-elektr-qarshilik#50790e84"
+    }
+  ]
+}

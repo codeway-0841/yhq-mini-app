@@ -1,0 +1,456 @@
+{
+  "nom": "Biologiya-8, 24-§. Oʻpkalar va toʻqimalarda gazlar almashinuvi, 74-76-bet",
+  "bolim": "VI BOB. Nafas olish sistemasi",
+  "savollar": [
+    {
+      "q": "Tinch holatda odam bir marta nafas olganda qancha havo oladi (nafas havosi)?",
+      "v": [
+        "500 ml",
+        "1500 ml",
+        "3500 ml",
+        "100 ml"
+      ],
+      "t": 0,
+      "izoh": "Tinch holatda odam bir marta nafas olganida va chiqarganida 500 ml havo oladi — bu nafas havosi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#2e20aea3"
+    },
+    {
+      "q": "Oʻpkaning tiriklik sigʻimi qancha boʻladi?",
+      "v": [
+        "Taxminan 3500 ml",
+        "500 ml",
+        "1200 ml",
+        "10 000 ml"
+      ],
+      "t": 0,
+      "izoh": "Nafas havosi, qoʻshimcha havo (1500 ml) va zaxira havo (1500 ml) birgalikda oʻpkaning tiriklik sigʻimini tashkil etadi; u odatda 3500 ml ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#30b51054"
+    },
+    {
+      "q": "Oʻpkaning tiriklik sigʻimi qaysi asbob bilan oʻlchanadi?",
+      "v": [
+        "Spirometr",
+        "Tonometr",
+        "Termometr",
+        "Sfigmomanometr"
+      ],
+      "t": 0,
+      "izoh": "Oʻpkaning tiriklik sigʻimi spirometr yordamida oʻlchanadi; sport bilan shugʻullanadigan odamlarda u 7000–7500 ml ga yetadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#b7d1a560"
+    },
+    {
+      "q": "Chuqur nafas chiqargandan soʻng ham oʻpkada qoladigan havo qanday nomlanadi?",
+      "v": [
+        "Qoldiq havo",
+        "Nafas havosi",
+        "Zaxira havo",
+        "Qoʻshimcha havo"
+      ],
+      "t": 0,
+      "izoh": "Chuqur nafas chiqargandan soʻng ham oʻpkada 1200 ml ga yaqin havo qoladi — bu qoldiq havo deyiladi; shu tufayli oʻpka suvdan yengil boʻlib, choʻkmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio8_m24#d25e9c4b"
+    },
+    {
+      "q": "Oʻpkaga kirgan (nafas olingan) havoda kislorod qancha foizni tashkil etadi?",
+      "v": [
+        "20,94%",
+        "16,3%",
+        "4%",
+        "79%"
+      ],
+      "t": 0,
+      "izoh": "Nafas olingan havoda 20,94% kislorod, 79,3% azot, 0,03% karbonat angidrid boʻladi; nafas chiqarilgan havoda kislorod 16,3% ga kamayadi, CO2 esa 4% ga ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#6b290a7b"
+    },
+    {
+      "q": "Nafas chiqarilgan havoda karbonat angidrid qancha foizni tashkil etadi?",
+      "v": [
+        "4%",
+        "0,03%",
+        "16%",
+        "20%"
+      ],
+      "t": 0,
+      "izoh": "Nafas chiqarilgan havoda karbonat angidrid miqdori 4% ga ortadi, kislorod 16,3% ga kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#915f4a5d"
+    },
+    {
+      "q": "Oʻpkada gaz almashinuvida kislorod qaysi yoʻnalishda oʻtadi?",
+      "v": [
+        "Alveolalardan qonga",
+        "Qondan alveolaga",
+        "Toʻqimadan qonga",
+        "Qondan toʻqimaga"
+      ],
+      "t": 0,
+      "izoh": "Oʻpka alveolalarida kislorod alveoladan qonga, karbonat angidrid esa qondan alveolaga oʻtadi; natijada vena qoni kislorod bilan boyiб arteriya qoniga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#1490ab0b"
+    },
+    {
+      "q": "Toʻqimalarda gaz almashinuvida vena qoni qanday hosil boʻladi?",
+      "v": [
+        "Kislorod qondan toʻqimaga, CO2 toʻqimadan qonga oʻtishi natijasida",
+        "Kislorod qonga oʻtishi natijasida",
+        "Faqat suv almashinuvi bilan",
+        "Ovqat hazmi bilan"
+      ],
+      "t": 0,
+      "izoh": "Toʻqimalarda kislorod qondan toʻqima suyuqligiga, karbonat angidrid hujayralardan qonga oʻtadi; natijada qonda kislorod kamayib, CO2 ortadi — arteriya qoni vena qoniga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#64ec185f"
+    },
+    {
+      "q": "Kislorod qonda nima bilan birikib tashiladi?",
+      "v": [
+        "Eritrotsitlardagi gemoglobin bilan",
+        "Plazmadagi oqsil bilan",
+        "Leykotsitlar bilan",
+        "Trombotsitlar bilan"
+      ],
+      "t": 0,
+      "izoh": "Oʻpkada kislorod eritrotsitlardagi gemoglobin bilan birikib (oksigemoglobin), yurakning chap boʻlmasiga oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#a265cfcf"
+    },
+    {
+      "q": "Is gazi qanday zaharlaydi?",
+      "v": [
+        "Gemoglobinga kisloroddan 300 marta tez birikib, kislorod oʻtishiga toʻsqinlik qiladi",
+        "Oʻpkani yoradi",
+        "Yurakni toʻxtatadi",
+        "Qonni ivitadi"
+      ],
+      "t": 0,
+      "izoh": "Is gazi gemoglobinga kislorodga nisbatan 300 marta tezroq birikadi; havoda oz boʻlsa ham u gemoglobinga birikib, kislorodning qonga oʻtishiga toʻsqinlik qiladi, natijada kislorod tanqisligi va zaharlanish yuzaga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio8_m24#3dd11817"
+    },
+    {
+      "q": "Suvga choʻkkan odamga suniy nafas oldirishdan oldin nima qilinadi?",
+      "v": [
+        "Oʻpka va nafas yoʻllaridagi suvni chiqarib yuboriladi",
+        "Issiq choy beriladi",
+        "Yurgiziladi",
+        "Ovqatlantiriladi"
+      ],
+      "t": 0,
+      "izoh": "Suvga choʻkkan odamni suniy nafas oldirish uchun avval oʻpkasi va nafas yoʻllariga oʻtgan suvni tezroq chiqarib yuborish lozim; buning uchun uni qorni bilan yotqizib, orqasiga urib suv chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#ea7ff101"
+    },
+    {
+      "q": "Odam kislorodsiz taxminan qancha vaqt yashay oladi?",
+      "v": [
+        "10–20 minut",
+        "1 hafta",
+        "1 oy",
+        "1 kun"
+      ],
+      "t": 0,
+      "izoh": "Odam ovqatsiz bir oyga yaqin, suvsiz bir haftagacha, kislorodsiz esa atigi 10–20 minut yashashi mumkin — bu nafas olishning muhimligini koʻrsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#5420bea2"
+    },
+    {
+      "q": "Odam chuqur nafas olganida oʻpkaga nafas havosidan tashqari qoʻshimcha ravishda qancha havo kiradi (qoʻshimcha havo)?",
+      "v": [
+        "1500 ml",
+        "500 ml",
+        "1200 ml",
+        "3500 ml"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra odam chuqur nafas olganida oʻpkaga nafas havosidan tashqari yana 1500 ml havo kiradi — bu qoʻshimcha havo deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#95d86429"
+    },
+    {
+      "q": "Odam tinch nafas chiqargandan soʻng chuqur nafas chiqarganida yana qancha havo chiqarishi mumkin (zaxiradagi havo)?",
+      "v": [
+        "1500 ml",
+        "500 ml",
+        "1200 ml",
+        "3500 ml"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra tinch nafas chiqargandan soʻng odam chuqur nafas chiqarib yana 1500 ml havo chiqarishi mumkin — bu zaxiradagi havo deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#1afd7fb5"
+    },
+    {
+      "q": "Sport bilan shugʻullanadigan jismoniy sogʻlom odam oʻpkasining tiriklik sigʻimi qanchaga yetadi?",
+      "v": [
+        "7000–7500 ml",
+        "3500 ml",
+        "1200 ml",
+        "500 ml"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oddiy odamda oʻpkaning tiriklik sigʻimi 3500 ml boʻlsa, sport bilan shugʻullanadigan sogʻlom odamda u 7000–7500 ml ga yetadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#9ad7ee32"
+    },
+    {
+      "q": "Ayollar oʻpkasining tiriklik sigʻimi erkaklarnikiga nisbatan qanday boʻladi?",
+      "v": [
+        "Kam boʻladi",
+        "Koʻp boʻladi",
+        "Teng boʻladi",
+        "Ikki barobar koʻp"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ayollar oʻpkasining tiriklik sigʻimi erkaklarnikiga nisbatan kam boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio8_m24#a2a34be9"
+    },
+    {
+      "q": "Chuqur nafas chiqargandan soʻng oʻpkada qoladigan qoldiq havo miqdori qanchaga yaqin?",
+      "v": [
+        "1200 ml",
+        "500 ml",
+        "3500 ml",
+        "1500 ml"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra odam chuqur nafas chiqargandan soʻng ham oʻpkasida 1200 ml ga yaqin havo qoladi — bu qoldiq havo deyiladi, uni oʻpkadan chiqarib boʻlmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#17f50d93"
+    },
+    {
+      "q": "Nima uchun oʻpka suvda choʻkmaydi?",
+      "v": [
+        "Qoldiq havo tufayli suvdan yengil boʻlgani uchun",
+        "Ichi butunlay suyuqlik bilan toʻlgani uchun",
+        "Faqat suyaklardan iborat boʻlgani uchun",
+        "Umuman havosiz boʻlgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻpkada qoldiq havo (1200 ml ga yaqin) doim qolgani uchun oʻpka suvdan yengil boʻladi va choʻkmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio8_m24#8076733f"
+    },
+    {
+      "q": "Odam tinch holatda 1 minut davomida qancha havo olib chiqaradi (oʻpkaning minutlik nafas hajmi)?",
+      "v": [
+        "8–9 litr",
+        "500 ml",
+        "3500 ml",
+        "16–18 litr"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra odam tinch holatda 1 minut davomida 8–9 litr havo olib, shuncha havo chiqaradi — bu oʻpkaning minutlik nafas hajmi hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#741342af"
+    },
+    {
+      "q": "Oʻpkaning minutlik nafas hajmi yana qanday nomlanadi?",
+      "v": [
+        "Oʻpka ventilatsiyasi",
+        "Tiriklik sigʻimi",
+        "Qoldiq havo",
+        "Nafas havosi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra 1 minutda oʻpka orqali oʻtadigan havo hajmi oʻpkaning minutlik nafas hajmi, yaʼni oʻpka ventilatsiyasi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#4729c903"
+    },
+    {
+      "q": "Odam tugʻilganidan voyaga yetgunicha oʻpkaning tiriklik sigʻimi necha martagacha ortadi?",
+      "v": [
+        "45 martagacha",
+        "5 martagacha",
+        "100 martagacha",
+        "10 martagacha"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻpkaning tiriklik sigʻimi jismoniy rivojlanish va mashq qilish bilan bogʻliq boʻlib, odam tugʻilganidan voyaga yetgunicha 45 martagacha ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio8_m24#001f933d"
+    },
+    {
+      "q": "Nafas olingan havoda karbonat angidrid qancha foizni tashkil etadi?",
+      "v": [
+        "0,03%",
+        "4%",
+        "16,3%",
+        "20,94%"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra nafas olingan havoda karbonat angidrid atigi 0,03% boʻladi; nafas chiqarilganida u 4% ga ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#56bbdfbb"
+    },
+    {
+      "q": "Nafas chiqarilgan havoda kislorod qancha foizni tashkil etadi?",
+      "v": [
+        "16,3%",
+        "20,94%",
+        "4%",
+        "0,03%"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra nafas chiqarilgan havoda kislorod miqdori 20,94% dan 16,3% ga kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#f147b6e8"
+    },
+    {
+      "q": "Oʻpka alveolalarida karbonat angidrid qaysi yoʻnalishda oʻtadi?",
+      "v": [
+        "Kapillardagi qondan alveolalar boʻshligʻiga",
+        "Alveoladan qonga",
+        "Toʻqimadan qonga",
+        "Qondan toʻqimaga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra alveoladagi CO2 konsentratsiyasi qondagiga nisbatan past boʻlgani uchun karbonat angidrid kapillardagi qondan alveolalar boʻshligʻiga, kislorod esa aksincha alveoladan qonga oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#de7276e8"
+    },
+    {
+      "q": "Oʻpka alveolalari bilan qon oʻrtasida gazlarning oʻtishi asosan nimaga bogʻliq?",
+      "v": [
+        "Kislorod va karbonat angidrid konsentratsiyalari farqiga",
+        "Qon bosimiga",
+        "Havo haroratiga",
+        "Ovoz paylarining tebranishiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra gazlar konsentratsiyasi yuqori tomondan past tomonga oʻtadi: kislorod alveoladan qonga, karbonat angidrid qondan alveolaga oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio8_m24#a98d4dca"
+    },
+    {
+      "q": "Karbonat angidrid organizmdan qanday yoʻl bilan chiqib ketadi?",
+      "v": [
+        "Nafas yoʻllari orqali oʻpkadan",
+        "Faqat teri orqali",
+        "Faqat buyrak orqali",
+        "Ovqat hazm yoʻli orqali"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra alveolaga oʻtgan karbonat angidrid nafas yoʻllari orqali oʻpkadan chiqib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#69a1f88d"
+    },
+    {
+      "q": "Oʻpkada gemoglobin bilan birikkan kislorod yurakning qayeriga oʻtadi?",
+      "v": [
+        "Chap boʻlmasiga",
+        "Oʻng boʻlmasiga",
+        "Oʻng qorinchasiga",
+        "Chap qorinchasiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra kislorod eritrotsitlardagi gemoglobin bilan birikib, yurakning chap boʻlmasiga oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio8_m24#c31c09f0"
+    },
+    {
+      "q": "Kislorodga toʻyingan qon yurakning qayeridan chiqadigan arteriyalar orqali organlarga boradi?",
+      "v": [
+        "Chap yurak qorinchasidan",
+        "Oʻng yurak qorinchasidan",
+        "Chap boʻlmadan",
+        "Oʻng boʻlmadan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra kislorod bilan toʻyingan qon chap yurak qorinchasidan chiqadigan arteriyalar orqali organlarga boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#dfaf497e"
+    },
+    {
+      "q": "Toʻqimalarda kislorod qaysi yoʻnalishda oʻtadi?",
+      "v": [
+        "Qondan toʻqima suyuqligiga",
+        "Toʻqimadan qonga",
+        "Alveoladan qonga",
+        "Qondan alveolaga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra toʻqima suyuqligida kislorod konsentratsiyasi past boʻlgani uchun kislorod kapillar devori orqali qondan toʻqima suyuqligiga, karbonat angidrid esa hujayralardan qonga oʻtadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#d0646202"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri nafas olishning toʻxtab qolishiga va sun'iy nafas oldirishga sabab boʻladi?",
+      "v": [
+        "Suvga choʻkish, is gazidan zaharlanish, elektr toki yoki yashin urishi",
+        "Uzoq muddat ochlik",
+        "Uzoq vaqt uxlash",
+        "Koʻp miqdorda suv ichish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra odam suvga choʻkkanida, is gazidan zaharlanganida, elektr toki yoki yashin urganida nafas olish markazlari ishi buzilib, nafas olish toʻxtashi mumkin — bunda birinchi yordam sun'iy nafas oldirishdan iborat boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio8_m24#c1accf80"
+    }
+  ]
+}

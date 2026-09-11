@@ -1,0 +1,486 @@
+{
+  "nom": "10-mavzu. Izotermik Jarayon",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Berilgan gazning bitta parametri o'zgarmas bo'lganda qolganlari orasidagi bog'lanishni tavsiflaydigan jarayon nima deb ataladi?",
+      "v": [
+        "Izojarayon",
+        "Adiabatik jarayon",
+        "Dinamik jarayon",
+        "Statsionar jarayon"
+      ],
+      "t": 0,
+      "izoh": "Bitta parametr o'zgarmas bo'lgandagi jarayon izojarayon deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#07d1e394"
+    },
+    {
+      "q": "Izojarayonlar necha xil bo'ladi?",
+      "v": [
+        "Uch xil: izotermik, izobarik va izoxorik",
+        "Ikki xil: izotermik va izobarik",
+        "To'rt xil",
+        "Besh xil"
+      ],
+      "t": 0,
+      "izoh": "Izojarayonlar uch xil: izotermik, izobarik va izoxorik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#af4dd268"
+    },
+    {
+      "q": "Ideal gazning massasi (m = const) va temperaturasi (T = const) o'zgarmas bo'lgandagi gaz holatining o'zgarish jarayoniga nima deyiladi?",
+      "v": [
+        "Izotermik jarayon",
+        "Izobarik jarayon",
+        "Izoxorik jarayon",
+        "Adiabatik jarayon"
+      ],
+      "t": 0,
+      "izoh": "m = const va T = const bo'lgandagi jarayon izotermik jarayon deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#ad6bda69"
+    },
+    {
+      "q": "Grekcha «izos» va «termos» so'zlari qanday ma'noni anglatadi?",
+      "v": [
+        "«izos» — teng, «termos» — issiq",
+        "«izos» — bosim, «termos» — hajm",
+        "«izos» — issiq, «termos» — teng",
+        "«izos» — hajm, «termos» — sovuq"
+      ],
+      "t": 0,
+      "izoh": "Grekcha «izos» — teng, «termos» — issiq degan ma'noni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#4d9c39f4"
+    },
+    {
+      "q": "Izotermik jarayondagi qonuniyatni 1662-yilda kim kashf qilgan?",
+      "v": [
+        "Ingliz fizigi R. Boyl",
+        "Fransuz fizigi E. Mariott",
+        "Fransuz fizigi Gey-Lyussak",
+        "Ingliz fizigi J. Maksvell"
+      ],
+      "t": 0,
+      "izoh": "Qonuniyatni 1662-yilda ingliz fizigi R. Boyl kashf qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#a4ee9417"
+    },
+    {
+      "q": "Izotermik jarayon qonunini 1676-yilda Boyldan bexabar holda kashf qilgan olim kim?",
+      "v": [
+        "Fransuz fizigi E. Mariott",
+        "Ingliz fizigi R. Boyl",
+        "Jak Sharl",
+        "Otto Shtern"
+      ],
+      "t": 0,
+      "izoh": "1676-yilda fransuz fizigi E. Mariott tajribalar asosida bir-biridan bexabar holda qonunni kashf qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#f4b33204"
+    },
+    {
+      "q": "Izotermik jarayon qonuni nima deb ataladi?",
+      "v": [
+        "Boyl-Mariott qonuni",
+        "Gey-Lyussak qonuni",
+        "Sharl qonuni",
+        "Mendeleyev-Klapeyron tenglamasi"
+      ],
+      "t": 0,
+      "izoh": "Bu qonuniyat Boyl-Mariott qonuni deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#81c5f4fb"
+    },
+    {
+      "q": "Gaz temperaturasini o'zgartirmay saqlab turish uchun gaz solingan idish qayerga joylashtiriladi?",
+      "v": [
+        "Termostat deb ataluvchi maxsus idish ichiga",
+        "Muzlatgich ichiga",
+        "Ochiq havoga",
+        "Qaynayotgan suvga"
+      ],
+      "t": 0,
+      "izoh": "Gaz solingan idish termostat deb ataluvchi maxsus idish ichiga joylashtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#27b91238"
+    },
+    {
+      "q": "Boyl-Mariott qonunining matematik ifodasi qanday?",
+      "v": [
+        "p₁V₁ = p₂V₂",
+        "p₁/V₁ = p₂/V₂",
+        "V₁/T₁ = V₂/T₂",
+        "p₁/T₁ = p₂/T₂"
+      ],
+      "t": 0,
+      "izoh": "T = const bo'lganda p₁V₁ = p₂V₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#97575e95"
+    },
+    {
+      "q": "Izotermik jarayonda berilgan massali gaz uchun qanday kattalik o'zgarmas bo'ladi?",
+      "v": [
+        "Gaz bosimining hajmga ko'paytmasi",
+        "Gaz bosimining hajmga nisbati",
+        "Gaz hajmining temperaturaga nisbati",
+        "Gaz zichligi"
+      ],
+      "t": 0,
+      "izoh": "Izotermik jarayonda berilgan massali gaz uchun gaz bosimining hajmga ko'paytmasi o'zgarmas bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#0577e5c3"
+    },
+    {
+      "q": "Temperatura o'zgarmas bo'lganda gaz bosimining hajmga bog'liqligi grafikda qanday aks etadi?",
+      "v": [
+        "Egri chiziq (giperbola) tarzida",
+        "Koordinata boshidan chiquvchi to'g'ri chiziq tarzida",
+        "Gorizontal to'g'ri chiziq tarzida",
+        "Vertikal to'g'ri chiziq tarzida"
+      ],
+      "t": 0,
+      "izoh": "T = const da bosimning hajmga bog'liqligi grafikda giperbola tarzida aks etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#bbb59890"
+    },
+    {
+      "q": "Izotermik jarayon grafigidagi egri chiziq nima deb ataladi?",
+      "v": [
+        "Izoterma chizig'i",
+        "Izobara chizig'i",
+        "Izoxora chizig'i",
+        "Adiabata chizig'i"
+      ],
+      "t": 0,
+      "izoh": "Bu egri chiziq izoterma chizig'i deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#ed7b72cc"
+    },
+    {
+      "q": "Gaz izotermasi bosim bilan hajm o'rtasida qanday bog'lanishni tasvirlaydi?",
+      "v": [
+        "O'zaro teskari mutanosiblikni (p ~ 1/V)",
+        "To'g'ri proporsionallikni",
+        "Kvadratik bog'lanishni",
+        "Bog'lanish yo'qligini"
+      ],
+      "t": 0,
+      "izoh": "Izoterma bosim bilan hajm o'zaro teskari mutanosib ekanligini tasvirlaydi, ya'ni p ~ 1/V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#05027025"
+    },
+    {
+      "q": "Izoterma grafigi chizilganda absissa o'qiga qaysi kattalik, ordinata o'qiga qaysi kattalik qo'yiladi?",
+      "v": [
+        "Absissaga hajm, ordinataga bosim",
+        "Absissaga bosim, ordinataga hajm",
+        "Absissaga temperatura, ordinataga bosim",
+        "Absissaga hajm, ordinataga temperatura"
+      ],
+      "t": 0,
+      "izoh": "Absissa o'qiga hajm, ordinata o'qiga bosim qiymatlari qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#6506a5f7"
+    },
+    {
+      "q": "Izotermik jarayonda gaz zichliklari orasidagi bog'lanish qanday ifodalanadi?",
+      "v": [
+        "ρ₁/ρ₂ = V₂/V₁ = p₁/p₂",
+        "ρ₁/ρ₂ = V₁/V₂",
+        "ρ₁·ρ₂ = const",
+        "ρ₁/ρ₂ = T₁/T₂"
+      ],
+      "t": 0,
+      "izoh": "Boyl-Mariott qonuni uchun ρ₁/ρ₂ = V₂/V₁ = p₁/p₂ ifoda hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#88c0f4bc"
+    },
+    {
+      "q": "Izotermik jarayonda gaz zichligi hajmga qanday bog'liq?",
+      "v": [
+        "Hajmga teskari proporsional",
+        "Hajmga to'g'ri proporsional",
+        "Hajmning kvadratiga proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Izotermik jarayonda gaz zichligi hajmga teskari proporsional ravishda o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#1341b9c4"
+    },
+    {
+      "q": "Izotermik jarayonda gaz zichligi bosimga qanday bog'liq?",
+      "v": [
+        "Bosimga to'g'ri proporsional",
+        "Bosimga teskari proporsional",
+        "Bosimning kvadratiga proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Izotermik jarayonda gaz zichligi bosimga to'g'ri proporsional ravishda o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#d028fa27"
+    },
+    {
+      "q": "Gaz siqilganda yoki kengayganda temperaturani o'zgartirmay saqlab qolmasa nima bo'ladi?",
+      "v": [
+        "Gazning temperaturasi o'zgaradi",
+        "Gazning massasi o'zgaradi",
+        "Gazning molyar massasi o'zgaradi",
+        "Hech narsa o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Aks holda gaz siqilganda yoki kengayganda uning temperaturasi o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#a9dbf73d"
+    },
+    {
+      "q": "O'zgarmas temperaturada berilgan gazning bosimi hajmiga qanday o'zgaradi?",
+      "v": [
+        "Hajmga teskari proporsional ravishda",
+        "Hajmga to'g'ri proporsional ravishda",
+        "Hajmga bog'liq bo'lmasdan",
+        "Hajmning kvadratiga proporsional ravishda"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas temperaturada berilgan gazning bosimi hajmiga teskari proporsional ravishda o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#8c37ae8c"
+    },
+    {
+      "q": "Gaz izotermik siqilsa (hajmi kamaysa), uning bosimi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Avval ortib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "p₁V₁ = p₂V₂ ga ko'ra, hajm kamaysa bosim ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#e6b7068f"
+    },
+    {
+      "q": "Gaz izotermik kengaysa, uning bosimi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Izotermik kengayishda hajm ortadi, bosim kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#e85fe20f"
+    },
+    {
+      "q": "Izotermik jarayonda gazning bosimi 2 marta ortsa, hajmi qanday o'zgaradi?",
+      "v": [
+        "2 marta kamayadi",
+        "2 marta ortadi",
+        "4 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "p₁V₁ = p₂V₂ dan V₂ = p₁V₁/p₂ = V₁/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#e6fe71e3"
+    },
+    {
+      "q": "Izotermik jarayonda gaz hajmi 3 marta ortsa, bosimi qanday o'zgaradi?",
+      "v": [
+        "3 marta kamayadi",
+        "3 marta ortadi",
+        "9 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Hajm 3 marta ortganda bosim 3 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#03f18c97"
+    },
+    {
+      "q": "Izotermik jarayonda gaz hajmi 2 marta kamaysa, uning zichligi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi",
+        "4 marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "Zichlik hajmga teskari proporsional: hajm 2 marta kamaysa, zichlik 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#ceb5746e"
+    },
+    {
+      "q": "Normal atmosfera bosimi qanchaga teng?",
+      "v": [
+        "100 kPa = 10⁵ Pa",
+        "10 kPa",
+        "1 MPa",
+        "20 kPa"
+      ],
+      "t": 0,
+      "izoh": "Normal atmosfera bosimi 10⁵ Pa = 100 kPa ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#5cd1c9bd"
+    },
+    {
+      "q": "Boyl-Mariott qonuni qaysi holat tenglamalaridan keltirib chiqariladi?",
+      "v": [
+        "T = const bo'lgandagi gazning ikki holati uchun yozilgan Mendeleyev-Klapeyron tenglamalaridan",
+        "Izoxorik jarayon tenglamalaridan",
+        "Maksvell taqsimotidan",
+        "Shtern tajribasidan"
+      ],
+      "t": 0,
+      "izoh": "T = const bo'lganda gazning ikki holati uchun holat tenglamalari yozilib, o'ng tomonlari tenglashtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#6eda33e2"
+    },
+    {
+      "q": "Izotermik jarayon uchun pV = const shartida hajm oshganda pV ko'paytma qanday bo'ladi?",
+      "v": [
+        "O'zgarmas qoladi",
+        "Ortadi",
+        "Kamayadi",
+        "Nolga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Izotermik jarayonda bosim va hajm ko'paytmasi o'zgarmas bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#70d4f827"
+    },
+    {
+      "q": "Gazning 6 l hajmi izotermik jarayonda bosim 1,2 marta ortganda qanday hajmga aylanadi?",
+      "v": [
+        "5 l",
+        "7,2 l",
+        "6 l",
+        "4 l"
+      ],
+      "t": 0,
+      "izoh": "V₂ = p₁V₁/p₂ = 6/1,2 = 5 l (darslikdagi masala namunasi: 10⁵·6·10⁻³/1,2·10⁵ = 5·10⁻³ m³).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#00ccee0e"
+    },
+    {
+      "q": "Izotermik jarayonda p-V diagrammada ikkita turli temperatura uchun chizilgan izotermalardan qaysi biri yuqoriroq joylashadi?",
+      "v": [
+        "Yuqoriroq temperaturaga mos izoterma",
+        "Pastki temperaturaga mos izoterma",
+        "Ikkalasi bir nuqtada kesishadi",
+        "Temperatura grafikka ta'sir qilmaydi"
+      ],
+      "t": 0,
+      "izoh": "pV = (m/M)RT ga ko'ra, temperatura qancha yuqori bo'lsa, pV ko'paytma shuncha katta bo'ladi, ya'ni izoterma yuqoriroq joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#c02067b1"
+    },
+    {
+      "q": "Gaz izotermik jarayonda hajmi V₁ dan V₂ gacha o'zgarsa, Boyl-Mariott qonuniga ko'ra p₂ qanday topiladi?",
+      "v": [
+        "p₂ = p₁V₁/V₂",
+        "p₂ = p₁V₂/V₁",
+        "p₂ = p₁V₁V₂",
+        "p₂ = V₂/(p₁V₁)"
+      ],
+      "t": 0,
+      "izoh": "p₁V₁ = p₂V₂ dan p₂ = p₁V₁/V₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#f34c04b5"
+    },
+    {
+      "q": "Gaz zichligi ρ = m/V ifodasidan foydalanib, izotermik jarayonda bosim bilan zichlik nisbati qanday yoziladi?",
+      "v": [
+        "p₁/p₂ = ρ₁/ρ₂",
+        "p₁/p₂ = ρ₂/ρ₁",
+        "p₁·ρ₁ = p₂·ρ₂",
+        "p₁/p₂ = ρ₁·ρ₂"
+      ],
+      "t": 0,
+      "izoh": "ρ₁/ρ₂ = p₁/p₂, ya'ni p₁/p₂ = ρ₁/ρ₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#2cfe9fe8"
+    },
+    {
+      "q": "Izotermik jarayonda gaz hajmi o'zgarganda uning massasi qanday o'zgaradi?",
+      "v": [
+        "O'zgarmaydi",
+        "Hajm bilan birga ortadi",
+        "Hajm bilan birga kamayadi",
+        "Ikki marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "Izotermik jarayonda gaz massasi o'zgarmas (m = const) deb olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m10-izotermik-jarayon#f3269add"
+    }
+  ]
+}

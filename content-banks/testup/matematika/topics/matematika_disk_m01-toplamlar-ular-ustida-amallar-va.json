@@ -1,0 +1,1609 @@
+{
+  "nom": "To'plamlar, ular ustida amallar va Eyler-Venn diagrammasi",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "A = {2; 3; 5; 7; 11} to'plam berilgan. Quyidagi tasdiqlardan qaysi biri to'g'ri ekanligini aniqlang.",
+      "v": [
+        "9 ∈ A",
+        "7 ∈ A",
+        "5 ∉ A",
+        "11 ∉ A"
+      ],
+      "t": 1,
+      "izoh": "To'plamning elementlari 2, 3, 5, 7 va 11. 9 soni bu ro'yxatda yo'q, shuning uchun 9 ∈ A yozuvi noto'g'ri. 5 va 11 esa ro'yxatda bor, demak ular uchun ∉ belgisi xato. Faqat 7 ∈ A tasdig'i o'rinli. Javob: 7 ∈ A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "element-tegishlilik",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#4335bbd6"
+    },
+    {
+      "q": "Aziza daftariga B = {x | x — 20 dan kichik natural son va x 6 ga karrali} to'plamni yozdi. Bu to'plamga tegishli bo'lmagan sonni ko'rsating.",
+      "v": [
+        "6",
+        "12",
+        "18",
+        "24"
+      ],
+      "t": 3,
+      "izoh": "6 ga karrali va 20 dan kichik natural sonlarni sanaymiz: 6, 12, 18. Demak B = {6; 12; 18}. 24 soni 6 ga karrali bo'lsa ham, u 20 dan katta, shuning uchun shartni qanoatlantirmaydi. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "element-tegishlilik",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#e451af50"
+    },
+    {
+      "q": "Bekzod C = {x | x — natural son va x² < 30} to'plamni yozib chiqdi. Bu to'plamda nechta element bor?",
+      "v": [
+        "4 ta",
+        "5 ta",
+        "6 ta",
+        "29 ta"
+      ],
+      "t": 1,
+      "izoh": "Natural sonlarni birma-bir sinaymiz: 1² = 1, 2² = 4, 3² = 9, 4² = 16, 5² = 25 — bularning hammasi 30 dan kichik. 6² = 36 esa 30 dan katta, demak 6 kirmaydi. Shunday qilib C = {1; 2; 3; 4; 5}, unda 5 ta element bor. Javob: 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "element-tegishlilik",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#d12c0b6c"
+    },
+    {
+      "q": "D to'plam 45 sonining barcha natural bo'luvchilaridan iborat. 15, 9, 6 va 5 sonlaridan nechtasi D to'plamga tegishli?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 2,
+      "izoh": "Avval 45 ning natural bo'luvchilarini yozamiz: 1, 3, 5, 9, 15, 45. Endi berilgan sonlarni tekshiramiz: 15 bo'luvchi, 9 bo'luvchi, 5 bo'luvchi, 6 esa emas, chunki 45 : 6 butun son bermaydi. Demak 3 ta son D ga tegishli. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "element-tegishlilik",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#c0c771a7"
+    },
+    {
+      "q": "A = {1; 3; 5; 7; 9} va B = {3; 6; 9; 12} to'plamlar berilgan. A ∩ B kesishmani toping.",
+      "v": [
+        "{3; 9}",
+        "{1; 3; 5; 6; 7; 9; 12}",
+        "{1; 5; 7}",
+        "{6; 12}"
+      ],
+      "t": 0,
+      "izoh": "Kesishmaga ikkala to'plamda ham bor bo'lgan elementlar kiradi. 3 soni A da ham, B da ham bor; 9 soni ham xuddi shunday. Qolgan sonlar faqat bitta to'plamda uchraydi. Demak A ∩ B = {3; 9}. Javob: {3; 9}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesishma-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#9b245cf3"
+    },
+    {
+      "q": "Nilufar ikkita to'plam yozdi: M — 30 dan kichik va 4 ga karrali natural sonlar, N — 30 dan kichik va 6 ga karrali natural sonlar. M ∩ N ni toping.",
+      "v": [
+        "{12; 18; 24}",
+        "{6; 12; 24}",
+        "{12; 24}",
+        "{24}"
+      ],
+      "t": 2,
+      "izoh": "M = {4; 8; 12; 16; 20; 24; 28}, N = {6; 12; 18; 24}. Ikkala ro'yxatda ham uchraydigan sonlar 12 va 24, ya'ni 12 ga karralilar. 18 soni M da yo'q, 6 soni ham M da yo'q. Javob: {12; 24}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesishma-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#f2f3adf7"
+    },
+    {
+      "q": "Sardor 60 sonining bo'luvchilari to'plamini, Malika esa 90 sonining bo'luvchilari to'plamini yozdi. Ikkala ro'yxatda ham uchraydigan eng katta son nechaga teng?",
+      "v": [
+        "15",
+        "30",
+        "45",
+        "180"
+      ],
+      "t": 1,
+      "izoh": "Ikkala ro'yxatda uchraydigan sonlar — 60 va 90 ning umumiy bo'luvchilari, ularning eng kattasi EKUB(60; 90) ga teng. 60 = 2²·3·5 va 90 = 2·3²·5 yoyilmalarida umumiy ko'paytuvchilar 2·3·5 = 30 ni beradi. 180 esa eng kichik umumiy karrali, u bo'luvchi emas. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishma-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#829286eb"
+    },
+    {
+      "q": "A — 100 dan kichik va 7 ga karrali natural sonlar to'plami, B esa 100 dan kichik va 5 ga karrali natural sonlar to'plami. A ∩ B da nechta element bor?",
+      "v": [
+        "3 ta",
+        "14 ta",
+        "19 ta",
+        "2 ta"
+      ],
+      "t": 3,
+      "izoh": "Kesishmadagi son 7 ga ham, 5 ga ham bo'linadi, ya'ni 35 ga karrali bo'lishi kerak. 100 dan kichik 35 ga karralilar: 35 va 70. 105 soni allaqachon 100 dan katta, shuning uchun hisobga olinmaydi. Demak kesishmada 2 ta element bor. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesishma-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#440eaa82"
+    },
+    {
+      "q": "P = {a; b; c; d} va Q = {c; d; e} to'plamlar uchun P ∪ Q birlashmani to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "{a; b; c; d; e}",
+        "{c; d}",
+        "{a; b}",
+        "{a; b; e}"
+      ],
+      "t": 0,
+      "izoh": "Birlashmaga ikkala to'plamning barcha elementlari kiradi, takrorlanganlari esa bir marta yoziladi. P dan a, b, c, d elementlari olinadi, Q dan yangi element sifatida faqat e qo'shiladi. Demak P ∪ Q = {a; b; c; d; e}. Javob: {a; b; c; d; e}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlashma-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#29db6dda"
+    },
+    {
+      "q": "Jasur to'garakda 2-, 4-, 6- va 8-mashqlarni bajardi, Zilola esa 1-, 2-, 3- va 4-mashqlarni bajardi. Jasur bajargan mashqlar to'plami A = {2; 4; 6; 8}, Zilolaniki esa B = {1; 2; 3; 4}. Ikkalasi bajargan mashqlar to'plami A ∪ B nechta elementdan iborat?",
+      "v": [
+        "8",
+        "4",
+        "6",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "Barcha mashq raqamlarini bir joyga yig'amiz: 1, 2, 3, 4, 6, 8. 2- va 4-mashqni ikkalasi ham bajargan, lekin birlashmada ular bir marta sanaladi. Shuning uchun natija 4 + 4 = 8 emas, balki 6 ta element bo'ladi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlashma-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#cdfb10e8"
+    },
+    {
+      "q": "X = {x | x — butun son, 1 ≤ x ≤ 6} va Y = {x | x — butun son, 4 ≤ x ≤ 9} bo'lsa, X ∪ Y ning eng katta va eng kichik elementlari yig'indisini toping.",
+      "v": [
+        "15",
+        "10",
+        "13",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "X = {1; 2; 3; 4; 5; 6}, Y = {4; 5; 6; 7; 8; 9}. Birlashma 1 dan 9 gacha bo'lgan barcha butun sonlarni oladi. Eng kichik element 1, eng kattasi 9, ularning yig'indisi 1 + 9 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlashma-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#249e0520"
+    },
+    {
+      "q": "A ∪ B = {1; 2; 3; 4; 5; 6; 7}, A = {1; 2; 3; 4} va A ∩ B = {3; 4} ekani ma'lum bo'lsa, B to'plamni toping.",
+      "v": [
+        "{5; 6; 7}",
+        "{1; 2; 5; 6; 7}",
+        "{3; 4}",
+        "{3; 4; 5; 6; 7}"
+      ],
+      "t": 3,
+      "izoh": "B ichida A ∩ B ning elementlari, ya'ni 3 va 4 albatta bo'ladi. Birlashmada bor, lekin A da yo'q sonlar 5, 6 va 7 ham faqat B dan kelgan. 1 va 2 esa kesishmada yo'q, demak ular B ga tegishli emas. Javob: {3; 4; 5; 6; 7}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlashma-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#7055d262"
+    },
+    {
+      "q": "K = {3; 6; 9; 12; 15} va L = {6; 12; 18} to'plamlar berilgan. K \\ L ayirmani to'g'ri ko'rsating.",
+      "v": [
+        "{3; 9; 15}",
+        "{18}",
+        "{6; 12}",
+        "{3; 9; 15; 18}"
+      ],
+      "t": 0,
+      "izoh": "Ayirmaga K ning L da bo'lmagan elementlari kiradi. 6 va 12 sonlari L da bor, shuning uchun ular chiqib ketadi. Qolganlari 3, 9 va 15. 18 soni K da umuman yo'q, demak javobga qo'shilmaydi. Javob: {3; 9; 15}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#0d194b37"
+    },
+    {
+      "q": "Dilnoza 24 sonining bo'luvchilari to'plamidan 12 sonining bo'luvchilari to'plamini ayirdi. Natijada qanday to'plam hosil bo'ladi?",
+      "v": [
+        "{24}",
+        "{1; 2; 3; 4; 6; 12}",
+        "{8; 24}",
+        "{8; 12; 24}"
+      ],
+      "t": 2,
+      "izoh": "24 ning bo'luvchilari: 1, 2, 3, 4, 6, 8, 12, 24. 12 ning bo'luvchilari: 1, 2, 3, 4, 6, 12. Birinchi ro'yxatdan ikkinchisida uchraganlarni o'chirsak, faqat 8 va 24 qoladi. 12 ning o'zi ham o'chadi. Javob: {8; 24}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#9e31491c"
+    },
+    {
+      "q": "U = {1; 2; 3; 4; 5; 6; 7; 8; 9; 10} to'plamda A — juft sonlar, B esa 3 ga bo'linadigan sonlar to'plami. B \\ A da nechta element bor?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "1 ta",
+        "5 ta"
+      ],
+      "t": 1,
+      "izoh": "B = {3; 6; 9}, A = {2; 4; 6; 8; 10}. B dan A da ham bor bo'lgan 6 ni chiqarib tashlaymiz. Qolganlari 3 va 9, ya'ni 2 ta element. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#c5241ffe"
+    },
+    {
+      "q": "A \\ B = {1; 5}, B \\ A = {7; 9} va A ∩ B = {3} bo'lsa, A ∪ B to'plamdagi barcha elementlar yig'indisi nechaga teng?",
+      "v": [
+        "22",
+        "28",
+        "9",
+        "25"
+      ],
+      "t": 3,
+      "izoh": "Birlashma uch qismdan iborat: faqat A dagilar, faqat B dagilar va umumiy qism. Demak A ∪ B = {1; 3; 5; 7; 9}. Yig'indini hisoblaymiz: 1 + 5 + 7 + 9 + 3 = 25. Kesishmadagi 3 ni tashlab ketsak 22 chiqadi, bu esa xato. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayirma-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#8c8aaa60"
+    },
+    {
+      "q": "Universal to'plam U = {1; 2; 3; 4; 5; 6; 7; 8}, A = {2; 4; 6; 8} bo'lsa, A ning to'ldiruvchisi A' ni toping.",
+      "v": [
+        "{1; 3; 5; 7}",
+        "{2; 4; 6; 8}",
+        "{1; 2; 3; 4}",
+        "{5; 6; 7; 8}"
+      ],
+      "t": 0,
+      "izoh": "To'ldiruvchiga U ning A da bo'lmagan barcha elementlari kiradi. U dan 2, 4, 6 va 8 ni olib tashlaymiz. Qolganlari toq sonlar: 1, 3, 5, 7. Javob: {1; 3; 5; 7}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toldiruvchi-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#df3c24ca"
+    },
+    {
+      "q": "U = {x | x — 12 dan katta bo'lmagan natural son} universal to'plamida B — tub sonlar to'plami. B' to'ldiruvchida nechta element bor?",
+      "v": [
+        "5",
+        "6",
+        "7",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "U da 12 ta element bor: 1 dan 12 gacha. 12 dan katta bo'lmagan tub sonlar 2, 3, 5, 7 va 11, jami 5 ta. 1 soni tub emas, shuning uchun B ga kirmaydi. To'ldiruvchida 12 − 5 = 7 ta element qoladi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toldiruvchi-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#d5f5327f"
+    },
+    {
+      "q": "U = {1; 2; 3; 4; 5; 6; 7; 8; 9} universal to'plamida A = {1; 2; 3; 4; 5} va B = {4; 5; 6} berilgan. (A ∪ B)' to'plamni toping.",
+      "v": [
+        "{6; 7; 8; 9}",
+        "{7; 8; 9}",
+        "{1; 2; 3; 7; 8; 9}",
+        "{4; 5}"
+      ],
+      "t": 1,
+      "izoh": "Avval birlashmani topamiz: A ∪ B = {1; 2; 3; 4; 5; 6}. Endi U dan bu elementlarni chiqarib tashlaymiz, chunki to'ldiruvchi shu tarzda topiladi. Qolganlari 7, 8 va 9. Javob: {7; 8; 9}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toldiruvchi-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#b77a934b"
+    },
+    {
+      "q": "Universal to'plamda 40 ta element bor. A' da 18 ta, B' da 24 ta, (A ∪ B)' da esa 8 ta element bo'lsa, A ∩ B da nechta element bor?",
+      "v": [
+        "2",
+        "8",
+        "34",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "To'ldiruvchilardan asosiy to'plamlarni tiklaymiz: |A| = 40 − 18 = 22, |B| = 40 − 24 = 16. (A ∪ B)' da 8 ta element bo'lsa, |A ∪ B| = 40 − 8 = 32. Endi birlashma formulasidan |A ∩ B| = 22 + 16 − 32 = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toldiruvchi-topish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#bd0e6153"
+    },
+    {
+      "q": "A = {a; b; c; d; e} to'plamning barcha qism to'plamlari nechta ekanligini hisoblang.",
+      "v": [
+        "25",
+        "32",
+        "31",
+        "10"
+      ],
+      "t": 1,
+      "izoh": "n ta elementli to'plamning qism to'plamlari soni 2ⁿ formula bilan topiladi. Bu yerda n = 5, demak 2⁵ = 32 ta qism to'plam bor. Bunga bo'sh to'plam va to'plamning o'zi ham kiradi. Agar o'zini sanamasak 31 chiqadi, lekin savolda barchasi so'ralgan. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qism-toplamlar-soni",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#c62d775a"
+    },
+    {
+      "q": "Gulnora do'konda 6 xil muzqaymoqdan istagan miqdorini tanlashi mumkin, hech nima olmaslik ham hisobga olinadi. U necha xil tanlov qila oladi?",
+      "v": [
+        "12",
+        "36",
+        "63",
+        "64"
+      ],
+      "t": 3,
+      "izoh": "Har bir muzqaymoq uchun ikki imkoniyat bor: olish yoki olmaslik. Demak jami tanlovlar soni 2⁶ = 64 ta. Bo'sh tanlov ham hisobga olinganligi uchun 1 ni ayirish kerak emas. Agar bo'sh tanlov chiqarilsa 63 bo'lardi. Javob: 64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qism-toplamlar-soni",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#f08d5bc8"
+    },
+    {
+      "q": "Bir to'plamning barcha qism to'plamlari soni 128 taga teng. Bu to'plamda nechta element bor?",
+      "v": [
+        "64",
+        "6",
+        "8",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Qism to'plamlar soni 2ⁿ ga teng, demak 2ⁿ = 128 tenglamani yechamiz. 128 sonini 2 ning darajasi ko'rinishida yozamiz: 128 = 2⁷. Bundan n = 7 kelib chiqadi. 64 = 2⁶ bo'lgani uchun 6 javobi ham, 64 javobi ham xato. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qism-toplamlar-soni",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#335ee8d4"
+    },
+    {
+      "q": "A to'plamga bitta yangi element qo'shilgach, uning qism to'plamlari soni 64 taga ko'paydi. Boshida A da nechta element bor edi?",
+      "v": [
+        "5",
+        "6",
+        "7",
+        "32"
+      ],
+      "t": 1,
+      "izoh": "Element soni n bo'lsa, qism to'plamlar soni 2ⁿ. Yangi element qo'shilgach ular 2ⁿ⁺¹ ta bo'ladi. Ortish miqdori 2ⁿ⁺¹ − 2ⁿ = 2ⁿ ga teng. Demak 2ⁿ = 64, ya'ni n = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qism-toplamlar-soni",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#0296574f"
+    },
+    {
+      "q": "M = {1; 2; 3; 4; 5} to'plamining 1 sonini albatta o'z ichiga oladigan qism to'plamlari nechta bo'ladi?",
+      "v": [
+        "8",
+        "15",
+        "16",
+        "32"
+      ],
+      "t": 2,
+      "izoh": "1 soni har bir qism to'plamda majburiy, demak uning ustida tanlov yo'q. Qolgan 4 ta element uchun esa har biri kiradi yoki kirmaydi. Shuning uchun 2⁴ = 16 ta qism to'plam hosil bo'ladi. Barcha qism to'plamlar 32 ta, ularning yarmi 1 ni saqlaydi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shartli-qism-toplam",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#106d043b"
+    },
+    {
+      "q": "Otabek 7 kishilik guruhdan tashkilotchi jamoa tuzmoqchi va jamoada Zilola albatta bo'lishi shart. Necha xil jamoa tuzish mumkin?",
+      "v": [
+        "32",
+        "63",
+        "64",
+        "128"
+      ],
+      "t": 2,
+      "izoh": "Zilola har bir jamoada bo'lgani uchun uning ustida tanlov yo'q. Qolgan 6 kishining har biri jamoaga kiradi yoki kirmaydi, demak 2⁶ = 64 xil jamoa chiqadi. Zilola shartini e'tiborga olmasak 2⁷ = 128 bo'lardi. Javob: 64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shartli-qism-toplam",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#259aa60d"
+    },
+    {
+      "q": "A = {2; 4; 6; 8; 10} to'plamning kamida ikkita elementga ega qism to'plamlari nechta?",
+      "v": [
+        "26",
+        "27",
+        "31",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "Barcha qism to'plamlar 2⁵ = 32 ta. Ulardan kerak bo'lmaganlarini ayiramiz: bitta bo'sh to'plam va bitta elementli 5 ta to'plam. Demak 32 − 1 − 5 = 26 ta qoladi. Faqat bo'sh to'plamni ayirsak 31, faqat bir elementlilarni ayirsak 27 chiqadi. Javob: 26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shartli-qism-toplam",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#deae8367"
+    },
+    {
+      "q": "B = {1; 2; 3; 4; 5; 6} to'plamning barcha elementlari juft bo'lgan qism to'plamlari nechta, bo'sh to'plam ham sanaladi?",
+      "v": [
+        "3",
+        "7",
+        "8",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "Bunday qism to'plamga faqat juft elementlar kirishi mumkin, ya'ni 2, 4 va 6. Demak masala {2; 4; 6} to'plamning qism to'plamlarini sanashga keltiriladi. Ular 2³ = 8 ta. Bo'sh to'plam ham sanalgani uchun 1 ni ayirmaymiz. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shartli-qism-toplam",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#49eed276"
+    },
+    {
+      "q": "Quyidagi to'plamlardan qaysi biri bo'sh to'plam ekanligini aniqlang.",
+      "v": [
+        "{x | x — 5 dan kichik natural son}",
+        "{x | x² = 9 va x < 0}",
+        "{x | x — juft tub son}",
+        "{x | x² + 4 = 0 va x — haqiqiy son}"
+      ],
+      "t": 3,
+      "izoh": "Birinchi to'plam {1; 2; 3; 4} ga teng, u bo'sh emas. Ikkinchisida x = −3 shartni qanoatlantiradi. Uchinchisi {2} ga teng, chunki 2 yagona juft tub son. To'rtinchisida esa x² = −4 kelib chiqadi, haqiqiy sonning kvadrati manfiy bo'la olmaydi. Javob: {x | x² + 4 = 0 va x — haqiqiy son}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bosh-toplam",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#62064f3a"
+    },
+    {
+      "q": "A = {x | x — 10 dan kichik natural son, x 4 ga ham, 6 ga ham karrali} to'plam haqida nima deyish mumkin?",
+      "v": [
+        "A = {12}",
+        "A da 2 ta element bor",
+        "A = {4; 6}",
+        "A = ∅"
+      ],
+      "t": 3,
+      "izoh": "4 ga ham, 6 ga ham karrali eng kichik natural son ularning EKUKi, ya'ni 12. Ammo shart bo'yicha x 10 dan kichik bo'lishi kerak, 12 esa bu shartni qanoatlantirmaydi. Boshqa nomzod yo'q, chunki keyingi karrali 24. Demak A bo'sh to'plam. Javob: A = ∅.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bosh-toplam",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#538a6c82"
+    },
+    {
+      "q": "Quyidagi juftliklardan qaysi birida A ∩ B = ∅ tenglik o'rinli ekanligini aniqlang.",
+      "v": [
+        "A = {1; 2; 3}, B = {3; 4}",
+        "A — juft sonlar, B — 4 ga karralilar",
+        "A = {1; 3; 5}, B = {2; 4; 6}",
+        "A = {x | x > 5}, B = {x | x > 8}"
+      ],
+      "t": 2,
+      "izoh": "Birinchi juftlikda 3 soni umumiy, demak kesishma bo'sh emas. Ikkinchisida 4 ga karralilarning hammasi juft, kesishma katta to'plam bo'ladi. To'rtinchisida 8 dan katta sonlar ikkalasida ham bor. Uchinchisida esa toq va juft sonlarning umumiy elementi yo'q. Javob: A = {1; 3; 5}, B = {2; 4; 6}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bosh-toplam",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#1bf72e61"
+    },
+    {
+      "q": "Bo'sh to'plam haqidagi quyidagi tasdiqlardan qaysi biri noto'g'ri?",
+      "v": [
+        "∅ har qanday to'plamning qism to'plami",
+        "∅ da bitta element bor",
+        "∅ ∪ A = A",
+        "∅ ∩ A = ∅"
+      ],
+      "t": 1,
+      "izoh": "Bo'sh to'plamda umuman element yo'q, uning quvvati nolga teng. Shuning uchun unda bitta element bor degan tasdiq noto'g'ri. Ba'zan {∅} yozuvi bilan chalkashtiriladi, lekin bu boshqa to'plam. Qolgan uch tasdiq to'plamlar nazariyasining asosiy xossalari. Javob: ∅ da bitta element bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bosh-toplam",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#a691a48d"
+    },
+    {
+      "q": "A = (−3; 5] va B = [1; 8) oraliqlar berilgan. A ∩ B kesishmani toping.",
+      "v": [
+        "[1; 5]",
+        "(−3; 8)",
+        "(1; 5)",
+        "[1; 5)"
+      ],
+      "t": 0,
+      "izoh": "Kesishmaga ikkala oraliqqa ham tegishli sonlar kiradi. Chap chegara ikkitasining kattasi, ya'ni 1, va u B da yopiq bo'lgani uchun kvadrat qavs bilan olinadi. O'ng chegara kichigi, ya'ni 5, u A da yopiq. Demak A ∩ B = [1; 5]. Javob: [1; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-kesishma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#cda29fe4"
+    },
+    {
+      "q": "Nodira x sonining 2 dan katta va 9 dan kichik ekanini aytdi, Sanjar esa uning 5 dan katta bo'lmagan musbat son ekanini qo'shdi. x qaysi oraliqda yotadi?",
+      "v": [
+        "(0; 9)",
+        "(2; 5]",
+        "[5; 9)",
+        "(2; 9)"
+      ],
+      "t": 1,
+      "izoh": "Nodiraning sharti (2; 9) oraliqni, Sanjarniki esa (0; 5] oraliqni beradi. Ikkala shart bir vaqtda bajarilishi kerak, demak kesishma olinadi. Chap chegara 2 ochiq, o'ng chegara 5 yopiq. Javob: (2; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-kesishma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#0c944487"
+    },
+    {
+      "q": "(−∞; 4) va [−2; +∞) oraliqlarning umumiy qismini toping.",
+      "v": [
+        "(−2; 4]",
+        "(−∞; +∞)",
+        "(−2; 4)",
+        "[−2; 4)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi shart x < 4, ikkinchisi x ≥ −2 degani. Ikkalasi bir vaqtda bajarilsa −2 ≤ x < 4 hosil bo'ladi. Chap chegara yopiq, o'ng chegara ochiq qoladi. Javob: [−2; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-kesishma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#1a779083"
+    },
+    {
+      "q": "A = [−5; 3), B = (0; 7] va C = [2; 10) oraliqlar berilgan bo'lsa, A ∩ B ∩ C kesishmani toping.",
+      "v": [
+        "(0; 3)",
+        "(2; 3)",
+        "[2; 3)",
+        "[2; 7]"
+      ],
+      "t": 2,
+      "izoh": "Avval A ∩ B ni topamiz: chap chegara 0 ochiq, o'ng chegara 3 ochiq, ya'ni (0; 3). Endi bu natijani C bilan kesishtiramiz: chap chegara 2 ga ko'tariladi va C da yopiq bo'lgani uchun kvadrat qavsda qoladi. O'ng chegara 3 ochiqligicha qoladi. Javob: [2; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliq-kesishma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#c323a26b"
+    },
+    {
+      "q": "M = [1; 4] va N = [3; 9] oraliqlarning birlashmasini to'g'ri ko'rsating.",
+      "v": [
+        "[1; 9]",
+        "[3; 4]",
+        "[1; 3]",
+        "[4; 9]"
+      ],
+      "t": 0,
+      "izoh": "Oraliqlar 3 va 4 orasida ustma-ust tushadi, demak ular uzluksiz bitta bo'lakka qo'shiladi. Birlashma eng chap nuqtadan eng o'ng nuqtagacha cho'ziladi. Ikkala chegara ham yopiq bo'lgani uchun kvadrat qavslar saqlanadi. Javob: [1; 9].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-birlashma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#c301f61a"
+    },
+    {
+      "q": "Bir sport zali ertalab soat 6 dan 11 gacha, kechqurun esa 17 dan 22 gacha ishlaydi. Zal ochiq bo'lgan vaqtni oraliqlar yordamida yozing.",
+      "v": [
+        "[6; 22]",
+        "[6; 11] ∪ [17; 22]",
+        "[11; 17]",
+        "[6; 11] ∩ [17; 22]"
+      ],
+      "t": 1,
+      "izoh": "Zal ikki alohida vaqt bo'lagida ishlaydi va bu bo'laklar ustma-ust tushmaydi. Shunday hollarda birlashma belgisi ishlatiladi, chunki soat ikkalasidan biriga tushsa yetarli. Kesishma bu yerda bo'sh to'plam bo'lardi. [6; 22] esa tushlik tanaffusini ham qo'shib yuboradi. Javob: [6; 11] ∪ [17; 22].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-birlashma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#b5a0f4a4"
+    },
+    {
+      "q": "(−∞; −2] ∪ (1; +∞) to'plamga tegishli bo'lmagan sonni ko'rsating.",
+      "v": [
+        "−3",
+        "−2",
+        "0",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Birlashmaga −2 dan katta bo'lmagan yoki 1 dan katta sonlar kiradi. −3 va −2 birinchi bo'lakda, 5 esa ikkinchi bo'lakda joylashgan. 0 soni −2 dan katta, lekin 1 dan katta emas, demak ikkala bo'lakka ham tushmaydi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-birlashma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#52d9970b"
+    },
+    {
+      "q": "A = (−4; 2) va B = [0; 6] oraliqlar uchun (A ∪ B) \\ (A ∩ B) to'plamni toping.",
+      "v": [
+        "(−4; 0) ∪ [2; 6]",
+        "(−4; 0] ∪ (2; 6]",
+        "(−4; 6]",
+        "[0; 2)"
+      ],
+      "t": 0,
+      "izoh": "Avval A ∪ B = (−4; 6] va A ∩ B = [0; 2) ni topamiz. Endi birlashmadan kesishmani ayiramiz, ya'ni 0 dan 2 gacha bo'lgan qismni olib tashlaymiz. 0 kesishmada bor edi, shuning uchun u chiqib ketadi va chap bo'lak (−4; 0) bo'ladi. 2 esa kesishmada yo'q edi, u qoladi. Javob: (−4; 0) ∪ [2; 6].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliq-birlashma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#acf8c699"
+    },
+    {
+      "q": "A = [0; 10] va B = (3; 6) oraliqlar berilgan bo'lsa, A \\ B ayirmani toping.",
+      "v": [
+        "[0; 3] ∪ [6; 10]",
+        "[0; 3) ∪ (6; 10]",
+        "(3; 6)",
+        "[0; 10]"
+      ],
+      "t": 0,
+      "izoh": "A dan B ga tegishli sonlarni olib tashlaymiz, ya'ni 3 bilan 6 orasidagi ochiq bo'lakni kesib olamiz. 3 va 6 sonlarining o'zi B ga kirmaydi, chunki B ochiq oraliq, demak ular A da qoladi. Shu sababli chegaralar yopiq bo'ladi. Javob: [0; 3] ∪ [6; 10].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-ayirma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#8c46dad9"
+    },
+    {
+      "q": "Feruza (−5; 8) oraliqdan [2; 8) oraliqni ayirdi. Natijada qanday to'plam qoladi?",
+      "v": [
+        "(−5; 2]",
+        "(−5; 2)",
+        "[2; 8)",
+        "(−5; 8)"
+      ],
+      "t": 1,
+      "izoh": "Ayiriluvchi oraliq 2 dan boshlanadi va 2 ning o'zini ham o'z ichiga oladi. Demak 2 soni ham olib tashlanadi va o'ng chegara ochiq qoladi. Chap chegara o'zgarmaydi. Javob: (−5; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliq-ayirma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#1e3a9062"
+    },
+    {
+      "q": "R \\ [−1; 4] to'plamni to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "(−∞; −1] ∪ [4; +∞)",
+        "(−1; 4)",
+        "(−∞; 4)",
+        "(−∞; −1) ∪ (4; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Barcha haqiqiy sonlardan [−1; 4] kesmani olib tashlaymiz. Kesma chegaralari yopiq bo'lgani uchun −1 va 4 sonlari ham chiqib ketadi. Shuning uchun qolgan ikki nurning chegaralari ochiq bo'ladi. Javob: (−∞; −1) ∪ (4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-ayirma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#3582b966"
+    },
+    {
+      "q": "x² ≤ 25 tengsizlikning yechimlar to'plamidan x > 2 shartni qanoatlantiruvchi sonlarni ayirsak, qanday to'plam qoladi?",
+      "v": [
+        "[−5; 2]",
+        "[−5; 2)",
+        "(2; 5]",
+        "[−5; 5]"
+      ],
+      "t": 0,
+      "izoh": "x² ≤ 25 tengsizlikning yechimi [−5; 5] kesma. Undan 2 dan katta sonlarni olib tashlaymiz, ya'ni (2; 5] bo'lakni kesib olamiz. 2 sonining o'zi 2 dan katta emas, shuning uchun u qoladi. Javob: [−5; 2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliq-ayirma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#816ef9d7"
+    },
+    {
+      "q": "√16, 0,25, −7 va π sonlaridan qaysi biri irratsional son ekanligini aniqlang.",
+      "v": [
+        "√16",
+        "0,25",
+        "−7",
+        "π"
+      ],
+      "t": 3,
+      "izoh": "√16 = 4 bo'lgani uchun u butun son, demak ratsional. 0,25 sonini 1/4 kasr ko'rinishida yozish mumkin, u ham ratsional. −7 butun son, u ham ratsional sonlar to'plamiga kiradi. π ni esa ikki butun sonning nisbati sifatida yozib bo'lmaydi. Javob: π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonli-toplam-turi",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#e5c15167"
+    },
+    {
+      "q": "Sonli to'plamlar uchun N ⊂ Z ⊂ Q ⊂ R munosabatlari o'rinli. Quyidagi tasdiqlardan qaysi biri to'g'ri emas?",
+      "v": [
+        "Har bir natural son butun son",
+        "Har bir butun son ratsional son",
+        "Har bir haqiqiy son ratsional son",
+        "Har bir ratsional son haqiqiy son"
+      ],
+      "t": 2,
+      "izoh": "Qism to'plam belgisi kichikdan kattaga qarab o'qiladi, teskarisi emas. N ⊂ Z, Z ⊂ Q va Q ⊂ R bo'lgani uchun birinchi, ikkinchi va to'rtinchi tasdiqlar o'rinli. Ammo R ⊂ Q noto'g'ri, chunki √2 kabi haqiqiy sonlar ratsional emas. Javob: har bir haqiqiy son ratsional son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonli-toplam-turi",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#4ada1cbe"
+    },
+    {
+      "q": "Akmal daftariga −3, 0, 2/5, √2 va 7 sonlarini yozdi. Ulardan nechtasi butun sonlar to'plamiga tegishli?",
+      "v": [
+        "2 ta",
+        "4 ta",
+        "5 ta",
+        "3 ta"
+      ],
+      "t": 3,
+      "izoh": "Butun sonlar to'plamiga musbat, manfiy sonlar va nol kiradi. −3 butun, 0 butun, 7 butun — jami 3 ta. 2/5 kasr son, u ratsional bo'lsa ham butun emas. √2 esa irratsional. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonli-toplam-turi",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#6fa4745d"
+    },
+    {
+      "q": "A — barcha juft butun sonlar to'plami, B esa 3 ga bo'linadigan butun sonlar to'plami. A ∩ B to'plamni to'g'ri tavsiflagan variantni tanlang.",
+      "v": [
+        "5 ga bo'linadigan butun sonlar",
+        "6 ga bo'linadigan butun sonlar",
+        "Bo'sh to'plam",
+        "Barcha butun sonlar"
+      ],
+      "t": 1,
+      "izoh": "Kesishmadagi son ham juft, ham 3 ga karrali bo'lishi kerak. Bunday son 2 ga ham, 3 ga ham bo'linadi, demak ularning EKUKi 6 ga bo'linadi. Masalan 6, 12, −18 shunday sonlar, shuning uchun kesishma bo'sh emas. Javob: 6 ga bo'linadigan butun sonlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sonli-toplam-turi",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#3872e3e5"
+    },
+    {
+      "q": "Sinfdagi 24 o'quvchidan 15 tasi futbol, 12 tasi voleybol o'ynaydi, 5 tasi esa ikkala o'yin bilan ham shug'ullanadi. Kamida bitta o'yin o'ynaydiganlar nechta?",
+      "v": [
+        "27",
+        "24",
+        "22",
+        "17"
+      ],
+      "t": 2,
+      "izoh": "Birlashma formulasi |A ∪ B| = |A| + |B| − |A ∩ B| ni qo'llaymiz. Hisoblaymiz: 15 + 12 − 5 = 22. Agar kesishmani ayirmasak 27 chiqadi, bu esa sinfdagi o'quvchilar sonidan ham ko'p bo'lib qolardi. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "venn-ikki-birlashma-formula",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#82d9ac60"
+    },
+    {
+      "q": "Kutubxonada 40 nafar o'quvchi ro'yxatdan o'tgan: 22 nafari she'riy kitob, 25 nafari ilmiy kitob olgan va har bir o'quvchi kamida bitta kitob olgan. Ikkala turdagi kitobni ham olganlar nechta?",
+      "v": [
+        "7",
+        "15",
+        "18",
+        "47"
+      ],
+      "t": 0,
+      "izoh": "Har bir o'quvchi kamida bitta kitob olgani uchun |A ∪ B| = 40. Birlashma formulasidan |A ∩ B| = |A| + |B| − |A ∪ B| kelib chiqadi. Demak 22 + 25 − 40 = 7. 47 soni esa shunchaki yig'indi bo'lib, u takrorlarni hisobga olmaydi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-ikki-birlashma-formula",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#92cbd5b0"
+    },
+    {
+      "q": "Bir mahallada 60 xonadon bor. 38 xonadonda mushuk, 27 xonadonda it boqiladi, 12 xonadonda esa ikkalasi ham bor. Kamida bitta uy hayvoni bo'lgan xonadonlar sonini toping.",
+      "v": [
+        "65",
+        "41",
+        "48",
+        "53"
+      ],
+      "t": 3,
+      "izoh": "Birlashma formulasini qo'llaymiz: 38 + 27 − 12 = 53. Kesishmani ayirmasak 65 chiqadi, bu esa mahalladagi xonadonlar sonidan katta bo'lib, ma'nosiz natija beradi. Demak 53 xonadonda kamida bitta hayvon bor. Javob: 53.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-ikki-birlashma-formula",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#c96b6dcb"
+    },
+    {
+      "q": "Sinfda ingliz tilini 18, nemis tilini 14 o'quvchi o'rganadi. Sinfda jami 26 o'quvchi bo'lib, hamma kamida bitta chet tilini o'rganadi. Faqat bitta til o'rganadigan o'quvchilar nechta?",
+      "v": [
+        "6",
+        "20",
+        "12",
+        "14"
+      ],
+      "t": 1,
+      "izoh": "Avval ikkala tilni o'rganadiganlarni topamiz: 18 + 14 − 26 = 6. Endi ular ikki marta sanalganini hisobga olamiz: faqat bitta til o'rganadiganlar 26 − 6 = 20 nafar. 12 soni faqat ingliz tilini o'rganadiganlar bo'lib, u to'liq javob emas. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "venn-ikki-birlashma-formula",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#4575f095"
+    },
+    {
+      "q": "Bir sinfda 30 o'quvchi bor. Ulardan 18 tasi shaxmat, 14 tasi tennis to'garagiga qatnaydi, 6 tasi esa ikkalasiga ham boradi. Faqat shaxmatga qatnaydiganlar nechta?",
+      "v": [
+        "12",
+        "18",
+        "8",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Shaxmatga qatnaydigan 18 o'quvchi ichida ikkala to'garakka boradigan 6 nafar ham bor. Faqat shaxmat uchun ularni ayiramiz: 18 − 6 = 12. 8 soni faqat tennisga qatnaydiganlar, 4 soni esa hech qaysi to'garakka bormaydiganlar. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "venn-ikki-faqat-bittasi",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#16e5d091"
+    },
+    {
+      "q": "Do'konga kelgan 50 xaridordan 28 tasi non, 22 tasi sut sotib oldi, 9 tasi esa ikkala mahsulotni ham oldi. Faqat sut sotib olganlar nechta?",
+      "v": [
+        "19",
+        "22",
+        "13",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "Sut olgan 22 xaridor ichida non ham olgan 9 kishi bor. Faqat sut olganlarni topish uchun 22 − 9 = 13 deb hisoblaymiz. 19 soni faqat non olganlarga tegishli, chunki 28 − 9 = 19. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-ikki-faqat-bittasi",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#b6227823"
+    },
+    {
+      "q": "Bir guruhda 35 talaba bor. Matematika olimpiadasida 20, fizika olimpiadasida 17 talaba qatnashdi, 8 tasi esa ikkalasida ham ishtirok etdi. Faqat bitta olimpiadada qatnashganlar nechta?",
+      "v": [
+        "29",
+        "6",
+        "21",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "Faqat matematikada qatnashganlar 20 − 8 = 12 nafar, faqat fizikada qatnashganlar 17 − 8 = 9 nafar. Ularni qo'shamiz: 12 + 9 = 21. 29 soni kamida bitta olimpiadada qatnashganlarni bildiradi, 6 soni esa hech qaysisiga bormaganlar. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-ikki-faqat-bittasi",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#255f8826"
+    },
+    {
+      "q": "Zulfiya guruhida 42 kishi bor. Rasm chizadiganlar soni musiqa bilan shug'ullanadiganlardan 6 taga ko'p. 10 kishi ikkalasi bilan, 4 kishi esa hech biri bilan shug'ullanmaydi. Faqat rasm chizadiganlar nechta?",
+      "v": [
+        "17",
+        "27",
+        "11",
+        "21"
+      ],
+      "t": 0,
+      "izoh": "Kamida bittasi bilan shug'ullanadiganlar 42 − 4 = 38 nafar. Musiqachilar sonini m desak, rassomlar m + 6 bo'ladi va (m + 6) + m − 10 = 38 tenglama hosil bo'ladi. Bundan 2m = 42, ya'ni m = 21 va rassomlar 27 nafar. Faqat rasm chizadiganlar 27 − 10 = 17. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "venn-ikki-faqat-bittasi",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#b702e746"
+    },
+    {
+      "q": "Bir sinfdagi 28 o'quvchidan 16 tasi ingliz tili, 13 tasi rus tili to'garagiga boradi, 7 tasi esa ikkalasiga ham qatnaydi. Hech qaysi to'garakka bormaydiganlar nechta?",
+      "v": [
+        "6",
+        "21",
+        "22",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "Kamida bitta to'garakka boradiganlar 16 + 13 − 7 = 22 nafar. Sinfdagi jami o'quvchidan buni ayiramiz: 28 − 22 = 6. 9 soni faqat ingliz tiliga qatnaydiganlarni bildiradi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "venn-ikki-hech-biri",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#46126093"
+    },
+    {
+      "q": "Ofisdagi 45 xodimdan 24 tasi mashina, 18 tasi velosiped haydaydi, 9 tasi esa ikkalasini ham. Na mashina, na velosiped haydamaydigan xodimlar sonini toping.",
+      "v": [
+        "33",
+        "12",
+        "15",
+        "21"
+      ],
+      "t": 1,
+      "izoh": "Kamida bittasini haydaydiganlar 24 + 18 − 9 = 33 nafar. Ofisdagi barcha xodimlardan buni ayiramiz: 45 − 33 = 12. 15 soni faqat mashina haydaydiganlar, 21 soni esa mashina haydamaydiganlarning umumiy soni. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-ikki-hech-biri",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#220ceee4"
+    },
+    {
+      "q": "Kamola 60 nafar o'quvchidan so'rov o'tkazdi: 35 tasi she'r, 26 tasi hikoya o'qishni yoqtiradi, 11 tasi esa ikkalasini ham. Hech birini yoqtirmaydiganlar nechta?",
+      "v": [
+        "50",
+        "24",
+        "10",
+        "25"
+      ],
+      "t": 2,
+      "izoh": "Kamida bittasini yoqtiradiganlar 35 + 26 − 11 = 50 nafar. So'ralganlarning umumiy sonidan ayiramiz: 60 − 50 = 10. 24 soni faqat she'r yoqtiradiganlar, 25 soni esa she'r yoqtirmaydiganlar. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-ikki-hech-biri",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#7e194f63"
+    },
+    {
+      "q": "Bir maktabda 120 o'quvchi so'raldi. Ularning 3/5 qismi sport, 45 nafari musiqa bilan shug'ullanadi, 18 nafari esa ikkalasi bilan ham. Hech biri bilan shug'ullanmaydiganlar nechta?",
+      "v": [
+        "99",
+        "54",
+        "27",
+        "21"
+      ],
+      "t": 3,
+      "izoh": "Avval sportchilarni topamiz: 120 ning 3/5 qismi 72 ga teng. Kamida bittasi bilan shug'ullanadiganlar 72 + 45 − 18 = 99 nafar. Demak hech biri bilan shug'ullanmaydiganlar 120 − 99 = 21. 54 soni faqat sport bilan shug'ullanadiganlar. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "venn-ikki-hech-biri",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#41d2c8b4"
+    },
+    {
+      "q": "Bir guruhda 50 talaba bor. Ingliz tilini 25, fransuz tilini 20, nemis tilini 15 talaba biladi. Ingliz va fransuzni 8, ingliz va nemisni 6, fransuz va nemisni 5 talaba, uchala tilni esa 3 talaba biladi. Kamida bitta tilni biladiganlar nechta?",
+      "v": [
+        "44",
+        "60",
+        "41",
+        "47"
+      ],
+      "t": 0,
+      "izoh": "Uch to'plam uchun birlashma formulasi qo'llaniladi: yakka sonlar qo'shiladi, juft kesishmalar ayiriladi, uchlik kesishma qaytadan qo'shiladi. Hisoblaymiz: 25 + 20 + 15 = 60, so'ng 60 − 8 − 6 − 5 = 41. Oxirida uchlik kesishmani qaytaramiz: 41 + 3 = 44. Javob: 44.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-uch-formula",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#bfab888d"
+    },
+    {
+      "q": "Do'konda 80 xaridor xarid qildi. Olma 40, nok 35, uzum 30 kishi oldi. Olma bilan nokni 15, olma bilan uzumni 12, nok bilan uzumni 10 kishi, uchalasini esa 5 kishi oldi. Hech qanday meva olmaganlar nechta?",
+      "v": [
+        "73",
+        "7",
+        "12",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Avval kamida bitta meva olganlarni topamiz: 40 + 35 + 30 − 15 − 12 − 10 + 5 = 73. Endi barcha xaridorlardan buni ayiramiz: 80 − 73 = 7. Agar oxirgi qadamda uchlik kesishma qaytarilmasa 68 chiqib, javob 12 bo'lib qolardi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-uch-formula",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#c1bfd569"
+    },
+    {
+      "q": "Sanjar so'rovida 100 kishidan 60 tasi radio, 50 tasi televizor, 40 tasi internetdan foydalanadi. Radio bilan televizorni 26, radio bilan internetni 22, televizor bilan internetni 15 kishi ishlatadi va hamma kamida bittasidan foydalanadi. Uchalasidan ham foydalanadiganlar nechta?",
+      "v": [
+        "15",
+        "13",
+        "26",
+        "87"
+      ],
+      "t": 1,
+      "izoh": "Hamma kamida bittasidan foydalangani uchun birlashma 100 ga teng. Formulani yozamiz: 60 + 50 + 40 − 26 − 22 − 15 + x = 100. Chap tomonni soddalashtiramiz: 150 − 63 + x = 100, ya'ni 87 + x = 100. Bundan x = 13. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "venn-uch-formula",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#e51a42c6"
+    },
+    {
+      "q": "Uch to'plam uchun |A| = 18, |B| = 22, |C| = 16, |A ∩ B| = 7, |A ∩ C| = 5, |B ∩ C| = 6 va |A ∩ B ∩ C| = 2 bo'lsa, |A ∪ B ∪ C| ni toping.",
+      "v": [
+        "40",
+        "56",
+        "38",
+        "44"
+      ],
+      "t": 0,
+      "izoh": "Formulaga qiymatlarni qo'yamiz: 18 + 22 + 16 = 56. Juft kesishmalarni ayiramiz: 56 − 7 − 5 − 6 = 38. Uchlik kesishmani bir marta qaytarib qo'shamiz: 38 + 2 = 40. Uni qo'shmay qolish 38, ikki marta qo'shish esa 44 xato javobini beradi. Javob: 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "venn-uch-formula",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#0968344d"
+    },
+    {
+      "q": "Uchta to'garak uchun |A| = 20, |B| = 18, |C| = 14, |A ∩ B| = 6, |A ∩ C| = 5 va |A ∩ B ∩ C| = 2 ekani ma'lum. Faqat A to'garagiga qatnaydiganlar nechta?",
+      "v": [
+        "9",
+        "11",
+        "20",
+        "13"
+      ],
+      "t": 1,
+      "izoh": "A dagilardan B bilan umumiy 6 kishini va C bilan umumiy 5 kishini ayiramiz: 20 − 6 − 5 = 9. Ammo uchalasiga qatnaydigan 2 kishi ikki marta ayirilib ketdi, ularni bir marta qaytaramiz. Demak 9 + 2 = 11. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-uch-faqat-bitta",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#528d5617"
+    },
+    {
+      "q": "Bir mahallada uch xil gazeta o'qiladi. Birinchisini 34, ikkinchisini 28, uchinchisini 22 kishi o'qiydi. Birinchi bilan ikkinchisini 12, birinchi bilan uchinchisini 9, ikkinchi bilan uchinchisini 8 kishi, uchalasini esa 4 kishi o'qiydi. Faqat ikkinchi gazetani o'qiydiganlar nechta?",
+      "v": [
+        "12",
+        "8",
+        "28",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi gazetani o'qiydigan 28 kishidan boshqalar bilan umumiylarini ayiramiz: 28 − 12 − 8 = 8. Uchala gazetani o'qiydigan 4 kishi ikki marta ayirilgani uchun ularni qaytarib qo'shamiz: 8 + 4 = 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-uch-faqat-bitta",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#ae178994"
+    },
+    {
+      "q": "Bir kafeda 90 mijoz so'ralgan: 45 tasi choy, 40 tasi qahva, 35 tasi sharbat buyurgan. Choy bilan qahvani 15, choy bilan sharbatni 12, qahva bilan sharbatni 10 mijoz, uchalasini esa 5 mijoz buyurgan. Faqat bitta ichimlik buyurgan mijozlar nechta?",
+      "v": [
+        "88",
+        "46",
+        "22",
+        "61"
+      ],
+      "t": 3,
+      "izoh": "Faqat choy buyurganlar 45 − 15 − 12 + 5 = 23 nafar. Faqat qahva buyurganlar 40 − 15 − 10 + 5 = 20 nafar. Faqat sharbat buyurganlar 35 − 12 − 10 + 5 = 18 nafar. Ularni qo'shamiz: 23 + 20 + 18 = 61. 88 soni kamida bitta ichimlik buyurganlarni bildiradi. Javob: 61.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "venn-uch-faqat-bitta",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#7044e940"
+    },
+    {
+      "q": "Maktabda uch turdagi to'garak bor va har biriga 30 tadan o'quvchi qatnaydi. Har bir juftlikda 12 tadan umumiy o'quvchi bor, uchalasiga esa 5 o'quvchi qatnaydi. Faqat bitta to'garakka qatnaydiganlar nechta?",
+      "v": [
+        "18",
+        "33",
+        "59",
+        "21"
+      ],
+      "t": 1,
+      "izoh": "Bitta to'garak uchun hisoblaymiz: 30 − 12 − 12 + 5 = 11 o'quvchi faqat o'sha to'garakka qatnaydi. Uchala to'garak bir xil shartda bo'lgani uchun natijani 3 ga ko'paytiramiz: 11·3 = 33. Uchlik kesishmani qaytarmasak har biri uchun 6 chiqib, jami 18 bo'lib qolardi. Javob: 33.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "venn-uch-faqat-bitta",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#6b7348f4"
+    },
+    {
+      "q": "Uch to'plam uchun |A ∩ B| = 14, |A ∩ C| = 11, |B ∩ C| = 9 va |A ∩ B ∩ C| = 4 bo'lsa, aniq ikkita to'plamga tegishli elementlar nechta?",
+      "v": [
+        "22",
+        "34",
+        "26",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Har bir juft kesishma ichida uchalasiga tegishli elementlar ham bor, ularni chiqarib tashlash kerak. Faqat A va B da: 14 − 4 = 10. Faqat A va C da: 11 − 4 = 7. Faqat B va C da: 9 − 4 = 5. Yig'indi 10 + 7 + 5 = 22. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-uch-aniq-ikkita",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#a79a6c01"
+    },
+    {
+      "q": "Bir guruhda 42 kishi bor va ularning har biri kamida bitta sport turi bilan shug'ullanadi. Birinchi sport bilan 25, ikkinchisi bilan 20, uchinchisi bilan 18 kishi shug'ullanadi. Juft kesishmalar mos ravishda 10, 8 va 6 kishini, uchalasi esa 3 kishini o'z ichiga oladi. Kamida ikkita sport bilan shug'ullanadiganlar nechta?",
+      "v": [
+        "24",
+        "18",
+        "15",
+        "21"
+      ],
+      "t": 1,
+      "izoh": "Avval sonlar mosligini tekshiramiz: 25 + 20 + 18 − 10 − 8 − 6 + 3 = 42, ya'ni guruhdagi hamma sportchi. Endi aniq ikkita sport bilan shug'ullanadiganlarni topamiz: (10 − 3) + (8 − 3) + (6 − 3) = 7 + 5 + 3 = 15. Kamida ikkita degani bunga uchalasi bilan shug'ullanadigan 3 kishini ham qo'shish demakdir. Demak 15 + 3 = 18. 24 soni juft kesishmalar yig'indisi bo'lib, u takrorlarni hisobga olmaydi. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-uch-aniq-ikkita",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#3c1d6fd2"
+    },
+    {
+      "q": "Tekshiruvda 200 mahsulotda uch xil nuqson qidirildi. Birinchi nuqson 40, ikkinchisi 35, uchinchisi 30 mahsulotda topildi. Aniq ikkita nuqsoni bor mahsulotlar 18 ta, uchala nuqsoni bor mahsulotlar esa 6 ta. Hech qanday nuqsoni yo'q mahsulotlar nechta?",
+      "v": [
+        "95",
+        "119",
+        "125",
+        "149"
+      ],
+      "t": 2,
+      "izoh": "Yakka sonlar yig'indisi 40 + 35 + 30 = 105, lekin unda ikki nuqsonlilar ikki marta, uch nuqsonlilar uch marta sanalgan. Faqat bitta nuqsoni borlar 105 − 2·18 − 3·6 = 51 ta. Nuqsoni bor mahsulotlar jami 51 + 18 + 6 = 75 ta. Demak nuqsonsizlari 200 − 75 = 125. Javob: 125.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "venn-uch-aniq-ikkita",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#3e18a4b5"
+    },
+    {
+      "q": "Uchta to'plamning birlashmasida 78 ta element bor. Faqat bitta to'plamga tegishli elementlar 45 ta, uchalasiga tegishli elementlar esa 9 ta. Aniq ikkita to'plamga tegishli elementlar nechta?",
+      "v": [
+        "33",
+        "24",
+        "54",
+        "15"
+      ],
+      "t": 1,
+      "izoh": "Birlashma uch bo'lakdan tashkil topadi: faqat bitta to'plamdagilar, aniq ikkitasidagilar va uchalasidagilar. Shuning uchun 45 + x + 9 = 78 tenglama tuziladi. Bundan x = 78 − 54 = 24. Uchalasidagilarni ayirishni unutsak 33 chiqadi. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "venn-uch-aniq-ikkita",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#9b1377c5"
+    },
+    {
+      "q": "A = {x | x — 50 dan kichik va 6 ga karrali natural son} to'plamda nechta element bor?",
+      "v": [
+        "8",
+        "9",
+        "7",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "6 ga karrali natural sonlarni ketma-ket yozamiz: 6, 12, 18, 24, 30, 36, 42, 48. Keyingisi 54 bo'lib, u 50 dan katta, demak kirmaydi. Sanaymiz: jami 8 ta element bor. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toplam-quvvati",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#12b71ccc"
+    },
+    {
+      "q": "Ulug'bek 1 dan 200 gacha bo'lgan natural sonlar ichida 9 ga bo'linadiganlarini sanadi. U qanday son oldi?",
+      "v": [
+        "23",
+        "22",
+        "20",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "9 ga bo'linadigan sonlar 9, 18, 27 tarzida davom etadi va ularning soni 200 ni 9 ga bo'lgandagi butun qismga teng. 200 : 9 amalida butun qism 22 bo'ladi, chunki 9·22 = 198. Keyingi karrali 207 bo'lib, u 200 dan oshib ketadi. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolinuvchanlik-sanash",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#4d245fe9"
+    },
+    {
+      "q": "Shahnoza {x | x² − 5x + 6 = 0} va {x | x² − 9 = 0} to'plamlarni yozdi. Ularning birlashmasida nechta element bor?",
+      "v": [
+        "3",
+        "4",
+        "2",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tenglamaning ildizlari 2 va 3, demak birinchi to'plam {2; 3}. Ikkinchi tenglamadan x = 3 yoki x = −3 kelib chiqadi, ya'ni {3; −3}. Birlashmada 3 soni bir marta yoziladi: {2; 3; −3}. Demak 3 ta element bor. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toplam-quvvati",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#c2c8d54b"
+    },
+    {
+      "q": "Temur 1 dan 300 gacha bo'lgan natural sonlar orasida 4 ga yoki 7 ga bo'linadiganlarini sanamoqchi. Ular nechta?",
+      "v": [
+        "117",
+        "75",
+        "107",
+        "97"
+      ],
+      "t": 2,
+      "izoh": "4 ga bo'linadiganlar 300 : 4 = 75 ta, 7 ga bo'linadiganlar esa 300 : 7 amalining butun qismi, ya'ni 42 ta. Ikkalasiga ham bo'linadiganlar 28 ga karralilar bo'lib, ular 300 : 28 dan 10 ta chiqadi. Birlashma formulasiga ko'ra 75 + 42 − 10 = 107. Javob: 107.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolinuvchanlik-sanash",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#2b3e6485"
+    },
+    {
+      "q": "(A ∪ B)' ifodani De Morgan qonuni yordamida qaysi ko'rinishda yozish mumkin?",
+      "v": [
+        "A' ∪ B'",
+        "A' ∩ B'",
+        "A ∩ B",
+        "(A ∩ B)'"
+      ],
+      "t": 1,
+      "izoh": "De Morgan qonuniga ko'ra to'ldiruvchi olinganda birlashma kesishmaga, kesishma esa birlashmaga aylanadi. Element birlashmada bo'lmasa, u na A da, na B da bo'ladi. Bu esa aynan A' va B' ning kesishmasi demakdir. Javob: A' ∩ B'.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "de-morgan",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#f6ec77c7"
+    },
+    {
+      "q": "U = {1; 2; 3; 4; 5; 6; 7; 8} universal to'plamida A = {1; 2; 3; 4} va B = {3; 4; 5} berilgan. A' ∩ B' to'plamni toping.",
+      "v": [
+        "{6; 7; 8}",
+        "{5; 6; 7; 8}",
+        "{1; 2; 6; 7; 8}",
+        "{3; 4}"
+      ],
+      "t": 0,
+      "izoh": "Avval to'ldiruvchilarni yozamiz: A' = {5; 6; 7; 8} va B' = {1; 2; 6; 7; 8}. Endi ularning kesishmasini olamiz, ya'ni ikkalasida ham bor elementlarni tanlaymiz. Bular 6, 7 va 8. Xuddi shu natijani (A ∪ B)' orqali ham olish mumkin. Javob: {6; 7; 8}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "de-morgan",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#88b22b60"
+    },
+    {
+      "q": "Universal to'plamda 50 ta element bor. |A| = 28, |B| = 24 va |A ∩ B| = 12 bo'lsa, |A' ∩ B'| ni toping.",
+      "v": [
+        "22",
+        "26",
+        "38",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "De Morgan qonuniga ko'ra A' ∩ B' = (A ∪ B)'. Avval birlashmani hisoblaymiz: 28 + 24 − 12 = 40. Endi to'ldiruvchini olamiz: 50 − 40 = 10. 22 va 26 sonlari faqat bitta to'plamning to'ldiruvchisi bo'lib, ular javob emas. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "de-morgan",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#4122d2c0"
+    },
+    {
+      "q": "Quyidagi tengliklardan qaysi biri barcha A va B to'plamlar uchun o'rinli emas?",
+      "v": [
+        "(A ∩ B)' = A' ∪ B'",
+        "A \\ B = A ∩ B'",
+        "(A ∪ B)' = A' ∪ B'",
+        "A ∪ (A ∩ B) = A"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tenglik De Morgan qonunining ikkinchi ko'rinishi bo'lib, u har doim o'rinli. Ikkinchisi ayirmaning to'ldiruvchi orqali ta'rifi. To'rtinchisi yutilish xossasi. Uchinchisida esa birlashmaning to'ldiruvchisi kesishmaga aylanishi kerak edi, birlashma emas. Javob: (A ∪ B)' = A' ∪ B'.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "de-morgan",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#7a78bd0a"
+    },
+    {
+      "q": "Doniyor 100 dan kichik natural sonlar ichidan raqamlari yig'indisi 5 ga teng bo'lganlarini yozib chiqdi. U tuzgan to'plamda nechta element bor?",
+      "v": [
+        "5",
+        "6",
+        "7",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Bir xonali sonlardan faqat 5 ning raqamlari yig'indisi 5 ga teng. Ikki xonalilar orasida 14, 23, 32, 41 va 50 shu shartni qanoatlantiradi. Boshqa nomzod yo'q, chunki o'nlar raqami 5 dan katta bo'la olmaydi. Jami 1 + 5 = 6 ta element. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toplam-quvvati",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#1785ab02"
+    },
+    {
+      "q": "A to'plam {1; 2; 3; 4; 5} to'plamning barcha ikki elementli qism to'plamlaridan iborat. A da nechta element bor?",
+      "v": [
+        "10",
+        "20",
+        "25",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Ikki elementli qism to'plam tuzish — beshta elementdan ikkitasini tartibsiz tanlash demakdir. Juftliklarni sanaymiz: 1 bilan 4 ta, 2 bilan yangi 3 ta, 3 bilan 2 ta, 4 bilan 1 ta. Jami 4 + 3 + 2 + 1 = 10 ta juftlik. Tartibni hisobga olsak 20 chiqib qolardi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toplam-quvvati",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#cc2e27ca"
+    },
+    {
+      "q": "1 dan 150 gacha bo'lgan natural sonlar ichida na 2 ga, na 5 ga bo'linadiganlari nechta ekanligini aniqlang.",
+      "v": [
+        "45",
+        "75",
+        "60",
+        "105"
+      ],
+      "t": 2,
+      "izoh": "2 ga bo'linadiganlar 75 ta, 5 ga bo'linadiganlar 30 ta, ikkalasiga ham bo'linadiganlar esa 10 ga karralilar bo'lib 15 ta. Kamida bittasiga bo'linadiganlar 75 + 30 − 15 = 90 ta. Demak hech biriga bo'linmaydiganlar 150 − 90 = 60 ta. Javob: 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolinuvchanlik-sanash",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#e464b81f"
+    },
+    {
+      "q": "Nargiza 1 dan 500 gacha bo'lgan sonlar ichidan 3 ga bo'linadigan, lekin 4 ga bo'linmaydiganlarini sanadi. U qanday son oldi?",
+      "v": [
+        "166",
+        "126",
+        "41",
+        "125"
+      ],
+      "t": 3,
+      "izoh": "3 ga bo'linadiganlar soni 500 : 3 amalining butun qismi, ya'ni 166 ta. Ular ichida 4 ga ham bo'linadiganlar 12 ga karralilar bo'lib, 500 : 12 dan 41 ta chiqadi. Kerakli sonlarni ayirma bilan topamiz: 166 − 41 = 125. Javob: 125.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolinuvchanlik-sanash",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#91f7b538"
+    },
+    {
+      "q": "A = {1; 2; 3; 4} va B = {3; 4; 5; 6} bo'lsa, A △ B = (A \\ B) ∪ (B \\ A) simmetrik ayirmani toping.",
+      "v": [
+        "{1; 2; 5; 6}",
+        "{3; 4}",
+        "{1; 2; 3; 4; 5; 6}",
+        "{1; 2}"
+      ],
+      "t": 0,
+      "izoh": "Avval A \\ B = {1; 2} ni topamiz, chunki 3 va 4 ikkalasida ham bor. So'ng B \\ A = {5; 6} ni yozamiz. Ikki ayirmani birlashtiramiz va faqat bitta to'plamda uchraydigan elementlar qoladi. Javob: {1; 2; 5; 6}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetrik-ayirma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#402272eb"
+    },
+    {
+      "q": "Sevara kutubxonadan p, q, r, s kitoblarini, Elyor esa r, s, t kitoblarini o'qidi. Faqat bittasi o'qigan kitoblar to'plamini ko'rsating.",
+      "v": [
+        "{r; s}",
+        "{p; q; t}",
+        "{p; q; r; s; t}",
+        "{p; q}"
+      ],
+      "t": 1,
+      "izoh": "r va s kitoblarini ikkalasi ham o'qigan, demak ular hisobga olinmaydi. Sevaraga xos kitoblar p va q, Elyorga xos kitob esa t. Bu aynan simmetrik ayirma bo'ladi. Javob: {p; q; t}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-ayirma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#31180e84"
+    },
+    {
+      "q": "Ikki to'plam uchun |A| = 15, |B| = 11 va |A ∩ B| = 6 bo'lsa, A △ B simmetrik ayirmada nechta element bor?",
+      "v": [
+        "20",
+        "26",
+        "9",
+        "14"
+      ],
+      "t": 3,
+      "izoh": "Simmetrik ayirmada umumiy elementlar umuman qatnashmaydi, shuning uchun ular ikki marta chiqariladi. Formulasi |A △ B| = |A| + |B| − 2·|A ∩ B|. Hisoblaymiz: 15 + 11 − 12 = 14. Kesishmani bir marta ayirsak 20 chiqadi, bu esa birlashma soni. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-ayirma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#7b912a0d"
+    },
+    {
+      "q": "A △ B to'plamda 18 ta, A ∩ B to'plamda esa 7 ta element bor. Agar |A| = 13 bo'lsa, |B| nechaga teng?",
+      "v": [
+        "25",
+        "11",
+        "19",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Simmetrik ayirma formulasini yozamiz: |A △ B| = |A| + |B| − 2·|A ∩ B|. Qiymatlarni qo'yamiz: 18 = 13 + |B| − 14. O'ng tomonni soddalashtiramiz: 18 = |B| − 1. Bundan |B| = 19. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetrik-ayirma",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#f4243f5d"
+    },
+    {
+      "q": "Har qanday A va B to'plamlar uchun A ∩ (A ∪ B) ifoda nimaga teng bo'ladi?",
+      "v": [
+        "A",
+        "B",
+        "A ∩ B",
+        "A ∪ B"
+      ],
+      "t": 0,
+      "izoh": "A ∪ B to'plam A ning barcha elementlarini o'z ichiga oladi, chunki A birlashmaning qismi. Shuning uchun A bilan kesishtirganda A ning hech bir elementi yo'qolmaydi. Natijada A ning o'zi qoladi. Bu yutilish xossasi deb ataladi. Javob: A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toplam-ifoda-soddalashtirish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#d3a9a09f"
+    },
+    {
+      "q": "A ⊂ B bo'lgan holda A ∪ B va A ∩ B ifodalar mos ravishda nimaga teng bo'ladi?",
+      "v": [
+        "A va B",
+        "B va A",
+        "A va A",
+        "B va B"
+      ],
+      "t": 1,
+      "izoh": "A ning har bir elementi B da bor, shuning uchun birlashmaga yangi element qo'shilmaydi va A ∪ B = B bo'ladi. Kesishmada esa faqat ikkalasida ham bor elementlar qoladi, ular aynan A ning elementlari. Demak A ∩ B = A. Javob: B va A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toplam-ifoda-soddalashtirish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#738303ba"
+    },
+    {
+      "q": "Har qanday A va B to'plamlar uchun (A \\ B) ∪ (A ∩ B) ifodani soddalashtirilgan ko'rinishda yozing.",
+      "v": [
+        "A",
+        "B",
+        "A ∪ B",
+        "A \\ B"
+      ],
+      "t": 0,
+      "izoh": "A to'plam ikki bo'lakka ajraladi: B da bo'lmagan qismi va B bilan umumiy qismi. Birinchi bo'lak A \\ B, ikkinchisi A ∩ B ga teng. Ularni birlashtirsak A butunicha tiklanadi. Javob: A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toplam-ifoda-soddalashtirish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#efc58674"
+    },
+    {
+      "q": "A \\ (B ∪ C) ifoda quyidagilardan qaysi biriga teng ekanligini aniqlang.",
+      "v": [
+        "(A \\ B) ∪ (A \\ C)",
+        "(A \\ B) ∩ (A \\ C)",
+        "(A ∩ B) \\ C",
+        "A ∪ (B ∩ C)"
+      ],
+      "t": 1,
+      "izoh": "Element chap tomonga tegishli bo'lsa, u A da bor, lekin na B da, na C da. Ya'ni u bir vaqtda A \\ B ga ham, A \\ C ga ham tegishli. Bu esa ularning kesishmasi demakdir. Birlashma olinsa, faqat B da bo'lgan elementlar ham kirib ketardi. Javob: (A \\ B) ∩ (A \\ C).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toplam-ifoda-soddalashtirish",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#a7b0947e"
+    },
+    {
+      "q": "Chizmada A va B to'plamlar Eyler doiralari bilan tasvirlangan va sohalar I, II, III, IV deb belgilangan. II soha qaysi to'plamni ifodalaydi?",
+      "v": [
+        "A ∪ B",
+        "A ∩ B",
+        "A \\ B",
+        "B \\ A"
+      ],
+      "t": 1,
+      "izoh": "II soha ikkala doiraning ustma-ust tushgan qismida joylashgan. Bunday elementlar bir vaqtda A ga ham, B ga ham tegishli bo'ladi. Bu esa kesishmaning ta'rifi. I soha A \\ B ni, III soha B \\ A ni, IV soha esa (A ∪ B)' ni bildiradi. Javob: A ∩ B.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='220' viewBox='0 0 300 220'%3E%3Crect width='300' height='220' fill='%23ffffff'/%3E%3Crect x='12' y='22' width='276' height='176' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='115' cy='110' r='75' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='185' cy='110' r='75' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='40' y='40' font-size='13' fill='%23334155'%3EU%3C/text%3E%3Ctext x='72' y='58' font-size='13' fill='%23334155'%3EA%3C/text%3E%3Ctext x='222' y='58' font-size='13' fill='%23334155'%3EB%3C/text%3E%3Ctext x='80' y='115' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='150' y='115' font-size='13' fill='%23334155' text-anchor='middle'%3EII%3C/text%3E%3Ctext x='220' y='115' font-size='13' fill='%23334155' text-anchor='middle'%3EIII%3C/text%3E%3Ctext x='262' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3EIV%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-soha-aniqlash",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#d65b9ea9"
+    },
+    {
+      "q": "Chizmada M va N to'plamlar Eyler doiralari bilan berilgan. III raqami bilan belgilangan soha qaysi to'plamga mos keladi?",
+      "v": [
+        "M \\ N",
+        "M ∩ N",
+        "N \\ M",
+        "M ∪ N"
+      ],
+      "t": 2,
+      "izoh": "III soha o'ng doiraning ichida, lekin chap doiradan tashqarida joylashgan. Demak uning elementlari N ga tegishli, M ga esa tegishli emas. Bu N dan M ni ayirish natijasidir. Chap tomondagi I soha esa M \\ N ni bildiradi. Javob: N \\ M.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='210' viewBox='0 0 300 210'%3E%3Crect width='300' height='210' fill='%23ffffff'/%3E%3Ccircle cx='120' cy='105' r='70' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='185' cy='105' r='70' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='78' y='60' font-size='13' fill='%23334155'%3EM%3C/text%3E%3Ctext x='227' y='60' font-size='13' fill='%23334155'%3EN%3C/text%3E%3Ctext x='85' y='110' font-size='13' fill='%23334155' text-anchor='middle'%3EI%3C/text%3E%3Ctext x='152' y='110' font-size='13' fill='%23334155' text-anchor='middle'%3EII%3C/text%3E%3Ctext x='220' y='110' font-size='13' fill='%23334155' text-anchor='middle'%3EIII%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "venn-soha-aniqlash",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#291c7372"
+    },
+    {
+      "q": "Uch to'plamning Eyler diagrammasida sohalar 1 dan 7 gacha raqamlangan. (A ∩ B) \\ C to'plam qaysi soha bilan ifodalanadi?",
+      "v": [
+        "4-soha",
+        "7-soha",
+        "5-soha",
+        "6-soha"
+      ],
+      "t": 0,
+      "izoh": "Izlanayotgan elementlar A da ham, B da ham bor, lekin C ga tegishli emas. Chizmada A va B doiralari kesishgan, ammo C doirasidan tashqarida qolgan qism 4-soha. 7-soha uchala doiraning umumiy qismi bo'lgani uchun mos kelmaydi. Javob: 4-soha.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='300' viewBox='0 0 320 300'%3E%3Crect width='320' height='300' fill='%23ffffff'/%3E%3Ccircle cx='120' cy='120' r='75' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='200' cy='120' r='75' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='160' cy='190' r='75' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='52' y='58' font-size='13' fill='%23334155'%3EA%3C/text%3E%3Ctext x='262' y='58' font-size='13' fill='%23334155'%3EB%3C/text%3E%3Ctext x='160' y='285' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='85' y='108' font-size='13' fill='%23334155' text-anchor='middle'%3E1%3C/text%3E%3Ctext x='235' y='108' font-size='13' fill='%23334155' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='160' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='160' y='93' font-size='13' fill='%23334155' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='110' y='185' font-size='13' fill='%23334155' text-anchor='middle'%3E5%3C/text%3E%3Ctext x='210' y='185' font-size='13' fill='%23334155' text-anchor='middle'%3E6%3C/text%3E%3Ctext x='160' y='150' font-size='13' fill='%23334155' text-anchor='middle'%3E7%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "venn-soha-aniqlash",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#a01809cc"
+    },
+    {
+      "q": "Chizmada har bir sohadagi elementlar soni yozilgan. A ∪ B to'plamda nechta element borligini aniqlang.",
+      "v": [
+        "34",
+        "40",
+        "23",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "Birlashmaga uchta soha kiradi: faqat A dagi 14 ta, umumiy qismdagi 9 ta va faqat B dagi 11 ta element. Ularni qo'shamiz: 14 + 9 + 11 = 34. Doiralardan tashqaridagi 6 ta element universal to'plamga tegishli, lekin birlashmaga kirmaydi. Javob: 34.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Crect x='15' y='25' width='270' height='180' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='115' cy='110' r='75' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='185' cy='110' r='75' fill='none' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='42' y='44' font-size='13' fill='%23334155'%3EU%3C/text%3E%3Ctext x='72' y='58' font-size='13' fill='%23334155'%3EA%3C/text%3E%3Ctext x='222' y='58' font-size='13' fill='%23334155'%3EB%3C/text%3E%3Ctext x='80' y='115' font-size='13' fill='%23334155' text-anchor='middle'%3E14%3C/text%3E%3Ctext x='150' y='115' font-size='13' fill='%23334155' text-anchor='middle'%3E9%3C/text%3E%3Ctext x='220' y='115' font-size='13' fill='%23334155' text-anchor='middle'%3E11%3C/text%3E%3Ctext x='256' y='190' font-size='13' fill='%23334155' text-anchor='middle'%3E6%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "venn-soha-aniqlash",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#02823bbc"
+    },
+    {
+      "q": "A = {2; 4} va B = {1; 2; 3; 4; 5} to'plamlar orasidagi to'g'ri munosabatni ko'rsating.",
+      "v": [
+        "A ⊂ B",
+        "B ⊂ A",
+        "A = B",
+        "A ∩ B = ∅"
+      ],
+      "t": 0,
+      "izoh": "A ning har bir elementi, ya'ni 2 va 4, B ichida ham mavjud. Demak A — B ning qism to'plami. Teskarisi noto'g'ri, chunki B da 1, 3 va 5 bor, ular A da yo'q. Kesishma bo'sh ham emas. Javob: A ⊂ B.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toplam-munosabati",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#861837f4"
+    },
+    {
+      "q": "Quyidagi juftliklardan qaysi birida birinchi to'plam ikkinchisining qism to'plami bo'ladi?",
+      "v": [
+        "{1; 2; 3} va {2; 3}",
+        "{0; 5} va {5; 10}",
+        "{3; 6} va {3; 6; 9}",
+        "{7} va {1; 2}"
+      ],
+      "t": 2,
+      "izoh": "Birinchi juftlikda 1 soni ikkinchi to'plamda yo'q, demak shart bajarilmaydi. Ikkinchisida 0 soni yetishmaydi. To'rtinchisida 7 soni umuman uchramaydi. Uchinchi juftlikda esa 3 va 6 ning ikkalasi ham katta to'plamda bor. Javob: {3; 6} va {3; 6; 9}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toplam-munosabati",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#b99ce7dd"
+    },
+    {
+      "q": "M = {x | x — 20 sonining bo'luvchisi} va K = {x | x — 40 sonining bo'luvchisi} to'plamlar orasida qanday munosabat bor?",
+      "v": [
+        "K ⊂ M",
+        "M ⊂ K",
+        "M = K",
+        "M ∩ K = ∅"
+      ],
+      "t": 1,
+      "izoh": "M = {1; 2; 4; 5; 10; 20}, K = {1; 2; 4; 5; 8; 10; 20; 40}. 20 soni 40 ning bo'luvchisi bo'lgani uchun 20 ning har bir bo'luvchisi 40 ni ham bo'ladi. Demak M butunicha K ichida yotadi, lekin K da 8 va 40 qo'shimcha bor. Javob: M ⊂ K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toplam-munosabati",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#b85b3a65"
+    },
+    {
+      "q": "Agar A ⊂ B va B ⊂ C bo'lsa, quyidagi tasdiqlardan qaysi biri har doim ham to'g'ri bo'lavermaydi?",
+      "v": [
+        "A ⊂ C",
+        "A ∩ C = A",
+        "C ⊂ A",
+        "A ∪ B = B"
+      ],
+      "t": 2,
+      "izoh": "Qism to'plam munosabati o'tuvchan, shuning uchun A ⊂ C har doim o'rinli. A butunicha C ichida yotgani uchun A ∩ C = A ham to'g'ri. A ⊂ B dan A ∪ B = B kelib chiqadi. Ammo C ⊂ A faqat uchala to'plam teng bo'lgandagina bajariladi. Javob: C ⊂ A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "toplam-munosabati",
+      "id": "matematika_disk_m01-toplamlar-ular-ustida-amallar-va#df8e8b09"
+    }
+  ]
+}

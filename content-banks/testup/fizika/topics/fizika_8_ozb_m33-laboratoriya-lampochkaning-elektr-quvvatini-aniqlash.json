@@ -1,0 +1,411 @@
+{
+  "nom": "33-mavzu. Laboratoriya Lampochkaning Elektr Quvvatini Aniqlash",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "33-§ dagi laboratoriya ishining mavzusi nima?",
+      "v": [
+        "Iste'molchi (lampochka)ning elektr quvvatini aniqlash",
+        "Elektr tokining ishini o'lchash",
+        "Joul-Lens qonunini tekshirish",
+        "O'tkazgich qarshiligini o'lchash"
+      ],
+      "t": 0,
+      "izoh": "Laboratoriya ishi: iste'molchi (lampochka)ning elektr quvvatini aniqlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#cf9d64a7"
+    },
+    {
+      "q": "Laboratoriya ishining maqsadi nima?",
+      "v": [
+        "Iste'molchining quvvatini tok kuchi va unga qo'yilgan kuchlanish orqali aniqlashni o'rganish",
+        "Lampochkaning qarshiligini o'lchash",
+        "Tok manbaining quvvatini topish",
+        "Saqlagichning ishlashini tekshirish"
+      ],
+      "t": 0,
+      "izoh": "Ishning maqsadi: iste'molchining quvvatini tok kuchi va unga qo'yilgan kuchlanish orqali aniqlashni o'rganish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#588a80d4"
+    },
+    {
+      "q": "Laboratoriya ishida qanday jihozlar kerak?",
+      "v": [
+        "Tok manbai, iste'molchi (lampochka), ampermetr, voltmetr, kalit, ulovchi simlar",
+        "Faqat tok manbai va lampochka",
+        "Tok manbai, reostat, ohmmetr",
+        "Faqat ampermetr va voltmetr"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar: tok manbai, iste'molchi (lampochka), ampermetr, voltmetr, kalit, ulovchi simlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#accbb0e9"
+    },
+    {
+      "q": "Laboratoriya ishida zanjir qanday yig'iladi?",
+      "v": [
+        "Tok manbai, lampochka, ampermetr, voltmetr va kalitdan iborat zanjir yig'iladi",
+        "Faqat lampochka va tok manbai ulanadi",
+        "Faqat voltmetr ketma-ket ulanadi",
+        "Ampermetr lampochkaga parallel ulanadi"
+      ],
+      "t": 0,
+      "izoh": "1-qadam: tok manbai, lampochka, ampermetr, voltmetr va kalitdan iborat zanjirni yig'ing (86-rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#452f87e1"
+    },
+    {
+      "q": "Yig'ilgan zanjirdan keyingi ish qanday?",
+      "v": [
+        "Yig'ilgan elektr zanjirining sxemasini chizish",
+        "Zanjirni darhol uzish",
+        "Voltmetrni almashtirish",
+        "Tok manbaini o'chirish"
+      ],
+      "t": 0,
+      "izoh": "2-qadam: yig'ilgan elektr zanjirining sxemasini chizing.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#7d550556"
+    },
+    {
+      "q": "Zanjir sxemasida ampermetr lampochkaga qanday ulanadi?",
+      "v": [
+        "Ketma-ket",
+        "Parallel",
+        "Aralash",
+        "Ulanmaydi"
+      ],
+      "t": 0,
+      "izoh": "86-rasm sxemasida ampermetr zanjirga ketma-ket ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#aa358901"
+    },
+    {
+      "q": "Zanjir sxemasida voltmetr lampochkaga qanday ulanadi?",
+      "v": [
+        "Parallel",
+        "Ketma-ket",
+        "Aralash",
+        "Ulanmaydi"
+      ],
+      "t": 0,
+      "izoh": "86-rasm sxemasida voltmetr lampochkaga parallel ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#9ed8ded4"
+    },
+    {
+      "q": "Kalitni ulagach qanday asbob ishga tushiriladi?",
+      "v": [
+        "Sekundomer",
+        "Termometr",
+        "Ohmmetr",
+        "Barometr"
+      ],
+      "t": 0,
+      "izoh": "3-qadam: kalitni ulang va sekundomerni ishga tushiring.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#c3cee01e"
+    },
+    {
+      "q": "Tajribada ampermetr va voltmetr ko'rsatkichlari qayerga yoziladi?",
+      "v": [
+        "Jadvalga",
+        "Doskaga",
+        "Daftarga ixtiyoriy tartibda",
+        "Yozilmaydi"
+      ],
+      "t": 0,
+      "izoh": "4-qadam: ampermetr va voltmetr ko'rsatkichlarini aniqlang va jadvalga yozing.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#233e245e"
+    },
+    {
+      "q": "Lampochkadagi tokning quvvati qaysi formula bilan hisoblanadi?",
+      "v": [
+        "P = I·U",
+        "P = I/U",
+        "P = U·t",
+        "P = I²·t"
+      ],
+      "t": 0,
+      "izoh": "5-qadam: P = IU formula bilan lampochkadagi tokning quvvatini hisoblang va jadvalga yozing.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#000c395d"
+    },
+    {
+      "q": "Lampochkaning qancha vaqt yonib turgani qanday aniqlanadi?",
+      "v": [
+        "Kalit uzilib, sekundomer tugmasi bosilib, vaqt jadvalga yoziladi",
+        "Soatga qarab taxmin qilinadi",
+        "Voltmetr orqali o'lchanadi",
+        "Ampermetr orqali aniqlanadi"
+      ],
+      "t": 0,
+      "izoh": "6-qadam: kalitni uzing va ayni vaqtda sekundomer tugmasini bosib, uni to'xtating; lampochkaning yonib turgan t vaqti jadvalga yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#7980171f"
+    },
+    {
+      "q": "Sarflangan elektr energiya miqdori qaysi formula bilan hisoblanadi?",
+      "v": [
+        "W = I·U·t",
+        "W = I·U/t",
+        "W = P/t",
+        "W = U·q/t"
+      ],
+      "t": 0,
+      "izoh": "7-qadam: W = IUt formula yordamida sarflangan elektr energiya miqdorini hisoblang.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#18f3c09c"
+    },
+    {
+      "q": "Tajriba necha marta takrorlanadi?",
+      "v": [
+        "3 marta",
+        "1 marta",
+        "5 marta",
+        "10 marta"
+      ],
+      "t": 0,
+      "izoh": "8-qadam: tajribani 3 marta takrorlang.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#48d111c5"
+    },
+    {
+      "q": "Lampochkaning o'rtacha quvvati qaysi ifoda orqali hisoblanadi?",
+      "v": [
+        "Pₒ'ᵣₜ = (P₁+P₂+P₃)/3",
+        "Pₒ'ᵣₜ = P₁·P₂·P₃",
+        "Pₒ'ᵣₜ = P₁+P₂+P₃",
+        "Pₒ'ᵣₜ = (P₁+P₂+P₃)/2"
+      ],
+      "t": 0,
+      "izoh": "9-qadam: Pₒ'ᵣₜ = (P₁+P₂+P₃)/3 ifoda orqali lampochkaning o'rtacha quvvatini hisoblang.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#d4856ffe"
+    },
+    {
+      "q": "Olingan o'rtacha quvvat natijasi nima bilan taqqoslanadi?",
+      "v": [
+        "Lampochkaga yozilgan quvvat bilan",
+        "Tok manbaining quvvati bilan",
+        "Voltmetr ko'rsatkichi bilan",
+        "Ampermetr ko'rsatkichi bilan"
+      ],
+      "t": 0,
+      "izoh": "Olingan natijani lampochkaga yozilgan quvvat bilan taqqoslang.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#d7b692a7"
+    },
+    {
+      "q": "Laboratoriya ishining oxirgi bosqichi nima?",
+      "v": [
+        "Natijalarni tahlil qilish va xulosa chiqarish",
+        "Zanjirni qayta yig'ish",
+        "Yangi lampochka o'rnatish",
+        "Hisoblagichni tekshirish"
+      ],
+      "t": 0,
+      "izoh": "10-qadam: natijalarni tahlil qiling va xulosa chiqaring.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#8e7e8421"
+    },
+    {
+      "q": "Laboratoriya jadvalida qaysi kattaliklar ustunlari bor?",
+      "v": [
+        "I (A), U (V), P (W), Pₒ'ᵣₜ (W), t (s), W (W·s)",
+        "Faqat I va U",
+        "Faqat P va t",
+        "R, q, F, m"
+      ],
+      "t": 0,
+      "izoh": "Jadval ustunlari: I (A), U (V), P (W), Pₒ'ᵣₜ (W), t (s), W (W·s).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#a684e9e3"
+    },
+    {
+      "q": "Jadvalda sarflangan energiya W qanday birlikda yoziladi?",
+      "v": [
+        "W·s",
+        "kW·h",
+        "J/soat",
+        "V·A"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda W ustuni W·s birligida berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#cee9ebcc"
+    },
+    {
+      "q": "Ampermetr zanjirda nimani o'lchaydi?",
+      "v": [
+        "Lampochkadan o'tayotgan tok kuchini",
+        "Lampochkadagi kuchlanishni",
+        "Lampochkaning qarshiligini",
+        "Tok manbaining quvvatini"
+      ],
+      "t": 0,
+      "izoh": "Ampermetr zanjirdan o'tayotgan tok kuchini o'lchaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#70e1cd5d"
+    },
+    {
+      "q": "Voltmetr tajribada nimani o'lchaydi?",
+      "v": [
+        "Lampochkaga qo'yilgan kuchlanishni",
+        "Tok kuchini",
+        "Sarflangan energiyani",
+        "Vaqtni"
+      ],
+      "t": 0,
+      "izoh": "Voltmetr lampochkaga qo'yilgan kuchlanishni o'lchaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#eaa0f369"
+    },
+    {
+      "q": "Kalit zanjirda qanday vazifani bajaradi?",
+      "v": [
+        "Zanjirni ulash va uzish",
+        "Tok kuchini oshirish",
+        "Kuchlanishni kamaytirish",
+        "Qarshilikni o'zgartirish"
+      ],
+      "t": 0,
+      "izoh": "Kalit yordamida zanjir ulanadi va uziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#738f3647"
+    },
+    {
+      "q": "Tajribada lampochkadan I = 0,5 A tok o'tib, unga U = 6 V kuchlanish qo'yilgan bo'lsa, lampochkaning quvvati qancha?",
+      "v": [
+        "3 W",
+        "12 W",
+        "6,5 W",
+        "0,08 W"
+      ],
+      "t": 0,
+      "izoh": "P = IU = 0,5·6 = 3 W.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#d1ce3817"
+    },
+    {
+      "q": "Lampochkadan 0,5 A tok o'tib, unga 6 V kuchlanish qo'yilgan holda u 60 s yonsa, sarflangan energiya qancha?",
+      "v": [
+        "180 J",
+        "3 J",
+        "18 J",
+        "360 J"
+      ],
+      "t": 0,
+      "izoh": "W = IUt = 0,5·6·60 = 180 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#110056d6"
+    },
+    {
+      "q": "Manbadagi kuchlanish oshirilsa yoki kamaytirilsa lampochkaning quvvati o'zgaradimi?",
+      "v": [
+        "Ha, tok kuchi o'zgarishi bilan quvvat ham o'zgaradi",
+        "Yo'q, quvvat doimiy",
+        "Faqat kuchlanish kamayganda o'zgaradi",
+        "Quvvat faqat vaqtga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish o'zgarishi tok kuchini o'zgartiradi, P = IU bo'lgani uchun lampochkaning quvvati ham o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#643cc011"
+    },
+    {
+      "q": "Laboratoriya ishida lampochka quvvati katta bo'lgan lampochka bilan almashtirilsa, ampermetr ko'rsatishi qanday o'zgaradi?",
+      "v": [
+        "Oshadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Quvvati katta lampochkadan katta tok o'tadi, shuning uchun ampermetr ko'rsatishi oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#a09fbedd"
+    },
+    {
+      "q": "Iste'molchi tomonidan sarflangan elektr energiya W tokning bajargan ishiga teng deyish mumkinmi?",
+      "v": [
+        "Mumkin, chunki sarflangan energiya miqdor jihatdan tok ishiga teng",
+        "Mumkin emas, ular turli kattaliklar",
+        "Faqat lampochkada teng",
+        "Faqat dvigatelda teng"
+      ],
+      "t": 0,
+      "izoh": "Sarflangan elektr energiya miqdor jihatdan elektr tokining bajargan ishiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#f9a0fa69"
+    },
+    {
+      "q": "O'rtacha quvvatni hisoblashda tajriba natijalari nechtadan olinadi?",
+      "v": [
+        "Uchta tajribadan",
+        "Ikkita tajribadan",
+        "Bitta tajribadan",
+        "Beshta tajribadan"
+      ],
+      "t": 0,
+      "izoh": "Tajriba 3 marta takrorlanadi va o'rtacha quvvat uchta natija asosida hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m33-laboratoriya-lampochkaning-elektr-quvvatini-aniqlash#69e8a044"
+    }
+  ]
+}

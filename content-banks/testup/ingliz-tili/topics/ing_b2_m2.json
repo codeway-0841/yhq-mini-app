@@ -1,0 +1,1280 @@
+{
+  "nom": "Mixed conditionals",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "If I had learnt to swim as a child, I ___ afraid of the sea now.",
+      "v": [
+        "wouldn't be",
+        "would not have been",
+        "hadn't been",
+        "am not"
+      ],
+      "t": 0,
+      "izoh": "O'tmish sabab → hozirgi natija: wouldn't be (#117).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#d2fb3f76"
+    },
+    {
+      "q": "If she ___ so stubborn, she would have accepted the offer last week.",
+      "v": [
+        "wouldn't have been",
+        "weren't",
+        "wouldn't be",
+        "isn't"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi tabiat → Past Simple: weren't.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#4e0b8202"
+    },
+    {
+      "q": "Find the mistake: 'If we had bought the flat, we would have lived near the park now.'",
+      "v": [
+        "had bought",
+        "would have lived",
+        "near the park",
+        "now"
+      ],
+      "t": 1,
+      "izoh": "Natija hozir — would live (#117).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#fc906011"
+    },
+    {
+      "q": "___ you water the plants, they will die in a week.",
+      "v": [
+        "Provided",
+        "As long as",
+        "If",
+        "Unless"
+      ],
+      "t": 3,
+      "izoh": "unless = if not: sug'ormasangiz.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#5717d017"
+    },
+    {
+      "q": "You can keep the key ___ you lock the door every night.",
+      "v": [
+        "unless",
+        "as long as",
+        "otherwise",
+        "in case"
+      ],
+      "t": 1,
+      "izoh": "as long as = faqat shu shart bilan.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#086ebaed"
+    },
+    {
+      "q": "Find the mistake: 'Unless you don't book early, the hotel will be full.'",
+      "v": [
+        "Unless",
+        "don't book",
+        "early",
+        "will be full"
+      ],
+      "t": 1,
+      "izoh": "unless dan keyin inkor yo'q (#97).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#3d8f5058"
+    },
+    {
+      "q": "It's time we ___ the old computer; it crashes every day.",
+      "v": [
+        "replace",
+        "have replaced",
+        "will replace",
+        "replaced"
+      ],
+      "t": 3,
+      "izoh": "It's time + Past Simple (#118).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#84bdc047"
+    },
+    {
+      "q": "I'd rather you ___ my phone without asking.",
+      "v": [
+        "don't use",
+        "didn't use",
+        "won't use",
+        "shouldn't use"
+      ],
+      "t": 1,
+      "izoh": "I'd rather + boshqa odam + Past Simple (#118).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#04f40d4b"
+    },
+    {
+      "q": "Which sentence links a present fact to a past result?",
+      "v": [
+        "If I had more money, I would travel.",
+        "If I had saved, I would have travelled.",
+        "If I were rich, I would have travelled last year.",
+        "If I had saved, I would be rich now."
+      ],
+      "t": 2,
+      "izoh": "were (hozir) → would have travelled (o'tmish).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#59f6e992"
+    },
+    {
+      "q": "If he had listened to the doctor, he ___ in hospital today.",
+      "v": [
+        "wouldn't be",
+        "wouldn't have been",
+        "had not been",
+        "isn't"
+      ],
+      "t": 0,
+      "izoh": "Natija bugun — wouldn't be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#fe46ff08"
+    },
+    {
+      "q": "Leave early; ___ you will miss the last train.",
+      "v": [
+        "unless",
+        "provided",
+        "otherwise",
+        "as long as"
+      ],
+      "t": 2,
+      "izoh": "otherwise = aks holda, ikki gap orasida.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#ce92fae5"
+    },
+    {
+      "q": "Find the mistake: 'I'd rather stayed at home tonight.'",
+      "v": [
+        "I'd rather",
+        "stayed",
+        "at home",
+        "tonight"
+      ],
+      "t": 1,
+      "izoh": "Ega bir xil → asos shakl: I'd rather stay.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#acb77a81"
+    },
+    {
+      "q": "If I had learned to drive, I ___ a car now.",
+      "v": [
+        "would have",
+        "would have had",
+        "had had",
+        "have"
+      ],
+      "t": 0,
+      "izoh": "O'tmish -> hozir: would have.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#6a9002bd"
+    },
+    {
+      "q": "If he were more patient, he ___ the meeting so quickly yesterday.",
+      "v": [
+        "wouldn't leave",
+        "wouldn't have left",
+        "hadn't left",
+        "didn't leave"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi tabiat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#9b8f4dad"
+    },
+    {
+      "q": "Which sentence is a correct mixed conditional?",
+      "v": [
+        "If I had saved money, I would be rich now.",
+        "If I had saved money, I would have been rich now.",
+        "If I saved money, I would be rich now.",
+        "If I would save money, I would be rich now."
+      ],
+      "t": 0,
+      "izoh": "O'tmish shart + hozirgi natija (would be).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#7c274690"
+    },
+    {
+      "q": "Which sentence is a correct mixed conditional?",
+      "v": [
+        "If she were taller, she would have joined the team last year.",
+        "If she were taller, she would join the team last year.",
+        "If she had been taller, she would join the team last year.",
+        "If she is taller, she would have joined the team."
+      ],
+      "t": 0,
+      "izoh": "Hozirgi holat + o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#7c274690~2"
+    },
+    {
+      "q": "If we had caught the earlier flight, we ___ at the hotel by now.",
+      "v": [
+        "would have been",
+        "would be",
+        "had been",
+        "are"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#b525b342"
+    },
+    {
+      "q": "If I didn't work night shifts, I ___ your party last Friday.",
+      "v": [
+        "would attend",
+        "would have attended",
+        "had attended",
+        "attended"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi holat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#c3372b90"
+    },
+    {
+      "q": "If he had taken his medicine, he ___ better today.",
+      "v": [
+        "would have felt",
+        "would feel",
+        "had felt",
+        "feels"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would feel.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#e3e21911"
+    },
+    {
+      "q": "If she weren't so proud, she ___ for help last week.",
+      "v": [
+        "would ask",
+        "would have asked",
+        "had asked",
+        "asked"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi tabiat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#333040d7"
+    },
+    {
+      "q": "Find the error: 'If I had won the lottery, I would have been rich now.'",
+      "v": [
+        "would have been should be would be",
+        "had won is wrong",
+        "now is wrong",
+        "no error"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi natija uchun would be kerak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#82b720a8"
+    },
+    {
+      "q": "Find the error: 'If she were more careful, she wouldn't broke the vase yesterday.'",
+      "v": [
+        "were is wrong",
+        "wouldn't broke should be wouldn't have broken",
+        "yesterday is wrong",
+        "no error"
+      ],
+      "t": 1,
+      "izoh": "O'tmish natija: wouldn't have broken.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#ffa840b5"
+    },
+    {
+      "q": "'I didn't learn English, so I don't have a good job now.' Which mixed conditional matches?",
+      "v": [
+        "If I had learned English, I would have a good job now.",
+        "If I had learned English, I would have had a good job now.",
+        "If I learned English, I would have a good job now.",
+        "If I learn English, I would have a good job now."
+      ],
+      "t": 0,
+      "izoh": "O'tmish sabab -> hozirgi natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#19ecf46a"
+    },
+    {
+      "q": "'I'm not rich, so I didn't buy that house.' Which mixed conditional matches?",
+      "v": [
+        "If I were rich, I would have bought that house.",
+        "If I were rich, I would buy that house.",
+        "If I had been rich, I would buy that house.",
+        "If I am rich, I would have bought that house."
+      ],
+      "t": 0,
+      "izoh": "Hozirgi holat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#72ec36dc"
+    },
+    {
+      "q": "If they had invested wisely, they ___ millionaires today.",
+      "v": [
+        "would have been",
+        "would be",
+        "had been",
+        "are"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#01f950e1"
+    },
+    {
+      "q": "If I weren't so busy this week, I ___ you move house last Sunday.",
+      "v": [
+        "would help",
+        "would have helped",
+        "had helped",
+        "helped"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi holat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#ab718627"
+    },
+    {
+      "q": "If we had planted trees years ago, the garden ___ shady now.",
+      "v": [
+        "would have been",
+        "would be",
+        "had been",
+        "is"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#0ef3a1a9"
+    },
+    {
+      "q": "If she spoke Chinese, she ___ that contract last month.",
+      "v": [
+        "would sign",
+        "would have signed",
+        "had signed",
+        "signed"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi qobiliyat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#67b4fca9"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "If he had gone to university, he would have a degree now.",
+        "If he had gone to university, he would have had a degree now.",
+        "If he went to university, he would have a degree now.",
+        "If he would go to university, he would have a degree now."
+      ],
+      "t": 0,
+      "izoh": "O'tmish shart + hozirgi natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#21ac92a9"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "If I knew you were coming, I would have baked a cake.",
+        "If I knew you were coming, I would bake a cake.",
+        "If I had known you, I would bake a cake now.",
+        "If I know you were coming, I would have baked a cake."
+      ],
+      "t": 0,
+      "izoh": "Hozirgi bilim -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#21ac92a9~2"
+    },
+    {
+      "q": "If they had repaired the roof, it ___ now.",
+      "v": [
+        "wouldn't have leaked",
+        "wouldn't leak",
+        "hadn't leaked",
+        "doesn't leak"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: wouldn't leak.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#7e1fb45f"
+    },
+    {
+      "q": "If I weren't scared of dogs, I ___ your puppy yesterday.",
+      "v": [
+        "would hold",
+        "would have held",
+        "had held",
+        "held"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi qo'rquv -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#12a0f99c"
+    },
+    {
+      "q": "If she had married young, she ___ grandchildren by now.",
+      "v": [
+        "would have had",
+        "would have",
+        "had had",
+        "has"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would have.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#f0642ac1"
+    },
+    {
+      "q": "If he didn't smoke, he ___ so ill last winter.",
+      "v": [
+        "wouldn't get",
+        "wouldn't have got",
+        "hadn't got",
+        "didn't get"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi odat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#252bd830"
+    },
+    {
+      "q": "Put the mixed conditional in order: rich / be / would / now / I",
+      "v": [
+        "I would be rich now",
+        "I would rich be now",
+        "I be would rich now",
+        "would I be rich now"
+      ],
+      "t": 0,
+      "izoh": "would + be + adjective + now.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#88c422ad"
+    },
+    {
+      "q": "'She left the company, so she isn't the manager now.' Which matches?",
+      "v": [
+        "If she hadn't left the company, she would be the manager now.",
+        "If she hadn't left the company, she would have been the manager now.",
+        "If she didn't leave the company, she would be the manager now.",
+        "If she doesn't leave, she would be the manager now."
+      ],
+      "t": 0,
+      "izoh": "O'tmish sabab -> hozirgi natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#341afad1"
+    },
+    {
+      "q": "'He's lazy, so he didn't finish the project.' Which matches?",
+      "v": [
+        "If he weren't lazy, he would have finished the project.",
+        "If he weren't lazy, he would finish the project.",
+        "If he hadn't been lazy, he would finish the project.",
+        "If he isn't lazy, he would have finished the project."
+      ],
+      "t": 0,
+      "izoh": "Hozirgi tabiat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#76fba874"
+    },
+    {
+      "q": "If I had saved my files, I ___ them now.",
+      "v": [
+        "would have had",
+        "would have",
+        "had had",
+        "have"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would have.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#fa1f90b3"
+    },
+    {
+      "q": "If you were a better cook, you ___ dinner last night.",
+      "v": [
+        "wouldn't ruin",
+        "wouldn't have ruined",
+        "hadn't ruined",
+        "didn't ruin"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi qobiliyat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#836b27fe"
+    },
+    {
+      "q": "If we had moved abroad, our children ___ bilingual today.",
+      "v": [
+        "would have been",
+        "would be",
+        "had been",
+        "are"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#3cd297aa"
+    },
+    {
+      "q": "Find the error: 'If I had gone to bed early, I wouldn't have been sleepy now.'",
+      "v": [
+        "wouldn't have been should be wouldn't be",
+        "had gone is wrong",
+        "now is wrong",
+        "no error"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi natija uchun wouldn't be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#4b26f319"
+    },
+    {
+      "q": "Which is a correct mixed conditional?",
+      "v": [
+        "If I had eaten breakfast, I wouldn't be hungry now.",
+        "If I had eaten breakfast, I wouldn't have been hungry now.",
+        "If I ate breakfast, I wouldn't be hungry now.",
+        "If I would eat breakfast, I wouldn't be hungry."
+      ],
+      "t": 0,
+      "izoh": "O'tmish shart + hozirgi natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#f6af9c74"
+    },
+    {
+      "q": "If she trusted people more, she ___ that deal last year.",
+      "v": [
+        "would accept",
+        "would have accepted",
+        "had accepted",
+        "accepted"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi tabiat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#e490620d"
+    },
+    {
+      "q": "If he had exercised regularly, he ___ fitter now.",
+      "v": [
+        "would have been",
+        "would be",
+        "had been",
+        "is"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#03031301"
+    },
+    {
+      "q": "If I weren't so forgetful, I ___ my keys this morning.",
+      "v": [
+        "wouldn't lose",
+        "wouldn't have lost",
+        "hadn't lost",
+        "didn't lose"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi tabiat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#03984cab"
+    },
+    {
+      "q": "'We didn't book tickets, so we aren't at the concert now.' Which matches?",
+      "v": [
+        "If we had booked tickets, we would be at the concert now.",
+        "If we had booked tickets, we would have been at the concert now.",
+        "If we booked tickets, we would be at the concert now.",
+        "If we book tickets, we would be at the concert now."
+      ],
+      "t": 0,
+      "izoh": "O'tmish -> hozir.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#64e00881"
+    },
+    {
+      "q": "'I don't have a licence, so I couldn't drive you yesterday.' Which matches?",
+      "v": [
+        "If I had a licence, I could have driven you.",
+        "If I had a licence, I could drive you.",
+        "If I had had a licence, I could drive you.",
+        "If I have a licence, I could have driven you."
+      ],
+      "t": 0,
+      "izoh": "Hozirgi holat -> o'tmish natija (could have).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#4119144b"
+    },
+    {
+      "q": "If they had listened to the warnings, they ___ safe now.",
+      "v": [
+        "would have been",
+        "would be",
+        "had been",
+        "are"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#6071c88f"
+    },
+    {
+      "q": "If I understood the rules, I ___ that penalty in the game last week.",
+      "v": [
+        "wouldn't get",
+        "wouldn't have got",
+        "hadn't got",
+        "didn't get"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi bilim -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#82c940e1"
+    },
+    {
+      "q": "If she had chosen science, she ___ in a lab today.",
+      "v": [
+        "would have worked",
+        "would work",
+        "had worked",
+        "works"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would work.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#c86e0ad8"
+    },
+    {
+      "q": "Put in order: now / here / would / you / be",
+      "v": [
+        "you would be here now",
+        "you would here be now",
+        "you be would here now",
+        "would you be here now"
+      ],
+      "t": 0,
+      "izoh": "subject + would + be + place + now.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#a028fdac"
+    },
+    {
+      "q": "If he weren't allergic to nuts, he ___ that cake at the party.",
+      "v": [
+        "would eat",
+        "would have eaten",
+        "had eaten",
+        "ate"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi holat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#0c904166"
+    },
+    {
+      "q": "If we had kept the receipt, we ___ a refund now.",
+      "v": [
+        "would have got",
+        "would get",
+        "had got",
+        "get"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would get.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#e1941c51"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "If I had studied harder, I would understand this topic now.",
+        "If I had studied harder, I would have understood this topic now.",
+        "If I studied harder, I would understand this topic now.",
+        "If I would study harder, I would understand now."
+      ],
+      "t": 0,
+      "izoh": "O'tmish shart + hozirgi natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#21ac92a9~3"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "If he were more responsible, he wouldn't have lost his job.",
+        "If he were more responsible, he wouldn't lose his job last month.",
+        "If he had been responsible, he wouldn't lose his job.",
+        "If he is responsible, he wouldn't have lost his job."
+      ],
+      "t": 0,
+      "izoh": "Hozirgi tabiat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#21ac92a9~4"
+    },
+    {
+      "q": "If I had booked a hotel, I ___ in a nice room right now.",
+      "v": [
+        "would have stayed",
+        "would be staying",
+        "had stayed",
+        "stay"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozirgi davomiy: would be staying.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#1e320aa9"
+    },
+    {
+      "q": "If she weren't so stubborn, she ___ the apology yesterday.",
+      "v": [
+        "would accept",
+        "would have accepted",
+        "had accepted",
+        "accepted"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi tabiat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#7960460c"
+    },
+    {
+      "q": "Find the error: 'If we had left earlier, we would be there now, and we wouldn't have missed the start' — which clause is wrong?",
+      "v": [
+        "No error; both mixed and third parts are correct",
+        "would be there now is wrong",
+        "wouldn't have missed is wrong",
+        "had left is wrong"
+      ],
+      "t": 0,
+      "izoh": "Gap togri: aralash va 3-shart birga.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#c9fc5275"
+    },
+    {
+      "q": "'I'm tired now because I didn't sleep well.' Which mixed conditional matches?",
+      "v": [
+        "If I had slept well, I wouldn't be tired now.",
+        "If I had slept well, I wouldn't have been tired now.",
+        "If I slept well, I wouldn't be tired now.",
+        "If I sleep well, I wouldn't be tired now."
+      ],
+      "t": 0,
+      "izoh": "O'tmish sabab -> hozirgi natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#e57261ec"
+    },
+    {
+      "q": "'She isn't confident, so she didn't apply for the job.' Which matches?",
+      "v": [
+        "If she were confident, she would have applied for the job.",
+        "If she were confident, she would apply for the job.",
+        "If she had been confident, she would apply for the job.",
+        "If she is confident, she would have applied."
+      ],
+      "t": 0,
+      "izoh": "Hozirgi holat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#466cf8ef"
+    },
+    {
+      "q": "If they had built the road, the village ___ isolated now.",
+      "v": [
+        "wouldn't have been",
+        "wouldn't be",
+        "hadn't been",
+        "isn't"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: wouldn't be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#30cc08ad"
+    },
+    {
+      "q": "If I earned more, I ___ that debt off years ago.",
+      "v": [
+        "would pay",
+        "would have paid",
+        "had paid",
+        "paid"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi holat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#35723540"
+    },
+    {
+      "q": "If we had adopted the puppy, it ___ part of our family today.",
+      "v": [
+        "would have been",
+        "would be",
+        "had been",
+        "is"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#9f028c57"
+    },
+    {
+      "q": "If he weren't so honest, he ___ about the accident last week.",
+      "v": [
+        "would lie",
+        "would have lied",
+        "had lied",
+        "lied"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi tabiat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#468c0f86"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "If I had taken that train, I would be home by now.",
+        "If I had taken that train, I would have been home by now.",
+        "If I took that train, I would be home by now.",
+        "If I would take that train, I would be home now."
+      ],
+      "t": 0,
+      "izoh": "O'tmish shart + hozirgi natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#21ac92a9~5"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "If she loved him, she wouldn't have left him last year.",
+        "If she loved him, she wouldn't leave him last year.",
+        "If she had loved him, she wouldn't leave him.",
+        "If she loves him, she wouldn't have left."
+      ],
+      "t": 0,
+      "izoh": "Hozirgi his -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#21ac92a9~6"
+    },
+    {
+      "q": "If my parents had encouraged me, I ___ more ambitious today.",
+      "v": [
+        "would have been",
+        "would be",
+        "had been",
+        "am"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#122232e6"
+    },
+    {
+      "q": "If I didn't hate mornings, I ___ that early meeting yesterday.",
+      "v": [
+        "wouldn't miss",
+        "wouldn't have missed",
+        "hadn't missed",
+        "didn't miss"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi holat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#2abe0280"
+    },
+    {
+      "q": "Put in order: doctor / a / be / would / she",
+      "v": [
+        "she would be a doctor",
+        "she would a doctor be",
+        "she be would a doctor",
+        "would she be a doctor"
+      ],
+      "t": 0,
+      "izoh": "subject + would + be + noun.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#dd3107ac"
+    },
+    {
+      "q": "'We spent all our savings, so we can't travel now.' Which matches?",
+      "v": [
+        "If we hadn't spent all our savings, we could travel now.",
+        "If we hadn't spent all our savings, we could have travelled now.",
+        "If we didn't spend our savings, we could travel now.",
+        "If we don't spend our savings, we could travel."
+      ],
+      "t": 0,
+      "izoh": "O'tmish sabab -> hozirgi imkoniyat.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#b8d5dee6"
+    },
+    {
+      "q": "'He isn't tall, so he wasn't chosen for the team.' Which matches?",
+      "v": [
+        "If he were tall, he would have been chosen for the team.",
+        "If he were tall, he would be chosen for the team.",
+        "If he had been tall, he would be chosen.",
+        "If he is tall, he would have been chosen."
+      ],
+      "t": 0,
+      "izoh": "Hozirgi holat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#d2247017"
+    },
+    {
+      "q": "If I had backed up my phone, I ___ all my photos now.",
+      "v": [
+        "would have had",
+        "would have",
+        "had had",
+        "have"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would have.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#c9cd71c7"
+    },
+    {
+      "q": "If she weren't afraid of water, she ___ swimming with us last weekend.",
+      "v": [
+        "would come",
+        "would have come",
+        "had come",
+        "came"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi qo'rquv -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#40b508e9"
+    },
+    {
+      "q": "If they had recycled more, the planet ___ cleaner today.",
+      "v": [
+        "would have been",
+        "would be",
+        "had been",
+        "is"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#1e0ba5f3"
+    },
+    {
+      "q": "Find the error: 'If I had learned to swim, I would saved him last summer.'",
+      "v": [
+        "would saved should be would have saved",
+        "had learned is wrong",
+        "last summer is wrong",
+        "no error"
+      ],
+      "t": 0,
+      "izoh": "O'tmish natija: would have saved.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#fe9d1369"
+    },
+    {
+      "q": "Find the error: 'If he weren't so rude, people would have liked him now.'",
+      "v": [
+        "would have liked should be would like",
+        "weren't is wrong",
+        "now is wrong",
+        "no error"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi natija uchun would like.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#8fd02d5f"
+    },
+    {
+      "q": "If we had bought insurance, we ___ so worried now.",
+      "v": [
+        "wouldn't have been",
+        "wouldn't be",
+        "hadn't been",
+        "aren't"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: wouldn't be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#87da976e"
+    },
+    {
+      "q": "If I were a morning person, I ___ that sunrise hike yesterday.",
+      "v": [
+        "would join",
+        "would have joined",
+        "had joined",
+        "joined"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi holat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#143ee7cd"
+    },
+    {
+      "q": "If she had practised the piano, she ___ at the concert next week — but choose the past-to-present option describing skill now.",
+      "v": [
+        "If she had practised, she would play well now.",
+        "If she had practised, she would have played well now.",
+        "If she practised, she would play well now.",
+        "If she would practise, she would play well now."
+      ],
+      "t": 0,
+      "izoh": "O'tmish shart + hozirgi qobiliyat.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#6d6ee4f4"
+    },
+    {
+      "q": "'I didn't take the medicine, so I still feel sick.' Which matches?",
+      "v": [
+        "If I had taken the medicine, I would feel better now.",
+        "If I had taken the medicine, I would have felt better now.",
+        "If I took the medicine, I would feel better now.",
+        "If I take the medicine, I would feel better."
+      ],
+      "t": 0,
+      "izoh": "O'tmish sabab -> hozirgi natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#3c08d37c"
+    },
+    {
+      "q": "'He doesn't like crowds, so he didn't go to the festival.' Which matches?",
+      "v": [
+        "If he liked crowds, he would have gone to the festival.",
+        "If he liked crowds, he would go to the festival.",
+        "If he had liked crowds, he would go.",
+        "If he likes crowds, he would have gone."
+      ],
+      "t": 0,
+      "izoh": "Hozirgi holat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#9a8b256a"
+    },
+    {
+      "q": "If they had taught me chess as a child, I ___ good at it now.",
+      "v": [
+        "would have been",
+        "would be",
+        "had been",
+        "am"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#9ab092e6"
+    },
+    {
+      "q": "If I weren't so tired, I ___ the whole book last night.",
+      "v": [
+        "would read",
+        "would have read",
+        "had read",
+        "read"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi holat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#53407c71"
+    },
+    {
+      "q": "Put in order: still / here / would / be / he",
+      "v": [
+        "he would still be here",
+        "he would be still here",
+        "he still would be here",
+        "would he still be here"
+      ],
+      "t": 0,
+      "izoh": "subject + would + still + be + here.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#d7ba5fe1"
+    },
+    {
+      "q": "'We moved to the city, so the kids don't see their grandparents often now.' Which matches?",
+      "v": [
+        "If we hadn't moved to the city, the kids would see their grandparents often.",
+        "If we hadn't moved, the kids would have seen their grandparents often.",
+        "If we didn't move, the kids would see them often.",
+        "If we don't move, the kids would see them."
+      ],
+      "t": 0,
+      "izoh": "O'tmish sabab -> hozirgi natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#fb35e6b0"
+    },
+    {
+      "q": "'She's impatient, so she quit the course.' Which matches?",
+      "v": [
+        "If she weren't impatient, she wouldn't have quit the course.",
+        "If she weren't impatient, she wouldn't quit the course.",
+        "If she hadn't been impatient, she wouldn't quit.",
+        "If she isn't impatient, she wouldn't have quit."
+      ],
+      "t": 0,
+      "izoh": "Hozirgi tabiat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#c198b4da"
+    },
+    {
+      "q": "If I had chosen a different career, I ___ happier today.",
+      "v": [
+        "would have felt",
+        "would feel",
+        "had felt",
+        "feel"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would feel.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#c6abccb8"
+    },
+    {
+      "q": "If he didn't have a broken leg, he ___ in the marathon last weekend.",
+      "v": [
+        "would run",
+        "would have run",
+        "had run",
+        "ran"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi holat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#c942c7a6"
+    },
+    {
+      "q": "If we had saved the document, we ___ to redo the work now.",
+      "v": [
+        "wouldn't have had",
+        "wouldn't have",
+        "hadn't had",
+        "don't have"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: wouldn't have (to).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#3f3082c1"
+    },
+    {
+      "q": "Find the error: 'If I was you, I would have told the truth.'",
+      "v": [
+        "was should be were",
+        "would have told is wrong",
+        "truth is wrong",
+        "no error"
+      ],
+      "t": 0,
+      "izoh": "Shartda 'were' ishlatiladi (If I were you).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#43af47dc"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "If I weren't so shy, I would have made more friends by now.",
+        "If I weren't so shy, I would made more friends.",
+        "If I hadn't been shy, I would make more friends by now.",
+        "If I am not shy, I would have made friends."
+      ],
+      "t": 0,
+      "izoh": "Hozirgi tabiat -> o'tmish/hozirgacha natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#21ac92a9~7"
+    },
+    {
+      "q": "If they had warned us about the storm, we ___ at home safe right now.",
+      "v": [
+        "would have stayed",
+        "would be staying",
+        "had stayed",
+        "stay"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozirgi davomiy: would be staying.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#32521861"
+    },
+    {
+      "q": "If she cared about grades, she ___ that exam last term.",
+      "v": [
+        "wouldn't fail",
+        "wouldn't have failed",
+        "hadn't failed",
+        "didn't fail"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi holat -> o'tmish natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#8152b704"
+    },
+    {
+      "q": "If I had chosen the aisle seat, I ___ more comfortable now.",
+      "v": [
+        "would have been",
+        "would be",
+        "had been",
+        "am"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#70e32a96"
+    },
+    {
+      "q": "'I'm not a member, so I couldn't use the gym yesterday.' Which matches?",
+      "v": [
+        "If I were a member, I could have used the gym.",
+        "If I were a member, I could use the gym.",
+        "If I had been a member, I could use the gym.",
+        "If I am a member, I could have used the gym."
+      ],
+      "t": 0,
+      "izoh": "Hozirgi holat -> o'tmish (could have).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#0a0bf7f1"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "If we had left the party earlier, we would be asleep by now.",
+        "If we had left the party earlier, we would have been asleep by now.",
+        "If we left the party earlier, we would be asleep by now.",
+        "If we would leave earlier, we would be asleep."
+      ],
+      "t": 0,
+      "izoh": "O'tmish shart + hozirgi natija.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#21ac92a9~8"
+    },
+    {
+      "q": "If he weren't so competitive, he ___ so upset about losing yesterday.",
+      "v": [
+        "wouldn't be",
+        "wouldn't have been",
+        "hadn't been",
+        "isn't"
+      ],
+      "t": 1,
+      "izoh": "Hozirgi tabiat -> o'tmish natija (wouldn't have been).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#d33b790f"
+    },
+    {
+      "q": "If my grandfather had kept the land, it ___ ours today.",
+      "v": [
+        "would have been",
+        "would be",
+        "had been",
+        "is"
+      ],
+      "t": 1,
+      "izoh": "O'tmish -> hozir: would be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m2#84abe070"
+    }
+  ]
+}

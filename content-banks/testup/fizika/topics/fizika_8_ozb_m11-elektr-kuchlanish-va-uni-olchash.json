@@ -1,0 +1,456 @@
+{
+  "nom": "11-mavzu. Elektr Kuchlanish Va Uni Olchash",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektr kuchlanish deb nimaga aytiladi?",
+      "v": [
+        "Zanjirning biror qismidan 1 kulon zaryad o'tganida bajariladigan ishga son qiymati jihatidan teng bo'lgan kattalik",
+        "Zanjirdan o'tayotgan tokning tezligi",
+        "O'tkazgichning tokka qarshilik ko'rsatish xossasi",
+        "Zanjirdagi zaryadli zarralarning umumiy soni"
+      ],
+      "t": 0,
+      "izoh": "Zanjirning biror qismidan 1 kulon zaryad o'tganida bajariladigan ishga son qiymati jihatidan teng bo'lgan kattalik elektr kuchlanish deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#8fe96442"
+    },
+    {
+      "q": "Elektr kuchlanish qanday harf bilan belgilanadi?",
+      "v": [
+        "U harfi bilan",
+        "I harfi bilan",
+        "R harfi bilan",
+        "q harfi bilan"
+      ],
+      "t": 0,
+      "izoh": "Elektr kuchlanish U harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#5adf8cf6"
+    },
+    {
+      "q": "Elektr kuchlanish formulasini ko'rsating.",
+      "v": [
+        "U = A/q",
+        "U = q/A",
+        "U = A·q",
+        "U = q/t"
+      ],
+      "t": 0,
+      "izoh": "Ta'rifga ko'ra elektr kuchlanish formulasi U = A/q ko'rinishida ifodalanadi, bunda A — zanjirdan q zaryad o'tganda bajarilgan ish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#2ed41989"
+    },
+    {
+      "q": "U = A/q formulasida A nimani anglatadi?",
+      "v": [
+        "Zanjirdan q zaryad o'tganda uning shu qismida bajarilgan ishni",
+        "Zanjirdagi tok kuchini",
+        "O'tkazgichning qarshiligini",
+        "Zanjirdan o'tgan vaqtni"
+      ],
+      "t": 0,
+      "izoh": "A — zanjirdan q zaryad o'tganda uning shu qismida bajarilgan ish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#41c006f3"
+    },
+    {
+      "q": "Kuchlanish birligi qilib kimga sharafiga volt (V) qabul qilingan?",
+      "v": [
+        "Birinchi galvanik elementni yaratgan italyan olimi Alessandro Volta sharafiga",
+        "Nemis fizigi Georg Simon Om sharafiga",
+        "Fransuz fizigi Andre Mari Amper sharafiga",
+        "Angliyalik olim Joule sharafiga"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish birligi qilib birinchi galvanik elementni yaratgan italyan olimi Alessandro Volta sharafiga volt (V) qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#3411d622"
+    },
+    {
+      "q": "1 volt qanday kuchlanish?",
+      "v": [
+        "Zanjirning bir qismidan 1 kulon zaryad o'tganda 1 joul ish bajariladigan kuchlanish",
+        "Zanjirdan 1 sekundda 1 kulon zaryad o'tadigan kuchlanish",
+        "1 om qarshilikka teng kuchlanish",
+        "1 amper tok hosil qiladigan kuchlanish"
+      ],
+      "t": 0,
+      "izoh": "1 volt shunday kuchlanishki, bu kuchlanishda zanjirning bir qismidan 1 kulon zaryad o'tganda 1 joul ish bajariladi, ya'ni 1 V = 1 J/1 C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#9dec44eb"
+    },
+    {
+      "q": "1 V quyidagilardan qaysi biriga teng?",
+      "v": [
+        "1 J/1 C ga",
+        "1 C/1 J ga",
+        "1 A/1 s ga",
+        "1 J/1 s ga"
+      ],
+      "t": 0,
+      "izoh": "1 V = 1 J/1 C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#7a3cee1f"
+    },
+    {
+      "q": "Agar zanjir qismida kuchlanish 2 V ga teng bo'lsa, shu qism orqali 1 C zaryad o'tganida qancha ish bajariladi?",
+      "v": [
+        "2 J",
+        "1 J",
+        "0,5 J",
+        "4 J"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish 2 V bo'lsa, 1 C zaryad o'tganida zanjirning shu qismida 2 J ish bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#b456c475"
+    },
+    {
+      "q": "1 millivolt (mV) necha voltga teng?",
+      "v": [
+        "0,001 V = 10⁻³ V",
+        "1000 V",
+        "0,01 V",
+        "1 000 000 V"
+      ],
+      "t": 0,
+      "izoh": "1 mV = 0,001 V = 10⁻³ V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#d8ffe935"
+    },
+    {
+      "q": "1 kilovolt (kV) necha voltga teng?",
+      "v": [
+        "1000 V = 10³ V",
+        "0,001 V",
+        "100 V",
+        "10 000 V"
+      ],
+      "t": 0,
+      "izoh": "1 kV = 1000 V = 10³ V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#c4ea3ffb"
+    },
+    {
+      "q": "Kuchlanish zanjirning biror qismidagi o'tkazgich uchlarida emas, balki qayerda namoyon bo'ladi?",
+      "v": [
+        "Tok manbai qutblarida",
+        "Kalitda",
+        "Simlarning o'rtasida",
+        "Lampochka shishasida"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish elektr zanjirning biror qismidagi o'tkazgich uchlarida emas, balki tok manbai qutblarida ham namoyon bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#d84eb30e"
+    },
+    {
+      "q": "Quruq galvanik elementning kuchlanishi qancha?",
+      "v": [
+        "1,5 V",
+        "12 V",
+        "220 V",
+        "5 500 kV"
+      ],
+      "t": 0,
+      "izoh": "1-jadvalga ko'ra quruq galvanik elementning kuchlanishi 1,5 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#e0e1a326"
+    },
+    {
+      "q": "Kislotali va ishqorli avtomobil akkmulyatorining kuchlanishi qancha?",
+      "v": [
+        "12 V",
+        "1,5 V",
+        "220 V",
+        "9 V"
+      ],
+      "t": 0,
+      "izoh": "1-jadvalga ko'ra avtomobil akkmulyatorining kuchlanishi 12 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#987a617b"
+    },
+    {
+      "q": "Xonadonlardagi elektr tarmog'ining kuchlanishi qancha?",
+      "v": [
+        "220 V",
+        "12 V",
+        "1,5 V",
+        "5 500 kV"
+      ],
+      "t": 0,
+      "izoh": "1-jadvalga ko'ra xonadonlardagi elektr tarmog'i kuchlanishi 220 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#603bb22f"
+    },
+    {
+      "q": "Katta tok uzatish liniyasidagi kuchlanish qanchaga yetishi mumkin?",
+      "v": [
+        "5 500 kV",
+        "220 V",
+        "12 kV",
+        "1,5 kV"
+      ],
+      "t": 0,
+      "izoh": "1-jadvalga ko'ra katta tok uzatish liniyasidagi kuchlanish 5 500 kV.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#2ed48c64"
+    },
+    {
+      "q": "Tok manbai qutblaridagi yoki zanjirning biror qismidagi kuchlanish qanday asbob yordamida o'lchanadi?",
+      "v": [
+        "Voltmetr yordamida",
+        "Ampermetr yordamida",
+        "Ommetr yordamida",
+        "Elektrometr yordamida"
+      ],
+      "t": 0,
+      "izoh": "Tok manbai qutblaridagi yoki zanjirning biror qismidagi kuchlanish voltmetr yordamida o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#6d156a97"
+    },
+    {
+      "q": "Voltmetrni boshqa elektr o'lchov asboblaridan farqlash uchun uning yuza qismiga qanday harf yozilgan bo'ladi?",
+      "v": [
+        "«V» harfi",
+        "«A» harfi",
+        "«Ω» belgisi",
+        "«W» harfi"
+      ],
+      "t": 0,
+      "izoh": "Voltmetrni farqlash uchun uning yuza qismiga «V» harfi yozilgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#8b3ffa2f"
+    },
+    {
+      "q": "Elektr zanjir sxemasida voltmetr qanday belgilanadi?",
+      "v": [
+        "Aylana ichiga «V» harfi yozilgan belgi bilan",
+        "Aylana ichiga «A» harfi yozilgan belgi bilan",
+        "Ikkita parallel chiziq bilan",
+        "To'g'ri burchakli romb bilan"
+      ],
+      "t": 0,
+      "izoh": "Elektr zanjir sxemasida voltmetrning shartli belgisi aylana ichidagi «V» harfi ko'rinishida belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#45ebbe41"
+    },
+    {
+      "q": "Voltmetrning qisqichlariga qanday belgilar qo'yiladi?",
+      "v": [
+        "«+» va «–» belgilari",
+        "«1» va «2» raqamlari",
+        "«V» va «A» harflari",
+        "«S» va «N» harflari"
+      ],
+      "t": 0,
+      "izoh": "Voltmetrning qisqichlariga «+» va «–» belgisi qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#0897cac7"
+    },
+    {
+      "q": "Tok manbaining qutblaridagi kuchlanishni o'lchash uchun voltmetrning «+» qisqichi qayerga ulanadi?",
+      "v": [
+        "Tok manbaining musbat «+» qutbiga to'g'ridan-to'g'ri",
+        "Tok manbaining manfiy qutbiga",
+        "Kalitga",
+        "Lampochkaning ixtiyoriy uchiga"
+      ],
+      "t": 0,
+      "izoh": "Voltmetrning «+» qisqichi tok manbaining musbat «+» qutbiga, «–» qisqichi manfiy «–» qutbiga to'g'ridan-to'g'ri ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#67b7125b"
+    },
+    {
+      "q": "Voltmetr elektr zanjirdagi kuchlanishi o'lchanadigan iste'molchiga qanday ulanadi?",
+      "v": [
+        "Parallel qilib ulanadi",
+        "Ketma-ket ulanadi",
+        "Aralash ulanadi",
+        "Kalit orqali ulanadi"
+      ],
+      "t": 0,
+      "izoh": "Voltmetr elektr zanjirdagi kuchlanishi o'lchanadigan iste'molchiga parallel qilib ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#d215afa1"
+    },
+    {
+      "q": "Voltmetrning iste'molchiga parallel ulanishi qanday ataladi?",
+      "v": [
+        "Parallel ulanish",
+        "Ketma-ket ulanish",
+        "Qisqa tutashuv",
+        "Aralash ulanish"
+      ],
+      "t": 0,
+      "izoh": "Voltmetrning iste'molchiga nisbatan bunday ulanishi parallel ulanish deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#96c0d890"
+    },
+    {
+      "q": "Lampochka uchlaridagi kuchlanishni o'lchash uchun voltmetr qanday ulanadi?",
+      "v": [
+        "Voltmetrning birinchi qisqichi lampochkaning birinchi qisqichiga, ikkinchi qisqichi lampochkaning ikkinchi qisqichiga",
+        "Voltmetr lampochkaga ketma-ket ulanadi",
+        "Voltmetr faqat tok manbaiga ulanadi",
+        "Voltmetr kalitga parallel ulanadi"
+      ],
+      "t": 0,
+      "izoh": "Lampochka uchlaridagi kuchlanishni o'lchash uchun voltmetrning (1) qisqichi lampochkaning (1') qisqichiga, (2) qisqichi lampochkaning (2') qisqichiga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#bf9d23a0"
+    },
+    {
+      "q": "Bitta galvanik element qancha kuchlanish beradi?",
+      "v": [
+        "1,5 V",
+        "3 V",
+        "9 V",
+        "12 V"
+      ],
+      "t": 0,
+      "izoh": "Galvanik elementlarning har biri 1,5 V kuchlanish beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#6989a3fe"
+    },
+    {
+      "q": "3 V li kuchlanishni olish uchun radioga qancha kuchlanishli nechta galvanik element qo'yiladi?",
+      "v": [
+        "1,5 V lik ikkita galvanik element",
+        "1,5 V lik uchta galvanik element",
+        "3 V lik ikkita galvanik element",
+        "1,5 V lik oltita galvanik element"
+      ],
+      "t": 0,
+      "izoh": "3 V li kuchlanishni olish uchun radioga 1,5 V lik ikkita galvanik element qo'yiladi (43-a rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#90b00251"
+    },
+    {
+      "q": "9 V da ishlaydigan magnitofon uchun 1,5 V li nechta galvanik elementni ketma-ket ulash kerak?",
+      "v": [
+        "6 ta",
+        "3 ta",
+        "9 ta",
+        "2 ta"
+      ],
+      "t": 0,
+      "izoh": "9 V da ishlaydigan magnitofon uchun 1,5 V li 6 ta galvanik elementni ketma-ket ulash kerak (43-b rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#d4208433"
+    },
+    {
+      "q": "Kuchlanishni oshirish uchun tok manbalarini (galvanik elementlarni) qanday ulash lozim?",
+      "v": [
+        "Ketma-ket ulash kerak",
+        "Parallel ulash kerak",
+        "Aralash ulash kerak",
+        "Faqat bittasini ulash kerak"
+      ],
+      "t": 0,
+      "izoh": "Bitta galvanik element beradigan kuchlanish ko'p hollarda yetarli bo'lmaydi; kuchlanishni oshirish uchun galvanik elementlar ketma-ket ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#5c08f81a"
+    },
+    {
+      "q": "Akkmulyatorlarda bir nechta galvanik element qanday ulangan bo'ladi?",
+      "v": [
+        "Ketma-ket ulangan",
+        "Parallel ulangan",
+        "Aralash ulangan",
+        "Ulanmagan"
+      ],
+      "t": 0,
+      "izoh": "Akkmulyatorlarda bir nechta galvanik element ketma-ket ulangan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#7dee323b"
+    },
+    {
+      "q": "Elektr zanjiridagi lampochkaga parallel ulangan voltmetr 1,5 V ni ko'rsatsa, lampochkadan 10 C zaryad o'tganda bajariladigan ish qanday topiladi?",
+      "v": [
+        "A = q·U formula bilan",
+        "A = q/U formula bilan",
+        "A = U/q formula bilan",
+        "A = q·t formula bilan"
+      ],
+      "t": 0,
+      "izoh": "U = A/q formuladan A = q·U; A = 10 C · 1,5 V = 15 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#1d405dc4"
+    },
+    {
+      "q": "Elektr zanjirga ulangan o'tkazgichdagi elektronlar tok manbaining qaysi qutbidan qaysi qutbiga qarab harakat qiladi?",
+      "v": [
+        "Manfiy qutbidan musbat qutbiga qarab",
+        "Musbat qutbidan manfiy qutbiga qarab",
+        "Har tomonga tartibsiz",
+        "Umuman harakat qilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Elektr zanjirga ulangan o'tkazgichdagi elektronlar tok manbaining manfiy qutbidan musbat qutbiga qarab harakat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m11-elektr-kuchlanish-va-uni-olchash#04683b6f"
+    }
+  ]
+}

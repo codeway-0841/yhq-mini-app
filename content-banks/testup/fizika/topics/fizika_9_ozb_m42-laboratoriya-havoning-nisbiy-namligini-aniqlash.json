@@ -1,0 +1,396 @@
+{
+  "nom": "42-mavzu. Laboratoriya Havoning Nisbiy Namligini Aniqlash",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "42-laboratoriya ishining maqsadi nima?",
+      "v": [
+        "Havoning namligini tajribada aniqlashni o'rganish",
+        "Havoning bosimini o'lchash",
+        "Suvning qaynash temperaturasini aniqlash",
+        "Havoning zichligini o'lchash"
+      ],
+      "t": 0,
+      "izoh": "Ishning maqsadi: havoning namligini tajribada aniqlashni o'rganish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#b302dc59"
+    },
+    {
+      "q": "Laboratoriya ishi uchun qanday jihozlar kerak?",
+      "v": [
+        "Avgust psixrometri (yoki ikkita bir xil termometrlar), suv solinadigan idish va doka",
+        "Barometr va menzurka",
+        "Dinamometr va o'lchov tasmasi",
+        "Voltmetr va ampermetr"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar: Avgust psixrometri (yoki ikkita bir xil termometrlar), suv solinadigan idish va doka.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#51901328"
+    },
+    {
+      "q": "Laboratoriya ishida to'ldiriladigan jadvalda qanday ustunlar bor?",
+      "v": [
+        "№, t (°C), t_h (°C), Δt (°C), φ (%), ρ (g/m³)",
+        "№, p (Pa), V (m³), T (K)",
+        "№, m (kg), Q (J), λ (kJ/kg)",
+        "№, F (N), s (m), A (J)"
+      ],
+      "t": 0,
+      "izoh": "Jadval ustunlari: t, t_h, Δt, φ, ρ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#d5dd3fec"
+    },
+    {
+      "q": "Ishni boshlashda psixrometr idishchasiga suv solingach nima qilinadi?",
+      "v": [
+        "4–5 daqiqa kutiladi",
+        "Darhol ko'rsatishlar yoziladi",
+        "Idishcha qizdiriladi",
+        "Termometrlar silkitiladi"
+      ],
+      "t": 0,
+      "izoh": "1-bosqich: psixrometr idishchasiga suv soling va 4–5 daqiqa kuting.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#94dae3e4"
+    },
+    {
+      "q": "Tajribada quruq va ho'l termometrlarning ko'rsatishlari qanday belgilanadi?",
+      "v": [
+        "t va t_h",
+        "t₁ va t₂",
+        "T va P",
+        "φ va ρ"
+      ],
+      "t": 0,
+      "izoh": "Quruq va ho'l termometrlarning t va t_h ko'rsatishlari yozib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#2d66e7de"
+    },
+    {
+      "q": "Quruq va ho'l termometrlar ko'rsatishlarining farqi qanday hisoblanadi?",
+      "v": [
+        "Δt = t − t_h",
+        "Δt = t_h − t",
+        "Δt = t + t_h",
+        "Δt = t·t_h"
+      ],
+      "t": 0,
+      "izoh": "Δt = t − t_h hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#6851b0d4"
+    },
+    {
+      "q": "Nisbiy namlik φ qanday aniqlanadi?",
+      "v": [
+        "Psixrometrik jadvaldan quruq termometrning t ko'rsatishiga va Δt ga mos kelgan qiymat belgilanadi",
+        "Faqat nam termometr ko'rsatishi yoziladi",
+        "Barometr yordamida o'lchanadi",
+        "ρ = m/V formula bilan hisoblanadi"
+      ],
+      "t": 0,
+      "izoh": "Psixrometrik jadvaldan quruq termometrning t ko'rsatishiga va Δt mos kelgan nisbiy namlik belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#6c01b381"
+    },
+    {
+      "q": "Xonadagi absolut namlik qanday aniqlanadi?",
+      "v": [
+        "Darslikdagi to'yingan suv bug'i zichligi jadvalidan foydalaniladi",
+        "Psixrometrik jadvaldan to'g'ridan-to'g'ri o'qiladi",
+        "Termometr bilan o'lchanadi",
+        "Hisoblanmaydi"
+      ],
+      "t": 0,
+      "izoh": "To'yingan bug' zichligi va bosimi berilgan jadvaldan foydalanib, xonadagi absolut namlik aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#8915bf49"
+    },
+    {
+      "q": "Absolut namlikni hisoblashda nisbiy namlik formulasi qanday ishlatiladi?",
+      "v": [
+        "φ = (ρ/ρ₀)·100% dan ρ topiladi",
+        "ρ = m/V to'g'ridan-to'g'ri qo'llaniladi",
+        "p = nkT dan foydalaniladi",
+        "Q = λm dan foydalaniladi"
+      ],
+      "t": 0,
+      "izoh": "Nisbiy namlik φ = (ρ/ρ₀)·100% munosabatdan absolut namlik ρ aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#9c428542"
+    },
+    {
+      "q": "Agar laboratoriya jihozlari ichida Avgust psixrometri bo'lmasa, nima qilish mumkin?",
+      "v": [
+        "Ikkita bir xil termometrdan psixrometr qurilmasini yig'ish mumkin",
+        "Tajribani bekor qilish kerak",
+        "Barometrdan foydalaniladi",
+        "Faqat bitta termometr bilan namlikni o'lchash mumkin emas"
+      ],
+      "t": 0,
+      "izoh": "Izohga ko'ra, psixrometr bo'lmasa, ikkita termometrdan psixrometr qurilmasini yig'ish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#80b90bb1"
+    },
+    {
+      "q": "Agar faqat bitta termometr bo'lsa, nam termometr qanday tayyorlanadi?",
+      "v": [
+        "Dastlab xona temperaturasi o'lchanadi, so'ng termometr rezervuari ho'l mato (doka) bilan o'rab, matoning bir qismi suvli idishga tushiriladi",
+        "Termometr muzga solinadi",
+        "Termometr quyoshga qo'yiladi",
+        "Termometr silkitiladi"
+      ],
+      "t": 0,
+      "izoh": "Termometrning rezervuarini ho'l mato bilan o'rab, matoning bir qismini suvli idishga tushirib qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#df4dfb55"
+    },
+    {
+      "q": "Bitta termometr bilan tayyorlangan nam termometrning ko'rsatishi qachon yozib olinadi?",
+      "v": [
+        "Matoni suvga tushirib qo'yilgach, 5–6 daqiqa o'tgach",
+        "Darhol",
+        "1 soatdan keyin",
+        "Suv qurib qolgach"
+      ],
+      "t": 0,
+      "izoh": "5–6 daqiqa o'tgach termometrning ko'rsatishi yozib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#2d763519"
+    },
+    {
+      "q": "Ho'l (nam) termometrning ko'rsatishi quruq termometrnikidan nima uchun past bo'ladi?",
+      "v": [
+        "Matodagi suv bug'lanib, termometr rezervuarini sovitadi",
+        "Nam termometr xiralashadi",
+        "Suv termometrni qizdiradi",
+        "Mato issiqlik o'tkazmaydi"
+      ],
+      "t": 0,
+      "izoh": "Matodan suv bug'langanda issiqlik yutilib, nam termometr soviydi, shuning uchun ko'rsatishi past bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#7dcc68a8"
+    },
+    {
+      "q": "Havo qancha quruq bo'lsa, quruq va nam termometrlar ko'rsatishlari farqi qanday bo'ladi?",
+      "v": [
+        "Farq shuncha katta bo'ladi",
+        "Farq shuncha kichik bo'ladi",
+        "Farq nolga teng bo'ladi",
+        "Farq o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Havo quruq bo'lsa, suv matodan tez bug'lanadi va nam termometr ko'rsatishi ancha past bo'ladi, ya'ni farq katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#cf1909ce"
+    },
+    {
+      "q": "Tajribada quruq termometr 24 °C, nam termometr 19 °C ko'rsatsa, Δt qancha?",
+      "v": [
+        "5 °C",
+        "4 °C",
+        "6 °C",
+        "3 °C"
+      ],
+      "t": 0,
+      "izoh": "Δt = t − t_h = 24 − 19 = 5 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#4221954d"
+    },
+    {
+      "q": "Quruq termometr 24 °C, Δt = 5 °C bo'lganda psixrometrik jadvaldan nisbiy namlik qancha ekanligi aniqlanadi?",
+      "v": [
+        "62%",
+        "56%",
+        "69%",
+        "49%"
+      ],
+      "t": 0,
+      "izoh": "Psixrometrik jadvalda 24 °C qatori va Δt=5 ustuni kesishmasida 62% turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#1f5aa8dd"
+    },
+    {
+      "q": "Tajribada quruq termometr 18 °C, nam termometr 15 °C ko'rsatsa, nisbiy namlik qancha?",
+      "v": [
+        "73%",
+        "65%",
+        "82%",
+        "56%"
+      ],
+      "t": 0,
+      "izoh": "Δt = 3 °C; jadvalda 18 °C, Δt=3 kesishmasida 73%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#1720bd34"
+    },
+    {
+      "q": "Nisbiy namlik φ = (ρ/ρ₀)·100% bo'lsa, absolut namlik ρ qanday ifodalanadi?",
+      "v": [
+        "ρ = φ·ρ₀/100%",
+        "ρ = ρ₀/(φ·100%)",
+        "ρ = 100%/(φ·ρ₀)",
+        "ρ = φ/ρ₀"
+      ],
+      "t": 0,
+      "izoh": "φ = (ρ/ρ₀)·100% dan ρ = φ·ρ₀/100%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#6688a7f8"
+    },
+    {
+      "q": "Tajribada nisbiy namlik 60% va shu temperaturada to'yingan bug' zichligi ρ₀ = 17,3 g/m³ bo'lsa, absolut namlik qancha?",
+      "v": [
+        "10,4 g/m³ ga yaqin",
+        "17,3 g/m³",
+        "28,8 g/m³",
+        "6,0 g/m³"
+      ],
+      "t": 0,
+      "izoh": "ρ = 0,60·17,3 ≈ 10,4 g/m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#fd5abc2b"
+    },
+    {
+      "q": "Laboratoriya ishida tajriba natijalari nima qilinadi?",
+      "v": [
+        "Jadvalga yoziladi",
+        "Xotirada saqlanadi",
+        "Darhol o'chiriladi",
+        "Faqat og'zaki aytiladi"
+      ],
+      "t": 0,
+      "izoh": "7-bosqich: tajriba natijalarini jadvalga yozing.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#a5ecb030"
+    },
+    {
+      "q": "Psixrometr idishchasiga suv solib 4–5 daqiqa kutish nima uchun zarur?",
+      "v": [
+        "Nam termometr ko'rsatishi barqarorlashishi (matodagi suv bug'lanib muvozanatga kelishi) uchun",
+        "Suv qaynashi uchun",
+        "Quruq termometr sovishi uchun",
+        "Idishchani tozalash uchun"
+      ],
+      "t": 0,
+      "izoh": "Suv solingach nam termometrning ko'rsatishi o'rnatilguncha (4–5 daqiqa) kutiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#cd1dd559"
+    },
+    {
+      "q": "Quruq termometr 22 °C, nam termometr 16 °C ko'rsatganda nisbiy namlik psixrometrik jadval bo'yicha qancha?",
+      "v": [
+        "54%",
+        "61%",
+        "47%",
+        "68%"
+      ],
+      "t": 0,
+      "izoh": "Δt = 6 °C; jadvalda 22 °C, Δt=6 kesishmasida 54%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#c0a24af9"
+    },
+    {
+      "q": "Agar tajribada quruq va nam termometrlar bir xil temperaturani ko'rsatsa, bu nimani anglatadi?",
+      "v": [
+        "Havoning nisbiy namligi 100%, ya'ni havo suv bug'iga to'yingan",
+        "Havo butunlay quruq",
+        "Termometrlar buzilgan",
+        "Namlik 0%"
+      ],
+      "t": 0,
+      "izoh": "Farq 0 °C bo'lsa, psixrometrik jadvaldan nisbiy namlik 100% bo'ladi — havo to'yingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#cc26adf3"
+    },
+    {
+      "q": "Jadvaldagi φ ustuniga qanday kattalik yoziladi?",
+      "v": [
+        "Psixrometrik jadvaldan aniqlangan nisbiy namlik, % larda",
+        "To'yingan bug' bosimi, kPa larda",
+        "Suvning massasi, kg larda",
+        "Havoning hajmi, m³ larda"
+      ],
+      "t": 0,
+      "izoh": "φ ustuniga psixrometrik jadvaldan olingan nisbiy namlik foizlarda yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#b3dae74c"
+    },
+    {
+      "q": "Jadvaldagi ρ ustuniga qanday kattalik va qanday birlikda yoziladi?",
+      "v": [
+        "Absolut namlik, g/m³ larda",
+        "Nisbiy namlik, % larda",
+        "Bosim, kPa larda",
+        "Temperatura, °C larda"
+      ],
+      "t": 0,
+      "izoh": "ρ ustuniga absolut namlik g/m³ birlikda yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#d7f8d70a"
+    },
+    {
+      "q": "Laboratoriya ishida xonadagi absolut namlikni aniqlash uchun qaysi kattaliklar yetarli?",
+      "v": [
+        "Nisbiy namlik φ va shu temperaturadagi to'yingan bug' zichligi ρ₀",
+        "Faqat quruq termometr ko'rsatishi",
+        "Faqat suv miqdori",
+        "Havo bosimi va hajmi"
+      ],
+      "t": 0,
+      "izoh": "ρ = φ·ρ₀/100% ga ko'ra, nisbiy namlik va to'yingan bug' zichligi yetarli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m42-laboratoriya-havoning-nisbiy-namligini-aniqlash#04304347"
+    }
+  ]
+}

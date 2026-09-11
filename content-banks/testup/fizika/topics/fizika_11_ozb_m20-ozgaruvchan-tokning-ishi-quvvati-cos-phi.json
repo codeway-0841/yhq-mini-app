@@ -1,0 +1,456 @@
+{
+  "nom": "20-mavzu. Ozgaruvchan Tokning Ishi Quvvati Cos Phi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "O'zgaruvchan tok quvvatining oniy qiymati qanday ifodalanadi?",
+      "v": [
+        "p = u·i = Um·Im·cosωt·cos(ωt + φ)",
+        "p = U·I",
+        "p = Um·Im",
+        "p = u·t"
+      ],
+      "t": 0,
+      "izoh": "(3–31) formula: p = u·i = Um·Im·cosωt·cos(ωt + φ).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#a29387dd"
+    },
+    {
+      "q": "O'zgaruvchan tokning zanjir bir qismidagi o'rtacha quvvati qanday aniqlanadi?",
+      "v": [
+        "P = U·I·cosφ",
+        "P = U·I",
+        "P = U·I·sinφ",
+        "P = U·I·tgφ"
+      ],
+      "t": 0,
+      "izoh": "(3–32) formula: P = U·I·cosφ, bunda U va I — effektiv qiymatlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#787ac4e7"
+    },
+    {
+      "q": "O'zgaruvchan tokning bajargan ishi qanday formuladan aniqlanadi?",
+      "v": [
+        "A = U·I·t·cosφ",
+        "A = U·I·t",
+        "A = U·I·t·sinφ",
+        "A = U·I/t"
+      ],
+      "t": 0,
+      "izoh": "(3–33) formula: A = U·I·t·cosφ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#3adba5ac"
+    },
+    {
+      "q": "Quvvat koeffitsiyenti nima?",
+      "v": [
+        "cosφ — tok va kuchlanish orasidagi fazalar farqining kosinusi",
+        "sinφ — fazalar farqining sinusi",
+        "Tok va kuchlanishning ko'paytmasi",
+        "Zanjirning to'la qarshiligi"
+      ],
+      "t": 0,
+      "izoh": "cosφ quvvat koeffitsiyenti deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#40bda7c1"
+    },
+    {
+      "q": "Zanjirda reaktiv qarshilik bo'lmasa, quvvat qanday bo'ladi?",
+      "v": [
+        "φ = 0, cosφ = 1, P = U·I",
+        "φ = π/2, P = 0",
+        "φ = π, P = −U·I",
+        "φ = π/4, P = U·I/2"
+      ],
+      "t": 0,
+      "izoh": "Reaktiv qarshilik yo'q bo'lsa φ = 0, cosφ = 1 va P = U·I — o'zgarmas tok quvvatiga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#a9c9660e"
+    },
+    {
+      "q": "Zanjirda faqat reaktiv qarshilik bo'lsa (aktiv qarshilik yo'q), o'rtacha quvvat nimaga teng?",
+      "v": [
+        "Nolga (P = 0)",
+        "U·I ga",
+        "Um·Im ga",
+        "Cheksiz katta qiymatga"
+      ],
+      "t": 0,
+      "izoh": "Aktiv qarshilik yo'q bo'lsa φ = ±π/2, cosφ = 0 va P = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#92863286"
+    },
+    {
+      "q": "Zanjirda tok mavjud bo'lsa-da o'rtacha quvvat nolga teng bo'lishi mumkinmi?",
+      "v": [
+        "Ha, faqat reaktiv qarshilikli zanjirda — energiya davrning bir choragida zanjirga, keyingi choragida tarmoqqa qaytariladi",
+        "Yo'q, hech qachon",
+        "Faqat tok nolga teng bo'lsa",
+        "Faqat chastota juda katta bo'lsa"
+      ],
+      "t": 0,
+      "izoh": "Reaktiv zanjirda energiya maydonlarda to'planib tarmoqqa qaytadi, o'rtacha quvvat nol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#fc12d916"
+    },
+    {
+      "q": "φ = π/2 bo'lganda quvvatning oniy qiymati grafigi qanday xususiyatga ega?",
+      "v": [
+        "Davrning choragida musbat, keyingi choragida manfiy bo'ladi",
+        "Doimo musbat bo'ladi",
+        "Doimo manfiy bo'ladi",
+        "Doimo nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Quvvat davrning bir choragida musbat (energiya zanjirga), keyingi choragida manfiy (energiya tarmoqqa qaytadi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#988535a8"
+    },
+    {
+      "q": "O'zgaruvchan elektr zanjirlarini loyihalashda cosφ ning qanday bo'lishiga e'tibor qaratiladi?",
+      "v": [
+        "Katta bo'lishiga",
+        "Kichik bo'lishiga",
+        "Nolga teng bo'lishiga",
+        "Manfiy bo'lishiga"
+      ],
+      "t": 0,
+      "izoh": "cosφ katta bo'lishi kerak, aks holda energiya simlarni qizdirishga bekorga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#1955b38a"
+    },
+    {
+      "q": "cosφ kichik bo'lganda qanday salbiy oqibat yuzaga keladi?",
+      "v": [
+        "Energiyaning anchagina qismi generator bilan zanjir orasida aylanib yurib, simlarni qizdirishga sarflanadi",
+        "Quvvat nolga tushadi",
+        "Zanjir uzilib qoladi",
+        "Kuchlanish keskin oshadi"
+      ],
+      "t": 0,
+      "izoh": "cosφ kichik bo'lsa energiya bekorga aylanadi va simlarning aktiv qarshiligida issiqlikka aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#ef65cbe3"
+    },
+    {
+      "q": "Elektr dvigatellari qanday qarshilik xususiyatiga ega?",
+      "v": [
+        "Katta induktiv va kichik aktiv qarshilikka",
+        "Katta aktiv va kichik induktiv qarshilikka",
+        "Faqat sig'im qarshilikka",
+        "Faqat aktiv qarshilikka"
+      ],
+      "t": 0,
+      "izoh": "Elektr dvigatellari katta induktiv qarshilikka va kichik aktiv qarshilikka ega, shuning uchun cosφ kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#d7a274e0"
+    },
+    {
+      "q": "Quvvat koeffitsiyentini oshirish uchun korxona tarmoqlariga nima ulanadi?",
+      "v": [
+        "Maxsus kompensatsiya qiluvchi kondensatorlar",
+        "Qo'shimcha g'altaklar",
+        "Qo'shimcha rezistorlar",
+        "Transformatorlar"
+      ],
+      "t": 0,
+      "izoh": "cosφ ni oshirish uchun tarmoqlarga kompensatsiya qiluvchi kondensatorlar ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#073b6ee1"
+    },
+    {
+      "q": "Odatda cosφ ning qanday qiymatidan past bo'lgan qurilmalarni ishlatishga ruxsat berilmaydi?",
+      "v": [
+        "cosφ < 0,85",
+        "cosφ < 0,5",
+        "cosφ < 0,95",
+        "cosφ < 0,1"
+      ],
+      "t": 0,
+      "izoh": "Odatda cosφ < 0,85 bo'lgan qurilmalarni ishlatishga ruxsat berilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#c8a7f779"
+    },
+    {
+      "q": "Elektrodvigatellarni ishlatishda nimaga e'tibor berish kerak?",
+      "v": [
+        "Ularni salt yoki yetarli yuklamasiz ishlatmaslikka",
+        "Ularni doimiy to'liq yuklamada ishlatishga",
+        "Ularni faqat tunda ishlatishga",
+        "Ularni seriyaga ulashga"
+      ],
+      "t": 0,
+      "izoh": "Elektrodvigatellarning salt yoki yetarli yuklamasiz ishlatilmasligiga e'tibor berish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#b158b221"
+    },
+    {
+      "q": "Tok va kuchlanishning effektiv qiymatlari amplituda qiymatlariga qanday bog'liq?",
+      "v": [
+        "Uef = Um/√2, Ief = Im/√2",
+        "Uef = Um·√2, Ief = Im·√2",
+        "Uef = Um/2, Ief = Im/2",
+        "Uef = Um, Ief = Im"
+      ],
+      "t": 0,
+      "izoh": "Effektiv qiymatlar: Uef = Um/√2, Ief = Im/√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#cdb1f21f"
+    },
+    {
+      "q": "Quvvat koeffitsiyenti cosφ zanjir parametrlari orqali qanday ifodalanadi?",
+      "v": [
+        "cosφ = R/Z",
+        "cosφ = Z/R",
+        "cosφ = XL/Z",
+        "cosφ = XC/R"
+      ],
+      "t": 0,
+      "izoh": "Vektor diagrammadan cosφ = R/Z = R/√(R² + (XL − XC)²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#52f97973"
+    },
+    {
+      "q": "Quvvatning oniy qiymati vaqt o'tishi bilan qanday o'zgaradi?",
+      "v": [
+        "Ham modul, ham ishora jihatidan o'zgaradi",
+        "Faqat modul jihatidan o'zgaradi",
+        "O'zgarmaydi",
+        "Faqat ishora jihatidan o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Quvvatning oniy qiymati vaqt bilan ham modul, ham ishora jihatidan o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#6172e43f"
+    },
+    {
+      "q": "Bir davrga to'g'ri kelgan o'rtacha quvvatni aniqlashda qaysi trigonometrik formula qo'llaniladi?",
+      "v": [
+        "cosα·cosβ = (1/2)(cos(α − β) + cos(α + β))",
+        "sinα·sinβ = cos(α − β)",
+        "sin(α + β) = sinα + sinβ",
+        "cos2α = 2cosα"
+      ],
+      "t": 0,
+      "izoh": "Ikkita kosinus ko'paytmasi formulasi: cosα·cosβ = ½(cos(α − β) + cos(α + β)) ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#d3b1888b"
+    },
+    {
+      "q": "O'rtacha quvvat ifodasidagi cos(2ωt + φ) li qo'shiluvchining bir davrdagi o'rtacha qiymati nimaga teng?",
+      "v": [
+        "Nolga",
+        "Birga",
+        "Um·Im/2 ga",
+        "cosφ ga"
+      ],
+      "t": 0,
+      "izoh": "Vaqtga bog'liq hadning bir davr davomidagi o'rtacha qiymati nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#6db42d63"
+    },
+    {
+      "q": "P = U·I·cosφ formuladagi U va I qanday qiymatlar?",
+      "v": [
+        "Tok va kuchlanishning effektiv qiymatlari",
+        "Amplituda qiymatlari",
+        "Oniy qiymatlari",
+        "Maksimal qiymatlari"
+      ],
+      "t": 0,
+      "izoh": "Quvvat tok va kuchlanishning effektiv qiymatlari bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#b18cbffa"
+    },
+    {
+      "q": "Davrning to'rtdan bir qismida zanjirga berilgan energiya qayerda to'planadi (sof reaktiv zanjirda)?",
+      "v": [
+        "Tokning magnit maydonida (yoki kondensatorning elektr maydonida)",
+        "Simlarning issiqligida",
+        "Generator ichida",
+        "Hech qayerda to'planmaydi"
+      ],
+      "t": 0,
+      "izoh": "Davrning choragida berilgan energiya tokning magnit maydonida to'planadi, so'ngra tarmoqqa qaytariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#340ead06"
+    },
+    {
+      "q": "cosφ = 1 bo'lgan zanjir qanday xarakterga ega?",
+      "v": [
+        "Faqat aktiv qarshilikli (rezonans holati ham shu xususiyatga ega)",
+        "Faqat induktiv",
+        "Faqat sig'imli",
+        "Faqat reaktiv"
+      ],
+      "t": 0,
+      "izoh": "cosφ = 1 bo'lsa φ = 0 — zanjir sof aktiv xarakterga ega (yoki rezonans holatida).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#feed3f81"
+    },
+    {
+      "q": "O'zgaruvchan tok bajargan ishning oniy qiymati qanday ifodalanadi?",
+      "v": [
+        "A = u·i·t",
+        "A = u·i",
+        "A = u·t",
+        "A = i·t"
+      ],
+      "t": 0,
+      "izoh": "(3–29) formula: juda kichik vaqt oralig'ida A = u·i·t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#f77deafa"
+    },
+    {
+      "q": "Quvvat koeffitsiyentining eng katta mumkin bo'lgan qiymati qancha?",
+      "v": [
+        "1",
+        "0",
+        "0,5",
+        "Cheksiz"
+      ],
+      "t": 0,
+      "izoh": "cosφ ning maksimal qiymati 1 ga teng (φ = 0 bo'lganda).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#f1393ddb"
+    },
+    {
+      "q": "Quvvat koeffitsiyentini oshirish nima uchun muhim?",
+      "v": [
+        "Energiya simlarda bekorga isrof bo'lmasligi va quvvat samarali uzatilishi uchun",
+        "Tok kuchini oshirish uchun",
+        "Kuchlanishni pasaytirish uchun",
+        "Chastotani oshirish uchun"
+      ],
+      "t": 0,
+      "izoh": "cosφ katta bo'lsa, energiya bekorga aylanmaydi va simlarda qizish kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#56f07b5d"
+    },
+    {
+      "q": "Zanjirda φ = 0 bo'lsa, quvvat ifodasi qanday ko'rinish oladi?",
+      "v": [
+        "P = U·I — o'zgarmas tok quvvati formulasi",
+        "P = 0",
+        "P = U·I/2",
+        "P = Um·Im"
+      ],
+      "t": 0,
+      "izoh": "φ = 0, cosφ = 1 bo'lganda P = U·I — o'zgarmas tok quvvatini olamiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#abff92bd"
+    },
+    {
+      "q": "Agar zanjir parametrlari R = 100 Ω, Z = 185 Ω bo'lsa, cosφ taxminan qancha?",
+      "v": [
+        "≈ 0,54",
+        "≈ 1,85",
+        "≈ 0,85",
+        "≈ 0,1"
+      ],
+      "t": 0,
+      "izoh": "cosφ = R/Z = 100/185 ≈ 0,54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#d75aae07"
+    },
+    {
+      "q": "Aktiv qarshilikli zanjirda quvvatning oniy qiymati qanday ifodalanadi?",
+      "v": [
+        "P = Pm·cos²ωt",
+        "P = Pm·cosωt",
+        "P = Pm·sinωt",
+        "P = Pm·cos2φ"
+      ],
+      "t": 0,
+      "izoh": "Aktiv qarshilikli zanjirdagi quvvat: P = Pm·cos²ωt — doimo musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#da705111"
+    },
+    {
+      "q": "Quvvatning oniy qiymatining vaqtga bog'liqlik grafigi qanday tuziladi?",
+      "v": [
+        "Har bir momentga to'g'ri kelgan tok kuchi va kuchlanish bir-biriga ko'paytiriladi",
+        "Kuchlanish grafigi ikki marta kattalashtiriladi",
+        "Tok grafigi kuchlanish grafigiga qo'shiladi",
+        "Faqat kuchlanish grafigi chiziladi"
+      ],
+      "t": 0,
+      "izoh": "Quvvat grafigi har bir momentdagi tok va kuchlanish ko'paytmasidan tuziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#93f21a66"
+    },
+    {
+      "q": "cosφ ni oshirish uchun kondensatorlar ulashning fizik asosida nima yotqizilgan?",
+      "v": [
+        "Kondensatorning sig'im qarshiligi dvigatelning induktiv qarshiligini qisman kompensatsiya qilib, reaktiv qarshilikni kamaytiradi",
+        "Kondensator aktiv qarshilikni kamaytiradi",
+        "Kondensator tok chastotasini o'zgartiradi",
+        "Kondensator kuchlanishni oshiradi"
+      ],
+      "t": 0,
+      "izoh": "XC qo'shilishi XL − XC ayirmani kamaytiradi, Z kichrayib cosφ = R/Z ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m20-ozgaruvchan-tokning-ishi-quvvati-cos-phi#88db6222"
+    }
+  ]
+}

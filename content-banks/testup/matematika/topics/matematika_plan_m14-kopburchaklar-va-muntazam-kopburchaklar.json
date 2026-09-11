@@ -1,0 +1,1609 @@
+{
+  "nom": "Ko'pburchaklar va muntazam ko'pburchaklar",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Navoiy ko'chasidagi skver qavariq yettiburchak shaklida panjara bilan o'ralgan. Skver konturidagi barcha ichki burchaklar yig'indisi necha gradusga teng?",
+      "v": [
+        "1260°",
+        "720°",
+        "900°",
+        "360°"
+      ],
+      "t": 2,
+      "izoh": "Qavariq n burchakning ichki burchaklari yig'indisi (n − 2)·180° formulasi bilan topiladi. Bu yerda n = 7, demak (7 − 2)·180° = 5·180° = 900°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='108.8,245.7 191.3,245.7 246,164.8 210.1,88 129.6,54.3 54,115.1 56.2,196.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='103.4' y='264.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='198.6' y='263.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='170.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='220.5' y='81.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='127.8' y='43.9' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='40.5' y='113' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='42.5' y='206.6' font-size='13' fill='%23334155' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-burchak-yigindisi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#d01058d1"
+    },
+    {
+      "q": "Qavariq ko'pburchakning barcha ichki burchaklari yig'indisi 1260° ga teng ekani aniqlandi. Bu ko'pburchak nechta tomonga ega?",
+      "v": [
+        "9 ta",
+        "7 ta",
+        "10 ta",
+        "11 ta"
+      ],
+      "t": 0,
+      "izoh": "(n − 2)·180° = 1260° tenglamani yechamiz. Ikkala tomonni 180 ga bo'lamiz: n − 2 = 7. Demak n = 7 + 2 = 9 ta tomon bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "n-topish-yigindidan",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#73629d3d"
+    },
+    {
+      "q": "Sportchi Jasur qavariq beshburchak shaklidagi maydon chekkasi bo'ylab bir marta to'liq aylanib chiqdi va boshlagan joyiga qaytdi. U yo'l davomida jami necha gradusga burildi?",
+      "v": [
+        "540°",
+        "180°",
+        "720°",
+        "360°"
+      ],
+      "t": 3,
+      "izoh": "Maydon chekkasi bo'ylab bir aylanishda sportchi har bir burchakda tashqi burchakka teng buriladi. Qavariq ko'pburchakning tashqi burchaklari yig'indisi tomonlar soniga bog'liq emas va doim 360° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='106.3,234.5 214.7,234.5 246,113.8 146,65.5 54,132.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='98.6' y='251.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='224' y='250.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259.6' y='112' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='144.8' y='55' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='39.4' y='133.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-burchak-yigindisi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#7bb4e421"
+    },
+    {
+      "q": "Qavariq o'nburchakda o'tkazish mumkin bo'lgan barcha diagonallarning umumiy soni nechta?",
+      "v": [
+        "45 ta",
+        "35 ta",
+        "70 ta",
+        "30 ta"
+      ],
+      "t": 1,
+      "izoh": "Diagonallar soni n(n − 3)/2 formulasi bilan hisoblanadi. n = 10 bo'lganda 10·(10 − 3)/2 = 10·7/2 = 35 ta diagonal bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='119.1,247.1 180.9,247.1 230.9,210.8 250,152 230.9,93.2 180.9,56.9 119.1,56.9 69.1,93.2 50,152 69.1,210.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diagonal-soni",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#acc2505e"
+    },
+    {
+      "q": "Qavariq ko'pburchakda jami 44 ta diagonal o'tkazilgan bo'lsa, bu ko'pburchakning tomonlari soni nechta?",
+      "v": [
+        "11 ta",
+        "10 ta",
+        "12 ta",
+        "22 ta"
+      ],
+      "t": 0,
+      "izoh": "n(n − 3)/2 = 44 tenglamadan n(n − 3) = 88 kelib chiqadi. Ketma-ket sinaymiz: 11·8 = 88 to'g'ri keladi. Demak n = 11 ta tomon bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-topish-diagonaldan",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#41a10288"
+    },
+    {
+      "q": "O'quvchi Zilola qavariq o'nburchak shaklidagi qog'ozni bitta uchdan chiqqan diagonallar bo'ylab qirqib chiqdi. Natijada nechta uchburchak hosil bo'ldi?",
+      "v": [
+        "10 ta",
+        "7 ta",
+        "8 ta",
+        "9 ta"
+      ],
+      "t": 2,
+      "izoh": "Bitta uchdan chiqqan diagonallar qavariq n burchakni n − 2 ta uchburchakka ajratadi. Bu yerda n = 10, demak 10 − 2 = 8 ta uchburchak hosil bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='119.1,247.1 180.9,247.1 230.9,210.8 250,152 230.9,93.2 180.9,56.9 119.1,56.9 69.1,93.2 50,152 69.1,210.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchakka-bolish",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#eb96c5c5"
+    },
+    {
+      "q": "Do'kondagi pol kafeli muntazam sakkizburchak shaklida yasalgan. Kafelning bitta ichki burchagi necha gradusga teng?",
+      "v": [
+        "45°",
+        "135°",
+        "180°",
+        "120°"
+      ],
+      "t": 1,
+      "izoh": "Muntazam n burchakning ichki burchagi (n − 2)·180°/n formulasi bilan topiladi. n = 8 uchun (8 − 2)·180°/8 = 1080°/8 = 135°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='110.2,248.1 189.8,248.1 246.1,191.8 246.1,112.2 189.8,55.9 110.2,55.9 53.9,112.2 53.9,191.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='104.5' y='266.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='195.5' y='266.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259.9' y='202' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='259.9' y='111' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='195.5' y='46.6' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='104.5' y='46.6' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='40.1' y='111' font-size='13' fill='%23334155' text-anchor='middle'%3EG%3C/text%3E%3Ctext x='40.1' y='202' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Cpath d='M 167.8 55.9 A 22 22 0 0 0 205.4 71.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='183.9' y='74.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "muntazam-ichki-burchak",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#02260266"
+    },
+    {
+      "q": "Muntazam ko'pburchakning har bir ichki burchagi 156° ga teng bo'lsa, u nechta tomonga ega?",
+      "v": [
+        "12 ta",
+        "16 ta",
+        "24 ta",
+        "15 ta"
+      ],
+      "t": 3,
+      "izoh": "Tashqi burchak 180° − 156° = 24° ga teng. Tashqi burchaklar yig'indisi 360° bo'lgani uchun tomonlar soni 360 : 24 = 15 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "n-topish-ichki-burchakdan",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#6d8e35fe"
+    },
+    {
+      "q": "Dasturlashtirilgan robot muntazam ko'pburchak bo'ylab yuradi va har bir burchakda 24° ga burilib, oxirida boshlangan nuqtaga qaytadi. Bu ko'pburchakda nechta tomon bor?",
+      "v": [
+        "14 ta",
+        "24 ta",
+        "15 ta",
+        "12 ta"
+      ],
+      "t": 2,
+      "izoh": "Robot har burilishda tashqi burchakka teng buriladi, bir aylanishda esa jami 360° ga buriladi. Demak tomonlar soni 360 : 24 = 15 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "muntazam-tashqi-burchak",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#f3c7c41f"
+    },
+    {
+      "q": "Muntazam o'nburchak shaklidagi tort markazdan har bir uchga qarab kesilib, teng bo'laklarga ajratildi. Har bir bo'lakning markazdagi burchagi necha gradus?",
+      "v": [
+        "36°",
+        "144°",
+        "18°",
+        "72°"
+      ],
+      "t": 0,
+      "izoh": "Markazdagi to'la burchak 360°, bo'laklar soni esa uchlar soniga teng, ya'ni 10 ta. Demak har bir bo'lakning markaziy burchagi 360° : 10 = 36°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='119.1,247.1 180.9,247.1 230.9,210.8 250,152 230.9,93.2 180.9,56.9 119.1,56.9 69.1,93.2 50,152 69.1,210.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='152' x2='119.1' y2='247.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='152' x2='180.9' y2='247.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "markaziy-burchak",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#03138bf4"
+    },
+    {
+      "q": "Ferma uchastkasi qavariq to'rtburchak shaklida bo'lib, uning uchta ichki burchagi 95°, 108° va 72° ga teng. To'rtinchi burchak necha gradus?",
+      "v": [
+        "95°",
+        "265°",
+        "105°",
+        "85°"
+      ],
+      "t": 3,
+      "izoh": "To'rtburchakning ichki burchaklari yig'indisi (4 − 2)·180° = 360°. Ma'lum burchaklar yig'indisi 95° + 108° + 72° = 275°. Demak to'rtinchisi 360° − 275° = 85°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='67.6,227.8 195.4,227.8 246,72.2 54,72.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='57.3' y='243.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='204.1' y='244.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='258.1' y='67.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='42.8' y='66.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='90.9' y='207.5' font-size='13' fill='%23334155' text-anchor='middle'%3E95°%3C/text%3E%3Ctext x='175.9' y='204.5' font-size='13' fill='%23334155' text-anchor='middle'%3E108°%3C/text%3E%3Ctext x='218.7' y='96.9' font-size='13' fill='%23334155' text-anchor='middle'%3E72°%3C/text%3E%3Ctext x='79.3' y='99.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomalum-burchak-topish",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#1d8fc045"
+    },
+    {
+      "q": "Qavariq to'rtburchakning ichki burchaklari 2 : 3 : 4 : 6 nisbatda berilgan. Ularning eng kattasi necha gradusga teng?",
+      "v": [
+        "96°",
+        "144°",
+        "24°",
+        "120°"
+      ],
+      "t": 1,
+      "izoh": "Nisbat qismlari yig'indisi 2 + 3 + 4 + 6 = 15. To'rtburchak burchaklari yig'indisi 360°, demak bir qism 360 : 15 = 24°. Eng katta burchak 6·24° = 144°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,207.4 246,207.4 208.7,92.6 145.2,106.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='40.5' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='258.6' y='220.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='217.7' y='85.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='139.8' y='96.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchaklar-nisbati",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#da652be9"
+    },
+    {
+      "q": "Bog'dagi gulzor tomoni 12 m bo'lgan muntazam uchburchak shaklida. Gulzorga ichki chizilgan aylananing radiusi necha metrga teng?",
+      "v": [
+        "2√3 m",
+        "4√3 m",
+        "6√3 m",
+        "√3 m"
+      ],
+      "t": 0,
+      "izoh": "Muntazam uchburchakda ichki chizilgan aylana radiusi r = a√3/6. Bu yerda a = 12, demak r = 12√3/6 = 2√3 m. Agar r o'rniga R = a√3/3 olinsa 4√3 chiqadi, bu xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='52' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='59.9,204 240.1,204 150,48' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='46.9' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='253.1' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='150' y='37.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='221' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 12 m%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='204' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150,195 141,195 141,204' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='182' font-size='13' fill='%23334155' text-anchor='start'%3Er = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "muntazam-uchburchak-olchovlari",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#3070f7ea"
+    },
+    {
+      "q": "Xonaning poli tomoni 5 m bo'lgan kvadrat shaklida. Polning to'rtala uchidan o'tuvchi aylananing radiusi necha metr?",
+      "v": [
+        "2,5 m",
+        "5√2 m",
+        "2,5√2 m",
+        "5 m"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat muntazam to'rtburchak bo'lib, unga tashqi chizilgan aylana radiusi R = a√2/2. a = 5 bo'lgani uchun R = 5√2/2 = 2,5√2 m. 2,5 m javobi ichki aylana radiusiga mos keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='92' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='84.9,217.1 215.1,217.1 215.1,86.9 84.9,86.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='74.3' y='232.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='225.7' y='232.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='225.7' y='80.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='74.3' y='80.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='150' y='234.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 5 m%3C/text%3E%3Cline x1='150' y1='152' x2='215.1' y2='86.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='188.5' y='113.5' font-size='13' fill='%23334155' text-anchor='start'%3ER = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-olchovlari",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#668ba18b"
+    },
+    {
+      "q": "Asalari uyasidagi katakcha muntazam oltiburchak shaklida bo'lib, uning tomoni 6 mm. Katakchaning barcha uchlaridan o'tuvchi aylananing radiusi necha millimetr?",
+      "v": [
+        "3 mm",
+        "6 mm",
+        "3√3 mm",
+        "12 mm"
+      ],
+      "t": 1,
+      "izoh": "Muntazam oltiburchakda tashqi chizilgan aylana radiusi tomonga teng, chunki markaz va ikkita qo'shni uch teng tomonli uchburchak hosil qiladi. Demak R = a = 6 mm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='102,235.1 198,235.1 246,152 198,68.9 102,68.9 54,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='94.5' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='205.5' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='205.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='94.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='39' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='150' y='252.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 6 mm%3C/text%3E%3Cline x1='150' y1='152' x2='198' y2='68.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='180' y='104.4' font-size='13' fill='%23334155' text-anchor='start'%3ER = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "muntazam-oltiburchak-olchovlari",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#1effa559"
+    },
+    {
+      "q": "Tomoni 10 sm bo'lgan muntazam sakkizburchakka tashqi chizilgan aylananing radiusini toping (sin 22,5° ≈ 0,383).",
+      "v": [
+        "26,1 sm",
+        "3,83 sm",
+        "6,53 sm",
+        "13,05 sm"
+      ],
+      "t": 3,
+      "izoh": "Muntazam n burchakda R = a/(2 sin(180°/n)). Bu yerda 180° : 8 = 22,5°, demak R = 10/(2·0,383) = 10/0,766 ≈ 13,05 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='113.3,240.7 186.7,240.7 238.7,188.7 238.7,115.3 186.7,63.3 113.3,63.3 61.3,115.3 61.3,188.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='107.5' y='259.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='192.5' y='259.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='252.6' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='252.6' y='114' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='192.5' y='53.9' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='107.5' y='53.9' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='47.4' y='114' font-size='13' fill='%23334155' text-anchor='middle'%3EG%3C/text%3E%3Ctext x='47.4' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='150' y='257.7' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 10 sm%3C/text%3E%3Cline x1='150' y1='152' x2='238.7' y2='115.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='200.3' y='127.6' font-size='13' fill='%23334155' text-anchor='start'%3ER = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-aylana-radiusi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#161fe02d"
+    },
+    {
+      "q": "Tomoni 12 sm bo'lgan muntazam beshburchakka ichki chizilgan aylananing radiusini toping (tg 36° ≈ 0,727).",
+      "v": [
+        "16,5 sm",
+        "4,36 sm",
+        "8,25 sm",
+        "8,73 sm"
+      ],
+      "t": 2,
+      "izoh": "Muntazam n burchakda r = a/(2 tg(180°/n)). n = 5 uchun burchak 36°, demak r = 12/(2·0,727) = 12/1,454 ≈ 8,25 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='84.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='88.9,236.1 211.1,236.1 248.9,119.9 150,48 51.1,119.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='80.1' y='252.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='219.9' y='252.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='263.2' y='119.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='37.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='36.8' y='119.7' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='150' y='253.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 12 sm%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='236.1' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150,227.1 141,227.1 141,236.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='198.1' font-size='13' fill='%23334155' text-anchor='start'%3Er = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-aylana-radiusi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#5b73ed1c"
+    },
+    {
+      "q": "Muntazam beshburchak shaklidagi maydonchaning perimetri 40 m, markazidan tomoniga tushirilgan perpendikulyar esa 5,5 m. Maydonchaning yuzi necha kvadrat metr?",
+      "v": [
+        "110 m²",
+        "220 m²",
+        "55 m²",
+        "200 m²"
+      ],
+      "t": 0,
+      "izoh": "Muntazam ko'pburchak yuzi S = P·r/2 formulasi bilan topiladi. Demak S = 40·5,5/2 = 220/2 = 110 m². Ikkiga bo'lishni unutsak 220 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='84.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='88.9,236.1 211.1,236.1 248.9,119.9 150,48 51.1,119.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='80.1' y='252.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='219.9' y='252.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='263.2' y='119.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='37.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='36.8' y='119.7' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='236.1' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150,227.1 141,227.1 141,236.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='198.1' font-size='13' fill='%23334155' text-anchor='start'%3Er = 5,5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuz-perimetr-apofema",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#be41d24c"
+    },
+    {
+      "q": "Tashqi chizilgan aylanasining radiusi 10 sm bo'lgan muntazam oltiburchakning perimetri necha santimetr?",
+      "v": [
+        "30 sm",
+        "120 sm",
+        "20 sm",
+        "60 sm"
+      ],
+      "t": 3,
+      "izoh": "Muntazam oltiburchakda tomon tashqi aylana radiusiga teng, ya'ni a = R = 10 sm. Perimetr P = 6a = 6·10 = 60 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='102,235.1 198,235.1 246,152 198,68.9 102,68.9 54,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='94.5' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='205.5' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='205.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='94.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='39' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cline x1='150' y1='152' x2='198' y2='68.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='180' y='104.4' font-size='13' fill='%23334155' text-anchor='start'%3ER = 10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "R-dan-tomon",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#fffe39d3"
+    },
+    {
+      "q": "Muntazam oltiburchakka ichki va tashqi chizilgan aylanalar radiuslarining nisbati nechaga teng?",
+      "v": [
+        "1/2",
+        "√3/2",
+        "2/√3",
+        "√2/2"
+      ],
+      "t": 1,
+      "izoh": "Oltiburchakda R = a va r = a√3/2. Demak r : R = (a√3/2) : a = √3/2. Bu taxminan 0,87 ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='152' r='83.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='102,235.1 198,235.1 246,152 198,68.9 102,68.9 54,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='94.5' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='205.5' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='205.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='94.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='39' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='235.1' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150,226.1 141,226.1 141,235.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='197.6' font-size='13' fill='%23334155' text-anchor='start'%3Er%3C/text%3E%3Cline x1='150' y1='152' x2='198' y2='68.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='180' y='104.4' font-size='13' fill='%23334155' text-anchor='start'%3ER%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "r-va-R-nisbati",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#202ada29"
+    },
+    {
+      "q": "Fermer muntazam beshburchak shaklidagi qo'raga sim to'siq tortmoqchi va qo'raning bitta tomoni 24 m. To'siq uchun kamida necha metr sim kerak bo'ladi?",
+      "v": [
+        "120 m",
+        "96 m",
+        "144 m",
+        "24 m"
+      ],
+      "t": 0,
+      "izoh": "Muntazam beshburchakning barcha tomonlari teng, demak perimetr P = 5·24 = 120 m. To'siq perimetr bo'ylab tortilgani uchun 120 m sim kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='88.9,236.1 211.1,236.1 248.9,119.9 150,48 51.1,119.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='80.1' y='252.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='219.9' y='252.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='263.2' y='119.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='37.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='36.8' y='119.7' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='150' y='253.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 24 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perimetr-va-tomon",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#4e5d77c4"
+    },
+    {
+      "q": "Tekislikni bir xil muntazam ko'pburchaklar bilan bo'shliqsiz qoplash mumkinligi ichki burchakka bog'liq. Quyidagilardan qaysi biri bilan tekislikni bo'shliqsiz qoplab bo'lmaydi?",
+      "v": [
+        "Muntazam uchburchak",
+        "Kvadrat",
+        "Muntazam beshburchak",
+        "Muntazam oltiburchak"
+      ],
+      "t": 2,
+      "izoh": "Bitta nuqtada burchaklar yig'indisi aniq 360° bo'lishi kerak. Uchburchakda 60°, kvadratda 90°, oltiburchakda 120° — bularning hammasi 360° ning bo'luvchisi. Beshburchakda esa 108°, u 360° ni butun songa bo'lmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='80,35 119,102.5 41,102.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='80' y='126' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Cpolygon points='251.8,48.2 251.8,111.8 188.2,111.8 188.2,48.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='220' y='135' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Cpolygon points='80,175 122.8,206.1 106.5,256.4 53.5,256.4 37.2,206.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='80' y='279' font-size='13' fill='%23334155' text-anchor='middle'%3E108°%3C/text%3E%3Cpolygon points='265,220 242.5,259 197.5,259 175,220 197.5,181 242.5,181' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='220' y='279' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parket-yopish",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#8322f861"
+    },
+    {
+      "q": "Tomoni 5 sm bo'lgan muntazam oltiburchakning eng uzun diagonali necha santimetr?",
+      "v": [
+        "5√3 sm",
+        "10 sm",
+        "15 sm",
+        "5√2 sm"
+      ],
+      "t": 1,
+      "izoh": "Eng uzun diagonal qarama-qarshi uchlarni tutashtiradi va markazdan o'tadi, ya'ni u 2R ga teng. Oltiburchakda R = a = 5, demak diagonal 2·5 = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='98,242.1 202,242.1 254,152 202,61.9 98,61.9 46,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='90.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='209.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='269' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='209.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='90.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='31' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='150' y='259.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 5 sm%3C/text%3E%3Cline x1='98' y1='242.1' x2='202' y2='61.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diagonal-uzunligi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#6923734d"
+    },
+    {
+      "q": "Muntazam oltiburchakning ichki burchagi muntazam uchburchakning ichki burchagidan necha gradusga katta?",
+      "v": [
+        "30°",
+        "90°",
+        "120°",
+        "60°"
+      ],
+      "t": 3,
+      "izoh": "Muntazam oltiburchakning ichki burchagi (6 − 2)·180°/6 = 120°, muntazam uchburchakniki esa 60°. Ayirma 120° − 60° = 60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-kopburchak-taqqoslash",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#8298bac7"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan doira shaklidagi metall listdan muntazam oltiburchak qirqib olindi va uning uchlari doira chetiga tegadi. Chiqindiga necha kvadrat santimetr metall ketdi (π ≈ 3,14, √3 ≈ 1,73)?",
+      "v": [
+        "259,5 sm²",
+        "314 sm²",
+        "54,5 sm²",
+        "104,5 sm²"
+      ],
+      "t": 2,
+      "izoh": "Doira yuzi S = πR² = 3,14·100 = 314 sm². Oltiburchak yuzi S = 3a²√3/2 = 3·100·1,73/2 = 259,5 sm², chunki a = R = 10. Chiqindi 314 − 259,5 = 54,5 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='102,235.1 198,235.1 246,152 198,68.9 102,68.9 54,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='94.5' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='205.5' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='205.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='94.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='39' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cline x1='150' y1='152' x2='198' y2='68.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='180' y='104.4' font-size='13' fill='%23334155' text-anchor='start'%3ER = 10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-va-kopburchak-yuzi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#61452821"
+    },
+    {
+      "q": "Dizayner Nodira qavariq sakkizburchak shaklidagi gilam eskizini chizdi. Gilam chetidagi ichki burchaklarning yig'indisi qanchaga teng bo'ladi?",
+      "v": [
+        "1080°",
+        "1440°",
+        "900°",
+        "360°"
+      ],
+      "t": 0,
+      "izoh": "Formula (n − 2)·180°. Sakkizburchak uchun n = 8 bo'lgani uchun (8 − 2)·180° = 6·180° = 1080°. Ikkitani ayirishni unutsak 1440° chiqadi, bu xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='118.2,245 188.8,245 246,181.6 234.6,109.8 183.1,55 98.9,65.1 55.9,119.2 54,199.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='113.7' y='263.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='194.9' y='263.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.4' y='190.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='248' y='107.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='188.2' y='45.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='91.6' y='56.4' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='41.8' y='118.6' font-size='13' fill='%23334155' text-anchor='middle'%3EG%3C/text%3E%3Ctext x='40.6' y='210.7' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-burchak-yigindisi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#d3e1c5b8"
+    },
+    {
+      "q": "Hunarmandchilik markazida yasalgan naqshli ustol qavariq ko'pburchak shaklida bo'lib, uning ichki burchaklari yig'indisi 1800° ga teng. Ustolda nechta tomon bor?",
+      "v": [
+        "10 ta",
+        "11 ta",
+        "14 ta",
+        "12 ta"
+      ],
+      "t": 3,
+      "izoh": "(n − 2)·180° = 1800° bo'lsin. Har ikki tomonni 180 ga bo'lsak n − 2 = 10 kelib chiqadi. Bundan n = 12, ya'ni ustol o'n ikki tomonli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-topish-yigindidan",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#4c10f800"
+    },
+    {
+      "q": "Qavariq o'n olti burchakning har bir uchida bittadan olingan tashqi burchaklarning yig'indisi necha gradusni tashkil qiladi?",
+      "v": [
+        "2520°",
+        "360°",
+        "2880°",
+        "180°"
+      ],
+      "t": 1,
+      "izoh": "Tashqi burchaklar yig'indisi qavariq ko'pburchakda tomonlar soniga bog'liq emas. U har doim 360° ga teng, shuning uchun 16 soni javobga ta'sir qilmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='130.5,250.1 169.5,250.1 205.6,235.1 233.1,207.6 248.1,171.5 248.1,132.5 233.1,96.4 205.6,68.9 169.5,53.9 130.5,53.9 94.4,68.9 66.9,96.4 51.9,132.5 51.9,171.5 66.9,207.6 94.4,235.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-burchak-yigindisi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#48cbf842"
+    },
+    {
+      "q": "Maktab hovlisidagi qavariq beshburchak maydonchaning har bir burchagidan qolgan burchaklarga arqon tortildi, ammo tomonlar bo'ylab arqon tortilmadi. Jami nechta arqon tortilgan?",
+      "v": [
+        "5 ta",
+        "10 ta",
+        "2 ta",
+        "20 ta"
+      ],
+      "t": 0,
+      "izoh": "Tomonlar bo'ylab tortilmagani uchun arqonlar diagonallarga mos keladi. Beshburchakda n(n − 3)/2 = 5·2/2 = 5 ta diagonal bor, demak 5 ta arqon tortilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='91.2,232.9 208.8,232.9 245.1,121.1 150,52 54.9,121.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='82.4' y='249.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='217.6' y='249.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259.4' y='121' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='41.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='40.6' y='121' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diagonal-soni",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#c4c1be98"
+    },
+    {
+      "q": "Naqqosh usta yog'och panelga qavariq ko'pburchak chizib, uning barcha diagonallarini o'yib chiqdi va jami 20 ta chiziq hosil bo'ldi. Panelda nechta tomon bor?",
+      "v": [
+        "7 ta",
+        "10 ta",
+        "8 ta",
+        "5 ta"
+      ],
+      "t": 2,
+      "izoh": "n(n − 3)/2 = 20 bo'lsin, ya'ni n(n − 3) = 40. Sinab ko'ramiz: 8·5 = 40 mos keladi. Demak ko'pburchak sakkiz tomonli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-topish-diagonaldan",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#65adeafa"
+    },
+    {
+      "q": "Qavariq ko'pburchak bitta uchidan chiqqan diagonallar bilan 13 ta uchburchakka ajratildi. Shu ko'pburchakning ichki burchaklari yig'indisi nechaga teng?",
+      "v": [
+        "2700°",
+        "2340°",
+        "1980°",
+        "2520°"
+      ],
+      "t": 1,
+      "izoh": "Uchburchaklar soni n − 2 ga teng, demak n − 2 = 13 va n = 15. Har bir uchburchak 180° beradi, shuning uchun yig'indi 13·180° = 2340°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchakka-bolish",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#16294b4c"
+    },
+    {
+      "q": "Muntazam o'n ikki burchakning bitta ichki burchagi necha gradusga teng bo'ladi?",
+      "v": [
+        "30°",
+        "180°",
+        "144°",
+        "150°"
+      ],
+      "t": 3,
+      "izoh": "Ichki burchak (n − 2)·180°/n ga teng. n = 12 bo'lgani uchun 10·180°/12 = 1800°/12 = 150°. Bu yerda 30° javobi tashqi burchakka mos keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='124.1,248.6 175.9,248.6 220.7,222.7 246.6,177.9 246.6,126.1 220.7,81.3 175.9,55.4 124.1,55.4 79.3,81.3 53.4,126.1 53.4,177.9 79.3,222.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 153.9 55.4 A 22 22 0 0 0 194.9 66.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='173.2' y='69.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "muntazam-ichki-burchak",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#aa4084e3"
+    },
+    {
+      "q": "Hunarmand Umid har bir ichki burchagi 135° bo'lgan muntazam ko'pburchak shaklidagi ko'zgu ramkasini yasamoqchi. Ramkada nechta tomon bo'ladi?",
+      "v": [
+        "6 ta",
+        "9 ta",
+        "8 ta",
+        "45 ta"
+      ],
+      "t": 2,
+      "izoh": "Ichki burchakka qo'shni tashqi burchak 180° − 135° = 45°. Tomonlar soni 360 : 45 = 8 ta, ya'ni ramka muntazam sakkizburchak bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-topish-ichki-burchakdan",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#6be6777c"
+    },
+    {
+      "q": "Muntazam o'n sakkiz burchakning bitta tashqi burchagi necha gradusga teng?",
+      "v": [
+        "20°",
+        "160°",
+        "10°",
+        "40°"
+      ],
+      "t": 0,
+      "izoh": "Muntazam ko'pburchakda barcha tashqi burchaklar teng va ularning yig'indisi 360°. Demak bittasi 360° : 18 = 20° ga teng. 160° javobi ichki burchakka mos keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='132.6,250.5 167.4,250.5 200,238.6 226.6,216.3 244,186.2 250,152 244,117.8 226.6,87.7 200,65.4 167.4,53.5 132.6,53.5 100,65.4 73.4,87.7 56,117.8 50,152 56,186.2 73.4,216.3 100,238.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "muntazam-tashqi-burchak",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#7dcd2fd6"
+    },
+    {
+      "q": "Muntazam ko'pburchakning markaziy burchagi 15° ga teng bo'lsa, uning bitta ichki burchagi necha gradus bo'ladi?",
+      "v": [
+        "150°",
+        "15°",
+        "156°",
+        "165°"
+      ],
+      "t": 3,
+      "izoh": "Markaziy burchak 360°/n bo'lgani uchun n = 360 : 15 = 24. Ichki burchak (24 − 2)·180°/24 = 3960°/24 = 165°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markaziy-burchak",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#ff746a4d"
+    },
+    {
+      "q": "Qavariq beshburchak shaklidagi hovlining to'rtta ichki burchagi 100°, 115°, 130° va 90° ga teng. Beshinchi burchak necha gradusni tashkil qiladi?",
+      "v": [
+        "465°",
+        "105°",
+        "75°",
+        "135°"
+      ],
+      "t": 1,
+      "izoh": "Beshburchakning ichki burchaklari yig'indisi (5 − 2)·180° = 540°. Berilganlar yig'indisi 100° + 115° + 130° + 90° = 435°. Beshinchisi 540° − 435° = 105°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='81.4,246 203.1,246 241.6,163.6 190.5,54 58.4,115.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='71.3' y='261.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='210.8' y='263.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='256.6' y='167.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='195' y='44.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='45.1' y='113.2' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='104.3' y='225.3' font-size='13' fill='%23334155' text-anchor='middle'%3E100°%3C/text%3E%3Ctext x='185.8' y='221.3' font-size='13' fill='%23334155' text-anchor='middle'%3E115°%3C/text%3E%3Ctext x='207.6' y='168.6' font-size='13' fill='%23334155' text-anchor='middle'%3E130°%3C/text%3E%3Ctext x='180.1' y='90.9' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Ctext x='88.7' y='135.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-burchak-topish",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#a71608a1"
+    },
+    {
+      "q": "Qavariq beshburchak shaklidagi qog'oz naqshning ichki burchaklari 3 : 4 : 5 : 6 : 6 nisbatda. Naqshning eng kichik burchagi necha gradus?",
+      "v": [
+        "67,5°",
+        "90°",
+        "45°",
+        "112,5°"
+      ],
+      "t": 0,
+      "izoh": "Qismlar yig'indisi 3 + 4 + 5 + 6 + 6 = 24 ta. Beshburchak burchaklari yig'indisi 540°, bir qism esa 540 : 24 = 22,5°. Eng kichik burchak 3·22,5° = 67,5°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,230.1 246,230.1 246,101.8 169.1,69.9 110.2,94.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='42.1' y='243.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='256.4' y='245.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259.2' y='99.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='169.9' y='59.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='99.2' y='88.6' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchaklar-nisbati",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#a28a601f"
+    },
+    {
+      "q": "Tomoni 6 sm bo'lgan muntazam uchburchakka tashqi chizilgan aylananing radiusi necha santimetrga teng?",
+      "v": [
+        "√3 sm",
+        "3√3 sm",
+        "2√3 sm",
+        "6√3 sm"
+      ],
+      "t": 2,
+      "izoh": "Muntazam uchburchakda tashqi chizilgan aylana radiusi R = a√3/3 ga teng. a = 6 bo'lgani uchun R = 6√3/3 = 2√3 sm. Ichki aylana radiusi esa bundan ikki marta kichik.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='66.9,200 233.1,200 150,56' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='53.9' y='212' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='246.1' y='212' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='150' y='45.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='217' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 6 sm%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='56' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='98' font-size='13' fill='%23334155' text-anchor='start'%3ER = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "muntazam-uchburchak-olchovlari",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#549bc318"
+    },
+    {
+      "q": "Muntazam to'rtburchakka, ya'ni kvadratga ichki chizilgan aylananing radiusi 7 sm bo'lsa, kvadratning perimetri necha santimetr?",
+      "v": [
+        "28 sm",
+        "56 sm",
+        "112 sm",
+        "49 sm"
+      ],
+      "t": 1,
+      "izoh": "Kvadratga ichki chizilgan aylana radiusi tomonning yarmiga teng: r = a/2. Demak a = 2·7 = 14 sm, perimetr esa P = 4·14 = 56 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='73.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='76.5,225.5 223.5,225.5 223.5,78.5 76.5,78.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='65.9' y='240.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='234.1' y='240.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='234.1' y='72.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='65.9' y='72.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='225.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150,216.5 141,216.5 141,225.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='192.8' font-size='13' fill='%23334155' text-anchor='start'%3Er = 7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-olchovlari",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#234980e8"
+    },
+    {
+      "q": "Tomoni 8 sm bo'lgan muntazam oltiburchakka ichki chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "8 sm",
+        "4 sm",
+        "8√3 sm",
+        "4√3 sm"
+      ],
+      "t": 3,
+      "izoh": "Muntazam oltiburchakda ichki aylana radiusi r = a√3/2. a = 8 bo'lgani uchun r = 8√3/2 = 4√3 sm. 8 sm javobi tashqi aylana radiusiga mos keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='90.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='98,242.1 202,242.1 254,152 202,61.9 98,61.9 46,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='90.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='209.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='269' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='209.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='90.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='31' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='150' y='259.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 8 sm%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='242.1' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150,233.1 141,233.1 141,242.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='201' font-size='13' fill='%23334155' text-anchor='start'%3Er = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "muntazam-oltiburchak-olchovlari",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#8337b8a3"
+    },
+    {
+      "q": "Muntazam beshburchak shaklidagi yo'l belgisining tomoni 14 sm. Belgining barcha uchlaridan o'tuvchi aylana radiusi necha santimetr (sin 36° ≈ 0,588)?",
+      "v": [
+        "23,8 sm",
+        "8,23 sm",
+        "11,9 sm",
+        "5,95 sm"
+      ],
+      "t": 2,
+      "izoh": "R = a/(2 sin(180°/n)) formulasida n = 5, ya'ni burchak 36°. R = 14/(2·0,588) = 14/1,176 ≈ 11,9 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='93.6,229.7 206.4,229.7 241.3,122.3 150,56 58.7,122.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='84.8' y='246.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='215.2' y='246.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='255.6' y='122.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='45.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='44.4' y='122.2' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='150' y='246.7' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 14 sm%3C/text%3E%3Cline x1='150' y1='152' x2='241.3' y2='122.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='201.7' y='131.2' font-size='13' fill='%23334155' text-anchor='start'%3ER = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-aylana-radiusi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#e14bd834"
+    },
+    {
+      "q": "Muntazam sakkizburchak shaklidagi hovuzning tomoni 3 m. Hovuz markazidan tomonigacha bo'lgan eng qisqa masofa necha metr (tg 22,5° ≈ 0,414)?",
+      "v": [
+        "3,62 m",
+        "7,25 m",
+        "1,81 m",
+        "1,24 m"
+      ],
+      "t": 0,
+      "izoh": "Markazdan tomonga tushirilgan perpendikulyar ichki aylana radiusi, ya'ni apofemadir. r = a/(2 tg 22,5°) = 3/(2·0,414) = 3/0,828 ≈ 3,62 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='110.2,248.1 189.8,248.1 246.1,191.8 246.1,112.2 189.8,55.9 110.2,55.9 53.9,112.2 53.9,191.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='104.5' y='266.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='195.5' y='266.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259.9' y='202' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='259.9' y='111' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='195.5' y='46.6' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='104.5' y='46.6' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='40.1' y='111' font-size='13' fill='%23334155' text-anchor='middle'%3EG%3C/text%3E%3Ctext x='40.1' y='202' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='150' y='265.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 3 m%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='248.1' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150,239.1 141,239.1 141,248.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='204' font-size='13' fill='%23334155' text-anchor='start'%3Er = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-aylana-radiusi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#d1ad9eb2"
+    },
+    {
+      "q": "Muntazam o'nburchakning tomoni 6 sm, apofemasi esa 9,2 sm ga teng. Shu o'nburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "552 sm²",
+        "138 sm²",
+        "55,2 sm²",
+        "276 sm²"
+      ],
+      "t": 3,
+      "izoh": "Avval perimetrni topamiz: P = 10·6 = 60 sm. Endi S = P·r/2 = 60·9,2/2 = 552/2 = 276 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='98.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='117.9,250.9 182.1,250.9 234.1,213.1 254,152 234.1,90.9 182.1,53.1 117.9,53.1 65.9,90.9 46,152 65.9,213.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='267.9' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 6 sm%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='250.9' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150,241.9 141,241.9 141,250.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='205.5' font-size='13' fill='%23334155' text-anchor='start'%3Er = 9,2 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuz-perimetr-apofema",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#f6561319"
+    },
+    {
+      "q": "Radiusi 8 sm bo'lgan aylanaga muntazam to'rtburchak ichki chizilgan. Shu to'rtburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "64 sm²",
+        "128 sm²",
+        "256 sm²",
+        "32 sm²"
+      ],
+      "t": 1,
+      "izoh": "Kvadratning tomoni a = R√2 = 8√2 sm. Yuzi esa S = a² = (8√2)² = 64·2 = 128 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='92' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='84.9,217.1 215.1,217.1 215.1,86.9 84.9,86.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='74.3' y='232.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='225.7' y='232.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='225.7' y='80.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='74.3' y='80.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cline x1='150' y1='152' x2='215.1' y2='86.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='188.5' y='113.5' font-size='13' fill='%23334155' text-anchor='start'%3ER = 8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "R-dan-tomon",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#6de271b4"
+    },
+    {
+      "q": "Muntazam uchburchakka tashqi chizilgan aylananing radiusi ichki chizilganidan necha marta katta?",
+      "v": [
+        "2 marta",
+        "3 marta",
+        "√3 marta",
+        "1,5 marta"
+      ],
+      "t": 0,
+      "izoh": "Muntazam uchburchakda R = a√3/3, r = a√3/6. Nisbat R : r = (a√3/3) : (a√3/6) = 2. Sabab: markaz medianani 2 : 1 nisbatda bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='152' r='48' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='66.9,200 233.1,200 150,56' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='53.9' y='212' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='246.1' y='212' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='150' y='45.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='200' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150,191 141,191 141,200' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='180' font-size='13' fill='%23334155' text-anchor='start'%3Er%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='56' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='98' font-size='13' fill='%23334155' text-anchor='start'%3ER%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "r-va-R-nisbati",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#29d664e4"
+    },
+    {
+      "q": "Muntazam sakkizburchak shaklidagi gulzor atrofiga uzunligi 96 m bo'lgan panjara qoldiqsiz o'rnatildi. Gulzorning bitta tomoni necha metr?",
+      "v": [
+        "8 m",
+        "16 m",
+        "12 m",
+        "24 m"
+      ],
+      "t": 2,
+      "izoh": "Panjara uzunligi perimetrga teng: P = 96 m. Muntazam sakkizburchakda tomonlar teng, demak a = 96 : 8 = 12 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='110.2,248.1 189.8,248.1 246.1,191.8 246.1,112.2 189.8,55.9 110.2,55.9 53.9,112.2 53.9,191.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='104.5' y='266.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='195.5' y='266.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259.9' y='202' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='259.9' y='111' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='195.5' y='46.6' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='104.5' y='46.6' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='40.1' y='111' font-size='13' fill='%23334155' text-anchor='middle'%3EG%3C/text%3E%3Ctext x='40.1' y='202' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='150' y='265.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perimetr-va-tomon",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#3372983c"
+    },
+    {
+      "q": "Usta yo'lakchani muntazam oltiburchak shaklidagi bir xil plitalar bilan bo'shliqsiz qopladi. Bitta nuqtada nechta plitaning uchi uchrashadi?",
+      "v": [
+        "4 ta",
+        "3 ta",
+        "6 ta",
+        "2 ta"
+      ],
+      "t": 1,
+      "izoh": "Muntazam oltiburchakning ichki burchagi 120°. Bir nuqta atrofidagi burchaklar yig'indisi 360° bo'lishi kerak, demak 360 : 120 = 3 ta plita uchrashadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='100,238.6 200,238.6 250,152 200,65.4 100,65.4 50,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='92.5' y='256.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='207.5' y='256.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='265' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='207.5' y='56.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='92.5' y='56.9' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='35' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cpath d='M 178 65.4 A 22 22 0 0 0 211 84.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='186' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parket-yopish",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#b7cf8aaf"
+    },
+    {
+      "q": "Muntazam oltiburchak shaklidagi stolning tomoni 40 sm. Bitta uchni bir uch oralab keyingi uch bilan tutashtiruvchi qisqa diagonalning uzunligi necha santimetr?",
+      "v": [
+        "80 sm",
+        "40√2 sm",
+        "20√3 sm",
+        "40√3 sm"
+      ],
+      "t": 3,
+      "izoh": "Qisqa diagonal ikkita tomon va 120° li burchakdan hosil bo'lgan uchburchakning katta tomonidir. Kosinuslar teoremasi bo'yicha d² = 40² + 40² − 2·40·40·cos 120° = 4800, demak d = 40√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='98,242.1 202,242.1 254,152 202,61.9 98,61.9 46,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='90.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='209.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='269' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='209.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='90.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='31' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='150' y='259.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 40 sm%3C/text%3E%3Cline x1='98' y1='242.1' x2='254' y2='152' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='176' y='190' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-uzunligi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#febfe9e4"
+    },
+    {
+      "q": "Sinf devoriga ikkita naqsh chizildi: biri qavariq sakkizburchak, ikkinchisi qavariq o'n ikki burchak. Ikkinchi naqshdagi diagonallar birinchisinikidan nechta ko'p?",
+      "v": [
+        "20 ta",
+        "44 ta",
+        "34 ta",
+        "24 ta"
+      ],
+      "t": 2,
+      "izoh": "Sakkizburchakda 8·5/2 = 20 ta, o'n ikki burchakda 12·9/2 = 54 ta diagonal bor. Farq 54 − 20 = 34 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-kopburchak-taqqoslash",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#5444cb57"
+    },
+    {
+      "q": "Tomoni 8 sm bo'lgan kvadratga ichki chizilgan doiraning yuzi kvadrat yuzining necha foizini tashkil qiladi (π ≈ 3,14)?",
+      "v": [
+        "78,5%",
+        "50%",
+        "25%",
+        "39,25%"
+      ],
+      "t": 0,
+      "izoh": "Ichki doira radiusi r = 8 : 2 = 4 sm, yuzi 3,14·16 = 50,24 sm². Kvadrat yuzi 8² = 64 sm². Nisbat 50,24 : 64 = 0,785, ya'ni 78,5%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='73.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='76.5,225.5 223.5,225.5 223.5,78.5 76.5,78.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='65.9' y='240.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='234.1' y='240.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='234.1' y='72.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='65.9' y='72.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='150' y='242.5' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-va-kopburchak-yuzi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#05065058"
+    },
+    {
+      "q": "Qavariq o'n ikki burchakning ichki burchaklari yig'indisi tashqi burchaklari yig'indisidan necha gradusga ko'p?",
+      "v": [
+        "1800°",
+        "2160°",
+        "1080°",
+        "1440°"
+      ],
+      "t": 3,
+      "izoh": "Ichki burchaklar yig'indisi (12 − 2)·180° = 1800°. Har qanday qavariq ko'pburchakning tashqi burchaklari yig'indisi 360°. Ayirma: 1800° − 360° = 1440°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='124.1,248.6 175.9,248.6 220.7,222.7 246.6,177.9 246.6,126.1 220.7,81.3 175.9,55.4 124.1,55.4 79.3,81.3 53.4,126.1 53.4,177.9 79.3,222.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-burchak-yigindisi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#0eb9063a"
+    },
+    {
+      "q": "Qavariq ko'pburchakning ichki burchaklari yig'indisi tashqi burchaklari yig'indisidan 3 marta katta bo'lsa, uning tomonlari soni nechta?",
+      "v": [
+        "6 ta",
+        "8 ta",
+        "10 ta",
+        "12 ta"
+      ],
+      "t": 1,
+      "izoh": "Tashqi burchaklar yig'indisi doim 360°, demak ichki yig'indi 3·360° = 1080°. Endi (n − 2)·180° = 1080°, ya'ni n − 2 = 6 va n = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-topish-yigindidan",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#4f35fdca"
+    },
+    {
+      "q": "Qavariq ko'pburchakning bitta tashqi burchagi 40°, qolgan barcha tashqi burchaklari esa o'zaro teng va har biri 20° dan. Bu ko'pburchak nechta tomonga ega?",
+      "v": [
+        "17 ta",
+        "16 ta",
+        "18 ta",
+        "15 ta"
+      ],
+      "t": 0,
+      "izoh": "Barcha tashqi burchaklar yig'indisi 360°. Bittasi 40° bo'lgani uchun qolganlariga 360° − 40° = 320° qoladi. Ular 20° dan bo'lgani uchun soni 320 : 20 = 16 ta. Jami uchlar soni 16 + 1 = 17 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-burchak-yigindisi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#8f4168a7"
+    },
+    {
+      "q": "Qavariq o'n ikki burchakning bitta uchidan nechta diagonal chiqadi va shaklda jami nechta diagonal bor?",
+      "v": [
+        "9 ta va 108 ta",
+        "10 ta va 60 ta",
+        "9 ta va 54 ta",
+        "11 ta va 66 ta"
+      ],
+      "t": 2,
+      "izoh": "Bitta uchdan o'zi va ikkita qo'shni uchga diagonal chiqmaydi, demak n − 3 = 9 ta. Jami diagonal esa n(n − 3)/2 = 12·9/2 = 54 ta, chunki har bir diagonal ikki marta sanaladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='124.1,248.6 175.9,248.6 220.7,222.7 246.6,177.9 246.6,126.1 220.7,81.3 175.9,55.4 124.1,55.4 79.3,81.3 53.4,126.1 53.4,177.9 79.3,222.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-soni",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#0154266e"
+    },
+    {
+      "q": "Qavariq ko'pburchakning diagonallari soni uning tomonlari sonidan 7 taga ko'p ekani ma'lum. Bu ko'pburchakda nechta tomon bor?",
+      "v": [
+        "5 ta",
+        "7 ta",
+        "9 ta",
+        "6 ta"
+      ],
+      "t": 1,
+      "izoh": "Shart bo'yicha n(n − 3)/2 = n + 7. Ikkala tomonni 2 ga ko'paytiramiz: n² − 3n = 2n + 14, ya'ni n² − 5n − 14 = 0. Bundan n = 7 (ikkinchi ildiz manfiy, u yaramaydi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-topish-diagonaldan",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#0e7629f4"
+    },
+    {
+      "q": "Usta shift naqshini qavariq o'n ikki burchak shaklida yasab, uni bitta uchdan chiqqan diagonallar bilan uchburchaklarga bo'ldi. Ishlatilgan diagonallar soni bilan hosil bo'lgan uchburchaklar soni yig'indisi nechta?",
+      "v": [
+        "21 ta",
+        "22 ta",
+        "20 ta",
+        "19 ta"
+      ],
+      "t": 3,
+      "izoh": "Bitta uchdan n − 3 = 9 ta diagonal chiqadi, ular esa n − 2 = 10 ta uchburchak hosil qiladi. Ikkalasining yig'indisi 9 + 10 = 19 ta.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='124.1,248.6 175.9,248.6 220.7,222.7 246.6,177.9 246.6,126.1 220.7,81.3 175.9,55.4 124.1,55.4 79.3,81.3 53.4,126.1 53.4,177.9 79.3,222.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchakka-bolish",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#f92ed18b"
+    },
+    {
+      "q": "Bog'dagi gulzor muntazam beshburchak shaklida qurilgan. Gulzorning ikkita qo'shni ichki burchagining yig'indisi necha gradus?",
+      "v": [
+        "108°",
+        "144°",
+        "216°",
+        "252°"
+      ],
+      "t": 2,
+      "izoh": "Muntazam beshburchakning bitta ichki burchagi (5 − 2)·180°/5 = 540°/5 = 108°. Ikkita qo'shni burchak yig'indisi esa 2·108° = 216°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='91.2,232.9 208.8,232.9 245.1,121.1 150,52 54.9,121.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='82.4' y='249.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='217.6' y='249.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='259.4' y='121' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='41.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='40.6' y='121' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "muntazam-ichki-burchak",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#468473e9"
+    },
+    {
+      "q": "Muntazam ko'pburchakning ichki burchagi 108° ga teng bo'lsa, unda nechta diagonal o'tkazish mumkin?",
+      "v": [
+        "5 ta",
+        "9 ta",
+        "2 ta",
+        "10 ta"
+      ],
+      "t": 0,
+      "izoh": "Tashqi burchak 180° − 108° = 72°, demak n = 360 : 72 = 5. Beshburchakdagi diagonallar soni n(n − 3)/2 = 5·2/2 = 5 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "n-topish-ichki-burchakdan",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#1ad41d35"
+    },
+    {
+      "q": "Muntazam ko'pburchakning barcha tashqi burchaklari yig'indisi uning bitta ichki burchagidan 3 marta katta. Bu ko'pburchakda nechta tomon bor?",
+      "v": [
+        "3 ta",
+        "8 ta",
+        "5 ta",
+        "6 ta"
+      ],
+      "t": 3,
+      "izoh": "Tashqi burchaklar yig'indisi 360°, demak ichki burchak 360 : 3 = 120°. Unga qo'shni tashqi burchak 180° − 120° = 60°, tomonlar soni esa 360 : 60 = 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "muntazam-tashqi-burchak",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#312ec180"
+    },
+    {
+      "q": "Sirkda muntazam ko'pburchak shaklidagi arena markazidan har bir uchga chiroq nuri yo'naltirilgan va qo'shni ikki nur orasidagi burchak 22,5° ga teng. Arena nechta tomonga ega?",
+      "v": [
+        "15 ta",
+        "16 ta",
+        "18 ta",
+        "20 ta"
+      ],
+      "t": 1,
+      "izoh": "Qo'shni nurlar orasidagi burchak markaziy burchakdir, u 360°/n ga teng. Demak n = 360 : 22,5 = 16 ta tomon bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markaziy-burchak",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#7efd465b"
+    },
+    {
+      "q": "Qavariq oltiburchakning beshta ichki burchagi 110°, 125°, 140°, 130° va 115° ga teng bo'lsa, oltinchi burchagi necha gradus?",
+      "v": [
+        "100°",
+        "460°",
+        "120°",
+        "80°"
+      ],
+      "t": 0,
+      "izoh": "Oltiburchak uchun ichki burchaklar yig'indisi (6 − 2)·180° = 720°. Beshtasining yig'indisi 110° + 125° + 140° + 130° + 115° = 620°. Oltinchisi 720° − 620° = 100°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='98.8,243 202.8,243 246,181.3 239.8,110.9 162.9,57 54,119.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='89.3' y='259.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='208.6' y='261.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.4' y='189.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='252.3' y='107.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='162.2' y='46.5' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='39.8' y='119.4' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='120.4' y='221.2' font-size='13' fill='%23334155' text-anchor='middle'%3E110°%3C/text%3E%3Ctext x='189.6' y='216.2' font-size='13' fill='%23334155' text-anchor='middle'%3E125°%3C/text%3E%3Ctext x='213.3' y='176.6' font-size='13' fill='%23334155' text-anchor='middle'%3E140°%3C/text%3E%3Ctext x='211.5' y='134.2' font-size='13' fill='%23334155' text-anchor='middle'%3E130°%3C/text%3E%3Ctext x='164.4' y='95.4' font-size='13' fill='%23334155' text-anchor='middle'%3E115°%3C/text%3E%3Ctext x='86.1' y='135.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomalum-burchak-topish",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#cc338621"
+    },
+    {
+      "q": "Qavariq oltiburchakning tashqi burchaklari 1 : 2 : 3 : 3 : 4 : 5 nisbatda bo'lsa, eng katta tashqi burchak necha gradus?",
+      "v": [
+        "80°",
+        "20°",
+        "100°",
+        "200°"
+      ],
+      "t": 2,
+      "izoh": "Qismlar yig'indisi 1 + 2 + 3 + 3 + 4 + 5 = 18. Tashqi burchaklar yig'indisi 360°, demak bir qism 360 : 18 = 20°. Eng kattasi 5·20° = 100°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150.9,233.9 191.6,233.9 246,188.3 230.9,102.6 130.5,66.1 54,198.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='147.1' y='252.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='197' y='252.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.6' y='196.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='241.1' y='96.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='125.6' y='56.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='39.4' y='206.8' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchaklar-nisbati",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#f3fba7da"
+    },
+    {
+      "q": "Muntazam uchburchak shaklidagi metall plastinka atrofiga tashqi chizilgan aylananing radiusi 10 sm. Plastinkaning tomoni necha santimetr?",
+      "v": [
+        "5√3 sm",
+        "10√3 sm",
+        "20 sm",
+        "10 sm"
+      ],
+      "t": 1,
+      "izoh": "R = a√3/3 formulasidan a ni ifodalaymiz: a = R√3. R = 10 bo'lgani uchun a = 10√3 sm. Radiusni tomon deb olish yoki ikkiga bo'lish tipik xatolardir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='66.9,200 233.1,200 150,56' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='53.9' y='212' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='246.1' y='212' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='150' y='45.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='217' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = ?%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='56' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='98' font-size='13' fill='%23334155' text-anchor='start'%3ER = 10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "muntazam-uchburchak-olchovlari",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#eb61ed0f"
+    },
+    {
+      "q": "Do'kondagi kvadrat shaklidagi oynaning to'rtala uchi radiusi 6√2 sm bo'lgan aylanada yotadi. Oynaning yuzi necha kvadrat santimetr?",
+      "v": [
+        "72 sm²",
+        "288 sm²",
+        "36 sm²",
+        "144 sm²"
+      ],
+      "t": 3,
+      "izoh": "R = a√2/2 dan a = R√2 = 6√2·√2 = 12 sm. Kvadratning yuzi S = a² = 12² = 144 sm². Radiusning o'zini tomon deb olish 72, diagonalni (2R) tomon deb olish esa 288 kabi xato javoblarga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='92' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='84.9,217.1 215.1,217.1 215.1,86.9 84.9,86.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='74.3' y='232.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='225.7' y='232.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='225.7' y='80.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='74.3' y='80.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cline x1='150' y1='152' x2='215.1' y2='86.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='188.5' y='113.5' font-size='13' fill='%23334155' text-anchor='start'%3ER = 6√2 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-olchovlari",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#3ca78467"
+    },
+    {
+      "q": "Maydonchaning yo'lakchalari muntazam oltiburchak shaklidagi plitalar bilan qoplangan va har bir plitaning tomoni 20 sm. Bitta plitaning yuzi necha kvadrat santimetr?",
+      "v": [
+        "300√3 sm²",
+        "1200√3 sm²",
+        "600√3 sm²",
+        "400√3 sm²"
+      ],
+      "t": 2,
+      "izoh": "Muntazam oltiburchak oltita teng tomonli uchburchakdan iborat, ularning har birining yuzi a²√3/4. Demak S = 6·400·√3/4 = 600√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='98,242.1 202,242.1 254,152 202,61.9 98,61.9 46,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='90.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='209.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='269' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='209.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='90.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='31' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='150' y='259.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "muntazam-oltiburchak-olchovlari",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#466dc850"
+    },
+    {
+      "q": "Muntazam o'n ikki burchakning tomoni 5 sm bo'lsa, unga tashqi chizilgan aylananing radiusi qanchaga teng (sin 15° ≈ 0,259)?",
+      "v": [
+        "9,65 sm",
+        "19,3 sm",
+        "4,83 sm",
+        "1,3 sm"
+      ],
+      "t": 0,
+      "izoh": "180° : 12 = 15°, shuning uchun R = 5/(2·0,259) = 5/0,518 ≈ 9,65 sm. Maxrajdagi ikkini unutish javobni ikki marta oshirib yuboradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='125.2,244.7 174.8,244.7 217.9,219.9 242.7,176.8 242.7,127.2 217.9,84.1 174.8,59.3 125.2,59.3 82.1,84.1 57.3,127.2 57.3,176.8 82.1,219.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='261.7' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 5 sm%3C/text%3E%3Cline x1='150' y1='152' x2='242.7' y2='127.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='202.4' y='133.6' font-size='13' fill='%23334155' text-anchor='start'%3ER = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-aylana-radiusi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#2e744ec9"
+    },
+    {
+      "q": "Muntazam o'nburchakning apofemasi, ya'ni ichki chizilgan aylana radiusi 15 sm bo'lsa, uning tomoni necha santimetr (tg 18° ≈ 0,325)?",
+      "v": [
+        "4,88 sm",
+        "19,5 sm",
+        "46,15 sm",
+        "9,75 sm"
+      ],
+      "t": 3,
+      "izoh": "r = a/(2 tg(180°/n)) formulasidan a = 2r·tg 18°. Demak a = 2·15·0,325 = 30·0,325 = 9,75 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='98.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='117.9,250.9 182.1,250.9 234.1,213.1 254,152 234.1,90.9 182.1,53.1 117.9,53.1 65.9,90.9 46,152 65.9,213.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='152' x2='150' y2='250.9' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150,241.9 141,241.9 141,250.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='205.5' font-size='13' fill='%23334155' text-anchor='start'%3Er = 15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-aylana-radiusi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#87e5a4cb"
+    },
+    {
+      "q": "Muntazam to'qqizburchak shaklidagi taglikning yuzi 396 sm², apofemasi esa 11 sm. Taglikning bitta tomoni necha santimetr?",
+      "v": [
+        "72 sm",
+        "8 sm",
+        "4 sm",
+        "36 sm"
+      ],
+      "t": 1,
+      "izoh": "S = P·r/2 dan P = 2S/r = 2·396/11 = 72 sm. Tomonlar soni to'qqizta bo'lgani uchun bitta tomon 72 : 9 = 8 sm ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='97.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='114.4,249.7 185.6,249.7 240.1,204 252.4,133.9 216.8,72.3 150,48 83.2,72.3 47.6,133.9 59.9,204' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='152' x2='150' y2='249.7' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150,240.7 141,240.7 141,249.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='204.9' font-size='13' fill='%23334155' text-anchor='start'%3Er = 11 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuz-perimetr-apofema",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#fa234a56"
+    },
+    {
+      "q": "Radiusi 12 sm bo'lgan aylanaga ichki chizilgan muntazam uchburchakning tomoni necha santimetr?",
+      "v": [
+        "12√3 sm",
+        "6√3 sm",
+        "24√3 sm",
+        "12 sm"
+      ],
+      "t": 0,
+      "izoh": "Muntazam uchburchak uchun R = a√3/3, bundan a = R√3. R = 12 bo'lgani uchun a = 12√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='66.9,200 233.1,200 150,56' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='53.9' y='212' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='246.1' y='212' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='150' y='45.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='56' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='98' font-size='13' fill='%23334155' text-anchor='start'%3ER = 12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "R-dan-tomon",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#8623a481"
+    },
+    {
+      "q": "Kvadrat shaklidagi maydonchaga ichki chizilgan doira bilan tashqi chizilgan doiraning yuzlari nisbati qanday?",
+      "v": [
+        "1 : √2",
+        "1 : 4",
+        "1 : 2",
+        "2 : 1"
+      ],
+      "t": 2,
+      "izoh": "Kvadratda r = a/2 va R = a√2/2. Doiralar yuzlari radius kvadratiga proporsional: r² : R² = (a²/4) : (a²/2) = 1 : 2.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='92' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='152' r='65.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='84.9,217.1 215.1,217.1 215.1,86.9 84.9,86.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='74.3' y='232.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='225.7' y='232.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='225.7' y='80.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='74.3' y='80.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='217.1' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150,208.1 141,208.1 141,217.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='188.5' font-size='13' fill='%23334155' text-anchor='start'%3Er%3C/text%3E%3Cline x1='150' y1='152' x2='215.1' y2='86.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='188.5' y='113.5' font-size='13' fill='%23334155' text-anchor='start'%3ER%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "r-va-R-nisbati",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#9097a6d6"
+    },
+    {
+      "q": "Duradgor Alisher uzunligi 3 m bo'lgan reykani teng bo'laklarga kesib, muntazam oltiburchak shaklidagi ramkani qoldiqsiz yig'di. Ramkaning bitta tomoni necha santimetr?",
+      "v": [
+        "60 sm",
+        "50 sm",
+        "30 sm",
+        "75 sm"
+      ],
+      "t": 1,
+      "izoh": "Reyka uzunligi 3 m = 300 sm va u ramkaning perimetriga aylanadi. Oltiburchakda oltita teng tomon bor, demak a = 300 : 6 = 50 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='98,242.1 202,242.1 254,152 202,61.9 98,61.9 46,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='90.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='209.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='269' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='209.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='90.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='31' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='150' y='259.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-va-tomon",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#545c9acf"
+    },
+    {
+      "q": "Bir nuqtada ikkita muntazam sakkizburchak va yana bitta muntazam ko'pburchak bo'shliqsiz uchrashadi. Uchinchi ko'pburchak nechta tomonga ega?",
+      "v": [
+        "3 ta",
+        "6 ta",
+        "8 ta",
+        "4 ta"
+      ],
+      "t": 3,
+      "izoh": "Sakkizburchakning ichki burchagi 135°, ikkitasi 270° ni beradi. Uchinchisiga 360° − 270° = 90° qoladi, bu esa kvadratning burchagi. Demak uchinchi shakl 4 tomonli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parket-yopish",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#735d3195"
+    },
+    {
+      "q": "Muntazam sakkizburchakning eng uzun diagonali unga tashqi chizilgan aylananing radiusidan necha marta katta?",
+      "v": [
+        "4 marta",
+        "√2 marta",
+        "2 marta",
+        "1,5 marta"
+      ],
+      "t": 2,
+      "izoh": "Sakkizburchakda uchlar soni juft, shuning uchun qarama-qarshi uchlarni tutashtiruvchi diagonal markazdan o'tadi. U tashqi aylananing diametri, ya'ni 2R ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-uzunligi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#43d8040b"
+    },
+    {
+      "q": "Muntazam beshburchak bilan muntazam o'nburchakning markaziy burchaklari ayirmasi necha gradusga teng?",
+      "v": [
+        "36°",
+        "72°",
+        "18°",
+        "108°"
+      ],
+      "t": 0,
+      "izoh": "Markaziy burchak 360°/n ga teng. Beshburchakda 360 : 5 = 72°, o'nburchakda 360 : 10 = 36°. Ayirma 72° − 36° = 36°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-kopburchak-taqqoslash",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#a59ba19b"
+    },
+    {
+      "q": "Muntazam uchburchak shaklidagi yo'l belgisining tomoni 20 sm. Unga ichki chizilgan aylananing uzunligi necha santimetr (π ≈ 3,14, √3 ≈ 1,73)?",
+      "v": [
+        "72,4 sm",
+        "18,1 sm",
+        "62,8 sm",
+        "36,2 sm"
+      ],
+      "t": 3,
+      "izoh": "Ichki aylana radiusi r = a√3/6 = 20·1,73/6 ≈ 5,77 sm. Aylana uzunligi C = 2πr = 2·3,14·5,77 ≈ 36,2 sm. Radiusni a : 2 deb olish 62,8 kabi xatoga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='52' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='59.9,204 240.1,204 150,48' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='46.9' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='253.1' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='150' y='37.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='221' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-va-kopburchak-yuzi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#f3b42195"
+    },
+    {
+      "q": "Ma'rufjon bog'ida ikkita gulzor chizdi: biri qavariq to'rtburchak, ikkinchisi qavariq sakkizburchak shaklida. Ikkala gulzor konturidagi barcha ichki burchaklar yig'indisi nechaga teng?",
+      "v": [
+        "2160°",
+        "1440°",
+        "1260°",
+        "1080°"
+      ],
+      "t": 1,
+      "izoh": "To'rtburchak uchun (4 − 2)·180° = 360°, sakkizburchak uchun (8 − 2)·180° = 1080°. Ularni qo'shamiz: 360° + 1080° = 1440°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-burchak-yigindisi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#70ed50c4"
+    },
+    {
+      "q": "Metro bekatidagi mozaika naqshi qavariq ko'pburchak shaklida bo'lib, uning ichki burchaklari yig'indisi 2340° ga teng. Shu naqshda nechta diagonal o'tkazish mumkin?",
+      "v": [
+        "90 ta",
+        "65 ta",
+        "105 ta",
+        "180 ta"
+      ],
+      "t": 0,
+      "izoh": "Avval tomonlar sonini topamiz: (n − 2)·180° = 2340° dan n − 2 = 13, ya'ni n = 15. Endi diagonallar soni n(n − 3)/2 = 15·12/2 = 90 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "n-topish-yigindidan",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#74c2219c"
+    },
+    {
+      "q": "Dehqon Sobir uchastkasini qavariq oltiburchak shaklida devor bilan o'radi. Uchastkaning beshta tashqi burchagi 55°, 62°, 48°, 70° va 65° ga teng. Oltinchi tashqi burchak necha gradus?",
+      "v": [
+        "420°",
+        "120°",
+        "60°",
+        "180°"
+      ],
+      "t": 2,
+      "izoh": "Ma'lum beshta tashqi burchakni qo'shamiz: 55° + 62° + 48° + 70° + 65° = 300°. Tashqi burchaklar yig'indisi 360° bo'lgani uchun oltinchisi 360° − 300° = 60° ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-burchak-yigindisi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#cb42ed42"
+    },
+    {
+      "q": "Konferensiya zalida to'qqizta stol qavariq to'qqizburchak uchlarida joylashgan. Qo'shni stollar allaqachon sim bilan bog'langan, qolgan barcha juftliklarni ham bog'lash kerak. Nechta yangi sim tortiladi?",
+      "v": [
+        "36 ta",
+        "27 ta",
+        "18 ta",
+        "54 ta"
+      ],
+      "t": 1,
+      "izoh": "Qo'shni stollar tomonlarga mos keladi, yangi simlar esa diagonallardir. To'qqizburchakda n(n − 3)/2 = 9·6/2 = 27 ta diagonal bor, demak 27 ta yangi sim kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='115.8,246 184.2,246 236.6,202 248.5,134.6 214.3,75.4 150,52 85.7,75.4 51.5,134.6 63.4,202' stroke='%23334155' stroke-width='2' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-soni",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#dcde6b1a"
+    },
+    {
+      "q": "Qavariq ko'pburchakning tomonlari soni 3 taga oshirilganda diagonallari soni 15 taga ko'paydi. Dastlab bu ko'pburchakda nechta tomon bor edi?",
+      "v": [
+        "6 ta",
+        "8 ta",
+        "4 ta",
+        "5 ta"
+      ],
+      "t": 3,
+      "izoh": "Diagonallar farqi [(n + 3)n − n(n − 3)]/2 = 6n/2 = 3n ga teng. Shart bo'yicha 3n = 15, demak n = 5. Tekshiramiz: beshburchakda 5 ta, sakkizburchakda 20 ta diagonal, farqi 15 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "n-topish-diagonaldan",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#161dcf9b"
+    },
+    {
+      "q": "Qavariq ko'pburchakning ichida bitta nuqta olinib, u barcha uchlar bilan tutashtirildi va 14 ta uchburchak hosil bo'ldi. Shu ko'pburchakning ichki burchaklari yig'indisi nechaga teng?",
+      "v": [
+        "2520°",
+        "1980°",
+        "2160°",
+        "2340°"
+      ],
+      "t": 2,
+      "izoh": "Ichki nuqta har bir tomon bilan bitta uchburchak beradi, demak uchburchaklar soni tomonlar soniga teng: n = 14. Ichki burchaklar yig'indisi esa (14 − 2)·180° = 2160°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchakka-bolish",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#ca0a3f02"
+    },
+    {
+      "q": "Muntazam ko'pburchakning ichki burchagi shu uchdagi tashqi burchagidan 4 marta katta ekani ma'lum. Uning bitta ichki burchagi necha gradus?",
+      "v": [
+        "144°",
+        "36°",
+        "135°",
+        "150°"
+      ],
+      "t": 0,
+      "izoh": "Ichki va tashqi burchaklar qo'shni bo'lgani uchun ularning yig'indisi 180°. Tashqini x desak, 4x + x = 180°, ya'ni x = 36°. Demak ichki burchak 4·36° = 144°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "muntazam-ichki-burchak",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#c4200f4b"
+    },
+    {
+      "q": "Zargar Nilufar taqinchoq uchun muntazam ko'pburchak yasadi. Uning bitta ichki burchagi shu uchdagi tashqi burchagidan 100° ga katta. Taqinchoqda nechta tomon bor?",
+      "v": [
+        "10 ta",
+        "8 ta",
+        "18 ta",
+        "9 ta"
+      ],
+      "t": 3,
+      "izoh": "Ichki va tashqi burchak yig'indisi 180°, ayirmasi esa 100°. Demak ichki burchak (180° + 100°)/2 = 140°, tashqisi 40°. Tomonlar soni 360 : 40 = 9 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "n-topish-ichki-burchakdan",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#a6b5d82a"
+    },
+    {
+      "q": "Toshkentdagi bir binoning gumbazi muntazam ko'pburchak asosga ega bo'lib, asosning har bir tashqi burchagi 30° ga teng. Asosning ichki burchaklari yig'indisi nechaga teng?",
+      "v": [
+        "2160°",
+        "1800°",
+        "1500°",
+        "360°"
+      ],
+      "t": 1,
+      "izoh": "Tomonlar soni 360 : 30 = 12 ta. Endi ichki burchaklar yig'indisini topamiz: (12 − 2)·180° = 1800°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "muntazam-tashqi-burchak",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#ec26482c"
+    },
+    {
+      "q": "Muntazam ko'pburchakning ichki burchagi bilan markaziy burchagining ayirmasi 120° ga teng. Bu ko'pburchakda nechta tomon bor?",
+      "v": [
+        "12 ta",
+        "10 ta",
+        "15 ta",
+        "6 ta"
+      ],
+      "t": 0,
+      "izoh": "Ichki burchak 180° − 360°/n, markaziy burchak esa 360°/n. Ayirma 180° − 720°/n = 120°, bundan 720/n = 60 va n = 12. Tekshirish: markaziy 30°, ichki 150°, ayirma 120°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "markaziy-burchak",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#ed767989"
+    },
+    {
+      "q": "Qavariq beshburchak shaklidagi bog'ning uchta ichki burchagi o'zaro teng, qolgan ikkitasi esa 100° va 125° ga teng. Teng burchaklarning har biri necha gradus?",
+      "v": [
+        "45°",
+        "108°",
+        "105°",
+        "90°"
+      ],
+      "t": 2,
+      "izoh": "Beshburchakning ichki burchaklari yig'indisi (5 − 2)·180° = 540°. Ma'lum ikkitasi 100° + 125° = 225° ni beradi. Qolgan uchtasiga 540° − 225° = 315° qoladi, ular o'zaro teng bo'lgani uchun har biri 315 : 3 = 105° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='74.2,228.9 236.8,228.9 257.7,110.7 148.9,60 45,120' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='63' y='246' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='248' y='246' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='272' y='108' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='149' y='48' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='33' y='118' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='91.4' y='211.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='218.3' y='211.5' font-size='13' fill='%23334155' text-anchor='middle'%3E100°%3C/text%3E%3Ctext x='234.6' y='119.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='149.7' y='79.7' font-size='13' fill='%23334155' text-anchor='middle'%3E125°%3C/text%3E%3Ctext x='68.7' y='126.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nomalum-burchak-topish",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#db308e93"
+    },
+    {
+      "q": "Loyihachi Aziza qavariq to'rtburchak shaklidagi hovuz chizdi, uning ichki burchaklari 1 : 2 : 3 : 4 nisbatda. Eng katta va eng kichik burchaklar ayirmasi necha gradus?",
+      "v": [
+        "144°",
+        "108°",
+        "72°",
+        "180°"
+      ],
+      "t": 1,
+      "izoh": "Qismlar yig'indisi 1 + 2 + 3 + 4 = 10, bir qism 360 : 10 = 36°. Eng katta burchak 4·36° = 144°, eng kichigi 36°. Ayirma 144° − 36° = 108°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='54,193.1 246,193.1 218,106.9 172.7,106.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='39.9' y='202.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='258.9' y='205.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='228.9' y='101.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='172.7' y='96.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchaklar-nisbati",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#cc0c8167"
+    },
+    {
+      "q": "Muntazam uchburchakka ichki chizilgan aylananing radiusi 4 sm bo'lsa, shu uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "16√3 sm²",
+        "24√3 sm²",
+        "64√3 sm²",
+        "48√3 sm²"
+      ],
+      "t": 3,
+      "izoh": "r = a√3/6 dan a = 6r/√3 = 2r√3 = 8√3 sm. Yuzni S = P·r/2 orqali topamiz: P = 3·8√3 = 24√3, demak S = 24√3·4/2 = 48√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='52' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='59.9,204 240.1,204 150,48' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='46.9' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='253.1' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='150' y='37.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='204' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150,195 141,195 141,204' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='182' font-size='13' fill='%23334155' text-anchor='start'%3Er = 4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "muntazam-uchburchak-olchovlari",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#5dabec47"
+    },
+    {
+      "q": "Kvadratga tashqi chizilgan aylananing radiusi ichki chizilgan aylana radiusidan 3 sm ga katta. Kvadratning tomoni necha santimetr?",
+      "v": [
+        "6(√2 − 1) sm",
+        "3(√2 + 1) sm",
+        "6(√2 + 1) sm",
+        "6√2 sm"
+      ],
+      "t": 2,
+      "izoh": "Tomonni a desak, R = a√2/2 va r = a/2. Ayirma R − r = a(√2 − 1)/2 = 3, bundan a = 6/(√2 − 1). Maxrajni ratsionallashtiramiz: a = 6(√2 + 1) sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='92' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='152' r='65.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='84.9,217.1 215.1,217.1 215.1,86.9 84.9,86.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='74.3' y='232.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='225.7' y='232.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='225.7' y='80.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='74.3' y='80.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='150' y='234.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-olchovlari",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#78c8974d"
+    },
+    {
+      "q": "Muntazam oltiburchakka ichki chizilgan aylananing radiusi 9 sm bo'lsa, oltiburchakning perimetri necha santimetr?",
+      "v": [
+        "36√3 sm",
+        "54 sm",
+        "18√3 sm",
+        "36 sm"
+      ],
+      "t": 0,
+      "izoh": "r = a√3/2 formulasidan a = 2r/√3 = 18/√3 = 6√3 sm. Perimetr esa P = 6a = 6·6√3 = 36√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='90.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='98,242.1 202,242.1 254,152 202,61.9 98,61.9 46,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='90.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='209.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='269' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='209.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='90.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='31' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cline x1='150' y1='152' x2='150' y2='242.1' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='150,233.1 141,233.1 141,242.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156' y='201' font-size='13' fill='%23334155' text-anchor='start'%3Er = 9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "muntazam-oltiburchak-olchovlari",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#f5150b4d"
+    },
+    {
+      "q": "Muntazam to'qqizburchak shaklidagi stol ustiga doira shaklidagi gilam yozilmoqchi, gilam cheti stolning barcha uchlariga tegishi kerak. Stol tomoni 60 sm bo'lsa, gilamning diametri necha santimetr (sin 20° ≈ 0,342)?",
+      "v": [
+        "87,7 sm",
+        "351 sm",
+        "43,9 sm",
+        "175,4 sm"
+      ],
+      "t": 3,
+      "izoh": "Avval radiusni topamiz: 180° : 9 = 20°, R = 60/(2·0,342) = 60/0,684 ≈ 87,7 sm. Gilamning diametri esa D = 2R ≈ 175,4 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='117.2,242.2 182.8,242.2 233.1,200 244.5,135.3 211.7,78.5 150,56 88.3,78.5 55.5,135.3 66.9,200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='259.2' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 60 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tashqi-aylana-radiusi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#18f87c6a"
+    },
+    {
+      "q": "Usta muntazam oltiburchak shaklidagi gayka yasamoqda va gaykaning qarama-qarshi ikki yassi yuzi orasidagi masofa 24 mm bo'lishi kerak. Gaykaning tomoni necha millimetr?",
+      "v": [
+        "12 mm",
+        "8√3 mm",
+        "24 mm",
+        "4√3 mm"
+      ],
+      "t": 1,
+      "izoh": "Qarama-qarshi yuzlar orasidagi masofa ichki aylana diametriga teng, demak r = 12 mm. Oltiburchakda r = a√3/2, bundan a = 2r/√3 = 24/√3 = 8√3 mm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='90.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='98,242.1 202,242.1 254,152 202,61.9 98,61.9 46,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='90.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='209.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='269' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='209.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='90.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='31' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-aylana-radiusi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#a9f5174d"
+    },
+    {
+      "q": "Ikkita muntazam oltiburchakdan birinchisining tomoni ikkinchisinikidan 3 marta uzun. Birinchisining yuzi ikkinchisinikidan necha marta katta?",
+      "v": [
+        "9 marta",
+        "3 marta",
+        "6 marta",
+        "27 marta"
+      ],
+      "t": 0,
+      "izoh": "Muntazam oltiburchak yuzi tomonning kvadratiga proporsional: S = 3a²√3/2. Tomon 3 marta oshsa yuz 3² = 9 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuz-perimetr-apofema",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#d9fd0929"
+    },
+    {
+      "q": "Radiusi 30 sm bo'lgan doira shaklidagi stol qopqog'iga muntazam oltiburchak shaklidagi eng katta salfetka qo'yilmoqchi va uning uchlari qopqoq chetiga tegadi. Salfetkaning yuzi necha kvadrat santimetr?",
+      "v": [
+        "675√3 sm²",
+        "2700√3 sm²",
+        "1350√3 sm²",
+        "900√3 sm²"
+      ],
+      "t": 2,
+      "izoh": "Uchlari doira chetida bo'lgani uchun a = R = 30 sm. Oltiburchak yuzi S = 3a²√3/2 = 3·900·√3/2 = 1350√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='102,235.1 198,235.1 246,152 198,68.9 102,68.9 54,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='94.5' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='205.5' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='205.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='94.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='39' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cline x1='150' y1='152' x2='198' y2='68.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='180' y='104.4' font-size='13' fill='%23334155' text-anchor='start'%3ER = 30 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "R-dan-tomon",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#2f720fc6"
+    },
+    {
+      "q": "Muntazam oltiburchakka ichki chizilgan doiraning yuzi tashqi chizilgan doira yuzidan necha foizga kichik?",
+      "v": [
+        "13%",
+        "25%",
+        "75%",
+        "50%"
+      ],
+      "t": 1,
+      "izoh": "Oltiburchakda r = R√3/2, demak r² = 3R²/4. Ichki doira yuzi tashqisining 3/4 qismi, ya'ni 75% ini tashkil qiladi. Farq 100% − 75% = 25%.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='152' r='83.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='102,235.1 198,235.1 246,152 198,68.9 102,68.9 54,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='94.5' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='205.5' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='205.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='94.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='39' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "r-va-R-nisbati",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#2d414841"
+    },
+    {
+      "q": "Muntazam o'nburchak shaklidagi maydonchaning perimetri 80 m. Uning chegarasi bo'ylab har 2 metrda bittadan ustun o'rnatiladi va har bir burchakka ham ustun aniq to'g'ri keladi. Jami nechta ustun kerak?",
+      "v": [
+        "41 ta",
+        "50 ta",
+        "30 ta",
+        "40 ta"
+      ],
+      "t": 3,
+      "izoh": "Chegara yopiq chiziq bo'lgani uchun ustunlar soni oraliqlar soniga teng bo'ladi. Oraliqlar soni 80 : 2 = 40 ta, demak 40 ta ustun kerak. Ochiq chiziqda esa bitta ortiq bo'lardi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='117.9,250.9 182.1,250.9 234.1,213.1 254,152 234.1,90.9 182.1,53.1 117.9,53.1 65.9,90.9 46,152 65.9,213.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perimetr-va-tomon",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#ecc1c8d3"
+    },
+    {
+      "q": "Bir nuqtada muntazam uchburchak, muntazam o'n ikki burchak va yana bitta ko'pburchak bo'shliqsiz uchrashadi. Uchinchi ko'pburchakning ichki burchagi necha gradus?",
+      "v": [
+        "120°",
+        "90°",
+        "150°",
+        "108°"
+      ],
+      "t": 2,
+      "izoh": "Uchburchak burchagi 60°, o'n ikki burchakniki (12 − 2)·180°/12 = 150°. Ularning yig'indisi 210°, demak uchinchisiga 360° − 210° = 150° qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parket-yopish",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#f4538889"
+    },
+    {
+      "q": "Muntazam oltiburchak shaklidagi bog' maydonchasining qarama-qarshi ikki uchi orasiga uzunligi 24 m bo'lgan to'g'ri yo'lka qurildi. Maydonchaning yuzi necha kvadrat metr?",
+      "v": [
+        "216√3 m²",
+        "864√3 m²",
+        "108√3 m²",
+        "432√3 m²"
+      ],
+      "t": 0,
+      "izoh": "Qarama-qarshi uchlar orasidagi masofa 2a ga teng, demak 2a = 24 va a = 12 m. Oltiburchak yuzi S = 3a²√3/2 = 3·144·√3/2 = 216√3 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='98,242.1 202,242.1 254,152 202,61.9 98,61.9 46,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='90.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='209.5' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='269' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='209.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='90.5' y='53.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='31' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cline x1='98' y1='242.1' x2='202' y2='61.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 24 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-uzunligi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#fb6e665d"
+    },
+    {
+      "q": "Ikkita muntazam ko'pburchakning tomonlari soni 1 : 2 nisbatda, ichki burchaklari esa 3 : 4 nisbatda. Kichik ko'pburchak nechta tomonga ega?",
+      "v": [
+        "4 ta",
+        "10 ta",
+        "6 ta",
+        "5 ta"
+      ],
+      "t": 3,
+      "izoh": "Kichigining tomonlari n, kattasiniki 2n bo'lsin. Burchaklar 180° − 360°/n va 180° − 180°/n. Shartdan 4(180 − 360/n) = 3(180 − 180/n), ya'ni 180 = 900/n va n = 5. Tekshiramiz: 108° va 144°, nisbat 3 : 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-kopburchak-taqqoslash",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#ee6c8f0d"
+    },
+    {
+      "q": "Muntazam oltiburchakka ichki chizilgan doira bilan tashqi chizilgan doira orasidagi halqaning yuzi 25π sm² ga teng. Oltiburchakning tomoni necha santimetr?",
+      "v": [
+        "5 sm",
+        "10 sm",
+        "20 sm",
+        "10√3 sm"
+      ],
+      "t": 1,
+      "izoh": "Oltiburchakda R = a va r = a√3/2. Halqa yuzi π(R² − r²) = π(a² − 3a²/4) = πa²/4. Shartdan πa²/4 = 25π, ya'ni a² = 100 va a = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='152' r='83.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='102,235.1 198,235.1 246,152 198,68.9 102,68.9 54,152' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='94.5' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='205.5' y='252.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='205.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='94.5' y='60.4' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='39' y='156.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylana-va-kopburchak-yuzi",
+      "id": "matematika_plan_m14-kopburchaklar-va-muntazam-kopburchaklar#61ac9bd3"
+    }
+  ]
+}

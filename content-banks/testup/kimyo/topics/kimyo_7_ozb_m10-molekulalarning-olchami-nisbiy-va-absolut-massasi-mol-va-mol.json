@@ -1,0 +1,486 @@
+{
+  "nom": "10-mavzu. Molekulalarning o'lchami, nisbiy va absolut massasi. Mol va molar massa. Avogadro doimiysi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Deyarli ko‘pchilik molekulalarning diametri qanday oraliqda bo‘ladi?",
+      "v": [
+        "1–10 Å oraliqda",
+        "100–200 Å oraliqda",
+        "30–100 Å oraliqda",
+        "1–10 mm oraliqda"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#51951965"
+    },
+    {
+      "q": "Suvning bitta molekulasi massasi qanchani tashkil etadi?",
+      "v": [
+        "29,91·10^-27 kg",
+        "6,02·10^23 kg",
+        "19,93·10^-27 kg",
+        "18 kg"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#3271628f"
+    },
+    {
+      "q": "Moddaning nisbiy molekular massasi (Mr) deb nimaga aytiladi?",
+      "v": [
+        "Modda molekulasi massasining uglerod-12 atomi massasining 1/12 qismiga nisbatan necha marta kattaligini ko‘rsatuvchi qiymatga",
+        "Molekula diametrining atom diametriga nisbatiga",
+        "Moddaning kilogrammdagi absolut massasiga",
+        "Moddaning 1 mol massasiga"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#c0b2052b"
+    },
+    {
+      "q": "Suvning nisbiy molekular massasi Mr(H2O) nechaga teng?",
+      "v": [
+        "18",
+        "34",
+        "16",
+        "20"
+      ],
+      "t": 0,
+      "izoh": "Mr(H2O) = 2·1 + 16 = 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#11c0e807"
+    },
+    {
+      "q": "Mr(H2SO4) ni hisoblang.",
+      "v": [
+        "98",
+        "82",
+        "49",
+        "96"
+      ],
+      "t": 0,
+      "izoh": "2·1 + 32 + 4·16 = 98.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#8788b8c0"
+    },
+    {
+      "q": "Mr(Al2O3) ni hisoblang.",
+      "v": [
+        "102",
+        "75",
+        "70",
+        "43"
+      ],
+      "t": 0,
+      "izoh": "2·27 + 3·16 = 102.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#5806e99e"
+    },
+    {
+      "q": "Mr(Ca3(PO4)2) ni hisoblang.",
+      "v": [
+        "310",
+        "278",
+        "166",
+        "215"
+      ],
+      "t": 0,
+      "izoh": "3·40 + 2·(31 + 4·16) = 120 + 190 = 310.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#ddb1b2ef"
+    },
+    {
+      "q": "Mr(CO2) nechaga teng?",
+      "v": [
+        "44",
+        "32",
+        "28",
+        "56"
+      ],
+      "t": 0,
+      "izoh": "12 + 2·16 = 44.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#2ee0829c"
+    },
+    {
+      "q": "Mr(NaOH) nechaga teng?",
+      "v": [
+        "40",
+        "24",
+        "56",
+        "39"
+      ],
+      "t": 0,
+      "izoh": "23 + 16 + 1 = 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#0d2099b6"
+    },
+    {
+      "q": "Modda miqdorining o‘lchov birligi nima?",
+      "v": [
+        "Mol",
+        "Kilogramm",
+        "Litr",
+        "Gramm"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#cda6de64"
+    },
+    {
+      "q": "1 mol deb qanday modda miqdoriga aytiladi?",
+      "v": [
+        "0,012 kg ugleroddagi atomlar soniga teng zarralar tutuvchi modda miqdoriga",
+        "1 kg har qanday moddaga",
+        "6,02·10^23 kg moddaga",
+        "12 g har qanday gazga"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#6bb0f907"
+    },
+    {
+      "q": "Avogadro doimiysi (NA) nechaga teng?",
+      "v": [
+        "6,02·10^23 mol^-1",
+        "3·10^8 mol^-1",
+        "0,012 mol^-1",
+        "1,67·10^-27 mol^-1"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#ae5ac21c"
+    },
+    {
+      "q": "Ma’lum miqdor moddadagi molekulalar sonini topish formulasi qanday?",
+      "v": [
+        "N = NA · n",
+        "N = m · n",
+        "N = M / n",
+        "N = n / NA"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#07306ce1"
+    },
+    {
+      "q": "Modda miqdorini (n) topish formulasi qanday?",
+      "v": [
+        "n = N / NA",
+        "n = NA / N",
+        "n = M · m",
+        "n = NA · N"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#47f0003b"
+    },
+    {
+      "q": "Moddaning molar massasi (M) deb nimaga aytiladi?",
+      "v": [
+        "Modda massasining (m) uning miqdoriga (n) nisbatiga: M = m/n",
+        "Moddaning zichligiga",
+        "Modda miqdorining massaga nisbatiga: M = n/m",
+        "Bitta molekulaning absolut massasiga"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#34dc203b"
+    },
+    {
+      "q": "Molar massa qanday birliklarda ifodalanadi?",
+      "v": [
+        "kg/mol yoki g/mol",
+        "kg yoki g",
+        "mol/kg",
+        "g/litr"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#06b03e2e"
+    },
+    {
+      "q": "Modda molar massasining son qiymati nimaga teng?",
+      "v": [
+        "Uning nisbiy molekular massasiga (Mr)",
+        "Avogadro doimiysiga",
+        "Moddaning hajmiga",
+        "Bitta atom massasiga"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#6854ad4a"
+    },
+    {
+      "q": "Kislorod (O2) ning molar massasi nechaga teng?",
+      "v": [
+        "32 g/mol",
+        "48 g/mol",
+        "64 g/mol",
+        "16 g/mol"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#0d28327e"
+    },
+    {
+      "q": "0,5 mol kislorod (O2) ning massasini aniqlang.",
+      "v": [
+        "16 g",
+        "8 g",
+        "64 g",
+        "32 g"
+      ],
+      "t": 0,
+      "izoh": "m = n·M = 0,5 · 32 = 16 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#aba4cf27"
+    },
+    {
+      "q": "18 g suvda nechta molekula bor?",
+      "v": [
+        "6,02·10^23 ta",
+        "18 ta",
+        "3,01·10^23 ta",
+        "12,04·10^23 ta"
+      ],
+      "t": 0,
+      "izoh": "18 g suv = 1 mol; N = NA·n = 6,02·10^23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#d384eee9"
+    },
+    {
+      "q": "Molekulalarning diametri eng ko‘pi bilan qanchagacha bo‘lishi mumkin?",
+      "v": [
+        "30Å (3 nm yoki 3·10-9 m) gacha",
+        "1 mm gacha",
+        "100 nm gacha",
+        "1 mkm gacha"
+      ],
+      "t": 0,
+      "izoh": "Molekulalarning diametri 30Å (3 nm yoki 3·10-9 m) gacha bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#ee427e03"
+    },
+    {
+      "q": "Avogadro doimiysi qanday belgilanadi?",
+      "v": [
+        "NA bilan",
+        "Mr bilan",
+        "M bilan",
+        "Vm bilan"
+      ],
+      "t": 0,
+      "izoh": "Avogadro doimiysi NA bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#a3c68522"
+    },
+    {
+      "q": "Avogadro doimiysining o‘lchov birligi qanday?",
+      "v": [
+        "mol-1",
+        "g/mol",
+        "kg/mol",
+        "l/mol"
+      ],
+      "t": 0,
+      "izoh": "NA = 6,02·1023 mol-1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#ff065ecf"
+    },
+    {
+      "q": "Bitta uglerod atomining massasi qancha?",
+      "v": [
+        "19,93·10-27 kg",
+        "29,91·10-27 kg",
+        "0,012 kg",
+        "1,66·10-24 kg"
+      ],
+      "t": 0,
+      "izoh": "Darslikda bitta uglerod atomi massasi 19,93·10-27 kg deb keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#56c86fb9"
+    },
+    {
+      "q": "1 mol kislorodda (O2) nechta molekula bo‘ladi?",
+      "v": [
+        "6,02·1023 ta",
+        "3,01·1023 ta",
+        "12,04·1023 ta",
+        "1,204·1024 ta"
+      ],
+      "t": 0,
+      "izoh": "Har qanday 1 mol moddada 6,02·1023 ta zarra bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#dfa1ee40"
+    },
+    {
+      "q": "Karbonat angidridning (CO2) molar massasi nechaga teng?",
+      "v": [
+        "44 g/mol",
+        "32 g/mol",
+        "40 g/mol",
+        "18 g/mol"
+      ],
+      "t": 0,
+      "izoh": "3-jadvalda M(CO2) = 44 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#41fedd6f"
+    },
+    {
+      "q": "O‘yuvchi natriyning (NaOH) molar massasi nechaga teng?",
+      "v": [
+        "40 g/mol",
+        "44 g/mol",
+        "23 g/mol",
+        "18 g/mol"
+      ],
+      "t": 0,
+      "izoh": "3-jadvalda M(NaOH) = 40 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#d8e27d79"
+    },
+    {
+      "q": "Atom holidagi kislorodning molar massasi nechaga teng?",
+      "v": [
+        "16 g/mol",
+        "32 g/mol",
+        "8 g/mol",
+        "18 g/mol"
+      ],
+      "t": 0,
+      "izoh": "Atom holidagi kislorod molar massasi 0,016 kg/mol yoki 16 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#9e32b03d"
+    },
+    {
+      "q": "0,5 mol suvning (H2O) massasi qancha? (M(H2O)=18 g/mol)",
+      "v": [
+        "9 g",
+        "18 g",
+        "36 g",
+        "4,5 g"
+      ],
+      "t": 0,
+      "izoh": "m = n·M = 0,5 mol · 18 g/mol = 9 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#2014056d"
+    },
+    {
+      "q": "2 mol karbonat angidridda (CO2) nechta molekula bo‘ladi?",
+      "v": [
+        "1,204·1024 ta",
+        "6,02·1023 ta",
+        "3,01·1023 ta",
+        "0,602·1023 ta"
+      ],
+      "t": 0,
+      "izoh": "N = NA·n = 6,02·1023 · 2 = 1,204·1024 ta molekula.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#11ace491"
+    },
+    {
+      "q": "Moddaning molar massasi qanday formula bilan ifodalanadi?",
+      "v": [
+        "M = m/n",
+        "M = m·n",
+        "M = n/m",
+        "M = NA·n"
+      ],
+      "t": 0,
+      "izoh": "Modda massasining (m) uning miqdoriga (n) nisbati molar massa: M = m/n.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#6113cb5c"
+    },
+    {
+      "q": "Suvning molar massasi kilogrammda qanday ifodalanadi?",
+      "v": [
+        "0,018 kg/mol",
+        "0,032 kg/mol",
+        "0,016 kg/mol",
+        "0,044 kg/mol"
+      ],
+      "t": 0,
+      "izoh": "Suvning molar massasi 0,018 kg/mol yoki 18 g/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m10-molekulalarning-olchami-nisbiy-va-absolut-massasi-mol-va-mol#c52f4fe4"
+    }
+  ]
+}

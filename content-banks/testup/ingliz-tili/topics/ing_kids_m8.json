@@ -1,0 +1,617 @@
+{
+  "nom": "Animals (Hayvonlar)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "What animal is this? 🐶",
+      "v": [
+        "Dog",
+        "Cat",
+        "Cow",
+        "Fish"
+      ],
+      "t": 0,
+      "izoh": "🐶 = dog (it).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#6d37d1db"
+    },
+    {
+      "q": "What animal is this? 🐱",
+      "v": [
+        "Dog",
+        "Cat",
+        "Bird",
+        "Horse"
+      ],
+      "t": 1,
+      "izoh": "🐱 = cat (mushuk).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#62ad8ba5"
+    },
+    {
+      "q": "What animal is this? 🐄",
+      "v": [
+        "Sheep",
+        "Pig",
+        "Cow",
+        "Goat"
+      ],
+      "t": 2,
+      "izoh": "🐄 = cow (sigir).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#79992a1d"
+    },
+    {
+      "q": "What animal is this? 🐴",
+      "v": [
+        "Horse",
+        "Donkey",
+        "Dog",
+        "Cow"
+      ],
+      "t": 0,
+      "izoh": "🐴 = horse (ot).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#c086f3c5"
+    },
+    {
+      "q": "What animal is this? 🐑",
+      "v": [
+        "Goat",
+        "Sheep",
+        "Cow",
+        "Pig"
+      ],
+      "t": 1,
+      "izoh": "🐑 = sheep (qo'y).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#fc26aefd"
+    },
+    {
+      "q": "What animal is this? 🐟",
+      "v": [
+        "Bird",
+        "Frog",
+        "Fish",
+        "Cat"
+      ],
+      "t": 2,
+      "izoh": "🐟 = fish (baliq).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#4d0054c8"
+    },
+    {
+      "q": "What animal is this? 🐦",
+      "v": [
+        "Bird",
+        "Fish",
+        "Dog",
+        "Bee"
+      ],
+      "t": 0,
+      "izoh": "🐦 = bird (qush).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#26b4f0f0"
+    },
+    {
+      "q": "What animal is this? 🦁",
+      "v": [
+        "Tiger",
+        "Lion",
+        "Bear",
+        "Cat"
+      ],
+      "t": 1,
+      "izoh": "🦁 = lion (sher).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#7d3cb3c5"
+    },
+    {
+      "q": "What animal is this? 🐘",
+      "v": [
+        "Horse",
+        "Cow",
+        "Elephant",
+        "Bear"
+      ],
+      "t": 2,
+      "izoh": "🐘 = elephant (fil).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#4e463652"
+    },
+    {
+      "q": "What animal is this? 🐰",
+      "v": [
+        "Rabbit",
+        "Mouse",
+        "Cat",
+        "Dog"
+      ],
+      "t": 0,
+      "izoh": "🐰 = rabbit (quyon).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#7f2fc146"
+    },
+    {
+      "q": "🐮 = ?",
+      "v": [
+        "cow",
+        "dog",
+        "cat",
+        "fish"
+      ],
+      "t": 0,
+      "izoh": "🐮 = cow (sigir).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#ad559295"
+    },
+    {
+      "q": "Which animal says \"moo\"? 🐮",
+      "v": [
+        "dog",
+        "cow",
+        "cat",
+        "duck"
+      ],
+      "t": 1,
+      "izoh": "Sigir \"moo\" deydi.",
+      "qiy": "oson",
+      "id": "ing_kids_m8#4576596b"
+    },
+    {
+      "q": "Which animal says \"quack\"? 🦆",
+      "v": [
+        "duck",
+        "hen",
+        "frog",
+        "owl"
+      ],
+      "t": 0,
+      "izoh": "O'rdak \"quack\" deydi.",
+      "qiy": "oson",
+      "id": "ing_kids_m8#6d311161"
+    },
+    {
+      "q": "Which animal roars? 🦁",
+      "v": [
+        "rabbit",
+        "sheep",
+        "lion",
+        "mouse"
+      ],
+      "t": 2,
+      "izoh": "Sher \"roar\" deb baqiradi.",
+      "qiy": "oson",
+      "id": "ing_kids_m8#dcc41616"
+    },
+    {
+      "q": "Which animal can fly? 🦋",
+      "v": [
+        "fish",
+        "butterfly",
+        "snake",
+        "cow"
+      ],
+      "t": 1,
+      "izoh": "Kapalak ucha oladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m8#9d63ce68"
+    },
+    {
+      "q": "Which animal can swim? 🐠",
+      "v": [
+        "fish",
+        "cat",
+        "hen",
+        "goat"
+      ],
+      "t": 0,
+      "izoh": "Baliq suzadi.",
+      "qiy": "oson",
+      "id": "ing_kids_m8#a9b91a1c"
+    },
+    {
+      "q": "🐷 = ?",
+      "v": [
+        "horse",
+        "pig",
+        "sheep",
+        "goat"
+      ],
+      "t": 1,
+      "izoh": "🐷 = pig (cho'chqa).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#3bf9fb99"
+    },
+    {
+      "q": "🐔 = ?",
+      "v": [
+        "duck",
+        "owl",
+        "hen",
+        "bee"
+      ],
+      "t": 2,
+      "izoh": "🐔 = hen (tovuq).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#25125de9"
+    },
+    {
+      "q": "🐸 = ?",
+      "v": [
+        "frog",
+        "snake",
+        "turtle",
+        "fish"
+      ],
+      "t": 0,
+      "izoh": "🐸 = frog (qurbaqa).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#30bf06bb"
+    },
+    {
+      "q": "🐵 = ?",
+      "v": [
+        "bear",
+        "koala",
+        "monkey",
+        "fox"
+      ],
+      "t": 2,
+      "izoh": "🐵 = monkey (maymun).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#fc468dc6"
+    },
+    {
+      "q": "🐰 = ?",
+      "v": [
+        "rabbit",
+        "mouse",
+        "cat",
+        "dog"
+      ],
+      "t": 0,
+      "izoh": "🐰 = rabbit (quyon).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#d2bc2832"
+    },
+    {
+      "q": "🐴 = ?",
+      "v": [
+        "cow",
+        "goat",
+        "horse",
+        "camel"
+      ],
+      "t": 2,
+      "izoh": "🐴 = horse (ot).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#47c325de"
+    },
+    {
+      "q": "🐑 = ?",
+      "v": [
+        "sheep",
+        "pig",
+        "goat",
+        "cow"
+      ],
+      "t": 0,
+      "izoh": "🐑 = sheep (qo'y).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#b22f6ce5"
+    },
+    {
+      "q": "🐐 = ?",
+      "v": [
+        "sheep",
+        "goat",
+        "horse",
+        "deer"
+      ],
+      "t": 1,
+      "izoh": "🐐 = goat (echki).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#5f381164"
+    },
+    {
+      "q": "🦆 = ?",
+      "v": [
+        "hen",
+        "owl",
+        "duck",
+        "swan"
+      ],
+      "t": 2,
+      "izoh": "🦆 = duck (o'rdak).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#765bc2c2"
+    },
+    {
+      "q": "🐍 = ?",
+      "v": [
+        "snake",
+        "worm",
+        "lizard",
+        "frog"
+      ],
+      "t": 0,
+      "izoh": "🐍 = snake (ilon).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#1d86680a"
+    },
+    {
+      "q": "🐢 = ?",
+      "v": [
+        "frog",
+        "turtle",
+        "snail",
+        "crab"
+      ],
+      "t": 1,
+      "izoh": "🐢 = turtle (toshbaqa).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#393a2911"
+    },
+    {
+      "q": "🐝 = ?",
+      "v": [
+        "fly",
+        "ant",
+        "bee",
+        "wasp"
+      ],
+      "t": 2,
+      "izoh": "🐝 = bee (asalari).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#4cf3a55d"
+    },
+    {
+      "q": "🐞 = ?",
+      "v": [
+        "ladybird",
+        "spider",
+        "bee",
+        "ant"
+      ],
+      "t": 0,
+      "izoh": "🐞 = ladybird (xonqizi).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#147326f9"
+    },
+    {
+      "q": "🦋 = ?",
+      "v": [
+        "bird",
+        "bee",
+        "moth",
+        "butterfly"
+      ],
+      "t": 3,
+      "izoh": "🦋 = butterfly (kapalak).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#1b46f97f"
+    },
+    {
+      "q": "🐙 = ?",
+      "v": [
+        "octopus",
+        "crab",
+        "fish",
+        "squid"
+      ],
+      "t": 0,
+      "izoh": "🐙 = octopus (sakkizoyoq).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#5b4da42d"
+    },
+    {
+      "q": "🐠 = ?",
+      "v": [
+        "frog",
+        "fish",
+        "crab",
+        "shark"
+      ],
+      "t": 1,
+      "izoh": "🐠 = fish (baliq).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#c936bc0b"
+    },
+    {
+      "q": "🦈 = ?",
+      "v": [
+        "whale",
+        "fish",
+        "shark",
+        "dolphin"
+      ],
+      "t": 2,
+      "izoh": "🦈 = shark (akula).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#86de4db5"
+    },
+    {
+      "q": "🐳 = ?",
+      "v": [
+        "whale",
+        "shark",
+        "fish",
+        "seal"
+      ],
+      "t": 0,
+      "izoh": "🐳 = whale (kit).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#b6e3c013"
+    },
+    {
+      "q": "🐘 = ?",
+      "v": [
+        "rhino",
+        "hippo",
+        "elephant",
+        "camel"
+      ],
+      "t": 2,
+      "izoh": "🐘 = elephant (fil).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#9791cea6"
+    },
+    {
+      "q": "🦁 = ?",
+      "v": [
+        "lion",
+        "tiger",
+        "bear",
+        "wolf"
+      ],
+      "t": 0,
+      "izoh": "🦁 = lion (sher).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#171ff489"
+    },
+    {
+      "q": "🐯 = ?",
+      "v": [
+        "lion",
+        "cat",
+        "tiger",
+        "leopard"
+      ],
+      "t": 2,
+      "izoh": "🐯 = tiger (yo'lbars).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#ee44bce4"
+    },
+    {
+      "q": "🐻 = ?",
+      "v": [
+        "bear",
+        "wolf",
+        "dog",
+        "koala"
+      ],
+      "t": 0,
+      "izoh": "🐻 = bear (ayiq).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#277fd3db"
+    },
+    {
+      "q": "🐨 = ?",
+      "v": [
+        "bear",
+        "monkey",
+        "koala",
+        "panda"
+      ],
+      "t": 2,
+      "izoh": "🐨 = koala (koala).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#f52bdc79"
+    },
+    {
+      "q": "🦒 = ?",
+      "v": [
+        "giraffe",
+        "horse",
+        "camel",
+        "deer"
+      ],
+      "t": 0,
+      "izoh": "🦒 = giraffe (jirafa).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#0fb06848"
+    },
+    {
+      "q": "🦓 = ?",
+      "v": [
+        "horse",
+        "zebra",
+        "donkey",
+        "goat"
+      ],
+      "t": 1,
+      "izoh": "🦓 = zebra (zebra).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#5883f534"
+    },
+    {
+      "q": "🐫 = ?",
+      "v": [
+        "horse",
+        "cow",
+        "camel",
+        "llama"
+      ],
+      "t": 2,
+      "izoh": "🐫 = camel (tuya).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#88e18990"
+    },
+    {
+      "q": "🦔 = ?",
+      "v": [
+        "hedgehog",
+        "mouse",
+        "rabbit",
+        "mole"
+      ],
+      "t": 0,
+      "izoh": "🦔 = hedgehog (tipratikan).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#c9218c7f"
+    },
+    {
+      "q": "🦉 = ?",
+      "v": [
+        "hen",
+        "eagle",
+        "owl",
+        "bat"
+      ],
+      "t": 2,
+      "izoh": "🦉 = owl (boyo'g'li).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#75dbc37d"
+    },
+    {
+      "q": "🦇 = ?",
+      "v": [
+        "bat",
+        "bird",
+        "owl",
+        "mouse"
+      ],
+      "t": 0,
+      "izoh": "🦇 = bat (ko'rshapalak).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#c3490f97"
+    },
+    {
+      "q": "🐺 = ?",
+      "v": [
+        "dog",
+        "fox",
+        "wolf",
+        "bear"
+      ],
+      "t": 2,
+      "izoh": "🐺 = wolf (bo'ri).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#b3a15b1b"
+    },
+    {
+      "q": "🦊 = ?",
+      "v": [
+        "fox",
+        "wolf",
+        "dog",
+        "cat"
+      ],
+      "t": 0,
+      "izoh": "🦊 = fox (tulki).",
+      "qiy": "oson",
+      "id": "ing_kids_m8#f787a2e8"
+    }
+  ]
+}

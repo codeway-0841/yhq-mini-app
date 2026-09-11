@@ -1,0 +1,531 @@
+{
+  "nom": "13-mavzu. Kremniyning xossalari. Muhim birikmalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kristall kremniyning ko'rinishi qanday?",
+      "v": [
+        "Kulrang - po'lat rangli, metall yaltiroqligiga ega",
+        "Qora rangli, mat",
+        "Sariq rangli, tiniq",
+        "Rangsiz, tiniq"
+      ],
+      "t": 0,
+      "izoh": "Kristall kremniy kulrang-po'lat rangli, metall yaltiroqligiga ega modda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#c7690af7"
+    },
+    {
+      "q": "Kremniyning zichligi nechaga teng?",
+      "v": [
+        "2329 kg/m3",
+        "2260 kg/m3",
+        "3513 kg/m3",
+        "2700 kg/m3"
+      ],
+      "t": 0,
+      "izoh": "Kremniyning zichligi 2329 kg/m3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#cad85368"
+    },
+    {
+      "q": "Kremniyning izotop soni nechta?",
+      "v": [
+        "11",
+        "8",
+        "6",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Kremniyning izotop soni 11 (24 dan 34 gacha).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#90d7c1ef"
+    },
+    {
+      "q": "Uglerodga qaraganda kremniyda metallmaslik xossalari nima uchun kuchsizroq?",
+      "v": [
+        "Atom radiusi kattaroq va tashqi elektronlar yadrodan uzoqroqda",
+        "Atom radiusi kichikroq",
+        "Yadro zaryadi kichikroq",
+        "Izotoplari kamroq"
+      ],
+      "t": 0,
+      "izoh": "Kremniy atom radiusi kattaroq va tashqi elektronlar yadrodan uzoqroqda joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#7f54e658"
+    },
+    {
+      "q": "Kuchli qizdirilganda kremniy havoda yonib nima hosil qiladi?",
+      "v": [
+        "SiO2",
+        "SiO",
+        "SiC",
+        "SiH4"
+      ],
+      "t": 0,
+      "izoh": "Si + O2 = SiO2 - kremniy (IV)-oksid hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#a9ecbf15"
+    },
+    {
+      "q": "Si + 2Cl2 reaksiyasining mahsuloti qanday?",
+      "v": [
+        "SiCl4 - kremniy (IV)-xlorid",
+        "SiCl2",
+        "SiO2",
+        "SiC"
+      ],
+      "t": 0,
+      "izoh": "Si + 2Cl2 = SiCl4 - kremniy (IV)-xlorid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#8f1fde58"
+    },
+    {
+      "q": "Si + 2S reaksiyasida nima hosil bo'ladi?",
+      "v": [
+        "SiS2 - kremniy (IV)-sulfid",
+        "SiS",
+        "SO2",
+        "SiO2"
+      ],
+      "t": 0,
+      "izoh": "Si + 2S = SiS2 - kremniy (IV)-sulfid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#39ec9754"
+    },
+    {
+      "q": "SiCl4 gidroliz reaksiyasida nimalar hosil bo'ladi?",
+      "v": [
+        "SiO2 va 4HCl",
+        "SiH4 va Cl2",
+        "SiO2 va H2",
+        "SiCl2 va HCl"
+      ],
+      "t": 0,
+      "izoh": "SiCl4 + 2H2O = SiO2 + 4HCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#49c9fb1d"
+    },
+    {
+      "q": "SiS2 gidroliz reaksiyasida qanday gaz ajraladi?",
+      "v": [
+        "H2S",
+        "SO2",
+        "H2",
+        "HCl"
+      ],
+      "t": 0,
+      "izoh": "SiS2 + 2H2O = SiO2 + 2H2S.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#679700e1"
+    },
+    {
+      "q": "Kremniy uglerod bilan yuqori haroratda qanday birikma hosil qiladi?",
+      "v": [
+        "Karborund (kremniy karbid SiC)",
+        "Kremniy oksid",
+        "Silan",
+        "Kremniy sulfid"
+      ],
+      "t": 0,
+      "izoh": "Si + C = SiC - karborund, juda qattiq birikma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#1c9e4c27"
+    },
+    {
+      "q": "Karborunddan nima tayyorlanadi?",
+      "v": [
+        "Silliqlash va pardozlash toshlari",
+        "Elektrodlar",
+        "Zargarlik buyumlari",
+        "Qalamlar"
+      ],
+      "t": 0,
+      "izoh": "Karborunddan silliqlash va pardozlash toshlari tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#c79b9cdb"
+    },
+    {
+      "q": "Kremniy metallar bilan nima hosil qiladi?",
+      "v": [
+        "Silitsidlar",
+        "Karbidlar",
+        "Oksidlar",
+        "Nitridlar"
+      ],
+      "t": 0,
+      "izoh": "Kremniy metallar bilan silitsidlar hosil qiladi: Si + 2Mg = Mg2Si.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#2133c4d8"
+    },
+    {
+      "q": "Mg2Si + 4HCl reaksiyasida qanday gaz hosil bo'ladi?",
+      "v": [
+        "SiH4 - silan",
+        "H2",
+        "HCl",
+        "SiCl4"
+      ],
+      "t": 0,
+      "izoh": "Mg2Si + 4HCl = 2MgCl2 + SiH4 - silan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#f9d1cb6a"
+    },
+    {
+      "q": "Silan qanday modda?",
+      "v": [
+        "Rangsiz gaz, kuchli qaytaruvchi, havoda o'z-o'zidan alangalanadi",
+        "Qattiq kristall modda",
+        "Suyuq, tiniq modda",
+        "Rangli, hidli gaz"
+      ],
+      "t": 0,
+      "izoh": "Silan - rangsiz gaz, kuchli qaytaruvchi, havoda o'z-o'zidan alangalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#c6fe4b6e"
+    },
+    {
+      "q": "SiH4 + 2O2 reaksiyasida qancha issiqlik ajraladi?",
+      "v": [
+        "+1427,2 kJ",
+        "+572 kJ",
+        "+412 kJ",
+        "-160 kJ"
+      ],
+      "t": 0,
+      "izoh": "SiH4 + 2O2 = SiO2 + 2H2O + 1427,2 kJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#085b89c7"
+    },
+    {
+      "q": "Kremniyvodorodlarning umumiy formulasi qanday?",
+      "v": [
+        "SinH2n+2, bu yerda n<8",
+        "SinH2n, n<10",
+        "SinH2n-2",
+        "SinHn"
+      ],
+      "t": 0,
+      "izoh": "Kremniyvodorodlar umumiy formulasi SinH2n+2 (n<8).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#4838653e"
+    },
+    {
+      "q": "Silanlar metan qatori uglevodorodlarga qaraganda qanday?",
+      "v": [
+        "Kuchliroq reaksion qobiliyatga ega",
+        "Kuchsizroq reaksion qobiliyatga ega",
+        "Barqarorroq",
+        "Inert"
+      ],
+      "t": 0,
+      "izoh": "Si-H va Si-Si bog'larining kuchsizlanishi sababli silanlar kuchliroq reaksion qobiliyatga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#8279bc27"
+    },
+    {
+      "q": "Kremniy kislotalar bilan qanday ta'sirlashadi?",
+      "v": [
+        "Ta'sirlashmaydi",
+        "Kuchli ta'sirlashadi",
+        "Faqat xlorid kislota bilan",
+        "Faqat nitrat kislota bilan"
+      ],
+      "t": 0,
+      "izoh": "Kremniy kislotalar bilan ta'sirlashmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#9ab98c15"
+    },
+    {
+      "q": "Kremniy ishqorlar eritmalari bilan reaksiyada nima hosil qiladi?",
+      "v": [
+        "Na2SiO3 va H2",
+        "NaOH va SiO2",
+        "NaHCO3",
+        "NaCl"
+      ],
+      "t": 0,
+      "izoh": "Si + 2NaOH + H2O = Na2SiO3 + 2H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#c483694b"
+    },
+    {
+      "q": "Kremniy (IV)-oksid qanday modda?",
+      "v": [
+        "Qattiq, qiyin suyuqlanuvchan, atom kristall panjarali, suvda erimaydigan",
+        "Suyuq, uchuvchan",
+        "Gazsimon",
+        "Suvda yaxshi eriydigan"
+      ],
+      "t": 0,
+      "izoh": "SiO2 - qattiq, qiyin suyuqlanuvchan, atom kristall panjarali, suvda erimaydigan modda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#b8100acf"
+    },
+    {
+      "q": "SiO2 tabiatda qanday mineral holida uchraydi?",
+      "v": [
+        "Kvars",
+        "Kaolin",
+        "Ohaktosh",
+        "Marmar"
+      ],
+      "t": 0,
+      "izoh": "SiO2 tabiatda kvars minerali holida uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#03e1910e"
+    },
+    {
+      "q": "Tog' xrustali nima?",
+      "v": [
+        "Kvarsning tiniq, rangsiz kristalli",
+        "Olmosning bir turi",
+        "Muz kristalli",
+        "Shisha bo'lagi"
+      ],
+      "t": 0,
+      "izoh": "Kvarsning tiniq, rangsiz kristalli tog' xrustali deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#4339c810"
+    },
+    {
+      "q": "Kvarsning shakl o'zgarishlari qaysilar?",
+      "v": [
+        "Kremen, agat, yashma, qum",
+        "Olmos, grafit",
+        "Ohaktosh, marmar",
+        "Kaolin, dala shpati"
+      ],
+      "t": 0,
+      "izoh": "Kremen, agat, yashma, qum - kvarsning shakl o'zgarishlari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#976a8713"
+    },
+    {
+      "q": "SiO2 + 2NaOH reaksiyasining mahsulotlari qaysilar?",
+      "v": [
+        "Na2SiO3 va H2O",
+        "Na2CO3 va Si",
+        "NaHCO3",
+        "NaCl va SiO2"
+      ],
+      "t": 0,
+      "izoh": "SiO2 + 2NaOH = Na2SiO3 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#fdec9b50"
+    },
+    {
+      "q": "SiO2 + Na2CO3 reaksiyasida qanday gaz ajraladi?",
+      "v": [
+        "CO2",
+        "H2",
+        "O2",
+        "SiF4"
+      ],
+      "t": 0,
+      "izoh": "SiO2 + Na2CO3 = Na2SiO3 + CO2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#fe49ed96"
+    },
+    {
+      "q": "SiO2 qaysi kislota bilan ta'sirlashadi?",
+      "v": [
+        "Ftorid kislota bilan",
+        "Xlorid kislota bilan",
+        "Sulfat kislota bilan",
+        "Nitrat kislota bilan"
+      ],
+      "t": 0,
+      "izoh": "SiO2 ftorid kislotadan boshqa kislotalar bilan ta'sirlashmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#7cfd797a"
+    },
+    {
+      "q": "SiO2 + 4HF reaksiyasida qanday gaz hosil bo'ladi?",
+      "v": [
+        "SiF4",
+        "H2",
+        "CO2",
+        "HF"
+      ],
+      "t": 0,
+      "izoh": "SiO2 + 4HF = 2H2O + SiF4 - gazsimon kremniy ftorid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#c2d397f1"
+    },
+    {
+      "q": "Kvarsning suyuqlanish harorati qancha?",
+      "v": [
+        "1500 °C atrofida",
+        "100 °C",
+        "500 °C",
+        "3000 °C"
+      ],
+      "t": 0,
+      "izoh": "Kvarsning suyuqlanish harorati 1500 °C atrofida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#c7534dd3"
+    },
+    {
+      "q": "Kvars oynasidan nimalar tayyorlanadi?",
+      "v": [
+        "Simob lampalari va kimyoviy laboratoriya idishlari",
+        "Deraza oynalari",
+        "Zargarlik buyumlari",
+        "Elektrodlar"
+      ],
+      "t": 0,
+      "izoh": "Kvarsdan simob lampalari va kimyoviy laboratoriya idishlari tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#55e8827a"
+    },
+    {
+      "q": "Metakremniy kislota qanday kislota?",
+      "v": [
+        "Ikki negizli kuchsiz kislota, karbonat kislotadan ham kuchsiz",
+        "Kuchli kislota",
+        "Bir negizli kislota",
+        "Uch negizli kislota"
+      ],
+      "t": 0,
+      "izoh": "H2SiO3 ikki negizli kuchsiz kislota, karbonat kislotadan ham kuchsiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#9750b14c"
+    },
+    {
+      "q": "Metakremniy kislota suvda qanday?",
+      "v": [
+        "Erimaydi, gelsimon cho'kma holida ajralib chiqadi",
+        "Yaxshi eriydi",
+        "Qisman eriydi",
+        "Bug'lanadi"
+      ],
+      "t": 0,
+      "izoh": "H2SiO3 suvda erimaydi, gelsimon cho'kma holida ajralib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#cf3ef611"
+    },
+    {
+      "q": "H2SiO3 qizdirilganda nimaga parchalanadi?",
+      "v": [
+        "SiO2 va H2O ga",
+        "Si va H2O ga",
+        "SiH4 va O2 ga",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "H2SiO3 = SiO2 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#2515331e"
+    },
+    {
+      "q": "Natriy va kaliy silikatlari eritmalari qanday ataladi?",
+      "v": [
+        "Suyuq shisha",
+        "Ichimlik sodasi",
+        "Ohakli suv",
+        "Suv gazi"
+      ],
+      "t": 0,
+      "izoh": "Na2SiO3 va K2SiO3 eritmalari suyuq shisha deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#b56155b7"
+    },
+    {
+      "q": "Suyuq shisha qayerlarda ishlatiladi?",
+      "v": [
+        "Kislotaga chidamli sement, beton, yelim, surtmalar tayyorlashda",
+        "Yong'in o'chirishda",
+        "Gazlangan ichimliklarda",
+        "Tibbiyotda"
+      ],
+      "t": 0,
+      "izoh": "Suyuq shisha kislotaga chidamli sement, beton, yelim, surtmalar tayyorlashda ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#6b996d77"
+    },
+    {
+      "q": "Na2SiO3 + H2O + CO2 reaksiyasida nima hosil bo'ladi?",
+      "v": [
+        "Na2CO3 va H2SiO3",
+        "NaHCO3 va SiO2",
+        "NaOH va Si",
+        "Na2SiO3 o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Na2SiO3 + H2O + CO2 = Na2CO3 + H2SiO3 - karbonat kislota metakremniy kislotani siqib chiqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m13-kremniy-xossalari-birikmalari#e8d11ade"
+    }
+  ]
+}

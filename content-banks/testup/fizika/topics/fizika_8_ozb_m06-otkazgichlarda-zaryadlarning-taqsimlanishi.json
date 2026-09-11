@@ -1,0 +1,486 @@
+{
+  "nom": "06-mavzu. Otkazgichlarda Zaryadlarning Taqsimlanishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Yakkalangan o'tkazgichga berilgan elektr zaryadlar qanday taqsimlanadi?",
+      "v": [
+        "O'tkazgichning sirti bo'ylab taqsimlanadi, ichida zaryad bo'lmaydi",
+        "O'tkazgichning butun hajmi bo'ylab bir tekis taqsimlanadi",
+        "Faqat o'tkazgich markazida to'planadi",
+        "Yarimi sirtida, yarimi ichida bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Yakkalangan o'tkazgichda elektr zaryadlari uning sirti bo'ylab taqsimlanadi. O'tkazgich ichida zaryad bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#1bb22a4c"
+    },
+    {
+      "q": "Metall sharga berilgan musbat zaryadlar nima uchun sharning sirtiga chiqib qoladi?",
+      "v": [
+        "Bir xil ishorali zaryadlar bir-biridan qochib, imkon qadar bir-biridan uzoqroq joylashishga intiladi",
+        "Zaryadlar sirt tomon havo oqimi bilan suriladi",
+        "Sharning ichki qismi zaryadni itaradi",
+        "Zaryadlar og'irligi tufayli pastga tushadi"
+      ],
+      "t": 0,
+      "izoh": "Bir xil ishorali zaryadlar bir-biridan qochadi, shar ichida bo'lgan taqdirda ham o'zaro itarilib, imkon qadar bir-biridan uzoqroq joylashishga intiladi — natijada zaryadlar sirtga chiqib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#083a79f2"
+    },
+    {
+      "q": "Metall sharga berilgan musbat zaryadlar sirt bo'ylab qanday joylashadi?",
+      "v": [
+        "Bir tekis joylashadi",
+        "Faqat shar yuqorisida to'planadi",
+        "Faqat shar ostida to'planadi",
+        "Tasodifiy guruhlar hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Metall sharga berilgan musbat zaryadlar sharning sirti bo'ylab bir tekis joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#663b0f77"
+    },
+    {
+      "q": "Zaryadlangan metall sharning elektr maydon kuchlanganlik chiziqlari qanday yo'nalgan bo'ladi?",
+      "v": [
+        "Shar radiusi bo'ylab tashqariga yo'nalgan",
+        "Shar radiusi bo'ylab ichkariga yo'nalgan",
+        "Shar sirtiga urinma bo'ylab",
+        "Aylanasimon yo'nalgan"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydon kuchlanganlik chiziqlari shar radiusi bo'ylab tashqariga yo'nalgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#94250ed9"
+    },
+    {
+      "q": "Sharning ichida zaryad yo'qligini tekshirish tajribasida qanday asboblar ishlatiladi?",
+      "v": [
+        "Ikkita elektrometr, ichi kovak va tepasida teshigi bo'lgan metall shar, izolyatorli tayoqcha",
+        "Bitta elektroskop va shisha tayoqcha",
+        "Buralma tarozi va ikki sharcha",
+        "Elektrofor mashina va Leyden bankasi"
+      ],
+      "t": 0,
+      "izoh": "Ikkita elektrometr olinib, ularning biriga ichi kovak va tepasida teshigi bo'lgan metall shar o'rnatiladi; tajriba izolyatorli tayoqcha uchidagi metall sharcha bilan o'tkaziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#f57f4ff0"
+    },
+    {
+      "q": "Izolyatorli tayoqcha uchidagi metall sharchani ichi kovak sharning ichiga tekkizmasdan kiritib, keyin zaryadlanmagan elektrometrga tekkizilsa nima kuzatiladi?",
+      "v": [
+        "Ikkinchi elektrometrning ko'rsatkichi joyidan qo'zg'almaydi — shar ichida zaryad yo'q",
+        "Ikkinchi elektrometr ko'rsatkichi katta burakka og'adi",
+        "Birinchi elektrometr zaryadsizlanadi",
+        "Ikkala elektrometr ham og'adi"
+      ],
+      "t": 0,
+      "izoh": "Tayoqcha sharchasi shar ichiga tekkizmasdan kiritilganda ikkinchi elektrometrning ko'rsatkichi joyidan qo'zg'almaydi. Demak, shar ichida zaryad bo'lmas ekan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#be970290"
+    },
+    {
+      "q": "Tayoqcha sharchasi shar sirtiga tekkizilib, keyin ikkinchi elektrometr sharchasiga tekkizilganda nima kuzatiladi?",
+      "v": [
+        "Ikkinchi elektrometr ko'rsatkichi buriladi — tayoqcha sharchasi zaryad olgan",
+        "Ikkinchi elektrometr ko'rsatkichi qimir etmaydi",
+        "Birinchi elektrometr ko'rsatkichi oshadi",
+        "Sharning zaryadi ikki baravar ko'payadi"
+      ],
+      "t": 0,
+      "izoh": "Tayoqcha sharchasi shar sirtiga tekkizilganda birinchi elektrometr zaryadning biroz kamayganini ko'rsatadi, ikkinchisiga tekkizilganda esa u buriladi — demak, elektr zaryadi o'tkazgich sirti bo'ylab taqsimlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#41f583c1"
+    },
+    {
+      "q": "O'tkazgich ichida elektr zaryadlari bo'lmasligini isbotlash uchun Faradey qanday qurilma yasagan?",
+      "v": [
+        "Yog'ochdan yasalgan, tashqi sirti yupqa folga bilan qoplangan qafas",
+        "Metall krujka va elektroskop",
+        "Buralma tarozi",
+        "Shisha kolba va ebonit tayoqcha"
+      ],
+      "t": 0,
+      "izoh": "Faradey yog'ochdan yasalgan qafasning tashqi sirtini yupqa folga bilan qoplagan; qo'liga elektroskop olib qafas ichiga kirib olgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#97324d26"
+    },
+    {
+      "q": "Faradey qafasi tajribasida qanday xulosa chiqarilgan?",
+      "v": [
+        "Metall qafas ichida elektr maydoni mavjud bo'lmas ekan",
+        "Metall qafas ichida elektr maydoni kuchayar ekan",
+        "Qafas zaryadni o'ziga yutar ekan",
+        "Folga elektr o'tkazmas ekan"
+      ],
+      "t": 0,
+      "izoh": "Qafas ichidagi elektroskop qafasning zaryadlanishini sezmagani uchun: metall qafas ichida elektr maydoni mavjud bo'lmas ekan (20-rasm).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#d0237c93"
+    },
+    {
+      "q": "Faradey qafasi hodisasi amaliyotda qanday qo'llaniladi?",
+      "v": [
+        "Yuqori kuchlanishli elektr tarmoqlari bilan ishlaydigan kishilar uchun po'lat va mis tolalardan maxsus kiyimlar tikiladi",
+        "Uylarning tomiga metall qafaslar o'rnatiladi",
+        "Elektr simlari folga bilan o'raladi",
+        "Metall idishlarda zaryad saqlanadi"
+      ],
+      "t": 0,
+      "izoh": "Bu hodisadan amaliyotda keng foydalaniladi: yuqori kuchlanishli elektr tarmoqlari bilan ishlaydigan kishilar uchun po'lat va mis tolalardan maxsus kiyimlar tikiladi; kiyimlar insolarni elektrlanishdan saqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#acaeb817"
+    },
+    {
+      "q": "Faradey o'tkazgan qafas tajribasi nimani isbotlaydi?",
+      "v": [
+        "O'tkazgich ichida zaryad bo'lmasligini, elektr zaryadlari faqat o'tkazgich sirti bo'ylab joylashishini",
+        "O'tkazgich ichida maydon kuchli ekanligini",
+        "Zaryadlarning doimiy harakatlanishini",
+        "Metallning zaryadsizlanishini"
+      ],
+      "t": 0,
+      "izoh": "Faradey o'tkazgan bu tajriba ham o'tkazgich ichida zaryad bo'lmasligini, elektr zaryadlari faqat o'tkazgich sirti bo'ylab joylashishini isbotlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#9a129e4e"
+    },
+    {
+      "q": "Ixtiyoriy shakldagi o'tkazgich sirtida zaryadlar qanday taqsimlanadi?",
+      "v": [
+        "Notekis: o'tkir uchiga yaqin joylarda zaryad zichroq joylashadi",
+        "Har doim bir tekis joylashadi",
+        "Faqat tekis qismlarda to'planadi",
+        "Zaryad taqsimlanishi shaklga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Murakkab shakldagi yakkalangan o'tkazgich sirtida elektr zaryadlarning notekis taqsimlanishi, o'tkazgichning uchli joylarida zaryadlar zich joylashishi tajribada tasdiqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#851253f7"
+    },
+    {
+      "q": "22-rasmdagi tajribada zaryadlangan o'tkazgichning turli joylariga qo'yilgan folga yaproqchalar qanday ochiladi?",
+      "v": [
+        "O'tkir uchiga yaqin joylarda kattaroq, silindr shaklidagi qismida kichikroq ochiladi",
+        "Hamma joyda bir xil ochiladi",
+        "Faqat silindr qismida ochiladi",
+        "Faqat o'tkir uchida ochiladi"
+      ],
+      "t": 0,
+      "izoh": "O'tkazgich zaryadlanganda sirtidagi zaryadlar ta'sirida yaproqchalar turlicha tarzda, ya'ni o'tkir uchiga yaqin joylarida kattaroq, silindr shaklidagi qismida esa kichikroq ochiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#38a046ff"
+    },
+    {
+      "q": "Jismning qaysi qismida zaryad zich ekanligi ma'lum?",
+      "v": [
+        "O'tkir uchida boshqa joylariga nisbatan zaryad zich",
+        "Silindrsimon qismlarida zaryad zich",
+        "Tekis joylarida zaryad zich",
+        "Ichki bo'shliqlarida zaryad zich"
+      ],
+      "t": 0,
+      "izoh": "Jismning o'tkir uchida boshqa joylariga nisbatan zaryad zich ekanligi ma'lum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#9793408f"
+    },
+    {
+      "q": "«Elektr shamol» deb nimaga aytiladi?",
+      "v": [
+        "Yakkalangan o'tkir uchli jism zaryadlanganda uchida yuz beradigan, shamol ta'siriday alangani eguvchi jarayonga",
+        "Havoning tabiiy harakatiga",
+        "Zaryadlangan jismning sovushiga",
+        "Elektr simlarining titrashiga"
+      ],
+      "t": 0,
+      "izoh": "O'tkir uchli yakkalangan jismni uzluksiz zaryadlab turib, uning uchiga yonib turgan shamni yaqinlashtirsak, alanganing shamol ta'siriday egilishi kuzatiladi. Shuning uchun bu jarayon «elektr shamol» deb yuritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#13730298"
+    },
+    {
+      "q": "Elektr shamol tajribasini o'tkazish uchun jism qanday zaryadlanadi?",
+      "v": [
+        "O'tkazgich orqali elektr manbaiga ulab, uzluksiz zaryadlab turiladi",
+        "Bir marta mo'ynaga ishqalanadi",
+        "Quyoshda qizdiriladi",
+        "Magnitga yaqinlashtiriladi"
+      ],
+      "t": 0,
+      "izoh": "Yakkalangan o'tkir uchga ega jism (metall)ni o'tkazgich orqali elektr manbaiga ulab, uni uzluksiz zaryadlab turiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#d45cdf9d"
+    },
+    {
+      "q": "Elektr shamol tajribasida sham alangasi qanday harakatlanadi?",
+      "v": [
+        "Shamol ta'siriday egiladi",
+        "To'liq o'chib qoladi",
+        "Kuchayib yonadi",
+        "Rangini o'zgartiradi"
+      ],
+      "t": 0,
+      "izoh": "Jismning uchiga yonib turgan shamni yaqinlashtirilganda alanganing shamol ta'siriday egilishi kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#c077ee40"
+    },
+    {
+      "q": "Elektr shamol hodisasi qaysi xulosani tasdiqlaydi?",
+      "v": [
+        "O'tkazgichning uchli joylarida zaryadlar zich joylashishini",
+        "O'tkazgich ichida zaryad yo'qligini",
+        "Dielektriklarning zaryadlanmasligini",
+        "Zaryadlarning bir tekis taqsimlanishini"
+      ],
+      "t": 0,
+      "izoh": "Bu tajriba murakkab shakldagi yakkalangan o'tkazgich sirtida elektr zaryadlarning notekis taqsimlanishini, o'tkazgichning uchli joylarida zaryadlar zich joylashishini tasdiqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#58b05364"
+    },
+    {
+      "q": "Metall sharda elektr zaryadlar qanday joylashgan bo'ladi?",
+      "v": [
+        "Shar sirtida bir tekis joylashadi, ichida zaryad bo'lmaydi",
+        "Shar markazida to'planadi",
+        "Butun hajmda teng taqsimlanadi",
+        "Faqat shar markazi atrofida halqa hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Metall sharga berilgan zaryadlar sharning sirti bo'ylab bir tekis joylashadi; shar ichida zaryad bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#c4d219a4"
+    },
+    {
+      "q": "Shar ichida zaryad bor-yo'qligini tekshirganda tayoqcha sharchasini shar ichiga qanday kiritish kerak?",
+      "v": [
+        "Shar sirtiga tekkizmasdan, tepasidagi teshikdan kiritish kerak",
+        "Shar sirtiga qattiq bosib",
+        "Shar sirti bo'ylab silliqlab",
+        "Shar ichiga teshik qo'yib"
+      ],
+      "t": 0,
+      "izoh": "Izolyatorli tayoqcha uchiga mahkamlangan metall sharchani ichi kovak sharning ichiga tekkizmasdan kiritiladi — aks holda sirt zaryadi o'tib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#ec2dbd05"
+    },
+    {
+      "q": "Yuqori kuchlanishli tarmoqlardan uzoqda ham katta miqdordagi zaryadlar to'planishi mumkinligi sababi nima?",
+      "v": [
+        "Tarmoqlar yuzlab kilometrlarga uzatilganda ularga katta zaryadlar to'planishi mumkin",
+        "Havo doimo zaryadlangan",
+        "Tarmoqlar magnitlanadi",
+        "Simlar issiqlikdan kengayadi"
+      ],
+      "t": 0,
+      "izoh": "Yuzlab kilometrlarga uzatilgan elektr tarmoqlariga, hatto ular tarmoqdan uzilgan bo'lganida ham katta miqdordagi zaryadlar to'planishi mumkin; shuning uchun maxsus kiyimlar insolarni elektrlanishdan saqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#08a59b57"
+    },
+    {
+      "q": "Faradey qafasiga elektr zaryadlari berilganda qafas ichidagi elektroskop nima uchun zaryadlanishni sezmaydi?",
+      "v": [
+        "Zaryadlar qafasning faqat tashqi sirtida joylashadi, ichida maydon bo'lmaydi",
+        "Elektroskop buzilgan bo'ladi",
+        "Folga zaryadni yutib yuboradi",
+        "Ipak arqonlar zaryadni o'tkazib yuboradi"
+      ],
+      "t": 0,
+      "izoh": "Elektr zaryadlari o'tkazgichning faqat sirtida joylashgani uchun qafas ichida elektr maydoni mavjud bo'lmaydi va elektroskop zaryadlanishni sezmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#a53a14c9"
+    },
+    {
+      "q": "Yakkalangan o'tkazgichda elektr zaryadlarining joylashishi haqidagi asosiy xulosa qanday?",
+      "v": [
+        "Zaryadlar o'tkazgich sirti bo'ylab taqsimlanadi, o'tkazgich ichida zaryad bo'lmaydi",
+        "Zaryadlar o'tkazgich ichida to'planadi",
+        "Zaryadlar faqat o'tkir uchlarda bo'ladi",
+        "Zaryadlar doimiy harakatda bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Yakkalangan o'tkazgichda elektr zaryadlari uning sirti bo'ylab taqsimlanadi. O'tkazgich ichida zaryad bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#38927b0e"
+    },
+    {
+      "q": "Zaryadlangan o'tkazgichning o'tkir uchi yaqinida elektr maydon kuchlanganligi qanday bo'ladi?",
+      "v": [
+        "Boshqa joylariga nisbatan kattaroq bo'ladi",
+        "Kichikroq bo'ladi",
+        "Nolga teng bo'ladi",
+        "Barcha joylarda bir xil bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "O'tkir uchlarda zaryad zich joylashgani uchun maydon kuchlanganligi ham o'sha joylarda kattaroq bo'ladi — elektr shamol shuni tasdiqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#164e5307"
+    },
+    {
+      "q": "Shar shakldagi sim to'ri va yaxlit idishlar berilganda ularning qaysi birida elektr maydon kuchlanganligi katta bo'ladi?",
+      "v": [
+        "Sim to'rda — zaryadlar kichikroq metall sirtida zichroq to'planadi",
+        "Yaxlit idishda — zaryadlar sirtida zichroq to'planadi",
+        "Ikkalasida bir xil",
+        "Hech birida maydon hosil bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlar o'tkazgich sirtida taqsimlanadi; sim to'rning metall sirti yaxlit idishnikidan ancha kichik bo'lgani uchun bir xil miqdordagi zaryad simlarda zichroq joylashadi va maydon kuchlanganligi sim to'rda kattaroq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#9e821288"
+    },
+    {
+      "q": "Murakkab sirtli yakkalangan o'tkazgichlar sirtida elektr zaryadlari qanday taqsimlanadi?",
+      "v": [
+        "Notekis — o'tkir va qavariq joylarda zichroq",
+        "Har doim bir tekis",
+        "Faqat botiq joylarda",
+        "Shaklidan qat'i nazar tasodifiy"
+      ],
+      "t": 0,
+      "izoh": "Murakkab sirtli yakkalangan o'tkazgichlar sirtida elektr zaryadlari notekis taqsimlanadi: o'tkir uchlarda zichroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#6fc17b82"
+    },
+    {
+      "q": "Faradey qafasining amaliy ahamiyati nimada?",
+      "v": [
+        "Insolarni tashqi elektr maydon ta'siridan himoya qilish imkonini beradi",
+        "Elektr zaryadini ko'paytirish imkonini beradi",
+        "Zaryadsiz muhit yaratib bo'lmasligini ko'rsatadi",
+        "Elektr tokini kuchaytiradi"
+      ],
+      "t": 0,
+      "izoh": "Qafas ichida maydon bo'lmasligi hodisasi himoya kiyimlari tikishda qo'llanilib, insolarni elektrlanishdan saqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#46abf54a"
+    },
+    {
+      "q": "O'tkazgich sirtida zaryadlarning notekis taqsimlanishi qanday tajriba bilan ko'rsatilgan?",
+      "v": [
+        "O'tkazgichning turli joylariga folga yaproqchalari qo'yib zaryadlash bilan",
+        "Shar ichiga sharcha kiritish bilan",
+        "Ikki elektrometrni metall tayoqcha bilan ulash bilan",
+        "Qafas ichiga elektroskop joylash bilan"
+      ],
+      "t": 0,
+      "izoh": "22-rasmda tasvirlangan shakldagi o'tkazgichning turli joylariga folga yaproqchalari qo'yilib, zaryadlanganda ularning turlicha ochilishi kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#0fd1770d"
+    },
+    {
+      "q": "Elektr shamol hodisasi qayerda kuzatiladi?",
+      "v": [
+        "Uzluksiz zaryadlanayotgan o'tkir uchli jismning uchida",
+        "Yassi metall plastinka sirtida",
+        "Ichi kovak sharning ichida",
+        "Shisha tayoqcha uchida"
+      ],
+      "t": 0,
+      "izoh": "Elektr shamol yakkalangan o'tkir uchli jism uzluksiz zaryadlanganida uning uchida kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#d1758f87"
+    },
+    {
+      "q": "Zaryadlangan metalldan tayyorlangan yupqa folga qafas ichidagi odam nima uchun zararlanmaydi?",
+      "v": [
+        "Zaryad faqat qafasning tashqi sirtida joylashadi, ichki tomonda maydon yo'q",
+        "Odam izolyator ustida turadi",
+        "Qafas zaryadni yutadi",
+        "Ichki havo dielektrik bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Elektr zaryadlari o'tkazgich sirti bo'ylab joylashgani uchun qafas ichida elektr maydoni mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#ed493afe"
+    },
+    {
+      "q": "O'tkazgich sirtida zaryad taqsimlanishini o'rganishda birinchi elektrometr ko'rsatkichining kamayishi nimani anglatadi?",
+      "v": [
+        "Zaryadning bir qismi tayoqcha sharchasiga o'tganini",
+        "Shar zaryadsizlanganini",
+        "Elektrmotp buzilganini",
+        "Zaryadning ko'payganini"
+      ],
+      "t": 0,
+      "izoh": "Tayoqcha sharchasini shar sirtiga tekkizilganda birinchi elektrometr ko'rsatkichi zaryadning biroz kamayganini ko'rsatadi — zaryadning bir qismi sharchaga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#78492ef6"
+    },
+    {
+      "q": "Elektr shamol tajribasida jismning uchiga yaqinlashtiriladigan nima?",
+      "v": [
+        "Yonib turgan sham",
+        "Elektroskop",
+        "Metall shar",
+        "Muz bo'lagi"
+      ],
+      "t": 0,
+      "izoh": "Jismning uchiga yonib turgan shamni yaqinlashtirib, alanganing egilishi kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m06-otkazgichlarda-zaryadlarning-taqsimlanishi#e27ac03d"
+    }
+  ]
+}

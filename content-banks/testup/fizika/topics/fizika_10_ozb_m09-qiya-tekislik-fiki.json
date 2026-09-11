@@ -1,0 +1,486 @@
+{
+  "nom": "09-mavzu. Qiya Tekislik Fiki",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Jismni qiya tekislik bo'ylab ko'tarishda qanday kuchlarga qarshi ish bajariladi?",
+      "v": [
+        "Og'irlik va ishqalanish kuchlariga qarshi",
+        "Faqat og'irlik kuchiga qarshi",
+        "Faqat ishqalanish kuchiga qarshi",
+        "Faqat normal reaksiya kuchiga qarshi"
+      ],
+      "t": 0,
+      "izoh": "Qiya tekislikda ko'tarishda og'irlik va ishqalanish kuchlariga qarshi ish bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#cabf7ed2"
+    },
+    {
+      "q": "Jismni tik yuqoriga tekis ko'tarishda bajarilgan ish qanday formula bilan topiladi?",
+      "v": [
+        "A1 = mgh",
+        "A1 = Fl",
+        "A1 = μmg cos α",
+        "A1 = mg sin α"
+      ],
+      "t": 0,
+      "izoh": "Tik ko'tarishda og'irlik kuchiga qarshi ish A1 = mgh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#70bf37e6"
+    },
+    {
+      "q": "Jismni qiya tekislik bo'ylab tekis ko'tarishda bajarilgan ish qanday ifodalanadi?",
+      "v": [
+        "A2 = mgh + μmg l cos α",
+        "A2 = mgh",
+        "A2 = μmg l cos α",
+        "A2 = mg l sin α"
+      ],
+      "t": 0,
+      "izoh": "A2 = Fog'h + Fishq·l = mgh + μmglcosα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#3c4cd36f"
+    },
+    {
+      "q": "Nima uchun biz ko'p hollarda jismni ko'tarishda qiya tekislikdan foydalanamiz?",
+      "v": [
+        "Chunki qiya tekislikda kamroq kuch sarflaymiz",
+        "Chunki qiya tekislikda kamroq ish bajariladi",
+        "Chunki ishqalanish kuchi yo'q bo'ladi",
+        "Chunki jism massasi kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Qiya tekislikda kuchdan yutish bo'ladi, lekin ish ko'proq bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#6bf29618"
+    },
+    {
+      "q": "Ishqalanish kuchini yengish uchun bajarilgan ish qanday ish hisoblanadi?",
+      "v": [
+        "Zararli, ya'ni ortiqcha bajarilgan ish",
+        "Foydali ish",
+        "Umumiy ish",
+        "Nolga teng ish"
+      ],
+      "t": 0,
+      "izoh": "Ishqalanishni yengish uchun bajarilgan ish zararli (ortiqcha) ish hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#8f495de3"
+    },
+    {
+      "q": "Qiya tekislikning foydali ish koeffitsiyenti (FIK) qanday aniqlanadi?",
+      "v": [
+        "Bajarilgan foydali ishning umumiy ishga nisbati bilan",
+        "Umumiy ishning foydali ishga nisbati bilan",
+        "Ishqalanish kuchining og'irlik kuchiga nisbati bilan",
+        "Qiya tekislik balandligining uzunligiga nisbati bilan"
+      ],
+      "t": 0,
+      "izoh": "η = Af / Aum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#7066678f"
+    },
+    {
+      "q": "Qiya tekislikning FIKi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "100% dan kichik",
+        "100% dan katta",
+        "Har doim 100% ga teng",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Qiya tekisliklarning FIKi 100% dan kichik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#0deacba7"
+    },
+    {
+      "q": "Qiya tekislikning FIKi qanday formula bilan ifodalanadi?",
+      "v": [
+        "η = 1 / (1 + μ ctg α)",
+        "η = 1 + μ ctg α",
+        "η = μ tg α",
+        "η = mgh / (μmg l cos α)"
+      ],
+      "t": 0,
+      "izoh": "η = Af/Aum = mgh/(mgh + μmglcosα) = 1/(1 + μctgα).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#402cca49"
+    },
+    {
+      "q": "Qiyalik burchagi ortishi bilan qiya tekislikning FIKi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikda qiyalik burchagi ortishi bilan FIK ortishi aytilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#cdd9414f"
+    },
+    {
+      "q": "Qiyalik burchagining ortishi qanday salbiy oqibatga olib keladi?",
+      "v": [
+        "Sarflanadigan kuch ortishiga",
+        "FIKning kamayishiga",
+        "Umumiy ishning ortishiga",
+        "Foydali ishning kamayishiga"
+      ],
+      "t": 0,
+      "izoh": "Qiyalik burchagi ortishi sarflanadigan kuch ortishiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#737148c5"
+    },
+    {
+      "q": "Qiya tekislik tanlashda nimalarga e'tibor qaratiladi?",
+      "v": [
+        "FIKi kattaroq, sarflanadigan kuch esa kichikroq bo'lishiga",
+        "FIKi kichik, sarflanadigan kuch katta bo'lishiga",
+        "Faqat uzunligiga",
+        "Faqat massasiga"
+      ],
+      "t": 0,
+      "izoh": "Qiya tekislik tanlashda FIK katta, kuch kichik bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#262aeb8b"
+    },
+    {
+      "q": "Foydali ish deganda qanday ish tushuniladi?",
+      "v": [
+        "Jismni kerakli balandlikka ko'tarish uchun bajarilgan A = mgh ish",
+        "Ishqalanishni yengish uchun bajarilgan ish",
+        "Dinamometr ko'rsatgan kuch bilan bajarilgan to'la ish",
+        "Normal reaksiya kuchi bajargan ish"
+      ],
+      "t": 0,
+      "izoh": "Foydali ish Af = mgh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#fdc63572"
+    },
+    {
+      "q": "Qiya tekislikda umumiy (to'la) ish qanday topiladi?",
+      "v": [
+        "Aum = F · l (tortish kuchi bilan tekislik uzunligining ko'paytmasi)",
+        "Aum = mgh",
+        "Aum = μmg cos α",
+        "Aum = mg sin α"
+      ],
+      "t": 0,
+      "izoh": "Umumiy ish kuch bilan yo'lning ko'paytmasi: Aum = Fl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#a020f548"
+    },
+    {
+      "q": "Qiya tekislikni tavsiflashda balandlikning uzunlikka nisbati nimani bildiradi?",
+      "v": [
+        "Qiyalik burchagining sinusini (h/l = sin α)",
+        "Qiyalik burchagining kosinusini",
+        "FIKni",
+        "Ishqalanish koeffitsiyentini"
+      ],
+      "t": 0,
+      "izoh": "h/l = sinα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#0e0f80fb"
+    },
+    {
+      "q": "Qiya tekislik mexanizm sifatida qanday vazifani bajaradi?",
+      "v": [
+        "Ish bajarishda yordamchi mexanizm sifatida ishlatiladi",
+        "Faqat quvvatni oshirish uchun ishlatiladi",
+        "Massani o'lchash uchun ishlatiladi",
+        "Tezlikni o'lchash uchun ishlatiladi"
+      ],
+      "t": 0,
+      "izoh": "Qiya tekisliklar ish bajarishda yordamchi mexanizm sifatida ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#859c669e"
+    },
+    {
+      "q": "Darslikdagi masala yechish namunasida qiya tekislik FIKi qanday formula bilan hisoblangan?",
+      "v": [
+        "η = Ph / (Fl) · 100%",
+        "η = Fl / (Ph) · 100%",
+        "η = mgh / Fl",
+        "η = P / F"
+      ],
+      "t": 0,
+      "izoh": "Namunada η = Ph/(Fl)·100% = 50% topilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#5089ef69"
+    },
+    {
+      "q": "Darslikdagi masala yechish namunasida ishqalanish kuchi qanday topilgan?",
+      "v": [
+        "Fishq = F − P·h/l",
+        "Fishq = F + Ph/l",
+        "Fishq = P − F",
+        "Fishq = μN"
+      ],
+      "t": 0,
+      "izoh": "Fishq = F − P·h/l = 19,6 N topilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#fdf3cdfb"
+    },
+    {
+      "q": "Ishqalanish bo'lmasa, qiya tekislikning FIKi qanday bo'lardi?",
+      "v": [
+        "100% ga teng bo'lardi",
+        "Nolga teng bo'lardi",
+        "100% dan katta bo'lardi",
+        "50% dan kichik bo'lardi"
+      ],
+      "t": 0,
+      "izoh": "Ishqalanish bo'lmasa, umumiy ish foydali ishga teng bo'lib, η = 100%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#397718e5"
+    },
+    {
+      "q": "Qiyalik burchagi ortishi bilan bajariladigan umumiy ish qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Nolga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikda qiyalik burchagi ortishi bilan umumiy ish kamayishi aytilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#a7587ed8"
+    },
+    {
+      "q": "FIKning fizikaviy ma'nosi nimadan iborat?",
+      "v": [
+        "Bajarilgan to'la ishning qanday qismi foydali ishga aylanganini ko'rsatadi",
+        "Jismning tezligini ko'rsatadi",
+        "Qiya tekislikning balandligini ko'rsatadi",
+        "Sarflangan kuch kattaligini ko'rsatadi"
+      ],
+      "t": 0,
+      "izoh": "FIK foydali ishning umumiy ishga nisbati sifatida mexanizm samaradorligini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#3e9850eb"
+    },
+    {
+      "q": "FIK qanday o'lchanadi?",
+      "v": [
+        "Birliksiz kattalik bo'lib, odatda foizlarda ifodalanadi",
+        "Nyutonlarda",
+        "Joullarda",
+        "Vattlarda"
+      ],
+      "t": 0,
+      "izoh": "η nisbat bo'lgani uchun birliksiz, foizlarda ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#c9266b90"
+    },
+    {
+      "q": "Qiya tekislikda foydali ish umumiy ishdan qanday bo'ladi?",
+      "v": [
+        "Har doim kichik",
+        "Har doim katta",
+        "Har doim teng",
+        "Ba'zan katta"
+      ],
+      "t": 0,
+      "izoh": "Ishqalanish uchun ish sarflangani sababli foydali ish umumiy ishdan kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#d00457de"
+    },
+    {
+      "q": "η = 1/(1 + μ ctg α) formulasiga ko'ra, μ katta bo'lsa, FIK qanday bo'ladi?",
+      "v": [
+        "Kichik bo'ladi",
+        "Katta bo'ladi",
+        "100% ga teng bo'ladi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "μ ortishi bilan maxraj kattalashib, η kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#25a0d17b"
+    },
+    {
+      "q": "Jismni qiya tekislik bo'ylab ko'tarishda tik ko'tarishga nisbatan bajarilgan ish qanday?",
+      "v": [
+        "Ko'proq ish bajariladi",
+        "Kamroq ish bajariladi",
+        "Bir xil ish bajariladi",
+        "Ish umuman bajarilmaydi"
+      ],
+      "t": 0,
+      "izoh": "A2 = mgh + μmglcosα > A1 = mgh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#91027c09"
+    },
+    {
+      "q": "Qiya tekislikda kuchdan yutish nimaga bog'liq?",
+      "v": [
+        "Qiyalik burchagi kichikligiga",
+        "Ishqalanish koeffitsiyenti kattaligiga",
+        "Jism massasining kattaligiga",
+        "Tekislikning balandligiga"
+      ],
+      "t": 0,
+      "izoh": "Qiyalik burchagi kichik bo'lsa, ko'tarish uchun kichik kuch yetadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#fd469753"
+    },
+    {
+      "q": "Jismni qiya tekislik bo'ylab tekis ko'tarishda tortish kuchi qaysi kuchlarni yengishi kerak?",
+      "v": [
+        "Og'irlik kuchining qiyalik bo'ylab tashkil etuvchisi va ishqalanish kuchini",
+        "Faqat og'irlik kuchini",
+        "Faqat normal reaksiya kuchini",
+        "Faqat ishqalanish kuchini"
+      ],
+      "t": 0,
+      "izoh": "Tortish kuchi Fx va Fishq ni yengadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#702f9cba"
+    },
+    {
+      "q": "Umumiy ish va foydali ish ayirmasi nimani anglatadi?",
+      "v": [
+        "Ishqalanishni yengishga sarflangan zararli ishni",
+        "Foydali ishni",
+        "Quvvatni",
+        "Kuch yelkasini"
+      ],
+      "t": 0,
+      "izoh": "Aum − Af = ishqalanishga qarshi bajarilgan zararli ish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#d3bb54e1"
+    },
+    {
+      "q": "Ishning o'lchov birligi XBSda qanday?",
+      "v": [
+        "Joul (J)",
+        "Nyuton (N)",
+        "Vatt (V)",
+        "Kilogramm (kg)"
+      ],
+      "t": 0,
+      "izoh": "Ish joullarda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#5a65b304"
+    },
+    {
+      "q": "8-mashqdagi 1-masalada umumiy ish 20 J, FIK 80% bo'lsa, foydali ish qanday topiladi?",
+      "v": [
+        "Af = Aum · η = 16 J",
+        "Af = Aum / η = 25 J",
+        "Af = Aum + η = 20,8 J",
+        "Af = η / Aum"
+      ],
+      "t": 0,
+      "izoh": "Af = Aum·η = 20·0,8 = 16 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#519e62ca"
+    },
+    {
+      "q": "Turmushda va texnikada turli qiyalikdagi qiya tekisliklar qanday tanlanadi?",
+      "v": [
+        "FIK va sarflanadigan kuch qiymatlariga qarab",
+        "Faqat uzunligiga qarab",
+        "Faqat rangiga qarab",
+        "Faqat og'irligiga qarab"
+      ],
+      "t": 0,
+      "izoh": "Qiya tekislik tanlashda FIK katta, sarflanadigan kuch kichik bo'lishiga e'tibor beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#49ce8bc9"
+    },
+    {
+      "q": "η = 1/(1 + μ ctg α) formulasidagi ctg α qanday aniqlanadi?",
+      "v": [
+        "cos α / sin α nisbat orqali",
+        "sin α / cos α nisbat orqali",
+        "h / l nisbat orqali",
+        "μ · sin α orqali"
+      ],
+      "t": 0,
+      "izoh": "ctg α = cosα/sinα.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#ba3fd683"
+    },
+    {
+      "q": "Qiya tekislikning balandligi h, uzunligi l bo'lsa, sin α qanday ifodalanadi?",
+      "v": [
+        "sin α = h / l",
+        "sin α = l / h",
+        "sin α = h · l",
+        "sin α = l − h"
+      ],
+      "t": 0,
+      "izoh": "Darslikda h/l = sinα keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m09-qiya-tekislik-fiki#b298904d"
+    }
+  ]
+}

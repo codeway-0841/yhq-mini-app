@@ -1,0 +1,426 @@
+{
+  "nom": "36-dars: Tashqi iqtisodiy aloqalar",
+  "bolim": "VI bob. Aholiga xizmat ko’rsatish va tashqi iqtisodiy aloqalar",
+  "savollar": [
+    {
+      "q": "Tovarlarni tashqi bozorga, xorijga chiqarilishi nima deb ataladi?",
+      "v": [
+        "eksport",
+        "import",
+        "tranzit",
+        "investitsiya"
+      ],
+      "t": 0,
+      "izoh": "Tovarlarni tashqi bozorga, xorijga chiqarilishi eksport deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#8ceef60c"
+    },
+    {
+      "q": "Aksincha, chet mamlakatlardan zarur mahsulotlarni, mollarni olib kelish nima deb ataladi?",
+      "v": [
+        "import",
+        "eksport",
+        "fraxt",
+        "tranzit"
+      ],
+      "t": 0,
+      "izoh": "Chet mamlakatlardan zarur mahsulotlarni, mollarni olib kelish import deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#d3090d3e"
+    },
+    {
+      "q": "O’zbekiston jahonning nechtadan ortiq davlatlari bilan savdo aloqalari olib boradi?",
+      "v": [
+        "140",
+        "150",
+        "130",
+        "120"
+      ],
+      "t": 0,
+      "izoh": "O’zbekiston xalqaro iqtisodiy hamkorlikka faol kirishgan. Hozirgi kunda 140 dan ortiq davlat bilan savdo aloqalari olib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#7ed7cfa1"
+    },
+    {
+      "q": "O’zbekistonga eksport va import qilinayotgan mahsulotlarning eng ko’pi qaysi davlat hissasiga to’g’ri keladi?",
+      "v": [
+        "Xitoy",
+        "Rossiya",
+        "Koreya Respublikasi",
+        "Turkiya"
+      ],
+      "t": 0,
+      "izoh": "O’zbekistonga eksport va import qilinayotgan mahsulotlarning eng ko’pi Xitoyga to’g’ri kelmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#747b5b53"
+    },
+    {
+      "q": "2018-yilda O’zbekistonning tashqi iqtisodiy faoliyati qanchani tashkil etgan? (AQSh dollarida)",
+      "v": [
+        "eksport -14,3 mlrd, import -19,6 mlrd",
+        "eksport -13,6 mlrd, import -12,8 mlrd",
+        "eksport -15,5 mlrd, import -17,2 mlrd",
+        "eksport -16,1 mlrd, import - 20,7 mlrd"
+      ],
+      "t": 0,
+      "izoh": "2018-yilda eksport 14,3 mlrd, import esa 19,6 mlrd AQSH dollarini tashkil qildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#27971787"
+    },
+    {
+      "q": "Mamlakatimizda ishlab chiqarishning rivojlanishiga hamohang ko’plab mahsulotlarning, jumladan, qanday turdagi buyumlarning importi qisqarmoqda?",
+      "v": [
+        "yoqilg’i, oziq-ovqat, xalq iste’moli buyumlari",
+        "mashina va asbob-uskunalar, kimyo mahsulotlari, oziq-ovqat",
+        "oziq-ovqat, xalq iste’moli buyumlari, mashina va asbob-uskunalar",
+        "yoqilg’i, mashina va asbob-uskunalar, kimyo mahsulotlari"
+      ],
+      "t": 0,
+      "izoh": "Ishlab chiqarishning rivojlanishiga hamohang ko’plab mahsulotlarning, jumladan, yoqilg’i, oziq-ovqat va xalq iste’moli buyumlarining importi qisqarmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#6db95d38"
+    },
+    {
+      "q": "O’zbekistonda nechtadan ortiq xorijiy korxona faoliyat ko’rsatmoqda?",
+      "v": [
+        "4200",
+        "3700",
+        "4700",
+        "4500"
+      ],
+      "t": 0,
+      "izoh": "O’zbekistonda 4200 dan ortiq xorijiy korxona faoliyat ko’rsatmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#f176f4a7"
+    },
+    {
+      "q": "O’zbekiston hududining geografik markazi qaysi viloyat hisoblanadi?",
+      "v": [
+        "Navoiy",
+        "Toshkent",
+        "Samarqand",
+        "Jizzax"
+      ],
+      "t": 0,
+      "izoh": "Mamlakatimiz hududida tashkil etilayotgan maxsus erkin iqtisodiy zonalarning dastlabkisi O’zbekiston hududining geografik markazi - Navoiy viloyatida tashkil etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#762c4f96"
+    },
+    {
+      "q": "Xalqaro moliyaviy tashkilotlar bilan hamkorlik qilib, mamlakat ishlab chiqarish kuchlarini modernizatsiya qilish va yangilash uchun chet el sarmoyasini kiritish shakli nima deb ataladi?",
+      "v": [
+        "investitsiya",
+        "kooperatsiya",
+        "ishlab chiqarish sikli",
+        "majmua"
+      ],
+      "t": 0,
+      "izoh": "Xalqaro moliyaviy tashkilotlar bilan hamkorlik qilib, mamlakat ishlab chiqarish kuchlarini modernizatsiya qilish va yangilash uchun chet el sarmoyasini kiritish shakli investitsiya deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#960a0806"
+    },
+    {
+      "q": "Mamlakatimizdagi dastlabki maxsus erkin iqtisodiy zona qaysi viloyat hududida tashkil etilgan?",
+      "v": [
+        "Navoiy",
+        "Jizzax",
+        "Samarqand",
+        "Toshkent"
+      ],
+      "t": 0,
+      "izoh": "Mamlakatimiz hududida tashkil etilgan maxsus erkin iqtisodiy zonalarning dastlabkisi Navoiy viloyatida tashkil etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#a4115927"
+    },
+    {
+      "q": "«U barcha turdagi samolyotlarni qabul qiladigan xalqaro aeroport va u bilan aloqador bo’lgan turli xizmat ko’rsatish korxonalaridan va muassasalaridan tashkil topgan ulkan majmuadir». Ushbu ta’rif qaysi shahar aeroporti haqida ekanligini toping.",
+      "v": [
+        "Navoiy",
+        "Buxoro",
+        "Samarqand",
+        "Termiz"
+      ],
+      "t": 0,
+      "izoh": "Navoiy viloyatida barcha turdagi samolyotlarni qabul qiladigan xalqaro aeroport va u bilan aloqador bo’lgan turli xizmat ko’rsatish korxonalaridan va muassasalaridan tashkil topgan ulkan majmua joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#327cac5d"
+    },
+    {
+      "q": "O’zbekistonning qaysi davlat bilan bo’lgan tashqi savdosida eksport hajmi 16% ni tashkil etadi? (2017-y.)",
+      "v": [
+        "Xitoy",
+        "Rossiya",
+        "Qozog’iston",
+        "Turkiya"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi 82-rasm (O’zbekistonning xorijiy mamlakatlar bilan tashqi savdosi) ma’lumotiga ko’ra, Xitoy bilan eksport hajmi 16 foizni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#e935c0dd"
+    },
+    {
+      "q": "O’zbekistonning qaysi davlat bilan bo’lgan tashqi savdosida import hajmi 21% ni tashkil etadi? (2017-y.)",
+      "v": [
+        "Xitoy",
+        "Rossiya",
+        "Qozog’iston",
+        "Turkiya"
+      ],
+      "t": 0,
+      "izoh": "82-rasm ma’lumotiga ko’ra, Xitoy bilan import hajmi 21 foizni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#4ea7a547"
+    },
+    {
+      "q": "O’zbekistonning qaysi davlat bilan bo’lgan tashqi savdosida eksport hajmi 15,5% ni tashkil etadi? (2017-y.)",
+      "v": [
+        "Rossiya",
+        "Xitoy",
+        "Qozog’iston",
+        "Turkiya"
+      ],
+      "t": 0,
+      "izoh": "82-rasm ma’lumotiga ko’ra, Rossiya bilan eksport hajmi 15,5 foizni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#d304334c"
+    },
+    {
+      "q": "O’zbekistonning qaysi davlat bilan bo’lgan tashqi savdosida import hajmi 20,8% ni tashkil etadi? (2017-y.)",
+      "v": [
+        "Rossiya",
+        "Xitoy",
+        "Qozog’iston",
+        "Koreya Respublikasi"
+      ],
+      "t": 0,
+      "izoh": "82-rasm ma’lumotiga ko’ra, Rossiya bilan import hajmi 20,8 foizni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#452e70ae"
+    },
+    {
+      "q": "O’zbekistonning qaysi davlat bilan bo’lgan tashqi savdosida eksport hajmi 7,8% ni tashkil etadi? (2017-y.)",
+      "v": [
+        "Qozog’iston",
+        "Xitoy",
+        "Rossiya",
+        "Turkiya"
+      ],
+      "t": 0,
+      "izoh": "82-rasm ma’lumotiga ko’ra, Qozog’iston bilan eksport hajmi 7,8 foizni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#069fcc36"
+    },
+    {
+      "q": "O’zbekistonning qaysi davlat bilan bo’lgan tashqi savdosida import hajmi 9,5% ni tashkil etadi? (2017-y.)",
+      "v": [
+        "Koreya Respublikasi",
+        "Rossiya",
+        "Qozog’iston",
+        "Turkiya"
+      ],
+      "t": 0,
+      "izoh": "82-rasm ma’lumotiga ko’ra, Koreya Respublikasi bilan import hajmi 9,5 foizni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#fb8a4274"
+    },
+    {
+      "q": "O’zbekistonning qaysi davlat bilan bo’lgan tashqi savdosida eksport hajmi 6,2% ni tashkil etadi? (2017-y.)",
+      "v": [
+        "Turkiya",
+        "Xitoy",
+        "Rossiya",
+        "Qozog’iston"
+      ],
+      "t": 0,
+      "izoh": "82-rasm ma’lumotiga ko’ra, Turkiya bilan eksport hajmi 6,2 foizni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#8093b9b8"
+    },
+    {
+      "q": "O’zbekistonning qaysi davlat bilan bo’lgan tashqi savdosida import hajmi 5,2% ni tashkil etadi? (2017-y.)",
+      "v": [
+        "Turkiya",
+        "Koreya Respublikasi",
+        "Rossiya",
+        "Qozog’iston"
+      ],
+      "t": 0,
+      "izoh": "82-rasm ma’lumotiga ko’ra, Turkiya bilan import hajmi 5,2 foizni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#5bc30877"
+    },
+    {
+      "q": "O’zbekistonning qaysi davlat bilan bo’lgan tashqi savdosida eksport hajmi 1% ni tashkil etadi? (2017-y.)",
+      "v": [
+        "Koreya Respublikasi",
+        "Fransiya",
+        "Ukraina",
+        "Belarus"
+      ],
+      "t": 0,
+      "izoh": "82-rasm ma’lumotiga ko’ra, Koreya Respublikasi bilan eksport hajmi 1 foizni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#5133c974"
+    },
+    {
+      "q": "O’zbekistonning qaysi davlat bilan bo’lgan tashqi savdosida import hajmi 2,0% ni tashkil etadi? (2017-y.)",
+      "v": [
+        "Litva",
+        "Latviya",
+        "Hindiston",
+        "Qirg’iziston"
+      ],
+      "t": 0,
+      "izoh": "83-rasm (xorijiy mamlakatlar bilan tashqi savdo aylanmasi) ma’lumotiga ko’ra, Litva bilan import hajmi 2,0 foizni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#111b0683"
+    },
+    {
+      "q": "O’zbekistonning Germaniya bilan tashqi savdosidagi importi necha foizni tashkil etadi? (2017-y.)",
+      "v": [
+        "4,5",
+        "5,2",
+        "2,5",
+        "2,2"
+      ],
+      "t": 0,
+      "izoh": "83-rasm ma’lumotiga ko’ra, Germaniya bilan tashqi savdosidagi import 4,5 foizni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#2449f316"
+    },
+    {
+      "q": "O’zbekistonning eksport bo’yicha birinchi «beshlik» yetakchi hamkorlarini belgilang.",
+      "v": [
+        "Xitoy, Rossiya, Qozog’iston, Turkiya, Afg’oniston",
+        "Rossiya, Xitoy, Qozog’iston, Koreya Respublikasi, Turkiya",
+        "Xitoy, Rossiya, Koreya Respublikasi, Turkiya, Qozog’iston",
+        "Rossiya, Xitoy, Koreya Respublikasi, Turkiya, Qozog’iston"
+      ],
+      "t": 0,
+      "izoh": "82-rasm ma’lumotiga ko’ra, O’zbekistonning eksport bo’yicha birinchi beshlik yetakchi hamkorlari: Xitoy, Rossiya, Qozog’iston, Turkiya, Afg’oniston.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#b1aeca89"
+    },
+    {
+      "q": "O’zbekistonning import bo’yicha birinchi «beshlik» yetakchi hamkorlarini belgilang.",
+      "v": [
+        "Xitoy, Rossiya, Koreya Respublikasi, Qozog’iston, Turkiya",
+        "Rossiya, Xitoy, Turkiya, Germaniya, Braziliya",
+        "Xitoy, Rossiya, Turkiya, Qozog’iston, Koreya Respublikasi",
+        "Rossiya, Xitoy, Koreya Respublikasi, Qozog’iston, Turkiya"
+      ],
+      "t": 0,
+      "izoh": "82-rasm ma’lumotiga ko’ra, O’zbekistonning import bo’yicha birinchi beshlik yetakchi hamkorlari: Xitoy, Rossiya, Koreya Respublikasi, Qozog’iston, Turkiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#25032e94"
+    },
+    {
+      "q": "O’zbekiston qanday mahsulotlarni eksport qiluvchi mamlakatlardan hisoblanadi?",
+      "v": [
+        "mashinalar, kimyo mahsulotlari, qora va rangli metall, elektr energiya, gaz, paxta tolasi, oziq-ovqat mollari, pilla, qorako’l",
+        "faqat paxta tolasi va gaz",
+        "faqat qishloq xo’jaligi mahsulotlari",
+        "faqat mineral resurslar"
+      ],
+      "t": 0,
+      "izoh": "O’zbekiston mashinalar, kimyo mahsulotlari, qora va rangli metall, elektr energiya, gaz, paxta tolasi, oziq-ovqat mollari, pilla, qorako’l singari mahsulotlarni eksport qiluvchi mamlakatlardan hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#0ab90743"
+    },
+    {
+      "q": "So’nggi yillarda eksport tarkibida qanday ijobiy o’zgarishlar sodir bo’lmoqda?",
+      "v": [
+        "xomashyo mahsulotlari eksporti kamayib, yuqori sifatli tayyor mahsulotlar eksportining ulushi oshmoqda",
+        "faqat xomashyo eksporti ko’paymoqda",
+        "eksport tarkibi o’zgarmay qolmoqda",
+        "faqat qishloq xo’jaligi mahsulotlari eksporti oshmoqda"
+      ],
+      "t": 0,
+      "izoh": "So’nggi yillarda eksport tarkibida katta ijobiy o’zgarishlar sodir bo’lmoqda. Jumladan, xomashyo mahsulotlari eksporti kamayib, yuqori sifatli tayyor mahsulotlar eksportining ulushi oshmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#a377a545"
+    },
+    {
+      "q": "Umumiy importning 3/4 qismini nima tashkil qiladi?",
+      "v": [
+        "texnik va ishlab chiqarish jihozlari hamda asbob-uskunalar",
+        "oziq-ovqat mahsulotlari",
+        "xalq iste’moli buyumlari",
+        "yoqilg’i mahsulotlari"
+      ],
+      "t": 0,
+      "izoh": "Umumiy importning 3/4 qismini texnik va ishlab chiqarish jihozlari hamda asbob-uskunalar tashkil qiladi. Bu mamlakat iqtisodiyotining rivojlanish istiqbollariga aynan mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#ebd1ba97"
+    },
+    {
+      "q": "O’zbekiston qanday xalqaro tashkilotlar bilan hamkorlik qilmoqda?",
+      "v": [
+        "Shanxay hamkorlik tashkiloti, Yevropa Ittifoqi, MDH, Yevrosiyo iqtisodiy hamdo’stligi, Islom konferensiyasi tashkiloti",
+        "faqat MDH",
+        "faqat Yevropa Ittifoqi",
+        "faqat Islom konferensiyasi tashkiloti"
+      ],
+      "t": 0,
+      "izoh": "O’zbekiston dunyoning yetakchi xalqaro tashkilotlari bilan hamkorlik qilgan holda, davrning dolzarb muammolarini hal etishga jiddiy e’tibor qaratmoqda: Shanxay hamkorlik tashkiloti (SHHT), Yevropa Ittifoqi (YI), Mustaqil davlatlar hamdo’stligi (MDH), Yevrosiyo iqtisodiy hamdo’stligi (YIH), Islom konferensiyasi tashkiloti (IKT) va boshqalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d36_tashqi_iqtisodiy_aloqalar#ccfbe4e0"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Vatar, diametr, urinma va aylanadagi metrik munosabatlar",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Doira shaklidagi hovuzning radiusi 10 m. Hovuz markazidan 6 m uzoqlikda bir qirg'oqdan ikkinchi qirg'oqqa to'g'ri ko'prik tortilgan. Ko'prikning uzunligi necha metr?",
+      "v": [
+        "8 m",
+        "20 m",
+        "16 m",
+        "4 m"
+      ],
+      "t": 2,
+      "izoh": "Ko'prik — vatar. Markazdan vatarga tushirilgan perpendikulyar uni teng ikkiga bo'ladi, shuning uchun yarim vatar √(10² − 6²) = √64 = 8 m. Butun ko'prik esa 2 · 8 = 16 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='190' y1='76' x2='190' y2='228' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='133' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='125' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='133' y1='152' x2='190' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='180,152 180,142 190,142' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='197' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EH%3C/text%3E%3Ctext x='161.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E6 m%3C/text%3E%3Cline x1='133' y1='152' x2='190' y2='76' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='156.5' y='109' font-size='13' fill='%23334155' text-anchor='end'%3E10 m%3C/text%3E%3Ctext x='190' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='190' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='199' y='114' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vatar-uzunlik",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#489dc068"
+    },
+    {
+      "q": "Doira shaklidagi basseynning diametri 34 m. Bir chetdan ikkinchi chetga uzunligi 30 m arqon tortilgan. Arqon basseyn markazidan necha metr uzoqlikda joylashgan?",
+      "v": [
+        "8 m",
+        "2 m",
+        "15 m",
+        "4 m"
+      ],
+      "t": 0,
+      "izoh": "Radius 34 : 2 = 17 m, arqon esa 30 m uzunlikdagi vatar. Uning yarmi 15 m, markazgacha masofa √(17² − 15²) = √64 = 8 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='177.7' y1='68.2' x2='177.7' y2='235.8' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='133' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='125' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='133' y1='152' x2='177.7' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='167.7,152 167.7,142 177.7,142' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='184.7' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EH%3C/text%3E%3Ctext x='155.4' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='133' y1='152' x2='177.7' y2='68.2' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150.4' y='105.1' font-size='13' fill='%23334155' text-anchor='end'%3E17 m%3C/text%3E%3Ctext x='177.7' y='59.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='177.7' y='252.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='186.7' y='110.1' font-size='13' fill='%23334155' text-anchor='start'%3E30 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "markazgacha-masofa",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#89282724"
+    },
+    {
+      "q": "Quduq og'zi doira shaklida. Uning bir chetidan ikkinchi chetiga tortilgan 96 sm uzunlikdagi tayoq og'iz markazidan 36 sm uzoqlikdan o'tadi. Quduq og'zining radiusi necha santimetr?",
+      "v": [
+        "84 sm",
+        "120 sm",
+        "48 sm",
+        "60 sm"
+      ],
+      "t": 3,
+      "izoh": "Tayoq 96 sm li vatar, uning yarmi 48 sm. Radius yarim vatar va markazgacha masofa bo'yicha topiladi: √(48² + 36²) = √3600 = 60 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='190' y1='76' x2='190' y2='228' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='133' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='125' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='133' y1='152' x2='190' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='180,152 180,142 190,142' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='197' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EH%3C/text%3E%3Ctext x='161.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E36 sm%3C/text%3E%3Cline x1='133' y1='152' x2='190' y2='76' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='156.5' y='109' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='190' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='190' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='199' y='114' font-size='13' fill='%23334155' text-anchor='start'%3E96 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vatardan-radius",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#e8c8e10d"
+    },
+    {
+      "q": "AB vatari CD diametrini K nuqtada perpendikulyar kesib o'tadi. AK = 12 sm va KD = 4 sm bo'lsa, KC bo'lagi necha santimetrga teng?",
+      "v": [
+        "16 sm",
+        "36 sm",
+        "3 sm",
+        "48 sm"
+      ],
+      "t": 1,
+      "izoh": "Diametr vatarga perpendikulyar bo'lgani uchun K nuqta AB ni teng bo'ladi: KB = AK = 12 sm. Kesishuvchi vatarlar xossasidan AK · KB = CK · KD, ya'ni 144 = CK · 4 va CK = 36 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='207' y1='224' x2='93' y2='224' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='53' x2='150' y2='243' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='224' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='239' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='224' y='236' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='76' y='236' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='145' y='36' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='145' y='267' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='195.8' y='219' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='143' y='102.7' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='143' y='231.9' font-size='13' fill='%23334155' text-anchor='end'%3E4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyar-diametr",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#7afd3adc"
+    },
+    {
+      "q": "Dumaloq gilamda markazdan bir xil 80 sm uzoqlikda, ikkala uchi gilam chetiga tegib turadigan ikkita to'g'ri chiziqli naqsh chizilgan. Birinchi naqshning uzunligi 300 sm bo'lsa, ikkinchisiniki necha santimetr?",
+      "v": [
+        "300 sm",
+        "150 sm",
+        "600 sm",
+        "380 sm"
+      ],
+      "t": 0,
+      "izoh": "Ikkala uchi gilam chetida bo'lgani uchun naqshlar vatar hisoblanadi. Aylana markazidan teng uzoqlikda joylashgan vatarlar o'zaro teng bo'ladi, chunki yarim vatar √(R² − d²) ifoda bilan topiladi. Shuning uchun ikkinchi naqsh ham 300 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-vatarlar",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#2af21647"
+    },
+    {
+      "q": "Doira shaklidagi maydonning radiusi 25 m. Markazdan 7 m va 20 m uzoqlikda, markazning bir tomonida ikkita parallel yo'lak o'tkazilgan. Yo'laklar uzunliklarining ayirmasi necha metr?",
+      "v": [
+        "9 m",
+        "13 m",
+        "78 m",
+        "18 m"
+      ],
+      "t": 3,
+      "izoh": "Birinchi yo'lak 2 · √(625 − 49) = 48 m, ikkinchisi 2 · √(625 − 400) = 30 m. Ayirma 48 − 30 = 18 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='166' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='58.8' y1='125.4' x2='241.2' y2='125.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='93' y1='76' x2='207' y2='76' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='50.8' y='129.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='249.2' y='129.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='85' y='80' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='215' y='80' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-vatarlar",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#9de192d1"
+    },
+    {
+      "q": "Aylana shaklidagi maydon chetidagi A va B ustunlar diametrning uchlariga o'rnatilgan, C ustun esa aylananing boshqa nuqtasida turibdi. ∠ACB burchagi necha gradusga teng?",
+      "v": [
+        "45°",
+        "90°",
+        "180°",
+        "60°"
+      ],
+      "t": 1,
+      "izoh": "Diametrga tiralgan ichki chizilgan burchak yarim aylanaga tiraladi, uning kattaligi esa yoyning yarmiga teng. Demak ∠ACB = 180° : 2 = 90°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='158' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='158' x2='245' y2='158' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='158' x2='123.4' y2='66.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='158' x2='123.4' y2='66.8' stroke='%23334155' stroke-width='2'/%3E%3Cpath d='M110.2,84.4 A22,22 0 0 0 141,80' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='128.2' y='105' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ccircle cx='150' cy='158' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='150' y='175' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='47' y='163' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='163' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='123.4' y='57.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diametrga-tiralgan-burchak",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#60ca815d"
+    },
+    {
+      "q": "Radiusi 21 m doira shaklidagi hovuz markazidan 35 m uzoqlikdagi ustundan hovuz chetiga urinma bo'ylab arqon tortildi. Arqonning urinish nuqtasigacha uzunligi necha metr?",
+      "v": [
+        "14 m",
+        "56 m",
+        "28 m",
+        "42 m"
+      ],
+      "t": 2,
+      "izoh": "Urinish nuqtasidagi radius urinmaga perpendikulyar, shuning uchun OAP uchburchak to'g'ri burchakli. Urinma kesmasi √(35² − 21²) = √784 = 28 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='122' cy='155' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='122' y1='155' x2='268.7' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='122' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='268.7' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='122' y1='155' x2='174.8' y2='84.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='268.7' y1='155' x2='174.8' y2='84.6' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='169.4,91.8 176.6,97.2 182,90' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='172.8' y='75.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='115' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='276.7' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='225.7' y='112.8' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='144.4' y='114.8' font-size='13' fill='%23334155' text-anchor='end'%3E21 m%3C/text%3E%3Ctext x='195.3' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E35 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-kesmasi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#1bd9d915"
+    },
+    {
+      "q": "Doira shaklidagi minora poydevorining radiusi 18 m. Anvar minoraga tashqaridan 24 m uzunlikdagi urinma simni tortdi. Anvar minora markazidan necha metr uzoqlikda turibdi?",
+      "v": [
+        "42 m",
+        "6 m",
+        "36 m",
+        "30 m"
+      ],
+      "t": 3,
+      "izoh": "Sim urinma bo'lgani uchun radius bilan to'g'ri burchak hosil qiladi. Markazgacha masofa √(18² + 24²) = √900 = 30 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='122' cy='155' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='122' y1='155' x2='268.7' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='122' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='268.7' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='122' y1='155' x2='174.8' y2='84.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='268.7' y1='155' x2='174.8' y2='84.6' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='169.4,91.8 176.6,97.2 182,90' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='172.8' y='75.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='115' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='276.7' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='225.7' y='112.8' font-size='13' fill='%23334155' text-anchor='start'%3E24 m%3C/text%3E%3Ctext x='144.4' y='114.8' font-size='13' fill='%23334155' text-anchor='end'%3E18 m%3C/text%3E%3Ctext x='195.3' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-masofa-radius",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#a017f1ba"
+    },
+    {
+      "q": "Dumaloq stol chetiga bitta nuqtadan ikkita to'g'ri tayanch urinma qilib o'rnatilgan. Birinchi tayanchning urinish nuqtasigacha uzunligi 14 sm bo'lsa, ikkinchisiniki necha santimetr?",
+      "v": [
+        "7 sm",
+        "14 sm",
+        "28 sm",
+        "21 sm"
+      ],
+      "t": 1,
+      "izoh": "Bitta tashqi nuqtadan o'tkazilgan urinma kesmalari o'zaro teng bo'ladi, chunki hosil bo'lgan to'g'ri burchakli uchburchaklar teng. Demak ikkinchi tayanch ham 14 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-urinma-tenglik",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#ec851304"
+    },
+    {
+      "q": "Tashqi nuqtadan chiqqan ikkita urinma orasidagi burchak 70°. Urinish nuqtalarini markaz bilan tutashtirganda hosil bo'lgan markaziy burchak necha gradus?",
+      "v": [
+        "70°",
+        "35°",
+        "110°",
+        "140°"
+      ],
+      "t": 2,
+      "izoh": "PAOB to'rtburchakda urinish nuqtalaridagi burchaklar 90° ga teng. To'rtburchak burchaklari yig'indisi 360° bo'lgani uchun markaziy burchak 360 − 90 − 90 − 70 = 110°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='120' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='120' y1='155' x2='270' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='120' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='270' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='120' y1='155' x2='169.4' y2='84.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='169.4' y2='84.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='164.2,91.9 171.6,97.1 176.7,89.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='167.4' y='75.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Cline x1='120' y1='155' x2='169.4' y2='225.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='169.4' y2='225.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='164.2,218.1 171.6,212.9 176.7,220.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='167.4' y='242.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='113' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Cpolyline points='248.7,140.1 247.7,141.6 246.9,143.1 246.1,144.7 245.5,146.3 245,148 244.5,149.7 244.2,151.5 244.1,153.2 244,155 244.1,156.8 244.2,158.5 244.5,160.3 245,162 245.5,163.7 246.1,165.3 246.9,166.9 247.7,168.4 248.7,169.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='236' y='160' font-size='13' fill='%23334155' text-anchor='end'%3E70°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinmalar-burchagi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#aacbf74e"
+    },
+    {
+      "q": "Katetlari 6 m va 8 m bo'lgan to'g'ri burchakli uchastkaga ichki chizilgan doira shaklida hovuz qaziladi. Hovuzning radiusi necha metr?",
+      "v": [
+        "2 m",
+        "4 m",
+        "5 m",
+        "2,4 m"
+      ],
+      "t": 0,
+      "izoh": "Gipotenuza √(36 + 64) = 10 m. To'g'ri burchakli uchburchakda ichki aylana radiusi r = (a + b − c) : 2 = (6 + 8 − 10) : 2 = 2 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='62,248 258,248 62,101 62,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='111' cy='199' r='49' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='73,248 73,237 62,237' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='54' y='254' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='266' y='254' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='58' y='93' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='160' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3E8 m%3C/text%3E%3Ctext x='54' y='174.5' font-size='13' fill='%23334155' text-anchor='end'%3E6 m%3C/text%3E%3Cline x1='111' y1='199' x2='111' y2='248' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='116' y='213' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-aylana-urinish",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#dccd6d5b"
+    },
+    {
+      "q": "To'rt tomoni ham dumaloq gulzorga urinadigan to'rtburchak shaklidagi tomorqaning ketma-ket uchta tomoni 7 m, 19 m va 26 m. To'rtinchi tomoni necha metr?",
+      "v": [
+        "33 m",
+        "14 m",
+        "38 m",
+        "26 m"
+      ],
+      "t": 1,
+      "izoh": "Ichiga aylana chizilgan to'rtburchakda qarama-qarshi tomonlar yig'indilari teng: 7 + 26 = 19 + x. Bundan x = 33 − 19 = 14 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-tortburchak",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#e322493a"
+    },
+    {
+      "q": "Doira shaklidagi bog'da ikkita to'g'ri yo'lak kesishadi. Birinchi yo'lak kesishish nuqtasi bilan 18 m va 24 m bo'laklarga ajralgan, ikkinchisining bir bo'lagi esa 12 m. Ikkinchi bo'lak necha metr?",
+      "v": [
+        "30 m",
+        "6 m",
+        "36 m",
+        "42 m"
+      ],
+      "t": 2,
+      "izoh": "Kesishuvchi vatarlar xossasiga ko'ra bo'laklar ko'paytmalari teng: 18 · 24 = 12 · x. Bundan 432 = 12x va x = 36 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='211.6' y1='220.3' x2='67.9' y2='195.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='119.2' y1='237.9' x2='242.3' y2='125.5' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='209.8' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='224.8' font-size='13' fill='%23334155' text-anchor='start'%3EE%3C/text%3E%3Ctext x='228.4' y='234.3' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='51' y='205.7' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='105.4' y='258' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='256.2' y='112.4' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='198.9' y='211.9' font-size='13' fill='%23334155' text-anchor='start'%3E18 m%3C/text%3E%3Ctext x='87.1' y='195.2' font-size='13' fill='%23334155' text-anchor='end'%3E24 m%3C/text%3E%3Ctext x='122.1' y='223.9' font-size='13' fill='%23334155' text-anchor='end'%3E12 m%3C/text%3E%3Ctext x='219.8' y='147.5' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesishuvchi-vatarlar",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#b24abfdd"
+    },
+    {
+      "q": "Aylanada AB va CD vatarlar E nuqtada kesishadi. AE = 16 sm, EB = 12 sm va CD = 32 sm bo'lsa, CE bo'lagining katta qiymati necha santimetr?",
+      "v": [
+        "24 sm",
+        "8 sm",
+        "32 sm",
+        "16 sm"
+      ],
+      "t": 0,
+      "izoh": "CE = x bo'lsa ED = 32 − x bo'ladi. x(32 − x) = 16 · 12 = 192 tenglamadan x² − 32x + 192 = 0. Ildizlari 8 va 24, kattasi 24 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='232.1' y1='195.7' x2='88.4' y2='220.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='57.7' y1='125.5' x2='180.8' y2='237.9' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='209.8' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='224.8' font-size='13' fill='%23334155' text-anchor='start'%3EE%3C/text%3E%3Ctext x='249' y='205.7' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='71.6' y='234.3' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='43.8' y='112.4' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='194.6' y='258' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='212.9' y='195.2' font-size='13' fill='%23334155' text-anchor='start'%3E16 sm%3C/text%3E%3Ctext x='101.1' y='211.9' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vatar-tenglama",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#d91c5982"
+    },
+    {
+      "q": "Radiusi 40 m doira shaklidagi hovuz diametri bo'ylab yo'lak o'tgan. Unga markazdan 16 m uzoqlikdagi P nuqtada vatar kesishadi va vatarning bir bo'lagi 28 m. Vatarning ikkinchi bo'lagi necha metr?",
+      "v": [
+        "24 m",
+        "56 m",
+        "32 m",
+        "48 m"
+      ],
+      "t": 3,
+      "izoh": "Diametr P nuqtada 40 − 16 = 24 m va 40 + 16 = 56 m bo'laklarga ajraladi. Vatarlar xossasiga ko'ra 28 · x = 24 · 56 = 1344, demak x = 48 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='201.9' y1='227.6' x2='61' y2='114.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='243' x2='150' y2='53' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='186' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='201' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='216.3' y='247.1' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='46.6' y='102.3' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='145' y='267' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='145' y='36' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='192.3' y='209.3' font-size='13' fill='%23334155' text-anchor='start'%3E28 m%3C/text%3E%3Ctext x='82.5' y='132.6' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-quvvati",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#6d924064"
+    },
+    {
+      "q": "Doira shaklidagi hovuz tashqarisidagi P nuqtadan ikkita to'g'ri chiziq o'tkazildi. Birinchisi hovuz chetini P dan 4 m va 9 m masofalarda kesadi, ikkinchisi esa yaqin chetini 3 m masofada kesadi. Ikkinchi chiziqning uzoq kesishuv nuqtasigacha masofa necha metr?",
+      "v": [
+        "10 m",
+        "36 m",
+        "12 m",
+        "9 m"
+      ],
+      "t": 2,
+      "izoh": "Kesuvchilar xossasiga ko'ra PA · PB = PC · PD. Demak 4 · 9 = 3 · PD, ya'ni 36 = 3 · PD va PD = 12 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='151.2' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='151.2' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='151.2' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='151.2' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='130.6' y2='71.5' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='73.6' cy='117.9' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='130.6' cy='71.5' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='79.8' y='105.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='136.8' y='59.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='46.2' y='132.2' font-size='13' fill='%23334155' text-anchor='middle'%3E4 m%3C/text%3E%3Cline x1='28' y1='155' x2='185.9' y2='233.7' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='67.5' cy='174.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='185.9' cy='233.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='74.6' y='194.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='193' y='253.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='43.8' y='177.9' font-size='13' fill='%23334155' text-anchor='middle'%3E3 m%3C/text%3E%3Ctext x='138.5' y='225.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-kesuvchi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#ecbd245d"
+    },
+    {
+      "q": "Tashqi P nuqtadan ikkita kesuvchi o'tkazilgan. Birinchisining tashqi bo'lagi 16 sm, aylana ichidagi vatari esa 56 sm. Ikkinchi kesuvchining tashqi bo'lagi va vatari o'zaro teng bo'lsa, uning to'liq uzunligi necha santimetr?",
+      "v": [
+        "48 sm",
+        "24 sm",
+        "72 sm",
+        "32 sm"
+      ],
+      "t": 0,
+      "izoh": "Birinchi kesuvchi uchun ko'paytma 16 · (16 + 56) = 1152. Ikkinchisida tashqi bo'lak x bo'lsa, to'liq uzunlik 2x va x · 2x = 1152. Bundan x² = 576, x = 24 va to'liq uzunlik 48 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='145.6' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='145.6' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='145.6' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='145.6' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='178.4' y2='75.5' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='61.4' cy='137.3' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='178.4' cy='75.5' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='68.5' y='126.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='185.5' y='64.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='41.4' y='139.9' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='131.6' y='92.2' font-size='13' fill='%23334155' text-anchor='middle'%3E56 sm%3C/text%3E%3Cline x1='28' y1='155' x2='110' y2='233.3' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='69' cy='194.2' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='110' cy='233.3' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='74.8' y='215.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='115.8' y='254.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesuvchi-tenglama",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#2c201643"
+    },
+    {
+      "q": "Doira shaklidagi ko'l tashqarisidagi P nuqtadan o'tgan to'g'ri yo'l ko'l chetini P dan 12 m va 48 m masofalarda kesadi. Ko'lning radiusi 32 m bo'lsa, P nuqtadan ko'l markazigacha masofa necha metr?",
+      "v": [
+        "24 m",
+        "72 m",
+        "48 m",
+        "40 m"
+      ],
+      "t": 3,
+      "izoh": "P nuqtaning quvvati 12 · 48 = 576 va u OP² − R² ga teng. Demak OP² = 576 + 1024 = 1600 va OP = 40 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='135.5' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='135.5' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='135.5' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='135.5' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='124.8' y2='69.7' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='52.2' cy='133.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='124.8' cy='69.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='58.2' y='121.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='130.8' y='57.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='37.7' y='138.5' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='95.7' y='87.3' font-size='13' fill='%23334155' text-anchor='middle'%3E36 m%3C/text%3E%3Ctext x='81.8' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesuvchi-markaz",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#d493b7c1"
+    },
+    {
+      "q": "Doira shaklidagi hovuz tashqarisidagi P nuqtadan hovuzga urinma arqon va kesuvchi arqon tortilgan. Kesuvchi hovuz chetini P dan 4 m va 9 m masofalarda kesadi. Urinma arqonning urinish nuqtasigacha uzunligi necha metr?",
+      "v": [
+        "36 m",
+        "6 m",
+        "13 m",
+        "5 m"
+      ],
+      "t": 1,
+      "izoh": "Urinma va kesuvchi xossasiga ko'ra PT² = PA · PB = 4 · 9 = 36. Demak PT = √36 = 6 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='193.3' cy='155' r='78.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='193.3' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='193.3' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='193.3' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='235.7' y2='88.7' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='120.3' cy='125.5' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='235.7' cy='88.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='127.9' y='116.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='243.3' y='79.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='64.9' y='135.2' font-size='13' fill='%23334155' text-anchor='middle'%3E4 m%3C/text%3E%3Cline x1='28' y1='155' x2='155.8' y2='224.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='193.3' y1='155' x2='155.8' y2='224.2' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='147.9,219.9 152.2,212 160.1,216.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='155.8' y='241.2' font-size='13' fill='%23334155' text-anchor='middle'%3ET%3C/text%3E%3Ctext x='91.9' y='204.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-kesuvchi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#9f565657"
+    },
+    {
+      "q": "Tashqi nuqtadan aylanaga urinma va kesuvchi o'tkazilgan. Urinma kesmasi 6 sm, kesuvchining aylana ichidagi vatari esa tashqi bo'lagidan 14 sm uzun. Kesuvchining tashqi bo'lagi necha santimetr?",
+      "v": [
+        "2 sm",
+        "4 sm",
+        "16 sm",
+        "18 sm"
+      ],
+      "t": 0,
+      "izoh": "Tashqi bo'lak x bo'lsa, to'liq uzunlik 2x + 14 bo'ladi. x(2x + 14) = 36 dan x² + 7x − 18 = 0, musbat ildizi x = 2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='127.3' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='127.3' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='127.3' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='127.3' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='52.8' y2='112' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='127.3' y1='155' x2='52.8' y2='112' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='48.3,119.8 56.1,124.3 60.6,116.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='52.8' y='103' font-size='13' fill='%23334155' text-anchor='middle'%3ET%3C/text%3E%3Ctext x='40.4' y='125.5' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Cline x1='28' y1='155' x2='152' y2='237.4' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='41.8' cy='164.2' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='152' cy='237.4' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='48.4' y='184.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='158.6' y='257.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-kesuvchi-tenglama",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#492f1476"
+    },
+    {
+      "q": "Tashqi P nuqtadan o'tkazilgan urinma kesmasi 36 sm, shu nuqtadan aylana markazi orqali o'tuvchi kesuvchining tashqi bo'lagi esa 18 sm. Aylananing radiusi necha santimetr?",
+      "v": [
+        "54 sm",
+        "36 sm",
+        "18 sm",
+        "27 sm"
+      ],
+      "t": 3,
+      "izoh": "Urinma kesmasining kvadrati kesuvchi bo'laklari ko'paytmasiga teng. Kesuvchi markazdan o'tgani uchun PM = 18 va PN = 18 + 2R bo'ladi. 36² = 18(18 + 2R) dan 72 = 18 + 2R, ya'ni R = 27 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='122' cy='155' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='34' y1='155' x2='268.7' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='122' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='268.7' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='122' y1='155' x2='174.8' y2='84.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='268.7' y1='155' x2='174.8' y2='84.6' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='169.4,91.8 176.6,97.2 182,90' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='172.8' y='75.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='115' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='276.7' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='225.7' y='112.8' font-size='13' fill='%23334155' text-anchor='start'%3E36 sm%3C/text%3E%3Ctext x='144.4' y='114.8' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ccircle cx='210' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='210' y='147' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='239.4' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-markaz-radius",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#970203e4"
+    },
+    {
+      "q": "Tunnel kesimi aylana yoyi shaklida: kengligi 24 m, o'rtasidagi balandligi esa 8 m. Yoyga tegishli aylananing radiusi necha metr?",
+      "v": [
+        "12 m",
+        "13 m",
+        "16 m",
+        "20 m"
+      ],
+      "t": 1,
+      "izoh": "Vatarning yarmi 12 m. R² = 12² + (R − 8)² tenglamadan R² = 144 + R² − 16R + 64 kelib chiqadi. Bundan 16R = 208 va R = 13 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='36,235 39,228.4 42.4,222 46.1,215.7 50.2,209.7 54.7,204 59.4,198.5 64.5,193.4 69.9,188.5 75.6,183.9 81.5,179.7 87.7,175.9 94,172.4 100.6,169.3 107.3,166.6 114.2,164.3 121.2,162.4 128.3,160.9 135.5,159.9 142.7,159.2 150,159 157.3,159.2 164.5,159.9 171.7,160.9 178.8,162.4 185.8,164.3 192.7,166.6 199.4,169.3 206,172.4 212.3,175.9 218.5,179.7 224.4,183.9 230.1,188.5 235.5,193.4 240.6,198.5 245.3,204 249.8,209.7 253.9,215.7 257.6,222 261,228.4 264,235' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='36' y1='235' x2='264' y2='235' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='235' x2='150' y2='159' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,235 141,226 150,226' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='28' y='240' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='151' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='150' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3E24 m%3C/text%3E%3Ctext x='157' y='197' font-size='13' fill='%23334155' text-anchor='start'%3E8 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kamar-strelka",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#786bdcb9"
+    },
+    {
+      "q": "Aylanaga tashqi P nuqtadan urinma o'tkazilgan va ∠OPA = 30°, bunda A urinish nuqtasi. Radius 7 sm bo'lsa, OP masofa necha santimetr?",
+      "v": [
+        "7 sm",
+        "21 sm",
+        "14 sm",
+        "3,5 sm"
+      ],
+      "t": 2,
+      "izoh": "OAP uchburchakda A dagi burchak to'g'ri. 30° li burchak qarshisidagi katet gipotenuzaning yarmiga teng, demak OP = 2 · 7 = 14 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='112.7' cy='155' r='78.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='112.7' y1='155' x2='270' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='112.7' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='270' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='112.7' y1='155' x2='152' y2='86.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='152' y2='86.9' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='147.5,94.7 155.3,99.2 159.8,91.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='77.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='105.7' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='128.3' y='115.9' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3Ctext x='191.3' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='247.5,142 247.1,142.7 246.8,143.3 246.4,144 246.1,144.7 245.8,145.4 245.6,146.1 245.3,146.8 245.1,147.5 244.9,148.3 244.7,149 244.5,149.7 244.4,150.5 244.3,151.2 244.2,152 244.1,152.7 244,153.5 244,154.2 244,155' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='236' y='147' font-size='13' fill='%23334155' text-anchor='end'%3E30°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-burchak",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#8a419d0e"
+    },
+    {
+      "q": "Radiusi 35 sm bo'lgan aylananing markazidan 21 sm uzoqlikda vatar o'tkazildi. Shu vatarning uzunligi necha santimetr?",
+      "v": [
+        "28 sm",
+        "42 sm",
+        "70 sm",
+        "56 sm"
+      ],
+      "t": 3,
+      "izoh": "Markazdan vatarga tushirilgan perpendikulyar, radius va yarim vatar to'g'ri burchakli uchburchak hosil qiladi. Yarim vatar √(35² − 21²) = √784 = 28 sm, butun vatar 56 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='190' y1='76' x2='190' y2='228' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='133' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='125' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='133' y1='152' x2='190' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='180,152 180,142 190,142' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='197' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EH%3C/text%3E%3Ctext x='161.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E21 sm%3C/text%3E%3Cline x1='133' y1='152' x2='190' y2='76' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='156.5' y='109' font-size='13' fill='%23334155' text-anchor='end'%3E35 sm%3C/text%3E%3Ctext x='190' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='190' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='199' y='114' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vatar-uzunlik",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#01505236"
+    },
+    {
+      "q": "Radiusi 25 sm bo'lgan aylanada uzunligi 48 sm vatar o'tkazilgan. Bu vatar aylana markazidan qancha masofada joylashgan?",
+      "v": [
+        "1 sm",
+        "7 sm",
+        "24 sm",
+        "14 sm"
+      ],
+      "t": 1,
+      "izoh": "Vatarning yarmi 48 : 2 = 24 sm. Markazdan vatargacha masofa √(25² − 24²) = √49 = 7 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='159.6' y1='60.8' x2='159.6' y2='243.2' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='133' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='125' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='133' y1='152' x2='159.6' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='149.6,152 149.6,142 159.6,142' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='166.6' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EH%3C/text%3E%3Ctext x='146.3' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='133' y1='152' x2='159.6' y2='60.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141.3' y='101.4' font-size='13' fill='%23334155' text-anchor='end'%3E25 sm%3C/text%3E%3Ctext x='159.6' y='51.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159.6' y='260.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='168.6' y='106.4' font-size='13' fill='%23334155' text-anchor='start'%3E48 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "markazgacha-masofa",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#26b21b55"
+    },
+    {
+      "q": "Aylanada uzunligi 30 sm bo'lgan vatar markazdan 8 sm uzoqlikda joylashgan. Shu aylananing diametri necha santimetrga teng?",
+      "v": [
+        "17 sm",
+        "38 sm",
+        "34 sm",
+        "23 sm"
+      ],
+      "t": 2,
+      "izoh": "Yarim vatar 15 sm. Radius √(15² + 8²) = √289 = 17 sm, diametr esa 2 · 17 = 34 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='177.7' y1='68.2' x2='177.7' y2='235.8' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='133' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='125' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='133' y1='152' x2='177.7' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='167.7,152 167.7,142 177.7,142' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='184.7' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EH%3C/text%3E%3Ctext x='155.4' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Cline x1='133' y1='152' x2='177.7' y2='68.2' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150.4' y='105.1' font-size='13' fill='%23334155' text-anchor='end'%3ER%3C/text%3E%3Ctext x='177.7' y='59.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='177.7' y='252.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='186.7' y='110.1' font-size='13' fill='%23334155' text-anchor='start'%3E30 sm%3C/text%3E%3Ctext x='150' y='282' font-size='14' fill='%23334155' text-anchor='middle'%3Ed = 2R = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vatardan-radius",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#15549b5d"
+    },
+    {
+      "q": "Suv quvurining kesimi doira shaklida va uning diametri 13 sm. Diametrga perpendikulyar vatar diametrni 4 sm va 9 sm bo'laklarga ajratadi. Shu vatarning uzunligi necha santimetr?",
+      "v": [
+        "12 sm",
+        "6 sm",
+        "13 sm",
+        "5 sm"
+      ],
+      "t": 0,
+      "izoh": "Perpendikulyar vatar diametr bilan teng ikkiga bo'linadi, shuning uchun uning yarmi kvadrati 4 · 9 = 36 ga teng. Yarim vatar 6 sm, butun vatar esa 12 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='237.7' y1='184.5' x2='62.3' y2='184.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='243' x2='150' y2='53' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='184.5' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='199.5' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='254.7' y='196.5' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='45.3' y='196.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='145' y='267' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='145' y='36' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='143' y='219.3' font-size='13' fill='%23334155' text-anchor='end'%3E4 sm%3C/text%3E%3Ctext x='143' y='90.1' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyar-diametr",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#01f56a3a"
+    },
+    {
+      "q": "Aylanada AB va CD vatarlar o'zaro teng. AB vatari markazdan 24 sm uzoqlikda, aylananing radiusi esa 40 sm. CD vatarining uzunligi necha santimetr?",
+      "v": [
+        "32 sm",
+        "64 sm",
+        "80 sm",
+        "48 sm"
+      ],
+      "t": 1,
+      "izoh": "Teng vatarlar markazdan teng uzoqlikda yotadi, demak CD ham 24 sm masofada. Uning yarmi √(40² − 24²) = 32 sm, shuning uchun CD = 64 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='190' y1='76' x2='190' y2='228' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='133' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='125' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='133' y1='152' x2='190' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='180,152 180,142 190,142' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='197' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EH%3C/text%3E%3Ctext x='161.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Cline x1='133' y1='152' x2='190' y2='76' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='156.5' y='109' font-size='13' fill='%23334155' text-anchor='end'%3E40 sm%3C/text%3E%3Ctext x='190' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='190' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Cline x1='76' y1='76' x2='76' y2='228' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='76' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='76' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='68' y='114' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3EAB = CD%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-vatarlar",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#71a6be8c"
+    },
+    {
+      "q": "Radiusi 13 sm aylanada uzunligi 24 sm va 10 sm bo'lgan parallel vatarlar markazning turli tomonlarida yotadi. Ular orasidagi masofa necha santimetr?",
+      "v": [
+        "7 sm",
+        "25 sm",
+        "17 sm",
+        "12 sm"
+      ],
+      "t": 2,
+      "izoh": "24 sm li vatar markazdan √(169 − 144) = 5 sm, 10 sm li vatar esa √(169 − 25) = 12 sm uzoqlikda. Turli tomonlarda bo'lgani uchun masofa 5 + 12 = 17 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='166' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='62.3' y1='115.5' x2='237.7' y2='115.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='113.5' y1='239.7' x2='186.5' y2='239.7' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='54.3' y='119.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='245.7' y='119.5' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='105.5' y='243.7' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='194.5' y='243.7' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='150' y='107.5' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='150' y='256.7' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Cline x1='131.7' y1='115.5' x2='131.7' y2='239.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='125.7' y='181.6' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-vatarlar",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#f545d562"
+    },
+    {
+      "q": "Aylananing diametri 35 sm. Diametr uchlari A va B ni aylanadagi C nuqta bilan tutashtirganda AC = 21 sm bo'ldi. BC kesmasining uzunligi necha santimetr?",
+      "v": [
+        "28 sm",
+        "14 sm",
+        "56 sm",
+        "17,5 sm"
+      ],
+      "t": 0,
+      "izoh": "∠ACB diametrga tiralgani uchun 90° ga teng. Pifagor teoremasidan BC = √(35² − 21²) = √784 = 28 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='158' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='158' x2='245' y2='158' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='158' x2='123.4' y2='66.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='158' x2='123.4' y2='66.8' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='117.4,74.8 125.4,80.8 131.4,72.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='158' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='150' y='175' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='47' y='163' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='163' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='123.4' y='57.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='192' font-size='13' fill='%23334155' text-anchor='middle'%3E35 sm%3C/text%3E%3Ctext x='82.2' y='108.4' font-size='13' fill='%23334155' text-anchor='end'%3E21 sm%3C/text%3E%3Ctext x='191.2' y='108.4' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diametrga-tiralgan-burchak",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#d1918b61"
+    },
+    {
+      "q": "Aylananing radiusi 24 sm, tashqi P nuqtadan markazgacha masofa esa 51 sm. P dan aylanaga o'tkazilgan urinma kesmasining uzunligi necha santimetr?",
+      "v": [
+        "27 sm",
+        "75 sm",
+        "36 sm",
+        "45 sm"
+      ],
+      "t": 3,
+      "izoh": "Radius urinish nuqtasida urinmaga perpendikulyar bo'ladi. Shu sababli urinma kesmasi √(51² − 24²) = √2025 = 45 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='109.5' cy='155' r='75.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='109.5' y1='155' x2='270' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='109.5' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='270' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='109.5' y1='155' x2='145.1' y2='88.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='145.1' y2='88.4' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='140.8,96.3 148.8,100.5 153,92.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='143.1' y='79.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='102.5' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='211.5' y='114.7' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='123.3' y='116.7' font-size='13' fill='%23334155' text-anchor='end'%3E24 sm%3C/text%3E%3Ctext x='189.8' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E51 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-kesmasi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#fcce886a"
+    },
+    {
+      "q": "Tashqi nuqtadan o'tkazilgan urinma kesmasi 12 sm, shu nuqtadan markazgacha masofa esa 13 sm. Aylananing radiusi necha santimetrga teng?",
+      "v": [
+        "1 sm",
+        "25 sm",
+        "5 sm",
+        "8 sm"
+      ],
+      "t": 2,
+      "izoh": "Urinma kesmasi va radius to'g'ri burchakli uchburchakning katetlari, markazgacha masofa esa gipotenuzasi. Radius √(13² − 12²) = √25 = 5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='99.6' cy='155' r='65.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='99.6' y1='155' x2='270' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='99.6' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='270' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='99.6' y1='155' x2='124.8' y2='94.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='124.8' y2='94.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='121.3,102.8 129.6,106.3 133.1,97.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='122.8' y='85.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='92.6' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='201.4' y='117.7' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='108.2' y='119.7' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='184.8' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-masofa-radius",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#29f73060"
+    },
+    {
+      "q": "P nuqtadan aylanaga PA va PB urinmalar o'tkazilgan. ∠APB = 60° va PA = 9 sm bo'lsa, AB kesmasining uzunligi necha santimetr?",
+      "v": [
+        "9 sm",
+        "4,5 sm",
+        "18 sm",
+        "9√3 sm"
+      ],
+      "t": 0,
+      "izoh": "Urinma kesmalari teng, ya'ni PA = PB = 9 sm, demak APB uchburchak teng yonli. Uchidagi burchak 60° bo'lgani uchun u teng tomonli, shuning uchun AB = 9 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='112.7' cy='155' r='78.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='112.7' y1='155' x2='270' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='112.7' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='270' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='112.7' y1='155' x2='152' y2='86.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='152' y2='86.9' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='147.5,94.7 155.3,99.2 159.8,91.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='77.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Cline x1='112.7' y1='155' x2='152' y2='223.1' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='152' y2='223.1' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='147.5,215.3 155.3,210.8 159.8,218.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='240.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Cline x1='152' y1='86.9' x2='152' y2='223.1' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='105.7' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='215' y='113.9' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3Ctext x='143' y='155' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Cpolyline points='247.5,142 246.8,143.3 246.1,144.7 245.6,146.1 245.1,147.5 244.7,149 244.4,150.5 244.2,152 244,153.5 244,155 244,156.5 244.2,158 244.4,159.5 244.7,161 245.1,162.5 245.6,163.9 246.1,165.3 246.8,166.7 247.5,168' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='236' y='160' font-size='13' fill='%23334155' text-anchor='end'%3E60°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-urinma-tenglik",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#4112afc9"
+    },
+    {
+      "q": "Dumaloq ustunga bitta nuqtadan ikki tomondan arqon tortilgan. Urinish nuqtalarini markaz bilan tutashtiruvchi radiuslar orasidagi burchak 130° bo'lsa, arqonlar orasidagi burchak necha gradus?",
+      "v": [
+        "130°",
+        "65°",
+        "25°",
+        "50°"
+      ],
+      "t": 3,
+      "izoh": "Urinish nuqtalaridagi burchaklar to'g'ri burchak. To'rtburchak burchaklari yig'indisi 360° bo'lgani uchun arqonlar orasidagi burchak 360 − 90 − 90 − 130 = 50°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='104.1' cy='155' r='70.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='104.1' y1='155' x2='270' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='104.1' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='270' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='104.1' y1='155' x2='133.7' y2='91.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='133.7' y2='91.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='129.9,99.6 138.1,103.4 141.9,95.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='131.7' y='82.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Cline x1='104.1' y1='155' x2='133.7' y2='218.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='133.7' y2='218.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='129.9,210.4 138.1,206.6 141.9,214.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='131.7' y='235.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='97.1' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Cpolyline points='246.4,144 245.9,145.2 245.5,146.3 245.1,147.5 244.8,148.8 244.5,150 244.3,151.2 244.1,152.5 244,153.7 244,155 244,156.3 244.1,157.5 244.3,158.8 244.5,160 244.8,161.2 245.1,162.5 245.5,163.7 245.9,164.8 246.4,166' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='236' y='160' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinmalar-burchagi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#d969b46d"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari 9 sm va 12 sm. Ichki chizilgan aylananing gipotenuzaga urinish nuqtasi uchburchak uchlaridan qanday masofalarda joylashgan?",
+      "v": [
+        "3 sm va 12 sm",
+        "6 sm va 9 sm",
+        "7,5 sm va 7,5 sm",
+        "5 sm va 10 sm"
+      ],
+      "t": 1,
+      "izoh": "Gipotenuza 15 sm, yarim perimetr (9 + 12 + 15) : 2 = 18 sm. Urinish nuqtasidan uchlargacha masofalar 18 − 12 = 6 sm va 18 − 9 = 9 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='62,248 258,248 62,101 62,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='111' cy='199' r='49' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='73,248 73,237 62,237' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='54' y='254' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='266' y='254' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='58' y='93' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='160' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='54' y='174.5' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='168' y='168.5' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-aylana-urinish",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#933d3ca8"
+    },
+    {
+      "q": "Ichiga aylana chizilgan to'rtburchakning qarama-qarshi ikki tomoni 9 sm va 22 sm. Qolgan ikki tomonining yig'indisi necha santimetr?",
+      "v": [
+        "31 sm",
+        "13 sm",
+        "15,5 sm",
+        "62 sm"
+      ],
+      "t": 0,
+      "izoh": "Bir uchdan chiqqan urinma kesmalari teng bo'lgani uchun qarama-qarshi tomonlar yig'indilari o'zaro teng bo'ladi. Demak qolgan ikki tomon yig'indisi ham 9 + 22 = 31 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-tortburchak",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#ed644ab9"
+    },
+    {
+      "q": "AB va CD vatarlar M nuqtada kesishadi. AM = 5 sm, MB = 12 sm va CM = 10 sm bo'lsa, MD kesmasi necha santimetr?",
+      "v": [
+        "7 sm",
+        "60 sm",
+        "24 sm",
+        "6 sm"
+      ],
+      "t": 3,
+      "izoh": "AM · MB = CM · MD tenglikdan 5 · 12 = 10 · MD, ya'ni 60 = 10 · MD. Demak MD = 6 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='189.2' y1='234.5' x2='56' y2='134.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='57.9' y1='171.4' x2='205.2' y2='225.3' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='205.1' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='220.1' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='203.8' y='253.8' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='41.4' y='122.1' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='41.7' y='179.3' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='221.5' y='241.4' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='183.6' y='220.1' font-size='13' fill='%23334155' text-anchor='start'%3E5 sm%3C/text%3E%3Ctext x='79.1' y='152' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='80.4' y='177.2' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesishuvchi-vatarlar",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#e683773c"
+    },
+    {
+      "q": "Doira shaklidagi maydonda ikkita to'g'ri yo'lak kesishadi. Birinchi yo'lakning bo'laklari 9 m va 8 m, ikkinchi yo'lakning to'liq uzunligi esa 18 m. Ikkinchi yo'lakning kichik bo'lagi necha metr?",
+      "v": [
+        "12 m",
+        "6 m",
+        "9 m",
+        "8 m"
+      ],
+      "t": 1,
+      "izoh": "Kichik bo'lak x bo'lsa, ikkinchisi 18 − x bo'ladi. x(18 − x) = 9 · 8 = 72 dan x² − 18x + 72 = 0, ildizlari 6 va 12. Kichigi 6 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='233' y1='194.2' x2='76.2' y2='207.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='102.6' y1='230.3' x2='244.9' y2='143.6' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='201.4' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='216.4' font-size='13' fill='%23334155' text-anchor='start'%3EE%3C/text%3E%3Ctext x='250' y='205.1' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='59.2' y='220.9' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='87.3' y='248.5' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='260.1' y='132.4' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='213.5' y='191.5' font-size='13' fill='%23334155' text-anchor='start'%3E9 m%3C/text%3E%3Ctext x='92.8' y='200.8' font-size='13' fill='%23334155' text-anchor='end'%3E8 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vatar-tenglama",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#07ff318b"
+    },
+    {
+      "q": "Aylananing radiusi 13 sm. Markazdan 5 sm uzoqlikdagi M nuqtadan o'tuvchi vatarning bir bo'lagi 9 sm bo'lsa, ikkinchi bo'lagi necha santimetr?",
+      "v": [
+        "8 sm",
+        "18 sm",
+        "16 sm",
+        "12 sm"
+      ],
+      "t": 2,
+      "izoh": "M nuqtadan o'tuvchi diametr 13 − 5 = 8 sm va 13 + 5 = 18 sm bo'laklarga bo'linadi. Shuning uchun 9 · x = 8 · 18 = 144 va x = 16 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='197' y1='230.6' x2='66.5' y2='102.7' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='243' x2='150' y2='53' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='184.5' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='199.5' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='210.5' y='251' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='52.9' y='89.3' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='145' y='267' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='145' y='36' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='188.9' y='210.8' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3Ctext x='86.2' y='123.9' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-quvvati",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#03979afe"
+    },
+    {
+      "q": "Ko'l tashqarisidagi P nuqtadan ikkita to'g'ri qarash chizig'i o'tkazildi. Birinchisi ko'l chetini P dan 9 m va 36 m masofalarda kesadi, ikkinchisining yaqin kesishuvi esa 12 m. Ikkinchi chiziqning ko'l ichidagi qismi necha metr?",
+      "v": [
+        "27 m",
+        "45 m",
+        "12 m",
+        "15 m"
+      ],
+      "t": 3,
+      "izoh": "9 · 36 = 12 · PD tenglikdan PD = 324 : 12 = 27 m. Ko'l ichidagi qism 27 − 12 = 15 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='151.2' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='151.2' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='151.2' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='151.2' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='185.9' y2='76.3' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='67.5' cy='135.3' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='185.9' cy='76.3' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='74.6' y='124.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='193' y='65.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='43.8' y='139.1' font-size='13' fill='%23334155' text-anchor='middle'%3E9 m%3C/text%3E%3Cline x1='28' y1='155' x2='130.6' y2='238.5' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='73.6' cy='192.1' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='130.6' cy='238.5' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='79.8' y='213.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='136.8' y='259.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='46.2' y='184.8' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='107.8' y='234.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-kesuvchi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#d5511bd6"
+    },
+    {
+      "q": "P nuqtadan aylanaga ikkita kesuvchi chiqadi. Birinchisining tashqi bo'lagi 7 sm, to'liq uzunligi 9 sm. Ikkinchi kesuvchining vatari tashqi bo'lagidan 15 sm uzun bo'lsa, uning tashqi bo'lagi necha santimetr?",
+      "v": [
+        "18 sm",
+        "3 sm",
+        "21 sm",
+        "9 sm"
+      ],
+      "t": 1,
+      "izoh": "Birinchi kesuvchi ko'paytmasi 7 · 9 = 63. Ikkinchisida tashqi bo'lak x, to'liq uzunlik esa 2x + 15 bo'ladi: x(2x + 15) = 63. 2x² + 15x − 63 = 0 tenglamaning musbat ildizi x = 3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='131.9' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='131.9' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='131.9' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='131.9' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='65.4' y2='100.5' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='57.1' cy='112.6' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='65.4' cy='100.5' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='61.6' y='99' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='70' y='86.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='39.6' y='130' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Cline x1='28' y1='155' x2='159' y2='236.6' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='46.7' cy='166.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='159' cy='236.6' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='53.5' y='186.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='165.8' y='256.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesuvchi-tenglama",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#b06c02bf"
+    },
+    {
+      "q": "Kesuvchi aylanani P nuqtadan 9 sm va 16 sm masofalarda kesadi, aylananing radiusi esa 5 sm. P nuqtadan markazgacha masofa necha santimetr?",
+      "v": [
+        "12 sm",
+        "17 sm",
+        "13 sm",
+        "25 sm"
+      ],
+      "t": 2,
+      "izoh": "Quvvat 9 · 16 = 144 ga teng. OP² = R² + 144 = 25 + 144 = 169, demak OP = 13 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='204.2' cy='155' r='67.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='204.2' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='204.2' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='204.2' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='236.5' y2='95.4' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='145.3' cy='121.5' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='236.5' cy='95.4' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='153' y='112.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='244.2' y='86.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='74.9' y='133.6' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Cline x1='204.2' y1='155' x2='272' y2='155' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='238.1' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='116.1' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesuvchi-markaz",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#89a0bf09"
+    },
+    {
+      "q": "Tashqi nuqtadan aylanaga urinma va kesuvchi o'tkazilgan. Urinma kesmasi 42 sm, kesuvchining tashqi bo'lagi esa 28 sm. Kesuvchining to'liq uzunligi necha santimetr?",
+      "v": [
+        "63 sm",
+        "35 sm",
+        "70 sm",
+        "84 sm"
+      ],
+      "t": 0,
+      "izoh": "PT² = PA · PB tenglikdan 1764 = 28 · PB kelib chiqadi. Demak PB = 1764 : 28 = 63 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='193.3' cy='155' r='78.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='193.3' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='193.3' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='193.3' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='155.8' y2='85.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='193.3' y1='155' x2='155.8' y2='85.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='147.9,90.1 152.2,98 160.1,93.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='155.8' y='76.8' font-size='13' fill='%23334155' text-anchor='middle'%3ET%3C/text%3E%3Ctext x='91.9' y='112.4' font-size='13' fill='%23334155' text-anchor='middle'%3E42 sm%3C/text%3E%3Cline x1='28' y1='155' x2='235.7' y2='221.3' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='120.3' cy='184.5' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='235.7' cy='221.3' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='127.9' y='202.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='243.3' y='239.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='64.9' y='181.8' font-size='13' fill='%23334155' text-anchor='middle'%3E28 sm%3C/text%3E%3Ctext x='189.5' y='221.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-kesuvchi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#1f399b3f"
+    },
+    {
+      "q": "Urinma kesmasi 22 sm. Shu nuqtadan chiqqan kesuvchining aylana ichidagi vatari tashqi bo'lagidan uch marta uzun. Kesuvchining to'liq uzunligi necha santimetr?",
+      "v": [
+        "11 sm",
+        "44 sm",
+        "33 sm",
+        "22 sm"
+      ],
+      "t": 1,
+      "izoh": "Tashqi bo'lak x, vatar 3x, to'liq uzunlik esa 4x bo'ladi. x · 4x = 484 tenglamadan x² = 121 va x = 11. To'liq uzunlik 4 · 11 = 44 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='151.2' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='151.2' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='151.2' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='151.2' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='91.2' y2='93.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='151.2' y1='155' x2='91.2' y2='93.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='84.7,99.7 91,106.2 97.4,99.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='91.2' y='84.4' font-size='13' fill='%23334155' text-anchor='middle'%3ET%3C/text%3E%3Ctext x='59.6' y='116.2' font-size='13' fill='%23334155' text-anchor='middle'%3E22 sm%3C/text%3E%3Cline x1='28' y1='155' x2='185.9' y2='233.7' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='67.5' cy='174.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='185.9' cy='233.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='74.6' y='194.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='193' y='253.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-kesuvchi-tenglama",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#2c44741a"
+    },
+    {
+      "q": "Doira shaklidagi orolga qirg'oqdagi P nuqtadan urinma o'tkazilgan va uning urinish nuqtasigacha uzunligi 40 m. Shu P nuqtadan oroldagi eng yaqin nuqtagacha masofa 32 m bo'lsa, orolning radiusi necha metr?",
+      "v": [
+        "20 m",
+        "18 m",
+        "9 m",
+        "41 m"
+      ],
+      "t": 2,
+      "izoh": "Eng yaqin nuqtagacha masofa markazdan o'tuvchi kesuvchining tashqi bo'lagi, ya'ni 32 m. Urinma kvadrati kesuvchi bo'laklari ko'paytmasiga teng: 1600 = 32(32 + 2R) dan 50 = 32 + 2R va R = 9 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-markaz-radius",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#b3035086"
+    },
+    {
+      "q": "Ko'prik ravog'i aylana yoyi shaklida bo'lib, uning kengligi 16 m va o'rtadagi ko'tarilishi 4 m. Ravoq aylanasining radiusi necha metr?",
+      "v": [
+        "10 m",
+        "8 m",
+        "12 m",
+        "5 m"
+      ],
+      "t": 0,
+      "izoh": "Yarim vatar 8 m ga teng. R² = 8² + (R − 4)² tenglamadan 8R = 64 + 16, ya'ni R = 10 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='36,235 40.1,229.8 44.4,224.8 49,220 53.7,215.4 58.7,211.1 63.9,207 69.2,203.1 74.7,199.5 80.4,196.1 86.3,193 92.2,190.2 98.3,187.7 104.6,185.4 110.9,183.5 117.3,181.8 123.7,180.4 130.2,179.4 136.8,178.6 143.4,178.2 150,178 156.6,178.2 163.2,178.6 169.8,179.4 176.3,180.4 182.7,181.8 189.1,183.5 195.4,185.4 201.7,187.7 207.8,190.2 213.7,193 219.6,196.1 225.3,199.5 230.8,203.1 236.1,207 241.3,211.1 246.3,215.4 251,220 255.6,224.8 259.9,229.8 264,235' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='36' y1='235' x2='264' y2='235' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='235' x2='150' y2='178' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,235 141,226 150,226' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='28' y='240' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='170' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='150' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3E16 m%3C/text%3E%3Ctext x='157' y='206.5' font-size='13' fill='%23334155' text-anchor='start'%3E4 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kamar-strelka",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#7f6f0204"
+    },
+    {
+      "q": "Dumaloq minoraning radiusi 12 m. Tashqaridagi kuzatuvchidan minoraga urinma chiziq bilan markazga qarash chizig'i orasidagi burchak 45°. Kuzatuvchi minora markazidan necha metr uzoqlikda?",
+      "v": [
+        "12 m",
+        "24 m",
+        "6√2 m",
+        "12√2 m"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri burchakli uchburchakda sin45° = R : OP. Demak OP = 12 : (√2/2) = 12√2 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='122' cy='155' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='122' y1='155' x2='246.5' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='122' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='246.5' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='122' y1='155' x2='184.2' y2='92.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='246.5' y1='155' x2='184.2' y2='92.8' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='177.9,99.1 184.2,105.5 190.6,99.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='182.2' y='83.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='115' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='254.5' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='149.1' y='118.9' font-size='13' fill='%23334155' text-anchor='end'%3E12 m%3C/text%3E%3Ctext x='184.2' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='228.1,136.6 227.3,137.4 226.5,138.3 225.8,139.2 225.2,140.1 224.5,141 223.9,142 223.4,143 222.9,144 222.4,145.1 222,146.1 221.7,147.2 221.3,148.3 221.1,149.4 220.8,150.5 220.7,151.6 220.5,152.7 220.5,153.9 220.5,155' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='212.5' y='147' font-size='13' fill='%23334155' text-anchor='end'%3E45°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-burchak",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#629a4530"
+    },
+    {
+      "q": "Diametri 50 sm bo'lgan quvurning ko'ndalang kesimi doira. Suv sathi kesim markazidan 15 sm pastda to'g'ri chiziq hosil qilgan. Suv sathining kengligi necha santimetr?",
+      "v": [
+        "20 sm",
+        "35 sm",
+        "40 sm",
+        "10 sm"
+      ],
+      "t": 2,
+      "izoh": "Radius 50 : 2 = 25 sm. Suv sathi — markazdan 15 sm uzoqlikdagi vatar. Uning yarmi √(25² − 15²) = √400 = 20 sm, demak kenglik 2 · 20 = 40 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M74,207 A95,95 0 0 0 226,207 Z' fill='%23dbeafe' stroke='none'/%3E%3Ccircle cx='150' cy='150' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='74' y1='207' x2='226' y2='207' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='150' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='142' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='150' y1='150' x2='150' y2='207' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='160,207 160,197 150,197' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='157' y='182' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3Ctext x='150' y='224' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Cline x1='150' y1='150' x2='74' y2='207' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='108' y='174' font-size='13' fill='%23334155' text-anchor='end'%3E25 sm%3C/text%3E%3Ctext x='66' y='203' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='234' y='203' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Cline x1='74' y1='212' x2='74' y2='268' stroke='%2394a3b8' stroke-width='1' stroke-dasharray='4 3'/%3E%3Cline x1='226' y1='212' x2='226' y2='268' stroke='%2394a3b8' stroke-width='1' stroke-dasharray='4 3'/%3E%3Cline x1='74' y1='262' x2='226' y2='262' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='283' font-size='14' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vatar-uzunlik",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#131a6564"
+    },
+    {
+      "q": "Usta radiusi 35 sm doira shaklidagi yog'och taxtadan uzunligi 56 sm to'g'ri bo'lak arralab oldi. Arra chizig'i taxta markazidan necha santimetr uzoqlikda o'tgan?",
+      "v": [
+        "21 sm",
+        "7 sm",
+        "28 sm",
+        "42 sm"
+      ],
+      "t": 0,
+      "izoh": "Arra chizig'i — vatar, uning yarmi 28 sm. Markazdan uzoqlik √(35² − 28²) = √441 = 21 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='190' y1='76' x2='190' y2='228' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='133' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='125' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='133' y1='152' x2='190' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='180,152 180,142 190,142' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='197' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EH%3C/text%3E%3Ctext x='161.5' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='133' y1='152' x2='190' y2='76' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='156.5' y='109' font-size='13' fill='%23334155' text-anchor='end'%3E35 sm%3C/text%3E%3Ctext x='190' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='190' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='199' y='114' font-size='13' fill='%23334155' text-anchor='start'%3E56 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "markazgacha-masofa",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#c656cccc"
+    },
+    {
+      "q": "Dizayner dumaloq stol ustiga uzunligi 60 sm to'g'ri chiziqli chiroq o'rnatdi; chiroqning ikkala uchi stol chetida va u markazdan 40 sm nariga surilgan. Stolning radiusi necha santimetr?",
+      "v": [
+        "70 sm",
+        "100 sm",
+        "30 sm",
+        "50 sm"
+      ],
+      "t": 3,
+      "izoh": "Chiroq — vatar, uning yarmi 30 sm, markazdan uzoqligi 40 sm. Radius √(30² + 40²) = √2500 = 50 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='95' x2='209' y2='209' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='133' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='125' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='133' y1='152' x2='209' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='199,152 199,142 209,142' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='216' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EH%3C/text%3E%3Ctext x='171' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3Cline x1='133' y1='152' x2='209' y2='95' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='166' y='118.5' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='209' y='86' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='209' y='226' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='218' y='123.5' font-size='13' fill='%23334155' text-anchor='start'%3E60 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vatardan-radius",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#b550f47c"
+    },
+    {
+      "q": "Aylana diametrini M nuqta 13 sm va 52 sm uzunlikdagi bo'laklarga ajratgan. M nuqtadan diametrga perpendikulyar o'tkazilgan vatarning yarmi necha santimetr?",
+      "v": [
+        "52 sm",
+        "26 sm",
+        "32,5 sm",
+        "13 sm"
+      ],
+      "t": 1,
+      "izoh": "Perpendikulyar vatarning yarmi diametr bo'laklarining o'rta geometrigi bo'ladi: h² = 13 · 52 = 676. Demak h = 26 sm, o'rta arifmetik 32,5 sm emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='226' y1='205' x2='74' y2='205' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='243' x2='150' y2='53' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='205' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='220' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='243' y='217' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='57' y='217' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='145' y='267' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='145' y='36' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='208.7' y='200' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='143' y='225.8' font-size='13' fill='%23334155' text-anchor='end'%3E13 sm%3C/text%3E%3Ctext x='143' y='96.6' font-size='13' fill='%23334155' text-anchor='end'%3E52 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyar-diametr",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#0df02848"
+    },
+    {
+      "q": "Dumaloq soat siferblatida markazdan teng uzoqlikda, uchlari siferblat chetida bo'lgan uchta to'g'ri chiziq chizilgan. Ularning uzunliklari haqida qanday xulosa to'g'ri bo'ladi?",
+      "v": [
+        "Uchala chiziq ham teng uzunlikda",
+        "Markazdan uzoqroq bo'lgani uzunroq",
+        "Uchalasi ham diametrga teng",
+        "Har birining uzunligi radiusga teng"
+      ],
+      "t": 0,
+      "izoh": "Uchlari siferblat chetida bo'lgani uchun bu chiziqlar vatar hisoblanadi. Yarim vatar √(R² − d²) formulasi bilan topiladi va u faqat R hamda d ga bog'liq. Uch chiziqda ham R va d bir xil bo'lgani uchun ularning uzunliklari teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-vatarlar",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#27e27bba"
+    },
+    {
+      "q": "Radiusi 10 sm aylanada uzunligi 16 sm va 12 sm parallel vatarlar markazning bir tomonida joylashgan. Ular orasidagi masofa necha santimetr?",
+      "v": [
+        "14 sm",
+        "4 sm",
+        "28 sm",
+        "2 sm"
+      ],
+      "t": 3,
+      "izoh": "16 sm li vatar markazdan 6 sm, 12 sm li vatar esa 8 sm uzoqlikda. Ikkalasi bir tomonda bo'lgani uchun masofa 8 − 6 = 2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='166' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='74' y1='95' x2='226' y2='95' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='93' y1='76' x2='207' y2='76' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='66' y='99' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='234' y='99' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='85' y='80' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='215' y='80' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='150' y='112' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='150' y='68' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Cline x1='121.5' y1='95' x2='121.5' y2='76' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='115.5' y='89.5' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-vatarlar",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#3d7027ac"
+    },
+    {
+      "q": "Sirk maydoni chetiga o'rnatilgan A va B ustunlar diametr uchlarida bo'lib, ular orasi 26 m. Aylanadagi uchinchi C ustun A dan 10 m uzoqlikda. C va B orasidagi masofa necha metr?",
+      "v": [
+        "16 m",
+        "24 m",
+        "12 m",
+        "36 m"
+      ],
+      "t": 1,
+      "izoh": "∠ACB diametrga tiralgan burchak, ya'ni 90°. Shuning uchun CB = √(26² − 10²) = √576 = 24 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='158' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='158' x2='245' y2='158' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='158' x2='83.1' y2='90.5' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='158' x2='83.1' y2='90.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='79.3,99.8 88.5,103.6 92.3,94.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='158' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='150' y='175' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='47' y='163' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='163' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='83.1' y='81.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='192' font-size='13' fill='%23334155' text-anchor='middle'%3E26 m%3C/text%3E%3Ctext x='62.1' y='120.3' font-size='13' fill='%23334155' text-anchor='end'%3E10 m%3C/text%3E%3Ctext x='171.1' y='120.3' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diametrga-tiralgan-burchak",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#3f644fb1"
+    },
+    {
+      "q": "Tashqi nuqtadan aylanaga o'tkazilgan urinma kesmasi 24 sm, aylananing radiusi esa 7 sm. Shu nuqtadan aylananing eng yaqin nuqtasigacha masofa necha santimetr?",
+      "v": [
+        "25 sm",
+        "31 sm",
+        "18 sm",
+        "17 sm"
+      ],
+      "t": 2,
+      "izoh": "Markazgacha masofa √(24² + 7²) = √625 = 25 sm. Aylanagacha eng qisqa masofa markazgacha masofadan radiusni ayirish bilan topiladi: 25 − 7 = 18 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='85.6' cy='155' r='51.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='85.6' y1='155' x2='270' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='85.6' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='270' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='85.6' y1='155' x2='100.1' y2='105.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='100.1' y2='105.4' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='97.6,114.1 106.2,116.6 108.7,108' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='98.1' y='96.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='78.6' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='189' y='123.2' font-size='13' fill='%23334155' text-anchor='start'%3E24 sm%3C/text%3E%3Ctext x='88.9' y='125.2' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3Ccircle cx='137.2' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='137.2' y='147' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='203.6' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-kesmasi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#582069f8"
+    },
+    {
+      "q": "Doira shaklidagi ko'lning radiusi 15 m. Qirg'oqdan tashqarida turgan Zulfiya ko'l chetiga urinib o'tuvchi 20 m uzunlikdagi ipni tortdi. Zulfiya ko'l markazidan necha metr uzoqlikda?",
+      "v": [
+        "35 m",
+        "5 m",
+        "30 m",
+        "25 m"
+      ],
+      "t": 3,
+      "izoh": "Urinish nuqtasida radius ipga perpendikulyar bo'ladi. Markazgacha masofa √(15² + 20²) = √625 = 25 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='122' cy='155' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='122' y1='155' x2='268.7' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='122' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='268.7' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='122' y1='155' x2='174.8' y2='84.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='268.7' y1='155' x2='174.8' y2='84.6' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='169.4,91.8 176.6,97.2 182,90' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='172.8' y='75.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='115' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='276.7' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='225.7' y='112.8' font-size='13' fill='%23334155' text-anchor='start'%3E20 m%3C/text%3E%3Ctext x='144.4' y='114.8' font-size='13' fill='%23334155' text-anchor='end'%3E15 m%3C/text%3E%3Ctext x='195.3' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-masofa-radius",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#cf9275a3"
+    },
+    {
+      "q": "P tashqi nuqtadan aylanaga ikkita urinma o'tkazilgan; aylananing radiusi 5 sm, urinma kesmasi esa 12 sm. PAOB to'rtburchakning perimetri necha santimetr?",
+      "v": [
+        "17 sm",
+        "34 sm",
+        "24 sm",
+        "26 sm"
+      ],
+      "t": 1,
+      "izoh": "Urinma kesmalari teng bo'lgani uchun PA = PB = 12 sm, radiuslar esa OA = OB = 5 sm. Perimetr 2 · 12 + 2 · 5 = 34 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='99.6' cy='155' r='65.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='99.6' y1='155' x2='270' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='99.6' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='270' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='99.6' y1='155' x2='124.8' y2='94.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='124.8' y2='94.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='121.3,102.8 129.6,106.3 133.1,97.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='122.8' y='85.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Cline x1='99.6' y1='155' x2='124.8' y2='215.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='124.8' y2='215.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='121.3,207.2 129.6,203.7 133.1,212.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='122.8' y='232.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='92.6' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='201.4' y='117.7' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='108.2' y='119.7' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-urinma-tenglik",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#b885be0d"
+    },
+    {
+      "q": "PA va PB urinmalar bitta P nuqtadan chiqqan va ∠APB = 90°. Aylananing radiusi 23 sm bo'lsa, PA kesmasi necha santimetr?",
+      "v": [
+        "46 sm",
+        "23√2 sm",
+        "23 sm",
+        "11,5 sm"
+      ],
+      "t": 2,
+      "izoh": "PAOB to'rtburchakning A va B dagi burchaklari 90°, P dagi burchak ham 90°, demak O dagi burchak ham to'g'ri va bu to'g'ri to'rtburchak. OA = OB = R bo'lgani uchun qo'shni tomonlar teng, ya'ni u kvadrat. Kvadratda PA = OA = 23 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='122' cy='155' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='122' y1='155' x2='246.5' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='122' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='246.5' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='122' y1='155' x2='184.2' y2='92.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='246.5' y1='155' x2='184.2' y2='92.8' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='177.9,99.1 184.2,105.5 190.6,99.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='182.2' y='83.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Cline x1='122' y1='155' x2='184.2' y2='217.2' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='246.5' y1='155' x2='184.2' y2='217.2' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='177.9,210.9 184.2,204.5 190.6,210.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='182.2' y='234.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='115' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='254.5' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='219.3' y='116.9' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='149.1' y='118.9' font-size='13' fill='%23334155' text-anchor='end'%3E23 sm%3C/text%3E%3Cpolyline points='228.1,136.6 226.5,138.3 225.2,140.1 223.9,142 222.9,144 222,146.1 221.3,148.3 220.8,150.5 220.5,152.7 220.5,155 220.5,157.3 220.8,159.5 221.3,161.7 222,163.9 222.9,166 223.9,168 225.2,169.9 226.5,171.7 228.1,173.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='212.5' y='160' font-size='13' fill='%23334155' text-anchor='end'%3E90°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinmalar-burchagi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#9c57d0de"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakka ichki chizilgan aylana katetlarga to'g'ri burchak uchidan 3 sm uzoqlikda urinadi. Gipotenuza 17 sm bo'lsa, uchburchakning perimetri necha santimetr?",
+      "v": [
+        "40 sm",
+        "23 sm",
+        "34 sm",
+        "46 sm"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri burchak uchidan urinish nuqtasigacha masofa ichki aylana radiusiga teng, ya'ni r = 3 sm. r = (a + b − c) : 2 dan a + b = 17 + 6 = 23 sm, perimetr esa 23 + 17 = 40 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='62,248 258,248 62,143.5 62,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='101.2' cy='208.8' r='39.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='73,248 73,237 62,237' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='54' y='254' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='266' y='254' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='58' y='135.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='168' y='189.7' font-size='13' fill='%23334155' text-anchor='start'%3E17 sm%3C/text%3E%3Cline x1='101.2' y1='208.8' x2='101.2' y2='248' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='106.2' y='222.8' font-size='13' fill='%23334155' text-anchor='start'%3E3 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-aylana-urinish",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#e8dc76a3"
+    },
+    {
+      "q": "Ichiga aylana chizilgan trapetsiya shaklidagi oynaning asoslari 8 sm va 18 sm. Oynaning perimetri necha santimetr?",
+      "v": [
+        "26 sm",
+        "52 sm",
+        "34 sm",
+        "44 sm"
+      ],
+      "t": 1,
+      "izoh": "Ichiga aylana chizilgan trapetsiyada yon tomonlar yig'indisi asoslar yig'indisiga teng, ya'ni 8 + 18 = 26 sm. Perimetr 26 + 26 = 52 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='44,235 256,235 197.1,93.7 102.9,93.7 44,235' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='164.3' r='70.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='36' y='240' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='264' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='205.1' y='89.7' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='94.9' y='89.7' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='150' y='84.7' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='150' y='282' font-size='14' fill='%23334155' text-anchor='middle'%3EP = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-tortburchak",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#67418c06"
+    },
+    {
+      "q": "Doira shaklidagi maydonda ikkita to'g'ri chiziq kesishadi. Birinchi chiziq kesishish nuqtasidan ikki tomonga 3 m va 20 m ga cho'zilgan, ikkinchisining bir tomoni esa 5 m. Ikkinchi chiziqning to'liq uzunligi necha metr?",
+      "v": [
+        "12 m",
+        "23 m",
+        "17 m",
+        "15 m"
+      ],
+      "t": 2,
+      "izoh": "3 · 20 = 5 · x tenglikdan x = 60 : 5 = 12 m. Ikkinchi chiziqning to'liq uzunligi 5 + 12 = 17 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='162.9' y1='242.1' x2='63.8' y2='108.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='115.8' y1='236.6' x2='232.1' y2='195.9' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='224.6' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='239.6' font-size='13' fill='%23334155' text-anchor='start'%3EE%3C/text%3E%3Ctext x='175.1' y='263.8' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='51.6' y='93.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='99.5' y='252.6' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='248.4' y='203.9' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='165.8' y='231.5' font-size='13' fill='%23334155' text-anchor='start'%3E3 m%3C/text%3E%3Ctext x='84.4' y='140.4' font-size='13' fill='%23334155' text-anchor='end'%3E20 m%3C/text%3E%3Ctext x='119.8' y='227.8' font-size='13' fill='%23334155' text-anchor='end'%3E5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishuvchi-vatarlar",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#1e18f831"
+    },
+    {
+      "q": "AB va CD vatarlar M nuqtada kesishadi va M nuqta AB vatarining o'rtasi. CM = 7 sm hamda MD = 63 sm bo'lsa, AB vatarining uzunligi necha santimetr?",
+      "v": [
+        "42 sm",
+        "21 sm",
+        "63 sm",
+        "35 sm"
+      ],
+      "t": 0,
+      "izoh": "AM = MB = x bo'lgani uchun x² = 7 · 63 = 441, ya'ni x = 21 sm. Butun AB vatari 2 · 21 = 42 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='200' y1='228.8' x2='100' y2='228.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='140.6' y1='242.5' x2='234.7' y2='105' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='228.8' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='243.8' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='217' y='240.8' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='83' y='240.8' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='128.8' y='264.4' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='246.5' y='90.1' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='136.6' y='233.1' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3Ctext x='214.6' y='139.6' font-size='13' fill='%23334155' text-anchor='start'%3E63 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vatar-tenglama",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#f558b2d1"
+    },
+    {
+      "q": "Radiusi 25 sm aylanada markazdan 24 sm uzoqlikdagi nuqta olingan. Shu nuqtadan o'tuvchi eng qisqa vatarning uzunligi necha santimetr?",
+      "v": [
+        "7 sm",
+        "50 sm",
+        "20 sm",
+        "14 sm"
+      ],
+      "t": 3,
+      "izoh": "Eng qisqa vatar markazdan berilgan nuqtaga o'tkazilgan radiusga perpendikulyar bo'ladi. Uning yarmi √(25² − 24²) = 7 sm, demak vatar 14 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='224.2' y1='125.4' x2='224.2' y2='178.6' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='133' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='125' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='133' y1='152' x2='224.2' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='214.2,152 214.2,142 224.2,142' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='231.2' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EH%3C/text%3E%3Ctext x='178.6' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Cline x1='133' y1='152' x2='224.2' y2='125.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='173.6' y='133.7' font-size='13' fill='%23334155' text-anchor='end'%3E25 sm%3C/text%3E%3Ctext x='224.2' y='116.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='224.2' y='195.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='233.2' y='138.7' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqta-quvvati",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#56d5fe3d"
+    },
+    {
+      "q": "Tashqi nuqtadan o'tkazilgan kesuvchining aylana ichidagi vatari 21 sm, tashqi bo'lagi esa 27 sm. Shu nuqtadan chiqqan ikkinchi kesuvchining tashqi bo'lagi 18 sm bo'lsa, uning vatari necha santimetr?",
+      "v": [
+        "72 sm",
+        "48 sm",
+        "54 sm",
+        "63 sm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi kesuvchi uchun ko'paytma 27 · (27 + 21) = 1296. Ikkinchisi uchun 18 · PD = 1296 dan PD = 72 sm, vatar esa 72 − 18 = 54 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='151.2' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='151.2' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='151.2' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='151.2' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='115.7' y2='76.7' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='77.3' cy='110.9' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='115.7' cy='76.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='83.3' y='98.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='121.7' y='64.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='47.7' y='129.4' font-size='13' fill='%23334155' text-anchor='middle'%3E27 sm%3C/text%3E%3Ctext x='100.4' y='82.4' font-size='13' fill='%23334155' text-anchor='middle'%3E21 sm%3C/text%3E%3Cline x1='28' y1='155' x2='185.9' y2='233.7' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='67.5' cy='174.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='185.9' cy='233.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='74.6' y='194.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='193' y='253.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='43.8' y='177.9' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='138.5' y='225.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-kesuvchi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#08e8e8cb"
+    },
+    {
+      "q": "Tashqi nuqtadan ikkita kesuvchi o'tkazilgan. Birinchisining tashqi bo'lagi 4 sm, to'liq uzunligi 25 sm. Ikkinchi kesuvchining vatari tashqi bo'lagidan uch marta uzun bo'lsa, uning to'liq uzunligi necha santimetr?",
+      "v": [
+        "20 sm",
+        "5 sm",
+        "15 sm",
+        "25 sm"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytma 4 · 25 = 100. Ikkinchisida tashqi bo'lak x, vatar 3x, to'liq uzunlik 4x bo'ladi. x · 4x = 100 dan x² = 25, x = 5 va to'liq uzunlik 20 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='134.6' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='134.6' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='134.6' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='134.6' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='163' y2='73.8' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='49.6' cy='142' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='163' cy='73.8' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='56.5' y='130.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='169.8' y='62.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='36.6' y='141.8' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Cline x1='28' y1='155' x2='121.1' y2='239.9' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='51.3' cy='176.2' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='121.1' cy='239.9' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='57.2' y='197.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='127' y='261.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesuvchi-tenglama",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#01e3d189"
+    },
+    {
+      "q": "Doira shaklidagi maydonning radiusi 12 m. Tashqi P nuqtadan o'tgan yo'l maydon chetini P dan 8 m va 18 m masofalarda kesadi. P nuqta maydon markazidan necha metr uzoqlikda?",
+      "v": [
+        "12 m",
+        "24 m",
+        "18 m",
+        "12√2 m"
+      ],
+      "t": 3,
+      "izoh": "Quvvat 8 · 18 = 144, shuning uchun OP² = 144 + 144 = 288. Bundan OP = √288 = 12√2 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='149.6' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='149.6' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='149.6' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='149.6' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='126.8' y2='72.1' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='71.9' cy='118.1' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='126.8' cy='72.1' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='78' y='106' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='132.9' y='59.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='45.6' y='132.3' font-size='13' fill='%23334155' text-anchor='middle'%3E8 m%3C/text%3E%3Cline x1='149.6' y1='155' x2='235.6' y2='155' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='192.6' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='88.8' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesuvchi-markaz",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#2f500deb"
+    },
+    {
+      "q": "Urinma kesmasi 26 sm, shu nuqtadan o'tkazilgan kesuvchining tashqi bo'lagi esa 13 sm. Kesuvchining aylana ichidagi vatari necha santimetr?",
+      "v": [
+        "52 sm",
+        "39 sm",
+        "26 sm",
+        "65 sm"
+      ],
+      "t": 1,
+      "izoh": "676 = 13 · PB tenglikdan PB = 52 sm. Aylana ichidagi vatar PB − PA = 52 − 13 = 39 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='151.2' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='151.2' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='151.2' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='151.2' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='91.2' y2='93.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='151.2' y1='155' x2='91.2' y2='93.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='84.7,99.7 91,106.2 97.4,99.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='91.2' y='84.4' font-size='13' fill='%23334155' text-anchor='middle'%3ET%3C/text%3E%3Ctext x='59.6' y='116.2' font-size='13' fill='%23334155' text-anchor='middle'%3E26 sm%3C/text%3E%3Cline x1='28' y1='155' x2='185.9' y2='233.7' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='67.5' cy='174.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='185.9' cy='233.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='74.6' y='194.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='193' y='253.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='43.8' y='177.9' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3Ctext x='138.5' y='225.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-kesuvchi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#f939241f"
+    },
+    {
+      "q": "Tashqi nuqtadan o'tkazilgan urinma kesmasi kesuvchining tashqi bo'lagidan 17 sm uzun, kesuvchining to'liq uzunligi esa 68 sm. Urinma kesmasining uzunligi necha santimetr?",
+      "v": [
+        "34 sm",
+        "17 sm",
+        "51 sm",
+        "68 sm"
+      ],
+      "t": 0,
+      "izoh": "Tashqi bo'lak x bo'lsa, (x + 17)² = 68x bo'ladi. Bundan x² − 34x + 289 = 0, ya'ni (x − 17)² = 0 va x = 17. Urinma kesmasi 17 + 17 = 34 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-kesuvchi-tenglama",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#9e82dad4"
+    },
+    {
+      "q": "Tashqi nuqtadan aylanaga urinma va markazdan o'tuvchi kesuvchi o'tkazilgan. Kesuvchining tashqi bo'lagi 8 sm, aylananing radiusi esa 12 sm. Urinma kesmasi necha santimetr?",
+      "v": [
+        "8 sm",
+        "20 sm",
+        "24 sm",
+        "16 sm"
+      ],
+      "t": 3,
+      "izoh": "Kesuvchi bo'laklari 8 sm va 8 + 2 · 12 = 32 sm. PT² = 8 · 32 = 256, demak PT = 16 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='122' cy='155' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='122' y1='155' x2='268.7' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='122' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='268.7' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='122' y1='155' x2='174.8' y2='84.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='268.7' y1='155' x2='174.8' y2='84.6' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='169.4,91.8 176.6,97.2 182,90' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='172.8' y='75.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='115' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='276.7' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='225.7' y='112.8' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='144.4' y='114.8' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-markaz-radius",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#cb7f3538"
+    },
+    {
+      "q": "Silindr shaklidagi rezervuar kesimida suvning eng chuqur joyi 2 m, suv sathining kengligi esa 8 m. Rezervuarning radiusi necha metr?",
+      "v": [
+        "4 m",
+        "5 m",
+        "10 m",
+        "6 m"
+      ],
+      "t": 1,
+      "izoh": "Suv sathi vatar, chuqurlik esa strelka bo'ladi. R² = 4² + (R − 2)² dan 4R = 16 + 4, ya'ni R = 5 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M62,216 A110,110 0 0 0 238,216 Z' fill='%23dbeafe' stroke='none'/%3E%3Ccircle cx='150' cy='150' r='110' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='62' y1='216' x2='238' y2='216' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='150' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='142' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='150' y1='216' x2='150' y2='260' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='158,216 158,224 150,224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='158' y='246' font-size='13' fill='%23334155' text-anchor='start'%3E2 m%3C/text%3E%3Cline x1='150' y1='150' x2='62' y2='216' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='104' y='176' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='54' y='212' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='246' y='212' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='208' font-size='13' fill='%23334155' text-anchor='middle'%3E8 m%3C/text%3E%3Ctext x='150' y='277' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kamar-strelka",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#306421fb"
+    },
+    {
+      "q": "Urinma kesmasi 9 sm, urinish nuqtasidagi radius bilan markazgacha kesma orasidagi burchak esa 60°. Aylananing radiusi necha santimetr?",
+      "v": [
+        "9√3 sm",
+        "4,5 sm",
+        "3√3 sm",
+        "3 sm"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri burchakli OAP uchburchakda O uchidagi burchak 60°, demak tg60° = AP : OA. Bundan OA = 9 : √3 = 3√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='112.7' cy='155' r='78.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='112.7' y1='155' x2='270' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='112.7' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='270' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='112.7' y1='155' x2='152' y2='86.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='152' y2='86.9' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='147.5,94.7 155.3,99.2 159.8,91.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='77.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='105.7' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='215' y='113.9' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3Ctext x='128.3' y='115.9' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-burchak",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#8ac6dd27"
+    },
+    {
+      "q": "Aylananing radiusi 37 sm, unga o'tkazilgan AB vatarining markazdan uzoqligi 12 sm. AB vatari necha santimetrga teng?",
+      "v": [
+        "35 sm",
+        "25 sm",
+        "74 sm",
+        "70 sm"
+      ],
+      "t": 3,
+      "izoh": "OH ⊥ AB bo'lsa, AH = √(OA² − OH²) = √(1369 − 144) = √1225 = 35 sm. Perpendikulyar vatarni teng ikkiga bo'lgani uchun AB = 2 · 35 = 70 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='163.8' y1='62.1' x2='163.8' y2='241.9' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='133' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='125' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='133' y1='152' x2='163.8' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='153.8,152 153.8,142 163.8,142' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='170.8' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EH%3C/text%3E%3Ctext x='148.4' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Cline x1='133' y1='152' x2='163.8' y2='62.1' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='143.4' y='102.1' font-size='13' fill='%23334155' text-anchor='end'%3E37 sm%3C/text%3E%3Ctext x='163.8' y='53.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='163.8' y='258.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='172.8' y='107.1' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vatar-uzunlik",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#30136cb7"
+    },
+    {
+      "q": "Aylananing diametri 40 sm, unga o'tkazilgan vatar esa diametrning yarmiga teng. Vatarning markazdan uzoqligi necha santimetr?",
+      "v": [
+        "10 sm",
+        "10√3 sm",
+        "5√3 sm",
+        "20 sm"
+      ],
+      "t": 1,
+      "izoh": "Radius 20 sm, vatar 20 sm, uning yarmi 10 sm. Masofa √(20² − 10²) = √300 = 10√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='215.3' y1='104.5' x2='215.3' y2='199.5' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='133' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='125' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='133' y1='152' x2='215.3' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='205.3,152 205.3,142 215.3,142' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='222.3' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EH%3C/text%3E%3Ctext x='174.1' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cline x1='133' y1='152' x2='215.3' y2='104.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='169.1' y='123.3' font-size='13' fill='%23334155' text-anchor='end'%3E20 sm%3C/text%3E%3Ctext x='215.3' y='95.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='215.3' y='216.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='224.3' y='128.3' font-size='13' fill='%23334155' text-anchor='start'%3E20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markazgacha-masofa",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#8eefeedb"
+    },
+    {
+      "q": "Aylanada uzunligi 24 sm vatar o'tkazilgan; uning markazdan uzoqligi radiusning yarmiga teng. Aylananing radiusi necha santimetr?",
+      "v": [
+        "4√3 sm",
+        "16√3 sm",
+        "8√3 sm",
+        "12 sm"
+      ],
+      "t": 2,
+      "izoh": "Radius R bo'lsa, markazgacha masofa R/2 bo'ladi. Shunda 12² + (R/2)² = R², ya'ni 144 = (3/4)R². Bundan R² = 192 va R = 8√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='133' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='180.5' y1='69.7' x2='180.5' y2='234.3' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='133' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='125' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Cline x1='133' y1='152' x2='180.5' y2='152' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='170.5,152 170.5,142 180.5,142' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='187.5' y='169' font-size='13' fill='%23334155' text-anchor='start'%3EH%3C/text%3E%3Ctext x='156.8' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3ER/2%3C/text%3E%3Cline x1='133' y1='152' x2='180.5' y2='69.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='151.8' y='105.9' font-size='13' fill='%23334155' text-anchor='end'%3ER%3C/text%3E%3Ctext x='180.5' y='60.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='180.5' y='251.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='189.5' y='110.9' font-size='13' fill='%23334155' text-anchor='start'%3E24 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vatardan-radius",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#8864c42d"
+    },
+    {
+      "q": "Radiusi 40 sm aylanada AB diametr, M esa AB ustidagi nuqta. M dan chiqarilgan perpendikulyar vatarning yarmi 32 sm bo'lsa, AM bo'lagining kichik qiymati necha santimetr?",
+      "v": [
+        "16 sm",
+        "64 sm",
+        "32 sm",
+        "24 sm"
+      ],
+      "t": 0,
+      "izoh": "AM · MB = 32² = 1024 va AM + MB = 2 · 40 = 80. Bu ikki shartni 16 va 64 sonlari qanoatlantiradi, chunki 16 · 64 = 1024. Kichik bo'lak 16 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='226' y1='205' x2='74' y2='205' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='243' x2='150' y2='53' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='205' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='220' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='243' y='217' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='57' y='217' font-size='13' fill='%23334155' text-anchor='end'%3EL%3C/text%3E%3Ctext x='145' y='267' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='145' y='36' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='208.7' y='200' font-size='13' fill='%23334155' text-anchor='start'%3E32 sm%3C/text%3E%3Ctext x='143' y='225.8' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perpendikulyar-diametr",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#bfbd9082"
+    },
+    {
+      "q": "Radiusi 15 m bo'lgan aylana shaklidagi maydonda uzunligi 24 m va 18 m ikkita to'g'ri yo'lak vatar bo'lib o'tgan. Ularning markazdan uzoqliklari ayirmasi necha metr?",
+      "v": [
+        "6 m",
+        "3 m",
+        "21 m",
+        "2 m"
+      ],
+      "t": 1,
+      "izoh": "Birinchi yo'lak markazdan √(225 − 144) = 9 m, ikkinchisi esa √(225 − 81) = 12 m uzoqlikda. Ayirma 12 − 9 = 3 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='166' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='74' y1='95' x2='226' y2='95' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='93' y1='228' x2='207' y2='228' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='66' y='99' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='234' y='99' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='85' y='232' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='215' y='232' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='150' y='87' font-size='13' fill='%23334155' text-anchor='middle'%3E24 m%3C/text%3E%3Ctext x='150' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3E18 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-vatarlar",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#a7b5dd0b"
+    },
+    {
+      "q": "Gumbaz kesimida uzunligi 32 m va 24 m bo'lgan parallel ikkita balka markazning bir tomonida joylashgan, ular orasidagi masofa 4 m. Gumbaz aylanasining radiusi necha metr?",
+      "v": [
+        "16 m",
+        "24 m",
+        "20 m",
+        "40 m"
+      ],
+      "t": 2,
+      "izoh": "Balkalarning markazdan uzoqliklari √(R² − 256) va √(R² − 144), ularning ayirmasi 4 ga teng. R = 20 da bu masofalar 12 m va 16 m bo'lib, farq aynan 4 m chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='152' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='152' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='166' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='74' y1='95' x2='226' y2='95' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='93' y1='76' x2='207' y2='76' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='66' y='99' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='234' y='99' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='85' y='80' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='215' y='80' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='150' y='112' font-size='13' fill='%23334155' text-anchor='middle'%3E32 m%3C/text%3E%3Ctext x='150' y='68' font-size='13' fill='%23334155' text-anchor='middle'%3E24 m%3C/text%3E%3Cline x1='121.5' y1='95' x2='121.5' y2='76' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='115.5' y='89.5' font-size='13' fill='%23334155' text-anchor='end'%3E4 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallel-vatarlar",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#9711750b"
+    },
+    {
+      "q": "Aylanada AB diametr, C nuqta esa aylanada yotadi. AC = 9 sm va BC = 12 sm bo'lsa, C dan AB ga tushirilgan perpendikulyarning uzunligi necha santimetr?",
+      "v": [
+        "7,2 sm",
+        "10,5 sm",
+        "6 sm",
+        "7,5 sm"
+      ],
+      "t": 0,
+      "izoh": "∠ACB = 90°, shuning uchun AB = √(81 + 144) = 15 sm. Gipotenuzaga tushirilgan balandlik katetlar ko'paytmasini gipotenuzaga bo'lish bilan topiladi: 9 · 12 : 15 = 7,2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='158' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='158' x2='245' y2='158' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='55' y1='158' x2='123.4' y2='66.8' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='245' y1='158' x2='123.4' y2='66.8' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='117.4,74.8 125.4,80.8 131.4,72.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='158' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='150' y='175' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='47' y='163' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='163' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='123.4' y='57.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='82.2' y='108.4' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='191.2' y='108.4' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Cline x1='123.4' y1='66.8' x2='123.4' y2='158' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='128.4' y='112.4' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diametrga-tiralgan-burchak",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#d78b3f50"
+    },
+    {
+      "q": "Doira shaklidagi bog'ning radiusi 20 m, darvoza esa bog' markazidan 29 m uzoqlikda joylashgan. Darvozadan bog' chetiga urinma yo'lak solinsa, uning uzunligi necha metr bo'ladi?",
+      "v": [
+        "9 m",
+        "49 m",
+        "24 m",
+        "21 m"
+      ],
+      "t": 3,
+      "izoh": "Urinma va urinish nuqtasidagi radius perpendikulyar. Demak yo'lak uzunligi √(29² − 20²) = √441 = 21 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='122' cy='155' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='122' y1='155' x2='249.6' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='122' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='249.6' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='122' y1='155' x2='182.7' y2='91.3' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='249.6' y1='155' x2='182.7' y2='91.3' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='176.5,97.8 183,104 189.2,97.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='180.7' y='82.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='115' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='257.6' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='220.1' y='116.1' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='148.3' y='118.1' font-size='13' fill='%23334155' text-anchor='end'%3E20 m%3C/text%3E%3Ctext x='185.8' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E29 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-kesmasi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#3a0b18a8"
+    },
+    {
+      "q": "Tashqi nuqtadan aylanagacha eng qisqa masofa 8 sm, shu nuqtadan o'tkazilgan urinma kesmasi esa 24 sm. Aylananing radiusi necha santimetr?",
+      "v": [
+        "16 sm",
+        "40 sm",
+        "32 sm",
+        "24 sm"
+      ],
+      "t": 2,
+      "izoh": "Eng qisqa masofa markazgacha masofadan radiusni ayirish bilan topilgani uchun OP = R + 8. Shunda (R + 8)² = R² + 24², ya'ni 16R + 64 = 576 va R = 32 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='122' cy='155' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='122' y1='155' x2='232' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='122' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='232' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='122' y1='155' x2='192.4' y2='102.2' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='232' y1='155' x2='192.4' y2='102.2' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='185.2,107.6 190.6,114.8 197.8,109.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='190.4' y='93.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='115' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='240' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='216.2' y='121.6' font-size='13' fill='%23334155' text-anchor='start'%3E24 sm%3C/text%3E%3Ctext x='153.2' y='123.6' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-masofa-radius",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#d7b0f6f2"
+    },
+    {
+      "q": "Favvora atrofidagi aylanaga bitta nuqtadan ikkita urinma yo'lak chiqadi; har biri urinish nuqtasigacha 18 m, urinish nuqtalari orasidagi to'g'ri masofa ham 18 m. Yo'laklar orasidagi burchak necha gradus?",
+      "v": [
+        "60°",
+        "90°",
+        "30°",
+        "120°"
+      ],
+      "t": 0,
+      "izoh": "Urinma kesmalari teng va ular AB ga ham teng bo'lgani uchun uchburchak teng tomonli. Teng tomonli uchburchakda har bir burchak 60° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='112.7' cy='155' r='78.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='112.7' y1='155' x2='270' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='112.7' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='270' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='112.7' y1='155' x2='152' y2='86.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='152' y2='86.9' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='147.5,94.7 155.3,99.2 159.8,91.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='77.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Cline x1='112.7' y1='155' x2='152' y2='223.1' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='152' y2='223.1' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='147.5,215.3 155.3,210.8 159.8,218.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='240.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Cline x1='152' y1='86.9' x2='152' y2='223.1' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='105.7' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='215' y='113.9' font-size='13' fill='%23334155' text-anchor='start'%3E18 m%3C/text%3E%3Ctext x='143' y='155' font-size='13' fill='%23334155' text-anchor='end'%3E18 m%3C/text%3E%3Cpolyline points='247.5,142 246.8,143.3 246.1,144.7 245.6,146.1 245.1,147.5 244.7,149 244.4,150.5 244.2,152 244,153.5 244,155 244,156.5 244.2,158 244.4,159.5 244.7,161 245.1,162.5 245.6,163.9 246.1,165.3 246.8,166.7 247.5,168' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='236' y='160' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-urinma-tenglik",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#2a38a7f1"
+    },
+    {
+      "q": "Aylananing radiusi 19 sm, tashqi nuqtadan chiqqan ikki urinma orasidagi burchak esa 60°. Shu nuqtadan aylana markazigacha masofa necha santimetr?",
+      "v": [
+        "19√3 sm",
+        "(38√3)/3 sm",
+        "57 sm",
+        "38 sm"
+      ],
+      "t": 3,
+      "izoh": "OP kesma urinmalar burchagini teng ikkiga bo'ladi, demak ∠OPA = 30°. To'g'ri burchakli OAP uchburchakda sin30° = OA : OP, ya'ni OP = 19 : 0,5 = 38 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='112.7' cy='155' r='78.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='112.7' y1='155' x2='270' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='112.7' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='270' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='112.7' y1='155' x2='152' y2='86.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='152' y2='86.9' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='147.5,94.7 155.3,99.2 159.8,91.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='77.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Cline x1='112.7' y1='155' x2='152' y2='223.1' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='152' y2='223.1' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='147.5,215.3 155.3,210.8 159.8,218.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='240.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='105.7' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='128.3' y='115.9' font-size='13' fill='%23334155' text-anchor='end'%3E19 sm%3C/text%3E%3Ctext x='191.3' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='247.5,142 246.8,143.3 246.1,144.7 245.6,146.1 245.1,147.5 244.7,149 244.4,150.5 244.2,152 244,153.5 244,155 244,156.5 244.2,158 244.4,159.5 244.7,161 245.1,162.5 245.6,163.9 246.1,165.3 246.8,166.7 247.5,168' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='236' y='160' font-size='13' fill='%23334155' text-anchor='end'%3E60°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinmalar-burchagi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#cc371ad3"
+    },
+    {
+      "q": "Radiusi 4 sm bo'lgan aylana to'g'ri burchakli uchburchakka ichki chizilgan, uchburchakning gipotenuzasi esa 20 sm. Uchburchakning perimetri necha santimetr?",
+      "v": [
+        "28 sm",
+        "48 sm",
+        "56 sm",
+        "40 sm"
+      ],
+      "t": 1,
+      "izoh": "Bir nuqtadan chiqqan urinma kesmalari teng. To'g'ri burchak uchidan urinish nuqtalarigacha masofa r = 4 sm bo'lgani uchun a + b = c + 2r = 20 + 8 = 28 sm. Perimetr esa 28 + 20 = 48 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='62,248 258,248 62,101 62,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='111' cy='199' r='49' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='73,248 73,237 62,237' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='54' y='254' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='266' y='254' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='58' y='93' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='168' y='168.5' font-size='13' fill='%23334155' text-anchor='start'%3E20 sm%3C/text%3E%3Cline x1='111' y1='199' x2='111' y2='248' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='116' y='213' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3Ctext x='150' y='282' font-size='14' fill='%23334155' text-anchor='middle'%3EP = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-aylana-urinish",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#b9d47bf2"
+    },
+    {
+      "q": "Ichiga aylana chizilgan to'rtburchakning perimetri 80 sm, ketma-ket uchta tomoni esa 13 sm, 21 sm va 27 sm. To'rtinchi tomon necha santimetr?",
+      "v": [
+        "19 sm",
+        "40 sm",
+        "27 sm",
+        "26 sm"
+      ],
+      "t": 0,
+      "izoh": "To'rtinchi tomon perimetrdan qolgan qismga teng: 80 − 13 − 21 − 27 = 19 sm. Bu qarama-qarshi tomonlar shartiga mos, chunki 13 + 27 = 21 + 19 = 40 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-tortburchak",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#6b4b542d"
+    },
+    {
+      "q": "Aylananing ikki vatari K nuqtada kesishgan. Birinchi vatarning bo'laklari 20 sm va 45 sm, ikkinchi vatar esa K nuqta bilan teng ikkiga bo'lingan. Ikkinchi vatarning uzunligi necha santimetr?",
+      "v": [
+        "30 sm",
+        "65 sm",
+        "90 sm",
+        "60 sm"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi vatarning bo'laklari teng, ularni x deb olsak x² = 20 · 45 = 900. Demak x = 30 sm, butun vatar esa 60 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='192' y1='233.2' x2='55.6' y2='137.4' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='73.1' y1='203.7' x2='226.9' y2='203.7' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='203.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='218.7' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='206.8' y='252.1' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='40.8' y='125.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='56.1' y='215.7' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='243.9' y='215.7' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='185.5' y='218.8' font-size='13' fill='%23334155' text-anchor='start'%3E20 sm%3C/text%3E%3Ctext x='78.8' y='153.6' font-size='13' fill='%23334155' text-anchor='end'%3E45 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishuvchi-vatarlar",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#f9a3486d"
+    },
+    {
+      "q": "Aylananing ikki vatari kesishgan nuqtada birinchi vatarning bo'laklari 1 : 4 nisbatda, ikkinchi vatarning bo'laklari esa 6 sm dan. Birinchi vatarning uzunligi necha santimetr?",
+      "v": [
+        "12 sm",
+        "15 sm",
+        "9 sm",
+        "18 sm"
+      ],
+      "t": 1,
+      "izoh": "Bo'laklarni x va 4x deb olsak, x · 4x = 6 · 6 = 36 bo'ladi. Bundan x² = 9 va x = 3 sm. Vatar uzunligi 3 + 12 = 15 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='172.5' y1='240.3' x2='60.1' y2='117.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='83.3' y1='215.7' x2='216.7' y2='215.7' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='215.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='230.7' font-size='13' fill='%23334155' text-anchor='start'%3EE%3C/text%3E%3Ctext x='185.6' y='261.2' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='47.1' y='103.3' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='66.3' y='227.7' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='233.7' y='227.7' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='97.7' y='210.7' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Ctext x='202.3' y='210.7' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vatar-tenglama",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#842581fc"
+    },
+    {
+      "q": "Aylana markazidan 6 sm uzoqlikdagi P nuqtadan o'tuvchi vatar P bilan 4 sm va 9 sm bo'laklarga bo'lingan. Aylananing radiusi necha santimetr?",
+      "v": [
+        "6,5 sm",
+        "6 sm",
+        "6√2 sm",
+        "13 sm"
+      ],
+      "t": 2,
+      "izoh": "P nuqtadan o'tuvchi diametr bo'laklari R − 6 va R + 6 bo'ladi. (R − 6)(R + 6) = 4 · 9 dan R² − 36 = 36, ya'ni R² = 72 va R = 6√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='148' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='190.7' y1='233.8' x2='58.4' y2='173.2' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='243' x2='150' y2='53' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='215.2' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='156' y='230.2' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='206.6' y='250.8' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='42.5' y='180.2' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='145' y='267' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='155' y='36' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='184.7' y='222.9' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3Ctext x='80.7' y='181.6' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqta-quvvati",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#fb18312f"
+    },
+    {
+      "q": "Aylananing radiusi 27 sm, tashqi P nuqtadan markazgacha masofa esa 45 sm. P dan o'tkazilgan kesuvchi aylanani P ga yaqin nuqtada 24 sm masofada kesadi. Kesuvchining aylana ichidagi vatari necha santimetr?",
+      "v": [
+        "54 sm",
+        "24 sm",
+        "36 sm",
+        "30 sm"
+      ],
+      "t": 3,
+      "izoh": "P nuqtaning quvvati 45² − 27² = 1296 ga teng. Demak 24 · PD = 1296 va PD = 54 sm, vatar esa 54 − 24 = 30 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='171.3' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='171.3' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='171.3' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='171.3' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='177.1' y2='69.2' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='94.3' cy='116.9' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='177.1' cy='69.2' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='101.2' y='105.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='184' y='58.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='54.5' y='131.7' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='143.9' y='80.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='99.7' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3E45 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-kesuvchi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#ab8561da"
+    },
+    {
+      "q": "Doira shaklidagi maydon tashqarisidagi nuqtadan ikkita to'g'ri yo'l o'tgan. Birinchi yo'l maydon chetini nuqtadan 8 m va 18 m masofalarda kesadi. Ikkinchi yo'lning maydon ichidagi qismi tashqi qismidan 12 m uzun bo'lsa, uning to'liq uzunligi necha metr?",
+      "v": [
+        "6 m",
+        "24 m",
+        "18 m",
+        "12 m"
+      ],
+      "t": 1,
+      "izoh": "Birinchi yo'l uchun ko'paytma 8 · 18 = 144. Ikkinchisida tashqi qism x, ichki qism x + 12, to'liq uzunlik 2x + 12 bo'ladi. x(2x + 12) = 144 dan x² + 6x − 72 = 0 va x = 6, demak to'liq uzunlik 24 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='151.2' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='151.2' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='151.2' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='151.2' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='130.6' y2='71.5' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='73.6' cy='117.9' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='130.6' cy='71.5' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='79.8' y='105.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='136.8' y='59.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='46.2' y='132.2' font-size='13' fill='%23334155' text-anchor='middle'%3E8 m%3C/text%3E%3Ctext x='107.8' y='82.1' font-size='13' fill='%23334155' text-anchor='middle'%3E10 m%3C/text%3E%3Cline x1='28' y1='155' x2='185.9' y2='233.7' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='67.5' cy='174.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='185.9' cy='233.7' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='74.6' y='194.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='193' y='253.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesuvchi-tenglama",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#e86f6e84"
+    },
+    {
+      "q": "Radiusi 45 sm aylananing markazidan 51 sm uzoqlikdagi P nuqtadan kesuvchi o'tkazilgan va u aylanani P dan 12 sm masofada kesadi. Kesuvchining aylana ichidagi vatari necha santimetr?",
+      "v": [
+        "48 sm",
+        "12 sm",
+        "36 sm",
+        "24 sm"
+      ],
+      "t": 2,
+      "izoh": "P nuqtaning quvvati 51² − 45² = 576 ga teng. Demak 12 · PD = 576 va PD = 48 sm, vatar esa 48 − 12 = 36 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='125.5' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='125.5' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='125.5' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='125.5' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='82' y2='80.8' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='41.5' cy='136.5' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='82' cy='80.8' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='46.2' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='86.7' y='67.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='33.4' y='139.6' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='65.8' y='95.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='76.7' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3E51 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesuvchi-markaz",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#3b305770"
+    },
+    {
+      "q": "Bog' tashqarisidagi darvozadan bog'ga urinma yo'lak va bog'ni kesib o'tuvchi yo'lak solingan. Urinma yo'lak 15 m, ikkinchi yo'lak bog' chetini darvozadan 9 m masofada kesadi. Ikkinchi yo'lakning uzoq kesishuv nuqtasigacha uzunligi necha metr?",
+      "v": [
+        "25 m",
+        "16 m",
+        "15 m",
+        "45 m"
+      ],
+      "t": 0,
+      "izoh": "Urinma kesmasining kvadrati kesuvchi bo'laklari ko'paytmasiga teng: 225 = 9 · x. Bundan x = 225 : 9 = 25 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='178.9' cy='155' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='155' x2='178.9' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='28' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='178.9' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='22' y='160' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='178.9' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='28' y1='155' x2='129.9' y2='84.3' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='178.9' y1='155' x2='129.9' y2='84.3' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='122.5,89.5 127.7,96.8 135.1,91.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='129.9' y='75.3' font-size='13' fill='%23334155' text-anchor='middle'%3ET%3C/text%3E%3Ctext x='79' y='111.7' font-size='13' fill='%23334155' text-anchor='middle'%3E15 m%3C/text%3E%3Cline x1='28' y1='155' x2='220.5' y2='230.3' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='97.3' cy='182.1' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='220.5' cy='230.3' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='104.8' y='201' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='228' y='249.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='55.7' y='180.8' font-size='13' fill='%23334155' text-anchor='middle'%3E9 m%3C/text%3E%3Ctext x='171.3' y='226' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-kesuvchi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#82f22db1"
+    },
+    {
+      "q": "Tashqi nuqtadan aylanaga urinma va kesuvchi o'tkazilgan. Urinma kesmasi kesuvchining tashqi bo'lagidan ikki marta uzun, kesuvchining aylana ichidagi vatari esa 33 sm. Urinma kesmasi necha santimetr?",
+      "v": [
+        "11 sm",
+        "22 sm",
+        "44 sm",
+        "66 sm"
+      ],
+      "t": 1,
+      "izoh": "Tashqi bo'lak x bo'lsa, urinma 2x va to'liq uzunlik x + 33. (2x)² = x(x + 33) dan 4x² = x² + 33x, ya'ni 3x = 33 va x = 11. Urinma 2 · 11 = 22 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-kesuvchi-tenglama",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#292e3283"
+    },
+    {
+      "q": "Aylananing radiusi 8 sm, tashqi nuqtadan o'tkazilgan urinma kesmasi esa 15 sm. Shu nuqtadan markaz orqali o'tgan kesuvchining tashqi bo'lagi necha santimetr?",
+      "v": [
+        "17 sm",
+        "25 sm",
+        "9 sm",
+        "7 sm"
+      ],
+      "t": 2,
+      "izoh": "Markazgacha masofa √(15² + 8²) = 17 sm. Tashqi bo'lak markazgacha masofadan radiusni ayirishga teng: 17 − 8 = 9 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='109.5' cy='155' r='75.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='34' y1='155' x2='270' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='109.5' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='270' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='109.5' y1='155' x2='145.1' y2='88.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='145.1' y2='88.4' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='140.8,96.3 148.8,100.5 153,92.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='143.1' y='79.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='102.5' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='211.5' y='114.7' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3Ctext x='123.3' y='116.7' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ccircle cx='185' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='185' y='147' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='227.5' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-markaz-radius",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#558bb839"
+    },
+    {
+      "q": "Radiusi 25 sm bo'lgan aylana yoyining vatari 40 sm. Vatar bilan yoyning o'rta nuqtasi orasidagi masofa necha santimetr?",
+      "v": [
+        "10 sm",
+        "15 sm",
+        "5 sm",
+        "20 sm"
+      ],
+      "t": 0,
+      "izoh": "Markazdan vatargacha masofa √(25² − 20²) = 15 sm. Izlanayotgan masofa radiusdan shu masofani ayirish bilan topiladi: 25 − 15 = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='36,235 40.1,229.8 44.4,224.8 49,220 53.7,215.4 58.7,211.1 63.9,207 69.2,203.1 74.7,199.5 80.4,196.1 86.3,193 92.2,190.2 98.3,187.7 104.6,185.4 110.9,183.5 117.3,181.8 123.7,180.4 130.2,179.4 136.8,178.6 143.4,178.2 150,178 156.6,178.2 163.2,178.6 169.8,179.4 176.3,180.4 182.7,181.8 189.1,183.5 195.4,185.4 201.7,187.7 207.8,190.2 213.7,193 219.6,196.1 225.3,199.5 230.8,203.1 236.1,207 241.3,211.1 246.3,215.4 251,220 255.6,224.8 259.9,229.8 264,235' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='36' y1='235' x2='264' y2='235' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='235' x2='150' y2='178' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cpolyline points='141,235 141,226 150,226' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='28' y='240' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='240' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150' y='170' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='150' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3Ctext x='157' y='206.5' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kamar-strelka",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#2560e8aa"
+    },
+    {
+      "q": "Bir nuqtadan chiqqan ikki urinma orasidagi burchak 90°, urinish nuqtalari orasidagi masofa esa 8 sm. Aylananing radiusi necha santimetr?",
+      "v": [
+        "8 sm",
+        "4 sm",
+        "8√2 sm",
+        "4√2 sm"
+      ],
+      "t": 3,
+      "izoh": "PAOB to'rtburchakning to'rt burchagi ham to'g'ri, demak u to'g'ri to'rtburchak. OA = OB = R bo'lgani uchun qo'shni tomonlar teng va to'g'ri to'rtburchak kvadratga aylanadi. AB kvadratning diagonali bo'lgani uchun AB = R√2, demak R = 8 : √2 = 4√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='122' cy='155' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='122' y1='155' x2='246.5' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='122' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='246.5' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='122' y1='155' x2='184.2' y2='92.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='246.5' y1='155' x2='184.2' y2='92.8' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='177.9,99.1 184.2,105.5 190.6,99.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='182.2' y='83.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Cline x1='122' y1='155' x2='184.2' y2='217.2' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='246.5' y1='155' x2='184.2' y2='217.2' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='177.9,210.9 184.2,204.5 190.6,210.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='182.2' y='234.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Cline x1='184.2' y1='92.8' x2='184.2' y2='217.2' stroke='%23334155' stroke-width='2'/%3E%3Ctext x='115' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='254.5' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='175.2' y='155' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Cpolyline points='228.1,136.6 226.5,138.3 225.2,140.1 223.9,142 222.9,144 222,146.1 221.3,148.3 220.8,150.5 220.5,152.7 220.5,155 220.5,157.3 220.8,159.5 221.3,161.7 222,163.9 222.9,166 223.9,168 225.2,169.9 226.5,171.7 228.1,173.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='212.5' y='160' font-size='13' fill='%23334155' text-anchor='end'%3E90°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-burchak",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#80a1f14f"
+    },
+    {
+      "q": "Radiusi 10 sm aylanada markazdan 6 sm va 8 sm uzoqlikda ikkita vatar o'tkazilgan. Bu vatarlar uzunliklarining nisbati qanday bo'ladi?",
+      "v": [
+        "3 : 4",
+        "16 : 9",
+        "4 : 3",
+        "9 : 16"
+      ],
+      "t": 2,
+      "izoh": "Birinchi vatar 2 · √(100 − 36) = 16 sm, ikkinchisi 2 · √(100 − 64) = 12 sm. Nisbat 16 : 12 = 4 : 3 ga teng, masofalar nisbati emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vatar-uzunlik",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#dc112e2e"
+    },
+    {
+      "q": "Tashqi nuqtadan aylanaga o'tkazilgan urinma kesmasi radiusdan 11 sm uzun, nuqtadan markazgacha masofa esa 55 sm. Aylananing radiusi necha santimetr?",
+      "v": [
+        "33 sm",
+        "44 sm",
+        "22 sm",
+        "55 sm"
+      ],
+      "t": 0,
+      "izoh": "Radius R bo'lsa, urinma R + 11 bo'ladi va R² + (R + 11)² = 55². Bundan 2R² + 22R + 121 = 3025, ya'ni R² + 11R − 1452 = 0. Musbat ildiz R = 33 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='122' cy='155' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='122' y1='155' x2='268.7' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='122' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='268.7' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='122' y1='155' x2='174.8' y2='84.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='268.7' y1='155' x2='174.8' y2='84.6' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='169.4,91.8 176.6,97.2 182,90' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='172.8' y='75.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='115' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='276.7' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='225.7' y='112.8' font-size='13' fill='%23334155' text-anchor='start'%3ER + 11%3C/text%3E%3Ctext x='144.4' y='114.8' font-size='13' fill='%23334155' text-anchor='end'%3ER%3C/text%3E%3Ctext x='195.3' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E55 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-kesmasi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#5635e38a"
+    },
+    {
+      "q": "Uchburchakka ichki chizilgan aylana uning tomonlariga urinadi. AB = 13 sm, BC = 14 sm va CA = 15 sm bo'lsa, A uchidan urinish nuqtasigacha bo'lgan masofa necha santimetr?",
+      "v": [
+        "6 sm",
+        "8 sm",
+        "21 sm",
+        "7 sm"
+      ],
+      "t": 3,
+      "izoh": "Bir uchdan chiqqan ikki urinma kesmasi teng. Yarim perimetr (13 + 14 + 15) : 2 = 21 sm, A uchidan urinish nuqtasigacha masofa esa 21 − 14 = 7 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolyline points='115.8,70 45,240 243.3,240 115.8,70' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='130' cy='183.3' r='56.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='115.8' y='61' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37' y='246' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='251.3' y='246' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='144.2' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='72.4' y='155' font-size='13' fill='%23334155' text-anchor='end'%3E13 sm%3C/text%3E%3Ctext x='187.6' y='155' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-urinma-tenglik",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#4a39ab21"
+    },
+    {
+      "q": "Tashqi nuqtadan o'tkazilgan urinma kesmasi 12 sm, aylananing radiusi esa 5 sm. Shu nuqtadan aylana markazi orqali kesuvchi o'tkazilsa, uning tashqi bo'lagi necha santimetr bo'ladi?",
+      "v": [
+        "18 sm",
+        "8 sm",
+        "13 sm",
+        "5 sm"
+      ],
+      "t": 1,
+      "izoh": "Markazgacha masofa √(12² + 5²) = 13 sm. Markazdan o'tuvchi kesuvchining tashqi bo'lagi markazgacha masofadan radiusni ayirishga teng: 13 − 5 = 8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='99.6' cy='155' r='65.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='34' y1='155' x2='270' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='99.6' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ccircle cx='270' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Cline x1='99.6' y1='155' x2='124.8' y2='94.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='270' y1='155' x2='124.8' y2='94.5' stroke='%23334155' stroke-width='2'/%3E%3Cpolyline points='121.3,102.8 129.6,106.3 133.1,97.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='122.8' y='85.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='92.6' y='172' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='278' y='160' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='201.4' y='117.7' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='108.2' y='119.7' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3Ccircle cx='165.2' cy='155' r='2.4' stroke='%23334155' stroke-width='1' fill='%23334155'/%3E%3Ctext x='165.2' y='147' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='217.6' y='172' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-kesuvchi",
+      "id": "matematika_plan_m15-vatar-diametr-urinma-va-aylanadagi#a0d2c9f0"
+    }
+  ]
+}

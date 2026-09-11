@@ -1,0 +1,456 @@
+{
+  "nom": "22-mavzu. To Lqin Umumiy Xossalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektromagnit to‘lqinlarning xossalarini o‘rganishda generator hosil qilgan to‘lqin qayerdan tarqatiladi?",
+      "v": [
+        "Generator rupori deb ataluvchi tarqatuvchi antennadan",
+        "Kondensator qoplamalaridan",
+        "Metall plastinadan",
+        "Kristall dioddan"
+      ],
+      "t": 0,
+      "izoh": "Yuqori chastotali elektromagnit to‘lqin generator rupori deb ataluvchi tarqatuvchi antennadan tarqatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#0fba48aa"
+    },
+    {
+      "q": "Qabul qiluvchi antennada elektromagnit to‘lqin hosil qilgan EYuK kristall diod vositasida qanday tokka aylanadi?",
+      "v": [
+        "Pulsatsiyalanuvchi tokka",
+        "Doimiy tokka",
+        "Sinusoidal o‘zgaruvchan tokka",
+        "Uch fazali tokka"
+      ],
+      "t": 0,
+      "izoh": "Antennada qabul qilingan to‘lqin hosil qilgan EYuK kristall diod vositasida pulsatsiyalanuvchi tokka aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#5b96e827"
+    },
+    {
+      "q": "Tarqatuvchi va qabul qiluvchi ruporlar orasiga metall plastina qo‘yilsa, nima kuzatiladi?",
+      "v": [
+        "To‘lqin metall plastinadan qaytadi va qabul qilinmaydi",
+        "To‘lqin plastinadan bemalol o‘tadi",
+        "To‘lqin intensivligi ikki baravar ortadi",
+        "To‘lqin chastotasi o‘zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Elektromagnit to‘lqinlar metall plastinadan o‘ta olmasdan qaytadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#98c1b9e8"
+    },
+    {
+      "q": "Elektromagnit to‘lqin metall sirtiga tushganda metall sirtida nima hosil bo‘ladi?",
+      "v": [
+        "Erkin elektronlarning majburiy tebranishlari",
+        "Erkin elektronlarning yo‘qolishi",
+        "Doimiy elektr tokining paydo bo‘lishi",
+        "Metallning erishi"
+      ],
+      "t": 0,
+      "izoh": "Metallga kelib tushgan to‘lqin metall sirtida erkin elektronlarning majburiy tebranishlarini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#dedaa32b"
+    },
+    {
+      "q": "Metall sirtidagi erkin elektronlarning majburiy tebranishlar chastotasi nimaga teng?",
+      "v": [
+        "Elektromagnit to‘lqinning chastotasiga",
+        "Elektronlarning erkin tebranish chastotasiga",
+        "Metallning rezonans chastotasiga",
+        "Nolga"
+      ],
+      "t": 0,
+      "izoh": "Majburiy tebranishlarning chastotasi elektromagnit to‘lqinning chastotasiga teng bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#e6b3575d"
+    },
+    {
+      "q": "Elektromagnit to‘lqin metall sirtidan qanday qaytadi?",
+      "v": [
+        "Metall sirtining o‘zi ikkilamchi to‘lqinlar manbayi bo‘lib, to‘lqin sirtdan qaytadi",
+        "To‘lqin metall ichida so‘rilib, qayta chiqadi",
+        "To‘lqin metallni qizdirib, issiqlik shaklida qaytadi",
+        "To‘lqin chastotasini o‘zgarntirib qaytadi"
+      ],
+      "t": 0,
+      "izoh": "To‘lqin metalldan o‘ta olmaydi, lekin metall sirtining o‘zi ikkilamchi to‘lqinlar manbayi bo‘lib qoladi, ya’ni to‘lqin sirtdan qaytadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#1ff33ff6"
+    },
+    {
+      "q": "Elektromagnit to‘lqinlarning ikki muhit chegarasidan qaytishida qaysi qonun bajariladi?",
+      "v": [
+        "Qaytish qonuni",
+        "Sinish qonuni",
+        "Biot-Savar qonuni",
+        "Kulon qonuni"
+      ],
+      "t": 0,
+      "izoh": "Tajribalar elektromagnit to‘lqinlarning ikki muhit chegarasidan qaytishida qaytish qonuni bajarilishini ko‘rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#2b67ef08"
+    },
+    {
+      "q": "Metall plastina o‘rniga dielektrik olinsa, elektromagnit to‘lqinlar undan qanday qaytadi?",
+      "v": [
+        "Juda kam qaytadi",
+        "Juda kuchli qaytadi",
+        "Butunlay qaytadi",
+        "Umuman qaytmaydi"
+      ],
+      "t": 0,
+      "izoh": "Dielektriklarda erkin elektronlar juda kam bo‘lgani uchun to‘lqinlar ulardan juda kam qaytadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#962f5091"
+    },
+    {
+      "q": "Elektromagnit to‘lqinlarning qaytishidan qaysi sohalarda keng foydalaniladi?",
+      "v": [
+        "Radioaloqa va radiolokatsiyada",
+        "Elektr payvandlashda",
+        "Elektrolizda",
+        "Magnit yuklamada"
+      ],
+      "t": 0,
+      "izoh": "Elektromagnit to‘lqinlarning qaytishidan radioaloqa va radiolokatsiyada keng foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#875bd15f"
+    },
+    {
+      "q": "Elektromagnit to‘lqinlarning sinishini o‘rganishda nimadan foydalaniladi?",
+      "v": [
+        "Parafin bilan to‘ldirilgan uchburchakli prizmadan",
+        "Metall plastinadan",
+        "Shisha linzadan",
+        "Mis ramkadan"
+      ],
+      "t": 0,
+      "izoh": "Sinishni o‘rganish uchun parafin bilan to‘ldirilgan uchburchakli prizmadan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#4bc705e1"
+    },
+    {
+      "q": "Elektromagnit to‘lqinning sinishida sinish ko‘rsatkichi n21 nimaga teng?",
+      "v": [
+        "υ₁/υ₂ va √(ε₂/ε₁) kabi bog‘lanishlar orqali",
+        "υ₂/υ₁ ga",
+        "ε₁/ε₂ ga",
+        "λ₁/λ₂ ning kvadratiga"
+      ],
+      "t": 0,
+      "izoh": "n₂₁ = υ₁/υ₂ = √(ε₂/ε₁), bunda ε₁ va ε₂ — muhitlarning dielektrik singdiruvchanliklari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#1791efe1"
+    },
+    {
+      "q": "Sinish formulasidagi ε₁ va ε₂ nimani bildiradi?",
+      "v": [
+        "Muhitlarning dielektrik singdiruvchanliklarini",
+        "Muhitlarning magnit singdiruvchanliklarini",
+        "Elektr maydon kuchlanganliklarini",
+        "Muhitlarning zichliklarini"
+      ],
+      "t": 0,
+      "izoh": "ε₁ va ε₂ — mos ravishda birinchi va ikkinchi muhitlarning dielektrik singdiruvchanliklari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#380daba0"
+    },
+    {
+      "q": "Elektromagnit to‘lqin uzunligi deb nimaga aytiladi?",
+      "v": [
+        "Tebranishlar fazasi bir xil bo‘lgan, bir-biriga eng yaqin turgan ikki nuqta orasidagi masofaga",
+        "To‘lqin bir davrda bosib o‘tadigan eng katta masofaga",
+        "Manbadan qabul qilgichgacha bo‘lgan masofaga",
+        "To‘lqin amplitudasining ikki baravariga"
+      ],
+      "t": 0,
+      "izoh": "Tebranishlar fazasi bir xil bo‘lgan, bir-biriga eng yaqin turgan ikki nuqta orasidagi masofa elektromagnit to‘lqin uzunligi deyiladi: λ = c/v.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#71835bee"
+    },
+    {
+      "q": "Elektromagnit to‘lqin uzunligining formulasi qanday?",
+      "v": [
+        "λ = c/v",
+        "λ = c·v",
+        "λ = v/c",
+        "λ = c/T²"
+      ],
+      "t": 0,
+      "izoh": "λ = c/v, bunda c — to‘lqin tezligi, v — chastota.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#a803567d"
+    },
+    {
+      "q": "Elektromagnit to‘lqinning asosiy xarakteristikasi nima hisoblanadi?",
+      "v": [
+        "Chastotasi v (davri T)",
+        "To‘lqin uzunligi λ",
+        "Tarqalish tezligi c",
+        "Amplitudasi"
+      ],
+      "t": 0,
+      "izoh": "To‘lqin bir muhitdan ikkinchisiga o‘tganda to‘lqin uzunligi o‘zgaradi, chastotasi o‘zgarmaydi; shuning uchun asosiy xarakteristika chastota hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#e69b9d5f"
+    },
+    {
+      "q": "Elektromagnit to‘lqin bir muhitdan ikkinchi muhitga o‘tganda qaysi kattalik o‘zgarmaydi?",
+      "v": [
+        "Chastotasi",
+        "To‘lqin uzunligi",
+        "Tarqalish tezligi",
+        "Sinish ko‘rsatkichi"
+      ],
+      "t": 0,
+      "izoh": "Bir muhitdan ikkinchisiga o‘tganda to‘lqin uzunligi o‘zgaradi, chastotasi o‘zgarmasdan qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#e99fce01"
+    },
+    {
+      "q": "Elektromagnit to‘lqinda E va B vektorlarining tebranish yo‘nalishlari to‘lqin tarqalish yo‘nalishiga nisbatan qanday?",
+      "v": [
+        "Perpendikular",
+        "Parallel",
+        "45° burchak ostida",
+        "Qarama-qarshi yo‘nalishda"
+      ],
+      "t": 0,
+      "izoh": "E va B vektorlarining tebranish yo‘nalishlari to‘lqinning tarqalish yo‘nalishiga perpendikular bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#56619572"
+    },
+    {
+      "q": "Elektromagnit to‘lqinlar qanday to‘lqinlar hisoblanadi?",
+      "v": [
+        "Ko‘ndalang to‘lqinlar",
+        "Bo‘ylama to‘lqinlar",
+        "Sirtqi to‘lqinlar",
+        "Turbulent to‘lqinlar"
+      ],
+      "t": 0,
+      "izoh": "E va B tebranishlari tarqalish yo‘nalishiga perpendikular bo‘lgani uchun elektromagnit to‘lqinlar ko‘ndalang to‘lqinlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#b3abd189"
+    },
+    {
+      "q": "Elektromagnit to‘lqinning tarqalish tezligi vektori qaysi vektorlarga perpendikular yo‘nalgan?",
+      "v": [
+        "E va B vektorlariga",
+        "Faqat E vektoriga",
+        "Faqat B vektoriga",
+        "Gravitatsiya vektoriga"
+      ],
+      "t": 0,
+      "izoh": "Tarqalish tezligi vektori υ elektr maydon kuchlanganlik vektori E va magnit maydon induksiya vektori B ga perpendikular yo‘nalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#2f595ec7"
+    },
+    {
+      "q": "Elektromagnit to‘lqin nurlanishining oqim zichligi I deb nimaga aytiladi?",
+      "v": [
+        "To‘lqin tarqalish yo‘nalishiga perpendikular joylashgan S yuzali sirtdan ∆t vaqtda o‘tuvchi W elektromagnit energiyasiga",
+        "Manbaning bir sekundda chiqargan to‘liq energiyasiga",
+        "To‘lqin amplitudasining kvadratiga",
+        "Birlik hajmdagi energiyaga"
+      ],
+      "t": 0,
+      "izoh": "I = W/(S·∆t) — to‘lqin tarqalish yo‘nalishiga perpendikular S yuzali sirtdan ∆t vaqtda o‘tuvchi W elektromagnit energiyasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#9504bffb"
+    },
+    {
+      "q": "Nurlanishning oqim zichligi (to‘lqin intensivligi) qaysi formula bilan ifodalanadi?",
+      "v": [
+        "I = W/(S·∆t)",
+        "I = W·S·∆t",
+        "I = W·∆t/S",
+        "I = S/(W·∆t)"
+      ],
+      "t": 0,
+      "izoh": "I = W/(S·∆t) formula bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#56ddae9f"
+    },
+    {
+      "q": "To‘lqin intensivligining birligi qanday?",
+      "v": [
+        "W/m²",
+        "J/m³",
+        "W·m²",
+        "J/s"
+      ],
+      "t": 0,
+      "izoh": "Nurlanishning oqim zichligi yoki to‘lqin intensivligining birligi W/m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#dcffb6cd"
+    },
+    {
+      "q": "To‘lqin nurlanishining oqim zichligi deb sirtning birlik yuzasidan bir davrda o‘tuvchi nima tushuniladi?",
+      "v": [
+        "Elektromagnit to‘lqin nurlanishining o‘rtacha quvvati",
+        "To‘lqinning to‘liq energiyasi",
+        "Maydon kuchlanganligining kvadrati",
+        "To‘lqinning impulsi"
+      ],
+      "t": 0,
+      "izoh": "To‘lqin nurlanishining oqim zichligi sirtning birlik yuzasidan bir davrda o‘tuvchi elektromagnit to‘lqin nurlanishining o‘rtacha quvvatidan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#49270c12"
+    },
+    {
+      "q": "Elektromagnit to‘lqin oqimining zichligi I energiya zichligi w va tarqalish tezligi c bilan qanday bog‘langan?",
+      "v": [
+        "I = w·c",
+        "I = w/c",
+        "I = c/w",
+        "I = w·c²"
+      ],
+      "t": 0,
+      "izoh": "I = w·c — oqim zichligi energiya zichligi bilan to‘lqinning tarqalish tezligi ko‘paytmasiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#2d9d91cb"
+    },
+    {
+      "q": "Nuqtaviy manbadan chiquvchi to‘lqinning intensivligi masofaga qanday bog‘liq?",
+      "v": [
+        "Masofaning kvadratiga teskari proporsional kamayadi",
+        "Masofaga to‘g‘ri proporsional ortadi",
+        "Masofaning kvadratiga to‘g‘ri proporsional ortadi",
+        "Masofaga bog‘liq emas"
+      ],
+      "t": 0,
+      "izoh": "I = W/(4π∆t)·1/R² — intensivlik masofaning kvadratiga teskari proporsional kamayib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#5630446f"
+    },
+    {
+      "q": "Nuqtaviy manbadan chiqadigan to‘lqin intensivligini hisoblashda sfera sirtining yuzi qaysi formula bilan olinadi?",
+      "v": [
+        "S = 4πR²",
+        "S = 2πR²",
+        "S = πR²",
+        "S = (4/3)πR³"
+      ],
+      "t": 0,
+      "izoh": "Sfera sirtining yuzi S = 4πR².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#dc8f558a"
+    },
+    {
+      "q": "Elektromagnit maydonning E va B kattaliklari tebranayotgan zarralarning qaysi kattaligiga proporsional?",
+      "v": [
+        "Tezlanishiga",
+        "Tezligiga",
+        "Ko‘chishiga",
+        "Massasiga"
+      ],
+      "t": 0,
+      "izoh": "E va B tebranayotgan zarralarning tezlanishi a ga proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#aa80079f"
+    },
+    {
+      "q": "Maydonlar energiyasining zichliklari chastotaning qaysi darajasiga proporsional?",
+      "v": [
+        "To‘rtinchi darajasiga (I ~ ω⁴)",
+        "Ikkinchi darajasiga (I ~ ω²)",
+        "Uchinchi darajasiga (I ~ ω³)",
+        "Birinchi darajasiga (I ~ ω)"
+      ],
+      "t": 0,
+      "izoh": "E ~ ω² va B ~ ω² bo‘lgani uchun energiya zichliklari I ~ ω⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#883c78e8"
+    },
+    {
+      "q": "Elektromagnit to‘lqinning chastotasi 3 marta kamaysa, nurlanish energiyasi qanday o‘zgaradi?",
+      "v": [
+        "81 marta kamayadi",
+        "3 marta kamayadi",
+        "9 marta kamayadi",
+        "27 marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "I ~ ω⁴ bo‘lgani uchun chastota 3 marta kamaysa, energiya 3⁴ = 81 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#296b8a64"
+    },
+    {
+      "q": "Chastotasi 1 MHz bo‘lgan elektromagnit to‘lqin 2·10⁸ m/s tezlik bilan tarqalayotgan muhitda to‘lqin uzunligi qancha?",
+      "v": [
+        "200 m",
+        "20 m",
+        "2 m",
+        "2000 m"
+      ],
+      "t": 0,
+      "izoh": "λ = υ/v = 2·10⁸/10⁶ = 200 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m22-to-lqin-umumiy-xossalari#441d47a5"
+    }
+  ]
+}

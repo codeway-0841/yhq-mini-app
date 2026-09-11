@@ -1,0 +1,516 @@
+{
+  "nom": "40-mavzu. Metallarda Elektr Toki",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektr tokini o'tkazish xususiyatiga ko'ra moddalar qanday turlarga bo'linadi?",
+      "v": [
+        "O'tkazgichlar, yarimo'tkazgichlar va dielektriklar",
+        "Metallar, suyuqliklar va gazlar",
+        "Qattiq, suyuq va gaz holatlar",
+        "Kislotalar, ishqorlar va tuzlar"
+      ],
+      "t": 0,
+      "izoh": "Moddalar tok o'tkazish xususiyatiga ko'ra o'tkazgichlar, yarimo'tkazgichlar va dielektriklarga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#0e643ae8"
+    },
+    {
+      "q": "Qattiq jismlarning, jumladan metallarning atomlari tartibli davriy struktura hosil qiladi. Bunday struktura nima deb ataladi?",
+      "v": [
+        "Kristall panjara",
+        "Ion bog'lanish",
+        "Molekulyar zanjir",
+        "Amorf tana"
+      ],
+      "t": 0,
+      "izoh": "Atomlarning tartibli davriy strukturasi kristall panjara deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#f5c42557"
+    },
+    {
+      "q": "Kristall panjarada atomlar joylashgan nuqtalar nima deb yuritiladi?",
+      "v": [
+        "Tugunlar",
+        "Ionlar",
+        "Orbitlar",
+        "Yadrolar"
+      ],
+      "t": 0,
+      "izoh": "Kristall panjarada atomlar joylashgan nuqtalar tugunlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#49647dc6"
+    },
+    {
+      "q": "Metall atomida eng chetki orbitadagi elektronlar yadro bilan qanday bog'langan bo'ladi?",
+      "v": [
+        "Kuchsiz bog'langan",
+        "Juda kuchli bog'langan",
+        "Umuman bog'lanmagan",
+        "Ion bog'lanish bilan bog'langan"
+      ],
+      "t": 0,
+      "izoh": "Metall atomidagi eng chetki elektronlar yadro bilan kuchsiz bog'langan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#20a20643"
+    },
+    {
+      "q": "Ion deb qanday atomga aytiladi?",
+      "v": [
+        "Elektroni ortiqcha yoki elektron yetishmaydigan atomga",
+        "Yadrosida neytronlari ko'p atomga",
+        "Tashqi qobig'i to'la atomga",
+        "Elektroni yo'q yadroga"
+      ],
+      "t": 0,
+      "izoh": "Ion — elektroni ortiqcha yoki elektron yetishmaydigan atom.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#05b3b074"
+    },
+    {
+      "q": "Metall atomlari eng chetki elektronlarini yo'qotganda qanday ionga aylanadi?",
+      "v": [
+        "Musbat ionga",
+        "Manfiy ionga",
+        "Neytal atomga",
+        "Erkin elektronga"
+      ],
+      "t": 0,
+      "izoh": "Elektronini yo'qotgan atom musbat ionga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#90f0579d"
+    },
+    {
+      "q": "Mis kristallining panjara tugunlarida nimalar joylashadi?",
+      "v": [
+        "Musbat zaryadli ionlar",
+        "Manfiy zaryadli elektronlar",
+        "Neytral atomlar",
+        "Erkin elektronlar"
+      ],
+      "t": 0,
+      "izoh": "Kristall panjara tugunlarida musbat zaryadli ionlar joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#d10cd4e9"
+    },
+    {
+      "q": "Alohida mis (Cu) atomi yadrosida nechta musbat zaryadli proton bo'ladi?",
+      "v": [
+        "29 ta",
+        "18 ta",
+        "11 ta",
+        "17 ta"
+      ],
+      "t": 0,
+      "izoh": "Mis atomi yadrosida 29 ta musbat zaryadli proton bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#57d13831"
+    },
+    {
+      "q": "Neytral mis atomi yadrosi atrofida nechta elektron harakatlanadi?",
+      "v": [
+        "29 ta",
+        "28 ta",
+        "30 ta",
+        "27 ta"
+      ],
+      "t": 0,
+      "izoh": "Neytral atomda elektronlar soni protonlar soniga teng — 29 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#74931c3a"
+    },
+    {
+      "q": "Mis kristallida erkin ko'chib yuruvchi elektronlar qanday harakatda bo'ladi?",
+      "v": [
+        "Gaz molekulalari kabi tartibsiz issiqlik harakatida",
+        "Faqat bitta yo'nalishda tartibli harakatda",
+        "Panjara tugunlarida qimir etmasdan",
+        "Aylanma orbitada tartibli harakatda"
+      ],
+      "t": 0,
+      "izoh": "Erkin elektronlar gaz molekulalari kabi issiqlik harakatida, ya'ni tartibsiz harakatda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#6e3eb1e4"
+    },
+    {
+      "q": "1 sm³ metall hajmida taxminan nechta erkin harakatlanuvchi elektron mavjud?",
+      "v": [
+        "10²²–10²³ ta",
+        "10¹⁰–10¹² ta",
+        "10⁶–10⁸ ta",
+        "10³–10⁵ ta"
+      ],
+      "t": 0,
+      "izoh": "1 sm³ metallda taxminan 10²²–10²³ ta erkin elektron mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#676f7d15"
+    },
+    {
+      "q": "O'tkazgich uchlari elektr manbaining qutblariga ulanganda o'tkazgichda nima hosil bo'ladi?",
+      "v": [
+        "Elektr maydon",
+        "Magnit maydon",
+        "Kristall panjara",
+        "Ion bog'lanish"
+      ],
+      "t": 0,
+      "izoh": "O'tkazgich uchlari manba qutblariga ulanganda uning ichida elektr maydon hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#6c368612"
+    },
+    {
+      "q": "Elektr maydon ta'sirida o'tkazgichdagi erkin elektronlar qaysi qutb tomon harakat qiladi?",
+      "v": [
+        "Manbaning musbat qutbi tomon",
+        "Manbaning manfiy qutbi tomon",
+        "Panjara tugunlari tomon",
+        "Hech qayerga harakatlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Erkin elektronlar manbaning musbat qutbi tomon harakat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#94963d8b"
+    },
+    {
+      "q": "Tok o'tayotganda metallning musbat ionga aylangan atomlari qanday xulq tutadi?",
+      "v": [
+        "O'z joyida qo'zg'almasdan turaveradi",
+        "Musbat qutb tomon harakatlanadi",
+        "Manfiy qutb tomon harakatlanadi",
+        "Metalldan tashqariga chiqib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Musbat ionlar panjara tugunlarida o'z joyida qo'zg'almasdan turaveradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#1d1e7d09"
+    },
+    {
+      "q": "Metallarda elektr toki nimadan iborat?",
+      "v": [
+        "Erkin elektronlarning tartibli harakatidan",
+        "Musbat ionlarning tartibli harakatidan",
+        "Atomlarning tartibsiz harakatidan",
+        "Molekulalarning oqimidan"
+      ],
+      "t": 0,
+      "izoh": "Metallarda elektr toki erkin elektronlarning tartibli harakatidan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#451d9b70"
+    },
+    {
+      "q": "Metallardagi elektr o'tkazuvchanlikni birinchi bo'lib 1901-yilda tajribada aniq lagan fizik kim?",
+      "v": [
+        "K. Rikke",
+        "T. Edison",
+        "M. Faradey",
+        "U. Oripov"
+      ],
+      "t": 0,
+      "izoh": "1901-yilda nemis fizigi K. Rikke tajriba o'tkazgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#8209ebb7"
+    },
+    {
+      "q": "Rikke tajribasida qanday silindrlar olingan edi?",
+      "v": [
+        "Mis–alyuminiy–mis silindrlari",
+        "Mis–kumush–mis silindrlari",
+        "Temir–mis–temir silindrlari",
+        "Alyuminiy–nikel–alyuminiy silindrlari"
+      ],
+      "t": 0,
+      "izoh": "Rikke o'ta silliq uchta mis–alyuminiy–mis silindrlarini jips qilib bir-biriga qo'ygan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#24fe57e1"
+    },
+    {
+      "q": "Rikke tajribasida silindrlardan qancha vaqt davomida tok o'tkazilgan?",
+      "v": [
+        "Bir yil davomida",
+        "Bir oy davomida",
+        "Bir hafta davomida",
+        "Bir sutka davomida"
+      ],
+      "t": 0,
+      "izoh": "Tajribada bir xil yo'nalishda bir yil davomida muttasil tok o'tkazib turilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#42a087cb"
+    },
+    {
+      "q": "Rikke tajribasi yakunida silindrlarning massasi qanday o'zgargan?",
+      "v": [
+        "Massalari o'zgarmagan",
+        "Massalari ortgan",
+        "Massalari kamaygan",
+        "Alyuminiy silindr massasi ortgan, misniki kamaygan"
+      ],
+      "t": 0,
+      "izoh": "Tajriba yakunida silindrlarning massasi o'zgarmaganligi aniqlandi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#b2fa19df"
+    },
+    {
+      "q": "Rikke tajribasining birinchi xulosasi qanday?",
+      "v": [
+        "Metallardan tok o'tganda zaryadlar ko'chishi kimyoviy jarayonni vujudga keltirmaydi",
+        "Tok o'tganda metall massasi ortadi",
+        "Metallarda zaryad tashuvchilar protonlar",
+        "Tok faqat sirt qatlamidan o'tadi"
+      ],
+      "t": 0,
+      "izoh": "1-xulosa: metallardan tok o'tganda zaryadlar ko'chishi kimyoviy jarayonni vujudga keltirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#bfd53c8b"
+    },
+    {
+      "q": "Rikke tajribasining ikkinchi xulosasiga ko'ra barcha metallar uchun umumiy zaryad tashuvchilar nima bo'lishi mumkin?",
+      "v": [
+        "Erkin elektronlar",
+        "Musbat ionlar",
+        "Neytronlar",
+        "Molekulalar"
+      ],
+      "t": 0,
+      "izoh": "Barcha metallar uchun umumiy zaryad tashuvchilar erkin elektronlar bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#256dbe1b"
+    },
+    {
+      "q": "Metallarda elektr tokini elektronlar tashishi keyinchalik kimlarning tajribalarida isbotlandi?",
+      "v": [
+        "L. I. Mandelshtam, N. D. Papaleksi, P. Tolman va T. Styuart",
+        "K. Rikke va M. Faradey",
+        "T. Edison va N. Tesla",
+        "U. Oripov va M. Faradey"
+      ],
+      "t": 0,
+      "izoh": "Mandelshtam, Papaleksi, Tolman va Styuart tajribalarida isbotlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#7cab5bad"
+    },
+    {
+      "q": "Elektr zanjirdan tok o'tayotganini qanday asboblar yordamida aniqlash mumkin?",
+      "v": [
+        "Galvanometr yoki ampermetr yordamida",
+        "Voltmetr yoki barometr yordamida",
+        "Termometr yoki dinamometr yordamida",
+        "Elektrometr yoki sekundomer yordamida"
+      ],
+      "t": 0,
+      "izoh": "Tok o'tayotgani galvanometr yoki ampermetr yordamida aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#fe772faf"
+    },
+    {
+      "q": "Galvanometr zanjirga to'g'ri ulanganda uning ko'rsatkichi qanday o'g'adi?",
+      "v": [
+        "0 raqamidan o'ng tomonga",
+        "0 raqamidan chap tomonga",
+        "O'zgarmaydi",
+        "Tez-tez tebranadi"
+      ],
+      "t": 0,
+      "izoh": "Kalit ulanganda galvanometr ko'rsatkichi 0 dan o'ng tomonga o'g'adi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#d8447920"
+    },
+    {
+      "q": "O'tkazgichning tok manbaiga ulangan qutblari almashtirilsa, galvanometr ko'rsatkichi qanday o'zgaradi?",
+      "v": [
+        "0 raqamidan chap tomonga o'g'adi",
+        "0 raqamidan o'ng tomonga o'g'adi",
+        "0 da qoladi",
+        "Maksimal qiymatni ko'rsatadi"
+      ],
+      "t": 0,
+      "izoh": "Qutblar almashtirilsa ko'rsatkich 0 dan chap tomonga o'g'adi — tok yo'nalishga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#34e943ae"
+    },
+    {
+      "q": "Galvanometrli tajribada qutblar almashtirilganda lampochka qanday yonadi?",
+      "v": [
+        "Ikkala holatda ham yonadi",
+        "Ikkala holatda ham yonmaydi",
+        "Faqat birinchi holatda yonadi",
+        "Faqat ikkinchi holatda yonadi"
+      ],
+      "t": 0,
+      "izoh": "Qutblar almashtirilganda ham lampochka yonadi, lekin galvanometr chapga o'g'adi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#0880c030"
+    },
+    {
+      "q": "Elektr tokining yo'nalishi sifatida qanday yo'nalish qabul qilingan?",
+      "v": [
+        "Musbat zaryadli zarralarning tartibli harakat yo'nalishi",
+        "Elektronlarning tartibli harakat yo'nalishi",
+        "Ionlarning tartibsiz harakat yo'nalishi",
+        "Manfiy qutbdan musbat qutbga yo'nalish"
+      ],
+      "t": 0,
+      "izoh": "Tok yo'nalishi sifatida musbat zaryadli zarralarning tartibli harakat yo'nalishi qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#a82f86d8"
+    },
+    {
+      "q": "Metall zanjirida zaryad tashuvchilar bo'lgan elektronlar amalda qaysi yo'nalishda harakatlanadi?",
+      "v": [
+        "Manfiy qutbdan musbat qutb tomon",
+        "Musbat qutbdan manfiy qutb tomon",
+        "Tok yo'nalishi bo'yicha",
+        "Panjara tugunlari atrofida aylanma"
+      ],
+      "t": 0,
+      "izoh": "Elektronlar o'tkazgich bo'ylab manfiy qutbdan musbat qutb tomon harakat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#99932ca6"
+    },
+    {
+      "q": "Nima uchun tok yo'nalishi sifatida elektronlar harakati emas, musbat zaryadlar harakati qabul qilingan?",
+      "v": [
+        "Tok yo'nalishi qabul qilingan davrda fanda elektron haqida hech narsa ma'lum emas edi",
+        "Elektronlar harakatlanmaydi",
+        "Musbat zaryadlar tezroq harakatlanadi",
+        "Elektron zaryadi juda kichik"
+      ],
+      "t": 0,
+      "izoh": "Tok yo'nalishi qabul qilingan davrda fanda elektron haqida ma'lumot bo'lmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#458020ae"
+    },
+    {
+      "q": "Elektr tokining yo'nalishga ega ekanligini qaysi tajriba ko'rsatadi?",
+      "v": [
+        "Galvanometr zanjirga ulangan tajriba",
+        "Rikke silindrlar tajribasi",
+        "Erkin elektronlarning issiqlik harakati",
+        "Kristall panjara tuzilishi"
+      ],
+      "t": 0,
+      "izoh": "Galvanometr ko'rsatkichining qutblar almashganda teskari o'g'ishi tok yo'nalishga ega ekanini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#801a521d"
+    },
+    {
+      "q": "Metallarda katta miqdorda tok o'tkazilsa ham ularning massasi o'zgarmaydi. Buning sababi nima?",
+      "v": [
+        "Zaryad tashuvchilar massasi juda kichik erkin elektronlar bo'lib, ularning ko'chishi kimyoviy jarayon hosil qilmaydi",
+        "Metall atomlari harakatlanmaydi",
+        "Tok faqat metall sirtidan o'tadi",
+        "Ionlar massaga ta'sir qilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Rikke tajribasi: elektronlar ko'chishi kimyoviy jarayon keltirib chiqarmaydi, shuning uchun massa o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#403f7832"
+    },
+    {
+      "q": "Erkin elektronlar qachon paydo bo'ladi?",
+      "v": [
+        "Metall atomlarining eng chetki elektronlari yadro bilan kuchsiz bog'langanligi sababli atomni tark etganda",
+        "Metall qizdirilganda",
+        "Ikki metall jipslanganda",
+        "Metall maydonda eritilganda"
+      ],
+      "t": 0,
+      "izoh": "Chetki elektronlar yadro bilan kuchsiz bog'langanligi uchun atomni tark etib, erkin elektronlarga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#a1e51d40"
+    },
+    {
+      "q": "O'tkazgichda elektr toki qanday sharoitda hosil bo'ladi?",
+      "v": [
+        "O'tkazgich uchlari orasida elektr maydon hosil bo'lganda",
+        "O'tkazgich qizdirilganda",
+        "O'tkazgich magnitlanganda",
+        "O'tkazgich suyuqlikka tushirilganda"
+      ],
+      "t": 0,
+      "izoh": "O'tkazgich uchlari orasida elektr maydon hosil bo'lganda erkin elektronlarning tartibli harakati — tok hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#6c7b1b2a"
+    },
+    {
+      "q": "Erkin elektronlarning tartibsiz (issiqlik) harakati bilan tartibli harakatining farqi nimada?",
+      "v": [
+        "Tartibli harakat elektr maydon ta'sirida ma'lum yo'nalishda sodir bo'ladi",
+        "Tartibsiz harakat faqat yuqori haroratda bo'ladi",
+        "Tartibli harakatda elektronlar to'xtaydi",
+        "Ularning orasida farq yo'q"
+      ],
+      "t": 0,
+      "izoh": "Maydonsiz elektronlar tartibsiz harakatda; maydon ta'sirida tartibli harakat yuzaga kelib, tok hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m40-metallarda-elektr-toki#4b6db53e"
+    }
+  ]
+}

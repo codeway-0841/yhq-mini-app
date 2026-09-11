@@ -1,0 +1,1609 @@
+{
+  "nom": "Hosila yordamida ildizlar sonini aniqlash va tengsizlik isbotlash",
+  "bolim": "Matematik analiz asoslari",
+  "blok": "anlz",
+  "rasmiyBolim": 5,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "f(x) = x³ + 6x − 5 funksiya grafigi Ox o'qini nechta nuqtada kesib o'tishini hosila yordamida aniqlang.",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "birorta ham emas"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² + 6 ifoda har qanday x da musbat, demak funksiya butun sonlar o'qida qat'iy o'suvchi. Qat'iy monoton funksiya har bir qiymatni ko'pi bilan bir marta qabul qiladi. f(0) = −5 < 0, f(1) = 2 > 0 bo'lgani uchun ildiz mavjud va u yagona. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-yagona-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#962520d9"
+    },
+    {
+      "q": "x³ − 3x = a tenglama uchta har xil haqiqiy ildizga ega bo'lishi uchun a parametr qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "a < −2",
+        "a > 2",
+        "−2 < a < 2",
+        "a = 2 yoki a = −2"
+      ],
+      "t": 2,
+      "izoh": "y = x³ − 3x funksiyaning hosilasi 3x² − 3 = 3(x − 1)(x + 1), kritik nuqtalar x = −1 va x = 1. Lokal maksimum f(−1) = 2, lokal minimum f(1) = −2. y = a gorizontal chizig'i grafikni uch nuqtada kesishi uchun a minimum bilan maksimum orasida yotishi kerak. Javob: −2 < a < 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-uch-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#a027534e"
+    },
+    {
+      "q": "Anvarning ustaxonasida x dona stul yasashning umumiy xarajati C(x) = x³ + 15x + 40 ming so'mga teng. C(x) = 1000 tenglama nechta musbat yechimga ega?",
+      "v": [
+        "yechimi yo'q",
+        "aynan bitta",
+        "aynan ikkita",
+        "aynan uchta"
+      ],
+      "t": 1,
+      "izoh": "C'(x) = 3x² + 15 > 0, demak xarajat funksiyasi x > 0 sohada qat'iy o'suvchi. C(0) = 40 < 1000 va C(10) = 1190 > 1000 bo'lgani uchun 0 bilan 10 orasida yechim bor. Qat'iy o'suvchi funksiya 1000 qiymatini ikkinchi marta qabul qila olmaydi. Javob: aynan bitta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-optimal-yagona",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#229d7469"
+    },
+    {
+      "q": "Barcha musbat x lar uchun x + 4/x ifodaning eng kichik qiymati qaysi nuqtada va nechaga teng bo'ladi?",
+      "v": [
+        "x = 4 da 5 ga",
+        "x = 1 da 5 ga",
+        "x = 2 da 5 ga",
+        "x = 2 da 4 ga"
+      ],
+      "t": 3,
+      "izoh": "f(x) = x + 4/x uchun f'(x) = 1 − 4/x². Hosilani nolga tenglashtirsak x² = 4, musbat ildiz x = 2. Hosila x < 2 da manfiy, x > 2 da musbat, demak x = 2 minimum nuqta. f(2) = 2 + 2 = 4. Javob: x = 2 da 4 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizlik-farq-min",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#8ffae12c"
+    },
+    {
+      "q": "x³ − 12x = 5 tenglamaning haqiqiy ildizlari sonini hosila yordamida toping.",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 2,
+      "izoh": "f(x) = x³ − 12x uchun f'(x) = 3x² − 12 = 3(x − 2)(x + 2). Kritik nuqtalar x = −2 va x = 2, f(−2) = 16 lokal maksimum, f(2) = −16 lokal minimum. 5 soni −16 bilan 16 orasida yotgani uchun y = 5 chizig'i grafikni uch nuqtada kesadi. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniq-a-uchun-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#0004e8a5"
+    },
+    {
+      "q": "f(x) = 2x³ − 9x² + 12x − 3 funksiyaning lokal maksimum va lokal minimum qiymatlarini toping va f(x) = 0 tenglama nechta haqiqiy ildizga ega ekanini aniqlang.",
+      "v": [
+        "maksimum 2, minimum 1; 1 ta ildiz",
+        "maksimum 2, minimum 1; 3 ta ildiz",
+        "maksimum 1, minimum 2; 1 ta ildiz",
+        "maksimum 2, minimum 1; 2 ta ildiz"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 6x² − 18x + 12 = 6(x − 1)(x − 2), kritik nuqtalar x = 1 va x = 2. Hosila x = 1 da musbatdan manfiyga o'tadi, demak f(1) = 2 lokal maksimum; x = 2 da manfiydan musbatga o'tadi, f(2) = 1 lokal minimum. Ikkala ekstremum qiymat ham musbat bo'lgani uchun grafik Ox o'qini faqat kritik nuqtalardan chapda bir marta kesadi. Javob: maksimum 2, minimum 1; 1 ta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstremum-qiymat-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#7e99d553"
+    },
+    {
+      "q": "Poyezd Toshkentdan 60 km uzoqlikdagi bekatdan yo'lga chiqdi va t soatdan keyin uning Toshkentdan masofasi s(t) = t³ + 4t + 60 km ni tashkil etadi. s(t) = 200 tenglama t > 0 sohada nechta yechimga ega?",
+      "v": [
+        "yechim yo'q",
+        "ikkita",
+        "bitta",
+        "uchta"
+      ],
+      "t": 2,
+      "izoh": "s'(t) = 3t² + 4 > 0, demak masofa funksiyasi t > 0 da qat'iy o'suvchi. Yo'lga chiqqanda s(0) = 60 < 200, s(5) = 125 + 20 + 60 = 205 > 200, ya'ni yechim 0 bilan 5 orasida. Qat'iy o'suvchi funksiya 200 qiymatini takror qabul qila olmaydi. Javob: bitta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harakat-vaqt-yagona",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#a354cc69"
+    },
+    {
+      "q": "x³ − 27x = m tenglama faqat bitta haqiqiy ildizga ega bo'lishi uchun m qanday shartni qanoatlantiradi?",
+      "v": [
+        "−54 < m < 54",
+        "m = 54 yoki m = −54",
+        "m ≥ 54",
+        "m > 54 yoki m < −54"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 3x² − 27 = 3(x − 3)(x + 3), kritik nuqtalar x = −3 va x = 3. f(−3) = 54 lokal maksimum, f(3) = −54 lokal minimum. y = m chizig'i grafikni bitta nuqtada kesishi uchun m ekstremum qiymatlari oralig'idan tashqarida bo'lishi kerak. Javob: m > 54 yoki m < −54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-bitta-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#05ba376e"
+    },
+    {
+      "q": "x⁴ − 8x² = −7 tenglama nechta har xil haqiqiy ildizga ega ekanini hosila yordamida aniqlang.",
+      "v": [
+        "2 ta",
+        "4 ta",
+        "3 ta",
+        "6 ta"
+      ],
+      "t": 1,
+      "izoh": "f(x) = x⁴ − 8x² uchun f'(x) = 4x(x − 2)(x + 2). Kritik nuqtalar x = −2, 0 va 2; f(−2) = f(2) = −16 minimumlar, f(0) = 0 lokal maksimum. −7 soni −16 bilan 0 orasida bo'lgani uchun y = −7 chizig'i grafikni to'rt nuqtada kesadi. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvartik-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#152a2bed"
+    },
+    {
+      "q": "x > 0 bo'lganda x³ − 3x + k ≥ 0 tengsizlik bajarilishini ta'minlaydigan k ning eng kichik qiymatini toping.",
+      "v": [
+        "2",
+        "−2",
+        "3",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "g(x) = x³ − 3x deb olamiz, g'(x) = 3x² − 3 = 3(x − 1)(x + 1). Musbat sohada yagona kritik nuqta x = 1 va u minimum: g(1) = 1 − 3 = −2. Tengsizlik k ≥ −g(x) ko'rinishida bo'lgani uchun k o'ng tomonning eng katta qiymatidan kam bo'lmasligi kerak, ya'ni k ≥ 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-C-tengsizlik",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#0821161c"
+    },
+    {
+      "q": "x³ − 3x² = a tenglama uchta har xil ildizga ega bo'ladigan nechta butun a qiymati mavjud?",
+      "v": [
+        "3 ta",
+        "5 ta",
+        "4 ta",
+        "2 ta"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² − 6x = 3x(x − 2), kritik nuqtalar x = 0 va x = 2. f(0) = 0 lokal maksimum, f(2) = −4 lokal minimum. Uchta ildiz uchun −4 < a < 0 bo'lishi shart, chegaralar bunga kirmaydi. Bu oraliqdagi butun sonlar: −3, −2 va −1. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-parametr-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#4e0c0842"
+    },
+    {
+      "q": "x > 0 sohada ln x = kx tenglama yagona yechimga ega bo'ladigan k ning musbat qiymatini toping.",
+      "v": [
+        "1",
+        "e",
+        "1/e",
+        "2/e"
+      ],
+      "t": 2,
+      "izoh": "Tenglamani k = (ln x)/x ko'rinishga keltiramiz va g(x) = (ln x)/x ni tekshiramiz. g'(x) = (1 − ln x)/x² bo'lib, u x = e da nolga aylanadi va shu nuqtada maksimum: g(e) = 1/e. Musbat k uchun yechim yagona bo'lishi faqat k maksimum qiymatga teng bo'lganda ro'y beradi. Javob: 1/e.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifmik-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#77215fe3"
+    },
+    {
+      "q": "Bemorga berilgan dorining qondagi miqdori C(t) = 12t/(t² + 4) mg/l formula bo'yicha o'zgaradi. Dori miqdori t > 0 sohada necha marta 2 mg/l ga teng bo'ladi?",
+      "v": [
+        "ikki marta",
+        "bir marta",
+        "uch marta",
+        "hech qachon"
+      ],
+      "t": 0,
+      "izoh": "C'(t) = 12(4 − t²)/(t² + 4)², u t = 2 da nolga aylanadi va shu nuqtada maksimum: C(2) = 24/8 = 3. C(0) = 0, t cheksizlashganda C(t) nolga intiladi. 2 soni 0 bilan 3 orasida bo'lgani uchun grafik y = 2 chizig'ini ikki marta kesadi. Javob: ikki marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konsentratsiya-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#235b9c20"
+    },
+    {
+      "q": "x + sin x = 1 tenglama nechta haqiqiy yechimga ega ekanini hosila yordamida asoslang.",
+      "v": [
+        "cheksiz ko'p",
+        "aynan bitta",
+        "aynan ikkita",
+        "aynan to'rtta"
+      ],
+      "t": 1,
+      "izoh": "f(x) = x + sin x deb olamiz, f'(x) = 1 + cos x ≥ 0. Hosila faqat ayrim ajratilgan nuqtalarda nolga aylanadi, shuning uchun funksiya butun o'qda qat'iy o'suvchi. f(0) = 0 < 1 va f(π/2) = π/2 + 1 > 1, demak yechim bor va monotonlik tufayli u yagona. Javob: aynan bitta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-yagona-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#b12bc7f6"
+    },
+    {
+      "q": "Bir korxonada x tonna mahsulot tayyorlashda birlik xarajat E(x) = x + 25/x million so'mni tashkil etadi. Birlik xarajatning eng kichik qiymati necha million so'm?",
+      "v": [
+        "25",
+        "5",
+        "12,5",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "E'(x) = 1 − 25/x², nolga tenglashtirsak x² = 25 va musbat ildiz x = 5. Hosila x < 5 da manfiy, x > 5 da musbat, demak x = 5 minimum nuqta. E(5) = 5 + 5 = 10 million so'm. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-funksiya-min-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#75f86dfd"
+    },
+    {
+      "q": "f(x) = x³ − 6x² + 9x − 2 funksiya [0; 4] kesmada Ox o'qini nechta nuqtada kesib o'tadi?",
+      "v": [
+        "ikkita",
+        "uchta",
+        "bitta",
+        "birorta ham yo'q"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3), kritik nuqtalar x = 1 va x = 3. Kesmadagi qiymatlar: f(0) = −2, f(1) = 2, f(3) = −2, f(4) = 2. Har bir qo'shni juftlikda ishora almashadi va oraliqlarda funksiya monoton, demak har birida aynan bitta ildiz bor. Javob: uchta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmadagi-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#62ca848a"
+    },
+    {
+      "q": "x > 0 uchun eˣ > x + 1 tengsizligini isbotlashda f(x) = eˣ − x − 1 funksiya kiritildi. Isbotni yakunlash uchun qaysi dalil yetarli?",
+      "v": [
+        "f(0) = 0 ekani",
+        "f(x) uzluksiz ekani",
+        "f'(x) > 0 va f(0) = 0 ekani",
+        "ikkinchi hosila musbat ekani"
+      ],
+      "t": 2,
+      "izoh": "Faqat f(0) = 0 dan tengsizlik kelib chiqmaydi, uzluksizlik ham yetarli emas. x > 0 sohada f'(x) = eˣ − 1 > 0, demak f o'suvchi; boshlang'ich qiymat f(0) = 0 bo'lgani uchun x > 0 da f(x) > 0. Shu ikki dalil birgalikda isbotni yakunlaydi. Javob: f'(x) > 0 va f(0) = 0 ekani.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizlik-isbot-qadam",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#c577fba5"
+    },
+    {
+      "q": "x³ − 48x = c tenglama aynan ikkita har xil haqiqiy ildizga ega bo'lsa, c ning mumkin bo'lgan qiymatlari yig'indisi nechaga teng?",
+      "v": [
+        "0",
+        "128",
+        "256",
+        "−128"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² − 48 = 3(x − 4)(x + 4), kritik nuqtalar x = −4 va x = 4. f(−4) = 128 lokal maksimum, f(4) = −128 lokal minimum. Aynan ikkita ildiz y = c chizig'i ekstremum darajasidan o'tganda hosil bo'ladi, ya'ni c = 128 yoki c = −128. Ularning yig'indisi 0. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-ikki-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#adfd71d9"
+    },
+    {
+      "q": "f(x) = x³ − 9x² + 15x + 4 funksiyaning kamayish oralig'ini aniqlang va shu asosda f(x) = 0 tenglama nechta haqiqiy ildizga ega ekanini ayting.",
+      "v": [
+        "(1; 5); 3 ta ildiz",
+        "(1; 5); 1 ta ildiz",
+        "(−∞; 1) va (5; +∞); 3 ta ildiz",
+        "(1; 5); 2 ta ildiz"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² − 18x + 15 = 3(x − 1)(x − 5), demak 1 < x < 5 da hosila manfiy va funksiya shu oraliqda kamayadi. Lokal maksimum f(1) = 1 − 9 + 15 + 4 = 11 > 0, lokal minimum f(5) = 125 − 225 + 75 + 4 = −21 < 0. Ekstremum qiymatlar qarama-qarshi ishorali bo'lgani uchun grafik Ox o'qini uch marta kesadi. Javob: (1; 5); 3 ta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-oraliq-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#450042a8"
+    },
+    {
+      "q": "g(x) = (ln x)/x funksiyaning monotonligidan foydalanib e^π va π^e sonlarini taqqoslang.",
+      "v": [
+        "e^π < π^e",
+        "e^π > π^e",
+        "e^π = π^e",
+        "taqqoslash mumkin emas"
+      ],
+      "t": 1,
+      "izoh": "g(x) = (ln x)/x uchun g'(x) = (1 − ln x)/x², x > e bo'lganda g'(x) < 0, demak g kamayuvchi. e < π bo'lgani uchun g(e) > g(π), ya'ni (ln e)/e > (ln π)/π. Ikkala tomonni e·π ga ko'paytirsak π·ln e > e·ln π, bundan ln(e^π) > ln(π^e). Logarifm o'suvchi bo'lgani uchun e^π > π^e. Javob: e^π > π^e.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-hosila-orqali",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#10406f7e"
+    },
+    {
+      "q": "f(x) = 5x + sin x − 3 funksiya nechta nolga ega ekanini hosila belgisi orqali aniqlang.",
+      "v": [
+        "0 ta",
+        "2 ta",
+        "1 ta",
+        "cheksiz ko'p"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 5 + cos x, kosinus −1 dan kichik bo'lmagani uchun f'(x) ≥ 4 > 0. Demak funksiya butun o'qda qat'iy o'suvchi va har bir qiymatni ko'pi bilan bir marta oladi. f(0) = −3 < 0, f(1) = 5 + sin 1 − 3 > 0 bo'lgani uchun aynan bitta nol bor. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-yagona-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#3fe35ece"
+    },
+    {
+      "q": "y = x³ − 6x² + 5 egri chizig'ini y = a gorizontal chizig'i uch nuqtada kesib o'tishi uchun a qaysi oraliqda yotishi kerak?",
+      "v": [
+        "a < −27",
+        "−27 < a < 5",
+        "−5 < a < 27",
+        "a > 5"
+      ],
+      "t": 1,
+      "izoh": "y' = 3x² − 12x = 3x(x − 4), kritik nuqtalar x = 0 va x = 4. y(0) = 5 lokal maksimum, y(4) = −27 lokal minimum. Gorizontal y = a chizig'i uch nuqtada kesishi uchun a minimum bilan maksimum qiymatlar orasida yotishi shart. Javob: −27 < a < 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-uch-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#4762d861"
+    },
+    {
+      "q": "x⁴ + 16 ≥ kx² tengsizlik barcha haqiqiy x lar uchun bajariladigan k ning eng katta qiymatini toping.",
+      "v": [
+        "16",
+        "4",
+        "8",
+        "32"
+      ],
+      "t": 2,
+      "izoh": "g(x) = x⁴ − kx² + 16 ≥ 0 bo'lishi kerak. t = x² ≥ 0 almashtirishdan keyin h(t) = t² − kt + 16 hosil bo'ladi, h'(t) = 2t − k nolga aylanadigan t = k/2 esa minimum nuqta. h(k/2) = 16 − k²/4 ≥ 0 shartdan k² ≤ 64, ya'ni k ≤ 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-farq-min",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#2508cae3"
+    },
+    {
+      "q": "x³ + 3x² − 9x = b tenglama yagona haqiqiy ildizga ega bo'lsa, b uchun to'g'ri shartni ko'rsating.",
+      "v": [
+        "b > 27 yoki b < −5",
+        "−5 < b < 27",
+        "b = 27 yoki b = −5",
+        "b > 5 yoki b < −27"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² + 6x − 9 = 3(x + 3)(x − 1), kritik nuqtalar x = −3 va x = 1. f(−3) = 27 lokal maksimum, f(1) = −5 lokal minimum. Yagona ildiz y = b chizig'i ikkala ekstremum qiymatidan tashqarida o'tganda hosil bo'ladi. Javob: b > 27 yoki b < −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-bitta-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#8dc145c9"
+    },
+    {
+      "q": "2x³ − 3x² − 12x + 20 = 0 tenglamaning har xil haqiqiy ildizlari soni nechta?",
+      "v": [
+        "1 ta",
+        "3 ta",
+        "2 ta",
+        "ildizi yo'q"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 6x² − 6x − 12 = 6(x − 2)(x + 1), kritik nuqtalar x = −1 va x = 2. Lokal maksimum f(−1) = 27, lokal minimum f(2) = 0. Minimum qiymat aynan nolga teng, demak grafik Ox o'qiga x = 2 da urinadi va bundan chapda yana bitta kesishish bor. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniq-a-uchun-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#ba16e587"
+    },
+    {
+      "q": "Dilnoza fermasida x sentner o'g'it sarflaganda hosil H(x) = 200 + 40x − x² sentnerni tashkil etadi. Hosila yordamida hosil eng ko'p bo'ladigan o'g'it miqdorini toping.",
+      "v": [
+        "40 sentner",
+        "10 sentner",
+        "400 sentner",
+        "20 sentner"
+      ],
+      "t": 3,
+      "izoh": "H'(x) = 40 − 2x, uni nolga tenglashtiramiz: 40 − 2x = 0, bundan x = 20. Hosila x < 20 da musbat, x > 20 da manfiy, demak x = 20 maksimum nuqta. Unda hosil H(20) = 200 + 800 − 400 = 600 sentner bo'ladi, lekin savolda o'g'it miqdori so'ralgan. Javob: 20 sentner.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-optimal-yagona",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#5d4f5616"
+    },
+    {
+      "q": "g(x) = x³ − 3x² − 9x + 5 funksiya [−2; 4] kesmada nechta ildizga ega?",
+      "v": [
+        "bitta",
+        "ikkita",
+        "uchta",
+        "to'rtta"
+      ],
+      "t": 0,
+      "izoh": "g'(x) = 3x² − 6x − 9 = 3(x − 3)(x + 1), kritik nuqtalar x = −1 va x = 3. Kesmadagi qiymatlar: g(−2) = 3, g(−1) = 10, g(3) = −22, g(4) = −15. Ishora faqat [−1; 3] oraliqda musbatdan manfiyga o'zgaradi va u yerda funksiya monoton kamayadi. Javob: bitta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmadagi-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#34b82ecc"
+    },
+    {
+      "q": "x > 1 uchun ln x < x − 1 tengsizligini isbotlash uchun qaysi funksiyani tekshirish eng qulay?",
+      "v": [
+        "f(x) = x·ln x",
+        "f(x) = x − 1 − ln x",
+        "f(x) = ln x + x",
+        "f(x) = (ln x)/x"
+      ],
+      "t": 1,
+      "izoh": "Tengsizlikni isbotlashda ikki tomonning ayirmasi olinadi: f(x) = (x − 1) − ln x. Uning hosilasi f'(x) = 1 − 1/x bo'lib, x > 1 da musbat, demak f o'suvchi. f(1) = 0 bo'lgani uchun x > 1 da f(x) > 0, ya'ni ln x < x − 1. Javob: f(x) = x − 1 − ln x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizlik-isbot-qadam",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#802f8beb"
+    },
+    {
+      "q": "x⁴ − 4x³ = k tenglama haqiqiy ildizga umuman ega bo'lmasligi uchun k qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "k > −27",
+        "k < 0",
+        "k < −27",
+        "k = −27"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 4x³ − 12x² = 4x²(x − 3). Hosila x < 3 da manfiy, x > 3 da musbat, x = 0 da esa ishorasini o'zgartirmaydi, demak x = 3 global minimum. f(3) = 81 − 108 = −27. y = k chizig'i grafikni kesmasligi uchun k eng kichik qiymatdan past bo'lishi kerak. Javob: k < −27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvartik-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#c2148eb0"
+    },
+    {
+      "q": "y = x³ va y = 3x − 2 grafiklari nechta nuqtada kesishadi?",
+      "v": [
+        "uch nuqtada",
+        "bir nuqtada",
+        "umumiy nuqtasi yo'q",
+        "ikki nuqtada"
+      ],
+      "t": 3,
+      "izoh": "Kesishish uchun x³ = 3x − 2, ya'ni f(x) = x³ − 3x + 2 = 0. f'(x) = 3x² − 3 = 3(x − 1)(x + 1), lokal maksimum f(−1) = 4, lokal minimum f(1) = 0. Minimum aynan nolga teng bo'lgani uchun grafik Ox o'qiga urinadi va yana bir joyda kesadi. Javob: ikki nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-grafik-kesishish-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#60e93e16"
+    },
+    {
+      "q": "x > 0 bo'lganda 4x + 9/x ifoda qabul qiladigan barcha qiymatlar to'plamini toping.",
+      "v": [
+        "[12; +∞)",
+        "[6; +∞)",
+        "[13; +∞)",
+        "(0; 12]"
+      ],
+      "t": 0,
+      "izoh": "f(x) = 4x + 9/x uchun f'(x) = 4 − 9/x². Nolga tenglashtirsak x² = 9/4, musbat ildiz x = 1,5. Hosila undan chapda manfiy, o'ngda musbat, demak bu minimum nuqta: f(1,5) = 6 + 6 = 12. x nolga yoki cheksizlikka intilganda ifoda cheksiz o'sadi. Javob: [12; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-C-tengsizlik",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#32453429"
+    },
+    {
+      "q": "x³ − 3x² + m = 0 tenglama uchta har xil haqiqiy ildizga ega bo'lishi uchun m qanday oraliqda yotishi kerak?",
+      "v": [
+        "−4 < m < 0",
+        "0 < m < 4",
+        "m < 0",
+        "m > 4"
+      ],
+      "t": 1,
+      "izoh": "f(x) = x³ − 3x² + m uchun f'(x) = 3x(x − 2), kritik nuqtalar x = 0 va x = 2. Uchta ildiz bo'lishi uchun ekstremum qiymatlar qarama-qarshi ishorali bo'lishi kerak: f(0)·f(2) < 0. Bu yerda f(0) = m va f(2) = m − 4, ya'ni m(m − 4) < 0. Javob: 0 < m < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremum-kopaytma-shart",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#4864b403"
+    },
+    {
+      "q": "x > 0 bo'lganda eˣ − 1 − x − x²/2 ifodaning ishorasi qanday bo'ladi?",
+      "v": [
+        "har doim manfiy",
+        "har doim musbat",
+        "ishorasi almashadi",
+        "nolga teng"
+      ],
+      "t": 1,
+      "izoh": "f(x) = eˣ − 1 − x − x²/2 uchun f'(x) = eˣ − 1 − x va f''(x) = eˣ − 1. x > 0 da f''(x) > 0, demak f'(x) o'suvchi; f'(0) = 0 bo'lgani uchun x > 0 da f'(x) > 0. Endi f o'suvchi va f(0) = 0, shuning uchun x > 0 da f(x) > 0. Javob: har doim musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-tengsizlik",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#7427c990"
+    },
+    {
+      "q": "g(x) = (ln x)/x funksiyaning xatti-harakatidan foydalanib √2 va ∛3 sonlarini taqqoslang.",
+      "v": [
+        "√2 > ∛3",
+        "√2 = ∛3",
+        "∛3 > √2",
+        "taqqoslab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "√2 = 2^(1/2) va ∛3 = 3^(1/3) sonlarining logarifmini olsak (ln 2)/2 va (ln 3)/3 chiqadi, ya'ni g(2) va g(3) taqqoslanadi. g'(x) = (1 − ln x)/x² bo'lib, g maksimumga x = e da erishadi. Hisob (ln 2)/2 ≈ 0,347 va (ln 3)/3 ≈ 0,366 ni beradi, demak g(3) > g(2). Javob: ∛3 > √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-hosila-orqali",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#6cce77bb"
+    },
+    {
+      "q": "x⁴ − 18x² = p tenglama haqiqiy ildizga ega bo'lmasligi uchun p qanday bo'lishi kerak?",
+      "v": [
+        "p < −81",
+        "p > −81",
+        "p < 0",
+        "p > 81"
+      ],
+      "t": 0,
+      "izoh": "f(x) = x⁴ − 18x² uchun f'(x) = 4x(x − 3)(x + 3). Kritik nuqtalar x = −3, 0 va 3; f(−3) = f(3) = −81 global minimum, f(0) = 0 lokal maksimum. y = p chizig'i grafikni umuman kesmasligi uchun p eng kichik qiymatdan past bo'lishi shart. Javob: p < −81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizsiz-parametr",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#4043104e"
+    },
+    {
+      "q": "Suv omborida suv balandligi h(t) = 20t/(t² + 25) metr qonuniyat bilan o'zgaradi. Balandlik necha marta 2 metrga teng bo'ladi?",
+      "v": [
+        "faqat bir marta",
+        "ikki marta",
+        "uch marta",
+        "hech qachon"
+      ],
+      "t": 0,
+      "izoh": "h'(t) = 20(25 − t²)/(t² + 25)², u t = 5 da nolga aylanadi va shu nuqtada maksimum. h(5) = 100/50 = 2 metr — bu balandlikning eng katta qiymati. Maksimum qiymatga funksiya faqat bir marta erishadi, undan yuqoriga chiqmaydi. Javob: faqat bir marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konsentratsiya-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#23a30a40"
+    },
+    {
+      "q": "Zilola velosipedda harakatlanmoqda, bosib o'tgan yo'li s(t) = t³ − 6t² + 12t km. s(t) = 8 tenglama t > 0 sohada nechta yechimga ega?",
+      "v": [
+        "aynan bitta",
+        "ikkita",
+        "uchta",
+        "yechimi yo'q"
+      ],
+      "t": 0,
+      "izoh": "s'(t) = 3t² − 12t + 12 = 3(t − 2)² ifoda hech qachon manfiy emas va faqat t = 2 da nolga aylanadi, shuning uchun yo'l funksiyasi qat'iy o'suvchi. Qat'iy o'suvchi funksiya har bir qiymatni ko'pi bilan bir marta qabul qiladi. s(2) = 8 − 24 + 24 = 8, demak yechim bor va u yagona. Javob: aynan bitta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harakat-vaqt-yagona",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#57586361"
+    },
+    {
+      "q": "f(x) = 2x³ + 3x² − 36x + 7 funksiyaning o'sish oraliqlarini toping va f(x) = 0 tenglamaning haqiqiy ildizlari sonini aniqlang.",
+      "v": [
+        "(−3; 2); 3 ta ildiz",
+        "(−∞; −3) va (2; +∞); 1 ta ildiz",
+        "(−∞; −3) va (2; +∞); 3 ta ildiz",
+        "(−∞; −3) va (2; +∞); 2 ta ildiz"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 6x² + 6x − 36 = 6(x + 3)(x − 2), demak x < −3 va x > 2 da hosila musbat: funksiya (−∞; −3) va (2; +∞) oraliqlarda o'sadi. Lokal maksimum f(−3) = −54 + 27 + 108 + 7 = 88 > 0, lokal minimum f(2) = 16 + 12 − 72 + 7 = −37 < 0. Ekstremum qiymatlar har xil ishorali bo'lgani uchun tenglama uchta ildizga ega. Javob: (−∞; −3) va (2; +∞); 3 ta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-oraliq-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#a2d73a2e"
+    },
+    {
+      "q": "x³ − 12x = n tenglama uchta har xil ildizga ega bo'ladigan nechta natural n qiymati bor?",
+      "v": [
+        "16 ta",
+        "31 ta",
+        "15 ta",
+        "14 ta"
+      ],
+      "t": 2,
+      "izoh": "f(x) = x³ − 12x uchun lokal maksimum f(−2) = 16, lokal minimum f(2) = −16. Uchta ildiz uchun −16 < n < 16 bo'lishi kerak. Natural sonlar 1 dan boshlanadi, shuning uchun n = 1, 2, …, 15 qiymatlarni oladi. Javob: 15 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-parametr-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#89233b0a"
+    },
+    {
+      "q": "x > 0 sohada sin x < x tengsizligini isbotlash uchun f(x) = x − sin x funksiya olindi. Uning hosilasi haqida nima deyish mumkin?",
+      "v": [
+        "f'(x) ≥ 0 va faqat ayrim nuqtalarda nolga teng",
+        "f'(x) hamma joyda manfiy",
+        "f'(x) ishorasi almashib turadi",
+        "f'(x) barcha x uchun nolga teng"
+      ],
+      "t": 0,
+      "izoh": "f(x) = x − sin x uchun f'(x) = 1 − cos x. Kosinus 1 dan katta bo'lmagani uchun bu ayirma hech qachon manfiy emas va faqat x = 2πk nuqtalarda nolga aylanadi. Demak f o'suvchi, f(0) = 0 bo'lgani uchun x > 0 da f(x) > 0, ya'ni sin x < x. Javob: f'(x) ≥ 0 va faqat ayrim nuqtalarda nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-yagona-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#dbd55b69"
+    },
+    {
+      "q": "Farg'onadagi issiqxonada quyosh chiqqandan keyin x soat o'tganda harorat T(x) = x³ + 2x + 12 °C bo'ladi (0 ≤ x ≤ 3). T(x) = 40 tenglama shu oraliqda nechta yechimga ega?",
+      "v": [
+        "ikkita",
+        "uchta",
+        "yechimi yo'q",
+        "bitta"
+      ],
+      "t": 3,
+      "izoh": "T'(x) = 3x² + 2 har qanday x da musbat, demak harorat funksiyasi [0; 3] kesmada qat'iy o'suvchi. T(2) = 8 + 4 + 12 = 24 < 40 va T(3) = 27 + 6 + 12 = 45 > 40, demak yechim 2 bilan 3 orasida joylashgan. Qat'iy monoton funksiya bu qiymatni ikkinchi marta olmaydi. Javob: bitta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-yagona-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#54d09ed9"
+    },
+    {
+      "q": "f(x) = 2x³ + 3x² − 12x + 1 funksiyaning ekstremum qiymatlarini hisoblang va f(x) = 0 tenglama nechta haqiqiy ildizga ega ekanini aniqlang.",
+      "v": [
+        "21 va −6; 2 ta ildiz",
+        "21 va −6; 3 ta ildiz",
+        "21 va −6; 1 ta ildiz",
+        "15 va −6; 3 ta ildiz"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 6x² + 6x − 12 = 6(x + 2)(x − 1), kritik nuqtalar x = −2 va x = 1. f(−2) = −16 + 12 + 24 + 1 = 21 lokal maksimum, f(1) = 2 + 3 − 12 + 1 = −6 lokal minimum. Ekstremum qiymatlar qarama-qarshi ishorali bo'lgani uchun grafik Ox o'qini uch nuqtada kesadi. Javob: 21 va −6; 3 ta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstremum-qiymat-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#ef8c97c4"
+    },
+    {
+      "q": "x³ − 3x² + 2 = t tenglama aynan ikkita har xil ildizga ega bo'lsa, t ning qiymatlarini toping.",
+      "v": [
+        "t = 0",
+        "−2 < t < 2",
+        "t = 2 yoki t = −2",
+        "t > 2"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 3x² − 6x = 3x(x − 2), kritik nuqtalar x = 0 va x = 2. Lokal maksimum f(0) = 2, lokal minimum f(2) = −2. Aynan ikkita har xil ildiz y = t chizig'i ekstremum nuqtalaridan birining darajasida o'tganda hosil bo'ladi. Javob: t = 2 yoki t = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-ikki-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#dccb629e"
+    },
+    {
+      "q": "Omborda x tonna mahsulot saqlash xarajati C(x) = x² + 54/x million so'mni tashkil etadi. Hosila yordamida xarajatning eng kichik qiymati necha million so'm ekanini aniqlang.",
+      "v": [
+        "27",
+        "3",
+        "18",
+        "36"
+      ],
+      "t": 0,
+      "izoh": "C'(x) = 2x − 54/x². Nolga tenglashtirsak 2x³ = 54, ya'ni x³ = 27 va x = 3. Hosila x < 3 da manfiy, x > 3 da musbat, demak x = 3 minimum nuqta. Eng kichik qiymat C(3) = 9 + 18 = 27 million so'm, ya'ni barcha musbat x lar uchun x² + 54/x ≥ 27 tengsizlik o'rinli. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-farq-min",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#dd7b5d51"
+    },
+    {
+      "q": "x³ − 3x² − 9x + 30 = 0 tenglama nechta haqiqiy ildizga ega?",
+      "v": [
+        "3 ta",
+        "1 ta",
+        "2 ta",
+        "ildizi yo'q"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 3x² − 6x − 9 = 3(x − 3)(x + 1), kritik nuqtalar x = −1 va x = 3. Lokal maksimum f(−1) = 35, lokal minimum f(3) = 3. Ikkala ekstremum qiymat ham musbat bo'lgani uchun grafik Ox o'qini faqat kritik nuqtalardan chapda bir marta kesadi. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniq-a-uchun-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#ec6ed915"
+    },
+    {
+      "q": "x > 0 bo'lganda x − ln x ifodaning eng kichik qiymati nechaga teng?",
+      "v": [
+        "0",
+        "1",
+        "e",
+        "−1"
+      ],
+      "t": 1,
+      "izoh": "f(x) = x − ln x uchun f'(x) = 1 − 1/x. Nolga tenglashtirsak x = 1 kelib chiqadi. Hosila x < 1 da manfiy, x > 1 da musbat, demak x = 1 minimum nuqta. f(1) = 1 − ln 1 = 1 − 0 = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#8da53922"
+    },
+    {
+      "q": "x + 16/x = c tenglama x > 0 sohada ikkita har xil ildizga ega bo'lishi uchun c qanday bo'lishi kerak?",
+      "v": [
+        "c < 8",
+        "c = 8",
+        "c ≥ 8",
+        "c > 8"
+      ],
+      "t": 3,
+      "izoh": "f(x) = x + 16/x uchun f'(x) = 1 − 16/x², u musbat sohada x = 4 da nolga aylanadi va bu minimum nuqta: f(4) = 4 + 4 = 8. x nolga yoki cheksizlikka intilganda f cheksiz o'sadi. c = 8 bo'lganda faqat bitta ildiz (x = 4) chiqadi, shuning uchun ikkita har xil ildiz uchun tengsizlik qat'iy bo'lishi kerak. Javob: c > 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-funksiya-min-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#3cdad573"
+    },
+    {
+      "q": "2x³ − 3x² − 12x = a tenglama uchta har xil haqiqiy ildizga ega bo'ladigan a lar oralig'ini toping.",
+      "v": [
+        "−20 < a < 7",
+        "−7 < a < 20",
+        "a < −20",
+        "a > 7"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 6x² − 6x − 12 = 6(x − 2)(x + 1), kritik nuqtalar x = −1 va x = 2. f(−1) = 7 lokal maksimum, f(2) = −20 lokal minimum. Uchta ildiz uchun y = a chizig'i ikki ekstremum orasidan o'tishi kerak. Javob: −20 < a < 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-uch-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#d3ee7594"
+    },
+    {
+      "q": "y = x⁴ va y = 4x − 3 chiziqlar nechta umumiy nuqtaga ega?",
+      "v": [
+        "ikki nuqtada",
+        "faqat bitta nuqtada",
+        "uch nuqtada",
+        "umumiy nuqtasi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Umumiy nuqta uchun x⁴ = 4x − 3, ya'ni f(x) = x⁴ − 4x + 3 = 0. f'(x) = 4x³ − 4 = 4(x³ − 1), yagona kritik nuqta x = 1 va u global minimum. f(1) = 1 − 4 + 3 = 0, demak grafik Ox o'qiga faqat shu nuqtada tegadi. Javob: faqat bitta nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-grafik-kesishish-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#59170645"
+    },
+    {
+      "q": "Sardor to'g'ri to'rtburchak shaklidagi tomorqani 60 metr sim bilan o'raydi. Tomoni x metr bo'lganda yuza S(x) = x(30 − x) m² ga teng. Hosila yordamida yuza uchun qaysi tengsizlik o'rinli ekanini aniqlang.",
+      "v": [
+        "x(30 − x) ≤ 225",
+        "x(30 − x) ≤ 900",
+        "x(30 − x) ≥ 225",
+        "x(30 − x) ≤ 450"
+      ],
+      "t": 0,
+      "izoh": "S'(x) = 30 − 2x, u x = 15 da nolga aylanadi; hosila undan chapda musbat, o'ngda manfiy, demak x = 15 maksimum nuqta. Eng katta yuza S(15) = 15 · 15 = 225 m². Demak 0 < x < 30 sohada har doim x(30 − x) ≤ 225 va tenglik faqat tomorqa kvadrat bo'lganda o'rinli. Javob: x(30 − x) ≤ 225.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tengsizlik-isbot",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#044ade70"
+    },
+    {
+      "q": "x ≥ 0 uchun x³ + 4 ≥ 3x² tengsizligini isbotlashda f(x) = x³ − 3x² + 4 tekshirildi. Uning eng kichik qiymati qanday?",
+      "v": [
+        "0",
+        "4",
+        "−4",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² − 6x = 3x(x − 2), x ≥ 0 sohada kritik nuqta x = 2. Hosila 0 < x < 2 da manfiy, x > 2 da musbat, demak x = 2 minimum nuqta. f(2) = 8 − 12 + 4 = 0. Eng kichik qiymat nolga teng bo'lgani uchun x³ + 4 ≥ 3x² tengsizlik bajariladi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-isbot-qadam",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#00ddac7b"
+    },
+    {
+      "q": "Zavodda foyda modeli P(x) = x³ − 12x² + 36x ko'rinishda berilgan. P(x) = q tenglama yagona yechimga ega bo'lishi uchun q qanday bo'lishi kerak?",
+      "v": [
+        "0 < q < 32",
+        "q = 0 yoki q = 32",
+        "q > 0",
+        "q > 32 yoki q < 0"
+      ],
+      "t": 3,
+      "izoh": "P'(x) = 3x² − 24x + 36 = 3(x − 2)(x − 6), kritik nuqtalar x = 2 va x = 6. P(2) = 32 lokal maksimum, P(6) = 0 lokal minimum. y = q chizig'i grafikni bitta nuqtada kesishi uchun q ekstremum qiymatlari oralig'idan tashqarida bo'lishi kerak. Javob: q > 32 yoki q < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-bitta-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#08899807"
+    },
+    {
+      "q": "f(x) = 2x³ − 9x² + 12x − 4 funksiya [0; 3] kesmada nechta har xil ildizga ega?",
+      "v": [
+        "bitta ildiz",
+        "ikkita ildiz",
+        "uchta ildiz",
+        "ildizi yo'q"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 6x² − 18x + 12 = 6(x − 1)(x − 2), kritik nuqtalar x = 1 va x = 2. Kesmadagi qiymatlar: f(0) = −4, f(1) = 1, f(2) = 0, f(3) = 5. [0; 1] oraliqda ishora manfiydan musbatga o'tadi va u yerda bitta ildiz bor; f(2) = 0 bo'lgani uchun x = 2 ham ildiz, unda grafik o'qqa urinadi. Javob: ikkita ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmadagi-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#afec001d"
+    },
+    {
+      "q": "x³ − 27x + k = 0 tenglama uchta har xil haqiqiy ildizga ega bo'lishi uchun k qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "k < −54",
+        "k > 54 yoki k < −54",
+        "−54 < k < 54",
+        "k = 54 yoki k = −54"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 3x² − 27 = 3(x − 3)(x + 3), kritik nuqtalar x = −3 va x = 3. f(−3) = 54 + k lokal maksimum, f(3) = k − 54 lokal minimum. Uchta ildiz uchun ekstremum qiymatlarning ko'paytmasi manfiy bo'lishi kerak: (54 + k)(k − 54) < 0. Bundan −54 < k < 54. Javob: −54 < k < 54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremum-kopaytma-shart",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#0d9919ec"
+    },
+    {
+      "q": "eˣ ≥ ex tengsizligi barcha haqiqiy x lar uchun bajariladi. Ikki tomon ayirmasi eng kichik bo'ladigan x ni toping.",
+      "v": [
+        "x = 0",
+        "x = 1",
+        "x = e",
+        "x = −1"
+      ],
+      "t": 1,
+      "izoh": "f(x) = eˣ − ex deb olamiz, f'(x) = eˣ − e. Nolga tenglashtirsak eˣ = e, ya'ni x = 1. Hosila x < 1 da manfiy, x > 1 da musbat, demak x = 1 minimum nuqta. Bu yerda f(1) = e − e = 0, shuning uchun ayirma hech qachon manfiy bo'lmaydi. Javob: x = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-tengsizlik",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#37312f8d"
+    },
+    {
+      "q": "x⁴ − 2x² = a tenglama to'rtta har xil haqiqiy ildizga ega bo'lishi uchun a qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "0 < a < 1",
+        "a < −1",
+        "a > 0",
+        "−1 < a < 0"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 4x³ − 4x = 4x(x − 1)(x + 1). Kritik nuqtalar x = −1, 0 va 1; f(−1) = f(1) = −1 ikkita minimum, f(0) = 0 lokal maksimum. y = a chizig'i W shaklidagi grafikni to'rt nuqtada kesishi uchun a minimum bilan lokal maksimum orasida yotishi kerak. Javob: −1 < a < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvartik-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#29c800aa"
+    },
+    {
+      "q": "Hosila yordamida x > 0 uchun 1 + 2ln x va x² ifodalardan qaysi biri katta ekanini aniqlang.",
+      "v": [
+        "1 + 2ln x har doim katta",
+        "x² kichik bo'lmaydi, x = 1 da teng",
+        "har doim teng",
+        "aniqlab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "f(x) = x² − 1 − 2ln x deb olamiz, f'(x) = 2x − 2/x = 2(x² − 1)/x. Musbat sohada hosila x = 1 da nolga aylanadi, undan chapda manfiy, o'ngda musbat, demak x = 1 minimum. f(1) = 1 − 1 − 0 = 0, ya'ni f(x) ≥ 0 va tenglik faqat x = 1 da. Javob: x² kichik bo'lmaydi, x = 1 da teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-hosila-orqali",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#475c7927"
+    },
+    {
+      "q": "Dorining qondagi konsentratsiyasi K(t) = 18t/(t² + 9) mg/l qonun bilan o'zgaradi. K(t) = 4 tenglama nechta musbat yechimga ega?",
+      "v": [
+        "yechimi yo'q",
+        "1 ta",
+        "2 ta",
+        "3 ta"
+      ],
+      "t": 0,
+      "izoh": "K'(t) = 18(9 − t²)/(t² + 9)², u t = 3 da nolga aylanadi va shu nuqtada maksimum: K(3) = 54/18 = 3 mg/l. Konsentratsiya hech qachon 3 dan oshmaydi, 4 esa undan katta. Demak y = 4 chizig'i grafikni umuman kesmaydi. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "konsentratsiya-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#8e22b689"
+    },
+    {
+      "q": "f(x) = x³ − 15x² + 63x − 10 funksiyaning kritik nuqtalarini toping va f(x) = 0 tenglama nechta haqiqiy ildizga ega ekanini aniqlang.",
+      "v": [
+        "x = 3 va x = 21; 1 ta ildiz",
+        "x = 3 va x = 7; 3 ta ildiz",
+        "x = 7 va x = 9; 2 ta ildiz",
+        "x = 3 va x = 7; 1 ta ildiz"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 3x² − 30x + 63 = 3(x − 3)(x − 7), demak kritik nuqtalar x = 3 va x = 7. Lokal maksimum f(3) = 27 − 135 + 189 − 10 = 71, lokal minimum f(7) = 343 − 735 + 441 − 10 = 39. Ikkala ekstremum qiymat ham musbat bo'lgani uchun grafik Ox o'qini faqat kritik nuqtalardan chapda bir marta kesadi. Javob: x = 3 va x = 7; 1 ta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-oraliq-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#2b668292"
+    },
+    {
+      "q": "x⁴ − 18x² = m tenglama to'rtta har xil ildizga ega bo'ladigan nechta butun m qiymati bor?",
+      "v": [
+        "81 ta",
+        "79 ta",
+        "82 ta",
+        "80 ta"
+      ],
+      "t": 3,
+      "izoh": "f(x) = x⁴ − 18x² uchun f'(x) = 4x(x − 3)(x + 3). f(−3) = f(3) = −81 ikkita minimum, f(0) = 0 lokal maksimum. To'rtta har xil ildiz uchun −81 < m < 0 bo'lishi kerak va chegaralar kirmaydi. Bu oraliqdagi butun sonlar −80 dan −1 gacha, ya'ni 80 ta. Javob: 80 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-parametr-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#b37622de"
+    },
+    {
+      "q": "y = 2x⁵ + 3x + 7 funksiyaning nechta haqiqiy noli borligini hosila belgisiga qarab aytish mumkin?",
+      "v": [
+        "5 ta",
+        "3 ta",
+        "4 ta",
+        "1 ta"
+      ],
+      "t": 3,
+      "izoh": "y' = 10x⁴ + 3 ifoda har qanday x da musbat, chunki juft daraja manfiy bo'lmaydi. Demak funksiya butun o'qda qat'iy o'suvchi va Ox o'qini ko'pi bilan bir marta kesadi. Toq darajali ko'phad uchun ildiz albatta mavjud, shuning uchun u aynan bitta. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-yagona-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#790b0dc4"
+    },
+    {
+      "q": "f(x) = x³ − 6x² − 15x + 2 funksiyaning lokal maksimum va lokal minimum qiymatlarini toping va grafik Ox o'qini necha marta kesib o'tishini ayting.",
+      "v": [
+        "10 va −98; 3 marta",
+        "10 va −98; 1 marta",
+        "10 va −98; 2 marta",
+        "8 va −98; 3 marta"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² − 12x − 15 = 3(x − 5)(x + 1), kritik nuqtalar x = −1 va x = 5. f(−1) = −1 − 6 + 15 + 2 = 10 lokal maksimum, f(5) = 125 − 150 − 75 + 2 = −98 lokal minimum. Lokal maksimum musbat, lokal minimum manfiy bo'lgani uchun grafik Ox o'qini uch marta kesib o'tadi. Javob: 10 va −98; 3 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekstremum-qiymat-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#6e196385"
+    },
+    {
+      "q": "Nilufar chang'ida sirpanmoqda, bosib o'tgan masofasi s(t) = t³ − 3t² + 5t metr. Tezlik nolga aylanmasligini tekshiring va s(t) = 100 tenglama t > 0 sohada nechta yechimga ega ekanini aniqlang.",
+      "v": [
+        "yechim yo'q",
+        "ikkita yechim",
+        "uchta yechim",
+        "bitta yechim"
+      ],
+      "t": 3,
+      "izoh": "s'(t) = 3t² − 6t + 5 uchhadning diskriminanti D = 36 − 60 = −24 < 0, bosh koeffitsient esa musbat, demak tezlik hech qachon nolga aylanmaydi va masofa qat'iy o'suvchi. s(5) = 125 − 75 + 25 = 75 < 100, s(6) = 216 − 108 + 30 = 138 > 100, ya'ni yechim 5 bilan 6 orasida. Qat'iy o'suvchi funksiya bu qiymatni takror qabul qilmaydi. Javob: bitta yechim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "harakat-vaqt-yagona",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#f332fdf1"
+    },
+    {
+      "q": "x³ − 75x = d tenglama aynan ikkita har xil ildizga ega bo'lsa, d ning musbat qiymatini toping.",
+      "v": [
+        "75",
+        "125",
+        "250",
+        "375"
+      ],
+      "t": 2,
+      "izoh": "f'(x) = 3x² − 75 = 3(x − 5)(x + 5), kritik nuqtalar x = −5 va x = 5. f(−5) = −125 + 375 = 250 lokal maksimum, f(5) = −250 lokal minimum. Aynan ikkita ildiz y = d chizig'i ekstremum darajasidan o'tganda hosil bo'ladi, musbat qiymat esa 250. Javob: 250.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-ikki-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#5236dfc8"
+    },
+    {
+      "q": "Bir sayohatchi 100 km yo'lni v km/soat tezlikda bosadi va sayohat xarajati (haydovchi haqi bilan yoqilg'i) C(v) = 2500/v + v ming so'mga teng. Xarajat eng kam bo'ladigan tezlikni toping.",
+      "v": [
+        "25",
+        "100",
+        "10",
+        "50"
+      ],
+      "t": 3,
+      "izoh": "C'(v) = −2500/v² + 1. Nolga tenglashtirsak 2500/v² = 1, bundan v² = 2500 va v = 50 km/soat. Hosila v < 50 da manfiy, v > 50 da musbat, demak v = 50 minimum nuqta va eng kam xarajat C(50) = 50 + 50 = 100 ming so'm bo'ladi. Javob: 50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-funksiya-min-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#d1fda6cd"
+    },
+    {
+      "q": "x³ + 6x² + 9x + 2 = 0 tenglamaning haqiqiy ildizlari sonini aniqlang.",
+      "v": [
+        "uchta ildiz",
+        "bitta ildiz",
+        "ikkita ildiz",
+        "ildizi yo'q"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² + 12x + 9 = 3(x + 1)(x + 3), kritik nuqtalar x = −3 va x = −1. Lokal maksimum f(−3) = 2 > 0, lokal minimum f(−1) = −2 < 0. Ekstremum qiymatlar qarama-qarshi ishorali bo'lgani uchun grafik Ox o'qini uch marta kesadi. Javob: uchta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniq-a-uchun-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#4b8460ee"
+    },
+    {
+      "q": "Barcha x > 0 uchun x² + a/x ≥ 12 tengsizlik bajarilishi uchun musbat a ning eng kichik qiymatini toping.",
+      "v": [
+        "8",
+        "12",
+        "16",
+        "24"
+      ],
+      "t": 2,
+      "izoh": "f(x) = x² + a/x uchun f'(x) = 2x − a/x². Nolga tenglashtirsak 2x³ = a, ya'ni minimum nuqta x₀ da a = 2x₀³ bo'ladi. Shu nuqtadagi qiymat f(x₀) = x₀² + 2x₀² = 3x₀², u kamida 12 ga teng bo'lishi kerak, bundan x₀ = 2. Demak a = 2·8 = 16. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tengsizlik-farq-min",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#c283d70a"
+    },
+    {
+      "q": "3x⁴ − 4x³ = s tenglama haqiqiy ildizga ega bo'lmasligi uchun s qanday bo'lishi kerak?",
+      "v": [
+        "s > −1",
+        "s < 0",
+        "s = −1",
+        "s < −1"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 12x³ − 12x² = 12x²(x − 1). Hosila x < 1 da manfiy, x > 1 da musbat, x = 0 da esa ishorasini o'zgartirmaydi, demak x = 1 global minimum. f(1) = 3 − 4 = −1. y = s chizig'i grafikni umuman kesmasligi uchun s bu qiymatdan kichik bo'lishi kerak. Javob: s < −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizsiz-parametr",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#1509277b"
+    },
+    {
+      "q": "2x + cos x = 5 tenglama nechta haqiqiy yechimga ega?",
+      "v": [
+        "yechimi yo'q",
+        "2 ta",
+        "1 ta",
+        "cheksiz ko'p"
+      ],
+      "t": 2,
+      "izoh": "f(x) = 2x + cos x deb olamiz, f'(x) = 2 − sin x. Sinus 1 dan oshmagani uchun f'(x) ≥ 1 > 0, demak funksiya qat'iy o'suvchi. f(2) ≈ 3,58 < 5 va f(3) ≈ 5,01 > 5, ya'ni yechim bor va monotonlik tufayli u yagona. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-yagona-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#f159de6c"
+    },
+    {
+      "q": "2x³ + 3x² − 12x = w tenglama uchta har xil ildizga ega bo'lishi uchun w oralig'ini ko'rsating.",
+      "v": [
+        "−20 < w < 7",
+        "−7 < w < 20",
+        "w < −7",
+        "w > 20"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 6x² + 6x − 12 = 6(x + 2)(x − 1), kritik nuqtalar x = −2 va x = 1. f(−2) = 20 lokal maksimum, f(1) = −7 lokal minimum. y = w chizig'i uch nuqtada kesishi uchun w minimum bilan maksimum orasida yotishi kerak. Javob: −7 < w < 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-uch-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#12cb9104"
+    },
+    {
+      "q": "x > 0 sohada ln x = x − 2 tenglama nechta yechimga ega?",
+      "v": [
+        "yechimi bo'lmaydi",
+        "bitta yechim",
+        "uchta yechim",
+        "ikkita yechim"
+      ],
+      "t": 3,
+      "izoh": "f(x) = x − 2 − ln x deb olamiz, f'(x) = 1 − 1/x. Hosila x = 1 da nolga aylanadi, undan chapda manfiy, o'ngda musbat, demak x = 1 minimum nuqta va f(1) = −1 < 0. x nolga intilganda ham, cheksizlikka intilganda ham f(x) cheksiz o'sadi. Demak grafik Ox o'qini ikki marta kesadi. Javob: ikkita yechim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifmik-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#a85395d5"
+    },
+    {
+      "q": "Bir do'kon kuniga x dona telefon g'ilofi sotganda foydasi F(x) = 90x − x² − 800 ming so'm bo'ladi. Foyda grafigi Ox o'qini necha marta kesib o'tadi?",
+      "v": [
+        "2 marta",
+        "1 marta",
+        "3 marta",
+        "umuman kesmaydi"
+      ],
+      "t": 0,
+      "izoh": "F'(x) = 90 − 2x, u x = 45 da nolga aylanadi va bu maksimum nuqta. F(45) = 4050 − 2025 − 800 = 1225 ming so'm > 0, ya'ni eng katta kunlik foyda musbat. F(0) = −800 < 0 va katta x larda ham funksiya manfiy bo'lgani uchun grafik o'qni ikki marta (x = 10 va x = 80 da) kesadi. Javob: 2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-optimal-yagona",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#493aed29"
+    },
+    {
+      "q": "x ≥ 0 bo'lganda x³ − 12x + c ≥ 0 tengsizlik bajarilishi uchun c ning eng kichik qiymatini toping.",
+      "v": [
+        "12",
+        "16",
+        "8",
+        "−16"
+      ],
+      "t": 1,
+      "izoh": "g(x) = x³ − 12x deb olamiz, g'(x) = 3x² − 12 = 3(x − 2)(x + 2). x ≥ 0 sohada yagona kritik nuqta x = 2 va u minimum: g(2) = 8 − 24 = −16. Tengsizlik c ≥ −g(x) ko'rinishiga keladi, o'ng tomonning eng katta qiymati 16. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-C-tengsizlik",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#ab417749"
+    },
+    {
+      "q": "y = x³ − 3x² grafigi va y = −4 to'g'ri chiziq nechta umumiy nuqtaga ega?",
+      "v": [
+        "bitta umumiy nuqta",
+        "uchta umumiy nuqta",
+        "ikkita umumiy nuqta",
+        "umumiy nuqtasi yo'q"
+      ],
+      "t": 2,
+      "izoh": "Kesishish uchun x³ − 3x² = −4, ya'ni x³ − 3x² + 4 = 0. f(x) = x³ − 3x² uchun f'(x) = 3x(x − 2), lokal maksimum f(0) = 0, lokal minimum f(2) = −4. y = −4 chizig'i aynan minimum darajasidan o'tadi, shuning uchun bir joyda urinadi va bir joyda kesadi. Javob: ikkita umumiy nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-grafik-kesishish-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#91f48453"
+    },
+    {
+      "q": "x³ − 6x² + 9x = r tenglama yagona ildizga ega bo'lishi uchun r qanday shartni qanoatlantiradi?",
+      "v": [
+        "0 < r < 4",
+        "r = 0 yoki r = 4",
+        "r ≥ 4",
+        "r > 4 yoki r < 0"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3), kritik nuqtalar x = 1 va x = 3. f(1) = 4 lokal maksimum, f(3) = 0 lokal minimum. Yagona ildiz uchun y = r chizig'i ekstremum qiymatlari oralig'idan tashqarida bo'lishi kerak. Javob: r > 4 yoki r < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-bitta-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#6fe9786f"
+    },
+    {
+      "q": "Ikki musbat son uchun a + b ≥ 2√(ab) tengsizligini hosila bilan isbotlashda b ni o'zgarmas deb olib qanday funksiya kiritiladi?",
+      "v": [
+        "f(a) = a + b − 2√(ab)",
+        "f(a) = a·b − 1",
+        "f(a) = √a + √b",
+        "f(a) = a − b"
+      ],
+      "t": 0,
+      "izoh": "Tengsizlikni isbotlashning odatiy yo'li — ikki tomon ayirmasini funksiya deb qarash: f(a) = a + b − 2√(ab). Uning hosilasi f'(a) = 1 − √(b/a) bo'lib, u a = b da nolga aylanadi va shu nuqtada minimum. f(b) = 2b − 2b = 0 bo'lgani uchun f(a) ≥ 0 va tengsizlik isbotlanadi. Javob: f(a) = a + b − 2√(ab).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tengsizlik-isbot-qadam",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#5ebf22dc"
+    },
+    {
+      "q": "3x⁴ + 4x³ − 12x² = 0 tenglama nechta har xil haqiqiy ildizga ega?",
+      "v": [
+        "ikkita",
+        "uchta",
+        "to'rtta",
+        "bitta"
+      ],
+      "t": 1,
+      "izoh": "f(x) = 3x⁴ + 4x³ − 12x² uchun f'(x) = 12x³ + 12x² − 24x = 12x(x + 2)(x − 1). Kritik nuqtalar x = −2, 0 va 1; f(−2) = −32 va f(1) = −5 minimumlar, f(0) = 0 lokal maksimum. Lokal maksimum aynan nolga teng bo'lgani uchun grafik x = 0 da o'qqa urinadi, ikki minimum manfiy bo'lgani uchun chap va o'ngda bittadan kesishish bor. Javob: uchta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvartik-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#e46379c6"
+    },
+    {
+      "q": "f(x) = x³ − 9x² + 24x − 18 funksiya [1; 5] kesmada nechta nolga ega?",
+      "v": [
+        "uchta",
+        "ikkita",
+        "bitta",
+        "nolga ega emas"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² − 18x + 24 = 3(x − 2)(x − 4), kritik nuqtalar x = 2 va x = 4. Kesmadagi qiymatlar: f(1) = −2, f(2) = 2, f(4) = −2, f(5) = 2. Har bir qo'shni juftlikda ishora almashadi va oraliqda funksiya monoton, demak har birida aynan bitta nol bor. Javob: uchta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmadagi-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#a3c64293"
+    },
+    {
+      "q": "x³ − 3x + p = 0 tenglama aynan ikkita har xil haqiqiy ildizga ega bo'ladigan p larning ko'paytmasi nechaga teng?",
+      "v": [
+        "4",
+        "0",
+        "−2",
+        "−4"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 3x² − 3 = 3(x − 1)(x + 1), kritik nuqtalar x = −1 va x = 1. Lokal maksimum f(−1) = p + 2, lokal minimum f(1) = p − 2. Aynan ikkita har xil ildiz ekstremum qiymatlaridan biri nolga teng bo'lganda hosil bo'ladi: p = −2 yoki p = 2. Ularning ko'paytmasi −4. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremum-kopaytma-shart",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#876a616e"
+    },
+    {
+      "q": "Hosila yordamida x > 0 sohada √x va ln x ifodalarni taqqoslang.",
+      "v": [
+        "ln x har doim katta",
+        "√x har doim katta",
+        "x = 4 da teng bo'ladi",
+        "taqqoslash mumkin emas"
+      ],
+      "t": 1,
+      "izoh": "f(x) = √x − ln x deb olamiz, f'(x) = 1/(2√x) − 1/x = (√x − 2)/(2x). Hosila x = 4 da nolga aylanadi, undan chapda manfiy, o'ngda musbat, demak x = 4 minimum nuqta. f(4) = 2 − ln 4 ≈ 2 − 1,39 = 0,61 > 0, ya'ni ayirma barcha musbat x uchun musbat. Javob: √x har doim katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-hosila-orqali",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#c30d18a3"
+    },
+    {
+      "q": "Toshkentda bir kvartira narxi N(t) = t³ + 5t + 400 million so'm qonuniyat bilan o'sib bormoqda. N(t) = 500 tenglama nechta yechimga ega?",
+      "v": [
+        "2 ta",
+        "yechimi yo'q",
+        "1 ta",
+        "3 ta"
+      ],
+      "t": 2,
+      "izoh": "N'(t) = 3t² + 5 har qanday t da musbat, demak narx funksiyasi qat'iy o'suvchi. N(4) = 64 + 20 + 400 = 484 < 500 va N(5) = 125 + 25 + 400 = 550 > 500, ya'ni yechim 4 bilan 5 orasida. Qat'iy o'suvchi funksiya bu qiymatni ikkinchi marta qabul qila olmaydi. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-yagona-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#52b5fa8e"
+    },
+    {
+      "q": "f(x) = 2x³ − 15x² + 24x funksiya grafigini y = a to'g'ri chizig'i uch nuqtada kesib o'tishi uchun a qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "−16 < a < 11",
+        "11 < a < 16",
+        "−11 < a < 16",
+        "a > 11"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 6x² − 30x + 24 = 6(x − 1)(x − 4), kritik nuqtalar x = 1 va x = 4. f(1) = 2 − 15 + 24 = 11 lokal maksimum, f(4) = 128 − 240 + 96 = −16 lokal minimum. y = a chizig'i grafikni uch nuqtada kesishi uchun a lokal minimum bilan lokal maksimum qiymatlari orasida yotishi kerak. Javob: −16 < a < 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekstremum-qiymat-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#3f46a40b"
+    },
+    {
+      "q": "x³ − 3x² − 24x = a tenglama uchta har xil haqiqiy yechimga ega bo'ladigan a qiymatlari to'plamini toping.",
+      "v": [
+        "−28 < a < 80",
+        "a < −80",
+        "−80 < a < 28",
+        "a > 28"
+      ],
+      "t": 2,
+      "izoh": "f(x) = x³ − 3x² − 24x uchun f'(x) = 3x² − 6x − 24 = 3(x − 4)(x + 2), kritik nuqtalar x = −2 va x = 4. f(−2) = −8 − 12 + 48 = 28 lokal maksimum, f(4) = 64 − 48 − 96 = −80 lokal minimum. y = a chizig'i grafikni uch nuqtada kesishi uchun a ikki ekstremum qiymat orasida yotishi kerak. Javob: −80 < a < 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-uch-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#38514cc2"
+    },
+    {
+      "q": "2x³ + 9x² − 24x = z tenglama aynan ikkita har xil ildizga ega bo'ladigan z lar yig'indisi nechaga teng?",
+      "v": [
+        "125",
+        "−99",
+        "112",
+        "99"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 6x² + 18x − 24 = 6(x + 4)(x − 1), kritik nuqtalar x = −4 va x = 1. f(−4) = 112 lokal maksimum, f(1) = −13 lokal minimum. Aynan ikkita ildiz z ekstremum qiymatlariga teng bo'lganda hosil bo'ladi: z = 112 yoki z = −13. Yig'indi 112 + (−13) = 99. Javob: 99.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-ikki-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#2b2dd779"
+    },
+    {
+      "q": "x³ − 6x² + 5 = u tenglama faqat bitta yechimga ega bo'lishi uchun u ning shartini yozing.",
+      "v": [
+        "u > 5 yoki u < −27",
+        "−27 < u < 5",
+        "u = 5 yoki u = −27",
+        "u > 27 yoki u < −5"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 3x² − 12x = 3x(x − 4), kritik nuqtalar x = 0 va x = 4. f(0) = 5 lokal maksimum, f(4) = −27 lokal minimum. Bitta yechim uchun y = u chizig'i ekstremum qiymatlari oralig'idan tashqarida o'tishi kerak. Javob: u > 5 yoki u < −27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-bitta-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#42286324"
+    },
+    {
+      "q": "x³ − 3x² − 9x + 27 = 0 tenglamaning har xil haqiqiy ildizlari soni nechta?",
+      "v": [
+        "uchta",
+        "ikkita",
+        "bitta",
+        "haqiqiy ildizi yo'q"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 3x² − 6x − 9 = 3(x − 3)(x + 1), kritik nuqtalar x = −1 va x = 3. Lokal maksimum f(−1) = 32 > 0, lokal minimum f(3) = 0. Minimum aynan nolga teng bo'lgani uchun grafik x = 3 da o'qqa urinadi va chapda yana bir marta kesadi. Javob: ikkita.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniq-a-uchun-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#c8b45f25"
+    },
+    {
+      "q": "x > 0 bo'lganda x + 32/x² ifodaning eng kichik qiymatini toping.",
+      "v": [
+        "4",
+        "8",
+        "6",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "f(x) = x + 32/x² uchun f'(x) = 1 − 64/x³. Nolga tenglashtirsak x³ = 64, ya'ni x = 4. Hosila x < 4 da manfiy, x > 4 da musbat, demak x = 4 minimum nuqta. f(4) = 4 + 32/16 = 4 + 2 = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tengsizlik-farq-min",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#5a4ae8ce"
+    },
+    {
+      "q": "x > 0 bo'lganda x⁴ − 32x + 48 ifodaning eng kichik qiymatini hosila yordamida toping.",
+      "v": [
+        "48",
+        "16",
+        "−16",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 4x³ − 32 = 4(x³ − 8), u x = 2 da nolga aylanadi. Hosila x < 2 da manfiy, x > 2 da musbat, demak x = 2 minimum nuqta. f(2) = 16 − 64 + 48 = 0. Eng kichik qiymat nol bo'lgani uchun x⁴ + 48 ≥ 32x tengsizlik musbat x lar uchun bajariladi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-C-tengsizlik",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#e30b6f54"
+    },
+    {
+      "q": "g(x) = x³ − 12x + 8 funksiya [−3; 3] kesmada nechta ildizga ega?",
+      "v": [
+        "bitta",
+        "ikkita",
+        "uchta",
+        "ildizga ega emas"
+      ],
+      "t": 0,
+      "izoh": "g'(x) = 3x² − 12 = 3(x − 2)(x + 2), kritik nuqtalar x = −2 va x = 2. Kesmadagi qiymatlar: g(−3) = 17, g(−2) = 24, g(2) = −8, g(3) = −1. Ishora faqat [−2; 2] oraliqda musbatdan manfiyga o'zgaradi, u yerda funksiya monoton kamayadi. Javob: bitta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesmadagi-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#e1377180"
+    },
+    {
+      "q": "x³ − 3x² − 9x = v tenglama uchta har xil ildizga ega bo'ladigan nechta butun v qiymati bor?",
+      "v": [
+        "32 ta",
+        "31 ta",
+        "33 ta",
+        "30 ta"
+      ],
+      "t": 1,
+      "izoh": "f'(x) = 3x² − 6x − 9 = 3(x − 3)(x + 1), kritik nuqtalar x = −1 va x = 3. f(−1) = 5 lokal maksimum, f(3) = −27 lokal minimum. Uchta ildiz uchun −27 < v < 5 bo'lishi kerak, chegaralar kirmaydi. Butun sonlar −26 dan 4 gacha, ya'ni 4 − (−26) + 1 = 31 ta. Javob: 31 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-parametr-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#978e7cd6"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni B(t) = t³ − 9t² + 24t + 5 ming donani tashkil etadi. B(t) = 25 tenglama t ≥ 0 sohada nechta yechimga ega?",
+      "v": [
+        "1 ta",
+        "4 ta",
+        "2 ta",
+        "3 ta"
+      ],
+      "t": 2,
+      "izoh": "B'(t) = 3t² − 18t + 24 = 3(t − 2)(t − 4), kritik nuqtalar t = 2 va t = 4. B(0) = 5, B(2) = 25 lokal maksimum, B(4) = 21 lokal minimum. y = 25 chizig'i lokal maksimum darajasidan o'tadi: u yerda urinish bor, keyingi o'sish davrida esa yana bir marta kesishadi. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "harakat-vaqt-yagona",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#79ae6c10"
+    },
+    {
+      "q": "Havodagi chang miqdori D(t) = 8t/(t² + 16) mg/m³ qonun bilan o'zgaradi. Uning eng katta qiymati nechaga teng?",
+      "v": [
+        "8",
+        "2",
+        "4",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "D'(t) = 8(16 − t²)/(t² + 16)², u t = 4 da nolga aylanadi va shu yerda ishora musbatdan manfiyga o'tadi. Demak t = 4 maksimum nuqta. D(4) = 32/(16 + 16) = 32/32 = 1 mg/m³. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konsentratsiya-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#5b58e531"
+    },
+    {
+      "q": "x⁴ − 32x² = g tenglama aynan ikkita har xil haqiqiy ildizga ega bo'lishi uchun g qanday bo'lishi kerak?",
+      "v": [
+        "g > 0 yoki g = −256",
+        "g = 0",
+        "−256 < g < 0",
+        "g < −256"
+      ],
+      "t": 0,
+      "izoh": "f'(x) = 4x(x − 4)(x + 4), kritik nuqtalar x = −4, 0 va 4. f(−4) = f(4) = 256 − 512 = −256 ikkita minimum, f(0) = 0 lokal maksimum. g > 0 bo'lsa y = g chizig'i grafikni faqat ikki chekka shoxda kesadi; g = −256 bo'lsa ikkala minimum nuqtasiga urinadi. Javob: g > 0 yoki g = −256.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvartik-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#af0a45d9"
+    },
+    {
+      "q": "x > 0 sohada 2ln x = x tenglama nechta yechimga ega?",
+      "v": [
+        "bitta yechim",
+        "ikkita yechim",
+        "yechimi yo'q",
+        "uchta yechim"
+      ],
+      "t": 2,
+      "izoh": "f(x) = x − 2ln x deb olamiz, f'(x) = 1 − 2/x. Hosila x = 2 da nolga aylanadi, undan chapda manfiy, o'ngda musbat, demak x = 2 minimum nuqta. f(2) = 2 − 2ln 2 ≈ 2 − 1,39 = 0,61 > 0. Eng kichik qiymat musbat bo'lgani uchun f(x) hech qachon nolga aylanmaydi. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifmik-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#90e92fec"
+    },
+    {
+      "q": "x > 0 uchun eˣ > x² tengsizligi to'g'rimi? f(x) = eˣ − x² funksiya orqali tekshiring.",
+      "v": [
+        "yo'q, x = 2 atrofida buziladi",
+        "ha, barcha musbat x uchun to'g'ri",
+        "faqat x > 4 da to'g'ri",
+        "faqat x < 1 da to'g'ri"
+      ],
+      "t": 1,
+      "izoh": "f(x) = eˣ − x² uchun f'(x) = eˣ − 2x va f''(x) = eˣ − 2. Ikkinchi hosila x = ln 2 da nolga aylanadi, shu nuqtada f'(ln 2) = 2 − 2ln 2 ≈ 0,61 > 0, ya'ni birinchi hosilaning eng kichik qiymati musbat. Demak f o'suvchi va f(0) = 1 > 0 bo'lgani uchun barcha musbat x da f(x) > 0. Javob: ha, barcha musbat x uchun to'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-tengsizlik",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#74c065e6"
+    },
+    {
+      "q": "3x − cos x = 2 tenglama nechta haqiqiy ildizga ega ekanini hosila orqali aniqlang.",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "1 ta",
+        "cheksiz ko'p"
+      ],
+      "t": 2,
+      "izoh": "f(x) = 3x − cos x deb olamiz, f'(x) = 3 + sin x. Sinus −1 dan kichik bo'lmagani uchun f'(x) ≥ 2 > 0, demak funksiya qat'iy o'suvchi. f(0) = −1 < 2 va f(1) ≈ 2,46 > 2, ya'ni yechim bor va u yagona. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-yagona-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#2d83d97f"
+    },
+    {
+      "q": "x + 9/x = h tenglama x > 0 sohada yechimga ega bo'lmasligi uchun h qanday bo'lishi kerak?",
+      "v": [
+        "h > 6",
+        "h < 6",
+        "h = 6",
+        "h < 9"
+      ],
+      "t": 1,
+      "izoh": "f(x) = x + 9/x uchun f'(x) = 1 − 9/x², u musbat sohada x = 3 da nolga aylanadi va bu minimum nuqta: f(3) = 3 + 3 = 6. Ifoda 6 dan kichik qiymat qabul qila olmaydi. Demak h < 6 bo'lganda tenglama yechimga ega bo'lmaydi. Javob: h < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizsiz-parametr",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#2907ae60"
+    },
+    {
+      "q": "f(x) = x³ − 12x² + 45x − 50 funksiya qaysi oraliqda kamayadi va f(x) = 0 tenglama nechta har xil haqiqiy ildizga ega?",
+      "v": [
+        "(3; 5); 3 ta ildiz",
+        "(−∞; 3) va (5; +∞); 2 ta ildiz",
+        "(3; 5); 1 ta ildiz",
+        "(3; 5); 2 ta ildiz"
+      ],
+      "t": 3,
+      "izoh": "f'(x) = 3x² − 24x + 45 = 3(x − 3)(x − 5), demak 3 < x < 5 da hosila manfiy va funksiya shu oraliqda kamayadi. Lokal maksimum f(3) = 27 − 108 + 135 − 50 = 4 > 0, lokal minimum f(5) = 125 − 300 + 225 − 50 = 0. Minimum aynan nolga teng, ya'ni grafik Ox o'qiga x = 5 da urinadi va undan chapda yana bir marta kesadi: f(x) = (x − 5)²(x − 2). Javob: (3; 5); 2 ta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-oraliq-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#38a93c74"
+    },
+    {
+      "q": "Jasur 24 sm ga 24 sm o'lchamli kartonning burchaklaridan x sm li kvadratlar kesib olib, qopqoqsiz quti yasaydi. Quti hajmi V(x) = x(24 − 2x)² sm³ bo'lsa, V(x) = 1024 tenglama 0 < x < 12 oraliqda nechta yechimga ega?",
+      "v": [
+        "faqat bitta",
+        "ikkita",
+        "uchta",
+        "yechimi yo'q"
+      ],
+      "t": 0,
+      "izoh": "V(x) = 4x³ − 96x² + 576x, V'(x) = 12x² − 192x + 576 = 12(x − 4)(x − 12). 0 < x < 12 oraliqda yagona kritik nuqta x = 4 va hosila unda musbatdan manfiyga o'tadi, demak bu maksimum: V(4) = 256 − 1536 + 2304 = 1024 sm³. Chekkalarda hajm nolga intiladi, 1024 esa eng katta qiymat — unga funksiya faqat bir marta erishadi. Javob: faqat bitta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-hajm-ildiz-soni",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#db4c9fd0"
+    },
+    {
+      "q": "x > 0 bo'lganda (x² + 49)/x kasrning eng kichik qiymatini hosila yordamida aniqlang.",
+      "v": [
+        "7",
+        "49",
+        "14",
+        "28"
+      ],
+      "t": 2,
+      "izoh": "f(x) = (x² + 49)/x uchun f'(x) = (x² − 49)/x². Hosila x = 7 da nolga aylanadi, undan chapda manfiy, o'ngda musbat, demak x = 7 minimum nuqta. f(7) = (49 + 49)/7 = 98/7 = 14. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-funksiya-min-ildiz",
+      "id": "matematika_anlz_m10-hosila-yordamida-ildizlar-sonini-aniqlash#c2d2f994"
+    }
+  ]
+}

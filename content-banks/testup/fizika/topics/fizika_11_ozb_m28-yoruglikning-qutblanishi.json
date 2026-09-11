@@ -1,0 +1,486 @@
+{
+  "nom": "28-mavzu. Yoruglikning Qutblanishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "To‘lqinlar qanday ikki turga bo‘linadi?",
+      "v": [
+        "Bo‘ylama va ko‘ndalang",
+        "Yassi va sferik",
+        "Mexanik va elektromagnit",
+        "Uzun va qisqa"
+      ],
+      "t": 0,
+      "izoh": "To‘lqinlar bo‘ylama va ko‘ndalang turlarga bo‘linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#861fb771"
+    },
+    {
+      "q": "Bo‘ylama to‘lqinlarda zarraning tebranish yo‘nalishi to‘lqin tarqalish yo‘nalishiga nisbatan qanday joylashadi?",
+      "v": [
+        "Bir yo‘nalishda",
+        "Perpendikular",
+        "45° burchak ostida",
+        "Qarama-qarshi yo‘nalishda har doim"
+      ],
+      "t": 0,
+      "izoh": "Bo‘ylama to‘lqinda tebranish va tarqalish yo‘nalishlari bir-biriga parallel.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#0f07a3bc"
+    },
+    {
+      "q": "Ko‘ndalang to‘lqinlarda zarralarning tebranish yo‘nalishi tarqalish yo‘nalishiga nisbatan qanday?",
+      "v": [
+        "Perpendikular",
+        "Parallel",
+        "Ixtiyoriy burchak ostida",
+        "Bir yo‘nalishda"
+      ],
+      "t": 0,
+      "izoh": "Ko‘ndalang to‘lqinda bu yo‘nalishlar o‘zaro perpendikular.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#bf3e0769"
+    },
+    {
+      "q": "Ko‘ndalang mexanik to‘lqinlar qanday jismlarda tarqala oladi?",
+      "v": [
+        "Faqat qattiq jismlarda",
+        "Faqat suyuqliklarda",
+        "Faqat gazlarda",
+        "Barcha muhitlarda bir xil"
+      ],
+      "t": 0,
+      "izoh": "Ko‘ndalang mexanik to‘lqinlar faqat qattiq jismlarda tarqaladi; bo‘ylama esa har uch holatda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#ad683555"
+    },
+    {
+      "q": "Yung va Frenel dastlab yorug‘lik to‘lqinlarini qanday to‘lqinlar deb hisoblashgan?",
+      "v": [
+        "Bo‘ylama to‘lqinlar",
+        "Ko‘ndalang to‘lqinlar",
+        "Yuzaki to‘lqinlar",
+        "Stoyachie to‘lqinlar"
+      ],
+      "t": 0,
+      "izoh": "Uzoq vaqt davomida optika asoschilari yorug‘likni bo‘ylama to‘lqin deb hisoblashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#338c98dd"
+    },
+    {
+      "q": "Turmalin plastinasini yorug‘lik nuri atrofida aylantirilsa, undan o‘tgan yorug‘lik intensivligi qanday o‘zgaradi?",
+      "v": [
+        "O‘zgarmaydi",
+        "Maksimalgacha oshadi",
+        "Nolga tushadi",
+        "Ikki baravar oshadi"
+      ],
+      "t": 0,
+      "izoh": "Yakka T₁ plastina aylantirilganda intensivlik o‘zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#4ca4a56f"
+    },
+    {
+      "q": "Ikki turmalin plastinasi qo‘yilib, ikkinchisi (T₂) aylantirilsa, o‘tgan yorug‘lik intensivligi qanday o‘zgaradi?",
+      "v": [
+        "Maksimal qiymatdan nolgacha o‘zgaradi",
+        "Doimiy qoladi",
+        "Doimiy oshib boradi",
+        "To‘satdan so‘nadi va qayta paydo bo‘lmaydi"
+      ],
+      "t": 0,
+      "izoh": "T₂ ning burilishiga qarab intensivlik maksimaldan nolgacha kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#87f3146a"
+    },
+    {
+      "q": "Ikki plastinaning o‘qlari parallel bo‘lsa, o‘tgan yorug‘lik intensivligi qanday bo‘ladi?",
+      "v": [
+        "Maksimal (yuqori)",
+        "Nolga teng",
+        "Yarimiga kamayadi",
+        "Chorak qismiga tushadi"
+      ],
+      "t": 0,
+      "izoh": "O‘qlar parallel bo‘lsa intensivlik yuqori, perpendikular bo‘lsa nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#94b9b7dc"
+    },
+    {
+      "q": "Ikki plastinaning o‘qlari o‘zaro perpendikular bo‘lsa, o‘tgan yorug‘lik intensivligi qancha bo‘ladi?",
+      "v": [
+        "Nolga teng",
+        "Maksimal",
+        "Boshlang‘ichning yarmi",
+        "O‘zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Perpendikular o‘qlarda intensivlik nolga teng bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#cde3e098"
+    },
+    {
+      "q": "Analizatordan o‘tgan yorug‘lik intensivligi qanday ifodaga bog‘liq?",
+      "v": [
+        "cos²α ga",
+        "sinα ga",
+        "tgα ga",
+        "α ga chiziqli"
+      ],
+      "t": 0,
+      "izoh": "Tajribalar o‘tgan yorug‘lik intensivligi cos²α ga bog‘liqligini ko‘rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#4c702fe7"
+    },
+    {
+      "q": "Arqon va ikki panjara tajribasida bo‘ylama to‘lqinlar ikkala panjaradan qanday o‘tadi?",
+      "v": [
+        "Har ikkala panjaradan bemalol o‘tadi",
+        "Faqat birinchisidan o‘tadi",
+        "Hech biridan o‘tmaydi",
+        "Faqat parallel holda o‘tmaydi"
+      ],
+      "t": 0,
+      "izoh": "Bo‘ylama to‘lqinlar panjara yo‘nalishidan qat’i nazar ikkala panjaradan o‘tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#4aa96648"
+    },
+    {
+      "q": "Arqon tajribasida ko‘ndalang to‘lqin ikkinchi panjara ko‘ndalang qo‘yilsa nima bo‘ladi?",
+      "v": [
+        "To‘lqin o‘tmaydi, so‘nadi",
+        "To‘lqin kuchayadi",
+        "To‘lqin buriladi",
+        "To‘lqin tezligi oshadi"
+      ],
+      "t": 0,
+      "izoh": "Perpendikular joylashgan panjaradan ko‘ndalang to‘lqin o‘tmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#914efd72"
+    },
+    {
+      "q": "Turmalin tajribalari yorug‘lik to‘lqinlari qanday to‘lqinlar ekanligini ko‘rsatadi?",
+      "v": [
+        "Ko‘ndalang to‘lqinlar",
+        "Bo‘ylama to‘lqinlar",
+        "Mexanik to‘lqinlar",
+        "Tovush to‘lqinlari"
+      ],
+      "t": 0,
+      "izoh": "Turmalin hodisalari ko‘ndalang mexanik to‘lqinlarning panjaradan o‘tishiga o‘xshaydi — yorug‘lik ko‘ndalang to‘lqin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#00f14821"
+    },
+    {
+      "q": "Tabiiy yorug‘likda elektr va magnit maydon kuchlanganlik vektorlarining yo‘nalishlari qanday bo‘ladi?",
+      "v": [
+        "Tartibsiz, har tomonga yo‘nalgan",
+        "Faqat bir tekislikda",
+        "Doimo vertikal",
+        "Doimo gorizontal"
+      ],
+      "t": 0,
+      "izoh": "Manba atomlari tartibsiz joylashgani uchun vektorlar yo‘nalishlari ham tartibsiz bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#4eb969d0"
+    },
+    {
+      "q": "Qutblangan yorug‘lik deb qanday yorug‘likka aytiladi?",
+      "v": [
+        "E ve H tebranishlar yo‘nalishi biror tarzda tartiblangan yorug‘likka",
+        "Juda yorqin yorug‘likka",
+        "Monoxromatik yorug‘likka",
+        "Quyoshdan keluvchi yorug‘likka"
+      ],
+      "t": 0,
+      "izoh": "Yorug‘lik vektori tebranishlari tartiblangan bo‘lsa, u qutblangan yorug‘lik deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#7b554ef4"
+    },
+    {
+      "q": "Yassi (to‘g‘ri chiziqli) qutblangan yorug‘lik qanday yorug‘lik?",
+      "v": [
+        "E vektorining tebranishlari hamma vaqt faqat birgina tekislikda sodir bo‘ladigan yorug‘lik",
+        "Har tomonga tarqaladigan yorug‘lik",
+        "Ikki tekislikda tebranadigan yorug‘lik",
+        "Doiraviy yo‘lda tarqaladigan yorug‘lik"
+      ],
+      "t": 0,
+      "izoh": "Yassi qutblanishda E tebranishlari faqat bitta tekislikda bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#c77135d5"
+    },
+    {
+      "q": "Tebranishlar tekisligi deb qaysi tekislikka aytiladi?",
+      "v": [
+        "E — elektr maydon kuchlanganlik vektori tebranishlari yotadigan tekislikka",
+        "H — magnit maydon vektori tebranishlari tekisligiga",
+        "Nur tarqalish yo‘nalishiga perpendikular tekislikka",
+        "Plastina sirtiga parallel tekislikka"
+      ],
+      "t": 0,
+      "izoh": "Tarixiy sabablarga ko‘ra E vektori tebranishlari tekisligi tebranishlar tekisligi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#6dc04660"
+    },
+    {
+      "q": "Qutblanish tekisligi deb qaysi tekislikka aytiladi?",
+      "v": [
+        "H — magnit maydon kuchlanganlik vektori tebranishlari yotadigan tekislikka",
+        "E vektori tebranishlari tekisligiga",
+        "Nur yo‘nalishiga parallel tekislikka",
+        "Kristall o‘qiga perpendikular tekislikka"
+      ],
+      "t": 0,
+      "izoh": "H vektorining tebranishlari yotadigan tekislik qutblanish tekisligi deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#b41b6367"
+    },
+    {
+      "q": "Polyarizator (qutblagich) deb nimaga aytiladi?",
+      "v": [
+        "Tabiiy yorug‘likni qutblab beruvchi asboblarga",
+        "Yorug‘likni kuchaytiruvchi linzaga",
+        "Spektrni ajratuvchi prizmaga",
+        "To‘lqin uzunligini o‘lchovchi asbobga"
+      ],
+      "t": 0,
+      "izoh": "Polyarizatorlar turmalin, island shpati kabi shaffof kristallardan tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#53203d4f"
+    },
+    {
+      "q": "Analizator nima uchun ishlatiladi?",
+      "v": [
+        "Yorug‘likning qutblanish darajasi va qutblanish tekisligi vaziyatini aniqlash uchun",
+        "Yorug‘likni hosil qilish uchun",
+        "Spektrni yozib olish uchun",
+        "Nur tezligini o‘lchash uchun"
+      ],
+      "t": 0,
+      "izoh": "Analizator — qutblanishni tekshiruvchi polyarizator; 4.24-rasmda T₂ analizator vazifasini o‘taydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#7dd04fc2"
+    },
+    {
+      "q": "Malyus qonuni qanday yoziladi?",
+      "v": [
+        "I = I₀cos²α",
+        "I = I₀sin²α",
+        "I = I₀cosα",
+        "I = I₀/cos²α"
+      ],
+      "t": 0,
+      "izoh": "Analizatordan o‘tgan yorug‘lik intensivligi I = I₀cos²α.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#16f80b93"
+    },
+    {
+      "q": "Malyus qonunida α burchak nima?",
+      "v": [
+        "Polyarizator va analizator o‘qlari orasidagi burchak",
+        "Nurning tushish burchagi",
+        "Nurning sinish burchagi",
+        "Panjaraning burilish burchagi"
+      ],
+      "t": 0,
+      "izoh": "α — T₂ plastinaning T₁ ga nisbatan burilish (o‘qlari orasidagi) burchagi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#1539b27f"
+    },
+    {
+      "q": "Analizator o‘qi polyarizator o‘qiga nisbatan 60° ga burilsa, o‘tgan yorug‘lik intensivligi I₀ ning qanday qismini tashkil qiladi?",
+      "v": [
+        "1/4 qismini",
+        "1/2 qismini",
+        "3/4 qismini",
+        "To‘liq o‘tadi"
+      ],
+      "t": 0,
+      "izoh": "I = I₀cos²60° = I₀·(0,5)² = I₀/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#7e250799"
+    },
+    {
+      "q": "Analizator o‘qi 45° ga burilsa, intensivlik qanday bo‘ladi?",
+      "v": [
+        "I₀ ning yarmiga teng",
+        "I₀ ga teng",
+        "Nolga teng",
+        "I₀ ning choragiga teng"
+      ],
+      "t": 0,
+      "izoh": "I = I₀cos²45° = I₀·(√2/2)² = I₀/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#edf79074"
+    },
+    {
+      "q": "Nima sababdan polyaroiddan o‘tgan tabiiy yorug‘likning intensivligi kamayadi?",
+      "v": [
+        "Plastina faqat ma’lum yo‘nalishda tebranuvchi nurlarni o‘tkazadi, qolganlari yutiladi",
+        "Plastina yorug‘likni qaytaradi",
+        "Yorug‘likning to‘lqin uzunligi oshadi",
+        "Plastina yorug‘likni ranglarga ajratadi"
+      ],
+      "t": 0,
+      "izoh": "Kristall panjaradan faqat ma’lum yo‘nalishda orientatsiyalangan nurlar o‘tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#8f5d37fc"
+    },
+    {
+      "q": "Polyarizatorlar qaysi kristallardan tayyorlanishi mumkin?",
+      "v": [
+        "Turmalin va island shpati",
+        "Kvarz va granit",
+        "Olmos va grafit",
+        "Kumush va oltin"
+      ],
+      "t": 0,
+      "izoh": "Polyarizatorlar turmalin, island shpati kabi shaffof kristallardan tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#5e0c14fc"
+    },
+    {
+      "q": "Qutblangan yorug‘likdan texnikada qanday maqsadlarda foydalaniladi?",
+      "v": [
+        "Sifatli rasmlar olish va eritmalardagi organik kislotalar, oqsillar, qand konsentratsiyalarini aniqlashda",
+        "Metallarni eritishda",
+        "Elektr tokini kuchaytirishda",
+        "Masofani o‘lchashda"
+      ],
+      "t": 0,
+      "izoh": "Qutblangan yorug‘lik eritmalar konsentratsiyasini aniqlashda ham qo‘llanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#671dbd93"
+    },
+    {
+      "q": "Yorug‘likning qutblanishi hodisasi uning qanday tabiatini isbotlaydi?",
+      "v": [
+        "Ko‘ndalang to‘lqin ekanligini",
+        "Bo‘ylama to‘lqin ekanligini",
+        "Zarra tabiatini",
+        "Monoxromatik ekanligini"
+      ],
+      "t": 0,
+      "izoh": "Qutblanish faqat ko‘ndalang to‘lqinlarga xos hodisa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#65529fce"
+    },
+    {
+      "q": "4.24-rasmdagi tajribada T₁ plastina qanday vazifani o‘taydi?",
+      "v": [
+        "Polyarizator (qutblagich)",
+        "Analizator",
+        "Linza",
+        "Ekran"
+      ],
+      "t": 0,
+      "izoh": "T₁ plastina polyaroid (polyarizator), T₂ esa analizator vazifasini o‘taydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#20513ee4"
+    },
+    {
+      "q": "Island shpati plyonkalarining qalinligi qanday bo‘lishi mumkin?",
+      "v": [
+        "0,1 mm yoki undan kichik",
+        "Kamida 1 sm",
+        "1 m dan ortiq",
+        "Qalinligi ahamiyatsiz"
+      ],
+      "t": 0,
+      "izoh": "Bunday plyonkalar 0,1 mm yoki undan ham kichik bo‘lib, selluloidga yopishtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#ded2dcec"
+    },
+    {
+      "q": "Qutblangan yorug‘lik tabiiy yorug‘likdan nimasi bilan farq qiladi?",
+      "v": [
+        "Tebranishlar yo‘nalishining tartiblanganligi bilan",
+        "Tezligi bilan",
+        "Chastotasi bilan",
+        "Rangi bilan"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy yorug‘likda tebranish yo‘nalishlari tartibsiz, qutblanganda esa tartiblangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#22cd6432"
+    },
+    {
+      "q": "Ikki perpendikular o‘qli polyarizator juftligi orasidan yorug‘lik o‘tmasligining sababi nima?",
+      "v": [
+        "Ikkinchi plastinaning o‘qi birinchisidan chiqqan tebranishlar yo‘nalishiga perpendikular bo‘lib, ularni o‘tkazmaydi",
+        "Yorug‘lik plastinalarda to‘liq qaytadi",
+        "Yorug‘lik ikkala plastinada to‘liq sinadi",
+        "Plastinalar yorug‘likni kuchaytiradi"
+      ],
+      "t": 0,
+      "izoh": "O‘qlar perpendikular bo‘lganda cos²90° = 0, intensivlik nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m28-yoruglikning-qutblanishi#3d9fcc76"
+    }
+  ]
+}

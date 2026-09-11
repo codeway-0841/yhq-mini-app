@@ -1,0 +1,1306 @@
+{
+  "nom": "Time / o'clock (Vaqt)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "It's 3:00. What time is it?",
+      "v": [
+        "It's three o'clock",
+        "It's half past three",
+        "It's two o'clock",
+        "It's quarter past three"
+      ],
+      "t": 0,
+      "izoh": "3:00 - soat uch.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#09dc93ab"
+    },
+    {
+      "q": "It's 6:30. What time is it?",
+      "v": [
+        "It's half past six",
+        "It's six o'clock",
+        "It's quarter to six",
+        "It's half past seven"
+      ],
+      "t": 0,
+      "izoh": "6:30 - oltidan o'tib yarim.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#70b38cbf"
+    },
+    {
+      "q": "It's 4:15. What time is it?",
+      "v": [
+        "It's quarter past four",
+        "It's quarter to four",
+        "It's half past four",
+        "It's four o'clock"
+      ],
+      "t": 0,
+      "izoh": "4:15 - to'rtdan o'tib chorak.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#ff667c3c"
+    },
+    {
+      "q": "It's 9:45. What time is it?",
+      "v": [
+        "It's quarter to ten",
+        "It's quarter past nine",
+        "It's half past nine",
+        "It's ten o'clock"
+      ],
+      "t": 0,
+      "izoh": "9:45 - o'ngacha chorak kam.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#2834d304"
+    },
+    {
+      "q": "It's 12:00 in the day. What time is it?",
+      "v": [
+        "It's twelve o'clock",
+        "It's one o'clock",
+        "It's half past twelve",
+        "It's eleven o'clock"
+      ],
+      "t": 0,
+      "izoh": "12:00 - soat o'n ikki.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#4926b12e"
+    },
+    {
+      "q": "'Half past two' means which time?",
+      "v": [
+        "2:30",
+        "2:00",
+        "2:15",
+        "3:30"
+      ],
+      "t": 0,
+      "izoh": "Half past two - 2:30.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#727d3e4d"
+    },
+    {
+      "q": "'Quarter past five' means which time?",
+      "v": [
+        "5:15",
+        "5:45",
+        "5:30",
+        "5:00"
+      ],
+      "t": 0,
+      "izoh": "Quarter past five - 5:15.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#e764c639"
+    },
+    {
+      "q": "'Quarter to eight' means which time?",
+      "v": [
+        "7:45",
+        "8:15",
+        "8:30",
+        "8:45"
+      ],
+      "t": 0,
+      "izoh": "Quarter to eight - 7:45.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#822f6c41"
+    },
+    {
+      "q": "It's 7:00. What time is it?",
+      "v": [
+        "It's seven o'clock",
+        "It's six o'clock",
+        "It's eight o'clock",
+        "It's half past seven"
+      ],
+      "t": 0,
+      "izoh": "7:00 - soat yetti.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#986e167e"
+    },
+    {
+      "q": "We ask about time: '____ time is it?'",
+      "v": [
+        "What",
+        "Where",
+        "Who",
+        "How"
+      ],
+      "t": 0,
+      "izoh": "Vaqtni so'rash: What time is it?",
+      "qiy": "oson",
+      "id": "ing_a1_m24#f77a84f2"
+    },
+    {
+      "q": "It's 1:30. What time is it?",
+      "v": [
+        "It's half past one",
+        "It's one o'clock",
+        "It's quarter past one",
+        "It's half past two"
+      ],
+      "t": 0,
+      "izoh": "1:30 - birdan o'tib yarim.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#584c99fb"
+    },
+    {
+      "q": "It's 10:00. What time is it?",
+      "v": [
+        "It's ten o'clock",
+        "It's nine o'clock",
+        "It's eleven o'clock",
+        "It's half past ten"
+      ],
+      "t": 0,
+      "izoh": "10:00 - soat o'n.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#665a0c85"
+    },
+    {
+      "q": "'Half past nine' means which time?",
+      "v": [
+        "9:30",
+        "9:00",
+        "10:30",
+        "9:15"
+      ],
+      "t": 0,
+      "izoh": "Half past nine - 9:30.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#657b6616"
+    },
+    {
+      "q": "It's 11:15. What time is it?",
+      "v": [
+        "It's quarter past eleven",
+        "It's quarter to eleven",
+        "It's half past eleven",
+        "It's eleven o'clock"
+      ],
+      "t": 0,
+      "izoh": "11:15 - o'n birdan o'tib chorak.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#50c8c428"
+    },
+    {
+      "q": "It's 8:00. What time is it?",
+      "v": [
+        "It's eight o'clock",
+        "It's seven o'clock",
+        "It's nine o'clock",
+        "It's half past eight"
+      ],
+      "t": 0,
+      "izoh": "8:00 - soat sakkiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#a043bec1"
+    },
+    {
+      "q": "What time is it? 3:00",
+      "v": [
+        "It's three o'clock",
+        "It's half past three",
+        "It's quarter past three",
+        "It's quarter to three"
+      ],
+      "t": 0,
+      "izoh": "3:00 = soat uch.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#a33d1df0"
+    },
+    {
+      "q": "What time is it? 6:30",
+      "v": [
+        "It's half past six",
+        "It's six o'clock",
+        "It's quarter to six",
+        "It's half past seven"
+      ],
+      "t": 0,
+      "izoh": "6:30 = olti yarim.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#dc552654"
+    },
+    {
+      "q": "What time is it? 4:15",
+      "v": [
+        "It's quarter past four",
+        "It's quarter to four",
+        "It's half past four",
+        "It's four o'clock"
+      ],
+      "t": 0,
+      "izoh": "4:15 = to'rtdan chorak o'tdi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#bbaaf706"
+    },
+    {
+      "q": "What time is it? 9:45",
+      "v": [
+        "It's quarter to ten",
+        "It's quarter past nine",
+        "It's half past nine",
+        "It's quarter to nine"
+      ],
+      "t": 0,
+      "izoh": "9:45 = o'ngacha chorak kam.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#ae2a02ba"
+    },
+    {
+      "q": "What time is it? 7:30",
+      "v": [
+        "It's half past seven",
+        "It's half past eight",
+        "It's seven o'clock",
+        "It's quarter past seven"
+      ],
+      "t": 0,
+      "izoh": "7:30 = yetti yarim.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#7d24a168"
+    },
+    {
+      "q": "What time is it? 12:00",
+      "v": [
+        "It's twelve o'clock",
+        "It's half past twelve",
+        "It's quarter to twelve",
+        "It's one o'clock"
+      ],
+      "t": 0,
+      "izoh": "12:00 = soat o'n ikki.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#e7f02e03"
+    },
+    {
+      "q": "What time is it? 2:15",
+      "v": [
+        "It's quarter past two",
+        "It's quarter to two",
+        "It's half past two",
+        "It's two o'clock"
+      ],
+      "t": 0,
+      "izoh": "2:15 = ikkidan chorak o'tdi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#0e11c6e0"
+    },
+    {
+      "q": "What time is it? 5:45",
+      "v": [
+        "It's quarter to six",
+        "It's quarter past five",
+        "It's half past five",
+        "It's quarter to five"
+      ],
+      "t": 0,
+      "izoh": "5:45 = oltigacha chorak kam.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#57f6d8dd"
+    },
+    {
+      "q": "What time is it? 10:30",
+      "v": [
+        "It's half past ten",
+        "It's half past eleven",
+        "It's ten o'clock",
+        "It's quarter to ten"
+      ],
+      "t": 0,
+      "izoh": "10:30 = o'n yarim.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#8c6355a4"
+    },
+    {
+      "q": "What time is it? 8:00",
+      "v": [
+        "It's eight o'clock",
+        "It's half past eight",
+        "It's quarter past eight",
+        "It's nine o'clock"
+      ],
+      "t": 0,
+      "izoh": "8:00 = soat sakkiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#daeaa642"
+    },
+    {
+      "q": "What time is it? 1:15",
+      "v": [
+        "It's quarter past one",
+        "It's quarter to one",
+        "It's half past one",
+        "It's one o'clock"
+      ],
+      "t": 0,
+      "izoh": "1:15 = birdan chorak o'tdi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#ea852948"
+    },
+    {
+      "q": "What time is it? 11:45",
+      "v": [
+        "It's quarter to twelve",
+        "It's quarter past eleven",
+        "It's half past eleven",
+        "It's quarter to eleven"
+      ],
+      "t": 0,
+      "izoh": "11:45 = o'n ikkigacha chorak kam.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#6b9f2d92"
+    },
+    {
+      "q": "What time is it? 6:15",
+      "v": [
+        "It's quarter past six",
+        "It's quarter to six",
+        "It's half past six",
+        "It's six o'clock"
+      ],
+      "t": 0,
+      "izoh": "6:15 = oltidan chorak o'tdi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#e50a29a1"
+    },
+    {
+      "q": "What time is it? 3:45",
+      "v": [
+        "It's quarter to four",
+        "It's quarter past three",
+        "It's half past three",
+        "It's quarter to three"
+      ],
+      "t": 0,
+      "izoh": "3:45 = to'rtgacha chorak kam.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#ea2a5c44"
+    },
+    {
+      "q": "What time is it? 9:30",
+      "v": [
+        "It's half past nine",
+        "It's half past ten",
+        "It's nine o'clock",
+        "It's quarter to nine"
+      ],
+      "t": 0,
+      "izoh": "9:30 = to'qqiz yarim.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#5a3846a9"
+    },
+    {
+      "q": "What time is it? 4:00",
+      "v": [
+        "It's four o'clock",
+        "It's half past four",
+        "It's quarter past four",
+        "It's five o'clock"
+      ],
+      "t": 0,
+      "izoh": "4:00 = soat to'rt.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#2fe10dee"
+    },
+    {
+      "q": "What time is it? 7:15",
+      "v": [
+        "It's quarter past seven",
+        "It's quarter to seven",
+        "It's half past seven",
+        "It's seven o'clock"
+      ],
+      "t": 0,
+      "izoh": "7:15 = yettidan chorak o'tdi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#a46bcc6c"
+    },
+    {
+      "q": "What time is it? 2:45",
+      "v": [
+        "It's quarter to three",
+        "It's quarter past two",
+        "It's half past two",
+        "It's quarter to two"
+      ],
+      "t": 0,
+      "izoh": "2:45 = uchgacha chorak kam.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#4bbb2cff"
+    },
+    {
+      "q": "What time is it? 11:30",
+      "v": [
+        "It's half past eleven",
+        "It's half past twelve",
+        "It's eleven o'clock",
+        "It's quarter to eleven"
+      ],
+      "t": 0,
+      "izoh": "11:30 = o'n bir yarim.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#60c367b2"
+    },
+    {
+      "q": "What time is it? 10:00",
+      "v": [
+        "It's ten o'clock",
+        "It's half past ten",
+        "It's quarter past ten",
+        "It's eleven o'clock"
+      ],
+      "t": 0,
+      "izoh": "10:00 = soat o'n.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#3a14c5c3"
+    },
+    {
+      "q": "It's half past four. What is the time?",
+      "v": [
+        "4:30",
+        "4:15",
+        "3:30",
+        "4:45"
+      ],
+      "t": 0,
+      "izoh": "Half past four = 4:30.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#3f4e3e6f"
+    },
+    {
+      "q": "It's quarter past eight. What is the time?",
+      "v": [
+        "8:15",
+        "8:45",
+        "7:15",
+        "8:30"
+      ],
+      "t": 0,
+      "izoh": "Quarter past eight = 8:15.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#73d19722"
+    },
+    {
+      "q": "It's quarter to nine. What is the time?",
+      "v": [
+        "8:45",
+        "9:15",
+        "9:45",
+        "8:15"
+      ],
+      "t": 0,
+      "izoh": "Quarter to nine = 8:45.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#249f664e"
+    },
+    {
+      "q": "It's five o'clock. What is the time?",
+      "v": [
+        "5:00",
+        "5:30",
+        "4:00",
+        "5:15"
+      ],
+      "t": 0,
+      "izoh": "Five o'clock = 5:00.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#cf427c40"
+    },
+    {
+      "q": "Which one means 12:30?",
+      "v": [
+        "Half past twelve",
+        "Quarter past twelve",
+        "Twelve o'clock",
+        "Quarter to twelve"
+      ],
+      "t": 0,
+      "izoh": "12:30 = o'n ikki yarim.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#988bcf91"
+    },
+    {
+      "q": "Which one means 1:45?",
+      "v": [
+        "Quarter to two",
+        "Quarter past one",
+        "Half past one",
+        "Quarter to one"
+      ],
+      "t": 0,
+      "izoh": "1:45 = ikkigacha chorak kam.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#eb66c775"
+    },
+    {
+      "q": "We ask about time with: '___ time is it?'",
+      "v": [
+        "What",
+        "Who",
+        "Where",
+        "How"
+      ],
+      "t": 0,
+      "izoh": "'What time is it?'",
+      "qiy": "oson",
+      "id": "ing_a1_m24#7d01d0a1"
+    },
+    {
+      "q": "What time is it? 6:00",
+      "v": [
+        "It's six o'clock",
+        "It's half past six",
+        "It's quarter past six",
+        "It's seven o'clock"
+      ],
+      "t": 0,
+      "izoh": "6:00 = soat olti.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#a7bdaacf"
+    },
+    {
+      "q": "What time is it? 5:15",
+      "v": [
+        "It's quarter past five",
+        "It's quarter to five",
+        "It's half past five",
+        "It's five o'clock"
+      ],
+      "t": 0,
+      "izoh": "5:15 = beshdan chorak o'tdi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#ba282413"
+    },
+    {
+      "q": "What time is it? 8:30",
+      "v": [
+        "It's half past eight",
+        "It's half past nine",
+        "It's eight o'clock",
+        "It's quarter to eight"
+      ],
+      "t": 0,
+      "izoh": "8:30 = sakkiz yarim.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#155aa0d9"
+    },
+    {
+      "q": "What time is it? (1:00)",
+      "v": [
+        "Quarter past eleven",
+        "Half past one",
+        "One o'clock",
+        "Three o'clock"
+      ],
+      "t": 2,
+      "izoh": "Rosa soat 1:00 — 'o'clock' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#2778dbf5"
+    },
+    {
+      "q": "What time is it? (1:15)",
+      "v": [
+        "Twelve o'clock",
+        "Quarter past three",
+        "Quarter to three",
+        "Quarter past one"
+      ],
+      "t": 3,
+      "izoh": "15 daqiqa o'tsa 'quarter past' (chorak o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#a92d70a9"
+    },
+    {
+      "q": "What time is it? (1:30)",
+      "v": [
+        "Half past two",
+        "Quarter past one",
+        "Half past one",
+        "Quarter to two"
+      ],
+      "t": 2,
+      "izoh": "30 daqiqa — 'half past' (yarim o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#fed27997"
+    },
+    {
+      "q": "What time is it? (1:45)",
+      "v": [
+        "Quarter past four",
+        "Ten o'clock",
+        "Quarter to two",
+        "Half past twelve"
+      ],
+      "t": 2,
+      "izoh": "45 daqiqada keyingi soatga 'quarter to' (chorak qoldi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#3bb274c6"
+    },
+    {
+      "q": "What time is it? (2:00)",
+      "v": [
+        "Two o'clock",
+        "One o'clock",
+        "Half past five",
+        "Half past ten"
+      ],
+      "t": 0,
+      "izoh": "Rosa soat 2:00 — 'o'clock' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#96f4c54d"
+    },
+    {
+      "q": "What time is it? (2:15)",
+      "v": [
+        "Half past five",
+        "Quarter past two",
+        "Half past three",
+        "Half past six"
+      ],
+      "t": 1,
+      "izoh": "15 daqiqa o'tsa 'quarter past' (chorak o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#3914c64b"
+    },
+    {
+      "q": "What time is it? (2:30)",
+      "v": [
+        "Half past two",
+        "Quarter to three",
+        "Quarter past two",
+        "Quarter past seven"
+      ],
+      "t": 0,
+      "izoh": "30 daqiqa — 'half past' (yarim o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#a35d7600"
+    },
+    {
+      "q": "What time is it? (2:45)",
+      "v": [
+        "Quarter to one",
+        "Half past eight",
+        "Half past one",
+        "Quarter to three"
+      ],
+      "t": 3,
+      "izoh": "45 daqiqada keyingi soatga 'quarter to' (chorak qoldi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#8f8ed889"
+    },
+    {
+      "q": "What time is it? (3:00)",
+      "v": [
+        "Ten o'clock",
+        "Three o'clock",
+        "Quarter past eleven",
+        "Quarter to six"
+      ],
+      "t": 1,
+      "izoh": "Rosa soat 3:00 — 'o'clock' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#29dd3da7"
+    },
+    {
+      "q": "What time is it? (3:15)",
+      "v": [
+        "Two o'clock",
+        "Quarter past three",
+        "Half past one",
+        "Half past twelve"
+      ],
+      "t": 1,
+      "izoh": "15 daqiqa o'tsa 'quarter past' (chorak o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#f1a330f4"
+    },
+    {
+      "q": "What time is it? (3:30)",
+      "v": [
+        "Half past three",
+        "Quarter past seven",
+        "Quarter to five",
+        "Half past two"
+      ],
+      "t": 0,
+      "izoh": "30 daqiqa — 'half past' (yarim o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#95f15d89"
+    },
+    {
+      "q": "What time is it? (3:45)",
+      "v": [
+        "Quarter to four",
+        "Quarter to seven",
+        "Seven o'clock",
+        "Half past three"
+      ],
+      "t": 0,
+      "izoh": "45 daqiqada keyingi soatga 'quarter to' (chorak qoldi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#5bde3649"
+    },
+    {
+      "q": "What time is it? (4:00)",
+      "v": [
+        "Quarter past twelve",
+        "Half past eleven",
+        "Twelve o'clock",
+        "Four o'clock"
+      ],
+      "t": 3,
+      "izoh": "Rosa soat 4:00 — 'o'clock' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#6847f53b"
+    },
+    {
+      "q": "What time is it? (4:15)",
+      "v": [
+        "Quarter past four",
+        "Quarter to one",
+        "Five o'clock",
+        "Quarter to ten"
+      ],
+      "t": 0,
+      "izoh": "15 daqiqa o'tsa 'quarter past' (chorak o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#d16b5b01"
+    },
+    {
+      "q": "What time is it? (4:30)",
+      "v": [
+        "Half past four",
+        "Quarter past twelve",
+        "Quarter past eleven",
+        "Half past five"
+      ],
+      "t": 0,
+      "izoh": "30 daqiqa — 'half past' (yarim o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#c727c210"
+    },
+    {
+      "q": "What time is it? (4:45)",
+      "v": [
+        "Quarter to five",
+        "Half past one",
+        "Quarter to two",
+        "Half past four"
+      ],
+      "t": 0,
+      "izoh": "45 daqiqada keyingi soatga 'quarter to' (chorak qoldi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#d5fe6425"
+    },
+    {
+      "q": "What time is it? (5:00)",
+      "v": [
+        "Quarter past ten",
+        "Two o'clock",
+        "Five o'clock",
+        "Quarter past four"
+      ],
+      "t": 2,
+      "izoh": "Rosa soat 5:00 — 'o'clock' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#5e5e4b77"
+    },
+    {
+      "q": "What time is it? (5:15)",
+      "v": [
+        "Half past eleven",
+        "Quarter past five",
+        "Half past eight",
+        "Half past seven"
+      ],
+      "t": 1,
+      "izoh": "15 daqiqa o'tsa 'quarter past' (chorak o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#c02e74b4"
+    },
+    {
+      "q": "What time is it? (5:30)",
+      "v": [
+        "Half past five",
+        "Quarter to five",
+        "Quarter to ten",
+        "Ten o'clock"
+      ],
+      "t": 0,
+      "izoh": "30 daqiqa — 'half past' (yarim o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#659ccbaa"
+    },
+    {
+      "q": "What time is it? (5:45)",
+      "v": [
+        "Half past seven",
+        "Seven o'clock",
+        "Quarter to six",
+        "Half past ten"
+      ],
+      "t": 2,
+      "izoh": "45 daqiqada keyingi soatga 'quarter to' (chorak qoldi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#1cecaae9"
+    },
+    {
+      "q": "What time is it? (6:00)",
+      "v": [
+        "Quarter to three",
+        "Six o'clock",
+        "Quarter to two",
+        "Quarter past two"
+      ],
+      "t": 1,
+      "izoh": "Rosa soat 6:00 — 'o'clock' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#4fda421c"
+    },
+    {
+      "q": "What time is it? (6:15)",
+      "v": [
+        "Quarter to eleven",
+        "Eight o'clock",
+        "Twelve o'clock",
+        "Quarter past six"
+      ],
+      "t": 3,
+      "izoh": "15 daqiqa o'tsa 'quarter past' (chorak o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#d623b6b7"
+    },
+    {
+      "q": "What time is it? (6:30)",
+      "v": [
+        "Quarter to eleven",
+        "Half past six",
+        "Half past nine",
+        "Half past eight"
+      ],
+      "t": 1,
+      "izoh": "30 daqiqa — 'half past' (yarim o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#4cdd270c"
+    },
+    {
+      "q": "What time is it? (6:45)",
+      "v": [
+        "Quarter to seven",
+        "Twelve o'clock",
+        "Quarter to three",
+        "Quarter to one"
+      ],
+      "t": 0,
+      "izoh": "45 daqiqada keyingi soatga 'quarter to' (chorak qoldi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#72293cd7"
+    },
+    {
+      "q": "What time is it? (7:00)",
+      "v": [
+        "Half past five",
+        "Seven o'clock",
+        "Eight o'clock",
+        "Quarter to three"
+      ],
+      "t": 1,
+      "izoh": "Rosa soat 7:00 — 'o'clock' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#6b071dd8"
+    },
+    {
+      "q": "What time is it? (7:15)",
+      "v": [
+        "Quarter past nine",
+        "Quarter past seven",
+        "Five o'clock",
+        "Quarter to one"
+      ],
+      "t": 1,
+      "izoh": "15 daqiqa o'tsa 'quarter past' (chorak o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#1303e1ce"
+    },
+    {
+      "q": "What time is it? (7:30)",
+      "v": [
+        "Quarter to six",
+        "Quarter past nine",
+        "Half past seven",
+        "Quarter past eleven"
+      ],
+      "t": 2,
+      "izoh": "30 daqiqa — 'half past' (yarim o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#4d062eed"
+    },
+    {
+      "q": "What time is it? (7:45)",
+      "v": [
+        "Half past nine",
+        "Half past three",
+        "Quarter to ten",
+        "Quarter to eight"
+      ],
+      "t": 3,
+      "izoh": "45 daqiqada keyingi soatga 'quarter to' (chorak qoldi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#bf09fd16"
+    },
+    {
+      "q": "What time is it? (8:00)",
+      "v": [
+        "Quarter to three",
+        "Eight o'clock",
+        "Nine o'clock",
+        "Quarter past one"
+      ],
+      "t": 1,
+      "izoh": "Rosa soat 8:00 — 'o'clock' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#d733b677"
+    },
+    {
+      "q": "What time is it? (8:15)",
+      "v": [
+        "Quarter to five",
+        "Quarter to two",
+        "Quarter past ten",
+        "Quarter past eight"
+      ],
+      "t": 3,
+      "izoh": "15 daqiqa o'tsa 'quarter past' (chorak o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#70461643"
+    },
+    {
+      "q": "What time is it? (8:30)",
+      "v": [
+        "Half past eight",
+        "Three o'clock",
+        "Quarter to ten",
+        "Two o'clock"
+      ],
+      "t": 0,
+      "izoh": "30 daqiqa — 'half past' (yarim o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#07dcd307"
+    },
+    {
+      "q": "What time is it? (8:45)",
+      "v": [
+        "Ten o'clock",
+        "Half past three",
+        "Quarter to nine",
+        "Five o'clock"
+      ],
+      "t": 2,
+      "izoh": "45 daqiqada keyingi soatga 'quarter to' (chorak qoldi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#cedbf9a1"
+    },
+    {
+      "q": "What time is it? (9:00)",
+      "v": [
+        "Nine o'clock",
+        "Quarter past seven",
+        "Half past twelve",
+        "Quarter to six"
+      ],
+      "t": 0,
+      "izoh": "Rosa soat 9:00 — 'o'clock' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#bc634347"
+    },
+    {
+      "q": "What time is it? (9:15)",
+      "v": [
+        "Quarter to five",
+        "Half past four",
+        "Quarter to three",
+        "Quarter past nine"
+      ],
+      "t": 3,
+      "izoh": "15 daqiqa o'tsa 'quarter past' (chorak o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#696d4b48"
+    },
+    {
+      "q": "What time is it? (9:30)",
+      "v": [
+        "Half past four",
+        "Ten o'clock",
+        "Half past nine",
+        "Half past ten"
+      ],
+      "t": 2,
+      "izoh": "30 daqiqa — 'half past' (yarim o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#a3787c5d"
+    },
+    {
+      "q": "What time is it? (9:45)",
+      "v": [
+        "Quarter to two",
+        "Quarter past eleven",
+        "Quarter to ten",
+        "Half past twelve"
+      ],
+      "t": 2,
+      "izoh": "45 daqiqada keyingi soatga 'quarter to' (chorak qoldi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#db59877a"
+    },
+    {
+      "q": "What time is it? (10:00)",
+      "v": [
+        "Ten o'clock",
+        "Two o'clock",
+        "Nine o'clock",
+        "Quarter past six"
+      ],
+      "t": 0,
+      "izoh": "Rosa soat 10:00 — 'o'clock' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#52489c58"
+    },
+    {
+      "q": "What time is it? (10:15)",
+      "v": [
+        "Half past nine",
+        "Quarter past four",
+        "Quarter past ten",
+        "Three o'clock"
+      ],
+      "t": 2,
+      "izoh": "15 daqiqa o'tsa 'quarter past' (chorak o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#8aacb450"
+    },
+    {
+      "q": "What time is it? (10:30)",
+      "v": [
+        "Half past two",
+        "Half past seven",
+        "Four o'clock",
+        "Half past ten"
+      ],
+      "t": 3,
+      "izoh": "30 daqiqa — 'half past' (yarim o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#329205df"
+    },
+    {
+      "q": "What time is it? (10:45)",
+      "v": [
+        "Half past six",
+        "Quarter to eleven",
+        "Quarter to eight",
+        "Half past seven"
+      ],
+      "t": 1,
+      "izoh": "45 daqiqada keyingi soatga 'quarter to' (chorak qoldi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#a34b43bd"
+    },
+    {
+      "q": "What time is it? (11:00)",
+      "v": [
+        "Half past two",
+        "Half past eleven",
+        "Twelve o'clock",
+        "Eleven o'clock"
+      ],
+      "t": 3,
+      "izoh": "Rosa soat 11:00 — 'o'clock' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#11b099bc"
+    },
+    {
+      "q": "What time is it? (11:15)",
+      "v": [
+        "Quarter past eleven",
+        "Four o'clock",
+        "Quarter to five",
+        "Half past two"
+      ],
+      "t": 0,
+      "izoh": "15 daqiqa o'tsa 'quarter past' (chorak o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#55431be0"
+    },
+    {
+      "q": "What time is it? (11:30)",
+      "v": [
+        "Quarter to four",
+        "Half past eleven",
+        "Three o'clock",
+        "Quarter to eight"
+      ],
+      "t": 1,
+      "izoh": "30 daqiqa — 'half past' (yarim o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#d06cd7a0"
+    },
+    {
+      "q": "What time is it? (11:45)",
+      "v": [
+        "Two o'clock",
+        "Eight o'clock",
+        "Quarter to ten",
+        "Quarter to twelve"
+      ],
+      "t": 3,
+      "izoh": "45 daqiqada keyingi soatga 'quarter to' (chorak qoldi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#42cd5de5"
+    },
+    {
+      "q": "What time is it? (12:00)",
+      "v": [
+        "Twelve o'clock",
+        "Quarter to five",
+        "Quarter past two",
+        "Half past three"
+      ],
+      "t": 0,
+      "izoh": "Rosa soat 12:00 — 'o'clock' ishlatiladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#429b7de2"
+    },
+    {
+      "q": "What time is it? (12:15)",
+      "v": [
+        "Quarter past seven",
+        "Quarter past twelve",
+        "Quarter to two",
+        "Quarter past four"
+      ],
+      "t": 1,
+      "izoh": "15 daqiqa o'tsa 'quarter past' (chorak o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#b4dbfbee"
+    },
+    {
+      "q": "What time is it? (12:30)",
+      "v": [
+        "Half past twelve",
+        "Quarter past eight",
+        "Seven o'clock",
+        "Five o'clock"
+      ],
+      "t": 0,
+      "izoh": "30 daqiqa — 'half past' (yarim o'tdi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#7d3fc090"
+    },
+    {
+      "q": "What time is it? (12:45)",
+      "v": [
+        "Half past five",
+        "Four o'clock",
+        "Quarter to one",
+        "Quarter past three"
+      ],
+      "t": 2,
+      "izoh": "45 daqiqada keyingi soatga 'quarter to' (chorak qoldi).",
+      "qiy": "oson",
+      "id": "ing_a1_m24#c246990a"
+    },
+    {
+      "q": "Which clock shows 'Quarter to one'?",
+      "v": [
+        "10:45",
+        "1:30",
+        "10:30",
+        "12:45"
+      ],
+      "t": 3,
+      "izoh": "'Quarter to one' = 12:45 degani.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#ac3c7568"
+    },
+    {
+      "q": "Which clock shows 'Six o'clock'?",
+      "v": [
+        "11:45",
+        "5:00",
+        "6:00",
+        "4:15"
+      ],
+      "t": 2,
+      "izoh": "'Six o'clock' = 6:00 degani.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#5e4e7cc6"
+    },
+    {
+      "q": "Which clock shows 'Quarter to two'?",
+      "v": [
+        "1:45",
+        "11:45",
+        "7:30",
+        "3:15"
+      ],
+      "t": 0,
+      "izoh": "'Quarter to two' = 1:45 degani.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#f15acdda"
+    },
+    {
+      "q": "Which clock shows 'Quarter past twelve'?",
+      "v": [
+        "2:00",
+        "1:00",
+        "8:15",
+        "12:15"
+      ],
+      "t": 3,
+      "izoh": "'Quarter past twelve' = 12:15 degani.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#ae67ca3c"
+    },
+    {
+      "q": "Which clock shows 'Quarter past ten'?",
+      "v": [
+        "9:00",
+        "3:00",
+        "10:15",
+        "5:00"
+      ],
+      "t": 2,
+      "izoh": "'Quarter past ten' = 10:15 degani.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#975ada32"
+    },
+    {
+      "q": "Which clock shows 'Half past eight'?",
+      "v": [
+        "8:30",
+        "6:45",
+        "5:30",
+        "3:30"
+      ],
+      "t": 0,
+      "izoh": "'Half past eight' = 8:30 degani.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#827416eb"
+    },
+    {
+      "q": "Which clock shows 'Nine o'clock'?",
+      "v": [
+        "9:30",
+        "11:00",
+        "11:30",
+        "9:00"
+      ],
+      "t": 3,
+      "izoh": "'Nine o'clock' = 9:00 degani.",
+      "qiy": "oson",
+      "id": "ing_a1_m24#95d172a5"
+    }
+  ]
+}

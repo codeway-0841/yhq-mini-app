@@ -1,0 +1,606 @@
+{
+  "nom": "05-mavzu. Alkanlarning umumiy formulasi va gomologik qatori. Ratsional nomenklatura",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Alkanlarning umumiy formulasi qanday?",
+      "v": [
+        "CnH2n+2",
+        "CnH2n",
+        "CnH2n-2",
+        "CnH2n-6"
+      ],
+      "t": 0,
+      "izoh": "Alkanlar CnH2n+2 umumiy formulaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#250a2a9f"
+    },
+    {
+      "q": "Alkanlar tarkibidagi barcha uglerod atomlari qanday bog' orqali bog'langan?",
+      "v": [
+        "Faqat sigma bog' orqali",
+        "Faqat pi bog' orqali",
+        "Sigma va pi bog'lar orqali",
+        "Ion bog'lar orqali"
+      ],
+      "t": 0,
+      "izoh": "Alkanlarda barcha C atomlari faqat sigma bog' orqali bog'langan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#ca74e283"
+    },
+    {
+      "q": "Tarkibidagi barcha C atomlari o'zaro faqat sigma bog'lar vositasida bog'langan uglevodorodlar nima deb ataladi?",
+      "v": [
+        "To'yingan uglevodorodlar",
+        "To'yinmagan uglevodorodlar",
+        "Aromatik uglevodorodlar",
+        "Siklik uglevodorodlar"
+      ],
+      "t": 0,
+      "izoh": "Bunday uglevodorodlar to'yingan uglevodorodlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#85bcf1a3"
+    },
+    {
+      "q": "To'yingan uglevodorodlarga qaysi sinflar kiradi?",
+      "v": [
+        "Alkanlar va sikloalkanlar",
+        "Alkenlar va alkinlar",
+        "Alkadiyenlar va arenlar",
+        "Alkenlar va arenlar"
+      ],
+      "t": 0,
+      "izoh": "To'yingan uglevodorodlarga alkanlar va sikloalkanlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#fc472b15"
+    },
+    {
+      "q": "Alkanlar qanday zanjirli to'yingan uglevodorodlardir?",
+      "v": [
+        "Ochiq zanjirli",
+        "Yopiq zanjirli",
+        "Halqali zanjirli",
+        "Aromatik zanjirli"
+      ],
+      "t": 0,
+      "izoh": "Alkanlar ochiq zanjirli, sikloalkanlar esa yopiq zanjirlidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#889e8505"
+    },
+    {
+      "q": "Sikloalkanlar va alkenlarning umumiy formulasi qanday?",
+      "v": [
+        "CnH2n",
+        "CnH2n+2",
+        "CnH2n-2",
+        "CnH2n-6"
+      ],
+      "t": 0,
+      "izoh": "Sikloalkanlar va alkenlar CnH2n umumiy formulaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#9f04e08c"
+    },
+    {
+      "q": "Alkadiyenlar va alkinlarning umumiy formulasi qanday?",
+      "v": [
+        "CnH2n-2",
+        "CnH2n+2",
+        "CnH2n",
+        "CnH2n-6"
+      ],
+      "t": 0,
+      "izoh": "Alkadiyenlar va alkinlar CnH2n-2 umumiy formulaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#2b1728b8"
+    },
+    {
+      "q": "Arenlarning umumiy formulasi qanday?",
+      "v": [
+        "CnH2n-6",
+        "CnH2n-2",
+        "CnH2n",
+        "CnH2n+2"
+      ],
+      "t": 0,
+      "izoh": "Arenlar CnH2n-6 umumiy formulaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#93df7d69"
+    },
+    {
+      "q": "Gomologlar deganda qanday birikmalar tushuniladi?",
+      "v": [
+        "Bir sinfga kiruvchi, xossalari o'xshash, tarkibi bir-biridan CH2 guruh bilan farq qiladigan birikmalar",
+        "Umumiy formulasi bir xil, tuzilishi har xil bo'lgan moddalar",
+        "Tarkibida faqat uglerod bo'lgan moddalar",
+        "Bir xil fizik holatda bo'lgan moddalar"
+      ],
+      "t": 0,
+      "izoh": "Gomologlar — tarkibi bir-biridan CH2 guruh bilan farq qiladigan bir sinf birikmalari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#fa373d6e"
+    },
+    {
+      "q": "Gomologlar keltirilgan qator nima deb ataladi?",
+      "v": [
+        "Gomologik qator",
+        "Izomer qatori",
+        "Periodik qator",
+        "Radikal qatori"
+      ],
+      "t": 0,
+      "izoh": "Gomologlar keltirilgan qator gomologik qator deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#dc0a1e3f"
+    },
+    {
+      "q": "Gomologik qatorda qo'shni ikki alkan tarkibi qaysi guruh bilan farq qiladi?",
+      "v": [
+        "CH2",
+        "CH3",
+        "CH",
+        "C2H4"
+      ],
+      "t": 0,
+      "izoh": "Gomologlar bir-biridan CH2 guruh bilan farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#bddc979d"
+    },
+    {
+      "q": "CH4 formulali alkanning nomi nima?",
+      "v": [
+        "Metan",
+        "Etan",
+        "Propan",
+        "Butan"
+      ],
+      "t": 0,
+      "izoh": "CH4 — metan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#4b780928"
+    },
+    {
+      "q": "C3H8 formulali alkanning nomi nima?",
+      "v": [
+        "Propan",
+        "Etan",
+        "Butan",
+        "Pentan"
+      ],
+      "t": 0,
+      "izoh": "C3H8 — propan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#056908c8"
+    },
+    {
+      "q": "C4H10 formulali alkanning nomi nima?",
+      "v": [
+        "Butan",
+        "Pentan",
+        "Propan",
+        "Geksan"
+      ],
+      "t": 0,
+      "izoh": "C4H10 — butan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#88027e21"
+    },
+    {
+      "q": "C5H12 formulali alkanning nomi nima?",
+      "v": [
+        "Pentan",
+        "Butan",
+        "Geksan",
+        "Geptan"
+      ],
+      "t": 0,
+      "izoh": "C5H12 — pentan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#778d448c"
+    },
+    {
+      "q": "Geksanning molekulyar formulasi qanday?",
+      "v": [
+        "C6H14",
+        "C6H12",
+        "C5H12",
+        "C7H16"
+      ],
+      "t": 0,
+      "izoh": "Geksan — C6H14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#9ceb4553"
+    },
+    {
+      "q": "C7H16 formulali alkanning nomi nima?",
+      "v": [
+        "Geptan",
+        "Geksan",
+        "Oktan",
+        "Nonan"
+      ],
+      "t": 0,
+      "izoh": "C7H16 — geptan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#5d996388"
+    },
+    {
+      "q": "Oktanning molekulyar formulasi qanday?",
+      "v": [
+        "C8H18",
+        "C8H16",
+        "C7H16",
+        "C9H20"
+      ],
+      "t": 0,
+      "izoh": "Oktan — C8H18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#bae85fe5"
+    },
+    {
+      "q": "C9H20 formulali alkanning nomi nima?",
+      "v": [
+        "Nonan",
+        "Oktan",
+        "Dekan",
+        "Geptan"
+      ],
+      "t": 0,
+      "izoh": "C9H20 — nonan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#16a45285"
+    },
+    {
+      "q": "Dekanning molekulyar formulasi qanday?",
+      "v": [
+        "C10H22",
+        "C10H20",
+        "C9H20",
+        "C8H18"
+      ],
+      "t": 0,
+      "izoh": "Dekan — C10H22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#20e23f84"
+    },
+    {
+      "q": "To'yingan uglevodorod molekulasidan bitta vodorod atomi tortib olinsa nima hosil bo'ladi?",
+      "v": [
+        "Tegishli uglevodorod radikali",
+        "Yangi uglevodorod molekulasi",
+        "Galogenli hosila",
+        "Sikloalkan"
+      ],
+      "t": 0,
+      "izoh": "Bitta H atomi tortib olinsa radikal hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#e505f0b0"
+    },
+    {
+      "q": "Radikallarning umumiy formulasi qanday?",
+      "v": [
+        "CnH2n+1",
+        "CnH2n+2",
+        "CnH2n",
+        "CnH2n-2"
+      ],
+      "t": 0,
+      "izoh": "Radikallarning umumiy formulasi CnH2n+1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#2e1e25af"
+    },
+    {
+      "q": "Radikal nomi to'yingan uglevodorod nomidagi qaysi qo'shimcha o'rniga qaysi qo'shimcha qo'yish bilan hosil bo'ladi?",
+      "v": [
+        "«an» o'rniga «il»",
+        "«an» o'rniga «en»",
+        "«an» o'rniga «in»",
+        "«il» o'rniga «an»"
+      ],
+      "t": 0,
+      "izoh": "Metan — metil kabi «an» o'rniga «il» qo'shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#8b8301ff"
+    },
+    {
+      "q": "CH3— radikalining nomi nima?",
+      "v": [
+        "Metil",
+        "Etil",
+        "Propil",
+        "Butil"
+      ],
+      "t": 0,
+      "izoh": "CH3— radikali metil deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#7ddb7ac4"
+    },
+    {
+      "q": "CH3—CH2— radikalining nomi nima?",
+      "v": [
+        "Etil",
+        "Metil",
+        "Propil",
+        "Izopropil"
+      ],
+      "t": 0,
+      "izoh": "CH3—CH2— radikali etil deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#fd0d9a02"
+    },
+    {
+      "q": "CH3—CH2—CH2— radikalining nomi nima?",
+      "v": [
+        "Propil",
+        "Izopropil",
+        "Butil",
+        "Etil"
+      ],
+      "t": 0,
+      "izoh": "CH3—CH2—CH2— radikali propil deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#819a86a1"
+    },
+    {
+      "q": "CH3—CH(CH3)— radikalining nomi nima?",
+      "v": [
+        "Izopropil",
+        "Propil",
+        "Izobutil",
+        "Butil"
+      ],
+      "t": 0,
+      "izoh": "Tarmoqlangan uch uglerodli radikal izopropil deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#be25168c"
+    },
+    {
+      "q": "Nomenklaturaning qaysi turlari darslikda keltirilgan?",
+      "v": [
+        "Trivial, ratsional, sistematik",
+        "Trivial, empirik, klassik",
+        "Ratsional, zamonaviy, xalqaro",
+        "Tarixiy, ilmiy, amaliy"
+      ],
+      "t": 0,
+      "izoh": "Nomenklatura trivial, ratsional va sistematik turlarga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#e179e358"
+    },
+    {
+      "q": "To'yingan uglevodorodlarning birinchi to'rtta vakiliga metan, etan, propan, butan nomlari qanday nomlar hisoblanadi?",
+      "v": [
+        "Trivial (tarixiy, empirik, tasodifiy) nomlar",
+        "Sistematik nomlar",
+        "Ratsional nomlar",
+        "Xalqaro nomlar"
+      ],
+      "t": 0,
+      "izoh": "Bu nomlar trivial (empirik, tarixiy, tasodifiy) nomlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#7404c308"
+    },
+    {
+      "q": "Pentandan boshlab alkanlarning nomi qanday hosil qilinadi?",
+      "v": [
+        "Molekuladagi uglerod atomi sonining grekcha nomiga «an» qo'shimchasi qo'shib",
+        "Vodorod atomlari soniga «il» qo'shimchasi qo'shib",
+        "Radikal nomiga «ol» qo'shimchasi qo'shib",
+        "Tasodifiy nomlar berib"
+      ],
+      "t": 0,
+      "izoh": "«Penta»-5, «geksa»-6 kabi grekcha songa «an» qo'shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#ec4589b2"
+    },
+    {
+      "q": "Grekcha «gepta» va «okta» so'zlari qaysi sonlarni bildiradi?",
+      "v": [
+        "7 va 8",
+        "6 va 9",
+        "8 va 10",
+        "5 va 7"
+      ],
+      "t": 0,
+      "izoh": "«Gepta»-7, «okta»-8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#bb3d6d09"
+    },
+    {
+      "q": "Ratsional nomlash qaysi asrdan boshlab qo'llanilgan?",
+      "v": [
+        "XIX asrdan",
+        "XVIII asrdan",
+        "XX asrdan",
+        "XVII asrdan"
+      ],
+      "t": 0,
+      "izoh": "Ratsional nomenklatura XIX asrdan boshlab qo'llanilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#85d5858c"
+    },
+    {
+      "q": "«Ratsional» so'zi lotincha «ratio»dan olingan bo'lib, u nima degan ma'noni bildiradi?",
+      "v": [
+        "Fikrlash, idrok",
+        "Tartib, qonun",
+        "Tuzilish, bog'",
+        "Sanash, hisob"
+      ],
+      "t": 0,
+      "izoh": "«Ratio» — fikrlash, idrok degan ma'noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#09ffe451"
+    },
+    {
+      "q": "Ratsional nomenklaturaga ko'ra barcha alkanlar nimaning hosilasi deb qaraladi?",
+      "v": [
+        "Metanning",
+        "Etanning",
+        "Vodorodning",
+        "Butanning"
+      ],
+      "t": 0,
+      "izoh": "Ratsional nomenklaturada barcha alkanlar metan hosilasi deb qaraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#b29596e3"
+    },
+    {
+      "q": "Ratsional nomenklatura bo'yicha alkanlarni nomlashda nima metan markazi sifatida qaraladi?",
+      "v": [
+        "Eng ko'p tarmoqlangan uglerod",
+        "Zanjirning birinchi uglerodi",
+        "Zanjirning oxirgi uglerodi",
+        "Eng kam tarmoqlangan uglerod"
+      ],
+      "t": 0,
+      "izoh": "Eng ko'p tarmoqlangan uglerod metan markazi sifatida qaraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#e30ff38a"
+    },
+    {
+      "q": "CH3—CH2—CH2—CH3 (butan) ratsional nomenklatura bo'yicha qanday nomlanadi?",
+      "v": [
+        "Metiletilmetan",
+        "Dietilmetan",
+        "Metilpropilmetan",
+        "Trimetilmetan"
+      ],
+      "t": 0,
+      "izoh": "Markaziy CH2 ga metil va etil birikkan: metiletilmetan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#4d554cae"
+    },
+    {
+      "q": "Ratsional nomenklaturada modda tarkibida ikkita bir xil radikal bo'lsa, radikal nomidan oldin qaysi qo'shimcha qo'yiladi?",
+      "v": [
+        "«di»",
+        "«tri»",
+        "«tetra»",
+        "«bi»"
+      ],
+      "t": 0,
+      "izoh": "Ikkita bir xil radikal uchun «di» qo'shimchasi qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#2a7eee54"
+    },
+    {
+      "q": "Ratsional nomenklaturada uchta bir xil radikal uchun qaysi qo'shimcha ishlatiladi?",
+      "v": [
+        "«tri»",
+        "«di»",
+        "«tetra»",
+        "«triy»"
+      ],
+      "t": 0,
+      "izoh": "Uchta bir xil radikal uchun «tri» qo'shimchasi ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#c89c2e04"
+    },
+    {
+      "q": "CH3—CH2—CH(CH2CH3)—CH2—CH3 moddaning ratsional nomi qanday?",
+      "v": [
+        "Trietilmetan",
+        "Dietilmetan",
+        "Tetrametilmetan",
+        "Metilpropilmetan"
+      ],
+      "t": 0,
+      "izoh": "Markaziy CH ga uchta etil birikkan: trietilmetan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#e9ac5afc"
+    },
+    {
+      "q": "Markaziy uglerodga to'rtta metil guruhi birikkan modda ratsional nomenklatura bo'yicha qanday nomlanadi?",
+      "v": [
+        "Tetrametilmetan",
+        "Trietilmetan",
+        "Dimetilmetan",
+        "Metilpropilmetan"
+      ],
+      "t": 0,
+      "izoh": "To'rtta metil birikkan: tetrametilmetan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m05-alkanlar-umumiy-formula-gomologik-qator#d4e0c925"
+    }
+  ]
+}

@@ -1,0 +1,516 @@
+{
+  "nom": "22-mavzu. Termodinamikaning Birinchi Qonuni",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Energiyaning saqlanish qonuni qanday ta'riflangan?",
+      "v": [
+        "Tabiatda energiya yo'qdan bor bo'lmaydi va yo'qolmaydi; energiya miqdori o'zgarmaydi, energiya faqat bir turdan boshqa turga aylanadi",
+        "Energiya faqat mexanik ish hisobiga hosil bo'ladi",
+        "Energiya vaqt o'tishi bilan kamayib boradi",
+        "Energiya faqat issiqlik shaklida saqlanadi"
+      ],
+      "t": 0,
+      "izoh": "Energiya saqlanish qonuni: energiya yo'qdan bo'lmaydi, yo'qolmaydi, faqat bir turdan boshqasiga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#c9b31e8e"
+    },
+    {
+      "q": "Termodinamikaning birinchi qonuni nima?",
+      "v": [
+        "Energiya saqlanish qonunining issiqlik hodisalariga tatbiqini ifodalovchi qonun",
+        "Issiqlikning faqat issiq jismdan sovuq jismga o'tishi to'g'risidagi qonun",
+        "Gaz holatini ifodalovchi tenglama",
+        "Yoqilg'i yonishi to'g'risidagi qonun"
+      ],
+      "t": 0,
+      "izoh": "Termodinamikaning birinchi qonuni energiya saqlanish qonunining issiqlik hodisalariga tatbiqidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#9d95eb2d"
+    },
+    {
+      "q": "Termodinamikaning birinchi qonunining matematik ifodasi qaysi?",
+      "v": [
+        "Q = ΔU + A",
+        "Q = ΔU − A",
+        "Q = A − ΔU",
+        "Q = ΔU·A"
+      ],
+      "t": 0,
+      "izoh": "Birinchi qonun: Q = ΔU + A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#5806011e"
+    },
+    {
+      "q": "Termodinamikaning birinchi qonunining so'z bilan ifodasi qanday?",
+      "v": [
+        "Sistemaga berilgan issiqlik miqdori sistemaning ichki energiyasini o'zgartirishga va sistemaning tashqi kuchlarga qarshi ish bajarishiga sarflanadi",
+        "Sistemaga berilgan issiqlik faqat sistemaning ichki energiyasini oshiradi",
+        "Sistemaga berilgan issiqlik faqat ish bajarishga sarflanadi",
+        "Sistema olgan issiqlik sovitgichga to'liq uzatiladi"
+      ],
+      "t": 0,
+      "izoh": "Q = ΔU + A ifodasining so'z bilan ta'rifi shu.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#5d33e7d3"
+    },
+    {
+      "q": "Termodinamikaning birinchi qonunini kimlar ta'riflagan?",
+      "v": [
+        "R. Mayer, G. Gelmgols va J. Joul",
+        "S. Karno va R. Klauzius",
+        "N. Kopernik va G. Galiley",
+        "M. Faradey va J. Maksvell"
+      ],
+      "t": 0,
+      "izoh": "Bu qonunni XIX asrning o'rtalarida nemis olimlari R. Mayer, G. Gelmgols va ingliz olimi J. Joul ta'riflagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#8e647374"
+    },
+    {
+      "q": "Q = ΔU + A formulasida ΔU nimani bildiradi?",
+      "v": [
+        "Sistemaning ichki energiyasining o'zgarishini",
+        "Sistema bajargan ishni",
+        "Sistemaga berilgan issiqlikni",
+        "Sistema hajmining o'zgarishini"
+      ],
+      "t": 0,
+      "izoh": "ΔU — ichki energiyaning o'zgarishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#31c4b308"
+    },
+    {
+      "q": "Izotermik jarayonda qaysi kattalik o'zgarmas bo'ladi?",
+      "v": [
+        "Temperatura (T = const)",
+        "Bosim (p = const)",
+        "Hajm (V = const)",
+        "Ichki energiya o'zgarishi"
+      ],
+      "t": 0,
+      "izoh": "Izotermik jarayonda T = const.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#f9d9643e"
+    },
+    {
+      "q": "Izotermik jarayonda termodinamikaning birinchi qonuni qanday ifodalanadi?",
+      "v": [
+        "Q = A",
+        "Q = ΔU",
+        "Q = ΔU + p·ΔV",
+        "A = −ΔU"
+      ],
+      "t": 0,
+      "izoh": "Izotermik jarayonda ΔU = 0, shuning uchun Q = A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#6a3d50c5"
+    },
+    {
+      "q": "Nima uchun izotermik jarayonda ΔU = 0 bo'ladi?",
+      "v": [
+        "Ideal gazning temperaturasi o'zgarmasa, ichki energiyasi ham o'zgarmaydi",
+        "Gaz ish bajarmagani uchun",
+        "Gaz issiqlik olmagani uchun",
+        "Gazning hajmi o'zgarmagani uchun"
+      ],
+      "t": 0,
+      "izoh": "Ideal gaz ichki energiyasi temperaturaga bog'liq; T o'zgarmasa ΔU = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#04350a8d"
+    },
+    {
+      "q": "Izotermik jarayonda ideal gazga berilgan issiqlik miqdori nimaga sarflanadi?",
+      "v": [
+        "Ish bajarishga",
+        "Ichki energiyani oshirishga",
+        "Gazni sovitishga",
+        "Hech narsaga"
+      ],
+      "t": 0,
+      "izoh": "Izotermik jarayonda gazga berilgan issiqlik ish bajarishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#b3b8e2da"
+    },
+    {
+      "q": "Izotermik jarayonda gaz issiqlik olayotgan (Q > 0) bo'lsa, gaz qanday o'zgaradi?",
+      "v": [
+        "Gaz kengayadi va musbat ish bajaradi",
+        "Gaz siqiladi va manfiy ish bajaradi",
+        "Gaz temperaturasi ko'tariladi",
+        "Gaz ichki energiyasi ortadi"
+      ],
+      "t": 0,
+      "izoh": "Q > 0 bo'lsa, gaz ΔV hajmga kengayadi va musbat ish (A > 0) bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#fde77c9a"
+    },
+    {
+      "q": "Izobarik jarayonda qaysi kattalik o'zgarmas bo'ladi?",
+      "v": [
+        "Bosim (p = const)",
+        "Temperatura",
+        "Hajm",
+        "Ichki energiya"
+      ],
+      "t": 0,
+      "izoh": "Izobarik jarayonda p = const.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#792a4712"
+    },
+    {
+      "q": "Izobarik jarayonda gaz bajargan ish qanday ifodalanadi?",
+      "v": [
+        "A = p·ΔV",
+        "A = p/ΔV",
+        "A = ΔV/p",
+        "A = p·V"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas bosimda A = p·ΔV.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#d0a454bf"
+    },
+    {
+      "q": "Izobarik jarayonda termodinamikaning birinchi qonuni qanday yoziladi?",
+      "v": [
+        "Q = ΔU + p·ΔV",
+        "Q = ΔU",
+        "Q = p·ΔV",
+        "Q = ΔU − p·ΔV"
+      ],
+      "t": 0,
+      "izoh": "Izobarik jarayonda Q = ΔU + p·ΔV.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#ae66f6ec"
+    },
+    {
+      "q": "Izobarik jarayonda sistemaga berilgan issiqlik nimaga sarflanadi?",
+      "v": [
+        "Ichki energiyani o'zgartirishga va o'zgarmas bosimda ish bajarishga",
+        "Faqat ichki energiyani oshirishga",
+        "Faqat ish bajarishga",
+        "Gazni sovitishga"
+      ],
+      "t": 0,
+      "izoh": "Izobarik jarayonda issiqlik ichki energiya o'zgarishiga va ish bajarishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#fd51cdb0"
+    },
+    {
+      "q": "Gaz o'zgarmas bosimda isitilganda (Q > 0) qanday o'zgarishlar kuzatiladi?",
+      "v": [
+        "Ichki energiya ortadi va gaz kengayib, musbat ish bajaradi",
+        "Ichki energiya kamayadi va gaz siqiladi",
+        "Temperatura o'zgarmaydi",
+        "Gaz manfiy ish bajaradi"
+      ],
+      "t": 0,
+      "izoh": "Izobarik isinishda ΔU > 0 va A > 0, gaz kengayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#b9f3961b"
+    },
+    {
+      "q": "Gaz o'zgarmas bosimda sovitilganda qanday o'zgarishlar kuzatiladi?",
+      "v": [
+        "Ichki energiya kamayadi va manfiy ish bajariladi",
+        "Ichki energiya ortadi va gaz kengayadi",
+        "Gaz musbat ish bajaradi",
+        "Bosim oshadi"
+      ],
+      "t": 0,
+      "izoh": "Sovitishda ΔU < 0 va A < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#d766c160"
+    },
+    {
+      "q": "Izoxorik jarayonda qaysi kattalik o'zgarmas bo'ladi?",
+      "v": [
+        "Hajm (V = const)",
+        "Bosim",
+        "Temperatura",
+        "Ish"
+      ],
+      "t": 0,
+      "izoh": "Izoxorik jarayonda V = const.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#05d88259"
+    },
+    {
+      "q": "Izoxorik jarayonda gaz nima uchun tashqi kuchlarga qarshi ish bajarmaydi?",
+      "v": [
+        "Gazning hajmi o'zgarmaydi (ΔV = 0), shuning uchun A = p·ΔV = 0",
+        "Gazning bosimi nolga teng",
+        "Gazning temperaturasi o'zgarmaydi",
+        "Gaz issiqlik olmaydi"
+      ],
+      "t": 0,
+      "izoh": "V = const bo'lgani uchun ΔV = 0 va A = p·ΔV = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#f96a10cc"
+    },
+    {
+      "q": "Izoxorik jarayonda termodinamikaning birinchi qonuni qanday ifodalanadi?",
+      "v": [
+        "Q = ΔU",
+        "Q = A",
+        "Q = ΔU + p·ΔV",
+        "A = −ΔU"
+      ],
+      "t": 0,
+      "izoh": "Izoxorik jarayonda A = 0 bo'lgani uchun Q = ΔU.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#d83e4c70"
+    },
+    {
+      "q": "Izoxorik jarayonda sistemaga berilgan issiqlikning hammasi nimaga sarflanadi?",
+      "v": [
+        "Sistemaning ichki energiyasini o'zgartirishga",
+        "Ish bajarishga",
+        "Gazni kengaytirishga",
+        "Sovitgichga uzatishga"
+      ],
+      "t": 0,
+      "izoh": "Izoxorik jarayonda issiqlik faqat ichki energiyani o'zgartirishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#bcb48170"
+    },
+    {
+      "q": "Adiabatik jarayon deb qanday jarayonga aytiladi?",
+      "v": [
+        "Issiqlik almashmaydigan qilib izolyatsiyalangan sistemadagi jarayon",
+        "O'zgarmas temperaturadagi jarayon",
+        "O'zgarmas bosimdagi jarayon",
+        "O'zgarmas hajmdagi jarayon"
+      ],
+      "t": 0,
+      "izoh": "Q = 0 bo'lgan, ya'ni muhit bilan issiqlik almashmaydigan jarayon — adiabatik jarayon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#0aef55aa"
+    },
+    {
+      "q": "Adiabatik jarayonda termodinamikaning birinchi qonuni qanday ko'rinishga keladi?",
+      "v": [
+        "A = −ΔU",
+        "Q = ΔU",
+        "Q = A",
+        "Q = ΔU + A"
+      ],
+      "t": 0,
+      "izoh": "Q = 0 bo'lgani uchun ΔU + A = 0 yoki A = −ΔU.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#b8014e86"
+    },
+    {
+      "q": "Gaz adiabatik kengayganda uning ichki energiyasi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi (ΔU < 0), ish ichki energiya kamayishi hisobiga bajariladi",
+        "Ortadi (ΔU > 0)",
+        "O'zgarmaydi",
+        "Avval ortib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Adiabatik kengayishda ish gaz ichki energiyasining kamayishi hisobiga bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#823e8f09"
+    },
+    {
+      "q": "Tashqi kuchlar ta'sirida gaz adiabatik siqilganda nima sodir bo'ladi?",
+      "v": [
+        "Gazning ichki energiyasi ortadi va gaz ustidan ish bajariladi",
+        "Gazning ichki energiyasi kamayadi",
+        "Gaz issiqlik ajratadi",
+        "Gaz temperaturasi pasayadi"
+      ],
+      "t": 0,
+      "izoh": "Adiabatik siqilishda ΔU > 0 va A < 0, ya'ni tashqi kuch gaz ustida ish bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#9f4bb201"
+    },
+    {
+      "q": "Adiabatik jarayonda gazning qaysi makroskopik parametrlari o'zgaradi?",
+      "v": [
+        "p, V va T ning uchtalasi ham",
+        "Faqat p va V",
+        "Faqat T",
+        "Faqat p"
+      ],
+      "t": 0,
+      "izoh": "Adiabatik jarayonda p, V va T o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#c1bc097b"
+    },
+    {
+      "q": "Juda tez sodir bo'ladigan jarayon (gaz tez siqilsa yoki tez kengaytirilsa) qanday jarayonga yaqin bo'ladi?",
+      "v": [
+        "Adiabatik jarayonga",
+        "Izotermik jarayonga",
+        "Izobarik jarayonga",
+        "Izoxorik jarayonga"
+      ],
+      "t": 0,
+      "izoh": "Tez jarayonda gaz muhit bilan issiqlik almashishga ulgurmaydi, jarayon adiabatikka yaqin bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#69c0edc3"
+    },
+    {
+      "q": "Atmosferadagi havo yuqoriga ko'tarilib kengayganda nima sodir bo'ladi?",
+      "v": [
+        "Havo soviydi, suv bug'lari kondensatsiyalanib, bulut hosil qiladi",
+        "Havo isiydi va bug'lanish kuchayadi",
+        "Havo bosimi ortadi",
+        "Hech narsa o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Havo yuqoriga ko'tarilib adiabatik kengayadi, soviydi; bug'lar kondensatsiyalanib bulut hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#75513ead"
+    },
+    {
+      "q": "Kundalik turmushda ishlatiladigan adiabatik izolyatsiyalangan sistemaga qanday misol keltiriladi?",
+      "v": [
+        "Termos",
+        "Ochiq choynak",
+        "Metall qoziq",
+        "Shisha stakan"
+      ],
+      "t": 0,
+      "izoh": "Adiabatik izolyatsiyalangan sistemalarga termos misol bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#9efd3ffe"
+    },
+    {
+      "q": "Tabiatda issiqlikni mutlaqo o'tkazmaydigan moddalar mavjudmi?",
+      "v": [
+        "Yo'q, mavjud emas; sistema atrofdagi jismlardan to'liq izolyatsiyalab bo'lmaydi",
+        "Ha, mavjud",
+        "Faqat metallar bunday",
+        "Faqat gazlar bunday"
+      ],
+      "t": 0,
+      "izoh": "Issiqlikni mutlaqo o'tkazmaydigan moddalar mavjud emas, lekin termos kabi yaqin izolyatsiya qilingan sistemalar ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#64db9146"
+    },
+    {
+      "q": "Silindr porsheni ostidagi gazga Q issiqlik berilganda bu issiqlik qayerlarga sarflanadi?",
+      "v": [
+        "Gazning ichki energiyasini oshirishga va porshenni ko'tarishga (tashqi kuchlarga qarshi ishga)",
+        "Faqat gazni isitishga",
+        "Faqat porshenni ko'tarishga",
+        "Silindr devorlarini isitishga"
+      ],
+      "t": 0,
+      "izoh": "Berilgan issiqlik ΔU ga va porshenni Δh balandlikka ko'tarish uchun bajariladigan A ishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#88e075a8"
+    },
+    {
+      "q": "Gaz isitilganda ichki energiyasi qanday o'zgaradi?",
+      "v": [
+        "Ortadi (ΔU > 0)",
+        "Kamayadi (ΔU < 0)",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Gaz isitilganda ichki energiyasi ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#af2df345"
+    },
+    {
+      "q": "Izotermik jarayonda bajarilgan ishning kattaligi p–V diagrammada nimaga teng?",
+      "v": [
+        "Diagrammada bo'yalgan (izoterma ostidagi) yuzaga",
+        "Izotermaning qiyaligiga",
+        "Koordinata boshidan olingan masofaga",
+        "O'qlar orasidagi burchakka"
+      ],
+      "t": 0,
+      "izoh": "Bajarilgan ish diagrammada ko'rsatilgan yuzaga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#962a1ed7"
+    },
+    {
+      "q": "Sistemaga 500 J issiqlik berilganda u 300 J ish bajardi. Sistemaning ichki energiyasi qanday o'zgardi?",
+      "v": [
+        "200 J ga ortdi",
+        "200 J ga kamaydi",
+        "800 J ga ortdi",
+        "O'zgarmadi"
+      ],
+      "t": 0,
+      "izoh": "ΔU = Q − A = 500 − 300 = 200 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m22-termodinamikaning-birinchi-qonuni#32f916f2"
+    }
+  ]
+}

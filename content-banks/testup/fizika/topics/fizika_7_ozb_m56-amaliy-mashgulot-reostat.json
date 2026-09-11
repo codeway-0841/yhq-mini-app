@@ -1,0 +1,396 @@
+{
+  "nom": "56-mavzu. Amaliy Mashgulot Reostat",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "56-amaliy mashg'ulotning maqsadi nima?",
+      "v": [
+        "Reostat yordamida zanjirdagi tok kuchining o'zgarishini o'rganish",
+        "Rezistor qarshiligini ommetr bilan o'lchash",
+        "O'tkazgichning volt-amper xarakteristikasini olish",
+        "Kuchlanishni voltmetr bilan o'lchashni o'rganish"
+      ],
+      "t": 0,
+      "izoh": "Maqsad: reostat yordamida tok kuchining o'zgarishini o'rganish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#d8f00fb1"
+    },
+    {
+      "q": "Amaliy mashg'ulotda qanday qarshilikli rezistor ishlatiladi?",
+      "v": [
+        "Qarshiligi 20 Ω bo'lgan rezistor",
+        "Qarshiligi 10 Ω bo'lgan rezistor",
+        "Qarshiligi 100 Ω bo'lgan rezistor",
+        "Qarshiligi 1 Ω bo'lgan rezistor"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar orasida qarshiligi 20 Ω bo'lgan rezistor ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#4097117e"
+    },
+    {
+      "q": "Amaliy mashg'ulot uchun kerakli jihozlar qaysilar?",
+      "v": [
+        "Tok manbai, reostat, ampermetr, rezistor, kalit va ulovchi simlar",
+        "Tok manbai, voltmetr, lampochka, kalit",
+        "Ommetr, rezistor va simlar",
+        "Milliampermetr, voltmetr, rezistor"
+      ],
+      "t": 0,
+      "izoh": "Tok manbai, reostat, ampermetr, 20 Ω rezistor, kalit va ulovchi simlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#7b716eaf"
+    },
+    {
+      "q": "Amaliy mashg'ulotda tok kuchi qaysi asbob bilan o'lchanadi?",
+      "v": [
+        "Ampermetr bilan",
+        "Voltmetr bilan",
+        "Ommetr bilan",
+        "Dinamometr bilan"
+      ],
+      "t": 0,
+      "izoh": "Ampermetrning ko'rsatishi yozib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#5480b9d2"
+    },
+    {
+      "q": "Ishni bajarishdan oldin reostatga diqqat bilan qarab, nima aniqlanadi?",
+      "v": [
+        "Surgichi qanday vaziyatda eng katta qarshilikka ega bo'lgan holati",
+        "Surgichning massasi",
+        "Reostatning rangi",
+        "Simning solishtirma qarshiligi"
+      ],
+      "t": 0,
+      "izoh": "1-bosqichda eng katta qarshilik holati aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#fe23287c"
+    },
+    {
+      "q": "Zanjir yig'ilganda kalit qanday holatda qoldiriladi?",
+      "v": [
+        "Ochiq",
+        "Yopiq (ulangan)",
+        "Yarim yopiq",
+        "Ahamiyatsiz"
+      ],
+      "t": 0,
+      "izoh": "Kalitni ochiq qoldiring, deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#94fa8cda"
+    },
+    {
+      "q": "Amaliy mashg'ulotda tok manbaining kuchlanish beruvchi murvati qanday holatga qo'yiladi?",
+      "v": [
+        "8 V holatiga",
+        "4 V holatiga",
+        "6 V holatiga",
+        "10 V holatiga"
+      ],
+      "t": 0,
+      "izoh": "Murvat 8 V holatiga qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#acffdea5"
+    },
+    {
+      "q": "Kalit ulangach, birinchi navbatda nima qilinadi?",
+      "v": [
+        "Ampermetrning ko'rsatishi yozib olinadi va jadvalga yoziladi",
+        "Reostat surgichi darhol suriladi",
+        "Tok manbai tarmoqdan uziladi",
+        "Rezistor almashtiriladi"
+      ],
+      "t": 0,
+      "izoh": "Ampermetr ko'rsatishi jadvalga yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#7b147058"
+    },
+    {
+      "q": "Har bir o'lchovdan keyin reostatning qarshiligi qanday o'zgartiriladi?",
+      "v": [
+        "Surgich siljitilib, qarshilik biroz kamaytiriladi",
+        "Qarshilik oshiriladi",
+        "Qarshilik o'zgartirilmaydi",
+        "Reostat zanjirdan chiqariladi"
+      ],
+      "t": 0,
+      "izoh": "Surgichni siljitib, qarshilik kamaytiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#1da0a768"
+    },
+    {
+      "q": "Surgichni siljitishdan oldin kalit bilan nima qilinadi?",
+      "v": [
+        "Kalit uziladi",
+        "Kalit ulangan qoldiriladi",
+        "Kalit almashtiriladi",
+        "Kalit olib tashlanadi"
+      ],
+      "t": 0,
+      "izoh": "Kalit uziladi, so'ng surgich siljitiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#4d519165"
+    },
+    {
+      "q": "Amaliy mashg'ulot jadvalida nima yozib boriladi?",
+      "v": [
+        "Reostat surgichining holatlariga mos tok kuchi qiymatlari",
+        "Kuchlanish va qarshilik qiymatlari",
+        "Zaryad va vaqt qiymatlari",
+        "Sim uzunliklari"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda surgich holatlari (1–4) va tok kuchi (A) yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#782083c2"
+    },
+    {
+      "q": "Jadvalda reostat surgichining nechta holati keltirilgan?",
+      "v": [
+        "4 ta",
+        "3 ta",
+        "2 ta",
+        "5 ta"
+      ],
+      "t": 0,
+      "izoh": "Holatlar: 1, 2, 3, 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#95d582e8"
+    },
+    {
+      "q": "Reostat qarshiligi kamaytirilganda zanjirdagi tok kuchi qanday o'zgarishi kutiladi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "I = U/R ga ko'ra, R kamaysa, I ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#509bd4ef"
+    },
+    {
+      "q": "Amaliy mashg'ulotning oxirgi bosqichida nima qilinadi?",
+      "v": [
+        "Tajriba natijalari asosida o'z xulosasi yoziladi",
+        "Reostat qarshiligi hisoblanadi",
+        "Voltmetr ko'rsatishi yoziladi",
+        "Zanjir sxemasi chiziladi"
+      ],
+      "t": 0,
+      "izoh": "9-bosqich: o'z xulosangizni yozing.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#02a7297a"
+    },
+    {
+      "q": "Amaliy mashg'ulotda reostat zanjirga qanday ulanadi?",
+      "v": [
+        "Ampermetr va rezistor bilan ketma-ket",
+        "Rezistor bilan parallel",
+        "Faqat tok manbaiga parallel",
+        "Kalit bilan parallel"
+      ],
+      "t": 0,
+      "izoh": "Tokni rostlash uchun reostat ketma-ket ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#f859a4a3"
+    },
+    {
+      "q": "Reostat yordamida tok kuchini rostlash nimaga asoslangan?",
+      "v": [
+        "Tok kuchining o'tkazgich qarshiligiga bog'liqligiga",
+        "Tok kuchining sim rangiga bog'liqligiga",
+        "Kuchlanishning vaqtga bog'liqligiga",
+        "Zaryadning massaga bog'liqligiga"
+      ],
+      "t": 0,
+      "izoh": "Zanjirdagi tok kuchi qarshilikka bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#08f17009"
+    },
+    {
+      "q": "Tajriba boshlanishida reostat qanday qarshilik holatida bo'lishi maqsadga muvofiq?",
+      "v": [
+        "Eng katta qarshilik holatida",
+        "Eng kichik qarshilik holatida",
+        "Nol qarshilikda",
+        "Ahamiyatsiz"
+      ],
+      "t": 0,
+      "izoh": "Avval eng katta qarshilik holati aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#ef0b0981"
+    },
+    {
+      "q": "Amaliy mashg'ulotda kuchlanish manbai sifatida nima ishlatiladi?",
+      "v": [
+        "Kuchlanish beruvchi murvati bo'lgan tok manbai",
+        "Oddiy batareya",
+        "Akkumulyator",
+        "Generator"
+      ],
+      "t": 0,
+      "izoh": "Tok manbai murvati 8 V holatiga qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#4ed44ee3"
+    },
+    {
+      "q": "Reostat qarshiligini kamaytirish qanday amalga oshiriladi?",
+      "v": [
+        "Surgichni siljitish orqali",
+        "Simni qisqartirish orqali",
+        "Tok manbaini almashtirish orqali",
+        "Kalitni uzish orqali"
+      ],
+      "t": 0,
+      "izoh": "Surgich siljitilib qarshilik kamaytiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#5f4fe74b"
+    },
+    {
+      "q": "Amaliy mashg'ulotda o'lchanadigan yagona fizik kattalik qaysi?",
+      "v": [
+        "Tok kuchi",
+        "Kuchlanish",
+        "Qarshilik",
+        "Zaryad"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga faqat tok kuchi yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#a3972d66"
+    },
+    {
+      "q": "Tok kuchi o'lchovlari qaysi birlikda ifodalanadi?",
+      "v": [
+        "Amperda (A)",
+        "Voltda (V)",
+        "Omda (Ω)",
+        "Kulonda (C)"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda tok kuchi (A) ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#d3ad6739"
+    },
+    {
+      "q": "Amaliy mashg'ulotda rezistorning vazifasi nima?",
+      "v": [
+        "Zanjirga ma'lum (20 Ω) qarshilik kiritish",
+        "Tokni o'lchash",
+        "Kuchlanishni rostlash",
+        "Zanjirni uzish"
+      ],
+      "t": 0,
+      "izoh": "Rezistor ma'lum qarshilik sifatida ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#5e82b401"
+    },
+    {
+      "q": "Tajriba davomida ampermetr ko'rsatishining oshishi nimani bildiradi?",
+      "v": [
+        "Reostat qarshiligining kamayganini",
+        "Reostat qarshiligining oshganini",
+        "Kuchlanishning kamayganini",
+        "Zanjirning uzilganini"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik kamayganda tok ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#aa350eff"
+    },
+    {
+      "q": "Amaliy mashg'ulotda kalitning vazifasi nima?",
+      "v": [
+        "Zanjirni ulash va uzish",
+        "Tok kuchini o'lchash",
+        "Qarshilikni o'zgartirish",
+        "Kuchlanishni berish"
+      ],
+      "t": 0,
+      "izoh": "Kalit zanjirni ulash/uzish uchun ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#7ae47b1a"
+    },
+    {
+      "q": "Amaliy mashg'ulot qaysi mavzudagi bilimlarni mustahkamlashga xizmat qiladi?",
+      "v": [
+        "Reostatlarning ishlatilishi va tok kuchining qarshilikka bog'liqligi",
+        "Magnit maydon",
+        "Yorug'lik hodisalari",
+        "Mexanik harakat"
+      ],
+      "t": 0,
+      "izoh": "Reostat bilan tok kuchini rostlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#3ae3ced6"
+    },
+    {
+      "q": "Ishni bajarishda har bir yangi o'lchovdan so'ng natija qayerga qayd etiladi?",
+      "v": [
+        "Oldindan chizilgan jadvalga",
+        "Darslik sahifasiga",
+        "Reostat ustiga",
+        "Hech qayerga yozilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Natijalar jadvalga yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m56-amaliy-mashgulot-reostat#879b7495"
+    }
+  ]
+}

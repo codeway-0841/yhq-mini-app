@@ -1,0 +1,1306 @@
+{
+  "nom": "Reported speech (statements)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "'I am reading a good book,' Dilnoza said. Dilnoza said that she ___ a good book.",
+      "v": [
+        "is reading",
+        "reads",
+        "had read",
+        "was reading"
+      ],
+      "t": 3,
+      "izoh": "Present Continuous → Past Continuous: was reading.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#ae52a550"
+    },
+    {
+      "q": "'We will win,' the players said. The players said that they ___ win.",
+      "v": [
+        "will",
+        "would",
+        "won",
+        "had"
+      ],
+      "t": 1,
+      "izoh": "will → would.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#fe5ff953"
+    },
+    {
+      "q": "'I can swim,' the boy said. The boy said that he ___ swim.",
+      "v": [
+        "could",
+        "can",
+        "couldn't",
+        "was able"
+      ],
+      "t": 0,
+      "izoh": "can → could.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#0d7b6eac"
+    },
+    {
+      "q": "'I have finished the report,' he said. He said that he ___ the report.",
+      "v": [
+        "have finished",
+        "has finished",
+        "had finished",
+        "finished"
+      ],
+      "t": 2,
+      "izoh": "Present Perfect → Past Perfect: had finished.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#18863dcf"
+    },
+    {
+      "q": "Complete: He ___ me that he was ill.",
+      "v": [
+        "said",
+        "told",
+        "tell",
+        "say"
+      ],
+      "t": 1,
+      "izoh": "kimga (me) bor — told (#52).",
+      "qiy": "orta",
+      "id": "ing_b1_m12#1657084f"
+    },
+    {
+      "q": "Complete: She ___ that the film was boring.",
+      "v": [
+        "said",
+        "told",
+        "say",
+        "tells"
+      ],
+      "t": 0,
+      "izoh": "kimga yo'q — said.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#00509f12"
+    },
+    {
+      "q": "'We are leaving tomorrow,' the guests said. The guests said that they were leaving ___.",
+      "v": [
+        "tomorrow",
+        "the next day",
+        "yesterday",
+        "that day"
+      ],
+      "t": 1,
+      "izoh": "tomorrow → the next day.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#55d9ae4a"
+    },
+    {
+      "q": "'I like your idea,' Malika said to me. Malika said that she liked ___ idea.",
+      "v": [
+        "your",
+        "her",
+        "my",
+        "his"
+      ],
+      "t": 2,
+      "izoh": "your (menga) → my.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#91125462"
+    },
+    {
+      "q": "Find the mistake: 'Yesterday he said that he is tired.'",
+      "v": [
+        "said",
+        "that",
+        "tired",
+        "is"
+      ],
+      "t": 3,
+      "izoh": "is → was (#31).",
+      "qiy": "orta",
+      "id": "ing_b1_m12#29d53e8f"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She told me that she was late.",
+        "She said me that she was late.",
+        "She told that she was late.",
+        "She said to that she was late."
+      ],
+      "t": 0,
+      "izoh": "tell + kimga: told me (#52).",
+      "qiy": "orta",
+      "id": "ing_b1_m12#9a16dc9c"
+    },
+    {
+      "q": "'I saw her yesterday,' he said. He said that he had seen her ___.",
+      "v": [
+        "yesterday",
+        "the next day",
+        "that day",
+        "the day before"
+      ],
+      "t": 3,
+      "izoh": "yesterday → the day before.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#144dccc0"
+    },
+    {
+      "q": "Choose the INCORRECT sentence.",
+      "v": [
+        "He said that he was busy.",
+        "They told us that they were ready.",
+        "She said that she would help.",
+        "He said that he will come."
+      ],
+      "t": 3,
+      "izoh": "will → would kerak edi.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#a606a2a7"
+    },
+    {
+      "q": "'I am ready,' he said. He said that he ___ ready.",
+      "v": [
+        "are",
+        "is",
+        "was",
+        "were"
+      ],
+      "t": 2,
+      "izoh": "Reported speech: 'am/is' -> 'was'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#850ba719"
+    },
+    {
+      "q": "Complete: He ___ me that he was late.",
+      "v": [
+        "told",
+        "said",
+        "say",
+        "tell"
+      ],
+      "t": 0,
+      "izoh": "'tell' dan keyin object (me, us) keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#adef7182"
+    },
+    {
+      "q": "Complete: They ___ us that they were tired.",
+      "v": [
+        "tell",
+        "said",
+        "told",
+        "say"
+      ],
+      "t": 2,
+      "izoh": "'tell' dan keyin object (me, us) keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#ecaf8c2b"
+    },
+    {
+      "q": "'We go to school,' they said. They said that they ___ to school.",
+      "v": [
+        "went",
+        "go",
+        "gone",
+        "goes"
+      ],
+      "t": 0,
+      "izoh": "Present simple -> past simple: fe'l 2-shaklda.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#40378bc2"
+    },
+    {
+      "q": "'She reads a lot,' he said. He said that she ___ a lot.",
+      "v": [
+        "reeds",
+        "reads",
+        "reading",
+        "read"
+      ],
+      "t": 3,
+      "izoh": "Present simple -> past simple: fe'l 2-shaklda.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#bdda6b5d"
+    },
+    {
+      "q": "'I like your dress,' she said to me. She said that she liked ___ dress.",
+      "v": [
+        "my",
+        "his",
+        "her",
+        "your"
+      ],
+      "t": 0,
+      "izoh": "Reported speech'da olmoshlar mos ravishda o'zgaradi.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#680f6347"
+    },
+    {
+      "q": "'She is tired,' he said. He said that she ___ tired.",
+      "v": [
+        "was",
+        "are",
+        "is",
+        "were"
+      ],
+      "t": 0,
+      "izoh": "Reported speech: 'am/is' -> 'was'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#383b2a81"
+    },
+    {
+      "q": "'It will rain,' she said. She said that it ___ rain.",
+      "v": [
+        "would",
+        "rains",
+        "will",
+        "would to"
+      ],
+      "t": 0,
+      "izoh": "Reported speech: 'will' -> 'would'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#1352c94c"
+    },
+    {
+      "q": "Complete: He ___ that he liked tea.",
+      "v": [
+        "said",
+        "tell",
+        "say",
+        "told"
+      ],
+      "t": 0,
+      "izoh": "'say' dan keyin object kelmaydi (that ishlatiladi).",
+      "qiy": "orta",
+      "id": "ing_b1_m12#e93e835c"
+    },
+    {
+      "q": "'We want tea,' they said. They said that they ___ tea.",
+      "v": [
+        "want",
+        "wanted",
+        "wants",
+        "wanting"
+      ],
+      "t": 1,
+      "izoh": "Present simple -> past simple: fe'l 2-shaklda.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#70c21a92"
+    },
+    {
+      "q": "'We are friends,' they said. They said that they ___ friends.",
+      "v": [
+        "was",
+        "is",
+        "are",
+        "were"
+      ],
+      "t": 3,
+      "izoh": "Reported speech: 'are' -> 'were'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#0fb8ec96"
+    },
+    {
+      "q": "'I speak English,' he said. He said that he ___ English.",
+      "v": [
+        "speaks",
+        "speaked",
+        "speak",
+        "spoke"
+      ],
+      "t": 3,
+      "izoh": "Present simple -> past simple: fe'l 2-shaklda.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#d6da400f"
+    },
+    {
+      "q": "'She teaches maths,' he said. He said that she ___ maths.",
+      "v": [
+        "teach",
+        "taught",
+        "teached",
+        "teaches"
+      ],
+      "t": 1,
+      "izoh": "Present simple -> past simple: fe'l 2-shaklda.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#b4020f1f"
+    },
+    {
+      "q": "'I am happy,' she said. She said that she ___ happy.",
+      "v": [
+        "were",
+        "was",
+        "is",
+        "are"
+      ],
+      "t": 1,
+      "izoh": "Reported speech: 'am/is' -> 'was'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#0f5931bf"
+    },
+    {
+      "q": "'They are here,' she said. She said that they ___ here.",
+      "v": [
+        "was",
+        "were",
+        "been",
+        "are"
+      ],
+      "t": 1,
+      "izoh": "Reported speech: 'are' -> 'were'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#e4a008c1"
+    },
+    {
+      "q": "'It is cold,' they said. They said that it ___ cold.",
+      "v": [
+        "is",
+        "was",
+        "were",
+        "been"
+      ],
+      "t": 1,
+      "izoh": "Reported speech: 'am/is' -> 'was'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#36a41863"
+    },
+    {
+      "q": "'I finished it yesterday,' he said. He said that he had finished it ___.",
+      "v": [
+        "now",
+        "yesterday",
+        "the day before",
+        "the next day"
+      ],
+      "t": 2,
+      "izoh": "'yesterday' -> 'the day before'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#dd64e10e"
+    },
+    {
+      "q": "'I work here,' he said. He said that he ___ there.",
+      "v": [
+        "works",
+        "working",
+        "work",
+        "worked"
+      ],
+      "t": 3,
+      "izoh": "Present simple -> past simple: fe'l 2-shaklda.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#97a84add"
+    },
+    {
+      "q": "'I am busy,' he said. He said that he ___ busy.",
+      "v": [
+        "is",
+        "were",
+        "was",
+        "am"
+      ],
+      "t": 2,
+      "izoh": "Reported speech: 'am/is' -> 'was'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#3d03ad12"
+    },
+    {
+      "q": "'She can cook,' he said. He said that she ___ cook.",
+      "v": [
+        "can",
+        "could to",
+        "cooks",
+        "could"
+      ],
+      "t": 3,
+      "izoh": "Reported speech: 'can' -> 'could'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#ab52f575"
+    },
+    {
+      "q": "Complete: The teacher ___ that the test was easy.",
+      "v": [
+        "said",
+        "told",
+        "tell",
+        "say"
+      ],
+      "t": 0,
+      "izoh": "'say' dan keyin object kelmaydi (that ishlatiladi).",
+      "qiy": "orta",
+      "id": "ing_b1_m12#b0978dd0"
+    },
+    {
+      "q": "'We live in Tashkent,' they said. They said that they ___ in Tashkent.",
+      "v": [
+        "lived",
+        "live",
+        "lives",
+        "living"
+      ],
+      "t": 0,
+      "izoh": "Present simple -> past simple: fe'l 2-shaklda.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#158c3e90"
+    },
+    {
+      "q": "Complete: She ___ that it was cold outside.",
+      "v": [
+        "said",
+        "say",
+        "told",
+        "tell"
+      ],
+      "t": 0,
+      "izoh": "'say' dan keyin object kelmaydi (that ishlatiladi).",
+      "qiy": "orta",
+      "id": "ing_b1_m12#b141ac18"
+    },
+    {
+      "q": "'I am busy today,' he said. He said that he was busy ___.",
+      "v": [
+        "the next day",
+        "tomorrow",
+        "today",
+        "that day"
+      ],
+      "t": 3,
+      "izoh": "'today' -> 'that day'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#595d521d"
+    },
+    {
+      "q": "'I lost my keys,' he said. He said that he had lost ___ keys.",
+      "v": [
+        "my",
+        "her",
+        "your",
+        "his"
+      ],
+      "t": 3,
+      "izoh": "Reported speech'da olmoshlar mos ravishda o'zgaradi.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#0d3bd610"
+    },
+    {
+      "q": "'We are late,' they said. They said that they ___ late.",
+      "v": [
+        "was",
+        "were",
+        "are",
+        "been"
+      ],
+      "t": 1,
+      "izoh": "Reported speech: 'are' -> 'were'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#7db5d46c"
+    },
+    {
+      "q": "'We can help,' they said. They said that they ___ help.",
+      "v": [
+        "can",
+        "canned",
+        "could have",
+        "could"
+      ],
+      "t": 3,
+      "izoh": "Reported speech: 'can' -> 'could'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#8352b3c2"
+    },
+    {
+      "q": "'I saw her yesterday,' she said. She said that she had seen her ___.",
+      "v": [
+        "the next day",
+        "the day before",
+        "yesterday",
+        "tomorrow"
+      ],
+      "t": 1,
+      "izoh": "'yesterday' -> 'the day before'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#0f56d99f"
+    },
+    {
+      "q": "'She has two sons,' he said. He said that she ___ two sons.",
+      "v": [
+        "haved",
+        "have",
+        "has",
+        "had"
+      ],
+      "t": 3,
+      "izoh": "Reported speech: 'have/has' -> 'had'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#d6783f49"
+    },
+    {
+      "q": "'I am leaving tomorrow,' he said. He said that he was leaving ___.",
+      "v": [
+        "the next day",
+        "the day before",
+        "tomorrow",
+        "yesterday"
+      ],
+      "t": 0,
+      "izoh": "'tomorrow' -> 'the next day'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#2b894602"
+    },
+    {
+      "q": "'I can drive,' she said. She said that she ___ drive.",
+      "v": [
+        "could to",
+        "cans",
+        "can",
+        "could"
+      ],
+      "t": 3,
+      "izoh": "Reported speech: 'can' -> 'could'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#8390c0b5"
+    },
+    {
+      "q": "'I feel sick,' she said. She said that she ___ sick.",
+      "v": [
+        "feels",
+        "feeled",
+        "feel",
+        "felt"
+      ],
+      "t": 3,
+      "izoh": "Present simple -> past simple: fe'l 2-shaklda.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#7c3f2e47"
+    },
+    {
+      "q": "'I will come,' he said. He said that he ___ come.",
+      "v": [
+        "comes",
+        "will",
+        "would",
+        "would to"
+      ],
+      "t": 2,
+      "izoh": "Reported speech: 'will' -> 'would'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#28486f36"
+    },
+    {
+      "q": "Complete: She ___ me that she would come.",
+      "v": [
+        "told",
+        "said",
+        "say",
+        "tell"
+      ],
+      "t": 0,
+      "izoh": "'tell' dan keyin object (me, us) keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#69615de7"
+    },
+    {
+      "q": "'I will call later,' she said. She said that she ___ call later.",
+      "v": [
+        "would to",
+        "would",
+        "wills",
+        "will"
+      ],
+      "t": 1,
+      "izoh": "Reported speech: 'will' -> 'would'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#7de2dec0"
+    },
+    {
+      "q": "'We need our books,' they said. They said that they needed ___ books.",
+      "v": [
+        "their",
+        "his",
+        "our",
+        "your"
+      ],
+      "t": 0,
+      "izoh": "Reported speech'da olmoshlar mos ravishda o'zgaradi.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#a939ae7a"
+    },
+    {
+      "q": "'I need money,' she said. She said that she ___ money.",
+      "v": [
+        "needing",
+        "needs",
+        "need",
+        "needed"
+      ],
+      "t": 3,
+      "izoh": "Present simple -> past simple: fe'l 2-shaklda.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#4553e4d2"
+    },
+    {
+      "q": "'You are my friend,' she said to me. She said that I was ___ friend.",
+      "v": [
+        "your",
+        "her",
+        "my",
+        "his"
+      ],
+      "t": 1,
+      "izoh": "Reported speech'da olmoshlar mos ravishda o'zgaradi.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#f2a87643"
+    },
+    {
+      "q": "Complete: My friend ___ me that he was ill.",
+      "v": [
+        "told",
+        "said",
+        "tell",
+        "say"
+      ],
+      "t": 0,
+      "izoh": "'tell' dan keyin object (me, us) keladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#51560d07"
+    },
+    {
+      "q": "'I can wait,' he said. He said that he ___ wait.",
+      "v": [
+        "can",
+        "waited",
+        "can to",
+        "could"
+      ],
+      "t": 3,
+      "izoh": "Reported speech: 'can' -> 'could'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#ed665472"
+    },
+    {
+      "q": "'We will win,' they said. They said that they ___ win.",
+      "v": [
+        "willed",
+        "would be",
+        "will",
+        "would"
+      ],
+      "t": 3,
+      "izoh": "Reported speech: 'will' -> 'would'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#08f861da"
+    },
+    {
+      "q": "'She helped me,' he said. He said that she had helped ___.",
+      "v": [
+        "her",
+        "me",
+        "them",
+        "him"
+      ],
+      "t": 3,
+      "izoh": "Reported speech'da olmoshlar mos ravishda o'zgaradi.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#ae1546fa"
+    },
+    {
+      "q": "'You are right,' he said. He said that I ___ right.",
+      "v": [
+        "were",
+        "was",
+        "are",
+        "am"
+      ],
+      "t": 0,
+      "izoh": "Reported speech: 'are' -> 'were'.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#971aa940"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "He told that he was tired.",
+        "He said me that he was tired.",
+        "He said that he was tired.",
+        "He said that he is tired."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "She said me that she was busy.",
+        "She told that she was busy.",
+        "She told me that she is busy.",
+        "She told me that she was busy."
+      ],
+      "t": 3,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~2"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "They said that they will come.",
+        "They said that they would come.",
+        "They told that they would come.",
+        "They said they will came."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~3"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "He said that he could swim.",
+        "He told that he could swim.",
+        "He said that he can swim.",
+        "He said that he could swims."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~4"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "She said that she liked tea.",
+        "She said that she likes tea.",
+        "She said she like tea.",
+        "She told that she liked tea."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~5"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "He told us that he has a car.",
+        "He told us that he had a car.",
+        "He told that he had a car.",
+        "He said us that he had a car."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~6"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "She said that she is leaving tomorrow.",
+        "She told that she was leaving the next day.",
+        "She said she was leaving tomorrow.",
+        "She said that she was leaving the next day."
+      ],
+      "t": 3,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~7"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "He said that he has lost his keys.",
+        "He said that he had lost his keys.",
+        "He said that he lost his keys yesterday now.",
+        "He told that he had lost his keys."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~8"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "They told me that they are ready.",
+        "They told that they were ready.",
+        "They told me that they were ready.",
+        "They said me that they were ready."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~9"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "She said that it is cold today.",
+        "She told that it was cold that day.",
+        "She said it was cold today.",
+        "She said that it was cold that day."
+      ],
+      "t": 3,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~10"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "He said that he worked in a bank.",
+        "He told that he worked in a bank.",
+        "He said that he works in a bank.",
+        "He said he work in a bank."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~11"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "She told him that she will help.",
+        "She told that she would help him.",
+        "She told him that she would help.",
+        "She said him that she would help."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~12"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "He said that he wanted water.",
+        "He said that he wants water.",
+        "He said he want water.",
+        "He told that he wanted water."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~13"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "They said that they have finished.",
+        "They told that they had finished.",
+        "They said that they had finished.",
+        "They said they has finished."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~14"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "She said me that she knew him.",
+        "She told me that she knew him.",
+        "She told me that she know him.",
+        "She told that she knew him."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~15"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "He said that he can not come.",
+        "He told that he could not come.",
+        "He said that he could not come.",
+        "He said he could not comes."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~16"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "She told that she was happy then.",
+        "She said that she was happy then.",
+        "She said she was happy now.",
+        "She said that she is happy now."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~17"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "He said her that he loved music.",
+        "He told that he loved music.",
+        "He told her that he love music.",
+        "He told her that he loved music."
+      ],
+      "t": 3,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~18"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "They said that they lived in Bukhara.",
+        "They said that they live in Bukhara.",
+        "They said they lives in Bukhara.",
+        "They told that they lived in Bukhara."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~19"
+    },
+    {
+      "q": "Choose the correct reported sentence.",
+      "v": [
+        "She told that she had seen the film.",
+        "She said that she has seen the film.",
+        "She said that she had seen the film.",
+        "She said she seen the film."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#caae83de~20"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "He said that he is tired.",
+        "He said that he was tired.",
+        "They said that they were happy.",
+        "She said that she was late."
+      ],
+      "t": 0,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "She told that she was busy.",
+        "She said that she was busy.",
+        "We said that we were ready.",
+        "He told me that he was ill."
+      ],
+      "t": 0,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a~2"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "He told me that he was late.",
+        "She said that she was cold.",
+        "He said me that he was late.",
+        "They said that they were tired."
+      ],
+      "t": 2,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a~3"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "They said that they will come.",
+        "They said that they would come.",
+        "He said that he would help.",
+        "She said that she would call."
+      ],
+      "t": 0,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a~4"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "He said that he could swim.",
+        "They said that they could wait.",
+        "He said that he can swim.",
+        "She said that she could drive."
+      ],
+      "t": 2,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a~5"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "They said that they needed help.",
+        "She said that she likes tea.",
+        "He said that he wanted water.",
+        "She said that she liked tea."
+      ],
+      "t": 1,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a~6"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "He said that he had a car.",
+        "He told that he had a car.",
+        "They said that they had a dog.",
+        "She told me that she had a bike."
+      ],
+      "t": 1,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a~7"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "She said she was leaving tomorrow.",
+        "He said he was busy that day.",
+        "They said they had met the day before.",
+        "She said she was leaving the next day."
+      ],
+      "t": 0,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a~8"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "They said that they had gone.",
+        "He said that he had lost his keys.",
+        "He said that he has lost his keys.",
+        "She said that she had finished."
+      ],
+      "t": 2,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a~9"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "He said that he was ready.",
+        "They told me that they were ready.",
+        "They said me that they were ready.",
+        "She told me that she was ready."
+      ],
+      "t": 2,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a~10"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "He said that he work in a shop.",
+        "They said that they played well.",
+        "He said that he worked in a shop.",
+        "She said that she lived here."
+      ],
+      "t": 0,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a~11"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "She said that she would help.",
+        "She told that she would help.",
+        "They told us that they would win.",
+        "He told me that he would come."
+      ],
+      "t": 1,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a~12"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "He said that she can cook.",
+        "She said that he could sing.",
+        "They said that we could dance.",
+        "He said that she could cook."
+      ],
+      "t": 0,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a~13"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "They said that they has finished.",
+        "He said that he had eaten.",
+        "They said that they had finished.",
+        "She said that she had slept."
+      ],
+      "t": 0,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a~14"
+    },
+    {
+      "q": "Choose the INCORRECT reported sentence.",
+      "v": [
+        "He said that he was free then.",
+        "They said that they were busy that week.",
+        "She said that it was cold that day.",
+        "She said that it is cold today."
+      ],
+      "t": 3,
+      "izoh": "Xato reported speech gapini tanlang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#afa27c3a~15"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "He said that he was tired.",
+        "That he was tired he said.",
+        "He said that was he tired.",
+        "He said he that was tired."
+      ],
+      "t": 0,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#3c9917c0"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "She me told that she was busy.",
+        "She told me she that was busy.",
+        "She told that me she was busy.",
+        "She told me that she was busy."
+      ],
+      "t": 3,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#3c9917c0~2"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "They that said they would come.",
+        "They said that they would come.",
+        "They said that would they come.",
+        "Would they come they said that."
+      ],
+      "t": 1,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#3c9917c0~3"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "He said that he could swim.",
+        "Could he swim he said that.",
+        "He that said he could swim.",
+        "He said that could he swim."
+      ],
+      "t": 0,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#3c9917c0~4"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "She said that she liked tea.",
+        "She said that liked she tea.",
+        "She said she that liked tea.",
+        "Liked she tea she said that."
+      ],
+      "t": 0,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#3c9917c0~5"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "He us told that he had a car.",
+        "He told that us he had a car.",
+        "He told us he that had a car.",
+        "He told us that he had a car."
+      ],
+      "t": 3,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#3c9917c0~6"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "She said that it was cold.",
+        "She said it that was cold.",
+        "That it was cold she said.",
+        "She said that was it cold."
+      ],
+      "t": 0,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#3c9917c0~7"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "They said that were they ready.",
+        "They that said they were ready.",
+        "They said that they were ready.",
+        "Were they ready they said that."
+      ],
+      "t": 2,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#3c9917c0~8"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "Worked he hard he said that.",
+        "He said that he worked hard.",
+        "He said he that worked hard.",
+        "He said that worked he hard."
+      ],
+      "t": 1,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#3c9917c0~9"
+    },
+    {
+      "q": "Put the words in the correct order.",
+      "v": [
+        "She told that him she would help.",
+        "She told him that she would help.",
+        "She told him she that would help.",
+        "She him told that she would help."
+      ],
+      "t": 1,
+      "izoh": "So'zlarni to'g'ri tartibda joylang.",
+      "qiy": "orta",
+      "id": "ing_b1_m12#3c9917c0~10"
+    }
+  ]
+}

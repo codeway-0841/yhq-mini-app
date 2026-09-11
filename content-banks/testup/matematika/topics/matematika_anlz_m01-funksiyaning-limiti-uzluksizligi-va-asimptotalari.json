@@ -1,0 +1,1609 @@
+{
+  "nom": "Funksiyaning limiti, uzluksizligi va asimptotalari",
+  "bolim": "Matematik analiz asoslari",
+  "blok": "anlz",
+  "rasmiyBolim": 5,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Ko'phad butun sonlar o'qida uzluksiz bo'lgani uchun limit oddiy o'rniga qo'yish bilan topiladi: lim(x→3) (2x² − 5x + 4) qiymatini hisoblang.",
+      "v": [
+        "3",
+        "25",
+        "37",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Funksiya ko'phad, ya'ni har bir nuqtada uzluksiz. Shuning uchun x o'rniga 3 ni qo'yamiz: 2·3² − 5·3 + 4. Avval 2·9 = 18, keyin 5·3 = 15. Demak 18 − 15 + 4 = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orin-qoyish-limit",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#479dcd3e"
+    },
+    {
+      "q": "Anvar lim(x→−2) (x³ + 4x − 1) limitini hisoblamoqchi. Ko'phadning uzluksizligidan foydalanib, u qanday natijaga kelishi kerak?",
+      "v": [
+        "−17",
+        "−15",
+        "−16",
+        "−1"
+      ],
+      "t": 0,
+      "izoh": "Ko'phad uzluksiz, shuning uchun x = −2 ni to'g'ridan-to'g'ri qo'yamiz. (−2)³ = −8, 4·(−2) = −8. Endi −8 − 8 − 1 = −17. Manfiy sonning toq darajasi manfiy qolishini unutmaslik kerak. Javob: −17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orin-qoyish-limit",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#87b9a52e"
+    },
+    {
+      "q": "Nilufar (x² + 3)/(x + 5) kasrning x → 1 dagi limitini izlayapti. Maxraj shu nuqtada nolga aylanmasligini tekshirgach, qanday javob oladi?",
+      "v": [
+        "3/2",
+        "2/3",
+        "1/3",
+        "4/5"
+      ],
+      "t": 1,
+      "izoh": "Maxraj x = 1 da 1 + 5 = 6, ya'ni noldan farqli. Demak kasr shu nuqtada uzluksiz va o'rniga qo'yish mumkin. Surat 1² + 3 = 4 bo'ladi. Limit 4/6 = 2/3. Javob: 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orin-qoyish-limit",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#4648a274"
+    },
+    {
+      "q": "Bog' ichida A nuqtadan x km sharqqa, so'ng 3 km shimolga yurilgan. Bosib o'tilgan to'g'ri masofa d(x) = √(x² + 9) km. x → 4 bo'lgandagi limitni toping.",
+      "v": [
+        "7",
+        "25",
+        "13",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Ildiz ostidagi ifoda musbat, shuning uchun funksiya x = 4 da uzluksiz. O'rniga qo'yamiz: √(4² + 9) = √(16 + 9) = √25. Bu esa 5 ga teng. Javob: 5 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orin-qoyish-limit",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#7fded2cc"
+    },
+    {
+      "q": "x = 3 nuqtada surat ham, maxraj ham nolga aylanadi. lim(x→3) (x² − 9)/(x − 3) noaniqligini ochib, limitning qiymatini toping.",
+      "v": [
+        "0",
+        "3",
+        "6",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "Bu 0/0 ko'rinishidagi noaniqlik, o'rniga qo'yish yaramaydi. Suratni yoyamiz: x² − 9 = (x − 3)(x + 3). Kasrni (x − 3) ga qisqartirsak, x + 3 qoladi. Endi x = 3 ni qo'yamiz: 3 + 3 = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nol-nolga-kopaytuvchiga-ajratish",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#5fb867b3"
+    },
+    {
+      "q": "Alisher (x² − 5x + 6)/(x − 2) kasrning x → 2 dagi limitini izlamoqda. Suratni ko'paytuvchilarga ajratib, to'g'ri natijani belgilang.",
+      "v": [
+        "5",
+        "1",
+        "−5",
+        "−1"
+      ],
+      "t": 3,
+      "izoh": "x = 2 da surat ham, maxraj ham nol, ya'ni 0/0 noaniqligi. Viyet teoremasi bo'yicha ildizlar 2 va 3, demak x² − 5x + 6 = (x − 2)(x − 3). Qisqartirgach x − 3 qoladi. x = 2 da 2 − 3 = −1. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-nolga-kopaytuvchiga-ajratish",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#26e6a575"
+    },
+    {
+      "q": "Suratni Viyet teoremasi yordamida yoyib, lim(x→−5) (x² + 8x + 15)/(x + 5) limitining qiymatini aniqlang.",
+      "v": [
+        "2",
+        "−2",
+        "−8",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Ildizlari −5 va −3 bo'lgani uchun x² + 8x + 15 = (x + 5)(x + 3). Kasrni (x + 5) ga qisqartiramiz va x + 3 hosil bo'ladi. x = −5 ni qo'ysak: −5 + 3 = −2. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-nolga-kopaytuvchiga-ajratish",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#dd9248c5"
+    },
+    {
+      "q": "Kublar ayirmasi formulasidan foydalanib lim(x→1) (x³ − 1)/(x − 1) limitini hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "1",
+        "2",
+        "3",
+        "∞"
+      ],
+      "t": 2,
+      "izoh": "x = 1 da 0/0 noaniqligi chiqadi. Kublar ayirmasi: x³ − 1 = (x − 1)(x² + x + 1). Kasrni (x − 1) ga qisqartiramiz. Qolgan x² + x + 1 ifodaga x = 1 ni qo'yamiz: 1 + 1 + 1 = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-nolga-kopaytuvchiga-ajratish",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#289920a1"
+    },
+    {
+      "q": "Bu yerda surat ham, maxraj ham ko'paytuvchilarga ajraladi: lim(x→3) (x² − x − 6)/(x² − 9) limiti nechaga teng bo'ladi?",
+      "v": [
+        "5/6",
+        "6/5",
+        "1",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "x = 3 da ikkala qism ham nolga aylanadi. Surat: x² − x − 6 = (x − 3)(x + 2). Maxraj: x² − 9 = (x − 3)(x + 3). Umumiy (x − 3) qisqaradi va (x + 2)/(x + 3) qoladi. x = 3 da bu 5/6. Javob: 5/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-nolga-kopaytuvchiga-ajratish",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#d7b65fa4"
+    },
+    {
+      "q": "Sovutgich ichidagi harorat ishga tushgandan x daqiqa keyin T(x) = (x² + 2x − 8)/(x − 2) °C model bilan beriladi, lekin x = 2 da aniqlanmagan. Modelni shu nuqtada uzluksiz qilish uchun T(2) qanday deb olinadi?",
+      "v": [
+        "4",
+        "6",
+        "2",
+        "−6"
+      ],
+      "t": 1,
+      "izoh": "x = 2 da 0/0 noaniqligi bor, ya'ni uzilish bartaraf etiladigan turdan. Surat ildizlari 2 va −4, demak x² + 2x − 8 = (x − 2)(x + 4). Qisqartirgandan keyin x + 4 qoladi va uning x = 2 dagi limiti 6. Funksiya uzluksiz bo'lishi uchun T(2) = 6 °C deb aniqlanadi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bartaraf-etiladigan-qiymat",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#26b1e751"
+    },
+    {
+      "q": "Suratni qo'shma ifodaga ko'paytirish yo'li bilan lim(x→0) (√(x + 9) − 3)/x limitini toping.",
+      "v": [
+        "6",
+        "1/3",
+        "0",
+        "1/6"
+      ],
+      "t": 3,
+      "izoh": "x = 0 da 0/0 chiqadi. Surat va maxrajni (√(x + 9) + 3) ga ko'paytiramiz. Suratda kvadratlar ayirmasi hosil bo'ladi: (x + 9) − 9 = x. Kasr x/(x·(√(x + 9) + 3)) ko'rinishini oladi va x qisqaradi. Qolgani 1/(√9 + 3) = 1/6. Javob: 1/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-nolga-ildizli-qoshma",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#d517e7af"
+    },
+    {
+      "q": "Nodira (x − 4)/(√x − 2) ifodaning x → 4 dagi limitini izlaydi. Maxrajni qo'shmasiga ko'paytirib, u qanday son oladi?",
+      "v": [
+        "2",
+        "4",
+        "8",
+        "1/4"
+      ],
+      "t": 1,
+      "izoh": "x = 4 da 0/0 noaniqligi bor. Kasrning ikkala qismini (√x + 2) ga ko'paytiramiz. Maxrajda (√x − 2)(√x + 2) = x − 4 hosil bo'ladi. Kasr (x − 4)(√x + 2)/(x − 4) ga aylanadi va x − 4 qisqaradi. Qolgan √x + 2 ga x = 4 ni qo'yamiz: 2 + 2 = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-nolga-ildizli-qoshma",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#baf0ba41"
+    },
+    {
+      "q": "lim(x→2) (√(3x − 2) − 2)/(x − 2) noaniqligini qo'shma ifoda usuli bilan oching va natijani ko'rsating.",
+      "v": [
+        "3/4",
+        "4/3",
+        "1/4",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "x = 2 da √4 − 2 = 0 va maxraj ham 0, ya'ni 0/0 noaniqligi. Ikkala qismni (√(3x − 2) + 2) ga ko'paytiramiz. Suratda (3x − 2) − 4 = 3x − 6 = 3(x − 2) chiqadi. (x − 2) qisqargach 3/(√(3x − 2) + 2) qoladi. x = 2 da bu 3/(2 + 2) = 3/4. Javob: 3/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nol-nolga-ildizli-qoshma",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#fd935e66"
+    },
+    {
+      "q": "Maxrajni (√x − 4)(√x + 4) ko'rinishida yozib, lim(x→16) (√x − 4)/(x − 16) limitini hisoblang.",
+      "v": [
+        "8",
+        "1/4",
+        "1/16",
+        "1/8"
+      ],
+      "t": 3,
+      "izoh": "x = 16 da surat va maxraj nolga aylanadi. x − 16 ni (√x − 4)(√x + 4) deb yozamiz. Kasrdan (√x − 4) qisqaradi va 1/(√x + 4) qoladi. x = 16 da √16 = 4, demak 1/(4 + 4) = 1/8. Javob: 1/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nol-nolga-ildizli-qoshma",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#52cd9937"
+    },
+    {
+      "q": "Cheksizlikdagi limitda kasrning ikkala qismi eng katta darajaga bo'linadi: lim(x→∞) (3x² + 5x − 2)/(2x² − x + 7) nechaga teng?",
+      "v": [
+        "3/2",
+        "2/3",
+        "0",
+        "∞"
+      ],
+      "t": 0,
+      "izoh": "Surat va maxraj darajalari bir xil, ikkalasi ham ikkinchi daraja. Kasrning har ikki qismini x² ga bo'lamiz. Hosil bo'ladi: (3 + 5/x − 2/x²)/(2 − 1/x + 7/x²). x cheksiz ortganda 1/x va 1/x² nolga intiladi. Qoladi 3/2. Javob: 3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cheksizlikda-bir-xil-daraja",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#9d435749"
+    },
+    {
+      "q": "Ikki brigadaning t soatdagi mahsuloti nisbati (7t + 4)/(2t + 9) ifoda bilan beriladi. t cheksiz ortganda nisbat qanday songa intiladi?",
+      "v": [
+        "2/7",
+        "7/2",
+        "4/9",
+        "∞"
+      ],
+      "t": 1,
+      "izoh": "Surat va maxraj birinchi darajali. Ikkala qismni t ga bo'lamiz: (7 + 4/t)/(2 + 9/t). t → ∞ da 4/t va 9/t nolga intiladi. Natijada nisbat 7/2 ga yaqinlashadi. Javob: 7/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cheksizlikda-bir-xil-daraja",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#55ffc929"
+    },
+    {
+      "q": "Aholi o'sishi modelida (5n³ − n)/(4n³ + 2n²) ifoda uchraydi. n cheksiz ortganda bu ifoda qaysi songa yaqinlashadi?",
+      "v": [
+        "4/5",
+        "5/2",
+        "5/4",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "Surat va maxrajning eng katta darajasi n³. Ikkala qismni n³ ga bo'lamiz: (5 − 1/n²)/(4 + 2/n). n → ∞ da 1/n² va 2/n nolga intiladi. Qoladi 5/4. Javob: 5/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cheksizlikda-bir-xil-daraja",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#cc4464ea"
+    },
+    {
+      "q": "Faqat bosh koeffitsientlarga e'tibor qaratib, lim(x→∞) (2x² − 3x)/(6x² + x − 5) limitining qiymatini aniqlang.",
+      "v": [
+        "3",
+        "1/2",
+        "6",
+        "1/3"
+      ],
+      "t": 3,
+      "izoh": "Darajalar teng bo'lgani uchun limit bosh koeffitsientlar nisbatiga teng. Surat bosh koeffitsienti 2, maxrajniki 6. Demak limit 2/6 ga teng va u 1/3 ga qisqaradi. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cheksizlikda-bir-xil-daraja",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#457ca771"
+    },
+    {
+      "q": "Manfiy cheksizlikda juft darajalar musbat qolishini hisobga oling: lim(x→−∞) (6x⁴ − x²)/(9x⁴ + 2) limiti nechaga teng?",
+      "v": [
+        "−2/3",
+        "3/2",
+        "2/3",
+        "−3/2"
+      ],
+      "t": 2,
+      "izoh": "Ikkala qismni x⁴ ga bo'lamiz: (6 − 1/x²)/(9 + 2/x⁴). x manfiy cheksizlikka intilganda ham 1/x² va 2/x⁴ nolga intiladi. Juft daraja ishorani o'zgartirmaydi. Qoladi 6/9 = 2/3. Javob: 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cheksizlikda-bir-xil-daraja",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#97a3fe05"
+    },
+    {
+      "q": "Maxrajning darajasi suratnikidan katta bo'lganda limit qanday bo'lishini eslang va lim(x→∞) (4x + 7)/(x² − 3) limitini aniqlang.",
+      "v": [
+        "4",
+        "0",
+        "∞",
+        "1/4"
+      ],
+      "t": 1,
+      "izoh": "Surat birinchi, maxraj esa ikkinchi darajali. Ikkala qismni x² ga bo'lamiz: (4/x + 7/x²)/(1 − 3/x²). x → ∞ da surat nolga, maxraj esa 1 ga intiladi. Demak limit 0 ga teng. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cheksizlikda-daraja-farqi",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#b4b14743"
+    },
+    {
+      "q": "Bir loyihaning t oydagi jami xarajati C(t) = (2t³ + t)/(5t² + 4) million so'm bilan modellashtirilgan. t cheksiz ortganda xarajat qanday tartibda o'zgaradi?",
+      "v": [
+        "2/5 ga intiladi",
+        "0 ga intiladi",
+        "Cheksiz ortadi",
+        "5/2 ga intiladi"
+      ],
+      "t": 2,
+      "izoh": "Surat uchinchi, maxraj esa ikkinchi darajali. Ikkala qismni t² ga bo'lsak: (2t + 1/t)/(5 + 4/t²). Maxraj 5 ga intiladi, surat esa 2t hisobiga cheksiz o'sadi. Demak xarajat chegaralanmaydi va cheksiz ortadi. Javob: cheksiz ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cheksizlikda-daraja-farqi",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#14c89d0f"
+    },
+    {
+      "q": "Surat darajasi maxrajnikidan katta bo'lgan lim(x→∞) (x⁴ − 1)/(x² + 3x) limiti haqida qanday xulosa chiqariladi?",
+      "v": [
+        "Limit 0 ga teng",
+        "Limit 1 ga teng",
+        "Limit +∞ ga teng",
+        "Limit 1/3 ga teng"
+      ],
+      "t": 2,
+      "izoh": "Ikkala qismni x² ga bo'lamiz: (x² − 1/x²)/(1 + 3/x). Maxraj 1 ga intiladi, suratdagi x² esa chegarasiz o'sadi. Bunday kasr chekli songa intilmaydi. Demak limit +∞ ga teng. Javob: limit +∞ ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "cheksizlikda-daraja-farqi",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#2641e4cf"
+    },
+    {
+      "q": "Manfiy cheksizlikda ham daraja taqqoslash qoidasi ishlaydi. lim(x→−∞) (5 − 2x)/(x³ + 7) limitining qiymatini toping.",
+      "v": [
+        "−2",
+        "0",
+        "−∞",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Surat birinchi, maxraj uchinchi darajali. Ikkala qismni x³ ga bo'lamiz: (5/x³ − 2/x²)/(1 + 7/x³). x manfiy cheksizlikka intilganda barcha kasrlar nolga intiladi. Surat 0 ga, maxraj 1 ga boradi. Demak limit 0. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cheksizlikda-daraja-farqi",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#a323bfd2"
+    },
+    {
+      "q": "Ildiz ostidan x² ni chiqarib, lim(x→∞) √(4x² + 3)/(x + 1) limitini hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "4",
+        "2",
+        "1/2",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "Ildiz ostidan x² ni chiqaramiz: √(4x² + 3) = x·√(4 + 3/x²), chunki x musbat. Kasr x·√(4 + 3/x²)/(x + 1) ko'rinishini oladi. Ikkala qismni x ga bo'lamiz: √(4 + 3/x²)/(1 + 1/x). x → ∞ da bu √4/1 = 2 ga intiladi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cheksizlikda-ildizli-ifoda",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#0d098959"
+    },
+    {
+      "q": "Ikkita cheksiz kattalikning ayirmasi noaniqlik beradi. lim(x→∞) (√(x² + 5x) − x) limitining qiymatini toping.",
+      "v": [
+        "0",
+        "5",
+        "5/2",
+        "∞"
+      ],
+      "t": 2,
+      "izoh": "Ifodani (√(x² + 5x) + x) ga ko'paytirib va shunga bo'lib yozamiz. Suratda (x² + 5x) − x² = 5x qoladi. Demak ifoda 5x/(√(x² + 5x) + x) ga teng. Ikkala qismni x ga bo'lamiz: 5/(√(1 + 5/x) + 1). x → ∞ da bu 5/(1 + 1) = 5/2. Javob: 5/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cheksizlikda-ildizli-ifoda",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#8abfdc35"
+    },
+    {
+      "q": "lim(x→∞) (3x − √(9x² − 12x)) noaniqligini qo'shma ifodaga ko'paytirish yo'li bilan oching va natijani belgilang.",
+      "v": [
+        "4",
+        "2",
+        "6",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "Ifodani (3x + √(9x² − 12x)) ga ko'paytiramiz va shunga bo'lamiz. Suratda 9x² − (9x² − 12x) = 12x hosil bo'ladi. Maxraj esa 3x + √(9x² − 12x). Ikkala qismni x ga bo'lsak: 12/(3 + √(9 − 12/x)). x → ∞ da bu 12/(3 + 3) = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cheksizlikda-ildizli-ifoda",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#e38cd426"
+    },
+    {
+      "q": "Manfiy cheksizlikda √(x²) = |x| = −x bo'lishini hisobga olib, lim(x→−∞) √(9x² + 1)/(2x − 5) limitini toping.",
+      "v": [
+        "3/2",
+        "−3/2",
+        "9/2",
+        "−9/4"
+      ],
+      "t": 1,
+      "izoh": "Ildiz ostidan x² chiqarilganda √(9x² + 1) = |x|·√(9 + 1/x²) bo'ladi. x manfiy bo'lgani uchun |x| = −x. Kasr −x·√(9 + 1/x²)/(2x − 5) ko'rinishini oladi. Ikkala qismni x ga bo'lamiz: −√(9 + 1/x²)/(2 − 5/x). x → −∞ da bu −3/2 ga intiladi. Javob: −3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cheksizlikda-ildizli-ifoda",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#7dbc1b9a"
+    },
+    {
+      "q": "Sardor f(x) = |x − 4|/(x − 4) funksiyaning x = 4 nuqtadagi bir tomonlama limitlarini hisoblamoqchi. To'g'ri xulosani tanlang.",
+      "v": [
+        "Chapdan −1, o'ngdan 1",
+        "Chapdan 1, o'ngdan −1",
+        "Ikkalasi ham 1 ga teng",
+        "Ikkalasi ham 0 ga teng"
+      ],
+      "t": 0,
+      "izoh": "x < 4 bo'lganda x − 4 manfiy, shuning uchun |x − 4| = −(x − 4) va kasr −1 ga teng. x > 4 bo'lganda x − 4 musbat, |x − 4| = x − 4 va kasr 1 ga teng. Demak chap limit −1, o'ng limit 1. Ular teng emas. Javob: chapdan −1, o'ngdan 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-tomonlama-limit",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#8a1e3c2e"
+    },
+    {
+      "q": "Bo'laklab berilgan f(x) funksiya x < 3 da 2x + 1, x ≥ 3 da esa x² − 2 ga teng. x → 3 dagi limit mavjudmi va u nechaga teng?",
+      "v": [
+        "Mavjud emas, chap va o'ng limitlar har xil",
+        "Mavjud, 7 ga teng",
+        "Mavjud, 9 ga teng",
+        "Mavjud, 5 ga teng"
+      ],
+      "t": 1,
+      "izoh": "Chap limitni birinchi bo'lakdan olamiz: 2·3 + 1 = 7. O'ng limitni ikkinchi bo'lakdan olamiz: 3² − 2 = 9 − 2 = 7. Ikkala bir tomonlama limit ham 7 ga teng. Ular mos kelgani uchun limit mavjud. Javob: mavjud, 7 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-tomonlama-limit",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#d93df886"
+    },
+    {
+      "q": "1/(x − 2) funksiya x = 2 nuqtaga o'ngdan yaqinlashganda qanday qiymatga intiladi va buning sababi nima?",
+      "v": [
+        "+∞ ga, chunki maxraj musbat qolib nolga intiladi",
+        "−∞ ga, chunki maxraj manfiy qolib nolga intiladi",
+        "0 ga, chunki maxraj nolga intiladi",
+        "1 ga, chunki surat o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "x → 2 o'ngdan degani x > 2, ya'ni x − 2 kichik musbat son. Musbat sonni juda kichik musbat songa bo'lsak, natija chegarasiz o'sadi. Demak o'ng limit +∞ ga teng. Chapdan yaqinlashganda esa maxraj manfiy bo'lib, limit −∞ bo'lardi. Javob: +∞ ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-tomonlama-limit",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#8ddd0705"
+    },
+    {
+      "q": "Taksi tarifi 3 km gacha bo'lgan yo'l uchun 12000 so'm, 3 km dan uzoq yo'l uchun esa N(x) = 18000 + 2500(x − 3) so'm. Narx funksiyasining x = 3 dagi chap va o'ng limitlari farqi nechaga teng?",
+      "v": [
+        "6000 so'm",
+        "30000 so'm",
+        "12000 so'm",
+        "0 so'm"
+      ],
+      "t": 0,
+      "izoh": "Chap limit 3 km gacha bo'lgan tarifdan olinadi va u 12000 so'm. O'ng limitda x → 3 bo'lgani uchun 2500(x − 3) had nolga intiladi, demak o'ng limit 18000 so'm. Farq 18000 − 12000 = 6000 so'm. Limitlar teng bo'lmagani uchun bu nuqtada sakrashli uzilish bor. Javob: 6000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-tomonlama-limit",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#3d51a868"
+    },
+    {
+      "q": "g(x) = √(x − 7) funksiya faqat x ≥ 7 shartda aniqlangan. Uning x = 7 nuqtadagi limiti haqida qaysi xulosa to'g'ri bo'ladi?",
+      "v": [
+        "Faqat o'ng tomonlama limit mavjud va u 0 ga teng",
+        "Chap va o'ng limitlar mavjud hamda o'zaro teng",
+        "Limit 7 ga teng, chunki x → 7",
+        "Faqat chap tomonlama limit mavjud"
+      ],
+      "t": 0,
+      "izoh": "x < 7 bo'lganda ildiz ostidagi ifoda manfiy, funksiya u yerda aniqlanmagan. Shuning uchun chap tomonlama limit haqida gapirib bo'lmaydi. O'ngdan yaqinlashganda √(x − 7) qiymati kamayib nolga intiladi. Demak faqat o'ng limit mavjud va u 0. Javob: faqat o'ng tomonlama limit, u 0 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-tomonlama-limit",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#370a7064"
+    },
+    {
+      "q": "f(x) funksiya x ≤ 2 da 3x + a, x > 2 da esa x² + 1 ga teng. Funksiya x = 2 nuqtada uzluksiz bo'lishi uchun a ning qiymatini toping.",
+      "v": [
+        "a = −1",
+        "a = 1",
+        "a = 5",
+        "a = 11"
+      ],
+      "t": 0,
+      "izoh": "Uzluksizlik uchun chap va o'ng limitlar teng bo'lishi shart. Chap limit 3·2 + a = 6 + a. O'ng limit 2² + 1 = 5. Tenglama: 6 + a = 5. Bundan a = −1. Javob: a = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boaklab-uzluksizlik-parametr",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#6aa20174"
+    },
+    {
+      "q": "Nargiza f(x) = (x² − 16)/(x − 4) (x ≠ 4) va f(4) = k funksiyani uzluksiz qilmoqchi. k qanday qiymat olishi kerak?",
+      "v": [
+        "k = 0",
+        "k = 4",
+        "k = 8",
+        "k = 16"
+      ],
+      "t": 2,
+      "izoh": "x ≠ 4 da kasrni qisqartiramiz: (x − 4)(x + 4)/(x − 4) = x + 4. Bu ifodaning x → 4 dagi limiti 4 + 4 = 8. Funksiya uzluksiz bo'lishi uchun f(4) limitga teng bo'lishi kerak. Demak k = 8. Javob: k = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boaklab-uzluksizlik-parametr",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#60f78f1f"
+    },
+    {
+      "q": "Uzluksizlik sharti chap va o'ng limitlarning tengligini talab qiladi. f(x) = ax + 3 (x < 1) va f(x) = 5x − a (x ≥ 1) bo'lsa, a nechaga teng?",
+      "v": [
+        "a = 4",
+        "a = 1",
+        "a = 2",
+        "a = −1"
+      ],
+      "t": 1,
+      "izoh": "Chap limit: a·1 + 3 = a + 3. O'ng limit: 5·1 − a = 5 − a. Uzluksizlik uchun a + 3 = 5 − a. Bundan 2a = 2, ya'ni a = 1. Tekshirish: ikkala tomon ham 4 ga teng bo'ladi. Javob: a = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boaklab-uzluksizlik-parametr",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#8ac1978d"
+    },
+    {
+      "q": "f(x) = (x² + bx − 6)/(x − 2) kasrning x → 2 dagi limiti mavjud bo'lishi uchun b qanday bo'lishi va limit qanday qiymat olishi kerak?",
+      "v": [
+        "b = 1 va limit 5 ga teng",
+        "b = 1 va limit 3 ga teng",
+        "b = −1 va limit 5 ga teng",
+        "b = 3 va limit 6 ga teng"
+      ],
+      "t": 0,
+      "izoh": "Maxraj x = 2 da nolga aylanadi, shuning uchun limit mavjud bo'lishi uchun surat ham nol bo'lishi kerak. 2² + 2b − 6 = 0 tenglamadan 2b = 2, ya'ni b = 1. Endi surat x² + x − 6 = (x − 2)(x + 3) ko'rinishida yoyiladi. Qisqartirgandan keyin x + 3 qoladi va uning x = 2 dagi qiymati 5. Javob: b = 1, limit 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "boaklab-uzluksizlik-parametr",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#e2928a6e"
+    },
+    {
+      "q": "f(x) = (x + 5)/(x² − 4x + 3) funksiya qaysi nuqtalarda uzilishga ega ekanligini aniqlang va to'g'ri javobni belgilang.",
+      "v": [
+        "x = 1 va x = 3",
+        "x = −5 va x = 3",
+        "x = −1 va x = −3",
+        "x = 4 va x = 3"
+      ],
+      "t": 0,
+      "izoh": "Kasrli funksiya maxraj nolga aylangan nuqtalarda uziladi. x² − 4x + 3 = 0 tenglamani yechamiz. Viyet teoremasi bo'yicha ildizlar 1 va 3. Surat bu nuqtalarda nolga aylanmaydi. Demak uzilish x = 1 va x = 3 da. Javob: x = 1 va x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzilish-nuqtalarini-topish",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#07c67d7b"
+    },
+    {
+      "q": "Ustoz o'quvchilardan f(x) = (x − 2)/(x² − 5x + 6) funksiya aniqlanish sohasidan chiqib qoladigan nuqtalar sonini so'radi. Qaysi javob to'g'ri?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "Uzilish nuqtasi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Maxraj nolga aylanadigan nuqtalarni topamiz: x² − 5x + 6 = 0 ildizlari 2 va 3. Shu ikki nuqtada funksiya aniqlanmagan. Surat x = 2 da nolga aylansa ham, nuqta baribir sohaga kirmaydi. Demak uzilish nuqtalari 2 ta. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzilish-nuqtalarini-topish",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#87b3d28a"
+    },
+    {
+      "q": "f(x) = 5/(x² + 4) funksiyaning uzilish nuqtalari haqida qanday xulosa chiqarish to'g'ri bo'ladi?",
+      "v": [
+        "x = 2 va x = −2 nuqtalarda uziladi",
+        "x = 4 nuqtada uziladi",
+        "Uzilishi yo'q, funksiya butun sonlar o'qida uzluksiz",
+        "x = 0 nuqtada uziladi"
+      ],
+      "t": 2,
+      "izoh": "Uzilish faqat maxraj nolga aylanganda paydo bo'ladi. x² + 4 = 0 tenglamani haqiqiy sonlar orasida yechib bo'lmaydi, chunki x² manfiy emas. Demak maxraj hech qachon nolga aylanmaydi va u doim 4 dan kichik emas. Funksiya butun sonlar o'qida uzluksiz. Javob: uzilishi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzilish-nuqtalarini-topish",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#f49d19e7"
+    },
+    {
+      "q": "Maxrajni ko'paytuvchilarga ajratib, f(x) = (x + 1)/(x³ − x) funksiyaning aniqlanmagan barcha nuqtalarini to'liq ro'yxatlang va javobni belgilang.",
+      "v": [
+        "x = 0, x = 1 va x = −1",
+        "Faqat x = 0 nuqta",
+        "x = 1 va x = −1 nuqtalar",
+        "x = −1 nuqta va x = 0 nuqta"
+      ],
+      "t": 0,
+      "izoh": "Maxrajni yoyamiz: x³ − x = x(x² − 1) = x(x − 1)(x + 1). Bu ko'paytma x = 0, x = 1 va x = −1 da nolga aylanadi. Surat x = −1 da nolga aylansa ham, nuqta aniqlanish sohasiga qaytmaydi. Demak uchala nuqta ham aniqlanmagan. Javob: x = 0, x = 1 va x = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzilish-nuqtalarini-topish",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#d6cce09b"
+    },
+    {
+      "q": "f(x) = (x² − 25)/(x − 5) funksiya x = 5 nuqtada qanday turdagi uzilishga ega ekanligini aniqlang.",
+      "v": [
+        "Sakrashli uzilish",
+        "Bartaraf etiladigan uzilish",
+        "Cheksiz uzilish",
+        "Uzilish umuman yo'q"
+      ],
+      "t": 1,
+      "izoh": "Nuqtada funksiya aniqlanmagan, demak uzilish bor. Kasrni qisqartiramiz: (x − 5)(x + 5)/(x − 5) = x + 5. Uning x → 5 dagi limiti 10, ya'ni chekli son. Chap va o'ng limitlar teng va chekli bo'lgani uchun uzilish bartaraf etiladigan turdan. Javob: bartaraf etiladigan uzilish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzilish-turini-aniqlash",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#d05fb62c"
+    },
+    {
+      "q": "Qurilmadagi bosim modeli p(x) = 1/(x − 6)² ko'rinishida berilgan. x = 6 nuqtadagi uzilish qaysi turga kiradi va nima uchun?",
+      "v": [
+        "Bartaraf etiladigan, chunki limit chekli",
+        "Sakrashli, chunki limitlar har xil chekli son",
+        "Cheksiz uzilish, chunki limit +∞ ga intiladi",
+        "Uzilish yo'q, funksiya uzluksiz"
+      ],
+      "t": 2,
+      "izoh": "Maxraj (x − 6)² doim musbat va x → 6 da nolga intiladi. Musbat sonni juda kichik musbat songa bo'lganda natija chegarasiz o'sadi. Demak chapdan ham, o'ngdan ham limit +∞ ga teng. Limit chekli emas, shuning uchun uzilish cheksiz turdan. Javob: cheksiz uzilish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzilish-turini-aniqlash",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#10b46fc5"
+    },
+    {
+      "q": "Bo'laklab berilgan f(x) funksiya x < 1 da x + 2, x ≥ 1 da esa x + 5 ga teng. x = 1 dagi uzilish turini va sakrash kattaligini ko'rsating.",
+      "v": [
+        "Bartaraf etiladigan uzilish",
+        "Cheksiz uzilish, sakrash aniqlanmaydi",
+        "Sakrashli uzilish, sakrash 7 ga teng",
+        "Sakrashli uzilish, sakrash 3 ga teng"
+      ],
+      "t": 3,
+      "izoh": "Chap limit birinchi bo'lakdan: 1 + 2 = 3. O'ng limit ikkinchi bo'lakdan: 1 + 5 = 6. Ikkalasi ham chekli, lekin o'zaro teng emas. Bunday uzilish sakrashli deyiladi. Sakrash kattaligi 6 − 3 = 3. Javob: sakrashli uzilish, sakrash 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzilish-turini-aniqlash",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#f8fadabd"
+    },
+    {
+      "q": "f(x) = (x − 3)/(x² − 9) funksiyaning ikkita uzilish nuqtasi bor. Ularning turlarini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "Ikkalasi ham cheksiz uzilish",
+        "Ikkalasi ham bartaraf etiladigan uzilish",
+        "x = 3 da cheksiz, x = −3 da bartaraf etiladigan",
+        "x = 3 da bartaraf etiladigan, x = −3 da cheksiz"
+      ],
+      "t": 3,
+      "izoh": "Maxrajni yoyamiz: x² − 9 = (x − 3)(x + 3), demak uzilishlar x = 3 va x = −3 da. x = 3 atrofida kasr qisqaradi va 1/(x + 3) qoladi, uning limiti 1/6, ya'ni chekli. Demak bu bartaraf etiladigan uzilish. x = −3 da esa qisqartirilgan kasr maxraji nolga aylanadi va limit cheksiz bo'ladi. Javob: x = 3 da bartaraf etiladigan, x = −3 da cheksiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uzilish-turini-aniqlash",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#6b82dd77"
+    },
+    {
+      "q": "f(x) = (2x + 1)/(x − 7) funksiya grafigining vertikal asimptotasi tenglamasini yozing va to'g'ri javobni tanlang.",
+      "v": [
+        "x = 7",
+        "y = 7",
+        "x = −7",
+        "x = 2"
+      ],
+      "t": 0,
+      "izoh": "Vertikal asimptota maxraj nolga aylangan, surat esa noldan farqli bo'lgan nuqtada bo'ladi. x − 7 = 0 tenglamadan x = 7. Bu nuqtada surat 2·7 + 1 = 15, ya'ni nol emas. Demak x = 7 to'g'ri chiziq vertikal asimptota. Javob: x = 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-asimptota",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#71b7f8a8"
+    },
+    {
+      "q": "Grafik chizishdan oldin Kamola f(x) = (x + 4)/(x² − 5x) funksiyaning vertikal asimptotalarini topmoqchi. Ular qaysi to'g'ri chiziqlar?",
+      "v": [
+        "x = −4 va x = 5 to'g'ri chiziqlar",
+        "Faqat x = 5 to'g'ri chiziq",
+        "x = 0 va x = 5 to'g'ri chiziqlar",
+        "x = 0 va x = −5 to'g'ri chiziqlar"
+      ],
+      "t": 2,
+      "izoh": "Maxrajni ko'paytuvchilarga ajratamiz: x² − 5x = x(x − 5). U x = 0 va x = 5 da nolga aylanadi. Surat x + 4 bu nuqtalarda 4 va 9 ga teng, ya'ni noldan farqli. Demak ikkala to'g'ri chiziq ham vertikal asimptota. Javob: x = 0 va x = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-asimptota",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#0e743cf9"
+    },
+    {
+      "q": "f(x) = (x² − 1)/(x − 1) funksiya x = 1 nuqtada aniqlanmagan bo'lsa ham, uning vertikal asimptotasi bormi?",
+      "v": [
+        "Ha, x = 1 vertikal asimptota bo'ladi",
+        "Ha, y = 1 vertikal asimptota bo'ladi",
+        "Yo'q, chunki funksiya juft",
+        "Yo'q, chunki limit chekli va u 2 ga teng"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanmagan nuqta har doim ham vertikal asimptota bermaydi. Kasrni qisqartiramiz: (x − 1)(x + 1)/(x − 1) = x + 1. Uning x → 1 dagi limiti 2, ya'ni chekli son. Cheksizlikka intilish yo'q, grafikda faqat teshik qoladi. Javob: yo'q, chunki limit chekli va 2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vertikal-asimptota",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#0ac57f33"
+    },
+    {
+      "q": "Ko'ldagi ifloslikning x foizini tozalash xarajati C(x) = 240x/(100 − x) million so'm. Modelning vertikal asimptotasi qaysi va u nimani anglatadi?",
+      "v": [
+        "x = 100, ya'ni to'liq tozalash cheksiz xarajat talab qiladi",
+        "x = 0, ya'ni tozalashni boshlab bo'lmaydi",
+        "x = 240, ya'ni xarajat shu joyda chegaralanadi",
+        "x = 50, ya'ni yarmini tozalash mumkin emas"
+      ],
+      "t": 0,
+      "izoh": "Maxraj 100 − x nolga aylanadigan nuqtani izlaymiz, bu x = 100. Surat u yerda 240·100 = 24000, ya'ni noldan farqli. x qiymati 100 ga yaqinlashganda xarajat chegarasiz o'sadi. Amalda bu ifloslikni 100 foiz yo'qotish mumkin emasligini bildiradi. Javob: x = 100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vertikal-asimptota",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#67d844fd"
+    },
+    {
+      "q": "f(x) = (5x − 3)/(2x + 8) funksiya grafigining gorizontal asimptotasi tenglamasini toping va javobni belgilang.",
+      "v": [
+        "y = 2/5",
+        "x = 5/2",
+        "y = 5/2",
+        "y = 0"
+      ],
+      "t": 2,
+      "izoh": "Gorizontal asimptota x → ∞ dagi limit bilan aniqlanadi. Surat va maxraj birinchi darajali, shuning uchun limit bosh koeffitsientlar nisbatiga teng. Bu nisbat 5/2. Demak gorizontal asimptota y = 5/2 to'g'ri chiziq. Javob: y = 5/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-asimptota",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#049d412a"
+    },
+    {
+      "q": "Maxrajning darajasi kattaroq bo'lgan f(x) = (4x + 1)/(x² + 3) funksiya uchun gorizontal asimptota qanday bo'ladi?",
+      "v": [
+        "y = 4",
+        "Gorizontal asimptota yo'q",
+        "y = 1/3",
+        "y = 0"
+      ],
+      "t": 3,
+      "izoh": "Surat birinchi, maxraj ikkinchi darajali. Ikkala qismni x² ga bo'lsak: (4/x + 1/x²)/(1 + 3/x²). x → ∞ da surat nolga, maxraj 1 ga intiladi. Demak limit 0 va gorizontal asimptota y = 0. Javob: y = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-asimptota",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#85422be7"
+    },
+    {
+      "q": "Ravshan f(x) = (x² + 2)/(x − 1) funksiyaning gorizontal asimptotasini izlayapti. Uning qidiruvi haqida qaysi xulosa to'g'ri?",
+      "v": [
+        "y = 1 gorizontal asimptota bor",
+        "y = 0 gorizontal asimptota bor",
+        "Gorizontal asimptota yo'q, uning o'rniga og'ma asimptota bor",
+        "y = 2 gorizontal asimptota bor"
+      ],
+      "t": 2,
+      "izoh": "Surat ikkinchi, maxraj birinchi darajali. x → ∞ da kasr chekli songa emas, cheksizlikka intiladi. Demak gorizontal asimptota mavjud emas. Daraja farqi aynan bitta bo'lgani uchun grafikda og'ma asimptota bo'ladi. Javob: gorizontal asimptota yo'q, og'ma asimptota bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorizontal-asimptota",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#100ca10b"
+    },
+    {
+      "q": "Tumandagi aholi soni P(t) = (8000t + 500)/(4t + 1) modeli bilan o'zgaradi. Yillar juda ko'p o'tganda aholi soni qaysi songa yaqinlashadi?",
+      "v": [
+        "500 kishiga",
+        "8000 kishiga",
+        "2000 kishiga",
+        "Cheksiz ortadi"
+      ],
+      "t": 2,
+      "izoh": "Surat va maxraj birinchi darajali, shuning uchun t → ∞ dagi limit bosh koeffitsientlar nisbatiga teng. Ikkala qismni t ga bo'lamiz: (8000 + 500/t)/(4 + 1/t). Kasrlar nolga intilib, 8000/4 qoladi. Bu 2000 ga teng va grafikning gorizontal asimptotasi shu. Javob: 2000 kishiga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorizontal-asimptota",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#b3b9c353"
+    },
+    {
+      "q": "f(x) = (x² − 4)/(x + 1) funksiyani bo'lish yo'li bilan uning og'ma asimptotasi tenglamasini toping.",
+      "v": [
+        "y = x + 1",
+        "y = x",
+        "y = x − 4",
+        "y = x − 1"
+      ],
+      "t": 3,
+      "izoh": "Suratni maxrajga bo'lamiz: x² − 4 ni x + 1 ga bo'lsak, butun qism x − 1 va qoldiq −3 chiqadi. Demak f(x) = x − 1 − 3/(x + 1). x → ∞ da qoldiq had nolga intiladi. Qolgan chiziqli qism og'ma asimptota bo'ladi. Javob: y = x − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ogma-asimptota",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#416fd848"
+    },
+    {
+      "q": "Bo'lishni bajarib, f(x) = (2x² + 5x − 1)/(x + 2) funksiya grafigining og'ma asimptotasi tenglamasini aniqlang.",
+      "v": [
+        "y = 2x + 1",
+        "y = 2x − 1",
+        "y = 2x + 5",
+        "y = x + 2"
+      ],
+      "t": 0,
+      "izoh": "Suratni maxrajga bo'lamiz. (x + 2)(2x + 1) = 2x² + 5x + 2 bo'ladi, demak qoldiq −3. Shunday qilib f(x) = 2x + 1 − 3/(x + 2). Qoldiq had x → ∞ da nolga intiladi. Og'ma asimptota y = 2x + 1. Javob: y = 2x + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ogma-asimptota",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#2908f057"
+    },
+    {
+      "q": "Farrux (3x² − x + 4)/(x − 1) funksiya uchun og'ma asimptota izlamoqda. To'g'ri tenglamani tanlang.",
+      "v": [
+        "y = 3x + 2",
+        "y = 3x − 2",
+        "y = 3x + 1",
+        "y = 3x"
+      ],
+      "t": 0,
+      "izoh": "Bo'lishni bajaramiz: (x − 1)(3x + 2) = 3x² − x − 2. Berilgan suratdan farqi 4 − (−2) = 6, ya'ni qoldiq 6. Demak f(x) = 3x + 2 + 6/(x − 1). x cheksiz ortganda qoldiq had nolga intiladi. Og'ma asimptota y = 3x + 2. Javob: y = 3x + 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ogma-asimptota",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#427dc257"
+    },
+    {
+      "q": "Og'ma asimptota surat darajasi maxrajnikidan aynan bittaga katta bo'lgandagina mavjud. f(x) = (x³ + 1)/(x + 2) uchun qaysi xulosa to'g'ri?",
+      "v": [
+        "y = x² og'ma asimptota bo'ladi",
+        "y = x + 2 og'ma asimptota bo'ladi",
+        "Og'ma asimptota mavjud emas, chunki daraja farqi 2 ga teng",
+        "Gorizontal asimptota y = 1 bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Surat uchinchi, maxraj birinchi darajali. Daraja farqi 3 − 1 = 2, ya'ni bittadan katta. Bo'lishda butun qism kvadrat uchhad chiqadi, u esa to'g'ri chiziq emas. Og'ma asimptota faqat chiziqli bo'lishi shart. Javob: og'ma asimptota mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ogma-asimptota",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#3e78861c"
+    },
+    {
+      "q": "f(x) = (x + 3)/(x² − 16) funksiya grafigi jami nechta asimptotaga ega ekanligini aniqlab, javobni belgilang.",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 2,
+      "izoh": "Maxraj x² − 16 = (x − 4)(x + 4) ikki nuqtada nolga aylanadi, demak vertikal asimptotalar x = 4 va x = −4. Surat bu nuqtalarda noldan farqli. Maxraj darajasi kattaroq bo'lgani uchun gorizontal asimptota y = 0. Hammasi bo'lib 3 ta asimptota. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asimptotalar-soni",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#3586a84c"
+    },
+    {
+      "q": "Ravshan f(x) = (x² + 1)/(x − 5) grafigining barcha asimptotalarini sanamoqchi. Ularning umumiy soni qanchaga teng?",
+      "v": [
+        "Faqat 1 ta",
+        "3 ta: vertikal, gorizontal va og'ma",
+        "2 ta: vertikal va og'ma",
+        "Asimptotasi yo'q"
+      ],
+      "t": 2,
+      "izoh": "Maxraj x = 5 da nolga aylanadi, surat esa 26 ga teng. Demak vertikal asimptota x = 5. Daraja farqi bitta bo'lgani uchun gorizontal asimptota yo'q, lekin og'ma asimptota bor. Bir grafikda gorizontal va og'ma asimptota birga bo'lmaydi. Jami 2 ta. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asimptotalar-soni",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#42925b9d"
+    },
+    {
+      "q": "f(x) = 3x/(x² + 1) funksiya grafigining asimptotalari haqida qaysi tasdiq to'g'ri bo'ladi?",
+      "v": [
+        "Ikkita vertikal asimptota bor",
+        "Bitta og'ma asimptota bor",
+        "Hech qanday asimptotasi yo'q",
+        "Faqat bitta gorizontal asimptota y = 0 bor"
+      ],
+      "t": 3,
+      "izoh": "Maxraj x² + 1 hech qachon nolga aylanmaydi, chunki x² manfiy emas. Demak vertikal asimptota yo'q. Maxraj darajasi kattaroq bo'lgani uchun x → ∞ da limit 0. Demak yagona asimptota gorizontal y = 0. Javob: faqat bitta gorizontal asimptota y = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asimptotalar-soni",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#aeaca1e5"
+    },
+    {
+      "q": "f(x) = (x² − 5x + 6)/(x² − 4) funksiyada bitta uzilish bartaraf etiladi. Grafikda nechta asimptota qoladi va qaysilar?",
+      "v": [
+        "3 ta: x = 2, x = −2 va y = 1",
+        "2 ta: x = 2 va y = 1",
+        "1 ta: faqat y = 1",
+        "2 ta: x = −2 va y = 1"
+      ],
+      "t": 3,
+      "izoh": "Surat (x − 2)(x − 3), maxraj (x − 2)(x + 2) ko'rinishida yoyiladi. Umumiy (x − 2) qisqaradi, demak x = 2 da vertikal asimptota emas, teshik bo'ladi. Qolgan maxraj x + 2 nolga aylanadigan x = −2 da vertikal asimptota bor. Darajalar teng bo'lgani uchun gorizontal asimptota y = 1. Javob: 2 ta, x = −2 va y = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asimptotalar-soni",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#d7a7f117"
+    },
+    {
+      "q": "Og'ma asimptotada k = lim f(x)/x, b = lim (f(x) − kx) formulalari ishlatiladi. f(x) = (3x² + 2x)/(x + 1) uchun k va b ni toping.",
+      "v": [
+        "k = 3, b = −1",
+        "k = 3, b = 1",
+        "k = 2, b = −1",
+        "k = 3, b = 2"
+      ],
+      "t": 0,
+      "izoh": "Avval k ni topamiz: f(x)/x = (3x² + 2x)/(x² + x) va uning x → ∞ dagi limiti 3. Endi b = lim (f(x) − 3x) ni hisoblaymiz. Umumiy maxrajga keltiramiz: (3x² + 2x − 3x² − 3x)/(x + 1) = −x/(x + 1). Bu ifodaning limiti −1. Javob: k = 3, b = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "k-va-b-koeffitsient",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#07307b9d"
+    },
+    {
+      "q": "Ikki bosqichli formula bilan ishlang: f(x) = (x² + 4x + 5)/(x + 3) funksiya uchun avval k, keyin b koeffitsientini hisoblang.",
+      "v": [
+        "k = 1, b = 4",
+        "k = 1, b = 1",
+        "k = 1, b = 5",
+        "k = 4, b = 1"
+      ],
+      "t": 1,
+      "izoh": "k = lim f(x)/x = lim (x² + 4x + 5)/(x² + 3x) va bu 1 ga teng. Endi f(x) − x ni topamiz: (x² + 4x + 5 − x² − 3x)/(x + 3) = (x + 5)/(x + 3). Bu kasrning x → ∞ dagi limiti 1. Demak asimptota y = x + 1. Javob: k = 1, b = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "k-va-b-koeffitsient",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#33a78697"
+    },
+    {
+      "q": "Dilnoza f(x) = (4x² − x + 6)/(2x − 3) funksiya uchun og'ma asimptota koeffitsientlarini hisobladi. To'g'ri natijani tanlang.",
+      "v": [
+        "k = 4, b = 5/2",
+        "k = 2, b = −5/2",
+        "k = 2, b = 5/2",
+        "k = 2, b = 3/2"
+      ],
+      "t": 2,
+      "izoh": "k = lim f(x)/x = lim (4x² − x + 6)/(2x² − 3x) = 4/2 = 2. So'ng f(x) − 2x ni hisoblaymiz: (4x² − x + 6 − 4x² + 6x)/(2x − 3) = (5x + 6)/(2x − 3). Bu kasrning limiti 5/2. Demak og'ma asimptota y = 2x + 5/2. Javob: k = 2, b = 5/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "k-va-b-koeffitsient",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#e3355122"
+    },
+    {
+      "q": "Agar lim(x→∞) f(x)/x = 0 va lim(x→∞) f(x) = 5 bo'lsa, funksiya grafigi haqida qanday xulosa chiqariladi?",
+      "v": [
+        "Og'ma asimptota y = 5x bo'ladi",
+        "Gorizontal asimptota y = 5 bo'ladi, chunki k = 0",
+        "Vertikal asimptota x = 5 bo'ladi",
+        "Grafikning asimptotasi mavjud emas"
+      ],
+      "t": 1,
+      "izoh": "k = lim f(x)/x = 0 chiqdi, ya'ni asimptotaning burchak koeffitsienti nol. Burchak koeffitsienti nol bo'lgan to'g'ri chiziq gorizontal bo'ladi. b = lim (f(x) − 0·x) = lim f(x) = 5. Demak asimptota tenglamasi y = 5. Javob: gorizontal asimptota y = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "k-va-b-koeffitsient",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#566ebeb4"
+    },
+    {
+      "q": "Jism s(t) = 5t² qonuni bilan tushmoqda. (s(2 + h) − s(2))/h nisbatning h → 0 dagi limiti orqali t = 2 dagi oniy tezlikni toping.",
+      "v": [
+        "10 m/s",
+        "20 m/s",
+        "25 m/s",
+        "5 m/s"
+      ],
+      "t": 1,
+      "izoh": "s(2 + h) = 5(2 + h)² = 5(4 + 4h + h²) = 20 + 20h + 5h². s(2) = 20 bo'lgani uchun ayirma 20h + 5h². Uni h ga bo'lamiz: 20 + 5h. h → 0 da bu 20 ga intiladi. Javob: 20 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-oniy-tezlik",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#5caa9884"
+    },
+    {
+      "q": "Bakdagi suv hajmi V(t) = t³ + 2t litr qonuni bilan ortadi. Limit yordamida t = 1 daqiqadagi oniy to'lish tezligini hisoblang.",
+      "v": [
+        "3 litr/daqiqa",
+        "4 litr/daqiqa",
+        "5 litr/daqiqa",
+        "6 litr/daqiqa"
+      ],
+      "t": 2,
+      "izoh": "V(1 + h) = (1 + h)³ + 2(1 + h) = 3 + 5h + 3h² + h³. V(1) = 3 bo'lgani uchun ayirma 5h + 3h² + h³. Uni h ga bo'lsak, 5 + 3h + h² qoladi. h → 0 da bu 5 ga intiladi. Javob: 5 litr/daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-oniy-tezlik",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#ab6dd2c6"
+    },
+    {
+      "q": "Sexda x dona mahsulot ishlab chiqarish xarajati C(x) = x² + 30x ming so'm. x = 10 nuqtadagi chegaraviy xarajatni limit yordamida toping.",
+      "v": [
+        "40 ming so'm",
+        "130 ming so'm",
+        "50 ming so'm",
+        "30 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "C(10 + h) = (10 + h)² + 30(10 + h) = 400 + 50h + h². C(10) = 400 bo'lgani uchun ayirma 50h + h². Uni h ga bo'lamiz va 50 + h hosil bo'ladi. h → 0 da limit 50 ga teng. Javob: 50 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-oniy-tezlik",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#7bd15c07"
+    },
+    {
+      "q": "Poyezd t soatda s(t) = 60t + t² km yo'l bosadi. (s(3 + h) − s(3))/h nisbatning h → 0 dagi limiti nimani bildiradi va nechaga teng?",
+      "v": [
+        "O'rtacha tezlikni, 63 km/soat",
+        "Oniy tezlikni, 66 km/soat",
+        "Bosib o'tilgan yo'lni, 189 km",
+        "Oniy tezlikni, 60 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Bu nisbat [3; 3 + h] oraliqdagi o'rtacha tezlik, uning limiti esa oniy tezlik. s(3 + h) = 180 + 60h + 9 + 6h + h² = 189 + 66h + h². s(3) = 189, demak ayirma 66h + h². h ga bo'lsak 66 + h qoladi va limit 66. Javob: oniy tezlikni, 66 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-oniy-tezlik",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#51aa111f"
+    },
+    {
+      "q": "Qondagi dori miqdori C(t) = 250t/(t² + 16) mg/l formula bilan o'zgaradi. Ko'p soat o'tgach miqdor qanday qiymatga intiladi?",
+      "v": [
+        "250 mg/l",
+        "16 mg/l",
+        "0 mg/l",
+        "Cheksiz ortadi"
+      ],
+      "t": 2,
+      "izoh": "Surat birinchi, maxraj ikkinchi darajali. Ikkala qismni t² ga bo'lamiz: (250/t)/(1 + 16/t²). t → ∞ da surat nolga, maxraj 1 ga intiladi. Demak limit 0 ga teng, ya'ni dori qondan chiqib ketadi. Javob: 0 mg/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-uzoq-muddatli-daraja",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#4f99aa9e"
+    },
+    {
+      "q": "Ustaxonada x dona buyum tayyorlashda bir donaga to'g'ri keladigan xarajat (7000 + 450x)/x ming so'm. x juda katta bo'lganda bu qiymat nimaga yaqinlashadi?",
+      "v": [
+        "7000 ming so'mga",
+        "7450 ming so'mga",
+        "0 ga",
+        "450 ming so'mga"
+      ],
+      "t": 3,
+      "izoh": "Kasrni ikkiga ajratamiz: 7000/x + 450. x cheksiz ortganda 7000/x nolga intiladi. Qoladi 450. Ya'ni doimiy xarajat ko'p mahsulotga taqsimlanib, bir donaning tannarxi 450 ming so'mga yaqinlashadi. Javob: 450 ming so'mga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-uzoq-muddatli-daraja",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#3b649214"
+    },
+    {
+      "q": "Ko'ldagi baliqlar soni P(t) = (1200t + 300)/(t + 6) modeliga bo'ysunadi. Ko'p yillardan keyin baliqlar soni qanday songa barqarorlashadi?",
+      "v": [
+        "50 ta",
+        "300 ta",
+        "1200 ta",
+        "Cheksiz ortadi"
+      ],
+      "t": 2,
+      "izoh": "Surat va maxraj birinchi darajali. Ikkala qismni t ga bo'lamiz: (1200 + 300/t)/(1 + 6/t). t → ∞ da kasrlar nolga intiladi va 1200/1 qoladi. Boshlang'ich son P(0) = 50 bo'lsa ham, uzoq muddatli daraja 1200 ta. Javob: 1200 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-uzoq-muddatli-daraja",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#dcd70979"
+    },
+    {
+      "q": "Bakda 400 litr suvda 20 kg tuz bor. Har daqiqada 3 kg tuz qo'shilib, hajm 50 litrga ortadi. Konsentratsiya (20 + 3t)/(400 + 50t) uzoq vaqtda nimaga intiladi?",
+      "v": [
+        "0,05 kg/l",
+        "0,06 kg/l",
+        "0 kg/l",
+        "0,6 kg/l"
+      ],
+      "t": 1,
+      "izoh": "Surat va maxraj t bo'yicha birinchi darajali. Ikkala qismni t ga bo'lamiz: (20/t + 3)/(400/t + 50). t → ∞ da 20/t va 400/t nolga intiladi. Qoladi 3/50 va bu 0,06 ga teng. Boshlang'ich konsentratsiya 20/400 = 0,05 bo'lsa ham, chegaraviy qiymat boshqa. Javob: 0,06 kg/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-uzoq-muddatli-daraja",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#976d2d64"
+    },
+    {
+      "q": "Yangi mahsulotning bozordagi ulushi S(t) = 60t²/(2t² + 3t + 5) foiz bilan ifodalanadi. t cheksiz ortganda ulush qaysi foizga intiladi?",
+      "v": [
+        "60 foizga",
+        "20 foizga",
+        "Nolga",
+        "30 foizga"
+      ],
+      "t": 3,
+      "izoh": "Surat va maxrajning eng katta darajasi t². Ikkala qismni t² ga bo'lamiz: 60/(2 + 3/t + 5/t²). t → ∞ da 3/t va 5/t² nolga intiladi. Qoladi 60/2 = 30. Javob: 30 foizga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-uzoq-muddatli-daraja",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#1b7d986d"
+    },
+    {
+      "q": "Funksiya a nuqtada uzluksiz bo'lishi uchun uchta shart bajarilishi kerak. Quyidagilardan qaysi biri bu shartlar qatoriga kirmaydi?",
+      "v": [
+        "f(a) qiymati aniqlangan bo'lishi",
+        "lim(x→a) f(x) mavjud bo'lishi",
+        "Limit f(a) qiymatiga teng bo'lishi",
+        "f(a) qiymati musbat bo'lishi"
+      ],
+      "t": 3,
+      "izoh": "Uzluksizlikning ta'rifi uchta shartdan iborat: nuqtada qiymat aniqlangan, shu nuqtadagi limit mavjud va limit qiymatga teng. Ishora haqida hech qanday talab yo'q. Manfiy qiymatli funksiya ham uzluksiz bo'la oladi. Javob: f(a) musbat bo'lishi sharti ortiqcha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzluksizlik-uch-sharti",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#77d479df"
+    },
+    {
+      "q": "f(3) = 5 deb belgilangan, qolgan nuqtalarda esa f(x) = (x² − 9)/(x − 3) bo'lsa, funksiya x = 3 nuqtada uzluksizmi?",
+      "v": [
+        "Ha, uzluksiz, chunki f(3) aniqlangan",
+        "Yo'q, chunki limit 6 ga teng, f(3) esa 5",
+        "Yo'q, chunki bu nuqtada limit mavjud emas",
+        "Ha, uzluksiz, chunki limit ham 5 ga teng"
+      ],
+      "t": 1,
+      "izoh": "Birinchi shart bajarilgan: f(3) = 5 aniqlangan. Ikkinchi shartni tekshiramiz: kasr qisqarib x + 3 qoladi va limit 6 ga teng, ya'ni mavjud. Uchinchi shart buziladi, chunki 6 ≠ 5. Demak funksiya uzluksiz emas, uzilish bartaraf etiladigan turdan. Javob: yo'q, limit 6, f(3) esa 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzluksizlik-uch-sharti",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#ab29244e"
+    },
+    {
+      "q": "f(x) = 1/x funksiyaning x = 0 nuqtadagi uzluksizligi qaysi shartning buzilishi sababli mumkin emas?",
+      "v": [
+        "Faqat limit mavjud emasligi sababli",
+        "Faqat f(0) aniqlanmagani sababli",
+        "f(0) aniqlanmagan va limit ham chekli emas",
+        "Hech qanday shart buzilmagan, funksiya uzluksiz"
+      ],
+      "t": 2,
+      "izoh": "Birinchi shart buziladi: nolga bo'lish mumkin emas, demak f(0) aniqlanmagan. Ikkinchi shart ham buziladi: chapdan limit −∞, o'ngdan +∞ ga intiladi. Demak chekli limit ham yo'q. Ikkala sabab birga uzluksizlikni yo'qqa chiqaradi. Javob: f(0) aniqlanmagan va limit chekli emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uzluksizlik-uch-sharti",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#b1d17e3c"
+    },
+    {
+      "q": "f(x) = x + 1 (x ≠ 2) va f(2) = 4 shartlari berilgan. Uzluksizlikning uchta shartidan qaysi biri bu nuqtada bajarilmaydi?",
+      "v": [
+        "Birinchisi, chunki f(2) aniqlanmagan",
+        "Ikkinchisi, chunki limit mavjud emas",
+        "Uchinchisi, chunki limit 3 ga, qiymat esa 4 ga teng",
+        "Hammasi bajariladi, funksiya uzluksiz"
+      ],
+      "t": 2,
+      "izoh": "f(2) = 4 berilgan, demak birinchi shart bajarilgan. x → 2 da x + 1 ifoda 3 ga intiladi, ya'ni limit mavjud va ikkinchi shart ham bajarilgan. Uchinchi shart limit qiymatga teng bo'lishini talab qiladi, ammo 3 ≠ 4. Javob: uchinchi shart bajarilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uzluksizlik-uch-sharti",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#c8963fbc"
+    },
+    {
+      "q": "f(x) = x³ − 4x + 1 ko'phad [0; 1] kesmada uzluksiz. Kesma uchlaridagi qiymatlarni hisoblab, qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Kesma ichida kamida bitta ildiz bor, chunki f(0) va f(1) turli ishorali",
+        "Kesmada ildiz yo'q, chunki funksiya kamayuvchi",
+        "Ildiz aynan x = 0 nuqtada joylashgan",
+        "Kesma haqida hech qanday xulosa chiqarib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Uchlardagi qiymatlarni hisoblaymiz: f(0) = 1 musbat, f(1) = 1 − 4 + 1 = −2 manfiy. Ko'phad uzluksiz, ya'ni grafik uzilmasdan chiziladi. Uzluksiz funksiya musbat qiymatdan manfiyga o'tishda o'qni kesib o'tadi. Demak kesma ichida kamida bitta ildiz bor. Javob: kamida bitta ildiz bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqda-uzluksizlik-teoremasi",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#a138c9dc"
+    },
+    {
+      "q": "u(x) va v(x) funksiyalar x = 5 nuqtada uzluksiz. Quyidagilardan qaysi biri shu nuqtada uzluksiz bo'lmasligi mumkin?",
+      "v": [
+        "u(x) + v(x) yig'indi",
+        "u(x) · v(x) ko'paytma",
+        "u(x)/v(x) nisbat",
+        "3u(x) ifoda"
+      ],
+      "t": 2,
+      "izoh": "Uzluksiz funksiyalarning yig'indisi va ko'paytmasi har doim uzluksiz bo'ladi. Songa ko'paytirish ham uzluksizlikni buzmaydi. Nisbat esa faqat maxraj noldan farqli bo'lgandagina uzluksiz. Agar v(5) = 0 bo'lsa, u(x)/v(x) shu nuqtada aniqlanmaydi. Javob: u(x)/v(x) nisbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqda-uzluksizlik-teoremasi",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#6c124bf7"
+    },
+    {
+      "q": "Kun davomida havo harorati uzluksiz o'zgardi: soat 6 da 12°, soat 14 da 26° bo'ldi. Oraliq qiymat xossasidan qanday xulosa kelib chiqadi?",
+      "v": [
+        "Shu vaqt oralig'ida harorat albatta 20° ga teng bo'lgan payt bo'lgan",
+        "Harorat butun oraliqda faqat ortib borgan",
+        "Harorat albatta 30° gacha ko'tarilgan",
+        "Harorat hech qachon 12° dan past tushmagan"
+      ],
+      "t": 0,
+      "izoh": "Harorat vaqtning uzluksiz funksiyasi, uchlardagi qiymatlar 12° va 26°. Uzluksiz funksiya ikki qiymat orasidagi har bir sonni albatta qabul qiladi. 20° soni 12° bilan 26° orasida yotadi. Demak shunday payt bo'lgan. Qolgan tasdiqlar uzluksizlikdan kelib chiqmaydi. Javob: harorat 20° ga teng bo'lgan payt bo'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqda-uzluksizlik-teoremasi",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#1d254d6e"
+    },
+    {
+      "q": "x⁵ + x − 3 = 0 tenglamaning ildizi [1; 2] kesmada borligini uzluksizlik yordamida qanday asoslash mumkin?",
+      "v": [
+        "f(1) = −1 manfiy, f(2) = 31 musbat, uzluksiz funksiya orada nolga aylanadi",
+        "f(1) va f(2) ikkalasi ham musbat, shuning uchun ildiz bor",
+        "Funksiya o'suvchi, demak ildiz kesmadan tashqarida yotadi",
+        "Bunday usul bilan ildiz borligini aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "f(x) = x⁵ + x − 3 ko'phad, ya'ni butun o'qda uzluksiz. Kesma uchlarida qiymatlarni hisoblaymiz: f(1) = 1 + 1 − 3 = −1 va f(2) = 32 + 2 − 3 = 31. Qiymatlar turli ishorali. Uzluksiz funksiya manfiydan musbatga o'tishda albatta nolni qabul qiladi. Javob: kesma ichida ildiz bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqda-uzluksizlik-teoremasi",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#fb5ac4bc"
+    },
+    {
+      "q": "Ustki kasrni umumiy maxrajga keltirib, lim(x→3) (1/x − 1/3)/(x − 3) murakkab kasrning limitini hisoblang.",
+      "v": [
+        "1/9",
+        "−1/9",
+        "−1/3",
+        "1/3"
+      ],
+      "t": 1,
+      "izoh": "Ustki kasrni birlashtiramiz: 1/x − 1/3 = (3 − x)/(3x). Endi butun ifoda (3 − x)/(3x(x − 3)) ko'rinishida yoziladi. 3 − x = −(x − 3) ekanini hisobga olsak, (x − 3) qisqaradi va −1/(3x) qoladi. x = 3 ni qo'yamiz: −1/9. Javob: −1/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-kasr-limiti",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#80efc18e"
+    },
+    {
+      "q": "Sardor (1/(x + 4) − 1/4)/x ifodaning x → 0 dagi limitini izlamoqda. To'g'ri natijani tanlang.",
+      "v": [
+        "1/16",
+        "−1/8",
+        "−1/16",
+        "−1/4"
+      ],
+      "t": 2,
+      "izoh": "Ustki kasrni umumiy maxrajga keltiramiz: 1/(x + 4) − 1/4 = (4 − x − 4)/(4(x + 4)) = −x/(4(x + 4)). Butun ifoda −x/(4x(x + 4)) bo'ladi va x qisqaradi. Qolgani −1/(4(x + 4)). x = 0 ni qo'yamiz: −1/16. Javob: −1/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "murakkab-kasr-limiti",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#0e9fdbfb"
+    },
+    {
+      "q": "Murakkab kasrni soddalashtirib, lim(x→2) (1/(x − 1) − 1)/(x − 2) limitining qiymatini toping.",
+      "v": [
+        "1",
+        "−1",
+        "2",
+        "−1/2"
+      ],
+      "t": 1,
+      "izoh": "Ustki qismni birlashtiramiz: 1/(x − 1) − 1 = (1 − x + 1)/(x − 1) = (2 − x)/(x − 1). Butun ifoda (2 − x)/((x − 1)(x − 2)) ko'rinishini oladi. 2 − x = −(x − 2) bo'lgani uchun (x − 2) qisqaradi. Qolgani −1/(x − 1) va x = 2 da bu −1. Javob: −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "murakkab-kasr-limiti",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#eb3239c9"
+    },
+    {
+      "q": "lim(x→5) (1/x − 1/5)/(x² − 25) limitini topishda avval ustki kasr, so'ng maxraj yoyiladi. Natija qanday chiqadi?",
+      "v": [
+        "−1/50",
+        "1/250",
+        "−1/250",
+        "−1/25"
+      ],
+      "t": 2,
+      "izoh": "Ustki kasr: 1/x − 1/5 = (5 − x)/(5x). Maxrajni yoyamiz: x² − 25 = (x − 5)(x + 5). Butun ifoda (5 − x)/(5x(x − 5)(x + 5)) bo'ladi. 5 − x = −(x − 5) ekanidan (x − 5) qisqaradi va −1/(5x(x + 5)) qoladi. x = 5 da bu −1/(5·5·10) = −1/250. Javob: −1/250.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-kasr-limiti",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#34b288e9"
+    },
+    {
+      "q": "f(x) = (x³ − 8)/(x − 2) funksiyani x = 2 nuqtada uzluksiz qilish uchun unga qanday qiymat berish kerak?",
+      "v": [
+        "8",
+        "12",
+        "4",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Kublar ayirmasi formulasini qo'llaymiz: x³ − 8 = (x − 2)(x² + 2x + 4). Kasrdan (x − 2) qisqaradi va x² + 2x + 4 qoladi. Uning x → 2 dagi limiti 4 + 4 + 4 = 12. Uzluksizlik uchun funksiya qiymati limitga teng bo'lishi kerak. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bartaraf-etiladigan-qiymat",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#17525c2a"
+    },
+    {
+      "q": "Nodir (√x − 3)/(x − 9) funksiya grafigidagi teshikni yopmoqchi. f(9) qanday qiymat deb aniqlanishi kerak?",
+      "v": [
+        "1/3",
+        "6",
+        "3",
+        "1/6"
+      ],
+      "t": 3,
+      "izoh": "Maxrajni ildizlar orqali yozamiz: x − 9 = (√x − 3)(√x + 3). Kasrdan (√x − 3) qisqaradi va 1/(√x + 3) qoladi. x → 9 da √9 = 3 bo'lgani uchun limit 1/(3 + 3) = 1/6. Uzluksizlik uchun f(9) shu limitga teng olinadi. Javob: 1/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bartaraf-etiladigan-qiymat",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#a0fa1d46"
+    },
+    {
+      "q": "Uzilishni bartaraf etish maqsadida f(x) = (x² − 7x + 10)/(x² − 4) funksiyaga x = 2 nuqtada qanday qiymat beriladi?",
+      "v": [
+        "−3/4",
+        "3/4",
+        "−5/4",
+        "−1/4"
+      ],
+      "t": 0,
+      "izoh": "Suratni yoyamiz: x² − 7x + 10 = (x − 2)(x − 5). Maxraj esa (x − 2)(x + 2). Umumiy (x − 2) qisqargach (x − 5)/(x + 2) qoladi. x = 2 ni qo'yamiz: (2 − 5)/(2 + 2) = −3/4. Javob: −3/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bartaraf-etiladigan-qiymat",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#1f7d9b92"
+    },
+    {
+      "q": "lim(x→∞) (ax + 5)/(3x − 1) = 4 sharti bajarilishi uchun a parametr qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "a = 12",
+        "a = 4",
+        "a = 3/4",
+        "a = 4/3"
+      ],
+      "t": 0,
+      "izoh": "Surat va maxraj birinchi darajali, shuning uchun limit bosh koeffitsientlar nisbatiga teng. Ya'ni limit a/3 ga teng bo'ladi. Shartga ko'ra a/3 = 4. Bundan a = 12. Javob: a = 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "limit-shartidan-parametr",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#97eff803"
+    },
+    {
+      "q": "Kompaniya modelida lim(x→∞) (5x² + 3)/(ax² − x) = 1/2 bo'lishi talab qilinadi. a parametr nechaga teng bo'ladi?",
+      "v": [
+        "a = 5/2",
+        "a = 2",
+        "a = 5",
+        "a = 10"
+      ],
+      "t": 3,
+      "izoh": "Darajalar teng, shuning uchun limit bosh koeffitsientlar nisbati 5/a ga teng. Shartni yozamiz: 5/a = 1/2. Ichki va tashqi hadlarni ko'paytiramiz: a = 10. Javob: a = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "limit-shartidan-parametr",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#d314d0c7"
+    },
+    {
+      "q": "f(x) = (x² − a)/(x − 3) funksiyaning x = 3 dagi uzilishi bartaraf etiladigan bo'lishi uchun a nechaga teng bo'lsin?",
+      "v": [
+        "a = 3",
+        "a = 9",
+        "a = −9",
+        "a = 0"
+      ],
+      "t": 1,
+      "izoh": "Uzilish bartaraf etiladigan bo'lishi uchun limit chekli bo'lishi kerak. Maxraj x = 3 da nolga aylangani sababli surat ham nolga aylanishi shart. Demak 3² − a = 0, ya'ni a = 9. Bunda surat x² − 9 = (x − 3)(x + 3) ko'rinishida qisqaradi va limit 6 chiqadi. Javob: a = 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "limit-shartidan-parametr",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#9fd6f720"
+    },
+    {
+      "q": "f(x) = (x + 2)/(x + c) funksiya grafigining vertikal asimptotasi x = −5 to'g'ri chiziq bo'lishi uchun c ni toping.",
+      "v": [
+        "c = −5",
+        "c = 2",
+        "c = −2",
+        "c = 5"
+      ],
+      "t": 3,
+      "izoh": "Vertikal asimptota maxraj nolga aylangan nuqtada bo'ladi. Shart bo'yicha bu nuqta x = −5. Maxrajga qo'yamiz: −5 + c = 0, bundan c = 5. Surat u yerda −5 + 2 = −3, ya'ni noldan farqli, demak asimptota haqiqatan mavjud. Javob: c = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "limit-shartidan-parametr",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#fb81ec24"
+    },
+    {
+      "q": "Jadvalda x = 1,9 da f = 5,7; x = 1,99 da f = 5,97; x = 2,01 da f = 6,03; x = 2,1 da f = 6,3. x → 2 dagi limit qanday?",
+      "v": [
+        "5,97",
+        "6",
+        "6,03",
+        "Limit mavjud emas"
+      ],
+      "t": 1,
+      "izoh": "Chapdan yaqinlashishda qiymatlar 5,7 dan 5,97 gacha ko'tarilmoqda. O'ngdan yaqinlashishda esa 6,3 dan 6,03 gacha pasaymoqda. Ikkala tomondan ham qiymatlar bitta songa, ya'ni 6 ga siqilmoqda. Jadvaldagi sonlarning o'zi limit emas, ular unga yaqinlashadi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-grafik-tahlili",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#3e733eb0"
+    },
+    {
+      "q": "Grafikka ko'ra x → 4 da chapdan va o'ngdan qiymatlar 3 ga intiladi, lekin f(4) = 1 nuqta alohida turibdi. Qaysi xulosa to'g'ri?",
+      "v": [
+        "Limit 3 ga teng, lekin funksiya x = 4 da uzluksiz emas",
+        "Limit 1 ga teng va funksiya uzluksiz",
+        "Bu nuqtada limit umuman mavjud emas",
+        "Funksiya x = 4 da uzluksiz, limiti esa 3"
+      ],
+      "t": 0,
+      "izoh": "Limit funksiyaning nuqtadagi qiymatiga bog'liq emas, u faqat atrofdagi xatti harakatni ko'rsatadi. Chap va o'ng limitlar teng, ikkalasi ham 3, demak limit mavjud va 3 ga teng. Uzluksizlik uchun esa limit f(4) ga teng bo'lishi kerak edi. Ammo 3 ≠ 1, shuning uchun uzluksizlik buziladi. Javob: limit 3, funksiya uzluksiz emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-grafik-tahlili",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#c9560782"
+    },
+    {
+      "q": "Hisoblashlar bo'yicha x = 10 da f = 2,7; x = 100 da f = 2,97; x = 1000 da f = 2,997. Grafikning gorizontal asimptotasi haqida nima deyish mumkin?",
+      "v": [
+        "y = 2,997 to'g'ri chiziq",
+        "Gorizontal asimptota mavjud emas",
+        "y = 3 to'g'ri chiziq",
+        "y = 0 to'g'ri chiziq"
+      ],
+      "t": 2,
+      "izoh": "x ortgan sari qiymatlar 3 ga tobora yaqinlashmoqda: farqlar 0,3 dan 0,03 va 0,003 gacha kichrayadi. Demak x → ∞ dagi limit 3 ga teng. Gorizontal asimptota shu limit qiymatida o'tadi. Jadvaldagi oxirgi son limitning taqribiy qiymati, o'zi emas. Javob: y = 3 to'g'ri chiziq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-grafik-tahlili",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#0e86a5cc"
+    },
+    {
+      "q": "Jadval bo'yicha x chapdan 5 ga yaqinlashganda f qiymatlari 4 ga, o'ngdan yaqinlashganda esa 9 ga intilmoqda. Limit haqida xulosa qanday?",
+      "v": [
+        "Limit 4 ga teng",
+        "Limit 9 ga teng",
+        "Limit 6,5 ga teng, ya'ni o'rta qiymat",
+        "Limit mavjud emas, chunki bir tomonlama limitlar har xil"
+      ],
+      "t": 3,
+      "izoh": "Chap limit 4, o'ng limit 9 ga teng. Limit mavjud bo'lishi uchun bu ikki qiymat o'zaro teng bo'lishi shart. Ular teng emas, shuning uchun x = 5 da limit yo'q. O'rta arifmetik olish ham noto'g'ri, chunki limit shunday hisoblanmaydi. Bu nuqtada sakrashli uzilish bor. Javob: limit mavjud emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-grafik-tahlili",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#a30edd1e"
+    },
+    {
+      "q": "lim(x→a) f(x) = 6 va lim(x→a) g(x) = −2 bo'lsa, lim(x→a) (2f(x) + 3g(x)) ifodaning qiymatini toping.",
+      "v": [
+        "6",
+        "18",
+        "0",
+        "−6"
+      ],
+      "t": 0,
+      "izoh": "Limit amallari qoidasiga ko'ra yig'indi limiti limitlar yig'indisiga teng. O'zgarmas ko'paytuvchini esa limit belgisidan tashqariga chiqarish mumkin. Demak 2·6 + 3·(−2) hisoblanadi. Bu 12 − 6 = 6 ga teng. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "limit-amallari-qoidasi",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#fb975e60"
+    },
+    {
+      "q": "lim f(x) = 8 va lim g(x) = 4 bo'lsa, f(x)·g(x)/(f(x) − g(x)) ifodaning o'sha nuqtadagi limiti nechaga teng?",
+      "v": [
+        "2",
+        "8",
+        "32",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma limiti limitlar ko'paytmasiga teng: 8·4 = 32. Ayirma limiti limitlar ayirmasiga teng: 8 − 4 = 4. Maxraj limiti noldan farqli, shuning uchun nisbat qoidasini qo'llash mumkin. Natija 32/4 = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "limit-amallari-qoidasi",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#ea8baa9a"
+    },
+    {
+      "q": "lim(x→a) f(x) = 5 bo'lib, ildiz funksiyasi uzluksiz bo'lsa, lim(x→a) √(f(x) + 11) ifodaning qiymatini hisoblang.",
+      "v": [
+        "16",
+        "6",
+        "5",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Avval ildiz ostidagi ifodaning limitini topamiz: 5 + 11 = 16. Uzluksiz funksiya ostida limit belgisini ichkariga kiritish mumkin. Demak natija √16 ga teng. Bu esa 4 ni beradi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "limit-amallari-qoidasi",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#3b6479c2"
+    },
+    {
+      "q": "lim f(x) = 3 va lim g(x) = 0 bo'lsa, f(x)/g(x) nisbatning limiti haqida qanday xulosa to'g'ri bo'ladi?",
+      "v": [
+        "Nisbat limiti 0 ga teng",
+        "Nisbat limiti qoidasi qo'llanmaydi, chunki maxraj limiti nol",
+        "Nisbat limiti 3 ga teng",
+        "Nisbat limiti har doim +∞ ga teng"
+      ],
+      "t": 1,
+      "izoh": "Nisbat limiti qoidasi faqat maxraj limiti noldan farqli bo'lganda ishlaydi. Bu yerda maxraj limiti nol, demak qoidani qo'llab bo'lmaydi. Bunday holda natija g(x) ning ishorasiga qarab +∞ yoki −∞ bo'lishi, hatto mavjud bo'lmasligi ham mumkin. Javob: qoida qo'llanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "limit-amallari-qoidasi",
+      "id": "matematika_anlz_m01-funksiyaning-limiti-uzluksizligi-va-asimptotalari#856bc577"
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "nom": "45-mavzu. Elektrolizdan Turmushda Va Texnikada Foydalanish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektrotexnikada sof mis ko'p ishlatiladi. Misga ozgina boshqa moddalar aralashsa, uning qanday xususiyati yomonlashadi?",
+      "v": [
+        "Elektr tokini o'tkazish xususiyati",
+        "Qattiqlik xususiyati",
+        "Rangi",
+        "Zichligi"
+      ],
+      "t": 0,
+      "izoh": "Misga ozgina boshqa moddalar aralashsa, uning elektr tokini o'tkazish xususiyati yomonlashib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#43c007bb"
+    },
+    {
+      "q": "Misni turli aralashmalardan ajratib olishda katta elektrolit vannasi nima bilan to'ldiriladi?",
+      "v": [
+        "Mis kuporosining eritmasi bilan",
+        "Osh tuzi eritmasi bilan",
+        "Kumush nitrat eritmasi bilan",
+        "Distillangan suv bilan"
+      ],
+      "t": 0,
+      "izoh": "Katta elektrolit vannasi mis kuporosining eritmasi bilan to'ldiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#f2546ac3"
+    },
+    {
+      "q": "Mis ajratib olish vannasida katod vazifasini qanday plastinkalar bajaradi?",
+      "v": [
+        "Sof misdan tayyorlangan yupqa plastinkalar",
+        "Tozalanmagan misdan tayyorlangan qalin plastinkalar",
+        "Ko'mir sterjenlar",
+        "Temir plastinkalar"
+      ],
+      "t": 0,
+      "izoh": "Manbaining manfiy qutbiga ulanadigan sof misdan tayyorlangan yupqa plastinkalar katod vazifasini bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#6b0bed72"
+    },
+    {
+      "q": "Mis ajratib olishda anod vazifasini qanday plastinkalar bajaradi?",
+      "v": [
+        "Tozalanmagan misdan tayyorlangan qalin plastinkalar",
+        "Sof misdan yupqa plastinkalar",
+        "Kumush plastinkalar",
+        "Grafit sterjenlar"
+      ],
+      "t": 0,
+      "izoh": "Katodlar orasiga parallel tushiriladigan qalin anod plastinkalar tozalanmagan misdan tayyorlangan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#94e90b7a"
+    },
+    {
+      "q": "Mis ajratib olish jarayonida anod plastinkasi nima qiladi?",
+      "v": [
+        "Elektrolitda erib, mis ionlarini hosil qiladi",
+        "Mis ionlarini o'ziga yig'adi",
+        "Eritmani qizitadi",
+        "Hech qanday o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Anod plastinkasi elektrolitda erib, mis ionlarini hosil qiladi; begona aralashmalar vanna tubiga cho'kadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#21a62ebf"
+    },
+    {
+      "q": "Mis ajratib olishda begona aralashmalar ionlarga ajralmaganligi sababli qayerga cho'kadi?",
+      "v": [
+        "Vanna tubiga",
+        "Katod sirtiga",
+        "Eritma yuzasiga",
+        "Anod sirtiga"
+      ],
+      "t": 0,
+      "izoh": "Ionlarga ajralmagan begona aralashmalar vanna tubiga cho'kadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#702d1c03"
+    },
+    {
+      "q": "Mis tozalash jarayoni davomida katod va anod plastinkalar qanday o'zgaradi?",
+      "v": [
+        "Katod plastinkalar qalinlashadi, anod plastinkalar yupqalashadi",
+        "Ikkalasi ham qalinlashadi",
+        "Ikkalasi ham yupqalashadi",
+        "Anod qalinlashadi, katod yupqalashadi"
+      ],
+      "t": 0,
+      "izoh": "Vaqt o'tishi bilan katod plastinkalar qalinlashadi, anod plastinkalar yupqalashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#f6f892ec"
+    },
+    {
+      "q": "Galvanostegiya deb qanday jarayonga aytiladi?",
+      "v": [
+        "Elektrolizdan foydalanib, buyumlarning sirtini qiyin oksidlanadigan metallar bilan qoplashga",
+        "Metallarni elektroliz yordamida tozalashga",
+        "Metallardan nusxa olishga",
+        "Metallarni eritib quyishga"
+      ],
+      "t": 0,
+      "izoh": "Elektrolizdan foydalanib buyumlar sirtini qiyin oksidlanadigan metallar bilan qoplash galvanostegiya deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#5d0aa5c3"
+    },
+    {
+      "q": "Temirdan yasalgan buyumlar sirti nima uchun tez zanglaydi?",
+      "v": [
+        "Oksidlanishi natijasida",
+        "Namlanishi natijasida",
+        "Qizishi natijasida",
+        "Muzlashi natijasida"
+      ],
+      "t": 0,
+      "izoh": "Temir buyumlar sirti oksidlanishi natijasida tez zanglaydi; zang sekin-asta metallni yemiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#575a6844"
+    },
+    {
+      "q": "Oksidlanadigan metall buyumlar sirti qanday metallar bilan qoplanadi?",
+      "v": [
+        "Qiyin oksidlanadigan metallar — nikel, rux, kumush, oltin kabilar bilan",
+        "Faqat alyuminiy bilan",
+        "Faqat qo'rg'oshin bilan",
+        "Boshqa temir qatlami bilan"
+      ],
+      "t": 0,
+      "izoh": "Buyumlar sirti qiyin oksidlanadigan metallar — nikel, rux, kumush, oltin kabilar bilan qoplanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#f6b51f5f"
+    },
+    {
+      "q": "Buyum sirtiga kumush yugurtirish uchun elektrolit sifatida va anod sifatida nima olinadi?",
+      "v": [
+        "Elektrolit — kumush tuzlari eritmasi, anod — kumush plastinka",
+        "Elektrolit — mis kuporosi, anod — mis plastinka",
+        "Elektrolit — osh tuzi eritmasi, anod — ko'mir",
+        "Elektrolit — distillangan suv, anod — temir"
+      ],
+      "t": 0,
+      "izoh": "Kumush yugurtirishda elektrolit sifatida kumush tuzlari eritmasi, anod sifatida kumush plastinka olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#47b91367"
+    },
+    {
+      "q": "Buyum sirtiga oltin yugurtirishda elektrolit va anod sifatida nima ishlatiladi?",
+      "v": [
+        "Elektrolit — oltin tuzlari eritmasi, anod — oltin plastinka",
+        "Elektrolit — kumush tuzi, anod — kumush",
+        "Elektrolit — mis sulfat, anod — mis",
+        "Elektrolit — nikel tuzi, anod — nikel"
+      ],
+      "t": 0,
+      "izoh": "Oltin yugurtirishda elektrolit uchun oltin tuzlari eritmasi, anod uchun oltin plastinka ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#17bb8a42"
+    },
+    {
+      "q": "Kumush yugurtirish tajribasida qoplanadigan buyum qaysi elektrod sifatida ulanadi?",
+      "v": [
+        "Katod sifatida",
+        "Anod sifatida",
+        "Manba sifatida",
+        "Izolyator sifatida"
+      ],
+      "t": 0,
+      "izoh": "Kumush nitrat eritmali vannada buyum katod sifatida ulanadi, uning sirti kumush bilan qoplanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#e5fa437e"
+    },
+    {
+      "q": "Galvanoplastika deb qanday usulga aytiladi?",
+      "v": [
+        "Shakl hosil qilish uchun buyumlar sirtiga elektrolitik usulda metall yugurtirishga",
+        "Metallarni tozalashga",
+        "Buyumlarni bo'yashga",
+        "Metallarni payvandlashga"
+      ],
+      "t": 0,
+      "izoh": "Shakl hosil qilish uchun buyumlar sirtiga elektrolitik usulda metall yugurtirish galvanoplastika deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#a77a2ea6"
+    },
+    {
+      "q": "Galvanoplastika usulida taxtaga o'yib ishlangan naqshning nusxasini olish uchun naqsh solingan qismiga nima surkaladi?",
+      "v": [
+        "Juda yupqa qilib grafit",
+        "Kumush changi",
+        "Mis simi",
+        "Lak qatlami"
+      ],
+      "t": 0,
+      "izoh": "Taxtaning naqsh solingan qismiga juda yupqa qilib grafit surkaladi, natijada u tomon tok o'tkazadigan bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#805ecaf4"
+    },
+    {
+      "q": "Galvanoplastikada grafit surkalgan taxta vannada qanday vazifani bajaradi?",
+      "v": [
+        "Katod vazifasini",
+        "Anod vazifasini",
+        "Elektrolit vazifasini",
+        "Manba vazifasini"
+      ],
+      "t": 0,
+      "izoh": "Grafit qatlam katod vazifasini bajaradi; anod sifatida mis plastinka tushiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#c25a0703"
+    },
+    {
+      "q": "Galvanoplastika jarayonida hosil bo'lgan mis qatlam taxtadan ajratilganda u nima deb ataladi?",
+      "v": [
+        "Negativ (teskari) tasvir — matritsa",
+        "Pozitiv tasvir",
+        "Elektrolit qoldig'i",
+        "Anod qoldig'i"
+      ],
+      "t": 0,
+      "izoh": "Ajratib olingan mis qatlamning shakli taxta sirtidagi naqshning negativ (teskari) tasviridan iborat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#39f8b11f"
+    },
+    {
+      "q": "Matritsa so'zi lotincha bo'lib, qanday ma'noni anglatadi?",
+      "v": [
+        "«Ona» degan ma'noni",
+        "«Nusxa» degan ma'noni",
+        "«Metall» degan ma'noni",
+        "«Rasm» degan ma'noni"
+      ],
+      "t": 0,
+      "izoh": "«Matritsa» lotincha so'z bo'lib, «ona» degan ma'noni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#34444617"
+    },
+    {
+      "q": "Matritsa nimada ishlatiladi?",
+      "v": [
+        "Bosmaxonalarda terilgan harflarning nusxasini quyish, medal, tanga, shtamp kabilar tayyorlashda",
+        "Faqat zargarlik buyumlarida",
+        "Metallarni tozalashda",
+        "Elektr simlarini izolyatsiyalashda"
+      ],
+      "t": 0,
+      "izoh": "Matritsa bosmaxonalarda terilgan harflarning nusxasini quyish, medal, tanga, shtamp kabilar tayyorlash uchun ishlatiladigan qolipdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#1d4f77c6"
+    },
+    {
+      "q": "Hozirgi zamonda galvanoplastika qaysi sohada keng qo'llaniladi?",
+      "v": [
+        "Texnologiya va kompyuter texnikasi bilan uyg'unlashgan bosmaxonalarda",
+        "Faqat zargarlikda",
+        "Faqat qishloq xo'jaligida",
+        "Faqat tibbiyotda"
+      ],
+      "t": 0,
+      "izoh": "Hozirgi zamon texnologiyasi, kompyuter texnikasi bilan uyg'unlashgan galvanoplastika bosmaxonalarda keng qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#1f4163e2"
+    },
+    {
+      "q": "Galvanoplastik usul nimalarga imkon beradi?",
+      "v": [
+        "Nafaqat matnli, balki rasmli kitoblarni ham ko'p nusxada bosib chiqarishga",
+        "Faqat metallarni tozalashga",
+        "Faqat tangalarni yasashga",
+        "Faqat simlarni qoplashga"
+      ],
+      "t": 0,
+      "izoh": "Galvanoplastik usul nafaqat matnli, balki rasmli kitoblarni ham ko'p nusxada bosib chiqarishga imkon beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#efe6b3eb"
+    },
+    {
+      "q": "Nickellangan qoshiq, pichoq, choynak kabir buyumlardan foydalanishning sababi nima?",
+      "v": [
+        "Ular qiyin oksidlanadigan nikel bilan qoplangan, zanglamaydi",
+        "Ular yengilroq bo'ladi",
+        "Ular arzonroq bo'ladi",
+        "Ular chiroyliroq bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Nickellangan buyumlar sirti qiyin oksidlanadigan nikel bilan qoplangan, shuning uchun zanglamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#5273ad71"
+    },
+    {
+      "q": "Mis tozalash vannasidan chiqarib olingan qalinlashgan plastinka nimadan iborat bo'ladi?",
+      "v": [
+        "Sof misdan",
+        "Tozalanmagan misdan",
+        "Aralashmalardan",
+        "Grafitdan"
+      ],
+      "t": 0,
+      "izoh": "Vannadan chiqarib olingan qalinlashgan plastinka sof misdan iborat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#3dab08a6"
+    },
+    {
+      "q": "Galvanoplastika jarayonida taxtadagi chuqur joylar mis negativda qanday bo'ladi?",
+      "v": [
+        "Qavariq bo'lib chiqadi",
+        "Chuqur bo'lib qoladi",
+        "Tekis bo'lib qoladi",
+        "Ko'rinmaydi"
+      ],
+      "t": 0,
+      "izoh": "Taxtadagi chuqur joylar mis negativda qavariq bo'lib, qavariq joylar negativda chuqur bo'lib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#91d2d85c"
+    },
+    {
+      "q": "Mis ajratib olishda katod sirtiga mis qayerdan kelib o'tiradi?",
+      "v": [
+        "Mis kuporosi eritmasidan ajralib chiqqan mis ionlari katodga o'tiradi",
+        "Havodan",
+        "Anoddan kichik zarracha ko'chadi",
+        "Suvdan"
+      ],
+      "t": 0,
+      "izoh": "Elektroliz jarayonida mis kuporosi eritmasidan ajralib chiqqan mis katodga o'tiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#721dde99"
+    },
+    {
+      "q": "Mis tozalash jarayonida eritmadagi mis ionlari miqdori nima uchun kamaymaydi?",
+      "v": [
+        "Anod plastinka erib, o'z navbatida mis ionlarini hosil qilib turadi",
+        "Eritmaga doimiy tuz qo'shiladi",
+        "Suv bug'lanadi",
+        "Ionlar rekombinatsiyalanadi"
+      ],
+      "t": 0,
+      "izoh": "Anod elektrolitda erib mis ionlarini hosil qiladi, katodga esa eritmadagi mis o'tiradi — jarayon davom etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#dfa6328c"
+    },
+    {
+      "q": "Galvanostegiya va galvanoplastikaning farqi nimada?",
+      "v": [
+        "Galvanostegiya — buyum sirtini himoya qilish uchun metall bilan qoplash, galvanoplastika — buyumlar sirtiga metall yugurtirib nusxa (shakl) olish",
+        "Ikkalasi bir xil jarayon",
+        "Galvanostegiya faqat oltin bilan, galvanoplastika faqat mis bilan bajariladi",
+        "Galvanostegiya quruq usul, galvanoplastika ho'l usul"
+      ],
+      "t": 0,
+      "izoh": "Galvanostegiya — sirtni qiyin oksidlanadigan metall bilan qoplash; galvanoplastika — metall yugurtirib murakkab sirtli naqsh va buyumlarning nusxasini olish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#6e788978"
+    },
+    {
+      "q": "Zangning metallga zarari nimada?",
+      "v": [
+        "Zang sekin-asta metallni yemiradi va buyum teshiladi",
+        "Zang metallni qotiradi",
+        "Zang metallni og'irlashtiradi",
+        "Zang metallni magnitlaydi"
+      ],
+      "t": 0,
+      "izoh": "Zang sekin-asta metallni yemiradi va buyum teshiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#188cdd44"
+    },
+    {
+      "q": "Elektroliz yordamida misdan tashqari yana qanday metallarni ajratib olish mumkin?",
+      "v": [
+        "Kumush, oltin, nikel kabi metallarni",
+        "Faqat temirni",
+        "Faqat alyuminiyni",
+        "Hech qanday metalni"
+      ],
+      "t": 0,
+      "izoh": "Elektroliz yordamida misdan tashqari kumush, oltin, nikel kabi metallarni ham ajratib olish va yugurtirish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#7fa307a0"
+    },
+    {
+      "q": "Galvanoplastikada tayyorlangan taxta qaysi eritmaga tushiriladi?",
+      "v": [
+        "Mis kuporosi eritmasiga",
+        "Osh tuzi eritmasiga",
+        "Kumush nitrat eritmasiga",
+        "Kislota eritmasiga"
+      ],
+      "t": 0,
+      "izoh": "Tayyorlangan taxta mis kuporosi eritmasiga tushiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m45-elektrolizdan-turmushda-va-texnikada-foydalanish#4d21a89d"
+    }
+  ]
+}

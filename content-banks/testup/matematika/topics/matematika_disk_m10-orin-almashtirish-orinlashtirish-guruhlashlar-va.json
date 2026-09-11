@@ -1,0 +1,1609 @@
+{
+  "nom": "O'rin almashtirish, o'rinlashtirish, guruhlashlar va Nyuton binomi",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Zilola javon tokchasiga 5 xil rangdagi daftarni yonma-yon terib qo'ymoqchi. Daftarlarni necha xil tartibda terish mumkin?",
+      "v": [
+        "25",
+        "120",
+        "20",
+        "720"
+      ],
+      "t": 1,
+      "izoh": "Barcha 5 ta daftar joylashtiriladi va tartib muhim, demak bu o'rin almashtirish. P(5) = 5! = 1·2·3·4·5 = 120. 25 soni 5² ni, 20 soni esa faqat 5·4 ni hisoblash xatosidan chiqadi. Javob: 120.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orin-almashtirish-hisob",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#0e425f37"
+    },
+    {
+      "q": "Maktab bayramida 7 ta sinf navbatma-navbat chiqish qiladi. Agar 9-A sinf albatta birinchi bo'lib chiqishi shart bo'lsa, chiqishlar tartibi necha xil bo'lishi mumkin?",
+      "v": [
+        "5040",
+        "42",
+        "720",
+        "120"
+      ],
+      "t": 2,
+      "izoh": "Birinchi o'rin band qilingan, uni tanlash imkoni bitta. Qolgan 6 ta sinf o'zaro erkin joylashadi: P(6) = 6! = 720. 5040 soni shartni umuman hisobga olmay 7! ni olishdan kelib chiqadi. Javob: 720.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orin-almashtirish-hisob",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#1fb7c874"
+    },
+    {
+      "q": "A, B, C, D harflarining har birini bir martadan ishlatib nechta har xil to'rt harfli ketma-ketlik tuzish mumkin?",
+      "v": [
+        "12",
+        "16",
+        "24",
+        "256"
+      ],
+      "t": 2,
+      "izoh": "Hamma harf ishlatiladi va o'rni muhim, demak o'rin almashtirish qo'llanadi. P(4) = 4! = 1·2·3·4 = 24. 256 = 4⁴ harflarni takrorlashga ruxsat berilgan holatga to'g'ri keladi, 12 esa faqat dastlabki ikki o'rinni sanashdir. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orin-almashtirish-hisob",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#0210f264"
+    },
+    {
+      "q": "Poyga oxirida 7 ta yuguruvchi finish chizig'iga har xil vaqtda yetib keldi. Ularning kelish tartibi necha xil bo'lishi mumkin?",
+      "v": [
+        "5040",
+        "720",
+        "49",
+        "40320"
+      ],
+      "t": 0,
+      "izoh": "Yetti sportchining hammasi bir qatorga tizilyapti, demak P(7) = 7! hisoblanadi. 7! = 5040. 720 soni bitta sportchini tushirib qoldirish (6!), 40320 esa ortiqcha bitta qo'shish (8!) natijasidir. Javob: 5040.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orin-almashtirish-hisob",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#42117807"
+    },
+    {
+      "q": "Tanlovda 9 nafar ishtirokchidan birinchi, ikkinchi va uchinchi o'rin egalari aniqlanadi. Sovrindorlar ro'yxati necha xil bo'lishi mumkin?",
+      "v": [
+        "84",
+        "729",
+        "27",
+        "504"
+      ],
+      "t": 3,
+      "izoh": "O'rinlar har xil, ya'ni tartib muhim, shuning uchun o'rinlashtirish olinadi: A(9, 3) = 9·8·7 = 504. 84 soni C(9, 3) ga teng va tartibni hisobga olmaslik xatosidir, 729 esa 9³ ni olishdan chiqadi. Javob: 504.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orinlashtirish-hisob",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#10e8c9b5"
+    },
+    {
+      "q": "Firmada 12 nafar xodim ishlaydi. Ulardan direktor, bosh buxgalter va kotib lavozimlariga bittadan odam tayinlanadi. Tayinlashning necha xil varianti bor?",
+      "v": [
+        "220",
+        "1728",
+        "1320",
+        "36"
+      ],
+      "t": 2,
+      "izoh": "Uch lavozim bir-biridan farq qiladi, shuning uchun tartib hisobga olinadi: A(12, 3) = 12·11·10 = 1320. 220 soni C(12, 3) bo'lib, lavozimlarni farqlamaslik xatosi. 1728 = 12³ bir odamni ikki lavozimga qo'yishga yo'l qo'yadi. Javob: 1320.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orinlashtirish-hisob",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#9c29d808"
+    },
+    {
+      "q": "Besh xil rangli bayroqchadan ikkitasi ustunga biri yuqoriga, biri pastga qilib osiladi. Osilishning necha xil varianti bor?",
+      "v": [
+        "10",
+        "20",
+        "25",
+        "120"
+      ],
+      "t": 1,
+      "izoh": "Yuqori va past o'rinlar farqlanadi, demak tartib muhim: A(5, 2) = 5·4 = 20. 10 soni C(5, 2) ga teng va yuqori-past farqini yo'qotadi, 25 = 5² bitta bayroqchani ikki marta ishlatishga yo'l qo'yadi. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orinlashtirish-hisob",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#0f7e040b"
+    },
+    {
+      "q": "A(n, 2) = 56 tenglikni qanoatlantiruvchi natural n sonini toping.",
+      "v": [
+        "7",
+        "8",
+        "9",
+        "28"
+      ],
+      "t": 1,
+      "izoh": "Ta'rifga ko'ra A(n, 2) = n·(n − 1). Demak n·(n − 1) = 56 bo'ladi. Ketma-ket ikki sonning ko'paytmasi 56 bo'lishi uchun n = 8 (8·7 = 56). 7 javobi kichik ko'paytuvchini javob deb olishdan, 28 esa 56 ni ikkiga bo'lib yuborishdan chiqadi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orinlashtirish-hisob",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#4851b89e"
+    },
+    {
+      "q": "Sinfdagi 11 o'quvchidan 3 kishilik navbatchilik guruhi tuziladi. Guruhni necha xil usulda tanlash mumkin?",
+      "v": [
+        "165",
+        "990",
+        "33",
+        "55"
+      ],
+      "t": 0,
+      "izoh": "Guruh a'zolari orasida vazifa taqsimlanmagan, tartib muhim emas: C(11, 3) = (11·10·9) : (1·2·3) = 990 : 6 = 165. 990 soni A(11, 3) bo'lib, 3! ga bo'lishni unutish xatosidir. Javob: 165.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "guruhlash-hisob",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#5d30a09e"
+    },
+    {
+      "q": "Do'konda 8 xil muzqaymoq sotiladi. Dilnoza ulardan bir vaqtda 2 xilini tanlab olmoqchi. Tanlovning necha xil varianti bor?",
+      "v": [
+        "28",
+        "56",
+        "16",
+        "64"
+      ],
+      "t": 0,
+      "izoh": "Ikki muzqaymoq bir vaqtda olinadi, qaysi biri avval tanlangani ahamiyatsiz: C(8, 2) = (8·7) : 2 = 28. 56 soni A(8, 2) ga teng va bir juftni ikki marta sanaydi, 64 = 8² bir xilini ikki marta olishga yo'l qo'yadi. Javob: 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "guruhlash-hisob",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#2347de9d"
+    },
+    {
+      "q": "Voleybol to'garagida 14 nafar bola shug'ullanadi, o'yinga ulardan 6 tasi chiqadi. Chiqadigan tarkibni necha xil usulda tanlash mumkin?",
+      "v": [
+        "2002",
+        "3432",
+        "3003",
+        "84"
+      ],
+      "t": 2,
+      "izoh": "Maydonga chiqadigan 6 kishining o'rni hozircha ajratilmagan, demak guruhlash: C(14, 6) = 3003. 2002 soni C(14, 5) ga, 3432 esa C(14, 7) ga teng va o'rinni bir birlikka adashtirish natijasidir. 84 = 14·6 ko'paytmasi umuman boshqa amal. Javob: 3003.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "guruhlash-hisob",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#0493ccab"
+    },
+    {
+      "q": "To'qqizta har xil elementdan iborat to'plamning to'rt elementli qism to'plamlari nechta bo'ladi?",
+      "v": [
+        "3024",
+        "36",
+        "210",
+        "126"
+      ],
+      "t": 3,
+      "izoh": "Qism to'plamda elementlar tartibi ahamiyatsiz, shuning uchun guruhlash olinadi: C(9, 4) = (9·8·7·6) : (1·2·3·4) = 3024 : 24 = 126. 3024 soni A(9, 4) bo'lib, 4! ga bo'lish qadamini tashlab ketishdan chiqadi. Javob: 126.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "guruhlash-hisob",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#9f0ef3c3"
+    },
+    {
+      "q": "Yetti nafar sportchidan uchtasi terma jamoaga tanlanadi va ular orasida hech qanday o'rin ajratilmaydi. Bunda qaysi formula qo'llanadi?",
+      "v": [
+        "C(7, 3)",
+        "A(7, 3)",
+        "P(7)",
+        "P(3)·P(4)"
+      ],
+      "t": 0,
+      "izoh": "Tanlangan uch sportchining o'zaro tartibi hisobga olinmaydi, faqat kimlar tanlanganligi muhim. Shunday holatda guruhlashlar soni C(7, 3) qo'llanadi. A(7, 3) tartibni ham sanaydi, P(7) esa hamma sportchini qatorga tizishga tegishli. Javob: C(7, 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-farqlash",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#cad1423c"
+    },
+    {
+      "q": "Bayroq, gerb, madhiya va shior mavzularida to'rt xil alohida topshiriq bor. Sinfdagi 12 o'quvchidan har biriga bittadan topshiriq berishning soni qaysi ifoda bilan topiladi?",
+      "v": [
+        "C(12, 4)",
+        "A(12, 4)",
+        "12⁴",
+        "P(12) : P(4)"
+      ],
+      "t": 1,
+      "izoh": "Topshiriqlar bir-biridan farq qiladi, ya'ni kimga qaysi topshiriq tushgani muhim. Demak tartibli tanlov — o'rinlashtirish: A(12, 4). C(12, 4) faqat kimlar tanlanganini sanaydi, 12⁴ esa bitta o'quvchiga ikkita topshiriq berishga yo'l qo'yadi. Javob: A(12, 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-farqlash",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#26027bee"
+    },
+    {
+      "q": "Quyidagi vaziyatlardan qaysi birida guruhlashlar emas, o'rinlashtirishlar soni hisoblanadi?",
+      "v": [
+        "20 kishidan 5 kishilik ish guruhi tuzilishi",
+        "20 kishidan 5 nafarining har xil lavozimga tayinlanishi",
+        "20 ta savoldan 5 tasi nazorat ishiga ajratilishi",
+        "20 ta kitobdan 5 tasi o'qish uchun tanlanishi"
+      ],
+      "t": 1,
+      "izoh": "O'rinlashtirish tanlangan elementlarning o'zaro tartibi ham hisobga olinganda ishlatiladi. Ish guruhi, savollar to'plami va kitoblar to'plamida tartib ahamiyatsiz. Faqat har xil lavozimga tayinlashda kimga qaysi lavozim tekkani muhim. Javob: 20 kishidan 5 nafarining har xil lavozimga tayinlanishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-farqlash",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#14df887c"
+    },
+    {
+      "q": "O'quvchi A(6, 3) va C(6, 3) ifodalarini chalkashtirib yubordi. A(6, 3) qiymati C(6, 3) qiymatidan necha marta katta ekanini toping.",
+      "v": [
+        "3",
+        "2",
+        "20",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "A(6, 3) = 6·5·4 = 120, C(6, 3) = 120 : 6 = 20. Ularning nisbati 120 : 20 = 6, ya'ni aynan 3! marta. Umuman A(n, k) = C(n, k)·k! bo'lgani uchun nisbat har doim k! ga teng. 3 javobi k ni k! bilan chalkashtirishdan chiqadi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-farqlash",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#da91b658"
+    },
+    {
+      "q": "Yig'ilishga kelgan har bir ishtirokchi qolgan har bir ishtirokchi bilan bir martadan qo'l berib ko'rishdi. Ishtirokchilar 12 kishi bo'lsa, nechta qo'l berish sodir bo'lgan?",
+      "v": [
+        "66",
+        "132",
+        "144",
+        "24"
+      ],
+      "t": 0,
+      "izoh": "Har bir qo'l berish ikki kishilik juftlikdir va juftlikda tartib yo'q: C(12, 2) = (12·11) : 2 = 66. 132 soni 12·11 bo'lib, har juftni ikki marta sanash xatosi. 144 = 12² odamni o'zi bilan ham qo'shib yuboradi. Javob: 66.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qol-siqishish",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#295ff9f4"
+    },
+    {
+      "q": "Davrada har bir ishtirokchi qolganlar bilan bir martadan qo'l berdi va jami 45 ta qo'l berish sodir bo'ldi. Davrada necha kishi qatnashgan?",
+      "v": [
+        "9",
+        "15",
+        "10",
+        "11"
+      ],
+      "t": 2,
+      "izoh": "Shartga ko'ra C(n, 2) = 45, ya'ni n·(n − 1) : 2 = 45. Bundan n·(n − 1) = 90 kelib chiqadi va ketma-ket ikki sonning ko'paytmasi 90 bo'lishi uchun n = 10 (10·9 = 90). 9 javobi kichik ko'paytuvchini olishdan chiqadi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qol-siqishish",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#d5626184"
+    },
+    {
+      "q": "Futbol turnirida har bir jamoa qolgan har bir jamoa bilan ikki marta — o'z maydonida va mehmonda — o'ynaydi. Turnirda 8 ta jamoa bo'lsa, jami nechta o'yin o'tkaziladi?",
+      "v": [
+        "28",
+        "64",
+        "16",
+        "56"
+      ],
+      "t": 3,
+      "izoh": "Bir doiralik turnirda o'yinlar soni C(8, 2) = 28 bo'lardi. Har juft ikki marta uchrashgani uchun bu son 2 ga ko'paytiriladi: 28·2 = 56. 28 javobi ikkinchi doirani unutish, 64 = 8² esa jamoani o'zi bilan o'ynatib yuborish xatosi. Javob: 56.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qol-siqishish",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#af65a224"
+    },
+    {
+      "q": "Bazmda 6 erkak va 4 ayol bor. Har bir erkak har bir ayol bilan, erkaklar esa o'zaro ham qo'l berib ko'rishdi, ayollar bir-biri bilan ko'rishmadi. Jami nechta qo'l berish bo'lgan?",
+      "v": [
+        "24",
+        "45",
+        "21",
+        "39"
+      ],
+      "t": 3,
+      "izoh": "Erkak-ayol juftliklari: 6·4 = 24 ta. Erkaklar o'zaro: C(6, 2) = 15 ta. Ayollar o'zaro ko'rishmagani uchun ular qo'shilmaydi. Jami 24 + 15 = 39. 45 javobi barcha 10 kishini o'zaro sanashdan, 24 esa erkaklarning o'zaro ko'rishishini tushirib qoldirishdan chiqadi. Javob: 39.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qol-siqishish",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#72a9d248"
+    },
+    {
+      "q": "Shahar bog'idagi gulzor muntazam sakkizburchak shaklida qurilgan. Uning burchaklarini o'zaro tutashtiruvchi diagonallar soni nechta bo'ladi?",
+      "v": [
+        "28",
+        "20",
+        "40",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "Diagonallar soni C(n, 2) dan tomonlar sonini ayirish bilan topiladi: C(8, 2) − 8 = 28 − 8 = 20. Xuddi shu natijani n·(n − 3) : 2 = 8·5 : 2 = 20 formulasi ham beradi. 28 javobi tomonlarni ayirishni unutishdan chiqadi. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "diagonallar-soni",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#0eeefd73"
+    },
+    {
+      "q": "Bir qavariq ko'pburchakning diagonallari soni 35 ta ekani ma'lum. Bu ko'pburchak nechta tomonga ega?",
+      "v": [
+        "7",
+        "12",
+        "9",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Formula bo'yicha n·(n − 3) : 2 = 35, demak n·(n − 3) = 70. Ketma-ket qadamlar bilan sinaymiz: 10·7 = 70, ya'ni n = 10. 7 javobi ko'paytmadagi ikkinchi omilni javob deb olishdan kelib chiqadi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonallar-soni",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#2c3e8e8b"
+    },
+    {
+      "q": "Muntazam o'n ikki burchak shaklidagi maydon chetiga har bir burchakka bittadan o'rindiq qo'yilgan. Ikki o'rindiqni tutashtiruvchi to'g'ri chiziqlardan nechtasi maydon tomoni emas?",
+      "v": [
+        "66",
+        "108",
+        "54",
+        "24"
+      ],
+      "t": 2,
+      "izoh": "Ikki o'rindiqni tutashtiruvchi barcha kesmalar soni C(12, 2) = 66 ta. Ulardan 12 tasi maydonning tomonlari, qolgani diagonallar: 66 − 12 = 54. 66 javobi tomonlarni ayirish qadamini tashlab ketadi, 108 esa ikkiga bo'lishni unutish natijasi. Javob: 54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonallar-soni",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#935d29f8"
+    },
+    {
+      "q": "Qavariq ko'pburchakda diagonallar soni tomonlar sonidan aynan 4 marta ko'p. Bu ko'pburchakning tomonlari sonini toping.",
+      "v": [
+        "7",
+        "11",
+        "12",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Shart bo'yicha n·(n − 3) : 2 = 4n. Ikkala tomonni n ga qisqartiramiz: (n − 3) : 2 = 4, bundan n − 3 = 8 va n = 11. Tekshiramiz: 11 tomonli ko'pburchakda diagonallar 11·8 : 2 = 44 ta, bu esa 11 ning to'rt barobari. 7 javobi ikkiga bo'lish qadamini unutgan holatga to'g'ri keladi. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonallar-soni",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#0a749016"
+    },
+    {
+      "q": "C(15, 12) ifodaning qiymatini guruhlashlar simmetriya xossasidan foydalanib hisoblang.",
+      "v": [
+        "2730",
+        "105",
+        "1365",
+        "455"
+      ],
+      "t": 3,
+      "izoh": "Simmetriya xossasi C(n, k) = C(n, n − k) ni beradi, demak C(15, 12) = C(15, 3). Endi C(15, 3) = (15·14·13) : (1·2·3) = 2730 : 6 = 455. 2730 javobi 3! ga bo'lish qadamini tashlab ketishdan chiqadi. Javob: 455.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-xossasi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#1d854542"
+    },
+    {
+      "q": "C(20, 7) = C(20, x) tenglikda x ning 7 dan farqli qiymatini toping.",
+      "v": [
+        "13",
+        "14",
+        "27",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "C(n, k) = C(n, n − k) xossasiga ko'ra pastki ko'rsatkichlar yig'indisi n ga teng bo'lishi kerak. Demak x = 20 − 7 = 13. 27 javobi ayirish o'rniga qo'shishdan, 14 esa yuqori ko'rsatkichni bir birlikka adashtirishdan chiqadi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetriya-xossasi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#40802c1c"
+    },
+    {
+      "q": "C(n, 4) = C(n, 9) tenglik o'rinli bo'lishi uchun n qanday qiymatga ega bo'lishi kerak?",
+      "v": [
+        "5",
+        "13",
+        "36",
+        "22"
+      ],
+      "t": 1,
+      "izoh": "Guruhlashlar simmetriyasiga ko'ra C(n, k) = C(n, n − k) va bu yerda 4 bilan 9 juftlashadi. Demak 4 + 9 = n, ya'ni n = 13. 5 javobi ko'rsatkichlarni bir-biridan ayirish xatosi, 36 esa ularni ko'paytirishdan chiqadi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-xossasi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#27ef9761"
+    },
+    {
+      "q": "Quyidagi juftliklardan qaysi birida ikkita ifodaning qiymati o'zaro teng emas?",
+      "v": [
+        "C(10, 3) va C(10, 7)",
+        "C(12, 5) va C(12, 7)",
+        "C(9, 2) va C(9, 6)",
+        "C(14, 6) va C(14, 8)"
+      ],
+      "t": 2,
+      "izoh": "Simmetriya xossasi pastki ko'rsatkichlar yig'indisi yuqorigisiga teng bo'lganda ishlaydi: 3 + 7 = 10, 5 + 7 = 12, 6 + 8 = 14 — bularda tenglik bor. Uchinchi juftlikda 2 + 6 = 8, bu esa 9 ga teng emas, shuning uchun C(9, 2) = 36 va C(9, 6) = 84 har xil. Javob: C(9, 2) va C(9, 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-xossasi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#f79905cd"
+    },
+    {
+      "q": "Sinfdagi har bir o'quvchi qolgan har bir o'quvchiga bittadan tabrik kartochkasi berdi va jami 132 ta kartochka tarqaldi. Sinfda necha o'quvchi bor?",
+      "v": [
+        "12",
+        "11",
+        "13",
+        "22"
+      ],
+      "t": 0,
+      "izoh": "Kartochka yo'naltirilgan, ya'ni Anvardan Bekka va Bekdan Anvarga berilgani ikki xil hodisa. Shuning uchun A(n, 2) = n·(n − 1) = 132 bo'ladi. 12·11 = 132 ekanidan n = 12. 11 javobi kichik ko'paytuvchini olishdan chiqadi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "guruhlash-tenglama",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#3aa40231"
+    },
+    {
+      "q": "Bir guruh o'quvchidan ikki kishilik jamoa tuzishning 78 xil usuli mavjud. Guruhda nechta o'quvchi bor?",
+      "v": [
+        "12",
+        "13",
+        "14",
+        "39"
+      ],
+      "t": 1,
+      "izoh": "Jamoada tartib yo'q, demak C(n, 2) = 78, ya'ni n·(n − 1) : 2 = 78. Bundan n·(n − 1) = 156 va 13·12 = 156 bo'lgani uchun n = 13. 39 javobi 78 ni ikkiga bo'lishdan, 12 esa kichik ko'paytuvchini olishdan chiqadi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "guruhlash-tenglama",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#dec15afc"
+    },
+    {
+      "q": "C(n, 2) + n = 21 tenglamani qanoatlantiruvchi natural n sonini aniqlang.",
+      "v": [
+        "7",
+        "5",
+        "21",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "C(n, 2) = n·(n − 1) : 2 ni qo'yamiz: n·(n − 1) : 2 + n = 21. Ikkala tomonni 2 ga ko'paytiramiz: n² − n + 2n = 42, ya'ni n² + n − 42 = 0. Bundan n = 6 (ikkinchi ildiz manfiy va yaramaydi). Tekshirish: C(6, 2) + 6 = 15 + 6 = 21. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "guruhlash-tenglama",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#e1c0de15"
+    },
+    {
+      "q": "Shaxmat turnirida har bir ishtirokchi qolgan har biri bilan bir marta o'ynadi va jami 105 ta partiya bo'ldi. Turnirda nechta shaxmatchi qatnashgan?",
+      "v": [
+        "14",
+        "15",
+        "16",
+        "21"
+      ],
+      "t": 1,
+      "izoh": "Har bir partiya bitta juftlikka mos keladi: C(n, 2) = 105. Demak n·(n − 1) = 210 va 15·14 = 210 bo'lgani uchun n = 15. 14 javobi kichik ko'paytuvchini javob deb olish, 16 esa bir birlikka adashish xatosi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "guruhlash-tenglama",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#0d86f0eb"
+    },
+    {
+      "q": "(a + b)¹² binom yoyilmasida nechta had qatnashadi?",
+      "v": [
+        "13",
+        "12",
+        "11",
+        "24"
+      ],
+      "t": 0,
+      "izoh": "Nyuton binomi (a + b)ⁿ yoyilmasida hadlar soni n + 1 ga teng, chunki ko'rsatkich 0 dan n gacha qiymat oladi. Bu yerda n = 12, demak hadlar soni 13. 12 javobi darajani hadlar soni deb olishdan chiqadi. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "binom-hadlar-soni",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#a0ff94fb"
+    },
+    {
+      "q": "(x + 2)ⁿ ifodaning yoyilmasida jami 16 ta had bo'lsa, n ning qiymati nechaga teng?",
+      "v": [
+        "16",
+        "14",
+        "15",
+        "17"
+      ],
+      "t": 2,
+      "izoh": "Hadlar soni n + 1 ga teng, demak n + 1 = 16 va n = 15. 16 javobi hadlar sonini darajaga tenglashtirishdan, 17 esa 1 ni ayirish o'rniga qo'shishdan kelib chiqadi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "binom-hadlar-soni",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#a9de45ac"
+    },
+    {
+      "q": "(a + b)¹⁰ yoyilmasining ixtiyoriy hadida a va b harflari darajalarining yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "11",
+        "20",
+        "5",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Umumiy had C(10, k)·a^(10−k)·b^k ko'rinishida bo'ladi. Darajalar yig'indisi (10 − k) + k = 10, ya'ni k ga bog'liq emas va har doim 10 ga teng. 11 javobi hadlar soni bilan chalkashtirishdan chiqadi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binom-hadlar-soni",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#eb9bfe3e"
+    },
+    {
+      "q": "(3a − b)⁷ yoyilmasidagi hadlar soni bilan (2x + y)⁵ yoyilmasidagi hadlar soni ayirmasi nechaga teng?",
+      "v": [
+        "3",
+        "2",
+        "1",
+        "14"
+      ],
+      "t": 1,
+      "izoh": "Birinchi yoyilmada 7 + 1 = 8 ta, ikkinchisida 5 + 1 = 6 ta had bor. Ularning ayirmasi 8 − 6 = 2. 14 javobi ayirish o'rniga hadlar sonini qo'shib yuborishdan, 3 esa faqat bitta yoyilmaga 1 qo'shishdan kelib chiqadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binom-hadlar-soni",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#2890a52f"
+    },
+    {
+      "q": "(x + 2)⁶ ifodaning yoyilmasida x³ qatnashgan hadning koeffitsientini toping.",
+      "v": [
+        "40",
+        "120",
+        "160",
+        "64"
+      ],
+      "t": 2,
+      "izoh": "Umumiy had C(6, k)·x^(6−k)·2^k. x³ uchun 6 − k = 3, ya'ni k = 3. Koeffitsient C(6, 3)·2³ = 20·8 = 160. 40 javobi 2³ o'rniga 2 ni olishdan, 120 esa k ni bir birlikka adashtirib C(6, 2)·2³ = 120 ni hisoblashdan chiqadi. Javob: 160.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binom-umumiy-had",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#baa3c34a"
+    },
+    {
+      "q": "(x + 1/x)⁸ yoyilmasining umumiy hadi qaysi ko'rinishda yoziladi?",
+      "v": [
+        "C(8, k)·x^(8−2k)",
+        "C(8, k)·x^(8−k)",
+        "C(8, k)·x^(2k−8)",
+        "C(8, k)·x^(8+2k)"
+      ],
+      "t": 0,
+      "izoh": "Umumiy had C(8, k)·x^(8−k)·(1/x)^k ko'rinishida yoziladi. Bu yerda (1/x)^k = x^(−k), demak darajalar qo'shiladi: (8 − k) + (−k) = 8 − 2k. Shunday qilib had C(8, k)·x^(8−2k) bo'ladi. Javob: C(8, k)·x^(8−2k).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binom-umumiy-had",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#50151a54"
+    },
+    {
+      "q": "(2x − 1)¹⁰ ifoda yoyilganda x⁷ qatnashgan hadning koeffitsienti nechaga teng bo'ladi?",
+      "v": [
+        "−15360",
+        "15360",
+        "−960",
+        "−3840"
+      ],
+      "t": 0,
+      "izoh": "Umumiy had C(10, k)·(2x)^(10−k)·(−1)^k. x⁷ uchun 10 − k = 7, ya'ni k = 3. Koeffitsient C(10, 3)·2⁷·(−1)³ = 120·128·(−1) = −15360. 15360 javobi manfiy ishorani tushirib qoldirishdan, −960 esa 2⁷ o'rniga 2³ ni olishdan chiqadi. Javob: −15360.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "binom-umumiy-had",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#8cfdc856"
+    },
+    {
+      "q": "(x² + 2/x)⁹ yoyilmasida x⁶ qatnashgan hadning koeffitsientini hisoblang.",
+      "v": [
+        "126",
+        "1008",
+        "2016",
+        "4032"
+      ],
+      "t": 2,
+      "izoh": "Umumiy had C(9, k)·(x²)^(9−k)·(2/x)^k, ya'ni C(9, k)·2^k·x^(18−3k). x⁶ uchun 18 − 3k = 6, bundan k = 4. Koeffitsient C(9, 4)·2⁴ = 126·16 = 2016. 126 javobi 2⁴ ni butunlay unutish, 1008 esa 2⁴ o'rniga 2³ ni olish xatosidir. Javob: 2016.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "binom-umumiy-had",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#ba5ad42c"
+    },
+    {
+      "q": "(a + b)⁹ yoyilmasida a⁶b³ hadi oldida turgan koeffitsientni toping.",
+      "v": [
+        "504",
+        "84",
+        "36",
+        "126"
+      ],
+      "t": 1,
+      "izoh": "Nyuton binomida a^(n−k)·b^k hadining koeffitsienti C(n, k) ga teng. Bu yerda n = 9 va b ning darajasi 3, demak koeffitsient C(9, 3) = (9·8·7) : 6 = 84. 504 javobi 3! ga bo'lishni unutgan A(9, 3) qiymatidir. Javob: 84.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "binom-koeffitsient",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#6e708ee5"
+    },
+    {
+      "q": "(1 + x)ⁿ yoyilmasida x² qatnashgan hadning koeffitsienti 66 ga teng. n ning qiymatini toping.",
+      "v": [
+        "11",
+        "13",
+        "12",
+        "33"
+      ],
+      "t": 2,
+      "izoh": "x² li hadning koeffitsienti C(n, 2) ga teng, demak n·(n − 1) : 2 = 66. Bundan n·(n − 1) = 132 va 12·11 = 132 bo'lgani uchun n = 12. 11 javobi kichik ko'paytuvchini, 33 esa 66 ni ikkiga bo'lishni javob deb olishdan chiqadi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binom-koeffitsient",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#027e6de4"
+    },
+    {
+      "q": "(3 + x)⁴ ifodani yoyganda x² oldida turadigan son nechaga teng bo'ladi?",
+      "v": [
+        "54",
+        "6",
+        "18",
+        "36"
+      ],
+      "t": 0,
+      "izoh": "Umumiy had C(4, k)·3^(4−k)·x^k ko'rinishida. x² uchun k = 2, demak koeffitsient C(4, 2)·3² = 6·9 = 54. 6 javobi 3 ning darajasini butunlay unutish, 18 esa 3² o'rniga 3 ni olish xatosidir. Javob: 54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binom-koeffitsient",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#c5dd49c9"
+    },
+    {
+      "q": "(x − 2)⁵ ifodaning yoyilmasida x² li had qanday koeffitsientga ega bo'ladi?",
+      "v": [
+        "80",
+        "−40",
+        "40",
+        "−80"
+      ],
+      "t": 3,
+      "izoh": "Umumiy had C(5, k)·x^(5−k)·(−2)^k. x² uchun 5 − k = 2, ya'ni k = 3. Koeffitsient C(5, 3)·(−2)³ = 10·(−8) = −80. 80 javobi manfiy ishorani tushirib qoldirish, −40 esa (−2)³ = −8 o'rniga −4 ni olish xatosidan chiqadi. Javob: −80.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binom-koeffitsient",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#b1288777"
+    },
+    {
+      "q": "(a + b)⁷ yoyilmasidagi barcha binomial koeffitsientlarning yig'indisini toping.",
+      "v": [
+        "64",
+        "128",
+        "256",
+        "14"
+      ],
+      "t": 1,
+      "izoh": "Yig'indini topish uchun yoyilmada a = 1 va b = 1 deb olamiz: (1 + 1)⁷ = 2⁷ = 128. Demak koeffitsientlar yig'indisi 128 ga teng. 64 = 2⁶ va 256 = 2⁸ javoblari darajani bir birlikka adashtirishdan chiqadi. Javob: 128.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koeffitsientlar-yigindisi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#044d2c56"
+    },
+    {
+      "q": "(2x + 3)⁵ ifodada x o'rniga 1 qo'yilsa, yoyilmadagi barcha koeffitsientlar yig'indisi hosil bo'ladi. Bu yig'indi nechaga teng?",
+      "v": [
+        "3125",
+        "32",
+        "243",
+        "1024"
+      ],
+      "t": 0,
+      "izoh": "x = 1 qo'yamiz: (2·1 + 3)⁵ = 5⁵. Bu esa 5⁵ = 3125 ga teng. 32 = 2⁵ javobi faqat birinchi qo'shiluvchini, 243 = 3⁵ esa faqat ikkinchisini darajaga ko'tarishdan chiqadi. Javob: 3125.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koeffitsientlar-yigindisi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#22186386"
+    },
+    {
+      "q": "(x − 1)⁶ yoyilmasidagi barcha koeffitsientlarning yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "64",
+        "1",
+        "32",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "Koeffitsientlar yig'indisini topish uchun x = 1 qo'yiladi: (1 − 1)⁶ = 0⁶ = 0. Musbat va manfiy koeffitsientlar bir-birini yo'qotadi. 64 = 2⁶ javobi ayirish ishorasini e'tiborsiz qoldirishdan kelib chiqadi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koeffitsientlar-yigindisi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#6c8d587d"
+    },
+    {
+      "q": "(1 + x)ⁿ yoyilmasidagi binomial koeffitsientlar yig'indisi 2048 ga teng bo'lsa, n nechaga teng?",
+      "v": [
+        "10",
+        "1024",
+        "11",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Binomial koeffitsientlar yig'indisi 2ⁿ ga teng, demak 2ⁿ = 2048. Ikkining darajalarini sanaymiz: 2¹⁰ = 1024, 2¹¹ = 2048, ya'ni n = 11. 10 javobi bir pog'ona pastga tushib ketishdan, 1024 esa n ni yig'indi bilan chalkashtirishdan chiqadi. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koeffitsientlar-yigindisi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#62f04344"
+    },
+    {
+      "q": "Paskal uchburchagining bir qatori 1, 5, 10, 10, 5, 1 ko'rinishga ega. Undan keyingi qatorning uchinchi soni nechaga teng?",
+      "v": [
+        "10",
+        "15",
+        "20",
+        "11"
+      ],
+      "t": 1,
+      "izoh": "Paskal uchburchagida har bir son yuqoridagi ikki qo'shni sonning yig'indisiga teng. Keyingi qator: 1, 6, 15, 20, 15, 6, 1. Uning uchinchi soni 5 + 10 = 15. 20 javobi qatorning to'rtinchi sonini olishdan chiqadi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "paskal-uchburchagi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#73c405f3"
+    },
+    {
+      "q": "Nyuton binomida (a + b)⁷ yoyilmasining koeffitsientlari qaysi qatorda to'g'ri berilgan?",
+      "v": [
+        "1, 7, 21, 35, 35, 21, 7, 1",
+        "1, 7, 21, 21, 7, 1",
+        "1, 6, 15, 20, 15, 6, 1",
+        "1, 7, 28, 35, 28, 7, 1"
+      ],
+      "t": 0,
+      "izoh": "Ettinchi daraja uchun qatorda 8 ta son bo'lishi kerak va u simmetrik. Koeffitsientlar C(7, 0) dan C(7, 7) gacha: 1, 7, 21, 35, 35, 21, 7, 1. Olti sonli qator (a + b)⁵ ga mos kelardi, ammo (a + b)⁵ koeffitsientlari 1, 5, 10, 10, 5, 1 — demak 1, 7, 21, 21, 7, 1 hech qanday Paskal qatori emas. 1, 6, 15, 20 bilan boshlanadigani esa (a + b)⁶ ga tegishli. Javob: 1, 7, 21, 35, 35, 21, 7, 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "paskal-uchburchagi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#49b590fa"
+    },
+    {
+      "q": "Paskal uchburchagining bir qatoridagi sonlar yig'indisi 256 ga teng. Bu qator qaysi (a + b)ⁿ darajaning koeffitsientlarini beradi?",
+      "v": [
+        "7",
+        "9",
+        "16",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "n-darajaga mos qatordagi sonlar yig'indisi 2ⁿ ga teng. Demak 2ⁿ = 256 va 2⁸ = 256 bo'lgani uchun n = 8. 16 javobi 256 ning kvadrat ildizini olishdan, 9 esa qatordagi sonlar sonini (n + 1 = 9) daraja deb hisoblashdan chiqadi. 7 javobi esa 2⁷ = 128 bilan chalkashtirishdir. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "paskal-uchburchagi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#d4da6aac"
+    },
+    {
+      "q": "Ustoz doskaga Paskal uchburchagining bir qatorini yozdi, ammo ikkinchi sonini o'chirib tashladi: 1, ?, 45, 120, 210, … Yo'qolgan son nechaga teng?",
+      "v": [
+        "9",
+        "45",
+        "11",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Qatordagi sonlar C(n, 0), C(n, 1), C(n, 2), … ko'rinishida boradi va uchinchi son C(n, 2) = 45 ga teng. Bundan n·(n − 1) = 90, ya'ni n = 10. Ikkinchi son esa C(10, 1) = 10 bo'ladi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "paskal-uchburchagi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#9bfaa574"
+    },
+    {
+      "q": "(a + b)¹⁰ yoyilmasining o'rtadagi hadi qanday binomial koeffitsientga ega bo'ladi?",
+      "v": [
+        "210",
+        "120",
+        "252",
+        "1024"
+      ],
+      "t": 2,
+      "izoh": "Yoyilmada 11 ta had bor, demak o'rtadagisi 6-had va unda k = 5. Koeffitsient C(10, 5) = 252. 210 javobi C(10, 4) ni, ya'ni o'rinni bir birlikka adashtirishni bildiradi, 1024 esa koeffitsientlar yig'indisidir. Javob: 252.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binom-ortasi-had",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#314911a5"
+    },
+    {
+      "q": "(x + 3)⁸ ifoda yoyilganda uning o'rtadagi hadi qanday ko'rinishda bo'ladi?",
+      "v": [
+        "70x⁴",
+        "1890x⁴",
+        "5670x⁴",
+        "5670x⁵"
+      ],
+      "t": 2,
+      "izoh": "Yoyilmada 9 ta had bor, o'rtadagisi 5-had va unda k = 4. Had C(8, 4)·x⁴·3⁴ = 70·81·x⁴ = 5670x⁴. 70x⁴ javobi 3⁴ ni unutish, 1890x⁴ esa 3⁴ o'rniga 3³ ni olish xatosidan chiqadi. Javob: 5670x⁴.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "binom-ortasi-had",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#e97c4aba"
+    },
+    {
+      "q": "(2a − b)⁷ yoyilmasida o'rtada joylashgan ikkita had bor. Ular nechanchi o'rinlarda turadi?",
+      "v": [
+        "4- va 5-hadlar",
+        "3- va 4-hadlar",
+        "4- va 6-hadlar",
+        "5- va 6-hadlar"
+      ],
+      "t": 0,
+      "izoh": "Daraja toq bo'lgani uchun yoyilmada 7 + 1 = 8 ta had bo'ladi va yagona o'rta had bo'lmaydi. Sakkizta hadning o'rtasidagilari 4-had va 5-haddir. Toq sondagi hadlar bo'lganda esa bitta o'rta had bo'lardi. Javob: 4- va 5-hadlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binom-ortasi-had",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#5967eae9"
+    },
+    {
+      "q": "(x + 2)¹² yoyilmasining o'rtadagi hadida x ning darajasi nechaga teng bo'ladi?",
+      "v": [
+        "7",
+        "6",
+        "5",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "Hadlar soni 13 ta, demak o'rtadagisi 7-had va unda k = 6. Umumiy had C(12, k)·x^(12−k)·2^k bo'lgani uchun x ning darajasi 12 − 6 = 6. 7 javobi hadning tartib raqamini daraja deb olishdan chiqadi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "binom-ortasi-had",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#da5ca029"
+    },
+    {
+      "q": "«BOBUR» so'zidagi harflarni o'rin almashtirib nechta har xil harfiy ketma-ketlik tuzish mumkin?",
+      "v": [
+        "120",
+        "30",
+        "24",
+        "60"
+      ],
+      "t": 3,
+      "izoh": "So'zda 5 ta harf bor, lekin B harfi ikki marta takrorlanadi. Takrorli o'rin almashtirish: 5! : 2! = 120 : 2 = 60. 120 javobi takrorlangan harfni hisobga olmaslikdan, 24 esa bitta B ni umuman tashlab ketishdan chiqadi. Javob: 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "takrorli-orin-almashtirish",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#54c303f2"
+    },
+    {
+      "q": "«BOTANIKA» so'zidagi sakkizta harfni o'rin almashtirib nechta har xil ketma-ketlik hosil qilish mumkin?",
+      "v": [
+        "20160",
+        "40320",
+        "10080",
+        "5040"
+      ],
+      "t": 0,
+      "izoh": "So'zda 8 ta harf bor va A harfi ikki marta uchraydi, qolganlari bir martadan. Demak 8! : 2! = 40320 : 2 = 20160. 40320 javobi takrorni e'tiborsiz qoldirish, 5040 esa bitta A ni butunlay olib tashlash xatosidir. Javob: 20160.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "takrorli-orin-almashtirish",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#5b9d856b"
+    },
+    {
+      "q": "Do'kon vitrinasiga 4 ta bir xil qizil, 2 ta bir xil ko'k va 1 ta sariq shar bir qatorga tiziladi. Nechta har xil ko'rinish hosil bo'lishi mumkin?",
+      "v": [
+        "5040",
+        "105",
+        "210",
+        "21"
+      ],
+      "t": 1,
+      "izoh": "Jami 7 ta shar bor, ular ichida 4 tasi va 2 tasi o'zaro farqlanmaydi. Takrorli o'rin almashtirish: 7! : (4!·2!) = 5040 : 48 = 105. 5040 javobi sharlarni har xil deb hisoblashdan, 210 esa 2! ga bo'lishni unutishdan chiqadi. Javob: 105.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "takrorli-orin-almashtirish",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#891bf803"
+    },
+    {
+      "q": "Karim mehmonlar uchun 3 ta bir xil olma, 2 ta bir xil nok va 4 ta bir xil o'rikni bir qatorga terib chiqdi. Mevalarni necha xil tartibda terish mumkin?",
+      "v": [
+        "362880",
+        "2520",
+        "1260",
+        "15120"
+      ],
+      "t": 2,
+      "izoh": "Jami 3 + 2 + 4 = 9 ta meva bor va har bir turdagi mevalar o'zaro farqlanmaydi. Demak 9! : (3!·2!·4!) = 362880 : 288 = 1260. 362880 javobi hamma mevani har xil deb sanash, 2520 esa 2! ga bo'lishni tashlab ketish xatosidir. Javob: 1260.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "takrorli-orin-almashtirish",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#90e32985"
+    },
+    {
+      "q": "Sardor javonga 8 ta har xil kitobni terib chiqmoqchi, ammo matematika va fizika kitoblari albatta yonma-yon turishi kerak. Nechta joylashuv mumkin?",
+      "v": [
+        "40320",
+        "10080",
+        "5040",
+        "20160"
+      ],
+      "t": 1,
+      "izoh": "Ikki kitobni bitta yaxlit blok deb olamiz, shunda 7 ta obyekt joylashadi: 7! = 5040. Blok ichida ikki kitob o'zaro ikki xil turadi, demak 5040·2 = 10080. 40320 javobi shartni umuman hisobga olmaydi, 5040 esa blok ichidagi tartibni unutadi. Javob: 10080.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shart-bilan-orin-almashtirish",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#2a062f5f"
+    },
+    {
+      "q": "Beshta o'quvchi va ikkita ustoz bir qatorga o'tiradi, lekin ikki ustoz yonma-yon o'tirmasligi shart. Nechta o'tirish varianti bor?",
+      "v": [
+        "1440",
+        "5040",
+        "3600",
+        "2520"
+      ],
+      "t": 2,
+      "izoh": "Jami 7 kishi bo'lgani uchun barcha joylashuvlar 7! = 5040 ta. Ustozlar yonma-yon turgan holatlar: ularni blok qilib 6! · 2 = 1440 ta. Kerakli javob ayirma bilan topiladi: 5040 − 1440 = 3600. 1440 javobi teskari holatni javob deb olishdir. Javob: 3600.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shart-bilan-orin-almashtirish",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#76003062"
+    },
+    {
+      "q": "0, 1, 2, 3, 4, 5 raqamlaridan raqamlari takrorlanmaydigan nechta uch xonali son tuzish mumkin?",
+      "v": [
+        "120",
+        "216",
+        "60",
+        "100"
+      ],
+      "t": 3,
+      "izoh": "Yuzlar xonasiga nol qo'yib bo'lmaydi, shuning uchun u yerga 5 ta raqam mos keladi. Keyingi xonaga nol qaytib kelgani uchun yana 5 ta, oxirgi xonaga esa 4 ta imkon qoladi: 5·5·4 = 100. 120 javobi nol cheklovini unutgan A(6, 3) qiymatidir. Javob: 100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shart-bilan-orin-almashtirish",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#60dd30de"
+    },
+    {
+      "q": "Beshta o'g'il va 3 qiz bir qatorga tiziladi, qizlar esa albatta uzluksiz, ya'ni yonma-yon turishi kerak. Nechta joylashuv bo'lishi mumkin?",
+      "v": [
+        "4320",
+        "40320",
+        "720",
+        "2160"
+      ],
+      "t": 0,
+      "izoh": "Uch qizni bitta blok deb olamiz, shunda 5 o'g'il va 1 blok — jami 6 obyekt joylashadi: 6! = 720. Blok ichida qizlar 3! = 6 xil turadi, demak 720·6 = 4320. 720 javobi blok ichidagi tartibni, 2160 esa 3! o'rniga 3 ni olishni bildiradi. Javob: 4320.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shart-bilan-orin-almashtirish",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#e153a556"
+    },
+    {
+      "q": "To'garakda 7 o'g'il va 5 qiz shug'ullanadi. Ulardan 3 o'g'il va 2 qizdan iborat jamoa necha xil usulda tuziladi?",
+      "v": [
+        "350",
+        "45",
+        "792",
+        "175"
+      ],
+      "t": 0,
+      "izoh": "O'g'illarni tanlash C(7, 3) = 35 xil, qizlarni tanlash C(5, 2) = 10 xil bo'ladi. Ikki tanlov mustaqil bo'lgani uchun ular ko'paytiriladi: 35·10 = 350. 45 javobi ko'paytirish o'rniga qo'shish, 175 esa C(5, 2) o'rniga 5 ni olish xatosidir. Javob: 350.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-guruhlash",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#4c5d4a6f"
+    },
+    {
+      "q": "Kutubxonada 6 xil roman va 4 xil she'riy to'plam bor. Anvar 2 ta roman hamda 1 ta she'riy to'plam olmoqchi. Necha xil tanlov bor?",
+      "v": [
+        "19",
+        "60",
+        "120",
+        "15"
+      ],
+      "t": 1,
+      "izoh": "Romanlar C(6, 2) = 15 xil, she'riy to'plam C(4, 1) = 4 xil tanlanadi. Tanlovlar mustaqil, shuning uchun ko'paytiriladi: 15·4 = 60. 19 javobi qo'shish xatosi, 15 esa she'riy to'plam tanlovini butunlay unutishdan chiqadi. Javob: 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralash-guruhlash",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#021ba657"
+    },
+    {
+      "q": "Imtihon ikki bo'limdan iborat: birinchisida 8 ta, ikkinchisida 6 ta savol bor. Talaba birinchi bo'limdan 5 ta, ikkinchisidan 4 ta savolni tanlashi kerak. Necha xil tanlov mumkin?",
+      "v": [
+        "71",
+        "2002",
+        "840",
+        "1050"
+      ],
+      "t": 2,
+      "izoh": "Birinchi bo'limdan C(8, 5) = 56 xil, ikkinchisidan C(6, 4) = 15 xil tanlanadi. Umumiy son ko'paytma bilan topiladi: 56·15 = 840. 2002 javobi ikki bo'limni qo'shib C(14, 9) ni olishdan, 71 esa qo'shish xatosidan chiqadi. Javob: 840.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-guruhlash",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#c5d3f982"
+    },
+    {
+      "q": "Shaxmat to'garagida 10 bola va 8 qiz shug'ullanadi. Musobaqaga 4 bola va 3 qizdan iborat jamoa yuboriladi. Jamoani necha xil usulda tuzish mumkin?",
+      "v": [
+        "266",
+        "11760",
+        "31824",
+        "8400"
+      ],
+      "t": 1,
+      "izoh": "Bolalar C(10, 4) = 210 xil, qizlar C(8, 3) = 56 xil tanlanadi. Jamoa soni 210·56 = 11760 ga teng. 8400 javobi sonlarni almashtirib C(10, 3)·C(8, 4) ni hisoblashdan, 31824 esa hammasini birlashtirib C(18, 7) ni olishdan chiqadi. Javob: 11760.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-guruhlash",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#0f539fb9"
+    },
+    {
+      "q": "Qutida 5 ta qizil va 4 ta ko'k ruchka bor, ulardan 3 tasi tavakkaliga olinadi. Olingan ruchkalar ichida kamida bitta ko'k bo'lishi necha xil usulda mumkin?",
+      "v": [
+        "74",
+        "84",
+        "10",
+        "40"
+      ],
+      "t": 0,
+      "izoh": "Barcha tanlovlar C(9, 3) = 84 ta. Ular ichida bironta ham ko'k bo'lmagan, ya'ni faqat qizil olingan holatlar C(5, 3) = 10 ta. Kamida bitta ko'k bo'lishi 84 − 10 = 74 xil. 40 javobi faqat aynan bitta ko'k bo'lgan holatni sanaydi. Javob: 74.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kamida-shart",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#92b8c34d"
+    },
+    {
+      "q": "Sinfdagi 13 o'quvchidan 5 kishilik guruh tuziladi va Sardor albatta shu guruhga kirishi kerak. Guruhni necha xil usulda tanlash mumkin?",
+      "v": [
+        "1287",
+        "495",
+        "792",
+        "715"
+      ],
+      "t": 1,
+      "izoh": "Sardorning joyi allaqachon band, demak qolgan 12 o'quvchidan yana 4 kishi tanlanadi: C(12, 4) = 495. 1287 javobi shartni umuman hisobga olmagan C(13, 5) qiymati, 792 esa qolganlardan 5 kishi tanlash xatosidir. Javob: 495.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kamida-shart",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#d443d0e0"
+    },
+    {
+      "q": "Sakkiz kishilik guruhdan 3 kishilik komissiya tuziladi, ammo Anvar bilan Bekzod bir vaqtda komissiyaga kira olmaydi. Nechta komissiya tuzish mumkin?",
+      "v": [
+        "56",
+        "6",
+        "50",
+        "20"
+      ],
+      "t": 2,
+      "izoh": "Cheklovsiz komissiyalar soni C(8, 3) = 56 ta. Anvar bilan Bekzod birga bo'lgan holatlarda uchinchi a'zo qolgan 6 kishidan tanlanadi, ya'ni 6 ta holat. Demak javob 56 − 6 = 50. 20 javobi ikkalasini ham butunlay chiqarib tashlab C(6, 3) ni olishdan chiqadi. Javob: 50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kamida-shart",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#302327ef"
+    },
+    {
+      "q": "Savatda 6 ta olma va 5 ta nok bor, ulardan 4 ta meva olinadi. Olingan mevalar ichida kamida 2 ta olma bo'lishi necha xil usulda mumkin?",
+      "v": [
+        "330",
+        "150",
+        "265",
+        "250"
+      ],
+      "t": 2,
+      "izoh": "Barcha tanlovlar C(11, 4) = 330 ta. Yaramaydigan holatlar: bitta ham olma yo'q C(5, 4) = 5 ta, aynan bitta olma C(6, 1)·C(5, 3) = 60 ta. Demak 330 − 65 = 265. 150 javobi faqat aynan 2 olmali holatni, 250 esa 4 ta olma holatini tashlab ketishni bildiradi. Javob: 265.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kamida-shart",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#aef6a1b0"
+    },
+    {
+      "q": "Yumaloq stol atrofida 6 nafar mehmon o'tiradi va faqat kimning kim bilan qo'shni bo'lishi muhim. Ular necha xil o'tirishi mumkin?",
+      "v": [
+        "120",
+        "720",
+        "30",
+        "60"
+      ],
+      "t": 0,
+      "izoh": "Dumaloq joylashuvda bir kishining o'rni qo'zg'almas deb olinadi, chunki stolni burish yangi variant bermaydi. Qolgan 5 kishi erkin joylashadi: (6 − 1)! = 5! = 120. 720 javobi dumaloq shartni unutib 6! ni olishdan chiqadi. Javob: 120.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "dumaloq-stol",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#e623886c"
+    },
+    {
+      "q": "Yumaloq stol atrofida n nafar odam 720 xil usulda o'tirishi mumkin. n ning qiymatini toping.",
+      "v": [
+        "6",
+        "8",
+        "5",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Dumaloq stolda joylashuvlar soni (n − 1)! ga teng, demak (n − 1)! = 720. 6! = 720 bo'lgani uchun n − 1 = 6 va n = 7. 6 javobi (n − 1)! ni n! deb olishdan, 8 esa bir birlik ortiq qo'shishdan kelib chiqadi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "dumaloq-stol",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#eb657e15"
+    },
+    {
+      "q": "To'yda yumaloq stol atrofiga 5 o'g'il va 5 qiz navbatma-navbat o'tirishi kerak. O'tirishning necha xil usuli bor?",
+      "v": [
+        "14400",
+        "2880",
+        "120",
+        "576"
+      ],
+      "t": 1,
+      "izoh": "Avval o'g'illarni dumaloq joylashtiramiz: (5 − 1)! = 24 usul. Ular orasida 5 ta bo'sh oraliq hosil bo'ladi va qizlar shu oraliqlarga 5! = 120 xil o'tiradi. Jami 24·120 = 2880. 14400 javobi dumaloqlik shartini unutib 5!·5! ni olishdan chiqadi. Javob: 2880.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "dumaloq-stol",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#f36a8b6c"
+    },
+    {
+      "q": "Yumaloq stol atrofidagi 8 ta joyga 8 kishi o'tiradi, Aziz bilan Barno esa albatta yonma-yon o'tirishi kerak. Necha xil o'tirish usuli bor?",
+      "v": [
+        "1440",
+        "5040",
+        "720",
+        "40320"
+      ],
+      "t": 0,
+      "izoh": "Aziz bilan Barnoni bitta blok deb olsak, dumaloq stolda 7 ta obyekt qoladi: (7 − 1)! = 720 usul. Blok ichida ikkovi o'rin almashadi, demak 720·2 = 1440. 5040 javobi yonma-yon shartini unutgan (8 − 1)! qiymati, 720 esa blok ichidagi tartibni tashlab ketadi. Javob: 1440.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "dumaloq-stol",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#9e708421"
+    },
+    {
+      "q": "(x + 1/x)⁶ yoyilmasining x qatnashmaydigan ozod hadini toping.",
+      "v": [
+        "15",
+        "64",
+        "6",
+        "20"
+      ],
+      "t": 3,
+      "izoh": "Umumiy had C(6, k)·x^(6−2k) ko'rinishida bo'ladi. Ozod had uchun 6 − 2k = 0, ya'ni k = 3. Demak had C(6, 3) = 20 ga teng. 15 javobi k ni 2 deb adashtirish, 64 esa koeffitsientlar yig'indisini javob deb olishdir. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binom-ozod-had",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#78b5dca3"
+    },
+    {
+      "q": "(x² − 1/x)⁶ ifodaning yoyilmasida x qatnashmaydigan had nechaga teng bo'ladi?",
+      "v": [
+        "15",
+        "−15",
+        "20",
+        "64"
+      ],
+      "t": 0,
+      "izoh": "Umumiy had C(6, k)·(−1)^k·x^(12−3k) ko'rinishida. Ozod had uchun 12 − 3k = 0, bundan k = 4. Ko'rsatkich juft bo'lgani uchun ishora musbat: C(6, 4)·(−1)⁴ = 15. −15 javobi ishorani noto'g'ri aniqlash, 20 esa k ni 3 deb olish xatosidir. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "binom-ozod-had",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#3ffb393b"
+    },
+    {
+      "q": "(2x + 1/x²)⁹ yoyilmasining ozod hadi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "84",
+        "672",
+        "5376",
+        "1344"
+      ],
+      "t": 2,
+      "izoh": "Umumiy had C(9, k)·2^(9−k)·x^(9−3k) ko'rinishida. Ozod had uchun 9 − 3k = 0, ya'ni k = 3. Had C(9, 3)·2⁶ = 84·64 = 5376. 84 javobi ikkining darajasini unutish, 672 esa 2⁶ o'rniga 2³ ni olish xatosidan chiqadi. Javob: 5376.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "binom-ozod-had",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#86497117"
+    },
+    {
+      "q": "(x³ + 1/x)¹² yoyilmasida ozod had nechanchi o'rinda turadi?",
+      "v": [
+        "9",
+        "11",
+        "4",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Umumiy had C(12, k)·x^(36−4k) ko'rinishida bo'ladi. Ozod had uchun 36 − 4k = 0, bundan k = 9. Hadning tartib raqami esa k + 1 ga teng, ya'ni 10-had. 9 javobi k ni to'g'ridan-to'g'ri tartib raqami deb olishdan chiqadi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "binom-ozod-had",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#af4dccfe"
+    },
+    {
+      "q": "C(9, 3) + C(9, 4) yig'indisi quyidagi qaysi bitta guruhlashga teng bo'ladi?",
+      "v": [
+        "C(10, 4)",
+        "C(9, 7)",
+        "C(18, 7)",
+        "C(10, 3)"
+      ],
+      "t": 0,
+      "izoh": "Paskal xossasiga ko'ra C(n, k) + C(n, k + 1) = C(n + 1, k + 1). Bu yerda n = 9 va k = 3, demak yig'indi C(10, 4) ga teng. Tekshiramiz: 84 + 126 = 210 va C(10, 4) = 210. C(18, 7) javobi yuqori ko'rsatkichlarni ham qo'shib yuborishdan chiqadi. Javob: C(10, 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "paskal-xossa-yigindi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#d2de33c7"
+    },
+    {
+      "q": "C(n, 5) + C(n, 6) = C(15, 6) tenglik o'rinli bo'lsa, n ning qiymatini toping.",
+      "v": [
+        "15",
+        "14",
+        "13",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "Paskal xossasi chap tomonni bitta guruhlashga aylantiradi: C(n, 5) + C(n, 6) = C(n + 1, 6). Demak C(n + 1, 6) = C(15, 6) va n + 1 = 15, ya'ni n = 14. 15 javobi qo'shishdan keyin n ni o'zgarishsiz qoldirish xatosidir. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "paskal-xossa-yigindi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#e375d4ea"
+    },
+    {
+      "q": "C(6, 0) + C(6, 1) + C(6, 2) + C(6, 3) yig'indisining qiymatini hisoblang.",
+      "v": [
+        "64",
+        "42",
+        "22",
+        "32"
+      ],
+      "t": 1,
+      "izoh": "Har bir qo'shiluvchini alohida hisoblaymiz: C(6, 0) = 1, C(6, 1) = 6, C(6, 2) = 15, C(6, 3) = 20. Ularning yig'indisi 1 + 6 + 15 + 20 = 42. 64 javobi barcha yetti hadni, ya'ni 2⁶ ni olishdan chiqadi. Javob: 42.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "paskal-xossa-yigindi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#a503de57"
+    },
+    {
+      "q": "Paskal uchburchagining 1, 8, 28, 56, 70, 56, 28, 8, 1 qatoridan foydalanib C(9, 4) qiymatini toping.",
+      "v": [
+        "70",
+        "56",
+        "112",
+        "126"
+      ],
+      "t": 3,
+      "izoh": "Berilgan qator (a + b)⁸ ga, ya'ni C(8, 0) dan C(8, 8) gacha bo'lgan sonlarga mos. Paskal xossasiga ko'ra C(9, 4) = C(8, 3) + C(8, 4) = 56 + 70 = 126. 112 javobi bir xil sonni ikki marta qo'shishdan, 70 esa yuqoridagi bitta sonni ko'chirib olishdan chiqadi. Javob: 126.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "paskal-xossa-yigindi",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#45eaf2a1"
+    },
+    {
+      "q": "Shahar ko'chalari to'g'ri burchakli to'r hosil qiladi. Alisher uyidan maktabgacha faqat sharqqa va shimolga yuradi, yo'lda 4 blok sharqqa va 3 blok shimolga o'tadi. Nechta har xil yo'l bor?",
+      "v": [
+        "35",
+        "12",
+        "5040",
+        "21"
+      ],
+      "t": 0,
+      "izoh": "Har bir yo'l 7 ta qadamdan iborat va ularning 3 tasi shimolga qaratilgan. Yo'lni tanlash — 7 qadamdan qaysilari shimolga ekanini tanlashdir: C(7, 3) = 35. 12 javobi bloklarni ko'paytirish, 5040 esa qadamlarni har xil deb hisoblab 7! ni olish xatosidir. Javob: 35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "marshrut-tor",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#4babff78"
+    },
+    {
+      "q": "Kataklarga bo'lingan kvadrat to'rda chap pastki burchakdan o'ng yuqori burchakka borish uchun 5 marta o'ngga va 5 marta yuqoriga yurish kerak. Yo'llar soni nechta?",
+      "v": [
+        "25",
+        "252",
+        "210",
+        "1024"
+      ],
+      "t": 1,
+      "izoh": "Yo'l jami 10 ta qadamdan iborat, ulardan 5 tasi o'ngga qaratilgan. Demak yo'llar soni C(10, 5) = 252. 1024 javobi har qadamda ikki tanlov bor deb 2¹⁰ ni olishdan, 210 esa C(10, 4) ni olib bir birlikka adashishdan chiqadi. Javob: 252.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "marshrut-tor",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#1b838065"
+    },
+    {
+      "q": "Faqat O va Y harflaridan tuzilgan, tarkibida 3 ta O va 5 ta Y bo'lgan nechta sakkiz harfli ketma-ketlik mavjud?",
+      "v": [
+        "15",
+        "40320",
+        "28",
+        "56"
+      ],
+      "t": 3,
+      "izoh": "Sakkiz o'rindan qaysi uchtasiga O harfi tushishini tanlash yetarli, qolganiga Y yoziladi: C(8, 3) = 56. Xuddi shu natijani takrorli o'rin almashtirish 8! : (3!·5!) = 56 ham beradi. 40320 javobi harflarni har xil deb hisoblashdan chiqadi. Javob: 56.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "marshrut-tor",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#4f015d96"
+    },
+    {
+      "q": "Nodira kvadrat to'rda A chorrahasidan B chorrahasiga borish uchun 4 blok sharqqa va 4 blok shimolga yuradi. Ammo aynan markazdagi chorraha ta'mirda va undan o'tib bo'lmaydi. Nechta yo'l qoladi?",
+      "v": [
+        "70",
+        "36",
+        "34",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Cheklovsiz yo'llar soni C(8, 4) = 70 ta. Markaziy chorrahaga borish C(4, 2) = 6 xil, undan B gacha yana C(4, 2) = 6 xil, demak taqiqlangan yo'llar 6·6 = 36 ta. Qolgani 70 − 36 = 34. 36 javobi aynan taqiqlangan yo'llarni javob deb olishdir. Javob: 34.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "marshrut-tor",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#4c75c096"
+    },
+    {
+      "q": "n! : (n − 2)! ifoda quyidagi qaysi kombinatorik songa aynan teng bo'ladi?",
+      "v": [
+        "A(n, 2)",
+        "C(n, 2)",
+        "P(n − 2)",
+        "A(n, n − 2)"
+      ],
+      "t": 0,
+      "izoh": "O'rinlashtirishlar ta'rifi A(n, k) = n! : (n − k)! ko'rinishida. Bu yerda k = 2 bo'lgani uchun ifoda A(n, 2) ga teng. C(n, 2) undan 2! marta kichik, A(n, n − 2) esa n! : 2! ni beradi. Javob: A(n, 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kombinatorik-ayniyat",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#57298b45"
+    },
+    {
+      "q": "C(n, 1) + C(n, n) yig'indisi qanday ifodaga teng bo'ladi?",
+      "v": [
+        "n + 1",
+        "2n",
+        "n",
+        "n − 1"
+      ],
+      "t": 0,
+      "izoh": "Ta'rifga ko'ra C(n, 1) = n, chunki bitta elementni n xil tanlash mumkin. C(n, n) = 1, chunki hamma elementni olish bitta usul. Demak yig'indi n + 1 ga teng. 2n javobi C(n, n) ni ham n deb olishdan chiqadi. Javob: n + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kombinatorik-ayniyat",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#495da5e7"
+    },
+    {
+      "q": "P(5)·C(8, 5) ko'paytma quyidagi qaysi ifodaga aynan teng bo'ladi?",
+      "v": [
+        "P(8)",
+        "A(8, 5)",
+        "C(13, 5)",
+        "A(8, 3)"
+      ],
+      "t": 1,
+      "izoh": "Guruhlash bilan o'rinlashtirish orasidagi bog'lanish A(n, k) = C(n, k)·k! ko'rinishida. Bu yerda k! = 5! = P(5), demak ko'paytma A(8, 5) ga teng. Sonlar bilan tekshiramiz: 120·56 = 6720 va A(8, 5) = 8·7·6·5·4 = 6720. Javob: A(8, 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kombinatorik-ayniyat",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#201a7f09"
+    },
+    {
+      "q": "O'n nafar o'quvchidan avval 4 kishilik jamoa tuziladi, so'ng jamoa a'zolari orasidan sardor va uning yordamchisi tayinlanadi. Buni necha xil usulda bajarish mumkin?",
+      "v": [
+        "5040",
+        "210",
+        "2520",
+        "840"
+      ],
+      "t": 2,
+      "izoh": "Jamoani tanlash C(10, 4) = 210 xil. Tanlangan 4 kishidan sardor va yordamchini ajratish A(4, 2) = 4·3 = 12 xil. Ikki bosqich ko'paytiriladi: 210·12 = 2520. 840 javobi ikkinchi bosqichda faqat sardorni tanlab, yordamchini unutishdan chiqadi. Javob: 2520.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kombinatorik-ayniyat",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#0724783c"
+    },
+    {
+      "q": "Choyxona menyusida 8 xil taom bor. Ofitsiant kunlik taklif uchun ulardan 3 tasini tanlab, taxtaga ma'lum tartibda yozib qo'yadi. Nechta har xil ro'yxat chiqishi mumkin?",
+      "v": [
+        "56",
+        "512",
+        "24",
+        "336"
+      ],
+      "t": 3,
+      "izoh": "Taxtadagi tartib muhim, chunki birinchi yozilgan taom kunlik asosiy taklif bo'ladi. Demak o'rinlashtirish olinadi: A(8, 3) = 8·7·6 = 336. 56 javobi C(8, 3) bo'lib tartibni yo'qotadi, 512 = 8³ esa bir taomni ikki marta yozishga yo'l qo'yadi. Javob: 336.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tanlov",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#31d18246"
+    },
+    {
+      "q": "Sayohat agentligi 9 ta shaharni taklif qiladi. Zebo ulardan 4 tasini tanlab, qaysi biriga avval borishini ham belgilamoqchi. Nechta har xil marshrut tuzishi mumkin?",
+      "v": [
+        "126",
+        "6561",
+        "3024",
+        "36"
+      ],
+      "t": 2,
+      "izoh": "Shaharlarni ziyorat qilish ketma-ketligi muhim, demak o'rinlashtirish: A(9, 4) = 9·8·7·6 = 3024. 126 javobi C(9, 4) bo'lib, marshrut tartibini hisobga olmaydi. 6561 = 9⁴ esa bir shaharga ikki marta borishga yo'l qo'yadi. Javob: 3024.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tanlov",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#58dfb224"
+    },
+    {
+      "q": "Kasalxonada 6 nafar shifokor bor va har kunlik navbatchilikka ulardan 2 tasi qo'yiladi. Bir xil juftlik ikki marta takrorlanmasa, jadval necha kunga yetadi?",
+      "v": [
+        "15",
+        "30",
+        "12",
+        "36"
+      ],
+      "t": 0,
+      "izoh": "Navbatchi juftlikda kim birinchi yozilgani ahamiyatsiz, demak guruhlash: C(6, 2) = (6·5) : 2 = 15. Ya'ni jadval 15 kunga yetadi. 30 javobi A(6, 2) bo'lib, har juftni ikki marta sanaydi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tanlov",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#525aa55c"
+    },
+    {
+      "q": "Pitsa uchun 8 xil qo'shimcha taklif etiladi va xaridor ularning istalgan to'plamini, hatto bittasini ham olmasligi mumkin. Nechta har xil pitsa buyurtmasi bo'lishi mumkin?",
+      "v": [
+        "8",
+        "256",
+        "40320",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "Nol qo'shimchali, bitta, ikkita va hokazo to'plamlar soni C(8, 0) + C(8, 1) + … + C(8, 8) yig'indisiga teng. Bu yig'indi esa 2⁸ = 256 ga teng. 40320 javobi qo'shimchalarni qatorga tizib 8! ni olishdan, 64 esa 2⁶ ni hisoblashdan chiqadi. Javob: 256.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tanlov",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#295e31a0"
+    },
+    {
+      "q": "Tanga ketma-ket 7 marta tashlanadi. Aynan 2 martasida gerb tushishi nechta har xil ketma-ketlikda ro'y berishi mumkin?",
+      "v": [
+        "42",
+        "14",
+        "21",
+        "128"
+      ],
+      "t": 2,
+      "izoh": "Yettita tashlashdan qaysi ikkitasida gerb chiqqanini tanlash yetarli: C(7, 2) = (7·6) : 2 = 21. 42 javobi A(7, 2) bo'lib, bir juft tashlashni ikki marta sanaydi. 128 = 2⁷ esa barcha mumkin bo'lgan ketma-ketliklar sonidir. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "binom-hayotiy",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#e70ff0c8"
+    },
+    {
+      "q": "Omonatga qo'yilgan pul har yili 2 foizga ortadi. Nyuton binomining dastlabki uchta hadidan foydalanib (1,02)⁵ ning taqribiy qiymatini toping.",
+      "v": [
+        "1,104",
+        "1,1",
+        "1,004",
+        "1,14"
+      ],
+      "t": 0,
+      "izoh": "Yozamiz: (1 + 0,02)⁵ ≈ 1 + C(5, 1)·0,02 + C(5, 2)·0,02². Hisoblaymiz: 1 + 5·0,02 + 10·0,0004 = 1 + 0,1 + 0,004 = 1,104. 1,1 javobi uchinchi hadni tashlab ketish, 1,14 esa 0,02² ni 0,0004 o'rniga 0,004 deb olish natijasidir. Javob: 1,104.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "binom-hayotiy",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#18ccde63"
+    },
+    {
+      "q": "Sinfdagi 12 o'quvchidan tuzilishi mumkin bo'lgan barcha qism guruhlar soni C(12, 0) + C(12, 1) + … + C(12, 12) yig'indisiga teng. Bu son nechaga teng?",
+      "v": [
+        "144",
+        "2048",
+        "4096",
+        "4095"
+      ],
+      "t": 2,
+      "izoh": "Binomial koeffitsientlarning to'liq yig'indisi 2ⁿ ga teng, chunki (1 + 1)ⁿ shu yig'indini beradi. Bu yerda n = 12, demak 2¹² = 4096. 4095 javobi bo'sh guruhni chiqarib tashlashdan, 2048 = 2¹¹ esa darajani bir birlikka adashtirishdan chiqadi. Javob: 4096.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "binom-hayotiy",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#dd0e4ba2"
+    },
+    {
+      "q": "(a + b)¹⁰ yoyilmasida toq o'rinlarda turgan binomial koeffitsientlar yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "1024",
+        "0",
+        "256",
+        "512"
+      ],
+      "t": 3,
+      "izoh": "Barcha koeffitsientlar yig'indisi 2¹⁰ = 1024, toq va juft o'rindagilar yig'indilari esa o'zaro teng. Demak har biri 1024 : 2 = 512 ga teng. 0 javobi a = 1, b = −1 qo'yilganda chiqadigan ayirmani javob deb olish, 1024 esa hammasini qo'shib yuborish xatosidir. Javob: 512.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "binom-hayotiy",
+      "id": "matematika_disk_m10-orin-almashtirish-orinlashtirish-guruhlashlar-va#c736113c"
+    }
+  ]
+}

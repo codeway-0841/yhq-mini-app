@@ -1,0 +1,591 @@
+{
+  "nom": "Food & drink (Ovqat)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "What is this? 🍞",
+      "v": [
+        "Bread",
+        "Water",
+        "Milk",
+        "Egg"
+      ],
+      "t": 0,
+      "izoh": "🍞 = bread (non).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#68b31d34"
+    },
+    {
+      "q": "What is this? 🥛",
+      "v": [
+        "Tea",
+        "Milk",
+        "Rice",
+        "Fish"
+      ],
+      "t": 1,
+      "izoh": "🥛 = milk (sut).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#de87da1f"
+    },
+    {
+      "q": "What is this? 💧",
+      "v": [
+        "Meat",
+        "Cake",
+        "Water",
+        "Bread"
+      ],
+      "t": 2,
+      "izoh": "💧 = water (suv).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#5bf0d4a2"
+    },
+    {
+      "q": "What is this? 🥚",
+      "v": [
+        "Egg",
+        "Milk",
+        "Soup",
+        "Juice"
+      ],
+      "t": 0,
+      "izoh": "🥚 = egg (tuxum).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#95cbe953"
+    },
+    {
+      "q": "What is this? 🍚",
+      "v": [
+        "Bread",
+        "Rice",
+        "Water",
+        "Cheese"
+      ],
+      "t": 1,
+      "izoh": "🍚 = rice (guruch).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#755abfad"
+    },
+    {
+      "q": "What is this? 🐟",
+      "v": [
+        "Egg",
+        "Milk",
+        "Fish",
+        "Cake"
+      ],
+      "t": 2,
+      "izoh": "🐟 = fish (baliq).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#39550a8f"
+    },
+    {
+      "q": "What is this? 🍖",
+      "v": [
+        "Meat",
+        "Water",
+        "Tea",
+        "Bread"
+      ],
+      "t": 0,
+      "izoh": "🍖 = meat (go'sht).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#c01ee1e3"
+    },
+    {
+      "q": "What is this? 🧀",
+      "v": [
+        "Rice",
+        "Cheese",
+        "Juice",
+        "Soup"
+      ],
+      "t": 1,
+      "izoh": "🧀 = cheese (pishloq).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#4dc56981"
+    },
+    {
+      "q": "What is this? 🍰",
+      "v": [
+        "Fish",
+        "Egg",
+        "Cake",
+        "Milk"
+      ],
+      "t": 2,
+      "izoh": "🍰 = cake (tort).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#5308886e"
+    },
+    {
+      "q": "What is this? 🧃",
+      "v": [
+        "Juice",
+        "Bread",
+        "Meat",
+        "Rice"
+      ],
+      "t": 0,
+      "izoh": "🧃 = juice (sharbat).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#60a1d26f"
+    },
+    {
+      "q": "🍞 = ?",
+      "v": [
+        "bread",
+        "milk",
+        "egg",
+        "fish"
+      ],
+      "t": 0,
+      "izoh": "🍞 = bread (non).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#71e4407c"
+    },
+    {
+      "q": "You drink ___ when you are thirsty.",
+      "v": [
+        "bread",
+        "water",
+        "cheese",
+        "meat"
+      ],
+      "t": 1,
+      "izoh": "water = suv, chanqaganda ichasiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#81a6c7b5"
+    },
+    {
+      "q": "Cows give us ___.",
+      "v": [
+        "milk",
+        "juice",
+        "tea",
+        "honey"
+      ],
+      "t": 0,
+      "izoh": "Sigir bizga milk (sut) beradi.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#fe1097bf"
+    },
+    {
+      "q": "A hen gives us an ___.",
+      "v": [
+        "apple",
+        "egg",
+        "onion",
+        "ice"
+      ],
+      "t": 1,
+      "izoh": "Tovuq egg (tuxum) beradi.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#76bbac4f"
+    },
+    {
+      "q": "Bees make ___.",
+      "v": [
+        "honey",
+        "butter",
+        "cheese",
+        "bread"
+      ],
+      "t": 0,
+      "izoh": "Asalarilar honey (asal) tayyorlaydi.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#33279036"
+    },
+    {
+      "q": "Which one is white and sweet?",
+      "v": [
+        "salt",
+        "sugar",
+        "fish",
+        "tea"
+      ],
+      "t": 1,
+      "izoh": "sugar = shakar, oq va shirin.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#11886cd4"
+    },
+    {
+      "q": "Which one makes food salty?",
+      "v": [
+        "sugar",
+        "honey",
+        "salt",
+        "cake"
+      ],
+      "t": 2,
+      "izoh": "salt = tuz, taomni sho'r qiladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#3748228f"
+    },
+    {
+      "q": "Which one is a drink?",
+      "v": [
+        "bread",
+        "rice",
+        "juice",
+        "cheese"
+      ],
+      "t": 2,
+      "izoh": "juice = sharbat, ichimlik.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#2db7ba70"
+    },
+    {
+      "q": "Which one is sweet?",
+      "v": [
+        "salt",
+        "cake",
+        "fish",
+        "soup"
+      ],
+      "t": 1,
+      "izoh": "cake = tort, shirin.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#97ea46f5"
+    },
+    {
+      "q": "You spread ___ on bread.",
+      "v": [
+        "butter",
+        "water",
+        "rice",
+        "egg"
+      ],
+      "t": 0,
+      "izoh": "butter = sariyog', nonga suriladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#462338a8"
+    },
+    {
+      "q": "Which drink is usually served hot?",
+      "v": [
+        "tea",
+        "juice",
+        "water",
+        "apple juice"
+      ],
+      "t": 0,
+      "izoh": "tea = choy, odatda issiq ichiladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#83f49d90"
+    },
+    {
+      "q": "Fish live in ___.",
+      "v": [
+        "water",
+        "bread",
+        "cake",
+        "tea"
+      ],
+      "t": 0,
+      "izoh": "Baliq (fish) water (suv)da yashaydi.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#5cf29cd2"
+    },
+    {
+      "q": "Apple juice is made from ___.",
+      "v": [
+        "fish",
+        "apples",
+        "rice",
+        "salt"
+      ],
+      "t": 1,
+      "izoh": "apple juice = olma sharbati, olmadan olinadi.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#2bdaacde"
+    },
+    {
+      "q": "Which is a food, not a drink?",
+      "v": [
+        "milk",
+        "tea",
+        "bread",
+        "juice"
+      ],
+      "t": 2,
+      "izoh": "bread = non, bu taom, ichimlik emas.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#5a2c2bd4"
+    },
+    {
+      "q": "Which one can you eat?",
+      "v": [
+        "cheese",
+        "spoon",
+        "plate",
+        "fork"
+      ],
+      "t": 0,
+      "izoh": "cheese = pishloq, uni yeyish mumkin.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#179bbd15"
+    },
+    {
+      "q": "Soup is usually ___.",
+      "v": [
+        "hot",
+        "frozen",
+        "hard",
+        "dry"
+      ],
+      "t": 0,
+      "izoh": "soup = sho'rva, odatda issiq.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#2df4721c"
+    },
+    {
+      "q": "Which one is a sweet brown food?",
+      "v": [
+        "salt",
+        "chocolate",
+        "rice",
+        "egg"
+      ],
+      "t": 1,
+      "izoh": "chocolate = shokolad, jigarrang va shirin.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#d05d178d"
+    },
+    {
+      "q": "Rice is usually ___ in colour.",
+      "v": [
+        "white",
+        "blue",
+        "red",
+        "black"
+      ],
+      "t": 0,
+      "izoh": "rice = guruch, odatda oq rangda.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#92728dcb"
+    },
+    {
+      "q": "Which one comes from a chicken?",
+      "v": [
+        "egg",
+        "apple",
+        "bread",
+        "cheese"
+      ],
+      "t": 0,
+      "izoh": "Tuxum (egg) tovuqdan olinadi.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#cfdc4222"
+    },
+    {
+      "q": "Which drink is made from fruit?",
+      "v": [
+        "water",
+        "apple juice",
+        "tea",
+        "milk"
+      ],
+      "t": 1,
+      "izoh": "apple juice = mevadan (olmadan) tayyorlangan ichimlik.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#1a36e222"
+    },
+    {
+      "q": "You put ___ in tea to make it sweet.",
+      "v": [
+        "salt",
+        "sugar",
+        "fish",
+        "meat"
+      ],
+      "t": 1,
+      "izoh": "sugar = shakar, choyni shirin qiladi.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#406559c5"
+    },
+    {
+      "q": "Cheese is made from ___.",
+      "v": [
+        "milk",
+        "water",
+        "rice",
+        "salt"
+      ],
+      "t": 0,
+      "izoh": "Pishloq (cheese) sutdan (milk) tayyorlanadi.",
+      "qiy": "oson",
+      "id": "ing_kids_m11#75afbe14"
+    },
+    {
+      "q": "🥛 = ?",
+      "v": [
+        "tea",
+        "milk",
+        "juice",
+        "soup"
+      ],
+      "t": 1,
+      "izoh": "🥛 = milk (sut).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#bd4e75ea"
+    },
+    {
+      "q": "🍚 = ?",
+      "v": [
+        "rice",
+        "bread",
+        "meat",
+        "cake"
+      ],
+      "t": 0,
+      "izoh": "🍚 = rice (guruch).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#48ef886e"
+    },
+    {
+      "q": "🍗 = ?",
+      "v": [
+        "fish",
+        "cheese",
+        "chicken",
+        "bread"
+      ],
+      "t": 2,
+      "izoh": "🍗 = chicken (tovuq go'shti).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#a5fbe415"
+    },
+    {
+      "q": "🧀 = ?",
+      "v": [
+        "cheese",
+        "butter",
+        "cake",
+        "egg"
+      ],
+      "t": 0,
+      "izoh": "🧀 = cheese (pishloq).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#4a0acd69"
+    },
+    {
+      "q": "🍰 = ?",
+      "v": [
+        "biscuit",
+        "cake",
+        "bread",
+        "soup"
+      ],
+      "t": 1,
+      "izoh": "🍰 = cake (tort).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#c525bc9f"
+    },
+    {
+      "q": "🍪 = ?",
+      "v": [
+        "biscuit",
+        "cheese",
+        "cake",
+        "rice"
+      ],
+      "t": 0,
+      "izoh": "🍪 = biscuit (pechene).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#359a6417"
+    },
+    {
+      "q": "🥪 = ?",
+      "v": [
+        "soup",
+        "sandwich",
+        "salad",
+        "rice"
+      ],
+      "t": 1,
+      "izoh": "🥪 = sandwich (buterbrod).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#7f1b95f0"
+    },
+    {
+      "q": "🍫 = ?",
+      "v": [
+        "chocolate",
+        "honey",
+        "cheese",
+        "butter"
+      ],
+      "t": 0,
+      "izoh": "🍫 = chocolate (shokolad).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#2a8e7dd3"
+    },
+    {
+      "q": "🍯 = ?",
+      "v": [
+        "butter",
+        "jam",
+        "honey",
+        "sugar"
+      ],
+      "t": 2,
+      "izoh": "🍯 = honey (asal).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#282114bc"
+    },
+    {
+      "q": "🥚 = ?",
+      "v": [
+        "egg",
+        "fish",
+        "meat",
+        "rice"
+      ],
+      "t": 0,
+      "izoh": "🥚 = egg (tuxum).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#cbd15fc1"
+    },
+    {
+      "q": "🐟 = ?",
+      "v": [
+        "chicken",
+        "meat",
+        "fish",
+        "egg"
+      ],
+      "t": 2,
+      "izoh": "🐟 = fish (baliq).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#4823b765"
+    },
+    {
+      "q": "🍵 = ?",
+      "v": [
+        "tea",
+        "milk",
+        "water",
+        "juice"
+      ],
+      "t": 0,
+      "izoh": "🍵 = tea (choy).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#83f191e2"
+    },
+    {
+      "q": "🥤 = ?",
+      "v": [
+        "soup",
+        "juice",
+        "tea",
+        "milk"
+      ],
+      "t": 1,
+      "izoh": "🥤 = juice (sharbat).",
+      "qiy": "oson",
+      "id": "ing_kids_m11#8fc1e113"
+    }
+  ]
+}

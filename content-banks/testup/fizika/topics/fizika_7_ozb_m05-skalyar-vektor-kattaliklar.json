@@ -1,0 +1,456 @@
+{
+  "nom": "05-mavzu. Skalyar Vektor Kattaliklar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Skalyar kattaliklar deganda nima tushuniladi?",
+      "v": [
+        "Faqat son qiymati bilan aniqlanadigan kattaliklar",
+        "Yo'nalishga ega kattaliklar",
+        "Katta sonli kattaliklar",
+        "Kichik sonli kattaliklar"
+      ],
+      "t": 0,
+      "izoh": "Skalyar ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#e68d1d9e"
+    },
+    {
+      "q": "Qaysi kattalik skalyar kattalikka misol bo'lmaydi?",
+      "v": [
+        "tezlik",
+        "vaqt",
+        "temperatura",
+        "hajm"
+      ],
+      "t": 0,
+      "izoh": "Tezlik — vektor kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#27176323"
+    },
+    {
+      "q": "Skalyar kattaliklarga qaysilar kiradi?",
+      "v": [
+        "Uzunlik, yuza, hajm, vaqt, temperatura, zichlik, energiya",
+        "Kuch, tezlik, ko'chish",
+        "Faqat kuch",
+        "Faqat tezlik"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi ro'yxat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#bb5e0e20"
+    },
+    {
+      "q": "Vektor kattaliklar qanday aniqlanadi?",
+      "v": [
+        "Son qiymatlari va yo'nalishlari bilan",
+        "Faqat son qiymati bilan",
+        "Faqat yo'nalishi bilan",
+        "Faqat birligi bilan"
+      ],
+      "t": 0,
+      "izoh": "Vektor ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#f9f7f8fc"
+    },
+    {
+      "q": "Vektorning boshi qanday o'qiladi?",
+      "v": [
+        "birinchi o'qiladi",
+        "oxirida o'qiladi",
+        "o'qilmaydi",
+        "ikki marta o'qiladi"
+      ],
+      "t": 0,
+      "izoh": "AB vektor — A birinchi o'qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#1ad23e13"
+    },
+    {
+      "q": "Vektorning uzunligi deganda nima tushuniladi?",
+      "v": [
+        "Boshidan oxirigacha bo'lgan masofa",
+        "Vektorning qalinligi",
+        "Strelkaming uzunligi",
+        "Koordinata o'qi uzunligi"
+      ],
+      "t": 0,
+      "izoh": "Vektor uzunligi ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#7f3a7ff9"
+    },
+    {
+      "q": "Strelka vektorning qayeriga qo'yiladi va nimani ko'rsatadi?",
+      "v": [
+        "Oxiriga qo'yiladi va yo'nalishni ko'rsatadi",
+        "Boshiga qo'yiladi",
+        "O'rtasiga qo'yiladi",
+        "Qo'yilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Strelka oxirida — yo'nalish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#9ca1149a"
+    },
+    {
+      "q": "Kuch qanday vektor belgisi bilan ifodalanadi?",
+      "v": [
+        "F",
+        "s",
+        "t",
+        "m"
+      ],
+      "t": 0,
+      "izoh": "Kuch — F vektor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#1ed75f73"
+    },
+    {
+      "q": "Ko'chish qanday vektor belgisi bilan ifodalanadi?",
+      "v": [
+        "s",
+        "F",
+        "υ",
+        "m"
+      ],
+      "t": 0,
+      "izoh": "Ko'chish — s vektor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#075d4fcc"
+    },
+    {
+      "q": "Darslikdagi misolda avtobus qaysi yo'nalishda harakatlangan?",
+      "v": [
+        "Toshkent – Samarqand yo'nalishi",
+        "Toshkent – Farg'ona",
+        "Samarqand – Buxoro",
+        "Toshkent – Xiva"
+      ],
+      "t": 0,
+      "izoh": "75 km/h tezlik bilan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#ae2115c2"
+    },
+    {
+      "q": "Avtobus misolida qaysi kattaliklar vektor kattalikni bildiradi?",
+      "v": [
+        "Harakat yo'nalishi va tezligi",
+        "Vaqt va yo'l",
+        "Massa va vaqt",
+        "Tezlik va vaqt"
+      ],
+      "t": 0,
+      "izoh": "Yo'nalish va tezlik — vektor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#a0f47e62"
+    },
+    {
+      "q": "Avtobus misolida qaysi kattaliklar skalyar?",
+      "v": [
+        "Harakatlanish vaqti va bosib o'tgan yo'l",
+        "Tezlik va yo'nalish",
+        "Kuch va tezlik",
+        "Ko'chish"
+      ],
+      "t": 0,
+      "izoh": "Vaqt va yo'l — skalyar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#b88fbc01"
+    },
+    {
+      "q": "Ikki qopdagi un massalari 50 kg va 15 kg bo'lsa, birgalikdagi massasi qancha?",
+      "v": [
+        "65 kg",
+        "35 kg",
+        "750 kg",
+        "50 kg"
+      ],
+      "t": 0,
+      "izoh": "50 + 15 = 65 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#c80a40fa"
+    },
+    {
+      "q": "50 kg va 15 kg massalar orasidagi farq qancha?",
+      "v": [
+        "35 kg",
+        "65 kg",
+        "25 kg",
+        "15 kg"
+      ],
+      "t": 0,
+      "izoh": "50 − 15 = 35 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#e47c6843"
+    },
+    {
+      "q": "Skalyar kattaliklar ustida matematik amallar qanday bajariladi?",
+      "v": [
+        "Sonlar ustidagi amallar kabi",
+        "Vektor qoidalari bo'yicha",
+        "Bajarilmaydi",
+        "Faqat qo'shish"
+      ],
+      "t": 0,
+      "izoh": "Oddiy son amallari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#45fc000b"
+    },
+    {
+      "q": "Bir tomonga yo'nalgan ikki vektorni qo'shganda yig'indi vektor moduli qanday topiladi?",
+      "v": [
+        "c = a + b",
+        "c = a − b",
+        "c = a ∙ b",
+        "c = a/b"
+      ],
+      "t": 0,
+      "izoh": "Modullar qo'shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#bc374405"
+    },
+    {
+      "q": "Qarama-qarshi yo'nalgan ikki vektor yig'indisining moduli qanday topiladi?",
+      "v": [
+        "c = a − b",
+        "c = a + b",
+        "c = a ∙ b",
+        "c = 2a"
+      ],
+      "t": 0,
+      "izoh": "Modullar ayirmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#53f276f8"
+    },
+    {
+      "q": "Parallel vektorlarni qo'shishda birinchi qadam nima?",
+      "v": [
+        "Birining oxiri ikkinchisining boshiga mos tushadigan qilib ko'chiriladi",
+        "Vektorlar kesishtiriladi",
+        "Vektorlar ayiriladi",
+        "Strelkalar olib tashlanadi"
+      ],
+      "t": 0,
+      "izoh": "Ko'chirish qoidasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#c636a01d"
+    },
+    {
+      "q": "Qo'shiluvchi vektorlarning yig'indisi qanday topiladi?",
+      "v": [
+        "Birinchi vektor boshi bilan ikkinchi vektorning oxiriga o'tkazilgan vektor",
+        "Ikki vektor o'rtasidagi nuqta",
+        "Vektorlarning kesishmasi",
+        "Birinchi vektorning o'zi"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi vektor ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#dbf1e040"
+    },
+    {
+      "q": "Odam tanasining temperaturasi qanday kattalik?",
+      "v": [
+        "skalyar kattalik",
+        "vektor kattalik",
+        "yordamchi kattalik",
+        "hosilaviy birlik"
+      ],
+      "t": 0,
+      "izoh": "Termometr ko'rsatgan son — skalyar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#2180d127"
+    },
+    {
+      "q": "Temperaturani qaysi asbob bilan o'lchashadi?",
+      "v": [
+        "termometr",
+        "dinamometr",
+        "ampermetr",
+        "menzurka"
+      ],
+      "t": 0,
+      "izoh": "Termometr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#554565bd"
+    },
+    {
+      "q": "Vektor kattaliklar ustida amallar bajarish zarurati qayerdan kelib chiqqan?",
+      "v": [
+        "Hayotiy masalalarni yechish jarayonidan",
+        "Tasodifdan",
+        "Faqat nazariyadan",
+        "Eksport talabidan"
+      ],
+      "t": 0,
+      "izoh": "Hayotiy masalalardan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#6803b42e"
+    },
+    {
+      "q": "To'g'riga, chapga, o'ngga yo'l belgilari qaysi kattalikka misol?",
+      "v": [
+        "vektor kattalikka",
+        "skalyar kattalikka",
+        "yordamchi kattalikka",
+        "birlikka"
+      ],
+      "t": 0,
+      "izoh": "Yo'nalish bildiradi — vektor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#a414e827"
+    },
+    {
+      "q": "Zichlik qanday kattalik?",
+      "v": [
+        "skalyar",
+        "vektor",
+        "yordamchi",
+        "asosiy"
+      ],
+      "t": 0,
+      "izoh": "Zichlik skalyar kattaliklar ro'yxatida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#ba22c934"
+    },
+    {
+      "q": "Energiya qanday kattalik?",
+      "v": [
+        "skalyar",
+        "vektor",
+        "yordamchi",
+        "asosiy"
+      ],
+      "t": 0,
+      "izoh": "Energiya skalyar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#2b40a2b4"
+    },
+    {
+      "q": "Tezlik vektor belgisi bilan qanday ifodalanadi?",
+      "v": [
+        "υ",
+        "F",
+        "s",
+        "t"
+      ],
+      "t": 0,
+      "izoh": "Tezlik — υ vektor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#4ed5ebeb"
+    },
+    {
+      "q": "Avtobus misolida tezlik necha km/h edi?",
+      "v": [
+        "75 km/h",
+        "50 km/h",
+        "100 km/h",
+        "65 km/h"
+      ],
+      "t": 0,
+      "izoh": "75 km/h, 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#d480970b"
+    },
+    {
+      "q": "Vektor chizmada qanday tasvirlanadi?",
+      "v": [
+        "Boshi va oxirida strelka bo'lgan kesma ko'rinishida",
+        "Faqat nuqta bilan",
+        "Faqat chiziq bilan",
+        "Doira bilan"
+      ],
+      "t": 0,
+      "izoh": "Chizmada strelkali kesma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#2db02417"
+    },
+    {
+      "q": "Vektorning oxiri qaysi nuqta deyiladi?",
+      "v": [
+        "B nuqta",
+        "A nuqta",
+        "O nuqta",
+        "C nuqta"
+      ],
+      "t": 0,
+      "izoh": "AB vektorda B — oxir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#3fcb3130"
+    },
+    {
+      "q": "Fizik kattaliklar necha turga bo'linadi?",
+      "v": [
+        "Ikki turga: skalyar va vektor",
+        "Uch turga",
+        "To'rt turga",
+        "Yetti turga"
+      ],
+      "t": 0,
+      "izoh": "Skalyar va vektor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m05-skalyar-vektor-kattaliklar#39e11c9c"
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "nom": "12-mavzu. Massa Markazi Muvozanat Kuch Momenti",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Massa markazi nima?",
+      "v": [
+        "Jism yoki jismlar sistemasining barcha qismlari massalari to'plangandek tuyuladigan nuqta",
+        "Jismning eng og'ir qismi joylashgan nuqta",
+        "Jismning geometrik o'rtasidagi nuqta",
+        "Jismga kuch qo'yiladigan nuqta"
+      ],
+      "t": 0,
+      "izoh": "Massa markazi — barcha qismlar massalari to'plangandek tuyuladigan nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#bf0c4f1e"
+    },
+    {
+      "q": "Jismlarning massa markazlari ularning og'irlik markazlari bilan qanday joylashadi?",
+      "v": [
+        "Ustma-ust tushadi",
+        "Har doim turli nuqtalarda bo'ladi",
+        "Bir-biridan uzoqda bo'ladi",
+        "Simmetrik joylashadi"
+      ],
+      "t": 0,
+      "izoh": "Massa markazlari og'irlik markazlari bilan ustma-ust tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#22ec26c2"
+    },
+    {
+      "q": "Jismning barcha qismiga ta'sir etuvchi og'irlik kuchlarining teng ta'sir etuvchisi qayerdan o'tadi?",
+      "v": [
+        "Jismning og'irlik markazidan o'tuvchi to'g'ri chiziqda yotadi",
+        "Jismning eng yuqori nuqtasidan o'tadi",
+        "Jismning asosidan o'tadi",
+        "Jismning chetidan o'tadi"
+      ],
+      "t": 0,
+      "izoh": "Teng ta'sir etuvchi og'irlik markazidan o'tuvchi to'g'ri chiziqda yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#2f56550c"
+    },
+    {
+      "q": "Bir jinsli jism deganda qanday jism tushuniladi?",
+      "v": [
+        "Bir xil moddadan yasalgan, butun uzunligi bo'yicha ko'ndalang kesimi bir xil, zichligi tekis taqsimlangan jism",
+        "Faqat metall jism",
+        "Faqat geometrik shaklli jism",
+        "Har qanday yassi jism"
+      ],
+      "t": 0,
+      "izoh": "Bir jinsli jism — bir xil moddadan yasalgan, zichligi tekis taqsimlangan jism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#489806be"
+    },
+    {
+      "q": "To'g'ri geometrik shaklga ega bir jinsli jismlarning (shar, silindr, to'g'ri prizma) massa markazlari qayerda joylashadi?",
+      "v": [
+        "Ularning geometrik markazlari bilan ustma-ust tushadi",
+        "Jismning pastki qismida",
+        "Jismning yuqori qismida",
+        "Jismning chekkasida"
+      ],
+      "t": 0,
+      "izoh": "Bunday jismlarning massa markazi geometrik markaz bilan ustma-ust tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#3c830812"
+    },
+    {
+      "q": "Bir jinsli bo'lmagan yoki simmetriya markaziga ega bo'lmagan yassi jismning og'irlik markazini qanday aniqlash mumkin?",
+      "v": [
+        "Jismni ikki nuqtasidan navbatma-navbat osib, vertikal chiziqlar kesishishini topish orqali",
+        "Jismni tortib o'lchash orqali",
+        "Hisoblash orqali",
+        "Geometrik markazini chizish orqali"
+      ],
+      "t": 0,
+      "izoh": "Yassi jismni ikki nuqtasidan osib, vertikallar kesishmasidan og'irlik markazi topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#fcc49c51"
+    },
+    {
+      "q": "Muvozanat turlari necha xil bo'ladi?",
+      "v": [
+        "Uch xil: turg'un, turg'unmas va farqsiz",
+        "Ikki xil",
+        "To'rt xil",
+        "Besh xil"
+      ],
+      "t": 0,
+      "izoh": "Muvozanat turlari: turg'un, turg'unmas, farqsiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#989ae4c6"
+    },
+    {
+      "q": "Turg'un muvozanat nima?",
+      "v": [
+        "Jism muvozanatdan chiqarilib qo'yib yuborilganda uni dastlabki vaziyatiga qaytaruvchi kuch hosil bo'ladigan muvozanat",
+        "Jismni muvozanatdan yanada uzoqlashtiruvchi kuch hosil bo'ladigan muvozanat",
+        "Hech qanday kuch hosil bo'lmaydigan muvozanat",
+        "Jism har doim harakatlanadigan muvozanat"
+      ],
+      "t": 0,
+      "izoh": "Turg'un muvozanatda jismni dastlabki vaziyatiga qaytaruvchi kuch hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#a87a54a7"
+    },
+    {
+      "q": "Turg'unmas muvozanat nima?",
+      "v": [
+        "Jism muvozanatdan chiqarilib qo'yib yuborilganda uni dastlabki vaziyatdan yanada uzoqlashtiruvchi kuch hosil bo'ladigan muvozanat",
+        "Jismni dastlabki vaziyatga qaytaruvchi kuch hosil bo'ladigan muvozanat",
+        "Hech qanday kuch hosil bo'lmaydigan muvozanat",
+        "Jism aylanadigan muvozanat"
+      ],
+      "t": 0,
+      "izoh": "Turg'unmas muvozanatda jismni yanada uzoqlashtiruvchi kuch hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#4be35a09"
+    },
+    {
+      "q": "Farqsiz muvozanat nima?",
+      "v": [
+        "Jism muvozanatdan chiqarilib qo'yib yuborilganda uning vaziyatini o'zgartiradigan hech qanday kuch hosil bo'lmaydigan muvozanat",
+        "Jismni qaytaruvchi kuch hosil bo'ladigan muvozanat",
+        "Jismni uzoqlashtiruvchi kuch hosil bo'ladigan muvozanat",
+        "Jism qulab tushadigan muvozanat"
+      ],
+      "t": 0,
+      "izoh": "Farqsiz muvozanatda hech qanday kuch hosil bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#4a204924"
+    },
+    {
+      "q": "Jismning muvozanat vaziyati tayanch yuzasiga qanday bog'liq?",
+      "v": [
+        "Tayanch yuzasi qancha katta bo'lsa, muvozanat shunchalik barqaror bo'ladi",
+        "Tayanch yuzasi katta bo'lsa, muvozanat beqaror bo'ladi",
+        "Tayanch yuzasiga bog'liq emas",
+        "Tayanch yuzasi faqat farqsiz muvozanatga ta'sir qiladi"
+      ],
+      "t": 0,
+      "izoh": "Tayanch yuzasi katta bo'lgani sari muvozanat barqarorroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#3e84d207"
+    },
+    {
+      "q": "Jism ag'darilishining sababi nima?",
+      "v": [
+        "Og'irlik markazidan o'tkazilgan vertikal to'g'ri chiziq tayanch yuzasidan chiqib ketadi",
+        "Og'irlik markazi pastga tushadi",
+        "Tayanch yuzasi kattalashadi",
+        "Ishqalanish kuchi kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Vertikal chiziq tayanch yuzasidan chiqib ketsa, jism qulab tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#50fb216d"
+    },
+    {
+      "q": "Kuch yelkasi nima?",
+      "v": [
+        "Aylanish o'qidan kuchning ta'sir etish chizig'igacha bo'lgan eng qisqa masofa",
+        "Kuchning kattaligi",
+        "Aylanish o'qining uzunligi",
+        "Kuch ta'sir nuqtasi"
+      ],
+      "t": 0,
+      "izoh": "Kuch yelkasi — aylanish o'qidan kuch ta'sir chizig'igacha bo'lgan eng qisqa masofa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#6d5ab421"
+    },
+    {
+      "q": "Kuch yelkasi kuchning yo'nalishiga nisbatan qanday joylashadi?",
+      "v": [
+        "Tik holda",
+        "Parallel holda",
+        "45° burchak ostida",
+        "Ixtiyoriy burchak ostida"
+      ],
+      "t": 0,
+      "izoh": "Kuch yelkasi kuchning yo'nalishiga tik holda joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#b15e0b53"
+    },
+    {
+      "q": "Kuch momenti nima?",
+      "v": [
+        "Kuch va kuch yelkasining ko'paytmasi",
+        "Kuch va masofaning yig'indisi",
+        "Kuch va vaqtning ko'paytmasi",
+        "Kuch va tezlikning ko'paytmasi"
+      ],
+      "t": 0,
+      "izoh": "Kuch momenti M = F·l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#65640658"
+    },
+    {
+      "q": "Kuch momenti qanday formula bilan ifodalanadi va qanday harf bilan belgilanadi?",
+      "v": [
+        "M = F · l, M harfi bilan",
+        "M = F / l, M harfi bilan",
+        "M = F + l, M harfi bilan",
+        "M = F · t, N harfi bilan"
+      ],
+      "t": 0,
+      "izoh": "M = F·l, M harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#77e3ee23"
+    },
+    {
+      "q": "Kuch momentining o'lchov birligi XBSda qanday?",
+      "v": [
+        "N · m",
+        "N / m",
+        "J / s",
+        "kg · m/s"
+      ],
+      "t": 0,
+      "izoh": "[M] = N·m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#8d6b58eb"
+    },
+    {
+      "q": "Richag muvozanatda bo'lishi uchun kuchlar va kuch yelkalari orasida qanday munosabat o'rinli?",
+      "v": [
+        "F1 · l1 = F2 · l2",
+        "F1 / l1 = l2 / F2",
+        "F1 + l1 = F2 + l2",
+        "F1 · l2 = F2 · l1"
+      ],
+      "t": 0,
+      "izoh": "Richag muvozanat sharti: F1·l1 = F2·l2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#3b84cf66"
+    },
+    {
+      "q": "Richagning muvozanatda bo'lish shartini kim topgan?",
+      "v": [
+        "Arximed",
+        "Nyuton",
+        "Galiley",
+        "Guk"
+      ],
+      "t": 0,
+      "izoh": "F1·l1 = F2·l2 tenglikni Arximed topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#01f3eb32"
+    },
+    {
+      "q": "Kuch yelkasi necha marta kichik bo'lsa, muvozanat uchun qo'yiladigan kuch qanday bo'lishi kerak?",
+      "v": [
+        "Shuncha marta katta",
+        "Shuncha marta kichik",
+        "Bir xil",
+        "Ikki baravar kichik"
+      ],
+      "t": 0,
+      "izoh": "Kuch yelkasi necha marta kichik bo'lsa, kuch shuncha marta katta bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#b23412f0"
+    },
+    {
+      "q": "Darslikdagi tajribada richag o'ng tomoniga to'rt birlik masofada bitta yuk osilganda, muvozanat uchun ikki birlik masofaga nechta shunday yuk osish kerak?",
+      "v": [
+        "Ikkita",
+        "Bitta",
+        "To'rtta",
+        "Uchta"
+      ],
+      "t": 0,
+      "izoh": "B nuqtaga yana bir yuk osiladi, ya'ni ikkita yuk kerak (F1·l1 = F2·l2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#d1b53e0f"
+    },
+    {
+      "q": "Qo'zg'almas tayanch atrofida aylana oladigan eng oddiy qurilma nima deb ataladi?",
+      "v": [
+        "Richag",
+        "Blok",
+        "Vint",
+        "Chig'iriq"
+      ],
+      "t": 0,
+      "izoh": "Qo'zg'almas tayanch atrofida aylana oladigan eng oddiy qurilma — richag.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#5c3e767d"
+    },
+    {
+      "q": "Turmush va texnikada richag qoidasi asosida ishlaydigan asboblarga misollar qaysilar?",
+      "v": [
+        "Turli xildagi qaychilar, mix sug'uruvchi omburlar, shaynli tarozi",
+        "Dinamometr, sekundomer, termometr",
+        "Barometr, kran, val",
+        "Faqat tarozi"
+      ],
+      "t": 0,
+      "izoh": "Qaychilar, omburlar, shaynli tarozi richag qoidasida ishlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#bc5e2314"
+    },
+    {
+      "q": "Shaynli tarozi qanday richag hisoblanadi?",
+      "v": [
+        "Yelkalari teng bo'lgan richag",
+        "Yelkalari teng bo'lmagan richag",
+        "Kuch yelkasi nolga teng richag",
+        "Faqat bitta yelkali richag"
+      ],
+      "t": 0,
+      "izoh": "Shaynli tarozi yelkalari teng bo'lgan richag.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#9e4916e1"
+    },
+    {
+      "q": "Tarozi yelkalari turli uzunlikda olinsa, nimaga erishish mumkin?",
+      "v": [
+        "Kichik massali tarozi toshlari bilan katta massali jismlarni o'lchash mumkin",
+        "Faqat kichik jismlarni o'lchash mumkin",
+        "Tarozi ishdan chiqadi",
+        "Massani o'lchash imkonsiz bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Yelkalar turli uzunlikda bo'lsa, kichik toshlar bilan katta massalarni o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#16c6abe3"
+    },
+    {
+      "q": "Inson va hayvonlar tanasida richag tamoyilida ishlaydigan qismlarga misol qaysi?",
+      "v": [
+        "Qo'l va oyoq suyaklari mushaklar bilan birgalikda richag hosil qiladi",
+        "Yurak va o'pka",
+        "Miya va nervlar",
+        "Teri va soch"
+      ],
+      "t": 0,
+      "izoh": "Qo'l va oyoq suyaklari mushaklar bilan richag hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#c3cb2beb"
+    },
+    {
+      "q": "M1 kuch momenti richagni soat strelkasi yo'nalishida aylantirishga harakat qilsa, M2 kuch momenti uni qanday yo'nalishda aylantirishga harakat qiladi?",
+      "v": [
+        "Soat strelkasiga teskari yo'nalishda",
+        "Xuddi shu yo'nalishda",
+        "Aylantirmaydi",
+        "Vertikal yo'nalishda"
+      ],
+      "t": 0,
+      "izoh": "M1 va M2 richagni qarama-qarshi yo'nalishlarda aylantirishga harakat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#76b0d983"
+    },
+    {
+      "q": "Aylanish o'qiga ega jismning harakati faqat kuch kattaligiga bog'liqmi?",
+      "v": [
+        "Yo'q, kuchning yo'nalishiga ham bog'liq",
+        "Ha, faqat kattalikka bog'liq",
+        "Faqat jism massasiga bog'liq",
+        "Faqat ishqalanishga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Harakat kuch kattaligi bilan birga kuch yo'nalishiga ham bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#dd532d01"
+    },
+    {
+      "q": "Yuk mashinalari rul chambaragining diametri yengil avtomobillarnikidan nima uchun katta bo'ladi?",
+      "v": [
+        "Katta kuch momenti hosil qilish uchun kuch yelkasini oshirish zarur",
+        "Chiroyli ko'rinish uchun",
+        "Rul tez aylanishi uchun",
+        "Materiallarni tejash uchun"
+      ],
+      "t": 0,
+      "izoh": "Katta diametr kuch yelkasini oshirib, bir xil kuchda katta moment beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#c2e0d084"
+    },
+    {
+      "q": "Richag muvozanat shartida M1 = M2 bo'lishi nimani anglatadi?",
+      "v": [
+        "Ikkala kuch momentining son qiymatlari teng",
+        "Ikkala kuchning kattaliklari teng",
+        "Yelkalarning uzunliklari teng",
+        "Richagning massasi nolga teng"
+      ],
+      "t": 0,
+      "izoh": "F1·l1 = F2·l2 dan M1 = M2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#777c01ea"
+    },
+    {
+      "q": "Ta'sir yo'nalishi massa markazidan o'tuvchi kuch jismga qanday harakat beradi?",
+      "v": [
+        "Postupatel (siljima) harakat beradi",
+        "Aylanma harakat beradi",
+        "Hech qanday harakat bermaydi",
+        "Tebranma harakat beradi"
+      ],
+      "t": 0,
+      "izoh": "Massa markazidan o'tuvchi kuch jismga aylanish momenti bermaydi, faqat siljima harakat beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#c04428d2"
+    },
+    {
+      "q": "Kuch momenti 1 N·m deganda qanday holat tushuniladi?",
+      "v": [
+        "1 N kuch 1 m yelkada hosil qilgan moment",
+        "1 N kuch 1 s da hosil qilgan ish",
+        "1 kg jism 1 m ko'tarilgan ish",
+        "1 N kuchning 1 m yo'ldagi ishi"
+      ],
+      "t": 0,
+      "izoh": "M = F·l bo'yicha 1 N·m = 1 N · 1 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m12-massa-markazi-muvozanat-kuch-momenti#0ebede33"
+    }
+  ]
+}

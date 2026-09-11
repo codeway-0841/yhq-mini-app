@@ -1,0 +1,1506 @@
+{
+  "nom": "Bo'lishli va bo'lishsiz fe'llar",
+  "bolim": "Fe'l",
+  "savollar": [
+    {
+      "q": "Quyidagi javoblardan qaysisida bo'lishsiz shakl bor?",
+      "v": [
+        "kelib",
+        "keldi",
+        "oldi",
+        "yozmadi"
+      ],
+      "t": 3,
+      "izoh": "«yozmadi» fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Boshqalari mos emas: «keldi» va «oldi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan; «kelib» — ravishdosh shaklida turibdi, harakat inkor etilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#4a2bf46d"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida bo'lishsiz shakl bor?",
+      "v": [
+        "yozsa",
+        "olmadi",
+        "ishladi",
+        "kelsa"
+      ],
+      "t": 1,
+      "izoh": "«olmadi» fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Boshqalari mos emas: «yozsa» va «kelsa» — shart shaklida turibdi, lekin harakat inkor etilmagan; «ishladi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#7f14815c"
+    },
+    {
+      "q": "Qaysi javobdagi so'z bo'lishsiz shakl deb baholanadi?",
+      "v": [
+        "olmadi",
+        "kelsin",
+        "yozsin",
+        "ishladi"
+      ],
+      "t": 0,
+      "izoh": "«olmadi» fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Boshqalari mos emas: «ishladi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan; «kelsin» va «yozsin» — buyruq shaklida turibdi, lekin harakat inkor etilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#23c27276"
+    },
+    {
+      "q": "Quyidagilarning qaysisida bo'lishsiz shakl berilgan?",
+      "v": [
+        "boradi",
+        "keldi",
+        "aytdi",
+        "yozmadi"
+      ],
+      "t": 3,
+      "izoh": "«yozmadi» fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Boshqalari mos emas: «boradi», «keldi» va «aytdi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#6dc569ff"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida bo'lishsiz shakl berilgan?",
+      "v": [
+        "yozadi",
+        "yozmaydi",
+        "kelsin",
+        "yozdi"
+      ],
+      "t": 1,
+      "izoh": "«yozmaydi» — bo'lishsiz shakl: u fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Qolgan javoblar boshqa guruhga oid: «yozadi», «kelsin» va «yozdi» — bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#1290457c"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida bo'lishsiz shakl berilgan?",
+      "v": [
+        "yozdi",
+        "yozadi",
+        "yozmasin",
+        "kelsa"
+      ],
+      "t": 2,
+      "izoh": "«yozmasin» — bo'lishsiz shakl: u buyruq shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan. Qolgan javoblar boshqa guruhga oid: «yozdi», «yozadi» va «kelsa» — bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#514fe34d"
+    },
+    {
+      "q": "Quyidagilardan qaysisi bo'lishsiz shaklga misol bo'la oladi?",
+      "v": [
+        "yozmasin",
+        "yozsa",
+        "oldi",
+        "yozadi"
+      ],
+      "t": 0,
+      "izoh": "«yozmasin» — bo'lishsiz shakl: u buyruq shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan. Qolgan javoblar boshqa guruhga oid: «yozadi», «yozsa» va «oldi» — bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#45468549"
+    },
+    {
+      "q": "Berilganlardan qaysisi bo'lishsiz shakl hisoblanadi?",
+      "v": [
+        "kelib",
+        "yozsa",
+        "kelmay",
+        "aytdi"
+      ],
+      "t": 2,
+      "izoh": "«kelmay» — bo'lishsiz shakl: u ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan. Qolgan javoblar boshqa guruhga oid: «kelib», «yozsa» va «aytdi» — bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#0f738ade"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida bo'lishli shakl berilgan?",
+      "v": [
+        "olmadi",
+        "o'qimadi",
+        "kelmay",
+        "yozsin"
+      ],
+      "t": 3,
+      "izoh": "«yozsin» — bo'lishli shakl: u buyruq shaklida turibdi, lekin harakat inkor etilmagan. Qolgan javoblar boshqa guruhga oid: «olmadi», «o'qimadi» va «kelmay» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#db95c90d"
+    },
+    {
+      "q": "Quyidagilardan qaysisi bo'lishli shaklga misol bo'la oladi?",
+      "v": [
+        "oldi",
+        "ko'rmasdan",
+        "o'qimaydi",
+        "aytmay"
+      ],
+      "t": 0,
+      "izoh": "«oldi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan javoblar boshqa guruhga oid: «ko'rmasdan», «o'qimaydi» va «aytmay» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#0d28f9e5"
+    },
+    {
+      "q": "Berilganlardan qaysisi bo'lishli shakl hisoblanadi?",
+      "v": [
+        "kelmasin",
+        "ishlamadi",
+        "yozmadi",
+        "aytdi"
+      ],
+      "t": 3,
+      "izoh": "«aytdi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan javoblar boshqa guruhga oid: «kelmasin», «ishlamadi» va «yozmadi» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#c808e601"
+    },
+    {
+      "q": "Qaysi javobdagi so'z bo'lishli shakl sanaladi?",
+      "v": [
+        "bormagan",
+        "aytmay",
+        "aytmadi",
+        "aytdi"
+      ],
+      "t": 3,
+      "izoh": "«aytdi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan javoblar boshqa guruhga oid: «bormagan», «aytmay» va «aytmadi» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#875320c5"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "ishladi",
+        "ko'rmasdan",
+        "kelmasin",
+        "o'qimadi"
+      ],
+      "t": 0,
+      "izoh": "«ishladi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan uchtasi esa bo'lishsiz shakl: «kelmasin» — buyruq shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan; «ko'rmasdan» — ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan; «o'qimadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#94697e58"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "bormaydi",
+        "kelmadi",
+        "ko'rgan",
+        "yozmadi"
+      ],
+      "t": 2,
+      "izoh": "«ko'rgan» — bo'lishli shakl: u o'tgan zamon shaklida turibdi, harakat inkor etilmagan. Qolgan uchtasi esa bo'lishsiz shakl: «bormaydi», «kelmadi» va «yozmadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#5f6dbb72"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "keladi",
+        "yozdi",
+        "aytdi",
+        "bormagan"
+      ],
+      "t": 3,
+      "izoh": "«bormagan» — bo'lishsiz shakl: u o'tgan zamon shaklida «-ma» asosdan keyin turib, harakatni inkor etgan. Qolgan uchtasi esa bo'lishli shakl: «keladi», «yozdi» va «aytdi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#89bc906d"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "bormagan",
+        "kelsin",
+        "olmadi",
+        "yozmaydi"
+      ],
+      "t": 1,
+      "izoh": "«kelsin» — bo'lishli shakl: u buyruq shaklida turibdi, lekin harakat inkor etilmagan. Qolgan uchtasi esa bo'lishsiz shakl: «bormagan» — o'tgan zamon shaklida «-ma» asosdan keyin turib, harakatni inkor etgan; «olmadi» va «yozmaydi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#588806de"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "yozdi",
+        "keladi",
+        "yozmasin",
+        "keldi"
+      ],
+      "t": 2,
+      "izoh": "«yozmasin» — bo'lishsiz shakl: u buyruq shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan. Qolgan uchtasi esa bo'lishli shakl: «keladi», «yozdi» va «keldi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#86f6bbec"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "o'qimaydi",
+        "kelmasin",
+        "kelsa",
+        "yozmasin"
+      ],
+      "t": 2,
+      "izoh": "«kelsa» — bo'lishli shakl: u shart shaklida turibdi, lekin harakat inkor etilmagan. Qolgan uchtasi esa bo'lishsiz shakl: «o'qimaydi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan; «kelmasin» va «yozmasin» — buyruq shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#3f61c1bb"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "yozsa",
+        "bormagan",
+        "yozmadi",
+        "ko'rmasdan"
+      ],
+      "t": 0,
+      "izoh": "«yozsa» — bo'lishli shakl: u shart shaklida turibdi, lekin harakat inkor etilmagan. Qolgan uchtasi esa bo'lishsiz shakl: «bormagan» — o'tgan zamon shaklida «-ma» asosdan keyin turib, harakatni inkor etgan; «yozmadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan; «ko'rmasdan» — ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#d935ca87"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "yozsin",
+        "aytmay",
+        "keladi",
+        "kelib"
+      ],
+      "t": 1,
+      "izoh": "«aytmay» — bo'lishsiz shakl: u ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan. Qolgan uchtasi esa bo'lishli shakl: «yozsin» — buyruq shaklida turibdi, lekin harakat inkor etilmagan; «keladi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan; «kelib» — ravishdosh shaklida turibdi, harakat inkor etilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#e43c9530"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "ko'rmagan",
+        "yozmasin",
+        "oldi",
+        "ko'rmadi"
+      ],
+      "t": 2,
+      "izoh": "«oldi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan uchtasi esa bo'lishsiz shakl: «yozmasin» — buyruq shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan; «ko'rmagan» — o'tgan zamon shaklida «-ma» asosdan keyin turib, harakatni inkor etgan; «ko'rmadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#6d20ca09"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "yozmaydi",
+        "yozmadi",
+        "aytdi",
+        "o'qimadi"
+      ],
+      "t": 2,
+      "izoh": "«aytdi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan uchtasi esa bo'lishsiz shakl: «yozmaydi», «yozmadi» va «o'qimadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#898d065c"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "aytdi",
+        "kelmay",
+        "ko'rmagan",
+        "yozmaydi"
+      ],
+      "t": 0,
+      "izoh": "«aytdi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan uchtasi esa bo'lishsiz shakl: «ko'rmagan» — o'tgan zamon shaklida «-ma» asosdan keyin turib, harakatni inkor etgan; «kelmay» — ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan; «yozmaydi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#1bea67ee"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "kelsa",
+        "kelmadi",
+        "yozsa",
+        "yozdi"
+      ],
+      "t": 1,
+      "izoh": "«kelmadi» — bo'lishsiz shakl: u fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Qolgan uchtasi esa bo'lishli shakl: «kelsa» va «yozsa» — shart shaklida turibdi, lekin harakat inkor etilmagan; «yozdi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#8f647415"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "yozmaydi",
+        "kelmasin",
+        "aytmadi",
+        "aytdi"
+      ],
+      "t": 3,
+      "izoh": "«aytdi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan uchtasi esa bo'lishsiz shakl: «yozmaydi» va «aytmadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan; «kelmasin» — buyruq shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#df1ac1c2"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "ko'rdi",
+        "bormagan",
+        "ko'rgan",
+        "yozdi"
+      ],
+      "t": 1,
+      "izoh": "«bormagan» — bo'lishsiz shakl: u o'tgan zamon shaklida «-ma» asosdan keyin turib, harakatni inkor etgan. Qolgan uchtasi esa bo'lishli shakl: «ko'rdi» va «yozdi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan; «ko'rgan» — o'tgan zamon shaklida turibdi, harakat inkor etilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#abbd422c"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "yozmadi",
+        "o'qidi",
+        "yozmasin",
+        "ko'rmadi"
+      ],
+      "t": 1,
+      "izoh": "«o'qidi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan uchtasi esa bo'lishsiz shakl: «yozmadi» va «ko'rmadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan; «yozmasin» — buyruq shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#05973cd3"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "keladi",
+        "ko'rmasdan",
+        "o'qidi",
+        "yozsin"
+      ],
+      "t": 1,
+      "izoh": "«ko'rmasdan» — bo'lishsiz shakl: u ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan. Qolgan uchtasi esa bo'lishli shakl: «keladi» va «o'qidi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan; «yozsin» — buyruq shaklida turibdi, lekin harakat inkor etilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#4eef6f6b"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "o'qimaydi",
+        "kelsa",
+        "borgan",
+        "o'qidi"
+      ],
+      "t": 0,
+      "izoh": "«o'qimaydi» — bo'lishsiz shakl: u fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Qolgan uchtasi esa bo'lishli shakl: «o'qidi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan; «kelsa» — shart shaklida turibdi, lekin harakat inkor etilmagan; «borgan» — o'tgan zamon shaklida turibdi, harakat inkor etilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#31e3233d"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "aytmay",
+        "ko'rmasdan",
+        "yozmadi",
+        "kelsa"
+      ],
+      "t": 3,
+      "izoh": "«kelsa» — bo'lishli shakl: u shart shaklida turibdi, lekin harakat inkor etilmagan. Qolgan uchtasi esa bo'lishsiz shakl: «aytmay» va «ko'rmasdan» — ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan; «yozmadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#51fc1f19"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "o'qimadi",
+        "kelmay",
+        "aytmadi",
+        "aytib"
+      ],
+      "t": 3,
+      "izoh": "«aytib» — bo'lishli shakl: u ravishdosh shaklida turibdi, harakat inkor etilmagan. Qolgan uchtasi esa bo'lishsiz shakl: «o'qimadi» va «aytmadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan; «kelmay» — ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#b5021cc9"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "kelmadi",
+        "bormagan",
+        "aytmadi",
+        "ko'rdi"
+      ],
+      "t": 3,
+      "izoh": "«ko'rdi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan uchtasi esa bo'lishsiz shakl: «kelmadi» va «aytmadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan; «bormagan» — o'tgan zamon shaklida «-ma» asosdan keyin turib, harakatni inkor etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#020e71fb"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "ko'rgan",
+        "ko'rdi",
+        "kelmadi",
+        "kelib"
+      ],
+      "t": 2,
+      "izoh": "«kelmadi» — bo'lishsiz shakl: u fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Qolgan uchtasi esa bo'lishli shakl: «ko'rgan» — o'tgan zamon shaklida turibdi, harakat inkor etilmagan; «ko'rdi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan; «kelib» — ravishdosh shaklida turibdi, harakat inkor etilmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#295604e4"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "yozsa",
+        "aytmay",
+        "bormaydi",
+        "o'qimadi"
+      ],
+      "t": 0,
+      "izoh": "«yozsa» — bo'lishli shakl: u shart shaklida turibdi, lekin harakat inkor etilmagan. Qolgan uchtasi esa bo'lishsiz shakl: «aytmay» — ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan; «bormaydi» va «o'qimadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#d7c9e8f4"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "yozmaydi",
+        "aytdi",
+        "ishlamadi",
+        "kelmasa"
+      ],
+      "t": 1,
+      "izoh": "«aytdi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan uchtasi esa bo'lishsiz shakl: «yozmaydi» va «ishlamadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan; «kelmasa» — shart shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#6d8390dc"
+    },
+    {
+      "q": "Qaysi fe'lda harakat inkor etilmagan?",
+      "v": [
+        "ko'rdi",
+        "kelmasa",
+        "bormaydi",
+        "ko'rmagan"
+      ],
+      "t": 0,
+      "izoh": "«ko'rdi» harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Boshqalari mos emas: «kelmasa» — shart shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan; «bormaydi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan; «ko'rmagan» — o'tgan zamon shaklida «-ma» asosdan keyin turib, harakatni inkor etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#460eeb1f"
+    },
+    {
+      "q": "Quyidagilardan qaysisida «-ma» qo'shimchasi qatnashmagan?",
+      "v": [
+        "kelsin",
+        "olmadi",
+        "yozmasin",
+        "o'qimaydi"
+      ],
+      "t": 0,
+      "izoh": "«kelsin» buyruq shaklida turibdi, lekin harakat inkor etilmagan. Boshqalari mos emas: «yozmasin» — buyruq shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan; «olmadi» va «o'qimaydi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#543b072e"
+    },
+    {
+      "q": "Quyidagilardan qaysisida «-ma» qo'shimchasi qatnashmagan?",
+      "v": [
+        "borgan",
+        "o'qimadi",
+        "kelmadi",
+        "ko'rmagan"
+      ],
+      "t": 0,
+      "izoh": "«borgan» o'tgan zamon shaklida turibdi, harakat inkor etilmagan. Boshqalari mos emas: «kelmadi» va «o'qimadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan; «ko'rmagan» — o'tgan zamon shaklida «-ma» asosdan keyin turib, harakatni inkor etgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#45b52138"
+    },
+    {
+      "q": "Qaysi javobdagi so'z bo'lishli shakl deb baholanadi?",
+      "v": [
+        "aytmay",
+        "o'qimaydi",
+        "bormaydi",
+        "aytib"
+      ],
+      "t": 3,
+      "izoh": "«aytib» ravishdosh shaklida turibdi, harakat inkor etilmagan. Boshqalari mos emas: «aytmay» — ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan; «o'qimaydi» va «bormaydi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#13372430"
+    },
+    {
+      "q": "Berilganlardan qaysisi bo'lishli shakl hisoblanadi?",
+      "v": [
+        "kelmasin",
+        "aytmay",
+        "yozmasa",
+        "keldi"
+      ],
+      "t": 3,
+      "izoh": "«keldi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan javoblar boshqa guruhga oid: «kelmasin», «aytmay» va «yozmasa» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#b6705c8e"
+    },
+    {
+      "q": "Qaysi so'z bo'lishsiz shakl deb baholanadi?",
+      "v": [
+        "kelib",
+        "ko'rgan",
+        "kelmay",
+        "keldi"
+      ],
+      "t": 2,
+      "izoh": "«kelmay» — bo'lishsiz shakl: u ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan. Qolgan javoblar boshqa guruhga oid: «ko'rgan», «kelib» va «keldi» — bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#09a14028"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida bo'lishli shakl berilgan?",
+      "v": [
+        "ko'rmasdan",
+        "yozmadi",
+        "yozadi",
+        "kelmasa"
+      ],
+      "t": 2,
+      "izoh": "«yozadi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan javoblar boshqa guruhga oid: «ko'rmasdan», «yozmadi» va «kelmasa» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#8d8c3697"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida bo'lishli shakl berilgan?",
+      "v": [
+        "ko'rmagan",
+        "ishlamadi",
+        "ko'rdi",
+        "yozmasin"
+      ],
+      "t": 2,
+      "izoh": "«ko'rdi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan javoblar boshqa guruhga oid: «ko'rmagan», «ishlamadi» va «yozmasin» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#e6c36de5"
+    },
+    {
+      "q": "Quyidagilardan qaysisi bo'lishsiz shaklga misol bo'la oladi?",
+      "v": [
+        "borgan",
+        "kelsin",
+        "o'qidi",
+        "aytmay"
+      ],
+      "t": 3,
+      "izoh": "«aytmay» — bo'lishsiz shakl: u ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan. Qolgan javoblar boshqa guruhga oid: «borgan», «kelsin» va «o'qidi» — bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#3b36f7b1"
+    },
+    {
+      "q": "Qaysi javobdagi so'z bo'lishsiz shakl sanaladi?",
+      "v": [
+        "yozadi",
+        "o'qidi",
+        "yozdi",
+        "ko'rmadi"
+      ],
+      "t": 3,
+      "izoh": "«ko'rmadi» — bo'lishsiz shakl: u fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Qolgan javoblar boshqa guruhga oid: «o'qidi», «yozdi» va «yozadi» — bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#204f16c1"
+    },
+    {
+      "q": "Berilganlardan qaysisi bo'lishli shakl hisoblanadi?",
+      "v": [
+        "ko'rmadi",
+        "yozmadi",
+        "yozmasin",
+        "keladi"
+      ],
+      "t": 3,
+      "izoh": "«keladi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan javoblar boshqa guruhga oid: «ko'rmadi», «yozmasin» va «yozmadi» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#a7d505e9"
+    },
+    {
+      "q": "Qaysi javobdagi so'z bo'lishli shakl sanaladi?",
+      "v": [
+        "olmadi",
+        "yozmasin",
+        "o'qimaydi",
+        "aytib"
+      ],
+      "t": 3,
+      "izoh": "«aytib» — bo'lishli shakl: u ravishdosh shaklida turibdi, harakat inkor etilmagan. Qolgan javoblar boshqa guruhga oid: «yozmasin», «o'qimaydi» va «olmadi» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#c48f3f4d"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida bo'lishsiz shakl berilgan?",
+      "v": [
+        "ishladi",
+        "kelmadi",
+        "kelsin",
+        "boradi"
+      ],
+      "t": 1,
+      "izoh": "«kelmadi» — bo'lishsiz shakl: u fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Qolgan javoblar boshqa guruhga oid: «ishladi», «kelsin» va «boradi» — bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#aefe596a"
+    },
+    {
+      "q": "Qaysi javobdagi so'z bo'lishsiz shakl sanaladi?",
+      "v": [
+        "borgan",
+        "yozsa",
+        "boradi",
+        "aytmadi"
+      ],
+      "t": 3,
+      "izoh": "«aytmadi» — bo'lishsiz shakl: u fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Qolgan javoblar boshqa guruhga oid: «yozsa», «boradi» va «borgan» — bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#8bdd0f64"
+    },
+    {
+      "q": "Quyidagilardan qaysisi bo'lishli shaklga misol bo'la oladi?",
+      "v": [
+        "yozmasa",
+        "kelmasin",
+        "ko'rgan",
+        "yozmaydi"
+      ],
+      "t": 2,
+      "izoh": "«ko'rgan» — bo'lishli shakl: u o'tgan zamon shaklida turibdi, harakat inkor etilmagan. Qolgan javoblar boshqa guruhga oid: «yozmasa», «kelmasin» va «yozmaydi» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#43c2bf08"
+    },
+    {
+      "q": "Qaysi javobdagi so'z bo'lishsiz shakl sanaladi?",
+      "v": [
+        "oldi",
+        "kelmay",
+        "kelsin",
+        "kelsa"
+      ],
+      "t": 1,
+      "izoh": "«kelmay» — bo'lishsiz shakl: u ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan. Qolgan javoblar boshqa guruhga oid: «oldi», «kelsa» va «kelsin» — bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#db5aa64c"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham bo'lishli shaklga misol bo'ladi?",
+      "v": [
+        "keladi, o'qidi, kelsa",
+        "yozmaydi, ko'rgan, boradi",
+        "bormaydi, borgan, yozdi",
+        "yozsa, kelib, o'qimadi"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham bo'lishli shakl: «keladi» va «o'qidi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan; «kelsa» — shart shaklida turibdi, lekin harakat inkor etilmagan. Qolgan qatorlarga begona so'z aralashgan: «yozmaydi», «bormaydi» va «o'qimadi» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#9a4a6541"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq bo'lishsiz shaklga oid?",
+      "v": [
+        "olmadi, oldi, bormaydi",
+        "yozsa, o'qimaydi, kelmay",
+        "bormaydi, bormagan, o'qimadi",
+        "yozmadi, yozmaydi, boradi"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri qatordagi uchala so'z ham bo'lishsiz shakl: «bormaydi» va «o'qimadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan; «bormagan» — o'tgan zamon shaklida «-ma» asosdan keyin turib, harakatni inkor etgan. Qolgan qatorlarga begona so'z aralashgan: «oldi», «yozsa» va «boradi» — bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#5848d1e9"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar bo'lishli shakl sanaladi?",
+      "v": [
+        "aytib, kelsin, borgan",
+        "kelsa, aytmay, ishladi",
+        "ko'rgan, ko'rmadi, yozsin",
+        "kelmasin, ko'rdi, borgan"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham bo'lishli shakl: «aytib» — ravishdosh shaklida turibdi, harakat inkor etilmagan; «kelsin» — buyruq shaklida turibdi, lekin harakat inkor etilmagan; «borgan» — o'tgan zamon shaklida turibdi, harakat inkor etilmagan. Qolgan qatorlarga begona so'z aralashgan: «aytmay», «ko'rmadi» va «kelmasin» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#8fdc6eae"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar bo'lishsiz shakl sanaladi?",
+      "v": [
+        "o'qidi, aytmay, kelmadi",
+        "bormagan, kelmay, ishlamadi",
+        "ishlamadi, bormaydi, yozdi",
+        "kelmasin, yozmadi, yozsa"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham bo'lishsiz shakl: «bormagan» — o'tgan zamon shaklida «-ma» asosdan keyin turib, harakatni inkor etgan; «kelmay» — ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan; «ishlamadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Qolgan qatorlarga begona so'z aralashgan: «o'qidi», «yozsa» va «yozdi» — bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#cbc36f7e"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar bo'lishli shakl sanaladi?",
+      "v": [
+        "ko'rdi, kelsin, aytdi",
+        "aytmay, ishladi, boradi",
+        "kelsin, yozmasin, kelib",
+        "keladi, yozmadi, kelsin"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham bo'lishli shakl: «ko'rdi» va «aytdi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan; «kelsin» — buyruq shaklida turibdi, lekin harakat inkor etilmagan. Qolgan qatorlarga begona so'z aralashgan: «yozmadi», «aytmay» va «yozmasin» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#f66bef29"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham bo'lishli shaklga misol bo'ladi?",
+      "v": [
+        "ko'rmadi, ko'rgan, kelsa",
+        "keladi, yozsa, kelsa",
+        "yozsa, kelib, o'qimaydi",
+        "kelmadi, borgan, yozsa"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham bo'lishli shakl: «keladi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan; «yozsa» va «kelsa» — shart shaklida turibdi, lekin harakat inkor etilmagan. Qolgan qatorlarga begona so'z aralashgan: «ko'rmadi», «o'qimaydi» va «kelmadi» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#b0f042c5"
+    },
+    {
+      "q": "Qaysi qatorda faqat bo'lishsiz shakl berilgan?",
+      "v": [
+        "yozdi, o'qimaydi, ko'rmadi",
+        "yozmasin, ko'rmagan, yozmasa",
+        "o'qimadi, borgan, kelmasin",
+        "ishlamadi, bormaydi, oldi"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham bo'lishsiz shakl: «yozmasin» — buyruq shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan; «ko'rmagan» — o'tgan zamon shaklida «-ma» asosdan keyin turib, harakatni inkor etgan; «yozmasa» — shart shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan. Qolgan qatorlarga begona so'z aralashgan: «yozdi», «borgan» va «oldi» — bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#1552a4e7"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq bo'lishli shaklga oid?",
+      "v": [
+        "yozmadi, o'qidi, ishladi",
+        "aytib, yozmasa, borgan",
+        "ishladi, yozsin, aytmay",
+        "yozdi, yozsin, keladi"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham bo'lishli shakl: «yozdi» va «keladi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan; «yozsin» — buyruq shaklida turibdi, lekin harakat inkor etilmagan. Qolgan qatorlarga begona so'z aralashgan: «yozmasa», «aytmay» va «yozmadi» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#94a25089"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham bo'lishli shaklga misol bo'ladi?",
+      "v": [
+        "kelmasa, kelsa, yozsa",
+        "aytdi, kelib, kelmadi",
+        "keladi, aytib, keldi",
+        "yozsin, aytmay, aytdi"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri qatordagi uchala so'z ham bo'lishli shakl: «keladi» va «keldi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan; «aytib» — ravishdosh shaklida turibdi, harakat inkor etilmagan. Qolgan qatorlarga begona so'z aralashgan: «kelmasa», «kelmadi» va «aytmay» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#da9f4a2d"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham bo'lishli shaklga misol bo'ladi?",
+      "v": [
+        "aytdi, yozadi, bormagan",
+        "kelmay, o'qidi, aytdi",
+        "o'qidi, yozmasin, boradi",
+        "kelsa, ishladi, boradi"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham bo'lishli shakl: «kelsa» — shart shaklida turibdi, lekin harakat inkor etilmagan; «ishladi» va «boradi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan qatorlarga begona so'z aralashgan: «bormagan», «kelmay» va «yozmasin» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#8d9374ae"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham bo'lishsiz shaklga misol bo'ladi?",
+      "v": [
+        "kelsin, bormaydi, yozmasa",
+        "ko'rdi, aytmadi, yozmadi",
+        "yozmaydi, ishlamadi, o'qimadi",
+        "ishlamadi, borgan, aytmadi"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri qatordagi uchala so'z ham bo'lishsiz shakl: «yozmaydi», «ishlamadi» va «o'qimadi» — fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Qolgan qatorlarga begona so'z aralashgan: «kelsin», «ko'rdi» va «borgan» — bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#69f4a38e"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham bo'lishli shaklga misol bo'ladi?",
+      "v": [
+        "o'qidi, ishladi, aytib",
+        "aytmadi, ishladi, yozsa",
+        "ko'rdi, kelsin, o'qimaydi",
+        "yozsin, yozmasa, ko'rgan"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham bo'lishli shakl: «o'qidi» va «ishladi» — harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan; «aytib» — ravishdosh shaklida turibdi, harakat inkor etilmagan. Qolgan qatorlarga begona so'z aralashgan: «o'qimaydi», «aytmadi» va «yozmasa» — bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#b55123de"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«aytib» — bo'lishsiz shakl",
+        "«ko'rmagan» — bo'lishli shakl",
+        "«ko'rdi» — bo'lishli shakl",
+        "«kelmay» — bo'lishli shakl"
+      ],
+      "t": 2,
+      "izoh": "«ko'rdi» — bo'lishli shakl, chunki u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Boshqa javoblarda baho chalkashtirilgan: «aytib» aslida bo'lishli shakl; «ko'rmagan» va «kelmay» aslida bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#a949d523"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«kelib» — bo'lishsiz shakl",
+        "«yozdi» — bo'lishli shakl",
+        "«yozmasin» — bo'lishli shakl",
+        "«yozmasa» — bo'lishli shakl"
+      ],
+      "t": 1,
+      "izoh": "«yozdi» — bo'lishli shakl, chunki u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Boshqa javoblarda baho chalkashtirilgan: «kelib» aslida bo'lishli shakl; «yozmasin» va «yozmasa» aslida bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#571f0a6a"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«yozadi» — bo'lishsiz shakl",
+        "«ko'rdi» — bo'lishli shakl",
+        "«yozmaydi» — bo'lishli shakl",
+        "«yozdi» — bo'lishsiz shakl"
+      ],
+      "t": 1,
+      "izoh": "«ko'rdi» — bo'lishli shakl, chunki u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Boshqa javoblarda baho chalkashtirilgan: «yozadi» va «yozdi» aslida bo'lishli shakl; «yozmaydi» aslida bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#600a7a88"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«ko'rdi» — bo'lishsiz shakl",
+        "«borgan» — bo'lishsiz shakl",
+        "«o'qimaydi» — bo'lishsiz shakl",
+        "«bormaydi» — bo'lishli shakl"
+      ],
+      "t": 2,
+      "izoh": "«o'qimaydi» — bo'lishsiz shakl, chunki u fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Boshqa javoblarda baho chalkashtirilgan: «ko'rdi» va «borgan» aslida bo'lishli shakl; «bormaydi» aslida bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#eaccedba"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«yozmaydi» — bo'lishli shakl",
+        "«ko'rmagan» — bo'lishsiz shakl",
+        "«yozadi» — bo'lishsiz shakl",
+        "«kelib» — bo'lishsiz shakl"
+      ],
+      "t": 1,
+      "izoh": "«ko'rmagan» — bo'lishsiz shakl, chunki u o'tgan zamon shaklida «-ma» asosdan keyin turib, harakatni inkor etgan. Boshqa javoblarda baho chalkashtirilgan: «yozmaydi» aslida bo'lishsiz shakl; «kelib» va «yozadi» aslida bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#14f10c2f"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«ko'rmagan» — bo'lishli shakl",
+        "«aytmay» — bo'lishli shakl",
+        "«ko'rgan» — bo'lishli shakl",
+        "«kelsin» — bo'lishsiz shakl"
+      ],
+      "t": 2,
+      "izoh": "«ko'rgan» — bo'lishli shakl, chunki u o'tgan zamon shaklida turibdi, harakat inkor etilmagan. Boshqa javoblarda baho chalkashtirilgan: «ko'rmagan» va «aytmay» aslida bo'lishsiz shakl; «kelsin» aslida bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#aacdbe39"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«keladi» — bo'lishsiz shakl",
+        "«ko'rdi» — bo'lishsiz shakl",
+        "«aytib» — bo'lishli shakl",
+        "«yozsa» — bo'lishsiz shakl"
+      ],
+      "t": 2,
+      "izoh": "«aytib» — bo'lishli shakl, chunki u ravishdosh shaklida turibdi, harakat inkor etilmagan. Boshqa javoblarda baho chalkashtirilgan: «ko'rdi», «keladi» va «yozsa» aslida bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#93cb26bb"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«yozdi» — bo'lishli shakl",
+        "«olmadi» — bo'lishli shakl",
+        "«oldi» — bo'lishsiz shakl",
+        "«aytdi» — bo'lishsiz shakl"
+      ],
+      "t": 0,
+      "izoh": "«yozdi» — bo'lishli shakl, chunki u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Boshqa javoblarda baho chalkashtirilgan: «oldi» va «aytdi» aslida bo'lishli shakl; «olmadi» aslida bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#18bd77d7"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«yozmasa» — bo'lishli shakl",
+        "«o'qidi» — bo'lishsiz shakl",
+        "«oldi» — bo'lishli shakl",
+        "«aytdi» — bo'lishsiz shakl"
+      ],
+      "t": 2,
+      "izoh": "«oldi» — bo'lishli shakl, chunki u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Boshqa javoblarda baho chalkashtirilgan: «o'qidi» va «aytdi» aslida bo'lishli shakl; «yozmasa» aslida bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#3c7f6bb4"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«o'qimadi» — bo'lishli shakl",
+        "«aytmay» — bo'lishsiz shakl",
+        "«yozadi» — bo'lishsiz shakl",
+        "«o'qimaydi» — bo'lishli shakl"
+      ],
+      "t": 1,
+      "izoh": "«aytmay» — bo'lishsiz shakl, chunki u ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan. Boshqa javoblarda baho chalkashtirilgan: «o'qimadi» va «o'qimaydi» aslida bo'lishsiz shakl; «yozadi» aslida bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#6a71fe95"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«yozsin» — bo'lishsiz shakl",
+        "«olmadi» — bo'lishli shakl",
+        "«ishladi» — bo'lishli shakl",
+        "«kelsa» — bo'lishsiz shakl"
+      ],
+      "t": 2,
+      "izoh": "«ishladi» — bo'lishli shakl, chunki u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Boshqa javoblarda baho chalkashtirilgan: «yozsin» va «kelsa» aslida bo'lishli shakl; «olmadi» aslida bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#797ecbdf"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«keldi» — bo'lishli shakl",
+        "«ishladi» — bo'lishsiz shakl",
+        "«keladi» — bo'lishsiz shakl",
+        "«o'qimadi» — bo'lishli shakl"
+      ],
+      "t": 0,
+      "izoh": "«keldi» — bo'lishli shakl, chunki u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Boshqa javoblarda baho chalkashtirilgan: «ishladi» va «keladi» aslida bo'lishli shakl; «o'qimadi» aslida bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#f79fdee9"
+    },
+    {
+      "q": "«yozuvchi emas» shaklida inkor ma'nosi qaysi vosita bilan berilgan?",
+      "v": [
+        "«emas» so'zi",
+        "«-ma» qo'shimchasi",
+        "«yo'q» so'zi",
+        "«-siz» qo'shimchasi"
+      ],
+      "t": 0,
+      "izoh": "«yozuvchi emas» shaklida inkor ma'nosi alohida so'z bilan berilgan; shu bois inkor vositasi — «emas» so'zi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#e4b2f6a3"
+    },
+    {
+      "q": "«kelgani yo'q» shaklidagi inkor ko'rsatkichini aniqlang.",
+      "v": [
+        "«yo'q» so'zi",
+        "«emas» so'zi",
+        "«-ma» qo'shimchasi",
+        "«-siz» qo'shimchasi"
+      ],
+      "t": 0,
+      "izoh": "«kelgani yo'q» shaklida inkor ma'nosi alohida so'z bilan berilgan; shu bois inkor vositasi — «yo'q» so'zi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#7b68922c"
+    },
+    {
+      "q": "«yozmadi» shaklida harakat qaysi vosita bilan inkor etilgan?",
+      "v": [
+        "«emas» so'zi",
+        "«-ma» qo'shimchasi",
+        "«-siz» qo'shimchasi",
+        "«yo'q» so'zi"
+      ],
+      "t": 1,
+      "izoh": "«yozmadi» shaklida inkor ma'nosi asosga ulangan qo'shimcha bilan berilgan; shu bois inkor vositasi — «-ma» qo'shimchasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#7e7d3bc7"
+    },
+    {
+      "q": "«ishlamadi» shaklida harakat qaysi vosita bilan inkor etilgan?",
+      "v": [
+        "«-ma» qo'shimchasi",
+        "«-siz» qo'shimchasi",
+        "«emas» so'zi",
+        "«yo'q» so'zi"
+      ],
+      "t": 0,
+      "izoh": "«ishlamadi» shaklida inkor ma'nosi asosga ulangan qo'shimcha bilan berilgan; shu bois inkor vositasi — «-ma» qo'shimchasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#2e38743e"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri bo'lishli shakl emas?",
+      "v": [
+        "yozsin, ko'rdi, yozadi",
+        "aytib, yozsin, ko'rdi",
+        "aytdi, ko'rgan, kelsin",
+        "ishladi, ko'rmagan, aytib"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «ko'rmagan» — bo'lishsiz shakl: u o'tgan zamon shaklida «-ma» asosdan keyin turib, harakatni inkor etgan. Yonidagi «aytib» va «ishladi» esa bo'lishli shakl. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#708c7f29"
+    },
+    {
+      "q": "Uch qatorda faqat bo'lishsiz shakl berilgan. Qaysi qatorga begona so'z aralashgan?",
+      "v": [
+        "yozmadi, aytmay, olmadi",
+        "bormaydi, boradi, ko'rmagan",
+        "olmadi, o'qimadi, yozmaydi",
+        "o'qimaydi, yozmadi, aytmadi"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «boradi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Yonidagi «ko'rmagan» va «bormaydi» esa bo'lishsiz shakl. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#1c9d136b"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq bo'lishli shakldan iborat emas?",
+      "v": [
+        "yozadi, oldi, yozsa",
+        "kelib, aytib, ko'rdi",
+        "kelsin, ko'rgan, ko'rmasdan",
+        "borgan, keladi, aytib"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «ko'rmasdan» — bo'lishsiz shakl: u ravishdosh shaklida «-ma» asosdan keyin turib, harakatni inkor etgan. Yonidagi «ko'rgan» va «kelsin» esa bo'lishli shakl. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#9b3c3f62"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida bo'lishsiz shakl bo'lmagan so'z bor?",
+      "v": [
+        "kelmasa, bormagan, yozmaydi",
+        "yozsa, ko'rmadi, olmadi",
+        "olmadi, o'qimadi, ishlamadi",
+        "yozmasa, kelmasa, kelmadi"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «yozsa» — bo'lishli shakl: u shart shaklida turibdi, lekin harakat inkor etilmagan. Yonidagi «olmadi» va «ko'rmadi» esa bo'lishsiz shakl. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#8ed98143"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq bo'lishli shakldan iborat emas?",
+      "v": [
+        "oldi, keldi, o'qidi",
+        "kelsin, ishladi, aytdi",
+        "keladi, kelsa, yozmasa",
+        "ko'rgan, yozadi, ko'rdi"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «yozmasa» — bo'lishsiz shakl: u shart shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan. Yonidagi «keladi» va «kelsa» esa bo'lishli shakl. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#ca3209a3"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri bo'lishsiz shakl emas?",
+      "v": [
+        "yozmasa, aytmadi, yozsin",
+        "kelmadi, kelmasa, yozmasa",
+        "yozmasin, kelmay, aytmay",
+        "yozmaydi, ko'rmasdan, yozmasa"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javobdagi «yozsin» — bo'lishli shakl: u buyruq shaklida turibdi, lekin harakat inkor etilmagan. Yonidagi «yozmasa» va «aytmadi» esa bo'lishsiz shakl. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#f7d4ee71"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida bo'lishsiz shakl bo'lmagan so'z bor?",
+      "v": [
+        "kelmadi, aytmay, ko'rmagan",
+        "ishlamadi, olmadi, aytmay",
+        "ko'rmadi, kelmay, yozdi",
+        "bormagan, yozmasin, o'qimadi"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «yozdi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Yonidagi «ko'rmadi» va «kelmay» esa bo'lishsiz shakl. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#b789aa0d"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq bo'lishsiz shakldan iborat emas?",
+      "v": [
+        "kelmadi, ko'rmasdan, ishlamadi",
+        "kelmasin, kelmasa, ko'rmasdan",
+        "aytmadi, kelmay, boradi",
+        "ko'rmadi, olmadi, yozmasin"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «boradi» — bo'lishli shakl: u harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Yonidagi «aytmadi» va «kelmay» esa bo'lishsiz shakl. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#c84b22cc"
+    },
+    {
+      "q": "Uch qatorda faqat bo'lishli shakl berilgan. Qaysi qatorga begona so'z aralashgan?",
+      "v": [
+        "kelsin, keladi, o'qimadi",
+        "kelsa, keladi, aytib",
+        "aytdi, oldi, kelsa",
+        "yozdi, ko'rdi, kelsin"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javobdagi «o'qimadi» — bo'lishsiz shakl: u fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Yonidagi «keladi» va «kelsin» esa bo'lishli shakl. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#b69ff9bc"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri bo'lishsiz shakl emas?",
+      "v": [
+        "kelmadi, bormaydi, kelmay",
+        "kelmasin, ko'rmasdan, kelsin",
+        "bormaydi, yozmasin, kelmadi",
+        "yozmadi, bormagan, kelmay"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «kelsin» — bo'lishli shakl: u buyruq shaklida turibdi, lekin harakat inkor etilmagan. Yonidagi «ko'rmasdan» va «kelmasin» esa bo'lishsiz shakl. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#2dad7bfe"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq bo'lishsiz shakldan iborat emas?",
+      "v": [
+        "olmadi, yozmadi, kelmadi",
+        "kelmasin, yozmasa, bormagan",
+        "kelmasa, kelmay, ko'rmadi",
+        "yozmaydi, ko'rgan, kelmadi"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «ko'rgan» — bo'lishli shakl: u o'tgan zamon shaklida turibdi, harakat inkor etilmagan. Yonidagi «yozmaydi» va «kelmadi» esa bo'lishsiz shakl. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#d86d7413"
+    },
+    {
+      "q": "Uch qatorda faqat bo'lishli shakl berilgan. Qaysi qatorga begona so'z aralashgan?",
+      "v": [
+        "borgan, boradi, o'qidi",
+        "aytdi, kelsa, yozsin",
+        "kelsa, borgan, ko'rdi",
+        "yozsin, ko'rmadi, yozsa"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «ko'rmadi» — bo'lishsiz shakl: u fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Yonidagi «yozsa» va «yozsin» esa bo'lishli shakl. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#6dc873d5"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«yozsa» — bo'lishli shakl",
+        "«aytmadi» — bo'lishli shakl",
+        "«aytdi» — bo'lishli shakl",
+        "«ko'rmadi» — bo'lishsiz shakl"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «aytmadi» so'ziga bo'lishli shakl deb baho berilgan, holbuki u — bo'lishsiz shakl: fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Qolgan javoblardagi baho o'rinli: «yozsa» va «aytdi» rostdan ham bo'lishli shakl; «ko'rmadi» rostdan ham bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#64bbadd3"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi xato?",
+      "v": [
+        "«kelib» — bo'lishli shakl",
+        "«bormaydi» — bo'lishsiz shakl",
+        "«keladi» — bo'lishli shakl",
+        "«keldi» — bo'lishsiz shakl"
+      ],
+      "t": 3,
+      "izoh": "Bu javobda «keldi» so'ziga bo'lishsiz shakl deb baho berilgan, holbuki u — bo'lishli shakl: harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan javoblardagi baho o'rinli: «kelib» va «keladi» rostdan ham bo'lishli shakl; «bormaydi» rostdan ham bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#e0f5c578"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«aytmay» — bo'lishsiz shakl",
+        "«yozmasa» — bo'lishli shakl",
+        "«yozdi» — bo'lishli shakl",
+        "«ko'rmadi» — bo'lishsiz shakl"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «yozmasa» so'ziga bo'lishli shakl deb baho berilgan, holbuki u — bo'lishsiz shakl: shart shaklida ham «-ma» asosdan keyin turib, harakatni inkor etgan. Qolgan javoblardagi baho o'rinli: «aytmay» va «ko'rmadi» rostdan ham bo'lishsiz shakl; «yozdi» rostdan ham bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#ff7c415a"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi xato?",
+      "v": [
+        "«ko'rdi» — bo'lishli shakl",
+        "«o'qimadi» — bo'lishsiz shakl",
+        "«ishladi» — bo'lishli shakl",
+        "«yozadi» — bo'lishsiz shakl"
+      ],
+      "t": 3,
+      "izoh": "Bu javobda «yozadi» so'ziga bo'lishsiz shakl deb baho berilgan, holbuki u — bo'lishli shakl: harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan javoblardagi baho o'rinli: «ko'rdi» va «ishladi» rostdan ham bo'lishli shakl; «o'qimadi» rostdan ham bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#118725bd"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«bormaydi» — bo'lishli shakl",
+        "«ko'rmadi» — bo'lishsiz shakl",
+        "«boradi» — bo'lishli shakl",
+        "«yozdi» — bo'lishli shakl"
+      ],
+      "t": 0,
+      "izoh": "Bu javobda «bormaydi» so'ziga bo'lishli shakl deb baho berilgan, holbuki u — bo'lishsiz shakl: fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Qolgan javoblardagi baho o'rinli: «ko'rmadi» rostdan ham bo'lishsiz shakl; «boradi» va «yozdi» rostdan ham bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#65067012"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«kelsin» — bo'lishli shakl",
+        "«yozadi» — bo'lishli shakl",
+        "«o'qimadi» — bo'lishsiz shakl",
+        "«boradi» — bo'lishsiz shakl"
+      ],
+      "t": 3,
+      "izoh": "Bu javobda «boradi» so'ziga bo'lishsiz shakl deb baho berilgan, holbuki u — bo'lishli shakl: harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan javoblardagi baho o'rinli: «kelsin» va «yozadi» rostdan ham bo'lishli shakl; «o'qimadi» rostdan ham bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#a4b1ce75"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi xato?",
+      "v": [
+        "«yozmadi» — bo'lishsiz shakl",
+        "«ishladi» — bo'lishsiz shakl",
+        "«aytmay» — bo'lishsiz shakl",
+        "«kelmasa» — bo'lishsiz shakl"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «ishladi» so'ziga bo'lishsiz shakl deb baho berilgan, holbuki u — bo'lishli shakl: harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan javoblardagi baho o'rinli: «yozmadi», «aytmay» va «kelmasa» rostdan ham bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#bf73c384"
+    },
+    {
+      "q": "Qaysi javobdagi baho noto'g'ri berilgan?",
+      "v": [
+        "«kelmadi» — bo'lishli shakl",
+        "«kelsa» — bo'lishli shakl",
+        "«yozmaydi» — bo'lishsiz shakl",
+        "«ko'rmasdan» — bo'lishsiz shakl"
+      ],
+      "t": 0,
+      "izoh": "Bu javobda «kelmadi» so'ziga bo'lishli shakl deb baho berilgan, holbuki u — bo'lishsiz shakl: fe'l asosidan keyin «-ma» ulangan va harakat inkor etilgan. Qolgan javoblardagi baho o'rinli: «yozmaydi» va «ko'rmasdan» rostdan ham bo'lishsiz shakl; «kelsa» rostdan ham bo'lishli shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#93f607ed"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«aytdi» — bo'lishsiz shakl",
+        "«bormaydi» — bo'lishsiz shakl",
+        "«kelmay» — bo'lishsiz shakl",
+        "«yozsa» — bo'lishli shakl"
+      ],
+      "t": 0,
+      "izoh": "Bu javobda «aytdi» so'ziga bo'lishsiz shakl deb baho berilgan, holbuki u — bo'lishli shakl: harakat inkor etilmagan, «-ma» qo'shimchasi ulanmagan. Qolgan javoblardagi baho o'rinli: «yozsa» rostdan ham bo'lishli shakl; «bormaydi» va «kelmay» rostdan ham bo'lishsiz shakl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m28-bolishli-bolishsiz#c9338b10"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Parametrni ajratish va grafik usul (a = f(x))",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": false,
+  "savollar": [
+    {
+      "q": "Doston x² − 4x + a = 0 tenglamani parametrni ajratish usuli bilan tekshirmoqchi. Tenglamani a = f(x) ko'rinishiga keltirganda f(x) qanday bo'ladi?",
+      "v": [
+        "f(x) = 4x − x²",
+        "f(x) = x² − 4x",
+        "f(x) = x² + 4x",
+        "f(x) = −4x − x²"
+      ],
+      "t": 0,
+      "izoh": "Parametrni ajratish uchun a ni tenglikning bir tomonida yolg'iz qoldiramiz: a = −x² + 4x, ya'ni a = 4x − x². x² − 4x varianti hadlarni ko'chirishda ishorani almashtirmaslik xatosidan chiqadi, x² + 4x esa ikkala hadning ham ishorasini noto'g'ri qo'yishdan. Javob: f(x) = 4x − x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrni-ajratish-shakli",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#8bfd07dd"
+    },
+    {
+      "q": "2x² + 6x − a = 0 tenglamani a = f(x) ko'rinishida yozmoqchimiz. Quyidagi yozuvlardan qaysi biri to'g'ri hisoblanadi?",
+      "v": [
+        "a = −2x² − 6x",
+        "a = 2x² − 6x",
+        "a = 2x² + 6x",
+        "a = 6x − 2x²"
+      ],
+      "t": 2,
+      "izoh": "Tenglamada a manfiy ishora bilan turibdi: −a = −2x² − 6x. Ikkala tomonni (−1) ga ko'paytiramiz va a = 2x² + 6x hosil bo'ladi. Manfiy javob variantlari (−1) ga ko'paytirishni unutish xatosidir. Javob: a = 2x² + 6x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrni-ajratish-shakli",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#99a1d06a"
+    },
+    {
+      "q": "Malika x³ − 3x + a + 1 = 0 tenglamada parametrni ajratdi. Agar u amallarni to'g'ri bajargan bo'lsa, qanday tenglikni yozgan?",
+      "v": [
+        "a = x³ − 3x + 1",
+        "a = 3x − x³ − 1",
+        "a = 3x − x³ + 1",
+        "a = x³ − 3x − 1"
+      ],
+      "t": 1,
+      "izoh": "a dan boshqa hamma hadni o'ng tomonga o'tkazamiz: a = −x³ + 3x − 1, ya'ni a = 3x − x³ − 1. Ko'p o'quvchi erkin had +1 ni ishorasiz ko'chiradi va +1 qoldiradi, bu esa xato. Javob: a = 3x − x³ − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrni-ajratish-shakli",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#90a44393"
+    },
+    {
+      "q": "Nozima x + a/x = 5 tenglamani x ≠ 0 shartida parametr orqali ifodalamoqchi. U qanday funksiyaga ega bo'ladi?",
+      "v": [
+        "a = x² − 5x",
+        "a = 5 − x²",
+        "a = 5x + x²",
+        "a = 5x − x²"
+      ],
+      "t": 3,
+      "izoh": "Avval a/x = 5 − x deb yozamiz, so'ng ikkala tomonni x ga ko'paytiramiz: a = x(5 − x) = 5x − x². x ga ko'paytirishni faqat bitta hadga qo'llash 5 − x² xatosini beradi. Javob: a = 5x − x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrni-ajratish-shakli",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#c733d68c"
+    },
+    {
+      "q": "a ning qanday qiymatida x² − 6x + 5 = a tenglama aynan bitta haqiqiy ildizga ega bo'ladi?",
+      "v": [
+        "a = 5",
+        "a = −4",
+        "a = 3",
+        "a = −9"
+      ],
+      "t": 1,
+      "izoh": "y = x² − 6x + 5 parabolaning cho'qqisi x = 3 nuqtada, uning ordinatasi 9 − 18 + 5 = −4. Gorizontal y = a chizig'i parabola bilan faqat cho'qqidan o'tganda bitta umumiy nuqtaga ega bo'ladi. Demak a = −4. a = 3 — cho'qqining abssissasi, a = −9 esa +5 hadni hisobga olmaslik natijasi. Javob: a = −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-urinish-chegarasi",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#3ce646d7"
+    },
+    {
+      "q": "x² + 4x + 7 = a tenglama ikkita har xil haqiqiy ildizga ega bo'lishi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a > 3",
+        "a ≥ 3",
+        "a > 7",
+        "a < 3"
+      ],
+      "t": 0,
+      "izoh": "Parabolaning cho'qqisi x = −2 da, ordinatasi 4 − 8 + 7 = 3. y = a chizig'i cho'qqidan yuqorida bo'lsa, parabolani ikki nuqtada kesadi. Tenglik holatida (a = 3) ildiz bitta bo'lib qoladi, shuning uchun qat'iy tengsizlik olinadi: a > 3. a > 7 — erkin hadni cho'qqi ordinatasi deb olish xatosi. Javob: a > 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-ikkita-ildiz-oraligi",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#e5c387c2"
+    },
+    {
+      "q": "Bekzod uchirgan dronning balandligi h(t) = −t² + 8t metrga teng, bu yerda t soniyada berilgan va 0 ≤ t ≤ 8. Dron a metr balandlikda aynan ikki marta bo'lishi uchun a qanday qiymatlarni olishi kerak?",
+      "v": [
+        "0 < a < 16",
+        "0 ≤ a ≤ 16",
+        "0 ≤ a < 16",
+        "8 < a < 16"
+      ],
+      "t": 2,
+      "izoh": "h(t) = −t² + 8t parabolaning cho'qqisi t = 4 da, balandlik 16 metr. y = a chizig'i parabolani ikki nuqtada kesishi kerak. a = 16 da urinish bo'lib, dron eng yuqori nuqtada faqat bir marta bo'ladi. a = 0 da esa t = 0 va t = 8 — ikki marta yerda bo'ladi, shuning uchun nol ham kiradi. Javob: 0 ≤ a < 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-parabola-sath",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#8d3ccf87"
+    },
+    {
+      "q": "a ning qanday qiymatida x² − 10x + a = 0 tenglama yagona ildizga ega bo'ladi? Parametrni ajratib grafik usuldan foydalaning.",
+      "v": [
+        "a = 5",
+        "a = 100",
+        "a = −25",
+        "a = 25"
+      ],
+      "t": 3,
+      "izoh": "Parametrni ajratamiz: a = 10x − x². Bu pastga yo'nalgan parabola bo'lib, cho'qqisi x = 5 da, qiymati 50 − 25 = 25. y = a chizig'i grafik bilan faqat cho'qqida bitta umumiy nuqtaga ega, demak a = 25. a = 5 — cho'qqining abssissasini javob deb olish, a = 100 — b² ni hisoblab to'xtab qolish xatosi. Javob: a = 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-urinish-chegarasi",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#9ffab67a"
+    },
+    {
+      "q": "Tadbirkor Sanjarning kunlik foydasi P(x) = −x² + 14x − 40 million so'mga teng, bu yerda x — kunlik sotuv hajmi (tonnada) va 0 ≤ x ≤ 14. Foyda a million so'mga teng bo'ladigan ikkita har xil x qiymati mavjud bo'lishi uchun a qanday bo'lsin?",
+      "v": [
+        "−40 ≤ a < 9",
+        "a < 9",
+        "−40 < a < 9",
+        "a ≤ 9"
+      ],
+      "t": 0,
+      "izoh": "Parabolaning cho'qqisi x = 7 da: P(7) = −49 + 98 − 40 = 9 million so'm — bunda x yagona, demak a = 9 yaramaydi. Kesma chekkalarida P(0) = −40 va P(14) = −196 + 196 − 40 = −40. y = a gorizontal chizig'i [0; 14] bo'lagini ikki har xil nuqtada kesishi uchun u cho'qqidan past, chekka balandlikdan esa past emas bo'lishi kerak: −40 ≤ a < 9 (a = −40 da x = 0 va x = 14). Sohani unutsak a < 9 chiqadi, lekin a = −100 da ildizlardan biri manfiy sotuv hajmi bo'lib qoladi. Javob: −40 ≤ a < 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-parabola-sath",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#384f57bb"
+    },
+    {
+      "q": "|x² − 4| = a tenglama to'rtta har xil haqiqiy ildizga ega bo'ladigan barcha a qiymatlarini toping.",
+      "v": [
+        "0 ≤ a < 4",
+        "0 < a < 4",
+        "a > 4",
+        "0 < a ≤ 4"
+      ],
+      "t": 1,
+      "izoh": "y = x² − 4 parabolaning absissa o'qidan pastdagi qismi modul tufayli yuqoriga qaytariladi va grafik ikki tepalikli shaklga keladi: eng yuqori o'rta nuqta (0; 4). y = a chizig'i bu shaklni to'rt nuqtada kesishi uchun 0 < a < 4 bo'lishi shart. a = 0 da ildiz ikkita (x = ±2), a = 4 da esa uchta bo'ladi. Javob: 0 < a < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-parabola-ildizlar-soni",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#7c19f84c"
+    },
+    {
+      "q": "Grafik usuldan foydalanib, |x² − 6x| = a tenglama aynan uchta ildizga ega bo'ladigan a qiymatini aniqlang.",
+      "v": [
+        "a = 6",
+        "a = 3",
+        "a = 0",
+        "a = 9"
+      ],
+      "t": 3,
+      "izoh": "y = x² − 6x parabolaning cho'qqisi (3; −9) nuqtada. Modul olinganda [0; 6] oralig'idagi pastki qism yuqoriga qaytariladi va u yerda balandligi 9 bo'lgan tepalik hosil bo'ladi. y = a chizig'i shu tepalik uchidan o'tganda kesishishlar soni uchta bo'ladi: x = 3, hamda x² − 6x = 9 dan kelib chiqadigan ikkita tashqi ildiz. Demak a = 9. Javob: a = 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-parabola-ildizlar-soni",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#a19c7136"
+    },
+    {
+      "q": "x² − 4|x| + 3 = a tenglama aynan ikkita har xil haqiqiy ildizga ega bo'ladigan a qiymatlarini toping.",
+      "v": [
+        "−1 < a < 3",
+        "a > 3",
+        "a = −1 yoki a > 3",
+        "a = 3"
+      ],
+      "t": 2,
+      "izoh": "Funksiya juft, shuning uchun grafik ordinata o'qiga nisbatan simmetrik. x ≥ 0 da u x² − 4x + 3 parabolasi bo'lib, eng kichik qiymati x = 2 da −1 ga, x = 0 da esa 3 ga teng. Simmetriya tufayli grafikda ikkita chuqurlik va o'rtada balandligi 3 bo'lgan tepalik bor. y = a chizig'i ikki nuqtada kesishi uchun u yo aynan chuqurlik tubidan (a = −1), yo o'rta tepalikdan yuqoridan (a > 3) o'tishi kerak. −1 < a < 3 da esa to'rtta ildiz chiqadi. Javob: a = −1 yoki a > 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-parabola-ildizlar-soni",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#e6ffea49"
+    },
+    {
+      "q": "Avtobusning bekatgacha bo'lgan masofasi d(t) = |40 − 8t| kilometrga teng, bu yerda t soatda berilgan va 0 ≤ t ≤ 8. Avtobus bekatdan a kilometr uzoqlikda aynan ikki marta bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "0 < a < 40",
+        "0 < a ≤ 24",
+        "0 ≤ a ≤ 24",
+        "24 < a ≤ 40"
+      ],
+      "t": 1,
+      "izoh": "d(t) grafigi t = 5 da nolga tushib, keyin qaytadan ko'tariladigan V shaklidagi siniq chiziq. Chap tarmoq t = 0 dagi 40 dan nolgacha tushadi, o'ng tarmoq esa noldan t = 8 dagi |40 − 64| = 24 gacha ko'tariladi. y = a chizig'i ikkala tarmoqni ham kesishi uchun a o'ng tarmoq eng katta qiymatidan oshmasligi kerak: 0 < a ≤ 24. a = 0 da uchrashuv bitta (t = 5). Javob: 0 < a ≤ 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-modul-masofa",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#fdd79842"
+    },
+    {
+      "q": "|x − 3| + |x + 1| = a tenglama cheksiz ko'p yechimga ega bo'ladigan a qiymatini toping.",
+      "v": [
+        "a = 4",
+        "a = 2",
+        "a = 3",
+        "a = 0"
+      ],
+      "t": 0,
+      "izoh": "Chap tomondagi funksiya grafigi [−1; 3] oralig'ida gorizontal, undan tashqarida esa ko'tariladigan siniq chiziq. Gorizontal qismning balandligi kesma uzunligiga teng: 3 − (−1) = 4. y = a chizig'i shu gorizontal bo'lakka to'g'ri kelganda butun kesma yechim bo'ladi, ya'ni a = 4. a = 2 — kesma o'rtasi, a = 3 esa modul ichidagi son. Javob: a = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-yigindi-eng-kichik",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#c8571113"
+    },
+    {
+      "q": "|x − 5| + |x + 2| = a tenglama hech bo'lmaganda bitta yechimga ega bo'lishi uchun a qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "a > 7",
+        "a ≥ 3",
+        "a ≥ 5",
+        "a ≥ 7"
+      ],
+      "t": 3,
+      "izoh": "Ikki modul yig'indisi x soni bilan 5 va −2 nuqtalar orasidagi masofalar yig'indisini bildiradi. Bu yig'indi hech qachon nuqtalar orasidagi masofadan kichik bo'lmaydi: 5 − (−2) = 7. Demak funksiyaning eng kichik qiymati 7 va yechim a ≥ 7 da mavjud. a > 7 varianti tenglik holatini yo'qotadi: a = 7 da butun kesma yechim bo'ladi. Javob: a ≥ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-yigindi-eng-kichik",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#27f52ecf"
+    },
+    {
+      "q": "Bir ko'chada Alisherning do'koni 3-uy oldida, Botirning do'koni esa 12-uy oldida joylashgan. x nuqtadagi uydan ikkala do'konga borish uchun jami |x − 3| + |x − 12| birlik masofa yuriladi. Bu masofa a ga teng bo'ladigan uy topilishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a ≥ 15",
+        "a > 9",
+        "a ≥ 9",
+        "a ≥ 12"
+      ],
+      "t": 2,
+      "izoh": "Yig'indi funksiyasining grafigi [3; 12] oralig'ida gorizontal bo'lib, uning balandligi do'konlar orasidagi masofaga teng: 12 − 3 = 9. Undan tashqarida grafik ko'tariladi. Shuning uchun y = a chizig'i grafikni a ≥ 9 bo'lganda kesadi. a ≥ 15 — uy nomerlarini qo'shib yuborish xatosi. Javob: a ≥ 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-yigindi-eng-kichik",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#dce82b48"
+    },
+    {
+      "q": "x + 1/x = a tenglama birorta ham haqiqiy ildizga ega bo'lmaydigan a qiymatlari to'plamini ko'rsating.",
+      "v": [
+        "−2 ≤ a ≤ 2",
+        "a > 2",
+        "−2 < a < 2",
+        "a < −2"
+      ],
+      "t": 2,
+      "izoh": "f(x) = x + 1/x funksiyasining musbat tarmog'i eng kichik qiymati 2 ga (x = 1 da), manfiy tarmog'i eng katta qiymati −2 ga (x = −1 da) teng. Demak grafik (−2; 2) oralig'ida umuman yotmaydi va y = a chizig'i uni kesmaydi. Chegaralarda (a = ±2) esa urinish nuqtasi bor, ya'ni ildiz mavjud. Javob: −2 < a < 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-yigindi-tarmoqlari",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#cce8b9d4"
+    },
+    {
+      "q": "(x² + 4)/x = a tenglama musbat ildizga ega bo'lishi uchun a ning eng kichik qiymati nechaga teng?",
+      "v": [
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "Tenglamani x + 4/x = a ko'rinishida yozamiz. x > 0 da o'rta arifmetik va o'rta geometrik orasidagi tengsizlikka ko'ra x + 4/x ≥ 2·√4 = 4, tenglik x = 2 da bajariladi. Demak y = a chizig'i musbat tarmoqni a ≥ 4 da kesadi va eng kichik qiymat 4 ga teng. 2 — urinish nuqtasining abssissasi, 8 esa uni ikkilantirish xatosi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-yigindi-tarmoqlari",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#2d8a9ee1"
+    },
+    {
+      "q": "(x + 1)/(x − 2) = a tenglama birorta ham yechimga ega bo'lmaydigan a qiymatini toping.",
+      "v": [
+        "a = 1",
+        "a = 2",
+        "a = −1",
+        "a = 0"
+      ],
+      "t": 0,
+      "izoh": "Kasrni ko'paytirsak x + 1 = a(x − 2), ya'ni x(1 − a) = −2a − 1. Agar a ≠ 1 bo'lsa, x = (2a + 1)/(a − 1) yechim bor. a = 1 bo'lganda esa 0 = −3 yolg'on tenglik chiqadi, demak yechim yo'q. Grafik tilida: y = (x + 1)/(x − 2) giperbolaning gorizontal asimptotasi y = 1, y = 1 chizig'i grafikni kesmaydi. a = 2 — maxrajdagi son, uni javob deb olish tipik xato. Javob: a = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-tenglama-yechimsiz-parametr",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#aba0eda0"
+    },
+    {
+      "q": "Bir korxonada mahsulot birligining o'rtacha tannarxi C(x) = x + 900/x ming so'mga teng, bu yerda x — kunlik ishlab chiqarish hajmi. Tannarx a ming so'mga teng bo'lishi mumkin bo'lgan eng kichik a qiymatini toping.",
+      "v": [
+        "30",
+        "120",
+        "900",
+        "60"
+      ],
+      "t": 3,
+      "izoh": "x > 0 bo'lgani uchun x + 900/x ≥ 2·√900 = 60 va tenglik x = 30 da bajariladi. Ya'ni C(x) grafigining eng past nuqtasi 60 ming so'm, y = a chizig'i grafikni faqat a ≥ 60 da kesadi. 30 — shu eng past nuqtaga mos ishlab chiqarish hajmi, 120 esa uni ikkilantirish xatosi. Javob: 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ortacha-tannarx",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#41dc1a34"
+    },
+    {
+      "q": "x³ − 3x = a tenglama uchta har xil haqiqiy ildizga ega bo'lishi uchun a qanday oraliqda yotishi kerak?",
+      "v": [
+        "−2 ≤ a ≤ 2",
+        "−2 < a < 2",
+        "a > 2",
+        "0 < a < 2"
+      ],
+      "t": 1,
+      "izoh": "f(x) = x³ − 3x funksiyasining hosilasi 3x² − 3 bo'lib, u x = −1 va x = 1 nuqtalarda nolga aylanadi. f(−1) = 2 — mahalliy maksimum, f(1) = −2 — mahalliy minimum. y = a chizig'i egri chiziqni uch nuqtada kesishi uchun u shu ikki qiymat orasida bo'lishi kerak: −2 < a < 2. Chegaralarda ildizlar soni ikkitaga tushadi. Javob: −2 < a < 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kubik-ildizlar-soni",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#98fa43d4"
+    },
+    {
+      "q": "x³ − 3x² = a tenglama aynan ikkita har xil ildizga ega bo'ladigan a qiymatlarini toping.",
+      "v": [
+        "a = 0 yoki a = −4",
+        "−4 < a < 0",
+        "a = −4",
+        "a > 0"
+      ],
+      "t": 0,
+      "izoh": "Hosila 3x² − 6x = 0 dan x = 0 va x = 2 kritik nuqtalar chiqadi. f(0) = 0 — mahalliy maksimum, f(2) = 8 − 12 = −4 — mahalliy minimum. y = a chizig'i grafikni aynan ikki nuqtada faqat mahalliy ekstremum darajasidan o'tganda kesadi, chunki bunda urinish nuqtasi va bitta oddiy kesishish qoladi. Demak a = 0 yoki a = −4. Oraliqda esa uchta ildiz bo'ladi. Javob: a = 0 yoki a = −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kubik-ildizlar-soni",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#7730b8e4"
+    },
+    {
+      "q": "Suv omboridagi sath h(t) = t³ − 12t + 20 metr formula bilan berilgan, bu yerda t sutkada va 0 ≤ t ≤ 4. Sath a metrga aynan ikki marta teng bo'lishi uchun a qanday qiymat olishi kerak?",
+      "v": [
+        "4 < a < 36",
+        "4 ≤ a ≤ 20",
+        "4 < a ≤ 20",
+        "20 < a ≤ 36"
+      ],
+      "t": 2,
+      "izoh": "Hosila 3t² − 12 nolga aylanadigan nuqta t = 2, unda h(2) = 8 − 24 + 20 = 4 metr — eng past sath. Boshlanishda h(0) = 20, oxirida h(4) = 64 − 48 + 20 = 36 metr. Grafik avval 20 dan 4 gacha tushadi, keyin 4 dan 36 gacha ko'tariladi. y = a chizig'i ikkala tarmoqni ham kesishi uchun a tushuvchi tarmoq eng katta qiymatidan oshmasligi kerak: 4 < a ≤ 20. a = 4 da sath eng past nuqtaga faqat bir marta yetadi. Javob: 4 < a ≤ 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-kubik-sath",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#9defb4ce"
+    },
+    {
+      "q": "x³ − 3x = a tenglama yagona haqiqiy ildizga ega bo'lishi uchun parametr qanday shartni qanoatlantiradi?",
+      "v": [
+        "−2 < a < 2",
+        "a = −2 yoki a = 2",
+        "a > 2",
+        "a < −2 yoki a > 2"
+      ],
+      "t": 3,
+      "izoh": "Grafikning mahalliy maksimumi 2 ga, mahalliy minimumi −2 ga teng. Gorizontal chiziq shu ikki daraja orasida uch nuqtada, ularning aynan o'zida ikki nuqtada kesadi. Ulardan tashqarida esa grafikning faqat bitta tarmog'i qoladi va kesishish yagona bo'ladi: a < −2 yoki a > 2. Faqat a > 2 ni tanlash manfiy tomonni unutish xatosidir. Javob: a < −2 yoki a > 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kubik-ildizlar-soni",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#6c1df114"
+    },
+    {
+      "q": "x³ − 3x = a tenglama uchta har xil ildizga ega bo'ladigan nechta butun a qiymati mavjud?",
+      "v": [
+        "3 ta",
+        "5 ta",
+        "4 ta",
+        "2 ta"
+      ],
+      "t": 0,
+      "izoh": "Grafik tahlilidan uchta ildiz sharti −2 < a < 2 ekani ma'lum. Bu oraliqdagi butun sonlar: −1, 0 va 1, ya'ni jami uchta. Chegaralarni ham qo'shib yuborish 5 ta degan xato javobga olib keladi, chunki a = ±2 da ildizlar soni ikkitaga tushadi. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-a-qiymatlari-soni",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#f4b28f51"
+    },
+    {
+      "q": "2^x = a − 1 tenglama haqiqiy ildizga ega bo'lishi uchun a parametr qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "a ≥ 1",
+        "a > 0",
+        "a > 1",
+        "a < 1"
+      ],
+      "t": 2,
+      "izoh": "y = 2^x ko'rsatkichli funksiyaning qiymatlari to'plami — barcha musbat sonlar, grafik y = 0 asimptotaga faqat yaqinlashadi. Demak o'ng tomon qat'iy musbat bo'lishi shart: a − 1 > 0, ya'ni a > 1. a ≥ 1 varianti nolni ham qo'shib yuborish xatosi, chunki 2^x hech qachon nolga teng bo'lmaydi. Javob: a > 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-qiymatlar-toplami",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#77a9b4fe"
+    },
+    {
+      "q": "4^x − 6·2^x + a = 0 tenglama ikkita har xil haqiqiy ildizga ega bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a < 9",
+        "0 < a ≤ 9",
+        "a > 9",
+        "0 < a < 9"
+      ],
+      "t": 3,
+      "izoh": "t = 2^x almashtirishni kiritamiz, bunda t > 0. Tenglama t² − 6t + a = 0 ko'rinishga keladi, parametrni ajratsak a = 6t − t². Bu pastga yo'nalgan parabola bo'lib, t = 3 da eng katta qiymati 9, t = 0 da esa qiymati 0. y = a chizig'i musbat yarim o'qdagi tarmoqni ikki nuqtada kesishi uchun 0 < a < 9 bo'lishi kerak. a ≤ 0 da ildizlardan biri musbat bo'lmay qoladi. Javob: 0 < a < 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-almashtirish-musbat-ildiz",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#83cf8f60"
+    },
+    {
+      "q": "9^x − 4·3^x + a = 0 tenglama aynan bitta haqiqiy ildizga ega bo'ladigan barcha a qiymatlarini toping.",
+      "v": [
+        "a = 4",
+        "a ≤ 0 yoki a = 4",
+        "a < 0",
+        "0 < a < 4"
+      ],
+      "t": 1,
+      "izoh": "t = 3^x deb belgilaymiz, t > 0. Tenglama t² − 4t + a = 0, ya'ni a = 4t − t² bo'ladi. Bu parabolaning cho'qqisi t = 2 da, qiymati 4. Gorizontal chiziq musbat tarmoqni bitta nuqtada ikki holda kesadi: cho'qqiga urinishda (a = 4) va a ≤ 0 bo'lganda, chunki bunda musbat ildizlardan faqat bittasi qoladi. Javob: a ≤ 0 yoki a = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-almashtirish-musbat-ildiz",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#ae90f115"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni N(t) = 3·2^t million donaga teng, bu yerda t soatda o'lchanadi va t ≥ 0. Bakteriyalar soni a millionga teng bo'ladigan vaqt mavjud bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a ≥ 3",
+        "a > 3",
+        "a ≥ 2",
+        "a > 0"
+      ],
+      "t": 0,
+      "izoh": "t = 0 da N(0) = 3 million, keyin funksiya o'suvchi bo'lgani uchun qiymatlar 3 dan cheksizgacha ko'tariladi. y = a chizig'i grafikni t ≥ 0 sohada faqat a ≥ 3 bo'lganda kesadi. a > 3 varianti boshlang'ich paytni chiqarib tashlaydi, a > 0 esa t ≥ 0 shartini unutish xatosi. Javob: a ≥ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-korsatkichli-sath",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#5b1868cc"
+    },
+    {
+      "q": "2^x + 2^(−x) = a tenglama ikkita har xil haqiqiy ildizga ega bo'lishi uchun a qanday qiymatlarni oladi?",
+      "v": [
+        "a ≥ 2",
+        "a > 1",
+        "a > 2",
+        "a > 0"
+      ],
+      "t": 2,
+      "izoh": "t = 2^x > 0 almashtirishdan keyin tenglama t + 1/t = a ko'rinishga keladi. Musbat t larda t + 1/t ning eng kichik qiymati 2 bo'lib, u t = 1 da, ya'ni x = 0 da erishiladi. a = 2 da yechim yagona, a > 2 da esa grafikning ikkala tarmog'i ham kesiladi va ikkita ildiz chiqadi. Javob: a > 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-simmetrik-yigindi",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#bbd6908f"
+    },
+    {
+      "q": "log₂(x² + 4) = a tenglama haqiqiy ildizga ega bo'lishi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a > 2",
+        "a ≥ 4",
+        "a ≥ 0",
+        "a ≥ 2"
+      ],
+      "t": 3,
+      "izoh": "Logarifm ostidagi ifoda x² + 4 ning eng kichik qiymati x = 0 da 4 ga teng, keyin u cheksiz o'sadi. Demak log₂(x² + 4) ning qiymatlari log₂4 = 2 dan boshlanadi. y = a chizig'i grafikni a ≥ 2 bo'lganda kesadi. a ≥ 4 — logarifm olishni unutib, ichki ifodaning eng kichik qiymatini javob deb olish xatosi. Javob: a ≥ 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifm-qiymatlar-toplami",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#6cbf0892"
+    },
+    {
+      "q": "log₃(x² − 6x + 12) = a tenglama yagona ildizga ega bo'ladigan a qiymatini aniqlang.",
+      "v": [
+        "a = 3",
+        "a = 1",
+        "a = 12",
+        "a = 0"
+      ],
+      "t": 1,
+      "izoh": "Logarifm ostidagi kvadrat uchhad x² − 6x + 12 = (x − 3)² + 3 ko'rinishida yoziladi, uning eng kichik qiymati x = 3 da 3 ga teng. Shunda log₃3 = 1 bo'ladi va grafikning eng past nuqtasi (3; 1). y = a chizig'i grafikni faqat shu nuqtada bir marta kesadi, ya'ni a = 1. a = 3 — ichki ifodaning eng kichik qiymatini javob deb olish xatosi. Javob: a = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifm-yagona-ildiz",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#03752338"
+    },
+    {
+      "q": "(lg x)² − 2·lg x = a tenglama ikkita har xil musbat ildizga ega bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a > −1",
+        "a ≥ −1",
+        "a > 0",
+        "a > 1"
+      ],
+      "t": 0,
+      "izoh": "t = lg x almashtirishda t istalgan haqiqiy qiymat bo'la oladi, chunki har bir t ga yagona musbat x = 10^t mos keladi. Tenglama t² − 2t = a ko'rinishga keladi, bu parabolaning eng kichik qiymati t = 1 da −1 ga teng. Demak y = a chizig'i parabolani ikki nuqtada a > −1 da kesadi va har bir t ikkita har xil x beradi. a = −1 da ildiz yagona. Javob: a > −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifm-almashtirish-parabola",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#23d23d9e"
+    },
+    {
+      "q": "log₂(x − 1) = a tenglamaning ildizi x > 5 shartini qanoatlantirishi uchun a qanday qiymat olishi kerak?",
+      "v": [
+        "a > 4",
+        "a ≥ 2",
+        "a > 2",
+        "a > 5"
+      ],
+      "t": 2,
+      "izoh": "Logarifm ta'rifiga ko'ra x − 1 = 2^a, ya'ni x = 1 + 2^a. Bu ildiz 5 dan katta bo'lishi uchun 2^a > 4, ya'ni 2^a > 2² bo'lishi kerak. Asos birdan katta bo'lgani uchun ko'rsatkichli funksiya o'suvchi va a > 2 chiqadi. a > 4 — 2^a > 4 dan to'g'ridan-to'g'ri a > 4 deb xulosa chiqarish xatosi. Javob: a > 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-berilgan-oraliqda",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#a7226856"
+    },
+    {
+      "q": "Bemor qabul qilgan dorining qondagi miqdori M(t) = 200·(1/2)^t milligrammga teng, bu yerda t soatda va t ≥ 0. Miqdor a milligrammga teng bo'ladigan payt mavjud bo'lishi uchun a qanday bo'lsin?",
+      "v": [
+        "0 ≤ a ≤ 200",
+        "0 < a < 200",
+        "a ≥ 200",
+        "0 < a ≤ 200"
+      ],
+      "t": 3,
+      "izoh": "t = 0 da miqdor 200 mg, keyin funksiya kamayadi va nolga faqat yaqinlashadi, hech qachon unga yetmaydi. Demak qiymatlar to'plami (0; 200] oralig'i. y = a chizig'i grafikni shu oraliqda kesadi: 0 < a ≤ 200. Nolni qo'shish xato, chunki dori butunlay yo'qolmaydi. Javob: 0 < a ≤ 200.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-korsatkichli-sath",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#6a767598"
+    },
+    {
+      "q": "√(9 − x²) = a tenglama ikkita har xil haqiqiy ildizga ega bo'lishi uchun a qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "0 < a < 3",
+        "0 ≤ a < 3",
+        "0 ≤ a ≤ 3",
+        "0 < a ≤ 3"
+      ],
+      "t": 1,
+      "izoh": "y = √(9 − x²) grafigi markazi koordinata boshida, radiusi 3 bo'lgan yuqori yarim aylana. y = a chizig'i uni ikki nuqtada 0 ≤ a < 3 bo'lganda kesadi: a = 0 da bu x = −3 va x = 3 uchlari, a = 3 da esa faqat cho'qqi, ya'ni bitta nuqta qoladi. Javob: 0 ≤ a < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yarim-aylana-kesishish",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#48e24123"
+    },
+    {
+      "q": "√(16 − x²) = a tenglama aynan bitta haqiqiy ildizga ega bo'ladigan a qiymatini toping.",
+      "v": [
+        "a = 4",
+        "a = 16",
+        "a = 0",
+        "a = 8"
+      ],
+      "t": 0,
+      "izoh": "Grafik radiusi 4 bo'lgan yuqori yarim aylana, uning eng baland nuqtasi (0; 4). y = a chizig'i faqat shu cho'qqidan o'tganda bitta umumiy nuqta bo'ladi, demak a = 4. a = 0 da chiziq yarim aylanani ikki uchida kesadi, ya'ni ildiz ikkita. a = 16 — ildiz ostidagi sonni javob deb olish xatosi. Javob: a = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-aylana-kesishish",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#3f028e60"
+    },
+    {
+      "q": "√x + x = a tenglama aniqlanish sohasida yagona yechimga ega bo'ladigan barcha a qiymatlarini ko'rsating.",
+      "v": [
+        "a > 0",
+        "a ≥ 1",
+        "a ≥ 0",
+        "istalgan haqiqiy a"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi x ≥ 0. Bu sohada ham √x, ham x o'suvchi, demak ularning yig'indisi ham qat'iy o'suvchi funksiya. Uning qiymatlari x = 0 dagi 0 dan boshlanib cheksizgacha o'sadi. Qat'iy o'suvchi grafikni y = a chizig'i ko'pi bilan bir marta kesadi, kesishish esa a ≥ 0 da mavjud. Javob: a ≥ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monoton-funksiya-yagona-ildiz",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#a36b2f7b"
+    },
+    {
+      "q": "√(4 − x) = a + 1 tenglama yechimga ega bo'lishi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a > −1",
+        "a ≥ 1",
+        "a ≤ −1",
+        "a ≥ −1"
+      ],
+      "t": 3,
+      "izoh": "Kvadrat ildizning qiymati hech qachon manfiy bo'lmaydi va u nolni ham qabul qiladi (x = 4 da). Demak o'ng tomon uchun a + 1 ≥ 0, ya'ni a ≥ −1 sharti kelib chiqadi. a > −1 varianti a = −1 holatini yo'qotadi, holbuki unda x = 4 yechim mavjud. Javob: a ≥ −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-funksiya-qiymatlar-toplami",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#15efad4f"
+    },
+    {
+      "q": "Ko'prik ravog'ining balandligi y = √(25 − x²) metr formula bilan beriladi, bu yerda x — markazdan gorizontal masofa. y = a gorizontal chizig'i ravoq bilan aynan bitta umumiy nuqtaga ega bo'lishi uchun a nechaga teng bo'lsin?",
+      "v": [
+        "a = 25",
+        "a = 5",
+        "a = 10",
+        "a = 0"
+      ],
+      "t": 1,
+      "izoh": "Ravoq grafigi radiusi 5 bo'lgan yuqori yarim aylana, chunki tenglikni kvadratga ko'tarsak x² + y² = 25 va y ≥ 0 bo'ladi. Gorizontal chiziq yarim aylana bilan faqat eng baland nuqtada, ya'ni a = 5 da bitta umumiy nuqtaga ega. a = 0 da esa ikkita tayanch nuqtasi chiqadi, a = 25 — radiusning kvadratini javob deb olish xatosi. Javob: a = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-yarim-aylana",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#8d5ebd6a"
+    },
+    {
+      "q": "sin x = (a − 1)/2 tenglama yechimga ega bo'lishi uchun a parametr qanday oraliqda yotishi kerak?",
+      "v": [
+        "−1 ≤ a ≤ 1",
+        "−3 ≤ a ≤ 1",
+        "−1 ≤ a ≤ 3",
+        "1 ≤ a ≤ 3"
+      ],
+      "t": 2,
+      "izoh": "y = sin x funksiyaning qiymatlari [−1; 1] kesmada yotadi, shuning uchun gorizontal chiziq grafikni faqat shu bo'lakda kesadi. Demak −1 ≤ (a − 1)/2 ≤ 1 bo'lishi kerak. Ikkala tomonni 2 ga ko'paytiramiz: −2 ≤ a − 1 ≤ 2, so'ng 1 ni qo'shamiz va −1 ≤ a ≤ 3 hosil bo'ladi. Javob: −1 ≤ a ≤ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-qiymatlar-toplami",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#0b323b28"
+    },
+    {
+      "q": "sin x + cos x = a tenglama birorta ham yechimga ega bo'lmasligi uchun a qanday qiymat olishi kerak?",
+      "v": [
+        "a < −√2 yoki a > √2",
+        "−√2 < a < √2",
+        "a < −2 yoki a > 2",
+        "a < −1 yoki a > 1"
+      ],
+      "t": 0,
+      "izoh": "Chap tomonni yig'ib yozamiz: sin x + cos x = √2·sin(x + π/4). Sinusning qiymatlari [−1; 1] kesmada bo'lgani uchun butun ifoda [−√2; √2] kesmada o'zgaradi. y = a chizig'i grafikdan tashqarida bo'lsa kesishish bo'lmaydi, ya'ni a < −√2 yoki a > √2. Chegara sifatida 1 yoki 2 ni olish √2 ko'paytuvchini unutish xatosidir. Javob: a < −√2 yoki a > √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trigonometrik-yigindi-amplituda",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#b3c19758"
+    },
+    {
+      "q": "sin²x + 4·sin x = a tenglama yechimga ega bo'ladigan barcha a qiymatlarini toping.",
+      "v": [
+        "−4 ≤ a ≤ 4",
+        "−3 ≤ a ≤ 5",
+        "0 ≤ a ≤ 5",
+        "−3 ≤ a ≤ 3"
+      ],
+      "t": 1,
+      "izoh": "t = sin x almashtirishda t faqat [−1; 1] kesmadan qiymat oladi. g(t) = t² + 4t parabolaning cho'qqisi t = −2 da, ya'ni kesmadan tashqarida, demak [−1; 1] da funksiya o'suvchi. Chekka qiymatlar: g(−1) = 1 − 4 = −3 va g(1) = 1 + 4 = 5. y = a chizig'i grafikning shu bo'lagini −3 ≤ a ≤ 5 da kesadi. Javob: −3 ≤ a ≤ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trigonometrik-almashtirish-kesma",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#2e006d18"
+    },
+    {
+      "q": "Bog'dagi charxpalak kabinasining yerdan balandligi h(t) = 12 − 10·cos t metrga teng. Kabina a metr balandlikda bo'ladigan payt mavjud bo'lishi uchun a qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "−10 ≤ a ≤ 10",
+        "0 ≤ a ≤ 22",
+        "2 ≤ a ≤ 12",
+        "2 ≤ a ≤ 22"
+      ],
+      "t": 3,
+      "izoh": "cos t ning qiymatlari [−1; 1] kesmada. cos t = 1 bo'lganda balandlik eng kichik: 12 − 10 = 2 metr, cos t = −1 bo'lganda esa eng katta: 12 + 10 = 22 metr. Demak grafik 2 va 22 chiziqlari orasida tebranadi va y = a uni 2 ≤ a ≤ 22 da kesadi. 2 ≤ a ≤ 12 varianti markaz balandligini eng katta qiymat deb olish xatosi. Javob: 2 ≤ a ≤ 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tebranish-oraligi",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#4d9438ef"
+    },
+    {
+      "q": "tg x = a − 3 tenglama yechimga ega bo'lishi uchun a parametrga qanday cheklov qo'yiladi?",
+      "v": [
+        "istalgan haqiqiy a",
+        "a ≥ 3",
+        "−1 ≤ a ≤ 1",
+        "a > 3"
+      ],
+      "t": 0,
+      "izoh": "Tangens funksiyaning qiymatlar to'plami — barcha haqiqiy sonlar, chunki har bir davrda grafik minus cheksizlikdan plyus cheksizlikkacha ko'tariladi. Shuning uchun y = a − 3 gorizontal chizig'i grafikni har qanday holatda kesadi. Bu yerda sinus va kosinusdagi kabi [−1; 1] cheklovi yo'q. Javob: istalgan haqiqiy a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-qiymatlar-toplami",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#9fc88d38"
+    },
+    {
+      "q": "Tenglama parametrni ajratish yo'li bilan a = f(x) ko'rinishiga keltirilgach, uning ildizlari soni qanday aniqlanadi?",
+      "v": [
+        "f funksiyaning ekstremum nuqtalari soni bo'yicha",
+        "y = a gorizontal chizig'ining y = f(x) grafigi bilan kesishish nuqtalari soni bo'yicha",
+        "y = f(x) grafigining abssissa o'qi bilan kesishishlari soni bo'yicha",
+        "x = a vertikal chizig'ining grafik bilan kesishishlari soni bo'yicha"
+      ],
+      "t": 1,
+      "izoh": "a = f(x) tenglikda chap tomon x ga bog'liq emas, shuning uchun u xOy tekisligida gorizontal chiziqni beradi. Har bir kesishish nuqtasi bitta ildizga mos keladi: kesishishlar nechta bo'lsa, ildiz ham shuncha. Abssissa o'qi bilan kesishish faqat a = 0 holatini beradi, vertikal chiziq esa bu usulda umuman ishlatilmaydi. Javob: y = a chizig'ining kesishish nuqtalari soni bo'yicha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-usul-tushunchasi",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#be8287a4"
+    },
+    {
+      "q": "xOa tekisligida a = x² − 2x egri chizig'i chizilgan. a = 3 gorizontal chizig'i bu egri chiziqni qaysi nuqtalarda kesadi?",
+      "v": [
+        "x = 1 va x = 3",
+        "x = 0 va x = 2",
+        "x = −1 va x = 3",
+        "x = −3 va x = 1"
+      ],
+      "t": 2,
+      "izoh": "Kesishish nuqtalarini topish uchun x² − 2x = 3 tenglamani yechamiz: x² − 2x − 3 = 0. Viyet teoremasiga ko'ra ildizlar ko'paytmasi −3, yig'indisi 2, demak x = −1 va x = 3. x = 0 va x = 2 — egri chiziqning abssissa o'qi bilan kesishishlari, ular a = 0 ga mos keladi. Javob: x = −1 va x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xOa-tekisligida-kesishish",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#4dbd9e7c"
+    },
+    {
+      "q": "xOa tekisligida |x| + |a| = 4 tenglama bilan berilgan chiziq bilan chegaralangan shaklning yuzi nechaga teng?",
+      "v": [
+        "16",
+        "64",
+        "8",
+        "32"
+      ],
+      "t": 3,
+      "izoh": "Tenglama to'rtta kesmadan tuzilgan yopiq siniq chiziqni beradi, uning uchlari (4; 0), (0; 4), (−4; 0) va (0; −4) nuqtalarda. Bu diagonallari o'zaro perpendikulyar bo'lgan romb bo'lib, har bir diagonali 8 birlik. Yuz S = d₁·d₂/2 = 8·8/2 = 32 kvadrat birlik. 16 — tomonni kvadratga ko'tarish xatosi, 64 esa ikki diagonal ko'paytmasini ikkiga bo'lmaslik natijasi. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xOa-tekisligida-soha",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#bcb55f56"
+    },
+    {
+      "q": "xOa tekisligida a = 2x − x² egri chizig'i bilan a = −3 chizig'ining kesishish nuqtalari abssissalari yig'indisi nechaga teng?",
+      "v": [
+        "2",
+        "−2",
+        "3",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "2x − x² = −3 tenglamadan x² − 2x − 3 = 0 kelib chiqadi. Uning ildizlari yig'indisi Viyet teoremasiga ko'ra 2 ga teng (ildizlarning o'zi −1 va 3). Grafik nuqtai nazaridan ham shunday: parabolaning simmetriya o'qi x = 1 va gorizontal chiziq kesgan ikki nuqta unga nisbatan simmetrik, ya'ni yig'indi 2·1 = 2. −2 varianti ishorani almashtirish xatosidan chiqadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-yigindisi-simmetriya",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#05af6a76"
+    },
+    {
+      "q": "x² + y² = a va x + y = 2 sistemasi yagona yechimga ega bo'lishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "a = 4",
+        "a = 2",
+        "a = √2",
+        "a = 1"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tenglama markazi koordinata boshida bo'lgan aylana, ikkinchisi esa to'g'ri chiziq. Sistema yagona yechimga ega bo'lishi uchun chiziq aylanaga urinishi kerak. y = 2 − x ni qo'ysak 2x² − 4x + 4 − a = 0 chiqadi, urinish sharti D = 16 − 8(4 − a) = 0, bundan a = 2. a = 4 varianti radiusni kvadratga ko'tarishni ikki marta bajarish xatosi. Javob: a = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema-yagona-yechim-urinish",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#669a119a"
+    },
+    {
+      "q": "|x| + |y| = 2 va y = a sistemasi aynan bitta yechimga ega bo'ladigan a qiymatlarini toping.",
+      "v": [
+        "−2 < a < 2",
+        "a = 0",
+        "a = −2 yoki a = 2",
+        "a = 2"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tenglamaning grafigi uchlari (2; 0), (0; 2), (−2; 0), (0; −2) bo'lgan romb. y = a gorizontal chizig'i rombni ichkarida ikki nuqtada kesadi, faqat yuqori va pastki uchlarida bitta umumiy nuqta qoladi. Bu uchlarning ordinatalari 2 va −2, demak a = −2 yoki a = 2. Faqat a = 2 ni tanlash pastki uchni unutish xatosidir. Javob: a = −2 yoki a = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-yagona-yechim-simmetriya",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#af0fcf49"
+    },
+    {
+      "q": "y = x² + 1 va y = a − x² sistemasi yagona yechimga ega bo'lishi uchun a qanday qiymatga ega bo'ladi?",
+      "v": [
+        "a = 0",
+        "a = 2",
+        "a = 3",
+        "a = 1"
+      ],
+      "t": 3,
+      "izoh": "Ikki tenglamaning o'ng tomonlarini tenglashtiramiz: x² + 1 = a − x², bundan 2x² = a − 1 kelib chiqadi. Agar a − 1 > 0 bo'lsa ikkita simmetrik yechim, a − 1 < 0 bo'lsa yechim yo'q. Yagona yechim faqat a − 1 = 0, ya'ni a = 1 da bo'ladi va u x = 0 nuqtaga to'g'ri keladi. a = 3 varianti yechimni x = 1 deb taxmin qilishdan, a = 0 esa erkin hadni tashlab ketishdan chiqadi. Javob: a = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-yagona-yechim-simmetriya",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#e2e76eea"
+    },
+    {
+      "q": "x² + y² = 16 aylana va y = a to'g'ri chizig'i aynan ikkita umumiy nuqtaga ega bo'lishi uchun a qanday oraliqda bo'lsin?",
+      "v": [
+        "−4 < a < 4",
+        "−4 ≤ a ≤ 4",
+        "a = −4 yoki a = 4",
+        "0 < a < 4"
+      ],
+      "t": 0,
+      "izoh": "Aylananing radiusi √16 = 4, markazi koordinata boshida. Gorizontal chiziq aylanani ikki nuqtada kesishi uchun u markazdan radiusdan kichik masofada turishi kerak, ya'ni |a| < 4. Chegaralarda (a = ±4) chiziq aylanaga urinadi va umumiy nuqta bitta bo'ladi. Javob: −4 < a < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sistema-yagona-yechim-urinish",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#22239bc4"
+    },
+    {
+      "q": "x³ + x = a tenglamaning haqiqiy ildizlari soni haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "a = 0 da uchta ildiz bor",
+        "Har qanday a uchun aynan bitta ildiz bor",
+        "a > 0 da bitta, a < 0 da uchta ildiz bor",
+        "Hech qanday a da ildizi yo'q"
+      ],
+      "t": 1,
+      "izoh": "f(x) = x³ + x funksiyaning hosilasi 3x² + 1 bo'lib, u barcha x larda musbat. Demak funksiya butun sonlar o'qida qat'iy o'suvchi va uning qiymatlari minus cheksizlikdan plyus cheksizlikkacha o'zgaradi. Qat'iy o'suvchi grafikni har bir gorizontal chiziq aynan bir marta kesadi. Javob: har qanday a uchun aynan bitta ildiz bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monoton-funksiya-yagona-ildiz",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#1c537d14"
+    },
+    {
+      "q": "Avtobus Toshkentdan chiqib, bosib o'tgan yo'li S(t) = 70t kilometrga teng, bu yerda t soatda va 0 ≤ t ≤ 4. Bosib o'tilgan yo'l a kilometrga teng bo'ladigan yagona payt mavjud bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "0 < a < 280",
+        "0 ≤ a ≤ 70",
+        "0 ≤ a ≤ 280",
+        "a ≥ 280"
+      ],
+      "t": 2,
+      "izoh": "S(t) = 70t chiziqli va qat'iy o'suvchi funksiya, shuning uchun har bir gorizontal chiziq uni ko'pi bilan bir marta kesadi. Yurish boshida S(0) = 0, oxirida S(4) = 280 kilometr. Kesishish shu ikki chegarani ham qo'shgan holda 0 ≤ a ≤ 280 da mavjud. 0 ≤ a ≤ 70 varianti bir soatlik yo'lni butun safar deb olish xatosi. Javob: 0 ≤ a ≤ 280.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-chiziqli-yagona-yechim",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#e6934784"
+    },
+    {
+      "q": "x² − 4x = a tenglamaning kamida bitta ildizi [1; 3] kesmada yotishi uchun a qanday qiymat olishi kerak?",
+      "v": [
+        "−3 ≤ a ≤ 0",
+        "−4 ≤ a ≤ 0",
+        "a ≥ −4",
+        "−4 ≤ a ≤ −3"
+      ],
+      "t": 3,
+      "izoh": "Kesmada f(x) = x² − 4x funksiyaning qiymatlarini topamiz. Cho'qqi x = 2 kesma ichida va f(2) = 4 − 8 = −4 — eng kichik qiymat. Chekka nuqtalarda f(1) = 1 − 4 = −3 va f(3) = 9 − 12 = −3 — eng katta qiymat. Demak grafikning shu bo'lagi [−4; −3] balandliklar orasida yotadi va y = a uni faqat shu oraliqda kesadi. Javob: −4 ≤ a ≤ −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-berilgan-oraliqda",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#39af49af"
+    },
+    {
+      "q": "x² − 2x + a = 0 tenglamaning har ikkala ildizi ham musbat bo'lishi uchun a qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "0 < a ≤ 1",
+        "0 ≤ a ≤ 1",
+        "a ≤ 1",
+        "a > 0"
+      ],
+      "t": 0,
+      "izoh": "Parametrni ajratamiz: a = 2x − x². Bu parabolaning cho'qqisi x = 1 da, qiymati 1; u x = 0 va x = 2 nuqtalarda nolga aylanadi. Ildizlar musbat bo'lishi uchun y = a chizig'i grafikni faqat x > 0 sohada kesishi kerak. Bu 0 < a ≤ 1 da bajariladi: a = 1 da ildizlar ustma-ust tushib x = 1 bo'ladi, a = 0 da esa ildizlardan biri nol, ya'ni musbat emas. Javob: 0 < a ≤ 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-ishorasi-sharti",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#f8f50a6d"
+    },
+    {
+      "q": "x² − 6x = a tenglama kamida bitta manfiy ildizga ega bo'lishi uchun a qanday shartni qanoatlantiradi?",
+      "v": [
+        "a < 0",
+        "a > 0",
+        "a > −9",
+        "a ≥ 0"
+      ],
+      "t": 1,
+      "izoh": "f(x) = x² − 6x = x(x − 6) funksiyani ko'rib chiqamiz. x < 0 bo'lganda ikkala ko'paytuvchi ham manfiy, demak ko'paytma musbat va grafikning chap tarmog'i noldan cheksizgacha ko'tariladi. y = a chizig'i shu tarmoqni faqat a > 0 bo'lganda kesadi. a = 0 da ildizlar 0 va 6 bo'lib, ular manfiy emas. Javob: a > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-ishorasi-sharti",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#01643d4e"
+    },
+    {
+      "q": "Zavodning kunlik xarajati C(x) = x² − 20x + 150 million so'm, bu yerda x — kunlik ishlab chiqarish hajmi (tonnada) va 4 ≤ x ≤ 12. Xarajat a million so'mga teng bo'lishi mumkin bo'lgan a qiymatlari oralig'ini toping.",
+      "v": [
+        "50 ≤ a ≤ 54",
+        "54 ≤ a ≤ 86",
+        "50 ≤ a ≤ 86",
+        "0 ≤ a ≤ 86"
+      ],
+      "t": 2,
+      "izoh": "Parabolaning cho'qqisi x = 10 da va C(10) = 100 − 200 + 150 = 50 million so'm — eng kam xarajat. Kesma chekkalarida C(4) = 16 − 80 + 150 = 86 va C(12) = 144 − 240 + 150 = 54 million so'm. x uzluksiz o'zgargani uchun grafikning [4; 12] dagi bo'lagi 50 dan 86 gacha barcha balandliklarni oladi va y = a uni shu oraliqda kesadi. Javob: 50 ≤ a ≤ 86.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-oraliqda-qiymatlar",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#44037d33"
+    },
+    {
+      "q": "x² − 8x + a = 0 tenglamaning ikkala ildizi ham 1 dan katta bo'lishi uchun a qanday oraliqda yotishi kerak?",
+      "v": [
+        "a < 16",
+        "7 ≤ a < 16",
+        "0 < a < 16",
+        "7 < a ≤ 16"
+      ],
+      "t": 3,
+      "izoh": "Parametrni ajratamiz: a = 8x − x². Bu parabolaning cho'qqisi x = 4 da, qiymati 16. x = 1 nuqtada esa qiymat 8 − 1 = 7. y = a chizig'i grafikni x > 1 sohada kesishi uchun u 7 dan yuqorida bo'lishi kerak; a = 7 da ildizlardan biri aynan 1 ga teng bo'lib qoladi, ya'ni 1 dan katta emas. Yuqori chekka esa javobga kiradi: a = 16 da ildizlar ustma-ust tushib x = 4 bo'ladi, u ham 1 dan katta. Javob: 7 < a ≤ 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-ishorasi-sharti",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#529fee70"
+    },
+    {
+      "q": "|x − 3| + 1 = a tenglama ikkita har xil haqiqiy ildizga ega bo'lishi uchun a qanday qiymat olishi kerak?",
+      "v": [
+        "a > 1",
+        "a ≥ 1",
+        "a > 3",
+        "a > 0"
+      ],
+      "t": 0,
+      "izoh": "y = |x − 3| + 1 grafigi uchi (3; 1) nuqtada bo'lgan V shaklidagi siniq chiziq. Gorizontal y = a chizig'i uchdan yuqorida bo'lsa ikkala tarmoqni ham kesadi, ya'ni a > 1. Aynan a = 1 da yechim yagona (x = 3), a < 1 da esa yechim yo'q. a > 3 varianti uchning ordinatasi o'rniga abssissasini olish xatosi. Javob: a > 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-chiziqli-kesishish",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#8ffc6188"
+    },
+    {
+      "q": "|x + 2| = a − 1 tenglama hech bo'lmaganda bitta yechimga ega bo'lishi uchun a qanday shartni qanoatlantiradi?",
+      "v": [
+        "a > 1",
+        "a ≥ −1",
+        "a ≥ 1",
+        "a ≥ 2"
+      ],
+      "t": 2,
+      "izoh": "Modulning qiymati manfiy bo'lmaydi, eng kichigi esa nolga teng (x = −2 da). Demak o'ng tomon uchun a − 1 ≥ 0, ya'ni a ≥ 1 kelib chiqadi. a > 1 varianti a = 1 holatini yo'qotadi, holbuki unda x = −2 yechim bor. a ≥ −1 esa modul ichidagi songa qarab xulosa chiqarish xatosi. Javob: a ≥ 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-chiziqli-kesishish",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#6bf8c8f8"
+    },
+    {
+      "q": "Sun'iy ko'lda suv sathining me'yordan chetlanishi |s − 4| metr bilan o'lchanadi, bu yerda s — o'lchangan sath va 0 ≤ s ≤ 9. Chetlanish a metrga teng bo'ladigan ikkita har xil sath mavjud bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "0 < a ≤ 5",
+        "0 < a ≤ 4",
+        "0 ≤ a ≤ 4",
+        "4 < a ≤ 5"
+      ],
+      "t": 1,
+      "izoh": "Chetlanish grafigi s = 4 da nolga tushadigan V shaklidagi chiziq. Chap tarmoq s = 0 dagi 4 dan nolgacha tushadi, o'ng tarmoq esa noldan s = 9 dagi 5 gacha ko'tariladi. Gorizontal chiziq ikkala tarmoqni ham kesishi uchun a chap tarmoqning eng katta qiymatidan oshmasligi kerak: 0 < a ≤ 4. a = 0 da yagona sath s = 4 chiqadi, 4 < a ≤ 5 da esa faqat o'ng tarmoq kesiladi. Javob: 0 < a ≤ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-modul-masofa",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#955afdfa"
+    },
+    {
+      "q": "y = 6x + a to'g'ri chizig'i y = x² parabolaga urinma bo'lishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "a = 9",
+        "a = −36",
+        "a = 3",
+        "a = −9"
+      ],
+      "t": 3,
+      "izoh": "Umumiy nuqtalarni topamiz: x² = 6x + a, ya'ni x² − 6x − a = 0. Urinma bo'lish yagona umumiy nuqtani bildiradi, demak diskriminant nolga teng: D = 36 + 4a = 0. Bundan a = −9 kelib chiqadi va urinish nuqtasi x = 3 bo'ladi. a = 3 — aynan shu abssissani javob deb olish xatosi. Javob: a = −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-chiziq-siljishi-urinish",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#1aee12d4"
+    },
+    {
+      "q": "y = 2x + a to'g'ri chizig'i y = x² + 6x + 10 parabolani ikkita har xil nuqtada kesishi uchun a qanday bo'lsin?",
+      "v": [
+        "a > 6",
+        "a ≥ 6",
+        "a > 10",
+        "a < 6"
+      ],
+      "t": 0,
+      "izoh": "Tenglamalarni tenglashtiramiz: x² + 6x + 10 = 2x + a, bundan x² + 4x + 10 − a = 0. Ikkita kesishish nuqtasi bo'lishi uchun D > 0 kerak: D = 16 − 4(10 − a) = 4a − 24 > 0, ya'ni a > 6. a = 6 da chiziq parabolaga urinadi. a > 10 — erkin hadni chegara deb olish xatosi. Javob: a > 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-chiziq-siljishi-urinish",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#57690340"
+    },
+    {
+      "q": "a = 2 bo'lganda |x² − 3| = a tenglama nechta har xil haqiqiy ildizga ega bo'ladi?",
+      "v": [
+        "2 ta",
+        "4 ta",
+        "3 ta",
+        "6 ta"
+      ],
+      "t": 1,
+      "izoh": "Modulni ochamiz: x² − 3 = 2 yoki x² − 3 = −2. Birinchisidan x² = 5, ya'ni x = ±√5; ikkinchisidan x² = 1, ya'ni x = ±1. Hammasi bo'lib to'rtta har xil ildiz. Grafikda bu ikki tepalikli chiziqni y = 2 gorizontali to'rt nuqtada kesishini bildiradi. 2 ta javobi faqat bitta holatni hisoblab to'xtab qolishdan chiqadi. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-a-da-ildizlar-soni",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#8a175969"
+    },
+    {
+      "q": "a = −5 bo'lganda x³ − 3x² = a tenglamaning haqiqiy ildizlari soni nechaga teng?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "1 ta",
+        "0 ta"
+      ],
+      "t": 2,
+      "izoh": "f(x) = x³ − 3x² funksiyaning mahalliy maksimumi x = 0 da 0 ga, mahalliy minimumi x = 2 da −4 ga teng. y = −5 chizig'i mahalliy minimumdan ham pastda joylashgan, shuning uchun u grafikning faqat chap ko'tariluvchi tarmog'ini kesadi. Demak ildiz bitta. 3 ta javob ekstremumlar orasidagi holatga tegishli. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "berilgan-a-da-ildizlar-soni",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#10972a12"
+    },
+    {
+      "q": "|x² − 6x| = a tenglama to'rtta har xil ildizga ega bo'ladigan nechta butun a qiymati mavjud?",
+      "v": [
+        "9 ta",
+        "10 ta",
+        "7 ta",
+        "8 ta"
+      ],
+      "t": 3,
+      "izoh": "Grafik x = 0 va x = 6 da nolga tegadigan, x = 3 da esa balandligi 9 bo'lgan tepalikka ega. To'rtta kesishish 0 < a < 9 shartida bo'ladi. Bu oraliqdagi butun sonlar 1 dan 8 gacha, ya'ni 8 ta. Chegaralarni qo'shib yuborish 9 yoki 10 degan xato javobni beradi, holbuki a = 0 da ildiz ikkita, a = 9 da esa uchta. Javob: 8 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-a-qiymatlari-soni",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#1fc7a17f"
+    },
+    {
+      "q": "x² − 6x = a tenglamaning ildizlari ayirmasi 4 ga teng bo'lsa, a parametr nechaga teng?",
+      "v": [
+        "a = −5",
+        "a = 5",
+        "a = −4",
+        "a = 8"
+      ],
+      "t": 0,
+      "izoh": "Gorizontal chiziq parabolani simmetriya o'qi x = 3 ga nisbatan simmetrik ikki nuqtada kesadi. Ayirma 4 bo'lsa, ildizlar 3 − 2 = 1 va 3 + 2 = 5. Ularni tenglamaga qo'yamiz: a = 1 − 6 = −5 (yoki 25 − 30 = −5). a = 5 varianti ishorani almashtirish xatosi. Javob: a = −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-ayirmasi-simmetriya",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#bf5de407"
+    },
+    {
+      "q": "Koptok yuqoriga otilganda uning balandligi h(t) = 20t − 5t² metrga teng, bu yerda t soniyada va 0 ≤ t ≤ 4. Koptok a metr balandlikda aynan bir marta bo'lishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "a = 10",
+        "a = 20",
+        "a = 4",
+        "a = 0"
+      ],
+      "t": 1,
+      "izoh": "Balandlik grafigi pastga yo'nalgan parabola, cho'qqisi t = 2 da: h(2) = 40 − 20 = 20 metr. Gorizontal chiziq parabolani odatda ikki nuqtada kesadi, faqat cho'qqida bitta umumiy nuqta qoladi. a = 0 da esa koptok ikki marta — otilishda va tushishda yerda bo'ladi, ya'ni bu holat mos kelmaydi. Javob: a = 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-parabola-sath",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#e219e7bc"
+    },
+    {
+      "q": "Konsert chiptasi p ming so'm bo'lganda kunlik tushum R(p) = 120p − 2p² ming so'mga teng. Tushum a ming so'mga teng bo'ladigan ikkita har xil narx mavjud bo'lishi uchun a qanday bo'lsin?",
+      "v": [
+        "0 < a < 3600",
+        "a < 1800",
+        "0 < a < 1800",
+        "0 < a ≤ 1800"
+      ],
+      "t": 2,
+      "izoh": "R(p) = p(120 − 2p) funksiya p = 0 va p = 60 da nolga aylanadi, cho'qqisi ularning o'rtasida, p = 30 da: R(30) = 3600 − 1800 = 1800 ming so'm. Gorizontal chiziq parabolani ikki nuqtada kesishi va ikkala narx ham musbat bo'lishi uchun 0 < a < 1800 kerak. a = 1800 da narx yagona bo'lib qoladi, a ≤ 0 esa ma'noga to'g'ri kelmaydi. Javob: 0 < a < 1800.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-narx-tushum",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#d1814b4c"
+    },
+    {
+      "q": "Taksi haqi dastlabki 3 km uchun 12000 so'm; undan keyin haq masofaga mutanosib ravishda uzluksiz o'sadi (har bir kilometr uchun 3000 so'm hisobidan). To'lov a so'm bo'ladigan masofalar cheksiz ko'p bo'lishi uchun a nechaga teng?",
+      "v": [
+        "3000",
+        "15000",
+        "9000",
+        "12000"
+      ],
+      "t": 3,
+      "izoh": "To'lov grafigi [0; 3] oralig'ida gorizontal, balandligi 12000 so'm, undan keyin esa mutanosib va pog'onasiz ko'tariladi. Gorizontal y = a chizig'i grafikning tekis bo'lagiga to'g'ri kelsa, unga cheksiz ko'p masofa mos keladi. Demak a = 12000. Qiya bo'lakda esa har bir balandlikka faqat bitta masofa mos keladi: 15000 — to'rt kilometrlik yo'lning haqi, u yagona. Javob: 12000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-bolakli-tarif",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#b79ddfbb"
+    },
+    {
+      "q": "f(x) funksiya x ≤ 0 da x + 2, x > 0 da esa 2 − x ga teng. f(x) = a tenglama ikkita har xil yechimga ega bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "a < 2",
+        "a ≤ 2",
+        "a > 2",
+        "a = 2"
+      ],
+      "t": 0,
+      "izoh": "Grafik (0; 2) nuqtada uchrashadigan ikki nurdan iborat: chap nur pastdan ko'tarilib 2 gacha yetadi, o'ng nur esa 2 dan pastga tushadi. Gorizontal chiziq ikkala nurni ham kesishi uchun u uch nuqtasidan pastda bo'lishi kerak: a < 2. Aynan a = 2 da ikki nur bitta umumiy nuqtaga ega, ya'ni yechim yagona. Javob: a < 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolakli-funksiya-kesishish",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#7c148d08"
+    },
+    {
+      "q": "y = |x² − 4x + 3| grafigi va y = a chizig'i to'rtta umumiy nuqtaga ega bo'lishi uchun a qanday oraliqda yotadi?",
+      "v": [
+        "0 ≤ a < 1",
+        "0 < a < 1",
+        "a > 1",
+        "0 < a ≤ 1"
+      ],
+      "t": 1,
+      "izoh": "x² − 4x + 3 parabolaning cho'qqisi x = 2 da, qiymati 4 − 8 + 3 = −1. Modul olinganda [1; 3] oralig'idagi pastki bo'lak yuqoriga qaytariladi va u yerda balandligi 1 bo'lgan tepalik hosil bo'ladi. y = a chizig'i to'rt nuqtada kesishi uchun u noldan yuqorida, tepalikdan pastda bo'lishi kerak: 0 < a < 1. a = 0 da ildiz ikkita, a = 1 da uchta. Javob: 0 < a < 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-parabola-ildizlar-soni",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#777756d3"
+    },
+    {
+      "q": "Mahsulot narxi x ming so'm bo'lganda korxonaning kunlik daromadi D(x) = 40x − x² ming so'mga teng. Daromad erisha oladigan eng katta a qiymati nechaga teng?",
+      "v": [
+        "20",
+        "40",
+        "400",
+        "800"
+      ],
+      "t": 2,
+      "izoh": "D(x) pastga yo'nalgan parabola bo'lib, u x = 0 va x = 40 da nolga aylanadi, cho'qqisi esa ularning o'rtasida, x = 20 da. Cho'qqidagi qiymat D(20) = 800 − 400 = 400 ming so'm. y = a chizig'i grafikni faqat a ≤ 400 da kesadi, demak eng katta qiymat 400. 20 — shu qiymatga mos narx, 800 esa oraliq hisobning natijasi. Javob: 400.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-narx-tushum",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#e02595ff"
+    },
+    {
+      "q": "x² − 2|x| = a tenglama to'rtta har xil ildizga ega bo'ladigan nechta butun a qiymati bor?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "cheksiz ko'p",
+        "0 ta"
+      ],
+      "t": 3,
+      "izoh": "Funksiya juft, x ≥ 0 da u x² − 2x parabolasi bo'lib, eng kichik qiymati x = 1 da −1, x = 0 da esa 0. Simmetriya tufayli grafikda ikki chuqurlik va o'rtada balandligi 0 bo'lgan tepalik bor. To'rtta kesishish −1 < a < 0 da bo'ladi. Bu oraliqda birorta ham butun son yo'q, chunki −1 va 0 chegaralar kirmaydi. Javob: 0 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-a-qiymatlari-soni",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#0f605aeb"
+    },
+    {
+      "q": "x² − 5x + a = 0 tenglama haqiqiy ildizga ega bo'ladigan eng katta butun a qiymatini toping.",
+      "v": [
+        "6",
+        "5",
+        "7",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Parametrni ajratamiz: a = 5x − x². Bu parabolaning cho'qqisi x = 2,5 da, qiymati 12,5 − 6,25 = 6,25. Gorizontal chiziq grafikni a ≤ 6,25 da kesadi, demak eng katta butun qiymat 6. 7 varianti yaxlitlashni yuqoriga qilish xatosi, 12 esa cho'qqidagi oraliq hisobga tegishli. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-butun-a",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#1497de4b"
+    },
+    {
+      "q": "(x² − 1)/(x − 1) = a tenglama birorta ham yechimga ega bo'lmaydigan a qiymatini aniqlang.",
+      "v": [
+        "a = 1",
+        "a = 2",
+        "a = 3",
+        "a = −2"
+      ],
+      "t": 1,
+      "izoh": "x ≠ 1 shartida kasrni qisqartiramiz: (x − 1)(x + 1)/(x − 1) = x + 1. Demak grafik x = 1 nuqtasi o'yib olingan to'g'ri chiziq, o'yiq nuqtaning ordinatasi 1 + 1 = 2. Gorizontal y = a chizig'i shu chiziqni har doim kesadi, faqat a = 2 da kesishish aynan o'yilgan nuqtaga to'g'ri kelib, yechim qolmaydi. Javob: a = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-oyiq-nuqta",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#ed187904"
+    },
+    {
+      "q": "(x² − 9)/(x + 3) = a tenglama yechimga ega bo'lmasligi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "a = 6",
+        "a = −3",
+        "a = −6",
+        "a = 3"
+      ],
+      "t": 2,
+      "izoh": "x ≠ −3 shartida kasr qisqaradi: (x − 3)(x + 3)/(x + 3) = x − 3. Grafik x = −3 da o'yiq nuqtasi bor to'g'ri chiziq, o'yiq nuqtaning ordinatasi −3 − 3 = −6. Gorizontal chiziq shu balandlikdan o'tganda mos keladigan x faqat −3 bo'lar edi, u esa aniqlanish sohasiga kirmaydi. Javob: a = −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-oyiq-nuqta",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#abb14e57"
+    },
+    {
+      "q": "Telefon batareyasining zaryadi Z(t) = 100 − 8t foizga teng, bu yerda t soatda va 0 ≤ t ≤ 12. Zaryad a foizga teng bo'ladigan payt mavjud bo'lishi uchun a qanday qiymatlarni oladi?",
+      "v": [
+        "0 ≤ a ≤ 100",
+        "4 < a < 100",
+        "0 < a ≤ 96",
+        "4 ≤ a ≤ 100"
+      ],
+      "t": 3,
+      "izoh": "Z(t) chiziqli kamayuvchi funksiya: t = 0 da 100 foiz, t = 12 da esa 100 − 96 = 4 foiz. Grafik shu ikki qiymat orasidagi kesma, shuning uchun gorizontal chiziq uni faqat 4 ≤ a ≤ 100 da kesadi. 0 ≤ a ≤ 100 varianti kuzatuv oxiridagi zaryadni nol deb hisoblash xatosi. Javob: 4 ≤ a ≤ 100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-chiziqli-yagona-yechim",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#276eff82"
+    },
+    {
+      "q": "Idishdagi 40 litr eritmada 6 litr tuz bor. Unga x litr suv qo'shilgach konsentratsiya C(x) = 600/(40 + x) foizga teng bo'ladi. Konsentratsiya a foizga teng bo'ladigan x ≥ 0 mavjud bo'lishi uchun a qanday bo'lsin?",
+      "v": [
+        "0 < a ≤ 15",
+        "0 ≤ a ≤ 15",
+        "0 < a < 15",
+        "a ≥ 15"
+      ],
+      "t": 0,
+      "izoh": "Suv qo'shilmagan paytda C(0) = 600/40 = 15 foiz — bu eng katta qiymat. Suv qo'shilgan sari kasr maxraji o'sadi va konsentratsiya kamayadi, lekin nolga hech qachon yetmaydi, faqat unga yaqinlashadi. Demak grafik (0; 15] oraliqdagi balandliklarni egallaydi va y = a chizig'i uni shu yerda kesadi. Javob: 0 < a ≤ 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kamayuvchi-giperbola",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#cef2e481"
+    },
+    {
+      "q": "Bir ishni bajarish vaqti ajratilgan quvvatga bog'liq: T(n) = 120/n soat, bunda n — ishga ajratilgan quvvat birligi va u 1 dan 12 gacha uzluksiz o'zgaradi. Ish vaqti a soatga teng bo'ladigan n mavjud bo'lishi uchun a qanday oraliqda yotadi?",
+      "v": [
+        "10 ≤ a ≤ 12",
+        "10 ≤ a ≤ 120",
+        "1 ≤ a ≤ 120",
+        "12 ≤ a ≤ 120"
+      ],
+      "t": 1,
+      "izoh": "T(n) kamayuvchi uzluksiz funksiya: eng katta vaqt n = 1 da T(1) = 120 soat, eng kichigi esa n = 12 da T(12) = 10 soat. n uzluksiz o'zgargani uchun T shu ikki chekka orasidagi barcha qiymatlarni oladi, shuning uchun y = a chizig'i grafikni 10 ≤ a ≤ 120 da kesadi. 10 ≤ a ≤ 12 varianti quvvat birligini vaqt bilan chalkashtirish xatosi. Javob: 10 ≤ a ≤ 120.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-kamayuvchi-giperbola",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#2ad3a6a1"
+    },
+    {
+      "q": "Perimetri 40 metr bo'lgan to'g'ri to'rtburchak shaklidagi tomorqaning bir tomoni x metr bo'lsa, yuzi S(x) = x(20 − x) kvadrat metrga teng. Yuz a kvadrat metr bo'ladigan ikkita har xil x mavjud bo'lishi uchun a qanday bo'lishi kerak?",
+      "v": [
+        "0 < a ≤ 100",
+        "0 < a < 400",
+        "0 < a < 100",
+        "0 < a < 20"
+      ],
+      "t": 2,
+      "izoh": "S(x) pastga yo'nalgan parabola bo'lib, x = 0 va x = 20 da nolga aylanadi, cho'qqisi ularning o'rtasida x = 10 da: S(10) = 10·10 = 100 kvadrat metr. Gorizontal y = a chizig'i parabolani ikki nuqtada kesishi uchun u noldan yuqorida va cho'qqidan pastda bo'lishi kerak. Kvadratda (a = 100) yechim yagona bo'lib qoladi. Javob: 0 < a < 100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-geometrik-optimallashtirish",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#d78cc28c"
+    },
+    {
+      "q": "Fermer 60 metr to'r bilan devorga tirkab to'rtburchak qo'ra o'ramoqchi. Devorga perpendikulyar tomon x metr bo'lganda yuza S(x) = x(60 − 2x) kvadrat metr bo'ladi. Yuza erisha oladigan eng katta a qiymatini toping.",
+      "v": [
+        "900",
+        "400",
+        "225",
+        "450"
+      ],
+      "t": 3,
+      "izoh": "S(x) parabolasi x = 0 va x = 30 da nolga aylanadi, demak cho'qqisi x = 15 da. Unda S(15) = 15·(60 − 30) = 15·30 = 450 kvadrat metr. Gorizontal chiziq grafikni faqat a ≤ 450 da kesadi. 900 — to'rning ikkilanishini hisobga olmaslik, 400 esa x = 10 ni cho'qqi deb olish xatosi. Javob: 450.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-geometrik-optimallashtirish",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#256c5040"
+    },
+    {
+      "q": "Sovutgichdan olingan mahsulotning harorati T(t) = 25 − 20·(1/2)^t darajaga teng, bu yerda t soatda va t ≥ 0. Harorat a darajaga teng bo'ladigan payt mavjud bo'lishi uchun a qanday qiymatlarni oladi?",
+      "v": [
+        "5 ≤ a < 25",
+        "5 < a < 25",
+        "5 ≤ a ≤ 25",
+        "0 ≤ a < 25"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich paytda T(0) = 25 − 20 = 5 daraja. Vaqt o'tishi bilan (1/2)^t nolga yaqinlashadi, shuning uchun harorat 25 darajaga yaqinlashadi, lekin unga hech qachon yetmaydi. Grafik [5; 25) balandliklarni egallaydi va y = a uni faqat shu yerda kesadi. 25 ni qo'shish asimptotani qiymat deb olish xatosi. Javob: 5 ≤ a < 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-korsatkichli-sath",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#38d2b536"
+    },
+    {
+      "q": "Bozorda talab T(p) = 100 − 2p, taklif esa Q(p) = 3p + a ko'rinishda. Muvozanat narxi p = 15 ming so'm bo'lishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "a = 45",
+        "a = 25",
+        "a = 70",
+        "a = 15"
+      ],
+      "t": 1,
+      "izoh": "Muvozanat — ikki chiziqning kesishish nuqtasi, unda T(p) = Q(p). p = 15 da talab T(15) = 100 − 30 = 70 birlik. Demak taklif ham 70 bo'lishi kerak: 3·15 + a = 70, ya'ni 45 + a = 70 va a = 25. a = 45 varianti oraliq hisobni javob deb olish, a = 70 esa muvozanat miqdorini parametr bilan chalkashtirish xatosi. Javob: a = 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-talab-taklif-kesishish",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#64143017"
+    },
+    {
+      "q": "Talab T(p) = 90 − 3p va taklif Q(p) = 2p + a chiziqlarining kesishish nuqtasi musbat narxga mos kelishi uchun a qanday shartni qanoatlantiradi?",
+      "v": [
+        "a > 90",
+        "a < 45",
+        "a < 90",
+        "a < 18"
+      ],
+      "t": 2,
+      "izoh": "Kesishish nuqtasini topamiz: 90 − 3p = 2p + a, bundan 5p = 90 − a va p = (90 − a)/5. Bu narx musbat bo'lishi uchun surat musbat bo'lsin: 90 − a > 0, ya'ni a < 90. Grafik tilida bu taklif chizig'ini yuqoriga surganda kesishish nuqtasi chapga siljib, a = 90 da ordinata o'qiga tushishini bildiradi. a < 18 — tenglamani 5 ga bo'lishda xato qilish natijasi. Javob: a < 90.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-talab-taklif-kesishish",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#c3d5d247"
+    },
+    {
+      "q": "|x| + a = 2x tenglamada parametrni ajratsak, qanday tenglik hosil bo'ladi?",
+      "v": [
+        "a = |x| − 2x",
+        "a = 2x + |x|",
+        "a = 2|x| − x",
+        "a = 2x − |x|"
+      ],
+      "t": 3,
+      "izoh": "a ni yolg'iz qoldirish uchun |x| ni o'ng tomonga o'tkazamiz va ishorasini almashtiramiz: a = 2x − |x|. Endi o'ng tomondagi funksiya grafigini chizib, y = a bilan kesishishlarni qarash mumkin. |x| − 2x varianti ikkala hadning ham ishorasini noto'g'ri qo'yishdan chiqadi. Javob: a = 2x − |x|.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrni-ajratish-shakli",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#5ed650ca"
+    },
+    {
+      "q": "Yuk tashish xarajati x tonna yuk uchun C(x) = x + 9/x million so'mga teng. Xarajat a million so'm bo'ladigan ikkita har xil musbat x mavjud bo'lishi uchun a qanday bo'lsin?",
+      "v": [
+        "a > 6",
+        "a ≥ 6",
+        "a > 9",
+        "a > 3"
+      ],
+      "t": 0,
+      "izoh": "x > 0 da o'rta arifmetik va o'rta geometrik orasidagi tengsizlikka ko'ra x + 9/x ≥ 2·√9 = 6, tenglik x = 3 da bajariladi. Demak grafikning eng past nuqtasi 6 million so'm. y = a chizig'i uning ikkala tarmog'ini ham a > 6 da kesadi, a = 6 da esa yechim yagona. a > 9 — ildiz ostidagi sonni chegara deb olish xatosi. Javob: a > 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-yigindi-tarmoqlari",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#f3355f30"
+    },
+    {
+      "q": "x² + 2x + 5 = a tenglama ikkita har xil haqiqiy ildizga ega bo'lishi uchun a qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a ≥ 4",
+        "a > 4",
+        "a > 5",
+        "a < 4"
+      ],
+      "t": 1,
+      "izoh": "Parabolaning cho'qqisi x = −1 nuqtada, uning ordinatasi 1 − 2 + 5 = 4. Gorizontal chiziq cho'qqidan yuqorida bo'lsa, parabolani ikki nuqtada kesadi: a > 4. Tenglik holatida ildiz bitta bo'lib qoladi, shuning uchun a ≥ 4 xato. a > 5 varianti erkin hadni cho'qqi ordinatasi deb olishdan chiqadi. Javob: a > 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-ikkita-ildiz-oraligi",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#235c5750"
+    },
+    {
+      "q": "2x² − 8x + a = 0 tenglama yagona haqiqiy ildizga ega bo'lishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "a = 4",
+        "a = 16",
+        "a = 8",
+        "a = 2"
+      ],
+      "t": 2,
+      "izoh": "Parametrni ajratamiz: a = 8x − 2x². Bu pastga yo'nalgan parabola bo'lib, cho'qqisi x = 2 da, qiymati 16 − 8 = 8. Gorizontal chiziq grafikni faqat cho'qqida bitta nuqtada kesadi, demak a = 8. a = 4 — cho'qqi abssissasining ikkilanishi, a = 16 esa oraliq hisobni javob deb olish xatosi. Javob: a = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-urinish-chegarasi",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#cdf9338d"
+    },
+    {
+      "q": "log₂(x² − 2x + 9) = a tenglama yagona ildizga ega bo'ladigan a qiymatini toping.",
+      "v": [
+        "a = 8",
+        "a = 9",
+        "a = 1",
+        "a = 3"
+      ],
+      "t": 3,
+      "izoh": "Logarifm ostidagi ifodani to'la kvadratga keltiramiz: x² − 2x + 9 = (x − 1)² + 8, uning eng kichik qiymati x = 1 da 8. Shunda log₂8 = 3 bo'ladi, ya'ni grafikning eng past nuqtasi (1; 3). Gorizontal chiziq grafikni faqat shu nuqtada bir marta kesadi. a = 8 — logarifm olishni unutish, a = 9 esa erkin hadni javob deb olish xatosi. Javob: a = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifm-yagona-ildiz",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#3248ecc1"
+    },
+    {
+      "q": "4^x − 2^(x+2) + a = 0 tenglama ikkita har xil haqiqiy ildizga ega bo'lishi uchun a qanday oraliqda yotadi?",
+      "v": [
+        "0 < a < 4",
+        "a < 4",
+        "0 < a ≤ 4",
+        "a > 4"
+      ],
+      "t": 0,
+      "izoh": "2^(x+2) = 4·2^x ekanini hisobga olib t = 2^x almashtirishni kiritamiz, bunda t > 0. Tenglama t² − 4t + a = 0 ko'rinishga keladi, parametrni ajratsak a = 4t − t². Bu parabolaning cho'qqisi t = 2 da 4 ga teng, t = 0 da esa qiymat nol. Musbat yarim o'qda ikkita kesishish 0 < a < 4 da bo'ladi. a ≤ 0 da ildizlardan biri musbat bo'lmay qoladi. Javob: 0 < a < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korsatkichli-almashtirish-musbat-ildiz",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#d7a0a784"
+    },
+    {
+      "q": "cos x = (2a + 1)/3 tenglama yechimga ega bo'lishi uchun a parametr qanday oraliqda bo'lishi kerak?",
+      "v": [
+        "−1 ≤ a ≤ 1",
+        "−2 ≤ a ≤ 1",
+        "−2 ≤ a ≤ 2",
+        "−3 ≤ a ≤ 3"
+      ],
+      "t": 1,
+      "izoh": "Kosinusning qiymatlari [−1; 1] kesmada yotadi, shuning uchun −1 ≤ (2a + 1)/3 ≤ 1 bo'lishi kerak. Barcha qismlarni 3 ga ko'paytiramiz: −3 ≤ 2a + 1 ≤ 3. Endi 1 ni ayiramiz: −4 ≤ 2a ≤ 2, so'ng 2 ga bo'lamiz va −2 ≤ a ≤ 1 hosil bo'ladi. Javob: −2 ≤ a ≤ 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-qiymatlar-toplami",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#d848e6df"
+    },
+    {
+      "q": "Dengiz sohilida suv sathi H(t) = 3 + 2·sin t metr qonuniyat bilan o'zgaradi. Sath a metrga teng bo'ladigan payt mavjud bo'lishi uchun a qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "−2 ≤ a ≤ 2",
+        "3 ≤ a ≤ 5",
+        "1 ≤ a ≤ 5",
+        "0 ≤ a ≤ 5"
+      ],
+      "t": 2,
+      "izoh": "sin t ning qiymatlari [−1; 1] kesmada o'zgaradi, shuning uchun 2·sin t esa [−2; 2] oraliqda bo'ladi. Unga 3 ni qo'shsak sath 1 metrdan 5 metrgacha tebranadi. Grafik shu ikki chegara orasidagi to'lqin, y = a uni 1 ≤ a ≤ 5 da kesadi. −2 ≤ a ≤ 2 varianti o'rtacha sathni qo'shishni unutish xatosi. Javob: 1 ≤ a ≤ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tebranish-oraligi",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#ae1d09a9"
+    },
+    {
+      "q": "Do'konning kunlik foydasi F(x) = −x² + 12x − 11 million so'm, bu yerda x — hafta boshidan o'tgan vaqt (kunlarda) va 1 ≤ x ≤ 7. Foyda a million so'mga teng bo'lishi mumkin bo'lgan a qiymatlari oralig'ini toping.",
+      "v": [
+        "0 ≤ a ≤ 24",
+        "24 ≤ a ≤ 25",
+        "1 ≤ a ≤ 25",
+        "0 ≤ a ≤ 25"
+      ],
+      "t": 3,
+      "izoh": "Parabolaning cho'qqisi x = 6 da va F(6) = −36 + 72 − 11 = 25 million so'm — eng katta foyda. Kesma chekkalarida F(1) = −1 + 12 − 11 = 0 va F(7) = −49 + 84 − 11 = 24 million so'm, demak eng kichik qiymat 0. x uzluksiz vaqt bo'lgani uchun grafikning bu bo'lagi 0 dan 25 gacha barcha balandliklarni oladi: y = a uni 0 ≤ a ≤ 25 da kesadi. Javob: 0 ≤ a ≤ 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-oraliqda-qiymatlar",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#5eeb93f3"
+    },
+    {
+      "q": "Pochta jo'natmasi uchun 2 kg gacha bo'lgan og'irlikka 30000 so'm olinadi; 2 kg dan ortiq og'irlikda to'lov og'irlikka mutanosib ravishda uzluksiz o'sadi (har bir kilogramm uchun 8000 so'm hisobidan). To'lov a so'mga teng bo'ladigan og'irliklar cheksiz ko'p bo'lishi uchun a nechaga teng?",
+      "v": [
+        "30000",
+        "38000",
+        "8000",
+        "60000"
+      ],
+      "t": 0,
+      "izoh": "To'lov grafigi 2 kg gacha gorizontal bo'lib, balandligi 30000 so'm, keyin esa mutanosib va pog'onasiz ko'tariladi. Gorizontal y = a chizig'i tekis bo'lakka to'g'ri kelganda unga cheksiz ko'p og'irlik mos keladi, demak a = 30000. Qiya bo'lakdagi har bir balandlikka esa yagona og'irlik mos keladi: 38000 — uch kilogrammlik jo'natma narxi. Javob: 30000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-bolakli-tarif",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#959ded6c"
+    },
+    {
+      "q": "x² + y² = a va y = |x| sistemasi yagona yechimga ega bo'lishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "a = 1",
+        "a = 0",
+        "a = 2",
+        "a = 4"
+      ],
+      "t": 1,
+      "izoh": "y = |x| ni birinchi tenglamaga qo'yamiz: x² + x² = a, ya'ni 2x² = a. Agar a > 0 bo'lsa, x uchun ikkita qarama-qarshi qiymat chiqadi va yechim ikkita bo'ladi. a < 0 da yechim yo'q. Faqat a = 0 da yagona yechim (0; 0) qoladi — bu aylananing nuqtaga aylanishini bildiradi. Javob: a = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-yagona-yechim-simmetriya",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#fe77d739"
+    },
+    {
+      "q": "Tunnel kesimining balandligi y = √(36 − x²) metr, bu yerda x — o'qdan gorizontal masofa. y = 4 gorizontal chizig'i tunnel konturini qaysi nuqtalarda kesadi?",
+      "v": [
+        "x = ±4",
+        "x = ±√5",
+        "x = ±2√5",
+        "x = ±20"
+      ],
+      "t": 2,
+      "izoh": "Tenglamani yozamiz: √(36 − x²) = 4. Ikkala tomonni kvadratga ko'taramiz: 36 − x² = 16, bundan x² = 20 va x = ±√20 = ±2√5. Kontur yuqori yarim aylana bo'lgani uchun ikkala nuqta ham unga tegishli. x = ±√5 varianti ildiz ostidan ko'paytuvchini chiqarishda xato qilish natijasi. Javob: x = ±2√5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-yarim-aylana",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#40f2bd3c"
+    },
+    {
+      "q": "Agar y = f(x) funksiya butun aniqlanish sohasida qat'iy o'suvchi bo'lsa, a = f(x) tenglama haqida nima deyish mumkin?",
+      "v": [
+        "kamida ikkita ildizga ega bo'ladi",
+        "har doim aynan ikkita ildizga ega bo'ladi",
+        "ildizga umuman ega bo'lmaydi",
+        "ko'pi bilan bitta ildizga ega bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Qat'iy o'suvchi funksiyada har xil x larga har xil qiymatlar mos keladi, ya'ni bir xil balandlik ikki marta takrorlanmaydi. Shuning uchun y = a gorizontal chizig'i grafikni ko'pi bilan bir nuqtada kesadi. Kesishish bor yoki yo'qligi a ning funksiya qiymatlari to'plamiga tegishliligiga bog'liq. Javob: ko'pi bilan bitta ildizga ega bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-usul-tushunchasi",
+      "id": "matematika_teng_m15-parametrni-ajratish-va-grafik-usul#a3ecd010"
+    }
+  ]
+}

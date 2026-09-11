@@ -1,0 +1,1609 @@
+{
+  "nom": "Ikki o'zgaruvchili tengsizliklar va tekislikdagi sohalar",
+  "bolim": "Tengsizliklar",
+  "blok": "tngs",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Koordinata tekisligida 3x − 2y < 6 tengsizlik bilan aniqlanadigan sohaga quyidagi nuqtalardan qaysi biri tegishli ekanini aniqlang.",
+      "v": [
+        "(4; 1)",
+        "(1; 2)",
+        "(5; 0)",
+        "(2; 0)"
+      ],
+      "t": 1,
+      "izoh": "Har bir nuqta koordinatalarini 3x − 2y ifodaga qo'yamiz. (4; 1) uchun 12 − 2 = 10, bu 6 dan katta. (1; 2) uchun 3 − 4 = −1, u 6 dan kichik va shart bajariladi. (5; 0) uchun 15, bu ham 6 dan katta. (2; 0) uchun 6 chiqadi, ya'ni nuqta chegara chizig'ida yotadi; tengsizlik qat'iy bo'lgani uchun chegara sohaga kirmaydi. Javob: (1; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtaning-sohaga-tegishliligi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#014f0cdd"
+    },
+    {
+      "q": "Nodira daftariga A(3; 2), B(−1; 4), C(0; 5) va D(4; 1) nuqtalarni tushirdi. Bu nuqtalardan qaysi biri x + y ≥ 5 tengsizlikni qanoatlantirmaydi?",
+      "v": [
+        "A(3; 2)",
+        "B(−1; 4)",
+        "C(0; 5)",
+        "D(4; 1)"
+      ],
+      "t": 1,
+      "izoh": "Har bir nuqta uchun x + y yig'indini hisoblaymiz. A da 3 + 2 = 5, C da 0 + 5 = 5, D da 4 + 1 = 5 — uchalasi ham chegara chizig'ida yotadi, tengsizlik qat'iy emas, shuning uchun ular sohaga kiradi. B da esa −1 + 4 = 3 bo'lib, bu 5 dan kichik. Javob: B(−1; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtaning-sohaga-tegishliligi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#95cb2154"
+    },
+    {
+      "q": "y ≤ 2x + 1 va x + y > 3 tengsizliklardan tuzilgan sistemaning yechimlar sohasiga quyidagi nuqtalardan qaysi biri kiradi?",
+      "v": [
+        "(3; 1)",
+        "(0; 1)",
+        "(1; 4)",
+        "(2; −1)"
+      ],
+      "t": 0,
+      "izoh": "Nuqta sistemaning sohasiga kirishi uchun ikkala tengsizlik ham bir vaqtda bajarilishi shart. (3; 1) uchun 1 ≤ 7 to'g'ri va 3 + 1 = 4 > 3 to'g'ri. (0; 1) uchun birinchi shart bajariladi, lekin 0 + 1 = 1 bo'lib, u 3 dan katta emas. (1; 4) uchun 4 ≤ 3 yolg'on. (2; −1) uchun yig'indi 1 bo'lib, ikkinchi shart buziladi. Javob: (3; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtaning-sohaga-tegishliligi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#4d06f25c"
+    },
+    {
+      "q": "M(a; 2) nuqta 2x + 3y ≤ 12 tengsizlik bilan berilgan sohada yotishi uchun a ning eng katta butun qiymati nechaga teng?",
+      "v": [
+        "a = 3",
+        "a = 2",
+        "a = 4",
+        "a = 6"
+      ],
+      "t": 0,
+      "izoh": "Nuqta koordinatalarini tengsizlikka qo'yamiz: 2a + 3·2 ≤ 12, ya'ni 2a + 6 ≤ 12. Bundan 2a ≤ 6 va a ≤ 3 kelib chiqadi. Tengsizlik qat'iy emas, shuning uchun chegaradagi a = 3 ning o'zi ham yaroqli. a = 2 — chegarani keraksiz chiqarib tashlash, a = 4 — yaxlitlash xatosi, a = 6 esa 3y qo'shiluvchini umuman hisobga olmaslikdan chiqadi. Javob: a = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrli-nuqta-va-soha-sharti",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#5c71e23a"
+    },
+    {
+      "q": "y = 2x − 3 to'g'ri chiziq tekislikni ikkita yarim tekislikka ajratadi. Koordinata boshi O(0; 0) joylashgan yarim tekislik qaysi tengsizlik bilan yoziladi?",
+      "v": [
+        "y < 2x − 3",
+        "y > 2x + 3",
+        "y < 2x − 6",
+        "y > 2x − 3"
+      ],
+      "t": 3,
+      "izoh": "x = 0 bo'lganda chiziqning ordinatasi y = −3 ga teng. Koordinata boshining ordinatasi 0 esa −3 dan katta, demak nuqta chiziqdan yuqorida joylashgan, yuqoridagi yarim tekislik esa y > 2x − 3 tengsizlik bilan beriladi. Qolgan variantlarda O(0; 0) shartni bajarmaydi: 0 < −3, 0 > 3 va 0 < −6 mulohazalarning hammasi yolg'on. Javob: y > 2x − 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-tekislik-va-chegara-chizigi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#6af8ca48"
+    },
+    {
+      "q": "3x + 4y ≥ 24 tengsizlik bilan aniqlanadigan yarim tekislik haqidagi quyidagi mulohazalardan qaysi biri to'g'ri?",
+      "v": [
+        "Chegara chizig'i sohaga kiradi va O(0; 0) sohada yotmaydi",
+        "Chegara chizig'i sohaga kirmaydi, lekin O(0; 0) sohada yotadi",
+        "Chegara chizig'i sohaga kiradi va O(0; 0) ham sohada yotadi",
+        "Soha butun tekislikni qamrab oladi"
+      ],
+      "t": 0,
+      "izoh": "Tengsizlik qat'iy emas, shuning uchun 3x + 4y = 24 chizig'ining o'zi ham sohaga qo'shiladi va u uzluksiz chiziq bilan chiziladi. Endi koordinata boshini sinaymiz: 3·0 + 4·0 = 0, bu 24 dan kichik, demak O(0; 0) shartni bajarmaydi va soha chiziqning qarama-qarshi tomonida yotadi. Javob: chegara chizig'i sohaga kiradi va O(0; 0) sohada yotmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-tekislik-va-chegara-chizigi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#a5d1f7e8"
+    },
+    {
+      "q": "Fermer Sardorning ekin maydoni x + 2y = 10 to'g'ri chiziq bilan chegaralangan, maydonning o'zi koordinata boshi tomonda va chegara chizig'i ham maydonga kiradi. Maydonni ifodalovchi tengsizlikni ko'rsating.",
+      "v": [
+        "x + 2y ≥ 10",
+        "2x + y ≤ 10",
+        "x + 2y ≤ 5",
+        "x + 2y ≤ 10"
+      ],
+      "t": 3,
+      "izoh": "Koordinata boshini shartga qo'yamiz: 0 + 2·0 = 0, bu 10 dan kichik. Demak O(0; 0) joylashgan yarim tekislik x + 2y ≤ 10 tengsizlik bilan beriladi, chegara kiritilgani uchun ishora qat'iy emas. 2x + y ≤ 10 da koeffitsientlar o'rni almashtirilgan, x + 2y ≤ 5 da esa o'ng tomon asossiz ikkiga bo'lingan. Javob: x + 2y ≤ 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sohani-ifodalovchi-tengsizlik-tuzish",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#c2ee9474"
+    },
+    {
+      "q": "ax + y ≤ 7 tengsizlik sohasi A(1; 5) nuqtani o'z ichiga olib, B(−3; 1) nuqtani o'z ichiga olmasligi kerak. a ning eng katta butun qiymatini toping.",
+      "v": [
+        "a = −3",
+        "a = −2",
+        "a = 2",
+        "a = −4"
+      ],
+      "t": 0,
+      "izoh": "A sohada yotishi shartidan a·1 + 5 ≤ 7, ya'ni a ≤ 2. B sohaga kirmasligi uchun unda teskari tengsizlik bajarilishi kerak: a·(−3) + 1 > 7, bundan −3a > 6 va a < −2. Ikki shartning kesishmasi a < −2 bo'ladi, eng katta butun qiymat esa a = −3. a = −2 da B chegarada qolib, sohaga kirib qoladi. Javob: a = −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametrli-nuqta-va-soha-sharti",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#19610d08"
+    },
+    {
+      "q": "x ≥ 0, y ≥ 0 va 2x + 3y ≤ 12 tengsizliklar sistemasi bilan aniqlanadigan sohaning yuzini kvadrat birliklarda hisoblang.",
+      "v": [
+        "24 kv. birlik",
+        "6 kv. birlik",
+        "10 kv. birlik",
+        "12 kv. birlik"
+      ],
+      "t": 3,
+      "izoh": "Soha — koordinata o'qlari va 2x + 3y = 12 chizig'i bilan chegaralangan to'g'ri burchakli uchburchak. Chiziq Ox o'qini x = 6 nuqtada, Oy o'qini y = 4 nuqtada kesadi. Katetlar 6 va 4 ga teng, yuzi S = (6·4) : 2 = 12. 24 — yarmini olishni unutish natijasi, 10 esa katetlarni qo'shib yuborish xatosi. Javob: 12 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#18d64039"
+    },
+    {
+      "q": "x ≥ 1, y ≥ 2 va x + y ≤ 7 shartlar bilan berilgan sohaning yuzi necha kvadrat birlikka teng?",
+      "v": [
+        "16 kv. birlik",
+        "8 kv. birlik",
+        "24,5 kv. birlik",
+        "4 kv. birlik"
+      ],
+      "t": 1,
+      "izoh": "Soha uchlarini topamiz: x = 1 va y = 2 kesishmasi (1; 2); y = 2 va x + y = 7 kesishmasi (5; 2); x = 1 va x + y = 7 kesishmasi (1; 6). Bu to'g'ri burchakli uchburchak bo'lib, katetlari 5 − 1 = 4 va 6 − 2 = 4. Yuzi S = (4·4) : 2 = 8. 24,5 — siljishlarni e'tiborsiz qoldirib, chiziqni koordinata o'qlari bilan olish natijasi. Javob: 8 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#a3e5fa18"
+    },
+    {
+      "q": "Bog'bon Zulfiya gulzor uchun joyni x ≥ 0, y ≥ 0 va 5x + 4y ≤ 40 shartlar bilan chegaraladi, bu yerda o'lchov birligi — metr. Gulzorning yuzi necha kvadrat metrga teng?",
+      "v": [
+        "80 m²",
+        "40 m²",
+        "20 m²",
+        "18 m²"
+      ],
+      "t": 1,
+      "izoh": "5x + 4y = 40 chizig'i Ox o'qini x = 8 da, Oy o'qini y = 10 da kesadi. Demak gulzor — katetlari 8 m va 10 m bo'lgan to'g'ri burchakli uchburchak, yuzi S = (8·10) : 2 = 40 m². 80 — yarmini olish unutilgan javob, 20 — bir marta ortiqcha ikkiga bo'lish, 18 esa katetlarni qo'shish xatosi. Javob: 40 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#e37e127f"
+    },
+    {
+      "q": "y ≥ 0, y ≤ x + 3 va y ≤ 9 − x tengsizliklar sistemasi uchburchak sohani beradi. Shu uchburchakning yuzini toping.",
+      "v": [
+        "18 kv. birlik",
+        "27 kv. birlik",
+        "36 kv. birlik",
+        "72 kv. birlik"
+      ],
+      "t": 2,
+      "izoh": "Uchlarni chiziqlarni juft-juft kesishtirib topamiz: y = 0 va y = x + 3 dan (−3; 0); y = 0 va y = 9 − x dan (9; 0); x + 3 = 9 − x tenglamadan x = 3, y = 6, ya'ni (3; 6). Asos Ox o'qida yotadi, uzunligi 9 − (−3) = 12, uchinchi uchgacha balandlik 6. Yuzi S = (12·6) : 2 = 36. 72 — yarmini olishni unutish, 27 — asosni 9 deb olish natijasi. Javob: 36 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#9c16d241"
+    },
+    {
+      "q": "x ≥ 0, y ≥ 0 va 4x + ky ≤ 24 sistemaning sohasi yuzi 36 kvadrat birlikka teng bo'lsa, musbat k parametrni toping.",
+      "v": [
+        "k = 4",
+        "k = 6",
+        "k = 2",
+        "k = 8"
+      ],
+      "t": 2,
+      "izoh": "Chiziq Ox o'qini x = 24 : 4 = 6 nuqtada, Oy o'qini y = 24 : k nuqtada kesadi. Hosil bo'lgan uchburchak yuzi S = (6 · 24 : k) : 2 = 72 : k. Shartga ko'ra 72 : k = 36, bundan k = 2. Agar yuza formulasida yarmi unutilsa, 144 : k = 36 dan k = 4 chiqadi — bu eng ko'p uchraydigan xato. Javob: k = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shart-boyicha-parametr-topish",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#84f97632"
+    },
+    {
+      "q": "0 ≤ x ≤ 5 va 1 ≤ y ≤ 7 qo'sh tengsizliklar bilan berilgan sohaning yuzini kvadrat birliklarda toping.",
+      "v": [
+        "35 kv. birlik",
+        "24 kv. birlik",
+        "42 kv. birlik",
+        "30 kv. birlik"
+      ],
+      "t": 3,
+      "izoh": "Soha — tomonlari koordinata o'qlariga parallel bo'lgan to'g'ri to'rtburchak. Gorizontal tomoni 5 − 0 = 5 birlik, vertikal tomoni 7 − 1 = 6 birlik. Yuzi S = 5·6 = 30. 35 — y ning quyi chegarasini hisobga olmay 5·7 ni olish, 42 — 6·7 ni olish, 24 — faqat gorizontal tomonni 5 emas, 4 deb olish (4·6) natijasi. Javob: 30 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tortburchakli-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#c97cca3d"
+    },
+    {
+      "q": "x ≥ 0, y ≥ 0, y ≤ 6 va x + y ≤ 10 sistemaning sohasi to'rtburchak shaklida chiqadi. Uning yuzi nechaga teng?",
+      "v": [
+        "50 kv. birlik",
+        "42 kv. birlik",
+        "60 kv. birlik",
+        "48 kv. birlik"
+      ],
+      "t": 1,
+      "izoh": "Agar y ≤ 6 sharti bo'lmasa, soha katetlari 10 va 10 bo'lgan uchburchak bo'lardi, uning yuzi 50. y = 6 chizig'idan yuqoridagi kichik uchburchak kesib tashlanadi: uning uchlari (0; 6), (0; 10) va (4; 6), katetlari 4 va 4, yuzi (4·4) : 2 = 8. Demak S = 50 − 8 = 42. 60 — sohani 10·6 to'g'ri to'rtburchak deb olish xatosi. Javob: 42 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchakli-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#b1c1005f"
+    },
+    {
+      "q": "0 ≤ x ≤ 6, 0 ≤ y ≤ 8 va x + y ≥ 4 tengsizliklar sistemasi bilan aniqlanadigan sohaning yuzini hisoblang.",
+      "v": [
+        "44 kv. birlik",
+        "48 kv. birlik",
+        "40 kv. birlik",
+        "32 kv. birlik"
+      ],
+      "t": 2,
+      "izoh": "Avval to'g'ri to'rtburchakning yuzini topamiz: 6·8 = 48. Undan x + y < 4 shartga mos keluvchi burchak uchburchagini ayiramiz; uning katetlari 4 va 4, yuzi (4·4) : 2 = 8. Demak S = 48 − 8 = 40. 48 — uchinchi shartni e'tiborsiz qoldirish, 44 — kesilgan uchburchak yuzini 8 emas, 4 deb olish natijasi. Javob: 40 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchakli-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#50d79ca2"
+    },
+    {
+      "q": "|x| ≤ 4 va |y − 1| ≤ 3 tengsizliklar sistemasi bilan berilgan sohaning yuzi hamda markazi qaysi variantda to'g'ri ko'rsatilgan?",
+      "v": [
+        "48 kv. birlik, markaz (0; 0)",
+        "24 kv. birlik, markaz (0; 1)",
+        "48 kv. birlik, markaz (0; 1)",
+        "12 kv. birlik, markaz (4; 3)"
+      ],
+      "t": 2,
+      "izoh": "|x| ≤ 4 tengsizlikdan −4 ≤ x ≤ 4, ya'ni sohaning eni 8 birlik. |y − 1| ≤ 3 tengsizlikdan −2 ≤ y ≤ 4, ya'ni bo'yi 6 birlik. Yuzi S = 8·6 = 48. Markaz — o'rta chiziqlar kesishgan nuqta: abssissasi 0, ordinatasi (−2 + 4) : 2 = 1. Markazni (0; 0) deb olish modul ichidagi siljishni ko'rmaslik xatosi. Javob: 48 kv. birlik, markaz (0; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tortburchakli-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#6c412c38"
+    },
+    {
+      "q": "|x| + |y| ≤ 5 tengsizlik bilan aniqlanadigan sohaning yuzi necha kvadrat birlikka teng?",
+      "v": [
+        "25 kv. birlik",
+        "100 kv. birlik",
+        "50 kv. birlik",
+        "20 kv. birlik"
+      ],
+      "t": 2,
+      "izoh": "Soha — uchlari (5; 0), (0; 5), (−5; 0) va (0; −5) nuqtalarda bo'lgan romb, uning diagonallari koordinata o'qlari bo'ylab yotadi va har biri 10 birlikka teng. Diagonallari bo'yicha yuza S = (10·10) : 2 = 50. Umumiy holda |x| + |y| ≤ a sohaning yuzi 2a² ga teng. 25 — faqat a² ni olish, 100 — diagonallar ko'paytmasidan yarmini olishni unutish. Javob: 50 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-tengsizlik-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#13af587d"
+    },
+    {
+      "q": "|x − 2| + |y + 1| ≤ 3 tengsizlik tekislikda qanday shaklni beradi va uning yuzi nechaga teng?",
+      "v": [
+        "Markazi (−2; 1) bo'lgan romb, yuzi 18 kv. birlik",
+        "Markazi (2; −1) bo'lgan romb, yuzi 9 kv. birlik",
+        "Markazi (2; −1) bo'lgan doira, yuzi 9π kv. birlik",
+        "Markazi (2; −1) bo'lgan romb, yuzi 18 kv. birlik"
+      ],
+      "t": 3,
+      "izoh": "u = x − 2 va v = y + 1 almashtirishni kiritamiz, u holda tengsizlik |u| + |v| ≤ 3 ko'rinishga keladi. Bu markazi koordinata boshida bo'lgan, diagonallari 6 va 6 ga teng romb; yuzi (6·6) : 2 = 18. Dastlabki koordinatalarda markaz x = 2, y = −1 nuqtaga siljiydi. Markazni (−2; 1) deb olish — modul ichidagi ishorani teskari o'qish xatosi. Javob: markazi (2; −1) bo'lgan romb, yuzi 18 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-tengsizlik-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#85e2b9a7"
+    },
+    {
+      "q": "|x| ≤ 4, |y| ≤ 4 va |x| + |y| ≥ 4 tengsizliklar sistemasi bilan aniqlanadigan sohaning yuzini toping.",
+      "v": [
+        "16 kv. birlik",
+        "48 kv. birlik",
+        "32 kv. birlik",
+        "64 kv. birlik"
+      ],
+      "t": 2,
+      "izoh": "Birinchi ikki shart tomoni 8 birlik bo'lgan kvadratni beradi, uning yuzi 64. Uchinchi shart bu kvadratdan |x| + |y| < 4 rombni chiqarib tashlaydi; rombning diagonallari 8 va 8, yuzi (8·8) : 2 = 32. Qolgan to'rtta burchak bo'lagining umumiy yuzi 64 − 32 = 32. 64 — uchinchi shartni unutish, 16 — rombni kvadrat deb hisoblash natijasi. Javob: 32 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-tengsizlik-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#0943004e"
+    },
+    {
+      "q": "Shahar markazidan taksi faqat tik burchak ostida kesishuvchi ko'chalar bo'ylab yuradi, shuning uchun 6 km dan oshmaydigan yo'l bilan yetib boriladigan hudud |x| + |y| ≤ 6 tengsizlik bilan tasvirlanadi. Bu hududning yuzi necha kvadrat kilometr?",
+      "v": [
+        "36 kv. km",
+        "72 kv. km",
+        "144 kv. km",
+        "113 kv. km"
+      ],
+      "t": 1,
+      "izoh": "|x| + |y| ≤ a ko'rinishdagi soha — diagonallari 2a va 2a bo'lgan romb. Bu yerda a = 6, demak diagonallar 12 km va 12 km, yuzi esa (12·12) : 2 = 72 kv. km. 36 — faqat a² ni olish, 144 — diagonallar ko'paytmasidan yarmini olishni unutish, 113 esa hududni radiusi 6 km bo'lgan doira deb hisoblash natijasi. Javob: 72 kv. km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-tengsizlik-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#030356d0"
+    },
+    {
+      "q": "x ≥ 0, y ≥ 0 va x + y ≤ 4 shartlarni qanoatlantiruvchi butun koordinatali nuqtalar tekislikda nechta?",
+      "v": [
+        "15 ta",
+        "10 ta",
+        "21 ta",
+        "12 ta"
+      ],
+      "t": 0,
+      "izoh": "x ning har bir butun qiymati uchun y ni sanaymiz. x = 0 da y 0 dan 4 gacha — 5 ta qiymat, x = 1 da 4 ta, x = 2 da 3 ta, x = 3 da 2 ta, x = 4 da 1 ta. Jami 5 + 4 + 3 + 2 + 1 = 15 ta nuqta. 10 — x = 0 ustunini (yoki y = 0 qatorini) tashlab ketish natijasi, 21 esa x + y ≤ 5 sharti uchun chiqadigan javob. Javob: 15 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-nuqta-uchburchak-sohada",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#3bb2d6f6"
+    },
+    {
+      "q": "x ≥ 1, y ≥ 1 va x + y ≤ 7 shartlarni qanoatlantiruvchi butun (x; y) juftliklar sonini toping.",
+      "v": [
+        "21 ta",
+        "15 ta",
+        "36 ta",
+        "18 ta"
+      ],
+      "t": 0,
+      "izoh": "x = 1 bo'lganda y 1 dan 6 gacha qiymat oladi — 6 ta variant, x = 2 da 5 ta, x = 3 da 4 ta, x = 4 da 3 ta, x = 5 da 2 ta, x = 6 da 1 ta. Jami 6 + 5 + 4 + 3 + 2 + 1 = 21 ta juftlik. 36 — x ≥ 1 va y ≥ 1 shartlarini unutib, noldan boshlab sanash natijasi. Javob: 21 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-nuqta-uchburchak-sohada",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#30197fcd"
+    },
+    {
+      "q": "y ≥ 0, y ≤ x va x ≤ 6 tengsizliklar sistemasining sohasida yotgan butun koordinatali nuqtalar soni nechaga teng?",
+      "v": [
+        "21 ta",
+        "28 ta",
+        "36 ta",
+        "24 ta"
+      ],
+      "t": 1,
+      "izoh": "Sanashni x bo'yicha olib boramiz: y 0 dan x gacha o'zgaradi, ya'ni x + 1 ta qiymat. x = 0 da 1 ta, x = 1 da 2 ta va shu tartibda x = 6 da 7 ta. Jami 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28 ta nuqta. 21 — y = 0 qatoridagi 7 ta nuqtani tashlab ketish natijasi, 36 esa har bir x da 6 tadan sanash xatosi. Javob: 28 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-nuqta-uchburchak-sohada",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#05944ae4"
+    },
+    {
+      "q": "Ustoz Rustam o'quvchilariga x ≥ 0, y ≥ 0 va 2x + y ≤ 8 shartlarni qanoatlantiruvchi butun (x; y) juftliklar sonini topishni topshirdi. To'g'ri javob qaysi?",
+      "v": [
+        "16 ta",
+        "25 ta",
+        "30 ta",
+        "45 ta"
+      ],
+      "t": 1,
+      "izoh": "Har bir butun x uchun y 0 dan 8 − 2x gacha qiymat oladi. x = 0 da 9 ta, x = 1 da 7 ta, x = 2 da 5 ta, x = 3 da 3 ta, x = 4 da 1 ta qiymat bor; x = 5 da esa 8 − 10 manfiy bo'lib, yechim qolmaydi. Jami 9 + 7 + 5 + 3 + 1 = 25 ta juftlik. 16 — x = 0 ustunidagi 9 ta nuqtani hisobga olmaslik, 45 esa har bir x da 9 tadan sanash natijasi. Javob: 25 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-nuqta-uchburchak-sohada",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#6ba14a5f"
+    },
+    {
+      "q": "1 ≤ x ≤ 6 va 2 ≤ y ≤ 5 shartlarni qanoatlantiruvchi butun koordinatali nuqtalar nechta?",
+      "v": [
+        "24 ta",
+        "15 ta",
+        "20 ta",
+        "30 ta"
+      ],
+      "t": 0,
+      "izoh": "x uchun 1, 2, 3, 4, 5, 6 — jami 6 ta butun qiymat bor, y uchun 2, 3, 4, 5 — 4 ta qiymat. Har bir x har bir y bilan juftlashadi, demak nuqtalar soni 6·4 = 24. 15 — chegaralar ayirmasini olib 5·3 deb hisoblash, 20 — 5·4, 30 esa 6·5 kabi bittaga adashish natijalari. Javob: 24 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-nuqta-chiziqli-chegarada",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#f51d19b3"
+    },
+    {
+      "q": "Bog'da ko'chatlar butun koordinatali nuqtalarga ekilgan, sug'orish tizimi esa 0 ≤ x ≤ 9 va 0 ≤ y ≤ 4 to'g'ri to'rtburchakni qamrab oladi. Tizim nechta ko'chatni sug'oradi?",
+      "v": [
+        "36 ta",
+        "45 ta",
+        "50 ta",
+        "40 ta"
+      ],
+      "t": 2,
+      "izoh": "x ning butun qiymatlari 0 dan 9 gacha — 10 ta, y ning qiymatlari 0 dan 4 gacha — 5 ta. Ko'chatlar soni 10·5 = 50. 36 — 9·4 deb hisoblash, 45 — 9·5, 40 — 10·4: uchala javob ham chegaradagi nol qatorini yoki nol ustunini yo'qotish xatosidan chiqadi. Javob: 50 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-nuqta-chiziqli-chegarada",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#d688a7fe"
+    },
+    {
+      "q": "0 ≤ x ≤ 4 va 0 ≤ y ≤ x + 1 tengsizliklar bilan berilgan sohadagi butun koordinatali nuqtalar sonini toping.",
+      "v": [
+        "15 ta",
+        "12 ta",
+        "20 ta",
+        "25 ta"
+      ],
+      "t": 2,
+      "izoh": "Har bir x uchun y 0 dan x + 1 gacha, ya'ni x + 2 ta qiymat oladi. x = 0 da 2 ta, x = 1 da 3 ta, x = 2 da 4 ta, x = 3 da 5 ta, x = 4 da 6 ta. Jami 2 + 3 + 4 + 5 + 6 = 20 ta nuqta. 15 — y = 0 qatorini butunlay tashlab ketish, 25 esa har bir x da 5 tadan sanash natijasi. Javob: 20 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-nuqta-chiziqli-chegarada",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#fca2d73d"
+    },
+    {
+      "q": "3x + 2y ≤ 12, x ≥ 0 va y ≥ 0 shartlarni qanoatlantiruvchi butun nuqtalar soni nechaga teng?",
+      "v": [
+        "18 ta",
+        "21 ta",
+        "25 ta",
+        "19 ta"
+      ],
+      "t": 3,
+      "izoh": "Har bir x uchun y ≤ (12 − 3x) : 2 va y butun bo'lishi kerak. x = 0 da y 0 dan 6 gacha — 7 ta, x = 1 da y ≤ 4,5 ya'ni 0 dan 4 gacha — 5 ta, x = 2 da y ≤ 3 — 4 ta, x = 3 da y ≤ 1,5 ya'ni 0 va 1 — 2 ta, x = 4 da faqat y = 0 — 1 ta. Jami 7 + 5 + 4 + 2 + 1 = 19 ta. 21 — kasr chegarani yuqoriga yaxlitlash natijasi. Javob: 19 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-nuqta-chiziqli-chegarada",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#3a3655f8"
+    },
+    {
+      "q": "x² + y² ≤ 49 tengsizlik bilan aniqlanadigan sohaning yuzi qanchaga teng ekanini aniqlang.",
+      "v": [
+        "14π kv. birlik",
+        "49π kv. birlik",
+        "7π kv. birlik",
+        "98π kv. birlik"
+      ],
+      "t": 1,
+      "izoh": "Tengsizlik markazi koordinata boshida, radiusi √49 = 7 bo'lgan doirani chegara aylanasi bilan birga beradi. Doira yuzi S = πr² = π·7² = 49π. 14π — aylana uzunligi formulasi 2πr ni yuza deb olish, 7π — radiusni to'g'ridan-to'g'ri π ga ko'paytirish, 98π esa yuzani ikkilantirib yuborish xatosi. Javob: 49π kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "doira-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#654a73c4"
+    },
+    {
+      "q": "9 ≤ x² + y² ≤ 25 qo'sh tengsizlik halqa shaklidagi sohani beradi. Shu halqaning yuzini toping.",
+      "v": [
+        "16π kv. birlik",
+        "34π kv. birlik",
+        "4π kv. birlik",
+        "8π kv. birlik"
+      ],
+      "t": 0,
+      "izoh": "Ichki aylananing radiusi √9 = 3, tashqi aylananiki esa √25 = 5. Halqa yuzi katta doiradan kichigini ayirish bilan topiladi: S = π·5² − π·3² = 25π − 9π = 16π. 34π — yuzalarni ayirish o'rniga qo'shish, 4π — radiuslar ayirmasi 5 − 3 = 2 ning kvadratini olish, 8π — halqa yuzini asossiz ikkiga bo'lish (16π : 2) natijasi. Javob: 16π kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doira-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#319db5d0"
+    },
+    {
+      "q": "Bog'dagi purkagich (x − 3)² + (y + 2)² ≤ 36 tengsizlik bilan berilgan doirani sug'oradi, o'lchov birligi — metr. Sug'oriladigan maydonning yuzi necha kvadrat metr?",
+      "v": [
+        "6π m²",
+        "12π m²",
+        "72π m²",
+        "36π m²"
+      ],
+      "t": 3,
+      "izoh": "Tengsizlikning o'ng tomoni radius kvadratiga teng: r² = 36, demak r = 6 m. Markaz (3; −2) nuqtada joylashgan, lekin yuza markazning o'rniga bog'liq emas. Yuza S = πr² = π·6² = 36π m². 6π — radiusni π ga ko'paytirish, 12π — aylana uzunligini olish, 72π esa yuzani ikkilantirib yuborish natijasi. Javob: 36π m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "doira-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#5145df9f"
+    },
+    {
+      "q": "Doira shaklidagi maydon x² + y² ≤ 100 tengsizlik bilan berilgan. Undan y ≥ 0 sharti bilan ajratilgan qismning yuzi nechaga teng?",
+      "v": [
+        "100π kv. birlik",
+        "25π kv. birlik",
+        "50π kv. birlik",
+        "10π kv. birlik"
+      ],
+      "t": 2,
+      "izoh": "Radius √100 = 10, butun doiraning yuzi π·10² = 100π. Doira markazi Ox o'qida yotgani uchun y ≥ 0 sharti uni aynan teng ikkiga bo'ladi. Demak izlanayotgan yuza 100π : 2 = 50π. 25π — chorak doirani olish, 10π — radiusni π ga ko'paytirish, 100π esa shartni umuman hisobga olmaslik natijasi. Javob: 50π kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doira-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#cb1573a2"
+    },
+    {
+      "q": "x² + y² ≤ 4 tengsizlik bilan berilgan doirada nechta butun koordinatali nuqta yotadi?",
+      "v": [
+        "13 ta",
+        "9 ta",
+        "21 ta",
+        "12 ta"
+      ],
+      "t": 0,
+      "izoh": "x faqat −2, −1, 0, 1, 2 qiymatlarni olishi mumkin. x = ±2 da y² ≤ 0, ya'ni y = 0 — har birida 1 ta nuqta. x = ±1 da y² ≤ 3, ya'ni y = −1, 0, 1 — har birida 3 ta. x = 0 da y² ≤ 4, ya'ni y −2 dan 2 gacha — 5 ta. Jami 1 + 3 + 5 + 3 + 1 = 13 ta. 12 — markazdagi (0; 0) nuqtani unutish, 9 esa faqat |x| ≤ 1 va |y| ≤ 1 kvadratni sanash natijasi. Javob: 13 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egri-chegarali-sohada-butun-nuqtalar",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#62a7b4a6"
+    },
+    {
+      "q": "x² + y² < 9 qat'iy tengsizlikni qanoatlantiruvchi butun koordinatali nuqtalar soni nechta?",
+      "v": [
+        "29 ta",
+        "21 ta",
+        "25 ta",
+        "13 ta"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlik qat'iy, shuning uchun x² + y² = 9 bo'lgan nuqtalar sanalmaydi. x = −2, −1, 0, 1, 2 qiymatlarining har birida y −2 dan 2 gacha 5 ta qiymat oladi: masalan x = 0 da y² < 9 dan |y| ≤ 2, x = −2 da y² < 5 dan yana |y| ≤ 2. x = ±3 da esa y² < 0 bo'lib, yechim yo'q. Jami 5·5 = 25 ta nuqta. 29 — chegaradagi (±3; 0) va (0; ±3) nuqtalarni ham qo'shib yuborish natijasi. Javob: 25 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egri-chegarali-sohada-butun-nuqtalar",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#8fc8e4fa"
+    },
+    {
+      "q": "Aylana shaklidagi maydonda ustunlar butun koordinatali nuqtalarga o'rnatiladi, maydonning o'zi esa x² + y² ≤ 10 tengsizlik bilan chegaralangan. Nechta ustun o'rnatiladi?",
+      "v": [
+        "33 ta",
+        "49 ta",
+        "29 ta",
+        "37 ta"
+      ],
+      "t": 3,
+      "izoh": "x −3 dan 3 gacha butun qiymatlar oladi. x = ±3 da y² ≤ 1, ya'ni 3 ta qiymat; x = ±2 da y² ≤ 6, ya'ni |y| ≤ 2 — 5 ta; x = ±1 da y² ≤ 9, ya'ni |y| ≤ 3 — 7 ta; x = 0 da y² ≤ 10, yana |y| ≤ 3 — 7 ta. Jami 3 + 5 + 7 + 7 + 7 + 5 + 3 = 37 ta. 29 — radiusni 3 deb, x² + y² ≤ 9 doirani sanash; 49 — tomoni 7 bo'lgan kvadratni sanash; 33 — x = ±1 ustunlarida y² ≤ 9 o'rniga |y| ≤ 2 deb, 7 ta emas 5 tadan sanash natijasi. Javob: 37 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "egri-chegarali-sohada-butun-nuqtalar",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#04fc587c"
+    },
+    {
+      "q": "x² + y² ≤ 8, x ≥ 0 va y ≥ 0 sistemaning sohasida nechta butun koordinatali nuqta bor?",
+      "v": [
+        "6 ta",
+        "12 ta",
+        "16 ta",
+        "9 ta"
+      ],
+      "t": 3,
+      "izoh": "x ≥ 0 va y ≥ 0 shartlari faqat birinchi chorakni qoldiradi. x = 0 da y² ≤ 8, ya'ni y = 0, 1, 2 — 3 ta; x = 1 da y² ≤ 7, yana 3 ta; x = 2 da y² ≤ 4, ya'ni y = 0, 1, 2 — 3 ta; x = 3 da 9 > 8 bo'lgani uchun yechim yo'q. Jami 3·3 = 9 ta nuqta. 6 — x = 0 ustunidagi 3 ta nuqtani tashlab ketish natijasi, 16 esa tomoni 4 bo'lgan kvadratni sanash natijasi. Javob: 9 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "egri-chegarali-sohada-butun-nuqtalar",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#1938e2c1"
+    },
+    {
+      "q": "y < 3x + 2 tengsizlikning koordinata tekisligidagi tasviri qanday bo'lishini quyidagi javoblardan to'g'risini tanlab ko'rsating.",
+      "v": [
+        "Punktir chiziq, soha chiziqdan yuqorida",
+        "To'liq chiziq, soha chiziqdan pastda",
+        "Punktir chiziq, soha chiziqdan pastda",
+        "To'liq chiziq, soha chiziqdan yuqorida"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlik qat'iy bo'lgani uchun y = 3x + 2 chizig'ining nuqtalari sohaga kirmaydi va chiziq punktir bilan chiziladi. y ifodadan kichik bo'lgani uchun soha chiziqdan pastda joylashadi. Buni koordinata boshi bilan tekshirish mumkin: 0 < 2 to'g'ri, demak O(0; 0) sohaga kiradi va u chiziqdan pastda yotadi. Javob: punktir chiziq, soha chiziqdan pastda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-tekislik-va-chegara-chizigi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#4c7825f5"
+    },
+    {
+      "q": "2x − y ≥ 6 tengsizlik bilan berilgan soha haqidagi quyidagi tasdiqlardan qaysi biri to'g'ri?",
+      "v": [
+        "Chegara chizig'i uzluksiz chiziladi va O(0; 0) soha ichida yotadi",
+        "Chegara chizig'i uzluksiz chiziladi, O(0; 0) esa sohaga kirmaydi",
+        "Chegara chizig'i punktir chiziladi va O(0; 0) sohaga kiradi",
+        "Chegara chizig'i punktir chiziladi, O(0; 0) esa sohaga kirmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ishora ≥ bo'lgani uchun 2x − y = 6 chizig'ining nuqtalari ham sohaga kiradi, demak chiziq uzluksiz chiziladi. Koordinata boshini tekshiramiz: 2·0 − 0 = 0, bu 6 dan kichik, shuning uchun O(0; 0) shartni bajarmaydi va sohadan tashqarida qoladi. Javob: chegara chizig'i uzluksiz chiziladi, O(0; 0) esa sohaga kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-tekislik-va-chegara-chizigi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#f53363fa"
+    },
+    {
+      "q": "x² + y² > 16 tengsizlik bilan aniqlanadigan sohaning chizmadagi tasviri qanday bo'lishini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "Aylana uzluksiz chiziladi, soha aylananing ichida",
+        "Aylana punktir chiziladi, soha aylananing ichida",
+        "Aylana uzluksiz chiziladi, soha aylanadan tashqarida",
+        "Aylana punktir chiziladi, soha aylanadan tashqarida"
+      ],
+      "t": 3,
+      "izoh": "Tengsizlik qat'iy, shuning uchun x² + y² = 16 aylananing nuqtalari sohaga kirmaydi va aylana punktir bilan chiziladi. Markazdan uzoqlashgan sari x² + y² ifodaning qiymati ortadi, demak 16 dan katta qiymatlar aylananing tashqarisida hosil bo'ladi. Masalan (5; 0) uchun 25 > 16 to'g'ri, (0; 0) uchun esa 0 > 16 yolg'on. Javob: aylana punktir chiziladi, soha aylanadan tashqarida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yarim-tekislik-va-chegara-chizigi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#ea858232"
+    },
+    {
+      "q": "x + y ≤ 6, x ≥ 0 va y ≥ 0 sohaning faqat chegarasida yotgan butun koordinatali nuqtalar nechta?",
+      "v": [
+        "18 ta",
+        "21 ta",
+        "15 ta",
+        "12 ta"
+      ],
+      "t": 0,
+      "izoh": "Chegara — uchburchakning uchta tomoni. Ox o'qidagi (0; 0) dan (6; 0) gacha 7 ta nuqta, Oy o'qidagi (0; 0) dan (0; 6) gacha 7 ta, gipotenuzadagi (6; 0) dan (0; 6) gacha yana 7 ta nuqta bor. Uchburchakning uchta uchi ikki martadan sanaldi, shuning uchun ularni bir martadan ayiramiz: 7 + 7 + 7 − 3 = 18 ta. 21 — takror sanalgan uchlarni ayirmaslik natijasi. Javob: 18 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-nuqta-uchburchak-sohada",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#855914be"
+    },
+    {
+      "q": "Malika bittasi 5000 so'mdan daftar va bittasi 3000 so'mdan ruchka sotib olmoqchi, qo'lida 30 000 so'm bor. x — daftar, y — ruchka soni bo'lsa, xaridni ifodalovchi tengsizlikni ko'rsating.",
+      "v": [
+        "3x + 5y ≤ 30",
+        "5x + 3y ≥ 30",
+        "5x + 3y ≤ 3000",
+        "5x + 3y ≤ 30"
+      ],
+      "t": 3,
+      "izoh": "Umumiy xarajat 5000x + 3000y so'mga teng va u 30 000 so'mdan oshmasligi kerak: 5000x + 3000y ≤ 30 000. Tengsizlikning har ikki tomonini 1000 ga bo'lsak, 5x + 3y ≤ 30 hosil bo'ladi. 3x + 5y ≤ 30 da narxlar buyumlarga teskari biriktirilgan, ≥ ishorali variantda pulning yetishi emas, aksincha sarflanishi talab qilingan. Javob: 5x + 3y ≤ 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sohani-ifodalovchi-tengsizlik-tuzish",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#81190510"
+    },
+    {
+      "q": "Bekzod bittasi 4000 so'mdan somsa va bittasi 2000 so'mdan non olmoqchi, jami 20 000 so'mgacha sarflay oladi. Har biridan kamida bittadan olsa, nechta xil xarid varianti bor?",
+      "v": [
+        "20 ta",
+        "25 ta",
+        "36 ta",
+        "18 ta"
+      ],
+      "t": 0,
+      "izoh": "Shart 4000x + 2000y ≤ 20 000 bo'lib, 2000 ga bo'lgach 2x + y ≤ 10 ko'rinishga keladi. x = 1 da y 1 dan 8 gacha — 8 ta variant, x = 2 da 6 ta, x = 3 da 4 ta, x = 4 da 2 ta; x = 5 da non uchun pul qolmaydi. Jami 8 + 6 + 4 + 2 = 20 ta. 25 — non sonini noldan sanab, kamida bittadan olish shartini unutish; 36 esa ikkala mahsulot uchun ham shu shartni tashlab yuborish natijasi. Javob: 20 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "byudjet-sohasidagi-butun-yechimlar",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#039742ee"
+    },
+    {
+      "q": "Sardor 80 000 so'mga litri 8000 so'm bo'lgan sut va donasi 20 000 so'm bo'lgan qatiq olmoqchi. Pulni to'liq sarflash shart emas, mahsulot soni butun. Nechta (sut; qatiq) juftlik mumkin?",
+      "v": [
+        "31 ta",
+        "29 ta",
+        "18 ta",
+        "11 ta"
+      ],
+      "t": 1,
+      "izoh": "Shart 8000x + 20 000y ≤ 80 000, ya'ni 2x + 5y ≤ 20. y = 0 da x 0 dan 10 gacha — 11 ta, y = 1 da 2x ≤ 15 dan x ≤ 7 — 8 ta, y = 2 da x ≤ 5 — 6 ta, y = 3 da 2x ≤ 5 dan x ≤ 2 — 3 ta, y = 4 da faqat x = 0 — 1 ta. Jami 11 + 8 + 6 + 3 + 1 = 29 ta. 31 — kasr chegaralarni yuqoriga yaxlitlash, 11 — faqat sut olinadigan hollarni sanash natijasi. Javob: 29 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "byudjet-sohasidagi-butun-yechimlar",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#09344c1a"
+    },
+    {
+      "q": "Kompaniya reklamaga 300 000 so'm ajratdi: bitta banner 60 000 so'm, bitta e'lon 30 000 so'm turadi, kamida 2 ta e'lon berilishi shart. Mumkin bo'lgan (banner; e'lon) butun juftliklar nechta?",
+      "v": [
+        "36 ta",
+        "21 ta",
+        "25 ta",
+        "16 ta"
+      ],
+      "t": 2,
+      "izoh": "60 000x + 30 000y ≤ 300 000 shartni 30 000 ga bo'lamiz: 2x + y ≤ 10. Endi y ≥ 2 shartini hisobga olib sanaymiz: x = 0 da y 2 dan 10 gacha — 9 ta, x = 1 da 2 dan 8 gacha — 7 ta, x = 2 da 5 ta, x = 3 da 3 ta, x = 4 da faqat y = 2 — 1 ta. Jami 9 + 7 + 5 + 3 + 1 = 25 ta. 36 — y ≥ 2 shartini unutib, e'lonlarni noldan sanash natijasi. Javob: 25 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "byudjet-sohasidagi-butun-yechimlar",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#b9e07ac8"
+    },
+    {
+      "q": "Xarid shartlari x ≥ 0, y ≥ 0 va 4x + 5y ≤ 40 tengsizliklar bilan berilgan, bu yerda x va y — kilogrammdagi og'irliklar. Shu shartlarga mos sohaning yuzi nechaga teng?",
+      "v": [
+        "80 kv. birlik",
+        "20 kv. birlik",
+        "40 kv. birlik",
+        "18 kv. birlik"
+      ],
+      "t": 2,
+      "izoh": "4x + 5y = 40 chizig'i Ox o'qini x = 10 nuqtada, Oy o'qini y = 8 nuqtada kesadi. Soha — katetlari 10 va 8 bo'lgan to'g'ri burchakli uchburchak, uning yuzi (10·8) : 2 = 40. 80 — yarmini olishni unutish, 20 — ortiqcha yana bir marta ikkiga bo'lish, 18 esa katetlarni ko'paytirish o'rniga qo'shish natijasi. Javob: 40 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#656765f9"
+    },
+    {
+      "q": "Sexda bitta stolga 4 soat, bitta stulga 2 soat ish vaqti ketadi, kunlik resurs 40 soat, bundan tashqari kuniga 12 tadan ortiq buyum yasalmaydi. Vaziyatga mos sistemani ko'rsating.",
+      "v": [
+        "4x + 2y ≥ 40, x + y ≤ 12, x ≥ 0, y ≥ 0",
+        "2x + 4y ≤ 40, x + y ≤ 12, x ≥ 0, y ≥ 0",
+        "4x + 2y ≤ 40, x + y ≥ 12, x ≥ 0, y ≥ 0",
+        "4x + 2y ≤ 40, x + y ≤ 12, x ≥ 0, y ≥ 0"
+      ],
+      "t": 3,
+      "izoh": "x — stollar, y — stullar soni bo'lsin. Sarflanadigan vaqt 4x + 2y bo'lib, u 40 soatdan oshmaydi. Buyumlarning umumiy soni x + y bo'lib, u 12 dan oshmaydi. Sonlar manfiy bo'la olmaydi. 2x + 4y ≤ 40 da vaqt normalari buyumlarga teskari biriktirilgan, ≥ ishorali variantlarda esa yuqori chegara quyi chegaraga aylantirib yuborilgan. Javob: 4x + 2y ≤ 40, x + y ≤ 12, x ≥ 0, y ≥ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-tuzish-hayotiy-cheklov",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#3165814e"
+    },
+    {
+      "q": "Fermer 20 gektar yerga bug'doy (x gektar) va makkajo'xori (y gektar) ekadi; bug'doyga gektariga 3 mln, makkajo'xoriga 5 mln so'm sarf ketadi, jami mablag' 80 mln so'm. Shartlarni ifodalovchi sistemani tanlang.",
+      "v": [
+        "x + y ≥ 20, 3x + 5y ≤ 80, x ≥ 0, y ≥ 0",
+        "x + y ≤ 20, 5x + 3y ≤ 80, x ≥ 0, y ≥ 0",
+        "x + y ≤ 80, 3x + 5y ≤ 20, x ≥ 0, y ≥ 0",
+        "x + y ≤ 20, 3x + 5y ≤ 80, x ≥ 0, y ≥ 0"
+      ],
+      "t": 3,
+      "izoh": "Ekilgan maydonlar yig'indisi mavjud yerdan oshmaydi: x + y ≤ 20. Sarflangan mablag' 3x + 5y bo'lib, u 80 mln so'mdan oshmaydi: 3x + 5y ≤ 80. Ikkinchi variantda ekin narxlari teskari biriktirilgan, uchinchisida maydon va pul chegaralari almashtirilgan, birinchisida esa yerni to'liq ekish majburiy qilib qo'yilgan. Javob: x + y ≤ 20, 3x + 5y ≤ 80, x ≥ 0, y ≥ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-tuzish-hayotiy-cheklov",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#5f5da5a1"
+    },
+    {
+      "q": "x ≥ 0, y ≥ 0, x + y ≤ 12 va 4x + 2y ≤ 40 sistemaning yechimlar sohasi ko'pburchakdan iborat. Bu ko'pburchakning nechta uchi bor?",
+      "v": [
+        "3 ta uch",
+        "4 ta uch",
+        "5 ta uch",
+        "6 ta uch"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi cheklovni soddalashtiramiz: 2x + y ≤ 20. Chegaralarni juft-juft kesishtiramiz: koordinata boshi (0; 0); 2x + y = 20 va y = 0 dan (10; 0), bu nuqtada x + y = 10 ≤ 12 bajariladi; x + y = 12 va 2x + y = 20 dan x = 8, y = 4; x + y = 12 va x = 0 dan (0; 12), unda 2·0 + 12 = 12 ≤ 20 bajariladi. Demak soha to'rt uchli ko'pburchak. Javob: 4 ta uch.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopburchak-soha-uchlari-va-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#0eb88fb9"
+    },
+    {
+      "q": "Uchlari (0; 0), (10; 0), (8; 4) va (0; 12) nuqtalarda bo'lgan yechimlar sohasining yuzini hisoblang.",
+      "v": [
+        "50 kv. birlik",
+        "72 kv. birlik",
+        "68 kv. birlik",
+        "60 kv. birlik"
+      ],
+      "t": 2,
+      "izoh": "Ko'pburchakni (0; 0) dan (8; 4) ga o'tkazilgan diagonal bilan ikkita uchburchakka ajratamiz. Birinchisi (0; 0), (10; 0), (8; 4): asosi Ox o'qidagi 10 birlik, balandligi 4, yuzi (10·4) : 2 = 20. Ikkinchisi (0; 0), (8; 4), (0; 12): asosi Oy o'qidagi 12 birlik, balandligi 8, yuzi (12·8) : 2 = 48. Umumiy yuza 20 + 48 = 68. 72 — sohani katetlari 12 va 12 bo'lgan uchburchak deb olish natijasi. Javob: 68 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopburchak-soha-uchlari-va-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#142c8563"
+    },
+    {
+      "q": "x ≥ 0, y ≥ 0, x + 2y ≤ 10 va 3x + y ≤ 15 sohada F = 4x + 5y ifodaning eng katta qiymatini toping.",
+      "v": [
+        "25",
+        "31",
+        "20",
+        "35"
+      ],
+      "t": 1,
+      "izoh": "Chiziqli ifodaning eng katta qiymati ko'pburchak sohaning uchlaridan birida erishiladi. Uchlar: (0; 0), (5; 0), (4; 3) va (0; 5), chunki x + 2y = 10 va 3x + y = 15 sistemasidan x = 4, y = 3 chiqadi. Uchlardagi qiymatlar: 0, 20, 16 + 15 = 31 va 25. Eng kattasi 31. 35 — koeffitsientlarni koordinatalar bilan chalkashtirish natijasi. Javob: 31.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maqsad-funksiya-ekstremumi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#ef50c338"
+    },
+    {
+      "q": "Ustaxona A mahsulotdan har biriga 30 ming, B mahsulotdan har biriga 40 ming so'm foyda oladi. Cheklovlar x + y ≤ 9 va 2x + 3y ≤ 24, ikkala son manfiy emas. Eng katta foyda qancha?",
+      "v": [
+        "270 ming so'm",
+        "330 ming so'm",
+        "320 ming so'm",
+        "360 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Sohaning uchlari: (0; 0), (9; 0), (3; 6) va (0; 8). Foyda F = 30x + 40y. Uchlarda: (9; 0) da 270, (3; 6) da 90 + 240 = 330, (0; 8) da 320 ming so'm. Eng katta foyda 330 ming so'm, ya'ni 3 dona A va 6 dona B mahsulot ishlab chiqarilganda. 360 — ikkinchi cheklovni buzadigan (0; 9) nuqtani olish natijasi. Javob: 330 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maqsad-funksiya-ekstremumi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#cebe0caa"
+    },
+    {
+      "q": "x ≥ 1, y ≥ 2 va x + y ≥ 8 shartlar bilan berilgan chegaralanmagan sohada F = 3x + 4y ifodaning eng kichik qiymatini toping.",
+      "v": [
+        "31",
+        "11",
+        "26",
+        "35"
+      ],
+      "t": 2,
+      "izoh": "Soha yuqoriga va o'ngga chegaralanmagan, shuning uchun eng kichik qiymat uning burchak nuqtalarida izlanadi. Burchaklar: x = 1 va x + y = 8 kesishmasi (1; 7) hamda y = 2 va x + y = 8 kesishmasi (6; 2). F(1; 7) = 3 + 28 = 31, F(6; 2) = 18 + 8 = 26. Demak eng kichik qiymat 26. 11 — sohaga umuman kirmaydigan (1; 2) nuqtani olish natijasi. Javob: 26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maqsad-funksiya-ekstremumi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#bd2927af"
+    },
+    {
+      "q": "Zavod kuniga x tonna un va y tonna shakar ishlatadi; ombor sharti x + y ≤ 10, transport sharti 2x + y ≤ 16, ikkala miqdor manfiy emas. Daromad D = 5x + 3y (mln so'm) ning eng katta qiymatini toping.",
+      "v": [
+        "40 mln so'm",
+        "30 mln so'm",
+        "42 mln so'm",
+        "50 mln so'm"
+      ],
+      "t": 2,
+      "izoh": "Sohaning uchlari: (0; 0), (8; 0), (6; 4) va (0; 10), chunki x + y = 10 va 2x + y = 16 sistemasidan x = 6, y = 4 chiqadi. Daromad qiymatlari: (8; 0) da 40, (6; 4) da 30 + 12 = 42, (0; 10) da 30 mln so'm. Eng kattasi 42 mln so'm. 50 — transport shartini buzadigan (10; 0) nuqtani olish natijasi. Javob: 42 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maqsad-funksiya-ekstremumi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#391882d5"
+    },
+    {
+      "q": "Uchlari (0; 0), (6; 0) va (0; 6) nuqtalarda bo'lgan uchburchak soha chegarasi bilan birga qaysi sistema orqali beriladi?",
+      "v": [
+        "x ≥ 0, y ≥ 0, x + y ≤ 6",
+        "x ≥ 0, y ≥ 0, x + y ≥ 6",
+        "x ≤ 0, y ≤ 0, x + y ≤ 6",
+        "x ≥ 0, y ≥ 0, x + y < 6"
+      ],
+      "t": 0,
+      "izoh": "Uchburchak koordinata o'qlari va (6; 0) hamda (0; 6) nuqtalardan o'tuvchi x + y = 6 chizig'i bilan chegaralangan. Shakl birinchi chorakda yotgani uchun x ≥ 0 va y ≥ 0. Ichki nuqta, masalan (1; 1), uchun 1 + 1 = 2 < 6, demak x + y ≤ 6. Chegara sohaga kirgani uchun oxirgi ishora qat'iy emas. Javob: x ≥ 0, y ≥ 0, x + y ≤ 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sohani-ifodalovchi-tengsizlik-tuzish",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#2c89dfc9"
+    },
+    {
+      "q": "Markazi (2; −1) nuqtada, radiusi 5 birlik bo'lgan doiraning chegarasiz ichki qismini ifodalovchi tengsizlikni ko'rsating.",
+      "v": [
+        "(x + 2)² + (y − 1)² < 25",
+        "(x − 2)² + (y + 1)² < 25",
+        "(x − 2)² + (y + 1)² ≤ 5",
+        "(x − 2)² + (y + 1)² > 25"
+      ],
+      "t": 1,
+      "izoh": "Markazi (a; b), radiusi r bo'lgan doiraning ichki qismi (x − a)² + (y − b)² < r² tengsizlik bilan beriladi. Bu yerda a = 2, b = −1 va r = 5, demak (x − 2)² + (y + 1)² < 25. Chegara aylanasi kirmagani uchun ishora qat'iy. Birinchi variantda markaz koordinatalarining ishorasi teskari olingan, uchinchisida r² o'rniga r ning o'zi yozilgan. Javob: (x − 2)² + (y + 1)² < 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sistema-tuzish-hayotiy-cheklov",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#0888d9da"
+    },
+    {
+      "q": "Tomonlari koordinata o'qlariga parallel bo'lgan to'g'ri to'rtburchakning qarama-qarshi uchlari (−3; 1) va (4; 6) nuqtalarda yotadi. Bu to'rtburchakni ifodalovchi sistemani tanlang.",
+      "v": [
+        "−3 ≤ x ≤ 1, 4 ≤ y ≤ 6",
+        "−3 ≤ x ≤ 4, 1 ≤ y ≤ 6",
+        "−3 ≤ y ≤ 4, 1 ≤ x ≤ 6",
+        "1 ≤ x ≤ 6, −3 ≤ y ≤ 4"
+      ],
+      "t": 1,
+      "izoh": "Tomonlar koordinata o'qlariga parallel bo'lgani uchun abssissa uchlarning abssissalari orasida o'zgaradi: −3 ≤ x ≤ 4. Xuddi shunday ordinata uchun 1 ≤ y ≤ 6. Birinchi variantda bitta nuqtaning ikkala koordinatasi x ga, ikkinchisiniki y ga berib yuborilgan, oxirgi ikkitasida esa x va y o'rin almashtirilgan. Javob: −3 ≤ x ≤ 4, 1 ≤ y ≤ 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sistema-tuzish-hayotiy-cheklov",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#ce8aabea"
+    },
+    {
+      "q": "y = x² parabola bilan y = 4 to'g'ri chiziq orasidagi soha chegaralari bilan birga qaysi sistema orqali beriladi?",
+      "v": [
+        "y ≤ x² va y ≤ 4",
+        "y ≥ x² va y ≥ 4",
+        "y ≥ x² va y ≤ 4",
+        "y ≤ x² va y ≥ 4"
+      ],
+      "t": 2,
+      "izoh": "Soha ichidagi nuqtani, masalan (0; 1) ni sinaymiz. U parabolaning ustida yotadi: 1 ≥ 0² to'g'ri, demak birinchi shart y ≥ x². Shu bilan birga u y = 4 chizig'idan pastda: 1 ≤ 4 to'g'ri, demak ikkinchi shart y ≤ 4. y ≤ x² va y ≥ 4 sistemasi esa parabolaning tashqarisidagi butunlay boshqa ikki bo'lakni beradi. Javob: y ≥ x² va y ≤ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parabola-bilan-chegaralangan-soha",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#ab255fa2"
+    },
+    {
+      "q": "y ≥ x² − 4 va y ≤ 0 tengsizliklar sistemasining sohasida nechta butun koordinatali nuqta yotadi?",
+      "v": [
+        "13 ta",
+        "10 ta",
+        "20 ta",
+        "15 ta"
+      ],
+      "t": 3,
+      "izoh": "Soha bo'sh bo'lmasligi uchun x² − 4 ≤ 0, ya'ni −2 ≤ x ≤ 2 bo'lishi kerak. x = −2 va x = 2 da y faqat 0 qiymatni oladi — 1 tadan nuqta; x = −1 va x = 1 da y −3 dan 0 gacha — 4 tadan; x = 0 da y −4 dan 0 gacha — 5 ta. Jami 1 + 4 + 5 + 4 + 1 = 15 ta. 13 — chetdagi x = ±2 ustunlarini tashlab ketish, 10 — y = 0 qatorini hisobga olmaslik natijasi. Javob: 15 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-bilan-chegaralangan-soha",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#bcae3089"
+    },
+    {
+      "q": "A(−3; 5), B(2; 3), C(0; −1) va D(1; 3) nuqtalardan qaysi biri y > x² + 1 tengsizlik sohasida yotadi?",
+      "v": [
+        "A(−3; 5)",
+        "B(2; 3)",
+        "C(0; −1)",
+        "D(1; 3)"
+      ],
+      "t": 3,
+      "izoh": "Har bir nuqta uchun x² + 1 ifodani hisoblab, uni ordinata bilan solishtiramiz. A da 9 + 1 = 10, lekin 5 < 10. B da 4 + 1 = 5, ammo 3 < 5. C da 0 + 1 = 1, lekin −1 < 1. D da 1 + 1 = 2 va 3 > 2 — shart bajariladi. Soha parabolaning ichki, yuqori qismidan iborat. Javob: D(1; 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqtaning-sohaga-tegishliligi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#e2575f96"
+    },
+    {
+      "q": "y ≥ x² va y ≤ x + 6 tengsizliklar sistemasining sohasida nechta butun koordinatali nuqta bor?",
+      "v": [
+        "24 ta",
+        "26 ta",
+        "30 ta",
+        "20 ta"
+      ],
+      "t": 1,
+      "izoh": "Avval x ning chegarasini topamiz: x² ≤ x + 6, ya'ni x² − x − 6 ≤ 0 yoki (x − 3)(x + 2) ≤ 0, bundan −2 ≤ x ≤ 3. Endi har bir x uchun y ni sanaymiz: x = −2 da y faqat 4 — 1 ta; x = −1 da y 1 dan 5 gacha — 5 ta; x = 0 da 0 dan 6 gacha — 7 ta; x = 1 da 1 dan 7 gacha — 7 ta; x = 2 da 4 dan 8 gacha — 5 ta; x = 3 da faqat 9 — 1 ta. Jami 1 + 5 + 7 + 7 + 5 + 1 = 26 ta. 24 — chetdagi x = −2 va x = 3 nuqtalarini tashlab ketish natijasi. Javob: 26 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parabola-bilan-chegaralangan-soha",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#e1c31d13"
+    },
+    {
+      "q": "Ko'prik ravog'ining ichki bo'shlig'i y ≤ 8 − x² va y ≥ 0 tengsizliklar bilan tasvirlanadi, o'lchov birligi — metr. Eni 2 m, balandligi 4 m bo'lgan yuk mashinasi ravoq markazidan o'ta oladimi?",
+      "v": [
+        "Ha, chunki x = ±1 da ravoq balandligi 7 m, bu 4 m dan katta",
+        "Yo'q, chunki ravoqning eng baland nuqtasi 4 m",
+        "Ha, lekin faqat mashinaning eni 1 m dan oshmasa",
+        "Yo'q, chunki x = ±1 da ravoq balandligi 3 m"
+      ],
+      "t": 0,
+      "izoh": "Mashina markazdan o'tgani uchun u −1 ≤ x ≤ 1 oralig'ini egallaydi. Shu oraliqda ravoqning eng past joyi chetlarda bo'ladi: x = ±1 da y = 8 − 1 = 7 m. Mashinaning balandligi 4 m, 4 < 7 bo'lgani uchun u bemalol o'tadi. Ravoqning markazidagi balandlik esa 8 − 0 = 8 m. Javob: ha, chunki x = ±1 da ravoq balandligi 7 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parabola-bilan-chegaralangan-soha",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#4d63d401"
+    },
+    {
+      "q": "Ikki o'zgaruvchining ko'paytmasi uchun yozilgan xy > 0 tengsizlik koordinata tekisligining qaysi qismini aniqlashini ko'rsating.",
+      "v": [
+        "II va IV choraklarning ichki qismi, koordinata o'qlarisiz",
+        "I va II choraklarning ichki qismi",
+        "I va III choraklarning ichki qismi, koordinata o'qlarisiz",
+        "Faqat I chorakning ichki qismi"
+      ],
+      "t": 2,
+      "izoh": "Ko'paytma musbat bo'lishi uchun ikkala ko'paytuvchi bir xil ishorali bo'lishi kerak. x > 0 va y > 0 bo'lsa nuqta I chorakda, x < 0 va y < 0 bo'lsa III chorakda yotadi. Koordinata o'qlarida x yoki y nolga teng bo'lib, ko'paytma nol chiqadi, shuning uchun o'qlar sohaga kirmaydi. II va IV choraklarda ishoralar har xil, ko'paytma manfiy. Javob: I va III choraklarning ichki qismi, koordinata o'qlarisiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soha-shaklini-tavsiflash",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#a9c4574a"
+    },
+    {
+      "q": "xy ≤ 6, x > 0 va y > 0 sistemani qanoatlantiruvchi butun koordinatali nuqtalar soni nechta?",
+      "v": [
+        "12 ta",
+        "14 ta",
+        "16 ta",
+        "10 ta"
+      ],
+      "t": 1,
+      "izoh": "x va y musbat butun sonlar bo'lgani uchun har bir x da y ≤ 6 : x shartni qanoatlantiruvchi qiymatlar sanaladi. x = 1 da y 1 dan 6 gacha — 6 ta, x = 2 da y ≤ 3 — 3 ta, x = 3 da y ≤ 2 — 2 ta, x = 4, x = 5 va x = 6 da esa faqat y = 1 — bittadan. x ≥ 7 bo'lganda hatto y = 1 da ham ko'paytma 6 dan oshadi. Jami 6 + 3 + 2 + 1 + 1 + 1 = 14 ta. 12 — x = 5 va x = 6 ustunlarini tashlab ketish natijasi. Javob: 14 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "egri-chegarali-sohada-butun-nuqtalar",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#1b1ac30a"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi maydonning tomonlari butun metrga teng, yuzi 12 m² dan oshmasligi kerak va x ≤ y deb olinadi. Nechta xil (x; y) juftlik mumkin?",
+      "v": [
+        "35 ta",
+        "19 ta",
+        "20 ta",
+        "12 ta"
+      ],
+      "t": 1,
+      "izoh": "Shart xy ≤ 12 bo'lib, x va y musbat butun sonlar va x ≤ y. x = 1 da y 1 dan 12 gacha — 12 ta; x = 2 da y 2 dan 6 gacha — 5 ta; x = 3 da y 3 dan 4 gacha — 2 ta; x = 4 da y ≥ 4 kerak, lekin 4·4 = 16 > 12, yechim yo'q. Jami 12 + 5 + 2 = 19 ta juftlik. 35 — x ≤ y shartini unutib, (2; 6) va (6; 2) kabi juftliklarni alohida sanash; 20 — (4; 4) ni tekshirmay qo'shib yuborish natijasi. Javob: 19 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "byudjet-sohasidagi-butun-yechimlar",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#c9fc317d"
+    },
+    {
+      "q": "M(3; k) nuqta xy ≥ 12 va y ≤ 10 shartlarni bir vaqtda qanoatlantirishi uchun k ning nechta butun qiymati mavjud?",
+      "v": [
+        "7 ta",
+        "6 ta",
+        "8 ta",
+        "5 ta"
+      ],
+      "t": 0,
+      "izoh": "Nuqtaning koordinatalarini birinchi shartga qo'yamiz: 3k ≥ 12, bundan k ≥ 4. Ikkinchi shartdan k ≤ 10. Demak k qiymatlari 4, 5, 6, 7, 8, 9 va 10 — jami 7 ta. 6 — chegaradagi k = 4 yoki k = 10 ni asossiz chiqarib tashlash, 8 — k = 3 ni ham qo'shib yuborish natijasi. Javob: 7 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrli-nuqta-va-soha-sharti",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#b54f9f1c"
+    },
+    {
+      "q": "0 ≤ x ≤ 4 va 0 ≤ y ≤ x + 2 tengsizliklar bilan berilgan sohaning yuzini kvadrat birliklarda toping.",
+      "v": [
+        "24 kv. birlik",
+        "12 kv. birlik",
+        "16 kv. birlik",
+        "8 kv. birlik"
+      ],
+      "t": 2,
+      "izoh": "Soha — trapetsiya. Uning parallel tomonlari x = 0 va x = 4 vertikallarida yotadi, uzunliklari mos ravishda 0 + 2 = 2 va 4 + 2 = 6. Trapetsiyaning balandligi 4 birlik. Yuzi S = (2 + 6) : 2 · 4 = 16. 24 — sohani 6 va 4 tomonli to'g'ri to'rtburchak deb olish, 12 — faqat qiya bo'lakni uchburchak sifatida hisoblash natijasi. Javob: 16 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trapetsiya-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#85c003dc"
+    },
+    {
+      "q": "1 ≤ x ≤ 4 va 2 ≤ y ≤ 2x tengsizliklar sistemasi bilan aniqlanadigan sohaning yuzi nechaga teng?",
+      "v": [
+        "9 kv. birlik",
+        "12 kv. birlik",
+        "18 kv. birlik",
+        "6 kv. birlik"
+      ],
+      "t": 0,
+      "izoh": "y = 2 va y = 2x chiziqlari (1; 2) nuqtada kesishadi, shuning uchun soha uchlari (1; 2), (4; 2) va (4; 8) bo'lgan to'g'ri burchakli uchburchakdan iborat. Katetlari 4 − 1 = 3 va 8 − 2 = 6 ga teng, yuzi S = (3·6) : 2 = 9. 18 — yarmini olishni unutish, 12 — katetni 3 emas, 4 deb olish natijasi. Javob: 9 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trapetsiya-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#78cb3a07"
+    },
+    {
+      "q": "Yer uchastkasi 0 ≤ x ≤ 30 va 0 ≤ y ≤ 40 − x tengsizliklar bilan berilgan, o'lchov birligi — metr. Uchastkaning yuzi necha kvadrat metr?",
+      "v": [
+        "1200 m²",
+        "800 m²",
+        "375 m²",
+        "750 m²"
+      ],
+      "t": 3,
+      "izoh": "Soha — trapetsiya: chap tomoni x = 0 da 40 m, o'ng tomoni x = 30 da 40 − 30 = 10 m, balandligi esa 30 m. Yuzi S = (40 + 10) : 2 · 30 = 750 m². 1200 — uchastkani 30·40 to'g'ri to'rtburchak deb olish, 800 — x ni 40 gacha davom ettirib uchburchak yasash, 375 esa natijani ortiqcha ikkiga bo'lish xatosi. Javob: 750 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trapetsiya-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#a2e9497e"
+    },
+    {
+      "q": "0 ≤ y ≤ 6, y ≤ x va x ≤ 9 tengsizliklar sistemasi bilan aniqlanadigan sohaning yuzini hisoblang.",
+      "v": [
+        "27 kv. birlik",
+        "36 kv. birlik",
+        "54 kv. birlik",
+        "45 kv. birlik"
+      ],
+      "t": 1,
+      "izoh": "Har bir y uchun x y dan 9 gacha o'zgaradi, ya'ni gorizontal kesmaning uzunligi 9 − y. y = 0 da bu 9, y = 6 da esa 3. Demak soha — parallel tomonlari 9 va 3, balandligi 6 bo'lgan trapetsiya. Yuzi S = (9 + 3) : 2 · 6 = 36. 54 — sohani 9·6 to'g'ri to'rtburchak deb olish, 27 — faqat uchburchak qismini hisoblash natijasi. Javob: 36 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trapetsiya-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#575bb240"
+    },
+    {
+      "q": "(x − 1)(y + 2) > 0 tengsizlik bilan aniqlanadigan sohani to'g'ri tavsiflagan variantni ko'rsating.",
+      "v": [
+        "x > 1 va y > −2, yoki x < 1 va y < −2",
+        "x > 1 va y < −2, yoki x < 1 va y > −2",
+        "Faqat x > 1 va y > −2 shartlar birga bajarilganda",
+        "x > 1 va y > 2, yoki x < 1 va y < 2"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytma musbat bo'lishi uchun ikkala ko'paytuvchining ishorasi bir xil bo'lishi kerak. Birinchi hol: x − 1 > 0 va y + 2 > 0, ya'ni x > 1 va y > −2. Ikkinchi hol: x − 1 < 0 va y + 2 < 0, ya'ni x < 1 va y < −2. Soha x = 1 va y = −2 chiziqlari hosil qilgan to'rtta bo'lakning qarama-qarshi ikkitasidan iborat. Javob: x > 1 va y > −2, yoki x < 1 va y < −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-tengsizlik-sohasi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#9ba47049"
+    },
+    {
+      "q": "(x + 3)(y − 4) ≤ 0 tengsizlik sohasiga quyidagi nuqtalardan qaysi biri tegishli emas?",
+      "v": [
+        "(0; 1)",
+        "(−5; 6)",
+        "(2; 7)",
+        "(−4; 5)"
+      ],
+      "t": 2,
+      "izoh": "Har bir nuqta uchun ko'paytmani hisoblaymiz. (0; 1) da 3·(−3) = −9, bu noldan kichik — nuqta sohada. (−5; 6) da (−2)·2 = −4 — sohada. (−4; 5) da (−1)·1 = −1 — sohada. (2; 7) da esa 5·3 = 15 bo'lib, u noldan katta, demak shart bajarilmaydi. Javob: (2; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-tengsizlik-sohasi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#49e36f7e"
+    },
+    {
+      "q": "x² − y² < 0 tengsizlik bilan aniqlanadigan sohani to'g'ri tavsiflagan javobni tanlang.",
+      "v": [
+        "y = x va y = −x chiziqlari orasidagi, Ox o'qini o'z ichiga oluvchi ikki bo'lak",
+        "y = x va y = −x chiziqlari orasidagi, Oy o'qini o'z ichiga oluvchi ikki bo'lak",
+        "Faqat birinchi chorakning ichki qismi",
+        "y = x chizig'idan yuqoridagi butun yarim tekislik"
+      ],
+      "t": 1,
+      "izoh": "Tengsizlikni ko'paytuvchilarga ajratamiz: (x − y)(x + y) < 0, bu esa |y| > |x| shartga teng kuchli. Ordinatasi kattaroq nuqta, masalan (0; 3), shartni bajaradi: 0 − 9 < 0. Abssissasi kattaroq (3; 0) esa bajarmaydi: 9 − 0 > 0. Demak soha ikkita chiziq orasidagi, Oy o'qini qamrab oluvchi yuqori va quyi bo'laklardan iborat. Javob: Oy o'qini o'z ichiga oluvchi ikki bo'lak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "soha-shaklini-tavsiflash",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#d16a8a4b"
+    },
+    {
+      "q": "(x − 2)(x − 6) ≤ 0 va (y − 1)(y − 5) ≤ 0 tengsizliklar sistemasining sohasi yuzi nechaga teng?",
+      "v": [
+        "20 kv. birlik",
+        "8 kv. birlik",
+        "32 kv. birlik",
+        "16 kv. birlik"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tengsizlik ildizlari orasidagi oraliqni beradi: 2 ≤ x ≤ 6, uzunligi 4. Ikkinchisi xuddi shunday 1 ≤ y ≤ 5, uzunligi ham 4. Demak soha — tomoni 4 birlik bo'lgan kvadrat, yuzi 4·4 = 16. 20 — tomonlarni 4 va 5 deb olish, 32 — yuzani ikkilantirish, 8 esa tomonlarni ko'paytirish o'rniga qo'shish natijasi. Javob: 16 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-tengsizlik-sohasi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#e2f92e25"
+    },
+    {
+      "q": "Quyidagi to'rtta sistemadan qaysi biri chegaralangan, ya'ni butunlay biror doira ichiga joylasha oladigan yopiq sohani beradi?",
+      "v": [
+        "x ≥ 0, y ≥ 0, x + y ≤ 7",
+        "x ≥ 0, y ≥ 0, x + y ≥ 7",
+        "x ≤ 3, y ≥ 1",
+        "y ≥ x, y ≤ x + 4"
+      ],
+      "t": 0,
+      "izoh": "Birinchi sistemada 0 ≤ x ≤ 7 va 0 ≤ y ≤ 7 bo'lib, soha uchburchakdan iborat va u chegaralangan. Ikkinchisida x istalgancha katta bo'lishi mumkin, chunki yuqori chegara yo'q. Uchinchisida y cheksiz o'sadi. To'rtinchisi esa ikkita parallel chiziq orasidagi cheksiz tasma. Javob: x ≥ 0, y ≥ 0, x + y ≤ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegaralangan-yoki-chegaralanmagan-soha",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#91049d0e"
+    },
+    {
+      "q": "x + y ≥ 5, x ≤ 8 va y ≤ 8 sistemaning sohasi chegaralanganmi va agar shunday bo'lsa, uning yuzi qanchaga teng?",
+      "v": [
+        "Ha, yuzi 121 kv. birlik",
+        "Ha, yuzi 60,5 kv. birlik",
+        "Yo'q, soha chegaralanmagan",
+        "Ha, yuzi 64 kv. birlik"
+      ],
+      "t": 1,
+      "izoh": "y ≤ 8 va x + y ≥ 5 shartlaridan x ≥ 5 − y ≥ −3, xuddi shunday y ≥ −3 kelib chiqadi. Demak soha to'rt tomondan chegaralangan. Uning uchlari (−3; 8), (8; 8) va (8; −3); bu to'g'ri burchakli uchburchak bo'lib, katetlari 8 − (−3) = 11 va 11 ga teng. Yuzi S = (11·11) : 2 = 60,5. 121 — yarmini olishni unutish, 64 — sohani tomoni 8 bo'lgan kvadrat deb olish natijasi. Javob: ha, yuzi 60,5 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopburchak-soha-uchlari-va-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#671ac179"
+    },
+    {
+      "q": "y ≥ x² va y ≤ 9 tengsizliklar sistemasining sohasi chegaralanganmi degan savolga to'g'ri javobni tanlang.",
+      "v": [
+        "Yo'q, chunki x cheksiz katta bo'lishi mumkin",
+        "Yo'q, chunki y pastdan chegaralanmagan",
+        "Ha, chegaralangan: −3 ≤ x ≤ 3 va 0 ≤ y ≤ 9",
+        "Ha, lekin faqat x ≥ 0 qismi chegaralangan"
+      ],
+      "t": 2,
+      "izoh": "Ikkala shartdan x² ≤ y ≤ 9 kelib chiqadi, ya'ni x² ≤ 9 va shundan −3 ≤ x ≤ 3. Ordinata pastdan x² ≥ 0 bilan, yuqoridan 9 bilan chegaralangan. Demak soha parabolaning ichida, y = 9 chizig'i ostida yotgan yopiq shakl. Javob: ha, chegaralangan: −3 ≤ x ≤ 3 va 0 ≤ y ≤ 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegaralangan-yoki-chegaralanmagan-soha",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#ccf00f9c"
+    },
+    {
+      "q": "x ≥ 0, y ≥ 0 va xy ≤ 8 tengsizliklar sistemasining sohasi haqida qaysi xulosa to'g'ri?",
+      "v": [
+        "Chegaralanmagan: y = 0 bo'lganda x istalgancha katta bo'lishi mumkin",
+        "Chegaralangan, chunki ko'paytma 8 dan oshmaydi",
+        "Chegaralangan: bu yerda x ≤ 8 va y ≤ 8",
+        "Chegaralanmagan, chunki soha to'rtala chorakni qamrab oladi"
+      ],
+      "t": 0,
+      "izoh": "y = 0 bo'lganda ko'paytma xy = 0 bo'lib, shart har qanday x da bajariladi — demak soha Ox o'qi bo'ylab cheksiz cho'ziladi, xuddi shunday Oy o'qi bo'ylab ham. Shu sababli soha chegaralanmagan. Ammo x ≥ 0 va y ≥ 0 shartlari uni faqat birinchi chorakda qoldiradi, shuning uchun oxirgi variantdagi sabab noto'g'ri. Javob: chegaralanmagan, chunki y = 0 da x istalgancha katta bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegaralangan-yoki-chegaralanmagan-soha",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#072d6bc8"
+    },
+    {
+      "q": "|x| + 2|y| ≤ 8 tengsizlik bilan aniqlanadigan soha qanday simmetriyaga ega ekanini ko'rsating.",
+      "v": [
+        "Faqat Ox o'qiga nisbatan simmetrik",
+        "Faqat Oy o'qiga nisbatan simmetrik",
+        "Hech qanday simmetriya o'qiga ega emas",
+        "Ikkala koordinata o'qiga va koordinata boshiga nisbatan simmetrik"
+      ],
+      "t": 3,
+      "izoh": "Tengsizlikda x va y faqat modul ostida qatnashadi. x ni −x ga almashtirsak |−x| = |x| bo'lib, tengsizlik o'zgarmaydi — demak soha Oy o'qiga nisbatan simmetrik. Xuddi shunday y ni −y ga almashtirish ham hech narsani o'zgartirmaydi — soha Ox o'qiga nisbatan ham simmetrik. Ikkala o'qqa nisbatan simmetriya koordinata boshiga nisbatan markaziy simmetriyani ham beradi. Javob: ikkala koordinata o'qiga va koordinata boshiga nisbatan simmetrik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soha-shaklini-tavsiflash",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#1b371197"
+    },
+    {
+      "q": "x² + y² ≤ 25 va y ≥ 0 sistemaning sohasi qaysi to'g'ri chiziqqa nisbatan simmetrik bo'ladi?",
+      "v": [
+        "x = 0 to'g'ri chiziqqa nisbatan",
+        "y = 0 to'g'ri chiziqqa nisbatan",
+        "y = x to'g'ri chiziqqa nisbatan",
+        "Bu sohaning simmetriya o'qi umuman yo'q"
+      ],
+      "t": 0,
+      "izoh": "Soha — radiusi 5 birlik bo'lgan yarim doira, u Ox o'qidan yuqorida yotadi. x ni −x ga almashtirganda x² o'zgarmaydi va y ≥ 0 sharti ham saqlanadi, demak shakl Oy o'qiga, ya'ni x = 0 chizig'iga nisbatan simmetrik. y ni −y ga almashtirsak y ≥ 0 sharti buziladi, shuning uchun y = 0 simmetriya o'qi bo'la olmaydi. Javob: x = 0 to'g'ri chiziqqa nisbatan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soha-shaklini-tavsiflash",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#0a7166f3"
+    },
+    {
+      "q": "y ≥ |x| − 4 va y ≤ 4 tengsizliklar sistemasi bilan aniqlanadigan sohaning yuzini kvadrat birliklarda toping.",
+      "v": [
+        "128 kv. birlik",
+        "32 kv. birlik",
+        "64 kv. birlik",
+        "16 kv. birlik"
+      ],
+      "t": 2,
+      "izoh": "Sohaning eng past nuqtasi (0; −4), yuqoridan u y = 4 chizig'i bilan kesilgan. |x| − 4 = 4 tenglamadan x = ±8 chiqadi, demak yuqori tomonning uzunligi 16 birlik. Shakl — uchlari (0; −4), (−8; 4) va (8; 4) bo'lgan uchburchak, balandligi 4 − (−4) = 8. Yuzi S = (16·8) : 2 = 64. 128 — yarmini olishni unutish, 32 — asosni 16 emas, 8 deb olish natijasi. Javob: 64 kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-tengsizlik-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#fe878c73"
+    },
+    {
+      "q": "x² + y² ≤ 36, x ≥ 0 va y ≥ 0 sistemaning sohasi yuzi nechaga teng?",
+      "v": [
+        "9π kv. birlik",
+        "36π kv. birlik",
+        "18π kv. birlik",
+        "12π kv. birlik"
+      ],
+      "t": 0,
+      "izoh": "Radius √36 = 6, butun doiraning yuzi π·6² = 36π. x ≥ 0 va y ≥ 0 shartlari doiraning faqat birinchi chorakdagi qismini, ya'ni to'rtdan birini qoldiradi. Demak S = 36π : 4 = 9π. 18π — yarim doirani olish, 12π — yuzani to'rtga emas, uchga bo'lish natijasi. Javob: 9π kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "doira-soha-yuzi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#3f2d5455"
+    },
+    {
+      "q": "Tomonlari koordinata o'qlariga parallel bo'lgan |x| ≤ 5, |y| ≤ 5 kvadrat va x² + y² ≤ 25 doira kesishmasining yuzi nechaga teng?",
+      "v": [
+        "100 kv. birlik",
+        "50π kv. birlik",
+        "100 − 25π kv. birlik",
+        "25π kv. birlik"
+      ],
+      "t": 3,
+      "izoh": "Kvadratning tomoni 10 birlik, markazdan har bir tomongacha masofa esa 5 birlik. Doiraning radiusi ham 5, demak doira kvadratga ichki chizilgan va butunlay uning ichida yotadi. Shu sababli kesishma doiraning o'ziga teng va yuzi S = π·5² = 25π. 100 — kvadratning yuzi, 100 − 25π esa kvadratdan doira olib tashlangandagi qism. Javob: 25π kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-va-doira-yuzalari",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#8c080d7a"
+    },
+    {
+      "q": "|x| ≤ 4 va |y| ≤ 4 kvadratdan x² + y² ≤ 16 doira olib tashlansa, qolgan to'rtta burchak bo'lagining umumiy yuzi qanday bo'ladi?",
+      "v": [
+        "64 − 16π kv. birlik",
+        "64 − 4π kv. birlik",
+        "16π − 64 kv. birlik",
+        "32 − 16π kv. birlik"
+      ],
+      "t": 0,
+      "izoh": "Kvadratning tomoni 8 birlik, yuzi 8·8 = 64. Doiraning radiusi √16 = 4 bo'lib, u kvadratga ichki chizilgan, ya'ni butunlay uning ichida. Doira yuzi π·4² = 16π. Qolgan qism S = 64 − 16π ≈ 13,7 kv. birlik. 16π − 64 manfiy chiqadi va yuza bo'la olmaydi, 64 − 4π da esa radius kvadratga ko'tarilmagan. Javob: 64 − 16π kv. birlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-va-doira-yuzalari",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#2bf17a99"
+    },
+    {
+      "q": "Radiusi 6 m bo'lgan aylana shaklidagi hovuz tomoni 12 m bo'lgan kvadrat maydonning o'rtasiga qurilgan. Hovuz atrofidagi plitka yotqiziladigan qismning yuzi qanday?",
+      "v": [
+        "144 − 6π m²",
+        "36π m²",
+        "144 − 36π m²",
+        "144 − 12π m²"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat maydonning yuzi 12·12 = 144 m². Hovuzning yuzi π·6² = 36π ≈ 113 m², radius maydon tomonining yarmiga teng bo'lgani uchun hovuz maydonga ichki chizilgan. Plitka qismi S = 144 − 36π ≈ 31 m². 36π — hovuzning o'z yuzi, 144 − 12π da esa yuza o'rniga aylana uzunligi ayrilgan. Javob: 144 − 36π m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-va-doira-yuzalari",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#555fac35"
+    },
+    {
+      "q": "y ≤ 4 − x² va y ≥ c tengsizliklar sistemasi kamida bitta yechimga ega bo'lishi uchun c ning eng katta qiymati nechaga teng?",
+      "v": [
+        "c = 2",
+        "c = 4",
+        "c = 0",
+        "c = −4"
+      ],
+      "t": 1,
+      "izoh": "Sistema yechimga ega bo'lishi uchun c ≤ 4 − x² tengsizlikni qanoatlantiruvchi hech bo'lmaganda bitta x topilishi kerak. 4 − x² ifodaning eng katta qiymati x = 0 da erishiladi va u 4 ga teng. Demak c ≤ 4, eng katta qiymat esa c = 4; bu holda yagona yechim (0; 4) nuqta bo'ladi. Javob: c = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametrli-nuqta-va-soha-sharti",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#02934dc7"
+    },
+    {
+      "q": "x² + y² ≤ 9 va y ≥ m sistemaning yechimlar sohasi bo'sh bo'lmasligi uchun m qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "m ≤ 3",
+        "m ≤ 9",
+        "m ≥ 3",
+        "m ≤ −3"
+      ],
+      "t": 0,
+      "izoh": "Doiraning radiusi √9 = 3, markazi koordinata boshida, shuning uchun undagi ordinatalarning eng kattasi (0; 3) nuqtada 3 ga teng. y ≥ m shartni bajaradigan nuqta topilishi uchun m shu eng katta qiymatdan oshmasligi kerak, ya'ni m ≤ 3. m ≤ 9 — radius o'rniga r² ni olish, m ≤ −3 esa eng kichik ordinataga qarab xulosa chiqarish natijasi. Javob: m ≤ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametrli-nuqta-va-soha-sharti",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#80f0de25"
+    },
+    {
+      "q": "x ≥ 0, y ≥ 0 va x + y ≤ a sistemaning sohasi yuzi 50 kvadrat birlikka teng bo'lsa, musbat a ni toping.",
+      "v": [
+        "a = 50",
+        "a = 25",
+        "a = 14",
+        "a = 10"
+      ],
+      "t": 3,
+      "izoh": "Chiziq koordinata o'qlarini x = a va y = a nuqtalarda kesadi, shuning uchun soha katetlari a va a bo'lgan to'g'ri burchakli uchburchak bo'ladi. Uning yuzi S = a² : 2. Shartga ko'ra a² : 2 = 50, bundan a² = 100 va a = 10. a = 14 ≈ √200 — a² : 2 = 50 dan a² = 100 o'rniga xato ravishda a² = 4·50 = 200 olish natijasi. Javob: a = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shart-boyicha-parametr-topish",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#a6845a2b"
+    },
+    {
+      "q": "Markazi koordinata boshida bo'lgan x² + y² ≤ r² doirada kamida 25 ta butun koordinatali nuqta bo'lishi uchun r ning eng kichik butun qiymatini toping.",
+      "v": [
+        "r = 5",
+        "r = 4",
+        "r = 3",
+        "r = 2"
+      ],
+      "t": 2,
+      "izoh": "r = 2 bo'lganda doirada 1 + 3 + 5 + 3 + 1 = 13 ta butun nuqta bor, bu 25 tadan kam. r = 3 da esa x = ±3 da 1 tadan, x = ±2 da 5 tadan, x = ±1 da 5 tadan va x = 0 da 7 ta nuqta bo'ladi, jami 1 + 5 + 5 + 7 + 5 + 5 + 1 = 29 ta. 29 ≥ 25 bo'lgani uchun eng kichik butun radius r = 3. Javob: r = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shart-boyicha-parametr-topish",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#1279297a"
+    },
+    {
+      "q": "Uyali aloqa minorasi (2; −3) nuqtada joylashgan va 8 km radiusda signal beradi. Qamrov hududini ifodalovchi tengsizlikni ko'rsating.",
+      "v": [
+        "(x − 2)² + (y + 3)² ≤ 64",
+        "(x + 2)² + (y − 3)² ≤ 64",
+        "(x − 2)² + (y + 3)² ≤ 8",
+        "(x − 2)² + (y + 3)² ≥ 64"
+      ],
+      "t": 0,
+      "izoh": "Markazi (a; b), radiusi r bo'lgan doira (x − a)² + (y − b)² ≤ r² tengsizlik bilan beriladi. Bu yerda a = 2 va b = −3, shuning uchun ikkinchi qavsda y − (−3) = y + 3 hosil bo'ladi. Radius 8 km, demak o'ng tomonda 8² = 64 turadi. ≥ ishorali variant qamrovdan tashqaridagi hududni, o'ng tomonida 8 turgan variant esa radiusi √8 bo'lgan doirani beradi. Javob: (x − 2)² + (y + 3)² ≤ 64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aloqa-qamrovi-hududi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#52719d26"
+    },
+    {
+      "q": "Minora (2; −3) nuqtada joylashgan va 8 km radiusda signal beradi. A(6; 0) koordinatali qishloq shu minoraning qamrov hududiga kiradimi?",
+      "v": [
+        "Yo'q, chunki masofa 25 km ga teng",
+        "Yo'q, chunki qishloq minoradan boshqa chorakda joylashgan",
+        "Ha, chunki masofa aynan 8 km ga teng",
+        "Ha, chunki masofa 5 km, bu 8 km dan kichik"
+      ],
+      "t": 3,
+      "izoh": "Qishloq koordinatalarini tengsizlikka qo'yamiz: (6 − 2)² + (0 + 3)² = 16 + 9 = 25. Bu qiymat 8² = 64 dan kichik, demak shart bajariladi. Masofaning o'zi √25 = 5 km bo'lib, u radiusdan kichik. 25 — masofa o'rniga uning kvadratini olish natijasi, chorak haqidagi mulohaza esa qamrovga umuman aloqador emas. Javob: ha, masofa 5 km, bu 8 km dan kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aloqa-qamrovi-hududi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#58786ca0"
+    },
+    {
+      "q": "Ikki minora M(0; 0) va N(12; 0) nuqtalarda joylashgan, har biri 7 km radiusda signal beradi. Ikkala minora ham qamrab oladigan umumiy hudud mavjudmi?",
+      "v": [
+        "Yo'q, chunki 12 soni 7 dan katta",
+        "Ha, chunki markazlar orasidagi masofa 12 km, u 7 + 7 = 14 km dan kichik",
+        "Yo'q, chunki radiuslar teng bo'lganda doiralar kesishmaydi",
+        "Ha, chunki 12 = 7 + 5 tenglik o'rinli"
+      ],
+      "t": 1,
+      "izoh": "Ikki doira kesishishi uchun markazlar orasidagi masofa radiuslar yig'indisidan kichik bo'lishi kerak. Bu yerda MN = 12 km, radiuslar yig'indisi esa 7 + 7 = 14 km. 12 < 14 bo'lgani uchun doiralar kesishadi va umumiy qamrov hududi mavjud. Masofani bitta radius bilan solishtirish (12 > 7) noto'g'ri mezon, radiuslarning tengligi esa kesishuvga to'sqinlik qilmaydi. Javob: ha, 12 km masofa 14 km dan kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aloqa-qamrovi-hududi",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#b9e8f470"
+    },
+    {
+      "q": "Tomoni 10 m bo'lgan kvadrat uchastkaning burchagiga radiusi 10 m bo'lgan purkagich o'rnatildi va u chorak doirani sug'oradi. Sug'orilmagan qismning yuzi qanday?",
+      "v": [
+        "100 − 100π m²",
+        "25π m²",
+        "100 − 25π m²",
+        "100 − 50π m²"
+      ],
+      "t": 2,
+      "izoh": "Uchastkaning yuzi 10·10 = 100 m². Purkagich burchakda joylashgani uchun uchastka ichida doiraning to'rtdan bir qismi qoladi, uning yuzi (π·10²) : 4 = 25π ≈ 78,5 m². Sug'orilmagan qism S = 100 − 25π ≈ 21,5 m². 25π — sug'orilgan qismning o'zi, 100 − 100π esa chorakka bo'lishni unutish natijasi. Javob: 100 − 25π m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-va-doira-yuzalari",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#72d13dfb"
+    },
+    {
+      "q": "0 ≤ x ≤ 6 va 0 ≤ y ≤ 6 kvadratdan tasodifiy nuqta tanlanadi. Uning x + y ≤ 6 shartni qanoatlantirish ehtimoli nechaga teng?",
+      "v": [
+        "0,5",
+        "0,25",
+        "0,75",
+        "1/3"
+      ],
+      "t": 0,
+      "izoh": "Kvadratning yuzi 6·6 = 36. Qulay soha — katetlari 6 va 6 bo'lgan uchburchak, uning yuzi (6·6) : 2 = 18. Geometrik ehtimollik yuzalar nisbatiga teng: P = 18 : 36 = 0,5. 0,25 — uchburchakni kvadratning to'rtdan biri deb olish, 0,75 esa teskari hodisaning ehtimolini yozib qo'yish natijasi. Javob: 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-ehtimollik-sohada",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#ad3fff96"
+    },
+    {
+      "q": "Tomoni 10 sm bo'lgan kvadrat nishonning markazida radiusi 3 sm bo'lgan doira bor. Nishonga tekkan o'qning shu doiraga tushish ehtimolini toping.",
+      "v": [
+        "3π/100",
+        "9π/10",
+        "6π/100",
+        "9π/100"
+      ],
+      "t": 3,
+      "izoh": "Nishonning yuzi 10·10 = 100 sm². Markazdagi doiraning yuzi π·3² = 9π sm². Geometrik ehtimollik yuzalar nisbati bilan topiladi: P = 9π : 100 = 9π/100 ≈ 0,283. 3π/100 — radiusni kvadratga ko'tarmaslik, 6π/100 — yuza o'rniga aylana uzunligini olish natijasi. Javob: 9π/100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-ehtimollik-sohada",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#b922f504"
+    },
+    {
+      "q": "|x| ≤ 2 va |y| ≤ 2 kvadratdan tasodifiy nuqta tanlanadi. Uning x² + y² ≤ 4 doiraga tushish ehtimoli qanday?",
+      "v": [
+        "π/2",
+        "π/4",
+        "π/16",
+        "4π"
+      ],
+      "t": 1,
+      "izoh": "Kvadratning tomoni 4 birlik, yuzi 16. Doiraning radiusi 2, yuzi π·2² = 4π bo'lib, u kvadratga ichki chizilgan. Ehtimollik P = 4π : 16 = π/4 ≈ 0,785. π/2 — kvadrat yuzini 8 deb olish, π/16 esa doira yuzasida radiusni kvadratga ko'tarmaslik natijasi. Javob: π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-ehtimollik-sohada",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#cf925e34"
+    },
+    {
+      "q": "Tomoni 12 m bo'lgan kvadrat maydonning har bir burchagida radiusi 6 m bo'lgan chorak doira shaklida gulzor bor. Tasodifiy tushgan koptokning gulzorga tushmaslik ehtimolini toping.",
+      "v": [
+        "π/4",
+        "1 − π/2",
+        "1 − 36π",
+        "1 − π/4"
+      ],
+      "t": 3,
+      "izoh": "To'rtta chorak doira birlashib, radiusi 6 m bo'lgan bitta to'liq doiraga teng yuzani beradi: π·6² = 36π ≈ 113 m². Maydonning yuzi 12·12 = 144 m². Gulzorga tushish ehtimoli 36π : 144 = π/4, demak tushmaslik ehtimoli 1 − π/4 ≈ 0,215. π/4 — teskari hodisaning ehtimoli, 1 − 36π esa yuzalar nisbatini olishni unutish natijasi. Javob: 1 − π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-va-doira-yuzalari",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#19f02176"
+    },
+    {
+      "q": "|x| + |y| ≤ 2 tengsizlikni qanoatlantiruvchi butun koordinatali nuqtalar soni nechta?",
+      "v": [
+        "9 ta",
+        "12 ta",
+        "13 ta",
+        "8 ta"
+      ],
+      "t": 2,
+      "izoh": "x ning qiymatlari −2 dan 2 gacha bo'ladi. x = ±2 da |y| ≤ 0, ya'ni y = 0 — 1 tadan nuqta; x = ±1 da |y| ≤ 1, ya'ni y = −1, 0, 1 — 3 tadan; x = 0 da |y| ≤ 2 — 5 ta. Jami 1 + 3 + 5 + 3 + 1 = 13 ta. 12 — koordinata boshini sanamaslik, 8 — faqat chegarada yotgan nuqtalarni olish natijasi. Javob: 13 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-sohada-butun-nuqtalar",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#da9ed3cb"
+    },
+    {
+      "q": "|x| + |y| ≤ 5 tengsizlik bilan aniqlanadigan rombda nechta butun koordinatali nuqta yotadi?",
+      "v": [
+        "61 ta",
+        "41 ta",
+        "51 ta",
+        "36 ta"
+      ],
+      "t": 0,
+      "izoh": "Har bir butun x uchun |y| ≤ 5 − |x| bo'lib, y ning qiymatlari soni 2(5 − |x|) + 1 ga teng. x = 0 da 11 ta, x = ±1 da 9 tadan, x = ±2 da 7 tadan, x = ±3 da 5 tadan, x = ±4 da 3 tadan, x = ±5 da 1 tadan nuqta bor. Jami 11 + 2·(9 + 7 + 5 + 3 + 1) = 11 + 50 = 61 ta. 41 — xuddi shu usul bilan |x| + |y| ≤ 4 uchun chiqadigan javob. Javob: 61 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-sohada-butun-nuqtalar",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#c9d84524"
+    },
+    {
+      "q": "Sardor shahar markazidan ko'chalar bo'ylab yurib, 3 blokdan oshmaydigan masofadagi chorrahalarni sanamoqchi; har bir chorraha butun koordinatali nuqta. Markazning o'zi ham sanalsa, nechta chorraha bor?",
+      "v": [
+        "49 ta",
+        "13 ta",
+        "24 ta",
+        "25 ta"
+      ],
+      "t": 3,
+      "izoh": "Shart |x| + |y| ≤ 3 ko'rinishida yoziladi. x = 0 da y −3 dan 3 gacha — 7 ta, x = ±1 da |y| ≤ 2 — 5 tadan, x = ±2 da |y| ≤ 1 — 3 tadan, x = ±3 da faqat y = 0 — 1 tadan. Jami 7 + 2·(5 + 3 + 1) = 7 + 18 = 25 ta chorraha. 24 — markazning o'zini sanamaslik, 49 — tomoni 7 bo'lgan kvadratni sanash, 13 esa |x| + |y| ≤ 2 uchun chiqadigan javob. Javob: 25 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-sohada-butun-nuqtalar",
+      "id": "matematika_tngs_m13-ikki-ozgaruvchili-tengsizliklar-va-tekislikdagi#fdd0487a"
+    }
+  ]
+}

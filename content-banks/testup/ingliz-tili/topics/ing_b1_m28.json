@@ -1,0 +1,1306 @@
+{
+  "nom": "Health (Sog'liq)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "\"kasallik\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "disease",
+        "diet",
+        "illness",
+        "stress"
+      ],
+      "t": 2,
+      "izoh": "kasallik = illness.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#b657e736"
+    },
+    {
+      "q": "\"illness\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "kasallik",
+        "stress",
+        "dori",
+        "alomat"
+      ],
+      "t": 0,
+      "izoh": "illness = kasallik.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#a947df21"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"the state of being ill or unhealthy\"?",
+      "v": [
+        "illness",
+        "injury",
+        "fever",
+        "stress"
+      ],
+      "t": 0,
+      "izoh": "illness = kasallik.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#4b6de6eb"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: He missed school because of a short ___ .",
+      "v": [
+        "recover",
+        "appointment",
+        "diet",
+        "illness"
+      ],
+      "t": 3,
+      "izoh": "illness = kasallik.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#221627c7"
+    },
+    {
+      "q": "\"illness\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "the state of being ill or unhealthy",
+        "a person who is receiving medical care",
+        "physical activity done to stay fit",
+        "an arranged time to see a doctor"
+      ],
+      "t": 0,
+      "izoh": "illness = kasallik.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#a2979d76"
+    },
+    {
+      "q": "\"xastalik\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "exercise",
+        "cure",
+        "disease",
+        "pain"
+      ],
+      "t": 2,
+      "izoh": "xastalik = disease.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#d729a632"
+    },
+    {
+      "q": "\"disease\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "xastalik",
+        "jismoniy mashq",
+        "parhez",
+        "og'riq"
+      ],
+      "t": 0,
+      "izoh": "disease = xastalik.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#3ff2cc6c"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"a medical condition that makes you ill\"?",
+      "v": [
+        "diet",
+        "treatment",
+        "disease",
+        "cure"
+      ],
+      "t": 2,
+      "izoh": "disease = xastalik.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#27cce1ea"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: Doctors are trying to stop the ___ from spreading.",
+      "v": [
+        "injury",
+        "cure",
+        "medicine",
+        "disease"
+      ],
+      "t": 3,
+      "izoh": "disease = xastalik.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#2464dcdd"
+    },
+    {
+      "q": "\"disease\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "a medical condition that makes you ill",
+        "a feeling of worry caused by pressure in life",
+        "a sign that shows you may have an illness",
+        "a person who is receiving medical care"
+      ],
+      "t": 0,
+      "izoh": "disease = xastalik.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#bcca73c6"
+    },
+    {
+      "q": "\"alomat\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "symptom",
+        "disease",
+        "pain",
+        "fever"
+      ],
+      "t": 0,
+      "izoh": "alomat = symptom.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#2b7c5a40"
+    },
+    {
+      "q": "\"symptom\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "jarohat",
+        "alomat",
+        "parhez",
+        "og'riq"
+      ],
+      "t": 1,
+      "izoh": "symptom = alomat.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#fbd2b537"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"a sign that shows you may have an illness\"?",
+      "v": [
+        "ambulance",
+        "illness",
+        "recover",
+        "symptom"
+      ],
+      "t": 3,
+      "izoh": "symptom = alomat.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#35bd834d"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: A high temperature is a common ___ of the flu.",
+      "v": [
+        "symptom",
+        "illness",
+        "cure",
+        "recover"
+      ],
+      "t": 0,
+      "izoh": "symptom = alomat.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#ae36c058"
+    },
+    {
+      "q": "\"symptom\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "a pain in your head",
+        "an arranged time to see a doctor",
+        "physical harm or damage to the body",
+        "a sign that shows you may have an illness"
+      ],
+      "t": 3,
+      "izoh": "symptom = alomat.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#33e4f1d5"
+    },
+    {
+      "q": "\"isitma\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "recover",
+        "cure",
+        "fever",
+        "ambulance"
+      ],
+      "t": 2,
+      "izoh": "isitma = fever.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#6240b3cf"
+    },
+    {
+      "q": "\"fever\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "isitma",
+        "sog'lom",
+        "jarohat",
+        "operatsiya"
+      ],
+      "t": 0,
+      "izoh": "fever = isitma.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#6ed62be5"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"a body temperature that is higher than normal\"?",
+      "v": [
+        "fever",
+        "cure",
+        "surgery",
+        "ambulance"
+      ],
+      "t": 0,
+      "izoh": "fever = isitma.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#496d6925"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: The child has a ___ and feels very hot.",
+      "v": [
+        "recover",
+        "diet",
+        "disease",
+        "fever"
+      ],
+      "t": 3,
+      "izoh": "fever = isitma.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#86c5f85c"
+    },
+    {
+      "q": "\"fever\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "a vehicle that takes sick people to hospital",
+        "a substance you take to treat an illness",
+        "a body temperature that is higher than normal",
+        "a person who is receiving medical care"
+      ],
+      "t": 2,
+      "izoh": "fever = isitma.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#4321b651"
+    },
+    {
+      "q": "\"bosh og'rig'i\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "appointment",
+        "headache",
+        "medicine",
+        "stress"
+      ],
+      "t": 1,
+      "izoh": "bosh og'rig'i = headache.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#028c131b"
+    },
+    {
+      "q": "\"headache\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "operatsiya",
+        "bosh og'rig'i",
+        "stress",
+        "og'riq"
+      ],
+      "t": 1,
+      "izoh": "headache = bosh og'rig'i.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#23ab8b8f"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"a pain in your head\"?",
+      "v": [
+        "appointment",
+        "ambulance",
+        "headache",
+        "exercise"
+      ],
+      "t": 2,
+      "izoh": "headache = bosh og'rig'i.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#fb877344"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: I took a pill because of my ___ .",
+      "v": [
+        "headache",
+        "appointment",
+        "surgery",
+        "fever"
+      ],
+      "t": 0,
+      "izoh": "headache = bosh og'rig'i.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#eaa74650"
+    },
+    {
+      "q": "\"headache\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "a pain in your head",
+        "the care given to a sick or injured person",
+        "the state of being ill or unhealthy",
+        "a feeling of worry caused by pressure in life"
+      ],
+      "t": 0,
+      "izoh": "headache = bosh og'rig'i.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#7df4c75d"
+    },
+    {
+      "q": "\"og'riq\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "pain",
+        "disease",
+        "illness",
+        "injury"
+      ],
+      "t": 0,
+      "izoh": "og'riq = pain.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#aba05c43"
+    },
+    {
+      "q": "\"pain\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "og'riq",
+        "stress",
+        "alomat",
+        "jismoniy mashq"
+      ],
+      "t": 0,
+      "izoh": "pain = og'riq.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#2ce6e8d8"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"an unpleasant feeling caused by injury or illness\"?",
+      "v": [
+        "appointment",
+        "stress",
+        "symptom",
+        "pain"
+      ],
+      "t": 3,
+      "izoh": "pain = og'riq.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#4aa72b72"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: She felt a sharp ___ in her leg.",
+      "v": [
+        "headache",
+        "cure",
+        "pain",
+        "medicine"
+      ],
+      "t": 2,
+      "izoh": "pain = og'riq.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#24de826b"
+    },
+    {
+      "q": "\"pain\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "a pain in your head",
+        "a sign that shows you may have an illness",
+        "medical treatment in which a doctor cuts into the body",
+        "an unpleasant feeling caused by injury or illness"
+      ],
+      "t": 3,
+      "izoh": "pain = og'riq.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#96d9d98a"
+    },
+    {
+      "q": "\"dori\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "appointment",
+        "medicine",
+        "injury",
+        "treatment"
+      ],
+      "t": 1,
+      "izoh": "dori = medicine.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#9be95589"
+    },
+    {
+      "q": "\"medicine\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "bemor",
+        "bosh og'rig'i",
+        "operatsiya",
+        "dori"
+      ],
+      "t": 3,
+      "izoh": "medicine = dori.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#9dc03672"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"a substance you take to treat an illness\"?",
+      "v": [
+        "patient",
+        "fever",
+        "cure",
+        "medicine"
+      ],
+      "t": 3,
+      "izoh": "medicine = dori.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#f4127a4b"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: Take this ___ twice a day after meals.",
+      "v": [
+        "ambulance",
+        "medicine",
+        "disease",
+        "healthy"
+      ],
+      "t": 1,
+      "izoh": "medicine = dori.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#e16aa05c"
+    },
+    {
+      "q": "\"medicine\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "the care given to a sick or injured person",
+        "something that makes an illness go away",
+        "in good physical condition; not ill",
+        "a substance you take to treat an illness"
+      ],
+      "t": 3,
+      "izoh": "medicine = dori.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#3226a22f"
+    },
+    {
+      "q": "\"retsept\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "stress",
+        "medicine",
+        "healthy",
+        "prescription"
+      ],
+      "t": 3,
+      "izoh": "retsept = prescription.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#533a3c15"
+    },
+    {
+      "q": "\"prescription\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "retsept",
+        "jarohat",
+        "parhez",
+        "shifo"
+      ],
+      "t": 0,
+      "izoh": "prescription = retsept.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#cecf2423"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"a doctor's written order for medicine\"?",
+      "v": [
+        "prescription",
+        "treatment",
+        "patient",
+        "stress"
+      ],
+      "t": 0,
+      "izoh": "prescription = retsept.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#f10301e5"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: The doctor gave me a ___ for antibiotics.",
+      "v": [
+        "injury",
+        "prescription",
+        "diet",
+        "disease"
+      ],
+      "t": 1,
+      "izoh": "prescription = retsept.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#59c55a30"
+    },
+    {
+      "q": "\"prescription\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "physical harm or damage to the body",
+        "a person who is receiving medical care",
+        "a doctor's written order for medicine",
+        "a feeling of worry caused by pressure in life"
+      ],
+      "t": 2,
+      "izoh": "prescription = retsept.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#f43ac2f2"
+    },
+    {
+      "q": "\"davolash\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "treatment",
+        "ambulance",
+        "disease",
+        "patient"
+      ],
+      "t": 0,
+      "izoh": "davolash = treatment.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#35eb7ad3"
+    },
+    {
+      "q": "\"treatment\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "davolash",
+        "bosh og'rig'i",
+        "jismoniy mashq",
+        "stress"
+      ],
+      "t": 0,
+      "izoh": "treatment = davolash.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#48bc44eb"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"the care given to a sick or injured person\"?",
+      "v": [
+        "treatment",
+        "recover",
+        "patient",
+        "prescription"
+      ],
+      "t": 0,
+      "izoh": "treatment = davolash.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#77a967b1"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: The ___ for his illness lasted two weeks.",
+      "v": [
+        "illness",
+        "fever",
+        "disease",
+        "treatment"
+      ],
+      "t": 3,
+      "izoh": "treatment = davolash.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#aaa12d16"
+    },
+    {
+      "q": "\"treatment\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "a vehicle that takes sick people to hospital",
+        "the care given to a sick or injured person",
+        "an arranged time to see a doctor",
+        "in good physical condition; not ill"
+      ],
+      "t": 1,
+      "izoh": "treatment = davolash.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#9f093b34"
+    },
+    {
+      "q": "\"bemor\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "recover",
+        "symptom",
+        "ambulance",
+        "patient"
+      ],
+      "t": 3,
+      "izoh": "bemor = patient.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#594c3d37"
+    },
+    {
+      "q": "\"patient\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "tez yordam mashinasi",
+        "xastalik",
+        "bemor",
+        "stress"
+      ],
+      "t": 2,
+      "izoh": "patient = bemor.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#3b9b7e54"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"a person who is receiving medical care\"?",
+      "v": [
+        "patient",
+        "cure",
+        "surgery",
+        "medicine"
+      ],
+      "t": 0,
+      "izoh": "patient = bemor.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#b170143c"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: The nurse looked after every ___ in the ward.",
+      "v": [
+        "symptom",
+        "headache",
+        "patient",
+        "disease"
+      ],
+      "t": 2,
+      "izoh": "patient = bemor.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#38e80f68"
+    },
+    {
+      "q": "\"patient\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "a person who is receiving medical care",
+        "an arranged time to see a doctor",
+        "a vehicle that takes sick people to hospital",
+        "a body temperature that is higher than normal"
+      ],
+      "t": 0,
+      "izoh": "patient = bemor.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#c7fdfec5"
+    },
+    {
+      "q": "\"sog'aymoq\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "prescription",
+        "headache",
+        "recover",
+        "illness"
+      ],
+      "t": 2,
+      "izoh": "sog'aymoq = recover.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#ba8b2e1e"
+    },
+    {
+      "q": "\"recover\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "og'riq",
+        "sog'lom",
+        "isitma",
+        "sog'aymoq"
+      ],
+      "t": 3,
+      "izoh": "recover = sog'aymoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#d6004594"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"to become healthy again after being ill\"?",
+      "v": [
+        "ambulance",
+        "healthy",
+        "recover",
+        "prescription"
+      ],
+      "t": 2,
+      "izoh": "recover = sog'aymoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#e9bc0334"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: It took him a month to ___ from the operation.",
+      "v": [
+        "prescription",
+        "patient",
+        "recover",
+        "healthy"
+      ],
+      "t": 2,
+      "izoh": "recover = sog'aymoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#78feca7b"
+    },
+    {
+      "q": "\"recover\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "the care given to a sick or injured person",
+        "a person who is receiving medical care",
+        "the state of being ill or unhealthy",
+        "to become healthy again after being ill"
+      ],
+      "t": 3,
+      "izoh": "recover = sog'aymoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#8fc403b5"
+    },
+    {
+      "q": "\"sog'lom\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "disease",
+        "stress",
+        "medicine",
+        "healthy"
+      ],
+      "t": 3,
+      "izoh": "sog'lom = healthy.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#249fb176"
+    },
+    {
+      "q": "\"healthy\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "stress",
+        "parhez",
+        "sog'lom",
+        "alomat"
+      ],
+      "t": 2,
+      "izoh": "healthy = sog'lom.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#41ec42c3"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"in good physical condition; not ill\"?",
+      "v": [
+        "headache",
+        "appointment",
+        "healthy",
+        "disease"
+      ],
+      "t": 2,
+      "izoh": "healthy = sog'lom.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#ba31862d"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: Eating vegetables helps you stay ___ .",
+      "v": [
+        "treatment",
+        "pain",
+        "healthy",
+        "diet"
+      ],
+      "t": 2,
+      "izoh": "healthy = sog'lom.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#db849091"
+    },
+    {
+      "q": "\"healthy\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "in good physical condition; not ill",
+        "an arranged time to see a doctor",
+        "a substance you take to treat an illness",
+        "to become healthy again after being ill"
+      ],
+      "t": 0,
+      "izoh": "healthy = sog'lom.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#ee7e9e37"
+    },
+    {
+      "q": "\"parhez\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "diet",
+        "prescription",
+        "symptom",
+        "pain"
+      ],
+      "t": 0,
+      "izoh": "parhez = diet.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#d95f3bac"
+    },
+    {
+      "q": "\"diet\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "parhez",
+        "og'riq",
+        "shifo",
+        "xastalik"
+      ],
+      "t": 0,
+      "izoh": "diet = parhez.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#0987833f"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"the food that a person usually eats\"?",
+      "v": [
+        "diet",
+        "pain",
+        "medicine",
+        "injury"
+      ],
+      "t": 0,
+      "izoh": "diet = parhez.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#6810ad9a"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: A balanced ___ is important for good health.",
+      "v": [
+        "fever",
+        "diet",
+        "patient",
+        "symptom"
+      ],
+      "t": 1,
+      "izoh": "diet = parhez.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#073c8557"
+    },
+    {
+      "q": "\"diet\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "a person who is receiving medical care",
+        "the food that a person usually eats",
+        "a doctor's written order for medicine",
+        "a feeling of worry caused by pressure in life"
+      ],
+      "t": 1,
+      "izoh": "diet = parhez.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#e311971c"
+    },
+    {
+      "q": "\"jismoniy mashq\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "injury",
+        "diet",
+        "exercise",
+        "medicine"
+      ],
+      "t": 2,
+      "izoh": "jismoniy mashq = exercise.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#376c738e"
+    },
+    {
+      "q": "\"exercise\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "parhez",
+        "dori",
+        "isitma",
+        "jismoniy mashq"
+      ],
+      "t": 3,
+      "izoh": "exercise = jismoniy mashq.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#c180bc22"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"physical activity done to stay fit\"?",
+      "v": [
+        "pain",
+        "cure",
+        "appointment",
+        "exercise"
+      ],
+      "t": 3,
+      "izoh": "exercise = jismoniy mashq.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#d5d03d50"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: Daily ___ keeps your heart strong.",
+      "v": [
+        "fever",
+        "recover",
+        "exercise",
+        "healthy"
+      ],
+      "t": 2,
+      "izoh": "exercise = jismoniy mashq.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#5003b546"
+    },
+    {
+      "q": "\"exercise\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "physical activity done to stay fit",
+        "a sign that shows you may have an illness",
+        "a body temperature that is higher than normal",
+        "a vehicle that takes sick people to hospital"
+      ],
+      "t": 0,
+      "izoh": "exercise = jismoniy mashq.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#384532a4"
+    },
+    {
+      "q": "\"jarohat\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "medicine",
+        "injury",
+        "exercise",
+        "diet"
+      ],
+      "t": 1,
+      "izoh": "jarohat = injury.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#c2f7dd0c"
+    },
+    {
+      "q": "\"injury\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "kasallik",
+        "jarohat",
+        "parhez",
+        "retsept"
+      ],
+      "t": 1,
+      "izoh": "injury = jarohat.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#cb3d149f"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"physical harm or damage to the body\"?",
+      "v": [
+        "exercise",
+        "disease",
+        "injury",
+        "stress"
+      ],
+      "t": 2,
+      "izoh": "injury = jarohat.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#e0f2f70e"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: He got an ___ while playing football.",
+      "v": [
+        "surgery",
+        "symptom",
+        "treatment",
+        "injury"
+      ],
+      "t": 3,
+      "izoh": "injury = jarohat.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#366039fb"
+    },
+    {
+      "q": "\"injury\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "the state of being ill or unhealthy",
+        "an arranged time to see a doctor",
+        "the food that a person usually eats",
+        "physical harm or damage to the body"
+      ],
+      "t": 3,
+      "izoh": "injury = jarohat.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#8b681871"
+    },
+    {
+      "q": "\"tez yordam mashinasi\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "cure",
+        "ambulance",
+        "diet",
+        "medicine"
+      ],
+      "t": 1,
+      "izoh": "tez yordam mashinasi = ambulance.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#abe23146"
+    },
+    {
+      "q": "\"ambulance\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "davolash",
+        "tez yordam mashinasi",
+        "bosh og'rig'i",
+        "isitma"
+      ],
+      "t": 1,
+      "izoh": "ambulance = tez yordam mashinasi.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#9e35a7ea"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"a vehicle that takes sick people to hospital\"?",
+      "v": [
+        "prescription",
+        "appointment",
+        "exercise",
+        "ambulance"
+      ],
+      "t": 3,
+      "izoh": "ambulance = tez yordam mashinasi.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#ba5d9049"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: Someone called an ___ after the accident.",
+      "v": [
+        "disease",
+        "recover",
+        "injury",
+        "ambulance"
+      ],
+      "t": 3,
+      "izoh": "ambulance = tez yordam mashinasi.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#e3d55b22"
+    },
+    {
+      "q": "\"ambulance\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "the state of being ill or unhealthy",
+        "a substance you take to treat an illness",
+        "a vehicle that takes sick people to hospital",
+        "to become healthy again after being ill"
+      ],
+      "t": 2,
+      "izoh": "ambulance = tez yordam mashinasi.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#717acbcd"
+    },
+    {
+      "q": "\"qabulga yozilish\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "cure",
+        "illness",
+        "appointment",
+        "treatment"
+      ],
+      "t": 2,
+      "izoh": "qabulga yozilish = appointment.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#72db1356"
+    },
+    {
+      "q": "\"appointment\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "sog'lom",
+        "qabulga yozilish",
+        "bemor",
+        "og'riq"
+      ],
+      "t": 1,
+      "izoh": "appointment = qabulga yozilish.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#f9e7e061"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"an arranged time to see a doctor\"?",
+      "v": [
+        "cure",
+        "appointment",
+        "illness",
+        "ambulance"
+      ],
+      "t": 1,
+      "izoh": "appointment = qabulga yozilish.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#db4dafd2"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: I have a doctor's ___ at three o'clock.",
+      "v": [
+        "appointment",
+        "surgery",
+        "exercise",
+        "diet"
+      ],
+      "t": 0,
+      "izoh": "appointment = qabulga yozilish.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#1211a96a"
+    },
+    {
+      "q": "\"appointment\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "a feeling of worry caused by pressure in life",
+        "medical treatment in which a doctor cuts into the body",
+        "an arranged time to see a doctor",
+        "the state of being ill or unhealthy"
+      ],
+      "t": 2,
+      "izoh": "appointment = qabulga yozilish.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#bf8cda6d"
+    },
+    {
+      "q": "\"operatsiya\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "surgery",
+        "injury",
+        "prescription",
+        "stress"
+      ],
+      "t": 0,
+      "izoh": "operatsiya = surgery.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#44fd2dd4"
+    },
+    {
+      "q": "\"surgery\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "bosh og'rig'i",
+        "operatsiya",
+        "parhez",
+        "shifo"
+      ],
+      "t": 1,
+      "izoh": "surgery = operatsiya.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#dc82de0b"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"medical treatment in which a doctor cuts into the body\"?",
+      "v": [
+        "surgery",
+        "healthy",
+        "injury",
+        "treatment"
+      ],
+      "t": 0,
+      "izoh": "surgery = operatsiya.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#e131def4"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: She needed ___ to repair her knee.",
+      "v": [
+        "surgery",
+        "stress",
+        "appointment",
+        "exercise"
+      ],
+      "t": 0,
+      "izoh": "surgery = operatsiya.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#d91d76a7"
+    },
+    {
+      "q": "\"surgery\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "medical treatment in which a doctor cuts into the body",
+        "to become healthy again after being ill",
+        "a person who is receiving medical care",
+        "the state of being ill or unhealthy"
+      ],
+      "t": 0,
+      "izoh": "surgery = operatsiya.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#815c3cd3"
+    },
+    {
+      "q": "\"shifo\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "pain",
+        "cure",
+        "recover",
+        "fever"
+      ],
+      "t": 1,
+      "izoh": "shifo = cure.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#bb3a1216"
+    },
+    {
+      "q": "\"cure\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "isitma",
+        "sog'aymoq",
+        "shifo",
+        "retsept"
+      ],
+      "t": 2,
+      "izoh": "cure = shifo.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#1ece8a78"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"something that makes an illness go away\"?",
+      "v": [
+        "stress",
+        "surgery",
+        "symptom",
+        "cure"
+      ],
+      "t": 3,
+      "izoh": "cure = shifo.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#e26cd955"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: Scientists are searching for a ___ for the disease.",
+      "v": [
+        "cure",
+        "diet",
+        "appointment",
+        "symptom"
+      ],
+      "t": 0,
+      "izoh": "cure = shifo.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#d06be10c"
+    },
+    {
+      "q": "\"cure\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "something that makes an illness go away",
+        "a person who is receiving medical care",
+        "an unpleasant feeling caused by injury or illness",
+        "a pain in your head"
+      ],
+      "t": 0,
+      "izoh": "cure = shifo.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#249d065f"
+    },
+    {
+      "q": "\"stress\" so'zining inglizcha varianti qaysi?",
+      "v": [
+        "stress",
+        "recover",
+        "injury",
+        "exercise"
+      ],
+      "t": 0,
+      "izoh": "stress = stress.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#93ecd2f8"
+    },
+    {
+      "q": "\"stress\" so'zining o'zbekcha ma'nosi qaysi?",
+      "v": [
+        "stress",
+        "isitma",
+        "bosh og'rig'i",
+        "kasallik"
+      ],
+      "t": 0,
+      "izoh": "stress = stress.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#98b84dff"
+    },
+    {
+      "q": "Qaysi so'z shu ta'rifga mos: \"a feeling of worry caused by pressure in life\"?",
+      "v": [
+        "appointment",
+        "surgery",
+        "stress",
+        "injury"
+      ],
+      "t": 2,
+      "izoh": "stress = stress.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#8ad3f533"
+    },
+    {
+      "q": "Bo'sh joyga mos so'zni tanlang: Too much ___ can harm your health.",
+      "v": [
+        "stress",
+        "headache",
+        "ambulance",
+        "recover"
+      ],
+      "t": 0,
+      "izoh": "stress = stress.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#c64f6a3d"
+    },
+    {
+      "q": "\"stress\" so'zining to'g'ri ta'rifi qaysi?",
+      "v": [
+        "physical activity done to stay fit",
+        "a feeling of worry caused by pressure in life",
+        "an unpleasant feeling caused by injury or illness",
+        "a person who is receiving medical care"
+      ],
+      "t": 1,
+      "izoh": "stress = stress.",
+      "qiy": "orta",
+      "id": "ing_b1_m28#9de235e0"
+    }
+  ]
+}

@@ -1,0 +1,636 @@
+{
+  "nom": "22-mavzu. Galogenlarning davriy sistemadagi o'rni. Atom tuzilishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "“Galogen” tushunchasini fanga qachon va kim kiritgan?",
+      "v": [
+        "1811-yilda nemis kimyogari I.Shveyger",
+        "1774-yilda shved kimyogari K.Sheyele",
+        "1866-yilda fransuz kimyogari A.Muassan",
+        "1826-yilda fransuz kimyogari A.Balar"
+      ],
+      "t": 0,
+      "izoh": "Darslik: 1811-yil, I.Shveyger.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#4929c1e5"
+    },
+    {
+      "q": "“Galogen” so'zi qanday ma'noni bildiradi?",
+      "v": [
+        "“Tuz” va “hosil qiluvchi”",
+        "“Kislorod” va “hosil qiluvchi”",
+        "“Kislota” va “hosil qiluvchi”",
+        "“Suv” va “hosil qiluvchi”"
+      ],
+      "t": 0,
+      "izoh": "Galogen — tuz hosil qiluvchi degan ma'noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#d34b16e5"
+    },
+    {
+      "q": "Galogenlar qatoriga qaysi elementlar kiradi?",
+      "v": [
+        "Ftor, xlor, brom, yod, astat",
+        "Kislorod, oltingugurt, selen, tellur",
+        "Azot, fosfor, mishyak",
+        "Geliy, neon, argon"
+      ],
+      "t": 0,
+      "izoh": "Galogenlar: F, Cl, Br, I, At.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#935a2f8f"
+    },
+    {
+      "q": "Galogenlar davriy sistemaning qaysi guruhida joylashgan?",
+      "v": [
+        "VII guruh bosh guruhchasida",
+        "VI guruh bosh guruhchasida",
+        "VII guruh yon guruhchasida",
+        "VIII guruh bosh guruhchasida"
+      ],
+      "t": 0,
+      "izoh": "Galogenlar VII guruh bosh guruhchasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#4659b75d"
+    },
+    {
+      "q": "Galogenlarning tashqi energetik pog'onasida nechta elektron bor?",
+      "v": [
+        "7 ta",
+        "6 ta",
+        "8 ta",
+        "1 ta"
+      ],
+      "t": 0,
+      "izoh": "Shu sababli tugallangan pog'onaga 1 ta elektron yetishmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#35566a56"
+    },
+    {
+      "q": "Galogenlar vodorod va metallardan bitta elektron olib qanday oksidlanish darajasini namoyon qiladi?",
+      "v": [
+        "–1",
+        "+1",
+        "–2",
+        "+7"
+      ],
+      "t": 0,
+      "izoh": "Masalan, NaF, HCl, KBr, CaI2 da –1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#a34b0535"
+    },
+    {
+      "q": "Ftor barcha birikmalarida qanday oksidlanish darajasini namoyon qiladi?",
+      "v": [
+        "Faqat –1",
+        "+1 dan +7 gacha",
+        "–1 va +1",
+        "0 va –1"
+      ],
+      "t": 0,
+      "izoh": "Ftor eng kuchli elektrmanfiy element bo'lgani uchun faqat –1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#751b3aec"
+    },
+    {
+      "q": "Xlor, brom va yod kislorodli birikmalarida qanday oksidlanish darajalarini namoyon qiladi?",
+      "v": [
+        "+1 dan +7 gacha",
+        "Faqat –1",
+        "–1 dan +1 gacha",
+        "+2 dan +6 gacha"
+      ],
+      "t": 0,
+      "izoh": "Cl2, Br2, I2 kislorodli birikmalarda +1...+7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#4901b739"
+    },
+    {
+      "q": "Ftor atomining elektron konfiguratsiyasi qanday?",
+      "v": [
+        "1s2 2s2 2p5",
+        "1s2 2s2 2p6",
+        "1s2 2s2 2p4",
+        "1s2 2s2 2p6 3s2 3p5"
+      ],
+      "t": 0,
+      "izoh": "+9F: 1s2 2s2 2p5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#7f740819"
+    },
+    {
+      "q": "Xlor atomining tartib raqami qancha?",
+      "v": [
+        "17",
+        "9",
+        "35",
+        "53"
+      ],
+      "t": 0,
+      "izoh": "+17Cl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#09286831"
+    },
+    {
+      "q": "Brom atomining tartib raqami qancha?",
+      "v": [
+        "35",
+        "53",
+        "17",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "+35Br.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#eecd8949"
+    },
+    {
+      "q": "Yod atomining tartib raqami qancha?",
+      "v": [
+        "53",
+        "35",
+        "85",
+        "17"
+      ],
+      "t": 0,
+      "izoh": "+53I.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#0a102252"
+    },
+    {
+      "q": "Galogenlar tabiatda nima uchun erkin holda uchramaydi?",
+      "v": [
+        "Tipik metallmaslar va kuchli oksidlovchilar bo'lganligi uchun",
+        "Juda kam tarqalganligi uchun",
+        "Faqat sun'iy yo'l bilan olinishi mumkinligi uchun",
+        "Havoda yengil bo'lganligi uchun"
+      ],
+      "t": 0,
+      "izoh": "Galogenlar kuchli oksidlovchilar, tabiatda birikmalar tarzida uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#affd1cd5"
+    },
+    {
+      "q": "Ftorning Yer qobig'idagi miqdori qancha?",
+      "v": [
+        "0,066 %",
+        "0,05 %",
+        "0,00021 %",
+        "0,00004 %"
+      ],
+      "t": 0,
+      "izoh": "17-jadval: F — 0,066 %.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#b39becdc"
+    },
+    {
+      "q": "Xlorning Yer qobig'idagi miqdori qancha?",
+      "v": [
+        "0,05 %",
+        "0,066 %",
+        "0,00021 %",
+        "0,00004 %"
+      ],
+      "t": 0,
+      "izoh": "17-jadval: Cl — 0,05 %.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#a18a5c25"
+    },
+    {
+      "q": "Bromning Yer qobig'idagi miqdori qancha?",
+      "v": [
+        "0,00021 %",
+        "0,00004 %",
+        "0,05 %",
+        "0,066 %"
+      ],
+      "t": 0,
+      "izoh": "17-jadval: Br — 0,00021 %.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#e9a5974c"
+    },
+    {
+      "q": "Yodning Yer qobig'idagi miqdori qancha?",
+      "v": [
+        "0,00004 %",
+        "0,00021 %",
+        "0,05 %",
+        "0,066 %"
+      ],
+      "t": 0,
+      "izoh": "17-jadval: I — 0,00004 %.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#2596b587"
+    },
+    {
+      "q": "Ftorning tabiiy birikmalaridan biri — plavik shpatining formulasi qanday?",
+      "v": [
+        "CaF2",
+        "NaCl",
+        "KBr",
+        "NaI"
+      ],
+      "t": 0,
+      "izoh": "Plavik shpati — CaF2; shuningdek apatit, fosforitlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#71a740ed"
+    },
+    {
+      "q": "Bromning tabiiy birikmalari qaysi qatorda to'g'ri keltirilgan?",
+      "v": [
+        "NaBr, KBr, MgBr2",
+        "NaCl, KCl, MgCl2",
+        "NaI, KI",
+        "CaF2, NaF"
+      ],
+      "t": 0,
+      "izoh": "17-jadval: bromidlar — NaBr, KBr, MgBr2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#682140be"
+    },
+    {
+      "q": "Ftorid ionidan ftorni olish uchun qaysi usuldan foydalaniladi?",
+      "v": [
+        "Faqat elektroliz jarayonidan",
+        "Kuchli oksidlovchilar ta'siridan",
+        "Xlor ta'sir ettirishdan",
+        "Qizdirish usulidan"
+      ],
+      "t": 0,
+      "izoh": "Ftor faqat elektroliz bilan olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#d38082fd"
+    },
+    {
+      "q": "2KBr + Cl2 = 2KCl + Br2 reaksiyasi nimani ko'rsatadi?",
+      "v": [
+        "Xlor bromga nisbatan kuchli oksidlovchi ekanini",
+        "Brom xlorga nisbatan kuchli oksidlovchi ekanini",
+        "Brom xlorid ionini qaytarishini",
+        "Kaliy xlor bilan reaksiyaga kirishishini"
+      ],
+      "t": 0,
+      "izoh": "Xlor bromidlardan bromni siqib chiqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#d96dd117"
+    },
+    {
+      "q": "2KI + Cl2 = 2KCl + I2 reaksiyasida qaysi modda oksidlovchi?",
+      "v": [
+        "Cl2",
+        "KI",
+        "KCl",
+        "I2"
+      ],
+      "t": 0,
+      "izoh": "Xlor yodid ionini oksidlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#2680ab87"
+    },
+    {
+      "q": "Oddiy sharoitda ftor qanday rang va holatda bo'ladi?",
+      "v": [
+        "Och-sariq rangli gaz",
+        "Sarg'ish-yashil gaz",
+        "Qoramtir-qo'ng'ir suyuqlik",
+        "Qoramtir kulrang kristall"
+      ],
+      "t": 0,
+      "izoh": "Ftor — och-sariq rangli gaz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#6e675ae3"
+    },
+    {
+      "q": "Oddiy sharoitda xlor qanday?",
+      "v": [
+        "Sarg'ish-yashil rangli og'ir gaz",
+        "Och-sariq gaz",
+        "Qoramtir-qo'ng'ir suyuqlik",
+        "Qattiq kulrang kristall"
+      ],
+      "t": 0,
+      "izoh": "Xlor — sarg'ish-yashil rangli og'ir gaz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#52cf01b7"
+    },
+    {
+      "q": "Oddiy sharoitda brom qanday?",
+      "v": [
+        "Qoramtir-qo'ng'ir rangli suyuqlik",
+        "Sarg'ish-yashil gaz",
+        "Qoramtir kulrang kristall",
+        "Och-sariq gaz"
+      ],
+      "t": 0,
+      "izoh": "Brom — qoramtir-qo'ng'ir rangli, bug'lanuvchi suyuqlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#faae2293"
+    },
+    {
+      "q": "Oddiy sharoitda yod qanday?",
+      "v": [
+        "Qoramtir kulrang kristall modda",
+        "Qoramtir-qo'ng'ir suyuqlik",
+        "Sarg'ish-yashil gaz",
+        "Och-sariq gaz"
+      ],
+      "t": 0,
+      "izoh": "Yod — qoramtir kulrang kristall modda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#f6e8aab4"
+    },
+    {
+      "q": "1 hajm suvda oddiy sharoitda necha hajm xlor eriydi?",
+      "v": [
+        "2 hajm",
+        "1 hajm",
+        "500 hajm",
+        "0,02 hajm"
+      ],
+      "t": 0,
+      "izoh": "1 hajm suvda 2 hajm Cl2 eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#6df1e880"
+    },
+    {
+      "q": "100 g suvda qancha yod eriydi?",
+      "v": [
+        "0,02 g",
+        "2 g",
+        "0,5 g",
+        "20 g"
+      ],
+      "t": 0,
+      "izoh": "I2 ning eruvchanligi 0,02 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#bfaf2e5e"
+    },
+    {
+      "q": "Ftorni kashf qilgan olim kim va qachon?",
+      "v": [
+        "1866-yil, Anri Muassan",
+        "1774-yil, Karl Sheyele",
+        "1826-yil, Antuan Balar",
+        "1811-yil, Bernar Kurtua"
+      ],
+      "t": 0,
+      "izoh": "A.Muassan bu kashfiyoti uchun Nobel mukofotini olgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#32949828"
+    },
+    {
+      "q": "Xlorni kashf qilgan olim kim?",
+      "v": [
+        "1774-yilda shved kimyogari Karl Vilgelm Sheyele",
+        "1866-yilda Anri Muassan",
+        "1826-yilda Antuan Balar",
+        "1811-yilda Bernar Kurtua"
+      ],
+      "t": 0,
+      "izoh": "Xlor — 1774-yil, K.V.Sheyele.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#d56c657a"
+    },
+    {
+      "q": "Bromni kashf qilgan olim kim?",
+      "v": [
+        "1826-yilda fransuz kimyogari Antuan Jerom Balar",
+        "1774-yilda Karl Sheyele",
+        "1811-yilda Bernar Kurtua",
+        "1866-yilda Anri Muassan"
+      ],
+      "t": 0,
+      "izoh": "Brom — 1826-yil, A.J.Balar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#a08da9d7"
+    },
+    {
+      "q": "Yodni kashf qilgan olim kim?",
+      "v": [
+        "1811-yilda fransuz olimi Bernar Kurtua",
+        "1826-yilda Antuan Balar",
+        "1774-yilda Karl Sheyele",
+        "1866-yilda Anri Muassan"
+      ],
+      "t": 0,
+      "izoh": "Yod — 1811-yil, B.Kurtua.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#1446997c"
+    },
+    {
+      "q": "Yod qizdirilganda qanday hodisa kuzatiladi?",
+      "v": [
+        "Suyuq holatga o'tmasdan gunafsha rangli gaz holatiga o'tadi",
+        "Avval suyuqlanib, keyin bug'lanadi",
+        "Parchalanib, yodid hosil qiladi",
+        "Rangsiz gazga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Yod sublimatlanish xossasiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#d621cc8f"
+    },
+    {
+      "q": "Sublimatlanish deb nimaga aytiladi?",
+      "v": [
+        "Qattiq moddaning suyuq holatga o'tmasdan gaz holatga, gaz holatdan suyuqlanmasdan qattiq holatga o'tishiga",
+        "Gazning suyuq holatga o'tishiga",
+        "Suyuq moddaning qaynashiga",
+        "Qattiq moddaning erishiga"
+      ],
+      "t": 0,
+      "izoh": "Sublimatlanish ta'rifi darslikda shunday berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#2e49b9ae"
+    },
+    {
+      "q": "F2, Cl2, Br2, I2 qatorida oksidlovchilik xossasi qanday o'zgaradi?",
+      "v": [
+        "Kamayib boradi",
+        "Ortib boradi",
+        "O'zgarmaydi",
+        "Avval ortib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Atom radiusi ortishi bilan oksidlovchilik kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#b4d9f105"
+    },
+    {
+      "q": "F2, Cl2, Br2, I2 qatorida qaytaruvchilik xossasi qanday o'zgaradi?",
+      "v": [
+        "Ortib boradi",
+        "Kamayib boradi",
+        "O'zgarmaydi",
+        "Avval kamayib, keyin ortadi"
+      ],
+      "t": 0,
+      "izoh": "Ftorlardan yodga tomon qaytaruvchilik ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#dccc99a4"
+    },
+    {
+      "q": "F– → Cl– → Br– → I– qatorida kimyoviy faollik qanday o'zgaradi?",
+      "v": [
+        "Ortib boradi",
+        "Kamayib boradi",
+        "O'zgarmaydi",
+        "Bir xil bo'lib qoladi"
+      ],
+      "t": 0,
+      "izoh": "Galogenid ionlarda tashqi qavat 8 elektronli, ular elektron berib oksidlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#570fc649"
+    },
+    {
+      "q": "Galogenlar ichida eng faol element qaysi?",
+      "v": [
+        "Ftor",
+        "Xlor",
+        "Brom",
+        "Yod"
+      ],
+      "t": 0,
+      "izoh": "Hatto kislorod ham ftor ta'sirida oksidlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#605a04bb"
+    },
+    {
+      "q": "Ftorning suv bilan reaksiyasi tenglamasi qanday?",
+      "v": [
+        "2H2O + 2F2 = 4HF + O2",
+        "H2O + F2 = HF + HFO2",
+        "2H2O + F2 = 2HF + H2O2",
+        "H2O + 2F2 = 2HF + FO2"
+      ],
+      "t": 0,
+      "izoh": "Suv ftor atmosferasida alangalanib yonadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#a65224f7"
+    },
+    {
+      "q": "Bromning qaynash harorati (18-jadval) qancha?",
+      "v": [
+        "+58 °C",
+        "–34 °C",
+        "+186 °C",
+        "–7 °C"
+      ],
+      "t": 0,
+      "izoh": "Br2: Tq = +58 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#9691df0c"
+    },
+    {
+      "q": "Yodning erish harorati (18-jadval) qancha?",
+      "v": [
+        "+114 °C",
+        "+186 °C",
+        "+58 °C",
+        "–7 °C"
+      ],
+      "t": 0,
+      "izoh": "I2: Ts = +114 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#8dd01be8"
+    },
+    {
+      "q": "Xlorning 25 °C dagi zichligi (18-jadval) qancha?",
+      "v": [
+        "3,17 g/l",
+        "1,696 g/l",
+        "3,102 g/cm3",
+        "4,93 g/cm3"
+      ],
+      "t": 0,
+      "izoh": "Cl2: 3,17 g/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m22-galogenlarning-davriy-sistemadagi-orni#f746d494"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Modul qatnashgan tenglamalar",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "|x − 7| = 4 tenglamaning barcha haqiqiy ildizlarini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "x = 11 va x = −3",
+        "x = 11 va x = 3",
+        "faqat x = 11",
+        "x = −11 va x = −3"
+      ],
+      "t": 1,
+      "izoh": "Modul ta'rifiga ko'ra x − 7 = 4 yoki x − 7 = −4 bo'ladi. Birinchi holdan x = 11, ikkinchi holdan x = 3 chiqadi. Tekshiramiz: |11 − 7| = 4 va |3 − 7| = 4. Javob: x = 11 va x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-oddiy-tenglama-ildizlari",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#6e31d678"
+    },
+    {
+      "q": "|2x + 5| = 9 tenglamaning eng katta ildizi qanday songa teng?",
+      "v": [
+        "2",
+        "7",
+        "−2",
+        "−7"
+      ],
+      "t": 0,
+      "izoh": "Tenglama ikki holga bo'linadi: 2x + 5 = 9 va 2x + 5 = −9. Birinchisidan 2x = 4, ya'ni x = 2; ikkinchisidan 2x = −14, ya'ni x = −7. Ildizlarning kattasi 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-oddiy-tenglama-ildizlari",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#0316ad9b"
+    },
+    {
+      "q": "|4x − 9| = 15 tenglamaning kichik ildizini o'nli kasr ko'rinishida yozing.",
+      "v": [
+        "6",
+        "−6",
+        "−1,5",
+        "1,5"
+      ],
+      "t": 2,
+      "izoh": "Ikki hol qaraladi: 4x − 9 = 15 dan 4x = 24 va x = 6; 4x − 9 = −15 dan 4x = −6 va x = −1,5. Ildizlarning kichigi −1,5. Javob: −1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-oddiy-tenglama-ildizlari",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#91e4ee94"
+    },
+    {
+      "q": "|x + 12| = 20 tenglamaning manfiy ildizini aniqlang va javobni belgilang.",
+      "v": [
+        "−20",
+        "−8",
+        "8",
+        "−32"
+      ],
+      "t": 3,
+      "izoh": "x + 12 = 20 holidan x = 8, x + 12 = −20 holidan x = −32 hosil bo'ladi. Ikkalasidan manfiysi −32. Tekshiruv: |−32 + 12| = |−20| = 20. Javob: −32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-oddiy-tenglama-ildizlari",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#600ba564"
+    },
+    {
+      "q": "|3x − 21| = 0 tenglama nechta ildizga ega va u qanday qiymatda erishiladi?",
+      "v": [
+        "Ikkita ildiz: x = 7 va x = −7",
+        "Yagona ildiz: x = 21",
+        "Yagona ildiz: x = 7",
+        "Ildizi yo'q"
+      ],
+      "t": 2,
+      "izoh": "Faqat nolning moduli nolga teng, shuning uchun 3x − 21 = 0 sharti hosil bo'ladi. Bundan 3x = 21, ya'ni x = 7. Manfiy hol alohida ildiz bermaydi, chunki nolning qarama-qarshisi yana nol. Javob: yagona ildiz x = 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-yagona-ildiz-nol",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#536b42c6"
+    },
+    {
+      "q": "|x² − 6x + 9| = 0 tenglamaning yechimlar to'plamini aniqlang.",
+      "v": [
+        "{3}",
+        "{−3; 3}",
+        "{0; 3}",
+        "∅"
+      ],
+      "t": 0,
+      "izoh": "Modul nolga teng bo'lishi uchun ichki ifoda nolga aylanishi kerak: x² − 6x + 9 = 0. Bu ifoda (x − 3)² ga teng, demak x = 3 yagona yechim bo'ladi. Javob: {3}.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-yagona-ildiz-nol",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#cc8f4615"
+    },
+    {
+      "q": "|x − 5| + |x + 5| = 0 tenglama haqida qaysi xulosa to'g'ri ekanini aniqlang.",
+      "v": [
+        "x = 5 va x = −5 ikkalasi ham ildiz",
+        "Faqat x = 0 ildiz bo'ladi",
+        "Har qanday x ildiz bo'ladi",
+        "Tenglamaning yechimi yo'q"
+      ],
+      "t": 3,
+      "izoh": "Ikki modulning yig'indisi manfiy emas va u nolga faqat har ikkala modul bir vaqtda nol bo'lganda teng bo'ladi. Bu esa x = 5 va x = −5 ni bir vaqtda talab qiladi, bunday son mavjud emas. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-yagona-ildiz-nol",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#cad0f8aa"
+    },
+    {
+      "q": "Quyidagi tenglamalardan qaysi biri yagona ildizga ega: |x − 2| = 3, |x| = 5, |x + 7| = 0, |2x − 1| = 9?",
+      "v": [
+        "|x − 2| = 3",
+        "|x| = 5",
+        "|x + 7| = 0",
+        "|2x − 1| = 9"
+      ],
+      "t": 2,
+      "izoh": "O'ng tomoni musbat bo'lgan chiziqli modul tenglamasi (|ax + b| = c, a ≠ 0, c > 0) doim ikkitadan ildiz beradi, shuning uchun |x − 2| = 3, |x| = 5 va |2x − 1| = 9 ikkitadan yechimga ega. Faqat |x + 7| = 0 da ichki ifoda nolga tenglanadi va yagona x = −7 chiqadi. Javob: |x + 7| = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-yagona-ildiz-nol",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#242b443d"
+    },
+    {
+      "q": "|3x − 1| = |x + 7| tenglamaning ildizlarini toping.",
+      "v": [
+        "x = 4 va x = −1,5",
+        "x = 4 va x = 1,5",
+        "faqat x = 4",
+        "x = −4 va x = 1,5"
+      ],
+      "t": 0,
+      "izoh": "Ikki modul teng bo'lsa, ichki ifodalar teng yoki qarama-qarshi bo'ladi: 3x − 1 = x + 7 yoki 3x − 1 = −(x + 7). Birinchisidan 2x = 8 va x = 4; ikkinchisidan 4x = −6 va x = −1,5. Javob: x = 4 va x = −1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-teng-modullar",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#9256a907"
+    },
+    {
+      "q": "|x + 9| = |2x − 4| tenglamaning butun son bo'lgan ildizini toping.",
+      "v": [
+        "−5/3",
+        "5/3",
+        "−13",
+        "13"
+      ],
+      "t": 3,
+      "izoh": "Modullar teng bo'lgani uchun x + 9 = 2x − 4 yoki x + 9 = −(2x − 4). Birinchisidan x = 13, ikkinchisidan 3x = −5 va x = −5/3. Ulardan butun soni 13. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-teng-modullar",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#4eb9abee"
+    },
+    {
+      "q": "|x − 6| = |6 − x| tenglamaning yechimlar to'plami qanday bo'ladi?",
+      "v": [
+        "Faqat x = 6",
+        "Barcha haqiqiy sonlar",
+        "x ≥ 6 bo'lgan sonlar",
+        "Yechimi yo'q"
+      ],
+      "t": 1,
+      "izoh": "6 − x ifoda x − 6 ning qarama-qarshisi, qarama-qarshi sonlarning modullari esa doimo teng. Shuning uchun tenglik har qanday x da bajariladi, masalan x = 0 da 6 = 6 chiqadi. Javob: barcha haqiqiy sonlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-teng-modullar",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#091c8fb0"
+    },
+    {
+      "q": "|x² − 3x| = |x| tenglamaning nechta har xil haqiqiy ildizi bor?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "1 ta"
+      ],
+      "t": 1,
+      "izoh": "Chap tomonni ko'paytuvchilarga ajratamiz: |x² − 3x| = |x|·|x − 3|. Tenglama |x|·(|x − 3| − 1) = 0 ko'rinishini oladi. Bundan x = 0 yoki |x − 3| = 1, ya'ni x = 4 va x = 2. Jami uchta har xil ildiz. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-teng-modullar",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#e07b4f22"
+    },
+    {
+      "q": "Toshkent–Buxoro yo'lidagi nazorat posti 308-kilometr belgisida turibdi. Yuk mashinasi postdan 45 km uzoqlikda. Mashina qaysi kilometr belgilarida bo'lishi mumkin?",
+      "v": [
+        "263 yoki 353",
+        "45 yoki 353",
+        "faqat 353",
+        "268 yoki 348"
+      ],
+      "t": 0,
+      "izoh": "Postgacha bo'lgan masofa modul orqali yoziladi: |x − 308| = 45. Bundan x − 308 = 45 yoki x − 308 = −45. Birinchisidan x = 353, ikkinchisidan x = 263 chiqadi. Mashina ikkala belgida ham bo'lishi mumkin. Javob: 263 yoki 353.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-masofa-sonlar-oqi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#53a23c5b"
+    },
+    {
+      "q": "Sonlar o'qida Dilnoza −6 nuqtadan 14 birlik uzoqlikdagi nuqtalarni izlamoqda. U topgan nuqtalar koordinatalarining yig'indisi nechaga teng?",
+      "v": [
+        "12",
+        "−12",
+        "28",
+        "−28"
+      ],
+      "t": 1,
+      "izoh": "Shart |x + 6| = 14 ko'rinishida yoziladi. x + 6 = 14 dan x = 8, x + 6 = −14 dan x = −20. Bu ikki koordinata yig'indisi 8 + (−20) = −12. Javob: −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-masofa-sonlar-oqi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#23c6d3ea"
+    },
+    {
+      "q": "Ko'chaning bir chetidan 3 km va 17 km uzoqlikda ikkita bekat joylashgan. Ularga bir xil masofada turgan chorraha ko'chaning shu chetidan necha kilometr uzoqda?",
+      "v": [
+        "7 km",
+        "14 km",
+        "10 km",
+        "20 km"
+      ],
+      "t": 2,
+      "izoh": "Chorraha koordinatasi x bo'lsin, shart |x − 3| = |x − 17| ko'rinishida yoziladi. Ikki nuqtadan teng uzoqlikdagi nuqta ular orasidagi kesmaning o'rtasi bo'ladi: x = (3 + 17) : 2 = 10. Javob: 10 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-masofa-sonlar-oqi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#72280855"
+    },
+    {
+      "q": "Sonlar o'qida A(−13) va B(5) nuqtalar berilgan. Ularning ikkalasidan ham teng uzoqlikda joylashgan M nuqtaning koordinatasini toping.",
+      "v": [
+        "−9",
+        "−4",
+        "4",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "Shart |x + 13| = |x − 5| ko'rinishida yoziladi. Teng uzoqlikdagi nuqta AB kesmaning o'rtasida yotadi: x = (−13 + 5) : 2 = −4. Tekshiruv: |−4 + 13| = 9 va |−4 − 5| = 9. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-masofa-sonlar-oqi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#4b150451"
+    },
+    {
+      "q": "Zavodda tayyorlangan podshipnik diametri 42 mm bo'lishi kerak, ruxsat etilgan chetlanish esa 0,3 mm. Nazoratchi chetlanishi aynan chegaraviy bo'lgan detallarni ajratmoqda. Bunday detal diametri qanday?",
+      "v": [
+        "41,7 mm yoki 42,7 mm",
+        "faqat 42,3 mm",
+        "41,7 mm yoki 42,3 mm",
+        "39 mm yoki 45 mm"
+      ],
+      "t": 2,
+      "izoh": "Chetlanish sharti |d − 42| = 0,3 tenglamasi bilan beriladi. d − 42 = 0,3 dan d = 42,3 mm, d − 42 = −0,3 dan d = 41,7 mm chiqadi. Javob: 41,7 mm yoki 42,3 mm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olchov-dopusk",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#8c384df1"
+    },
+    {
+      "q": "Qadoqlash sexida un qopi og'irligi 25 kg deb belgilangan, og'irligi normadan aynan 0,4 kg farq qilgan qop chetga olinadi. Quyidagi og'irliklardan qaysi biri chetga olinadi: 24,4 kg; 24,6 kg; 25,2 kg; 25,6 kg?",
+      "v": [
+        "24,4 kg",
+        "24,6 kg",
+        "25,2 kg",
+        "25,6 kg"
+      ],
+      "t": 1,
+      "izoh": "Shart |m − 25| = 0,4 ko'rinishida yoziladi. Bundan m = 25,4 kg yoki m = 24,6 kg chiqadi. Berilgan ro'yxatda bu qiymatlardan faqat 24,6 kg uchraydi. Javob: 24,6 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-olchov-dopusk",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#5dca2229"
+    },
+    {
+      "q": "Bog'cha uchun buyurtma qilingan stol balandligi 58 sm bo'lishi kerak. Buyurtmachi balandligi me'yordan aynan 2 sm farq qilgan stollarni qaytaradi. Qaytarilgan stollar balandliklari yig'indisi nechaga teng?",
+      "v": [
+        "118 sm",
+        "114 sm",
+        "120 sm",
+        "116 sm"
+      ],
+      "t": 3,
+      "izoh": "Chetlanish sharti |h − 58| = 2 bo'ladi. Bundan h = 60 sm va h = 56 sm topiladi. Ularning yig'indisi 60 + 56 = 116 sm, ya'ni me'yorning ikki barobari. Javob: 116 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-olchov-dopusk",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#5ab05c0f"
+    },
+    {
+      "q": "Do'kondagi elektron tarozi har o'lchovda haqiqiy og'irlikdan 15 gramm farq qiladi. Tarozi 1240 gramm ko'rsatdi. Mahsulotning haqiqiy og'irligi qanday bo'lishi mumkin?",
+      "v": [
+        "1235 g yoki 1245 g",
+        "faqat 1255 g",
+        "1210 g yoki 1270 g",
+        "1225 g yoki 1255 g"
+      ],
+      "t": 3,
+      "izoh": "Haqiqiy og'irlik m bo'lsa, |m − 1240| = 15 tenglamasi tuziladi. Ikki hol chiqadi: m = 1240 + 15 = 1255 g yoki m = 1240 − 15 = 1225 g. Javob: 1225 g yoki 1255 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olchov-dopusk",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#ed418eba"
+    },
+    {
+      "q": "|x − 3| = 2x tenglamani yeching va topilgan qiymatlarni tekshirib, haqiqiy ildizini ko'rsating.",
+      "v": [
+        "x = 1 va x = −3",
+        "faqat x = 1",
+        "faqat x = −3",
+        "Yechimi yo'q"
+      ],
+      "t": 1,
+      "izoh": "O'ng tomon manfiy bo'lmasligi kerak, ya'ni 2x ≥ 0 va x ≥ 0. x − 3 = 2x holidan x = −3 chiqadi, u shartni buzadi. x − 3 = −2x holidan 3x = 3 va x = 1, bu qiymat shartga mos. Javob: faqat x = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ongi-ozgaruvchili",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#4e7c2e16"
+    },
+    {
+      "q": "|2x + 1| = x + 8 tenglamaning barcha ildizlarini toping.",
+      "v": [
+        "faqat x = 7",
+        "x = 7 va x = 3",
+        "x = 7 va x = −3",
+        "x = −7 va x = 3"
+      ],
+      "t": 2,
+      "izoh": "Avval x + 8 ≥ 0, ya'ni x ≥ −8 shartini yozamiz. 2x + 1 = x + 8 dan x = 7; 2x + 1 = −(x + 8) dan 3x = −9 va x = −3. Ikkala qiymat ham shartni qanoatlantiradi. Javob: x = 7 va x = −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ongi-ozgaruvchili",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#cd36ff09"
+    },
+    {
+      "q": "|x + 4| = x − 2 tenglamaning yechimi bor-yo'qligini aniqlang va sababini ko'rsating.",
+      "v": [
+        "x = −1 yagona ildiz",
+        "x = 3 yagona ildiz",
+        "Yechimi yo'q, chunki o'ng tomon manfiy chiqadi",
+        "Cheksiz ko'p yechim bor"
+      ],
+      "t": 2,
+      "izoh": "Modul manfiy bo'lmagani uchun x − 2 ≥ 0, ya'ni x ≥ 2 bo'lishi shart. x + 4 = x − 2 tenglik 4 = −2 ga olib keladi va hech qachon bajarilmaydi. x + 4 = −(x − 2) dan x = −1 chiqadi, lekin u x ≥ 2 shartini buzadi. Javob: yechimi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ongi-ozgaruvchili",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#c689806f"
+    },
+    {
+      "q": "|x − 6| = 10 − x tenglamaning nechta ildizi bor va u qaysi son?",
+      "v": [
+        "Ikkita: 8 va 16",
+        "Yagona ildiz: 16",
+        "Ildizi yo'q",
+        "Yagona ildiz: 8"
+      ],
+      "t": 3,
+      "izoh": "O'ng tomon manfiy bo'lmasligi uchun 10 − x ≥ 0, ya'ni x ≤ 10. x − 6 = 10 − x dan 2x = 16 va x = 8, bu shartga mos. x − 6 = −(10 − x) tenglik esa 6 = 10 ga olib keladi va noto'g'ri. Javob: yagona ildiz 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ongi-ozgaruvchili",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#5af4bce8"
+    },
+    {
+      "q": "|x − 4| = 9 tenglama ildizlarining yig'indisini hisoblang.",
+      "v": [
+        "8",
+        "18",
+        "−8",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "Ildizlar x = 4 + 9 = 13 va x = 4 − 9 = −5 ko'rinishida topiladi. Ularning yig'indisi 13 + (−5) = 8. Umuman |x − a| = b tenglamada ildizlar yig'indisi 2a ga teng bo'ladi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ildizlar-yigindisi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#73e4a1fc"
+    },
+    {
+      "q": "|2x + 7| = 11 tenglamaning barcha ildizlari yig'indisi qanday songa teng?",
+      "v": [
+        "7",
+        "−11",
+        "11",
+        "−7"
+      ],
+      "t": 3,
+      "izoh": "2x + 7 = 11 dan 2x = 4 va x = 2; 2x + 7 = −11 dan 2x = −18 va x = −9. Ildizlar yig'indisi 2 + (−9) = −7. Javob: −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ildizlar-yigindisi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#ec223580"
+    },
+    {
+      "q": "|x² − 5x| = 6 tenglamaning barcha haqiqiy ildizlari yig'indisini toping.",
+      "v": [
+        "5",
+        "6",
+        "10",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "Ikki hol qaraladi. x² − 5x = 6 dan x² − 5x − 6 = 0 va ildizlari 6 hamda −1. x² − 5x = −6 dan x² − 5x + 6 = 0 va ildizlari 2 hamda 3. To'rt ildizning yig'indisi 6 + (−1) + 2 + 3 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ildizlar-yigindisi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#6efda464"
+    },
+    {
+      "q": "|3 − 2x| = 13 tenglama ildizlarining yig'indisini toping.",
+      "v": [
+        "−3",
+        "13",
+        "1,5",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "3 − 2x = 13 dan −2x = 10 va x = −5. 3 − 2x = −13 dan −2x = −16 va x = 8. Ildizlar yig'indisi −5 + 8 = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ildizlar-yigindisi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#b5dd91d4"
+    },
+    {
+      "q": "|x − 5| = 3 tenglamaning ildizlari ko'paytmasi nechaga teng?",
+      "v": [
+        "16",
+        "10",
+        "15",
+        "−16"
+      ],
+      "t": 0,
+      "izoh": "Ildizlar x = 5 + 3 = 8 va x = 5 − 3 = 2 bo'ladi. Ularning ko'paytmasi 8·2 = 16. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ildizlar-kopaytmasi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#f04a1979"
+    },
+    {
+      "q": "|x + 6| = 10 tenglama ildizlarining ko'paytmasini hisoblang.",
+      "v": [
+        "64",
+        "−60",
+        "−64",
+        "−12"
+      ],
+      "t": 2,
+      "izoh": "x + 6 = 10 dan x = 4, x + 6 = −10 dan x = −16 chiqadi. Ko'paytma 4·(−16) = −64 ga teng. Javob: −64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ildizlar-kopaytmasi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#d1d5a4f9"
+    },
+    {
+      "q": "|2x − 9| = 5 tenglamaning ildizlari ko'paytmasi qanday songa teng?",
+      "v": [
+        "9",
+        "14",
+        "45",
+        "−14"
+      ],
+      "t": 1,
+      "izoh": "2x − 9 = 5 dan 2x = 14 va x = 7; 2x − 9 = −5 dan 2x = 4 va x = 2. Ko'paytma 7·2 = 14 ga teng. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ildizlar-kopaytmasi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#e550202c"
+    },
+    {
+      "q": "|x² − 4| = 5 tenglamaning haqiqiy ildizlari ko'paytmasini toping.",
+      "v": [
+        "9",
+        "−1",
+        "45",
+        "−9"
+      ],
+      "t": 3,
+      "izoh": "Birinchi hol: x² − 4 = 5 dan x² = 9, ya'ni x = 3 va x = −3. Ikkinchi hol: x² − 4 = −5 dan x² = −1 chiqadi, bunday haqiqiy son yo'q. Ko'paytma 3·(−3) = −9. Javob: −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ildizlar-kopaytmasi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#6a691da8"
+    },
+    {
+      "q": "Muzxonada saqlash harorati −18 °C bo'lishi kerak. Datchik harorat belgilangan qiymatdan 3 gradus farq qilganini ko'rsatdi. Muzxonadagi harorat qanday bo'lishi mumkin?",
+      "v": [
+        "−15 °C yoki −21 °C",
+        "15 °C yoki 21 °C",
+        "−15 °C yoki 21 °C",
+        "faqat −21 °C"
+      ],
+      "t": 0,
+      "izoh": "Shart |t + 18| = 3 ko'rinishida yoziladi. t + 18 = 3 dan t = −15 °C, t + 18 = −3 dan t = −21 °C chiqadi. Javob: −15 °C yoki −21 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harorat-chetlanish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#09869240"
+    },
+    {
+      "q": "Issiqxonada kunduzgi harorat 24 °C atrofida ushlab turiladi. Avtomatika harorat me'yordan 2,5 gradusga chetlashganda signal beradi. Signal bergan paytdagi eng yuqori harorat necha gradus?",
+      "v": [
+        "21,5 °C",
+        "26,5 °C",
+        "24,5 °C",
+        "27,5 °C"
+      ],
+      "t": 1,
+      "izoh": "Chetlanish sharti |t − 24| = 2,5 tenglamasi bilan beriladi. Ikki yechim chiqadi: t = 26,5 °C va t = 21,5 °C. Ulardan kattasi 26,5 °C. Javob: 26,5 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-harorat-chetlanish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#fbbb6488"
+    },
+    {
+      "q": "Bemorning tana harorati me'yoriy 36,6 °C dan 0,8 gradusga farq qildi. Shifokor yozib qo'yishi mumkin bo'lgan ikki qiymatning ayirmasi nechaga teng?",
+      "v": [
+        "0,8",
+        "2,4",
+        "1,6",
+        "1,4"
+      ],
+      "t": 2,
+      "izoh": "Mumkin bo'lgan haroratlar |t − 36,6| = 0,8 tenglamadan topiladi: t = 37,4 °C va t = 35,8 °C. Ularning ayirmasi 37,4 − 35,8 = 1,6 gradus, ya'ni chetlanishning ikki barobari. Javob: 1,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harorat-chetlanish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#5f1b45a7"
+    },
+    {
+      "q": "Meteorologik stansiyada oktabr oyining o'rtacha harorati 14 °C. Bir kunning harorati 9 °C bo'lgan. Shu kattalikdagi chetlanish issiq tomonga bo'lsa, harorat qanday bo'lardi?",
+      "v": [
+        "Chetlanish 5, ikkinchi harorat 19 °C",
+        "Chetlanish 5, ikkinchi harorat 4 °C",
+        "Chetlanish 9, ikkinchi harorat 23 °C",
+        "Chetlanish 23, ikkinchi harorat 19 °C"
+      ],
+      "t": 0,
+      "izoh": "Avval chetlanishni topamiz: |9 − 14| = 5 gradus. So'ng |t − 14| = 5 tenglamaning ikkinchi ildizini olamiz: t = 14 + 5 = 19 °C. Javob: chetlanish 5, ikkinchi harorat 19 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-harorat-chetlanish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#45ba1609"
+    },
+    {
+      "q": "Bozorda bir kilogramm go'shtning o'rtacha narxi 95 000 so'm. Ayrim do'konlarda narx o'rtachadan 7 000 so'mga farq qiladi. Bunday do'konlardagi narxlar qanday bo'ladi?",
+      "v": [
+        "88 000 so'm yoki 102 000 so'm",
+        "88 000 so'm yoki 100 000 so'm",
+        "faqat 102 000 so'm",
+        "87 000 so'm yoki 103 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Narxni p bilan belgilaymiz va |p − 95 000| = 7 000 tenglamasini tuzamiz. Bundan p = 102 000 so'm yoki p = 88 000 so'm chiqadi. Javob: 88 000 so'm yoki 102 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-narx-chetlanish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#95a5a98f"
+    },
+    {
+      "q": "Kitob do'koni darslikni 46 000 so'mdan sotadi. Aksiya davrida narx belgilangan qiymatdan 5 500 so'mga o'zgardi. Aksiyadagi eng past narx qancha bo'ladi?",
+      "v": [
+        "51 500 so'm",
+        "40 500 so'm",
+        "41 500 so'm",
+        "40 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "O'zgarish sharti |p − 46 000| = 5 500 ko'rinishida. Ikki qiymat chiqadi: 51 500 so'm va 40 500 so'm. Ulardan eng pasti 40 500 so'm. Javob: 40 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-narx-chetlanish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#2f130a76"
+    },
+    {
+      "q": "Ikki do'konda bir xil printer sotiladi. Birinchisida narxi 2 400 000 so'm, ikkinchisidagi narx undan modul bo'yicha 150 000 so'mga farq qiladi. Ikkinchi do'kondagi mumkin bo'lgan ikki narx yig'indisi qancha?",
+      "v": [
+        "4 950 000 so'm",
+        "4 650 000 so'm",
+        "5 100 000 so'm",
+        "4 800 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi narx p uchun |p − 2 400 000| = 150 000 tenglamasi tuziladi. Bundan p = 2 550 000 so'm yoki p = 2 250 000 so'm. Ularning yig'indisi 4 800 000 so'm, ya'ni birinchi narxning ikki barobari. Javob: 4 800 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-narx-chetlanish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#5f782c26"
+    },
+    {
+      "q": "Sayyoh Toshkentda dollar kursini 12 650 so'm deb ko'rdi. Boshqa shaharda kurs undan 85 so'mga farq qiladi. Ikkinchi shahar uchun mumkin bo'lgan ikki kurs orasidagi farq qancha?",
+      "v": [
+        "85 so'm",
+        "170 so'm",
+        "12 735 so'm",
+        "255 so'm"
+      ],
+      "t": 1,
+      "izoh": "Ikkinchi shahar kursi |k − 12 650| = 85 tenglamadan topiladi: k = 12 735 so'm yoki k = 12 565 so'm. Ular orasidagi farq 12 735 − 12 565 = 170 so'm, ya'ni chetlanishning ikki barobari. Javob: 170 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-narx-chetlanish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#da692a2f"
+    },
+    {
+      "q": "|x − 3| = −5 tenglamaning haqiqiy ildizlari soni haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Ikkita ildiz bor",
+        "Bitta ildiz bor",
+        "Haqiqiy ildizi yo'q",
+        "Cheksiz ko'p ildiz bor"
+      ],
+      "t": 2,
+      "izoh": "Modulning qiymati hech qachon manfiy bo'lmaydi, ya'ni chap tomon doimo nolga teng yoki musbat. O'ng tomondagi −5 esa manfiy, shuning uchun tenglik hech qanday x da bajarilmaydi. Javob: haqiqiy ildizi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ildizlar-soni",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#f23cfb0a"
+    },
+    {
+      "q": "Quyidagi tenglamalardan qaysi biri ikkitadan ortiq ildizga ega: |x − 1| = 4, |2x| = 10, |x + 5| = 0, |x² − 9| = 7?",
+      "v": [
+        "|x − 1| = 4",
+        "|2x| = 10",
+        "|x + 5| = 0",
+        "|x² − 9| = 7"
+      ],
+      "t": 3,
+      "izoh": "Chiziqli modul tenglamalari |x − 1| = 4 va |2x| = 10 ikkitadan ildiz beradi, |x + 5| = 0 esa bitta. |x² − 9| = 7 da ikki hol bor: x² = 16 dan x = ±4, x² = 2 dan x = ±√2. Jami to'rtta ildiz. Javob: |x² − 9| = 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ildizlar-soni",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#515ce511"
+    },
+    {
+      "q": "|x − 2| = |x + 6| tenglamaning yechimlari soni qancha ekanini aniqlang.",
+      "v": [
+        "Yechimi yo'q",
+        "Bitta yechim",
+        "Ikkita yechim",
+        "Cheksiz ko'p yechim"
+      ],
+      "t": 1,
+      "izoh": "x − 2 = x + 6 tenglik −2 = 6 ga olib keladi va u noto'g'ri. x − 2 = −(x + 6) dan 2x = −4 va x = −2 chiqadi. Demak tenglama faqat bitta yechimga ega. Javob: bitta yechim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ildizlar-soni",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#c37b3092"
+    },
+    {
+      "q": "|x² − 2x − 3| = 4 tenglamaning nechta har xil haqiqiy ildizi bor?",
+      "v": [
+        "Ikkita",
+        "To'rtta",
+        "Uchta",
+        "Bitta"
+      ],
+      "t": 2,
+      "izoh": "Birinchi hol: x² − 2x − 3 = 4, ya'ni x² − 2x − 7 = 0, diskriminanti 32 musbat va ikkita ildiz beradi. Ikkinchi hol: x² − 2x − 3 = −4, ya'ni x² − 2x + 1 = 0 yoki (x − 1)² = 0, bundan yagona x = 1. Jami uchta har xil ildiz. Javob: uchta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ildizlar-soni",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#6f03cb9a"
+    },
+    {
+      "q": "|x − 1| + |x − 5| = 10 tenglamaning ildizlarini toping.",
+      "v": [
+        "x = 8 va x = −2",
+        "x = 8 va x = 2",
+        "x = 7 va x = −1",
+        "Yechimi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Oraliqlarga bo'lib yechamiz. x ≥ 5 da (x − 1) + (x − 5) = 10 dan 2x = 16 va x = 8. x < 1 da (1 − x) + (5 − x) = 10 dan 6 − 2x = 10 va x = −2. 1 ≤ x < 5 oralig'ida chap tomon doimo 4 ga teng bo'lib, 10 ga teng bo'lmaydi. Javob: x = 8 va x = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ikki-modul-yigindisi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#c4d2361c"
+    },
+    {
+      "q": "|x + 2| + |x − 6| = 12 tenglama ildizlarining yig'indisi nechaga teng?",
+      "v": [
+        "12",
+        "−4",
+        "8",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "x ≥ 6 da (x + 2) + (x − 6) = 12 dan 2x − 4 = 12 va x = 8. x < −2 da −(x + 2) − (x − 6) = 12 dan 4 − 2x = 12 va x = −4. Oraliq ichida chap tomon 8 ga teng bo'lib qoladi va yechim bermaydi. Yig'indi 8 + (−4) = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ikki-modul-yigindisi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#0ebb33a0"
+    },
+    {
+      "q": "|x − 9| + |x − 1| = 16 tenglamaning eng katta ildizini toping.",
+      "v": [
+        "9",
+        "13",
+        "−3",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "x ≥ 9 oralig'ida (x − 9) + (x − 1) = 16 dan 2x = 26 va x = 13. x < 1 oralig'ida (9 − x) + (1 − x) = 16 dan 10 − 2x = 16 va x = −3. Ildizlarning kattasi 13. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ikki-modul-yigindisi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#fa2ffdb8"
+    },
+    {
+      "q": "|x| + |x − 10| = 4 tenglamaning yechimi bormi va nima uchun shunday?",
+      "v": [
+        "Ha, x = 7 yechim bo'ladi",
+        "Ha, ikkita yechim bor",
+        "Yo'q, chap tomonning eng kichik qiymati 10 ga teng",
+        "Yo'q, chunki modul manfiy bo'lolmaydi"
+      ],
+      "t": 2,
+      "izoh": "Chap tomon x sonining 0 va 10 nuqtalargacha bo'lgan masofalari yig'indisi. Bu yig'indi hech qachon 10 dan kichik bo'lmaydi, eng kichik qiymati aynan 10 ga teng. O'ng tomondagi 4 esa undan kichik. Javob: yechimi yo'q, eng kichik qiymat 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ikki-modul-yigindisi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#7dfdb50e"
+    },
+    {
+      "q": "|x − 2| − |x − 6| = 2 tenglamaning yechimini aniqlang.",
+      "v": [
+        "x = 4",
+        "x = 5",
+        "x = 2",
+        "Yechimi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Uch oraliqqa bo'lamiz. x < 2 da chap tomon −4 ga teng bo'lib qoladi, x ≥ 6 da esa 4 ga teng. 2 ≤ x < 6 oralig'ida (x − 2) − (6 − x) = 2x − 8 bo'ladi va 2x − 8 = 2 dan x = 5 chiqadi, u oraliqqa tegishli. Javob: x = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ikki-modul-ayirmasi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#6620e491"
+    },
+    {
+      "q": "|x + 3| − |x − 1| = 4 tenglamaning yechimlar to'plami qanday?",
+      "v": [
+        "Faqat x = 1",
+        "x ≤ −3 bo'lgan barcha sonlar",
+        "Yechimi yo'q",
+        "x ≥ 1 bo'lgan barcha sonlar"
+      ],
+      "t": 3,
+      "izoh": "x ≥ 1 bo'lganda ikkala modul ham ochiladi: (x + 3) − (x − 1) = 4, bu ayniyat, ya'ni oraliqning har bir soni yechim. −3 ≤ x < 1 da 2x + 2 = 4 dan x = 1 chiqadi va u allaqachon hisobga olingan. x < −3 da chap tomon −4 ga teng. Javob: x ≥ 1 bo'lgan barcha sonlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ikki-modul-ayirmasi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#b95b1172"
+    },
+    {
+      "q": "|x − 8| − |x + 2| = 6 tenglamaning ildizini toping.",
+      "v": [
+        "x = 0",
+        "x = 3",
+        "x = −6",
+        "Yechimi yo'q"
+      ],
+      "t": 0,
+      "izoh": "−2 ≤ x < 8 oralig'ida (8 − x) − (x + 2) = 6 − 2x bo'ladi va 6 − 2x = 6 dan x = 0 chiqadi. x ≥ 8 da chap tomon −10 ga, x < −2 da esa 10 ga teng bo'lib qoladi. Javob: x = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ikki-modul-ayirmasi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#5f5939fe"
+    },
+    {
+      "q": "|2x − 1| − |x + 3| = 0 tenglamaning ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "4",
+        "14/3",
+        "10/3",
+        "−2/3"
+      ],
+      "t": 2,
+      "izoh": "Tenglama |2x − 1| = |x + 3| ko'rinishiga keladi. 2x − 1 = x + 3 dan x = 4; 2x − 1 = −(x + 3) dan 3x = −2 va x = −2/3. Yig'indi 4 − 2/3 = 10/3. Javob: 10/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ikki-modul-ayirmasi",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#3e52b289"
+    },
+    {
+      "q": "Avtobus bekatga jadval bo'yicha soat 14:00 da kelishi kerak. Haydovchi jadvaldan 12 daqiqa chetlashdi. Avtobus qaysi vaqtlarda kelgan bo'lishi mumkin?",
+      "v": [
+        "13:48 yoki 14:12",
+        "13:48 yoki 14:48",
+        "faqat 14:12",
+        "13:12 yoki 14:12"
+      ],
+      "t": 0,
+      "izoh": "Kelish vaqti t bo'lsa, u belgilangan vaqtdan 12 daqiqa farq qiladi. Kechikish holida t = 14:12, erta kelish holida t = 13:48 bo'ladi. Ikkala hol ham 12 daqiqalik chetlanishni beradi. Javob: 13:48 yoki 14:12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-vaqt-jadval",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#8f8d7e4d"
+    },
+    {
+      "q": "Mashg'ulot 90 daqiqa davom etishi kerak edi. Amaldagi davomiylik rejadan 15 daqiqa farq qildi. Mumkin bo'lgan ikki davomiylikning yig'indisi nechaga teng?",
+      "v": [
+        "165 daqiqa",
+        "180 daqiqa",
+        "195 daqiqa",
+        "150 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Davomiylik d uchun |d − 90| = 15 tenglamasi tuziladi. Bundan d = 105 daqiqa yoki d = 75 daqiqa chiqadi. Ularning yig'indisi 105 + 75 = 180 daqiqa, ya'ni rejaning ikki barobari. Javob: 180 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-vaqt-jadval",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#9070d27a"
+    },
+    {
+      "q": "Zilola ishga odatda 35 daqiqada boradi. Bir kuni yo'l 47 daqiqa davom etdi. Xuddi shu kattalikdagi chetlanish tezroq yurish tomoniga bo'lsa, yo'l necha daqiqa davom etardi?",
+      "v": [
+        "12 daqiqa",
+        "28 daqiqa",
+        "59 daqiqa",
+        "23 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Avval chetlanishni topamiz: |47 − 35| = 12 daqiqa. Endi |t − 35| = 12 tenglamaning ikkinchi ildizini olamiz: t = 35 − 12 = 23 daqiqa. Javob: 23 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-vaqt-jadval",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#f920a07d"
+    },
+    {
+      "q": "Ikki xizmat mashinasi bazaga qaytishi kerak. Birinchisi belgilangan 18:00 vaqtidan 40 daqiqa, ikkinchisi 25 daqiqa chetlashdi va chetlanishlar qarama-qarshi tomonga bo'ldi. Kelish vaqtlari orasidagi eng katta farq nechaga teng?",
+      "v": [
+        "15 daqiqa",
+        "40 daqiqa",
+        "65 daqiqa",
+        "80 daqiqa"
+      ],
+      "t": 2,
+      "izoh": "Birinchi mashina 18:40 yoki 17:20 da, ikkinchisi 18:25 yoki 17:35 da keladi. Chetlanishlar qarama-qarshi tomonga bo'lgani uchun eng katta farq 18:40 va 17:35 orasida hosil bo'ladi: 40 + 25 = 65 daqiqa. Javob: 65 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-vaqt-jadval",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#d9b857c1"
+    },
+    {
+      "q": "Non zavodida bir smenada 480 ta non yopilishi kerak. Kechagi ishlab chiqarish normadan 36 ta farq qildi. Zavod nechta non yopgan bo'lishi mumkin?",
+      "v": [
+        "444 ta yoki 516 ta",
+        "444 ta yoki 504 ta",
+        "faqat 516 ta",
+        "456 ta yoki 504 ta"
+      ],
+      "t": 0,
+      "izoh": "Ishlab chiqarilgan miqdor n uchun |n − 480| = 36 tenglamasi tuziladi. Bundan n = 516 ta yoki n = 444 ta chiqadi. Javob: 444 ta yoki 516 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ishlab-chiqarish-norma",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#9522004b"
+    },
+    {
+      "q": "Tikuvchilik sexida kuniga 150 ta ko'ylak tikish rejalashtirilgan. Bir kuni reja 18 ta ko'ylakka bajarilmadi, boshqa kuni esa xuddi shuncha ortiqcha bajarildi. Shu ikki kunda jami nechta ko'ylak tikilgan?",
+      "v": [
+        "282 ta",
+        "300 ta",
+        "318 ta",
+        "336 ta"
+      ],
+      "t": 1,
+      "izoh": "Kam bajarilgan kunda 150 − 18 = 132 ta, ortiqcha bajarilgan kunda 150 + 18 = 168 ta ko'ylak tikilgan. Jami 132 + 168 = 300 ta. Qarama-qarshi chetlanishlar bir-birini yo'qotgani uchun natija ikki kunlik rejaga teng. Javob: 300 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ishlab-chiqarish-norma",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#8e8f06c1"
+    },
+    {
+      "q": "Sut kombinatida bir kunlik norma 2 400 litr. Ustaxona boshlig'i bugungi hajm normadan modul bo'yicha 260 litrga farq qilganini aytdi. Kombinat ishlab chiqargan eng kichik mumkin bo'lgan hajmni toping.",
+      "v": [
+        "2 140 litr",
+        "2 660 litr",
+        "2 260 litr",
+        "2 540 litr"
+      ],
+      "t": 0,
+      "izoh": "Hajm V uchun |V − 2 400| = 260 tenglamasi tuziladi. Ikki qiymat chiqadi: V = 2 660 litr va V = 2 140 litr. Ulardan kichigi 2 140 litr. Javob: 2 140 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ishlab-chiqarish-norma",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#e62312f5"
+    },
+    {
+      "q": "G'isht zavodida kunlik reja 7 500 dona. Ikki kunda chetlanish moduli bir xil bo'ldi: birinchi kuni reja oshirib, ikkinchi kuni kam bajarildi. Ikki kunlik jami mahsulot 15 000 dona chiqdi. Chetlanish qanchaga teng?",
+      "v": [
+        "0 dona",
+        "250 dona",
+        "500 dona",
+        "Aniqlab bo'lmaydi: har qanday chetlanishda jami 15 000 dona chiqadi"
+      ],
+      "t": 3,
+      "izoh": "Birinchi kun 7 500 + d, ikkinchi kun 7 500 − d dona beradi. Ularning yig'indisi (7 500 + d) + (7 500 − d) = 15 000 dona bo'lib, d ga umuman bog'liq emas. Demak berilgan ma'lumot chetlanishni aniqlashga imkon bermaydi. Javob: aniqlab bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-ishlab-chiqarish-norma",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#4e0cc998"
+    },
+    {
+      "q": "|x − 2| + |x − 9| = 7 tenglamaning yechimlar to'plamini aniqlang.",
+      "v": [
+        "Faqat x = 2 va x = 9",
+        "2 ≤ x ≤ 9 oraliqdagi barcha sonlar",
+        "Faqat x = 5,5",
+        "Yechimi yo'q"
+      ],
+      "t": 1,
+      "izoh": "Chap tomon x sonining 2 va 9 nuqtalargacha bo'lgan masofalari yig'indisi. Agar x kesma ichida yotsa, bu yig'indi doim 7 ga, ya'ni nuqtalar orasidagi masofaga teng bo'ladi. Kesmadan tashqarida esa u 7 dan katta chiqadi. Javob: 2 ≤ x ≤ 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-cheksiz-yechim-oraliq",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#06c687be"
+    },
+    {
+      "q": "|x + 5| + |x − 3| = 8 tenglamaning butun sonli yechimlari nechta?",
+      "v": [
+        "2 ta",
+        "8 ta",
+        "9 ta",
+        "Cheksiz ko'p"
+      ],
+      "t": 2,
+      "izoh": "Chap tomon x ning −5 va 3 nuqtalargacha masofalari yig'indisi, ular orasidagi masofa esa 8 ga teng. Shuning uchun yechim −5 ≤ x ≤ 3 kesmasi bo'ladi. Undagi butun sonlar: −5, −4, −3, −2, −1, 0, 1, 2, 3 — jami 9 ta. Javob: 9 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-cheksiz-yechim-oraliq",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#b28e24a0"
+    },
+    {
+      "q": "|4 − x| + |x + 1| = 5 tenglama qaysi x larda o'rinli ekanini aniqlang.",
+      "v": [
+        "Faqat x = −1 va x = 4",
+        "−1 ≤ x ≤ 4 oraliqdagi barcha sonlar",
+        "Faqat x = 1,5",
+        "Barcha haqiqiy sonlar"
+      ],
+      "t": 1,
+      "izoh": "|4 − x| = |x − 4| bo'lgani uchun chap tomon x ning 4 va −1 nuqtalargacha masofalari yig'indisidir. Bu nuqtalar orasidagi masofa aynan 5 ga teng, shuning uchun kesma ichidagi har bir son tenglamani qanoatlantiradi. Javob: −1 ≤ x ≤ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-cheksiz-yechim-oraliq",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#0171ab5e"
+    },
+    {
+      "q": "|x + 6| + |x − 6| = 12 tenglamaning eng katta va eng kichik yechimlari ayirmasi nechaga teng?",
+      "v": [
+        "0",
+        "6",
+        "12",
+        "36"
+      ],
+      "t": 2,
+      "izoh": "Chap tomon x ning −6 va 6 nuqtalargacha masofalari yig'indisi, ular orasidagi masofa 12 ga teng. Demak yechim −6 ≤ x ≤ 6 kesmasi bo'ladi. Eng katta va eng kichik yechimlar ayirmasi 6 − (−6) = 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-cheksiz-yechim-oraliq",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#153dc48e"
+    },
+    {
+      "q": "|x² − 10| = 6 tenglamaning musbat ildizlari yig'indisini toping.",
+      "v": [
+        "6",
+        "4",
+        "0",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "x² − 10 = 6 dan x² = 16, ya'ni x = 4 va x = −4. x² − 10 = −6 dan x² = 4, ya'ni x = 2 va x = −2. Musbat ildizlar 4 va 2, ularning yig'indisi 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kvadrat-ifoda-ichida",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#33e58bdb"
+    },
+    {
+      "q": "|x² − 7| = 9 tenglamaning haqiqiy ildizlari soni qancha?",
+      "v": [
+        "Bitta ham yo'q",
+        "Uchta",
+        "To'rtta",
+        "Ikkita"
+      ],
+      "t": 3,
+      "izoh": "x² − 7 = 9 dan x² = 16 va x = ±4 chiqadi, bu ikkita ildiz. x² − 7 = −9 dan esa x² = −2 hosil bo'ladi, kvadrat manfiy songa teng bo'lolmaydi. Demak jami ikkita haqiqiy ildiz bor. Javob: ikkita.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kvadrat-ifoda-ichida",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#16ad45dd"
+    },
+    {
+      "q": "|x² + 2x| = 3 tenglamaning eng kichik ildizini toping.",
+      "v": [
+        "1",
+        "−1",
+        "3",
+        "−3"
+      ],
+      "t": 3,
+      "izoh": "x² + 2x = 3 dan x² + 2x − 3 = 0 va uning ildizlari x = 1 hamda x = −3. x² + 2x = −3 dan x² + 2x + 3 = 0, diskriminanti 4 − 12 = −8 manfiy, haqiqiy ildiz yo'q. Ildizlarning kichigi −3. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kvadrat-ifoda-ichida",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#a634a992"
+    },
+    {
+      "q": "|x² − 9| = x² − 9 tenglik qaysi x larda o'rinli bo'ladi?",
+      "v": [
+        "Faqat x = 3 va x = −3",
+        "−3 ≤ x ≤ 3 oraliqda",
+        "x ≤ −3 yoki x ≥ 3 bo'lganda",
+        "Barcha haqiqiy sonlarda"
+      ],
+      "t": 2,
+      "izoh": "|A| = A tenglik faqat A ≥ 0 bo'lganda bajariladi. Demak x² − 9 ≥ 0, ya'ni x² ≥ 9 sharti kerak. Bu shart x ≤ −3 yoki x ≥ 3 bo'lganda o'rinli bo'ladi. Javob: x ≤ −3 yoki x ≥ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-kvadrat-ifoda-ichida",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#325b3071"
+    },
+    {
+      "q": "x² − 7|x| + 12 = 0 tenglamaning barcha ildizlarini toping.",
+      "v": [
+        "x = 3 va x = 4",
+        "x = −3 va x = −4",
+        "x = ±3 va x = ±4",
+        "Yechimi yo'q"
+      ],
+      "t": 2,
+      "izoh": "|x| = t deb belgilaymiz, x² = t² bo'lgani uchun t² − 7t + 12 = 0 hosil bo'ladi. Uning ildizlari t = 3 va t = 4, ikkalasi ham musbat. |x| = 3 dan x = ±3, |x| = 4 dan x = ±4 chiqadi. Javob: x = ±3 va x = ±4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kvadratga-keltirish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#4145ef6a"
+    },
+    {
+      "q": "x² − 5|x| − 6 = 0 tenglamaning ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "6",
+        "5",
+        "12",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "|x| = t almashtirish t² − 5t − 6 = 0 tenglamasini beradi, uning ildizlari t = 6 va t = −1. Modul manfiy bo'lmagani uchun t = −1 yaramaydi. |x| = 6 dan x = 6 va x = −6 chiqadi, ularning yig'indisi nolga teng. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kvadratga-keltirish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#cc3f1c65"
+    },
+    {
+      "q": "x² + 4|x| − 21 = 0 tenglama nechta haqiqiy ildizga ega?",
+      "v": [
+        "Ikkita ildiz",
+        "Bitta ildiz",
+        "Uchta ildiz",
+        "To'rtta ildiz"
+      ],
+      "t": 0,
+      "izoh": "t = |x| belgilash bilan t² + 4t − 21 = 0 tenglamasini olamiz, uning ildizlari t = 3 va t = −7. Manfiy t modulga mos kelmaydi. |x| = 3 dan x = 3 va x = −3 chiqadi. Javob: ikkita ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kvadratga-keltirish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#040b56dc"
+    },
+    {
+      "q": "x² − 2|x| − 8 = 0 tenglamaning musbat ildizi bilan manfiy ildizi ko'paytmasini toping.",
+      "v": [
+        "16",
+        "−16",
+        "−8",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "|x| = t deb olsak t² − 2t − 8 = 0 bo'ladi, ildizlari t = 4 va t = −2. Faqat t = 4 mos keladi, demak x = 4 va x = −4. Ularning ko'paytmasi 4·(−4) = −16. Javob: −16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kvadratga-keltirish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#e7f4cf89"
+    },
+    {
+      "q": "Dorixonada tayyorlanadigan aralashmada tuz miqdori 250 gramm bo'lishi kerak. Tarozidagi xato tufayli haqiqiy miqdor rejadan 18 grammga farq qildi. Aralashmadagi tuz miqdori qanday bo'lishi mumkin?",
+      "v": [
+        "232 g yoki 268 g",
+        "232 g yoki 250 g",
+        "faqat 268 g",
+        "218 g yoki 282 g"
+      ],
+      "t": 0,
+      "izoh": "Miqdor m uchun |m − 250| = 18 tenglamasi tuziladi. Bundan m = 268 g yoki m = 232 g chiqadi. Javob: 232 g yoki 268 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-aralashma-massa",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#3e30b1c8"
+    },
+    {
+      "q": "Bo'yoq tayyorlashda asosga 750 ml rangli qo'shimcha qo'shiladi. Amalda qo'shimcha hajmi me'yordan 60 ml farq qildi. Mumkin bo'lgan ikki hajm orasidagi ayirma qancha?",
+      "v": [
+        "60 ml",
+        "120 ml",
+        "810 ml",
+        "150 ml"
+      ],
+      "t": 1,
+      "izoh": "Hajm V uchun |V − 750| = 60 tenglamasi tuziladi. Bundan V = 810 ml yoki V = 690 ml chiqadi. Ularning ayirmasi 810 − 690 = 120 ml, ya'ni chetlanishning ikki barobari. Javob: 120 ml.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-aralashma-massa",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#79b9d807"
+    },
+    {
+      "q": "Qorishmada sement massasi 45 kg bo'lishi rejalashtirilgan. Usta sement massasi rejadan farq qilganini, farq moduli esa qum massasidan 30 marta kichik ekanini aytdi. Qum massasi 180 kg bo'lsa, sement massasi qanday?",
+      "v": [
+        "40 kg yoki 50 kg",
+        "faqat 51 kg",
+        "15 kg yoki 75 kg",
+        "39 kg yoki 51 kg"
+      ],
+      "t": 3,
+      "izoh": "Avval chetlanishni topamiz: 180 : 30 = 6 kg. Endi |m − 45| = 6 tenglamasini yechamiz: m = 51 kg yoki m = 39 kg. Javob: 39 kg yoki 51 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-aralashma-massa",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#0759ae6a"
+    },
+    {
+      "q": "Ichimlikda sut hajmi 1,8 litr bo'lishi kerak edi. Ikki idishda hajm rejadan bir xil kattalikda, lekin qarama-qarshi tomonga chetlashdi va birinchi idishda 2,1 litr bo'ldi. Ikkinchi idishdagi sut hajmini toping.",
+      "v": [
+        "2,4 litr",
+        "1,8 litr",
+        "1,5 litr",
+        "0,3 litr"
+      ],
+      "t": 2,
+      "izoh": "Birinchi idishdagi chetlanish |2,1 − 1,8| = 0,3 litr. Ikkinchi idishda chetlanish teskari tomonga bo'lgani uchun V = 1,8 − 0,3 = 1,5 litr bo'ladi. Javob: 1,5 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-aralashma-massa",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#4679d49f"
+    },
+    {
+      "q": "Yosh yuguruvchi 400 metrni 58 sekundda bosib o'tishni maqsad qilgan. Musobaqada uning natijasi maqsaddan 3 sekundga farq qildi. Yuguruvchining mumkin bo'lgan natijalari qanday?",
+      "v": [
+        "55 s yoki 61 s",
+        "55 s yoki 58 s",
+        "faqat 61 s",
+        "52 s yoki 64 s"
+      ],
+      "t": 0,
+      "izoh": "Natija t uchun |t − 58| = 3 tenglamasi tuziladi. Bundan t = 61 s yoki t = 55 s chiqadi. Javob: 55 s yoki 61 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-sport-natija",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#43e830da"
+    },
+    {
+      "q": "Uzunlikka sakrashda maktab rekordi 5,4 metr. Ikki sportchining natijasi rekorddan bir xil kattalikda chetlashdi: biri undan yuqori, ikkinchisi pastroq. Ularning natijalari yig'indisi necha metrga teng?",
+      "v": [
+        "10,4 m",
+        "10,8 m",
+        "11,2 m",
+        "Ma'lumot yetarli emas"
+      ],
+      "t": 1,
+      "izoh": "Natijalarni 5,4 + d va 5,4 − d ko'rinishida yozamiz. Ularning yig'indisi (5,4 + d) + (5,4 − d) = 10,8 metr bo'lib, chetlanish kattaligiga bog'liq emas. Javob: 10,8 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-sport-natija",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#26aba6ee"
+    },
+    {
+      "q": "Basketbol jamoasi o'yinda o'rtacha 78 ochko to'playdi. So'nggi o'yinda natija o'rtachadan 11 ga farq qildi, ammo jamoa g'alaba uchun kerak bo'lgan 85 ochkoni to'play olmadi. Jamoa nechta ochko to'plagan?",
+      "v": [
+        "89 ochko",
+        "74 ochko",
+        "85 ochko",
+        "67 ochko"
+      ],
+      "t": 3,
+      "izoh": "|n − 78| = 11 tenglamasidan n = 89 yoki n = 67 chiqadi. Shartga ko'ra natija 85 dan kichik bo'lishi kerak, 89 esa bu shartga to'g'ri kelmaydi. Javob: 67 ochko.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-sport-natija",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#71566b06"
+    },
+    {
+      "q": "Og'ir atletikachi mashg'ulotda 92 kg ko'targan, bu natija uning maqsadidan 8 kg farq qiladi. Murabbiy maqsad 100 kg dan kam bo'lganini aytdi. Sportchining maqsadi necha kilogramm bo'lgan?",
+      "v": [
+        "84 kg",
+        "100 kg",
+        "92 kg",
+        "108 kg"
+      ],
+      "t": 0,
+      "izoh": "Maqsad m uchun |92 − m| = 8 tenglamasi tuziladi. Bundan m = 100 kg yoki m = 84 kg chiqadi. Shartga ko'ra maqsad 100 kg dan kichik, demak m = 84 kg. Javob: 84 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-sport-natija",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#a1fb6518"
+    },
+    {
+      "q": "|x − 4|/(x − 4) = 1 tenglama qaysi x qiymatlarida o'rinli bo'ladi?",
+      "v": [
+        "Faqat x = 4",
+        "x > 4 bo'lgan barcha sonlar",
+        "x < 4 bo'lgan barcha sonlar",
+        "Barcha x ≠ 4"
+      ],
+      "t": 1,
+      "izoh": "x = 4 da maxraj nolga aylanadi, shuning uchun bu qiymat yaramaydi. x > 4 bo'lganda x − 4 musbat va |x − 4| = x − 4, ya'ni kasr 1 ga teng. x < 4 bo'lganda esa kasr −1 ga teng bo'ladi. Javob: x > 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kasrli-tenglama",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#7bf084b7"
+    },
+    {
+      "q": "x : |x| = −1 tenglamaning yechimlar to'plamini ko'rsating.",
+      "v": [
+        "x < 0 bo'lgan barcha sonlar",
+        "Faqat x = −1",
+        "x > 0 bo'lgan barcha sonlar",
+        "Yechimi yo'q"
+      ],
+      "t": 0,
+      "izoh": "x = 0 da ifoda aniqlanmagan, chunki nolga bo'lish mumkin emas. x > 0 bo'lsa |x| = x va nisbat 1 ga teng bo'ladi. x < 0 bo'lsa |x| = −x va nisbat −1 ga teng chiqadi. Javob: x < 0 bo'lgan barcha sonlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kasrli-tenglama",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#bd057a71"
+    },
+    {
+      "q": "(|x| + x)/2 = 6 tenglamaning ildizini toping.",
+      "v": [
+        "x = 12",
+        "x = 3",
+        "x = ±6",
+        "x = 6"
+      ],
+      "t": 3,
+      "izoh": "x ≥ 0 bo'lganda |x| = x va tenglama (x + x)/2 = x ko'rinishini oladi, bundan x = 6. x < 0 bo'lganda |x| = −x va chap tomon nolga teng bo'lib qoladi, u 6 ga teng bo'lolmaydi. Javob: x = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kasrli-tenglama",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#69296439"
+    },
+    {
+      "q": "|x − 3|/(x − 3) = −1 shartini qanoatlantiruvchi eng katta butun sonni toping.",
+      "v": [
+        "3",
+        "2",
+        "4",
+        "−3"
+      ],
+      "t": 1,
+      "izoh": "Kasr −1 ga teng bo'lishi uchun surat va maxraj qarama-qarshi ishorali, ya'ni x − 3 manfiy bo'lishi kerak. Demak x < 3, x = 3 esa maxrajni nolga aylantiradi. Bu shartni qanoatlantiruvchi eng katta butun son 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kasrli-tenglama",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#819db8bd"
+    },
+    {
+      "q": "||x − 2| − 5| = 3 tenglamaning barcha ildizlarini toping.",
+      "v": [
+        "10 va −6",
+        "4 va 0",
+        "8 va 2",
+        "10; 4; 0; −6"
+      ],
+      "t": 3,
+      "izoh": "Avval |x − 2| = t deb qaraymiz: |t − 5| = 3 dan t = 8 yoki t = 2. |x − 2| = 8 dan x = 10 va x = −6; |x − 2| = 2 dan x = 4 va x = 0 chiqadi. Jami to'rtta ildiz bor. Javob: 10; 4; 0; −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ichma-ich",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#f2bb4d41"
+    },
+    {
+      "q": "||x + 1| − 4| = 6 tenglamaning haqiqiy ildizlari nechta?",
+      "v": [
+        "2 ta ildiz",
+        "3 ta ildiz",
+        "4 ta ildiz",
+        "Ildizi yo'q"
+      ],
+      "t": 0,
+      "izoh": "|x + 1| = t belgilash bilan |t − 4| = 6 tenglamasini olamiz, bundan t = 10 yoki t = −2. Modul manfiy bo'lmagani uchun t = −2 yaramaydi. |x + 1| = 10 dan x = 9 va x = −11 chiqadi. Javob: 2 ta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ichma-ich",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#6a53fa36"
+    },
+    {
+      "q": "||x − 6| − 2| = 0 tenglamaning ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "6",
+        "4",
+        "12",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Tashqi modul nolga teng bo'lishi uchun |x − 6| − 2 = 0, ya'ni |x − 6| = 2 bo'lishi kerak. Bundan x = 8 va x = 4 chiqadi. Ularning yig'indisi 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ichma-ich",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#26eb996c"
+    },
+    {
+      "q": "||2x − 3| − 5| = 4 tenglamaning eng katta ildizini toping.",
+      "v": [
+        "6",
+        "2",
+        "1",
+        "−3"
+      ],
+      "t": 0,
+      "izoh": "|2x − 3| = t deb olamiz: |t − 5| = 4 dan t = 9 yoki t = 1. |2x − 3| = 9 dan x = 6 va x = −3; |2x − 3| = 1 dan x = 2 va x = 1 chiqadi. To'rt ildizning kattasi 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ichma-ich",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#1e4b39d0"
+    },
+    {
+      "q": "|x − a| = 7 tenglamaning ildizlaridan biri 12 ga teng bo'lsa, a ning mumkin bo'lgan qiymatlarini toping.",
+      "v": [
+        "5 yoki 12",
+        "faqat 19",
+        "−5 yoki 19",
+        "5 yoki 19"
+      ],
+      "t": 3,
+      "izoh": "x = 12 ni tenglamaga qo'yamiz: |12 − a| = 7. Bundan 12 − a = 7 yoki 12 − a = −7. Birinchisidan a = 5, ikkinchisidan a = 19 chiqadi. Javob: 5 yoki 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-koeffitsient-topish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#d7e1f3af"
+    },
+    {
+      "q": "|3x + b| = 10 tenglamaning ildizlaridan biri x = 2 bo'lsa, b ning musbat qiymatini aniqlang.",
+      "v": [
+        "16",
+        "10",
+        "6",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "x = 2 ni qo'yamiz: |3·2 + b| = 10, ya'ni |6 + b| = 10. Bundan 6 + b = 10 yoki 6 + b = −10, demak b = 4 yoki b = −16. Ulardan musbati 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-koeffitsient-topish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#7af8b1cb"
+    },
+    {
+      "q": "|x + 4| = c tenglama yagona ildizga ega bo'lishi uchun c qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "c = 4",
+        "c = 0",
+        "c = −4",
+        "Har qanday musbat c"
+      ],
+      "t": 1,
+      "izoh": "Agar c > 0 bo'lsa tenglama ikkita ildiz beradi, c < 0 bo'lsa umuman ildizga ega bo'lmaydi. Yagona ildiz faqat c = 0 bo'lganda, ya'ni x + 4 = 0 va x = −4 bo'lganda hosil bo'ladi. Javob: c = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-koeffitsient-topish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#0c22aecc"
+    },
+    {
+      "q": "Kompaniya narxni |p − 84 000| = k shartiga ko'ra o'zgartiradi va mumkin bo'lgan ikki narxdan kattasi 91 000 so'm bo'ldi. k qanchaga teng va ikkinchi narx qancha?",
+      "v": [
+        "k = 7 000, ikkinchi narx 77 000 so'm",
+        "k = 7 000, ikkinchi narx 84 000 so'm",
+        "k = 91 000, ikkinchi narx 7 000 so'm",
+        "k = 3 500, ikkinchi narx 80 500 so'm"
+      ],
+      "t": 0,
+      "izoh": "Katta narx 84 000 + k = 91 000 tenglikdan topiladi, bundan k = 7 000 so'm. Ikkinchi narx esa 84 000 − 7 000 = 77 000 so'm bo'ladi. Javob: k = 7 000, ikkinchi narx 77 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-koeffitsient-topish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#ad965f10"
+    },
+    {
+      "q": "Anvar |x − 1| = 3x − 5 tenglamani yechib, x = 2 va x = 1,5 qiymatlarini oldi. Qaysi qiymat begona ildiz va nima uchun?",
+      "v": [
+        "x = 2, chunki modul manfiy chiqadi",
+        "x = 1,5, chunki o'ng tomon manfiy bo'lib qoladi",
+        "Ikkalasi ham to'g'ri ildiz",
+        "Ikkalasi ham begona ildiz"
+      ],
+      "t": 1,
+      "izoh": "Tekshirish sharti o'ng tomonning manfiy emasligi: 3x − 5 ≥ 0. x = 2 da o'ng tomon 1 ga, chap tomon |2 − 1| = 1 ga teng, tenglik bajariladi. x = 1,5 da o'ng tomon 3·1,5 − 5 = −0,5 manfiy chiqadi, modul esa manfiy bo'lolmaydi. Javob: x = 1,5 begona ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-begona-ildiz-tekshirish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#0fbf9025"
+    },
+    {
+      "q": "|x + 2| = 2x − 1 tenglamani yechishda topilgan qaysi son haqiqiy ildiz bo'ladi?",
+      "v": [
+        "x = −1/3",
+        "Ikkalasi ham ildiz",
+        "Ildiz yo'q",
+        "x = 3"
+      ],
+      "t": 3,
+      "izoh": "Ikki holdan x = 3 va x = −1/3 chiqadi. O'ng tomon 2x − 1 manfiy bo'lmasligi kerak, ya'ni x ≥ 0,5. x = −1/3 bu shartni buzadi. x = 3 uchun tekshiramiz: |3 + 2| = 5 va 2·3 − 1 = 5, tenglik bajariladi. Javob: x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-begona-ildiz-tekshirish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#67950048"
+    },
+    {
+      "q": "Talaba |2x − 6| = x tenglamani yechib, ikkala qiymatni ham javobga yozdi. Tekshiruv nima ko'rsatadi?",
+      "v": [
+        "Faqat x = 6 to'g'ri",
+        "Faqat x = 2 to'g'ri",
+        "x = 6 va x = 2 — ikkalasi ham to'g'ri",
+        "Ikkala qiymat ham begona"
+      ],
+      "t": 2,
+      "izoh": "2x − 6 = x dan x = 6, 2x − 6 = −x dan 3x = 6 va x = 2 chiqadi. O'ng tomondagi x manfiy bo'lmasligi kerak, ikkala qiymat ham musbat. Tekshiramiz: |2·6 − 6| = 6 va |2·2 − 6| = 2, ikkala tenglik ham bajariladi. Javob: ikkalasi ham to'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-begona-ildiz-tekshirish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#6c5a2e29"
+    },
+    {
+      "q": "|x − 5| = x − 5 tenglamani yechgan o'quvchi javobni x = 5 deb yozdi. Uning javobi to'liqmi?",
+      "v": [
+        "Yo'q, yechim x ≥ 5 bo'lgan barcha sonlar",
+        "Ha, javob to'liq",
+        "Yo'q, yechim x ≤ 5 bo'lgan barcha sonlar",
+        "Yo'q, tenglamaning yechimi yo'q"
+      ],
+      "t": 0,
+      "izoh": "|A| = A tenglik A ≥ 0 bo'lgan barcha hollarda bajariladi. Bu yerda x − 5 ≥ 0 sharti, ya'ni x ≥ 5 kelib chiqadi. Demak x = 5 cheksiz ko'p yechimdan faqat bittasi. Javob: yechim x ≥ 5 bo'lgan barcha sonlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-begona-ildiz-tekshirish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#01d7198a"
+    },
+    {
+      "q": "y = |x − 3| va y = 5 funksiyalarning grafiklari nechta nuqtada kesishadi va abssissalari qanday?",
+      "v": [
+        "Bitta nuqtada, x = 8",
+        "Ikki nuqtada, x = 8 va x = −2",
+        "Ikki nuqtada, x = 8 va x = 2",
+        "Kesishmaydi"
+      ],
+      "t": 1,
+      "izoh": "Kesishish nuqtalari |x − 3| = 5 tenglamadan topiladi. x − 3 = 5 dan x = 8, x − 3 = −5 dan x = −2 chiqadi. Demak grafiklar ikki nuqtada kesishadi. Javob: ikki nuqtada, x = 8 va x = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-grafik-kesishish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#3fed0a19"
+    },
+    {
+      "q": "y = |x + 1| grafigi va y = −4 to'g'ri chiziq haqida qaysi xulosa to'g'ri?",
+      "v": [
+        "Ikki nuqtada kesishadi",
+        "Bir nuqtada urinadi",
+        "Umuman kesishmaydi",
+        "Cheksiz ko'p nuqtada kesishadi"
+      ],
+      "t": 2,
+      "izoh": "y = |x + 1| funksiyaning qiymatlari hech qachon manfiy bo'lmaydi, eng kichigi nolga teng. y = −4 chiziq esa butunlay manfiy sohada yotadi. Shuning uchun ularning umumiy nuqtasi bo'lmaydi. Javob: umuman kesishmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-grafik-kesishish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#ea7ccde2"
+    },
+    {
+      "q": "y = |x − 4| grafigi y = k to'g'ri chiziq bilan aynan bitta nuqtada kesishishi uchun k qanday bo'lishi kerak?",
+      "v": [
+        "k = 4",
+        "k > 0 bo'lgan har qanday son",
+        "k = 0",
+        "Bunday k mavjud emas"
+      ],
+      "t": 2,
+      "izoh": "y = |x − 4| grafigi uchi (4; 0) nuqtada bo'lgan siniq chiziq. Gorizontal chiziq k > 0 da uni ikki nuqtada kesadi, k < 0 da esa umuman kesmaydi. Faqat k = 0 da chiziq uchidan o'tib, bitta umumiy nuqta beradi. Javob: k = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-grafik-kesishish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#21ae2459"
+    },
+    {
+      "q": "y = |x| + 2 va y = 6 grafiklari kesishgan nuqtalar orasidagi masofa nechaga teng?",
+      "v": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "Kesishish sharti |x| + 2 = 6, ya'ni |x| = 4 va x = ±4. Nuqtalar (−4; 6) va (4; 6) bo'lib, bir xil balandlikda yotadi. Ular orasidagi masofa 4 − (−4) = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-grafik-kesishish",
+      "id": "matematika_teng_m07-modul-qatnashgan-tenglamalar#e7bbb776"
+    }
+  ]
+}

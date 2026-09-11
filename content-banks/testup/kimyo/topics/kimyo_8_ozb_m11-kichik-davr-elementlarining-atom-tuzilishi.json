@@ -1,0 +1,531 @@
+{
+  "nom": "11-mavzu. Kichik davr elementlarining atom tuzilishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kichik davrlar deb qanday davrlarga aytiladi?",
+      "v": [
+        "Bitta qatordan tashkil topgan davrlarga",
+        "Ikki qatordan tashkil topgan davrlarga",
+        "Uch qatordan tashkil topgan davrlarga",
+        "To'rt qatordan tashkil topgan davrlarga"
+      ],
+      "t": 0,
+      "izoh": "Bitta qatordan tashkil topgan davrlar kichik davrlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#8dbf9954"
+    },
+    {
+      "q": "Davriy sistemaning 1-davrida qaysi elementlar joylashgan?",
+      "v": [
+        "Vodorod va geliy",
+        "Litiy va berilliy",
+        "Natriy va magniy",
+        "Vodorod va litiy"
+      ],
+      "t": 0,
+      "izoh": "1-davrda vodorod va geliy joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#cbca57fa"
+    },
+    {
+      "q": "Birinchi davr elementlarida nechta energetik pog'ona bo'ladi?",
+      "v": [
+        "Bitta",
+        "Ikkita",
+        "Uchta",
+        "To'rtta"
+      ],
+      "t": 0,
+      "izoh": "1-davr elementlarida bitta energetik pog'ona bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#6d91b6eb"
+    },
+    {
+      "q": "Birinchi energetik pog'onada eng ko'pi bilan nechta elektron bo'ladi?",
+      "v": [
+        "2 ta",
+        "8 ta",
+        "18 ta",
+        "32 ta"
+      ],
+      "t": 0,
+      "izoh": "N = 2n^2 = 2·1^2 = 2 tagacha elektron bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#f8753130"
+    },
+    {
+      "q": "Vodorod atomi yadrosida nechta proton bor?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 0,
+      "izoh": "Vodorod atomi yadrosida 1 ta proton bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#fb6d2e3b"
+    },
+    {
+      "q": "Vodorod atomida elektron yadro atrofida qanday shaklda harakatlanadi?",
+      "v": [
+        "Sharsimon (sferasimon) harakatlanadi",
+        "Gantel shaklida harakatlanadi",
+        "Aniq trayektoriya bo'ylab harakatlanadi",
+        "To'g'ri chiziq bo'ylab harakatlanadi"
+      ],
+      "t": 0,
+      "izoh": "Vodorod atomida 1 ta elektron sharsimon harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#2c3dd642"
+    },
+    {
+      "q": "Geliy atomi yadrosida nechta proton bor?",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 0,
+      "izoh": "Geliy atomi yadrosida 2 ta proton bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#7747633d"
+    },
+    {
+      "q": "Geliy atomi yadrosi atrofida nechta elektron harakatlanadi?",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "4 ta",
+        "8 ta"
+      ],
+      "t": 0,
+      "izoh": "Geliy atomi yadrosi atrofida 2 ta elektron harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#91ae9136"
+    },
+    {
+      "q": "Ikkinchi davr elementlarida nechta energetik pog'ona bo'ladi?",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 0,
+      "izoh": "2-davr elementlarida 2 ta energetik pog'ona bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#407b9ec0"
+    },
+    {
+      "q": "Ikkinchi davr elementlarining ikkinchi energetik pog'onasida eng ko'pi bilan nechta elektron bo'ladi?",
+      "v": [
+        "8 ta",
+        "2 ta",
+        "18 ta",
+        "32 ta"
+      ],
+      "t": 0,
+      "izoh": "2·2^2 = 8 tagacha elektron bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#00d4f13f"
+    },
+    {
+      "q": "Litiy atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s1",
+        "1s2 2s2",
+        "1s1 2s2",
+        "1s2 2p1"
+      ],
+      "t": 0,
+      "izoh": "Li (tartib raqami 3): 1s2 2s1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#9484f9c7"
+    },
+    {
+      "q": "Berilliy atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2",
+        "1s2 2s1",
+        "1s2 2s2 2p1",
+        "1s2 2p2"
+      ],
+      "t": 0,
+      "izoh": "Be (tartib raqami 4): 1s2 2s2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#593ac80d"
+    },
+    {
+      "q": "Bor atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2 2p1",
+        "1s2 2s2 2p2",
+        "1s2 2s2",
+        "1s2 2s1 2p2"
+      ],
+      "t": 0,
+      "izoh": "B (tartib raqami 5): 1s2 2s2 2p1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#6c8c18c2"
+    },
+    {
+      "q": "Karbon (uglerod) atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2 2p2",
+        "1s2 2s2 2p3",
+        "1s2 2s2 2p1",
+        "1s2 2s2 2p4"
+      ],
+      "t": 0,
+      "izoh": "C (tartib raqami 6): 1s2 2s2 2p2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#d63cd1bf"
+    },
+    {
+      "q": "Azot atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2 2p3",
+        "1s2 2s2 2p2",
+        "1s2 2s2 2p4",
+        "1s2 2s2 2p5"
+      ],
+      "t": 0,
+      "izoh": "N (tartib raqami 7): 1s2 2s2 2p3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#7b85d16e"
+    },
+    {
+      "q": "Kislorod atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2 2p4",
+        "1s2 2s2 2p3",
+        "1s2 2s2 2p5",
+        "1s2 2s2 2p6"
+      ],
+      "t": 0,
+      "izoh": "O (tartib raqami 8): 1s2 2s2 2p4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#c5366318"
+    },
+    {
+      "q": "Ftor atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2 2p5",
+        "1s2 2s2 2p4",
+        "1s2 2s2 2p6",
+        "1s2 2s2 2p3"
+      ],
+      "t": 0,
+      "izoh": "F (tartib raqami 9): 1s2 2s2 2p5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#5dc61e10"
+    },
+    {
+      "q": "Neon atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2 2p6",
+        "1s2 2s2 2p5",
+        "1s2 2s2 2p6 3s1",
+        "1s2 2s2"
+      ],
+      "t": 0,
+      "izoh": "Ne (tartib raqami 10): 1s2 2s2 2p6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#022b5f14"
+    },
+    {
+      "q": "Uchinchi davr elementlarida nechta energetik pog'ona bo'ladi?",
+      "v": [
+        "3 ta",
+        "2 ta",
+        "4 ta",
+        "1 ta"
+      ],
+      "t": 0,
+      "izoh": "3-davr elementlarida 3 ta energetik pog'ona bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#fc0aefe0"
+    },
+    {
+      "q": "3-davr elementlarining uchinchi (tashqi) energetik pog'onasi nechtagacha elektron qabul qiladi?",
+      "v": [
+        "8 tagacha",
+        "18 tagacha",
+        "32 tagacha",
+        "2 tagacha"
+      ],
+      "t": 0,
+      "izoh": "Tashqi pog'ona bo'lgani uchun 8 tadan ortiq elektron qabul qila olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#2a317263"
+    },
+    {
+      "q": "3-davr elementlarida 3d energetik qavatcha nega elektron qabul qilmaydi?",
+      "v": [
+        "Uchinchi pog'ona tashqi pog'ona bo'lgani uchun",
+        "d-qavatcha mavjud bo'lmagani uchun",
+        "Elektronlar yetarli bo'lmagani uchun",
+        "Yadro zaryadi kichik bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Tashqi pog'ona 8 tadan ortiq elektron qabul qilmagani uchun 3d qavatcha elektron qabul qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#f860b643"
+    },
+    {
+      "q": "Natriy atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2 2p6 3s1",
+        "1s2 2s2 2p6 3s2",
+        "1s2 2s2 2p6",
+        "1s2 2s2 2p5 3s2"
+      ],
+      "t": 0,
+      "izoh": "Na (tartib raqami 11): 1s2 2s2 2p6 3s1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#2e1cb526"
+    },
+    {
+      "q": "Magniy atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2 2p6 3s2",
+        "1s2 2s2 2p6 3s1",
+        "1s2 2s2 2p6 3s2 3p1",
+        "1s2 2s2 2p6 3s2 3p2"
+      ],
+      "t": 0,
+      "izoh": "Mg (tartib raqami 12): 1s2 2s2 2p6 3s2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#b66d8807"
+    },
+    {
+      "q": "Alyuminiy atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2 2p6 3s2 3p1",
+        "1s2 2s2 2p6 3s2 3p2",
+        "1s2 2s2 2p6 3s2",
+        "1s2 2s2 2p6 3s1 3p2"
+      ],
+      "t": 0,
+      "izoh": "Al (tartib raqami 13): 1s2 2s2 2p6 3s2 3p1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#573db45e"
+    },
+    {
+      "q": "Kremniy atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2 2p6 3s2 3p2",
+        "1s2 2s2 2p6 3s2 3p1",
+        "1s2 2s2 2p6 3s2 3p3",
+        "1s2 2s2 2p6 3s2 3p4"
+      ],
+      "t": 0,
+      "izoh": "Si (tartib raqami 14): 1s2 2s2 2p6 3s2 3p2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#5291072b"
+    },
+    {
+      "q": "Fosfor atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2 2p6 3s2 3p3",
+        "1s2 2s2 2p6 3s2 3p2",
+        "1s2 2s2 2p6 3s2 3p4",
+        "1s2 2s2 2p6 3s2 3p5"
+      ],
+      "t": 0,
+      "izoh": "P (tartib raqami 15): 1s2 2s2 2p6 3s2 3p3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#2ab305d2"
+    },
+    {
+      "q": "Oltingugurt atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2 2p6 3s2 3p4",
+        "1s2 2s2 2p6 3s2 3p3",
+        "1s2 2s2 2p6 3s2 3p5",
+        "1s2 2s2 2p6 3s2 3p6"
+      ],
+      "t": 0,
+      "izoh": "S (tartib raqami 16): 1s2 2s2 2p6 3s2 3p4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#d35b5614"
+    },
+    {
+      "q": "Xlor atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2 2p6 3s2 3p5",
+        "1s2 2s2 2p6 3s2 3p4",
+        "1s2 2s2 2p6 3s2 3p6",
+        "1s2 2s2 2p6 3s1 3p6"
+      ],
+      "t": 0,
+      "izoh": "Cl (tartib raqami 17): 1s2 2s2 2p6 3s2 3p5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#be182794"
+    },
+    {
+      "q": "Argon atomining elektron formulasi qanday?",
+      "v": [
+        "1s2 2s2 2p6 3s2 3p6",
+        "1s2 2s2 2p6 3s2 3p5",
+        "1s2 2s2 2p6 3s2 3p6 4s1",
+        "1s2 2s2 2p6 3s2 3p4"
+      ],
+      "t": 0,
+      "izoh": "Ar (tartib raqami 18): 1s2 2s2 2p6 3s2 3p6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#80d05945"
+    },
+    {
+      "q": "Argon atomining energetik pog'onalaridagi elektronlar soni qanday taqsimlangan?",
+      "v": [
+        "2, 8, 8",
+        "2, 8, 18",
+        "2, 8, 6",
+        "2, 10, 6"
+      ],
+      "t": 0,
+      "izoh": "Ar: K=2, L=8, M=8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#6abe8df5"
+    },
+    {
+      "q": "Quyidagi elementlardan qaysi biri s-element hisoblanadi?",
+      "v": [
+        "Natriy",
+        "Bor",
+        "Alyuminiy",
+        "Xlor"
+      ],
+      "t": 0,
+      "izoh": "Na (3-davr dastlabki ikkita elementdan biri) s-elementdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#d80c2b64"
+    },
+    {
+      "q": "Ikkinchi va uchinchi davrlarda qaysi elementlar p-elementlarga mansub?",
+      "v": [
+        "Bordan neongacha va alyuminiydan argongacha",
+        "Litiydan neongacha",
+        "Natriy va magniy",
+        "Vodorod va geliy"
+      ],
+      "t": 0,
+      "izoh": "B–Ne va Al–Ar oralig'idagi elementlar p-elementlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#0767afa9"
+    },
+    {
+      "q": "3-davrning dastlabki ikkita elementi qaysilar?",
+      "v": [
+        "Natriy va magniy",
+        "Litiy va berilliy",
+        "Alyuminiy va kremniy",
+        "Vodorod va geliy"
+      ],
+      "t": 0,
+      "izoh": "3-davrni Na va Mg boshlaydi — ular s-elementlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#cdc283aa"
+    },
+    {
+      "q": "Tartib raqami 5 bo'lgan elementning elektron formulasini toping.",
+      "v": [
+        "1s2 2s2 2p1",
+        "1s2 2s2 2p3",
+        "1s2 2s1 2p2",
+        "1s2 2s2"
+      ],
+      "t": 0,
+      "izoh": "Tartib raqami 5 — bor: 1s2 2s2 2p1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#5496bf02"
+    },
+    {
+      "q": "Tartib raqami 9 bo'lgan elementning elektron formulasini toping.",
+      "v": [
+        "1s2 2s2 2p5",
+        "1s2 2s2 2p3",
+        "1s2 2s2 2p6",
+        "1s2 2s2 2p4"
+      ],
+      "t": 0,
+      "izoh": "Tartib raqami 9 — ftor: 1s2 2s2 2p5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m11-kichik-davr-elementlarining-atom-tuzilishi#013fa2d0"
+    }
+  ]
+}

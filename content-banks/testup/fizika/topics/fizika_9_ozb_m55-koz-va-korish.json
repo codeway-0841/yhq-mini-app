@@ -1,0 +1,456 @@
+{
+  "nom": "55-mavzu. Koz Va Korish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Ko'z sharining tashqi qobig'i nima deb ataladi?",
+      "v": [
+        "Sklera",
+        "Shoh parda",
+        "To'r parda",
+        "Kamalak qobiq"
+      ],
+      "t": 0,
+      "izoh": "Ko'z sharining tashqi qobig'i sklera deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#46ee760c"
+    },
+    {
+      "q": "Skleraning shaffof old qismi nima deyiladi?",
+      "v": [
+        "Shoh parda",
+        "To'r parda",
+        "Gavhar",
+        "Qorachiq"
+      ],
+      "t": 0,
+      "izoh": "Skleraning shaffof old qismi shoh parda deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#526c4986"
+    },
+    {
+      "q": "Sklera ichki tomondan qanday qobiq bilan qoplangan?",
+      "v": [
+        "Tomirli qobiq bilan",
+        "Shishasimon jism bilan",
+        "Suvsimon suyuqlik bilan",
+        "Yog' qatlami bilan"
+      ],
+      "t": 0,
+      "izoh": "Sklera ichki tomondan tomirli qobiq bilan qoplangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#d25feb03"
+    },
+    {
+      "q": "Tomirli qobiq nimadan tashkil topgan?",
+      "v": [
+        "Qon tomirlaridan",
+        "Nerv tolalaridan",
+        "Muskul tolalaridan",
+        "Suyak hujayralaridan"
+      ],
+      "t": 0,
+      "izoh": "Tomirli qobiq qon tomirlaridan tashkil topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#93739067"
+    },
+    {
+      "q": "Tomirli qobiqning old qismi nima bilan tutashgan?",
+      "v": [
+        "Kamalak qobiqqa",
+        "Shoh pardaga",
+        "To'r pardaga",
+        "Gavharga"
+      ],
+      "t": 0,
+      "izoh": "Tomirli qobiqning old qismi kamalak qobiqqa tutashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#3d5fe314"
+    },
+    {
+      "q": "Qorachiq nima?",
+      "v": [
+        "Kamalak qobiq o'rtasidagi doirasimon teshik",
+        "Ko'zning eng sezgir nuqtasi",
+        "Gavhardagi bo'shliq",
+        "To'r pardadagi nerv tugun"
+      ],
+      "t": 0,
+      "izoh": "Kamalak qobiq o'rtasida doirasimon teshik — qorachiq mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#7ca8982a"
+    },
+    {
+      "q": "To'r parda nimadan iborat?",
+      "v": [
+        "Zich joylashgan nerv tolalarining uchlaridan",
+        "Qon tomirlardan",
+        "Muskullardan",
+        "Suyak tolalaridan"
+      ],
+      "t": 0,
+      "izoh": "Tomirli qobiq ostida to'r parda bo'lib, u zich joylashgan nerv tolalarining uchlaridan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#5946ca8c"
+    },
+    {
+      "q": "Gavhar qanday jism va u qayerda joylashgan?",
+      "v": [
+        "Kamalak qobiq ortida joylashgan shaffof jism",
+        "Shoh parda ichidagi suyuqlik",
+        "To'r parda ortidagi qatlam",
+        "Qorachiqdagi teshik"
+      ],
+      "t": 0,
+      "izoh": "Kamalak qobiq ortida shaffof jism — gavhar joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#c1c656b7"
+    },
+    {
+      "q": "Gavharning egrilik radiusini nima o'zgartirib turadi?",
+      "v": [
+        "Unga tutashgan maxsus muskullar",
+        "Qorachiqning kengayishi",
+        "Suvsimon suyuqlik bosimi",
+        "Sklera qobig'i"
+      ],
+      "t": 0,
+      "izoh": "Gavharga tutashgan maxsus muskullar gavharning egrilik radiusini o'zgartirib turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#adfeaef0"
+    },
+    {
+      "q": "Gavharning qarama-qarshi tomonidagi to'r parda sirti nima bilan qoplangan?",
+      "v": [
+        "Yorug'likka sezgir sariq modda bilan",
+        "Qon tomirlar bilan",
+        "Muskul tolalari bilan",
+        "Shaffof parda bilan"
+      ],
+      "t": 0,
+      "izoh": "Gavharning qarama-qarshi tomonidagi to'r parda sirti yorug'likka sezgir sariq modda bilan qoplangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#98843aff"
+    },
+    {
+      "q": "Shoh parda bilan gavhar oraliq nima bilan to'lgan?",
+      "v": [
+        "Rangsiz suvsimon suyuqlik bilan",
+        "Shishasimon jism bilan",
+        "Havo bilan",
+        "Qon bilan"
+      ],
+      "t": 0,
+      "izoh": "Shoh parda bilan gavhar oraliq rangsiz suvsimon suyuqlik bilan to'lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#480ad28a"
+    },
+    {
+      "q": "Gavhar bilan to'r parda orasini nima tashkil etadi?",
+      "v": [
+        "Yumshoq shishasimon jism",
+        "Suvsimon suyuqlik",
+        "Qorachiq",
+        "Tomirli qobiq"
+      ],
+      "t": 0,
+      "izoh": "Gavhar bilan to'r parda orasini yumshoq shishasimon jism tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#467bb54d"
+    },
+    {
+      "q": "Suvsimon suyuqlik va shishasimon jism orasida gavharning nur sindirish ko'rsatkichi qanchaga teng?",
+      "v": [
+        "1,5 ga",
+        "1 ga",
+        "2 ga",
+        "1,33 ga"
+      ],
+      "t": 0,
+      "izoh": "Suvsimon suyuqlik va shishasimon jism orasida gavharning nur sindirish ko'rsatkichi 1,5 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#241e54c7"
+    },
+    {
+      "q": "Gavhar qanday optik vazifani bajaradi?",
+      "v": [
+        "Ikkiyoqlama qavariq linza vazifasini",
+        "Botiq linza vazifasini",
+        "Tekis oynak vazifasini",
+        "Prizma vazifasini"
+      ],
+      "t": 0,
+      "izoh": "Gavhar ikkiyoqlama qavariq linza vazifasini bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#82cb0c6f"
+    },
+    {
+      "q": "Ko'zda buyumning qanday tasviri hosil bo'ladi?",
+      "v": [
+        "To'r pardada haqiqiy, kichiklashgan va to'nkarilgan tasvir",
+        "Gavharda mavhum, kattalashgan tasvir",
+        "Shoh pardada to'g'ri tasvir",
+        "Qorachiqda kattalashgan tasvir"
+      ],
+      "t": 0,
+      "izoh": "Buyumdan kelayotgan nur ko'zga tushib, to'r pardada buyumning haqiqiy, kichiklashgan va to'nkarilgan tasviri hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#08da0c1f"
+    },
+    {
+      "q": "Buyumning shakli va rangi haqidagi informatsiyani miyaga nima uzatadi?",
+      "v": [
+        "To'r pardadagi nerv tolalari",
+        "Qon tomirlar",
+        "Suvsimon suyuqlik",
+        "Shishasimon jism"
+      ],
+      "t": 0,
+      "izoh": "To'r pardadagi nerv tolalari buyumning shakli va rangi haqida informatsiyani miyaga uzatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#28ea4dcc"
+    },
+    {
+      "q": "Turli masofadagi buyumlarning to'r pardada aniq tasviri hosil bo'lishiga nima sabab bo'ladi?",
+      "v": [
+        "Ko'z gavharining egrilik radiusi, binobarin, fokus masofasining o'zgaruvchanligi",
+        "Qorachiqning doimiy kengligi",
+        "Shoh pardaning shaffofligi",
+        "Ko'zning sharsimon shakli"
+      ],
+      "t": 0,
+      "izoh": "To'r pardada aniq tasvir hosil bo'lishiga ko'z gavharining egrilik radiusi, binobarin, fokus masofasining o'zgaruvchanligi sabab bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m55-koz-va-korish#33266d47"
+    },
+    {
+      "q": "Buyumni uzoqroq masofaga qo'yib unga qarasak, hosil bo'lgan tasvir va ko'rish burchagi qanday o'zgaradi?",
+      "v": [
+        "Tasvir va ko'rish burchagi kichikroq bo'ladi",
+        "Tasvir kattaroq bo'ladi",
+        "O'zgarishsiz qoladi",
+        "Tasvir yo'qoladi"
+      ],
+      "t": 0,
+      "izoh": "Buyum uzoqroq masofaga qo'yilsa, hosil bo'lgan tasvir va ko'rish burchagi kichikroq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#2c391070"
+    },
+    {
+      "q": "Juda uzoqdagi buyumlarni nima sababdan yaxshi seza olmaymiz?",
+      "v": [
+        "Tasvir ostiga kamroq nerv uchlari to'g'ri kelib, tashqi ko'rinishi bo'yicha kamroq informatsiya olamiz",
+        "Ko'z gavhari ishlamay qoladi",
+        "Nur ko'zga yetib bormaydi",
+        "Qorachiq yopilib qoladi"
+      ],
+      "t": 0,
+      "izoh": "Uzoqdagi buyum tasviri ostiga kamroq sonli nerv uchlari to'g'ri keladi, shuning uchun buyumning tashqi ko'rinishi bo'yicha kamroq informatsiya olamiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m55-koz-va-korish#801ace3f"
+    },
+    {
+      "q": "Bitta nerv tolasi haqida nima deyilgan?",
+      "v": [
+        "Bitta nerv tolasi faqat bitta nuqta haqida informatsiya beradi, xolos",
+        "Bitta nerv tolasi butun tasvirni uzatadi",
+        "Nerv tolasi rangni sezmaydi",
+        "Nerv tolasi faqat yorug'likni o'tkazadi"
+      ],
+      "t": 0,
+      "izoh": "Bitta nerv tolasi faqat bitta nuqta haqida informatsiya beradi, xolos.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#b5c5ae89"
+    },
+    {
+      "q": "Barmog'imizni tik holatda burnimiz qarshisida tutib tursak, u qanday ko'rinadi?",
+      "v": [
+        "Ikkilanib ko'rinadi",
+        "Bitta aniq ko'rinadi",
+        "Umuman ko'rinmaydi",
+        "Kattalashib ko'rinadi"
+      ],
+      "t": 0,
+      "izoh": "Barmoqni tik holatda burun qarshisida tutsak, u ikkilanib ko'rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#bfd371f1"
+    },
+    {
+      "q": "Barmoq qanday masofaga borganida ikkilanish yo'qoladi va ko'zlar bir-biriga yordam bera boshlaydi?",
+      "v": [
+        "15–20 sm uzoqlikdan boshlab",
+        "1–2 sm uzoqlikdan",
+        "1 m uzoqlikdan",
+        "50 sm uzoqlikdan"
+      ],
+      "t": 0,
+      "izoh": "Barmoq 15–20 sm uzoqlikka borganida ikkilanish yo'qoladi, shu masofadan boshlab ko'zlar ko'rishda bir-biriga yordam beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#7614fa54"
+    },
+    {
+      "q": "Bir ko'z bilan nimalarni sezish qiyin?",
+      "v": [
+        "Buyumlarning uzoq-yaqinligini va o'ngir-cho'ngirligini",
+        "Ranglarni",
+        "Yorug'likni",
+        "Harakatni"
+      ],
+      "t": 0,
+      "izoh": "Bir ko'z bilan fazoning uch o'lchovligini, buyumlarning uzoq-yaqinligini, yo'lning o'ngir-cho'ngirligini sezish qiyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#daa3b9bd"
+    },
+    {
+      "q": "Yaqindan ko'rarlik ko'zda buyum tasviri qayerda hosil bo'ladi?",
+      "v": [
+        "To'r pardadan beriroqda",
+        "To'r pardada",
+        "To'r pardadan nariroqda",
+        "Gavharning ichida"
+      ],
+      "t": 0,
+      "izoh": "Yaqindan ko'rarlik ko'zda uzoqdagi buyum tasviri to'r pardadan beriroqda hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#6926f6cc"
+    },
+    {
+      "q": "Yaqindan ko'rarlik ko'zlarda gavharning fokus masofasi va optik kuchi qanday?",
+      "v": [
+        "Fokus masofasi me'yordan kam, optik kuchi kattaroq",
+        "Fokus masofasi me'yordan katta, optik kuchi kichikroq",
+        "Me'yoridan farq qilmaydi",
+        "Fokus masofasi nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Yaqindan ko'rarlik ko'zlarda gavharning fokus masofasi me'yordan kam, ya'ni optik kuchi kattaroq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m55-koz-va-korish#95593c18"
+    },
+    {
+      "q": "Yaqindan ko'rarlikni yaxshilash uchun qanday ko'zoynakdan foydalaniladi?",
+      "v": [
+        "Botiq linzali ko'zoynakdan",
+        "Qavariq linzali ko'zoynakdan",
+        "Silindrik linzali ko'zoynakdan",
+        "Rangli shishali ko'zoynakdan"
+      ],
+      "t": 0,
+      "izoh": "Yaqindan ko'rarlikda ko'rishni yaxshilash uchun botiq linzali ko'zoynakdan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#74b0e88f"
+    },
+    {
+      "q": "Yaqindan ko'rarlikda qo'llaniladigan ko'zoynak linzasining optik kuchi qanday ishorali va u tasvirni qay tomonga suradi?",
+      "v": [
+        "Manfiy; tasvirni to'r parda tomon suradi",
+        "Musbat; tasvirni to'r parda tomon suradi",
+        "Manfiy; tasvirni gavhar tomon suradi",
+        "Nol; tasvir joyidan qimir etmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ko'zoynakdagi optik kuchi manfiy bo'lgan bunday linza tasvirni to'r parda tomon suradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m55-koz-va-korish#467666cd"
+    },
+    {
+      "q": "Uzoqdan ko'rarlik ko'zda buyum tasviri qayerda hosil bo'ladi?",
+      "v": [
+        "To'r pardadan nariroqda va chaplashibroq",
+        "To'r pardada aniq",
+        "To'r pardadan beriroqda",
+        "Shoh pardada"
+      ],
+      "t": 0,
+      "izoh": "Uzoqdan ko'rarlik ko'zda buyum tasviri to'r pardadan nariroqda hosil bo'ladi va chaplashibroq ko'rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m55-koz-va-korish#e4f27b7c"
+    },
+    {
+      "q": "Uzoqdan ko'rarlik ko'zlarda gavharning fokus masofasi va optik kuchi qanday?",
+      "v": [
+        "Fokus masofasi me'yordan katta, optik kuchi kichikroq",
+        "Fokus masofasi me'yordan kam, optik kuchi kattaroq",
+        "Ikkalasi ham me'yorda",
+        "Fokus masofasi cheksiz"
+      ],
+      "t": 0,
+      "izoh": "Uzoqdan ko'rarlik ko'zlarda fokus masofasi me'yordan katta, ya'ni optik kuchi kichikroq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m55-koz-va-korish#3e17b20a"
+    },
+    {
+      "q": "Uzoqdan ko'rarlikni yaxshilash uchun qanday linzali ko'zoynakdan foydalaniladi va uning optik kuchi qanday?",
+      "v": [
+        "Qavariq linzali, optik kuchi musbat bo'lgan",
+        "Botiq linzali, optik kuchi manfiy bo'lgan",
+        "Qavariq linzali, optik kuchi manfiy bo'lgan",
+        "Tekis shishali, optik kuchi nol bo'lgan"
+      ],
+      "t": 0,
+      "izoh": "Uzoqdan ko'rarlikda qavariq linzali ko'zoynakdan foydalaniladi; ko'zoynakdagi optik kuchi musbat bo'lgan linza tasvirni to'r parda tomon suradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m55-koz-va-korish#6e2b7e7b"
+    }
+  ]
+}

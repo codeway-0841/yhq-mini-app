@@ -1,0 +1,606 @@
+{
+  "nom": "03-mavzu. Atom tarkibi. Yadro reaksiyalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Rezerfordning atom tuzilishi modeliga muvofiq atom nimadan iborat?",
+      "v": [
+        "Musbat zaryadlangan o'lchamlari juda kichik og'ir yadrodan",
+        "Zaryadsiz katta shar simon jismdan",
+        "Manfiy zaryadlangan yadrodan",
+        "Bir tekis taqsimlangan massadan"
+      ],
+      "t": 0,
+      "izoh": "Rezerford modeliga muvofiq atom musbat zaryadlangan o'lchamlari juda kichik og'ir yadrodan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#e0baf516"
+    },
+    {
+      "q": "Atom umuman qanday bo'ladi va yadrodagi musbat zaryadlar soni nimaga teng?",
+      "v": [
+        "Elektroneytral bo'ladi, musbat zaryadlar soni elementning tartib raqamiga teng",
+        "Musbat zaryadli bo'ladi, massa soniga teng",
+        "Manfiy zaryadli bo'ladi, neytronlar soniga teng",
+        "Elektroneytral bo'ladi, massa soniga teng"
+      ],
+      "t": 0,
+      "izoh": "Atom umuman elektroneytral, yadrodagi musbat zaryadlar soni va elektronlar soni elementning tartib raqamiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#5d4f2a6f"
+    },
+    {
+      "q": "Vodorod atomining yadrosi elementar zarracha bo'lib, qanday ataladi?",
+      "v": [
+        "Proton",
+        "Neytron",
+        "Elektron",
+        "Nuklon"
+      ],
+      "t": 0,
+      "izoh": "Vodorod atomining yadrosi elementar zarracha bo'lib, proton deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#6d99cee0"
+    },
+    {
+      "q": "Rux (Z=30) atomi yadrosining musbat zaryadi va yadro maydonida aylanadigan elektronlar soni qancha?",
+      "v": [
+        "Zaryad 30 ga teng, 30 ta elektron",
+        "Zaryad 65 ga teng, 30 ta elektron",
+        "Zaryad 30 ga teng, 35 ta elektron",
+        "Zaryad 35 ga teng, 65 ta elektron"
+      ],
+      "t": 0,
+      "izoh": "Rux atomining tartib raqami 30 ga teng, musbat zaryadi 30 ga teng va yadro maydonida 30 ta elektron aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#71f783cb"
+    },
+    {
+      "q": "Barcha elementlar atomlarining yadrolari nimadan iborat?",
+      "v": [
+        "Proton va neytronlardan (nuklonlardan)",
+        "Faqat protonlardan",
+        "Proton va elektronlardan",
+        "Faqat neytronlardan"
+      ],
+      "t": 0,
+      "izoh": "Zamonaviy tasavvurlarga ko'ra barcha elementlar atomlarining yadrolari proton va neytronlardan (umumiy nomi nuklonlar) iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#8de79199"
+    },
+    {
+      "q": "Protonning massasi va zaryadi qanchaga teng?",
+      "v": [
+        "Massasi 1,0073 m.a.b. ga, zaryadi +1 ga",
+        "Massasi 1,0087 m.a.b. ga, zaryadi 0 ga",
+        "Massasi 1 m.a.b. ga, zaryadi −1 ga",
+        "Massasi 0,0005 m.a.b. ga, zaryadi +1 ga"
+      ],
+      "t": 0,
+      "izoh": "Protonning massasi 1,0073 m.a.b. ga va zaryadi +1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#5cd1c8ba"
+    },
+    {
+      "q": "Neytronning massasi va zaryadi qanchaga teng?",
+      "v": [
+        "Massasi 1,0087 m.a.b. ga, zaryadi 0 ga",
+        "Massasi 1,0073 m.a.b. ga, zaryadi +1 ga",
+        "Massasi 1,0087 m.a.b. ga, zaryadi −1 ga",
+        "Massasi 0 ga, zaryadi 0 ga"
+      ],
+      "t": 0,
+      "izoh": "Neytronning massasi 1,0087 m.a.b. ga, zaryadi esa 0 ga teng (zarracha elektrneytraldir).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#13291f48"
+    },
+    {
+      "q": "Yadro tuzilishining proton-neytron nazariyasini qachon va kimlar yaratgan?",
+      "v": [
+        "1932-yil rus olimlari D.D. Ivanenko bilan E.N. Gapon",
+        "1911-yil E. Rezerford",
+        "1913-yil N. Bor",
+        "1869-yil D.I. Mendeleyev"
+      ],
+      "t": 0,
+      "izoh": "1932-yil rus olimlari D.D. Ivanenko bilan E.N. Gapon yadro tuzilishining proton-neytron nazariyasini yaratdilar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#c60a74d7"
+    },
+    {
+      "q": "Massa soni A nimani ko'rsatadi va qanday formula bilan ifodalanadi?",
+      "v": [
+        "A = Z + N (protonlar Z bilan neytronlarning N umumiy sonini)",
+        "A = Z − N",
+        "A = 2Z",
+        "A = N − Z"
+      ],
+      "t": 0,
+      "izoh": "Massa soni A atom yadrosidagi protonlar Z bilan neytronlarning N umumiy sonini ko'rsatadi: A = Z + N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#324c50b9"
+    },
+    {
+      "q": "Proton bilan neytronlarni yadroda tutib turuvchi kuchlar qanday deyiladi?",
+      "v": [
+        "Yadro kuchlari",
+        "Elektrostatik kuchlar",
+        "Gravitatsiya kuchlari",
+        "Magnit kuchlari"
+      ],
+      "t": 0,
+      "izoh": "Proton bilan neytronlarni yadroda tutib turuvchi kuchlar yadro kuchlari deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#834082dc"
+    },
+    {
+      "q": "Yadro kuchlari qanday masofalarda ta'sir etadi?",
+      "v": [
+        "Juda qisqa masofalarda (10⁻¹⁵ m atrofida)",
+        "10⁻¹⁰ m atrofida",
+        "10⁻⁵ m atrofida",
+        "1 mm atrofida"
+      ],
+      "t": 0,
+      "izoh": "Yadro kuchlari juda qisqa masofalarda (10⁻¹⁵ m atrofida) ta'sir etuvchi nihoyatda katta kuchlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#1f79a26a"
+    },
+    {
+      "q": "Xlor atomida elektronlar hissasiga atom massasining taxminan qancha qismi to'g'ri keladi?",
+      "v": [
+        "0,03% qismi",
+        "3% qismi",
+        "30% qismi",
+        "0,3% qismi"
+      ],
+      "t": 0,
+      "izoh": "Xlorda 17 ta elektron bor; ularning massasi 17·(1/1837) ≈ 0,009 m.a.b., bu xlor atomi massasining (35,5 m.a.b.) taxminan 0,03% qismini tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#ef5ce7a9"
+    },
+    {
+      "q": "Kislorod atomining yadrosida (A=16, Z=8) nechta proton va neytron bo'ladi?",
+      "v": [
+        "8 proton va 8 neytron",
+        "8 proton va 16 neytron",
+        "16 proton va 8 neytron",
+        "8 proton va 6 neytron"
+      ],
+      "t": 0,
+      "izoh": "Kislorod atomining yadrosida 8 proton va 16 − 8 = 8 neytron bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#ce6ca318"
+    },
+    {
+      "q": "Izotoplar deganda nima tushuniladi?",
+      "v": [
+        "Yadro zaryadlari bir xil, lekin massa sonlari turlicha bo'lgan atom turlari",
+        "Massa sonlari o'zaro teng, yadro zaryadlari har xil bo'lgan elementlar",
+        "Neytronlar soni bir xil bo'lgan zarrachalar",
+        "Elektronlar soni bir xil bo'lgan atomlar"
+      ],
+      "t": 0,
+      "izoh": "Bitta elementning yadro zaryadlari bir xil, lekin massa sonlari turlicha bo'lgan atom turlari izotoplar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#29b9b0b3"
+    },
+    {
+      "q": "Vodorodning izotoplari qanday nomlanadi?",
+      "v": [
+        "Protiy, deyteriy va tritiy",
+        "Geliy, litiy va berilliy",
+        "Alfa, beta va gamma",
+        "Protiy, neytron va elektron"
+      ],
+      "t": 0,
+      "izoh": "Vodorodning protiy, deyteriy va tritiy nomli izotoplari ma'lum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#567ed18d"
+    },
+    {
+      "q": "Izotop belgisida massa soni va tartib raqami qayerga yoziladi?",
+      "v": [
+        "Massa soni element belgisining chap tomonining yuqorisiga, tartib raqami pastiga",
+        "Massa soni o'ng tomonning yuqorisiga, tartib raqami pastiga",
+        "Ikkalasi ham o'ng tomonga",
+        "Ikkalasi ham chap tomonning pastiga"
+      ],
+      "t": 0,
+      "izoh": "Massa soni kimyoviy element belgisini chap tomonining yuqorisiga, tartib raqami esa pastiga yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#96d34366"
+    },
+    {
+      "q": "Elementning atom massasi nimaga teng?",
+      "v": [
+        "Barcha tabiiy izotoplari massalarining shu izotoplarning tarqalganlik darajasi e'tiborga olingan o'rtacha qiymatiga",
+        "Eng ko'p uchraydigan izotop massasiga",
+        "Eng engil izotop massasiga",
+        "Proton va elektronlar massalari yig'indisiga"
+      ],
+      "t": 0,
+      "izoh": "Elementning atom massasi uning barcha tabiiy izotoplari massalarining tarqalganlik darajasi e'tiborga olingan o'rtacha qiymatiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#83c98e0b"
+    },
+    {
+      "q": "Tabiiy xlor 77,5% massa soni 35 va 22,5% massa soni 37 bo'lgan izotoplardan iborat. Xlorning o'rtacha atom massasini toping.",
+      "v": [
+        "35,45",
+        "36,0",
+        "35,0",
+        "37,0"
+      ],
+      "t": 0,
+      "izoh": "A(Cl) = 0,775·35 + 0,225·37 = 35,45.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#1dfb3b01"
+    },
+    {
+      "q": "Izobarlar deganda nima tushuniladi?",
+      "v": [
+        "Massa sonlari o'zaro teng, lekin yadro zaryadlari har xil bo'lgan elementlar",
+        "Yadro zaryadlari bir xil, massa sonlari har xil bo'lgan atomlar",
+        "Neytronlar soni bir xil bo'lgan zarrachalar",
+        "Elektronlar soni bir xil bo'lgan atomlar"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy elementlar orasida massa sonlari o'zaro teng, lekin yadro zaryadlari har xil bo'lgan elementlar izobarlar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#9df6ee93"
+    },
+    {
+      "q": "Izobarlarga misol qaysi?",
+      "v": [
+        "Atom massalari 40 ga teng bo'lgan kaliy va argon",
+        "Massa sonlari 35 va 37 bo'lgan xlor atomlari",
+        "Protiy va deyteriy",
+        "Natriy va magniy"
+      ],
+      "t": 0,
+      "izoh": "Izobarlarga misol: atom massalari 40 ga teng bo'lgan kaliy va argon, 54 ga teng xrom va temir, 123 ga teng surma va tellur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#b84fa56d"
+    },
+    {
+      "q": "Izotonlar deganda nima tushuniladi?",
+      "v": [
+        "Atomlar yadrosida neytronlar soni bir xil bo'lgan zarrachalar",
+        "Elektronlar soni bir xil bo'lgan zarrachalar",
+        "Protonlar soni bir xil bo'lgan zarrachalar",
+        "Massa sonlari teng bo'lgan zarrachalar"
+      ],
+      "t": 0,
+      "izoh": "Atomlar yadrosida neytronlar soni bir xil bo'lgan zarrachalar izotonlar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#d036bfd6"
+    },
+    {
+      "q": "Izoelektronlar deganda nima tushuniladi?",
+      "v": [
+        "Elektronlar soni bir xil bo'lgan atom (molekula yoki ion) zarrachalar",
+        "Neytronlar soni bir xil bo'lgan zarrachalar",
+        "Protonlar soni bir xil bo'lgan zarrachalar",
+        "Massa sonlari teng bo'lgan atomlar"
+      ],
+      "t": 0,
+      "izoh": "Elektronlar soni bir xil bo'lgan atom (molekula yoki ion) zarrachalar izoelektronlar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#4efa76b8"
+    },
+    {
+      "q": "Atom yadrosidagi proton va neytronlarning o'zaro ta'sirida nechta asosiy jarayon kuzatiladi?",
+      "v": [
+        "To'rtta",
+        "Ikkita",
+        "Uchta",
+        "Beshta"
+      ],
+      "t": 0,
+      "izoh": "To'rtta asosiy jarayon: elektron qulash, pozitron ajralish, pozitron qamrash, elektron ajralish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#9cdd5b23"
+    },
+    {
+      "q": "Elektron qulash jarayonida nima sodir bo'ladi?",
+      "v": [
+        "Proton bilan elektron tortilishi natijasida neytron hosil bo'ladi, tartib raqam bir birlikka kamayadi, massa soni o'zgarmaydi",
+        "Neytrondan proton hosil bo'ladi, zaryad ortadi",
+        "Proton neytronga aylanadi, zaryad ortadi",
+        "Massa soni ikki birlikka kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Elektron qulashda protontdan neytron hosil bo'ladi, tartib raqam bir birlikka kamayadi, massa soni o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#0a501f27"
+    },
+    {
+      "q": "Pozitron qamrash jarayonida atomning massa soni va zaryadi qanday o'zgaradi?",
+      "v": [
+        "Massa soni o'zgarmaydi, zaryadi bir birlikka ortadi",
+        "Massa soni o'zgarmaydi, zaryadi bir birlikka kamayadi",
+        "Massa soni ortadi, zaryad o'zgarmaydi",
+        "Ikkalasi ham o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Pozitron qamrashda (neytrondan proton hosil bo'lishda) massa soni o'zgarmaydi, zaryadi bir birlikka ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#8cdfd655"
+    },
+    {
+      "q": "Pozitron ajralish jarayonida (protonning neytronga aylanishi) atom massasi va yadro zaryadi qanday o'zgaradi?",
+      "v": [
+        "Massa o'zgarmaydi, yadro zaryadi bir birlikka kamayadi",
+        "Massa o'zgarmaydi, zaryad bir birlikka ortadi",
+        "Massa kamayadi, zaryad o'zgarmaydi",
+        "Massa ortadi, zaryad kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Pozitron ajralish jarayonida atom massa o'zgarmaydi, yadro zaryadining bir birlikka kamayishi kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#19c36550"
+    },
+    {
+      "q": "Elektron ajralish (neytronning protonga aylanishi) jarayonida atom massasi va zaryadi qanday o'zgaradi?",
+      "v": [
+        "Massa o'zgarmaydi, zaryad bir birlikka ortadi",
+        "Massa o'zgarmaydi, zaryad bir birlikka kamayadi",
+        "Massa ortadi, zaryad o'zgarmaydi",
+        "Massa kamayadi, zaryad ortadi"
+      ],
+      "t": 0,
+      "izoh": "Elektron ajralish jarayonida atom massa o'zgarmaydi, lekin zaryadi bir birlikka ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#423b9cba"
+    },
+    {
+      "q": "Kimyoviy element — bu nima?",
+      "v": [
+        "Yadro zaryadlari bir xil bo'lgan atomlar yig'indisi",
+        "Massa sonlari bir xil bo'lgan atomlar yig'indisi",
+        "Neytronlar soni bir xil bo'lgan atomlar yig'indisi",
+        "Elektronlar soni bir xil bo'lgan zarrachalar yig'indisi"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy element — yadro zaryadlari bir xil bo'lgan atomlar yig'indisidan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#01f1a765"
+    },
+    {
+      "q": "Yadro reaksiyalari deganda nima tushuniladi?",
+      "v": [
+        "Atom yadrolarining elementar zarrachalar bilan va bir-biri bilan o'zaro ta'sirlashishi natijasidagi o'zgarishi",
+        "Atomlarning elektron almashinuvi",
+        "Molekulalarning parchalanishi",
+        "Kimyoviy birikmalarning hosil bo'lishi"
+      ],
+      "t": 0,
+      "izoh": "Yadro reaksiyalari — atom yadrolarining elementar zarrachalar bilan va bir-biri bilan o'zaro ta'sirlashishi natijasidagi o'zgarishidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#6f15f57d"
+    },
+    {
+      "q": "α-nurlanish (α-zarracha) qanday xossalarga ega?",
+      "v": [
+        "Musbat zaryadli, geliy yadrosiga to'g'ri keladi, kuchli ionlash xossasiga ega, 0,01 mm dan kam qalinlikdagi metall to'siqlardan o'tadi",
+        "Manfiy zaryadli, elektronlar oqimidan iborat",
+        "Rentgen nurlariga o'xshash zaryadsiz nurlanish",
+        "Zaryadsiz neytronlar oqimidan iborat"
+      ],
+      "t": 0,
+      "izoh": "α-nurlanish musbat zaryadli zarrachalar bo'lib, geliy yadrosiga to'g'ri keladi, kuchli ionlash xossasiga ega, 0,01 mm dan kam qalinlikdagi metall to'siqlardan o'ta oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#ba9376ad"
+    },
+    {
+      "q": "β-nurlanish (β-zarracha) qanday xossalarga ega?",
+      "v": [
+        "Manfiy zaryadli (−1) bo'lib, elektronlar oqimidan iborat, 0,01 m qalinlikdagi to'siqdan o'tadi",
+        "Musbat zaryadli, geliy yadrosi",
+        "Zaryadsiz, rentgen nurlariga o'xshash",
+        "Musbat zaryadli, protonlar oqimi"
+      ],
+      "t": 0,
+      "izoh": "β-nurlanish manfiy zaryadli (−1) bo'lib, elektronlar oqimidan iborat, 0,01 m qalinlikdagi to'siqdan o'ta oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#a3e6b70b"
+    },
+    {
+      "q": "γ-nurlanish haqida to'g'ri fikrni tanlang.",
+      "v": [
+        "Rentgen nurlariga o'xshash, kuchli o'tish (singish) xossasiga ega, 0,1 m qalinlikdagi to'siqdan o'tadi; yadro energiyasi kamayadi, lekin massasi va zaryadi o'zgarmaydi",
+        "Musbat zaryadli zarrachalar oqimi",
+        "Manfiy zaryadli elektronlar oqimi",
+        "Yadro massasini 4 birlikka kamaytiradi"
+      ],
+      "t": 0,
+      "izoh": "γ-nurlanish rentgen nurlariga o'xshash, kuchli o'tish xossasiga ega; yadro energiyasi kamayadi, lekin massasi va zaryadi o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#521bc2e3"
+    },
+    {
+      "q": "α-parchalanishda elementning tartib raqami qanday o'zgaradi?",
+      "v": [
+        "2 birlikka kamayadi",
+        "1 birlikka ortadi",
+        "1 birlikka kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "α-parchalanishda elementning tartib raqami 2 birlikka kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#1d2f4356"
+    },
+    {
+      "q": "β-parchalanishda elementning tartib raqami va massa soni qanday o'zgaradi?",
+      "v": [
+        "Tartib raqami bir birlikka ortib, yadroning massa soni o'zgarmay qoladi",
+        "Tartib raqami 2 birlikka kamayadi, massa soni 4 birlikka kamayadi",
+        "Ikkalasi ham o'zgarmaydi",
+        "Tartib raqami kamayadi, massa soni ortadi"
+      ],
+      "t": 0,
+      "izoh": "β-parchalanishda elementning tartib raqami bir birlikka ortib, yadroning massa soni o'zgarmay qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#d8f0d956"
+    },
+    {
+      "q": "Faqat radioaktiv izotoplardan tarkib topgan elementlar qanday deyiladi va ular qaysilar?",
+      "v": [
+        "Radioaktiv elementlar — Z=43, 61 va 84–105 elementlardir",
+        "Transuran elementlar — faqat uran",
+        "Nodir gazlar",
+        "Lantanoidlar"
+      ],
+      "t": 0,
+      "izoh": "Faqat radioaktiv izotoplardan tarkib topgan elementlar radioaktiv elementlar deyiladi. Bular Z=43, 61 va 84–105 elementlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#b0c4dc0c"
+    },
+    {
+      "q": "1919-yilda Rezerford birinchi marta sun'iy ravishda yadro reaksiyasini qanday amalga oshirdi?",
+      "v": [
+        "Azot atomlarining yadrolarini α-zarrachalar bilan bombardimon qilib",
+        "Uran yadrolarini neytronlar bilan bombardimon qilib",
+        "Radiyni parchalab",
+        "Geliy yadrolarini protonlar bilan bombardimon qilib"
+      ],
+      "t": 0,
+      "izoh": "1919-yilda Rezerford azot atomlarining yadrolarini α-zarrachalar bilan bombardimon qilib, birinchi marta sun'iy yadro reaksiyasini amalga oshirdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#18734c91"
+    },
+    {
+      "q": "Barqaror (radioaktiv emas) izotoplardan taxminan nechtasi ma'lum?",
+      "v": [
+        "300 ga yaqini",
+        "1500 turi",
+        "63 tasi",
+        "29 tasi"
+      ],
+      "t": 0,
+      "izoh": "Barqaror (radioaktiv emas) izotoplardan 300 ga yaqini ma'lum.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#bdb0a7f4"
+    },
+    {
+      "q": "D.I. Mendeleyev davriy sistemasida urandan keyin turgan (transuran) elementlari qanday hisoblanadi?",
+      "v": [
+        "Radioaktiv hisoblanadi, turg'un izotoplarga ega emas",
+        "Barqaror hisoblanadi",
+        "Nodir gazlar hisoblanadi",
+        "Tipik elementlar hisoblanadi"
+      ],
+      "t": 0,
+      "izoh": "Urandan keyin turgan (transuran) elementlari radioaktiv hisoblanadi, ular turg'un izotoplarga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#83fe7a4f"
+    },
+    {
+      "q": "Xavfli o'smalarni aniqlashda qaysi radioaktiv izotop ishlatiladi?",
+      "v": [
+        "Nishonlangan fosfor–32 izotopi bo'lgan natriy fosfati",
+        "Radioaktiv kobalt-60",
+        "Yodning–131 izotopi",
+        "Oltin-198"
+      ],
+      "t": 0,
+      "izoh": "Xavfli o'smalarni aniqlashda nishonlangan fosfor–32 izotopi bo'lgan natriy fosfati ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#e80db718"
+    },
+    {
+      "q": "Qalqonsimon bez kasalliklarini tahlil qilishda qaysi izotopli modda qo'llaniladi?",
+      "v": [
+        "Yodning–131 izotopi bo'lgan natriy yodid",
+        "Fosfor–32 li natriy fosfati",
+        "Kobalt-60",
+        "Rux-65"
+      ],
+      "t": 0,
+      "izoh": "Qalqonsimon bez kasalliklarini tahlil qilishda yodning–131 izotopi bo'lgan natriy yodid qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m03-atom-tarkibi-yadro-reaksiyalari#cc2dc7d0"
+    }
+  ]
+}

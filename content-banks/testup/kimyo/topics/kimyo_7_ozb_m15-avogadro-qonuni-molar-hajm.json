@@ -1,0 +1,471 @@
+{
+  "nom": "15-mavzu. Avogadro qonuni. Molar hajm",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Avogadro qonuni qanday ifodalanadi?",
+      "v": [
+        "Bir xil sharoitda o'zaro teng hajmdagi turli xildagi gazlarda molekulalar soni teng bo'ladi",
+        "Reaksiyada massa saqlanadi",
+        "Barcha moddalar doimiy tarkibga ega",
+        "Gazlar hajmi haroratga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "15-§ qonun ifodasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#b622500b"
+    },
+    {
+      "q": "Avogadro qonuni qachon va kim tomonidan kashf qilingan?",
+      "v": [
+        "1811-yilda A.Avogadro",
+        "1808-yilda J.Prust",
+        "1803-yilda J.Dalton",
+        "1789-yilda A.Lavuazye"
+      ],
+      "t": 0,
+      "izoh": "1811-yil, Turin universiteti professori A.Avogadro.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#cdee193c"
+    },
+    {
+      "q": "Avogadro oddiy moddalarning gaz holidagi molekulalari nechta atomdan tashkil topganligini aniqlagan?",
+      "v": [
+        "Ikkita",
+        "Bitta",
+        "To'rtta",
+        "Uchta"
+      ],
+      "t": 0,
+      "izoh": "H2, O2, N2, F2, Cl2 — ikki atomli molekulalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#b194b75d"
+    },
+    {
+      "q": "Avogadro qonuni qaysi moddalarga xos?",
+      "v": [
+        "Gazlarga",
+        "Qattiq moddalarga",
+        "Suyuq moddalarga",
+        "Barcha moddalarga"
+      ],
+      "t": 0,
+      "izoh": "Qonun gazlar uchun xos; qattiq va suyuq moddalar bo'ysunmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#fe693992"
+    },
+    {
+      "q": "Gazning hajmi nimaga bog'liq?",
+      "v": [
+        "Molekulalar soni va molekulalararo masofaga",
+        "Molekulalarning o'lchamiga",
+        "Faqat molekulalar rangiga",
+        "Hech narsaga"
+      ],
+      "t": 0,
+      "izoh": "Gaz hajmi molekulalar soni va molekulalararo masofaga bog'liq; molekula o'lchami ahamiyatli emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#bb338a12"
+    },
+    {
+      "q": "Normal sharoitda qanday harorat va bosim nazarda tutiladi?",
+      "v": [
+        "0°C va 101,325 kPa",
+        "100°C va 101,325 kPa",
+        "25°C va 100 kPa",
+        "4°C va 1 kPa"
+      ],
+      "t": 0,
+      "izoh": "Normal sharoit: 0°C harorat, 101,325 kPa bosim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#4a673170"
+    },
+    {
+      "q": "Normal sharoitda har qanday gazning 1 moli qanday hajmni egallaydi?",
+      "v": [
+        "22,4 l",
+        "0,018 l",
+        "44,8 l",
+        "11,2 l"
+      ],
+      "t": 0,
+      "izoh": "1 mol gaz n.sh.da 0,0224 m3 = 22,4 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#bcebb86c"
+    },
+    {
+      "q": "Moddaning molar hajmi qanday aniqlanadi?",
+      "v": [
+        "Vm = V/n",
+        "Vm = M·n",
+        "Vm = n/V",
+        "Vm = m·n"
+      ],
+      "t": 0,
+      "izoh": "Modda hajmining modda miqdoriga nisbati — molar hajm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#dc497115"
+    },
+    {
+      "q": "Molar hajm qanday birlikda ifodalanadi?",
+      "v": [
+        "m3/mol yoki l/mol",
+        "g/mol",
+        "kg/m3",
+        "mol/l"
+      ],
+      "t": 0,
+      "izoh": "Molar hajm m3/mol yoki l/mol da ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#66ee824b"
+    },
+    {
+      "q": "11 g uglerod (IV)-oksid (CO2) ning n.sh.dagi hajmi qancha? (M(CO2)=44 g/mol)",
+      "v": [
+        "5,6 l",
+        "22,4 l",
+        "44,8 l",
+        "11,2 l"
+      ],
+      "t": 0,
+      "izoh": "n=11/44=0,25 mol; V=0,25·22,4=5,6 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#e0b5b1db"
+    },
+    {
+      "q": "0,2 mol azot, 1,5 mol kislorod va 0,3 mol vodorod gazlari aralashmasi normal sharoitda qanday hajmni egallaydi?",
+      "v": [
+        "44,8 l",
+        "22,4 l",
+        "11,2 l",
+        "33,6 l"
+      ],
+      "t": 0,
+      "izoh": "n=0,2+1,5+0,3=2 mol; V=2·22,4=44,8 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#ca15ef41"
+    },
+    {
+      "q": "0,2 mol azot, 1,5 mol kislorod va 0,3 mol vodorod gazlari aralashmasida jami nechta molekula bor?",
+      "v": [
+        "1,204·10^24 ta",
+        "6,02·10^23 ta",
+        "3,01·10^23 ta",
+        "2,408·10^23 ta"
+      ],
+      "t": 0,
+      "izoh": "n=2 mol; N=2·6,02·10^23=1,204·10^24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#b9439b42"
+    },
+    {
+      "q": "Suv normal sharoitda bug'lansa, uning hajmi necha marta ortadi? (1 mol suv suyuq holatda 0,018 l, bug' holatida 22,4 l)",
+      "v": [
+        "Taxminan 1244 marta",
+        "18 marta",
+        "100 marta",
+        "22,4 marta"
+      ],
+      "t": 0,
+      "izoh": "22,4/0,018 ≈ 1244 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#90733bb7"
+    },
+    {
+      "q": "Normal sharoitda 1 mol suyuq suv qanday hajmni egallaydi?",
+      "v": [
+        "0,018 l",
+        "22,4 l",
+        "1 l",
+        "18 l"
+      ],
+      "t": 0,
+      "izoh": "Suyuq suvning 1 moli 0,018 l (suv zichligi 1 g/ml).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#b94309c7"
+    },
+    {
+      "q": "Kislorod (O2) ning molar massasi 32 g/mol, n.sh.dagi zichligi 1,428 g/l. Molar hajmi qancha?",
+      "v": [
+        "22,4 l",
+        "11,2 l",
+        "32 l",
+        "44,8 l"
+      ],
+      "t": 0,
+      "izoh": "Vm=M/ρ=32/1,428≈22,4 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#17079191"
+    },
+    {
+      "q": "O'ta quyi harorat yoki yuqori bosimda Avogadro qonuni kuchga ega emas, chunki...",
+      "v": [
+        "Gazlar suyuqlik holatiga o'xshab, molekulalararo masofa molekula o'lchamlariga yaqinlashib qoladi",
+        "Molekulalar yo'qoladi",
+        "Gazlar parchalanadi",
+        "Bosim nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "15-§: bunday sharoitda molekulalararo masofa kichrayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#b1d8d86f"
+    },
+    {
+      "q": "Gaz massasi berilganda uning hajmi qanday formula bilan topiladi?",
+      "v": [
+        "V = m·Vm/M",
+        "V = M/m",
+        "V = m/M",
+        "V = n·M"
+      ],
+      "t": 0,
+      "izoh": "V = m·Vm/M.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#b796aef0"
+    },
+    {
+      "q": "11 g CO2 dagi molekulalar soni qancha? (NA = 6,02·10^23)",
+      "v": [
+        "1,505·10^23 ta",
+        "6,02·10^23 ta",
+        "1,204·10^24 ta",
+        "3,01·10^23 ta"
+      ],
+      "t": 0,
+      "izoh": "n=0,25 mol; N=0,25·6,02·10^23=1,505·10^23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#664b94a1"
+    },
+    {
+      "q": "A.Avogadro qaysi universitetning professori edi?",
+      "v": [
+        "Turin universitetining",
+        "Parij universitetining",
+        "London universitetining",
+        "Moskva universitetining"
+      ],
+      "t": 0,
+      "izoh": "1811-yilda Italiyaning Turin universiteti professori A.Avogadro xulosaga keldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#88033642"
+    },
+    {
+      "q": "A.Avogadro qaysi davlat olimi edi?",
+      "v": [
+        "Italiya",
+        "Fransiya",
+        "Angliya",
+        "Rossiya"
+      ],
+      "t": 0,
+      "izoh": "A.Avogadro Italiyaning Turin universiteti professori edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#2a2d4f65"
+    },
+    {
+      "q": "Avogadro aniqlagan ikki atomli gaz molekulalariga to‘g‘ri keladigan qatorni tanlang.",
+      "v": [
+        "H2, O2, N2, F2, Cl2",
+        "H2O, CO2, SO2",
+        "O3, H2, N2",
+        "CO, NO, HCl"
+      ],
+      "t": 0,
+      "izoh": "Oddiy moddalarning gaz holidagi molekulalari ikkita atomdan tashkil topgan: H2, O2, N2, F2, Cl2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#d86a7b88"
+    },
+    {
+      "q": "Kichik bosimlarda gaz molekulalari orasidagi masofa ularning o‘z o‘lchamidan qancha katta bo‘ladi?",
+      "v": [
+        "Minglab marotaba katta",
+        "Bir xil",
+        "Ikki marta katta",
+        "Kichikroq"
+      ],
+      "t": 0,
+      "izoh": "Kichik bosimlarda molekulalar orasidagi masofa ularning o‘z o‘lchamidan minglab marotaba katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#3360e850"
+    },
+    {
+      "q": "Normal sharoitda 2 mol gaz qanday hajmni egallaydi?",
+      "v": [
+        "44,8 l",
+        "22,4 l",
+        "11,2 l",
+        "67,2 l"
+      ],
+      "t": 0,
+      "izoh": "V = n·Vm = 2 mol · 22,4 l/mol = 44,8 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#5ffe2a6d"
+    },
+    {
+      "q": "Gazning hajmini modda miqdori orqali topish formulasi qanday?",
+      "v": [
+        "V = n·Vm",
+        "V = Vm/n",
+        "V = n/Vm",
+        "V = m·M"
+      ],
+      "t": 0,
+      "izoh": "Vm = V/n formuladan V = n·Vm keltirib chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#df70a54b"
+    },
+    {
+      "q": "Gazning modda miqdorini hajmi orqali topish formulasi qanday?",
+      "v": [
+        "n = V/Vm",
+        "n = Vm/V",
+        "n = V·Vm",
+        "n = m·Vm"
+      ],
+      "t": 0,
+      "izoh": "Vm = V/n formuladan n = V/Vm keltirib chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#e5809881"
+    },
+    {
+      "q": "Normal sharoitda 11,2 l gaz necha molga teng?",
+      "v": [
+        "0,5 mol",
+        "1 mol",
+        "2 mol",
+        "0,25 mol"
+      ],
+      "t": 0,
+      "izoh": "n = V/Vm = 11,2 / 22,4 = 0,5 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#305cf929"
+    },
+    {
+      "q": "5-jadvalga ko‘ra, vodorodning normal sharoitdagi zichligi qancha?",
+      "v": [
+        "0,09 kg/m3",
+        "1,428 kg/m3",
+        "1,25 kg/m3",
+        "1,293 kg/m3"
+      ],
+      "t": 0,
+      "izoh": "Vodorodning zichligi 0,09 kg/m3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#73f14335"
+    },
+    {
+      "q": "5-jadvalga ko‘ra, uglerod (II)-oksidning (CO) molar massasi qancha?",
+      "v": [
+        "0,028 kg/mol (28 g/mol)",
+        "0,032 kg/mol (32 g/mol)",
+        "0,044 kg/mol (44 g/mol)",
+        "0,002 kg/mol (2 g/mol)"
+      ],
+      "t": 0,
+      "izoh": "CO ning molar massasi 0,028 kg/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#2b6852be"
+    },
+    {
+      "q": "Suyuq va qattiq moddalarning hajmi nimaga bog‘liq?",
+      "v": [
+        "Molekulalar soni va ularning o‘lchamiga",
+        "Faqat molekulalararo masofaga",
+        "Faqat bosimga",
+        "Faqat haroratga"
+      ],
+      "t": 0,
+      "izoh": "Suyuq va qattiq moddalarda molekulalararo masofa kichik, shuning uchun hajm molekulalar soni va o‘lchamiga bog‘liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#cf7313bf"
+    },
+    {
+      "q": "Suvning 4°C dagi zichligi qancha?",
+      "v": [
+        "1 g/ml",
+        "0,018 g/ml",
+        "1,428 g/ml",
+        "0,09 g/ml"
+      ],
+      "t": 0,
+      "izoh": "Suvning 4°C dagi zichligi 1 g/ml.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#eb05be94"
+    },
+    {
+      "q": "Normal sharoitda 1 mol gaz egallaydigan 0,0224 m3 hajm necha litrga teng?",
+      "v": [
+        "22,4 l",
+        "2,24 l",
+        "224 l",
+        "0,224 l"
+      ],
+      "t": 0,
+      "izoh": "0,0224 m3 = 22,4 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m15-avogadro-qonuni-molar-hajm#26161640"
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "nom": "52-mavzu. Elektr Dvigateli",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "O'zgarmas tok elektr dvigateli qanday energiya aylanishini amalga oshiradi?",
+      "v": [
+        "Elektr energiyasini mexanik energiyaga aylantiradi",
+        "Mexanik energiyani elektr energiyasiga aylantiradi",
+        "Issiqlik energiyasini elektr energiyasiga aylantiradi",
+        "Kimyoviy energiyani elektr energiyasiga aylantiradi"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas tok elektr dvigateli o'zgarmas tok elektr energiyasini mexanik energiyaga aylantirib beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#694420b0"
+    },
+    {
+      "q": "Elektr dvigatelining ikki asosiy qismi qaysilar?",
+      "v": [
+        "Stator va rotor",
+        "Kollektor va cho'tka",
+        "Ramka va val",
+        "Magnit va prujina"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas tok elektr dvigateli ikki asosiy qism — stator va rotordan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#2331615f"
+    },
+    {
+      "q": "\"Stator\" so'zi qanday ma'noni bildiradi?",
+      "v": [
+        "Qo'zg'almas",
+        "Aylantirmoq",
+        "Tortmoq",
+        "Tezlashmoq"
+      ],
+      "t": 0,
+      "izoh": "Stator lotinchadan olingan so'z bo'lib, qo'zg'almas degan ma'noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#0d5ed6d7"
+    },
+    {
+      "q": "\"Rotor\" so'zi qanday ma'noni bildiradi?",
+      "v": [
+        "Aylantirmoq",
+        "Qo'zg'almas",
+        "Ulamoq",
+        "Surtmoq"
+      ],
+      "t": 0,
+      "izoh": "Rotor lotinchadan olingan so'z bo'lib, aylantirmoq degan ma'noni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#2ab39a57"
+    },
+    {
+      "q": "Stator nimadan iborat bo'lishi mumkin?",
+      "v": [
+        "Doimiy magnitdan yoki elektromagnitdan",
+        "Faqat mis simdan",
+        "Faqat kollektor halqalaridan",
+        "Faqat prujinalardan"
+      ],
+      "t": 0,
+      "izoh": "Stator doimiy magnitdan yoki elektromagnitdan iborat bo'lib, dvigatel korpusiga mahkamlangan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#5666974a"
+    },
+    {
+      "q": "Rotorning asosiy qismi nima?",
+      "v": [
+        "Bir yoki bir nechta g'altakli ramka (yakor) va kollektor",
+        "Doimiy magnit",
+        "Dvigatel korpusi",
+        "Ventilyator"
+      ],
+      "t": 0,
+      "izoh": "Rotorning asosiy qismi bir yoki bir nechta g'altakli ramka, ya'ni yakor va kollektordan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#943cecdb"
+    },
+    {
+      "q": "Kollektor qanday harakat qiladi?",
+      "v": [
+        "Yakor bilan birgalikda aylanadi",
+        "Qo'zg'almas turadi",
+        "Faqat tebranma harakat qiladi",
+        "Stator bilan birga mahkamlangan"
+      ],
+      "t": 0,
+      "izoh": "Kollektor yakor bilan birgalikda aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#afc24ae0"
+    },
+    {
+      "q": "Kollektor halqalari tashqarisiga nima mahkamlangan?",
+      "v": [
+        "Ikkita ko'mir cho'tka",
+        "Ikkita mis prujina",
+        "Ikkita doimiy magnit",
+        "Ikkita temir o'zak"
+      ],
+      "t": 0,
+      "izoh": "Kollektor halqalari tashqarisiga qo'zg'almas qilib ikkita ko'mir cho'tka mahkamlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#0d5e6f8b"
+    },
+    {
+      "q": "Cho'tkalar kollektor halqalariga qanday mahkamlanadi?",
+      "v": [
+        "Maxsus prujinalar yordamida zich qilib siqib qo'yiladi",
+        "Yelim bilan yopishtiriladi",
+        "Payvandlanadi",
+        "Boltlar bilan qattiq mahkamlanadi"
+      ],
+      "t": 0,
+      "izoh": "Cho'tkalar maxsus prujinalar yordamida kollektor halqalariga zich qilib siqib qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#a92d20d1"
+    },
+    {
+      "q": "Zanjirdagi elektr toki ramkaga qanday yo'l orqali o'tadi?",
+      "v": [
+        "Cho'tkalar orqali kollektor halqalariga o'tadi",
+        "To'g'ridan-to'g'ri statordan o'tadi",
+        "Havo orqali o'tadi",
+        "Val orqali o'tadi"
+      ],
+      "t": 0,
+      "izoh": "Zanjirdagi elektr toki cho'tkalar orqali kollektor halqalariga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#d6948bdb"
+    },
+    {
+      "q": "Eng oddiy dvigatelning kollektori nechta qismdan iborat?",
+      "v": [
+        "Ikkita yarim halqadan",
+        "To'rtta yarim halqadan",
+        "Bitta butun halqadan",
+        "Oltita qoplamadan"
+      ],
+      "t": 0,
+      "izoh": "Eng oddiy bitta ramkali dvigatelning kollektori ikkita yarim halqadan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#047a9443"
+    },
+    {
+      "q": "Tok manbaidan kelayotgan tok ramkada dastlab qaysi yo'nalishda o'tadi?",
+      "v": [
+        "A-1-2-3-4-B",
+        "B-4-3-2-1-A",
+        "A-4-3-2-1-B",
+        "B-1-2-3-4-A"
+      ],
+      "t": 0,
+      "izoh": "Dastlab tok cho'tka, kollektor hamda ramkadan A-1-2-3-4-B yo'nalishda o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#19572acd"
+    },
+    {
+      "q": "Ramka tekisligi magnit kuch chiziqlariga perpendikulyar bo'lganda nima sodir bo'ladi?",
+      "v": [
+        "Cho'tkalar kollektor halqalariga tegmay qoladi va ramkadan tok o'tmaydi",
+        "Ramkadan maksimal tok o'tadi",
+        "Ramka to'xtab qoladi",
+        "Kollektor uzilib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Ramka tekisligi kuch chiziqlariga perpendikulyar bo'lganda A va B cho'tkalar kollektor halqalariga tegmay qoladi va ramkadan tok o'tmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#ef9e7b14"
+    },
+    {
+      "q": "Tok o'tmaydigan holatdan keyin ramka qanday davom etadi?",
+      "v": [
+        "O'z inersiyasi bilan aylanishni davom ettiradi",
+        "Zudlik bilan to'xtaydi",
+        "Teskari aylana boshlaydi",
+        "Tebranib qoladi"
+      ],
+      "t": 0,
+      "izoh": "Ramka o'z inersiyasi bilan aylanishni davom ettirib, magnit kuch chiziqlariga parallel joylashib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#c3d37d70"
+    },
+    {
+      "q": "Ramka kuch chiziqlariga parallel holatdan o'tgach, tok qaysi yo'nalishda o'tadi?",
+      "v": [
+        "A-4-3-2-1-B",
+        "A-1-2-3-4-B",
+        "B-1-2-3-4-A",
+        "Tok umuman o'tmaydi"
+      ],
+      "t": 0,
+      "izoh": "Cho'tkalar yana halqalarga tegganda ramkadan A-4-3-2-1-B yo'nalishda tok o'tadi, ya'ni tok yo'nalishi o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#bc10b99a"
+    },
+    {
+      "q": "Kollektor ramkada tok yo'nalishini o'zgartirib turishining maqsadi nima?",
+      "v": [
+        "Ramkaning bir yo'nalishda uzluksiz aylanishini ta'minlash",
+        "Tok kuchini oshirish",
+        "Kuchlanishni kamaytirish",
+        "Dvigatelni sovitish"
+      ],
+      "t": 0,
+      "izoh": "Har yarim aylanishda tok yo'nalishi o'zgarishi tufayli ramka doimo bir yo'nalishda aylanishda davom etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#22a58423"
+    },
+    {
+      "q": "Nima uchun amalda bitta ramkali rotordan iborat dvigatellar qo'llanmaydi?",
+      "v": [
+        "Ramkaning aylanishi bir tekis bo'lmaydi va valni aylantirishga kuchi yetmaydi",
+        "Ular juda qimmatga tushadi",
+        "Ular tez yonib ketadi",
+        "Ular faqat o'zgaruvchan tokda ishlaydi"
+      ],
+      "t": 0,
+      "izoh": "Bitta ramkali rotorda aylanish bir tekis bo'lmaydi va rotor o'qini aylantirishga ramkaning kuchi yetmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#b1611602"
+    },
+    {
+      "q": "Ikkita ramkali rotorda ramkalar bir-biriga nisbatan qanday joylashtiriladi?",
+      "v": [
+        "Bir-biriga perpendikulyar qilib bitta o'qqa mahkamlanadi",
+        "Bir-biriga parallel qilib joylashtiriladi",
+        "Bir-biridan uzoqda turli o'qlarga joylashtiriladi",
+        "45° burchak ostida joylashtiriladi"
+      ],
+      "t": 0,
+      "izoh": "Ikkita ramkali rotorda ramkalar bir-biriga perpendikulyar qilib bitta o'qqa mahkamlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#07a0605f"
+    },
+    {
+      "q": "Ikkita ramkali rotorda kollektorning qoplamalari nechta bo'ladi?",
+      "v": [
+        "To'rtta",
+        "Ikkita",
+        "Uchta",
+        "Oltita"
+      ],
+      "t": 0,
+      "izoh": "Ikkita ramkali rotorda kollektorning qoplamalari ikkita emas, to'rtta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#a7e1df50"
+    },
+    {
+      "q": "Ikkita ramkali rotor qanday afzallik beradi?",
+      "v": [
+        "Ramkaning tekis harakatini ta'minlaydi",
+        "Kollektorni keraksiz qiladi",
+        "Cho'tkalarni olib tashlaydi",
+        "Tok sarfi kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Ikkita ramkali rotorda birinchi ramkadan tok o'tganda u perpendikulyar vaziyatga harakat qilib, ramkaning tekis harakatini ta'minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#34099b4a"
+    },
+    {
+      "q": "Dvigatel rasmdagi detallar ichida \"yakor\" nimani anglatadi?",
+      "v": [
+        "Temir o'zakli ramkalar",
+        "Kollektor halqalari",
+        "Ko'mir cho'tkalar",
+        "Dvigatel vali"
+      ],
+      "t": 0,
+      "izoh": "Yakor — temir o'zakli ramkalar, rotorning asosiy qismi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#7876bbf6"
+    },
+    {
+      "q": "Stator dvigatelning qayeriga mahkamlangan?",
+      "v": [
+        "Dvigatel korpusiga",
+        "Valga",
+        "Rotorga",
+        "Kollektorga"
+      ],
+      "t": 0,
+      "izoh": "Stator doimiy magnit yoki elektromagnitdan iborat bo'lib, dvigatel korpusiga mahkamlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#2748f638"
+    },
+    {
+      "q": "Dvigatelda ramkani aylantiruvchi kuch qayerdan kelib chiqadi?",
+      "v": [
+        "Magnit maydonning tokli ramkaga ta'siridan",
+        "Prujinalarning ta'siridan",
+        "Og'irlik kuchidan",
+        "Ventilyatorning ta'siridan"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydon ta'sirida tokli ramka kuch chiziqlariga perpendikulyar joylashishga harakat qiladi va aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#cb4446d8"
+    },
+    {
+      "q": "Ramka magnit kuch chiziqlariga perpendikulyar holatga kelganda aylanish qanday davom etadi?",
+      "v": [
+        "Inersiya hisobiga",
+        "Yangi tok impulsi hisobiga",
+        "Stator itarishi hisobiga",
+        "Cho'tkalar tebranishi hisobiga"
+      ],
+      "t": 0,
+      "izoh": "Bu holatda ramkadan tok o'tmaydi, lekin ramka inersiya bilan aylanishni davom ettiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#010767b9"
+    },
+    {
+      "q": "Elektr dvigatelining ventilyatori qanday vazifani bajaradi?",
+      "v": [
+        "Dvigatelni sovitadi",
+        "Tokni kuchaytiradi",
+        "Magnit maydon hosil qiladi",
+        "Rotorni sekinlatadi"
+      ],
+      "t": 0,
+      "izoh": "Ventilyator dvigatel tuzilishidagi yordamchi qism bo'lib, uni sovitishga xizmat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#4fe255e9"
+    },
+    {
+      "q": "Rotor dvigatelning qanday qismlarini tashkil etadi?",
+      "v": [
+        "Aylanuvchi qismlarini",
+        "Qo'zg'almas qismlarini",
+        "Korpus qismlarini",
+        "Faqat cho'tkalarini"
+      ],
+      "t": 0,
+      "izoh": "Rotor dvigatelning aylanuvchi qismlarini tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#070e4733"
+    },
+    {
+      "q": "Yakor chulg'amidagi simlarning uchlari qayerga ulanadi?",
+      "v": [
+        "Kollektor halqalariga",
+        "To'g'ridan-to'g'ri tok manbaiga",
+        "Stator chulg'amiga",
+        "Ventilyatorga"
+      ],
+      "t": 0,
+      "izoh": "Yakor chulg'amidagi simlarning uchlari kollektor halqalariga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#00f2bf05"
+    },
+    {
+      "q": "Cho'tkalarga nima ulangan?",
+      "v": [
+        "Tok manbaining ikki qutbidan keluvchi simlar",
+        "Faqat stator magniti",
+        "Ramka o'qi",
+        "Ventilyator vali"
+      ],
+      "t": 0,
+      "izoh": "Cho'tkalarga tok manbaining ikki qutbidan keluvchi simlar ulangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#fc56075d"
+    },
+    {
+      "q": "Dvigatel ishlashining fizik asosini nima tashkil qiladi?",
+      "v": [
+        "Magnit maydonning tokli o'tkazgichga (ramkaga) ta'sir kuchi",
+        "Elektr zaryadlarining itarishi",
+        "Issiqlik kengayishi",
+        "Gravitatsiya tortishishi"
+      ],
+      "t": 0,
+      "izoh": "Dvigatel magnit maydonning tokli ramkaga ta'sir etuvchi Amper kuchlari hisobiga ishlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#6f310701"
+    },
+    {
+      "q": "Elektr dvigatelida aylanish jarayonining uzluksizligi nimani hisobiga ta'minlanadi?",
+      "v": [
+        "Kollektorning tok yo'nalishini o'z vaqtida o'zgartirib turishi hisobiga",
+        "Cho'tkalarning og'irligi hisobiga",
+        "Statorning tebranishi hisobiga",
+        "Valning qarshiligi hisobiga"
+      ],
+      "t": 0,
+      "izoh": "Kollektor har yarim aylanishda ramkadagi tok yo'nalishini o'zgartirib, jarayonning uzluksiz davom etishini ta'minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m52-elektr-dvigateli#0826c236"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Teskari proporsionallik, giperbola va darajali funksiyalar",
+  "bolim": "Funksiyalar",
+  "blok": "funk",
+  "rasmiyBolim": 4,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Dilnoza maktabgacha bo'lgan 12 km yo'lni bosib o'tadi. Tezlik v va sarflangan vaqt t teskari proporsional bog'langan bo'lsa, bu bog'lanishning proporsionallik koeffitsienti nechaga teng?",
+      "v": [
+        "12",
+        "24",
+        "6",
+        "1/12"
+      ],
+      "t": 0,
+      "izoh": "Teskari proporsional bog'lanishda ko'paytma o'zgarmas bo'ladi: v·t = k. Bu yerda yo'l uzunligi o'zgarmaydi, ya'ni v·t = 12. Demak koeffitsient masofaning o'ziga teng: k = 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-koeffitsient-topish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#04991d6c"
+    },
+    {
+      "q": "y = k/x funksiyaning grafigi A(4; −7) nuqtadan o'tadi. Shu funksiya uchun k koeffitsientining qiymatini aniqlang.",
+      "v": [
+        "−7/4",
+        "−4/7",
+        "−28",
+        "28"
+      ],
+      "t": 2,
+      "izoh": "Nuqta grafikka tegishli bo'lsa, uning koordinatalari tenglamani qanoatlantiradi: −7 = k/4. Ikkala tomonni 4 ga ko'paytiramiz: k = 4·(−7) = −28. k ni y/x deb hisoblash keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-koeffitsient-topish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#8d912353"
+    },
+    {
+      "q": "Bir brigadada g'isht terish ishini ishchilar soni n va ishning davom etish vaqti t soat teskari proporsional bog'laydi. 8 ta ishchi ishni 15 soatda tugatgan bo'lsa, bog'lanish koeffitsientini toping.",
+      "v": [
+        "23",
+        "7",
+        "15/8",
+        "120"
+      ],
+      "t": 3,
+      "izoh": "Ishchilar soni bilan vaqt teskari proporsional, ya'ni n·t = k. Berilgan qiymatlarni qo'yamiz: k = 8·15 = 120. Bu son ishning umumiy hajmini, ya'ni ishchi-soatni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-koeffitsient-topish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#503a1046"
+    },
+    {
+      "q": "O'zgarmas haroratda gazning bosimi P va hajmi V teskari proporsional. Hajm 2,5 litr bo'lganda bosim 160 kPa ni ko'rsatdi. Shu bog'lanishning koeffitsientini hisoblang.",
+      "v": [
+        "64",
+        "400",
+        "162,5",
+        "157,5"
+      ],
+      "t": 1,
+      "izoh": "O'zgarmas haroratda P·V = k ko'paytma saqlanadi. Qiymatlarni qo'yamiz: k = 160·2,5 = 400. Bosimni hajmga bo'lish emas, aynan ko'paytirish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-koeffitsient-topish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#4e383f6d"
+    },
+    {
+      "q": "y = k/x giperbolaning grafigi B(−3; 5) nuqtadan o'tadi. Agar shu grafik C(m; −2,5) nuqtadan ham o'tsa, m ning qiymatini toping.",
+      "v": [
+        "6",
+        "−6",
+        "2/3",
+        "−15"
+      ],
+      "t": 0,
+      "izoh": "Avval koeffitsientni topamiz: k = (−3)·5 = −15. Endi −2,5 = −15/m tenglamani yechamiz, ya'ni m = −15 : (−2,5). Ikki manfiy sonning bo'linmasi musbat: m = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-koeffitsient-topish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#f53c405d"
+    },
+    {
+      "q": "y = −18/x funksiyaning grafigi koordinata tekisligining qaysi choraklarida joylashganini aniqlang.",
+      "v": [
+        "I va II choraklarda",
+        "I va III choraklarda",
+        "II va IV choraklarda",
+        "III va IV choraklarda"
+      ],
+      "t": 2,
+      "izoh": "Giperbola tarmoqlarining joyi k ning ishorasiga bog'liq. Bu yerda k = −18 < 0, shuning uchun x > 0 bo'lganda y < 0, x < 0 bo'lganda esa y > 0. Bunday nuqtalar II va IV choraklarda yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "giperbola-chorak-joylashuvi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#c816f179"
+    },
+    {
+      "q": "y = (m − 7)/x funksiyaning grafigi I va III choraklarda joylashishi uchun m parametri qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "m = 7",
+        "m > 7",
+        "m < 7",
+        "m ≥ 0"
+      ],
+      "t": 1,
+      "izoh": "Tarmoqlar I va III choraklarda bo'lishi uchun koeffitsient musbat bo'lishi shart: m − 7 > 0. Bundan m > 7 kelib chiqadi. m = 7 bo'lganda funksiya umuman giperbola bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-chorak-joylashuvi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#c4175872"
+    },
+    {
+      "q": "Fizika darsida Jasur y = 24/x va y = −24/x funksiyalarning grafiklarini bitta chizmada chizdi. Bu ikki giperbola haqidagi qaysi tasdiq to'g'ri?",
+      "v": [
+        "Ikkalasi ham I va III choraklarda yotadi",
+        "Ular kesishadi va kesishish nuqtasi koordinata boshi bo'ladi",
+        "Ikkalasi ham abssissa o'qini kesib o'tadi",
+        "Ular ordinata o'qiga nisbatan simmetrik va birgalikda to'rt chorakni to'ldiradi"
+      ],
+      "t": 3,
+      "izoh": "y = 24/x da x ni −x ga almashtirsak, y = −24/x hosil bo'ladi, demak grafiklar ordinata o'qiga nisbatan simmetrik. Biri I va III, ikkinchisi II va IV choraklarda yotadi. Ikkalasi ham koordinata o'qlarini kesib o'tmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-chorak-joylashuvi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#1c421ea1"
+    },
+    {
+      "q": "y = k/x funksiyaning grafigida P(−2; 9) nuqta yotadi. Shu grafikdagi boshqa Q(a; b) nuqta uchun a > 0 bo'lsa, b haqida nima deyish mumkin?",
+      "v": [
+        "b > 0",
+        "b < 0",
+        "b = 0",
+        "b ning ishorasini aniqlab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "P nuqtadan k = (−2)·9 = −18 topiladi, ya'ni koeffitsient manfiy. Grafikning istalgan nuqtasi uchun a·b = −18 bo'ladi. a > 0 bo'lsa, ko'paytma manfiy chiqishi uchun b < 0 bo'lishi shart.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "giperbola-chorak-joylashuvi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#ff0c3bba"
+    },
+    {
+      "q": "y = 45/x funksiyaning (0; +∞) oralig'idagi o'zgarish xarakterini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "O'suvchi",
+        "O'zgarmas",
+        "Avval o'sadi, keyin kamayadi",
+        "Kamayuvchi"
+      ],
+      "t": 3,
+      "izoh": "k = 45 > 0 bo'lgan giperbola I va III choraklarda yotadi. Musbat x lar uchun x ortganda 45/x kichrayadi: 45/5 = 9, keyin 45/9 = 5. Demak funksiya bu oraliqda kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "giperbola-monotonlik",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#3bda5ae2"
+    },
+    {
+      "q": "y = −36/x funksiya haqida quyidagi tasdiqlardan qaysi biri to'g'ri ekanini aniqlang.",
+      "v": [
+        "Butun aniqlanish sohasida kamayuvchi",
+        "Butun sonlar o'qida o'suvchi",
+        "(−∞; 0) va (0; +∞) oraliqlarning har birida o'suvchi",
+        "x = 0 nuqtada eng katta qiymatga erishadi"
+      ],
+      "t": 2,
+      "izoh": "k = −36 < 0 bo'lganda giperbolaning har bir tarmog'i o'suvchi bo'ladi: x = 2 da y = −18, x = 6 da y = −6, qiymat ortdi. Lekin butun sonlar o'qida o'suvchi deb bo'lmaydi, chunki x = 0 da funksiya aniqlanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-monotonlik",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#daf92939"
+    },
+    {
+      "q": "y = 60/x funksiyada argument x = 4 dan x = 12 gacha o'zgarsa, funksiyaning qiymati qanday o'zgaradi?",
+      "v": [
+        "15 dan 5 gacha kamayadi",
+        "5 dan 15 gacha ortadi",
+        "240 dan 720 gacha ortadi",
+        "kamayadi va manfiy qiymatlarni qabul qiladi"
+      ],
+      "t": 0,
+      "izoh": "Chetki qiymatlarni hisoblaymiz: y = 60/4 = 15 va y = 60/12 = 5. Koeffitsient musbat, oraliq esa (0; +∞) ichida, shuning uchun funksiya kamayadi. Argumentni koeffitsientga ko'paytirish xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-monotonlik",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#b8d5ad1c"
+    },
+    {
+      "q": "Anvar y = k/x funksiya (0; +∞) oralig'ida o'suvchi bo'lishini xohlaydi. Shu shartni qanoatlantiradigan k ning qiymatini quyidagilardan tanlang.",
+      "v": [
+        "k = 9",
+        "k = 0",
+        "k = 1/9",
+        "k = −9"
+      ],
+      "t": 3,
+      "izoh": "y = k/x funksiya k < 0 bo'lgandagina har bir tarmoqda o'suvchi bo'ladi. Berilganlar ichida faqat k = −9 shu shartni qanoatlantiradi. k = 0 da grafik giperbola emas, balki abssissa o'qining bo'lagi bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "giperbola-monotonlik",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#e36e25c4"
+    },
+    {
+      "q": "Quyidagi nuqtalardan qaysi biri y = 72/x giperbolaga tegishli: (8; 9), (9; 9), (6; 11), (36; 3)?",
+      "v": [
+        "(8; 9)",
+        "(9; 9)",
+        "(6; 11)",
+        "(36; 3)"
+      ],
+      "t": 0,
+      "izoh": "Nuqta giperbolada yotishi uchun koordinatalar ko'paytmasi 72 ga teng bo'lishi kerak. Tekshiramiz: 8·9 = 72, 9·9 = 81, 6·11 = 66, 36·3 = 108. Faqat birinchi juftlik mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "giperbola-nuqta-tegishli",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#2472167a"
+    },
+    {
+      "q": "M(−5; 14) nuqta y = k/x giperbolada yotadi. Shu giperbolada yotgan yana bir nuqtani toping: (10; 7), (−7; −10), (5; 14), (7; −10)?",
+      "v": [
+        "(10; 7)",
+        "(−7; −10)",
+        "(5; 14)",
+        "(7; −10)"
+      ],
+      "t": 3,
+      "izoh": "Avval koeffitsientni topamiz: k = (−5)·14 = −70. Endi ko'paytmasi −70 bo'lgan juftlikni qidiramiz: 10·7 = 70, (−7)·(−10) = 70, 5·14 = 70, 7·(−10) = −70. Faqat oxirgisi mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-nuqta-tegishli",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#ee9ef917"
+    },
+    {
+      "q": "Bir xil narxdagi daftarlarga jami 90 000 so'm sarflandi, ya'ni daftar narxi bilan uning soni teskari proporsional. Quyidagi juftliklardan qaysi biri shu bog'lanishga mos kelmaydi?",
+      "v": [
+        "15 ta daftar, 6 000 so'mdan",
+        "12 ta daftar, 7 500 so'mdan",
+        "20 ta daftar, 4 000 so'mdan",
+        "18 ta daftar, 5 000 so'mdan"
+      ],
+      "t": 2,
+      "izoh": "Umumiy summa o'zgarmas: n·p = 90 000. Tekshiramiz: 15·6 000 = 90 000, 12·7 500 = 90 000, 18·5 000 = 90 000. Lekin 20·4 000 = 80 000, demak bu juftlik bog'lanishga mos emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-nuqta-tegishli",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#1dd4da90"
+    },
+    {
+      "q": "y = k/x giperbola D(a; b) nuqtadan o'tadi va bu nuqta uchun a·b = −54 ekani ma'lum. Quyidagi nuqtalardan qaysi biri shu giperbolaga albatta tegishli bo'ladi?",
+      "v": [
+        "(6; 9)",
+        "(−9; −6)",
+        "(−6; 9)",
+        "(27; 2)"
+      ],
+      "t": 2,
+      "izoh": "Giperbolaning koeffitsienti nuqta koordinatalari ko'paytmasiga teng: k = a·b = −54. Endi ko'paytmasi −54 bo'lgan nuqtani qidiramiz: 6·9 = 54, (−9)·(−6) = 54, (−6)·9 = −54, 27·2 = 54. Faqat (−6; 9) nuqta mos keladi, chunki uning koordinatalari ko'paytmasi manfiy −54 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "giperbola-nuqta-tegishli",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#1e72673b"
+    },
+    {
+      "q": "Bir ishni 6 ta usta 20 kunda bajaradi. Ustalarning unumdorligi bir xil bo'lsa, xuddi shu ishni 15 ta usta necha kunda bajaradi?",
+      "v": [
+        "50 kun",
+        "12 kun",
+        "8 kun",
+        "11 kun"
+      ],
+      "t": 2,
+      "izoh": "Ish hajmi o'zgarmas: 6·20 = 120 usta-kun. 15 usta ishlaganda vaqt 120 : 15 = 8 kunga teng bo'ladi. Usta soni ortganda vaqt kamayadi, shuning uchun to'g'ri proporsiya tuzish xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-proporsional-qiymat-topish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#45662eae"
+    },
+    {
+      "q": "Nasos hovuzni 45 daqiqada to'ldiradi. Nasosning unumdorligi 1,5 marta oshirilsa, hovuz necha daqiqada to'ladi?",
+      "v": [
+        "67,5 daqiqa",
+        "43,5 daqiqa",
+        "22,5 daqiqa",
+        "30 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Nasos unumi va to'lish vaqti teskari proporsional bog'langan. Unum 1,5 marta ortsa, vaqt 1,5 marta kamayadi: 45 : 1,5 = 30 daqiqa. Bu yerda ko'paytirish emas, bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-proporsional-qiymat-topish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#7a79525c"
+    },
+    {
+      "q": "Yuk mashinasi 360 km yo'lni 60 km/soat tezlik bilan bosib o'tdi. Xuddi shu yo'lni bir soat kam vaqtda bosib o'tish uchun tezlik qanday bo'lishi kerak?",
+      "v": [
+        "72 km/soat",
+        "61 km/soat",
+        "90 km/soat",
+        "66 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki vaqtni topamiz: 360 : 60 = 6 soat. Yangi vaqt 6 − 1 = 5 soat bo'ladi. Kerakli tezlik 360 : 5 = 72 km/soat. Tezlikka shunchaki 1 qo'shish xato, chunki bog'lanish teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-proporsional-qiymat-topish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#3491c94e"
+    },
+    {
+      "q": "y = 5/(x − 3) + 4 funksiyaning vertikal va gorizontal asimptotalari tenglamalarini ko'rsating.",
+      "v": [
+        "x = 3 va y = 4",
+        "x = −3 va y = 4",
+        "x = 4 va y = 3",
+        "x = 3 va y = 5"
+      ],
+      "t": 0,
+      "izoh": "Funksiya y = k/(x − a) + b ko'rinishida berilgan. Vertikal asimptota maxrajni nolga aylantiruvchi qiymatda: x = 3. Gorizontal asimptota erkin had bilan aniqlanadi: y = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "siljitilgan-giperbola-asimptota",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#2ef2e0ab"
+    },
+    {
+      "q": "y = (2x + 7)/(x − 5) funksiyaning gorizontal asimptotasi qaysi to'g'ri chiziq bo'lishini aniqlang.",
+      "v": [
+        "y = 5",
+        "y = 2",
+        "y = 7",
+        "y = −7/5"
+      ],
+      "t": 1,
+      "izoh": "x cheksiz ortganda kasrning qiymati bosh hadlar nisbatiga intiladi: 2x/x = 2. Demak gorizontal asimptota y = 2 to'g'ri chiziq. Maxrajning ildizi bu yerda gorizontal asimptotani bermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljitilgan-giperbola-asimptota",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#49890b66"
+    },
+    {
+      "q": "y = (3x − 1)/(4 − x) funksiyaning vertikal asimptotasi qanday tenglama bilan beriladi?",
+      "v": [
+        "x = −4",
+        "x = 1/3",
+        "x = 4",
+        "x = 3"
+      ],
+      "t": 2,
+      "izoh": "Vertikal asimptota maxraj nolga aylangan joyda hosil bo'ladi: 4 − x = 0, bundan x = 4. Suratni nolga tenglash grafikning abssissa o'qi bilan kesishishini beradi, asimptotani emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljitilgan-giperbola-asimptota",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#1a9e145c"
+    },
+    {
+      "q": "Korxonada bir dona mahsulotning tannarxi T = (40x + 600)/x ming so'm formula bilan hisoblanadi, bunda x — ishlab chiqarilgan mahsulot soni. Ishlab chiqarish juda katta bo'lganda tannarx qanday qiymatga intiladi?",
+      "v": [
+        "600 ming so'mga",
+        "0 ga",
+        "640 ming so'mga",
+        "40 ming so'mga"
+      ],
+      "t": 3,
+      "izoh": "Kasrni had-had bo'lamiz: (40x + 600)/x = 40 + 600/x. x juda katta bo'lganda 600/x qo'shiluvchi nolga yaqinlashadi. Demak tannarx 40 ming so'mga intiladi, ya'ni gorizontal asimptota T = 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljitilgan-giperbola-asimptota",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#75546091"
+    },
+    {
+      "q": "y = (ax + 5)/(x − 2) funksiyaning gorizontal asimptotasi y = −3 to'g'ri chiziq bo'lsa, a parametrning qiymatini toping.",
+      "v": [
+        "−3",
+        "3",
+        "6",
+        "−15"
+      ],
+      "t": 0,
+      "izoh": "x cheksiz ortganda kasr ax/x = a ga intiladi, ya'ni gorizontal asimptota y = a. Shart bo'yicha bu chiziq y = −3, demak a = −3. Maxrajdagi 2 va suratdagi 5 asimptotaga ta'sir qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "siljitilgan-giperbola-asimptota",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#99787b74"
+    },
+    {
+      "q": "y = (x + 8)/(x + 3) funksiyani y = k/(x − a) + b ko'rinishida yozganda k, a va b sonlari mos ravishda qanday bo'ladi?",
+      "v": [
+        "k = 8, a = 3, b = 1",
+        "k = 5, a = −3, b = 1",
+        "k = 5, a = 3, b = 1",
+        "k = 11, a = −3, b = 1"
+      ],
+      "t": 1,
+      "izoh": "Suratni maxraj orqali ifodalaymiz: x + 8 = (x + 3) + 5. Demak y = 1 + 5/(x + 3). Buni y = k/(x − a) + b bilan solishtirsak, k = 5, a = −3, b = 1 kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-funksiya-ajratish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#96abbc1e"
+    },
+    {
+      "q": "y = (2x − 1)/(x + 4) funksiya y = c + k/(x + 4) ko'rinishiga keltirilsa, k soni nechaga teng bo'ladi?",
+      "v": [
+        "9",
+        "−1",
+        "−9",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "Suratni maxrajga moslaymiz: 2x − 1 = 2(x + 4) − 9. Shunda y = 2 − 9/(x + 4) bo'ladi, ya'ni k = −9. Ishorani tashlab yuborib 9 deb olish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-funksiya-ajratish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#9fe80ff6"
+    },
+    {
+      "q": "y = (5x + 3)/(x − 1) funksiyaning grafigi qaysi giperbolani qanday siljitish natijasida hosil bo'lishini aniqlang.",
+      "v": [
+        "y = 8/x grafigini chapga 1 va pastga 5 birlik siljitib",
+        "y = 5/x grafigini o'ngga 1 va yuqoriga 3 birlik siljitib",
+        "y = 3/x grafigini o'ngga 5 va yuqoriga 1 birlik siljitib",
+        "y = 8/x grafigini o'ngga 1 va yuqoriga 5 birlik siljitib"
+      ],
+      "t": 3,
+      "izoh": "Suratni ajratamiz: 5x + 3 = 5(x − 1) + 8, demak y = 5 + 8/(x − 1). Bu y = 8/x giperbolasining o'ngga 1 va yuqoriga 5 birlik siljigan holati. Siljish yo'nalishini teskari olish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-funksiya-ajratish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#1bf7ccc3"
+    },
+    {
+      "q": "Toshkentdan chiqqan avtobusning o'rtacha tezligi V = (54t + 18)/t km/soat formula bilan berilgan, bunda t ≥ 1 — soatlarda o'lchangan harakat vaqti. Shu formulani siljitilgan giperbola ko'rinishida yozing.",
+      "v": [
+        "V = 54 + 18/t",
+        "V = 18 + 54/t",
+        "V = 54t + 18/t",
+        "V = 72/t"
+      ],
+      "t": 0,
+      "izoh": "Kasrni ikki qo'shiluvchiga ajratamiz: (54t + 18)/t = 54t/t + 18/t. Birinchi had 54 ga qisqaradi. Demak V = 54 + 18/t, ya'ni V = 18/t giperbolasi 54 birlik yuqoriga siljigan. t ≥ 1 da tezlik 72 km/soat dan oshmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-funksiya-ajratish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#7f93241c"
+    },
+    {
+      "q": "y = (7 − 2x)/(x + 1) funksiyani y = b + k/(x + 1) ko'rinishida yozing va k + b yig'indisini hisoblang.",
+      "v": [
+        "11",
+        "7",
+        "2",
+        "−7"
+      ],
+      "t": 1,
+      "izoh": "Suratni maxraj orqali yozamiz: 7 − 2x = −2(x + 1) + 9. Demak y = −2 + 9/(x + 1), ya'ni k = 9 va b = −2. Yig'indi k + b = 9 + (−2) = 7 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-funksiya-ajratish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#69b970d6"
+    },
+    {
+      "q": "y = 9/(x + 6) − 2 funksiyaning aniqlanish sohasini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "x ≠ 6",
+        "x ≠ 2",
+        "x ≠ −6",
+        "x ≠ −2"
+      ],
+      "t": 2,
+      "izoh": "Kasrning maxraji nolga teng bo'lmasligi shart: x + 6 ≠ 0. Bundan x ≠ −6 kelib chiqadi. Ishorani almashtirib x ≠ 6 deb yozish tipik xato, erkin had esa sohaga umuman ta'sir qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "siljitilgan-giperbola-aniqlanish-sohasi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#cd2af055"
+    },
+    {
+      "q": "y = (x − 4)/(2x + 10) funksiya argumentning qaysi qiymatida aniqlanmasligini ko'rsating.",
+      "v": [
+        "x = 4",
+        "x = 5",
+        "x = −10",
+        "x = −5"
+      ],
+      "t": 3,
+      "izoh": "Funksiya maxraj nolga aylanganda aniqlanmaydi: 2x + 10 = 0. Bundan 2x = −10 va x = −5. Suratning ildizi x = 4 da funksiya aniqlangan, u yerda qiymat shunchaki nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljitilgan-giperbola-aniqlanish-sohasi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#c73e4670"
+    },
+    {
+      "q": "Dorixonada preparatning bir dozasi uchun narx N = 250/(x − 2) ming so'm formula bilan hisoblanadi, bunda x — qadoqdagi dozalar soni. Formula maxraji nolga aylanmasligi uchun x qaysi qiymatni qabul qila olmaydi?",
+      "v": [
+        "x = 2",
+        "x = 3",
+        "x = 250",
+        "x = 12"
+      ],
+      "t": 0,
+      "izoh": "Maxraj nolga aylanmasligi kerak: x − 2 ≠ 0, ya'ni x ≠ 2. Qadoqda ikkita doza bo'lganda formula ma'nosini yo'qotadi. Qolgan x = 3, x = 12 va x = 250 qiymatlarida maxraj noldan farqli, shuning uchun narx bemalol hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljitilgan-giperbola-aniqlanish-sohasi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#9b3dfec7"
+    },
+    {
+      "q": "y = 12/(x² − 49) funksiyaning aniqlanish sohasidan chiqarib tashlanadigan barcha qiymatlarni toping.",
+      "v": [
+        "x = 7",
+        "x = 7 va x = −7",
+        "x = 49 va x = −49",
+        "x = 0"
+      ],
+      "t": 1,
+      "izoh": "Maxrajni nolga tenglaymiz: x² − 49 = 0, ya'ni x² = 49. Bundan ikkita qiymat chiqadi: x = 7 va x = −7. Ikkinchi ildizni unutib qoldirish eng ko'p uchraydigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "siljitilgan-giperbola-aniqlanish-sohasi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#3b46f835"
+    },
+    {
+      "q": "y = 8/(x − 1) + 5 funksiyaning qiymatlar sohasini to'g'ri ko'rsatgan javobni belgilang.",
+      "v": [
+        "y ≠ 1",
+        "y ≠ 8",
+        "y ≠ 5",
+        "y ≠ 0"
+      ],
+      "t": 2,
+      "izoh": "Bu siljitilgan giperbola bo'lib, uning gorizontal asimptotasi y = 5. Kasr 8/(x − 1) hech qachon nolga aylanmaydi, shuning uchun y qiymat 5 ga yetmaydi. Demak qiymatlar sohasi y ≠ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "siljitilgan-giperbola-qiymatlar-sohasi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#2cc0685f"
+    },
+    {
+      "q": "y = (3x + 2)/(x − 4) funksiya o'zining aniqlanish sohasida qaysi qiymatni hech qachon qabul qilmaydi?",
+      "v": [
+        "2",
+        "4",
+        "14",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Suratni ajratamiz: 3x + 2 = 3(x − 4) + 14, demak y = 3 + 14/(x − 4). Qo'shimcha kasr nolga aylana olmaydi, shuning uchun funksiya 3 qiymatini qabul qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "siljitilgan-giperbola-qiymatlar-sohasi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#7581ab90"
+    },
+    {
+      "q": "y = (x + a)/(x − 3) funksiyaning qiymatlar sohasi y ≠ 1 bo'lib, grafigi (5; 4) nuqtadan o'tadi. a ning qiymatini toping.",
+      "v": [
+        "3",
+        "−3",
+        "6",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Nuqta koordinatalarini qo'yamiz: (5 + a)/(5 − 3) = 4, ya'ni (5 + a)/2 = 4. Bundan 5 + a = 8 va a = 3. Tekshiramiz: y = 1 + 6/(x − 3), qiymatlar sohasi haqiqatan y ≠ 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "siljitilgan-giperbola-qiymatlar-sohasi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#c1ffae8c"
+    },
+    {
+      "q": "y = −6/(x + 2) + 7 giperbolaning simmetriya markazi qaysi nuqtada joylashganini aniqlang.",
+      "v": [
+        "(2; 7)",
+        "(−2; 7)",
+        "(−2; −7)",
+        "(7; −2)"
+      ],
+      "t": 1,
+      "izoh": "y = k/(x − a) + b giperbolaning simmetriya markazi (a; b) nuqta bo'ladi. Bu yerda x + 2 ni x − (−2) deb yozamiz, demak a = −2 va b = 7. Markaz (−2; 7) nuqtada joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "giperbola-simmetriya-markazi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#729314df"
+    },
+    {
+      "q": "y = (4x − 9)/(x − 6) funksiya grafigining simmetriya markazi koordinatalarini aniqlang.",
+      "v": [
+        "(−6; 4)",
+        "(4; 6)",
+        "(6; 4)",
+        "(6; 15)"
+      ],
+      "t": 2,
+      "izoh": "Butun qismni ajratamiz: 4x − 9 = 4(x − 6) + 15, ya'ni y = 4 + 15/(x − 6). Asimptotalar x = 6 va y = 4 bo'lib, ular kesishgan nuqta simmetriya markazi hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-simmetriya-markazi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#cffde0a1"
+    },
+    {
+      "q": "Nodira y = 20/x giperbolani chizdi, so'ngra uni o'ngga 3 birlik va pastga 8 birlik siljitdi. Hosil bo'lgan grafikning tenglamasi va simmetriya markazini ko'rsating.",
+      "v": [
+        "y = 20/(x + 3) − 8, markaz (−3; −8)",
+        "y = 20/(x − 3) + 8, markaz (3; 8)",
+        "y = 20/(x + 3) + 8, markaz (−3; 8)",
+        "y = 20/(x − 3) − 8, markaz (3; −8)"
+      ],
+      "t": 3,
+      "izoh": "O'ngga 3 birlik siljitishda x o'rniga x − 3 yoziladi, pastga 8 birlik siljitishda esa butun ifodadan 8 ayiriladi. Natijada y = 20/(x − 3) − 8 hosil bo'ladi. Simmetriya markazi asimptotalar kesishmasida, ya'ni (3; −8) nuqtada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "giperbola-simmetriya-markazi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#14ac3026"
+    },
+    {
+      "q": "y = x⁶ funksiyaning grafigi qaysi o'q yoki nuqtaga nisbatan simmetrik ekanini aniqlang.",
+      "v": [
+        "Ordinata o'qiga nisbatan",
+        "Abssissa o'qiga nisbatan",
+        "Koordinata boshiga nisbatan",
+        "y = x to'g'ri chiziqqa nisbatan"
+      ],
+      "t": 0,
+      "izoh": "y = x⁶ da ko'rsatkich juft, shuning uchun f(−x) = (−x)⁶ = x⁶ = f(x). Juft funksiyaning grafigi ordinata o'qiga nisbatan simmetrik bo'ladi. Toq ko'rsatkichda simmetriya koordinata boshiga nisbatan bo'lar edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajali-juft-toq-simmetriya",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#9e315e59"
+    },
+    {
+      "q": "Quyidagi darajali funksiyalardan qaysi biri toq funksiya bo'ladi: y = x⁴, y = x⁵, y = x², y = x⁸?",
+      "v": [
+        "y = x⁴",
+        "y = x⁵",
+        "y = x²",
+        "y = x⁸"
+      ],
+      "t": 1,
+      "izoh": "Funksiya toq bo'lishi uchun f(−x) = −f(x) sharti bajarilishi kerak. Bu shart daraja ko'rsatkichi toq bo'lganda o'rinli. Berilganlar ichida faqat y = x⁵ da ko'rsatkich toq, qolganlarida juft.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajali-juft-toq-simmetriya",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#d2d115d4"
+    },
+    {
+      "q": "y = x⁷ funksiya uchun f(−2) qiymati f(2) qiymati bilan qanday bog'langanini ko'rsating.",
+      "v": [
+        "f(−2) = f(2)",
+        "f(−2) = 1/f(2)",
+        "f(−2) = −f(2)",
+        "f(−2) = 2·f(2)"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkich 7 toq bo'lgani uchun funksiya toq: f(−x) = (−x)⁷ = −x⁷. Sonlarda tekshiramiz: f(2) = 128, f(−2) = −128. Demak f(−2) = −f(2) munosabati o'rinli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajali-juft-toq-simmetriya",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#b6b9a040"
+    },
+    {
+      "q": "Kubning hajmi uning qirrasi orqali V = a³ formula bilan hisoblanadi. Qirra uzunligi 3 marta orttirilsa, kubning hajmi necha marta ortadi?",
+      "v": [
+        "3 marta",
+        "9 marta",
+        "81 marta",
+        "27 marta"
+      ],
+      "t": 3,
+      "izoh": "Hajm qirraning uchinchi darajasiga proporsional. Qirra 3 marta ortsa, yangi hajm (3a)³ = 27a³ bo'ladi. Demak hajm 27 marta ortadi, chiziqli o'lchov kabi 3 marta emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajali-juft-toq-simmetriya",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#68e3e8b9"
+    },
+    {
+      "q": "y = xⁿ funksiya uchun f(−x) = f(x) ayniyat bajariladi, grafigi koordinata boshidan o'tadi va faqat I hamda II choraklarda yotadi. n haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "n juft natural son",
+        "n toq natural son",
+        "n manfiy butun son",
+        "n nolga teng"
+      ],
+      "t": 0,
+      "izoh": "f(−x) = f(x) sharti funksiyaning juftligini bildiradi, ya'ni ko'rsatkich juft. Juft natural ko'rsatkichda y ≥ 0 bo'ladi va grafik (0; 0) nuqtadan o'tadi. n = 0 bo'lsa grafik y = 1 to'g'ri chizig'i bo'lib, koordinata boshidan o'tmaydi; toq ko'rsatkichda esa grafik III chorakka tushar edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajali-juft-toq-simmetriya",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#1e5bd0a8"
+    },
+    {
+      "q": "y = xⁿ darajali funksiyaning grafigi (2; 32) nuqtadan o'tadi. Ko'rsatkich n ning qiymatini toping.",
+      "v": [
+        "4",
+        "5",
+        "6",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "Nuqta koordinatalarini tenglamaga qo'yamiz: 2ⁿ = 32. Ikkining darajalarini sanaymiz: 2⁴ = 16, keyin 2⁵ = 32. Demak n = 5. Ordinatani abssissaga bo'lish bu yerda ish bermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajali-korsatkich-topish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#9651d14c"
+    },
+    {
+      "q": "y = xⁿ darajali funksiyaning grafigi (−3; 81) nuqtadan o'tsa, n ning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "3",
+        "−4",
+        "4",
+        "27"
+      ],
+      "t": 2,
+      "izoh": "Nuqtani tenglamaga qo'yamiz: (−3)ⁿ = 81. Natija musbat bo'lgani uchun ko'rsatkich juft bo'lishi shart. Tekshiramiz: (−3)⁴ = 81. Demak n = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajali-korsatkich-topish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#154c2fa0"
+    },
+    {
+      "q": "Sharning hajmi radiusning uchinchi darajasiga, sirt yuzasi esa ikkinchi darajasiga proporsional. Radius 2 marta oshirilganda hajm 8 marta ortdi, sirt yuzasi necha marta ortadi?",
+      "v": [
+        "8 marta",
+        "2 marta",
+        "6 marta",
+        "4 marta"
+      ],
+      "t": 3,
+      "izoh": "Sirt yuzasi uchun S = c·r² bog'lanish o'rinli. Radius 2 marta ortsa, yangi yuza c·(2r)² = 4c·r² bo'ladi. Demak yuza 4 marta ortadi, hajmdagi kabi 8 marta emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajali-korsatkich-topish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#ec104cdc"
+    },
+    {
+      "q": "y = xⁿ darajali funksiyaning grafigi A(4; 8) nuqtadan o'tadi. Ko'rsatkich n ning qiymatini aniqlang.",
+      "v": [
+        "3/2",
+        "2",
+        "2/3",
+        "1/2"
+      ],
+      "t": 0,
+      "izoh": "Nuqtani qo'yamiz: 4ⁿ = 8. Ikkala tomonni 2 asosda yozamiz: (2²)ⁿ = 2³, ya'ni 2 ning 2n-darajasi 2³ ga teng. Demak 2n = 3 va n = 3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajali-korsatkich-topish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#70a4692e"
+    },
+    {
+      "q": "0 < x < 1 sharti bajarilganda x², x³ va x⁴ darajalarini o'sish tartibida joylashtiring.",
+      "v": [
+        "x² < x³ < x⁴",
+        "x⁴ < x³ < x²",
+        "x³ < x² < x⁴",
+        "x² < x⁴ < x³"
+      ],
+      "t": 1,
+      "izoh": "Birdan kichik musbat sonni takror ko'paytirish uni kichraytiradi. Masalan x = 0,5 da x² = 0,25, x³ = 0,125, x⁴ = 0,0625. Demak ko'rsatkich qancha katta bo'lsa, daraja shuncha kichik: x⁴ < x³ < x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajali-qiymatlarni-taqqoslash",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#1f0aa8e9"
+    },
+    {
+      "q": "0,8³ va 0,8⁵ darajalarini taqqoslang va to'g'ri munosabatni ko'rsatgan javobni tanlang.",
+      "v": [
+        "0,8³ < 0,8⁵",
+        "0,8³ = 0,8⁵",
+        "0,8³ > 0,8⁵",
+        "Bu ikki sonni taqqoslab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Asos 0,8 birdan kichik, shuning uchun ko'rsatkich ortganda daraja kamayadi. Hisoblab ko'ramiz: 0,8³ = 0,512, keyin 0,8⁵ = 0,32768. Demak 0,8³ > 0,8⁵.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajali-qiymatlarni-taqqoslash",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#d705caa6"
+    },
+    {
+      "q": "(−2)⁴, (−2)⁵ va (−2)⁶ darajalarining ishoralarini mos ravishda to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "manfiy, musbat, manfiy",
+        "hammasi musbat",
+        "hammasi manfiy",
+        "musbat, manfiy, musbat"
+      ],
+      "t": 3,
+      "izoh": "Manfiy sonning juft darajasi musbat, toq darajasi esa manfiy bo'ladi. Hisoblaymiz: (−2)⁴ = 16 musbat, (−2)⁵ = −32 manfiy, (−2)⁶ = 64 musbat. Demak ishoralar musbat, manfiy, musbat tartibida joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajali-qiymatlarni-taqqoslash",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#45e5f894"
+    },
+    {
+      "q": "Kvadrat shaklidagi ikki dala uchastkasining tomonlari 15 m va 18 m. Yuza tomonning kvadratiga bog'liq bo'lgani uchun katta uchastka kichigidan necha marta katta?",
+      "v": [
+        "1,44 marta",
+        "1,2 marta",
+        "1,8 marta",
+        "2,4 marta"
+      ],
+      "t": 0,
+      "izoh": "Kvadratning yuzasi tomonining kvadratiga teng: S = a². Yuzalar nisbati (18/15)² = 1,2² = 1,44 ga teng. Demak katta uchastka 1,44 marta katta, tomonlar nisbati 1,2 esa yuzalar nisbati emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajali-qiymatlarni-taqqoslash",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#1fb32ca5"
+    },
+    {
+      "q": "a = 0,9¹⁰ va b = 0,9¹² sonlari berilgan. Ularning a/b nisbati haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "a/b < 1, chunki daraja ko'rsatkichi ortgan",
+        "a/b > 1, chunki 0 < 0,9 < 1 bo'lganda ko'rsatkich ortsa daraja kamayadi",
+        "a/b = 1, chunki ikkala darajaning asosi bir xil",
+        "a/b < 0, chunki asos birdan kichik"
+      ],
+      "t": 1,
+      "izoh": "Bir xil asosli darajalarni bo'lamiz: a/b = 0,9¹⁰ : 0,9¹² = 0,9 ning minus ikkinchi darajasi, ya'ni 1/0,81. Bu son birdan katta. Sabab: birdan kichik musbat asosda ko'rsatkich ortsa daraja kamayadi, demak a > b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajali-qiymatlarni-taqqoslash",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#5a5da53c"
+    },
+    {
+      "q": "y = x³ funksiyaning butun sonlar o'qidagi monotonlik xarakterini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "Butun o'qda kamayuvchi",
+        "(−∞; 0) da kamayuvchi, (0; +∞) da o'suvchi",
+        "Butun o'qda o'suvchi",
+        "(−∞; 0) da o'suvchi, (0; +∞) da kamayuvchi"
+      ],
+      "t": 2,
+      "izoh": "y = x³ da ko'rsatkich toq. Toq natural ko'rsatkichli darajali funksiya butun sonlar o'qida o'suvchi bo'ladi. Qiymatlarni ko'ramiz: x = −2 da y = −8, x = 0 da y = 0, x = 2 da y = 8, ya'ni qiymat uzluksiz ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajali-funksiya-monotonlik",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#decc32c0"
+    },
+    {
+      "q": "y = x⁴ funksiya argumentning qaysi oralig'ida kamayuvchi bo'lishini ko'rsating.",
+      "v": [
+        "[0; +∞) oralig'ida",
+        "Butun sonlar o'qida",
+        "Hech qanday oraliqda kamaymaydi",
+        "(−∞; 0] oralig'ida"
+      ],
+      "t": 3,
+      "izoh": "y = x⁴ juft funksiya, uning grafigi parabolaga o'xshab yuqoriga ochilgan. Manfiy qiymatlarda x ortganda funksiya kamayadi: (−3)⁴ = 81, (−1)⁴ = 1. Demak funksiya (−∞; 0] oralig'ida kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajali-funksiya-monotonlik",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#0969b70f"
+    },
+    {
+      "q": "Do'kondagi kvadrat shaklidagi gilamning tomoni 20 foizga oshirilsa, uning yuzasi necha foizga ortadi?",
+      "v": [
+        "44 foizga",
+        "20 foizga",
+        "40 foizga",
+        "144 foizga"
+      ],
+      "t": 0,
+      "izoh": "Yangi tomon 1,2a ga teng bo'ladi. Yangi yuza (1,2a)² = 1,44a², ya'ni eski yuzadan 1,44 marta katta. Demak ortish 44 foizni tashkil qiladi, tomonning ortishi bilan bir xil emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajali-funksiya-monotonlik",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#8e047b30"
+    },
+    {
+      "q": "Quyidagi nuqtalardan qaysi biri y = x⁵ funksiyaning grafigiga tegishli: (−1; 1), (−2; −32), (2; 10), (3; 15)?",
+      "v": [
+        "(−1; 1)",
+        "(−2; −32)",
+        "(2; 10)",
+        "(3; 15)"
+      ],
+      "t": 1,
+      "izoh": "Har bir nuqtani tenglamaga qo'yib tekshiramiz: (−1)⁵ = −1, keyin (−2)⁵ = −32, so'ng 2⁵ = 32, oxirida 3⁵ = 243. Faqat (−2; −32) nuqta mos keladi. Ko'rsatkichni ko'paytuvchi deb qabul qilish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajali-grafik-nuqta-tegishli",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#6cf7726d"
+    },
+    {
+      "q": "y = x⁴ funksiyaning grafigida yotmaydigan nuqtani toping: (2; 16), (3; 81), (−3; −81), (−2; 16)?",
+      "v": [
+        "(2; 16)",
+        "(3; 81)",
+        "(−3; −81)",
+        "(−2; 16)"
+      ],
+      "t": 2,
+      "izoh": "y = x⁴ juft funksiya, shuning uchun uning qiymatlari hech qachon manfiy bo'lmaydi. Tekshiramiz: 2⁴ = 16, 3⁴ = 81, (−3)⁴ = 81, (−2)⁴ = 16. Demak (−3; −81) nuqta grafikda yotmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajali-grafik-nuqta-tegishli",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#d6502fce"
+    },
+    {
+      "q": "Muhandis Sanjar tomoni x metr bo'lgan kvadrat temir plitalar tayyorlaydi. Plitaning massasi m = 12x² kg formula bilan hisoblanadi. Massasi 300 kg bo'lgan plitaning tomoni necha metr?",
+      "v": [
+        "25 m",
+        "150 m",
+        "2,5 m",
+        "5 m"
+      ],
+      "t": 3,
+      "izoh": "Tenglama tuzamiz: 12x² = 300. Bundan x² = 300 : 12 = 25. Kvadrat ildiz olamiz, tomon musbat bo'lgani uchun x = 5 m. Ildiz olishni unutib 25 deb javob berish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajali-grafik-nuqta-tegishli",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#1c41d704"
+    },
+    {
+      "q": "y = x⁻³ darajali funksiyaning x = 2 nuqtadagi qiymatini hisoblang.",
+      "v": [
+        "1/8",
+        "−8",
+        "8",
+        "−1/8"
+      ],
+      "t": 0,
+      "izoh": "Manfiy ko'rsatkichli daraja teskari qiymat orqali yoziladi: x⁻³ = 1/x³. Demak 2⁻³ = 1/2³ = 1/8. Manfiy ko'rsatkichni javobning ishorasi deb tushunish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-korsatkichli-qiymat-hisoblash",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#64494a89"
+    },
+    {
+      "q": "y = x⁻² funksiyaning x = −5 nuqtadagi qiymatini toping.",
+      "v": [
+        "−1/25",
+        "1/25",
+        "−25",
+        "1/10"
+      ],
+      "t": 1,
+      "izoh": "Avval darajani hisoblaymiz: (−5)² = 25. Manfiy ko'rsatkich teskari qiymatni bildiradi, ya'ni (−5)⁻² = 1/25. Ko'rsatkich juft bo'lgani uchun natija musbat chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-korsatkichli-qiymat-hisoblash",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#357344aa"
+    },
+    {
+      "q": "y = 3x⁻¹ + 2 funksiyaning x = 0,5 nuqtadagi qiymatini hisoblang.",
+      "v": [
+        "3,5",
+        "6",
+        "8",
+        "1,2"
+      ],
+      "t": 2,
+      "izoh": "x⁻¹ = 1/x ekanini eslaymiz. x = 0,5 bo'lganda 1/0,5 = 2, demak 3x⁻¹ = 3·2 = 6. Endi erkin hadni qo'shamiz: 6 + 2 = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-korsatkichli-qiymat-hisoblash",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#4811b164"
+    },
+    {
+      "q": "Yoritilganlik manbadan masofaning kvadratiga teskari proporsional. Lampa 2 m masofada 75 lk yorug'lik beradi, 5 m masofada esa yoritilganlik qanday bo'ladi?",
+      "v": [
+        "30 lk",
+        "187,5 lk",
+        "0,75 lk",
+        "12 lk"
+      ],
+      "t": 3,
+      "izoh": "Bog'lanish E = k/d² ko'rinishida bo'ladi. Koeffitsientni topamiz: k = 75·2² = 300. Endi 5 m uchun hisoblaymiz: E = 300 : 5² = 300 : 25 = 12 lk. Masofa oddiy teskari proporsional emas, kvadrati bilan qatnashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "manfiy-korsatkichli-qiymat-hisoblash",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#838659b1"
+    },
+    {
+      "q": "Zavodda bir dona mahsulotga to'g'ri keladigan doimiy xarajat C = 4 800 000/n so'm formula bilan hisoblanadi. Ishlab chiqarish 800 donadan 1 200 donaga oshirilsa, bir dona uchun xarajat qanchaga kamayadi?",
+      "v": [
+        "2 000 so'mga",
+        "4 000 so'mga",
+        "6 000 so'mga",
+        "10 000 so'mga"
+      ],
+      "t": 0,
+      "izoh": "Ikkala holat uchun xarajatni hisoblaymiz: 4 800 000 : 800 = 6 000 so'm va 4 800 000 : 1 200 = 4 000 so'm. Ayirmani olamiz: 6 000 − 4 000 = 2 000 so'm. Demak xarajat 2 000 so'mga kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-korsatkichli-qiymat-hisoblash",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#2a2a0aee"
+    },
+    {
+      "q": "y = x⁻¹ funksiyaning grafigi qanday chiziq bo'ladi va u qaysi choraklarda joylashadi?",
+      "v": [
+        "II va IV choraklarda joylashgan giperbola",
+        "I va III choraklarda joylashgan giperbola",
+        "Koordinata boshidan o'tuvchi to'g'ri chiziq",
+        "Yuqoriga ochilgan parabola"
+      ],
+      "t": 1,
+      "izoh": "x⁻¹ = 1/x bo'lgani uchun bu funksiya aslida y = 1/x teskari proporsionallikdir. Koeffitsient k = 1 musbat, shuning uchun grafik giperbola bo'lib, I va III choraklarda yotadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-korsatkichli-grafik-xossa",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#0d1e757f"
+    },
+    {
+      "q": "y = x⁻⁴ funksiyaning qiymatlar sohasini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "[0; +∞)",
+        "Barcha haqiqiy sonlar",
+        "(0; +∞)",
+        "(−∞; 0) ∪ (0; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Manfiy ko'rsatkichni kasr ko'rinishida yozamiz: x⁻⁴ = 1/x⁴. Maxraj x⁴ har doim musbat, x = 0 esa aniqlanish sohasiga kirmaydi. Demak funksiya faqat musbat qiymatlar qabul qiladi va nolga hech qachon teng bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-korsatkichli-grafik-xossa",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#b73ab777"
+    },
+    {
+      "q": "y = x⁻³ funksiyaning juft yoki toqligini aniqlab, grafigining simmetriyasini ko'rsating.",
+      "v": [
+        "Juft, ordinata o'qiga nisbatan simmetrik",
+        "Juft, koordinata boshiga nisbatan simmetrik",
+        "Na juft, na toq funksiya",
+        "Toq, koordinata boshiga nisbatan simmetrik"
+      ],
+      "t": 3,
+      "izoh": "Tekshiramiz: f(−x) = (−x)⁻³ = −x⁻³ = −f(x), ya'ni funksiya toq. Toq funksiyaning grafigi koordinata boshiga nisbatan simmetrik joylashadi. Masalan f(2) = 1/8 va f(−2) = −1/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-korsatkichli-grafik-xossa",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#ff2935b2"
+    },
+    {
+      "q": "y = x⁻² va y = x⁻³ funksiyalarning x > 0 sohadagi grafiklari haqidagi to'g'ri tasdiqni tanlang.",
+      "v": [
+        "Ikkalasi ham kamayuvchi va musbat qiymatlar qabul qiladi",
+        "Birinchisi o'suvchi, ikkinchisi kamayuvchi",
+        "Ikkalasi ham x = 0 nuqtada qiymatga ega",
+        "Ikkalasi ham manfiy qiymatlar qabul qiladi"
+      ],
+      "t": 0,
+      "izoh": "x > 0 bo'lganda x⁻² = 1/x² va x⁻³ = 1/x³ ifodalar musbat. x ortganda maxraj kattalashadi, demak kasrning qiymati kichrayadi. Shuning uchun har ikkala funksiya bu sohada musbat va kamayuvchi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-korsatkichli-grafik-xossa",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#83b2609b"
+    },
+    {
+      "q": "y = x⁻² funksiyaning grafigi x < 0 sohada qanday joylashishini va qanday o'zgarishini aniqlang.",
+      "v": [
+        "III chorakda yotadi va kamayuvchi",
+        "II chorakda yotadi va o'suvchi",
+        "II chorakda yotadi va kamayuvchi",
+        "IV chorakda yotadi va o'suvchi"
+      ],
+      "t": 1,
+      "izoh": "x < 0 bo'lganda x² musbat, demak y = 1/x² ham musbat va nuqtalar II chorakka tushadi. Qiymatlarni solishtiramiz: x = −3 da y = 1/9, x = −1 da y = 1. x ortgan sari qiymat ortdi, ya'ni funksiya bu oraliqda o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "manfiy-korsatkichli-grafik-xossa",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#5e09c89d"
+    },
+    {
+      "q": "y = x^(1/2) darajali funksiyaning aniqlanish sohasini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "x > 0",
+        "x ≤ 0",
+        "x ≥ 0",
+        "Barcha haqiqiy sonlar"
+      ],
+      "t": 2,
+      "izoh": "Kasr ko'rsatkichli bu daraja kvadrat ildizga teng: x^(1/2) = √x. Kvadrat ildiz manfiy sondan chiqarilmaydi, shuning uchun x ≥ 0. Nol ham sohaga kiradi, chunki √0 = 0 aniqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-funksiya-aniqlanish-sohasi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#ae5d091e"
+    },
+    {
+      "q": "y = ∛x funksiyaning aniqlanish sohasi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Faqat x ≥ 0",
+        "Faqat x > 0",
+        "x ≠ 0 bo'lgan barcha sonlar",
+        "Barcha haqiqiy sonlar"
+      ],
+      "t": 3,
+      "izoh": "Uchinchi darajali ildizning ko'rsatkichi toq, shuning uchun uni manfiy sondan ham chiqarish mumkin: ∛(−8) = −2. Demak ildiz ostidagi ifodaga hech qanday cheklov qo'yilmaydi va soha barcha haqiqiy sonlardan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-funksiya-aniqlanish-sohasi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#56318873"
+    },
+    {
+      "q": "⁴√(x − 5) ifoda bilan berilgan funksiyaning aniqlanish sohasini toping.",
+      "v": [
+        "x > 5",
+        "x ≥ 5",
+        "x ≥ −5",
+        "x ≤ 5"
+      ],
+      "t": 1,
+      "izoh": "Juft ko'rsatkichli ildiz ostidagi ifoda manfiy bo'lmasligi kerak: x − 5 ≥ 0. Bundan x ≥ 5 kelib chiqadi. Tenglikni chiqarib tashlash xato, chunki nolinchi qiymatda ham ildiz aniqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-funksiya-aniqlanish-sohasi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#c8567101"
+    },
+    {
+      "q": "Kubsimon idishning hajmi V litr bo'lsa, uning qirrasi a = ∛V dm formula bilan topiladi. Hajmi 64 litr bo'lgan idishning qirrasi necha detsimetrga teng?",
+      "v": [
+        "4 dm",
+        "8 dm",
+        "32 dm",
+        "16 dm"
+      ],
+      "t": 0,
+      "izoh": "Formulaga hajmni qo'yamiz: a = ∛64. Kubi 64 ga teng bo'lgan sonni qidiramiz: 4³ = 64. Demak qirra 4 dm. Kvadrat ildiz olib 8 deb javob berish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-funksiya-qiymat-hisoblash",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#2d7253ee"
+    },
+    {
+      "q": "Kvadrat shaklidagi bog' maydonining yuzasi 196 m². Tomon uzunligi a = √S formula bilan topilsa, bog'ning tomoni necha metr bo'ladi?",
+      "v": [
+        "98 m",
+        "28 m",
+        "14 m",
+        "49 m"
+      ],
+      "t": 2,
+      "izoh": "Kvadratning yuzasi tomonining kvadratiga teng, demak a = √196. Kvadrati 196 ga teng sonni qidiramiz: 14² = 196. Demak tomon 14 m. Yuzani ikkiga bo'lish bu yerda ish bermaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-funksiya-qiymat-hisoblash",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#4eb4452b"
+    },
+    {
+      "q": "y = x^(1/5) funksiyaning x = 32 nuqtadagi qiymatini toping.",
+      "v": [
+        "6,4",
+        "5",
+        "16",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Kasr ko'rsatkichli daraja ildiz orqali yoziladi: x^(1/5) = ⁵√x. Demak beshinchi darajasi 32 ga teng sonni qidiramiz. 2⁵ = 32 bo'lgani uchun javob 2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-funksiya-qiymat-hisoblash",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#32bf8a9a"
+    },
+    {
+      "q": "Sportchi Ulug'bek yugurish masofasini 4 baravar oshirdi. Charchash ko'rsatkichi masofaning kvadrat ildiziga proporsional bo'lsa, bu ko'rsatkich necha marta ortadi?",
+      "v": [
+        "2 marta",
+        "4 marta",
+        "8 marta",
+        "16 marta"
+      ],
+      "t": 0,
+      "izoh": "Bog'lanish P = c·√L ko'rinishida. Masofa 4 marta ortsa, ildiz ostidagi qiymat ham 4 marta ortadi, lekin ildizi √4 = 2 ga teng. Demak ko'rsatkich 2 marta ortadi, masofa bilan bir xil emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-proporsional-modellashtirish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#aa31217f"
+    },
+    {
+      "q": "f(x) = ∛x funksiya berilgan bo'lsa, f(−27) + f(8) yig'indisini hisoblang.",
+      "v": [
+        "5",
+        "−1",
+        "−5",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Kub ildizning ko'rsatkichi toq, shuning uchun uni manfiy sondan ham chiqarish mumkin. Birinchi qiymat: ∛(−27) = −3, chunki (−3)³ = −27. Ikkinchi qiymat: ∛8 = 2, chunki 2³ = 8. Yig'indi −3 + 2 = −1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-funksiya-qiymat-hisoblash",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#90ddcf54"
+    },
+    {
+      "q": "y = √x funksiyaning grafigi va xossalari haqidagi to'g'ri tasdiqni tanlang.",
+      "v": [
+        "Grafik I va II choraklarda yotadi",
+        "Funksiya butun sonlar o'qida aniqlangan",
+        "Grafik I chorakda yotadi va funksiya o'suvchi",
+        "Funksiya o'zining aniqlanish sohasida kamayuvchi"
+      ],
+      "t": 2,
+      "izoh": "y = √x faqat x ≥ 0 da aniqlangan va qiymatlari manfiy emas, shuning uchun grafik I chorakda yotadi. x ortganda ildiz ham ortadi: √1 = 1, keyin √4 = 2, so'ng √9 = 3. Demak funksiya o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-funksiya-grafik-xossa",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#928e99fb"
+    },
+    {
+      "q": "y = xⁿ va y = x^(1/n) funksiyalar x ≥ 0 sohada bir-biriga nisbatan qanday bog'langanini aniqlang.",
+      "v": [
+        "Ular teng funksiyalar",
+        "Grafiklari ordinata o'qiga nisbatan simmetrik",
+        "Ular o'zaro teskari, lekin grafiklari abssissa o'qiga nisbatan simmetrik",
+        "Ular o'zaro teskari funksiyalar va grafiklari y = x chizig'iga nisbatan simmetrik"
+      ],
+      "t": 3,
+      "izoh": "x ≥ 0 sohada bu ikki funksiya bir-birining teskarisi: birining natijasiga ikkinchisini qo'llasak, dastlabki son qaytadi. O'zaro teskari funksiyalarning grafiklari esa y = x bissektrisasiga nisbatan simmetrik joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-funksiya-grafik-xossa",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#f2b689a9"
+    },
+    {
+      "q": "Jadvalda x va y teskari proporsional kattaliklar berilgan: x = 3 da y = 24, x = 4 da y = 18. x = 8 bo'lganda y ning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "9",
+        "36",
+        "12",
+        "4,5"
+      ],
+      "t": 0,
+      "izoh": "Teskari proporsionallikda ko'paytma o'zgarmas: 3·24 = 72 va 4·18 = 72. Demak koeffitsient 72 ga teng. Endi 8·y = 72 tenglamadan y = 9 chiqadi. To'g'ri proporsiya tuzib 36 deb javob berish xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "giperbola-jadval-bogliqlik",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#ad823a88"
+    },
+    {
+      "q": "Bir ishni bajarishda ishchilar soni va sarflangan vaqt teskari proporsional: 5 ishchi 24 soatda, 8 ishchi 15 soatda tugatgan. 10 ishchi shu ishni necha soatda tugatadi?",
+      "v": [
+        "7,5 soat",
+        "12 soat",
+        "30 soat",
+        "9 soat"
+      ],
+      "t": 1,
+      "izoh": "Ish hajmi o'zgarmas: 5·24 = 120 va 8·15 = 120 ishchi-soat. 10 ishchi uchun 10·t = 120 tenglama tuziladi, bundan t = 12 soat. Ishchi soni ortganda vaqt kamayadi, ortmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-jadval-bogliqlik",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#71580314"
+    },
+    {
+      "q": "Tajriba jadvalida quyidagi juftliklar qayd etilgan: (2; 30), (3; 20), (5; 12), (6; 9). Ulardan qaysi biri teskari proporsional bog'lanishni buzadi?",
+      "v": [
+        "(2; 30)",
+        "(3; 20)",
+        "(5; 12)",
+        "(6; 9)"
+      ],
+      "t": 3,
+      "izoh": "Har bir juftlikda koordinatalar ko'paytmasini sanaymiz: 2·30 = 60, 3·20 = 60, 5·12 = 60, lekin 6·9 = 54. Teskari proporsionallikda ko'paytma bir xil bo'lishi shart, demak oxirgi juftlik bog'lanishga to'g'ri kelmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-jadval-bogliqlik",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#e9c6d280"
+    },
+    {
+      "q": "Ikki kattalik teskari proporsional bog'langan. Birinchi kattalikning qiymati 25 foizga oshirilsa, ikkinchisi necha foizga kamayadi?",
+      "v": [
+        "25 foizga",
+        "20 foizga",
+        "75 foizga",
+        "80 foizga"
+      ],
+      "t": 1,
+      "izoh": "Bog'lanishni y = k/x deb olamiz. Yangi argument 1,25x, demak yangi qiymat k/(1,25x) = 0,8·k/x. Ya'ni y avvalgisining 0,8 qismiga aylanadi va 20 foizga kamayadi. Foizni o'zgarishsiz ko'chirish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "giperbola-jadval-bogliqlik",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#f7d39e01"
+    },
+    {
+      "q": "y = 16/x giperbola va y = x to'g'ri chiziqning kesishish nuqtalari abssissalarini toping.",
+      "v": [
+        "x = 4 va x = −4",
+        "faqat x = 4",
+        "x = 16 va x = −16",
+        "x = 2 va x = −2"
+      ],
+      "t": 0,
+      "izoh": "Kesishish nuqtalarini topish uchun 16/x = x tenglamani yechamiz. Ikkala tomonni x ga ko'paytiramiz: x² = 16. Bundan x = 4 va x = −4 kelib chiqadi. Manfiy ildizni unutib qoldirish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "giperbola-chiziq-kesishishi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#fec4ffb7"
+    },
+    {
+      "q": "y = 6/x giperbola bilan y = x + 1 to'g'ri chiziqning kesishish nuqtalari koordinatalarini toping.",
+      "v": [
+        "(2; 3) va (3; −2)",
+        "(2; 3) va (−3; −2)",
+        "(−2; −3) va (3; 2)",
+        "(1; 6) va (−6; −1)"
+      ],
+      "t": 1,
+      "izoh": "Tenglama tuzamiz: 6/x = x + 1. Maxrajdan qutulamiz: 6 = x² + x, ya'ni x² + x − 6 = 0. Bu tenglamaning ildizlari x = 2 va x = −3. Mos ordinatalar y = 3 va y = −2 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-chiziq-kesishishi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#3594afe2"
+    },
+    {
+      "q": "y = 8/x giperbola va y = 2x to'g'ri chiziq nechta nuqtada kesishishini aniqlang.",
+      "v": [
+        "1 ta",
+        "3 ta",
+        "2 ta",
+        "Umuman kesishmaydi"
+      ],
+      "t": 2,
+      "izoh": "8/x = 2x tenglamani yechamiz. Ikkala tomonni x ga ko'paytiramiz: 8 = 2x², bundan x² = 4. Demak x = 2 va x = −2, ya'ni grafiklar ikkita nuqtada kesishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "giperbola-chiziq-kesishishi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#a95f06ee"
+    },
+    {
+      "q": "y = 20/x giperbola va y = c gorizontal to'g'ri chiziq umuman kesishmasligi uchun c qanday qiymatga ega bo'lishi kerak?",
+      "v": [
+        "c > 0",
+        "c < 0",
+        "c = 20",
+        "c = 0"
+      ],
+      "t": 3,
+      "izoh": "Kesishish uchun 20/x = c tenglama yechimga ega bo'lishi kerak. Kasr 20/x hech qachon nolga aylanmaydi, shuning uchun faqat c = 0 da yechim topilmaydi. Qolgan barcha c larda x = 20/c topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "giperbola-chiziq-kesishishi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#83f28986"
+    },
+    {
+      "q": "y = 36/x funksiyaning [3; 9] kesmadagi eng katta qiymatini toping.",
+      "v": [
+        "12",
+        "4",
+        "36",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "k = 36 musbat bo'lgani uchun funksiya bu kesmada kamayuvchi. Kamayuvchi funksiya eng katta qiymatini kesmaning chap uchida qabul qiladi: y = 36/3 = 12. O'ng uchdagi 4 esa eng kichik qiymat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "giperbola-kesmada-eng-katta-qiymat",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#09df62dd"
+    },
+    {
+      "q": "y = 48/x funksiyaning [4; 12] kesmadagi eng katta va eng kichik qiymatlari yig'indisini hisoblang.",
+      "v": [
+        "8",
+        "16",
+        "20",
+        "48"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsient musbat, shuning uchun funksiya kesmada kamayuvchi. Eng katta qiymat chap uchda: 48/4 = 12. Eng kichigi o'ng uchda: 48/12 = 4. Yig'indi 12 + 4 = 16 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-kesmada-eng-katta-qiymat",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#bdb08d15"
+    },
+    {
+      "q": "y = −30/x funksiyaning [2; 5] kesmadagi eng kichik qiymatini aniqlang.",
+      "v": [
+        "−6",
+        "15",
+        "−15",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "k = −30 manfiy bo'lgani uchun funksiya kesmada o'suvchi. O'suvchi funksiyaning eng kichik qiymati chap uchda bo'ladi: y = −30/2 = −15. O'ng uchdagi −6 esa eng katta qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-kesmada-eng-katta-qiymat",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#a0b98322"
+    },
+    {
+      "q": "Rustam y = 24/x funksiyaning [a; 8] kesmadagi eng katta qiymati 12 ekanini aniqladi. a ning qiymatini toping.",
+      "v": [
+        "3",
+        "4",
+        "6",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "k = 24 musbat, demak funksiya kesmada kamayuvchi va eng katta qiymatini chap uchda, ya'ni x = a da qabul qiladi. Tenglama tuzamiz: 24/a = 12, bundan a = 2. O'ng uchdagi 24/8 = 3 esa eng kichik qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "giperbola-kesmada-eng-katta-qiymat",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#d02a8912"
+    },
+    {
+      "q": "y = 15/x giperbolaning M nuqtasidan koordinata o'qlariga perpendikularlar tushirildi. Hosil bo'lgan to'g'ri to'rtburchakning yuzasi qanchaga teng?",
+      "v": [
+        "15",
+        "7,5",
+        "30",
+        "M nuqtaning o'rniga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Giperbolaning M(x; y) nuqtasi uchun to'rtburchak tomonlari |x| va |y| ga teng. Yuza S = |x|·|y| = |x·y| = |k| bo'ladi. Bu yerda k = 15, demak yuza nuqta o'rniga bog'liq emas va 15 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "giperbola-tortburchak-yuzasi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#fa3b7e2a"
+    },
+    {
+      "q": "Giperbolaning nuqtasidan koordinata o'qlariga tushirilgan perpendikularlar bilan hosil bo'lgan to'rtburchakning yuzasi 42 ga teng. y = k/x funksiyada k ning modulini toping.",
+      "v": [
+        "21",
+        "42",
+        "84",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri to'rtburchakning yuzasi S = |x|·|y| ko'rinishida hisoblanadi. Giperbolaning har bir nuqtasida x·y = k, demak S = |k|. Shartga ko'ra S = 42, shuning uchun |k| = 42.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-tortburchak-yuzasi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#c6cb16b5"
+    },
+    {
+      "q": "y = −28/x giperbolaning ixtiyoriy N nuqtasidan koordinata o'qlariga perpendikularlar tushirilgan. Hosil bo'lgan to'g'ri to'rtburchakning yuzasi haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Yuza N nuqtaning o'rniga qarab o'zgaradi",
+        "Yuza har doim 14 ga teng",
+        "Yuza har doim 28 ga teng",
+        "Yuza har doim −28 ga teng"
+      ],
+      "t": 2,
+      "izoh": "Ixtiyoriy N(x; y) nuqta uchun x·y = −28 tenglik bajariladi. To'rtburchak tomonlari |x| va |y|, yuzasi esa S = |x·y| = 28 ga teng. Yuza musbat kattalik bo'lgani uchun manfiy chiqa olmaydi va nuqta tanloviga bog'liq emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "giperbola-tortburchak-yuzasi",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#83132c9a"
+    },
+    {
+      "q": "Fermer Zuhra 720 kg g'allani bir xil qadoqlarga teng bo'lib joylaydi. Qadoqlar soni n va bitta qadoqdagi og'irlik m kg orasidagi bog'lanishni ifodalovchi formulani tanlang.",
+      "v": [
+        "m = 720n",
+        "m = n/720",
+        "m = 720 − n",
+        "m = 720/n"
+      ],
+      "t": 3,
+      "izoh": "Umumiy og'irlik o'zgarmas: n·m = 720. Bitta qadoqdagi og'irlikni ifodalash uchun ikkala tomonni n ga bo'lamiz: m = 720/n. Bu teskari proporsional bog'lanish bo'lib, ko'paytma yoki ayirma ko'rinishida yozilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-proporsional-hayotiy-model",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#064c5bd0"
+    },
+    {
+      "q": "Suvning oqim tezligi truba ko'ndalang kesimining yuzasiga teskari proporsional. Kesim yuzasi 12 sm² bo'lganda tezlik 3 m/s edi. Kesim yuzasi 4 sm² bo'lsa, tezlik qanday bo'ladi?",
+      "v": [
+        "1 m/s",
+        "12 m/s",
+        "9 m/s",
+        "6 m/s"
+      ],
+      "t": 2,
+      "izoh": "Teskari proporsionallikda v·S = k ko'paytma saqlanadi. Koeffitsientni topamiz: k = 3·12 = 36. Yangi kesim uchun v = 36 : 4 = 9 m/s. Kesim yuzasi kichraysa, tezlik ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-proporsional-hayotiy-model",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#e805fa35"
+    },
+    {
+      "q": "Tadbirning umumiy xarajati 3 600 000 so'm bo'lib, u ishtirokchilar orasida teng taqsimlanadi. Ishtirokchilar soni 30 tadan 45 taga ko'paysa, har bir kishining ulushi qanchaga kamayadi?",
+      "v": [
+        "80 000 so'mga",
+        "120 000 so'mga",
+        "40 000 so'mga",
+        "20 000 so'mga"
+      ],
+      "t": 2,
+      "izoh": "Har bir holat uchun ulushni hisoblaymiz: 3 600 000 : 30 = 120 000 so'm va 3 600 000 : 45 = 80 000 so'm. Ayirmani olamiz: 120 000 − 80 000 = 40 000 so'm. Demak ulush 40 000 so'mga kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-proporsional-hayotiy-model",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#ac6b09eb"
+    },
+    {
+      "q": "Zilzila to'lqinining kuchi markazdan masofaning kubiga teskari proporsional. Ikki shahar zilzila markazidan 10 km va 40 km uzoqlikda joylashgan. Yaqin shahardagi kuch uzoq shahardagidan necha marta katta?",
+      "v": [
+        "4 marta",
+        "16 marta",
+        "12 marta",
+        "64 marta"
+      ],
+      "t": 3,
+      "izoh": "Bog'lanish F = k/d³ ko'rinishida. Masofalar nisbati 40 : 10 = 4 ga teng. Ko'rsatkich uchinchi darajali bo'lgani uchun kuchlar nisbati 4³ = 64 chiqadi. Demak yaqin shahardagi kuch 64 marta katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajali-hayotiy-model",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#49c5e5b2"
+    },
+    {
+      "q": "y = k/x giperbola va y = xⁿ darajali funksiyaning grafiklari (2; 8) nuqtada kesishadi. k va n ning qiymatlarini toping.",
+      "v": [
+        "k = 16, n = 3",
+        "k = 4, n = 3",
+        "k = 16, n = 4",
+        "k = 8, n = 2"
+      ],
+      "t": 0,
+      "izoh": "Nuqta giperbolada yotgani uchun k = 2·8 = 16. Xuddi shu nuqta darajali funksiyada ham yotadi: 2ⁿ = 8, ya'ni 2ⁿ = 2³ va n = 3. Demak k = 16, n = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "giperbola-darajali-kesishish",
+      "id": "matematika_funk_m04-teskari-proporsionallik-giperbola-va-darajali#ffe56374"
+    }
+  ]
+}

@@ -1,0 +1,1306 @@
+{
+  "nom": "Reported speech (full)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "'When does the shop open?' the tourist asked. → The tourist asked ___.",
+      "v": [
+        "when did the shop open",
+        "when the shop opened",
+        "when does the shop open",
+        "when did the shop opened"
+      ],
+      "t": 1,
+      "izoh": "Darak tartibi, do yo'q, zamon orqaga (#125).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#7c064b0b"
+    },
+    {
+      "q": "'Are you hungry?' he asked. → He asked ___ hungry.",
+      "v": [
+        "whether was I",
+        "that I was",
+        "was I",
+        "if I was"
+      ],
+      "t": 3,
+      "izoh": "Ha/yo'q savol — if / whether + darak tartibi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#0dbac528"
+    },
+    {
+      "q": "Find the mistake: 'The teacher asked us why had we come late.'",
+      "v": [
+        "The teacher",
+        "asked us",
+        "why had we come",
+        "late"
+      ],
+      "t": 2,
+      "izoh": "why we had come — darak tartibi (#125).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#d04419a9"
+    },
+    {
+      "q": "'Close the window,' the nurse said to me. → The nurse told me ___ the window.",
+      "v": [
+        "that close",
+        "close",
+        "closing",
+        "to close"
+      ],
+      "t": 3,
+      "izoh": "tell + kishi + to (#126).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#20f15c41"
+    },
+    {
+      "q": "'Please don't smoke here,' she said to us. → She asked us ___ there.",
+      "v": [
+        "to not smoke",
+        "not smoking",
+        "not to smoke",
+        "don't smoke"
+      ],
+      "t": 2,
+      "izoh": "asked + kishi + not to.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#74577fe4"
+    },
+    {
+      "q": "'I'll call you tomorrow,' he said last month. → He said he would call me ___.",
+      "v": [
+        "the next day",
+        "tomorrow",
+        "next day",
+        "the day before"
+      ],
+      "t": 0,
+      "izoh": "tomorrow → the next day.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#03a9062c"
+    },
+    {
+      "q": "'We met here yesterday,' she said in Bukhara (reported in Tashkent). → She said they had met ___ the day before.",
+      "v": [
+        "here",
+        "there",
+        "this",
+        "that"
+      ],
+      "t": 1,
+      "izoh": "here → there.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#f23573b9"
+    },
+    {
+      "q": "'Let's go by train,' said Aziz. → Aziz suggested ___ by train.",
+      "v": [
+        "to go",
+        "go",
+        "going",
+        "that go"
+      ],
+      "t": 2,
+      "izoh": "suggest + -ing.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#42c3b5b6"
+    },
+    {
+      "q": "'I won't sign it,' the director said. → The director ___ sign it.",
+      "v": [
+        "refused to",
+        "refused",
+        "denied to",
+        "refused that"
+      ],
+      "t": 0,
+      "izoh": "refuse + to.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#fc8a4cc8"
+    },
+    {
+      "q": "'Don't leave your passports at the hotel,' the guide said to us. → The guide ___ our passports at the hotel.",
+      "v": [
+        "said us not to leave",
+        "warned us to not leaving",
+        "warned us not to leave",
+        "warned that we not leave"
+      ],
+      "t": 2,
+      "izoh": "warned + person + not to (#126).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#2c7abf45"
+    },
+    {
+      "q": "Find the mistake: 'The nurse said me to sit down and wait.'",
+      "v": [
+        "The nurse",
+        "said me",
+        "to sit down",
+        "and wait"
+      ],
+      "t": 1,
+      "izoh": "said me → told / asked me (#52).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#d78bee1d"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "He asked me that I was ready.",
+        "He asked me was I ready.",
+        "He asked me if I was ready.",
+        "He asked me if was I ready."
+      ],
+      "t": 2,
+      "izoh": "if + darak tartibi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#21ac92a9"
+    },
+    {
+      "q": "'I bought this today,' he said. -> He said he had bought that ___.",
+      "v": [
+        "that day",
+        "today",
+        "this day",
+        "then day"
+      ],
+      "t": 0,
+      "izoh": "today -> that day.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#7a3ff217"
+    },
+    {
+      "q": "Choose the correct report of: 'They are playing football.'",
+      "v": [
+        "He said they were playing football.",
+        "He said they are playing football.",
+        "He said they play football.",
+        "He said they had played football."
+      ],
+      "t": 0,
+      "izoh": "Present cont -> past cont.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#7ba1082d"
+    },
+    {
+      "q": "Find the mistake: 'She told that she was ill.'",
+      "v": [
+        "told that",
+        "was ill",
+        "she",
+        "No mistake"
+      ],
+      "t": 0,
+      "izoh": "tell dan keyin shaxs kerak: told me that.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#67142140"
+    },
+    {
+      "q": "'It is raining,' she said. -> She said (that) it ___.",
+      "v": [
+        "was raining",
+        "is raining",
+        "rained",
+        "had rained"
+      ],
+      "t": 0,
+      "izoh": "Present cont -> past cont.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#8e38a6aa"
+    },
+    {
+      "q": "'I don't understand the lesson,' he said. -> He said he ___ the lesson.",
+      "v": [
+        "didn't understand",
+        "doesn't understand",
+        "hadn't understood",
+        "won't understand"
+      ],
+      "t": 0,
+      "izoh": "Present simple -> past simple.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#b381f699"
+    },
+    {
+      "q": "'Have you seen my phone?' she asked. -> She asked me ___ seen her phone.",
+      "v": [
+        "if I had",
+        "if I have",
+        "that I had",
+        "did I have"
+      ],
+      "t": 0,
+      "izoh": "Present perfect -> past perfect, if.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#6fd26f68"
+    },
+    {
+      "q": "'Sit down, please,' the teacher said. -> The teacher asked us ___ down.",
+      "v": [
+        "to sit",
+        "sit",
+        "sitting",
+        "that sit"
+      ],
+      "t": 0,
+      "izoh": "Buyruq -> ask + to + fel.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#f8af91ee"
+    },
+    {
+      "q": "'When did the train leave?' he asked. -> He asked when the train ___.",
+      "v": [
+        "had left",
+        "did leave",
+        "leaves",
+        "left"
+      ],
+      "t": 0,
+      "izoh": "Past simple -> past perfect reported savolda.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#ffe62ea2"
+    },
+    {
+      "q": "'I may come later,' she said. -> She said she ___ come later.",
+      "v": [
+        "might",
+        "may",
+        "would",
+        "could"
+      ],
+      "t": 0,
+      "izoh": "may -> might.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#4814a1f6"
+    },
+    {
+      "q": "'We went there last week,' they said. -> They said they had gone there ___.",
+      "v": [
+        "the week before",
+        "last week",
+        "the next week",
+        "that week ago"
+      ],
+      "t": 0,
+      "izoh": "last week -> the week before.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#beb771b3"
+    },
+    {
+      "q": "Which is correct?",
+      "v": [
+        "He asked me what time it was.",
+        "He asked me what time was it.",
+        "He asked me what time is it.",
+        "He asked me what time did it be."
+      ],
+      "t": 0,
+      "izoh": "Reported savolda darak tartibi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#bc249275"
+    },
+    {
+      "q": "'I am going to visit you tonight,' he said. -> He said he was going to visit me ___.",
+      "v": [
+        "that night",
+        "tonight",
+        "this night",
+        "the night"
+      ],
+      "t": 0,
+      "izoh": "tonight -> that night.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#c25ea2d4"
+    },
+    {
+      "q": "'Don't touch the wire!' he shouted. -> He shouted at us ___ the wire.",
+      "v": [
+        "not to touch",
+        "to don't touch",
+        "not touch",
+        "that not touch"
+      ],
+      "t": 0,
+      "izoh": "Manfiy buyruq: not to.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#aa4a3881"
+    },
+    {
+      "q": "'I have been waiting for an hour,' she said. -> She said she ___ for an hour.",
+      "v": [
+        "had been waiting",
+        "has been waiting",
+        "was waiting",
+        "waited"
+      ],
+      "t": 0,
+      "izoh": "Present perfect cont -> past perfect cont.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#f00de6fb"
+    },
+    {
+      "q": "'Why are you late?' the boss asked. -> The boss asked me why I ___ late.",
+      "v": [
+        "was",
+        "am",
+        "were",
+        "did be"
+      ],
+      "t": 0,
+      "izoh": "Reported wh-savol, I bilan was.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#65595aec"
+    },
+    {
+      "q": "Find the mistake: 'He asked me where do I live.'",
+      "v": [
+        "where do I live",
+        "asked me",
+        "He",
+        "No mistake"
+      ],
+      "t": 0,
+      "izoh": "Reported savolda do ishlatilmaydi: where I lived.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#fe5f38b3"
+    },
+    {
+      "q": "'I can't help you now,' she said. -> She said she ___ help me then.",
+      "v": [
+        "couldn't",
+        "can't",
+        "won't",
+        "couldn't to"
+      ],
+      "t": 0,
+      "izoh": "can't -> couldn't.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#fd2b2cb5"
+    },
+    {
+      "q": "'Turn off the lights,' Mum said. -> Mum told me ___ off the lights.",
+      "v": [
+        "to turn",
+        "turn",
+        "turning",
+        "to turning"
+      ],
+      "t": 0,
+      "izoh": "tell + to + fel.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#5f6b7332"
+    },
+    {
+      "q": "'I will have finished by Friday,' he said. -> He said he ___ by Friday.",
+      "v": [
+        "would have finished",
+        "will have finished",
+        "had finished",
+        "finished"
+      ],
+      "t": 0,
+      "izoh": "will have -> would have.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#d4ccc554"
+    },
+    {
+      "q": "Choose the correct report of 'Are you tired?'",
+      "v": [
+        "She asked if I was tired.",
+        "She asked if was I tired.",
+        "She asked am I tired.",
+        "She asked me are you tired."
+      ],
+      "t": 0,
+      "izoh": "Yes/no savol -> if + darak tartibi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#bbb2d4a4"
+    },
+    {
+      "q": "'I did my best,' he said. -> He said he ___ his best.",
+      "v": [
+        "had done",
+        "did",
+        "has done",
+        "was doing"
+      ],
+      "t": 0,
+      "izoh": "Past simple -> past perfect.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#5e7832a2"
+    },
+    {
+      "q": "'This book is mine,' she said. -> She said that ___ book was hers.",
+      "v": [
+        "that",
+        "this",
+        "the mine",
+        "those"
+      ],
+      "t": 0,
+      "izoh": "this -> that.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#e4f9d2e9"
+    },
+    {
+      "q": "'We are leaving in two days,' they said. -> They said they were leaving in two days.",
+      "v": [
+        "Correct report",
+        "were leaving -> are leaving",
+        "two days -> two days ago",
+        "they -> them"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri reported forma.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#48be7c63"
+    },
+    {
+      "q": "'Could you open the window?' he asked. -> He asked me ___ the window.",
+      "v": [
+        "to open",
+        "open",
+        "if open",
+        "that I open"
+      ],
+      "t": 0,
+      "izoh": "Iltimos-buyruq -> ask + to.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#64feb397"
+    },
+    {
+      "q": "'I have never been to Paris,' she said. -> She said she ___ to Paris.",
+      "v": [
+        "had never been",
+        "has never been",
+        "was never",
+        "never went"
+      ],
+      "t": 0,
+      "izoh": "Present perfect -> past perfect.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#12deaa0f"
+    },
+    {
+      "q": "'What are you doing here?' she asked. -> She asked me what I ___ there.",
+      "v": [
+        "was doing",
+        "am doing",
+        "do",
+        "was do"
+      ],
+      "t": 0,
+      "izoh": "here -> there, tartib o'zgaradi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#28bd7192"
+    },
+    {
+      "q": "Find the mistake: 'She said me she was happy.'",
+      "v": [
+        "said me",
+        "was happy",
+        "she",
+        "No mistake"
+      ],
+      "t": 0,
+      "izoh": "say + me noto'g'ri; told me yoki said.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#d4d6abbd"
+    },
+    {
+      "q": "'I saw that film a year ago,' he said. -> He said he had seen that film a year ___.",
+      "v": [
+        "before",
+        "ago",
+        "after",
+        "then"
+      ],
+      "t": 0,
+      "izoh": "ago -> before.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#4dcefec1"
+    },
+    {
+      "q": "'You should rest,' the doctor said. -> The doctor said I ___ rest.",
+      "v": [
+        "should",
+        "shall",
+        "must to",
+        "had should"
+      ],
+      "t": 0,
+      "izoh": "should backshift qilinmaydi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#2f3243da"
+    },
+    {
+      "q": "'Who broke the vase?' she asked. -> She asked who ___ the vase.",
+      "v": [
+        "had broken",
+        "did break",
+        "breaks",
+        "broke did"
+      ],
+      "t": 0,
+      "izoh": "Subyekt savoli, tartib saqlanadi, backshift.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#8fab06d2"
+    },
+    {
+      "q": "'I'm not feeling well,' he said. -> He said he ___ well.",
+      "v": [
+        "wasn't feeling",
+        "isn't feeling",
+        "hadn't felt",
+        "won't feel"
+      ],
+      "t": 0,
+      "izoh": "Present cont manfiy -> past cont.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#af1afe94"
+    },
+    {
+      "q": "Choose the correct report of 'Don't be late.'",
+      "v": [
+        "She told me not to be late.",
+        "She told me to not be late.",
+        "She told me don't be late.",
+        "She said me not be late."
+      ],
+      "t": 0,
+      "izoh": "Manfiy buyruq: not to be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#6f150e5c"
+    },
+    {
+      "q": "'I've been living here since 2010,' she said. -> She said she ___ there since 2010.",
+      "v": [
+        "had been living",
+        "has been living",
+        "lived",
+        "was living"
+      ],
+      "t": 0,
+      "izoh": "Present perfect cont -> past perfect cont.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#2279f892"
+    },
+    {
+      "q": "'How much does it cost?' he asked. -> He asked how much it ___.",
+      "v": [
+        "cost",
+        "costs",
+        "did cost",
+        "had cost"
+      ],
+      "t": 0,
+      "izoh": "Reported savolda do olib tashlanadi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#8377580f"
+    },
+    {
+      "q": "'We must hurry,' they said. -> They said they ___ hurry.",
+      "v": [
+        "had to",
+        "must to",
+        "must",
+        "musted"
+      ],
+      "t": 0,
+      "izoh": "must -> had to.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#08b5b4ab"
+    },
+    {
+      "q": "'I'll be waiting for you,' she said. -> She said she ___ for me.",
+      "v": [
+        "would be waiting",
+        "will be waiting",
+        "was waiting",
+        "had waited"
+      ],
+      "t": 0,
+      "izoh": "will be -> would be.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#db53dfd1"
+    },
+    {
+      "q": "Find the mistake: 'He asked me did I want tea.'",
+      "v": [
+        "did I want",
+        "asked me",
+        "He",
+        "No mistake"
+      ],
+      "t": 0,
+      "izoh": "Yes/no savol: if I wanted tea.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#057c7381"
+    },
+    {
+      "q": "'I have finished the report,' she told me. -> She told me she ___ the report.",
+      "v": [
+        "had finished",
+        "has finished",
+        "finished",
+        "was finishing"
+      ],
+      "t": 0,
+      "izoh": "Present perfect -> past perfect.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#faefe758"
+    },
+    {
+      "q": "'Come here immediately,' he said. -> He told me to go ___ immediately.",
+      "v": [
+        "there",
+        "here",
+        "then",
+        "that"
+      ],
+      "t": 0,
+      "izoh": "here -> there, come -> go.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#f749e7b1"
+    },
+    {
+      "q": "'It will snow tonight,' the forecaster said. -> The forecaster said it ___ snow that night.",
+      "v": [
+        "would",
+        "will",
+        "was going",
+        "might will"
+      ],
+      "t": 0,
+      "izoh": "will -> would, tonight -> that night.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#1943d935"
+    },
+    {
+      "q": "Choose the correct report of 'What is your name?'",
+      "v": [
+        "He asked what my name was.",
+        "He asked what was my name.",
+        "He asked what is my name.",
+        "He asked what my name is."
+      ],
+      "t": 0,
+      "izoh": "Reported wh-savol darak tartibi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#8d7004a9"
+    },
+    {
+      "q": "'I don't want to go,' the child said. -> The child said he ___ to go.",
+      "v": [
+        "didn't want",
+        "doesn't want",
+        "hadn't wanted",
+        "wouldn't want"
+      ],
+      "t": 0,
+      "izoh": "Present simple manfiy -> past simple.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#514f88ce"
+    },
+    {
+      "q": "'Please wait for me,' she said. -> She asked me ___ for her.",
+      "v": [
+        "to wait",
+        "wait",
+        "waiting",
+        "that wait"
+      ],
+      "t": 0,
+      "izoh": "ask + to + fel.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#78b3c2b7"
+    },
+    {
+      "q": "'I was reading when you called,' he said. -> He said he ___ when I called.",
+      "v": [
+        "had been reading",
+        "was reading",
+        "is reading",
+        "read"
+      ],
+      "t": 0,
+      "izoh": "Past cont -> past perfect cont.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#b2795643"
+    },
+    {
+      "q": "Find the mistake: 'She told to me that she was tired.'",
+      "v": [
+        "told to me",
+        "was tired",
+        "she",
+        "No mistake"
+      ],
+      "t": 0,
+      "izoh": "tell to me noto'g'ri; told me.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#51d746e1"
+    },
+    {
+      "q": "'We have to leave now,' they said. -> They said they ___ leave then.",
+      "v": [
+        "had to",
+        "have to",
+        "must",
+        "had had to"
+      ],
+      "t": 0,
+      "izoh": "have to -> had to, now -> then.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#13d3224d"
+    },
+    {
+      "q": "'Is it going to rain?' she asked. -> She asked ___ it was going to rain.",
+      "v": [
+        "whether",
+        "that",
+        "what",
+        "if that"
+      ],
+      "t": 0,
+      "izoh": "Yes/no savol -> whether/if.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#4c853714"
+    },
+    {
+      "q": "'I'll see you next week,' he said. -> He said he would see me ___.",
+      "v": [
+        "the following week",
+        "next week",
+        "this week",
+        "the week before"
+      ],
+      "t": 0,
+      "izoh": "next week -> the following week.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#e6330478"
+    },
+    {
+      "q": "Choose the correct report of 'Stop shouting!'",
+      "v": [
+        "He told them to stop shouting.",
+        "He told them stop shouting.",
+        "He said them to stop shouting.",
+        "He told to them stop shouting."
+      ],
+      "t": 0,
+      "izoh": "tell + object + to.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#51ebb9cb"
+    },
+    {
+      "q": "'I can drive,' she said. -> She said she ___ drive.",
+      "v": [
+        "could",
+        "can",
+        "would can",
+        "could to"
+      ],
+      "t": 0,
+      "izoh": "can -> could.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#ac7fdb61"
+    },
+    {
+      "q": "'How long have you been here?' he asked. -> He asked how long I ___ there.",
+      "v": [
+        "had been",
+        "have been",
+        "was",
+        "did be"
+      ],
+      "t": 0,
+      "izoh": "Present perfect -> past perfect, here -> there.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#04b6da84"
+    },
+    {
+      "q": "'I met him three days ago,' she said. -> She said she had met him three days ___.",
+      "v": [
+        "before",
+        "ago",
+        "earlier ago",
+        "then"
+      ],
+      "t": 0,
+      "izoh": "ago -> before.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#4448aae5"
+    },
+    {
+      "q": "Find the mistake: 'He said he will come the next day.'",
+      "v": [
+        "will come",
+        "said",
+        "the next day",
+        "No mistake"
+      ],
+      "t": 0,
+      "izoh": "will -> would (backshift).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#c596e21d"
+    },
+    {
+      "q": "'Don't worry about me,' she said. -> She told me ___ about her.",
+      "v": [
+        "not to worry",
+        "to not worry",
+        "don't worry",
+        "not worry"
+      ],
+      "t": 0,
+      "izoh": "not to + fel.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#9e106912"
+    },
+    {
+      "q": "'We are enjoying the trip,' they said. -> They said they ___ the trip.",
+      "v": [
+        "were enjoying",
+        "are enjoying",
+        "enjoyed",
+        "had enjoyed"
+      ],
+      "t": 0,
+      "izoh": "Present cont -> past cont.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#3ad8e155"
+    },
+    {
+      "q": "'Why did you leave early?' she asked. -> She asked why I ___ early.",
+      "v": [
+        "had left",
+        "did leave",
+        "leave",
+        "was left"
+      ],
+      "t": 0,
+      "izoh": "Past simple -> past perfect reported savolda.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#ecbab7c0"
+    },
+    {
+      "q": "Choose the correct report of 'I have a headache.'",
+      "v": [
+        "She said she had a headache.",
+        "She said she has a headache.",
+        "She told she had a headache.",
+        "She said me she had a headache."
+      ],
+      "t": 0,
+      "izoh": "have -> had, say shaxssiz.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#39d496f9"
+    },
+    {
+      "q": "'You needn't come early,' he said. -> He said I ___ come early.",
+      "v": [
+        "needn't",
+        "don't need",
+        "hadn't need",
+        "needn't to"
+      ],
+      "t": 0,
+      "izoh": "needn't backshift qilinmaydi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#b1e877e9"
+    },
+    {
+      "q": "'I'm going to start a business,' he said. -> He said he ___ start a business.",
+      "v": [
+        "was going to",
+        "is going to",
+        "will",
+        "would to"
+      ],
+      "t": 0,
+      "izoh": "am going to -> was going to.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#1ab55371"
+    },
+    {
+      "q": "'Where does she work?' he asked. -> He asked where she ___.",
+      "v": [
+        "worked",
+        "works",
+        "did work",
+        "had work"
+      ],
+      "t": 0,
+      "izoh": "Reported savolda do yo'q.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#9d3a9cd1"
+    },
+    {
+      "q": "'I have already eaten,' she said. -> She said she ___ already ___.",
+      "v": [
+        "had / eaten",
+        "has / eaten",
+        "did / eat",
+        "was / eating"
+      ],
+      "t": 0,
+      "izoh": "Present perfect -> past perfect.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#86519832"
+    },
+    {
+      "q": "Find the mistake: 'The teacher told us to don't talk.'",
+      "v": [
+        "to don't talk",
+        "told us",
+        "The teacher",
+        "No mistake"
+      ],
+      "t": 0,
+      "izoh": "To'g'risi: not to talk.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#2ced7b7d"
+    },
+    {
+      "q": "'This is my final offer,' he said. -> He said that ___ was his final offer.",
+      "v": [
+        "that",
+        "this",
+        "it this",
+        "those"
+      ],
+      "t": 0,
+      "izoh": "this -> that.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#9a8d774f"
+    },
+    {
+      "q": "'Could you help me?' she asked. -> She asked me ___ her.",
+      "v": [
+        "to help",
+        "help",
+        "if help",
+        "that help"
+      ],
+      "t": 0,
+      "izoh": "Iltimos -> ask + to.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#1ce38b62"
+    },
+    {
+      "q": "'I will not tell anyone,' he promised. -> He promised he ___ tell anyone.",
+      "v": [
+        "would not",
+        "will not",
+        "did not",
+        "had not"
+      ],
+      "t": 0,
+      "izoh": "will not -> would not.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#6576f5ea"
+    },
+    {
+      "q": "Choose the correct report of 'Are they coming?'",
+      "v": [
+        "I asked if they were coming.",
+        "I asked if were they coming.",
+        "I asked are they coming.",
+        "I asked that they were coming."
+      ],
+      "t": 0,
+      "izoh": "Yes/no + if + darak tartibi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#44a9a8ab"
+    },
+    {
+      "q": "'We spent the money yesterday,' they said. -> They said they had spent the money ___.",
+      "v": [
+        "the day before",
+        "yesterday",
+        "the next day",
+        "before yesterday"
+      ],
+      "t": 0,
+      "izoh": "yesterday -> the day before.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#810082a5"
+    },
+    {
+      "q": "'Please don't leave me here,' she said. -> She begged me ___ her there.",
+      "v": [
+        "not to leave",
+        "to not leave",
+        "not leave",
+        "don't leave"
+      ],
+      "t": 0,
+      "izoh": "not to leave, here -> there.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#a37d3cfe"
+    },
+    {
+      "q": "'I feel much better today,' he said. -> He said he ___ much better that day.",
+      "v": [
+        "felt",
+        "feels",
+        "had felt",
+        "was feeling"
+      ],
+      "t": 0,
+      "izoh": "Present simple -> past simple, today -> that day.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#ea175d8b"
+    },
+    {
+      "q": "Find the mistake: 'She asked me if did I know the answer.'",
+      "v": [
+        "if did I know",
+        "asked me",
+        "the answer",
+        "No mistake"
+      ],
+      "t": 0,
+      "izoh": "if I knew - do kerak emas.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#5e668335"
+    },
+    {
+      "q": "'I'll have left by then,' she said. -> She said she ___ by then.",
+      "v": [
+        "would have left",
+        "will have left",
+        "had left",
+        "was leaving"
+      ],
+      "t": 0,
+      "izoh": "will have -> would have.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#6245087d"
+    },
+    {
+      "q": "'Who is knocking at the door?' he asked. -> He asked who ___ at the door.",
+      "v": [
+        "was knocking",
+        "is knocking",
+        "did knock",
+        "knocks"
+      ],
+      "t": 0,
+      "izoh": "Subyekt savoli, backshift.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#95b1b69f"
+    },
+    {
+      "q": "'We can meet next Monday,' she said. -> She said they ___ meet the following Monday.",
+      "v": [
+        "could",
+        "can",
+        "would could",
+        "could to"
+      ],
+      "t": 0,
+      "izoh": "can -> could, next -> the following.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#b58138a3"
+    },
+    {
+      "q": "Choose the correct report of 'Give me the book.'",
+      "v": [
+        "He told me to give him the book.",
+        "He told me give him the book.",
+        "He said me to give the book.",
+        "He told to give him the book."
+      ],
+      "t": 0,
+      "izoh": "tell + object + to.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#6fcb986f"
+    },
+    {
+      "q": "'I haven't decided yet,' he said. -> He said he ___ yet.",
+      "v": [
+        "hadn't decided",
+        "hasn't decided",
+        "didn't decide",
+        "wouldn't decide"
+      ],
+      "t": 0,
+      "izoh": "Present perfect -> past perfect.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#74d712d4"
+    },
+    {
+      "q": "'How are you feeling now?' she asked. -> She asked how I ___ then.",
+      "v": [
+        "was feeling",
+        "am feeling",
+        "feel",
+        "did feel"
+      ],
+      "t": 0,
+      "izoh": "now -> then, tartib o'zgaradi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#b65f6ef3"
+    },
+    {
+      "q": "'I might be late,' he warned. -> He warned that he ___ be late.",
+      "v": [
+        "might",
+        "may",
+        "would",
+        "could might"
+      ],
+      "t": 0,
+      "izoh": "might backshift qilinmaydi.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#98db1921"
+    },
+    {
+      "q": "Find the mistake: 'He told me that he will help me tomorrow.'",
+      "v": [
+        "will help",
+        "told me",
+        "that",
+        "No mistake"
+      ],
+      "t": 0,
+      "izoh": "will -> would (backshift).",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#a69408cf"
+    },
+    {
+      "q": "'Do not open this until Christmas,' she wrote. -> She wrote ___ open it until Christmas.",
+      "v": [
+        "not to",
+        "to not",
+        "don't",
+        "not"
+      ],
+      "t": 0,
+      "izoh": "not to + fel.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#e03c5f62"
+    },
+    {
+      "q": "'I was born in Samarkand,' he said. -> He said he ___ born in Samarkand.",
+      "v": [
+        "had been",
+        "was",
+        "is",
+        "has been"
+      ],
+      "t": 0,
+      "izoh": "Past simple -> past perfect.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#a036e874"
+    },
+    {
+      "q": "'Whose bag is this?' the guard asked. -> The guard asked whose bag ___.",
+      "v": [
+        "that was",
+        "was that",
+        "is this",
+        "this is"
+      ],
+      "t": 0,
+      "izoh": "Darak tartibi, this -> that.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#ab01926e"
+    },
+    {
+      "q": "'We won't be there on time,' they admitted. -> They admitted they ___ be there on time.",
+      "v": [
+        "wouldn't",
+        "won't",
+        "weren't",
+        "hadn't"
+      ],
+      "t": 0,
+      "izoh": "won't -> wouldn't.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#d265f672"
+    },
+    {
+      "q": "Choose the correct report of 'Let's start now.'",
+      "v": [
+        "He suggested starting then.",
+        "He suggested to start now.",
+        "He suggested that start now.",
+        "He told starting then."
+      ],
+      "t": 0,
+      "izoh": "suggest + -ing, now -> then.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#58e8d950"
+    },
+    {
+      "q": "'I have to see a doctor,' she said. -> She said she ___ see a doctor.",
+      "v": [
+        "had to",
+        "have to",
+        "must to",
+        "had had to"
+      ],
+      "t": 0,
+      "izoh": "have to -> had to.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#717ad928"
+    },
+    {
+      "q": "'Did you finish the project?' he asked. -> He asked ___ I had finished the project.",
+      "v": [
+        "whether",
+        "that",
+        "what",
+        "did"
+      ],
+      "t": 0,
+      "izoh": "Yes/no savol -> whether/if, past perfect.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#076b6d6a"
+    },
+    {
+      "q": "'These flowers are for you,' he said. -> He said ___ flowers were for me.",
+      "v": [
+        "those",
+        "these",
+        "that",
+        "this"
+      ],
+      "t": 0,
+      "izoh": "these -> those.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#e2a0a8fb"
+    },
+    {
+      "q": "Find the mistake: 'She said me not to be late.'",
+      "v": [
+        "said me",
+        "not to be",
+        "late",
+        "No mistake"
+      ],
+      "t": 0,
+      "izoh": "say + me noto'g'ri; told me.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#2daf07d1"
+    },
+    {
+      "q": "'I've been trying to reach you all day,' she said. -> She said she ___ to reach me all day.",
+      "v": [
+        "had been trying",
+        "has been trying",
+        "was trying",
+        "tried"
+      ],
+      "t": 0,
+      "izoh": "Present perfect cont -> past perfect cont.",
+      "qiy": "qiyin",
+      "id": "ing_b2_m5#7b0c554b"
+    }
+  ]
+}

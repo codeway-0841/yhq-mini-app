@@ -1,0 +1,1306 @@
+{
+  "nom": "Health & body (Sog'liq)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "'headache' so'zining ma'nosi nima?",
+      "v": [
+        "dori",
+        "og'rimoq",
+        "harorat",
+        "bosh og'rig'i"
+      ],
+      "t": 3,
+      "izoh": "Headache = boshning og'rishi.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#e123f812"
+    },
+    {
+      "q": "'stomachache' so'zining ma'nosi nima?",
+      "v": [
+        "tabletka",
+        "zirqirash",
+        "qorin og'rig'i",
+        "hamshira"
+      ],
+      "t": 2,
+      "izoh": "Stomachache = oshqozon/qorin og'rig'i.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#b5e23e4f"
+    },
+    {
+      "q": "'toothache' so'zining ma'nosi nima?",
+      "v": [
+        "dori",
+        "tish og'rig'i",
+        "isitma",
+        "shifokor"
+      ],
+      "t": 1,
+      "izoh": "Toothache = tishning og'rishi.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#b5613c1d"
+    },
+    {
+      "q": "'fever' so'zining ma'nosi nima?",
+      "v": [
+        "dori",
+        "dori ichmoq",
+        "og'rimoq",
+        "isitma"
+      ],
+      "t": 3,
+      "izoh": "Fever = tana harorati baland, isitma.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#10eea650"
+    },
+    {
+      "q": "'cold' so'zining ma'nosi nima?",
+      "v": [
+        "shamollash",
+        "dori",
+        "sog'lom",
+        "kasal"
+      ],
+      "t": 0,
+      "izoh": "Cold = yengil shamollash kasalligi.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#cbd81884"
+    },
+    {
+      "q": "'cough' so'zining ma'nosi nima?",
+      "v": [
+        "hamshira",
+        "dori",
+        "yo'tal",
+        "isitma"
+      ],
+      "t": 2,
+      "izoh": "Cough = yo'tal.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#6af5a74f"
+    },
+    {
+      "q": "'flu' so'zining ma'nosi nima?",
+      "v": [
+        "tabletka",
+        "harorat",
+        "kasal",
+        "gripp"
+      ],
+      "t": 3,
+      "izoh": "Flu = gripp, jiddiyroq shamollash.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#bf2d95d9"
+    },
+    {
+      "q": "'medicine' so'zining ma'nosi nima?",
+      "v": [
+        "dori",
+        "sog'lom",
+        "og'riq",
+        "bosh og'rig'i"
+      ],
+      "t": 0,
+      "izoh": "Medicine = umumiy ma'noda dori.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#421f1c15"
+    },
+    {
+      "q": "'pill' so'zining ma'nosi nima?",
+      "v": [
+        "tabletka",
+        "bosh og'rig'i",
+        "og'rimoq",
+        "harorat"
+      ],
+      "t": 0,
+      "izoh": "Pill = qattiq dumaloq dori, tabletka.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#f0f87240"
+    },
+    {
+      "q": "'doctor' so'zining ma'nosi nima?",
+      "v": [
+        "qorin og'rig'i",
+        "shamollash",
+        "harorat",
+        "shifokor"
+      ],
+      "t": 3,
+      "izoh": "Doctor = shifokor, davolovchi mutaxassis.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#081dd3b5"
+    },
+    {
+      "q": "'nurse' so'zining ma'nosi nima?",
+      "v": [
+        "tish og'rig'i",
+        "shamollash",
+        "hamshira",
+        "kasal"
+      ],
+      "t": 2,
+      "izoh": "Nurse = hamshira, shifokorga yordam beradi.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#be2dcfb9"
+    },
+    {
+      "q": "'hospital' so'zining ma'nosi nima?",
+      "v": [
+        "zirqirash",
+        "kasalxona",
+        "yo'tal",
+        "o'zini yaxshi his qilmoq"
+      ],
+      "t": 1,
+      "izoh": "Hospital = kasalxona.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#0dd3e697"
+    },
+    {
+      "q": "'hurt' so'zining ma'nosi nima?",
+      "v": [
+        "tish og'rig'i",
+        "harorat",
+        "og'rimoq",
+        "qorin og'rig'i"
+      ],
+      "t": 2,
+      "izoh": "Hurt = og'rimoq yoki lat yemoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#72f16951"
+    },
+    {
+      "q": "'sick' so'zining ma'nosi nima?",
+      "v": [
+        "shamollash",
+        "kasal",
+        "isitma",
+        "og'riq"
+      ],
+      "t": 1,
+      "izoh": "Sick = kasal, betob.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#50f4c547"
+    },
+    {
+      "q": "'healthy' so'zining ma'nosi nima?",
+      "v": [
+        "shamollash",
+        "sog'lom",
+        "tish og'rig'i",
+        "harorat"
+      ],
+      "t": 1,
+      "izoh": "Healthy = sog'lom, kasal emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#3db6d77e"
+    },
+    {
+      "q": "'pain' so'zining ma'nosi nima?",
+      "v": [
+        "qorin og'rig'i",
+        "kasalxona",
+        "tish og'rig'i",
+        "og'riq"
+      ],
+      "t": 3,
+      "izoh": "Pain = og'riq hissi.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#7865fc9c"
+    },
+    {
+      "q": "'ache' so'zining ma'nosi nima?",
+      "v": [
+        "zirqirash",
+        "hamshira",
+        "tabletka",
+        "tish og'rig'i"
+      ],
+      "t": 0,
+      "izoh": "Ache = uzoq davomli sekin og'riq, zirqirash.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#4fbad259"
+    },
+    {
+      "q": "'feel better' so'zining ma'nosi nima?",
+      "v": [
+        "o'zini yaxshi his qilmoq",
+        "gripp",
+        "kasal",
+        "sog'lom"
+      ],
+      "t": 0,
+      "izoh": "Feel better = sog'ayib, o'zini yaxshi his qilmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#7b554d54"
+    },
+    {
+      "q": "'take medicine' so'zining ma'nosi nima?",
+      "v": [
+        "dori ichmoq",
+        "tabletka",
+        "dori",
+        "isitma"
+      ],
+      "t": 0,
+      "izoh": "Take medicine = dori qabul qilmoq/ichmoq.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#7c3bdd9d"
+    },
+    {
+      "q": "'temperature' so'zining ma'nosi nima?",
+      "v": [
+        "harorat",
+        "sog'lom",
+        "og'rimoq",
+        "qorin og'rig'i"
+      ],
+      "t": 0,
+      "izoh": "Temperature = tana harorati.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#01e2e4c6"
+    },
+    {
+      "q": "\"bosh og'rig'i\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "headache",
+        "pain",
+        "dentist",
+        "medicine"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob: headache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#9e18c144"
+    },
+    {
+      "q": "\"qorin og'rig'i\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "cough",
+        "stomachache",
+        "nurse",
+        "hurt"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: stomachache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#7b5c0fd2"
+    },
+    {
+      "q": "\"tish og'rig'i\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "toothache",
+        "clinic",
+        "injection",
+        "stomachache"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob: toothache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#033fd38e"
+    },
+    {
+      "q": "\"isitma\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "dentist",
+        "cough",
+        "fever",
+        "medicine"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: fever.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#cb5e67c1"
+    },
+    {
+      "q": "\"shamollash\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "hurt",
+        "fever",
+        "headache",
+        "cold"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: cold.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#b113dd13"
+    },
+    {
+      "q": "\"yo'tal\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "ache",
+        "cough",
+        "dentist",
+        "hurt"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: cough.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#e4a54329"
+    },
+    {
+      "q": "\"gripp\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "feel better",
+        "hospital",
+        "flu",
+        "nurse"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: flu.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#6ad46f0c"
+    },
+    {
+      "q": "\"dori\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "flu",
+        "pill",
+        "ill",
+        "medicine"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: medicine.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#7bda3319"
+    },
+    {
+      "q": "\"tabletka\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "medicine",
+        "stomachache",
+        "pill",
+        "take medicine"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: pill.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#928a49bc"
+    },
+    {
+      "q": "\"shifokor\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "dentist",
+        "healthy",
+        "doctor",
+        "stomachache"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: doctor.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#6006e962"
+    },
+    {
+      "q": "\"hamshira\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "healthy",
+        "cough syrup",
+        "nurse",
+        "stomachache"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: nurse.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#65e4ca1a"
+    },
+    {
+      "q": "\"kasalxona\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "pill",
+        "healthy",
+        "hospital",
+        "dentist"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: hospital.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#38194fac"
+    },
+    {
+      "q": "\"og'rimoq\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "bandage",
+        "hurt",
+        "pill",
+        "stomachache"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: hurt.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#1a946dd4"
+    },
+    {
+      "q": "\"kasal (betob)\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "nurse",
+        "healthy",
+        "sick",
+        "temperature"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: sick.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#c0f16097"
+    },
+    {
+      "q": "\"sog'lom\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "sick",
+        "healthy",
+        "bandage",
+        "fever"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob: healthy.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#7bc91a10"
+    },
+    {
+      "q": "\"og'riq\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "flu",
+        "clinic",
+        "pain",
+        "hospital"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: pain.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#ae6b44da"
+    },
+    {
+      "q": "\"zirqiraydigan og'riq\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "injection",
+        "clinic",
+        "ache",
+        "cough"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob: ache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#ca52a3a7"
+    },
+    {
+      "q": "\"o'zini yaxshi his qilmoq\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "feel better",
+        "pain",
+        "stomachache",
+        "flu"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob: feel better.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#e576c455"
+    },
+    {
+      "q": "\"dori ichmoq\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "pain",
+        "cold",
+        "nurse",
+        "take medicine"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob: take medicine.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#9cfb04db"
+    },
+    {
+      "q": "\"tana harorati\" — bu inglizcha qaysi so'z?",
+      "v": [
+        "temperature",
+        "ill",
+        "stomachache",
+        "fever"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob: temperature.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#6b6f5550"
+    },
+    {
+      "q": "Which word means: \"A pain in your head\"?",
+      "v": [
+        "toothache",
+        "cough",
+        "headache",
+        "cold"
+      ],
+      "t": 2,
+      "izoh": "Boshda og'riq bo'lsa — headache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#5421647b"
+    },
+    {
+      "q": "Which word means: \"A pain in your tooth\"?",
+      "v": [
+        "take medicine",
+        "toothache",
+        "cold",
+        "nurse"
+      ],
+      "t": 1,
+      "izoh": "Tishda og'riq — toothache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#aa2b7eda"
+    },
+    {
+      "q": "Which word means: \"A pain in your stomach\"?",
+      "v": [
+        "sick",
+        "feel better",
+        "stomachache",
+        "cough"
+      ],
+      "t": 2,
+      "izoh": "Qorinda og'riq — stomachache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#03d38c14"
+    },
+    {
+      "q": "Which word means: \"A person who examines and treats sick people\"?",
+      "v": [
+        "sick",
+        "medicine",
+        "doctor",
+        "nurse"
+      ],
+      "t": 2,
+      "izoh": "Bemorni davolaydigan mutaxassis — doctor.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#c57845b9"
+    },
+    {
+      "q": "Which word means: \"A person who helps the doctor and cares for patients\"?",
+      "v": [
+        "flu",
+        "cold",
+        "nurse",
+        "ill"
+      ],
+      "t": 2,
+      "izoh": "Shifokorga yordam beruvchi — nurse.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#9b939758"
+    },
+    {
+      "q": "Which word means: \"A place where sick people go to get help\"?",
+      "v": [
+        "pill",
+        "flu",
+        "hospital",
+        "pain"
+      ],
+      "t": 2,
+      "izoh": "Kasallar boradigan joy — hospital.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#0175e1ff"
+    },
+    {
+      "q": "Which word means: \"When your body temperature is very high\"?",
+      "v": [
+        "fever",
+        "pill",
+        "stomachache",
+        "nurse"
+      ],
+      "t": 0,
+      "izoh": "Harorat baland bo'lsa — fever.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#5b783def"
+    },
+    {
+      "q": "Which word means: \"A small hard piece of medicine you swallow\"?",
+      "v": [
+        "cold",
+        "doctor",
+        "hurt",
+        "pill"
+      ],
+      "t": 3,
+      "izoh": "Yutiladigan qattiq dori — pill.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#8c8908e8"
+    },
+    {
+      "q": "Which word means: \"A common illness with a runny nose and sneezing\"?",
+      "v": [
+        "healthy",
+        "nurse",
+        "cold",
+        "stomachache"
+      ],
+      "t": 2,
+      "izoh": "Burun oqishi bilan yengil kasallik — cold.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#e8cd2e1c"
+    },
+    {
+      "q": "Which word means: \"Something you take to feel better when you are ill\"?",
+      "v": [
+        "stomachache",
+        "pain",
+        "hurt",
+        "medicine"
+      ],
+      "t": 3,
+      "izoh": "Sog'ayish uchun qabul qilinadigan narsa — medicine.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#1d9bc8da"
+    },
+    {
+      "q": "Which word means: \"Not sick, in good condition\"?",
+      "v": [
+        "headache",
+        "medicine",
+        "stomachache",
+        "healthy"
+      ],
+      "t": 3,
+      "izoh": "Kasal emas, yaxshi holatda — healthy.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#1959f44c"
+    },
+    {
+      "q": "Which word means: \"To make a loud sound from your throat when ill\"?",
+      "v": [
+        "sick",
+        "fever",
+        "flu",
+        "cough"
+      ],
+      "t": 3,
+      "izoh": "Tomoqdan chiqadigan tovush — cough.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#d97ab026"
+    },
+    {
+      "q": "Which word means: \"An illness like a strong cold with fever and body pain\"?",
+      "v": [
+        "flu",
+        "doctor",
+        "hurt",
+        "medicine"
+      ],
+      "t": 0,
+      "izoh": "Kuchli shamollash, isitma bilan — flu.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#e4a241db"
+    },
+    {
+      "q": "Which word means: \"A feeling that a part of your body is not comfortable and it hurts\"?",
+      "v": [
+        "pain",
+        "ache",
+        "cough",
+        "healthy"
+      ],
+      "t": 0,
+      "izoh": "Og'riq hissi — pain.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#2cd17f20"
+    },
+    {
+      "q": "Which word means: \"The measure of how hot your body is\"?",
+      "v": [
+        "stomachache",
+        "temperature",
+        "feel better",
+        "pain"
+      ],
+      "t": 1,
+      "izoh": "Tana issiqligining o'lchovi — temperature.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#b868dacf"
+    },
+    {
+      "q": "Which word means: \"To feel physical pain in a part of the body\"?",
+      "v": [
+        "pain",
+        "doctor",
+        "hurt",
+        "healthy"
+      ],
+      "t": 2,
+      "izoh": "Biror joyning og'rishi — hurt.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#ea4c637d"
+    },
+    {
+      "q": "Which word means: \"A continuous, dull pain, for example in a tooth or head\"?",
+      "v": [
+        "healthy",
+        "ache",
+        "cold",
+        "hospital"
+      ],
+      "t": 1,
+      "izoh": "Uzoq, kuchsiz og'riq — ache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#96e4749c"
+    },
+    {
+      "q": "Which word means: \"Feeling unwell, not healthy\"?",
+      "v": [
+        "hurt",
+        "fever",
+        "toothache",
+        "ill"
+      ],
+      "t": 3,
+      "izoh": "Betob, sog'lom emas — ill.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#ad1d01e5"
+    },
+    {
+      "q": "Which word means: \"To swallow a pill or liquid medicine\"?",
+      "v": [
+        "pill",
+        "hospital",
+        "ill",
+        "take medicine"
+      ],
+      "t": 3,
+      "izoh": "Dori qabul qilish — take medicine.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#272433c1"
+    },
+    {
+      "q": "Which word means: \"To start feeling well again after being sick\"?",
+      "v": [
+        "ache",
+        "medicine",
+        "temperature",
+        "feel better"
+      ],
+      "t": 3,
+      "izoh": "Kasallikdan keyin yaxshilanish — feel better.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#d9df058e"
+    },
+    {
+      "q": "I have a bad ___, so I can't read. My head really hurts.",
+      "v": [
+        "nurse",
+        "headache",
+        "discount",
+        "receipt"
+      ],
+      "t": 1,
+      "izoh": "Bosh og'riyapti — headache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#adc705a6"
+    },
+    {
+      "q": "She ate too much and now she has a ___.",
+      "v": [
+        "fever",
+        "stomachache",
+        "medicine",
+        "doctor"
+      ],
+      "t": 1,
+      "izoh": "Qorin og'rig'i — stomachache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#812a0a83"
+    },
+    {
+      "q": "My ___ hurts, I need to see a dentist.",
+      "v": [
+        "cold",
+        "cough",
+        "hospital",
+        "toothache"
+      ],
+      "t": 3,
+      "izoh": "Tish og'rig'i — toothache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#5b47881d"
+    },
+    {
+      "q": "His body is very hot; he has a high ___.",
+      "v": [
+        "change",
+        "fever",
+        "nurse",
+        "pill"
+      ],
+      "t": 1,
+      "izoh": "Baland harorat — fever.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#22a72197"
+    },
+    {
+      "q": "It's winter and I have a runny nose. I think I have a ___.",
+      "v": [
+        "doctor",
+        "cold",
+        "size",
+        "pain"
+      ],
+      "t": 1,
+      "izoh": "Shamollash — cold.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#812ed072"
+    },
+    {
+      "q": "He can't stop making noise from his throat; he has a bad ___.",
+      "v": [
+        "hospital",
+        "medicine",
+        "healthy",
+        "cough"
+      ],
+      "t": 3,
+      "izoh": "Yo'tal — cough.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#b64d9ea5"
+    },
+    {
+      "q": "Many people get the ___ in winter and stay in bed with a fever.",
+      "v": [
+        "price",
+        "pill",
+        "nurse",
+        "flu"
+      ],
+      "t": 3,
+      "izoh": "Gripp — flu.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#f62a433a"
+    },
+    {
+      "q": "The doctor gave me some ___ to take twice a day.",
+      "v": [
+        "customer",
+        "toothache",
+        "medicine",
+        "hospital"
+      ],
+      "t": 2,
+      "izoh": "Dori — medicine.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#16e86f98"
+    },
+    {
+      "q": "Take one ___ with water after breakfast.",
+      "v": [
+        "pill",
+        "fever",
+        "cold",
+        "nurse"
+      ],
+      "t": 0,
+      "izoh": "Bitta tabletka — pill.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#1f0eec88"
+    },
+    {
+      "q": "If you feel very sick, you should see a ___.",
+      "v": [
+        "size",
+        "cough",
+        "doctor",
+        "price"
+      ],
+      "t": 2,
+      "izoh": "Shifokorni ko'rish — doctor.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#b09eb5fc"
+    },
+    {
+      "q": "The ___ helped the patient and gave him water.",
+      "v": [
+        "nurse",
+        "pain",
+        "flu",
+        "receipt"
+      ],
+      "t": 0,
+      "izoh": "Hamshira — nurse.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#1d3832c9"
+    },
+    {
+      "q": "They took the injured man to the ___ in an ambulance.",
+      "v": [
+        "discount",
+        "pill",
+        "hospital",
+        "cold"
+      ],
+      "t": 2,
+      "izoh": "Kasalxona — hospital.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#28e0e020"
+    },
+    {
+      "q": "Be careful! Don't ___ yourself with that knife.",
+      "v": [
+        "pay",
+        "spend",
+        "hurt",
+        "save"
+      ],
+      "t": 2,
+      "izoh": "Lat yemaslik — hurt yourself.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#5cc24efe"
+    },
+    {
+      "q": "I feel ___ today, so I stayed at home from school.",
+      "v": [
+        "expensive",
+        "sick",
+        "healthy",
+        "cheap"
+      ],
+      "t": 1,
+      "izoh": "Kasal his qilmoq — sick.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#ca4eedb7"
+    },
+    {
+      "q": "She eats fruit and exercises, so she is very ___.",
+      "v": [
+        "cheap",
+        "sick",
+        "expensive",
+        "healthy"
+      ],
+      "t": 3,
+      "izoh": "Sog'lom — healthy.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#1381f990"
+    },
+    {
+      "q": "After I took the medicine, the ___ in my leg went away.",
+      "v": [
+        "size",
+        "pain",
+        "change",
+        "price"
+      ],
+      "t": 1,
+      "izoh": "Og'riq — pain.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#c24174cb"
+    },
+    {
+      "q": "The nurse checked my ___ with a thermometer.",
+      "v": [
+        "temperature",
+        "cash",
+        "discount",
+        "receipt"
+      ],
+      "t": 0,
+      "izoh": "Haroratni o'lchash — temperature.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#86a43fd6"
+    },
+    {
+      "q": "Please ___ your medicine three times a day.",
+      "v": [
+        "spend",
+        "take",
+        "sell",
+        "buy"
+      ],
+      "t": 1,
+      "izoh": "Dori ichmoq: take medicine.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#6379a94e"
+    },
+    {
+      "q": "After a week of rest, I started to feel ___.",
+      "v": [
+        "longer",
+        "cheaper",
+        "better",
+        "bigger"
+      ],
+      "t": 2,
+      "izoh": "Yaxshilanmoq — feel better.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#9ddeb706"
+    },
+    {
+      "q": "My back has a dull ___ after sitting all day.",
+      "v": [
+        "ache",
+        "sale",
+        "cash",
+        "size"
+      ],
+      "t": 0,
+      "izoh": "Zirqirash — ache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#fcafa835"
+    },
+    {
+      "q": "Your friend says: 'My temperature is 39 and I feel very hot.' What does he have?",
+      "v": [
+        "change",
+        "a discount",
+        "a fever",
+        "a receipt"
+      ],
+      "t": 2,
+      "izoh": "Baland harorat — fever.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#6a353b15"
+    },
+    {
+      "q": "A child ate a lot of candy and now cries: 'My stomach hurts!' What does she have?",
+      "v": [
+        "a stomachache",
+        "a cough",
+        "a headache",
+        "a cold"
+      ],
+      "t": 0,
+      "izoh": "Qorin og'rig'i — stomachache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#43e2c78c"
+    },
+    {
+      "q": "You cannot stop coughing and your throat is sore. What should you buy?",
+      "v": [
+        "a receipt",
+        "medicine",
+        "a refund",
+        "a size"
+      ],
+      "t": 1,
+      "izoh": "Dori olish kerak — medicine.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#3387267b"
+    },
+    {
+      "q": "Your tooth hurts a lot. Who should you see?",
+      "v": [
+        "a shop assistant",
+        "a cashier",
+        "a customer",
+        "a dentist"
+      ],
+      "t": 3,
+      "izoh": "Tish uchun — dentist.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#7ef6aadb"
+    },
+    {
+      "q": "You feel unwell and want a professional to check you. Where do you go?",
+      "v": [
+        "to the checkout",
+        "to the shop",
+        "to the hospital",
+        "to the sale"
+      ],
+      "t": 2,
+      "izoh": "Kasalxonaga borish.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#78f31f11"
+    },
+    {
+      "q": "Your head is pounding after a noisy day. You have...",
+      "v": [
+        "a headache",
+        "a discount",
+        "a size",
+        "a receipt"
+      ],
+      "t": 0,
+      "izoh": "Bosh og'rig'i — headache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#ea6fabdb"
+    },
+    {
+      "q": "The doctor writes something so you can buy the right pills. He gives you...",
+      "v": [
+        "change",
+        "a discount",
+        "a prescription",
+        "a refund"
+      ],
+      "t": 2,
+      "izoh": "Retsept — prescription (dori uchun).",
+      "qiy": "orta",
+      "id": "ing_a2_m19#1a74a59c"
+    },
+    {
+      "q": "You have a runny nose, you sneeze, but no high fever. You probably have...",
+      "v": [
+        "a stomachache",
+        "a toothache",
+        "a broken leg",
+        "a cold"
+      ],
+      "t": 3,
+      "izoh": "Yengil shamollash — cold.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#15cab939"
+    },
+    {
+      "q": "Grandpa exercises every day and never smokes. We can say he is...",
+      "v": [
+        "cheap",
+        "sick",
+        "expensive",
+        "healthy"
+      ],
+      "t": 3,
+      "izoh": "Sog'lom — healthy.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#96cdfdd7"
+    },
+    {
+      "q": "After three days of rest and medicine, Ali says: 'I ___ now.'",
+      "v": [
+        "feel better",
+        "am expensive",
+        "am cheaper",
+        "feel worse"
+      ],
+      "t": 0,
+      "izoh": "Yaxshilandi — feel better.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#bacb9e73"
+    },
+    {
+      "q": "The nurse gives you a small pill and says: 'Please ___ this now.'",
+      "v": [
+        "save it",
+        "sell it",
+        "spend it",
+        "take it"
+      ],
+      "t": 3,
+      "izoh": "Dorini ichish — take it.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#6c4c4473"
+    },
+    {
+      "q": "A woman fell and her arm is very painful. Her arm...",
+      "v": [
+        "costs",
+        "saves",
+        "pays",
+        "hurts"
+      ],
+      "t": 3,
+      "izoh": "Qo'li og'riyapti — hurts.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#e4739038"
+    },
+    {
+      "q": "You want to know how hot your body is. You use a...",
+      "v": [
+        "thermometer",
+        "wallet",
+        "receipt",
+        "calculator"
+      ],
+      "t": 0,
+      "izoh": "Harorat o'lchash asbobi — thermometer.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#7eed0f74"
+    },
+    {
+      "q": "Every winter many students miss school because of the ___.",
+      "v": [
+        "sale",
+        "price",
+        "refund",
+        "flu"
+      ],
+      "t": 3,
+      "izoh": "Gripp — flu.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#76f89eca"
+    },
+    {
+      "q": "The person in white who helps patients but is not the doctor is the...",
+      "v": [
+        "cashier",
+        "nurse",
+        "customer",
+        "teacher"
+      ],
+      "t": 1,
+      "izoh": "Hamshira — nurse.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#b2c16e5f"
+    },
+    {
+      "q": "You have had a slow, dull pain in your knee for a week. You have a knee...",
+      "v": [
+        "price",
+        "ache",
+        "size",
+        "change"
+      ],
+      "t": 1,
+      "izoh": "Zirqiraydigan og'riq — ache.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#407caf5d"
+    },
+    {
+      "q": "Your little brother is coughing badly at night. He has a bad...",
+      "v": [
+        "receipt",
+        "cough",
+        "size",
+        "discount"
+      ],
+      "t": 1,
+      "izoh": "Yo'tal — cough.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#db2f5311"
+    },
+    {
+      "q": "You feel dizzy and weak and cannot go to work. You are...",
+      "v": [
+        "expensive",
+        "healthy",
+        "cheap",
+        "ill"
+      ],
+      "t": 3,
+      "izoh": "Betob — ill.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#1cca3437"
+    },
+    {
+      "q": "The doctor says: 'Rest and drink water, and ___ twice a day.'",
+      "v": [
+        "take medicine",
+        "try on clothes",
+        "get a refund",
+        "spend money"
+      ],
+      "t": 0,
+      "izoh": "Kuniga ikki marta dori ichish.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#4b7b8818"
+    },
+    {
+      "q": "Sara wants no pain in her head, so she takes one...",
+      "v": [
+        "refund",
+        "receipt",
+        "pill",
+        "size"
+      ],
+      "t": 2,
+      "izoh": "Tabletka — pill.",
+      "qiy": "orta",
+      "id": "ing_a2_m19#f446b387"
+    }
+  ]
+}

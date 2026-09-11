@@ -1,0 +1,1609 @@
+{
+  "nom": "Uchburchak: turlari, burchaklari va tomonlari",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Geodezist Rustam uchburchak shaklidagi yer uchastkasini o'lchayotib, uning ikki burchagini 47° va 68° deb qayd etdi. Uchastkaning uchinchi burchagi necha gradusga teng?",
+      "v": [
+        "65°",
+        "115°",
+        "133°",
+        "112°"
+      ],
+      "t": 0,
+      "izoh": "Uchburchak burchaklari yig'indisi 180° ga teng. Ma'lum ikki burchak yig'indisi 47° + 68° = 115°. Demak uchinchi burchak 180° − 115° = 65°. 115° — bu faqat ikki burchakning yig'indisi, javob emas; 133° va 112° esa bitta burchakni hisobga olmaslikdan chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='188.8,76.7 52,223.3 248,223.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='68.4,205.8 69.4,206.7 70.3,207.8 71.2,208.9 72,210 72.7,211.2 73.4,212.5 74,213.7 74.5,215 75,216.4 75.3,217.7 75.6,219.1 75.8,220.5 76,221.9 76,223.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='88.7' y='211.4' font-size='13' fill='%23334155' text-anchor='middle'%3E47°%3C/text%3E%3Cpolyline points='224,223.3 224.1,221.3 224.3,219.2 224.8,217.3 225.4,215.3 226.1,213.4 227,211.6 228.1,209.9 229.3,208.2 230.7,206.7 232.1,205.3 233.7,204 235.4,202.9 237.2,201.9 239,201' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='214.8' y='204.9' font-size='13' fill='%23334155' text-anchor='middle'%3E68°%3C/text%3E%3Cpolyline points='172.4,94.2 173.9,95.5 175.5,96.7 177.1,97.7 178.9,98.5 180.7,99.3 182.5,99.9 184.4,100.3 186.3,100.6 188.3,100.7 190.2,100.7 192.2,100.5 194.1,100.1 196,99.6 197.8,99' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='181.5' y='120' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='192.6' y='66.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='233.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='234.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchinchi-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#b60d7616"
+    },
+    {
+      "q": "Sayyohlik chodirining old yuzasi uchburchak shaklida bo'lib, uning yerga tegib turgan ikki burchagi 72° va 55° ga teng. Chodir uchidagi burchak necha gradus?",
+      "v": [
+        "127°",
+        "53°",
+        "108°",
+        "125°"
+      ],
+      "t": 1,
+      "izoh": "Burchaklar yig'indisi 180° bo'lgani uchun avval berilganlarni qo'shamiz: 72° + 55° = 127°. Chodir uchidagi burchak 180° − 127° = 53°. 108° va 125° natijalari bitta burchakni tashlab, faqat 180° − 72° yoki 180° − 55° ni hisoblaganda paydo bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='114.1,54.4 52,245.6 248,245.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='59.4,222.8 61.4,223.5 63.4,224.5 65.2,225.6 67,226.8 68.6,228.3 70.1,229.8 71.4,231.5 72.6,233.3 73.6,235.2 74.5,237.2 75.1,239.2 75.6,241.3 75.9,243.4 76,245.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='84.4' y='226.1' font-size='13' fill='%23334155' text-anchor='middle'%3E72°%3C/text%3E%3Cpolyline points='224,245.6 224.1,244 224.2,242.3 224.5,240.7 224.9,239.1 225.4,237.5 226,236 226.7,234.5 227.5,233.1 228.4,231.7 229.4,230.4 230.5,229.2 231.7,228 232.9,226.9 234.2,225.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='212.5' y='231.1' font-size='13' fill='%23334155' text-anchor='middle'%3E55°%3C/text%3E%3Cpolyline points='106.7,77.2 108.2,77.7 109.8,78 111.3,78.2 112.9,78.4 114.5,78.4 116.1,78.3 117.6,78.1 119.2,77.8 120.7,77.5 122.3,77 123.7,76.4 125.2,75.7 126.5,74.9 127.9,74.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='120' y='98' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='111.3' y='43.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.9' y='258.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='257.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchinchi-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#f337b364"
+    },
+    {
+      "q": "Uchburchakning bir burchagi 34°, ikkinchi burchagi esa birinchisidan 3 marta katta. Shu uchburchakning uchinchi burchagi necha gradusga teng?",
+      "v": [
+        "136°",
+        "78°",
+        "44°",
+        "112°"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi burchak 34° · 3 = 102°. Ma'lum ikki burchak yig'indisi 34° + 102° = 136°. Uchinchi burchak 180° − 136° = 44°. 78° natijasi 180° − 102° ni hisoblab, birinchi burchakni unutganda chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='248,83.9 52,216.1 219.9,216.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='71.9,202.7 72.4,203.5 73,204.4 73.4,205.3 73.9,206.2 74.3,207.2 74.6,208.1 75,209.1 75.2,210.1 75.5,211.1 75.7,212.1 75.8,213.1 75.9,214.1 76,215.1 76,216.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='90.3' y='208.4' font-size='13' fill='%23334155' text-anchor='middle'%3E34°%3C/text%3E%3Cpolyline points='228.1,97.3 228.9,98.4 229.7,99.4 230.6,100.4 231.5,101.3 232.5,102.2 233.5,103 234.6,103.8 235.7,104.5 236.8,105.1 238,105.7 239.2,106.2 240.5,106.7 241.7,107.1 243,107.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='225.6' y='121.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='257.7' y='76.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.9' y='225.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='230.8' y='230.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchinchi-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#8c780ca2"
+    },
+    {
+      "q": "Maktab hovlisidagi gulzor uchburchak shaklida bo'lib, uning ikki burchagi 38° va 47° ga teng. Gulzorning eng katta burchagi necha gradus?",
+      "v": [
+        "85°",
+        "47°",
+        "133°",
+        "95°"
+      ],
+      "t": 3,
+      "izoh": "Avval uchinchi burchakni topamiz: 180° − 38° − 47° = 95°. Endi uchala burchakni taqqoslaymiz: 38°, 47° va 95°. Eng kattasi 95°, ya'ni gulzor o'tmas burchakli uchburchak shaklida. 85° — berilgan ikki burchakning yig'indisi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='165.4,105.7 52,194.3 248,194.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='70.9,179.5 71.6,180.4 72.2,181.4 72.8,182.4 73.4,183.4 73.9,184.4 74.3,185.4 74.7,186.5 75,187.6 75.3,188.7 75.6,189.8 75.8,190.9 75.9,192 76,193.2 76,194.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='89.8' y='185.3' font-size='13' fill='%23334155' text-anchor='middle'%3E38°%3C/text%3E%3Cpolyline points='224,194.3 224,192.9 224.2,191.5 224.4,190.1 224.7,188.7 225,187.4 225.5,186 226,184.7 226.6,183.5 227.3,182.2 228,181 228.8,179.9 229.7,178.8 230.6,177.7 231.6,176.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='211.3' y='182.3' font-size='13' fill='%23334155' text-anchor='middle'%3E47°%3C/text%3E%3Ctext x='168' y='94.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.6' y='202.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.3' y='202.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchinchi-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#6cdcae0b"
+    },
+    {
+      "q": "Uchburchak shaklidagi yer maydonining burchaklari 2 : 3 : 7 nisbatda joylashgan. Shu maydonning eng kichik burchagi necha gradusga teng?",
+      "v": [
+        "30°",
+        "15°",
+        "105°",
+        "45°"
+      ],
+      "t": 0,
+      "izoh": "Burchaklarni 2x, 3x va 7x deb belgilaymiz. Ularning yig'indisi 12x = 180°, bundan x = 15°. Eng kichik burchak 2x = 30°. 15° — bu bo'lakning o'zi, burchak emas; 105° esa eng katta burchak, 45° esa o'rtadagisi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='176.3,114.1 52,185.9 248,185.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='155.5,126.1 157.2,128.7 159.3,131.1 161.6,133.2 164.3,134.9 167.1,136.3 170,137.3 173.1,137.9 176.3,138.1 179.4,137.9 182.5,137.3 185.4,136.3 188.3,134.9 190.9,133.2 193.2,131.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='171' y='157.8' font-size='13' fill='%23334155' text-anchor='middle'%3E7x%3C/text%3E%3Cpolyline points='76,185.9 76,185 75.9,184.1 75.8,183.2 75.7,182.3 75.6,181.4 75.4,180.5 75.2,179.7 74.9,178.8 74.7,177.9 74.3,177.1 74,176.3 73.6,175.5 73.2,174.7 72.8,173.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='90.6' y='179.5' font-size='13' fill='%23334155' text-anchor='middle'%3E2x = ?%3C/text%3E%3Cpolyline points='231,168.9 230.1,169.9 229.2,170.9 228.4,172 227.7,173.1 227,174.3 226.4,175.5 225.8,176.7 225.3,177.9 224.9,179.2 224.6,180.5 224.3,181.9 224.2,183.2 224,184.5 224,185.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='211' y='174.6' font-size='13' fill='%23334155' text-anchor='middle'%3E3x%3C/text%3E%3Ctext x='181.4' y='104' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.4' y='193.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.5' y='193.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-nisbati",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#35f4cf1b"
+    },
+    {
+      "q": "Uchburchakning ichki burchaklari 1 : 2 : 3 nisbatda berilgan bo'lsa, bu uchburchak qaysi turga kiradi?",
+      "v": [
+        "O'tkir burchakli",
+        "To'g'ri burchakli",
+        "O'tmas burchakli",
+        "Teng tomonli"
+      ],
+      "t": 1,
+      "izoh": "Burchaklar x, 2x va 3x ko'rinishida. Yig'indisi 6x = 180°, demak x = 30°. Burchaklar 30°, 60° va 90° bo'ladi. Ichida aynan 90° li burchak bor, shuning uchun uchburchak to'g'ri burchakli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-nisbati",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#93323e5b"
+    },
+    {
+      "q": "Uchburchakning ikki burchagi 5 : 7 nisbatda, uchinchi burchagi esa 60° ga teng. Shu uchburchakning eng katta burchagi nechaga teng?",
+      "v": [
+        "105°",
+        "75°",
+        "70°",
+        "60°"
+      ],
+      "t": 2,
+      "izoh": "Uchinchi burchak 60° bo'lgani uchun qolgan ikkisining yig'indisi 180° − 60° = 120°. Ularni 5x va 7x deb olamiz: 12x = 120°, bundan x = 10°. Burchaklar 50° va 70°, eng kattasi 70°. 105° — 180° ni to'g'ridan-to'g'ri 12 ga bo'lib yuborgandagi xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='188.7,68.5 52,231.5 248,231.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='173.3,86.9 174.7,88 176.2,89 177.8,89.9 179.4,90.6 181.1,91.3 182.8,91.8 184.5,92.1 186.3,92.4 188.1,92.5 189.9,92.5 191.7,92.3 193.5,92 195.2,91.6 196.9,91.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='181.8' y='111.9' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='192.2' y='57.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.5' y='242.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.6' y='243.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-nisbati",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#c05da795"
+    },
+    {
+      "q": "Uchburchakning burchaklari 4 : 7 : 9 nisbatda. Uning eng katta va eng kichik burchaklari orasidagi farq necha gradus?",
+      "v": [
+        "9°",
+        "36°",
+        "81°",
+        "45°"
+      ],
+      "t": 3,
+      "izoh": "Bo'laklar yig'indisi 20x = 180°, bundan x = 9°. Burchaklar 36°, 63° va 81° bo'ladi. Eng katta bilan eng kichik orasidagi farq 81° − 36° = 45°. 9° — bitta bo'lakning o'zi, 36° esa eng kichik burchak, 81° esa eng kattasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-nisbati",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#ca3db043"
+    },
+    {
+      "q": "Uchburchakning burchaklari x, x + 20° va x + 40° ko'rinishida berilgan. Shu uchburchakning eng katta burchagi necha gradus?",
+      "v": [
+        "80°",
+        "60°",
+        "40°",
+        "100°"
+      ],
+      "t": 0,
+      "izoh": "Burchaklar yig'indisini yozamiz: x + (x + 20°) + (x + 40°) = 3x + 60° = 180°. Bundan 3x = 120° va x = 40°. Burchaklar 40°, 60° va 80° bo'ladi, eng kattasi 80°. 40° — bu eng kichik burchak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='179.9,101.4 64,198.6 236,198.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='161.5,116.8 163.1,118.6 164.9,120.2 166.9,121.6 168.9,122.8 171.1,123.7 173.4,124.5 175.7,125 178.1,125.3 180.5,125.4 182.9,125.2 185.2,124.8 187.5,124.2 189.8,123.3 191.9,122.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='172.9' y='144.8' font-size='13' fill='%23334155' text-anchor='middle'%3Ex + 40°%3C/text%3E%3Cpolyline points='82.4,183.2 83.1,184.1 83.8,185.1 84.5,186.1 85.1,187.1 85.6,188.2 86.1,189.3 86.6,190.4 86.9,191.5 87.3,192.7 87.5,193.8 87.7,195 87.9,196.2 88,197.4 88,198.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='101.6' y='188.9' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Cpolyline points='212,198.6 212.1,196.8 212.3,195 212.6,193.3 213.1,191.5 213.7,189.8 214.4,188.2 215.2,186.6 216.2,185.1 217.2,183.6 218.4,182.3 219.7,181 221,179.8 222.5,178.8 224,177.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='201.4' y='182.6' font-size='13' fill='%23334155' text-anchor='middle'%3Ex + 20°%3C/text%3E%3Ctext x='184.3' y='91.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='49.8' y='207.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='249.8' y='208.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-algebraik",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#ae6a43d1"
+    },
+    {
+      "q": "Uchburchakda ikkinchi burchak birinchisidan 15° katta, uchinchi burchak esa birinchisidan 30° katta. Birinchi burchak necha gradus?",
+      "v": [
+        "60°",
+        "45°",
+        "75°",
+        "55°"
+      ],
+      "t": 1,
+      "izoh": "Birinchi burchakni x deb olamiz: x + (x + 15°) + (x + 30°) = 180°. Chap tomonni soddalashtiramiz: 3x + 45° = 180°, demak 3x = 135° va x = 45°. Qolgan burchaklar 60° va 75° bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='173,95.5 64,204.5 236,204.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='156,112.5 157.7,114 159.5,115.3 161.4,116.5 163.4,117.5 165.5,118.3 167.7,118.9 169.9,119.3 172.1,119.5 174.4,119.5 176.6,119.2 178.8,118.8 180.9,118.1 183,117.3 185,116.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='167.8' y='139.2' font-size='13' fill='%23334155' text-anchor='middle'%3Ex + 30°%3C/text%3E%3Cpolyline points='81,187.5 81.9,188.5 82.8,189.5 83.6,190.6 84.3,191.7 85,192.9 85.6,194.1 86.2,195.3 86.7,196.6 87.1,197.9 87.4,199.2 87.7,200.5 87.8,201.8 88,203.2 88,204.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='101' y='193.2' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Cpolyline points='212,204.5 212.1,202.7 212.3,200.9 212.6,199.2 213.1,197.4 213.7,195.7 214.4,194.1 215.2,192.5 216.2,191 217.2,189.5 218.4,188.2 219.7,186.9 221,185.7 222.5,184.7 224,183.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='201.4' y='188.5' font-size='13' fill='%23334155' text-anchor='middle'%3Ex + 15°%3C/text%3E%3Ctext x='176.1' y='84.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='50' y='213.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='249.6' y='214.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-algebraik",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#bc6723c7"
+    },
+    {
+      "q": "Bo'yoqchi Sardor uchburchak taxta kesmoqchi. Taxtaning ikkinchi burchagi birinchisidan 24° katta, uchinchi burchagi esa birinchisining ikki barobariga teng. Uchinchi burchak necha gradus?",
+      "v": [
+        "39°",
+        "63°",
+        "78°",
+        "90°"
+      ],
+      "t": 2,
+      "izoh": "Birinchi burchak x bo'lsin. U holda x + (x + 24°) + 2x = 180°, ya'ni 4x + 24° = 180°. Bundan 4x = 156° va x = 39°. Uchinchi burchak 2x = 78°. 39° — bu birinchi burchakning o'zi, 63° esa ikkinchisi; 90° — taxta to'g'ri burchakli deb o'ylagandagi xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='190.8,93.8 52,206.2 248,206.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='172.1,108.9 173.7,110.7 175.4,112.2 177.2,113.7 179.2,114.9 181.3,115.9 183.5,116.7 185.8,117.3 188.1,117.7 190.4,117.8 192.7,117.7 195,117.4 197.3,116.9 199.5,116.2 201.6,115.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='182.4' y='136.9' font-size='13' fill='%23334155' text-anchor='middle'%3E2x%3C/text%3E%3Cpolyline points='76,206.2 76,205 75.9,203.8 75.7,202.7 75.5,201.5 75.3,200.4 75,199.3 74.6,198.2 74.2,197.1 73.7,196 73.2,195 72.6,193.9 72,193 71.4,192 70.7,191.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='89.7' y='196.8' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Cpolyline points='237.1,184.8 235.5,185.7 233.9,186.8 232.4,187.9 231,189.2 229.8,190.6 228.6,192.1 227.5,193.6 226.6,195.3 225.8,197 225.2,198.8 224.7,200.6 224.3,202.4 224.1,204.3 224,206.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='213.9' y='189.3' font-size='13' fill='%23334155' text-anchor='middle'%3Ex + 24°%3C/text%3E%3Ctext x='195.9' y='83.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.8' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='216.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-algebraik",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#1a3d54bf"
+    },
+    {
+      "q": "Uchburchakning burchaklari ketma-ket kelgan uchta natural son bilan ifodalanadi. Shu uchburchakning eng katta burchagi necha gradus?",
+      "v": [
+        "60°",
+        "59°",
+        "62°",
+        "61°"
+      ],
+      "t": 3,
+      "izoh": "Burchaklarni n − 1, n va n + 1 deb belgilaymiz. Yig'indisi (n − 1) + n + (n + 1) = 3n = 180°, bundan n = 60°. Demak burchaklar 59°, 60° va 61°, eng kattasi 61°. 60° — o'rtadagi burchak, 59° esa eng kichigi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='151.7,77 64,223 236,223' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='139.3,97.6 140.9,98.5 142.6,99.2 144.3,99.8 146.1,100.3 147.9,100.7 149.7,100.9 151.5,101 153.3,100.9 155.1,100.8 156.9,100.4 158.7,100 160.4,99.4 162.1,98.6 163.7,97.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='151.4' y='121' font-size='13' fill='%23334155' text-anchor='middle'%3En + 1%3C/text%3E%3Cpolyline points='76.4,202.4 77.8,203.4 79.2,204.5 80.6,205.6 81.8,206.9 82.9,208.2 84,209.7 84.9,211.2 85.7,212.7 86.4,214.4 87,216 87.4,217.7 87.7,219.5 87.9,221.2 88,223' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='98.8' y='207.3' font-size='13' fill='%23334155' text-anchor='middle'%3En − 1%3C/text%3E%3Cpolyline points='212,223 212.1,221.2 212.3,219.4 212.6,217.7 213.1,215.9 213.7,214.2 214.4,212.6 215.2,211 216.2,209.5 217.2,208 218.4,206.7 219.7,205.4 221,204.2 222.5,203.2 224,202.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='201.4' y='207' font-size='13' fill='%23334155' text-anchor='middle'%3En%3C/text%3E%3Ctext x='151.9' y='66' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='50.9' y='234.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='249' y='234.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-algebraik",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#52062168"
+    },
+    {
+      "q": "Uchburchakning ichki burchaklaridan ikkitasi 43° va 62° ga teng. Uchinchi uchidagi tashqi burchak necha gradusga teng?",
+      "v": [
+        "105°",
+        "75°",
+        "118°",
+        "137°"
+      ],
+      "t": 0,
+      "izoh": "Tashqi burchak o'ziga qo'shni bo'lmagan ikkita ichki burchak yig'indisiga teng: 43° + 62° = 105°. Tekshiramiz: uchinchi ichki burchak 180° − 105° = 75°, unga qo'shni tashqi burchak esa 180° − 75° = 105°. 75° — ichki burchakning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='182.7,119.5 52,241.4 247.5,241.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='182.7' y1='119.5' x2='248' y2='58.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='69.6,225 70.4,226 71.2,227 71.9,228.1 72.6,229.1 73.3,230.3 73.8,231.4 74.3,232.6 74.8,233.8 75.1,235 75.5,236.3 75.7,237.6 75.9,238.8 76,240.1 76,241.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='89.2' y='230.7' font-size='13' fill='%23334155' text-anchor='middle'%3E43°%3C/text%3E%3Cpolyline points='223.5,241.4 223.6,239.5 223.8,237.7 224.1,235.9 224.6,234.1 225.3,232.4 226,230.7 226.9,229 227.9,227.5 229.1,226 230.3,224.6 231.7,223.4 233.1,222.2 234.6,221.1 236.2,220.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='213.2' y='224.8' font-size='13' fill='%23334155' text-anchor='middle'%3E62°%3C/text%3E%3Cpolyline points='194,140.7 196.6,139 199.1,137.1 201.2,134.8 203.1,132.2 204.5,129.5 205.7,126.5 206.4,123.5 206.7,120.3 206.6,117.2 206.1,114.1 205.2,111.1 203.9,108.2 202.2,105.6 200.3,103.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='222.2' y='130.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='186.6' y='109' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.9' y='250.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.1' y='251.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='255.8' y='49.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-burchak-hisob",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#2e68370c"
+    },
+    {
+      "q": "Yo'l chorrahasidagi uchburchak shaklli maydonchaning ikki burchagi 55° va 68° ga teng. Uchinchi burchakka mos keluvchi tashqi burchak necha gradus?",
+      "v": [
+        "57°",
+        "123°",
+        "112°",
+        "125°"
+      ],
+      "t": 1,
+      "izoh": "Tashqi burchak unga qo'shni bo'lmagan ikkita ichki burchakning yig'indisiga teng, ya'ni 55° + 68° = 123°. 57° — bu uchinchi ichki burchakning o'zi, tashqi burchak emas. 125° esa 180° − 55° dan chiqadigan xato natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='169.4,117.3 77.9,248 222.1,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='169.4' y1='117.3' x2='215.1' y2='52' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='91.7,228.3 93,229.3 94.2,230.4 95.4,231.6 96.5,232.8 97.5,234.1 98.4,235.5 99.2,236.9 99.9,238.4 100.5,239.9 101,241.5 101.4,243.1 101.7,244.7 101.8,246.4 101.9,248' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='113.4' y='233.5' font-size='13' fill='%23334155' text-anchor='middle'%3E55°%3C/text%3E%3Cpolyline points='198.1,248 198.2,246 198.4,243.9 198.9,242 199.5,240 200.2,238.1 201.1,236.3 202.2,234.6 203.4,232.9 204.8,231.4 206.2,230 207.8,228.7 209.5,227.6 211.3,226.6 213.1,225.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='188.9' y='229.6' font-size='13' fill='%23334155' text-anchor='middle'%3E68°%3C/text%3E%3Cpolyline points='178.4,139.6 181.7,137.9 184.7,135.8 187.3,133.3 189.6,130.3 191.3,127.1 192.5,123.6 193.2,120 193.4,116.3 193,112.7 192,109.1 190.5,105.8 188.5,102.7 186,100 183.2,97.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='209.1' y='125.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='171.6' y='106.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='64.8' y='259.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='234.6' y='260.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='220.5' y='42' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-burchak-hisob",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#ddcec79a"
+    },
+    {
+      "q": "Uchburchakning bir uchidagi tashqi burchak 130° ga teng, unga qo'shni bo'lmagan ichki burchaklardan biri esa 48°. Ikkinchisi necha gradus?",
+      "v": [
+        "178°",
+        "50°",
+        "82°",
+        "98°"
+      ],
+      "t": 2,
+      "izoh": "Tashqi burchak qo'shni bo'lmagan ikki ichki burchak yig'indisiga teng: 130° = 48° + α. Bundan α = 130° − 48° = 82°. 178° — ayirish o'rniga qo'shib yuborganda, 50° esa tashqi burchakka qo'shni ichki burchakni topganda chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='122,111.1 52,188.9 187.2,188.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='187.2' y1='188.9' x2='248' y2='188.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='68.1,171.1 69.1,172.1 70.1,173.1 71,174.2 71.8,175.4 72.6,176.6 73.3,177.8 73.9,179.1 74.5,180.5 74.9,181.8 75.3,183.2 75.6,184.6 75.8,186 76,187.5 76,188.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='88.5' y='176.6' font-size='13' fill='%23334155' text-anchor='middle'%3E48°%3C/text%3E%3Cpolyline points='171.8,170.5 175,168.3 178.4,166.6 182.2,165.4 186,164.9 189.9,165.1 193.7,165.8 197.3,167.2 200.7,169.1 203.7,171.5 206.3,174.4 208.4,177.7 210,181.3 210.9,185 211.2,188.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='204.1' y='156.7' font-size='13' fill='%23334155' text-anchor='middle'%3E130°%3C/text%3E%3Cpolyline points='105.9,128.9 107.9,130.5 109.9,131.8 112.1,133 114.4,133.9 116.7,134.5 119.1,134.9 121.6,135.1 124,135 126.5,134.7 128.8,134.1 131.1,133.3 133.4,132.2 135.5,131 137.4,129.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='121.3' y='155.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='122.5' y='100.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38' y='198.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='201.2' y='198.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='262.7' y='195.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-burchak-hisob",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#b45bcf43"
+    },
+    {
+      "q": "Uchburchakning BC tomoni D nuqtagacha davom ettirildi va hosil bo'lgan ∠ACD tashqi burchagi 118° ga teng bo'ldi. Uchburchakning ∠ACB burchagi nechaga teng?",
+      "v": [
+        "118°",
+        "72°",
+        "59°",
+        "62°"
+      ],
+      "t": 3,
+      "izoh": "∠ACB va ∠ACD birgalikda yoyilgan burchakni tashkil qiladi, ya'ni ularning yig'indisi 180°. Demak ∠ACB = 180° − 118° = 62°. 59° — tashqi burchakni ikkiga bo'lgandagi xato, 118° esa berilgan burchakning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='117.3,88.6 52,211.4 182.7,211.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='182.7' y1='211.4' x2='248' y2='211.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='171.4,190.2 174.6,188.8 178,187.9 181.6,187.4 185.1,187.5 188.6,188.1 191.9,189.2 195.1,190.8 197.9,192.9 200.5,195.3 202.7,198.1 204.4,201.1 205.7,204.4 206.4,207.9 206.7,211.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='203.3' y='181.1' font-size='13' fill='%23334155' text-anchor='middle'%3E118°%3C/text%3E%3Ctext x='117.3' y='77.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.3' y='223.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='195.4' y='223.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='262.3' y='219.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-burchak-hisob",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#e7a878f8"
+    },
+    {
+      "q": "Uchburchakning uchta tashqi burchagidan ikkitasi 115° va 140° ga teng. Uchinchi tashqi burchak necha gradusga teng bo'ladi?",
+      "v": [
+        "105°",
+        "75°",
+        "95°",
+        "255°"
+      ],
+      "t": 0,
+      "izoh": "Tashqi burchaklardan ichki burchaklarga o'tamiz: 180° − 115° = 65° va 180° − 140° = 40°. Uchinchi ichki burchak 180° − 65° − 40° = 75°, unga mos tashqi burchak esa 180° − 75° = 105°. Qisqaroq yo'l: tashqi burchaklar yig'indisi 360°, ya'ni 360° − 115° − 140° = 105°. 75° — ichki burchak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tashqi-burchak-hisob",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#a659ba79"
+    },
+    {
+      "q": "Uchburchakning har bir uchida bittadan tashqi burchak olindi. Shu uchta tashqi burchakning yig'indisi necha gradusga teng bo'ladi?",
+      "v": [
+        "180°",
+        "360°",
+        "270°",
+        "540°"
+      ],
+      "t": 1,
+      "izoh": "Har bir uchda ichki va tashqi burchak yig'indisi 180°, uchta uchda esa 3 · 180° = 540°. Bundan ichki burchaklar yig'indisi 180° ni ayiramiz: 540° − 180° = 360°. Demak tashqi burchaklar yig'indisi har qanday uchburchak uchun 360°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='125.2,108.4 77.2,191.6 194.9,191.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='194.9' y1='191.6' x2='242' y2='191.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='125.2' y1='108.4' x2='97.3' y2='75.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='77.2' y1='191.6' x2='58' y2='224.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='179.5,173.2 182.7,171 186.1,169.3 189.9,168.1 193.7,167.6 197.6,167.8 201.4,168.5 205.1,169.9 208.4,171.8 211.4,174.2 214,177.1 216.1,180.4 217.7,184 218.6,187.7 218.9,191.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='211.8' y='159.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='113.2,129.2 110.5,127.4 108,125.2 105.9,122.7 104.1,119.9 102.8,116.9 101.8,113.8 101.3,110.5 101.2,107.2 101.6,104 102.4,100.8 103.7,97.7 105.4,94.9 107.4,92.3 109.8,90' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='85.4' y='115.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='101.2,191.6 100.9,195.2 100.1,198.7 98.8,202 97,205.1 94.8,207.9 92.2,210.4 89.2,212.4 86,213.9 82.5,215 79,215.5 75.4,215.5 71.8,215 68.4,213.9 65.2,212.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='97.2' y='230.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='123.3' y='97.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='63.8' y='202.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='208.6' y='201.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-burchaklar-yigindisi",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#e751189f"
+    },
+    {
+      "q": "Uchburchakning tashqi burchaklari 5 : 6 : 7 nisbatda joylashgan. Shu uchburchakning eng kichik ichki burchagi necha gradus?",
+      "v": [
+        "50°",
+        "80°",
+        "40°",
+        "100°"
+      ],
+      "t": 2,
+      "izoh": "Tashqi burchaklar yig'indisi 360°, shuning uchun 18x = 360° va x = 20°. Tashqi burchaklar 100°, 120° va 140°. Ularga mos ichki burchaklar 80°, 60° va 40°, eng kichigi 40°. Eng katta tashqi burchakka eng kichik ichki burchak mos keladi. 50° — yig'indini 180° deb olib yuborgandagi xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tashqi-burchaklar-yigindisi",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#40c74a93"
+    },
+    {
+      "q": "Uchburchakning ikkita tashqi burchagi 100° va 125° ga teng bo'lsa, uning uchinchi ichki burchagi necha gradus?",
+      "v": [
+        "135°",
+        "55°",
+        "80°",
+        "45°"
+      ],
+      "t": 3,
+      "izoh": "Tashqi burchaklar yig'indisi 360° bo'lgani uchun uchinchi tashqi burchak 360° − 100° − 125° = 135°. Unga qo'shni ichki burchak esa 180° − 135° = 45°. 135° — tashqi burchakning o'zi, 80° va 55° esa qolgan ikki ichki burchak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150.7,104.3 86.8,195.7 242,195.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150.7' y1='104.3' x2='109.6' y2='63.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='86.8' y1='195.7' x2='58' y2='236.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='136.9,124 134.6,122.1 132.5,120 130.7,117.6 129.2,115 128.1,112.2 127.2,109.4 126.8,106.4 126.7,103.4 127,100.5 127.7,97.5 128.7,94.7 130.1,92.1 131.7,89.6 133.7,87.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='110.9' y='111.8' font-size='13' fill='%23334155' text-anchor='middle'%3E100°%3C/text%3E%3Cpolyline points='110.8,195.7 110.5,199.4 109.6,203.1 108.2,206.5 106.3,209.7 103.9,212.6 101,215 97.9,217 94.4,218.5 90.8,219.4 87.1,219.7 83.3,219.4 79.7,218.6 76.2,217.2 73,215.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='105.2' y='235.2' font-size='13' fill='%23334155' text-anchor='middle'%3E125°%3C/text%3E%3Ctext x='148.5' y='93.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='73' y='205.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='256.1' y='204.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-burchaklar-yigindisi",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#cc26069d"
+    },
+    {
+      "q": "Uchburchak shaklidagi yo'lakcha bo'ylab yurgan kishi har bir burchakda burilish burchagiga teng miqdorda yo'nalishini o'zgartiradi. Yo'lakchani to'liq aylanib chiqqanda u jami necha gradusga burilgan bo'ladi?",
+      "v": [
+        "360°",
+        "180°",
+        "540°",
+        "720°"
+      ],
+      "t": 0,
+      "izoh": "Har bir burilishdagi og'ish — o'sha uchdagi tashqi burchak. Yo'lakcha uchburchak bo'lgani uchun kishi uch marta buriladi va boshlang'ich yo'nalishiga qaytadi. Uchburchakning tashqi burchaklari yig'indisi 360° ga teng, demak jami burilish ham 360°. 180° — bu ichki burchaklar yig'indisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-burchaklar-yigindisi",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#4854d589"
+    },
+    {
+      "q": "Quyidagi uzunliklar to'plamlaridan qaysi biri uchburchak tomonlari bo'la oladi: 3 sm, 5 sm va 9 sm; 4 sm, 6 sm va 9 sm; 2 sm, 3 sm va 5 sm; 1 sm, 2 sm va 4 sm?",
+      "v": [
+        "3 sm, 5 sm va 9 sm",
+        "4 sm, 6 sm va 9 sm",
+        "2 sm, 3 sm va 5 sm",
+        "1 sm, 2 sm va 4 sm"
+      ],
+      "t": 1,
+      "izoh": "Uchburchak tengsizligiga ko'ra ixtiyoriy ikki tomon yig'indisi uchinchisidan katta bo'lishi kerak. 3 + 5 = 8 bo'lib, 9 dan kichik; 2 + 3 = 5 bo'lib, uchinchi tomonga teng; 1 + 2 = 3 bo'lib, 4 dan kichik. Faqat 4 + 6 = 10 yig'indisi 9 dan katta, demak ikkinchi to'plam mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-tengsizligi",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#09358a96"
+    },
+    {
+      "q": "Duradgor Anvarda uzunligi 7 sm, 10 sm va 18 sm bo'lgan uchta reyka bor. Shu reykalarni uchma-uch biriktirib uchburchak yasash mumkinmi?",
+      "v": [
+        "Ha, uchta kesmadan doim uchburchak yasash mumkin",
+        "Yo'q, chunki 7 + 10 yig'indisi 18 dan kichik",
+        "Ha, chunki 7 + 18 yig'indisi 10 dan katta",
+        "Yo'q, chunki reykalarning uzunliklari har xil"
+      ],
+      "t": 1,
+      "izoh": "Uchburchak tengsizligini eng uzun tomon uchun tekshirish yetarli. Qolgan ikkisining yig'indisi 7 + 10 = 17 sm, bu esa 18 sm dan kichik. Demak reykalar tutashmaydi va uchburchak hosil bo'lmaydi. Tomonlarning har xil bo'lishi o'zi hech qanday to'siq emas, muhimi yig'indini eng uzun tomon bilan taqqoslash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-tengsizligi",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#9e0b5714"
+    },
+    {
+      "q": "Uchburchakning ikki tomoni 8 sm va 15 sm ga teng. Uchinchi tomon quyidagilardan qaysi biri bo'la olmaydi: 9 sm, 12 sm, 20 sm yoki 23 sm?",
+      "v": [
+        "9 sm",
+        "12 sm",
+        "20 sm",
+        "23 sm"
+      ],
+      "t": 3,
+      "izoh": "Uchinchi tomon 15 − 8 = 7 sm dan katta va 15 + 8 = 23 sm dan kichik bo'lishi shart. 23 sm chegaraning aynan o'zi: bunda 8 + 15 = 23 tenglik hosil bo'ladi va uchta nuqta bir to'g'ri chiziqqa tushadi. Qolgan uchta qiymat 7 bilan 23 oralig'ida yotgani uchun mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-tengsizligi",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#2a910230"
+    },
+    {
+      "q": "Uch shahar uchburchak uchlarida joylashgan. Birinchisidan ikkinchisigacha 270 km, ikkinchisidan uchinchisigacha 260 km. Birinchi va uchinchi shahar orasidagi masofa qaysi qiymat bo'lishi mumkin emas: 120 km, 300 km, 525 km yoki 535 km?",
+      "v": [
+        "120 km",
+        "300 km",
+        "525 km",
+        "535 km"
+      ],
+      "t": 3,
+      "izoh": "Uch shahar uchburchak hosil qilgani uchun tengsizlik o'rinli. Uchinchi tomon 270 + 260 = 530 km dan kichik va 270 − 260 = 10 km dan katta bo'lishi kerak. 535 km bu oraliqdan chiqib ketadi, qolgan uchta qiymat esa oraliqqa tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-tengsizligi",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#80916630"
+    },
+    {
+      "q": "Uchburchakning tomonlari a sm, (a + 4) sm va (a + 9) sm ga teng. a ning eng kichik butun qiymati nechaga teng bo'ladi?",
+      "v": [
+        "5",
+        "9",
+        "6",
+        "13"
+      ],
+      "t": 2,
+      "izoh": "Eng uzun tomon (a + 9). Uchburchak tengsizligi bo'yicha a + (a + 4) yig'indisi undan katta bo'lishi kerak, ya'ni 2a + 4 soni a + 9 dan katta. Bundan a soni 5 dan katta ekani chiqadi, butun qiymatlar ichida eng kichigi a = 6. a = 5 da tomonlar 5, 9 va 14 bo'lib, 5 + 9 = 14 tenglik hosil qiladi va uchburchak yopilmaydi. 13 — 4 + 9 yig'indisidan kelib chiqqan noto'g'ri chegara.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='125.1,107.8 52,192.6 248,192.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='154.8' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3Ea + 9%3C/text%3E%3Ctext x='72.1' y='149.8' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='202.8' y='149.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ea + 4%3C/text%3E%3Ctext x='120.9' y='97.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.7' y='201.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.5' y='200.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-tengsizligi",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#f73d68af"
+    },
+    {
+      "q": "Uchburchakning ikki tomoni 6 sm va 11 sm ga teng. Uning uchinchi tomoni qanday oraliqda yotishi kerak?",
+      "v": [
+        "6 sm dan katta va 11 sm dan kichik",
+        "5 sm dan katta va 11 sm dan kichik",
+        "11 sm dan katta va 17 sm dan kichik",
+        "5 sm dan katta va 17 sm dan kichik"
+      ],
+      "t": 3,
+      "izoh": "Uchinchi tomon berilgan ikki tomon ayirmasidan katta va yig'indisidan kichik bo'ladi. Ayirma 11 − 6 = 5 sm, yig'indi esa 11 + 6 = 17 sm. Demak uchinchi tomon 5 sm bilan 17 sm orasida yotadi, chegaralarning o'zi esa mos kelmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='127.3,112.1 52,187.9 248,187.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='154.9' y='208.2' font-size='13' fill='%23334155' text-anchor='middle'%3E11 sm%3C/text%3E%3Ctext x='73.1' y='150' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='204' y='149.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='123' y='101.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.6' y='195.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.6' y='195.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchinchi-tomon-oraligi",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#83dd7852"
+    },
+    {
+      "q": "Fermer uchburchak shaklidagi maydonni o'rab olmoqchi. Maydonning ikki tomoni 40 m va 65 m. Uchinchi tomon uchun eng katta butun uzunlik necha metr bo'lishi mumkin?",
+      "v": [
+        "104 m",
+        "105 m",
+        "25 m",
+        "106 m"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi tomon 40 + 65 = 105 m dan kichik bo'lishi shart. Aynan 105 m da uchta nuqta bir to'g'ri chiziqda yotadi va maydon hosil bo'lmaydi. Butun sonlar ichida eng kattasi 104 m. 25 m — bu ayirma, ya'ni pastki chegara.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='52,93.9 64.5,206.1 248,206.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='167.8' y='222.6' font-size='13' fill='%23334155' text-anchor='middle'%3E65 m%3C/text%3E%3Ctext x='41.9' y='149.2' font-size='13' fill='%23334155' text-anchor='middle'%3E40 m%3C/text%3E%3Ctext x='164.2' y='144.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='41.8' y='86.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='52' y='218.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.4' y='214.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchinchi-tomon-oraligi",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#9aa2b1c7"
+    },
+    {
+      "q": "Uchburchakning ikki tomoni 9 sm dan teng. Uchinchi tomonning mumkin bo'lgan eng kichik butun qiymati necha santimetr?",
+      "v": [
+        "2 sm",
+        "1 sm",
+        "9 sm",
+        "18 sm"
+      ],
+      "t": 1,
+      "izoh": "Teng yonli uchburchakda ham tengsizlik o'rinli: uchinchi tomon 9 − 9 = 0 dan katta va 9 + 9 = 18 dan kichik. Butun qiymatlar 1 dan 17 gacha, ya'ni eng kichigi 1 sm. 18 sm — yuqori chegara, unga erishib bo'lmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,52 67.3,248 232.7,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='114.2' y1='152.3' x2='103.1' y2='147.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='196.9' y1='147.7' x2='185.8' y2='152.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='269' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='204.7' y='143.5' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='95.3' y='143.5' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='150' y='41' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='55.5' y='261.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='244.5' y='261.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchinchi-tomon-oraligi",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#74ccecee"
+    },
+    {
+      "q": "Uchburchakning perimetri 30 sm, tomonlaridan biri esa 13 sm. Qolgan ikki tomondan kattasi eng ko'pi bilan necha butun santimetr bo'lishi mumkin?",
+      "v": [
+        "15 sm",
+        "16 sm",
+        "14 sm",
+        "17 sm"
+      ],
+      "t": 2,
+      "izoh": "Qolgan ikki tomonning yig'indisi 30 − 13 = 17 sm. Har qanday tomon perimetrning yarmidan kichik bo'lishi kerak, ya'ni 15 sm dan kichik. Butun qiymatlar ichida eng kattasi 14 sm. Bunda tomonlar 13 sm, 14 sm va 3 sm bo'ladi: 13 + 3 = 16 sm 14 dan katta, tengsizlik bajariladi. 17 sm — qolgan ikki tomonning yig'indisi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='120.4,109.8 52,190.2 248,190.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='155.9' y='210.2' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3Ctext x='115.2' y='99.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.6' y='198.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.6' y='197.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchinchi-tomon-oraligi",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#74e47b58"
+    },
+    {
+      "q": "Uchburchakning ikki tomoni 7 sm va 12 sm. Uchinchi tomon butun son bo'lsa, u nechta har xil qiymat qabul qilishi mumkin?",
+      "v": [
+        "12",
+        "15",
+        "19",
+        "13"
+      ],
+      "t": 3,
+      "izoh": "Uchinchi tomon 12 − 7 = 5 dan katta va 12 + 7 = 19 dan kichik. Demak butun qiymatlar 6 dan 18 gacha, ularning soni 18 − 6 + 1 = 13 ta. 15 ta natija chegaralarni ham qo'shib yuborganda, 12 ta esa oxirgi qadamda birni qo'shishni unutib, 18 − 6 ayirmasining o'zini olganda chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='128.2,107.4 52,192.6 248,192.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='154.2' y='213.1' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='73.7' y='149.6' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='204.3' y='148.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='124.5' y='96.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.7' y='201.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.5' y='200.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-uchinchi-tomon",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#c523f5b8"
+    },
+    {
+      "q": "Teng yonli uchburchakning yon tomoni 10 sm, asosi esa butun son. Asos nechta har xil qiymat qabul qilishi mumkin?",
+      "v": [
+        "19",
+        "9",
+        "10",
+        "20"
+      ],
+      "t": 0,
+      "izoh": "Asos ikki yon tomon yig'indisidan kichik bo'lishi kerak, ya'ni 20 dan kichik. Shu bilan birga asos musbat butun son. Demak u 1 dan 19 gacha qiymat oladi, jami 19 ta. 20 ta deyish uchun asosni 20 sm ga teng deb olish kerak bo'lardi, lekin unda uchburchak yopilmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,84.7 52,215.3 248,215.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='105.8' y1='153.6' x2='96.2' y2='146.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='203.8' y1='146.4' x2='194.2' y2='153.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='236.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='214.5' y='147.1' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='85.5' y='147.1' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='150' y='73.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='225.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='225.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-uchinchi-tomon",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#b7db9288"
+    },
+    {
+      "q": "Bekzod uzunligi 5 sm va 9 sm bo'lgan ikki tayoqchani biriktirdi. Uchinchi tayoqcha butun santimetr uzunlikda bo'lsa, uni tanlashning nechta varianti bor?",
+      "v": [
+        "8",
+        "9",
+        "10",
+        "13"
+      ],
+      "t": 1,
+      "izoh": "Uchinchi tomon 9 − 5 = 4 dan katta va 9 + 5 = 14 dan kichik bo'ladi. Butun qiymatlar 5 dan 13 gacha, ularning soni 13 − 5 + 1 = 9 ta. 10 ta variant chegaralardan birini ham qo'shib yuborganda paydo bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='121,107.9 52,192.1 248,192.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='155.5' y='212.2' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='70' y='149.7' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='200.7' y='148.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='116.1' y='97.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.7' y='200.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.5' y='199.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-uchinchi-tomon",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#0a208e0c"
+    },
+    {
+      "q": "Tomonlari butun santimetr bilan o'lchanadigan va perimetri 12 sm bo'lgan nechta har xil uchburchak mavjud?",
+      "v": [
+        "2",
+        "4",
+        "3",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Tomonlarni a ≤ b ≤ c deb tartiblaymiz. Eng uzun tomon perimetrning yarmidan kichik, ya'ni c soni 6 dan kichik. c = 5 bo'lganda (2; 5; 5) va (3; 4; 5) to'plamlari mos keladi, c = 4 bo'lganda (4; 4; 4). Qolgan barcha holatlar uchburchak tengsizligini buzadi, demak jami 3 ta uchburchak bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-uchinchi-tomon",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#00db0931"
+    },
+    {
+      "q": "Uchburchakning burchaklari 40°, 60° va 80° ga teng. Uning tomonlarini uzunligi bo'yicha o'sish tartibida qanday joylashtirish kerak?",
+      "v": [
+        "80° ga qarshi tomon, 60° ga qarshi tomon, 40° ga qarshi tomon",
+        "60° ga qarshi tomon, 40° ga qarshi tomon, 80° ga qarshi tomon",
+        "Uchala tomon ham teng bo'ladi",
+        "40° ga qarshi tomon, 60° ga qarshi tomon, 80° ga qarshi tomon"
+      ],
+      "t": 3,
+      "izoh": "Uchburchakda kattaroq burchakka kattaroq tomon qarshi yotadi. Burchaklarning o'sish tartibi 40°, 60°, 80° bo'lgani uchun ularga qarshi yotgan tomonlar ham aynan shu tartibda o'sadi. Tomonlar teng bo'lishi uchun burchaklar ham teng bo'lishi kerak edi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='184,94.6 52,205.4 248,205.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='165.6,110 167.2,111.8 169,113.4 171,114.8 173.1,116 175.2,116.9 177.5,117.7 179.8,118.2 182.2,118.5 184.6,118.6 187,118.4 189.3,118 191.6,117.3 193.9,116.5 196,115.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='177.1' y='138' font-size='13' fill='%23334155' text-anchor='middle'%3E80°%3C/text%3E%3Cpolyline points='70.4,190 71.1,190.9 71.8,191.9 72.5,192.9 73.1,193.9 73.6,195 74.1,196.1 74.6,197.2 74.9,198.3 75.3,199.5 75.5,200.6 75.7,201.8 75.9,203 76,204.2 76,205.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='89.6' y='195.7' font-size='13' fill='%23334155' text-anchor='middle'%3E40°%3C/text%3E%3Cpolyline points='224,205.4 224.1,203.6 224.3,201.8 224.6,200.1 225.1,198.3 225.7,196.6 226.4,195 227.2,193.4 228.2,191.9 229.2,190.4 230.4,189.1 231.7,187.8 233,186.6 234.5,185.6 236,184.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='213.4' y='189.4' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='188.4' y='84.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.8' y='214.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.8' y='215.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchakdan-tomonga",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#a1d53b8c"
+    },
+    {
+      "q": "ABC uchburchakda ∠A = 75° va ∠B = 45° ga teng. Uchburchakning eng qisqa tomoni qaysi harflar bilan belgilangan?",
+      "v": [
+        "AC",
+        "BC",
+        "AB",
+        "AB va BC teng"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi burchak ∠C = 180° − 75° − 45° = 60°. Eng kichik burchak ∠B = 45°, unga qarshi yotgan tomon esa AC. Demak eng qisqa tomon AC bo'ladi. BC tomoni eng katta ∠A ga qarshi yotgani uchun aksincha eng uzuni hisoblanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='176.3,87.9 52,212.1 248,212.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='159.3,104.9 161,106.4 162.8,107.7 164.7,108.9 166.7,109.9 168.8,110.7 171,111.3 173.2,111.7 175.4,111.9 177.6,111.9 179.9,111.6 182.1,111.2 184.2,110.6 186.3,109.7 188.3,108.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='171.1' y='131.6' font-size='13' fill='%23334155' text-anchor='middle'%3E75°%3C/text%3E%3Cpolyline points='69,195.1 69.9,196.1 70.8,197.1 71.6,198.2 72.3,199.3 73,200.5 73.6,201.7 74.2,202.9 74.7,204.2 75.1,205.5 75.4,206.8 75.7,208.1 75.8,209.4 76,210.8 76,212.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='89' y='200.8' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='179.4' y='77.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38' y='221.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.6' y='222.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchakdan-tomonga",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#22f6aaf1"
+    },
+    {
+      "q": "Uchta qishloq uchburchak hosil qilib joylashgan. A qishloqdagi burchak 95°, B qishloqdagi burchak 50° ga teng. Qaysi ikki qishloq orasidagi masofa eng katta?",
+      "v": [
+        "A va B",
+        "B va C",
+        "A va C",
+        "Masofalar teng"
+      ],
+      "t": 1,
+      "izoh": "Uchinchi burchak 180° − 95° − 50° = 35°. Eng katta burchak A qishloqda joylashgan, unga qarshi yotgan tomon esa BC. Demak B va C qishloqlar orasidagi masofa eng katta. A va C orasidagi masofa 50° ga, A va B orasidagi masofa esa 35° ga qarshi yotadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='124.5,106.8 52,193.2 248,193.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='109.1,125.2 111.4,126.9 113.8,128.3 116.4,129.4 119.2,130.2 122,130.7 124.8,130.8 127.6,130.6 130.4,130.1 133.1,129.2 135.7,128 138.1,126.5 140.4,124.8 142.4,122.8 144.2,120.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='129.7' y='150.5' font-size='13' fill='%23334155' text-anchor='middle'%3E95°%3C/text%3E%3Cpolyline points='67.4,174.8 68.5,175.8 69.6,176.9 70.6,178 71.5,179.2 72.3,180.4 73.1,181.7 73.8,183.1 74.3,184.4 74.8,185.8 75.3,187.3 75.6,188.7 75.8,190.2 76,191.7 76,193.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='88.3' y='180.3' font-size='13' fill='%23334155' text-anchor='middle'%3E50°%3C/text%3E%3Ctext x='120.3' y='96.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.7' y='201.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.5' y='201.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchakdan-tomonga",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#1009ef2d"
+    },
+    {
+      "q": "Uchburchakda ∠A = 100° va ∠C = 30° ga teng. AB va BC tomonlaridan qaysi biri uzunroq bo'ladi?",
+      "v": [
+        "AB uzunroq",
+        "Ular teng",
+        "BC uzunroq",
+        "Berilganlar yetarli emas"
+      ],
+      "t": 2,
+      "izoh": "Uchinchi burchak ∠B = 180° − 100° − 30° = 50°. AB tomoni ∠C = 30° ga, BC tomoni esa ∠A = 100° ga qarshi yotadi. Kattaroq burchakka kattaroq tomon mos kelgani uchun BC tomoni uzunroq bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='116,111.9 52,188.1 248,188.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='100.6,130.3 103,132.1 105.6,133.5 108.3,134.6 111.2,135.4 114.2,135.8 117.2,135.9 120.2,135.5 123.1,134.8 125.9,133.8 128.5,132.4 131,130.7 133.2,128.7 135.1,126.4 136.8,123.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='122.9' y='155.3' font-size='13' fill='%23334155' text-anchor='middle'%3E100°%3C/text%3E%3Cpolyline points='224,188.1 224,187.2 224.1,186.3 224.2,185.4 224.3,184.5 224.4,183.6 224.6,182.8 224.8,181.9 225.1,181 225.3,180.2 225.7,179.3 226,178.5 226.4,177.7 226.8,176.9 227.2,176.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='209.4' y='181.7' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='109.9' y='102.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.6' y='196.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.6' y='195.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchakdan-tomonga",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#120fd6d5"
+    },
+    {
+      "q": "Uchburchakning tomonlari 7 sm, 9 sm va 12 sm ga teng. Shu uchburchakning eng katta burchagi qaysi tomonga qarshi yotadi?",
+      "v": [
+        "7 sm li tomonga",
+        "9 sm li tomonga",
+        "Barcha burchaklar teng",
+        "12 sm li tomonga"
+      ],
+      "t": 3,
+      "izoh": "Uchburchakda kattaroq tomonga kattaroq burchak qarshi yotadi. Tomonlarning eng uzuni 12 sm, demak eng katta burchak aynan shu tomonga qarshi joylashadi. Eng kichik burchak esa 7 sm li tomonga qarshi yotadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='128.2,107.4 52,192.6 248,192.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='154.2' y='213.1' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='204.3' y='148.9' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='73.7' y='149.6' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='124.5' y='96.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.7' y='201.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.5' y='200.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tomondan-burchakka",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#43e89552"
+    },
+    {
+      "q": "Uchburchakning tomonlari 5 sm, 5 sm va 8 sm. Shu uchburchakning burchaklari haqida nima deyish mumkin?",
+      "v": [
+        "8 sm li tomonga qarshi burchak eng katta",
+        "Barcha burchaklar o'zaro teng",
+        "5 sm li tomonlarga qarshi burchaklar eng katta",
+        "Uchburchakda albatta to'g'ri burchak bor"
+      ],
+      "t": 0,
+      "izoh": "Ikki tomon teng bo'lgani uchun ularga qarshi yotgan burchaklar ham o'zaro teng. Eng uzun tomon 8 sm, unga qarshi yotgan burchak esa eng katta bo'ladi. Barcha burchaklar teng bo'lishi uchun uchala tomon ham teng bo'lishi kerak edi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,113.3 52,186.8 248,186.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='104.6' y1='154.9' x2='97.4' y2='145.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='202.6' y1='145.3' x2='195.4' y2='154.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='207.8' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='215.5' y='149.9' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='84.5' y='149.9' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='150' y='102.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.4' y='194.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.6' y='194.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tomondan-burchakka",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#5c36bb60"
+    },
+    {
+      "q": "Aziz, Bobur va Dilshod uchburchak hosil qilib turishibdi. Aziz bilan Bobur orasi 12 m, Bobur bilan Dilshod orasi 10 m, Aziz bilan Dilshod orasi 16 m. Qaysi do'stning turgan joyidagi burchak eng katta?",
+      "v": [
+        "Aziz",
+        "Bobur",
+        "Dilshod",
+        "Uchalasida ham teng"
+      ],
+      "t": 1,
+      "izoh": "Eng katta burchak eng uzun tomonga qarshi yotadi. Eng uzun masofa Aziz bilan Dilshod orasidagi 16 m. Bu tomonga qarshi turgan uch — Bobur turgan nuqta. Demak eng katta burchak Boburda hosil bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='63.3,52 73.1,248 236.7,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='162.1' y='267.4' font-size='13' fill='%23334155' text-anchor='middle'%3E10 m%3C/text%3E%3Ctext x='160.5' y='140.6' font-size='13' fill='%23334155' text-anchor='middle'%3E16 m%3C/text%3E%3Ctext x='53.5' y='145.5' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='56.9' y='42.4' font-size='13' fill='%23334155' text-anchor='middle'%3EAziz%3C/text%3E%3Ctext x='63.8' y='263.8' font-size='13' fill='%23334155' text-anchor='middle'%3EBobur%3C/text%3E%3Ctext x='249.7' y='259.5' font-size='13' fill='%23334155' text-anchor='middle'%3EDilshod%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tomondan-burchakka",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#7e2093a2"
+    },
+    {
+      "q": "ABC uchburchakda AB = 6 sm, BC = 11 sm va AC = 8 sm. Uchburchakning burchaklarini o'sish tartibida joylashtiring.",
+      "v": [
+        "∠A, ∠B, ∠C",
+        "∠B, ∠C, ∠A",
+        "∠C, ∠B, ∠A",
+        "∠A, ∠C, ∠B"
+      ],
+      "t": 2,
+      "izoh": "Har bir burchakka o'ziga qarshi yotgan tomon mos keladi: ∠A ga BC = 11 sm, ∠B ga AC = 8 sm, ∠C ga AB = 6 sm. Tomonlar o'sish tartibi 6 sm, 8 sm, 11 sm bo'lgani uchun burchaklar ham ∠C, ∠B, ∠A tartibida o'sadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='127.3,112.1 52,187.9 248,187.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='154.9' y='208.2' font-size='13' fill='%23334155' text-anchor='middle'%3E11 sm%3C/text%3E%3Ctext x='204' y='149.4' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='73.1' y='150' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='123' y='101.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.6' y='195.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.6' y='195.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tomondan-burchakka",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#463a61ae"
+    },
+    {
+      "q": "Uy tomining ko'ndalang kesimi teng yonli uchburchak shaklida. Tomning uchidagi burchak 40° ga teng bo'lsa, asosidagi burchaklardan biri necha gradus?",
+      "v": [
+        "140°",
+        "50°",
+        "110°",
+        "70°"
+      ],
+      "t": 3,
+      "izoh": "Teng yonli uchburchakda asosdagi burchaklar teng. Ularning yig'indisi 180° − 40° = 140°, demak har biri 140° : 2 = 70°. 140° — bu ikkala asos burchagining yig'indisi. 50° esa 90° − 40° dan chiqadigan noto'g'ri natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,52 78.7,248 221.3,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='120' y1='152.1' x2='108.7' y2='147.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='191.3' y1='147.9' x2='180' y2='152.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='141.8,74.6 142.9,74.9 144.1,75.3 145.2,75.5 146.4,75.7 147.6,75.9 148.8,76 150,76 151.2,76 152.4,75.9 153.6,75.7 154.8,75.5 155.9,75.3 157.1,74.9 158.2,74.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='96' font-size='13' fill='%23334155' text-anchor='middle'%3E40°%3C/text%3E%3Cpolyline points='86.9,225.4 88.8,226.2 90.7,227.2 92.5,228.3 94.1,229.6 95.7,231 97.1,232.6 98.4,234.2 99.5,236 100.5,237.9 101.3,239.8 101.9,241.8 102.3,243.8 102.6,245.9 102.7,248' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='111.5' y='229.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='41' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='67.6' y='262.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='232.4' y='262.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-asos-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#ccf4ee24"
+    },
+    {
+      "q": "Teng yonli uchburchakning uchidagi burchak 96° ga teng. Shu uchburchakning asosidagi burchagi necha gradusga teng?",
+      "v": [
+        "42°",
+        "84°",
+        "48°",
+        "32°"
+      ],
+      "t": 0,
+      "izoh": "Asosdagi ikki burchak teng va ularning yig'indisi 180° − 96° = 84°. Demak har biri 84° : 2 = 42°. 84° — yig'indining o'zi, 48° esa 96° ni ikkiga bo'lgandagi natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,105.9 52,194.1 248,194.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='105' y1='154.5' x2='97' y2='145.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='203' y1='145.5' x2='195' y2='154.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='132.2,122 134.2,124 136.5,125.7 138.9,127.2 141.6,128.4 144.3,129.2 147.1,129.7 150,129.9 152.9,129.7 155.7,129.2 158.4,128.4 161.1,127.2 163.5,125.7 165.8,124 167.8,122' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='149.9' font-size='13' fill='%23334155' text-anchor='middle'%3E96°%3C/text%3E%3Cpolyline points='224,194.1 224,192.8 224.1,191.6 224.3,190.3 224.5,189.1 224.8,187.9 225.2,186.7 225.6,185.5 226.1,184.3 226.6,183.2 227.2,182.1 227.9,181 228.6,180 229.3,179 230.2,178' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='210.7' y='183.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='94.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.6' y='202.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.4' y='202.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-asos-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#6e28877e"
+    },
+    {
+      "q": "Teng yonli uchburchakning asosidagi burchagi uning uchidagi burchakdan 30° katta. Uchidagi burchak necha gradusga teng?",
+      "v": [
+        "70°",
+        "40°",
+        "50°",
+        "60°"
+      ],
+      "t": 1,
+      "izoh": "Uchidagi burchakni x deb olsak, asosdagi har bir burchak x + 30° bo'ladi. Yig'indi x + 2(x + 30°) = 180°, ya'ni 3x + 60° = 180°. Bundan 3x = 120° va x = 40°. Asosdagi burchaklar esa 70° dan chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,62 85.9,238 214.1,238' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123.6' y1='152.1' x2='112.3' y2='147.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='187.7' y1='147.9' x2='176.4' y2='152.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='141.8,84.6 142.9,84.9 144.1,85.3 145.2,85.5 146.4,85.7 147.6,85.9 148.8,86 150,86 151.2,86 152.4,85.9 153.6,85.7 154.8,85.5 155.9,85.3 157.1,84.9 158.2,84.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='106' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Cpolyline points='94.1,215.4 96,216.3 97.9,217.2 99.7,218.3 101.3,219.6 102.9,221 104.3,222.6 105.6,224.2 106.7,226 107.7,227.9 108.5,229.8 109.1,231.8 109.5,233.8 109.8,235.9 109.9,238' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.7' y='219.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ex + 30°%3C/text%3E%3Ctext x='150' y='51' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='74.8' y='252.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='225.2' y='252.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-asos-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#84cd65e4"
+    },
+    {
+      "q": "Teng yonli uchburchakning bir burchagi 100° ga teng. Shu uchburchakning qolgan ikki burchagi necha gradusdan bo'ladi?",
+      "v": [
+        "40° va 100°",
+        "80° va 80°",
+        "40° va 40°",
+        "20° va 60°"
+      ],
+      "t": 2,
+      "izoh": "Avval 100° qayerda turishini aniqlaymiz. Agar u asosdagi burchak bo'lsa, ikkinchi asos burchagi ham 100° bo'lib, yig'indi 200° ga chiqib ketardi — bu mumkin emas. Demak 100° uchdagi burchak, asosdagi burchaklar esa (180° − 100°) : 2 = 40° dan bo'ladi. 80° va 80° — 180° − 100° = 80° ni ikkiga bo'lishni unutgandagi xato, unda yig'indi 260° ga chiqib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-yonli-asos-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#e7a3df59"
+    },
+    {
+      "q": "Ko'prik teng yonli uchburchak shaklidagi metall ferma bilan mustahkamlangan. Fermaning asosidagi burchagi 65° ga teng bo'lsa, uning uchidagi burchak necha gradus?",
+      "v": [
+        "115°",
+        "65°",
+        "130°",
+        "50°"
+      ],
+      "t": 3,
+      "izoh": "Asosdagi ikkala burchak teng, ya'ni ularning yig'indisi 65° · 2 = 130°. Uchdagi burchak esa 180° − 130° = 50°. 115° — faqat bitta asos burchagini ayirganda chiqadigan xato, 130° esa yig'indining o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,52 58.6,248 241.4,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='109.7' y1='152.5' x2='98.9' y2='147.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='201.1' y1='147.5' x2='190.3' y2='152.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='68.7,226.2 70.5,227.1 72.1,228.2 73.7,229.3 75.1,230.6 76.5,232 77.7,233.5 78.8,235.1 79.8,236.8 80.7,238.5 81.4,240.4 81.9,242.2 82.3,244.1 82.5,246.1 82.6,248' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='92.3' y='230.5' font-size='13' fill='%23334155' text-anchor='middle'%3E65°%3C/text%3E%3Cpolyline points='139.9,73.8 141.2,74.3 142.6,74.8 144.1,75.3 145.5,75.6 147,75.8 148.5,76 150,76 151.5,76 153,75.8 154.5,75.6 155.9,75.3 157.4,74.8 158.8,74.3 160.1,73.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='96' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='41' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='46.4' y='260.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='253.6' y='260.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-uch-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#ba0afddb"
+    },
+    {
+      "q": "Teng yonli uchburchakning asosidagi burchagi 48° ga teng bo'lsa, uning uchidagi burchak nechaga teng bo'ladi?",
+      "v": [
+        "84°",
+        "96°",
+        "132°",
+        "42°"
+      ],
+      "t": 0,
+      "izoh": "Asosdagi burchaklar o'zaro teng: har biri 48°, yig'indisi esa 96°. Uchdagi burchak 180° − 96° = 84°. 132° — bitta burchakni hisobga olmaslikdan, 42° esa 90° − 48° dan kelib chiqadigan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,95.6 52,204.4 248,204.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='105.5' y1='154' x2='96.5' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='203.5' y1='146' x2='194.5' y2='154' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='68.1,186.6 69.1,187.6 70.1,188.6 71,189.7 71.8,190.9 72.6,192.1 73.3,193.3 73.9,194.6 74.5,196 74.9,197.3 75.3,198.7 75.6,200.1 75.8,201.5 76,203 76,204.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='88.5' y='192.1' font-size='13' fill='%23334155' text-anchor='middle'%3E48°%3C/text%3E%3Cpolyline points='133.9,113.4 135.9,115 138,116.4 140.2,117.5 142.6,118.4 145,119.1 147.5,119.5 150,119.6 152.5,119.5 155,119.1 157.4,118.4 159.8,117.5 162,116.4 164.1,115 166.1,113.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='139.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='84.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.9' y='213.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.1' y='213.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-uch-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#bc200631"
+    },
+    {
+      "q": "Teng yonli uchburchakning uchidagi burchak asosidagi burchakdan 3 marta katta. Asosdagi burchak necha gradus?",
+      "v": [
+        "45°",
+        "36°",
+        "108°",
+        "60°"
+      ],
+      "t": 1,
+      "izoh": "Asosdagi burchakni x deb olamiz, uchdagi burchak esa 3x bo'ladi. Yig'indi x + x + 3x = 5x = 180°, bundan x = 36°. Uchdagi burchak 108° chiqadi. 45° — 180° ni to'g'ridan-to'g'ri 4 ga bo'lgandagi xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,117.3 60,182.7 240,182.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='108.5' y1='154.9' x2='101.5' y2='145.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='198.5' y1='145.1' x2='191.5' y2='154.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='130.6,131.4 132.7,133.9 135,136.1 137.7,137.9 140.6,139.4 143.6,140.4 146.8,141.1 150,141.3 153.2,141.1 156.4,140.4 159.4,139.4 162.3,137.9 165,136.1 167.3,133.9 169.4,131.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='161.3' font-size='13' fill='%23334155' text-anchor='middle'%3E3x%3C/text%3E%3Cpolyline points='79.4,168.6 80,169.5 80.6,170.4 81.1,171.3 81.6,172.3 82.1,173.3 82.5,174.3 82.8,175.3 83.1,176.3 83.4,177.4 83.6,178.4 83.8,179.5 83.9,180.5 84,181.6 84,182.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='98' y='174.3' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Ctext x='150' y='106.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='45.4' y='190.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='254.6' y='190.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-uch-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#eb4e3fa8"
+    },
+    {
+      "q": "Teng yonli uchburchakda asosdagi ikkita burchakning yig'indisi 110° ga teng. Uning uchidagi burchak necha gradus?",
+      "v": [
+        "55°",
+        "110°",
+        "70°",
+        "35°"
+      ],
+      "t": 2,
+      "izoh": "Ichki burchaklar yig'indisi 180° bo'lgani uchun uchdagi burchak 180° − 110° = 70°. 55° — asosdagi bitta burchak, ya'ni 110° : 2. Uchdagi burchakni topishda yig'indini butunligicha ayirish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-uch-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#26cddab0"
+    },
+    {
+      "q": "Teng yonli uchburchakning ikki tomoni 4 sm va 9 sm ga teng ekani ma'lum. Uning yon tomoni necha santimetr?",
+      "v": [
+        "4 sm",
+        "6,5 sm",
+        "13 sm",
+        "9 sm"
+      ],
+      "t": 3,
+      "izoh": "Ikki holatni tekshiramiz. Yon tomonlar 4 sm bo'lsa, 4 + 4 = 8 sm asos 9 sm dan kichik bo'lib qoladi va uchburchak yopilmaydi. Demak yon tomonlar 9 sm, asos esa 4 sm. Tekshiramiz: 9 + 4 = 13 sm 9 sm dan katta, tengsizlik bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-tomon-tanlash",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#6e7c4eb9"
+    },
+    {
+      "q": "Teng yonli uchburchakning tomonlari orasida 7 sm va 12 sm uchraydi. Bunday uchburchakning perimetri necha xil qiymat qabul qilishi mumkin?",
+      "v": [
+        "Ikki xil: 26 sm va 31 sm",
+        "Faqat 26 sm",
+        "Faqat 31 sm",
+        "Uch xil qiymat"
+      ],
+      "t": 0,
+      "izoh": "Birinchi holatda yon tomonlar 7 sm, asos 12 sm: 7 + 7 = 14 sm 12 dan katta, uchburchak mavjud va perimetri 7 + 7 + 12 = 26 sm. Ikkinchi holatda yon tomonlar 12 sm, asos 7 sm, perimetri 12 + 12 + 7 = 31 sm. Ikkala holat ham mumkin, demak perimetr ikki xil qiymat oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-tomon-tanlash",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#b9dd66a9"
+    },
+    {
+      "q": "Teng yonli uchburchakning bir tomoni 3 sm, ikkinchi tomoni esa 7 sm. Shu uchburchakning perimetri necha santimetr?",
+      "v": [
+        "13 sm",
+        "17 sm",
+        "10 sm",
+        "21 sm"
+      ],
+      "t": 1,
+      "izoh": "Yon tomonlar 3 sm bo'la olmaydi, chunki 3 + 3 = 6 sm asos 7 sm dan kichik. Demak yon tomonlar 7 sm, asos esa 3 sm. Perimetr 7 + 7 + 3 = 17 sm. 13 sm — mumkin bo'lmagan birinchi holatning perimetri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-yonli-tomon-tanlash",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#64c25461"
+    },
+    {
+      "q": "Usta teng yonli uchburchak shaklidagi ramka yasash uchun uzunligi 15 sm va 32 sm bo'lgan reykalardan foydalanmoqchi. Ramkaning asosi necha santimetr bo'lishi kerak?",
+      "v": [
+        "32 sm",
+        "17 sm",
+        "15 sm",
+        "23,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Agar asos 15 sm bo'lsa, yon tomonlar 32 sm bo'ladi va 32 + 32 = 64 sm 15 dan katta — uchburchak mavjud. Agar asos 32 sm bo'lsa, yon tomonlar 15 sm bo'lib, 15 + 15 = 30 sm 32 dan kichik bo'lib qoladi. Demak asos faqat 15 sm bo'lishi mumkin.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,60.7 52,239.4 248,239.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='106.3' y1='152.9' x2='95.7' y2='147.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='204.3' y1='147.2' x2='193.7' y2='152.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='260.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='49.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.2' y='251.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.8' y='251.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-tomon-tanlash",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#59dac93f"
+    },
+    {
+      "q": "Bog'dagi gulzor teng yonli uchburchak shaklida: yon tomonlari 14 m, asosi esa 9 m. Gulzorni to'liq o'rab olish uchun necha metr to'siq kerak bo'ladi?",
+      "v": [
+        "23 m",
+        "32 m",
+        "42 m",
+        "37 m"
+      ],
+      "t": 3,
+      "izoh": "Teng yonli uchburchakda yon tomonlar teng, shuning uchun perimetr 14 + 14 + 9 = 37 m. 23 m — faqat ikki tomonning yig'indisi. 32 m esa yon tomon o'rniga asosni ikki marta hisoblab yuborganda chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,52 83.5,248 216.5,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='122.4' y1='151.9' x2='111.1' y2='148.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='188.9' y1='148.1' x2='177.6' y2='151.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='269' font-size='13' fill='%23334155' text-anchor='middle'%3E9 m%3C/text%3E%3Ctext x='195.4' y='142.1' font-size='13' fill='%23334155' text-anchor='middle'%3E14 m%3C/text%3E%3Ctext x='104.6' y='142.1' font-size='13' fill='%23334155' text-anchor='middle'%3E14 m%3C/text%3E%3Ctext x='150' y='41' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='72.8' y='262.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='227.2' y='262.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-perimetr",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#0ccf683f"
+    },
+    {
+      "q": "Teng yonli uchburchakning perimetri 48 sm, asosi esa 18 sm ga teng. Uning yon tomoni necha santimetr?",
+      "v": [
+        "15 sm",
+        "30 sm",
+        "24 sm",
+        "16 sm"
+      ],
+      "t": 0,
+      "izoh": "Ikki yon tomonning yig'indisi 48 − 18 = 30 sm. Ular o'zaro teng bo'lgani uchun har biri 30 : 2 = 15 sm. 30 sm — ikkalasining yig'indisi, 16 sm esa perimetrni uchga bo'lish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,84.7 52,215.3 248,215.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='105.8' y1='153.6' x2='96.2' y2='146.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='203.8' y1='146.4' x2='194.2' y2='153.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='236.3' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='214.5' y='147.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='85.5' y='147.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='73.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='225.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.7' y='225.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-perimetr",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#2990ad74"
+    },
+    {
+      "q": "Maktab bayrog'i teng yonli uchburchak shaklida bo'lib, uning perimetri 96 sm. Yon tomoni asosidan 6 sm uzun. Bayroq asosining uzunligi necha santimetr?",
+      "v": [
+        "30 sm",
+        "28 sm",
+        "32 sm",
+        "34 sm"
+      ],
+      "t": 1,
+      "izoh": "Asosni b deb olamiz, u holda har bir yon tomon b + 6 bo'ladi. Perimetr b + 2(b + 6) = 3b + 12 = 96 sm, bundan 3b = 84 va b = 28 sm. Yon tomonlar 34 sm chiqadi. 30 sm — 6 sm ni ikki marta emas, bir marta ayirgandagi xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,58 66.9,242 233.1,242' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='113.9' y1='152.5' x2='103' y2='147.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='197' y1='147.5' x2='186.1' y2='152.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='263' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='205.2' y='143.9' font-size='13' fill='%23334155' text-anchor='middle'%3Eb + 6%3C/text%3E%3Ctext x='94.8' y='143.9' font-size='13' fill='%23334155' text-anchor='middle'%3Eb + 6%3C/text%3E%3Ctext x='150' y='47' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='54.8' y='254.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='245.2' y='254.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-perimetr",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#c0e94f1a"
+    },
+    {
+      "q": "Teng yonli uchburchakning perimetri 50 sm, yon tomoni esa 19 sm ga teng. Uning asosi necha santimetr?",
+      "v": [
+        "31 sm",
+        "16 sm",
+        "12 sm",
+        "25 sm"
+      ],
+      "t": 2,
+      "izoh": "Ikki yon tomon jami 19 · 2 = 38 sm. Asos 50 − 38 = 12 sm. 31 sm — yon tomonni faqat bir marta ayirganda chiqadi. Tekshiramiz: 19 + 19 = 38 sm asos 12 sm dan katta, demak uchburchak mavjud.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,52 84.8,248 215.2,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123.1' y1='151.9' x2='111.7' y2='148.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='188.3' y1='148.1' x2='176.9' y2='151.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='194.6' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3E19 sm%3C/text%3E%3Ctext x='105.4' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3E19 sm%3C/text%3E%3Ctext x='150' y='269' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='41' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='74.2' y='262.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='225.8' y='262.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-perimetr",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#07c2ddc3"
+    },
+    {
+      "q": "Teng yonli uchburchakning perimetri 40 sm va uning barcha tomonlari butun sonlar bilan ifodalanadi. Asosning eng katta mumkin bo'lgan qiymati necha santimetr?",
+      "v": [
+        "20 sm",
+        "19 sm",
+        "13 sm",
+        "18 sm"
+      ],
+      "t": 3,
+      "izoh": "Yon tomonni L deb olsak, asos 40 − 2L bo'ladi. Uchburchak tengsizligiga ko'ra asos ikki yon tomon yig'indisidan kichik: 40 − 2L soni 2L dan kichik, bundan L soni 10 dan katta. Butun L ning eng kichigi 11, unga mos asos 40 − 22 = 18 sm. L = 10 da asos 20 sm bo'lib, 10 + 10 = 20 tenglik hosil bo'ladi va uchburchak yopilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-yonli-perimetr",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#88b047b5"
+    },
+    {
+      "q": "Teng tomonli uchburchakning uchala tomoni ham o'zaro teng. Shunday uchburchakning har bir burchagi necha gradusga teng bo'ladi?",
+      "v": [
+        "60°",
+        "30°",
+        "90°",
+        "180°"
+      ],
+      "t": 0,
+      "izoh": "Uchala tomon teng bo'lgani uchun ularga qarshi yotgan burchaklar ham o'zaro teng. Burchaklar yig'indisi 180° ga teng, demak har biri 180° : 3 = 60°. 180° — bu uchala burchakning yig'indisi, bitta burchak emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,65.1 52,234.9 248,234.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='106.2' y1='153' x2='95.8' y2='147' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='204.2' y1='147' x2='193.8' y2='153' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='228.9' x2='150' y2='240.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='54.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39' y='246.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='246.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-tomonli-xossa",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#3dd5bfc4"
+    },
+    {
+      "q": "Uchburchakning ikkita burchagi 60° dan ekani ma'lum. Bu uchburchak haqida nima deyish mumkin?",
+      "v": [
+        "U to'g'ri burchakli uchburchak",
+        "U teng tomonli uchburchak",
+        "U teng yonli, lekin teng tomonli emas",
+        "Bunday uchburchak mavjud emas"
+      ],
+      "t": 1,
+      "izoh": "Uchinchi burchak 180° − 60° − 60° = 60°. Uchala burchak teng bo'lsa, ularga qarshi yotgan tomonlar ham teng bo'ladi. Demak uchburchak teng tomonli. U ayni paytda teng yonli hamdir, lekin javobda eng aniq ta'rif tanlanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,65.1 52,234.9 248,234.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='64,214.1 65.5,215.1 67,216.1 68.3,217.3 69.6,218.6 70.8,219.9 71.8,221.4 72.8,222.9 73.6,224.5 74.3,226.1 74.9,227.8 75.4,229.6 75.7,231.3 75.9,233.1 76,234.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='86.6' y='218.9' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Cpolyline points='224,234.9 224.1,233.1 224.3,231.3 224.6,229.6 225.1,227.8 225.7,226.1 226.4,224.5 227.2,222.9 228.2,221.4 229.2,219.9 230.4,218.6 231.7,217.3 233,216.1 234.5,215.1 236,214.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='213.4' y='218.9' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='150' y='54.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39' y='246.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='246.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-tomonli-xossa",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#82cb3f06"
+    },
+    {
+      "q": "Teng tomonli uchburchakning bir tomoni 2 sm ga uzaytirilib, teng yonli uchburchak hosil qilindi. Yangi uchburchakning eng katta burchagi qayerda joylashadi?",
+      "v": [
+        "Uzaytirilgan tomonning ikki uchida",
+        "Uchala burchak baribir teng qoladi",
+        "Uzaytirilgan tomonga qarshi uchda",
+        "Eng qisqa tomonga qarshi uchda"
+      ],
+      "t": 2,
+      "izoh": "Uzaytirishdan keyin bitta tomon qolgan ikkitasidan uzun bo'lib qoladi. Uchburchakda kattaroq tomonga kattaroq burchak qarshi yotadi. Demak eng katta burchak aynan uzaytirilgan tomonga qarshi turgan uchda joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-tomonli-xossa",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#662d5210"
+    },
+    {
+      "q": "Teng tomonli uchburchakning istalgan uchidagi tashqi burchak necha gradusga teng bo'ladi?",
+      "v": [
+        "60°",
+        "240°",
+        "90°",
+        "120°"
+      ],
+      "t": 3,
+      "izoh": "Teng tomonli uchburchakning har bir ichki burchagi 60° ga teng. Tashqi burchak unga qo'shni bo'lgani uchun 180° − 60° = 120°. Xuddi shu natijani boshqacha ham olish mumkin: tashqi burchaklar yig'indisi 360°, uchtasi teng, demak har biri 360° : 3 = 120°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='117.3,93.4 52,206.6 182.7,206.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='182.7' y1='206.6' x2='248' y2='206.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='89.8' y1='153' x2='79.5' y2='147' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='155.2' y1='147' x2='144.8' y2='153' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='117.4' y1='200.6' x2='117.4' y2='212.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='170.7,185.8 173.9,184.3 177.4,183.2 180.9,182.7 184.5,182.7 188,183.2 191.5,184.3 194.7,185.8 197.7,187.8 200.3,190.3 202.5,193.1 204.3,196.2 205.6,199.5 206.4,203 206.7,206.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='202.7' y='176' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='117.3' y='82.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39' y='218.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='195.7' y='218.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='262.4' y='214.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-tomonli-xossa",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#becee5c6"
+    },
+    {
+      "q": "Bekat oldidagi gulchambar teng tomonli uchburchak shaklida bo'lib, uning bir tomoni 45 sm. Gulchambarning perimetri necha santimetr?",
+      "v": [
+        "135 sm",
+        "90 sm",
+        "180 sm",
+        "15 sm"
+      ],
+      "t": 0,
+      "izoh": "Teng tomonli uchburchakda uchala tomon teng, shuning uchun perimetr 45 · 3 = 135 sm. 90 sm — faqat ikkita tomonning yig'indisi, 15 sm esa tomonni uchga bo'lgandagi xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,65.1 52,234.9 248,234.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='106.2' y1='153' x2='95.8' y2='147' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='204.2' y1='147' x2='193.8' y2='153' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='228.9' x2='150' y2='240.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='255.9' font-size='13' fill='%23334155' text-anchor='middle'%3E45 sm%3C/text%3E%3Ctext x='150' y='54.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39' y='246.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='246.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-tomonli-perimetr",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#e60dd44c"
+    },
+    {
+      "q": "Teng tomonli uchburchakning perimetri 87 sm ga teng. Uning bir tomoni necha santimetr uzunlikda?",
+      "v": [
+        "43,5 sm",
+        "29 sm",
+        "261 sm",
+        "58 sm"
+      ],
+      "t": 1,
+      "izoh": "Perimetr uchta teng tomonning yig'indisi, shuning uchun bir tomon 87 : 3 = 29 sm. 43,5 sm — perimetrni ikkiga bo'lish xatosi, 261 sm esa aksincha ko'paytirish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-tomonli-perimetr",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#2d586f1f"
+    },
+    {
+      "q": "Do'konda uzunligi 2 m bo'lgan dekorativ lenta sotiladi. Teng tomonli uchburchak ramkaning bir tomoni 55 sm bo'lsa, ramkani to'liq bezash uchun shu lenta yetadimi?",
+      "v": [
+        "Ha, yetadi, lekin hech narsa ortmaydi",
+        "Yo'q, yana 35 sm lenta kerak",
+        "Ha, yetadi va 35 sm lenta ortib qoladi",
+        "Yo'q, yana 165 sm lenta kerak"
+      ],
+      "t": 2,
+      "izoh": "Ramkaning perimetri 55 · 3 = 165 sm. Lenta uzunligi 2 m, ya'ni 200 sm. Ayirma 200 − 165 = 35 sm, demak lenta yetadi va 35 sm ortib qoladi. Metrni santimetrga aylantirmaslik bu masalada eng ko'p uchraydigan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,65.1 52,234.9 248,234.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='106.2' y1='153' x2='95.8' y2='147' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='204.2' y1='147' x2='193.8' y2='153' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='228.9' x2='150' y2='240.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='255.9' font-size='13' fill='%23334155' text-anchor='middle'%3E55 sm%3C/text%3E%3Ctext x='213.7' y='145.5' font-size='13' fill='%23334155' text-anchor='middle'%3E55 sm%3C/text%3E%3Ctext x='86.3' y='145.5' font-size='13' fill='%23334155' text-anchor='middle'%3E55 sm%3C/text%3E%3Ctext x='150' y='54.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39' y='246.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='246.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-tomonli-perimetr",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#64a1b068"
+    },
+    {
+      "q": "Teng tomonli uchburchakning perimetri teng yonli uchburchakning perimetriga teng. Teng yonli uchburchakning yon tomoni 17 sm, asosi 20 sm bo'lsa, teng tomonlisining tomoni necha santimetr?",
+      "v": [
+        "54 sm",
+        "27 sm",
+        "19 sm",
+        "18 sm"
+      ],
+      "t": 3,
+      "izoh": "Teng yonli uchburchakning perimetri 17 + 17 + 20 = 54 sm. Teng tomonli uchburchakning perimetri ham 54 sm, uning tomoni esa 54 : 3 = 18 sm. 27 sm — perimetrni ikkiga bo'lgandagi xato; 19 sm esa perimetrni 17 + 20 + 20 = 57 deb noto'g'ri hisoblab, 57 : 3 = 19 chiqargandagi natija.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-tomonli-perimetr",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#fbe616ec"
+    },
+    {
+      "q": "Uchburchak shaklidagi bog' uchastkasining tomonlari 28 m, 35 m va 41 m. Uchastkani ikki qator sim bilan o'rash uchun necha metr sim kerak bo'ladi?",
+      "v": [
+        "208 m",
+        "104 m",
+        "312 m",
+        "52 m"
+      ],
+      "t": 0,
+      "izoh": "Avval perimetrni topamiz: 28 + 35 + 41 = 104 m. Sim ikki qator bo'lgani uchun kerakli uzunlik ikki barobar: 104 · 2 = 208 m. 104 m — faqat bitta qatorga yetadi, 52 m esa perimetrning yarmi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='124.3,93.7 52,206.3 248,206.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='153.8' y='226.9' font-size='13' fill='%23334155' text-anchor='middle'%3E41 m%3C/text%3E%3Ctext x='201.8' y='147.4' font-size='13' fill='%23334155' text-anchor='middle'%3E35 m%3C/text%3E%3Ctext x='72.1' y='148.4' font-size='13' fill='%23334155' text-anchor='middle'%3E28 m%3C/text%3E%3Ctext x='121' y='83.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.2' y='216.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.1' y='215.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perimetr-kontekst",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#ff9216f4"
+    },
+    {
+      "q": "Yugurish yo'lakchasi uchburchak shaklida bo'lib, tomonlari 120 m, 150 m va 180 m. Sarvar shu yo'lakcha bo'ylab uch marta aylandi. U jami necha kilometr yugurgan?",
+      "v": [
+        "0,45 km",
+        "1,35 km",
+        "13,5 km",
+        "0,135 km"
+      ],
+      "t": 1,
+      "izoh": "Bir aylanish uzunligi 120 + 150 + 180 = 450 m. Uch aylanishda 450 · 3 = 1350 m yo'l bosiladi. Kilometrga o'tkazamiz: 1350 m = 1,35 km. 0,45 km — faqat bitta aylanish, 13,5 km esa birlikni noto'g'ri aylantirish natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='125.5,96 52,204 248,204' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='153.8' y='224.6' font-size='13' fill='%23334155' text-anchor='middle'%3E180 m%3C/text%3E%3Ctext x='202.5' y='147.7' font-size='13' fill='%23334155' text-anchor='middle'%3E150 m%3C/text%3E%3Ctext x='72.7' y='148.5' font-size='13' fill='%23334155' text-anchor='middle'%3E120 m%3C/text%3E%3Ctext x='122.2' y='85.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.1' y='213.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.2' y='212.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-kontekst",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#57eed126"
+    },
+    {
+      "q": "Uchburchak shaklidagi stol ustining perimetri 3,6 m. Uning ikkita tomoni 1,3 m va 1,1 m ga teng. Uchinchi tomoni necha metr?",
+      "v": [
+        "2,4 m",
+        "1,8 m",
+        "1,2 m",
+        "0,2 m"
+      ],
+      "t": 2,
+      "izoh": "Ma'lum ikki tomonning yig'indisi 1,3 + 1,1 = 2,4 m. Uchinchi tomon 3,6 − 2,4 = 1,2 m. Tekshiramiz: 1,2 + 1,1 = 2,3 m 1,3 m dan katta, demak uchburchak haqiqatan mavjud.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='136.7,78.7 52,221.3 248,221.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='151.6' y='242.2' font-size='13' fill='%23334155' text-anchor='middle'%3E1,3 m%3C/text%3E%3Ctext x='78.9' y='146.8' font-size='13' fill='%23334155' text-anchor='middle'%3E1,1 m%3C/text%3E%3Ctext x='207.5' y='146.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='135.3' y='67.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.6' y='232.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.6' y='231.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perimetr-kontekst",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#f3181099"
+    },
+    {
+      "q": "Uchburchak shaklidagi maydonning perimetri 90 m. Ikkinchi tomoni birinchisidan 8 m uzun, uchinchi tomoni esa birinchisidan 13 m uzun. Eng uzun tomon necha metr?",
+      "v": [
+        "31 m",
+        "23 m",
+        "30 m",
+        "36 m"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tomonni x deb olamiz: x + (x + 8) + (x + 13) = 3x + 21 = 90. Bundan 3x = 69 va x = 23 m. Tomonlar 23 m, 31 m va 36 m, ularning eng uzuni 36 m. 30 m — perimetrni uchga bo'lgandagi xato natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='119.3,99.9 58,200.1 242,200.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='155' y='220.4' font-size='13' fill='%23334155' text-anchor='middle'%3Ex + 13%3C/text%3E%3Ctext x='196.4' y='147.6' font-size='13' fill='%23334155' text-anchor='middle'%3Ex + 8%3C/text%3E%3Ctext x='72.5' y='148.7' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Ctext x='114.9' y='89.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44.1' y='209.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='256.3' y='208.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perimetr-kontekst",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#b093890a"
+    },
+    {
+      "q": "Teng tomonli uchburchakning tomoni 12 sm. Uning perimetri kvadratning perimetriga teng bo'lsa, kvadratning tomoni necha santimetr?",
+      "v": [
+        "9 sm",
+        "12 sm",
+        "18 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Uchburchakning perimetri 12 · 3 = 36 sm. Kvadratning to'rtta tomoni teng, shuning uchun uning tomoni 36 : 4 = 9 sm. 18 sm — perimetrni ikkiga bo'lgandagi xato, 12 sm esa uchburchak tomonining o'zi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-taqqoslash",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#23aa80a5"
+    },
+    {
+      "q": "Uchburchakning perimetri 24 sm. Uning har bir tomoni ikki barobar orttirilib, yangi uchburchak yasaldi. Yangi uchburchakning perimetri necha santimetr?",
+      "v": [
+        "30 sm",
+        "48 sm",
+        "26 sm",
+        "12 sm"
+      ],
+      "t": 1,
+      "izoh": "Har bir tomon ikki barobar ortsa, ularning yig'indisi ham ikki barobar ortadi: 24 · 2 = 48 sm. 30 sm — har bir tomonga 2 sm qo'shilgan deb tushunilganda, 26 sm — perimetrga 2 sm qo'shilganda, 12 sm esa aksincha ikkiga bo'lganda chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perimetr-taqqoslash",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#727d307f"
+    },
+    {
+      "q": "Ikkita uchburchak shaklidagi bayroqcha bir xil perimetrga ega. Birinchisining tomonlari 9 sm, 12 sm va 15 sm. Ikkinchisi teng tomonli bo'lsa, uning tomoni necha santimetr?",
+      "v": [
+        "36 sm",
+        "18 sm",
+        "12 sm",
+        "9 sm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi bayroqchaning perimetri 9 + 12 + 15 = 36 sm. Ikkinchisi teng tomonli, demak uning tomoni 36 : 3 = 12 sm. 18 sm — perimetrni ikkiga bo'lgandagi xato, 36 sm esa perimetrning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='122.6,103 52,197 248,197' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='154.8' y='217.3' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='201.3' y='148.3' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='71' y='149.2' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='118.4' y='92.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.9' y='206' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.4' y='205.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-taqqoslash",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#3609befe"
+    },
+    {
+      "q": "Ikki uchastka ham uchburchak shaklida va ularning perimetrlari farqi 14 m. Birinchi uchastkaning tomonlari 20 m, 24 m va 30 m. Ikkinchisining perimetri kattaroq bo'lsa, u necha metr?",
+      "v": [
+        "60 m",
+        "74 m",
+        "104 m",
+        "88 m"
+      ],
+      "t": 3,
+      "izoh": "Birinchi uchastkaning perimetri 20 + 24 + 30 = 74 m. Ikkinchisi kattaroq va farq 14 m, demak uning perimetri 74 + 14 = 88 m. 60 m — 14 m ni qo'shish o'rniga ayirganda chiqadi, 74 m esa birinchi uchastkaning perimetri.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='130.8,97.9 52,202.1 248,202.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='153.1' y='222.8' font-size='13' fill='%23334155' text-anchor='middle'%3E30 m%3C/text%3E%3Ctext x='205.3' y='148' font-size='13' fill='%23334155' text-anchor='middle'%3E24 m%3C/text%3E%3Ctext x='75.3' y='148.6' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3Ctext x='128.1' y='87.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38' y='211.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.2' y='210.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perimetr-taqqoslash",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#399bc53e"
+    },
+    {
+      "q": "Uchburchakning tomonlari 3 : 4 : 5 nisbatda, perimetri esa 60 sm ga teng. Uning eng uzun tomoni necha santimetr?",
+      "v": [
+        "25 sm",
+        "20 sm",
+        "15 sm",
+        "12 sm"
+      ],
+      "t": 0,
+      "izoh": "Tomonlarni 3x, 4x va 5x deb olamiz. Perimetr 12x = 60 sm, bundan x = 5 sm. Tomonlar 15 sm, 20 sm va 25 sm bo'ladi, eng uzuni 25 sm. 20 sm — o'rtadagi tomon, 12 sm esa nisbat bo'laklarining yig'indisi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='122.6,103 52,197 248,197' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='154.8' y='217.3' font-size='13' fill='%23334155' text-anchor='middle'%3E5x%3C/text%3E%3Ctext x='201.3' y='148.3' font-size='13' fill='%23334155' text-anchor='middle'%3E4x%3C/text%3E%3Ctext x='71' y='149.2' font-size='13' fill='%23334155' text-anchor='middle'%3E3x%3C/text%3E%3Ctext x='118.4' y='92.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.9' y='206' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.4' y='205.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-nisbat",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#9ecd13e3"
+    },
+    {
+      "q": "Uchburchak shaklidagi maydonning tomonlari 2 : 5 : 6 nisbatda. Eng qisqa tomoni 16 m bo'lsa, maydonning perimetri necha metr?",
+      "v": [
+        "208 m",
+        "104 m",
+        "88 m",
+        "64 m"
+      ],
+      "t": 1,
+      "izoh": "Nisbat bo'lagini x deb olamiz. Eng qisqa tomon 2x = 16 m, bundan x = 8 m. Tomonlar 16 m, 40 m va 48 m, perimetr esa 16 + 40 + 48 = 104 m. 208 m — x ni 16 deb olib yuborganda, 88 m esa eng qisqa tomonni qo'shishni unutganda chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='92.8,124.5 52,175.5 248,175.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='162.7' y='190.8' font-size='13' fill='%23334155' text-anchor='middle'%3E6x%3C/text%3E%3Ctext x='187' y='150.4' font-size='13' fill='%23334155' text-anchor='middle'%3E5x%3C/text%3E%3Ctext x='55.6' y='151.6' font-size='13' fill='%23334155' text-anchor='middle'%3E2x%3C/text%3E%3Ctext x='81.6' y='118.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.3' y='182.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.8' y='181.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-nisbat",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#5470eb3a"
+    },
+    {
+      "q": "Teng yonli uchburchakning asosi yon tomoniga 3 : 4 nisbatda. Uchburchakning perimetri 88 sm bo'lsa, uning asosi necha santimetr?",
+      "v": [
+        "32 sm",
+        "22 sm",
+        "24 sm",
+        "44 sm"
+      ],
+      "t": 2,
+      "izoh": "Asosni 3x, har bir yon tomonni 4x deb olamiz. Perimetr 3x + 4x + 4x = 11x = 88 sm, bundan x = 8 sm. Asos 3x = 24 sm, yon tomon esa 32 sm. 32 sm — yon tomonning o'zi, 22 sm esa perimetrni to'rtga bo'lgandagi xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,52 70.7,248 229.3,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='115.9' y1='152.3' x2='104.8' y2='147.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='195.2' y1='147.7' x2='184.1' y2='152.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='269' font-size='13' fill='%23334155' text-anchor='middle'%3E3x%3C/text%3E%3Ctext x='202.8' y='143.2' font-size='13' fill='%23334155' text-anchor='middle'%3E4x%3C/text%3E%3Ctext x='97.2' y='143.2' font-size='13' fill='%23334155' text-anchor='middle'%3E4x%3C/text%3E%3Ctext x='150' y='41' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='59.1' y='261.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='240.9' y='261.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perimetr-nisbat",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#e48ce669"
+    },
+    {
+      "q": "Uchburchakning tomonlari 4 : 6 : 9 nisbatda. Eng uzun tomon eng qisqasidan 20 sm uzun bo'lsa, uchburchakning perimetri necha santimetr?",
+      "v": [
+        "95 sm",
+        "60 sm",
+        "38 sm",
+        "76 sm"
+      ],
+      "t": 3,
+      "izoh": "Tomonlar 4x, 6x va 9x ko'rinishida. Eng uzun bilan eng qisqa tomon farqi 9x − 4x = 5x = 20 sm, bundan x = 4 sm. Tomonlar 16 sm, 24 sm va 36 sm, perimetr 16 + 24 + 36 = 76 sm. 95 sm — farqni 4x deb olib x = 5 chiqargandagi xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='125.8,126.9 52,173.1 248,173.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='157.9' y='192.2' font-size='13' fill='%23334155' text-anchor='middle'%3E9x%3C/text%3E%3Ctext x='203.7' y='151.1' font-size='13' fill='%23334155' text-anchor='middle'%3E6x%3C/text%3E%3Ctext x='72.1' y='151.6' font-size='13' fill='%23334155' text-anchor='middle'%3E4x%3C/text%3E%3Ctext x='118.8' y='117.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.2' y='179.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.8' y='179.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-nisbat",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#dc672c14"
+    },
+    {
+      "q": "Uchburchakning bir burchagi qolgan ikkita burchagining yig'indisiga teng ekani ma'lum. Bunday uchburchak qaysi turga kiradi?",
+      "v": [
+        "To'g'ri burchakli",
+        "O'tkir burchakli",
+        "O'tmas burchakli",
+        "Berilganlar yetarli emas"
+      ],
+      "t": 0,
+      "izoh": "Shu burchakni α, qolgan ikkitasining yig'indisini S deb belgilaymiz. Shart bo'yicha α = S, ichki burchaklar yig'indisi esa α + S = 180°. Demak 2α = 180° va α = 90°. Uchburchakda 90° li burchak bor, ya'ni u to'g'ri burchakli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tur-burchakka-kora",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#0d37d71d"
+    },
+    {
+      "q": "Uchburchakning burchaklari 35°, 55° va 90° ga teng. Bu uchburchak burchaklariga ko'ra qaysi turga kiradi?",
+      "v": [
+        "O'tkir burchakli",
+        "To'g'ri burchakli",
+        "O'tmas burchakli",
+        "Teng yonli"
+      ],
+      "t": 1,
+      "izoh": "Burchaklardan biri aynan 90° ga teng. Bitta burchagi to'g'ri burchak bo'lgan uchburchak to'g'ri burchakli deyiladi. Qolgan ikki burchak albatta o'tkir bo'ladi, chunki ularning yig'indisi 90° dan oshmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='183.5,104 52,196 248,196' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='172.8,111.5 180.3,122.1 191,114.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='71.7,182.2 72.2,183.1 72.8,184 73.3,184.9 73.8,185.9 74.2,186.8 74.6,187.8 74.9,188.8 75.2,189.8 75.4,190.8 75.6,191.8 75.8,192.9 75.9,193.9 76,195 76,196' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='90.2' y='188' font-size='13' fill='%23334155' text-anchor='middle'%3E35°%3C/text%3E%3Cpolyline points='224,196 224.1,194.4 224.2,192.7 224.5,191.1 224.9,189.5 225.4,187.9 226,186.4 226.7,184.9 227.5,183.5 228.4,182.1 229.4,180.8 230.5,179.6 231.7,178.4 232.9,177.3 234.2,176.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='212.5' y='181.5' font-size='13' fill='%23334155' text-anchor='middle'%3E55°%3C/text%3E%3Ctext x='188.6' y='93.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.6' y='204.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.1' y='205' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tur-burchakka-kora",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#d7ccf690"
+    },
+    {
+      "q": "Uchburchakning ikkita burchagi 25° va 43° ga teng. Shu uchburchakning turini burchaklariga ko'ra aniqlang.",
+      "v": [
+        "O'tkir burchakli",
+        "To'g'ri burchakli",
+        "O'tmas burchakli",
+        "Berilganlar yetarli emas"
+      ],
+      "t": 2,
+      "izoh": "Uchinchi burchak 180° − 25° − 43° = 112°. Bu burchak 90° dan katta, ya'ni o'tmas. Tarkibida bitta o'tmas burchagi bor uchburchak o'tmas burchakli deb ataladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='182.7,119.5 52,180.5 248,180.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='73.7,170.3 74.1,171 74.3,171.7 74.6,172.4 74.8,173.1 75.1,173.9 75.3,174.6 75.4,175.3 75.6,176 75.7,176.8 75.8,177.5 75.9,178.3 76,179 76,179.8 76,180.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='91.1' y='175.8' font-size='13' fill='%23334155' text-anchor='middle'%3E25°%3C/text%3E%3Cpolyline points='224,180.5 224,179.2 224.1,177.9 224.3,176.7 224.6,175.4 224.9,174.1 225.2,172.9 225.7,171.7 226.2,170.5 226.7,169.4 227.4,168.2 228.1,167.1 228.8,166.1 229.6,165.1 230.5,164.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='210.8' y='169.8' font-size='13' fill='%23334155' text-anchor='middle'%3E43°%3C/text%3E%3Ctext x='189.8' y='110.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.3' y='187.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.6' y='187.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tur-burchakka-kora",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#4bc55f7d"
+    },
+    {
+      "q": "Uchburchakning burchaklari x, 2x va 2x + 20° ko'rinishida ifodalangan. Shu uchburchak qaysi turga kiradi?",
+      "v": [
+        "To'g'ri burchakli",
+        "O'tmas burchakli",
+        "Teng tomonli",
+        "O'tkir burchakli"
+      ],
+      "t": 3,
+      "izoh": "Yig'indini yozamiz: x + 2x + (2x + 20°) = 5x + 20° = 180°. Bundan 5x = 160° va x = 32°. Burchaklar 32°, 64° va 84° bo'ladi. Uchalasi ham 90° dan kichik, demak uchburchak o'tkir burchakli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tur-burchakka-kora",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#26160676"
+    },
+    {
+      "q": "Duradgor uzunligi 20 sm dan bo'lgan uchta bir xil reykadan uchburchak yasadi. Yasalgan uchburchak tomonlariga ko'ra qanday ataladi?",
+      "v": [
+        "Teng tomonli",
+        "Teng yonli, lekin teng tomonli emas",
+        "Har xil tomonli",
+        "To'g'ri burchakli"
+      ],
+      "t": 0,
+      "izoh": "Uchala tomon 20 sm dan, ya'ni bir-biriga teng. Uchala tomoni teng bo'lgan uchburchak teng tomonli deb ataladi. U ayni paytda teng yonli ham hisoblanadi, chunki teng tomonli uchburchak teng yonlining xususiy holidir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,65.1 52,234.9 248,234.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='106.2' y1='153' x2='95.8' y2='147' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='204.2' y1='147' x2='193.8' y2='153' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='228.9' x2='150' y2='240.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='255.9' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='213.7' y='145.5' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='86.3' y='145.5' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='150' y='54.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39' y='246.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261' y='246.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tur-tomonga-kora",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#ed265142"
+    },
+    {
+      "q": "Tomonlarining uzunliklari 9 sm, 9 sm va 14 sm bo'lgan uchburchak qanday ataladi va uning qaysi burchaklari o'zaro teng?",
+      "v": [
+        "Teng tomonli; barcha burchaklar",
+        "Teng yonli; 14 sm li tomonga yopishgan burchaklar",
+        "Har xil tomonli; teng burchak yo'q",
+        "Teng yonli; 9 sm li tomonlarga yopishgan burchaklar"
+      ],
+      "t": 1,
+      "izoh": "Ikkita tomon 9 sm dan teng, demak uchburchak teng yonli. Teng yon tomonlarga qarshi yotgan burchaklar o'zaro teng bo'ladi. Bu burchaklar asos, ya'ni 14 sm li tomonning ikki uchida joylashadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,110.4 52,189.6 248,189.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='104.8' y1='154.7' x2='97.2' y2='145.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='202.8' y1='145.3' x2='195.2' y2='154.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='210.6' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='215.4' y='149.6' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='84.6' y='149.6' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='150' y='99.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.5' y='197.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.5' y='197.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tur-tomonga-kora",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#5190542c"
+    },
+    {
+      "q": "Uchburchakning uchta tomoni ham har xil uzunlikka ega. Bunday uchburchakning burchaklari haqida nima deyish mumkin?",
+      "v": [
+        "Ikkita burchak o'zaro teng",
+        "Uchala burchak o'zaro teng",
+        "Uchala burchak ham har xil",
+        "Albatta bitta to'g'ri burchak bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Teng tomonlarga teng burchaklar qarshi yotadi va bu qoida teskari tomonga ham ishlaydi. Tomonlar bir-biridan farq qilsa, ularga qarshi yotgan burchaklar ham farq qiladi. Demak har xil tomonli uchburchakda uchala burchak ham har xil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tur-tomonga-kora",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#63b24d3a"
+    },
+    {
+      "q": "Fermerda uzunligi 6 m, 6 m, 6 m va 10 m bo'lgan to'rtta ustun bor. U shulardan uchtasini tanlab uchburchak yasamoqchi. Qanday turdagi uchburchaklar hosil qilishi mumkin?",
+      "v": [
+        "Faqat teng tomonli",
+        "Faqat teng yonli, teng tomonli hosil bo'lmaydi",
+        "Har xil tomonli",
+        "Teng tomonli yoki teng yonli"
+      ],
+      "t": 3,
+      "izoh": "Uchta 6 m li ustundan teng tomonli uchburchak chiqadi, shuning uchun teng tomonli hosil bo'lmaydi degan variant noto'g'ri. Ikkita 6 m va bitta 10 m li ustundan esa teng yonli uchburchak hosil bo'ladi, chunki 6 + 6 = 12 m 10 m dan katta va tengsizlik bajariladi. Har xil tomonli uchburchak uchun uchta har xil uzunlik kerak, bunday to'plam esa yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tur-tomonga-kora",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#3e176c4c"
+    },
+    {
+      "q": "Uchburchakning ikki burchagi 50° va 70° ga teng. Uchinchi burchakning bissektrisasi shu burchakni necha gradusli qismlarga ajratadi?",
+      "v": [
+        "30°",
+        "60°",
+        "120°",
+        "15°"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi burchak 180° − 50° − 70° = 60°. Bissektrisa burchakni teng ikkiga bo'ladi, demak har bir qism 60° : 2 = 30°. 60° — bo'linmagan burchakning o'zi, 15° esa uni to'rtga bo'lgandagi xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='188.7,68.5 52,231.5 248,231.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='188.7' y1='68.5' x2='160' y2='231.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67.4,213.1 68.5,214.1 69.6,215.2 70.6,216.3 71.5,217.5 72.3,218.7 73.1,220 73.8,221.4 74.3,222.7 74.8,224.1 75.3,225.6 75.6,227 75.8,228.5 76,230 76,231.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='88.3' y='218.6' font-size='13' fill='%23334155' text-anchor='middle'%3E50°%3C/text%3E%3Cpolyline points='224,231.5 224.1,229.4 224.4,227.3 224.8,225.3 225.4,223.3 226.2,221.4 227.2,219.5 228.3,217.7 229.6,216.1 231,214.5 232.6,213.1 234.2,211.8 236,210.7 237.9,209.7 239.8,208.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='215.2' y='212.6' font-size='13' fill='%23334155' text-anchor='middle'%3E70°%3C/text%3E%3Ctext x='192.2' y='57.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.5' y='242.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.6' y='243.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='159.2' y='250.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bissektrisa-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#35e76e56"
+    },
+    {
+      "q": "ABC uchburchakda ∠A = 64°, ∠B = 76° ga teng. C uchidan o'tkazilgan bissektrisa BC tomon bilan qanday burchak hosil qiladi?",
+      "v": [
+        "40°",
+        "20°",
+        "10°",
+        "38°"
+      ],
+      "t": 1,
+      "izoh": "Avval uchinchi burchakni topamiz: ∠C = 180° − 64° − 76° = 40°. Bissektrisa ∠C ni teng ikkiga bo'ladi, shuning uchun u BC tomon bilan 40° : 2 = 20° li burchak hosil qiladi. 40° — bo'linishdan oldingi burchak, 38° esa 76° ni ikkiga bo'lgandagi xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='85.9,82 52,218 248,218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='248' y1='218' x2='68.3' y2='152.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='80.1,105.3 82,105.7 83.9,105.9 85.8,106 87.7,105.9 89.6,105.7 91.5,105.3 93.3,104.8 95.1,104.2 96.9,103.4 98.5,102.4 100.1,101.3 101.6,100.2 103,98.8 104.3,97.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='98.3' y='124' font-size='13' fill='%23334155' text-anchor='middle'%3E64°%3C/text%3E%3Cpolyline points='57.8,194.7 60,195.4 62.1,196.2 64.1,197.3 66,198.5 67.8,199.9 69.4,201.5 70.9,203.2 72.2,205.1 73.4,207.1 74.3,209.1 75,211.3 75.6,213.5 75.9,215.7 76,218' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='83.5' y='197.4' font-size='13' fill='%23334155' text-anchor='middle'%3E76°%3C/text%3E%3Ctext x='79.5' y='72.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.1' y='229.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262' y='227.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='54.1' y='151.9' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#901d2fb8"
+    },
+    {
+      "q": "Teng yonli uchburchakning uchidagi burchak 36° ga teng. Asosdagi burchaklardan biriga o'tkazilgan bissektrisa uni necha gradusli qismlarga ajratadi?",
+      "v": [
+        "72°",
+        "18°",
+        "36°",
+        "54°"
+      ],
+      "t": 2,
+      "izoh": "Asosdagi burchaklar teng va har biri (180° − 36°) : 2 = 72° ga teng. Bissektrisa 72° ni teng ikkiga bo'ladi, demak har bir qism 72° : 2 = 36°. 18° — uchdagi burchakni ikkiga bo'lgandagi natija, 72° esa bo'linmagan asos burchagi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,52 86.3,248 213.7,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='86.3' y1='248' x2='189.4' y2='173.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='123.9' y1='151.9' x2='112.4' y2='148.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='187.6' y1='148.1' x2='176.1' y2='151.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='142.6,74.8 143.6,75.1 144.7,75.4 145.7,75.6 146.8,75.8 147.8,75.9 148.9,76 150,76 151.1,76 152.2,75.9 153.2,75.8 154.3,75.6 155.3,75.4 156.4,75.1 157.4,74.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='96' font-size='13' fill='%23334155' text-anchor='middle'%3E36°%3C/text%3E%3Ctext x='150' y='41' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='75.8' y='262.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='224.2' y='262.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='204' y='173.6' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#8766cfd6"
+    },
+    {
+      "q": "Uchburchak shaklidagi bog' uchastkasining burchaklari 4 : 5 : 6 nisbatda. Eng katta burchakka o'tkazilgan bissektrisa uni necha gradusli ikki qismga ajratadi?",
+      "v": [
+        "72°",
+        "24°",
+        "12°",
+        "36°"
+      ],
+      "t": 3,
+      "izoh": "Burchaklarni 4x, 5x va 6x deb belgilaymiz. Ularning yig'indisi 15x = 180°, bundan x = 12°. Eng katta burchak 6x = 72°. Bissektrisa — burchak uchidan chiqib uni teng ikkiga bo'luvchi nur, shuning uchun har bir qism 72° : 2 = 36°. 72° — bo'linmagan burchakning o'zi, 24° esa eng kichik burchak 4x = 48° ni ikkiga bo'lgandagi xato, 12° — bo'lakning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='171.4,72.8 52,205.4 248,205.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='171.4' y1='72.8' x2='157.5' y2='205.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='155.4,90.6 156.2,91.3 157,92 157.9,92.6 158.8,93.2 159.7,93.7 160.7,94.2 161.7,94.7 162.7,95.1 163.7,95.5 164.7,95.8 165.7,96.1 166.8,96.3 167.8,96.5 168.9,96.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='155.2' y='113.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='76,205.4 76,204 75.8,202.5 75.6,201.1 75.3,199.7 74.9,198.3 74.5,197 73.9,195.6 73.3,194.3 72.6,193.1 71.8,191.9 71,190.7 70.1,189.6 69.1,188.6 68.1,187.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='88.5' y='193.1' font-size='13' fill='%23334155' text-anchor='middle'%3E4x%3C/text%3E%3Cpolyline points='236,184.6 234.5,185.6 233,186.6 231.7,187.8 230.4,189.1 229.2,190.4 228.2,191.9 227.2,193.4 226.4,195 225.7,196.6 225.1,198.3 224.6,200.1 224.3,201.8 224.1,203.6 224,205.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='213.4' y='189.4' font-size='13' fill='%23334155' text-anchor='middle'%3E5x%3C/text%3E%3Ctext x='173.8' y='62' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.2' y='215.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.5' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#e906d2fe"
+    },
+    {
+      "q": "Ikki uchburchak umumiy uchga ega bo'lib, ularning shu uchdagi burchaklari vertikal burchaklardir. Birinchi uchburchakning qolgan ikki burchagi 55° va 65°. Ikkinchi uchburchakning qolgan ikki burchagi yig'indisi necha gradus?",
+      "v": [
+        "120°",
+        "60°",
+        "180°",
+        "110°"
+      ],
+      "t": 0,
+      "izoh": "Birinchi uchburchakning umumiy uchdagi burchagi 180° − 55° − 65° = 60°. Vertikal burchaklar teng bo'lgani uchun ikkinchi uchburchakda ham shu uchdagi burchak 60° ga teng. Demak uning qolgan ikki burchagi yig'indisi 180° − 60° = 120°. 60° — umumiy uchdagi burchakning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='156.5,157 81.5,219.8 171.8,244' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='156.5,157 218.5,104.9 138.7,56' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='99.9,204.4 100.9,205.7 101.8,207 102.7,208.5 103.4,209.9 104,211.5 104.5,213 104.9,214.6 105.2,216.2 105.4,217.9 105.5,219.5 105.5,221.2 105.3,222.8 105.1,224.4 104.7,226' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='120.6' y='215.2' font-size='13' fill='%23334155' text-anchor='middle'%3E55°%3C/text%3E%3Cpolyline points='148.6,237.8 149.2,235.9 149.9,234.1 150.8,232.4 151.8,230.7 152.9,229.1 154.2,227.7 155.6,226.3 157.1,225 158.7,223.9 160.3,222.9 162.1,222.1 163.9,221.3 165.7,220.8 167.6,220.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='144.8' y='218.5' font-size='13' fill='%23334155' text-anchor='middle'%3E65°%3C/text%3E%3Ctext x='171.2' y='164.1' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='70.3' y='233.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='174.9' y='262.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='230.3' y='99.6' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='136.5' y='45.2' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshma-shakl-tahlil",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#daa24721"
+    },
+    {
+      "q": "Uchburchakning bir tomoniga parallel to'g'ri chiziq o'tkazilib, kichik uchburchak ajratildi. Ajratilgan kichik uchburchakning burchaklari haqida nima deyish mumkin?",
+      "v": [
+        "Ular katta uchburchak burchaklaridan ikki marta kichik",
+        "Ular katta uchburchak burchaklariga teng",
+        "Ularning yig'indisi 90° ga teng",
+        "Ular haqida hech narsa deyib bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Parallel to'g'ri chiziqlar kesuvchi bilan mos burchaklar hosil qiladi, mos burchaklar esa teng. Umumiy uchdagi burchak ikkala uchburchakda bir xil qoladi. Demak kichik uchburchakning uchala burchagi katta uchburchak burchaklariga mos ravishda teng bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,80 52,220 248,220' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='105.9' y1='143' x2='194.1' y2='143' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='69' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.5' y='230.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.5' y='230.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='93.5' y='138.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='206.5' y='138.5' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshma-shakl-tahlil",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#b23b5f44"
+    },
+    {
+      "q": "ABC teng yonli uchburchakda AB = AC va asos BC. AB tomonida D nuqta shunday olindiki, CD = CB bo'ldi. ∠A = 40° bo'lsa, ∠ADC necha gradusga teng?",
+      "v": [
+        "70°",
+        "40°",
+        "110°",
+        "140°"
+      ],
+      "t": 2,
+      "izoh": "ABC teng yonli uchburchakda asosdagi burchaklar (180° − 40°) : 2 = 70° dan. CD = CB bo'lgani uchun BDC uchburchak ham teng yonli va uning asosi BD. Demak ∠BDC = ∠DBC = 70°. ∠ADC esa ∠BDC ga qo'shni yoyilgan burchakni to'ldiradi: ∠ADC = 180° − 70° = 110°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,52 78.7,248 221.3,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='221.3' y1='248' x2='112' y2='156.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='120' y1='152.1' x2='108.7' y2='147.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='191.3' y1='147.9' x2='180' y2='152.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='164.7' y1='208.4' x2='172.4' y2='199.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='160.9' y1='205.1' x2='168.6' y2='195.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='152.5' y1='254' x2='152.5' y2='242' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='147.5' y1='254' x2='147.5' y2='242' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='141.8,74.6 142.9,74.9 144.1,75.3 145.2,75.5 146.4,75.7 147.6,75.9 148.8,76 150,76 151.2,76 152.4,75.9 153.6,75.7 154.8,75.5 155.9,75.3 157.1,74.9 158.2,74.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='96' font-size='13' fill='%23334155' text-anchor='middle'%3E40°%3C/text%3E%3Ctext x='150' y='41' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='67.6' y='262.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='232.4' y='262.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='99.7' y='151.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshma-shakl-tahlil",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#40d2ad43"
+    },
+    {
+      "q": "Uchburchakning ikki tomoni 5 sm va 12 sm ga teng. Uchinchi tomon butun son bo'lib, uchburchak teng yonli bo'lsa, uning perimetri necha santimetr?",
+      "v": [
+        "22 sm",
+        "17 sm",
+        "34 sm",
+        "29 sm"
+      ],
+      "t": 3,
+      "izoh": "Teng yonli bo'lishi uchun uchinchi tomon yo 5 sm, yo 12 sm bo'lishi kerak. 5 sm bo'lsa tomonlar 5, 5 va 12 bo'ladi, lekin 5 + 5 = 10 sm 12 dan kichik — bunday uchburchak mavjud emas. Demak uchinchi tomon 12 sm va perimetr 5 + 12 + 12 = 29 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshma-shakl-tahlil",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#f885a518"
+    },
+    {
+      "q": "Uchburchak shaklidagi uchastkaning ikki burchagi o'zaro teng, uchinchi burchagi esa ular yig'indisidan 28° kichik. Uchastkaning teng burchaklari necha gradusdan?",
+      "v": [
+        "52°",
+        "76°",
+        "38°",
+        "45°"
+      ],
+      "t": 0,
+      "izoh": "Teng burchaklarning har birini x deb olamiz. Uchinchi burchak ularning yig'indisidan 28° kichik, ya'ni 2x − 28°. Yig'indi: x + x + (2x − 28°) = 180°, bundan 4x = 208° va x = 52°. Tekshiramiz: 52° + 52° + 76° = 180°. 76° — uchinchi burchakning o'zi, 38° — ishorani chalkashtirib 2x + 28° olgandagi natija, 45° esa 180° ni oddiy 4 ga bo'lgandagi xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshma-shakl-tahlil",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#5f3409b9"
+    },
+    {
+      "q": "Teng yonli uchburchakning asosidagi tashqi burchak 115° ga teng. Shu uchburchakning uchidagi burchak necha gradus?",
+      "v": [
+        "65°",
+        "50°",
+        "115°",
+        "80°"
+      ],
+      "t": 1,
+      "izoh": "Asosdagi ichki burchak 180° − 115° = 65°. Teng yonli uchburchakda asosdagi ikkala burchak teng, ularning yig'indisi 130°. Uchdagi burchak 180° − 130° = 50°. 65° — bu asosdagi ichki burchakning o'zi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='117.3,79.9 52,220.1 182.7,220.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='182.7' y1='220.1' x2='248' y2='220.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='90.1' y1='152.5' x2='79.2' y2='147.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='155.4' y1='147.5' x2='144.6' y2='152.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='172.6,198.4 175.8,197.1 179.1,196.4 182.5,196.1 186,196.3 189.3,197 192.6,198.2 195.6,199.9 198.4,201.9 200.8,204.3 202.9,207.1 204.5,210.1 205.7,213.3 206.5,216.7 206.7,220.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='204.2' y='190.4' font-size='13' fill='%23334155' text-anchor='middle'%3E115°%3C/text%3E%3Cpolyline points='107.2,101.7 108.5,102.2 109.9,102.7 111.4,103.2 112.8,103.5 114.3,103.7 115.8,103.9 117.3,103.9 118.8,103.9 120.3,103.7 121.8,103.5 123.2,103.2 124.7,102.7 126.1,102.2 127.4,101.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='117.3' y='123.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='117.3' y='68.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='39.8' y='232.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='194.9' y='232.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='262.1' y='229.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-tashqi-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#1fe0a710"
+    },
+    {
+      "q": "Teng yonli uchburchakning uchidagi tashqi burchak 128° ga teng bo'lsa, uning asosidagi burchagi necha gradus?",
+      "v": [
+        "52°",
+        "128°",
+        "64°",
+        "26°"
+      ],
+      "t": 2,
+      "izoh": "Uchdagi ichki burchak 180° − 128° = 52°. Asosdagi burchaklar teng va ularning yig'indisi 180° − 52° = 128°, demak har biri 128° : 2 = 64°. Bu natijani qisqaroq ham olish mumkin: uchdagi tashqi burchak asosdagi ikki burchak yig'indisiga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,117.3 86.3,248 213.7,248' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='117.3' x2='181.9' y2='52' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123.5' y1='185.3' x2='112.8' y2='180' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='187.2' y1='180' x2='176.5' y2='185.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='160.5,138.9 163.8,136.9 166.8,134.5 169.3,131.6 171.3,128.4 172.8,124.8 173.7,121.1 174,117.3 173.7,113.5 172.8,109.8 171.3,106.3 169.3,103 166.8,100.1 163.8,97.7 160.5,95.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='190' y='121.3' font-size='13' fill='%23334155' text-anchor='middle'%3E128°%3C/text%3E%3Cpolyline points='96.8,226.4 98.5,227.3 100.1,228.4 101.6,229.5 103.1,230.8 104.4,232.2 105.6,233.7 106.7,235.3 107.6,236.9 108.4,238.7 109.1,240.5 109.6,242.3 110,244.2 110.2,246.1 110.3,248' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='120.2' y='230.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='106.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='73.9' y='260.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='226.1' y='260.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='185' y='41.3' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-tashqi-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#74f63d89"
+    },
+    {
+      "q": "Teng tomonli uchburchakning bir tomoni davom ettirildi. Hosil bo'lgan tashqi burchak shu uchdagi ichki burchakdan necha gradus katta?",
+      "v": [
+        "60°",
+        "120°",
+        "30°",
+        "180°"
+      ],
+      "t": 0,
+      "izoh": "Teng tomonli uchburchakning ichki burchagi 60° ga teng, unga qo'shni tashqi burchak esa 180° − 60° = 120°. Ularning farqi 120° − 60° = 60°. 180° — bu ikkalasining yig'indisi, farqi emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-yonli-tashqi-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#8378c44b"
+    },
+    {
+      "q": "Teng yonli uchburchakning asosidagi tashqi burchak uning uchidagi ichki burchakdan 40° katta. Uchidagi burchak necha gradusga teng?",
+      "v": [
+        "40°",
+        "140°",
+        "100°",
+        "70°"
+      ],
+      "t": 2,
+      "izoh": "Asosdagi ichki burchakni b deb olamiz. U holda asosdagi tashqi burchak 180° − b, uchdagi burchak esa 180° − 2b bo'ladi. Shart bo'yicha 180° − b = (180° − 2b) + 40°, bundan b = 40°. Uchdagi burchak 180° − 80° = 100°. 40° — bu asosdagi ichki burchak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-yonli-tashqi-burchak",
+      "id": "matematika_plan_m02-uchburchak-turlari-burchaklari-va-tomonlari#e7a57f79"
+    }
+  ]
+}

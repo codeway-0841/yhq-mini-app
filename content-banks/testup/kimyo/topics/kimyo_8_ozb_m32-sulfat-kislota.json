@@ -1,0 +1,486 @@
+{
+  "nom": "32-mavzu. Sulfat kislota",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Sulfat kislotaning molekular formulasi qanday?",
+      "v": [
+        "H2SO4",
+        "H2SO3",
+        "H2S",
+        "HSO3"
+      ],
+      "t": 0,
+      "izoh": "Sulfat kislota — H2SO4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#d5c151f2"
+    },
+    {
+      "q": "Sulfat kislotani olish uchun qanday sxema asosidagi reaksiyalar amalga oshiriladi?",
+      "v": [
+        "FeS2 → SO2 → SO3 → H2SO4",
+        "S → H2S → SO2 → H2SO4",
+        "SO3 → SO2 → S → H2SO4",
+        "FeS2 → SO3 → SO2 → H2SO4"
+      ],
+      "t": 0,
+      "izoh": "Sxema: FeS2 → SO2 → SO3 → H2SO4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#05b93be1"
+    },
+    {
+      "q": "Sulfat kislota qanday tashqi ko'rinishga ega?",
+      "v": [
+        "Rangsiz, hidsiz, og'ir moysimon suyuqlik",
+        "Sariq rangli, o'tkir hidli suyuqlik",
+        "Rangsiz, uchuvchan suyuqlik",
+        "Oq kristall modda"
+      ],
+      "t": 0,
+      "izoh": "Sulfat kislota — rangsiz, hidsiz, og'ir moysimon suyuqlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#6d2e0584"
+    },
+    {
+      "q": "96 % li konsentrlangan sulfat kislotaning zichligi qancha?",
+      "v": [
+        "1,84 g/cm3",
+        "1,0 g/cm3",
+        "2,0 g/cm3",
+        "0,96 g/cm3"
+      ],
+      "t": 0,
+      "izoh": "96 % li konsentrlangan H2SO4 zichligi 1,84 g/cm3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#032a3132"
+    },
+    {
+      "q": "Sulfat kislotani suvda eritishda qanday qoida bajarilishi kerak?",
+      "v": [
+        "Sulfat kislotani suvga aralashtirib turgan holda quyish kerak",
+        "Suvni sulfat kislotaga quyish kerak",
+        "Ikkalasi bir vaqtda quyiladi",
+        "Avval suvni qizdirib keyin quyiladi"
+      ],
+      "t": 0,
+      "izoh": "Kislota suvga quyiladi, aksincha emas!",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#2326f9f6"
+    },
+    {
+      "q": "Suvni sulfat kislotaga quyish mumkinmi?",
+      "v": [
+        "Yo'q, mumkin emas",
+        "Ha, har doim mumkin",
+        "Faqat sovuq suvni",
+        "Faqat qaynagan suvni"
+      ],
+      "t": 0,
+      "izoh": "Suvni sulfat kislotaga quyish mumkin emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#ab567175"
+    },
+    {
+      "q": "Suyultirilgan sulfat kislota rux bilan qanday reaksiyaga kirishadi?",
+      "v": [
+        "Zn + H2SO4 = ZnSO4 + H2",
+        "Zn + H2SO4 = ZnSO3 + H2O",
+        "Zn + 2H2SO4 = Zn(SO4)2 + H2",
+        "Zn + H2SO4 = ZnS + H2O"
+      ],
+      "t": 0,
+      "izoh": "Zn + H2SO4 = ZnSO4 + H2↑.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#b7e2e7ee"
+    },
+    {
+      "q": "Suyultirilgan sulfat kislota alyuminiy bilan reaksiya tenglamasini toping.",
+      "v": [
+        "2Al + 3H2SO4 = Al2(SO4)3 + 3H2",
+        "Al + H2SO4 = AlSO4 + H2",
+        "2Al + H2SO4 = Al2SO4 + H2",
+        "Al + 3H2SO4 = Al(SO4)3 + 3H2"
+      ],
+      "t": 0,
+      "izoh": "2Al + 3H2SO4 = Al2(SO4)3 + 3H2↑.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#85c05047"
+    },
+    {
+      "q": "Suyultirilgan sulfat kislota qaysi metallar bilan reaksiyaga kirishib vodorod ajratadi?",
+      "v": [
+        "Faollik qatorida vodoroddan oldin turgan metallar bilan",
+        "Faollik qatorida vodoroddan keyin turgan metallar bilan",
+        "Barcha metallar bilan",
+        "Faqat ishqoriy metallar bilan"
+      ],
+      "t": 0,
+      "izoh": "Vodoroddan oldin turgan metallar vodorod ajratadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#0f6c73fa"
+    },
+    {
+      "q": "CuO + H2SO4 reaksiyasida qanday moddalar hosil bo'ladi?",
+      "v": [
+        "CuSO4 va H2O",
+        "CuSO3 va H2",
+        "CuS va H2O",
+        "Cu(OH)2 va SO2"
+      ],
+      "t": 0,
+      "izoh": "CuO + H2SO4 = CuSO4 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#ab0fe947"
+    },
+    {
+      "q": "ZnO + H2SO4 reaksiyasi mahsulotlarini toping.",
+      "v": [
+        "ZnSO4 va H2O",
+        "ZnSO3 va H2",
+        "ZnS va H2O2",
+        "Zn(OH)2 va SO3"
+      ],
+      "t": 0,
+      "izoh": "ZnO + H2SO4 = ZnSO4 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#b76808bb"
+    },
+    {
+      "q": "2NaOH + H2SO4 reaksiyasida qanday moddalar hosil bo'ladi?",
+      "v": [
+        "Na2SO4 va 2H2O",
+        "NaHSO4 va H2O",
+        "Na2SO3 va H2O",
+        "Na2S va 2H2O"
+      ],
+      "t": 0,
+      "izoh": "2NaOH + H2SO4 = Na2SO4 + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#26250baf"
+    },
+    {
+      "q": "Mg(OH)2 + H2SO4 reaksiyasi mahsulotlarini toping.",
+      "v": [
+        "MgSO4 va 2H2O",
+        "MgSO3 va H2O",
+        "MgS va 2H2O",
+        "Mg(HSO4)2"
+      ],
+      "t": 0,
+      "izoh": "Mg(OH)2 + H2SO4 = MgSO4 + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#583191c1"
+    },
+    {
+      "q": "3H2SO4 + Ca3(PO4)2 reaksiyasida qanday moddalar hosil bo'ladi?",
+      "v": [
+        "3CaSO4 va 2H3PO4",
+        "CaSO4 va H3PO3",
+        "3CaS va 2H3PO4",
+        "Ca3(SO4)3 va H3PO4"
+      ],
+      "t": 0,
+      "izoh": "3H2SO4 + Ca3(PO4)2 = 3CaSO4 + 2H3PO4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#458ca01a"
+    },
+    {
+      "q": "Sulfat kislotaning kuchsiz va uchuvchan kislotalarning tuzlari bilan reaksiyasida nima hosil bo'ladi?",
+      "v": [
+        "Yangi tuz va yangi kislota",
+        "Faqat yangi tuz",
+        "Faqat yangi kislota",
+        "Metall va suv"
+      ],
+      "t": 0,
+      "izoh": "Yangi tuz va yangi kislota hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#19b9cadd"
+    },
+    {
+      "q": "Konsentrlangan sulfat kislota qanday xossaga ega?",
+      "v": [
+        "Juda kuchli oksidlovchi",
+        "Juda kuchli qaytaruvchi",
+        "Neytral modda",
+        "Kuchsiz kislota"
+      ],
+      "t": 0,
+      "izoh": "Konsentrlangan H2SO4 juda kuchli oksidlovchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#b66691ba"
+    },
+    {
+      "q": "Konsentrlangan sulfat kislota qaysi metallarga ta'sir etmaydi?",
+      "v": [
+        "Kumush (Ag), oltin (Au) va platina (Pt) ga",
+        "Rux (Zn) va temir (Fe) ga",
+        "Natriy (Na) va kaliy (K) ga",
+        "Mis (Cu) va alyuminiy (Al) ga"
+      ],
+      "t": 0,
+      "izoh": "Konsentrlangan H2SO4 Ag, Au, Pt ga ta'sir etmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#3e6326c7"
+    },
+    {
+      "q": "Konsentratsiyasi 100 % ga yaqin sulfat kislota qaysi metallga ta'sir etmaydi?",
+      "v": [
+        "Temir (Fe) ga",
+        "Mis (Cu) ga",
+        "Rux (Zn) ga",
+        "Magniy (Mg) ga"
+      ],
+      "t": 0,
+      "izoh": "100 % ga yaqin konsentratsiyada Fe ga ta'sir etmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#f5b218f7"
+    },
+    {
+      "q": "Konsentrlangan sulfat kislota mis bilan reaksiya tenglamasini toping.",
+      "v": [
+        "Cu + 2H2SO4(kons) = CuSO4 + SO2 + 2H2O",
+        "Cu + H2SO4 = CuSO4 + H2",
+        "Cu + H2SO4 = CuSO3 + H2O",
+        "2Cu + H2SO4 = Cu2SO4 + H2"
+      ],
+      "t": 0,
+      "izoh": "Cu + 2H2SO4(kons) = CuSO4 + SO2↑ + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#f5634878"
+    },
+    {
+      "q": "Cu + 2H2SO4(kons) reaksiyasida sulfat kislota qanday rol o'ynaydi?",
+      "v": [
+        "Oksidlovchi",
+        "Qaytaruvchi",
+        "Katalizator",
+        "Neytral"
+      ],
+      "t": 0,
+      "izoh": "Sulfat kislotadagi oltingugurt +6 dan +4 ga o'tadi — oksidlovchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#54f5f3a2"
+    },
+    {
+      "q": "Konsentrlangan sulfat kislota qaynatilganda uglerod bilan qanday reaksiyaga kirishadi?",
+      "v": [
+        "C + 2H2SO4 = CO2 + 2SO2 + 2H2O",
+        "C + H2SO4 = CO + SO2 + H2",
+        "C + H2SO4 = CS2 + 2H2O",
+        "2C + H2SO4 = 2CO2 + H2S"
+      ],
+      "t": 0,
+      "izoh": "C + 2H2SO4 = CO2 + 2SO2 + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#4ed6688a"
+    },
+    {
+      "q": "Konsentrlangan sulfat kislota shakar, qog'oz, yog'ochga qanday ta'sir qiladi?",
+      "v": [
+        "Ulardagi sellulozadan suvni tortib olib, ko'mirga aylantiradi",
+        "Ularni eritib yuboradi",
+        "Ularga ta'sir qilmaydi",
+        "Ularning rangini oqartiradi"
+      ],
+      "t": 0,
+      "izoh": "Suvni tortib oladi va ularni ko'mirga aylantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#68a9cdc8"
+    },
+    {
+      "q": "Sulfat kislota va sulfatlarni aniqlash uchun qaysi reaktiv ishlatiladi?",
+      "v": [
+        "Bariy xlorid BaCl2",
+        "Qo'rg'oshin nitrat Pb(NO3)2",
+        "Kumush nitrat AgNO3",
+        "Natriy gidroksid NaOH"
+      ],
+      "t": 0,
+      "izoh": "Bariyning eruvchan tuzi BaCl2 ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#c3b126fe"
+    },
+    {
+      "q": "Sulfat ionini aniqlashda hosil bo'ladigan cho'kma qanday?",
+      "v": [
+        "Suvda ham, nitrat kislotada ham erimaydigan oq cho'kma BaSO4",
+        "Qora cho'kma PbS",
+        "Ko'k cho'kma Cu(OH)2",
+        "Sariq cho'kma AgI"
+      ],
+      "t": 0,
+      "izoh": "BaSO4 oq cho'kma, suvda va HNO3 da erimaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#144ab129"
+    },
+    {
+      "q": "H2SO4 + BaCl2 reaksiyasi mahsulotlarini toping.",
+      "v": [
+        "BaSO4 va 2HCl",
+        "BaCl2 va H2O",
+        "BaSO3 va 2HCl",
+        "Ba(HSO4)2 va H2"
+      ],
+      "t": 0,
+      "izoh": "H2SO4 + BaCl2 = BaSO4↓ + 2HCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#02ed0b81"
+    },
+    {
+      "q": "Na2SO4 + BaCl2 reaksiyasi mahsulotlarini toping.",
+      "v": [
+        "BaSO4 va 2NaCl",
+        "BaCl2 va Na2SO3",
+        "BaSO3 va 2NaCl",
+        "NaCl va Ba(OH)2"
+      ],
+      "t": 0,
+      "izoh": "Na2SO4 + BaCl2 = BaSO4↓ + 2NaCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#84d774ae"
+    },
+    {
+      "q": "Suvsiz natriy sulfat qaysi sohalarda ishlatiladi?",
+      "v": [
+        "Shisha va soda ishlab chiqarishda, tibbiyot va veterinariyada",
+        "Faqat qurilishda",
+        "Faqat oziq-ovqat sanoatida",
+        "Faqat to'qimachilikda"
+      ],
+      "t": 0,
+      "izoh": "Shisha, soda, tibbiyot va veterinariyada ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#4ed76666"
+    },
+    {
+      "q": "Glauber tuzining formulasi qanday?",
+      "v": [
+        "Na2SO4·10H2O",
+        "Na2SO4·7H2O",
+        "CaSO4·2H2O",
+        "MgSO4·7H2O"
+      ],
+      "t": 0,
+      "izoh": "Na2SO4·10H2O — Glauber tuzi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#9eac6445"
+    },
+    {
+      "q": "Tabiiy gips 150—170 °C da qizdirilganda qanday moddaga aylanadi?",
+      "v": [
+        "Alebastr CaSO4·1/2H2O ga",
+        "Suvsiz CaSO4 ga",
+        "CaO ga",
+        "CaS ga"
+      ],
+      "t": 0,
+      "izoh": "3/4 qism suvni chiqarib yuborib, alebastrga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#618e5946"
+    },
+    {
+      "q": "Alebastr qanday sohada muhim xomashyo hisoblanadi?",
+      "v": [
+        "Qurilishda",
+        "Tibbiyotda",
+        "Oziq-ovqat sanoatida",
+        "Tuproqni o'g'itlashda"
+      ],
+      "t": 0,
+      "izoh": "Alebastr muhim qurilish xomashyosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#187ca92d"
+    },
+    {
+      "q": "Gips tibbiyotda nima uchun ishlatiladi?",
+      "v": [
+        "Gipsli bog'lamlar qo'yish uchun",
+        "Dori tayyorlash uchun",
+        "Antiseptik sifatida",
+        "Miya operatsiyalarida"
+      ],
+      "t": 0,
+      "izoh": "Gips tibbiyotda gipsli bog'lamlar uchun ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#fad63a54"
+    },
+    {
+      "q": "Mis kuporosining formulasi qanday?",
+      "v": [
+        "CuSO4·5H2O",
+        "CuSO4·2H2O",
+        "CuSO4",
+        "CuSO4·7H2O"
+      ],
+      "t": 0,
+      "izoh": "Mis kuporosi — CuSO4·5H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m32-sulfat-kislota#501b688b"
+    }
+  ]
+}

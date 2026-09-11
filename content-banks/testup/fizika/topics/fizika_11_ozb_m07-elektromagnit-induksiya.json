@@ -1,0 +1,486 @@
+{
+  "nom": "07-mavzu. Elektromagnit Induksiya",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektromagnit induksiya hodisasini kashf qilgan olim kim?",
+      "v": [
+        "Maykl Faradey",
+        "Andre Amper",
+        "Genrix Ersted",
+        "Xristian Lens"
+      ],
+      "t": 0,
+      "izoh": "Ingliz olimi Maykl Faradey 1831-yilda elektromagnit induksiya hodisasini kashf qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#99230226"
+    },
+    {
+      "q": "Elektromagnit induksiya hodisasi deb nimaga aytiladi?",
+      "v": [
+        "Magnit oqimining o'zgarishi tufayli berk konturda elektr tokining hosil bo'lish hodisasiga",
+        "Tokli o'tkazgich atrofida magnit maydon hosil bo'lish hodisasiga",
+        "Ikki tokli o'tkazgichning o'zaro ta'sirlashuv hodisasiga",
+        "Zaryadli zarraga magnit maydon tomonidan kuch ta'sir qilish hodisasiga"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydon oqimi o'zgarishi tufayli berk konturda tok hosil bo'lishi elektromagnit induksiya hodisasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#23109f1e"
+    },
+    {
+      "q": "Faradey elektromagnit induksiya hodisasini qaysi yilda kashf qilgan?",
+      "v": [
+        "1831-yilda",
+        "1820-yilda",
+        "1876-yilda",
+        "1801-yilda"
+      ],
+      "t": 0,
+      "izoh": "Faradey bu masala ustida 10 yildan ortiq ishlab, 1831-yilda ijobiy hal qildi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#a2a42585"
+    },
+    {
+      "q": "Tokning magnit ta'sirini 1820-yilda kashf qilgan olim kim?",
+      "v": [
+        "Ersted",
+        "Faradey",
+        "Lens",
+        "Maksvell"
+      ],
+      "t": 0,
+      "izoh": "1820-yil daniyalik olim G. Ersted tokning magnit ta'sirini kashf qilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#129c8880"
+    },
+    {
+      "q": "Faradey tajribasida doimiy magnit g'altak ichiga kiritilayotganda galvanometr strelkasi qanday harakatlanadi?",
+      "v": [
+        "Bir tomonga og'adi",
+        "Nolni ko'rsatib turadi",
+        "Tebranib turadi",
+        "Teskari tomonga og'adi"
+      ],
+      "t": 0,
+      "izoh": "Magnit kiritilayotganda g'altakda tok hosil bo'lib, galvanometr strelkasi og'adi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#e82d313a"
+    },
+    {
+      "q": "Doimiy magnit g'altak ichida harakatlantirmasdan tinch turib qolsa, galvanometr nimani ko'rsatadi?",
+      "v": [
+        "Nolni",
+        "Maksimal qiymatni",
+        "Kichik tokni",
+        "Doimiy og'ishni"
+      ],
+      "t": 0,
+      "izoh": "Magnit tinch bo'lganda magnit oqimi o'zgarmaydi, g'altakda tok hosil bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#b0735735"
+    },
+    {
+      "q": "Magnitni g'altak ichidan sug'urib olinganda galvanometr strelkasi qanday og'adi?",
+      "v": [
+        "Magnit kiritilgandagiga teskari tomonga",
+        "Magnit kiritilgandagi bilan bir xil tomonga",
+        "Umuman og'maydi",
+        "Avval bir, keyin boshqa tomonga ikki marta"
+      ],
+      "t": 0,
+      "izoh": "Magnit chiqarilganda magnit oqimi teskari yo'nalishda o'zgaradi, strelka teskari tomonga og'adi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#327ea34d"
+    },
+    {
+      "q": "Magnit tinch, g'altak esa harakatga keltirilsa, induksion tok hosil bo'ladimi?",
+      "v": [
+        "Ha, chunki g'altakni kesib o'tayotgan magnit oqimi o'zgaradi",
+        "Yo'q, chunki magnit harakatlanmayapti",
+        "Yo'q, chunki g'altakda tok manbai yo'q",
+        "Ha, lekin faqat g'altak juda tez harakatlansa"
+      ],
+      "t": 0,
+      "izoh": "Muhimi — kontur orqali o'tayotgan magnit oqimining o'zgarishi; u har qanday yo'l bilan o'zgartirilsa EYuK hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#2caae18f"
+    },
+    {
+      "q": "Induksion tok deb nimaga aytiladi?",
+      "v": [
+        "Berk konturni kesib o'tayotgan magnit oqimi o'zgarganda unda hosil bo'lgan elektr tokiga",
+        "Galvanik element hosil qilgan doimiy tokga",
+        "Magnit ichida oqayotgan tokga",
+        "O'tkazgichni qizdiradigan o'zgaruvchan tokka"
+      ],
+      "t": 0,
+      "izoh": "Konturda yuzaga kelgan tok induksion tok deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#5b58e124"
+    },
+    {
+      "q": "Induksiya elektr yurituvchi kuchi (EYuK) deb nimaga aytiladi?",
+      "v": [
+        "Konturda induksion tokni hosil qiluvchi elektr yurituvchi kuchga",
+        "Tok manbaini zaryadlovchi kuchga",
+        "O'tkazgich uchlaridagi doimiy kuchlanishga",
+        "Zaryadlarni magnit maydonda harakatlantiruvchi Lorens kuchiga"
+      ],
+      "t": 0,
+      "izoh": "Induksion tokni hosil qiluvchi EYuK induksiya elektr yurituvchi kuch deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#16a5031e"
+    },
+    {
+      "q": "Induksion tok berk konturda qachon yuzaga keladi?",
+      "v": [
+        "Faqat kontur orqali o'tayotgan magnit induksiya oqimi o'zgarganda",
+        "Kontur magnit maydonda tinch turgan holatda ham",
+        "Kontur maydonga parallel harakatlanganda har qanday holda",
+        "Magnit maydon kuchli bo'lsa, oqim o'zgarmasa ham"
+      ],
+      "t": 0,
+      "izoh": "Induksion tok faqat magnit oqimi o'zgarib turgan vaqt davomidagina mavjud bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#a1c0c89e"
+    },
+    {
+      "q": "Elektromagnit induksiya qonuni (Faradey–Maksvell qonuni) qanday ifodalanadi?",
+      "v": [
+        "Ei = −ΔΦ/Δt",
+        "Ei = ΔΦ·Δt",
+        "Ei = −Δt/ΔΦ",
+        "Ei = Φ·t"
+      ],
+      "t": 0,
+      "izoh": "Yopiq konturda hosil bo'lgan EYuK son qiymati jihatidan magnit oqimi o'zgarish tezligiga teng, ishorasi jihatidan qarama-qarshi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#e4f4ccf5"
+    },
+    {
+      "q": "Faradey–Maksvell qonunidagi minus ishorasi nimani bildiradi?",
+      "v": [
+        "Induksion tokning yo'nalishini, u Lens qoidasi bilan tushuntiriladi",
+        "EYuK har doim manfiy ekanligini",
+        "Magnit oqimining kamayishini",
+        "Kontur qarshiligining manfiy qiymatini"
+      ],
+      "t": 0,
+      "izoh": "(−) ishora konturda vujudga keladigan induksion tokning yo'nalishi bilan bog'liq bo'lib, Lens qoidasiga ko'ra tushuntiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#acc634bf"
+    },
+    {
+      "q": "XBSda induksiya elektr yurituvchi kuchining birligi nima?",
+      "v": [
+        "Volt",
+        "Veber",
+        "Genri",
+        "Tesla"
+      ],
+      "t": 0,
+      "izoh": "XBSda induksiya EYuK birligi qilib volt (V) qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#38ac8d08"
+    },
+    {
+      "q": "Kontur N ta o'ramdan iborat bo'lsa, induksiya EYuK qanday hisoblanadi?",
+      "v": [
+        "Ei = −N·ΔΦ/Δt",
+        "Ei = −ΔΦ/(N·Δt)",
+        "Ei = −N·ΔΦ·Δt",
+        "Ei = −ΔΦ·Δt/N"
+      ],
+      "t": 0,
+      "izoh": "N o'ramli konturda induksiya EYuK Ei = −N·ΔΦ/Δt ifoda bilan hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#8287f3ba"
+    },
+    {
+      "q": "G'altakdagi o'ramlar soni 4 marta oshirilsa, unda hosil bo'ladigan induksiya EYuK qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "4 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ei = −N·ΔΦ/Δt ga ko'ra EYuK o'ramlar soniga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#7616b8ec"
+    },
+    {
+      "q": "Magnit oqimining o'zgarish tezligi 2 marta oshirilsa, konturda hosil bo'ladigan induksiya EYuK qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Induksiya EYuK magnit oqimi o'zgarish tezligiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#c3bd51aa"
+    },
+    {
+      "q": "1 volt qanday birliklar orqali ifodalanishi mumkin?",
+      "v": [
+        "1 Wb/s",
+        "1 H/s",
+        "1 A/s",
+        "1 T/s"
+      ],
+      "t": 0,
+      "izoh": "[Ei] = ΔΦ/Δt = Wb/s = V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#8da7965a"
+    },
+    {
+      "q": "Magnit oqimining o'zgarish tezligi ΔΦ/Δt ning birligi nima?",
+      "v": [
+        "Wb/s",
+        "Wb·s",
+        "T·s",
+        "H/A"
+      ],
+      "t": 0,
+      "izoh": "ΔΦ/Δt birligi veber/sekund (Wb/s) bo'lib, u voltga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#1899fa81"
+    },
+    {
+      "q": "Induksion tokning yo'nalishini aniqlash qoidasini kashf qilgan olim kim?",
+      "v": [
+        "X. Lens",
+        "M. Faradey",
+        "G. Ersted",
+        "J. Maksvell"
+      ],
+      "t": 0,
+      "izoh": "Rus olimi X. Lens induksion tok yo'nalishini aniqlash qoidasini topdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#24ac5598"
+    },
+    {
+      "q": "Lens qoidasi qanday ta'riflanadi?",
+      "v": [
+        "Berk konturda hosil bo'lgan induksion tok o'zining magnit maydoni bilan shu tokni hosil qilayotgan magnit oqimining o'zgarishiga qarshilik ko'rsatadi",
+        "Induksion tok har doim tashqi tok yo'nalishida yo'naladi",
+        "Induksion tok magnit oqimining o'sishini tezlashtiradi",
+        "Induksion tokning yo'nalishi kontur qarshiligiga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Lens qoidasi: induksion tok shunday yo'nalganki, u o'z maydoni bilan uni hosil qilayotgan oqim o'zgarishiga qarshilik ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#69f0ae39"
+    },
+    {
+      "q": "Lens tajribasida magnit butun alyuminiy halqaga yaqinlashtirilganda halqa qanday harakatlanadi?",
+      "v": [
+        "Magnitdan uzoqlashadi (qochadi)",
+        "Magnitga yaqinlashadi",
+        "Joyida qimir etmaydi",
+        "O'z o'qi atrofida aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Halqada hosil bo'lgan induksion tokning maydoni magnitning yaqinlashishiga qarshilik ko'rsatadi, halqa magnitdan qochadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#466fc71d"
+    },
+    {
+      "q": "Lens tajribasida magnitni butun halqadan uzoqlashtirsak, halqa qanday harakatlanadi?",
+      "v": [
+        "Magnitga tortilib, unga ergashadi",
+        "Magnitdan uzoqlashadi",
+        "Joyida tinch qoladi",
+        "Tebana boshlaydi"
+      ],
+      "t": 0,
+      "izoh": "Magnit uzoqlashtirilganda halqa magnitga tortilib, unga ergashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#07c17d15"
+    },
+    {
+      "q": "Nima uchun kesik halqaga magnit yaqinlashtirilganda ular o'zaro ta'sirlashmaydi?",
+      "v": [
+        "Kontur berk bo'lmaganligi uchun halqada induksion tok yuzaga kelmaydi",
+        "Alyuminiy magnitlanmaydigan modda bo'lgani uchun",
+        "Halqa juda yengil bo'lgani uchun",
+        "Magnit maydoni kesik joydan o'ta olmagani uchun"
+      ],
+      "t": 0,
+      "izoh": "Kesik halqada kontur berk bo'lmagani uchun induksion tok hosil bo'lmaydi, ta'sirlashuv kuzatilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#81e5c175"
+    },
+    {
+      "q": "Berk kontur deb qanday konturga aytiladi?",
+      "v": [
+        "Simli ramkaning uchlari bir-biriga to'g'ridan-to'g'ri yoki biror asbob orqali ulangan konturga",
+        "Uchlari ochiq qoldirilgan ramkaga",
+        "Faqat aylana shaklidagi o'tkazgichga",
+        "Ichiga magnit kiritilgan g'altakka"
+      ],
+      "t": 0,
+      "izoh": "Simli ramkaning uchlari bir-biriga (yoki asbob orqali) ulangan bo'lsa, uni berk kontur deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#c5211cd6"
+    },
+    {
+      "q": "Kontur orqali o'tayotgan magnit oqimi o'zgarmasa, konturda induksiya EYuK qanday bo'ladi?",
+      "v": [
+        "Nolga teng",
+        "Maksimal qiymatga teng",
+        "Kontur qarshiligiga teng",
+        "Doimiy, lekin noldan farqli"
+      ],
+      "t": 0,
+      "izoh": "ΔΦ = 0 bo'lganda Ei = −ΔΦ/Δt = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#2fcdd8d3"
+    },
+    {
+      "q": "Yopiq konturda hosil bo'lgan elektromagnit induksiya EYuK son qiymati jihatidan nimaga teng?",
+      "v": [
+        "Konturni kesib o'tgan magnit oqimi o'zgarish tezligiga",
+        "Magnit oqimining o'ziga",
+        "Kontur qarshiligi bilan tok kuchi ko'paytmasiga",
+        "Magnit maydon induksiyasining kvadratiga"
+      ],
+      "t": 0,
+      "izoh": "EYuK son qiymati jihatidan konturni kesib o'tgan magnit oqimi o'zgarishiga (o'zgarish tezligiga) teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#521cac6e"
+    },
+    {
+      "q": "Induksion tok hosil qiluvchi EYuK manbai sifatida nima vazifani bajaradi?",
+      "v": [
+        "Konturda doimiy ravishda o'zgarib turgan magnit oqimi",
+        "Konturga ulangan galvanik element",
+        "Konturdagi doimiy zaryad",
+        "Galvanometr magnitining o'zagi"
+      ],
+      "t": 0,
+      "izoh": "Konturda magnit oqimining o'zgarib turishi natijasida hosil bo'lgan EYuK tashqi manba vazifasini bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#96712ef3"
+    },
+    {
+      "q": "Konturdan o'tgan magnit oqimi 0,2 s davomida 5 mWb ga o'zgargan bo'lsa, konturda hosil bo'lgan induksiya EYuK moduli qancha?",
+      "v": [
+        "25 mV",
+        "10 mV",
+        "1 mV",
+        "250 mV"
+      ],
+      "t": 0,
+      "izoh": "|Ei| = ΔΦ/Δt = 5·10⁻³/0,2 = 0,025 V = 25 mV.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#d3d021d8"
+    },
+    {
+      "q": "Magnit oqimi 0,4 s ichida 8 Wb ga tekis o'zgarsa, 250 o'ramli g'altakda hosil bo'lgan induksiya EYuK moduli qancha bo'ladi?",
+      "v": [
+        "5000 V",
+        "500 V",
+        "1250 V",
+        "50 V"
+      ],
+      "t": 0,
+      "izoh": "|Ei| = N·ΔΦ/Δt = 250·8/0,4 = 5000 V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#762bb275"
+    },
+    {
+      "q": "Magnit oqimining o'sishi natijasida hosil bo'lgan induksion tokning magnit maydoni qanday yo'naladi?",
+      "v": [
+        "O'sayotgan oqimga qarshi yo'naladi",
+        "O'sayotgan oqim bilan bir xil yo'naladi",
+        "Har doim magnit qutbiga tomon yo'naladi",
+        "Kontur tekisligida yotadi"
+      ],
+      "t": 0,
+      "izoh": "Lens qoidasiga ko'ra induksion tok maydoni oqimning o'sishiga qarshilik ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#5fc2498e"
+    },
+    {
+      "q": "Konturni kesib o'tayotgan magnit oqimi kamayganda, induksion tokning o'z magnit maydoni qanday ta'sir qiladi?",
+      "v": [
+        "Kamayishga qarshilik ko'rsatib, oqimni saqlab qolishga intiladi",
+        "Kamayishni tezlashtiradi",
+        "Oqimga ta'sir ko'rsatmaydi",
+        "Oqim yo'nalishini teskari aylantiradi"
+      ],
+      "t": 0,
+      "izoh": "Lens qoidasiga ko'ra induksion tok o'z maydoni bilan oqimning har qanday o'zgarishiga (shu jumladan kamayishiga) qarshilik ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m07-elektromagnit-induksiya#7b029751"
+    }
+  ]
+}

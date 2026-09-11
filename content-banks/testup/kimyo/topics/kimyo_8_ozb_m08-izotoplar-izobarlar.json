@@ -1,0 +1,486 @@
+{
+  "nom": "08-mavzu. Izotoplar. Izobarlar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Izotoplar deb qanday atomlarga aytiladi?",
+      "v": [
+        "Yadrosida protonlar soni bir xil, neytronlar soni turlicha bo'lgan atomlarga",
+        "Yadro zaryadlari turlicha, massalari bir xil bo'lgan atomlarga",
+        "Neytronlar soni bir xil, protonlar soni turlicha bo'lgan atomlarga",
+        "Massalari va zaryadlari butunlay bir xil bo'lgan atomlarga"
+      ],
+      "t": 0,
+      "izoh": "Protonlar soni bir xil, neytronlar soni turlicha bo'lgan atom turlari izotoplar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#ebb0b3b3"
+    },
+    {
+      "q": "Izobarlar deb qanday atomlarga aytiladi?",
+      "v": [
+        "Yadro zaryadlari turlicha, massalari bir xil bo'lgan atomlarga",
+        "Protonlari bir xil, neytronlari turlicha atomlarga",
+        "Neytronlari bir xil, protonlari turlicha atomlarga",
+        "Kimyoviy xossalari turlicha, massalari bir xil molekulalarga"
+      ],
+      "t": 0,
+      "izoh": "Yadro zaryadlari turlicha bo'lib, massalari bir xil bo'lgan atomlar turi izobarlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#15b535be"
+    },
+    {
+      "q": "Izobarlar uchun darslikda keltirilgan misol qaysi?",
+      "v": [
+        "40Ca bilan 40Ar",
+        "35Cl bilan 37Cl",
+        "1H bilan 2H",
+        "10B bilan 11B"
+      ],
+      "t": 0,
+      "izoh": "Izobarlar uchun misol: 40Ca bilan 40Ar — massalari bir xil, zaryadlari turlicha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#c8ca3611"
+    },
+    {
+      "q": "Izotonlar deb qanday elementlarga aytiladi?",
+      "v": [
+        "Yadrolarida neytronlar soni bir xil, ammo protonlar soni bilan farqlanadigan elementlarga",
+        "Protonlari bir xil, neytronlari turlicha elementlarga",
+        "Massalari bir xil, zaryadlari turlicha elementlarga",
+        "Elektronlari soni turlicha ionlarga"
+      ],
+      "t": 0,
+      "izoh": "Neytronlar soni bir xil, ammo protonlar soni bilan farqlanadigan elementlar izotonlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#338a4cb9"
+    },
+    {
+      "q": "Izotonlar uchun darslikda keltirilgan misol qaysi?",
+      "v": [
+        "26Mg bilan 27Al",
+        "40Ca bilan 40Ar",
+        "35Cl bilan 37Cl",
+        "39K bilan 40K"
+      ],
+      "t": 0,
+      "izoh": "Izotonlarga misol: 26Mg bilan 27Al (shuningdek 62Cu bilan 63Zn).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#4fff3e6d"
+    },
+    {
+      "q": "Elementlarning atom massalari kasr sonlar bilan ifodalanishini massalari turlicha atomlarning o'rtacha qiymati deb kim hisoblagan?",
+      "v": [
+        "A.M.Butlerov",
+        "D.I.Mendeleyev",
+        "E.Rezerford",
+        "D.Dalton"
+      ],
+      "t": 0,
+      "izoh": "A.M.Butlerov atom massalari kasr sonlar bo'lsa, bu massalari turlicha atomlarning o'rtacha qiymati deb hisoblagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#952f6356"
+    },
+    {
+      "q": "Elementning atom massasi uning izotoplari massalarining qanday qiymatiga teng?",
+      "v": [
+        "O'rtacha arifmetik qiymatiga",
+        "Eng katta qiymatiga",
+        "Eng kichik qiymatiga",
+        "Yig'indisiga"
+      ],
+      "t": 0,
+      "izoh": "Elementning atom massasi uning izotoplari massalarini o'rtacha arifmetik qiymatiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#9521a026"
+    },
+    {
+      "q": "Xlorning atom massasi qanchaga teng?",
+      "v": [
+        "35,453",
+        "35",
+        "37",
+        "36"
+      ],
+      "t": 0,
+      "izoh": "Xlorning atom massasi — 35,453; bunday massali xlor atomlari tabiatda uchramaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#abe1eea0"
+    },
+    {
+      "q": "Kislorodning atom massasi qanchaga teng?",
+      "v": [
+        "15,9994",
+        "16",
+        "15",
+        "16,5"
+      ],
+      "t": 0,
+      "izoh": "Kislorodning atom massasi — 15,9994.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#ae081346"
+    },
+    {
+      "q": "Vodorodning atom massasi qanchaga teng?",
+      "v": [
+        "1,00787",
+        "1",
+        "2",
+        "1,1"
+      ],
+      "t": 0,
+      "izoh": "Vodorodning atom massasi — 1,00787.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#64b28bf6"
+    },
+    {
+      "q": "Tabiatda xlorning qanday atom massali ikki turdagi atomlari mavjud?",
+      "v": [
+        "35 va 37",
+        "34 va 36",
+        "35 va 36",
+        "36 va 37"
+      ],
+      "t": 0,
+      "izoh": "Tabiatda xlorning atom massasi 35 va 37 bo'lgan ikki turdagi atomlari mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#5ac29037"
+    },
+    {
+      "q": "Kimyoviy element deb qanday atomlar turiga aytiladi?",
+      "v": [
+        "Yadro zaryadlari bir xil bo'lgan atomlar turiga",
+        "Massalari bir xil bo'lgan atomlar turiga",
+        "Neytronlari soni bir xil bo'lgan atomlar turiga",
+        "Elektron qavatlari bir xil bo'lgan atomlar turiga"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy element — bu yadro zaryadlari bir xil bo'lgan atomlar turi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#5c0f5add"
+    },
+    {
+      "q": "Izotoplarning davriy jadvalda joylashuvi qanday?",
+      "v": [
+        "Bir o'rinda joylashadi",
+        "Har biri alohida o'rin egallaydi",
+        "Massasi kattasi pastda joylashadi",
+        "Jadvaldan tashqarida joylashadi"
+      ],
+      "t": 0,
+      "izoh": "Izotoplarning atom massalari turlicha bo'lsa-da, davriy jadvalda bir o'rinda joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#49079e7c"
+    },
+    {
+      "q": "Tabiatda uchraydigan elementlarning deyarli barchasi nimadan iborat?",
+      "v": [
+        "Izotoplarning aralashmasidan",
+        "Bitta izotopdan",
+        "Izobarlarning aralashmasidan",
+        "Izotonlarning aralashmasidan"
+      ],
+      "t": 0,
+      "izoh": "Tabiatda uchraydigan elementlarning deyarli barchasi izotoplarning aralashmasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#1f74949f"
+    },
+    {
+      "q": "Vodorodning nechta tabiiy izotopi mavjud?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "1 ta",
+        "4 ta"
+      ],
+      "t": 0,
+      "izoh": "Vodorodning 2 ta tabiiy izotopi va yadro reaksiyalari natijasida hosil bo'ladigan yana bir izotopi mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#e17e3e12"
+    },
+    {
+      "q": "Protiy — vodorod izotopi: uning yadrosi qanday tarkibga ega va atom massasi qancha?",
+      "v": [
+        "Yadrosida 1 ta proton bor, Ar = 1",
+        "Yadrosida 1 p va 1 n bor, Ar = 2",
+        "Yadrosida 1 p va 2 n bor, Ar = 3",
+        "Yadrosida 2 ta proton bor, Ar = 2"
+      ],
+      "t": 0,
+      "izoh": "Protiy yadrosida 1 ta proton bor, Ar = 1 m.a.b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#617261b0"
+    },
+    {
+      "q": "Deyteriy yadrosining tarkibi qanday?",
+      "v": [
+        "1 ta proton va 1 ta neytron",
+        "1 ta proton va 2 ta neytron",
+        "Faqat 1 ta proton",
+        "2 ta proton va 1 ta neytron"
+      ],
+      "t": 0,
+      "izoh": "Deyteriy yadrosida 1 ta proton va 1 ta neytron bor, Ar = 2 m.a.b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#fc1f2c59"
+    },
+    {
+      "q": "Tritiy yadrosining tarkibi qanday va atom massasi qancha?",
+      "v": [
+        "1 ta proton va 2 ta neytron, Ar = 3",
+        "1 ta proton va 1 ta neytron, Ar = 2",
+        "Faqat 1 ta proton, Ar = 1",
+        "2 ta proton va 2 ta neytron, Ar = 4"
+      ],
+      "t": 0,
+      "izoh": "Tritiy yadrosida 1 ta proton va 2 ta neytron bor, Ar = 3 m.a.b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#0ee8872f"
+    },
+    {
+      "q": "Tritiy qanday hosil bo'ladi?",
+      "v": [
+        "Yadro reaksiyalari natijasida",
+        "Tabiatda erkin holda uchraydi",
+        "Vodorodni qizdirilganda",
+        "Suvni elektroliz qilganda"
+      ],
+      "t": 0,
+      "izoh": "Tritiy — yadro reaksiyalari natijasida hosil bo'ladigan izotop.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#bb23520c"
+    },
+    {
+      "q": "Yoritish chiroqlarida ishlatiladigan argon izotoplari qaysilar?",
+      "v": [
+        "36Ar, 38Ar va 40Ar",
+        "35Ar va 37Ar",
+        "39Ar va 41Ar",
+        "Faqat 40Ar"
+      ],
+      "t": 0,
+      "izoh": "Yoritish chiroqlarida 36Ar, 38Ar va 40Ar izotoplari ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#0166a0b0"
+    },
+    {
+      "q": "36Ar izotopining yadrosida nechtadan proton va neytron bor?",
+      "v": [
+        "18 ta proton va 18 ta neytron",
+        "18 ta proton va 20 ta neytron",
+        "18 ta proton va 22 ta neytron",
+        "36 ta proton va 18 ta neytron"
+      ],
+      "t": 0,
+      "izoh": "N = 36 - 18 = 18; demak, 18 ta proton va 18 ta neytron.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#648676e0"
+    },
+    {
+      "q": "38Ar izotopining yadrosida nechtadan proton va neytron bor?",
+      "v": [
+        "18 ta proton va 20 ta neytron",
+        "18 ta proton va 18 ta neytron",
+        "20 ta proton va 18 ta neytron",
+        "18 ta proton va 22 ta neytron"
+      ],
+      "t": 0,
+      "izoh": "N = 38 - 18 = 20; demak, 18 ta proton va 20 ta neytron.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#e0214bba"
+    },
+    {
+      "q": "40Ar izotopining yadrosida nechtadan proton va neytron bor?",
+      "v": [
+        "18 ta proton va 22 ta neytron",
+        "18 ta proton va 20 ta neytron",
+        "22 ta proton va 18 ta neytron",
+        "18 ta proton va 18 ta neytron"
+      ],
+      "t": 0,
+      "izoh": "N = 40 - 18 = 22; demak, 18 ta proton va 22 ta neytron.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#0d61e0c1"
+    },
+    {
+      "q": "Izotopdagi neytronlar soni qaysi formula bilan hisoblanadi?",
+      "v": [
+        "N = Ar - Z",
+        "N = Ar + Z",
+        "N = Z - Ar",
+        "N = Ar · Z"
+      ],
+      "t": 0,
+      "izoh": "Neytronlar soni N = Ar - Z formuladan foydalanib hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#1548dbdc"
+    },
+    {
+      "q": "Tabiiy borning atom massasi qanchaga teng?",
+      "v": [
+        "10,81",
+        "10",
+        "11",
+        "10,5"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy borning atom massasi 10,81 ga teng bo'lib, 10B va 11B izotoplarining aralashmasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#147305e2"
+    },
+    {
+      "q": "Tabiiy bordagi 10B izotopining foiz miqdori qancha?",
+      "v": [
+        "19 %",
+        "81 %",
+        "50 %",
+        "10,81 %"
+      ],
+      "t": 0,
+      "izoh": "Masala yechimiga ko'ra 10B = 19 %, 11B = 81 %.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#ca2de93c"
+    },
+    {
+      "q": "Tabiiy kaliy qanday izotoplarning aralashmasidan iborat?",
+      "v": [
+        "93 % 39K va 7 % 40K",
+        "50 % 39K va 50 % 40K",
+        "7 % 39K va 93 % 40K",
+        "99 % 39K va 1 % 40K"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy kaliy 93 % 39K va 7 % 40K izotoplarining aralashmasidan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#f7d1c86f"
+    },
+    {
+      "q": "Tabiiy argon qanday izotoplardan iborat?",
+      "v": [
+        "99 % 40Ar, 0,7 % 38Ar va 0,3 % 36Ar",
+        "90 % 36Ar, 7 % 38Ar va 3 % 40Ar",
+        "50 % 40Ar va 50 % 38Ar",
+        "Faqat 40Ar dan"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy argon 99 % 40Ar, 0,7 % 38Ar va 0,3 % 36Ar izotoplaridan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#6ad67c4d"
+    },
+    {
+      "q": "39K izotopining yadrosida nechta neytron bor?",
+      "v": [
+        "20 ta",
+        "19 ta",
+        "39 ta",
+        "21 ta"
+      ],
+      "t": 0,
+      "izoh": "N = 39 - 19 = 20 ta neytron.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#5afff4df"
+    },
+    {
+      "q": "Izotoplar bir-biridan nima bilan farqlanadi?",
+      "v": [
+        "Atom massalari bilan, kimyoviy xossalari bir xil",
+        "Kimyoviy xossalari bilan, massalari bir xil",
+        "Yadro zaryadlari bilan",
+        "Elektronlar soni bilan"
+      ],
+      "t": 0,
+      "izoh": "Izotoplar atom massalari bilan farqlanadi, kimyoviy xossalari bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#a92365f9"
+    },
+    {
+      "q": "Atomning zaryadi bir xil bo'lsa-da, massasi nega turlicha bo'ladi?",
+      "v": [
+        "Yadrosida neytronlar soni har xil bo'lgani uchun",
+        "Elektronlar soni har xil bo'lgani uchun",
+        "Protonlar soni har xil bo'lgani uchun",
+        "Atomlar hajmi har xil bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Element yadrosida neytronlar soni har xil bo'lishi mumkin, shuning uchun zaryad bir xil bo'lsa-da massa turlicha bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#2227c39d"
+    },
+    {
+      "q": "Vodorod izotoplari qanday nomlanadi?",
+      "v": [
+        "Protiy, deyteriy, tritiy",
+        "Alfa, beta, gamma",
+        "Izotop, izobar, izoton",
+        "Kation, anion, atom"
+      ],
+      "t": 0,
+      "izoh": "Vodorod izotoplari: protiy (Ar=1), deyteriy (Ar=2), tritiy (Ar=3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m08-izotoplar-izobarlar#938be5ba"
+    }
+  ]
+}

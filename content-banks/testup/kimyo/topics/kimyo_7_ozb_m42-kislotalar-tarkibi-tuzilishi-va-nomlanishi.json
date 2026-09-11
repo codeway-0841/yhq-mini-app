@@ -1,0 +1,486 @@
+{
+  "nom": "42-mavzu. Kislotalar tarkibi, tuzilishi va nomlanishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kislotalar deb qanday moddalarga aytiladi?",
+      "v": [
+        "Tarkibida metall atomlariga almashina oluvchi vodorod atomlari hamda kislota qoldig'i bo'lgan murakkab moddalarga",
+        "Tarkibida faqat kislorod va vodorod bo'lgan murakkab moddalarga",
+        "Tarkibida metall atomlari va gidroksid guruhi bo'lgan murakkab moddalarga",
+        "Tarkibida metall atomlari va kislota qoldig'i bo'lgan murakkab moddalarga"
+      ],
+      "t": 0,
+      "izoh": "42-§ dagi ta'rif: kislota = almashina oluvchi H + kislota qoldig'i",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#0ed5bb20"
+    },
+    {
+      "q": "Kislotalarning umumiy formulasi qanday ifodalanadi?",
+      "v": [
+        "HnK",
+        "HKn",
+        "KnH",
+        "HK2"
+      ],
+      "t": 0,
+      "izoh": "K – kislota qoldig'i, n – uning valentligi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#f056610e"
+    },
+    {
+      "q": "Kislotalar umumiy formulasidagi n nimani bildiradi?",
+      "v": [
+        "Kislota qoldig'ining valentligini",
+        "Kislota qoldig'idagi atomlar sonini",
+        "Kislota molekulasidagi kislorod atomlari sonini",
+        "Kislotaning molekulyar massasini"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#a4569ce0"
+    },
+    {
+      "q": "Kislotalar tarkibidagi vodorod atomlari soni nimaga teng?",
+      "v": [
+        "Kislota qoldig'ining valentligiga",
+        "Kislota qoldig'idagi kislorod atomlari soniga",
+        "Kislota qoldig'idagi metallmas atomlari soniga",
+        "Har doim 3 ga"
+      ],
+      "t": 0,
+      "izoh": "Vodorod bir valentli bo'lgani uchun H atomlari soni qoldiq valentligiga teng",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#c77fd143"
+    },
+    {
+      "q": "Kislotalarda vodorod kislota qoldig'i bilan qanday bog'lanadi?",
+      "v": [
+        "To'g'ridan-to'g'ri bog' hosil qilgan holda",
+        "Ion bog' bilan",
+        "Kislorod atomi orasida oraliq bog' hosil qilgan holda",
+        "Metall atomi orasida bog'lanadi"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#8c60f96a"
+    },
+    {
+      "q": "H2SO4 kislotasida kislota qoldig'i qaysi?",
+      "v": [
+        "SO4",
+        "SO3",
+        "S",
+        "HSO4"
+      ],
+      "t": 0,
+      "izoh": "Sulfat kislota qoldig'i – SO4",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#af3f0b8c"
+    },
+    {
+      "q": "HNO3 kislotasining nomi nima?",
+      "v": [
+        "Nitrat kislota",
+        "Nitrit kislota",
+        "Azot kislota",
+        "Gidronitrat kislota"
+      ],
+      "t": 0,
+      "izoh": "11-jadval: NO3 qoldig'i – nitrat",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#d678acbf"
+    },
+    {
+      "q": "H2SO3 kislotasi qanday nomlanadi?",
+      "v": [
+        "Sulfit kislota",
+        "Sulfid kislota",
+        "Sulfat kislota",
+        "Gidrosulfat kislota"
+      ],
+      "t": 0,
+      "izoh": "SO3 qoldig'i – sulfit",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#229a28fd"
+    },
+    {
+      "q": "H2S kislotasining nomi nima?",
+      "v": [
+        "Sulfid kislota",
+        "Sulfit kislota",
+        "Sulfat kislota",
+        "Oltingugurt kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#0a319ecd"
+    },
+    {
+      "q": "H3PO4 kislotasi qanday nomlanadi?",
+      "v": [
+        "Ortofosfat kislota",
+        "Metafosfat kislota",
+        "Fosfit kislota",
+        "Pirofosfat kislota"
+      ],
+      "t": 0,
+      "izoh": "PO4 qoldig'i – ortofosfat",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#d6f02fbc"
+    },
+    {
+      "q": "HClO kislotasi qanday nomlanadi?",
+      "v": [
+        "Gipoxlorit kislota",
+        "Xlorat kislota",
+        "Xlorit kislota",
+        "Perxlorat kislota"
+      ],
+      "t": 0,
+      "izoh": "11-jadval: ClO – gipoxlorit, ClO2 – xlorit, ClO3 – xlorat, ClO4 – perxlorat",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#358e027c"
+    },
+    {
+      "q": "HClO4 kislotasining nomi nima?",
+      "v": [
+        "Perxlorat kislota",
+        "Xlorat kislota",
+        "Xlorit kislota",
+        "Gipoxlorit kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#77f406ed"
+    },
+    {
+      "q": "Kislota nomi qanday yasaladi?",
+      "v": [
+        "Kislota qoldig'i nomi + «kislota» so'zlari qo'shiladi",
+        "«Gidro» so'zi + metallmas nomi qo'shiladi",
+        "Metall nomi + kislota qoldig'i nomi qo'shiladi",
+        "Vodorod so'zi + kislota qoldig'i nomi qo'shiladi"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#6cc04c40"
+    },
+    {
+      "q": "Kislotalar moddalarning qaysi toifasiga mansub?",
+      "v": [
+        "Funksional guruhli moddalar toifasiga",
+        "Amfoter moddalar toifasiga",
+        "Oddiy moddalar toifasiga",
+        "Aralashmalar toifasiga"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#4c9367e2"
+    },
+    {
+      "q": "HCN kislotasining nomi nima?",
+      "v": [
+        "Sianid kislota",
+        "Silikat kislota",
+        "Karbonat kislota",
+        "Borat kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#a90d7cba"
+    },
+    {
+      "q": "H3PO4 (ortofosfat kislota) molekulasining nisbiy molekulyar massasi qancha? (H=1, O=16, P=31)",
+      "v": [
+        "98",
+        "96",
+        "82",
+        "100"
+      ],
+      "t": 0,
+      "izoh": "Mr = 3*1 + 31 + 4*16 = 3+31+64 = 98",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#7c6ef660"
+    },
+    {
+      "q": "H2SO4 dagi oltingugurtning massa ulushi taxminan qancha? (H=1, O=16, S=32)",
+      "v": [
+        "32,7%",
+        "16,3%",
+        "48,9%",
+        "65,3%"
+      ],
+      "t": 0,
+      "izoh": "Mr(H2SO4)=98; w(S)=32/98=32,65%",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#6e42b8ea"
+    },
+    {
+      "q": "HF kislotasi qanday nomlanadi?",
+      "v": [
+        "Ftorid kislota",
+        "Xlorid kislota",
+        "Bromid kislota",
+        "Yodid kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#244097a9"
+    },
+    {
+      "q": "HBr kislotasining nomi nima?",
+      "v": [
+        "Bromid kislota",
+        "Bromit kislota",
+        "Perbromat kislota",
+        "Borat kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#e543c0c1"
+    },
+    {
+      "q": "HJ kislotasi qanday nomlanadi?",
+      "v": [
+        "Yodid kislota",
+        "Sianid kislota",
+        "Sulfid kislota",
+        "Nitrit kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#fda073d7"
+    },
+    {
+      "q": "HNO2 kislotasining nomi nima?",
+      "v": [
+        "Nitrit kislota",
+        "Nitrat kislota",
+        "Sulfit kislota",
+        "Sulfat kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#e96639b5"
+    },
+    {
+      "q": "H3PO3 kislotasi qanday nomlanadi?",
+      "v": [
+        "Fosfit kislota",
+        "Ortofosfat kislota",
+        "Metafosfat kislota",
+        "Pirofosfat kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#c4d7c6f1"
+    },
+    {
+      "q": "HPO3 kislotasining nomi nima?",
+      "v": [
+        "Metafosfat kislota",
+        "Fosfit kislota",
+        "Ortofosfat kislota",
+        "Pirofosfat kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#1bd67486"
+    },
+    {
+      "q": "H4P2O7 kislotasi qanday nomlanadi?",
+      "v": [
+        "Pirofosfat kislota",
+        "Metafosfat kislota",
+        "Ortofosfat kislota",
+        "Fosfit kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#f487fc29"
+    },
+    {
+      "q": "H2CrO4 kislotasining nomi nima?",
+      "v": [
+        "Xromat kislota",
+        "Dixromat kislota",
+        "Manganat kislota",
+        "Permanganat kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#23e704e5"
+    },
+    {
+      "q": "H2Cr2O7 kislotasi qanday nomlanadi?",
+      "v": [
+        "Dixromat kislota",
+        "Xromat kislota",
+        "Xlorat kislota",
+        "Xlorit kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#5cb82e41"
+    },
+    {
+      "q": "H2SiO3 kislotasining nomi nima?",
+      "v": [
+        "Silikat kislota",
+        "Sulfit kislota",
+        "Sulfat kislota",
+        "Sulfid kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#b89bcd27"
+    },
+    {
+      "q": "H3BO3 kislotasi qanday nomlanadi?",
+      "v": [
+        "Borat kislota",
+        "Bromit kislota",
+        "Perbromat kislota",
+        "Karbonat kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#c164abe4"
+    },
+    {
+      "q": "HMnO4 kislotasining nomi nima?",
+      "v": [
+        "Permanganat kislota",
+        "Manganat kislota",
+        "Xromat kislota",
+        "Arsenat kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#ff0f171c"
+    },
+    {
+      "q": "H2MnO4 kislotasi qanday nomlanadi?",
+      "v": [
+        "Manganat kislota",
+        "Permanganat kislota",
+        "Metafosfat kislota",
+        "Silikat kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#f1b9f944"
+    },
+    {
+      "q": "HClO3 kislotasining nomi nima?",
+      "v": [
+        "Xlorat kislota",
+        "Perxlorat kislota",
+        "Xlorit kislota",
+        "Gipoxlorit kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#fcd078c4"
+    },
+    {
+      "q": "HClO2 kislotasi qanday nomlanadi?",
+      "v": [
+        "Xlorit kislota",
+        "Xlorat kislota",
+        "Perxlorat kislota",
+        "Gipoxlorit kislota"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m42-kislotalar-tarkibi-tuzilishi-va-nomlanishi#466a0801"
+    }
+  ]
+}

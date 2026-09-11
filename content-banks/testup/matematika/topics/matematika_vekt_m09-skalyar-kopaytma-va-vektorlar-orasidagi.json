@@ -1,0 +1,1609 @@
+{
+  "nom": "Skalyar ko'paytma va vektorlar orasidagi burchak",
+  "bolim": "Koordinatalar va vektorlar",
+  "blok": "vekt",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Koordinata tekisligida a(3; −4) va b(2; 5) vektorlar berilgan. Ularning skalyar ko'paytmasini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "−14",
+        "14",
+        "26",
+        "−26"
+      ],
+      "t": 0,
+      "izoh": "Tekislikda skalyar ko'paytma a·b = x₁·x₂ + y₁·y₂ formulasi bilan topiladi. Demak a·b = 3·2 + (−4)·5 = 6 − 20 = −14. Ikkinchi qo'shiluvchi manfiy bo'lgani uchun natija ham manfiy chiqdi. Javob: −14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "skalyar-koordinata-tekislik",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#2bd87c8a"
+    },
+    {
+      "q": "Anvar daftariga m(−5; 3) va n(−2; −7) vektorlarni yozdi. Bu ikki vektorning skalyar ko'paytmasi qanday songa teng?",
+      "v": [
+        "31",
+        "11",
+        "−31",
+        "−11"
+      ],
+      "t": 3,
+      "izoh": "m·n = (−5)·(−2) + 3·(−7) = 10 − 21 = −11. Birinchi ko'paytmada ikki manfiy son ko'paytirilgani uchun 10 musbat chiqadi, ikkinchisi esa manfiy bo'ladi. Javob: −11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "skalyar-koordinata-tekislik",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#7a6d6d7f"
+    },
+    {
+      "q": "p(4; −3) va q(−3; −4) vektorlar uchun skalyar ko'paytmani hisoblang hamda natijani to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "24",
+        "−24",
+        "0",
+        "−12"
+      ],
+      "t": 2,
+      "izoh": "p·q = 4·(−3) + (−3)·(−4) = −12 + 12 = 0. Qo'shiluvchilar qarama-qarshi ishorali va modullari teng bo'lgani uchun yig'indi nolga aylandi. Bu esa vektorlar perpendikulyar ekanini bildiradi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "skalyar-koordinata-tekislik",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#7a865148"
+    },
+    {
+      "q": "Geometriya darsida a(−8; 5) va b(3; −2) vektorlar berildi. Ularning skalyar ko'paytmasini toping.",
+      "v": [
+        "−14",
+        "34",
+        "14",
+        "−34"
+      ],
+      "t": 3,
+      "izoh": "a·b = (−8)·3 + 5·(−2) = −24 − 10 = −34. Ikkala qo'shiluvchi ham manfiy bo'lgani uchun ular modullari bo'yicha qo'shiladi. Javob: −34.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "skalyar-koordinata-tekislik",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#d5847f29"
+    },
+    {
+      "q": "Bekzod chizmasida a(9; −2) va b(−4; −6) vektorlar tasvirlangan. Bu vektorlarning skalyar ko'paytmasi nimaga teng bo'ladi?",
+      "v": [
+        "−48",
+        "48",
+        "−24",
+        "24"
+      ],
+      "t": 2,
+      "izoh": "a·b = 9·(−4) + (−2)·(−6) = −36 + 12 = −24. Ikkinchi qo'shiluvchi ikki manfiy sonning ko'paytmasi bo'lgani uchun musbat chiqadi. Javob: −24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "skalyar-koordinata-tekislik",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#6e738f9f"
+    },
+    {
+      "q": "Fazoda a(1; −2; 3) va b(4; 5; −1) vektorlar berilgan bo'lsa, ularning skalyar ko'paytmasini hisoblang.",
+      "v": [
+        "9",
+        "−9",
+        "17",
+        "−17"
+      ],
+      "t": 1,
+      "izoh": "Fazoda skalyar ko'paytma a·b = x₁·x₂ + y₁·y₂ + z₁·z₂ ko'rinishida topiladi. Demak a·b = 1·4 + (−2)·5 + 3·(−1) = 4 − 10 − 3 = −9. Javob: −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "skalyar-koordinata-fazo",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#7233d95d"
+    },
+    {
+      "q": "Fazoviy koordinatalar sistemasida berilgan a(2; 0; −5) va b(−3; 7; 2) vektorlarning skalyar ko'paytmasi qanchaga teng?",
+      "v": [
+        "−16",
+        "4",
+        "16",
+        "−4"
+      ],
+      "t": 0,
+      "izoh": "a·b = 2·(−3) + 0·7 + (−5)·2 = −6 + 0 − 10 = −16. Ikkinchi koordinatalardan biri nol bo'lgani uchun o'rtadagi qo'shiluvchi yo'qoladi. Javob: −16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "skalyar-koordinata-fazo",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#e9f1826e"
+    },
+    {
+      "q": "a(3; 1; −2) va b(−1; 6; 5) vektorlar uchun skalyar ko'paytmani topib, to'g'ri javobni belgilang.",
+      "v": [
+        "13",
+        "−19",
+        "−7",
+        "7"
+      ],
+      "t": 2,
+      "izoh": "a·b = 3·(−1) + 1·6 + (−2)·5 = −3 + 6 − 10 = −7. Uchta qo'shiluvchi alohida hisoblanib, o'z ishoralari bilan qo'shiladi. Javob: −7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "skalyar-koordinata-fazo",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#a85968d5"
+    },
+    {
+      "q": "Dron uchish paytida avval u(20; −15; 5) siljish vektori, so'ngra v(3; 4; −12) siljish vektori bo'yicha harakatlandi. Shu ikki vektorning skalyar ko'paytmasini hisoblang.",
+      "v": [
+        "60",
+        "−60",
+        "180",
+        "−180"
+      ],
+      "t": 1,
+      "izoh": "u·v = 20·3 + (−15)·4 + 5·(−12) = 60 − 60 − 60 = −60. Birinchi qo'shiluvchi musbat, qolgan ikkitasi manfiy bo'lgani uchun yig'indi manfiy chiqadi. Javob: −60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "skalyar-koordinata-fazo",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#e097bbce"
+    },
+    {
+      "q": "Fazodagi a(0; 3; −4) va b(5; 0; 12) vektorlarning skalyar ko'paytmasini hisoblang va to'g'ri natijani tanlang.",
+      "v": [
+        "0",
+        "65",
+        "48",
+        "−48"
+      ],
+      "t": 3,
+      "izoh": "a·b = 0·5 + 3·0 + (−4)·12 = 0 + 0 − 48 = −48. Nolli koordinatalar dastlabki ikki qo'shiluvchini yo'qotadi, uchinchi hadda esa −48 qoladi. Uzunliklar ko'paytmasi 5·13 = 65 bu yerda javob emas. Javob: −48.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "skalyar-koordinata-fazo",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#0b34c28b"
+    },
+    {
+      "q": "Ikki vektorning uzunliklari 6 va 5 birlik, ular orasidagi burchak 60° ga teng. Skalyar ko'paytmani ta'rif formulasi bilan toping.",
+      "v": [
+        "30",
+        "15",
+        "15√3",
+        "7,5"
+      ],
+      "t": 1,
+      "izoh": "Ta'rifga ko'ra a·b = |a|·|b|·cos φ. Bu yerda cos 60° = 1/2, demak a·b = 6·5·(1/2) = 15. Kosinusni tushirib qoldirsak 30 chiqadi, bu esa tipik xato. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "skalyar-uzunlik-va-burchak-formulasi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#34b67931"
+    },
+    {
+      "q": "a va b vektorlarning modullari 4 va 3 ga, ular orasidagi burchak esa 120° ga teng. Skalyar ko'paytmani hisoblang.",
+      "v": [
+        "6",
+        "−12",
+        "6√3",
+        "−6"
+      ],
+      "t": 3,
+      "izoh": "cos 120° = −1/2 bo'lgani uchun a·b = 4·3·(−1/2) = −6. Burchak o'tmas bo'lganda skalyar ko'paytma har doim manfiy chiqadi. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "skalyar-uzunlik-va-burchak-formulasi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#44803aaa"
+    },
+    {
+      "q": "Uzunliklari 8 va √2 bo'lgan ikki vektor orasidagi burchak 45°. Shu vektorlarning skalyar ko'paytmasi nimaga teng?",
+      "v": [
+        "8",
+        "8√2",
+        "4√2",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "a·b = 8·√2·cos 45° = 8·√2·(√2/2). Bu yerda √2·√2 = 2 bo'lgani uchun natija 8·(2/2) = 8 ga teng. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "skalyar-uzunlik-va-burchak-formulasi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#8b008ad4"
+    },
+    {
+      "q": "Farhod va Jasur bitta sandiqni ikki arqon bilan tortmoqda: kuchlar 40 N va 30 N, arqonlar orasidagi burchak 60°. Kuch vektorlarining skalyar ko'paytmasini toping.",
+      "v": [
+        "1200",
+        "600",
+        "600√3",
+        "300"
+      ],
+      "t": 1,
+      "izoh": "Skalyar ko'paytma |F₁|·|F₂|·cos φ formulasi bilan topiladi. cos 60° = 0,5 bo'lgani uchun 40·30·0,5 = 600. Kosinusni unutsak 1200 chiqib qoladi. Javob: 600.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "skalyar-uzunlik-va-burchak-formulasi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#b5571b14"
+    },
+    {
+      "q": "Ikki vektorning uzunliklari 5 va 4 birlikka, ular orasidagi burchak 150° ga teng bo'lsa, skalyar ko'paytma qanday bo'ladi?",
+      "v": [
+        "10√3",
+        "−10",
+        "−10√3",
+        "−20√3"
+      ],
+      "t": 2,
+      "izoh": "cos 150° = −√3/2 ekanini bilamiz. Demak a·b = 5·4·(−√3/2) = 20·(−√3/2) = −10√3. Burchak o'tmas bo'lgani uchun natija manfiy. Javob: −10√3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "skalyar-uzunlik-va-burchak-formulasi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#9fa57801"
+    },
+    {
+      "q": "Quyidagi juftliklardan qaysi birida vektorlar o'zaro perpendikulyar: a(2; 3) va b(3; −2); c(1; 4) va d(4; 1); e(−2; 5) va f(5; 3); g(3; 1) va h(1; 3)?",
+      "v": [
+        "a va b",
+        "c va d",
+        "e va f",
+        "g va h"
+      ],
+      "t": 0,
+      "izoh": "Perpendikulyarlik sharti — skalyar ko'paytmaning nolga teng bo'lishi. a·b = 2·3 + 3·(−2) = 6 − 6 = 0, demak birinchi juftlik mos keladi. Qolgan juftliklar uchun 8, 5 va 6 chiqadi, ular noldan farqli. Javob: a va b.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perpendikulyarlikni-tekshirish",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#364f4c31"
+    },
+    {
+      "q": "Fazoda a(1; 2; −2) va b(4; −1; 1) vektorlar berilgan. Bu vektorlar o'zaro perpendikulyarmi va nima uchun?",
+      "v": [
+        "Ha, chunki skalyar ko'paytma nolga teng",
+        "Yo'q, chunki skalyar ko'paytma 8 ga teng",
+        "Ha, chunki uzunliklari teng",
+        "Yo'q, chunki koordinatalari proporsional"
+      ],
+      "t": 0,
+      "izoh": "a·b = 1·4 + 2·(−1) + (−2)·1 = 4 − 2 − 2 = 0. Skalyar ko'paytma nolga teng bo'lgani uchun vektorlar o'zaro perpendikulyar. Uzunliklari esa 3 va √18 bo'lib, ular teng emas. Javob: ha, chunki skalyar ko'paytma nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perpendikulyarlikni-tekshirish",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#e3401805"
+    },
+    {
+      "q": "Berilgan juftliklardan qaysi birida vektorlar perpendikulyar emas: a(5; 0) va b(0; 7); c(3; −6) va d(4; 2); e(1; 1) va f(1; −1); g(2; 3) va h(3; 2)?",
+      "v": [
+        "a va b",
+        "c va d",
+        "e va f",
+        "g va h"
+      ],
+      "t": 3,
+      "izoh": "Har bir juftlik uchun skalyar ko'paytma tekshiriladi: 5·0 + 0·7 = 0; 3·4 + (−6)·2 = 0; 1·1 + 1·(−1) = 0; 2·3 + 3·2 = 12. Faqat oxirgi juftlikda natija noldan farqli, demak ular perpendikulyar emas. Javob: g va h.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perpendikulyarlikni-tekshirish",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#b2fd3300"
+    },
+    {
+      "q": "Qurilishda ustunning yo'nalishi u(0; 0; 5), tom to'sinining yo'nalishi esa v(3; 4; 0) vektor bilan berilgan. Ular to'g'ri burchak hosil qiladimi?",
+      "v": [
+        "Yo'q, skalyar ko'paytma 12 ga teng",
+        "Ha, skalyar ko'paytma nolga teng",
+        "Yo'q, skalyar ko'paytma 25 ga teng",
+        "Ha, chunki uzunliklari 5 ga teng"
+      ],
+      "t": 1,
+      "izoh": "u·v = 0·3 + 0·4 + 5·0 = 0. Skalyar ko'paytma nol bo'lgani uchun ustun bilan to'sin orasida to'g'ri burchak hosil bo'ladi. Uzunliklarning teng bo'lishi perpendikulyarlik belgisi emas. Javob: ha, skalyar ko'paytma nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perpendikulyarlikni-tekshirish",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#8a44f40c"
+    },
+    {
+      "q": "a(2; m) va b(8; −4) vektorlar o'zaro perpendikulyar bo'lishi uchun m parametr qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "4",
+        "−4",
+        "16",
+        "−16"
+      ],
+      "t": 0,
+      "izoh": "Perpendikulyarlik sharti a·b = 0 ni beradi: 2·8 + m·(−4) = 0, ya'ni 16 − 4m = 0. Bundan 4m = 16 va m = 4 kelib chiqadi. Ishorani chalkashtirsak −4 chiqib qoladi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyarlik-shartidan-parametr",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#478d87dd"
+    },
+    {
+      "q": "a(m; 5) va b(m; −5) vektorlar perpendikulyar bo'ladigan barcha m qiymatlarini aniqlang.",
+      "v": [
+        "m = 5 yoki m = −5",
+        "faqat m = 5",
+        "m = 25",
+        "bunday m mavjud emas"
+      ],
+      "t": 0,
+      "izoh": "a·b = m·m + 5·(−5) = m² − 25 bo'ladi. Bu ifoda nolga teng bo'lishi kerak, ya'ni m² = 25. Kvadrat tenglamaning ikkita ildizi bor: m = 5 va m = −5. Faqat bittasini olish ildizni yo'qotish xatosidir. Javob: m = 5 yoki m = −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perpendikulyarlik-shartidan-parametr",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#844d42e2"
+    },
+    {
+      "q": "Fazodagi a(1; −3; 2) va b(3; k; 3) vektorlar perpendikulyar bo'lishi uchun k ning qiymati qanday bo'lishi kerak?",
+      "v": [
+        "−3",
+        "3",
+        "9",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Shart 1·3 + (−3)·k + 2·3 = 0 ko'rinishida yoziladi. Bundan 3 − 3k + 6 = 0, ya'ni 3k = 9 va k = 3. Oxirgi bo'lishni bajarmasak 9 chiqib qoladi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyarlik-shartidan-parametr",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#707db078"
+    },
+    {
+      "q": "Muhandis Kamola ko'prik tayanchini shunday joylashtirmoqchiki, u(12; n) tayanch vektori v(3; −9) to'sin vektoriga perpendikulyar bo'lsin. n ni toping.",
+      "v": [
+        "27",
+        "4",
+        "−4",
+        "−27"
+      ],
+      "t": 1,
+      "izoh": "Perpendikulyarlik sharti u·v = 0 ni beradi: 12·3 + n·(−9) = 0. Demak 36 − 9n = 0, bundan 9n = 36 va n = 4. Bo'lish o'rniga ayirish qilinsa 27 degan noto'g'ri javob chiqadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyarlik-shartidan-parametr",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#3c32ab7e"
+    },
+    {
+      "q": "a(2; −1) va b(3; 4) vektorlar berilgan. a + t·b vektor a vektorga perpendikulyar bo'ladigan t sonini toping.",
+      "v": [
+        "−2,5",
+        "2,5",
+        "−5",
+        "−0,4"
+      ],
+      "t": 0,
+      "izoh": "Shart (a + t·b)·a = 0 ko'rinishida yoziladi, ya'ni a·a + t·(b·a) = 0. Bu yerda a·a = 4 + 1 = 5 va b·a = 6 − 4 = 2. Demak 5 + 2t = 0 va t = −2,5. Javob: −2,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perpendikulyarlik-shartidan-parametr",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#aa754d62"
+    },
+    {
+      "q": "Tekislikda a(3; 4) va b(4; 3) vektorlar berilgan. Ular orasidagi burchak kosinusini hisoblang.",
+      "v": [
+        "24/25",
+        "25/24",
+        "12/25",
+        "24/5"
+      ],
+      "t": 0,
+      "izoh": "cos φ = (a·b)/(|a|·|b|) formulasidan foydalanamiz. Bu yerda a·b = 3·4 + 4·3 = 24, |a| = √(9 + 16) = 5 va |b| = 5. Demak cos φ = 24/(5·5) = 24/25. Javob: 24/25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-kosinusi-tekislikda",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#2a91415a"
+    },
+    {
+      "q": "a(1; 2) va b(3; −1) vektorlar orasidagi burchakning kosinusini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "√2/5",
+        "1/50",
+        "−√2/10",
+        "√2/10"
+      ],
+      "t": 3,
+      "izoh": "a·b = 1·3 + 2·(−1) = 1 bo'ladi. |a| = √5, |b| = √10, ularning ko'paytmasi √50 = 5√2. Demak cos φ = 1/(5√2) = √2/10. Javob: √2/10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-kosinusi-tekislikda",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#fbfc7242"
+    },
+    {
+      "q": "a(−2; 2) va b(0; 5) vektorlar orasidagi burchak kosinusi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "√3/2",
+        "1/2",
+        "√2/2",
+        "−√2/2"
+      ],
+      "t": 2,
+      "izoh": "a·b = (−2)·0 + 2·5 = 10. |a| = √(4 + 4) = 2√2 va |b| = 5, ularning ko'paytmasi 10√2. Demak cos φ = 10/(10√2) = √2/2. Javob: √2/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-kosinusi-tekislikda",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#308bca73"
+    },
+    {
+      "q": "Sportchi Dilshod mashg'ulotda avval a(6; 8) yo'nalishda, so'ngra b(0; 10) yo'nalishda yugurdi. Ikki bosqich yo'nalishlari orasidagi burchak kosinusini toping.",
+      "v": [
+        "0,6",
+        "0,8",
+        "1,25",
+        "−0,8"
+      ],
+      "t": 1,
+      "izoh": "a·b = 6·0 + 8·10 = 80 bo'ladi. |a| = √(36 + 64) = 10 va |b| = 10. Demak cos φ = 80/(10·10) = 0,8. Kosinus birdan katta bo'la olmaydi, shuning uchun 1,25 javob bo'lolmaydi. Javob: 0,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-kosinusi-tekislikda",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#24aebbf0"
+    },
+    {
+      "q": "a(5; −12) va b(−3; 4) vektorlar orasidagi burchak kosinusini hisoblab, to'g'ri variantni tanlang.",
+      "v": [
+        "63/65",
+        "33/65",
+        "−63/65",
+        "−63/60"
+      ],
+      "t": 2,
+      "izoh": "a·b = 5·(−3) + (−12)·4 = −15 − 48 = −63. |a| = √(25 + 144) = 13 va |b| = √(9 + 16) = 5. Demak cos φ = −63/65, ya'ni burchak o'tmas. Javob: −63/65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-kosinusi-tekislikda",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#b4ae2eb5"
+    },
+    {
+      "q": "Fazodagi a(1; 1; 0) va b(0; 1; 1) vektorlar orasidagi burchak kosinusini hisoblang.",
+      "v": [
+        "1/2",
+        "√2/2",
+        "1/4",
+        "−1/2"
+      ],
+      "t": 0,
+      "izoh": "a·b = 1·0 + 1·1 + 0·1 = 1 bo'ladi. |a| = √2 va |b| = √2, ularning ko'paytmasi 2. Demak cos φ = 1/2, bu esa 60° burchakka mos keladi. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-kosinusi-fazoda",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#f9073883"
+    },
+    {
+      "q": "Fazoda a(2; −1; 2) va b(1; 2; 2) vektorlar berilgan bo'lsa, ular orasidagi burchak kosinusi nimaga teng?",
+      "v": [
+        "4/3",
+        "8/9",
+        "−4/9",
+        "4/9"
+      ],
+      "t": 3,
+      "izoh": "a·b = 2·1 + (−1)·2 + 2·2 = 2 − 2 + 4 = 4. |a| = √(4 + 1 + 4) = 3 va |b| = √(1 + 4 + 4) = 3. Demak cos φ = 4/9. Javob: 4/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-kosinusi-fazoda",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#45f2b4a4"
+    },
+    {
+      "q": "a(1; 2; 2) va b(3; 0; 4) vektorlar orasidagi burchak kosinusini topib, to'g'ri javobni ko'rsating.",
+      "v": [
+        "11/15",
+        "15/11",
+        "11/8",
+        "−11/15"
+      ],
+      "t": 0,
+      "izoh": "a·b = 1·3 + 2·0 + 2·4 = 11 bo'ladi. |a| = √(1 + 4 + 4) = 3 va |b| = √(9 + 0 + 16) = 5. Demak cos φ = 11/(3·5) = 11/15. Javob: 11/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-kosinusi-fazoda",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#274abf21"
+    },
+    {
+      "q": "Ombor burchagiga tortilgan ikki temir trosning yo'nalishlari u(0; 3; 4) va v(0; −4; 3) vektorlar bilan berilgan. Ular orasidagi burchak kosinusini toping.",
+      "v": [
+        "24/25",
+        "0",
+        "1",
+        "−1"
+      ],
+      "t": 1,
+      "izoh": "u·v = 0·0 + 3·(−4) + 4·3 = −12 + 12 = 0. Surat nolga teng bo'lgani uchun cos φ = 0 va troslar o'zaro perpendikulyar. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-kosinusi-fazoda",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#9473c531"
+    },
+    {
+      "q": "Fazodagi a(1; 1; 1) va b(1; 1; 0) vektorlar orasidagi burchak kosinusini hisoblang va natijani soddalashtiring.",
+      "v": [
+        "√6/6",
+        "2/3",
+        "√6/3",
+        "√2/3"
+      ],
+      "t": 2,
+      "izoh": "a·b = 1 + 1 + 0 = 2 bo'ladi. |a| = √3 va |b| = √2, ularning ko'paytmasi √6. Demak cos φ = 2/√6, maxrajni irratsionallikdan qutqarsak 2√6/6 = √6/3 hosil bo'ladi. Javob: √6/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-kosinusi-fazoda",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#c9cc58c1"
+    },
+    {
+      "q": "a(1; 0) va b(−√3; 1) vektorlar orasidagi burchakning gradus o'lchovini aniqlang.",
+      "v": [
+        "30°",
+        "120°",
+        "135°",
+        "150°"
+      ],
+      "t": 3,
+      "izoh": "a·b = 1·(−√3) + 0·1 = −√3 bo'ladi. |a| = 1 va |b| = √(3 + 1) = 2, ko'paytmasi 2. Demak cos φ = −√3/2 va bunga 150° burchak mos keladi. Ishorani e'tiborsiz qoldirgan o'quvchi 30° deb xato qiladi. Javob: 150°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-darajasini-topish",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#37c39980"
+    },
+    {
+      "q": "Ikki vektorning uzunliklari 2 va 3 ga, skalyar ko'paytmasi esa −3 ga teng. Ular orasidagi burchakni aniqlang.",
+      "v": [
+        "60°",
+        "120°",
+        "135°",
+        "150°"
+      ],
+      "t": 1,
+      "izoh": "cos φ = (a·b)/(|a|·|b|) = −3/(2·3) = −0,5 bo'ladi. Kosinusi −0,5 ga teng burchak 120° ni beradi. Manfiy kosinus burchak o'tmas ekanini ko'rsatadi. Javob: 120°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-darajasini-topish",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#f213caf0"
+    },
+    {
+      "q": "a(1; √3) va b(√3; 1) vektorlar orasidagi burchak necha gradusga teng ekanini toping.",
+      "v": [
+        "15°",
+        "30°",
+        "45°",
+        "60°"
+      ],
+      "t": 1,
+      "izoh": "a·b = 1·√3 + √3·1 = 2√3 bo'ladi. |a| = √(1 + 3) = 2 va |b| = 2, ko'paytmasi 4. Demak cos φ = 2√3/4 = √3/2, bunga 30° burchak mos keladi. Javob: 30°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-darajasini-topish",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#9ba9b1a2"
+    },
+    {
+      "q": "Fazodagi a(1; 1; 0) va b(−1; 0; 1) vektorlar orasidagi burchakni gradusda hisoblang.",
+      "v": [
+        "90°",
+        "120°",
+        "135°",
+        "150°"
+      ],
+      "t": 1,
+      "izoh": "a·b = 1·(−1) + 1·0 + 0·1 = −1 bo'ladi. |a| = √2 va |b| = √2, ularning ko'paytmasi 2. cos φ = −1/2 bo'lgani uchun burchak 120° ga teng. Skalyar ko'paytmani nol deb o'ylagan o'quvchi 90° ni tanlaydi. Javob: 120°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-darajasini-topish",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#ed60fbaf"
+    },
+    {
+      "q": "Chorrahadan chiqqan ikki avtomobilning siljish vektorlari (4; 0) va (−3; 3) ko'rinishda berilgan. Yo'nalishlar orasidagi burchakni toping.",
+      "v": [
+        "45°",
+        "120°",
+        "150°",
+        "135°"
+      ],
+      "t": 3,
+      "izoh": "Skalyar ko'paytma 4·(−3) + 0·3 = −12 bo'ladi. Uzunliklar 4 va 3√2, ularning ko'paytmasi 12√2. Demak cos φ = −12/(12√2) = −√2/2, bunga 135° mos keladi. Javob: 135°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-darajasini-topish",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#9030b8d0"
+    },
+    {
+      "q": "Uchburchak uchlari A(1; 2), B(4; 6) va C(−3; 5) nuqtalarda joylashgan. ∠A ning kattaligini aniqlang.",
+      "v": [
+        "90°",
+        "60°",
+        "45°",
+        "135°"
+      ],
+      "t": 0,
+      "izoh": "AB = (3; 4) va AC = (−4; 3) vektorlarni tuzamiz — ikkalasi ham A uchidan chiqishi shart. Ularning skalyar ko'paytmasi 3·(−4) + 4·3 = −12 + 12 = 0. Skalyar ko'paytma nol bo'lgani uchun ∠A to'g'ri burchak. 135° — AB va BC vektorlarni, ya'ni uchburchak konturi bo'ylab yo'nalgan juftlikni olish xatosi: u holda AB·BC = −21 − 4 = −25 va cos = −25/(5·5√2) = −1/√2. Javob: 90°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-burchagi-koordinata",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#e32e6c98"
+    },
+    {
+      "q": "Uchburchakning uchlari A(1; 1), B(5; 4) va C(1; 7) nuqtalar. ∠B burchagining kosinusini hisoblang.",
+      "v": [
+        "7/25",
+        "25/7",
+        "24/25",
+        "−7/25"
+      ],
+      "t": 0,
+      "izoh": "Burchak B uchida bo'lgani uchun BA = (−4; −3) va BC = (−4; 3) vektorlar tuziladi. BA·BC = 16 − 9 = 7, |BA| = 5 va |BC| = 5. Demak cos B = 7/25. Javob: 7/25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-burchagi-koordinata",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#44fb5cb8"
+    },
+    {
+      "q": "Fazoda uchburchak uchlari A(1; 2; 1), B(3; 3; 3) va C(2; 4; 3) nuqtalarda berilgan. ∠A burchagining kosinusini toping.",
+      "v": [
+        "8/9",
+        "8/3",
+        "9/8",
+        "−8/9"
+      ],
+      "t": 0,
+      "izoh": "AB = (2; 1; 2) va AC = (1; 2; 2) vektorlar olinadi. Skalyar ko'paytma 2 + 2 + 4 = 8, uzunliklar esa |AB| = 3 va |AC| = 3. Demak cos A = 8/(3·3) = 8/9. Faqat bitta uzunlikka bo'lgan o'quvchi 8/3 ni oladi. Javob: 8/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-burchagi-koordinata",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#2b0ff173"
+    },
+    {
+      "q": "Geodezist Rustam maydonda A(0; 0), B(12; 5) va C(3; 4) nuqtalarni belgiladi. ∠BAC burchagining kosinusini toping.",
+      "v": [
+        "16/65",
+        "56/65",
+        "65/56",
+        "−56/65"
+      ],
+      "t": 1,
+      "izoh": "AB = (12; 5) va AC = (3; 4) vektorlar olinadi. AB·AC = 36 + 20 = 56, |AB| = 13 va |AC| = 5. Demak cos ∠BAC = 56/65. Javob: 56/65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-burchagi-koordinata",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#b425e0db"
+    },
+    {
+      "q": "Uchburchak uchlari A(9; 3), B(2; 3) va C(−5; 10) nuqtalarda joylashgan bo'lsa, ∠B necha gradus ekanini aniqlang.",
+      "v": [
+        "45°",
+        "90°",
+        "120°",
+        "135°"
+      ],
+      "t": 3,
+      "izoh": "BA = (7; 0) va BC = (−7; 7) vektorlar tuziladi. BA·BC = −49 + 0 = −49, |BA| = 7 va |BC| = 7√2. Demak cos B = −49/(49√2) = −√2/2, ya'ni burchak 135°. Ishorani tashlab yuborgan o'quvchi 45° deb javob beradi. Javob: 135°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-burchagi-koordinata",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#da9a60a6"
+    },
+    {
+      "q": "Uchlari A(0; 0), B(4; 1) va C(1; 4) bo'lgan uchburchakning turini burchaklariga qarab aniqlang.",
+      "v": [
+        "O'tkir burchakli",
+        "To'g'ri burchakli",
+        "O'tmas burchakli",
+        "Teng tomonli"
+      ],
+      "t": 0,
+      "izoh": "AB·AC = 4·1 + 1·4 = 8, BA·BC = (−4)·(−3) + (−1)·3 = 9, CA·CB = (−1)·3 + (−4)·(−3) = 9. Uchala skalyar ko'paytma ham musbat, demak barcha burchak o'tkir. Javob: o'tkir burchakli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-turini-aniqlash",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#8f35c4e4"
+    },
+    {
+      "q": "Uchburchak uchlari A(0; 0), B(5; 0) va C(1; 1) nuqtalar. Qaysi uchidagi burchak o'tmas ekanini aniqlang.",
+      "v": [
+        "A uchida",
+        "B uchida",
+        "C uchida",
+        "Hech qaysi uchida o'tmas burchak yo'q"
+      ],
+      "t": 2,
+      "izoh": "CA = (−1; −1) va CB = (4; −1) vektorlar uchun CA·CB = −4 + 1 = −3 chiqadi. Manfiy natija ∠C ning o'tmas ekanini bildiradi. Boshqa uchlarda skalyar ko'paytmalar 5 va 20 bo'lib, musbat. Javob: C uchida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-turini-aniqlash",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#eeed0c3d"
+    },
+    {
+      "q": "Fazoda uchburchak uchlari A(0; 0; 0), B(2; 1; 2) va C(−1; 2; 0) nuqtalarda berilgan. Uchburchak to'g'ri burchakli ekanini tekshiring.",
+      "v": [
+        "Ha, to'g'ri burchak A uchida",
+        "Ha, to'g'ri burchak B uchida",
+        "Ha, to'g'ri burchak C uchida",
+        "Yo'q, to'g'ri burchak yo'q"
+      ],
+      "t": 0,
+      "izoh": "AB = (2; 1; 2) va AC = (−1; 2; 0) vektorlar olinadi. AB·AC = −2 + 2 + 0 = 0, demak ∠A to'g'ri burchak. Uchburchakda ikkita to'g'ri burchak bo'la olmaydi, shuning uchun qolgan uchlarni tekshirish shart emas. Javob: ha, to'g'ri burchak A uchida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-turini-aniqlash",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#4e910c8f"
+    },
+    {
+      "q": "Bog'bon Nodira uchta archani A(0; 0), B(6; 0) va C(0; 8) nuqtalarga ekdi. Archalar hosil qilgan uchburchak qanday turga kiradi?",
+      "v": [
+        "A uchida to'g'ri burchakli",
+        "B uchida to'g'ri burchakli",
+        "O'tmas burchakli",
+        "O'tkir burchakli"
+      ],
+      "t": 0,
+      "izoh": "AB = (6; 0) va AC = (0; 8) vektorlarning skalyar ko'paytmasi 6·0 + 0·8 = 0 ga teng. Demak ∠A to'g'ri burchak, uchburchak esa katetlari 6 va 8 bo'lgan to'g'ri burchakli uchburchak. Javob: A uchida to'g'ri burchakli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-turini-aniqlash",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#494ea52f"
+    },
+    {
+      "q": "Biror a vektor uchun uning o'zi bilan skalyar ko'paytmasi 64 ga teng ekani ma'lum. Shu vektorning uzunligini toping.",
+      "v": [
+        "4",
+        "8",
+        "32",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "Skalyar ko'paytma ta'rifidan a·a = |a|·|a|·cos 0° = |a|² kelib chiqadi. Demak |a|² = 64 va |a| = 8 bo'ladi. Ildiz chiqarishni unutsak 64 chiqib qoladi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vektor-uzunligi-skalyar-orqali",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#7e1f429f"
+    },
+    {
+      "q": "a va b vektorlarning uzunliklari 3 va 4 ga, skalyar ko'paytmasi esa 6 ga teng. a + b yig'indi vektorning uzunligini toping.",
+      "v": [
+        "5",
+        "7",
+        "√31",
+        "√37"
+      ],
+      "t": 3,
+      "izoh": "|a + b|² = |a|² + 2·(a·b) + |b|² formulasidan foydalanamiz. Demak |a + b|² = 9 + 12 + 16 = 37 va |a + b| = √37. Uzunliklarni oddiy qo'shsak 7 chiqadi, bu esa xato. Javob: √37.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vektor-uzunligi-skalyar-orqali",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#b2012d44"
+    },
+    {
+      "q": "Uzunliklari 5 ga teng bo'lgan ikki vektor orasidagi burchak 60°. Ularning ayirmasi bo'lgan vektorning uzunligini hisoblang.",
+      "v": [
+        "0",
+        "5",
+        "10",
+        "5√3"
+      ],
+      "t": 1,
+      "izoh": "|a − b|² = |a|² − 2·|a|·|b|·cos φ + |b|² = 25 − 2·25·0,5 + 25 = 25 bo'ladi. Demak |a − b| = 5. Teng uzunlikdagi vektorlar 60° burchak ostida teng tomonli uchburchak hosil qiladi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vektor-uzunligi-skalyar-orqali",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#a4144eaa"
+    },
+    {
+      "q": "Qayiqning suvga nisbatan tezligi 8 km/soat, daryo oqimi tezligi esa 6 km/soat va ular o'zaro perpendikulyar. Qayiqning qirg'oqqa nisbatan tezligini toping.",
+      "v": [
+        "10 km/soat",
+        "14 km/soat",
+        "2 km/soat",
+        "√28 km/soat"
+      ],
+      "t": 0,
+      "izoh": "Perpendikulyar vektorlar uchun skalyar ko'paytma nolga teng, shuning uchun |a + b|² = 64 + 0 + 36 = 100. Demak natijaviy tezlik moduli 10 km/soat. Tezliklarni oddiy qo'shish 14 beradi, bu noto'g'ri. Javob: 10 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vektor-uzunligi-skalyar-orqali",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#1e36236e"
+    },
+    {
+      "q": "a va b vektorlarning modullari 7 va 4 ga teng. (a + b)·(a − b) ifodaning qiymatini hisoblang.",
+      "v": [
+        "65",
+        "33",
+        "9",
+        "−33"
+      ],
+      "t": 1,
+      "izoh": "Qavslarni ochsak (a + b)·(a − b) = a·a − a·b + b·a − b·b = |a|² − |b|² hosil bo'ladi. Demak natija 49 − 16 = 33 ga teng va u burchakka bog'liq emas. Javob: 33.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "skalyar-kopaytma-xossalari",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#a6318fbf"
+    },
+    {
+      "q": "a·b = 5 va |b| = 2 ekani ma'lum bo'lsa, (2a − 3b)·b ifodaning qiymatini toping.",
+      "v": [
+        "−2",
+        "2",
+        "4",
+        "22"
+      ],
+      "t": 0,
+      "izoh": "Ifodani yoyamiz: (2a − 3b)·b = 2·(a·b) − 3·(b·b) = 2·5 − 3·|b|². Bu yerda |b|² = 4 bo'lgani uchun natija 10 − 12 = −2. Modulni kvadratga oshirishni unutsak 4 chiqib qoladi. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "skalyar-kopaytma-xossalari",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#249e64be"
+    },
+    {
+      "q": "a va b vektorlarning uzunliklari 3 va 5 ga teng. |a + b|² + |a − b|² yig'indining qiymatini hisoblang.",
+      "v": [
+        "34",
+        "68",
+        "64",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "Ikkala ifodani yoyganda 2·(a·b) hadlari qarama-qarshi ishorada bo'lib qisqaradi. Natijada 2·(|a|² + |b|²) = 2·(9 + 25) = 68 hosil bo'ladi. Bu natija vektorlar orasidagi burchakka bog'liq emas. Javob: 68.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "skalyar-kopaytma-xossalari",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#3b4e51f0"
+    },
+    {
+      "q": "a va b birlik vektorlar bo'lib, ularning skalyar ko'paytmasi 1/2 ga teng. (a + 2b)·(2a − b) ifodani hisoblang.",
+      "v": [
+        "−1,5",
+        "0,5",
+        "1,5",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Yoyamiz: 2·(a·a) − a·b + 4·(b·a) − 2·(b·b) = 2·1 + 3·(a·b) − 2·1. Bu yerda 2 va −2 qisqaradi, qolgani 3·(1/2) = 1,5 ga teng. Javob: 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "skalyar-kopaytma-xossalari",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#8301955b"
+    },
+    {
+      "q": "a(3; 4) vektorning b(0; 5) vektor yo'nalishidagi proyeksiyasini hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "20",
+        "5",
+        "4",
+        "0,8"
+      ],
+      "t": 2,
+      "izoh": "Proyeksiya (a·b)/|b| formulasi bilan topiladi. Bu yerda a·b = 3·0 + 4·5 = 20 va |b| = 5. Demak proyeksiya 20/5 = 4 ga teng. Bo'lishni unutsak 20 chiqib qoladi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proyeksiya",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#c6a157f3"
+    },
+    {
+      "q": "a(5; 12) vektorning b(3; 4) vektor yo'nalishidagi proyeksiyasi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "12,6",
+        "63",
+        "13",
+        "4,85"
+      ],
+      "t": 0,
+      "izoh": "Skalyar ko'paytma a·b = 5·3 + 12·4 = 15 + 48 = 63 ga teng. |b| = √(9 + 16) = 5 bo'lgani uchun proyeksiya 63/5 = 12,6. Noto'g'ri modulga bo'lish 4,85 degan javobni beradi. Javob: 12,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proyeksiya",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#b839be02"
+    },
+    {
+      "q": "Fazodagi a(2; −1; 2) vektorning b(1; 2; 2) vektor yo'nalishidagi proyeksiyasini toping.",
+      "v": [
+        "4",
+        "4/3",
+        "4/9",
+        "3/4"
+      ],
+      "t": 1,
+      "izoh": "a·b = 2·1 + (−1)·2 + 2·2 = 4 va |b| = √(1 + 4 + 4) = 3 bo'ladi. Proyeksiya (a·b)/|b| = 4/3 ga teng. Modul kvadratiga bo'linsa 4/9 chiqadi, bu esa boshqa kattalik. Javob: 4/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proyeksiya",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#f3be7d2a"
+    },
+    {
+      "q": "Yukni tortayotgan arqondagi kuch 40 N bo'lib, u gorizontal yo'nalish bilan 60° burchak hosil qiladi. Kuchning gorizontal yo'nalishdagi proyeksiyasini toping.",
+      "v": [
+        "20 N",
+        "40 N",
+        "20√3 N",
+        "80 N"
+      ],
+      "t": 0,
+      "izoh": "Proyeksiya |F|·cos φ ga teng, chunki yo'nalish birlik vektor bilan beriladi. Demak 40·cos 60° = 40·0,5 = 20 N. Sinusni ishlatsak 20√3 chiqadi, bu esa vertikal tashkil etuvchi. Javob: 20 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proyeksiya",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#dc1efdb0"
+    },
+    {
+      "q": "Yuk aravasiga F(6; 8) kuch nyutonda qo'yilgan bo'lib, arava s(5; −2) siljish vektori bo'yicha metrda harakatlandi. Bajarilgan ishni hisoblang.",
+      "v": [
+        "46 J",
+        "14 J",
+        "−14 J",
+        "50 J"
+      ],
+      "t": 1,
+      "izoh": "Kuchning bajargan ishi A = F·s skalyar ko'paytmaga teng. Demak A = 6·5 + 8·(−2) = 30 − 16 = 14 J. Ishoralarni e'tiborsiz qoldirsak 46 chiqib qoladi. Javob: 14 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kuch-ishi-fizik-kontekst",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#761f55b0"
+    },
+    {
+      "q": "Aravani 50 N kuch bilan 12 m masofaga surishdi, kuch yo'nalishi bilan siljish orasidagi burchak esa 60°. Bajarilgan ishni toping.",
+      "v": [
+        "600 J",
+        "300 J",
+        "300√3 J",
+        "150 J"
+      ],
+      "t": 1,
+      "izoh": "A = |F|·|s|·cos φ = 50·12·cos 60° = 600·0,5 = 300 J. Kosinusni hisobga olmasak 600 J chiqadi, bu esa burchak nolga teng bo'lgan holdagi ish. Javob: 300 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kuch-ishi-fizik-kontekst",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#71fa9783"
+    },
+    {
+      "q": "Jismga F(0; −20) og'irlik kuchi ta'sir qilmoqda va jism s(3; 4) vektor bo'yicha siljidi. Og'irlik kuchining bajargan ishini aniqlang.",
+      "v": [
+        "80 J",
+        "−60 J",
+        "−80 J",
+        "100 J"
+      ],
+      "t": 2,
+      "izoh": "A = F·s = 0·3 + (−20)·4 = −80 J bo'ladi. Ish manfiy chiqdi, chunki kuch siljish bilan o'tmas burchak hosil qiladi. Javob: −80 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kuch-ishi-fizik-kontekst",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#f5fc419c"
+    },
+    {
+      "q": "Traktor yukni F(300; 400) kuch bilan tortdi va yuk s(20; 0) siljish vektori bo'yicha harakatlandi. Bajarilgan ishni hisoblang.",
+      "v": [
+        "14000 J",
+        "8000 J",
+        "10000 J",
+        "6000 J"
+      ],
+      "t": 3,
+      "izoh": "A = 300·20 + 400·0 = 6000 + 0 = 6000 J bo'ladi. Kuchning ikkinchi tashkil etuvchisi siljishga perpendikulyar bo'lgani uchun ish bajarmaydi. Javob: 6000 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kuch-ishi-fizik-kontekst",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#8a9b5ac0"
+    },
+    {
+      "q": "Kuch 40 N, siljish 12 m va bajarilgan ish 240 J bo'lsa, kuch bilan siljish orasidagi burchakni toping.",
+      "v": [
+        "30°",
+        "45°",
+        "60°",
+        "120°"
+      ],
+      "t": 2,
+      "izoh": "A = |F|·|s|·cos φ formulasidan cos φ = 240/(40·12) = 240/480 = 0,5 kelib chiqadi. Kosinusi 0,5 ga teng burchak 60° ni beradi. Javob: 60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kuch-ishi-fizik-kontekst",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#1298493d"
+    },
+    {
+      "q": "Ikki bola arqonni o'zaro perpendikulyar yo'nalishlarda 12 N va 5 N kuch bilan tortmoqda. Teng ta'sir etuvchi kuchning modulini toping.",
+      "v": [
+        "13 N",
+        "17 N",
+        "7 N",
+        "√119 N"
+      ],
+      "t": 0,
+      "izoh": "Perpendikulyar kuchlar uchun skalyar ko'paytma nolga teng, shuning uchun modul kvadrati 144 + 25 = 169 bo'ladi. Demak teng ta'sir etuvchi kuch 13 N. Kuchlarni oddiy qo'shish 17 N beradi, bu xato. Javob: 13 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-tasir-etuvchi-kuch",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#50604e19"
+    },
+    {
+      "q": "Bir nuqtaga qo'yilgan 6 N va 6 N kuchlar orasidagi burchak 120° ga teng. Teng ta'sir etuvchi kuchning modulini hisoblang.",
+      "v": [
+        "0 N",
+        "6 N",
+        "12 N",
+        "6√3 N"
+      ],
+      "t": 1,
+      "izoh": "Modul kvadrati 36 + 2·36·cos 120° + 36 = 72 − 36 = 36 ga teng. Ildiz chiqarsak teng ta'sir etuvchi kuch 6 N bo'ladi. Javob: 6 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-tasir-etuvchi-kuch",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#f835959b"
+    },
+    {
+      "q": "Bir jismga qo'yilgan 10 N va 10 N kuchlar orasidagi burchak 60°. Teng ta'sir etuvchi kuchning modulini toping.",
+      "v": [
+        "10 N",
+        "10√2 N",
+        "10√3 N",
+        "20 N"
+      ],
+      "t": 2,
+      "izoh": "Modul kvadrati 100 + 2·100·cos 60° + 100 = 100 + 100 + 100 = 300 ga teng. Ildiz chiqarsak 10√3 N hosil bo'ladi. Javob: 10√3 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-tasir-etuvchi-kuch",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#2b548ebe"
+    },
+    {
+      "q": "Bir nuqtaga qo'yilgan 8 N va 15 N kuchlarning teng ta'sir etuvchisi 17 N ga teng chiqdi. Kuchlar orasidagi burchakni aniqlang.",
+      "v": [
+        "45°",
+        "60°",
+        "90°",
+        "120°"
+      ],
+      "t": 2,
+      "izoh": "Modul kvadratini yozamiz: 289 = 64 + 2·(F₁·F₂) + 225. Bundan 2·(F₁·F₂) = 0, ya'ni skalyar ko'paytma nolga teng. Skalyar ko'paytma nol bo'lsa burchak 90° bo'ladi. Javob: 90°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-tasir-etuvchi-kuch",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#11b5c480"
+    },
+    {
+      "q": "ABC teng tomonli uchburchakning tomoni 4 sm ga teng. AB va AC vektorlarning skalyar ko'paytmasini hisoblang.",
+      "v": [
+        "8",
+        "16",
+        "8√3",
+        "−8"
+      ],
+      "t": 0,
+      "izoh": "Teng tomonli uchburchakda ∠A = 60°, AB va AC vektorlar esa A uchidan chiqadi. Demak AB·AC = 4·4·cos 60° = 16·0,5 = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "muntazam-shakl-tomonlari-skalyar",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#a6dd0a7d"
+    },
+    {
+      "q": "Tomoni 6 sm bo'lgan ABC teng tomonli uchburchakda AB va BC vektorlarning skalyar ko'paytmasini toping.",
+      "v": [
+        "36",
+        "18",
+        "−36",
+        "−18"
+      ],
+      "t": 3,
+      "izoh": "AB va BC vektorlar B nuqtada ketma-ket joylashgani uchun ular orasidagi burchak 180° − 60° = 120° bo'ladi. Demak AB·BC = 6·6·cos 120° = 36·(−0,5) = −18. Uchburchak burchagini to'g'ridan-to'g'ri olish 18 degan xato javobga olib keladi. Javob: −18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "muntazam-shakl-tomonlari-skalyar",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#4c439f6e"
+    },
+    {
+      "q": "Tomoni 5 sm bo'lgan ABCD kvadratda AB va AC vektorlarning skalyar ko'paytmasi qanchaga teng?",
+      "v": [
+        "0",
+        "25",
+        "25√2",
+        "50"
+      ],
+      "t": 1,
+      "izoh": "Kvadratning AC diagonali 5√2 ga teng, AB bilan AC orasidagi burchak esa 45°. Demak AB·AC = 5·5√2·cos 45° = 25√2·(√2/2) = 25. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "muntazam-shakl-tomonlari-skalyar",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#d36d23d1"
+    },
+    {
+      "q": "Tomoni 2 sm bo'lgan muntazam ABCDEF oltiburchakda AB va AD vektorlarning skalyar ko'paytmasini hisoblang.",
+      "v": [
+        "2",
+        "4√3",
+        "8",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Muntazam oltiburchakda AD katta diagonal bo'lib, uzunligi tomonning ikki barobari, ya'ni 4 sm. AB bilan AD orasidagi burchak 60° ga teng. Demak AB·AD = 2·4·cos 60° = 8·0,5 = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "muntazam-shakl-tomonlari-skalyar",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#565dce8b"
+    },
+    {
+      "q": "To'g'ri burchakli parallelepipedning qirralari AB = 9 sm, AD = 12 sm va AA₁ = 20 sm. AC₁ fazoviy diagonali bilan AB qirrasi orasidagi burchak kosinusini hisoblang.",
+      "v": [
+        "9/25",
+        "12/25",
+        "3/5",
+        "25/9"
+      ],
+      "t": 0,
+      "izoh": "A nuqtani koordinata boshiga qo'yamiz: AC₁ = (9; 12; 20) va AB = (9; 0; 0). Fazoviy diagonal uzunligi √(81 + 144 + 400) = √625 = 25, qirra uzunligi esa 9. Skalyar ko'paytma 81 ga teng, demak cos φ = 81/(25·9) = 9/25. AB o'rniga AD ni olgan o'quvchi 12/25 ni chiqaradi. Javob: 9/25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-va-fazoviy-jism-burchagi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#1dd4f050"
+    },
+    {
+      "q": "Kubning AC₁ fazoviy diagonali bilan AB qirrasi orasidagi burchak kosinusini hisoblang.",
+      "v": [
+        "√3/2",
+        "√3/3",
+        "√2/2",
+        "1/3"
+      ],
+      "t": 1,
+      "izoh": "Qirrani 1 deb olsak AC₁ = (1; 1; 1) va AB = (1; 0; 0) bo'ladi. Skalyar ko'paytma 1 ga, uzunliklar esa √3 va 1 ga teng. Demak cos φ = 1/√3 = √3/3. Javob: √3/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-va-fazoviy-jism-burchagi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#dd7c09c5"
+    },
+    {
+      "q": "Kubda BD₁ fazoviy diagonali va AC asos diagonali olingan. Bu ikki to'g'ri chiziq orasidagi burchakni aniqlang.",
+      "v": [
+        "45°",
+        "60°",
+        "90°",
+        "30°"
+      ],
+      "t": 2,
+      "izoh": "Qirrani 1 deb olamiz: B(1; 0; 0) va D₁(0; 1; 1), demak BD₁ = (−1; 1; 1). AC = (1; 1; 0) bo'ladi. Skalyar ko'paytma −1 + 1 + 0 = 0, shuning uchun burchak 90° ga teng. Javob: 90°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-va-fazoviy-jism-burchagi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#7d4b86e8"
+    },
+    {
+      "q": "Ombordagi to'g'ri burchakli qutining o'lchamlari 3 m, 4 m va 12 m. Uning fazoviy diagonali bilan asos diagonali orasidagi burchak kosinusini toping.",
+      "v": [
+        "4/5",
+        "12/13",
+        "13/5",
+        "5/13"
+      ],
+      "t": 3,
+      "izoh": "Fazoviy diagonal vektori (3; 4; 12) bo'lib, uzunligi 13; asos diagonali (3; 4; 0) bo'lib, uzunligi 5. Skalyar ko'paytma 9 + 16 + 0 = 25. Demak cos φ = 25/(13·5) = 5/13. Javob: 5/13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-va-fazoviy-jism-burchagi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#9145b00b"
+    },
+    {
+      "q": "Ikki kema bir portdan chiqib, birinchisi (30; 40) km, ikkinchisi (−40; 30) km siljish vektori bo'yicha suzdi. Yo'nalishlar orasidagi burchakni toping.",
+      "v": [
+        "45°",
+        "60°",
+        "90°",
+        "180°"
+      ],
+      "t": 2,
+      "izoh": "Skalyar ko'paytma 30·(−40) + 40·30 = −1200 + 1200 = 0 ga teng. Natija nol bo'lgani uchun kemalarning yo'nalishlari o'zaro perpendikulyar. Javob: 90°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "navigatsiya-yonalish-burchagi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#26c28618"
+    },
+    {
+      "q": "Dron A(2; 3; 10) nuqtadan B(6; 6; 10) ga, so'ngra C(10; 6; 13) nuqtaga uchdi. ∠ABC burchagining kosinusini hisoblang.",
+      "v": [
+        "16/25",
+        "−16/25",
+        "24/25",
+        "−9/25"
+      ],
+      "t": 1,
+      "izoh": "Burchak B uchida bo'lgani uchun BA = (−4; −3; 0) va BC = (4; 0; 3) vektorlar tuziladi. Skalyar ko'paytma −16 + 0 + 0 = −16, uzunliklar esa 5 va 5. Demak kosinus −16/25 ga teng va burchak o'tmas. Javob: −16/25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "navigatsiya-yonalish-burchagi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#ae0dfd6c"
+    },
+    {
+      "q": "Samolyot (1; 0) yo'nalish vektori bo'yicha uchmoqda, shamol esa (−1; √3) vektor yo'nalishida esmoqda. Ular orasidagi burchakni aniqlang.",
+      "v": [
+        "30°",
+        "60°",
+        "120°",
+        "150°"
+      ],
+      "t": 2,
+      "izoh": "Skalyar ko'paytma 1·(−1) + 0·√3 = −1 ga teng. Uzunliklar 1 va √(1 + 3) = 2, ko'paytmasi 2. Demak cos φ = −1/2, bunga 120° burchak mos keladi. Javob: 120°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "navigatsiya-yonalish-burchagi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#55198ff2"
+    },
+    {
+      "q": "Kemaning kursi u(5; 12), oqim yo'nalishi esa v(12; 5) vektor bilan berilgan. Kurs bilan oqim orasidagi burchak kosinusini toping.",
+      "v": [
+        "60/169",
+        "169/120",
+        "120/169",
+        "−120/169"
+      ],
+      "t": 2,
+      "izoh": "Skalyar ko'paytma 5·12 + 12·5 = 120 ga teng. Ikkala vektorning uzunligi ham √(25 + 144) = 13, ularning ko'paytmasi 169. Demak cos φ = 120/169. Javob: 120/169.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "navigatsiya-yonalish-burchagi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#e61bae71"
+    },
+    {
+      "q": "Tahlil natijasida ikki vektorning skalyar ko'paytmasi −7 ga teng chiqdi. Ular orasidagi burchak haqida qanday xulosa qilish mumkin?",
+      "v": [
+        "Burchak o'tkir",
+        "Burchak to'g'ri",
+        "Burchak o'tmas",
+        "Vektorlar bir xil yo'nalgan"
+      ],
+      "t": 2,
+      "izoh": "Uzunliklar har doim musbat bo'lgani uchun skalyar ko'paytmaning ishorasi kosinusning ishorasi bilan bir xil bo'ladi. Manfiy kosinus esa 90° dan katta burchakka mos keladi. Demak burchak o'tmas. Javob: burchak o'tmas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "skalyar-belgisi-va-burchak-turi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#7935c5d6"
+    },
+    {
+      "q": "Quyidagi juftliklardan qaysi birida vektorlar o'tkir burchak hosil qiladi: p(3; 1) va q(−2; 5); r(4; −3) va s(7; 2); m(−5; 2) va n(4; 7); u(1; 6) va v(−6; 1)?",
+      "v": [
+        "p va q",
+        "r va s",
+        "m va n",
+        "u va v"
+      ],
+      "t": 1,
+      "izoh": "Har bir juftlik uchun skalyar ko'paytma hisoblanadi: 3·(−2) + 1·5 = −1; 4·7 + (−3)·2 = 22; (−5)·4 + 2·7 = −6; 1·(−6) + 6·1 = 0. Faqat ikkinchi juftlikda natija musbat, demak o'tkir burchak o'sha yerda. Oxirgi juftlikda nol chiqib, burchak to'g'ri bo'ladi. Javob: r va s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "skalyar-belgisi-va-burchak-turi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#3ea46e23"
+    },
+    {
+      "q": "a(m; 2) va b(3; −1) vektorlar orasidagi burchak o'tkir bo'lishi uchun m parametr qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "m > 2/3",
+        "m < 2/3",
+        "m > 3/2",
+        "m = 2/3"
+      ],
+      "t": 0,
+      "izoh": "Burchak o'tkir bo'lsa skalyar ko'paytma musbat bo'ladi: 3m + 2·(−1) > 0, ya'ni 3m − 2 > 0. Bundan m > 2/3 kelib chiqadi. Tengsizlikning ishorasini teskari qo'yish odatiy xato. Javob: m > 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "skalyar-belgisi-va-burchak-turi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#4798d9bb"
+    },
+    {
+      "q": "Ikki do'konning yarim yillik o'sish ko'rsatkichlari a(4; −3) va b(6; 9) vektorlar bilan berilgan. Ular orasidagi burchak haqida nima deyish mumkin?",
+      "v": [
+        "O'tkir, chunki skalyar ko'paytma 51",
+        "O'tmas, chunki skalyar ko'paytma −3",
+        "To'g'ri burchak, chunki skalyar ko'paytma nol",
+        "Vektorlar o'zaro kollinear"
+      ],
+      "t": 1,
+      "izoh": "Skalyar ko'paytma 4·6 + (−3)·9 = 24 − 27 = −3 ga teng. Natija manfiy bo'lgani uchun burchak o'tmas. Ishorani e'tiborsiz qoldirib qo'shsak 51 chiqadi, bu esa xato. Javob: o'tmas, chunki skalyar ko'paytma −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "skalyar-belgisi-va-burchak-turi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#faef883b"
+    },
+    {
+      "q": "a(6; −8) vektor bilan Ox o'qining i(1; 0) birlik vektori orasidagi burchak kosinusini hisoblang.",
+      "v": [
+        "0,8",
+        "−0,8",
+        "0,6",
+        "−0,6"
+      ],
+      "t": 2,
+      "izoh": "Skalyar ko'paytma 6·1 + (−8)·0 = 6 ga teng. |a| = √(36 + 64) = 10 va |i| = 1. Demak cos φ = 6/10 = 0,6. Ikkinchi koordinatani ishlatish 0,8 degan xato javobga olib keladi. Javob: 0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birlik-vektor-va-oq-burchagi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#fa32dbdf"
+    },
+    {
+      "q": "Fazodagi b(0; −5; 12) vektor bilan Oz o'qi orasidagi burchak kosinusini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "5/13",
+        "13/12",
+        "−12/13",
+        "12/13"
+      ],
+      "t": 3,
+      "izoh": "Oz o'qining birlik vektori k(0; 0; 1) ko'rinishida bo'ladi. Skalyar ko'paytma 0 + 0 + 12 = 12, |b| = √(0 + 25 + 144) = 13. Demak cos φ = 12/13. Javob: 12/13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-vektor-va-oq-burchagi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#d4bd366a"
+    },
+    {
+      "q": "Fazoda a(2; −3; 6) vektor koordinata o'qlari bilan hosil qilgan burchaklar kosinuslari kvadratlarining yig'indisini hisoblang.",
+      "v": [
+        "49",
+        "3",
+        "1",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "|a| = √(4 + 9 + 36) = 7 bo'lgani uchun yo'naltiruvchi kosinuslar 2/7, −3/7 va 6/7 ga teng. Ularning kvadratlari yig'indisi (4 + 9 + 36)/49 = 49/49 = 1. Bu xossa istalgan noldan farqli vektor uchun o'rinli. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-vektor-va-oq-burchagi",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#f0eefe28"
+    },
+    {
+      "q": "Parallelogrammning qo'shni tomonlari 6 sm va 4 sm ga teng. Uning diagonallariga mos vektorlarning skalyar ko'paytmasini toping.",
+      "v": [
+        "52",
+        "20",
+        "−20",
+        "10"
+      ],
+      "t": 1,
+      "izoh": "Diagonallar a + b va a − b vektorlar bilan ifodalanadi. Ularning skalyar ko'paytmasi |a|² − |b|² = 36 − 16 = 20 ga teng. Natija tomonlar orasidagi burchakka bog'liq emas. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallelogramm-diagonallari",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#e9c78287"
+    },
+    {
+      "q": "Parallelogrammning diagonallari o'zaro perpendikulyar bo'lishi uchun qanday shart bajarilishi zarur ekanini aniqlang.",
+      "v": [
+        "Qo'shni tomonlari teng bo'lishi kerak",
+        "Burchagi 60° bo'lishi kerak",
+        "Diagonallari teng bo'lishi kerak",
+        "Tomonlari perpendikulyar bo'lishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Diagonal vektorlar a + b va a − b bo'lib, ularning skalyar ko'paytmasi |a|² − |b|² ga teng. Bu ifoda nolga aylanishi uchun |a| = |b| bo'lishi shart. Demak parallelogramm romb bo'lishi kerak. Javob: qo'shni tomonlari teng bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelogramm-diagonallari",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#d52ddee9"
+    },
+    {
+      "q": "ABCD parallelogrammda A(0; 0), B(5; 1) va D(1; 4) uchlari berilgan. AC va BD diagonal vektorlarning skalyar ko'paytmasini hisoblang.",
+      "v": [
+        "43",
+        "9",
+        "−9",
+        "−39"
+      ],
+      "t": 2,
+      "izoh": "Parallelogrammda C = B + D − A, demak C(6; 5) va AC = (6; 5). BD = D − B = (−4; 3) bo'ladi. Skalyar ko'paytma 6·(−4) + 5·3 = −24 + 15 = −9. Javob: −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallelogramm-diagonallari",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#3fe3f81c"
+    },
+    {
+      "q": "a(x; 3) va b(2; −5) vektorlarning skalyar ko'paytmasi 9 ga teng bo'lsa, x noma'lumning qiymatini toping.",
+      "v": [
+        "−3",
+        "3",
+        "12",
+        "−12"
+      ],
+      "t": 2,
+      "izoh": "Skalyar ko'paytma 2·x + 3·(−5) = 2x − 15 ko'rinishida bo'ladi. Shartga ko'ra 2x − 15 = 9, demak 2x = 24 va x = 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "skalyar-tenglamadan-nomalum",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#257cf54d"
+    },
+    {
+      "q": "a(4; x) va b(x; 9) vektorlarning skalyar ko'paytmasi 26 ga teng. Noma'lum x ning qiymatini aniqlang.",
+      "v": [
+        "13",
+        "26",
+        "2",
+        "−2"
+      ],
+      "t": 2,
+      "izoh": "Skalyar ko'paytma 4·x + x·9 = 13x ga teng bo'ladi. Tenglama 13x = 26 ko'rinishini oladi, undan x = 2 kelib chiqadi. Bo'lishni bajarmaslik 26 degan javobni beradi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "skalyar-tenglamadan-nomalum",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#78e2e7a6"
+    },
+    {
+      "q": "Fazodagi a(1; x; 2) va b(3; 2; −1) vektorlarning skalyar ko'paytmasi 11 ga teng bo'lsa, x ni toping.",
+      "v": [
+        "6",
+        "10",
+        "−5",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Skalyar ko'paytma 1·3 + x·2 + 2·(−1) = 2x + 1 ko'rinishida soddalashadi. Shartga ko'ra 2x + 1 = 11, demak 2x = 10 va x = 5. Oxirgi bo'lishni tashlab ketsak 10 chiqib qoladi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "skalyar-tenglamadan-nomalum",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#67e3ad2a"
+    },
+    {
+      "q": "Uchta vektor uchun a + b + c = 0 tenglik o'rinli bo'lib, ularning uzunliklari 3, 4 va 5 ga teng. a·b skalyar ko'paytmani toping.",
+      "v": [
+        "0",
+        "12",
+        "−12",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "Tenglikdan c = −(a + b) kelib chiqadi, demak |c|² = |a|² + 2·(a·b) + |b|². Qiymatlarni qo'ysak 25 = 9 + 2·(a·b) + 16 hosil bo'ladi. Bundan 2·(a·b) = 0 va a·b = 0. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vektorlar-yigindisi-nol-tahlil",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#4a6e26f3"
+    },
+    {
+      "q": "a + b + c = 0 tenglik bajarilgan va uchala vektorning uzunligi 2 ga teng. a·b + b·c + c·a yig'indining qiymatini hisoblang.",
+      "v": [
+        "6",
+        "−3",
+        "12",
+        "−6"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi nolga teng bo'lgani uchun uning modul kvadrati ham nol: |a + b + c|² = 0. Uni yoysak |a|² + |b|² + |c|² + 2·S = 0, ya'ni 12 + 2·S = 0. Demak S = −6. Javob: −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vektorlar-yigindisi-nol-tahlil",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#638c8d37"
+    },
+    {
+      "q": "a va b birlik vektorlar bo'lib, ularning yig'indisi uzunligi √3 ga teng. Bu vektorlarning skalyar ko'paytmasini toping.",
+      "v": [
+        "−1/2",
+        "1/2",
+        "1",
+        "√3/2"
+      ],
+      "t": 1,
+      "izoh": "|a + b|² = |a|² + 2·(a·b) + |b|² formulasiga ko'ra 3 = 1 + 2·(a·b) + 1 tenglik hosil bo'ladi. Bundan 2·(a·b) = 1 va a·b = 1/2. Bu esa vektorlar orasidagi burchak 60° ekanini bildiradi. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vektorlar-yigindisi-nol-tahlil",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#a1b52a6f"
+    },
+    {
+      "q": "Do'konda ikki xil mahsulot narxi p(15 000; 8 000) so'm, sotilgan miqdori esa q(12; 25) dona vektor bilan berilgan. Umumiy tushumni skalyar ko'paytma orqali hisoblang.",
+      "v": [
+        "180 000 so'm",
+        "200 000 so'm",
+        "380 000 so'm",
+        "460 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Tushum narx va miqdor vektorlarining skalyar ko'paytmasiga teng bo'ladi. Demak 15 000·12 + 8 000·25 = 180 000 + 200 000 = 380 000 so'm. Faqat bitta qo'shiluvchini olish chala javob beradi. Javob: 380 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-skalyar-model",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#25afb3f1"
+    },
+    {
+      "q": "Imtihonning uch bo'limidan olingan ballar b(18; 24; 30), bo'limlarning og'irlik koeffitsientlari esa k(2; 3; 1) vektor bilan berilgan. Umumiy ballni toping.",
+      "v": [
+        "102",
+        "138",
+        "144",
+        "72"
+      ],
+      "t": 1,
+      "izoh": "Umumiy ball ballar vektori bilan koeffitsientlar vektorining skalyar ko'paytmasiga teng. Demak 18·2 + 24·3 + 30·1 = 36 + 72 + 30 = 138 ball. Javob: 138.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "amaliy-skalyar-model",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#b605a3bb"
+    },
+    {
+      "q": "Ikki do'konning haftalik savdo ko'rsatkichlari a(2; 6; 3) va b(6; 2; 3) vektorlar bilan berilgan. Ko'rsatkichlar o'xshashligini baholash uchun burchak kosinusini hisoblang.",
+      "v": [
+        "24/49",
+        "33/14",
+        "49/33",
+        "33/49"
+      ],
+      "t": 3,
+      "izoh": "Skalyar ko'paytma 2·6 + 6·2 + 3·3 = 12 + 12 + 9 = 33 ga teng. Ikkala vektorning uzunligi ham √(4 + 36 + 9) = 7, ularning ko'paytmasi 49. Demak cos φ = 33/49. Javob: 33/49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "amaliy-skalyar-model",
+      "id": "matematika_vekt_m09-skalyar-kopaytma-va-vektorlar-orasidagi#ccf7ae4f"
+    }
+  ]
+}

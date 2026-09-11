@@ -1,0 +1,720 @@
+{
+  "nom": "Obraz tavsifi",
+  "bolim": "Badiiy matn",
+  "savollar": [
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#83d479cd",
+      "q": "Anvar obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Xatosini tan olmay, uni oxirigacha yashiradi",
+        "Xatosini tan olib, keyin uni to'g'rilashga urinadi",
+        "Xatosidan keyin xarakteri butunlay o'zgaradi",
+        "Xatosini o'zi qilmagandek boshqaga to'nkaydi"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — B: Anvar haqida matnda — «xatosini tan olib, keyin uni to'g'rilashga urinadi». Qolganlari matndagi tafsilotga tayanmaydi: A — inkor; C — bo'rttirish; D — almashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/olma",
+        "obraz/anvar",
+        "buzish/inkor",
+        "buzish/borttirish",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#ff166c6e",
+      "q": "Anvar obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Uyalganini ochiq so'z bilan tezda izhor qilib qo'yadi",
+        "Uyalish o'rniga o'zini oqlashga har yo'l bilan urinadi",
+        "Uyalganidan boshqa hech qanday tuyg'uni sezmay qoladi",
+        "Uyalganini so'z bilan emas, xatti-harakati bilan bildiradi"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — D: Anvar haqida matnda — «uyalganini so'z bilan emas, xatti-harakati bilan bildiradi». Qolganlari matndagi tafsilotga tayanmaydi: A — inkor; B — almashtirish; C — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/olma",
+        "obraz/anvar",
+        "buzish/borttirish",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#76d51faf",
+      "q": "Qodir bobo obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Ko'p gapirib, bolani uzoq nasihat qilib turadi",
+        "Har bir xatti-harakatini uzoq tushuntirib beradi",
+        "Kamgap, lekin xatti-harakati bilan ko'p narsa aytadi",
+        "Kamgap bo'lgani uchun hech narsani bildira olmaydi"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — C: Qodir bobo haqida matnda — «kamgap, lekin xatti-harakati bilan ko'p narsa aytadi». Qolganlari matndagi tafsilotga tayanmaydi: A — inkor; B — bo'rttirish; D — almashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/olma",
+        "obraz/qodir",
+        "buzish/almashtirish",
+        "buzish/inkor",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#9619c89d",
+      "q": "Qodir bobo obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Ayb ustida tutgan bolani ota-onasiga aytib beradi",
+        "Ayb qilgan bolani butunlay e'tiborsiz qoldiradi",
+        "Ayb ustida tutgan bolani darhol uyaltirib tashlaydi",
+        "Ayb ustida tutgan bolani uyaltirmasdan yo'l ko'rsatadi"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — D: Qodir bobo haqida matnda — «ayb ustida tutgan bolani uyaltirmasdan yo'l ko'rsatadi». Qolganlari matndagi tafsilotga tayanmaydi: A — almashtirish; B — bo'rttirish; C — inkor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/olma",
+        "obraz/qodir",
+        "buzish/inkor",
+        "buzish/almashtirish",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#66c7b7ea",
+      "q": "Anvar obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Boshda yashirincha ish tutadi, keyin ochiq murojaat qiladi",
+        "Boshdan oxirigacha yashirincha ish tutishda davom etadi",
+        "Hech qachon yashirincha ish tutmaydigan bola bo'lib ko'rinadi",
+        "Boshidan ochiq murojaat qilib, keyin yashirincha ish tutadi"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — A: Anvar haqida matnda — «boshda yashirincha ish tutadi, keyin ochiq murojaat qiladi». Qolganlari matndagi tafsilotga tayanmaydi: B — inkor; C — bo'rttirish; D — almashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/olma",
+        "obraz/anvar",
+        "buzish/borttirish",
+        "buzish/inkor",
+        "buzish/almashtirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "olma"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#24871e11",
+      "q": "Nodira opa obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Natijani ko'rgandan keyingina ishini davom ettiradi",
+        "Natijani ko'rmagach, o'z ishini tashlab qo'yishga qaror qiladi",
+        "Natijani ko'rmasa ham, o'z ishini bajarishda davom etadi",
+        "Har bir ishining natijasini albatta ko'rib turadi"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — C: Nodira opa haqida matnda — «natijani ko'rmasa ham, o'z ishini bajarishda davom etadi». Qolganlari matndagi tafsilotga tayanmaydi: A — almashtirish; B — inkor; D — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/xat",
+        "obraz/nodira",
+        "buzish/inkor",
+        "buzish/almashtirish",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#a23f7307",
+      "q": "Nodira opa obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Xatni o'qimasdan uni chetga surib qo'yib yuboradi",
+        "Xatni o'qib, uzoq vaqt hayajonini ochiq izhor qiladi",
+        "Xatni o'qib, ko'p gapirmaydi, faqat ishini davom ettiradi",
+        "Xatni o'qib bo'lgach, ishini butunlay tashlab qo'yadi"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — C: Nodira opa haqida matnda — «xatni o'qib, ko'p gapirmaydi, faqat ishini davom ettiradi». Qolganlari matndagi tafsilotga tayanmaydi: A — almashtirish; B — inkor; D — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/xat",
+        "obraz/nodira",
+        "buzish/almashtirish",
+        "buzish/inkor",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#466788eb",
+      "q": "Nodira opa obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Qilgan yaxshiligi evaziga doim minnatdorlik kutib yuradi",
+        "Qilgan yaxshiligini eslamaydigan darajada oddiy ish deb biladi",
+        "Qilgan yaxshiliklarini butunlay unutib yuborgan bo'ladi",
+        "Qilgan yaxshiligini har doim eslab, uni ta'kidlab yuradi"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — B: Nodira opa haqida matnda — «qilgan yaxshiligini eslamaydigan darajada oddiy ish deb biladi». Qolganlari matndagi tafsilotga tayanmaydi: A — almashtirish; C — bo'rttirish; D — inkor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/xat",
+        "obraz/nodira",
+        "buzish/almashtirish",
+        "buzish/inkor",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#3005ddc1",
+      "q": "Sobir obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Yordamni tushunish uchun butun umri ketgan",
+        "Yordamni o'sha zahoti qadrlab, minnatdorlik bildirgan",
+        "Yordamni umuman sezmay, e'tiborsiz qoldirgan",
+        "Yordamni o'sha payt qadrlamagan, keyin tushungan"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — D: Sobir haqida matnda — «yordamni o'sha payt qadrlamagan, keyin tushungan». Qolganlari matndagi tafsilotga tayanmaydi: A — bo'rttirish; B — inkor; C — almashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/xat",
+        "obraz/sobir",
+        "buzish/almashtirish",
+        "buzish/inkor",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#27bb9b3b",
+      "q": "Sobir obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "O'zi olgan saboqni farzandiga ham yetkazmoqchi",
+        "Farzandini butunlay o'sha ustozga topshirgan",
+        "Farzandiga boshqa maktabni tanlab bergan",
+        "O'zi olgan saboqni faqat o'ziga saqlab qolgan"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — A: Sobir haqida matnda — «o'zi olgan saboqni farzandiga ham yetkazmoqchi». Qolganlari matndagi tafsilotga tayanmaydi: B — bo'rttirish; C — almashtirish; D — inkor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/xat",
+        "obraz/sobir",
+        "buzish/borttirish",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#71341508",
+      "q": "Sobir obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Minnatdorlikni bildirish uchun uzoq safar qilgan",
+        "Minnatdorligini o'sha kunning o'zida bildirgan",
+        "Minnatdorligini hech qachon bildirmay qo'ya qolgan",
+        "Minnatdorligini yillar o'tib bo'lsa ham bildirgan"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — D: Sobir haqida matnda — «minnatdorligini yillar o'tib bo'lsa ham bildirgan». Qolganlari matndagi tafsilotga tayanmaydi: A — bo'rttirish; B — almashtirish; C — inkor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/xat",
+        "obraz/sobir",
+        "buzish/borttirish",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "xat"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#38494b18",
+      "q": "Bahodir obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Sabrni o'rganish o'rniga tezroq yo'l izlashda davom etadi",
+        "Birinchi kundanoq mutlaqo sabrli bola bo'lib ko'rinadi",
+        "Sabrsizlikdan sabrga o'tib, ishni ichidan tushuna boshlaydi",
+        "Hikoya boshidan oxirigacha sabrsizligicha qolaveradi"
+      ],
+      "t": 2,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — C: Bahodir haqida matnda — «sabrsizlikdan sabrga o'tib, ishni ichidan tushuna boshlaydi». Qolganlari matndagi tafsilotga tayanmaydi: A — almashtirish; B — bo'rttirish; D — inkor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/kosa",
+        "obraz/bahodir",
+        "buzish/inkor",
+        "buzish/almashtirish",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#0a129700",
+      "q": "Sadaf bobo obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Birinchi tugal mehnat natijasini pulga chaqmaydi",
+        "Birinchi kosani shogirdning o'ziga sovg'a qiladi",
+        "Ustaxonada yasalgan hech narsani sotmaydi",
+        "Har bir tayyor buyumni darhol bozorga chiqaradi"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — A: Sadaf bobo haqida matnda — «birinchi tugal mehnat natijasini pulga chaqmaydi». Qolganlari matndagi tafsilotga tayanmaydi: B — almashtirish; C — bo'rttirish; D — inkor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/kosa",
+        "obraz/bobo",
+        "buzish/inkor",
+        "buzish/almashtirish",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#4f440967",
+      "q": "Bahodir obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Bir yilda ustozidan mohirroq kulolga aylanadi",
+        "O'zi o'rgangan usulni keyin boshqa bolaga uzatadi",
+        "O'zi o'rgangan usulni hech kimga o'rgatmaydi",
+        "Boshqa bolaga ustozidan boshqacha yo'l ko'rsatadi"
+      ],
+      "t": 1,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — B: Bahodir haqida matnda — «o'zi o'rgangan usulni keyin boshqa bolaga uzatadi». Qolganlari matndagi tafsilotga tayanmaydi: A — bo'rttirish; C — inkor; D — almashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/kosa",
+        "obraz/bahodir",
+        "buzish/borttirish",
+        "buzish/almashtirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#c70aaa04",
+      "q": "Sadaf bobo obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Shogirdning har bir xatosi uchun uni qattiq tanbehlaydi",
+        "Shogirdning xatosiga butunlay e'tibor bermay qo'yadi",
+        "Shogird xato qilganda ishni o'zi bajarib beradi",
+        "Shogirdning xatosini ayblamay, undan saboq chiqartiradi"
+      ],
+      "t": 3,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — D: Sadaf bobo haqida matnda — «shogirdning xatosini ayblamay, undan saboq chiqartiradi». Qolganlari matndagi tafsilotga tayanmaydi: A — inkor; B — bo'rttirish; C — almashtirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/kosa",
+        "obraz/bobo",
+        "buzish/almashtirish",
+        "buzish/borttirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#57375c81",
+      "q": "Sadaf bobo obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Kam gapiradi, lekin har bir so'zini o'z vaqtida aytadi",
+        "Kam gapirgani uchun shogird uni tushunmay qiynaladi",
+        "Shogirdiga uzundan-uzoq nasihat qilishni yaxshi ko'radi",
+        "Butun hikoya davomida shogirdiga umuman og'iz ochmaydi"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — A: Sadaf bobo haqida matnda — «kam gapiradi, lekin har bir so'zini o'z vaqtida aytadi». Qolganlari matndagi tafsilotga tayanmaydi: B — almashtirish; C — inkor; D — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/kosa",
+        "obraz/bobo",
+        "buzish/inkor",
+        "buzish/almashtirish",
+        "buzish/borttirish"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_oqi_m81-obraz-tavsifi#6bf7e6b2",
+      "q": "Bahodir obraziga mos ta'rif berilgan javobni aniqlang.",
+      "v": [
+        "Muvaffaqiyatsizlikdan keyin ham ertasiga ishga qaytadi",
+        "Muvaffaqiyatsizlik sababini ustozning o'zidan ko'radi",
+        "Birinchi muvaffaqiyatsizlikdan keyin ustaxonani tashlab ketadi",
+        "Har bir muvaffaqiyatsizlikdan keyin yanada tez ishlaydi"
+      ],
+      "t": 0,
+      "tur": "Y-1",
+      "izoh": "To'g'ri javob — A: Bahodir haqida matnda — «muvaffaqiyatsizlikdan keyin ham ertasiga ishga qaytadi». Qolganlari matndagi tafsilotga tayanmaydi: B — almashtirish; C — inkor; D — bo'rttirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "orin": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "bolim": "oqi",
+      "mavzu": "sert_oqi_m81-obraz-tavsifi",
+      "teg": [
+        "badiiy/obraz",
+        "hikoya/kosa",
+        "obraz/bahodir",
+        "buzish/almashtirish",
+        "buzish/borttirish",
+        "buzish/inkor"
+      ],
+      "ball": 1.1,
+      "tip": "yopiq4",
+      "sahna": {
+        "tur": "badiiy",
+        "ref": "kosa"
+      },
+      "javob": null,
+      "manba": "TestUp badiiy matnlar korpusi (2026)",
+      "ishonch": "B1"
+    }
+  ]
+}

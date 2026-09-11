@@ -1,0 +1,516 @@
+{
+  "nom": "27-mavzu. Oddiy efirlar. Olinishi va xossalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Oddiy efirlar deb qanday birikmalarga aytiladi?",
+      "v": [
+        "Umumiy formulasi R-O-R' bo'lgan organik birikmalarga",
+        "Umumiy formulasi R-COOH bo'lgan organik birikmalarga",
+        "Umumiy formulasi R-OH bo'lgan organik birikmalarga",
+        "Umumiy formulasi R-CO-R' bo'lgan organik birikmalarga"
+      ],
+      "t": 0,
+      "izoh": "Umumiy formulasi R-O-R' bo'lgan organik birikmalarga oddiy efirlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#86de7c13"
+    },
+    {
+      "q": "Oddiy efirlarni spirtga nisbatan qanday tushunish mumkin?",
+      "v": [
+        "Spirt gidroksil guruhining vodorod atomi o'rniga radikal almashgan deb qarash mumkin",
+        "Spirtga yana bitta gidroksil guruh qo'shilgan deb qarash mumkin",
+        "Spirtning kislorod atomi olib tashlangan deb qarash mumkin",
+        "Spirtning uglerod zanjiri uzaygan deb qarash mumkin"
+      ],
+      "t": 0,
+      "izoh": "Oddiy efirlarga spirt gidroksil guruhlarining vodorod atomi o'rniga radikal almashgan deb qarash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#81a8d6e3"
+    },
+    {
+      "q": "Oddiy efirlarni suv molekulasiga nisbatan qanday tushunish mumkin?",
+      "v": [
+        "Suv molekulasidagi ikkita vodorod atomi o'rniga radikallar almashgan deb qarash mumkin",
+        "Suv molekulasiga uglerod atomi qo'shilgan deb qarash mumkin",
+        "Suv molekulasining kislorodi almashgan deb qarash mumkin",
+        "Ikki suv molekulasi qo'shilgan deb qarash mumkin"
+      ],
+      "t": 0,
+      "izoh": "Suv molekulasidagi ikkita vodorod atomi o'rniga radikallar almashgan deb qarash ham mumkin: H-O-H → R-O-R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#42fdfcdc"
+    },
+    {
+      "q": "Sistematik nomenklatura bo'yicha oddiy efirlar qanday nomlanadi?",
+      "v": [
+        "Katta radikal to'yingan uglevodorod deb qaralib, uning nomi oldiga ikkinchi radikal (alkoksiguruh) nomi qo'shiladi",
+        "Kichik radikal nomiga efir so'zi qo'shiladi",
+        "Kislota nomiga radikal nomi qo'shiladi",
+        "Ikkala radikal nomining yig'indisi aytiladi"
+      ],
+      "t": 0,
+      "izoh": "Sistematik nomenklaturada katta radikal to'yingan uglevodorod deb qaralib, uning nomi oldiga ikkinchi radikal (R-O-alkoksiguruh) nomi qo'shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#db793a3e"
+    },
+    {
+      "q": "CH3-O-CH2-CH3 ning sistematik nomi nima?",
+      "v": [
+        "Metoksietan",
+        "Etoksimetan",
+        "Etoksibutan",
+        "Metoksibutan"
+      ],
+      "t": 0,
+      "izoh": "CH3-O-CH2-CH3 — metoksietan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#0f6362af"
+    },
+    {
+      "q": "C2H5-O-C4H9 ning sistematik nomi nima?",
+      "v": [
+        "Etoksibutan",
+        "Metoksietan",
+        "Butoksietan",
+        "Etoksipentan"
+      ],
+      "t": 0,
+      "izoh": "C2H5-O-C4H9 — etoksibutan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#3d2a639a"
+    },
+    {
+      "q": "Oddiy efirlar ratsional nomenklaturaga muvofiq qanday aytiladi?",
+      "v": [
+        "Radikallar nomiga efir so'zi qo'shib aytiladi",
+        "Kislota nomiga at qo'shimchasi qo'shiladi",
+        "Uglevodorod nomiga oksi so'zi qo'shiladi",
+        "Radikal nomiga al qo'shimchasi qo'shiladi"
+      ],
+      "t": 0,
+      "izoh": "Ratsional nomenklaturaga muvofiq radikallar nomiga efir so'zi qo'shib aytiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#896d23a1"
+    },
+    {
+      "q": "CH3-O-CH3 ning ratsional nomi nima?",
+      "v": [
+        "Dimetil efiri",
+        "Dietil efiri",
+        "Metiletil efiri",
+        "Metilpropil efiri"
+      ],
+      "t": 0,
+      "izoh": "CH3-O-CH3 — dimetil efiri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#b944e160"
+    },
+    {
+      "q": "C2H5-O-C2H5 ning ratsional nomi nima?",
+      "v": [
+        "Dietil efiri",
+        "Dimetil efiri",
+        "Metilpropil efiri",
+        "Dipropil efiri"
+      ],
+      "t": 0,
+      "izoh": "C2H5-O-C2H5 — dietil efiri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#1e4787c2"
+    },
+    {
+      "q": "Oddiy efirlarda izomeriya nimaga ko'ra kuzatiladi?",
+      "v": [
+        "Radiklarning turini o'zgarishiga ko'ra",
+        "Kislorod atomining o'rni o'zgarishiga ko'ra",
+        "Uglerod atomlari sonining oshishiga ko'ra",
+        "Vodorod atomlarining almashinishiga ko'ra"
+      ],
+      "t": 0,
+      "izoh": "Oddiy efirlarda radiklarning turini o'zgarishiga ko'ra izomeriya kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#2820aeab"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri oddiy efir izomerlariga misol?",
+      "v": [
+        "Metilpropil efir, metilizopropil efir, dietil efir",
+        "Propanal, atseton, propion kislota",
+        "Etanol, sirka kislota, etilatsetat",
+        "Metan, etan, propan"
+      ],
+      "t": 0,
+      "izoh": "C4H10O formulali metilpropil efir, metilizopropil efir va dietil efir bir-birining izomeridir (radikallar turi o'zgarishi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#2c6884d8"
+    },
+    {
+      "q": "Oddiy efirlar qaysi sinf bilan sinflararo izomeriya hosil qiladi va nima uchun?",
+      "v": [
+        "Bir atomli to'yingan spirtlar bilan, chunki ularning empirik formulasi bir xil",
+        "Aldegidlar bilan, chunki ularning zanjiri bir xil",
+        "Karbon kislotalar bilan, chunki kislorod atomlari soni bir xil",
+        "Alkanlar bilan, chunki vodorod atomlari soni bir xil"
+      ],
+      "t": 0,
+      "izoh": "Oddiy efirlar va bir atomli to'yingan spirtlarning empirik formulasi bir xil, shuning uchun ularda sinflararo izomeriya kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#5c329399"
+    },
+    {
+      "q": "C2H5OH bilan sinflararo izomer bo'lgan modda qaysi?",
+      "v": [
+        "CH3-O-CH3",
+        "CH3-O-C2H5",
+        "C3H7OH",
+        "CH3-CHO"
+      ],
+      "t": 0,
+      "izoh": "C2H5OH va CH3-O-CH3 (dimetil efir) sinflararo izomerlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#fef4dfe4"
+    },
+    {
+      "q": "C3H7OH bilan sinflararo izomer bo'lgan oddiy efir qaysi?",
+      "v": [
+        "CH3-O-CH2-CH3",
+        "CH3-O-CH3",
+        "C2H5-O-C2H5",
+        "C2H5-O-C4H9"
+      ],
+      "t": 0,
+      "izoh": "C3H7OH va CH3-O-CH2-CH3 sinflararo izomerlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#71d11bfd"
+    },
+    {
+      "q": "Dietil efir qanday usul bilan olinadi?",
+      "v": [
+        "Etil spirtini sulfat kislota ishtirokida qizdirilishi bilan",
+        "Etil spirtini ishqor bilan qizdirish bilan",
+        "Etilenni gidratlash bilan",
+        "Atsetilenni gidratlash bilan"
+      ],
+      "t": 0,
+      "izoh": "Dietil efir etil spirtini sulfat kislota ishtirokida qizdirilishi bilan olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#6b985a07"
+    },
+    {
+      "q": "2C2H5OH (H2SO4, t°) reaksiyasida dietil efir bilan birga yana qanday modda hosil bo'ladi?",
+      "v": [
+        "H2O",
+        "H2",
+        "CO2",
+        "SO2"
+      ],
+      "t": 0,
+      "izoh": "2C2H5OH → C2H5-O-C2H5 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#8c312e1c"
+    },
+    {
+      "q": "Sanoatda dimetil efir olish uchun metil spirt bug'i qaysi katalizator ustidan o'tkaziladi?",
+      "v": [
+        "Al2O3",
+        "Fe2O3",
+        "Ni",
+        "Pt"
+      ],
+      "t": 0,
+      "izoh": "Dimetil efir olish uchun metil spirt bug'i yuqori haroratda Al2O3 ustidan o'tkaziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#9ec4747c"
+    },
+    {
+      "q": "Sanoatda oddiy efirlar qanday sharoitda olinadi?",
+      "v": [
+        "Spirt bug'lari yuqori haroratda katalizator ustidan o'tkazib",
+        "Spirtlar suyuq holda kislota qo'shilmasdan qizdirib",
+        "Spirtlarni ishqor bilan aralashtirib",
+        "Spirtlarni suv bilan seyreltib"
+      ],
+      "t": 0,
+      "izoh": "Sanoatda spirt bug'larini yuqori haroratda katalizator ustidan o'tkazib olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#a69b9799"
+    },
+    {
+      "q": "Dimetil va etilmetil efirlar qanday agregat holatda bo'ladi?",
+      "v": [
+        "Gaz",
+        "Suyuqlik",
+        "Qattiq modda",
+        "Plazma"
+      ],
+      "t": 0,
+      "izoh": "Dimetil va etilmetil efirlar gaz, o'rta vakillari suyuqlik, yuqori molekulalari qattiq moddalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#4b7a7215"
+    },
+    {
+      "q": "Oddiy efirlarning o'rta vakillari qanday holatda bo'ladi?",
+      "v": [
+        "Suyuqlik",
+        "Gaz",
+        "Qattiq modda",
+        "Kukun"
+      ],
+      "t": 0,
+      "izoh": "Oddiy efirlarning o'rta vakillari suyuqlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#ec9905dd"
+    },
+    {
+      "q": "Oddiy efirlarning yuqori molekulalari qanday moddalar?",
+      "v": [
+        "Qattiq moddalar",
+        "Suyuqliklar",
+        "Gazlar",
+        "Eritmalar"
+      ],
+      "t": 0,
+      "izoh": "Oddiy efirlarning yuqori molekulalari qattiq moddalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#b98d06da"
+    },
+    {
+      "q": "Oddiy efirlar oddiy sharoitda qanday moddalar hisoblanadi?",
+      "v": [
+        "Reaksiyaga kirishmaydigan barqaror moddalar",
+        "Faol reaksiyaga kirishadigan moddalar",
+        "Kuchli oksidlovchi moddalar",
+        "Kuchli kislotali moddalar"
+      ],
+      "t": 0,
+      "izoh": "Efirlar oddiy sharoitda reaksiyaga kirishmaydigan barqaror moddalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#fe055dcf"
+    },
+    {
+      "q": "Oddiy efirlar ishqor va suyultirilgan kislotalar ta'sirida qanday bo'ladi?",
+      "v": [
+        "O'zgarmaydi",
+        "Tez parchalanadi",
+        "Tuz hosil qiladi",
+        "Polimerlanadi"
+      ],
+      "t": 0,
+      "izoh": "Ular ishqor va suyultirilgan kislotalar ta'sirida o'zgarmaydi, shuning uchun ko'pgina kimyoviy reaksiyalarda erituvchi sifatida ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#ef12934e"
+    },
+    {
+      "q": "Oddiy efirlar ko'pgina kimyoviy reaksiyalarda nima sifatida ishlatiladi?",
+      "v": [
+        "Erituvchi sifatida",
+        "Katalizator sifatida",
+        "Oksidlovchi sifatida",
+        "Indikator sifatida"
+      ],
+      "t": 0,
+      "izoh": "Barqarorligi tufayli oddiy efirlar ko'pgina kimyoviy reaksiyalarda erituvchi sifatida ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#3c31cce3"
+    },
+    {
+      "q": "Oddiy efirlar konsentrlangan yodid kislota ta'sirida qanday moddalarga parchalanadi?",
+      "v": [
+        "Spirt va alkilgalogenidlarga",
+        "Aldegid va suvga",
+        "Kislota va uglevodorodga",
+        "Ikkala spirtga"
+      ],
+      "t": 0,
+      "izoh": "Oddiy efirlar konsentrlangan yodid kislota ta'sirida spirt va alkilgalogenidlarga parchalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#a0d8d953"
+    },
+    {
+      "q": "CH3-O-CH3 + HI reaksiyasining mahsulotlari qaysi?",
+      "v": [
+        "CH3-OH + CH3-I",
+        "CH3-I + H2O",
+        "2CH3-I",
+        "CH3-OH + I2"
+      ],
+      "t": 0,
+      "izoh": "CH3-O-CH3 + HI → CH3-OH + CH3-I.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#62c7283f"
+    },
+    {
+      "q": "Oddiy efirlar tarkibidagi barcha uglerod atomlari va kislorod atomi qanday gibridlangan?",
+      "v": [
+        "sp3 gibridlangan",
+        "sp2 gibridlangan",
+        "sp gibridlangan",
+        "Gibridlanmagan"
+      ],
+      "t": 0,
+      "izoh": "Oddiy efirlar tarkibidagi barcha uglerod atomlari va kislorod atomi sp3 gibridlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#c7eebf4e"
+    },
+    {
+      "q": "Har bir sp3 gibridlangan atom nechta orbitaldan tashkil topgan?",
+      "v": [
+        "4 ta",
+        "2 ta",
+        "3 ta",
+        "6 ta"
+      ],
+      "t": 0,
+      "izoh": "Har bir sp3 gibridlangan atom 4 orbitaldan tashkil topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#4fb9adf6"
+    },
+    {
+      "q": "Tarkibida 16 ta sp3 gibridlangan orbital bo'lgan oddiy efir formulasini aniqlang.",
+      "v": [
+        "C3H8O",
+        "C4H10O",
+        "C2H6O",
+        "C5H12O"
+      ],
+      "t": 0,
+      "izoh": "16:4=4 ta atom, bittasi kislorod, demak uglerod 3 ta — formula C3H8O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#5e8635ea"
+    },
+    {
+      "q": "Tarkibida 16 ta sp3 gibridlangan orbital bo'lgan oddiy efirda uglerod atomlarining massa ulushi qancha?",
+      "v": [
+        "60 %",
+        "40 %",
+        "52 %",
+        "72 %"
+      ],
+      "t": 0,
+      "izoh": "C3H8O: w(C)=(3·12/60)·100 % = 60 %.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#0056f4f9"
+    },
+    {
+      "q": "CH3OH + CH3OH (Al2O3, yuqori harorat) reaksiyasida qanday modda hosil bo'ladi?",
+      "v": [
+        "CH3-O-CH3 + H2O",
+        "C2H5-O-C2H5 + H2O",
+        "CH3-CHO + H2",
+        "HCOOH + H2O"
+      ],
+      "t": 0,
+      "izoh": "Metil spirt bug'lari Al2O3 ustidan o'tkazilganda dimetil efir va suv hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#69554081"
+    },
+    {
+      "q": "R-O-H → R-O-R' o'zgarishida nima almashinadi?",
+      "v": [
+        "Gidroksil guruhining vodorod atomi o'rniga radikal",
+        "Kislorod atomi o'rniga uglerod",
+        "Radikal o'rniga vodorod",
+        "Gidroksil guruhi butunlay olib tashlanadi"
+      ],
+      "t": 0,
+      "izoh": "Spirt gidroksil guruhining vodorod atomi o'rniga radikal almashganda oddiy efir hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#cfebec89"
+    },
+    {
+      "q": "Metoksietan formulasidagi katta radikal qaysi?",
+      "v": [
+        "Etil",
+        "Metil",
+        "Propil",
+        "Butil"
+      ],
+      "t": 0,
+      "izoh": "CH3-O-CH2-CH3 da katta radikal etil bo'lib, u etan deb qaraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#352b6742"
+    },
+    {
+      "q": "Dietil efir olish reaksiyasida qatnashadigan kislota qanday rol o'ynaydi?",
+      "v": [
+        "Jarayonni tezlashtiruvchi sifatida qatnashadi",
+        "Reaktiv sifatida butunlay sarflanadi",
+        "Mahsulot sifatida ajralib chiqadi",
+        "Erituvchi sifatida qatnashmaydi"
+      ],
+      "t": 0,
+      "izoh": "Sulfat kislota reaksiyada katalizator sifatida qatnashib, jarayonni tezlashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m27-oddiy-efirlar#d4645083"
+    }
+  ]
+}

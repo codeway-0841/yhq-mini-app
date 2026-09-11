@@ -1,0 +1,1609 @@
+{
+  "nom": "Aralashma, qorishma va eritmalarga doir masalalar",
+  "bolim": "Nisbat, foiz va matnli masalalar",
+  "blok": "foiz",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Laborant Nodira 400 g eritma tayyorladi, undagi tuz massasi 60 g. Eritmaning konsentratsiyasi necha foiz?",
+      "v": [
+        "15%",
+        "17,6%",
+        "6,7%",
+        "1,5%"
+      ],
+      "t": 0,
+      "izoh": "Konsentratsiya = tuz massasi : eritma massasi. Demak 60 : 400 = 0,15. Foizga o'tkazamiz: 0,15 · 100% = 15%. Maxrajda suv emas, butun eritma massasi turishi shart. Javob: 15%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konsentratsiya-topish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#3a668b4a"
+    },
+    {
+      "q": "Idishdagi 250 g sharbatda 30 g shakar erigan. Sharbatdagi shakarning ulushi necha foizga teng?",
+      "v": [
+        "13,6%",
+        "12%",
+        "8,3%",
+        "1,2%"
+      ],
+      "t": 1,
+      "izoh": "Shakar ulushi = 30 : 250 = 0,12, ya'ni 12%. Ko'p o'quvchi 30 ni 220 ga, ya'ni suvga bo'lib yuboradi va 13,6% oladi. Bu xato, chunki sharbatning o'zi 250 g. Javob: 12%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konsentratsiya-topish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#657f38dd"
+    },
+    {
+      "q": "Dehqon 5 kg quruq o'g'itni 45 kg suvda to'liq eritdi. Hosil bo'lgan eritmada o'g'it necha foizni tashkil qiladi?",
+      "v": [
+        "11,1%",
+        "9%",
+        "10%",
+        "5%"
+      ],
+      "t": 2,
+      "izoh": "Eritma massasi = 5 + 45 = 50 kg. O'g'it ulushi = 5 : 50 = 0,1, ya'ni 10%. Faqat suvga bo'lish 11,1% beradi va bu noto'g'ri. Javob: 10%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konsentratsiya-topish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#b3284da5"
+    },
+    {
+      "q": "Farmatsevt 750 g 8% li dori eritmasini o'lchab oldi. Bu eritmada necha gramm toza dori moddasi bor?",
+      "v": [
+        "690 g",
+        "93,75 g",
+        "6 g",
+        "60 g"
+      ],
+      "t": 3,
+      "izoh": "Toza modda = eritma massasi · konsentratsiya. Demak 750 · 0,08 = 60 g. Qolgan 690 g suvga to'g'ri keladi, u dori emas. Bo'lish emas, ko'paytirish kerak. Javob: 60 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toza-modda-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#60b7f071"
+    },
+    {
+      "q": "Sotuvchi 4 kg og'irlikdagi 25% li sirka eritmasini xaridorga berdi. Bu eritmada necha gramm sof sirka bor?",
+      "v": [
+        "100 g",
+        "1000 g",
+        "160 g",
+        "3000 g"
+      ],
+      "t": 1,
+      "izoh": "Avval birlikni tenglashtiramiz: 4 kg = 4000 g. Sof sirka = 4000 · 0,25 = 1000 g. Kilogrammni grammga aylantirmaslik eng ko'p uchraydigan xato. Javob: 1000 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toza-modda-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#2a21c556"
+    },
+    {
+      "q": "Kimyo o'qituvchisi eritmada aynan 36 g tuz bo'lishini va konsentratsiya 12% chiqishini xohlaydi. Eritmaning umumiy massasi qancha bo'lishi kerak?",
+      "v": [
+        "300 g",
+        "264 g",
+        "432 g",
+        "48 g"
+      ],
+      "t": 0,
+      "izoh": "Butun massa = qism : ulush. Demak 36 : 0,12 = 300 g. 264 g — bu faqat suv qismi, ya'ni 300 − 36. Ko'paytirish 432 g beradi va bu xato. Javob: 300 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eritma-massasi-topish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#b8aecbd8"
+    },
+    {
+      "q": "Quymada 84 g mis bor va bu quyma massasining 35% ini tashkil etadi. Quymaning to'liq massasi qancha?",
+      "v": [
+        "156 g",
+        "29,4 g",
+        "240 g",
+        "294 g"
+      ],
+      "t": 2,
+      "izoh": "Butun massa = qism : ulush. Demak 84 : 0,35 = 240 g. 29,4 g javobi 84 ni 0,35 ga ko'paytirishdan chiqadi. 156 g esa quymadagi boshqa metall massasi. Javob: 240 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eritma-massasi-topish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#9002d438"
+    },
+    {
+      "q": "Zilola 300 g 20% li tuz eritmasiga 100 g toza suv qo'shdi. Yangi eritmaning konsentratsiyasi necha foiz bo'ldi?",
+      "v": [
+        "15%",
+        "30%",
+        "20%",
+        "25%"
+      ],
+      "t": 0,
+      "izoh": "Suv qo'shilganda tuz massasi o'zgarmaydi: 300 · 0,2 = 60 g. Yangi eritma massasi = 300 + 100 = 400 g. Konsentratsiya = 60 : 400 = 0,15, ya'ni 15%. Javob: 15%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "suv-qoshish-yangi-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#023dc4ff"
+    },
+    {
+      "q": "Oshpaz 480 g 25% li shakar siropiga 120 g suv quydi. Hosil bo'lgan sirop necha foizli bo'ladi?",
+      "v": [
+        "25%",
+        "31,25%",
+        "20%",
+        "16,7%"
+      ],
+      "t": 2,
+      "izoh": "Shakar miqdori o'zgarmadi: 480 · 0,25 = 120 g. Yangi massa = 480 + 120 = 600 g. Konsentratsiya = 120 : 600 = 0,2, ya'ni 20%. Suv qo'shilsa foiz albatta kamayadi. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suv-qoshish-yangi-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#c6108874"
+    },
+    {
+      "q": "Talaba 600 g 18% li eritmani suyultirib 12% li holga keltirmoqchi. Unga necha gramm suv qo'shishi kerak?",
+      "v": [
+        "900 g",
+        "200 g",
+        "300 g",
+        "36 g"
+      ],
+      "t": 2,
+      "izoh": "Tuz massasi: 600 · 0,18 = 108 g va u o'zgarmaydi. Kerakli yangi massa = 108 : 0,12 = 900 g. Qo'shiladigan suv = 900 − 600 = 300 g. Oxirgi ayirishni tashlab ketmaslik kerak. Javob: 300 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suv-qoshish-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#28ca05fc"
+    },
+    {
+      "q": "Bo'yoq ustasi 15 litr 40% li eritmani 24% li holga keltirmoqchi. Necha litr suv qo'shishi lozim?",
+      "v": [
+        "10 l",
+        "25 l",
+        "6 l",
+        "16 l"
+      ],
+      "t": 0,
+      "izoh": "Toza modda = 15 · 0,4 = 6 l va u saqlanadi. Kerakli umumiy hajm = 6 : 0,24 = 25 l. Qo'shiladigan suv = 25 − 15 = 10 l. Foizlar ayirmasi 16 ni javob deb olish xato. Javob: 10 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suv-qoshish-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#6325ea56"
+    },
+    {
+      "q": "Dengiz suvining 800 g namunasi 5% tuzli. Undan 300 g suv bug'latilsa, qolgan eritma necha foizli bo'ladi?",
+      "v": [
+        "5%",
+        "13,3%",
+        "3,6%",
+        "8%"
+      ],
+      "t": 3,
+      "izoh": "Tuz bug'lanmaydi: 800 · 0,05 = 40 g. Qolgan eritma massasi = 800 − 300 = 500 g. Konsentratsiya = 40 : 500 = 0,08, ya'ni 8%. Bug'lanishda foiz kamaymaydi, aksincha ortadi. Javob: 8%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bugatish-yangi-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#7c9dbed3"
+    },
+    {
+      "q": "Konserva sexida 60 kg 8% li sharbat quyuqlashtirilib 12% li qilinadi. Necha kilogramm suv bug'latiladi?",
+      "v": [
+        "20 kg",
+        "40 kg",
+        "4,8 kg",
+        "24 kg"
+      ],
+      "t": 0,
+      "izoh": "Quruq modda = 60 · 0,08 = 4,8 kg va bug'lanishda o'zgarmaydi. Yangi massa = 4,8 : 0,12 = 40 kg. Bug'latilgan suv = 60 − 40 = 20 kg. Javob: 20 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bugatish-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#ddf792a5"
+    },
+    {
+      "q": "Laboratoriyadagi 180 g 20% li eritmaga 20 g toza tuz solindi. Yangi konsentratsiya nechaga teng bo'ladi?",
+      "v": [
+        "31,1%",
+        "28%",
+        "18%",
+        "20%"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich tuz = 180 · 0,2 = 36 g. Qo'shilgandan keyin tuz = 36 + 20 = 56 g. Umumiy massa ham ortadi: 180 + 20 = 200 g. Konsentratsiya = 56 : 200 = 0,28, ya'ni 28%. Javob: 28%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tuz-qoshish-yangi-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#1adbf455"
+    },
+    {
+      "q": "Idishda 400 g 15% li eritma bor. Unga necha gramm toza tuz qo'shilsa, eritma 32% li bo'ladi?",
+      "v": [
+        "68 g",
+        "80 g",
+        "100 g",
+        "136 g"
+      ],
+      "t": 2,
+      "izoh": "Boshlang'ich tuz = 60 g. x gramm tuz qo'shilsa: 60 + x = 0,32 · (400 + x). Qavsni ochamiz: 60 + x = 128 + 0,32x, demak 0,68x = 68 va x = 100 g. Umumiy massa ham ortishini unutmaslik kerak. Javob: 100 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tuz-qoshish-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#911a4266"
+    },
+    {
+      "q": "Kimyogar 200 g 10% li va 300 g 20% li eritmalarni bitta idishda aralashtirdi. Aralashmadagi tuz necha foizni tashkil etadi?",
+      "v": [
+        "15%",
+        "30%",
+        "80%",
+        "16%"
+      ],
+      "t": 3,
+      "izoh": "Tuzlar qo'shiladi: 200 · 0,1 = 20 g va 300 · 0,2 = 60 g, jami 80 g. Umumiy massa = 500 g. Konsentratsiya = 80 : 500 = 0,16, ya'ni 16%. O'rta arifmetik 15% olish xato, chunki massalar teng emas. Javob: 16%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-eritma-aralashtirish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#98bcbeb5"
+    },
+    {
+      "q": "Ikki idishdagi 150 g 12% li va 250 g 28% li eritmalar birga quyildi. Hosil bo'lgan eritma konsentratsiyasi qanday?",
+      "v": [
+        "22%",
+        "20%",
+        "18%",
+        "40%"
+      ],
+      "t": 0,
+      "izoh": "Tuz miqdorlari: 150 · 0,12 = 18 g va 250 · 0,28 = 70 g, jami 88 g. Umumiy massa = 400 g. Demak 88 : 400 = 0,22, ya'ni 22%. 18% javobi massalarni almashtirib qo'yishdan chiqadi. Javob: 22%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-eritma-aralashtirish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#71f71944"
+    },
+    {
+      "q": "Kimyogar 300 g 60% li eritmaga 30% li eritmadan qo'shib, 50% li aralashma olmoqchi. Necha gramm 30% li eritma kerak?",
+      "v": [
+        "600 g",
+        "150 g",
+        "450 g",
+        "300 g"
+      ],
+      "t": 1,
+      "izoh": "Qo'shiladigan massa x bo'lsin: 180 + 0,3x = 0,5 · (300 + x). Qavsni ochamiz: 180 + 0,3x = 150 + 0,5x, demak 0,2x = 30 va x = 150 g. Nisbatni teskari olish 600 g beradi. Javob: 150 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-eritma-massa-topish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#0aad6b48"
+    },
+    {
+      "q": "35% li va 15% li eritmalardan 27% li aralashma tayyorlanmoqchi. Ularni qanday massa nisbatida olish kerak?",
+      "v": [
+        "3:2",
+        "2:3",
+        "7:3",
+        "5:3"
+      ],
+      "t": 0,
+      "izoh": "Aralashtirish qoidasiga ko'ra 35% li eritma ulushi (27 − 15) = 12 ga, 15% li eritma ulushi esa (35 − 27) = 8 ga proporsional. 12 : 8 nisbatni qisqartirsak 3 : 2 chiqadi. Maqsad 27% o'rtadan yuqori bo'lgani uchun kuchli eritmadan ko'proq olinadi. Javob: 3:2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-eritma-nisbat",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#886a5196"
+    },
+    {
+      "q": "Laboratoriyada 200 g 5% li, 300 g 15% li va 500 g 25% li eritmalar bitta idishga quyildi. Aralashmadagi tuz ulushi qancha?",
+      "v": [
+        "15%",
+        "12%",
+        "18%",
+        "45%"
+      ],
+      "t": 2,
+      "izoh": "Har bir eritmadagi tuz: 10 g, 45 g va 125 g, jami 180 g. Umumiy massa = 200 + 300 + 500 = 1000 g. Konsentratsiya = 180 : 1000 = 0,18, ya'ni 18%. Javob: 18%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-eritma-aralashtirish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#6a81593f"
+    },
+    {
+      "q": "Zargar 400 g quymaning 300 g qismi kumush ekanini aniqladi. Quymadagi qo'shimcha metall necha foizni tashkil qiladi?",
+      "v": [
+        "75%",
+        "25%",
+        "33,3%",
+        "133%"
+      ],
+      "t": 1,
+      "izoh": "Qo'shimcha metall massasi = 400 − 300 = 100 g. Uning ulushi = 100 : 400 = 0,25, ya'ni 25%. 33,3% javobi 100 ni butun quymaga emas, kumushga bo'lishdan chiqadi. Javob: 25%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quyma-tarkib-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#c08d8b96"
+    },
+    {
+      "q": "Bronza quymasida mis va qalay massalari 9:1 nisbatda joylashgan. 750 g bronzada necha gramm qalay bor?",
+      "v": [
+        "83,3 g",
+        "675 g",
+        "150 g",
+        "75 g"
+      ],
+      "t": 3,
+      "izoh": "Nisbat qismlari yig'indisi = 9 + 1 = 10. Bitta qism = 750 : 10 = 75 g. Qalay bitta qism, demak 75 g, mis esa 675 g. 750 ni 9 ga bo'lish xato, chunki qismlar soni 10 ta. Javob: 75 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quyma-nisbat",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#23a04790"
+    },
+    {
+      "q": "Tarkibida 40% mis bo'lgan 500 g quymaga necha gramm toza mis qo'shilsa, mis ulushi 60% ga chiqadi?",
+      "v": [
+        "100 g",
+        "250 g",
+        "166,7 g",
+        "300 g"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich mis = 500 · 0,4 = 200 g. Qo'shilgan mis x bo'lsin: 200 + x = 0,6 · (500 + x). Ochamiz: 200 + x = 300 + 0,6x, demak 0,4x = 100 va x = 250 g. 100 g javobi umumiy massa ortishini hisobga olmaslikdan chiqadi. Javob: 250 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quyma-metall-qoshish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#90ebbe26"
+    },
+    {
+      "q": "16% li 250 g quyma 40% li 150 g quyma bilan birga eritildi. Yangi quymada asosiy metall necha foizni tashkil etadi?",
+      "v": [
+        "28%",
+        "31%",
+        "25%",
+        "56%"
+      ],
+      "t": 2,
+      "izoh": "Metall massalari: 250 · 0,16 = 40 g va 150 · 0,4 = 60 g, jami 100 g. Umumiy massa = 250 + 150 = 400 g. Demak 100 : 400 = 0,25, ya'ni 25%. Javob: 25%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quyma-ikki-eritish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#8c29f5a2"
+    },
+    {
+      "q": "Fermer 4% yog'li sutdan 300 litr keltirdi. Uni 2,5% yog'li qilish uchun necha litr yog'siz sut qo'shish kerak?",
+      "v": [
+        "112,5 l",
+        "480 l",
+        "180 l",
+        "150 l"
+      ],
+      "t": 2,
+      "izoh": "Yog' miqdori o'zgarmaydi: 300 · 0,04 = 12 l. Kerakli umumiy hajm = 12 : 0,025 = 480 l. Qo'shiladigan yog'siz sut = 480 − 300 = 180 l. Javob: 180 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suv-qoshish-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#be389644"
+    },
+    {
+      "q": "Dorixonada 96% li spirtdan 250 ml mavjud. Uni 80% li qilish uchun necha millilitr suv qo'shiladi?",
+      "v": [
+        "50 ml",
+        "300 ml",
+        "40 ml",
+        "16 ml"
+      ],
+      "t": 0,
+      "izoh": "Toza spirt = 250 · 0,96 = 240 ml va u o'zgarmaydi. Yangi hajm = 240 : 0,8 = 300 ml. Qo'shiladigan suv = 300 − 250 = 50 ml. Foizlar ayirmasi 16 ni javob deb olish xato. Javob: 50 ml.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suv-qoshish-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#5c2e6f2c"
+    },
+    {
+      "q": "800 g 26% li eritmadan 200 g quyib olindi va o'rniga shuncha miqdorda suv quyildi. Eritmaning yangi konsentratsiyasi qanday?",
+      "v": [
+        "26%",
+        "20,8%",
+        "6,5%",
+        "19,5%"
+      ],
+      "t": 3,
+      "izoh": "Boshida tuz = 800 · 0,26 = 208 g. Quyib olingan 200 g eritma butun eritmaning to'rtdan bir qismi, shuning uchun u bilan birga 208 : 4 = 52 g tuz ham chiqib ketadi, qolgan tuz 156 g. Suv qo'shilgach massa yana 800 g bo'ladi. Demak 156 : 800 = 0,195, ya'ni 19,5%. Javob: 19,5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qismini-olib-suv-quyish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#93699bbe"
+    },
+    {
+      "q": "Yangi uzilgan olchaning 90% i suvdan iborat. 40 kg olcha quritilgach, undagi suv ulushi 60% ga tushdi. Quritilgan mahsulot massasi qancha?",
+      "v": [
+        "16 kg",
+        "24 kg",
+        "10 kg",
+        "4 kg"
+      ],
+      "t": 2,
+      "izoh": "Quritishda faqat suv yo'qoladi, quruq modda saqlanadi: 40 · 0,1 = 4 kg. Quritilgandan keyin quruq modda 40% ni tashkil etadi. Yangi massa = 4 : 0,4 = 10 kg. Suv ulushi bilan emas, quruq modda bilan ishlash kerak. Javob: 10 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quruq-modda-quritish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#d0d5637d"
+    },
+    {
+      "q": "Do'konda kilogrammi 60 000 so'mlik choydan 3 kg va 100 000 so'mlik choydan 2 kg aralashtirildi. Aralashmaning bir kilogrammi qanchadan tushadi?",
+      "v": [
+        "80 000 so'm",
+        "76 000 so'm",
+        "84 000 so'm",
+        "380 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Umumiy qiymat = 3 · 60 000 + 2 · 100 000 = 380 000 so'm. Umumiy massa = 3 + 2 = 5 kg. Bir kilogramm narxi = 380 000 : 5 = 76 000 so'm. O'rta arifmetik 80 000 xato, chunki massalar teng emas. Javob: 76 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralashma-orta-narx",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#d006534a"
+    },
+    {
+      "q": "Ikki xil eritmadan jami 500 g aralashma tayyorlandi va u 26% li chiqdi. Birinchisi 20% li, ikkinchisi 35% li bo'lsa, birinchisidan necha gramm olingan?",
+      "v": [
+        "200 g",
+        "250 g",
+        "300 g",
+        "350 g"
+      ],
+      "t": 2,
+      "izoh": "Birinchisidan x g, ikkinchisidan (500 − x) g olingan bo'lsin. Tenglama: 0,2x + 0,35 · (500 − x) = 0,26 · 500. Soddalashtiramiz: 175 − 0,15x = 130, demak 0,15x = 45 va x = 300 g. Javob: 300 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema-ikki-nomalum",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#47bc9dc0"
+    },
+    {
+      "q": "Bassein uchun 2 kg xlor kukuni 48 kg suvda eritildi. Eritmadagi xlor ulushi necha foizni tashkil etadi?",
+      "v": [
+        "4,2%",
+        "2%",
+        "96%",
+        "4%"
+      ],
+      "t": 3,
+      "izoh": "Eritma massasi = 2 + 48 = 50 kg. Xlor ulushi = 2 : 50 = 0,04, ya'ni 4%. 2 ni 48 ga bo'lish 4,2% beradi, lekin maxrajda butun eritma turishi kerak. Javob: 4%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konsentratsiya-topish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#20dcdbcc"
+    },
+    {
+      "q": "Idishdagi 300 g 10% li eritmaga avval 100 g suv, so'ngra 100 g toza tuz qo'shildi. Yakuniy konsentratsiya necha foiz?",
+      "v": [
+        "32,5%",
+        "26%",
+        "20%",
+        "43,3%"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich tuz = 300 · 0,1 = 30 g. Tuz qo'shilgach jami tuz = 30 + 100 = 130 g. Umumiy massa = 300 + 100 + 100 = 500 g. Demak 130 : 500 = 0,26, ya'ni 26%. Qo'shilgan tuz massasi umumiy massaga ham qo'shiladi. Javob: 26%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ketma-ket-qoshish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#5c556d3e"
+    },
+    {
+      "q": "10% li va 40% li eritmalarni istalgan nisbatda aralashtirish mumkin. Quyidagi konsentratsiyalardan qaysi birini bunday aralashmadan hech qachon olib bo'lmaydi?",
+      "v": [
+        "12%",
+        "25%",
+        "38%",
+        "45%"
+      ],
+      "t": 3,
+      "izoh": "Aralashmaning konsentratsiyasi har doim qo'shilgan eritmalarning eng kichik va eng katta qiymati orasida yotadi. Demak natija 10% dan kichik va 40% dan katta bo'la olmaydi. 12%, 25% va 38% shu oraliqda, 45% esa tashqarida. Javob: 45%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konsentratsiya-oraligi",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#5e9deb70"
+    },
+    {
+      "q": "Ikki idishning har birida 500 g eritma bor: birinchisi 9% li, ikkinchisi 34% li. Har biridan 100 g olinib, bir-biriga almashtirib quyildi. Birinchi idishdagi eritma necha foizli bo'ldi?",
+      "v": [
+        "43%",
+        "21,5%",
+        "11,7%",
+        "14%"
+      ],
+      "t": 3,
+      "izoh": "Birinchi idishda tuz = 500 · 0,09 = 45 g. Undan 100 g olingach 400 g eritma va 45 − 9 = 36 g tuz qoladi. Ikkinchi idishdan kelgan 100 g da 100 · 0,34 = 34 g tuz bor. Endi massa yana 500 g, tuz esa 36 + 34 = 70 g. Demak 70 : 500 = 0,14, ya'ni 14%. Javob: 14%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-massa-almashish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#1f5b73f7"
+    },
+    {
+      "q": "Tuz konidagi 500 kg sho'r suv 4% tuzli edi. Undan 300 kg suv bug'lantirilgach, qolgan eritmadagi tuz ulushi qancha?",
+      "v": [
+        "4%",
+        "6,7%",
+        "10%",
+        "2,5%"
+      ],
+      "t": 2,
+      "izoh": "Tuz massasi = 500 · 0,04 = 20 kg va bug'lanishda o'zgarmaydi. Qolgan eritma = 500 − 300 = 200 kg. Ulush = 20 : 200 = 0,1, ya'ni 10%. Javob: 10%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bugatish-yangi-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#6e537241"
+    },
+    {
+      "q": "Murabbiy 2 kg izotonik aralashma tayyorladi va uning 6% i shakar. Aralashmada necha gramm shakar bor?",
+      "v": [
+        "120 g",
+        "1880 g",
+        "33,3 g",
+        "12 g"
+      ],
+      "t": 0,
+      "izoh": "Avval birlikni tenglashtiramiz: 2 kg = 2000 g. Shakar massasi = 2000 · 0,06 = 120 g. Qolgan 1880 g shakar emas, boshqa tarkib. Javob: 120 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toza-modda-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#22b4735c"
+    },
+    {
+      "q": "Zavod bir smenada 3 tonna 12% li eritma ishlab chiqardi. Undagi toza moddaning massasi necha kilogramm?",
+      "v": [
+        "36 kg",
+        "2640 kg",
+        "360 kg",
+        "250 kg"
+      ],
+      "t": 2,
+      "izoh": "3 tonna = 3000 kg. Toza modda = 3000 · 0,12 = 360 kg. Bo'lish amali 250 kg beradi, lekin foizni topishda ko'paytirish kerak. Javob: 360 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toza-modda-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#b745097b"
+    },
+    {
+      "q": "Bog'bon 25 kg og'irlikdagi 16% li o'g'it eritmasini sepdi. Bu eritmadagi suvning massasi qancha?",
+      "v": [
+        "4 kg",
+        "21 kg",
+        "9 kg",
+        "16 kg"
+      ],
+      "t": 1,
+      "izoh": "O'g'it massasi = 25 · 0,16 = 4 kg. Suv massasi = 25 − 4 = 21 kg. Suv ulushi 84% bo'lgani uchun 25 · 0,84 = 21 kg deb ham topish mumkin. Javob: 21 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toza-modda-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#0dddf179"
+    },
+    {
+      "q": "Sirop tayyorlash uchun 105 g shakar kerak va u siropning 35% ini tashkil qilishi lozim. Siropning massasi qancha bo'ladi?",
+      "v": [
+        "195 g",
+        "36,75 g",
+        "140 g",
+        "300 g"
+      ],
+      "t": 3,
+      "izoh": "Butun massa = qism : ulush. Demak 105 : 0,35 = 300 g. 195 g — bu suvning massasi, 300 − 105. Ko'paytirish 36,75 g beradi va bu xato. Javob: 300 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eritma-massasi-topish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#c7df0377"
+    },
+    {
+      "q": "Eritmadagi suv massasi 456 g bo'lib, u eritmaning 76% ini tashkil qiladi. Eritmadagi tuzning massasi qancha?",
+      "v": [
+        "144 g",
+        "600 g",
+        "109,4 g",
+        "24 g"
+      ],
+      "t": 0,
+      "izoh": "Eritma massasi = 456 : 0,76 = 600 g. Tuz ulushi = 100% − 76% = 24%. Tuz massasi = 600 · 0,24 = 144 g yoki 600 − 456 = 144 g. Javob: 144 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eritma-massasi-topish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#e85d3bc4"
+    },
+    {
+      "q": "Dilnoza 150 g 40% li limon konsentratiga 250 g suv aralashtirdi. Yangi ichimlikda konsentrat ulushi necha foiz?",
+      "v": [
+        "40%",
+        "15%",
+        "24%",
+        "37,5%"
+      ],
+      "t": 1,
+      "izoh": "Toza konsentrat = 150 · 0,4 = 60 g. Yangi massa = 150 + 250 = 400 g. Ulush = 60 : 400 = 0,15, ya'ni 15%. Javob: 15%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "suv-qoshish-yangi-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#3af7b23e"
+    },
+    {
+      "q": "Bo'yoqchi 8 kg 45% li pigment eritmasini 12 kg suv bilan suyultirdi. Natijada konsentratsiya qanday bo'ldi?",
+      "v": [
+        "22,5%",
+        "18%",
+        "30%",
+        "45%"
+      ],
+      "t": 1,
+      "izoh": "Pigment massasi = 8 · 0,45 = 3,6 kg va u o'zgarmaydi. Umumiy massa = 8 + 12 = 20 kg. Konsentratsiya = 3,6 : 20 = 0,18, ya'ni 18%. Javob: 18%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suv-qoshish-yangi-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#802902da"
+    },
+    {
+      "q": "Idishdagi 5% li eritmaga uning massasiga teng miqdorda suv qo'shildi. Hosil bo'lgan eritmaning konsentratsiyasi qanday?",
+      "v": [
+        "10%",
+        "5%",
+        "2,5%",
+        "1,25%"
+      ],
+      "t": 2,
+      "izoh": "Eritma massasini 100 g deb olamiz, unda tuz 5 g bo'ladi. Shuncha suv qo'shilgach massa 200 g bo'ladi, tuz esa 5 g qolaveradi. Konsentratsiya = 5 : 200 = 0,025, ya'ni 2,5%. Massa ikki barobar ortsa, foiz ikki barobar kamayadi. Javob: 2,5%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suv-qoshish-yangi-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#1b3fc1d6"
+    },
+    {
+      "q": "Rassom 90 g 30% li elim eritmasini 18% li holga keltirmoqchi. Necha gramm suv qo'shishi kerak?",
+      "v": [
+        "150 g",
+        "12 g",
+        "36 g",
+        "60 g"
+      ],
+      "t": 3,
+      "izoh": "Elim massasi = 90 · 0,3 = 27 g va u saqlanadi. Kerakli umumiy massa = 27 : 0,18 = 150 g. Qo'shiladigan suv = 150 − 90 = 60 g. Javob: 60 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suv-qoshish-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#25816542"
+    },
+    {
+      "q": "Xo'jalikda 250 kg 6% li eritmadan issiqda 100 kg suv bug'lanib ketdi. Qolgan eritmaning konsentratsiyasi qanday?",
+      "v": [
+        "10%",
+        "6%",
+        "15%",
+        "4,3%"
+      ],
+      "t": 0,
+      "izoh": "Tuz bug'lanmaydi: 250 · 0,06 = 15 kg. Qolgan eritma = 250 − 100 = 150 kg. Konsentratsiya = 15 : 150 = 0,1, ya'ni 10%. Javob: 10%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bugatish-yangi-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#3b4d6727"
+    },
+    {
+      "q": "Eritma massasining 40% i suv sifatida bug'latilgach, konsentratsiya 25% bo'ldi. Boshlang'ich konsentratsiya qanday edi?",
+      "v": [
+        "10%",
+        "15%",
+        "20%",
+        "35%"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich massani 100 g deb olamiz. Bug'latishdan keyin massa 60 g bo'ladi. Tuz massasi = 60 · 0,25 = 15 g va u bug'lanishda o'zgarmagan. Demak boshida 15 : 100 = 0,15, ya'ni 15% edi. Javob: 15%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-boshlangich-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#800f9aa6"
+    },
+    {
+      "q": "Shifoxonada 800 g 3% li eritmani quyuqlashtirib 5% li qilish kerak. Necha gramm suv bug'latiladi?",
+      "v": [
+        "480 g",
+        "200 g",
+        "320 g",
+        "24 g"
+      ],
+      "t": 2,
+      "izoh": "Toza modda = 800 · 0,03 = 24 g va u o'zgarmaydi. Kerakli massa = 24 : 0,05 = 480 g. Bug'latiladigan suv = 800 − 480 = 320 g. Javob: 320 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bugatish-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#31faccfe"
+    },
+    {
+      "q": "Sharbat zavodi 4% li sharbatdan 12% li quyuqlashtirilgan mahsulot olmoqchi. Sharbatning qancha qismi bug'latilishi kerak?",
+      "v": [
+        "1/3 qismini",
+        "3/4 qismini",
+        "1/2 qismini",
+        "2/3 qismini"
+      ],
+      "t": 3,
+      "izoh": "Sharbatni 100 kg deb olamiz, quruq modda = 4 kg. Yangi massa = 4 : 0,12 = 100/3 kg. Bug'latilgan suv = 100 − 100/3 = 200/3 kg. Bu boshlang'ich massaning 2/3 qismi. Javob: 2/3 qismini.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bugatish-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#c0077f6f"
+    },
+    {
+      "q": "Oshxonada 270 g 10% li tuzli suvga yana 30 g toza tuz qo'shildi. Eritmaning yangi konsentratsiyasi qanday?",
+      "v": [
+        "19%",
+        "21,1%",
+        "10%",
+        "20%"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich tuz = 270 · 0,1 = 27 g. Yangi tuz = 27 + 30 = 57 g. Yangi massa = 270 + 30 = 300 g. Konsentratsiya = 57 : 300 = 0,19, ya'ni 19%. Javob: 19%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tuz-qoshish-yangi-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#50ff375b"
+    },
+    {
+      "q": "Idishdagi 250 g 4% li eritmaga necha gramm toza tuz qo'shilsa, konsentratsiya 20% ga chiqadi?",
+      "v": [
+        "40 g",
+        "50 g",
+        "62,5 g",
+        "200 g"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich tuz = 10 g. Qo'shilgan tuz x bo'lsin: 10 + x = 0,2 · (250 + x). Ochamiz: 10 + x = 50 + 0,2x, demak 0,8x = 40 va x = 50 g. 40 g javobi umumiy massa ham ortishini unutishdan chiqadi. Javob: 50 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tuz-qoshish-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#91096417"
+    },
+    {
+      "q": "Teng massali 17% li va 41% li ikki eritma bitta idishda aralashtirildi. Hosil bo'lgan eritmaning konsentratsiyasi qanday?",
+      "v": [
+        "58%",
+        "24%",
+        "29%",
+        "14,5%"
+      ],
+      "t": 2,
+      "izoh": "Massalar teng bo'lgani uchun har birini 100 g deb olamiz. Tuz = 17 + 41 = 58 g, umumiy massa = 200 g. Konsentratsiya = 58 : 200 = 0,29, ya'ni 29%. Faqat massalar teng bo'lgandagina javob o'rta arifmetikka teng chiqadi. Javob: 29%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-eritma-aralashtirish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#7bb79aa9"
+    },
+    {
+      "q": "24% li eritmadan 400 g olindi. 40% li aralashma hosil qilish uchun 60% li eritmadan qancha qo'shish kerak?",
+      "v": [
+        "160 g",
+        "640 g",
+        "400 g",
+        "320 g"
+      ],
+      "t": 3,
+      "izoh": "Qo'shiladigan massa x bo'lsin: 96 + 0,6x = 0,4 · (400 + x). Ochamiz: 96 + 0,6x = 160 + 0,4x, demak 0,2x = 64 va x = 320 g. Javob: 320 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-eritma-massa-topish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#70771050"
+    },
+    {
+      "q": "Sof suv va 30% li eritmadan 12% li eritma olmoqchimiz. Suv bilan eritmaning massa nisbati qanday bo'ladi?",
+      "v": [
+        "3:2",
+        "2:3",
+        "5:2",
+        "1:2"
+      ],
+      "t": 0,
+      "izoh": "Sof suvni 0% li eritma deb qaraymiz. Suv ulushi (30 − 12) = 18 ga, eritma ulushi (12 − 0) = 12 ga proporsional. 18 : 12 nisbatni qisqartirsak 3 : 2 chiqadi. Javob: 3:2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-eritma-nisbat",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#fd348fdc"
+    },
+    {
+      "q": "Ikki eritma 1:3 massa nisbatida aralashtirilganda 21% li aralashma chiqdi. Birinchisi 9% li bo'lsa, ikkinchisi necha foizli?",
+      "v": [
+        "33%",
+        "25%",
+        "57%",
+        "75%"
+      ],
+      "t": 1,
+      "izoh": "Massalarni 1 qism va 3 qism deb olamiz, jami 4 qism. Tenglama: 9 + 3c = 21 · 4 = 84. Bundan 3c = 75 va c = 25%. Javobni 75% deb qoldirish uchga bo'lishni tashlab ketishdan chiqadi. Javob: 25%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-eritma-nisbat",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#c615f1e4"
+    },
+    {
+      "q": "Uch idishdagi 100 g 10% li, 150 g 20% li va 250 g 30% li eritmalar birga aralashtirildi. Aralashma konsentratsiyasi qanday?",
+      "v": [
+        "20%",
+        "17%",
+        "23%",
+        "60%"
+      ],
+      "t": 2,
+      "izoh": "Tuz miqdorlari: 10 g, 30 g va 75 g, jami 115 g. Umumiy massa = 100 + 150 + 250 = 500 g. Konsentratsiya = 115 : 500 = 0,23, ya'ni 23%. Javob: 23%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-eritma-aralashtirish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#ff91522d"
+    },
+    {
+      "q": "Quymada 54 g oltin, 36 g kumush va 30 g mis bor. Quymadagi oltin necha foizni tashkil etadi?",
+      "v": [
+        "60%",
+        "30%",
+        "55%",
+        "45%"
+      ],
+      "t": 3,
+      "izoh": "Quyma massasi = 54 + 36 + 30 = 120 g. Oltin ulushi = 54 : 120 = 0,45, ya'ni 45%. 60% javobi misni hisobga olmay 54 ni 90 ga bo'lishdan chiqadi. Javob: 45%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quyma-tarkib-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#a6fe1c4b"
+    },
+    {
+      "q": "Po'lat quymasida temir va uglerod massalari 49:1 nisbatda. 12 kg po'latda necha gramm uglerod bor?",
+      "v": [
+        "240 g",
+        "245 g",
+        "11 760 g",
+        "1200 g"
+      ],
+      "t": 0,
+      "izoh": "12 kg = 12 000 g. Nisbat qismlari yig'indisi = 49 + 1 = 50. Bitta qism = 12 000 : 50 = 240 g. Uglerod bitta qism, ya'ni 240 g. 12 000 ni 49 ga bo'lish xato. Javob: 240 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quyma-nisbat",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#430e04e3"
+    },
+    {
+      "q": "60% kumushli 300 g quymaga necha gramm toza kumush qo'shilsa, quymadagi kumush ulushi 75% ga chiqadi?",
+      "v": [
+        "45 g",
+        "180 g",
+        "60 g",
+        "225 g"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich kumush = 300 · 0,6 = 180 g. Qo'shilgan kumush x bo'lsin: 180 + x = 0,75 · (300 + x). Ochamiz: 180 + x = 225 + 0,75x, demak 0,25x = 45 va x = 180 g. Javob: 180 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quyma-metall-qoshish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#0cf3b0bb"
+    },
+    {
+      "q": "70% oltinli 120 g quyma 40% oltinli 180 g quyma bilan birga eritildi. Yangi quymadagi oltin ulushi qancha?",
+      "v": [
+        "55%",
+        "58%",
+        "52%",
+        "110%"
+      ],
+      "t": 2,
+      "izoh": "Oltin massalari: 120 · 0,7 = 84 g va 180 · 0,4 = 72 g, jami 156 g. Umumiy massa = 300 g. Ulush = 156 : 300 = 0,52, ya'ni 52%. O'rta arifmetik 55% xato, chunki quymalar massasi teng emas. Javob: 52%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quyma-ikki-eritish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#84d27e6d"
+    },
+    {
+      "q": "500 g 40% li eritmadan 150 g olinib, o'rniga aynan shuncha suv quyildi. Yangi konsentratsiya qanday bo'ladi?",
+      "v": [
+        "40%",
+        "30,8%",
+        "12%",
+        "28%"
+      ],
+      "t": 3,
+      "izoh": "Boshida tuz = 200 g. Olingan 150 g eritma bilan 60 g tuz chiqib ketadi, qolgan tuz = 140 g. Suv qo'shilgach massa yana 500 g bo'ladi. Konsentratsiya = 140 : 500 = 0,28, ya'ni 28%. Javob: 28%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qismini-olib-suv-quyish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#f3c4d929"
+    },
+    {
+      "q": "Yangi terilgan qo'ziqorin 96% suvdan iborat. 25 kg qo'ziqorin quritilib, suv ulushi 80% ga tushirildi. Quritilgan mahsulot massasi qancha?",
+      "v": [
+        "5 kg",
+        "20 kg",
+        "1 kg",
+        "6,25 kg"
+      ],
+      "t": 0,
+      "izoh": "Quruq modda saqlanadi: 25 · 0,04 = 1 kg. Quritishdan keyin quruq modda 20% ni tashkil etadi. Yangi massa = 1 : 0,2 = 5 kg. Suv ulushidan emas, quruq moddadan boshlash kerak. Javob: 5 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quruq-modda-quritish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#21d8042b"
+    },
+    {
+      "q": "Fermer kilogrammi 12 000 so'mlik bug'doyni 8 000 so'mlik arpa bilan 3:2 nisbatda aralashtirdi. Aralashmaning bir kilogrammi qancha turadi?",
+      "v": [
+        "10 000 so'm",
+        "10 400 so'm",
+        "9 600 so'm",
+        "20 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "3 kg va 2 kg olamiz. Umumiy qiymat = 3 · 12 000 + 2 · 8 000 = 52 000 so'm. Umumiy massa = 5 kg. Bir kilogramm narxi = 52 000 : 5 = 10 400 so'm. Javob: 10 400 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralashma-orta-narx",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#67ea41ee"
+    },
+    {
+      "q": "Ikki quymadan 800 g yangi quyma tayyorlandi va u 25% mis saqlaydi. Quymalar 15% va 40% li bo'lsa, 40% lisidan necha gramm olingan?",
+      "v": [
+        "480 g",
+        "400 g",
+        "320 g",
+        "280 g"
+      ],
+      "t": 2,
+      "izoh": "15% li quymadan x g olingan bo'lsin, u holda 40% lisidan (800 − x) g. Tenglama: 0,15x + 0,4 · (800 − x) = 0,25 · 800. Bundan 320 − 0,25x = 200, demak x = 480 g va 40% lisidan 800 − 480 = 320 g. Javob: 320 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema-ikki-nomalum",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#abc59d7f"
+    },
+    {
+      "q": "Idishdagi 600 g 20% li eritmadan avval 200 g suv bug'latildi, so'ngra 100 g suv qo'shildi. Oxirgi konsentratsiya qanday?",
+      "v": [
+        "30%",
+        "20%",
+        "17,1%",
+        "24%"
+      ],
+      "t": 3,
+      "izoh": "Tuz massasi hech qachon o'zgarmadi: 600 · 0,2 = 120 g. Yakuniy massa = 600 − 200 + 100 = 500 g. Konsentratsiya = 120 : 500 = 0,24, ya'ni 24%. Ikkinchi qadamni tashlab ketsangiz 30% chiqadi. Javob: 24%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-qoshish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#76c1dcd0"
+    },
+    {
+      "q": "Quyidagi eritma juftliklaridan qaysi birini aralashtirib 28% li eritma olish mumkin emas?",
+      "v": [
+        "15% va 40%",
+        "30% va 45%",
+        "10% va 50%",
+        "28% va 28%"
+      ],
+      "t": 1,
+      "izoh": "Aralashmaning konsentratsiyasi doim qo'shilayotgan ikki qiymat orasida yotadi. 28% soni 15 va 40, 10 va 50 oraliqlarida bor, 28% va 28% holida esa aynan o'zi chiqadi. Ammo 28% soni 30 bilan 45 orasida emas. Javob: 30% va 45%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konsentratsiya-oraligi",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#58635757"
+    },
+    {
+      "q": "Ikki idishda 300 g dan eritma bor: birinchisi 12% li, ikkinchisi 24% li. Har biridan 150 g olib almashtirilgach, ikkinchi idish necha foizli bo'ladi?",
+      "v": [
+        "18%",
+        "36%",
+        "6%",
+        "24%"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi idishda 150 g qoladi va unda 36 g tuz bor. Birinchisidan kelgan 150 g da 18 g tuz bor. Endi massa 300 g, tuz esa 36 + 18 = 54 g. Konsentratsiya = 54 : 300 = 0,18, ya'ni 18%. Javob: 18%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-massa-almashish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#d0fc5a7c"
+    },
+    {
+      "q": "Idishdagi 8 litr sof antifrizdan 2 litr to'kib, o'rniga suv quyildi. Shu amal yana bir marta takrorlangach, antifriz ulushi qancha bo'ladi?",
+      "v": [
+        "50%",
+        "62,5%",
+        "56,25%",
+        "75%"
+      ],
+      "t": 2,
+      "izoh": "Birinchi almashtirishdan keyin 6 litr antifriz qoladi, ya'ni 75%. Ikkinchi marta to'kilgan 2 litrda 1,5 litr antifriz bor, qolgani 4,5 litr. Hajm yana 8 litr bo'lgani uchun ulush = 4,5 : 8 = 0,5625, ya'ni 56,25%. Javob: 56,25%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "takroriy-almashtirish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#a173c35e"
+    },
+    {
+      "q": "Eritmada tuz va suv massalari 7:13 nisbatda berilgan. Bu eritmaning konsentratsiyasi necha foiz?",
+      "v": [
+        "7%",
+        "53,8%",
+        "65%",
+        "35%"
+      ],
+      "t": 3,
+      "izoh": "Nisbat qismlari yig'indisi = 7 + 13 = 20, ya'ni eritma 20 qismdan iborat. Tuzga 7 qism to'g'ri keladi, demak uning ulushi = 7 : 20 = 0,35, ya'ni 35%. 53,8% javobi tuzni butun eritmaga emas, faqat suvga bo'lishdan chiqadi. Javob: 35%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eritma-suv-nisbati",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#5b279c6b"
+    },
+    {
+      "q": "Birinchi idishda 200 g eritmada 30 g tuz, ikkinchisida 350 g eritmada 49 g tuz bor. Qaysi idishdagi eritma quyuqroq?",
+      "v": [
+        "Birinchisi, chunki uning konsentratsiyasi 15%",
+        "Ikkinchisi, chunki unda tuz massasi ko'proq",
+        "Ikkinchisi, chunki uning konsentratsiyasi 16%",
+        "Ikkalasining konsentratsiyasi bir xil"
+      ],
+      "t": 0,
+      "izoh": "Birinchi eritma: 30 : 200 = 0,15, ya'ni 15%. Ikkinchi eritma: 49 : 350 = 0,14, ya'ni 14%. Quyuqlikni tuz massasi emas, konsentratsiya belgilaydi. Demak birinchi eritma quyuqroq. Javob: birinchisi, konsentratsiyasi 15%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konsentratsiya-taqqoslash",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#26ac6d1f"
+    },
+    {
+      "q": "Choyxonada kilogrammi 45 000 so'mlik quruq mevadan 3 kg va 25 000 so'mlikdan 7 kg aralashtirildi. Aralashmaning bir kilogrammi qanchaga tushadi?",
+      "v": [
+        "35 000 so'm",
+        "39 000 so'm",
+        "31 000 so'm",
+        "70 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Umumiy qiymat = 3 · 45 000 + 7 · 25 000 = 310 000 so'm. Umumiy massa = 3 + 7 = 10 kg. Bir kilogramm narxi = 310 000 : 10 = 31 000 so'm. Arzon meva ko'proq bo'lgani uchun natija o'rtachadan past. Javob: 31 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralashma-orta-narx",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#dacace7d"
+    },
+    {
+      "q": "Bekzod 12 g limon kislotasini 288 g suvda eritdi. Hosil bo'lgan eritma necha foizli bo'ldi?",
+      "v": [
+        "4,2%",
+        "4%",
+        "96%",
+        "0,4%"
+      ],
+      "t": 1,
+      "izoh": "Eritma massasi = 12 + 288 = 300 g. Konsentratsiya = 12 : 300 = 0,04, ya'ni 4%. 12 ni 288 ga bo'lish 4,2% beradi, ammo maxrajda butun eritma turishi kerak. Javob: 4%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konsentratsiya-topish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#e36ebb51"
+    },
+    {
+      "q": "Eritmadagi tuz massasi 45 g bo'lib, konsentratsiya 9% ni tashkil etadi. Eritmadagi suvning massasi qancha?",
+      "v": [
+        "500 g",
+        "455 g",
+        "405 g",
+        "4,05 g"
+      ],
+      "t": 1,
+      "izoh": "Eritma massasi = 45 : 0,09 = 500 g. Suv massasi = 500 − 45 = 455 g. 500 g javobi oxirgi ayirishni tashlab ketishdan chiqadi. Javob: 455 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eritma-massasi-topish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#cf0d13e3"
+    },
+    {
+      "q": "Qozondagi 900 g 2% li sho'rvadan qaynatish davomida 400 g suv bug'landi. Qolgan suyuqlikdagi tuz ulushi qanday?",
+      "v": [
+        "3,6%",
+        "2%",
+        "4,5%",
+        "1,4%"
+      ],
+      "t": 0,
+      "izoh": "Tuz bug'lanmaydi: 900 · 0,02 = 18 g. Qolgan suyuqlik = 900 − 400 = 500 g. Ulush = 18 : 500 = 0,036, ya'ni 3,6%. Javob: 3,6%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bugatish-yangi-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#ba6bede2"
+    },
+    {
+      "q": "Eritma massasining aynan yarmi suv sifatida bug'latilsa, undagi tuz ulushi qanday o'zgaradi?",
+      "v": [
+        "Ikki barobar ortadi",
+        "O'zgarmaydi",
+        "Ikki barobar kamayadi",
+        "To'rt barobar ortadi"
+      ],
+      "t": 0,
+      "izoh": "Tuz massasi bug'lanishda o'zgarmaydi, eritma massasi esa ikki barobar kamayadi. Kasrning surati o'zgarmay, maxraji ikki barobar kichrayadi. Demak konsentratsiya ikki barobar ortadi. Javob: ikki barobar ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bugatish-yangi-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#828ebba3"
+    },
+    {
+      "q": "Fermer 400 kg 9% li o'g'it eritmasini quyuqlashtirib 15% li qilmoqchi. Necha kilogramm suv bug'latish kerak?",
+      "v": [
+        "160 kg",
+        "240 kg",
+        "60 kg",
+        "36 kg"
+      ],
+      "t": 0,
+      "izoh": "O'g'it massasi = 400 · 0,09 = 36 kg va u o'zgarmaydi. Kerakli massa = 36 : 0,15 = 240 kg. Bug'latiladigan suv = 400 − 240 = 160 kg. Javob: 160 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bugatish-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#e6185a19"
+    },
+    {
+      "q": "300 g eritmadan 100 g suv bug'latilgach, konsentratsiya 6% ga ortdi. Boshlang'ich konsentratsiya qanday edi?",
+      "v": [
+        "18%",
+        "6%",
+        "24%",
+        "12%"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich konsentratsiya c foiz bo'lsin, u holda tuz massasi 3c gramm. Bug'latishdan keyin massa 200 g, konsentratsiya esa 3c : 200 · 100% = 1,5c foiz. Shart bo'yicha 1,5c = c + 6, demak 0,5c = 6 va c = 12%. Javob: 12%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-boshlangich-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#fb65f69b"
+    },
+    {
+      "q": "Sexda 480 g 5% li eritmaga qo'shimcha ravishda 20 g toza modda qo'shildi. Yangi konsentratsiya qanday bo'ldi?",
+      "v": [
+        "9,2%",
+        "5%",
+        "4,4%",
+        "8,8%"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich toza modda = 480 · 0,05 = 24 g. Yangi toza modda = 24 + 20 = 44 g. Yangi massa = 480 + 20 = 500 g. Konsentratsiya = 44 : 500 = 0,088, ya'ni 8,8%. Javob: 8,8%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tuz-qoshish-yangi-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#17a9c75d"
+    },
+    {
+      "q": "20% li eritmaga uning massasining 25% iga teng miqdorda toza tuz qo'shildi. Yangi konsentratsiya qanday bo'ladi?",
+      "v": [
+        "45%",
+        "36%",
+        "25%",
+        "16%"
+      ],
+      "t": 1,
+      "izoh": "Eritma massasini 100 g deb olamiz, unda tuz 20 g. Qo'shilgan tuz = 100 · 0,25 = 25 g. Yangi tuz = 45 g, yangi massa = 125 g. Konsentratsiya = 45 : 125 = 0,36, ya'ni 36%. Javob: 36%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tuz-qoshish-yangi-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#e8e1c823"
+    },
+    {
+      "q": "Idishdagi 600 g 5% li eritmaga necha gramm toza tuz qo'shilsa, u 24% li bo'ladi?",
+      "v": [
+        "114 g",
+        "144 g",
+        "150 g",
+        "120 g"
+      ],
+      "t": 2,
+      "izoh": "Boshlang'ich tuz = 30 g. Qo'shilgan tuz x bo'lsin: 30 + x = 0,24 · (600 + x). Ochamiz: 30 + x = 144 + 0,24x, demak 0,76x = 114 va x = 150 g. Javob: 150 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tuz-qoshish-miqdori",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#e7a22a4d"
+    },
+    {
+      "q": "Laborant 100 g 30% li eritmani 400 g 5% li eritma bilan qo'shdi. Natijaviy konsentratsiya qancha bo'ladi?",
+      "v": [
+        "10%",
+        "17,5%",
+        "25%",
+        "35%"
+      ],
+      "t": 0,
+      "izoh": "Tuz miqdorlari: 100 · 0,3 = 30 g va 400 · 0,05 = 20 g, jami 50 g. Umumiy massa = 500 g. Konsentratsiya = 50 : 500 = 0,1, ya'ni 10%. Suyuq eritma ko'p bo'lgani uchun natija o'rta arifmetikdan past. Javob: 10%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-eritma-aralashtirish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#130dbfda"
+    },
+    {
+      "q": "Suvga 200 g 45% li eritma qo'shilib, jami 900 g suyuqlik hosil qilindi. Yangi suyuqlikning konsentratsiyasi qanday?",
+      "v": [
+        "12,9%",
+        "45%",
+        "9%",
+        "10%"
+      ],
+      "t": 3,
+      "izoh": "Toza modda = 200 · 0,45 = 90 g va suv qo'shilishi bilan o'zgarmaydi. Umumiy massa allaqachon berilgan: 900 g. Konsentratsiya = 90 : 900 = 0,1, ya'ni 10%. Javob: 10%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-eritma-aralashtirish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#d75fa7ee"
+    },
+    {
+      "q": "50% li eritmadan 240 g bor. 30% li aralashma olish uchun 20% li eritmadan necha gramm qo'shiladi?",
+      "v": [
+        "120 g",
+        "480 g",
+        "240 g",
+        "360 g"
+      ],
+      "t": 1,
+      "izoh": "Qo'shiladigan massa x bo'lsin: 120 + 0,2x = 0,3 · (240 + x). Ochamiz: 120 + 0,2x = 72 + 0,3x, demak 0,1x = 48 va x = 480 g. Maqsad 30% kuchsiz eritmaga yaqin, shuning uchun undan ko'proq kerak. Javob: 480 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-eritma-massa-topish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#30aef94e"
+    },
+    {
+      "q": "Necha gramm 10% li eritmani 300 g 50% li eritma bilan aralashtirsak, 40% li eritma hosil bo'ladi?",
+      "v": [
+        "900 g",
+        "300 g",
+        "100 g",
+        "150 g"
+      ],
+      "t": 2,
+      "izoh": "Izlanayotgan massa x bo'lsin: 0,1x + 150 = 0,4 · (x + 300). Ochamiz: 0,1x + 150 = 0,4x + 120, demak 0,3x = 30 va x = 100 g. Nisbatni teskari olish 900 g beradi. Javob: 100 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-eritma-massa-topish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#06cf4119"
+    },
+    {
+      "q": "8% li va 20% li eritmalardan 14% li aralashma olish uchun ularni qanday nisbatda olish kerak?",
+      "v": [
+        "2:3",
+        "3:2",
+        "2:5",
+        "1:1"
+      ],
+      "t": 3,
+      "izoh": "Ulushlar ayirmalarga proporsional: 8% li eritma uchun (20 − 14) = 6, 20% li eritma uchun (14 − 8) = 6. Demak nisbat 6 : 6, ya'ni 1 : 1. Maqsadli qiymat aynan o'rtada bo'lgani uchun massalar teng olinadi. Javob: 1:1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-eritma-nisbat",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#8b9e9fcd"
+    },
+    {
+      "q": "Bir eritma 5% li, ikkinchisi 45% li. Ular 4:1 massa nisbatida aralashtirilsa, konsentratsiya qancha bo'ladi?",
+      "v": [
+        "13%",
+        "25%",
+        "37%",
+        "10%"
+      ],
+      "t": 0,
+      "izoh": "4 qism va 1 qism olamiz, jami 5 qism. Toza modda = 4 · 5 + 1 · 45 = 65 birlik. Konsentratsiya = 65 : 5 = 13%. Nisbatni teskari qo'yish 37% beradi. Javob: 13%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-eritma-nisbat",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#e394dbef"
+    },
+    {
+      "q": "Uch xil quymadan 250 g dan olib eritildi: ular 7% li, 23% li va 51% li edi. Yangi quyma necha foizli?",
+      "v": [
+        "81%",
+        "51%",
+        "40,5%",
+        "27%"
+      ],
+      "t": 3,
+      "izoh": "Metall massalari: 250 · 0,07 = 17,5 g, 250 · 0,23 = 57,5 g va 250 · 0,51 = 127,5 g, jami 202,5 g. Umumiy massa = 750 g. Konsentratsiya = 202,5 : 750 = 0,27, ya'ni 27%. Massalar teng bo'lgani uchun bu foizlarning o'rta arifmetigiga ham teng. Javob: 27%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-eritma-aralashtirish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#15ae41ec"
+    },
+    {
+      "q": "50 g 10% li va 150 g 30% li eritmalarga necha gramm sof suv qo'shilsa, aralashma 20% li bo'ladi?",
+      "v": [
+        "25 g",
+        "50 g",
+        "250 g",
+        "100 g"
+      ],
+      "t": 1,
+      "izoh": "Tuz miqdorlari: 5 g va 45 g, jami 50 g. Suvsiz massa = 200 g. Kerakli umumiy massa = 50 : 0,2 = 250 g. Qo'shiladigan suv = 250 − 200 = 50 g. Javob: 50 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-eritma-aralashtirish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#6e0e7907"
+    },
+    {
+      "q": "Zargarlik buyumi 585 probali, ya'ni undagi oltin ulushi 58,5%. Massasi 40 g bo'lgan uzukda necha gramm sof oltin bor?",
+      "v": [
+        "16,6 g",
+        "2,34 g",
+        "23,4 g",
+        "58,5 g"
+      ],
+      "t": 2,
+      "izoh": "Sof oltin = 40 · 0,585 = 23,4 g. Qolgan 16,6 g qo'shimcha metallarga to'g'ri keladi. Vergulni noto'g'ri qo'yish 2,34 g beradi. Javob: 23,4 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quyma-tarkib-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#5a232025"
+    },
+    {
+      "q": "Melxior quymasida mis va nikel massalari 4:1 nisbatda. Quymada 15 g nikel bo'lsa, quymaning massasi qancha?",
+      "v": [
+        "75 g",
+        "60 g",
+        "19 g",
+        "45 g"
+      ],
+      "t": 0,
+      "izoh": "Nikel bitta qismga to'g'ri keladi, demak bitta qism = 15 g. Qismlar soni = 4 + 1 = 5. Quyma massasi = 15 · 5 = 75 g, misi esa 60 g. Javob: 75 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quyma-nisbat",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#739809c5"
+    },
+    {
+      "q": "80% mislik 250 g quymaga necha gramm toza qalay qo'shilsa, misning ulushi 50% ga tushadi?",
+      "v": [
+        "400 g",
+        "50 g",
+        "250 g",
+        "150 g"
+      ],
+      "t": 3,
+      "izoh": "Mis massasi = 250 · 0,8 = 200 g va qalay qo'shilganda o'zgarmaydi. Mis 50% bo'lishi uchun umumiy massa 200 : 0,5 = 400 g bo'lishi kerak. Qo'shiladigan qalay = 400 − 250 = 150 g. Javob: 150 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quyma-metall-qoshish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#c7ede86e"
+    },
+    {
+      "q": "Kumush ulushi 30% bo'lgan 400 g quyma 80% li 100 g quyma bilan birga eritildi. Yangi quymada kumush necha foiz?",
+      "v": [
+        "55%",
+        "40%",
+        "70%",
+        "110%"
+      ],
+      "t": 1,
+      "izoh": "Kumush massalari: 400 · 0,3 = 120 g va 100 · 0,8 = 80 g, jami 200 g. Umumiy massa = 500 g. Ulush = 200 : 500 = 0,4, ya'ni 40%. Og'ir quyma kuchsiz bo'lgani uchun natija 55% dan past. Javob: 40%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quyma-ikki-eritish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#a7d94378"
+    },
+    {
+      "q": "800 g 25% li eritmadan necha gramm olib, o'rniga shuncha suv quyilsa, eritma 20% li bo'ladi?",
+      "v": [
+        "200 g",
+        "40 g",
+        "160 g",
+        "640 g"
+      ],
+      "t": 2,
+      "izoh": "Boshida tuz = 200 g. Olingan x gramm eritma bilan 0,25x gramm tuz chiqib ketadi. Massa yana 800 g bo'lgani uchun kerakli tuz = 160 g. Demak 200 − 0,25x = 160, bundan 0,25x = 40 va x = 160 g. Javob: 160 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qismini-olib-suv-quyish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#853221cf"
+    },
+    {
+      "q": "Uzum tarkibining 82% i suv, mayizda esa suv atigi 10% ni tashkil etadi. 90 kg uzumdan necha kilogramm mayiz olinadi?",
+      "v": [
+        "16,2 kg",
+        "9 kg",
+        "20 kg",
+        "18 kg"
+      ],
+      "t": 3,
+      "izoh": "Quruq modda quritishda yo'qolmaydi: 90 · 0,18 = 16,2 kg. Mayizda quruq modda 90% ni tashkil etadi. Mayiz massasi = 16,2 : 0,9 = 18 kg. Suv foizidan emas, quruq modda foizidan boshlash kerak. Javob: 18 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quruq-modda-quritish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#b663c13f"
+    },
+    {
+      "q": "Kilogrammi 30 000 so'mlik yong'oqqa 18 000 so'mlik yeryong'oq qo'shib, kilogrammi 24 000 so'mlik aralashma olindi. Ularning massa nisbati qanday?",
+      "v": [
+        "1:1",
+        "2:1",
+        "1:2",
+        "3:2"
+      ],
+      "t": 0,
+      "izoh": "Yong'oq ulushi (24 000 − 18 000) = 6 000 ga, yeryong'oq ulushi (30 000 − 24 000) = 6 000 ga proporsional. Nisbat 6 000 : 6 000, ya'ni 1 : 1. Narx aynan o'rtada bo'lgani uchun massalar teng olingan. Javob: 1:1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralashma-orta-narx",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#d3f10261"
+    },
+    {
+      "q": "Ikki eritmadan 600 g aralashma olindi. Birinchisi 12% li, ikkinchisi 32% li bo'lib, aralashma 20% li chiqdi. Ikkinchisidan necha gramm olingan?",
+      "v": [
+        "360 g",
+        "240 g",
+        "300 g",
+        "200 g"
+      ],
+      "t": 1,
+      "izoh": "Birinchisidan x g olingan bo'lsin, ikkinchisidan (600 − x) g. Tenglama: 0,12x + 0,32 · (600 − x) = 0,2 · 600. Soddalashtiramiz: 192 − 0,2x = 120, demak x = 360 g. Ikkinchisidan 600 − 360 = 240 g olingan. Javob: 240 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema-ikki-nomalum",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#cf97b34a"
+    },
+    {
+      "q": "Idishdagi 200 g 15% li eritmaga avval 100 g 30% li eritma, so'ngra 200 g suv qo'shildi. Yakuniy konsentratsiya qanday?",
+      "v": [
+        "20%",
+        "22,5%",
+        "15%",
+        "12%"
+      ],
+      "t": 3,
+      "izoh": "Tuz miqdorlari: 200 · 0,15 = 30 g va 100 · 0,3 = 30 g, jami 60 g. Suv tuz qo'shmaydi, faqat massani oshiradi. Yakuniy massa = 200 + 100 + 200 = 500 g. Konsentratsiya = 60 : 500 = 0,12, ya'ni 12%. Javob: 12%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-qoshish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#c7471d40"
+    },
+    {
+      "q": "Idishdagi 30% li eritmaga faqat sof suv qo'shish mumkin. Quyidagi konsentratsiyalardan qaysi biriga hech qachon erishib bo'lmaydi?",
+      "v": [
+        "25%",
+        "18%",
+        "5%",
+        "36%"
+      ],
+      "t": 3,
+      "izoh": "Suv qo'shilganda toza modda massasi o'zgarmaydi, eritma massasi esa ortadi. Demak konsentratsiya faqat kamayishi mumkin va 30% dan oshmaydi. 25%, 18% va 5% erishiladi, 36% esa mumkin emas. Javob: 36%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "konsentratsiya-oraligi",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#519a7ed8"
+    },
+    {
+      "q": "Birinchi eritmada 200 g suvga 50 g tuz, ikkinchisida 300 g suvga 60 g tuz solingan. Qaysi eritma kuchliroq?",
+      "v": [
+        "Birinchisi, uning konsentratsiyasi 20%",
+        "Ikkinchisi, unda tuz massasi ko'proq",
+        "Ikkinchisi, uning konsentratsiyasi 20%",
+        "Ikkalasining konsentratsiyasi teng"
+      ],
+      "t": 0,
+      "izoh": "Eritma massasi suv bilan tuzning yig'indisi. Birinchisi: 50 : 250 = 0,2, ya'ni 20%. Ikkinchisi: 60 : 360 = 0,167, ya'ni taxminan 16,7%. Tuz massasi ko'p bo'lishi eritmani kuchliroq qilmaydi. Javob: birinchisi, konsentratsiyasi 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "konsentratsiya-taqqoslash",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#61b36545"
+    },
+    {
+      "q": "Eritmaga uning massasiga teng miqdorda suv qo'shilgach, konsentratsiya 6% bo'ldi. Boshlang'ich konsentratsiya qanday edi?",
+      "v": [
+        "3%",
+        "6%",
+        "12%",
+        "24%"
+      ],
+      "t": 2,
+      "izoh": "Boshlang'ich massani m, konsentratsiyani c deb olamiz. Suv qo'shilgach massa 2m bo'ladi, tuz esa o'zgarmaydi. Demak yangi konsentratsiya c ning yarmiga teng: c : 2 = 6%, bundan c = 12%. Javob: 12%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-boshlangich-foiz",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#9be53db7"
+    },
+    {
+      "q": "20 litr 60% li antifrizdan 5 litr to'kib o'rniga suv quyildi, so'ng shu amal yana bir marta takrorlandi. Yakuniy konsentratsiya qanday?",
+      "v": [
+        "30%",
+        "33,75%",
+        "45%",
+        "36%"
+      ],
+      "t": 1,
+      "izoh": "Har safar hajmning 3/4 qismi qoladi, demak konsentratsiya ham 0,75 ga ko'paytiriladi, ya'ni har safar 25% ga kamayadi. Birinchi almashtirishdan keyin 60% · 0,75 = 45%. Ikkinchisidan keyin 45% · 0,75 = 33,75%. Javob: 33,75%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "takroriy-almashtirish",
+      "id": "matematika_foiz_m08-aralashma-qorishma-va-eritmalarga-doir#f630d058"
+    }
+  ]
+}

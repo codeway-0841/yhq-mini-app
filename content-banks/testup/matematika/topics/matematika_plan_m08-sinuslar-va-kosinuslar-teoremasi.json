@@ -1,0 +1,1609 @@
+{
+  "nom": "Sinuslar va kosinuslar teoremasi",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "ABC uchburchakda ∠A = 45°, ∠B = 60° va BC tomoni 6√2 sm ga teng. AC tomonining uzunligini toping.",
+      "v": [
+        "6√3 sm",
+        "4√3 sm",
+        "3√6 sm",
+        "6√2 sm"
+      ],
+      "t": 0,
+      "izoh": "Sinuslar teoremasiga ko'ra AC/sin B = BC/sin A. Bundan AC = BC·sin B : sin A = 6√2·(√3/2) : (√2/2). Kasrni soddalashtiramiz: 6√2·√3 : √2 = 6√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='174.4,36 83.2,194 216.8,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='147.6' y='213.8' font-size='13' fill='%23334155' text-anchor='middle'%3E6√2 sm%3C/text%3E%3Ctext x='208.7' y='109.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='162.4,56.8 163.4,57.3 164.3,57.8 165.3,58.2 166.2,58.6 167.2,58.9 168.2,59.2 169.2,59.4 170.3,59.6 171.3,59.8 172.4,59.9 173.4,60 174.4,60 175.5,60 176.5,59.9 177.6,59.8 178.6,59.6 179.6,59.4 180.7,59.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='169.1' y='80.6' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Cpolyline points='107.2,194 107.2,192.6 107.1,191.2 106.9,189.8 106.6,188.5 106.2,187.1 105.8,185.8 105.3,184.5 104.7,183.2 104,182 103.3,180.8 102.5,179.7 101.6,178.6 100.7,177.5 99.7,176.5 98.6,175.6 97.6,174.7 96.4,173.9 95.2,173.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.7' y='177.5' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='176.7' y='25.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='70.9' y='206.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='227.9' y='208' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinus-tomon-topish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#1c378d43"
+    },
+    {
+      "q": "ABC uchburchakda ∠B = 30°, ∠C = 45° va AB tomoni 10 sm. AC tomoni necha santimetrga teng?",
+      "v": [
+        "10√2 sm",
+        "5 sm",
+        "5√2 sm",
+        "5√6 sm"
+      ],
+      "t": 2,
+      "izoh": "AB tomoni ∠C ga, AC tomoni esa ∠B ga qarama-qarshi yotadi. Sinuslar teoremasi: AC : sin B = AB : sin C. AC = 10·sin 30° : sin 45° = 10·(1/2) : (√2/2) = 10 : √2 = 5√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='180.5,73.3 36,156.7 264,156.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='237.9' y='115.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='92.8' y='114.9' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Cpolyline points='60,156.7 60,156 60,155.3 59.9,154.6 59.8,153.9 59.7,153.2 59.6,152.6 59.5,151.9 59.4,151.2 59.2,150.5 59,149.8 58.8,149.2 58.6,148.5 58.3,147.9 58,147.2 57.8,146.6 57.4,146 57.1,145.3 56.8,144.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='75.6' y='150.1' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Cpolyline points='247,139.8 246.3,140.5 245.6,141.3 245,142.1 244.3,143 243.8,143.8 243.2,144.7 242.7,145.6 242.2,146.6 241.8,147.5 241.4,148.5 241.1,149.5 240.8,150.5 240.6,151.5 240.4,152.6 240.2,153.6 240.1,154.6 240,155.7 240,156.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='226.1' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='185.7' y='63.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.4' y='164' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.5' y='164.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinus-tomon-topish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#610a2d79"
+    },
+    {
+      "q": "ABC uchburchakda ∠A = 120°, ∠C = 30° va BC tomoni 9√3 sm. AB tomonining uzunligini hisoblang.",
+      "v": [
+        "27 sm",
+        "9 sm",
+        "9√3 sm",
+        "4,5√3 sm"
+      ],
+      "t": 1,
+      "izoh": "BC tomoni ∠A ga, AB tomoni ∠C ga qarshi yotadi. AB = BC·sin C : sin A = 9√3·(1/2) : (√3/2). Ikkala kasrning maxraji bir xil, shuning uchun AB = 9√3 : √3 = 9 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='150,82.1 36,147.9 264,147.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='167.9' font-size='13' fill='%23334155' text-anchor='middle'%3E9√3 sm%3C/text%3E%3Ctext x='77.3' y='116' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='129.2,94.1 130.7,96.4 132.5,98.6 134.6,100.5 136.8,102.1 139.2,103.5 141.8,104.6 144.5,105.4 147.2,105.9 150,106.1 152.8,105.9 155.5,105.4 158.2,104.6 160.8,103.5 163.2,102.1 165.4,100.5 167.5,98.6 169.3,96.4 170.8,94.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='127.1' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Cpolyline points='243.2,135.9 242.9,136.5 242.6,137.1 242.2,137.8 242,138.4 241.7,139 241.4,139.7 241.2,140.4 241,141 240.8,141.7 240.6,142.4 240.5,143.1 240.4,143.7 240.3,144.4 240.2,145.1 240.1,145.8 240,146.5 240,147.2 240,147.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='224.4' y='141.3' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='150' y='71.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.3' y='154.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='154.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinus-tomon-topish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#d091bc8d"
+    },
+    {
+      "q": "Bog'dagi uchburchak shaklidagi gulzorning bir tomoni 14 m, shu tomonga yopishgan burchaklar 45° va 105°. Gulzorning 45° li burchagi qarshisidagi tomoni necha metr?",
+      "v": [
+        "7√2 m",
+        "14√3 m",
+        "28 m",
+        "14√2 m"
+      ],
+      "t": 3,
+      "izoh": "Uchinchi burchak 180° − 45° − 105° = 30° ga teng va berilgan 14 m li tomon aynan shu burchak qarshisida yotadi. Sinuslar teoremasi: x = 14·sin 45° : sin 30° = 14·(√2/2) : (1/2) = 14√2 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='229,36 71,194 186.7,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='120.3' y='211.5' font-size='13' fill='%23334155' text-anchor='middle'%3E14 m%3C/text%3E%3Ctext x='221.7' y='111' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='95,194 95,193 94.9,191.9 94.8,190.9 94.6,189.8 94.4,188.8 94.2,187.8 93.9,186.8 93.6,185.8 93.2,184.8 92.8,183.9 92.3,182.9 91.8,182 91.2,181.1 90.7,180.2 90,179.4 89.4,178.6 88.7,177.8 88,177' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='108.9' y='182.3' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Cpolyline points='192.9,170.8 190.5,170.3 188.1,170 185.6,170 183.2,170.3 180.8,170.7 178.5,171.4 176.2,172.4 174.1,173.6 172.1,175 170.2,176.5 168.5,178.3 167,180.2 165.7,182.3 164.6,184.5 163.8,186.8 163.2,189.1 162.8,191.6 162.7,194' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='161.7' y='165.5' font-size='13' fill='%23334155' text-anchor='middle'%3E105°%3C/text%3E%3Ctext x='237' y='27.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='58' y='205.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='193' y='211.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinus-tomon-topish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#ce37fc51"
+    },
+    {
+      "q": "ABC uchburchakda ∠A = 75°, ∠B = 60° va AB tomoni 12 sm ga teng. sin 75° = (√6 + √2)/4 ekanini hisobga olib BC tomonini toping.",
+      "v": [
+        "6√6 sm",
+        "6√3 + 6 sm",
+        "6√3 − 6 sm",
+        "3√6 + 3√2 sm"
+      ],
+      "t": 1,
+      "izoh": "Uchinchi burchak ∠C = 180° − 75° − 60° = 45°, AB tomoni esa shu burchak qarshisida. BC = AB·sin A : sin C = 12·(√6 + √2)/4 : (√2/2) = 3(√6 + √2)·(2/√2) = 6(√3 + 1) = 6√3 + 6 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='119.5,42.7 36,187.3 264,187.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='153.3' y='206.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='62.8' y='113.2' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Cpolyline points='107.5,63.5 109,64.3 110.6,65 112.2,65.6 113.9,66.1 115.6,66.4 117.4,66.6 119.1,66.7 120.8,66.7 122.6,66.5 124.3,66.2 126,65.8 127.7,65.3 129.3,64.6 130.8,63.9 132.3,63 133.8,62 135.1,60.9 136.4,59.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='124.8' y='87.4' font-size='13' fill='%23334155' text-anchor='middle'%3E75°%3C/text%3E%3Cpolyline points='60,187.3 60,185.9 59.8,184.5 59.6,183.1 59.4,181.7 59,180.4 58.6,179.1 58,177.8 57.4,176.5 56.8,175.3 56.1,174.1 55.3,172.9 54.4,171.8 53.5,170.8 52.5,169.8 51.4,168.9 50.3,168 49.2,167.2 48,166.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='71.5' y='170.8' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='116.4' y='32.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22.4' y='197.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278' y='196.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sinus-tomon-topish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#f5687b40"
+    },
+    {
+      "q": "ABC uchburchakda BC = 8√2 sm, AC = 8 sm va ∠A = 135°. ∠B burchakning kattaligini aniqlang.",
+      "v": [
+        "30°",
+        "45°",
+        "60°",
+        "15°"
+      ],
+      "t": 0,
+      "izoh": "Sinuslar teoremasi: sin B = AC·sin A : BC = 8·(√2/2) : (8√2) = 4√2 : 8√2 = 1/2. Demak ∠B = 30° yoki 150°, lekin ∠A allaqachon 135° bo'lgani uchun ikkinchi qiymat mumkin emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='108.3,94.1 36,135.9 264,135.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='161.3' y='151.2' font-size='13' fill='%23334155' text-anchor='middle'%3E8√2 sm%3C/text%3E%3Ctext x='202' y='116.8' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Cpolyline points='87.5,106.1 89.2,108.8 91.3,111.1 93.7,113.2 96.3,114.9 99.1,116.3 102.1,117.3 105.1,117.9 108.3,118.1 111.4,117.9 114.5,117.3 117.5,116.3 120.3,114.9 122.9,113.2 125.2,111.1 127.3,108.8 129.1,106.1 130.4,103.3 131.5,100.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='113.6' y='138.8' font-size='13' fill='%23334155' text-anchor='middle'%3E135°%3C/text%3E%3Cpolyline points='60,135.9 60,135.2 60,134.5 59.9,133.8 59.8,133.1 59.7,132.4 59.6,131.7 59.5,131 59.4,130.3 59.2,129.6 59,129 58.8,128.3 58.6,127.7 58.3,127 58,126.4 57.8,125.7 57.4,125.1 57.1,124.5 56.8,123.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='75.6' y='129.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='97.7' y='87.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.1' y='141.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.9' y='141.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sinus-burchak-topish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#2eb632da"
+    },
+    {
+      "q": "Uchburchakning 12 sm li tomoni qarshisida 60° li burchak yotadi. Shu uchburchakning 4√3 sm li tomoni qarshisidagi o'tkir burchakni toping.",
+      "v": [
+        "45°",
+        "60°",
+        "150°",
+        "30°"
+      ],
+      "t": 3,
+      "izoh": "Sinuslar teoremasi bo'yicha sin x = 4√3·sin 60° : 12 = 4√3·(√3/2) : 12 = 6 : 12 = 1/2. Bunga 30° va 150° mos keladi, ammo shart bo'yicha burchak o'tkir, demak x = 30°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='195.6,36 104.4,194 195.6,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='145.6' y='213.4' font-size='13' fill='%23334155' text-anchor='middle'%3E4√3 sm%3C/text%3E%3Ctext x='207.7' y='108.5' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Cpolyline points='183.6,56.8 184.2,57.1 184.8,57.4 185.5,57.8 186.1,58 186.7,58.3 187.4,58.6 188.1,58.8 188.7,59 189.4,59.2 190.1,59.4 190.7,59.5 191.4,59.6 192.1,59.7 192.8,59.8 193.5,59.9 194.2,60 194.9,60 195.6,60' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='185' y='79.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='128.4,194 128.4,192.6 128.2,191.2 128,189.8 127.7,188.5 127.4,187.1 126.9,185.8 126.4,184.5 125.8,183.2 125.2,182 124.4,180.8 123.6,179.7 122.8,178.6 121.8,177.5 120.9,176.5 119.8,175.6 118.7,174.7 117.6,173.9 116.4,173.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='139.9' y='177.5' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='199.8' y='25.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='93.1' y='207.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='203.1' y='211' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinus-burchak-topish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#fe425ae3"
+    },
+    {
+      "q": "ABC uchburchakda ∠C = 30°, AB = 5 sm va BC = 5√3 sm. ∠A burchak o'tkir bo'lsa, uning kattaligini toping.",
+      "v": [
+        "30°",
+        "90°",
+        "60°",
+        "120°"
+      ],
+      "t": 2,
+      "izoh": "AB tomoni ∠C ga, BC tomoni ∠A ga qarshi yotadi: sin A = BC·sin C : AB = 5√3·(1/2) : 5 = √3/2. Bunga 60° va 120° mos keladi; shart bo'yicha ∠A o'tkir, demak ∠A = 60°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='36,49.2 36,180.8 264,180.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='160.5' y='196.9' font-size='13' fill='%23334155' text-anchor='middle'%3E5√3 sm%3C/text%3E%3Ctext x='20.6' y='114.6' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Cpolyline points='36,73.2 37.4,73.1 38.8,73 40.2,72.8 41.5,72.5 42.9,72.2 44.2,71.7 45.5,71.2 46.8,70.6 48,70 49.2,69.2 50.3,68.4 51.4,67.6 52.5,66.6 53.5,65.7 54.4,64.6 55.3,63.5 56.1,62.4 56.8,61.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='56.5' y='88.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='243.2,168.8 242.9,169.4 242.6,170 242.2,170.7 242,171.3 241.7,172 241.4,172.6 241.2,173.3 241,173.9 240.8,174.6 240.6,175.3 240.5,176 240.4,176.7 240.3,177.3 240.2,178 240.1,178.7 240,179.4 240,180.1 240,180.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='224.4' y='174.2' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='26.2' y='41.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='23' y='192.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='189' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinus-burchak-topish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#1d4be096"
+    },
+    {
+      "q": "Uchburchak shaklidagi yelkanning bir tomoni 10 m, ikkinchisi 5√2 m. 10 m li tomon qarshisidagi burchak 90° bo'lsa, 5√2 m li tomon qarshisidagi burchak necha gradus?",
+      "v": [
+        "45°",
+        "30°",
+        "60°",
+        "135°"
+      ],
+      "t": 0,
+      "izoh": "sin x = 5√2·sin 90° : 10 = 5√2 : 10 = √2/2. Bu qiymatga 45° va 135° mos keladi, lekin uchburchakda allaqachon 90° li burchak bor, shuning uchun x = 45°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='150,58 36,172 264,172' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='142.2,65.8 150,73.6 157.8,65.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='192' font-size='13' fill='%23334155' text-anchor='middle'%3E10 m%3C/text%3E%3Ctext x='222.2' y='113.9' font-size='13' fill='%23334155' text-anchor='middle'%3E5√2 m%3C/text%3E%3Cpolyline points='60,172 60,171 59.9,169.9 59.8,168.9 59.6,167.8 59.4,166.8 59.2,165.8 58.9,164.8 58.6,163.8 58.2,162.8 57.8,161.9 57.3,160.9 56.8,160 56.2,159.1 55.7,158.2 55,157.4 54.4,156.6 53.7,155.8 53,155' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='73.9' y='160.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='47' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.8' y='180.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.2' y='180.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sinus-burchak-topish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#2bee9654"
+    },
+    {
+      "q": "ABC uchburchakda AB = 5 sm, AC = 8 sm va ∠A = 60° ga teng. BC tomonini toping.",
+      "v": [
+        "√129 sm",
+        "7 sm",
+        "13 sm",
+        "3 sm"
+      ],
+      "t": 1,
+      "izoh": "Kosinuslar teoremasi: BC² = AB² + AC² − 2·AB·AC·cos A = 25 + 64 − 2·5·8·(1/2) = 89 − 40 = 49. Demak BC = √49 = 7 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='61.1,36 38.3,194 261.7,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='157.8' y='211.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='174.9' y='110.4' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='34.7' y='113.4' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Cpolyline points='57.6,59.8 59,59.9 60.4,60 61.8,60 63.2,59.9 64.6,59.7 66,59.5 67.3,59.2 68.7,58.8 70,58.3 71.2,57.7 72.5,57.1 73.7,56.4 74.9,55.6 76,54.8 77.1,53.9 78.1,52.9 79,51.9 79.9,50.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='76.3' y='78.1' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='53.7' y='26.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='25.6' y='206.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='275.8' y='203.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kosinus-tomon-sas",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#9f14413c"
+    },
+    {
+      "q": "Anvarning bog'ida ikki yo'lak bitta nuqtadan chiqib, 120° li burchak hosil qiladi. Yo'laklarning uzunliklari 3 m va 5 m. Ularning erkin uchlarini tutashtiruvchi to'g'ri to'siq uzunligi qancha?",
+      "v": [
+        "√19 m",
+        "8 m",
+        "4 m",
+        "7 m"
+      ],
+      "t": 3,
+      "izoh": "cos 120° = −1/2 bo'lgani uchun to'siq uzunligi x² = 3² + 5² − 2·3·5·(−1/2) = 9 + 25 + 15 = 49. Bundan x = 7 m. Ishorani almashtirib qo'ysak, xato natija chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='112.8,84.8 36,145.2 264,145.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='158.4' y='162.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='204.1' y='115.9' font-size='13' fill='%23334155' text-anchor='middle'%3E5 m%3C/text%3E%3Ctext x='58.6' y='116.5' font-size='13' fill='%23334155' text-anchor='middle'%3E3 m%3C/text%3E%3Cpolyline points='93.9,99.6 95.8,101.7 97.9,103.6 100.1,105.2 102.6,106.5 105.2,107.5 107.9,108.3 110.6,108.7 113.4,108.8 116.2,108.5 118.9,108 121.6,107.1 124.1,105.9 126.5,104.5 128.7,102.7 130.7,100.8 132.4,98.6 133.9,96.2 135.1,93.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.6' y='129.4' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='104.9' y='76' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.3' y='152.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.8' y='151.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kosinus-tomon-sas",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#704b284c"
+    },
+    {
+      "q": "ABC uchburchakda BC = 7 sm, AC = 8 sm va ∠C = 120°. AB tomonining uzunligini hisoblang.",
+      "v": [
+        "√57 sm",
+        "15 sm",
+        "13 sm",
+        "√113 sm"
+      ],
+      "t": 2,
+      "izoh": "AB² = BC² + AC² − 2·BC·AC·cos C = 49 + 64 − 2·7·8·(−1/2) = 113 + 56 = 169. Kvadrat ildiz olamiz: AB = 13 sm. Uchinchi qo'shiluvchini tashlab ketsak √113 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='264,43.2 36,186.8 181.1,186.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='96.8' y='201.7' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='237.5' y='113.3' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='143.6' y='104.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='193.1,166 190.6,164.8 188,163.8 185.3,163.2 182.5,162.8 179.7,162.8 176.9,163.2 174.2,163.8 171.6,164.8 169.1,166 166.8,167.6 164.6,169.3 162.7,171.4 161,173.6 159.6,176 158.5,178.6 157.7,181.3 157.3,184 157.1,186.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160.6' y='155.3' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='275' y='37' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22' y='196.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='187.1' y='204.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kosinus-tomon-sas",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#52e7297b"
+    },
+    {
+      "q": "Ikki qishloqni bog'lovchi yo'l tepalik ustidan o'tadi: birinchi qismi 9 km, ikkinchisi 15 km va ular orasidagi burchak 120°. Qishloqlar orasidagi to'g'ri masofa necha kilometr?",
+      "v": [
+        "21 km",
+        "24 km",
+        "√171 km",
+        "√306 km"
+      ],
+      "t": 0,
+      "izoh": "Yo'lning ikki qismi va to'g'ri masofa uchburchak hosil qiladi. d² = 9² + 15² − 2·9·15·cos 120° = 81 + 225 + 135 = 441, demak d = 21 km. Ikki qismni qo'shib 24 km deyish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='250.3,36 49.7,194 159.1,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='93.5' y='209.8' font-size='13' fill='%23334155' text-anchor='middle'%3E9 km%3C/text%3E%3Ctext x='219' y='111.7' font-size='13' fill='%23334155' text-anchor='middle'%3E15 km%3C/text%3E%3Ctext x='148.2' y='103.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='171.1,173.2 168.6,172 166,171 163.3,170.4 160.5,170 157.7,170 155,170.4 152.2,171 149.6,172 147.1,173.2 144.8,174.7 142.7,176.5 140.7,178.6 139.1,180.8 137.7,183.2 136.6,185.8 135.8,188.5 135.3,191.2 135.1,194' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='138.6' y='162.5' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='260.5' y='29' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='36.3' y='204.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='160.8' y='212.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kosinus-tomon-sas",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#afb85f46"
+    },
+    {
+      "q": "ABC uchburchakda ∠A = 60°, AB = x sm, AC = (x + 3) sm va BC = 7 sm ga teng. x ning qiymatini toping.",
+      "v": [
+        "4 sm",
+        "7 sm",
+        "8 sm",
+        "5 sm"
+      ],
+      "t": 3,
+      "izoh": "Kosinuslar teoremasi: 49 = x² + (x + 3)² − 2·x·(x + 3)·(1/2) = x² + x² + 6x + 9 − x² − 3x = x² + 3x + 9. Bundan x² + 3x − 40 = 0, ildizlari 5 va −8. Uzunlik musbat, demak x = 5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='61.1,36 38.3,194 261.7,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='157.8' y='211.9' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='174.9' y='110.4' font-size='13' fill='%23334155' text-anchor='middle'%3Ex + 3%3C/text%3E%3Ctext x='34.7' y='113.4' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Cpolyline points='57.6,59.8 59,59.9 60.4,60 61.8,60 63.2,59.9 64.6,59.7 66,59.5 67.3,59.2 68.7,58.8 70,58.3 71.2,57.7 72.5,57.1 73.7,56.4 74.9,55.6 76,54.8 77.1,53.9 78.1,52.9 79,51.9 79.9,50.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='76.3' y='78.1' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='53.7' y='26.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='25.6' y='206.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='275.8' y='203.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kosinus-tomon-sas",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#247467f8"
+    },
+    {
+      "q": "ABC uchburchakning tomonlari 3 sm, 5 sm va 7 sm ga teng. Uchburchakning eng katta burchagini toping.",
+      "v": [
+        "60°",
+        "120°",
+        "90°",
+        "135°"
+      ],
+      "t": 1,
+      "izoh": "Eng katta burchak eng katta tomon qarshisida yotadi. cos x = (3² + 5² − 7²) : (2·3·5) = (9 + 25 − 49) : 30 = −15 : 30 = −1/2. Bunga 120° mos keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='112.8,84.8 36,145.2 264,145.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='158.4' y='162.8' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='204.1' y='115.9' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='58.6' y='116.5' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3Cpolyline points='93.9,99.6 95.8,101.7 97.9,103.6 100.1,105.2 102.6,106.5 105.2,107.5 107.9,108.3 110.6,108.7 113.4,108.8 116.2,108.5 118.9,108 121.6,107.1 124.1,105.9 126.5,104.5 128.7,102.7 130.7,100.8 132.4,98.6 133.9,96.2 135.1,93.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.6' y='129.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='104.9' y='76' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.3' y='152.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.8' y='151.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kosinus-burchak-sss",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#827b5274"
+    },
+    {
+      "q": "Uchburchak shaklidagi bayroqchaning tomonlari 5 sm, 7 sm va 8 sm ga teng. Uning 7 sm li tomoni qarshisidagi burchagi necha gradus?",
+      "v": [
+        "30°",
+        "45°",
+        "60°",
+        "120°"
+      ],
+      "t": 2,
+      "izoh": "cos x = (5² + 8² − 7²) : (2·5·8) = (25 + 64 − 49) : 80 = 40 : 80 = 1/2. Kosinusi 1/2 ga teng burchak 60° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='61.1,36 38.3,194 261.7,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='157.8' y='211.9' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='174.9' y='110.4' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='34.7' y='113.4' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Cpolyline points='57.6,59.8 59,59.9 60.4,60 61.8,60 63.2,59.9 64.6,59.7 66,59.5 67.3,59.2 68.7,58.8 70,58.3 71.2,57.7 72.5,57.1 73.7,56.4 74.9,55.6 76,54.8 77.1,53.9 78.1,52.9 79,51.9 79.9,50.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='76.3' y='78.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='53.7' y='26.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='25.6' y='206.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='275.8' y='203.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kosinus-burchak-sss",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#dddbaf49"
+    },
+    {
+      "q": "ABC uchburchakda AB = 4 sm, BC = 5 sm va AC = 6 sm. cos∠B ning qiymatini toping.",
+      "v": [
+        "1/8",
+        "3/4",
+        "−1/8",
+        "9/16"
+      ],
+      "t": 0,
+      "izoh": "∠B burchak AB va BC tomonlar orasida yotadi, unga qarshi tomon esa AC. cos B = (AB² + BC² − AC²) : (2·AB·BC) = (16 + 25 − 36) : 40 = 5 : 40 = 1/8.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='70.4,36 50.5,194 249.5,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='157.2' y='212.3' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='172.9' y='109.6' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='45.7' y='112.8' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Cpolyline points='74.5,194 74.4,192.1 74.2,190.2 73.8,188.3 73.2,186.4 72.6,184.6 71.7,182.9 70.8,181.2 69.7,179.6 68.5,178.1 67.1,176.7 65.7,175.5 64.2,174.3 62.5,173.3 60.8,172.4 59.1,171.6 57.2,171 55.4,170.5 53.5,170.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='81.2' y='170.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='63.6' y='26.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='38.3' y='206.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='263.4' y='203.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kosinus-burchak-sss",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#d81573b4"
+    },
+    {
+      "q": "Uch shahar uchburchak hosil qiladi: A va B orasidagi masofa 6 km, A va C orasidagi masofa 8 km, B va C orasidagi masofa esa 7 km. A shahridagi burchakning kosinusini toping.",
+      "v": [
+        "1/4",
+        "17/16",
+        "11/16",
+        "17/32"
+      ],
+      "t": 3,
+      "izoh": "A dagi burchak 6 km va 8 km li tomonlar orasida, unga qarshi tomon 7 km. cos A = (36 + 64 − 49) : (2·6·8) = 51 : 96 = 17/32. Maxrajdagi 2 ni tushirib qoldirsak 17/16 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='95.6,36 54.8,194 245.2,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='155.2' y='213.1' font-size='13' fill='%23334155' text-anchor='middle'%3E7 km%3C/text%3E%3Ctext x='183.6' y='110' font-size='13' fill='%23334155' text-anchor='middle'%3E8 km%3C/text%3E%3Ctext x='60.7' y='112.3' font-size='13' fill='%23334155' text-anchor='middle'%3E6 km%3C/text%3E%3Cpolyline points='89.6,59.2 90.9,59.5 92.2,59.8 93.6,59.9 94.9,60 96.3,60 97.6,59.9 99,59.8 100.3,59.5 101.6,59.2 102.9,58.9 104.2,58.4 105.4,57.9 106.6,57.3 107.8,56.7 109,55.9 110,55.2 111.1,54.3 112.1,53.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='105.9' y='79.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='90.7' y='25.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='42.4' y='206.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='258.8' y='204.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kosinus-burchak-sss",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#30a5faa8"
+    },
+    {
+      "q": "Tomonlari 2 sm, 3 sm va 4 sm bo'lgan uchburchakning eng katta burchagi sinusini toping.",
+      "v": [
+        "√15/16",
+        "√15/4",
+        "3/4",
+        "−√15/4"
+      ],
+      "t": 1,
+      "izoh": "Avval kosinusni topamiz: cos x = (4 + 9 − 16) : (2·2·3) = −3 : 12 = −1/4. Asosiy ayniyatdan sin²x = 1 − 1/16 = 15/16. Uchburchak burchagining sinusi musbat, demak sin x = √15/4.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='114.4,73.6 36,156.4 264,156.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='156.3' y='175.1' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='204.6' y='114.8' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3Ctext x='59.6' y='115.6' font-size='13' fill='%23334155' text-anchor='middle'%3E2 sm%3C/text%3E%3Cpolyline points='97.9,91 99.7,92.6 101.7,94 103.8,95.2 106.1,96.1 108.4,96.9 110.8,97.3 113.2,97.6 115.6,97.6 118,97.3 120.4,96.8 122.7,96.1 125,95.1 127.1,94 129.1,92.6 130.9,91 132.6,89.2 134.1,87.3 135.4,85.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='120.7' y='118.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='108.4' y='63.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.5' y='164.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='163.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kosinus-burchak-sss",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#3b2ac56d"
+    },
+    {
+      "q": "Tomonlari 6 sm, 8 sm va 11 sm bo'lgan uchburchak qanday uchburchak bo'ladi?",
+      "v": [
+        "to'g'ri burchakli",
+        "o'tkir burchakli",
+        "o'tmas burchakli",
+        "teng yonli"
+      ],
+      "t": 2,
+      "izoh": "Eng katta tomon qarshisidagi burchakni tekshiramiz: 6² + 8² = 36 + 64 = 100, 11² = 121. 100 < 121 bo'lgani uchun kosinus manfiy chiqadi, demak bu burchak o'tmas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='123.6,70.9 36,159.1 264,159.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='154.6' y='178.5' font-size='13' fill='%23334155' text-anchor='middle'%3E11 sm%3C/text%3E%3Ctext x='209.2' y='114.7' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='64.3' y='115.3' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='119.3' y='60.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.6' y='167.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.6' y='166.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-turi",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#ce2dde31"
+    },
+    {
+      "q": "Duradgor uzunliklari 9 sm, 12 sm va 15 sm bo'lgan uchta reykadan uchburchak yasadi. Yasalgan uchburchak qanday bo'ladi?",
+      "v": [
+        "o'tkir burchakli",
+        "o'tmas burchakli",
+        "bunday uchburchak yasab bo'lmaydi",
+        "to'g'ri burchakli"
+      ],
+      "t": 3,
+      "izoh": "Eng katta tomon 15 sm. Kichik tomonlar kvadratlari yig'indisi 9² + 12² = 81 + 144 = 225 va 15² = 225. Ular teng, demak eng katta burchakning kosinusi nolga teng va burchak 90° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='118.1,60.3 36,169.7 264,169.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='154.5' y='189.1' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='206.1' y='113.7' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='61.7' y='114.5' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='113.9' y='49.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='178.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='177.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchak-turi",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#ccdf4d46"
+    },
+    {
+      "q": "Uchburchakning tomonlari 7 sm, 9 sm va 11 sm ga teng. Shu uchburchakning turini aniqlang.",
+      "v": [
+        "o'tkir burchakli",
+        "to'g'ri burchakli",
+        "o'tmas burchakli",
+        "teng tomonli"
+      ],
+      "t": 0,
+      "izoh": "Eng katta burchak 11 sm li tomon qarshisida. cos x = (49 + 81 − 121) : (2·7·9) = 9 : 126 > 0. Eng katta burchak o'tkir bo'lsa, qolganlari ham o'tkir, demak uchburchak o'tkir burchakli.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='119.9,55.8 36,174.2 264,174.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='153.9' y='193.7' font-size='13' fill='%23334155' text-anchor='middle'%3E11 sm%3C/text%3E%3Ctext x='206.9' y='113.3' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='62.7' y='114.1' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='116.2' y='45.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22' y='183.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.3' y='182.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-turi",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#26e49796"
+    },
+    {
+      "q": "Tomonlari 4 sm, 6 sm va 8 sm bo'lgan uchburchakning eng katta burchagi haqidagi qaysi xulosa to'g'ri?",
+      "v": [
+        "o'tkir, chunki kosinusi 1/4 ga teng",
+        "o'tmas, chunki kosinusi −1/4 ga teng",
+        "to'g'ri, chunki kosinusi nolga teng",
+        "o'tmas, chunki kosinusi −1/2 ga teng"
+      ],
+      "t": 1,
+      "izoh": "Eng katta burchak 8 sm li tomon qarshisida yotadi: cos x = (16 + 36 − 64) : (2·4·6) = −12 : 48 = −1/4. Kosinus manfiy, demak burchak o'tmas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='114.4,73.6 36,156.4 264,156.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='156.3' y='175.1' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='204.6' y='114.8' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='59.6' y='115.6' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Cpolyline points='97.9,91 99.7,92.6 101.7,94 103.8,95.2 106.1,96.1 108.4,96.9 110.8,97.3 113.2,97.6 115.6,97.6 118,97.3 120.4,96.8 122.7,96.1 125,95.1 127.1,94 129.1,92.6 130.9,91 132.6,89.2 134.1,87.3 135.4,85.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='120.7' y='118.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='108.4' y='63.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.5' y='164.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='163.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-turi",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#23cd9e49"
+    },
+    {
+      "q": "Tomonlari 5 sm, 12 sm va m sm bo'lgan uchburchakda m eng katta tomon. Uchburchak o'tmas burchakli bo'lishi uchun m butun son qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "13, 14, 15, 16",
+        "14, 15, 16, 17",
+        "14, 15, 16",
+        "8, 9, 10, 11, 12"
+      ],
+      "t": 2,
+      "izoh": "O'tmas burchak uchun m² > 5² + 12² = 169, ya'ni m > 13. Uchburchak tengsizligidan m < 5 + 12 = 17. Demak 13 < m < 17 va butun qiymatlar 14, 15, 16 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-turi",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#09421a74"
+    },
+    {
+      "q": "ABC uchburchakda BC = 10 sm va ∠A = 30°. Uchburchakka tashqi chizilgan aylananing radiusini toping.",
+      "v": [
+        "10 sm",
+        "20 sm",
+        "5 sm",
+        "10√3 sm"
+      ],
+      "t": 0,
+      "izoh": "Sinuslar teoremasining to'liq shakli: BC : sin A = 2R. Demak 2R = 10 : (1/2) = 20, bundan R = 10 sm. Ikkiga bo'lishni unutsak 20 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='260' viewBox='0 0 300 260'%3E%3Crect width='300' height='260' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='130' r='94' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='130' r='2.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162' y='144' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='150' y1='130' x2='197' y2='211.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='166' y='172' font-size='13' fill='%23334155' text-anchor='end'%3ER%3C/text%3E%3Cpolygon points='133.7,37.4 103,211.4 197,211.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='151.5' y='231.3' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Cpolyline points='129.5,61.1 130.2,61.2 130.9,61.3 131.6,61.3 132.3,61.4 133,61.4 133.7,61.4 134.4,61.4 135.1,61.4 135.8,61.3 136.5,61.3 137.2,61.2 137.8,61.1 138.5,60.9 139.2,60.8 139.9,60.6 140.6,60.4 141.2,60.2 141.9,60' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='137.3' y='82.3' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='132.3' y='26.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='94.3' y='227.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='207.1' y='226.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radius-2R-topish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#398c202a"
+    },
+    {
+      "q": "ABC uchburchakda AB = 12 sm va ∠C = 60°. Shu uchburchakka tashqi chizilgan aylananing radiusi nechaga teng?",
+      "v": [
+        "8√3 sm",
+        "6√3 sm",
+        "2√3 sm",
+        "4√3 sm"
+      ],
+      "t": 3,
+      "izoh": "AB tomoni ∠C ga qarshi yotadi, shuning uchun AB : sin C = 2R. 2R = 12 : (√3/2) = 24/√3 = 8√3, demak R = 4√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='260' viewBox='0 0 300 260'%3E%3Crect width='300' height='260' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='130' r='94' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='130' r='2.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162' y='144' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='150' y1='130' x2='166.3' y2='37.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='152.2' y='77.7' font-size='13' fill='%23334155' text-anchor='end'%3ER%3C/text%3E%3Cpolygon points='166.3,37.4 61.7,162.1 238.3,162.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='99.7' y='96.6' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Cpolyline points='226.3,141.4 225.1,142.1 224,142.9 222.9,143.8 221.9,144.7 220.9,145.7 219.9,146.7 219.1,147.8 218.3,149 217.5,150.1 216.9,151.4 216.3,152.6 215.8,153.9 215.3,155.3 215,156.6 214.7,158 214.5,159.4 214.4,160.8 214.3,162.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='202.8' y='145.6' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='168.3' y='26.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='48' y='172.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='251.7' y='172.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radius-2R-topish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#cfabec12"
+    },
+    {
+      "q": "ABC uchburchakda ∠A = 120° va BC = 6√3 sm. Uchburchak uchlaridan o'tuvchi aylananing radiusini hisoblang.",
+      "v": [
+        "12 sm",
+        "6 sm",
+        "3√3 sm",
+        "4√3 sm"
+      ],
+      "t": 1,
+      "izoh": "sin 120° = √3/2 bo'lgani uchun 2R = BC : sin A = 6√3 : (√3/2) = 12. Demak R = 6 sm. sin 120° ni 1/2 deb olsak, natija ikki barobar xato chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='270' viewBox='0 0 300 270'%3E%3Crect width='300' height='270' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='135' r='99' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='135' r='2.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162' y='149' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='150' y1='135' x2='235.7' y2='85.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='193' y='122' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Cpolygon points='132.8,37.5 64.3,85.5 235.7,85.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='155.4' y='104.6' font-size='13' fill='%23334155' text-anchor='middle'%3E6√3 sm%3C/text%3E%3Cpolyline points='113.1,51.3 114.9,53.5 116.9,55.4 119,57.2 121.4,58.6 123.9,59.8 126.6,60.7 129.3,61.3 132.1,61.5 134.9,61.4 137.7,61 140.4,60.3 143,59.3 145.4,57.9 147.7,56.3 149.8,54.5 151.6,52.4 153.2,50.1 154.6,47.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='136.4' y='82.3' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='127.8' y='27.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='49.6' y='92.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='250.5' y='92.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-2R-topish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#ed639c23"
+    },
+    {
+      "q": "Uchburchak shaklidagi bog' uchastkasining bir tomoni 14 m, unga qarama-qarshi burchak esa 45°. Uchastkaning uchta burchagidan o'tuvchi aylananing radiusi necha metr?",
+      "v": [
+        "14√2 m",
+        "7 m",
+        "7√2 m",
+        "28√2 m"
+      ],
+      "t": 2,
+      "izoh": "2R = 14 : sin 45° = 14 : (√2/2) = 28/√2 = 14√2. Radius esa uning yarmi: R = 7√2 m. Bu taxminan 9,9 m ni tashkil qiladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='260' viewBox='0 0 300 260'%3E%3Crect width='300' height='260' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='130' r='94' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='130' r='2.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162' y='144' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='150' y1='130' x2='216.5' y2='196.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='172' y='166' font-size='13' fill='%23334155' text-anchor='end'%3ER%3C/text%3E%3Cpolygon points='158.2,36.4 83.5,196.5 216.5,196.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='149.2' y='216.4' font-size='13' fill='%23334155' text-anchor='middle'%3E14 m%3C/text%3E%3Cpolyline points='148,58.1 149,58.5 150,58.9 151,59.2 152,59.5 153,59.8 154,60 155.1,60.2 156.1,60.3 157.1,60.3 158.2,60.4 159.2,60.3 160.3,60.3 161.3,60.2 162.4,60 163.4,59.8 164.4,59.5 165.4,59.2 166.4,58.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156.4' y='81.3' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='159' y='25.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='71.7' y='209.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='228' y='210.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-2R-topish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#9ea9d61f"
+    },
+    {
+      "q": "ABC uchburchakda ∠A = 30°, ∠B = 45° va unga tashqi chizilgan aylananing radiusi 8 sm. BC va AC tomonlari uzunliklarining yig'indisini toping.",
+      "v": [
+        "8 + 8√2 sm",
+        "4 + 4√2 sm",
+        "8 + 8√3 sm",
+        "16 + 16√2 sm"
+      ],
+      "t": 0,
+      "izoh": "Har bir tomon 2R·sin formula bilan topiladi: BC = 2R·sin A = 16·(1/2) = 8 sm, AC = 2R·sin B = 16·(√2/2) = 8√2 sm. Yig'indisi 8 + 8√2 sm. 2R o'rniga R ni qo'ysak natija ikki barobar kichik chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='260' viewBox='0 0 300 260'%3E%3Crect width='300' height='260' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='130' r='94' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='130' r='2.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162' y='144' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='150' y1='130' x2='231.4' y2='83' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='184.7' y='100.5' font-size='13' fill='%23334155' text-anchor='end'%3ER = 8 sm%3C/text%3E%3Cpolygon points='231.4,83 103,211.4 197,211.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='214.4,100 214.9,100.5 215.5,100.9 216,101.4 216.5,101.8 217.1,102.3 217.6,102.7 218.2,103.1 218.8,103.4 219.4,103.8 220,104.1 220.6,104.4 221.3,104.8 221.9,105 222.5,105.3 223.2,105.6 223.9,105.8 224.5,106 225.2,106.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='210.9' y='122.5' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Cpolyline points='127,211.4 127,210.4 126.9,209.3 126.8,208.3 126.6,207.2 126.4,206.2 126.2,205.2 125.9,204.2 125.6,203.2 125.2,202.2 124.8,201.3 124.3,200.3 123.8,199.4 123.2,198.5 122.7,197.6 122,196.8 121.4,196 120.7,195.2 120,194.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='140.9' y='199.7' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='239.4' y='74.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='90' y='222.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='203.3' y='229' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "radius-2R-topish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#ada8ee4a"
+    },
+    {
+      "q": "Tashqi chizilgan aylanasining radiusi 6 sm bo'lgan ABC uchburchakda ∠B = 45°. AC tomoni necha santimetrga teng?",
+      "v": [
+        "3√2 sm",
+        "12√2 sm",
+        "6 sm",
+        "6√2 sm"
+      ],
+      "t": 3,
+      "izoh": "AC tomoni ∠B ga qarshi yotadi, shuning uchun AC = 2R·sin B = 12·(√2/2) = 6√2 sm. R ni 2R o'rniga qo'yish tipik xato hisoblanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='260' viewBox='0 0 300 260'%3E%3Crect width='300' height='260' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='130' r='94' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='130' r='2.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162' y='144' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='150' y1='130' x2='197' y2='48.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='167.5' y='83.3' font-size='13' fill='%23334155' text-anchor='end'%3ER = 6 sm%3C/text%3E%3Cpolygon points='197,48.6 68.6,177 231.4,177' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='228.8' y='110.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='92.6,177 92.6,176 92.5,174.9 92.4,173.9 92.2,172.8 92,171.8 91.8,170.8 91.5,169.8 91.1,168.8 90.8,167.8 90.3,166.9 89.9,165.9 89.4,165 88.8,164.1 88.3,163.2 87.6,162.4 87,161.6 86.3,160.8 85.6,160' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='106.5' y='165.3' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='202.2' y='38.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='54.9' y='187.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='244' y='189.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tomon-2R-orqali",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#a10635ba"
+    },
+    {
+      "q": "Dumaloq maydonchaning radiusi 10 m. Uning chegarasida yotgan uchta ustun uchburchak hosil qiladi va ulardan biridagi burchak 30° ga teng. Shu burchak qarshisidagi tomon uzunligi necha metr?",
+      "v": [
+        "5 m",
+        "10 m",
+        "20 m",
+        "10√3 m"
+      ],
+      "t": 1,
+      "izoh": "Uchala ustun aylanada yotgani uchun bu aylana uchburchakka tashqi chizilgan. Tomon = 2R·sin 30° = 20·(1/2) = 10 m. Diametr 20 m ni javob deb olish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='260' viewBox='0 0 300 260'%3E%3Crect width='300' height='260' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='130' r='94' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='130' r='2.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162' y='144' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='150' y1='130' x2='103' y2='211.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='137' y='177' font-size='13' fill='%23334155' text-anchor='start'%3ER = 10 m%3C/text%3E%3Cpolygon points='166.3,37.4 103,211.4 197,211.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='148.5' y='231.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='158.1,60 158.8,60.2 159.4,60.4 160.1,60.6 160.8,60.8 161.5,60.9 162.2,61.1 162.8,61.2 163.5,61.3 164.2,61.3 164.9,61.4 165.6,61.4 166.3,61.4 167,61.4 167.7,61.4 168.4,61.3 169.1,61.3 169.8,61.2 170.5,61.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162.7' y='82.3' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='167.7' y='26.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='92.9' y='226.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='205.7' y='227.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tomon-2R-orqali",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#d90bf66c"
+    },
+    {
+      "q": "ABC uchburchakka tashqi chizilgan aylananing radiusi 5 sm va ∠C = 120°. AB tomonining uzunligini toping.",
+      "v": [
+        "10√3 sm",
+        "5 sm",
+        "5√3 sm",
+        "2,5√3 sm"
+      ],
+      "t": 2,
+      "izoh": "AB tomoni ∠C ga qarama-qarshi: AB = 2R·sin C = 10·sin 120° = 10·(√3/2) = 5√3 sm. sin 120° ni 1/2 deb olsak, 5 sm degan xato javob chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='270' viewBox='0 0 300 270'%3E%3Crect width='300' height='270' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='135' r='99' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='135' r='2.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162' y='149' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='150' y1='135' x2='247.5' y2='152.2' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='195' y='130' font-size='13' fill='%23334155' text-anchor='end'%3ER = 5 sm%3C/text%3E%3Cpolygon points='247.5,152.2 86.4,210.8 213.6,210.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='153.4' y='177' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='225.6,190 223.1,188.8 220.5,187.8 217.8,187.2 215,186.9 212.2,186.9 209.5,187.2 206.8,187.8 204.1,188.8 201.6,190 199.3,191.6 197.2,193.4 195.3,195.4 193.6,197.6 192.2,200.1 191.1,202.6 190.3,205.3 189.8,208 189.6,210.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='193.1' y='179.3' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='260.4' y='148.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='71.7' y='217.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='226.3' y='222.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tomon-2R-orqali",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#7ecce903"
+    },
+    {
+      "q": "ABC uchburchakda burchaklar nisbati ∠A : ∠B : ∠C = 1 : 2 : 3 va tashqi chizilgan aylananing radiusi 4 sm. Uchburchakning eng katta tomonini toping.",
+      "v": [
+        "8 sm",
+        "4 sm",
+        "4√3 sm",
+        "8√3 sm"
+      ],
+      "t": 0,
+      "izoh": "Burchaklar yig'indisi 180°, ulushlar soni 1 + 2 + 3 = 6, demak burchaklar 30°, 60° va 90°. Eng katta tomon 90° qarshisida: c = 2R·sin 90° = 8·1 = 8 sm, ya'ni u diametrga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='125' r='89' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='125' r='2.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162' y='139' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='150' y1='125' x2='194.5' y2='47.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='166.3' y='80.5' font-size='13' fill='%23334155' text-anchor='end'%3ER = 4 sm%3C/text%3E%3Cpolygon points='194.5,47.9 105.5,202.1 194.5,202.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='135' y='115' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='198.7' y='37.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='94.2' y='215.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='202' y='219.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tomon-2R-orqali",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#a26932fd"
+    },
+    {
+      "q": "Tomonlari a, b, c bo'lgan ABC uchburchak uchun kosinuslar teoremasi qaysi tenglik bilan to'g'ri yozilgan?",
+      "v": [
+        "a² = b² + c² + 2bc·cos A",
+        "a² = b² + c² − 2bc·cos B",
+        "a² = b² − c² − 2bc·cos A",
+        "a² = b² + c² − 2bc·cos A"
+      ],
+      "t": 3,
+      "izoh": "Kosinuslar teoremasida izlanayotgan tomon kvadrati qolgan ikki tomon kvadratlari yig'indisidan ular orasidagi burchak kosinusiga bog'liq had ayriladi. Burchak aynan izlanayotgan tomon qarshisida yotishi shart.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-tanish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#5d63df41"
+    },
+    {
+      "q": "ABC uchburchakning tomonlari a, b va c bo'lsa, cos A ni tomonlar orqali qaysi ifoda to'g'ri beradi?",
+      "v": [
+        "(a² + b² − c²)/(2ab)",
+        "(b² + c² − a²)/(2bc)",
+        "(b² + c² − a²)/(bc)",
+        "(b² + c² + a²)/(2bc)"
+      ],
+      "t": 1,
+      "izoh": "a² = b² + c² − 2bc·cos A tenglikdan 2bc·cos A = b² + c² − a² kelib chiqadi. Ikkala tomonni 2bc ga bo'lsak, cos A = (b² + c² − a²)/(2bc) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-tanish",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#a56350ca"
+    },
+    {
+      "q": "Geodezist ko'lning qarama-qarshi qirg'oqlaridagi A va B nuqtalar orasidagi masofani o'lchamoqchi. U C nuqtaga o'rnashib CA = 18 m, CB = 30 m va ∠ACB = 120° ekanini aniqladi. AB masofa necha metr?",
+      "v": [
+        "48 m",
+        "42 m",
+        "√684 m",
+        "12 m"
+      ],
+      "t": 1,
+      "izoh": "AB² = CA² + CB² − 2·CA·CB·cos 120° = 324 + 900 − 2·18·30·(−1/2) = 1224 + 540 = 1764. Kvadrat ildiz olsak AB = 42 m. Ishorani noto'g'ri olsak 684 chiqib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='264,69.4 36,160.6 211.4,160.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='110.3' y='173.3' font-size='13' fill='%23334155' text-anchor='middle'%3E30 m%3C/text%3E%3Ctext x='253.3' y='115.5' font-size='13' fill='%23334155' text-anchor='middle'%3E18 m%3C/text%3E%3Ctext x='137.2' y='109.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='223.4,139.8 220.9,138.5 218.3,137.6 215.6,136.9 212.8,136.6 210,136.6 207.2,136.9 204.5,137.6 201.9,138.5 199.4,139.8 197.1,141.3 194.9,143.1 193,145.1 191.3,147.4 189.9,149.8 188.8,152.4 188,155 187.5,157.8 187.4,160.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='190.9' y='129.1' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='276.6' y='65.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.4' y='167.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='223.4' y='173.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masofa-olchash",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#8d2d2cf4"
+    },
+    {
+      "q": "Daryoning bir qirg'og'idagi C nuqtadan qarshi qirg'oqdagi A nuqtaga qaraganda ∠ACB = 45°, B nuqtadagi burchak esa 105° ni tashkil qildi. BC masofasi 20 m bo'lsa, AB masofani toping.",
+      "v": [
+        "10√2 m",
+        "20√3 m",
+        "40 m",
+        "20√2 m"
+      ],
+      "t": 3,
+      "izoh": "Uchburchakning uchinchi burchagi ∠A = 180° − 45° − 105° = 30°. BC tomoni ∠A ga, AB tomoni esa ∠C ga qarshi yotadi: AB = 20·sin 45° : sin 30° = 20·(√2/2)·2 = 20√2 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='70.9,36 113.4,194 229.1,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='179.8' y='211.5' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3Ctext x='78.3' y='111' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='137.4,194 137.2,191.6 136.9,189.1 136.2,186.8 135.4,184.5 134.3,182.3 133,180.2 131.5,178.3 129.8,176.5 128,175 126,173.6 123.8,172.4 121.6,171.4 119.2,170.7 116.8,170.3 114.4,170 112,170 109.5,170.3 107.1,170.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='138.3' y='165.5' font-size='13' fill='%23334155' text-anchor='middle'%3E105°%3C/text%3E%3Cpolyline points='212.1,177 211.4,177.8 210.7,178.6 210,179.4 209.4,180.2 208.8,181.1 208.3,182 207.8,182.9 207.3,183.9 206.9,184.8 206.5,185.8 206.2,186.8 205.9,187.8 205.6,188.8 205.4,189.8 205.3,190.9 205.1,191.9 205.1,193 205.1,194' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='191.2' y='182.3' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='62.9' y='27.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='107' y='211.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='242' y='205.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-masofa-olchash",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#23edc9bc"
+    },
+    {
+      "q": "Ikki qishloq orasidagi masofani bevosita o'lchab bo'lmaydi. Uchinchi nuqtadan qishloqlargacha 24 km va 21 km, shu ikki yo'nalish orasidagi burchak esa 120°. Qishloqlar orasi necha kilometr?",
+      "v": [
+        "39 km",
+        "45 km",
+        "√513 km",
+        "√1017 km"
+      ],
+      "t": 0,
+      "izoh": "d² = 24² + 21² − 2·24·21·cos 120° = 576 + 441 + 504 = 1521, demak d = 39 km. Uchinchi hadni tushirib qoldirsak √1017, ishorani almashtirsak √513 xato javob chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='264,54.9 36,175.1 194.6,175.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='102.9' y='189.2' font-size='13' fill='%23334155' text-anchor='middle'%3E24 km%3C/text%3E%3Ctext x='244.6' y='114.3' font-size='13' fill='%23334155' text-anchor='middle'%3E21 km%3C/text%3E%3Ctext x='140.5' y='106.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='206.6,154.3 204.1,153.1 201.5,152.1 198.8,151.5 196,151.1 193.2,151.1 190.4,151.5 187.7,152.1 185.1,153.1 182.6,154.3 180.3,155.8 178.1,157.6 176.2,159.7 174.6,161.9 173.2,164.3 172.1,166.9 171.3,169.6 170.8,172.3 170.6,175.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='174.1' y='143.6' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='275.7' y='49.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.7' y='183.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='203.5' y='191.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-masofa-olchash",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#557b4658"
+    },
+    {
+      "q": "Qirg'oqdagi A va B kuzatuv nuqtalari orasidagi masofa 60 m. Dengizdagi K kema uchun ∠KAB = 75° va ∠KBA = 45° o'lchandi. Kemadan A nuqtagacha bo'lgan masofani toping.",
+      "v": [
+        "20√3 m",
+        "30√2 m",
+        "20√6 m",
+        "60√2 m"
+      ],
+      "t": 2,
+      "izoh": "Uchinchi burchak ∠K = 180° − 75° − 45° = 60°. AK tomoni ∠B ga, AB tomoni ∠K ga qarshi yotadi: AK = 60·sin 45° : sin 60° = 60·(√2/2) : (√3/2) = 60√2 : √3 = 20√6 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='180.5,42.7 36,187.3 264,187.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='237.2' y='113.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='93.8' y='112.3' font-size='13' fill='%23334155' text-anchor='middle'%3E60 m%3C/text%3E%3Cpolyline points='163.6,59.7 164.9,60.9 166.2,62 167.7,63 169.2,63.8 170.7,64.6 172.3,65.3 174,65.8 175.7,66.2 177.4,66.5 179.2,66.7 180.9,66.7 182.6,66.6 184.4,66.4 186.1,66.1 187.8,65.6 189.4,65 191,64.3 192.5,63.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='175.2' y='87.4' font-size='13' fill='%23334155' text-anchor='middle'%3E75°%3C/text%3E%3Cpolyline points='60,187.3 60,186.2 59.9,185.2 59.8,184.1 59.6,183.1 59.4,182.1 59.2,181.1 58.9,180.1 58.6,179.1 58.2,178.1 57.8,177.1 57.3,176.2 56.8,175.3 56.2,174.4 55.7,173.5 55,172.7 54.4,171.8 53.7,171.1 53,170.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='73.9' y='175.6' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='183.6' y='32' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22' y='196.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277.6' y='197.6' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-masofa-olchash",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#d79edef0"
+    },
+    {
+      "q": "Tog' yon bag'ridagi A va B nuqtalar orasidagi masofani topish uchun C nuqtadan CA = 13 m, CB = 14 m o'lchandi va ∠ACB burchakning kosinusi 5/13 ga teng bo'lib chiqdi. AB masofani toping.",
+      "v": [
+        "27 m",
+        "√505 m",
+        "√365 m",
+        "15 m"
+      ],
+      "t": 3,
+      "izoh": "AB² = 13² + 14² − 2·13·14·(5/13) = 169 + 196 − 140 = 225. Bu yerda 2·13·14·(5/13) ifodada 13 qisqaradi va 140 qoladi. Demak AB = 15 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='176.3,36 57.8,194 242.2,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='147.4' y='213.8' font-size='13' fill='%23334155' text-anchor='middle'%3E14 m%3C/text%3E%3Ctext x='223.4' y='111.6' font-size='13' fill='%23334155' text-anchor='middle'%3E13 m%3C/text%3E%3Ctext x='103.6' y='110.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='234.5,175.5 233.3,176.1 232.1,176.7 231,177.4 230,178.2 229,179 228,179.9 227.1,180.8 226.3,181.8 225.5,182.9 224.8,184 224.2,185.2 223.7,186.4 223.2,187.6 222.8,188.8 222.5,190.1 222.3,191.4 222.2,192.7 222.2,194' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='211.4' y='177.5' font-size='13' fill='%23334155' text-anchor='middle'%3Ecos C = 5/13%3C/text%3E%3Ctext x='178.8' y='25.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44.5' y='204.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='254.8' y='206' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-masofa-olchash",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#76605c3f"
+    },
+    {
+      "q": "Ikki qayiq bir pristandan bir vaqtda jo'nab ketdi: birinchisi 15 km/soat, ikkinchisi 40 km/soat tezlik bilan, yo'nalishlari orasidagi burchak 60°. Ikki soatdan keyin qayiqlar orasidagi masofa necha kilometr?",
+      "v": [
+        "35 km",
+        "70 km",
+        "110 km",
+        "√9700 km"
+      ],
+      "t": 1,
+      "izoh": "Ikki soatda qayiqlar 30 km va 80 km yo'l bosadi. d² = 30² + 80² − 2·30·80·cos 60° = 900 + 6400 − 2400 = 4900, demak d = 70 km. Bir soatlik masofani hisoblasak 35 km chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-navigatsiya",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#863448f3"
+    },
+    {
+      "q": "Samolyot A shahridan 250 km to'g'ri uchdi, so'ng yo'nalishini 60° ga burib yana 250 km uchdi. Samolyot A shahridan necha kilometr uzoqlashgan bo'ladi?",
+      "v": [
+        "250 km",
+        "500 km",
+        "250√3 km",
+        "250√2 km"
+      ],
+      "t": 2,
+      "izoh": "Yo'nalish 60° ga burilsa, uchburchakning ichki burchagi 180° − 60° = 120° bo'ladi. d² = 250² + 250² − 2·250²·cos 120° = 62500·3 = 187500, demak d = 250√3 km. Ichki burchakni 60° deb olsak 250 km xato javob chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-navigatsiya",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#64a0c427"
+    },
+    {
+      "q": "Turist lagerdan chiqib shimolga 8 km yurdi, keyin yo'nalishini 120° ga burib yana 5 km yurdi. Turist lagerdan necha kilometr uzoqlashdi?",
+      "v": [
+        "7 km",
+        "13 km",
+        "√129 km",
+        "3 km"
+      ],
+      "t": 0,
+      "izoh": "Yo'nalish 120° ga burilgani uchun uchburchakning ichki burchagi 60° bo'ladi. d² = 8² + 5² − 2·8·5·cos 60° = 64 + 25 − 40 = 49, demak d = 7 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-navigatsiya",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#08756846"
+    },
+    {
+      "q": "Radar ekranida ikki samolyot ko'rinadi: radardan birinchisigacha 60 km, ikkinchisigacha 100 km va yo'nalishlar orasidagi burchak 120°. Ikkinchi samolyotdan qaralganda radar bilan birinchi samolyot orasidagi burchak sinusini toping.",
+      "v": [
+        "5√3/14",
+        "3√3/7",
+        "3/14",
+        "3√3/14"
+      ],
+      "t": 3,
+      "izoh": "Avval samolyotlar orasidagi masofani topamiz: d² = 3600 + 10000 + 6000 = 19600, d = 140 km. Endi sinuslar teoremasi: sin x = 60·sin 120° : 140 = 60·(√3/2) : 140 = 30√3 : 140 = 3√3/14.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='112.8,84.8 36,145.2 264,145.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='204.1' y='115.9' font-size='13' fill='%23334155' text-anchor='middle'%3E100 km%3C/text%3E%3Ctext x='58.6' y='116.5' font-size='13' fill='%23334155' text-anchor='middle'%3E60 km%3C/text%3E%3Cpolyline points='93.9,99.6 95.8,101.7 97.9,103.6 100.1,105.2 102.6,106.5 105.2,107.5 107.9,108.3 110.6,108.7 113.4,108.8 116.2,108.5 118.9,108 121.6,107.1 124.1,105.9 126.5,104.5 128.7,102.7 130.7,100.8 132.4,98.6 133.9,96.2 135.1,93.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.6' y='129.4' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Cpolyline points='241.7,136.3 241.5,136.8 241.4,137.3 241.2,137.7 241,138.2 240.9,138.7 240.8,139.2 240.6,139.7 240.5,140.2 240.4,140.7 240.3,141.2 240.3,141.7 240.2,142.2 240.1,142.7 240.1,143.2 240,143.7 240,144.2 240,144.7 240,145.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='223.7' y='141.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='104.9' y='76' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Ctext x='21.3' y='152.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='278.8' y='151.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-navigatsiya",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#b41c8ff5"
+    },
+    {
+      "q": "Uyning tomi ikki nishabdan iborat: ularning uzunliklari 7 m va 8 m bo'lib, tepada 120° li burchak hosil qiladi. Tom asosining eni necha metr?",
+      "v": [
+        "15 m",
+        "√57 m",
+        "13 m",
+        "√113 m"
+      ],
+      "t": 2,
+      "izoh": "Asos uzunligi x² = 7² + 8² − 2·7·8·cos 120° = 49 + 64 + 56 = 169 formula bilan topiladi, demak x = 13 m. Ikki nishabni qo'shib 15 m deyish xato bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='139.9,82.3 36,147.7 264,147.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='152.4' y='167.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='217.6' y='115.9' font-size='13' fill='%23334155' text-anchor='middle'%3E8 m%3C/text%3E%3Ctext x='72.2' y='116.1' font-size='13' fill='%23334155' text-anchor='middle'%3E7 m%3C/text%3E%3Cpolyline points='119.6,95.1 121.2,97.3 123.1,99.4 125.2,101.3 127.5,102.8 129.9,104.1 132.5,105.1 135.2,105.8 138,106.2 140.8,106.3 143.6,106 146.3,105.4 149,104.5 151.5,103.3 153.8,101.8 156,100.1 158,98.1 159.7,95.9 161.1,93.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='141.5' y='127.3' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='137.6' y='71.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.3' y='154.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='154.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-quruvchi",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#5a8a6c13"
+    },
+    {
+      "q": "Uchburchak shaklidagi yer uchastkasining ikki tomoni 30 m va 50 m bo'lib, ular orasidagi burchak 120°. Uchastka atrofini to'liq o'rab olish uchun necha metr to'siq kerak bo'ladi?",
+      "v": [
+        "150 m",
+        "80 m",
+        "160 m",
+        "100 m"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi tomon: x² = 900 + 2500 + 1500 = 4900, x = 70 m. Perimetr esa 30 + 50 + 70 = 150 m. Uchinchi tomonni tomonlar yig'indisi yoki ayirmasi deb olish tipik xato hisoblanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='112.8,84.8 36,145.2 264,145.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='158.4' y='162.8' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Ctext x='204.1' y='115.9' font-size='13' fill='%23334155' text-anchor='middle'%3E50 m%3C/text%3E%3Ctext x='58.6' y='116.5' font-size='13' fill='%23334155' text-anchor='middle'%3E30 m%3C/text%3E%3Cpolyline points='93.9,99.6 95.8,101.7 97.9,103.6 100.1,105.2 102.6,106.5 105.2,107.5 107.9,108.3 110.6,108.7 113.4,108.8 116.2,108.5 118.9,108 121.6,107.1 124.1,105.9 126.5,104.5 128.7,102.7 130.7,100.8 132.4,98.6 133.9,96.2 135.1,93.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.6' y='129.4' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='104.9' y='76' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.3' y='152.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.8' y='151.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='225' font-size='13' fill='%23334155' text-anchor='middle'%3EP = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-quruvchi",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#b85e4c1c"
+    },
+    {
+      "q": "Uchburchak shaklidagi metall panelning ikki tomoni 6 m va 10 m, ular orasidagi burchakning kosinusi 3/5 ga teng. Panelning uchinchi tomoni necha metr?",
+      "v": [
+        "4 m",
+        "8 m",
+        "√208 m",
+        "√136 m"
+      ],
+      "t": 1,
+      "izoh": "x² = 6² + 10² − 2·6·10·(3/5) = 36 + 100 − 72 = 64, demak x = 8 m. Kosinus musbat bo'lgani uchun uchinchi had ayriladi; qo'shib yuborsak √208 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='44.7,36 44.7,194 255.3,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='158.9' y='211.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='162.8' y='109.4' font-size='13' fill='%23334155' text-anchor='middle'%3E10 m%3C/text%3E%3Ctext x='29.7' y='113.4' font-size='13' fill='%23334155' text-anchor='middle'%3E6 m%3C/text%3E%3Cpolyline points='44.7,56 45.7,56 46.7,55.9 47.7,55.8 48.8,55.6 49.8,55.3 50.8,55.1 51.7,54.7 52.7,54.3 53.6,53.9 54.5,53.4 55.4,52.9 56.3,52.3 57.1,51.7 57.9,51 58.6,50.3 59.3,49.6 60,48.8 60.7,48' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='61.2' y='73.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ecos A = 3/5%3C/text%3E%3Ctext x='36.3' y='27.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='32.7' y='207' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='269.4' y='203.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-quruvchi",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#63117530"
+    },
+    {
+      "q": "Ko'prik loyihasida daryoning bir qirg'og'idagi A va B nuqtalar orasi 30 m. Qarshi qirg'oqdagi C ustunga qarab ∠A = 60° va ∠B = 75° o'lchandi. BC masofani toping.",
+      "v": [
+        "15√2 m",
+        "30√6 m",
+        "15√3 m",
+        "15√6 m"
+      ],
+      "t": 3,
+      "izoh": "Uchinchi burchak ∠C = 180° − 60° − 75° = 45°. BC tomoni ∠A ga, AB tomoni ∠C ga qarshi yotadi: BC = 30·sin 60° : sin 45° = 30·(√3/2) : (√2/2) = 30√3 : √2 = 15√6 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='92.2,36 49.8,194 250.2,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='155.5' y='213' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='56.4' y='112.5' font-size='13' fill='%23334155' text-anchor='middle'%3E30 m%3C/text%3E%3Cpolyline points='86,59.2 87.3,59.5 88.7,59.7 90.1,59.9 91.5,60 92.9,60 94.3,59.9 95.6,59.7 97,59.5 98.4,59.2 99.7,58.8 101,58.3 102.3,57.8 103.6,57.1 104.8,56.4 105.9,55.7 107.1,54.8 108.1,53.9 109.1,53' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='102.8' y='79.6' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Cpolyline points='73.8,194 73.8,192.3 73.6,190.5 73.3,188.8 72.8,187.1 72.3,185.5 71.6,183.9 70.8,182.3 69.9,180.8 68.9,179.4 67.8,178 66.6,176.8 65.3,175.6 63.9,174.5 62.4,173.6 60.9,172.7 59.3,172 57.7,171.3 56.1,170.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='82.4' y='173' font-size='13' fill='%23334155' text-anchor='middle'%3E75°%3C/text%3E%3Ctext x='87' y='25.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.3' y='206.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='263.9' y='204.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-quruvchi",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#93b3fde6"
+    },
+    {
+      "q": "Tomorqa uchburchak shaklida bo'lib, tomonlari 20 m, 21 m va 29 m ga teng. Tomorqaning eng katta burchagi qanday va yuzi necha kvadrat metr?",
+      "v": [
+        "90° va 210 m²",
+        "90° va 420 m²",
+        "o'tmas burchak va 210 m²",
+        "60° va 105√3 m²"
+      ],
+      "t": 0,
+      "izoh": "Eng katta tomon 29 m: 20² + 21² = 400 + 441 = 841 = 29². Kosinus nolga teng, demak burchak 90°. To'g'ri burchakli uchburchak yuzi S = (1/2)·20·21 = 210 m² ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='144.4,58.1 36,171.9 264,171.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150.8' y='191.9' font-size='13' fill='%23334155' text-anchor='middle'%3E29 m%3C/text%3E%3Ctext x='219.4' y='113.9' font-size='13' fill='%23334155' text-anchor='middle'%3E21 m%3C/text%3E%3Ctext x='75' y='114' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3Ctext x='143.7' y='47.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.8' y='180.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.3' y='180.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-quruvchi",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#b9dffd78"
+    },
+    {
+      "q": "Parallelogrammning tomonlari 5 sm va 8 sm, ular orasidagi o'tkir burchak esa 60°. Parallelogrammning kichik diagonalini toping.",
+      "v": [
+        "13 sm",
+        "√129 sm",
+        "7 sm",
+        "√69 sm"
+      ],
+      "t": 2,
+      "izoh": "Kichik diagonal o'tkir burchak qarshisida yotadi: d² = 5² + 8² − 2·5·8·cos 60° = 25 + 64 − 40 = 49, demak d = 7 sm. O'tmas burchak olinsa √129 chiqadi. 2 ko'paytuvchisi tushib qolsa 89 − 20 = 69, ya'ni √69 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='210' viewBox='0 0 300 210'%3E%3Crect width='300' height='210' fill='%23ffffff'/%3E%3Cpolygon points='34,152.8 210.8,152.8 266,57.2 89.2,57.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='210.8' y1='152.8' x2='89.2' y2='57.2' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='114.4' y='170.7' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='254.4' y='109' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='155' y='99' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cpolyline points='58,152.8 58,151.4 57.8,150.1 57.6,148.7 57.4,147.3 57,146 56.6,144.6 56,143.3 55.4,142.1 54.8,140.8 54.1,139.6 53.3,138.5 52.4,137.4 51.5,136.4 50.5,135.4 49.4,134.5 48.3,133.6 47.2,132.8 46,132.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='69.5' y='136.3' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='20.1' y='162.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='222.5' y='166.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.9' y='55.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='77.5' y='51.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelogramm-diagonal",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#d7d1358e"
+    },
+    {
+      "q": "Parallelogrammning tomonlari 6 sm va 10 sm, o'tkir burchagi 60° ga teng. Uning katta diagonali necha santimetr?",
+      "v": [
+        "2√19 sm",
+        "14 sm",
+        "16 sm",
+        "√166 sm"
+      ],
+      "t": 1,
+      "izoh": "Katta diagonal o'tmas burchak qarshisida yotadi, o'tmas burchak esa 180° − 60° = 120°. d² = 36 + 100 − 2·6·10·(−1/2) = 136 + 60 = 196, demak d = 14 sm. 2 ko'paytuvchisi tushib qolsa 136 + 30 = 166, ya'ni √166 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='210' viewBox='0 0 300 210'%3E%3Crect width='300' height='210' fill='%23ffffff'/%3E%3Cpolygon points='34,151.4 212.5,151.4 266,58.6 87.5,58.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='34' y1='151.4' x2='266' y2='58.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='115.2' y='169.2' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='255.2' y='109' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='155' y='99' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cpolyline points='58,151.4 58,150 57.8,148.6 57.6,147.2 57.4,145.8 57,144.5 56.6,143.2 56,141.9 55.4,140.6 54.8,139.4 54.1,138.2 53.3,137 52.4,135.9 51.5,134.9 50.5,133.9 49.4,133 48.3,132.1 47.2,131.3 46,130.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='69.5' y='134.9' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='20.1' y='160.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='224.5' y='164.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.9' y='57.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='75.5' y='53.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelogramm-diagonal",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#68bfe1d6"
+    },
+    {
+      "q": "Darvoza ramkasi parallelogramm shaklida: tomonlari 3 m va 5 m, o'tmas burchagi 120°. Ramkani mustahkamlash uchun katta diagonal bo'ylab tayanch qo'yiladi. Tayanch uzunligi qancha?",
+      "v": [
+        "8 m",
+        "√19 m",
+        "√34 m",
+        "7 m"
+      ],
+      "t": 3,
+      "izoh": "Katta diagonal o'tmas burchak qarshisida yotadi: d² = 3² + 5² − 2·3·5·cos 120° = 9 + 25 + 15 = 49. Demak tayanch uzunligi d = 7 m. Kichik diagonal esa √19 m ga teng. Kosinusli hadni umuman hisobga olmasa 9 + 25 = 34, ya'ni √34 m chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='210' viewBox='0 0 300 210'%3E%3Crect width='300' height='210' fill='%23ffffff'/%3E%3Cpolygon points='87.5,151.4 266,151.4 212.5,58.6 34,58.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='266' y1='151.4' x2='34' y2='58.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='184.8' y='169.2' font-size='13' fill='%23334155' text-anchor='middle'%3E5 m%3C/text%3E%3Ctext x='255.2' y='109' font-size='13' fill='%23334155' text-anchor='middle'%3E3 m%3C/text%3E%3Ctext x='155' y='99' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cpolyline points='111.5,151.4 111.4,148.6 110.9,145.8 110.1,143.2 109,140.6 107.6,138.2 105.9,135.9 104,133.9 101.9,132.1 99.5,130.6 97,129.3 94.4,128.4 91.7,127.7 88.9,127.4 86.1,127.4 83.4,127.7 80.7,128.4 78,129.3 75.5,130.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='108' y='119.9' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='75.5' y='164.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='279.9' y='160.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='224.5' y='53.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='20.1' y='57.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelogramm-diagonal",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#898182ca"
+    },
+    {
+      "q": "Parallelogrammning tomonlari 4 sm va 7 sm, bir diagonali esa 7 sm ga teng. Uning ikkinchi diagonalini toping.",
+      "v": [
+        "9 sm",
+        "4 sm",
+        "11 sm",
+        "√179 sm"
+      ],
+      "t": 0,
+      "izoh": "Chizmada BD = 7 sm berilgan, izlanayotgani esa AC diagonali. Qo'shni burchaklar to'ldiruvchi bo'lgani uchun kosinuslar teoremasidan d₁² + d₂² = 2(a² + b²) kelib chiqadi. Bundan AC² = 2·(16 + 49) − 49 = 130 − 49 = 81, demak AC = 9 sm. Ikkilanganni unutsak 4 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='210' viewBox='0 0 300 210'%3E%3Crect width='300' height='210' fill='%23ffffff'/%3E%3Cpolygon points='34,159.6 233.4,159.6 266,50.4 66.6,50.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='34' y1='159.6' x2='266' y2='50.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='233.4' y1='159.6' x2='66.6' y2='50.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='129.1' y='178.9' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='265.7' y='109' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='190' y='128' font-size='13' fill='%23334155' text-anchor='start'%3E7 sm%3C/text%3E%3Ctext x='186' y='82' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='20.4' y='170' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='246' y='171.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.6' y='48' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='54' y='46.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallelogramm-diagonal",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#4101488e"
+    },
+    {
+      "q": "ABC uchburchakda AB = 6 sm, BC = 10 sm va ∠B = 60°. AC tomonining o'rtasi M nuqta bo'lsa, BM medianasining uzunligini toping.",
+      "v": [
+        "√19 sm",
+        "4 sm",
+        "7 sm",
+        "8 sm"
+      ],
+      "t": 2,
+      "izoh": "Avval AC² = 36 + 100 − 2·6·10·(1/2) = 76. Mediana formulasi kosinuslar teoremasidan chiqadi: BM² = (2·AB² + 2·BC² − AC²) : 4 = (72 + 200 − 76) : 4 = 49. Demak BM = 7 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='104.4,55.8 36,174.2 264,174.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='36' y1='174.2' x2='184.2' y2='115' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='184.2' y='108' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='122.1' y='148.6' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='227.1' y1='140.6' x2='221.1' y2='148.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='147.3' y1='81.4' x2='141.3' y2='89.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='155.7' y='193.2' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='54.9' y='114.3' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Cpolyline points='60,174.2 60,172.8 59.8,171.5 59.6,170.1 59.4,168.7 59,167.4 58.6,166 58,164.7 57.4,163.5 56.8,162.2 56.1,161 55.3,159.9 54.4,158.8 53.5,157.8 52.5,156.8 51.4,155.9 50.3,155 49.2,154.2 48,153.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='71.5' y='157.7' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='99' y='45.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22.1' y='183.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.3' y='182.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mediana-kosinus",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#081a5e89"
+    },
+    {
+      "q": "Uchburchakning tomonlari 5 sm, 7 sm va 8 sm ga teng. Uning 8 sm li tomoniga o'tkazilgan medianasi uzunligini toping.",
+      "v": [
+        "4 sm",
+        "√21 sm",
+        "√84 sm",
+        "21 sm"
+      ],
+      "t": 1,
+      "izoh": "Mediana formulasi: m² = (2·5² + 2·7² − 8²) : 4 = (50 + 98 − 64) : 4 = 84 : 4 = 21. Demak m = √21 sm. To'rtga bo'lishni unutsak √84 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='107.3,53.3 36,176.7 264,176.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107.3' y1='53.3' x2='150' y2='176.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='193.7' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='140.6' y='119' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='93' y1='181.7' x2='93' y2='171.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='207' y1='181.7' x2='207' y2='171.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='210' y='195.8' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='200.4' y='112.9' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='56.4' y='114.1' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='102.3' y='43.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22.1' y='186.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.3' y='185.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-kosinus",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#9344e407"
+    },
+    {
+      "q": "Uchburchak shaklidagi maydonchaning tomonlari 12 m, 16 m va 20 m. Eng uzun tomon o'rtasidan qarama-qarshi uchgacha to'g'ri yo'lka quriladi. Yo'lka uzunligi necha metr?",
+      "v": [
+        "12 m",
+        "14 m",
+        "8 m",
+        "10 m"
+      ],
+      "t": 3,
+      "izoh": "Mediana formulasi: m² = (2·12² + 2·16² − 20²) : 4 = (288 + 512 − 400) : 4 = 100, demak m = 10 m. Bu uchburchak to'g'ri burchakli va mediana gipotenuzaning yarmiga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='118.1,60.3 36,169.7 264,169.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='118.1' y1='60.3' x2='150' y2='169.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='186.7' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='146' y='119' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='93' y1='174.7' x2='93' y2='164.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='207' y1='174.7' x2='207' y2='164.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='210' y='189.1' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3Ctext x='206.1' y='113.7' font-size='13' fill='%23334155' text-anchor='middle'%3E16 m%3C/text%3E%3Ctext x='61.7' y='114.5' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='113.9' y='49.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='178.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.4' y='177.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-kosinus",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#01f7facd"
+    },
+    {
+      "q": "ABC uchburchakda AB = 8 sm, AC = 6 sm va ular orasidagi burchak 120°. BC tomonining o'rtasiga o'tkazilgan mediana uzunligini toping.",
+      "v": [
+        "√13 sm",
+        "√37 sm",
+        "13 sm",
+        "7 sm"
+      ],
+      "t": 0,
+      "izoh": "Avval BC² = 64 + 36 + 48 = 148. Mediana: m² = (2·64 + 2·36 − 148) : 4 = (128 + 72 − 148) : 4 = 52 : 4 = 13, demak m = √13 sm. BC ning yarmini javob deb olsak √37 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='171.6,83 36,147 264,147' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='171.6' y1='83' x2='150' y2='147' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='164' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='150' y='141' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Cline x1='93' y1='152' x2='93' y2='142' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='207' y1='152' x2='207' y2='142' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='233.5' y='116.2' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='88.1' y='115.9' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Cpolyline points='149.9,93.2 151.2,95.7 152.8,98 154.7,100 156.8,101.9 159.1,103.5 161.5,104.8 164.1,105.8 166.8,106.5 169.6,106.9 172.4,107 175.2,106.7 177.9,106.1 180.5,105.2 183.1,104.1 185.4,102.6 187.6,100.8 189.6,98.8 191.3,96.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='168.2' y='127.8' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='176.4' y='72.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.2' y='153.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='154' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-kosinus",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#48790d6a"
+    },
+    {
+      "q": "Uchburchakning tomonlari 13 sm, 14 sm va 15 sm ga teng. Uning 13 sm va 14 sm li tomonlari orasidagi burchak kosinusini toping.",
+      "v": [
+        "10/13",
+        "33/65",
+        "5/13",
+        "5/14"
+      ],
+      "t": 2,
+      "izoh": "Bu ikki tomon orasidagi burchak qarshisida 15 sm li tomon yotadi. cos x = (13² + 14² − 15²) : (2·13·14) = (169 + 196 − 225) : 364 = 140 : 364 = 5/13. Maxrajdagi 2 ni unutsak 10/13 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='137.3,36 44.2,194 255.8,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='151.3' y='213.9' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='210.8' y='111.6' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='76.3' y='112.1' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3Cpolyline points='125.1,56.7 126.5,57.4 127.9,58.1 129.4,58.7 130.9,59.1 132.4,59.5 133.9,59.8 135.5,59.9 137.1,60 138.6,60 140.2,59.8 141.7,59.6 143.3,59.2 144.8,58.8 146.3,58.3 147.7,57.6 149.1,56.9 150.4,56.1 151.7,55.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='139.6' y='80.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='136.1' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='30.9' y='204.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='269.3' y='204.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kosinus-qiymat",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#5e1d1f46"
+    },
+    {
+      "q": "Uchburchak shaklidagi bog'ning tomonlari 9 m, 10 m va 17 m. Bog'ning 9 m va 10 m li tomonlari orasidagi burchak kosinusi nechaga teng?",
+      "v": [
+        "3/5",
+        "−3/5",
+        "−6/5",
+        "−3/10"
+      ],
+      "t": 1,
+      "izoh": "cos x = (9² + 10² − 17²) : (2·9·10) = (81 + 100 − 289) : 180 = −108 : 180 = −3/5. Kosinus manfiy, demak bu burchak o'tmas. Ishorani tashlab ketish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='142.5,86.6 36,143.4 264,143.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='152.1' y='163.3' font-size='13' fill='%23334155' text-anchor='middle'%3E17 m%3C/text%3E%3Ctext x='219' y='116.3' font-size='13' fill='%23334155' text-anchor='middle'%3E10 m%3C/text%3E%3Ctext x='73.5' y='116.4' font-size='13' fill='%23334155' text-anchor='middle'%3E9 m%3C/text%3E%3Cpolyline points='121.3,97.9 122.9,100.4 124.7,102.7 126.8,104.8 129.2,106.6 131.7,108 134.4,109.2 137.3,110 140.2,110.5 143.1,110.6 146.1,110.3 149,109.7 151.7,108.7 154.4,107.4 156.9,105.8 159.1,103.9 161.1,101.8 162.8,99.4 164.2,96.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='143.6' y='131.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='140.5' y='75.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.2' y='149.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.8' y='149.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kosinus-qiymat",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#da703969"
+    },
+    {
+      "q": "ABC uchburchakda BC = 4 sm, AC = 5 sm va AB = 6 sm ga teng. cos A + cos C yig'indisini hisoblang.",
+      "v": [
+        "7/8",
+        "5/8",
+        "9/16",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "cos A = (5² + 6² − 4²) : (2·5·6) = 45 : 60 = 3/4. cos C = (4² + 5² − 6²) : (2·4·5) = 5 : 40 = 1/8. Yig'indisi 3/4 + 1/8 = 6/8 + 1/8 = 7/8.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='193.8,36 86.3,194 213.7,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='145.7' y='213.4' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='217' y='110.1' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='129.1' y='107.3' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='197.8' y='25.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='73.9' y='206.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='223.9' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kosinus-qiymat",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#adba3b36"
+    },
+    {
+      "q": "Uchburchakning tomonlari 7 sm, 8 sm va 9 sm. Uning eng katta va eng kichik burchaklari kosinuslarining ayirmasini toping.",
+      "v": [
+        "8/21",
+        "2/21",
+        "−4/21",
+        "−8/21"
+      ],
+      "t": 3,
+      "izoh": "Eng katta burchak 9 sm qarshisida: cos = (49 + 64 − 81) : 112 = 32 : 112 = 2/7. Eng kichigi 7 sm qarshisida: cos = (64 + 81 − 49) : 144 = 96 : 144 = 2/3. Ayirma 2/7 − 2/3 = (6 − 14)/21 = −8/21.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='128.9,39.5 36,190.5 264,190.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='152.2' y='210.4' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='210.9' y='112.2' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='67.7' y='112.9' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='126.8' y='28.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22.4' y='200.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277.8' y='200.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kosinus-qiymat",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#6e2a54fa"
+    },
+    {
+      "q": "ABC uchburchakda ∠A = 30° va ∠B = 45°. BC va AC tomonlarining nisbati qanday bo'ladi?",
+      "v": [
+        "√2 : 1",
+        "1 : 2",
+        "1 : √2",
+        "2 : 1"
+      ],
+      "t": 2,
+      "izoh": "Sinuslar teoremasiga ko'ra tomonlar ularga qarshi yotgan burchaklar sinuslariga proporsional: BC : AC = sin A : sin B = (1/2) : (√2/2) = 1 : √2.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='229,36 71,194 186.7,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='120.3' y='211.5' font-size='13' fill='%23334155' text-anchor='middle'%3EBC%3C/text%3E%3Ctext x='221.7' y='111' font-size='13' fill='%23334155' text-anchor='middle'%3EAC%3C/text%3E%3Cpolyline points='212,53 212.5,53.5 213,53.9 213.6,54.4 214.1,54.8 214.7,55.3 215.2,55.7 215.8,56.1 216.4,56.4 217,56.8 217.6,57.1 218.2,57.4 218.9,57.8 219.5,58 220.1,58.3 220.8,58.6 221.5,58.8 222.1,59 222.8,59.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='208.5' y='75.5' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Cpolyline points='95,194 95,193 94.9,191.9 94.8,190.9 94.6,189.8 94.4,188.8 94.2,187.8 93.9,186.8 93.6,185.8 93.2,184.8 92.8,183.9 92.3,182.9 91.8,182 91.2,181.1 90.7,180.2 90,179.4 89.4,178.6 88.7,177.8 88,177' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='108.9' y='182.3' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='237' y='27.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='58' y='205.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='193' y='211.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tomonlar-nisbati-sinuslar",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#2a29ef9b"
+    },
+    {
+      "q": "Uchburchakning burchaklari 30°, 60° va 90° ga teng. Uning tomonlari qanday nisbatda bo'ladi?",
+      "v": [
+        "1 : 2 : 3",
+        "1 : √3 : 2",
+        "1 : √2 : √3",
+        "2 : √3 : 1"
+      ],
+      "t": 1,
+      "izoh": "Tomonlar sinuslarga proporsional: sin 30° : sin 60° : sin 90° = (1/2) : (√3/2) : 1. Har bir hadni 2 ga ko'paytirsak 1 : √3 : 2 nisbati hosil bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='195.6,36 104.4,194 195.6,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='195.6,183 184.6,183 184.6,194' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='183.6,56.8 184.2,57.1 184.8,57.4 185.5,57.8 186.1,58 186.7,58.3 187.4,58.6 188.1,58.8 188.7,59 189.4,59.2 190.1,59.4 190.8,59.5 191.4,59.6 192.1,59.7 192.8,59.8 193.5,59.9 194.2,60 194.9,60 195.6,60' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='185' y='79.6' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Cpolyline points='128.4,194 128.3,192.6 128.2,191.2 128,189.8 127.7,188.5 127.4,187.1 126.9,185.8 126.4,184.5 125.8,183.2 125.2,182 124.4,180.8 123.6,179.7 122.8,178.6 121.8,177.5 120.9,176.5 119.8,175.6 118.7,174.7 117.6,173.9 116.4,173.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='139.9' y='177.5' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='199.8' y='25.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='93.1' y='207.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='203.1' y='211' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tomonlar-nisbati-sinuslar",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#385eb5b8"
+    },
+    {
+      "q": "Uchburchak shaklidagi uchastkaning burchaklari 45°, 60° va 75°, eng kichik tomoni esa 20 m. Uchastkaning 60° li burchagi qarshisidagi tomoni necha metr?",
+      "v": [
+        "10√6 m",
+        "10√2 m",
+        "20√6 m",
+        "10√3 m"
+      ],
+      "t": 0,
+      "izoh": "Eng kichik tomon eng kichik burchak, ya'ni 45° qarshisida yotadi. x = 20·sin 60° : sin 45° = 20·(√3/2) : (√2/2) = 20√3 : √2 = 10√6 m, ya'ni taxminan 24,5 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='174.4,36 83.2,194 216.8,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='147.6' y='213.8' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3Ctext x='208.7' y='109.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='162.4,56.8 163.4,57.3 164.3,57.8 165.3,58.2 166.2,58.6 167.2,58.9 168.2,59.2 169.2,59.4 170.3,59.6 171.3,59.8 172.4,59.9 173.4,60 174.4,60 175.5,60 176.5,59.9 177.6,59.8 178.6,59.6 179.6,59.4 180.7,59.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='169.1' y='80.6' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Cpolyline points='107.2,194 107.2,192.6 107.1,191.2 106.9,189.8 106.6,188.5 106.2,187.1 105.8,185.8 105.3,184.5 104.7,183.2 104,182 103.3,180.8 102.5,179.7 101.6,178.6 100.7,177.5 99.7,176.5 98.6,175.6 97.6,174.7 96.4,173.9 95.2,173.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.7' y='177.5' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='176.7' y='25.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='70.9' y='206.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='227.9' y='208' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tomonlar-nisbati-sinuslar",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#100616e7"
+    },
+    {
+      "q": "ABC uchburchakda tomonlar nisbati a : b : c = 3 : 5 : 7 ko'rinishida berilgan. sin A : sin B : sin C nisbati va uchburchakning eng katta burchagi qanday bo'ladi?",
+      "v": [
+        "7 : 5 : 3 va 120°",
+        "3 : 5 : 7 va 90°",
+        "3 : 5 : 7 va 120°",
+        "1 : 1 : 1 va 120°"
+      ],
+      "t": 2,
+      "izoh": "Sinuslar teoremasidan sinuslar nisbati tomonlar nisbatiga teng, ya'ni 3 : 5 : 7. Tomonlarni 3k, 5k, 7k deb olib eng katta burchak kosinusini topamiz: (9 + 25 − 49) : 30 = −1/2, demak burchak 120°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tomonlar-nisbati-sinuslar",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#f150c539"
+    },
+    {
+      "q": "ABC uchburchakda AB = 6 sm, AC = 10 sm va ∠A = 30°. Uchburchakning yuzini toping.",
+      "v": [
+        "30 sm²",
+        "15√3 sm²",
+        "60 sm²",
+        "15 sm²"
+      ],
+      "t": 3,
+      "izoh": "Ikki tomon va ular orasidagi burchak berilganda S = (1/2)·AB·AC·sin A. Demak S = (1/2)·6·10·sin 30° = 30·(1/2) = 15 sm². Yarmini olishni unutsak 30 sm² chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='36,43.9 111.9,186.1 264,186.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='157.6' y='104.9' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='59' y='113.4' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Cpolyline points='47.3,65 47.9,64.7 48.5,64.3 49.1,64 49.7,63.6 50.2,63.2 50.8,62.8 51.3,62.3 51.9,61.9 52.4,61.4 52.9,60.9 53.4,60.4 53.8,59.9 54.3,59.4 54.8,58.8 55.2,58.3 55.6,57.7 56,57.2 56.4,56.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='64' y='77.8' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='25.1' y='37.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='104.8' y='203.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278' y='195.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-kosinus-birga",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#a30cc73a"
+    },
+    {
+      "q": "Yo'l chetidagi uchburchak shaklidagi maysazorning ikki tomoni 8 m va 12 m, ular orasidagi burchak esa 150°. Maysazorning yuzi necha kvadrat metr?",
+      "v": [
+        "48 m²",
+        "24 m²",
+        "24√3 m²",
+        "96 m²"
+      ],
+      "t": 1,
+      "izoh": "sin 150° = 1/2 bo'lgani uchun S = (1/2)·8·12·sin 150° = 48·(1/2) = 24 m². Bu yerda burchak o'tmas bo'lsa ham sinus musbat qoladi, faqat kosinus manfiy bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='125.6,100.4 36,129.6 264,129.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='210.8' y='117.5' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='64.9' y='117.7' font-size='13' fill='%23334155' text-anchor='middle'%3E8 m%3C/text%3E%3Cpolyline points='100.9,108.5 102.3,112 104.3,115.2 106.6,118.2 109.4,120.7 112.5,122.9 115.9,124.5 119.5,125.7 123.2,126.3 127,126.4 130.8,125.9 134.4,124.9 137.9,123.4 141.1,121.3 143.9,118.9 146.4,116 148.5,112.9 150,109.4 151.1,105.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='127.9' y='147.4' font-size='13' fill='%23334155' text-anchor='middle'%3E150°%3C/text%3E%3Ctext x='116' y='92.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.1' y='134.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279' y='134.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-kosinus-birga",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#e1bfaa5d"
+    },
+    {
+      "q": "Uchburchakning tomonlari 5 sm, 7 sm va 8 sm ga teng. Kosinuslar teoremasidan foydalanib uning yuzini toping.",
+      "v": [
+        "10√3 sm²",
+        "20√3 sm²",
+        "10 sm²",
+        "14 sm²"
+      ],
+      "t": 0,
+      "izoh": "5 va 8 tomonlar orasidagi burchak kosinusi (25 + 64 − 49) : 80 = 1/2, demak burchak 60° va sinusi √3/2. S = (1/2)·5·8·(√3/2) = 10√3 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='61.1,36 38.3,194 261.7,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='157.8' y='211.9' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='174.9' y='110.4' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='34.7' y='113.4' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='53.7' y='26.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='25.6' y='206.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='275.8' y='203.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-kosinus-birga",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#94a2d9a7"
+    },
+    {
+      "q": "Uchburchakning ikki tomoni 6 sm va 10 sm, yuzi esa 15√3 sm². Shu tomonlar orasidagi burchak o'tmas bo'lsa, burchakni va uchinchi tomonni toping.",
+      "v": [
+        "60° va 2√19 sm",
+        "120° va 2√34 sm",
+        "120° va 14 sm",
+        "60° va 14 sm"
+      ],
+      "t": 2,
+      "izoh": "S = (1/2)·6·10·sin x dan sin x = 30√3 : 60 = √3/2, bunga 60° va 120° mos keladi. Shart bo'yicha burchak o'tmas, demak 120°. Uchinchi tomon: c² = 36 + 100 + 60 = 196, c = 14 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-kosinus-birga",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#7d79762b"
+    },
+    {
+      "q": "Parallelogrammning tomonlari 6 sm va 10 sm, kichik diagonali esa 8 sm ga teng. Parallelogrammning yuzini toping.",
+      "v": [
+        "24 sm²",
+        "36 sm²",
+        "60 sm²",
+        "48 sm²"
+      ],
+      "t": 3,
+      "izoh": "Kichik diagonal o'tkir burchak qarshisida: cos x = (36 + 100 − 64) : 120 = 72 : 120 = 3/5, bundan sin x = 4/5. Parallelogramm yuzi S = 6·10·(4/5) = 48 sm². Uchburchak formulasini qo'llasak ikki barobar kam chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='210' viewBox='0 0 300 210'%3E%3Crect width='300' height='210' fill='%23ffffff'/%3E%3Cpolygon points='34,145.9 204.6,145.9 266,64.1 95.4,64.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='204.6' y1='145.9' x2='95.4' y2='64.1' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='109.7' y='162.7' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='251.3' y='109' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='155' y='99' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3Ctext x='19.9' y='154.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='216.6' y='158.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.1' y='63.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='83.4' y='59.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-kosinus-birga",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#35f2f08b"
+    },
+    {
+      "q": "ABC uchburchakda ∠A = 60° va AC = 8 sm. AB tomonida A uchidan 3 sm masofada D nuqta belgilangan. DC kesmasining uzunligi necha santimetr?",
+      "v": [
+        "5 sm",
+        "√73 sm",
+        "7 sm",
+        "√97 sm"
+      ],
+      "t": 2,
+      "izoh": "ADC uchburchakda AD = 3 sm, AC = 8 sm va ular orasidagi burchak 60°. DC² = 9 + 64 − 2·3·8·(1/2) = 73 − 24 = 49, demak DC = 7 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-ichki-kesma",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#cb340268"
+    },
+    {
+      "q": "ABC uchburchakda AB = 10 sm, BC = 12 sm va AC = 14 sm. BC tomonida BD = 4 sm bo'ladigan D nuqta olingan. AD kesmasini toping.",
+      "v": [
+        "10 sm",
+        "6 sm",
+        "√116 sm",
+        "√132 sm"
+      ],
+      "t": 0,
+      "izoh": "Avval cos B ni topamiz: cos B = (100 + 144 − 196) : (2·10·12) = 48 : 240 = 1/5. Endi ABD uchburchakda AD² = 100 + 16 − 2·10·4·(1/5) = 116 − 16 = 100, demak AD = 10 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchak-ichki-kesma",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#37dab745"
+    },
+    {
+      "q": "ABC uchburchakda AB = 7 sm, BC = 24 sm va ∠B = 120°. BC tomonida BD : DC = 1 : 2 nisbatni beruvchi D nuqta olingan. AD kesmasi uzunligini toping.",
+      "v": [
+        "15 sm",
+        "√277 sm",
+        "√57 sm",
+        "13 sm"
+      ],
+      "t": 3,
+      "izoh": "BD : DC = 1 : 2 bo'lgani uchun BD = 24 : 3 = 8 sm. ABD uchburchakda AD² = 49 + 64 − 2·7·8·(−1/2) = 113 + 56 = 169, demak AD = 13 sm. Nisbatni noto'g'ri qo'llab BD = 24 : 2 = 12 sm deb olsa 49 + 144 + 84 = 277, ya'ni √277 sm chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchburchak-ichki-kesma",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#fd7ddb9c"
+    },
+    {
+      "q": "ABC uchburchakda burchaklar nisbati ∠A : ∠B : ∠C = 2 : 3 : 4 ko'rinishida. Eng katta tomon qaysi burchak qarshisida yotadi va uning eng kichik tomonga nisbati qanday?",
+      "v": [
+        "∠A qarshisida, nisbat sin 40° : sin 80°",
+        "∠C qarshisida, nisbat sin 80° : sin 40°",
+        "∠C qarshisida, nisbat 4 : 2",
+        "∠B qarshisida, nisbat sin 60° : sin 40°"
+      ],
+      "t": 1,
+      "izoh": "Ulushlar soni 2 + 3 + 4 = 9, demak bir ulush 20° va burchaklar 40°, 60°, 80° bo'ladi. Eng katta tomon eng katta burchak, ya'ni ∠C qarshisida yotadi. Sinuslar teoremasidan nisbat sin 80° : sin 40° ga teng, burchaklar nisbatining o'ziga emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-nisbati",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#1a7a4fbe"
+    },
+    {
+      "q": "ABC uchburchakda ∠A = 2∠B va ∠C = 90° ekani ma'lum. Uchburchak tomonlarining a : b : c nisbatini toping.",
+      "v": [
+        "1 : √3 : 2",
+        "2 : 1 : √3",
+        "√3 : 1 : 2",
+        "1 : 2 : √3"
+      ],
+      "t": 2,
+      "izoh": "∠A + ∠B = 90° va ∠A = 2∠B bo'lgani uchun 3∠B = 90°, ya'ni ∠B = 30° va ∠A = 60°. Sinuslar teoremasidan a : b : c = sin 60° : sin 30° : sin 90° = (√3/2) : (1/2) : 1 = √3 : 1 : 2.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='264,49.2 36,180.8 264,180.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='264,169.8 253,169.8 253,180.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='243.2,61.2 243.9,62.4 244.7,63.5 245.6,64.6 246.5,65.7 247.5,66.6 248.6,67.6 249.7,68.4 250.8,69.2 252,70 253.2,70.6 254.5,71.2 255.8,71.7 257.1,72.2 258.5,72.5 259.8,72.8 261.2,73 262.6,73.1 264,73.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='243.5' y='88.7' font-size='13' fill='%23334155' text-anchor='middle'%3E2β%3C/text%3E%3Cpolyline points='60,180.8 60,180.1 60,179.4 59.9,178.7 59.8,178 59.7,177.3 59.6,176.7 59.5,176 59.4,175.3 59.2,174.6 59,173.9 58.8,173.3 58.6,172.6 58.3,172 58,171.3 57.8,170.7 57.4,170 57.1,169.4 56.8,168.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='75.6' y='174.2' font-size='13' fill='%23334155' text-anchor='middle'%3Eβ%3C/text%3E%3Ctext x='273.8' y='41.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.6' y='189' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277' y='192.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-nisbati",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#f42dd41d"
+    },
+    {
+      "q": "Uchburchakning burchaklari 1 : 2 : 3 nisbatda bo'lib, eng kichik tomoni 5 sm ga teng. Uchburchakning eng katta tomonini toping.",
+      "v": [
+        "10 sm",
+        "15 sm",
+        "5√3 sm",
+        "20 sm"
+      ],
+      "t": 0,
+      "izoh": "Burchaklar 30°, 60° va 90° ga teng. Eng kichik tomon 30° qarshisida, eng kattasi 90° qarshisida yotadi: x = 5·sin 90° : sin 30° = 5 : (1/2) = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='195.6,36 104.4,194 195.6,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='195.6,183 184.6,183 184.6,194' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='145.6' y='213.4' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='142' y='105.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='183.6,56.8 184.2,57.1 184.8,57.4 185.5,57.8 186.1,58 186.7,58.3 187.4,58.6 188.1,58.8 188.7,59 189.4,59.2 190.1,59.4 190.8,59.5 191.4,59.6 192.1,59.7 192.8,59.8 193.5,59.9 194.2,60 194.9,60 195.6,60' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='185' y='79.6' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Cpolyline points='128.4,194 128.3,192.6 128.2,191.2 128,189.8 127.7,188.5 127.4,187.1 126.9,185.8 126.4,184.5 125.8,183.2 125.2,182 124.4,180.8 123.6,179.7 122.8,178.6 121.8,177.5 120.9,176.5 119.8,175.6 118.7,174.7 117.6,173.9 116.4,173.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='139.9' y='177.5' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='199.8' y='25.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='93.1' y='207.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='203.1' y='211' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-nisbati",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#8bf998d4"
+    },
+    {
+      "q": "ABC uchburchakda ∠A = 30°, ∠B = 90° va uchburchakning perimetri 12 + 4√3 sm ga teng. AB tomonining uzunligini toping.",
+      "v": [
+        "4 sm",
+        "8 sm",
+        "12 sm",
+        "4√3 sm"
+      ],
+      "t": 3,
+      "izoh": "Uchinchi burchak 60°, demak tomonlar sin 30° : sin 90° : sin 60° = 1 : 2 : √3 nisbatda va ularni k, 2k, k√3 deb olamiz. Perimetr k(3 + √3) = 12 + 4√3 = 4(3 + √3), bundan k = 4. AB tomoni 60° qarshisida, demak AB = 4√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='104.4,36 104.4,194 195.6,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='115.4,194 115.4,183 104.4,183' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='92.3' y='108.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='104.4,60 105.1,60 105.8,60 106.5,59.9 107.2,59.8 107.9,59.7 108.6,59.6 109.2,59.5 109.9,59.4 110.6,59.2 111.3,59 111.9,58.8 112.6,58.6 113.3,58.3 113.9,58 114.5,57.8 115.2,57.4 115.8,57.1 116.4,56.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115' y='79.6' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='100.2' y='25.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='96.9' y='211' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='206.9' y='207.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='225' font-size='13' fill='%23334155' text-anchor='middle'%3EP = 12 + 4√3 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-nisbati",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#14e4225e"
+    },
+    {
+      "q": "ABC uchburchakda BC = 6 sm, AC = 8 sm va ∠A = 30°. sin B ning qiymati va shartni qanoatlantiruvchi uchburchaklar soni haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "sin B = 2/3, bitta uchburchak mavjud",
+        "sin B = 2/3, ikkita uchburchak mavjud",
+        "sin B = 3/4, ikkita uchburchak mavjud",
+        "sin B = 2/3, bunday uchburchak yo'q"
+      ],
+      "t": 1,
+      "izoh": "Sinuslar teoremasidan sin B = AC·sin A : BC = 8·(1/2) : 6 = 2/3. Bu qiymat birdan kichik va AC > BC bo'lgani uchun ∠B ham o'tkir, ham o'tmas bo'lishi mumkin, demak shartga ikkita uchburchak mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-yechim-ssa",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#79b43853"
+    },
+    {
+      "q": "ABC uchburchakda BC = 5 sm, AC = 10 sm va ∠A = 30°. Shu shartlarni qanoatlantiruvchi uchburchaklar haqida nima deyish mumkin?",
+      "v": [
+        "bitta, u to'g'ri burchakli",
+        "ikkitasi mavjud",
+        "bittasi ham mavjud emas",
+        "cheksiz ko'p uchburchak mavjud"
+      ],
+      "t": 0,
+      "izoh": "sin B = 10·(1/2) : 5 = 1, demak ∠B = 90° va boshqa qiymat bo'lishi mumkin emas. Shuning uchun shartga faqat bitta, to'g'ri burchakli uchburchak mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-yechim-ssa",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#579b1b5e"
+    },
+    {
+      "q": "ABC uchburchakda BC = 4 sm, AC = 10 sm va ∠A = 30° deb berilgan. Bunday uchburchak haqiqatan mavjudmi?",
+      "v": [
+        "mavjud va u yagona",
+        "mavjud, ikkita uchburchak bor",
+        "mavjud emas, chunki sin B = 1,25 chiqadi",
+        "mavjud, u teng yonli"
+      ],
+      "t": 2,
+      "izoh": "Sinuslar teoremasidan sin B = 10·(1/2) : 4 = 1,25. Sinusning qiymati bir birdan katta bo'la olmaydi, shuning uchun berilgan shartlar bilan uchburchak qurib bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-yechim-ssa",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#840dd7b6"
+    },
+    {
+      "q": "Teng yonli uchburchakning yon tomonlari 10 sm ga teng, uchidagi burchagi esa 120°. Uchburchakning asosini toping.",
+      "v": [
+        "10√2 sm",
+        "20 sm",
+        "10 sm",
+        "10√3 sm"
+      ],
+      "t": 3,
+      "izoh": "Asos uchun kosinuslar teoremasi: b² = 100 + 100 − 2·10·10·cos 120° = 200 + 100 = 300. Demak asos b = √300 = 10√3 sm, ya'ni taxminan 17,3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='150,82.1 36,147.9 264,147.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='167.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='222.7' y='116' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='77.3' y='116' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Cpolyline points='129.2,94.1 130.7,96.4 132.5,98.6 134.6,100.5 136.8,102.1 139.2,103.5 141.8,104.6 144.5,105.4 147.2,105.9 150,106.1 152.8,105.9 155.5,105.4 158.2,104.6 160.8,103.5 163.2,102.1 165.4,100.5 167.5,98.6 169.3,96.4 170.8,94.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='127.1' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='150' y='71.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.3' y='154.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.7' y='154.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-kosinus",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#4b68758c"
+    },
+    {
+      "q": "Teng yonli uchburchakning yon tomoni 6 sm, uchidagi burchagi esa 30°. Uchburchak asosining kvadratini toping.",
+      "v": [
+        "72 + 36√3 sm²",
+        "72 − 36√3 sm²",
+        "72 − 18√3 sm²",
+        "36 − 36√3 sm²"
+      ],
+      "t": 1,
+      "izoh": "Kosinuslar teoremasi: b² = 36 + 36 − 2·6·6·cos 30° = 72 − 72·(√3/2) = 72 − 36√3 sm². Ikkilangan ko'paytmani yarimlab yuborish tipik xato hisoblanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='150,36 107.6,194 192.4,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='214' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='181.2' y='106.5' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='118.8' y='106.5' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Cpolyline points='143.8,59.2 144.5,59.4 145.1,59.5 145.8,59.6 146.5,59.7 147.2,59.8 147.9,59.9 148.6,60 149.3,60 150,60 150.7,60 151.4,60 152.1,59.9 152.8,59.8 153.5,59.7 154.2,59.6 154.9,59.5 155.5,59.4 156.2,59.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='81' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='150' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='98.2' y='209.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='201.8' y='209.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-kosinus",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#28c8e1f1"
+    },
+    {
+      "q": "Teng yonli uchburchakning asosi 8 sm, yon tomonlari esa 5 sm ga teng. Uchburchak uchidagi burchakning kosinusini toping.",
+      "v": [
+        "−7/25",
+        "7/25",
+        "−7/50",
+        "−14/25"
+      ],
+      "t": 0,
+      "izoh": "cos x = (5² + 5² − 8²) : (2·5·5) = (25 + 25 − 64) : 50 = −14 : 50 = −7/25. Kosinus manfiy, demak uchdagi burchak o'tmas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='150,72.3 36,157.8 264,157.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='177.8' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='222.5' y='115.1' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='77.5' y='115.1' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Cpolyline points='130.8,86.7 132.4,88.5 134.2,90.3 136.1,91.8 138.2,93.1 140.4,94.2 142.7,95.1 145.1,95.7 147.5,96.1 150,96.3 152.5,96.1 154.9,95.7 157.3,95.1 159.6,94.2 161.8,93.1 163.9,91.8 165.8,90.3 167.6,88.5 169.2,86.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='117.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='61.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.4' y='165.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.6' y='165.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-kosinus",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#4fa95dbc"
+    },
+    {
+      "q": "Teng yonli uchburchakning asosi 12 sm va asosidagi burchagining kosinusi 3/5 ga teng. Uchburchakning yon tomonini toping.",
+      "v": [
+        "20 sm",
+        "7,2 sm",
+        "10 sm",
+        "15 sm"
+      ],
+      "t": 2,
+      "izoh": "Yon tomonni L deb olamiz va asos qarshisidagi emas, yon tomon qarshisidagi burchak uchun kosinuslar teoremasini yozamiz: L² = 144 + L² − 2·12·L·(3/5). Bundan 0 = 144 − 14,4·L, ya'ni L = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='150,39 36,191 264,191' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='211' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='78.4' y='112.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolyline points='56,191 56,190 55.9,188.9 55.8,187.9 55.6,186.9 55.3,185.9 55.1,184.9 54.7,183.9 54.3,183 53.9,182.1 53.4,181.1 52.9,180.3 52.3,179.4 51.7,178.6 51,177.8 50.3,177 49.6,176.3 48.8,175.6 48,175' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='69.1' y='178.5' font-size='13' fill='%23334155' text-anchor='middle'%3Ecos B = 3/5%3C/text%3E%3Ctext x='150' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22.3' y='201.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277.7' y='201.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-yonli-kosinus",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#67dd2097"
+    },
+    {
+      "q": "Uchburchakning ikki tomoni 5 sm va 8 sm bo'lib, ular orasidagi burchak 60° ga teng. Uchburchakning perimetrini toping.",
+      "v": [
+        "13 sm",
+        "26 sm",
+        "21 sm",
+        "20 sm"
+      ],
+      "t": 3,
+      "izoh": "Uchinchi tomon: x² = 25 + 64 − 2·5·8·(1/2) = 49, ya'ni x = 7 sm. Perimetr esa P = 5 + 8 + 7 = 20 sm. Faqat berilgan ikki tomonni qo'shsak 13 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='61.1,36 38.3,194 261.7,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='210' y='211.9' font-size='13' fill='%23334155' text-anchor='middle'%3Ex%3C/text%3E%3Ctext x='174.9' y='110.4' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='34.7' y='113.4' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Cpolyline points='57.6,59.8 59,59.9 60.4,60 61.8,60 63.2,59.9 64.6,59.7 66,59.5 67.3,59.2 68.7,58.8 70,58.3 71.2,57.7 72.5,57.1 73.7,56.4 74.9,55.6 76,54.8 77.1,53.9 78.1,52.9 79,51.9 79.9,50.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='76.3' y='78.1' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='53.7' y='26.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='25.6' y='206.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='275.8' y='203.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='225' font-size='13' fill='%23334155' text-anchor='middle'%3EP = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perimetr-kosinus",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#625155f1"
+    },
+    {
+      "q": "Uchburchakning perimetri 30 sm bo'lib, uning ikki tomoni 9 sm va 10 sm. Shu ikki tomon orasidagi burchakning kosinusini toping.",
+      "v": [
+        "2/3",
+        "1/3",
+        "1/6",
+        "−1/3"
+      ],
+      "t": 1,
+      "izoh": "Uchinchi tomon 30 − 9 − 10 = 11 sm va u izlanayotgan burchak qarshisida yotadi. cos x = (81 + 100 − 121) : (2·9·10) = 60 : 180 = 1/3.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='132.3,36 37.3,194 262.7,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='211.8' y='111.9' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='70.2' y='112.5' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Cpolyline points='119.9,56.6 121.4,57.4 122.9,58.1 124.4,58.7 126,59.1 127.6,59.5 129.2,59.8 130.8,60 132.5,60 134.1,59.9 135.7,59.8 137.3,59.5 138.9,59.1 140.5,58.6 142,58 143.5,57.2 144.9,56.4 146.3,55.5 147.6,54.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='135.4' y='80.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='130.6' y='25.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='23.9' y='204.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='276.4' y='204.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='225' font-size='13' fill='%23334155' text-anchor='middle'%3EP = 30 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-kosinus",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#91c06239"
+    },
+    {
+      "q": "Uchburchakning perimetri 45 sm va tomonlari 3 : 5 : 7 nisbatda berilgan. Uchburchakning eng katta burchagini toping.",
+      "v": [
+        "120°",
+        "90°",
+        "60°",
+        "150°"
+      ],
+      "t": 0,
+      "izoh": "Ulushlar soni 3 + 5 + 7 = 15, demak bir ulush 3 sm va tomonlar 9 sm, 15 sm, 21 sm. Eng katta burchak 21 sm qarshisida: cos x = (81 + 225 − 441) : (2·9·15) = −135 : 270 = −1/2, ya'ni 120°. cos qiymatini −√3/2 bilan chalkashtirsa 150° chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='112.8,84.8 36,145.2 264,145.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='158.4' y='162.8' font-size='13' fill='%23334155' text-anchor='middle'%3E7k%3C/text%3E%3Ctext x='204.1' y='115.9' font-size='13' fill='%23334155' text-anchor='middle'%3E5k%3C/text%3E%3Ctext x='58.6' y='116.5' font-size='13' fill='%23334155' text-anchor='middle'%3E3k%3C/text%3E%3Cpolyline points='93.9,99.6 95.8,101.7 97.9,103.6 100.1,105.2 102.6,106.5 105.2,107.5 107.9,108.3 110.6,108.7 113.4,108.8 116.2,108.5 118.9,108 121.6,107.1 124.1,105.9 126.5,104.5 128.7,102.7 130.7,100.8 132.4,98.6 133.9,96.2 135.1,93.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.6' y='129.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='104.9' y='76' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.3' y='152.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.8' y='151.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150' y='225' font-size='13' fill='%23334155' text-anchor='middle'%3EP = 45 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perimetr-kosinus",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#a0df30d9"
+    },
+    {
+      "q": "Koordinata tekisligida A(1; 1), B(5; 1) va C(1; 4) nuqtalar uchburchak uchlari bo'lsa, ∠B burchagining kosinusini toping.",
+      "v": [
+        "3/5",
+        "5/4",
+        "4/5",
+        "3/4"
+      ],
+      "t": 2,
+      "izoh": "Tomonlarni topamiz: AB = 4, AC = 3, BC = √(16 + 9) = 5. Kosinuslar teoremasi: cos B = (AB² + BC² − AC²) : (2·AB·BC) = (16 + 25 − 9) : 40 = 32 : 40 = 4/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-burchak",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#2f16c881"
+    },
+    {
+      "q": "Koordinata tekisligida A(0; 0), B(6; 0) va C(2; 4) nuqtalar berilgan. Shu uchburchakning ∠A burchagi kosinusini toping.",
+      "v": [
+        "2√5/5",
+        "1/5",
+        "√5/10",
+        "√5/5"
+      ],
+      "t": 3,
+      "izoh": "AB = 6, AC = √(4 + 16) = 2√5, BC = √(16 + 16) = 4√2. cos A = (36 + 20 − 32) : (2·6·2√5) = 24 : (24√5) = 1/√5 = √5/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-burchak",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#87378457"
+    },
+    {
+      "q": "A(−2; 1), B(4; 1) va C(1; 6) nuqtalar uchburchak uchlari. Uchburchakning eng katta burchagi haqidagi qaysi xulosa to'g'ri?",
+      "v": [
+        "to'g'ri burchak, kosinusi 0",
+        "o'tkir burchak, kosinusi 8/17",
+        "o'tmas burchak, kosinusi −8/17",
+        "o'tmas burchak, kosinusi −1/2"
+      ],
+      "t": 1,
+      "izoh": "AB = 6, AC = √(9 + 25) = √34, BC = √(9 + 25) = √34. Eng katta tomon AB = 6, chunki √34 ≈ 5,83. Unga qarshi burchak: cos C = (34 + 34 − 36) : (2·34) = 32 : 68 = 8/17 > 0, demak burchak o'tkir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-burchak",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#695980f0"
+    },
+    {
+      "q": "Trapetsiyaning asoslari 10 sm va 4 sm, yon tomoni 5 sm bo'lib, u katta asos bilan 60° li burchak hosil qiladi. Shu yon tomonning yuqori uchidan chiqadigan diagonalni toping.",
+      "v": [
+        "5√3 sm",
+        "5√7 sm",
+        "√125 sm",
+        "15 sm"
+      ],
+      "t": 0,
+      "izoh": "Katta asos, yon tomon va diagonal uchburchak hosil qiladi: d² = 10² + 5² − 2·10·5·cos 60° = 125 − 50 = 75. Demak diagonal d = √75 = 5√3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='210' viewBox='0 0 300 210'%3E%3Crect width='300' height='210' fill='%23ffffff'/%3E%3Cpolygon points='34,155.2 266,155.2 184.8,54.8 92,54.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='266' y1='155.2' x2='92' y2='54.8' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='151.8' y='175.1' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='136.6' y='42.9' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='47' y='109' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='184' y='99' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cpolyline points='58,155.2 58,153.8 57.8,152.4 57.6,151.1 57.4,149.7 57,148.3 56.6,147 56,145.7 55.4,144.5 54.8,143.2 54.1,142 53.3,140.9 52.4,139.8 51.5,138.8 50.5,137.8 49.4,136.8 48.3,136 47.2,135.2 46,134.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='69.5' y='138.7' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Ctext x='20.4' y='165.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='279.9' y='164.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='194.2' y='47.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='81.2' y='48.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trapetsiya-kosinus",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#97f46215"
+    },
+    {
+      "q": "Trapetsiyaning katta asosi 10 sm, yon tomoni 6 sm va ular orasidagi burchak 120°. Shu yon tomonning yuqori uchini katta asosning qarama-qarshi uchi bilan tutashtiruvchi diagonal uzunligini toping.",
+      "v": [
+        "16 sm",
+        "2√19 sm",
+        "14 sm",
+        "√136 sm"
+      ],
+      "t": 2,
+      "izoh": "Diagonal, katta asos va yon tomon uchburchak hosil qiladi: d² = 100 + 36 − 2·10·6·cos 120° = 136 + 60 = 196. Demak d = 14 sm. Uchinchi hadni ayirsak 2√19 xato javob chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='210' viewBox='0 0 300 210'%3E%3Crect width='300' height='210' fill='%23ffffff'/%3E%3Cpolygon points='87.5,151.4 266,151.4 123.2,58.6 34,58.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='266' y1='151.4' x2='34' y2='58.6' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='188.4' y='166.4' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='44.8' y='109' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='155' y='99' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cpolyline points='111.5,151.4 111.4,148.6 110.9,145.8 110.1,143.2 109,140.6 107.6,138.2 105.9,135.9 104,133.9 101.9,132.1 99.5,130.6 97,129.3 94.4,128.4 91.7,127.7 88.9,127.4 86.1,127.4 83.4,127.7 80.7,128.4 78,129.3 75.5,130.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='108' y='119.9' font-size='13' fill='%23334155' text-anchor='middle'%3E120°%3C/text%3E%3Ctext x='77.7' y='166.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='280.2' y='160.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='121.8' y='47.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='20.6' y='56' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trapetsiya-kosinus",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#54f9ddb8"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning asoslari 6 sm va 14 sm, yon tomoni esa 5 sm ga teng. Trapetsiyaning diagonalini toping.",
+      "v": [
+        "√333 sm",
+        "√221 sm",
+        "√61 sm",
+        "√109 sm"
+      ],
+      "t": 3,
+      "izoh": "Kichik asos uchidan katta asosga perpendikulyar tushiramiz: chetdagi kesma (14 − 6) : 2 = 4 sm, balandlik 3 sm, demak o'tkir burchak uchun cos A = 4 : 5 = 4/5. Endi ABC uchburchakda kosinuslar teoremasini qo'llaymiz: AC² = 14² + 5² − 2·14·5·(4/5) = 196 + 25 − 112 = 109. Demak diagonal AC = √109 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='210' viewBox='0 0 300 210'%3E%3Crect width='300' height='210' fill='%23ffffff'/%3E%3Cpolygon points='34,129.9 266,129.9 199.7,80.1 100.3,80.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='149.9' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='150' y='68.1' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='51.1' y='109' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Cline x1='34' y1='129.9' x2='199.7' y2='80.1' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='120' y='118' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='19.3' y='137' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='280.7' y='137' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='213.1' y='77.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='86.9' y='77.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trapetsiya-kosinus",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#b640aee8"
+    },
+    {
+      "q": "Radiusi 8 sm bo'lgan aylanada 90° li markaziy burchakka tayangan vatar chizilgan. Shu vatarning uzunligini toping.",
+      "v": [
+        "8 sm",
+        "8√2 sm",
+        "16 sm",
+        "8√3 sm"
+      ],
+      "t": 1,
+      "izoh": "Vatar va ikki radius uchburchak hosil qiladi: AB² = 64 + 64 − 2·8·8·cos 90° = 128 − 0 = 128. Demak vatar AB = √128 = 8√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='140' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='140' x2='84.9' y2='74.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='140' x2='215.1' y2='74.9' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='84.9' y1='74.9' x2='215.1' y2='74.9' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='140' r='2.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='131.6,121.6 133.3,120.1 135.1,118.7 137,117.5 139,116.4 141.1,115.6 143.3,114.9 145.5,114.4 147.7,114.1 150,114 152.3,114.1 154.5,114.4 156.7,114.9 158.9,115.6 161,116.4 163,117.5 164.9,118.7 166.7,120.1 168.4,121.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='101' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Ctext x='141' y='156' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='75.9' y='69.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='224.1' y='69.9' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='190.5' y='122.5' font-size='13' fill='%23334155' text-anchor='start'%3ER = 8 sm%3C/text%3E%3Ctext x='150' y='64.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-vatar-markaziy",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#eebc296a"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan aylanada uzunligi 6√3 sm bo'lgan vatar chizilgan. Shu vatarga tayangan markaziy burchakni toping.",
+      "v": [
+        "120°",
+        "60°",
+        "90°",
+        "240°"
+      ],
+      "t": 0,
+      "izoh": "cos x = (36 + 36 − 108) : (2·6·6) = −36 : 72 = −1/2. Kosinusi −1/2 ga teng burchak 120° ga teng. Ishorani e'tiborsiz qoldirsak 60° xato javob chiqadi. Katta yoyga tayangan markaziy burchak olinsa 360° − 120° = 240° chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='140' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='140' x2='70.3' y2='94' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='140' x2='229.7' y2='94' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='70.3' y1='94' x2='229.7' y2='94' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='140' r='2.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='127.5,127 129.1,124.5 131.1,122.2 133.3,120.1 135.7,118.3 138.3,116.8 141.1,115.6 144,114.7 147,114.2 150,114 153,114.2 156,114.7 158.9,115.6 161.7,116.8 164.3,118.3 166.7,120.1 168.9,122.2 170.9,124.5 172.5,127' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='101' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='141' y='156' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='61.3' y='89' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='238.7' y='89' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='197.8' y='132' font-size='13' fill='%23334155' text-anchor='start'%3ER = 6 sm%3C/text%3E%3Ctext x='150' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3E6√3 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-vatar-markaziy",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#f97f9e9f"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan aylanada uzunligi 12 sm bo'lgan vatar chizilgan. Vatarga tayangan markaziy burchakning kosinusini toping.",
+      "v": [
+        "−7/25",
+        "3/5",
+        "7/25",
+        "7/50"
+      ],
+      "t": 2,
+      "izoh": "cos x = (100 + 100 − 144) : (2·10·10) = 56 : 200 = 7/25. Kosinus musbat, demak markaziy burchak o'tkir bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='140' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='140' x2='94.8' y2='66.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='140' x2='205.2' y2='66.4' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='94.8' y1='66.4' x2='205.2' y2='66.4' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='140' r='2.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='134.4,119.2 135.9,118.1 137.5,117.2 139.2,116.4 140.9,115.6 142.7,115.1 144.5,114.6 146.3,114.3 148.1,114.1 150,114 151.9,114.1 153.7,114.3 155.5,114.6 157.3,115.1 159.1,115.6 160.8,116.4 162.5,117.2 164.1,118.1 165.6,119.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='101' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='141' y='156' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='85.8' y='61.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='214.2' y='61.4' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='185.6' y='118.2' font-size='13' fill='%23334155' text-anchor='start'%3ER = 10 sm%3C/text%3E%3Ctext x='150' y='56.4' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-vatar-markaziy",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#21bf0b0f"
+    },
+    {
+      "q": "ABC uchburchakning tomonlari 3 sm, 5 sm va 7 sm ga teng. Shu uchburchakka tashqi chizilgan aylananing radiusini toping.",
+      "v": [
+        "7√3/6 sm",
+        "7√3 sm",
+        "14√3/3 sm",
+        "7√3/3 sm"
+      ],
+      "t": 3,
+      "izoh": "Eng katta burchak 7 sm qarshisida: cos x = (9 + 25 − 49) : 30 = −1/2, demak x = 120° va sin x = √3/2. Endi 2R = 7 : (√3/2) = 14/√3, bundan R = 7/√3 = 7√3/3 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='270' viewBox='0 0 300 270'%3E%3Crect width='300' height='270' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='135' r='99' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='135' r='2.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162' y='149' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cline x1='150' y1='135' x2='122' y2='40' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='130' y='81.5' font-size='13' fill='%23334155' text-anchor='end'%3ER%3C/text%3E%3Cpolygon points='122,40 64.3,85.5 235.7,85.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='158.4' y='103.1' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='194.6' y='63.7' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='77.3' y='64.3' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3Ctext x='114.1' y='31.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='49.6' y='92.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='250.5' y='91.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-tahlil",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#bba57afc"
+    },
+    {
+      "q": "ABC uchburchakda ∠A = 60°, unga yopishgan ikki tomon yig'indisi b + c = 10 sm va qarshi tomon a = 7 sm. bc ko'paytmaning qiymatini toping.",
+      "v": [
+        "51 sm²",
+        "17 sm²",
+        "25 sm²",
+        "34 sm²"
+      ],
+      "t": 1,
+      "izoh": "cos 60° = 1/2 bo'lgani uchun a² = b² + c² − bc. Bunga b² + c² = (b + c)² − 2bc ni qo'yamiz: 49 = 100 − 2bc − bc = 100 − 3bc. Bundan 3bc = 51, ya'ni bc = 17 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-tahlil",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#67f288cf"
+    },
+    {
+      "q": "Uchburchakning tomonlari uchun a² = b² + c² + bc munosabat o'rinli bo'lsa, ∠A burchak necha gradusga teng?",
+      "v": [
+        "120°",
+        "60°",
+        "135°",
+        "150°"
+      ],
+      "t": 0,
+      "izoh": "Kosinuslar teoremasi a² = b² + c² − 2bc·cos A ni berilgan tenglik bilan solishtiramiz: −2·cos A = 1, ya'ni cos A = −1/2. Bunga 120° li burchak mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-tahlil",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#9c9ff67a"
+    },
+    {
+      "q": "ABC uchburchakda ∠B = 60° va tomonlari uchun b² = ac tenglik bajariladi. Bu uchburchak qanday uchburchak bo'lishini aniqlang.",
+      "v": [
+        "teng yonli, lekin teng tomonli emas",
+        "to'g'ri burchakli uchburchak",
+        "teng tomonli uchburchak",
+        "o'tmas burchakli uchburchak"
+      ],
+      "t": 2,
+      "izoh": "Kosinuslar teoremasidan b² = a² + c² − 2ac·cos 60° = a² + c² − ac. Shartga ko'ra b² = ac, demak ac = a² + c² − ac, ya'ni a² − 2ac + c² = 0 va (a − c)² = 0. Bundan a = c, ∠B = 60° bilan birga bu uchburchakni teng tomonli qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-tahlil",
+      "id": "matematika_plan_m08-sinuslar-va-kosinuslar-teoremasi#b8c22639"
+    }
+  ]
+}

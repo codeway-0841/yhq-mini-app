@@ -1,0 +1,576 @@
+{
+  "nom": "27-mavzu. Xlorid kislota",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Xlorid kislota nima?",
+      "v": [
+        "Vodorod xloridning suvdagi eritmasi",
+        "Xlornin suvda eritmasi",
+        "Vodorod va xlornin aralashmasi",
+        "Xlorat kislotaning suyultirilgan eritmasi"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi ta'rif.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#fb8425a0"
+    },
+    {
+      "q": "Sanoatda xlorid kislota qanday olinadi?",
+      "v": [
+        "Vodorod gazi xlorda yondirilib, hosil bo'lgan vodorod xlorid suvda eritiladi",
+        "Osh tuzi suvda eritiladi",
+        "Xlor suvga o'tkaziladi",
+        "Kumush xlorid qizdiriladi"
+      ],
+      "t": 0,
+      "izoh": "Sanoat usuli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#0593b6c2"
+    },
+    {
+      "q": "Konsentrlangan xlorid kislotaning zichligi taxminan nechaga teng?",
+      "v": [
+        "1,19 g/cm3",
+        "2,16 g/cm3",
+        "1,43 g/cm3",
+        "0,98 g/cm3"
+      ],
+      "t": 0,
+      "izoh": "37% li kislota zichligi 1,19 g/cm3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#24914750"
+    },
+    {
+      "q": "\"Tutovchi\" kislota deb qanday kislotaga aytiladi?",
+      "v": [
+        "37% li konsentrlangan xlorid kislotaga",
+        "Suyultirilgan xlorid kislotaga",
+        "Sulfat kislotaga",
+        "Nitrat kislotaga"
+      ],
+      "t": 0,
+      "izoh": "Nam havoda tutaydigan 37% li HCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#b16a8a08"
+    },
+    {
+      "q": "Konsentrlangan xlorid kislota nima uchun nam havoda tutaydi?",
+      "v": [
+        "Vodorod xlorid ajralib chiqayotganligi uchun",
+        "Suv bug'lanayotganligi uchun",
+        "Xlor ajralib chiqayotganligi uchun",
+        "Kislorod yutilayotganligi uchun"
+      ],
+      "t": 0,
+      "izoh": "HCl gazining ajralib chiqishi tufayli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#e8d7bd90"
+    },
+    {
+      "q": "Xlorid kislota binafsha rangli lakmusni qanday tusga kiritadi?",
+      "v": [
+        "Qizil tusga",
+        "Ko'k tusga",
+        "Yashil tusga",
+        "Rangsiz qiladi"
+      ],
+      "t": 0,
+      "izoh": "Kislotalar lakmusni qizartiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#d53d1931"
+    },
+    {
+      "q": "Xlorid kislota ishqoriy muhitdagi pushti rangli fenolftaleinga qanday ta'sir qiladi?",
+      "v": [
+        "Rangini rangsizlantiradi",
+        "Rangini qizil qiladi",
+        "Rangini ko'k qiladi",
+        "Rangini sariq qiladi"
+      ],
+      "t": 0,
+      "izoh": "Kislota fenolftaleinni rangsizlantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#875046b9"
+    },
+    {
+      "q": "Xlorid kislota metil zarg'aldoqning to'q-sariq rangini qanday rangga kiritadi?",
+      "v": [
+        "Qizil rangga",
+        "Ko'k rangga",
+        "Yashil rangga",
+        "Binafsha rangga"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi ma'lumot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#5c3ffbc5"
+    },
+    {
+      "q": "Xlorid kislota qaysi metallar bilan reaksiyaga kirishib vodorod hosil qiladi?",
+      "v": [
+        "Faollik qatorida vodoroddan oldin turgan metallar bilan",
+        "Faollik qatorida vodoroddan keyin turgan metallar bilan",
+        "Barcha metallar bilan",
+        "Faqat ishqoriy metallar bilan"
+      ],
+      "t": 0,
+      "izoh": "Zn + 2HCl = ZnCl2 + H2 misolida ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#6a8903fa"
+    },
+    {
+      "q": "Ruxning xlorid kislota bilan reaksiyasi qanday?",
+      "v": [
+        "Zn + 2HCl = ZnCl2 + H2",
+        "Zn + HCl = ZnCl + H2",
+        "Zn + 2HCl = ZnCl2 + 2H",
+        "2Zn + 2HCl = 2ZnCl + H2"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi tenglama.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#94a0ffb2"
+    },
+    {
+      "q": "Temirning xlorid kislota bilan reaksiyasida qanday tuz hosil bo'ladi?",
+      "v": [
+        "FeCl2",
+        "FeCl3",
+        "Fe2Cl3",
+        "FeCl"
+      ],
+      "t": 0,
+      "izoh": "Fe + 2HCl = FeCl2 + H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#0cb62a06"
+    },
+    {
+      "q": "Xlorid kislota asosli va amfoter oksidlar bilan reaksiyaga kirishib nima hosil qiladi?",
+      "v": [
+        "Tuz va suv",
+        "Tuz va vodorod",
+        "Yangi kislota va yangi tuz",
+        "Faqat suv"
+      ],
+      "t": 0,
+      "izoh": "CaO + 2HCl = CaCl2 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#4fafc494"
+    },
+    {
+      "q": "Cu(OH)2 ning xlorid kislota bilan reaksiyasi qanday?",
+      "v": [
+        "Cu(OH)2 + 2HCl = CuCl2 + 2H2O",
+        "Cu(OH)2 + HCl = CuCl + 2H2O",
+        "Cu(OH)2 + 2HCl = CuCl2 + H2",
+        "Cu(OH)2 + HCl = CuCl2 + H2O"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi tenglama.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#d51e236c"
+    },
+    {
+      "q": "Xlorid kislota o'zidan kuchsiz kislota tuzlari bilan reaksiyaga kirishib nima hosil qiladi?",
+      "v": [
+        "Yangi kislota va yangi tuz",
+        "Tuz va vodorod",
+        "Faqat suv",
+        "Ikki yangi kislota"
+      ],
+      "t": 0,
+      "izoh": "CaCO3 + 2HCl = CaCl2 + H2CO3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#9d70ec09"
+    },
+    {
+      "q": "CaCO3 xlorid kislota bilan reaksiyada hosil bo'lgan H2CO3 nimaga parchalanadi?",
+      "v": [
+        "CO2 va H2O ga",
+        "CO va H2 ga",
+        "CaO va H2O ga",
+        "CH4 va O2 ga"
+      ],
+      "t": 0,
+      "izoh": "H2CO3 → CO2 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#6b3d1d79"
+    },
+    {
+      "q": "Xlorid ionini (Cl-) aniqlash uchun qaysi reaktiv ishlatiladi?",
+      "v": [
+        "AgNO3 eritmasi",
+        "H2SO4 eritmasi",
+        "NaOH eritmasi",
+        "Fenolftalein"
+      ],
+      "t": 0,
+      "izoh": "AgNO3 xlorid ioni uchun reaktivdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#79b8b289"
+    },
+    {
+      "q": "AgNO3 va HCl reaksiyasida hosil bo'lgan AgCl cho'kmasi qanday xossaga ega?",
+      "v": [
+        "Oq cho'kma bo'lib, suvda ham, kislotada ham erimaydi",
+        "Sariq cho'kma bo'lib, suvda eriydi",
+        "Qora cho'kma bo'lib, kislotada eriydi",
+        "Ko'k cho'kma bo'lib, suvda erimaydi"
+      ],
+      "t": 0,
+      "izoh": "AgNO3 + HCl = AgCl↓ + HNO3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#51d781cf"
+    },
+    {
+      "q": "Xlorid kislota oksidlovchilar (masalan, KMnO4) bilan reaksiyaga kirishganda nima hosil bo'ladi?",
+      "v": [
+        "Erkin xlor moddasi",
+        "Vodorod",
+        "Kislorod",
+        "Vodorod xlorid"
+      ],
+      "t": 0,
+      "izoh": "Xlor ioni oksidlanib, Cl2 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#dbfe0b25"
+    },
+    {
+      "q": "Osh tuzining kimyoviy formulasi qanday?",
+      "v": [
+        "NaCl",
+        "KCl",
+        "CaCl2",
+        "NaClO"
+      ],
+      "t": 0,
+      "izoh": "Natriy xlorid — NaCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#6c1bad9e"
+    },
+    {
+      "q": "Osh tuzining qaynash harorati nechaga teng?",
+      "v": [
+        "1413 °C",
+        "800,4 °C",
+        "100 °C",
+        "1410 °F"
+      ],
+      "t": 0,
+      "izoh": "Darslikda 1413 °C deb keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#355203d3"
+    },
+    {
+      "q": "Osh tuzining suyuqlanish harorati nechaga teng?",
+      "v": [
+        "800,4 °C",
+        "1413 °C",
+        "35,6 °C",
+        "801,4 °F"
+      ],
+      "t": 0,
+      "izoh": "Darslikda 800,4 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#24349ac3"
+    },
+    {
+      "q": "Osh tuzining zichligi nechaga teng?",
+      "v": [
+        "2,16 g/cm3",
+        "1,19 g/cm3",
+        "1,43 g/cm3",
+        "3,16 g/cm3"
+      ],
+      "t": 0,
+      "izoh": "Darslikda 2,16 g/cm3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#1996cc23"
+    },
+    {
+      "q": "Osh tuzining 0 °C dagi eruvchanligi qancha?",
+      "v": [
+        "35,6 g",
+        "36,5 g",
+        "26,5 g",
+        "53,6 g"
+      ],
+      "t": 0,
+      "izoh": "Darslikda 0 °C da 35,6 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#aee04159"
+    },
+    {
+      "q": "Inson 1 kunda taxminan qancha osh tuzi iste'mol qiladi?",
+      "v": [
+        "4–6 g",
+        "10–12 g",
+        "1–2 g",
+        "20–25 g"
+      ],
+      "t": 0,
+      "izoh": "Darslikda 4–6 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#42851ed8"
+    },
+    {
+      "q": "O'zbekistonda tosh tuzi qaysi konlardan qazib olinadi?",
+      "v": [
+        "Xo'jaikon, Tubokat, Borsakelmas, Boybichakon, Oqqal'a",
+        "Navoiy, Zarafshon, Uchquduq",
+        "Almaliq, Angren, Qumqo'rg'on",
+        "Gazli, Shurtan, Qorovultepa"
+      ],
+      "t": 0,
+      "izoh": "Darslikda sanab o'tilgan konlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#999e60a1"
+    },
+    {
+      "q": "Butun dunyo aholisi 1 yilda taxminan qancha osh tuzi iste'mol qiladi?",
+      "v": [
+        "14 mln tonna",
+        "64 ming tonna",
+        "2 mln tonna",
+        "140 mln tonna"
+      ],
+      "t": 0,
+      "izoh": "Darslikda 14 mln tonna.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#a000560b"
+    },
+    {
+      "q": "Karnallit mineralining formulasi qanday?",
+      "v": [
+        "KCl·MgCl2·6H2O",
+        "KCl·NaCl",
+        "KCl·MgSO4·3H2O",
+        "KCl·CaCl2·2H2O"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi formula.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#cc7fe8e8"
+    },
+    {
+      "q": "Silvinit minerali nimadan iborat?",
+      "v": [
+        "KCl·NaCl",
+        "KCl·MgCl2·6H2O",
+        "KCl·MgSO4·3H2O",
+        "Faqat KCl"
+      ],
+      "t": 0,
+      "izoh": "Silvinit — KCl·NaCl; silvin esa faqat KCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#9ab56061"
+    },
+    {
+      "q": "Kaliy xlorid qishloq xo'jaligida nima sifatida ishlatiladi?",
+      "v": [
+        "Kaliyli o'g'it sifatida",
+        "Azotli o'g'it sifatida",
+        "Fosforli o'g'it sifatida",
+        "Gerbitsid sifatida"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi ma'lumot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#287cfbc8"
+    },
+    {
+      "q": "Qaysi xloridlar suvda erimaydi?",
+      "v": [
+        "AgCl, PbCl2, CuCl, HgCl2",
+        "NaCl, KCl, CaCl2, MgCl2",
+        "NaCl, KCl, AgCl, PbCl2",
+        "ZnCl2, FeCl2, CuCl2, AlCl3"
+      ],
+      "t": 0,
+      "izoh": "Qolgan xloridlar deyarli barchasi yaxshi eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#b0a453fa"
+    },
+    {
+      "q": "Xlor o'zining kislorodli birikmalarida qanday oksidlanish darajalarini namoyon qiladi?",
+      "v": [
+        "+1, +3, +5 va +7",
+        "-1, +1, +3 va +5",
+        "+2, +4, +6 va +8",
+        "Faqat +1 va +7"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi ma'lumot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#09248aa6"
+    },
+    {
+      "q": "Gipoxlorit kislota (HClO) qanday modda?",
+      "v": [
+        "Beqaror bo'lib, suyultirilgan eritmalardagina mavjud, kuchli oksidlovchi",
+        "Barqaror kuchli kislota",
+        "Beqaror, lekin kuchsiz oksidlovchi",
+        "Qattiq kristall modda"
+      ],
+      "t": 0,
+      "izoh": "HClO = HCl + O parchalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#fc877ca2"
+    },
+    {
+      "q": "Xlorli ohak (oqartiruvchi ohak) qanday olinadi?",
+      "v": [
+        "So'ndirilgan ohakka xlor ta'sir ettirilib",
+        "Osh tuziga xlor ta'sir ettirilib",
+        "Ohak qizdirilib",
+        "Kaliyni xlorlash orqali"
+      ],
+      "t": 0,
+      "izoh": "2Ca(OH)2 + 2Cl2 = Ca(OCl)2 + CaCl2 + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#f24cc190"
+    },
+    {
+      "q": "Xlorli ohak (CaOCl2) qanday tuz hisoblanadi?",
+      "v": [
+        "Aralash tuz — xlorid va gipoxlorit kislotalarning kalsiyli tuzi",
+        "Oddiy tuz",
+        "Kislota tuzi",
+        "Asosli tuz"
+      ],
+      "t": 0,
+      "izoh": "[CaCl2·Ca(ClO)2] ko'rinishida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#69aa1d16"
+    },
+    {
+      "q": "Kaliy xlorat (Bertole tuzi) qanday olinadi?",
+      "v": [
+        "Qaynoq kaliy gidroksidga xlor ta'sir ettirilib",
+        "Kaliy xloridni qizdirib",
+        "KClO ni suvda eritib",
+        "Kaliy xloridga kislorod o'tkazib"
+      ],
+      "t": 0,
+      "izoh": "6KOH + 3Cl2 = KClO3 + 5KCl + 3H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#1e4dfbf5"
+    },
+    {
+      "q": "Bertole tuzi (KClO3) qayerlarda ishlatiladi?",
+      "v": [
+        "Gugurt ishlab chiqarishda, portlovchi moddalar tayyorlashda va laboratoriyada kislorod olishda",
+        "Oziq-ovqat saqlashda",
+        "O'g'it sifatida",
+        "Dori tayyorlashda"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi ma'lumot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#689439e9"
+    },
+    {
+      "q": "Xlorning kislorodli kislotalari ichida eng kuchlisi qaysi?",
+      "v": [
+        "HClO4 (perxlorat kislota)",
+        "HClO (gipoxlorit kislota)",
+        "HClO2 (xlorit kislota)",
+        "HClO3 (xlorat kislota)"
+      ],
+      "t": 0,
+      "izoh": "HClO → HClO4 sari kislotalik kuchi ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#90df217a"
+    },
+    {
+      "q": "HClO, HClO2, HClO3, HClO4 tartibida qanday xossa o'zgaradi?",
+      "v": [
+        "Kislotalik kuchi va barqarorligi ortadi, oksidlovchi xossasi kamayadi",
+        "Kislotalik kuchi kamayadi, oksidlovchilik ortadi",
+        "Ham kislotalik, ham oksidlovchilik ortadi",
+        "Ham kislotalik, ham barqarorlik kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi xulosa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m27-xlorid-kislota#a2f109d1"
+    }
+  ]
+}

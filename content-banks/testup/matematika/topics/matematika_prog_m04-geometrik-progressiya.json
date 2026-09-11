@@ -1,0 +1,1609 @@
+{
+  "nom": "Geometrik progressiya",
+  "bolim": "Ketma-ketliklar va progressiyalar",
+  "blok": "prog",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Geometrik progressiyaning birinchi hadi 3 ga, maxraji esa 2 ga teng bo'lsa, uning yettinchi hadini toping.",
+      "v": [
+        "96",
+        "384",
+        "192",
+        "15"
+      ],
+      "t": 2,
+      "izoh": "Geometrik progressiyaning n-hadi bₙ = b₁·q^(n−1) formulasi bilan topiladi. Bu yerda b₁ = 3, q = 2 va n = 7, demak daraja ko'rsatkichi 6 bo'ladi. b₇ = 3·2⁶ = 3·64 = 192. Agar daraja 5 olinsa 96, 7 olinsa 384 chiqadi, arifmetik progressiya deb hisoblansa 15 chiqadi. Javob: 192.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nhad-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#eca7f69b"
+    },
+    {
+      "q": "Geometrik progressiyaning birinchi hadi 5 ga, maxraji esa −3 ga teng. Shu progressiyaning beshinchi hadini hisoblang.",
+      "v": [
+        "405",
+        "−1215",
+        "−405",
+        "135"
+      ],
+      "t": 0,
+      "izoh": "b₅ = b₁·q⁴ formulasidan foydalanamiz, chunki n = 5 da daraja ko'rsatkichi 4 ga teng. Manfiy sonning juft darajasi musbat: (−3)⁴ = 81. Demak b₅ = 5·81 = 405. Darajani 5 deb olsak −1215, ishorani noto'g'ri qo'ysak −405, darajani 3 deb olib ishorani ham e'tiborsiz qoldirsak 135 chiqadi. Javob: 405.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nhad-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#f2937713"
+    },
+    {
+      "q": "Kamayuvchi geometrik progressiyada b₁ = 128 va q = 1/2 bo'lsa, uning oltinchi hadi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "8",
+        "4",
+        "2",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "b₆ = b₁·q⁵ formulasini qo'llaymiz, chunki oltinchi had uchun daraja ko'rsatkichi 5 ga teng. (1/2)⁵ = 1/32, demak b₆ = 128:32 = 4. Beshinchi had 8, yettinchi had 2, ikkinchi had esa 64 ga teng — ular tez-tez chalkashtiriladi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nhad-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#9d723bfd"
+    },
+    {
+      "q": "Birinchi hadi 7, maxraji 3 bo'lgan geometrik progressiyaning beshinchi hadini hisoblab, to'g'ri javobni belgilang.",
+      "v": [
+        "189",
+        "1701",
+        "19",
+        "567"
+      ],
+      "t": 3,
+      "izoh": "Formula bo'yicha b₅ = b₁·q⁴ = 7·3⁴ bo'ladi. Avval 3⁴ = 81 ni topamiz, so'ngra 7·81 = 567 ni hisoblaymiz. Darajani 3 deb olsak 189, 5 deb olsak 1701 chiqadi; 19 esa progressiyani arifmetik deb hisoblab 7 + 4·3 qilishdan kelib chiqadi. Javob: 567.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nhad-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#e43f2c9d"
+    },
+    {
+      "q": "Quyidagi geometrik progressiyaning maxrajini aniqlang: 4; 12; 36; 108; … . To'g'ri javobni ko'rsatgan variantni belgilang.",
+      "v": [
+        "8",
+        "1/3",
+        "3",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Geometrik progressiyada maxraj har qanday hadni undan oldingi hadga bo'lish orqali topiladi. Bu yerda 12:4 = 3, tekshiramiz: 36:12 = 3 va 108:36 = 3. Demak q = 3. Ayirmani olsak 8 chiqadi, bu arifmetik progressiya xatosi; 1/3 nisbatni teskari olishdan, 4 esa birinchi hadni maxraj deb olishdan chiqadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxraj-topish-ketma-ket",
+      "id": "matematika_prog_m04-geometrik-progressiya#192bfad1"
+    },
+    {
+      "q": "162; 54; 18; 6; … ketma-ketligi geometrik progressiya bo'lsa, uning maxraji nechaga teng bo'ladi?",
+      "v": [
+        "1/3",
+        "3",
+        "−108",
+        "1/9"
+      ],
+      "t": 0,
+      "izoh": "Maxrajni topish uchun keyingi hadni oldingisiga bo'lamiz: 54:162 = 1/3. Tekshiruv: 18:54 = 1/3 va 6:18 = 1/3, demak qoida buzilmaydi. Nisbatni teskari olsak 3, ayirmani olsak −108, bir had oshirib bo'lsak 1/9 chiqadi. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxraj-topish-ketma-ket",
+      "id": "matematika_prog_m04-geometrik-progressiya#4fce4fac"
+    },
+    {
+      "q": "−5; 15; −45; 135; … ketma-ketligining maxrajini toping va uni to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "20",
+        "−3",
+        "3",
+        "−1/3"
+      ],
+      "t": 1,
+      "izoh": "Maxraj q = b₂:b₁ = 15:(−5) = −3 bo'ladi. Tekshiramiz: (−45):15 = −3 va 135:(−45) = −3, demak barcha nisbatlar bir xil. Ishorani tushirib qoldirsak 3, ayirmani olsak 20, nisbatni ag'darsak −1/3 chiqadi. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxraj-topish-ketma-ket",
+      "id": "matematika_prog_m04-geometrik-progressiya#65448056"
+    },
+    {
+      "q": "Anvarning do'koni yanvarda 6 mln so'm, fevralda 9 mln so'm, martda esa 13,5 mln so'm daromad qildi. Daromad geometrik progressiya bo'yicha o'sgan bo'lsa, uning maxrajini toping.",
+      "v": [
+        "3",
+        "4,5",
+        "0,5",
+        "1,5"
+      ],
+      "t": 3,
+      "izoh": "Maxrajni topish uchun keyingi oyning daromadini oldingisiga bo'lamiz: 9:6 = 1,5. Tekshiramiz: 13,5:9 = 1,5, demak o'sish qoidasi saqlanadi. Oylik ayirmalarni olsak 3 va 4,5 chiqadi, bu arifmetik progressiya xatosi; 0,5 esa 50 foizlik o'sishni maxraj deb olishdan kelib chiqadi. Javob: 1,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxraj-topish-ketma-ket",
+      "id": "matematika_prog_m04-geometrik-progressiya#f716d386"
+    },
+    {
+      "q": "Geometrik progressiyaning to'rtinchi hadi 135 ga, maxraji esa 3 ga teng bo'lsa, uning birinchi hadi nechaga teng?",
+      "v": [
+        "45",
+        "15",
+        "5",
+        "405"
+      ],
+      "t": 2,
+      "izoh": "b₄ = b₁·q³ formulasidan b₁ = b₄:q³ kelib chiqadi. Bu yerda q³ = 3³ = 27, demak b₁ = 135:27 = 5. Bir marta bo'lsak 45, ikki marta bo'lsak 15, bo'lish o'rniga ko'paytirsak 405 chiqadi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birinchi-had-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#448a9f62"
+    },
+    {
+      "q": "Geometrik progressiyaning beshinchi hadi 48 ga, maxraji 2 ga teng ekani ma'lum. Shu progressiyaning birinchi hadini toping.",
+      "v": [
+        "24",
+        "6",
+        "96",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "b₅ = b₁·q⁴ tenglikdan b₁ = b₅:q⁴ hosil bo'ladi. Bu yerda q⁴ = 2⁴ = 16, demak b₁ = 48:16 = 3. Bitta bo'lish bilan to'xtasak 24, uchta bo'lish bilan to'xtasak 6, bo'lish o'rniga ko'paytirsak 96 chiqadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birinchi-had-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#09bcc148"
+    },
+    {
+      "q": "Zilolaning omonati har yili 1,5 barobar ortib boradi va uch yildan keyin u 1 458 000 so'mga yetdi. Zilola dastlab qancha pul qo'ygan edi?",
+      "v": [
+        "972 000 so'm",
+        "432 000 so'm",
+        "648 000 so'm",
+        "2 187 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Uch yil davomida omonat 1,5 ga uch marta ko'payadi, ya'ni b₁·1,5³ = 1 458 000. Avval 1,5³ = 3,375 topiladi, so'ngra 1 458 000:3,375 = 432 000 chiqadi. Bir yil orqaga qaytsak 972 000, ikki yil orqaga qaytsak 648 000 bo'ladi; oldinga ko'paytirsak 2 187 000 chiqadi. Javob: 432 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birinchi-had-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#26588867"
+    },
+    {
+      "q": "Maxraji 3 ga teng bo'lgan geometrik progressiyaning oltinchi hadi 2 187 ga teng. Shu progressiyaning birinchi hadini aniqlang.",
+      "v": [
+        "9",
+        "27",
+        "729",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "b₆ = b₁·q⁵ bo'lgani uchun b₁ = 2 187:3⁵ ni hisoblaymiz. Bu yerda 3⁵ = 243, demak b₁ = 2 187:243 = 9. Ikkinchi had 27, bitta bo'lish natijasi 729, daraja ko'rsatkichini adashtirsak 3 chiqadi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birinchi-had-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#94c32aca"
+    },
+    {
+      "q": "Birinchi hadi 2, maxraji 3 bo'lgan geometrik progressiyada 486 soni nechanchi had bo'lib keladi?",
+      "v": [
+        "5",
+        "7",
+        "6",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "bₙ = b₁·q^(n−1) tenglamaga qo'yamiz: 2·3^(n−1) = 486, bundan 3^(n−1) = 243. 243 = 3⁵ bo'lgani uchun n − 1 = 5 va n = 6. Daraja ko'rsatkichining o'zini javob deb olsak 5, bir had ortiq sanasak 7, bir had kam sanasak 4 chiqadi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomer-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#65f6fbda"
+    },
+    {
+      "q": "5; 15; 45; … geometrik progressiyasida 3 645 soni nechanchi o'rinda turishini aniqlang.",
+      "v": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Bu progressiyada b₁ = 5 va q = 3, demak 5·3^(n−1) = 3 645 tenglamani yechamiz. Ikkala tomonni 5 ga bo'lsak 3^(n−1) = 729 bo'ladi, 729 = 3⁶ ekanini bilamiz. Demak n − 1 = 6 va n = 7. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nomer-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#b8f0392e"
+    },
+    {
+      "q": "Birinchi hadi 1 024 va maxraji 1/2 bo'lgan geometrik progressiyaning nechanchi hadi 8 ga teng bo'ladi?",
+      "v": [
+        "7",
+        "9",
+        "10",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Tenglama 1 024·(1/2)^(n−1) = 8 ko'rinishida yoziladi. Undan (1/2)^(n−1) = 8:1 024 = 1/128 hosil bo'ladi, 1/128 esa (1/2)⁷ ga teng. Demak n − 1 = 7 va n = 8. Daraja ko'rsatkichini javob deb olsak 7 chiqadi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomer-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#70ad86ab"
+    },
+    {
+      "q": "Ijtimoiy tarmoqda tarqatilgan xabarni birinchi kuni 3 kishi ko'rdi va har kuni ko'rganlar soni oldingi kundagidan ikki barobar ko'p bo'ldi. Xabarni qaysi kuni 768 kishi ko'radi?",
+      "v": [
+        "9",
+        "8",
+        "10",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Kunlik ko'rishlar soni b₁ = 3, q = 2 bo'lgan geometrik progressiya tashkil qiladi. 3·2^(n−1) = 768 tenglamadan 2^(n−1) = 256 kelib chiqadi, 256 = 2⁸ ekanini bilamiz. Demak n − 1 = 8 va n = 9, ya'ni to'qqizinchi kuni. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nomer-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#c6ae98eb"
+    },
+    {
+      "q": "Geometrik progressiyaning ikkinchi hadi 6 ga, beshinchi hadi esa 162 ga teng bo'lsa, uning maxrajini toping.",
+      "v": [
+        "27",
+        "3",
+        "9",
+        "1/3"
+      ],
+      "t": 1,
+      "izoh": "b₅ = b₂·q³ bo'lgani uchun q³ = 162:6 = 27 hosil bo'ladi. Kub ildiz olamiz: q = ∛27 = 3. Nisbatning o'zini maxraj deb olsak 27, kub ildiz o'rniga uchga bo'lsak 9, nisbatni ag'darsak 1/3 chiqadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-had-orqali-maxraj",
+      "id": "matematika_prog_m04-geometrik-progressiya#63f9928f"
+    },
+    {
+      "q": "Musbat maxrajli geometrik progressiyaning uchinchi hadi 20 ga, beshinchi hadi esa 5 ga teng. Shu progressiyaning maxrajini toping.",
+      "v": [
+        "1/4",
+        "2",
+        "1/2",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "b₅ = b₃·q² tenglikdan q² = 5:20 = 1/4 kelib chiqadi. Kvadrat ildiz olsak q = 1/2 yoki q = −1/2 bo'ladi, shartga ko'ra musbat qiymat olinadi. Nisbatni maxraj deb olsak 1/4, nisbatni ag'darsak 4 yoki 2 chiqadi. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-had-orqali-maxraj",
+      "id": "matematika_prog_m04-geometrik-progressiya#668e88e1"
+    },
+    {
+      "q": "Musbat hadli geometrik progressiyaning ikkinchi hadi 16 ga, oltinchi hadi esa 81 ga teng bo'lsa, uning maxrajini hisoblang.",
+      "v": [
+        "81/16",
+        "3/2",
+        "9/4",
+        "16/81"
+      ],
+      "t": 1,
+      "izoh": "Ikki had orasida to'rtta qadam bor, shuning uchun b₆ = b₂·q⁴ bo'ladi. Bundan q⁴ = 81:16 hosil bo'ladi. To'rtinchi darajali ildiz olamiz: q = 3/2, chunki (3/2)⁴ = 81/16. Nisbatning o'zini maxraj deb olsak 81/16, kvadrat ildiz bilan to'xtasak 9/4, nisbatni ag'darsak 16/81 chiqadi. Javob: 3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-had-orqali-maxraj",
+      "id": "matematika_prog_m04-geometrik-progressiya#1c71c717"
+    },
+    {
+      "q": "Geometrik progressiyaning ikkinchi hadi −6 ga, beshinchi hadi esa 48 ga teng ekani ma'lum bo'lsa, maxrajni toping.",
+      "v": [
+        "−2",
+        "−8",
+        "2",
+        "−4"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi va beshinchi hadlar orasida uchta qadam bor: b₅ = b₂·q³. Demak q³ = 48:(−6) = −8 bo'ladi. Manfiy sondan kub ildiz chiqariladi: q = ∛(−8) = −2. Nisbatni maxraj deb olsak −8, ishorani tushirsak 2, kub ildiz o'rniga ikkiga bo'lsak −4 chiqadi. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-had-orqali-maxraj",
+      "id": "matematika_prog_m04-geometrik-progressiya#a87514ec"
+    },
+    {
+      "q": "4 va 25 sonlari orasidagi musbat geometrik o'rtani toping, ya'ni ular bilan birga geometrik progressiya hosil qiluvchi sonni aniqlang.",
+      "v": [
+        "14,5",
+        "10",
+        "100",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Geometrik progressiyaning xarakteristik xossasiga ko'ra o'rta hadning kvadrati chetki hadlar ko'paytmasiga teng: b² = 4·25 = 100. Bundan b = √100 = 10, chunki musbat qiymat so'ralgan. Arifmetik o'rtani olsak 14,5, ko'paytmaning o'zini olsak 100, faqat 25 ning ildizini olsak 5 chiqadi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-orta-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#f6567e79"
+    },
+    {
+      "q": "Sardorning ustaxonasida uchta idish bor, ularning hajmlari geometrik progressiya tashkil etadi. Eng kichigi 8 litr, eng kattasi 50 litr bo'lsa, o'rtachasining hajmi qancha?",
+      "v": [
+        "29 litr",
+        "400 litr",
+        "20 litr",
+        "25 litr"
+      ],
+      "t": 2,
+      "izoh": "Xarakteristik xossaga ko'ra o'rta hadning kvadrati chetki hadlar ko'paytmasiga teng: b₂² = 8·50 = 400. Demak b₂ = √400 = 20 litr, hajm musbat bo'lgani uchun manfiy ildiz olinmaydi. Tekshiramiz: 20:8 = 2,5 va 50:20 = 2,5, maxraj bir xil chiqdi. Javob: 20 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-orta-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#2a8d24d6"
+    },
+    {
+      "q": "Barcha hadlari musbat bo'lgan geometrik progressiyada b₃ = 12 va b₅ = 27 bo'lsa, to'rtinchi hadni toping.",
+      "v": [
+        "18",
+        "19,5",
+        "324",
+        "13,5"
+      ],
+      "t": 0,
+      "izoh": "To'rtinchi had uchinchi va beshinchi hadlar orasidagi geometrik o'rta bo'ladi: b₄² = b₃·b₅ = 12·27 = 324. Bundan b₄ = √324 = 18, hadlar musbat bo'lgani uchun shu qiymat olinadi. Arifmetik o'rtani olsak 19,5, ko'paytmani javob deb olsak 324, oxirgi hadni ikkiga bo'lsak 13,5 chiqadi. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-orta-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#809797aa"
+    },
+    {
+      "q": "Geometrik progressiyaning barcha hadlari manfiy bo'lib, uning ikkinchi hadi −3 ga, to'rtinchi hadi esa −27 ga teng. Uchinchi hadni toping.",
+      "v": [
+        "9",
+        "−15",
+        "81",
+        "−9"
+      ],
+      "t": 3,
+      "izoh": "Xarakteristik xossadan b₃² = b₂·b₄ = (−3)·(−27) = 81 kelib chiqadi, demak b₃ = 9 yoki b₃ = −9. Shartda barcha hadlar manfiy deyilgani uchun b₃ = −9 tanlanadi. Ishorani hisobga olmasak 9, arifmetik o'rtani olsak −15, ko'paytmani javob deb olsak 81 chiqadi. Javob: −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "geometrik-orta-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#23d851fb"
+    },
+    {
+      "q": "x; 12; 36 sonlari shu tartibda geometrik progressiya tashkil etsa, x ning qiymatini toping.",
+      "v": [
+        "3",
+        "4",
+        "6",
+        "−12"
+      ],
+      "t": 1,
+      "izoh": "Xarakteristik xossaga ko'ra 12² = x·36 bo'lishi kerak. Bundan 144 = 36x va x = 144:36 = 4 kelib chiqadi. Tekshiramiz: 4; 12; 36 ketma-ketligida maxraj 3 ga teng. Maxrajni javob deb olsak 3, 36 ning ildizini olsak 6, arifmetik progressiya deb hisoblasak −12 chiqadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xarakteristik-xossa-x-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#b820af62"
+    },
+    {
+      "q": "5; x; 45 sonlari shu tartibda geometrik progressiya hosil qilsa va x musbat bo'lsa, x nechaga teng?",
+      "v": [
+        "25",
+        "225",
+        "15",
+        "50"
+      ],
+      "t": 2,
+      "izoh": "Xarakteristik xossaga ko'ra x² = 5·45 = 225 bo'ladi. Kvadrat ildiz olamiz: x = 15 yoki x = −15, shartga ko'ra musbat qiymat kerak. Arifmetik o'rtani olsak 25, ko'paytmani javob deb olsak 225, chetki hadlarni qo'shsak 50 chiqadi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "xarakteristik-xossa-x-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#5c19f33d"
+    },
+    {
+      "q": "x − 1; x + 1; x + 5 ifodalari shu tartibda geometrik progressiyaning uchta ketma-ket hadi bo'lsa, x ni toping.",
+      "v": [
+        "3",
+        "2",
+        "4",
+        "−3"
+      ],
+      "t": 0,
+      "izoh": "Xarakteristik xossadan (x + 1)² = (x − 1)(x + 5) tenglamani tuzamiz. Chap tomon x² + 2x + 1, o'ng tomon x² + 4x − 5 bo'ladi. x² qisqargach 2x + 1 = 4x − 5, bundan 2x = 6 va x = 3. Tekshiruv: hadlar 2; 4; 8, maxraj 2 ga teng. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xarakteristik-xossa-x-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#25fb01b3"
+    },
+    {
+      "q": "Uchta do'konning kunlik savdosi mos ravishda x, x + 6 va x + 18 million so'mni tashkil etadi va bu sonlar geometrik progressiya hosil qiladi. x ni toping.",
+      "v": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "Xarakteristik xossaga ko'ra (x + 6)² = x·(x + 18) bo'lishi kerak. Chap tomonni yoyamiz: x² + 12x + 36 = x² + 18x. x² qisqargach 36 = 6x, demak x = 6. Tekshiruv: 6; 12; 24 sonlarining maxraji 2 ga teng. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xarakteristik-xossa-x-topish",
+      "id": "matematika_prog_m04-geometrik-progressiya#e8bdc60e"
+    },
+    {
+      "q": "Quyidagi ketma-ketliklardan qaysi biri geometrik progressiya bo'la oladi: 2; 4; 6; 8 yoki 3; 6; 12; 24 yoki 1; 4; 9; 16 yoki 5; 10; 15; 20?",
+      "v": [
+        "2; 4; 6; 8",
+        "3; 6; 12; 24",
+        "1; 4; 9; 16",
+        "5; 10; 15; 20"
+      ],
+      "t": 1,
+      "izoh": "Geometrik progressiyada har bir hadning oldingisiga nisbati o'zgarmas bo'lishi shart. Birinchi va oxirgi ketma-ketliklarda ayirma o'zgarmas, ya'ni ular arifmetik progressiya. Uchinchisi kvadratlar ketma-ketligi, nisbatlari 4; 2,25; 1,8 — turlicha. Ikkinchisida esa 6:3 = 12:6 = 24:12 = 2. Javob: 3; 6; 12; 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "progressiyami-tekshirish",
+      "id": "matematika_prog_m04-geometrik-progressiya#083d2913"
+    },
+    {
+      "q": "Quyidagi ketma-ketliklardan qaysi biri geometrik progressiya EMAS: 1; 3; 9; 27 yoki 16; 8; 4; 2 yoki 2; 6; 18; 54 yoki 4; 8; 16; 24?",
+      "v": [
+        "1; 3; 9; 27",
+        "16; 8; 4; 2",
+        "2; 6; 18; 54",
+        "4; 8; 16; 24"
+      ],
+      "t": 3,
+      "izoh": "Har bir ketma-ketlikda ketma-ket hadlar nisbatini tekshiramiz. Birinchisida nisbat doim 3, ikkinchisida doim 1/2, uchinchisida doim 3 ga teng. Oxirgisida esa 8:4 = 2 va 16:8 = 2, ammo 24:16 = 1,5 — nisbat buzildi. Javob: 4; 8; 16; 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "progressiyami-tekshirish",
+      "id": "matematika_prog_m04-geometrik-progressiya#681fb4c3"
+    },
+    {
+      "q": "bₙ = 5·2ⁿ formula bilan berilgan ketma-ketlik haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "Geometrik progressiya, maxraji 2",
+        "Geometrik progressiya, maxraji 5",
+        "Geometrik progressiya, maxraji 10",
+        "Geometrik progressiya emas"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket hadlar nisbatini topamiz: bₙ₊₁:bₙ = (5·2^(n+1)):(5·2ⁿ) = 2. Nisbat n ga bog'liq emas, demak bu geometrik progressiya va uning maxraji 2. Birinchi had b₁ = 5·2 = 10 ga teng, shuning uchun 10 ni maxraj deb olish xato. Javob: geometrik progressiya, maxraji 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "progressiyami-tekshirish",
+      "id": "matematika_prog_m04-geometrik-progressiya#aec51db5"
+    },
+    {
+      "q": "aₙ = 3n + 2 formula bilan berilgan ketma-ketlik qanday progressiya ekanini aniqlang va to'g'ri fikrni tanlang.",
+      "v": [
+        "Geometrik progressiya, maxraji 3",
+        "Ham arifmetik, ham geometrik progressiya",
+        "Geometrik progressiya, maxraji 2",
+        "Arifmetik progressiya, lekin geometrik emas"
+      ],
+      "t": 3,
+      "izoh": "Dastlabki hadlarni yozamiz: a₁ = 5, a₂ = 8, a₃ = 11, a₄ = 14. Ayirma doim 3 ga teng, demak bu arifmetik progressiya. Nisbatlarni tekshirsak 8:5 = 1,6 va 11:8 ≈ 1,375 — ular teng emas. Shuning uchun ketma-ketlik geometrik progressiya bo'la olmaydi. Javob: arifmetik progressiya, lekin geometrik emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "progressiyami-tekshirish",
+      "id": "matematika_prog_m04-geometrik-progressiya#547d8c87"
+    },
+    {
+      "q": "Birinchi hadi 2, maxraji 3 bo'lgan geometrik progressiyaning dastlabki to'rtta hadi ko'paytmasini hisoblang.",
+      "v": [
+        "216",
+        "80",
+        "11 664",
+        "1 296"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki to'rtta had: 2; 6; 18; 54. Ularni ketma-ket ko'paytiramiz: 2·6 = 12, 12·18 = 216, 216·54 = 11 664. Xuddi shu natijani P₄ = b₁⁴·q⁶ = 16·729 formulasidan ham olish mumkin. Ko'paytirish o'rniga qo'shsak 80, oxirgi hadni tashlab ketsak 216 chiqadi. Javob: 11 664.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadlar-kopaytmasi",
+      "id": "matematika_prog_m04-geometrik-progressiya#dc03fd64"
+    },
+    {
+      "q": "Birinchi hadi 3, maxraji 2 bo'lgan geometrik progressiyaning dastlabki beshta hadi ko'paytmasi nechaga teng?",
+      "v": [
+        "93",
+        "5 184",
+        "124 416",
+        "248 832"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytma formulasi Pₙ = b₁ⁿ·q^(n(n−1)/2) bo'lib, n = 5 da daraja ko'rsatkichi 10 ga teng. Demak P₅ = 3⁵·2¹⁰ = 243·1 024 = 248 832. Hadlarni qo'shib yuborsak 93, to'rtta had bilan cheklansak 5 184, darajani 9 deb olsak 124 416 chiqadi. Javob: 248 832.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadlar-kopaytmasi",
+      "id": "matematika_prog_m04-geometrik-progressiya#2c2af984"
+    },
+    {
+      "q": "Musbat hadli geometrik progressiyada uchinchi had 4 ga teng bo'lsa, dastlabki beshta hadning ko'paytmasi nechaga teng bo'ladi?",
+      "v": [
+        "1 024",
+        "20",
+        "64",
+        "256"
+      ],
+      "t": 0,
+      "izoh": "Simmetrik juftliklarni ko'ramiz: b₁·b₅ = b₃² va b₂·b₄ = b₃². Demak P₅ = b₁·b₂·b₃·b₄·b₅ = b₃²·b₃²·b₃ = b₃⁵. Bu yerda b₃ = 4, shuning uchun P₅ = 4⁵ = 1 024. Hadlarni qo'shgandek 5·4 = 20 olish yoki darajani 3 hamda 4 deb olib 64 va 256 chiqarish tipik xato. Javob: 1 024.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hadlar-kopaytmasi",
+      "id": "matematika_prog_m04-geometrik-progressiya#d7db9ac1"
+    },
+    {
+      "q": "Uchta qutining hajmlari geometrik progressiya tashkil qiladi, eng kichigi 5 litr va maxraj 2 ga teng. Uchala hajmning ko'paytmasini toping.",
+      "v": [
+        "1 000",
+        "35",
+        "50",
+        "8 000"
+      ],
+      "t": 0,
+      "izoh": "Qutilarning hajmlari 5; 10; 20 litr bo'ladi, chunki har biri oldingisidan ikki barobar katta. Ko'paytmani hisoblaymiz: 5·10 = 50, so'ngra 50·20 = 1 000. Hajmlarni qo'shsak 35, faqat ikkita hajmni ko'paytirsak 50, eng kattasini kublasak 8 000 chiqadi. Javob: 1 000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadlar-kopaytmasi",
+      "id": "matematika_prog_m04-geometrik-progressiya#3c0ff442"
+    },
+    {
+      "q": "Musbat hadli geometrik progressiyada dastlabki uchta hadning ko'paytmasi 216 ga teng bo'lsa, ikkinchi had nechaga teng?",
+      "v": [
+        "72",
+        "6",
+        "36",
+        "216"
+      ],
+      "t": 1,
+      "izoh": "Dastlabki uchta had uchun b₁·b₃ = b₂² bo'lgani sababli P₃ = b₂³ ga teng. Demak b₂³ = 216 va b₂ = ∛216 = 6. Ko'paytmani hadlar soniga bo'lsak 72, birinchi hadga bo'lgandek 36 olsak yoki ko'paytmaning o'zini yozsak 216 chiqadi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-orqali-teskari",
+      "id": "matematika_prog_m04-geometrik-progressiya#1a14a2ae"
+    },
+    {
+      "q": "Musbat hadli geometrik progressiyaning dastlabki beshta hadi ko'paytmasi 3 125 ga teng bo'lsa, uning uchinchi hadini toping.",
+      "v": [
+        "625",
+        "25",
+        "5",
+        "125"
+      ],
+      "t": 2,
+      "izoh": "Simmetriya tufayli dastlabki beshta hadning ko'paytmasi b₃⁵ ga teng bo'ladi. Demak b₃⁵ = 3 125, ya'ni b₃⁵ = 5⁵ va b₃ = 5. Ko'paytmani beshga bo'lsak 625, darajani 2 yoki 3 deb olsak 25 va 125 chiqadi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-orqali-teskari",
+      "id": "matematika_prog_m04-geometrik-progressiya#ef0d362e"
+    },
+    {
+      "q": "Geometrik progressiyaning birinchi hadi 2 ga teng va dastlabki uchta hadning ko'paytmasi 512 ni tashkil etadi. Musbat maxrajni toping.",
+      "v": [
+        "64",
+        "256",
+        "8",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Dastlabki uchta had 2; 2q; 2q² ko'rinishida bo'ladi, ularning ko'paytmasi 8q³ ga teng. Demak 8q³ = 512, bundan q³ = 64 va q = 4. Tekshiruv: 2; 8; 32 hadlarining ko'paytmasi 512 ga teng. Kub ildiz olmasak 64, ko'paytmani ikkiga bo'lsak 256, ikkinchi hadni maxraj deb olsak 8 chiqadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytma-orqali-teskari",
+      "id": "matematika_prog_m04-geometrik-progressiya#58e3d86e"
+    },
+    {
+      "q": "Musbat maxrajli geometrik progressiyaning birinchi hadi 1 ga teng, dastlabki to'rtta hadining ko'paytmasi esa 117 649 ga teng. Maxrajni aniqlang.",
+      "v": [
+        "49",
+        "343",
+        "7",
+        "2 401"
+      ],
+      "t": 2,
+      "izoh": "Dastlabki to'rtta had 1; q; q²; q³ bo'ladi, ularning ko'paytmasi q⁶ ga teng. Demak q⁶ = 117 649, ya'ni q = 7, chunki 7⁶ = 117 649. Tekshiruv: 1; 7; 49; 343 hadlarining ko'paytmasi haqiqatan 117 649 ga teng. Kub ildiz olsak 49, kvadrat ildiz olsak 343, darajani to'rt deb olsak 2 401 chiqadi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kopaytma-orqali-teskari",
+      "id": "matematika_prog_m04-geometrik-progressiya#d70615f9"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni har 30 daqiqada 3 barobar ortadi. Dastlab 200 ta bakteriya bo'lgan bo'lsa, 2 soatdan keyin ularning soni qancha bo'ladi?",
+      "v": [
+        "16 200 ta",
+        "5 400 ta",
+        "48 600 ta",
+        "1 800 ta"
+      ],
+      "t": 0,
+      "izoh": "2 soat ichida 30 daqiqalik oraliq to'rt marta takrorlanadi, demak ko'payish to'rt marta sodir bo'ladi. Bakteriyalar soni b₅ = 200·3⁴ formula bilan topiladi, chunki dastlabki qiymat birinchi had hisoblanadi. 3⁴ = 81, demak 200·81 = 16 200 ta. Uch oraliq olsak 5 400, besh oraliq olsak 48 600 chiqadi. Javob: 16 200 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bakteriya-kopayish",
+      "id": "matematika_prog_m04-geometrik-progressiya#a13cab0f"
+    },
+    {
+      "q": "Bakteriyalar soni har 20 daqiqada ikki barobar ortadi. Bir soat ichida ularning soni necha barobar ko'payadi?",
+      "v": [
+        "4 barobar",
+        "6 barobar",
+        "8 barobar",
+        "2 barobar"
+      ],
+      "t": 2,
+      "izoh": "Bir soatda 20 daqiqalik oraliq uch marta takrorlanadi, demak ikkilanish uch marta bo'ladi. Umumiy o'sish koeffitsienti q³ = 2³ = 8 ga teng. Ikkilanishlar sonini ko'paytmaga qo'shsak 6, ikki oraliq deb hisoblasak 4 chiqadi. Javob: 8 barobar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bakteriya-kopayish",
+      "id": "matematika_prog_m04-geometrik-progressiya#40bcfd0c"
+    },
+    {
+      "q": "Koloniyadagi bakteriyalar soni geometrik progressiya bo'yicha o'sadi: ikkinchi soatda 180 ta, beshinchi soatda 4 860 ta bo'ldi. Har soatda soni necha barobar ortgan?",
+      "v": [
+        "27 barobar",
+        "9 barobar",
+        "2 barobar",
+        "3 barobar"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi va beshinchi soat orasida uchta qadam bor, demak b₅ = b₂·q³ bo'ladi. Bundan q³ = 4 860:180 = 27 hosil bo'ladi. Kub ildiz olamiz: q = ∛27 = 3. Nisbatning o'zini javob deb olsak 27, kub ildiz o'rniga uchga bo'lsak 9 chiqadi. Javob: 3 barobar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bakteriya-kopayish",
+      "id": "matematika_prog_m04-geometrik-progressiya#c380f0a7"
+    },
+    {
+      "q": "Petri kosachasida dastlab 40 ta bakteriya bor edi va ularning soni har soatda 5 barobar ortdi. To'rt soatdan keyin nechta bakteriya bo'ladi?",
+      "v": [
+        "5 000 ta",
+        "25 000 ta",
+        "125 000 ta",
+        "800 ta"
+      ],
+      "t": 1,
+      "izoh": "To'rt soatda ko'payish to'rt marta sodir bo'ladi, demak natija 40·5⁴ ga teng. Avval 5⁴ = 625 ni topamiz, so'ngra 40·625 = 25 000 ni hisoblaymiz. Uch marta ko'paytirsak 5 000, besh marta ko'paytirsak 125 000, o'sishni chiziqli deb hisoblasak 800 chiqadi. Javob: 25 000 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bakteriya-kopayish",
+      "id": "matematika_prog_m04-geometrik-progressiya#252238f4"
+    },
+    {
+      "q": "Nodira bankka 2 000 000 so'm qo'ydi, omonatga har yili 20% ustama qo'shiladi. Uch yildan keyin uning hisobida qancha pul bo'ladi?",
+      "v": [
+        "3 456 000 so'm",
+        "3 200 000 so'm",
+        "2 880 000 so'm",
+        "4 147 200 so'm"
+      ],
+      "t": 0,
+      "izoh": "Har yili pul 1,2 barobar ortadi, demak omonat geometrik progressiya tashkil qiladi. Uch yildan keyingi summa 2 000 000·1,2³ ga teng bo'ladi. 1,2³ = 1,728 bo'lgani uchun natija 2 000 000·1,728 = 3 456 000 so'm. Foizni chiziqli qo'shsak 3 200 000, ikki yil hisoblasak 2 880 000 chiqadi. Javob: 3 456 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "depozit-murakkab-foiz",
+      "id": "matematika_prog_m04-geometrik-progressiya#2fff88a0"
+    },
+    {
+      "q": "Omonatdagi pul har yili ikki barobar ortadi va besh yildan keyin 9 600 000 so'mga yetdi. Omonat egasi dastlab qancha pul qo'ygan edi?",
+      "v": [
+        "600 000 so'm",
+        "1 920 000 so'm",
+        "300 000 so'm",
+        "150 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Besh yilda pul 2⁵ = 32 barobar ortgan, demak dastlabki summa 9 600 000:32 ga teng. Bo'lishni bajarsak 300 000 so'm chiqadi. To'rt yil orqaga qaytsak 600 000, olti yil orqaga qaytsak 150 000 bo'ladi; summani beshga bo'lish esa 1 920 000 kabi noto'g'ri natija beradi. Javob: 300 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "depozit-murakkab-foiz",
+      "id": "matematika_prog_m04-geometrik-progressiya#2b580832"
+    },
+    {
+      "q": "Omonatga har yili 25% ustama qo'shilib boriladi. Ikki yildan keyin omonatdagi pul necha barobar ortadi?",
+      "v": [
+        "1,5",
+        "2,5",
+        "1,25",
+        "1,5625"
+      ],
+      "t": 3,
+      "izoh": "Har yilgi o'sish koeffitsienti 1,25 ga teng, chunki 25% qo'shilganda pul 1,25 barobar bo'ladi. Ikki yil uchun koeffitsientlar ko'paytiriladi: 1,25² = 1,5625. Foizlarni qo'shib 50% desak 1,5, koeffitsientni bir yil uchun qoldirsak 1,25 chiqadi. Javob: 1,5625.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "depozit-murakkab-foiz",
+      "id": "matematika_prog_m04-geometrik-progressiya#21e97f5c"
+    },
+    {
+      "q": "Bir omonat har yili bir xil ulushda ortadi va ikki yil ichida jami 1,44 barobar ko'paydi. Yillik o'sish necha foizni tashkil qiladi?",
+      "v": [
+        "44%",
+        "22%",
+        "20%",
+        "12%"
+      ],
+      "t": 2,
+      "izoh": "Ikki yillik o'sish koeffitsienti q² = 1,44 ga teng, demak q = √1,44 = 1,2. Koeffitsient 1,2 bo'lsa, yillik o'sish 0,2 ga, ya'ni 20 foizga to'g'ri keladi. Ikki yillik o'sishni yillik deb olsak 44%, uni ikkiga bo'lsak 22% chiqadi. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "depozit-murakkab-foiz",
+      "id": "matematika_prog_m04-geometrik-progressiya#43dad405"
+    },
+    {
+      "q": "Avtomobilning bozor narxi har yili 20% ga tushadi. Hozir uning narxi 240 mln so'm bo'lsa, uch yildan keyin narx qanday bo'ladi?",
+      "v": [
+        "96 mln so'm",
+        "122,88 mln so'm",
+        "153,6 mln so'm",
+        "98,304 mln so'm"
+      ],
+      "t": 1,
+      "izoh": "Har yili narx 0,8 koeffitsientga ko'paytiriladi, ya'ni 20% ga kamayadi: tushishdan keyin qiymatning 80 foizi qoladi. Uch yildan keyingi narx 240·0,8³ ga teng, bu yerda 0,8³ = 0,512. Demak narx 240·0,512 = 122,88 mln so'm bo'ladi. Chiziqli kamayish deb hisoblasak 96, ikki yil olsak 153,6 chiqadi. Javob: 122,88 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-qadrsizlanish",
+      "id": "matematika_prog_m04-geometrik-progressiya#4899e7e2"
+    },
+    {
+      "q": "Telefonning narxi har yili 25% ga arzonlashadi. Dastlabki narxi 8 000 000 so'm bo'lsa, ikki yildan keyin u qanchaga tushadi?",
+      "v": [
+        "4 500 000 so'm",
+        "4 000 000 so'm",
+        "6 000 000 so'm",
+        "3 375 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Har yilgi koeffitsient 0,75 ga teng, chunki narxning 75 foizi qoladi. Ikki yil uchun 8 000 000·0,75² ni hisoblaymiz, bu yerda 0,75² = 0,5625. Demak narx 8 000 000·0,5625 = 4 500 000 so'm bo'ladi. Chiziqli 50% kamayish desak 4 000 000, bir yil olsak 6 000 000 chiqadi. Javob: 4 500 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-qadrsizlanish",
+      "id": "matematika_prog_m04-geometrik-progressiya#519cdf2d"
+    },
+    {
+      "q": "Asbobning qiymati har yili bir xil koeffitsient bilan kamayadi va ikki yilda 400 000 so'mdan 256 000 so'mga tushdi. Yillik koeffitsientni toping.",
+      "v": [
+        "0,64",
+        "0,32",
+        "1,25",
+        "0,8"
+      ],
+      "t": 3,
+      "izoh": "Ikki yillik kamayish koeffitsienti 256 000:400 000 = 0,64 ga teng, ya'ni q² = 0,64. Kvadrat ildiz olamiz: q = 0,8, chunki koeffitsient musbat bo'lishi kerak. Ikki yillik koeffitsientni yillik deb olsak 0,64, uni ikkiga bo'lsak 0,32, teskarisini olsak 1,25 chiqadi. Javob: 0,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "narx-qadrsizlanish",
+      "id": "matematika_prog_m04-geometrik-progressiya#c788add9"
+    },
+    {
+      "q": "Eski dastgohning qiymati har yili 3 marta kamayib bordi va to'rt yildan keyin 500 000 so'mni tashkil etdi. Uning dastlabki qiymati qancha edi?",
+      "v": [
+        "13 500 000 so'm",
+        "40 500 000 so'm",
+        "1 500 000 so'm",
+        "121 500 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "To'rt yilda qiymat 3⁴ = 81 marta kamaygan, demak dastlabki qiymat 500 000·81 ga teng. Ko'paytirishni bajarsak 40 500 000 so'm chiqadi. Uch yil hisoblasak 13 500 000, faqat bir yil hisoblasak 1 500 000, besh yil hisoblasak 121 500 000 bo'ladi. Javob: 40 500 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "narx-qadrsizlanish",
+      "id": "matematika_prog_m04-geometrik-progressiya#64b5ee50"
+    },
+    {
+      "q": "Koptok 3 m balandlikdan tashlandi va har safar oldingi balandlikning 2/3 qismiga ko'tariladi. Uchinchi sakrashdan keyin u qanday balandlikka ko'tariladi?",
+      "v": [
+        "4/3 m",
+        "16/27 m",
+        "8/9 m",
+        "2 m"
+      ],
+      "t": 2,
+      "izoh": "Sakrash balandliklari geometrik progressiya tashkil qiladi, uning maxraji 2/3 ga teng. Uchinchi sakrash balandligi 3·(2/3)³ ga teng bo'ladi. Hisoblaymiz: (2/3)³ = 8/27, demak 3·8/27 = 8/9 m. Birinchi sakrash 2 m, ikkinchisi 4/3 m, to'rtinchisi 16/27 m ga teng. Javob: 8/9 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koptok-sakrash",
+      "id": "matematika_prog_m04-geometrik-progressiya#7cf20561"
+    },
+    {
+      "q": "Koptok har sakrashda oldingi balandlikning yarmiga ko'tariladi. Boshlang'ich balandlik 96 sm bo'lsa, beshinchi sakrashdan keyingi balandlikni toping.",
+      "v": [
+        "3 sm",
+        "6 sm",
+        "1,5 sm",
+        "19,2 sm"
+      ],
+      "t": 0,
+      "izoh": "Har sakrashda balandlik ikki barobar kamayadi, demak beshinchi sakrashdan keyin u 2⁵ = 32 marta kichrayadi. Balandlik 96:32 = 3 sm ga teng bo'ladi. To'rtinchi sakrashda 6 sm, oltinchisida 1,5 sm qoladi; balandlikni beshga bo'lish esa 19,2 kabi noto'g'ri natija beradi. Javob: 3 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koptok-sakrash",
+      "id": "matematika_prog_m04-geometrik-progressiya#2a00e063"
+    },
+    {
+      "q": "Koptok 200 sm balandlikdan tashlanganda birinchi sakrashda 120 sm ga ko'tarildi. Uchinchi sakrashdan keyin u qanday balandlikka chiqadi?",
+      "v": [
+        "72 sm",
+        "25,92 sm",
+        "40 sm",
+        "43,2 sm"
+      ],
+      "t": 3,
+      "izoh": "Avval maxrajni topamiz: q = 120:200 = 0,6. Uchinchi sakrash balandligi 200·0,6³ ga teng, bu yerda 0,6³ = 0,216. Demak balandlik 200·0,216 = 43,2 sm bo'ladi. Ikkinchi sakrash 72 sm, to'rtinchisi 25,92 sm; har safar 80 sm ga kamayadi deb hisoblasak 40 sm chiqadi. Javob: 43,2 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koptok-sakrash",
+      "id": "matematika_prog_m04-geometrik-progressiya#87a48be6"
+    },
+    {
+      "q": "Koptok birinchi sakrashda 90 sm ga, uchinchi sakrashda esa 40 sm ga ko'tarildi. Sakrashlar balandligining maxrajini toping.",
+      "v": [
+        "4/9",
+        "2/3",
+        "3/2",
+        "2/9"
+      ],
+      "t": 1,
+      "izoh": "Birinchi va uchinchi sakrash orasida ikkita qadam bor, demak q² = 40:90 = 4/9 bo'ladi. Kvadrat ildiz olamiz: q = 2/3, chunki balandlik musbat. Kvadratning o'zini maxraj deb olsak 4/9, uni teskari olsak 3/2, ikkiga bo'lsak 2/9 chiqadi. Javob: 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koptok-sakrash",
+      "id": "matematika_prog_m04-geometrik-progressiya#96fb0cb6"
+    },
+    {
+      "q": "Yosh dasturchining oyligi har yili 1,5 barobar ortib boradi. Birinchi yili u 4 mln so'm olgan bo'lsa, to'rtinchi yili oyligi qancha bo'ladi?",
+      "v": [
+        "9 mln so'm",
+        "20,25 mln so'm",
+        "13,5 mln so'm",
+        "10 mln so'm"
+      ],
+      "t": 2,
+      "izoh": "Oyliklar geometrik progressiya tashkil qiladi, b₁ = 4 va q = 1,5. To'rtinchi had b₄ = 4·1,5³ formulasi bilan topiladi. 1,5³ = 3,375 bo'lgani uchun b₄ = 4·3,375 = 13,5 mln so'm. Uchinchi yil 9 mln, beshinchi yil 20,25 mln; o'sishni chiziqli deb hisoblasak 10 mln chiqadi. Javob: 13,5 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korxona-daromad-osishi",
+      "id": "matematika_prog_m04-geometrik-progressiya#c086ba50"
+    },
+    {
+      "q": "Ishchining maoshi har chorak oxirida 10% ga oshiriladi. To'rtta chorakdan keyin maosh dastlabkisiga nisbatan necha barobar ortadi?",
+      "v": [
+        "1,4641",
+        "1,4",
+        "1,331",
+        "1,44"
+      ],
+      "t": 0,
+      "izoh": "Har chorakda maosh 1,1 koeffitsient bilan ko'payadi, to'rtta chorak uchun koeffitsientlar ko'paytiriladi. Demak umumiy o'sish 1,1⁴ ga teng bo'ladi. Bosqichma-bosqich hisoblaymiz: 1,1² = 1,21, so'ngra 1,21² = 1,4641. Foizlarni qo'shsak 1,4, uch chorak olsak 1,331 chiqadi. Javob: 1,4641.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "korxona-daromad-osishi",
+      "id": "matematika_prog_m04-geometrik-progressiya#6740a475"
+    },
+    {
+      "q": "Kompaniyaning yillik daromadi 2019-yilda 15 mlrd so'm, 2024-yilda esa 480 mlrd so'mni tashkil etdi. Daromad har yili necha barobar ortgan?",
+      "v": [
+        "32 barobar",
+        "5 barobar",
+        "4 barobar",
+        "2 barobar"
+      ],
+      "t": 3,
+      "izoh": "2019 va 2024 yillar orasida beshta qadam bor, demak 480 = 15·q⁵ tenglama tuziladi. Bundan q⁵ = 480:15 = 32 hosil bo'ladi. 32 = 2⁵ bo'lgani uchun q = 2. Nisbatning o'zini javob deb olsak 32, yillar sonini javob deb olsak 5 chiqadi. Javob: 2 barobar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korxona-daromad-osishi",
+      "id": "matematika_prog_m04-geometrik-progressiya#7fbc424c"
+    },
+    {
+      "q": "Yangi ochilgan kafening haftalik daromadi har hafta ikki barobar ortdi va beshinchi haftada 12 800 000 so'mga yetdi. Birinchi haftada daromad qancha edi?",
+      "v": [
+        "1 600 000 so'm",
+        "800 000 so'm",
+        "3 200 000 so'm",
+        "2 560 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Beshinchi had b₅ = b₁·q⁴ bo'lgani uchun b₁ = 12 800 000:2⁴ ni hisoblaymiz. Bu yerda 2⁴ = 16, demak b₁ = 12 800 000:16 = 800 000 so'm. Bir qadam kam qaytsak 1 600 000, ikki qadam kam qaytsak 3 200 000 bo'ladi; summani beshga bo'lish 2 560 000 kabi noto'g'ri natija beradi. Javob: 800 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korxona-daromad-osishi",
+      "id": "matematika_prog_m04-geometrik-progressiya#8fa68c7a"
+    },
+    {
+      "q": "Geometrik progressiyaning uchinchi hadi 12 ga, oltinchi hadi esa 96 ga teng bo'lsa, uning birinchi hadini toping.",
+      "v": [
+        "6",
+        "3",
+        "12",
+        "1,5"
+      ],
+      "t": 1,
+      "izoh": "Avval maxrajni topamiz: b₆ = b₃·q³ bo'lgani uchun q³ = 96:12 = 8 va q = 2. So'ngra b₃ = b₁·q² tenglikdan b₁ = 12:4 = 3 kelib chiqadi. Bir qadam kam qaytsak 6, umuman qaytmasak 12, bir qadam ortiq qaytsak 1,5 chiqadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-ikki-shart",
+      "id": "matematika_prog_m04-geometrik-progressiya#1b582572"
+    },
+    {
+      "q": "Geometrik progressiyada ikkinchi va birinchi hadlar ayirmasi 12 ga, uchinchi va ikkinchi hadlar ayirmasi esa 48 ga teng. Birinchi hadni toping.",
+      "v": [
+        "12",
+        "48",
+        "4",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "Shartlarni yozamiz: b₁(q − 1) = 12 va b₁q(q − 1) = 48. Ikkinchi tenglikni birinchisiga bo'lsak q = 48:12 = 4 hosil bo'ladi. Uni birinchi tenglikka qo'yamiz: b₁·3 = 12, demak b₁ = 4. Birinchi ayirmani javob deb olsak 12, ikkinchi ayirmani olsak 48, ikkinchi hadni javob deb olsak 16 chiqadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema-ikki-shart",
+      "id": "matematika_prog_m04-geometrik-progressiya#7905277b"
+    },
+    {
+      "q": "Musbat maxrajli geometrik progressiyada to'rtinchi hadning ikkinchi hadga nisbati 9 ga teng va birinchi had 2 ga teng. Beshinchi hadni toping.",
+      "v": [
+        "54",
+        "486",
+        "18",
+        "162"
+      ],
+      "t": 3,
+      "izoh": "b₄:b₂ = q² bo'lgani uchun q² = 9 va musbat maxraj q = 3 ga teng. Endi b₅ = b₁·q⁴ = 2·3⁴ ni hisoblaymiz. 3⁴ = 81, demak b₅ = 2·81 = 162. To'rtinchi had 54, oltinchi had 486, uchinchi had 18 ga teng. Javob: 162.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-ikki-shart",
+      "id": "matematika_prog_m04-geometrik-progressiya#0ac38c49"
+    },
+    {
+      "q": "Geometrik progressiyaning maxraji 2 ga teng va beshinchi had bilan uchinchi had ayirmasi 216 ni tashkil etadi. Birinchi hadni aniqlang.",
+      "v": [
+        "18",
+        "24",
+        "108",
+        "54"
+      ],
+      "t": 0,
+      "izoh": "Hadlarni birinchi had orqali yozamiz: b₃ = b₁·4 va b₅ = b₁·16. Ayirma b₅ − b₃ = 16b₁ − 4b₁ = 12b₁ ga teng. Shartga ko'ra 12b₁ = 216, demak b₁ = 18. Tekshiruv: 72 va 288 hadlarining ayirmasi haqiqatan 216 ga teng. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema-ikki-shart",
+      "id": "matematika_prog_m04-geometrik-progressiya#9601c4db"
+    },
+    {
+      "q": "Geometrik progressiyada yettinchi hadning to'rtinchi hadga nisbati 64 ga teng bo'lsa, uning maxraji nechaga teng?",
+      "v": [
+        "64",
+        "8",
+        "4",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "Yettinchi va to'rtinchi hadlar orasida uchta qadam bor, demak b₇:b₄ = q³ bo'ladi. Bundan q³ = 64 va q = ∛64 = 4. Nisbatning o'zini maxraj deb olsak 64, kvadrat ildiz olsak 8, 64 ni to'rtga bo'lsak 16 chiqadi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hadlar-nisbati",
+      "id": "matematika_prog_m04-geometrik-progressiya#49af45b0"
+    },
+    {
+      "q": "Musbat hadli geometrik progressiyada to'qqizinchi hadning beshinchi hadga nisbati 625 ga teng. Yettinchi hadning beshinchi hadga nisbatini toping.",
+      "v": [
+        "125",
+        "5",
+        "625",
+        "25"
+      ],
+      "t": 3,
+      "izoh": "To'qqizinchi va beshinchi hadlar orasida to'rtta qadam bor: b₉:b₅ = q⁴ = 625. Bundan q = 5, chunki hadlar musbat va 5⁴ = 625. Yettinchi va beshinchi hadlar orasida esa ikkita qadam bor, ya'ni b₇:b₅ = q² = 25. Maxrajni javob deb olsak 5, dastlabki nisbatni ko'chirsak 625, uchta qadam sanasak 125 chiqadi. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hadlar-nisbati",
+      "id": "matematika_prog_m04-geometrik-progressiya#9977dfb0"
+    },
+    {
+      "q": "Geometrik progressiyaning birinchi hadi 5 ga, to'rtinchi hadi esa 40 ga teng. Oltinchi hadning ikkinchi hadga nisbatini hisoblang.",
+      "v": [
+        "16",
+        "8",
+        "4",
+        "32"
+      ],
+      "t": 0,
+      "izoh": "Avval maxrajni topamiz: b₄ = b₁·q³ dan q³ = 40:5 = 8 va q = 2. Oltinchi va ikkinchi hadlar orasida to'rtta qadam bor, demak b₆:b₂ = q⁴. Hisoblaymiz: q⁴ = 2⁴ = 16. Uchta qadam sanasak 8, ikkita qadam sanasak 4, beshta qadam sanasak 32 chiqadi. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadlar-nisbati",
+      "id": "matematika_prog_m04-geometrik-progressiya#7533e710"
+    },
+    {
+      "q": "Geometrik progressiyaning har bir hadi oldingisidan 5 barobar katta. Undan uchta o'rin keyin turgan had necha marta katta bo'ladi?",
+      "v": [
+        "15",
+        "125",
+        "25",
+        "625"
+      ],
+      "t": 1,
+      "izoh": "Uchta o'rin siljish maxrajni uch marta ko'paytirishni bildiradi, ya'ni nisbat q³ ga teng bo'ladi. Bu yerda q = 5, demak q³ = 125. Maxrajni uchga ko'paytirsak 15, ikkita qadam sanasak 25, to'rtta qadam sanasak 625 chiqadi. Javob: 125.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hadlar-nisbati",
+      "id": "matematika_prog_m04-geometrik-progressiya#84611dc7"
+    },
+    {
+      "q": "Geometrik progressiyaning uchinchi hadi 7 ga, maxraji esa 2 ga teng bo'lsa, uning sakkizinchi hadini toping.",
+      "v": [
+        "112",
+        "224",
+        "448",
+        "70"
+      ],
+      "t": 1,
+      "izoh": "Uchinchi va sakkizinchi hadlar orasida beshta qadam bor, demak b₈ = b₃·q⁵. Bu yerda q⁵ = 2⁵ = 32, shuning uchun b₈ = 7·32 = 224. To'rtta qadam sanasak 112, oltita qadam sanasak 448 chiqadi; o'sishni chiziqli deb hisoblasak 70 bo'ladi. Javob: 224.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hadni-boshqa-had-orqali",
+      "id": "matematika_prog_m04-geometrik-progressiya#e1fbecd6"
+    },
+    {
+      "q": "Geometrik progressiyaning beshinchi hadi 48 ga, maxraji esa −2 ga teng. Shu progressiyaning sakkizinchi hadini hisoblang.",
+      "v": [
+        "384",
+        "−192",
+        "−384",
+        "−768"
+      ],
+      "t": 2,
+      "izoh": "Beshinchi va sakkizinchi hadlar orasida uchta qadam bor: b₈ = b₅·q³. Bu yerda q³ = (−2)³ = −8, demak b₈ = 48·(−8) = −384. Ishorani hisobga olmasak 384 chiqadi; qadam sonini ikkita yoki to'rtta deb olib, ustiga ishorani ham manfiy qoldirsak −192 va −768 hosil bo'ladi. Javob: −384.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadni-boshqa-had-orqali",
+      "id": "matematika_prog_m04-geometrik-progressiya#3ca0a71b"
+    },
+    {
+      "q": "Musbat hadli geometrik progressiyada to'rtinchi had 9 ga, oltinchi had esa 81 ga teng bo'lsa, yettinchi hadni toping.",
+      "v": [
+        "729",
+        "27",
+        "162",
+        "243"
+      ],
+      "t": 3,
+      "izoh": "To'rtinchi va oltinchi hadlar orasida ikkita qadam bor, demak q² = 81:9 = 9 va q = 3. Yettinchi had oltinchi haddan bir qadam keyin turadi: b₇ = 81·3 = 243. Bir qadam ortiq yursak 729, beshinchi hadni javob deb olsak 27, maxrajni 2 deb olsak 162 chiqadi. Javob: 243.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadni-boshqa-had-orqali",
+      "id": "matematika_prog_m04-geometrik-progressiya#61987006"
+    },
+    {
+      "q": "Zavodning oylik ishlab chiqarishi geometrik progressiya bo'yicha o'sadi: uchinchi oyda 500 dona mahsulot chiqarildi va maxraj 2 ga teng. Yettinchi oyda qancha mahsulot chiqariladi?",
+      "v": [
+        "8 000 dona",
+        "4 000 dona",
+        "16 000 dona",
+        "2 000 dona"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi va yettinchi oylar orasida to'rtta qadam bor, demak b₇ = b₃·q⁴. Bu yerda q⁴ = 2⁴ = 16, shuning uchun b₇ = 500·16 = 8 000 dona. Uchta qadam sanasak 4 000, beshta qadam sanasak 16 000, ikkita qadam sanasak 2 000 chiqadi. Javob: 8 000 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hadni-boshqa-had-orqali",
+      "id": "matematika_prog_m04-geometrik-progressiya#0eabed55"
+    },
+    {
+      "q": "Kvadratning tomonlari o'rtalari tutashtirilib yangi kvadrat yasaladi va bu amal cheksiz takrorlanadi. Hosil bo'lgan kvadratlar yuzalari ketma-ketligining maxrajini toping.",
+      "v": [
+        "1/4",
+        "1/2",
+        "√2/2",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Tomonlari o'rtalari tutashtirilgan kvadratning tomoni dastlabki kvadrat diagonalining yarmiga teng bo'ladi. Shuning uchun yangi tomon eskisidan √2/2 marta kichik, yuzasi esa aynan ikki marta kichik chiqadi. Demak yuzalar ketma-ketligining maxraji 1/2 ga teng. Tomon yarimlanadi deb o'ylasak 1/4, tomonlar nisbatini olsak √2/2 chiqadi. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "geometrik-shakl-ketma-ketlik",
+      "id": "matematika_prog_m04-geometrik-progressiya#45312b0c"
+    },
+    {
+      "q": "Teng tomonli uchburchakning tomoni 24 sm. Uning o'rta chiziqlari bilan yangi uchburchak yasaladi va amal takrorlandi. Uchinchi uchburchakning tomoni qancha?",
+      "v": [
+        "12 sm",
+        "3 sm",
+        "6 sm",
+        "8 sm"
+      ],
+      "t": 2,
+      "izoh": "O'rta chiziq uchburchakning tomonini ikki barobar kichraytiradi, demak tomonlar 1/2 maxrajli geometrik progressiya hosil qiladi. Ketma-ketlik shunday bo'ladi: 24; 12; 6. Uchinchi uchburchakning tomoni 6 sm ga teng. Ikkinchisini javob deb olsak 12 sm, to'rtinchisini olsak 3 sm, uchga bo'lsak 8 sm chiqadi. Javob: 6 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-shakl-ketma-ketlik",
+      "id": "matematika_prog_m04-geometrik-progressiya#93a1f530"
+    },
+    {
+      "q": "Birinchi kvadratning tomoni 8 sm bo'lib, har bir keyingi kvadratning tomoni oldingisining yarmiga teng. To'rtinchi kvadratning yuzasini toping.",
+      "v": [
+        "4 sm²",
+        "16 sm²",
+        "2 sm²",
+        "1 sm²"
+      ],
+      "t": 3,
+      "izoh": "Tomonlar ketma-ketligi 8; 4; 2; 1 sm ko'rinishida bo'ladi. Demak to'rtinchi kvadratning tomoni 1 sm, yuzasi esa 1 sm² ga teng. Yuzalar ketma-ketligi 64; 16; 4; 1 bo'lib, uning maxraji 1/4 ga teng. Uchinchi kvadratni olsak 4 sm², ikkinchisini olsak 16 sm² chiqadi. Javob: 1 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-shakl-ketma-ketlik",
+      "id": "matematika_prog_m04-geometrik-progressiya#53e919d2"
+    },
+    {
+      "q": "Bir nechta doiraning radiuslari geometrik progressiya tashkil etadi: 27 sm, 18 sm, 12 sm va hokazo. To'rtinchi doiraning radiusini toping.",
+      "v": [
+        "8 sm",
+        "6 sm",
+        "4 sm",
+        "18 sm"
+      ],
+      "t": 0,
+      "izoh": "Maxrajni topamiz: 18:27 = 2/3 va tekshiruv uchun 12:18 = 2/3. Demak to'rtinchi radius 12·2/3 = 8 sm ga teng. Kamayishni chiziqli deb hisoblab har safar 6 sm ayirsak 6 sm, radiusni uchga bo'lsak 4 sm chiqadi. Javob: 8 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-shakl-ketma-ketlik",
+      "id": "matematika_prog_m04-geometrik-progressiya#2d677664"
+    },
+    {
+      "q": "Geometrik progressiyaning birinchi hadi −2 ga, maxraji ham −2 ga teng bo'lsa, uning oltinchi hadini toping.",
+      "v": [
+        "−64",
+        "64",
+        "32",
+        "−32"
+      ],
+      "t": 1,
+      "izoh": "Oltinchi had b₆ = b₁·q⁵ formulasi bilan topiladi. Bu yerda (−2)⁵ = −32, chunki manfiy sonning toq darajasi manfiy. Demak b₆ = (−2)·(−32) = 64, ikki manfiy son ko'paytmasi musbat bo'ladi. Ishorani noto'g'ri qo'ysak −64, darajani noto'g'ri olsak 32 yoki −32 chiqadi. Javob: 64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "almashinuvchi-ishora",
+      "id": "matematika_prog_m04-geometrik-progressiya#3850f86a"
+    },
+    {
+      "q": "Geometrik progressiyaning maxraji manfiy bo'lib, to'rtinchi hadi −54 ga, oltinchi hadi esa −486 ga teng. Maxrajni toping.",
+      "v": [
+        "3",
+        "9",
+        "−3",
+        "−9"
+      ],
+      "t": 2,
+      "izoh": "To'rtinchi va oltinchi hadlar orasida ikkita qadam bor: b₆ = b₄·q². Bundan q² = (−486):(−54) = 9 hosil bo'ladi, ya'ni q = 3 yoki q = −3. Shartda maxraj manfiy deyilgani uchun q = −3 tanlanadi. Kvadratning o'zini javob deb olsak 9 yoki −9 chiqadi. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashinuvchi-ishora",
+      "id": "matematika_prog_m04-geometrik-progressiya#84a854bb"
+    },
+    {
+      "q": "1; −4; 16; −64; … ketma-ketligi geometrik progressiya bo'lsa, uning yettinchi hadi nechaga teng?",
+      "v": [
+        "−4 096",
+        "1 024",
+        "−1 024",
+        "4 096"
+      ],
+      "t": 3,
+      "izoh": "Maxraj q = (−4):1 = −4 ga teng, buni 16:(−4) = −4 tekshiruvi tasdiqlaydi. Yettinchi had b₇ = 1·(−4)⁶ formulasi bilan topiladi. Daraja juft bo'lgani uchun natija musbat: (−4)⁶ = 4 096. 1 024 — oltinchi hadning moduli (b₆ = −1 024), beshinchi had esa 256 ga teng; ishorani noto'g'ri qo'ysak −4 096 chiqadi. Javob: 4 096.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "almashinuvchi-ishora",
+      "id": "matematika_prog_m04-geometrik-progressiya#c5287d40"
+    },
+    {
+      "q": "Geometrik progressiyaning toq nomerli hadlari musbat, juft nomerlilari esa manfiy. Birinchi had 5 ga, uchinchi had 45 ga teng bo'lsa, ikkinchi hadni toping.",
+      "v": [
+        "−15",
+        "15",
+        "−45",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "Xarakteristik xossaga ko'ra b₂² = b₁·b₃ = 5·45 = 225, demak b₂ = 15 yoki b₂ = −15. Shartga ko'ra juft nomerli hadlar manfiy, shuning uchun b₂ = −15 olinadi. Bunda maxraj q = −3 bo'lib, b₃ = (−15)·(−3) = 45 tekshiruvdan o'tadi. Ishorani e'tiborsiz qoldirsak 15, arifmetik o'rtani olsak 25 chiqadi. Javob: −15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashinuvchi-ishora",
+      "id": "matematika_prog_m04-geometrik-progressiya#93fff90c"
+    },
+    {
+      "q": "√2; 2; 2√2; … ketma-ketligi geometrik progressiya bo'lsa, uning maxraji nechaga teng bo'ladi?",
+      "v": [
+        "2",
+        "√2",
+        "√2/2",
+        "2√2"
+      ],
+      "t": 1,
+      "izoh": "Maxrajni topish uchun ikkinchi hadni birinchisiga bo'lamiz: 2:√2 = √2. Tekshiruv uchun uchinchi hadni ikkinchisiga bo'lamiz: 2√2:2 = √2, nisbat bir xil chiqdi. Ikkinchi hadning o'zini maxraj deb olsak 2, nisbatni ag'darsak √2/2 chiqadi. Javob: √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-ildizli-hadlar",
+      "id": "matematika_prog_m04-geometrik-progressiya#8ce47ca1"
+    },
+    {
+      "q": "√3; 3; 3√3; … geometrik progressiyasining beshinchi hadini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "27",
+        "9",
+        "9√3",
+        "3√3"
+      ],
+      "t": 2,
+      "izoh": "Maxraj q = 3:√3 = √3 ga teng. Hadlarni ketma-ket yozamiz: √3; 3; 3√3; 9; 9√3. Demak beshinchi had 9√3 ga teng. To'rtinchi hadni olsak 9, oltinchisini olsak 27, uchinchisini olsak 3√3 chiqadi. Javob: 9√3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-ildizli-hadlar",
+      "id": "matematika_prog_m04-geometrik-progressiya#4ad4034d"
+    },
+    {
+      "q": "bₙ = 2^(n+1) formula bilan berilgan ketma-ketlikning birinchi hadi va maxraji qanday qiymatlarga ega bo'ladi?",
+      "v": [
+        "b₁ = 4, q = 2",
+        "b₁ = 2, q = 2",
+        "b₁ = 4, q = 4",
+        "b₁ = 2, q = 4"
+      ],
+      "t": 0,
+      "izoh": "Birinchi hadni topish uchun n = 1 ni qo'yamiz: b₁ = 2² = 4. Maxrajni topish uchun ikkinchi hadni hisoblaymiz: b₂ = 2³ = 8, demak q = 8:4 = 2. Daraja ko'rsatkichidagi qo'shimchani unutsak b₁ = 2 chiqadi, darajaning asosini maxraj bilan chalkashtirish esa q = 4 ga olib keladi. Javob: b₁ = 4, q = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "daraja-ildizli-hadlar",
+      "id": "matematika_prog_m04-geometrik-progressiya#c99b8eb3"
+    },
+    {
+      "q": "5; 5√5; 25; … geometrik progressiyasida 625 soni nechanchi had bo'lib keladi?",
+      "v": [
+        "5",
+        "6",
+        "9",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Maxraj q = 5√5:5 = √5 ga teng, ya'ni har qadamda son √5 marta ortadi. Hadlarni yozamiz: 5; 5√5; 25; 25√5; 125; 125√5; 625. Ko'rinib turibdiki, 625 yettinchi o'rinda turadi. Buni daraja orqali ham tekshirish mumkin: 5·(√5)⁶ = 5·125 = 625. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "daraja-ildizli-hadlar",
+      "id": "matematika_prog_m04-geometrik-progressiya#df797dda"
+    },
+    {
+      "q": "Dori moddasi qondan har 4 soatda yarmi chiqib ketadi. Bemorga 640 mg dori berilgan bo'lsa, 16 soatdan keyin qonda qancha modda qoladi?",
+      "v": [
+        "80 mg",
+        "40 mg",
+        "20 mg",
+        "160 mg"
+      ],
+      "t": 1,
+      "izoh": "16 soat ichida 4 soatlik oraliq to'rt marta takrorlanadi, demak modda to'rt marta yarimlanadi. Qolgan miqdor 640·(1/2)⁴ ga teng bo'ladi. Hisoblaymiz: 640:16 = 40 mg. Uch marta yarimlansa 80 mg, besh marta yarimlansa 20 mg, ikki marta yarimlansa 160 mg qoladi. Javob: 40 mg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "dori-parchalanish",
+      "id": "matematika_prog_m04-geometrik-progressiya#0c73cf5a"
+    },
+    {
+      "q": "Radioaktiv moddaning miqdori 96 grammdan 6 grammgacha kamayishi uchun 24 kun kerak bo'ldi. Uning yarim yemirilish davri necha kun?",
+      "v": [
+        "4 kun",
+        "8 kun",
+        "6 kun",
+        "12 kun"
+      ],
+      "t": 2,
+      "izoh": "Modda miqdori 96:6 = 16 marta kamaygan, 16 esa 2⁴ ga teng. Demak shu vaqt ichida yarimlanish to'rt marta sodir bo'lgan. Bitta yarimlanishga 24:4 = 6 kun to'g'ri keladi. Kamayish martasini uchga bo'lsak 8 kun, ikkiga bo'lsak 12 kun kabi noto'g'ri natijalar chiqadi. Javob: 6 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "dori-parchalanish",
+      "id": "matematika_prog_m04-geometrik-progressiya#93e99d88"
+    },
+    {
+      "q": "Organizmdagi dori miqdori har soatda 20% ga kamayadi. Bemorga 300 mg dori berilgan bo'lsa, uch soatdan keyin qonda qancha modda qoladi?",
+      "v": [
+        "120 mg",
+        "192 mg",
+        "122,88 mg",
+        "153,6 mg"
+      ],
+      "t": 3,
+      "izoh": "Har soatda miqdor 0,8 koeffitsientga ko'paytiriladi, ya'ni miqdorning 80 foizi qoladi. Uch soatdan keyin 300·0,8³ ni hisoblaymiz, bu yerda 0,8³ = 0,512. Demak qonda 300·0,512 = 153,6 mg modda qoladi. Kamayishni chiziqli deb hisoblasak 120 mg, ikki soat olsak 192 mg chiqadi. Javob: 153,6 mg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "dori-parchalanish",
+      "id": "matematika_prog_m04-geometrik-progressiya#3ff3d09f"
+    },
+    {
+      "q": "Qondagi dori miqdori geometrik progressiya bo'yicha kamayadi: ikkinchi soatda 180 mg, beshinchi soatda esa 22,5 mg qoldi. Progressiyaning maxrajini, ya'ni har soatlik koeffitsientni toping.",
+      "v": [
+        "0,5",
+        "0,125",
+        "0,25",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi va beshinchi soat orasida uchta qadam bor, demak q³ = 22,5:180 = 0,125 bo'ladi. Kub ildiz olamiz: q = 0,5, chunki 0,5³ = 0,125. Ya'ni har soatdan keyin oldingi miqdorning yarmi qoladi. Kub ildiz olishni unutsak 0,125, teskari nisbatni olsak 2 chiqadi. Javob: 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "dori-parchalanish",
+      "id": "matematika_prog_m04-geometrik-progressiya#7596bf88"
+    },
+    {
+      "q": "Geometrik progressiyaning n-hadini birinchi had va maxraj orqali hisoblash uchun qaysi formuladan foydalaniladi?",
+      "v": [
+        "bₙ = b₁·q^(n−1)",
+        "bₙ = b₁ + (n − 1)·q",
+        "bₙ = b₁·qⁿ",
+        "bₙ = b₁·q^(n+1)"
+      ],
+      "t": 0,
+      "izoh": "Geometrik progressiyada har bir keyingi had oldingisiga maxraj ko'paytirilib hosil qilinadi. Birinchi haddan n-hadgacha borish uchun maxraj n − 1 marta ko'paytiriladi. Shuning uchun formula bₙ = b₁·q^(n−1) ko'rinishida bo'ladi. Qo'shish amali arifmetik progressiyaga tegishli, daraja ko'rsatkichi n yoki n + 1 bo'lishi esa tipik xato. Javob: bₙ = b₁·q^(n−1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-tanlash",
+      "id": "matematika_prog_m04-geometrik-progressiya#803fe1ba"
+    },
+    {
+      "q": "Geometrik progressiyaning xarakteristik xossasini to'g'ri ifodalagan tenglikni quyidagilardan tanlang.",
+      "v": [
+        "2b₅ = b₄ + b₆",
+        "b₅² = b₄·b₆",
+        "b₅ = b₄·b₆",
+        "b₅² = b₄ + b₆"
+      ],
+      "t": 1,
+      "izoh": "Geometrik progressiyada har bir had qo'shni hadlarning geometrik o'rtasi bo'ladi. Bu shart hadning kvadrati qo'shni hadlar ko'paytmasiga teng ekanini bildiradi: b₅² = b₄·b₆. Yig'indi orqali yozilgan 2b₅ = b₄ + b₆ tenglik esa arifmetik progressiyaning xossasi. Kvadratni tushirib qoldirish ham tipik xato hisoblanadi. Javob: b₅² = b₄·b₆.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-tanlash",
+      "id": "matematika_prog_m04-geometrik-progressiya#c25a1e94"
+    },
+    {
+      "q": "Geometrik progressiyaning dastlabki n ta hadi ko'paytmasini birinchi had va maxraj orqali beruvchi formulani tanlang.",
+      "v": [
+        "Pₙ = b₁·qⁿ",
+        "Pₙ = n·b₁·q^(n−1)",
+        "Pₙ = b₁ⁿ·q^(n(n−1)/2)",
+        "Pₙ = b₁ⁿ·qⁿ"
+      ],
+      "t": 2,
+      "izoh": "Hadlarni ko'paytirganda b₁ ko'paytuvchisi n marta uchraydi, demak b₁ⁿ hosil bo'ladi. Maxrajning darajalari esa 0 dan n − 1 gacha qo'shiladi, ularning yig'indisi n(n−1)/2 ga teng. Shuning uchun Pₙ = b₁ⁿ·q^(n(n−1)/2) formulasi to'g'ri bo'ladi. Darajalar yig'indisini oddiy n deb olish tipik xato. Javob: Pₙ = b₁ⁿ·q^(n(n−1)/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-tanlash",
+      "id": "matematika_prog_m04-geometrik-progressiya#c29d122c"
+    },
+    {
+      "q": "Musbat hadli geometrik progressiyaning dastlabki n ta hadi ko'paytmasini chetki hadlar orqali ifodalovchi to'g'ri formulani ko'rsating.",
+      "v": [
+        "Pₙ = (b₁·bₙ)ⁿ",
+        "Pₙ = ((b₁ + bₙ)/2)ⁿ",
+        "Pₙ = n·b₁·bₙ",
+        "Pₙ = √((b₁·bₙ)ⁿ)"
+      ],
+      "t": 3,
+      "izoh": "Chetdan teng uzoqlikdagi hadlar ko'paytmasi doim bir xil: b₁·bₙ ga teng. Shunday juftliklar n/2 ta bo'lgani uchun ko'paytma (b₁·bₙ) ning n/2-darajasiga teng bo'ladi. Buni ildiz orqali Pₙ = √((b₁·bₙ)ⁿ) ko'rinishida yozish mumkin. Ildizni tushirib qoldirish ko'paytmani kvadratiga oshirib yuboradi. Javob: Pₙ = √((b₁·bₙ)ⁿ).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "formula-tanlash",
+      "id": "matematika_prog_m04-geometrik-progressiya#ae3298d9"
+    },
+    {
+      "q": "Geometrik progressiyaning maxraji 6 ga teng. Uning faqat toq nomerli hadlaridan tuzilgan yangi ketma-ketlikning maxraji nechaga teng bo'ladi?",
+      "v": [
+        "6",
+        "12",
+        "36",
+        "216"
+      ],
+      "t": 2,
+      "izoh": "Toq nomerli hadlarni olganda har safar bitta had oshirib tashlanadi, ya'ni ikkita qadam bosiladi. Ikki qadam maxrajni ikki marta ko'paytirishni bildiradi, demak yangi maxraj q² ga teng. Bu yerda q = 6, shuning uchun yangi maxraj 36 bo'ladi. Maxrajni ikkiga ko'paytirsak 12, uchta qadam sanasak 216 chiqadi. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yangi-progressiya-maxraji",
+      "id": "matematika_prog_m04-geometrik-progressiya#7ba14d70"
+    },
+    {
+      "q": "Maxraji 2 bo'lgan geometrik progressiyaning birinchi, to'rtinchi, yettinchi hadlari olinib yangi ketma-ketlik tuzildi. Yangi ketma-ketlikning maxrajini toping.",
+      "v": [
+        "6",
+        "4",
+        "16",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Birinchi haddan to'rtinchi hadga o'tishda uchta qadam bosiladi, to'rtinchidan yettinchiga o'tishda ham shuncha. Demak yangi maxraj q³ ga teng bo'ladi. Bu yerda q = 2, shuning uchun q³ = 8. Maxrajni uchga ko'paytirsak 6, ikkita qadam sanasak 4, to'rtta qadam sanasak 16 chiqadi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yangi-progressiya-maxraji",
+      "id": "matematika_prog_m04-geometrik-progressiya#147c58e7"
+    },
+    {
+      "q": "Geometrik progressiyaning har bir hadi 5 ga ko'paytirildi. Hosil bo'lgan ketma-ketlik haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "Geometrik progressiya bo'ladi, maxraji o'zgarmaydi",
+        "Geometrik progressiya bo'ladi, maxraji 5 marta ortadi",
+        "Geometrik progressiya bo'ladi, maxraji 5 marta kamayadi",
+        "Geometrik progressiya bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Yangi ketma-ketlikning hadlari 5b₁; 5b₂; 5b₃ ko'rinishida bo'ladi. Qo'shni hadlar nisbatini olamiz: (5b₂):(5b₁) = b₂:b₁ = q. Beshlar qisqarib ketgani uchun maxraj o'zgarmaydi, faqat birinchi had 5 marta ortadi. Javob: geometrik progressiya bo'ladi, maxraji o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yangi-progressiya-maxraji",
+      "id": "matematika_prog_m04-geometrik-progressiya#d397187e"
+    },
+    {
+      "q": "Musbat hadli geometrik progressiyaning maxraji 5 ga teng. Uning har bir hadi kvadratga ko'tarilsa, hosil bo'lgan progressiyaning maxraji qanday bo'ladi?",
+      "v": [
+        "5",
+        "25",
+        "125",
+        "10"
+      ],
+      "t": 1,
+      "izoh": "Yangi ketma-ketlikning hadlari b₁²; b₂²; b₃² ko'rinishida bo'ladi. Qo'shni hadlar nisbati (b₂:b₁)² = q² ga teng bo'ladi. Bu yerda q = 5, demak yangi maxraj 5² = 25. Maxraj o'zgarmaydi deb o'ylasak 5, kubga ko'tarsak 125, maxrajni ikkilantirsak 10 chiqadi. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yangi-progressiya-maxraji",
+      "id": "matematika_prog_m04-geometrik-progressiya#0710ab5d"
+    },
+    {
+      "q": "Birinchi hadi 3, maxraji 2 bo'lgan geometrik progressiyaning nechanchi hadidan boshlab hadlar 1 000 dan katta bo'ladi?",
+      "v": [
+        "9",
+        "10",
+        "11",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "Shart 3·2^(n−1) > 1 000 ko'rinishida yoziladi, bundan 2^(n−1) > 333 kelib chiqadi. 2⁸ = 256 bu shartni qanoatlantirmaydi, 2⁹ = 512 esa qanoatlantiradi. Demak n − 1 = 9 va n = 10, ya'ni b₁₀ = 1 536. To'qqizinchi had 768 bo'lib, u hali 1 000 dan kichik. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chegara-oshish-nomeri",
+      "id": "matematika_prog_m04-geometrik-progressiya#cf0119c6"
+    },
+    {
+      "q": "Ko'lda suvo'tlar qoplagan maydon har kuni 3 barobar ortadi va birinchi kuni u 2 m² ni tashkil etdi. Qaysi kundan boshlab maydon 1 000 m² dan oshadi?",
+      "v": [
+        "6",
+        "8",
+        "7",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Shart 2·3^(n−1) > 1 000 ko'rinishida bo'ladi, bundan 3^(n−1) > 500 kelib chiqadi. 3⁵ = 243 yetarli emas, 3⁶ = 729 esa shartni qanoatlantiradi. Demak n − 1 = 6 va n = 7, ya'ni yettinchi kuni maydon 1 458 m² bo'ladi. Oltinchi kuni maydon 486 m² bo'lib, u hali 1 000 dan kichik. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chegara-oshish-nomeri",
+      "id": "matematika_prog_m04-geometrik-progressiya#b1c9d634"
+    },
+    {
+      "q": "Birinchi hadi 3 200, maxraji 1/2 bo'lgan geometrik progressiyaning nechanchi hadidan boshlab hadlar 2 dan kichik bo'ladi?",
+      "v": [
+        "11",
+        "13",
+        "10",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Shart 3 200:2^(n−1) < 2 ko'rinishida yoziladi, bundan 2^(n−1) > 1 600 kelib chiqadi. 2¹⁰ = 1 024 yetarli emas, 2¹¹ = 2 048 esa shartni qanoatlantiradi. Demak n − 1 = 11 va n = 12, bunda had 3 200:2 048 = 1,5625 ga teng. O'n birinchi had esa 3,125 bo'lib, u hali 2 dan katta. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chegara-oshish-nomeri",
+      "id": "matematika_prog_m04-geometrik-progressiya#fc2c3518"
+    },
+    {
+      "q": "Idishdagi bakteriyalar soni har soatda ikki barobar ortadi va dastlab 250 ta bakteriya bor edi. Necha soatdan keyin ularning soni 100 000 dan oshadi?",
+      "v": [
+        "9",
+        "8",
+        "10",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "Shart 250·2ⁿ > 100 000 ko'rinishida bo'ladi, bundan 2ⁿ > 400 kelib chiqadi. 2⁸ = 256 yetarli emas, 2⁹ = 512 esa shartni qanoatlantiradi. Demak n = 9, ya'ni to'qqiz soatdan keyin bakteriyalar soni 128 000 taga yetadi. Sakkiz soatdan keyin ularning soni 64 000 ta bo'lib, chegaradan past qoladi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chegara-oshish-nomeri",
+      "id": "matematika_prog_m04-geometrik-progressiya#5770f2f6"
+    }
+  ]
+}

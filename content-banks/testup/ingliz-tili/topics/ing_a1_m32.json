@@ -1,0 +1,1293 @@
+{
+  "nom": "Places in town (Shahardagi joylar)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "\"Kasalxona\" inglizcha qanday?",
+      "v": [
+        "library",
+        "hospital",
+        "cinema",
+        "park"
+      ],
+      "t": 1,
+      "izoh": "Kasalxona - hospital.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#4e3e6077"
+    },
+    {
+      "q": "\"Do'kon\" inglizcha qanday?",
+      "v": [
+        "shop",
+        "school",
+        "station",
+        "museum"
+      ],
+      "t": 0,
+      "izoh": "Do'kon - shop.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#a2a7f0ff"
+    },
+    {
+      "q": "\"Bog'\" (park) inglizcha qanday?",
+      "v": [
+        "bank",
+        "cafe",
+        "park",
+        "market"
+      ],
+      "t": 2,
+      "izoh": "Bog' - park.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#f50935f4"
+    },
+    {
+      "q": "\"Bank\" inglizcha qanday?",
+      "v": [
+        "bank",
+        "shop",
+        "school",
+        "cinema"
+      ],
+      "t": 0,
+      "izoh": "Bank - bank.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#492d1c29"
+    },
+    {
+      "q": "\"Kinoteatr\" inglizcha qanday?",
+      "v": [
+        "library",
+        "cinema",
+        "hospital",
+        "market"
+      ],
+      "t": 1,
+      "izoh": "Kinoteatr - cinema.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#88780d6e"
+    },
+    {
+      "q": "\"Restoran\" inglizcha qanday?",
+      "v": [
+        "restaurant",
+        "station",
+        "bank",
+        "park"
+      ],
+      "t": 0,
+      "izoh": "Restoran - restaurant.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#6ea691f0"
+    },
+    {
+      "q": "\"Kutubxona\" inglizcha qanday?",
+      "v": [
+        "museum",
+        "school",
+        "library",
+        "shop"
+      ],
+      "t": 2,
+      "izoh": "Kutubxona - library.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#4c14ad9f"
+    },
+    {
+      "q": "\"Bozor\" inglizcha qanday?",
+      "v": [
+        "market",
+        "bank",
+        "cafe",
+        "park"
+      ],
+      "t": 0,
+      "izoh": "Bozor - market.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#0cf42679"
+    },
+    {
+      "q": "\"Bekat\" (poyezd) inglizcha qanday?",
+      "v": [
+        "museum",
+        "station",
+        "cinema",
+        "shop"
+      ],
+      "t": 1,
+      "izoh": "Bekat - station.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#cb73c3e4"
+    },
+    {
+      "q": "\"Pochta\" inglizcha qanday?",
+      "v": [
+        "post office",
+        "supermarket",
+        "pharmacy",
+        "library"
+      ],
+      "t": 0,
+      "izoh": "Pochta - post office.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#b4a34cac"
+    },
+    {
+      "q": "\"Muzey\" inglizcha qanday?",
+      "v": [
+        "market",
+        "cafe",
+        "museum",
+        "bank"
+      ],
+      "t": 2,
+      "izoh": "Muzey - museum.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#f32a75c8"
+    },
+    {
+      "q": "\"Kafe\" inglizcha qanday?",
+      "v": [
+        "cafe",
+        "school",
+        "station",
+        "park"
+      ],
+      "t": 0,
+      "izoh": "Kafe - cafe.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#855b7197"
+    },
+    {
+      "q": "\"Dorixona\" inglizcha qanday?",
+      "v": [
+        "supermarket",
+        "pharmacy",
+        "restaurant",
+        "library"
+      ],
+      "t": 1,
+      "izoh": "Dorixona - pharmacy.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#e273feca"
+    },
+    {
+      "q": "Choose: I buy medicine at the ___.",
+      "v": [
+        "bank",
+        "school",
+        "pharmacy",
+        "park"
+      ],
+      "t": 2,
+      "izoh": "Dori dorixonada - pharmacy.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#427a32b5"
+    },
+    {
+      "q": "Choose: I read books at the ___.",
+      "v": [
+        "library",
+        "market",
+        "station",
+        "bank"
+      ],
+      "t": 0,
+      "izoh": "Kitob kutubxonada - library.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#a47c494c"
+    },
+    {
+      "q": "Choose: I learn at ___.",
+      "v": [
+        "hospital",
+        "school",
+        "cinema",
+        "shop"
+      ],
+      "t": 1,
+      "izoh": "O'qish maktabda - school.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#271f9c4b"
+    },
+    {
+      "q": "Choose: I watch a film at the ___.",
+      "v": [
+        "cinema",
+        "bank",
+        "market",
+        "park"
+      ],
+      "t": 0,
+      "izoh": "Film kinoteatrda - cinema.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#d924e6ab"
+    },
+    {
+      "q": "Choose: I keep my money in the ___.",
+      "v": [
+        "library",
+        "park",
+        "bank",
+        "cafe"
+      ],
+      "t": 2,
+      "izoh": "Pul bankda - bank.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#6879f6b2"
+    },
+    {
+      "q": "Choose: A doctor works at the ___.",
+      "v": [
+        "hospital",
+        "shop",
+        "museum",
+        "station"
+      ],
+      "t": 0,
+      "izoh": "Shifokor kasalxonada - hospital.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#ae936ba9"
+    },
+    {
+      "q": "Choose: I eat dinner at the ___.",
+      "v": [
+        "bank",
+        "restaurant",
+        "library",
+        "school"
+      ],
+      "t": 1,
+      "izoh": "Ovqat restoranda - restaurant.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#dd7ebeea"
+    },
+    {
+      "q": "Choose: I buy a lot of food at the ___.",
+      "v": [
+        "cinema",
+        "museum",
+        "supermarket",
+        "bank"
+      ],
+      "t": 2,
+      "izoh": "Ko'p oziq-ovqat - supermarket.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#b8b24fb8"
+    },
+    {
+      "q": "Choose: I send a letter at the ___.",
+      "v": [
+        "post office",
+        "park",
+        "school",
+        "cafe"
+      ],
+      "t": 0,
+      "izoh": "Xat pochtada - post office.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#a6e6e888"
+    },
+    {
+      "q": "Choose: I take a train at the ___.",
+      "v": [
+        "shop",
+        "station",
+        "bank",
+        "library"
+      ],
+      "t": 1,
+      "izoh": "Poyezd bekatda - station.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#73238338"
+    },
+    {
+      "q": "Choose: I drink coffee at the ___.",
+      "v": [
+        "hospital",
+        "market",
+        "cafe",
+        "bank"
+      ],
+      "t": 2,
+      "izoh": "Qahva kafeda - cafe.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#02ab6ce6"
+    },
+    {
+      "q": "Choose: Children play in the ___.",
+      "v": [
+        "park",
+        "bank",
+        "pharmacy",
+        "station"
+      ],
+      "t": 0,
+      "izoh": "Bolalar parkda o'ynaydi - park.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#4ee1fc94"
+    },
+    {
+      "q": "Choose: I see old things at the ___.",
+      "v": [
+        "cinema",
+        "museum",
+        "cafe",
+        "shop"
+      ],
+      "t": 1,
+      "izoh": "Eski narsalar muzeyda - museum.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#80ad0ed6"
+    },
+    {
+      "q": "Which is a place in town?",
+      "v": [
+        "apple",
+        "hospital",
+        "happy",
+        "run"
+      ],
+      "t": 1,
+      "izoh": "Hospital - shahardagi joy.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#4fa99843"
+    },
+    {
+      "q": "Which is a place in town?",
+      "v": [
+        "blue",
+        "fast",
+        "library",
+        "sing"
+      ],
+      "t": 2,
+      "izoh": "Library - joy.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#4fa99843~2"
+    },
+    {
+      "q": "There is a ___ near my house. I buy bread there.",
+      "v": [
+        "shop",
+        "bank",
+        "school",
+        "cinema"
+      ],
+      "t": 0,
+      "izoh": "Non do'konda - shop.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#931665d5"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "The school is big.",
+        "The school big is.",
+        "Big the school is.",
+        "Is school the big."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: The school is big.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#9a16dc9c"
+    },
+    {
+      "q": "Choose: We buy fruit at the ___.",
+      "v": [
+        "bank",
+        "market",
+        "museum",
+        "station"
+      ],
+      "t": 1,
+      "izoh": "Meva bozorda - market.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#5808ccda"
+    },
+    {
+      "q": "Where do you buy stamps?",
+      "v": [
+        "park",
+        "cinema",
+        "post office",
+        "school"
+      ],
+      "t": 2,
+      "izoh": "Markalar pochtada - post office.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#d96d948a"
+    },
+    {
+      "q": "Where do sick people go?",
+      "v": [
+        "hospital",
+        "cafe",
+        "bank",
+        "library"
+      ],
+      "t": 0,
+      "izoh": "Kasallar kasalxonaga boradi - hospital.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#d0fd60c2"
+    },
+    {
+      "q": "A big shop with much food is a ___.",
+      "v": [
+        "park",
+        "supermarket",
+        "museum",
+        "station"
+      ],
+      "t": 1,
+      "izoh": "Katta oziq-ovqat do'koni - supermarket.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#7526efd1"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I go to school.",
+        "I go school.",
+        "I go at school.",
+        "I going school."
+      ],
+      "t": 0,
+      "izoh": "'go to school' to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#9a16dc9c~2"
+    },
+    {
+      "q": "Where can you borrow books?",
+      "v": [
+        "market",
+        "bank",
+        "library",
+        "cinema"
+      ],
+      "t": 2,
+      "izoh": "Kitob olish - library.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#c9f75c6b"
+    },
+    {
+      "q": "Choose: The train is at the ___.",
+      "v": [
+        "station",
+        "cafe",
+        "park",
+        "shop"
+      ],
+      "t": 0,
+      "izoh": "Poyezd bekatda - station.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#f81a428f"
+    },
+    {
+      "q": "Which place gives you money service?",
+      "v": [
+        "museum",
+        "bank",
+        "park",
+        "cinema"
+      ],
+      "t": 1,
+      "izoh": "Pul xizmati - bank.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#ed5c9787"
+    },
+    {
+      "q": "\"Supermarket\" so'zi qaysi joyni bildiradi?",
+      "v": [
+        "kichik park",
+        "katta oziq-ovqat do'koni",
+        "kasalxona",
+        "maktab"
+      ],
+      "t": 1,
+      "izoh": "Supermarket - katta oziq-ovqat do'koni.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#090595e2"
+    },
+    {
+      "q": "'Maktab' inglizcha ___.",
+      "v": [
+        "school",
+        "shop",
+        "park",
+        "bank"
+      ],
+      "t": 0,
+      "izoh": "'Maktab' = school.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#11f7e154"
+    },
+    {
+      "q": "We study at ___.",
+      "v": [
+        "school",
+        "hospital",
+        "cinema",
+        "market"
+      ],
+      "t": 0,
+      "izoh": "o'qiymiz = school.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#3fcf2f26"
+    },
+    {
+      "q": "'Kasalxona' inglizcha ___.",
+      "v": [
+        "hospital",
+        "hotel",
+        "school",
+        "shop"
+      ],
+      "t": 0,
+      "izoh": "'Kasalxona' = hospital.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#23c50992"
+    },
+    {
+      "q": "The doctor works in a ___.",
+      "v": [
+        "hospital",
+        "school",
+        "bank",
+        "park"
+      ],
+      "t": 0,
+      "izoh": "shifokor = hospital.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#122f9b78"
+    },
+    {
+      "q": "'Do'kon' inglizcha ___.",
+      "v": [
+        "shop",
+        "park",
+        "zoo",
+        "bank"
+      ],
+      "t": 0,
+      "izoh": "'Do'kon' = shop.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#5b43dee9"
+    },
+    {
+      "q": "We buy bread at the ___.",
+      "v": [
+        "shop",
+        "school",
+        "hospital",
+        "cinema"
+      ],
+      "t": 0,
+      "izoh": "non olamiz = shop.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#c4443a30"
+    },
+    {
+      "q": "'Bog'' (dam olish joyi) inglizcha ___.",
+      "v": [
+        "park",
+        "bank",
+        "school",
+        "market"
+      ],
+      "t": 0,
+      "izoh": "'Bog'' = park.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#a8d85b36"
+    },
+    {
+      "q": "Children play in the ___.",
+      "v": [
+        "park",
+        "bank",
+        "hospital",
+        "post office"
+      ],
+      "t": 0,
+      "izoh": "bolalar o'ynaydi = park.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#a879ee5e"
+    },
+    {
+      "q": "We keep money at the ___.",
+      "v": [
+        "bank",
+        "park",
+        "zoo",
+        "cafe"
+      ],
+      "t": 0,
+      "izoh": "pul saqlaymiz = bank.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#f8c370e2"
+    },
+    {
+      "q": "'Kinoteatr' inglizcha ___.",
+      "v": [
+        "cinema",
+        "library",
+        "museum",
+        "station"
+      ],
+      "t": 0,
+      "izoh": "'Kinoteatr' = cinema.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#795160e2"
+    },
+    {
+      "q": "We watch films at the ___.",
+      "v": [
+        "cinema",
+        "bank",
+        "school",
+        "market"
+      ],
+      "t": 0,
+      "izoh": "film ko'ramiz = cinema.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#ffc883e5"
+    },
+    {
+      "q": "'Restoran' inglizcha ___.",
+      "v": [
+        "restaurant",
+        "hospital",
+        "school",
+        "bank"
+      ],
+      "t": 0,
+      "izoh": "'Restoran' = restaurant.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#5290aa64"
+    },
+    {
+      "q": "We eat dinner at a ___.",
+      "v": [
+        "restaurant",
+        "library",
+        "bank",
+        "station"
+      ],
+      "t": 0,
+      "izoh": "ovqat yeymiz = restaurant.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#ca991ad9"
+    },
+    {
+      "q": "'Kutubxona' inglizcha ___.",
+      "v": [
+        "library",
+        "cinema",
+        "museum",
+        "market"
+      ],
+      "t": 0,
+      "izoh": "'Kutubxona' = library.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#5b84441b"
+    },
+    {
+      "q": "We borrow books at the ___.",
+      "v": [
+        "library",
+        "park",
+        "zoo",
+        "bank"
+      ],
+      "t": 0,
+      "izoh": "kitob olamiz = library.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#8cb9f3da"
+    },
+    {
+      "q": "'Bozor' inglizcha ___.",
+      "v": [
+        "market",
+        "museum",
+        "hotel",
+        "airport"
+      ],
+      "t": 0,
+      "izoh": "'Bozor' = market.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#69b678a7"
+    },
+    {
+      "q": "We buy fruit at the ___.",
+      "v": [
+        "market",
+        "cinema",
+        "library",
+        "bank"
+      ],
+      "t": 0,
+      "izoh": "meva olamiz = market.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#ef03d950"
+    },
+    {
+      "q": "'Bekat/vokzal' inglizcha ___.",
+      "v": [
+        "station",
+        "school",
+        "park",
+        "cafe"
+      ],
+      "t": 0,
+      "izoh": "'Vokzal' = station.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#50c437c1"
+    },
+    {
+      "q": "We take a train at the ___.",
+      "v": [
+        "station",
+        "hospital",
+        "library",
+        "zoo"
+      ],
+      "t": 0,
+      "izoh": "poyezd = station.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#f632224c"
+    },
+    {
+      "q": "'Pochta' inglizcha ___.",
+      "v": [
+        "post office",
+        "museum",
+        "hotel",
+        "park"
+      ],
+      "t": 0,
+      "izoh": "'Pochta' = post office.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#b1f9d20d"
+    },
+    {
+      "q": "We send letters at the ___.",
+      "v": [
+        "post office",
+        "cinema",
+        "bank",
+        "zoo"
+      ],
+      "t": 0,
+      "izoh": "xat yuboramiz = post office.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#1b2e83da"
+    },
+    {
+      "q": "'Muzey' inglizcha ___.",
+      "v": [
+        "museum",
+        "market",
+        "station",
+        "cafe"
+      ],
+      "t": 0,
+      "izoh": "'Muzey' = museum.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#45fb2094"
+    },
+    {
+      "q": "We see old things at the ___.",
+      "v": [
+        "museum",
+        "shop",
+        "bank",
+        "park"
+      ],
+      "t": 0,
+      "izoh": "qadimgi narsalar = museum.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#87942847"
+    },
+    {
+      "q": "'Kafe' inglizcha ___.",
+      "v": [
+        "cafe",
+        "school",
+        "bank",
+        "hospital"
+      ],
+      "t": 0,
+      "izoh": "'Kafe' = cafe.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#9bddde97"
+    },
+    {
+      "q": "We drink coffee at the ___.",
+      "v": [
+        "cafe",
+        "library",
+        "station",
+        "museum"
+      ],
+      "t": 0,
+      "izoh": "kofe ichamiz = cafe.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#7be0259e"
+    },
+    {
+      "q": "We buy many things at the ___.",
+      "v": [
+        "supermarket",
+        "zoo",
+        "museum",
+        "airport"
+      ],
+      "t": 0,
+      "izoh": "ko'p narsa = supermarket.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#9524f809"
+    },
+    {
+      "q": "'Dorixona' inglizcha ___.",
+      "v": [
+        "pharmacy",
+        "library",
+        "park",
+        "bank"
+      ],
+      "t": 0,
+      "izoh": "'Dorixona' = pharmacy.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#e0e5df6c"
+    },
+    {
+      "q": "We buy medicine at the ___.",
+      "v": [
+        "pharmacy",
+        "cinema",
+        "school",
+        "market"
+      ],
+      "t": 0,
+      "izoh": "dori olamiz = pharmacy.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#e7adff2e"
+    },
+    {
+      "q": "'Hayvonot bog'i' inglizcha ___.",
+      "v": [
+        "zoo",
+        "park",
+        "museum",
+        "hotel"
+      ],
+      "t": 0,
+      "izoh": "'Hayvonot bog'i' = zoo.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#fdcf410b"
+    },
+    {
+      "q": "We see animals at the ___.",
+      "v": [
+        "zoo",
+        "bank",
+        "library",
+        "station"
+      ],
+      "t": 0,
+      "izoh": "hayvonlar = zoo.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#965cb784"
+    },
+    {
+      "q": "'Aeroport' inglizcha ___.",
+      "v": [
+        "airport",
+        "station",
+        "hotel",
+        "market"
+      ],
+      "t": 0,
+      "izoh": "'Aeroport' = airport.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#e99496ab"
+    },
+    {
+      "q": "We take a plane at the ___.",
+      "v": [
+        "airport",
+        "school",
+        "park",
+        "cafe"
+      ],
+      "t": 0,
+      "izoh": "samolyot = airport.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#0601c926"
+    },
+    {
+      "q": "'Mehmonxona' inglizcha ___.",
+      "v": [
+        "hotel",
+        "hospital",
+        "school",
+        "library"
+      ],
+      "t": 0,
+      "izoh": "'Mehmonxona' = hotel.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#6b669e90"
+    },
+    {
+      "q": "We sleep at a ___ when we travel.",
+      "v": [
+        "hotel",
+        "bank",
+        "zoo",
+        "museum"
+      ],
+      "t": 0,
+      "izoh": "sayohatda = hotel.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#3f818156"
+    },
+    {
+      "q": "The teacher works at the ___.",
+      "v": [
+        "school",
+        "hospital",
+        "bank",
+        "zoo"
+      ],
+      "t": 0,
+      "izoh": "o'qituvchi = school.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#98b0eeeb"
+    },
+    {
+      "q": "The nurse works at the ___.",
+      "v": [
+        "hospital",
+        "cinema",
+        "market",
+        "park"
+      ],
+      "t": 0,
+      "izoh": "hamshira = hospital.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#70768267"
+    },
+    {
+      "q": "Where can you borrow books? The ___.",
+      "v": [
+        "library",
+        "bank",
+        "zoo",
+        "cafe"
+      ],
+      "t": 0,
+      "izoh": "kitob = library.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#e7a9a919"
+    },
+    {
+      "q": "Where do you post a letter? The ___.",
+      "v": [
+        "post office",
+        "park",
+        "zoo",
+        "cinema"
+      ],
+      "t": 0,
+      "izoh": "xat = post office.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#a9851dd2"
+    },
+    {
+      "q": "Where do you catch a train? The ___.",
+      "v": [
+        "station",
+        "hotel",
+        "museum",
+        "shop"
+      ],
+      "t": 0,
+      "izoh": "poyezd = station.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#efa67e13"
+    },
+    {
+      "q": "Where do you see a film? The ___.",
+      "v": [
+        "cinema",
+        "bank",
+        "school",
+        "market"
+      ],
+      "t": 0,
+      "izoh": "film = cinema.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#a7c8c3a8"
+    },
+    {
+      "q": "Where do you get money? The ___.",
+      "v": [
+        "bank",
+        "park",
+        "zoo",
+        "cafe"
+      ],
+      "t": 0,
+      "izoh": "pul = bank.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#fd14a818"
+    },
+    {
+      "q": "Where do you buy medicine? The ___.",
+      "v": [
+        "pharmacy",
+        "library",
+        "museum",
+        "hotel"
+      ],
+      "t": 0,
+      "izoh": "dori = pharmacy.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#f54512c4"
+    },
+    {
+      "q": "Where do sick people go? The ___.",
+      "v": [
+        "hospital",
+        "cinema",
+        "park",
+        "bank"
+      ],
+      "t": 0,
+      "izoh": "kasallar = hospital.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#f0d98f39"
+    },
+    {
+      "q": "Where do you see lions? The ___.",
+      "v": [
+        "zoo",
+        "library",
+        "bank",
+        "post office"
+      ],
+      "t": 0,
+      "izoh": "sherlar = zoo.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#09d6d2c8"
+    },
+    {
+      "q": "Where do planes go? The ___.",
+      "v": [
+        "airport",
+        "station",
+        "hotel",
+        "cafe"
+      ],
+      "t": 0,
+      "izoh": "samolyot = airport.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#41d64d2d"
+    },
+    {
+      "q": "Where do you eat a big meal? A ___.",
+      "v": [
+        "restaurant",
+        "bank",
+        "library",
+        "museum"
+      ],
+      "t": 0,
+      "izoh": "katta ovqat = restaurant.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#2110ec98"
+    },
+    {
+      "q": "Where do you buy vegetables? The ___.",
+      "v": [
+        "market",
+        "cinema",
+        "school",
+        "hotel"
+      ],
+      "t": 0,
+      "izoh": "sabzavot = market.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#3fed8fbf"
+    },
+    {
+      "q": "Where do children learn? The ___.",
+      "v": [
+        "school",
+        "zoo",
+        "bank",
+        "airport"
+      ],
+      "t": 0,
+      "izoh": "bolalar = school.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#9138a455"
+    },
+    {
+      "q": "I go shopping at the ___.",
+      "v": [
+        "supermarket",
+        "hospital",
+        "station",
+        "museum"
+      ],
+      "t": 0,
+      "izoh": "xarid = supermarket.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#c3730ff0"
+    },
+    {
+      "q": "Qaysi biri bino EMAS?",
+      "v": [
+        "tree",
+        "school",
+        "shop",
+        "bank"
+      ],
+      "t": 0,
+      "izoh": "tree (daraxt) bino emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#605c175e"
+    },
+    {
+      "q": "A place with many animals is a ___.",
+      "v": [
+        "zoo",
+        "park",
+        "bank",
+        "cafe"
+      ],
+      "t": 0,
+      "izoh": "hayvonlar joyi = zoo.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#ee3d3a28"
+    },
+    {
+      "q": "A place with famous old art is a ___.",
+      "v": [
+        "museum",
+        "market",
+        "cafe",
+        "hotel"
+      ],
+      "t": 0,
+      "izoh": "san'at = museum.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#4a7cf566"
+    },
+    {
+      "q": "A train waits at the ___.",
+      "v": [
+        "station",
+        "airport",
+        "hotel",
+        "cinema"
+      ],
+      "t": 0,
+      "izoh": "poyezd = station.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#99543f7c"
+    },
+    {
+      "q": "A plane waits at the ___.",
+      "v": [
+        "airport",
+        "station",
+        "bank",
+        "park"
+      ],
+      "t": 0,
+      "izoh": "samolyot = airport.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#463ae8e4"
+    },
+    {
+      "q": "We drink tea and eat cake at a ___.",
+      "v": [
+        "cafe",
+        "bank",
+        "school",
+        "zoo"
+      ],
+      "t": 0,
+      "izoh": "choy va tort = cafe.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#5e3c936c"
+    },
+    {
+      "q": "The library is full of ___.",
+      "v": [
+        "books",
+        "food",
+        "cars",
+        "animals"
+      ],
+      "t": 0,
+      "izoh": "kutubxona = kitoblar.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#3923076d"
+    },
+    {
+      "q": "The park has many ___.",
+      "v": [
+        "trees",
+        "planes",
+        "trains",
+        "doctors"
+      ],
+      "t": 0,
+      "izoh": "bog' = daraxtlar.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#012cead1"
+    },
+    {
+      "q": "At the hotel we ___.",
+      "v": [
+        "sleep",
+        "study",
+        "send letters",
+        "see animals"
+      ],
+      "t": 0,
+      "izoh": "mehmonxona = uxlaymiz.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#16a71b93"
+    },
+    {
+      "q": "At the cinema we ___.",
+      "v": [
+        "watch films",
+        "buy medicine",
+        "take trains",
+        "read books"
+      ],
+      "t": 0,
+      "izoh": "kino = film ko'rish.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#7a94228a"
+    },
+    {
+      "q": "At the bank we ___.",
+      "v": [
+        "keep money",
+        "see animals",
+        "watch films",
+        "cook food"
+      ],
+      "t": 0,
+      "izoh": "bank = pul.",
+      "qiy": "oson",
+      "id": "ing_a1_m32#8dd56741"
+    }
+  ]
+}

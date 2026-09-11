@@ -1,0 +1,1609 @@
+{
+  "nom": "To'g'ri burchakli uchburchak: Pifagor teoremasi va metrik munosabatlar",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Anvar bog'idagi to'g'ri burchakli uchastkaning bir tomoni 9 m, unga perpendikulyar tomoni esa 12 m. Shu ikki tomonning erkin uchlarini tutashtiruvchi to'siq uzunligi necha metr?",
+      "v": [
+        "15 m",
+        "21 m",
+        "10,5 m",
+        "108 m"
+      ],
+      "t": 0,
+      "izoh": "Uchastka to'g'ri burchakli uchburchak hosil qiladi, izlanayotgan to'siq esa gipotenuza. Pifagor teoremasiga ko'ra c² = 9² + 12² = 81 + 144 = 225, demak c = √225 = 15 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,101.3 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='95.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='162.5' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='60' y='170.6' font-size='13' fill='%23334155' text-anchor='end'%3E9 m%3C/text%3E%3Ctext x='174.5' y='164.6' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gipotenuza-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#14cb1501"
+    },
+    {
+      "q": "Do'kondagi televizor ekranining eni 80 sm, balandligi esa 60 sm. Ekranning diagonali, ya'ni ekran o'lchami necha santimetrga teng?",
+      "v": [
+        "140 sm",
+        "100 sm",
+        "70 sm",
+        "20 sm"
+      ],
+      "t": 1,
+      "izoh": "Ekran to'g'ri to'rtburchak, diagonal uni ikkita to'g'ri burchakli uchburchakka ajratadi. d² = 80² + 60² = 6400 + 3600 = 10000, demak d = √10000 = 100 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,75 245,75 245,215 55,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='215' x2='245' y2='75' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,215 67,203 55,203' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='69' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='231' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='231' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='235' font-size='13' fill='%23334155' text-anchor='middle'%3E80 sm%3C/text%3E%3Ctext x='45' y='145' font-size='13' fill='%23334155' text-anchor='end'%3E60 sm%3C/text%3E%3Ctext x='156' y='137' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gipotenuza-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#38cad176"
+    },
+    {
+      "q": "Dilnoza ramka yasash uchun uzunligi 20 sm va 21 sm bo'lgan ikki reykani to'g'ri burchak ostida biriktirdi. Ularning bo'sh uchlarini tutashtiruvchi uchinchi reyka uzunligi qancha bo'ladi?",
+      "v": [
+        "41 sm",
+        "20,5 sm",
+        "29 sm",
+        "841 sm"
+      ],
+      "t": 2,
+      "izoh": "Ikki reyka katetlar, uchinchisi esa gipotenuza bo'ladi. c² = 20² + 21² = 400 + 441 = 841. Endi kvadrat ildiz olamiz: c = √841 = 29 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,72 246.4,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='66' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='254.4' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='158.2' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E21 sm%3C/text%3E%3Ctext x='60' y='156' font-size='13' fill='%23334155' text-anchor='end'%3E20 sm%3C/text%3E%3Ctext x='170.2' y='150' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gipotenuza-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#1f136a07"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari 2√3 sm va 2 sm ga teng bo'lsa, uning gipotenuzasi necha santimetr bo'ladi?",
+      "v": [
+        "2√2 sm",
+        "16 sm",
+        "2 + 2√3 sm",
+        "4 sm"
+      ],
+      "t": 3,
+      "izoh": "Pifagor teoremasi: c² = (2√3)² + 2² = 12 + 4 = 16. Bundan c = √16 = 4 sm. Ildizli katetni kvadratga ko'targanda 2√3 dan 12 hosil bo'lishini unutmaslik kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,72 167,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='66' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='175' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='118.5' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E2 sm%3C/text%3E%3Ctext x='60' y='156' font-size='13' fill='%23334155' text-anchor='end'%3E2√3 sm%3C/text%3E%3Ctext x='130.5' y='150' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gipotenuza-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#e3b51066"
+    },
+    {
+      "q": "Uzunligi 5 m bo'lgan narvon devorga tirab qo'yilgan, uning pastki uchi devordan 3 m uzoqlikda turibdi. Narvonning yuqori uchi yerdan necha metr balandlikda?",
+      "v": [
+        "4 m",
+        "8 m",
+        "2 m",
+        "√34 m"
+      ],
+      "t": 0,
+      "izoh": "Narvon gipotenuza, devor va yer esa katetlar. h² = 5² − 3² = 25 − 9 = 16, demak h = √16 = 4 m. Katetni topishda kvadratlar ayiriladi, qo'shilmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='70' y1='245' x2='70' y2='30' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='245' x2='265' y2='245' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='45' x2='220' y2='245' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,245 83,232 70,232' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='60' y='145' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='145' y='265' font-size='13' fill='%23334155' text-anchor='middle'%3E3 m%3C/text%3E%3Ctext x='153' y='137' font-size='13' fill='%23334155' text-anchor='start'%3E5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "katet-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#e3ca513c"
+    },
+    {
+      "q": "Bog'dagi ustunning uchidan yerga tortilgan tros uzunligi 13 m, tros yerga ustun tagidan 5 m narida mahkamlangan. Ustunning balandligi necha metr?",
+      "v": [
+        "18 m",
+        "12 m",
+        "8 m",
+        "6,5 m"
+      ],
+      "t": 1,
+      "izoh": "Tros gipotenuza, ustun va yerdagi masofa katetlar bo'ladi. Ustun balandligi uchun h² = 13² − 5² = 169 − 25 = 144, ya'ni h = 12 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,72 140,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='66' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='148' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='105' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E5 m%3C/text%3E%3Ctext x='60' y='156' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='117' y='150' font-size='13' fill='%23334155' text-anchor='start'%3E13 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "katet-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#e640970a"
+    },
+    {
+      "q": "Gipotenuzasi 25 sm, katetlaridan biri esa 24 sm bo'lgan to'g'ri burchakli uchburchakning ikkinchi kateti necha santimetrga teng?",
+      "v": [
+        "49 sm",
+        "1 sm",
+        "7 sm",
+        "12,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi katet b² = 25² − 24² = 625 − 576 = 49 tengligidan topiladi. Endi ildiz olamiz: b = √49 = 7 sm. Ildiz olishni unutgan o'quvchi 49 ni tanlaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,175.3 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='169.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='162.5' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='60' y='207.6' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='174.5' y='201.6' font-size='13' fill='%23334155' text-anchor='start'%3E25 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "katet-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#993c72b2"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning gipotenuzasi 10 sm, katetlaridan biri ikkinchisidan 2 sm uzun. Shu uchburchakning kichik kateti necha santimetrga teng?",
+      "v": [
+        "8 sm",
+        "4 sm",
+        "5 sm",
+        "6 sm"
+      ],
+      "t": 3,
+      "izoh": "Kichik katet x bo'lsa, kattasi x + 2 bo'ladi. Pifagor teoremasi: x² + (x + 2)² = 100, ya'ni 2x² + 4x − 96 = 0 yoki x² + 2x − 48 = 0. Bundan x = 6, katta katet esa 8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,101.3 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='95.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='162.5' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3Ex + 2%3C/text%3E%3Ctext x='60' y='170.6' font-size='13' fill='%23334155' text-anchor='end'%3Ex%3C/text%3E%3Ctext x='174.5' y='164.6' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "katet-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#9450bd9a"
+    },
+    {
+      "q": "Tomonlari 9 sm, 40 sm va 41 sm bo'lgan uchburchak haqida quyidagilardan qaysi biri to'g'ri xulosa bo'ladi?",
+      "v": [
+        "U to'g'ri burchakli uchburchak",
+        "U o'tkir burchakli uchburchak",
+        "U o'tmas burchakli uchburchak",
+        "Bunday tomonli uchburchak mavjud emas"
+      ],
+      "t": 0,
+      "izoh": "Eng uzun tomon 41 sm ni tekshiramiz: 9² + 40² = 81 + 1600 = 1681, 41² esa 1681. Kvadratlar teng bo'lgani uchun Pifagor teoremasiga teskari teoremaga ko'ra uchburchak to'g'ri burchakli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-teorema",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#41564982"
+    },
+    {
+      "q": "Quyidagi son uchliklaridan qaysi biri to'g'ri burchakli uchburchak tomonlarining uzunligi bo'la oladi?",
+      "v": [
+        "(6; 7; 8)",
+        "(8; 15; 17)",
+        "(5; 12; 14)",
+        "(9; 12; 16)"
+      ],
+      "t": 1,
+      "izoh": "Har bir uchlikda eng katta sonning kvadrati qolgan ikkisining kvadratlari yig'indisiga tengmi, shuni tekshiramiz. 8² + 15² = 64 + 225 = 289 va 17² = 289, tenglik bajarildi. Qolgan uchliklarda tenglik o'rinli emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-teorema",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#c70b642c"
+    },
+    {
+      "q": "Quruvchi Rustam poydevor burchagi to'g'ri chiqqanini tekshirmoqchi. U bir tomonda 60 sm, ikkinchisida 80 sm o'lchab, bu nuqtalar orasidagi masofani o'lchadi va 102 sm chiqdi. Burchak haqida nima deyish mumkin?",
+      "v": [
+        "Burchak aynan 90° ga teng",
+        "Burchak 90° dan kichik",
+        "Burchak 90° dan katta",
+        "Berilgan ma'lumot xulosa chiqarishga yetarli emas"
+      ],
+      "t": 2,
+      "izoh": "Agar burchak to'g'ri bo'lganida masofa √(60² + 80²) = √10000 = 100 sm chiqishi kerak edi. O'lchangan 102 sm bundan katta, demak qarshi tomon uzaygan va burchak 90° dan katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-teorema",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#8c584e1c"
+    },
+    {
+      "q": "Tomonlari 12 sm, 16 sm va 20 sm bo'lgan uchburchakning yuzi necha kvadrat santimetrga teng?",
+      "v": [
+        "192 sm²",
+        "160 sm²",
+        "120 sm²",
+        "96 sm²"
+      ],
+      "t": 3,
+      "izoh": "Avval turini aniqlaymiz: 12² + 16² = 144 + 256 = 400 = 20². Demak uchburchak to'g'ri burchakli, katetlari 12 sm va 16 sm. Yuzi S = 12 · 16 : 2 = 96 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-teorema",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#8e33ebff"
+    },
+    {
+      "q": "Katetlari 3 sm va 4 sm bo'lgan uchburchakka o'xshash uchburchakning gipotenuzasi 35 sm ga teng. Uning kichik kateti necha santimetr?",
+      "v": [
+        "21 sm",
+        "28 sm",
+        "15 sm",
+        "7 sm"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki uchburchakning gipotenuzasi √(9 + 16) = 5 sm. O'xshashlik koeffitsienti k = 35 : 5 = 7. Demak kichik katet 3 · 7 = 21 sm, kattasi esa 4 · 7 = 28 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,101.3 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='95.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='162.5' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E4k%3C/text%3E%3Ctext x='60' y='170.6' font-size='13' fill='%23334155' text-anchor='end'%3E3k%3C/text%3E%3Ctext x='174.5' y='164.6' font-size='13' fill='%23334155' text-anchor='start'%3E35 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "pifagor-uchlik",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#3076ec0c"
+    },
+    {
+      "q": "Bog'bon Sanobar uchastkasini tomonlari 5, 12 va 13 nisbatda bo'lgan to'g'ri burchakli uchburchak shaklida ajratdi. Uchastka perimetri 90 m bo'lsa, uning eng uzun tomoni necha metr?",
+      "v": [
+        "36 m",
+        "39 m",
+        "30 m",
+        "45 m"
+      ],
+      "t": 1,
+      "izoh": "Tomonlarni 5k, 12k va 13k deb belgilaymiz. Perimetr 5k + 12k + 13k = 30k = 90, bundan k = 3. Eng uzun tomon 13k = 13 · 3 = 39 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,162.9 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='156.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='162.5' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E12k%3C/text%3E%3Ctext x='60' y='201.5' font-size='13' fill='%23334155' text-anchor='end'%3E5k%3C/text%3E%3Ctext x='174.5' y='195.5' font-size='13' fill='%23334155' text-anchor='start'%3E13k%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "pifagor-uchlik",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#18da6438"
+    },
+    {
+      "q": "Bir kateti 20 sm va gipotenuzasi 29 sm bo'lgan to'g'ri burchakli uchburchakning yuzi necha kvadrat santimetrga teng?",
+      "v": [
+        "420 sm²",
+        "290 sm²",
+        "210 sm²",
+        "304,5 sm²"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi katet b² = 29² − 20² = 841 − 400 = 441, ya'ni b = 21 sm. Yuza S = 20 · 21 : 2 = 210 sm². Katetlar ko'paytmasini ikkiga bo'lish shart.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,72 230,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='66' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='238' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='150' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='60' y='156' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='162' y='150' font-size='13' fill='%23334155' text-anchor='start'%3E29 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "pifagor-uchlik",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#4a2f2f6f"
+    },
+    {
+      "q": "Tomonlari 7 sm, 24 sm va 25 sm bo'lgan uchburchakning har bir tomoni 4 marta orttirildi. Hosil bo'lgan yangi uchburchak haqida nima deyish mumkin?",
+      "v": [
+        "U o'tmas burchakli bo'lib qoladi",
+        "U o'tkir burchakli bo'lib qoladi",
+        "Uning burchaklari ham 4 marta ortadi",
+        "U ham to'g'ri burchakli bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Yangi tomonlar 28 sm, 96 sm va 100 sm bo'ladi. Tekshiramiz: 28² + 96² = 784 + 9216 = 10000 = 100². Umuman, tomonlar k marta ortsa, tenglikning ikki qismi ham k² marta ortadi va tenglik saqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "pifagor-uchlik",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#82e2f54a"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda gipotenuzaga tushirilgan balandlik uni 9 sm va 16 sm li kesmalarga ajratadi. Shu balandlik necha santimetrga teng?",
+      "v": [
+        "12 sm",
+        "12,5 sm",
+        "25 sm",
+        "7 sm"
+      ],
+      "t": 0,
+      "izoh": "Metrik munosabatga ko'ra balandlik gipotenuzadagi ikki kesmaning o'rta geometrigi: h² = 9 · 16 = 144. Demak h = √144 = 12 sm, o'rta arifmetik 12,5 emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 119,132' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119' y1='132' x2='119' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='111.2,142.4 121.6,150.2 129.4,139.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='130,240 130,229 119,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='119' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='119' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='78.5' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='191' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='128' y='186' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-h-kvadrat",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#fc7fc039"
+    },
+    {
+      "q": "ABC uchburchakda ∠C = 90°, CH esa AB gipotenuzaga tushirilgan balandlik. AH = 4 sm va HB = 25 sm bo'lsa, CH kesmaning uzunligi qanday?",
+      "v": [
+        "14,5 sm",
+        "10 sm",
+        "29 sm",
+        "21 sm"
+      ],
+      "t": 1,
+      "izoh": "Balandlik uchun CH² = AH · HB munosabati o'rinli. Demak CH² = 4 · 25 = 100 va CH = √100 = 10 sm. Kesmalarni qo'shish yoki ayirish bu yerda ishlamaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 69,162.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='69' y1='162.4' x2='69' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='64.2,174.5 76.3,179.3 81.1,167.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='80,240 80,229 69,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='69' y='153.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='69' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='53.5' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='166' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Ctext x='78' y='201.2' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-h-kvadrat",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#522fb480"
+    },
+    {
+      "q": "Ikki qiya yonli tomning ko'ndalang kesimi to'g'ri burchakli uchburchak bo'lib, tepadan tushgan tik tayanch poydevorni 3,6 m va 6,4 m li bo'laklarga ajratadi. Tayanchning balandligi necha metr?",
+      "v": [
+        "5 m",
+        "10 m",
+        "4,8 m",
+        "2,8 m"
+      ],
+      "t": 2,
+      "izoh": "Tik tayanch gipotenuzaga tushirilgan balandlik vazifasini bajaradi. h² = 3,6 · 6,4 = 23,04, demak h = √23,04 = 4,8 m. Bo'laklarning o'rta arifmetigi 5 m javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 119,132' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119' y1='132' x2='119' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='111.2,142.4 121.6,150.2 129.4,139.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='130,240 130,229 119,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='119' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='119' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='78.5' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E3,6 m%3C/text%3E%3Ctext x='191' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E6,4 m%3C/text%3E%3Ctext x='128' y='186' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-h-kvadrat",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#35f04798"
+    },
+    {
+      "q": "Uy tomining ko'ndalang kesimi to'g'ri burchakli uchburchak bo'lib, gipotenuzasi 20 m. Tepadan tushirilgan balandlikning asosi gipotenuzaning bir chetidan 4 m uzoqlikda. Tomning balandligi necha metr?",
+      "v": [
+        "10 m",
+        "64 m",
+        "12 m",
+        "8 m"
+      ],
+      "t": 3,
+      "izoh": "Balandlik gipotenuzani 4 m va 20 − 4 = 16 m li kesmalarga ajratadi. h² = 4 · 16 = 64 bo'lgani uchun h = √64 = 8 m. Ildiz olishni unutsak 64 chiqib qoladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 83,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='83' y1='150' x2='83' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='77.2,161.6 88.8,167.4 94.6,155.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='94,240 94,229 83,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='83' y='141' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='83' y='257' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='60.5' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E4 m%3C/text%3E%3Ctext x='92' y='195' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='38' y1='268' x2='263' y2='268' stroke='%23334155' stroke-width='1.2' fill='none'/%3E%3Cline x1='38' y1='263' x2='38' y2='273' stroke='%23334155' stroke-width='1.2' fill='none'/%3E%3Cline x1='263' y1='263' x2='263' y2='273' stroke='%23334155' stroke-width='1.2' fill='none'/%3E%3Ctext x='150.5' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-h-kvadrat",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#7893294d"
+    },
+    {
+      "q": "ABC to'g'ri burchakli uchburchakda CH balandlik AB gipotenuzaga tushirilgan. AH = 9 sm va AB = 25 sm bo'lsa, AC kateti necha santimetrga teng?",
+      "v": [
+        "15 sm",
+        "20 sm",
+        "12 sm",
+        "16 sm"
+      ],
+      "t": 0,
+      "izoh": "Katet o'ziga tegishli proyeksiya bilan gipotenuzaning o'rta geometrigi bo'ladi: AC² = AB · AH = 25 · 9 = 225. Demak AC = √225 = 15 sm, 20 sm esa ikkinchi katetning uzunligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 119,132' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119' y1='132' x2='119' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='111.2,142.4 121.6,150.2 129.4,139.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='130,240 130,229 119,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='119' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='119' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='78.5' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='68.5' y='186' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "katet-proyeksiya",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#61491dcd"
+    },
+    {
+      "q": "Gipotenuzasi 32 sm bo'lgan to'g'ri burchakli uchburchakda kichik katetning gipotenuzadagi proyeksiyasi 8 sm ga teng. Shu katetning uzunligi necha santimetr?",
+      "v": [
+        "40 sm",
+        "16 sm",
+        "20 sm",
+        "4 sm"
+      ],
+      "t": 1,
+      "izoh": "Katet kvadrati gipotenuza bilan uning proyeksiyasi ko'paytmasiga teng: a² = 32 · 8 = 256. Bundan a = √256 = 16 sm. Bu yerda qo'shish yoki bo'lish emas, ko'paytirish ishlatiladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 94.3,142.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94.3' y1='142.6' x2='94.3' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='87.8,153.8 99,160.3 105.5,149.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='105.3,240 105.3,229 94.3,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='94.3' y='133.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='94.3' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='66.1' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='56.1' y='191.3' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "katet-proyeksiya",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#65d7aa46"
+    },
+    {
+      "q": "Sport maydonchasining to'g'ri burchakli qismida gipotenuza 45 m, katetlardan birining shu gipotenuzadagi proyeksiyasi esa 20 m. Shu katetning uzunligi necha metr?",
+      "v": [
+        "25 m",
+        "65 m",
+        "30 m",
+        "22,5 m"
+      ],
+      "t": 2,
+      "izoh": "Metrik munosabatga ko'ra katet kvadrati gipotenuza va proyeksiya ko'paytmasiga teng: 45 · 20 = 900. Demak katet = √900 = 30 m. 25 m esa ikkinchi proyeksiyaning uzunligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 138,128.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='138' y1='128.2' x2='138' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='129.3,137.9 139,146.6 147.7,136.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='149,240 149,229 138,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='138' y='119.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='138' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='88' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3Ctext x='78' y='184.1' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "katet-proyeksiya",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#15cbe55e"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari 1 : 2 nisbatda. Ularning gipotenuzadagi proyeksiyalari qanday nisbatda bo'ladi?",
+      "v": [
+        "1 : 2",
+        "2 : 1",
+        "1 : √2",
+        "1 : 4"
+      ],
+      "t": 3,
+      "izoh": "a² = c · p va b² = c · q munosabatlaridan p : q = a² : b² kelib chiqadi. Katetlar nisbati 1 : 2 bo'lsa, ularning kvadratlari nisbati 1 : 4. Demak proyeksiyalar ham 1 : 4 nisbatda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "katet-proyeksiya",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#d7710f2a"
+    },
+    {
+      "q": "Katetlari 6 sm va 8 sm bo'lgan to'g'ri burchakli uchburchakda gipotenuzaga tushirilgan balandlik necha santimetrga teng?",
+      "v": [
+        "4,8 sm",
+        "5 sm",
+        "7 sm",
+        "24 sm"
+      ],
+      "t": 0,
+      "izoh": "Avval gipotenuzani topamiz: c = √(36 + 64) = 10 sm. Yuzani ikki xil hisoblaymiz: 6 · 8 : 2 = 10 · h : 2, ya'ni 48 = 10h. Bundan h = 4,8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 119,132' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119' y1='132' x2='119' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='111.2,142.4 121.6,150.2 129.4,139.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='130,240 130,229 119,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='119' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='119' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='128' y='186' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='68.5' y='186' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Ctext x='201' y='182' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-katetlar-kopaytmasi",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#0a22ba82"
+    },
+    {
+      "q": "Yer uchastkasi katetlari 15 m va 20 m bo'lgan to'g'ri burchakli uchburchak shaklida. To'g'ri burchak uchidan eng uzun tomonga perpendikulyar so'qmoq o'tkazildi, uning uzunligi necha metr?",
+      "v": [
+        "12,5 m",
+        "12 m",
+        "17,5 m",
+        "150 m"
+      ],
+      "t": 1,
+      "izoh": "Gipotenuza c = √(225 + 400) = √625 = 25 m. Katetlar ko'paytmasi gipotenuza va balandlik ko'paytmasiga teng: 15 · 20 = 25 · h, ya'ni 300 = 25h va h = 12 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 119,132' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119' y1='132' x2='119' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='111.2,142.4 121.6,150.2 129.4,139.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='130,240 130,229 119,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='119' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='119' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='128' y='186' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='68.5' y='186' font-size='13' fill='%23334155' text-anchor='end'%3E15 m%3C/text%3E%3Ctext x='201' y='182' font-size='13' fill='%23334155' text-anchor='start'%3E20 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-katetlar-kopaytmasi",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#9330c765"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning gipotenuzasi 26 sm, unga tushirilgan balandlik esa 12 sm. Shu uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "312 sm²",
+        "78 sm²",
+        "156 sm²",
+        "38 sm²"
+      ],
+      "t": 2,
+      "izoh": "Yuza asos va balandlik ko'paytmasining yarmiga teng, bu yerda asos gipotenuza bo'ladi. S = 26 · 12 : 2 = 156 sm². Ikkiga bo'lishni unutsak 312 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 107.2,136.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107.2' y1='136.2' x2='107.2' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='100,147 110.8,154.2 118,143.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='118.2,240 118.2,229 107.2,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='107.2' y='127.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='107.2' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='116.2' y='188.1' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-katetlar-kopaytmasi",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#f0b4d353"
+    },
+    {
+      "q": "Chorva shiyponi tomining ko'ndalang kesimi katetlari 3 m va 4 m bo'lgan to'g'ri burchakli uchburchak. Uzun tomonga tik o'rnatiladigan tayanchning uzunligi necha metr?",
+      "v": [
+        "2,5 m",
+        "3,5 m",
+        "6 m",
+        "2,4 m"
+      ],
+      "t": 3,
+      "izoh": "Gipotenuza c = √(9 + 16) = 5 m. Katetlar ko'paytmasi gipotenuza va balandlik ko'paytmasiga teng: 3 · 4 = 5 · h. Demak h = 12 : 5 = 2,4 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 119,132' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119' y1='132' x2='119' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='111.2,142.4 121.6,150.2 129.4,139.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='130,240 130,229 119,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='119' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='119' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='128' y='186' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='68.5' y='186' font-size='13' fill='%23334155' text-anchor='end'%3E3 m%3C/text%3E%3Ctext x='201' y='182' font-size='13' fill='%23334155' text-anchor='start'%3E4 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "balandlik-katetlar-kopaytmasi",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#a6026372"
+    },
+    {
+      "q": "Katetlari 9 sm va 12 sm bo'lgan to'g'ri burchakli uchburchakda balandlik gipotenuzani ikki kesmaga ajratadi. Bu kesmalarning kichigi necha santimetr?",
+      "v": [
+        "5,4 sm",
+        "7,5 sm",
+        "9,6 sm",
+        "7,2 sm"
+      ],
+      "t": 0,
+      "izoh": "Gipotenuza c = √(81 + 144) = 15 sm. Kichik katetning proyeksiyasi p = 9² : 15 = 81 : 15 = 5,4 sm. Katta kesma esa 144 : 15 = 9,6 sm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 119,132' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119' y1='132' x2='119' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='111.2,142.4 121.6,150.2 129.4,139.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='130,240 130,229 119,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='119' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='119' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='78.5' y='256' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='68.5' y='186' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='201' y='182' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "metrik-teskari-tahlil",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#def22df4"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda gipotenuzaga tushirilgan balandlik 12 sm, u ajratgan kesmalardan biri ikkinchisidan 7 sm uzun. Gipotenuza necha santimetrga teng?",
+      "v": [
+        "24 sm",
+        "25 sm",
+        "144 sm",
+        "32 sm"
+      ],
+      "t": 1,
+      "izoh": "Kesmalar p va p + 7 bo'lsin. h² = p(p + 7) = 144, ya'ni p² + 7p − 144 = 0 va bundan p = 9. Ikkinchi kesma 16 sm, gipotenuza esa 9 + 16 = 25 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 119,132' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119' y1='132' x2='119' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='111.2,142.4 121.6,150.2 129.4,139.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='130,240 130,229 119,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='119' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='119' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='128' y='186' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "metrik-teskari-tahlil",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#12d83da2"
+    },
+    {
+      "q": "Gipotenuzasi 16 sm bo'lgan to'g'ri burchakli uchburchakda balandlik gipotenuzani 1 : 3 nisbatda ajratadi. Shu balandlikning uzunligi necha santimetr?",
+      "v": [
+        "8 sm",
+        "6 sm",
+        "4√3 sm",
+        "4 sm"
+      ],
+      "t": 2,
+      "izoh": "Kesmalar 16 : 4 = 4 sm va 3 · 4 = 12 sm bo'ladi. Balandlik h² = 4 · 12 = 48, demak h = √48 = 4√3 sm. Gipotenuzaning yarmi 8 sm bu yerda javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 94.3,142.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='94.3' y1='142.6' x2='94.3' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='87.8,153.8 99,160.3 105.5,149.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='105.3,240 105.3,229 94.3,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='94.3' y='133.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='94.3' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='103.3' y='191.3' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "metrik-teskari-tahlil",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#fc8d9a02"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning bir kateti 15 sm, gipotenuzaga tushirilgan balandlik esa 12 sm. Gipotenuzaning uzunligi necha santimetr?",
+      "v": [
+        "20 sm",
+        "27 sm",
+        "9 sm",
+        "25 sm"
+      ],
+      "t": 3,
+      "izoh": "Katet, balandlik va proyeksiya to'g'ri burchakli uchburchak hosil qiladi: p = √(15² − 12²) = √81 = 9 sm. Endi katet kvadrati gipotenuza va proyeksiya ko'paytmasiga teng bo'lgani uchun c = 225 : 9 = 25 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 119,132' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119' y1='132' x2='119' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='111.2,142.4 121.6,150.2 129.4,139.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='130,240 130,229 119,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='119' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='119' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='128' y='186' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='68.5' y='186' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "metrik-teskari-tahlil",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#c6658f12"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari 8 sm va 15 sm. Kichik katet qarshisida yotgan o'tkir burchakning sinusi nimaga teng?",
+      "v": [
+        "8/17",
+        "15/17",
+        "8/15",
+        "15/8"
+      ],
+      "t": 0,
+      "izoh": "Gipotenuza c = √(64 + 225) = √289 = 17 sm. Sinus qarshi katetning gipotenuzaga nisbati: sinα = 8/17. 8/15 esa tangens, 15/17 kosinus qiymati bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,141.3 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='225,240 225,238.8 225.1,237.6 225.2,236.3 225.4,235.1 225.6,233.9 225.9,232.7 226.2,231.5 226.6,230.4 227,229.2 227.5,228.1 228,227 228.5,225.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='210.4' y='232.8' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Ctext x='62' y='135.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='162.5' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='60' y='190.7' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trig-nisbat-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#18993c18"
+    },
+    {
+      "q": "ABC uchburchakda ∠C = 90°, AC = 12 sm va BC = 5 sm. ∠A burchakning tangensi nimaga teng bo'ladi?",
+      "v": [
+        "12/5",
+        "5/12",
+        "5/13",
+        "12/13"
+      ],
+      "t": 1,
+      "izoh": "Gipotenuza AB = √(144 + 25) = 13 sm. ∠A uchun qarshi katet BC = 5 sm, yondosh katet esa AC = 12 sm. Tangens qarshi katetning yondosh katetga nisbati: tgA = 5/12.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,72 140,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='66' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='148' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='105' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='60' y='156' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trig-nisbat-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#76102901"
+    },
+    {
+      "q": "Omborga yuk chiqarish uchun qo'yilgan qiya taxtaning uzunligi 2,6 m, uning yuqori uchi yerdan 1 m balandlikda. Taxta bilan yer orasidagi burchakning sinusi nimaga teng?",
+      "v": [
+        "12/13",
+        "5/12",
+        "5/13",
+        "13/5"
+      ],
+      "t": 2,
+      "izoh": "Balandlik qarshi katet, taxta esa gipotenuza bo'ladi. sinα = 1 : 2,6 = 10/26 = 5/13. Gorizontal katet √(6,76 − 1) = 2,4 m bo'lgani uchun cosα = 12/13 va tgα = 5/12.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,162.9 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='225,240 225,239 225.1,238 225.1,237 225.3,236.1 225.4,235.1 225.6,234.1 225.8,233.2 226,232.2 226.3,231.2 226.6,230.3 226.9,229.4 227.3,228.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='209.9' y='235' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Ctext x='62' y='156.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='60' y='201.5' font-size='13' fill='%23334155' text-anchor='end'%3E1 m%3C/text%3E%3Ctext x='174.5' y='195.5' font-size='13' fill='%23334155' text-anchor='start'%3E2,6 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trig-nisbat-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#3649df96"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning gipotenuzasi 20 sm, yuzi esa 96 kvadrat santimetr. Uning kichik o'tkir burchagi kosinusi nimaga teng?",
+      "v": [
+        "3/5",
+        "3/4",
+        "4/3",
+        "4/5"
+      ],
+      "t": 3,
+      "izoh": "Katetlar uchun ab = 192 va a² + b² = 400. (a + b)² = 400 + 384 = 784 dan a + b = 28, (a − b)² = 400 − 384 = 16 dan a − b = 4. Katetlar 16 sm va 12 sm; kichik burchak 12 sm qarshisida yotadi, uning kosinusi 16/20 = 4/5.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,75 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='225,240 225.1,238.2 225.2,236.4 225.5,234.6 225.9,232.8 226.4,231 227,229.3 227.7,227.6 228.5,226 229.4,224.4 230.4,222.9 231.4,221.4 232.6,220' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='212' y='227.6' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Ctext x='62' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='174.5' y='151.5' font-size='13' fill='%23334155' text-anchor='start'%3E20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trig-nisbat-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#fd726855"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning gipotenuzasi 30 sm, bir o'tkir burchagining sinusi esa 0,8. Shu burchak qarshisidagi katet necha santimetr?",
+      "v": [
+        "24 sm",
+        "18 sm",
+        "37,5 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Sinus ta'rifiga ko'ra qarshi katet gipotenuza va sinus ko'paytmasiga teng: 30 · 0,8 = 24 sm. Ikkinchi katet esa 30 · 0,6 = 18 sm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,72 196,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='166,240 166.1,237.7 166.4,235.4 166.8,233.1 167.4,230.9 168.2,228.7 169.2,226.6 170.3,224.6 171.6,222.6 173,220.8 174.5,219.1 176.2,217.5 178,216' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='154.9' y='223.4' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Ctext x='62' y='66' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='204' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='60' y='156' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='145' y='150' font-size='13' fill='%23334155' text-anchor='start'%3E30 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trig-tomon-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#c9f93c42"
+    },
+    {
+      "q": "Kunning ma'lum paytida daraxtning soyasi 12 m, quyosh nurining yer bilan hosil qilgan burchagi tangensi esa 1,25. Daraxtning balandligi necha metr?",
+      "v": [
+        "9,6 m",
+        "15 m",
+        "13,25 m",
+        "19,2 m"
+      ],
+      "t": 1,
+      "izoh": "Tangens balandlikning soya uzunligiga nisbatiga teng: h : 12 = 1,25. Bundan h = 12 · 1,25 = 15 m. Bo'lish emas, ko'paytirish kerak bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,72 204.4,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='174.4,240 174.5,237.8 174.7,235.5 175.1,233.3 175.7,231.2 176.5,229.1 177.4,227 178.4,225 179.6,223.1 180.9,221.3 182.4,219.6 184,218 185.7,216.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162.9' y='224.1' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Ctext x='62' y='66' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='212.4' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='137.2' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='60' y='156' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trig-tomon-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#c2afc018"
+    },
+    {
+      "q": "Bir o'tkir burchagining kosinusi 7/25 va gipotenuzasi 50 sm bo'lgan to'g'ri burchakli uchburchakda shu burchakka yondosh katet necha santimetr?",
+      "v": [
+        "48 sm",
+        "25 sm",
+        "14 sm",
+        "7 sm"
+      ],
+      "t": 2,
+      "izoh": "Kosinus yondosh katetning gipotenuzaga nisbati bo'lgani uchun yondosh katet 50 · 7/25 = 14 sm. Qarshi katet esa √(2500 − 196) = 48 sm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,72 134.6,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='104.6,240 104.8,237 105.2,234 106,231.1 107,228.3 108.3,225.6 109.9,223 111.7,220.6 113.8,218.4 116,216.4 118.5,214.7 121.1,213.2 123.8,212' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='96.7' y='218' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Ctext x='62' y='66' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='142.6' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='102.3' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='114.3' y='150' font-size='13' fill='%23334155' text-anchor='start'%3E50 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trig-tomon-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#c3908089"
+    },
+    {
+      "q": "Samolyot 3 km balandlikda uchmoqda va tushish burchagi tangensi 0,05 bo'lgan traektoriya bo'ylab pasayadi. U yo'lakdan necha kilometr gorizontal masofada pasayishni boshlashi kerak?",
+      "v": [
+        "0,15 km",
+        "15 km",
+        "6 km",
+        "60 km"
+      ],
+      "t": 3,
+      "izoh": "Tangens balandlikning gorizontal masofaga nisbatiga teng: 0,05 = 3 : d. Bundan d = 3 : 0,05 = 60 km. Ko'paytirish yo'li bilan 0,15 chiqadi, bu esa noto'g'ri.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,75 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='225,240 225.1,238.2 225.2,236.4 225.5,234.6 225.9,232.8 226.4,231 227,229.3 227.7,227.6 228.5,226 229.4,224.4 230.4,222.9 231.4,221.4 232.6,220' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='212' y='227.6' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Ctext x='62' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='162.5' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='60' y='157.5' font-size='13' fill='%23334155' text-anchor='end'%3E3 km%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trig-tomon-topish",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#4b5b75d9"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning o'tkir burchagi uchun sinα = 0,6 ekani ma'lum. Shu burchakning tangensi nimaga teng?",
+      "v": [
+        "0,75",
+        "0,8",
+        "1,33",
+        "0,48"
+      ],
+      "t": 0,
+      "izoh": "Asosiy trigonometrik ayniyatdan cosα = √(1 − 0,36) = √0,64 = 0,8. Tangens sinus va kosinus nisbati: tgα = 0,6 : 0,8 = 0,75. Taxminan 1,33 esa kotangens qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trig-ayniyat",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#b450927b"
+    },
+    {
+      "q": "O'tkir burchak uchun tgβ = 0,75 bo'lsa, shu burchakning kosinusi qanday qiymatga teng bo'ladi?",
+      "v": [
+        "0,6",
+        "0,8",
+        "1,25",
+        "0,75"
+      ],
+      "t": 1,
+      "izoh": "tgβ = 0,75 = 3/4 bo'lgani uchun qarshi katetni 3k, yondosh katetni 4k deb olamiz. Gipotenuza √(9k² + 16k²) = 5k. Demak cosβ = 4k : 5k = 0,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trig-ayniyat",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#2296994f"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning o'tkir burchagi uchun sinα = 3/5 bo'lsa, sinα va cosα yig'indisi nimaga teng?",
+      "v": [
+        "1",
+        "0,2",
+        "1,4",
+        "2,4"
+      ],
+      "t": 2,
+      "izoh": "sin²α + cos²α = 1 ayniyatidan cosα = √(1 − 9/25) = 4/5. Yig'indi 3/5 + 4/5 = 7/5 = 1,4. Ayniyatdagi birlik sinus va kosinus yig'indisi emas, kvadratlari yig'indisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trig-ayniyat",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#6bd9d549"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda ∠A va ∠B o'tkir burchaklar bo'lib, sinA = 0,28 ga teng. Shu ma'lumotga ko'ra cosB nimaga teng?",
+      "v": [
+        "0,96",
+        "0,72",
+        "3,57",
+        "0,28"
+      ],
+      "t": 3,
+      "izoh": "O'tkir burchaklar yig'indisi 90° ga teng, ya'ni ular bir-birini to'ldiradi. To'ldiruvchi burchaklar uchun cosB = sinA munosabati o'rinli. Demak cosB = 0,28, cosA esa 0,96 bo'lardi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,75 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='225,240 225.1,238.2 225.2,236.4 225.5,234.6 225.9,232.8 226.4,231 227,229.3 227.7,227.6 228.5,226 229.4,224.4 230.4,222.9 231.4,221.4 232.6,220' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='212' y='227.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Cpolyline points='70,105 72.1,104.9 74.2,104.7 76.3,104.3 78.3,103.8 80.3,103.2 82.3,102.4 84.2,101.4 86,100.4 87.7,99.2 89.4,97.9 90.9,96.5 92.4,95' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='88.8' y='121' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='62' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trig-ayniyat",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#43a0888d"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning gipotenuzasi 18 sm, o'tkir burchaklaridan biri esa 30° ga teng. 30° li burchak qarshisidagi katet necha santimetr?",
+      "v": [
+        "9 sm",
+        "12 sm",
+        "9√3 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "30° li burchak qarshisidagi katet gipotenuzaning yarmiga teng. Demak u 18 : 2 = 9 sm. Ikkinchi katet esa 9√3 sm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,133.2 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='225,240 225,238.7 225.1,237.4 225.3,236.1 225.5,234.8 225.7,233.5 226,232.2 226.4,231 226.8,229.7 227.3,228.5 227.8,227.3 228.4,226.1 229,225' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='210.6' y='232.1' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='62' y='127.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='60' y='186.6' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='174.5' y='180.6' font-size='13' fill='%23334155' text-anchor='start'%3E18 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "otkir-30-60",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#c1ba66b2"
+    },
+    {
+      "q": "Tomning qiyaligi 30°, qiya tomonining uzunligi esa 7,2 m. Tomning eng baland nuqtasi devor darajasidan necha metr yuqorida joylashgan?",
+      "v": [
+        "14,4 m",
+        "3,6 m",
+        "3,6√3 m",
+        "2,4 m"
+      ],
+      "t": 1,
+      "izoh": "Qiya tomon gipotenuza, balandlik esa 30° li burchak qarshisidagi katet bo'ladi. U gipotenuzaning yarmiga teng: 7,2 : 2 = 3,6 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,133.2 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='225,240 225,238.7 225.1,237.4 225.3,236.1 225.5,234.8 225.7,233.5 226,232.2 226.4,231 226.8,229.7 227.3,228.5 227.8,227.3 228.4,226.1 229,225' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='210.6' y='232.1' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='62' y='127.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='60' y='186.6' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='174.5' y='180.6' font-size='13' fill='%23334155' text-anchor='start'%3E7,2 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "otkir-30-60",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#985aa419"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda 30° li burchak qarshisidagi katet 5 sm ga teng. Shu uchburchakning ikkinchi kateti necha santimetr?",
+      "v": [
+        "10 sm",
+        "5√2 sm",
+        "5√3 sm",
+        "2,5√3 sm"
+      ],
+      "t": 2,
+      "izoh": "30° li burchak qarshisidagi katet gipotenuzaning yarmi, demak gipotenuza 10 sm. Ikkinchi katet √(100 − 25) = √75 = 5√3 sm. 10 sm esa gipotenuza, katet emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,133.2 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='225,240 225,238.7 225.1,237.4 225.3,236.1 225.5,234.8 225.7,233.5 226,232.2 226.4,231 226.8,229.7 227.3,228.5 227.8,227.3 228.4,226.1 229,225' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='210.6' y='232.1' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3Ctext x='62' y='127.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='162.5' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='60' y='186.6' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "otkir-30-60",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#ab7e7672"
+    },
+    {
+      "q": "Teng tomonli uchburchakning balandligi 6√3 sm ga teng. Shu uchburchakning tomoni necha santimetr?",
+      "v": [
+        "6 sm",
+        "12√3 sm",
+        "4√3 sm",
+        "12 sm"
+      ],
+      "t": 3,
+      "izoh": "Balandlik teng tomonli uchburchakni burchaklari 30°, 60° va 90° bo'lgan ikki uchburchakka ajratadi. Tomon a bo'lsa, balandlik a√3 : 2 ga teng. a√3 : 2 = 6√3 tenglamadan a = 12 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,70 70,208.6 230,208.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='70' x2='150' y2='208.6' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='161,208.6 161,197.6 150,197.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='105.7' y1='136.8' x2='114.3' y2='141.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='185.7' y1='141.8' x2='194.3' y2='136.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='120' y1='203.6' x2='120' y2='213.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='62' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='62' y='224' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='238' y='224' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='228' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='100' y='134' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='158' y='145' font-size='13' fill='%23334155' text-anchor='start'%3E6√3 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "otkir-30-60",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#f51086ce"
+    },
+    {
+      "q": "Teng yonli to'g'ri burchakli uchburchakning kateti 7 sm ga teng bo'lsa, uning gipotenuzasi necha santimetr?",
+      "v": [
+        "7√2 sm",
+        "14 sm",
+        "7√3 sm",
+        "3,5√2 sm"
+      ],
+      "t": 0,
+      "izoh": "Katetlar teng bo'lgani uchun c² = 7² + 7² = 98. Bundan c = √98 = 7√2 sm. Teng yonli to'g'ri burchakli uchburchakda gipotenuza katetdan √2 marta katta bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,72 238,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='208,240 208.1,238 208.3,236.1 208.6,234.1 209,232.2 209.6,230.4 210.3,228.5 211.1,226.7 212,225 213.1,223.3 214.2,221.7 215.4,220.2 216.8,218.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='195.5' y='226.4' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='62' y='66' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='246' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='154' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='60' y='156' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3Ctext x='166' y='150' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-togri-burchakli",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#0b77af75"
+    },
+    {
+      "q": "Ustaxonada teng yonli to'g'ri burchakli uchburchak shaklida oyna kesilmoqda, uning gipotenuzasi 60 sm. Oynaning teng yon tomonlari necha santimetrdan bo'ladi?",
+      "v": [
+        "30 sm",
+        "30√2 sm",
+        "60√2 sm",
+        "20√2 sm"
+      ],
+      "t": 1,
+      "izoh": "Katet a bo'lsa, gipotenuza a√2 ga teng bo'ladi. a√2 = 60 tenglamadan a = 60 : √2 = 30√2 sm. Gipotenuzaning oddiy yarmi 30 sm javob bo'lmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,72 238,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='208,240 208.1,238 208.3,236.1 208.6,234.1 209,232.2 209.6,230.4 210.3,228.5 211.1,226.7 212,225 213.1,223.3 214.2,221.7 215.4,220.2 216.8,218.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='195.5' y='226.4' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='62' y='66' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='246' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='154' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='60' y='156' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='166' y='150' font-size='13' fill='%23334155' text-anchor='start'%3E60 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-togri-burchakli",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#f7f389f6"
+    },
+    {
+      "q": "Teng yonli to'g'ri burchakli uchburchakning gipotenuzasi 12 sm. Shu uchburchakning yuzi necha kvadrat santimetrga teng?",
+      "v": [
+        "72 sm²",
+        "18 sm²",
+        "36 sm²",
+        "36√2 sm²"
+      ],
+      "t": 2,
+      "izoh": "Bunday uchburchakda gipotenuzaga tushirilgan balandlik uning yarmiga, ya'ni 6 sm ga teng. Yuza S = 12 · 6 : 2 = 36 sm². Ikkiga bo'lishni unutsak 72 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,72 238,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='208,240 208.1,238 208.3,236.1 208.6,234.1 209,232.2 209.6,230.4 210.3,228.5 211.1,226.7 212,225 213.1,223.3 214.2,221.7 215.4,220.2 216.8,218.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='195.5' y='226.4' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3Ctext x='62' y='66' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='246' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='166' y='150' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-togri-burchakli",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#1fbaecb0"
+    },
+    {
+      "q": "Teng yonli to'g'ri burchakli uchburchakda gipotenuzaga tushirilgan balandlik 9 sm ga teng. Shu uchburchakning perimetri necha santimetr?",
+      "v": [
+        "18 + 9√2 sm",
+        "36 sm",
+        "9 + 18√2 sm",
+        "18 + 18√2 sm"
+      ],
+      "t": 3,
+      "izoh": "Bunday uchburchakda balandlik gipotenuzaning yarmiga teng, demak gipotenuza 18 sm. Katet uchun a√2 = 18 dan a = 9√2 sm. Perimetr 18 + 2 · 9√2 = 18 + 18√2 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 150.5,127.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150.5' y1='127.5' x2='150.5' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='141.3,136.7 150.5,145.9 159.7,136.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='161.5,240 161.5,229 150.5,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='150.5' y='118.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='150.5' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='159.5' y='183.8' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-yonli-togri-burchakli",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#b19d6b5f"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning perimetri 30 sm, gipotenuzasi esa 13 sm. Shu uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "30 sm²",
+        "60 sm²",
+        "39 sm²",
+        "15 sm²"
+      ],
+      "t": 0,
+      "izoh": "Katetlar yig'indisi a + b = 30 − 13 = 17. (a + b)² = a² + b² + 2ab bo'lgani uchun 289 = 169 + 2ab, ya'ni ab = 60. Yuza S = ab : 2 = 30 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,75 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='174.5' y='151.5' font-size='13' fill='%23334155' text-anchor='start'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-yuza-tenglama",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#429b0496"
+    },
+    {
+      "q": "Sanjar to'g'ri burchakli uchburchak shaklidagi gulzorni 40 m sim to'r bilan to'liq o'radi. Gulzorning eng uzun tomoni 17 m bo'lsa, uning yuzi necha kvadrat metr?",
+      "v": [
+        "120 m²",
+        "60 m²",
+        "68 m²",
+        "30 m²"
+      ],
+      "t": 1,
+      "izoh": "Katetlar yig'indisi 40 − 17 = 23 m. 23² = a² + b² + 2ab va a² + b² = 289 bo'lgani uchun 529 = 289 + 2ab, ya'ni ab = 120. Yuza 120 : 2 = 60 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,75 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='174.5' y='151.5' font-size='13' fill='%23334155' text-anchor='start'%3E17 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perimetr-yuza-tenglama",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#11b55357"
+    },
+    {
+      "q": "Yuzi 24 kvadrat santimetr va gipotenuzasi 10 sm bo'lgan to'g'ri burchakli uchburchakning perimetri necha santimetr?",
+      "v": [
+        "34 sm",
+        "14 sm",
+        "24 sm",
+        "48 sm"
+      ],
+      "t": 2,
+      "izoh": "Yuzadan katetlar ko'paytmasi ab = 48, Pifagor teoremasidan a² + b² = 100. (a + b)² = 100 + 96 = 196, demak a + b = 14 sm. Perimetr 14 + 10 = 24 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,75 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='174.5' y='151.5' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perimetr-yuza-tenglama",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#3b872010"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning bir kateti ikkinchisidan 7 sm uzun, gipotenuzasi esa 13 sm. Shu uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "60 sm²",
+        "32,5 sm²",
+        "42,5 sm²",
+        "30 sm²"
+      ],
+      "t": 3,
+      "izoh": "Kichik katet x bo'lsa: x² + (x + 7)² = 169, ya'ni 2x² + 14x − 120 = 0 va x² + 7x − 60 = 0. Bundan x = 5, katta katet 12 sm. Yuza 5 · 12 : 2 = 30 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,162.9 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='156.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='162.5' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3Ex + 7%3C/text%3E%3Ctext x='60' y='201.5' font-size='13' fill='%23334155' text-anchor='end'%3Ex%3C/text%3E%3Ctext x='174.5' y='195.5' font-size='13' fill='%23334155' text-anchor='start'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perimetr-yuza-tenglama",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#ba9a8472"
+    },
+    {
+      "q": "Rombning diagonallari 16 sm va 30 sm ga teng. Shu rombning tomoni necha santimetrga teng bo'ladi?",
+      "v": [
+        "17 sm",
+        "34 sm",
+        "23 sm",
+        "46 sm"
+      ],
+      "t": 0,
+      "izoh": "Romb diagonallari kesishgan nuqtada to'g'ri burchak hosil qiladi va bir-birini teng ikkiga bo'ladi. Tomon uchun a² = 8² + 15² = 64 + 225 = 289, demak a = 17 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='45,148 150,92 255,148 150,204' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='45' y1='148' x2='255' y2='148' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='92' x2='150' y2='204' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='161,148 161,137 150,137' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='37' y='153' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='263' y='153' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='97' y='104.1' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='150' y='242' font-size='13' fill='%23334155' text-anchor='middle'%3EAC = 30 sm%3C/text%3E%3Ctext x='150' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3EBD = 16 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "romb-diagonal",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#565cba4a"
+    },
+    {
+      "q": "Ustaxonada romb shaklidagi metall plastinka yasaldi, uning diagonallari 24 sm va 10 sm. Plastinkaning perimetri necha santimetrga teng?",
+      "v": [
+        "26 sm",
+        "52 sm",
+        "68 sm",
+        "34 sm"
+      ],
+      "t": 1,
+      "izoh": "Yarim diagonallar 12 sm va 5 sm bo'ladi. Tomon a = √(144 + 25) = 13 sm. Romb tomonlari teng bo'lgani uchun perimetr 4 · 13 = 52 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='45,148 150,104.3 255,148 150,191.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='45' y1='148' x2='255' y2='148' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='104.3' x2='150' y2='191.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='161,148 161,137 150,137' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='37' y='153' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='96.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='263' y='153' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='209.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='150' y='229.8' font-size='13' fill='%23334155' text-anchor='middle'%3EAC = 24 sm%3C/text%3E%3Ctext x='150' y='247.8' font-size='13' fill='%23334155' text-anchor='middle'%3EBD = 10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-diagonal",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#55e7f54c"
+    },
+    {
+      "q": "Rombning tomoni 25 sm, diagonallaridan biri esa 14 sm. Shu rombning ikkinchi diagonali necha santimetr?",
+      "v": [
+        "24 sm",
+        "96 sm",
+        "48 sm",
+        "32 sm"
+      ],
+      "t": 2,
+      "izoh": "Ma'lum diagonalning yarmi 7 sm. Ikkinchi diagonalning yarmi √(625 − 49) = √576 = 24 sm. To'liq diagonal esa 2 · 24 = 48 sm, ya'ni yarmini ikkilantirish shart.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='45,148 150,117.4 255,148 150,178.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='45' y1='148' x2='255' y2='148' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='117.4' x2='150' y2='178.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='161,148 161,137 150,137' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='37' y='153' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='109.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='263' y='153' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='196.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='100.5' y='115.4' font-size='13' fill='%23334155' text-anchor='end'%3E25 sm%3C/text%3E%3Ctext x='150' y='216.6' font-size='13' fill='%23334155' text-anchor='middle'%3EAC = ?%3C/text%3E%3Ctext x='150' y='234.6' font-size='13' fill='%23334155' text-anchor='middle'%3EBD = 14 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "romb-diagonal",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#d72c9ed0"
+    },
+    {
+      "q": "Rombning tomoni 10 sm, diagonallaridan biri ikkinchisidan 4 sm uzun. Shu rombning yuzi necha kvadrat santimetr?",
+      "v": [
+        "192 sm²",
+        "48 sm²",
+        "60 sm²",
+        "96 sm²"
+      ],
+      "t": 3,
+      "izoh": "Yarim diagonallar x va x + 2 bo'lsin: x² + (x + 2)² = 100, ya'ni x² + 2x − 48 = 0 va x = 6. Diagonallar 12 sm va 16 sm, yuza esa 12 · 16 : 2 = 96 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='45,148 150,76 255,148 150,220' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='45' y1='148' x2='255' y2='148' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='76' x2='150' y2='220' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='161,148 161,137 150,137' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='37' y='153' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='68' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='263' y='153' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='238' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='85.5' y='108' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "romb-diagonal",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#79e575f6"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning asoslari 10 sm va 22 sm, yon tomoni esa 10 sm. Shu trapetsiyaning balandligi necha santimetr?",
+      "v": [
+        "8 sm",
+        "6 sm",
+        "10 sm",
+        "12 sm"
+      ],
+      "t": 0,
+      "izoh": "Yon tomondan tushirilgan balandlik katta asosda (22 − 10) : 2 = 6 sm li kesma ajratadi. Balandlik h = √(100 − 36) = √64 = 8 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='95,90 205,90 260,225 40,225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='95' y1='90' x2='95' y2='225' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='106,225 106,214 95,214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='95' y='82' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='205' y='82' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='268' y='241' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='32' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='68' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='150' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3E22 sm%3C/text%3E%3Ctext x='55.5' y='157.5' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Ctext x='105' y='157.5' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trapetsiya-balandlik",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#cd5cad65"
+    },
+    {
+      "q": "Beton qoplamali sug'orish kanalining ko'ndalang kesimi teng yonli trapetsiya shaklida: yuqori kengligi 2,2 m, tubi 0,6 m, yon devori esa 1,7 m. Kanalning chuqurligi necha metr?",
+      "v": [
+        "0,8 m",
+        "1,5 m",
+        "1,7 m",
+        "1,3 m"
+      ],
+      "t": 1,
+      "izoh": "Yon devor gipotenuza, gorizontal siljish esa (2,2 − 0,6) : 2 = 0,8 m. Chuqurlik h = √(2,89 − 0,64) = √2,25 = 1,5 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,90 249,90 177,225 123,225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123' y1='90' x2='123' y2='225' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='134,225 134,214 123,214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='43' y='86' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='257' y='86' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='185' y='241' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='115' y='241' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='80' font-size='13' fill='%23334155' text-anchor='middle'%3E2,2 m%3C/text%3E%3Ctext x='150' y='243' font-size='13' fill='%23334155' text-anchor='middle'%3E0,6 m%3C/text%3E%3Ctext x='80' y='157' font-size='13' fill='%23334155' text-anchor='end'%3E1,7 m%3C/text%3E%3Ctext x='128' y='157' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trapetsiya-balandlik",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#dd576440"
+    },
+    {
+      "q": "To'g'ri burchakli trapetsiyaning asoslari 12 sm va 20 sm, uzun yon tomoni esa 17 sm. Shu trapetsiyaning balandligi necha santimetr?",
+      "v": [
+        "8 sm",
+        "13 sm",
+        "15 sm",
+        "21 sm"
+      ],
+      "t": 2,
+      "izoh": "Qiya yon tomondan tushirilgan balandlik katta asosda 20 − 12 = 8 sm li kesma qoldiradi. Balandlik h = √(17² − 8²) = √(289 − 64) = 15 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trapetsiya-balandlik",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#60ccabe1"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning asoslari 14 sm va 50 sm, balandligi esa 24 sm. Shu trapetsiyaning yon tomoni necha santimetr?",
+      "v": [
+        "25 sm",
+        "42 sm",
+        "36 sm",
+        "30 sm"
+      ],
+      "t": 3,
+      "izoh": "Katta asosda har ikki chetdan (50 − 14) : 2 = 18 sm qoladi. Yon tomon c = √(18² + 24²) = √(324 + 576) = √900 = 30 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='95,90 205,90 260,225 40,225' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='95' y1='90' x2='95' y2='225' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='106,225 106,214 95,214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='95' y='82' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='205' y='82' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='268' y='241' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='32' y='241' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='150' y='68' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='150' y='245' font-size='13' fill='%23334155' text-anchor='middle'%3E50 sm%3C/text%3E%3Ctext x='55.5' y='157.5' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='105' y='157.5' font-size='13' fill='%23334155' text-anchor='start'%3E24 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trapetsiya-balandlik",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#b97809a1"
+    },
+    {
+      "q": "Radiusi 13 sm bo'lgan aylanada uzunligi 24 sm li vatar o'tkazilgan. Aylana markazidan shu vatargacha bo'lgan masofa necha santimetr?",
+      "v": [
+        "5 sm",
+        "12 sm",
+        "10 sm",
+        "1 sm"
+      ],
+      "t": 0,
+      "izoh": "Markazdan vatarga tushirilgan perpendikulyar uni teng ikkiga bo'ladi, ya'ni yarmi 12 sm. Masofa d = √(169 − 144) = √25 = 5 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='62.3' y1='181.5' x2='237.7' y2='181.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='145' x2='150' y2='181.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='145' x2='62.3' y2='181.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='161,181.5 161,170.5 150,170.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='145' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='142' y='139' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='54.3' y='187.5' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='245.7' y='187.5' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='158' y='163.3' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='102.2' y='157.3' font-size='13' fill='%23334155' text-anchor='end'%3E13 sm%3C/text%3E%3Ctext x='150' y='201.5' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-vatar",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#9aa513c8"
+    },
+    {
+      "q": "Ichki radiusi 25 sm bo'lgan quvurga tekis to'siq o'rnatildi, u markazdan 7 sm masofada joylashgan. To'siqning quvur devorlari orasidagi uzunligi necha santimetr?",
+      "v": [
+        "24 sm",
+        "48 sm",
+        "32 sm",
+        "36 sm"
+      ],
+      "t": 1,
+      "izoh": "Yarim vatar √(625 − 49) = √576 = 24 sm. To'liq vatar esa uning ikki barobari: 2 · 24 = 48 sm. Yarmini javob deb olish tipik xato hisoblanadi. Pifagor teoremasi o'rniga oddiy ayirma olib 2 · (25 − 7) = 36 sm deyish ham noto'g'ri.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='58.8' y1='171.6' x2='241.2' y2='171.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='145' x2='150' y2='171.6' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='145' x2='58.8' y2='171.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='161,171.6 161,160.6 150,160.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='145' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='142' y='139' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='50.8' y='177.6' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='249.2' y='177.6' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='158' y='158.3' font-size='13' fill='%23334155' text-anchor='start'%3E7 sm%3C/text%3E%3Ctext x='100.4' y='152.3' font-size='13' fill='%23334155' text-anchor='end'%3E25 sm%3C/text%3E%3Ctext x='150' y='191.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-vatar",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#47698a52"
+    },
+    {
+      "q": "Aylanadan tashqarida yotgan P nuqtadan unga urinma o'tkazildi. Markazdan P nuqtagacha masofa 20 sm, aylana radiusi 12 sm bo'lsa, urinma kesmasi necha santimetr?",
+      "v": [
+        "8 sm",
+        "32 sm",
+        "16 sm",
+        "24 sm"
+      ],
+      "t": 2,
+      "izoh": "Urinish nuqtasida radius urinmaga perpendikulyar bo'ladi, shuning uchun to'g'ri burchakli uchburchak hosil bo'ladi. Urinma kesmasi √(400 − 144) = √256 = 16 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='115' cy='168' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='115' y1='168' x2='250.7' y2='104.1' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='115' y1='168' x2='194.5' y2='210.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='194.5' y1='210.1' x2='250.7' y2='104.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='184.8,205 190,195.3 199.7,200.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='115' cy='168' r='3' fill='%23334155' stroke='none'/%3E%3Ccircle cx='250.7' cy='104.1' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='107' y='173' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='258.7' y='100.1' font-size='13' fill='%23334155' text-anchor='start'%3EP%3C/text%3E%3Ctext x='198.5' y='202.1' font-size='13' fill='%23334155' text-anchor='start'%3ET%3C/text%3E%3Ctext x='182.9' y='154.1' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='146.8' y='193.1' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='228.6' y='149.1' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-vatar",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#a0b161ec"
+    },
+    {
+      "q": "Markazlari umumiy bo'lgan ikki aylananing radiuslari 6 sm va 10 sm. Katta aylananing kichik aylanaga urinuvchi vatari necha santimetr?",
+      "v": [
+        "8 sm",
+        "12 sm",
+        "32 sm",
+        "16 sm"
+      ],
+      "t": 3,
+      "izoh": "Vatar kichik aylanaga urinar ekan, markazdan vatargacha masofa 6 sm bo'ladi. Yarim vatar √(100 − 36) = 8 sm, to'liq vatar esa 2 · 8 = 16 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='145' r='57' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='74' y1='202' x2='226' y2='202' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='145' x2='74' y2='202' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='145' x2='109.7' y2='104.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='145' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='142' y='139' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='66' y='208' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='234' y='208' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='142' y='112' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3Ctext x='84' y='188' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Ctext x='150' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylana-vatar",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#2635a1e7"
+    },
+    {
+      "q": "Xona polining uzunligi 8 m, eni esa 6 m. Pol bo'ylab bir burchakdan qarama-qarshi burchakka tortilgan arqonning uzunligi necha metr?",
+      "v": [
+        "10 m",
+        "14 m",
+        "7 m",
+        "48 m"
+      ],
+      "t": 0,
+      "izoh": "Arqon to'g'ri to'rtburchakning diagonali bo'ladi. d² = 8² + 6² = 64 + 36 = 100, demak d = 10 m. Tomonlarni oddiy qo'shsak 14 chiqadi, bu noto'g'ri.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,75 245,75 245,215 55,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='215' x2='245' y2='75' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,215 67,203 55,203' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='69' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='231' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='231' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='235' font-size='13' fill='%23334155' text-anchor='middle'%3E8 m%3C/text%3E%3Ctext x='45' y='145' font-size='13' fill='%23334155' text-anchor='end'%3E6 m%3C/text%3E%3Ctext x='156' y='137' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tortburchak-diagonal",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#9181b228"
+    },
+    {
+      "q": "Kvadrat shaklidagi kafel plitkasining diagonali 14 sm ga teng. Shu plitkaning tomoni necha santimetr?",
+      "v": [
+        "7 sm",
+        "7√2 sm",
+        "14√2 sm",
+        "3,5√2 sm"
+      ],
+      "t": 1,
+      "izoh": "Kvadratning tomoni a bo'lsa, diagonali a√2 ga teng. a√2 = 14 tenglamadan a = 14 : √2 = 7√2 sm. Diagonalning oddiy yarmi 7 sm javob emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-diagonal",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#73a6b3bb"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning diagonali 25 sm, eni esa 15 sm. Shu to'rtburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "375 sm²",
+        "150 sm²",
+        "300 sm²",
+        "200 sm²"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi tomon √(625 − 225) = √400 = 20 sm. Yuza S = 15 · 20 = 300 sm². Diagonalni tomon o'rniga ishlatsak 375 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,75 245,75 245,215 55,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='215' x2='245' y2='75' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,215 67,203 55,203' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='69' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='231' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='231' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='235' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='45' y='145' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3Ctext x='156' y='137' font-size='13' fill='%23334155' text-anchor='start'%3E25 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-diagonal",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#9f480a8a"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi bayroqning diagonali 65 sm, perimetri esa 182 sm. Bayroqning kichik tomoni necha santimetr?",
+      "v": [
+        "52 sm",
+        "45,5 sm",
+        "26 sm",
+        "39 sm"
+      ],
+      "t": 3,
+      "izoh": "Tomonlar yig'indisi 182 : 2 = 91 sm. a² + b² = 4225 va (a + b)² = 8281 bo'lgani uchun 2ab = 4056, ya'ni ab = 2028. x² − 91x + 2028 = 0 tenglamadan tomonlar 39 sm va 52 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='55,75 245,75 245,215 55,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55' y1='215' x2='245' y2='75' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='67,215 67,203 55,203' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47' y='69' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='253' y='69' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='253' y='231' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='47' y='231' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='150' y='235' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='45' y='145' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='156' y='137' font-size='13' fill='%23334155' text-anchor='start'%3E65 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tortburchak-diagonal",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#6711f9d8"
+    },
+    {
+      "q": "Koordinata tekisligida A(2; 3) va B(10; 9) nuqtalar berilgan. Shu ikki nuqta orasidagi masofa necha birlikka teng?",
+      "v": [
+        "10",
+        "14",
+        "8",
+        "100"
+      ],
+      "t": 0,
+      "izoh": "Masofa formulasi Pifagor teoremasidan kelib chiqadi. Koordinatalar farqi 8 va 6, demak d = √(64 + 36) = √100 = 10 birlik.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='30' y1='255' x2='285' y2='255' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='45' y1='275' x2='45' y2='25' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='288' y='259' font-size='13' fill='%23334155' text-anchor='start'%3Ex%3C/text%3E%3Ctext x='39' y='22' font-size='13' fill='%23334155' text-anchor='end'%3Ey%3C/text%3E%3Ctext x='38' y='270' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ccircle cx='85' cy='195' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='92' y='187' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ccircle cx='245' cy='75' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='252' y='67' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-masofa",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#411ab6a3"
+    },
+    {
+      "q": "Xarita ustida maktab M(−4; 1), kutubxona esa K(4; 16) nuqtada belgilangan va bir birlik 1 km ga teng. Ular orasidagi to'g'ri masofa necha kilometr?",
+      "v": [
+        "23 km",
+        "17 km",
+        "15 km",
+        "8 km"
+      ],
+      "t": 1,
+      "izoh": "Koordinatalar farqini topamiz: 4 − (−4) = 8 va 16 − 1 = 15. Masofa d = √(64 + 225) = √289 = 17 km. Farqlarni oddiy qo'shsak 23 chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='30' y1='250' x2='285' y2='250' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='275' x2='150' y2='25' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='288' y='254' font-size='13' fill='%23334155' text-anchor='start'%3Ex%3C/text%3E%3Ctext x='144' y='22' font-size='13' fill='%23334155' text-anchor='end'%3Ey%3C/text%3E%3Ctext x='143' y='265' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ccircle cx='98' cy='237' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='105' y='229' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ccircle cx='202' cy='42' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='209' y='34' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-masofa",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#06bab6e6"
+    },
+    {
+      "q": "Uchburchakning uchlari A(0; 0), B(6; 0) va C(0; 8) nuqtalarda joylashgan. Shu uchburchakning perimetri necha birlikka teng?",
+      "v": [
+        "48",
+        "14",
+        "24",
+        "20"
+      ],
+      "t": 2,
+      "izoh": "AB = 6 va AC = 8 kesmalar koordinata o'qlari bo'ylab yotgani uchun ∠A = 90°. BC = √(36 + 64) = 10. Perimetr 6 + 8 + 10 = 24 birlik.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='30' y1='250' x2='285' y2='250' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='60' y1='275' x2='60' y2='25' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='288' y='254' font-size='13' fill='%23334155' text-anchor='start'%3Ex%3C/text%3E%3Ctext x='54' y='22' font-size='13' fill='%23334155' text-anchor='end'%3Ey%3C/text%3E%3Ctext x='53' y='265' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ccircle cx='60' cy='250' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='67' y='242' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ccircle cx='192' cy='250' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='199' y='242' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ccircle cx='60' cy='74' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='67' y='66' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Cpolyline points='60,250 192,250 60,74 60,250' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-masofa",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#6b78f737"
+    },
+    {
+      "q": "Uchlari A(1; 2), B(5; 6) va C(9; 2) bo'lgan uchburchak qanday turga mansub ekanini aniqlang.",
+      "v": [
+        "Teng yonli, barcha burchaklari o'tkir",
+        "To'g'ri burchakli, lekin teng yonli emas",
+        "Teng tomonli uchburchak",
+        "Teng yonli va to'g'ri burchakli"
+      ],
+      "t": 3,
+      "izoh": "AB = √(16 + 16) = √32, BC = √(16 + 16) = √32, AC = 8. AB = BC bo'lgani uchun uchburchak teng yonli. AB² + BC² = 32 + 32 = 64 = AC² bo'lgani uchun B uchidagi burchak to'g'ri.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='30' y1='255' x2='285' y2='255' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='40' y1='275' x2='40' y2='25' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='288' y='259' font-size='13' fill='%23334155' text-anchor='start'%3Ex%3C/text%3E%3Ctext x='34' y='22' font-size='13' fill='%23334155' text-anchor='end'%3Ey%3C/text%3E%3Ctext x='33' y='270' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ccircle cx='64' cy='207' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='71' y='199' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ccircle cx='160' cy='111' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='167' y='103' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ccircle cx='256' cy='207' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='263' y='199' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Cpolyline points='64,207 160,111 256,207 64,207' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-masofa",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#770a6ae8"
+    },
+    {
+      "q": "Uzunligi 25 m bo'lgan narvonning pastki uchi devordan 7 m narida turibdi. Narvonning yuqori uchi devor bo'ylab 4 m pastga sirg'alsa, pastki uchi devordan necha metr uzoqlikda bo'ladi?",
+      "v": [
+        "15 m",
+        "11 m",
+        "20 m",
+        "24 m"
+      ],
+      "t": 0,
+      "izoh": "Boshida balandlik √(625 − 49) = 24 m edi. Sirg'algandan keyin balandlik 24 − 4 = 20 m bo'ladi. Yangi masofa √(625 − 400) = √225 = 15 m, ya'ni 7 + 4 = 11 emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='70' y1='245' x2='70' y2='30' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='245' x2='183.3' y2='245' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='45' x2='128.3' y2='245' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,245 83,232 70,232' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='99.2' y='265' font-size='13' fill='%23334155' text-anchor='middle'%3E7 m%3C/text%3E%3Ctext x='107.2' y='137' font-size='13' fill='%23334155' text-anchor='start'%3E25 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ikki-bosqich",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#2f65271f"
+    },
+    {
+      "q": "Ustunning 8 m balandligiga bog'langan arqonning erkin uchi yerga ustundan 15 m narida tushadi. Arqon 7 m ga qisqartirilsa, uning uchi ustundan necha metr narida bo'ladi?",
+      "v": [
+        "8 m",
+        "6 m",
+        "10 m",
+        "12 m"
+      ],
+      "t": 1,
+      "izoh": "Dastlabki arqon uzunligi √(64 + 225) = 17 m. Qisqartirilgandan keyin u 17 − 7 = 10 m bo'ladi. Yangi masofa √(100 − 64) = √36 = 6 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='70' y1='245' x2='70' y2='60' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='245' x2='265' y2='245' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='115' x2='220' y2='245' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,245 83,232 70,232' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='60' y='180' font-size='13' fill='%23334155' text-anchor='end'%3E8 m%3C/text%3E%3Ctext x='145' y='265' font-size='13' fill='%23334155' text-anchor='middle'%3E15 m%3C/text%3E%3Ctext x='153' y='172' font-size='13' fill='%23334155' text-anchor='start'%3Earqon%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ikki-bosqich",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#9a2b0c62"
+    },
+    {
+      "q": "Devorga tirab qo'yilgan 13 m li narvonning pastki uchi devordan 5 m narida edi. Pastki uch devordan 12 m narigacha surildi. Narvonning yuqori uchi necha metrga pastladi?",
+      "v": [
+        "5 m",
+        "12 m",
+        "7 m",
+        "6 m"
+      ],
+      "t": 2,
+      "izoh": "Boshlang'ich balandlik √(169 − 25) = 12 m. Surilgandan keyingi balandlik √(169 − 144) = 5 m. Pasayish 12 − 5 = 7 m ni tashkil qiladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='70' y1='245' x2='70' y2='30' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='245' x2='208.3' y2='245' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='45' x2='153.3' y2='245' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,245 83,232 70,232' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='60' y='145' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='111.7' y='265' font-size='13' fill='%23334155' text-anchor='middle'%3E5 m%3C/text%3E%3Ctext x='119.7' y='137' font-size='13' fill='%23334155' text-anchor='start'%3E13 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-ikki-bosqich",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#8c266854"
+    },
+    {
+      "q": "Havo shari yerdan 80 m balandlikda turibdi. Undan yerdagi ikki nuqtaga uzunligi 100 m va 89 m bo'lgan arqonlar tortilgan. Bu nuqtalar shar tagidagi nuqtaning qarama-qarshi tomonlarida bo'lsa, ular orasidagi masofa necha metr?",
+      "v": [
+        "189 m",
+        "60 m",
+        "21 m",
+        "99 m"
+      ],
+      "t": 3,
+      "izoh": "Birinchi arqon uchun gorizontal masofa √(10000 − 6400) = 60 m. Ikkinchisi uchun √(7921 − 6400) = √1521 = 39 m. Nuqtalar qarama-qarshi tomonda bo'lgani uchun masofa 60 + 39 = 99 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-ikki-bosqich",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#37cebe82"
+    },
+    {
+      "q": "Alisher velosipedda avval shimolga 9 km, so'ngra sharqqa qarab 12 km yurdi. U yo'lga chiqqan nuqtadan hozir necha kilometr uzoqlikda?",
+      "v": [
+        "15 km",
+        "21 km",
+        "3 km",
+        "108 km"
+      ],
+      "t": 0,
+      "izoh": "Ikki yo'nalish o'zaro perpendikulyar bo'lgani uchun to'g'ri burchakli uchburchak hosil bo'ladi. Masofa √(81 + 144) = √225 = 15 km, bosib o'tgan yo'l esa 21 km.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='80' y1='235' x2='80' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='235' x2='265' y2='235' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='80' x2='265' y2='235' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='93,235 93,222 80,222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='80' cy='235' r='3' fill='%23334155' stroke='none'/%3E%3Ccircle cx='80' cy='80' r='3' fill='%23334155' stroke='none'/%3E%3Ccircle cx='265' cy='235' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='72' y='251' font-size='13' fill='%23334155' text-anchor='end'%3EK%3C/text%3E%3Ctext x='72' y='76' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='273' y='251' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='70' y='157.5' font-size='13' fill='%23334155' text-anchor='end'%3E9 km%3C/text%3E%3Ctext x='172.5' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3E12 km%3C/text%3E%3Ctext x='184.5' y='149.5' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perpendikulyar-yol",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#4be8f2ea"
+    },
+    {
+      "q": "Ikki kema portdan bir vaqtda o'zaro perpendikulyar yo'nalishlarda jo'nadi. Birining tezligi 15 km/soat, ikkinchisiniki esa 20 km/soat. Uch soatdan keyin ular orasidagi masofa necha kilometr?",
+      "v": [
+        "105 km",
+        "75 km",
+        "25 km",
+        "35 km"
+      ],
+      "t": 1,
+      "izoh": "Uch soatda birinchi kema 45 km, ikkinchisi esa 60 km yo'l bosadi. Ular orasidagi masofa √(2025 + 3600) = √5625 = 75 km.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='80' y1='235' x2='80' y2='96.25' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='235' x2='265' y2='235' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='96.25' x2='265' y2='235' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='93,235 93,222 80,222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='80' cy='235' r='3' fill='%23334155' stroke='none'/%3E%3Ccircle cx='80' cy='96.25' r='3' fill='%23334155' stroke='none'/%3E%3Ccircle cx='265' cy='235' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='72' y='251' font-size='13' fill='%23334155' text-anchor='end'%3EK%3C/text%3E%3Ctext x='72' y='92' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='273' y='251' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='72' y='166' font-size='13' fill='%23334155' text-anchor='end'%3E15 km/soat%3C/text%3E%3Ctext x='172.5' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3E20 km/soat%3C/text%3E%3Ctext x='180' y='155' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='150' y='285' font-size='13' fill='%23334155' text-anchor='middle'%3E3 soatlik yo'l%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyar-yol",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#bb2b1f37"
+    },
+    {
+      "q": "Chorrahadan birinchi qishloq 24 km shimolda, ikkinchisi esa 7 km sharqda joylashgan. Ular orasiga to'g'ri yo'l qurilsa, hozirgi yo'lga nisbatan necha kilometr masofa tejaladi?",
+      "v": [
+        "25 km",
+        "31 km",
+        "6 km",
+        "17 km"
+      ],
+      "t": 2,
+      "izoh": "Hozirgi yo'l chorraha orqali 24 + 7 = 31 km. To'g'ri yo'l √(576 + 49) = √625 = 25 km. Tejaladigan masofa 31 − 25 = 6 km.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='80' y1='235' x2='80' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='235' x2='265' y2='235' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='80' x2='265' y2='235' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='93,235 93,222 80,222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='80' cy='235' r='3' fill='%23334155' stroke='none'/%3E%3Ccircle cx='80' cy='80' r='3' fill='%23334155' stroke='none'/%3E%3Ccircle cx='265' cy='235' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='72' y='251' font-size='13' fill='%23334155' text-anchor='end'%3EK%3C/text%3E%3Ctext x='72' y='76' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='273' y='251' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='70' y='157.5' font-size='13' fill='%23334155' text-anchor='end'%3E24 km%3C/text%3E%3Ctext x='172.5' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3E7 km%3C/text%3E%3Ctext x='184.5' y='149.5' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perpendikulyar-yol",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#ec38af26"
+    },
+    {
+      "q": "To'g'ri burchak ostida kesishuvchi ikki ko'chaning kesishmasidan Aziz 800 m, Bobur esa 600 m uzoqlikda turibdi. Ular orasidagi eng qisqa masofa necha metr?",
+      "v": [
+        "1400 m",
+        "200 m",
+        "700 m",
+        "1000 m"
+      ],
+      "t": 3,
+      "izoh": "Ular turgan nuqtalar va kesishma to'g'ri burchakli uchburchak hosil qiladi. Eng qisqa masofa gipotenuza bo'ladi: √(640000 + 360000) = √1000000 = 1000 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='80' y1='235' x2='80' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='235' x2='265' y2='235' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='80' x2='265' y2='235' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='93,235 93,222 80,222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='80' cy='235' r='3' fill='%23334155' stroke='none'/%3E%3Ccircle cx='80' cy='80' r='3' fill='%23334155' stroke='none'/%3E%3Ccircle cx='265' cy='235' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='72' y='251' font-size='13' fill='%23334155' text-anchor='end'%3EK%3C/text%3E%3Ctext x='72' y='76' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='273' y='251' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='70' y='157.5' font-size='13' fill='%23334155' text-anchor='end'%3E600 m%3C/text%3E%3Ctext x='172.5' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3E800 m%3C/text%3E%3Ctext x='184.5' y='149.5' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyar-yol",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#c33e9edc"
+    },
+    {
+      "q": "ABC uchburchakda ∠B = 90°, AB = 3 sm, BC = 4 sm. C nuqtadan AC ga perpendikulyar qilib CD = 12 sm kesma o'tkazildi. AD kesma necha santimetrga teng?",
+      "v": [
+        "13 sm",
+        "19 sm",
+        "5 sm",
+        "17 sm"
+      ],
+      "t": 0,
+      "izoh": "Avval ABC uchburchakdan AC² = 3² + 4² = 25, ya'ni AC = 5 sm. So'ng ACD to'g'ri burchakli uchburchakdan AD² = 5² + 12² = 169, demak AD = 13 sm. Oraliq natija 5 ni yoki 5 + 12 = 17 ni javob deb olmaslik kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,140 106,140 106,188' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='106' y1='188' x2='221.2' y2='101.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='140' x2='221.2' y2='101.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='94,140 94,152 106,152' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='98.8,178.4 108.4,171.2 115.6,180.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='145' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='112' y='136' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='98' y='202' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='229' y='97' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='88' y='132' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3Ctext x='114' y='166' font-size='13' fill='%23334155' text-anchor='start'%3E4 sm%3C/text%3E%3Ctext x='172' y='158' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='145.6' y='112' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ketma-ket-pifagor",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#dbb26327"
+    },
+    {
+      "q": "To'g'ri to'rtburchakli maydonchaning tomonlari 12 m va 16 m. Uning A burchagidan qarama-qarshi C burchakka arqon tortilgan, so'ng C nuqtadan shu arqonga perpendikulyar yo'nalishda 15 m yurib E nuqta belgilangan. A va E nuqtalar orasidagi masofa necha metr?",
+      "v": [
+        "20 m",
+        "25 m",
+        "43 m",
+        "33 m"
+      ],
+      "t": 1,
+      "izoh": "Avval maydoncha diagonalini topamiz: AC² = 12² + 16² = 400, ya'ni AC = 20 m. ACE uchburchakda C burchak to'g'ri, shuning uchun AE² = 20² + 15² = 625 va AE = 25 m. Diagonalning o'zi bo'lgan 20 m javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='50,60 146,60 146,188 50,188' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='50' y1='60' x2='146' y2='188' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='146' y1='188' x2='242' y2='116' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='50' y1='60' x2='242' y2='116' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='134,60 134,72 146,72' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='138.8,178.4 148.4,171.2 155.6,180.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='42' y='56' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='154' y='56' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='140' y='204' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='42' y='200' font-size='13' fill='%23334155' text-anchor='end'%3ED%3C/text%3E%3Ctext x='250' y='112' font-size='13' fill='%23334155' text-anchor='start'%3EE%3C/text%3E%3Ctext x='98' y='52' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='42' y='128' font-size='13' fill='%23334155' text-anchor='end'%3E16 m%3C/text%3E%3Ctext x='202' y='166' font-size='13' fill='%23334155' text-anchor='start'%3E15 m%3C/text%3E%3Ctext x='200' y='96' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ket-pifagor",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#7bf029ee"
+    },
+    {
+      "q": "Teng yonli uchburchakning asosi 18 sm, shu asosga tushirilgan balandlik esa 12 sm. Uchburchakning yon tomoni necha santimetrga teng?",
+      "v": [
+        "21 sm",
+        "3 sm",
+        "15 sm",
+        "7,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Teng yonli uchburchakda asosga tushirilgan balandlik asosni teng ikkiga bo'ladi, ya'ni yarmi 18 : 2 = 9 sm. Yon tomon gipotenuza bo'lgani uchun b = √(81 + 144) = √225 = 15 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='150,80 60,200 240,200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='80' x2='150' y2='200' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='161,200 161,189 150,189' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='101' y1='137' x2='109' y2='143' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='191' y1='143' x2='199' y2='137' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='52' y='216' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='248' y='216' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='218' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='94' y='128' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='158' y='145' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='150' y='238' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-yon-tomon",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#8ace0e58"
+    },
+    {
+      "q": "ABCD to'rtburchakda ∠ABC = 90° va ∠ACD = 90°. AB = 9 sm, BC = 12 sm, AD = 17 sm. CD tomon necha santimetrga teng?",
+      "v": [
+        "15 sm",
+        "2 sm",
+        "10 sm",
+        "8 sm"
+      ],
+      "t": 3,
+      "izoh": "Avval AC diagonalni topamiz: AC² = 9² + 12² = 225, ya'ni AC = 15 sm. ACD uchburchakda AD gipotenuza, shuning uchun CD = √(289 − 225) = √64 = 8 sm. Oraliq natija 15 ham, 17 − 15 = 2 ham javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='60,50 60,140 180,140 228,76' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='60' y1='50' x2='180' y2='140' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='72,140 72,128 60,128' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='170.4,132.8 177.6,123.2 187.2,130.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='52' y='46' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='52' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='176' y='158' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='236' y='72' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='50' y='98' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='120' y='160' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='214' y='118' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='144' y='55' font-size='13' fill='%23334155' text-anchor='middle'%3E17 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ketma-ket-pifagor",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#ecab8f07"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari 12 sm va 16 sm. Gipotenuzaga tushirilgan medianasi necha santimetrga teng?",
+      "v": [
+        "10 sm",
+        "20 sm",
+        "9,6 sm",
+        "14 sm"
+      ],
+      "t": 0,
+      "izoh": "Gipotenuza c = √(144 + 256) = 20 sm. To'g'ri burchak uchidan gipotenuzaga tushirilgan mediana uning yarmiga teng: 20 : 2 = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,70 255,235 70,235' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='235' x2='162.5' y2='152.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='83,235 83,222 70,222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='162.5' cy='152.5' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='62' y='64' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='251' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='251' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='172.5' y='146.5' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='162.5' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='60' y='152.5' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='118.3' y='211.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gipotenuza-mediana",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#f3894c44"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda gipotenuzaga tushirilgan mediana 8,5 sm, katetlaridan biri esa 8 sm. Ikkinchi katet necha santimetr?",
+      "v": [
+        "16 sm",
+        "15 sm",
+        "9 sm",
+        "12 sm"
+      ],
+      "t": 1,
+      "izoh": "Mediana gipotenuzaning yarmiga teng, demak gipotenuza 2 · 8,5 = 17 sm. Ikkinchi katet √(289 − 64) = √225 = 15 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,70 255,235 70,235' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='235' x2='162.5' y2='152.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='83,235 83,222 70,222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='162.5' cy='152.5' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='62' y='64' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='251' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='251' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='172.5' y='146.5' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='162.5' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='60' y='152.5' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='118.3' y='211.8' font-size='13' fill='%23334155' text-anchor='middle'%3E8,5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gipotenuza-mediana",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#f66a7fab"
+    },
+    {
+      "q": "Tom fermasi to'g'ri burchakli uchburchak shaklida bo'lib, uning uzun tomoni 6,4 m. Shu tomonning o'rtasidan to'g'ri burchak uchiga tirgak o'rnatilsa, tirgak uzunligi necha metr?",
+      "v": [
+        "6,4 m",
+        "1,6 m",
+        "3,2 m",
+        "12,8 m"
+      ],
+      "t": 2,
+      "izoh": "Tirgak gipotenuzaga tushirilgan mediana vazifasini bajaradi. U gipotenuzaning yarmiga teng, chunki to'g'ri burchakli uchburchakning uchlari bir aylanada yotadi. Demak tirgak 6,4 : 2 = 3,2 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,70 255,235 70,235' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='235' x2='162.5' y2='152.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='83,235 83,222 70,222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='162.5' cy='152.5' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='62' y='64' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='251' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='251' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='172.5' y='146.5' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='118.3' y='211.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='188.5' y='134.5' font-size='13' fill='%23334155' text-anchor='start'%3E6,4 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gipotenuza-mediana",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#6a27ed93"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda gipotenuzaga tushirilgan mediana 6,5 sm, shu gipotenuzaga tushirilgan balandlik esa 6 sm. Uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "78 sm²",
+        "19,5 sm²",
+        "42,25 sm²",
+        "39 sm²"
+      ],
+      "t": 3,
+      "izoh": "Mediana gipotenuzaning yarmi bo'lgani uchun gipotenuza 2 · 6,5 = 13 sm. Yuza asos va balandlik ko'paytmasining yarmi: S = 13 · 6 : 2 = 39 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,70 255,235 70,235' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='235' x2='162.5' y2='152.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='83,235 83,222 70,222' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='162.5' cy='152.5' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='62' y='64' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='251' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='251' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='172.5' y='146.5' font-size='13' fill='%23334155' text-anchor='start'%3EM%3C/text%3E%3Ctext x='118.3' y='211.8' font-size='13' fill='%23334155' text-anchor='middle'%3E6,5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gipotenuza-mediana",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#73d819b3"
+    },
+    {
+      "q": "Katetlari 6 sm va 8 sm bo'lgan to'g'ri burchakli uchburchakka ichki chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "2 sm",
+        "4 sm",
+        "5 sm",
+        "4,8 sm"
+      ],
+      "t": 0,
+      "izoh": "Gipotenuza √(36 + 64) = 10 sm. To'g'ri burchakli uchburchak uchun r = (a + b − c) : 2 = (6 + 8 − 10) : 2 = 2 sm. 4,8 sm esa gipotenuzaga tushirilgan balandlik uzunligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,85 250,235 70,235' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='117.8' cy='187.2' r='47.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='81,235 81,224 70,224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='117.8' cy='187.2' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='62' y='79' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='258' y='251' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='251' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='160' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='60' y='160' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Ctext x='123.8' y='181.2' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-tashqi-aylana",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#5fc5db26"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari 9 sm va 12 sm bo'lsa, unga ichki chizilgan aylananing diametri necha santimetr?",
+      "v": [
+        "3 sm",
+        "6 sm",
+        "7,5 sm",
+        "12 sm"
+      ],
+      "t": 1,
+      "izoh": "Gipotenuza √(81 + 144) = 15 sm. Radius r = (9 + 12 − 15) : 2 = 3 sm. Savolda diametr so'ralgani uchun javob 2 · 3 = 6 sm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,85 250,235 70,235' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='117.8' cy='187.2' r='47.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='81,235 81,224 70,224' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='117.8' cy='187.2' r='3' fill='%23334155' stroke='none'/%3E%3Ctext x='62' y='79' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='258' y='251' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='251' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='160' y='255' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='60' y='160' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='123.8' y='181.2' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-tashqi-aylana",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#94dec114"
+    },
+    {
+      "q": "Katetlari 20 sm va 21 sm bo'lgan to'g'ri burchakli uchburchakka tashqi chizilgan aylananing radiusi necha santimetr?",
+      "v": [
+        "29 sm",
+        "10,5 sm",
+        "14,5 sm",
+        "20,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Gipotenuza √(400 + 441) = √841 = 29 sm. To'g'ri burchakli uchburchakda gipotenuza tashqi chizilgan aylananing diametri bo'ladi, demak radius 29 : 2 = 14,5 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-tashqi-aylana",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#63db942f"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakka ichki chizilgan aylananing radiusi 3 sm, gipotenuzasi esa 25 sm. Uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "168 sm²",
+        "75 sm²",
+        "37,5 sm²",
+        "84 sm²"
+      ],
+      "t": 3,
+      "izoh": "r = (a + b − c) : 2 formuladan a + b = 2 · 3 + 25 = 31. (a + b)² = 961 va a² + b² = 625 bo'lgani uchun 2ab = 336, ya'ni ab = 168. Yuza 168 : 2 = 84 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-tashqi-aylana",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#41f9821c"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari 3 : 4 nisbatda, gipotenuzasi esa 30 sm. Shu uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "216 sm²",
+        "432 sm²",
+        "108 sm²",
+        "180 sm²"
+      ],
+      "t": 0,
+      "izoh": "Katetlarni 3k va 4k deb olsak, gipotenuza 5k = 30 dan k = 6. Katetlar 18 sm va 24 sm, yuza esa 18 · 24 : 2 = 216 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,101.3 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='95.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='162.5' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E4k%3C/text%3E%3Ctext x='60' y='170.6' font-size='13' fill='%23334155' text-anchor='end'%3E3k%3C/text%3E%3Ctext x='174.5' y='164.6' font-size='13' fill='%23334155' text-anchor='start'%3E30 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-tahlil",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#100c75fb"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning katetlari 8 : 15 nisbatda, perimetri esa 120 sm. Shu uchburchakning kichik kateti necha santimetr?",
+      "v": [
+        "45 sm",
+        "24 sm",
+        "51 sm",
+        "40 sm"
+      ],
+      "t": 1,
+      "izoh": "Katetlar 8k va 15k bo'lsa, gipotenuza √(64k² + 225k²) = 17k. Perimetr 40k = 120 dan k = 3. Kichik katet 8 · 3 = 24 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,141.3 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='135.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='162.5' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E15k%3C/text%3E%3Ctext x='60' y='190.7' font-size='13' fill='%23334155' text-anchor='end'%3E8k%3C/text%3E%3Ctext x='174.5' y='184.7' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-tahlil",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#b25b7904"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning gipotenuzasi 20 sm, katetlari esa 3 : 4 nisbatda. Gipotenuzaga tushirilgan balandlik necha santimetr?",
+      "v": [
+        "10 sm",
+        "12 sm",
+        "9,6 sm",
+        "14 sm"
+      ],
+      "t": 2,
+      "izoh": "Katetlar 3k va 4k, gipotenuza 5k = 20 dan k = 4. Demak katetlar 12 sm va 16 sm. Balandlik h = 12 · 16 : 20 = 192 : 20 = 9,6 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='38,240 263,240 119,132' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119' y1='132' x2='119' y2='240' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='111.2,142.4 121.6,150.2 129.4,139.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='130,240 130,229 119,229' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='29' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='272' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='119' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='119' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH%3C/text%3E%3Ctext x='128' y='186' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='68.5' y='186' font-size='13' fill='%23334155' text-anchor='end'%3E3k%3C/text%3E%3Ctext x='201' y='182' font-size='13' fill='%23334155' text-anchor='start'%3E4k%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-tahlil",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#613f31bf"
+    },
+    {
+      "q": "Dala uchastkasi to'g'ri burchakli uchburchak shaklida, katetlari 8 : 15 nisbatda va yuzi 240 kvadrat metr. Uchastkaning perimetri necha metr?",
+      "v": [
+        "46 m",
+        "64 m",
+        "120 m",
+        "80 m"
+      ],
+      "t": 3,
+      "izoh": "Katetlar 8k va 15k bo'lsa, yuza 60k² = 240 dan k² = 4 va k = 2. Katetlar 16 m va 30 m, gipotenuza √(256 + 900) = 34 m. Perimetr 16 + 30 + 34 = 80 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,141.3 255,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='83,240 83,227 70,227' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='135.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='263' y='256' font-size='13' fill='%23334155' text-anchor='start'%3EB%3C/text%3E%3Ctext x='62' y='256' font-size='13' fill='%23334155' text-anchor='end'%3EC%3C/text%3E%3Ctext x='162.5' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3E15k%3C/text%3E%3Ctext x='60' y='190.7' font-size='13' fill='%23334155' text-anchor='end'%3E8k%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-tahlil",
+      "id": "matematika_plan_m07-togri-burchakli-uchburchak-pifagor-teoremasi#809e82c0"
+    }
+  ]
+}

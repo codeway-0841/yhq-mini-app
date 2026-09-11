@@ -1,0 +1,531 @@
+{
+  "nom": "29-mavzu. Elektr Maydon Energiyasi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "O'tkazgichni zaryadlash uchun bajariladigan ish nimaga sarflanadi?",
+      "v": [
+        "Zaryadlar orasidagi o'zaro itarish kuchini yengishga",
+        "O'tkazgichni isitishga",
+        "Zaryadlarning kinetik energiyasini oshirishga",
+        "O'tkazgich massasini oshirishga"
+      ],
+      "t": 0,
+      "izoh": "O'tkazgichni zaryadlash uchun zaryadlar orasidagi o'zaro itarish kuchini yengishda ish bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#9a64a761"
+    },
+    {
+      "q": "Zaryadlangan o'tkazgich olgan energiyasi miqdor jihatdan nimaga teng?",
+      "v": [
+        "Uni zaryadlashda bajarilgan ish miqdoriga",
+        "O'tkazgichning issiqlik sig'imiga",
+        "Zaryadning kvadratiga",
+        "O'tkazgich massasiga"
+      ],
+      "t": 0,
+      "izoh": "Wel = A, ya'ni elektr maydon energiyasi zaryadlashda bajarilgan ishga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#8b0d433a"
+    },
+    {
+      "q": "Elektr maydon energiyasi qanday belgilanadi?",
+      "v": [
+        "Wel",
+        "Ek",
+        "Wp",
+        "Q"
+      ],
+      "t": 0,
+      "izoh": "Elektr maydon energiyasi Wel deb ataladi va shunday belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#575561ff"
+    },
+    {
+      "q": "Jismni zaryadlashda bajarilgan ish qanday formula bilan topiladi?",
+      "v": [
+        "A = q·φ/2",
+        "A = q·φ",
+        "A = q²·φ",
+        "A = q·φ²/2"
+      ],
+      "t": 0,
+      "izoh": "A = q·φ/2, chunki potensialning o'rtacha qiymati φ/2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#ebb0aef3"
+    },
+    {
+      "q": "Jismni zaryadlashda potensialning o'rtacha qiymati qanday aniqlanadi?",
+      "v": [
+        "Boshlang'ich va oxirgi qiymatlarning o'rta arifmetik qiymati sifatida",
+        "Oxirgi qiymatning kvadrati sifatida",
+        "Boshlang'ich qiymatning ikki baravari sifatida",
+        "Oxirgi qiymatga teng deb olinadi"
+      ],
+      "t": 0,
+      "izoh": "φo'rt = (0 + φ)/2 = φ/2, chunki dastlab jism zaryadlanmagan, potensiali nol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#97cf03bb"
+    },
+    {
+      "q": "Yakkalangan o'tkazgichning elektr maydon energiyasi qanday formulalar bilan ifodalanadi?",
+      "v": [
+        "Wel = q·φ/2 = C·φ²/2 = q²/(2C)",
+        "Wel = q·φ = C·φ²",
+        "Wel = q²·φ/2",
+        "Wel = q/(2C)"
+      ],
+      "t": 0,
+      "izoh": "Wel = q·φ/2 = C·φ²/2 = q²/(2C).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#4b6ca027"
+    },
+    {
+      "q": "Zaryadlangan kondensatorning elektr maydon energiyasi qanday ifodalanadi?",
+      "v": [
+        "Wel = q·U/2 = C·U²/2 = q²/(2C)",
+        "Wel = q·U = C·U²",
+        "Wel = q·U²/2",
+        "Wel = C·U/2"
+      ],
+      "t": 0,
+      "izoh": "Wkon = q·U/2 = C·U²/2 = q²/(2C), bu yerda U — qoplamalar orasidagi potensiallar farqi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#c5036c7b"
+    },
+    {
+      "q": "Kondensator energiyasini hisoblashda yakkalangan o'tkazgich formulasidagi potensial nimaga almashtiriladi?",
+      "v": [
+        "Qoplamalar orasidagi potensiallar farqiga",
+        "Kondensator sig'imiga",
+        "Zaryadning kvadratiga",
+        "Qoplamalar orasidagi masofaga"
+      ],
+      "t": 0,
+      "izoh": "Kondensator uchun potensial uning qoplamalari orasidagi potensiallar farqi (φ₂ – φ₁ = U) bilan almashtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#c2cffc60"
+    },
+    {
+      "q": "Zaryadlangan jismning energiyasi qayerda mujassamlangan?",
+      "v": [
+        "Uning atrofida hosil bo'lgan elektr maydonida",
+        "Jismning ichki atomlarida",
+        "Jismning yuzasidagi atom yadrolarida",
+        "Jismning issiqlik holatida"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlangan jismning energiyasi uning atrofida hosil bo'lgan elektr maydonida mujassamlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#68acbe94"
+    },
+    {
+      "q": "Zaryadlangan yassi kondensatorning elektr maydoni qayerda mujassamlashgan?",
+      "v": [
+        "Qoplamalari orasidagi fazoda",
+        "Kondensatorning tashqi fazosida",
+        "Faqat musbat qoplama yuzasida",
+        "Qoplamalardan cheksiz uzoqda"
+      ],
+      "t": 0,
+      "izoh": "Yassi kondensator qoplamalaridagi zaryadlar hosil qilgan maydon uning qoplamalari orasida mujassamlashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#92aa2d44"
+    },
+    {
+      "q": "Kondensator qoplamalari orasidagi hajm qanday ifodalanadi?",
+      "v": [
+        "V = S·d",
+        "V = S/d",
+        "V = S²·d",
+        "V = S·d²"
+      ],
+      "t": 0,
+      "izoh": "V = S·d, bu yerda S — qoplama yuzasi, d — qoplamalar orasidagi masofa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#7c4dd740"
+    },
+    {
+      "q": "Zaryadlangan yassi kondensatorning energiyasi nimaga to'g'ri proporsional?",
+      "v": [
+        "Elektr maydon kuchlanganligining kvadratiga va maydon egallagan fazo hajmiga",
+        "Maydon kuchlanganligining o'ziga",
+        "Qoplamalar orasidagi masofaning kubiga",
+        "Qoplama yuzasining kvadrat ildiziga"
+      ],
+      "t": 0,
+      "izoh": "Wel = ε₀ε·E²·V/2 — energiya kuchlanganlik kvadratiga va hajmga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#a85aa877"
+    },
+    {
+      "q": "Yassi kondensator energiyasining kuchlanganlik va hajm orqali ifodasi qanday?",
+      "v": [
+        "Wel = ε₀ε·E²·V/2",
+        "Wel = ε₀ε·E·V/2",
+        "Wel = ε₀ε·E²·V²/2",
+        "Wel = E²·V/(2ε₀ε)"
+      ],
+      "t": 0,
+      "izoh": "Wel = ε₀ε·E²·V/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#2daee931"
+    },
+    {
+      "q": "Energiya zichligi deganda nima tushuniladi?",
+      "v": [
+        "Maydonning hajm birligiga to'g'ri kelgan energiyasi",
+        "Maydonning butun hajmidagi energiya",
+        "Kondensator sig'imining hajmga nisbati",
+        "Kuchlanganlikning hajmga nisbati"
+      ],
+      "t": 0,
+      "izoh": "Maydonning hajm birligiga to'g'ri kelgan energiyasi energiya zichligi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#da14b908"
+    },
+    {
+      "q": "Elektr maydon energiya zichligining formulasi qanday?",
+      "v": [
+        "ω = ε₀ε·E²/2",
+        "ω = ε₀ε·E/2",
+        "ω = E²/(2ε₀ε)",
+        "ω = ε₀ε·E²·V"
+      ],
+      "t": 0,
+      "izoh": "ω = Wel/V = ε₀ε·E²/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#47bd06be"
+    },
+    {
+      "q": "Kondensator olgan zaryad vaqt o'tishi bilan nima bo'ladi?",
+      "v": [
+        "Qoplamalar orasida razryadlanadi",
+        "Doimiy saqlanib qoladi",
+        "Asta-sekin ortib boradi",
+        "Magnit energiyaga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Kondensator olgan zaryad vaqt o'tishi bilan qoplamalar orasida razryadlanadi; energiyani uzoq vaqt saqlab bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#16ff25ab"
+    },
+    {
+      "q": "Sig'imi 0,1 μF bo'lgan yassi havo kondensatori 200 V potensiallar farqiga ega bo'lsa, uning elektr maydon energiyasi qancha?",
+      "v": [
+        "2 mJ",
+        "20 mJ",
+        "0,2 mJ",
+        "2 J"
+      ],
+      "t": 0,
+      "izoh": "W = C·U²/2 = 1·10⁻⁷·4·10⁴/2 = 2·10⁻³ J = 2 mJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#8c5690f5"
+    },
+    {
+      "q": "Kondensatorning sig'imi 2 marta oshirilsa (kuchlanish o'zgarmasa), uning elektr maydon energiyasi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "W = C·U²/2 ga ko'ra, U o'zgarmas bo'lsa energiya sig'imga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#5065181d"
+    },
+    {
+      "q": "Kondensator qoplamalariga berilgan kuchlanish 2 marta oshirilsa (sig'im o'zgarmasa), uning energiyasi qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "W = C·U²/2 ga ko'ra, energiya kuchlanish kvadratiga proporsional: 2² = 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#5247a0bd"
+    },
+    {
+      "q": "Kondensatorning zaryadi 2 marta oshirilsa (sig'im o'zgarmasa), uning energiyasi qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "W = q²/(2C) ga ko'ra, energiya zaryad kvadratiga proporsional: 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#c6202709"
+    },
+    {
+      "q": "Elektr maydon energiyasining zichligi kuchlanganlikka qanday bog'langan?",
+      "v": [
+        "Kuchlanganlik kvadratiga to'g'ri proporsional",
+        "Kuchlanganlikka to'g'ri proporsional",
+        "Kuchlanganlikka teskari proporsional",
+        "Kuchlanganlikka bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "ω = ε₀ε·E²/2, demak energiya zichligi E² ga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#567e7871"
+    },
+    {
+      "q": "Yassi kondensatorning sig'imi qanday formula bilan ifodalanadi?",
+      "v": [
+        "C = ε₀ε·S/d",
+        "C = ε₀ε·d/S",
+        "C = ε₀ε·S·d",
+        "C = S/(ε₀ε·d)"
+      ],
+      "t": 0,
+      "izoh": "Yassi kondensatorning sig'imi C = ε₀ε·S/d.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#53e9f274"
+    },
+    {
+      "q": "Zaryadsizlanish vaqtida zaryadlangan o'tkazgich nima qiladi?",
+      "v": [
+        "Olgan energiyasini sarflaydi",
+        "Yana energiya to'playdi",
+        "Energiyasi nolga tushmaydi",
+        "Sig'imini oshiradi"
+      ],
+      "t": 0,
+      "izoh": "Zaryadsizlanish vaqtida o'tkazgich zaryadlashda olgan energiyasini sarflaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#7e59cbb4"
+    },
+    {
+      "q": "Dastlab zaryadlanmagan jismning potensiali qanchaga teng?",
+      "v": [
+        "Nolga",
+        "Birlik qiymatga",
+        "Cheksizlikka",
+        "Zaryad miqdoriga"
+      ],
+      "t": 0,
+      "izoh": "Dastlab jism zaryadlanmagan bo'lsa, uning potensiali nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#07308fd0"
+    },
+    {
+      "q": "Jismni zaryadlashda bajarilgan ish grafikda (q–U diagrammada) nimaga teng?",
+      "v": [
+        "Grafik ostidagi belgilangan yuzaga",
+        "Grafikning og'ma burchagiga",
+        "Grafikning ordinata o'qi bilan kesishish nuqtasiga",
+        "Grafik uzunligiga"
+      ],
+      "t": 0,
+      "izoh": "O'tkazgichni zaryadlashda bajarilgan ish miqdor jihatidan q–U grafikdagi belgilangan yuzaga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#38be2167"
+    },
+    {
+      "q": "Har bir kondensator o'zida zaryad bilan birga nima to'plash xususiyatiga ega?",
+      "v": [
+        "Elektr maydon energiyasini",
+        "Magnit maydon energiyasini",
+        "Issiqlik energiyasini",
+        "Yorug'lik energiyasini"
+      ],
+      "t": 0,
+      "izoh": "Har bir kondensator o'zida zaryad bilan birga elektr maydon energiyasini to'plash xususiyatiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#e951ee87"
+    },
+    {
+      "q": "Zaryadlangan jismning elektr energiyasi qanday kattaliklarga bog'liq?",
+      "v": [
+        "Zaryadi, sig'imi va potensialiga",
+        "Faqat jism massasiga",
+        "Faqat jism hajmiga",
+        "Jismning rangiga va shakliga"
+      ],
+      "t": 0,
+      "izoh": "Wel = q·φ/2 = C·φ²/2 = q²/(2C) formulalarga ko'ra energiya zaryad, potensial va sig'imga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#39ade35c"
+    },
+    {
+      "q": "Yassi kondensator qoplamalari orasidagi masofa 2 marta kamaytirilsa (kuchlanganlik o'zgarmasa), maydon energiyasi qanday o'zgaradi?",
+      "v": [
+        "2 marta kamayadi",
+        "2 marta ortadi",
+        "4 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "W = ε₀ε·E²·V/2, V = S·d bo'lgani uchun d 2 marta kamaysa, hajm ham, energiya ham 2 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#57ce2b19"
+    },
+    {
+      "q": "Maydon kuchlanganligi bilan qoplamalar orasidagi potensiallar farqi orasidagi bog'lanish qanday?",
+      "v": [
+        "U = E·d",
+        "U = E/d",
+        "U = E·d²",
+        "U = E²·d"
+      ],
+      "t": 0,
+      "izoh": "Kondensator uchun U = E·d bog'lanish o'rinli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#32a0a681"
+    },
+    {
+      "q": "Elektr maydon energiyasining SI dagi birligi qanday?",
+      "v": [
+        "Joul (J)",
+        "Volt (V)",
+        "Farad (F)",
+        "Vatt (V t)"
+      ],
+      "t": 0,
+      "izoh": "Energiya SI da joul (J) birligida o'lchanadi (masala javobida 2 mJ).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#cad7478c"
+    },
+    {
+      "q": "Zaryadlangan sharlarni o'zaro o'tkazgich sim orqali ulaganda qanday hodisa ro'y beradi?",
+      "v": [
+        "Zaryadlar qayta taqsimlanadi va energiyaning bir qismi boshqa turga aylanadi",
+        "Zaryadlar o'zgarishsiz qoladi",
+        "Sharlar zaryadi ikki baravar ortadi",
+        "Hech qanday hodisa kuzatilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlangan sharlar o'tkazgich orqali ulanganda zaryadlar qayta taqsimlanadi, energiya qisman boshqa turga (issiqlikka) aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#99e8d744"
+    },
+    {
+      "q": "Energiya zichligining belgilanishi qanday?",
+      "v": [
+        "ω (omega)",
+        "φ (fi)",
+        "ε (epsilon)",
+        "ρ (ro)"
+      ],
+      "t": 0,
+      "izoh": "Energiya zichligi ω harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#9bf1ca2b"
+    },
+    {
+      "q": "Zaryadlangan kondensatorning energiyasi uning elektr maydoni tarqalgan fazoga qanday bog'liq?",
+      "v": [
+        "Fazo hajmiga to'g'ri proporsional",
+        "Fazo hajmiga teskari proporsional",
+        "Fazo hajmiga bog'liq emas",
+        "Fazo shakliga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Energiyaning qiymati elektr maydoni tarqalgan fazoning hajmiga va maydonning kuchlanganligiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#17ac0481"
+    },
+    {
+      "q": "Kondensatorni zaryadlashda qanday ish bajariladi?",
+      "v": [
+        "Zaryadlarni qoplamalarga ko'chirishda itarish kuchiga qarshi ish bajariladi",
+        "Hech qanday ish bajarilmaydi",
+        "Faqat ishqalanishga qarshi ish bajariladi",
+        "Faqat tortishish kuchiga qarshi ish bajariladi"
+      ],
+      "t": 0,
+      "izoh": "Kondensatorni zaryadlashda zaryadlarning o'zaro itarish kuchini yengish uchun ish bajariladi, bu ish maydon energiyasiga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#d06bc64f"
+    },
+    {
+      "q": "Yassi kondensator qoplamalari yuzasi 2 marta oshirilsa (kuchlanganlik o'zgarmasa), maydon energiyasi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "W = ε₀ε·E²·S·d/2 ga ko'ra, S 2 marta oshsa hajm va energiya 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m29-elektr-maydon-energiyasi#3a50bb90"
+    }
+  ]
+}

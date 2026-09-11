@@ -1,0 +1,1306 @@
+{
+  "nom": "Ellipsis & substitution",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "'I love this song.' 'So ___ I.'",
+      "v": [
+        "do",
+        "am",
+        "did",
+        "have"
+      ],
+      "t": 0,
+      "izoh": "So + do + I: rozilik (present simple).",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#33e8ce85"
+    },
+    {
+      "q": "'I don't eat meat.' '___ do I.'",
+      "v": [
+        "So",
+        "Neither",
+        "Also",
+        "Too"
+      ],
+      "t": 1,
+      "izoh": "Neither + do I: inkorga qo'shilish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#c75625a3"
+    },
+    {
+      "q": "'Do you think it will rain?' 'I think ___.'",
+      "v": [
+        "it",
+        "that",
+        "so",
+        "this"
+      ],
+      "t": 2,
+      "izoh": "think so: takrorni almashtirish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#90a5345d"
+    },
+    {
+      "q": "'Has everyone left?' 'I'm afraid ___.'",
+      "v": [
+        "it",
+        "that",
+        "yes",
+        "so"
+      ],
+      "t": 3,
+      "izoh": "afraid so: 'ha' ma'nosi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#26c9dcaf"
+    },
+    {
+      "q": "'Will they come?' 'I hope ___.'",
+      "v": [
+        "so",
+        "it",
+        "that",
+        "to"
+      ],
+      "t": 0,
+      "izoh": "hope so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#e4c44685"
+    },
+    {
+      "q": "'Is she coming?' 'I don't think ___.'",
+      "v": [
+        "not",
+        "so",
+        "it",
+        "that"
+      ],
+      "t": 1,
+      "izoh": "don't think so: inkor uchun oddiy shakl.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#d6669f87"
+    },
+    {
+      "q": "She can drive and so ___ her brother.",
+      "v": [
+        "does",
+        "is",
+        "can",
+        "has"
+      ],
+      "t": 2,
+      "izoh": "so can + subject: qobiliyat almashtirish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#e48fba3a"
+    },
+    {
+      "q": "He hasn't finished yet and neither ___ I.",
+      "v": [
+        "do",
+        "am",
+        "did",
+        "have"
+      ],
+      "t": 3,
+      "izoh": "neither have I: perfect.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#aa937171"
+    },
+    {
+      "q": "I'd like the blue shirt, not the green ___.",
+      "v": [
+        "one",
+        "ones",
+        "it",
+        "that"
+      ],
+      "t": 0,
+      "izoh": "one: sanaladigan otni almashtirish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#ad0073a4"
+    },
+    {
+      "q": "These apples are fresh, but those ___ aren't.",
+      "v": [
+        "one",
+        "ones",
+        "them",
+        "that"
+      ],
+      "t": 1,
+      "izoh": "ones: ko'plik almashtirish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#58a55085"
+    },
+    {
+      "q": "'Are you tired?' 'Yes, I ___.'",
+      "v": [
+        "do",
+        "have",
+        "am",
+        "been"
+      ],
+      "t": 2,
+      "izoh": "Yes, I am: yordamchi bilan qisqa javob.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#4c15bdc6"
+    },
+    {
+      "q": "If you haven't finished, please ___ so now.",
+      "v": [
+        "make",
+        "be",
+        "have",
+        "do"
+      ],
+      "t": 3,
+      "izoh": "do so: fe'lni almashtirish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#c0dc26d9"
+    },
+    {
+      "q": "I asked him to help and he agreed to ___.",
+      "v": [
+        "do so",
+        "do",
+        "it",
+        "so"
+      ],
+      "t": 0,
+      "izoh": "do so: takrorni oldini olish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#77ed4089"
+    },
+    {
+      "q": "'Someone should tell her.' 'I'll ___.'",
+      "v": [
+        "do",
+        "do it",
+        "make",
+        "so"
+      ],
+      "t": 1,
+      "izoh": "do it: harakatni almashtirish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#8efa77cd"
+    },
+    {
+      "q": "She likes jazz and ___ does he.",
+      "v": [
+        "neither",
+        "nor",
+        "so",
+        "also"
+      ],
+      "t": 2,
+      "izoh": "so does he: ijobiy qo'shilish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#e31904b0"
+    },
+    {
+      "q": "'I've never been to Paris.' '___ have I.'",
+      "v": [
+        "So",
+        "Also",
+        "Too",
+        "Neither"
+      ],
+      "t": 3,
+      "izoh": "Neither have I.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#3026777e"
+    },
+    {
+      "q": "'Are we lost?' 'I hope ___.'",
+      "v": [
+        "not",
+        "no",
+        "so not",
+        "never"
+      ],
+      "t": 0,
+      "izoh": "hope not: inkor.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#9539ee69"
+    },
+    {
+      "q": "'Is it going to be expensive?' 'I'm afraid ___.'",
+      "v": [
+        "not",
+        "so",
+        "it",
+        "yes"
+      ],
+      "t": 1,
+      "izoh": "afraid so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#0d40b2d6"
+    },
+    {
+      "q": "He said he would call, and he did ___.",
+      "v": [
+        "it",
+        "that",
+        "so",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "did so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#2b22885a"
+    },
+    {
+      "q": "Which one do you prefer, the big ___ or the small one?",
+      "v": [
+        "ones",
+        "it",
+        "that",
+        "one"
+      ],
+      "t": 3,
+      "izoh": "one: birlik.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#3d7e3fc4"
+    },
+    {
+      "q": "I don't want the old computer; I want a new ___.",
+      "v": [
+        "one",
+        "ones",
+        "it",
+        "that"
+      ],
+      "t": 0,
+      "izoh": "one.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#60589ce8"
+    },
+    {
+      "q": "'Will you be at the meeting?' 'I expect ___.'",
+      "v": [
+        "it",
+        "so",
+        "that",
+        "yes"
+      ],
+      "t": 1,
+      "izoh": "expect so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#30614637"
+    },
+    {
+      "q": "'Did she pass?' 'I believe ___.'",
+      "v": [
+        "it",
+        "that",
+        "so",
+        "yes"
+      ],
+      "t": 2,
+      "izoh": "believe so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#48606ea5"
+    },
+    {
+      "q": "He works hard and so ___ his wife.",
+      "v": [
+        "is",
+        "has",
+        "can",
+        "does"
+      ],
+      "t": 3,
+      "izoh": "so does + subject.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#698b1b7e"
+    },
+    {
+      "q": "I can't swim and neither ___ my sister.",
+      "v": [
+        "can",
+        "does",
+        "is",
+        "has"
+      ],
+      "t": 0,
+      "izoh": "neither can.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#c802fa80"
+    },
+    {
+      "q": "'Is the shop open?' 'I don't think ___.'",
+      "v": [
+        "not",
+        "so",
+        "it",
+        "that"
+      ],
+      "t": 1,
+      "izoh": "don't think so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#a26decc5"
+    },
+    {
+      "q": "You can leave now if you want ___.",
+      "v": [
+        "so",
+        "it",
+        "to",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "want to: infinitiv ellipsisi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#46a19c44"
+    },
+    {
+      "q": "I meant to call you but I forgot ___.",
+      "v": [
+        "it",
+        "so",
+        "do",
+        "to"
+      ],
+      "t": 3,
+      "izoh": "forgot to: infinitiv ellipsisi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#5ed9dabf"
+    },
+    {
+      "q": "'Are they married?' 'I don't believe ___.'",
+      "v": [
+        "so",
+        "not",
+        "it",
+        "that"
+      ],
+      "t": 0,
+      "izoh": "don't believe so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#445e688a"
+    },
+    {
+      "q": "The red roses are nice, but I prefer the white ___.",
+      "v": [
+        "one",
+        "ones",
+        "them",
+        "that"
+      ],
+      "t": 1,
+      "izoh": "ones: ko'plik.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#9d017080"
+    },
+    {
+      "q": "'Has he been informed?' 'I suppose ___.'",
+      "v": [
+        "it",
+        "that",
+        "so",
+        "yes"
+      ],
+      "t": 2,
+      "izoh": "suppose so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#0fddaaf5"
+    },
+    {
+      "q": "I love mornings; my brother ___.",
+      "v": [
+        "isn't",
+        "hasn't",
+        "can't",
+        "doesn't"
+      ],
+      "t": 3,
+      "izoh": "doesn't: do fe'lini almashtirish (qarama-qarshilik).",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#8bbbd282"
+    },
+    {
+      "q": "She's been to Japan and so ___ I.",
+      "v": [
+        "have",
+        "do",
+        "am",
+        "did"
+      ],
+      "t": 0,
+      "izoh": "so have I: perfect.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#c53d1759"
+    },
+    {
+      "q": "I didn't want to go, but I had ___.",
+      "v": [
+        "it",
+        "to",
+        "so",
+        "do"
+      ],
+      "t": 1,
+      "izoh": "had to: 'to' qoladi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#6a58b7d8"
+    },
+    {
+      "q": "'Is dinner ready?' 'It should ___.'",
+      "v": [
+        "do",
+        "been",
+        "be",
+        "being"
+      ],
+      "t": 2,
+      "izoh": "should be: 'ready' tushirilgan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#263c976b"
+    },
+    {
+      "q": "Some people enjoy horror films; others ___.",
+      "v": [
+        "aren't",
+        "haven't",
+        "can't",
+        "don't"
+      ],
+      "t": 3,
+      "izoh": "others don't: takror oldini olish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#ca36d6e9"
+    },
+    {
+      "q": "He didn't apologise and neither ___ she.",
+      "v": [
+        "did",
+        "does",
+        "was",
+        "had"
+      ],
+      "t": 0,
+      "izoh": "neither did.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#ea4e3a94"
+    },
+    {
+      "q": "'Do you take sugar?' 'No, I ___.'",
+      "v": [
+        "doesn't",
+        "don't",
+        "am not",
+        "haven't"
+      ],
+      "t": 1,
+      "izoh": "No, I don't: qisqa javob.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#cab6d19e"
+    },
+    {
+      "q": "I've got two dogs; the black ___ is older.",
+      "v": [
+        "ones",
+        "it",
+        "one",
+        "that"
+      ],
+      "t": 2,
+      "izoh": "one: birlik.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#7a8ae306"
+    },
+    {
+      "q": "'Are you coming or not?' 'If ___, tell me now.'",
+      "v": [
+        "then",
+        "yes",
+        "it",
+        "so"
+      ],
+      "t": 3,
+      "izoh": "if so: 'agar shunday bo'lsa'.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#fd276343"
+    },
+    {
+      "q": "'Will the deal close today?' '___, we celebrate; if not, we wait.'",
+      "v": [
+        "If so",
+        "So if",
+        "If yes",
+        "So then"
+      ],
+      "t": 0,
+      "izoh": "if so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#021ea685"
+    },
+    {
+      "q": "'You should apologise.' 'I already ___.'",
+      "v": [
+        "did",
+        "have",
+        "do",
+        "had"
+      ],
+      "t": 1,
+      "izoh": "I already have: perfect ellipsisi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#02f042f5"
+    },
+    {
+      "q": "He can speak French but I ___.",
+      "v": [
+        "don't",
+        "am not",
+        "can't",
+        "haven't"
+      ],
+      "t": 2,
+      "izoh": "I can't: modal almashtirish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#3233ce0f"
+    },
+    {
+      "q": "'Is anyone going to answer?' 'It seems ___.'",
+      "v": [
+        "no",
+        "so not",
+        "never",
+        "not"
+      ],
+      "t": 3,
+      "izoh": "seems not: inkor.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#45174b2e"
+    },
+    {
+      "q": "These shoes are too small; do you have bigger ___?",
+      "v": [
+        "ones",
+        "one",
+        "them",
+        "that"
+      ],
+      "t": 0,
+      "izoh": "ones.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#a8916f08"
+    },
+    {
+      "q": "'Have you called him?' 'No, but I'm going ___.'",
+      "v": [
+        "do",
+        "to",
+        "so",
+        "it"
+      ],
+      "t": 1,
+      "izoh": "going to: infinitiv ellipsisi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#e4402d9e"
+    },
+    {
+      "q": "He earns a lot and so ___ she.",
+      "v": [
+        "is",
+        "has",
+        "does",
+        "can"
+      ],
+      "t": 2,
+      "izoh": "so does she.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#1e294da3"
+    },
+    {
+      "q": "'They lost again.' 'So ___. It's their third loss.'",
+      "v": [
+        "did they",
+        "they have",
+        "have they",
+        "they did"
+      ],
+      "t": 3,
+      "izoh": "So they did: tasdiqlash.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#efd8a001"
+    },
+    {
+      "q": "'It's freezing today.' 'So ___! I need a coat.'",
+      "v": [
+        "it is",
+        "is it",
+        "it does",
+        "does it"
+      ],
+      "t": 0,
+      "izoh": "So it is: tasdiqlash.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#5a670273"
+    },
+    {
+      "q": "I wanted to join them but wasn't able ___.",
+      "v": [
+        "so",
+        "to",
+        "it",
+        "do"
+      ],
+      "t": 1,
+      "izoh": "able to: infinitiv ellipsisi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#3c38df20"
+    },
+    {
+      "q": "'I really like this.' Add agreement: 'So ___ I.'",
+      "v": [
+        "am",
+        "like",
+        "do",
+        "did"
+      ],
+      "t": 2,
+      "izoh": "So do I.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#902f6afe"
+    },
+    {
+      "q": "He rarely complains, and nor ___ his colleagues.",
+      "v": [
+        "are",
+        "have",
+        "can",
+        "do"
+      ],
+      "t": 3,
+      "izoh": "nor do: inkor qo'shilish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#aa6422b3"
+    },
+    {
+      "q": "'Will she recognise us?' 'I doubt ___.'",
+      "v": [
+        "it",
+        "so",
+        "that",
+        "not"
+      ],
+      "t": 0,
+      "izoh": "doubt it: 'shubha qilaman'.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#7bd00024"
+    },
+    {
+      "q": "I prefer tea to coffee, and so ___ my mother.",
+      "v": [
+        "is",
+        "does",
+        "has",
+        "did"
+      ],
+      "t": 1,
+      "izoh": "so does.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#34d52d81"
+    },
+    {
+      "q": "'Is he still angry?' 'I hope ___.'",
+      "v": [
+        "no",
+        "so not",
+        "not",
+        "never"
+      ],
+      "t": 2,
+      "izoh": "hope not.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#4467c816"
+    },
+    {
+      "q": "The old ___ were better than the new models.",
+      "v": [
+        "one",
+        "them",
+        "that",
+        "ones"
+      ],
+      "t": 3,
+      "izoh": "ones.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#5a672aec"
+    },
+    {
+      "q": "'Someone left the light on.' 'Yes, so ___.'",
+      "v": [
+        "they did",
+        "did they",
+        "someone did",
+        "have they"
+      ],
+      "t": 0,
+      "izoh": "so they did: tasdiq.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#f1b825d1"
+    },
+    {
+      "q": "She hasn't replied and neither ___ her assistant.",
+      "v": [
+        "does",
+        "has",
+        "did",
+        "is"
+      ],
+      "t": 1,
+      "izoh": "neither has.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#1067ec03"
+    },
+    {
+      "q": "'Do you agree?' 'I suppose ___.'",
+      "v": [
+        "it",
+        "that",
+        "so",
+        "yes"
+      ],
+      "t": 2,
+      "izoh": "suppose so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#4b661369"
+    },
+    {
+      "q": "Error-spot: 'I can play the guitar and so plays my friend.'",
+      "v": [
+        "I can play",
+        "the guitar",
+        "and",
+        "so plays my friend"
+      ],
+      "t": 3,
+      "izoh": "'so can my friend': yordamchi almashtirish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#66bfebc4"
+    },
+    {
+      "q": "Error-spot: 'I don't like spicy food and neither does like she.'",
+      "v": [
+        "does like she",
+        "I don't like",
+        "neither",
+        "and"
+      ],
+      "t": 0,
+      "izoh": "'neither does she': 'like' takrorlanmaydi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#2b4cbecd"
+    },
+    {
+      "q": "'Are you ready?' 'I think ___.'",
+      "v": [
+        "yes",
+        "so",
+        "it",
+        "that"
+      ],
+      "t": 1,
+      "izoh": "think so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#c78ba306"
+    },
+    {
+      "q": "'I enjoyed the film.' Add agreement:",
+      "v": [
+        "So I did.",
+        "Also I did.",
+        "So did I.",
+        "Too did I."
+      ],
+      "t": 2,
+      "izoh": "So did I: ijobiyga qo'shilish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#8f239cea"
+    },
+    {
+      "q": "'I can't understand this.' Agree:",
+      "v": [
+        "So can I.",
+        "Neither I can.",
+        "Also I can't.",
+        "Neither can I."
+      ],
+      "t": 3,
+      "izoh": "Neither can I: inkorga qo'shilish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#2ffbeecd"
+    },
+    {
+      "q": "'Which book is yours?' 'The ___ on the table.'",
+      "v": [
+        "one",
+        "ones",
+        "it",
+        "that"
+      ],
+      "t": 0,
+      "izoh": "one: birlik almashtirish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#9b32ef02"
+    },
+    {
+      "q": "'Are those seats taken?' 'The window ___ are.'",
+      "v": [
+        "one",
+        "ones",
+        "them",
+        "those"
+      ],
+      "t": 1,
+      "izoh": "ones: ko'plik.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#c222e312"
+    },
+    {
+      "q": "He said he'd help and he ___ so without complaint.",
+      "v": [
+        "does",
+        "done",
+        "did",
+        "had"
+      ],
+      "t": 2,
+      "izoh": "did so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#e983799c"
+    },
+    {
+      "q": "'Do you want to come?' 'I'd love ___.'",
+      "v": [
+        "so",
+        "it",
+        "do",
+        "to"
+      ],
+      "t": 3,
+      "izoh": "love to: infinitiv ellipsisi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#7e6cc6f1"
+    },
+    {
+      "q": "'She might be late.' 'She always ___.'",
+      "v": [
+        "is",
+        "does",
+        "has",
+        "did"
+      ],
+      "t": 0,
+      "izoh": "always is: 'late' tushirilgan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#444d2ce9"
+    },
+    {
+      "q": "I don't smoke now, but I used ___.",
+      "v": [
+        "so",
+        "to",
+        "it",
+        "do"
+      ],
+      "t": 1,
+      "izoh": "used to: infinitiv ellipsisi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#938cd152"
+    },
+    {
+      "q": "'They've sold the house.' 'So I ___.'",
+      "v": [
+        "did",
+        "have",
+        "heard",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "So I heard: 'shunday eshitdim'.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#e3311154"
+    },
+    {
+      "q": "He plays tennis well, and ___ does his daughter.",
+      "v": [
+        "neither",
+        "nor",
+        "also",
+        "so"
+      ],
+      "t": 3,
+      "izoh": "so does.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#342c531c"
+    },
+    {
+      "q": "'Nobody helped me.' '___ did they help me.'",
+      "v": [
+        "Nor",
+        "So",
+        "Also",
+        "Too"
+      ],
+      "t": 0,
+      "izoh": "Nor did: inkor.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#623b206c"
+    },
+    {
+      "q": "'Are you sure?' 'I think ___, but I'm not certain.'",
+      "v": [
+        "it",
+        "so",
+        "that",
+        "yes"
+      ],
+      "t": 1,
+      "izoh": "think so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#456039b6"
+    },
+    {
+      "q": "'Will it be finished on time?' 'It ought ___.'",
+      "v": [
+        "so",
+        "it",
+        "to",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "ought to: 'to' qoladi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#967f33ce"
+    },
+    {
+      "q": "She wanted to stay longer but wasn't allowed ___.",
+      "v": [
+        "so",
+        "it",
+        "do",
+        "to"
+      ],
+      "t": 3,
+      "izoh": "allowed to.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#27aa465f"
+    },
+    {
+      "q": "'Do you both agree?' 'I do, and so ___ he.'",
+      "v": [
+        "does",
+        "is",
+        "do",
+        "has"
+      ],
+      "t": 0,
+      "izoh": "so does he.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#bfcd2250"
+    },
+    {
+      "q": "'I've finished mine.' 'So ___ I.'",
+      "v": [
+        "do",
+        "have",
+        "am",
+        "did"
+      ],
+      "t": 1,
+      "izoh": "So have I.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#2662593d"
+    },
+    {
+      "q": "'He forgot my birthday again.' 'So ___. Typical.'",
+      "v": [
+        "did he",
+        "he has",
+        "he did",
+        "has he"
+      ],
+      "t": 2,
+      "izoh": "So he did: tasdiq.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#8feb1733"
+    },
+    {
+      "q": "'The lights are off.' 'So ___. Everyone's gone.'",
+      "v": [
+        "are they",
+        "they do",
+        "do they",
+        "they are"
+      ],
+      "t": 3,
+      "izoh": "So they are: tasdiq.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#d35f38e1"
+    },
+    {
+      "q": "I couldn't attend, and neither ___ my colleagues.",
+      "v": [
+        "could",
+        "did",
+        "were",
+        "have"
+      ],
+      "t": 0,
+      "izoh": "neither could.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#3c5650be"
+    },
+    {
+      "q": "'Should I apologise?' 'I think you ___.'",
+      "v": [
+        "do",
+        "should",
+        "are",
+        "have"
+      ],
+      "t": 1,
+      "izoh": "you should: modal ellipsisi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#b6e6132b"
+    },
+    {
+      "q": "'Is he a doctor?' 'I believe ___.'",
+      "v": [
+        "it",
+        "that",
+        "so",
+        "yes"
+      ],
+      "t": 2,
+      "izoh": "believe so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#e259963d"
+    },
+    {
+      "q": "'Are we there yet?' 'I'm afraid ___. Still an hour to go.'",
+      "v": [
+        "no",
+        "so not",
+        "never",
+        "not"
+      ],
+      "t": 3,
+      "izoh": "afraid not: inkor.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#5832d98a"
+    },
+    {
+      "q": "She's studying medicine and so ___ her twin.",
+      "v": [
+        "is",
+        "does",
+        "has",
+        "can"
+      ],
+      "t": 0,
+      "izoh": "so is: continuous.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#07390266"
+    },
+    {
+      "q": "Error-spot: 'So am I like ice cream.'",
+      "v": [
+        "like",
+        "So am I",
+        "ice cream",
+        "the sentence is fine"
+      ],
+      "t": 1,
+      "izoh": "'So do I': present simple 'like'.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#3137b297"
+    },
+    {
+      "q": "Error-spot: 'I haven't seen it and neither has she seen it.'",
+      "v": [
+        "I haven't seen it",
+        "neither",
+        "has she seen it",
+        "and"
+      ],
+      "t": 2,
+      "izoh": "'neither has she': takror kerak emas.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#bcc43bf6"
+    },
+    {
+      "q": "'Would you like the same as last time?' 'Yes, the same ___.'",
+      "v": [
+        "ones",
+        "it",
+        "that",
+        "one"
+      ],
+      "t": 3,
+      "izoh": "one.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#d1b874e8"
+    },
+    {
+      "q": "These grapes look better than those ___.",
+      "v": [
+        "ones",
+        "one",
+        "them",
+        "that"
+      ],
+      "t": 0,
+      "izoh": "ones: ko'plik.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#fdee8657"
+    },
+    {
+      "q": "'Have they arrived?' 'I don't think ___.'",
+      "v": [
+        "not",
+        "so",
+        "it",
+        "that"
+      ],
+      "t": 1,
+      "izoh": "don't think so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#e1ca6c20"
+    },
+    {
+      "q": "He promised to change, but he never ___.",
+      "v": [
+        "does",
+        "done",
+        "did",
+        "had"
+      ],
+      "t": 2,
+      "izoh": "never did: 'change' tushirilgan.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#99a47c35"
+    },
+    {
+      "q": "'Will you help me move?' 'Of course I ___.'",
+      "v": [
+        "do",
+        "am",
+        "have",
+        "will"
+      ],
+      "t": 3,
+      "izoh": "I will: modal ellipsisi.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#20dd9157"
+    },
+    {
+      "q": "'Is the meeting cancelled?' 'It appears ___.'",
+      "v": [
+        "so",
+        "it",
+        "that",
+        "yes"
+      ],
+      "t": 0,
+      "izoh": "appears so.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#33afee8d"
+    },
+    {
+      "q": "I like both, but the cheaper ___ will do.",
+      "v": [
+        "ones",
+        "one",
+        "it",
+        "that"
+      ],
+      "t": 1,
+      "izoh": "one.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#d1abb942"
+    },
+    {
+      "q": "'Did they win?' '___ they did! Against all odds.'",
+      "v": [
+        "That",
+        "Well",
+        "So",
+        "Such"
+      ],
+      "t": 2,
+      "izoh": "So they did: tasdiq/hayrat.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#94377ef2"
+    },
+    {
+      "q": "She rarely lies, and nor ___ her brother.",
+      "v": [
+        "is",
+        "has",
+        "did",
+        "does"
+      ],
+      "t": 3,
+      "izoh": "nor does.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#e7518027"
+    },
+    {
+      "q": "'Do you need a pen?' 'No, I've already got ___.'",
+      "v": [
+        "one",
+        "ones",
+        "it",
+        "some"
+      ],
+      "t": 0,
+      "izoh": "one: 'a pen' almashtirish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#d8fdead0"
+    },
+    {
+      "q": "'Can anyone finish this?' 'I'm sure Tom ___.'",
+      "v": [
+        "does",
+        "can",
+        "is",
+        "will able"
+      ],
+      "t": 1,
+      "izoh": "Tom can: modal almashtirish.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#f96b30a4"
+    },
+    {
+      "q": "'They said it might snow.' 'And so ___!'",
+      "v": [
+        "did it",
+        "it has",
+        "it did",
+        "has it"
+      ],
+      "t": 2,
+      "izoh": "So it did: tasdiq.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#1ea2066d"
+    },
+    {
+      "q": "Error-spot: 'I want the blue ones car, not the red.'",
+      "v": [
+        "not the red",
+        "I want",
+        "the sentence is fine",
+        "the blue ones car"
+      ],
+      "t": 3,
+      "izoh": "'the blue one': bu yerda birlik, 'ones' emas.",
+      "qiy": "qiyin",
+      "id": "ing_c1_m4#92f72f88"
+    }
+  ]
+}

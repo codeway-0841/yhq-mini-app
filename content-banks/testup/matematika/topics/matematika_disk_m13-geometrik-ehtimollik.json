@@ -1,0 +1,1609 @@
+{
+  "nom": "Geometrik ehtimollik",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Uzunligi 24 sm bo'lgan AB kesmada CD bo'lakning uzunligi 9 sm. Kesmada tasodifiy tanlangan nuqtaning aynan CD bo'lakka tushish ehtimolini toping.",
+      "v": [
+        "3/8",
+        "5/8",
+        "3/5",
+        "3/11"
+      ],
+      "t": 0,
+      "izoh": "Geometrik ehtimollikda ehtimol qulay uzunlikning umumiy uzunlikka nisbatiga teng. Bu yerda P = 9 : 24 = 3/8. 5/8 — CD dan tashqarida qolgan qismning ehtimoli, 3/5 — 9 ni qolgan 15 sm ga bo'lish xatosi, 3/11 — umumiy uzunlikni 24 + 9 = 33 sm deb olish xatosi. Javob: 3/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesma-qism-ehtimolligi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#a7660493"
+    },
+    {
+      "q": "Yog'och chizg'ichning uzunligi 40 sm. Uning o'rtasidagi 16 sm li bo'lagi bo'yoq bilan belgilangan. Chizg'ichda tasodifiy tanlangan nuqta belgilangan bo'lakka tushish ehtimoli qancha?",
+      "v": [
+        "2/3",
+        "2/5",
+        "3/5",
+        "2/7"
+      ],
+      "t": 1,
+      "izoh": "Qulay uzunlik 16 sm, umumiy uzunlik 40 sm. Demak P = 16 : 40 = 2/5. 3/5 — belgilanmagan 24 sm ga mos ehtimol, 2/3 — 16 ni 24 ga bo'lish xatosi, 2/7 — umumiy uzunlikni 40 + 16 = 56 sm deb olish xatosi. Javob: 2/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesma-qism-ehtimolligi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#5b1badb7"
+    },
+    {
+      "q": "Toshkentdan Samarqandgacha bo'lgan 300 km yo'lning 48 km qismida ta'mirlash ishlari ketmoqda. Tasodifiy joyda to'xtagan mashina aynan ta'mirlanayotgan qismda turgan bo'lish ehtimoli necha foiz?",
+      "v": [
+        "84%",
+        "19%",
+        "16%",
+        "1,6%"
+      ],
+      "t": 2,
+      "izoh": "Ehtimol uzunliklar nisbatiga teng: 48 : 300 = 0,16, ya'ni 16 foiz. 84% — ta'mirlanmagan 252 km ning ulushi, 19% — 48 ni qolgan 252 km ga bo'lish xatosi, 1,6% — 0,16 ni foizga aylantirishda o'nlik xatosi. Javob: 16%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesma-qism-ehtimolligi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#47b8d8c1"
+    },
+    {
+      "q": "Uzunligi 45 m bo'lgan devor bo'ylab ikkita reklama taxtasi joylashtirilgan: birining uzunligi 9 m, ikkinchisiniki 12 m. Devor bo'ylab tasodifiy tanlangan nuqta taxtalardan biriga tushish ehtimoli qanday?",
+      "v": [
+        "4/15",
+        "7/8",
+        "8/15",
+        "7/15"
+      ],
+      "t": 3,
+      "izoh": "Ikkala taxtaning umumiy uzunligi 9 + 12 = 21 m bo'ladi. P = 21 : 45 = 7/15. 4/15 — faqat 12 m li taxtani hisobga olish, 8/15 — taxtalarga tegmaslik ehtimoli, 7/8 — 21 ni bo'sh qolgan 24 m ga bo'lish xatosi. Javob: 7/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesma-qism-ehtimolligi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#ef5ecbd4"
+    },
+    {
+      "q": "Uzunligi 30 sm bo'lgan kesmada tasodifiy nuqta belgilandi. Bu nuqta kesmaning har ikkala uchidan ham 6 sm dan uzoqroqda bo'lish ehtimolini hisoblang.",
+      "v": [
+        "4/5",
+        "3/5",
+        "2/5",
+        "1/5"
+      ],
+      "t": 1,
+      "izoh": "Ikkala uchdan 6 sm dan kesib tashlaymiz, qulay bo'lak 30 − 6 − 6 = 18 sm qoladi. P = 18 : 30 = 3/5. 4/5 — faqat bitta uchdan kesish xatosi, 2/5 — qarama-qarshi hodisa, 1/5 — 6 ni 30 ga bo'lish. Javob: 3/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesma-uchidan-masofa",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#6db38068"
+    },
+    {
+      "q": "Uzunligi 2 km bo'lgan elektr kabelida uzilish yuz berdi. Uzilish joyi kabel boshidan 400 m dan va oxiridan 300 m dan uzoqroqda bo'lish ehtimolini toping.",
+      "v": [
+        "0,65",
+        "0,35",
+        "0,8",
+        "0,85"
+      ],
+      "t": 0,
+      "izoh": "Kabelning uzunligi 2000 m. Ikki chetdan 400 m va 300 m ni chiqaramiz: 2000 − 700 = 1300 m qulay uzunlik. P = 1300 : 2000 = 0,65. 0,35 — teskari hodisa, 0,8 — faqat 400 m ni kesish, 0,85 — faqat 300 m ni kesish natijasi. Javob: 0,65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesma-uchidan-masofa",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#9a0294e9"
+    },
+    {
+      "q": "Dilnoza uzunligi 60 sm bo'lgan lentani tasodifiy joyidan qirqdi. Qirqim joyi lentaning o'rtasidan 10 sm dan yaqinroqda bo'lish ehtimoli nimaga teng?",
+      "v": [
+        "2/3",
+        "1/6",
+        "1/3",
+        "5/6"
+      ],
+      "t": 2,
+      "izoh": "O'rtadan ikki tomonga 10 sm dan olamiz, qulay bo'lak 20 sm bo'ladi. P = 20 : 60 = 1/3. 1/6 — faqat bir tomonni hisoblash, 2/3 — qarama-qarshi hodisa, 5/6 — 1/6 ning to'ldiruvchisi. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesma-uchidan-masofa",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#2d9adfac"
+    },
+    {
+      "q": "Uzunligi 80 sm bo'lgan kesmaning chap uchidan boshlab tasodifiy nuqta olindi. Nuqtaning chap uchdan 10 sm dan uzoq va 60 sm dan yaqin bo'lish ehtimoli qanday?",
+      "v": [
+        "0,125",
+        "0,75",
+        "0,375",
+        "0,625"
+      ],
+      "t": 3,
+      "izoh": "Qulay oraliq 10 sm dan 60 sm gacha cho'ziladi, uning uzunligi 60 − 10 = 50 sm. P = 50 : 80 = 0,625. 0,125 — faqat 10 sm ni olish, 0,75 — faqat 60 sm ni olish, 0,375 — qarama-qarshi hodisa. Javob: 0,625.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesma-uchidan-masofa",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#3e101dc3"
+    },
+    {
+      "q": "Bekatga avtobus har 15 daqiqada keladi. Sardor bekatga tasodifiy vaqtda keldi. Uning avtobusni 4 daqiqadan kam kutish ehtimolini toping.",
+      "v": [
+        "4/15",
+        "11/15",
+        "4/11",
+        "2/15"
+      ],
+      "t": 0,
+      "izoh": "Kutish vaqti nol daqiqadan 15 daqiqagacha bir tekis taqsimlangan. Qulay oraliq 4 daqiqa, shuning uchun P = 4 : 15. 11/15 — to'rt daqiqadan ko'p kutish ehtimoli, 4/11 — 4 ni qolgan 11 ga bo'lish, 2/15 — oraliqni ikkiga bo'lish xatosi. Javob: 4/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kutish-vaqti-oraligi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#c961251b"
+    },
+    {
+      "q": "Metro poyezdlari sakkiz daqiqalik oraliq bilan qatnaydi. Yo'lovchi platformaga tasodifiy vaqtda tushdi. Unga poyezdni kamida 5 daqiqa kutishga to'g'ri kelish ehtimoli qanday?",
+      "v": [
+        "5/8",
+        "3/8",
+        "1/8",
+        "3/5"
+      ],
+      "t": 1,
+      "izoh": "Kamida 5 daqiqa kutish uchun yo'lovchi oraliqning dastlabki 8 − 5 = 3 daqiqasida kelishi kerak. P = 3 : 8 = 0,375. 5/8 — 5 ni 8 ga bo'lish xatosi, 1/8 — bir daqiqalik ulush, 3/5 — 3 ni 5 ga bo'lib qo'yish. Javob: 3/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kutish-vaqti-oraligi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#99d6f1a3"
+    },
+    {
+      "q": "Nozima kutubxonaga soat 8:00 dan 10:00 gacha bo'lgan vaqt ichida tasodifiy paytda keladi. Uning soat 8:45 dan oldin yetib kelish ehtimoli nechaga teng?",
+      "v": [
+        "3/4",
+        "1/8",
+        "3/8",
+        "5/8"
+      ],
+      "t": 2,
+      "izoh": "Umumiy oraliq 120 daqiqa, qulay oraliq soat 8:00 dan 8:45 gacha, ya'ni 45 daqiqa. P = 45 : 120 = 3/8. 3/4 — oraliqni bir soat deb olish xatosi, 5/8 — kechroq kelish ehtimoli, 1/8 — qulay oraliqni 15 daqiqa deb hisoblash. Javob: 3/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kutish-vaqti-oraligi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#100405c9"
+    },
+    {
+      "q": "Chorrahadagi svetofor sikli 60 sekund davom etadi: 24 sekund yashil, 3 sekund sariq va 33 sekund qizil chiroq yonadi. Chorrahaga tasodifiy yetib kelgan mashina qizil chiroqqa duch kelish ehtimoli qanday?",
+      "v": [
+        "2/5",
+        "3/5",
+        "9/20",
+        "11/20"
+      ],
+      "t": 3,
+      "izoh": "Qulay vaqt 33 sekund, umumiy sikl 60 sekund. Shuning uchun P = 33 : 60 = 11/20. 2/5 — yashil chiroqning ulushi, 3/5 — qizil bilan sariqni birga qo'shish, 9/20 — yashil bilan sariqni qo'shish natijasi. Javob: 11/20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kutish-vaqti-oraligi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#97d2713c"
+    },
+    {
+      "q": "[0; 12] kesmadan tasodifiy son tanlandi. Tanlangan sonning 7 dan katta bo'lish ehtimolini hisoblang.",
+      "v": [
+        "5/12",
+        "7/12",
+        "5/7",
+        "1/12"
+      ],
+      "t": 0,
+      "izoh": "Qulay oraliq 7 dan 12 gacha, uning uzunligi 12 − 7 = 5 ga teng. Umumiy uzunlik 12. Demak P = 5 : 12. 7/12 — sonning 7 dan kichik bo'lish ehtimoli, 5/7 — 5 ni 7 ga bo'lish, 1/12 — bitta birlikning ulushi. Javob: 5/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonli-oraliqda-tengsizlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#11f09d05"
+    },
+    {
+      "q": "[2; 14] oraliqdan tasodifiy son olindi. Bu sonning 5 dan kichik bo'lish ehtimoli qanday bo'ladi?",
+      "v": [
+        "5/14",
+        "1/4",
+        "3/4",
+        "5/12"
+      ],
+      "t": 1,
+      "izoh": "Qulay oraliq 2 dan 5 gacha, uning uzunligi 3 ga teng. Umumiy oraliq uzunligi 14 − 2 = 12. P = 3 : 12 = 1/4. 5/14 — chegaralarni e'tiborsiz qoldirish, 5/12 — qulay uzunlikni 5 deb olish, 3/4 — qarama-qarshi hodisa. Javob: 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonli-oraliqda-tengsizlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#8779dfe5"
+    },
+    {
+      "q": "[−8; 10] kesmadan tasodifiy x soni tanlandi. |x| > 4 tengsizlikning bajarilish ehtimolini toping.",
+      "v": [
+        "4/9",
+        "5/9",
+        "2/9",
+        "7/9"
+      ],
+      "t": 1,
+      "izoh": "|x| ≤ 4 sharti [−4; 4] oraliqni beradi, uning uzunligi 8 ga teng. Umumiy uzunlik 10 − (−8) = 18, qulay uzunlik esa 18 − 8 = 10. P = 10 : 18 = 5/9. 4/9 — qarama-qarshi hodisa, 2/9 — faqat manfiy tomondagi qismni olish, 7/9 — [−4; 4] uzunligini 4 deb olish xatosi. Javob: 5/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonli-oraliqda-tengsizlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#e00d3d20"
+    },
+    {
+      "q": "Zavodda tayyorlangan valning diametri 19,7 mm dan 20,5 mm gacha oraliqda bir tekis taqsimlangan. Val diametri 19,9 mm dan 20,4 mm gacha bo'lsa yaroqli sanaladi. Tasodifiy olingan valning yaroqli chiqish ehtimoli qanday?",
+      "v": [
+        "3/8",
+        "5/8",
+        "1/2",
+        "5/6"
+      ],
+      "t": 1,
+      "izoh": "Umumiy oraliqning uzunligi 20,5 − 19,7 = 0,8 mm. Yaroqli oraliq uzunligi 20,4 − 19,9 = 0,5 mm. P = 0,5 : 0,8 = 5/8. 3/8 — brak mahsulot ulushi, 1/2 — yaroqli oraliqni 0,4 mm deb olish, 5/6 — umumiy oraliqni 0,6 mm deb olish xatosi. Javob: 5/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sonli-oraliqda-tengsizlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#b8ea09c4"
+    },
+    {
+      "q": "Uzunligi 800 m bo'lgan suv quvurida tiqilish paydo bo'ldi. Tiqilish joyi quvurning har ikkala uchidan ham 120 m dan uzoqda bo'lish ehtimolini toping.",
+      "v": [
+        "0,7",
+        "0,85",
+        "0,3",
+        "0,15"
+      ],
+      "t": 0,
+      "izoh": "Ikki chetdan 120 m dan chiqaramiz, qulay uzunlik 800 − 240 = 560 m bo'ladi. P = 560 : 800 = 0,7. 0,85 — faqat bitta uchni kesish, 0,3 — qarama-qarshi hodisa, 0,15 — 120 ni 800 ga bo'lish. Javob: 0,7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nosozlik-joyi-uzunlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#a7ca4be8"
+    },
+    {
+      "q": "Uzunligi 750 m bo'lgan sug'orish ariqchasining oxirgi 180 m qismi loyqa bilan tiqilib qolgan. Ariqchada tasodifiy tanlangan nuqta tiqilgan qismda bo'lish ehtimoli qanday?",
+      "v": [
+        "0,76",
+        "0,24",
+        "0,32",
+        "0,48"
+      ],
+      "t": 1,
+      "izoh": "Qulay uzunlik 180 m, umumiy uzunlik 750 m, shuning uchun P = 180 : 750 = 0,24. 0,76 — toza qismning ulushi, 0,32 — 180 ni qolgan 570 m ga bo'lish xatosi, 0,48 — tiqilish ikkala chetda ham bor deb hisoblash. Javob: 0,24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nosozlik-joyi-uzunlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#1281e9a2"
+    },
+    {
+      "q": "Uzunligi 60 km bo'lgan elektr uzatish liniyasida nosozlik yuz berdi. Nosozlik liniyaning 18 km lik tog'li uchastkasida bo'lish ehtimoli nechaga teng?",
+      "v": [
+        "0,7",
+        "0,18",
+        "0,3",
+        "0,6"
+      ],
+      "t": 2,
+      "izoh": "Ehtimol uzunliklar nisbatiga teng: P = 18 : 60 = 0,3. 0,7 — tog'siz qismning ulushi, 0,18 — nisbatni hisoblamay uzunlikning o'zini yozib qo'yish, 0,6 — 18 ni 30 ga bo'lish xatosi. Javob: 0,3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nosozlik-joyi-uzunlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#18287d09"
+    },
+    {
+      "q": "Uzunligi 45 m bo'lgan arqon tasodifiy nuqtadan qirqildi. Hosil bo'lgan katta bo'lak kichigidan kamida to'rt marta uzun bo'lish ehtimolini aniqlang.",
+      "v": [
+        "1/5",
+        "3/5",
+        "4/9",
+        "2/5"
+      ],
+      "t": 3,
+      "izoh": "Qirqim x nuqtada bo'lsa, bo'laklar uzunligi x va 45 − x bo'ladi. Katta bo'lak kichigidan to'rt marta uzun bo'lishi uchun x ≤ 9 yoki x ≥ 36 bo'lishi kerak. Qulay uzunlik 9 + 9 = 18 m, P = 18 : 45 = 2/5. 1/5 — faqat bitta tomonni hisoblash, 3/5 — qarama-qarshi hodisa, 4/9 — nisbatning o'zini ehtimol deb yozish. Javob: 2/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nosozlik-joyi-uzunlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#a31b9d02"
+    },
+    {
+      "q": "Tomoni 10 sm bo'lgan kvadratning ichiga to'liq sig'adigan eng katta doira chizilgan. Kvadratga tasodifiy tashlangan nuqtaning doira ichiga tushish ehtimoli qanday?",
+      "v": [
+        "π/4",
+        "1/4",
+        "(4 − π)/4",
+        "π/8"
+      ],
+      "t": 0,
+      "izoh": "Ichki chizilgan doiraning radiusi 5 sm, yuzasi 25π sm². Kvadrat yuzasi 100 sm². P = 25π : 100 = π/4 ≈ 0,785. 1/4 — doira yuzasida π ni tushirib qoldirish, (4 − π)/4 — doiradan tashqariga tushish ehtimoli, π/8 — butun doira o'rniga yarim doira yuzasini olish. Javob: π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratga-ichki-doira",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#aa2b6150"
+    },
+    {
+      "q": "Tomoni 12 sm bo'lgan kvadratga ichki doira chizilgan. Kvadrat ichidagi tasodifiy nuqtaning doiradan tashqarida, ya'ni to'rtta burchak sohasida qolish ehtimoli qanday?",
+      "v": [
+        "π/4",
+        "(4 − π)/4",
+        "(4 − π)/2",
+        "(π − 2)/4"
+      ],
+      "t": 1,
+      "izoh": "Doira radiusi 6 sm, yuzasi 36π sm², kvadrat yuzasi 144 sm². Doiraga tushish ehtimoli 36π : 144 = π/4. Kerakli hodisa qarama-qarshi bo'lgani uchun 1 − π/4 = (4 − π)/4 ≈ 0,215. π/4 — savolni teskari o'qish, (4 − π)/2 — kvadrat yuzasini yarim deb olish, (π − 2)/4 — doira o'rniga ichki kvadratni olish. Javob: (4 − π)/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratga-ichki-doira",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#a1c3ddb4"
+    },
+    {
+      "q": "Bog'da tomoni 8 m bo'lgan kvadrat maydonchaning ichiga radiusi 3 m bo'lgan doira shaklida gulzor ekilgan. Maydonchaga tasodifiy qo'ngan kapalak gulzorda bo'lish ehtimoli qanday?",
+      "v": [
+        "3π/64",
+        "9π/32",
+        "9π/64",
+        "6π/64"
+      ],
+      "t": 2,
+      "izoh": "Gulzor yuzasi π·3² = 9π m², maydoncha yuzasi 8² = 64 m². Demak P = 9π : 64. 3π/64 — radiusni kvadratga oshirmaslik, 9π/32 — maydoncha yuzasini 32 m² deb olish, 6π/64 — yuza o'rniga aylana uzunligi 2π·3 ni ishlatish. Javob: 9π/64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratga-ichki-doira",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#408b03a4"
+    },
+    {
+      "q": "Tomoni 18 sm bo'lgan kvadratning markazida radiusi 6 sm bo'lgan doira joylashgan. Kvadratga tasodifiy tashlangan nuqta doiraga tegmasdan kvadrat ichida qolish ehtimolini toping.",
+      "v": [
+        "π/9",
+        "1 − π/3",
+        "1 − π/36",
+        "1 − π/9"
+      ],
+      "t": 3,
+      "izoh": "Doira yuzasi π·6² = 36π sm², kvadrat yuzasi 18² = 324 sm². Doiraga tushish ehtimoli 36π : 324 = π/9. Bizga kerakli hodisa unga qarama-qarshi: 1 − π/9 ≈ 0,65. π/9 — savolni teskari o'qish, 1 − π/3 — yuzalar o'rniga tomonlar nisbatini olish, 1 − π/36 — 36π ni 36 ga qisqartirib yuborish. Javob: 1 − π/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadratga-ichki-doira",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#994a9016"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan doiraga kvadrat ichki chizilgan. Doira ichidan tasodifiy tanlangan nuqtaning kvadrat ichida yotish ehtimoli qanday?",
+      "v": [
+        "2/π",
+        "1/π",
+        "(π − 2)/π",
+        "1/2"
+      ],
+      "t": 0,
+      "izoh": "Ichki chizilgan kvadratning diagonali doira diametriga, ya'ni 12 sm ga teng. Kvadrat yuzasi diagonal orqali 12² : 2 = 72 sm² bo'ladi, doira yuzasi esa π·6² = 36π sm². P = 72 : 36π = 2/π ≈ 0,64. 1/π — kvadrat tomonini radiusga teng deb olish, (π − 2)/π — kvadratdan tashqarida qolish ehtimoli, 1/2 — kvadrat doiraning yarmini egallaydi deb chamalash. Javob: 2/π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "doiraga-ichki-kop-burchak",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#fdd85be0"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan doiraga ichki chizilgan kvadratning tomonlari doiradan to'rtta bir xil segmentni kesib oladi. Doira ichidan tasodifiy tanlangan nuqtaning belgilangan bitta segmentga tushish ehtimoli qanday?",
+      "v": [
+        "(π − 2)/π",
+        "(π − 2)/(4π)",
+        "2/π",
+        "(π − 2)/(2π)"
+      ],
+      "t": 1,
+      "izoh": "Ichki kvadrat yuzasi 2R² = 200 sm², doira yuzasi 100π sm². Kvadratdan tashqarida qolgan yuza 100π − 200 bo'lib, u to'rtta teng segmentga bo'linadi. Belgilangan bitta segment uchun P = (100π − 200) : (4·100π) = (π − 2)/(4π) ≈ 0,09. (π − 2)/π — to'rtala segment birgalikda, 2/π — kvadratning o'zi, (π − 2)/(2π) — segmentlarni ikkita deb sanash. Javob: (π − 2)/(4π).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "doiraga-ichki-kop-burchak",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#cd447149"
+    },
+    {
+      "q": "Radiusi 4 sm bo'lgan doiraga teng tomonli uchburchak ichki chizilgan. Doiraga tasodifiy tashlangan nuqtaning uchburchak ichida bo'lish ehtimolini toping.",
+      "v": [
+        "√3/(4π)",
+        "3/(4π)",
+        "3√3/(4π)",
+        "3√3/(8π)"
+      ],
+      "t": 2,
+      "izoh": "Doiraga ichki chizilgan teng tomonli uchburchak yuzasi (3√3/4)·R² = (3√3/4)·16 = 12√3 sm². Doira yuzasi π·4² = 16π sm². P = 12√3 : 16π = 3√3/(4π) ≈ 0,41. √3/(4π) — koeffitsientdagi 3 ni tushirib qoldirish, 3/(4π) — √3 ni yozmaslik, 3√3/(8π) — uchburchak yuzasini yana ikkiga bo'lib yuborish. Javob: 3√3/(4π).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "doiraga-ichki-kop-burchak",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#2a01b136"
+    },
+    {
+      "q": "Radiusi 9 sm bo'lgan doiraga muntazam olti burchak ichki chizilgan. Doira ichidan tasodifiy tanlangan nuqtaning olti burchak ichida yotish ehtimoli qanday?",
+      "v": [
+        "3√3/(4π)",
+        "√3/(2π)",
+        "3/(2π)",
+        "3√3/(2π)"
+      ],
+      "t": 3,
+      "izoh": "Muntazam olti burchak yuzasi (3√3/2)·R², doira yuzasi esa πR². Nisbatda R² qisqaradi va P = 3√3/(2π) ≈ 0,83 hosil bo'ladi. 3√3/(4π) — olti burchak o'rniga teng tomonli uchburchak formulasini qo'llash, √3/(2π) — koeffitsientdagi 3 ni yo'qotish, 3/(2π) — √3 o'rniga 1 ni olish. Javob: 3√3/(2π).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "doiraga-ichki-kop-burchak",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#4d3c394d"
+    },
+    {
+      "q": "Radiusi 20 sm bo'lgan dumaloq nishonning markazida radiusi 4 sm bo'lgan doira bor. Nishonga tasodifiy tekkan o'qning markaziy doiraga tushish ehtimoli qanday?",
+      "v": [
+        "0,2",
+        "0,04",
+        "0,96",
+        "0,08"
+      ],
+      "t": 1,
+      "izoh": "Markaziy doira yuzasi π·4², butun nishon yuzasi π·20². Nisbatda π qisqaradi va ehtimol radiuslar nisbatining kvadratiga teng bo'ladi: 0,2 ning kvadrati 0,04. 0,2 — nisbatni kvadratga oshirmaslik, 0,96 — qarama-qarshi hodisa, 0,08 — kvadratga oshirish o'rniga ikkiga ko'paytirish. Javob: 0,04.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "markaziy-doiraga-tegish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#04085096"
+    },
+    {
+      "q": "Diametri 48 sm bo'lgan dumaloq nishonda diametri 16 sm bo'lgan markaziy doira chizilgan. Nishonga tekkan o'q markaziy doiraga tushish ehtimoli nechaga teng?",
+      "v": [
+        "1/3",
+        "2/9",
+        "1/9",
+        "1/6"
+      ],
+      "t": 2,
+      "izoh": "Diametrlar nisbati 16 : 48 = 1/3, yuzalar nisbati esa shu nisbatning kvadrati, ya'ni 1/9. 1/3 — chiziqli nisbatni javob deb olish, 2/9 — kvadratga oshirish o'rniga ikkilantirish, 1/6 — diametrni radiusga aylantirishda qo'shimcha ikkiga bo'lish. Javob: 1/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "markaziy-doiraga-tegish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#7870ef5c"
+    },
+    {
+      "q": "Bolalar bog'chasidagi dumaloq havzaning radiusi 5 m, uning markazida radiusi 2 m bo'lgan fontan joylashgan. Havzaga tasodifiy tashlangan tosh fontanga tushish ehtimoli qanday?",
+      "v": [
+        "0,4",
+        "0,08",
+        "0,84",
+        "0,16"
+      ],
+      "t": 3,
+      "izoh": "Fontan yuzasi π·2² = 4π m², havza yuzasi π·5² = 25π m². P = 4π : 25π = 0,16. 0,4 — radiuslar nisbatining o'zi, 0,08 — nisbatni ikkiga bo'lish, 0,84 — qarama-qarshi hodisa. Javob: 0,16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "markaziy-doiraga-tegish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#e79c0513"
+    },
+    {
+      "q": "Radiusi 24 sm bo'lgan dumaloq nishonning markaziy doirasiga tekkan o'q eng ko'p ball keltiradi. Markaziy doira radiusi 6 sm bo'lsa, o'q eng ko'p ball keltirish ehtimoli qanday?",
+      "v": [
+        "1/16",
+        "1/4",
+        "15/16",
+        "1/8"
+      ],
+      "t": 0,
+      "izoh": "Yuzalar nisbati radiuslar nisbatining kvadratiga teng: 6 : 24 = 1/4, uning kvadrati 1/16. 1/4 — radiuslar nisbatini javob deb olish, 15/16 — qarama-qarshi hodisa, 1/8 — kvadratga oshirish o'rniga yana ikkiga bo'lish. Javob: 1/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markaziy-doiraga-tegish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#7e64f809"
+    },
+    {
+      "q": "Radiusi 24 sm bo'lgan nishonda markazdan 8 sm gacha bo'lgan doira o'n ball, 8 sm dan 16 sm gacha bo'lgan halqa esa besh ball keltiradi. Tasodifiy tekkan o'q besh ball keltirish ehtimoli qanday?",
+      "v": [
+        "1/3",
+        "1/9",
+        "4/9",
+        "2/3"
+      ],
+      "t": 0,
+      "izoh": "Besh ballik halqa yuzasi π·16² − π·8² = 192π sm². Nishon yuzasi π·24² = 576π sm². P = 192π : 576π = 1/3. 1/9 — halqa o'rniga ichki doirani olish, 4/9 — halqani ayirmasdan 16 : 24 nisbatining kvadratini yozish, 2/3 — qarama-qarshi hodisa. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "halqa-zonasi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#c94d96f3"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan doira ichida u bilan markazdosh, radiusi 6 sm bo'lgan doira chizilgan. Katta doiradagi tasodifiy nuqtaning ular orasidagi halqada bo'lish ehtimoli qanday?",
+      "v": [
+        "0,36",
+        "0,64",
+        "0,4",
+        "0,6"
+      ],
+      "t": 1,
+      "izoh": "Halqa yuzasi π·10² − π·6² = 64π sm², katta doira yuzasi 100π sm². P = 64π : 100π = 0,64. 0,36 — ichki doiraga tushish ehtimoli, 0,4 — radiuslar farqini katta radiusga bo'lish, 0,6 — radiuslar nisbatini javob deb yozish. Javob: 0,64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "halqa-zonasi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#6f6e2927"
+    },
+    {
+      "q": "Radiusi 40 m bo'lgan dumaloq ko'lning qirg'og'idan 10 m kenglikdagi zona sayoz hisoblanadi. Ko'l yuzasiga tasodifiy tushgan barg sayoz zonaga tushish ehtimoli qanday?",
+      "v": [
+        "9/16",
+        "1/16",
+        "7/16",
+        "3/4"
+      ],
+      "t": 2,
+      "izoh": "Chuqur qismning radiusi 40 − 10 = 30 m. Sayoz zona yuzasi π·40² − π·30² = 700π m², ko'l yuzasi 1600π m². P = 700π : 1600π = 7/16. 9/16 — chuqur qismning ulushi, 1/16 — 10 ni 40 ga bo'lib, so'ng kvadratga oshirish, 3/4 — 30 ni 40 ga bo'lish natijasi. Javob: 7/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "halqa-zonasi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#bfabe0d9"
+    },
+    {
+      "q": "Radiusi 15 sm bo'lgan doira ichidan tasodifiy nuqta olindi. Bu nuqtaning doira markazidan 6 sm dan uzoqroqda joylashgan bo'lish ehtimolini toping.",
+      "v": [
+        "0,16",
+        "0,6",
+        "0,4",
+        "0,84"
+      ],
+      "t": 3,
+      "izoh": "Nuqta markazdan 6 sm dan yaqin bo'lish ehtimoli radiuslar nisbatining kvadratiga teng: 6 : 15 = 0,4, uning kvadrati 0,16. Kerakli hodisa qarama-qarshi: 1 − 0,16 = 0,84. 0,16 — savolni teskari o'qish, 0,4 — chiziqli nisbatni javob deb olish, 0,6 — chiziqli nisbatning to'ldiruvchisi. Javob: 0,84.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "halqa-zonasi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#4a0e3a16"
+    },
+    {
+      "q": "Ruletka g'ildiragi 12 ta teng sektorga bo'lingan, ulardan 5 tasi qizil rangga bo'yalgan. G'ildirak to'xtaganda strelka qizil sektorda turgan bo'lish ehtimoli qanday?",
+      "v": [
+        "7/12",
+        "5/12",
+        "5/6",
+        "1/12"
+      ],
+      "t": 1,
+      "izoh": "Sektorlar teng bo'lgani uchun ehtimol sektorlar sonining nisbatiga teng: P = 5 : 12. 7/12 — qizil bo'lmagan sektorlar ulushi, 5/6 — 5 ni 6 ga bo'lish xatosi, 1/12 — bitta sektorning ulushi. Javob: 5/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sektor-burchagi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#6cfacb66"
+    },
+    {
+      "q": "Doiraviy diagrammada bir mahsulotga tegishli sektorning markaziy burchagi 72°. Diagrammaga tasodifiy qo'yilgan nuqtaning shu sektorda bo'lish ehtimoli nechaga teng?",
+      "v": [
+        "0,25",
+        "0,4",
+        "0,2",
+        "0,72"
+      ],
+      "t": 2,
+      "izoh": "Sektor ehtimoli markaziy burchakning to'liq burchakka nisbatiga teng: 72 : 360 = 0,2. 0,25 — burchakni 90° deb chamalash, 0,4 — 72 ni 180 ga bo'lish, 0,72 — burchakni to'g'ridan-to'g'ri ehtimol deb yozish. Javob: 0,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sektor-burchagi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#649d9daf"
+    },
+    {
+      "q": "Sovg'a g'ildiragida markaziy burchaklari 40°, 65°, 90°, 105° va 60° bo'lgan sektorlar bor. Yutuq faqat 65° va 105° li sektorlarda beriladi. G'ildirak yutuq bilan to'xtash ehtimoli qanday?",
+      "v": [
+        "19/36",
+        "2/5",
+        "17/360",
+        "17/36"
+      ],
+      "t": 3,
+      "izoh": "Yutuq sektorlarining umumiy markaziy burchagi 65 + 105 = 170°. P = 170 : 360 = 17/36. 19/36 — yutuqsiz sektorlar ulushi, 2/5 — beshta sektorni teng deb sanab ikkitasini olish, 17/360 — burchakni noto'g'ri qisqartirish. Javob: 17/36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sektor-burchagi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#0ffcdb52"
+    },
+    {
+      "q": "G'ildirakdagi to'rtta sektorning markaziy burchaklari 1 : 2 : 3 : 4 nisbatda berilgan. Strelkaning eng katta sektorda to'xtash ehtimolini toping.",
+      "v": [
+        "0,25",
+        "0,4",
+        "0,3",
+        "0,144"
+      ],
+      "t": 1,
+      "izoh": "Burchaklar yig'indisi 360°, nisbatdagi qismlar soni 1 + 2 + 3 + 4 = 10. Bitta qism 36° ga to'g'ri keladi, eng katta sektor 4·36 = 144°. P = 144 : 360 = 0,4. 0,25 — sektorlarni teng deb hisoblash, 0,3 — eng katta sektorni 108° deb olish, 0,144 — burchakni 1000 ga bo'lib yuborish. Javob: 0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sektor-burchagi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#5755ee82"
+    },
+    {
+      "q": "Tomonlari 12 sm va 9 sm bo'lgan to'g'ri to'rtburchak ichiga asosi 12 sm, balandligi 6 sm bo'lgan uchburchak chizilgan. To'rtburchakka tasodifiy tashlangan nuqtaning uchburchak ichida bo'lish ehtimoli qanday?",
+      "v": [
+        "1/3",
+        "1/2",
+        "2/3",
+        "1/6"
+      ],
+      "t": 0,
+      "izoh": "Uchburchak yuzasi (12·6) : 2 = 36 sm², to'rtburchak yuzasi 12·9 = 108 sm². P = 36 : 108 = 1/3. 1/2 — uchburchakni har doim to'rtburchakning yarmi deb o'ylash, 2/3 — qarama-qarshi hodisa, 1/6 — uchburchak yuzasini yana ikkiga bo'lish. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-ichida-uchburchak",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#7124309d"
+    },
+    {
+      "q": "Tomonlari 16 sm va 10 sm bo'lgan to'g'ri to'rtburchak o'rta chiziqlari yordamida to'rtta teng qismga bo'lingan. Tasodifiy tanlangan nuqtaning chap yuqori qismga tushish ehtimoli qanday?",
+      "v": [
+        "1/2",
+        "1/4",
+        "1/8",
+        "3/4"
+      ],
+      "t": 1,
+      "izoh": "O'rta chiziqlar to'rtburchakni yuzalari teng bo'lgan to'rtta qismga ajratadi, ularning har biri 40 sm². P = 40 : 160 = 1/4. 1/2 — faqat bitta o'rta chiziqni hisobga olish, 1/8 — qismlarni sakkizta deb sanash, 3/4 — qolgan uchta qismning ehtimoli. Javob: 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tortburchak-ichida-uchburchak",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#c14de72e"
+    },
+    {
+      "q": "Fermerning yeri to'g'ri to'rtburchak shaklida, uzunligi 120 m va eni 80 m. Yerning bir burchagida katetlari 60 m va 40 m bo'lgan uchburchak shaklidagi botqoq bor. Tasodifiy tushgan urug' botqoqqa tushish ehtimoli qanday?",
+      "v": [
+        "0,25",
+        "0,5",
+        "0,125",
+        "0,0625"
+      ],
+      "t": 2,
+      "izoh": "Botqoq yuzasi (60·40) : 2 = 1200 m², yer yuzasi 120·80 = 9600 m². P = 1200 : 9600 = 0,125. 0,25 — uchburchak yuzasini ikkiga bo'lishni unutish, 0,5 — tomonlar nisbatidan noto'g'ri xulosa, 0,0625 — yuzani yana ikkiga bo'lish. Javob: 0,125.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortburchak-ichida-uchburchak",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#d7931742"
+    },
+    {
+      "q": "Tomoni 12 sm bo'lgan kvadratning ichidan tasodifiy nuqta tanlandi. Bu nuqtaning kvadrat markazidan 3 sm dan yaqinroqda joylashgan bo'lish ehtimolini toping.",
+      "v": [
+        "1/16",
+        "1/4",
+        "π/4",
+        "π/16"
+      ],
+      "t": 3,
+      "izoh": "Qulay soha — markazi kvadrat markazida bo'lgan radiusi 3 sm doira, uning yuzasi 9π sm². Kvadrat yuzasi 144 sm². P = 9π : 144 = π/16 ≈ 0,196. 1/16 — doira yuzasida π ni tushirib qoldirish, 1/4 — 3 ni 12 ga bo'lib chiziqli nisbat olish, π/4 — radiusni 6 sm deb olish. Javob: π/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tortburchak-ichida-uchburchak",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#90b02cc3"
+    },
+    {
+      "q": "Uchlari (0; 0), (8; 0), (8; 5) va (0; 5) nuqtalarda bo'lgan to'g'ri to'rtburchakdan tasodifiy nuqta olindi. Uning ordinatasi 2 dan kichik bo'lish ehtimoli qanday?",
+      "v": [
+        "2/5",
+        "3/5",
+        "1/10",
+        "1/5"
+      ],
+      "t": 0,
+      "izoh": "Qulay soha — asosi 8 va balandligi 2 bo'lgan to'rtburchak, yuzasi 16. Butun to'rtburchak yuzasi 8·5 = 40. P = 16 : 40 = 2/5. 3/5 — qarama-qarshi hodisa, 1/10 — qulay sohani tomoni 2 bo'lgan kvadrat deb olish, 1/5 — qulay yuzani 8 deb olish xatosi. Javob: 2/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-tekisligida-soha",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#3e7b045b"
+    },
+    {
+      "q": "Markazi koordinata boshida va radiusi 5 birlik bo'lgan doira ichidan tasodifiy nuqta tanlandi. Uning birinchi chorakda yotish ehtimoli nechaga teng?",
+      "v": [
+        "1/2",
+        "1/4",
+        "π/4",
+        "1/8"
+      ],
+      "t": 1,
+      "izoh": "Koordinata o'qlari doirani yuzalari teng to'rtta chorakka ajratadi, shuning uchun P = 1 : 4 = 1/4 va u radiusga bog'liq emas. 1/2 — faqat bitta o'qni hisobga olish, π/4 — kvadratdagi ichki doira formulasini adashib qo'llash, 1/8 — chorakni yana ikkiga bo'lish. Javob: 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koordinata-tekisligida-soha",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#779cb519"
+    },
+    {
+      "q": "Uchlari (0; 0), (4; 0), (4; 3) va (0; 3) bo'lgan to'g'ri to'rtburchakdan tasodifiy nuqta olindi. Uning koordinatalari uchun y < x tengsizlik bajarilish ehtimoli qanday?",
+      "v": [
+        "0,375",
+        "0,5",
+        "0,625",
+        "0,75"
+      ],
+      "t": 2,
+      "izoh": "y = x to'g'ri chiziq to'rtburchakni ikki qismga ajratadi. y ≥ x bo'lgan soha uchlari (0; 0), (3; 3) va (0; 3) bo'lgan uchburchak, uning yuzasi (3·3) : 2 = 4,5. To'rtburchak yuzasi 12, demak qulay soha yuzasi 12 − 4,5 = 7,5 va P = 7,5 : 12 = 0,625. 0,375 — qarama-qarshi hodisa, 0,5 — diagonal har doim teng bo'ladi deb o'ylash, 0,75 — uchburchak yuzasini ikkiga bo'lmaslik. Javob: 0,625.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-tekisligida-soha",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#287e678c"
+    },
+    {
+      "q": "Uchlari (0; 0), (9; 0) va (0; 9) nuqtalarda bo'lgan to'g'ri burchakli uchburchak ichidan tasodifiy nuqta olindi. Uning ikkala koordinatasi ham 1 dan katta bo'lish ehtimoli qanday?",
+      "v": [
+        "2/9",
+        "32/81",
+        "7/9",
+        "49/81"
+      ],
+      "t": 3,
+      "izoh": "Uchburchak x ≥ 0, y ≥ 0 va x + y ≤ 9 shartlar bilan beriladi, yuzasi (9·9) : 2 = 40,5. x > 1 va y > 1 shartlari katetlari 7 birlik bo'lgan o'xshash uchburchakni ajratadi, uning yuzasi (7·7) : 2 = 24,5. P = 24,5 : 40,5 = 49/81. 2/9 — chegaralarni ayirib 2 ni 9 ga bo'lish, 7/9 — chiziqli nisbatni javob deb olish, 32/81 — qarama-qarshi hodisa. Javob: 49/81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-tekisligida-soha",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#e6ec2486"
+    },
+    {
+      "q": "Uzunligi 6 sm, eni 4 sm va balandligi 5 sm bo'lgan to'g'ri burchakli parallelepiped ichiga qirrasi 2 sm bo'lgan kub joylashtirilgan. Parallelepiped ichidan tasodifiy tanlangan nuqtaning kub ichida bo'lish ehtimoli qanday?",
+      "v": [
+        "1/15",
+        "2/15",
+        "1/60",
+        "1/30"
+      ],
+      "t": 0,
+      "izoh": "Kub hajmi 2³ = 8 sm³, parallelepiped hajmi 6·4·5 = 120 sm³. P = 8 : 120 = 1/15. 2/15 — kub hajmini 16 sm³ deb olish, 1/60 — qirra uzunligini hajm deb olish, 1/30 — natijani yana ikkiga bo'lish. Javob: 1/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajmlar-nisbati",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#cbad9517"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan shar ichida u bilan markazdosh, radiusi 6 sm bo'lgan shar joylashgan. Katta shar ichidagi tasodifiy nuqtaning kichik sharda bo'lish ehtimoli qanday?",
+      "v": [
+        "0,36",
+        "0,216",
+        "0,6",
+        "0,108"
+      ],
+      "t": 1,
+      "izoh": "Shar hajmi radiusning kubiga proporsional. Radiuslar nisbati 6 : 10 = 0,6, hajmlar nisbati esa uning kubi, ya'ni 0,216. 0,36 — kubga emas, kvadratga oshirish, 0,6 — chiziqli nisbat, 0,108 — natijani ikkiga bo'lish. Javob: 0,216.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajmlar-nisbati",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#08b33dc1"
+    },
+    {
+      "q": "Balandligi 3 m bo'lgan silindr shaklidagi suv rezervuarida suv sathi 1,2 m ni tashkil qiladi. Rezervuar ichidan tasodifiy tanlangan nuqtaning suv ichida bo'lish ehtimoli qanday?",
+      "v": [
+        "0,6",
+        "0,16",
+        "0,4",
+        "0,25"
+      ],
+      "t": 2,
+      "izoh": "Silindrning asos yuzasi hamma joyda bir xil, shuning uchun hajmlar nisbati balandliklar nisbatiga teng: 1,2 : 3 = 0,4. 0,6 — bo'sh qismning ulushi, 0,16 — nisbatni keraksiz kvadratga oshirish, 0,25 — suv sathini 0,75 m deb chamalash. Javob: 0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajmlar-nisbati",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#862196e2"
+    },
+    {
+      "q": "Balandligi 30 sm bo'lgan konus shaklidagi idishga uchi pastga qaratilgan holda 20 sm balandlikda suv quyilgan. Idish ichidan tasodifiy tanlangan nuqtaning suvda bo'lish ehtimolini toping.",
+      "v": [
+        "2/3",
+        "4/9",
+        "19/27",
+        "8/27"
+      ],
+      "t": 3,
+      "izoh": "Suv to'ldirgan qism butun konusga o'xshash, o'xshashlik koeffitsienti 20 : 30 = 2/3. Hajmlar nisbati koeffitsientning kubiga teng: 8/27 ≈ 0,3. 2/3 — chiziqli nisbat, 4/9 — kub o'rniga kvadrat olish, 19/27 — bo'sh qismning ulushi. Javob: 8/27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajmlar-nisbati",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#476ced4d"
+    },
+    {
+      "q": "Pol tomoni 30 sm bo'lgan kvadrat plitkalar bilan qoplangan. Uning ustiga diametri 10 sm bo'lgan dumaloq karton disk tashlanadi. Diskning bitta plitka ichiga to'liq tushish ehtimoli qanday?",
+      "v": [
+        "4/9",
+        "2/3",
+        "1/9",
+        "5/9"
+      ],
+      "t": 0,
+      "izoh": "Disk to'liq ichkarida bo'lishi uchun uning markazi plitka chetidan kamida 5 sm uzoqda turishi kerak. Bu markaz uchun tomoni 30 − 10 = 20 sm bo'lgan kvadrat sohani beradi. P = 20² : 30² = 4/9. 2/3 — chiziqli nisbat, 1/9 — chetdan 10 sm dan kesish, 5/9 — qarama-qarshi hodisa. Javob: 4/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tanga-plitka-markazi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#46ffa47c"
+    },
+    {
+      "q": "Kvadrat plitkaning tomoni 24 sm. Uning ustiga diametri 6 sm bo'lgan dumaloq jeton tasodifiy tushadi. Jetonning plitka chetiga tegmasdan qolish ehtimoli qanday?",
+      "v": [
+        "3/4",
+        "9/16",
+        "7/16",
+        "1/4"
+      ],
+      "t": 1,
+      "izoh": "Jeton markazi plitka chetidan kamida 3 sm uzoqda bo'lishi kerak, bu tomoni 24 − 6 = 18 sm kvadratni beradi. P = 18² : 24² = 9/16. 3/4 — chiziqli nisbat, 7/16 — qarama-qarshi hodisa, 1/4 — radius o'rniga diametrni olib har chetdan 6 sm kesish. Javob: 9/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tanga-plitka-markazi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#ad7362ac"
+    },
+    {
+      "q": "Uzunligi 80 sm va eni 50 sm bo'lgan yog'och taxtaga radiusi 5 sm bo'lgan dumaloq nishoncha tasodifiy yopishtiriladi. Nishonchaning taxtadan chiqib ketmasligi ehtimoli qanday?",
+      "v": [
+        "0,875",
+        "0,7",
+        "0,49",
+        "0,3"
+      ],
+      "t": 1,
+      "izoh": "Nishoncha markazi taxta chetidan kamida 5 sm uzoqda bo'lishi kerak, ya'ni u 70 sm va 40 sm o'lchamli sohada yotadi. P = (70·40) : (80·50) = 2800 : 4000 = 0,7. 0,875 — faqat uzunlik bo'ylab kesish, 0,49 — ikkala o'lchamni ham 70 sm deb olish, 0,3 — qarama-qarshi hodisa. Javob: 0,7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tanga-plitka-markazi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#dfcfb0fa"
+    },
+    {
+      "q": "Pol tomoni 20 sm bo'lgan kvadrat plitkalar bilan qoplangan va plitkalar orasida ingichka chok bor (chok kengligi hisobga olinmaydi). Ustiga radiusi 3 sm bo'lgan dumaloq disk tashlanganda uning chokka tegib qolish ehtimoli qanday?",
+      "v": [
+        "0,3",
+        "0,49",
+        "0,7",
+        "0,51"
+      ],
+      "t": 3,
+      "izoh": "Disk chokka tegmasligi uchun markazi plitka chetidan 3 sm uzoqda bo'lishi kerak, bu tomoni 20 − 6 = 14 sm kvadratni beradi. Tegmaslik ehtimoli 14² : 20² = 0,49, demak tegish ehtimoli 1 − 0,49 = 0,51. 0,49 — savolni teskari o'qish, 0,3 — 6 ni 20 ga bo'lish, 0,7 — chiziqli nisbatni javob deb olish. Javob: 0,51.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tanga-plitka-markazi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#c93ab5bd"
+    },
+    {
+      "q": "Uzunligi 60 sm bo'lgan kesmada CD bo'lakka tasodifiy nuqtaning tushish ehtimoli 0,35 ga teng. CD bo'lakning uzunligini toping.",
+      "v": [
+        "21 sm",
+        "39 sm",
+        "17,5 sm",
+        "35 sm"
+      ],
+      "t": 0,
+      "izoh": "Geometrik ehtimol formulasidan qulay uzunlik ehtimol bilan umumiy uzunlik ko'paytmasiga teng: CD = 0,35·60 = 21 sm. 39 sm — qolgan qismning uzunligi, 17,5 sm — 35 ni ikkiga bo'lish xatosi, 35 sm — foiz qiymatini santimetr deb yozib qo'yish. Javob: 21 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-masala-uzunlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#c68ac700"
+    },
+    {
+      "q": "Bekatga avtobuslar teng oraliqlarda keladi. Yo'lovchining 5 daqiqadan kam kutish ehtimoli 0,2 ga teng bo'lsa, avtobuslar orasidagi oraliq necha daqiqa?",
+      "v": [
+        "10 daqiqa",
+        "25 daqiqa",
+        "20 daqiqa",
+        "1 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Oraliq T bo'lsa, geometrik ehtimol ta'rifiga ko'ra 5 : T = 0,2 tenglama hosil bo'ladi. Bundan T = 5 : 0,2 = 25 daqiqa. 10 daqiqa — 5 ni 0,5 ga bo'lish, 20 daqiqa — javobdan 5 ni ayirib yuborish, 1 daqiqa — 5 ni 0,2 ga ko'paytirish. Javob: 25 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-masala-uzunlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#b0d8a038"
+    },
+    {
+      "q": "Uzunligi 240 km bo'lgan yo'lning ta'mirlanayotgan uchastkasida tasodifiy to'xtash ehtimoli 1/8 ga teng. Shu uchastkaning uzunligi qancha?",
+      "v": [
+        "210 km",
+        "60 km",
+        "30 km",
+        "24 km"
+      ],
+      "t": 2,
+      "izoh": "Qulay uzunlik ehtimol bilan umumiy uzunlik ko'paytmasiga teng: 240 : 8 = 30 km. 210 km — ta'mirlanmagan qismning uzunligi, 60 km — ehtimolni 1/4 deb olish, 24 km — 240 ni 10 ga bo'lish xatosi. Javob: 30 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-masala-uzunlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#1dec0e61"
+    },
+    {
+      "q": "Uzunligi 50 sm bo'lgan kesmada tasodifiy nuqtaning kesma o'rtasidan d sm dan yaqinroq bo'lish ehtimoli 0,3 ga teng. d ning qiymatini toping.",
+      "v": [
+        "15 sm",
+        "3,75 sm",
+        "30 sm",
+        "7,5 sm"
+      ],
+      "t": 3,
+      "izoh": "O'rtadan ikki tomonga d sm dan olinsa, qulay uzunlik 2d bo'ladi. Shartga ko'ra 2d : 50 = 0,3, bundan 2d = 15 va d = 7,5 sm. 15 sm — qulay uzunlikning o'zini javob deb yozish, 3,75 sm — 15 ni yana to'rtga bo'lish, 30 sm — 0,3 ni 100 ga ko'paytirish. Javob: 7,5 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-masala-uzunlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#52da6224"
+    },
+    {
+      "q": "Radiusi 30 sm bo'lgan nishonga tekkan o'qning markaziy doiraga tushish ehtimoli 0,09 ga teng. Markaziy doiraning radiusini toping.",
+      "v": [
+        "9 sm",
+        "2,7 sm",
+        "3 sm",
+        "15 sm"
+      ],
+      "t": 0,
+      "izoh": "Yuzalar nisbati radiuslar nisbatining kvadratiga teng, ya'ni (r : 30) ning kvadrati 0,09 ga teng. Bundan r : 30 = 0,3 va r = 9 sm. 2,7 sm — 30 ni to'g'ridan-to'g'ri 0,09 ga ko'paytirish, 3 sm — nisbatni 0,1 deb yaxlitlash, 15 sm — radiusni yarim deb chamalash. Javob: 9 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-masala-olcham",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#b62688b3"
+    },
+    {
+      "q": "Tomoni 24 sm bo'lgan kvadratning ichiga kichik kvadrat chizilgan. Tasodifiy nuqtaning kichik kvadratga tushish ehtimoli 1/9 bo'lsa, uning tomoni qancha?",
+      "v": [
+        "2,7 sm",
+        "8 sm",
+        "12 sm",
+        "16 sm"
+      ],
+      "t": 1,
+      "izoh": "Yuzalar nisbati tomonlar nisbatining kvadratiga teng: (a : 24) ning kvadrati 1/9 ga teng, bundan a : 24 = 1/3 va a = 8 sm. 2,7 sm — 24 ni 9 ga bo'lish, 12 sm — tomonni yarim deb olish, 16 sm — nisbatni 2/3 deb chamalash. Javob: 8 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-masala-olcham",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#03a53235"
+    },
+    {
+      "q": "Radiusi 12 sm bo'lgan doiraviy tarqatma materialda bitta sektor ajratilgan. Tasodifiy nuqtaning shu sektorga tushish ehtimoli 0,25 bo'lsa, sektorning markaziy burchagi qancha?",
+      "v": [
+        "45°",
+        "120°",
+        "90°",
+        "60°"
+      ],
+      "t": 2,
+      "izoh": "Sektor ehtimoli markaziy burchakning to'liq burchakka nisbatiga teng, ya'ni α : 360 = 0,25. Bundan α = 0,25·360 = 90°. Radius javobga ta'sir qilmaydi. 45° — burchakni yana ikkiga bo'lish, 120° — ehtimolni 1/3 deb olish, 60° — ehtimolni 1/6 deb olish. Javob: 90°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-masala-olcham",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#faeeb405"
+    },
+    {
+      "q": "Uzunligi 50 m va eni 30 m bo'lgan to'g'ri to'rtburchak yerning ichida dumaloq gulzor bor. Tasodifiy tushgan yomg'ir tomchisining gulzorga tushish ehtimoli 0,12 bo'lsa, gulzorning yuzasi qancha?",
+      "v": [
+        "1320 m²",
+        "150 m²",
+        "18 m²",
+        "180 m²"
+      ],
+      "t": 3,
+      "izoh": "Yer yuzasi 50·30 = 1500 m². Qulay yuza ehtimol bilan umumiy yuzaning ko'paytmasiga teng: 0,12·1500 = 180 m². 1320 m² — gulzordan tashqarida qolgan yuza, 150 m² — 1500 ni 10 ga bo'lish, 18 m² — 0,12 ni 150 ga ko'paytirish xatosi. Javob: 180 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-masala-olcham",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#29decb87"
+    },
+    {
+      "q": "Ikki do'st soat 12:00 dan 13:00 gacha bo'lgan vaqtda tasodifiy kelishadi va kelgani boshqasini 20 daqiqa kutadi. Ularning uchrashish ehtimolini toping.",
+      "v": [
+        "5/9",
+        "4/9",
+        "1/3",
+        "2/3"
+      ],
+      "t": 0,
+      "izoh": "Kelish vaqtlarini x va y bilan belgilasak, ular tomoni 60 daqiqa bo'lgan kvadratni to'ldiradi, yuzasi 3600. Uchrashuv sharti |x − y| ≤ 20. Uchrashmaslik sohasi katetlari 40 daqiqa bo'lgan ikkita uchburchak, umumiy yuzasi 1600. P = 1 − 1600 : 3600 = 5/9. 4/9 — uchrashmaslik ehtimoli, 1/3 — 20 ni 60 ga bo'lib qo'ya qolish, 2/3 — uning to'ldiruvchisi. Javob: 5/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchrashuv-teng-kutish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#81825fa4"
+    },
+    {
+      "q": "Ikki kishi bir soat davomida uchrashuv joyiga tasodifiy vaqtda keladi va har biri boshqasini 15 daqiqa kutadi. Ularning uchrashishi ehtimoli nechaga teng?",
+      "v": [
+        "0,5625",
+        "0,4375",
+        "0,25",
+        "0,75"
+      ],
+      "t": 1,
+      "izoh": "Uchrashmaslik sohasi katetlari 60 − 15 = 45 daqiqa bo'lgan ikkita uchburchakdan iborat, ularning umumiy yuzasi 2025. Butun kvadrat yuzasi 3600. P = 1 − 2025 : 3600 = 0,4375. 0,5625 — uchrashmaslik ehtimoli, 0,25 — 15 ni 60 ga bo'lish, 0,75 — chiziqli nisbatning to'ldiruvchisi. Javob: 0,4375.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchrashuv-teng-kutish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#0835e63a"
+    },
+    {
+      "q": "Ikki yuk mashinasi omborga soat 9:00 dan 11:00 gacha tasodifiy vaqtda keladi va har biri boshqasini 24 daqiqa kutadi. Ularning uchrashish ehtimoli qanday?",
+      "v": [
+        "0,64",
+        "0,8",
+        "0,36",
+        "0,2"
+      ],
+      "t": 2,
+      "izoh": "Umumiy oraliq 120 daqiqa, kvadrat yuzasi 14400. Uchrashmaslik sohasi katetlari 120 − 24 = 96 daqiqa bo'lgan ikkita uchburchak, umumiy yuzasi 9216. P = 1 − 9216 : 14400 = 1 − 0,64 = 0,36. 0,64 — uchrashmaslik ehtimoli, 0,2 — 24 ni 120 ga bo'lish, 0,8 — uning to'ldiruvchisi. Javob: 0,36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchrashuv-teng-kutish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#e8dd85c7"
+    },
+    {
+      "q": "Ikki tanish bir soatlik oraliqda tasodifiy vaqtda keladi. Ularning uchrashish ehtimoli 0,75 bo'lishi uchun har biri boshqasini necha daqiqa kutishi kerak?",
+      "v": [
+        "15 daqiqa",
+        "45 daqiqa",
+        "20 daqiqa",
+        "30 daqiqa"
+      ],
+      "t": 3,
+      "izoh": "Uchrashmaslik ehtimoli 1 − 0,75 = 0,25 bo'lishi kerak, ya'ni ((60 − t) : 60) ning kvadrati 0,25 ga teng. Bundan (60 − t) : 60 = 0,5, ya'ni 60 − t = 30 va t = 30 daqiqa. 15 daqiqa — 0,25 ni to'g'ridan-to'g'ri qo'llash, 45 daqiqa — ildizni teskari qo'yish, 20 daqiqa — 60 ni uchga bo'lish. Javob: 30 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchrashuv-teng-kutish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#7dd32d59"
+    },
+    {
+      "q": "Ikki do'st bir soat ichida tasodifiy vaqtda kelishadi. Birinchisi ikkinchisini 20 daqiqa, ikkinchisi esa faqat 10 daqiqa kutishga rozi. Uchrashuv bo'lish ehtimoli qanday?",
+      "v": [
+        "31/72",
+        "41/72",
+        "5/9",
+        "11/36"
+      ],
+      "t": 0,
+      "izoh": "Kvadrat yuzasi 3600. Uchrashmaslik ikkita teng bo'lmagan uchburchakdan iborat: katetlari 40 daqiqa bo'lganining yuzasi 800, katetlari 50 daqiqa bo'lganiniki 1250, jami 2050. P = 1 − 2050 : 3600 = 1550 : 3600 = 31/72. 41/72 — uchrashmaslik ehtimoli, 5/9 — ikkalasi ham 20 daqiqa kutadi deb hisoblash, 11/36 — ikkalasi ham 10 daqiqa kutadi deb hisoblash. Javob: 31/72.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchrashuv-turli-kutish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#81ecd052"
+    },
+    {
+      "q": "Poyezd stansiyaga bir soat ichida tasodifiy keladi va 15 daqiqa turadi. Yo'lovchi ham shu soat ichida tasodifiy keladi va poyezdni 30 daqiqagacha kutishga tayyor. Ularning uchrashish ehtimoli qanday?",
+      "v": [
+        "13/32",
+        "19/32",
+        "1/2",
+        "5/8"
+      ],
+      "t": 1,
+      "izoh": "Uchrashmaslik ikkita uchburchakdan iborat: poyezd yo'lovchidan 15 daqiqadan ko'p oldin ketsa katetlari 45 daqiqa bo'lgan uchburchak (yuzasi 1012,5), yo'lovchi 30 daqiqadan ko'p kutsa katetlari 30 daqiqa bo'lgan uchburchak (yuzasi 450). Jami 1462,5, P = 1 − 1462,5 : 3600 = 19/32 ≈ 0,59. 13/32 — uchrashmaslik ehtimoli, 1/2 — vaqtlarni teng deb soddalashtirish, 5/8 — yuzalarni yaxlitlab hisoblash. Javob: 19/32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchrashuv-turli-kutish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#3ce32403"
+    },
+    {
+      "q": "Poyezd stansiyaga soat 10:00 da keladi va 5 daqiqa turadi. Yo'lovchi soat 9:40 dan 10:20 gacha bo'lgan oraliqda tasodifiy vaqtda yetib keladi. Uning poyezdga ulgurish ehtimoli qanday?",
+      "v": [
+        "3/8",
+        "1/8",
+        "5/8",
+        "1/2"
+      ],
+      "t": 2,
+      "izoh": "Yo'lovchi kelishi mumkin bo'lgan oraliq 40 daqiqa. Poyezdga ulgurish uchun u soat 10:05 dan oldin, ya'ni oraliqning dastlabki 25 daqiqasida kelishi kerak. P = 25 : 40 = 5/8. 3/8 — kechikish ehtimoli, 1/8 — faqat besh daqiqalik to'xtashni hisoblash, 1/2 — poyezdning turishini e'tiborsiz qoldirish. Javob: 5/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchrashuv-turli-kutish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#ba5d64f2"
+    },
+    {
+      "q": "Kema portga bir soat ichida tasodifiy vaqtda keladi va 20 daqiqa turadi. Nazoratchi ham shu soat ichida tasodifiy keladi, lekin umuman kutmaydi. Nazoratchining kemani uchratish ehtimoli qanday?",
+      "v": [
+        "1/3",
+        "2/9",
+        "5/9",
+        "5/18"
+      ],
+      "t": 3,
+      "izoh": "Nazoratchining kelish vaqti kema turgan 20 daqiqalik oraliqqa tushishi kerak. Kema soatning dastlabki 40 daqiqasida kelsa qulay oraliq to'liq 20 daqiqa, undan keyin kelsa oraliq soat oxirigacha qisqaradi. Qulay yuza 40·20 + (20·20) : 2 = 1000, umumiy yuza 3600. P = 1000 : 3600 = 5/18 ≈ 0,28. 1/3 — 20 ni 60 ga bo'lib qo'ya qolish, 2/9 — chekkadagi uchburchakni tashlab yuborish, 5/9 — natijani ikkilantirish. Javob: 5/18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchrashuv-turli-kutish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#6837ebd5"
+    },
+    {
+      "q": "x va y sonlari [0; 6] oralig'idan tasodifiy va mustaqil ravishda tanlanadi. Ularning yig'indisi 4 dan kichik bo'lish ehtimoli qanday?",
+      "v": [
+        "2/9",
+        "4/9",
+        "1/3",
+        "7/9"
+      ],
+      "t": 0,
+      "izoh": "Barcha juftliklar tomoni 6 bo'lgan kvadratni to'ldiradi, uning yuzasi 36. Yig'indi 4 dan kichik bo'lgan shart katetlari 4 bo'lgan uchburchakni beradi, yuzasi (4·4) : 2 = 8. P = 8 : 36 = 2/9. 4/9 — uchburchak yuzasini ikkiga bo'lmaslik, 1/3 — 4 ni 12 ga bo'lish, 7/9 — qarama-qarshi hodisa. Javob: 2/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-son-yigindisi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#be1b3c24"
+    },
+    {
+      "q": "Nol dan 4 gacha bo'lgan oraliqdan ikkita son tasodifiy tanlandi. Ularning yig'indisi 5 dan katta bo'lish ehtimolini toping.",
+      "v": [
+        "23/32",
+        "9/32",
+        "5/16",
+        "3/16"
+      ],
+      "t": 1,
+      "izoh": "Juftliklar tomoni 4 bo'lgan kvadratda yotadi, yuzasi 16. Yig'indi 5 dan katta bo'lgan soha katetlari 3 bo'lgan uchburchak, yuzasi (3·3) : 2 = 4,5. P = 4,5 : 16 = 9/32. 23/32 — qarama-qarshi hodisa, 5/16 — 5 ni 16 ga bo'lish, 3/16 — uchburchak yuzasini 3 deb olish. Javob: 9/32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-son-yigindisi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#fdd465a2"
+    },
+    {
+      "q": "Ikki idishning har biriga 0 dan 10 litrgacha tasodifiy miqdorda suv quyildi. Ikkala idishdagi suvning umumiy hajmi 12 litrdan ko'p bo'lish ehtimoli qanday?",
+      "v": [
+        "0,68",
+        "0,5",
+        "0,32",
+        "0,16"
+      ],
+      "t": 2,
+      "izoh": "Juftliklar tomoni 10 bo'lgan kvadratni to'ldiradi, yuzasi 100. Umumiy hajm 12 litrdan ko'p bo'lgan soha katetlari 8 litr bo'lgan uchburchak, yuzasi (8·8) : 2 = 32. P = 32 : 100 = 0,32. 0,68 — qarama-qarshi hodisa, 0,5 — 12 ni 20 ning yarmi deb chamalash, 0,16 — uchburchak yuzasini yana ikkiga bo'lish. Javob: 0,32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-son-yigindisi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#93b68a47"
+    },
+    {
+      "q": "x va y sonlari [0; 5] oralig'idan tasodifiy tanlandi. Ularning yig'indisi 4 dan kichik yoki 8 dan katta bo'lish ehtimoli qanday?",
+      "v": [
+        "0,32",
+        "0,6",
+        "0,08",
+        "0,4"
+      ],
+      "t": 3,
+      "izoh": "Kvadratning yuzasi 25. Yig'indi 4 dan kichik bo'lgan soha katetlari 4 bo'lgan uchburchak, yuzasi 8. Yig'indi 8 dan katta bo'lgan soha katetlari 2 bo'lgan uchburchak, yuzasi 2. Ikkala soha birga 10 ni beradi, demak P = 10 : 25 = 0,4. 0,32 — faqat birinchi uchburchakni olish, 0,08 — faqat ikkinchisini olish, 0,6 — qarama-qarshi hodisa. Javob: 0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-son-yigindisi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#54235313"
+    },
+    {
+      "q": "Nol dan 8 gacha bo'lgan oraliqdan ikkita son tasodifiy tanlandi. Ularning ayirmasi modul bo'yicha kamida 2 birlik bo'lish ehtimoli qanday?",
+      "v": [
+        "9/16",
+        "7/16",
+        "3/4",
+        "5/8"
+      ],
+      "t": 0,
+      "izoh": "Juftliklar tomoni 8 bo'lgan kvadratda yotadi, yuzasi 64. Ayirmaning moduli 2 dan katta bo'lgan shart katetlari 6 birlik bo'lgan ikkita uchburchakni beradi, umumiy yuzasi 36. P = 36 : 64 = 9/16. 7/16 — qarama-qarshi hodisa, 3/4 — chiziqli nisbatni javob deb olish, 5/8 — uchburchaklardan faqat bittasini hisoblash. Javob: 9/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-son-ayirmasi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#30a04c36"
+    },
+    {
+      "q": "Ikki avtobus bekatga soat 8:00 dan 9:00 gacha tasodifiy vaqtda keladi. Ularning kelish vaqtlari orasidagi farq 10 daqiqadan kam bo'lish ehtimoli qanday?",
+      "v": [
+        "25/36",
+        "11/36",
+        "1/6",
+        "5/6"
+      ],
+      "t": 1,
+      "izoh": "Kelish vaqtlari tomoni 60 daqiqa bo'lgan kvadratni to'ldiradi, yuzasi 3600. Farq 10 daqiqadan katta bo'lgan soha ikkita uchburchak bo'lib, umumiy yuzasi 2500. P = 1 − 2500 : 3600 = 1100 : 3600 = 11/36. 25/36 — qarama-qarshi hodisa, 1/6 — 10 ni 60 ga bo'lish, 5/6 — uning to'ldiruvchisi. Javob: 11/36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-son-ayirmasi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#c4c21ea5"
+    },
+    {
+      "q": "Ikkita radiosignal 0 dan 24 sekundgacha bo'lgan oraliqda tasodifiy qayd etiladi. Ular orasidagi vaqt farqi 9 sekunddan ko'p bo'lish ehtimoli qanday?",
+      "v": [
+        "39/64",
+        "5/8",
+        "25/64",
+        "3/8"
+      ],
+      "t": 2,
+      "izoh": "Qayd vaqtlari tomoni 24 sekund bo'lgan kvadratda yotadi, uning yuzasi 576. Farq 9 sekunddan ko'p bo'lgan soha katetlari 15 sekundli ikkita uchburchak, umumiy yuzasi 225. P = 225 : 576 = 25/64 ≈ 0,39. 39/64 — qarama-qarshi hodisa, 5/8 — chiziqli nisbatni javob deb olish, 3/8 — 9 ni 24 ga bo'lib qo'ya qolish. Javob: 25/64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-son-ayirmasi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#ecaf7e08"
+    },
+    {
+      "q": "x va y sonlari [0; 6] oralig'idan tasodifiy tanlandi. y ning x dan kamida 1 birlik katta bo'lish ehtimolini toping.",
+      "v": [
+        "47/72",
+        "5/12",
+        "1/2",
+        "25/72"
+      ],
+      "t": 3,
+      "izoh": "Barcha juftliklar tomoni 6 bo'lgan kvadratda yotadi, yuzasi 36. y ≥ x + 1 sharti katetlari 5 birlik bo'lgan uchburchakni ajratadi, uning yuzasi (5·5) : 2 = 12,5. P = 12,5 : 36 = 25/72 ≈ 0,35. 47/72 — qarama-qarshi hodisa, 5/12 — uchburchak yuzasini 15 deb olish, 1/2 — shartdagi bir birlikni e'tiborsiz qoldirish. Javob: 25/72.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-son-ayirmasi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#76233e9e"
+    },
+    {
+      "q": "Uzunligi 1 m bo'lgan tayoqcha tasodifiy tanlangan ikkita nuqtadan sindirildi. Hosil bo'lgan uchta bo'lakdan uchburchak yasash mumkin bo'lish ehtimolini toping.",
+      "v": [
+        "1/4",
+        "1/2",
+        "1/3",
+        "3/4"
+      ],
+      "t": 0,
+      "izoh": "Sindirish nuqtalarini x va y deb olamiz, ular tomoni 1 m bo'lgan kvadratni to'ldiradi. Uchburchak yasash uchun har bir bo'lak yarim metrdan kichik bo'lishi shart. Bu shart kvadratning aynan to'rtdan bir qismini ajratadi, shuning uchun P = 1/4. 1/2 — shartni faqat bitta bo'lak uchun tekshirish, 1/3 — uchta bo'lakdan biri deb sanash, 3/4 — qarama-qarshi hodisa. Javob: 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tayoqcha-sinishi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#7b9157c4"
+    },
+    {
+      "q": "Uzunligi 30 sm bo'lgan tayoqcha bitta tasodifiy nuqtadan sindirildi. Bo'laklardan biri ikkinchisidan kamida to'rt marta uzun bo'lish ehtimoli qanday?",
+      "v": [
+        "0,2",
+        "0,4",
+        "0,6",
+        "0,25"
+      ],
+      "t": 1,
+      "izoh": "Sinish nuqtasi x bo'lsa, bo'laklar x va 30 − x uzunlikda bo'ladi. Biri ikkinchisidan to'rt marta uzun bo'lishi uchun x ≤ 6 yoki x ≥ 24 bo'lishi kerak. Qulay uzunlik 6 + 6 = 12 sm, demak P = 12 : 30 = 0,4. 0,2 — faqat bitta chekka bo'lakni hisoblash, 0,6 — qarama-qarshi hodisa, 0,25 — nisbatning o'zidan chiqarilgan taxmin. Javob: 0,4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tayoqcha-sinishi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#4037534a"
+    },
+    {
+      "q": "Uzunligi 20 sm bo'lgan tayoqcha tasodifiy nuqtadan sindirildi. Har ikkala bo'lak ham 4 sm dan uzun bo'lish ehtimoli qanday?",
+      "v": [
+        "0,8",
+        "0,4",
+        "0,6",
+        "0,2"
+      ],
+      "t": 2,
+      "izoh": "Sinish nuqtasi ikkala uchdan ham 4 sm uzoqda bo'lishi kerak, shuning uchun qulay oraliq 20 − 8 = 12 sm. P = 12 : 20 = 0,6. 0,8 — faqat bitta uchdan kesish, 0,4 — qarama-qarshi hodisa, 0,2 — 4 ni 20 ga bo'lib qo'ya qolish. Javob: 0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tayoqcha-sinishi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#26239a5b"
+    },
+    {
+      "q": "Tomoni 10 sm bo'lgan kvadratga ichki doira chizilgan va u kvadratdan to'rtta burchak sohasini ajratadi. Kvadratdagi tasodifiy nuqtaning chap yuqori burchak sohasiga tushish ehtimolini toping.",
+      "v": [
+        "(4 − π)/16",
+        "(4 − π)/4",
+        "π/16",
+        "(4 − π)/8"
+      ],
+      "t": 0,
+      "izoh": "Doiradan tashqarida qolgan yuza butun kvadratning (4 − π)/4 ulushini tashkil qiladi. Bu yuza to'rtta bir xil burchak sohasiga teng bo'linadi, shuning uchun belgilangan bitta burchak uchun P = (4 − π)/16 ≈ 0,054. (4 − π)/4 — to'rtala burchak birgalikda, π/16 — doiraning chorak qismi, (4 − π)/8 — burchaklarni ikkita deb sanash. Javob: (4 − π)/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-soha-ayirmasi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#57182767"
+    },
+    {
+      "q": "Uzunligi 30 m va eni 25 m bo'lgan hovlida yuzasi 150 m² bo'lgan uy va yuzasi 90 m² bo'lgan omborxona qurilgan. Hovliga tasodifiy qo'ngan qush binolarga emas, bo'sh yerga tushish ehtimoli qanday?",
+      "v": [
+        "0,32",
+        "0,68",
+        "0,8",
+        "0,2"
+      ],
+      "t": 1,
+      "izoh": "Hovli yuzasi 30·25 = 750 m². Binolar egallagan yuza 150 + 90 = 240 m², bo'sh yer esa 750 − 240 = 510 m². P = 510 : 750 = 0,68. 0,32 — binolarga tushish ehtimoli, 0,8 — faqat uyni ayirish, 0,2 — faqat uyning ulushi. Javob: 0,68.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-soha-ayirmasi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#66f86a87"
+    },
+    {
+      "q": "Yuzasi 400 sm² bo'lgan kvadrat plastinkada yuzasi 120 sm² bo'lgan uchburchak va yuzasi 80 sm² bo'lgan doira bo'yalgan, ular kesishmaydi. Plastinkaga tasodifiy tushgan nuqtaning bo'yalmagan qismda bo'lish ehtimoli qanday?",
+      "v": [
+        "0,3",
+        "0,2",
+        "0,5",
+        "0,8"
+      ],
+      "t": 2,
+      "izoh": "Bo'yalgan yuza 120 + 80 = 200 sm², bo'yalmagan yuza esa 400 − 200 = 200 sm². P = 200 : 400 = 0,5. 0,3 — faqat uchburchakning ulushi, 0,2 — faqat doiraning ulushi, 0,8 — faqat doirani ayirib hisoblash. Javob: 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-soha-ayirmasi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#64a373d9"
+    },
+    {
+      "q": "Aylana bo'ylab tasodifiy nuqta tanlandi. Uning markaziy burchagi 108° bo'lgan AB yoyida yotish ehtimoli nechaga teng?",
+      "v": [
+        "0,3",
+        "0,7",
+        "0,108",
+        "0,25"
+      ],
+      "t": 0,
+      "izoh": "Aylanadagi nuqtaning yoyga tushish ehtimoli yoy markaziy burchagining to'liq burchakka nisbatiga teng: 108 : 360 = 0,3. 0,7 — qolgan yoyning ehtimoli, 0,108 — burchakni 1000 ga bo'lish, 0,25 — yoyni chorak deb chamalash. Javob: 0,3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-yoyi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#1a5286ea"
+    },
+    {
+      "q": "Dumaloq hovuz atrofidagi yo'lkaning uzunligi 300 m bo'lib, uning 110 m qismi chiroqlar bilan yoritilgan. Yo'lkada tasodifiy joyda to'xtagan odam yoritilgan qismda bo'lish ehtimoli qanday?",
+      "v": [
+        "19/30",
+        "11/30",
+        "11/300",
+        "11/19"
+      ],
+      "t": 1,
+      "izoh": "Ehtimol yoy uzunliklarining nisbatiga teng: 110 : 300 = 11/30. 19/30 — qorong'i qismning ulushi, 11/300 — qisqartirishda o'nlik xatosi, 11/19 — yoritilgan qismni qorong'i qismga bo'lish. Javob: 11/30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-yoyi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#70e39e6c"
+    },
+    {
+      "q": "Soat siferblatida daqiqa mili tasodifiy holatda to'xtab qoldi. Uning 2 va 7 raqamlari orasidagi yoyda turgan bo'lish ehtimoli qanday?",
+      "v": [
+        "7/12",
+        "1/6",
+        "5/12",
+        "5/7"
+      ],
+      "t": 2,
+      "izoh": "Siferblat 12 ta teng bo'lakka bo'lingan, 2 dan 7 gacha bo'lgan yoy esa 5 ta bo'lakni qamrab oladi. P = 5 : 12. 7/12 — qolgan yoyning ulushi, 1/6 — atigi ikkita bo'lakni sanash, 5/7 — 5 ni 7 ga bo'lish xatosi. Javob: 5/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-yoyi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#47b9b7ff"
+    },
+    {
+      "q": "Radiusi 12 sm bo'lgan doira ichidan tasodifiy nuqta olindi. Bu nuqtaning doira markazidan ko'ra doira chizig'iga yaqinroq joylashgan bo'lish ehtimolini toping.",
+      "v": [
+        "0,75",
+        "0,5",
+        "0,25",
+        "0,125"
+      ],
+      "t": 0,
+      "izoh": "Nuqta markazdan r masofada bo'lsa, chiziqqa masofasi 12 − r bo'ladi. Chiziqqa yaqinroq bo'lish sharti 12 − r < r, ya'ni r > 6 sm. Bu radiusi 6 sm bo'lgan doiradan tashqaridagi soha, uning ehtimoli 1 − (6 : 12) nisbatining kvadrati, ya'ni 1 − 0,25 = 0,75. 0,5 — masofalarni chiziqli solishtirish, 0,25 — markazga yaqin bo'lish ehtimoli, 0,125 — nisbatni kubga oshirish. Javob: 0,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "markazga-yaqinlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#9ef0aa46"
+    },
+    {
+      "q": "Tomoni 20 sm bo'lgan kvadrat ichidan tasodifiy nuqta tanlandi. Uning kvadrat markazidan 5 sm dan uzoqroqda joylashgan bo'lish ehtimoli qanday?",
+      "v": [
+        "π/16",
+        "1 − π/16",
+        "1 − π/4",
+        "1 − π/8"
+      ],
+      "t": 1,
+      "izoh": "Markazdan 5 sm dan yaqin soha — radiusi 5 sm doira, uning yuzasi 25π sm². Kvadrat yuzasi 400 sm², shuning uchun yaqin bo'lish ehtimoli 25π : 400 = π/16. Kerakli hodisa qarama-qarshi: 1 − π/16 ≈ 0,8. π/16 — savolni teskari o'qish, 1 − π/4 — radiusni 10 sm deb olish, 1 − π/8 — doira yuzasini ikkiga bo'lish. Javob: 1 − π/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markazga-yaqinlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#53129a59"
+    },
+    {
+      "q": "Uzunligi 30 m va eni 18 m bo'lgan to'g'ri to'rtburchak basseynga tasodifiy sakragan odam basseyn chetidan 3 m dan uzoqroqda bo'lish ehtimoli qanday?",
+      "v": [
+        "7/15",
+        "4/5",
+        "8/15",
+        "2/3"
+      ],
+      "t": 2,
+      "izoh": "Chetdan 3 m dan uzoq soha 30 − 6 = 24 m va 18 − 6 = 12 m o'lchamli to'rtburchak, uning yuzasi 288 m². Basseyn yuzasi 30·18 = 540 m². P = 288 : 540 = 8/15. 7/15 — qarama-qarshi hodisa, 4/5 — faqat uzunlik bo'ylab kesish, 2/3 — enidan 3 m ni bir marta ayirish. Javob: 8/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markazga-yaqinlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#507779f3"
+    },
+    {
+      "q": "Teng tomonli uchburchakning o'rta chiziqlari uni to'rtta kichik uchburchakka ajratadi. Uchburchak ichidan tasodifiy tanlangan nuqtaning markaziy kichik uchburchakda bo'lish ehtimoli qanday?",
+      "v": [
+        "1/2",
+        "1/3",
+        "1/8",
+        "1/4"
+      ],
+      "t": 3,
+      "izoh": "O'rta chiziqlar hosil qilgan har bir kichik uchburchakning tomonlari asl uchburchak tomonlarining yarmiga teng, shuning uchun yuzalari nisbati 1 : 4 bo'ladi. To'rtta kichik uchburchak teng, demak markaziysi uchun P = 1/4. 1/2 — tomonlar nisbatini javob deb olish, 1/3 — markaziysini qolgan uchtasiga taqqoslash, 1/8 — yuzani yana ikkiga bo'lish. Javob: 1/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "markazga-yaqinlik",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#9051796a"
+    },
+    {
+      "q": "Stanokda kesilgan mixning uzunligi 59,4 mm dan 60,6 mm gacha oraliqda bir tekis taqsimlangan. Uzunligi 59,7 mm dan katta bo'lgan mix yaroqli sanaladi. Tasodifiy olingan mixning yaroqli bo'lish ehtimoli qanday?",
+      "v": [
+        "0,75",
+        "0,25",
+        "0,9",
+        "0,5"
+      ],
+      "t": 0,
+      "izoh": "Umumiy oraliq uzunligi 60,6 − 59,4 = 1,2 mm, yaroqli oraliq esa 60,6 − 59,7 = 0,9 mm. P = 0,9 : 1,2 = 0,75. 0,25 — brak mahsulotlar ulushi, 0,9 — oraliq uzunligining o'zini ehtimol deb yozish, 0,5 — oraliqlarni teng deb chamalash. Javob: 0,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "olchov-nazorat-oraligi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#511a6bfc"
+    },
+    {
+      "q": "Avtomat shishaga 0,94 litrdan 1,06 litrgacha tasodifiy miqdorda sut quyadi. Shishada kamida 1,02 litr sut bo'lish ehtimoli qanday?",
+      "v": [
+        "2/3",
+        "1/3",
+        "1/6",
+        "1/4"
+      ],
+      "t": 1,
+      "izoh": "Umumiy oraliq 1,06 − 0,94 = 0,12 litr, qulay oraliq esa 1,06 − 1,02 = 0,04 litr. P = 0,04 : 0,12 = 1/3. 2/3 — qarama-qarshi hodisa, 1/6 — qulay oraliqni 0,02 litr deb olish, 1/4 — umumiy oraliqni 0,16 litr deb hisoblash. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "olchov-nazorat-oraligi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#5ff85942"
+    },
+    {
+      "q": "Tarmoqdagi kuchlanish 210 V dan 250 V gacha tasodifiy qiymat oladi. Qurilma faqat 218 V dan 242 V gacha bo'lgan kuchlanishda ishlaydi. Qurilmaning ishlash ehtimolini toping.",
+      "v": [
+        "0,4",
+        "0,24",
+        "0,6",
+        "0,5"
+      ],
+      "t": 2,
+      "izoh": "Umumiy oraliq 250 − 210 = 40 V, qurilmaning ishchi oralig'i 242 − 218 = 24 V. P = 24 : 40 = 0,6. 0,4 — qurilma ishlamaydigan hollarning ulushi, 0,24 — oraliq kengligini ehtimol deb yozish, 0,5 — o'rtacha qiymatga qarab chamalash. Javob: 0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "olchov-nazorat-oraligi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#56303e31"
+    },
+    {
+      "q": "Avtobus soat 7:00 dan 7:30 gacha tasodifiy vaqtda bekatga kelib, to'xtamasdan jo'naydi. Yo'lovchi esa soat 7:10 dan 7:40 gacha tasodifiy vaqtda bekatga yetib keladi. Yo'lovchining avtobusga ulgurish ehtimoli qanday?",
+      "v": [
+        "1/3",
+        "4/9",
+        "1/9",
+        "2/9"
+      ],
+      "t": 3,
+      "izoh": "Avtobus kelishini soat 7:00 dan boshlab b, yo'lovchinikini esa u = (kelish vaqti) − 10 bilan belgilaymiz; ikkalasi ham nol dan 30 gacha o'zgaradi. Yo'lovchi ulgurishi uchun u + 10 ≤ b, ya'ni b − u ≥ 10 bo'lishi kerak. Tomoni 30 bo'lgan kvadratda bu shart katetlari 20 bo'lgan uchburchakni beradi, yuzasi 200. P = 200 : 900 = 2/9 ≈ 0,22. 1/3 — 10 daqiqani 30 ga bo'lib qo'ya qolish, 4/9 — uchburchak yuzasini ikkiga bo'lmaslik, 1/9 — yuzani yana ikkiga bo'lish. Javob: 2/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "olchov-nazorat-oraligi",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#86f402c9"
+    },
+    {
+      "q": "Birinchi o'yinda tomoni 20 sm bo'lgan kvadratdagi ichki doiraga, ikkinchisida esa radiusi 10 sm bo'lgan doiraga ichki chizilgan kvadratga tegish kerak. Qaysi o'yinda tegish ehtimoli katta va u nechaga teng?",
+      "v": [
+        "Birinchi o'yinda, π/4",
+        "Ikkinchi o'yinda, 2/π",
+        "Ikkalasida ham teng, 1/2",
+        "Ikkinchi o'yinda, π/4"
+      ],
+      "t": 0,
+      "izoh": "Birinchi holatda ichki doira radiusi 10 sm, yuzasi 100π sm², kvadrat yuzasi 400 sm², ehtimol 100π : 400 = π/4 ≈ 0,785. Ikkinchi holatda ichki kvadrat yuzasi 2R² = 200 sm², doira yuzasi 100π sm², ehtimol 200 : 100π = 2/π ≈ 0,637. Demak birinchi o'yinda ehtimol kattaroq. Ikkinchi variant — solishtirishda xato, uchinchisi — ikkala shaklni ham yarim deb chamalash, to'rtinchisi — qiymat bilan holatni chalkashtirish. Javob: birinchi o'yinda, π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-holatni-solishtirish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#b8691671"
+    },
+    {
+      "q": "Uzunligi 60 sm bo'lgan kesmadagi 15 sm li bo'lakka tushish ehtimoli bilan radiusi 8 sm bo'lgan doiradagi radiusi 4 sm li markaziy doiraga tushish ehtimolini solishtiring.",
+      "v": [
+        "Birinchisi katta, 0,25",
+        "Ikkalasi ham teng, 0,25",
+        "Ikkinchisi katta, 0,5",
+        "Ikkalasi ham teng, 0,5"
+      ],
+      "t": 1,
+      "izoh": "Kesmada ehtimol uzunliklar nisbatiga teng: 15 : 60 = 0,25. Doirada esa ehtimol radiuslar nisbatining kvadratiga teng: (4 : 8) ning kvadrati ham 0,25 ni beradi. Demak ikkala ehtimol ham teng. Birinchi variant — chiziqli va yuza nisbatlarini chalkashtirish, uchinchi va to'rtinchi variantlar — doirada radiuslar nisbatini kvadratga oshirmaslik natijasi. Javob: ikkalasi ham teng, 0,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-holatni-solishtirish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#b516bc32"
+    },
+    {
+      "q": "Kesmada tasodifiy nuqta tanlandi. Bu nuqtaning kesma o'rtasiga uning chap uchidan ko'ra yaqinroq bo'lish ehtimolini toping.",
+      "v": [
+        "1/2",
+        "1/4",
+        "3/4",
+        "2/3"
+      ],
+      "t": 2,
+      "izoh": "Kesma uzunligini L, nuqta o'rnini x deb olamiz. Nuqta o'rtaga yaqinroq bo'lishi uchun |x − L/2| < x shart bajarilishi kerak. Chap yarimda bu shart x > L/4 ni beradi, o'ng yarimda esa u har doim bajariladi. Qulay uzunlik L − L/4, demak P = 3/4. 1/2 — kesmani o'rtasidan bo'lib qo'ya qolish, 1/4 — qarama-qarshi hodisa, 2/3 — chegarani L/3 deb olish. Javob: 3/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-holatni-solishtirish",
+      "id": "matematika_disk_m13-geometrik-ehtimollik#478927d4"
+    }
+  ]
+}

@@ -1,0 +1,1506 @@
+{
+  "nom": "Olmoshlarning tuzilishi va qo'llanishi",
+  "bolim": "Olmosh",
+  "savollar": [
+    {
+      "q": "«u» olmoshi qaysi turkum o'rnida ishlatilgan?",
+      "v": [
+        "fe'l",
+        "sifat",
+        "ot",
+        "son"
+      ],
+      "t": 2,
+      "izoh": "«u» shaxsni ko'rsatib, «kim?» so'rog'iga javob beryapti; uning o'rniga shu ma'nodagi ot qo'yilishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#1110cc40"
+    },
+    {
+      "q": "«qaysi» olmoshi qaysi turkum o'rnida ishlatilgan?",
+      "v": [
+        "ravish",
+        "son",
+        "fe'l",
+        "sifat"
+      ],
+      "t": 3,
+      "izoh": "«qaysi» predmetning belgisi haqida so'roq bildiryapti; uning o'rniga shu ma'nodagi sifat qo'yilishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#5bbfe6c5"
+    },
+    {
+      "q": "«kimdir» olmoshi o'rnida qanday so'z kelishi mumkin?",
+      "v": [
+        "ot",
+        "sifat",
+        "son",
+        "fe'l"
+      ],
+      "t": 0,
+      "izoh": "«kimdir» shaxsni noaniq holda ko'rsatyapti; uning o'rniga shu ma'nodagi ot qo'yilishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#451729bd"
+    },
+    {
+      "q": "«shunday» olmoshi o'rnida qanday so'z kelishi mumkin?",
+      "v": [
+        "ot",
+        "son",
+        "sifat",
+        "fe'l"
+      ],
+      "t": 2,
+      "izoh": "«shunday» belgini ko'rsatib beryapti; uning o'rniga shu ma'nodagi sifat qo'yilishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#608710c5"
+    },
+    {
+      "q": "Quyidagilardan qaysisi sodda so'zga misol bo'la oladi?",
+      "v": [
+        "allanarsa",
+        "allaqancha",
+        "bu",
+        "allanima"
+      ],
+      "t": 2,
+      "izoh": "«bu» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblar boshqa guruhga oid: «allanarsa», «allaqancha» va «allanima» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#b2bb8efb"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida sodda so'z berilgan?",
+      "v": [
+        "allanarsa",
+        "allanima",
+        "nima",
+        "allakim"
+      ],
+      "t": 2,
+      "izoh": "«nima» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblar boshqa guruhga oid: «allanarsa», «allanima» va «allakim» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#5db081ab"
+    },
+    {
+      "q": "Quyidagilardan qaysisi sodda so'zga misol bo'la oladi?",
+      "v": [
+        "allaqachon",
+        "allanima",
+        "allaqayer",
+        "kim"
+      ],
+      "t": 3,
+      "izoh": "«kim» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblar boshqa guruhga oid: «allanima», «allaqayer» va «allaqachon» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#e759d740"
+    },
+    {
+      "q": "Quyidagilardan qaysisi sodda so'zga misol bo'la oladi?",
+      "v": [
+        "allanarsa",
+        "shunday",
+        "allaqaysi",
+        "allaqayer"
+      ],
+      "t": 1,
+      "izoh": "«shunday» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblar boshqa guruhga oid: «allanarsa», «allaqaysi» va «allaqayer» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#f6b0a310"
+    },
+    {
+      "q": "Qaysi so'z qo'shma so'z deb baholanadi?",
+      "v": [
+        "qancha",
+        "o'zing",
+        "nechta",
+        "allaqayer"
+      ],
+      "t": 3,
+      "izoh": "«allaqayer» — qo'shma so'z: u ikki qismning birikuvidan tuzilgan. Qolgan javoblar boshqa guruhga oid: «qancha», «o'zing» va «nechta» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#fc727f20"
+    },
+    {
+      "q": "Qaysi javobdagi so'z qo'shma so'z sanaladi?",
+      "v": [
+        "biz",
+        "nima",
+        "nechta",
+        "allaqayer"
+      ],
+      "t": 3,
+      "izoh": "«allaqayer» — qo'shma so'z: u ikki qismning birikuvidan tuzilgan. Qolgan javoblar boshqa guruhga oid: «nima», «nechta» va «biz» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#c4d63c83"
+    },
+    {
+      "q": "Qaysi so'z qo'shma so'z deb baholanadi?",
+      "v": [
+        "allaqancha",
+        "o'zing",
+        "men",
+        "ular"
+      ],
+      "t": 0,
+      "izoh": "«allaqancha» — qo'shma so'z: u «alla» va «qancha» qismlaridan tuzilgan. Qolgan javoblar boshqa guruhga oid: «o'zing», «men» va «ular» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#f3014346"
+    },
+    {
+      "q": "Berilganlardan qaysisi qo'shma so'z hisoblanadi?",
+      "v": [
+        "allakim",
+        "biz",
+        "qayer",
+        "o'zing"
+      ],
+      "t": 0,
+      "izoh": "«allakim» — qo'shma so'z: u «alla» va «kim» qismlaridan tuzilgan. Qolgan javoblar boshqa guruhga oid: «biz», «qayer» va «o'zing» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#da6a93ed"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "allakim",
+        "allaqachon",
+        "allaqancha",
+        "siz"
+      ],
+      "t": 3,
+      "izoh": "«siz» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan uchtasi esa qo'shma so'z: «allaqachon» — ikki qismning birikuvidan tuzilgan; «allaqancha» — «alla» va «qancha» qismlaridan tuzilgan; xuddi shunday «allakim» — «alla» va «kim».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#8bad7255"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "allaqanday",
+        "bu",
+        "allaqancha",
+        "allanarsa"
+      ],
+      "t": 1,
+      "izoh": "«bu» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan uchtasi esa qo'shma so'z: «allaqanday» — «alla» va «qanday» qismlaridan tuzilgan; xuddi shunday «allaqancha» — «alla» va «qancha»; «allanarsa» — «alla» va «narsa».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#9275432f"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "allaqayer",
+        "allaqaysi",
+        "qayer",
+        "allakim"
+      ],
+      "t": 2,
+      "izoh": "«qayer» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan uchtasi esa qo'shma so'z: «allaqayer» — ikki qismning birikuvidan tuzilgan; «allaqaysi» — «alla» va «qaysi» qismlaridan tuzilgan; xuddi shunday «allakim» — «alla» va «kim».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#6b20c7b5"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "hamma",
+        "allaqaysi",
+        "kim",
+        "men"
+      ],
+      "t": 1,
+      "izoh": "«allaqaysi» — qo'shma so'z: u «alla» va «qaysi» qismlaridan tuzilgan. Qolgan uchtasi esa sodda so'z: «hamma», «kim» va «men» — yaxlit, bo'linmaydigan bitta qismdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#3f8e2e6c"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "qaysi",
+        "sen",
+        "allanima",
+        "bu"
+      ],
+      "t": 2,
+      "izoh": "«allanima» — qo'shma so'z: u «alla» va «nima» qismlaridan tuzilgan. Qolgan uchtasi esa sodda so'z: «qaysi», «sen» va «bu» — yaxlit, bo'linmaydigan bitta qismdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#3d583ee4"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "allakim",
+        "hamma",
+        "men",
+        "bu"
+      ],
+      "t": 0,
+      "izoh": "«allakim» — qo'shma so'z: u «alla» va «kim» qismlaridan tuzilgan. Qolgan uchtasi esa sodda so'z: «hamma», «men» va «bu» — yaxlit, bo'linmaydigan bitta qismdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#50fedcd3"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "allaqachon",
+        "nima",
+        "sen",
+        "nechta"
+      ],
+      "t": 0,
+      "izoh": "«allaqachon» — qo'shma so'z: u ikki qismning birikuvidan tuzilgan. Qolgan uchtasi esa sodda so'z: «nechta», «nima» va «sen» — yaxlit, bo'linmaydigan bitta qismdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#eb76bbee"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "allaqaysi",
+        "allaqachon",
+        "allaqancha",
+        "o'zing"
+      ],
+      "t": 3,
+      "izoh": "«o'zing» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan uchtasi esa qo'shma so'z: «allaqachon» — ikki qismning birikuvidan tuzilgan; «allaqancha» — «alla» va «qancha» qismlaridan tuzilgan; xuddi shunday «allaqaysi» — «alla» va «qaysi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#c75bc6fc"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "hamma",
+        "bu",
+        "biz",
+        "allaqancha"
+      ],
+      "t": 3,
+      "izoh": "«allaqancha» — qo'shma so'z: u «alla» va «qancha» qismlaridan tuzilgan. Qolgan uchtasi esa sodda so'z: «hamma», «bu» va «biz» — yaxlit, bo'linmaydigan bitta qismdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#8ecf926e"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "nima",
+        "qachon",
+        "qanday",
+        "allanarsa"
+      ],
+      "t": 3,
+      "izoh": "«allanarsa» — qo'shma so'z: u «alla» va «narsa» qismlaridan tuzilgan. Qolgan uchtasi esa sodda so'z: «qachon», «qanday» va «nima» — yaxlit, bo'linmaydigan bitta qismdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#9275150f"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "allakim",
+        "qayer",
+        "shu",
+        "shunday"
+      ],
+      "t": 0,
+      "izoh": "«allakim» — qo'shma so'z: u «alla» va «kim» qismlaridan tuzilgan. Qolgan uchtasi esa sodda so'z: «shu», «qayer» va «shunday» — yaxlit, bo'linmaydigan bitta qismdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#df548f31"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "barcha",
+        "nechta",
+        "qancha",
+        "allaqaysi"
+      ],
+      "t": 3,
+      "izoh": "«allaqaysi» — qo'shma so'z: u «alla» va «qaysi» qismlaridan tuzilgan. Qolgan uchtasi esa sodda so'z: «barcha», «qancha» va «nechta» — yaxlit, bo'linmaydigan bitta qismdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#58340898"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "siz",
+        "allanima",
+        "allaqaysi",
+        "allanarsa"
+      ],
+      "t": 0,
+      "izoh": "«siz» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan uchtasi esa qo'shma so'z: «allaqaysi» — «alla» va «qaysi» qismlaridan tuzilgan; xuddi shunday «allanima» — «alla» va «nima»; «allanarsa» — «alla» va «narsa».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#8bf96728"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "allaqaysi",
+        "allanarsa",
+        "shuncha",
+        "allaqancha"
+      ],
+      "t": 2,
+      "izoh": "«shuncha» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan uchtasi esa qo'shma so'z: «allaqaysi» — «alla» va «qaysi» qismlaridan tuzilgan; xuddi shunday «allanarsa» — «alla» va «narsa»; «allaqancha» — «alla» va «qancha».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#97e4111f"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "allaqancha",
+        "shu",
+        "allaqaysi",
+        "allaqayer"
+      ],
+      "t": 1,
+      "izoh": "«shu» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan uchtasi esa qo'shma so'z: «allaqancha» — «alla» va «qancha» qismlaridan tuzilgan; xuddi shunday «allaqaysi» — «alla» va «qaysi»; «allaqayer» — ikki qismning birikuvidan tuzilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#9d284446"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "shunday",
+        "o'zing",
+        "qachon",
+        "allakim"
+      ],
+      "t": 3,
+      "izoh": "«allakim» — qo'shma so'z: u «alla» va «kim» qismlaridan tuzilgan. Qolgan uchtasi esa sodda so'z: «o'zing», «qachon» va «shunday» — yaxlit, bo'linmaydigan bitta qismdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#132151aa"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "allakim",
+        "allaqachon",
+        "nima",
+        "allaqayer"
+      ],
+      "t": 2,
+      "izoh": "«nima» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan uchtasi esa qo'shma so'z: «allaqachon» va «allaqayer» — ikki qismning birikuvidan tuzilgan; «allakim» — «alla» va «kim» qismlaridan tuzilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#8fd82cf3"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "qanday",
+        "allanarsa",
+        "allakim",
+        "allaqaysi"
+      ],
+      "t": 0,
+      "izoh": "«qanday» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan uchtasi esa qo'shma so'z: «allaqaysi» — «alla» va «qaysi» qismlaridan tuzilgan; xuddi shunday «allanarsa» — «alla» va «narsa»; «allakim» — «alla» va «kim».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#552f72f5"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "allakim",
+        "allaqancha",
+        "qancha",
+        "allanima"
+      ],
+      "t": 2,
+      "izoh": "«qancha» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan uchtasi esa qo'shma so'z: «allaqancha» — «alla» va «qancha» qismlaridan tuzilgan; xuddi shunday «allakim» — «alla» va «kim»; «allanima» — «alla» va «nima».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#de7cf0d5"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "kim",
+        "allanima",
+        "hamma",
+        "shu"
+      ],
+      "t": 1,
+      "izoh": "«allanima» — qo'shma so'z: u «alla» va «nima» qismlaridan tuzilgan. Qolgan uchtasi esa sodda so'z: «kim», «hamma» va «shu» — yaxlit, bo'linmaydigan bitta qismdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#5f0240ed"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "allaqanday",
+        "allaqaysi",
+        "o'zim",
+        "allanima"
+      ],
+      "t": 2,
+      "izoh": "«o'zim» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan uchtasi esa qo'shma so'z: «allaqaysi» — «alla» va «qaysi» qismlaridan tuzilgan; xuddi shunday «allaqanday» — «alla» va «qanday»; «allanima» — «alla» va «nima».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#041a99ee"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "allaqaysi",
+        "kim",
+        "allanima",
+        "allanarsa"
+      ],
+      "t": 1,
+      "izoh": "«kim» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan uchtasi esa qo'shma so'z: «allaqaysi» — «alla» va «qaysi» qismlaridan tuzilgan; xuddi shunday «allanima» — «alla» va «nima»; «allanarsa» — «alla» va «narsa».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#4e6e57a3"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "allanarsa",
+        "allanima",
+        "allaqaysi",
+        "o'zing"
+      ],
+      "t": 3,
+      "izoh": "«o'zing» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan uchtasi esa qo'shma so'z: «allanarsa» — «alla» va «narsa» qismlaridan tuzilgan; xuddi shunday «allanima» — «alla» va «nima»; «allaqaysi» — «alla» va «qaysi».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#205a5ff2"
+    },
+    {
+      "q": "«hech qanday» olmoshi qaysi qismlardan tuzilgan?",
+      "v": [
+        "«hech» va «qanday»",
+        "«hech» va «nima»",
+        "«hech» va «kim»",
+        "«har» va «narsa»"
+      ],
+      "t": 0,
+      "izoh": "«hech qanday» olmoshini ikkiga bo'lib o'qing: u «hech» va «qanday» qismlaridan tuzilgan; birinchi qism ma'noni o'zgartiruvchi qism sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#dd89fca9"
+    },
+    {
+      "q": "«har nima» olmoshini tashkil etgan qismlarni aniqlang.",
+      "v": [
+        "«hech» va «narsa»",
+        "«har» va «qanday»",
+        "«har» va «bir»",
+        "«har» va «nima»"
+      ],
+      "t": 3,
+      "izoh": "«har nima» olmoshini ikkiga bo'lib o'qing: u «har» va «nima» qismlaridan tuzilgan; birinchi qism ma'noni o'zgartiruvchi qism sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#d7bbbe89"
+    },
+    {
+      "q": "«har kim» olmoshi qaysi ikki qismning birikuvidan hosil bo'lgan?",
+      "v": [
+        "«har» va «kim»",
+        "«alla» va «narsa»",
+        "«hech» va «narsa»",
+        "«har» va «nima»"
+      ],
+      "t": 0,
+      "izoh": "«har kim» olmoshini ikkiga bo'lib o'qing: u «har» va «kim» qismlaridan tuzilgan; birinchi qism ma'noni o'zgartiruvchi qism sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#b9a53a9d"
+    },
+    {
+      "q": "«allanima» olmoshini tashkil etgan qismlarni aniqlang.",
+      "v": [
+        "«har» va «qanday»",
+        "«alla» va «narsa»",
+        "«alla» va «nima»",
+        "«har» va «bir»"
+      ],
+      "t": 2,
+      "izoh": "«allanima» olmoshini ikkiga bo'lib o'qing: u «alla» va «nima» qismlaridan tuzilgan; birinchi qism ma'noni o'zgartiruvchi qism sanaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#8ae142e7"
+    },
+    {
+      "q": "Qaysi javobdagi so'z qo'shma so'z sanaladi?",
+      "v": [
+        "o'zing",
+        "qayer",
+        "hamma",
+        "allaqaysi"
+      ],
+      "t": 3,
+      "izoh": "«allaqaysi» — qo'shma so'z: u «alla» va «qaysi» qismlaridan tuzilgan. Qolgan javoblar boshqa guruhga oid: «o'zing», «qayer» va «hamma» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#4c63187c"
+    },
+    {
+      "q": "Qaysi javobdagi so'z sodda so'z sanaladi?",
+      "v": [
+        "allaqancha",
+        "allaqayer",
+        "hamma",
+        "allanima"
+      ],
+      "t": 2,
+      "izoh": "«hamma» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblar boshqa guruhga oid: «allaqancha», «allaqayer» va «allanima» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#28346b1a"
+    },
+    {
+      "q": "Qaysi javobdagi so'z sodda so'z sanaladi?",
+      "v": [
+        "allakim",
+        "allanarsa",
+        "siz",
+        "allaqanday"
+      ],
+      "t": 2,
+      "izoh": "«siz» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblar boshqa guruhga oid: «allakim», «allanarsa» va «allaqanday» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#eedaebf6"
+    },
+    {
+      "q": "Quyidagilardan qaysisi sodda so'zga misol bo'la oladi?",
+      "v": [
+        "allanarsa",
+        "nechta",
+        "allaqachon",
+        "allanima"
+      ],
+      "t": 1,
+      "izoh": "«nechta» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblar boshqa guruhga oid: «allanarsa», «allanima» va «allaqachon» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#f214cbf6"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida qo'shma so'z berilgan?",
+      "v": [
+        "qachon",
+        "qancha",
+        "allanarsa",
+        "ular"
+      ],
+      "t": 2,
+      "izoh": "«allanarsa» — qo'shma so'z: u «alla» va «narsa» qismlaridan tuzilgan. Qolgan javoblar boshqa guruhga oid: «qachon», «qancha» va «ular» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#be6fa2e4"
+    },
+    {
+      "q": "Qaysi javobdagi so'z sodda so'z sanaladi?",
+      "v": [
+        "allaqancha",
+        "allaqanday",
+        "allaqachon",
+        "nima"
+      ],
+      "t": 3,
+      "izoh": "«nima» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblar boshqa guruhga oid: «allaqanday», «allaqachon» va «allaqancha» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#4ba02f8b"
+    },
+    {
+      "q": "Quyidagilardan qaysisi qo'shma so'zga misol bo'la oladi?",
+      "v": [
+        "ular",
+        "shuncha",
+        "bu",
+        "allaqayer"
+      ],
+      "t": 3,
+      "izoh": "«allaqayer» — qo'shma so'z: u ikki qismning birikuvidan tuzilgan. Qolgan javoblar boshqa guruhga oid: «shuncha», «bu» va «ular» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#25e5d12b"
+    },
+    {
+      "q": "Qaysi so'z sodda so'z deb baholanadi?",
+      "v": [
+        "qayer",
+        "allanarsa",
+        "allaqayer",
+        "allaqancha"
+      ],
+      "t": 0,
+      "izoh": "«qayer» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblar boshqa guruhga oid: «allanarsa», «allaqayer» va «allaqancha» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#799cb44f"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida qo'shma so'z berilgan?",
+      "v": [
+        "shunday",
+        "shuncha",
+        "kim",
+        "allaqayer"
+      ],
+      "t": 3,
+      "izoh": "«allaqayer» — qo'shma so'z: u ikki qismning birikuvidan tuzilgan. Qolgan javoblar boshqa guruhga oid: «shuncha», «kim» va «shunday» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#887306d3"
+    },
+    {
+      "q": "Qaysi so'z qo'shma so'z deb baholanadi?",
+      "v": [
+        "kim",
+        "allaqaysi",
+        "barcha",
+        "qanday"
+      ],
+      "t": 1,
+      "izoh": "«allaqaysi» — qo'shma so'z: u «alla» va «qaysi» qismlaridan tuzilgan. Qolgan javoblar boshqa guruhga oid: «kim», «barcha» va «qanday» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#e49c0dcd"
+    },
+    {
+      "q": "Qaysi so'z qo'shma so'z deb baholanadi?",
+      "v": [
+        "kim",
+        "allanima",
+        "o'zing",
+        "qancha"
+      ],
+      "t": 1,
+      "izoh": "«allanima» — qo'shma so'z: u «alla» va «nima» qismlaridan tuzilgan. Qolgan javoblar boshqa guruhga oid: «kim», «o'zing» va «qancha» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#d693f5ab"
+    },
+    {
+      "q": "Berilganlardan qaysisi sodda so'z hisoblanadi?",
+      "v": [
+        "nechta",
+        "allanima",
+        "allakim",
+        "allaqancha"
+      ],
+      "t": 0,
+      "izoh": "«nechta» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblar boshqa guruhga oid: «allanima», «allakim» va «allaqancha» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#3a89e4a1"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham qo'shma so'zga misol bo'ladi?",
+      "v": [
+        "allaqayer, allakim, o'zim",
+        "shuncha, allakim, allaqaysi",
+        "allaqachon, allakim, allanarsa",
+        "u, allaqayer, allakim"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri qatordagi uchala so'z ham qo'shma so'z: «allaqachon» — ikki qismning birikuvidan tuzilgan; «allakim» — «alla» va «kim» qismlaridan tuzilgan; xuddi shunday «allanarsa» — «alla» va «narsa». Qolgan qatorlarga begona so'z aralashgan: «o'zim», «shuncha» va «u» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#0e62bac5"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham qo'shma so'zga misol bo'ladi?",
+      "v": [
+        "men, allanima, allaqachon",
+        "allaqanday, allaqancha, qayer",
+        "allaqayer, allaqaysi, u",
+        "allanima, allakim, allaqaysi"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham qo'shma so'z: «allanima» — «alla» va «nima» qismlaridan tuzilgan; xuddi shunday «allakim» — «alla» va «kim»; «allaqaysi» — «alla» va «qaysi». Qolgan qatorlarga begona so'z aralashgan: «men», «u» va «qayer» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#eb86f63f"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar qo'shma so'z sanaladi?",
+      "v": [
+        "siz, allaqayer, allakim",
+        "allanarsa, allanima, allakim",
+        "o'zi, allaqanday, allanarsa",
+        "o'zim, allaqachon, allaqaysi"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham qo'shma so'z: «allanarsa» — «alla» va «narsa» qismlaridan tuzilgan; xuddi shunday «allanima» — «alla» va «nima»; «allakim» — «alla» va «kim». Qolgan qatorlarga begona so'z aralashgan: «siz», «o'zi» va «o'zim» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#c0fc95d5"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham qo'shma so'zga misol bo'ladi?",
+      "v": [
+        "u, allanima, allaqanday",
+        "o'zi, allaqaysi, allanima",
+        "bu, allanima, allaqayer",
+        "allanima, allakim, allaqancha"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham qo'shma so'z: «allanima» — «alla» va «nima» qismlaridan tuzilgan; xuddi shunday «allakim» — «alla» va «kim»; «allaqancha» — «alla» va «qancha». Qolgan qatorlarga begona so'z aralashgan: «u», «bu» va «o'zi» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#b627fa17"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq qo'shma so'zga oid?",
+      "v": [
+        "allanima, nechta, allaqachon",
+        "allakim, allaqanday, o'zi",
+        "allaqayer, allakim, allanima",
+        "allaqachon, u, allanima"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri qatordagi uchala so'z ham qo'shma so'z: «allaqayer» — ikki qismning birikuvidan tuzilgan; «allakim» — «alla» va «kim» qismlaridan tuzilgan; xuddi shunday «allanima» — «alla» va «nima». Qolgan qatorlarga begona so'z aralashgan: «nechta», «o'zi» va «u» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#a436e028"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq qo'shma so'zga oid?",
+      "v": [
+        "allaqancha, sen, allaqaysi",
+        "allaqanday, allaqaysi, allaqachon",
+        "allakim, allaqanday, shu",
+        "allaqayer, allaqaysi, qanday"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham qo'shma so'z: «allaqanday» — «alla» va «qanday» qismlaridan tuzilgan; xuddi shunday «allaqaysi» — «alla» va «qaysi»; «allaqachon» — ikki qismning birikuvidan tuzilgan. Qolgan qatorlarga begona so'z aralashgan: «sen», «qanday» va «shu» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#07367ed2"
+    },
+    {
+      "q": "Qaysi qatorda faqat sodda so'z berilgan?",
+      "v": [
+        "allaqachon, o'zing, sen",
+        "bu, siz, allaqancha",
+        "allakim, ular, nima",
+        "shu, shunday, qanday"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham sodda so'z: «shu», «shunday» va «qanday» — yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan qatorlarga begona so'z aralashgan: «allaqachon», «allakim» va «allaqancha» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#bfb46022"
+    },
+    {
+      "q": "Qaysi qatorda faqat sodda so'z berilgan?",
+      "v": [
+        "kim, siz, allaqancha",
+        "allanarsa, shu, o'zim",
+        "biz, qanday, sen",
+        "men, o'zing, allaqayer"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri qatordagi uchala so'z ham sodda so'z: «biz», «qanday» va «sen» — yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan qatorlarga begona so'z aralashgan: «allanarsa», «allaqancha» va «allaqayer» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#f4102b1d"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar qo'shma so'z sanaladi?",
+      "v": [
+        "allaqayer, allaqachon, o'zing",
+        "allaqancha, allaqaysi, allaqayer",
+        "allaqachon, nechta, allaqanday",
+        "qaysi, allaqaysi, allanarsa"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham qo'shma so'z: «allaqancha» — «alla» va «qancha» qismlaridan tuzilgan; xuddi shunday «allaqaysi» — «alla» va «qaysi»; «allaqayer» — ikki qismning birikuvidan tuzilgan. Qolgan qatorlarga begona so'z aralashgan: «o'zing», «nechta» va «qaysi» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#28fc6b06"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar qo'shma so'z sanaladi?",
+      "v": [
+        "allaqancha, nima, allanima",
+        "allanarsa, allanima, allaqanday",
+        "o'zing, allakim, allaqachon",
+        "shunday, allaqanday, allaqachon"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham qo'shma so'z: «allanarsa» — «alla» va «narsa» qismlaridan tuzilgan; xuddi shunday «allanima» — «alla» va «nima»; «allaqanday» — «alla» va «qanday». Qolgan qatorlarga begona so'z aralashgan: «nima», «o'zing» va «shunday» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#8cfcd92d"
+    },
+    {
+      "q": "Qaysi qatorda faqat sodda so'z berilgan?",
+      "v": [
+        "nechta, qaysi, hamma",
+        "qanday, allaqancha, barcha",
+        "allanarsa, kim, sen",
+        "nima, allaqaysi, men"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham sodda so'z: «nechta», «qaysi» va «hamma» — yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan qatorlarga begona so'z aralashgan: «allaqaysi», «allaqancha» va «allanarsa» — qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#d684863a"
+    },
+    {
+      "q": "Qaysi qatorda faqat qo'shma so'z berilgan?",
+      "v": [
+        "allaqaysi, allaqanday, shu",
+        "allaqayer, allaqaysi, allaqanday",
+        "allaqachon, allanima, nechta",
+        "allanarsa, o'zi, allaqanday"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham qo'shma so'z: «allaqayer» — ikki qismning birikuvidan tuzilgan; «allaqaysi» — «alla» va «qaysi» qismlaridan tuzilgan; xuddi shunday «allaqanday» — «alla» va «qanday». Qolgan qatorlarga begona so'z aralashgan: «shu», «nechta» va «o'zi» — sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#1efaeb7e"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«qanday» — sodda so'z",
+        "«qancha» — qo'shma so'z",
+        "«qaysi» — qo'shma so'z",
+        "«allaqaysi» — sodda so'z"
+      ],
+      "t": 0,
+      "izoh": "«qanday» — sodda so'z, chunki u yaxlit, bo'linmaydigan bitta qismdan iborat. Boshqa javoblarda baho chalkashtirilgan: «qancha» va «qaysi» aslida sodda so'z; «allaqaysi» aslida qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#6b877609"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«biz» — qo'shma so'z",
+        "«allakim» — qo'shma so'z",
+        "«qachon» — qo'shma so'z",
+        "«siz» — qo'shma so'z"
+      ],
+      "t": 1,
+      "izoh": "«allakim» — qo'shma so'z, chunki u «alla» va «kim» qismlaridan tuzilgan. Boshqa javoblarda baho chalkashtirilgan: «biz», «qachon» va «siz» aslida sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#de5724ea"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«qayer» — sodda so'z",
+        "«barcha» — qo'shma so'z",
+        "«qancha» — qo'shma so'z",
+        "«siz» — qo'shma so'z"
+      ],
+      "t": 0,
+      "izoh": "«qayer» — sodda so'z, chunki u yaxlit, bo'linmaydigan bitta qismdan iborat. Boshqa javoblarda baho chalkashtirilgan: «siz», «barcha» va «qancha» aslida sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#e8b0df4e"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«allaqayer» — qo'shma so'z",
+        "«qachon» — qo'shma so'z",
+        "«allaqaysi» — sodda so'z",
+        "«allaqancha» — sodda so'z"
+      ],
+      "t": 0,
+      "izoh": "«allaqayer» — qo'shma so'z, chunki u ikki qismning birikuvidan tuzilgan. Boshqa javoblarda baho chalkashtirilgan: «allaqaysi» va «allaqancha» aslida qo'shma so'z; «qachon» aslida sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#1ce0e253"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«ular» — sodda so'z",
+        "«allanarsa» — sodda so'z",
+        "«qachon» — qo'shma so'z",
+        "«allanima» — sodda so'z"
+      ],
+      "t": 0,
+      "izoh": "«ular» — sodda so'z, chunki u yaxlit, bo'linmaydigan bitta qismdan iborat. Boshqa javoblarda baho chalkashtirilgan: «qachon» aslida sodda so'z; «allanarsa» va «allanima» aslida qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#a4087756"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«har qaysi» — sodda so'z",
+        "«har narsa» — sodda so'z",
+        "«har qanaqa» — qo'shma so'z",
+        "«har bir» — sodda so'z"
+      ],
+      "t": 2,
+      "izoh": "«har qanaqa» — qo'shma so'z, chunki u ikki qismning birikuvidan tuzilgan. Boshqa javoblarda baho chalkashtirilgan: «har qaysi», «har narsa» va «har bir» aslida qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#f777d116"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«shu» — qo'shma so'z",
+        "«nechta» — sodda so'z",
+        "«ular» — qo'shma so'z",
+        "«qayer» — qo'shma so'z"
+      ],
+      "t": 1,
+      "izoh": "«nechta» — sodda so'z, chunki u yaxlit, bo'linmaydigan bitta qismdan iborat. Boshqa javoblarda baho chalkashtirilgan: «shu», «ular» va «qayer» aslida sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#d64647c0"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«qachon» — qo'shma so'z",
+        "«o'zim» — qo'shma so'z",
+        "«siz» — qo'shma so'z",
+        "«hamma» — sodda so'z"
+      ],
+      "t": 3,
+      "izoh": "«hamma» — sodda so'z, chunki u yaxlit, bo'linmaydigan bitta qismdan iborat. Boshqa javoblarda baho chalkashtirilgan: «o'zim», «siz» va «qachon» aslida sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#82487b73"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«allaqaysi» — sodda so'z",
+        "«shunday» — sodda so'z",
+        "«allaqayer» — sodda so'z",
+        "«allaqachon» — sodda so'z"
+      ],
+      "t": 1,
+      "izoh": "«shunday» — sodda so'z, chunki u yaxlit, bo'linmaydigan bitta qismdan iborat. Boshqa javoblarda baho chalkashtirilgan: «allaqaysi», «allaqayer» va «allaqachon» aslida qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#a7e7b980"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«shuncha» — qo'shma so'z",
+        "«o'zim» — sodda so'z",
+        "«nechta» — qo'shma so'z",
+        "«qachon» — qo'shma so'z"
+      ],
+      "t": 1,
+      "izoh": "«o'zim» — sodda so'z, chunki u yaxlit, bo'linmaydigan bitta qismdan iborat. Boshqa javoblarda baho chalkashtirilgan: «shuncha», «nechta» va «qachon» aslida sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#26aca52c"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«ular» — qo'shma so'z",
+        "«allanarsa» — qo'shma so'z",
+        "«men» — qo'shma so'z",
+        "«u» — qo'shma so'z"
+      ],
+      "t": 1,
+      "izoh": "«allanarsa» — qo'shma so'z, chunki u «alla» va «narsa» qismlaridan tuzilgan. Boshqa javoblarda baho chalkashtirilgan: «ular», «men» va «u» aslida sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#d1bc9c0b"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«allaqancha» — sodda so'z",
+        "«qachon» — qo'shma so'z",
+        "«u» — sodda so'z",
+        "«allaqanday» — sodda so'z"
+      ],
+      "t": 2,
+      "izoh": "«u» — sodda so'z, chunki u yaxlit, bo'linmaydigan bitta qismdan iborat. Boshqa javoblarda baho chalkashtirilgan: «qachon» aslida sodda so'z; «allaqancha» va «allaqanday» aslida qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#b56dda82"
+    },
+    {
+      "q": "Qaysi javobdagi olmosh inkor ma'nosini ifodalaydi?",
+      "v": [
+        "hech nima",
+        "qaysi bir",
+        "har qanday",
+        "har narsa"
+      ],
+      "t": 0,
+      "izoh": "«hech nima» «hech» va «nima» qismlaridan tuzilgan; boshlang'ich qismi «hech» bo'lgani uchun u bo'lishsizlik olmoshi sanaladi. Qolgan javoblarda boshqa qismlar turibdi: «har narsa», «har qanday», «qaysi bir».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#da43bbe2"
+    },
+    {
+      "q": "Qaysi olmosh predmet yoki shaxsning yo'qligini bildiradi?",
+      "v": [
+        "har qanday",
+        "hech qanday",
+        "har qaysi",
+        "qaysi bir"
+      ],
+      "t": 1,
+      "izoh": "«hech qanday» «hech» va «qanday» qismlaridan tuzilgan; boshlang'ich qismi «hech» bo'lgani uchun u bo'lishsizlik olmoshi sanaladi. Qolgan javoblarda boshqa qismlar turibdi: «har qaysi», «har qanday», «qaysi bir».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#428281cb"
+    },
+    {
+      "q": "Qaysi olmosh predmetlarni ayirib, umumlashtirib ko'rsatadi?",
+      "v": [
+        "qaysi bir",
+        "hech qanday",
+        "hech narsa",
+        "har narsa"
+      ],
+      "t": 3,
+      "izoh": "«har narsa» «har» va «narsa» qismlaridan tuzilgan; boshlang'ich qismi «har» bo'lgani uchun u belgilash olmoshi sanaladi. Qolgan javoblarda boshqa qismlar turibdi: «hech narsa», «hech qanday», «qaysi bir».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#0aec7da6"
+    },
+    {
+      "q": "Quyidagilardan qaysisi belgilash olmoshi sanaladi?",
+      "v": [
+        "hech nima",
+        "hech qanday",
+        "qaysi bir",
+        "har nima"
+      ],
+      "t": 3,
+      "izoh": "«har nima» «har» va «nima» qismlaridan tuzilgan; boshlang'ich qismi «har» bo'lgani uchun u belgilash olmoshi sanaladi. Qolgan javoblarda boshqa qismlar turibdi: «hech nima», «hech qanday», «qaysi bir».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#f80ec484"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida qo'shma so'z bo'lmagan so'z bor?",
+      "v": [
+        "allanima, allaqaysi, allakim",
+        "allaqaysi, allaqanday, allanima",
+        "allanarsa, ular, allaqayer",
+        "allaqayer, allaqachon, allakim"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «ular» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Yonidagi «allanarsa» va «allaqayer» esa qo'shma so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#e596708b"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri sodda so'z emas?",
+      "v": [
+        "o'zing, o'zim, shu",
+        "shu, qanday, nechta",
+        "u, allanarsa, biz",
+        "qancha, bu, qachon"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «allanarsa» — qo'shma so'z: u «alla» va «narsa» qismlaridan tuzilgan. Yonidagi «biz» va «u» esa sodda so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#763d8d8b"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri sodda so'z emas?",
+      "v": [
+        "allaqanday, qayer, shu",
+        "qachon, nima, u",
+        "nima, o'zi, o'zim",
+        "o'zing, barcha, qaysi"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javobdagi «allaqanday» — qo'shma so'z: u «alla» va «qanday» qismlaridan tuzilgan. Yonidagi «qayer» va «shu» esa sodda so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#c6a2c0f8"
+    },
+    {
+      "q": "Uch qatorda faqat qo'shma so'z berilgan. Qaysi qatorga begona so'z aralashgan?",
+      "v": [
+        "allaqayer, allaqancha, allanarsa",
+        "allakim, allaqaysi, o'zing",
+        "allaqaysi, allaqachon, allaqancha",
+        "allanima, allaqachon, allaqanday"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «o'zing» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Yonidagi «allakim» va «allaqaysi» esa qo'shma so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#786abfb4"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida qo'shma so'z bo'lmagan so'z bor?",
+      "v": [
+        "allaqaysi, allaqanday, allanima",
+        "allaqachon, allaqaysi, allaqanday",
+        "allaqanday, nima, allakim",
+        "allanarsa, allanima, allaqanday"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «nima» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Yonidagi «allakim» va «allaqanday» esa qo'shma so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#d3e6513c"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri sodda so'z emas?",
+      "v": [
+        "bu, shuncha, shu",
+        "allanarsa, qayer, qanday",
+        "o'zi, bu, sen",
+        "nechta, qaysi, o'zing"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «allanarsa» — qo'shma so'z: u «alla» va «narsa» qismlaridan tuzilgan. Yonidagi «qayer» va «qanday» esa sodda so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#d4e69e64"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq sodda so'zdan iborat emas?",
+      "v": [
+        "qayer, allaqachon, nima",
+        "shuncha, qancha, ular",
+        "barcha, o'zim, nechta",
+        "u, qanday, sen"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javobdagi «allaqachon» — qo'shma so'z: u ikki qismning birikuvidan tuzilgan. Yonidagi «qayer» va «nima» esa sodda so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#18a3c25c"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq qo'shma so'zdan iborat emas?",
+      "v": [
+        "allaqaysi, allaqanday, allanima",
+        "allaqancha, allanarsa, allaqanday",
+        "allaqachon, allakim, shu",
+        "allaqayer, allanarsa, allaqancha"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «shu» — sodda so'z: u yaxlit, bo'linmaydigan bitta qismdan iborat. Yonidagi «allakim» va «allaqachon» esa qo'shma so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#3ba9aab3"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri sodda so'z emas?",
+      "v": [
+        "o'zing, qancha, o'zi",
+        "hamma, qachon, shuncha",
+        "shu, siz, allaqaysi",
+        "nima, shuncha, kim"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «allaqaysi» — qo'shma so'z: u «alla» va «qaysi» qismlaridan tuzilgan. Yonidagi «shu» va «siz» esa sodda so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#1127b9b3"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq sodda so'zdan iborat emas?",
+      "v": [
+        "ular, u, barcha",
+        "shu, bu, o'zing",
+        "shuncha, u, hamma",
+        "sen, u, allaqachon"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «allaqachon» — qo'shma so'z: u ikki qismning birikuvidan tuzilgan. Yonidagi «u» va «sen» esa sodda so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#098c9601"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida sodda so'z bo'lmagan so'z bor?",
+      "v": [
+        "bu, shuncha, o'zing",
+        "barcha, allaqayer, hamma",
+        "kim, hamma, barcha",
+        "siz, qayer, o'zing"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «allaqayer» — qo'shma so'z: u ikki qismning birikuvidan tuzilgan. Yonidagi «hamma» va «barcha» esa sodda so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#f92b322f"
+    },
+    {
+      "q": "Uch qatorda faqat sodda so'z berilgan. Qaysi qatorga begona so'z aralashgan?",
+      "v": [
+        "men, o'zim, shuncha",
+        "qanday, kim, allanima",
+        "shuncha, o'zim, qanday",
+        "o'zim, nechta, ular"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «allanima» — qo'shma so'z: u «alla» va «nima» qismlaridan tuzilgan. Yonidagi «kim» va «qanday» esa sodda so'z. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#52e64abd"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«allaqaysi» — qo'shma so'z",
+        "«allakim» — sodda so'z",
+        "«qaysi» — sodda so'z",
+        "«kim» — sodda so'z"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «allakim» so'ziga sodda so'z deb baho berilgan, holbuki u — qo'shma so'z: «alla» va «kim» qismlaridan tuzilgan. Qolgan javoblardagi baho o'rinli: «allaqaysi» rostdan ham qo'shma so'z; «qaysi» va «kim» rostdan ham sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#84bf1c4c"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«o'zi» — qo'shma so'z",
+        "«allaqanday» — qo'shma so'z",
+        "«barcha» — sodda so'z",
+        "«nechta» — sodda so'z"
+      ],
+      "t": 0,
+      "izoh": "Bu javobda «o'zi» so'ziga qo'shma so'z deb baho berilgan, holbuki u — sodda so'z: yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblardagi baho o'rinli: «nechta» va «barcha» rostdan ham sodda so'z; «allaqanday» rostdan ham qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#b3ed8f65"
+    },
+    {
+      "q": "Qaysi javobdagi baho noto'g'ri berilgan?",
+      "v": [
+        "«qanday» — qo'shma so'z",
+        "«o'zing» — sodda so'z",
+        "«ular» — sodda so'z",
+        "«allaqachon» — qo'shma so'z"
+      ],
+      "t": 0,
+      "izoh": "Bu javobda «qanday» so'ziga qo'shma so'z deb baho berilgan, holbuki u — sodda so'z: yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblardagi baho o'rinli: «ular» va «o'zing» rostdan ham sodda so'z; «allaqachon» rostdan ham qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#82bda783"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«shunday» — qo'shma so'z",
+        "«allaqayer» — qo'shma so'z",
+        "«qayer» — sodda so'z",
+        "«allaqancha» — qo'shma so'z"
+      ],
+      "t": 0,
+      "izoh": "Bu javobda «shunday» so'ziga qo'shma so'z deb baho berilgan, holbuki u — sodda so'z: yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblardagi baho o'rinli: «qayer» rostdan ham sodda so'z; «allaqayer» va «allaqancha» rostdan ham qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#8fbb2a3b"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi xato?",
+      "v": [
+        "«u» — qo'shma so'z",
+        "«o'zim» — sodda so'z",
+        "«allaqanday» — qo'shma so'z",
+        "«men» — sodda so'z"
+      ],
+      "t": 0,
+      "izoh": "Bu javobda «u» so'ziga qo'shma so'z deb baho berilgan, holbuki u — sodda so'z: yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblardagi baho o'rinli: «o'zim» va «men» rostdan ham sodda so'z; «allaqanday» rostdan ham qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#3a8522ed"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«allaqancha» — sodda so'z",
+        "«shunday» — sodda so'z",
+        "«bu» — sodda so'z",
+        "«allaqaysi» — qo'shma so'z"
+      ],
+      "t": 0,
+      "izoh": "Bu javobda «allaqancha» so'ziga sodda so'z deb baho berilgan, holbuki u — qo'shma so'z: «alla» va «qancha» qismlaridan tuzilgan. Qolgan javoblardagi baho o'rinli: «bu» va «shunday» rostdan ham sodda so'z; «allaqaysi» rostdan ham qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#8702158f"
+    },
+    {
+      "q": "Qaysi javobdagi baho noto'g'ri berilgan?",
+      "v": [
+        "«sen» — sodda so'z",
+        "«allaqachon» — qo'shma so'z",
+        "«allaqaysi» — qo'shma so'z",
+        "«nima» — qo'shma so'z"
+      ],
+      "t": 3,
+      "izoh": "Bu javobda «nima» so'ziga qo'shma so'z deb baho berilgan, holbuki u — sodda so'z: yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblardagi baho o'rinli: «sen» rostdan ham sodda so'z; «allaqachon» va «allaqaysi» rostdan ham qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#3065fdaf"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«shuncha» — sodda so'z",
+        "«bu» — sodda so'z",
+        "«allaqayer» — sodda so'z",
+        "«hamma» — sodda so'z"
+      ],
+      "t": 2,
+      "izoh": "Bu javobda «allaqayer» so'ziga sodda so'z deb baho berilgan, holbuki u — qo'shma so'z: ikki qismning birikuvidan tuzilgan. Qolgan javoblardagi baho o'rinli: «shuncha», «bu» va «hamma» rostdan ham sodda so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#d9802977"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi xato?",
+      "v": [
+        "«kim» — sodda so'z",
+        "«qancha» — sodda so'z",
+        "«allaqancha» — qo'shma so'z",
+        "«o'zing» — qo'shma so'z"
+      ],
+      "t": 3,
+      "izoh": "Bu javobda «o'zing» so'ziga qo'shma so'z deb baho berilgan, holbuki u — sodda so'z: yaxlit, bo'linmaydigan bitta qismdan iborat. Qolgan javoblardagi baho o'rinli: «kim» va «qancha» rostdan ham sodda so'z; «allaqancha» rostdan ham qo'shma so'z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m21-olmoshlarning-tuzilishi#b049d768"
+    }
+  ]
+}

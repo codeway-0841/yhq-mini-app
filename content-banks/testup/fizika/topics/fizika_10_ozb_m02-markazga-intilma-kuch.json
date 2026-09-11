@@ -1,0 +1,456 @@
+{
+  "nom": "02-mavzu. Markazga Intilma Kuch",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Markazga intilma kuch deb qanday kuchga aytiladi?",
+      "v": [
+        "Jismning chiziqli tezlik vektoriga tik yo'nalgan bo'lib, uni aylanma harakatga keltiruvchi kuchga",
+        "Jismni aylana markazidan uzoqlashtiruvchi kuchga",
+        "Jismning tezlik modulini oshiruvchi kuchga",
+        "Jismni to'g'ri chiziqli harakatga keltiruvchi kuchga"
+      ],
+      "t": 0,
+      "izoh": "Markazga intilma kuch chiziqli tezlik vektoriga tik yo'nalgan bo'lib, jismni aylanma harakatga keltiruvchi kuchdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#ab6c342e"
+    },
+    {
+      "q": "Markazga intilma kuchning formulasi qaysi?",
+      "v": [
+        "F = mυ²/R",
+        "F = mυ/R",
+        "F = mυ²R",
+        "F = mυR²"
+      ],
+      "t": 0,
+      "izoh": "F(m.i) = mυ²/R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#d45e2ef7"
+    },
+    {
+      "q": "Markazga intilma kuchni burchak tezlik orqali ifodalovchi formula qaysi?",
+      "v": [
+        "F = mω²R",
+        "F = mωR",
+        "F = mω²/R",
+        "F = mω/R²"
+      ],
+      "t": 0,
+      "izoh": "υ=ωR bo'lgani uchun F(m.i) = mω²R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#1483b8ad"
+    },
+    {
+      "q": "Aylana bo'ylab harakatda markazga intilma tezlanish qanday yo'nalgan?",
+      "v": [
+        "Aylana markaziga yo'nalgan",
+        "Aylana markazidan tashqariga yo'nalgan",
+        "Harakat yo'nalishida",
+        "Traektoriyaga urinma bo'ylab"
+      ],
+      "t": 0,
+      "izoh": "Markazga intilma tezlanish har doim aylana markaziga yo'nalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#8131afea"
+    },
+    {
+      "q": "Markazga intilma kuch chiziqli tezlik vektorining nimasini o'zgartiradi?",
+      "v": [
+        "Yo'nalishini",
+        "Modulini",
+        "Boshlang'ich qiymatini",
+        "O'lchov birligini"
+      ],
+      "t": 0,
+      "izoh": "Markazga intilma kuch tezlik vektorining yo'nalishini o'zgartiradi, ammo modulini o'zgartirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#69bd3279"
+    },
+    {
+      "q": "Markazga intilma kuch alohida turdagi kuchmi?",
+      "v": [
+        "Yo'q, u jismni aylanma harakatga keltiruvchi natijaviy kuchdir",
+        "Ha, u mustaqil tabiiy kuch turidir",
+        "Ha, u tortishish kuchining bir ko'rinishidir",
+        "Ha, u ishqalanish kuchining bir turidir"
+      ],
+      "t": 0,
+      "izoh": "Markazga intilma kuch alohida turdagi kuch emas; u jismni aylanma harakatga keltiruvchi natijaviy kuchdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#fa4dab7a"
+    },
+    {
+      "q": "Ipga mahkamlangan jismning aylana bo'ylab harakatida markazga intilma kuch vazifasini nima bajaradi?",
+      "v": [
+        "Ipning taranglik kuchi",
+        "Jismning og'irlik kuchi",
+        "Havoning qarshilik kuchi",
+        "Ipning ishqalanish kuchi"
+      ],
+      "t": 0,
+      "izoh": "Bu holda markazga intilma kuchga ipning taranglik kuchi misol bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#830dee39"
+    },
+    {
+      "q": "Markazdan qochma kuch qanday yo'nalgan?",
+      "v": [
+        "Radius bo'ylab aylana markazidan tashqariga",
+        "Radius bo'ylab aylana markaziga",
+        "Tezlik vektori bo'ylab",
+        "Vertikal pastga"
+      ],
+      "t": 0,
+      "izoh": "Markazdan qochma kuch radius bo'ylab aylana markazidan shar tomon yo'nalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#7b299562"
+    },
+    {
+      "q": "Ipga bog'langan shar aylantirilganda markazdan qochma kuch qanday qonun asosida paydo bo'ladi?",
+      "v": [
+        "Nyutonning III qonuni asosida",
+        "Nyutonning I qonuni asosida",
+        "Butun olam tortishish qonuni asosida",
+        "Guk qonuni asosida"
+      ],
+      "t": 0,
+      "izoh": "Ip sharga kuch bilan ta'sir qilsa, shar ham ipga modul jihatidan teng, qarama-qarshi kuch bilan ta'sir qiladi (Nyuton III qonuni).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#bbb6f377"
+    },
+    {
+      "q": "Markazdan qochma kuchning formulasi qaysi?",
+      "v": [
+        "F = mω²R",
+        "F = mω/R",
+        "F = mg",
+        "F = μN"
+      ],
+      "t": 0,
+      "izoh": "F(m.q) = mυ²/R yoki F(m.q) = mω²R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#9a106ec9"
+    },
+    {
+      "q": "Oy Yer atrofida aylana bo'ylab harakat qilib, uzoqlashib ketmasligining sababi nima?",
+      "v": [
+        "Yerning tortishish kuchi markazga intilma kuch vazifasini bajaradi",
+        "Oyda massa yo'q",
+        "Oyni Quyosh ushlab turadi",
+        "Oy harakatsiz holatda"
+      ],
+      "t": 0,
+      "izoh": "Yerning tortishish kuchi Oyga markazga intilma tezlanish berib, uni orbitada ushlab turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#83e13e75"
+    },
+    {
+      "q": "Yo'lning keskin burilish qismida haydovchi avtomobil tezligini nima uchun kamaytirishi kerak?",
+      "v": [
+        "Markazga intilma kuch tezlikning kvadratiga mutanosib bo'lgani uchun",
+        "Ishqalanish kuchi tezlikka bog'liq bo'lmagani uchun",
+        "Avtomobil massasi ortgani uchun",
+        "Og'irlik kuchi kamaygani uchun"
+      ],
+      "t": 0,
+      "izoh": "F = mυ²/R bo'lgani uchun tezlik katta bo'lsa, kerakli markazga intilma kuch ham katta bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#28ff28e7"
+    },
+    {
+      "q": "Aylana bo'ylab harakat qilayotgan jismning tezligi 2 marta ortsa, markazga intilma kuch qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "F = mυ²/R; tezlik 2 marta ortsa, kuch 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#76738911"
+    },
+    {
+      "q": "Ipga bog'langan jism aylana bo'ylab tekis harakatlanmoqda. Aylana radiusi 4 marta oshirilsa (tezlik o'zgarmasa), markazdan qochma kuch qanday o'zgaradi?",
+      "v": [
+        "4 marta kamayadi",
+        "4 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "F = mυ²/R; radius 4 marta ortsa, kuch 4 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#2c425369"
+    },
+    {
+      "q": "Markazga intilma kuch jismning chiziqli tezligiga qanday bog'liq?",
+      "v": [
+        "Tezlikning kvadratiga to'g'ri mutanosib",
+        "Tezlikka to'g'ri mutanosib",
+        "Tezlikning kvadratiga teskari mutanosib",
+        "Tezlikka bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "F = mυ²/R formulaga ko'ra kuch tezlik kvadratiga to'g'ri mutanosib.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#051b3fcb"
+    },
+    {
+      "q": "Markazga intilma kuch aylana radiusiga qanday bog'liq (tezlik o'zgarmas bo'lsa)?",
+      "v": [
+        "Radiusga teskari mutanosib",
+        "Radiusga to'g'ri mutanosib",
+        "Radius kvadratiga mutanosib",
+        "Radiusga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "F = mυ²/R bo'lgani uchun kuch radiusga teskari mutanosib.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#0154fb09"
+    },
+    {
+      "q": "Jismning burchak tezligi 2 marta ortsa (radius o'zgarmasa), markazga intilma kuch qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "F = mω²R; ω 2 marta ortsa, kuch 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#651ac9a7"
+    },
+    {
+      "q": "Aylana bo'ylab tekis harakatni bir nechta kuchlar yuzaga keltirishi mumkinmi?",
+      "v": [
+        "Ha, lekin ularning vektor yig'indisi radius bo'ylab markazga yo'nalgan bo'ladi",
+        "Yo'q, faqat bitta kuch bo'lishi kerak",
+        "Ha, ularning yig'indisi ixtiyoriy yo'nalishda bo'lishi mumkin",
+        "Yo'q, kuchlar bir-birini yo'q qiladi"
+      ],
+      "t": 0,
+      "izoh": "Bir nechta kuchlar ham aylanma harakatni yuzaga keltirishi mumkin, lekin ularning vektor yig'indisi markazga yo'nalgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#b6fd5314"
+    },
+    {
+      "q": "Markazga intilma tezlanishning formulasi qaysi?",
+      "v": [
+        "a = υ²/R",
+        "a = υ/R",
+        "a = υR",
+        "a = υ²R"
+      ],
+      "t": 0,
+      "izoh": "a = υ²/R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#a43fb046"
+    },
+    {
+      "q": "Markazdan qochma kuch qaysi holatlarda namoyon bo'ladi?",
+      "v": [
+        "Jismlarning aylanma harakatida va yo'lning keskin burilish qismlarida",
+        "Faqat to'g'ri chiziqli tekis harakatda",
+        "Faqat erkin tushishda",
+        "Faqat jism tinch turganida"
+      ],
+      "t": 0,
+      "izoh": "Markazdan qochma kuch aylanma harakatda va yo'lning keskin burilish qismlarida namoyon bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#7bada40c"
+    },
+    {
+      "q": "Massasi 1 t bo'lgan avtomobil radiusi 100 m bo'lgan aylana bo'ylab 20 m/s tezlik bilan harakatlanmoqda. Markazga intilma kuch necha kN?",
+      "v": [
+        "4 kN",
+        "2 kN",
+        "40 kN",
+        "0,4 kN"
+      ],
+      "t": 0,
+      "izoh": "F = 1000·400/100 = 4000 N = 4 kN.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#b1651d7e"
+    },
+    {
+      "q": "Markazdan qochma kuch ipga bog'langan sharning aylanishida kimga ta'sir qiladi?",
+      "v": [
+        "Ip orqali qo'lga",
+        "Shar markaziga",
+        "Yer sirtiga",
+        "Havoga"
+      ],
+      "t": 0,
+      "izoh": "Markazdan qochma kuch ip orqali qo'lga ta'sir qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#b2eb374b"
+    },
+    {
+      "q": "Markazga intilma kuchning o'lchov birligi nima?",
+      "v": [
+        "Nyuton",
+        "Kilogramm",
+        "Metr/sekund kvadrati",
+        "Vatt"
+      ],
+      "t": 0,
+      "izoh": "Har qanday kuch kabi nyuton bilan o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#75734044"
+    },
+    {
+      "q": "Suv solingan usti ochiq idish ipga bog'lab vertikal tekislikda aylantirilganda suv nima uchun to'kilmaydi?",
+      "v": [
+        "Markazdan qochma ta'sir suvni idish tubiga bosib turadi",
+        "Suvning massasi nolga teng bo'ladi",
+        "Havo bosimi suvni ushlab turadi",
+        "Ip suvni tortib turadi"
+      ],
+      "t": 0,
+      "izoh": "Aylanishda suv idish tubiga bosiladi, shuning uchun to'kilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#e34dbcd1"
+    },
+    {
+      "q": "Jismning massasi 2 marta ortsa (tezlik va radius o'zgarmasa), markazga intilma kuch qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "F = mυ²/R bo'lgani uchun kuch massaga to'g'ri mutanosib.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#2f748ddd"
+    },
+    {
+      "q": "Yo'lning aylanish qismida avtomobilning burilishiga sabab bo'ladigan kuch qanday kuchga misol?",
+      "v": [
+        "Markazga intilma kuchga",
+        "Og'irlik kuchiga",
+        "Normal reaksiya kuchiga",
+        "Taranglik kuchiga"
+      ],
+      "t": 0,
+      "izoh": "Darslikda avtomobilning burilishiga sabab bo'ladigan kuch markazga intilma kuchga misol qilib keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#b5a58335"
+    },
+    {
+      "q": "Aylana bo'ylab harakatda jismning chiziqli tezligi va burchak tezligi orasidagi bog'liqlik qanday?",
+      "v": [
+        "υ = ωR",
+        "υ = ω/R",
+        "υ = ω²R",
+        "υ = R/ω"
+      ],
+      "t": 0,
+      "izoh": "Chiziqli tezlik υ = ωR.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#7c9c8f99"
+    },
+    {
+      "q": "Tramvay vagoni radiusi 100 m bo'lgan burilishdan o'tayotganda relslarga gorizontal yo'nalishda ta'sir etuvchi kuch tezlik 2 marta ortsa qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "O'zgarmaydi",
+        "2 marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Kuch tezlik kvadratiga mutanosib bo'lgani uchun 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#8e59031a"
+    },
+    {
+      "q": "Kulol loydan xumcha yasaganda aylanma stoldagi loyga qaysi kuchlar ta'sir qiladi?",
+      "v": [
+        "Markazga intilma va markazdan qochma kuchlar",
+        "Faqat og'irlik kuchi",
+        "Faqat ishqalanish kuchi",
+        "Faqat magnit kuch"
+      ],
+      "t": 0,
+      "izoh": "Kulol xumcha yasashda markazga intilma va markazdan qochma kuchlardan foydalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#51c9905e"
+    },
+    {
+      "q": "Markazga intilma kuch uchun Nyutonning II qonuni qanday ko'rinishda yoziladi?",
+      "v": [
+        "F(m.i) = m·a(m.i)",
+        "F(m.i) = mg",
+        "F(m.i) = μmg",
+        "F(m.i) = mυ"
+      ],
+      "t": 0,
+      "izoh": "Markazga intilma kuchga nisbatan F(m.i) = m·a(m.i) yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m02-markazga-intilma-kuch#0ca99f63"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "nom": "27-mavzu. Masala. Energiya Turlari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Xona shipida osilib turgan 5 kg massali qandilning potensial energiyasini hisoblang (h = 3 m, g = 10 m/s²).",
+      "v": [
+        "150 J",
+        "15 J",
+        "1 500 J",
+        "75 J"
+      ],
+      "t": 0,
+      "izoh": "Ep = m·g·h = 5·10·3 = 150 J",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m27-energiya-turlari#a645ffe9"
+    },
+    {
+      "q": "Massasi 2 kg bo'lgan jism 5 m/s tezlikda harakatlanmoqda. Uning kinetik energiyasini toping.",
+      "v": [
+        "25 J",
+        "50 J",
+        "5 J",
+        "12,5 J"
+      ],
+      "t": 0,
+      "izoh": "Ek = m·υ²/2 = 2·5²/2 = 2·25/2 = 25 J",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m27-energiya-turlari#55bf9d27"
+    },
+    {
+      "q": "Kinetik energiyasi 40 J bo'lgan jism 4 m/s tezlik bilan harakatlanmoqda. Jismning massasini toping.",
+      "v": [
+        "5 kg",
+        "10 kg",
+        "2,5 kg",
+        "20 kg"
+      ],
+      "t": 0,
+      "izoh": "m = 2·Ek/υ² = 2·40/4² = 80/16 = 5 kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m27-energiya-turlari#aa4529dd"
+    },
+    {
+      "q": "Massasi 4 kg bo'lgan jismning potensial energiyasi 200 J. U qanday balandlikda turibdi? (g = 10 m/s²)",
+      "v": [
+        "5 m",
+        "50 m",
+        "20 m",
+        "10 m"
+      ],
+      "t": 0,
+      "izoh": "h = Ep/(m·g) = 200/(4·10) = 200/40 = 5 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m27-energiya-turlari#dcfe5949"
+    },
+    {
+      "q": "20 kg massali jism 5 m balandlikka tekis ko'tarildi. Ko'tarishda qancha ish bajarilgan? (g = 10 m/s²)",
+      "v": [
+        "1 000 J",
+        "100 J",
+        "500 J",
+        "2 000 J"
+      ],
+      "t": 0,
+      "izoh": "A = m·g·h = 20·10·5 = 1 000 J",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m27-energiya-turlari#bb82d4c9"
+    },
+    {
+      "q": "Suvning yerga urilish tezligi 20 m/s bo'lgan sharshara qanday balandlikdan tushmoqda? (g = 10 m/s²)",
+      "v": [
+        "20 m",
+        "40 m",
+        "2 m",
+        "10 m"
+      ],
+      "t": 0,
+      "izoh": "m·υ²/2 = m·g·h → h = υ²/(2g) = 20²/(2·10) = 400/20 = 20 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m27-energiya-turlari#d751929f"
+    },
+    {
+      "q": "Futbol to'pining massasi 450 g. To'p 36 km/soat tezlik bilan darvozaga yo'llansa, u qancha kinetik energiya olgan?",
+      "v": [
+        "22,5 J",
+        "291,6 J",
+        "45 J",
+        "2,25 J"
+      ],
+      "t": 0,
+      "izoh": "m = 0,45 kg; υ = 36/3,6 = 10 m/s; Ek = m·υ²/2 = 0,45·10²/2 = 0,45·100/2 = 22,5 J",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m27-energiya-turlari#d9dfb8e9"
+    },
+    {
+      "q": "Massasi 1,5 tonna bo'lgan avtomobil tezligini 10 m/s dan 20 m/s gacha oshirdi. Kinetik energiyasi qanchaga o'zgargan?",
+      "v": [
+        "225 kJ",
+        "75 kJ",
+        "22,5 kJ",
+        "375 kJ"
+      ],
+      "t": 0,
+      "izoh": "m = 1500 kg; ΔEk = m·(υ₂² − υ₁²)/2 = 1500·(20² − 10²)/2 = 1500·300/2 = 225 000 J = 225 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m27-energiya-turlari#c9a78edd"
+    },
+    {
+      "q": "18 km/soat tezlik bilan yugurayotgan quyonning kinetik energiyasi 15 J bo'lsa, uning massasi qancha?",
+      "v": [
+        "1,2 kg",
+        "0,09 kg",
+        "0,6 kg",
+        "3 kg"
+      ],
+      "t": 0,
+      "izoh": "υ = 18/3,6 = 5 m/s; m = 2·Ek/υ² = 2·15/5² = 30/25 = 1,2 kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m27-energiya-turlari#ac851ede"
+    },
+    {
+      "q": "Qiz bola massasi 400 g bo'lgan koptokni yer sirtidan 5 m balandlikda ushlab turibdi. Koptok qanday potensial energiyaga ega? (g = 10 m/s²)",
+      "v": [
+        "20 J",
+        "20 000 J",
+        "2 J",
+        "40 J"
+      ],
+      "t": 0,
+      "izoh": "m = 400 g = 0,4 kg; Ep = m·g·h = 0,4·10·5 = 20 J",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m27-energiya-turlari#460f7cc1"
+    },
+    {
+      "q": "Massasi 200 g bo'lgan qaldirg'och 10 m balandlikda 10 m/s tezlik bilan uchmoqda. Uning to'la energiyasini toping. (g = 10 m/s²)",
+      "v": [
+        "30 J",
+        "20 J",
+        "10 J",
+        "60 J"
+      ],
+      "t": 0,
+      "izoh": "m = 0,2 kg; E = m·g·h + m·υ²/2 = 0,2·10·10 + 0,2·10²/2 = 20 + 10 = 30 J",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m27-energiya-turlari#0eb945d1"
+    },
+    {
+      "q": "10 m balandlikda uchayotgan 200 g massali qaldirg'ochning to'la energiyasi 30 J. Uning kinetik energiyasi qancha? (g = 10 m/s²)",
+      "v": [
+        "10 J",
+        "20 J",
+        "50 J",
+        "15 J"
+      ],
+      "t": 0,
+      "izoh": "m = 0,2 kg; Ep = m·g·h = 0,2·10·10 = 20 J; Ek = E − Ep = 30 − 20 = 10 J",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m27-energiya-turlari#d90760df"
+    },
+    {
+      "q": "Massasi 4 kg bo'lgan jismning kinetik energiyasi 200 J. Uning tezligini toping.",
+      "v": [
+        "10 m/s",
+        "50 m/s",
+        "100 m/s",
+        "5 m/s"
+      ],
+      "t": 0,
+      "izoh": "υ = √(2·Ek/m) = √(2·200/4) = √100 = 10 m/s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m27-energiya-turlari#4dc700a5"
+    },
+    {
+      "q": "Massasi 2 kg bo'lgan burgutning potensial energiyasi 300 J bo'lsa, u qanday balandlikda o'tirmoqda? (g = 10 m/s²)",
+      "v": [
+        "15 m",
+        "150 m",
+        "30 m",
+        "3 m"
+      ],
+      "t": 0,
+      "izoh": "h = Ep/(m·g) = 300/(2·10) = 15 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m27-energiya-turlari#1ae16810"
+    }
+  ]
+}

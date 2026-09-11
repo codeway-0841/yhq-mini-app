@@ -1,0 +1,531 @@
+{
+  "nom": "24-mavzu. Vodorodning olinishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Vodorodning valentligi qanday?",
+      "v": [
+        "O‘zgarmas, doimo 1 ga teng",
+        "O‘zgaruvchan: 1 yoki 2",
+        "O‘zgarmas, doimo 2 ga teng",
+        "Birikmaga qarab 1 dan 4 gacha"
+      ],
+      "t": 0,
+      "izoh": "Vodorodning valentligi o‘zgarmas bo‘lib, doimo birga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#99188a0f"
+    },
+    {
+      "q": "Vodorod ishtirokidagi binar birikmalarda vodorodning indeksi nimani ko‘rsatadi?",
+      "v": [
+        "Ikkinchi elementning valentligini",
+        "Vodorodning valentligini",
+        "Molekuladagi umumiy atomlar sonini",
+        "Ikkinchi elementning atom massasini"
+      ],
+      "t": 0,
+      "izoh": "HCl, H2O, NH3, CH4 misolida vodorod indeksi ikkinchi element valentligini ko‘rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#aebd9eee"
+    },
+    {
+      "q": "H2S, NaH, PH3, CH4 birikmalarida vodorodga qo‘shni elementlarning valentligi qanday ketma-ketlikda?",
+      "v": [
+        "II, I, III, IV",
+        "I, II, III, IV",
+        "II, I, IV, III",
+        "I, I, III, IV"
+      ],
+      "t": 0,
+      "izoh": "H2S da S — II, NaH da Na — I, PH3 da P — III, CH4 da C — IV.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#7f3eced1"
+    },
+    {
+      "q": "Laboratoriyada vodorod qanday olinadi?",
+      "v": [
+        "Rux bilan xlorid kislota o‘zaro ta’sirlashuvidan",
+        "Suvni elektroliz qilib",
+        "Metanni qayta ishlab",
+        "Mis bilan sulfat kislota ta’sirlashuvidan"
+      ],
+      "t": 0,
+      "izoh": "Zn + 2HCl = ZnCl2 + H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#cd094b9a"
+    },
+    {
+      "q": "Zn + 2HCl = ZnCl2 + H2 reaksiyasida xlorid kislota oldidagi koeffitsient nechaga teng?",
+      "v": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Tenglamada HCl oldida 2 koeffitsienti turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#7a30ff42"
+    },
+    {
+      "q": "Laboratoriyada vodorod olish uchun qaysi apparatdan foydalaniladi?",
+      "v": [
+        "Kipp apparati",
+        "Flotatsiya apparati",
+        "Elektroliz vannasi",
+        "Distillash apparati"
+      ],
+      "t": 0,
+      "izoh": "Vodorod laboratoriyada Kipp apparati yoki maxsus moslama yordamida olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#3cb0fb4e"
+    },
+    {
+      "q": "Kipp apparati qanday qismlardan iborat?",
+      "v": [
+        "Voronka va o‘zaro tutashgan sharsimon hamda yarimsharsimon idishdan",
+        "Retorta va kondensatordan",
+        "Ikki probirkadan",
+        "Nusxatgich va kolbadan"
+      ],
+      "t": 0,
+      "izoh": "Apparat B voronka va A idishdan (sharsimon va yarimsharsimon shisha idish) iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#6d7e9655"
+    },
+    {
+      "q": "Kipp apparatida metall bo‘lakchalari A idishga nima orqali solinadi?",
+      "v": [
+        "E tubus orqali",
+        "Voronka orqali",
+        "D chiqarish nayi orqali",
+        "Tirqish orqali"
+      ],
+      "t": 0,
+      "izoh": "Metall bo‘lakchalari E tubus orqali solinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#ed5a6795"
+    },
+    {
+      "q": "Kipp apparatida tajriba tugagach D kran berkitilsa nima sodir bo‘ladi?",
+      "v": [
+        "Gaz to‘planib kislotani bosadi, kislota voronkaga ko‘tarilib metallga tegmay qoladi va reaksiya to‘xtaydi",
+        "Reaksiya tezlashadi",
+        "Kislota metall bilan tezroq reaksiyaga kirishadi",
+        "Apparat portlaydi"
+      ],
+      "t": 0,
+      "izoh": "Kran berkilsa gaz kislotani bosib yuqoriga ko‘taradi, metall va kislota aloqasi uzilib reaksiya to‘xtaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#51267e80"
+    },
+    {
+      "q": "Vodorodni sanoat miqyosida olish uchun tabiatda ko‘p tarqalgan qaysi moddalardan foydalaniladi?",
+      "v": [
+        "Suv va metan",
+        "Ammiak va xlor",
+        "Kislorod va azot",
+        "Ohaktosh va qum"
+      ],
+      "t": 0,
+      "izoh": "Suv va tabiiy gazning asosiy qismi — metan vodorodning sanoat manbalari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#520088ac"
+    },
+    {
+      "q": "Suvni elektroliz qilish reaksiya tenglamasi qanday?",
+      "v": [
+        "2H2O = 2H2 + O2",
+        "H2O = H2 + O2",
+        "2H2O = H2 + 2O2",
+        "H2O = 2H + O"
+      ],
+      "t": 0,
+      "izoh": "2H2O = 2H2 + O2; atomlar soni teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#1731f8b3"
+    },
+    {
+      "q": "Metanni qayta ishlash reaksiyasi tenglamasi qaysi?",
+      "v": [
+        "CH4 + H2O = CO + 3H2",
+        "2CH4 + H2O = 2CO + 5H2",
+        "CH4 + 2H2O = CO2 + 4H2",
+        "CH4 + H2O = CO2 + 2H2"
+      ],
+      "t": 0,
+      "izoh": "CH4 + H2O = CO + 3H2 + 206 kJ (425–450°C, Ni katalizator).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#580486df"
+    },
+    {
+      "q": "Metanni qayta ishlash reaksiyasi qanday sharoitda olib boriladi?",
+      "v": [
+        "425–450°C da Ni katalizatori ishtirokida",
+        "Xona haroratida, katalizatorsiz",
+        "425–450°C da Fe2O3 katalizatori ishtirokida",
+        "1000°C da platina ishtirokida"
+      ],
+      "t": 0,
+      "izoh": "425–450°C, Ni katalizatori; Fe2O3 — CO + H2O reaksiyasining katalizatori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#6bf8906e"
+    },
+    {
+      "q": "CO + H2O = CO2 + H2 reaksiyasida katalizator sifatida nima ishlatiladi?",
+      "v": [
+        "Fe2O3",
+        "Ni",
+        "CuO",
+        "Pt"
+      ],
+      "t": 0,
+      "izoh": "Bu reaksiya 425–450°C da Fe2O3 katalizatori ishtirokida boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#afa95763"
+    },
+    {
+      "q": "CH4 + H2O = CO + 3H2 + 206 kJ reaksiyasi issiqlik effektiga ko‘ra qanday reaksiya?",
+      "v": [
+        "Endotermik (issiqlik yutiladi)",
+        "Ekzotermik (issiqlik ajraladi)",
+        "Issiqlik almashinuvi bo‘lmaydi",
+        "Portlash reaksiyasi"
+      ],
+      "t": 0,
+      "izoh": "Reaksiya borishi uchun 206 kJ issiqlik sarflanadi — endotermik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#ae57a005"
+    },
+    {
+      "q": "4,48 l (n.sh.) vodorod olish uchun qancha temir kerak? (Fe + H2SO4 = FeSO4 + H2)",
+      "v": [
+        "11,2 g",
+        "5,6 g",
+        "56 g",
+        "22,4 g"
+      ],
+      "t": 0,
+      "izoh": "4,48 l = 0,2 mol H2; 0,2 mol Fe = 0,2×56 = 11,2 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#8e2dd6e3"
+    },
+    {
+      "q": "4,48 l (n.sh.) vodorod olish uchun qancha sulfat kislota sarflanadi? (Fe + H2SO4 = FeSO4 + H2)",
+      "v": [
+        "19,6 g",
+        "9,8 g",
+        "98 g",
+        "39,2 g"
+      ],
+      "t": 0,
+      "izoh": "0,2 mol H2 uchun 0,2 mol H2SO4 kerak: 0,2×98 = 19,6 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#64959404"
+    },
+    {
+      "q": "Kipp apparati bo'lmaganda nima qilish mumkin?",
+      "v": [
+        "Laboratoriyada mavjud idishlardan ishlash prinsipi Kipp apparatiniki kabi oddiy moslama tayyorlash mumkin",
+        "Vodorod olish mumkin emas",
+        "Faqat suvni elektroliz qilish kerak",
+        "Kislotasiz metallni qizdirish kerak"
+      ],
+      "t": 0,
+      "izoh": "Kipp apparati bo'lmaganda maxsus moslamani laboratoriyada mavjud idishlardan oson tayyorlash mumkin, uning ishlash prinsipi ham Kipp apparatiniki kabidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#4f9a3afe"
+    },
+    {
+      "q": "Rux xlorid kislota bilan reaksiyaga kirishganda qanday tuz hosil bo'ladi?",
+      "v": [
+        "Rux xlorid ZnCl2",
+        "Rux sulfat ZnSO4",
+        "Rux nitrat Zn(NO3)2",
+        "Rux oksid ZnO"
+      ],
+      "t": 0,
+      "izoh": "Zn + 2HCl = ZnCl2 + H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#e3e07c6b"
+    },
+    {
+      "q": "CO + H2O = CO2 + H2 - 40 kJ reaksiyasi issiqlik effektiga ko'ra qanday reaksiya?",
+      "v": [
+        "Ekzotermik",
+        "Endotermik",
+        "Neytrallanish",
+        "Parchalanish"
+      ],
+      "t": 0,
+      "izoh": "Reaksiyada 40 kJ issiqlik ajralib chiqadi, demak u ekzotermik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#aae6b821"
+    },
+    {
+      "q": "Tabiiy gazning asosiy tarkibiy qismi nima?",
+      "v": [
+        "Metan",
+        "Etan",
+        "Vodorod",
+        "Karbonat angidrid"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy gazning asosiy tarkibiy qismi bo'lgan metan sanoatda vodorod olish uchun ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#dffb616b"
+    },
+    {
+      "q": "PH3 da fosforning valentligi nechaga teng?",
+      "v": [
+        "III",
+        "I",
+        "II",
+        "IV"
+      ],
+      "t": 0,
+      "izoh": "Vodorodning indeksi ikkinchi element valentligini ko'rsatadi: PH3 da fosfor III valentli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#f27fad25"
+    },
+    {
+      "q": "4,48 l (n.sh.) vodorod necha molni tashkil etadi?",
+      "v": [
+        "0,2 mol",
+        "2 mol",
+        "0,5 mol",
+        "4,48 mol"
+      ],
+      "t": 0,
+      "izoh": "n = 4,48/22,4 = 0,2 mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#8b8daee1"
+    },
+    {
+      "q": "Kipp apparatida ajralib chiqqan vodorod gazi qanday tashqariga chiqariladi?",
+      "v": [
+        "D chiqarish nayi orqali",
+        "B voronka orqali",
+        "E tubus orqali",
+        "A idishning tirqishidan"
+      ],
+      "t": 0,
+      "izoh": "H2 tubusga o'rnatilgan D chiqarish nayi orqali tashqariga chiqariladi va maxsus idishga yig'iladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#d91f2db9"
+    },
+    {
+      "q": "Kipp apparatida kislota eritmasi qayerga quyiladi?",
+      "v": [
+        "Voronkaga",
+        "E tubusga",
+        "D nayga",
+        "Sharsimon idishga to'g'ridan-to'g'ri"
+      ],
+      "t": 0,
+      "izoh": "Voronkaga kislota eritmasi quyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#87978277"
+    },
+    {
+      "q": "Kipp apparatining A idishi qanday shaklda bo'ladi?",
+      "v": [
+        "O'zaro tutashgan sharsimon va yarimsharsimon shisha idish",
+        "To'g'ri burchakli idish",
+        "Silindrsimon idish",
+        "Konus shaklidagi kolba"
+      ],
+      "t": 0,
+      "izoh": "A idish o'zaro tutashgan sharsimon va yarimsharsimon shisha idishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#10e37f2c"
+    },
+    {
+      "q": "Vodorodni sanoatda olish usullari soni nechta?",
+      "v": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Kitobda 3 usul keltirilgan: suvni elektroliz qilish, metanni qayta ishlash, CO ni suv bug'i bilan qayta ishlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#459ac4ad"
+    },
+    {
+      "q": "Metanni qayta ishlash reaksiyasida katalizator sifatida nima ishlatiladi?",
+      "v": [
+        "Ni",
+        "Fe2O3",
+        "MnO2",
+        "Pt"
+      ],
+      "t": 0,
+      "izoh": "CH4 + H2O = CO + 3H2 reaksiyasi 425-450°C da Ni katalizatori ishtirokida olib boriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#f542581d"
+    },
+    {
+      "q": "Suvni elektroliz qilishda hosil bo'ladigan vodorod va kislorodning hajm nisbati qanday?",
+      "v": [
+        "2:1",
+        "1:2",
+        "1:1",
+        "3:1"
+      ],
+      "t": 0,
+      "izoh": "2H2O = 2H2 + O2: 2 hajm vodorod va 1 hajm kislorod hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#9c45e081"
+    },
+    {
+      "q": "Kipp apparatida reaksiya to'xtatilganda vodorod gazi qayerda saqlanib turadi?",
+      "v": [
+        "Idishning sharsimon qismida",
+        "Voronkada",
+        "Chiqarish nayida",
+        "Tubusda"
+      ],
+      "t": 0,
+      "izoh": "Idishning sharsimon qismida yana ishlatish mumkin bo'lgan vodorod gazi saqlab turiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#531ff512"
+    },
+    {
+      "q": "NaH da natriyning valentligi nechaga teng?",
+      "v": [
+        "I",
+        "II",
+        "III",
+        "IV"
+      ],
+      "t": 0,
+      "izoh": "Vodorod I valentli bo'lgani uchun NaH da natriy I valentli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#2759e006"
+    },
+    {
+      "q": "CH4 da uglerodning valentligi nechaga teng?",
+      "v": [
+        "IV",
+        "I",
+        "II",
+        "III"
+      ],
+      "t": 0,
+      "izoh": "Vodorodning indeksi 4 bo'lgani uchun CH4 da uglerod IV valentli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#8fab5743"
+    },
+    {
+      "q": "Sanoatda vodorod olish uchun qaysi moddalardan foydalaniladi?",
+      "v": [
+        "Suv va metan",
+        "Neft va ko'mir",
+        "Havo va ozon",
+        "Ohaktosh va qum"
+      ],
+      "t": 0,
+      "izoh": "Uni sanoat miqyosida olish uchun tabiatda ko'p tarqalgan suv va metandan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#edff6a61"
+    },
+    {
+      "q": "Kipp apparatida kran berkitilgach kislota nima bo'ladi?",
+      "v": [
+        "Voronka orqali yuqoriga ko'tarilib, metall bo'lakchalarga tegmay qoladi",
+        "Idishda qaynay boshlaydi",
+        "Metall bilan portlaydi",
+        "D nay orqali tashqariga oqadi"
+      ],
+      "t": 0,
+      "izoh": "Gaz to'planib, kislotani bosa boshlaydi; kislota voronka orqali yuqoriga ko'tariladi va metall bo'lakchalariga tegmay qoladi, natijada reaksiya to'xtaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#86eda168"
+    },
+    {
+      "q": "H2S da oltingugurtning valentligi nechaga teng?",
+      "v": [
+        "II",
+        "I",
+        "III",
+        "IV"
+      ],
+      "t": 0,
+      "izoh": "Vodorodning indeksi 2 bo'lgani uchun H2S da oltingugurt II valentli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m24-vodorodning-olinishi#5ab56181"
+    }
+  ]
+}

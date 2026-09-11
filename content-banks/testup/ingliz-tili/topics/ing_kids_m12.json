@@ -1,0 +1,526 @@
+{
+  "nom": "Fruits & vegetables (Meva-sabzavot)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "What is this? 🍎",
+      "v": [
+        "Apple",
+        "Onion",
+        "Carrot",
+        "Potato"
+      ],
+      "t": 0,
+      "izoh": "🍎 = apple (olma).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#27bddda2"
+    },
+    {
+      "q": "What is this? 🍌",
+      "v": [
+        "Tomato",
+        "Banana",
+        "Pepper",
+        "Grape"
+      ],
+      "t": 1,
+      "izoh": "🍌 = banana (banan).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#ce8446ca"
+    },
+    {
+      "q": "What is this? 🍇",
+      "v": [
+        "Apple",
+        "Carrot",
+        "Grapes",
+        "Onion"
+      ],
+      "t": 2,
+      "izoh": "🍇 = grapes (uzum).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#23758f4e"
+    },
+    {
+      "q": "What is this? 🥕",
+      "v": [
+        "Carrot",
+        "Banana",
+        "Apple",
+        "Cherry"
+      ],
+      "t": 0,
+      "izoh": "🥕 = carrot (sabzi).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#84803760"
+    },
+    {
+      "q": "What is this? 🍅",
+      "v": [
+        "Grape",
+        "Tomato",
+        "Apple",
+        "Potato"
+      ],
+      "t": 1,
+      "izoh": "🍅 = tomato (pomidor).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#741afb23"
+    },
+    {
+      "q": "What is this? 🥔",
+      "v": [
+        "Banana",
+        "Cherry",
+        "Potato",
+        "Onion"
+      ],
+      "t": 2,
+      "izoh": "🥔 = potato (kartoshka).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#7bc5bddb"
+    },
+    {
+      "q": "What is this? 🧅",
+      "v": [
+        "Onion",
+        "Apple",
+        "Grape",
+        "Carrot"
+      ],
+      "t": 0,
+      "izoh": "🧅 = onion (piyoz).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#b30742a3"
+    },
+    {
+      "q": "What is this? 🍊",
+      "v": [
+        "Potato",
+        "Orange",
+        "Tomato",
+        "Onion"
+      ],
+      "t": 1,
+      "izoh": "🍊 = orange (apelsin).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#7daac8f4"
+    },
+    {
+      "q": "What is this? 🍒",
+      "v": [
+        "Carrot",
+        "Potato",
+        "Cherries",
+        "Onion"
+      ],
+      "t": 2,
+      "izoh": "🍒 = cherries (gilos).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#2c2c44b5"
+    },
+    {
+      "q": "What is this? 🍉",
+      "v": [
+        "Watermelon",
+        "Banana",
+        "Carrot",
+        "Tomato"
+      ],
+      "t": 0,
+      "izoh": "🍉 = watermelon (tarvuz).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#b3171560"
+    },
+    {
+      "q": "🍎 = ?",
+      "v": [
+        "apple",
+        "banana",
+        "grapes",
+        "pear"
+      ],
+      "t": 0,
+      "izoh": "🍎 = apple (olma).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#83ae128d"
+    },
+    {
+      "q": "Which one is a vegetable?",
+      "v": [
+        "carrot",
+        "apple",
+        "banana",
+        "cherry"
+      ],
+      "t": 0,
+      "izoh": "🥕 carrot (sabzi) — sabzavot.",
+      "qiy": "oson",
+      "id": "ing_kids_m12#6b416ca3"
+    },
+    {
+      "q": "Which one is a fruit?",
+      "v": [
+        "orange",
+        "onion",
+        "potato",
+        "garlic"
+      ],
+      "t": 0,
+      "izoh": "🍊 orange (apelsin) — meva.",
+      "qiy": "oson",
+      "id": "ing_kids_m12#af895086"
+    },
+    {
+      "q": "What colour is a banana?",
+      "v": [
+        "yellow",
+        "red",
+        "blue",
+        "green"
+      ],
+      "t": 0,
+      "izoh": "🍌 banana sariq (yellow).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#dc4ee72e"
+    },
+    {
+      "q": "What colour is a tomato?",
+      "v": [
+        "red",
+        "blue",
+        "purple",
+        "black"
+      ],
+      "t": 0,
+      "izoh": "🍅 tomato qizil (red).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#9164ea9c"
+    },
+    {
+      "q": "'Olma' English tilida?",
+      "v": [
+        "apple",
+        "onion",
+        "orange",
+        "pear"
+      ],
+      "t": 0,
+      "izoh": "olma = apple 🍎.",
+      "qiy": "oson",
+      "id": "ing_kids_m12#a77b362c"
+    },
+    {
+      "q": "'Sabzi' English tilida?",
+      "v": [
+        "carrot",
+        "cabbage",
+        "corn",
+        "cherry"
+      ],
+      "t": 0,
+      "izoh": "sabzi = carrot 🥕.",
+      "qiy": "oson",
+      "id": "ing_kids_m12#977495cc"
+    },
+    {
+      "q": "Which one is NOT a fruit?",
+      "v": [
+        "potato",
+        "apple",
+        "pear",
+        "banana"
+      ],
+      "t": 0,
+      "izoh": "🥔 potato (kartoshka) — sabzavot.",
+      "qiy": "oson",
+      "id": "ing_kids_m12#5b1a80ca"
+    },
+    {
+      "q": "'Tarvuz' English tilida?",
+      "v": [
+        "watermelon",
+        "melon",
+        "cucumber",
+        "pumpkin"
+      ],
+      "t": 0,
+      "izoh": "tarvuz = watermelon 🍉.",
+      "qiy": "oson",
+      "id": "ing_kids_m12#6839837e"
+    },
+    {
+      "q": "🍌 = ?",
+      "v": [
+        "banana",
+        "lemon",
+        "corn",
+        "cherry"
+      ],
+      "t": 0,
+      "izoh": "🍌 = banana (banan).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#bbb15468"
+    },
+    {
+      "q": "🍇 = ?",
+      "v": [
+        "grapes",
+        "peas",
+        "cherry",
+        "onion"
+      ],
+      "t": 0,
+      "izoh": "🍇 = grapes (uzum).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#8925980c"
+    },
+    {
+      "q": "🥕 = ?",
+      "v": [
+        "carrot",
+        "potato",
+        "pepper",
+        "corn"
+      ],
+      "t": 0,
+      "izoh": "🥕 = carrot (sabzi).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#a43eb093"
+    },
+    {
+      "q": "🍅 = ?",
+      "v": [
+        "tomato",
+        "apple",
+        "cherry",
+        "pepper"
+      ],
+      "t": 0,
+      "izoh": "🍅 = tomato (pomidor).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#c2955a2e"
+    },
+    {
+      "q": "🥔 = ?",
+      "v": [
+        "potato",
+        "onion",
+        "garlic",
+        "cabbage"
+      ],
+      "t": 0,
+      "izoh": "🥔 = potato (kartoshka).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#22756192"
+    },
+    {
+      "q": "🧅 = ?",
+      "v": [
+        "onion",
+        "garlic",
+        "potato",
+        "peach"
+      ],
+      "t": 0,
+      "izoh": "🧅 = onion (piyoz).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#593501e6"
+    },
+    {
+      "q": "🍊 = ?",
+      "v": [
+        "orange",
+        "lemon",
+        "peach",
+        "apple"
+      ],
+      "t": 0,
+      "izoh": "🍊 = orange (apelsin).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#5f30f4c7"
+    },
+    {
+      "q": "🍒 = ?",
+      "v": [
+        "cherry",
+        "grapes",
+        "strawberry",
+        "tomato"
+      ],
+      "t": 0,
+      "izoh": "🍒 = cherry (gilos).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#7801aa0a"
+    },
+    {
+      "q": "🍉 = ?",
+      "v": [
+        "watermelon",
+        "melon",
+        "pumpkin",
+        "cabbage"
+      ],
+      "t": 0,
+      "izoh": "🍉 = watermelon (tarvuz).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#58b5054f"
+    },
+    {
+      "q": "🍋 = ?",
+      "v": [
+        "lemon",
+        "orange",
+        "banana",
+        "corn"
+      ],
+      "t": 0,
+      "izoh": "🍋 = lemon (limon).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#52e2aa4d"
+    },
+    {
+      "q": "🍓 = ?",
+      "v": [
+        "strawberry",
+        "cherry",
+        "raspberry",
+        "tomato"
+      ],
+      "t": 0,
+      "izoh": "🍓 = strawberry (qulupnay).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#ecfaf811"
+    },
+    {
+      "q": "🍐 = ?",
+      "v": [
+        "pear",
+        "apple",
+        "peach",
+        "mango"
+      ],
+      "t": 0,
+      "izoh": "🍐 = pear (nok).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#caf642eb"
+    },
+    {
+      "q": "🍑 = ?",
+      "v": [
+        "peach",
+        "apricot",
+        "pear",
+        "orange"
+      ],
+      "t": 0,
+      "izoh": "🍑 = peach (shaftoli).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#d2474678"
+    },
+    {
+      "q": "🥒 = ?",
+      "v": [
+        "cucumber",
+        "pepper",
+        "carrot",
+        "cabbage"
+      ],
+      "t": 0,
+      "izoh": "🥒 = cucumber (bodring).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#9d026d0c"
+    },
+    {
+      "q": "🌶️ = ?",
+      "v": [
+        "pepper",
+        "carrot",
+        "tomato",
+        "corn"
+      ],
+      "t": 0,
+      "izoh": "🌶️ = pepper (qalampir).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#10ae1423"
+    },
+    {
+      "q": "🌽 = ?",
+      "v": [
+        "corn",
+        "peas",
+        "banana",
+        "carrot"
+      ],
+      "t": 0,
+      "izoh": "🌽 = corn (makkajo'xori).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#2df46b4a"
+    },
+    {
+      "q": "🫛 = ?",
+      "v": [
+        "peas",
+        "corn",
+        "grapes",
+        "beans"
+      ],
+      "t": 0,
+      "izoh": "🫛 = peas (no'xat).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#1bfd3177"
+    },
+    {
+      "q": "🥬 = ?",
+      "v": [
+        "cabbage",
+        "onion",
+        "lettuce",
+        "pepper"
+      ],
+      "t": 0,
+      "izoh": "🥬 = cabbage (karam).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#ce3c53d7"
+    },
+    {
+      "q": "🧄 = ?",
+      "v": [
+        "garlic",
+        "onion",
+        "potato",
+        "ginger"
+      ],
+      "t": 0,
+      "izoh": "🧄 = garlic (sarimsoq).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#6ce4b1a7"
+    },
+    {
+      "q": "🥭 = ?",
+      "v": [
+        "mango",
+        "peach",
+        "orange",
+        "pear"
+      ],
+      "t": 0,
+      "izoh": "🥭 = mango (mango).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#dd419b31"
+    },
+    {
+      "q": "🍍 = ?",
+      "v": [
+        "pineapple",
+        "corn",
+        "mango",
+        "melon"
+      ],
+      "t": 0,
+      "izoh": "🍍 = pineapple (ananas).",
+      "qiy": "oson",
+      "id": "ing_kids_m12#984e6a6d"
+    }
+  ]
+}

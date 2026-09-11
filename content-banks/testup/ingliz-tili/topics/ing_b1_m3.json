@@ -1,0 +1,1306 @@
+{
+  "nom": "First Conditional (if + present, will)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "If the forecast is bad tomorrow, they ___ the match.",
+      "v": [
+        "cancel",
+        "would cancel",
+        "will cancel",
+        "cancelled"
+      ],
+      "t": 2,
+      "izoh": "Kelajakdagi bitta holat (tomorrow) — natija qismiga will: will cancel.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#043575f6"
+    },
+    {
+      "q": "Water ___ if you heat it to 100 degrees.",
+      "v": [
+        "boils",
+        "will boils",
+        "boiled",
+        "is boiling"
+      ],
+      "t": 0,
+      "izoh": "Har doim shunday — zero: boils.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#d24ff68d"
+    },
+    {
+      "q": "She'll text us as soon as she ___ the station.",
+      "v": [
+        "will reach",
+        "reached",
+        "is reaching",
+        "reaches"
+      ],
+      "t": 3,
+      "izoh": "as soon as — vaqt ergash gapi, will yo'q: reaches.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#82b834a8"
+    },
+    {
+      "q": "___ you book early, the tickets will be expensive.",
+      "v": [
+        "If",
+        "When",
+        "Unless",
+        "Until"
+      ],
+      "t": 2,
+      "izoh": "Ma'no: erta band qilmasangiz — unless (= if you don't).",
+      "qiy": "orta",
+      "id": "ing_b1_m3#d0e34bff"
+    },
+    {
+      "q": "Choose the correct sentence about the road.",
+      "v": [
+        "If it snows, the road will be closed.",
+        "If it will snow, the road will be closed.",
+        "If it snows, the road be closed.",
+        "If it snow, the road will closed."
+      ],
+      "t": 0,
+      "izoh": "Shart hozirgi (snows), natija will (will be closed).",
+      "qiy": "orta",
+      "id": "ing_b1_m3#a32a58fc"
+    },
+    {
+      "q": "Which word is extra? 'Unless you don't wear a coat, you will get cold.'",
+      "v": [
+        "Unless",
+        "wear",
+        "will get",
+        "don't"
+      ],
+      "t": 3,
+      "izoh": "unless = if … not; keyin tasdiq fe'l — «don't» ortiqcha (#97).",
+      "qiy": "orta",
+      "id": "ing_b1_m3#c3bdfd31"
+    },
+    {
+      "q": "I'll stay indoors ___ the rain stops.",
+      "v": [
+        "although",
+        "so",
+        "or",
+        "until"
+      ],
+      "t": 3,
+      "izoh": "«-guncha» — until; undan keyin hozirgi zamon.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#1579087f"
+    },
+    {
+      "q": "If you ___ the plants, they die.",
+      "v": [
+        "won't water",
+        "don't water",
+        "didn't water",
+        "not water"
+      ],
+      "t": 1,
+      "izoh": "Zero: shart qismida hozirgi zamon, inkor don't.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#9bc8b717"
+    },
+    {
+      "q": "What ___ if the flight is cancelled?",
+      "v": [
+        "will you do",
+        "you will do",
+        "do you will",
+        "you do"
+      ],
+      "t": 0,
+      "izoh": "Bosh gap savol: will + ega + fe'l.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#c11009ec"
+    },
+    {
+      "q": "If the temperature ___ below zero tonight, the roads will freeze.",
+      "v": [
+        "will fall",
+        "fall",
+        "falls",
+        "fell"
+      ],
+      "t": 2,
+      "izoh": "Shart qismi hozirgi zamon, 3-shaxs: falls.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#7631bae5"
+    },
+    {
+      "q": "If the weather is nice tomorrow, ___.",
+      "v": [
+        "we go to the park",
+        "we would go to the park",
+        "we went to the park",
+        "we will go to the park"
+      ],
+      "t": 3,
+      "izoh": "Kelajakdagi natija — will: we will go (#98).",
+      "qiy": "orta",
+      "id": "ing_b1_m3#05331a9d"
+    },
+    {
+      "q": "Find the mistake: 'I will send the photos when I will get home.'",
+      "v": [
+        "will send",
+        "will get",
+        "when",
+        "home"
+      ],
+      "t": 1,
+      "izoh": "when qismida will yo'q: when I get home (#30).",
+      "qiy": "orta",
+      "id": "ing_b1_m3#8ff34d13"
+    },
+    {
+      "q": "If you ___ me, I will help you.",
+      "v": [
+        "ask",
+        "will ask",
+        "asked",
+        "asks"
+      ],
+      "t": 0,
+      "izoh": "If + present simple, 'you' bilan ask.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#9f659131"
+    },
+    {
+      "q": "If he ___ early, he will catch the train.",
+      "v": [
+        "leaves",
+        "will leave",
+        "left",
+        "leave"
+      ],
+      "t": 0,
+      "izoh": "'He' bilan leaves.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#74d1d9a1"
+    },
+    {
+      "q": "If we ___ enough money, we will buy a car.",
+      "v": [
+        "save",
+        "will save",
+        "saved",
+        "saves"
+      ],
+      "t": 0,
+      "izoh": "'We' bilan save.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#6f04f76d"
+    },
+    {
+      "q": "If the weather ___ nice, we will go to the park.",
+      "v": [
+        "is",
+        "will be",
+        "was",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "If + present simple: is.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#f0376424"
+    },
+    {
+      "q": "If I ___ time, I will call you tonight.",
+      "v": [
+        "have",
+        "will have",
+        "had",
+        "has"
+      ],
+      "t": 0,
+      "izoh": "'I' bilan have.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#aa9a2425"
+    },
+    {
+      "q": "If the shop ___ open, I will buy some bread.",
+      "v": [
+        "is",
+        "will be",
+        "were",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "'The shop' bilan is.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#026145cd"
+    },
+    {
+      "q": "If it ___ too hot, we will stay inside.",
+      "v": [
+        "gets",
+        "will get",
+        "got",
+        "get"
+      ],
+      "t": 0,
+      "izoh": "'It' bilan gets.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#43461883"
+    },
+    {
+      "q": "If you heat ice, it ___ melt.",
+      "v": [
+        "will",
+        "would",
+        "won't",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "Natija qismida will.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#08612a65"
+    },
+    {
+      "q": "If we don't hurry, we ___ miss the film.",
+      "v": [
+        "will",
+        "would",
+        "are",
+        "won't"
+      ],
+      "t": 0,
+      "izoh": "Salbiy natija: will miss.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#8c6178e2"
+    },
+    {
+      "q": "If she calls, I ___ tell her the news.",
+      "v": [
+        "will",
+        "would",
+        "am",
+        "won't"
+      ],
+      "t": 0,
+      "izoh": "Bosh gapda will.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#2fa89c78"
+    },
+    {
+      "q": "If it snows, the children ___ be very happy.",
+      "v": [
+        "will",
+        "would",
+        "are",
+        "won't"
+      ],
+      "t": 0,
+      "izoh": "Natija: will be.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#f774611c"
+    },
+    {
+      "q": "If you don't water the plant, it ___ die.",
+      "v": [
+        "will",
+        "would",
+        "won't",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "will die.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#c8320029"
+    },
+    {
+      "q": "If I see Tom, I ___ give him your message.",
+      "v": [
+        "will",
+        "would",
+        "am",
+        "won't"
+      ],
+      "t": 0,
+      "izoh": "will give.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#8a898a6a"
+    },
+    {
+      "q": "If they win, they ___ celebrate all night.",
+      "v": [
+        "will",
+        "would",
+        "are",
+        "won't"
+      ],
+      "t": 0,
+      "izoh": "will celebrate.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#235f86cc"
+    },
+    {
+      "q": "If the price is right, we ___ buy the house.",
+      "v": [
+        "will",
+        "would",
+        "are",
+        "won't"
+      ],
+      "t": 0,
+      "izoh": "will buy.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#9aa2e2b4"
+    },
+    {
+      "q": "If you touch that wire, you ___ get a shock.",
+      "v": [
+        "will",
+        "would",
+        "won't",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "will get.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#986b766d"
+    },
+    {
+      "q": "If it rains, the match ___ be cancelled.",
+      "v": [
+        "will",
+        "would",
+        "is",
+        "won't"
+      ],
+      "t": 0,
+      "izoh": "will be.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#42114a71"
+    },
+    {
+      "q": "If you don't study, you ___ pass the test.",
+      "v": [
+        "won't",
+        "will",
+        "don't",
+        "aren't"
+      ],
+      "t": 0,
+      "izoh": "Salbiy natija: won't pass.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#85747ce1"
+    },
+    {
+      "q": "If he is late again, the boss ___ be happy.",
+      "v": [
+        "won't",
+        "will",
+        "doesn't",
+        "isn't"
+      ],
+      "t": 0,
+      "izoh": "won't be happy.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#da6918d2"
+    },
+    {
+      "q": "If we take a taxi, we ___ be late.",
+      "v": [
+        "won't",
+        "will",
+        "don't",
+        "aren't"
+      ],
+      "t": 0,
+      "izoh": "won't be late.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#38e019c9"
+    },
+    {
+      "q": "If you eat well, you ___ get sick so often.",
+      "v": [
+        "won't",
+        "will",
+        "don't",
+        "aren't"
+      ],
+      "t": 0,
+      "izoh": "won't get sick.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#3f3c9023"
+    },
+    {
+      "q": "If it stays cold, the flowers ___ grow.",
+      "v": [
+        "won't",
+        "will",
+        "don't",
+        "aren't"
+      ],
+      "t": 0,
+      "izoh": "won't grow.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#494b8f2c"
+    },
+    {
+      "q": "If you ___ hurry, you will miss the bus.",
+      "v": [
+        "don't",
+        "won't",
+        "aren't",
+        "not"
+      ],
+      "t": 0,
+      "izoh": "If-clause salbiy: don't hurry.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#20a30079"
+    },
+    {
+      "q": "If she ___ practise, she will not improve.",
+      "v": [
+        "doesn't",
+        "don't",
+        "won't",
+        "isn't"
+      ],
+      "t": 0,
+      "izoh": "'She' bilan doesn't.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#83fdf50a"
+    },
+    {
+      "q": "If they ___ come, we will start without them.",
+      "v": [
+        "don't",
+        "doesn't",
+        "won't",
+        "aren't"
+      ],
+      "t": 0,
+      "izoh": "'They' bilan don't.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#1015209e"
+    },
+    {
+      "q": "If it ___ rain, we will have a picnic.",
+      "v": [
+        "doesn't",
+        "don't",
+        "won't",
+        "isn't"
+      ],
+      "t": 0,
+      "izoh": "'It' bilan doesn't.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#04fd41fb"
+    },
+    {
+      "q": "If we ___ leave now, we will be stuck in traffic.",
+      "v": [
+        "don't",
+        "doesn't",
+        "won't",
+        "aren't"
+      ],
+      "t": 0,
+      "izoh": "'We' bilan don't.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#b30d5dcf"
+    },
+    {
+      "q": "You will fail ___ you work harder.",
+      "v": [
+        "unless",
+        "if",
+        "when",
+        "so"
+      ],
+      "t": 0,
+      "izoh": "'Unless' = 'if... not' (agar ... bo'lmasa).",
+      "qiy": "orta",
+      "id": "ing_b1_m3#42285781"
+    },
+    {
+      "q": "___ you hurry, you will miss the train.",
+      "v": [
+        "Unless",
+        "If not",
+        "When not",
+        "So"
+      ],
+      "t": 0,
+      "izoh": "Unless = agar shoshilmasang.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#d8d7c8ec"
+    },
+    {
+      "q": "I won't go to the party ___ you come with me.",
+      "v": [
+        "unless",
+        "if",
+        "when",
+        "because"
+      ],
+      "t": 0,
+      "izoh": "unless you come = agar kelmasang.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#25118c85"
+    },
+    {
+      "q": "Choose the correct meaning: 'Unless it rains, we will play.'",
+      "v": [
+        "We will play if it does not rain.",
+        "We will play if it rains.",
+        "We will not play at all.",
+        "It always rains."
+      ],
+      "t": 0,
+      "izoh": "Unless = agar yomg'ir yog'masa.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#7b2873c7"
+    },
+    {
+      "q": "She won't sign the contract ___ she reads it first.",
+      "v": [
+        "unless",
+        "if",
+        "when",
+        "and"
+      ],
+      "t": 0,
+      "izoh": "unless she reads = agar o'qimasa.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#916a9a3b"
+    },
+    {
+      "q": "___ you save money, you won't be able to travel.",
+      "v": [
+        "Unless",
+        "If",
+        "When",
+        "So"
+      ],
+      "t": 0,
+      "izoh": "Unless you save = agar tejamasang.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#ea8c4e3a"
+    },
+    {
+      "q": "The plant will die ___ you water it.",
+      "v": [
+        "unless",
+        "if",
+        "when",
+        "after"
+      ],
+      "t": 0,
+      "izoh": "unless you water = agar sug'ormasang.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#f5745a40"
+    },
+    {
+      "q": "We will be late ___ we leave now.",
+      "v": [
+        "unless",
+        "if",
+        "when",
+        "although"
+      ],
+      "t": 0,
+      "izoh": "unless we leave = agar ketmasak.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#e782c37e"
+    },
+    {
+      "q": "___ the sun goes down, it always gets colder. (a certain, regular event)",
+      "v": [
+        "When",
+        "Unless",
+        "If",
+        "So"
+      ],
+      "t": 0,
+      "izoh": "Aniq/muntazam hodisa uchun 'when'.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#5dd53c11"
+    },
+    {
+      "q": "___ I finish work, I always go straight home. (I always do)",
+      "v": [
+        "When",
+        "If",
+        "Unless",
+        "Because"
+      ],
+      "t": 0,
+      "izoh": "Doim sodir bo'lsa 'when'.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#2be82654"
+    },
+    {
+      "q": "___ it rains next week, we might cancel the trip. (not sure)",
+      "v": [
+        "If",
+        "When",
+        "Unless",
+        "So"
+      ],
+      "t": 0,
+      "izoh": "Noaniq ehtimol uchun 'if'.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#d820514d"
+    },
+    {
+      "q": "Call me ___ you arrive. I'm sure you will arrive.",
+      "v": [
+        "when",
+        "unless",
+        "although",
+        "if not"
+      ],
+      "t": 0,
+      "izoh": "Aniq keladi, shuning uchun 'when'.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#3b5f1ebb"
+    },
+    {
+      "q": "___ you are ready, we can leave. (maybe you are not ready yet)",
+      "v": [
+        "If",
+        "When",
+        "Unless",
+        "Because"
+      ],
+      "t": 0,
+      "izoh": "Noaniq holat uchun 'if'.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#a31b6b72"
+    },
+    {
+      "q": "Water boils ___ it reaches 100 degrees. (always true)",
+      "v": [
+        "when",
+        "if",
+        "unless",
+        "so"
+      ],
+      "t": 0,
+      "izoh": "Har doim sodir bo'lsa 'when'.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#4cdf6833"
+    },
+    {
+      "q": "___ you need help, just ask me. (I'm not sure you will)",
+      "v": [
+        "If",
+        "When",
+        "Unless",
+        "So"
+      ],
+      "t": 0,
+      "izoh": "Noaniq ehtiyoj uchun 'if'.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#efdd1c06"
+    },
+    {
+      "q": "Which sentence has correct comma punctuation?",
+      "v": [
+        "If it rains, we will stay home.",
+        "If it rains we will stay home.",
+        "If it rains; we will stay home.",
+        "If it rains: we will stay home."
+      ],
+      "t": 0,
+      "izoh": "If-clause boshda kelsa vergul qo'yiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#b5d716b4"
+    },
+    {
+      "q": "Which sentence is punctuated correctly?",
+      "v": [
+        "We will stay home if it rains.",
+        "We will stay home, if it rains.",
+        "We will stay home; if it rains.",
+        "We will, stay home if it rains."
+      ],
+      "t": 0,
+      "izoh": "If-clause oxirda kelsa vergul kerak emas.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#b2583f37"
+    },
+    {
+      "q": "Choose the correctly punctuated sentence.",
+      "v": [
+        "If you call me, I will answer.",
+        "If you call me I will answer.",
+        "If, you call me I will answer.",
+        "If you call me: I will answer."
+      ],
+      "t": 0,
+      "izoh": "Boshdagi if-clause'dan keyin vergul.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#ad8f9fcf"
+    },
+    {
+      "q": "Which one needs NO comma?",
+      "v": [
+        "I will help you if you ask.",
+        "If you ask I will help you.",
+        "If you ask, I will help you.",
+        "When you ask I will help you."
+      ],
+      "t": 0,
+      "izoh": "If-clause oxirda: vergulsiz to'g'ri.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#afe3ab46"
+    },
+    {
+      "q": "Pick the correctly punctuated sentence.",
+      "v": [
+        "If the bus is late, we will walk.",
+        "If the bus is late we will, walk.",
+        "If, the bus is late we will walk.",
+        "If the bus is late we, will walk."
+      ],
+      "t": 0,
+      "izoh": "If-clause boshda: vergul kerak.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#d2ad628c"
+    },
+    {
+      "q": "Which sentence is grammatically correct?",
+      "v": [
+        "If she comes, I will be happy.",
+        "If she will come, I will be happy.",
+        "If she comes, I am happy.",
+        "If she come, I will happy."
+      ],
+      "t": 0,
+      "izoh": "If + present, will + verb.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#129fc795"
+    },
+    {
+      "q": "Choose the correct first conditional sentence.",
+      "v": [
+        "If we don't leave now, we will be late.",
+        "If we won't leave now, we will be late.",
+        "If we don't leave now, we are late.",
+        "If we not leave now, we late."
+      ],
+      "t": 0,
+      "izoh": "If-clause'da don't, natijada will.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#4e740c35"
+    },
+    {
+      "q": "Which is correct?",
+      "v": [
+        "If you press this button, the machine will start.",
+        "If you will press this button, the machine start.",
+        "If you press this button, the machine starts will.",
+        "If you pressing this button, machine will start."
+      ],
+      "t": 0,
+      "izoh": "If + present simple, will + verb.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#bc249275"
+    },
+    {
+      "q": "Pick the correct sentence.",
+      "v": [
+        "If it gets dark, we will turn on the lights.",
+        "If it will get dark, we turn the lights.",
+        "If it gets dark, we turning on lights.",
+        "If it get dark, we will turned lights."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: If gets, will turn.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#6c88d1fc"
+    },
+    {
+      "q": "Which sentence is correct about the future?",
+      "v": [
+        "If he doesn't call, I will worry.",
+        "If he don't call, I will worry.",
+        "If he doesn't call, I worried.",
+        "If he not call, I will worry."
+      ],
+      "t": 0,
+      "izoh": "'He' bilan doesn't.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#fd53c502"
+    },
+    {
+      "q": "Choose the correct one.",
+      "v": [
+        "If they invite me, I will go.",
+        "If they will invite me, I will go.",
+        "If they invite me, I go.",
+        "If they invites me, I will go."
+      ],
+      "t": 0,
+      "izoh": "If + present, will + verb.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#f0a32973"
+    },
+    {
+      "q": "Which sentence with an imperative is correct?",
+      "v": [
+        "If the phone rings, please answer it.",
+        "If the phone will ring, please answer it.",
+        "If the phone rings, you answering it.",
+        "If the phone ring, please answered it."
+      ],
+      "t": 0,
+      "izoh": "Imperativ ham natija qismida bo'lishi mumkin.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#4e3b6f7f"
+    },
+    {
+      "q": "Find the error: 'If you will help me, I will finish faster.'",
+      "v": [
+        "'will help' should be 'help'",
+        "'will finish' should be 'finish'",
+        "'me' should be 'my'",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "If-clause'da 'will' ishlatilmaydi.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#4aa27558"
+    },
+    {
+      "q": "Find the error: 'If it rains, we stayed at home.'",
+      "v": [
+        "'stayed' should be 'will stay'",
+        "'rains' should be 'rained'",
+        "'If' should be 'When'",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "Natija qismida will kerak, past emas.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#704da38c"
+    },
+    {
+      "q": "Find the error: 'If she doesn't hurries, she will be late.'",
+      "v": [
+        "'hurries' should be 'hurry'",
+        "'doesn't' should be 'don't'",
+        "'will be' should be 'is'",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "'doesn't' + asosiy fe'l (hurry).",
+      "qiy": "orta",
+      "id": "ing_b1_m3#98f17564"
+    },
+    {
+      "q": "Find the error: 'If we will win, we celebrate.'",
+      "v": [
+        "'will win' should be 'win' and 'celebrate' should be 'will celebrate'",
+        "only 'win' is wrong",
+        "only 'celebrate' is wrong",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "If-clause present, natija will.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#cd485b46"
+    },
+    {
+      "q": "Find the error: 'If you don't wear a coat, you catch a cold.'",
+      "v": [
+        "'catch' should be 'will catch'",
+        "'don't' should be 'doesn't'",
+        "'wear' should be 'wears'",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "Natijada 'will catch' bo'lishi kerak.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#f9d2feb0"
+    },
+    {
+      "q": "Find the error: 'If he study tonight, he will pass.'",
+      "v": [
+        "'study' should be 'studies'",
+        "'will pass' should be 'passes'",
+        "'If' should be 'Unless'",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "'He' bilan studies.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#e845f7e9"
+    },
+    {
+      "q": "Find the error: 'Unless you don't practise, you won't improve.'",
+      "v": [
+        "Remove 'don't' (unless already means 'if not')",
+        "'won't' should be 'will'",
+        "'practise' should be 'practises'",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "Unless o'zi inkorni bildiradi, don't ortiqcha.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#931739c9"
+    },
+    {
+      "q": "Find the error: 'If the alarm rings we will leave.'",
+      "v": [
+        "A comma is missing after 'rings'",
+        "'rings' should be 'will ring'",
+        "'will leave' should be 'leave'",
+        "No error"
+      ],
+      "t": 0,
+      "izoh": "If-clause boshda: vergul kerak.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#e0f6181f"
+    },
+    {
+      "q": "Put in order: (if you come) (I will stay)",
+      "v": [
+        "If you come, I will stay.",
+        "I will stay if you come will.",
+        "If will you come, I stay.",
+        "You if come, will I stay."
+      ],
+      "t": 0,
+      "izoh": "If-clause + natija tartibi.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#4c8304f7"
+    },
+    {
+      "q": "Put in order: (if it rains) (we will cancel the trip)",
+      "v": [
+        "If it rains, we will cancel the trip.",
+        "We will cancel if it rains the trip.",
+        "If it will rain, we cancel the trip.",
+        "It rains if, we will cancel the trip."
+      ],
+      "t": 0,
+      "izoh": "If + present, will + verb.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#5a2ee42e"
+    },
+    {
+      "q": "Put in order: (unless we hurry) (we will miss the bus)",
+      "v": [
+        "Unless we hurry, we will miss the bus.",
+        "We will miss unless we hurry the bus.",
+        "Unless we will hurry, we miss the bus.",
+        "We hurry unless, will miss the bus."
+      ],
+      "t": 0,
+      "izoh": "Unless + present, will + verb.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#4ccb1613"
+    },
+    {
+      "q": "Which word order is correct (no comma version)?",
+      "v": [
+        "You will pass if you study.",
+        "You will pass if you will study.",
+        "If you study you pass will.",
+        "You study if will you pass."
+      ],
+      "t": 0,
+      "izoh": "Natija + if-clause: vergulsiz.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#57099b2f"
+    },
+    {
+      "q": "Put in order: (if you need help) (call me)",
+      "v": [
+        "If you need help, call me.",
+        "Call me if you need help you.",
+        "If you need, call help me.",
+        "You need help if call me."
+      ],
+      "t": 0,
+      "izoh": "Imperativ natija bilan.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#d6491edd"
+    },
+    {
+      "q": "Put in order: (if you are late) (we won't start)",
+      "v": [
+        "If you are late, we won't start.",
+        "We won't start you are late if.",
+        "If you late are, we won't start.",
+        "You are late if, won't we start."
+      ],
+      "t": 0,
+      "izoh": "If + present, won't + verb.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#3f9b2924"
+    },
+    {
+      "q": "Rewrite: 'Study hard or you will fail.' -> 'If you ___ study hard, you will fail.'",
+      "v": [
+        "don't",
+        "won't",
+        "not",
+        "aren't"
+      ],
+      "t": 0,
+      "izoh": "'or you will fail' = 'if you don't...'",
+      "qiy": "orta",
+      "id": "ing_b1_m3#f10313d1"
+    },
+    {
+      "q": "Rewrite with 'unless': 'If you don't leave now, you will be late.'",
+      "v": [
+        "Unless you leave now, you will be late.",
+        "Unless you don't leave now, you will be late.",
+        "If you leave now, you will be late.",
+        "Unless you will leave, you are late."
+      ],
+      "t": 0,
+      "izoh": "'if not' = 'unless' (don't olib tashlanadi).",
+      "qiy": "orta",
+      "id": "ing_b1_m3#79493f9b"
+    },
+    {
+      "q": "Rewrite: 'Hurry, or we will miss the film.' -> 'If we ___ hurry, we will miss the film.'",
+      "v": [
+        "don't",
+        "won't",
+        "not",
+        "aren't"
+      ],
+      "t": 0,
+      "izoh": "'or' -> 'if... don't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#9713782c"
+    },
+    {
+      "q": "Change to first conditional: 'Save money. Then you can travel.'",
+      "v": [
+        "If you save money, you will be able to travel.",
+        "If you saved money, you travelled.",
+        "If you will save money, you travel.",
+        "You save money, you travel."
+      ],
+      "t": 0,
+      "izoh": "If + present, will (be able to).",
+      "qiy": "orta",
+      "id": "ing_b1_m3#e00560dd"
+    },
+    {
+      "q": "Rewrite with 'if': 'Without a ticket, you can't enter.' -> 'If you ___ a ticket, you can't enter.'",
+      "v": [
+        "don't have",
+        "won't have",
+        "haven't",
+        "not have"
+      ],
+      "t": 0,
+      "izoh": "'without' -> 'if you don't have'.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#2e75f0b0"
+    },
+    {
+      "q": "Rewrite: 'Take an umbrella or you will get wet.' -> 'If you ___ take an umbrella, you will get wet.'",
+      "v": [
+        "don't",
+        "won't",
+        "not",
+        "aren't"
+      ],
+      "t": 0,
+      "izoh": "'or' -> 'if... don't'.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#5582bf72"
+    },
+    {
+      "q": "Transform with 'unless': 'You will get ill if you don't rest.'",
+      "v": [
+        "You will get ill unless you rest.",
+        "You will get ill unless you don't rest.",
+        "Unless you get ill, you rest.",
+        "You rest unless you get ill."
+      ],
+      "t": 0,
+      "izoh": "if not -> unless.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#3608cf3e"
+    },
+    {
+      "q": "If the teacher ___ us homework, we will do it tonight.",
+      "v": [
+        "gives",
+        "will give",
+        "gave",
+        "give"
+      ],
+      "t": 0,
+      "izoh": "'The teacher' bilan gives.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#8bc09fbd"
+    },
+    {
+      "q": "If you ___ the red button, the alarm will go off.",
+      "v": [
+        "press",
+        "will press",
+        "pressed",
+        "presses"
+      ],
+      "t": 0,
+      "izoh": "'You' bilan press.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#8d5d871d"
+    },
+    {
+      "q": "If my friends ___ over, we will watch a film.",
+      "v": [
+        "come",
+        "will come",
+        "came",
+        "comes"
+      ],
+      "t": 0,
+      "izoh": "'My friends' bilan come.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#b71e4d3f"
+    },
+    {
+      "q": "If the baby ___, the mother will wake up.",
+      "v": [
+        "cries",
+        "will cry",
+        "cried",
+        "cry"
+      ],
+      "t": 0,
+      "izoh": "'The baby' bilan cries.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#29a7d962"
+    },
+    {
+      "q": "If I ___ the lottery, I will buy a house.",
+      "v": [
+        "win",
+        "will win",
+        "won",
+        "wins"
+      ],
+      "t": 0,
+      "izoh": "'I' bilan win.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#141ada68"
+    },
+    {
+      "q": "If we ___ the meeting, the boss will be angry.",
+      "v": [
+        "miss",
+        "will miss",
+        "missed",
+        "misses"
+      ],
+      "t": 0,
+      "izoh": "'We' bilan miss.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#2f4a6551"
+    },
+    {
+      "q": "If it ___ sunny, we will go to the beach.",
+      "v": [
+        "is",
+        "will be",
+        "was",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'It' bilan is.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#ce68a1d4"
+    },
+    {
+      "q": "If you ___ your homework, the teacher will be pleased.",
+      "v": [
+        "finish",
+        "will finish",
+        "finished",
+        "finishes"
+      ],
+      "t": 0,
+      "izoh": "'You' bilan finish.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#648fb761"
+    },
+    {
+      "q": "If she ___ the exam, her parents will be proud.",
+      "v": [
+        "passes",
+        "will pass",
+        "passed",
+        "pass"
+      ],
+      "t": 0,
+      "izoh": "'She' bilan passes.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#610de771"
+    },
+    {
+      "q": "If they ___ hard, they will win the cup.",
+      "v": [
+        "train",
+        "will train",
+        "trained",
+        "trains"
+      ],
+      "t": 0,
+      "izoh": "'They' bilan train.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#5c3c3b3d"
+    },
+    {
+      "q": "If the road ___ icy, we will drive slowly.",
+      "v": [
+        "is",
+        "will be",
+        "was",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'The road' bilan is.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#ded379f1"
+    },
+    {
+      "q": "If you ___ tired, you will make mistakes.",
+      "v": [
+        "are",
+        "will be",
+        "were",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'You' bilan are.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#967291fb"
+    },
+    {
+      "q": "If he ___ his keys, he won't get into the house.",
+      "v": [
+        "loses",
+        "will lose",
+        "lost",
+        "lose"
+      ],
+      "t": 0,
+      "izoh": "'He' bilan loses.",
+      "qiy": "orta",
+      "id": "ing_b1_m3#ecdbbb35"
+    }
+  ]
+}

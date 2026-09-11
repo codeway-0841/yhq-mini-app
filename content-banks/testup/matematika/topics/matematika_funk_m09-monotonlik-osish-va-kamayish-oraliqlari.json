@@ -1,0 +1,1609 @@
+{
+  "nom": "Monotonlik, o'sish va kamayish oraliqlari",
+  "bolim": "Funksiyalar",
+  "blok": "funk",
+  "rasmiyBolim": 4,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "f(x) = 3x − 7 funksiyaning x₁ = 2 va x₂ = 6 nuqtalaridagi qiymatlarini hisoblab, monotonlik ta'rifi asosida to'g'ri xulosani tanlang.",
+      "v": [
+        "f(2) = −1, f(6) = 11; kattaroq argumentga kattaroq qiymat mos keladi, demak funksiya o'suvchi",
+        "f(2) = 13, f(6) = 25; ozod had qo'shib yuborilgan, funksiya o'suvchi",
+        "f(2) = −1, f(6) = 11; qiymat ortsa ham funksiya kamayuvchi hisoblanadi",
+        "f(2) = −1, f(6) = 11; ikki nuqta bo'yicha monotonlik haqida gapirib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "f(2) = 3·2 − 7 = −1 va f(6) = 3·6 − 7 = 11. Ta'rifga ko'ra x₁ < x₂ bo'lganda f(x₁) < f(x₂) bo'lsa, funksiya o'suvchi. Bu yerda 2 < 6 va −1 < 11, demak shart bajarilyapti. Chiziqli funksiyada burchak koeffitsienti 3 musbat bo'lgani uchun bu xulosa butun sohaga tarqaladi. Javob: funksiya o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tarif-boyicha-tekshirish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#52268954"
+    },
+    {
+      "q": "g(x) = 12 − 4x funksiyaning x₁ = −1 va x₂ = 3 nuqtalaridagi qiymatlarini solishtiring va ta'rif yordamida monotonlik turini aniqlang.",
+      "v": [
+        "g(−1) = 8, g(3) = 24; argument ortganda qiymat ham ortdi, demak o'suvchi",
+        "g(−1) = 16, g(3) = 0; ikki nuqtani taqqoslash monotonlik haqida hech narsa bermaydi",
+        "g(−1) = 16, g(3) = 0; argument ortganda qiymat kamaydi, demak kamayuvchi",
+        "g(−1) = 16, g(3) = 0; qiymat kamaysa ham funksiya o'suvchi bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "g(−1) = 12 − 4·(−1) = 12 + 4 = 16 va g(3) = 12 − 4·3 = 0. Argument −1 dan 3 gacha ortdi, qiymat esa 16 dan 0 gacha kamaydi. Ta'rifga ko'ra x₁ < x₂ da f(x₁) > f(x₂) bo'lsa, funksiya kamayuvchi. Birinchi variantda minus ishorasi noto'g'ri qo'llangan. Javob: kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tarif-boyicha-tekshirish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#a6e8d432"
+    },
+    {
+      "q": "f(x) = 5x + 2 funksiya uchun ixtiyoriy x₁ < x₂ da f(x₂) − f(x₁) ayirma qanday ko'rinishga keladi va bundan qanday xulosa chiqadi?",
+      "v": [
+        "5(x₂ − x₁) + 2; ozod had ayirmada saqlanib qoladi, ishora noaniq bo'ladi",
+        "5(x₂ − x₁); x₂ − x₁ > 0 bo'lgani uchun ayirma musbat, funksiya o'suvchi",
+        "5(x₁ − x₂); ayirma manfiy chiqadi, demak funksiya kamayuvchi",
+        "x₂ − x₁; koeffitsient tushib qoladi, monotonlik aniqlanmaydi"
+      ],
+      "t": 1,
+      "izoh": "f(x₂) − f(x₁) = (5x₂ + 2) − (5x₁ + 2) = 5x₂ − 5x₁ = 5(x₂ − x₁). Ozod had 2 ayirishda qisqaradi, shuning uchun u ishoraga ta'sir qilmaydi. x₁ < x₂ shartidan x₂ − x₁ > 0 kelib chiqadi, 5 esa musbat. Demak ayirma musbat, ya'ni f(x₂) > f(x₁). Javob: funksiya o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-boyicha-tekshirish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#f0ee1994"
+    },
+    {
+      "q": "Anvar sovutgichdan olingan sutni stolda qoldirdi va uning harorati H(t) = 4 + 1,5·t (°C) qonuniyat bilan o'zgardi, bu yerda t — daqiqalar soni. H(6) va H(14) qiymatlarini taqqoslab, xulosa chiqaring.",
+      "v": [
+        "H(6) = 9 °C, H(14) = 21 °C; boshlang'ich 4 °C hisobga olinmagan, harorat o'zgarmas",
+        "H(6) = 25 °C, H(14) = 13 °C; harorat pasayadi, demak H kamayuvchi",
+        "H(6) = 13 °C, H(14) = 25 °C; vaqt ortganda harorat ham ortadi, demak H o'suvchi",
+        "H(6) = 13 °C, H(14) = 25 °C; ikki qiymatga qarab monotonlik aytilmaydi"
+      ],
+      "t": 2,
+      "izoh": "H(6) = 4 + 1,5·6 = 4 + 9 = 13 va H(14) = 4 + 1,5·14 = 4 + 21 = 25. Vaqt 6 dan 14 gacha ortganda harorat 13 dan 25 gacha ko'tarildi. Ta'rifga ko'ra bu o'suvchi funksiya belgisi, chunki t oldidagi koeffitsient 1,5 musbat. Javob: H o'suvchi funksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tarif-boyicha-tekshirish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#ee3adf9f"
+    },
+    {
+      "q": "f(x) = 7 − 2x funksiya uchun x₁ < x₂ shartida f(x₂) − f(x₁) ayirmani soddalashtiring va monotonlik turini ta'rif bilan asoslang.",
+      "v": [
+        "2(x₂ − x₁); ayirma musbat bo'lgani uchun funksiya o'suvchi",
+        "−2(x₂ − x₁) + 7; ozod had ayirmada saqlanadi, ishora noaniq",
+        "7(x₂ − x₁); ozod had koeffitsient deb olingan, funksiya o'suvchi",
+        "−2(x₂ − x₁); x₂ − x₁ > 0 bo'lgani uchun ayirma manfiy, funksiya kamayuvchi"
+      ],
+      "t": 3,
+      "izoh": "f(x₂) − f(x₁) = (7 − 2x₂) − (7 − 2x₁) = −2x₂ + 2x₁ = −2(x₂ − x₁). Ozod had 7 qisqaradi. x₁ < x₂ bo'lgani uchun x₂ − x₁ > 0, uni −2 ga ko'paytirsak manfiy son chiqadi. Demak f(x₂) < f(x₁) va funksiya kamayuvchi. Javob: kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tarif-boyicha-tekshirish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#0fbf13d0"
+    },
+    {
+      "q": "Mobil aloqa tarifida oylik to'lov S(x) = 45000 + 120·x so'm formula bilan hisoblanadi, bu yerda x — sarflangan daqiqalar soni. Bu funksiyaning monotonligi haqida to'g'ri fikrni tanlang.",
+      "v": [
+        "Butun aniqlanish sohasida o'suvchi, chunki bir daqiqa narxi 120 musbat",
+        "Kamayuvchi, chunki 45000 so'm abonent to'lovi doimiy saqlanadi",
+        "Monoton emas, chunki ikki qo'shiluvchidan biri o'zgarmas songa teng",
+        "x < 375 da kamayadi, x > 375 da o'sadi"
+      ],
+      "t": 0,
+      "izoh": "S(x) chiziqli funksiya, uning burchak koeffitsienti 120. Har bir qo'shimcha daqiqa to'lovni 120 so'mga oshiradi, ya'ni x ortganda S ham ortadi. Doimiy qo'shiluvchi 45000 grafikni yuqoriga suradi, lekin monotonlikka ta'sir qilmaydi. Javob: funksiya butun sohada o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#63ab255b"
+    },
+    {
+      "q": "Toshkentdan Samarqandga ketayotgan avtobusning manzilgacha qolgan masofasi L(t) = 280 − 65·t km, bu yerda t — yo'lda o'tgan soatlar soni. Funksiya monotonligi va uning ma'nosi to'g'ri berilgan javobni belgilang.",
+      "v": [
+        "O'suvchi: vaqt o'tishi bilan qolgan masofa ham ortib boradi",
+        "Kamayuvchi: har soatda qolgan masofa 65 km ga qisqaradi",
+        "Monoton emas: t = 4 dan keyin funksiya yo'nalishini o'zgartiradi",
+        "O'zgarmas: 280 km butun harakat davomida saqlanib qoladi"
+      ],
+      "t": 1,
+      "izoh": "L(t) chiziqli funksiya va uning burchak koeffitsienti −65, ya'ni manfiy. Manfiy koeffitsientda argument ortganda funksiya qiymati kamayadi. Ma'no jihatidan ham to'g'ri: avtobus yurgan sari manzilgacha qolgan masofa qisqaradi, har soatda 65 km ga. Javob: kamayuvchi funksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#9ba7c721"
+    },
+    {
+      "q": "y = −0,8x + 12 va y = 0,8x − 12 funksiyalarning monotonligi haqidagi to'g'ri xulosani belgilang.",
+      "v": [
+        "Ikkalasi ham o'suvchi, chunki burchak koeffitsientlarining moduli teng",
+        "Ikkalasi ham kamayuvchi, chunki ozod hadlar qarama-qarshi ishorali",
+        "Birinchisi o'suvchi, ikkinchisi kamayuvchi",
+        "Birinchisi kamayuvchi, ikkinchisi o'suvchi"
+      ],
+      "t": 3,
+      "izoh": "Chiziqli funksiyaning monotonligini faqat x oldidagi koeffitsient belgilaydi. Birinchi funksiyada u −0,8 bo'lib manfiy, demak funksiya kamayuvchi. Ikkinchisida koeffitsient 0,8 musbat, demak funksiya o'suvchi. Ozod hadlar 12 va −12 grafikni yuqoriga yoki pastga suradi, yo'nalishga ta'sir qilmaydi. Javob: birinchisi kamayuvchi, ikkinchisi o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziqli-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#756f19cc"
+    },
+    {
+      "q": "Xodimning oylik daromadi D(n) = 3200000 + 85000·n so'm bo'lib, n — oy davomida bajarilgan qo'shimcha buyurtmalar soni. Daromadning o'sishi qanday tekshiriladi va natija qanday bo'ladi?",
+      "v": [
+        "Burchak koeffitsienti 85000 > 0 ekani tekshiriladi, demak funksiya o'suvchi",
+        "Ozod had 3200000 > 0 ekani tekshiriladi, demak funksiya o'suvchi",
+        "Burchak koeffitsienti 85000 > 0 ekani tekshiriladi, demak funksiya kamayuvchi",
+        "n ning faqat musbat ekani tekshiriladi, demak funksiya monoton emas"
+      ],
+      "t": 0,
+      "izoh": "Chiziqli funksiyada monotonlik mezoni — argument oldidagi koeffitsientning ishorasi. Bu yerda u 85000 va musbat, shuning uchun n ortganda D ham ortadi. Ozod had 3200000 boshlang'ich maoshni bildiradi, u har qanday n da bir xil qo'shiladi va yo'nalishni belgilamaydi. Javob: koeffitsient musbat, funksiya o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziqli-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#495416e5"
+    },
+    {
+      "q": "y = x² − 6x + 5 parabolaning o'sish va kamayish oraliqlarini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "(−∞; 3) da kamayadi, (3; +∞) da o'sadi",
+        "(−∞; 3) da o'sadi, (3; +∞) da kamayadi",
+        "(−∞; 6) da kamayadi, (6; +∞) da o'sadi",
+        "(−∞; −3) da kamayadi, (−3; +∞) da o'sadi"
+      ],
+      "t": 0,
+      "izoh": "Parabolaning uchi abssissasi x₀ = −b/(2a) formula bilan topiladi: x₀ = 6/(2·1) = 3. Koeffitsient a = 1 musbat, demak tarmoqlar yuqoriga qaragan va uchgacha funksiya kamayadi, uchdan keyin o'sadi. Uchinchi variantda 2a ga bo'lish bajarilmagan (−b = 6 olib qo'yilgan), to'rtinchisida esa formuladagi minus ishorasi tushirib qoldirilgan: b/(2a) = −3. Javob: (−∞; 3) da kamayadi, (3; +∞) da o'sadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratik-funksiya-oraliqlari",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#d4a667f9"
+    },
+    {
+      "q": "y = −2x² + 20x − 7 funksiya qaysi oraliqda o'suvchi ekanligini aniqlang.",
+      "v": [
+        "(5; +∞)",
+        "(−∞; 5)",
+        "(−∞; −5)",
+        "(−∞; 20)"
+      ],
+      "t": 1,
+      "izoh": "Uch abssissasi x₀ = −b/(2a) = −20/(2·(−2)) = 5. Koeffitsient a = −2 manfiy, shuning uchun parabola tarmoqlari pastga qaragan: uchgacha funksiya o'sadi, uchdan keyin kamayadi. Demak o'sish oralig'i (−∞; 5). To'rtinchi variantda 2a ga bo'lish unutilgan. Javob: (−∞; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratik-funksiya-oraliqlari",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#245c450f"
+    },
+    {
+      "q": "Bolalar maydonchasida tik yuqoriga otilgan koptokning balandligi h(t) = 20t − 5t² metr bilan ifodalanadi, bu yerda t — sekundlarda o'lchangan vaqt. Koptok qaysi oraliqda ko'tariladi va qaysi oraliqda pasayadi?",
+      "v": [
+        "(0; 4) da to'xtovsiz ko'tariladi, so'ng birdan pasayadi",
+        "(0; 2) da pasayadi, (2; 4) da ko'tariladi",
+        "(0; 10) da ko'tariladi, (10; 20) da pasayadi",
+        "(0; 2) da ko'tariladi, (2; 4) da pasayadi"
+      ],
+      "t": 3,
+      "izoh": "Balandlik kvadratik funksiya, a = −5 manfiy, demak grafik pastga qaragan parabola. Uch abssissasi t₀ = −20/(2·(−5)) = 2 sekund, eng katta balandlik h(2) = 40 − 20 = 20 metr. Uchgacha funksiya o'sadi, keyin kamayadi. Yerga tushish vaqti h(t) = 0 dan topiladi: 5t(4 − t) = 0, ya'ni t = 4. Javob: (0; 2) da ko'tariladi, (2; 4) da pasayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratik-funksiya-oraliqlari",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#fdb82b09"
+    },
+    {
+      "q": "Kichik korxona bir oyda x ming dona mahsulot ishlab chiqarganda foydasi P(x) = 60x − x² mln so'm bo'ladi. Foyda ishlab chiqarishning qaysi oralig'ida o'sib boradi?",
+      "v": [
+        "(30; 60)",
+        "(0; 60)",
+        "(0; 30)",
+        "(30; +∞)"
+      ],
+      "t": 2,
+      "izoh": "P(x) kvadratik funksiya, a = −1 manfiy, shuning uchun grafik pastga qaragan parabola. Uch abssissasi x₀ = −60/(2·(−1)) = 30. Uchgacha foyda o'sadi, undan keyin kamaya boshlaydi. Ishlab chiqarish hajmi manfiy bo'lolmaydi, shuning uchun o'sish oralig'i (0; 30). Birinchi variant kamayish oralig'i, ikkinchisi esa butun musbat qismni bergan. Javob: (0; 30).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratik-funksiya-oraliqlari",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#348d1e32"
+    },
+    {
+      "q": "y = x² + 10x + 21 funksiya kamayadigan eng katta oraliqni ko'rsating.",
+      "v": [
+        "(−∞; −5)",
+        "(−5; +∞)",
+        "(−∞; 5)",
+        "(−∞; −10)"
+      ],
+      "t": 0,
+      "izoh": "Uch abssissasi x₀ = −b/(2a) = −10/(2·1) = −5. Bosh koeffitsient a = 1 musbat bo'lgani uchun tarmoqlar yuqoriga qaragan, ya'ni uchgacha funksiya kamayadi. Demak kamayish oralig'i (−∞; −5). Uchinchi variantda minus tushirib qoldirilgan, to'rtinchisida 2a ga bo'lish bajarilmagan. Javob: (−∞; −5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratik-funksiya-oraliqlari",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#08694f86"
+    },
+    {
+      "q": "Nurafshon shahrida bir hafta davomida kunlik havo harorati quyidagicha qayd etildi (°C): dushanba 18, seshanba 21, chorshanba 23, payshanba 23, juma 26. Harorat funksiyasi haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "Qat'iy o'suvchi, chunki oxirgi qiymat birinchisidan ancha katta",
+        "Qat'iy o'suvchi emas: chorshanba va payshanba qiymatlari teng, funksiya faqat kamaymaydi",
+        "Kamayuvchi, chunki ketma-ketlikda teng qiymatlar uchraydi",
+        "Monotonlik umuman aniqlanmaydi, chunki qiymatlar diskret berilgan"
+      ],
+      "t": 1,
+      "izoh": "Qat'iy o'suvchilik uchun har bir keyingi qiymat oldingisidan qat'iy katta bo'lishi shart. Bu yerda 18 < 21 < 23, lekin chorshanba va payshanba qiymatlari teng: 23 = 23. Shu joyda qat'iy tengsizlik buzilyapti, biroq hech qayerda kamayish yo'q. Demak funksiya kamaymaydigan, ammo qat'iy o'suvchi emas. Javob: ikkinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-qiymatlari-boyicha-monotonlik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#6db74947"
+    },
+    {
+      "q": "Do'kondagi bir litr sut narxi olti oy davomida quyidagicha o'zgardi (ming so'm): 12; 13; 15; 14; 16; 18. Narx funksiyasining monotonligi haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Monoton o'suvchi, chunki oxirgi narx boshlang'ich narxdan baland",
+        "Monoton kamayuvchi, chunki ketma-ketlikda pasayish kuzatilgan",
+        "Monoton emas: to'rtinchi oyda narx pasaygan, keyin yana ko'tarilgan",
+        "Monoton o'suvchi, chunki pasayish faqat bitta joyda uchraydi"
+      ],
+      "t": 2,
+      "izoh": "Monotonlik uchun o'zgarish yo'nalishi butun oraliqda bir xil bo'lishi kerak. Uchinchi oydan to'rtinchi oyga o'tishda narx 15 dan 14 ga tushdi, ya'ni kamaydi. Undan keyin esa 14, 16, 18 bo'lib yana ortdi. Yo'nalish ikki marta o'zgargani uchun funksiya na o'suvchi, na kamayuvchi. Javob: monoton emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-qiymatlari-boyicha-monotonlik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#52854195"
+    },
+    {
+      "q": "Jadvalda f funksiyaning to'rtta qiymati berilgan: f(−4) = 9, f(−1) = 5, f(2) = 5, f(6) = 1. Berilgan nuqtalarda funksiya qanday xossaga ega?",
+      "v": [
+        "Qat'iy o'suvchi, chunki argumentlar ketma-ket ortib bormoqda",
+        "Qat'iy kamayuvchi, chunki eng oxirgi qiymat eng kichigi",
+        "Qat'iy kamayuvchi emas: f(−1) = f(2) bo'lgani uchun funksiya faqat ortmaydi",
+        "Berilgan nuqtalarda qiymat goh ortib, goh kamayib bormoqda"
+      ],
+      "t": 2,
+      "izoh": "Argumentlar −4, −1, 2, 6 tartibida ortib boradi, qiymatlar esa 9, 5, 5, 1. Hech qayerda qiymat ortmagan, demak funksiya kamaymoqda deyish mumkin, lekin f(−1) va f(2) teng. Qat'iy kamayuvchilik har bir qadamda qat'iy kichrayishni talab qiladi, shu shart buzilgan. Javob: qat'iy kamayuvchi emas, faqat ortmaydigan funksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-qiymatlari-boyicha-monotonlik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#3f26ba3f"
+    },
+    {
+      "q": "Sardor besh kun davomida yugurgan masofasini daftariga yozib bordi (km): 3; 5; 8; 12; 17. Kundalik o'sish qanday o'zgaryapti va ketma-ketlikning monotonligi qanday?",
+      "v": [
+        "O'sish har kuni bir kilometrga ortib bormoqda, ketma-ketlik qat'iy o'suvchi",
+        "O'sish doimiy va ikki kilometrga teng, ketma-ketlik qat'iy o'suvchi",
+        "O'sish asta kamayib bormoqda, shuning uchun ketma-ketlik kamayuvchi",
+        "O'sish bir xil emas, shuning uchun ketma-ketlik monoton bo'la olmaydi"
+      ],
+      "t": 0,
+      "izoh": "Qo'shni hadlar ayirmasini topamiz: 5 − 3 = 2, 8 − 5 = 3, 12 − 8 = 4, 17 − 12 = 5. Ayirmalar 2, 3, 4, 5 bo'lib har safar bittaga ortyapti. Barcha ayirmalar musbat bo'lgani uchun ketma-ketlik qat'iy o'suvchi. O'sish tezligining o'zgarishi monotonlikni buzmaydi. Javob: birinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-qiymatlari-boyicha-monotonlik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#dabb69dc"
+    },
+    {
+      "q": "y = 6/x funksiyaning monotonligi haqidagi eng aniq va to'g'ri xulosa qaysi?",
+      "v": [
+        "Butun aniqlanish sohasida kamayuvchi funksiya",
+        "(−∞; 0) va (0; +∞) oraliqlarining har birida alohida kamayadi",
+        "Butun aniqlanish sohasida o'suvchi funksiya",
+        "(−∞; 0) da o'sadi, (0; +∞) da kamayadi"
+      ],
+      "t": 1,
+      "izoh": "Giperbolaning aniqlanish sohasi x = 0 nuqtada uziladi va ikkita bo'lakka ajraladi. Har bir bo'lakda funksiya kamayadi, lekin butun soha bo'ylab bunday deyish mumkin emas: masalan −2 < 3 bo'lsa ham f(−2) = −3 va f(3) = 2, ya'ni f(−2) < f(3). Shuning uchun kamayish har bir oraliqda alohida qayd etiladi. Javob: ikkinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#0326f365"
+    },
+    {
+      "q": "Bir xil ish n nafar ishchi tomonidan bajarilganda har biriga tushadigan vaqt T(n) = 180/n soatga teng bo'ladi. T funksiyaning n > 0 dagi monotonligi qanday?",
+      "v": [
+        "Kamayuvchi: ishchilar soni ortganda har biriga tushadigan vaqt qisqaradi",
+        "O'suvchi: ishchilar soni ortganda vaqt ham ortib boradi",
+        "O'zgarmas: umumiy ish hajmi doimiy bo'lgani uchun vaqt saqlanadi",
+        "n = 90 gacha kamayadi, undan keyin esa o'sa boshlaydi"
+      ],
+      "t": 0,
+      "izoh": "T(n) = 180/n teskari proporsional bog'lanish. Surat 180 musbat bo'lgani uchun n > 0 da maxraj ortganda kasr kichrayadi. Masalan T(4) = 45, T(9) = 20: 4 < 9 va 45 > 20. Amaliy ma'nosi ham shunday, ishchilar ko'paysa har biriga kamroq vaqt tushadi. Javob: kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "giperbola-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#0d5a4e5d"
+    },
+    {
+      "q": "y = 4/(x − 3) funksiya qaysi to'plamlarda kamayuvchi ekanligini to'g'ri ko'rsatgan javobni belgilang.",
+      "v": [
+        "Butun haqiqiy sonlar to'plamining hammasida",
+        "(3; +∞) oralig'ida, chap tomonda esa o'sadi",
+        "(−∞; 3) va (3; +∞) oraliqlarining har birida",
+        "(−∞; 0) va (0; +∞) oraliqlarining har birida"
+      ],
+      "t": 2,
+      "izoh": "Funksiya x = 3 da aniqlanmagan, shuning uchun aniqlanish sohasi ikkita oraliqqa ajraladi. Surat 4 musbat bo'lgani uchun har bir oraliqda maxraj ortsa kasr kichrayadi, ya'ni funksiya kamayadi. Uzilish nuqtasidan sakrab o'tib taqqoslab bo'lmaydi, shu sababli kamayish har bir oraliq uchun alohida yoziladi. To'rtinchi variantda uzilish nuqtasi noto'g'ri, chunki maxraj x − 3 ga teng. Javob: uchinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#9c72db53"
+    },
+    {
+      "q": "y = −5/x funksiyaning monotonligi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Har bir oraliqda o'suvchi, chunki surat manfiy",
+        "Har bir oraliqda kamayuvchi, chunki giperbola har doim kamayadi",
+        "x > 0 da o'suvchi, x < 0 da esa kamayuvchi",
+        "Butun sonlar o'qi bo'ylab o'suvchi funksiya"
+      ],
+      "t": 0,
+      "izoh": "Surat manfiy bo'lganda giperbola odatdagi holatga qarama-qarshi tarzda o'zini tutadi. Tekshiramiz: f(1) = −5 va f(5) = −1, ya'ni 1 < 5 va −5 < −1. Chap oraliqda ham shunday: f(−5) = 1 va f(−1) = 5, bu yerda ham argument ortganda qiymat ortdi. Demak har bir oraliqda funksiya o'suvchi, lekin butun soha bo'ylab emas. Javob: birinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "giperbola-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#c3b7f0be"
+    },
+    {
+      "q": "y = f(x) funksiya grafigi (−∞; −2) qismida ko'tarilib boradi, x = −2 da eng yuqori nuqtaga chiqadi, so'ng x = 4 gacha pasayadi va undan keyin yana ko'tariladi. Funksiyaning o'sish oraliqlarini ko'rsating.",
+      "v": [
+        "(−∞; −2) va (4; +∞)",
+        "(−2; 4) oralig'i",
+        "(−∞; −2) va (−2; 4)",
+        "(−2; +∞) oralig'i"
+      ],
+      "t": 0,
+      "izoh": "Grafik ko'tarilayotgan joylar o'sish oralig'i, pasayayotgan joylar kamayish oralig'i deyiladi. Tavsifga ko'ra grafik x = −2 gacha ko'tariladi, bu birinchi o'sish oralig'i. Keyin x = −2 dan x = 4 gacha pasayadi, bu kamayish oralig'i. x = 4 dan boshlab yana ko'tariladi, bu ikkinchi o'sish oralig'i. Javob: (−∞; −2) va (4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-tavsifidan-oraliq",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#043f8688"
+    },
+    {
+      "q": "y = f(x) funksiya grafigi x = −3 va x = 1 nuqtalarda yo'nalishini o'zgartiradi: avval kamayadi, so'ng o'sadi, keyin yana kamayadi. Kamayish oraliqlarini ko'rsating.",
+      "v": [
+        "(−3; 1) oralig'i",
+        "(−∞; −3) va (1; +∞)",
+        "(−∞; 1) oralig'i",
+        "(−∞; −3) va (−3; 1)"
+      ],
+      "t": 1,
+      "izoh": "Tavsifga ko'ra birinchi bo'lak x = −3 gacha, unda funksiya kamayadi. Ikkinchi bo'lak −3 dan 1 gacha, unda funksiya o'sadi. Uchinchi bo'lak x = 1 dan keyin, unda funksiya yana kamayadi. Demak kamayish ikkita chekka oraliqda kuzatiladi. Javob: (−∞; −3) va (1; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-tavsifidan-oraliq",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#6d9a57da"
+    },
+    {
+      "q": "Bemorning tana harorati grafigida qiymat soat 6 dan soat 10 gacha ko'tarilgan, soat 10 dan soat 15 gacha pasaygan, so'ng soat 15 dan soat 20 gacha yana ko'tarilgan. Harorat funksiyasining kamayish oralig'i qaysi?",
+      "v": [
+        "(6; 10) oralig'i",
+        "(15; 20) oralig'i",
+        "(10; 15) oralig'i",
+        "(6; 20) oralig'i"
+      ],
+      "t": 2,
+      "izoh": "Kamayish oralig'i deb grafik pasayib boradigan qismga aytiladi. Tavsifda pasayish faqat bitta joyda qayd etilgan: soat 10 dan soat 15 gacha. Qolgan ikki qismda harorat ko'tarilgan, ya'ni ular o'sish oraliqlari. Javob: (10; 15).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-tavsifidan-oraliq",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#dc7eacee"
+    },
+    {
+      "q": "Metro bekatidagi yo'lovchilar soni grafigi soat 5 dan 9 gacha o'sgan, 9 dan 12 gacha kamaygan, 12 dan 18 gacha yana o'sgan va 18 dan 23 gacha kamaygan. Bu funksiya nechta o'sish va nechta kamayish oralig'iga ega?",
+      "v": [
+        "Bitta o'sish va bitta kamayish oralig'i",
+        "Uchta o'sish va bitta kamayish oralig'i",
+        "To'rtta o'sish oralig'i, kamayish esa yo'q",
+        "Ikkita o'sish va ikkita kamayish oralig'i"
+      ],
+      "t": 3,
+      "izoh": "Tavsifdagi har bir bo'lakni alohida belgilaymiz: (5; 9) o'sish, (9; 12) kamayish, (12; 18) o'sish, (18; 23) kamayish. Yo'nalish uch marta almashgani uchun jami to'rtta oraliq hosil bo'ldi. Ulardan ikkitasi o'sish, ikkitasi kamayish oralig'i. Javob: ikkita o'sish va ikkita kamayish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-tavsifidan-oraliq",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#c4b5e203"
+    },
+    {
+      "q": "y = g(x) funksiya (−∞; 2] oraliqda o'sadi va [2; +∞) oraliqda kamayadi. Shu shartga ko'ra quyidagilardan qaysi biri albatta bajariladi?",
+      "v": [
+        "g(0) < g(2) va g(5) < g(2)",
+        "g(0) > g(2) va g(5) > g(2)",
+        "g(0) = g(5), chunki ikkalasi uchdan bir xil uzoqlikda",
+        "g(0) < g(5), chunki 0 < 5 tengsizlik o'rinli"
+      ],
+      "t": 0,
+      "izoh": "Ikkala oraliq ham x = 2 nuqtani o'z ichiga oladi, shuning uchun g(2) qiymati shartga bog'langan. 0 va 2 nuqtalar o'sish oralig'ida yotadi va 0 < 2, shuning uchun g(0) < g(2). 2 va 5 nuqtalar kamayish oralig'ida yotadi, kamayuvchi funksiyada esa katta argumentga kichik qiymat mos keladi, ya'ni g(5) < g(2). Uchinchi va to'rtinchi variantlar noto'g'ri: har xil oraliqdagi ikki nuqta faqat monotonlik yordamida taqqoslanmaydi. Javob: birinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-tavsifidan-oraliq",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#1bcc353a"
+    },
+    {
+      "q": "Kvadrat ildiz funksiyasi y = √x ning aniqlanish sohasi va monotonligi to'g'ri ko'rsatilgan javobni tanlang.",
+      "v": [
+        "Aniqlanish sohasi [0; +∞), shu to'plamda funksiya o'suvchi",
+        "Aniqlanish sohasi butun sonlar o'qi, funksiya o'suvchi",
+        "Aniqlanish sohasi [0; +∞), shu to'plamda funksiya kamayuvchi",
+        "Aniqlanish sohasi (0; +∞), funksiya esa monoton emas"
+      ],
+      "t": 0,
+      "izoh": "Manfiy sondan kvadrat ildiz chiqarilmaydi, shuning uchun aniqlanish sohasi x ≥ 0. Bu sohada kattaroq songa kattaroq ildiz mos keladi: √4 = 2, √9 = 3 va 4 < 9, 2 < 3. Demak funksiya o'suvchi. Nol nuqta sohaga kiradi, chunki √0 = 0 mavjud. Javob: birinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-va-modul-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#1fbbcd79"
+    },
+    {
+      "q": "y = |x| funksiya qaysi oraliqda o'sadi va qaysi oraliqda kamayadi?",
+      "v": [
+        "(−∞; 0] da o'sadi, [0; +∞) da kamayadi",
+        "(−∞; 0] da kamayadi, [0; +∞) da o'sadi",
+        "Butun sonlar o'qida o'suvchi, chunki modul hech qachon manfiy emas",
+        "Butun sonlar o'qida kamayuvchi, chunki modul ichida minus bo'lishi mumkin"
+      ],
+      "t": 1,
+      "izoh": "Modul funksiyasining grafigi koordinata boshida uchi bo'lgan ikkita nurdan iborat. Chap tomonda |x| = −x, bu kamayuvchi chiziqli funksiya. O'ng tomonda |x| = x, bu o'suvchi chiziqli funksiya. Tekshiramiz: |−5| = 5, |−2| = 2, ya'ni −5 < −2 bo'lsa ham 5 > 2. Javob: (−∞; 0] da kamayadi, [0; +∞) da o'sadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-va-modul-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#580e3a75"
+    },
+    {
+      "q": "y = √(x − 4) + 2 funksiyaning aniqlanish sohasini topib, uning o'sish oralig'ini ko'rsating.",
+      "v": [
+        "[−4; +∞)",
+        "[2; +∞)",
+        "[0; +∞)",
+        "[4; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Ildiz ostidagi ifoda manfiy bo'lmasligi kerak: x − 4 ≥ 0, bundan x ≥ 4. Demak aniqlanish sohasi [4; +∞). Bu sohada x ortganda x − 4 ham ortadi, ildiz ham ortadi, ustiga 2 qo'shilishi esa yo'nalishni o'zgartirmaydi. Birinchi variantda tengsizlik noto'g'ri yechilgan, ikkinchisida ozod had chegara deb olingan. Javob: [4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-va-modul-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#d55fcb24"
+    },
+    {
+      "q": "y = ∛x funksiyaning aniqlanish sohasidagi monotonligi qanday bo'ladi?",
+      "v": [
+        "Faqat [0; +∞) da o'suvchi, chap tomonda aniqlanmagan",
+        "(−∞; 0) da kamayadi, (0; +∞) da o'sadi",
+        "Butun sonlar o'qi bo'ylab o'suvchi funksiya",
+        "Butun sonlar o'qi bo'ylab kamayuvchi funksiya"
+      ],
+      "t": 2,
+      "izoh": "Kub ildiz manfiy sondan ham chiqariladi, shuning uchun aniqlanish sohasi butun sonlar o'qi. Qiymatlarni tekshiramiz: ∛(−27) = −3, ∛(−8) = −2, ∛8 = 2, ∛27 = 3. Argumentlar −27, −8, 8, 27 tartibida ortganda qiymatlar −3, −2, 2, 3 bo'lib ortib bordi. Demak funksiya butun soha bo'ylab o'suvchi. Javob: uchinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-va-modul-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#7e7f4a3c"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni har soatda ikki barobar ortadi va N(t) = 500·2ᵗ formula bilan ifodalanadi. N funksiyaning monotonligi haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "O'suvchi, chunki ko'rsatkichli funksiyaning asosi 2 birdan katta",
+        "Kamayuvchi, chunki daraja ko'rsatkichi vaqt bilan birga ortadi",
+        "Monoton emas, chunki 500 ko'paytuvchi o'zgarmay qoladi",
+        "Faqat t > 500 bo'lganda o'suvchi, undan oldin kamayuvchi"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichli funksiyaning monotonligini asos belgilaydi: asos birdan katta bo'lsa funksiya o'suvchi. Bu yerda asos 2, ya'ni birdan katta. Musbat ko'paytuvchi 500 grafikni cho'zadi, lekin yo'nalishni o'zgartirmaydi. Tekshirish: N(1) = 1000, N(3) = 4000, ya'ni vaqt ortganda son ortadi. Javob: o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#7724235a"
+    },
+    {
+      "q": "y = (2/3)ˣ ko'rsatkichli funksiyaning butun sonlar o'qidagi monotonligini aniqlang.",
+      "v": [
+        "Butun sonlar o'qida o'suvchi, chunki asos musbat son",
+        "Butun sonlar o'qida kamayuvchi, chunki asos birdan kichik",
+        "x > 0 da o'suvchi, x < 0 da esa kamayuvchi",
+        "Monoton emas, chunki asos kasr ko'rinishida berilgan"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichli funksiya y = aˣ da 0 < a < 1 bo'lsa, funksiya kamayuvchi bo'ladi. Bu yerda a = 2/3 va u birdan kichik. Tekshiramiz: (2/3)¹ = 2/3, (2/3)² = 4/9. Argument 1 dan 2 ga ortganda qiymat 2/3 dan 4/9 ga kamaydi. Asosning musbatligi o'suvchilikni anglatmaydi. Javob: kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#782cc39a"
+    },
+    {
+      "q": "Yangi avtomobil narxi har yili 15 foizga tushadi va uning qiymati V(t) = 240·0,85ᵗ mln so'm bilan hisoblanadi. Funksiyaning monotonligi va sababi to'g'ri berilgan javobni belgilang.",
+      "v": [
+        "O'suvchi, chunki boshlang'ich qiymat 240 musbat son",
+        "Kamayuvchi, chunki har yili 240 dan bir xil summa ayriladi",
+        "Monoton emas, chunki foiz har yili boshqa summadan olinadi",
+        "Kamayuvchi, chunki ko'rsatkichli funksiyaning asosi 0,85 birdan kichik"
+      ],
+      "t": 3,
+      "izoh": "Har yili narx 0,85 ga ko'paytiriladi, ya'ni asos 0,85 va u birdan kichik. Bunday holda ko'rsatkichli funksiya kamayuvchi bo'ladi. Ikkinchi variantdagi sabab noto'g'ri: bu yerda bir xil summa emas, bir xil ulush ayriladi. Tekshirish: V(1) = 204, V(2) = 173,4 mln so'm. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#563dc4b9"
+    },
+    {
+      "q": "Ko'rsatkichli funksiyaning monotonlik xossasidan foydalanib 0,7⁴ va 0,7⁶ sonlarini taqqoslang.",
+      "v": [
+        "0,7⁴ < 0,7⁶, chunki ko'rsatkich kattaroq bo'lsa qiymat ham kattaroq",
+        "0,7⁴ = 0,7⁶, chunki asoslar bir xil songa teng",
+        "0,7⁴ > 0,7⁶, chunki asos birdan kichik va funksiya kamayuvchi",
+        "Taqqoslash uchun ikkala darajani oxirigacha hisoblash shart"
+      ],
+      "t": 2,
+      "izoh": "y = 0,7ˣ funksiyani qaraymiz. Asos 0,7 birdan kichik, shuning uchun funksiya kamayuvchi. Kamayuvchi funksiyada 4 < 6 bo'lsa, qiymatlar teskari tartibda joylashadi, ya'ni 0,7⁴ > 0,7⁶. Darajalarni to'liq hisoblash shart emas, monotonlik yetarli. Javob: 0,7⁴ > 0,7⁶.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#89e375d6"
+    },
+    {
+      "q": "Bir turdagi mahsulot narxi har yili 12 foizga oshib boradi. Narxni o'tgan yillar soniga bog'lovchi funksiya qanday monotonlikka ega va bu xaridor uchun nimani bildiradi?",
+      "v": [
+        "O'suvchi: har yili narx oldingi yildagidan yuqori bo'ladi",
+        "Kamayuvchi: foizning pul ifodasi vaqt o'tishi bilan kichrayadi",
+        "Monoton emas: narx goh ko'tarilib, goh tushib turadi",
+        "O'zgarmas: yillik foiz doimiy bo'lgani uchun narx qotib qoladi"
+      ],
+      "t": 0,
+      "izoh": "Har yili narx oldingi qiymatning 1,12 karrasiga aylanadi, ya'ni ko'paytuvchi birdan katta. Shu sababli qiymatlar ketma-ketligi doim ortib boradi va funksiya o'suvchi. Xaridor uchun bu har yili bir xil mahsulotga ko'proq pul to'lash demakdir. Foiz doimiy bo'lsa ham, u har yili kattaroq summadan olingani uchun o'sish sekinlashmaydi. Javob: o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-vaziyatda-osish-kamayish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#fd6e3a32"
+    },
+    {
+      "q": "Konditsioner yoqilgach xonadagi harorat T(t) = 32 − 0,4t °C qonuniyat bilan o'zgaradi, bu yerda t — daqiqalar soni. 15-daqiqadan 35-daqiqagacha harorat qanday o'zgaradi va necha gradusga siljiydi?",
+      "v": [
+        "Kamayadi, 20 °C ga pasayadi",
+        "Kamayadi, 8 °C ga pasayadi",
+        "O'sadi, 8 °C ga ko'tariladi",
+        "Kamayadi, 14 °C ga pasayadi"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsient −0,4 manfiy, demak funksiya kamayuvchi. T(15) = 32 − 0,4·15 = 32 − 6 = 26 °C, T(35) = 32 − 0,4·35 = 32 − 14 = 18 °C. Pasayish 26 − 18 = 8 °C ni tashkil qiladi. Birinchi variantda vaqt farqi javob deb olingan, to'rtinchisida esa faqat ikkinchi hisob yozilgan. Javob: kamayadi, 8 °C ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-vaziyatda-osish-kamayish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#ea67676f"
+    },
+    {
+      "q": "Talaba har oy stipendiyasidan bir xil summa yig'ib bormoqda, jamg'armasi J(n) = 350000·n so'mga teng. Funksiya qaysi to'plamda o'suvchi va n = 7 dan n = 11 gacha jamg'arma qancha ortadi?",
+      "v": [
+        "n > 0 da o'suvchi; jamg'arma 1400000 so'mga ortadi",
+        "n > 0 da o'suvchi; jamg'arma 350000 so'mga ortadi",
+        "Faqat n > 7 da o'suvchi; jamg'arma 1400000 so'mga ortadi",
+        "n > 0 da o'suvchi; jamg'arma 3850000 so'mga ortadi"
+      ],
+      "t": 0,
+      "izoh": "Burchak koeffitsienti 350000 musbat, shuning uchun funksiya barcha musbat n larda o'suvchi. Ortishni hisoblaymiz: J(11) − J(7) = 350000·11 − 350000·7 = 350000·4 = 1400000 so'm. Ikkinchi variantda faqat bitta oylik yig'im olingan, to'rtinchisida esa ayirish bajarilmagan. Javob: birinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-vaziyatda-osish-kamayish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#076ce622"
+    },
+    {
+      "q": "Toshkentda kunduzgi yorug'lik davomiyligi qish quyoshturishidan yoz quyoshturishigacha ortib boradi, so'ng yana qishgacha qisqaradi. Shu tavsifga ko'ra yorug'lik davomiyligi funksiyasi haqida qaysi fikr to'g'ri?",
+      "v": [
+        "Bir yil davomida monoton, chunki qiymat har kuni o'zgarib turadi",
+        "Bir yil davomida monoton emas: bitta o'sish va bitta kamayish oralig'i bor",
+        "Bir yil davomida o'suvchi, chunki ortish qish oxirida boshlanadi",
+        "Bir yil davomida kamayuvchi, chunki qisqarish yoz oxirida boshlanadi"
+      ],
+      "t": 1,
+      "izoh": "Monotonlik butun oraliqda bitta yo'nalish saqlanishini talab qiladi. Bu yerda yil ichida yo'nalish bir marta o'zgaradi: avval davomiylik ortadi, keyin kamayadi. Demak butun yil uchun funksiya na o'suvchi, na kamayuvchi. Ammo har bir yarim yil alohida olinsa, u yerda monotonlik saqlanadi. Javob: monoton emas, ikkita oraliq bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-vaziyatda-osish-kamayish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#4f153dab"
+    },
+    {
+      "q": "Yangi ochilgan kafega kunlik tashriflar soni dastlabki 9 kunda ortdi, keyingi 5 kunda o'zgarmadi, so'nggi 6 kunda esa kamaydi. Tashriflar funksiyasi haqidagi to'g'ri xulosani belgilang.",
+      "v": [
+        "Yigirma kun davomida o'suvchi, chunki boshida ortish kuzatilgan",
+        "(0; 9) da o'sadi, (9; 14) da o'zgarmaydi, (14; 20) da kamayadi",
+        "(0; 9) da o'sadi, qolgan barcha kunlarda esa kamayadi",
+        "Butun davrda monoton, chunki yo'nalish faqat bir marta almashgan"
+      ],
+      "t": 1,
+      "izoh": "Kunlarni ketma-ket sanaymiz: birinchi bo'lak 9 kun, ikkinchisi 5 kun tugaganda 14-kunga yetadi, uchinchisi 6 kun tugaganda 20-kunga yetadi. Shunga ko'ra oraliqlar (0; 9), (9; 14) va (14; 20) bo'ladi. O'rtadagi bo'lakda qiymat o'zgarmaydi, ya'ni u na o'sish, na kamayish oralig'i. Javob: ikkinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-vaziyatda-osish-kamayish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#e228b9fc"
+    },
+    {
+      "q": "Ovoz kuchi darajasi L = 10·lg(I/I₀) formula bilan hisoblanadi, bu yerda I — ovoz intensivligi. Intensivlik ortganda daraja qanday o'zgaradi va nima uchun?",
+      "v": [
+        "Kamayadi, chunki logarifm katta sonlarni kichraytiradi",
+        "O'zgarmaydi, chunki I₀ bo'sag'a qiymati doimiy",
+        "Ortadi, chunki o'nlik logarifm o'suvchi funksiya va asos 10 birdan katta",
+        "Avval ortadi, I = I₀ nuqtadan keyin esa kamaya boshlaydi"
+      ],
+      "t": 2,
+      "izoh": "Ichki ifoda I/I₀ intensivlik ortganda ortadi, chunki maxraj o'zgarmaydi. Tashqi funksiya lg — asosi 10 bo'lgan logarifm, birdan katta asosda logarifmik funksiya o'suvchi. O'suvchi funksiyaning o'suvchi ifodadan qiymati ham ortadi, musbat ko'paytuvchi 10 buni saqlaydi. Javob: daraja ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#849679cc"
+    },
+    {
+      "q": "y = log₂x funksiyaning aniqlanish sohasi hamda monotonligi to'g'ri ko'rsatilgan javobni tanlang.",
+      "v": [
+        "Soha (0; +∞), funksiya kamayuvchi",
+        "Soha butun sonlar o'qi, funksiya o'suvchi",
+        "Soha [0; +∞), funksiya o'suvchi",
+        "Soha (0; +∞), funksiya o'suvchi"
+      ],
+      "t": 3,
+      "izoh": "Logarifm faqat qat'iy musbat sonlardan olinadi, shuning uchun soha (0; +∞) va nol unga kirmaydi. Asos 2 birdan katta bo'lgani uchun funksiya o'suvchi. Tekshiramiz: log₂4 = 2, log₂16 = 4, ya'ni 4 < 16 bo'lganda 2 < 4. Uchinchi variantda nol xato ravishda sohaga qo'shilgan. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#da64fe88"
+    },
+    {
+      "q": "Logarifmik funksiyaning monotonlik xossasidan foydalanib log₃7 va log₃11 sonlarini taqqoslang.",
+      "v": [
+        "log₃7 > log₃11, chunki logarifm sonni har doim kichraytiradi",
+        "log₃7 < log₃11, chunki asos birdan katta va funksiya o'suvchi",
+        "log₃7 = log₃11, chunki ikkala logarifmning asosi bir xil",
+        "Taqqoslash uchun ikkala qiymatni kalkulyatorda hisoblash zarur"
+      ],
+      "t": 1,
+      "izoh": "y = log₃x funksiyani qaraymiz, uning asosi 3 birdan katta, demak funksiya o'suvchi. O'suvchi funksiyada kattaroq argumentga kattaroq qiymat mos keladi. 7 < 11 bo'lgani uchun log₃7 < log₃11. Aniq qiymatlarni hisoblash shart emas, monotonlikning o'zi yetarli. Javob: log₃7 < log₃11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#542b4ace"
+    },
+    {
+      "q": "Asosi birdan kichik bo'lgan y = log₀,₄x logarifmik funksiya haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "(0; +∞) da o'suvchi: argument ortganda logarifm ham ortadi",
+        "Butun sonlar o'qida aniqlangan kamayuvchi funksiya",
+        "x < 1 da kamayadi, x > 1 da esa o'sadi",
+        "(0; +∞) da kamayuvchi: argument ortganda logarifm qiymati kichrayadi"
+      ],
+      "t": 3,
+      "izoh": "Logarifmik funksiyada 0 < a < 1 bo'lsa, u kamayuvchi bo'ladi. Bu yerda asos 0,4 va u birdan kichik. Aniqlanish sohasi esa har doim (0; +∞), chunki manfiy son va noldan logarifm olinmaydi. Shuning uchun ikkinchi variantdagi soha noto'g'ri. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#a1a057e9"
+    },
+    {
+      "q": "f(x) = x³ va g(x) = 5x funksiyalarning ikkalasi ham butun sonlar o'qida o'suvchi. Ularning yig'indisi h(x) = x³ + 5x qanday monotonlikka ega bo'ladi?",
+      "v": [
+        "Butun sonlar o'qida o'suvchi, chunki ikki o'suvchi funksiyaning yig'indisi o'suvchi",
+        "Butun sonlar o'qida kamayuvchi, chunki qo'shishda ishoralar almashadi",
+        "Monoton emas, chunki x³ manfiy qiymatlarni ham qabul qiladi",
+        "Faqat x > 0 da o'suvchi, chap yarim o'qda esa kamayuvchi"
+      ],
+      "t": 0,
+      "izoh": "Aytaylik x₁ < x₂. U holda f o'suvchi bo'lgani uchun f(x₁) < f(x₂), g o'suvchi bo'lgani uchun g(x₁) < g(x₂). Bir xil yo'nalishdagi ikki tengsizlikni qo'shish mumkin: f(x₁) + g(x₁) < f(x₂) + g(x₂), ya'ni h(x₁) < h(x₂). Manfiy qiymatlar qabul qilish monotonlikka ta'sir qilmaydi. Javob: butun sonlar o'qida o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monoton-funksiyalar-yigindisi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#649c4d50"
+    },
+    {
+      "q": "f funksiya biror oraliqda o'suvchi, g esa shu oraliqda kamayuvchi. f − g ayirma haqida qanday aniq xulosa chiqarish mumkin?",
+      "v": [
+        "Har doim kamayuvchi, chunki ayirishda kamayish ustun keladi",
+        "Monotonligi aniqlanmaydi, chunki funksiyalar qarama-qarshi yo'naladi",
+        "Har doim o'suvchi, chunki kamayuvchi funksiyaning qarama-qarshisi o'suvchi",
+        "O'zgarmas, chunki o'sish va kamayish bir-birini yo'qotadi"
+      ],
+      "t": 2,
+      "izoh": "g kamayuvchi bo'lsa, −g o'suvchi bo'ladi: x₁ < x₂ da g(x₁) > g(x₂), demak −g(x₁) < −g(x₂). Endi f − g ni f + (−g) ko'rinishida yozamiz. Ikki o'suvchi funksiyaning yig'indisi o'suvchi, shuning uchun f − g o'suvchi. Bu xulosa har doim to'g'ri, qo'shimcha shart talab qilinmaydi. Javob: uchinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monoton-funksiyalar-yigindisi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#c94a6d4f"
+    },
+    {
+      "q": "f(x) = x va g(x) = x funksiyalarning ikkalasi ham butun sonlar o'qida o'suvchi. Ularning ko'paytmasi p(x) = x² shu o'qda monoton bo'ladimi?",
+      "v": [
+        "Ha, o'suvchi, chunki o'suvchi funksiyalar ko'paytmasi ham o'suvchi",
+        "Yo'q: (−∞; 0) da kamayadi, (0; +∞) da o'sadi",
+        "Ha, kamayuvchi, chunki kvadratga ko'tarish yo'nalishni almashtiradi",
+        "Ha, o'suvchi, lekin faqat manfiy sonlar to'plamida"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytma uchun yig'indidagidek qoida yo'q. Tekshiramiz: −5 < −2 bo'lsa ham p(−5) = 25 va p(−2) = 4, ya'ni qiymat kamaydi. Musbat tomonda esa 2 < 5 da p(2) = 4 va p(5) = 25, qiymat ortdi. Demak butun o'qda monotonlik yo'q, u faqat har bir yarim o'qda alohida saqlanadi. Javob: ikkinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monoton-funksiyalar-yigindisi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#8a013f58"
+    },
+    {
+      "q": "Do'kon daromadi ikki bo'limdan tushadi: birinchisidan D₁(x) = 40000·x so'm, ikkinchisidan D₂(x) = 25000·x so'm, bu yerda x — sotilgan to'plamlar soni. Umumiy daromad funksiyasining monotonligi qanday?",
+      "v": [
+        "Kamayuvchi, chunki ikkita daromad bir-biriga xalaqit beradi",
+        "Monoton emas, chunki koeffitsientlar bir-biridan farq qiladi",
+        "O'suvchi, lekin faqat x > 25000 bo'lgandan keyin",
+        "O'suvchi, chunki ikkala qo'shiluvchi ham o'suvchi va koeffitsientlar musbat"
+      ],
+      "t": 3,
+      "izoh": "Umumiy daromad D(x) = 40000·x + 25000·x = 65000·x ko'rinishga keladi. Burchak koeffitsienti 65000 musbat, demak funksiya o'suvchi. Buni umumiy qoida bilan ham tekshirish mumkin: ikki o'suvchi funksiyaning yig'indisi o'suvchi bo'ladi. Koeffitsientlarning har xilligi monotonlikka to'sqinlik qilmaydi. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monoton-funksiyalar-yigindisi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#b3cbc4f8"
+    },
+    {
+      "q": "f(x) funksiya (2; 9) oraliqda o'suvchi ekani ma'lum. Shu oraliqda y = −f(x) funksiya qanday xossaga ega bo'ladi?",
+      "v": [
+        "Xuddi shu oraliqda o'suvchi bo'lib qolaveradi",
+        "Xuddi shu oraliqda kamayuvchi bo'ladi",
+        "(−9; −2) oraliqda o'suvchi bo'ladi",
+        "Monotonligi umuman aniqlanmay qoladi"
+      ],
+      "t": 1,
+      "izoh": "Aytaylik x₁ < x₂ va ikkalasi ham (2; 9) da yotadi. f o'suvchi bo'lgani uchun f(x₁) < f(x₂). Tengsizlikning ikki tomonini −1 ga ko'paytirsak, ishora teskarisiga aylanadi: −f(x₁) > −f(x₂). Demak argument ortganda yangi funksiya qiymati kamaydi. Aniqlanish oralig'i o'zgarmaydi, chunki x ga tegilmagan. Javob: shu oraliqda kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishorani-ozgartirish-va-monotonlik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#48011e12"
+    },
+    {
+      "q": "f(x) funksiya (−∞; 5) oraliqda kamayuvchi bo'lsa, y = f(x) + 8 funksiya qaysi oraliqda kamayadi?",
+      "v": [
+        "(−∞; 5) oralig'ida",
+        "(−∞; 13) oralig'ida",
+        "(−∞; −3) oralig'ida",
+        "(8; +∞) oralig'ida"
+      ],
+      "t": 0,
+      "izoh": "Doimiy son qo'shilganda grafik faqat yuqoriga suriladi, argumentga hech qanday o'zgarish kirmaydi. Shuning uchun o'sish va kamayish oraliqlari joyida qoladi. Rasmiy tekshiruv: x₁ < x₂ da f(x₁) > f(x₂), ikki tomonga 8 qo'shsak tengsizlik yo'nalishi saqlanadi. Ikkinchi va uchinchi variantlarda 8 chegaraga qo'shib yoki ayirib yuborilgan. Javob: (−∞; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ishorani-ozgartirish-va-monotonlik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#e13494ff"
+    },
+    {
+      "q": "f(x) funksiya (1; 6) oraliqda o'suvchi bo'lsa, y = f(−x) funksiya qaysi oraliqda va qanday monotonlikka ega bo'ladi?",
+      "v": [
+        "(1; 6) oraliqda o'suvchi bo'ladi",
+        "(1; 6) oraliqda kamayuvchi bo'ladi",
+        "(−6; −1) oraliqda kamayuvchi bo'ladi",
+        "(−6; −1) oraliqda o'suvchi bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "y = f(−x) aniqlangan bo'lishi uchun −x ning (1; 6) da yotishi kerak, bundan x ning (−6; −1) da yotishi kelib chiqadi. Endi x₁ < x₂ olsak, −x₁ > −x₂ bo'ladi. f o'suvchi bo'lgani uchun f(−x₁) > f(−x₂), ya'ni argument ortganda qiymat kamaydi. Demak grafik ordinata o'qiga nisbatan aks etadi va yo'nalish teskarisiga o'zgaradi. Javob: (−6; −1) da kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ishorani-ozgartirish-va-monotonlik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#cb57d425"
+    },
+    {
+      "q": "f(x) funksiya (0; 4) oraliqda kamayuvchi ekani berilgan. Shu oraliqda y = 3 − f(x) funksiya qanday xossaga ega bo'ladi?",
+      "v": [
+        "Kamayuvchi bo'lib qoladi, chunki 3 shunchaki doimiy son",
+        "Monoton emas, chunki doimiy sondan funksiya ayirilyapti",
+        "Kamayuvchi, lekin kamayish tezligi uch barobar kichrayadi",
+        "O'suvchi, chunki kamayuvchi funksiyani ayirish o'sishga olib keladi"
+      ],
+      "t": 3,
+      "izoh": "Ifodani 3 + (−f(x)) ko'rinishida yozamiz. f kamayuvchi bo'lsa, −f o'suvchi bo'ladi, chunki tengsizlikni −1 ga ko'paytirganda ishora almashadi. Doimiy 3 ni qo'shish esa monotonlikni o'zgartirmaydi. Demak yig'indi o'suvchi. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ishorani-ozgartirish-va-monotonlik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#b58e3d6e"
+    },
+    {
+      "q": "y = (x − 7)² + 4 funksiyaning kamayish oralig'ini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "(−∞; 7)",
+        "(7; +∞)",
+        "(−∞; 4)",
+        "(−∞; −7)"
+      ],
+      "t": 0,
+      "izoh": "Bu y = x² parabolaning o'ngga 7 birlik va yuqoriga 4 birlik surilgan ko'rinishi. Uchning abssissasi x = 7 ga teng, tarmoqlar yuqoriga qaragan. Demak uchgacha funksiya kamayadi, undan keyin o'sadi. Vertikal surish 4 oraliqqa ta'sir qilmaydi, chunki u faqat balandlikni o'zgartiradi. Javob: (−∞; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafikni-surish-va-oraliqlar",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#7fd4d3d5"
+    },
+    {
+      "q": "y = x² parabolaning grafigi o'ngga 3 birlik va yuqoriga 2 birlik surildi. Hosil bo'lgan funksiyaning o'sish oralig'i qanday bo'ladi?",
+      "v": [
+        "(2; +∞)",
+        "(3; +∞)",
+        "(−3; +∞)",
+        "(5; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Surishdan keyin funksiya y = (x − 3)² + 2 ko'rinishga keladi. Boshlang'ich parabolaning uchi koordinata boshida edi va o'sish (0; +∞) da kuzatilardi. Gorizontal surish oraliqni ham o'sha tomonga suradi, ya'ni chegara 0 dan 3 ga ko'chadi. Vertikal surish 2 chegarani o'zgartirmaydi, shuning uchun birinchi va to'rtinchi variantlar noto'g'ri. Javob: (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikni-surish-va-oraliqlar",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#4e741fc9"
+    },
+    {
+      "q": "f(x) funksiya (−2; 6) oraliqda o'suvchi bo'lsa, y = f(x − 4) funksiya qaysi oraliqda o'suvchi bo'ladi?",
+      "v": [
+        "(−6; 2)",
+        "(−2; 6)",
+        "(2; 10)",
+        "(−8; 24)"
+      ],
+      "t": 2,
+      "izoh": "Yangi funksiyada eski argument o'rnida x − 4 turadi. O'sish sharti −2 < x − 4 < 6 ko'rinishida yoziladi. Tengsizlikning barcha qismiga 4 qo'shamiz: 2 < x < 10. Demak oraliq o'ngga 4 birlik suriladi. Birinchi variantda surish teskari tomonga bajarilgan, oxirgisida esa qo'shish o'rniga ko'paytirish qilingan. Javob: (2; 10).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikni-surish-va-oraliqlar",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#2379f3c1"
+    },
+    {
+      "q": "y = |x − 6| funksiyaning kamayish va o'sish oraliqlarini to'g'ri ko'rsatgan javobni belgilang.",
+      "v": [
+        "(−∞; 6] da o'sadi, [6; +∞) da kamayadi",
+        "(−∞; 0] da kamayadi, [0; +∞) da o'sadi",
+        "(−∞; 6] da kamayadi, [6; +∞) da o'sadi",
+        "(−∞; −6] da kamayadi, [−6; +∞) da o'sadi"
+      ],
+      "t": 2,
+      "izoh": "Modul funksiyasi y = |x| ning uchi koordinata boshida edi. x − 6 yozuvi grafikni o'ngga 6 birlik suradi, demak yangi uch x = 6 da bo'ladi. Uchgacha funksiya kamayadi, undan keyin o'sadi. To'rtinchi variantda surish yo'nalishi teskari olingan. Javob: uchinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafikni-surish-va-oraliqlar",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#7b4a6fb5"
+    },
+    {
+      "q": "Kichik korxonaning yillik daromadi quyidagicha bo'ldi (mln so'm): 2019-yilda 180, 2020-yilda 165, 2021-yilda 190, 2022-yilda 240, 2023-yilda 235. Daromad qaysi yillar oralig'ida uzluksiz o'sib borgan?",
+      "v": [
+        "2019-yildan 2021-yilgacha",
+        "2020-yildan 2022-yilgacha",
+        "2021-yildan 2023-yilgacha",
+        "2019-yildan 2023-yilgacha"
+      ],
+      "t": 1,
+      "izoh": "Yildan yilga o'zgarishni belgilaymiz: 180 dan 165 ga pasayish, 165 dan 190 ga o'sish, 190 dan 240 ga o'sish, 240 dan 235 ga pasayish. Uzluksiz o'sish faqat o'rtadagi ikki qadamda kuzatilyapti, ya'ni 2020-yildan 2022-yilgacha. Boshi va oxirida pasayish borligi qolgan variantlarni chiqarib tashlaydi. Javob: ikkinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-malumotda-oraliq-tanlash",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#41deb760"
+    },
+    {
+      "q": "Bolaning bo'yi yoshiga qarab quyidagicha o'zgardi (sm): 3 yoshda 96, 5 yoshda 110, 7 yoshda 122, 9 yoshda 133, 11 yoshda 145. Bo'y funksiyasi va uning o'sish miqdori haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "Bo'y qat'iy o'suvchi, lekin ikki yillik o'sish miqdori doimiy emas",
+        "Bo'y qat'iy o'suvchi va har ikki yilda aniq 12 sm ga ortadi",
+        "Bo'y monoton emas, chunki o'sish miqdori goh kamayib, goh ortyapti",
+        "Bo'y o'suvchi, ammo 7 yoshdan keyin kamayishga o'tadi"
+      ],
+      "t": 0,
+      "izoh": "Qiymatlar 96, 110, 122, 133, 145 bo'lib har safar ortyapti, demak funksiya qat'iy o'suvchi. Ikki yillik ortishlar esa 14, 12, 11, 12 ga teng va bir xil emas. O'sish miqdorining o'zgarishi funksiyaning monotonligini buzmaydi, chunki barcha ortishlar musbat. Javob: birinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-malumotda-oraliq-tanlash",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#e5ade65b"
+    },
+    {
+      "q": "Sovutgichga qo'yilgan ichimlik harorati birinchi 20 daqiqada 24 °C dan 12 °C gacha, keyingi 40 daqiqada esa 12 °C dan 5 °C gacha tushdi. Harorat funksiyasi haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "Butun davrda kamayuvchi; ikkinchi bosqichda pasayish tezroq bo'lgan",
+        "Monoton emas, chunki pasayish tezligi o'zgarib turgan",
+        "Butun davrda kamayuvchi; birinchi bosqichda pasayish tezroq bo'lgan",
+        "Butun davrda o'suvchi, chunki o'tgan vaqt ortib bormoqda"
+      ],
+      "t": 2,
+      "izoh": "Harorat 24 dan 12 ga, so'ng 12 dan 5 ga tushdi, ya'ni hech qayerda ko'tarilmadi. Demak funksiya butun davrda kamayuvchi. Tezlikni solishtiramiz: birinchi bosqichda 12 : 20 = 0,6 °C har daqiqada, ikkinchisida 7 : 40 = 0,175 °C har daqiqada. Birinchi bosqich tezroq bo'lgan, lekin tezlikning o'zgarishi monotonlikni buzmaydi. Javob: uchinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-malumotda-oraliq-tanlash",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#9996f8d6"
+    },
+    {
+      "q": "Suv omboridagi suv hajmi oylar bo'yicha quyidagicha o'zgardi (mln m³): aprelda 320, mayda 410, iyunda 480, iyulda 455, avgustda 390, sentabrda 340. Hajm funksiyasining o'sish va kamayish oraliqlarini ko'rsating.",
+      "v": [
+        "Apreldan iyulgacha o'sadi, iyuldan sentabrgacha kamayadi",
+        "Butun davrda o'suvchi, chunki oxirgi qiymat boshlang'ichdan katta",
+        "Apreldan maygacha o'sadi, undan keyin doimo kamayadi",
+        "Apreldan iyungacha o'sadi, iyundan sentabrgacha kamayadi"
+      ],
+      "t": 3,
+      "izoh": "Qiymatlarni ketma-ket taqqoslaymiz: 320 dan 410 ga o'sish, 410 dan 480 ga o'sish, 480 dan 455 ga pasayish, 455 dan 390 ga pasayish, 390 dan 340 ga pasayish. Eng katta qiymat iyunda kuzatilgan, demak yo'nalish shu oyda almashgan. Ikkinchi variant xato, chunki 340 boshlang'ich 320 dan katta bo'lsa ham oraliqda pasayish bor. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-malumotda-oraliq-tanlash",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#e161f91d"
+    },
+    {
+      "q": "2ˣ + x = 10 tenglamaning ildizlari soni haqida monotonlikka tayanib qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Ikkita ildiz bor, chunki chap tomonda ikkita qo'shiluvchi qatnashadi",
+        "Aynan bitta ildiz bor: chap tomon qat'iy o'suvchi, o'ng tomon esa o'zgarmas",
+        "Ildizi yo'q, chunki 2ˣ hech qachon o'nga teng bo'lolmaydi",
+        "Cheksiz ko'p ildiz bor, chunki funksiya uzluksiz"
+      ],
+      "t": 1,
+      "izoh": "Chap tomondagi 2ˣ ko'rsatkichli funksiya asosi birdan katta bo'lgani uchun o'suvchi, x esa chiziqli o'suvchi. Ikki o'suvchi funksiyaning yig'indisi qat'iy o'suvchi bo'ladi. Qat'iy o'suvchi funksiya har bir qiymatni ko'pi bilan bir marta qabul qiladi, demak 10 qiymatiga ko'pi bilan bitta x mos keladi. Tekshirish: f(2) = 6 va f(3) = 11, ya'ni ildiz (2; 3) da bor. Javob: aynan bitta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monoton-funksiyada-ildiz-yagonaligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#70bd8ad8"
+    },
+    {
+      "q": "√x + x = 6 tenglama haqidagi to'g'ri fikrni tanlang va tanlovingizni monotonlik bilan asoslang.",
+      "v": [
+        "x = 4 yagona ildiz, chunki chap tomon [0; +∞) da qat'iy o'suvchi",
+        "x = 4 va x = 9 bo'lgan ikkita ildiz mavjud",
+        "x = 9 yagona ildiz bo'ladi",
+        "Ildiz umuman yo'q, chunki ildiz va argument birga oltini bermaydi"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi x ≥ 0. Bu sohada √x o'suvchi, x ham o'suvchi, demak ularning yig'indisi qat'iy o'suvchi. Shu sababli tenglama ko'pi bilan bitta ildizga ega. Tanlab tekshiramiz: x = 4 da √4 + 4 = 2 + 4 = 6, ya'ni to'g'ri keladi. x = 9 da esa 3 + 9 = 12, bu oltiga teng emas. Javob: x = 4 yagona ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monoton-funksiyada-ildiz-yagonaligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#2efd6f3c"
+    },
+    {
+      "q": "x³ + 3x = 14 tenglamaning ildizlari soni haqida monotonlikka tayanib xulosa chiqaring.",
+      "v": [
+        "Uchta ildiz bor, chunki tenglama uchinchi darajali",
+        "Ikkita ildiz bor: x = 2 va x = −2",
+        "Bitta ham haqiqiy ildiz mavjud emas",
+        "Aynan bitta ildiz bor, u x = 2 ga teng"
+      ],
+      "t": 3,
+      "izoh": "y = x³ butun sonlar o'qida o'suvchi, y = 3x ham o'suvchi, demak ularning yig'indisi qat'iy o'suvchi. Qat'iy o'suvchi funksiya har bir qiymatni faqat bir marta qabul qiladi, shuning uchun ildiz ko'pi bilan bitta. x = 2 ni qo'ysak 8 + 6 = 14, ya'ni ildiz topildi. x = −2 da esa −8 − 6 = −14 chiqadi, bu mos emas. Daraja ko'rsatkichiga qarab ildizlar sonini aytish xato. Javob: bitta ildiz, x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monoton-funksiyada-ildiz-yagonaligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#4bde0de7"
+    },
+    {
+      "q": "Idishga har daqiqada 7 litrdan suv quyilmoqda, boshida idishda 15 litr suv bor edi. Idishdagi suv aynan 71 litr bo'ladigan payt nechta va nima uchun shunday?",
+      "v": [
+        "Bitta payt: t = 8 daqiqa, chunki hajm funksiyasi qat'iy o'suvchi",
+        "Ikkita payt bo'ladi, chunki suv sathi tebranib turadi",
+        "Bitta payt, lekin u t = 12 daqiqaga to'g'ri keladi",
+        "Bunday payt umuman bo'lmaydi, chunki 71 son 15 ga bo'linmaydi"
+      ],
+      "t": 0,
+      "izoh": "Hajm funksiyasi V(t) = 15 + 7t ko'rinishida, uning burchak koeffitsienti 7 musbat, demak funksiya qat'iy o'suvchi. Qat'iy o'suvchi funksiya har bir qiymatga faqat bir marta erishadi. 15 + 7t = 71 tenglamadan 7t = 56 va t = 8 daqiqa. Uchinchi variantda 15 ni ayirish unutilgan. Javob: bitta payt, t = 8 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monoton-funksiyada-ildiz-yagonaligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#38c048fd"
+    },
+    {
+      "q": "3ˣ = 12 − x tenglama aynan bitta ildizga ega ekani qanday asosda tasdiqlanadi?",
+      "v": [
+        "Ikkala tomon ham o'suvchi, shuning uchun ildizlar soni ikkita",
+        "Chap tomon kamayuvchi bo'lgani uchun ildiz umuman yo'q",
+        "Chap tomon o'suvchi, o'ng tomon kamayuvchi, bunday grafiklar ko'pi bilan bir marta kesishadi",
+        "Ko'rsatkichli tenglamada ildizlar soni har doim ikkitaga teng"
+      ],
+      "t": 2,
+      "izoh": "Chap tomondagi 3ˣ asosi birdan katta bo'lgani uchun o'suvchi. O'ng tomondagi 12 − x da x oldidagi koeffitsient manfiy, demak u kamayuvchi. O'suvchi va kamayuvchi grafiklar ko'pi bilan bitta umumiy nuqtaga ega bo'ladi. Tekshirish: x = 2 da 9 va 10, x = 3 da 27 va 9, ya'ni kesishish (2; 3) oraliqda mavjud. Javob: uchinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monoton-funksiyada-ildiz-yagonaligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#a1fe1817"
+    },
+    {
+      "q": "f(x) = x³ + x − 9 funksiya butun sonlar o'qida qat'iy o'suvchi, f(1) = −7 va f(2) = 1. Shu ma'lumotdan f(x) = 0 tenglama ildizi haqida nima kelib chiqadi?",
+      "v": [
+        "(1; 2) oraliqda ikkita ildiz bor",
+        "Ildiz (1; 2) oralig'idan tashqarida yotadi",
+        "(1; 2) oraliqda aynan bitta ildiz bor",
+        "Ildizlar soni berilgan ma'lumot bilan aniqlanmaydi"
+      ],
+      "t": 2,
+      "izoh": "Kesma uchlaridagi qiymatlar har xil ishorali: f(1) manfiy, f(2) musbat. Uzluksiz funksiya ishorasini almashtirar ekan, oraliqda kamida bitta nol bor. Funksiya qat'iy o'suvchi bo'lgani uchun nol qiymatga ikki marta erisha olmaydi. Ikkala mulohaza birga ildiz aynan bitta ekanini beradi. Javob: uchinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqda-ildiz-mavjudligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#9168e741"
+    },
+    {
+      "q": "g(x) = 2ˣ − 3x funksiya (3; 5) oraliqda o'suvchi bo'lib, g(3) = −1 va g(5) = 17 ekani ma'lum. Shu oraliqda g(x) = 0 tenglama nechta ildizga ega?",
+      "v": [
+        "Ikkita ildiz, chunki ifodada ko'rsatkichli qism qatnashadi",
+        "Bitta ildiz, chunki funksiya o'suvchi va ishorasini bir marta almashtiradi",
+        "Ildizi yo'q, chunki chekka qiymatlar har xil ishorali",
+        "Uchta ildiz, chunki oraliq uzunligi ikkiga teng"
+      ],
+      "t": 1,
+      "izoh": "Chekka qiymatlarni tekshiramiz: g(3) = 8 − 9 = −1 manfiy, g(5) = 32 − 15 = 17 musbat. Ishora almashgani uchun oraliqda nol albatta bor. Funksiya o'suvchi bo'lgani uchun nolni faqat bir marta kesib o'tadi. Uchinchi variantdagi mulohaza teskari: ishoraning har xilligi aynan ildiz borligini bildiradi. Javob: bitta ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqda-ildiz-mavjudligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#6bd05174"
+    },
+    {
+      "q": "Havzadagi baliqlarning umumiy massasi vaqt bo'yicha uzluksiz va qat'iy ortib bormoqda: yanvarda 1800 kg, iyunda 3400 kg edi. Massa aynan 2500 kg bo'lgan payt haqida nima deyish mumkin?",
+      "v": [
+        "Bunday payt umuman bo'lmagan bo'lishi ham mumkin",
+        "Bunday paytlar davr ichida bir necha marta takrorlanadi",
+        "Bunday payt faqat iyundan keyin sodir bo'ladi",
+        "Yanvar va iyun orasida bunday payt aynan bitta bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "2500 soni 1800 va 3400 orasida yotadi. Massa vaqt bo'yicha uzluksiz o'zgargani uchun u oraliqdagi har bir qiymatdan o'tishi shart. Qat'iy o'sish esa bir qiymatga ikki marta qaytishga yo'l qo'ymaydi. Shuning uchun 2500 kg qiymat aynan bir marta qayd etiladi. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqda-ildiz-mavjudligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#230711fd"
+    },
+    {
+      "q": "h(x) = lg x + x − 3 funksiya (0; +∞) da o'suvchi, h(1) = −2 va h(10) = 8. h(x) = 0 tenglamaning ildizi qayerda va nechta?",
+      "v": [
+        "(1; 10) oraliqda, aynan bitta ildiz",
+        "(0; 1) oraliqda, aynan bitta ildiz",
+        "(10; +∞) oraliqda, aynan bitta ildiz",
+        "(1; 10) oraliqda, ikkita ildiz"
+      ],
+      "t": 0,
+      "izoh": "h(1) = lg 1 + 1 − 3 = 0 + 1 − 3 = −2, ya'ni manfiy. h(10) = lg 10 + 10 − 3 = 1 + 7 = 8, ya'ni musbat. Ishora aynan (1; 10) oraliqda almashgan, demak nol shu yerda. Funksiya o'suvchi bo'lgani uchun nol qiymati takrorlanmaydi. Javob: birinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqda-ildiz-mavjudligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#2268ae21"
+    },
+    {
+      "q": "y = f(x) funksiya butun sonlar o'qida qat'iy o'suvchi. f(2x − 1) < f(x + 4) tengsizlikning yechimini toping.",
+      "v": [
+        "x < 5",
+        "x > 5",
+        "x < 3",
+        "x > 3"
+      ],
+      "t": 0,
+      "izoh": "Qat'iy o'suvchi funksiyada f(a) < f(b) tengsizlik a < b tengsizlikka teng kuchli, chunki tartib saqlanadi. Demak 2x − 1 < x + 4 ni yechamiz. Ikki tomondan x ni ayiramiz: x − 1 < 4. Endi 1 ni qo'shamiz: x < 5. Ishorani almashtirish kerak emas, chunki funksiya kamayuvchi emas. Javob: x < 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlik-bilan-tengsizlik-yechish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#88306be2"
+    },
+    {
+      "q": "y = g(x) funksiya butun sonlar o'qida qat'iy kamayuvchi. g(3x + 2) > g(x + 10) tengsizlikni yeching.",
+      "v": [
+        "x > 4",
+        "x > 6",
+        "x < 6",
+        "x < 4"
+      ],
+      "t": 3,
+      "izoh": "Qat'iy kamayuvchi funksiyada g(a) > g(b) tengsizlik a < b ga teng kuchli, ya'ni argumentlar tengsizligi teskari yoziladi. Demak 3x + 2 < x + 10. Ikki tomondan x ni ayiramiz: 2x + 2 < 10. Keyin 2 ni ayiramiz: 2x < 8, bundan x < 4. Birinchi variant ishorani almashtirmagan holatga to'g'ri keladi. Javob: x < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlik-bilan-tengsizlik-yechish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#e0fa91a9"
+    },
+    {
+      "q": "Ko'rsatkichli funksiyaning monotonligidan foydalanib 5^(2x+1) < 5^(x+7) tengsizlikni yeching.",
+      "v": [
+        "x > 6",
+        "x < 8",
+        "x < 6",
+        "x > 8"
+      ],
+      "t": 2,
+      "izoh": "Asos 5 birdan katta, shuning uchun y = 5ᵗ funksiya o'suvchi va darajalar tengsizligidan ko'rsatkichlar tengsizligiga ishorani saqlab o'tish mumkin. Demak 2x + 1 < x + 7. Ikki tomondan x ni ayiramiz: x + 1 < 7, bundan x < 6. Ikkinchi variantda birni ayirish o'rniga qo'shib yuborilgan. Javob: x < 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlik-bilan-tengsizlik-yechish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#10d566cf"
+    },
+    {
+      "q": "y = log₀,₃x funksiya kamayuvchi ekanidan foydalanib log₀,₃(x + 2) > log₀,₃7 tengsizlikni yeching.",
+      "v": [
+        "x > 5",
+        "−2 < x < 5",
+        "x < 5",
+        "0 < x < 7"
+      ],
+      "t": 1,
+      "izoh": "Avval aniqlanish shartini yozamiz: x + 2 > 0, ya'ni x > −2. Asos 0,3 birdan kichik, shuning uchun logarifmlar tengsizligidan argumentlar tengsizligiga o'tganda ishora teskarisiga almashadi: x + 2 < 7, bundan x < 5. Ikki shartni birlashtiramiz. Uchinchi variantda aniqlanish sohasi tashlab ketilgan. Javob: −2 < x < 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monotonlik-bilan-tengsizlik-yechish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#05fe58a7"
+    },
+    {
+      "q": "f(x) = 4x − 9 funksiya [3; 11] kesmada o'suvchi. Uning shu kesmadagi eng kichik va eng katta qiymatlarini toping.",
+      "v": [
+        "Eng kichigi 3, eng kattasi 35",
+        "Eng kichigi −9, eng kattasi 35",
+        "Eng kichigi 3, eng kattasi 44",
+        "Eng kichigi 12, eng kattasi 44"
+      ],
+      "t": 0,
+      "izoh": "O'suvchi funksiya kesmadagi eng kichik qiymatini chap uchida, eng katta qiymatini o'ng uchida qabul qiladi. f(3) = 4·3 − 9 = 3 va f(11) = 4·11 − 9 = 35. Ikkinchi variantda ozod had qiymat deb olingan, oxirgisida esa −9 ni ayirish unutilgan. Javob: eng kichigi 3, eng kattasi 35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monoton-kesmada-eng-katta-kichik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#6cb8eedc"
+    },
+    {
+      "q": "Ombordagi don zaxirasi Z(t) = 900 − 24t tonna qonuniyat bilan kamayib bormoqda, bu yerda t — kunlar soni. 5-kundan 20-kungacha zaxira eng ko'pi bilan va eng kami bilan qancha bo'ladi?",
+      "v": [
+        "Eng ko'pi 900 t, eng kami 420 t",
+        "Eng ko'pi 780 t, eng kami 480 t",
+        "Eng ko'pi 780 t, eng kami 420 t",
+        "Eng ko'pi 420 t, eng kami 780 t"
+      ],
+      "t": 2,
+      "izoh": "Koeffitsient −24 manfiy, demak funksiya kamayuvchi va eng katta qiymat kesmaning chap uchida bo'ladi. Z(5) = 900 − 24·5 = 900 − 120 = 780 tonna. Eng kichik qiymat o'ng uchda: Z(20) = 900 − 24·20 = 900 − 480 = 420 tonna. Birinchi variantda boshlang'ich zaxira olingan, ikkinchisida 480 oraliq hisob natijasi. Javob: uchinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monoton-kesmada-eng-katta-kichik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#21856113"
+    },
+    {
+      "q": "y = x² − 8x + 3 funksiyaning [5; 9] kesmadagi eng kichik qiymatini toping.",
+      "v": [
+        "−13",
+        "−12",
+        "12",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Parabolaning uchi x₀ = 8/(2·1) = 4 nuqtada, u esa kesmadan tashqarida qolgan. Demak [5; 9] kesmada funksiya faqat o'sadi va eng kichik qiymat chap uchda bo'ladi. f(5) = 25 − 40 + 3 = −12. Birinchi variant uchdagi qiymat, u kesmaga kirmaydi. Uchinchisi f(9) = 81 − 72 + 3 = 12, bu eng katta qiymat. Javob: −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monoton-kesmada-eng-katta-kichik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#a0e78aee"
+    },
+    {
+      "q": "Xizmat narxi N(x) = 60000 + 3500·x so'm formula bilan hisoblanadi, bu yerda x — qo'shimcha xizmatlar soni. x butun son bo'lib 2 dan 9 gacha qiymat olsa, eng katta to'lov qancha bo'ladi?",
+      "v": [
+        "67000 so'm",
+        "31500 so'm",
+        "95000 so'm",
+        "91500 so'm"
+      ],
+      "t": 3,
+      "izoh": "Koeffitsient 3500 musbat bo'lgani uchun funksiya o'suvchi va eng katta to'lov x ning eng katta qiymatida bo'ladi. x = 9 ni qo'yamiz: N(9) = 60000 + 3500·9 = 60000 + 31500 = 91500 so'm. Birinchi variant x = 2 dagi eng kichik to'lov, ikkinchisi faqat qo'shimcha qism, uchinchisi esa x = 10 uchun hisoblangan. Javob: 91500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monoton-kesmada-eng-katta-kichik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#2ce9b1f8"
+    },
+    {
+      "q": "y = 5x − 1, y = x², y = 2ˣ va y = log₃x funksiyalaridan qaysi biri o'z aniqlanish sohasida monoton emas?",
+      "v": [
+        "y = 5x − 1",
+        "y = x²",
+        "y = 2ˣ",
+        "y = log₃x"
+      ],
+      "t": 1,
+      "izoh": "Birinchi funksiya chiziqli va koeffitsienti musbat, demak o'suvchi. Uchinchisi ko'rsatkichli, asosi birdan katta, u ham o'suvchi. To'rtinchisi logarifmik, asosi birdan katta, (0; +∞) da o'suvchi. Ikkinchisi esa (−∞; 0) da kamayadi va (0; +∞) da o'sadi, ya'ni butun sohada bitta yo'nalish saqlanmaydi. Javob: y = x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monoton-emasligini-korsatish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#dc470809"
+    },
+    {
+      "q": "y = 1/x funksiya butun aniqlanish sohasida kamayuvchi emasligini isbotlash uchun qaysi qarshi misol to'g'ri keladi?",
+      "v": [
+        "x₁ = −1 va x₂ = 2 uchun −1 < 2, ammo f(−1) = −1 va f(2) = 0,5, ya'ni qiymat ortgan",
+        "x₁ = 1 va x₂ = 4 uchun f(1) = 1 va f(4) = 0,25, ya'ni qiymat kamaygan",
+        "x₁ = −4 va x₂ = −1 uchun f(−4) = −0,25 va f(−1) = −1, ya'ni qiymat kamaygan",
+        "x₁ = 2 va x₂ = 5 uchun f(2) = 0,5 va f(5) = 0,2, ya'ni qiymat kamaygan"
+      ],
+      "t": 0,
+      "izoh": "Kamayuvchilikni rad etish uchun argument ortganda qiymat ham ortadigan bitta juftlik topish yetarli. Ikkinchi, uchinchi va to'rtinchi juftliklarda qiymat kamaygan, ular kamayishni tasdiqlaydi va qarshi misol bo'la olmaydi. Birinchi juftlikda esa −1 < 2 bo'lsa ham −1 < 0,5, ya'ni qiymat ortdi. Bu juftlik uzilish nuqtasining ikki tomonidan olingan. Javob: birinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "monoton-emasligini-korsatish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#42d984be"
+    },
+    {
+      "q": "Sinf o'quvchisining olti haftalik test natijalari quyidagicha (ball): 62, 70, 70, 65, 74, 80. Bu ketma-ketlik nima uchun monoton deb hisoblanmaydi?",
+      "v": [
+        "Chunki ikkita bir xil natija, ya'ni 70 ikki marta uchraydi",
+        "Chunki natijalarning hech biri 100 ballga yetmagan",
+        "Chunki to'rtinchi hafta natijasi uchinchi haftanikidan past, oldin esa o'sish bo'lgan",
+        "Chunki oxirgi natija birinchi natijadan katta chiqqan"
+      ],
+      "t": 2,
+      "izoh": "Monotonlik butun ketma-ketlikda o'zgarish yo'nalishi bir xil bo'lishini talab qiladi. Bu yerda 62 dan 70 ga o'sish, so'ng 70 dan 65 ga pasayish, keyin yana 74 va 80 ga o'sish kuzatilgan. Yo'nalish almashgani uchun ketma-ketlik na o'suvchi, na kamayuvchi. Teng qiymatlarning bo'lishi qat'iy o'suvchilikni buzadi, lekin monotonlikning o'zini yo'qotmaydi. Javob: uchinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monoton-emasligini-korsatish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#c72d5c22"
+    },
+    {
+      "q": "y = x² − 4x + 1 funksiya (−1; 6) oraliqda monoton emasligini ko'rsatuvchi to'g'ri mulohazani tanlang.",
+      "v": [
+        "Oraliq ichida uch abssissasi x = 2 yotadi: undan chapda funksiya kamayadi, o'ngda o'sadi",
+        "Oraliq ichida uch nuqtasi yo'q, lekin funksiya baribir monoton emas",
+        "Funksiya monoton emas, chunki uning qiymatlari manfiy ham bo'lishi mumkin",
+        "Funksiya monoton emas, chunki oraliq uzunligi yetti birlikka teng"
+      ],
+      "t": 0,
+      "izoh": "Uch abssissasini topamiz: x₀ = 4/(2·1) = 2. Bu son berilgan oraliq ichida yotadi, chunki −1 < 2 < 6. Bosh koeffitsient musbat bo'lgani uchun uchgacha funksiya kamayadi, undan keyin o'sadi. Bitta oraliqda ikkala yo'nalish uchragani sababli monotonlik yo'q. Qiymatning manfiyligi yoki oraliq uzunligi bunga umuman aloqador emas. Javob: birinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monoton-emasligini-korsatish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#c4f92c83"
+    },
+    {
+      "q": "y = (a − 4)x + 7 chiziqli funksiya butun sonlar o'qida kamayuvchi bo'lishi uchun a parametr qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a < 4",
+        "a > 4",
+        "a < 7",
+        "a > 7"
+      ],
+      "t": 0,
+      "izoh": "Chiziqli funksiya kamayuvchi bo'lishi uchun burchak koeffitsienti manfiy bo'lishi shart. Bu yerda burchak koeffitsienti a − 4. Demak a − 4 < 0 tengsizlikni yechamiz va a < 4 hosil qilamiz. Ozod had 7 monotonlikka ta'sir qilmaydi, shuning uchun uchinchi va to'rtinchi variantlar noto'g'ri. Javob: a < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-va-monotonlik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#aec7d577"
+    },
+    {
+      "q": "y = (2a + 6)x − 5 chiziqli funksiya o'suvchi bo'lishi uchun a parametrning qanday qiymatlari yaraydi?",
+      "v": [
+        "a < −3",
+        "a > −3",
+        "a > 3",
+        "a < 3"
+      ],
+      "t": 1,
+      "izoh": "O'suvchilik sharti burchak koeffitsientining musbatligi, ya'ni 2a + 6 > 0. Ikki tomondan 6 ni ayiramiz: 2a > −6. Ikkiga bo'lamiz: a > −3. Uchinchi variantda 6 ni chap tomonga o'tkazishda ishora saqlanib qolgan (2a > 6 deb yozilgan), shuning uchun a > 3 chiqib qolgan; birinchi variantda esa tengsizlik ishorasi almashtirilgan. Javob: a > −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parametr-va-monotonlik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#5b0cccc2"
+    },
+    {
+      "q": "y = x² + (m − 2)x + 5 funksiya [3; +∞) nurda o'suvchi bo'lishi uchun m parametr qanday qiymatlarni qabul qilishi kerak?",
+      "v": [
+        "m ≤ −4",
+        "m ≥ 4",
+        "m ≥ −4",
+        "m ≤ 8"
+      ],
+      "t": 2,
+      "izoh": "Bosh koeffitsient musbat, shuning uchun parabola uchidan o'ngda o'sadi. Nur bo'ylab o'suvchilik uchun uch abssissasi 3 dan katta bo'lmasligi kerak. Uch abssissasi x₀ = −(m − 2)/2 ga teng, shart −(m − 2)/2 ≤ 3 ko'rinishida yoziladi. Ikki tomonni 2 ga ko'paytiramiz: −(m − 2) ≤ 6, ya'ni m − 2 ≥ −6 va m ≥ −4. Javob: m ≥ −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-va-monotonlik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#85a57d32"
+    },
+    {
+      "q": "Ko'rsatkichli funksiya y = (3k − 1)ˣ kamayuvchi bo'lishi uchun k parametr qanday oraliqda yotishi kerak?",
+      "v": [
+        "k > 2/3",
+        "0 < k < 1/3",
+        "k < 1/3",
+        "1/3 < k < 2/3"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkichli funksiya kamayuvchi bo'lishi uchun asos noldan katta va birdan kichik bo'lishi kerak, ya'ni 0 < 3k − 1 < 1. Chap tengsizlikdan 3k > 1 va k > 1/3. O'ng tengsizlikdan 3k < 2 va k < 2/3. Ikkala shart birga 1/3 < k < 2/3 oralig'ini beradi. Faqat bitta tengsizlikni yechish yetarli emas, shuning uchun qolgan variantlar chala. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-va-monotonlik",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#abca2b10"
+    },
+    {
+      "q": "y = x² − 10x + 4 funksiya [2; 8] kesmada monotonmi degan savolga to'g'ri javobni tanlang.",
+      "v": [
+        "Ha, monoton o'suvchi, chunki kesma faqat musbat sonlardan iborat",
+        "Yo'q, chunki uch abssissasi x = 5 kesma ichida yotadi",
+        "Ha, monoton kamayuvchi, chunki ozod had kichik son",
+        "Yo'q, chunki kesma uzunligi olti birlikka teng"
+      ],
+      "t": 1,
+      "izoh": "Uch abssissasini hisoblaymiz: x₀ = 10/(2·1) = 5. Bu son kesma ichida, chunki 2 < 5 < 8. Uchgacha funksiya kamayadi, undan keyin o'sadi, ya'ni bitta kesmada ikkala yo'nalish uchraydi. Shuning uchun funksiya bu kesmada monoton emas. Kesma uzunligi yoki sonlarning musbatligi bunga dalil bo'lolmaydi. Javob: ikkinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesmada-monotonlikni-tekshirish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#391f7eef"
+    },
+    {
+      "q": "y = 3/(x + 1) funksiya [−4; 2] kesmada monoton bo'ladimi? Javobingizni asoslang.",
+      "v": [
+        "Ha, chunki giperbola har doim va hamma joyda kamayuvchi",
+        "Ha, chunki kesma uchlaridagi qiymatlar bir-biridan farq qiladi",
+        "Yo'q, chunki x = −1 nuqtada funksiya aniqlanmagan va kesma ikkiga ajraladi",
+        "Yo'q, chunki funksiya kesmada avval o'sadi, keyin kamayadi"
+      ],
+      "t": 2,
+      "izoh": "Maxraj nolga aylanadigan nuqtani topamiz: x + 1 = 0, ya'ni x = −1. Bu nuqta kesma ichida yotadi va u yerda funksiya aniqlanmagan. Monotonlik faqat uzluksiz bo'lakda tekshiriladi, uzilishdan sakrab o'tib taqqoslab bo'lmaydi. Masalan f(−2) = −3, f(0) = 3, ya'ni −2 < 0 bo'lsa ham qiymat ortgan. Javob: uchinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmada-monotonlikni-tekshirish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#cfa3c218"
+    },
+    {
+      "q": "y = √(9 − x) funksiya [0; 9] kesmada qanday monotonlikka ega bo'ladi?",
+      "v": [
+        "Kesmada o'suvchi, chunki kvadrat ildiz funksiyasi o'suvchi",
+        "Kesmada kamayuvchi, chunki ildiz ostidagi ifoda kamayuvchi",
+        "Kesmada monoton emas, chunki chegarada ildiz nolga aylanadi",
+        "Kesmada o'zgarmas qiymat qabul qiladi"
+      ],
+      "t": 1,
+      "izoh": "Ichki ifoda 9 − x da x oldidagi koeffitsient manfiy, demak u kamayuvchi. Tashqi funksiya √u esa o'suvchi. O'suvchi tashqi funksiya ichki ifodaning tartibini saqlaydi, shuning uchun natija kamayuvchi bo'ladi. Tekshirish: x = 0 da √9 = 3, x = 5 da √4 = 2, x = 9 da √0 = 0. Javob: kesmada kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesmada-monotonlikni-tekshirish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#7ccba635"
+    },
+    {
+      "q": "Sayyoh tog'ga chiqmoqda: birinchi 3 soatda balandlik 400 m dan 1150 m gacha, keyingi 2 soatda esa 1150 m dan 1600 m gacha ko'tarildi. Balandlik funksiyasi butun besh soatda monotonmi va tezlik qanday o'zgargan?",
+      "v": [
+        "Monoton emas; tezlik o'zgargani uchun yo'nalish ham o'zgargan",
+        "Monoton o'suvchi; ko'tarilish tezligi 225 dan 250 m/soatga oshgan",
+        "Monoton kamayuvchi; ikkinchi bosqichda balandlik kamroq ortgan",
+        "Monoton o'suvchi; ko'tarilish tezligi 250 dan 225 m/soatga tushgan"
+      ],
+      "t": 3,
+      "izoh": "Balandlik hech qayerda pasaymagan: 400 dan 1150 ga, so'ng 1150 dan 1600 ga ortgan. Demak funksiya butun davrda o'suvchi. Tezliklarni hisoblaymiz: birinchi bosqichda 750 : 3 = 250 m/soat, ikkinchisida 450 : 2 = 225 m/soat. Ko'tarilish sekinlashgan, lekin bu monotonlikni buzmaydi. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmada-monotonlikni-tekshirish",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#3c9e77f1"
+    },
+    {
+      "q": "Ichki funksiya u = 2x + 5 o'suvchi va tashqi funksiya f(u) = u³ ham o'suvchi. Murakkab funksiya y = (2x + 5)³ qanday monotonlikka ega bo'ladi?",
+      "v": [
+        "Butun sonlar o'qida kamayuvchi, chunki kubga ko'tarish ishorani o'zgartiradi",
+        "Monoton emas, chunki ichki ifoda manfiy qiymat ham qabul qiladi",
+        "x > −2,5 da o'suvchi, undan chapda esa kamayuvchi",
+        "Butun sonlar o'qida o'suvchi, chunki ketma-ket ikkita o'suvchi funksiya qo'llangan"
+      ],
+      "t": 3,
+      "izoh": "Aytaylik x₁ < x₂. Ichki funksiya o'suvchi bo'lgani uchun 2x₁ + 5 < 2x₂ + 5. Tashqi funksiya ham o'suvchi, shuning uchun bu tartib kub olishda saqlanadi: (2x₁ + 5)³ < (2x₂ + 5)³. Kub daraja manfiy sonda ham tartibni buzmaydi, chunki u toq daraja. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#9c31f7c4"
+    },
+    {
+      "q": "y = 2^(5 − x) funksiyaning butun sonlar o'qidagi monotonligini aniqlang.",
+      "v": [
+        "O'suvchi, chunki ko'rsatkichli funksiyaning asosi 2 birdan katta",
+        "Monoton emas, chunki ko'rsatkichda ayirma ifodasi turibdi",
+        "Kamayuvchi, chunki ichki ifoda 5 − x kamayuvchi, tashqi funksiya esa o'suvchi",
+        "Faqat x < 5 da o'suvchi, undan keyin kamayuvchi"
+      ],
+      "t": 2,
+      "izoh": "Ichki ifoda 5 − x da x oldidagi koeffitsient manfiy, demak u kamayuvchi. Tashqi funksiya 2ᵘ asosi birdan katta bo'lgani uchun o'suvchi va tartibni saqlaydi. Kamayuvchi ichki ifoda o'suvchi tashqi funksiya bilan birlashganda natija kamayuvchi bo'ladi. Tekshirish: x = 1 da 2⁴ = 16, x = 3 da 2² = 4. Javob: kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#df38d2f4"
+    },
+    {
+      "q": "y = lg(x² + 1) funksiya qaysi to'plamda o'suvchi ekanligini aniqlang.",
+      "v": [
+        "(−∞; 0) oralig'ida o'suvchi",
+        "Butun sonlar o'qi bo'ylab o'suvchi",
+        "Butun sonlar o'qi bo'ylab kamayuvchi",
+        "(0; +∞) oralig'ida o'suvchi"
+      ],
+      "t": 3,
+      "izoh": "Ichki ifoda x² + 1 chap yarim o'qda kamayadi, o'ng yarim o'qda esa o'sadi. Tashqi funksiya lg o'suvchi bo'lgani uchun ichki ifodaning yo'nalishini o'zgartirmaydi. Demak butun funksiya (−∞; 0) da kamayadi va (0; +∞) da o'sadi. Tekshirish: x = 1 da lg 2, x = 3 da lg 10 = 1, ya'ni qiymat ortdi. Javob: (0; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#9c2b6b6e"
+    },
+    {
+      "q": "Ichki funksiyasi ham, tashqi funksiyasi ham kamayuvchi bo'lgan murakkab funksiya qanday monotonlikka ega bo'ladi?",
+      "v": [
+        "Kamayuvchi bo'ladi, chunki ikkala bo'g'in ham kamayuvchi",
+        "O'suvchi bo'ladi, chunki tartib ketma-ket ikki marta teskarisiga o'zgaradi",
+        "Monoton bo'lmaydi, chunki bo'g'inlarning yo'nalishi bir-biriga zid",
+        "Har qanday holatda o'zgarmas qiymat qabul qiladi"
+      ],
+      "t": 1,
+      "izoh": "Aytaylik x₁ < x₂. Ichki funksiya kamayuvchi bo'lgani uchun u(x₁) > u(x₂). Tashqi funksiya ham kamayuvchi, u bu tengsizlikni yana teskarisiga aylantiradi: f(u(x₁)) < f(u(x₂)). Demak argument ortganda natija ham ortdi. Misol sifatida y = 0,5^(3 − x) ni olish mumkin: x = 0 da qiymat 0,125, x = 2 da esa 0,5. Javob: o'suvchi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "murakkab-funksiya-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#4370a087"
+    },
+    {
+      "q": "aₙ = 3n + 4 ketma-ketlikning monotonligini qo'shni hadlar ayirmasi orqali aniqlang.",
+      "v": [
+        "Ayirma 4 ga teng, ketma-ketlik o'suvchi",
+        "Ayirma 7 ga teng, ketma-ketlik o'suvchi",
+        "Ayirma 3 ga teng, ketma-ketlik o'suvchi",
+        "Ayirma −3 ga teng, ketma-ketlik kamayuvchi"
+      ],
+      "t": 2,
+      "izoh": "Keyingi hadni yozamiz: aₙ₊₁ = 3(n + 1) + 4 = 3n + 7. Endi ayirmani topamiz: aₙ₊₁ − aₙ = (3n + 7) − (3n + 4) = 3. Ayirma barcha n larda musbat va doimiy, demak ketma-ketlik qat'iy o'suvchi. Ikkinchi variantda birinchi had qiymati ayirma deb olingan. Javob: ayirma 3, ketma-ketlik o'suvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ketma-ketlik-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#cf38149a"
+    },
+    {
+      "q": "bₙ = 20 − 2n ketma-ketlik haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "O'suvchi, chunki boshlang'ich son 20 musbat",
+        "Monoton emas, chunki hadlar keyinchalik manfiy bo'lib qoladi",
+        "n = 10 gacha kamayadi, undan keyin esa o'sadi",
+        "Kamayuvchi, chunki qo'shni hadlar ayirmasi −2 ga teng"
+      ],
+      "t": 3,
+      "izoh": "Ayirmani hisoblaymiz: bₙ₊₁ − bₙ = (20 − 2n − 2) − (20 − 2n) = −2. Ayirma barcha n larda manfiy, shuning uchun ketma-ketlik qat'iy kamayuvchi. Hadlarning manfiy bo'lib qolishi monotonlikni buzmaydi, chunki kamayish davom etaveradi. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ketma-ketlik-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#b02290c4"
+    },
+    {
+      "q": "Qurilish maydonchasida har oy g'isht sarflanadi va zaxira cₙ = 48000 − 3500·n dona qoladi. Ketma-ketlikning monotonligi va zaxiraning tugash oyi to'g'ri ko'rsatilgan javobni tanlang.",
+      "v": [
+        "O'suvchi; zaxira 14-oyda tugaydi",
+        "Kamayuvchi; zaxira 14-oyda tugaydi",
+        "Kamayuvchi; zaxira 13-oyda tugaydi",
+        "Kamayuvchi; zaxira 12-oyda tugaydi"
+      ],
+      "t": 1,
+      "izoh": "Qo'shni hadlar ayirmasi cₙ₊₁ − cₙ = −3500, ya'ni manfiy, demak ketma-ketlik kamayuvchi. Zaxira tugash oyini topish uchun hadni tekshiramiz: c₁₃ = 48000 − 45500 = 2500 dona, hali qolgan. c₁₄ = 48000 − 49000 = −1000, ya'ni zaxira yetmaydi. Demak g'isht 14-oyda tugaydi. Javob: ikkinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ketma-ketlik-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#1a5bd33b"
+    },
+    {
+      "q": "dₙ = (n + 1)/n ketma-ketlikning monotonligini aniqlang va tanlovingizni asoslang.",
+      "v": [
+        "O'suvchi, chunki surat ham, maxraj ham n bilan birga ortadi",
+        "Monoton emas, chunki hadlar bir songa yaqinlashib boradi",
+        "Kamayuvchi, chunki dₙ = 1 + 1/n va 1/n qismi kamayadi",
+        "O'zgarmas, chunki barcha hadlar birga teng bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Hadni ajratib yozamiz: dₙ = (n + 1)/n = n/n + 1/n = 1 + 1/n. Bu yerda 1 doimiy, 1/n esa n ortganda kamayadi. Doimiy songa kamayuvchi qism qo'shilsa, yig'indi ham kamayadi. Tekshirish: d₁ = 2, d₂ = 3/2, d₄ = 5/4. Javob: kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ketma-ketlik-monotonligi",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#de4c7d5f"
+    },
+    {
+      "q": "f funksiya (0; +∞) da qat'iy o'suvchi va f(4) = 11 ekani ma'lum. f(9) qiymati haqida qanday aniq xulosa chiqarish mumkin?",
+      "v": [
+        "f(9) < 11, chunki argument o'zgarganda qiymat pasayadi",
+        "f(9) = 11, chunki funksiya bir tekis o'sib boradi",
+        "f(9) > 11, chunki 4 < 9 va funksiya o'suvchi",
+        "f(9) aniq 16 ga teng bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Qat'iy o'suvchi funksiyada kattaroq argumentga kattaroq qiymat mos keladi. 4 va 9 sonlarining ikkalasi ham (0; +∞) da yotadi va 4 < 9. Demak f(4) < f(9), ya'ni 11 < f(9). Aniq qiymatni aytib bo'lmaydi, chunki funksiyaning ko'rinishi berilmagan. Javob: f(9) > 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-bilan-taqqoslash",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#f38961db"
+    },
+    {
+      "q": "g funksiya butun sonlar o'qida kamayuvchi. g(−3), g(0) va g(7) qiymatlarini o'sish tartibida joylashtiring.",
+      "v": [
+        "g(−3) < g(0) < g(7)",
+        "g(0) < g(−3) < g(7)",
+        "g(7) < g(−3) < g(0)",
+        "g(7) < g(0) < g(−3)"
+      ],
+      "t": 3,
+      "izoh": "Argumentlarni tartiblaymiz: −3 < 0 < 7. Kamayuvchi funksiyada argument ortganda qiymat kamayadi, ya'ni tartib teskarisiga aylanadi: g(−3) > g(0) > g(7). Buni o'sish tartibida yozsak g(7) < g(0) < g(−3) hosil bo'ladi. Birinchi variant argumentlar tartibini shundayligicha ko'chirgan, bu tipik xato. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "monotonlik-bilan-taqqoslash",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#1fda2097"
+    },
+    {
+      "q": "Uch mijoz bir xil boshlang'ich summani bir xil bankda saqladi: birinchisi 8 oy, ikkinchisi 15 oy, uchinchisi 23 oy. Omonat summasi vaqt bo'yicha qat'iy ortib boradi. Yakuniy summalar qanday joylashadi?",
+      "v": [
+        "Uchtasi ham teng bo'ladi, chunki foiz stavkasi bir xil",
+        "23 oylik summa eng kichik, 8 oylik summa eng katta bo'ladi",
+        "Tartibni aniqlab bo'lmaydi, chunki boshlang'ich summa berilmagan",
+        "8 oylik summa eng kichik, 23 oylik summa eng katta bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Summa vaqtga bog'liq qat'iy o'suvchi funksiya bo'lgani uchun uzoqroq saqlangan omonat kattaroq bo'ladi. Muddatlarni tartiblaymiz: 8 < 15 < 23. O'suvchi funksiyada shu tartib qiymatlarga ham o'tadi. Boshlang'ich summaning aniq qiymati kerak emas, chunki u uchalasida bir xil. Javob: to'rtinchi variant.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "monotonlik-bilan-taqqoslash",
+      "id": "matematika_funk_m09-monotonlik-osish-va-kamayish-oraliqlari#657f5914"
+    }
+  ]
+}

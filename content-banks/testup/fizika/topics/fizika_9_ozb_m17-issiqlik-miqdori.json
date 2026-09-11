@@ -1,0 +1,546 @@
+{
+  "nom": "17-mavzu. Issiqlik Miqdori",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Issiqlik almashinuv (issiqlik uzatish) deganda nima tushuniladi?",
+      "v": [
+        "Bir jismdan ikkinchi jismga ish bajarmasdan energiya uzatish jarayoni",
+        "Jismni mexanik harakatlantirish jarayoni",
+        "Jismni ko'tarishda ish bajarish jarayoni",
+        "Gazni siqish jarayoni"
+      ],
+      "t": 0,
+      "izoh": "Bir jismdan ikkinchi jismga ish bajarmasdan energiya uzatish jarayoniga issiqlik almashinuv yoki issiqlik uzatish deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#1bf9ebab"
+    },
+    {
+      "q": "Issiqlik miqdori deganda nima tushuniladi?",
+      "v": [
+        "Issiqlik almashinish jarayonida jism olgan yoki yo'qotgan ichki energiya miqdorini belgilovchi fizik kattalik",
+        "Jismning temperaturasini belgilovchi kattalik",
+        "Jismning hajmini belgilovchi kattalik",
+        "Jismning zichligini belgilovchi kattalik"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik almashinish jarayonida jism olgan yoki yo'qotgan ichki energiya miqdorini belgilovchi fizik kattalikka issiqlik miqdori deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#eb470ad0"
+    },
+    {
+      "q": "Issiqlik miqdori qanday harf bilan belgilanadi?",
+      "v": [
+        "Q",
+        "U",
+        "A",
+        "c"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik miqdorini Q harfi bilan belgilash qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#5fb69005"
+    },
+    {
+      "q": "Issiqlik miqdorining Xalqaro birliklar tizimidagi o'lchov birligi nima?",
+      "v": [
+        "Joul",
+        "Kaloriya",
+        "Vatt",
+        "Kelvin"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik miqdorining o'lchov birligi ishning birligi bilan bir xil, ya'ni Joul (1 J).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#b489396c"
+    },
+    {
+      "q": "1 kaloriya deganda nima tushuniladi?",
+      "v": [
+        "1 gramm distillangan suvni 1°C ga isitish uchun kerak bo'lgan issiqlik miqdori",
+        "1 kg suvni 100°C ga isitish uchun kerak issiqlik",
+        "1 g muzni eritish uchun kerak issiqlik",
+        "1 l suvni qaynatish uchun kerak issiqlik"
+      ],
+      "t": 0,
+      "izoh": "1 gramm distillangan suvni 1°C ga isitish uchun kerak bo'lgan issiqlik miqdori 1 kaloriya deb qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#32ea9435"
+    },
+    {
+      "q": "1 kilokaloriya necha kaloriyaga teng?",
+      "v": [
+        "1000 kal",
+        "100 kal",
+        "10 kal",
+        "10000 kal"
+      ],
+      "t": 0,
+      "izoh": "1 kkal = 1000 kal.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#931dec99"
+    },
+    {
+      "q": "1 J necha kaloriyaga teng?",
+      "v": [
+        "0,24 kal",
+        "4,19 kal",
+        "1 kal",
+        "2,4 kal"
+      ],
+      "t": 0,
+      "izoh": "1 J = 0,24 kal.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#28e2e056"
+    },
+    {
+      "q": "1 kaloriya necha Joulga teng?",
+      "v": [
+        "4,19 J",
+        "0,24 J",
+        "1 J",
+        "41,9 J"
+      ],
+      "t": 0,
+      "izoh": "1 kal = 4,19 J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#9fadec40"
+    },
+    {
+      "q": "Jism olgan yoki yo'qotgan issiqlik miqdorini hisoblash formulasi qaysi?",
+      "v": [
+        "Q = mc(t₂ − t₁)",
+        "Q = m/(c·Δt)",
+        "Q = c(t₂ + t₁)",
+        "Q = mc/(t₂ − t₁)"
+      ],
+      "t": 0,
+      "izoh": "Jism olgan yoki yo'qotgan issiqlik miqdori Q = mc(t₂ − t₁) formula bilan hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#6eea1017"
+    },
+    {
+      "q": "Q = mc(t₂ − t₁) formulasidagi c nimani bildiradi?",
+      "v": [
+        "Moddaning solishtirma issiqlik sig'imini",
+        "Jismning zichligini",
+        "Issiqlik miqdorini",
+        "Jismning massasini"
+      ],
+      "t": 0,
+      "izoh": "c — proporsionallik koeffitsiyenti bo'lib, unga moddaning solishtirma issiqlik sig'imi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#00d51f79"
+    },
+    {
+      "q": "Q = mc(t₂ − t₁) formulasidagi t₁ va t₂ nimani bildiradi?",
+      "v": [
+        "Jismning boshlang'ich va oxirgi temperaturalarini",
+        "Ikki turli jismning temperaturalarini",
+        "Qaynash va erish temperaturalarini",
+        "Kunduzgi va tungi temperaturalarni"
+      ],
+      "t": 0,
+      "izoh": "t₁ — jismning boshlang'ich temperaturasi, t₂ — jismning oxirgi temperaturasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#44ff148d"
+    },
+    {
+      "q": "Issiqlik almashinish jarayonidan keyin t₂ > t₁ bo'lsa, bu nimani anglatadi?",
+      "v": [
+        "Q > 0 bo'lib, jism issiqlik miqdori olgan",
+        "Q < 0 bo'lib, jism issiqlik miqdori bergan",
+        "Jismning temperaturasi o'zgarmagan",
+        "Jism muzlagan"
+      ],
+      "t": 0,
+      "izoh": "t₂ > t₁ munosabatda bo'lsa Q > 0 bo'lib, jism issiqlik miqdori olganligini anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#13eaef92"
+    },
+    {
+      "q": "Issiqlik almashinish jarayonidan keyin t₂ < t₁ bo'lsa, bu nimani anglatadi?",
+      "v": [
+        "Q < 0 bo'lib, jism issiqlik miqdori bergan",
+        "Q > 0 bo'lib, jism issiqlik miqdori olgan",
+        "Jism issiqlik almashinmagan",
+        "Jism qaynagan"
+      ],
+      "t": 0,
+      "izoh": "t₂ < t₁ munosabatda bo'lsa Q < 0 bo'lib, jism issiqlik miqdori berganligini anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#50e77edc"
+    },
+    {
+      "q": "Moddaning solishtirma issiqlik sig'imi qanday hisoblanadi?",
+      "v": [
+        "c = Q/(m(t₂ − t₁))",
+        "c = Q·m(t₂ − t₁)",
+        "c = m(t₂ − t₁)/Q",
+        "c = Q/(t₂ − t₁)"
+      ],
+      "t": 0,
+      "izoh": "(1) ifodaga ko'ra moddaning solishtirma issiqlik sig'imi c = Q/(m(t₂ − t₁)) qilib hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#c98f780e"
+    },
+    {
+      "q": "Solishtirma issiqlik sig'imining Xalqaro birliklar tizimidagi birligi qanday?",
+      "v": [
+        "J/(kg·K)",
+        "J/kg",
+        "J/K",
+        "kal/g"
+      ],
+      "t": 0,
+      "izoh": "Solishtirma issiqlik sig'imining birligi [c] = J/(kg·K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#10d3904d"
+    },
+    {
+      "q": "Moddaning solishtirma issiqlik sig'imi deganda nima tushuniladi?",
+      "v": [
+        "Massasi 1 kg bo'lgan moddaning temperaturasini 1°C ga o'zgartirish uchun kerak bo'lgan issiqlik miqdorini tavsiflovchi fizik kattalik",
+        "1 g moddani qaynatish uchun kerak issiqlik",
+        "1 mol moddani 1 K ga isitish uchun kerak issiqlik",
+        "1 kg moddani eritish uchun kerak issiqlik"
+      ],
+      "t": 0,
+      "izoh": "Massasi 1 kg bo'lgan moddaning temperaturasini 1°C ga o'zgartirish uchun kerak bo'lgan issiqlik miqdorini tavsiflovchi fizik kattalikka moddaning solishtirma issiqlik sig'imi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#d1ced99c"
+    },
+    {
+      "q": "Suvning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "4200 J/(kg·K)",
+        "2100 J/(kg·K)",
+        "890 J/(kg·K)",
+        "2140 J/(kg·K)"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga ko'ra suvning solishtirma issiqlik sig'imi 4200 J/(kg·K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#b9606b99"
+    },
+    {
+      "q": "Alyuminiyning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "890 J/(kg·K)",
+        "460 J/(kg·K)",
+        "390 J/(kg·K)",
+        "830 J/(kg·K)"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga ko'ra alyuminiyning solishtirma issiqlik sig'imi 890 J/(kg·K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#0566cbc2"
+    },
+    {
+      "q": "Qo'rg'oshinning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "130 J/(kg·K)",
+        "230 J/(kg·K)",
+        "390 J/(kg·K)",
+        "460 J/(kg·K)"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga ko'ra qo'rg'oshinning solishtirma issiqlik sig'imi 130 J/(kg·K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#4d5bd22d"
+    },
+    {
+      "q": "Misning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "390 J/(kg·K)",
+        "460 J/(kg·K)",
+        "230 J/(kg·K)",
+        "890 J/(kg·K)"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga ko'ra misning solishtirma issiqlik sig'imi 390 J/(kg·K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#6d3c9757"
+    },
+    {
+      "q": "Po'latning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "460 J/(kg·K)",
+        "390 J/(kg·K)",
+        "830 J/(kg·K)",
+        "130 J/(kg·K)"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga ko'ra po'latning solishtirma issiqlik sig'imi 460 J/(kg·K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#b6608b9e"
+    },
+    {
+      "q": "Muzning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "2100 J/(kg·K)",
+        "4200 J/(kg·K)",
+        "2140 J/(kg·K)",
+        "830 J/(kg·K)"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga ko'ra muzning solishtirma issiqlik sig'imi 2100 J/(kg·K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#94e35edb"
+    },
+    {
+      "q": "Kerosinning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "2140 J/(kg·K)",
+        "2100 J/(kg·K)",
+        "4200 J/(kg·K)",
+        "890 J/(kg·K)"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga ko'ra kerosinning solishtirma issiqlik sig'imi 2140 J/(kg·K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#86a46daa"
+    },
+    {
+      "q": "Darslikdagi jadvalda keltirilgan moddalar ichida solishtirma issiqlik sig'imi eng katta bo'lgan modda qaysi?",
+      "v": [
+        "Suv",
+        "Kerosin",
+        "Muz",
+        "Alyuminiy"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda eng katta qiymat suvda: 4200 J/(kg·K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#7f2d1fd6"
+    },
+    {
+      "q": "Darslikdagi jadvalda keltirilgan moddalar ichida solishtirma issiqlik sig'imi eng kichik bo'lgan modda qaysi?",
+      "v": [
+        "Qo'rg'oshin",
+        "Kumush",
+        "Qalay",
+        "Mis"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda eng kichik qiymat qo'rg'oshinda: 130 J/(kg·K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#141a5afb"
+    },
+    {
+      "q": "Yopiq sistema deganda qanday sistema tushuniladi?",
+      "v": [
+        "Atrofdagi jismlardan yetarli darajada izolyatsiyalangan sistema",
+        "Faqat bir jismdan iborat sistema",
+        "Ochiq havodagi sistema",
+        "Faqat gazlardan iborat sistema"
+      ],
+      "t": 0,
+      "izoh": "O'rganayotgan jismlar tizimi atrofdagi jismlardan yetarli darajada izolyatsiyalangan bo'lsa, uni yopiq sistema deb ataymiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#f12a2583"
+    },
+    {
+      "q": "Yopiq sistema ichida turgan jismlarning umumiy ichki energiyasi vaqt o'tishi bilan qanday o'zgaradi?",
+      "v": [
+        "O'zgarmaydi",
+        "Doimiy ortadi",
+        "Doimiy kamayadi",
+        "Avval ortadi, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Vaqt o'tishi bilan yopiq sistema ichida turgan jismlarning ichki energiyasi o'zgarmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#20f0fa21"
+    },
+    {
+      "q": "Sistemaning termodinamik muvozanat temperaturasi deganda nima tushuniladi?",
+      "v": [
+        "Sistemadagi barcha jismlar qaror topgan bir xil temperatura",
+        "Sistemadagi eng issiq jismning temperaturasi",
+        "Sistemadagi eng sovuq jismning temperaturasi",
+        "Xonaning temperaturasi"
+      ],
+      "t": 0,
+      "izoh": "Qaror topgan temperatura jismlar sistemasining termodinamik muvozanat temperaturasi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#2f5acdae"
+    },
+    {
+      "q": "Issiqlik balansi tenglamasi qanday yoziladi?",
+      "v": [
+        "Q₁ + Q₂ + ... + Qₙ = Q'₁ + Q'₂ + ... + Q'ₙ",
+        "Q₁ = Q₂ = ... = Qₙ",
+        "Q₁ − Q₂ = 0",
+        "Q₁·Q₂ = Q'₁·Q'₂"
+      ],
+      "t": 0,
+      "izoh": "Q₁, Q₂, ..., Qₙ — issiqroq jismlarning bergan issiqlik miqdorlari, Q'₁, Q'₂, ..., Q'ₙ — sovuqroq jismlarning olgan issiqlik miqdorlari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#687a5545"
+    },
+    {
+      "q": "Issiqlik balansi tenglamasi qanday ta'riflanadi?",
+      "v": [
+        "Ichki energiyalari kamaygan jismlarning uzatgan issiqlik miqdorlari yig'indisi ichki energiyalari ortgan jismlarning qabul qilgan issiqlik miqdorlari yig'indisiga teng",
+        "Barcha jismlar bir xil issiqlik oladi",
+        "Issiq jism barcha issiqlikni yo'qotadi",
+        "Sovuq jism issiqlik bermaydi"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik almashinishi natijasida ichki energiyalari kamaygan jismlarning uzatgan issiqlik miqdorlarining yig'indisi ichki energiyalari ortgan jismlarning qabul qilgan issiqlik miqdorlarining yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#f6d76b35"
+    },
+    {
+      "q": "Issiqlik almashinish jarayoni uchun energiyaning saqlanish qonuni qanday ta'riflanadi?",
+      "v": [
+        "Issiqlik miqdori yo'qdan bor bo'lmaydi, bordan yo'q bo'lmaydi, faqat bir jismdan boshqa bir jismga o'tadi",
+        "Issiqlik doim hosil bo'lib turadi",
+        "Issiqlik yo'qoladi",
+        "Issiqlik faqat issiq jismda saqlanadi"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik almashinuvi jarayonida issiqlik miqdori yo'qdan bor bo'lmaydi, bordan yo'q bo'lmaydi, faqat bir jismdan boshqa bir jismga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#f9d8fb74"
+    },
+    {
+      "q": "«Balans» so'zi qaysi tildan olingan va nimani anglatadi?",
+      "v": [
+        "Fransuzcha «balans» — muvozanat",
+        "Lotincha «calor» — issiqlik",
+        "Yunoncha «metreo» — o'lchash",
+        "Inglizcha «heat» — issiqlik"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik balansi tenglamasi (fransuzcha «balans» — muvozanat so'zidan olingan).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#8ec0dda2"
+    },
+    {
+      "q": "«Kalorimetr» so'zi qanday ma'noni bildiradi?",
+      "v": [
+        "Issiqlikni o'lchash",
+        "Temperaturani ko'rsatish",
+        "Bosimni o'lchash",
+        "Massani o'lchash"
+      ],
+      "t": 0,
+      "izoh": "Kalorimetr so'zi issiqlikni o'lchash degan ma'noni bildiradi (lotincha calor — issiqlik, yunoncha metreo — o'lchash).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#aed1af75"
+    },
+    {
+      "q": "Kalorimetr qanday tuzilgan?",
+      "v": [
+        "Yupqa devorli metall ichki idish issiqlik kam o'tkazuvchi tagliklarga o'rnatilgan plastmassa idishga solingan",
+        "Oddiy shisha stakandan iborat",
+        "Yopiq metall ballondan iborat",
+        "Faqat termometrdan iborat"
+      ],
+      "t": 0,
+      "izoh": "Kalorimetrning ichki idishi yupqa devorli metall idishdan iborat bo'lib, issiqlik kam o'tkazuvchi tagliklarga o'rnatilgan plastmassa idishga solingan. Kalorimetrga termometr va aralashtirgich tushiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#5570ff86"
+    },
+    {
+      "q": "Kalorimetr, suv va qizdirilgan jismdan iborat tajribada Q = Q₁ + Q₂ tenglamasi nimani bildiradi?",
+      "v": [
+        "Jismning bergan issiqlik miqdori kalorimetr va suv olgan issiqlik miqdorlari yig'indisiga teng",
+        "Suv bergan issiqlik jism olgan issiqlikka teng",
+        "Kalorimetr issiqlik bermaydi",
+        "Jism issiqlik oladi"
+      ],
+      "t": 0,
+      "izoh": "Energiyaning saqlanish qonuniga ko'ra, jismning bergan issiqlik miqdori kalorimetr va suv olgan issiqlik miqdorlari yig'indisiga teng: Q = Q₁ + Q₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#abc3b33c"
+    },
+    {
+      "q": "Darslikdagi masalada suv 210 m balandlikdan oqib tushganda uning temperaturasi qanday formula bilan topilgan?",
+      "v": [
+        "Δt = g·h/c",
+        "Δt = c/(g·h)",
+        "Δt = g·h·c",
+        "Δt = h/(g·c)"
+      ],
+      "t": 0,
+      "izoh": "m·g·h = c·m(t₂ − t₁) dan Δt = g·h/c = 9,81·210/4200 K = 0,49 K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m17-issiqlik-miqdori#a7c56d77"
+    }
+  ]
+}

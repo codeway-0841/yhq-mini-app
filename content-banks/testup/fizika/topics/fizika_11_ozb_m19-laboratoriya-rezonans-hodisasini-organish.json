@@ -1,0 +1,381 @@
+{
+  "nom": "19-mavzu. Laboratoriya Rezonans Hodisasini Organish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Rezonans hodisasini o'rganish laboratoriya ishining maqsadi nima?",
+      "v": [
+        "O'zgaruvchan tok zanjirida kuchlanishlar rezonansi hodisasini o'rganish",
+        "O'zgarmas tok qonunlarini tekshirish",
+        "Transformator ishini o'rganish",
+        "Elektr maydon kuchlanganligini o'lchash"
+      ],
+      "t": 0,
+      "izoh": "Ishning maqsadi — o'zgaruvchan tok zanjirida kuchlanishlar rezonansi hodisasini o'rganish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#41976041"
+    },
+    {
+      "q": "Laboratoriya ishida o'zgaruvchan tok manbayi sifatida qaysi asbob ishlatiladi?",
+      "v": [
+        "Tovush generatori (TG)",
+        "Akumulyator",
+        "Galvanik element",
+        "Quyosh batareyasi"
+      ],
+      "t": 0,
+      "izoh": "Kerakli asboblar ro'yxatida o'zgaruvchan tok (tovush) generatori (TG) ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#b9f722a4"
+    },
+    {
+      "q": "Laboratoriya ishida qanday induktiv g'altak ishlatiladi?",
+      "v": [
+        "Ferromagnit o'zakli, induktivligi 1 H bo'lgan g'altak",
+        "O'zaksiz, induktivligi 1 mH g'altak",
+        "Ferromagnit o'zakli, induktivligi 10 H g'altak",
+        "Havo o'zakli, 1 H g'altak"
+      ],
+      "t": 0,
+      "izoh": "Ishda ferromagnit o'zakka ega bo'lgan induktiv g'altak (L = 1 H) ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#44cbc2de"
+    },
+    {
+      "q": "Laboratoriya ishida ishlatiladigan kondensatorlar batareyasining sig'imi qanday oraliqda o'zgaradi?",
+      "v": [
+        "10 μF gacha",
+        "1 μF gacha",
+        "100 μF gacha",
+        "1 mF gacha"
+      ],
+      "t": 0,
+      "izoh": "Sig'imi 10 μF gacha o'zgaradigan kondensatorlar batareyasi ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#22d92586"
+    },
+    {
+      "q": "Laboratoriya ishida kuchlanishlarni o'lchash uchun nechta multimetr kerak?",
+      "v": [
+        "Ikkita",
+        "Bitta",
+        "Uchta",
+        "To'rtta"
+      ],
+      "t": 0,
+      "izoh": "Kerakli asboblar ro'yxatida ikkita multimetr ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#e6defc69"
+    },
+    {
+      "q": "Tajriba boshlanishida tovush generatori chiqishi qanday holga to'g'rilanadi?",
+      "v": [
+        "100 Hz va 10 V bo'ladigan holga",
+        "50 Hz va 220 V holga",
+        "1000 Hz va 5 V holga",
+        "10 Hz va 100 V holga"
+      ],
+      "t": 0,
+      "izoh": "TG dan chiqishda 100 Hz va 10 V bo'ladigan holga to'g'rilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#8b5f177a"
+    },
+    {
+      "q": "Multimetrlar qanday rejimga o'tkaziladi?",
+      "v": [
+        "O'zgaruvchan kuchlanishni o'lchaydigan, o'lchash diapazoni 20 V bo'lgan holatga",
+        "O'zgarmas tok o'lchaydigan holatga",
+        "Qarshilik o'lchaydigan holatga",
+        "O'zgarmas kuchlanish o'lchaydigan, 200 V diapazonli holatga"
+      ],
+      "t": 0,
+      "izoh": "Multimetrlar o'zgaruvchan kuchlanishni o'lchash, diapazoni 20 V bo'lgan holatga o'tkaziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#9cab5733"
+    },
+    {
+      "q": "Multimetrlar kondensator va g'altakka qanday ulanadi?",
+      "v": [
+        "Parallel holda",
+        "Ketma-ket holda",
+        "Aralash holda",
+        "Kalit orqali ketma-ket"
+      ],
+      "t": 0,
+      "izoh": "Multimetrlar parallel holda kondensatorga va g'altakka ulanadi (voltmetr kabi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#b1c746d6"
+    },
+    {
+      "q": "Tajribaning boshlang'ich holatida kondensator va g'altak kuchlanishlari orasida qanday munosabat kuzatiladi?",
+      "v": [
+        "UC > UL",
+        "UC < UL",
+        "UC = UL",
+        "UC = 0"
+      ],
+      "t": 0,
+      "izoh": "Kalit ulanganda UC > UL bo'lishiga e'tibor beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#4982b936"
+    },
+    {
+      "q": "Tajribada generator chastotasi qanday o'zgartiriladi?",
+      "v": [
+        "10 Hz dan oshirib boriladi",
+        "1000 Hz dan kamaytirib boriladi",
+        "Doimiy 50 Hz da ushlab turiladi",
+        "Tasodifiy o'zgartiriladi"
+      ],
+      "t": 0,
+      "izoh": "Generator chiqishidagi chastotani 10 Hz dan oshirib borib, UC va UL yozib boriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#93ec9e93"
+    },
+    {
+      "q": "Tajriba qanday shart bajarilguncha davom ettiriladi?",
+      "v": [
+        "UC = UL bo'lgunga qadar",
+        "UC = 0 bo'lgunga qadar",
+        "UL = 0 bo'lgunga qadar",
+        "Chastota 1000 Hz ga yetguncha"
+      ],
+      "t": 0,
+      "izoh": "Tajribani UC = UL bo'lgunga qadar davom ettirish kerak — bu rezonans holati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#d4261965"
+    },
+    {
+      "q": "Laboratoriya ishida rezonans chastotasi qaysi shartdan foydalanib hisoblanadi?",
+      "v": [
+        "2πvL = 1/(2πvC) shartdan",
+        "R = ωL shartdan",
+        "U = IR shartdan",
+        "P = UI shartdan"
+      ],
+      "t": 0,
+      "izoh": "UC = UL shart bajariladigan hol uchun 2πvL = 1/(2πvC) dan rezonans chastotasi hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#48cf0ce1"
+    },
+    {
+      "q": "Rezonans chastotasini hisoblash formulasi qanday?",
+      "v": [
+        "vr = 1/(2π√(LC))",
+        "vr = 2π√(LC)",
+        "vr = √(LC)",
+        "vr = 1/(LC)"
+      ],
+      "t": 0,
+      "izoh": "2πvL = 1/(2πvC) dan vr = 1/(2π√(LC)) kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#a54a15c2"
+    },
+    {
+      "q": "Hisoblab topilgan rezonans chastotasi nima bilan solishtiriladi?",
+      "v": [
+        "Tajribada aniqlangan chastota qiymati bilan",
+        "G'altak induktivligi bilan",
+        "Generator quvvati bilan",
+        "Simlar qarshiligi bilan"
+      ],
+      "t": 0,
+      "izoh": "Hisoblab topilgan chastota qiymati tajribada aniqlangan chastota qiymati bilan solishtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#4eb43763"
+    },
+    {
+      "q": "Tajriba yakunida qanday grafik chiziladi?",
+      "v": [
+        "UC va UL kuchlanishlarning generator chastotasiga bog'liqlik grafigi",
+        "Tok kuchining vaqtga bog'liqlik grafigi",
+        "Qarshilikning haroratga bog'liqlik grafigi",
+        "Quvvatning yuklamaga bog'liqlik grafigi"
+      ],
+      "t": 0,
+      "izoh": "Kondensatordagi UC va g'altakdagi UL kuchlanishlarning generator chastotasiga bog'liqlik grafigi chiziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#d677320b"
+    },
+    {
+      "q": "Induktivlik ortganda zanjirdagi tok kuchi oldin ortib, keyin kamayadi. Buning sababi nimada?",
+      "v": [
+        "Induktivlik ortishi bilan XL ortib, avval reaktiv qarshilik kamayadi (rezonansga yaqinlashadi), keyin yana ortadi",
+        "Induktivlik ortishi bilan tok doim kamayadi",
+        "G'altak qizib ketadi",
+        "Kondensator sig'imi o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "L ortganda XL = ωL ortadi: avval XL − XC ayirma kamayib (rezonansga yaqinlashib) tok ortadi, rezonansdan o'tgach Z ortib tok kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#f5b8ff37"
+    },
+    {
+      "q": "Sig'im ortganda zanjirdagi tok kuchi oldin ortib, keyin kamayadi. Buning sababi nimada?",
+      "v": [
+        "Sig'im ortishi bilan XC = 1/(ωC) kamayadi: avval XL − XC ayirma kichrayib tok ortadi, rezonansdan keyin XC < XL bo'lib ayirma yana ortadi",
+        "Sig'im ortishi bilan zanjir uzilib qoladi",
+        "Sig'im ortishi bilan R kamayadi",
+        "Generator chastotasi o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "C ortganda XC kamayadi: avval reaktiv qarshilik |XL − XC| kichrayib tok ortadi, rezonansdan o'tgach yana ortib tok kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#6af0cca4"
+    },
+    {
+      "q": "G'altak ichiga ferromagnit o'zak kiritilganda nimaga kuchlanish tushuvlari o'zgaradi?",
+      "v": [
+        "O'zak kiritilganda g'altakning induktivligi L ortadi, buning natijasida XL = ωL o'zgarib, kuchlanishlarning taqsimoti o'zgaradi",
+        "O'zak simlarni qisqartiradi",
+        "O'zak kondensatorni zaryadlaydi",
+        "O'zak tokni to'xtatadi"
+      ],
+      "t": 0,
+      "izoh": "Ferromagnit o'zak induktivlikni orttiradi, XL o'zgaradi va barcha kuchlanish tushuvlari qayta taqsimlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#e3ae64e6"
+    },
+    {
+      "q": "L = 1 H va C = 10 μF uchun hisoblangan rezonans chastotasi taxminan qancha?",
+      "v": [
+        "≈ 50 Hz",
+        "≈ 100 Hz",
+        "≈ 500 Hz",
+        "≈ 10 Hz"
+      ],
+      "t": 0,
+      "izoh": "vr = 1/(2π√(1·10⁻⁵)) = 1/(2π·3,16·10⁻³) ≈ 50 Hz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#89d920de"
+    },
+    {
+      "q": "Laboratoriya ishida foydalaniladigan qo'shimcha asboblar qaysilar?",
+      "v": [
+        "Qarshiliklar to'plami, uzib-ulagich va ulovchi simlar",
+        "Ampermetr va reostat",
+        "Termometr va barometr",
+        "Mikroskop va linza"
+      ],
+      "t": 0,
+      "izoh": "Kerakli asboblar: qarshiliklar to'plami, uzib-ulagich va ulovchi simlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#a5fee027"
+    },
+    {
+      "q": "Tajriba natijalari qayerga yoziladi?",
+      "v": [
+        "Jadvalga (tajriba №, TG chastotasi, UC, UL)",
+        "Grafik qog'ozga to'g'ridan-to'g'ri chiziq sifatida",
+        "Hisobotga faqat so'z bilan",
+        "Hech qayerga yozilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Natijalar jadvalga yoziladi: tajriba raqami, TG chastotasi (Hz), UC (V), UL (V).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#32c20d17"
+    },
+    {
+      "q": "Tajribada chastota rezonans chastotasidan past bo'lganda UC va UL orasida qanday munosabat bo'ladi?",
+      "v": [
+        "UC > UL",
+        "UC < UL",
+        "UC = UL",
+        "UC = 0, UL maksimal"
+      ],
+      "t": 0,
+      "izoh": "Past chastotalarda XC katta, XL kichik bo'lgani uchun UC > UL.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#3e718160"
+    },
+    {
+      "q": "Tajribada chastota rezonans chastotasidan yuqori bo'lganda UC va UL orasida qanday munosabat bo'ladi?",
+      "v": [
+        "UL > UC",
+        "UC > UL",
+        "UC = UL",
+        "Ikkalasi ham nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Yuqori chastotalarda XL = ωL katta, XC = 1/(ωC) kichik bo'lgani uchun UL > UC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#98feb903"
+    },
+    {
+      "q": "Laboratoriya ishida kuchlanishlar rezonansi qanday aniqlanadi?",
+      "v": [
+        "Chastota o'zgarishi bilan UC = UL bo'lgan holat topiladi",
+        "Generator o'chirilganda tok saqlanadi",
+        "Multimetrlar nolni ko'rsatadi",
+        "Kalit uzilganda uchqun paydo bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Rezonans holati UC = UL shart bajariladigan chastotada aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#12ecaf8c"
+    },
+    {
+      "q": "Rezonans chastotasi formulasi vr = 1/(2π√(LC)) da C 4 marta kamaytirilsa, chastota qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "4 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Chastota √C ga teskari; C 4 marta kamaysa, chastota 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m19-laboratoriya-rezonans-hodisasini-organish#034bca4e"
+    }
+  ]
+}

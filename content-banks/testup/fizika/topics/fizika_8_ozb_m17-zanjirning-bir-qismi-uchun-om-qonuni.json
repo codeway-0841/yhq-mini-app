@@ -1,0 +1,531 @@
+{
+  "nom": "17-mavzu. Zanjirning Bir Qismi Uchun Om Qonuni",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Tok kuchining kuchlanishga bog'liqligini o'rganish tajribasida qanday spiral ishlatiladi?",
+      "v": [
+        "Nikelin spirali",
+        "Mis spirali",
+        "Alyuminiy spirali",
+        "Po'lat spirali"
+      ],
+      "t": 0,
+      "izoh": "Chiqish kuchlanishini o'zgartirish mumkin bo'lgan tok manbaiga nikelin spirali ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#318e4e21"
+    },
+    {
+      "q": "Spiraldan o'tayotgan tok kuchi qanday o'lchanadi?",
+      "v": [
+        "Spiralga ketma-ket ulangan ampermetr yordamida",
+        "Spiralga parallel ulangan ampermetr yordamida",
+        "Spiralga ketma-ket ulangan voltmetr yordamida",
+        "Ommetr yordamida"
+      ],
+      "t": 0,
+      "izoh": "Spiraldan o'tayotgan tok kuchini unga ketma-ket ulangan ampermetr yordamida o'lchash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#1c239723"
+    },
+    {
+      "q": "Spiraldagi kuchlanish qanday o'lchanadi?",
+      "v": [
+        "Unga parallel ulangan voltmetr yordamida",
+        "Unga ketma-ket ulangan voltmetr yordamida",
+        "Ampermetr yordamida",
+        "Kalit yordamida"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish unga parallel ulangan voltmetr yordamida o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#8eb54c2c"
+    },
+    {
+      "q": "60-a rasmdagi tajribada spiraldagi kuchlanish 2 V ga rostlanib, kalit ulanganda ampermetr qanday qiymatni ko'rsatadi?",
+      "v": [
+        "0,5 A",
+        "1 A",
+        "1,5 A",
+        "2 A"
+      ],
+      "t": 0,
+      "izoh": "Spiraldagi kuchlanish 2 V ga rostlab, kalit ulanganda ampermetr 0,5 A ni ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#9b1c8460"
+    },
+    {
+      "q": "Spiraldagi kuchlanish 2 marta oshirib 4 V ga rostlanganda ampermetr nimani ko'rsatadi?",
+      "v": [
+        "1 A ni, ya'ni tok kuchi ham 2 marta ortadi",
+        "0,5 A ni, tok kuchi o'zgarmaydi",
+        "2 A ni, tok kuchi 4 marta ortadi",
+        "0,25 A ni, tok kuchi kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish 4 V ga rostlanganda ampermetr 1 A ni ko'rsatadi, ya'ni tok kuchi ham 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#f96c5770"
+    },
+    {
+      "q": "Tok manbaidan spiral uchlariga 6 V kuchlanish berganimizda ampermetr qanday qiymatni ko'rsatadi?",
+      "v": [
+        "1,5 A",
+        "1 A",
+        "2 A",
+        "3 A"
+      ],
+      "t": 0,
+      "izoh": "6 V kuchlanish berganda ampermetr spiraldan o'tayotgan tokning 1,5 A ga teng ekanligini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#06924df5"
+    },
+    {
+      "q": "Qarshilik o'zgarmas bo'lganda tok kuchi kuchlanishga qanday bog'liq?",
+      "v": [
+        "To'g'ri proporsional: I ~ U",
+        "Teskari proporsional: I ~ 1/U",
+        "Kvadratik bog'liq: I ~ U²",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "O'tkazgichdagi tok kuchi shu o'tkazgichning uchlari orasidagi kuchlanishga to'g'ri proporsionaldir: I ~ U.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#8a4ea8be"
+    },
+    {
+      "q": "Tok kuchining kuchlanishga bog'liqligi tajribasida o'tkazgichning qarshiligi qanday qilib olingan?",
+      "v": [
+        "O'zgarmas qilib olingan",
+        "Har tajribada oshirilgan",
+        "Har tajribada kamaytirilgan",
+        "Tasodifiy o'zgartirilgan"
+      ],
+      "t": 0,
+      "izoh": "Avvalgi tajribada spiral o'zgartirilmagan, ya'ni o'tkazgichning elektr qarshiligi o'zgarmas qilib olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#806f8576"
+    },
+    {
+      "q": "Tok kuchining qarshilikka bog'liqligini o'rganishda kuchlanish qanday olingan?",
+      "v": [
+        "O'zgarmasdan, o'tkazgich qarshiligi esa turlicha qilib olingan",
+        "Har tajribada ikki marta oshirilgan",
+        "Kuchlanish ham qarshilik ham bir xil o'zgartirilgan",
+        "Kuchlanish nolga teng qilib olingan"
+      ],
+      "t": 0,
+      "izoh": "O'tkazgich uchlaridagi kuchlanish o'zgarmasdan, uning qarshiligi turlicha bo'lgan hol ko'riladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#3b0e48dc"
+    },
+    {
+      "q": "61-a rasmdagi tajribada 1, 2, 3, 4 raqamlar nimani ifodalaydi?",
+      "v": [
+        "Har birining elektr qarshiligi 1 Ω dan bo'lgan spiral o'tkazgichlarni",
+        "Turli uzunlikdagi mis simlarni",
+        "Turli kuchlanishli tok manbalarini",
+        "Turli qismli voltmetrlarni"
+      ],
+      "t": 0,
+      "izoh": "1, 2, 3, 4 raqamlar har birining elektr qarshiligi 1 Ω dan bo'lgan spiral o'tkazgichlarni ifodalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#bb46ab4e"
+    },
+    {
+      "q": "Zanjirga 1 raqamli o'tkazgich ulanganda voltmetr va ampermetr qanday qiymatlarni ko'rsatadi?",
+      "v": [
+        "Voltmetr 2 V, ampermetr 2 A",
+        "Voltmetr 2 V, ampermetr 1 A",
+        "Voltmetr 4 V, ampermetr 2 A",
+        "Voltmetr 1 V, ampermetr 1 A"
+      ],
+      "t": 0,
+      "izoh": "Kalit ulanganda voltmetr 2 V kuchlanishni, ampermetr esa 2 A tok kuchini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#c6bd0f42"
+    },
+    {
+      "q": "Zanjirga 1 va 2 raqamli o'tkazgichlar ketma-ket ulanganda ularning birgalikdagi qarshiligi qancha bo'ladi?",
+      "v": [
+        "2 Ω",
+        "1 Ω",
+        "4 Ω",
+        "0,5 Ω"
+      ],
+      "t": 0,
+      "izoh": "1 va 2 raqamli o'tkazgichlarni ketma-ket ulaganda ularning birgalikdagi qarshiligi 2 Ω ni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#b83198ed"
+    },
+    {
+      "q": "Qarshilik 2 Ω ga oshirilganda (kuchlanish o'zgarmaganda) tok kuchi qanday o'zgaradi?",
+      "v": [
+        "2 marta kamayadi",
+        "2 marta ortadi",
+        "O'zgarmaydi",
+        "4 marta kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Kalit ulanganda voltmetr o'zgarmaganligini, ampermetr esa zanjirdan o'tayotgan tok kuchi 2 marta kamayganligini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#d343d430"
+    },
+    {
+      "q": "1, 2, 3, 4 raqamli o'tkazgichlar ketma-ket ulanganda qarshilik qancha bo'ladi?",
+      "v": [
+        "4 Ω",
+        "2 Ω",
+        "6 Ω",
+        "8 Ω"
+      ],
+      "t": 0,
+      "izoh": "1, 2, 3, 4 raqamli o'tkazgichlarni ketma-ket ulab, qarshiligi 4 Ω ga teng bo'lgan o'tkazgichni hosil qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#9a566095"
+    },
+    {
+      "q": "Qarshilik 4 Ω ga yetkazilganda tok kuchi birinchi galdagiga nisbatan qanday o'zgaradi?",
+      "v": [
+        "4 marta kamayadi",
+        "4 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish o'zgarmaganligini, tok kuchi esa birinchi galdagiga nisbatan 4 marta kamayganligini aniqlash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#c7c7a28a"
+    },
+    {
+      "q": "Kuchlanish o'zgarmas bo'lganda tok kuchi o'tkazgich qarshiligiga qanday bog'liq?",
+      "v": [
+        "Teskari proporsional: I ~ 1/R",
+        "To'g'ri proporsional: I ~ R",
+        "Kvadratik: I ~ R²",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "O'tkazgich uchlari orasidagi kuchlanish o'zgarmas bo'lganda tok kuchi o'tkazgich qarshiligiga teskari proporsionaldir: I ~ 1/R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#fa741538"
+    },
+    {
+      "q": "Om qonuni kim sharafiga atalgan?",
+      "v": [
+        "Nemis olimi Georg Om",
+        "Fransuz olimi Andre Amper",
+        "Italiyalik olim Aleksandro Volta",
+        "Ingliz olimi Jeyms Joul"
+      ],
+      "t": 0,
+      "izoh": "Bu bog'lanish nemis olimi Georg Om sharafiga Om qonuni deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#b0ac4ccd"
+    },
+    {
+      "q": "Om qonuni qachon kashf qilingan?",
+      "v": [
+        "1827-yilda",
+        "1785-yilda",
+        "1905-yilda",
+        "1860-yilda"
+      ],
+      "t": 0,
+      "izoh": "Bu qonun 1827-yilda kashf qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#6042baec"
+    },
+    {
+      "q": "Zanjirning bir qismi uchun Om qonunining formulasi qanday?",
+      "v": [
+        "I = U/R",
+        "I = U·R",
+        "I = R/U",
+        "I = U²/R"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi I, kuchlanish U va qarshilik R orasidagi bog'lanish: I = U/R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#33b7913f"
+    },
+    {
+      "q": "Zanjirning bir qismi uchun Om qonuni qanday ta'riflanadi?",
+      "v": [
+        "O'tkazgichdan o'tayotgan tok kuchi uning uchlariga qo'yilgan kuchlanishga to'g'ri proporsional, o'tkazgichning qarshiligiga teskari proporsionaldir",
+        "Tok kuchi kuchlanishga teskari, qarshilikka to'g'ri proporsionaldir",
+        "Tok kuchi kuchlanish va qarshilikka bog'liq emas",
+        "Tok kuchi faqat o'tkazgich uzunligiga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "O'tkazgichdan o'tayotgan tok kuchi uning uchlariga qo'yilgan kuchlanishga to'g'ri proporsional, o'tkazgichning qarshiligiga teskari proporsionaldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#3da497c0"
+    },
+    {
+      "q": "Om qonuni formulasidan kuchlanish qanday ifodalanadi?",
+      "v": [
+        "U = I·R",
+        "U = I/R",
+        "U = R/I",
+        "U = I²·R"
+      ],
+      "t": 0,
+      "izoh": "Om qonuni formulasidan kuchlanish U = I·R ko'rinishida ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#afc24849"
+    },
+    {
+      "q": "Om qonuni formulasidan qarshilik qanday ifodalanadi?",
+      "v": [
+        "R = U/I",
+        "R = U·I",
+        "R = I/U",
+        "R = U²/I"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik R = U/I formula orqali ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#134d94b9"
+    },
+    {
+      "q": "1 om (1 Ω) qanday ta'riflanadi?",
+      "v": [
+        "Uchlaridagi kuchlanish 1 V bo'lganda undan 1 A tok kuchi o'tadigan o'tkazgichning qarshiligi",
+        "1 sekundda 1 kulon zaryad o'tkazadigan o'tkazgich qarshiligi",
+        "Uzunligi 1 m bo'lgan mis simning qarshiligi",
+        "1 V kuchlanishda 1 Vt quvvat sarflaydigan o'tkazgich qarshiligi"
+      ],
+      "t": 0,
+      "izoh": "1 om (1 Ω) deb shunday o'tkazgichning qarshiligi qabul qilinganki, uning uchlaridagi kuchlanish 1 V bo'lganda undan 1 A tok kuchi o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#b73e0654"
+    },
+    {
+      "q": "1 Ω qanday birliklarning nisbati sifatida ifodalanadi?",
+      "v": [
+        "1 Ω = 1 V/1 A",
+        "1 Ω = 1 A/1 V",
+        "1 Ω = 1 V·1 A",
+        "1 Ω = 1 J/1 A"
+      ],
+      "t": 0,
+      "izoh": "1 Ω = 1 V/1 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#b400b300"
+    },
+    {
+      "q": "Zanjirda qarshilik orttirilsa, tok kuchi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Avval ortib keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Zanjirda qarshilik orttirilsa, tok kuchi kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#17fdc23a"
+    },
+    {
+      "q": "Zanjirda kuchlanish orttirilsa, tok kuchi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Kuchlanish orttirilsa, tok kuchi ham ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#97d128e0"
+    },
+    {
+      "q": "Ampermetrning qarshiligi qanday bo'lishi kerak va nega?",
+      "v": [
+        "Qanchalik kichik bo'lsa, elektr zanjiriga ta'siri shuncha kam bo'ladi",
+        "Qanchalik katta bo'lsa, ta'siri shuncha kam bo'ladi",
+        "Qarshiligi o'lchanadigan qarshilikka teng bo'lishi kerak",
+        "Qarshiligi nolga teng bo'lmasligi kerak"
+      ],
+      "t": 0,
+      "izoh": "Ampermetr qarshiligi qanchalik kichik bo'lsa, elektr zanjiriga ta'siri shuncha kam bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#03df32f7"
+    },
+    {
+      "q": "Voltmetrning qarshiligi qanday bo'lishi kerak va nega?",
+      "v": [
+        "Qanchalik katta bo'lsa, elektr zanjiriga ta'siri shuncha kam bo'ladi",
+        "Qanchalik kichik bo'lsa, ta'siri shuncha kam bo'ladi",
+        "Qarshiligi nolga yaqin bo'lishi kerak",
+        "Qarshiligi ampermetrniki bilan teng bo'lishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Zanjirga ulangan voltmetrning qarshiligi qanchalik katta bo'lsa, elektr zanjiriga ta'siri shuncha kam bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#3e137512"
+    },
+    {
+      "q": "Masala yechish namunasida uzunligi 2 m, ko'ndalang kesim yuzi 0,8 mm² bo'lgan nikelin simning uchlaridagi kuchlanish qancha?",
+      "v": [
+        "2 V",
+        "4 V",
+        "6 V",
+        "8 V"
+      ],
+      "t": 0,
+      "izoh": "Namunaviy masalada nikelin simning uchlaridagi kuchlanish 2 V ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#7f997c9a"
+    },
+    {
+      "q": "Namunaviy masalada nikelining solishtirma qarshiligi qanday qiymatda olingan?",
+      "v": [
+        "0,4·10⁻⁶ Ω·m",
+        "1,1·10⁻⁶ Ω·m",
+        "0,017·10⁻⁶ Ω·m",
+        "0,028·10⁻⁶ Ω·m"
+      ],
+      "t": 0,
+      "izoh": "Masalada ρ = 0,4·10⁻⁶ Ω·m qilib olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#6b06e183"
+    },
+    {
+      "q": "Namunaviy masalada nikelin simdan o'tayotgan tok kuchi qancha deb topilgan?",
+      "v": [
+        "2 A",
+        "1 A",
+        "4 A",
+        "0,5 A"
+      ],
+      "t": 0,
+      "izoh": "Hisoblash natijasida I = 2 A deb topilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#418ca35a"
+    },
+    {
+      "q": "Namunaviy masalada tok kuchi qanday umumiy formula bilan topilgan?",
+      "v": [
+        "I = U·S/(ρ·l)",
+        "I = ρ·l/(U·S)",
+        "I = U·ρ·l/S",
+        "I = S/(U·ρ·l)"
+      ],
+      "t": 0,
+      "izoh": "I = U/R = U/(ρl/S) = US/(ρl) formula ishlatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#ee3dfd1c"
+    },
+    {
+      "q": "Qarshiligi 100 Ω bo'lgan rezistor uchlari orasidagi kuchlanish 10 V bo'lsa, undan qanday tok o'tadi?",
+      "v": [
+        "0,1 A",
+        "1 A",
+        "10 A",
+        "0,01 A"
+      ],
+      "t": 0,
+      "izoh": "I = U/R = 10 V/100 Ω = 0,1 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#f26afdcd"
+    },
+    {
+      "q": "Kuchlanish o'zgarmas bo'lganda qarshilikni 3 marta oshirsak, tok kuchi qanday o'zgaradi?",
+      "v": [
+        "3 marta kamayadi",
+        "3 marta ortadi",
+        "9 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi qarshilikka teskari proporsional bo'lgani uchun 3 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#952d1754"
+    },
+    {
+      "q": "Qarshilik o'zgarmas bo'lganda kuchlanishni 3 marta kamaytirsak, tok kuchi qanday o'zgaradi?",
+      "v": [
+        "3 marta kamayadi",
+        "3 marta ortadi",
+        "9 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Tok kuchi kuchlanishga to'g'ri proporsional, shuning uchun u ham 3 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m17-zanjirning-bir-qismi-uchun-om-qonuni#723012d2"
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "nom": "11-mavzu. Karbonat kislota va karbonatlarning xossalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Karbonat kislota qanday modda?",
+      "v": [
+        "Beqaror modda, faqat suvli eritmalardagina mavjud",
+        "Barqaror qattiq modda",
+        "Barqaror suyuq modda",
+        "Barqaror gaz"
+      ],
+      "t": 0,
+      "izoh": "H2CO3 beqaror modda bo'lib, faqat suvli eritmalardagina mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#530a8a64"
+    },
+    {
+      "q": "Karbonat kislotaning formulasi qanday?",
+      "v": [
+        "H2CO3",
+        "HCO3",
+        "H2SO4",
+        "H2SiO3"
+      ],
+      "t": 0,
+      "izoh": "Karbonat kislota formulasi H2CO3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#049c040c"
+    },
+    {
+      "q": "Karbonat kislota qanday kislota?",
+      "v": [
+        "Kuchsiz, ikki negizli kislota",
+        "Kuchli, ikki negizli kislota",
+        "Kuchsiz, bir negizli kislota",
+        "Kuchli, uch negizli kislota"
+      ],
+      "t": 0,
+      "izoh": "H2CO3 - kuchsiz, ikki negizli kislota.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#e3e39f20"
+    },
+    {
+      "q": "Karbonat kislota suvli eritmasida necha bosqichda dissotsiatsiyalanadi?",
+      "v": [
+        "Ikki bosqichda",
+        "Bir bosqichda",
+        "Uch bosqichda",
+        "To'rt bosqichda"
+      ],
+      "t": 0,
+      "izoh": "H2CO3 suvli eritmasida ikki bosqichda dissotsiatsiyalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#7805212c"
+    },
+    {
+      "q": "Karbonat kislota qanday metallarning oksidlari va gidroksidlari bilan ta'sirlashadi?",
+      "v": [
+        "Faqat ishqoriy va ishqoriy-yer metallari",
+        "Barcha metallar",
+        "Faqat og'ir metallar",
+        "Faqat oraliq metallar"
+      ],
+      "t": 0,
+      "izoh": "H2CO3 faqat ishqoriy va ishqoriy-yer metallari oksidlari va gidroksidlari bilan ta'sirlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#a71f7d24"
+    },
+    {
+      "q": "K2CO3 qanday ataladi?",
+      "v": [
+        "Kaliy karbonat",
+        "Kaliy gidrokarbonat",
+        "Kalsiy karbonat",
+        "Natriy karbonat"
+      ],
+      "t": 0,
+      "izoh": "K2CO3 - kaliy karbonat (o'rta tuz).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#25626f27"
+    },
+    {
+      "q": "Ca(HCO3)2 qanday ataladi?",
+      "v": [
+        "Kalsiy gidrokarbonat",
+        "Kalsiy karbonat",
+        "Kaliy gidrokarbonat",
+        "Natriy gidrokarbonat"
+      ],
+      "t": 0,
+      "izoh": "Ca(HCO3)2 - kalsiy gidrokarbonat (nordon tuz).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#85ba849c"
+    },
+    {
+      "q": "Kislota mo'l bo'lganda qanday tuz hosil bo'ladi?",
+      "v": [
+        "Nordon tuz (gidrokarbonat)",
+        "O'rta tuz (karbonat)",
+        "Asosli tuz",
+        "Murakkab tuz"
+      ],
+      "t": 0,
+      "izoh": "Kislota mo'l bo'lganda nordon tuz hosil bo'ladi: H2CO3 + NaOH = NaHCO3 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#e8bde4f4"
+    },
+    {
+      "q": "H2CO3 + 2NaOH reaksiyasida qanday tuz hosil bo'ladi?",
+      "v": [
+        "Na2CO3",
+        "NaHCO3",
+        "NaOH",
+        "NaCl"
+      ],
+      "t": 0,
+      "izoh": "H2CO3 + 2NaOH = Na2CO3 + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#cfefcf59"
+    },
+    {
+      "q": "Qaysi karbonatlar suvda eriydi?",
+      "v": [
+        "Ishqoriy metallar va ammoniy karbonatlar, barcha gidrokarbonatlar",
+        "Barcha karbonatlar",
+        "Faqat kalsiy karbonat",
+        "Faqat qo'rg'oshin karbonat"
+      ],
+      "t": 0,
+      "izoh": "Ishqoriy metallar va ammoniy karbonatlar hamda barcha gidrokarbonatlar suvda eriydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#28d68402"
+    },
+    {
+      "q": "Karbonatlarni boshqa tuzlardan farqlab olishda qanday reaksiya qo'llanadi?",
+      "v": [
+        "Kuchli kislotalar bilan ta'sirlashuv (CO2 ajraladi)",
+        "Suvda eritish",
+        "Qizdirish",
+        "Ishqor bilan reaksiya"
+      ],
+      "t": 0,
+      "izoh": "Kuchli kislotalar ta'sirida karbonatlardan CO2 ajralib chiqadi - bu ularni farqlashda qo'llanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#603db58b"
+    },
+    {
+      "q": "Na2CO3 + 2HCl reaksiyasida qanday gaz ajraladi?",
+      "v": [
+        "CO2",
+        "H2",
+        "O2",
+        "Cl2"
+      ],
+      "t": 0,
+      "izoh": "Na2CO3 + 2HCl = 2NaCl + CO2 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#0a810ba4"
+    },
+    {
+      "q": "Qishloq xo'jaligida tuproqning kislotaliligini pasaytirish uchun nima ishlatiladi?",
+      "v": [
+        "Maydalangan ohaktosh",
+        "Ammiak",
+        "Suv",
+        "Qum"
+      ],
+      "t": 0,
+      "izoh": "Tuproq kislotaliligini pasaytirish uchun maydalangan ohaktosh ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#0c6b3888"
+    },
+    {
+      "q": "Qizdirilganda qaysi karbonatlar parchalanmaydi?",
+      "v": [
+        "Ishqoriy metallarning karbonatlari",
+        "Kalsiy karbonat",
+        "Magniy karbonat",
+        "Temir karbonat"
+      ],
+      "t": 0,
+      "izoh": "Ishqoriy metallarning karbonatlaridan tashqari barcha karbonatlar qizdirilganda parchalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#7309ea25"
+    },
+    {
+      "q": "CaCO3 qanday haroratda parchalanadi?",
+      "v": [
+        "900-1200 °C da",
+        "100-200 °C da",
+        "Xona haroratida",
+        "2000 °C dan yuqori"
+      ],
+      "t": 0,
+      "izoh": "CaCO3 900-1200 °C da CaO + CO2 ga parchalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#6a7c812c"
+    },
+    {
+      "q": "Gidrokarbonatlar qizdirilganda nimaga o'tadi?",
+      "v": [
+        "Karbonatlarga",
+        "Oksidlarga",
+        "Gidroksidlarga",
+        "Kislotalarga"
+      ],
+      "t": 0,
+      "izoh": "Gidrokarbonatlar qizdirilganda karbonatlarga o'tadi: 2KHCO3 = K2CO3 + CO2 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#3cefef8a"
+    },
+    {
+      "q": "Natriy karbonat eritmasidan CO2 o'tkazilganda nima hosil bo'ladi?",
+      "v": [
+        "Natriy gidrokarbonat (ichimlik sodasi)",
+        "Natriy xlorid",
+        "Natriy gidroksid",
+        "Natriy sulfat"
+      ],
+      "t": 0,
+      "izoh": "Na2CO3 + CO2 + H2O = 2NaHCO3 - ichimlik sodasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#5ffdb2bc"
+    },
+    {
+      "q": "Ichimlik sodasining formulasi qanday?",
+      "v": [
+        "NaHCO3",
+        "Na2CO3",
+        "K2CO3",
+        "CaCO3"
+      ],
+      "t": 0,
+      "izoh": "Ichimlik sodasi - NaHCO3 natriy gidrokarbonat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#bacfec4c"
+    },
+    {
+      "q": "Kalsiy karbonat tabiatda qanday minerallar ko'rinishida uchraydi?",
+      "v": [
+        "Ohaktosh, bo'r, marmar, stalagmit, stalaktit",
+        "Qum, kvars, kaolin",
+        "Grafit, olmos",
+        "Dala shpati, kaolin"
+      ],
+      "t": 0,
+      "izoh": "CaCO3 - ohaktosh, bo'r, marmar, stalagmit, stalaktitlar ko'rinishida uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#404c1853"
+    },
+    {
+      "q": "Ohaktosh nima uchun muhim ahamiyatga ega?",
+      "v": [
+        "Qurilish materiali, sement, so'ndirilgan ohak, shisha ishlab chiqarish uchun xomashyo",
+        "Yoqilg'i sifatida",
+        "O'g'it sifatida",
+        "Dori sifatida"
+      ],
+      "t": 0,
+      "izoh": "Ohaktosh qurilish materiali, sement, so'ndirilgan ohak, shisha ishlab chiqarish uchun asosiy xomashyo.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#5999ef8b"
+    },
+    {
+      "q": "Ohaktosh CO2 va suv ta'sirida qanday tuzga aylanadi?",
+      "v": [
+        "Eruvchan Ca(HCO3)2 ga",
+        "CaO ga",
+        "Ca(OH)2 ga",
+        "CaC2 ga"
+      ],
+      "t": 0,
+      "izoh": "CaCO3 + CO2 + H2O = Ca(HCO3)2 - eruvchan tuz hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#fe99c123"
+    },
+    {
+      "q": "Ca(HCO3)2 harorat ta'sirida nimaga aylanadi?",
+      "v": [
+        "Yana CaCO3 ga",
+        "CaO ga",
+        "Ca(OH)2 ga",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ca(HCO3)2 = CaCO3 + CO2 + H2O - haroratda yana CaCO3 ga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#2f445336"
+    },
+    {
+      "q": "Natriy karbonat qayerlarda ishlatiladi?",
+      "v": [
+        "Shisha, sovun olishda, qog'oz, to'qimachilik, neft sanoatida",
+        "Faqat tibbiyotda",
+        "Faqat non tayyorlashda",
+        "Faqat yong'in o'chirishda"
+      ],
+      "t": 0,
+      "izoh": "Na2CO3 shisha, sovun, qog'oz, to'qimachilik, neft sanoatida va turmushda ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#e7293805"
+    },
+    {
+      "q": "NaHCO3 (ichimlik sodasi) qayerlarda ishlatiladi?",
+      "v": [
+        "Tibbiyotda, non mahsulotlari tayyorlashda, o't o'chirish ballonlarida",
+        "Shisha ishlab chiqarishda",
+        "Sement tayyorlashda",
+        "Metall qaytarishda"
+      ],
+      "t": 0,
+      "izoh": "Ichimlik sodasi tibbiyotda, non tayyorlashda, o't o'chirish ballonlarini zaryadlashda ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#d99ed10d"
+    },
+    {
+      "q": "Karbonatlarning kislotalar bilan ta'sirlashuvida qanday ionlar bog'lab olinadi?",
+      "v": [
+        "Vodorod ionlari",
+        "Gidroksid ionlari",
+        "Karbonat ionlari",
+        "Metall ionlari"
+      ],
+      "t": 0,
+      "izoh": "Karbonatlarning kislotalar bilan reaksiyasida vodorod ionlari bog'lab olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#8f4c5206"
+    },
+    {
+      "q": "CaCO3 + 2HCl reaksiyasining to'g'ri mahsulotlari qaysilar?",
+      "v": [
+        "CaCl2, CO2 va H2O",
+        "CaCl2 va H2",
+        "CaCO3 o'zgarmaydi",
+        "CaO va Cl2"
+      ],
+      "t": 0,
+      "izoh": "CaCO3 + 2HCl = CaCl2 + CO2 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#c3289e45"
+    },
+    {
+      "q": "2KHCO3 qizdirilganda qanday moddalar hosil bo'ladi?",
+      "v": [
+        "K2CO3, CO2 va H2O",
+        "K2O va CO2",
+        "KOH va CO2",
+        "KHCO3 o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "2KHCO3 = K2CO3 + CO2 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#fd5c216a"
+    },
+    {
+      "q": "Ca(HCO3)2 + 2HCl reaksiyasida qancha CO2 ajraladi?",
+      "v": [
+        "2 mol",
+        "1 mol",
+        "3 mol",
+        "0,5 mol"
+      ],
+      "t": 0,
+      "izoh": "Ca(HCO3)2 + 2HCl = CaCl2 + 2CO2 + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#8e6345e2"
+    },
+    {
+      "q": "Karbonat kislota va karbonatlarning qanday xossasi mavjud?",
+      "v": [
+        "Kuchsiz kislota va uning tuzlari kuchli kislotalar bilan ta'sirlashadi",
+        "Kuchli kislota va tuzlari beqaror",
+        "Kislota suvda erimaydi",
+        "Tuzlari kislotalarda erimaydi"
+      ],
+      "t": 0,
+      "izoh": "Karbonat kislota kuchsiz, karbonatlar kuchli kislotalar bilan CO2 ajratib ta'sirlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#0082ca8f"
+    },
+    {
+      "q": "Na2CO3 + H2O + CO2 reaksiyasining mahsuloti qanday?",
+      "v": [
+        "2NaHCO3",
+        "Na2CO3 o'zgarmaydi",
+        "NaOH va H2CO3",
+        "NaHCO3 va Na2CO3"
+      ],
+      "t": 0,
+      "izoh": "Na2CO3 + H2O + CO2 = 2NaHCO3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m11-karbonat-kislota-karbonatlar#968e2eb1"
+    }
+  ]
+}

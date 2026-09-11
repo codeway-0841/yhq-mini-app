@@ -1,0 +1,1609 @@
+{
+  "nom": "Tub va murakkab sonlar, EKUB va EKUK",
+  "bolim": "Sonlar va ular ustida amallar",
+  "blok": "arif",
+  "rasmiyBolim": 1,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "91, 97, 87, 93 sonlaridan qaysi biri tub son hisoblanadi?",
+      "v": [
+        "91",
+        "97",
+        "87",
+        "93"
+      ],
+      "t": 1,
+      "izoh": "91 = 7·13, 87 = 3·29, 93 = 3·31 — uchalasi ham murakkab son. 97 esa 2, 3, 5, 7 tub sonlarining birortasiga bo'linmaydi, 11² = 121 > 97 bo'lgani uchun tekshirish shu yerda tugaydi. Javob: 97.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tub-murakkab-aniqlash",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#97ea3453"
+    },
+    {
+      "q": "143 soni haqidagi quyidagi fikrlardan qaysi biri to'g'ri?",
+      "v": [
+        "Tub, chunki 2, 3, 5 va 7 ga bo'linmaydi",
+        "Tub, chunki 143 toq son",
+        "Murakkab, chunki 143 = 11·13",
+        "Murakkab, chunki bo'luvchilari soni 2 ta"
+      ],
+      "t": 2,
+      "izoh": "Tublikni tekshirishda √143 ≈ 11,9 gacha bo'lgan tub sonlar sinaladi: 2, 3, 5, 7 va 11. 143 : 11 = 13 butun chiqadi, demak 143 = 11·13 murakkab son. Uning bo'luvchilari 1, 11, 13, 143 — jami 4 ta, 2 ta emas. Javob: murakkab, chunki 143 = 11·13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tub-murakkab-aniqlash",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#512ef8f8"
+    },
+    {
+      "q": "Bektosh sinf jurnalidagi 51, 53, 57 va 59 tartib raqamlari orasidan murakkab sonlarni ajratmoqchi. Qaysi juftlik murakkab sonlardan iborat?",
+      "v": [
+        "51 va 57",
+        "53 va 59",
+        "51 va 53",
+        "57 va 59"
+      ],
+      "t": 0,
+      "izoh": "51 = 3·17 va 57 = 3·19 — ikkalasining raqamlari yig'indisi (6 va 12) 3 ga bo'linadi, demak sonlar 3 ga karrali va murakkab. 53 hamda 59 esa 2, 3, 5, 7 tub sonlariga bo'linmaydi, shuning uchun tub. Javob: 51 va 57.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tub-murakkab-aniqlash",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#c6e5778d"
+    },
+    {
+      "q": "p tub son bo'lsa, p² + p ifodasining turi haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Har doim tub son bo'ladi",
+        "Har doim murakkab son bo'ladi",
+        "p toq bo'lgandagina tub bo'ladi",
+        "p = 2 da tub, qolgan hollarda murakkab"
+      ],
+      "t": 1,
+      "izoh": "Ifodani ko'paytuvchilarga ajratamiz: p² + p = p·(p + 1). Bunda p ≥ 2 va p + 1 ≥ 3, ya'ni ikkala ko'paytuvchi ham birdan katta. Demak son kamida to'rtta bo'luvchiga ega bo'ladi va hech qachon tub bo'la olmaydi: p = 2 da 6, p = 3 da 12. Javob: har doim murakkab son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tub-son-xossasi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#21f238b9"
+    },
+    {
+      "q": "360 sonining tub ko'paytuvchilarga kanonik yoyilmasini to'g'ri ko'rsating.",
+      "v": [
+        "2³·3²·5",
+        "2⁴·3·5",
+        "2²·3³·5",
+        "2³·3·5²"
+      ],
+      "t": 0,
+      "izoh": "Sonni ketma-ket bo'lamiz: 360 : 2 = 180, 180 : 2 = 90, 90 : 2 = 45, 45 : 3 = 15, 15 : 3 = 5, 5 : 5 = 1. Ikkilik uch marta, uchlik ikki marta, beshlik bir marta chiqdi. Tekshiramiz: 8·9·5 = 360. Javob: 2³·3²·5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tub-koupaytuvchilarga-yoyish",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#ea9f3add"
+    },
+    {
+      "q": "Ombordagi qutida 588 ta qalam bor va hisobchi bu sonni tub ko'paytuvchilar ko'paytmasi ko'rinishida yozmoqchi. To'g'ri yoyilmani tanlang.",
+      "v": [
+        "2²·3·7²",
+        "2·3²·7²",
+        "2²·3²·7",
+        "2³·3·7²"
+      ],
+      "t": 0,
+      "izoh": "588 : 2 = 294, 294 : 2 = 147, 147 : 3 = 49, 49 : 7 = 7, 7 : 7 = 1. Yoyilmada ikkilik ikki marta, uchlik bir marta, yettilik ikki marta qatnashadi. Tekshiruv: 4·3·49 = 588. Javob: 2²·3·7².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tub-koupaytuvchilarga-yoyish",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#39fc9426"
+    },
+    {
+      "q": "2⁴·5²·7 ko'paytmasi qaysi songa teng ekanini hisoblab toping.",
+      "v": [
+        "1400",
+        "700",
+        "2800",
+        "5600"
+      ],
+      "t": 2,
+      "izoh": "Avval darajalarni hisoblaymiz: 2⁴ = 16 va 5² = 25. Ularning ko'paytmasi 16·25 = 400. Endi 400·7 = 2800. Javob: 2800.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilmadan-sonni-tiklash",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#38de624d"
+    },
+    {
+      "q": "Uch xonali eng katta sonning tub ko'paytuvchilarga yoyilmasi qanday ko'rinishga ega?",
+      "v": [
+        "3·333",
+        "3²·111",
+        "3³·37",
+        "27·37"
+      ],
+      "t": 2,
+      "izoh": "Uch xonali eng katta son — 999. Uni yoyamiz: 999 : 3 = 333, 333 : 3 = 111, 111 : 3 = 37, 37 esa tub son. Demak 999 = 3·3·3·37 = 3³·37. Qolgan variantlarda ko'paytuvchilar oxirigacha yoyilmagan, chunki 333, 111 va 27 tub emas. Javob: 3³·37.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tub-koupaytuvchilarga-yoyish",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#1024ba37"
+    },
+    {
+      "q": "72 sonining barcha natural bo'luvchilari sonini aniqlang va to'g'ri javobni belgilang.",
+      "v": [
+        "6 ta",
+        "7 ta",
+        "8 ta",
+        "12 ta"
+      ],
+      "t": 3,
+      "izoh": "72 ning kanonik yoyilmasi 2³·3². Bo'luvchilar soni har bir daraja ko'rsatkichiga bir qo'shib ko'paytirish orqali topiladi: (3 + 1)·(2 + 1) = 4·3 = 12. Ko'rsatkichlarni qo'shish yoki birni qo'shishni unutish tipik xato. Javob: 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boluvchilar-soni",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#861956c7"
+    },
+    {
+      "q": "Malika 240 ta shokoladni bir xil sonli qutilarga qoldiqsiz joylashtirmoqchi. Bitta qutidagi shokolad soni necha xil bo'lishi mumkin?",
+      "v": [
+        "20 xil",
+        "8 xil",
+        "10 xil",
+        "16 xil"
+      ],
+      "t": 0,
+      "izoh": "Har bir joylashtirish usuli 240 ning bo'luvchisiga mos keladi. 240 = 2⁴·3·5, demak bo'luvchilar soni (4 + 1)·(1 + 1)·(1 + 1) = 5·2·2 = 20 ta. Javob: 20 xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boluvchilar-soni",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#9419c03b"
+    },
+    {
+      "q": "Bo'luvchilari soni aynan uchta bo'lgan eng kichik uch xonali sonni toping.",
+      "v": [
+        "100",
+        "121",
+        "125",
+        "169"
+      ],
+      "t": 1,
+      "izoh": "Bo'luvchilar soni 3 ta bo'lishi uchun son tub sonning kvadrati bo'lishi shart, chunki p² ning bo'luvchilari faqat 1, p va p². Uch xonali eng kichik shunday son 11² = 121. Taqqoslash uchun: 100 = 2²·5² da 9 ta bo'luvchi, 125 = 5³ da 4 ta, 169 = 13² esa 121 dan katta. Javob: 121.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boluvchilar-soni",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#492db549"
+    },
+    {
+      "q": "N = 2⁵·3²·7 bo'lsa, N ning nechta bo'luvchisi 4 ga karrali ekanini aniqlang.",
+      "v": [
+        "24 ta",
+        "18 ta",
+        "36 ta",
+        "12 ta"
+      ],
+      "t": 0,
+      "izoh": "Bo'luvchi 4 ga karrali bo'lishi uchun undagi ikkilikning darajasi kamida 2 bo'lishi kerak. Demak ikkilik ko'rsatkichi 2, 3, 4, 5 qiymatlarni oladi — 4 ta tanlov; uchlik ko'rsatkichi 0, 1, 2 — 3 ta; yettilik ko'rsatkichi 0 yoki 1 — 2 ta. Jami 4·3·2 = 24 ta. Javob: 24 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "boluvchilar-soni",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#63327a8f"
+    },
+    {
+      "q": "28 sonining barcha natural bo'luvchilari yig'indisini hisoblang va javobni belgilang.",
+      "v": [
+        "15",
+        "28",
+        "55",
+        "56"
+      ],
+      "t": 3,
+      "izoh": "28 = 2²·7. Bo'luvchilar yig'indisi (1 + 2 + 4)·(1 + 7) = 7·8 = 56. Ro'yxat bilan tekshiramiz: 1 + 2 + 4 + 7 + 14 + 28 = 56. Sonning o'zini qo'shmaslik 28 ni, birni tashlab ketish 55 ni beradi. Javob: 56.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boluvchilar-yigindisi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#621212e7"
+    },
+    {
+      "q": "Anvar 45 ta gulni bir xil sonli dastalarga ajratishning barcha mumkin usullarini yozib chiqdi. Dastadagi gul sonlarining yig'indisi nechaga teng?",
+      "v": [
+        "33",
+        "19",
+        "78",
+        "77"
+      ],
+      "t": 2,
+      "izoh": "Dastadagi gul soni 45 ning bo'luvchisi bo'ladi. 45 = 3²·5, shuning uchun bo'luvchilar yig'indisi (1 + 3 + 9)·(1 + 5) = 13·6 = 78. Ro'yxat: 1 + 3 + 5 + 9 + 15 + 45 = 78. Javob: 78.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boluvchilar-yigindisi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#c3127b72"
+    },
+    {
+      "q": "196 sonining barcha bo'luvchilari yig'indisi qanday qiymatga teng bo'ladi?",
+      "v": [
+        "64",
+        "203",
+        "398",
+        "399"
+      ],
+      "t": 3,
+      "izoh": "196 = 2²·7². Bo'luvchilar yig'indisi formulasi bo'yicha (1 + 2 + 4)·(1 + 7 + 49) = 7·57 = 399. Bunda 196 ning o'zi ham hisobga olingan; uni chiqarib tashlash 203 ni, birni unutish 398 ni beradi. Javob: 399.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boluvchilar-yigindisi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#e7e9b2cd"
+    },
+    {
+      "q": "Bo'luvchilari yig'indisi 1 + p + p² + p³ = 40 tenglikni qanoatlantiruvchi p tub sonni toping.",
+      "v": [
+        "2",
+        "3",
+        "5",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "Tub sonlarni navbat bilan sinaymiz: p = 2 da 1 + 2 + 4 + 8 = 15, p = 3 da 1 + 3 + 9 + 27 = 40 — shart bajarildi. p = 5 da yig'indi 156, p = 7 da 400 bo'lib, 40 dan ancha katta. Demak son 3³ = 27 ekan. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "boluvchilar-yigindisi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#43b90bd2"
+    },
+    {
+      "q": "Quyidagi juftliklardan qaysi biri o'zaro tub sonlardan tashkil topgan?",
+      "v": [
+        "14 va 21",
+        "15 va 28",
+        "18 va 24",
+        "20 va 35"
+      ],
+      "t": 1,
+      "izoh": "O'zaro tub sonlarning eng katta umumiy bo'luvchisi 1 ga teng. EKUB(14, 21) = 7, EKUB(18, 24) = 6, EKUB(20, 35) = 5. 15 = 3·5 va 28 = 2²·7 yoyilmalarida umumiy tub ko'paytuvchi yo'q, demak EKUB(15, 28) = 1. Javob: 15 va 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ozaro-tub-tekshirish",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#3e30bc17"
+    },
+    {
+      "q": "Zilola 91 va 40 sonlari o'zaro tubmi degan savolga javob izlamoqda. Bu ikki son haqidagi qaysi xulosa to'g'ri?",
+      "v": [
+        "EKUB i 7 ga teng, o'zaro tub emas",
+        "EKUB i 1 ga teng, o'zaro tub",
+        "Ikkalasi ham tub son, shuning uchun o'zaro tub",
+        "EKUB i 13 ga teng, o'zaro tub emas"
+      ],
+      "t": 1,
+      "izoh": "91 = 7·13, 40 = 2³·5 yoyilmalarida bitta ham umumiy tub ko'paytuvchi yo'q, shuning uchun EKUB(91, 40) = 1 va sonlar o'zaro tub. Diqqat: 91 ning o'zi tub emas, lekin o'zaro tublik uchun sonlarning tub bo'lishi talab qilinmaydi. Javob: EKUB i 1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ozaro-tub-tekshirish",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#e0ce3697"
+    },
+    {
+      "q": "n natural son bo'lsa, n va n + 1 sonlari haqida qaysi tasdiq har doim o'rinli bo'ladi?",
+      "v": [
+        "Ular har doim o'zaro tub",
+        "EKUB i har doim 2 ga teng",
+        "Faqat n juft bo'lgandagina o'zaro tub",
+        "EKUK i har doim n ga teng"
+      ],
+      "t": 0,
+      "izoh": "Faraz qilaylik, d soni n ni ham, n + 1 ni ham bo'lsin. U holda d ularning ayirmasi (n + 1) − n = 1 ni ham bo'lishi kerak. Bunga faqat d = 1 mos keladi. Demak ketma-ket ikki natural son har doim o'zaro tub. Javob: ular har doim o'zaro tub.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ozaro-tub-tekshirish",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#0b33f498"
+    },
+    {
+      "q": "1 dan 20 gacha bo'lgan natural sonlar ichida 20 bilan o'zaro tub bo'lganlari nechta?",
+      "v": [
+        "6 ta",
+        "8 ta",
+        "10 ta",
+        "12 ta"
+      ],
+      "t": 1,
+      "izoh": "20 = 2²·5, demak 2 ga ham, 5 ga ham bo'linmaydigan sonlar sanaladi. Berilgan oraliqda juft sonlar 10 ta, 5 ga karralilar 4 ta, ikkalasiga ham bo'linadiganlar 2 ta. Bo'linadiganlar soni 10 + 4 − 2 = 12 ta, qolgani 20 − 12 = 8 ta: 1, 3, 7, 9, 11, 13, 17, 19. Javob: 8 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ozaro-tub-sanash",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#a8b37c74"
+    },
+    {
+      "q": "84 va 126 sonlarining eng katta umumiy bo'luvchisini yoyilma usulida toping.",
+      "v": [
+        "14",
+        "21",
+        "42",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "84 = 2²·3·7, 126 = 2·3²·7. EKUB uchun faqat umumiy tub ko'paytuvchilar eng kichik darajada olinadi: 2·3·7 = 42. Bitta ko'paytuvchini tushirib qoldirish 14, 21 yoki 6 ni beradi. Javob: 42.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekub-yoyish-bilan",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#bcf7f198"
+    },
+    {
+      "q": "Bog'bon 150 ta olma va 225 ta nokni bir xil tarkibli sovg'a savatchalariga qoldiqsiz taqsimlamoqchi. Eng ko'pi bilan nechta savatcha tayyorlay oladi?",
+      "v": [
+        "25",
+        "45",
+        "75",
+        "15"
+      ],
+      "t": 2,
+      "izoh": "Savatchalar soni 150 ning ham, 225 ning ham bo'luvchisi bo'lishi kerak, eng kattasi esa ularning EKUB i. 150 = 2·3·5², 225 = 3²·5². Umumiy ko'paytuvchilarni eng kichik darajada olamiz: 3·5² = 75. Har savatchaga 2 ta olma va 3 ta nok tushadi. 45 = 3²·5 — uchlikni eng katta, beshlikni esa eng kichik darajada olib aralashtirib yuborish xatosi; barcha darajalar eng katta olinsa 3²·5² = 225 chiqar edi. Javob: 75 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-taqsimlash-ekub",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#a757f036"
+    },
+    {
+      "q": "Kanonik yoyilmalari 2⁴·3³·5² va 2²·3⁵·7 bo'lgan ikki sonning EKUB i nimaga teng?",
+      "v": [
+        "2²·3³",
+        "2⁴·3⁵·5²·7",
+        "2²·3³·5²",
+        "2⁴·3⁵"
+      ],
+      "t": 0,
+      "izoh": "EKUB da faqat ikkala yoyilmada ham bor tub ko'paytuvchilar, eng kichik daraja bilan olinadi. Umumiylari — 2 va 3. Ikkilikning kichik ko'rsatkichi 2, uchlikniki 3. Demak EKUB = 2²·3³ = 108. 5 va 7 faqat bitta sonda uchragani uchun kirmaydi, eng katta darajalarni olish esa EKUK ga olib boradi. Javob: 2²·3³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kanonik-yoyilma-ekub-ekuk",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#749d04a3"
+    },
+    {
+      "q": "EKUB(a, 36) = 12 shart bajarilsa va a soni 60 dan kichik bo'lsa, a ning necha xil qiymati mavjud?",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "EKUB 12 ga teng bo'lgani uchun a soni 12 ga bo'linishi shart. 60 dan kichik 12 ga karralilar: 12, 24, 36, 48. Ularni tekshiramiz: EKUB(12, 36) = 12, EKUB(24, 36) = 12, EKUB(36, 36) = 36 — mos emas, EKUB(48, 36) = 12. Demak mos qiymatlar 12, 24 va 48 — 3 ta. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekub-ekuk-nomalum-son",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#8f0178f3"
+    },
+    {
+      "q": "48 va 180 sonlarining EKUB i qanday qiymatga ega bo'ladi?",
+      "v": [
+        "6",
+        "12",
+        "144",
+        "720"
+      ],
+      "t": 1,
+      "izoh": "48 = 2⁴·3, 180 = 2²·3²·5. Umumiy tub ko'paytuvchilar 2 va 3, ularning eng kichik darajalari 2² va 3¹. Demak EKUB = 4·3 = 12. 144 — darajalarni eng katta qilib olish, 720 esa EKUK bilan chalkashtirish natijasi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekub-yoyish-bilan",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#42b7ba28"
+    },
+    {
+      "q": "12 va 18 sonlarining eng kichik umumiy karralisini yoyilma orqali aniqlang.",
+      "v": [
+        "72",
+        "6",
+        "36",
+        "216"
+      ],
+      "t": 2,
+      "izoh": "12 = 2²·3, 18 = 2·3². EKUK uchun barcha tub ko'paytuvchilar eng katta darajada olinadi: 2²·3² = 36. Bu yerda 6 — sonlarning EKUB i, 216 esa ularning oddiy ko'paytmasi. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekuk-yoyish-bilan",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#be551e34"
+    },
+    {
+      "q": "Kanonik yoyilmalari 2³·5·7 va 2·5³·11 bo'lgan sonlarning EKUK ini ko'rsating.",
+      "v": [
+        "2³·5³·7·11",
+        "2·5·7·11",
+        "2³·5³",
+        "2⁴·5⁴·7·11"
+      ],
+      "t": 0,
+      "izoh": "EKUK da har bir tub ko'paytuvchi eng katta daraja bilan olinadi. Ikkilikning ko'rsatkichlari 3 va 1 — kattasi 3; beshlikniki 1 va 3 — kattasi 3; 7 hamda 11 bittadan sonda uchraydi, lekin ular ham kiritiladi. Demak EKUK = 2³·5³·7·11. Ko'rsatkichlarni qo'shib yuborish 2⁴·5⁴·7·11 ni beradi. Javob: 2³·5³·7·11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kanonik-yoyilma-ekub-ekuk",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#fa98a0fa"
+    },
+    {
+      "q": "56 va 98 sonlari uchun eng kichik umumiy karrali qanday songa teng bo'ladi?",
+      "v": [
+        "14",
+        "196",
+        "784",
+        "392"
+      ],
+      "t": 3,
+      "izoh": "56 = 2³·7, 98 = 2·7². EKUK uchun har bir tub ko'paytuvchi eng katta darajada olinadi: 2³·7² = 8·49 = 392. Bu yerda 14 — sonlarning EKUB i, 784 esa ikkilik ko'rsatkichlarini qo'shib yuborish natijasi. Javob: 392.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekuk-yoyish-bilan",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#a2008c11"
+    },
+    {
+      "q": "EKUK(x, 15) = 60 shartni qanoatlantiruvchi barcha natural x sonlarining yig'indisini toping.",
+      "v": [
+        "36",
+        "76",
+        "84",
+        "96"
+      ],
+      "t": 3,
+      "izoh": "x soni 60 ning bo'luvchisi bo'lishi va 4 ga bo'linishi kerak, aks holda EKUK da 2² paydo bo'lmaydi. 60 ning 4 ga karrali bo'luvchilari: 4, 12, 20, 60. Har birini tekshiramiz: EKUK(4, 15) = 60, EKUK(12, 15) = 60, EKUK(20, 15) = 60, EKUK(60, 15) = 60. Yig'indi 4 + 12 + 20 + 60 = 96. Qolgan variantlar bittasini tushirib qoldirish natijasi. Javob: 96.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekub-ekuk-nomalum-son",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#0dffec02"
+    },
+    {
+      "q": "Yevklid algoritmi yordamida 252 va 105 sonlarining EKUB ini hisoblang.",
+      "v": [
+        "7",
+        "42",
+        "63",
+        "21"
+      ],
+      "t": 3,
+      "izoh": "Ketma-ket qoldiqli bo'lish bajaramiz: 252 = 2·105 + 42, keyin 105 = 2·42 + 21, so'ng 42 = 2·21 + 0. Qoldiq nolga aylandi, oxirgi nolmas qoldiq esa 21. Demak EKUB(252, 105) = 21. 42 — bir qadam erta to'xtash xatosi. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yevklid-algoritmi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#e4c9abcc"
+    },
+    {
+      "q": "Yevklid algoritmi bilan 391 va 323 sonlarining eng katta umumiy bo'luvchisi topilsin.",
+      "v": [
+        "17",
+        "19",
+        "23",
+        "51"
+      ],
+      "t": 0,
+      "izoh": "391 = 1·323 + 68, 323 = 4·68 + 51, 68 = 1·51 + 17, 51 = 3·17 + 0. Oxirgi nolmas qoldiq 17, demak EKUB(391, 323) = 17. Haqiqatan ham 391 = 17·23 va 323 = 17·19, shuning uchun 19 va 23 chalg'ituvchi javoblardir. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yevklid-algoritmi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#2c24e1cc"
+    },
+    {
+      "q": "Ustoz Yevklid algoritmini tushuntirar ekan, doskaga 300 va 108 sonlarini yozdi. Algoritmning oxirgi nolmas qoldig'i qanday songa teng bo'ladi?",
+      "v": [
+        "24",
+        "6",
+        "4",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "300 = 2·108 + 84, 108 = 1·84 + 24, 84 = 3·24 + 12, 24 = 2·12 + 0. Oxirgi nolmas qoldiq 12 bo'lib, u aynan EKUB(300, 108) ga teng. 24 — bir qadam oldin to'xtab qolish xatosi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yevklid-algoritmi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#13160c35"
+    },
+    {
+      "q": "3n + 4 va 2n + 3 sonlarining EKUB i har qanday natural n uchun qanday qiymat oladi?",
+      "v": [
+        "1",
+        "2",
+        "n",
+        "n + 1"
+      ],
+      "t": 0,
+      "izoh": "Yevklid algoritmi ayirmalar bilan ishlaydi. Ikkinchi ifodani mos koeffitsientlarga ko'paytiramiz: 2·(3n + 4) − 3·(2n + 3) = 6n + 8 − 6n − 9 = −1. Demak har qanday umumiy bo'luvchi 1 ni bo'lishi kerak. Bu esa EKUB = 1 ekanini, ya'ni ifodalar har doim o'zaro tub ekanini bildiradi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yevklid-algoritmi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#23028cf3"
+    },
+    {
+      "q": "Ikki sonning EKUB i 6, EKUK i 72 ga teng bo'lsa, ularning ko'paytmasi nechaga teng?",
+      "v": [
+        "78",
+        "216",
+        "144",
+        "432"
+      ],
+      "t": 3,
+      "izoh": "Har qanday ikki natural son uchun EKUB·EKUK = a·b tenglik o'rinli. Demak ko'paytma 6·72 = 432. Masalan 18 va 24 sonlari shu shartga mos keladi: EKUB(18, 24) = 6, EKUK(18, 24) = 72, ko'paytmasi esa 18·24 = 432. 78 — EKUB bilan EKUK ni qo'shib yuborish xatosi. Javob: 432.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekub-ekuk-kopaytma",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#fe740cb8"
+    },
+    {
+      "q": "Ikki sonning ko'paytmasi 1080, EKUK i esa 180 bo'lsa, ularning EKUB i qanday son?",
+      "v": [
+        "6",
+        "30",
+        "180",
+        "900"
+      ],
+      "t": 0,
+      "izoh": "EKUB·EKUK = a·b tenglikdan EKUB = a·b : EKUK = 1080 : 180 = 6. Tekshiramiz: 30 va 36 sonlarida EKUB 6, EKUK 180, ko'paytma esa 1080. 900 — ko'paytmadan EKUK ni ayirish, 30 — EKUK ni EKUB ga bo'lish xatosi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekub-ekuk-kopaytma",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#23ade815"
+    },
+    {
+      "q": "Ikki guruhdagi o'quvchilar soni 24 va 36 ta. Shu sonlarning EKUB i bilan EKUK i ko'paytmasi nechaga teng?",
+      "v": [
+        "84",
+        "144",
+        "864",
+        "72"
+      ],
+      "t": 2,
+      "izoh": "Avval EKUB(24, 36) = 12 va EKUK(24, 36) = 72 topiladi. Ularning ko'paytmasi 12·72 = 864. Bu qiymat sonlarning o'z ko'paytmasi 24·36 = 864 ga teng, chunki EKUB·EKUK = a·b. 84 — ikkalasini qo'shish, 144 — EKUB ni kvadratga ko'tarish xatosi. Javob: 864.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekub-ekuk-kopaytma",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#3afacc79"
+    },
+    {
+      "q": "Ikki sonning EKUB i 8, EKUK i 240 va ulardan biri 48 ga teng bo'lsa, ikkinchi son qanday?",
+      "v": [
+        "30",
+        "40",
+        "60",
+        "1920"
+      ],
+      "t": 1,
+      "izoh": "EKUB·EKUK = a·b qoidasiga ko'ra sonlar ko'paytmasi 8·240 = 1920. Ikkinchi son 1920 : 48 = 40. Tekshiramiz: EKUB(48, 40) = 8 va EKUK(48, 40) = 240 — shart bajarildi. 1920 — bo'lishni unutish, 30 — EKUK ni EKUB ga bo'lish xatosi. Javob: 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekub-ekuk-kopaytma",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#f78bc88e"
+    },
+    {
+      "q": "Ikki sonning EKUK i 210, EKUB i 7, yig'indisi esa 77 bo'lsa, bu sonlar qaysilar?",
+      "v": [
+        "7 va 70",
+        "14 va 63",
+        "35 va 42",
+        "21 va 56"
+      ],
+      "t": 2,
+      "izoh": "EKUB 7 bo'lgani uchun sonlarni 7m va 7n ko'rinishida yozamiz, bunda m va n o'zaro tub. Yig'indidan 7·(m + n) = 77, ya'ni m + n = 11. EKUK dan 7mn = 210, ya'ni mn = 30. Bu shartlarga m = 5 va n = 6 mos keladi, demak sonlar 35 va 42. Qolgan juftliklarning yig'indisi ham 77, lekin EKUK i mos emas. Javob: 35 va 42.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekub-ekuk-kopaytma",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#30472f97"
+    },
+    {
+      "q": "Uzunligi 90 sm, 126 sm va 198 sm bo'lgan uchta lenta bir xil bo'laklarga qoldiqsiz kesilmoqda. Bo'lakning eng katta uzunligi qancha bo'ladi?",
+      "v": [
+        "9 sm",
+        "36 sm",
+        "6 sm",
+        "18 sm"
+      ],
+      "t": 3,
+      "izoh": "90 = 2·3²·5, 126 = 2·3²·7, 198 = 2·3²·11. Uchala yoyilmada umumiy ko'paytuvchilar 2 va 3², shuning uchun EKUB = 2·9 = 18 sm. Bunda lentalar mos ravishda 5, 7 va 11 ta bo'lakka bo'linadi. Javob: 18 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-sonning-ekub-ekuk",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#c5c37e48"
+    },
+    {
+      "q": "Sahnadagi uchta chiroq 8, 12 va 20 soniyada bir martadan chaqnaydi. Birga chaqnaganidan keyin necha soniyadan so'ng yana birga chaqnaydi?",
+      "v": [
+        "40 soniya",
+        "60 soniya",
+        "120 soniya",
+        "240 soniya"
+      ],
+      "t": 2,
+      "izoh": "8 = 2³, 12 = 2²·3, 20 = 2²·5. EKUK uchun eng katta darajalarni olamiz: 2³·3·5 = 120. Demak chiroqlar 120 soniyadan keyin yana birga chaqnaydi. 40 — faqat 8 va 20 uchun EKUK, 60 — faqat 12 va 20 uchun EKUK. Javob: 120 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-sonning-ekub-ekuk",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#01180972"
+    },
+    {
+      "q": "Bekatdan 1-avtobus har 12 daqiqada, 2-avtobus har 16 daqiqada jo'naydi. Soat 8:00 da ikkalasi birga jo'nagan bo'lsa, keyingi birga jo'nash qaysi vaqtda bo'ladi?",
+      "v": [
+        "8:28",
+        "8:48",
+        "8:04",
+        "9:36"
+      ],
+      "t": 1,
+      "izoh": "Birga jo'nash vaqti ikkala oraliqqa ham karrali bo'ladi, ya'ni EKUK ga teng. 12 = 2²·3, 16 = 2⁴, EKUK = 2⁴·3 = 48 daqiqa. Soat 8:00 ga 48 daqiqa qo'shsak 8:48 chiqadi. 8:28 — oraliqlarni qo'shish, 8:04 — EKUB ni qo'shish, 9:36 esa keyingi mos vaqt. Javob: 8:48.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birga-qaytish-ekuk",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#cdf73280"
+    },
+    {
+      "q": "Anvar har 6 kunda, Bobur har 8 kunda, Davron har 9 kunda kutubxonaga boradi. Bugun uchalasi uchrashdi, necha kundan keyin yana uchrashadi?",
+      "v": [
+        "72",
+        "18",
+        "24",
+        "144"
+      ],
+      "t": 0,
+      "izoh": "6 = 2·3, 8 = 2³, 9 = 3². Uchrashuv kuni uchala oraliqqa karrali bo'lishi kerak, demak EKUK = 2³·3² = 72 kun. 18 — faqat 6 va 9 uchun EKUK, 24 — faqat 6 va 8 uchun EKUK, 144 esa keyingi uchrashuv. Javob: 72 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birga-qaytish-ekuk",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#3309573a"
+    },
+    {
+      "q": "Ikki xizmatchidan biri har 4 kunda, ikkinchisi har 10 kunda navbatchilikka chiqadi. 1-yanvarda birga navbatchilik qilgan bo'lsa, 365 kunlik yil davomida yana necha marta birga chiqadi?",
+      "v": [
+        "17 marta",
+        "19 marta",
+        "18 marta",
+        "20 marta"
+      ],
+      "t": 2,
+      "izoh": "4 = 2², 10 = 2·5, demak EKUK = 2²·5 = 20 kun. Birga navbatchilik har 20 kunda takrorlanadi: 21-kun, 41-kun, 61-kun va hokazo. Shart 1 + 20k ≤ 365 dan 20k ≤ 364, ya'ni k ≤ 18 chiqadi. Demak yana 18 marta birga chiqishadi. Javob: 18 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birga-qaytish-ekuk",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#a20aba49"
+    },
+    {
+      "q": "Ikki g'ildirakning aylana uzunligi 42 sm va 63 sm. Ular bir chiziqdan belgilangan nuqtalari bilan yumalab ketdi, belgilar yana yerga bir vaqtda tegishi uchun kichik g'ildirak necha marta aylanadi?",
+      "v": [
+        "2 marta",
+        "3 marta",
+        "4 marta",
+        "6 marta"
+      ],
+      "t": 1,
+      "izoh": "Belgilar bir vaqtda yerga tegishi uchun bosib o'tilgan yo'l ikkala aylana uzunligiga ham karrali bo'lishi kerak, ya'ni EKUK ga teng. 42 = 2·3·7, 63 = 3²·7, EKUK = 2·3²·7 = 126 sm. Kichik g'ildirak 126 : 42 = 3 marta aylanadi, kattasi esa 2 marta. Javob: 3 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birga-qaytish-ekuk",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#d4b3900c"
+    },
+    {
+      "q": "Bir chiroq 45 soniyada, ikkinchisi 60 soniyada bir tsiklni tugatadi va ular birga ishga tushdi. Ishga tushgan paytdan boshlab 15 daqiqa davomida (15-daqiqaning oxiri ham hisobga olinadi) ular necha marta tsiklni bir vaqtda tugatadi?",
+      "v": [
+        "3 marta",
+        "4 marta",
+        "5 marta",
+        "6 marta"
+      ],
+      "t": 2,
+      "izoh": "45 = 3²·5, 60 = 2²·3·5. Tsikllar bir vaqtda tugashi uchun EKUK = 2²·3²·5 = 180 soniya, ya'ni 3 daqiqa kerak. Moslik paytlari: 3-, 6-, 9-, 12- va 15-daqiqalar, ya'ni 15 : 3 = 5 marta. Javob: 5 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birga-qaytish-ekuk",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#8184d397"
+    },
+    {
+      "q": "Sinfga 42 ta daftar va 70 ta ruchka olib kelindi, ular bir xil tarkibli to'plamlarga qoldiqsiz ajratilmoqda. Eng ko'pi bilan nechta to'plam tuzish mumkin?",
+      "v": [
+        "7 ta",
+        "10 ta",
+        "21 ta",
+        "14 ta"
+      ],
+      "t": 3,
+      "izoh": "To'plamlar soni ikkala sonning umumiy bo'luvchisi bo'ladi, eng kattasi esa EKUB. 42 = 2·3·7, 70 = 2·5·7, demak EKUB = 2·7 = 14. Har to'plamga 3 ta daftar va 5 ta ruchka tushadi. 7 — umumiy ko'paytuvchilardan birini tushirib qoldirish xatosi. Javob: 14 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-taqsimlash-ekub",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#c055824d"
+    },
+    {
+      "q": "Uzunligi 45 dm va eni 60 dm bo'lgan pol bir xil kvadrat kafellar bilan qoldiqsiz qoplanadi. Kafel tomonining eng katta uzunligi qancha?",
+      "v": [
+        "15 dm",
+        "5 dm",
+        "9 dm",
+        "20 dm"
+      ],
+      "t": 0,
+      "izoh": "Kafel tomoni 45 ning ham, 60 ning ham bo'luvchisi bo'lishi shart, eng kattasi EKUB. 45 = 3²·5, 60 = 2²·3·5, demak EKUB = 3·5 = 15 dm. Bunda uzunlik bo'ylab 3 ta, en bo'ylab 4 ta kafel joylashadi. Javob: 15 dm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-kafel-ekub",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#c7439f7d"
+    },
+    {
+      "q": "Tomonlari 60 sm va 96 sm bo'lgan to'g'ri to'rtburchak taxta eng katta bir xil kvadratlarga qoldiqsiz kesiladi. Jami nechta kvadrat hosil bo'ladi?",
+      "v": [
+        "12 ta",
+        "20 ta",
+        "48 ta",
+        "40 ta"
+      ],
+      "t": 3,
+      "izoh": "Kvadrat tomoni EKUB(60, 96) ga teng: 60 = 2²·3·5, 96 = 2⁵·3, EKUB = 2²·3 = 12 sm. Uzun tomon bo'ylab 96 : 12 = 8 ta, qisqa tomon bo'ylab 60 : 12 = 5 ta kvadrat chiqadi. Jami 8·5 = 40 ta. 12 — tomon uzunligini javob deb olish xatosi. Javob: 40 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-kafel-ekub",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#00f209bb"
+    },
+    {
+      "q": "Uch idishda 84 l, 126 l va 210 l sut bor. Ularni bir xil hajmli bidonlarga to'liq quyish uchun eng kam nechta bidon kerak bo'ladi?",
+      "v": [
+        "7 ta",
+        "10 ta",
+        "12 ta",
+        "42 ta"
+      ],
+      "t": 1,
+      "izoh": "Bidon hajmi uchala sonning umumiy bo'luvchisi bo'lishi kerak; bidonlar soni eng kam bo'lishi uchun hajm eng katta, ya'ni EKUB ga teng bo'ladi. 84 = 2²·3·7, 126 = 2·3²·7, 210 = 2·3·5·7, EKUB = 2·3·7 = 42 l. Bidonlar soni (84 + 126 + 210) : 42 = 420 : 42 = 10 ta. 42 — hajmni javob deb olish xatosi. Javob: 10 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-taqsimlash-ekub",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#bf87d885"
+    },
+    {
+      "q": "Bir do'konda 133 ta, boshqasida 190 ta bir xil kitob bor va ular javonlarga har ikkala do'konda teng miqdorda joylashtiriladi. Bitta javonga eng ko'pi bilan nechta kitob qo'yiladi?",
+      "v": [
+        "7 ta",
+        "19 ta",
+        "38 ta",
+        "57 ta"
+      ],
+      "t": 1,
+      "izoh": "133 = 7·19, 190 = 2·5·19. Yagona umumiy tub ko'paytuvchi 19, demak EKUB(133, 190) = 19. Birinchi do'konda 7 ta, ikkinchisida 10 ta javon to'liq to'ladi. 7 — faqat 133 ning ko'paytuvchisi, u 190 ni bo'lmaydi. Javob: 19 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-taqsimlash-ekub",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#698e54ba"
+    },
+    {
+      "q": "100 va 148 sonlari qaysi eng katta natural songa bo'lganda 4 qoldiq qoladi?",
+      "v": [
+        "12",
+        "24",
+        "48",
+        "96"
+      ],
+      "t": 2,
+      "izoh": "Qoldiq 4 bo'lgani uchun 100 − 4 = 96 va 148 − 4 = 144 sonlari izlanayotgan songa qoldiqsiz bo'linadi. 96 = 2⁵·3, 144 = 2⁴·3², demak EKUB = 2⁴·3 = 48. Bo'luvchi qoldiqdan katta bo'lishi sharti ham bajarilgan, chunki 48 > 4. Javob: 48.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-bir-xil-ekub",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#04988f85"
+    },
+    {
+      "q": "Nodir 62 ta konfetni bolalarga teng ulashganda 2 tasi, 93 ta yong'oqni ulashganda 3 tasi ortib qoldi. Bolalar soni eng ko'pi bilan nechta?",
+      "v": [
+        "10 ta",
+        "15 ta",
+        "31 ta",
+        "30 ta"
+      ],
+      "t": 3,
+      "izoh": "Ulashilgan konfet soni 62 − 2 = 60, yong'oq soni 93 − 3 = 90 ta. Bolalar soni ikkala sonni ham qoldiqsiz bo'lishi kerak, eng kattasi EKUB(60, 90) = 30. Qoldiq 3 bo'lgani uchun bolalar soni 3 dan katta bo'lishi ham shart va 30 bunga mos keladi. Javob: 30 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-bir-xil-ekub",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#36467bbd"
+    },
+    {
+      "q": "247, 352 va 422 sonlarini bo'lganda bir xil qoldiq qoldiradigan eng katta natural sonni toping.",
+      "v": [
+        "35",
+        "5",
+        "7",
+        "105"
+      ],
+      "t": 0,
+      "izoh": "Qoldiqlar teng bo'lsa, sonlarning ayirmalari izlanayotgan songa qoldiqsiz bo'linadi: 352 − 247 = 105, 422 − 352 = 70, 422 − 247 = 175. EKUB(105, 70, 175) = 35. Tekshiramiz: 247, 352 va 422 sonlarining 35 ga bo'lgandagi qoldig'i 2 ga teng chiqadi. Javob: 35.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoldiq-bir-xil-ekub",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#b9c9ac73"
+    },
+    {
+      "q": "Qutidagi 71 ta olma va 95 ta nokni bolalarga teng ulashganda har ikkala holda ham 5 tadan ortib qoldi. Bolalar soni nechta?",
+      "v": [
+        "3 ta",
+        "6 ta",
+        "11 ta",
+        "15 ta"
+      ],
+      "t": 1,
+      "izoh": "Ulashilgan olma 71 − 5 = 66 ta, nok 95 − 5 = 90 ta. Bolalar soni ikkalasini ham qoldiqsiz bo'lishi kerak: 66 = 2·3·11, 90 = 2·3²·5, EKUB = 6. Qoldiq 5 bo'lgani uchun bolalar soni 5 dan katta bo'lishi shart, 6 ning 5 dan katta yagona bo'luvchisi esa 6. Javob: 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-bir-xil-ekub",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#7ad70d1c"
+    },
+    {
+      "q": "Bir turdagi qutida 24 tadan, boshqasida 36 tadan sovun bor. Ikkala turdan teng miqdorda sovun olish uchun eng kam nechta sovun kerak?",
+      "v": [
+        "12 ta",
+        "144 ta",
+        "72 ta",
+        "864 ta"
+      ],
+      "t": 2,
+      "izoh": "Olinadigan sovun soni ham 24 ga, ham 36 ga karrali bo'lishi kerak, eng kami esa EKUK. 24 = 2³·3, 36 = 2²·3², demak EKUK = 2³·3² = 72. Bunda birinchi turdan 3 ta, ikkinchisidan 2 ta quti olinadi. 12 — bu EKUB, 864 — sonlarning ko'paytmasi. Javob: 72 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekuk-teng-miqdor",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#16a1350c"
+    },
+    {
+      "q": "Sotuvchi 15 tadan solingan qutilardagi va 25 tadan solingan paketlardagi choyni teng miqdorda sotmoqchi. Eng kam necha dona choy sotiladi?",
+      "v": [
+        "5 dona",
+        "50 dona",
+        "375 dona",
+        "75 dona"
+      ],
+      "t": 3,
+      "izoh": "Sotiladigan miqdor 15 ga ham, 25 ga ham karrali bo'lishi shart. 15 = 3·5, 25 = 5², shuning uchun EKUK = 3·5² = 75. Bunda 5 ta quti va 3 ta paket sotiladi. 5 — bu EKUB, 375 esa sonlarning ko'paytmasi. Javob: 75 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekuk-teng-miqdor",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#e92314ec"
+    },
+    {
+      "q": "1176 sonini to'la kvadratga aylantirish uchun uni eng kichik qaysi natural songa ko'paytirish kerak?",
+      "v": [
+        "2",
+        "3",
+        "6",
+        "14"
+      ],
+      "t": 2,
+      "izoh": "1176 = 2³·3·7². To'la kvadratda barcha daraja ko'rsatkichlari juft bo'lishi kerak. Ikkilikning ko'rsatkichi 3 — toq, uchlikniki 1 — toq, yettilikniki 2 — juft. Demak yetishmaydigan ko'paytuvchi 2·3 = 6. Tekshiruv: 1176·6 = 7056 = 84². Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-kub-toldirish",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#4ad7d442"
+    },
+    {
+      "q": "Zavodda bir qutida 540 tadan detal bor. Jami detallar soni to'la kvadrat bo'lishi uchun eng kam nechta quti olish kerak?",
+      "v": [
+        "3 ta",
+        "5 ta",
+        "30 ta",
+        "15 ta"
+      ],
+      "t": 3,
+      "izoh": "540 = 2²·3³·5. Jami son 540·n to'la kvadrat bo'lishi uchun har bir tub ko'paytuvchi juft darajada turishi kerak. Ikkilik allaqachon juft darajada, uchlik va beshlikning ko'rsatkichlari toq. Demak n = 3·5 = 15. Tekshiramiz: 540·15 = 8100 = 90². Javob: 15 ta quti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-kub-toldirish",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#094292e3"
+    },
+    {
+      "q": "n = 2⁵·3⁴·5² bo'lsa, n ni to'la kubga aylantirish uchun eng kichik qaysi songa ko'paytirish kerak?",
+      "v": [
+        "90",
+        "30",
+        "45",
+        "150"
+      ],
+      "t": 0,
+      "izoh": "To'la kubda har bir tub ko'paytuvchining daraja ko'rsatkichi 3 ga karrali bo'ladi. Ikkilikniki 5 — 6 gacha bitta yetmaydi, uchlikniki 4 — 6 gacha ikkita, beshlikniki 2 — 3 gacha bitta. Demak ko'paytiruvchi 2·3²·5 = 90 va natija 2⁶·3⁶·5³ bo'ladi. Javob: 90.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-kub-toldirish",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#8654ad6e"
+    },
+    {
+      "q": "2016 sonini qaysi eng kichik natural songa bo'lganda to'la kvadrat hosil bo'ladi?",
+      "v": [
+        "7",
+        "14",
+        "21",
+        "28"
+      ],
+      "t": 1,
+      "izoh": "2016 = 2⁵·3²·7. Bo'lgandan keyin barcha daraja ko'rsatkichlari juft qolishi kerak. Ikkilikniki 5 — toq, yettilikniki 1 — toq, uchlikniki 2 — juft. Demak 2·7 = 14 ga bo'lish kerak: 2016 : 14 = 144 = 12². Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-kub-toldirish",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#dcae5487"
+    },
+    {
+      "q": "1147 sonining eng kichik tub bo'luvchisi qaysi son ekanini aniqlang.",
+      "v": [
+        "7",
+        "13",
+        "31",
+        "37"
+      ],
+      "t": 2,
+      "izoh": "1147 juft emas, raqamlari yig'indisi 13 bo'lgani uchun 3 ga, oxirgi raqami 7 bo'lgani uchun 5 ga bo'linmaydi. Keyin 7, 11, 13, 17, 19, 23 va 29 sinaladi — hech biri qoldiqsiz bo'lmaydi. 1147 : 31 = 37 butun chiqadi, demak yoyilma 31·37 va eng kichik tub bo'luvchi 31. Javob: 31.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-kichik-tub-boluvchi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#eaf79af6"
+    },
+    {
+      "q": "Kutubxonachi 2027 raqamli kartoteka bandini tekshirar ekan, bu son tubmi degan savol tug'ildi. 2027 sonining eng kichik tub bo'luvchisi nechaga teng?",
+      "v": [
+        "7",
+        "13",
+        "43",
+        "2027"
+      ],
+      "t": 3,
+      "izoh": "45² = 2025 bo'lgani uchun 2027 ni faqat 45 dan kichik tub sonlarga bo'lib ko'rish yetarli: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43. Ularning birortasi ham qoldiqsiz bo'lmaydi. Demak 2027 — tub son va uning eng kichik tub bo'luvchisi o'zi. Javob: 2027.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-tub-boluvchi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#f18ce64f"
+    },
+    {
+      "q": "n murakkab son bo'lsa, uning eng kichik tub bo'luvchisi p haqida qaysi tasdiq har doim to'g'ri?",
+      "v": [
+        "p ≤ √n",
+        "p > √n",
+        "p ≥ n : 2",
+        "p har doim juft son"
+      ],
+      "t": 0,
+      "izoh": "n murakkab bo'lsa, uni n = p·m ko'rinishida yozish mumkin, bunda p eng kichik tub bo'luvchi va m > 1. m ning har bir tub bo'luvchisi p dan kichik emas, shuning uchun m ≥ p. U holda n = p·m ≥ p², ya'ni p ≤ √n. Aynan shu sabab tublikni tekshirishda faqat √n gacha bo'lgan tub sonlar sinaladi. Javob: p ≤ √n.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-kichik-tub-boluvchi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#afc5be21"
+    },
+    {
+      "q": "Nodira 2 dan 30 gacha bo'lgan barcha tub sonlarni daftariga ketma-ket yozib chiqdi. U jami nechta son yozgan?",
+      "v": [
+        "9",
+        "11",
+        "12",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Bu oraliqdagi tub sonlar: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 — jami 10 ta. 1 ni tub deb qo'shib yuborish 11 ni, 2 ni juft bo'lgani uchun tashlab ketish esa 9 ni beradi. Javob: 10 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tub-sonlar-soni-oraliqda",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#9a1f9eba"
+    },
+    {
+      "q": "50 dan 70 gacha bo'lgan oraliqda nechta tub son joylashganini aniqlang.",
+      "v": [
+        "3 ta",
+        "4 ta",
+        "5 ta",
+        "6 ta"
+      ],
+      "t": 1,
+      "izoh": "Oraliqdagi toq sonlarni tekshiramiz: 51 = 3·17, 55 = 5·11, 57 = 3·19, 63 = 7·9, 65 = 5·13, 69 = 3·23 — bular murakkab. Qolgan 53, 59, 61 va 67 esa hech bir kichik tub songa bo'linmaydi. Demak tub sonlar 4 ta. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tub-sonlar-soni-oraliqda",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#93b7284a"
+    },
+    {
+      "q": "Ayirmasi 2 ga teng bo'lgan tub sonlar juftligi egizak tub sonlar deyiladi. 1 dan 50 gacha bunday juftliklar nechta?",
+      "v": [
+        "4 ta",
+        "5 ta",
+        "6 ta",
+        "7 ta"
+      ],
+      "t": 2,
+      "izoh": "Juftliklarni yozib chiqamiz: (3, 5), (5, 7), (11, 13), (17, 19), (29, 31), (41, 43) — jami 6 ta. (23, 25) mos emas, chunki 25 = 5² murakkab; (47, 49) ham mos emas, chunki 49 = 7². Javob: 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tub-sonlar-soni-oraliqda",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#d4083073"
+    },
+    {
+      "q": "1092 sonining barcha turli tub ko'paytuvchilari yig'indisini hisoblang.",
+      "v": [
+        "25",
+        "23",
+        "27",
+        "31"
+      ],
+      "t": 0,
+      "izoh": "1092 : 2 = 546, 546 : 2 = 273, 273 : 3 = 91, 91 esa 7·13 ga teng. Demak 1092 = 2²·3·7·13. Turli tub ko'paytuvchilar 2, 3, 7 va 13, ularning yig'indisi 2 + 3 + 7 + 13 = 25. Ikkilikni ikki marta qo'shib yuborish 27 ni beradi. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tub-koupaytuvchilar-yigindisi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#6cffd112"
+    },
+    {
+      "q": "Sardor omborda 2310 ta g'ishtni sanadi va bu sonni tub ko'paytuvchilarga yoydi. Yoyilmada nechta turli tub ko'paytuvchi bor va ular yig'indisi qancha?",
+      "v": [
+        "4 ta, yig'indisi 17",
+        "5 ta, yig'indisi 28",
+        "5 ta, yig'indisi 26",
+        "6 ta, yig'indisi 41"
+      ],
+      "t": 1,
+      "izoh": "2310 : 2 = 1155, 1155 : 3 = 385, 385 : 5 = 77, 77 = 7·11. Demak 2310 = 2·3·5·7·11 va yoyilmada 5 ta turli tub ko'paytuvchi bor. Ularning yig'indisi 2 + 3 + 5 + 7 + 11 = 28. Javob: 5 ta, yig'indisi 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tub-koupaytuvchilar-yigindisi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#cefc8172"
+    },
+    {
+      "q": "Ikkita tub sonning ko'paytmasi 493 ga teng bo'lsa, shu sonlar yig'indisi nechaga teng?",
+      "v": [
+        "40",
+        "44",
+        "46",
+        "52"
+      ],
+      "t": 2,
+      "izoh": "493 ni ketma-ket sinaymiz: u 2, 3, 5, 7, 11 va 13 ga bo'linmaydi, ammo 493 : 17 = 29 butun chiqadi. 17 ham, 29 ham tub son, demak yoyilma 17·29. Yig'indi 17 + 29 = 46. Javob: 46.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tub-koupaytuvchilar-yigindisi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#1201bb2d"
+    },
+    {
+      "q": "10! sonining kanonik yoyilmasida 2 sonining daraja ko'rsatkichi nechaga teng?",
+      "v": [
+        "5",
+        "7",
+        "8",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "10! ichida 2 ga karrali sonlar 2, 4, 6, 8, 10 — 5 ta. Ulardan 4 va 8 qo'shimcha bittadan ikkilik beradi — yana 2 ta. 8 = 2³ esa uchinchi ikkilikni beradi — yana 1 ta. Jami ko'rsatkich 5 + 2 + 1 = 8. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "faktorial-tub-daraja",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#ea3c2d7c"
+    },
+    {
+      "q": "O'qituvchi doskaga 15! ni yozib, uning oxirida ketma-ket nechta nol turishini so'radi. To'g'ri javobni belgilang.",
+      "v": [
+        "2 ta",
+        "4 ta",
+        "5 ta",
+        "3 ta"
+      ],
+      "t": 3,
+      "izoh": "Oxirdagi nollar soni yoyilmadagi 10 = 2·5 juftliklari soniga teng, ikkiliklar esa beshliklardan doim ko'p. 15! da 5 ga karralilar: 5, 10, 15 — 3 ta, 25 ga karrali son yo'q. Demak nollar soni 3 ta. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "faktorial-tub-daraja",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#ad043cbe"
+    },
+    {
+      "q": "25! sonining kanonik yoyilmasida 3 sonining darajasi qanday qiymatga ega bo'ladi?",
+      "v": [
+        "8",
+        "10",
+        "11",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "25! da 3 ga karrali sonlar: 3, 6, 9, 12, 15, 18, 21, 24 — 8 ta. Ulardan 9 = 3² va 18 = 2·3² yana bittadan uchlik qo'shadi, ya'ni 2 ta. 27 ga karrali son 25 dan katta bo'lgani uchun yo'q. Jami 8 + 2 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "faktorial-tub-daraja",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#5f734831"
+    },
+    {
+      "q": "600 sonining nechta toq bo'luvchisi borligini hisoblab toping.",
+      "v": [
+        "4 ta",
+        "6 ta",
+        "12 ta",
+        "24 ta"
+      ],
+      "t": 1,
+      "izoh": "600 = 2³·3·5². Toq bo'luvchida ikkilik umuman qatnashmaydi, shuning uchun ular 3·5² = 75 ning bo'luvchilari bilan bir xil. Soni (1 + 1)·(2 + 1) = 6 ta: 1, 3, 5, 15, 25, 75. Javob: 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-toq-boluvchilar-soni",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#56070fa7"
+    },
+    {
+      "q": "Anjumanga 720 nafar ishtirokchi keldi va ular teng sonli guruhlarga bo'linadi, har guruhda toq nafar odam bo'lsin. Guruhdagi odamlar soni necha xil bo'lishi mumkin?",
+      "v": [
+        "5 xil",
+        "9 xil",
+        "15 xil",
+        "6 xil"
+      ],
+      "t": 3,
+      "izoh": "720 = 2⁴·3²·5. Guruhdagi odamlar soni toq bo'lishi uchun u ikkilikni o'z ichiga olmasligi, ya'ni 3²·5 = 45 ning bo'luvchisi bo'lishi kerak. Bunday bo'luvchilar soni (2 + 1)·(1 + 1) = 6 ta: 1, 3, 5, 9, 15, 45. Javob: 6 xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juft-toq-boluvchilar-soni",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#a60ec46e"
+    },
+    {
+      "q": "504 sonining juft bo'luvchilari soni toq bo'luvchilari sonidan nechtaga ko'p?",
+      "v": [
+        "12 ta",
+        "6 ta",
+        "18 ta",
+        "24 ta"
+      ],
+      "t": 0,
+      "izoh": "504 = 2³·3²·7. Barcha bo'luvchilar soni (3 + 1)·(2 + 1)·(1 + 1) = 24 ta. Toq bo'luvchilar ikkiliksiz, ya'ni 3²·7 ning bo'luvchilari — (2 + 1)·(1 + 1) = 6 ta. Juftlari 24 − 6 = 18 ta, farq esa 18 − 6 = 12. Javob: 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-toq-boluvchilar-soni",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#23c35700"
+    },
+    {
+      "q": "Ikki sonning nisbati 3 : 5, eng katta umumiy bo'luvchisi esa 14 ga teng. Bu sonlarning yig'indisi nechaga teng?",
+      "v": [
+        "8",
+        "28",
+        "112",
+        "210"
+      ],
+      "t": 2,
+      "izoh": "Nisbat 3 : 5 va EKUB 14 bo'lsa, sonlar 14·3 = 42 va 14·5 = 70 ko'rinishida bo'ladi, chunki 3 va 5 o'zaro tub. Tekshirish: EKUB(42, 70) = 14. Yig'indi 42 + 70 = 112. Bu yerda 28 — sonlar ayirmasi, 210 esa ularning EKUK i. Javob: 112.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekub-nisbat",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#23c9ab7b"
+    },
+    {
+      "q": "Ikki qishloq maktabidagi o'quvchilar soni 4 : 7 nisbatda va bu sonlarning EKUB i 45 ga teng. Katta maktabda nechta o'quvchi bor?",
+      "v": [
+        "180",
+        "252",
+        "495",
+        "315"
+      ],
+      "t": 3,
+      "izoh": "Nisbat 4 : 7 va 4 bilan 7 o'zaro tub bo'lgani uchun o'quvchilar soni 45·4 = 180 va 45·7 = 315 bo'ladi. Katta maktabda 315 nafar o'quvchi bor. 180 — kichik maktabning soni, 495 — ikkalasining yig'indisi. Javob: 315.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekub-nisbat",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#59524b04"
+    },
+    {
+      "q": "Ikki sonning EKUK i 180, nisbati esa 4 : 9 bo'lsa, ularning EKUB i nechaga teng?",
+      "v": [
+        "5",
+        "9",
+        "20",
+        "45"
+      ],
+      "t": 0,
+      "izoh": "4 va 9 o'zaro tub, shuning uchun sonlarni 4k va 9k ko'rinishida yozamiz. Bunday holda EKUB = k, EKUK = 36k bo'ladi. 36k = 180 tenglamadan k = 5. Demak EKUB = 5, sonlar esa 20 va 45. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekub-nisbat",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#15b69fb9"
+    },
+    {
+      "q": "Ikki simning uzunliklari nisbati 5 : 8 va ularning EKUB i 24 sm. Simlar bir xil eng katta bo'laklarga kesilsa, jami nechta bo'lak hosil bo'ladi?",
+      "v": [
+        "10 ta",
+        "13 ta",
+        "16 ta",
+        "24 ta"
+      ],
+      "t": 1,
+      "izoh": "Nisbat 5 : 8 va EKUB 24 sm bo'lgani uchun simlar uzunligi 24·5 = 120 sm hamda 24·8 = 192 sm. Eng katta bo'lak uzunligi ularning EKUB i, ya'ni 24 sm. Bo'laklar soni 120 : 24 = 5 va 192 : 24 = 8, jami 5 + 8 = 13 ta. Javob: 13 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekub-nisbat",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#db0796df"
+    },
+    {
+      "q": "3/8, 5/12 va 7/18 kasrlarini umumiy maxrajga keltirishda eng kichik umumiy maxraj qanday bo'ladi?",
+      "v": [
+        "72",
+        "36",
+        "144",
+        "1728"
+      ],
+      "t": 0,
+      "izoh": "Eng kichik umumiy maxraj — maxrajlarning EKUK i. 8 = 2³, 12 = 2²·3, 18 = 2·3². Eng katta darajalarni olamiz: 2³·3² = 72. 36 soni 8 ga bo'linmaydi, 1728 esa maxrajlarning oddiy ko'paytmasi. Javob: 72.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekuk-kasr-maxraj",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#5d591d59"
+    },
+    {
+      "q": "Ikkidan katta har qanday tub son haqida qaysi tasdiq har doim to'g'ri bo'ladi?",
+      "v": [
+        "U albatta toq son bo'ladi",
+        "U albatta 6 ga karrali bo'ladi",
+        "Uning raqamlari yig'indisi toq bo'ladi",
+        "U albatta 4k + 1 ko'rinishida bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Agar 2 dan katta son juft bo'lsa, u 2 ga bo'linadi va kamida uchta bo'luvchiga ega bo'lib qoladi, ya'ni tub bo'la olmaydi. Demak 2 dan katta tub sonlarning hammasi toq. Qolgan tasdiqlar qarshi misol bilan rad etiladi: 11 tub, lekin uning raqamlari yig'indisi 1 + 1 = 2 — juft; 7 esa 4k + 1 ko'rinishida emas; birorta tub son 6 ga karrali ham emas. Javob: u albatta toq son bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tub-son-xossasi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#600fcb90"
+    },
+    {
+      "q": "p va p + 2 sonlarining ikkalasi ham tub va p > 3 bo'lsa, p + 1 albatta qaysi songa bo'linadi?",
+      "v": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "p > 3 tub bo'lgani uchun toq, demak p + 1 juft va 2 ga bo'linadi. Yana p ham, p + 2 ham 3 ga bo'linmaydi, ketma-ket uchta sondan biri esa albatta 3 ga karrali — bu faqat p + 1 bo'lishi mumkin. Demak p + 1 soni 2 ga ham, 3 ga ham, ya'ni 6 ga bo'linadi: p = 11 da 12, p = 17 da 18. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tub-son-xossasi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#7c8f3588"
+    },
+    {
+      "q": "Ketma-ket uchta natural sonning ko'paytmasi haqida qaysi tasdiq har doim o'rinli bo'ladi?",
+      "v": [
+        "U har doim 4 ga bo'linadi",
+        "U har doim 6 ga bo'linadi",
+        "U har doim tub son bo'ladi",
+        "U har doim toq son bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Ketma-ket uchta sondan kamida bittasi juft, shuning uchun ko'paytma 2 ga bo'linadi. Shu bilan birga uchtadan biri albatta 3 ga karrali, demak ko'paytma 3 ga ham bo'linadi. 2 va 3 o'zaro tub bo'lgani uchun ko'paytma 6 ga bo'linadi. 4 ga bo'linish esa shart emas: 1·2·3 = 6. Javob: u har doim 6 ga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tub-son-xossasi",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#18c9bc05"
+    },
+    {
+      "q": "Fermer 1470 tup ko'chatni bir xil qatorlarga joylashtirish uchun avval bu sonni tub ko'paytuvchilarga yoymoqchi. To'g'ri yoyilmani tanlang.",
+      "v": [
+        "2·3²·5·7",
+        "2·3·5·7²",
+        "2²·3·5·7",
+        "2·3·5²·7"
+      ],
+      "t": 1,
+      "izoh": "1470 : 2 = 735, 735 : 3 = 245, 245 : 5 = 49, 49 esa 7² ga teng. Demak 1470 = 2·3·5·7². Tekshiruv: 6·5·49 = 1470. Yettilikning darajasini boshqa ko'paytuvchiga o'tkazib yuborish qolgan variantlarni beradi. Javob: 2·3·5·7².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tub-koupaytuvchilarga-yoyish",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#1801cc6e"
+    },
+    {
+      "q": "Kanonik yoyilmasi 3²·5·11 bo'lgan son quyidagilardan qaysi biri?",
+      "v": [
+        "99",
+        "165",
+        "495",
+        "1485"
+      ],
+      "t": 2,
+      "izoh": "Avval darajani hisoblaymiz: 3² = 9. So'ng 9·5 = 45 va 45·11 = 495. Bu yerda 165 — uchlikning darajasini unutish (3·5·11), 99 — beshlikni tushirib qoldirish, 1485 esa ortiqcha uchlikka ko'paytirish natijasi. Javob: 495.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilmadan-sonni-tiklash",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#3babcc34"
+    },
+    {
+      "q": "Anvar daftariga bir sonning yoyilmasini 2³·3·5² deb yozdi, so'ng bu sonni 2 ga ko'paytirdi. Hosil bo'lgan son nechaga teng?",
+      "v": [
+        "600",
+        "2400",
+        "1800",
+        "1200"
+      ],
+      "t": 3,
+      "izoh": "Avval boshlang'ich sonni topamiz: 2³ = 8 va 5² = 25, demak son 8·3·25 = 600. Uni 2 ga ko'paytirsak 1200 chiqadi, yangi yoyilma esa 2⁴·3·5² bo'ladi. 600 — ko'paytirishni unutish, 2400 — 4 ga ko'paytirib yuborish xatosi. Javob: 1200.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyilmadan-sonni-tiklash",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#a7ebb969"
+    },
+    {
+      "q": "1 dan 36 gacha bo'lgan natural sonlar ichida 36 bilan o'zaro tub bo'lganlari nechta?",
+      "v": [
+        "10",
+        "16",
+        "12",
+        "18"
+      ],
+      "t": 2,
+      "izoh": "36 = 2²·3², shuning uchun 2 ga ham, 3 ga ham bo'linmaydigan sonlar sanaladi. Berilgan oraliqda juftlar 18 ta, 3 ga karralilar 12 ta, ikkalasiga ham bo'linadiganlar (6 ga karralilar) 6 ta. Bo'linadiganlar 18 + 12 − 6 = 24 ta, qolgani esa 36 − 24 = 12 ta. Javob: 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ozaro-tub-sanash",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#b3f8b012"
+    },
+    {
+      "q": "Doiraviy stolda 30 ta o'rindiq bor, mehmon har safar k ta o'rindiq oshirib o'tiradi. U barcha o'rindiqlarda o'tirib chiqishi uchun k qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "k soni 30 ning bo'luvchisi bo'lishi",
+        "k soni tub son bo'lishi",
+        "k soni juft son bo'lishi",
+        "k soni 30 bilan o'zaro tub bo'lishi"
+      ],
+      "t": 3,
+      "izoh": "Mehmon k qadam bilan yurganda barcha o'rindiqlarga tushishi uchun EKUB(k, 30) = 1 bo'lishi kerak. Agar EKUB(k, 30) = d > 1 bo'lsa, u faqat 30 : d ta o'rindiqni aylanib chiqadi va boshlang'ich joyga qaytadi. k ning tub bo'lishi yetarli emas: k = 5 tub, lekin u 30 ni bo'ladi va mehmon atigi 6 ta o'rindiqqa tushadi. Javob: k soni 30 bilan o'zaro tub bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ozaro-tub-sanash",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#35b7c267"
+    },
+    {
+      "q": "n soni 12 bilan o'zaro tub bo'lishi uchun u qanday shartni qanoatlantirishi zarur?",
+      "v": [
+        "n toq son bo'lishi yetarli",
+        "n tub son bo'lishi kerak",
+        "n toq bo'lib, 3 ga bo'linmasligi kerak",
+        "n 12 dan kichik bo'lishi kerak"
+      ],
+      "t": 2,
+      "izoh": "12 = 2²·3, shuning uchun umumiy bo'luvchi paydo bo'lmasligi uchun n ikkiga ham, uchga ham bo'linmasligi shart. Faqat toqlik yetarli emas: 9 toq, lekin EKUB(9, 12) = 3. Tub bo'lish ham talab qilinmaydi: 25 tub emas, ammo 12 bilan o'zaro tub. Javob: n toq bo'lib, 3 ga bo'linmasligi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ozaro-tub-tekshirish",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#de7fd22f"
+    },
+    {
+      "q": "Yoyilmalari 540 = 2²·3³·5 va 378 = 2·3³·7 bo'lgan sonlarning EKUB ini toping.",
+      "v": [
+        "18",
+        "27",
+        "54",
+        "108"
+      ],
+      "t": 2,
+      "izoh": "Umumiy tub ko'paytuvchilar 2 va 3. Ikkilikning eng kichik ko'rsatkichi 1, uchlikniki esa 3. Demak EKUB = 2·3³ = 2·27 = 54. 27 — ikkilikni tushirib qoldirish, 108 — ikkilikning katta darajasini olish, 18 — uchlikni faqat kvadrat darajada olish xatosi. Javob: 54.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekub-yoyish-bilan",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#3a6995c9"
+    },
+    {
+      "q": "44 va 66 sonlarining eng kichik umumiy karralisi qaysi songa teng bo'ladi?",
+      "v": [
+        "22",
+        "264",
+        "132",
+        "2904"
+      ],
+      "t": 2,
+      "izoh": "44 = 2²·11, 66 = 2·3·11. EKUK uchun har bir tub ko'paytuvchi eng katta darajada olinadi: 2²·3·11 = 132. Bu yerda 22 — sonlarning EKUB i, 2904 esa ularning oddiy ko'paytmasi. Javob: 132.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekuk-yoyish-bilan",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#04f89903"
+    },
+    {
+      "q": "a = 2⁴·3²·5 va b = 2²·3³·7 bo'lsa, EKUK(a, b) sonining nechta bo'luvchisi bor?",
+      "v": [
+        "40 ta",
+        "60 ta",
+        "72 ta",
+        "80 ta"
+      ],
+      "t": 3,
+      "izoh": "EKUK da har bir tub ko'paytuvchi eng katta darajada olinadi: 2⁴·3³·5·7. Bo'luvchilar soni ko'rsatkichlarga birni qo'shib ko'paytirish orqali topiladi: (4 + 1)·(3 + 1)·(1 + 1)·(1 + 1) = 5·4·2·2 = 80 ta. Darajalarni eng kichik qilib olish yoki bitta ko'paytuvchini tushirib qoldirish kichikroq natija beradi. Javob: 80 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekuk-yoyish-bilan",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#a0e6f7de"
+    },
+    {
+      "q": "2³·5² va 2·5³·7 sonlarining eng katta umumiy bo'luvchisi qaysi songa teng?",
+      "v": [
+        "50",
+        "10",
+        "250",
+        "1400"
+      ],
+      "t": 0,
+      "izoh": "Umumiy tub ko'paytuvchilar 2 va 5. Ikkilikning eng kichik ko'rsatkichi 1, beshlikniki 2. Demak EKUB = 2·5² = 50. 10 — beshlikni birinchi darajada olish, 250 — beshlikning katta darajasini olish natijasi. 1400 = 2³·5²·7 — faqat bitta sonda uchraydigan 7 ni ortiqcha kiritish va ikkilikni katta darajada olishdan chiqadi; EKUK esa 2³·5³·7 = 7000 bo'lardi. Javob: 50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kanonik-yoyilma-ekub-ekuk",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#a46a1b71"
+    },
+    {
+      "q": "a = p²·q³ va b = p⁴·q bo'lsa (p va q har xil tub sonlar), EKUK(a, b) ni EKUB(a, b) ga bo'lgandagi natija nimaga teng?",
+      "v": [
+        "p²·q²",
+        "p⁶·q⁴",
+        "p²·q³",
+        "p⁴·q³"
+      ],
+      "t": 0,
+      "izoh": "EKUK da har bir tub ko'paytuvchi eng katta daraja bilan olinadi: p⁴·q³. EKUB da esa eng kichigi bilan: p²·q. Bo'lishda darajalar ayiriladi: p^(4−2)·q^(3−1) = p²·q². Ko'rsatkichlarni qo'shib yuborish p⁶·q⁴ ni beradi. Javob: p²·q².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kanonik-yoyilma-ekub-ekuk",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#09ecc3b3"
+    },
+    {
+      "q": "EKUB(24, x) = 8 va EKUK(24, x) = 96 bo'lsa, x soni nechaga teng?",
+      "v": [
+        "16",
+        "32",
+        "48",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "EKUB·EKUK = 24·x tenglikdan foydalanamiz: 8·96 = 768, demak x = 768 : 24 = 32. Tekshiramiz: 24 = 2³·3, 32 = 2⁵, EKUB = 2³ = 8 va EKUK = 2⁵·3 = 96 — ikkala shart ham bajarildi. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekub-ekuk-nomalum-son",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#a829892f"
+    },
+    {
+      "q": "EKUB(n, 84) = 14, EKUK(n, 84) = 420 bo'lsa, n sonini aniqlang.",
+      "v": [
+        "35",
+        "105",
+        "140",
+        "70"
+      ],
+      "t": 3,
+      "izoh": "EKUB·EKUK = n·84 qoidasidan 14·420 = 5880, demak n = 5880 : 84 = 70. Tekshiramiz: 70 = 2·5·7, 84 = 2²·3·7, EKUB = 2·7 = 14 va EKUK = 2²·3·5·7 = 420. Javob: 70.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekub-ekuk-nomalum-son",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#25fa5ac4"
+    },
+    {
+      "q": "18, 24 va 60 sonlarining EKUB i bilan EKUK i yig'indisi nechaga teng?",
+      "v": [
+        "366",
+        "372",
+        "180",
+        "726"
+      ],
+      "t": 0,
+      "izoh": "18 = 2·3², 24 = 2³·3, 60 = 2²·3·5. EKUB uchun umumiy ko'paytuvchilarni eng kichik darajada olamiz: 2·3 = 6. EKUK uchun esa barcha ko'paytuvchilar eng katta darajada: 2³·3²·5 = 360. Yig'indi 6 + 360 = 366. Javob: 366.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-sonning-ekub-ekuk",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#f59221bc"
+    },
+    {
+      "q": "Uch dehqonning yer maydonlari 132 ar, 176 ar va 220 ar. Har bir maydon bir xil eng katta uchastkalarga bo'linsa, jami nechta uchastka hosil bo'ladi?",
+      "v": [
+        "11 ta",
+        "44 ta",
+        "24 ta",
+        "12 ta"
+      ],
+      "t": 3,
+      "izoh": "132 = 2²·3·11, 176 = 2⁴·11, 220 = 2²·5·11. Umumiy ko'paytuvchilar eng kichik darajada olinsa, EKUB = 2²·11 = 44 ar. Uchastkalar soni 132 : 44 = 3, 176 : 44 = 4 va 220 : 44 = 5, jami 3 + 4 + 5 = 12 ta. 44 — uchastka yuzini javob deb olish xatosi. Javob: 12 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-sonning-ekub-ekuk",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#5c79ef86"
+    },
+    {
+      "q": "Yo'lak 35 sm va 50 sm uzunlikdagi plitkalar bilan alohida-alohida qoldiqsiz teriladi. Yo'lakning eng qisqa uzunligi qancha bo'ladi?",
+      "v": [
+        "175 sm",
+        "350 sm",
+        "700 sm",
+        "1750 sm"
+      ],
+      "t": 1,
+      "izoh": "Yo'lak uzunligi 35 ga ham, 50 ga ham karrali bo'lishi kerak, eng kichigi esa EKUK. 35 = 5·7, 50 = 2·5², demak EKUK = 2·5²·7 = 350 sm. Bunda birinchi turdan 10 ta, ikkinchisidan 7 ta plitka ketadi. 1750 — plitkalar o'lchamlarining ko'paytmasi. Javob: 350 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekuk-teng-miqdor",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#e19c1d95"
+    },
+    {
+      "q": "5/14 va 7/22 kasrlarini umumiy maxrajga keltirganda birinchi kasrning suratini nechaga ko'paytirish kerak?",
+      "v": [
+        "7",
+        "11",
+        "14",
+        "22"
+      ],
+      "t": 1,
+      "izoh": "14 = 2·7 va 22 = 2·11, demak eng kichik umumiy maxraj EKUK = 2·7·11 = 154. Birinchi kasr uchun qo'shimcha ko'paytuvchi 154 : 14 = 11, ikkinchisi uchun esa 154 : 22 = 7. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekuk-kasr-maxraj",
+      "id": "matematika_arif_m03-tub-va-murakkab-sonlar-ekub#3b49578a"
+    }
+  ]
+}

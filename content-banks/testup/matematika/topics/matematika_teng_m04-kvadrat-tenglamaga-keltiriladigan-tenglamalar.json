@@ -1,0 +1,1609 @@
+{
+  "nom": "Kvadrat tenglamaga keltiriladigan tenglamalar",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "x⁴ − 13x² + 36 = 0 bikvadrat tenglamaning barcha haqiqiy ildizlarini toping.",
+      "v": [
+        "±2 va ±3",
+        "±4 va ±9",
+        "2 va 3",
+        "±2 va ±9"
+      ],
+      "t": 0,
+      "izoh": "t = x² almashtirishni kiritamiz, bunda t ≥ 0. Tenglama t² − 13t + 36 = 0 ko'rinishga keladi. Viyet teoremasiga ko'ra t₁ = 4, t₂ = 9. Endi x² = 4 dan x = ±2, x² = 9 dan x = ±3 chiqadi. Javob: ±2 va ±3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bikvadrat-ildiz-topish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#81731117"
+    },
+    {
+      "q": "4x⁴ − 17x² + 4 = 0 tenglamani yangi o'zgaruvchi kiritish usuli bilan yeching va ildizlarini ko'rsating.",
+      "v": [
+        "±4 va ±1/4",
+        "±2 va ±1/2",
+        "±2 va ±1/4",
+        "2 va 1/2"
+      ],
+      "t": 1,
+      "izoh": "t = x² deb olamiz: 4t² − 17t + 4 = 0. D = 289 − 64 = 225, √D = 15. t₁ = (17 + 15)/8 = 4, t₂ = (17 − 15)/8 = 1/4. x² = 4 dan x = ±2, x² = 1/4 dan x = ±1/2. Javob: ±2 va ±1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bikvadrat-ildiz-topish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#fc5cf70f"
+    },
+    {
+      "q": "x⁴ − 5x² − 36 = 0 tenglamaning haqiqiy ildizlari to'plamini aniqlang.",
+      "v": [
+        "±9",
+        "±3 va ±2",
+        "±3",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "t = x² bo'lsin, u holda t² − 5t − 36 = 0. D = 25 + 144 = 169, √D = 13, t₁ = 9, t₂ = −4. Manfiy qiymat yaramaydi, chunki x² manfiy bo'la olmaydi. x² = 9 dan x = ±3. Javob: ±3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bikvadrat-ildiz-topish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#9b0b5d20"
+    },
+    {
+      "q": "9x⁴ − 10x² + 1 = 0 tenglamaning ildizlari qaysi variantda to'liq va to'g'ri berilgan?",
+      "v": [
+        "±1 va ±1/9",
+        "±3 va ±1",
+        "±1 va ±1/3",
+        "±1/3 va ±1/9"
+      ],
+      "t": 2,
+      "izoh": "t = x² bilan 9t² − 10t + 1 = 0 hosil bo'ladi. D = 100 − 36 = 64, √D = 8. t₁ = (10 + 8)/18 = 1, t₂ = (10 − 8)/18 = 1/9. x² = 1 dan x = ±1, x² = 1/9 dan x = ±1/3. Javob: ±1 va ±1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bikvadrat-ildiz-topish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#da1f0189"
+    },
+    {
+      "q": "x⁴ − 6x² + 8 = 0 tenglamaning haqiqiy ildizlari qaysi qatorda to'g'ri yozilgan?",
+      "v": [
+        "±2 va ±4",
+        "faqat √2 va 2",
+        "Haqiqiy ildizi yo'q",
+        "±√2 va ±2"
+      ],
+      "t": 3,
+      "izoh": "t = x² almashtirishdan t² − 6t + 8 = 0 kelib chiqadi, uning ildizlari t₁ = 2, t₂ = 4. x² = 2 dan x = ±√2, x² = 4 dan x = ±2. Ikkala t ham musbat, shuning uchun to'rtta haqiqiy ildiz bor. Javob: ±√2 va ±2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-ildiz-topish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#4655563b"
+    },
+    {
+      "q": "x⁴ + 7x² − 18 = 0 tenglama nechta haqiqiy ildizga ega ekanligini aniqlang.",
+      "v": [
+        "4 ta",
+        "2 ta",
+        "1 ta",
+        "Ildizi yo'q"
+      ],
+      "t": 1,
+      "izoh": "t = x² bo'lsin: t² + 7t − 18 = 0, D = 49 + 72 = 121, √D = 11. Demak t₁ = 2, t₂ = −9. Manfiy t yaramaydi. x² = 2 dan faqat ikkita ildiz x = ±√2 chiqadi. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bikvadrat-ildizlar-soni",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#8d064d77"
+    },
+    {
+      "q": "Alisher x⁴ + 5x² + 6 = 0 tenglamani yechmoqchi. Uning haqiqiy ildizlari haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "To'rtta har xil haqiqiy ildizi bor",
+        "Ikkita haqiqiy ildizi bor",
+        "Haqiqiy ildizi yo'q",
+        "Bitta haqiqiy ildizi bor"
+      ],
+      "t": 2,
+      "izoh": "t = x² kiritamiz: t² + 5t + 6 = 0, ildizlari t₁ = −2, t₂ = −3. Ikkala qiymat ham manfiy, x² esa hech qachon manfiy bo'lmaydi. Shuning uchun tenglamaning haqiqiy yechimi mavjud emas. Javob: haqiqiy ildizi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bikvadrat-ildizlar-soni",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#5c8e44fe"
+    },
+    {
+      "q": "x⁴ − 3x² = 0 tenglamaning barcha haqiqiy ildizlari soni nechta bo'ladi?",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "1 ta"
+      ],
+      "t": 1,
+      "izoh": "Chap tomonni ko'paytuvchilarga ajratamiz: x²(x² − 3) = 0. Birinchi ko'paytuvchidan x = 0, ikkinchisidan x² = 3, ya'ni x = ±√3. Demak ildizlar 0, √3 va −√3 — jami uchta. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-ildizlar-soni",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#eff97505"
+    },
+    {
+      "q": "x⁴ − 2x² + 1 = 0 tenglama nechta bir-biridan farqli haqiqiy ildizga ega? Javobingizni asoslang.",
+      "v": [
+        "4 ta har xil ildiz",
+        "3 ta har xil ildiz",
+        "2 ta har xil ildiz",
+        "1 ta ildiz"
+      ],
+      "t": 2,
+      "izoh": "t = x² bilan t² − 2t + 1 = 0, ya'ni (t − 1)² = 0, demak t = 1 karrali ildiz. x² = 1 dan x = 1 va x = −1 chiqadi. t bitta qiymat bergani uchun har xil ildizlar soni ikkitadan oshmaydi. Javob: 2 ta har xil ildiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-ildizlar-soni",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#cf15eba0"
+    },
+    {
+      "q": "x⁴ − 10x² + 9 = 0 tenglamaning barcha haqiqiy ildizlari yig'indisini hisoblang.",
+      "v": [
+        "10",
+        "0",
+        "−10",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "t = x² dan t² − 10t + 9 = 0, uning ildizlari t₁ = 1, t₂ = 9. Demak x = ±1 va x = ±3. Har bir musbat ildizga qarama-qarshi manfiy ildiz mos kelgani uchun yig'indi 1 − 1 + 3 − 3 = 0 bo'ladi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bikvadrat-ildizlar-munosabati",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#1991641d"
+    },
+    {
+      "q": "x⁴ − 29x² + 100 = 0 tenglamaning to'rtta ildizi ko'paytmasini toping.",
+      "v": [
+        "100",
+        "−100",
+        "29",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "t = x² bilan t² − 29t + 100 = 0, D = 841 − 400 = 441, √D = 21, t₁ = 25, t₂ = 4. Ildizlar 5, −5, 2, −2 bo'ladi. Ko'paytma 5·(−5)·2·(−2) = (−25)·(−4) = 100. Javob: 100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-ildizlar-munosabati",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#24ae40fd"
+    },
+    {
+      "q": "x⁴ − 20x² + 64 = 0 tenglama ildizlari kvadratlarining yig'indisi nechaga teng bo'ladi?",
+      "v": [
+        "12",
+        "20",
+        "40",
+        "64"
+      ],
+      "t": 2,
+      "izoh": "t = x² almashtirishda t² − 20t + 64 = 0, D = 400 − 256 = 144, √D = 12, t₁ = 16, t₂ = 4. Ildizlar ±4 va ±2. Ularning kvadratlari 16, 16, 4, 4 bo'lib, yig'indi 40 ga teng. Javob: 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-ildizlar-munosabati",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#ba1cc849"
+    },
+    {
+      "q": "x⁴ − 41x² + 400 = 0 tenglamaning eng katta haqiqiy ildizi qanday qiymatga ega?",
+      "v": [
+        "25",
+        "20",
+        "16",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "t = x² dan t² − 41t + 400 = 0, D = 1681 − 1600 = 81, √D = 9. Demak t₁ = 25, t₂ = 16. Ildizlar ±5 va ±4, ular orasida eng kattasi 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-ildizlar-munosabati",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#e19ed1e4"
+    },
+    {
+      "q": "x⁴ − 34x² + 225 = 0 tenglamaning eng katta va eng kichik ildizlari ayirmasini hisoblang.",
+      "v": [
+        "8",
+        "10",
+        "16",
+        "34"
+      ],
+      "t": 1,
+      "izoh": "t = x² bilan t² − 34t + 225 = 0, D = 1156 − 900 = 256, √D = 16, t₁ = 25, t₂ = 9. Ildizlar ±5 va ±3. Eng kattasi 5, eng kichigi esa −5, ayirma 5 − (−5) = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-ildizlar-munosabati",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#2021de6d"
+    },
+    {
+      "q": "Ildizlari ±1 va ±4 dan iborat bo'lgan bikvadrat tenglamani quyidagilardan tanlang.",
+      "v": [
+        "x⁴ + 17x² + 16 = 0",
+        "x⁴ − 17x² + 16 = 0",
+        "x⁴ − 5x² + 4 = 0",
+        "x⁴ − 16x² + 17 = 0"
+      ],
+      "t": 1,
+      "izoh": "Ildizlar ±1 va ±4 bo'lsa, x² ning qiymatlari 1 va 16 bo'ladi. Demak tenglama (x² − 1)(x² − 16) = 0 ko'rinishda. Qavslarni ochsak x⁴ − 16x² − x² + 16 = x⁴ − 17x² + 16. Javob: x⁴ − 17x² + 16 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bikvadrat-tuzish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#03d5abf3"
+    },
+    {
+      "q": "Haqiqiy ildizlari ±√3 va ±√5 bo'lgan bikvadrat tenglama qaysi variantda keltirilgan?",
+      "v": [
+        "x⁴ − 8x² + 15 = 0",
+        "x⁴ + 8x² + 15 = 0",
+        "x⁴ − 15x² + 8 = 0",
+        "x⁴ − 8x² − 15 = 0"
+      ],
+      "t": 0,
+      "izoh": "Berilgan ildizlardan x² = 3 va x² = 5 kelib chiqadi. Demak (x² − 3)(x² − 5) = 0 bo'lishi kerak. Ko'paytirsak x⁴ − 5x² − 3x² + 15 = x⁴ − 8x² + 15 hosil bo'ladi. Javob: x⁴ − 8x² + 15 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bikvadrat-tuzish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#37ed647a"
+    },
+    {
+      "q": "Bikvadrat tenglamada t = x² almashtirishdan keyin hosil bo'lgan tenglamaning ildizlari 2 va 7 bo'lsa, dastlabki tenglama qaysi?",
+      "v": [
+        "x⁴ − 14x² + 9 = 0",
+        "x⁴ + 9x² + 14 = 0",
+        "x⁴ − 9x² + 14 = 0",
+        "x⁴ − 9x² − 14 = 0"
+      ],
+      "t": 2,
+      "izoh": "t ga nisbatan tenglamaning ildizlari 2 va 7 bo'lsa, Viyet teoremasi bo'yicha t² − 9t + 14 = 0. Endi t o'rniga x² ni qaytaramiz va x⁴ − 9x² + 14 = 0 ni olamiz. Javob: x⁴ − 9x² + 14 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-tuzish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#ea3045f1"
+    },
+    {
+      "q": "Faqat ikkitagina haqiqiy ildizga ega bo'lgan va bu ildizlari ±2 ga teng bo'lgan tenglamani ko'rsating.",
+      "v": [
+        "x⁴ − 7x² + 12 = 0",
+        "x⁴ + x² − 12 = 0",
+        "x⁴ − 4x² = 0",
+        "x⁴ − x² − 12 = 0"
+      ],
+      "t": 3,
+      "izoh": "x⁴ − x² − 12 = 0 da t = x² dan t² − t − 12 = 0, t₁ = 4, t₂ = −3. Manfiy t yaramaydi, x² = 4 dan faqat x = ±2 chiqadi. x⁴ − 7x² + 12 = 0 da t = 3 va t = 4 bo'lib, to'rtta ildiz (±√3 va ±2) chiqadi; x⁴ − 4x² = 0 esa x = 0 ni ham beradi, ya'ni uchta ildiz; x⁴ + x² − 12 = 0 da t = 3 dan ildizlar ±√3, ular ±2 emas. Javob: x⁴ − x² − 12 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bikvadrat-tuzish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#d409e0b1"
+    },
+    {
+      "q": "Zebo kvadrat shaklidagi gilam sotib oldi. Gilam yuzasi S m² bo'lib, S² − 25S + 144 = 0 sharti bajariladi. Gilamning tomoni necha metr bo'lishi mumkin?",
+      "v": [
+        "9 m yoki 16 m",
+        "3 m yoki 4 m",
+        "5 m yoki 12 m",
+        "faqat 4 m"
+      ],
+      "t": 1,
+      "izoh": "Avval yuzani topamiz: S² − 25S + 144 = 0, D = 625 − 576 = 49, √D = 7, S₁ = 16, S₂ = 9. Gilam kvadrat bo'lgani uchun tomoni √S ga teng: √16 = 4 va √9 = 3. Javob: 3 m yoki 4 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-kontekst",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#cac08b71"
+    },
+    {
+      "q": "Usta Nodir ikki xil o'lchamdagi kvadrat plitka ishlatadi. Plitka tomoni x sm bo'lib, x⁴ − 97x² + 1296 = 0 tenglamani qanoatlantiradi. Plitkalar tomonini toping.",
+      "v": [
+        "16 sm va 81 sm",
+        "2 sm va 3 sm",
+        "4 sm va 9 sm",
+        "faqat 9 sm"
+      ],
+      "t": 2,
+      "izoh": "t = x² bo'lsin: t² − 97t + 1296 = 0. D = 9409 − 5184 = 4225, √D = 65. t₁ = (97 + 65)/2 = 81, t₂ = (97 − 65)/2 = 16. Tomon musbat bo'lgani uchun x = √81 = 9 va x = √16 = 4. Javob: 4 sm va 9 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-kontekst",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#6dcd5edd"
+    },
+    {
+      "q": "Dilshodning bog'ida ikkita kvadrat shaklidagi gulzor bor. Ularning tomonlari x metrdan bo'lib, x⁴ − 26x² + 25 = 0 tenglamani qanoatlantiradi. Gulzorlar tomonini toping.",
+      "v": [
+        "1 m va 25 m",
+        "5 m va 25 m",
+        "1 m va 5 m",
+        "faqat 5 m"
+      ],
+      "t": 2,
+      "izoh": "t = x² almashtirishdan t² − 26t + 25 = 0 hosil bo'ladi, D = 676 − 100 = 576, √D = 24. Demak t₁ = 25, t₂ = 1. Tomon uzunligi musbat bo'lgani uchun x = √25 = 5 va x = √1 = 1. Javob: 1 m va 5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-kontekst",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#706365f2"
+    },
+    {
+      "q": "Anvar ikkita kvadrat xona gilamini o'lchadi. Ularning yuzalari yig'indisi 61 m², yuzalarining ko'paytmasi esa 900 ga teng. Xonalar tomonini aniqlang.",
+      "v": [
+        "36 m va 25 m",
+        "6 m va 5 m",
+        "30 m va 30 m",
+        "√61 m va 30 m"
+      ],
+      "t": 1,
+      "izoh": "Tomonlar a va b bo'lsin, u holda a² + b² = 61 va a²·b² = 900. a² va b² ni yangi o'zgaruvchi deb qarasak, ular t² − 61t + 900 = 0 tenglamaning ildizlari. D = 3721 − 3600 = 121, √D = 11, t₁ = 36, t₂ = 25. Demak a = 6, b = 5. Javob: 6 m va 5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bikvadrat-kontekst",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#3ff98c9a"
+    },
+    {
+      "q": "Rassom ikki xil kvadrat ramka yasadi. Ramkaning tomoni x sm bo'lib, x⁴ − 113x² + 3136 = 0 tenglamani qanoatlantiradi. Ramkalar tomonini aniqlang.",
+      "v": [
+        "49 sm va 64 sm",
+        "56 sm va 56 sm",
+        "faqat 8 sm",
+        "7 sm va 8 sm"
+      ],
+      "t": 3,
+      "izoh": "t = x² deb olamiz: t² − 113t + 3136 = 0. D = 12769 − 12544 = 225, √D = 15. t₁ = (113 + 15)/2 = 64, t₂ = (113 − 15)/2 = 49. Tomon musbat, shuning uchun x = √64 = 8 va x = √49 = 7. Javob: 7 sm va 8 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bikvadrat-kontekst",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#690ec3a9"
+    },
+    {
+      "q": "(x² − 2x)² − 2(x² − 2x) − 3 = 0 tenglamaning barcha haqiqiy ildizlari yig'indisini toping.",
+      "v": [
+        "2",
+        "3",
+        "−1",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "u = x² − 2x deb belgilaymiz: u² − 2u − 3 = 0, ildizlari u₁ = 3, u₂ = −1. u = 3 dan x² − 2x − 3 = 0, ya'ni x = 3 va x = −1. u = −1 dan x² − 2x + 1 = 0, ya'ni x = 1. Barcha ildizlar 3, −1, 1 bo'lib, yig'indisi 3 ga teng. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-uchhad-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#c4f993e5"
+    },
+    {
+      "q": "(x² + x)² − 8(x² + x) + 12 = 0 tenglama ildizlarining ko'paytmasi nechaga teng?",
+      "v": [
+        "12",
+        "−12",
+        "6",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "u = x² + x kiritamiz: u² − 8u + 12 = 0, bundan u₁ = 2, u₂ = 6. u = 2 dan x² + x − 2 = 0, ildizlari 1 va −2. u = 6 dan x² + x − 6 = 0, ildizlari 2 va −3. Ko'paytma 1·(−2)·2·(−3) = 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-uchhad-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#899739d6"
+    },
+    {
+      "q": "(x² − 4x)² + 3(x² − 4x) − 18 = 0 tenglamaning haqiqiy ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "8",
+        "3",
+        "−6",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "u = x² − 4x bo'lsin: u² + 3u − 18 = 0, D = 9 + 72 = 81, u₁ = 3, u₂ = −6. u = 3 dan x² − 4x − 3 = 0, bu tenglamada D = 28 > 0 va ildizlar yig'indisi 4. u = −6 dan x² − 4x + 6 = 0, bunda D = 16 − 24 < 0, haqiqiy ildiz yo'q. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-uchhad-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#133e00db"
+    },
+    {
+      "q": "(x² + 3x)² = 2(x² + 3x) + 8 tenglamaning eng katta haqiqiy ildizini aniqlang.",
+      "v": [
+        "−4",
+        "1",
+        "−1",
+        "−2"
+      ],
+      "t": 1,
+      "izoh": "u = x² + 3x deb olamiz: u² − 2u − 8 = 0, ildizlari u₁ = 4, u₂ = −2. u = 4 dan x² + 3x − 4 = 0, ildizlari 1 va −4. u = −2 dan x² + 3x + 2 = 0, ildizlari −1 va −2. To'rt ildiz ichida eng kattasi 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-uchhad-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#cf6c9c68"
+    },
+    {
+      "q": "(x² − 5x + 2)(x² − 5x − 4) = 16 tenglamaning barcha ildizlari yig'indisini hisoblang.",
+      "v": [
+        "2",
+        "5",
+        "10",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Ikkala qavsda ham x² − 5x takrorlanadi, shuning uchun u = x² − 5x deymiz. (u + 2)(u − 4) = 16, ya'ni u² − 2u − 24 = 0, bundan u₁ = 6, u₂ = −4. u = 6 dan x² − 5x − 6 = 0, ildizlari 6 va −1. u = −4 dan x² − 5x + 4 = 0, ildizlari 1 va 4. Yig'indi 6 − 1 + 1 + 4 = 10. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-uchhad-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#591950cf"
+    },
+    {
+      "q": "x + 1/x = 4 bo'lsa, x² + 1/x² ifodaning qiymati nechaga teng?",
+      "v": [
+        "16",
+        "18",
+        "12",
+        "14"
+      ],
+      "t": 3,
+      "izoh": "Ifodani kvadratga ko'taramiz: (x + 1/x)² = x² + 2·x·(1/x) + 1/x² = x² + 1/x² + 2. Demak x² + 1/x² = (x + 1/x)² − 2. Qiymatni qo'yamiz: 4² − 2 = 16 − 2 = 14. Javob: 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-yigindi-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#caf64513"
+    },
+    {
+      "q": "Musbat x son uchun x² + 1/x² = 23 bo'lsa, x + 1/x yig'indining musbat qiymatini toping.",
+      "v": [
+        "25",
+        "21",
+        "5",
+        "√23"
+      ],
+      "t": 2,
+      "izoh": "t = x + 1/x deb belgilaymiz, u holda x² + 1/x² = t² − 2. Shartga ko'ra t² − 2 = 23, ya'ni t² = 25. x musbat bo'lgani uchun t ham musbat, demak t = 5. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-yigindi-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#345c46bb"
+    },
+    {
+      "q": "x − 1/x = 3 shart berilgan. Shu shartda x² + 1/x² ifoda qanday qiymat qabul qiladi?",
+      "v": [
+        "7",
+        "9",
+        "11",
+        "13"
+      ],
+      "t": 2,
+      "izoh": "Ayirmani kvadratga ko'taramiz: (x − 1/x)² = x² − 2 + 1/x². Demak x² + 1/x² = (x − 1/x)² + 2. Qiymatni qo'ysak 3² + 2 = 9 + 2 = 11. Ayirma bo'lgani uchun 2 qo'shiladi, ayirilmaydi. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-yigindi-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#65b7d02e"
+    },
+    {
+      "q": "x + 1/x = 3 bo'lsa, x³ + 1/x³ ifodaning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "27",
+        "24",
+        "9",
+        "18"
+      ],
+      "t": 3,
+      "izoh": "Kub formulasini yozamiz: (x + 1/x)³ = x³ + 1/x³ + 3(x + 1/x). Demak x³ + 1/x³ = t³ − 3t, bunda t = 3. Hisoblaymiz: 27 − 9 = 18. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-yigindi-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#3cf24105"
+    },
+    {
+      "q": "Nodira o'ylagan musbat sonning o'zi bilan uning teskarisi yig'indisi 5 ga teng. Shu sonning kvadrati bilan teskarisi kvadratining yig'indisini toping.",
+      "v": [
+        "25",
+        "27",
+        "23",
+        "21"
+      ],
+      "t": 2,
+      "izoh": "Son x bo'lsin, shart x + 1/x = 5. Ikkala tomonni kvadratga ko'taramiz: x² + 2 + 1/x² = 25. Bundan x² + 1/x² = 25 − 2 = 23. Kvadratga ko'tarishda hosil bo'lgan 2 ni ayirish esdan chiqmasligi kerak. Javob: 23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-yigindi-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#ee01d885"
+    },
+    {
+      "q": "x − 5√x + 6 = 0 tenglamaning ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "5",
+        "13",
+        "6",
+        "36"
+      ],
+      "t": 1,
+      "izoh": "t = √x deb olamiz, bunda t ≥ 0 va x = t². Tenglama t² − 5t + 6 = 0 ko'rinishga keladi, ildizlari t₁ = 2, t₂ = 3. Endi x = 2² = 4 va x = 3² = 9. Yig'indi 4 + 9 = 13. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#724e0510"
+    },
+    {
+      "q": "x − 7√x + 10 = 0 tenglamaning barcha ildizlarini ko'rsating.",
+      "v": [
+        "2 va 5",
+        "4 va 5",
+        "2 va 25",
+        "4 va 25"
+      ],
+      "t": 3,
+      "izoh": "t = √x almashtirishdan t² − 7t + 10 = 0 kelib chiqadi, ildizlari t₁ = 2, t₂ = 5. Bu qiymatlar √x ga tegishli, shuning uchun x ni topish uchun kvadratga ko'tariladi: x = 4 va x = 25. Javob: 4 va 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#6ad97ff9"
+    },
+    {
+      "q": "x + 3√x − 10 = 0 tenglamaning haqiqiy ildizini yoki ildizlarini toping.",
+      "v": [
+        "4 va 25",
+        "4",
+        "2",
+        "Ildizi yo'q"
+      ],
+      "t": 1,
+      "izoh": "t = √x bo'lsin, t ≥ 0. Tenglama t² + 3t − 10 = 0, D = 9 + 40 = 49, t₁ = 2, t₂ = −5. Manfiy qiymat yaramaydi, chunki √x manfiy bo'lmaydi. t = 2 dan x = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#309c4f5d"
+    },
+    {
+      "q": "Omborda x ta quti bor. Nazoratchining hisobiga ko'ra x − 12√x + 32 = 0 munosabat o'rinli. Qutilar soni nechta bo'lishi mumkin?",
+      "v": [
+        "4 yoki 8",
+        "8 yoki 16",
+        "32 yoki 64",
+        "16 yoki 64"
+      ],
+      "t": 3,
+      "izoh": "t = √x deb olamiz: t² − 12t + 32 = 0, D = 144 − 128 = 16, √D = 4. Demak t₁ = 8, t₂ = 4. Qutilar soni x = t² bo'lgani uchun x = 64 yoki x = 16. Javob: 16 yoki 64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#98d5fef0"
+    },
+    {
+      "q": "4^x − 5·2^x + 4 = 0 tenglamani yangi o'zgaruvchi kiritish usuli bilan yeching.",
+      "v": [
+        "0 va 2",
+        "1 va 4",
+        "2 va 4",
+        "0 va 1"
+      ],
+      "t": 0,
+      "izoh": "2^x = t deb belgilaymiz, bunda t > 0, va 4^x = (2^x)² = t² ekanini hisobga olamiz. Tenglama t² − 5t + 4 = 0 ko'rinishga keladi, ildizlari t₁ = 1, t₂ = 4. 2^x = 1 dan x = 0, 2^x = 4 dan x = 2. Javob: 0 va 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#31043256"
+    },
+    {
+      "q": "9^x − 4·3^x + 3 = 0 tenglamaning ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "4",
+        "3",
+        "1",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "t = 3^x (t > 0) deb olamiz, 9^x = t². Tenglama t² − 4t + 3 = 0 ko'rinishida bo'ladi, ildizlari t₁ = 1, t₂ = 3. 3^x = 1 dan x = 0, 3^x = 3 dan x = 1. Ildizlar yig'indisi 0 + 1 = 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "korsatkichli-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#d3a6b43f"
+    },
+    {
+      "q": "2^(2x) − 10·2^x + 16 = 0 tenglamaning eng katta ildizini aniqlang.",
+      "v": [
+        "3",
+        "8",
+        "2",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "2^(2x) = (2^x)² ekanini hisobga olib t = 2^x deymiz. Tenglama t² − 10t + 16 = 0, D = 100 − 64 = 36, √D = 6, t₁ = 8, t₂ = 2. 2^x = 8 dan x = 3, 2^x = 2 dan x = 1. Eng katta ildiz 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#586a8879"
+    },
+    {
+      "q": "Tadqiqotchi Malika bakteriya o'sishini o'rganmoqda va 4^x + 2^x = 20 munosabatga duch keldi. Bunda x necha soatga teng?",
+      "v": [
+        "2",
+        "4",
+        "5",
+        "Yechimi yo'q"
+      ],
+      "t": 0,
+      "izoh": "t = 2^x deb belgilaymiz, bunda t > 0 va 4^x = t². Tenglama t² + t − 20 = 0 ko'rinishga keladi, D = 1 + 80 = 81, √D = 9, t₁ = 4, t₂ = −5. Manfiy qiymat yaramaydi, chunki daraja musbat. 2^x = 4 dan x = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#9d955a3b"
+    },
+    {
+      "q": "3^(2x) − 12·3^x + 27 = 0 tenglamaning ildizlari yig'indisi qanday qiymatga ega?",
+      "v": [
+        "12",
+        "3",
+        "9",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "3^(2x) = (3^x)² bo'lgani uchun t = 3^x deymiz. Tenglama t² − 12t + 27 = 0, D = 144 − 108 = 36, √D = 6, t₁ = 9, t₂ = 3. 3^x = 9 dan x = 2, 3^x = 3 dan x = 1. Ildizlar yig'indisi 2 + 1 = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "korsatkichli-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#db168b85"
+    },
+    {
+      "q": "x² − 5|x| + 6 = 0 tenglama nechta haqiqiy ildizga ega bo'ladi?",
+      "v": [
+        "4 ta",
+        "2 ta",
+        "3 ta",
+        "Ildizi yo'q"
+      ],
+      "t": 0,
+      "izoh": "x² = |x|² ekanini hisobga olib t = |x| deymiz, bunda t ≥ 0. Tenglama t² − 5t + 6 = 0, ildizlari t₁ = 2, t₂ = 3. |x| = 2 dan x = ±2, |x| = 3 dan x = ±3. Jami to'rtta ildiz. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modulli-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#ca1eb701"
+    },
+    {
+      "q": "x² − 2|x| − 8 = 0 tenglamaning barcha haqiqiy ildizlarini toping.",
+      "v": [
+        "±4 va ±2",
+        "4",
+        "±4",
+        "±2"
+      ],
+      "t": 2,
+      "izoh": "t = |x| ≥ 0 almashtirishdan t² − 2t − 8 = 0 kelib chiqadi, D = 4 + 32 = 36, t₁ = 4, t₂ = −2. Modul manfiy bo'lmagani uchun t = −2 yaramaydi. |x| = 4 dan x = 4 va x = −4. Javob: ±4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modulli-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#993f0b20"
+    },
+    {
+      "q": "x² + 3|x| − 10 = 0 tenglamaning ildizlari ko'paytmasi nechaga teng?",
+      "v": [
+        "4",
+        "2",
+        "−10",
+        "−4"
+      ],
+      "t": 3,
+      "izoh": "t = |x| deb olamiz: t² + 3t − 10 = 0, D = 9 + 40 = 49, t₁ = 2, t₂ = −5. Modul manfiy bo'lmagani uchun faqat t = 2 qoladi, ya'ni x = 2 va x = −2. Ko'paytma 2·(−2) = −4. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#7d65816a"
+    },
+    {
+      "q": "Meteorolog Kamola havo haroratining me'yordan chetlanishi x uchun x² − 7|x| + 12 = 0 munosabatni oldi. Chetlanish qanday qiymatlarni qabul qilishi mumkin?",
+      "v": [
+        "3 va 4",
+        "±3 va ±4",
+        "±7 va ±12",
+        "±3 va ±7"
+      ],
+      "t": 1,
+      "izoh": "t = |x| deb belgilaymiz: t² − 7t + 12 = 0, ildizlari t₁ = 3, t₂ = 4. Ikkalasi ham musbat, shuning uchun ikkalasi ham yaraydi. |x| = 3 dan x = ±3, |x| = 4 dan x = ±4. Harorat me'yordan yuqori ham, past ham bo'lishi mumkin. Javob: ±3 va ±4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modulli-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#a54bda2a"
+    },
+    {
+      "q": "2x⁴ − 5x³ + 6x² − 5x + 2 = 0 qaytma tenglamaning haqiqiy ildizini toping.",
+      "v": [
+        "1",
+        "1 va 2",
+        "2 va 1/2",
+        "−1"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsientlar simmetrik, shuning uchun ikkala tomonni x² ga bo'lamiz: 2(x² + 1/x²) − 5(x + 1/x) + 6 = 0. t = x + 1/x bo'lsa x² + 1/x² = t² − 2, demak 2t² − 5t + 2 = 0. Bundan t₁ = 2, t₂ = 1/2. t = 2 dan x² − 2x + 1 = 0, ya'ni x = 1. t = 1/2 dan 2x² − x + 2 = 0, D = −15 < 0, haqiqiy ildiz yo'q. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qaytma-tenglama-yechish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#84777581"
+    },
+    {
+      "q": "x⁴ − 5x³ + 8x² − 5x + 1 = 0 tenglamaning bir-biridan farqli barcha haqiqiy ildizlari yig'indisini hisoblang.",
+      "v": [
+        "5",
+        "3",
+        "1",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Tenglama qaytma, x = 0 ildiz emas, shuning uchun x² ga bo'lamiz: (x² + 1/x²) − 5(x + 1/x) + 8 = 0. t = x + 1/x bilan t² − 2 − 5t + 8 = 0, ya'ni t² − 5t + 6 = 0, t₁ = 2, t₂ = 3. t = 2 dan x² − 2x + 1 = 0, ya'ni x = 1 — bu ikki karrali ildiz, farqli ildiz sifatida bir marta hisoblanadi. t = 3 dan x² − 3x + 1 = 0, D = 5 > 0 va uning ildizlari yig'indisi 3. Jami 1 + 3 = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qaytma-tenglama-yechish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#6a698203"
+    },
+    {
+      "q": "6x⁴ − 35x³ + 62x² − 35x + 6 = 0 tenglamaning barcha ildizlari qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "10/3 va 5/2",
+        "3 va 2",
+        "1/3, 1/2, 2 va 3",
+        "1/3 va 3"
+      ],
+      "t": 2,
+      "izoh": "Qaytma tenglamani x² ga bo'lamiz: 6(x² + 1/x²) − 35(x + 1/x) + 62 = 0. t = x + 1/x bilan 6t² − 35t + 50 = 0, D = 1225 − 1200 = 25, t₁ = 10/3, t₂ = 5/2. t = 10/3 dan 3x² − 10x + 3 = 0, ildizlari 3 va 1/3. t = 5/2 dan 2x² − 5x + 2 = 0, ildizlari 2 va 1/2. Javob: 1/3, 1/2, 2 va 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qaytma-tenglama-yechish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#8182052b"
+    },
+    {
+      "q": "x⁴ + 4x³ − 10x² + 4x + 1 = 0 tenglamaning bir-biridan farqli haqiqiy ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "−4",
+        "−5",
+        "5",
+        "−2"
+      ],
+      "t": 1,
+      "izoh": "Qaytma tenglamani x² ga bo'lsak (x² + 1/x²) + 4(x + 1/x) − 10 = 0. t = x + 1/x bilan t² − 2 + 4t − 10 = 0, ya'ni t² + 4t − 12 = 0, t₁ = 2, t₂ = −6. t = 2 dan x² − 2x + 1 = 0, ya'ni x = 1 — ikki karrali ildiz, u faqat bir marta hisoblanadi. t = −6 dan x² + 6x + 1 = 0, D = 32 > 0 va ildizlari yig'indisi −6. Jami 1 + (−6) = −5. Javob: −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qaytma-tenglama-yechish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#843cdd73"
+    },
+    {
+      "q": "x⁴ − 3x³ + 4x² − 3x + 1 = 0 tenglamaning haqiqiy ildizlari haqida qaysi fikr to'g'ri?",
+      "v": [
+        "Bitta bir-biridan farqli haqiqiy ildizi bor",
+        "Ikkita bir-biridan farqli haqiqiy ildizi bor",
+        "To'rtta bir-biridan farqli haqiqiy ildizi bor",
+        "Haqiqiy ildizi umuman yo'q"
+      ],
+      "t": 0,
+      "izoh": "Tenglama qaytma, x² ga bo'lamiz: (x² + 1/x²) − 3(x + 1/x) + 4 = 0. t = x + 1/x bilan t² − 3t + 2 = 0, t₁ = 1, t₂ = 2. t = 1 dan x² − x + 1 = 0, D = −3 < 0, ildiz yo'q. t = 2 dan x² − 2x + 1 = 0, ya'ni x = 1. Ko'phad (x − 1)²(x² − x + 1) ga ajraladi, demak x = 1 ikki karrali ildiz, lekin farqli ildiz sifatida bittagina sanaladi. Javob: bitta bir-biridan farqli haqiqiy ildizi bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qaytma-tenglama-yechish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#e4675669"
+    },
+    {
+      "q": "Quyidagi tenglamalardan qaysi biri qaytma (simmetrik) tenglama hisoblanadi?",
+      "v": [
+        "x⁴ − 3x³ + 5x² − 3x + 1 = 0",
+        "x⁴ − 3x³ + 5x² + 3x + 1 = 0",
+        "x⁴ − 3x³ + 5x² − 3x + 2 = 0",
+        "2x⁴ − 3x³ + 5x² − 3x + 1 = 0"
+      ],
+      "t": 0,
+      "izoh": "Qaytma tenglamada teng uzoqlikdagi koeffitsientlar bir xil bo'ladi. x⁴ − 3x³ + 5x² − 3x + 1 = 0 da koeffitsientlar 1, −3, 5, −3, 1 — chetdagilari 1 va 1, ulardan keyingilari −3 va −3, demak bu qaytma tenglama. x⁴ − 3x³ + 5x² + 3x + 1 = 0 da x³ oldida −3, x oldida esa +3 turibdi, ishoralar mos emas. x⁴ − 3x³ + 5x² − 3x + 2 = 0 va 2x⁴ − 3x³ + 5x² − 3x + 1 = 0 tenglamalarda chet koeffitsientlar 1 va 2 bo'lib teng emas. Javob: x⁴ − 3x³ + 5x² − 3x + 1 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qaytma-tenglamani-aniqlash",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#7d4e1556"
+    },
+    {
+      "q": "ax⁴ + bx³ + cx² + dx + e = 0 tenglama qaytma bo'lishi uchun koeffitsientlar qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a = b va d = e",
+        "a = −e va b = −d",
+        "a = e va b = d",
+        "a = c va b = e"
+      ],
+      "t": 2,
+      "izoh": "Qaytma tenglamada chetdan bir xil uzoqlikda turgan koeffitsientlar tengdir. Chetdagilari a va e, ulardan keyingilari b va d. Demak a = e hamda b = d shart bajarilishi kerak, c esa ixtiyoriy bo'ladi. Javob: a = e va b = d.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qaytma-tenglamani-aniqlash",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#b151dda6"
+    },
+    {
+      "q": "To'rtinchi darajali qaytma tenglamani t = x + 1/x almashtirishga keltirish uchun uning ikkala tomonini nimaga bo'lish kerak?",
+      "v": [
+        "x",
+        "x²",
+        "x³",
+        "x⁴"
+      ],
+      "t": 1,
+      "izoh": "Almashtirish x + 1/x ko'rinishida bo'lgani uchun tenglamada x² va 1/x² hadlari paydo bo'lishi kerak. x⁴ ni x² ga bo'lsak x², erkin hadni x² ga bo'lsak 1/x² chiqadi — aynan kerakli ko'rinish. x yoki x³ ga bo'lish simmetriyani buzadi. Javob: x².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qaytma-tenglamani-aniqlash",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#b442ff42"
+    },
+    {
+      "q": "Qaytma tenglamaning ildizlari haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Har bir x₀ ildiz bilan birga −x₀ ham ildiz bo'ladi",
+        "Barcha ildizlari butun son bo'ladi",
+        "Ildizlari yig'indisi doim nolga teng",
+        "Har bir x₀ ildiz bilan birga 1/x₀ ham ildiz bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Qaytma tenglamada koeffitsientlar simmetrik bo'lgani uchun x o'rniga 1/x qo'yilsa, tenglama x⁴ ga ko'paytirilgandan keyin o'ziga aylanadi. Shuning uchun x₀ ildiz bo'lsa, 1/x₀ ham albatta ildiz bo'ladi. Masalan 2 ildiz bo'lsa, 1/2 ham ildiz. Javob: har bir x₀ ildiz bilan birga 1/x₀ ham ildiz bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qaytma-tenglamani-aniqlash",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#77dbe29a"
+    },
+    {
+      "q": "ax⁴ − 7x³ + 9x² − 7x + 2 = 0 tenglama qaytma bo'lishi uchun a koeffitsient nechaga teng bo'lishi kerak?",
+      "v": [
+        "1",
+        "2",
+        "7",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Qaytma tenglamada chetdagi koeffitsientlar teng bo'lishi kerak. Erkin had 2 ga teng, demak x⁴ oldidagi a ham 2 bo'lishi shart. Qolgan koeffitsientlar −7 va −7 allaqachon mos. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qaytma-koeffitsient",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#8e54b21b"
+    },
+    {
+      "q": "x⁴ + bx³ + 6x² + 4x + 1 = 0 tenglama qaytma bo'lishi uchun b qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "1",
+        "6",
+        "−4",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Qaytma tenglamada x³ oldidagi koeffitsient x oldidagi koeffitsientga teng bo'ladi. Bu yerda x oldida 4 turibdi, demak b = 4. Chetdagi koeffitsientlar 1 va 1 bo'lib, ular allaqachon teng. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qaytma-koeffitsient",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#64e88ba9"
+    },
+    {
+      "q": "3x⁴ − 8x³ + cx² − 8x + 3 = 0 qaytma tenglama x = 1 ni ildiz sifatida qabul qilsa, c nechaga teng?",
+      "v": [
+        "10",
+        "6",
+        "−10",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "x = 1 ni tenglamaga qo'yamiz: 3 − 8 + c − 8 + 3 = 0. Sonlarni yig'sak c − 10 = 0 hosil bo'ladi. Demak c = 10. Tekshirish: 3 − 8 + 10 − 8 + 3 = 0, to'g'ri. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qaytma-koeffitsient",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#74d77f09"
+    },
+    {
+      "q": "Qaytma tenglama 2x⁴ + mx³ − 3x² + mx + 2 = 0 ko'rinishda berilgan. Uning ildizlaridan biri x = −1 bo'lsa, m ni toping.",
+      "v": [
+        "2",
+        "−1/2",
+        "1/2",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "x = −1 ni qo'yamiz: 2·1 + m·(−1) − 3·1 + m·(−1) + 2 = 0. Soddalashtirsak 2 − m − 3 − m + 2 = 0, ya'ni 1 − 2m = 0. Bundan m = 1/2. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qaytma-koeffitsient",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#851597f8"
+    },
+    {
+      "q": "Talaba Jasur daftariga qaytma tenglama yozmoqchi: kx⁴ − 9x³ + 11x² − 9x + 4 = 0. k ning qiymati qanday bo'lishi kerak?",
+      "v": [
+        "9",
+        "11",
+        "1",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Qaytma tenglamada birinchi va oxirgi koeffitsientlar teng bo'ladi. Oxirgi koeffitsient 4 ga teng, demak k = 4. x³ va x oldidagi koeffitsientlar −9 va −9 bo'lib, shart allaqachon bajarilgan. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qaytma-koeffitsient",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#90464f3d"
+    },
+    {
+      "q": "(x + 1)(x + 2)(x + 3)(x + 4) = 24 tenglamaning barcha haqiqiy ildizlarini toping.",
+      "v": [
+        "−1 va −4",
+        "0 va −5",
+        "0 va 5",
+        "−2 va −3"
+      ],
+      "t": 1,
+      "izoh": "Ozod hadlari yig'indisi teng bo'lgan qavslarni juftlaymiz: 1 + 4 = 2 + 3. (x + 1)(x + 4) = x² + 5x + 4 va (x + 2)(x + 3) = x² + 5x + 6. u = x² + 5x + 4 desak, u(u + 2) = 24, ya'ni u² + 2u − 24 = 0, u₁ = 4, u₂ = −6. u = 4 dan x² + 5x = 0, ya'ni x = 0 va x = −5. u = −6 dan x² + 5x + 10 = 0, D = −15 < 0. Javob: 0 va −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortlik-guruhlash",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#d5d75156"
+    },
+    {
+      "q": "(x − 1)(x − 3)(x − 5)(x − 7) = 9 tenglamaning bir-biridan farqli barcha haqiqiy ildizlari yig'indisini hisoblang.",
+      "v": [
+        "8",
+        "16",
+        "12",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Juftlashda chetdagilarni birlashtiramiz, chunki 1 + 7 = 3 + 5. (x − 1)(x − 7) = x² − 8x + 7, (x − 3)(x − 5) = x² − 8x + 15. u = x² − 8x + 7 bilan u(u + 8) = 9, ya'ni u² + 8u − 9 = 0, u₁ = 1, u₂ = −9. u = 1 dan x² − 8x + 6 = 0, D = 40 > 0, ildizlari yig'indisi 8. u = −9 dan (x − 4)² = 0, ya'ni x = 4 — bu ikki karrali ildiz, shuning uchun yig'indida bir marta hisoblanadi. Jami 8 + 4 = 12. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tortlik-guruhlash",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#9c99fdef"
+    },
+    {
+      "q": "(x + 2)(x + 3)(x + 4)(x + 5) = 360 tenglama ildizlarining ko'paytmasi nechaga teng?",
+      "v": [
+        "8",
+        "−8",
+        "−7",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "2 + 5 = 3 + 4 bo'lgani uchun (x + 2)(x + 5) = x² + 7x + 10 va (x + 3)(x + 4) = x² + 7x + 12 juftlanadi. u = x² + 7x + 10 bilan u(u + 2) = 360, ya'ni u² + 2u − 360 = 0, D = 1444, u₁ = 18, u₂ = −20. u = 18 dan x² + 7x − 8 = 0, ildizlari 1 va −8. u = −20 dan x² + 7x + 30 = 0, D < 0. Ko'paytma 1·(−8) = −8. Javob: −8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortlik-guruhlash",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#b71aff97"
+    },
+    {
+      "q": "(x − 2)(x − 4)(x − 6)(x − 8) = 105 tenglamaning eng katta haqiqiy ildizini aniqlang.",
+      "v": [
+        "9",
+        "8",
+        "7",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "2 + 8 = 4 + 6 bo'lgani uchun (x − 2)(x − 8) = x² − 10x + 16 va (x − 4)(x − 6) = x² − 10x + 24 juftlanadi. u = x² − 10x + 16 bilan u(u + 8) = 105, ya'ni u² + 8u − 105 = 0, D = 484, u₁ = 7, u₂ = −15. u = 7 dan x² − 10x + 9 = 0, ildizlari 1 va 9. u = −15 dan D < 0. Eng kattasi 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tortlik-guruhlash",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#8bff1088"
+    },
+    {
+      "q": "(x + 1)(x + 3)(x + 5)(x + 7) + 15 = 0 tenglama nechta haqiqiy ildizga ega?",
+      "v": [
+        "2 ta",
+        "4 ta",
+        "3 ta",
+        "Haqiqiy ildizi yo'q"
+      ],
+      "t": 1,
+      "izoh": "1 + 7 = 3 + 5 bo'lgani uchun (x + 1)(x + 7) = x² + 8x + 7 va (x + 3)(x + 5) = x² + 8x + 15 juftlanadi. u = x² + 8x + 7 bilan u(u + 8) + 15 = 0, ya'ni u² + 8u + 15 = 0, u₁ = −3, u₂ = −5. u = −3 dan x² + 8x + 10 = 0, D = 24 > 0, ikkita ildiz. u = −5 dan x² + 8x + 12 = 0, ildizlari −2 va −6. Jami to'rtta. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tortlik-guruhlash",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#9b2cd119"
+    },
+    {
+      "q": "(x + 1)(x + 3)(x + 5)(x + 7) = 9 tenglamani yechishda qavslarni qanday guruhlash kvadrat tenglamaga olib keladi?",
+      "v": [
+        "(x + 1)(x + 7) va (x + 3)(x + 5)",
+        "(x + 1)(x + 3) va (x + 5)(x + 7)",
+        "(x + 1)(x + 5) va (x + 3)(x + 7)",
+        "Bu tenglamani guruhlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Guruhlashda har juftdagi ozod hadlar yig'indisi teng bo'lishi kerak: 1 + 7 = 8 va 3 + 5 = 8. Shunda ikkala ko'paytmada ham x² + 8x qismi bir xil chiqadi va uni yangi o'zgaruvchi deb olish mumkin. Boshqa juftlashda x oldidagi koeffitsientlar har xil bo'lib qoladi. Javob: (x + 1)(x + 7) va (x + 3)(x + 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "guruhlash-almashtirishni-tanlash",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#385a9b8a"
+    },
+    {
+      "q": "(x + 2)(x + 4)(x + 6)(x + 8) = m tenglamada (x + 2)(x + 8) va (x + 4)(x + 6) juftlansa, qanday yangi o'zgaruvchi kiritish qulay?",
+      "v": [
+        "t = x + 1/x",
+        "t = x² + 6x",
+        "t = x² + 10x",
+        "t = x²"
+      ],
+      "t": 2,
+      "izoh": "Qavslarni ochamiz: (x + 2)(x + 8) = x² + 10x + 16 va (x + 4)(x + 6) = x² + 10x + 24. Ikkala ifodada ham x² + 10x qismi takrorlanadi. Shuning uchun t = x² + 10x deb belgilash tenglamani (t + 16)(t + 24) = m ko'rinishiga keltiradi. Javob: t = x² + 10x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "guruhlash-almashtirishni-tanlash",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#5aeeef26"
+    },
+    {
+      "q": "(x + 1)(x + 2)(x + 3)(x + 4) = 24 tenglamada u = x² + 5x + 4 deb olinsa, u ga nisbatan qanday tenglama hosil bo'ladi?",
+      "v": [
+        "u² + 5u − 24 = 0",
+        "u² + 2u − 24 = 0",
+        "u² − 2u − 24 = 0",
+        "u² + 2u + 24 = 0"
+      ],
+      "t": 1,
+      "izoh": "(x + 1)(x + 4) = x² + 5x + 4 = u, (x + 2)(x + 3) = x² + 5x + 6 = u + 2. Demak tenglama u(u + 2) = 24 ko'rinishga keladi. Qavsni ochib hammasini bir tomonga o'tkazsak u² + 2u − 24 = 0. Javob: u² + 2u − 24 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "guruhlash-almashtirishni-tanlash",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#4061d872"
+    },
+    {
+      "q": "(x + a)(x + b)(x + c)(x + d) = m ko'rinishdagi tenglamani kvadrat tenglamaga keltirish uchun qavslar qanday shart bo'yicha juftlanadi?",
+      "v": [
+        "Har juftdagi sonlar ko'paytmasi o'zaro teng bo'lsin",
+        "Sonlar o'sish tartibida yonma-yon juftlanadi",
+        "Juftlash tartibi natijaga ta'sir qilmaydi",
+        "Har juftdagi sonlar yig'indisi o'zaro teng bo'lsin"
+      ],
+      "t": 3,
+      "izoh": "Ikki qavs ko'paytirilganda x oldidagi koeffitsient ozod hadlar yig'indisiga teng bo'ladi. Ikkala juftda bu yig'indi bir xil bo'lsagina, ko'paytmalarda x² + kx qismi bir xil chiqadi va uni yangi o'zgaruvchi deb olish mumkin. Masalan 1 + 4 = 2 + 3. Javob: har juftdagi sonlar yig'indisi o'zaro teng bo'lsin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "guruhlash-almashtirishni-tanlash",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#6e88f441"
+    },
+    {
+      "q": "Aziza to'rtta ketma-ket natural sonni ko'paytirib 120 ni hosil qildi. Bu sonlarning eng kichigi nechaga teng?",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Sonlar n, n + 1, n + 2, n + 3 bo'lsin. Chetdagilarni juftlaymiz: n(n + 3) = n² + 3n va (n + 1)(n + 2) = n² + 3n + 2. u = n² + 3n bilan u(u + 2) = 120, ya'ni u² + 2u − 120 = 0, u₁ = 10, u₂ = −12. u = 10 dan n² + 3n − 10 = 0, natural yechim n = 2. Tekshiramiz: 2·3·4·5 = 120. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "guruhlash-kontekst",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#5b0c4b92"
+    },
+    {
+      "q": "Sherzod to'rtta ketma-ket toq sonni ko'paytirib 945 sonini oldi. Bu sonlarning eng kattasini toping.",
+      "v": [
+        "7",
+        "9",
+        "11",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Sonlar n, n + 2, n + 4, n + 6 bo'lsin. n(n + 6) = n² + 6n, (n + 2)(n + 4) = n² + 6n + 8. u = n² + 6n bilan u(u + 8) = 945, ya'ni u² + 8u − 945 = 0, D = 3844, √D = 62, u₁ = 27. u = 27 dan n² + 6n − 27 = 0, musbat yechim n = 3. Sonlar 3, 5, 7, 9 bo'lib, eng kattasi 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "guruhlash-kontekst",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#06e10b04"
+    },
+    {
+      "q": "Zavodda to'rtta sex ketma-ket juft raqamlar bilan belgilangan. Raqamlar ko'paytmasi 1920 ga teng bo'lsa, ularning yig'indisini toping.",
+      "v": [
+        "20",
+        "28",
+        "24",
+        "32"
+      ],
+      "t": 1,
+      "izoh": "Raqamlar n, n + 2, n + 4, n + 6 bo'lsin. u = n² + 6n desak, u(u + 8) = 1920, ya'ni u² + 8u − 1920 = 0. D = 64 + 7680 = 7744, √D = 88, u₁ = 40. u = 40 dan n² + 6n − 40 = 0, musbat yechim n = 4. Sexlar 4, 6, 8, 10 bo'lib, yig'indi 28. Javob: 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "guruhlash-kontekst",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#1b10b258"
+    },
+    {
+      "q": "To'rtta ketma-ket natural son ko'paytmasiga 1 qo'shilsa, natija to'la kvadrat bo'ladi. 5·6·7·8 + 1 ifoda qaysi sonning kvadratiga teng?",
+      "v": [
+        "40",
+        "42",
+        "41",
+        "39"
+      ],
+      "t": 2,
+      "izoh": "Chetdagi sonlarni juftlaymiz: 5·8 = 40 va 6·7 = 42, ya'ni u = 40 va u + 2 = 42. Ifoda u(u + 2) + 1 = u² + 2u + 1 = (u + 1)² ko'rinishida. Demak natija (40 + 1)² = 41². Hisoblab ham tekshiramiz: 1680 + 1 = 1681 = 41². Javob: 41.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "guruhlash-kontekst",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#56c84819"
+    },
+    {
+      "q": "x⁴ − 13x² + 40 = 0 tenglamada t = x² almashtirish kiritildi. t ning qiymatlarini toping.",
+      "v": [
+        "5 va 8",
+        "√5 va √8",
+        "−5 va −8",
+        "4 va 9"
+      ],
+      "t": 0,
+      "izoh": "Almashtirishdan keyin t² − 13t + 40 = 0 hosil bo'ladi. D = 169 − 160 = 9, √D = 3, t₁ = (13 + 3)/2 = 8, t₂ = (13 − 3)/2 = 5. Ko'paytmasi 40, yig'indisi 13 bo'lgan sonlar aynan shular. Javob: 5 va 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "almashtirish-natijasi",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#505ab863"
+    },
+    {
+      "q": "(x² − 3x)² − 14(x² − 3x) + 40 = 0 tenglamada u = x² − 3x deb olindi. u qanday qiymatlarni qabul qiladi?",
+      "v": [
+        "14 va 40",
+        "5 va 8",
+        "−10 va −4",
+        "10 va 4"
+      ],
+      "t": 3,
+      "izoh": "Almashtirishdan keyin u² − 14u + 40 = 0 kelib chiqadi. D = 196 − 160 = 36, √D = 6. u₁ = (14 + 6)/2 = 10, u₂ = (14 − 6)/2 = 4. Ikkala qiymat ham yaraydi, chunki x² − 3x ifoda ixtiyoriy haqiqiy son bo'la oladi. Javob: 10 va 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "almashtirish-natijasi",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#2613bbb0"
+    },
+    {
+      "q": "x − 8√x + 15 = 0 tenglamada t = √x kiritilsa, t uchun qanday shart va qanday qiymatlar olinadi?",
+      "v": [
+        "t > 0 shart emas, t = ±3 va ±5",
+        "t ≥ 0, t = 3 va t = 5",
+        "t ≥ 0, t = 9 va t = 25",
+        "t ixtiyoriy, t = 8 va t = 15"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat ildiz manfiy qiymat bermaydi, shuning uchun t ≥ 0 sharti qo'yiladi. Tenglama t² − 8t + 15 = 0 ko'rinishga keladi, ildizlari t₁ = 3, t₂ = 5. Ikkalasi ham shartni qanoatlantiradi. 9 va 25 esa t emas, balki x ning qiymatlari. Javob: t ≥ 0, t = 3 va t = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-natijasi",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#e860763a"
+    },
+    {
+      "q": "4^x − 9·2^x + 8 = 0 tenglamada t = 2^x kiritilganda t ning qiymatlari qanday bo'ladi?",
+      "v": [
+        "0 va 3",
+        "−1 va −8",
+        "1 va 8",
+        "2 va 4"
+      ],
+      "t": 2,
+      "izoh": "4^x = (2^x)² bo'lgani uchun tenglama t² − 9t + 8 = 0 ko'rinishga keladi. Ildizlari t₁ = 1, t₂ = 8 bo'lib, ikkalasi ham musbat, ya'ni t > 0 shartini qanoatlantiradi. 0 va 3 esa t emas, x ning qiymatlari. Javob: 1 va 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "almashtirish-natijasi",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#f1b2e820"
+    },
+    {
+      "q": "2x⁴ − 9x³ + 14x² − 9x + 2 = 0 qaytma tenglamada t = x + 1/x kiritilsa, t uchun qanday tenglama hosil bo'ladi?",
+      "v": [
+        "2t² − 9t + 10 = 0",
+        "2t² − 9t + 14 = 0",
+        "2t² − 9t + 18 = 0",
+        "t² − 9t + 14 = 0"
+      ],
+      "t": 0,
+      "izoh": "Ikkala tomonni x² ga bo'lamiz: 2(x² + 1/x²) − 9(x + 1/x) + 14 = 0. x² + 1/x² = t² − 2 ekanini qo'yamiz: 2(t² − 2) − 9t + 14 = 0. Qavsni ochsak 2t² − 4 − 9t + 14 = 0, ya'ni 2t² − 9t + 10 = 0. Javob: 2t² − 9t + 10 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirish-natijasi",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#304b8dbf"
+    },
+    {
+      "q": "x⁴ + ax² + b = 0 bikvadrat tenglama to'rtta har xil haqiqiy ildizga ega bo'lishi uchun t = x² tenglamasining ildizlari qanday bo'lishi kerak?",
+      "v": [
+        "Ikkalasi ham har xil va musbat bo'lishi kerak",
+        "Ikkalasi ham manfiy bo'lishi kerak",
+        "Biri musbat, biri manfiy bo'lishi kerak",
+        "Ikkala ildiz o'zaro teng bo'lishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Har bir musbat t qiymati x² = t dan ikkita qarama-qarshi ildiz beradi. To'rtta har xil ildiz chiqishi uchun ikkita har xil musbat t kerak. Agar t manfiy bo'lsa ildiz bermaydi, t = 0 bo'lsa bitta ildiz beradi, teng ildizlar esa faqat ikkita x qiymatini beradi. Javob: ikkalasi ham har xil va musbat bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-sharti",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#e600e0d3"
+    },
+    {
+      "q": "t = x + 1/x almashtirishda x nolmas haqiqiy son bo'lsa, t qanday qiymatlarni qabul qila olmaydi?",
+      "v": [
+        "|t| ≥ 2 bo'lgan qiymatlarni",
+        "−2 < t < 2 oraliqdagi qiymatlarni",
+        "t > 0 bo'lgan barcha qiymatlarni",
+        "t butun bo'lmagan qiymatlarni"
+      ],
+      "t": 1,
+      "izoh": "x + 1/x = t tenglamani x² − tx + 1 = 0 ko'rinishida yozamiz. Haqiqiy x mavjud bo'lishi uchun D = t² − 4 ≥ 0 bo'lishi kerak, ya'ni |t| ≥ 2. Demak t ning −2 bilan 2 oralig'idagi qiymatlari mumkin emas. Javob: −2 < t < 2 oraliqdagi qiymatlarni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-sharti",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#f4648a28"
+    },
+    {
+      "q": "x⁴ − 8x² + m = 0 tenglama to'rtta har xil haqiqiy ildizga ega bo'lishi uchun m qanday oraliqda yotishi kerak?",
+      "v": [
+        "0 < m < 16",
+        "m < 16",
+        "m > 0",
+        "m > 16"
+      ],
+      "t": 0,
+      "izoh": "t = x² bilan t² − 8t + m = 0 hosil bo'ladi. To'rtta ildiz uchun bu tenglamaning ikkita har xil musbat ildizi kerak. D > 0 dan 64 − 4m > 0, ya'ni m < 16. Ildizlar ko'paytmasi m > 0 bo'lishi shart, yig'indisi 8 esa allaqachon musbat. Javob: 0 < m < 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-sharti",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#61b055f8"
+    },
+    {
+      "q": "x⁴ + px² + 4 = 0 tenglamaning birorta ham haqiqiy ildizi bo'lmasligi uchun p qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "p < 4",
+        "−4 < p < 4",
+        "p > 4",
+        "p > −4"
+      ],
+      "t": 3,
+      "izoh": "t = x² bilan t² + pt + 4 = 0. Ildizlar ko'paytmasi 4 > 0, demak t ning ildizlari bir xil ishorali. Agar D = p² − 16 < 0 bo'lsa, ya'ni −4 < p < 4, haqiqiy t yo'q. Agar D ≥ 0 va p > 0 bo'lsa, yig'indi −p < 0 bo'lgani uchun ikkala t manfiy va x topilmaydi. Ikkala holni birlashtirsak p > −4. Javob: p > −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-sharti",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#11f55183"
+    },
+    {
+      "q": "Talaba x − 6√x + c = 0 tenglamada c ni shunday tanlamoqchiki, tenglama ikkita har xil musbat ildizga ega bo'lsin. c qanday oraliqda bo'ladi?",
+      "v": [
+        "c < 9",
+        "c > 0",
+        "0 < c < 9",
+        "0 < c < 36"
+      ],
+      "t": 2,
+      "izoh": "t = √x ≥ 0 bilan t² − 6t + c = 0 hosil bo'ladi. Ikkita har xil musbat x uchun t ning ikkita har xil musbat ildizi kerak. D > 0 dan 36 − 4c > 0, ya'ni c < 9. Ko'paytma c > 0 bo'lishi shart, yig'indi 6 esa musbat. Javob: 0 < c < 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirish-sharti",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#e4f86be8"
+    },
+    {
+      "q": "x⁴ − 5x² + k = 0 tenglama faqat ikkita haqiqiy ildizga ega bo'lishi uchun k ning qaysi qiymati mos keladi?",
+      "v": [
+        "k = 4",
+        "k = 6",
+        "k = −6",
+        "k = 0"
+      ],
+      "t": 2,
+      "izoh": "t = x² bilan t² − 5t + k = 0. Faqat ikkita x ildiz bo'lishi uchun t ning aynan bitta musbat ildizi kerak, ya'ni ildizlar ko'paytmasi k manfiy bo'lsin. k = −6 da t² − 5t − 6 = 0, t₁ = 6, t₂ = −1, faqat t = 6 yaraydi va x = ±√6. k = 4 va k = 6 da ikkala t musbat, to'rtta ildiz chiqadi; k = 0 da esa uchta ildiz bo'ladi. Javob: k = −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-ildiz-soni",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#341d2c8f"
+    },
+    {
+      "q": "x⁴ − 4x² + a = 0 tenglama uchta haqiqiy ildizga ega bo'lishi uchun a nechaga teng bo'lishi kerak?",
+      "v": [
+        "4",
+        "−4",
+        "2",
+        "0"
+      ],
+      "t": 3,
+      "izoh": "Uchta ildiz faqat x = 0 ildiz bo'lganda paydo bo'ladi, ya'ni t = 0 ildiz bo'lishi kerak. t² − 4t + a = 0 da t = 0 ni qo'ysak a = 0. Bu holda t² − 4t = 0, t₁ = 0, t₂ = 4 va x = 0, x = 2, x = −2 — jami uchta ildiz. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-ildiz-soni",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#a32a5d08"
+    },
+    {
+      "q": "x⁴ + mx² + 9 = 0 tenglama to'rtta haqiqiy ildizga ega bo'lishi uchun m ning qaysi qiymati yaraydi?",
+      "v": [
+        "m = −10",
+        "m = 10",
+        "m = −6",
+        "m = 0"
+      ],
+      "t": 0,
+      "izoh": "t = x² bilan t² + mt + 9 = 0. To'rtta ildiz uchun ikkita har xil musbat t kerak: yig'indi −m > 0, ya'ni m < 0, va D = m² − 36 > 0. m = −10 da t² − 10t + 9 = 0, t₁ = 1, t₂ = 9, x = ±1 va x = ±3. m = 10 da ikkala t manfiy, m = −6 da t = 3 karrali, m = 0 da ildiz yo'q. Javob: m = −10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-ildiz-soni",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#4db1886b"
+    },
+    {
+      "q": "Muhandis Bekzod loyihasidagi x⁴ − 12x² + n = 0 tenglama to'rtta yechimga ega bo'lishini xohlaydi. n ning qaysi qiymati mos keladi?",
+      "v": [
+        "n = 40",
+        "n = −4",
+        "n = 36",
+        "n = 32"
+      ],
+      "t": 3,
+      "izoh": "t = x² bilan t² − 12t + n = 0. To'rtta yechim uchun ikkita har xil musbat t kerak, ya'ni D = 144 − 4n > 0 va n > 0, bundan 0 < n < 36. n = 32 shu oraliqda: t₁ = 8, t₂ = 4 va x = ±2√2, x = ±2. n = 40 da D < 0, n = 36 da t karrali, n = −4 da bitta t manfiy. Javob: n = 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-ildiz-soni",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#5b1e3e8a"
+    },
+    {
+      "q": "(x − 1)/(x + 1) + (x + 1)/(x − 1) = 5/2 tenglamaning haqiqiy ildizlarini toping.",
+      "v": [
+        "3 va −3",
+        "2 va 1/2",
+        "1 va −1",
+        "3 va 1/2"
+      ],
+      "t": 0,
+      "izoh": "t = (x − 1)/(x + 1) deb belgilaymiz, u holda ikkinchi kasr 1/t ga teng. Tenglama t + 1/t = 5/2, ya'ni 2t² − 5t + 2 = 0, bundan t₁ = 2, t₂ = 1/2. t = 2 dan x − 1 = 2x + 2, ya'ni x = −3. t = 1/2 dan 2x − 2 = x + 1, ya'ni x = 3. Javob: 3 va −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-ratsional-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#f43260d0"
+    },
+    {
+      "q": "x² + 1/x² − 3(x + 1/x) + 2 = 0 tenglamaning haqiqiy ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "0",
+        "−3",
+        "5",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "t = x + 1/x deb olamiz, bunda x² + 1/x² = t² − 2. Tenglama t² − 2 − 3t + 2 = 0, ya'ni t² − 3t = 0, bundan t₁ = 0, t₂ = 3. t = 0 dan x² + 1 = 0, haqiqiy ildiz yo'q. t = 3 dan x² − 3x + 1 = 0, D = 5 > 0 va ildizlari yig'indisi 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-ratsional-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#0a3e7d0f"
+    },
+    {
+      "q": "x² + x + 12/(x² + x) = 8 tenglamaning barcha haqiqiy ildizlari yig'indisini hisoblang.",
+      "v": [
+        "8",
+        "6",
+        "−2",
+        "−1"
+      ],
+      "t": 2,
+      "izoh": "y = x² + x deb belgilaymiz, bunda y ≠ 0. Tenglama y + 12/y = 8, ya'ni y² − 8y + 12 = 0, bundan y₁ = 6, y₂ = 2. y = 6 dan x² + x − 6 = 0, ildizlari 2 va −3. y = 2 dan x² + x − 2 = 0, ildizlari 1 va −2. Yig'indi 2 − 3 + 1 − 2 = −2. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-ratsional-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#ab9d6419"
+    },
+    {
+      "q": "(x² + 2x)/(x² + 2x + 3) + (x² + 2x + 3)/(x² + 2x) = 5/2 tenglamaning barcha haqiqiy ildizlari yig'indisini toping.",
+      "v": [
+        "−6",
+        "3",
+        "−3",
+        "−2"
+      ],
+      "t": 3,
+      "izoh": "y = x² + 2x deb belgilaymiz, shunda tenglama y/(y + 3) + (y + 3)/y = 5/2 ko'rinishga keladi. Ikkinchi kasr birinchisining teskarisi, shuning uchun t = y/(y + 3) bilan t + 1/t = 5/2, ya'ni 2t² − 5t + 2 = 0, bundan t₁ = 2, t₂ = 1/2. t = 2 dan y = 2(y + 3), ya'ni y = −6: x² + 2x + 6 = 0 da D = 4 − 24 < 0, haqiqiy ildiz yo'q. t = 1/2 dan 2y = y + 3, ya'ni y = 3: x² + 2x − 3 = 0, ildizlari 1 va −3. Yig'indi 1 + (−3) = −2. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-ratsional-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#36f444cb"
+    },
+    {
+      "q": "Nodir va Sanjar birgalikda ishni 6 soatda bajaradi. Nodir yolg'iz ishlaganda Sanjardan 5 soat kam vaqt sarflaydi. Nodir yolg'iz necha soatda bajaradi?",
+      "v": [
+        "10 soat",
+        "15 soat",
+        "12 soat",
+        "6 soat"
+      ],
+      "t": 0,
+      "izoh": "Nodirning vaqti x soat, Sanjarniki x + 5 soat bo'lsin. Bir soatlik ishlar yig'indisi 1/x + 1/(x + 5) = 1/6. Maxrajlarni yo'qotsak 6(x + 5) + 6x = x(x + 5), ya'ni 12x + 30 = x² + 5x. Kvadrat tenglama x² − 7x − 30 = 0, ildizlari 10 va −3. Vaqt musbat, demak x = 10. Javob: 10 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-ratsional-almashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#4814a7e8"
+    },
+    {
+      "q": "x⁴ − 11x² + 24 = 0 tenglamada t = x² almashtirilgach hosil bo'lgan tenglama ildizlarining yig'indisi va ko'paytmasi qanday?",
+      "v": [
+        "Yig'indi 11, ko'paytma 24",
+        "Yig'indi −11, ko'paytma 24",
+        "Yig'indi 24, ko'paytma 11",
+        "Yig'indi 11, ko'paytma −24"
+      ],
+      "t": 0,
+      "izoh": "Almashtirishdan keyin t² − 11t + 24 = 0 hosil bo'ladi. Viyet teoremasiga ko'ra ildizlar yig'indisi x oldidagi koeffitsientning qarama-qarshisiga, ya'ni 11 ga teng, ko'paytmasi esa ozod hadga, ya'ni 24 ga teng. Haqiqatan ham t₁ = 3 va t₂ = 8. Javob: yig'indi 11, ko'paytma 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "t-tenglama-tahlili",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#9c4be332"
+    },
+    {
+      "q": "x⁴ + px² + q = 0 bikvadrat tenglamaning to'rtta haqiqiy ildizi bo'lsa, ularning ko'paytmasi nimaga teng bo'ladi?",
+      "v": [
+        "−q",
+        "p",
+        "q",
+        "−p"
+      ],
+      "t": 2,
+      "izoh": "t = x² tenglamasining ildizlari t₁ va t₂ bo'lsin, u holda x ning ildizlari ±√t₁ va ±√t₂. Ularning ko'paytmasi (√t₁·(−√t₁))·(√t₂·(−√t₂)) = (−t₁)·(−t₂) = t₁·t₂. Viyet teoremasiga ko'ra t₁·t₂ = q. Javob: q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "t-tenglama-tahlili",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#a34cc4b8"
+    },
+    {
+      "q": "Bikvadrat tenglamada t = x² ga nisbatan t² − 9t + 20 = 0 hosil bo'ldi. Dastlabki tenglama ildizlari kvadratlarining yig'indisi nechaga teng?",
+      "v": [
+        "9",
+        "20",
+        "40",
+        "18"
+      ],
+      "t": 3,
+      "izoh": "t² − 9t + 20 = 0 dan t₁ = 4, t₂ = 5. Ildizlar ±√4 va ±√5, ya'ni har bir t qiymati ikkitadan ildiz beradi. Ildizlar kvadratlari 4, 4, 5, 5 bo'lib, yig'indisi 2·(4 + 5) = 18. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "t-tenglama-tahlili",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#fe8e47f3"
+    },
+    {
+      "q": "Qaytma tenglamada t = x + 1/x almashtirish natijasida 2t² − 7t + 3 = 0 hosil bo'ldi. t ning qaysi qiymati haqiqiy x beradi?",
+      "v": [
+        "Faqat t = 1/2",
+        "Ikkalasi ham haqiqiy x beradi",
+        "Faqat t = 3",
+        "Hech qaysisi haqiqiy x bermaydi"
+      ],
+      "t": 2,
+      "izoh": "2t² − 7t + 3 = 0 da D = 49 − 24 = 25, √D = 5, t₁ = 3, t₂ = 1/2. x + 1/x = t tenglamani x² − tx + 1 = 0 ko'rinishida yozamiz, haqiqiy x uchun t² − 4 ≥ 0, ya'ni |t| ≥ 2 kerak. t = 3 bu shartni bajaradi, t = 1/2 esa bajarmaydi. Javob: faqat t = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "t-tenglama-tahlili",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#9059cc5b"
+    },
+    {
+      "q": "Quyidagi tenglamalardan qaysi biri yangi o'zgaruvchi kiritish bilan kvadrat tenglamaga keltirilmaydi?",
+      "v": [
+        "x⁴ − 7x² + 10 = 0",
+        "(x² + x)² − 4(x² + x) + 3 = 0",
+        "x⁴ − 3x³ + 2x − 5 = 0",
+        "x − 7√x + 10 = 0"
+      ],
+      "t": 2,
+      "izoh": "x⁴ − 7x² + 10 = 0 da t = x², (x² + x)² − 4(x² + x) + 3 = 0 da t = x² + x, x − 7√x + 10 = 0 da esa t = √x almashtirish darrov kvadrat tenglama beradi. x⁴ − 3x³ + 2x − 5 = 0 tenglamada koeffitsientlar simmetrik emas va takrorlanuvchi ifoda ham yo'q, shuning uchun u bitta almashtirish bilan kvadrat tenglamaga keltirilmaydi. Javob: x⁴ − 3x³ + 2x − 5 = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tahlil-umumlashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#1f92b5a9"
+    },
+    {
+      "q": "O'quvchi x⁴ − 5x² + 6 = 0 tenglamani yechib, javob sifatida 2 va 3 sonlarini yozdi. Uning xatosi nimada?",
+      "v": [
+        "Yangi o'zgaruvchidan x ga qaytmagan",
+        "Diskriminantni noto'g'ri hisoblagan",
+        "Manfiy ildizni tashlab yubormagan",
+        "Viyet teoremasini noto'g'ri qo'llagan"
+      ],
+      "t": 0,
+      "izoh": "t = x² almashtirishdan keyin t² − 5t + 6 = 0 chiqadi va uning ildizlari haqiqatan 2 va 3. Lekin bular t ning, ya'ni x² ning qiymatlari. x ni topish uchun x² = 2 va x² = 3 tenglamalar yechilishi kerak edi: x = ±√2 va x = ±√3. Javob: yangi o'zgaruvchidan x ga qaytmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tahlil-umumlashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#f37f1166"
+    },
+    {
+      "q": "Nima uchun x⁴ + 6x² + 5 = 0 tenglamaning haqiqiy ildizi yo'qligini almashtirish qilmasdan ham aytish mumkin?",
+      "v": [
+        "Chunki x⁴ va 6x² manfiy emas, ularga 5 qo'shilsa yig'indi hech qachon nolga teng bo'lmaydi",
+        "Chunki tenglamaning darajasi juft son",
+        "Chunki tenglama qaytma emas",
+        "Chunki diskriminanti nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Ixtiyoriy haqiqiy x uchun x⁴ ≥ 0 va 6x² ≥ 0 bo'ladi. Demak chap tomon kamida 5 ga teng, ya'ni har doim musbat. Musbat ifoda nolga aylanmaydi, shuning uchun haqiqiy ildiz mavjud emas. Javob: chunki x⁴ va 6x² manfiy emas, ularga 5 qo'shilsa yig'indi hech qachon nolga teng bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tahlil-umumlashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#7b9dbe53"
+    },
+    {
+      "q": "x⁴ + ax³ + bx² + ax + 1 = 0 qaytma tenglamaning ildizlaridan biri 2 ga teng. Yana qaysi son albatta uning ildizi bo'ladi?",
+      "v": [
+        "1/2",
+        "−2",
+        "−1/2",
+        "1/4"
+      ],
+      "t": 0,
+      "izoh": "Qaytma tenglamada x o'rniga 1/x qo'yib, natijani x⁴ ga ko'paytirsak, xuddi shu tenglama qaytadi. Demak x₀ ildiz bo'lsa, 1/x₀ ham ildiz bo'ladi. x₀ = 2 bo'lgani uchun 1/2 ham ildiz. Ildizlar ko'paytmasi 1 ga teng bo'lishi ham shuni tasdiqlaydi. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tahlil-umumlashtirish",
+      "id": "matematika_teng_m04-kvadrat-tenglamaga-keltiriladigan-tenglamalar#67ae223b"
+    }
+  ]
+}

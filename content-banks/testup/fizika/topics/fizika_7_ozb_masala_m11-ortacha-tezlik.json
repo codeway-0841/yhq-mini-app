@@ -1,0 +1,216 @@
+{
+  "nom": "11-mavzu. Masala. Ortacha Tezlik",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Avtomobil 4 soat davomida o‘rtacha 50 km/h tezlik bilan harakatlandi. U shu vaqtda qancha yo‘l bosib o‘tgan?",
+      "v": [
+        "200 km",
+        "12,5 km",
+        "54 km",
+        "46 km"
+      ],
+      "t": 0,
+      "izoh": "s = υ·t = 50·4 = 200 km",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m11-ortacha-tezlik#52ebe385"
+    },
+    {
+      "q": "Otliq 20 minutda 4 km yo‘l bosdi, keyingi 1 soatda esa 8 km/h tezlik bilan yurdi. Otliqning butun yo‘l davomidagi o‘rtacha tezligini toping.",
+      "v": [
+        "2,5 m/s",
+        "6 m/s",
+        "2 m/s",
+        "5 m/s"
+      ],
+      "t": 0,
+      "izoh": "s = 4000+8000 = 12000 m; t = 1200+3600 = 4800 s; υ = 12000/4800 = 2,5 m/s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m11-ortacha-tezlik#87801566"
+    },
+    {
+      "q": "Velosipedchi dastlabki 5 s da 60 m, keyingi 10 s da 120 m va oxirgi 5 s da 30 m yo‘l yurdi. Uning o‘rtacha tezligini aniqlang.",
+      "v": [
+        "10,5 m/s",
+        "7 m/s",
+        "12 m/s",
+        "8,4 m/s"
+      ],
+      "t": 0,
+      "izoh": "s = 60+120+30 = 210 m; t = 5+10+5 = 20 s; υ = 210/20 = 10,5 m/s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m11-ortacha-tezlik#35b4e2a7"
+    },
+    {
+      "q": "Jism yo‘lning birinchi yarmini 5 m/s, ikkinchi yarmini 15 m/s tezlik bilan bosib o‘tdi. Butun yo‘ldagi o‘rtacha tezligini toping.",
+      "v": [
+        "7,5 m/s",
+        "10 m/s",
+        "8 m/s",
+        "6 m/s"
+      ],
+      "t": 0,
+      "izoh": "υ = 2υ₁υ₂/(υ₁+υ₂) = 2·5·15/(5+15) = 150/20 = 7,5 m/s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m11-ortacha-tezlik#e3ad88cc"
+    },
+    {
+      "q": "Jism harakat vaqtining birinchi yarmida 12 m/s, ikkinchi yarmida 8 m/s tezlik bilan harakatlandi. O‘rtacha tezligini aniqlang.",
+      "v": [
+        "10 m/s",
+        "9,6 m/s",
+        "20 m/s",
+        "4 m/s"
+      ],
+      "t": 0,
+      "izoh": "υ = (υ₁+υ₂)/2 = (12+8)/2 = 10 m/s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m11-ortacha-tezlik#56ef779a"
+    },
+    {
+      "q": "Jism 15 s davomida 5 m/s, 10 s davomida 8 m/s va 5 s davomida 20 m/s tezlik bilan harakatlandi. Jismning o‘rtacha tezligi qanday bo‘lgan?",
+      "v": [
+        "8,5 m/s",
+        "11 m/s",
+        "10,2 m/s",
+        "7,5 m/s"
+      ],
+      "t": 0,
+      "izoh": "s = 5·15+8·10+20·5 = 75+80+100 = 255 m; t = 30 s; υ = 255/30 = 8,5 m/s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m11-ortacha-tezlik#d8d9c564"
+    },
+    {
+      "q": "Avtomobil omborga borishda 90 km/h, qaytishda 60 km/h tezlik bilan harakatlandi. Butun harakat davomidagi o‘rtacha tezligini toping.",
+      "v": [
+        "72 km/h",
+        "75 km/h",
+        "70 km/h",
+        "80 km/h"
+      ],
+      "t": 0,
+      "izoh": "υ = 2υ₁υ₂/(υ₁+υ₂) = 2·90·60/(90+60) = 10800/150 = 72 km/h",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m11-ortacha-tezlik#85aca999"
+    },
+    {
+      "q": "Avtomobil dovonga ko‘tarilishda 10 m/s, tushishda 15 m/s tezlik bilan harakatlandi. Tushish yo‘li chiqish yo‘liga teng bo‘lsa, butun yo‘ldagi o‘rtacha tezlik qanday?",
+      "v": [
+        "12 m/s",
+        "12,5 m/s",
+        "11 m/s",
+        "13 m/s"
+      ],
+      "t": 0,
+      "izoh": "υ = 2υ₁υ₂/(υ₁+υ₂) = 2·10·15/(10+15) = 300/25 = 12 m/s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m11-ortacha-tezlik#a9698345"
+    },
+    {
+      "q": "Poyezd yo‘lning birinchi yarmini ikkinchi yarmiga nisbatan 8 marta katta tezlikda bosib o‘tdi. Butun yo‘ldagi o‘rtacha tezlik 32 km/h bo‘lsa, yo‘lning ikkinchi yarmidagi tezlik qanday bo‘lgan?",
+      "v": [
+        "18 km/h",
+        "16 km/h",
+        "24 km/h",
+        "40 km/h"
+      ],
+      "t": 0,
+      "izoh": "32 = 2·8υ·υ/(8υ+υ) = 16υ/9 → υ = 32·9/16 = 18 km/h",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m11-ortacha-tezlik#de68eaaf"
+    },
+    {
+      "q": "Mashina 90 km/h tezlik bilan 5 soat yurdi. Agar u 100 km/h tezlik bilan yursa, shu yo‘lni qancha vaqtda bosib o‘tadi?",
+      "v": [
+        "4,5 soat",
+        "5 soat",
+        "5,5 soat",
+        "4 soat"
+      ],
+      "t": 0,
+      "izoh": "s = 90·5 = 450 km; t = 450/100 = 4,5 soat",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m11-ortacha-tezlik#b7d8cb13"
+    },
+    {
+      "q": "Avtomobil dastlabki 10 s da 200 m, keyingi 20 s da 550 m va oxirgi 15 s da 150 m yo‘l yurdi. Avtomobilning o‘rtacha tezligini hisoblang.",
+      "v": [
+        "20 m/s",
+        "22,5 m/s",
+        "18 m/s",
+        "30 m/s"
+      ],
+      "t": 0,
+      "izoh": "s = 200+550+150 = 900 m; t = 10+20+15 = 45 s; υ = 900/45 = 20 m/s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m11-ortacha-tezlik#f5e28d9f"
+    },
+    {
+      "q": "Velosipedchi o‘rtacha 12 m/s tezlik bilan 2,5 minut harakatlandi. U qancha yo‘l bosib o‘tgan?",
+      "v": [
+        "1800 m",
+        "180 m",
+        "30 m",
+        "18000 m"
+      ],
+      "t": 0,
+      "izoh": "t = 2,5 min = 150 s; s = υ·t = 12·150 = 1800 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m11-ortacha-tezlik#e13381bb"
+    },
+    {
+      "q": "Piyoda o‘rtacha 5 m/s tezlik bilan 600 m masofani qancha vaqtda bosib o‘tadi?",
+      "v": [
+        "120 s",
+        "12 s",
+        "1200 s",
+        "3000 s"
+      ],
+      "t": 0,
+      "izoh": "t = s/υ = 600/5 = 120 s",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m11-ortacha-tezlik#baf30450"
+    },
+    {
+      "q": "Attraksion poyezdi uzunligi 30 m bo‘lgan aylanani 3 marta aylanib chiqdi. Uning bosib o‘tgan umumiy yo‘li qancha?",
+      "v": [
+        "90 m",
+        "30 m",
+        "150 m",
+        "15 m"
+      ],
+      "t": 0,
+      "izoh": "s = 30·3 = 90 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m11-ortacha-tezlik#c6731af9"
+    }
+  ]
+}

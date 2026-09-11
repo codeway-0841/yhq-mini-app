@@ -1,0 +1,1609 @@
+{
+  "nom": "Sonlarni taqqoslash va tartiblash",
+  "bolim": "Tengsizliklar",
+  "blok": "tngs",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Ko'rsatkichlari teng bo'lgan 5⁷ va 4⁷ darajalarni taqqoslang va to'g'ri munosabatni ko'rsating.",
+      "v": [
+        "5⁷ > 4⁷",
+        "5⁷ < 4⁷",
+        "5⁷ = 4⁷",
+        "Taqqoslab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichlar bir xil (ikkalasida ham 7), demak asoslarni solishtiramiz. Musbat asoslar uchun aⁿ funksiyasi o'suvchi: 5 > 4 bo'lgani uchun 5⁷ > 4⁷. Javob: 5⁷ > 4⁷.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-xil-korsatkich-asos-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#7be6d049"
+    },
+    {
+      "q": "(−3)⁶ va (−4)⁶ sonlari orasidagi munosabatni aniqlang. Juft ko'rsatkich ishorani qanday o'zgartirishini hisobga oling.",
+      "v": [
+        "(−3)⁶ > (−4)⁶",
+        "(−3)⁶ < (−4)⁶",
+        "(−3)⁶ = (−4)⁶",
+        "Ikkalasi ham manfiy"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkich juft bo'lgani uchun ikkala daraja ham musbat: (−3)⁶ = 3⁶ = 729, (−4)⁶ = 4⁶ = 4096. Asoslarning modullari solishtiriladi: 4 > 3, demak (−3)⁶ < (−4)⁶. Javob: (−3)⁶ < (−4)⁶.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-korsatkich-asos-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#f7ec1d31"
+    },
+    {
+      "q": "Anvar qirrasi 7 sm bo'lgan kub shaklidagi quti, Bekzod esa qirrasi 6 sm bo'lgan kub yasadi. Ikki qutining hajmlarini taqqoslang.",
+      "v": [
+        "343 sm³ > 216 sm³",
+        "216 sm³ > 343 sm³",
+        "294 sm³ > 343 sm³",
+        "343 sm³ = 216 sm³"
+      ],
+      "t": 0,
+      "izoh": "Kub hajmi V = a³. Anvarniki 7³ = 343 sm³, Bekzodniki 6³ = 216 sm³. Ko'rsatkichlar teng bo'lgani uchun katta qirrali kubning hajmi ham katta: 343 sm³ > 216 sm³. Javob: 343 sm³ > 216 sm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-xil-korsatkich-asos-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#31dcca7e"
+    },
+    {
+      "q": "0,7⁵ va 0,9⁵ darajalarini taqqoslang. Asoslar birdan kichik bo'lsa ham ko'rsatkichlar teng ekaniga e'tibor bering.",
+      "v": [
+        "0,7⁵ > 0,9⁵",
+        "0,7⁵ < 0,9⁵",
+        "0,7⁵ = 0,9⁵",
+        "Ikkalasi ham birdan katta"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichlar bir xil, demak asoslar solishtiriladi. Musbat asoslar uchun katta asos katta daraja beradi, asos birdan kichik bo'lishi bu qoidani buzmaydi. 0,7 < 0,9 bo'lgani uchun 0,7⁵ < 0,9⁵. Javob: 0,7⁵ < 0,9⁵.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-korsatkich-asos-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#7f895e05"
+    },
+    {
+      "q": "Asoslari teng bo'lgan 3¹¹ va 3⁸ darajalarni taqqoslab, to'g'ri munosabatni tanlang.",
+      "v": [
+        "3¹¹ < 3⁸",
+        "3¹¹ = 3⁸",
+        "3¹¹ > 3⁸",
+        "Munosabat aniqlanmaydi"
+      ],
+      "t": 2,
+      "izoh": "Asos bir xil va u birdan katta (3 > 1), shuning uchun ko'rsatkichi kattaroq daraja kattaroq bo'ladi. 11 > 8 bo'lgani uchun 3¹¹ > 3⁸. Ularning nisbati 3³ = 27 marta. Javob: 3¹¹ > 3⁸.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-xil-asos-korsatkich-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#d4b70547"
+    },
+    {
+      "q": "(1/2)⁵ va (1/2)⁸ darajalarining qaysi biri katta ekanini aniqlang va sababini bildiruvchi variantni tanlang.",
+      "v": [
+        "(1/2)⁵ katta, chunki ko'rsatkich kichik",
+        "(1/2)⁸ katta, chunki ko'rsatkich katta",
+        "Ikkalasi teng",
+        "Ikkalasi ham birdan katta son"
+      ],
+      "t": 0,
+      "izoh": "Asos 1/2 birdan kichik, shuning uchun daraja ko'rsatkichi ortgan sari qiymat kamayadi. Tekshiramiz: (1/2)⁵ = 1/32, (1/2)⁸ = 1/256, va 1/32 > 1/256. Javob: (1/2)⁵ katta, chunki ko'rsatkich kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-asos-korsatkich-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#6965eb80"
+    },
+    {
+      "q": "Bir zavodda brak ulushi har oyda avvalgi oydagining 0,4 qismiga tushmoqda. 0,4⁶ va 0,4⁹ sonlarini taqqoslang.",
+      "v": [
+        "0,4⁶ < 0,4⁹",
+        "0,4⁶ = 0,4⁹",
+        "0,4⁶ > 0,4⁹",
+        "Taqqoslash mumkin emas"
+      ],
+      "t": 2,
+      "izoh": "Asos 0,4 birdan kichik, ya'ni 0 < 0,4 < 1. Bunday asosda ko'rsatkich ortsa daraja kichrayadi. 6 < 9 bo'lgani uchun 0,4⁶ > 0,4⁹, ya'ni oltinchi oyda brak ulushi to'qqizinchi oydagidan katta. Javob: 0,4⁶ > 0,4⁹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-asos-korsatkich-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#3ff9f83e"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni har soatda ikki barobar ortadi. O'n beshinchi soatdagi son o'n ikkinchi soatdagidan necha marta ko'p bo'ladi?",
+      "v": [
+        "3 marta",
+        "8 marta",
+        "6 marta",
+        "64 marta"
+      ],
+      "t": 1,
+      "izoh": "Boshlang'ich son N₀ bo'lsa, o'n beshinchi soatda N₀·2¹⁵, o'n ikkinchi soatda N₀·2¹² ta bakteriya bo'ladi. Nisbat N₀ ga bog'liq emas: (N₀·2¹⁵) : (N₀·2¹²) = 2¹⁵⁻¹² = 2³ = 8. Ko'rsatkichlar ayirmasi 3 bo'lsa ham, marta soni 3 emas, 2³ ga teng. Javob: 8 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-asos-korsatkich-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#dbeb7de7"
+    },
+    {
+      "q": "2³⁰ va 3²⁰ sonlarini umumiy ko'rsatkichga keltirib taqqoslang va to'g'ri munosabatni belgilang.",
+      "v": [
+        "2³⁰ > 3²⁰",
+        "2³⁰ = 3²⁰",
+        "2³⁰ < 3²⁰",
+        "Ikkalasi ham 10⁹ dan kichik"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkichlarning eng katta umumiy bo'luvchisi 10 ga ajratamiz: 2³⁰ = (2³)¹⁰ = 8¹⁰ va 3²⁰ = (3²)¹⁰ = 9¹⁰. Endi ko'rsatkichlar teng, asoslar solishtiriladi: 8 < 9. Demak 2³⁰ < 3²⁰. Javob: 2³⁰ < 3²⁰.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-korsatkichga-keltirish",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#753df627"
+    },
+    {
+      "q": "5²⁰ va 2⁴⁰ darajalarini taqqoslash uchun ikkalasini bir xil ko'rsatkichli ko'rinishga keltiring.",
+      "v": [
+        "5²⁰ > 2⁴⁰",
+        "5²⁰ < 2⁴⁰",
+        "5²⁰ = 2⁴⁰",
+        "Faqat kalkulyator bilan aniqlanadi"
+      ],
+      "t": 0,
+      "izoh": "Umumiy ko'rsatkich 10 ni ajratamiz: 5²⁰ = (5²)¹⁰ = 25¹⁰ va 2⁴⁰ = (2⁴)¹⁰ = 16¹⁰. Ko'rsatkichlar tenglashgach asoslar solishtiriladi: 25 > 16. Demak 5²⁰ > 2⁴⁰. Javob: 5²⁰ > 2⁴⁰.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-korsatkichga-keltirish",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#11226233"
+    },
+    {
+      "q": "7¹⁵ va 5²⁰ sonlarini umumiy ko'rsatkich yordamida taqqoslang. Qaysi munosabat to'g'ri?",
+      "v": [
+        "7¹⁵ > 5²⁰",
+        "7¹⁵ = 5²⁰",
+        "5²⁰ soni 7¹⁵ dan 5 marta katta",
+        "7¹⁵ < 5²⁰"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkichlar 15 va 20 ning umumiy bo'luvchisi 5 ni ajratamiz: 7¹⁵ = (7³)⁵ = 343⁵ va 5²⁰ = (5⁴)⁵ = 625⁵. Ko'rsatkichlar teng bo'lgach asoslar solishtiriladi: 343 < 625. Javob: 7¹⁵ < 5²⁰.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-korsatkichga-keltirish",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#7b724cd9"
+    },
+    {
+      "q": "Ikki arxivning hajmi 4¹⁰ va 3¹⁵ bayt deb baholangan. Qaysi arxiv kattaroq ekanini asoslab tanlang.",
+      "v": [
+        "3¹⁵ katta",
+        "4¹⁰ katta",
+        "Hajmlari teng",
+        "Umumiy bo'luvchi yo'q, taqqoslab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichlar 10 va 15 ning umumiy bo'luvchisi 5 ni ajratamiz: 4¹⁰ = (4²)⁵ = 16⁵ va 3¹⁵ = (3³)⁵ = 27⁵. Ko'rsatkichlar teng, asoslar solishtiriladi: 16 < 27. Katta asos katta son beradi, demak 3¹⁵ katta. Javob: 3¹⁵ katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-korsatkichga-keltirish",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#3e41b393"
+    },
+    {
+      "q": "4¹⁵ va 8¹⁰ darajalarini bitta asosga keltirib taqqoslang. Natijada qanday munosabat hosil bo'ladi?",
+      "v": [
+        "4¹⁵ > 8¹⁰",
+        "4¹⁵ < 8¹⁰",
+        "4¹⁵ = 8¹⁰",
+        "4¹⁵ ning ko'rsatkichi katta, demak u katta"
+      ],
+      "t": 2,
+      "izoh": "Ikkala asosni 2 ga keltiramiz: 4¹⁵ = (2²)¹⁵ = 2³⁰ va 8¹⁰ = (2³)¹⁰ = 2³⁰. Asoslar ham, ko'rsatkichlar ham tenglashdi, demak sonlar teng. Javob: 4¹⁵ = 8¹⁰.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-asosga-keltirish",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#48b4cb90"
+    },
+    {
+      "q": "9¹² va 27⁷ sonlarini umumiy asosga keltirib solishtiring va to'g'ri javobni tanlang.",
+      "v": [
+        "9¹² < 27⁷",
+        "9¹² = 27⁷",
+        "9¹² > 27⁷",
+        "27⁷ katta, chunki asosi katta"
+      ],
+      "t": 2,
+      "izoh": "Ikkala asosni 3 ga keltiramiz: 9¹² = (3²)¹² = 3²⁴ va 27⁷ = (3³)⁷ = 3²¹. Asos bir xil va birdan katta, shuning uchun ko'rsatkichlar solishtiriladi: 24 > 21. Javob: 9¹² > 27⁷.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-asosga-keltirish",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#447a8911"
+    },
+    {
+      "q": "25⁹ va 125⁵ darajalarining qaysi biri katta? Ikkalasini 5 asosli darajaga aylantirib javob bering.",
+      "v": [
+        "25⁹ katta",
+        "125⁵ katta",
+        "Teng",
+        "Aniqlash uchun ikkala sonni to'liq hisoblash shart"
+      ],
+      "t": 0,
+      "izoh": "25⁹ = (5²)⁹ = 5¹⁸, 125⁵ = (5³)⁵ = 5¹⁵. Asoslar tenglashgach ko'rsatkichlar solishtiriladi: 18 > 15, asos birdan katta. Demak 25⁹ katta. Javob: 25⁹ katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-asosga-keltirish",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#538087d7"
+    },
+    {
+      "q": "8¹¹ va 32⁷ sonlarini taqqoslang. Ikkala asos ham 2 ning darajasi ekanidan foydalaning.",
+      "v": [
+        "8¹¹ > 32⁷",
+        "8¹¹ = 32⁷",
+        "8¹¹ < 32⁷",
+        "Ko'rsatkichi katta bo'lgani uchun 8¹¹ katta"
+      ],
+      "t": 2,
+      "izoh": "8¹¹ = (2³)¹¹ = 2³³ va 32⁷ = (2⁵)⁷ = 2³⁵. Asos 2 birdan katta, demak ko'rsatkichlar solishtiriladi: 33 < 35. Javob: 8¹¹ < 32⁷.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "umumiy-asosga-keltirish",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#7e9caf53"
+    },
+    {
+      "q": "√50 va 7 sonlarini taqqoslash uchun ikkala tomonni kvadratga ko'tarish qoidasidan foydalaning.",
+      "v": [
+        "√50 < 7",
+        "√50 = 7",
+        "√50 > 7",
+        "Taqqoslash uchun ma'lumot yetarli emas"
+      ],
+      "t": 2,
+      "izoh": "Ikkala son ham manfiy emas, shuning uchun kvadratga ko'tarish munosabatni saqlaydi. (√50)² = 50, 7² = 49. 50 > 49 bo'lgani uchun √50 > 7. Javob: √50 > 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-tomonni-kvadratga-kotarish",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#d51f73b7"
+    },
+    {
+      "q": "3√5 va 2√11 sonlaridan qaysi biri katta? Ko'paytuvchini ildiz ostiga kiritib tekshiring.",
+      "v": [
+        "3√5 katta",
+        "2√11 katta",
+        "Ikkalasi teng",
+        "Ikkalasi ham 7 dan katta"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytuvchini ildiz ostiga kiritamiz: 3√5 = √(9·5) = √45, 2√11 = √(4·11) = √44. Ildiz ostidagi sonlar solishtiriladi: 45 > 44. Demak 3√5 katta. Javob: 3√5 katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tomonni-kvadratga-kotarish",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#ccf7a60a"
+    },
+    {
+      "q": "4√3 va 7 sonlari orasidagi munosabatni aniqlang va to'g'ri variantni belgilang.",
+      "v": [
+        "4√3 > 7",
+        "4√3 = 7",
+        "Munosabat aniqlanmaydi",
+        "4√3 < 7"
+      ],
+      "t": 3,
+      "izoh": "Ikkala son manfiy emas, kvadratga ko'taramiz: (4√3)² = 16·3 = 48, 7² = 49. 48 < 49 bo'lgani uchun 4√3 < 7. Javob: 4√3 < 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tomonni-kvadratga-kotarish",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#1b83ab73"
+    },
+    {
+      "q": "Bir yer uchastkasi kvadrat shaklida bo'lib, tomoni √72 m ga teng. Uni tomoni 8,5 m bo'lgan kvadrat uchastka bilan taqqoslang.",
+      "v": [
+        "√72 m tomon uzunroq",
+        "8,5 m tomon uzunroq",
+        "Tomonlar teng, chunki 8,5² = 72",
+        "Tomon uzunliklarini yuzasiz taqqoslab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ikkala uzunlik ham musbat, kvadratga ko'taramiz: (√72)² = 72, 8,5² = 72,25. 72 < 72,25 bo'lgani uchun √72 < 8,5. Demak ikkinchi uchastkaning tomoni uzunroq. Javob: 8,5 m tomon uzunroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tomonni-kvadratga-kotarish",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#535d4e80"
+    },
+    {
+      "q": "√3 va ∛5 sonlarini taqqoslash uchun ularni bir xil ko'rsatkichli ildizga keltiring va munosabatni toping.",
+      "v": [
+        "√3 > ∛5",
+        "√3 < ∛5",
+        "√3 = ∛5",
+        "Har xil ildizlarni taqqoslab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ildiz ko'rsatkichlari 2 va 3 ning eng kichik umumiy karralisi 6. Shuning uchun √3 = ⁶√(3³) = ⁶√27, ∛5 = ⁶√(5²) = ⁶√25. Endi ildiz ostidagilar solishtiriladi: 27 > 25. Javob: √3 > ∛5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "har-xil-darajali-ildizni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#8679bee0"
+    },
+    {
+      "q": "∛4 va ⁴√7 sonlaridan qaysi biri katta ekanini umumiy ildiz ko'rsatkichi orqali aniqlang.",
+      "v": [
+        "∛4 katta",
+        "⁴√7 katta",
+        "Ikkalasi teng",
+        "Har xil ko'rsatkichli ildizlarni taqqoslab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "3 va 4 ning eng kichik umumiy karralisi 12 ga keltiramiz: ∛4 = ¹²√(4⁴) = ¹²√256, ⁴√7 = ¹²√(7³) = ¹²√343. Ildiz ostidagi sonlardan 343 > 256 bo'lgani uchun ⁴√7 katta. Javob: ⁴√7 katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "har-xil-darajali-ildizni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#b5f0e341"
+    },
+    {
+      "q": "√2 va ∛3 sonlarini oltinchi darajali ildizga keltirib taqqoslang. Qaysi munosabat o'rinli?",
+      "v": [
+        "√2 > ∛3",
+        "√2 = ∛3",
+        "√2 < ∛3",
+        "Ikkalasi ham 1 dan kichik"
+      ],
+      "t": 2,
+      "izoh": "Umumiy ko'rsatkich 6: √2 = ⁶√(2³) = ⁶√8, ∛3 = ⁶√(3²) = ⁶√9. Ildiz ostidagi sonlar solishtiriladi: 8 < 9. Demak √2 < ∛3. Javob: √2 < ∛3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "har-xil-darajali-ildizni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#90b0fe3a"
+    },
+    {
+      "q": "Ikki o'lchov natijasi ∛10 va √5 ko'rinishida yozilgan. Qaysi natija kattaroq ekanini asoslang.",
+      "v": [
+        "∛10 kattaroq",
+        "Natijalar teng",
+        "Ikkala natija ham 2 dan kichik",
+        "√5 kattaroq"
+      ],
+      "t": 3,
+      "izoh": "Ikkala ildizni oltinchi darajaga keltiramiz: ∛10 = ⁶√(10²) = ⁶√100, √5 = ⁶√(5³) = ⁶√125. Ildiz ostidagi sonlar: 100 < 125. Ildiz ostidagi son katta bo'lsa qiymat ham katta, demak √5 kattaroq. Javob: √5 kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "har-xil-darajali-ildizni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#e27088a1"
+    },
+    {
+      "q": "√54 soni qaysi ikkita ketma-ket butun son orasida joylashganini aniqlang.",
+      "v": [
+        "7 va 8",
+        "6 va 7",
+        "8 va 9",
+        "26 va 28"
+      ],
+      "t": 0,
+      "izoh": "√54 ga eng yaqin to'la kvadratlarni izlaymiz: 49 = 7² va 64 = 8². 49 < 54 < 64 bo'lgani uchun 7 < √54 < 8. Javob: 7 va 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-ildizni-butun-sonlar-orasiga-joylash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#9cce294f"
+    },
+    {
+      "q": "√131 sonining butun qismi qanchaga teng va u qaysi ikki butun son orasida yotadi?",
+      "v": [
+        "10 va 11",
+        "12 va 13",
+        "11 va 12",
+        "13 va 14"
+      ],
+      "t": 2,
+      "izoh": "11² = 121 va 12² = 144. 121 < 131 < 144 bo'lgani uchun 11 < √131 < 12, ya'ni butun qismi 11 ga teng. Javob: 11 va 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ildizni-butun-sonlar-orasiga-joylash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#4c78c933"
+    },
+    {
+      "q": "Kvadrat shaklidagi maydonning yuzasi 200 m². Uning tomoni qaysi ikkita ketma-ket butun son orasida bo'ladi?",
+      "v": [
+        "13 m va 14 m",
+        "14 m va 15 m",
+        "15 m va 16 m",
+        "99 m va 101 m"
+      ],
+      "t": 1,
+      "izoh": "Tomon a = √200 ga teng. Yaqin to'la kvadratlar: 14² = 196 va 15² = 225. 196 < 200 < 225 bo'lgani uchun 14 < √200 < 15. Javob: 14 m va 15 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ildizni-butun-sonlar-orasiga-joylash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#f7eaf796"
+    },
+    {
+      "q": "√89 sonini eng yaqin ikkita butun son orasiga joylashtiring va to'g'ri variantni tanlang.",
+      "v": [
+        "8 va 9",
+        "44 va 45",
+        "10 va 11",
+        "9 va 10"
+      ],
+      "t": 3,
+      "izoh": "9² = 81, 10² = 100 va 81 < 89 < 100. Demak 9 < √89 < 10. Ildizni ikkiga bo'lish (89 : 2) mumkin emas, chunki bu ildiz ta'rifi emas. Javob: 9 va 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-ildizni-butun-sonlar-orasiga-joylash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#e06d9ee2"
+    },
+    {
+      "q": "∛100 soni qaysi ikkita ketma-ket butun son orasida joylashgan? Yaqin kublardan foydalaning.",
+      "v": [
+        "4 va 5",
+        "3 va 4",
+        "5 va 6",
+        "9 va 10"
+      ],
+      "t": 0,
+      "izoh": "Yaqin kublar: 4³ = 64 va 5³ = 125. 64 < 100 < 125 bo'lgani uchun 4 < ∛100 < 5. Javob: 4 va 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-ildizni-butun-sonlar-orasiga-joylash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#4ab40f1b"
+    },
+    {
+      "q": "∛340 sonining butun qismini aniqlang va uni ikki butun son orasida ko'rsating.",
+      "v": [
+        "5 va 6",
+        "6 va 7",
+        "7 va 8",
+        "18 va 19"
+      ],
+      "t": 1,
+      "izoh": "6³ = 216, 7³ = 343. 216 < 340 < 343 bo'lgani uchun 6 < ∛340 < 7, butun qismi 6. Son 343 ga juda yaqin bo'lsa ham undan kichik. Javob: 6 va 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-ildizni-butun-sonlar-orasiga-joylash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#c6c4755e"
+    },
+    {
+      "q": "Kub shaklidagi idishning hajmi 2000 sm³. Uning qirrasi qaysi ikkita ketma-ket butun son orasida yotadi?",
+      "v": [
+        "11 sm va 12 sm",
+        "13 sm va 14 sm",
+        "12 sm va 13 sm",
+        "44 sm va 45 sm"
+      ],
+      "t": 2,
+      "izoh": "Qirra a = ∛2000 ga teng. Yaqin kublar: 12³ = 1728 va 13³ = 2197. 1728 < 2000 < 2197 bo'lgani uchun 12 < ∛2000 < 13. Javob: 12 sm va 13 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-ildizni-butun-sonlar-orasiga-joylash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#59cf46a9"
+    },
+    {
+      "q": "∛26 sonini ikkita ketma-ket butun son orasiga joylashtiring va to'g'ri javobni belgilang.",
+      "v": [
+        "4 va 5",
+        "5 va 6",
+        "1 va 2",
+        "2 va 3"
+      ],
+      "t": 3,
+      "izoh": "2³ = 8 va 3³ = 27. 8 < 26 < 27 bo'lgani uchun 2 < ∛26 < 3. Son 27 ga juda yaqin, lekin undan kichik, shuning uchun butun qismi 2. Javob: 2 va 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-ildizni-butun-sonlar-orasiga-joylash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#b71d94f0"
+    },
+    {
+      "q": "√17 + √3 yig'indisi qaysi ikkita ketma-ket butun son orasida joylashganini baholang.",
+      "v": [
+        "4 va 5",
+        "5 va 6",
+        "6 va 7",
+        "7 va 8"
+      ],
+      "t": 1,
+      "izoh": "Har bir qo'shiluvchini baholaymiz: 4 < √17 < 4,2 (chunki 16 < 17 < 17,64) va 1,7 < √3 < 1,8 (chunki 2,89 < 3 < 3,24). Yig'indi uchun 5,7 < √17 + √3 < 6. Demak yig'indi 5 va 6 orasida. Javob: 5 va 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifodani-butun-sonlar-orasiga-joylash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#7dd5480c"
+    },
+    {
+      "q": "√50 − √8 ayirmasi qaysi ikkita ketma-ket butun son orasida yotadi? Avval ildizlarni soddalashtiring.",
+      "v": [
+        "3 va 4",
+        "4 va 5",
+        "1 va 2",
+        "2 va 3"
+      ],
+      "t": 1,
+      "izoh": "√50 = 5√2 va √8 = 2√2, demak ayirma 3√2 ga teng. 3√2 = √18 va 16 < 18 < 25, ya'ni 4 < √18 < 5. Javob: 4 va 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodani-butun-sonlar-orasiga-joylash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#850cea0b"
+    },
+    {
+      "q": "4√5 ifodasining qiymati qaysi ikkita ketma-ket butun son orasida bo'ladi?",
+      "v": [
+        "8 va 9",
+        "9 va 10",
+        "7 va 8",
+        "20 va 21"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytuvchini ildiz ostiga kiritamiz: 4√5 = √(16·5) = √80. Yaqin to'la kvadratlar 64 = 8² va 81 = 9², hamda 64 < 80 < 81. Demak 8 < 4√5 < 9. Javob: 8 va 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodani-butun-sonlar-orasiga-joylash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#2b4eb546"
+    },
+    {
+      "q": "Bog'dagi ikki simning uzunligi √200 m va √18 m. Ularning uzunliklari ayirmasi qaysi butun sonlar orasida yotadi?",
+      "v": [
+        "8 m va 9 m",
+        "10 m va 11 m",
+        "9 m va 10 m",
+        "13 m va 14 m"
+      ],
+      "t": 2,
+      "izoh": "√200 = 10√2, √18 = 3√2, ayirma 7√2 ga teng. 7√2 = √98 va 81 < 98 < 100, demak 9 < √98 < 10. Javob: 9 m va 10 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifodani-butun-sonlar-orasiga-joylash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#bc8dd6c7"
+    },
+    {
+      "q": "√8, ∛20 va 2 sonlarini o'sish tartibida joylashtiring va to'g'ri ketma-ketlikni tanlang.",
+      "v": [
+        "2 < ∛20 < √8",
+        "∛20 < 2 < √8",
+        "√8 < ∛20 < 2",
+        "2 < √8 < ∛20"
+      ],
+      "t": 0,
+      "izoh": "Har birini oltinchi darajaga ko'taramiz: (√8)⁶ = 8³ = 512, (∛20)⁶ = 20² = 400, 2⁶ = 64. Manfiy bo'lmagan sonlar uchun bu tartibni saqlaydi: 64 < 400 < 512. Javob: 2 < ∛20 < √8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlarni-tartiblash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#a6f3658e"
+    },
+    {
+      "q": "√5, ∛11 va ⁴√30 sonlarini o'sish tartibida yozing. Umumiy daraja yordamida taqqoslang.",
+      "v": [
+        "√5 < ∛11 < ⁴√30",
+        "⁴√30 < √5 < ∛11",
+        "∛11 < ⁴√30 < √5",
+        "∛11 < √5 < ⁴√30"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkichlar 2, 3, 4 ning eng kichik umumiy karralisi 12. Har birini 12-darajaga ko'taramiz: (√5)¹² = 5⁶ = 15625, (∛11)¹² = 11⁴ = 14641, (⁴√30)¹² = 30³ = 27000. Tartib: 14641 < 15625 < 27000. Javob: ∛11 < √5 < ⁴√30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlarni-tartiblash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#2381ca1a"
+    },
+    {
+      "q": "Uchta arqonning uzunligi √30 m, 5,4 m va ∛150 m. Ularni qisqasidan uzuniga qarab tartiblang.",
+      "v": [
+        "∛150 < 5,4 < √30",
+        "5,4 < ∛150 < √30",
+        "√30 < 5,4 < ∛150",
+        "∛150 < √30 < 5,4"
+      ],
+      "t": 0,
+      "izoh": "5,4 ni ildizlar bilan solishtiramiz: 5,4² = 29,16 < 30, demak 5,4 < √30. Endi 5,4³ = 157,464 > 150, demak ∛150 < 5,4. Ikki natijani birlashtiramiz. Javob: ∛150 < 5,4 < √30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlarni-tartiblash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#406707c0"
+    },
+    {
+      "q": "Bir xil ildiz ostidagi son bilan olingan √2, ∛2 va ⁶√2 sonlarini kamayish tartibida joylashtiring.",
+      "v": [
+        "∛2 > √2 > ⁶√2",
+        "⁶√2 > ∛2 > √2",
+        "√2 > ∛2 > ⁶√2",
+        "√2 > ⁶√2 > ∛2"
+      ],
+      "t": 2,
+      "izoh": "Uchalasini 6-darajaga ko'taramiz: (√2)⁶ = 2³ = 8, (∛2)⁶ = 2² = 4, (⁶√2)⁶ = 2. Demak 8 > 4 > 2. Birdan katta son uchun ildiz ko'rsatkichi ortsa qiymat kamayadi. Javob: √2 > ∛2 > ⁶√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlarni-tartiblash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#d70f4a2c"
+    },
+    {
+      "q": "2¹⁵, 3¹⁰ va 5⁵ darajalarini o'sish tartibida joylashtiring va to'g'ri ketma-ketlikni tanlang.",
+      "v": [
+        "2¹⁵ < 5⁵ < 3¹⁰",
+        "3¹⁰ < 2¹⁵ < 5⁵",
+        "5⁵ < 2¹⁵ < 3¹⁰",
+        "5⁵ < 3¹⁰ < 2¹⁵"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkichlarni 5 ga ajratamiz: 2¹⁵ = (2³)⁵ = 8⁵, 3¹⁰ = (3²)⁵ = 9⁵, 5⁵ esa shundoq qoladi. Ko'rsatkichlar tenglashgach asoslar solishtiriladi: 5 < 8 < 9. Javob: 5⁵ < 2¹⁵ < 3¹⁰.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajalarni-tartiblash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#05a0bc3a"
+    },
+    {
+      "q": "3²⁰, 9¹¹ va 27⁷ sonlarini kichigidan kattasiga qarab tartiblang. Bitta asosga keltirib ishlang.",
+      "v": [
+        "9¹¹ < 27⁷ < 3²⁰",
+        "27⁷ < 9¹¹ < 3²⁰",
+        "3²⁰ < 9¹¹ < 27⁷",
+        "3²⁰ < 27⁷ < 9¹¹"
+      ],
+      "t": 3,
+      "izoh": "Hammasini 3 asosiga keltiramiz: 9¹¹ = (3²)¹¹ = 3²², 27⁷ = (3³)⁷ = 3²¹, uchinchisi 3²⁰. Asos birdan katta, demak ko'rsatkichlar tartibi javob beradi: 20 < 21 < 22. Javob: 3²⁰ < 27⁷ < 9¹¹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajalarni-tartiblash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#4ab05b58"
+    },
+    {
+      "q": "Uchta fayl hajmi 2²⁰, 4⁹ va 8⁷ bayt. Fayllarni hajmi bo'yicha kichigidan kattasiga tartiblang.",
+      "v": [
+        "4⁹ < 2²⁰ < 8⁷",
+        "2²⁰ < 4⁹ < 8⁷",
+        "8⁷ < 4⁹ < 2²⁰",
+        "4⁹ < 8⁷ < 2²⁰"
+      ],
+      "t": 0,
+      "izoh": "Hammasini 2 asosiga keltiramiz: 4⁹ = (2²)⁹ = 2¹⁸, 8⁷ = (2³)⁷ = 2²¹, uchinchisi 2²⁰. Asos 2 birdan katta, shuning uchun ko'rsatkichlar bo'yicha tartiblaymiz: 18 < 20 < 21. Javob: 4⁹ < 2²⁰ < 8⁷.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajalarni-tartiblash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#d096cdc1"
+    },
+    {
+      "q": "0,3², 0,3⁴ va 0,3⁶ darajalarini o'sish tartibida yozing. Asos birdan kichik ekaniga e'tibor bering.",
+      "v": [
+        "0,3² < 0,3⁴ < 0,3⁶",
+        "0,3⁶ < 0,3⁴ < 0,3²",
+        "0,3⁴ < 0,3² < 0,3⁶",
+        "Uchalasi teng"
+      ],
+      "t": 1,
+      "izoh": "Asos 0,3 birdan kichik, shuning uchun ko'rsatkich ortgan sari daraja kamayadi. Tekshiramiz: 0,3² = 0,09, 0,3⁴ = 0,0081, 0,3⁶ = 0,000729. Demak eng kichigi 0,3⁶. Javob: 0,3⁶ < 0,3⁴ < 0,3².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajalarni-tartiblash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#2093036b"
+    },
+    {
+      "q": "Manfiy ko'rsatkichli 2⁻³ va 3⁻² darajalarini taqqoslang va to'g'ri munosabatni ko'rsating.",
+      "v": [
+        "2⁻³ < 3⁻²",
+        "2⁻³ = 3⁻²",
+        "Ikkalasi ham manfiy son",
+        "2⁻³ > 3⁻²"
+      ],
+      "t": 3,
+      "izoh": "Manfiy ko'rsatkichli daraja teskari songa aylanadi: 2⁻³ = 1/8 va 3⁻² = 1/9. Suratlar teng bo'lgani uchun maxraji kichik kasr katta: 1/8 > 1/9. Javob: 2⁻³ > 3⁻².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-korsatkichli-darajani-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#3b57b937"
+    },
+    {
+      "q": "10⁻³ darajani 0,001 o'nli kasri bilan taqqoslang va to'g'ri munosabatni belgilang.",
+      "v": [
+        "10⁻³ > 0,001",
+        "10⁻³ < 0,001",
+        "10⁻³ = 0,001",
+        "10⁻³ manfiy son"
+      ],
+      "t": 2,
+      "izoh": "Manfiy ko'rsatkich sonni manfiy qilmaydi, balki teskarisini beradi: 10⁻³ = 1/10³ = 1/1000. Bu esa aynan 0,001 ga teng. Javob: 10⁻³ = 0,001.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-korsatkichli-darajani-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#a45bcc90"
+    },
+    {
+      "q": "Ikki mikroorganizmning o'lchami 3·10⁻⁵ mm va 2·10⁻⁴ mm deb o'lchandi. Qaysi biri kattaroq ekanini aniqlang.",
+      "v": [
+        "Ikkalasi bir xil o'lchamda",
+        "2·10⁻⁴ mm kattaroq",
+        "3·10⁻⁵ mm kattaroq",
+        "Ikkala o'lcham ham 0,001 mm dan katta"
+      ],
+      "t": 1,
+      "izoh": "O'nli kasrga o'tkazamiz: 3·10⁻⁵ = 0,00003 va 2·10⁻⁴ = 0,0002. Avval 10 ning darajasi solishtiriladi: −4 > −5, ya'ni ikkinchisi o'n barobar yiriroq razryadda. Koeffitsient 3 va 2 ni solishtirish bu farqni qoplamaydi. Javob: 2·10⁻⁴ mm kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "manfiy-korsatkichli-darajani-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#6a5b72a8"
+    },
+    {
+      "q": "(1/3)⁻⁴ va 3³ sonlarini taqqoslang. Manfiy ko'rsatkichli kasrni avval soddalashtiring.",
+      "v": [
+        "(1/3)⁻⁴ > 3³",
+        "(1/3)⁻⁴ < 3³",
+        "(1/3)⁻⁴ = 3³",
+        "(1/3)⁻⁴ birdan kichik"
+      ],
+      "t": 0,
+      "izoh": "Kasrni teskarisiga aylantiramiz: (1/3)⁻⁴ = 3⁴ = 81, ikkinchi son 3³ = 27. Asos bir xil bo'lgach ko'rsatkichlar solishtiriladi: 4 > 3. Javob: (1/3)⁻⁴ > 3³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-korsatkichli-darajani-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#fa0b2ce7"
+    },
+    {
+      "q": "5/7 va 7/9 kasrlarini o'zaro ko'paytirish usuli bilan taqqoslab, to'g'ri munosabatni tanlang.",
+      "v": [
+        "5/7 > 7/9",
+        "Kasrlar teng",
+        "Taqqoslash uchun umumiy maxraj shart",
+        "5/7 < 7/9"
+      ],
+      "t": 3,
+      "izoh": "Maxrajlar musbat bo'lgani uchun krest ko'paytmalarini solishtiramiz: 5·9 = 45 va 7·7 = 49. Birinchi ko'paytma kichik chiqdi, demak 5/7 < 7/9. Javob: 5/7 < 7/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasrlarni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#62b82efc"
+    },
+    {
+      "q": "Dilnoza 3 soatda 5 ta detal, Kamola esa 4 soatda 7 ta detal tayyorlaydi. Kimning ish unumi yuqori?",
+      "v": [
+        "Ish unumi teng",
+        "Kamolaning ish unumi yuqori",
+        "Dilnozaning ish unumi yuqori",
+        "Taqqoslash uchun ikkalasi bir xil vaqt ishlashi kerak"
+      ],
+      "t": 1,
+      "izoh": "Ish unumi bir soatdagi detal soni: Dilnozada 5/3, Kamolada 7/4. Krest ko'paytmalari: 5·4 = 20 va 3·7 = 21. 20 < 21 bo'lgani uchun 5/3 < 7/4. Javob: Kamolaning ish unumi yuqori.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrlarni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#7d64ea39"
+    },
+    {
+      "q": "11/15 kasrini 0,73 o'nli kasri bilan taqqoslang va to'g'ri munosabatni ko'rsating.",
+      "v": [
+        "11/15 < 0,73",
+        "11/15 = 0,73",
+        "11/15 > 0,73",
+        "Kasrni o'nli kasrga aylantirib bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Kasrni bo'lamiz: 11 : 15 = 0,7333… Bu 0,73 dan katta, chunki yuzinchi razryaddan keyin uchliklar davom etadi. Aniqroq tekshirish: 11·100 = 1100 va 0,73·15·100 = 1095, ya'ni 1100 > 1095. Javob: 11/15 > 0,73.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasrlarni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#1641f37d"
+    },
+    {
+      "q": "7/12, 5/8 va 3/5 kasrlarini o'sish tartibida joylashtirib, to'g'ri ketma-ketlikni tanlang.",
+      "v": [
+        "7/12 < 3/5 < 5/8",
+        "3/5 < 7/12 < 5/8",
+        "5/8 < 3/5 < 7/12",
+        "7/12 < 5/8 < 3/5"
+      ],
+      "t": 0,
+      "izoh": "Umumiy maxraj 120 ni olamiz: 7/12 = 70/120, 5/8 = 75/120, 3/5 = 72/120. Suratlar solishtiriladi: 70 < 72 < 75. Javob: 7/12 < 3/5 < 5/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasrlarni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#a45e68af"
+    },
+    {
+      "q": "√17 sonini 4,2 o'nli kasri bilan taqqoslang va to'g'ri munosabatni belgilang.",
+      "v": [
+        "√17 > 4,2",
+        "√17 = 4,2",
+        "Munosabat aniqlanmaydi",
+        "√17 < 4,2"
+      ],
+      "t": 3,
+      "izoh": "Ikkala son ham musbat, shuning uchun kvadratga ko'tarish tartibni saqlaydi: (√17)² = 17 va 4,2² = 17,64. 17 < 17,64 bo'lgani uchun √17 < 4,2. Javob: √17 < 4,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizni-onli-kasr-bilan-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#c966bdc9"
+    },
+    {
+      "q": "√11 va 3,3 sonlaridan qaysi biri katta ekanini kvadratga ko'tarish orqali aniqlang.",
+      "v": [
+        "√11 katta",
+        "3,3 katta",
+        "Ikkalasi teng",
+        "Ikkalasi ham 3,5 dan katta"
+      ],
+      "t": 0,
+      "izoh": "Kvadratlarni solishtiramiz: (√11)² = 11 va 3,3² = 10,89. 11 > 10,89 bo'lgani uchun √11 > 3,3. Javob: √11 katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizni-onli-kasr-bilan-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#fbefacaf"
+    },
+    {
+      "q": "Sardor √30 ning taqribiy qiymatini 5,5 deb oldi. Uning bahosi haqiqiy qiymatdan katta yoki kichikligini aniqlang.",
+      "v": [
+        "Baho aniq to'g'ri",
+        "Baho kichik, chunki √30 > 5,5",
+        "Baho katta, chunki √30 < 5,5",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "5,5² = 30,25 ni hisoblaymiz. 30 < 30,25 bo'lgani uchun √30 < 5,5. Demak Sardorning bahosi haqiqiy qiymatdan sal katta chiqqan. Javob: Baho katta, chunki √30 < 5,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizni-onli-kasr-bilan-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#61e97ba6"
+    },
+    {
+      "q": "∛63 sonini 4 butun soni bilan taqqoslang va to'g'ri munosabatni tanlang.",
+      "v": [
+        "∛63 > 4",
+        "∛63 < 4",
+        "∛63 = 4",
+        "∛63 birdan kichik"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomonni kubga ko'taramiz: (∛63)³ = 63 va 4³ = 64. 63 < 64 bo'lgani uchun ∛63 < 4. Javob: ∛63 < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizni-onli-kasr-bilan-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#151b567b"
+    },
+    {
+      "q": "Ikki sonni taqqoslashda ularning kvadratlarini solishtirish qaysi shartda to'g'ri natija beradi?",
+      "v": [
+        "Har doim, sonlarning ishorasidan qat'i nazar",
+        "Faqat sonlar butun bo'lganda",
+        "Faqat sonlardan biri nol bo'lganda",
+        "Ikkala son ham manfiy bo'lmaganda"
+      ],
+      "t": 3,
+      "izoh": "a ≥ 0 va b ≥ 0 bo'lganda a > b munosabati a² > b² bilan teng kuchli. Manfiy sonlarda qoida buziladi: −5 < −3, lekin 25 > 9. Shuning uchun shart ikkala sonning manfiy emasligi. Javob: Ikkala son ham manfiy bo'lmaganda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "darajaga-kotarish-qoidasining-sharti",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#020b0d13"
+    },
+    {
+      "q": "Quyidagi juftliklarning qaysi birida ikkala tomonni kvadratga ko'tarish taqqoslash natijasini teskarisiga o'zgartiradi?",
+      "v": [
+        "√6 va 2,5",
+        "0,4 va 0,9",
+        "−7 va 2",
+        "3 va 8"
+      ],
+      "t": 2,
+      "izoh": "−7 < 2 bo'lsa ham, kvadratga ko'targanda 49 > 4 chiqadi, ya'ni munosabat teskarisiga aylanadi. Qolgan juftliklarda ikkala son ham manfiy emas, shuning uchun kvadratga ko'tarish tartibni saqlaydi. Javob: −7 va 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajaga-kotarish-qoidasining-sharti",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#a14be045"
+    },
+    {
+      "q": "x < y munosabati barcha haqiqiy sonlar uchun x³ < y³ ga teng kuchlimi? Fikrni asoslab tanlang.",
+      "v": [
+        "Ha, toq daraja tartibni saqlaydi",
+        "Yo'q, faqat musbat sonlarda o'rinli",
+        "Yo'q, manfiy sonlarda teskarisiga o'zgaradi",
+        "Faqat butun sonlar uchun o'rinli"
+      ],
+      "t": 0,
+      "izoh": "y = x³ funksiyasi butun sonlar to'plamida emas, barcha haqiqiy sonlar uchun, ya'ni (−∞; +∞) da qat'iy o'suvchi. Shuning uchun toq darajaga ko'tarish tartibni buzmaydi: masalan −4 < −2 bo'lsa, −64 < −8 ham to'g'ri. Juft darajada esa bu xossa yo'qoladi. Javob: Ha, toq daraja tartibni saqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajaga-kotarish-qoidasining-sharti",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#48252d2e"
+    },
+    {
+      "q": "a va b musbat sonlar bo'lib, a⁵ < b⁵ ekani ma'lum. Ular haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "a > b bo'ladi",
+        "a = b bo'ladi",
+        "a va b ning nisbati aniqlanmaydi",
+        "a < b bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Musbat sonlar uchun beshinchi darajaga ko'tarish qat'iy o'suvchi amal, ya'ni tartibni saqlaydi. Demak teskari o'tish ham o'rinli: a⁵ < b⁵ dan a < b kelib chiqadi. Har ikki tomondan beshinchi darajali ildiz olish shu xulosani beradi. Javob: a < b bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajaga-kotarish-qoidasining-sharti",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#5f2dee6c"
+    },
+    {
+      "q": "Nonvoyxonada 3 ta non 15000 so'm, do'konda esa 5 ta non 24000 so'm turadi. Qayerda non arzonroq?",
+      "v": [
+        "Nonvoyxonada arzonroq, bittasi 5000 so'm",
+        "Do'konda arzonroq, bittasi 4800 so'm",
+        "Narxlar bir xil",
+        "Do'konda qimmatroq, chunki 24000 > 15000"
+      ],
+      "t": 1,
+      "izoh": "Bitta nonning narxini topamiz: nonvoyxonada 15000 : 3 = 5000 so'm, do'konda 24000 : 5 = 4800 so'm. Umumiy summani emas, birlik narxni taqqoslash kerak: 4800 < 5000. Javob: Do'konda arzonroq, bittasi 4800 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-birlik-narxni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#d9f2e012"
+    },
+    {
+      "q": "Aziza 2,5 kg olmani 37500 so'mga, Nodira esa 3 kg olmani 43500 so'mga oldi. Kim arzonroq narxda xarid qildi?",
+      "v": [
+        "Aziza, kilogrammi 14500 so'm",
+        "Narxlar teng chiqadi",
+        "Aziza, chunki kam summa to'lagan",
+        "Nodira, kilogrammi 14500 so'm"
+      ],
+      "t": 3,
+      "izoh": "Bir kilogramm narxini hisoblaymiz: Aziza uchun 37500 : 2,5 = 15000 so'm, Nodira uchun 43500 : 3 = 14500 so'm. 14500 < 15000 bo'lgani uchun Nodiraning xaridi arzonroq. Javob: Nodira, kilogrammi 14500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-birlik-narxni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#f2db9696"
+    },
+    {
+      "q": "Bir litrlik yog' 24000 so'm, besh litrlik kanistr esa 115000 so'm turadi. Bir litr hisobida qaysi qadoq foydali?",
+      "v": [
+        "Kanistr foydali, litri 23000 so'm",
+        "Bir litrlik qadoq foydali, litri 23000 so'm",
+        "Ikkala qadoqda ham litri bir xil",
+        "Kanistr foydasiz, chunki narxi baland"
+      ],
+      "t": 0,
+      "izoh": "Kanistrdagi bir litr narxi: 115000 : 5 = 23000 so'm. Alohida qadoqda esa litri 24000 so'm. 23000 < 24000 bo'lgani uchun kanistr foydali. Javob: Kanistr foydali, litri 23000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-birlik-narxni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#4e550fb1"
+    },
+    {
+      "q": "Internet uchun A tarifi 30 kunga 45000 so'm, B tarifi 7 kunga 11200 so'm. Bir kunlik to'lov bo'yicha qaysi tarif arzon?",
+      "v": [
+        "B tarifi, kuniga 1500 so'm",
+        "A tarifi, kuniga 1500 so'm",
+        "Tariflar teng, kuniga 1600 so'm",
+        "B tarifi, chunki to'lovi kichik"
+      ],
+      "t": 1,
+      "izoh": "Kunlik to'lovni topamiz: A uchun 45000 : 30 = 1500 so'm, B uchun 11200 : 7 = 1600 so'm. Bir marta to'lanadigan summa emas, kunlik narx taqqoslanadi: 1500 < 1600. Javob: A tarifi, kuniga 1500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-birlik-narxni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#1937edab"
+    },
+    {
+      "q": "Avtobus 234 km yo'lni 3 soatda, poyezd esa 350 km yo'lni 4 soatda bosib o'tdi. Qaysi transport tezroq harakatlangan?",
+      "v": [
+        "Avtobus, tezligi 78 km/soat",
+        "Tezliklari teng",
+        "Ikkalasining tezligi 80 km/soat dan yuqori",
+        "Poyezd, tezligi 87,5 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Tezlik masofani vaqtga bo'lish orqali topiladi: avtobusda 234 : 3 = 78 km/soat, poyezdda 350 : 4 = 87,5 km/soat. Sarflangan vaqt emas, tezlik solishtiriladi: 87,5 > 78. Javob: Poyezd, tezligi 87,5 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-tezlikni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#d8a8c33f"
+    },
+    {
+      "q": "Jahongir 5 km masofani 24 daqiqada, Botir esa 8 km masofani 40 daqiqada yugurdi. Kimning bir kilometrga sarflagan vaqti kam?",
+      "v": [
+        "Botir, kilometriga 4,8 daqiqa",
+        "Ikkalasi teng yugurgan",
+        "Jahongir, kilometriga 4,8 daqiqa",
+        "Ikkalasi ham kilometriga 5 daqiqadan sarflagan"
+      ],
+      "t": 2,
+      "izoh": "Bir kilometrga ketgan vaqtni hisoblaymiz: Jahongirda 24 : 5 = 4,8 daqiqa, Botirda 40 : 8 = 5 daqiqa. Bosib o'tilgan masofa emas, bir kilometrga sarflangan vaqt taqqoslanadi: 4,8 < 5. Javob: Jahongir, kilometriga 4,8 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-tezlikni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#d83b4587"
+    },
+    {
+      "q": "Otabek 45 daqiqada 15 km, Ulug'bek esa 1 soatda 21 km yo'l bosdi. Ularning o'rtacha tezliklarini taqqoslang.",
+      "v": [
+        "Otabek tezroq, tezligi 21 km/soat",
+        "Ulug'bek tezroq, tezligi 21 km/soat",
+        "Tezliklari teng, ikkalasi 20 km/soat",
+        "Otabekning tezligi 15 km/soat"
+      ],
+      "t": 1,
+      "izoh": "Otabekning tezligi: 45 daqiqa 0,75 soat, demak 15 : 0,75 = 20 km/soat. Ulug'bekniki 21 : 1 = 21 km/soat. 21 > 20 bo'lgani uchun Ulug'bek tezroq. Javob: Ulug'bek tezroq, tezligi 21 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-tezlikni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#c599aeea"
+    },
+    {
+      "q": "Birinchi mashina 100 km ni 1 soat 15 daqiqada, ikkinchisi 140 km ni 1 soat 45 daqiqada bosib o'tdi. Qaysi mashina tezroq bo'lgan?",
+      "v": [
+        "Birinchi mashina tezroq",
+        "Ikkinchi mashina tezroq",
+        "Vaqtlar aralash birlikda bo'lgani uchun taqqoslab bo'lmaydi",
+        "Tezliklari teng, ikkalasi 80 km/soat"
+      ],
+      "t": 3,
+      "izoh": "Vaqtlarni soatga o'tkazamiz: 1 soat 15 daqiqa 1,25 soat, 1 soat 45 daqiqa 1,75 soat. Tezliklar: 100 : 1,25 = 80 km/soat va 140 : 1,75 = 80 km/soat. Ikki nisbat teng chiqdi. Javob: Tezliklari teng, ikkalasi 80 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-tezlikni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#1da6b4bb"
+    },
+    {
+      "q": "Kvadrat shaklidagi tomorqaning yuzasi 250 m². Uning tomoni 16 m dan uzunmi yoki qisqami?",
+      "v": [
+        "Tomon 16 m dan qisqa",
+        "Tomon 16 m dan uzun",
+        "Tomon aynan 16 m",
+        "Tomon uzunligi aniqlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Tomon a = √250 ga teng. Taqqoslash uchun 16 ni kvadratga ko'taramiz: 16² = 256. 250 < 256 bo'lgani uchun √250 < 16. Javob: Tomon 16 m dan qisqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-yuza-va-tomonni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#0ee511cb"
+    },
+    {
+      "q": "Kub shaklidagi idishning hajmi 1500 sm³. Uning qirrasi 12 sm dan qisqa ekanini tekshirib, to'g'ri xulosani tanlang.",
+      "v": [
+        "Yo'q, qirra 12 sm dan uzun",
+        "Ha, chunki 12³ = 1728 va 1728 > 1500",
+        "Qirra aynan 12 sm ga teng",
+        "Hajmdan qirrani topib bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Qirra a = ∛1500 ga teng. Taqqoslash uchun 12 ni kubga ko'taramiz: 12³ = 1728. 1500 < 1728 bo'lgani uchun ∛1500 < 12. Javob: Ha, chunki 12³ = 1728 va 1728 > 1500.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-yuza-va-tomonni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#51cd356a"
+    },
+    {
+      "q": "Bir kvadrat maydonning yuzasi 200 m², ikkinchi kvadrat maydonning tomoni esa 14 m. Qaysi maydonning tomoni uzunroq?",
+      "v": [
+        "Tomoni 14 m bo'lgan maydonniki",
+        "Tomonlar teng uzunlikda",
+        "Yuzasi 200 m² bo'lgan maydonniki",
+        "Aniqlash uchun perimetr kerak"
+      ],
+      "t": 2,
+      "izoh": "Birinchi maydon tomoni √200 ga teng. 14 ni kvadratga ko'taramiz: 14² = 196. 200 > 196 bo'lgani uchun √200 > 14. Javob: Yuzasi 200 m² bo'lgan maydonniki.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-yuza-va-tomonni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#5b59e5e5"
+    },
+    {
+      "q": "Qirrasi 9 sm bo'lgan kub va o'lchamlari 8 sm, 9 sm hamda 11 sm bo'lgan quti bor. Qaysi jismning hajmi katta?",
+      "v": [
+        "Kubning hajmi katta",
+        "Hajmlari teng",
+        "Kub hajmi qutinikidan 63 sm³ ga katta",
+        "Qutining hajmi katta"
+      ],
+      "t": 3,
+      "izoh": "Kub hajmi 9³ = 729 sm³. Quti hajmi 8·9·11 = 792 sm³. Ikkalasi ham sm³ da, demak to'g'ridan-to'g'ri solishtiriladi: 792 > 729. Javob: Qutining hajmi katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-yuza-va-tomonni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#27921420"
+    },
+    {
+      "q": "Birinchi bank omonatni 3 yil davomida har yili 10 foizga, ikkinchisi 2 yil davomida har yili 15 foizga oshiradi. Qaysi bankda pul ko'proq o'sadi?",
+      "v": [
+        "Birinchi bankda, koeffitsient 1,331",
+        "Ikkinchi bankda, koeffitsient 1,3225",
+        "O'sish bir xil bo'ladi",
+        "Farq omonat summasiga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "O'sish koeffitsientlarini hisoblaymiz: birinchi bankda 1,1³ = 1,331, ikkinchisida 1,15² = 1,3225. Yillik foiz emas, umumiy koeffitsient taqqoslanadi: 1,331 > 1,3225. Javob: Birinchi bankda, koeffitsient 1,331.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-osish-koeffitsientini-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#0f2f11f9"
+    },
+    {
+      "q": "Tuman aholisi har yili 1,02 marta ortmoqda. O'n yildan keyingi o'sish koeffitsientini 1,2 bilan taqqoslang.",
+      "v": [
+        "1,02¹⁰ = 1,2 ga teng",
+        "1,02¹⁰ > 1,2",
+        "1,02¹⁰ < 1,2, chunki 10·0,02 = 0,2",
+        "Taqqoslash uchun aholi soni kerak"
+      ],
+      "t": 1,
+      "izoh": "Foizlar oddiy qo'shilmaydi: har yilgi o'sish avvalgi natijaga qo'llanadi. (1 + 0,02)¹⁰ yoyilmasida 1 + 10·0,02 = 1,2 dan tashqari musbat qo'shiluvchilar ham bor. Shuning uchun 1,02¹⁰ > 1,2 (taqriban 1,219). Javob: 1,02¹⁰ > 1,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-osish-koeffitsientini-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#bc0ecb8f"
+    },
+    {
+      "q": "Ish haqi bir marta 20 foizga oshsa yoki ketma-ket ikki marta 10 foizdan oshsa, qaysi holatda natija katta bo'ladi?",
+      "v": [
+        "Bir marta 20 foiz oshgani katta",
+        "Ikki holat bir xil natija beradi",
+        "Ketma-ket ikki marta 10 foiz oshgani katta",
+        "Natija boshlang'ich ish haqiga bog'liq"
+      ],
+      "t": 2,
+      "izoh": "Bir martalik o'sish koeffitsienti 1,2. Ketma-ket ikki o'sishda koeffitsient 1,1² = 1,21 bo'ladi, chunki ikkinchi foiz allaqachon oshgan summadan olinadi. 1,21 > 1,2. Javob: Ketma-ket ikki marta 10 foiz oshgani katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-osish-koeffitsientini-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#9b808e6e"
+    },
+    {
+      "q": "Noutbuk narxi har yili avvalgisining 0,8 qismiga tushmoqda. Uch yildan keyingi narx boshlang'ich narxning yarmidan ko'pmi yoki kammi?",
+      "v": [
+        "Aniq yarmiga teng bo'ladi",
+        "Kam, chunki 0,8·3 = 2,4",
+        "Uch yilda narx umuman tushmaydi",
+        "Ko'p, chunki 0,8³ = 0,512"
+      ],
+      "t": 3,
+      "izoh": "Uch yillik koeffitsient 0,8³ = 0,512 ga teng. Uni 0,5 bilan taqqoslaymiz: 0,512 > 0,5. Demak narx boshlang'ich qiymatning yarmidan sal ko'proq bo'lib qoladi. Javob: Ko'p, chunki 0,8³ = 0,512.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-osish-koeffitsientini-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#b60e281c"
+    },
+    {
+      "q": "Uch shaharda yillik yog'in miqdori 380 mm, 0,42 m va 41 sm ni tashkil etdi. Ularni o'sish tartibida joylashtiring.",
+      "v": [
+        "380 mm < 41 sm < 0,42 m",
+        "0,42 m < 41 sm < 380 mm",
+        "41 sm < 380 mm < 0,42 m",
+        "380 mm < 0,42 m < 41 sm"
+      ],
+      "t": 0,
+      "izoh": "Hammasini millimetrga aylantiramiz: 0,42 m = 420 mm, 41 sm = 410 mm, uchinchisi 380 mm. Endi sonlar solishtiriladi: 380 < 410 < 420. Javob: 380 mm < 41 sm < 0,42 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-birliklarni-keltirib-tartiblash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#69c5106a"
+    },
+    {
+      "q": "Birinchi idishda 3 l sharbat va 12 l suv, ikkinchisida 5 l sharbat va 18 l suv aralashtirildi. Qaysi aralashma quyuqroq?",
+      "v": [
+        "Birinchi aralashma quyuqroq",
+        "Ikkinchi aralashma quyuqroq",
+        "Quyuqliklari bir xil",
+        "Quyuqlikni faqat sharbat hajmi belgilaydi"
+      ],
+      "t": 1,
+      "izoh": "Sharbatning butun aralashmadagi ulushini topamiz: birinchisida 3/15 = 1/5, ikkinchisida 5/23. Krest ko'paytmalari: 1·23 = 23 va 5·5 = 25, demak 1/5 < 5/23. Javob: Ikkinchi aralashma quyuqroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-ulushlarni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#c09e9e33"
+    },
+    {
+      "q": "Bir sinfda 25 o'quvchidan 9 tasi, boshqasida 20 o'quvchidan 7 tasi a'lochi. Qaysi sinfda a'lochilar ulushi yuqori?",
+      "v": [
+        "Ikkinchi sinfda, ulushi 0,35",
+        "Ulushlar teng",
+        "Birinchi sinfda, ulushi 0,36",
+        "Ulushlarni taqqoslash uchun sinflar teng bo'lishi kerak"
+      ],
+      "t": 2,
+      "izoh": "Ulushlarni o'nli kasrga aylantiramiz: 9/25 = 36/100 = 0,36 va 7/20 = 35/100 = 0,35. A'lochilar soni emas, ulush taqqoslanadi: 0,36 > 0,35. Javob: Birinchi sinfda, ulushi 0,36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ulushlarni-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#00ab94fb"
+    },
+    {
+      "q": "Uch do'konning oylik savdosi 2,4·10⁸ so'm, 1,9·10⁹ so'm va 8,7·10⁸ so'm bo'ldi. Savdolarni o'sish tartibida joylashtiring.",
+      "v": [
+        "1,9·10⁹ < 2,4·10⁸ < 8,7·10⁸",
+        "2,4·10⁸ < 1,9·10⁹ < 8,7·10⁸",
+        "8,7·10⁸ < 2,4·10⁸ < 1,9·10⁹",
+        "2,4·10⁸ < 8,7·10⁸ < 1,9·10⁹"
+      ],
+      "t": 3,
+      "izoh": "Standart ko'rinishdagi sonlarda avval 10 ning darajasi solishtiriladi: 10⁸ < 10⁹, demak 1,9·10⁹ eng katta. Bir xil darajali ikkitasida koeffitsientlar taqqoslanadi: 2,4 < 8,7. Javob: 2,4·10⁸ < 8,7·10⁸ < 1,9·10⁹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-birliklarni-keltirib-tartiblash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#36292744"
+    },
+    {
+      "q": "√2 ≈ 1,414 va √3 ≈ 1,732 taqribiy qiymatlari berilgan. √2 + √3 yig'indisini 3,15 bilan taqqoslang.",
+      "v": [
+        "√2 + √3 > 3,15",
+        "√2 + √3 = 3,15",
+        "√2 + √3 < 3,15",
+        "Yig'indi 4 dan katta"
+      ],
+      "t": 2,
+      "izoh": "Taqribiy qiymatlarni qo'shamiz: 1,414 + 1,732 = 3,146. Bu son 3,15 dan kichik, chunki yuzinchi razryadda 4 < 5. Ildizlarni ildiz ostida qo'shish (√5 chiqarish) esa xato bo'lardi. Javob: √2 + √3 < 3,15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-qiymat-orqali-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#9426ae28"
+    },
+    {
+      "q": "√5 ≈ 2,236 ekani ma'lum. (√5 + 1)/2 ifodaning qiymatini 1,62 bilan taqqoslang.",
+      "v": [
+        "(√5 + 1)/2 < 1,62",
+        "(√5 + 1)/2 > 1,62",
+        "(√5 + 1)/2 = 1,62",
+        "Ifoda 2 dan katta"
+      ],
+      "t": 0,
+      "izoh": "Suratni hisoblaymiz: 2,236 + 1 = 3,236. Endi ikkiga bo'lamiz: 3,236 : 2 = 1,618. Uchinchi razryadni solishtiramiz: 1,618 < 1,620. Javob: (√5 + 1)/2 < 1,62.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-qiymat-orqali-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#91d923eb"
+    },
+    {
+      "q": "Doira o'lchovlarida ishlatiladigan π ≈ 3,14159 va √10 ≈ 3,16228 sonlaridan qaysi biri katta?",
+      "v": [
+        "Ikkalasi ham teng deb olinadi",
+        "π katta",
+        "Sonlar farqi 0,1 dan katta",
+        "√10 katta"
+      ],
+      "t": 3,
+      "izoh": "Taqribiy qiymatlarni razryadma-razryad solishtiramiz: butun qismlari teng (3), o'ndan bir ulushlari ham teng (1). Yuzdan bir ulushida esa 6 > 4, demak 3,16228 > 3,14159. Javob: √10 katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "taqribiy-qiymat-orqali-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#f2014e5e"
+    },
+    {
+      "q": "2√2 va 1 + √3 sonlaridan qaysi biri katta ekanini kvadratga ko'tarish orqali aniqlang.",
+      "v": [
+        "Ikkalasi teng",
+        "2√2 katta",
+        "1 + √3 katta",
+        "Ikkalasi ham 2,5 dan kichik"
+      ],
+      "t": 1,
+      "izoh": "Ikkala son musbat, kvadratga ko'taramiz: (2√2)² = 8 va (1 + √3)² = 1 + 2√3 + 3 = 4 + 2√3. Endi 8 va 4 + 2√3 ni solishtiramiz: 2√3 = √12 < 4, demak 4 + 2√3 < 8. Javob: 2√2 katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqribiy-qiymat-orqali-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#24ade2ee"
+    },
+    {
+      "q": "1/(√5 − 2) ifodaning qiymatini 4 butun soni bilan taqqoslang. Avval maxrajni ratsionallashtiring.",
+      "v": [
+        "Ifoda 4 dan kichik",
+        "Ifoda 4 ga teng",
+        "Ifoda 1 dan kichik",
+        "Ifoda 4 dan katta"
+      ],
+      "t": 3,
+      "izoh": "Surat va maxrajni (√5 + 2) ga ko'paytiramiz: maxraj (√5)² − 2² = 5 − 4 = 1 bo'ladi. Demak ifoda √5 + 2 ga teng. √5 > 2 bo'lgani uchun √5 + 2 > 4. Javob: Ifoda 4 dan katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxrajni-ratsionallashtirib-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#3d338cde"
+    },
+    {
+      "q": "2/(√7 − √5) ifodani soddalashtiring va uni 5 soni bilan taqqoslab, to'g'ri xulosani tanlang.",
+      "v": [
+        "Ifoda 5 dan kichik",
+        "Ifoda 5 dan katta",
+        "Ifoda 5 ga teng",
+        "Ifoda 2 dan kichik"
+      ],
+      "t": 0,
+      "izoh": "Qo'shma ifodaga ko'paytiramiz: maxraj 7 − 5 = 2 bo'ladi, natijada 2(√7 + √5)/2 = √7 + √5. Endi baholaymiz: √7 < 2,65 va √5 < 2,24, yig'indi 4,89 atrofida. Demak ifoda 5 dan kichik. Javob: Ifoda 5 dan kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxrajni-ratsionallashtirib-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#fc061e68"
+    },
+    {
+      "q": "1/(√10 − 3) ifodaning qiymati 6 dan katta yoki kichikligini aniqlang va javobni asoslang.",
+      "v": [
+        "6 ga teng",
+        "6 dan katta",
+        "6 dan kichik",
+        "1 dan kichik"
+      ],
+      "t": 1,
+      "izoh": "Maxrajni ratsionallashtiramiz: (√10 − 3)(√10 + 3) = 10 − 9 = 1, demak ifoda √10 + 3 ga teng. √10 > 3 bo'lgani uchun √10 + 3 > 6. Javob: 6 dan katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxrajni-ratsionallashtirib-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#2bcde664"
+    },
+    {
+      "q": "3/√6 va √2 sonlarini taqqoslang. Ifodani ildiz ostiga birlashtirib ishlash qulay.",
+      "v": [
+        "3/√6 > √2",
+        "3/√6 = √2",
+        "3/√6 birdan kichik",
+        "3/√6 < √2"
+      ],
+      "t": 3,
+      "izoh": "Ifodani bitta ildiz ostiga keltiramiz: 3/√6 = √(9/6) = √1,5. Ikkinchi son √2. Ildiz ostidagilar solishtiriladi: 1,5 < 2. Javob: 3/√6 < √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "maxrajni-ratsionallashtirib-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#9bb0e760"
+    },
+    {
+      "q": "2³⁰, 4¹⁴, 8¹¹ va 16⁸ sonlaridan eng kattasini aniqlang.",
+      "v": [
+        "2³⁰",
+        "16⁸",
+        "8¹¹",
+        "4¹⁴"
+      ],
+      "t": 2,
+      "izoh": "Hammasini 2 asosiga keltiramiz: 4¹⁴ = 2²⁸, 8¹¹ = 2³³, 16⁸ = 2³², birinchisi 2³⁰. Asos birdan katta, demak ko'rsatkichi eng katta son yutadi: 33 > 32 > 30 > 28. Javob: 8¹¹.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-yoki-eng-kichikni-tanlash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#815ac402"
+    },
+    {
+      "q": "√6, ∛13, ⁴√38 va 2,4 sonlaridan eng kichigini tanlang va tanlovingizni asoslang.",
+      "v": [
+        "2,4",
+        "∛13",
+        "√6",
+        "⁴√38"
+      ],
+      "t": 1,
+      "izoh": "2,4 ni har biri bilan taqqoslaymiz: 2,4² = 5,76 < 6, demak 2,4 < √6. 2,4³ = 13,824 > 13, demak ∛13 < 2,4. ⁴√38 esa √6 dan katta, chunki (√6)⁴ = 36 < 38. Shunday qilib eng kichigi ∛13. Javob: ∛13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "eng-katta-yoki-eng-kichikni-tanlash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#bc543564"
+    },
+    {
+      "q": "Do'konda guruch to'rt xil qadoqda: 1,5 kg 21000 so'm, 2 kg 27000 so'm, 2,5 kg 34500 so'm, 3 kg 40200 so'm. Qaysi qadoq eng foydali?",
+      "v": [
+        "1,5 kg lik qadoq",
+        "2,5 kg lik qadoq",
+        "2 kg lik qadoq",
+        "3 kg lik qadoq"
+      ],
+      "t": 3,
+      "izoh": "Har bir qadoqda kilogramm narxini topamiz: 21000 : 1,5 = 14000, 27000 : 2 = 13500, 34500 : 2,5 = 13800, 40200 : 3 = 13400 so'm. Eng kichik birlik narx 13400 so'm. Javob: 3 kg lik qadoq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-yoki-eng-kichikni-tanlash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#d380e367"
+    },
+    {
+      "q": "5/9, 7/12, 4/7 va 11/20 kasrlaridan eng kattasini tanlang.",
+      "v": [
+        "7/12",
+        "4/7",
+        "5/9",
+        "11/20"
+      ],
+      "t": 0,
+      "izoh": "Har birini o'nli kasrga aylantiramiz: 5/9 ≈ 0,556, 7/12 ≈ 0,583, 4/7 ≈ 0,571, 11/20 = 0,55. Eng katta o'nli kasr 0,583 ga mos keladi. Javob: 7/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-yoki-eng-kichikni-tanlash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#23c022eb"
+    },
+    {
+      "q": "a = 3√7 va b = 8 bo'lsa, a − b ayirmaning ishorasini aniqlang.",
+      "v": [
+        "Ayirma nolga teng",
+        "Ayirma manfiy",
+        "Ayirma musbat",
+        "Ishorani aniqlab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ko'paytuvchini ildiz ostiga kiritamiz: 3√7 = √63. Ikkinchi sonni ham shu ko'rinishga keltiramiz: 8 = √64. 63 < 64 bo'lgani uchun a < b, demak a − b < 0. Javob: Ayirma manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-ishorasi-orqali-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#80d88cdd"
+    },
+    {
+      "q": "Bir idishda 5√5 litr, ikkinchisida 11 litr suv bor. Birinchi idishdagi suv ko'proqmi, ya'ni 5√5 − 11 ayirma musbatmi?",
+      "v": [
+        "Yo'q, ayirma manfiy",
+        "Ayirma nolga teng",
+        "Suv miqdorlarini taqqoslab bo'lmaydi",
+        "Ha, ayirma musbat"
+      ],
+      "t": 3,
+      "izoh": "5√5 ni bitta ildiz ostiga kiritamiz: 5√5 = √(25·5) = √125. Ikkinchi sonni ham shunday yozamiz: 11 = √121. 125 > 121 bo'lgani uchun 5√5 > 11, demak ayirma musbat. Javob: Ha, ayirma musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayirma-ishorasi-orqali-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#dc3e7623"
+    },
+    {
+      "q": "1/7 kasr va 0,143 o'nli kasr berilgan. Ularning ayirmasi qanday ishoraga ega?",
+      "v": [
+        "Ayirma musbat",
+        "Ayirma nolga teng",
+        "Ayirma manfiy",
+        "Ishora kasrni yaxlitlashga bog'liq"
+      ],
+      "t": 2,
+      "izoh": "Ikkala sonni 7000 ga ko'paytirib solishtiramiz: 1/7 uchun 1000, 0,143 uchun 1001 chiqadi. 1000 < 1001 bo'lgani uchun 1/7 < 0,143, ya'ni 1/7 − 0,143 < 0. Javob: Ayirma manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayirma-ishorasi-orqali-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#350c0f95"
+    },
+    {
+      "q": "√101 − √99 va √51 − √49 ayirmalaridan qaysi biri katta ekanini aniqlang.",
+      "v": [
+        "Ayirmalar teng, ikkalasi ham 2 ga bog'liq emas",
+        "√101 − √99 katta",
+        "Har ikki ayirma ham 0,5 dan katta",
+        "√51 − √49 katta"
+      ],
+      "t": 3,
+      "izoh": "Har bir ayirmani qo'shma ifodaga ko'paytirib yozamiz: √101 − √99 = 2/(√101 + √99), √51 − √49 = 2/(√51 + √49). Suratlar teng, demak maxraji kichik kasr katta. √51 + √49 ≈ 14,1 va √101 + √99 ≈ 20,0. Javob: √51 − √49 katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayirma-ishorasi-orqali-taqqoslash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#70d52475"
+    },
+    {
+      "q": "2 < √x < 3 shartini qanoatlantiruvchi nechta butun x soni mavjud?",
+      "v": [
+        "4 ta",
+        "5 ta",
+        "3 ta",
+        "6 ta"
+      ],
+      "t": 0,
+      "izoh": "Barcha qismlar manfiy emas, shuning uchun tengsizlikni kvadratga ko'taramiz: 4 < x < 9. Bu oraliqdagi butun sonlar 5, 6, 7 va 8. Chegaralar qat'iy bo'lgani uchun 4 va 9 kirmaydi. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqni-tengsizlik-bilan-aniqlash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#5bfb52a4"
+    },
+    {
+      "q": "√145 sonining butun qismi nechaga teng ekanini aniqlang va to'g'ri variantni belgilang.",
+      "v": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "t": 1,
+      "izoh": "Yaqin to'la kvadratlarni olamiz: 12² = 144 va 13² = 169. 144 < 145 < 169 bo'lgani uchun 12 < √145 < 13. Demak butun qismi 12 ga teng. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oraliqni-tengsizlik-bilan-aniqlash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#7cc63de5"
+    },
+    {
+      "q": "Kvadrat shaklidagi xonaning yuzasi 30 m² dan katta, 42 m² dan kichik. Tomoni butun son bo'lsa, u nechaga teng?",
+      "v": [
+        "5 m",
+        "7 m",
+        "6 m",
+        "Butun son bo'la olmaydi"
+      ],
+      "t": 2,
+      "izoh": "Tomon a bo'lsa, 30 < a² < 42 bo'ladi. Butun sonlar kvadratlari: 5² = 25 (kichik), 6² = 36 (oraliqda), 7² = 49 (katta). Faqat 36 shartni qanoatlantiradi. Javob: 6 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oraliqni-tengsizlik-bilan-aniqlash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#fb09c349"
+    },
+    {
+      "q": "n butun son bo'lib, n < √70 < n + 1 shart bajariladi. n(n + 1) ko'paytmaning qiymatini toping.",
+      "v": [
+        "56",
+        "90",
+        "110",
+        "72"
+      ],
+      "t": 3,
+      "izoh": "√70 ni joylashtiramiz: 8² = 64 va 9² = 81, ya'ni 64 < 70 < 81. Demak 8 < √70 < 9 va n = 8 bo'ladi. Ko'paytma n(n + 1) = 8·9 = 72. Javob: 72.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oraliqni-tengsizlik-bilan-aniqlash",
+      "id": "matematika_tngs_m02-sonlarni-taqqoslash-va-tartiblash#daf3a46e"
+    }
+  ]
+}

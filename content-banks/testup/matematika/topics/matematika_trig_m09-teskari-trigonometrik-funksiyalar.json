@@ -1,0 +1,1609 @@
+{
+  "nom": "Teskari trigonometrik funksiyalar",
+  "bolim": "Trigonometriya",
+  "blok": "trig",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Nilufar daftariga arcsin(√3/2) ifodasining aniq qiymatini yozmoqchi. Bu qiymat [−π/2; π/2] oralig'idan tanlanadi. To'g'ri javobni belgilang.",
+      "v": [
+        "π/3",
+        "π/6",
+        "2π/3",
+        "−π/3"
+      ],
+      "t": 0,
+      "izoh": "arcsin a — sinusi a ga teng bo'lgan va [−π/2; π/2] oralig'ida yotuvchi burchak. sin(π/3) = √3/2 bo'lib, π/3 shu oraliqqa kiradi. π/6 ning sinusi 1/2, shuning uchun yaramaydi. 2π/3 ning sinusi ham √3/2, lekin u oraliqdan chiqib ketadi. Javob: π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arcsin-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#0ff2cb4a"
+    },
+    {
+      "q": "arcsin(−√2/2) ifodasining qiymatini hisoblang va natijani to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "π/4",
+        "3π/4",
+        "−π/4",
+        "−3π/4"
+      ],
+      "t": 2,
+      "izoh": "arcsin toq funksiya: arcsin(−a) = −arcsin a. arcsin(√2/2) = π/4 bo'lgani uchun arcsin(−√2/2) = −π/4. 3π/4 — bu arccos(−√2/2) qiymati, u arcsin uchun oraliqdan tashqarida. −3π/4 ham [−π/2; π/2] ga kirmaydi. Javob: −π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arcsin-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#a417ad3e"
+    },
+    {
+      "q": "Karim kalkulyatorsiz arcsin1 ning qiymatini topmoqchi. U sinusi 1 ga teng bo'lgan burchakni [−π/2; π/2] oralig'idan izlamoqda. Natija qanday chiqadi?",
+      "v": [
+        "π",
+        "0",
+        "π/2",
+        "−π/2"
+      ],
+      "t": 2,
+      "izoh": "Sinus eng katta qiymati 1 ga faqat π/2 burchakda erishadi. π/2 soni [−π/2; π/2] oralig'ining o'ng chetida yotadi, demak ta'rifga mos keladi. sin π = 0 va sin 0 = 0 bo'lgani uchun π va 0 yaramaydi, −π/2 ning sinusi esa −1. Javob: π/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arcsin-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#dbdfbe63"
+    },
+    {
+      "q": "arcsin(−1/2) ifodasining qiymatini toping va uni to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "−π/6",
+        "π/6",
+        "−π/3",
+        "7π/6"
+      ],
+      "t": 0,
+      "izoh": "Avval arcsin(1/2) = π/6 ekanini eslaymiz, chunki sin(π/6) = 1/2. arcsin toq bo'lgani uchun arcsin(−1/2) = −π/6. −π/3 xato, chunki uning sinusi −√3/2. 7π/6 ning sinusi −1/2 bo'lsa ham, u qiymatlar oralig'iga kirmaydi. Javob: −π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arcsin-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#7ca506c0"
+    },
+    {
+      "q": "Malika kosinusi −1/2 ga teng bo'lgan burchakni [0; π] oralig'idan izlayapti, ya'ni arccos(−1/2) ni hisoblamoqda. Qaysi javob to'g'ri?",
+      "v": [
+        "π/3",
+        "−π/3",
+        "2π/3",
+        "4π/3"
+      ],
+      "t": 2,
+      "izoh": "arccos a qiymati doim [0; π] oralig'ida bo'ladi, shuning uchun manfiy javob mumkin emas. arccos(−a) = π − arccos a formulasini qo'llaymiz: arccos(−1/2) = π − π/3 = 2π/3. cos(2π/3) = −1/2 ekanini bevosita tekshirish ham mumkin. 4π/3 esa oraliqdan chiqadi. Javob: 2π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arccos-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#e3e5454c"
+    },
+    {
+      "q": "arccos(√2/2) ifodasining qiymatini aniqlang va to'g'ri variantni belgilang.",
+      "v": [
+        "3π/4",
+        "π/4",
+        "π/3",
+        "−π/4"
+      ],
+      "t": 1,
+      "izoh": "Kosinusi √2/2 ga teng burchakni [0; π] oralig'idan izlaymiz: cos(π/4) = √2/2. Demak arccos(√2/2) = π/4. 3π/4 ning kosinusi −√2/2, π/3 ning kosinusi esa 1/2. −π/4 arccos qiymati bo'la olmaydi, chunki arccos hech qachon manfiy emas. Javob: π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arccos-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#e45d4530"
+    },
+    {
+      "q": "arccos(−√3/2) ifodasining qiymatini hisoblab, to'g'ri javob turgan variantni ko'rsating.",
+      "v": [
+        "π/6",
+        "5π/6",
+        "−π/6",
+        "7π/6"
+      ],
+      "t": 1,
+      "izoh": "arccos(√3/2) = π/6, chunki cos(π/6) = √3/2. Manfiy argument uchun arccos(−a) = π − arccos a: π − π/6 = 5π/6. Tekshiramiz: cos(5π/6) = −√3/2. −π/6 va 7π/6 [0; π] oralig'idan tashqarida qolgani uchun javob bo'la olmaydi. Javob: 5π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arccos-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#738604f8"
+    },
+    {
+      "q": "Sinfda o'qituvchi arccos(−1) ni doskaga yozdi va o'quvchilardan uning qiymatini so'radi. To'g'ri javobni tanlang.",
+      "v": [
+        "0",
+        "π/2",
+        "−π",
+        "π"
+      ],
+      "t": 3,
+      "izoh": "Kosinus eng kichik qiymati −1 ga [0; π] oralig'ida faqat burchak π bo'lganda erishadi, chunki cos π = −1. arccos qiymati manfiy bo'la olmaydi, shuning uchun −π yaramaydi. cos 0 = 1 va cos(π/2) = 0 bo'lgani uchun qolgan ikki variant ham xato. Javob: π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arccos-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#7de019d0"
+    },
+    {
+      "q": "arctg√3 ifodasining qiymatini toping. Javob tangensi √3 ga teng va (−π/2; π/2) oralig'ida yotuvchi burchak bo'lishi kerak.",
+      "v": [
+        "π/6",
+        "π/3",
+        "4π/3",
+        "−π/6"
+      ],
+      "t": 1,
+      "izoh": "tg(π/3) = √3 ekanini bilamiz va π/3 soni (−π/2; π/2) oralig'ida yotadi. Demak arctg√3 = π/3. π/6 ning tangensi √3/3, shuning uchun u argumentni chalkashtirishdan kelib chiqqan xato. 4π/3 ning tangensi ham √3, lekin u qiymatlar oralig'idan tashqarida. Javob: π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arctg-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#f69d8eda"
+    },
+    {
+      "q": "arctg(√3/3) ifodasining aniq qiymatini hisoblang va uni to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "π/3",
+        "π/4",
+        "5π/6",
+        "π/6"
+      ],
+      "t": 3,
+      "izoh": "√3/3 soni 1/√3 bilan bir xil. tg(π/6) = √3/3 bo'lgani uchun arctg(√3/3) = π/6. π/4 ning tangensi 1, π/3 niki esa √3 — bu ikkalasi eng ko'p uchraydigan chalkashlik. 5π/6 arctg qiymatlar oralig'iga umuman kirmaydi. Javob: π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arctg-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#eb2d9310"
+    },
+    {
+      "q": "arctg(−√3) ifodasi qanday qiymatga ega bo'ladi? Javobingizni tangensning toqligiga tayanib tekshiring.",
+      "v": [
+        "−π/3",
+        "2π/3",
+        "π/3",
+        "−π/6"
+      ],
+      "t": 0,
+      "izoh": "arctg toq funksiya, ya'ni arctg(−a) = −arctg a. arctg√3 = π/3 bo'lgani uchun arctg(−√3) = −π/3. 2π/3 ning tangensi ham −√3, lekin u (−π/2; π/2) oralig'ida emas. −π/6 esa −√3/3 ga mos keladi. Javob: −π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arctg-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#484c50bf"
+    },
+    {
+      "q": "arctg(−√3/3) ifodasining qiymatini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "−π/6",
+        "π/6",
+        "−π/3",
+        "5π/6"
+      ],
+      "t": 0,
+      "izoh": "Avval musbat argumentni ko'ramiz: arctg(√3/3) = π/6. arctg toq bo'lgani uchun arctg(−√3/3) = −π/6. Ishorani tashlab yuborsak π/6 chiqadi — bu tipik xato. −π/3 esa −√3 ga mos keladi, 5π/6 umuman oraliqqa kirmaydi. Javob: −π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arctg-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#7f64880c"
+    },
+    {
+      "q": "arcctg(−1) ifodasining qiymatini hisoblang. Javob (0; π) oralig'idagi burchak bo'lishi shart.",
+      "v": [
+        "−π/4",
+        "3π/4",
+        "π/4",
+        "5π/4"
+      ],
+      "t": 1,
+      "izoh": "arcctg qiymatlari (0; π) oralig'ida yotadi, demak manfiy javob mumkin emas. arcctg(−a) = π − arcctg a formulasini qo'llaymiz: arcctg1 = π/4 bo'lgani uchun arcctg(−1) = π − π/4 = 3π/4. Tekshiramiz: ctg(3π/4) = −1. 5π/4 oraliqdan chiqib ketadi. Javob: 3π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arcctg-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#77f5ca93"
+    },
+    {
+      "q": "Dilnoza arcctg0 ning qiymatini topishi kerak, ya'ni kotangensi nolga teng bo'lgan burchakni (0; π) oralig'idan izlamoqda. Natija nechaga teng?",
+      "v": [
+        "0",
+        "π/4",
+        "π",
+        "π/2"
+      ],
+      "t": 3,
+      "izoh": "ctg x = cos x / sin x kasri nolga faqat kosinus nolga aylanganda teng bo'ladi. (0; π) oralig'ida bu π/2 burchakda ro'y beradi, chunki cos(π/2) = 0. Shuning uchun arcctg0 = π/2. 0 va π nuqtalarida kotangens umuman aniqlanmagan. Javob: π/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arcctg-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#91a87067"
+    },
+    {
+      "q": "arcctg(−√3) ifodasining qiymatini toping va uni to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "π/6",
+        "5π/6",
+        "−π/6",
+        "2π/3"
+      ],
+      "t": 1,
+      "izoh": "arcctg√3 = π/6, chunki ctg(π/6) = √3. Manfiy argument uchun arcctg(−a) = π − arcctg a: π − π/6 = 5π/6. Ishorani oddiy ko'chirib −π/6 deb yozish tipik xato, chunki arcctg toq funksiya emas. 2π/3 ning kotangensi −√3/3. Javob: 5π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arcctg-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#b691a253"
+    },
+    {
+      "q": "arcctg(√3/3) ifodasi qanday qiymatga ega ekanini aniqlang va to'g'ri variantni belgilang.",
+      "v": [
+        "π/6",
+        "π/4",
+        "π/3",
+        "2π/3"
+      ],
+      "t": 2,
+      "izoh": "Kotangensi √3/3 ga teng burchakni (0; π) oralig'idan izlaymiz. ctg(π/3) = cos(π/3) / sin(π/3) = (1/2) : (√3/2) = √3/3. Demak arcctg(√3/3) = π/3. π/6 ning kotangensi √3 — bu arcctg va arctg ni chalkashtirish natijasi. Javob: π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arcctg-aniq-qiymat",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#d2a4b956"
+    },
+    {
+      "q": "y = arcsin x funksiyasining qiymatlar to'plamini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "[−1; 1]",
+        "[0; π]",
+        "[−π/2; π/2]",
+        "(−π/2; π/2)"
+      ],
+      "t": 2,
+      "izoh": "arcsin funksiyasining argumenti [−1; 1] kesmadan olinadi, bu esa aniqlanish sohasi. Qiymatlar to'plami esa [−π/2; π/2] kesmasi bo'lib, chetlari ham kiradi: arcsin(−1) = −π/2 va arcsin1 = π/2. Ochiq oraliq (−π/2; π/2) arctg ga tegishli, [0; π] esa arccos ga. Javob: [−π/2; π/2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlar-toplami",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#0ed8c986"
+    },
+    {
+      "q": "y = arccos x funksiyasi ixtiyoriy ruxsat etilgan x uchun qanday qiymatlarni qabul qila oladi?",
+      "v": [
+        "[0; π]",
+        "[−π/2; π/2]",
+        "(0; π)",
+        "[0; π/2]"
+      ],
+      "t": 0,
+      "izoh": "arccos ta'rifiga ko'ra javob [0; π] kesmasidan olinadi va chetlari ham qatnashadi: arccos1 = 0, arccos(−1) = π. Shuning uchun ochiq (0; π) oraliq noto'g'ri. [0; π/2] faqat manfiy bo'lmagan argumentlarni qamraydi, [−π/2; π/2] esa arcsin ga tegishli. Javob: [0; π].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlar-toplami",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#eb09bf84"
+    },
+    {
+      "q": "y = arctg x funksiyasining qiymatlar to'plami qaysi variantda to'g'ri yozilgan?",
+      "v": [
+        "[−π/2; π/2]",
+        "(0; π)",
+        "(−π/2; π/2)",
+        "(−∞; +∞)"
+      ],
+      "t": 2,
+      "izoh": "arctg ixtiyoriy haqiqiy sondan hisoblanadi, shuning uchun aniqlanish sohasi (−∞; +∞) bo'ladi — bu esa qiymatlar to'plami emas. Javob esa (−π/2; π/2) ochiq oralig'ida yotadi: chetlarida tangens aniqlanmagani uchun ±π/2 hech qachon qabul qilinmaydi. Yopiq [−π/2; π/2] arcsin ga tegishli. Javob: (−π/2; π/2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-toplami",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#2d7276ba"
+    },
+    {
+      "q": "y = arcctg x funksiyasining qiymatlar to'plamini to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "[0; π]",
+        "(−π/2; π/2)",
+        "[−π/2; π/2]",
+        "(0; π)"
+      ],
+      "t": 3,
+      "izoh": "arcctg har qanday haqiqiy sondan hisoblanadi, natija esa (0; π) ochiq oralig'ida yotadi. Chetlari kirmaydi, chunki 0 va π nuqtalarida kotangens aniqlanmagan. Yopiq [0; π] arccos ga tegishli, (−π/2; π/2) esa arctg ga. Javob: (0; π).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-toplami",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#ddf9867e"
+    },
+    {
+      "q": "Dasturchi Jasur yozgan dastur ixtiyoriy a ∈ [−1; 1] uchun arccos a ni hisoblab ekranga chiqaradi. Quyidagi sonlardan qaysi biri ekranda hech qachon paydo bo'lmaydi?",
+      "v": [
+        "0",
+        "π",
+        "2π/3",
+        "−π/4"
+      ],
+      "t": 3,
+      "izoh": "Dastur chiqaradigan qiymat arccos ta'rifiga ko'ra [0; π] kesmasidan chiqadi. 0 qiymati a = 1 da, π qiymati a = −1 da, 2π/3 esa a = −1/2 da hosil bo'ladi. −π/4 manfiy bo'lgani uchun bu kesmaga kirmaydi va hech qanday a da chiqmaydi. Javob: −π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-toplami",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#18cd0f59"
+    },
+    {
+      "q": "O'quvchi javob varaqasiga arcsin2 = π/2 deb yozdi. Uning yozuvi haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Yozuv to'g'ri, chunki 2 > 1",
+        "Ifodaning o'zi ma'noga ega emas",
+        "Yozuv to'g'ri, lekin javob 0 bo'lishi kerak",
+        "Ifoda π ga teng"
+      ],
+      "t": 1,
+      "izoh": "arcsin a faqat −1 ≤ a ≤ 1 shart bajarilganda aniqlangan, chunki sinus hech qachon 1 dan katta qiymat qabul qilmaydi. Argument 2 bu kesmadan tashqarida, demak arcsin2 umuman mavjud emas. Shuning uchun unga hech qanday son, jumladan π/2 ham mos kelmaydi. Javob: ifodaning o'zi ma'noga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mavjudlik-sharti",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#75fe700c"
+    },
+    {
+      "q": "y = arccos(x − 1) funksiyasining aniqlanish sohasini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "[−1; 1]",
+        "[−2; 0]",
+        "[1; 3]",
+        "[0; 2]"
+      ],
+      "t": 3,
+      "izoh": "arccos argumenti [−1; 1] kesmadan chiqmasligi kerak: −1 ≤ x − 1 ≤ 1. Tengsizlikning barcha qismiga 1 ni qo'shamiz: 0 ≤ x ≤ 2. Demak aniqlanish sohasi [0; 2] kesmasi. [−1; 1] javobi ichki ifodani x deb qabul qilishdan, [−2; 0] javobi 1 ni qo'shish o'rniga ayirishdan, [1; 3] esa surilishni ikki marta qo'llashdan kelib chiqadi. Javob: [0; 2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#eb630104"
+    },
+    {
+      "q": "y = arcsin(3x) funksiyasi qanday x larda aniqlangan? Aniqlanish sohasini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "[−3; 3]",
+        "[−1; 1]",
+        "[−1/3; 1/3]",
+        "[0; 1/3]"
+      ],
+      "t": 2,
+      "izoh": "Shart: −1 ≤ 3x ≤ 1. Tengsizlikning har uch qismini 3 ga bo'lamiz: −1/3 ≤ x ≤ 1/3. Demak aniqlanish sohasi [−1/3; 1/3]. Bo'lish o'rniga ko'paytirish qilinsa [−3; 3] chiqadi — bu eng ko'p uchraydigan xato. [−1; 1] esa koeffitsientni umuman hisobga olmaslik natijasi. Javob: [−1/3; 1/3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#953abc8b"
+    },
+    {
+      "q": "y = arcsin((x + 2)/5) funksiyasining aniqlanish sohasini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "[−7; 3]",
+        "[−3; 7]",
+        "[−5; 5]",
+        "[−2; 5]"
+      ],
+      "t": 0,
+      "izoh": "Shartni yozamiz: −1 ≤ (x + 2)/5 ≤ 1. Barcha qismni 5 ga ko'paytiramiz: −5 ≤ x + 2 ≤ 5. Endi 2 ni ayiramiz: −7 ≤ x ≤ 3. Demak soha [−7; 3]. Ishorani chalkashtirib 2 ni qo'shsak [−3; 7] chiqadi, surilishni butunlay unutsak [−5; 5] chiqadi. Javob: [−7; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#1c6fb064"
+    },
+    {
+      "q": "Quyidagi to'rt ifodadan qaysi biri ma'noga ega emas: arcsin0,8, arccos(−0,9), arctg5 yoki arccos1,2?",
+      "v": [
+        "arcsin 0,8",
+        "arccos(−0,9)",
+        "arctg 5",
+        "arccos 1,2"
+      ],
+      "t": 3,
+      "izoh": "arcsin va arccos argumenti [−1; 1] kesmada bo'lishi shart, arctg esa istalgan haqiqiy sondan hisoblanadi. 0,8 va −0,9 sonlari kesmada yotadi, 5 soni arctg uchun to'liq ruxsat etilgan. 1,2 soni esa 1 dan katta, shuning uchun arccos1,2 mavjud emas. Javob: arccos 1,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mavjudlik-sharti",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#742a39c1"
+    },
+    {
+      "q": "Ma'lum bo'lishicha, biror a soni uchun arccos a = 0,4π. Shu ma'lumotdan foydalanib arccos(−a) ning qiymatini toping.",
+      "v": [
+        "0,6π",
+        "−0,4π",
+        "0,9π",
+        "1,4π"
+      ],
+      "t": 0,
+      "izoh": "arccos(−a) = π − arccos a formulasini qo'llaymiz. Demak arccos(−a) = π − 0,4π = 0,6π. Bu son [0; π] oralig'ida yotadi, ya'ni javob ta'rifga mos. −0,4π javobi arccos ni toq funksiya deb hisoblashdan, 0,9π esa π/2 qo'shishdan kelib chiqqan. Javob: 0,6π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-argument",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#428fe406"
+    },
+    {
+      "q": "Kalkulyator arcsin0,3 ≈ 0,3047 natijasini berdi. Shu natijaga tayanib arcsin(−0,3) ning taqribiy qiymatini aniqlang.",
+      "v": [
+        "0,3047",
+        "−0,3047",
+        "2,8369",
+        "1,2661"
+      ],
+      "t": 1,
+      "izoh": "arcsin toq funksiya, ya'ni arcsin(−a) = −arcsin a. Demak arcsin(−0,3) ≈ −0,3047. 2,8369 soni π − 0,3047 ga teng, ya'ni arccos uchun mo'ljallangan qoidani noto'g'ri qo'llash natijasi. 1,2661 esa π/2 − 0,3047, bu arccos0,3 ning qiymati. Javob: −0,3047.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-argument",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#1146bf47"
+    },
+    {
+      "q": "arcctg2 ≈ 0,4636 ekani ma'lum. Shu ma'lumotdan foydalanib arcctg(−2) ning taqribiy qiymatini hisoblang.",
+      "v": [
+        "−0,4636",
+        "0,4636",
+        "1,1072",
+        "2,6780"
+      ],
+      "t": 3,
+      "izoh": "arcctg toq funksiya emas: uning qiymatlari (0; π) oralig'ida yotadi va manfiy bo'la olmaydi. To'g'ri formula arcctg(−a) = π − arcctg a. Demak arcctg(−2) ≈ 3,1416 − 0,4636 = 2,6780. −0,4636 javobi toqlikni noo'rin qo'llash natijasi, 1,1072 esa π/2 dan ayirish xatosi. Javob: 2,6780.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "manfiy-argument",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#7e520096"
+    },
+    {
+      "q": "Manfiy argumentli teskari trigonometrik funksiyalar uchun quyidagi formulalardan qaysi biri to'g'ri yozilgan?",
+      "v": [
+        "arccos(−a) = −arccos a",
+        "arccos(−a) = π/2 − arccos a",
+        "arccos(−a) = π − arccos a",
+        "arccos(−a) = π + arccos a"
+      ],
+      "t": 2,
+      "izoh": "arccos qiymatlari [0; π] kesmasida yotgani uchun natija manfiy bo'la olmaydi, demak birinchi formula noto'g'ri. To'g'ri munosabat arccos(−a) = π − arccos a bo'lib, uni cos(π − t) = −cos t ayniyatidan olish mumkin. π + arccos a esa [0; π] dan chiqib ketadi. Javob: arccos(−a) = π − arccos a.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-argument",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#25bb03be"
+    },
+    {
+      "q": "Hisoblang: arcsin(−0,6) + arcsin0,6 yig'indisi qanday songa teng bo'ladi?",
+      "v": [
+        "0",
+        "π",
+        "π/2",
+        "1,2"
+      ],
+      "t": 0,
+      "izoh": "arcsin toq funksiya bo'lgani uchun arcsin(−0,6) = −arcsin0,6. Yig'indini yozamiz: −arcsin0,6 + arcsin0,6 = 0. Bu yerda arcsin0,6 ning aniq qiymatini bilish umuman shart emas. 1,2 javobi argumentlarni qo'shishdan, π/2 esa arcsin va arccos yig'indisi bilan chalkashtirishdan kelib chiqadi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-argument",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#db9f7289"
+    },
+    {
+      "q": "Qurilishda uzunligi 5 m bo'lgan narvonning yuqori uchi devorda yerdan 4 m balandlikda turibdi. Narvon bilan yer sirti orasidagi burchak qaysi ifoda bilan aniqlanadi?",
+      "v": [
+        "arcsin(4/5)",
+        "arccos(4/5)",
+        "arctg(4/5)",
+        "arcsin(5/4)"
+      ],
+      "t": 0,
+      "izoh": "Narvon gipotenuza, devordagi balandlik esa burchak qarshisidagi katet bo'ladi. To'g'ri burchakli uchburchakda sin α = qarshi katet / gipotenuza = 4/5. Demak α = arcsin(4/5). arccos(4/5) narvonning devor bilan hosil qilgan burchagini beradi; yer bo'ylab masofa 3 m bo'lgani uchun yerdagi burchak kosinus orqali arccos(3/5) deb yozilishi kerak edi. arctg(4/5) esa ikki katet nisbati uchun. arcsin(5/4) umuman mavjud emas, chunki 5/4 > 1. Javob: arcsin(4/5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-burchak-modeli",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#ee49dafc"
+    },
+    {
+      "q": "Maktabga o'rnatilayotgan pandusning qiya qismi uzunligi 6 m, ko'tarilish balandligi esa 0,5 m ni tashkil qiladi. Pandusning gorizontga og'ish burchagi qaysi ifodaga teng?",
+      "v": [
+        "arctg(1/12)",
+        "arccos(1/12)",
+        "arcsin(1/12)",
+        "arcsin(12)"
+      ],
+      "t": 2,
+      "izoh": "Qiya qism gipotenuza vazifasini bajaradi, balandlik esa qarshi katet. Nisbatni topamiz: 0,5 : 6 = 1/12. Sinus qarshi katetning gipotenuzaga nisbati bo'lgani uchun α = arcsin(1/12). arctg(1/12) balandlikni gorizontal masofaga nisbatan olardi, arcsin12 esa mavjud emas. Javob: arcsin(1/12).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-burchak-modeli",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#74c2f0f4"
+    },
+    {
+      "q": "Zomin tog' yo'li har 100 m gorizontal masofada 8 m ga ko'tariladi. Yo'lning gorizont bilan hosil qilgan burchagi qaysi ifoda orqali topiladi?",
+      "v": [
+        "arcsin 0,08",
+        "arccos 0,08",
+        "arctg 0,08",
+        "arctg 12,5"
+      ],
+      "t": 2,
+      "izoh": "Gorizontal masofa va ko'tarilish ikkita katet bo'lib, gipotenuza berilmagan. Ikki katet nisbati tangensni beradi: tg α = 8 : 100 = 0,08. Demak α = arctg0,08. arcsin0,08 gipotenuza berilgan bo'lgandagina o'rinli bo'lardi. arctg12,5 esa nisbatni teskari olish xatosidan chiqadi. Javob: arctg 0,08.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-burchak-modeli",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#431e14b1"
+    },
+    {
+      "q": "Bayroq ustunining uchidan yerdagi qoziqqa uzunligi 13 m bo'lgan sim tortilgan, qoziq esa ustun tagidan 5 m uzoqlikda qoqilgan. Sim bilan yer orasidagi burchak qaysi ifodaga teng?",
+      "v": [
+        "arcsin(5/13)",
+        "arctg(5/13)",
+        "arccos(13/5)",
+        "arccos(5/13)"
+      ],
+      "t": 3,
+      "izoh": "Sim gipotenuza, qoziqqacha bo'lgan 5 m esa burchakka yopishgan katet. Kosinus yopishgan katetning gipotenuzaga nisbati bo'lgani uchun cos α = 5/13, demak α = arccos(5/13). arcsin(5/13) balandlik uchun mo'ljallangan bo'lardi. arccos(13/5) mavjud emas, chunki 13/5 soni 1 dan katta. Javob: arccos(5/13).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-burchak-modeli",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#e9ae5e9c"
+    },
+    {
+      "q": "Aziz kalkulyatorda arcsin0,4 va arccos0,4 ni alohida hisoblab, so'ng ularni qo'shdi. U qanday natijaga kelishi kerak?",
+      "v": [
+        "π/2",
+        "π",
+        "0,8",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Ixtiyoriy a ∈ [−1; 1] uchun arcsin a + arccos a = π/2 ayniyati o'rinli, chunki bu ikki burchak o'zaro to'ldiruvchi. Demak arcsin0,4 + arccos0,4 = π/2 va har birining alohida qiymatini bilish shart emas. 0,8 javobi argumentlarni qo'shish xatosidan chiqadi. Javob: π/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arcsin-arccos-yigindisi",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#9a738de4"
+    },
+    {
+      "q": "Ma'lumotnomada arccos(3/5) ≈ 0,9273 deb berilgan. Shu qiymatdan foydalanib arcsin(3/5) ning taqribiy qiymatini toping.",
+      "v": [
+        "0,9273",
+        "2,2143",
+        "0,6435",
+        "1,5708"
+      ],
+      "t": 2,
+      "izoh": "arcsin a + arccos a = π/2 ayniyatidan arcsin a = π/2 − arccos a kelib chiqadi. Demak arcsin(3/5) ≈ 1,5708 − 0,9273 = 0,6435. 2,2143 soni π − 0,9273 ga teng, ya'ni manfiy argument qoidasini noo'rin qo'llash natijasi. 1,5708 esa π/2 ning o'zi, ya'ni ayirish bajarilmagan. Javob: 0,6435.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "arcsin-arccos-yigindisi",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#ba53141f"
+    },
+    {
+      "q": "Matematika to'garagida Ozoda ixtiyoriy a ∈ [−1; 1] uchun 3·(arcsin a + arccos a) ifodasini soddalashtirdi. U qanday natija olgan bo'lishi kerak?",
+      "v": [
+        "π/2",
+        "3π/2",
+        "3π",
+        "6π"
+      ],
+      "t": 1,
+      "izoh": "Qavs ichidagi yig'indi a ning qiymatidan qat'i nazar π/2 ga teng. Uni 3 ga ko'paytiramiz: 3·(π/2) = 3π/2. Demak ifoda a ga bog'liq emas, u o'zgarmas son. π/2 javobi ko'paytiruvchini unutish, 3π esa π/2 o'rniga π olish natijasi. Javob: 3π/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "arcsin-arccos-yigindisi",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#2853ec6e"
+    },
+    {
+      "q": "Biror a soni uchun arcsin a = 2·arccos a tenglik bajariladi. Shu shartni qanoatlantiradigan a ni toping.",
+      "v": [
+        "1/2",
+        "√2/2",
+        "√3/3",
+        "√3/2"
+      ],
+      "t": 3,
+      "izoh": "arcsin a + arccos a = π/2 ayniyatiga arcsin a = 2·arccos a ni qo'yamiz: 2·arccos a + arccos a = π/2, ya'ni 3·arccos a = π/2. Bundan arccos a = π/6, demak a = cos(π/6) = √3/2. Tekshiramiz: arcsin(√3/2) = π/3 va u haqiqatan π/6 ning ikki barobari. Javob: √3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "arcsin-arccos-tenglama",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#f6f8786e"
+    },
+    {
+      "q": "arccos x − arcsin x = π/6 tenglamani qanoatlantiruvchi x sonini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "√3/2",
+        "√2/2",
+        "1/2",
+        "−1/2"
+      ],
+      "t": 2,
+      "izoh": "arcsin x = π/2 − arccos x ekanini ayirmaga qo'yamiz: arccos x − (π/2 − arccos x) = π/6. Soddalashtiramiz: 2·arccos x − π/2 = π/6, ya'ni 2·arccos x = 2π/3. Bundan arccos x = π/3 va x = cos(π/3) = 1/2. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "arcsin-arccos-tenglama",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#6bfe4b0f"
+    },
+    {
+      "q": "Sinov testida arctg7 + arcctg7 ifodasining qiymatini topish talab qilingan. To'g'ri javobni tanlang.",
+      "v": [
+        "π/2",
+        "π",
+        "2π",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Ixtiyoriy haqiqiy a uchun arctg a + arcctg a = π/2 ayniyati bajariladi. Demak argument 7 bo'lsa ham yig'indi π/2 ga teng bo'ladi va har bir qo'shiluvchini alohida hisoblash kerak emas. Bu ayniyat tangens va kotangens to'ldiruvchi burchaklarda teng bo'lishidan kelib chiqadi. Javob: π/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "arctg-arcctg-yigindisi",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#5631df57"
+    },
+    {
+      "q": "Hisoblash dasturi arctg0,25 ≈ 0,2450 natijasini berdi. Shu asosda arcctg0,25 ning taqribiy qiymatini aniqlang.",
+      "v": [
+        "0,2450",
+        "1,3258",
+        "2,8966",
+        "1,8158"
+      ],
+      "t": 1,
+      "izoh": "arctg a + arcctg a = π/2 ayniyatidan arcctg a = π/2 − arctg a. Demak arcctg0,25 ≈ 1,5708 − 0,2450 = 1,3258. 2,8966 soni π − 0,2450 ga teng va bu arccos qoidasini noo'rin ko'chirishdan kelib chiqadi. 1,8158 esa π/2 ga qo'shish xatosi. Javob: 1,3258.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "arctg-arcctg-yigindisi",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#31da8411"
+    },
+    {
+      "q": "Biror musbat x soni uchun arcctg x = 2·arctg x tenglik o'rinli. Shu x ning qiymatini toping.",
+      "v": [
+        "√3",
+        "1",
+        "√3/3",
+        "√2/2"
+      ],
+      "t": 2,
+      "izoh": "arctg x + arcctg x = π/2 ayniyatiga shartni qo'yamiz: arctg x + 2·arctg x = π/2, ya'ni 3·arctg x = π/2. Bundan arctg x = π/6, demak x = tg(π/6) = √3/3. Tekshiramiz: arcctg(√3/3) = π/3, bu esa π/6 ning ikki barobari. Javob: √3/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "arctg-arcctg-tenglama",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#c245d49d"
+    },
+    {
+      "q": "2·arctg5 + 2·arcctg5 ifodasini soddalashtiring va uning aniq qiymatini ko'rsating.",
+      "v": [
+        "π/2",
+        "2π",
+        "π/4",
+        "π"
+      ],
+      "t": 3,
+      "izoh": "Umumiy ko'paytuvchini qavsdan chiqaramiz: 2·(arctg5 + arcctg5). Qavs ichi ayniyatga ko'ra π/2 ga teng. Demak ifoda 2·(π/2) = π ga teng bo'ladi. π/2 javobi ko'paytuvchini hisobga olmaslikdan, 2π esa qavs ichini π deb olishdan kelib chiqadi. Javob: π.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "arctg-arcctg-yigindisi",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#4476c2b4"
+    },
+    {
+      "q": "arctg a − arcctg a = π/6 tenglikni qanoatlantiruvchi a sonini toping va javobni belgilang.",
+      "v": [
+        "√3",
+        "3",
+        "1",
+        "√3/3"
+      ],
+      "t": 0,
+      "izoh": "Ikki tenglikni birga qaraymiz: arctg a + arcctg a = π/2 va arctg a − arcctg a = π/6. Ularni qo'shsak 2·arctg a = π/2 + π/6 = 2π/3, demak arctg a = π/3. Bundan a = tg(π/3) = √3. Agar ayirma o'rniga yig'indi olinsa arctg a = π/6 chiqib, javob √3/3 bo'lib qolardi. Javob: √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "arctg-arcctg-tenglama",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#f83d465e"
+    },
+    {
+      "q": "Anvar sin(arccos(3/5)) ifodasini soddalashtirishi kerak. Argument musbat bo'lgani uchun natija ham musbat chiqadi. Javobni toping.",
+      "v": [
+        "4/5",
+        "3/5",
+        "5/4",
+        "3/4"
+      ],
+      "t": 0,
+      "izoh": "arccos(3/5) = t deylik, u holda cos t = 3/5 va t ∈ [0; π]. Asosiy ayniyatdan sin²t = 1 − 9/25 = 16/25, demak sin t = 4/5. Ishora musbat, chunki [0; π] oralig'ida sinus manfiy bo'lmaydi. 3/4 javobi kotangensga (ctg t = 3/4), 5/4 esa nisbatni ag'darishga mos keladi. Javob: 4/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin-arccos-soddalashtirish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#0a6b4ae9"
+    },
+    {
+      "q": "sin(arccos(−12/13)) ifodasining qiymatini hisoblang va ishorasiga alohida e'tibor bering.",
+      "v": [
+        "−5/13",
+        "5/13",
+        "12/13",
+        "13/5"
+      ],
+      "t": 1,
+      "izoh": "arccos(−12/13) = t bo'lsin, u holda cos t = −12/13 va t ∈ [0; π]. sin²t = 1 − 144/169 = 25/169, ya'ni sin t = ±5/13. arccos qiymati [0; π] da yotgani uchun sinus manfiy bo'la olmaydi, demak sin t = 5/13. Argument manfiy bo'lgani uchun javobni ham manfiy deb yozish tipik xato. Javob: 5/13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin-arccos-soddalashtirish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#cf89b9f2"
+    },
+    {
+      "q": "sin(arccos(7/25)) ifodasini soddalashtirib, natijani to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "7/25",
+        "18/25",
+        "24/25",
+        "25/24"
+      ],
+      "t": 2,
+      "izoh": "cos t = 7/25 deb belgilaymiz, bu yerda t = arccos(7/25) va t ∈ [0; π]. sin²t = 1 − 49/625 = 576/625, demak sin t = 24/25. Ishora musbat. 18/25 javobi 1 − 7/25 ayirmasidan chiqadi, ya'ni kvadratga ko'tarishni unutish xatosi. Javob: 24/25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin-arccos-soddalashtirish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#d2be6bd4"
+    },
+    {
+      "q": "Ixtiyoriy x ∈ [−1; 1] uchun sin(arccos x) ifodasining umumiy ko'rinishini to'g'ri yozgan variantni belgilang.",
+      "v": [
+        "1 − x²",
+        "−√(1 − x²)",
+        "√(x² − 1)",
+        "√(1 − x²)"
+      ],
+      "t": 3,
+      "izoh": "arccos x = t deylik, u holda cos t = x va t ∈ [0; π]. sin²t = 1 − cos²t = 1 − x². Sinus [0; π] oralig'ida manfiy bo'lmagani uchun ildiz musbat ishora bilan olinadi: sin t = √(1 − x²). Ildizni unutsak 1 − x², ishorani almashtirsak −√(1 − x²) chiqadi. Javob: √(1 − x²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin-arccos-soddalashtirish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#4a796fac"
+    },
+    {
+      "q": "Geodezist Sarvar hisobotida cos α = 0,6 deb yozgan, bu yerda α = arccos0,6. Endi unga sin α kerak bo'lib qoldi. Uning qiymati qanday?",
+      "v": [
+        "0,6",
+        "0,8",
+        "0,4",
+        "0,36"
+      ],
+      "t": 1,
+      "izoh": "Asosiy trigonometrik ayniyatni qo'llaymiz: sin²α = 1 − cos²α = 1 − 0,36 = 0,64. Bundan sin α = 0,8, chunki α = arccos0,6 qiymati [0; π] oralig'ida va u yerda sinus manfiy emas. 0,4 javobi 1 − 0,6 ayirmasidan, 0,36 esa 0,6 ni kvadratga ko'tarishdan qolib ketgan. Javob: 0,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin-arccos-soddalashtirish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#f98acd54"
+    },
+    {
+      "q": "cos(arcsin(8/17)) ifodasini soddalashtiring va natijani to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "15/17",
+        "8/17",
+        "17/15",
+        "9/17"
+      ],
+      "t": 0,
+      "izoh": "arcsin(8/17) = t deylik, u holda sin t = 8/17 va t ∈ [−π/2; π/2]. cos²t = 1 − 64/289 = 225/289, demak cos t = 15/17. Ishora musbat, chunki [−π/2; π/2] oralig'ida kosinus manfiy bo'lmaydi. 9/17 javobi 1 − 8/17 ayirmasidan chiqadi. Javob: 15/17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cos-arcsin-soddalashtirish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#649ca564"
+    },
+    {
+      "q": "cos(arcsin(−4/5)) ifodasining qiymatini toping. Argument manfiy bo'lsa ham javob ishorasini alohida tekshiring.",
+      "v": [
+        "−3/5",
+        "3/5",
+        "4/5",
+        "5/3"
+      ],
+      "t": 1,
+      "izoh": "arcsin(−4/5) = t bo'lsin, u holda sin t = −4/5 va t ∈ [−π/2; π/2]. cos²t = 1 − 16/25 = 9/25, ya'ni cos t = ±3/5. Berilgan oraliqda kosinus manfiy bo'lmagani uchun cos t = 3/5. Argumentning minusini javobga ko'chirish eng ko'p uchraydigan xato. Javob: 3/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cos-arcsin-soddalashtirish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#75d933d7"
+    },
+    {
+      "q": "cos(arcsin(20/29)) ifodasini soddalashtirib, to'g'ri javobni belgilang.",
+      "v": [
+        "20/29",
+        "9/29",
+        "21/29",
+        "29/21"
+      ],
+      "t": 2,
+      "izoh": "sin t = 20/29 va t = arcsin(20/29) ∈ [−π/2; π/2]. cos²t = 1 − 400/841 = 441/841, demak cos t = 21/29. Ishora musbat. 9/29 javobi 1 − 20/29 ayirmasidan, 29/21 esa nisbatni ag'darishdan kelib chiqadi. Javob: 21/29.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cos-arcsin-soddalashtirish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#64848c0c"
+    },
+    {
+      "q": "cos(arcsin(9/41)) ifodasining aniq qiymatini toping va natijani to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "9/41",
+        "32/41",
+        "41/40",
+        "40/41"
+      ],
+      "t": 3,
+      "izoh": "sin t = 9/41 deb olamiz, bu yerda t = arcsin(9/41). cos²t = 1 − 81/1681 = 1600/1681, demak cos t = 40/41 va ishora musbat. 32/41 javobi 41 − 9 = 32 kabi kvadratsiz ayirishdan chiqadi. 41/40 esa nisbatni teskari yozish natijasi. Javob: 40/41.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cos-arcsin-soddalashtirish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#0acd0c66"
+    },
+    {
+      "q": "Nurlan o'lchagan qiya tomon uchun sin α = 0,96 chiqdi, bu yerda α = arcsin0,96. Loyihani davom ettirish uchun unga cos α kerak. Uni toping.",
+      "v": [
+        "0,28",
+        "0,96",
+        "0,04",
+        "0,92"
+      ],
+      "t": 0,
+      "izoh": "Asosiy ayniyatdan cos²α = 1 − 0,96² = 1 − 0,9216 = 0,0784. Ildiz chiqaramiz: cos α = 0,28, ishora musbat, chunki arcsin qiymati [−π/2; π/2] oralig'ida. 0,04 javobi 1 − 0,96 ayirmasidan, 0,92 esa 0,96² = 0,9216 sonining o'zini javob deb yozib yuborishdan, ya'ni 1 dan ayirish va ildiz chiqarishni unutishdan kelib chiqadi. Javob: 0,28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "cos-arcsin-soddalashtirish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#9dbd1117"
+    },
+    {
+      "q": "tg(arcsin(3/5)) ifodasini soddalashtiring va natijani to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "3/4",
+        "4/3",
+        "3/5",
+        "5/4"
+      ],
+      "t": 0,
+      "izoh": "arcsin(3/5) = t deylik, u holda sin t = 3/5 va t ∈ [−π/2; π/2]. cos²t = 1 − 9/25 = 16/25, demak cos t = 4/5. Endi tg t = sin t : cos t = (3/5) : (4/5) = 3/4. 4/3 javobi kasrni ag'darishdan, 3/5 esa tangens o'rniga sinusni yozib qo'yishdan kelib chiqadi. Javob: 3/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-teskari-funksiyadan",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#93aa6c9f"
+    },
+    {
+      "q": "tg(arccos(5/13)) ifodasining aniq qiymatini toping va to'g'ri javobni tanlang.",
+      "v": [
+        "5/12",
+        "12/5",
+        "12/13",
+        "13/12"
+      ],
+      "t": 1,
+      "izoh": "cos t = 5/13 va t = arccos(5/13) ∈ [0; π]. sin²t = 1 − 25/169 = 144/169, ya'ni sin t = 12/13. Tangens: tg t = (12/13) : (5/13) = 12/5. Kasrni ag'darib 5/12 yozish eng ko'p uchraydigan xato, 12/13 esa oxirgi bo'lish qadamini tashlab ketish natijasi. Javob: 12/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-teskari-funksiyadan",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#ea390d2f"
+    },
+    {
+      "q": "ctg(arcsin(15/17)) ifodasini soddalashtirib, natijani to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "15/8",
+        "8/17",
+        "8/15",
+        "17/15"
+      ],
+      "t": 2,
+      "izoh": "sin t = 15/17 va t = arcsin(15/17) ∈ [−π/2; π/2]. cos²t = 1 − 225/289 = 64/289, demak cos t = 8/17. Kotangens: ctg t = cos t : sin t = (8/17) : (15/17) = 8/15. 15/8 javobi kotangens o'rniga tangensni hisoblash natijasi, 8/17 esa bo'lish qadami bajarilmagani uchun chiqadi. Javob: 8/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-teskari-funksiyadan",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#d6592065"
+    },
+    {
+      "q": "tg(arccos(−8/17)) ifodasining qiymatini hisoblang. Javobning ishorasini alohida asoslang.",
+      "v": [
+        "15/8",
+        "−8/15",
+        "8/15",
+        "−15/8"
+      ],
+      "t": 3,
+      "izoh": "cos t = −8/17 va t = arccos(−8/17) ∈ [0; π], demak t ikkinchi chorakda yotadi. sin²t = 1 − 64/289 = 225/289, sinus musbat: sin t = 15/17. Tangens: tg t = (15/17) : (−8/17) = −15/8. Ikkinchi chorakda tangens manfiy bo'lgani uchun ishora minus. Javob: −15/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tg-teskari-funksiyadan",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#8d158471"
+    },
+    {
+      "q": "Texnik chizmada burchak α = arcsin0,6 deb belgilangan. Chizmani tekshirayotgan Shahnoza tg α ni bilishi kerak. Uning qiymati qanday?",
+      "v": [
+        "0,75",
+        "0,8",
+        "1,25",
+        "0,6"
+      ],
+      "t": 0,
+      "izoh": "sin α = 0,6 bo'lgani uchun cos²α = 1 − 0,36 = 0,64, demak cos α = 0,8. Tangens: tg α = 0,6 : 0,8 = 0,75. 0,8 javobi kosinusning o'zi, 1,25 esa 1 : cos α = 1 : 0,8 hisobidan, ya'ni tangens o'rniga kosinusni ag'darishdan chiqadi (ctg α esa 0,8 : 0,6 ≈ 1,33). 0,6 esa sinusni tangens deb yozib qo'yish xatosi. Javob: 0,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tg-teskari-funksiyadan",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#7d41ade3"
+    },
+    {
+      "q": "sin(arctg(3/4)) ifodasini soddalashtiring va to'g'ri javobni belgilang.",
+      "v": [
+        "3/5",
+        "4/5",
+        "3/4",
+        "5/3"
+      ],
+      "t": 0,
+      "izoh": "arctg(3/4) = t deylik, u holda tg t = 3/4 va t ∈ (−π/2; π/2). Katetlari 3 va 4 bo'lgan to'g'ri burchakli uchburchakda gipotenuza √(9 + 16) = 5 ga teng. Demak sin t = 3/5. 4/5 javobi kosinus, 3/4 esa tangensning o'zi. Javob: 3/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin-cos-arctg-dan",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#86e3a64d"
+    },
+    {
+      "q": "cos(arctg(24/7)) ifodasining aniq qiymatini toping va to'g'ri variantni tanlang.",
+      "v": [
+        "24/25",
+        "7/25",
+        "25/7",
+        "7/24"
+      ],
+      "t": 1,
+      "izoh": "tg t = 24/7 bo'lsin, bu yerda t = arctg(24/7). Katetlari 24 va 7 bo'lgan uchburchakda gipotenuza √(576 + 49) = 25. Kosinus yopishgan katetning gipotenuzaga nisbati: cos t = 7/25. 24/25 javobi sinus qiymati, ya'ni katetlarni almashtirish xatosi. Javob: 7/25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin-cos-arctg-dan",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#1ef55222"
+    },
+    {
+      "q": "sin(arctg1) ifodasining aniq qiymatini hisoblang va uni to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "1",
+        "√3/2",
+        "√2/2",
+        "1/2"
+      ],
+      "t": 2,
+      "izoh": "arctg1 = π/4, chunki tg(π/4) = 1 va π/4 soni (−π/2; π/2) oralig'ida yotadi. Endi sin(π/4) = √2/2 ni yozamiz. 1 javobi sin va arctg ni bir biriga qisqartirib yuborish xatosi, √3/2 esa π/3 bilan chalkashtirish natijasi. Javob: √2/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sin-cos-arctg-dan",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#bd3a6671"
+    },
+    {
+      "q": "cos(arctg2) ifodasini soddalashtiring. Javobni maxrajda ildizsiz ko'rinishda yozing.",
+      "v": [
+        "2√5/5",
+        "1/2",
+        "√5",
+        "√5/5"
+      ],
+      "t": 3,
+      "izoh": "tg t = 2 bo'lsin, ya'ni katetlar 2 va 1. Gipotenuza √(4 + 1) = √5 ga teng. Kosinus yopishgan katetning gipotenuzaga nisbati: cos t = 1/√5. Maxrajni ildizdan ozod qilamiz: 1/√5 = √5/5. 2√5/5 javobi sinus qiymati. Javob: √5/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin-cos-arctg-dan",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#c7c055cc"
+    },
+    {
+      "q": "cos(arcctg3) ifodasining aniq qiymatini toping va natijani maxrajda ildizsiz ko'rinishda belgilang.",
+      "v": [
+        "3√10/10",
+        "√10/10",
+        "1/3",
+        "√10/3"
+      ],
+      "t": 0,
+      "izoh": "ctg t = 3 bo'lsin, demak yopishgan katet 3, qarshi katet 1. Gipotenuza √(9 + 1) = √10 ga teng. Kosinus: cos t = 3/√10 = 3√10/10. √10/10 javobi sinus qiymati, ya'ni katetlarni almashtirish xatosi. 1/3 esa tangensning qiymati. Javob: 3√10/10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sin-cos-arctg-dan",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#f707e271"
+    },
+    {
+      "q": "O'quvchi sin(arcsin0,37) ifodasini uzoq hisoblab o'tirdi. Ifodani ta'rifga ko'ra bir qadamda soddalashtiring.",
+      "v": [
+        "0,37",
+        "0,63",
+        "1,37",
+        "0,1369"
+      ],
+      "t": 0,
+      "izoh": "arcsin0,37 — bu sinusi aynan 0,37 ga teng bo'lgan burchak. Shu burchakdan yana sinus olsak, dastlabki songa qaytamiz. Ya'ni har qanday a ∈ [−1; 1] uchun sin(arcsin a) = a. Demak natija 0,37. 0,63 javobi 1 − 0,37 ayirmasidan, 0,1369 esa kvadratga ko'tarishdan chiqadi. Javob: 0,37.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichma-ich-qisqarish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#82b15ee1"
+    },
+    {
+      "q": "arcsin(sin(2π/3)) ifodasining qiymatini toping. Argument arcsin qiymatlar oralig'idan tashqarida ekaniga e'tibor bering.",
+      "v": [
+        "2π/3",
+        "π/3",
+        "−π/3",
+        "√3/2"
+      ],
+      "t": 1,
+      "izoh": "Avval ichki qiymatni hisoblaymiz: sin(2π/3) = √3/2. Endi arcsin(√3/2) ni topamiz, u [−π/2; π/2] oralig'idan olinadi va π/3 ga teng. Shuning uchun javob 2π/3 emas: bu son oraliqqa kirmaydi va qisqartirish qoidasi u yerda ishlamaydi. Javob: π/3. √3/2 esa burchak o'rniga sinus qiymatini yozib qo'yish xatosi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichma-ich-qisqarish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#1407fd67"
+    },
+    {
+      "q": "arccos(cos(7π/6)) ifodasini soddalashtiring va natijani to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "7π/6",
+        "−5π/6",
+        "5π/6",
+        "π/6"
+      ],
+      "t": 2,
+      "izoh": "Ichki qiymat: cos(7π/6) = −√3/2. Endi arccos(−√3/2) ni [0; π] oralig'idan izlaymiz: u 5π/6 ga teng. 7π/6 javobi arccos(cos x) = x deb shoshib yozishdan chiqadi, lekin bu tenglik faqat x ∈ [0; π] bo'lgandagina o'rinli. Manfiy javob esa arccos uchun umuman mumkin emas. Javob: 5π/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichma-ich-qisqarish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#efaf2c87"
+    },
+    {
+      "q": "arcsin(sin(5π/4)) ifodasining qiymatini hisoblang va javobingizni qiymatlar oralig'i bo'yicha tekshiring.",
+      "v": [
+        "5π/4",
+        "π/4",
+        "3π/4",
+        "−π/4"
+      ],
+      "t": 3,
+      "izoh": "Ichki qiymat: sin(5π/4) = −√2/2, chunki 5π/4 uchinchi chorakda yotadi. Endi arcsin(−√2/2) ni [−π/2; π/2] oralig'idan izlaymiz va −π/4 ni olamiz. 5π/4 javobi qisqartirish qoidasini shartsiz qo'llash xatosi, π/4 esa minusni yo'qotish natijasi. Javob: −π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichma-ich-qisqarish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#5d919e55"
+    },
+    {
+      "q": "Test topshirig'ida sin(arcsin1,2) ifodasi berilgan. Uning qiymati haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "1,2 ga teng",
+        "−1,2 ga teng",
+        "0 ga teng",
+        "Ifoda aniqlanmagan"
+      ],
+      "t": 3,
+      "izoh": "sin(arcsin a) = a qoidasi faqat a ∈ [−1; 1] shart bajarilgandagina ishlaydi. Bu yerda a = 1,2 bo'lib, u kesmadan tashqarida, ya'ni arcsin1,2 ning o'zi mavjud emas. Mavjud bo'lmagan ifodadan sinus olib ham bo'lmaydi. Javob: ifoda aniqlanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichma-ich-qisqarish",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#0f2adeed"
+    },
+    {
+      "q": "sin(2·arcsin(3/5)) ifodasini ikkilangan burchak formulasi yordamida soddalashtiring va natijani belgilang.",
+      "v": [
+        "24/25",
+        "6/5",
+        "12/25",
+        "7/25"
+      ],
+      "t": 0,
+      "izoh": "arcsin(3/5) = t deylik, u holda sin t = 3/5 va cos t = 4/5. Ikkilangan burchak formulasi: sin2t = 2·sin t·cos t = 2·(3/5)·(4/5) = 24/25. 6/5 javobi faqat sinusni ikkilantirish, 12/25 esa 2 ko'paytuvchisini unutish natijasi. 7/25 — bu cos2t ning qiymati. Javob: 24/25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilangan-burchak",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#64738033"
+    },
+    {
+      "q": "cos(2·arccos(1/3)) ifodasining aniq qiymatini toping va to'g'ri javobni tanlang.",
+      "v": [
+        "7/9",
+        "−7/9",
+        "2/3",
+        "1/9"
+      ],
+      "t": 1,
+      "izoh": "arccos(1/3) = t bo'lsin, ya'ni cos t = 1/3. Formuladan foydalanamiz: cos2t = 2·cos²t − 1 = 2·(1/9) − 1 = 2/9 − 1 = −7/9. 7/9 javobi 1 − 2·cos²t ko'rinishidagi noto'g'ri formuladan, 2/3 esa kosinusni oddiy ikkilantirishdan chiqadi. Javob: −7/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilangan-burchak",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#2ecb6edc"
+    },
+    {
+      "q": "Laboratoriya hisobotida α = arcsin0,8 deb belgilangan. Hisobni yakunlash uchun cos2α kerak bo'lib qoldi. Uni toping.",
+      "v": [
+        "0,28",
+        "1,6",
+        "−0,28",
+        "0,96"
+      ],
+      "t": 2,
+      "izoh": "sin α = 0,8 bo'lgani uchun cos2α = 1 − 2·sin²α formulasidan foydalanamiz: 1 − 2·0,64 = 1 − 1,28 = −0,28. Natija manfiy, chunki 2α burchagi to'g'ri burchakdan katta chiqadi. 0,96 javobi sin2α qiymati, 1,6 esa sinusni ikkilantirish natijasi. Javob: −0,28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikkilangan-burchak",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#c00ff5e7"
+    },
+    {
+      "q": "tg(2·arctg(1/3)) ifodasini soddalashtiring va uning aniq qiymatini ko'rsating.",
+      "v": [
+        "2/3",
+        "1/9",
+        "4/3",
+        "3/4"
+      ],
+      "t": 3,
+      "izoh": "arctg(1/3) = t deylik, ya'ni tg t = 1/3. Formuladan: tg2t = 2·tg t / (1 − tg²t) = (2/3) : (1 − 1/9) = (2/3) : (8/9) = 3/4. 2/3 javobi faqat surat hisoblanib, maxraj tashlab ketilganda chiqadi. 4/3 esa oxirgi kasrni ag'darish xatosi. Javob: 3/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikkilangan-burchak",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#c2f60df2"
+    },
+    {
+      "q": "sin(arcsin(3/5) + arccos(3/5)) ifodasini soddalashtiring. Argumentlar bir xil ekaniga alohida e'tibor bering.",
+      "v": [
+        "1",
+        "0",
+        "24/25",
+        "6/5"
+      ],
+      "t": 0,
+      "izoh": "Qavs ichidagi yig'indi arcsin a + arccos a = π/2 ayniyatiga ko'ra π/2 ga teng. Demak ifoda sin(π/2) ga aylanadi, u esa 1 ga teng. Uzun qo'shish formulasini yozib o'tirish shart emas. 0 javobi cos(π/2) bilan chalkashtirish, 24/25 esa ikkilangan burchak formulasini noo'rin qo'llash natijasi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-formula",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#5b8b5617"
+    },
+    {
+      "q": "cos(arcsin(4/5) + arcsin(5/13)) ifodasining aniq qiymatini kosinusning qo'shish formulasi yordamida toping.",
+      "v": [
+        "56/65",
+        "16/65",
+        "63/65",
+        "−16/65"
+      ],
+      "t": 1,
+      "izoh": "a = arcsin(4/5) uchun sin a = 4/5, cos a = 3/5; b = arcsin(5/13) uchun sin b = 5/13, cos b = 12/13. Formula: cos(a + b) = cos a·cos b − sin a·sin b = (3/5)·(12/13) − (4/5)·(5/13) = 36/65 − 20/65 = 16/65. 56/65 javobi ayirish o'rniga qo'shishdan, 63/65 esa sinus formulasini qo'llashdan chiqadi. Javob: 16/65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-formula",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#d1b6a911"
+    },
+    {
+      "q": "sin(arccos(3/5) + arcsin(5/13)) ifodasini hisoblang va natijani to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "33/65",
+        "48/65",
+        "63/65",
+        "16/65"
+      ],
+      "t": 2,
+      "izoh": "a = arccos(3/5) uchun cos a = 3/5, sin a = 4/5; b = arcsin(5/13) uchun sin b = 5/13, cos b = 12/13. Formula: sin(a + b) = sin a·cos b + cos a·sin b = (4/5)·(12/13) + (3/5)·(5/13) = 48/65 + 15/65 = 63/65. 33/65 javobi ishorani almashtirish, 48/65 esa ikkinchi qo'shiluvchini tashlab ketish natijasi. Javob: 63/65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-formula",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#91074659"
+    },
+    {
+      "q": "arctg2 + arctg3 yig'indisining aniq qiymatini toping. Yechishda tangensning qo'shish formulasidan foydalaning.",
+      "v": [
+        "π/4",
+        "−π/4",
+        "π/2",
+        "3π/4"
+      ],
+      "t": 3,
+      "izoh": "Yig'indini S deb belgilaymiz. tg S = (2 + 3) / (1 − 2·3) = 5 : (−5) = −1. Har ikki burchak ham π/4 dan katta, shuning uchun S soni π/2 dan katta bo'ladi va (π/2; π) oralig'ida yotadi. Tangensi −1 ga teng shu oraliqdagi yagona burchak 3π/4. Javob: 3π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-formula",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#abe89515"
+    },
+    {
+      "q": "arcsin x = −π/4 tenglamani yeching va x ning qiymatini to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "−√2/2",
+        "√2/2",
+        "−π/4",
+        "√3/2"
+      ],
+      "t": 0,
+      "izoh": "Teskari funksiya ta'rifiga ko'ra arcsin x = t tenglik x = sin t ga teng kuchli, agar t ∈ [−π/2; π/2] bo'lsa. Bu yerda t = −π/4 shu oraliqda yotadi. Demak x = sin(−π/4) = −√2/2. Ishorani tashlab yuborsak √2/2 chiqadi, javob o'rniga burchakni yozib qo'yish esa ikkinchi tipik xato. Javob: −√2/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-tenglama",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#25351e4c"
+    },
+    {
+      "q": "arccos(2x − 1) = π/3 tenglamani qanoatlantiruvchi x ni toping va to'g'ri javobni tanlang.",
+      "v": [
+        "1/4",
+        "3/4",
+        "3/2",
+        "1/2"
+      ],
+      "t": 1,
+      "izoh": "Ta'rifga ko'ra 2x − 1 = cos(π/3) = 1/2. Endi chiziqli tenglamani yechamiz: 2x = 1/2 + 1 = 3/2, demak x = 3/4. 1/4 javobi tenglamadagi −1 hadini umuman hisobga olmaslikdan (2x = 1/2 deb olishdan), 3/2 esa oxirgi ikkiga bo'lishni unutishdan kelib chiqadi. Javob: 3/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-tenglama",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#03eabe0c"
+    },
+    {
+      "q": "arctg(x + 1) = π/4 tenglamaning yechimini toping va uni to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "1",
+        "−1",
+        "0",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "Ta'rifga ko'ra x + 1 = tg(π/4) = 1. Bundan x = 1 − 1 = 0. Javob 1 emas, chunki tenglikda ichki ifoda x emas, balki x + 1 turibdi. −1 javobi tg(π/4) ni 0 deb olish, 2 esa ayirish o'rniga qo'shish natijasi. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-tenglama",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#912d63c1"
+    },
+    {
+      "q": "arcsin(x/3) = π/2 tenglamani yeching va x ning qiymatini ko'rsating.",
+      "v": [
+        "1",
+        "3/2",
+        "6",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Ta'rifga ko'ra x/3 = sin(π/2) = 1. Bundan x = 3. Bu qiymat o'rinli, chunki x/3 = 1 soni arcsin uchun ruxsat etilgan [−1; 1] kesmasining chetida yotadi. 6 javobi 3 ga bo'lish o'rniga ko'paytirish xatosi, 3/2 esa π/2 dagi ikkini ichki ifodaga ko'chirish natijasi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-tenglama",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#63494a92"
+    },
+    {
+      "q": "arcsin0,5 va arccos0,5 sonlarini bir birga taqqoslang. Qaysi xulosa to'g'ri?",
+      "v": [
+        "arcsin 0,5 katta",
+        "arccos 0,5 katta",
+        "Ular teng",
+        "Taqqoslab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "arcsin0,5 = π/6, chunki sin(π/6) = 0,5. arccos0,5 = π/3, chunki cos(π/3) = 0,5. π/3 soni π/6 dan ikki barobar katta, demak arccos0,5 kattaroq. Ularning yig'indisi π/2 ekanini tekshirish ham mumkin: π/6 + π/3 = π/2. Javob: arccos 0,5 katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqqoslash-monotonlik",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#e221d5f2"
+    },
+    {
+      "q": "arcsin0,9, arccos0,9, arctg0,9 va arcctg0,9 sonlaridan qaysi biri eng katta qiymatga ega ekanini aniqlang.",
+      "v": [
+        "arccos 0,9",
+        "arctg 0,9",
+        "arcctg 0,9",
+        "arcsin 0,9"
+      ],
+      "t": 3,
+      "izoh": "Argument 1 ga yaqin bo'lgani uchun arcsin0,9 ≈ 1,1198 va u π/2 ga yaqin. arccos0,9 = π/2 − arcsin0,9 ≈ 0,4510, ya'ni eng kichigi. arctg0,9 ≈ 0,7328, arcctg0,9 = π/2 − arctg0,9 ≈ 0,8380. Eng katta son 1,1198 bo'lgani uchun javob arcsin0,9. Javob: arcsin 0,9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqqoslash-monotonlik",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#378ae68f"
+    },
+    {
+      "q": "arccos0,3 va arccos0,7 sonlarining qaysi biri katta ekanini funksiyaning monotonligiga tayanib aniqlang.",
+      "v": [
+        "arccos 0,7 katta",
+        "Ular teng",
+        "arccos 0,3 katta",
+        "Ikkalasi ham manfiy"
+      ],
+      "t": 2,
+      "izoh": "y = arccos x funksiyasi [−1; 1] kesmada kamayuvchi: argument o'sganda qiymat kichrayadi. 0,3 < 0,7 bo'lgani uchun arccos0,3 > arccos0,7. Sonlarda ham shunday: arccos0,3 ≈ 1,2661, arccos0,7 ≈ 0,7954. arccos qiymatlari [0; π] da yotgani uchun manfiy bo'lishi mumkin emas. Javob: arccos 0,3 katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqqoslash-monotonlik",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#4f223992"
+    },
+    {
+      "q": "y = arcsin x funksiyasining juftlik xossasi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Toq funksiya",
+        "Juft funksiya",
+        "Na toq, na juft",
+        "Davriy funksiya"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi [−1; 1] kesmasi koordinata boshiga nisbatan simmetrik. Har qanday ruxsat etilgan x uchun arcsin(−x) = −arcsin x tenglik bajariladi, bu esa toqlik ta'rifining o'zi. Grafik koordinata boshiga nisbatan simmetrik joylashgan. Teskari trigonometrik funksiyalar davriy emas. Javob: toq funksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-funksiya-xossalari",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#c0b87e57"
+    },
+    {
+      "q": "y = arccos x funksiyasi o'zining aniqlanish sohasida qanday o'zgaradi? To'g'ri javobni belgilang.",
+      "v": [
+        "O'suvchi",
+        "Kamayuvchi",
+        "O'zgarmas",
+        "Oraliqlarda o'zgaruvchan"
+      ],
+      "t": 1,
+      "izoh": "x = −1 nuqtada arccos(−1) = π, x = 0 da arccos0 = π/2, x = 1 da arccos1 = 0. Argument o'sib borgan sari qiymat π dan 0 gacha pasayadi, demak funksiya butun [−1; 1] kesmada kamayuvchi. Bu jihati bilan u o'suvchi arcsin dan farq qiladi. Javob: kamayuvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-funksiya-xossalari",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#f38c5c27"
+    },
+    {
+      "q": "y = arctg x funksiyasi grafigining gorizontal asimptotalari qaysi variantda to'g'ri ko'rsatilgan?",
+      "v": [
+        "y = 0 va y = π",
+        "y = ±π/2 to'g'ri chiziqlari",
+        "x = ±π/2 to'g'ri chiziqlari",
+        "Asimptotasi yo'q"
+      ],
+      "t": 1,
+      "izoh": "arctg x qiymatlari (−π/2; π/2) ochiq oralig'ida yotadi va chetlariga hech qachon yetmaydi. x cheksiz o'sganda arctg x qiymati π/2 ga, x cheksiz kamayganda −π/2 ga intiladi. Demak grafikda y = π/2 va y = −π/2 gorizontal asimptotalar hosil bo'ladi. Vertikal asimptota esa yo'q. Javob: y = ±π/2 to'g'ri chiziqlari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-funksiya-xossalari",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#e0daa7b9"
+    },
+    {
+      "q": "Ustaxonada uzunligi 2 m bo'lgan quyosh panelining bir cheti yerdan 1 m ga ko'tarib o'rnatildi. Panel gorizont bilan necha gradus burchak hosil qiladi?",
+      "v": [
+        "30°",
+        "60°",
+        "45°",
+        "15°"
+      ],
+      "t": 0,
+      "izoh": "Panel gipotenuza, ko'tarilgan chetning balandligi esa qarshi katet bo'ladi. sin α = 1 : 2 = 0,5, demak α = arcsin0,5 = 30°. 60° javobi to'ldiruvchi burchak, ya'ni panel bilan tik yo'nalish orasidagi burchak. 45° javobi sinusni to'g'ridan to'g'ri yarim to'g'ri burchak deb qabul qilishdan, 15° esa 30° ni yarmiga bo'lishdan chiqadi. Javob: 30°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-burchak-hisobi",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#30d323c9"
+    },
+    {
+      "q": "Fermer Odilning dalasi to'g'ri burchakli uchburchak shaklida bo'lib, tomonlari 8 m, 15 m va 17 m ni tashkil qiladi. Dalaning eng kichik burchagi qaysi ifodaga teng?",
+      "v": [
+        "arcsin(15/17)",
+        "arcsin(8/17)",
+        "arccos(8/17)",
+        "arctg(17/8)"
+      ],
+      "t": 1,
+      "izoh": "Uchburchakda eng kichik burchak eng qisqa tomon, ya'ni 8 m qarshisida yotadi. Gipotenuza eng uzun tomon 17 m. Sinus qarshi katetning gipotenuzaga nisbati bo'lgani uchun burchak arcsin(8/17) ga teng. arcsin(15/17) katta burchakni, arccos(8/17) esa uning to'ldiruvchisini beradi. arctg(17/8) da gipotenuza katet o'rnida ishlatilgan. Javob: arcsin(8/17).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tomon-nisbati",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#69bc6cc3"
+    },
+    {
+      "q": "Uchburchak shaklidagi bog' uchastkasining tomonlari 7 m, 8 m va 9 m. Eng uzun tomon qarshisidagi burchak qaysi ifoda bilan ifodalanadi?",
+      "v": [
+        "arccos(11/21)",
+        "arcsin(2/7)",
+        "arccos(2/7)",
+        "arccos(−2/7)"
+      ],
+      "t": 2,
+      "izoh": "Kosinuslar teoremasini 9 m tomonga qo'llaymiz: cos γ = (7² + 8² − 9²) / (2·7·8) = (49 + 64 − 81) : 112 = 32 : 112 = 2/7. Demak γ = arccos(2/7). arccos(−2/7) ishorani almashtirish, arccos(11/21) esa kosinuslar teoremasini eng uzun tomon o'rniga 8 m tomonga qo'llashdan chiqadi: (49 + 81 − 64) : (2·7·9) = 66 : 126 = 11/21. arcsin(2/7) da esa kosinus qiymati sinus deb olingan. Javob: arccos(2/7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-tomon-nisbati",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#5c011f56"
+    },
+    {
+      "q": "Radiusi 25 m bo'lgan aylanma g'ildirakning kabinasi markaz sathidan 15 m yuqoriga ko'tarildi. Kabinaga tortilgan radius gorizont bilan qanday burchak hosil qiladi?",
+      "v": [
+        "arccos 0,6",
+        "arctg 0,6",
+        "arcsin(25/15)",
+        "arcsin 0,6"
+      ],
+      "t": 3,
+      "izoh": "Radius gipotenuza vazifasini bajaradi, markazdan yuqoriga ko'tarilish esa qarshi katet. Nisbatni topamiz: 15 : 25 = 0,6. Sinus qarshi katetning gipotenuzaga nisbati bo'lgani uchun burchak arcsin0,6 ga teng. arccos0,6 gorizontal masofa uchun bo'lardi, arcsin(25/15) esa mavjud emas, chunki nisbat 1 dan katta. Javob: arcsin 0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tomon-nisbati",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#f9d87383"
+    },
+    {
+      "q": "Qayiqchi Rustam avval sharqqa 12 km, so'ng shimolga 5 km suzdi. Uning boshlang'ich nuqtadan yo'nalishi sharq tomondan necha gradus og'gan?",
+      "v": [
+        "22,6°",
+        "67,4°",
+        "24,6°",
+        "65,4°"
+      ],
+      "t": 0,
+      "izoh": "Ikki yo'nalish o'zaro perpendikulyar, shuning uchun ular katetlar bo'ladi. Og'ish burchagi tangens orqali topiladi: tg α = 5 : 12, demak α = arctg(5/12) ≈ 22,6°. 67,4° javobi to'ldiruvchi burchak. 24,6° esa nisbatni sinus deb olish, ya'ni arcsin(5/12) ni hisoblash xatosidan chiqadi. Javob: 22,6°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-burchak-hisobi",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#755a9942"
+    },
+    {
+      "q": "Bolalar lageridagi konussimon chodirning yasovchisi 5 m, asosining radiusi esa 3 m ni tashkil qiladi. Yasovchi bilan asos tekisligi orasidagi burchak necha gradus?",
+      "v": [
+        "36,9°",
+        "53,1°",
+        "31,0°",
+        "59,0°"
+      ],
+      "t": 1,
+      "izoh": "Yasovchi gipotenuza, radius esa unga yopishgan katet bo'ladi. Kosinus yopishgan katetning gipotenuzaga nisbati: cos α = 3 : 5 = 0,6, demak α = arccos0,6 ≈ 53,1°. 36,9° javobi arcsin0,6, ya'ni balandlik burchagi bilan chalkashtirish. 31,0° esa arctg0,6 ni hisoblash natijasi. Javob: 53,1°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tomon-nisbati",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#a667fa8f"
+    },
+    {
+      "q": "Tog' yo'lidagi ogohlantirish belgisida nishab 15 foiz deb ko'rsatilgan, ya'ni yo'l har 100 m da 15 m ko'tariladi. Yo'lning og'ish burchagi taxminan nechaga teng?",
+      "v": [
+        "15,0°",
+        "81,5°",
+        "8,5°",
+        "1,5°"
+      ],
+      "t": 2,
+      "izoh": "Nishab foizi ko'tarilishning gorizontal masofaga nisbati, ya'ni tangens qiymati: tg α = 0,15. Demak α = arctg0,15 ≈ 8,5°. Foizni to'g'ridan to'g'ri gradus deb olish 15,0° xatosini beradi. 81,5° to'ldiruvchi burchak, 1,5° esa o'nli kasrni noto'g'ri ko'chirish natijasi. Javob: 8,5°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-burchak-hisobi",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#ba4c6894"
+    },
+    {
+      "q": "Kuzatuvchi balandligi 24 m bo'lgan binodan 45 m uzoqlikda turibdi. U turgan nuqtadan bino uchiga yo'nalgan nur gorizont bilan qanday burchak hosil qiladi (kuzatuvchining bo'yi hisobga olinmaydi)?",
+      "v": [
+        "61,9°",
+        "32,2°",
+        "57,8°",
+        "28,1°"
+      ],
+      "t": 3,
+      "izoh": "Bino balandligi va yergacha bo'lgan masofa ikki katet, gipotenuza berilmagan. Shuning uchun tangens ishlatiladi: tg α = 24 : 45 ≈ 0,5333, demak α = arctg0,5333 ≈ 28,1°. 61,9° to'ldiruvchi burchak. 32,2° javobi nisbatni sinus deb olishdan, ya'ni arcsin0,5333 ni hisoblashdan chiqadi. Javob: 28,1°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-burchak-hisobi",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#43f072ee"
+    },
+    {
+      "q": "arctg(1/2) + arctg(1/3) yig'indisining aniq qiymatini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "π/4",
+        "π/3",
+        "π/6",
+        "π/2"
+      ],
+      "t": 0,
+      "izoh": "Yig'indini S deb olamiz va tangensini hisoblaymiz: tg S = (1/2 + 1/3) : (1 − (1/2)·(1/3)) = (5/6) : (5/6) = 1. Har ikki burchak ham π/4 dan kichik, shuning uchun S soni (0; π/2) oralig'ida yotadi. Tangensi 1 ga teng bo'lgan yagona shunday burchak π/4. Javob: π/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-ifoda-qiymati",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#f9e2896d"
+    },
+    {
+      "q": "arcsin(1/2) + arccos(−1/2) + arctg(−1) ifodasining aniq qiymatini hisoblang va to'g'ri variantni tanlang.",
+      "v": [
+        "11π/12",
+        "7π/12",
+        "5π/12",
+        "13π/12"
+      ],
+      "t": 1,
+      "izoh": "Har bir qo'shiluvchini alohida topamiz: arcsin(1/2) = π/6, arccos(−1/2) = π − π/3 = 2π/3, arctg(−1) = −π/4. Umumiy maxraj 12 ni olamiz: 2π/12 + 8π/12 − 3π/12 = 7π/12. Uchinchi hadning minusini hisobga olmaslik 13π/12 xatosini beradi. Javob: 7π/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-ifoda-qiymati",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#fbef9478"
+    },
+    {
+      "q": "arccos(cos(−π/5)) ifodasini soddalashtiring. Kosinusning juftligidan foydalanishni unutmang.",
+      "v": [
+        "−π/5",
+        "4π/5",
+        "π/5",
+        "9π/5"
+      ],
+      "t": 2,
+      "izoh": "Kosinus juft funksiya, shuning uchun cos(−π/5) = cos(π/5). Endi arccos(cos(π/5)) ni topamiz: π/5 soni [0; π] oralig'ida yotgani uchun qisqartirish qoidasi ishlaydi va natija π/5 bo'ladi. −π/5 javobi arccos manfiy qiymat qabul qila olmasligini unutish, 4π/5 esa manfiy argument formulasini noo'rin qo'llash natijasi. Javob: π/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-funksiya-xossalari",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#6550aba8"
+    },
+    {
+      "q": "arccos x = arcsin x tenglama nechta haqiqiy ildizga ega ekanini aniqlang va to'g'ri xulosani tanlang.",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "Ildizi yo'q",
+        "Cheksiz ko'p"
+      ],
+      "t": 0,
+      "izoh": "arcsin x + arccos x = π/2 ayniyatidan arccos x = π/2 − arcsin x. Uni tenglamaga qo'yamiz: π/2 − arcsin x = arcsin x, ya'ni 2·arcsin x = π/2. Bundan arcsin x = π/4 va x = sin(π/4) = √2/2. Bu son [−1; 1] kesmada yotgani uchun yaroqli, demak yagona ildiz bor. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "arcsin-arccos-tenglama",
+      "id": "matematika_trig_m09-teskari-trigonometrik-funksiyalar#a00c08a9"
+    }
+  ]
+}

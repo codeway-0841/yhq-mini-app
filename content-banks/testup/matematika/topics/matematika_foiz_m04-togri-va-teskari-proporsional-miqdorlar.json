@@ -1,0 +1,1609 @@
+{
+  "nom": "To'g'ri va teskari proporsional miqdorlar, masshtab",
+  "bolim": "Nisbat, foiz va matnli masalalar",
+  "blok": "foiz",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Quyidagi juftliklardan qaysi birida miqdorlar teskari proporsional bog'langan?",
+      "v": [
+        "Sotib olingan olmaning massasi va uning umumiy narxi",
+        "Avtomobil tezligi va o'zgarmas masofani bosib o'tish vaqti",
+        "Kvadratning tomoni va uning perimetri",
+        "Ishchilar soni va ular bajargan umumiy ish hajmi"
+      ],
+      "t": 1,
+      "izoh": "Teskari proporsionallikda bir miqdor necha marta ortsa, ikkinchisi shuncha marta kamayadi va ko'paytma o'zgarmas qoladi. Masofa o'zgarmas bo'lganda s = v·t, ya'ni tezlik va vaqtning ko'paytmasi doimiy. Qolgan uchtasida miqdorlar birga ortadi. Javob: tezlik va vaqt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boglanish-turini-aniqlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#8c9a7c7c"
+    },
+    {
+      "q": "Quyidagi juftliklardan qaysi birida miqdorlar to'g'ri proporsional bog'langan?",
+      "v": [
+        "Bir xil uzunlikdagi qadamlar soni va bosib o'tilgan yo'l",
+        "Nasoslar soni va hovuzni to'ldirish vaqti",
+        "To'g'ri to'rtburchak yuzasi o'zgarmas bo'lgandagi uzunlik va en",
+        "Traktor tezligi va dalani haydash vaqti"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri proporsionallikda miqdorlarning nisbati o'zgarmas: y/x = k. Har bir qadam bir xil uzunlikda bo'lgani uchun yo'l qadamlar soniga bo'linsa, doim bitta qadam uzunligi chiqadi. Qolgan uchtasida bir miqdor ortganda ikkinchisi kamayadi, ya'ni ular teskari proporsional. Javob: qadamlar soni va yo'l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boglanish-turini-aniqlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#53ed384c"
+    },
+    {
+      "q": "Anvar do'kondan bir xil narxdagi daftarlardan bir nechtasini oladi. Daftarlar soni bilan to'lanadigan pul orasidagi bog'lanish qanday va qaysi kattalik o'zgarmas qoladi?",
+      "v": [
+        "Teskari proporsional, ko'paytma o'zgarmas",
+        "To'g'ri proporsional, nisbat o'zgarmas",
+        "To'g'ri proporsional, ko'paytma o'zgarmas",
+        "Proporsional emas, ayirma o'zgarmas"
+      ],
+      "t": 1,
+      "izoh": "Bitta daftar narxi o'zgarmagani uchun to'lov daftarlar soniga bo'linganda doim o'sha narx chiqadi. Demak pul/son nisbati doimiy, bu esa to'g'ri proporsionallik ta'rifi. Ko'paytma doimiyligi teskari proporsionallikka, ayirma doimiyligi esa umuman proporsionallikka tegishli emas. Javob: to'g'ri proporsional, nisbat o'zgarmas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boglanish-turini-aniqlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#506de10b"
+    },
+    {
+      "q": "Bir xil hajmdagi suv omboriga suv har xil sig'imli chelaklar bilan tashiladi. Chelak sig'imi bilan kerak bo'ladigan chelaklar soni qanday bog'langan?",
+      "v": [
+        "To'g'ri proporsional",
+        "Teskari proporsional",
+        "Hech qanday bog'lanish yo'q",
+        "Chiziqli, lekin proporsional emas"
+      ],
+      "t": 1,
+      "izoh": "Ombor hajmi o'zgarmas, u chelak sig'imi bilan chelaklar sonining ko'paytmasiga teng. Ko'paytma doimiy bo'lgani uchun sig'im ortsa, chelaklar soni shuncha marta kamayadi. Bu teskari proporsionallikning aynan ta'rifi. Javob: teskari proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boglanish-turini-aniqlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#bfa3dfcc"
+    },
+    {
+      "q": "Ikki miqdor uchun jadval tuzildi: x = 3 bo'lganda y = 24, x = 4 bo'lganda y = 18, x = 6 bo'lganda y = 12. Bu miqdorlar haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "To'g'ri proporsional, koeffitsient 8 ga teng",
+        "Teskari proporsional, ko'paytma 60 ga teng",
+        "Umuman proporsional emas",
+        "Teskari proporsional, ko'paytma 72 ga teng"
+      ],
+      "t": 3,
+      "izoh": "Avval ko'paytmalarni tekshiramiz: 3·24 = 72, 4·18 = 72, 6·12 = 72. Uchala ko'paytma bir xil, demak x·y = 72 doimiy va miqdorlar teskari proporsional. Nisbatlar esa bir xil emas: 24/3 = 8, lekin 18/4 = 4,5. Javob: teskari proporsional, ko'paytma 72.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boglanish-turini-aniqlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#90ed5021"
+    },
+    {
+      "q": "Dilnoza bozordan 4 kg olma uchun 36 000 so'm to'ladi. Xuddi shu narxda 7 kg olma uchun u qancha pul to'laydi?",
+      "v": [
+        "63 000 so'm",
+        "45 000 so'm",
+        "54 000 so'm",
+        "72 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Avval bir kilogramm narxini topamiz: 36 000 : 4 = 9 000 so'm. Massa va to'lov to'g'ri proporsional, shuning uchun 7 kg uchun 9 000·7 = 63 000 so'm to'lanadi. 45 000 so'm faqat 5 kg ning, 72 000 so'm esa 8 kg ning narxi. Javob: 63 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "togri-proporsional-hisob",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#7faee794"
+    },
+    {
+      "q": "Traktor 5 soatda 12 gektar yerni haydaydi. Xuddi shunday unum bilan ishlaganda u 8 soatda necha gektar yer haydaydi?",
+      "v": [
+        "7,5 ga",
+        "15 ga",
+        "19,2 ga",
+        "20 ga"
+      ],
+      "t": 2,
+      "izoh": "Bir soatlik unum: 12 : 5 = 2,4 gektar. Vaqt va haydalgan maydon to'g'ri proporsional, shuning uchun 2,4·8 = 19,2 gektar chiqadi. 7,5 ga proporsiyani teskari yozgandan, 15 ga esa ko'paytirish o'rniga qo'shishdan kelib chiqadi. Javob: 19,2 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "togri-proporsional-hisob",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#6dd346e3"
+    },
+    {
+      "q": "Bir xil g'ishtdan terilgan devorning 6 m² qismiga 390 ta g'isht ketdi. Shu devorning 15 m² qismini terish uchun nechta g'isht kerak bo'ladi?",
+      "v": [
+        "156 ta",
+        "585 ta",
+        "975 ta",
+        "1 950 ta"
+      ],
+      "t": 2,
+      "izoh": "Bir kvadrat metrga 390 : 6 = 65 ta g'isht ketadi. Yuza va g'isht soni to'g'ri proporsional, demak 65·15 = 975 ta g'isht kerak. 585 ta faqat qo'shimcha 9 m² ning hisobi, 1 950 ta esa 15 : 6 nisbatni 5 deb olishdan chiqadi. Javob: 975 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-proporsional-hisob",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#7410f6db"
+    },
+    {
+      "q": "Avtomobil 3 soatda 195 km yo'l bosdi. Tezlik o'zgarmagan holda u 7 soatda qancha masofani bosib o'tadi?",
+      "v": [
+        "260 km",
+        "455 km",
+        "585 km",
+        "1 365 km"
+      ],
+      "t": 1,
+      "izoh": "Tezlik: 195 : 3 = 65 km/soat. Vaqt va masofa to'g'ri proporsional, shuning uchun 65·7 = 455 km. 260 km faqat qo'shimcha 4 soatning yo'li, 1 365 km esa 195 ni 7 ga ko'paytirib, 3 ga bo'lishni unutgandan chiqadi. Javob: 455 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "togri-proporsional-hisob",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#051ded3a"
+    },
+    {
+      "q": "Zavodda 8 ta bir xil stanok 5 soatda 1 200 ta detal tayyorlaydi. O'sha 8 ta stanok 9 soatda nechta detal tayyorlaydi?",
+      "v": [
+        "960 ta",
+        "1 920 ta",
+        "2 160 ta",
+        "2 400 ta"
+      ],
+      "t": 2,
+      "izoh": "Stanoklar soni o'zgarmagani uchun faqat vaqt ta'sir qiladi: bir soatda 1 200 : 5 = 240 ta detal. Vaqt va detal soni to'g'ri proporsional, demak 240·9 = 2 160 ta. 1 920 ta soat o'rniga stanoklar sonini ko'paytirishdan, 960 ta esa faqat qo'shimcha 4 soatdan chiqadi. Javob: 2 160 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-proporsional-hisob",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#571ac22f"
+    },
+    {
+      "q": "Olti nafar ishchi uyni 24 kunda bo'yab tugatadi. Bir xil unum bilan ishlaganda 9 nafar ishchi shu uyni necha kunda bo'yaydi?",
+      "v": [
+        "16 kun",
+        "21 kun",
+        "27 kun",
+        "36 kun"
+      ],
+      "t": 0,
+      "izoh": "Ishning umumiy hajmi: 6·24 = 144 ishchi-kun. Ishchilar soni va muddat teskari proporsional, shuning uchun 144 : 9 = 16 kun chiqadi. 36 kun bog'lanishni to'g'ri proporsional deb olishdan, 21 kun esa ishchilar 3 taga ko'paygani uchun muddatni 3 kunga kamaytirishdan kelib chiqqan. Javob: 16 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-proporsional-hisob",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#b9102c67"
+    },
+    {
+      "q": "Anvar velosipedda 12 km/soat tezlik bilan yurganda maktabga 20 daqiqada yetadi. Tezligini 15 km/soat ga oshirsa, u necha daqiqada yetib boradi?",
+      "v": [
+        "16 daqiqa",
+        "17 daqiqa",
+        "23 daqiqa",
+        "25 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Masofa o'zgarmas, demak tezlik va vaqt teskari proporsional: 12·20 = 240 doimiy ko'paytma. Yangi vaqt 240 : 15 = 16 daqiqa. 25 daqiqa bog'lanishni to'g'ri proporsional deb olgandan, 17 daqiqa esa tezlik 3 birlikka oshgani uchun vaqtni 3 daqiqaga kamaytirishdan chiqadi. Javob: 16 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-proporsional-hisob",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#f8727e06"
+    },
+    {
+      "q": "Fermada tayyorlangan yem 15 ta ot uchun 28 kunga yetadi. Otlar soni 21 taga yetkazilsa, xuddi shu yem necha kunga yetadi?",
+      "v": [
+        "22 kun",
+        "34 kun",
+        "39,2 kun",
+        "20 kun"
+      ],
+      "t": 3,
+      "izoh": "Yemning umumiy zaxirasi: 15·28 = 420 ot-kun. Otlar soni va muddat teskari proporsional, shuning uchun 420 : 21 = 20 kun. 39,2 kun bog'lanishni to'g'ri proporsional deb hisoblashdan, 22 kun esa 28 dan 6 ni ayirishdan chiqqan. Javob: 20 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-proporsional-hisob",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#e25142dd"
+    },
+    {
+      "q": "Bir xil quvvatli 4 ta nasos hovuzni 45 daqiqada to'ldiradi. Hovuzni 30 daqiqada to'ldirish uchun nechta shunday nasos kerak bo'ladi?",
+      "v": [
+        "3 ta",
+        "5 ta",
+        "6 ta",
+        "8 ta"
+      ],
+      "t": 2,
+      "izoh": "Hovuz hajmi o'zgarmas: 4·45 = 180 nasos-daqiqa. Nasoslar soni va vaqt teskari proporsional, demak 180 : 30 = 6 ta nasos kerak. 8 ta nasos vaqt yarmiga kamaydi deb o'ylashdan, 5 ta esa 15 daqiqa uchun bitta nasos qo'shish fikridan chiqadi. Javob: 6 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-proporsional-hisob",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#6ef2a744"
+    },
+    {
+      "q": "Kitobda 60 bet bo'lib, har bir betga 40 qatordan matn joylashtirilgan. Xuddi shu matn har betga 48 qatordan joylashtirilsa, kitob necha bet bo'ladi?",
+      "v": [
+        "52 bet",
+        "50 bet",
+        "68 bet",
+        "72 bet"
+      ],
+      "t": 1,
+      "izoh": "Matnning umumiy hajmi: 60·40 = 2 400 qator. Bir betdagi qatorlar soni va betlar soni teskari proporsional, shuning uchun 2 400 : 48 = 50 bet. 72 bet to'g'ri proporsionallik xatosidan, 52 bet esa qatorlar 8 taga ko'paygani uchun betlarni 8 taga kamaytirishdan chiqadi. Javob: 50 bet.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-proporsional-hisob",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#811fa2b2"
+    },
+    {
+      "q": "12 : 18 = x : 27 proporsiyada noma'lum had x ning qiymatini toping.",
+      "v": [
+        "8",
+        "18",
+        "21",
+        "40,5"
+      ],
+      "t": 1,
+      "izoh": "Proporsiyaning asosiy xossasiga ko'ra chetki hadlar ko'paytmasi o'rta hadlar ko'paytmasiga teng: 12·27 = 18·x. Bundan 324 = 18x, ya'ni x = 18. 40,5 hadlarni o'rin almashtirib qo'yishdan, 21 esa ayirmalarni tenglashtirishdan chiqadi. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsiya-nomalum-had",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#ada8ef61"
+    },
+    {
+      "q": "Dorixonada bir xil turdagi 3 quti dori 51 000 so'm turadi. Shunday qutilardan 8 tasi uchun to'lanadigan pulni proporsiya tuzib toping.",
+      "v": [
+        "136 000 so'm",
+        "119 000 so'm",
+        "19 125 so'm",
+        "153 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Proporsiya tuzamiz: 3 : 51 000 = 8 : x. Bundan x = 51 000·8 : 3 = 136 000 so'm. 19 125 so'm proporsiyani teskari yozishdan, 119 000 so'm esa 8 o'rniga 7 quti hisoblashdan chiqadi. Javob: 136 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsiya-nomalum-had",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#f62201f1"
+    },
+    {
+      "q": "a : 9 = 20 : 15 proporsiyadan a ning qiymatini aniqlang.",
+      "v": [
+        "6,75",
+        "12",
+        "14",
+        "33,3"
+      ],
+      "t": 1,
+      "izoh": "Chetki hadlar ko'paytmasi o'rta hadlar ko'paytmasiga teng: a·15 = 9·20 = 180. Demak a = 180 : 15 = 12. 6,75 javobi nisbatni teskari yozib, 9·15 : 20 ni hisoblashdan, 14 esa 9 ga hadlar ayirmasini qo'shishdan kelib chiqadi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsiya-nomalum-had",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#7d42b604"
+    },
+    {
+      "q": "Ikki sonning nisbati 5 : 9 ga teng, yig'indisi esa 126. Shu sonlarning kattarog'ini toping.",
+      "v": [
+        "45",
+        "63",
+        "81",
+        "90"
+      ],
+      "t": 2,
+      "izoh": "Sonlarni 5k va 9k deb belgilaymiz. U holda 5k + 9k = 14k = 126, bundan k = 9. Kattarog'i 9·9 = 81, kichigi esa 5·9 = 45. 63 sonni yig'indini teng ikkiga bo'lishdan chiqadi. Javob: 81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proporsiya-nomalum-had",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#d805bb83"
+    },
+    {
+      "q": "Xaritaning masshtabi 1 : 50 000. Xaritada ikki qishloq orasidagi kesma 7 sm bo'lsa, ular orasidagi haqiqiy masofa necha kilometrga teng?",
+      "v": [
+        "3,5 km",
+        "0,35 km",
+        "35 km",
+        "350 km"
+      ],
+      "t": 0,
+      "izoh": "Masshtab xaritadagi 1 sm haqiqatda 50 000 sm ekanini bildiradi. Demak 7·50 000 = 350 000 sm. Kilometrga o'tkazamiz: 350 000 sm = 3 500 m = 3,5 km. Qolgan javoblar birlikni aylantirishda o'nlik xonaga adashishdan chiqadi. Javob: 3,5 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab-haqiqiy-masofa",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#57da4d1e"
+    },
+    {
+      "q": "Masshtabi 1 : 200 000 bo'lgan xaritada ikki shahar orasidagi kesma uzunligi 15 sm. Shaharlar orasidagi haqiqiy masofani toping.",
+      "v": [
+        "3 km",
+        "30 km",
+        "300 km",
+        "3 000 km"
+      ],
+      "t": 1,
+      "izoh": "Haqiqiy masofa 15·200 000 = 3 000 000 sm ga teng. Santimetrni kilometrga aylantirish uchun 100 000 ga bo'lamiz: 3 000 000 : 100 000 = 30 km. 3 km va 300 km javoblari nol sanashda yo'l qo'yilgan xatodan kelib chiqadi. Javob: 30 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab-haqiqiy-masofa",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#eb5d9ec0"
+    },
+    {
+      "q": "Detal chizmasi 1 : 25 masshtabda bajarilgan. Chizmada detalning uzunligi 6,4 sm bo'lsa, detalning haqiqiy uzunligi necha santimetr?",
+      "v": [
+        "0,256 sm",
+        "32 sm",
+        "160 sm",
+        "1 600 sm"
+      ],
+      "t": 2,
+      "izoh": "1 : 25 masshtabda chizmadagi har bir santimetr haqiqiy 25 sm ga mos keladi. Demak haqiqiy uzunlik 6,4·25 = 160 sm. 0,256 sm ko'paytirish o'rniga bo'lishdan, 32 sm esa 25 o'rniga 5 ga ko'paytirishdan chiqadi. Javob: 160 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab-haqiqiy-masofa",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#41db53fc"
+    },
+    {
+      "q": "Ma'ruf 1 : 12 500 masshtabli shahar rejasida uyidan maktabgacha bo'lgan yo'lni o'lchab, uning 8,4 sm ekanini aniqladi. U maktabgacha necha metr yo'l yuradi?",
+      "v": [
+        "105 m",
+        "1 050 sm",
+        "10 500 m",
+        "1 050 m"
+      ],
+      "t": 3,
+      "izoh": "Haqiqiy masofa 8,4·12 500 = 105 000 sm. Metrga o'tkazish uchun 100 ga bo'lamiz: 105 000 : 100 = 1 050 m. 105 m javobi 1 000 ga bo'lishdan, 1 050 sm esa birlikni umuman aylantirmaslikdan chiqadi. Javob: 1 050 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtab-haqiqiy-masofa",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#74172a15"
+    },
+    {
+      "q": "Maktabning 1 : 300 masshtabli rejasida sport zali uzunligi 9 sm, eni esa 4 sm qilib tasvirlangan. Sport zalining haqiqiy uzunligi necha metr?",
+      "v": [
+        "12 m",
+        "27 m",
+        "270 m",
+        "2 700 m"
+      ],
+      "t": 1,
+      "izoh": "Uzunlik so'ralgani uchun 9 sm bilan ishlaymiz: 9·300 = 2 700 sm. Metrga o'tkazamiz: 2 700 : 100 = 27 m. 12 m javobi uzunlik o'rniga enni olishdan, 2 700 m esa santimetrni metrga aylantirmaslikdan kelib chiqadi. Javob: 27 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtab-haqiqiy-masofa",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#716087c2"
+    },
+    {
+      "q": "Ikki shahar orasidagi haqiqiy masofa 84 km. Masshtabi 1 : 1 200 000 bo'lgan xaritada bu masofa necha santimetrlik kesma bilan tasvirlanadi?",
+      "v": [
+        "0,7 sm",
+        "7 sm",
+        "70 sm",
+        "700 sm"
+      ],
+      "t": 1,
+      "izoh": "Avval masofani santimetrga o'tkazamiz: 84 km = 8 400 000 sm. Xaritadagi uzunlik uchun masshtab maxrajiga bo'lamiz: 8 400 000 : 1 200 000 = 7 sm. Qolgan javoblar nollarni noto'g'ri qisqartirishdan chiqadi. Javob: 7 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtab-xaritadagi-uzunlik",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#a7945b93"
+    },
+    {
+      "q": "Bog'ning uzunligi 96 m ga teng. Uni 1 : 400 masshtabda chizmaga tushirsak, chizmadagi kesmaning uzunligi qanday bo'ladi?",
+      "v": [
+        "24 sm",
+        "0,24 sm",
+        "2,4 sm",
+        "240 sm"
+      ],
+      "t": 0,
+      "izoh": "Uzunlikni santimetrga o'tkazamiz: 96 m = 9 600 sm. Chizmadagi uzunlik 9 600 : 400 = 24 sm ga teng. 0,24 sm javobi 96 ni to'g'ridan-to'g'ri 400 ga bo'lishdan, 240 sm esa bo'luvchini 40 deb olishdan chiqadi. Javob: 24 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab-xaritadagi-uzunlik",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#e96c961b"
+    },
+    {
+      "q": "Futbol maydonining eni 68 m. Bu maydonni varaqqa 1 : 850 masshtabda chizmoqchimiz. Chizmadagi en necha santimetr bo'ladi?",
+      "v": [
+        "0,08 sm",
+        "0,8 sm",
+        "8 sm",
+        "80 sm"
+      ],
+      "t": 2,
+      "izoh": "Enni santimetrga aylantiramiz: 68 m = 6 800 sm. Chizmadagi en 6 800 : 850 = 8 sm. 0,08 sm javobi metrni santimetrga aylantirmay, 68 ni 850 ga bo'lishdan kelib chiqadigan eng keng tarqalgan xato. Javob: 8 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtab-xaritadagi-uzunlik",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#41d3f506"
+    },
+    {
+      "q": "Vodiy bo'ylab o'tgan kanalning uzunligi 27 km. Masshtabi 1 : 900 000 bo'lgan xaritada u necha santimetrlik chiziq bilan ko'rsatiladi?",
+      "v": [
+        "0,03 sm",
+        "0,3 sm",
+        "3 sm",
+        "30 sm"
+      ],
+      "t": 2,
+      "izoh": "27 km = 2 700 000 sm. Xaritadagi uzunlik 2 700 000 : 900 000 = 3 sm. 0,03 sm javobi kilometrni faqat metrga aylantirib, 27 000 : 900 000 ni hisoblashdan chiqadi. Javob: 3 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtab-xaritadagi-uzunlik",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#4e42bb0b"
+    },
+    {
+      "q": "Haqiqiy uzunligi 12 m bo'lgan avtobus chizmada 6 sm qilib tasvirlangan. Shu chizmaning masshtabini toping.",
+      "v": [
+        "1 : 200",
+        "1 : 2",
+        "1 : 20",
+        "1 : 2 000"
+      ],
+      "t": 0,
+      "izoh": "Masshtab chizmadagi uzunlikning haqiqiy uzunlikka nisbati sifatida topiladi, lekin birliklar bir xil bo'lishi shart: 12 m = 1 200 sm. Nisbat 6 : 1 200 = 1 : 200. 1 : 2 javobi metrni santimetrga aylantirmaslikdan chiqadi. Javob: 1 : 200.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtabni-aniqlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#4a3140a2"
+    },
+    {
+      "q": "Uzunligi 750 km bo'lgan temir yo'l xaritada 15 sm bilan tasvirlangan. Shu xaritaning masshtabi qanday?",
+      "v": [
+        "1 : 50 000",
+        "1 : 500 000",
+        "1 : 5 000 000",
+        "1 : 50 000 000"
+      ],
+      "t": 2,
+      "izoh": "750 km ni santimetrga o'tkazamiz: 750·100 000 = 75 000 000 sm. Masshtab maxraji 75 000 000 : 15 = 5 000 000 ga teng, ya'ni masshtab 1 : 5 000 000. Qolgan javoblar kilometrni santimetrga aylantirishda nollarni noto'g'ri sanashdan chiqadi. Javob: 1 : 5 000 000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtabni-aniqlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#1956a727"
+    },
+    {
+      "q": "Model samolyotning qanot kengligi 24 sm, haqiqiy samolyotniki esa 36 m. Model qanday masshtabda yasalgan?",
+      "v": [
+        "1 : 1,5",
+        "1 : 15",
+        "1 : 150",
+        "1 : 1 500"
+      ],
+      "t": 2,
+      "izoh": "Birliklarni tenglashtiramiz: 36 m = 3 600 sm. Masshtab 24 : 3 600 = 1 : 150. 1 : 1,5 javobi 36 ni 24 ga bo'lib, metrni santimetrga aylantirmaslikdan kelib chiqadi. Javob: 1 : 150.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtabni-aniqlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#241b8c73"
+    },
+    {
+      "q": "Kvartira rejasida uzunligi 5,6 sm qilib chizilgan xona haqiqatda 4,2 m uzunlikka ega. Reja qanday masshtabda bajarilgan?",
+      "v": [
+        "1 : 7,5",
+        "1 : 750",
+        "75 : 1",
+        "1 : 75"
+      ],
+      "t": 3,
+      "izoh": "Haqiqiy uzunlikni santimetrga o'tkazamiz: 4,2 m = 420 sm. Masshtab 5,6 : 420 = 1 : 75. 75 : 1 javobi nisbatni teskari yozishdan, 1 : 7,5 esa 42 ga bo'lishdan chiqadi. Javob: 1 : 75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtabni-aniqlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#2971fe13"
+    },
+    {
+      "q": "Kvadratning tomoni 3 marta uzaytirilsa, uning yuzasi necha marta ortadi?",
+      "v": [
+        "9 marta",
+        "3 marta",
+        "6 marta",
+        "27 marta"
+      ],
+      "t": 0,
+      "izoh": "Kvadrat yuzasi S = a². Tomon 3a bo'lganda yuza (3a)² = 9a² ga aylanadi. Demak yuza 3² = 9 marta ortadi. 3 marta javobi tomon bilan yuzani chalkashtirishdan, 27 marta esa hajm qoidasini qo'llashdan chiqadi. Javob: 9 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-k-marta-ozgarishi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#f0af79e0"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi dalaning uzunligi ham, eni ham 1,5 martadan kattalashtirildi. Dalaning yuzasi necha marta ortadi?",
+      "v": [
+        "1,5 marta",
+        "2,25 marta",
+        "3 marta",
+        "3,375 marta"
+      ],
+      "t": 1,
+      "izoh": "Yuza S = a·b. Yangi yuza 1,5a·1,5b = 2,25ab ga teng. Demak yuza 1,5² = 2,25 marta ortadi. 3 marta javobi koeffitsientlarni qo'shishdan, 3,375 marta esa 1,5³ ni, ya'ni hajm qoidasini olishdan chiqadi. Javob: 2,25 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-k-marta-ozgarishi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#fc48341d"
+    },
+    {
+      "q": "Farrux bog' chizmasini 1 : 500 masshtabdan 1 : 250 masshtabga o'tkazdi. Chizmadagi bog' tasvirining yuzasi necha marta kattalashadi?",
+      "v": [
+        "2 marta",
+        "8 marta",
+        "16 marta",
+        "4 marta"
+      ],
+      "t": 3,
+      "izoh": "Masshtab maxraji 500 dan 250 ga kamayganda chizmadagi har bir chiziqli o'lcham 2 marta uzayadi. Yuza chiziqli o'lchamlar ko'paytmasi bo'lgani uchun u 2² = 4 marta ortadi. 2 marta javobi yuza bilan uzunlikni chalkashtirishdan chiqadi. Javob: 4 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuza-k-marta-ozgarishi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#bcb7c398"
+    },
+    {
+      "q": "Doiraning radiusi 4 marta kattalashtirilsa, uning yuzasi necha marta ortadi?",
+      "v": [
+        "4 marta",
+        "8 marta",
+        "16 marta",
+        "64 marta"
+      ],
+      "t": 2,
+      "izoh": "Doira yuzasi S = πr². Radius 4r bo'lganda yuza π·(4r)² = 16πr² ga aylanadi. Demak yuza 4² = 16 marta ortadi. 8 marta javobi radiusni ikkilantirishdan, 64 marta esa uchinchi darajani olishdan chiqadi. Javob: 16 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-k-marta-ozgarishi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#05fdf5de"
+    },
+    {
+      "q": "O'quvchi uchburchak shaklidagi bayroqcha chizdi, so'ng uning barcha tomonlarini 2,5 martadan uzaytirib, o'xshash bayroqcha yasadi. Yangi bayroqchaning yuzasi eskisidan necha marta katta?",
+      "v": [
+        "2,5 marta",
+        "5 marta",
+        "6,25 marta",
+        "15,625 marta"
+      ],
+      "t": 2,
+      "izoh": "O'xshash shakllarda yuzalar nisbati o'xshashlik koeffitsientining kvadratiga teng. Bu yerda koeffitsient 2,5 bo'lgani uchun yuza 2,5² = 6,25 marta ortadi. 5 marta javobi koeffitsientni ikkiga ko'paytirishdan, 15,625 marta esa kub olishdan chiqadi. Javob: 6,25 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-k-marta-ozgarishi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#1e934f4c"
+    },
+    {
+      "q": "Kubning qirrasi 2 marta uzaytirilsa, uning hajmi necha marta ortadi?",
+      "v": [
+        "2 marta",
+        "4 marta",
+        "6 marta",
+        "8 marta"
+      ],
+      "t": 3,
+      "izoh": "Kub hajmi V = a³. Qirra 2a bo'lganda hajm (2a)³ = 8a³ bo'ladi. Demak hajm 2³ = 8 marta ortadi. 4 marta javobi yuza qoidasini qo'llashdan, 6 marta esa hajmni yoqlar soniga bog'lashdan kelib chiqadi. Javob: 8 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-k-marta-ozgarishi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#82a596aa"
+    },
+    {
+      "q": "Sharning radiusi 3 marta kattalashtirilsa, uning hajmi necha marta ortadi?",
+      "v": [
+        "27 marta",
+        "9 marta",
+        "3 marta",
+        "81 marta"
+      ],
+      "t": 0,
+      "izoh": "Shar hajmi radiusning uchinchi darajasiga proporsional, chunki V = 4πr³ : 3. Radius 3r bo'lganda hajm 3³ = 27 marta ortadi. 9 marta javobi sirt yuzasining o'zgarishi, ya'ni kvadratni olish natijasi. Javob: 27 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-k-marta-ozgarishi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#62fbea95"
+    },
+    {
+      "q": "Sotuvchi sut idishining 1 : 10 masshtabdagi kichik maketini yasadi. Haqiqiy idishga maketdagidan necha marta ko'p suyuqlik sig'adi?",
+      "v": [
+        "10 marta",
+        "100 marta",
+        "10 000 marta",
+        "1 000 marta"
+      ],
+      "t": 3,
+      "izoh": "Maket bilan haqiqiy idishning barcha chiziqli o'lchamlari 10 marta farq qiladi. Sig'im hajm bilan o'lchanadi, hajm esa chiziqli o'lchamning uchinchi darajasiga proporsional: 10³ = 1 000. 100 marta javobi yuza qoidasini qo'llashdan chiqadi. Javob: 1 000 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-k-marta-ozgarishi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#992f8b75"
+    },
+    {
+      "q": "Basseyn loyihasida uning uzunligi, eni va chuqurligi 1,2 martadan oshirildi. Basseynga sig'adigan suvning hajmi necha marta ortadi?",
+      "v": [
+        "1,44 marta",
+        "1,2 marta",
+        "3,6 marta",
+        "1,728 marta"
+      ],
+      "t": 3,
+      "izoh": "Hajm uchta chiziqli o'lchamning ko'paytmasi, shuning uchun har biri 1,2 martadan ortsa, hajm 1,2³ marta ortadi. Hisoblaymiz: 1,2·1,2·1,2 = 1,728. 1,44 marta javobi faqat ikkita o'lchamni hisobga olishdan, 3,6 marta esa koeffitsientlarni qo'shishdan chiqadi. Javob: 1,728 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-k-marta-ozgarishi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#2b499770"
+    },
+    {
+      "q": "Ikki o'xshash silindrsimon idishning balandliklari nisbati 2 : 3 ga teng. Kichik idishga 16 litr suv sig'sa, kattasiga qancha suv sig'adi?",
+      "v": [
+        "54 litr",
+        "24 litr",
+        "36 litr",
+        "81 litr"
+      ],
+      "t": 0,
+      "izoh": "O'xshash jismlarning hajmlari nisbati o'xshashlik koeffitsientining kubiga teng: 2³ : 3³ = 8 : 27. Bitta ulush 16 : 8 = 2 litr, demak katta idish sig'imi 2·27 = 54 litr. 24 litr chiziqli nisbatni, 36 litr esa yuzalar nisbatini qo'llash natijasi. Javob: 54 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajm-k-marta-ozgarishi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#e27ab49e"
+    },
+    {
+      "q": "Masshtabi 1 : 10 000 bo'lgan xaritada to'g'ri to'rtburchak shaklidagi dala 6 sm ga 4 sm o'lchamda tasvirlangan. Dalaning haqiqiy yuzasi necha gektar?",
+      "v": [
+        "0,24 ga",
+        "2,4 ga",
+        "240 ga",
+        "24 ga"
+      ],
+      "t": 3,
+      "izoh": "Tomonlarning haqiqiy uzunligi: 6·10 000 = 60 000 sm = 600 m va 4·10 000 = 40 000 sm = 400 m. Yuza 600·400 = 240 000 m². Bir gektar 10 000 m² bo'lgani uchun 240 000 : 10 000 = 24 ga. Javob: 24 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtab-va-yuza",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#a14ad3ef"
+    },
+    {
+      "q": "Kvartira rejasi 1 : 50 masshtabda chizilgan bo'lib, unda xona 8 sm ga 5 sm o'lchamda. Xonaning haqiqiy yuzasi necha kvadrat metr?",
+      "v": [
+        "10 m²",
+        "0,4 m²",
+        "6,5 m²",
+        "100 m²"
+      ],
+      "t": 0,
+      "izoh": "Masshtab 1 : 50 bo'lgani uchun haqiqiy tomonlar 8·50 = 400 sm = 4 m va 5·50 = 250 sm = 2,5 m. Yuza 4·2,5 = 10 m². 6,5 m² javobi tomonlarni ko'paytirish o'rniga qo'shishdan, 0,4 m² masshtabni umuman qo'llamay 40 sm² ni 100 ga bo'lishdan, 100 m² esa 40 sm² ni masshtab kvadratiga (2 500 ga) ko'paytirib olingan 100 000 sm² ni m² ga o'tkazishda 10 000 emas, 1 000 ga bo'lishdan chiqadi. Javob: 10 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masshtab-va-yuza",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#c88eb5ed"
+    },
+    {
+      "q": "Xaritaning masshtabi 1 : 25 000. Shu xaritadagi 1 sm² yuzaga yerda qanday maydon to'g'ri keladi?",
+      "v": [
+        "2,5 ga",
+        "6,25 ga",
+        "62,5 ga",
+        "625 ga"
+      ],
+      "t": 1,
+      "izoh": "Xaritadagi 1 sm haqiqatda 25 000 sm = 250 m ga mos keladi. Demak 1 sm² yuza 250·250 = 62 500 m² maydonni bildiradi. Uni gektarga aylantiramiz: 62 500 : 10 000 = 6,25 ga. Javob: 6,25 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masshtab-va-yuza",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#fbc528ab"
+    },
+    {
+      "q": "Bir hudud ikki xaritada tasvirlangan: birinchisining masshtabi 1 : 100 000, ikkinchisiniki 1 : 20 000. Ikkinchi xaritadagi tasvir yuzasi birinchisidagidan necha marta katta?",
+      "v": [
+        "5 marta",
+        "25 marta",
+        "10 marta",
+        "125 marta"
+      ],
+      "t": 1,
+      "izoh": "Masshtab maxraji 5 marta kichik bo'lgani uchun ikkinchi xaritada har bir chiziqli o'lcham 5 marta uzun chiqadi. Yuza ikki o'lchamga bog'liq, shuning uchun u 5² = 25 marta ortadi. 5 marta javobi faqat chiziqli o'zgarishni olishdan chiqadi. Javob: 25 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masshtab-va-yuza",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#b3a849ae"
+    },
+    {
+      "q": "y miqdor x ga to'g'ri proporsional bo'lib, x = 8 bo'lganda y = 52 ga teng. Proporsionallik koeffitsientini toping.",
+      "v": [
+        "6,5",
+        "44",
+        "60",
+        "416"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri proporsionallikda y = kx, demak k = y : x. Qiymatlarni qo'yamiz: k = 52 : 8 = 6,5. 416 javobi bo'lish o'rniga ko'paytirishdan, 44 esa ayirishdan kelib chiqadi. Javob: 6,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "togri-proporsionallik-koeffitsienti",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#3ad6f9a7"
+    },
+    {
+      "q": "y = kx ko'rinishdagi bog'lanishda x = 12 bo'lganda y = 30. x = 18 bo'lganda y ning qiymati qanday bo'ladi?",
+      "v": [
+        "20",
+        "36",
+        "45",
+        "54"
+      ],
+      "t": 2,
+      "izoh": "Avval koeffitsientni topamiz: k = 30 : 12 = 2,5. Endi y = 2,5·18 = 45. 20 javobi proporsiyani teskari yozishdan, 36 esa x 6 birlikka ortgani uchun y ga 6 qo'shishdan chiqadi. Javob: 45.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "togri-proporsionallik-koeffitsienti",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#717901e6"
+    },
+    {
+      "q": "Avtomobilning benzin sarfi bosib o'tilgan yo'lga to'g'ri proporsional. 240 km yo'lga 18 litr benzin ketgan bo'lsa, bir kilometrga necha litr benzin sarflanadi?",
+      "v": [
+        "0,75 litr",
+        "7,5 litr",
+        "13,3 litr",
+        "0,075 litr"
+      ],
+      "t": 3,
+      "izoh": "Koeffitsient bir kilometrga to'g'ri keladigan sarf: 18 : 240 = 0,075 litr. 13,3 litr javobi bo'linmani teskari olishdan, 0,75 litr esa vergul o'rnini bir xonaga surib yuborishdan chiqadi. Javob: 0,075 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-proporsionallik-koeffitsienti",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#4fe194c7"
+    },
+    {
+      "q": "Aylana uzunligi diametrga to'g'ri proporsional. Diametri 14 sm bo'lgan g'ildirak uzunligi taxminan 44 sm bo'lsa, diametri 21 sm bo'lgan g'ildirak uzunligi qanchaga yaqin?",
+      "v": [
+        "29,3 sm",
+        "51 sm",
+        "66 sm",
+        "88 sm"
+      ],
+      "t": 2,
+      "izoh": "Proporsiya tuzamiz: 14 : 44 = 21 : x. Bundan x = 44·21 : 14 = 66 sm. 51 sm javobi diametr 7 birlikka ortgani uchun uzunlikka 7 qo'shishdan, 29,3 sm esa nisbatni teskari yozishdan chiqadi. Javob: 66 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-proporsionallik-koeffitsienti",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#c50aef46"
+    },
+    {
+      "q": "y miqdor x ga teskari proporsional bo'lib, x = 6 bo'lganda y = 15. x = 9 bo'lganda y ning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "10",
+        "12",
+        "18",
+        "22,5"
+      ],
+      "t": 0,
+      "izoh": "Teskari proporsionallikda ko'paytma o'zgarmas: k = 6·15 = 90. Demak y = 90 : 9 = 10. 22,5 javobi bog'lanishni to'g'ri proporsional deb olishdan, 12 esa x 3 birlikka ortgani uchun y dan 3 ni ayirishdan chiqadi. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-proporsionallik-formulasi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#8b6be60e"
+    },
+    {
+      "q": "Teskari proporsional bog'langan miqdorlar uchun x·y = 144 munosabat o'rinli. x = 16 bo'lsa, y nimaga teng?",
+      "v": [
+        "12",
+        "9",
+        "128",
+        "160"
+      ],
+      "t": 1,
+      "izoh": "Teskari proporsionallikda y = k : x formuladan foydalanamiz, bu yerda k = 144. Demak y = 144 : 16 = 9. 128 va 160 javoblari ko'paytma o'rniga ayirma yoki yig'indi olishdan, 12 esa 144 dan kvadrat ildiz chiqarishdan kelib chiqadi. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-proporsionallik-formulasi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#3420fc11"
+    },
+    {
+      "q": "Teskari proporsional bog'lanish y = k/x formula bilan beriladi. x = 5 bo'lganda y = 24 bo'lsa, koeffitsient k nimaga teng?",
+      "v": [
+        "4,8",
+        "19",
+        "29",
+        "120"
+      ],
+      "t": 3,
+      "izoh": "y = k/x formuladan k = x·y kelib chiqadi. Qiymatlarni qo'yamiz: k = 5·24 = 120. 4,8 javobi to'g'ri proporsionallik formulasini qo'llab, 24 ni 5 ga bo'lishdan, 29 esa ko'paytirish o'rniga qo'shishdan chiqadi. Javob: 120.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-proporsionallik-formulasi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#d52ae310"
+    },
+    {
+      "q": "y miqdor x ga teskari proporsional. Agar x ning qiymati 25% ga oshirilsa, y ning qiymati necha foizga kamayadi?",
+      "v": [
+        "12,5%",
+        "20%",
+        "25%",
+        "30%"
+      ],
+      "t": 1,
+      "izoh": "x ning yangi qiymati 1,25x bo'ladi. Ko'paytma o'zgarmagani uchun yangi y qiymati k : (1,25x) = 0,8y ga teng. Demak y qiymatining 0,2 qismi, ya'ni 20% i kamaygan. 25% javobi o'sish foizini shundoq ko'chirishdan chiqadi. Javob: 20%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-proporsionallik-formulasi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#22bccecc"
+    },
+    {
+      "q": "Brigada yo'l qoplamasini 18 kunda yotqizadi. Muddatni 12 kunga qisqartirish uchun brigadadagi ishchilar sonini necha marta oshirish kerak?",
+      "v": [
+        "0,75 marta",
+        "2 marta",
+        "6 marta",
+        "1,5 marta"
+      ],
+      "t": 3,
+      "izoh": "Ishchilar soni va muddat teskari proporsional, shuning uchun muddat necha marta kamaysa, ishchilar soni shuncha marta ortadi. Muddatlar nisbati 18 : 12 = 1,5, demak ishchilar soni 1,5 marta oshiriladi. 0,75 nisbatni teskari olish, 6 esa kunlar ayirmasini olish natijasi. Javob: 1,5 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-unumi-teskari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#cc6bd855"
+    },
+    {
+      "q": "Nodira 40 ta ko'ylakni 15 kunda tikadi. Unga xuddi shunday tezlikda ishlaydigan yana bir tikuvchi qo'shilsa, shu ish necha kunda bajariladi?",
+      "v": [
+        "7,5 kun",
+        "10 kun",
+        "13 kun",
+        "30 kun"
+      ],
+      "t": 0,
+      "izoh": "Tikuvchilar soni bir kishidan ikki kishiga, ya'ni 2 marta ortdi. Ishchilar soni va muddat teskari proporsional bo'lgani uchun muddat 2 marta qisqaradi: 15 : 2 = 7,5 kun. 30 kun javobi muddatni ko'paytirishdan, 13 kun esa ikki kunni ayirishdan chiqadi. Javob: 7,5 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ish-unumi-teskari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#b67db4c0"
+    },
+    {
+      "q": "Omborni 12 ta yuk mashinasi 6 reysda bo'shatadi. Mashinalar soni 4 taga kamaytirilsa, ombor necha reysda bo'shatiladi?",
+      "v": [
+        "4 reys",
+        "9 reys",
+        "10 reys",
+        "12 reys"
+      ],
+      "t": 1,
+      "izoh": "Umumiy yuk hajmi o'zgarmaydi: 12·6 = 72 mashina-reys. Mashinalar soni 12 dan 8 taga tushdi, demak reyslar soni 72 : 8 = 9 ga teng. 4 reys javobi bog'lanishni to'g'ri proporsional deb olishdan, 10 reys esa 6 ga 4 ni qo'shishdan chiqadi. Javob: 9 reys.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-unumi-teskari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#c226f989"
+    },
+    {
+      "q": "Uch nafar usta buyurtmani 8 kunda bajaradi. Ish boshlanishida ularga yana 3 nafar shunday usta qo'shilsa, buyurtma necha kunda bitadi?",
+      "v": [
+        "5 kun",
+        "11 kun",
+        "16 kun",
+        "4 kun"
+      ],
+      "t": 3,
+      "izoh": "Ish hajmi 3·8 = 24 usta-kunga teng. Ustalar soni 6 taga yetgach, muddat 24 : 6 = 4 kun bo'ladi. 5 kun javobi qo'shilgan 3 kishini kunlardan ayirishdan, 16 kun esa muddatni ikkilantirishdan kelib chiqadi. Javob: 4 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ish-unumi-teskari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#be9ab53d"
+    },
+    {
+      "q": "Poyezd 80 km/soat tezlik bilan yurganda ikki shahar orasidagi yo'lni 6 soatda bosib o'tadi. Shu yo'lni 4 soatda bosib o'tish uchun tezlik qanday bo'lishi kerak?",
+      "v": [
+        "53,3 km/soat",
+        "82 km/soat",
+        "120 km/soat",
+        "160 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Masofa o'zgarmas: 80·6 = 480 km. Yangi tezlik 480 : 4 = 120 km/soat. Tezlik va vaqt teskari proporsional bo'lgani uchun vaqt 1,5 marta qisqarsa, tezlik 1,5 marta ortadi. 53,3 javobi nisbatni teskari yozish, 82 esa ikki soatni tezlikka qo'shish natijasi. Javob: 120 km/soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlik-vaqt-teskari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#6cebbdae"
+    },
+    {
+      "q": "Piyoda 5 km/soat tezlik bilan yurib manzilga 1 soat 12 daqiqada yetdi. Velosipedchi shu yo'lni 15 km/soat tezlik bilan bossa, qancha vaqt sarflaydi?",
+      "v": [
+        "18 daqiqa",
+        "24 daqiqa",
+        "36 daqiqa",
+        "216 daqiqa"
+      ],
+      "t": 1,
+      "izoh": "Piyodaning vaqti 1 soat 12 daqiqa = 72 daqiqa. Tezlik 5 dan 15 km/soat ga, ya'ni 3 marta ortdi, vaqt esa teskari proporsional bo'lgani uchun 3 marta qisqaradi: 72 : 3 = 24 daqiqa. 216 daqiqa javobi bo'lish o'rniga ko'paytirishdan chiqadi. Javob: 24 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tezlik-vaqt-teskari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#23aa1dfe"
+    },
+    {
+      "q": "Qayiq daryodagi ma'lum masofani 3 soatda bosib o'tadi. Uning tezligi 1,5 marta kamaysa, xuddi shu masofani necha soatda bosib o'tadi?",
+      "v": [
+        "1,5 soat",
+        "2 soat",
+        "6 soat",
+        "4,5 soat"
+      ],
+      "t": 3,
+      "izoh": "Tezlik va vaqt teskari proporsional, shuning uchun tezlik 1,5 marta kamaysa, vaqt 1,5 marta ortadi: 3·1,5 = 4,5 soat. 2 soat javobi vaqtni ham kamaytirishdan, 6 soat esa vaqtni ikkilantirishdan kelib chiqadi. Javob: 4,5 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tezlik-vaqt-teskari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#8b6106ef"
+    },
+    {
+      "q": "Avtomobil A shahardan B shaharga 60 km/soat tezlik bilan 6 soatda bordi. Qaytishda esa tezligini 20 km/soat ga kamaytirdi. Qaytish yo'liga necha soat sarfladi?",
+      "v": [
+        "4 soat",
+        "6 soat",
+        "9 soat",
+        "18 soat"
+      ],
+      "t": 2,
+      "izoh": "Borish yo'lidagi masofa 60·6 = 360 km. Qaytishdagi tezlik 60 − 20 = 40 km/soat. Masofa o'zgarmagani uchun tezlik va vaqt teskari proporsional: 40·t = 360, bundan t = 360 : 40 = 9 soat. 4 soat javobi vaqtni tezlikka to'g'ri proporsional deb olishdan (6·40 : 60), 18 soat esa qaytishdagi tezlikni 20 km/soat deb tushunishdan chiqadi. Javob: 9 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tezlik-vaqt-teskari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#06c7fa78"
+    },
+    {
+      "q": "Retseptga ko'ra 3 stakan un uchun 2 stakan sut olinadi. Xamir uchun 12 stakan un ishlatilsa, necha stakan sut kerak bo'ladi?",
+      "v": [
+        "6 stakan",
+        "8 stakan",
+        "11 stakan",
+        "18 stakan"
+      ],
+      "t": 1,
+      "izoh": "Un va sut miqdori to'g'ri proporsional, shuning uchun 3 : 2 = 12 : x proporsiyani tuzamiz. Bundan x = 2·12 : 3 = 8 stakan. 18 stakan javobi proporsiyani teskari yozishdan, 11 stakan esa un 9 stakanga ko'paygani uchun sutga shuncha qo'shishdan chiqadi. Javob: 8 stakan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-boyicha-taqsimlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#c6fd669b"
+    },
+    {
+      "q": "Bo'yoq tayyorlashda oq va ko'k rang 7 : 3 nisbatda aralashtiriladi. 40 litr bo'yoq tayyorlash uchun necha litr ko'k rang kerak bo'ladi?",
+      "v": [
+        "4 litr",
+        "13,3 litr",
+        "28 litr",
+        "12 litr"
+      ],
+      "t": 3,
+      "izoh": "Nisbat bo'yicha jami 7 + 3 = 10 ulush bor. Bitta ulush 40 : 10 = 4 litr, demak ko'k rang 4·3 = 12 litr. 28 litr javobi oq rangning miqdori, 4 litr esa bitta ulushning o'zi. Javob: 12 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-boyicha-taqsimlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#02fb3782"
+    },
+    {
+      "q": "Mevali sharbatda olma va uzum sharbatlari 5 : 2 nisbatda aralashtirilgan. Olma sharbati uzumnikidan 750 ml ko'p bo'lsa, aralashmadagi uzum sharbati qancha?",
+      "v": [
+        "250 ml",
+        "1 250 ml",
+        "1 750 ml",
+        "500 ml"
+      ],
+      "t": 3,
+      "izoh": "Ulushlar farqi 5 − 2 = 3 ga teng va u 750 ml ni beradi. Demak bitta ulush 750 : 3 = 250 ml. Uzum sharbati 2 ulush, ya'ni 250·2 = 500 ml. 1 250 ml javobi olma sharbatining miqdori, 1 750 ml esa butun aralashma. Javob: 500 ml.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-boyicha-taqsimlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#45f346c9"
+    },
+    {
+      "q": "Uch bo'limdagi xodimlar soni 4 : 5 : 7 nisbatda. Mukofot pul xodimlar soniga to'g'ri proporsional taqsimlanadi va uchinchi bo'lim birinchisidan 4 500 000 so'm ko'p oldi. Jami mukofot qancha bo'lgan?",
+      "v": [
+        "24 000 000 so'm",
+        "6 000 000 so'm",
+        "10 500 000 so'm",
+        "18 000 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Birinchi va uchinchi bo'lim ulushlari farqi 7 − 4 = 3 ga teng, shuning uchun bitta ulush 4 500 000 : 3 = 1 500 000 so'm. Jami ulushlar 4 + 5 + 7 = 16 ta, demak umumiy mukofot 1 500 000·16 = 24 000 000 so'm. 6 000 000 so'm faqat birinchi bo'lim, 10 500 000 so'm esa uchinchi bo'lim ulushi. Javob: 24 000 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-boyicha-taqsimlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#432e2e76"
+    },
+    {
+      "q": "Jadvalda mos qiymatlar berilgan: x = 2 da y = 15, x = 5 da y = 6, x = 10 da y = 3. Bu bog'lanishni ifodalovchi formulani tanlang.",
+      "v": [
+        "y = 7,5x",
+        "y = x + 13",
+        "y = 30x",
+        "y = 30/x"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytmalarni tekshiramiz: 2·15 = 30, 5·6 = 30, 10·3 = 30. Ko'paytma barcha juftliklarda bir xil bo'lgani uchun bog'lanish teskari proporsional va y = 30/x. y = 7,5x formula faqat birinchi juftlikka mos keladi. Javob: y = 30/x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-qonuniyatini-topish",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#535fec96"
+    },
+    {
+      "q": "To'g'ri proporsional bog'lanish jadvali chala qolgan: x = 4 bo'lganda y = 26, x = 10 bo'lganda esa y noma'lum. Bo'sh katakdagi sonni toping.",
+      "v": [
+        "10,4",
+        "32",
+        "65",
+        "260"
+      ],
+      "t": 2,
+      "izoh": "Koeffitsientni topamiz: k = 26 : 4 = 6,5. Endi y = 6,5·10 = 65. 260 javobi koeffitsientni topmay, 26 ni to'g'ridan-to'g'ri 10 ga ko'paytirishdan, 32 esa x 6 birlikka ortgani uchun y ga 6 qo'shishdan chiqadi. Javob: 65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-qonuniyatini-topish",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#af04b1d6"
+    },
+    {
+      "q": "Teskari proporsional bog'lanish jadvalidagi bo'sh katakni to'ldiring: x = 8 bo'lganda y = 4,5, x = 12 bo'lganda y qanday qiymat oladi?",
+      "v": [
+        "0,5",
+        "3",
+        "6,75",
+        "8,5"
+      ],
+      "t": 1,
+      "izoh": "Teskari proporsionallikda ko'paytma saqlanadi: k = 8·4,5 = 36. Demak y = 36 : 12 = 3. 6,75 javobi bog'lanishni to'g'ri proporsional deb olishdan, 8,5 esa x ga qo'shilgan 4 ni y ga qo'shishdan chiqadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-qonuniyatini-topish",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#fbf4903b"
+    },
+    {
+      "q": "x va y miqdorlar teskari proporsional bog'langan. x ning qiymati 3 dan 12 gacha o'zgarsa, y ning qiymati qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "4 marta kamayadi",
+        "9 birlikka kamayadi",
+        "4 birlikka kamayadi"
+      ],
+      "t": 1,
+      "izoh": "x ning qiymati 12 : 3 = 4 marta ortdi. Teskari proporsionallikda ko'paytma o'zgarmagani uchun y shuncha marta, ya'ni 4 marta kamayishi kerak. Birlikka kamayish javoblari qo'shish va ayirish bilan fikrlash natijasi, ular proporsionallikka mos kelmaydi. Javob: 4 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-qonuniyatini-topish",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#fd52c061"
+    },
+    {
+      "q": "Ikki o'xshash to'g'ri to'rtburchakning yuzalari nisbati 9 : 25 ga teng. Ularning mos tomonlari nisbati qanday bo'ladi?",
+      "v": [
+        "3 : 5",
+        "9 : 25",
+        "27 : 125",
+        "81 : 625"
+      ],
+      "t": 0,
+      "izoh": "O'xshash shakllarda yuzalar nisbati o'xshashlik koeffitsientining kvadratiga teng. Demak koeffitsientni topish uchun nisbatdan kvadrat ildiz chiqaramiz: √9 : √25 = 3 : 5. 27 : 125 javobi kub olishdan, 81 : 625 esa yana bir marta kvadratga ko'tarishdan chiqadi. Javob: 3 : 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshash-shakl-nisbati",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#bf0ca9fb"
+    },
+    {
+      "q": "Ikki o'xshash uchburchakning perimetrlari 24 sm va 36 sm ga teng. Kichik uchburchakning yuzasi 40 sm² bo'lsa, kattasining yuzasi qancha?",
+      "v": [
+        "60 sm²",
+        "90 sm²",
+        "80 sm²",
+        "135 sm²"
+      ],
+      "t": 1,
+      "izoh": "O'xshashlik koeffitsienti perimetrlar nisbatiga teng: 36 : 24 = 1,5. Yuzalar nisbati koeffitsient kvadratiga teng, ya'ni 1,5² = 2,25. Demak katta uchburchak yuzasi 40·2,25 = 90 sm². 60 sm² javobi chiziqli koeffitsientni, 135 sm² esa kub olishni qo'llash natijasi. Javob: 90 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshash-shakl-nisbati",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#5e3b40ee"
+    },
+    {
+      "q": "Fotosuratning bo'yi 15 sm, eni 10 sm. Surat o'xshashlik saqlangan holda kattalashtirilib, bo'yi 24 sm bo'ldi. Yangi suratning eni qancha?",
+      "v": [
+        "6,25 sm",
+        "16 sm",
+        "19 sm",
+        "36 sm"
+      ],
+      "t": 1,
+      "izoh": "O'xshashlik koeffitsienti 24 : 15 = 1,6 ga teng. Yangi en 10·1,6 = 16 sm. 19 sm javobi bo'yga qo'shilgan 9 sm ni enga ham qo'shishdan, 36 sm esa nisbatni 24 : 10 deb noto'g'ri tuzishdan kelib chiqadi. Javob: 16 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oxshash-shakl-nisbati",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#4773345c"
+    },
+    {
+      "q": "Ikki o'xshash idishning sirt yuzalari nisbati 4 : 9. Kichik idishni bo'yashga 180 gramm bo'yoq ketgan bo'lsa, kattasini bo'yashga qancha bo'yoq kerak?",
+      "v": [
+        "80 g",
+        "270 g",
+        "405 g",
+        "607,5 g"
+      ],
+      "t": 2,
+      "izoh": "Bo'yoq sarfi sirt yuzasiga to'g'ri proporsional. Yuzalar nisbati 4 : 9 bo'lgani uchun 180 : 4 = 45 gramm bitta ulushga to'g'ri keladi, katta idish esa 9 ulush: 45·9 = 405 gramm. 270 g javobi chiziqli 2 : 3 nisbatni, 607,5 g esa hajm nisbatini qo'llashdan chiqadi. Javob: 405 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oxshash-shakl-nisbati",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#802f9756"
+    },
+    {
+      "q": "x va y teskari proporsional bo'lib, ularning ko'paytmasi 48 ga teng. Quyidagi juftliklardan qaysi biri bu bog'lanishga mos kelmaydi?",
+      "v": [
+        "(2; 24)",
+        "(4; 12)",
+        "(6; 8)",
+        "(8; 7)"
+      ],
+      "t": 3,
+      "izoh": "Har bir juftlikda ko'paytmani tekshiramiz: 2·24 = 48, 4·12 = 48, 6·8 = 48, lekin 8·7 = 56. Oxirgi juftlikda ko'paytma 48 dan farq qiladi, demak u teskari proporsionallikni buzadi. Javob: (8; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proporsionallikni-tekshirish",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#24305af3"
+    },
+    {
+      "q": "x va y miqdorlar to'g'ri proporsional bo'lib, koeffitsient 4 ga teng. Quyidagi juftliklardan qaysi biri shu bog'lanishga zid?",
+      "v": [
+        "(3; 12)",
+        "(7; 28)",
+        "(9; 32)",
+        "(11; 44)"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri proporsionallikda y = 4x bo'lishi kerak. Tekshiramiz: 4·3 = 12, 4·7 = 28, 4·11 = 44, lekin 4·9 = 36 bo'lishi kerak edi, jadvalda esa 32 turibdi. Javob: (9; 32).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsionallikni-tekshirish",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#0b00b04c"
+    },
+    {
+      "q": "Do'konda 2 kg guruch 26 000 so'm, 5 kg guruch 65 000 so'm, 8 kg guruch esa 96 000 so'm turadi. Narx og'irlikka to'g'ri proporsionalmi?",
+      "v": [
+        "Ha, chunki narx og'irlik bilan birga ortib bormoqda",
+        "Ha, chunki barcha nisbatlar 13 000 so'mga teng",
+        "Yo'q, chunki og'irliklar orasidagi farq bir xil emas",
+        "Yo'q, 8 kg uchun bir kilogramm narxi 12 000 so'm chiqadi"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri proporsionallikni tekshirish uchun har bir holatda narxni og'irlikka bo'lamiz: 26 000 : 2 = 13 000, 65 000 : 5 = 13 000, ammo 96 000 : 8 = 12 000. Uchinchi nisbat farq qilgani uchun bog'lanish to'g'ri proporsional emas. Faqat birga ortish proporsionallikni isbotlamaydi. Javob: yo'q, 12 000 so'm chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "proporsionallikni-tekshirish",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#4004c094"
+    },
+    {
+      "q": "Nasoslar soni va hovuzni to'ldirish vaqti jadvalga yozildi: 2 ta nasos 30 daqiqada, 3 ta nasos 20 daqiqada, 5 ta nasos 15 daqiqada to'ldiradi. Qaysi qatordagi ma'lumot teskari proporsionallikka mos emas?",
+      "v": [
+        "Birinchi qator",
+        "Ikkinchi qator",
+        "Uchinchi qator",
+        "Barcha qatorlar mos"
+      ],
+      "t": 2,
+      "izoh": "Teskari proporsionallikda nasoslar soni bilan vaqtning ko'paytmasi o'zgarmasligi kerak. Hisoblaymiz: 2·30 = 60, 3·20 = 60, lekin 5·15 = 75. Uchinchi qatorda ko'paytma boshqacha, ya'ni 5 ta nasos 12 daqiqada to'ldirishi kerak edi. Javob: uchinchi qator.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "proporsionallikni-tekshirish",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#a622a446"
+    },
+    {
+      "q": "a : b = c : d proporsiyada a = 14, b = 21, c = 10 berilgan. Noma'lum had d ning qiymatini toping.",
+      "v": [
+        "6,7",
+        "15",
+        "30",
+        "35"
+      ],
+      "t": 1,
+      "izoh": "Proporsiyaning asosiy xossasiga ko'ra a·d = b·c, ya'ni 14·d = 21·10 = 210. Bundan d = 210 : 14 = 15. 6,7 javobi hadlarni o'rin almashtirib, 14·10 : 21 ni hisoblashdan, 35 esa a va b ni qo'shishdan chiqadi. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsiya-xossalari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#e1f20e3a"
+    },
+    {
+      "q": "12 : 8 = 21 : 14 proporsiya to'g'ri ekanini qaysi tenglik bevosita tasdiqlaydi?",
+      "v": [
+        "12·14 = 8·21",
+        "12·8 = 21·14",
+        "12·21 = 8·14",
+        "12 + 14 = 8 + 21"
+      ],
+      "t": 0,
+      "izoh": "Proporsiyaning asosiy xossasi: chetki hadlar ko'paytmasi o'rta hadlar ko'paytmasiga teng. Bu yerda chetki hadlar 12 va 14, o'rta hadlar esa 8 va 21. Tekshiramiz: 12·14 = 168 va 8·21 = 168, tengligi to'g'ri. Javob: 12·14 = 8·21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsiya-xossalari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#2a00b7b3"
+    },
+    {
+      "q": "8 : x = x : 18 proporsiyada x ning musbat qiymatini toping.",
+      "v": [
+        "12",
+        "13",
+        "26",
+        "144"
+      ],
+      "t": 0,
+      "izoh": "Asosiy xossaga ko'ra x·x = 8·18, ya'ni x² = 144. Musbat ildizni olamiz: x = 12. 13 javobi ikki sonning o'rta arifmetigini olishdan, 144 esa kvadrat ildiz chiqarishni unutishdan chiqadi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proporsiya-xossalari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#d4a4d249"
+    },
+    {
+      "q": "a : b = 3 : 4 bo'lsa, (a + b) : b nisbati nimaga teng bo'ladi?",
+      "v": [
+        "4 : 7",
+        "3 : 7",
+        "7 : 3",
+        "7 : 4"
+      ],
+      "t": 3,
+      "izoh": "a = 3k va b = 4k deb olamiz. U holda a + b = 7k, demak (a + b) : b = 7k : 4k = 7 : 4. 7 : 3 javobi maxrajga b o'rniga a ni qo'yishdan, 3 : 7 esa nisbat hadlarini almashtirishdan chiqadi. Javob: 7 : 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "proporsiya-xossalari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#a5d6be25"
+    },
+    {
+      "q": "Besh nafar ishchi 6 kunda 300 ta detal tayyorlaydi. Xuddi shunday unum bilan 8 nafar ishchi 9 kunda nechta detal tayyorlaydi?",
+      "v": [
+        "450 ta",
+        "480 ta",
+        "720 ta",
+        "900 ta"
+      ],
+      "t": 2,
+      "izoh": "Bir ishchining bir kunlik unumi: 300 : (5·6) = 10 ta detal. Detal soni ishchilar soniga ham, kunlarga ham to'g'ri proporsional, shuning uchun 10·8·9 = 720 ta. 480 ta javobi faqat ishchilar sonini hisobga olishdan (300·8 : 5), 450 ta esa faqat kunlarni hisobga olishdan (300·9 : 6) chiqadi. Javob: 720 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zanjirli-uch-miqdor",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#81a8c267"
+    },
+    {
+      "q": "To'rtta traktor 6 soatda 18 gektar yerni haydaydi. Shunday 6 ta traktor 8 soatda necha gektar yer haydaydi?",
+      "v": [
+        "16 ga",
+        "24 ga",
+        "27 ga",
+        "36 ga"
+      ],
+      "t": 3,
+      "izoh": "Bir traktorning bir soatlik unumi: 18 : (4·6) = 0,75 gektar. Yangi hajm 0,75·6·8 = 36 gektar. 27 ga javobi faqat traktorlar sonining o'zgarishini, 24 ga esa faqat vaqtning o'zgarishini hisobga olish natijasi. Javob: 36 ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zanjirli-uch-miqdor",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#7b91fb64"
+    },
+    {
+      "q": "Zavodda 12 ta stanok 5 kunda 4 800 ta detal tayyorlaydi. Shunday 15 ta stanok o'sha 4 800 ta detalni necha kunda tayyorlaydi?",
+      "v": [
+        "3 kun",
+        "4 kun",
+        "6,25 kun",
+        "12 kun"
+      ],
+      "t": 1,
+      "izoh": "Ishning hajmi 12·5 = 60 stanok-kunga teng. Detal soni o'zgarmagani uchun stanoklar soni va muddat teskari proporsional: 60 : 15 = 4 kun. 6,25 kun javobi bog'lanishni to'g'ri proporsional deb olishdan, 3 kun esa stanoklar ayirmasini javob deb qabul qilishdan chiqadi. Javob: 4 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zanjirli-uch-miqdor",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#bb2dd25f"
+    },
+    {
+      "q": "Olti nafar usta 8 soat ishlab 2 400 ta g'isht teradi. Xuddi shunday unum bilan 9 nafar usta 5 soatda nechta g'isht teradi?",
+      "v": [
+        "1 000 ta",
+        "1 500 ta",
+        "2 250 ta",
+        "3 600 ta"
+      ],
+      "t": 2,
+      "izoh": "Bir ustaning bir soatlik unumi: 2 400 : (6·8) = 50 ta g'isht. Yangi natija 50·9·5 = 2 250 ta. 3 600 ta javobi vaqtning qisqarganini unutib faqat ustalar sonini oshirishdan, 1 500 ta faqat soatlarni hisobga olishdan, 1 000 ta esa ustalar sonini teskari proporsional deb olishdan chiqadi. Javob: 2 250 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zanjirli-uch-miqdor",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#e31a5694"
+    },
+    {
+      "q": "Masshtabi 1 : 500 000 bo'lgan xaritada bir santimetrlik kesma haqiqatda necha kilometrga to'g'ri keladi?",
+      "v": [
+        "5 km",
+        "0,5 km",
+        "50 km",
+        "500 km"
+      ],
+      "t": 0,
+      "izoh": "Xaritadagi 1 sm haqiqatda 500 000 sm ni bildiradi. Santimetrni kilometrga aylantirish uchun 100 000 ga bo'lamiz: 500 000 : 100 000 = 5 km. 50 km javobi 10 000 ga, 500 km esa 1 000 ga bo'lishdan kelib chiqadi. Javob: 5 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab-birliklari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#2d938c5f"
+    },
+    {
+      "q": "Xaritada bir santimetrlik kesma haqiqiy 250 metrga mos keladi. Shu xaritaning masshtabi qanday yoziladi?",
+      "v": [
+        "1 : 250",
+        "1 : 2 500",
+        "1 : 25 000",
+        "1 : 250 000"
+      ],
+      "t": 2,
+      "izoh": "Masshtabda ikkala kattalik bir xil birlikda bo'lishi kerak. 250 m ni santimetrga aylantiramiz: 250·100 = 25 000 sm. Demak masshtab 1 : 25 000. 1 : 250 javobi metrni santimetrga aylantirmaslikdan chiqadi. Javob: 1 : 25 000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab-birliklari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#eb6f9279"
+    },
+    {
+      "q": "Detal chizmasining masshtabi 2 : 1 deb ko'rsatilgan. Bu yozuv nimani anglatadi?",
+      "v": [
+        "Detal chizmada haqiqiy o'lchamidan 2 marta katta tasvirlangan",
+        "Detal chizmada haqiqiy o'lchamidan 2 marta kichik tasvirlangan",
+        "Detalning yuzasi chizmada 2 marta katta ko'rsatilgan",
+        "Chizmadagi 2 sm haqiqiy 1 km masofaga teng"
+      ],
+      "t": 0,
+      "izoh": "Masshtab yozuvida birinchi son chizmadagi, ikkinchisi haqiqiy uzunlikni bildiradi. 2 : 1 da chizmadagi 2 birlik haqiqiy 1 birlikka mos keladi, demak tasvir kattalashtirilgan. Bunday masshtab mayda detallar chizmasida ishlatiladi. Javob: 2 marta katta tasvirlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masshtab-birliklari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#3392a30b"
+    },
+    {
+      "q": "Birinchi xaritaning masshtabi 1 : 300 000, ikkinchisida esa bir santimetr 6 km ga to'g'ri keladi. Qaysi xarita hududni yiriklashtirib ko'rsatadi va necha marta?",
+      "v": [
+        "Birinchisi, 2 marta",
+        "Ikkinchisi, 2 marta",
+        "Birinchisi, 3 marta",
+        "Ikkinchisi, 6 marta"
+      ],
+      "t": 0,
+      "izoh": "Ikkinchi xaritada 6 km = 600 000 sm, ya'ni uning masshtabi 1 : 600 000. Masshtab maxraji kichik bo'lgan xarita yirikroq tasvir beradi, demak birinchi xarita yiriklashtirilgan. Yiriklashtirish darajasi 600 000 : 300 000 = 2 marta. Javob: birinchisi, 2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "masshtab-birliklari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#3e21bc84"
+    },
+    {
+      "q": "128 000 so'm mukofot ikki ishchiga ular sarflagan vaqtga teskari proporsional taqsimlanadi. Ishchilar 3 soat va 5 soat ishlagan bo'lsa, birinchi ishchi qancha oladi?",
+      "v": [
+        "48 000 so'm",
+        "64 000 so'm",
+        "76 800 so'm",
+        "80 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Teskari taqsimlashda ulushlar vaqtlarning teskari qiymatlariga proporsional: 1/3 : 1/5 = 5 : 3. Jami 8 ulush, bitta ulush 128 000 : 8 = 16 000 so'm. Birinchi ishchi 5 ulush oladi: 16 000·5 = 80 000 so'm. 48 000 so'm to'g'ri proporsional taqsimlash natijasi, 64 000 so'm esa teng bo'lish. Javob: 80 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-proporsional-taqsimlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#ad2e5eee"
+    },
+    {
+      "q": "To'qson kilogramm yuk uch ishchiga ularning yoshiga teskari proporsional taqsimlandi. Ishchilarning yoshi 20, 30 va 60 bo'lsa, eng yosh ishchiga necha kilogramm yuk tegadi?",
+      "v": [
+        "15 kg",
+        "30 kg",
+        "45 kg",
+        "60 kg"
+      ],
+      "t": 2,
+      "izoh": "Teskari taqsimlash uchun yoshlarning teskari qiymatlarini olamiz: 1/20 : 1/30 : 1/60. Ularni 60 ga ko'paytirsak 3 : 2 : 1 nisbat chiqadi. Jami 6 ulush, bitta ulush 90 : 6 = 15 kg, eng yosh ishchi 3 ulush oladi: 15·3 = 45 kg. 15 kg eng keksa ishchining ulushi, 30 kg esa teng bo'lish natijasi. Javob: 45 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-proporsional-taqsimlash",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#412282b7"
+    },
+    {
+      "q": "Ishni 4 soatda tugatish uchun 6 nafar ishchi rejalashtirilgan edi, ammo ulardan 2 nafari ishga chiqmadi. Qolgan ishchilar shu ishni necha soatda bajaradi?",
+      "v": [
+        "5 soat",
+        "6 soat",
+        "8 soat",
+        "12 soat"
+      ],
+      "t": 1,
+      "izoh": "Ishning umumiy hajmi 6·4 = 24 ishchi-soat. Ishga 4 nafar ishchi chiqqani uchun muddat 24 : 4 = 6 soat bo'ladi. 5 soat javobi kelmagan ikki kishi uchun bir soat qo'shishdan, 12 soat esa ishga faqat 2 kishi chiqqan deb hisoblashdan chiqadi. Javob: 6 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ish-unumi-teskari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#3374f600"
+    },
+    {
+      "q": "Muzeyda tarixiy maydonning 1 : 250 masshtabdagi maketi qo'yilgan. Maketdagi minora balandligi 13,6 sm bo'lsa, haqiqiy minoraning balandligi necha metr?",
+      "v": [
+        "3,4 m",
+        "54,4 m",
+        "340 m",
+        "34 m"
+      ],
+      "t": 3,
+      "izoh": "Haqiqiy balandlik 13,6·250 = 3 400 sm. Metrga o'tkazamiz: 3 400 : 100 = 34 m. 3,4 m javobi santimetrni metrga aylantirishda ortiqcha nolga bo'lishdan, 54,4 m esa 250 o'rniga 400 ga ko'paytirishdan chiqadi. Javob: 34 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-maket-masshtabi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#fb5d224f"
+    },
+    {
+      "q": "Avtomobil modeli 1 : 18 masshtabda yasalgan. Haqiqiy avtomobilning uzunligi 4,5 m bo'lsa, modelning uzunligi necha santimetr bo'ladi?",
+      "v": [
+        "2,5 sm",
+        "81 sm",
+        "250 sm",
+        "25 sm"
+      ],
+      "t": 3,
+      "izoh": "Avval haqiqiy uzunlikni santimetrga o'tkazamiz: 4,5 m = 450 sm. Model uzunligi 450 : 18 = 25 sm. 81 sm javobi bo'lish o'rniga ko'paytirishdan, 2,5 sm esa 450 ni 180 ga bo'lishdan kelib chiqadi. Javob: 25 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "model-maket-masshtabi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#a7aa9d41"
+    },
+    {
+      "q": "Binoning 1 : 200 masshtabdagi maketi 6 kg keladi. Bino maket bilan bir xil materialdan qurilgan deb faraz qilsak, binoning massasi necha tonna bo'lardi?",
+      "v": [
+        "1,2 t",
+        "240 t",
+        "48 000 t",
+        "480 000 t"
+      ],
+      "t": 2,
+      "izoh": "Bir xil materialda massa hajmga to'g'ri proporsional, hajm esa chiziqli o'lchamning kubiga. Koeffitsient 200 bo'lgani uchun massa 200³ = 8 000 000 marta ortadi: 6·8 000 000 = 48 000 000 kg. Tonnaga o'tkazamiz: 48 000 000 : 1 000 = 48 000 t. 240 t javobi kub o'rniga kvadrat olishdan chiqadi. Javob: 48 000 t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "model-maket-masshtabi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#d7c46ac1"
+    },
+    {
+      "q": "To'g'ri proporsional bog'lanishning grafigi koordinata tekisligida qanday chiziqdan iborat bo'ladi?",
+      "v": [
+        "Koordinata boshidan o'tuvchi to'g'ri chiziq",
+        "Koordinata boshidan o'tmaydigan to'g'ri chiziq",
+        "Giperbolaning ikkita tarmog'i",
+        "Uchi koordinata boshida bo'lgan parabola"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri proporsionallik y = kx formula bilan beriladi. x = 0 bo'lganda y ham nolga teng, demak grafik koordinata boshidan o'tadi va u to'g'ri chiziq bo'ladi. Giperbola esa teskari proporsionallik grafigi. Javob: koordinata boshidan o'tuvchi to'g'ri chiziq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "proporsional-bogliqlik-grafigi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#fd9399e8"
+    },
+    {
+      "q": "Teskari proporsional bog'lanish grafigi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "U giperbola bo'lib, koordinata o'qlarini kesib o'tmaydi",
+        "U koordinata boshidan o'tuvchi to'g'ri chiziq",
+        "U abssissa o'qini bitta nuqtada kesib o'tadi",
+        "U ordinata o'qiga parallel to'g'ri chiziqdan iborat"
+      ],
+      "t": 0,
+      "izoh": "Teskari proporsionallik y = k/x formula bilan beriladi va uning grafigi giperboladir. x nolga teng bo'la olmagani, y esa hech qachon nolga aylanmagani uchun grafik o'qlarga faqat yaqinlashadi. Javob: giperbola, o'qlarni kesmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "proporsional-bogliqlik-grafigi",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#ed29fb0c"
+    },
+    {
+      "q": "y miqdor x ga to'g'ri proporsional, z miqdor esa y ga teskari proporsional. x ning qiymati 3 marta ortsa, z qanday o'zgaradi?",
+      "v": [
+        "3 marta kamayadi",
+        "3 marta ortadi",
+        "9 marta kamayadi",
+        "O'zgarmay qoladi"
+      ],
+      "t": 0,
+      "izoh": "x 3 marta ortsa, to'g'ri proporsionallik tufayli y ham 3 marta ortadi. z esa y ga teskari proporsional bo'lgani uchun y 3 marta ortganda z 3 marta kamayadi. 9 marta kamayadi javobi ikkala koeffitsientni ko'paytirib yuborishdan chiqadi. Javob: 3 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zanjirli-bogliqlik-tahlili",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#e8d3608b"
+    },
+    {
+      "q": "Dalani haydash uchun 15 ta traktor ajratilgan va ish 8 kunda tugashi rejalashtirilgan edi. Ish boshlangach 3 ta traktor ishdan chiqdi. Qolgan traktorlar dalani necha kunda haydab bo'ladi?",
+      "v": [
+        "6,4 kun",
+        "10 kun",
+        "11 kun",
+        "12 kun"
+      ],
+      "t": 1,
+      "izoh": "Ishning umumiy hajmi 15·8 = 120 traktor-kun. Ishda 12 ta traktor qolgani uchun muddat 120 : 12 = 10 kun bo'ladi. 11 kun javobi ishdan chiqqan 3 traktor uchun 3 kun qo'shishdan, 6,4 kun esa bog'lanishni to'g'ri proporsional deb olishdan chiqadi. Javob: 10 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "reja-ozgarishi-teskari",
+      "id": "matematika_foiz_m04-togri-va-teskari-proporsional-miqdorlar#6e8e7cbd"
+    }
+  ]
+}

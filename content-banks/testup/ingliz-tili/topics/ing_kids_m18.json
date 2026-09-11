@@ -1,0 +1,591 @@
+{
+  "nom": "Action verbs (Harakatlar)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "🏃 means ___",
+      "v": [
+        "run",
+        "sleep",
+        "eat",
+        "sit"
+      ],
+      "t": 0,
+      "izoh": "🏃 = run (yugurmoq).",
+      "qiy": "oson",
+      "id": "ing_kids_m18#9478a782"
+    },
+    {
+      "q": "What is this action? 🏊",
+      "v": [
+        "swim",
+        "jump",
+        "read",
+        "write"
+      ],
+      "t": 0,
+      "izoh": "🏊 = swim (suzmoq).",
+      "qiy": "oson",
+      "id": "ing_kids_m18#37c016ac"
+    },
+    {
+      "q": "🤸 means ___",
+      "v": [
+        "jump",
+        "walk",
+        "drink",
+        "sleep"
+      ],
+      "t": 0,
+      "izoh": "🤸 = jump (sakramoq).",
+      "qiy": "oson",
+      "id": "ing_kids_m18#7a0a7866"
+    },
+    {
+      "q": "What action is this? 🚶",
+      "v": [
+        "walk",
+        "run",
+        "fly",
+        "sing"
+      ],
+      "t": 0,
+      "izoh": "🚶 = walk (yurmoq).",
+      "qiy": "oson",
+      "id": "ing_kids_m18#a6b9bcf5"
+    },
+    {
+      "q": "🍽️ means ___",
+      "v": [
+        "eat",
+        "sleep",
+        "read",
+        "dance"
+      ],
+      "t": 0,
+      "izoh": "🍽️ = eat (yemoq).",
+      "qiy": "oson",
+      "id": "ing_kids_m18#93cb4567"
+    },
+    {
+      "q": "What action is this? 😴",
+      "v": [
+        "sleep",
+        "jump",
+        "run",
+        "sing"
+      ],
+      "t": 0,
+      "izoh": "😴 = sleep (uxlamoq).",
+      "qiy": "oson",
+      "id": "ing_kids_m18#fdf5f89f"
+    },
+    {
+      "q": "📖 means ___",
+      "v": [
+        "read",
+        "swim",
+        "jump",
+        "eat"
+      ],
+      "t": 0,
+      "izoh": "📖 = read (o'qimoq).",
+      "qiy": "oson",
+      "id": "ing_kids_m18#55416b54"
+    },
+    {
+      "q": "What action is this? 💃",
+      "v": [
+        "dance",
+        "walk",
+        "sleep",
+        "write"
+      ],
+      "t": 0,
+      "izoh": "💃 = dance (raqsga tushmoq).",
+      "qiy": "oson",
+      "id": "ing_kids_m18#ccb6dfcf"
+    },
+    {
+      "q": "🎤 means ___",
+      "v": [
+        "sing",
+        "run",
+        "eat",
+        "read"
+      ],
+      "t": 0,
+      "izoh": "🎤 = sing (qo'shiq aytmoq).",
+      "qiy": "oson",
+      "id": "ing_kids_m18#7ad852ab"
+    },
+    {
+      "q": "What action is this? ✍️",
+      "v": [
+        "write",
+        "swim",
+        "jump",
+        "sleep"
+      ],
+      "t": 0,
+      "izoh": "✍️ = write (yozmoq).",
+      "qiy": "oson",
+      "id": "ing_kids_m18#317d4358"
+    },
+    {
+      "q": "🏃 The boy is ___ very fast.",
+      "v": [
+        "running",
+        "eating",
+        "sleeping",
+        "reading"
+      ],
+      "t": 0,
+      "izoh": "Yugurmoqda.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#b5749c4b"
+    },
+    {
+      "q": "🏊 The girl is ___ in the water.",
+      "v": [
+        "swimming",
+        "singing",
+        "writing",
+        "jumping"
+      ],
+      "t": 0,
+      "izoh": "Suzmoqda.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#b1a29017"
+    },
+    {
+      "q": "😴 At night we ___.",
+      "v": [
+        "cook",
+        "sleep",
+        "run",
+        "climb"
+      ],
+      "t": 1,
+      "izoh": "Uxlaymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#74728387"
+    },
+    {
+      "q": "📖 We ___ a book.",
+      "v": [
+        "read",
+        "drive",
+        "fly",
+        "wash"
+      ],
+      "t": 0,
+      "izoh": "O'qiymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#0966f6e5"
+    },
+    {
+      "q": "✍️ We ___ with a pen.",
+      "v": [
+        "swim",
+        "sing",
+        "write",
+        "jump"
+      ],
+      "t": 2,
+      "izoh": "Yozamiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#42306964"
+    },
+    {
+      "q": "🎤 The girl is ___ a song.",
+      "v": [
+        "singing",
+        "cooking",
+        "driving",
+        "cleaning"
+      ],
+      "t": 0,
+      "izoh": "Kuylamoqda.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#c46eca61"
+    },
+    {
+      "q": "💃 We ___ to the music.",
+      "v": [
+        "dance",
+        "eat",
+        "sleep",
+        "read"
+      ],
+      "t": 0,
+      "izoh": "Raqsga tushamiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#e5038579"
+    },
+    {
+      "q": "🍽️ At the table we ___ our food.",
+      "v": [
+        "drink",
+        "eat",
+        "draw",
+        "throw"
+      ],
+      "t": 1,
+      "izoh": "Ovqat yeymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#39b18324"
+    },
+    {
+      "q": "🥤 We ___ water when we are thirsty.",
+      "v": [
+        "eat",
+        "drink",
+        "read",
+        "run"
+      ],
+      "t": 1,
+      "izoh": "Suv ichamiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#8eba1bf6"
+    },
+    {
+      "q": "🚶 The man is ___ slowly in the park.",
+      "v": [
+        "walking",
+        "flying",
+        "swimming",
+        "sitting"
+      ],
+      "t": 0,
+      "izoh": "Yurmoqda.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#24b757a3"
+    },
+    {
+      "q": "🤸 The child is ___ up and down.",
+      "v": [
+        "jumping",
+        "reading",
+        "cooking",
+        "sleeping"
+      ],
+      "t": 0,
+      "izoh": "Sakramoqda.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#661bf153"
+    },
+    {
+      "q": "🎨 We ___ a picture with crayons.",
+      "v": [
+        "draw",
+        "drink",
+        "drive",
+        "fly"
+      ],
+      "t": 0,
+      "izoh": "Rasm chizamiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#738b4d53"
+    },
+    {
+      "q": "It is cold. Please ___ the door.",
+      "v": [
+        "close",
+        "open",
+        "sing",
+        "jump"
+      ],
+      "t": 0,
+      "izoh": "Eshikni yoping.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#554639ff"
+    },
+    {
+      "q": "It is hot. Please ___ the window.",
+      "v": [
+        "close",
+        "open",
+        "wash",
+        "read"
+      ],
+      "t": 1,
+      "izoh": "Derazani oching.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#936c8d46"
+    },
+    {
+      "q": "We ___ on a chair.",
+      "v": [
+        "sit",
+        "fly",
+        "swim",
+        "climb"
+      ],
+      "t": 0,
+      "izoh": "O'tiramiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#1f9ce5fd"
+    },
+    {
+      "q": "We ___ up when the teacher comes in.",
+      "v": [
+        "stand",
+        "sleep",
+        "cook",
+        "swim"
+      ],
+      "t": 0,
+      "izoh": "O'rnimizdan turamiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#98fb3387"
+    },
+    {
+      "q": "🐟 A fish can ___.",
+      "v": [
+        "swim",
+        "walk",
+        "drive",
+        "write"
+      ],
+      "t": 0,
+      "izoh": "Baliq suzadi.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#7432ca38"
+    },
+    {
+      "q": "🐦 A bird can ___ in the sky.",
+      "v": [
+        "fly",
+        "cook",
+        "read",
+        "drive"
+      ],
+      "t": 0,
+      "izoh": "Qush uchadi.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#a3225d03"
+    },
+    {
+      "q": "We ___ our hands before we eat.",
+      "v": [
+        "throw",
+        "climb",
+        "wash",
+        "sing"
+      ],
+      "t": 2,
+      "izoh": "Qo'llarimizni yuvamiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#a39cabb0"
+    },
+    {
+      "q": "👩‍🍳 Mum ___ dinner in the kitchen.",
+      "v": [
+        "cooks",
+        "flies",
+        "swims",
+        "reads"
+      ],
+      "t": 0,
+      "izoh": "Ovqat pishiradi.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#17769fdc"
+    },
+    {
+      "q": "We ___ the room to make it tidy.",
+      "v": [
+        "clean",
+        "drink",
+        "fly",
+        "sing"
+      ],
+      "t": 0,
+      "izoh": "Xonani tozalaymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#8de0e92e"
+    },
+    {
+      "q": "🚗 Dad ___ the car to work.",
+      "v": [
+        "drives",
+        "swims",
+        "flies",
+        "sings"
+      ],
+      "t": 0,
+      "izoh": "Mashina haydaydi.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#ef74f6c4"
+    },
+    {
+      "q": "👀 We ___ with our eyes.",
+      "v": [
+        "look",
+        "eat",
+        "run",
+        "cook"
+      ],
+      "t": 0,
+      "izoh": "Ko'zimiz bilan qaraymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#f47ad259"
+    },
+    {
+      "q": "👂 We ___ with our ears.",
+      "v": [
+        "listen",
+        "walk",
+        "jump",
+        "draw"
+      ],
+      "t": 0,
+      "izoh": "Quloq bilan tinglaymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#20f95b40"
+    },
+    {
+      "q": "Throw the ball and I will ___ it!",
+      "v": [
+        "catch",
+        "cook",
+        "read",
+        "sleep"
+      ],
+      "t": 0,
+      "izoh": "Ilib olaman.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#26fa2c44"
+    },
+    {
+      "q": "🌲 The boy is ___ up the tree.",
+      "v": [
+        "climbing",
+        "swimming",
+        "driving",
+        "writing"
+      ],
+      "t": 0,
+      "izoh": "Daraxtga chiqmoqda.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#29d8dfa7"
+    },
+    {
+      "q": "😢 The baby is sad and is ___.",
+      "v": [
+        "crying",
+        "laughing",
+        "singing",
+        "dancing"
+      ],
+      "t": 0,
+      "izoh": "Yig'lamoqda.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#487870f6"
+    },
+    {
+      "q": "😂 The joke is funny, so we ___.",
+      "v": [
+        "cry",
+        "laugh",
+        "sleep",
+        "swim"
+      ],
+      "t": 1,
+      "izoh": "Kulamiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#c6ad741d"
+    },
+    {
+      "q": "😊 She is happy and she ___.",
+      "v": [
+        "smiles",
+        "cries",
+        "sleeps",
+        "runs"
+      ],
+      "t": 0,
+      "izoh": "Jilmayadi.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#37fb83a9"
+    },
+    {
+      "q": "⚽ We ___ football in the park.",
+      "v": [
+        "play",
+        "cook",
+        "drive",
+        "wash"
+      ],
+      "t": 0,
+      "izoh": "Futbol o'ynaymiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#8192687f"
+    },
+    {
+      "q": "___ the ball to your friend!",
+      "v": [
+        "Throw",
+        "Read",
+        "Sleep",
+        "Cook"
+      ],
+      "t": 0,
+      "izoh": "To'pni tashla.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#5cedec27"
+    },
+    {
+      "q": "In the morning we ___ our breakfast.",
+      "v": [
+        "eat",
+        "fly",
+        "swim",
+        "read"
+      ],
+      "t": 0,
+      "izoh": "Nonushta qilamiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#ed819d33"
+    },
+    {
+      "q": "🐕 A dog can ___ very fast.",
+      "v": [
+        "run",
+        "fly",
+        "read",
+        "write"
+      ],
+      "t": 0,
+      "izoh": "It yuguradi.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#83e87cf4"
+    },
+    {
+      "q": "✈️ A plane can ___ high in the sky.",
+      "v": [
+        "fly",
+        "swim",
+        "walk",
+        "sit"
+      ],
+      "t": 0,
+      "izoh": "Samolyot uchadi.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#5b592686"
+    },
+    {
+      "q": "After dinner we ___ the dirty plates.",
+      "v": [
+        "wash",
+        "drive",
+        "sing",
+        "throw"
+      ],
+      "t": 0,
+      "izoh": "Idishlarni yuvamiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m18#7280cc94"
+    }
+  ]
+}

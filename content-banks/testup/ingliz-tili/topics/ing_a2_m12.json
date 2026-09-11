@@ -1,0 +1,1306 @@
+{
+  "nom": "should / shouldn't (maslahat)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "You look tired. You ___ go to bed early.",
+      "v": [
+        "should",
+        "shouldn't",
+        "should to",
+        "must to"
+      ],
+      "t": 0,
+      "izoh": "maslahat: should + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#7da942fa"
+    },
+    {
+      "q": "You ___ eat so much sugar; it is bad for your teeth.",
+      "v": [
+        "should",
+        "shouldn't",
+        "should to",
+        "don't should"
+      ],
+      "t": 1,
+      "izoh": "yomon narsaga: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#8efba5a8"
+    },
+    {
+      "q": "___ I open the window? It is very hot.",
+      "v": [
+        "Do should",
+        "Should to",
+        "Should",
+        "Am should"
+      ],
+      "t": 2,
+      "izoh": "savol: Should + I + fe'l?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#1cd03b18"
+    },
+    {
+      "q": "He has toothache. He ___ see a dentist.",
+      "v": [
+        "shouldn't",
+        "doesn't should",
+        "should to",
+        "should"
+      ],
+      "t": 3,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#85e07818"
+    },
+    {
+      "q": "It is cold outside. You ___ wear a warm coat.",
+      "v": [
+        "should",
+        "shouldn't",
+        "should to",
+        "must to"
+      ],
+      "t": 0,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#af512a0b"
+    },
+    {
+      "q": "We ___ be late for the lesson.",
+      "v": [
+        "should",
+        "shouldn't",
+        "don't should",
+        "shouldn't to"
+      ],
+      "t": 1,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#4ba2d8db"
+    },
+    {
+      "q": "What ___ we do this weekend?",
+      "v": [
+        "do should",
+        "should to",
+        "should",
+        "are should"
+      ],
+      "t": 2,
+      "izoh": "so'roq: What should we...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#1066b881"
+    },
+    {
+      "q": "You are driving too fast. You ___ slow down.",
+      "v": [
+        "shouldn't",
+        "should to",
+        "doesn't should",
+        "should"
+      ],
+      "t": 3,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#8fe97feb"
+    },
+    {
+      "q": "Students ___ talk during the exam.",
+      "v": [
+        "shouldn't",
+        "should",
+        "don't should",
+        "shouldn't to"
+      ],
+      "t": 0,
+      "izoh": "man qilish: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#2627b9ee"
+    },
+    {
+      "q": "If you feel sick, you ___ rest at home.",
+      "v": [
+        "shouldn't",
+        "should",
+        "should to",
+        "must to"
+      ],
+      "t": 1,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#1385bf07"
+    },
+    {
+      "q": "You ___ smoke; it damages your health.",
+      "v": [
+        "should",
+        "should to",
+        "shouldn't",
+        "don't should"
+      ],
+      "t": 2,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#f011fdf8"
+    },
+    {
+      "q": "___ I call you tonight or tomorrow?",
+      "v": [
+        "Do should",
+        "Am should",
+        "Should to",
+        "Should"
+      ],
+      "t": 3,
+      "izoh": "savol: Should I...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#28443c2c"
+    },
+    {
+      "q": "The film is great. You ___ watch it.",
+      "v": [
+        "should",
+        "shouldn't",
+        "should to",
+        "doesn't should"
+      ],
+      "t": 0,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#736e71bd"
+    },
+    {
+      "q": "You ___ tell lies to your friends.",
+      "v": [
+        "should",
+        "shouldn't",
+        "don't should",
+        "shouldn't to"
+      ],
+      "t": 1,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#740c102e"
+    },
+    {
+      "q": "I have a headache. What ___ I take for it?",
+      "v": [
+        "do should",
+        "should to",
+        "should",
+        "am should"
+      ],
+      "t": 2,
+      "izoh": "so'roq: What should I...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#9a3daf2c"
+    },
+    {
+      "q": "You ___ drink coffee late at night if you want to sleep.",
+      "v": [
+        "should",
+        "should to",
+        "don't should",
+        "shouldn't"
+      ],
+      "t": 3,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#536be72a"
+    },
+    {
+      "q": "She wants to be healthy, so she ___ do exercise.",
+      "v": [
+        "should",
+        "shouldn't",
+        "should to",
+        "must to"
+      ],
+      "t": 0,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#8edd974a"
+    },
+    {
+      "q": "We ___ waste water; it is very important.",
+      "v": [
+        "should",
+        "shouldn't",
+        "don't should",
+        "shouldn't to"
+      ],
+      "t": 1,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#b095b9c3"
+    },
+    {
+      "q": "Your room is dirty. You ___ clean it.",
+      "v": [
+        "shouldn't",
+        "should to",
+        "should",
+        "doesn't should"
+      ],
+      "t": 2,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#1558664c"
+    },
+    {
+      "q": "You ___ spend all your money on games.",
+      "v": [
+        "should",
+        "should to",
+        "don't should",
+        "shouldn't"
+      ],
+      "t": 3,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#e5d98dab"
+    },
+    {
+      "q": "___ we take a taxi or walk?",
+      "v": [
+        "Should",
+        "Do should",
+        "Are should",
+        "Should to"
+      ],
+      "t": 0,
+      "izoh": "taklif savoli: Should we...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#d6b2d558"
+    },
+    {
+      "q": "He ___ study more if he wants to pass.",
+      "v": [
+        "shouldn't",
+        "should",
+        "should to",
+        "doesn't should"
+      ],
+      "t": 1,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#ed82d679"
+    },
+    {
+      "q": "You ___ be rude to older people.",
+      "v": [
+        "should",
+        "don't should",
+        "shouldn't",
+        "shouldn't to"
+      ],
+      "t": 2,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#4fd86e70"
+    },
+    {
+      "q": "I am confused. What ___ I do first?",
+      "v": [
+        "do should",
+        "am should",
+        "should to",
+        "should"
+      ],
+      "t": 3,
+      "izoh": "so'roq: What should I...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#1c2ba536"
+    },
+    {
+      "q": "You ___ eat vegetables every day.",
+      "v": [
+        "should",
+        "shouldn't",
+        "should to",
+        "must to"
+      ],
+      "t": 0,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#062227a4"
+    },
+    {
+      "q": "Children ___ watch TV all day.",
+      "v": [
+        "should",
+        "shouldn't",
+        "don't should",
+        "shouldn't to"
+      ],
+      "t": 1,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#f8b4feab"
+    },
+    {
+      "q": "It is a secret. You ___ tell anyone.",
+      "v": [
+        "should",
+        "should to",
+        "shouldn't",
+        "don't should"
+      ],
+      "t": 2,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#ed4f870f"
+    },
+    {
+      "q": "You have an exam tomorrow. You ___ sleep well tonight.",
+      "v": [
+        "shouldn't",
+        "should to",
+        "doesn't should",
+        "should"
+      ],
+      "t": 3,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#4fadb59a"
+    },
+    {
+      "q": "___ I wear a tie to the party?",
+      "v": [
+        "Should",
+        "Do should",
+        "Am should",
+        "Should to"
+      ],
+      "t": 0,
+      "izoh": "savol: Should I...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#a8a367cb"
+    },
+    {
+      "q": "We ___ help people who are in trouble.",
+      "v": [
+        "shouldn't",
+        "should",
+        "should to",
+        "must to"
+      ],
+      "t": 1,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#7cdf2fbd"
+    },
+    {
+      "q": "You ___ leave your bag on the bus.",
+      "v": [
+        "should",
+        "don't should",
+        "shouldn't",
+        "shouldn't to"
+      ],
+      "t": 2,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#b363ca37"
+    },
+    {
+      "q": "If you do not understand, you ___ ask the teacher.",
+      "v": [
+        "shouldn't",
+        "should to",
+        "doesn't should",
+        "should"
+      ],
+      "t": 3,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#6379b651"
+    },
+    {
+      "q": "You ___ play football near the road.",
+      "v": [
+        "shouldn't",
+        "should",
+        "should to",
+        "don't should"
+      ],
+      "t": 0,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#a33f8835"
+    },
+    {
+      "q": "My friend is sad. What ___ I say to her?",
+      "v": [
+        "do should",
+        "should",
+        "am should",
+        "should to"
+      ],
+      "t": 1,
+      "izoh": "so'roq: What should I...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#85c7ec40"
+    },
+    {
+      "q": "You ___ save some money for the future.",
+      "v": [
+        "shouldn't",
+        "should to",
+        "should",
+        "must to"
+      ],
+      "t": 2,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#4596d1a3"
+    },
+    {
+      "q": "We ___ make noise in the library.",
+      "v": [
+        "should",
+        "don't should",
+        "shouldn't to",
+        "shouldn't"
+      ],
+      "t": 3,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#91721df7"
+    },
+    {
+      "q": "You look pale. You ___ eat something.",
+      "v": [
+        "should",
+        "shouldn't",
+        "should to",
+        "doesn't should"
+      ],
+      "t": 0,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#073c7577"
+    },
+    {
+      "q": "You ___ copy your friend's homework.",
+      "v": [
+        "should",
+        "shouldn't",
+        "should to",
+        "don't should"
+      ],
+      "t": 1,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#d3b77bee"
+    },
+    {
+      "q": "___ we invite Ali to the party?",
+      "v": [
+        "Do should",
+        "Are should",
+        "Should",
+        "Should to"
+      ],
+      "t": 2,
+      "izoh": "taklif savoli: Should we...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#5217f2dd"
+    },
+    {
+      "q": "She is always tired. She ___ sleep more.",
+      "v": [
+        "shouldn't",
+        "should to",
+        "must to",
+        "should"
+      ],
+      "t": 3,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#4b188f34"
+    },
+    {
+      "q": "You ___ touch that; it is very hot.",
+      "v": [
+        "shouldn't",
+        "should",
+        "don't should",
+        "shouldn't to"
+      ],
+      "t": 0,
+      "izoh": "ogohlantirish: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#055778c0"
+    },
+    {
+      "q": "To learn English, you ___ practise every day.",
+      "v": [
+        "shouldn't",
+        "should",
+        "should to",
+        "doesn't should"
+      ],
+      "t": 1,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#4c82fca3"
+    },
+    {
+      "q": "You ___ shout at your little brother.",
+      "v": [
+        "should",
+        "should to",
+        "shouldn't",
+        "don't should"
+      ],
+      "t": 2,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#f406bede"
+    },
+    {
+      "q": "I want to be fit. ___ I go to the gym?",
+      "v": [
+        "Do should",
+        "Am should",
+        "Should to",
+        "Should"
+      ],
+      "t": 3,
+      "izoh": "savol: Should I...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#27b58fe7"
+    },
+    {
+      "q": "We ___ respect our teachers.",
+      "v": [
+        "should",
+        "shouldn't",
+        "should to",
+        "must to"
+      ],
+      "t": 0,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#cbad20b3"
+    },
+    {
+      "q": "You ___ forget to lock the door.",
+      "v": [
+        "should",
+        "shouldn't",
+        "don't should",
+        "shouldn't to"
+      ],
+      "t": 1,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#568fc520"
+    },
+    {
+      "q": "If it rains, you ___ take an umbrella.",
+      "v": [
+        "shouldn't",
+        "should to",
+        "should",
+        "doesn't should"
+      ],
+      "t": 2,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#1f42d7fd"
+    },
+    {
+      "q": "You ___ eat before you swim.",
+      "v": [
+        "should",
+        "should to",
+        "don't should",
+        "shouldn't"
+      ],
+      "t": 3,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#02602e4f"
+    },
+    {
+      "q": "What time ___ we meet tomorrow?",
+      "v": [
+        "should",
+        "do should",
+        "are should",
+        "should to"
+      ],
+      "t": 0,
+      "izoh": "so'roq: What time should we...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#04fdf99a"
+    },
+    {
+      "q": "He is very tired. He ___ take a break.",
+      "v": [
+        "shouldn't",
+        "should",
+        "should to",
+        "must to"
+      ],
+      "t": 1,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#04fa164b"
+    },
+    {
+      "q": "You ___ waste your time on the phone all day.",
+      "v": [
+        "should",
+        "don't should",
+        "shouldn't",
+        "shouldn't to"
+      ],
+      "t": 2,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#78c1b1f8"
+    },
+    {
+      "q": "You have a fever. You ___ drink a lot of water.",
+      "v": [
+        "shouldn't",
+        "should to",
+        "doesn't should",
+        "should"
+      ],
+      "t": 3,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#6f43f123"
+    },
+    {
+      "q": "Drivers ___ use the phone while driving.",
+      "v": [
+        "shouldn't",
+        "should",
+        "don't should",
+        "shouldn't to"
+      ],
+      "t": 0,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#f53d1909"
+    },
+    {
+      "q": "___ I buy the red one or the blue one?",
+      "v": [
+        "Do should",
+        "Should",
+        "Am should",
+        "Should to"
+      ],
+      "t": 1,
+      "izoh": "tanlov savoli: Should I...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#84116c92"
+    },
+    {
+      "q": "You ___ say 'thank you' when someone helps you.",
+      "v": [
+        "shouldn't",
+        "should to",
+        "should",
+        "must to"
+      ],
+      "t": 2,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#2778d204"
+    },
+    {
+      "q": "You ___ swim in that river; it is dangerous.",
+      "v": [
+        "should",
+        "should to",
+        "don't should",
+        "shouldn't"
+      ],
+      "t": 3,
+      "izoh": "ogohlantirish: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#bdcc57f7"
+    },
+    {
+      "q": "The baby is sleeping. We ___ be quiet.",
+      "v": [
+        "should",
+        "shouldn't",
+        "should to",
+        "doesn't should"
+      ],
+      "t": 0,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#3d70bfa5"
+    },
+    {
+      "q": "You ___ throw rubbish in the street.",
+      "v": [
+        "should",
+        "shouldn't",
+        "don't should",
+        "shouldn't to"
+      ],
+      "t": 1,
+      "izoh": "salbiy maslahat: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#2a2ddd04"
+    },
+    {
+      "q": "I feel stressed. What ___ I do to relax?",
+      "v": [
+        "do should",
+        "am should",
+        "should",
+        "should to"
+      ],
+      "t": 2,
+      "izoh": "so'roq: What should I...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#2e21028e"
+    },
+    {
+      "q": "You ___ check your answers before the test ends.",
+      "v": [
+        "shouldn't",
+        "should to",
+        "doesn't should",
+        "should"
+      ],
+      "t": 3,
+      "izoh": "maslahat: should.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#9dcef65a"
+    },
+    {
+      "q": "Choose the correct sentence about seeing a doctor.",
+      "v": [
+        "You should see a doctor.",
+        "You should to see a doctor.",
+        "You should seeing a doctor.",
+        "You shoulds see a doctor."
+      ],
+      "t": 0,
+      "izoh": "'should' + oddiy fe'l, 'to' yo'q.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#6d5c561d"
+    },
+    {
+      "q": "Choose the correct sentence about sugar.",
+      "v": [
+        "You shouldn't to eat too much sugar.",
+        "You shouldn't eat too much sugar.",
+        "You don't should eat too much sugar.",
+        "You shouldn't ate too much sugar."
+      ],
+      "t": 1,
+      "izoh": "inkor: shouldn't + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#b7f642ea"
+    },
+    {
+      "q": "Choose the correct sentence about calling the teacher.",
+      "v": [
+        "Do I should call the teacher?",
+        "Should I to call the teacher?",
+        "Should I call the teacher?",
+        "Am I should call the teacher?"
+      ],
+      "t": 2,
+      "izoh": "savol: Should + I + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#dd4bcb69"
+    },
+    {
+      "q": "Choose the correct sentence about the exam.",
+      "v": [
+        "We should studies for the exam.",
+        "We should to study for the exam.",
+        "We shoulds study for the exam.",
+        "We should study for the exam."
+      ],
+      "t": 3,
+      "izoh": "'should' + fe'l, 's' qo'shilmaydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#8e12d8ff"
+    },
+    {
+      "q": "Choose the correct sentence about fast driving.",
+      "v": [
+        "He shouldn't drive so fast.",
+        "He shouldn't to drive so fast.",
+        "He doesn't should drive so fast.",
+        "He shouldn't drives so fast."
+      ],
+      "t": 0,
+      "izoh": "inkor: shouldn't + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#8bd0e8bd"
+    },
+    {
+      "q": "Choose the correct sentence about what to do.",
+      "v": [
+        "What do I should do?",
+        "What should I do?",
+        "What should I to do?",
+        "What I should do?"
+      ],
+      "t": 1,
+      "izoh": "so'roq: What should I...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#96cc8c67"
+    },
+    {
+      "q": "Choose the correct sentence about water.",
+      "v": [
+        "You should drinks more water.",
+        "You should to drink more water.",
+        "You should drink more water.",
+        "You should drinking more water."
+      ],
+      "t": 2,
+      "izoh": "'should' + oddiy fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#75ded489"
+    },
+    {
+      "q": "Choose the correct sentence about cheating.",
+      "v": [
+        "Students shouldn't to cheat.",
+        "Students don't should cheat.",
+        "Students shouldn't cheats.",
+        "Students shouldn't cheat."
+      ],
+      "t": 3,
+      "izoh": "inkor: shouldn't + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#095a145d"
+    },
+    {
+      "q": "Choose the correct sentence about a taxi.",
+      "v": [
+        "Should we take a taxi?",
+        "Should we to take a taxi?",
+        "Do we should take a taxi?",
+        "Are we should take a taxi?"
+      ],
+      "t": 0,
+      "izoh": "taklif savoli: Should we...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#5e838e79"
+    },
+    {
+      "q": "Choose the correct sentence about resting at home.",
+      "v": [
+        "She should to rest at home.",
+        "She should rest at home.",
+        "She should resting at home.",
+        "She shoulds rest at home."
+      ],
+      "t": 1,
+      "izoh": "'should' + oddiy fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#ed20b2b6"
+    },
+    {
+      "q": "Choose the correct sentence about lies.",
+      "v": [
+        "You shouldn't to tell lies.",
+        "You don't should tell lies.",
+        "You shouldn't tell lies.",
+        "You shouldn't told lies."
+      ],
+      "t": 2,
+      "izoh": "inkor: shouldn't + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#95f0c7ba"
+    },
+    {
+      "q": "Choose the correct sentence about apologising.",
+      "v": [
+        "I think you should to apologise.",
+        "I think you should apologising.",
+        "I think you shoulds apologise.",
+        "I think you should apologise."
+      ],
+      "t": 3,
+      "izoh": "'should' + oddiy fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#2caf8732"
+    },
+    {
+      "q": "Choose the correct sentence about vegetables.",
+      "v": [
+        "He should eat more vegetables.",
+        "He should eats more vegetables.",
+        "He should to eat more vegetables.",
+        "He should eating more vegetables."
+      ],
+      "t": 0,
+      "izoh": "'should' + oddiy fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#4cfcbc58"
+    },
+    {
+      "q": "Choose the correct sentence about an umbrella.",
+      "v": [
+        "Should I to bring an umbrella?",
+        "Should I bring an umbrella?",
+        "Do I should bring an umbrella?",
+        "I should bring an umbrella?"
+      ],
+      "t": 1,
+      "izoh": "savol: Should I...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#d7a177cd"
+    },
+    {
+      "q": "Choose the correct sentence about being late.",
+      "v": [
+        "We shouldn't to be late.",
+        "We don't should be late.",
+        "We shouldn't be late.",
+        "We shouldn't are late."
+      ],
+      "t": 2,
+      "izoh": "inkor: shouldn't + be.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#80fe0a32"
+    },
+    {
+      "q": "Choose the correct sentence about asking for help.",
+      "v": [
+        "You should to ask for help.",
+        "You should asks for help.",
+        "You should asking for help.",
+        "You should ask for help."
+      ],
+      "t": 3,
+      "izoh": "'should' + oddiy fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#f6ff6e4d"
+    },
+    {
+      "q": "Choose the correct sentence about noise.",
+      "v": [
+        "They shouldn't make noise.",
+        "They shouldn't to make noise.",
+        "They doesn't should make noise.",
+        "They shouldn't makes noise."
+      ],
+      "t": 0,
+      "izoh": "inkor: shouldn't + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#67194cb1"
+    },
+    {
+      "q": "Choose the correct sentence about what to do now.",
+      "v": [
+        "What we should do now?",
+        "What should we do now?",
+        "What do we should do now?",
+        "What should we to do now?"
+      ],
+      "t": 1,
+      "izoh": "so'roq: What should we...?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#6161a11b"
+    },
+    {
+      "q": "Find the mistake: 'You should to see a doctor.'",
+      "v": [
+        "You",
+        "should",
+        "to",
+        "doctor"
+      ],
+      "t": 2,
+      "izoh": "'should' dan keyin 'to' kerak emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#1dac8ad6"
+    },
+    {
+      "q": "Find the mistake: 'You shouldn't to eat sugar.'",
+      "v": [
+        "shouldn't",
+        "to",
+        "eat",
+        "sugar"
+      ],
+      "t": 1,
+      "izoh": "'shouldn't' dan keyin 'to' ortiqcha.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#85feabc8"
+    },
+    {
+      "q": "Find the mistake: 'Do I should call him?'",
+      "v": [
+        "Do",
+        "I",
+        "should",
+        "call"
+      ],
+      "t": 0,
+      "izoh": "'should' savolida 'Do' kerak emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#33541df4"
+    },
+    {
+      "q": "Find the mistake: 'You should drinks more water.'",
+      "v": [
+        "should",
+        "drinks",
+        "more",
+        "water"
+      ],
+      "t": 1,
+      "izoh": "'should' dan keyin oddiy fe'l: drink.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#110bbe1e"
+    },
+    {
+      "q": "Find the mistake: 'He don't should smoke.'",
+      "v": [
+        "He",
+        "don't",
+        "should",
+        "smoke"
+      ],
+      "t": 1,
+      "izoh": "inkor shakli: shouldn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#0709d9e0"
+    },
+    {
+      "q": "Find the mistake: 'We should to study more.'",
+      "v": [
+        "We",
+        "should",
+        "to",
+        "study"
+      ],
+      "t": 2,
+      "izoh": "'should' dan keyin 'to' ortiqcha.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#a7791dc1"
+    },
+    {
+      "q": "Find the mistake: 'She should resting at home.'",
+      "v": [
+        "She",
+        "should",
+        "resting",
+        "home"
+      ],
+      "t": 2,
+      "izoh": "'should' dan keyin oddiy fe'l: rest.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#bf0c6954"
+    },
+    {
+      "q": "Find the mistake: 'Where should I to go?'",
+      "v": [
+        "Where",
+        "should",
+        "I",
+        "to"
+      ],
+      "t": 3,
+      "izoh": "'should' dan keyin 'to' kerak emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#7a550a9a"
+    },
+    {
+      "q": "Find the mistake: 'You shouldn't tells lies.'",
+      "v": [
+        "You",
+        "shouldn't",
+        "tells",
+        "lies"
+      ],
+      "t": 2,
+      "izoh": "'shouldn't' dan keyin oddiy fe'l: tell.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#8d340c94"
+    },
+    {
+      "q": "Find the mistake: 'Should I to open the window?'",
+      "v": [
+        "Should",
+        "I",
+        "to",
+        "open"
+      ],
+      "t": 2,
+      "izoh": "'should' dan keyin 'to' ortiqcha.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#78519122"
+    },
+    {
+      "q": "Find the mistake: 'They shoulds help us.'",
+      "v": [
+        "They",
+        "shoulds",
+        "help",
+        "us"
+      ],
+      "t": 1,
+      "izoh": "'should' 's' olmaydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#c5625309"
+    },
+    {
+      "q": "Find the mistake: 'You should not to worry.'",
+      "v": [
+        "You",
+        "should",
+        "not",
+        "to"
+      ],
+      "t": 3,
+      "izoh": "'should not' dan keyin 'to' kerak emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#ca9fb559"
+    },
+    {
+      "q": "Choose the correct order of words: you / should / see / a doctor",
+      "v": [
+        "You should see a doctor.",
+        "You see should a doctor.",
+        "Should you see a doctor.",
+        "You should a doctor see."
+      ],
+      "t": 0,
+      "izoh": "Ega + should + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#3f7f3dc2"
+    },
+    {
+      "q": "Choose the correct order of words: you / shouldn't / eat / sugar",
+      "v": [
+        "You eat shouldn't sugar.",
+        "You shouldn't eat sugar.",
+        "Shouldn't you eat sugar.",
+        "You shouldn't sugar eat."
+      ],
+      "t": 1,
+      "izoh": "Ega + shouldn't + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#5385f312"
+    },
+    {
+      "q": "Choose the correct order of words: should / I / open / the window",
+      "v": [
+        "I should open the window?",
+        "Should open I the window?",
+        "Should I open the window?",
+        "Open should I the window?"
+      ],
+      "t": 2,
+      "izoh": "Savolda: Should + ega + fe'l?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#bb23e333"
+    },
+    {
+      "q": "Choose the correct order of words: we / should / study / more",
+      "v": [
+        "We study should more.",
+        "Should we study more.",
+        "We should more study.",
+        "We should study more."
+      ],
+      "t": 3,
+      "izoh": "Ega + should + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#35ed14fb"
+    },
+    {
+      "q": "Choose the correct order of words: he / shouldn't / drive / fast",
+      "v": [
+        "He shouldn't drive fast.",
+        "He drive shouldn't fast.",
+        "Shouldn't he drive fast.",
+        "He shouldn't fast drive."
+      ],
+      "t": 0,
+      "izoh": "Ega + shouldn't + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#cdd78431"
+    },
+    {
+      "q": "Choose the correct order of words: what / should / I / do",
+      "v": [
+        "What I should do?",
+        "What should I do?",
+        "What do should I?",
+        "Should what I do?"
+      ],
+      "t": 1,
+      "izoh": "So'roq: What + should + ega + fe'l?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#ff3203e4"
+    },
+    {
+      "q": "Choose the correct order of words: you / should / drink / water",
+      "v": [
+        "You drink should water.",
+        "Should you drink water.",
+        "You should drink water.",
+        "You should water drink."
+      ],
+      "t": 2,
+      "izoh": "Ega + should + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#4d1aabab"
+    },
+    {
+      "q": "Choose the correct order of words: should / we / take / a taxi",
+      "v": [
+        "We should take a taxi?",
+        "Should take we a taxi?",
+        "Take should we a taxi?",
+        "Should we take a taxi?"
+      ],
+      "t": 3,
+      "izoh": "Taklif savoli: Should + we + fe'l?",
+      "qiy": "orta",
+      "id": "ing_a2_m12#86d09f45"
+    },
+    {
+      "q": "Choose the correct order of words: she / should / rest / at home",
+      "v": [
+        "She should rest at home.",
+        "She rest should at home.",
+        "Should she rest at home.",
+        "She should at home rest."
+      ],
+      "t": 0,
+      "izoh": "Ega + should + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#6df2ac1e"
+    },
+    {
+      "q": "Choose the correct order of words: you / shouldn't / tell / lies",
+      "v": [
+        "You tell shouldn't lies.",
+        "You shouldn't tell lies.",
+        "Shouldn't you tell lies.",
+        "You shouldn't lies tell."
+      ],
+      "t": 1,
+      "izoh": "Ega + shouldn't + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m12#973ef1e1"
+    }
+  ]
+}

@@ -1,0 +1,531 @@
+{
+  "nom": "32-mavzu. Xromning II, III, VI valentli birikmalari va xossalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Xrom (II)-oksidi qanday xossaga ega?",
+      "v": [
+        "Asosli",
+        "Amfoter",
+        "Kislotali",
+        "Betarafoy"
+      ],
+      "t": 0,
+      "izoh": "CrO — xrom (II)-oksid — asosli oksid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#2fc31623"
+    },
+    {
+      "q": "Xrom (III)-oksidi qanday xossaga ega?",
+      "v": [
+        "Amfoter",
+        "Asosli",
+        "Kislotali",
+        "Betarafoy"
+      ],
+      "t": 0,
+      "izoh": "Cr2O3 — amfoter oksid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#700f4cf6"
+    },
+    {
+      "q": "Xrom (VI)-oksidi qanday xossaga ega?",
+      "v": [
+        "Kislotali",
+        "Asosli",
+        "Amfoter",
+        "Betarafoy"
+      ],
+      "t": 0,
+      "izoh": "CrO3 — kislotali oksid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#ca2676aa"
+    },
+    {
+      "q": "Xrom (II)-oksidining rangi qanday?",
+      "v": [
+        "Qora",
+        "Yashil",
+        "To'q qizil",
+        "Sariq"
+      ],
+      "t": 0,
+      "izoh": "Xrom (II)-oksidi qora rangli kukundir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#cb43f2f9"
+    },
+    {
+      "q": "CrO havoda 100 °C dan yuqori haroratda qizdirilsa nimaga aylanadi?",
+      "v": [
+        "Cr2O3 ga",
+        "CrO3 ga",
+        "Cr ga",
+        "Cr(OH)2 ga"
+      ],
+      "t": 0,
+      "izoh": "4CrO + O2 = 2Cr2O3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#01d4b383"
+    },
+    {
+      "q": "Cr(OH)2 ni olish uchun xromning ikki valentli tuzlariga nima ta'sir ettiriladi?",
+      "v": [
+        "Ishqor",
+        "Kislota",
+        "Kislorod",
+        "Suv"
+      ],
+      "t": 0,
+      "izoh": "CrCl2 + 2NaOH = Cr(OH)2 + 2NaCl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#33d42def"
+    },
+    {
+      "q": "Cr(OH)2 cho'kmasi qanday rangga ega?",
+      "v": [
+        "Sariq",
+        "Yashil",
+        "Qora",
+        "Ko'k"
+      ],
+      "t": 0,
+      "izoh": "Sariq rangli cho'kma Cr(OH)2 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#0b659187"
+    },
+    {
+      "q": "Xromning ikki valentli birikmalari havoda qanday o'zgaradi?",
+      "v": [
+        "Oksidlanib, uch valentli birikmalarni hosil qiladi",
+        "Qaytarilib, metallga aylanadi",
+        "Suvda erib yo'qoladi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "4Cr(OH)2 + O2 + 2H2O = 4Cr(OH)3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#ddbd295c"
+    },
+    {
+      "q": "Cr+2 oksidlanish darajasidagi xrom birikmalari qanday rol o'ynaydi?",
+      "v": [
+        "Qaytaruvchi",
+        "Oksidlovchi",
+        "Ham oksidlovchi, ham qaytaruvchi",
+        "Neytral"
+      ],
+      "t": 0,
+      "izoh": "Cr+2 dagi birikmalar qaytaruvchilardir, oson oksidlanib Cr+3 li birikmalarga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#9731de75"
+    },
+    {
+      "q": "Xrom (III)-oksidining rangi qanday?",
+      "v": [
+        "Yashil",
+        "Qora",
+        "To'q qizil",
+        "Sariq"
+      ],
+      "t": 0,
+      "izoh": "Xrom (III)-oksidi yashil rangli kukun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#3b010198"
+    },
+    {
+      "q": "Cr2O3 ishqor bilan reaksiyada qaysi tuz hosil bo'ladi?",
+      "v": [
+        "NaCrO2",
+        "Na2CrO4",
+        "Cr(NO3)3",
+        "Na3[Cr(OH)6]"
+      ],
+      "t": 0,
+      "izoh": "Cr2O3 + 2NaOH = 2NaCrO2 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#5412daeb"
+    },
+    {
+      "q": "Laboratoriya sharoitida Cr2O3 qanday olinadi?",
+      "v": [
+        "Ammoniy dixromatni qizdirib",
+        "Xromni kislorodda kuydirib",
+        "CrO3 ni kislota bilan eritib",
+        "Cr(OH)2 ni ishqor bilan qaynatib"
+      ],
+      "t": 0,
+      "izoh": "(NH4)2Cr2O7 → Cr2O3 + N2 + 4H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#416ed70d"
+    },
+    {
+      "q": "(NH4)2Cr2O7 qizdirilganda qaysi gaz ajralib chiqadi?",
+      "v": [
+        "Azot",
+        "Kislorod",
+        "Vodorod",
+        "Ammiak"
+      ],
+      "t": 0,
+      "izoh": "(NH4)2Cr2O7 → Cr2O3 + N2 + 4H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#504ba9a6"
+    },
+    {
+      "q": "Cr(OH)3 ortiqcha NaOH bilan reaksiyada qaysi birikma hosil bo'ladi?",
+      "v": [
+        "Na3[Cr(OH)6]",
+        "NaCrO2",
+        "Na2CrO4",
+        "CrCl3"
+      ],
+      "t": 0,
+      "izoh": "Cr(OH)3 + 3NaOH = Na3[Cr(OH)6].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#4627fd03"
+    },
+    {
+      "q": "Cr+3 oksidlanish darajasidagi xrom birikmalari qanday xossaga ega?",
+      "v": [
+        "Ham oksidlovchi, ham qaytaruvchi",
+        "Faqat oksidlovchi",
+        "Faqat qaytaruvchi",
+        "Neytral"
+      ],
+      "t": 0,
+      "izoh": "Cr+3 dagi birikmalar ham oksidlovchi, ham qaytaruvchilardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#961f7d6a"
+    },
+    {
+      "q": "Xromli achchiqtoshlar qaysi sanoatda ishlatiladi?",
+      "v": [
+        "Ko'nchilik sanoatida terilarni oshlash uchun",
+        "Oziq-ovqat sanoatida",
+        "Foto sanoatida",
+        "Neft sanoatida"
+      ],
+      "t": 0,
+      "izoh": "Xromli achchiqtoshlar ko'nchilik sanoatida terilarni oshlash uchun ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#3aaf1f14"
+    },
+    {
+      "q": "Kaliy xromli achchiqtoshning formulasi qanday?",
+      "v": [
+        "K2SO4·Cr2(SO4)3·12H2O",
+        "(NH4)2SO4·Cr2(SO4)3·6H2O",
+        "K2Cr2O7",
+        "K2CrO4"
+      ],
+      "t": 0,
+      "izoh": "Kaliy xromli achchiqtosh — K2SO4·Cr2(SO4)3·12H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#8106d2d4"
+    },
+    {
+      "q": "Xromli achchiqtoshlar qanday tuzlar hisoblanadi?",
+      "v": [
+        "Sulfatli qo'shaloq tuzlar",
+        "Kompleks tuzlar",
+        "Kislotali tuzlar",
+        "Asosli tuzlar"
+      ],
+      "t": 0,
+      "izoh": "Xromli achchiqtoshlar sulfatli qo'shaloq tuzlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#bc0b1b78"
+    },
+    {
+      "q": "Xrom (VI)-oksidi qanday ko'rinishga ega?",
+      "v": [
+        "To'q qizil rangli kristall modda",
+        "Yashil kukun",
+        "Qora kukun",
+        "Sariq cho'kma"
+      ],
+      "t": 0,
+      "izoh": "CrO3 — to'q qizil rangli kristall modda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#2fa23025"
+    },
+    {
+      "q": "CrO3 NaOH bilan reaksiyada qaysi tuz hosil qiladi?",
+      "v": [
+        "Na2CrO4",
+        "Na2Cr2O7",
+        "NaCrO2",
+        "Na3[Cr(OH)6]"
+      ],
+      "t": 0,
+      "izoh": "CrO3 + 2NaOH = Na2CrO4 + H2O — natriy xromat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#33e976a5"
+    },
+    {
+      "q": "CrO3 oddiy va murakkab moddalarni oksidlab, o'zi qaysi holatgacha qaytariladi?",
+      "v": [
+        "Cr2O3 ga qadar",
+        "CrO ga qadar",
+        "Cr ga qadar",
+        "CrO2 ga qadar"
+      ],
+      "t": 0,
+      "izoh": "3S + 4CrO3 = 3SO2 + 2Cr2O3 — CrO3 Cr2O3 gacha qaytariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#4231c1d0"
+    },
+    {
+      "q": "CrO3 ni laboratoriyada qanday olinadi?",
+      "v": [
+        "Kaliy dixromatga konsentrlangan sulfat kislota ta'sir ettirib",
+        "Xromni kislorodda kuydirib",
+        "Cr2O3 ni qizdirib",
+        "Natriy xromatni elektroliz qilib"
+      ],
+      "t": 0,
+      "izoh": "K2Cr2O7 + H2SO4 → 2CrO3 + K2SO4 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#834313c5"
+    },
+    {
+      "q": "CrO3 ko'p suv bilan reaksiyaga kirishganda qaysi kislota hosil bo'ladi?",
+      "v": [
+        "H2CrO4",
+        "H2Cr2O7",
+        "H2CrO3",
+        "HCrO2"
+      ],
+      "t": 0,
+      "izoh": "Agar suv ko'p bo'lsa: CrO3 + H2O = H2CrO4 — xromat kislota.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#9e72304d"
+    },
+    {
+      "q": "CrO3 ko'p bo'lganda suv bilan qanday reaksiya sodir bo'ladi?",
+      "v": [
+        "2CrO3 + H2O = H2Cr2O7",
+        "CrO3 + H2O = H2CrO4",
+        "CrO3 + 2H2O = H4CrO5",
+        "2CrO3 + 3H2O = 2H3CrO4"
+      ],
+      "t": 0,
+      "izoh": "Agar CrO3 ko'p bo'lsa: 2CrO3 + H2O = H2Cr2O7 — dixromat kislota.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#3cf91013"
+    },
+    {
+      "q": "Xromat kislota (H2CrO4) qanday xossaga ega?",
+      "v": [
+        "Beqaror, faqat suyultirilgan eritma holidagina mavjud",
+        "Barqaror, kristall holida mavjud",
+        "Kuchli bazaviy",
+        "Suvda umuman erimaydi"
+      ],
+      "t": 0,
+      "izoh": "Xromat kislota beqaror, faqat suyultirilgan eritma holidagina mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#e8b4dd8c"
+    },
+    {
+      "q": "Xromatlar qanday rangga ega?",
+      "v": [
+        "Sariq",
+        "To'q sariq",
+        "Yashil",
+        "Ko'k"
+      ],
+      "t": 0,
+      "izoh": "Xromat kislotaning tuzlari xromatlar deyiladi va ular sariq rangda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#5119cbbd"
+    },
+    {
+      "q": "Dixromatlar qanday rangga ega?",
+      "v": [
+        "To'q sariq",
+        "Sariq",
+        "Yashil",
+        "Qizil"
+      ],
+      "t": 0,
+      "izoh": "Dixromat kislota tuzlari dixromatlar deyilib, to'q sariq rangli bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#f13282cb"
+    },
+    {
+      "q": "Cr+6 oksidlanish darajasidagi xrom birikmalari qanday xossaga ega?",
+      "v": [
+        "Kuchli oksidlovchilar",
+        "Kuchli qaytaruvchilar",
+        "Neytral moddalar",
+        "Asosli moddalar"
+      ],
+      "t": 0,
+      "izoh": "Cr+6 dagi birikmalar kuchli oksidlovchilar bo'lib, oson qaytarilib Cr+3 li birikmalarga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#eab34aad"
+    },
+    {
+      "q": "K2Cr2O7 + KI + H2SO4 reaksiyasida oksidlovchi qaysi modda?",
+      "v": [
+        "K2Cr2O7",
+        "KI",
+        "H2SO4",
+        "I2"
+      ],
+      "t": 0,
+      "izoh": "K2Cr2O7 dagi xrom +6 dan +3 ga o'tib, 3 elektron qabul qiladi — oksidlovchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#caece94b"
+    },
+    {
+      "q": "K2Cr2O7 + KI + H2SO4 reaksiyasida qaytaruvchi qaysi modda?",
+      "v": [
+        "KI",
+        "K2Cr2O7",
+        "H2SO4",
+        "K2SO4"
+      ],
+      "t": 0,
+      "izoh": "Kaliy yodiddagi yod -1 dan 0 ga o'tib, elektron beradi — KI qaytaruvchi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#2e399734"
+    },
+    {
+      "q": "Kislotali muhitda kaliy dixromat FeSO4 ni oksidlaganda temirning oksidlanish darajasi qanday o'zgaradi?",
+      "v": [
+        "+2 dan +3 ga",
+        "+3 dan +2 ga",
+        "+6 dan +3 ga",
+        "0 dan +2 ga"
+      ],
+      "t": 0,
+      "izoh": "6FeSO4 + K2Cr2O7 + 7H2SO4 = 3Fe2(SO4)3 + Cr2(SO4)3 + K2SO4 + 7H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#a4258898"
+    },
+    {
+      "q": "Laboratoriyada \"Sun'iy vulqon\" tajribasi qaysi tuz yordamida amalga oshiriladi?",
+      "v": [
+        "(NH4)2Cr2O7",
+        "K2CrO4",
+        "CrCl3",
+        "K2Cr2O7"
+      ],
+      "t": 0,
+      "izoh": "(NH4)2Cr2O7 tuzidan \"Sun'iy vulqon\" tajribasini amalga oshirish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#cedf49d5"
+    },
+    {
+      "q": "Xrom (VI)-oksidi yuqori haroratda parchalanib nimalar hosil qiladi?",
+      "v": [
+        "Cr2O3 va O2",
+        "CrO va O2",
+        "Cr va O3",
+        "CrO2 va O2"
+      ],
+      "t": 0,
+      "izoh": "4CrO3 = 2Cr2O3 + 3O2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#7f82a266"
+    },
+    {
+      "q": "Natriy xromat bariyning suvda eriydigan tuzlari bilan reaksiyada qanday cho'kma hosil bo'ladi?",
+      "v": [
+        "Sariq rangli BaCrO4",
+        "Oq rangli BaSO4",
+        "Yashil rangli Cr(OH)3",
+        "Qora rangli CrO"
+      ],
+      "t": 0,
+      "izoh": "Na2CrO4 bariy tuzlari bilan sariq rangli BaCrO4 cho'kmasini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#356272d9"
+    },
+    {
+      "q": "2CrCl2 + 2HCl = 2CrCl3 + H2 reaksiyasi nimani ko'rsatadi?",
+      "v": [
+        "Cr+2 birikmalarining qaytaruvchilik xossasini",
+        "Cr+2 birikmalarining oksidlovchilik xossasini",
+        "CrCl2 ning beqarorligini emasligini",
+        "HCl ning qaytaruvchi ekanini"
+      ],
+      "t": 0,
+      "izoh": "Cr+2 birikmalari oson oksidlanib, Cr+3 li birikmalarga aylanadi — qaytaruvchilar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m32-xrom-birikmalari#2df24738"
+    }
+  ]
+}

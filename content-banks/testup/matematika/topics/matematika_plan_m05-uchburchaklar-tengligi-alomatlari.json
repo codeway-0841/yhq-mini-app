@@ -1,0 +1,1609 @@
+{
+  "nom": "Uchburchaklar tengligi alomatlari",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Karim ikkita uchburchak shaklidagi metall plastinka kesdi: birinchisining tomonlari 5 sm, 7 sm va 9 sm, ikkinchisiniki ham 5 sm, 7 sm va 9 sm. Bu plastinkalar tengligi qaysi alomat bilan asoslanadi?",
+      "v": [
+        "Bir tomoni va unga yopishgan ikki burchak bo'yicha",
+        "Uchta burchagi bo'yicha",
+        "Uchta tomoni bo'yicha",
+        "Ikki tomoni va ular orasidagi burchak bo'yicha"
+      ],
+      "t": 2,
+      "izoh": "Berilganda faqat tomonlar qatnashgan: 5 sm = 5 sm, 7 sm = 7 sm, 9 sm = 9 sm. Uchala tomon mos ravishda teng bo'lgani uchun uchburchaklar tengligining uchinchi alomati qo'llanadi. Birorta burchak o'lchanmagani sababli boshqa alomatlarga asos yo'q.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='84.5,95.4 30,161.9 184.8,161.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='79.6' y='85.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='15.7' y='170.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='199.3' y='170.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cline x1='61.9' y1='132.5' x2='52.6' y2='124.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='102.4' y1='155.9' x2='102.4' y2='167.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='107.4' y1='155.9' x2='107.4' y2='167.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='112.4' y1='155.9' x2='112.4' y2='167.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='133.4' y1='135' x2='140' y2='125' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='129.3' y1='132.3' x2='135.9' y2='122.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='41.8' y='129.1' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='112.6' y='181.5' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='149.9' y='128.3' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Cpolygon points='331.1,73.1 400,124.5 249.8,161.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='332.4' y='62.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='415' y='130' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='236.6' y='173.6' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cline x1='369.1' y1='94' x2='362' y2='103.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='331.2' y1='147.8' x2='328.3' y2='136.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='326.3' y1='149' x2='323.5' y2='137.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='321.5' y1='150.2' x2='318.6' y2='138.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='284.3' y1='115.3' x2='293.2' y2='123.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='287.7' y1='111.6' x2='296.6' y2='119.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='379.6' y='95.6' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='323.5' y='163.6' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='274.5' y='121' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-tomon-alomati",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#4cd39148"
+    },
+    {
+      "q": "Ikkita uchburchakda 6 sm va 8 sm li tomonlar hamda ular orasidagi 50° li burchak mos ravishda teng. Bu uchburchaklar haqida nima deyish mumkin?",
+      "v": [
+        "Ular teng, birinchi alomat bo'yicha",
+        "Ular teng, uchinchi alomat bo'yicha",
+        "Ular o'xshash, lekin teng emas",
+        "Xulosa chiqarib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Berilganda ikkita tomon va aynan ular orasidagi burchak bor: 6 sm = 6 sm, 8 sm = 8 sm va 50° = 50°. Bu uchburchaklar tengligining birinchi alomati. Burchakning shu ikki tomon orasida yotishi hal qiluvchi shart, aks holda alomat kuchini yo'qotadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='103.7,73.6 30,161.4 182.9,161.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='103.2' y='63.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='16' y='171.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='196.9' y='171.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 40.9 148.4 A 17 17 0 0 1 47 161.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='51.9' y='116.3' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='107' y='181.9' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='58.1' y='152.8' font-size='13' fill='%23334155' text-anchor='middle'%3E50°%3C/text%3E%3Cpolygon points='326.3,73.6 400,161.4 247.1,161.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='326.8' y='63.1' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='414' y='171.3' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Ctext x='233.1' y='171.2' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Cpath d='M 389.1 148.4 A 17 17 0 0 0 383 161.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='378.1' y='116.3' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='323' y='181.9' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='371.9' y='152.8' font-size='13' fill='%23334155' text-anchor='middle'%3E50°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-tomon-burchak-alomati",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#730a6c20"
+    },
+    {
+      "q": "Ikkita uchburchakda 10 sm li tomon va unga yopishgan 40° hamda 65° li burchaklar mos ravishda teng. Qaysi alomat bu uchburchaklar tengligini beradi?",
+      "v": [
+        "Birinchi alomat: ikki tomon va ular orasidagi burchak",
+        "Uchinchi alomat: uch tomon",
+        "Hech qaysisi, chunki faqat bitta tomon berilgan",
+        "Ikkinchi alomat: tomon va unga yopishgan ikki burchak"
+      ],
+      "t": 3,
+      "izoh": "Berilgan 10 sm li tomonning ikkala uchida 40° va 65° li burchaklar joylashgan, ya'ni burchaklar shu tomonga yopishgan. Bu ikkinchi alomatning aniq sharti. Bitta tomon yetarli bo'ladi, chunki qolgan ikki tomon burchaklar orqali bir qiymatli tiklanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='139.9,71.4 30,163.6 182.9,163.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='145' y='61.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='15.8' y='173.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='196.5' y='174.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 43 152.7 A 17 17 0 0 1 47 163.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 175.7 148.2 A 17 17 0 0 0 165.9 163.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 173.6 143.7 A 22 22 0 0 0 160.9 163.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='101' y='183.1' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='59.1' y='157.5' font-size='13' fill='%23334155' text-anchor='middle'%3E40°%3C/text%3E%3Ctext x='156.8' y='151.4' font-size='13' fill='%23334155' text-anchor='middle'%3E65°%3C/text%3E%3Cpolygon points='290.1,71.4 400,163.6 247.1,163.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='285' y='61.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='414.2' y='173.1' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='233.5' y='174.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cpath d='M 387 152.7 A 17 17 0 0 0 383 163.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 254.3 148.2 A 17 17 0 0 1 264.1 163.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 256.4 143.7 A 22 22 0 0 1 269.1 163.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='329' y='183.1' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='370.9' y='157.5' font-size='13' fill='%23334155' text-anchor='middle'%3E40°%3C/text%3E%3Ctext x='273.2' y='151.4' font-size='13' fill='%23334155' text-anchor='middle'%3E65°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tomon-ikki-burchak-alomati",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#a92c25b6"
+    },
+    {
+      "q": "Quyidagi shartlardan qaysi biri ikki uchburchakning tengligini kafolatlamaydi?",
+      "v": [
+        "Bir tomoni va unga yopishgan ikki burchagi teng",
+        "Uchta burchagi mos ravishda teng",
+        "Uchta tomoni mos ravishda teng",
+        "Ikki tomoni va ular orasidagi burchagi teng"
+      ],
+      "t": 1,
+      "izoh": "Uchta burchagi teng uchburchaklar o'xshash bo'ladi, ammo o'lchamlari istalgancha farq qilishi mumkin. Masalan tomonlari 3 sm, 4 sm, 5 sm va 6 sm, 8 sm, 10 sm bo'lgan uchburchaklarning burchaklari bir xil, lekin ular teng emas. Qolgan uchta shart esa aynan rasmiy alomatlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "alomat-emas-shart",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#cb7c9369"
+    },
+    {
+      "q": "ΔABC va ΔDEF uchburchaklarda AB = DE va AC = DF ekani ma'lum. Tenglikni birinchi alomat bilan isbotlash uchun yana qanday shart kerak?",
+      "v": [
+        "BC = 2 · EF",
+        "∠A = ∠D",
+        "∠B = ∠E",
+        "∠C = ∠F"
+      ],
+      "t": 1,
+      "izoh": "Birinchi alomatda burchak teng tomonlar orasida bo'lishi shart. AB va AC tomonlari A uchida uchrashadi, DE va DF esa D uchida, demak kerakli shart ∠A = ∠D. ∠B yoki ∠C ni olish noto'g'ri, chunki bu burchaklar berilgan tomonlar orasida yotmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='121,90 30,171.2 186.8,171.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='123.3' y='79.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='15.7' y='180.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='200.9' y='180.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cline x1='79.5' y1='135.1' x2='71.5' y2='126.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150.8' y1='136.3' x2='160.1' y2='128.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='147.7' y1='132.4' x2='157' y2='124.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='310.4,63.8 252.7,171.2 400,117.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='307.5' y='53.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='240.9' y='185' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='415' y='122.1' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cline x1='286.8' y1='120.3' x2='276.3' y2='114.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='354.3' y1='97.1' x2='360.4' y2='86.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='350' y1='94.6' x2='356.1' y2='84.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yetishmayotgan-shart",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#5ba0b13e"
+    },
+    {
+      "q": "Ikkita to'g'ri burchakli uchburchakda gipotenuzalar 13 sm dan, bittadan katet esa 5 sm dan. Bu uchburchaklar teng bo'ladimi?",
+      "v": [
+        "Yo'q, ikkinchi katet har xil bo'lishi mumkin",
+        "Faqat o'tkir burchaklar ham berilsa",
+        "Ha, lekin faqat teng yonli bo'lganda",
+        "Ha, gipotenuza va katet alomatiga ko'ra"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri burchakli uchburchaklar uchun maxsus alomat bor: gipotenuza va bitta katet mos ravishda teng bo'lsa, uchburchaklar teng. Buni Pifagor teoremasi ham tasdiqlaydi, chunki 13² − 5² = 169 − 25 = 144, ya'ni ikkinchi katet 12 sm bo'lib bir qiymatli aniqlanadi. Demak uchala tomon ham teng chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='30,85.6 30,149.4 182.9,149.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='18.5' y='80.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='16.2' y='159.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='197.6' y='157' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpolyline points='30,137.4 42,137.4 42,149.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='14.3' y='118.7' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='121.2' y='115.8' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3Cpolygon points='400,85.6 400,149.4 247.1,149.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='411.5' y='80.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='413.8' y='159.7' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='232.4' y='157' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cpolyline points='400,137.4 388,137.4 388,149.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='415.7' y='118.7' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='308.8' y='115.8' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tbu-gipotenuza-katet",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#0c31531e"
+    },
+    {
+      "q": "Ikkita to'g'ri burchakli uchburchakda 8 sm li katetlar va shu katetga yopishgan 35° li o'tkir burchaklar teng. Bu uchburchaklar teng bo'ladimi?",
+      "v": [
+        "Ha, katet va unga yopishgan o'tkir burchak alomatiga ko'ra",
+        "Yo'q, gipotenuzalar har xil bo'lishi mumkin",
+        "Faqat burchak 45° bo'lganda",
+        "Ha, lekin uchinchi tomon ham berilishi kerak"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri burchakli uchburchakda katet va unga yopishgan o'tkir burchak berilsa, uchinchi burchak ham aniq bo'ladi: 180° − 90° − 35° = 55°. Demak tomon va unga yopishgan ikki burchak teng, bu ikkinchi alomatning to'g'ri burchakli uchburchak uchun ko'rinishi. Shu sababli uchburchaklar teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='30,64 30,171 182.9,171' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='21.3' y='56.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='17.7' y='184.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='197.1' y='180.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 169 161.3 A 17 17 0 0 0 165.9 171' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='30,159 42,159 42,171' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.7' y='188.5' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='153.3' y='166.2' font-size='13' fill='%23334155' text-anchor='middle'%3E35°%3C/text%3E%3Cpolygon points='400,64 400,171 247.1,171' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='408.7' y='56.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='412.3' y='184.1' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='232.9' y='180.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cpath d='M 261 161.3 A 17 17 0 0 1 264.1 171' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='400,159 388,159 388,171' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='314.3' y='188.5' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='276.7' y='166.2' font-size='13' fill='%23334155' text-anchor='middle'%3E35°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tbu-katet-otkir-burchak",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#3c93f09f"
+    },
+    {
+      "q": "ΔABC = ΔDEF bo'lib, AB = 7 sm, BC = 9 sm va AC = 11 sm ekani ma'lum. DF tomoni necha santimetrga teng?",
+      "v": [
+        "9 sm",
+        "27 sm",
+        "11 sm",
+        "7 sm"
+      ],
+      "t": 2,
+      "izoh": "Tenglik yozuvidagi uchlar tartibi mos elementlarni ko'rsatadi: A ↔ D, B ↔ E, C ↔ F. Demak DF tomoni AC tomoniga mos keladi. AC = 11 sm bo'lgani uchun DF = 11 sm, 27 sm esa perimetr qiymati.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='37.9,62.1 30,172.9 172.7,172.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='30.4' y='53.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='17.9' y='186.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='186.6' y='183' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='19.1' y='116.1' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='109.3' y='191.3' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='118.2' y='112.5' font-size='13' fill='%23334155' text-anchor='middle'%3E11 sm%3C/text%3E%3Cpolygon points='239.9,64.2 262.8,172.9 400,133.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='229.1' y='58.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='253.6' y='189.3' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='414.9' y='139.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='329.7' y='90.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mos-tomonni-topish",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#64769f2e"
+    },
+    {
+      "q": "ΔABC = ΔPQR bo'lib, ∠A = 55° va ∠B = 65° ekani ma'lum. ∠R burchagi necha gradusga teng?",
+      "v": [
+        "60°",
+        "55°",
+        "65°",
+        "120°"
+      ],
+      "t": 0,
+      "izoh": "Uchburchak burchaklari yig'indisi 180°, shuning uchun ∠C = 180° − 55° − 65° = 60°. Tenglik yozuvida C ↔ R mosligi bor, demak ∠R = ∠C = 60°. 55° va 65° boshqa uchlarga, 120° esa ikki burchak yig'indisiga tegishli.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='98.3,44.3 30,190.7 182.9,190.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='97.5' y='33.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='17.5' y='203.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='195.7' y='203.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 91.1 59.7 A 17 17 0 0 0 106.8 59' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 37.2 175.3 A 17 17 0 0 1 47 190.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 39.3 170.8 A 22 22 0 0 1 52 190.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='99.7' y='79.8' font-size='13' fill='%23334155' text-anchor='middle'%3E55°%3C/text%3E%3Ctext x='56.1' y='178.5' font-size='13' fill='%23334155' text-anchor='middle'%3E65°%3C/text%3E%3Cpolygon points='331.7,44.3 400,190.7 247.1,190.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='332.5' y='33.8' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='412.5' y='203.5' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Ctext x='234.3' y='203.1' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Ctext x='273.9' y='179.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mos-burchakni-topish",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#a13792bd"
+    },
+    {
+      "q": "Bog'da ikkita teng uchburchak shaklidagi gulzor bor. Birinchisining tomonlari 12 m, 16 m va 20 m. Ikkala gulzorni o'rab olish uchun jami necha metr chegara kerak?",
+      "v": [
+        "144 m",
+        "24 m",
+        "96 m",
+        "48 m"
+      ],
+      "t": 2,
+      "izoh": "Birinchi gulzorning perimetri 12 + 16 + 20 = 48 m. Gulzorlar teng bo'lgani uchun ikkinchisining perimetri ham 48 m ga teng. Ikkalasiga jami 48 + 48 = 96 m chegara kerak bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='86.7,87.5 30,163.2 187.6,163.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='82.5' y='77.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='15.9' y='172.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='202' y='171.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='43' y='125.3' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='113.3' y='183.1' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3Ctext x='152.2' y='124.5' font-size='13' fill='%23334155' text-anchor='middle'%3E16 m%3C/text%3E%3Cpolygon points='278.1,71.8 253.8,163.2 400,104.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='268.8' y='64.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='242.5' y='177.6' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='414.9' y='107.2' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='250' y='123.6' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='336.8' y='150.8' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3Ctext x='351' y='81.9' font-size='13' fill='%23334155' text-anchor='middle'%3E16 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-uchburchak-perimetri",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#b09357ef"
+    },
+    {
+      "q": "ΔXYZ = ΔLMN yozuvi berilgan. Shu yozuvga ko'ra quyidagi juftliklardan qaysi biri mos elementlar juftligi bo'lmaydi?",
+      "v": [
+        "∠Z va ∠N",
+        "XY va MN",
+        "XY va LM",
+        "YZ va MN"
+      ],
+      "t": 1,
+      "izoh": "Tenglik yozuvida uchlarning tartibi moslikni belgilaydi: X ↔ L, Y ↔ M, Z ↔ N. Demak XY tomoni LM ga, YZ tomoni MN ga, XZ tomoni esa LN ga mos keladi. XY va MN juftligi bu moslikka to'g'ri kelmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglik-yozuvidagi-moslik",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#48e1386a"
+    },
+    {
+      "q": "Ko'l kengligini bilish uchun Aziz qirg'oqdagi A va B nuqtalar bilan quruqlikdagi O nuqtani belgilab, AO va BO ni davom ettirib OC = AO hamda OD = BO qilib qoziq qoqdi. CD masofa 46 m chiqdi. Ko'l kengligi qancha?",
+      "v": [
+        "23 m",
+        "92 m",
+        "Aniqlash mumkin emas",
+        "46 m"
+      ],
+      "t": 3,
+      "izoh": "O nuqtada ∠AOB va ∠COD vertikal burchaklar hosil bo'ladi, ular teng. Qurilishga ko'ra AO = OC va BO = OD, demak birinchi alomat bajariladi va ΔAOB = ΔCOD. Teng uchburchaklarda mos tomonlar teng bo'lgani uchun ko'l kengligi AB = CD = 46 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='255' viewBox='0 0 340 255'%3E%3Crect width='340' height='255' fill='%23ffffff'/%3E%3Cline x1='40.1' y1='51.1' x2='299.9' y2='203.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55.4' y1='223' x2='284.6' y2='32' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='40.1' y1='51.1' x2='55.4' y2='223' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='299.9' y1='203.9' x2='284.6' y2='32' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='108.1' y1='84.1' x2='102' y2='94.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='238' y1='160.5' x2='231.9' y2='170.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='106.9' y1='172.2' x2='114.6' y2='181.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='110.8' y1='169' x2='118.5' y2='178.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221.5' y1='76.7' x2='229.2' y2='86' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='225.4' y1='73.5' x2='233.1' y2='82.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 155.3 118.9 A 17 17 0 0 0 156.9 138.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 184.7 136.1 A 17 17 0 0 0 183.1 116.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='27.2' y='48' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='43.9' y='237.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312.8' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='296.1' y='26.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='181.2' y='138.6' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='309.2' y='121.1' font-size='13' fill='%23334155' text-anchor='middle'%3E46 m%3C/text%3E%3Ctext x='30.8' y='142.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yetib-bolmas-masofa",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#117f520c"
+    },
+    {
+      "q": "Teng yonli ΔABC da AB = AC bo'lib, asosga AM mediana o'tkazilgan. ΔABM va ΔACM tengligi qaysi alomat bilan isbotlanadi?",
+      "v": [
+        "Ikki tomon va ular orasidagi burchak bo'yicha",
+        "Tomon va unga yopishgan ikki burchak bo'yicha",
+        "Bu uchburchaklarni isbotlab bo'lmaydi",
+        "Uch tomon bo'yicha"
+      ],
+      "t": 3,
+      "izoh": "AB = AC shart bo'yicha berilgan, BM = CM chunki AM mediana, AM tomoni esa ikkala uchburchakka umumiy. Demak uchta tomon mos ravishda teng va uchinchi alomat qo'llanadi. Shundan ∠B = ∠C ekani, ya'ni asos burchaklarining tengligi kelib chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='310' height='285' viewBox='0 0 310 285'%3E%3Crect width='310' height='285' fill='%23ffffff'/%3E%3Cpolygon points='155,70.4 34,214.6 276,214.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='155' y1='70.4' x2='155' y2='214.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='99.1' y1='146.4' x2='89.9' y2='138.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='220.1' y1='138.6' x2='210.9' y2='146.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='92' y1='208.6' x2='92' y2='220.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='97' y1='208.6' x2='97' y2='220.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='213' y1='208.6' x2='213' y2='220.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='218' y1='208.6' x2='218' y2='220.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='155' y='59.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='20.1' y='224.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='289.9' y='224.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='155' y='236.1' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-isbot",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#bab95d90"
+    },
+    {
+      "q": "ΔABC da AM mediana M nuqtadan nariga MD = AM bo'ladigan qilib davom ettirildi. ΔABM va ΔDCM tengligini qaysi alomat beradi?",
+      "v": [
+        "Gipotenuza va katet",
+        "Ikki tomon va ular orasidagi burchak",
+        "Uch tomon",
+        "Tomon va unga yopishgan ikki burchak"
+      ],
+      "t": 1,
+      "izoh": "AM mediana bo'lgani uchun BM = MC, qurilishga ko'ra esa AM = MD. ∠AMB va ∠DMC vertikal burchaklar, shuning uchun ular teng. Ikki tomon va aynan ular orasidagi burchak teng bo'lgani uchun birinchi alomat qo'llanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='280' viewBox='0 0 320 280'%3E%3Crect width='320' height='280' fill='%23ffffff'/%3E%3Cpolygon points='176.4,34 57.7,140 143.6,246 262.3,140' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='57.7' y1='140' x2='262.3' y2='140' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='176.4' y1='34' x2='143.6' y2='246' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='174.1' y1='87.9' x2='162.3' y2='86.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='157.7' y1='193.9' x2='145.9' y2='192.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='106.4' y1='134' x2='106.4' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='111.4' y1='134' x2='111.4' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='208.7' y1='134' x2='208.7' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='213.7' y1='134' x2='213.7' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='178.7' y='23.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='42.7' y='144.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='277.3' y='144.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='141.3' y='265.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='157.7' y='159.3' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mediana-uzaytirish",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#a4d517e9"
+    },
+    {
+      "q": "Parallelogramm ABCD da BD diagonal o'tkazildi. ΔABD va ΔCDB uchburchaklarning tengligi nimaga asoslanadi?",
+      "v": [
+        "Ikki tomon va qarshi burchak bo'yicha",
+        "Bu uchburchaklar teng emas",
+        "Uch tomon bo'yicha",
+        "Uch burchak bo'yicha"
+      ],
+      "t": 2,
+      "izoh": "Parallelogrammda qarama-qarshi tomonlar teng, demak AB = CD va AD = CB. BD diagonal esa ikkala uchburchakka umumiy tomon bo'ladi. Uchta tomon mos ravishda teng bo'lgani uchun uchinchi alomat qo'llanadi va ΔABD = ΔCDB.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='250' viewBox='0 0 340 250'%3E%3Crect width='340' height='250' fill='%23ffffff'/%3E%3Cpolygon points='97.8,63.1 32,186.9 242.2,186.9 308,63.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='32' y1='186.9' x2='308' y2='63.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='70.2' y1='127.8' x2='59.6' y2='122.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='269.8' y1='122.2' x2='280.4' y2='127.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='134.6' y1='180.9' x2='134.6' y2='192.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='139.6' y1='180.9' x2='139.6' y2='192.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='200.4' y1='57.1' x2='200.4' y2='69.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='205.4' y1='57.1' x2='205.4' y2='69.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='86.4' y='57.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='18.3' y='197.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='253.6' y='201.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='321.7' y='61.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelogramm-diagonal",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#6199b816"
+    },
+    {
+      "q": "Burchak bissektrisasida olingan M nuqtadan burchak tomonlariga MP va MQ perpendikulyarlar tushirildi. MP = MQ ekanini qaysi alomat isbotlaydi?",
+      "v": [
+        "Gipotenuza va o'tkir burchak alomati",
+        "Ikki katet alomati",
+        "Uch tomon alomati",
+        "Gipotenuza va katet alomati"
+      ],
+      "t": 0,
+      "izoh": "ΔOPM va ΔOQM uchburchaklar to'g'ri burchakli, OM tomoni esa ikkalasiga umumiy gipotenuza. Bissektrisa burchakni teng ikkiga bo'lgani uchun ∠POM = ∠QOM. Gipotenuza va o'tkir burchak alomatiga ko'ra uchburchaklar teng, demak mos katetlar MP = MQ.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='250' viewBox='0 0 330 250'%3E%3Crect width='330' height='250' fill='%23ffffff'/%3E%3Cline x1='52.8' y1='218' x2='277.2' y2='218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52.8' y1='218' x2='178.3' y2='32' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52.8' y1='218' x2='181.6' y2='149.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='181.6' y1='149.5' x2='181.6' y2='218' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='181.6' y1='149.5' x2='124.8' y2='111.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='169.6,218 169.6,206 181.6,206' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='131.5,101.4 141.5,108 134.8,118' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 69.8 218 A 17 17 0 0 0 67.8 210' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 67.8 210 A 17 17 0 0 0 62.3 203.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='39.1' y='228.6' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='192.3' y='144.9' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='181.6' y='236.5' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='113.2' y='108' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Ctext x='288.5' y='226.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='180.4' y='24.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-teng-uzoqlik",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#c2ab0304"
+    },
+    {
+      "q": "AB kesmaning o'rta perpendikulyarida olingan M nuqta uchun MA va MB kesmalarning tengligi qanday isbotlanadi?",
+      "v": [
+        "Gipotenuza va o'tkir burchak orqali",
+        "Buni isbotlash mumkin emas",
+        "Ikki katet bo'yicha teng to'g'ri burchakli uchburchaklar orqali",
+        "Uch burchak tengligi orqali"
+      ],
+      "t": 2,
+      "izoh": "O nuqta AB kesmaning o'rtasi bo'lsin. ΔAOM va ΔBOM to'g'ri burchakli, ularda AO = OB, OM kateti esa umumiy. Ikki katet bo'yicha alomatga ko'ra uchburchaklar teng, demak gipotenuzalar MA va MB ham teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='265' viewBox='0 0 320 265'%3E%3Crect width='320' height='265' fill='%23ffffff'/%3E%3Cline x1='38.8' y1='231' x2='281.2' y2='231' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='38.8' y1='231' x2='160' y2='34' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='281.2' y1='231' x2='160' y2='34' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='231' x2='160' y2='34' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='172,231 172,219 160,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='99.4' y1='225' x2='99.4' y2='237' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='220.6' y1='225' x2='220.6' y2='237' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='25.6' y='242.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='294.4' y='242.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='160' y='23.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='160' y='248.5' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-perpendikulyar",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#7f25edf7"
+    },
+    {
+      "q": "Teng uchburchaklarning mos tomonlari 5x + 2 sm va 3x + 14 sm ko'rinishida yozilgan. Shu tomonning haqiqiy uzunligini toping.",
+      "v": [
+        "32 sm",
+        "6 sm",
+        "38 sm",
+        "20 sm"
+      ],
+      "t": 0,
+      "izoh": "Mos tomonlar teng bo'lgani uchun 5x + 2 = 3x + 14. Bundan 2x = 12, ya'ni x = 6. Tomon uzunligi 5 · 6 + 2 = 32 sm, tekshiruv uchun 3 · 6 + 14 = 32 sm. x ning o'zini javob deb yozish eng ko'p uchraydigan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='177,58.8 30,176.2 182.9,176.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='184.7' y='50.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='16' y='186.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='195' y='189.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='90.6' y='112.5' font-size='13' fill='%23334155' text-anchor='middle'%3E(5x + 2) sm%3C/text%3E%3Cpolygon points='253,58.8 400,176.2 247.1,176.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='245.3' y='50.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='414' y='186.2' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='235' y='189.6' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='339.4' y='112.5' font-size='13' fill='%23334155' text-anchor='middle'%3E(3x + 14) sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglamali-nomalum",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#a134d87b"
+    },
+    {
+      "q": "ΔABC = ΔDEF bo'lib, ∠D = 72° va ∠E = 43°. ΔABC ning eng katta burchagi necha gradusga teng?",
+      "v": [
+        "65°",
+        "43°",
+        "115°",
+        "72°"
+      ],
+      "t": 3,
+      "izoh": "Uchinchi burchak ∠F = 180° − 72° − 43° = 65°. Demak burchaklar 72°, 43° va 65° bo'lib, eng kattasi 72°. Uchburchaklar teng bo'lgani uchun ΔABC da ham xuddi shu uchta burchak takrorlanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='139.3,71.6 30,173.5 186.8,173.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='143.7' y='61.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='16' y='183.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='200.2' y='184.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpolygon points='390.2,61.5 252.7,119.9 400,173.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='399.2' y='54' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='237.7' y='124.7' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='410.3' y='188.9' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cpath d='M 374.6 68.1 A 17 17 0 0 0 391.7 78.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 268.3 113.3 A 17 17 0 0 1 268.7 125.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 272.9 111.3 A 22 22 0 0 1 273.4 127.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='374.2' y='92.6' font-size='13' fill='%23334155' text-anchor='middle'%3E72°%3C/text%3E%3Ctext x='283.7' y='123.6' font-size='13' fill='%23334155' text-anchor='middle'%3E43°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchinchi-burchak",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#9c7190d4"
+    },
+    {
+      "q": "Ikki kesma O nuqtada kesishib, AO = OC va BO = OD bo'lib qolgan. ΔAOB va ΔCOD tengligi nimadan kelib chiqadi?",
+      "v": [
+        "Bu uchburchaklar teng emas",
+        "Vertikal burchaklar tengligi va birinchi alomatdan",
+        "Faqat uchinchi alomatdan",
+        "Uchta burchak tengligidan"
+      ],
+      "t": 1,
+      "izoh": "∠AOB va ∠COD vertikal burchaklar bo'lgani uchun ular teng. Shartga ko'ra AO = OC va BO = OD, ya'ni teng burchak aynan teng tomonlar orasida yotadi. Birinchi alomat to'liq bajariladi, demak ΔAOB = ΔCOD va AB = CD.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='255' viewBox='0 0 340 255'%3E%3Crect width='340' height='255' fill='%23ffffff'/%3E%3Cline x1='40.1' y1='51.1' x2='299.9' y2='203.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55.4' y1='223' x2='284.6' y2='32' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='40.1' y1='51.1' x2='55.4' y2='223' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='299.9' y1='203.9' x2='284.6' y2='32' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='108.1' y1='84.1' x2='102' y2='94.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='238' y1='160.5' x2='231.9' y2='170.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='106.9' y1='172.2' x2='114.6' y2='181.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='110.8' y1='169' x2='118.5' y2='178.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221.5' y1='76.7' x2='229.2' y2='86' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='225.4' y1='73.5' x2='233.1' y2='82.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 155.3 118.9 A 17 17 0 0 0 156.9 138.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 184.7 136.1 A 17 17 0 0 0 183.1 116.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='27.2' y='48' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='43.9' y='237.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312.8' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='296.1' y='26.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='181.2' y='138.6' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-va-umumiy-tomon",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#bce92fd3"
+    },
+    {
+      "q": "Zavodda uchburchak shaklidagi detal shtamp bilan tayyorlanadi va har birining tomonlari 21 mm, 28 mm hamda 35 mm bo'ladi. Ikkita detal ustma-ust qo'yilganda nima kuzatiladi?",
+      "v": [
+        "Hech qanday moslik bo'lmaydi",
+        "Ular to'liq ustma-ust tushadi",
+        "Faqat bitta tomoni mos keladi",
+        "Burchaklari mos, tomonlari mos kelmaydi"
+      ],
+      "t": 1,
+      "izoh": "Detallarning uchta tomoni mos ravishda teng, demak uchinchi alomatga ko'ra ular teng uchburchaklardir. Teng shakllar ustma-ust qo'yilganda barcha uchlari, tomonlari va burchaklari mos tushadi. Shuning uchun bitta shtamp bilan tayyorlangan detallar bir xil bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='30,74.4 30,190.1 184.3,190.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='21.7' y='66.4' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='18' y='203.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='198.3' y='199.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='15' y='131.1' font-size='13' fill='%23334155' text-anchor='middle'%3E21 mm%3C/text%3E%3Ctext x='116' y='207.9' font-size='13' fill='%23334155' text-anchor='middle'%3E28 mm%3C/text%3E%3Ctext x='119.9' y='127.1' font-size='13' fill='%23334155' text-anchor='middle'%3E35 mm%3C/text%3E%3Cpolygon points='375.9,44.9 400,158.1 249.1,190.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='381.4' y='35.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='413.6' y='168.9' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='236.5' y='202.7' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='401.4' y='97.4' font-size='13' fill='%23334155' text-anchor='middle'%3E21 mm%3C/text%3E%3Ctext x='318.6' y='193.5' font-size='13' fill='%23334155' text-anchor='middle'%3E28 mm%3C/text%3E%3Ctext x='298' y='115.3' font-size='13' fill='%23334155' text-anchor='middle'%3E35 mm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-xil-detal",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#2513c0e2"
+    },
+    {
+      "q": "O'quvchi shunday yozdi: ΔABC va ΔMNK da AB = MN, ∠A = ∠M va ∠C = ∠K, demak uchburchaklar birinchi alomat bo'yicha teng. Yozuvdagi xato nimada?",
+      "v": [
+        "AB = MN sharti ortiqcha yozilgan",
+        "∠C = ∠K sharti noto'g'ri",
+        "Yozuvda hech qanday xato yo'q",
+        "Bu yerda ikkinchi alomat qo'llanadi, birinchisi emas"
+      ],
+      "t": 3,
+      "izoh": "Birinchi alomat ikki tomon va ular orasidagi burchakni talab qiladi, bu yerda esa bitta tomon va ikkita burchak berilgan. Burchaklar yig'indisidan ∠B = ∠N ekani chiqadi, so'ng AB tomoniga yopishgan ∠A va ∠B burchaklar orqali ikkinchi alomat qo'llanadi. Demak xulosa to'g'ri, ammo alomat nomi noto'g'ri ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "isbotdagi-xato",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#7964f704"
+    },
+    {
+      "q": "Duradgor Bahodir eshik ramkasini mustahkamlash uchun 45 sm va 60 sm li ikki taxtani 90° burchak ostida biriktirib, ular orasiga tirgak qo'ydi. Ikkinchi ramka ham xuddi shunday yig'ilsa, tirgaklar teng bo'ladimi?",
+      "v": [
+        "Ha, ikki tomon va ular orasidagi burchak teng",
+        "Yo'q, tirgak uzunligi har xil bo'lishi mumkin",
+        "Faqat taxtalar kvadrat hosil qilganda",
+        "Tirgak burchagi berilmagani uchun aniq emas"
+      ],
+      "t": 0,
+      "izoh": "Har ikkala ramkada 45 sm va 60 sm li tomonlar hamda ular orasidagi 90° li burchak teng. Birinchi alomatga ko'ra hosil bo'lgan uchburchaklar teng bo'ladi. Teng uchburchaklarda barcha mos elementlar teng, demak uchinchi tomon — tirgak ham bir xil uzunlikda chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='30,60.2 30,174.8 182.9,174.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='21.7' y='52.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='18' y='188.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='196.9' y='184.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpolyline points='30,162.8 42,162.8 42,174.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='15' y='116.4' font-size='13' fill='%23334155' text-anchor='middle'%3E45 sm%3C/text%3E%3Ctext x='115.3' y='192.6' font-size='13' fill='%23334155' text-anchor='middle'%3E60 sm%3C/text%3E%3Cpolygon points='400,60.2 400,174.8 247.1,174.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='408.3' y='52.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='412' y='188.3' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='233.1' y='184.6' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cpolyline points='400,162.8 388,162.8 388,174.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='415' y='116.4' font-size='13' fill='%23334155' text-anchor='middle'%3E45 sm%3C/text%3E%3Ctext x='314.7' y='192.6' font-size='13' fill='%23334155' text-anchor='middle'%3E60 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tomon-burchak-alomati",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#10594d64"
+    },
+    {
+      "q": "Geodezist daryo qirg'og'ida 50 m li baza chizig'ini belgilab, uning ikki uchidan qarama-qarshi nuqtaga 70° va 55° li burchaklarni o'lchadi. Xuddi shu o'lchov boshqa joyda takrorlansa, hosil bo'lgan uchburchaklar qanday bo'ladi?",
+      "v": [
+        "O'xshash, lekin teng emas",
+        "Tenglik uchun uchinchi burchak ham kerak",
+        "Teng, ikkinchi alomat bo'yicha",
+        "Teng, uchinchi alomat bo'yicha"
+      ],
+      "t": 2,
+      "izoh": "Baza uzunligi 50 m ikkala o'lchovda bir xil, unga yopishgan 70° va 55° li burchaklar ham teng. Demak tomon va unga yopishgan ikki burchak mos ravishda teng, bu ikkinchi alomat. Shu sababli uchburchaklar teng bo'ladi va daryo kengligini bir marta o'lchash yetarli.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='83,49 30,194.7 185.1,194.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='80.5' y='38.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='17.7' y='207.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='198.2' y='206.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 35.8 178.7 A 17 17 0 0 1 47 194.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 175.3 180.8 A 17 17 0 0 0 168.1 194.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 172.5 176.7 A 22 22 0 0 0 163.1 194.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='110.2' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3E50 m%3C/text%3E%3Ctext x='55.4' y='181.4' font-size='13' fill='%23334155' text-anchor='middle'%3E70°%3C/text%3E%3Ctext x='157.6' y='184.9' font-size='13' fill='%23334155' text-anchor='middle'%3E55°%3C/text%3E%3Cpolygon points='263.7,40.3 250.2,194.7 400,154.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='257.5' y='31.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='240.6' y='210.7' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='414.5' y='162.9' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cpath d='M 251.7 177.8 A 17 17 0 0 1 266.6 190.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 387 143.7 A 17 17 0 0 0 383.6 159' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 383.1 140.5 A 22 22 0 0 0 378.7 160.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='331.8' y='193.7' font-size='13' fill='%23334155' text-anchor='middle'%3E50 m%3C/text%3E%3Ctext x='270.1' y='175.5' font-size='13' fill='%23334155' text-anchor='middle'%3E70°%3C/text%3E%3Ctext x='369.7' y='152.4' font-size='13' fill='%23334155' text-anchor='middle'%3E55°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tomon-ikki-burchak-alomati",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#bf9d1cab"
+    },
+    {
+      "q": "Ikki uchburchakda 8 sm va 5 sm li tomonlar hamda 5 sm li tomonga qarshi yotgan 30° li burchak teng. Nima uchun bunday uchburchaklar teng bo'lmasligi mumkin?",
+      "v": [
+        "Burchak teng tomonlar orasida emas, shuning uchun ikki xil shakl chiqadi",
+        "8 sm li tomon juda uzun olingan",
+        "Burchak 30° dan katta bo'lishi kerak edi",
+        "Aslida ular har doim teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Alomatda burchak teng tomonlar orasida yotishi shart, bu yerda esa u qarshi tomonga tegishli. Sirkul bilan qurishda 5 sm radiusli aylana ikkinchi tomonni ikkita nuqtada kesib o'tadi, natijada ikkita har xil uchburchak hosil bo'ladi: biri o'tkir, ikkinchisi o'tmas burchakli. Shu sababli ikki tomon va biriga qarshi burchak alomat sifatida qabul qilinmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='275' viewBox='0 0 300 275'%3E%3Crect width='300' height='275' fill='%23ffffff'/%3E%3Cpolygon points='195.9,90.8 34,184.2 266,184.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='202.5' y='81.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='19.4' y='192.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.3' y='193.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 48.7 175.7 A 17 17 0 0 1 51 184.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='99.7' y='137.3' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='246.5' y='138.3' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='63.9' y='180.7' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "alomat-emas-shart",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#0cf7d4f8"
+    },
+    {
+      "q": "ΔKLM va ΔPQR uchburchaklarda ∠L = ∠Q va ∠M = ∠R berilgan. Ikkinchi alomat to'liq ishlashi uchun qaysi tomonlar tengligi qo'shilishi kerak?",
+      "v": [
+        "KM = PQ",
+        "Uchinchi burchaklar tengligi",
+        "LM = QR",
+        "KL = PR"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi alomatda tomon aynan teng burchaklarga yopishgan bo'lishi kerak. ∠L va ∠M burchaklari LM tomonining ikki uchida, ∠Q va ∠R esa QR tomonining uchlarida joylashgan. Demak LM = QR sharti qo'shilsa alomat to'liq bajariladi, uchinchi burchakning tengligi esa yangi ma'lumot bermaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='91.3,68.4 30,166.6 182.9,166.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='89' y='58.1' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='16.4' y='177.3' font-size='13' fill='%23334155' text-anchor='middle'%3EL%3C/text%3E%3Ctext x='196.8' y='176.7' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Cpath d='M 39 152.2 A 17 17 0 0 1 47 166.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 171.3 154.2 A 17 17 0 0 0 165.9 166.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 167.9 150.5 A 22 22 0 0 0 160.9 166.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='338.7,68.4 400,166.6 247.1,166.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='341' y='58.1' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='413.6' y='177.3' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Ctext x='233.2' y='176.7' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Cpath d='M 391 152.2 A 17 17 0 0 0 383 166.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 258.7 154.2 A 17 17 0 0 1 264.1 166.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 262.1 150.5 A 22 22 0 0 1 269.1 166.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yetishmayotgan-shart",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#5b6f6571"
+    },
+    {
+      "q": "Ikkita ustun yerga tik o'rnatilgan va har birining uchidan yerdagi qoziqqa 25 m li arqon tortilgan. Qoziqlar ustun tagidan 7 m uzoqlikda joylashgan. Ustunlar balandligi haqida nima deyish mumkin?",
+      "v": [
+        "Berilgan ma'lumot yetarli emas",
+        "Balandliklar teng, chunki uchburchaklar gipotenuza va katet bo'yicha teng",
+        "Balandliklar har xil bo'lishi mumkin",
+        "Balandliklar 25 m dan bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Har bir holatda ustun, yer va arqon to'g'ri burchakli uchburchak hosil qiladi. Gipotenuza 25 m va bitta katet 7 m mos ravishda teng, demak uchburchaklar gipotenuza va katet alomati bo'yicha teng. Teng uchburchaklarda ikkinchi katet ham teng, ya'ni ustunlar bir xil balandlikda.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='153.2,30 153.2,205 204.3,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='151' y='19.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='149' y='223.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='211.9' y='222.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpolyline points='153.2,193 165.2,193 165.2,205' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='181' y='225.3' font-size='13' fill='%23334155' text-anchor='middle'%3E7 m%3C/text%3E%3Ctext x='183.2' y='106.6' font-size='13' fill='%23334155' text-anchor='middle'%3E25 m%3C/text%3E%3Ctext x='145.1' y='108.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolygon points='276.8,30 276.8,205 225.7,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='279' y='19.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='281' y='223.9' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='218.1' y='222.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cpolyline points='276.8,193 264.8,193 264.8,205' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='249' y='225.3' font-size='13' fill='%23334155' text-anchor='middle'%3E7 m%3C/text%3E%3Ctext x='246.8' y='106.6' font-size='13' fill='%23334155' text-anchor='middle'%3E25 m%3C/text%3E%3Ctext x='284.9' y='108.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tbu-gipotenuza-katet",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#e1419eaf"
+    },
+    {
+      "q": "Quyosh nuri bir vaqtda ikkita tik ustunga tushib, ularning soyasi 4 m dan bo'ldi, nur bilan yer orasidagi burchak esa 55° ga teng. Ustunlar balandligi teng ekanini qanday asoslash mumkin?",
+      "v": [
+        "Gipotenuza va katet alomati bilan",
+        "Uch tomon alomati bilan",
+        "Ustunlar balandligi turlicha bo'ladi",
+        "Katet va unga yopishgan o'tkir burchak alomati bilan"
+      ],
+      "t": 3,
+      "izoh": "Ustun, soya va quyosh nuri to'g'ri burchakli uchburchak hosil qiladi, unda soya katet, nur esa gipotenuza. Ikkala holatda soya 4 m va unga yopishgan o'tkir burchak 55° teng, to'g'ri burchak esa har ikkalasida bor. Katet va unga yopishgan o'tkir burchak alomatiga ko'ra uchburchaklar teng, demak ikkinchi katet — ustun balandligi ham bir xil.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='66.7,30 66.7,205 189.3,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='61.7' y='20.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='58.1' y='221.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='201.5' y='218.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 179.5 191.1 A 17 17 0 0 0 172.3 205' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='66.7,193 78.7,193 78.7,205' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='133.3' y='224.6' font-size='13' fill='%23334155' text-anchor='middle'%3E4 m%3C/text%3E%3Ctext x='161.8' y='195.2' font-size='13' fill='%23334155' text-anchor='middle'%3E55°%3C/text%3E%3Cpolygon points='363.3,30 363.3,205 240.7,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='368.3' y='20.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='371.9' y='221.8' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='228.5' y='218.2' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cpath d='M 250.5 191.1 A 17 17 0 0 1 257.7 205' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='363.3,193 351.3,193 351.3,205' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='296.7' y='224.6' font-size='13' fill='%23334155' text-anchor='middle'%3E4 m%3C/text%3E%3Ctext x='268.2' y='195.2' font-size='13' fill='%23334155' text-anchor='middle'%3E55°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tbu-katet-otkir-burchak",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#6adf40f1"
+    },
+    {
+      "q": "Zavod chizmasida ΔKLM = ΔPRS deb belgilangan ikki detal bor. KL = 24 mm, LM = 32 mm va KM = 40 mm bo'lsa, PS qirraning uzunligi qancha?",
+      "v": [
+        "24 mm",
+        "32 mm",
+        "96 mm",
+        "40 mm"
+      ],
+      "t": 3,
+      "izoh": "Yozuvdagi moslik K ↔ P, L ↔ R, M ↔ S ko'rinishida. PS qirrasi K va M uchlaridan hosil bo'lgan KM tomoniga mos keladi. KM = 40 mm bo'lgani uchun PS = 40 mm, 96 mm esa butun perimetr.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='30,60.2 30,174.8 182.9,174.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='21.7' y='52.2' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='18' y='188.3' font-size='13' fill='%23334155' text-anchor='middle'%3EL%3C/text%3E%3Ctext x='196.9' y='184.6' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='15' y='116.4' font-size='13' fill='%23334155' text-anchor='middle'%3E24 mm%3C/text%3E%3Ctext x='115.3' y='192.6' font-size='13' fill='%23334155' text-anchor='middle'%3E32 mm%3C/text%3E%3Ctext x='119.2' y='112.4' font-size='13' fill='%23334155' text-anchor='middle'%3E40 mm%3C/text%3E%3Cpolygon points='400,60.2 400,174.8 247.1,174.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='408.3' y='52.2' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='412' y='188.3' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Ctext x='233.1' y='184.6' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='310.8' y='112.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mos-tomonni-topish",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#989def8a"
+    },
+    {
+      "q": "Yog'och konstruktordagi ikkita teng uchburchak detalda mos burchaklar bir xil. Birinchi detalning burchaklaridan biri 40°, ikkinchisi 100°. Ikkinchi detaldagi eng kichik burchak necha gradus?",
+      "v": [
+        "20°",
+        "40°",
+        "100°",
+        "60°"
+      ],
+      "t": 1,
+      "izoh": "Birinchi detalda uchinchi burchak 180° − 40° − 100° = 40° ga teng. Demak burchaklar 40°, 40° va 100° bo'lib, eng kichigi 40°. Detallar teng bo'lgani uchun ikkinchisida ham xuddi shu burchaklar takrorlanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='275' viewBox='0 0 300 275'%3E%3Crect width='300' height='275' fill='%23ffffff'/%3E%3Cpolygon points='266,40.2 34,234.8 231.7,234.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='274.5' y='32.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='20.3' y='245.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='241.3' y='250.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 47 223.9 A 17 17 0 0 1 51 234.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 234.7 218.1 A 17 17 0 0 0 214.7 234.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 235.5 213.1 A 22 22 0 0 0 209.7 234.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='63.1' y='228.7' font-size='13' fill='%23334155' text-anchor='middle'%3E40°%3C/text%3E%3Ctext x='211.8' y='215.6' font-size='13' fill='%23334155' text-anchor='middle'%3E100°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mos-burchakni-topish",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#89946537"
+    },
+    {
+      "q": "ΔABC = ΔMNP bo'lib, ΔABC ning perimetri 54 sm. MN = 18 sm va NP = 22 sm bo'lsa, AC tomoni necha santimetr?",
+      "v": [
+        "22 sm",
+        "40 sm",
+        "14 sm",
+        "18 sm"
+      ],
+      "t": 2,
+      "izoh": "Teng uchburchaklarning perimetrlari ham teng, demak ΔMNP ning perimetri ham 54 sm. Bundan MP = 54 − 18 − 22 = 14 sm. Yozuvdagi moslikka ko'ra A ↔ M va C ↔ P, ya'ni AC = MP = 14 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='128.7,83.9 30,164.9 186,164.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='132.4' y='73.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='15.7' y='173.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='200' y='174.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='172.6' y='124.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpolygon points='370.5,70.1 251.6,116.7 400,164.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='378.5' y='61.9' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='236.6' y='121.1' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='411.7' y='178.8' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='298.6' y='87.9' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='317.3' y='158.8' font-size='13' fill='%23334155' text-anchor='middle'%3E22 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-uchburchak-perimetri",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#cf3e2f54"
+    },
+    {
+      "q": "O'quvchi daftariga ΔABC = ΔEFD deb yozdi. Agar bu yozuv to'g'ri bo'lsa, ∠B burchagi qaysi burchakka teng bo'ladi?",
+      "v": [
+        "∠F",
+        "∠E",
+        "∠D",
+        "∠A"
+      ],
+      "t": 0,
+      "izoh": "Yozuvda birinchi uchburchakning uchlari A, B, C tartibida, ikkinchisiniki esa E, F, D tartibida berilgan. Demak moslik A ↔ E, B ↔ F, C ↔ D ko'rinishida bo'ladi. Shunga ko'ra ∠B burchagi ∠F burchakka teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tenglik-yozuvidagi-moslik",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#43fa29db"
+    },
+    {
+      "q": "Muhandis daryo kengligini o'lchash uchun qirg'oqda tenglik alomatiga tayangan ikkita uchburchak yasadi va o'lchash qulay bo'lgan tomonni 78 m deb topdi. Bu natija daryo kengligiga teng ekanini nima kafolatlaydi?",
+      "v": [
+        "Pifagor teoremasi",
+        "Uchburchak burchaklari yig'indisi 180° ekani",
+        "Teng uchburchaklarning mos tomonlari teng bo'lishi",
+        "Uchburchak tengsizligi"
+      ],
+      "t": 2,
+      "izoh": "Usulning mohiyati shundaki, o'lchash qiyin bo'lgan kesma teng uchburchakning mos tomoniga aylantiriladi. Uchburchaklar tengligi biror alomat bilan isbotlangach, mos tomonlar tengligi bevosita kelib chiqadi. Shuning uchun qulay joyda o'lchangan 78 m daryo kengligiga aynan teng bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yetib-bolmas-masofa",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#9d0243f0"
+    },
+    {
+      "q": "Teng yonli uchburchakning uchidagi burchagidan asosga bissektrisa tushirildi. Hosil bo'lgan ikkita uchburchak tengligini qaysi alomat beradi?",
+      "v": [
+        "Yon tomon, umumiy bissektrisa va ular orasidagi burchak",
+        "Asos va unga yopishgan ikki burchak",
+        "Uchala tomonning tengligi",
+        "Gipotenuza va o'tkir burchak"
+      ],
+      "t": 0,
+      "izoh": "AB = AC yon tomonlar shart bo'yicha teng, AM bissektrisa ikkala uchburchakka umumiy tomon, ∠BAM = ∠CAM esa bissektrisa ta'rifiga ko'ra teng. Bu burchak aynan teng tomonlar orasida yotgani uchun birinchi alomat qo'llanadi. Natijada asosning ikki bo'lagi ham teng chiqadi, ya'ni bissektrisa mediana bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='310' height='285' viewBox='0 0 310 285'%3E%3Crect width='310' height='285' fill='%23ffffff'/%3E%3Cpolygon points='155,46.5 34,238.5 276,238.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='155' y1='46.5' x2='155' y2='238.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='99.6' y1='145.7' x2='89.4' y2='139.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='220.6' y1='139.3' x2='210.4' y2='145.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 145.9 60.9 A 17 17 0 0 0 155 63.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 155 63.5 A 17 17 0 0 0 164.1 60.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='155' y='36' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='20.7' y='250' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='289.3' y='250' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='155' y='260' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-isbot",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#e852bea3"
+    },
+    {
+      "q": "ΔABC da AM mediana bo'lib, u MD = AM shartida davom ettirilgan. AB = 9 sm bo'lsa, DC kesmasi necha santimetrga teng?",
+      "v": [
+        "4,5 sm",
+        "18 sm",
+        "Aniqlab bo'lmaydi",
+        "9 sm"
+      ],
+      "t": 3,
+      "izoh": "ΔABM va ΔDCM uchburchaklar birinchi alomat bo'yicha teng, chunki BM = MC, AM = MD va vertikal burchaklar teng. Teng uchburchaklarda AB tomoniga DC tomoni mos keladi. Demak DC = AB = 9 sm, medianani uzaytirish uzunlikni ikki barobar oshirmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='280' viewBox='0 0 320 280'%3E%3Crect width='320' height='280' fill='%23ffffff'/%3E%3Cpolygon points='187.7,34 73.4,140 132.3,246 246.6,140' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='73.4' y1='140' x2='246.6' y2='140' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='187.7' y1='34' x2='132.3' y2='246' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='179.7' y1='88.5' x2='168' y2='85.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='152' y1='194.5' x2='140.3' y2='191.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='114.2' y1='134' x2='114.2' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='119.2' y1='134' x2='119.2' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='200.8' y1='134' x2='200.8' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='205.8' y1='134' x2='205.8' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='191.5' y='24' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='58.4' y='144.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.6' y='144.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='128.5' y='265' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='156.2' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='122.8' y='77.5' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mediana-uzaytirish",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#6aaad792"
+    },
+    {
+      "q": "Darvoza to'g'ri to'rtburchak shaklida bo'lib, uni mustahkamlash uchun bir burchagidan qarama-qarshi burchagiga tirgak tortildi. Tirgak darvozani qanday ikki qismga ajratadi?",
+      "v": [
+        "Ikkita teng tomonli uchburchakka",
+        "Ikkita teng to'g'ri burchakli uchburchakka",
+        "Ikkita har xil uchburchakka",
+        "Ikkita teng yonli uchburchakka"
+      ],
+      "t": 1,
+      "izoh": "Diagonal to'rtburchakni ikkita uchburchakka bo'ladi. To'g'ri to'rtburchakda qarama-qarshi tomonlar teng, diagonal esa umumiy tomon, shuning uchun uchburchaklar uch tomon bo'yicha teng. Har birida to'g'ri burchak bor, demak ular teng to'g'ri burchakli uchburchaklardir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='250' viewBox='0 0 340 250'%3E%3Crect width='340' height='250' fill='%23ffffff'/%3E%3Cpolygon points='32,37.2 32,212.8 308,212.8 308,37.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='32' y1='212.8' x2='308' y2='37.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='32,200.8 44,200.8 44,212.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='296,212.8 296,200.8 308,200.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='19.3' y='33.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='19.3' y='225.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='320.7' y='225.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='320.7' y='33.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelogramm-diagonal",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#fcb780f5"
+    },
+    {
+      "q": "Ikki yo'l kesishgan joyda ular hosil qilgan burchakning bissektrisasi bo'ylab quduq qazildi. Quduqdan har ikkala yo'lgacha bo'lgan eng qisqa masofalar haqida nima deyish mumkin?",
+      "v": [
+        "Bu burchakning kattaligiga bog'liq",
+        "Ular o'zaro teng bo'ladi",
+        "Birinchi yo'lgacha qisqaroq bo'ladi",
+        "Ikkinchi yo'lgacha qisqaroq bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Eng qisqa masofa — nuqtadan to'g'ri chiziqqa tushirilgan perpendikulyar. Bissektrisadagi nuqtadan tomonlarga tushirilgan perpendikulyarlar teng to'g'ri burchakli uchburchaklarning katetlari bo'ladi, chunki gipotenuza umumiy va o'tkir burchaklar teng. Shuning uchun quduqdan ikkala yo'lgacha masofa bir xil.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='250' viewBox='0 0 330 250'%3E%3Crect width='330' height='250' fill='%23ffffff'/%3E%3Cline x1='61.5' y1='218' x2='268.5' y2='218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='61.5' y1='218' x2='152.2' y2='32' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='61.5' y1='218' x2='175.6' y2='146.7' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='175.6' y1='146.7' x2='175.6' y2='218' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='175.6' y1='146.7' x2='111.5' y2='115.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='163.6,218 163.6,206 175.6,206' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='116.8,104.7 127.5,110 122.3,120.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 78.5 218 A 17 17 0 0 0 75.9 209' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 75.9 209 A 17 17 0 0 0 69 202.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='47.8' y='228.6' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='183.6' y='139.7' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='175.6' y='236.5' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='98.9' y='113.9' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Ctext x='279.8' y='226.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='152' y='24.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bissektrisa-teng-uzoqlik",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#f77f2def"
+    },
+    {
+      "q": "Ikki qishloqni tutashtiruvchi yo'lning o'rta perpendikulyarida yangi shifoxona qurilmoqda. Shifoxonadan qishloqlargacha bo'lgan masofalar haqida nima deyish mumkin?",
+      "v": [
+        "Birinchi qishloq yaqinroq bo'ladi",
+        "Ikkinchi qishloq yaqinroq bo'ladi",
+        "Bu yo'lning uzunligiga bog'liq",
+        "Ikkalasigacha masofa bir xil bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "O'rta perpendikulyar yo'lni teng ikkiga bo'ladi va unga perpendikulyar bo'ladi. Shifoxona nuqtasidan qishloqlarga tortilgan kesmalar teng to'g'ri burchakli uchburchaklarning gipotenuzalari bo'ladi, chunki katetlar mos ravishda teng. Demak har ikkala qishloqqacha masofa bir xil.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='265' viewBox='0 0 320 265'%3E%3Crect width='320' height='265' fill='%23ffffff'/%3E%3Cline x1='34' y1='230.5' x2='286' y2='230.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='34' y1='230.5' x2='160' y2='34.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='286' y1='230.5' x2='160' y2='34.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='230.5' x2='160' y2='34.5' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='172,230.5 172,218.5 160,218.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='97' y1='224.5' x2='97' y2='236.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='223' y1='224.5' x2='223' y2='236.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='20.7' y='241.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='299.3' y='241.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='160' y='24' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3Ctext x='160' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-perpendikulyar",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#592ff6d0"
+    },
+    {
+      "q": "ΔABC = ΔDEF uchburchaklarda ∠A = 2y + 10° va ∠D = 4y − 30° ekani ma'lum. y ning qiymatini toping.",
+      "v": [
+        "20",
+        "40",
+        "10",
+        "30"
+      ],
+      "t": 0,
+      "izoh": "Mos burchaklar teng bo'lgani uchun 2y + 10° = 4y − 30°. Ikkala tomondan 2y ni ayiramiz: 10° = 2y − 30°, demak 2y = 40° va y = 20. Tekshiruv: ∠A = 50° va ∠D = 50°, ya'ni burchaklar mos keldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglamali-nomalum",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#f87ba65d"
+    },
+    {
+      "q": "Bolalar maydonchasidagi ikkita bir xil uchburchak panelning bir burchagi 90°, ikkinchisi esa 36°. Ikkinchi paneldagi qolgan burchak necha gradus?",
+      "v": [
+        "126°",
+        "36°",
+        "54°",
+        "64°"
+      ],
+      "t": 2,
+      "izoh": "Uchburchak burchaklari yig'indisi 180°, shuning uchun qolgan burchak 180° − 90° − 36° = 54°. Panellar teng bo'lgani uchun ikkinchisida ham burchaklar bir xil. To'g'ri burchakli uchburchakda o'tkir burchaklar yig'indisi 90° ekanidan ham 90° − 36° = 54° chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='275' viewBox='0 0 300 275'%3E%3Crect width='300' height='275' fill='%23ffffff'/%3E%3Cpolygon points='34,53.2 34,221.8 266,221.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='25.5' y='45.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21.9' y='235.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.1' y='231.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 252.2 211.8 A 17 17 0 0 0 249 221.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='34,209.8 46,209.8 46,221.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='236.5' y='216.7' font-size='13' fill='%23334155' text-anchor='middle'%3E36°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchinchi-burchak",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#08122bfe"
+    },
+    {
+      "q": "Rasmda AC va BD kesmalar O nuqtada kesishgan, bunda AO = OC hamda ∠A = ∠C. ΔAOB = ΔCOD ekanini qaysi alomat beradi?",
+      "v": [
+        "Tomon va unga yopishgan ikki burchak",
+        "Ikki tomon va ular orasidagi burchak",
+        "Uch tomon",
+        "Gipotenuza va katet"
+      ],
+      "t": 0,
+      "izoh": "AO = OC tomoni berilgan, unga yopishgan burchaklardan biri ∠A = ∠C shart bo'yicha teng. Ikkinchisi esa ∠AOB va ∠COD vertikal burchaklar bo'lgani uchun teng. Demak tomon va unga yopishgan ikki burchak teng, ya'ni ikkinchi alomat qo'llanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='255' viewBox='0 0 340 255'%3E%3Crect width='340' height='255' fill='%23ffffff'/%3E%3Cline x1='40.1' y1='51.1' x2='299.9' y2='203.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55.4' y1='223' x2='284.6' y2='32' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='40.1' y1='51.1' x2='55.4' y2='223' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='299.9' y1='203.9' x2='284.6' y2='32' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='108.1' y1='84.1' x2='102' y2='94.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='238' y1='160.5' x2='231.9' y2='170.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 155.3 118.9 A 17 17 0 0 0 156.9 138.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 184.7 136.1 A 17 17 0 0 0 183.1 116.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 54.8 59.7 A 17 17 0 0 1 41.6 68' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 59.1 62.3 A 22 22 0 0 1 42.1 73' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 285.2 195.3 A 17 17 0 0 1 298.4 187' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 280.9 192.7 A 22 22 0 0 1 297.9 182' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='27.2' y='48' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='43.9' y='237.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312.8' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='296.1' y='26.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='181.2' y='138.6' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-va-umumiy-tomon",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#dcef936d"
+    },
+    {
+      "q": "Tikuvchi qirqim uchun shablon yasadi: uning tomonlari 18 sm va 24 sm, ular orasidagi burchak esa 70°. Shablondan foydalanib kesilgan bo'laklarning bir xil bo'lishini nima kafolatlaydi?",
+      "v": [
+        "Perimetrlarning tengligi",
+        "Yuzalarning tengligi",
+        "Ikki tomon va ular orasidagi burchak alomati",
+        "Uch burchak alomati"
+      ],
+      "t": 2,
+      "izoh": "Shablon har safar bir xil ikki tomon va ular orasidagi bir xil burchakni beradi. Birinchi alomatga ko'ra bunday shartdan hosil bo'lgan uchburchaklar teng. Demak uchinchi tomon va qolgan burchaklar ham har bir bo'lakda bir xil chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='69.2,63.6 30,171.4 182.9,171.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='64.3' y='53.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='16.9' y='183.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='196.8' y='181.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 35.8 155.4 A 17 17 0 0 1 47 171.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='34.8' y='116' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='111.7' y='191' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='55.4' y='158.1' font-size='13' fill='%23334155' text-anchor='middle'%3E70°%3C/text%3E%3Cpolygon points='360.8,63.6 400,171.4 247.1,171.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='365.7' y='53.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='413.1' y='183.2' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='233.2' y='181.5' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cpath d='M 394.2 155.4 A 17 17 0 0 0 383 171.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='395.2' y='116' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='318.3' y='191' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='374.6' y='158.1' font-size='13' fill='%23334155' text-anchor='middle'%3E70°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-xil-detal",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#b1036ced"
+    },
+    {
+      "q": "Isbotda ikkala uchburchakda ham perimetr 30 sm, demak ular teng deb yozilgan. Bu xulosa nima uchun noto'g'ri?",
+      "v": [
+        "Aslida xulosa to'g'ri",
+        "Perimetr tengligi tomonlar tengligini bildirmaydi",
+        "Perimetr birligi noto'g'ri olingan",
+        "30 sm juda kichik qiymat"
+      ],
+      "t": 1,
+      "izoh": "Perimetr uchta tomonning yig'indisi bo'lgani uchun har bir tomonni alohida aniqlamaydi. Perimetri 30 sm bo'lgan uchburchakning tomonlari 10 sm, 10 sm, 10 sm ham, 7 sm, 11 sm, 12 sm ham bo'lishi mumkin. Bu ikki shakl teng emas, demak faqat perimetrga tayanib xulosa chiqarib bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "isbotdagi-xato",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#e7890b28"
+    },
+    {
+      "q": "ΔABC va ΔMNK uchburchaklarda AB = MN, BC = NK va AC = MK ekani ma'lum. Shu ma'lumotdan qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Uchburchaklar faqat o'xshash, teng emas",
+        "Uchburchaklar teng, chunki ikki tomon va burchak teng",
+        "Berilgan ma'lumot yetarli emas",
+        "Uchburchaklar teng, chunki uchta tomoni mos ravishda teng"
+      ],
+      "t": 3,
+      "izoh": "Uchta tomon juftligi mos ravishda teng: AB = MN, BC = NK, AC = MK. Uchinchi alomatga ko'ra bundan ΔABC = ΔMNK kelib chiqadi. Tomonlari aynan teng shakllar shunchaki o'xshash emas, balki o'xshashlik koeffitsiyenti 1 ga teng, ya'ni teng shakllardir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='95.2,88.1 30,168.6 185.4,168.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='92.9' y='77.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='15.9' y='178.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='199.7' y='177.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cline x1='67.3' y1='132.1' x2='57.9' y2='124.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='105.2' y1='162.6' x2='105.2' y2='174.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='110.2' y1='162.6' x2='110.2' y2='174.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='140' y1='136.2' x2='148' y2='127.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='136.3' y1='132.8' x2='144.3' y2='123.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='132.6' y1='129.5' x2='140.6' y2='120.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='335.5,66.4 250.6,125.8 400,168.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='337.4' y='56' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='235.6' y='131.4' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='412.4' y='181.5' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Cline x1='296.5' y1='101' x2='289.6' y2='91.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='324.5' y1='140.7' x2='321.2' y2='152.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='329.4' y1='142.1' x2='326.1' y2='153.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='365.3' y1='124.9' x2='375.5' y2='118.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='362.7' y1='120.7' x2='372.8' y2='114.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='360' y1='116.5' x2='370.2' y2='110.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-tomon-alomati",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#6112aede"
+    },
+    {
+      "q": "ΔDEF va ΔKLM uchburchaklarda EF = LM, ∠E = ∠L va ∠F = ∠M berilgan. Bu shartlar to'plami qaysi alomatni to'liq qanoatlantiradi?",
+      "v": [
+        "Ikki tomon va ular orasidagi burchak",
+        "Uch burchak",
+        "Gipotenuza va o'tkir burchak",
+        "Tomon va unga yopishgan ikki burchak"
+      ],
+      "t": 3,
+      "izoh": "EF tomonining uchlari E va F nuqtalar, demak ∠E va ∠F unga yopishgan burchaklardir. Xuddi shunday ∠L va ∠M burchaklar LM tomoniga yopishgan. Tomon va unga yopishgan ikki burchak teng bo'lgani uchun ikkinchi alomat qo'llanadi va ΔDEF = ΔKLM.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='97.3,74.6 30,170.7 183.9,170.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='95.8' y='64.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='16.2' y='181.2' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='197.8' y='180.8' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cline x1='107' y1='164.7' x2='107' y2='176.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 39.8 156.8 A 17 17 0 0 1 47 170.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 172.5 158.1 A 17 17 0 0 0 166.9 170.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 169.2 154.4 A 22 22 0 0 0 161.9 170.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='350.4,64.3 400,170.7 248.5,144' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='354.5' y='54.4' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='412.5' y='183.5' font-size='13' fill='%23334155' text-anchor='middle'%3EL%3C/text%3E%3Ctext x='233.8' y='151.6' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Cline x1='323.2' y1='163.3' x2='325.3' y2='151.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 392.8 155.3 A 17 17 0 0 0 383.3 167.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 261.9 133.5 A 17 17 0 0 1 265.2 147' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 265.8 130.4 A 22 22 0 0 1 270.2 147.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tomon-ikki-burchak-alomati",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#e7f26a7d"
+    },
+    {
+      "q": "Zebo daftariga tomonlari 6 sm va 4 sm bo'lgan hamda 4 sm li tomonga qarshi 35° li burchakli uchburchak chizdi. Dugonasi xuddi shu ma'lumot bo'yicha chizganda shakllar ustma-ust tushmadi. Sabab nimada?",
+      "v": [
+        "Bunday uchburchak umuman mavjud emas",
+        "Bunday ma'lumot uchburchakni bir qiymatli aniqlamaydi",
+        "Zebo o'lchashda xatoga yo'l qo'ygan",
+        "Burchak juda kichik olingan"
+      ],
+      "t": 1,
+      "izoh": "Berilgan burchak teng tomonlar orasida emas, kichikroq tomonga qarshi yotibdi. Bunday shartda 4 sm li tomonning uchi ikkita har xil joyga tushishi mumkin, ya'ni ikkita mos kelmaydigan uchburchak quriladi. Shuning uchun ikki tomon va biriga qarshi burchak tenglik alomati emas va qizlarning chizmalari mos kelmagani tabiiy.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='275' viewBox='0 0 300 275'%3E%3Crect width='300' height='275' fill='%23ffffff'/%3E%3Cpolygon points='198,80.1 34,194.9 266,194.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='203.8' y='70.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='19.6' y='203.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280' y='204.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 47.9 185.2 A 17 17 0 0 1 51 194.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='101.1' y='136.3' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='247.4' y='137.6' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='63.6' y='190.1' font-size='13' fill='%23334155' text-anchor='middle'%3E35°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "alomat-emas-shart",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#bb540a3f"
+    },
+    {
+      "q": "Chizmachilik darsida o'quvchiga ikki uchburchakning 7 sm va 9 sm li tomonlari teng ekani aytildi. O'qituvchi yana bitta shart qo'shsa, uchburchaklar albatta teng bo'lishini aytdi. Bu shart qanday bo'lishi kerak?",
+      "v": [
+        "Eng kichik burchaklari teng bo'lishi",
+        "Yuzalari teng bo'lishi",
+        "7 sm va 9 sm li tomonlar orasidagi burchaklar teng bo'lishi",
+        "7 sm li tomonga qarshi burchaklar teng bo'lishi"
+      ],
+      "t": 2,
+      "izoh": "Ikki tomon allaqachon teng, shuning uchun birinchi alomatni to'ldirish uchun aynan shu tomonlar orasidagi burchak kerak. Kichikroq (7 sm) tomonga qarshi burchak tengligi esa yetarli emas: burchak qurilgach, 7 sm radiusli aylana burchakning ikkinchi tomonini ikki nuqtada kesishi mumkin, ya'ni ikki xil uchburchak hosil bo'ladi. Eng kichik burchak qaysi tomonga qarshi yotgani noaniq, yuzalar tengligi ham yetarli emas, chunki bir xil yuzani ikkita har xil burchak berishi mumkin.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='92.3,75.5 30,176.8 182.9,176.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='90.2' y='65.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='16.4' y='187.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='196.7' y='187.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cline x1='66.3' y1='129.3' x2='56' y2='123' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='104' y1='170.8' x2='104' y2='182.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='109' y1='170.8' x2='109' y2='182.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='46.4' y='124.5' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='108.7' y='197.1' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Cpolygon points='255.6,58.2 247.1,176.8 400,176.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='248.1' y='49.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='235' y='190.2' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='413.9' y='186.9' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cline x1='257.3' y1='117.9' x2='245.4' y2='117.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='321.1' y1='170.8' x2='321.1' y2='182.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='326.1' y1='170.8' x2='326.1' y2='182.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='236.5' y='116.1' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='331.5' y='195.2' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yetishmayotgan-shart",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#0a786f7f"
+    },
+    {
+      "q": "ΔABC da ∠C = 90°, ΔMNK da esa ∠K = 90°. AB = MN va BC = NK berilgan bo'lsa, tenglikni qaysi alomat beradi?",
+      "v": [
+        "Gipotenuza va katet bo'yicha",
+        "Ikki katet bo'yicha",
+        "Katet va o'tkir burchak bo'yicha",
+        "Gipotenuza va o'tkir burchak bo'yicha"
+      ],
+      "t": 0,
+      "izoh": "∠C = 90° bo'lgani uchun AB tomoni ΔABC ning gipotenuzasi, xuddi shunday MN esa ΔMNK ning gipotenuzasi. BC va NK tomonlari to'g'ri burchakka yopishgan, ya'ni katetlar. Demak gipotenuza va katet mos ravishda teng va to'g'ri burchakli uchburchaklar uchun maxsus alomat qo'llanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='199.7,30 126.8,205 199.7,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='202.8' y='19.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='117.2' y='221' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='205.5' y='223.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cline x1='168.8' y1='119.8' x2='157.7' y2='115.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='160.8' y1='199' x2='160.8' y2='211' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='165.8' y1='199' x2='165.8' y2='211' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='199.7,193 187.7,193 187.7,205' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='230.3,30 303.2,205 230.3,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='227.2' y='19.8' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='312.8' y='221' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='224.5' y='223.3' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Cline x1='272.3' y1='115.2' x2='261.2' y2='119.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='269.3' y1='211' x2='269.3' y2='199' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='264.3' y1='211' x2='264.3' y2='199' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='230.3,193 242.3,193 242.3,205' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tbu-gipotenuza-katet",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#d08b20e2"
+    },
+    {
+      "q": "ΔABC da ∠A = 90°, AB = 6 sm va ∠B = 50°. ΔDEF da ∠D = 90°, DE = 6 sm va ∠E = 50°. Bu uchburchaklar tengligining sababi nima?",
+      "v": [
+        "Ikki katet teng",
+        "Faqat uchta burchak teng",
+        "Katet va unga yopishgan o'tkir burchak teng",
+        "Gipotenuza va o'tkir burchak teng"
+      ],
+      "t": 2,
+      "izoh": "∠A = 90° bo'lgani uchun AB tomoni katet, ∠B esa unga yopishgan o'tkir burchak. Ikkinchi uchburchakda ham DE katet va ∠E unga yopishgan o'tkir burchak. Katet va unga yopishgan o'tkir burchak mos ravishda teng bo'lgani uchun uchburchaklar teng, gipotenuza esa berilmagan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='93.2,79.9 30,155.1 182.9,155.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='90.6' y='69.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='15.8' y='164.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='197.2' y='164' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 40.9 142.1 A 17 17 0 0 1 47 155.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='85.5,89.1 94.7,96.8 102.4,87.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='46.3' y='117.3' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='58.1' y='146.5' font-size='13' fill='%23334155' text-anchor='middle'%3E50°%3C/text%3E%3Cpolygon points='336.8,79.9 400,155.1 247.1,155.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='339.4' y='69.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='414.2' y='164.5' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='232.8' y='164' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cpath d='M 389.1 142.1 A 17 17 0 0 0 383 155.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='344.5,89.1 335.3,96.8 327.6,87.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='383.7' y='117.3' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='371.9' y='146.5' font-size='13' fill='%23334155' text-anchor='middle'%3E50°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tbu-katet-otkir-burchak",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#4f33b9fb"
+    },
+    {
+      "q": "To'rtburchakda ΔABC = ΔCDA ekani ma'lum bo'lib, AB = 15 sm va BC = 8 sm. Shu tenglikdan CD tomonining uzunligini toping.",
+      "v": [
+        "15 sm",
+        "8 sm",
+        "17 sm",
+        "23 sm"
+      ],
+      "t": 0,
+      "izoh": "ΔABC = ΔCDA yozuvida A ↔ C, B ↔ D, C ↔ A mosligi bor. Demak AB tomoni CD tomoniga mos keladi va CD = AB = 15 sm. BC tomoni esa DA ga mos bo'lib, u 8 sm ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='250' viewBox='0 0 340 250'%3E%3Crect width='340' height='250' fill='%23ffffff'/%3E%3Cpolygon points='158.6,32 71.9,218 181.4,218 268.1,32' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158.6' y1='32' x2='181.4' y2='218' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156.8' y='21.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='61' y='232.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='183.2' y='237.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='279' y='26.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='99.3' y='129.5' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='119.9' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mos-tomonni-topish",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#4ddb95de"
+    },
+    {
+      "q": "ΔDEF = ΔKLM uchburchaklarda ∠D = 3x va ∠K = x + 50°. x ning qiymatini va ∠D burchagini toping.",
+      "v": [
+        "x = 25 va ∠D = 25°",
+        "x = 12,5 va ∠D = 37,5°",
+        "x = 50 va ∠D = 150°",
+        "x = 25 va ∠D = 75°"
+      ],
+      "t": 3,
+      "izoh": "Mos burchaklar teng bo'lgani uchun 3x = x + 50°. Ikkala tomondan x ni ayiramiz: 2x = 50°, demak x = 25°. Endi ∠D = 3 · 25° = 75°, tekshiruv uchun ∠K = 25° + 50° = 75°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mos-burchakni-topish",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#7b98890e"
+    },
+    {
+      "q": "Temirchi bir xil uchburchak ramkalardan 5 tasini yasadi. Bitta ramkaning tomonlari 45 sm, 60 sm va 75 sm. Hammasi uchun necha metr temir sarflanadi?",
+      "v": [
+        "90 m",
+        "9 m",
+        "18 m",
+        "1,8 m"
+      ],
+      "t": 1,
+      "izoh": "Bitta ramkaning perimetri 45 + 60 + 75 = 180 sm. Ramkalar teng bo'lgani uchun 5 tasiga 180 · 5 = 900 sm temir ketadi. Endi santimetrni metrga aylantiramiz: 900 : 100 = 9 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-uchburchak-perimetri",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#a6ebce85"
+    },
+    {
+      "q": "Chizmada ΔPQS = ΔRQS deb belgilangan va QS tomoni ikkala uchburchakka umumiy. Bu yozuvdan PQ tomoni qaysi tomonga teng ekani kelib chiqadi?",
+      "v": [
+        "PS",
+        "RQ",
+        "QS",
+        "RS"
+      ],
+      "t": 1,
+      "izoh": "Yozuvdagi moslik P ↔ R, Q ↔ Q, S ↔ S ko'rinishida bo'ladi. Demak PQ tomoni RQ tomoniga mos keladi va ular teng. PS tomoni esa RS ga teng, QS esa umumiy tomon bo'lgani uchun o'z-o'ziga mos keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='260' viewBox='0 0 320 260'%3E%3Crect width='320' height='260' fill='%23ffffff'/%3E%3Cline x1='160' y1='59.1' x2='160' y2='200.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='160' y1='59.1' x2='34' y2='133.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='59.1' x2='286' y2='133.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='200.9' x2='34' y2='133.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='200.9' x2='286' y2='133.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='138.8' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='300' y='138.8' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Ctext x='160' y='48.6' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Ctext x='160' y='220.4' font-size='13' fill='%23334155' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglik-yozuvidagi-moslik",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#6f698672"
+    },
+    {
+      "q": "Nodira devor ortidagi AB masofani bilish uchun A dan 30 m, B dan 40 m uzoqlikdagi C nuqtani belgiladi va AC hamda BC ni C dan nariga aynan shuncha davom ettirib D va E nuqtalarni oldi. DE ni o'lchab 58 m topdi. AB qancha?",
+      "v": [
+        "29 m",
+        "116 m",
+        "70 m",
+        "58 m"
+      ],
+      "t": 3,
+      "izoh": "C nuqtada AC va BC nurlarining davomi hosil bo'lgani uchun ∠ACB va ∠DCE vertikal burchaklar, demak ular teng. Qurilishga ko'ra CA = CD = 30 m va CB = CE = 40 m, shuning uchun birinchi alomat bo'yicha ΔACB = ΔDCE. Mos tomonlar teng bo'lgani uchun AB = DE = 58 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='240' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%23ffffff'/%3E%3Cline x1='96.1' y1='75.3' x2='223.9' y2='164.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='246.3' y1='62' x2='73.7' y2='178' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='96.1' y1='75.3' x2='246.3' y2='62' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='223.9' y1='164.7' x2='73.7' y2='178' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='124.61' y1='102.57' x2='131.49' y2='92.73' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='188.51' y1='147.27' x2='195.39' y2='137.43' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='197.73' y1='87.41' x2='204.43' y2='97.37' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='201.88' y1='84.63' x2='208.58' y2='94.59' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='111.43' y1='145.41' x2='118.13' y2='155.37' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='115.58' y1='142.63' x2='122.28' y2='152.59' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 143.62 108.53 A 20 20 0 0 1 176.6 108.84' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 176.38 131.47 A 20 20 0 0 1 143.4 131.16' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='84.6' y='71' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='257.9' y='58' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='131' y='124' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='235.4' y='176' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='62.1' y='190' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='91' y='103.4' font-size='13' fill='%23334155' text-anchor='middle'%3E30 m%3C/text%3E%3Ctext x='229.3' y='104.8' font-size='13' fill='%23334155' text-anchor='middle'%3E40 m%3C/text%3E%3Ctext x='145.4' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3E58 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yetib-bolmas-masofa",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#b434f67a"
+    },
+    {
+      "q": "ΔABC da AB = AC va ∠B = 68°. Uchidagi burchakdan AD bissektrisa o'tkazilganda hosil bo'lgan ΔABD dagi ∠ADB necha gradus?",
+      "v": [
+        "90°",
+        "68°",
+        "44°",
+        "22°"
+      ],
+      "t": 0,
+      "izoh": "Teng yonli uchburchakda asos burchaklari teng, demak ∠C = ∠B = 68°. Uchidagi burchak ∠A = 180° − 68° − 68° = 44°, bissektrisa uni ikkiga bo'ladi, ya'ni ∠BAD = 22°. Endi ΔABD dan ∠ADB = 180° − 68° − 22° = 90°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='270' viewBox='0 0 320 270'%3E%3Crect width='320' height='270' fill='%23ffffff'/%3E%3Cpolygon points='126.3,37.3 95,235 241.2,201.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='126.3' y1='37.3' x2='168.1' y2='218.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='104.72' y1='135.21' x2='116.58' y2='137.09' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='178.84' y1='122.74' x2='188.66' y2='115.86' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 114.49 230.5 A 20 20 0 0 0 98.13 215.25' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='122.9' y='25' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='85.3' y='247.7' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='255.5' y='208.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='171.7' y='233.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='118.2' y='210.1' font-size='13' fill='%23334155' text-anchor='middle'%3E68°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-isbot",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#f2547f6d"
+    },
+    {
+      "q": "ΔABC da AM mediana bo'lib, MD = AM. Isbotlangan ΔABM = ΔDCM tengligidan AB va DC to'g'ri chiziqlari haqida qanday xulosa chiqadi?",
+      "v": [
+        "Ular albatta kesishadi",
+        "Hech qanday xulosa chiqmaydi",
+        "Ular o'zaro parallel",
+        "Ular o'zaro perpendikulyar"
+      ],
+      "t": 2,
+      "izoh": "Teng uchburchaklardan ∠BAM = ∠CDM kelib chiqadi. Bu ikki burchak AD kesuvchisi uchun AB va DC to'g'ri chiziqlari hosil qilgan ichki almashinuvchi burchaklardir. Ichki almashinuvchi burchaklar teng bo'lsa, to'g'ri chiziqlar parallel bo'ladi, demak AB ∥ DC.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='280' viewBox='0 0 320 280'%3E%3Crect width='320' height='280' fill='%23ffffff'/%3E%3Cpolygon points='174.2,34 45.2,140 145.8,246 274.8,140' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='45.2' y1='140' x2='274.8' y2='140' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='174.2' y1='34' x2='145.8' y2='246' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='173' y1='87.8' x2='161.2' y2='86.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='158.8' y1='193.8' x2='147' y2='192.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='100.1' y1='134' x2='100.1' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='105.1' y1='134' x2='105.1' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='214.9' y1='134' x2='214.9' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='219.9' y1='134' x2='219.9' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='176.2' y='23.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='30.2' y='144.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='289.8' y='144.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='143.8' y='265.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='158' y='159.4' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mediana-uzaytirish",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#a357bf4e"
+    },
+    {
+      "q": "Parallelogramm ABCD ning perimetri 46 sm va AB = 14 sm. BD diagonal 15 sm bo'lsa, ΔABD ning perimetri qanchaga teng?",
+      "v": [
+        "38 sm",
+        "44 sm",
+        "23 sm",
+        "29 sm"
+      ],
+      "t": 0,
+      "izoh": "Parallelogrammda qarama-qarshi tomonlar teng, demak AB = CD = 14 sm va qolgan ikki tomonga 46 − 2 · 14 = 18 sm qoladi, ya'ni AD = 9 sm. ΔABD ning perimetri AB + AD + BD = 14 + 9 + 15 = 38 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='250' viewBox='0 0 340 250'%3E%3Crect width='340' height='250' fill='%23ffffff'/%3E%3Cpolygon points='89.3,32 128.5,218 250.7,218 211.5,32' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='128.5' y1='218' x2='211.5' y2='32' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='79.5' y='25.2' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='122.4' y='236.2' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.5' y='233.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='217.6' y='22.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='92.9' y='129.5' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='170' y='129.5' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelogramm-diagonal",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#f4a2725a"
+    },
+    {
+      "q": "Bissektrisadagi nuqtadan burchak tomonlarigacha bo'lgan masofa 12 sm. Shu nuqtadan burchak uchigacha 13 sm bo'lsa, perpendikulyar asosidan burchak uchigacha necha santimetr?",
+      "v": [
+        "25 sm",
+        "6,5 sm",
+        "5 sm",
+        "1 sm"
+      ],
+      "t": 2,
+      "izoh": "Hosil bo'lgan uchburchak to'g'ri burchakli: gipotenuza 13 sm, bitta katet esa 12 sm. Pifagor teoremasiga ko'ra ikkinchi katet 13² − 12² = 169 − 144 = 25, ya'ni √25 = 5 sm. Uchburchaklar teng bo'lgani uchun ikkala tomonda ham bir xil qiymat chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='250' viewBox='0 0 330 250'%3E%3Crect width='330' height='250' fill='%23ffffff'/%3E%3Cline x1='142' y1='180.4' x2='298' y2='180.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='142' y1='180.4' x2='32' y2='69.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='142' y1='180.4' x2='188.1' y2='69.6' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='188.1' y1='69.6' x2='188.1' y2='180.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='188.1' y1='69.6' x2='109.5' y2='147.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='176.1,180.4 176.1,168.4 188.1,168.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='101,139.2 109.6,130.7 118,139.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 159 180.4 A 17 17 0 0 0 148.5 164.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 148.5 164.7 A 17 17 0 0 0 130 168.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='128.3' y='191' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='184' y='60.7' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='188.1' y='198.9' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='99.6' y='162.1' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Ctext x='309.3' y='189' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21' y='69.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='174' y='115.3' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='138.4' y='115.8' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-teng-uzoqlik",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#0d395969"
+    },
+    {
+      "q": "M nuqta AB kesmaning o'rta perpendikulyarida yotadi, MA = 17 sm va AB = 16 sm. M nuqtadan AB kesmagacha bo'lgan masofa qancha?",
+      "v": [
+        "1 sm",
+        "15 sm",
+        "9 sm",
+        "8 sm"
+      ],
+      "t": 1,
+      "izoh": "O'rta perpendikulyar AB ni teng ikkiga bo'ladi, demak yarim kesma 16 : 2 = 8 sm. Hosil bo'lgan to'g'ri burchakli uchburchakda gipotenuza MA = 17 sm, bitta katet 8 sm. Ikkinchi katet 17² − 8² = 289 − 64 = 225, ya'ni √225 = 15 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='265' viewBox='0 0 320 265'%3E%3Crect width='320' height='265' fill='%23ffffff'/%3E%3Cline x1='54.9' y1='231' x2='265.1' y2='231' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='54.9' y1='231' x2='160' y2='34' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='265.1' y1='231' x2='160' y2='34' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='231' x2='160' y2='34' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='172,231 172,219 160,219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='107.5' y1='225' x2='107.5' y2='237' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='212.6' y1='225' x2='212.6' y2='237' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='42.2' y='243.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='277.8' y='243.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='160' y='23.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='160' y='248.5' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='92.2' y='127.5' font-size='13' fill='%23334155' text-anchor='middle'%3E17 sm%3C/text%3E%3Ctext x='160' y='268.5' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-perpendikulyar",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#6f87404d"
+    },
+    {
+      "q": "Ikkita teng uchburchak shaklidagi bayroqcha tikilyapti. Birining tomoni 4a − 3 sm, ikkinchisining mos tomoni esa 2a + 9 sm. Bayroqcha tomonining haqiqiy uzunligi qancha?",
+      "v": [
+        "6 sm",
+        "24 sm",
+        "15 sm",
+        "21 sm"
+      ],
+      "t": 3,
+      "izoh": "Mos tomonlar teng: 4a − 3 = 2a + 9. Bundan 2a = 12, ya'ni a = 6. Tomon uzunligi 4 · 6 − 3 = 21 sm, ikkinchi ifoda ham 2 · 6 + 9 = 21 sm beradi. a ning qiymatini javob deb yozish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglamali-nomalum",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#c3efebf9"
+    },
+    {
+      "q": "ΔMNK = ΔXYZ uchburchaklarda ∠M, ∠N va ∠K burchaklar 2 : 3 : 4 nisbatda. ∠Z burchagi necha gradusga teng?",
+      "v": [
+        "40°",
+        "60°",
+        "90°",
+        "80°"
+      ],
+      "t": 3,
+      "izoh": "Nisbat bo'laklarining yig'indisi 2 + 3 + 4 = 9 ta, demak bitta bo'lak 180° : 9 = 20°. Bundan ∠M = 40°, ∠N = 60° va ∠K = 80°. Yozuvdagi moslikka ko'ra K ↔ Z, shuning uchun ∠Z = ∠K = 80°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchinchi-burchak",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#b216630f"
+    },
+    {
+      "q": "ΔABD va ΔCBD uchburchaklarda BD tomon umumiy bo'lib, AB = CB va AD = CD. Bu uchburchaklar tengligini qanday asoslaymiz?",
+      "v": [
+        "Umumiy tomonning o'zi yetarli emas",
+        "Uchta tomoni mos ravishda teng",
+        "Ikki tomoni va burchagi teng",
+        "Ikki burchagi va tomoni teng"
+      ],
+      "t": 1,
+      "izoh": "AB = CB va AD = CD shart bo'yicha berilgan, BD tomoni esa ikkala uchburchakka umumiy, ya'ni BD = BD. Shunday qilib uchta tomon mos ravishda teng bo'ladi va uchinchi alomat qo'llanadi. Bundan ∠ABD = ∠CBD ekani, ya'ni BD ning bissektrisa ekani ham kelib chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='260' viewBox='0 0 320 260'%3E%3Crect width='320' height='260' fill='%23ffffff'/%3E%3Cline x1='160' y1='59.1' x2='160' y2='200.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='160' y1='59.1' x2='34' y2='133.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='59.1' x2='286' y2='133.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='200.9' x2='34' y2='133.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='200.9' x2='286' y2='133.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='100.1' y1='101.7' x2='93.9' y2='91.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='226.1' y1='91.3' x2='219.9' y2='101.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='96.4' y1='173.9' x2='102' y2='163.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='92' y1='171.5' x2='97.6' y2='160.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='218' y1='163.3' x2='223.6' y2='173.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='222.4' y1='160.9' x2='228' y2='171.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='20' y='138.8' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='300' y='138.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='160' y='48.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='160' y='220.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-va-umumiy-tomon",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#044b04f4"
+    },
+    {
+      "q": "Oyna ustaxonasida singan uchburchak oynaning o'rniga yangisi kesilmoqda. Usta faqat ikki tomon uzunligini va ular orasidagi burchakni o'lchadi. Shu ma'lumot yetarlimi?",
+      "v": [
+        "Yo'q, uchta burchak kerak bo'ladi",
+        "Faqat to'g'ri burchakli oyna uchun yetarli",
+        "Ha, birinchi alomat shaklni bir qiymatli aniqlaydi",
+        "Yo'q, uchinchi tomon ham o'lchanishi kerak"
+      ],
+      "t": 2,
+      "izoh": "Ikki tomon va ular orasidagi burchak berilganda uchburchak bir qiymatli quriladi — bu birinchi alomatning mazmuni. Uchinchi tomon shu ma'lumotdan avtomatik aniqlanadi, shuning uchun uni alohida o'lchash shart emas. Demak ustaning o'lchovi yetarli va yangi oyna eskisining o'rniga aniq tushadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='106,35.9 60.7,205 189,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='104.3' y='25.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='50' y='220' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='200.7' y='218.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 65.1 188.6 A 17 17 0 0 1 77.7 205' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='70.9' y='114.9' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Ctext x='126.6' y='225.4' font-size='13' fill='%23334155' text-anchor='middle'%3E22 sm%3C/text%3E%3Ctext x='85.3' y='190.6' font-size='13' fill='%23334155' text-anchor='middle'%3E75°%3C/text%3E%3Cpolygon points='242.9,30 246,205 369.3,169.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='237.2' y='20.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='238.6' y='222.5' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='383.1' y='179.9' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cpath d='M 245.7 188 A 17 17 0 0 1 262.3 200.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='229.7' y='115.8' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Ctext x='313.7' y='206.6' font-size='13' fill='%23334155' text-anchor='middle'%3E22 sm%3C/text%3E%3Ctext x='264.4' y='184.6' font-size='13' fill='%23334155' text-anchor='middle'%3E75°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bir-xil-detal",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#ad39ec54"
+    },
+    {
+      "q": "Isbotda ΔABC = ΔDEF, chunki ∠A = ∠D, ∠B = ∠E va ∠C = ∠F deb yozilgan. Bu isbotda nima yetishmaydi?",
+      "v": [
+        "Kamida bitta tomonlar juftligining tengligi",
+        "Burchaklar yig'indisining tekshiruvi",
+        "Uchlarning to'g'ri tartibi",
+        "Isbotda hech narsa yetishmaydi"
+      ],
+      "t": 0,
+      "izoh": "Uchta burchak tengligi faqat o'xshashlikni beradi, chunki burchaklar shaklni belgilaydi, o'lchamni emas. Tenglik uchun kamida bitta tomon uzunligining tengligi kerak: masalan ∠A = ∠D, ∠B = ∠E va AB = DE bo'lsa, ikkinchi alomat ishlaydi. Bitta ham tomon berilmagani uchun isbot to'liq emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "isbotdagi-xato",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#36d4c7de"
+    },
+    {
+      "q": "Usta uchburchak shaklidagi tayanchni yig'ish uchun uzunligi 30 sm, 40 sm va 50 sm bo'lgan reykalarni oldi. Xuddi shu uzunlikdagi reykalardan yig'ilgan ikkinchi tayanch birinchisi bilan ustma-ust tushadimi?",
+      "v": [
+        "Faqat to'g'ri burchakli bo'lgandagina tushadi",
+        "Reykalar orasidagi burchak berilmagani uchun aniqlab bo'lmaydi",
+        "Ha, uchta tomoni teng uchburchaklar doim teng bo'ladi",
+        "Yo'q, burchaklar boshqacha chiqishi mumkin"
+      ],
+      "t": 2,
+      "izoh": "Uchta tomon uzunligi berilganda uchburchak yagona shaklda yig'iladi — bu uchinchi alomatning mazmuni. 30 sm, 40 sm va 50 sm reykalardan boshqacha shakl hosil qilib bo'lmaydi, chunki burchaklar tomonlar bilan bir qiymatli aniqlanadi. Shu sababli ikkinchi tayanch birinchisining ustiga aniq tushadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='87.1,87.8 30,163.9 188.6,163.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='82.9' y='77.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='15.9' y='173.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='203' y='172.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='43.2' y='125.9' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Ctext x='113.8' y='183.8' font-size='13' fill='%23334155' text-anchor='middle'%3E50 sm%3C/text%3E%3Ctext x='152.9' y='125' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3Cpolygon points='276.3,71.1 255.2,163.9 400,99.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='266.6' y='64.2' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='244.3' y='178.7' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='414.9' y='101.9' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Ctext x='249.9' y='124.1' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Ctext x='338' y='148.3' font-size='13' fill='%23334155' text-anchor='middle'%3E50 sm%3C/text%3E%3Ctext x='349.8' y='78.7' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-tomon-alomati",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#59f96dde"
+    },
+    {
+      "q": "ΔPQR va ΔXYZ uchburchaklarda PQ = XY, ∠Q = ∠Y va QR = YZ shartlari bajarilgan. Bu to'plam qaysi alomat talabiga to'g'ri keladi?",
+      "v": [
+        "Ikki tomon va ular orasidagi burchak",
+        "Bir tomon va ikki burchak",
+        "Uch tomon",
+        "Hech qaysi alomatga"
+      ],
+      "t": 0,
+      "izoh": "∠Q burchagi PQ va QR tomonlar orasida, ∠Y esa XY va YZ tomonlar orasida yotadi. Demak teng burchaklar aynan teng tomonlar orasida joylashgan. Bu birinchi alomatning to'liq sharti, shuning uchun ΔPQR = ΔXYZ.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='87,70.1 30,177.3 186,177.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='84.1' y='59.9' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='16.6' y='188.6' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Ctext x='199.8' y='187.6' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Cline x1='63.8' y1='126.5' x2='53.2' y2='120.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='105.5' y1='171.3' x2='105.5' y2='183.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='110.5' y1='171.3' x2='110.5' y2='183.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 38 162.3 A 17 17 0 0 1 47 177.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolygon points='272.7,57.7 251.6,177.3 400,129' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='265.4' y='49.1' font-size='13' fill='%23334155' text-anchor='middle'%3EX%3C/text%3E%3Ctext x='240.9' y='192.4' font-size='13' fill='%23334155' text-anchor='middle'%3EY%3C/text%3E%3Ctext x='414.9' y='134.8' font-size='13' fill='%23334155' text-anchor='middle'%3EZ%3C/text%3E%3Cline x1='268.1' y1='118.5' x2='256.2' y2='116.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='321.6' y1='148.2' x2='325.3' y2='159.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='326.3' y1='146.7' x2='330' y2='158.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 254.6 160.6 A 17 17 0 0 1 267.8 172' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tomon-burchak-alomati",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#6e361061"
+    },
+    {
+      "q": "Ikki uchburchakning perimetrlari teng va har birida bittadan burchak 60° ga teng. Bu ma'lumotdan uchburchaklar tengligi kelib chiqadimi?",
+      "v": [
+        "Ha, perimetr tenglashsa uchburchaklar ham tenglashadi",
+        "Ha, chunki qolgan burchaklar ham teng bo'lib qoladi",
+        "Faqat uchburchak teng tomonli bo'lgandagina",
+        "Yo'q, chunki tomonlar taqsimoti har xil bo'lishi mumkin"
+      ],
+      "t": 3,
+      "izoh": "Perimetr uchta tomonning yig'indisi bo'lgani uchun har bir tomonni alohida belgilamaydi. Tomonlari 6 sm, 6 sm, 6 sm bo'lgan uchburchakda ham, 4 sm, 7,5 sm, 6,5 sm bo'lgan uchburchakda ham perimetr 18 sm va bittadan burchak 60° ga teng. Ammo bu ikki shakl teng emas, demak berilgan shart alomat bo'la olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "alomat-emas-shart",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#86a995dc"
+    },
+    {
+      "q": "Chizmada ΔABC va ΔABD uchburchaklarda AC = AD berilgan, AB tomon esa ikkalasiga umumiy. Uchburchaklarni teng deyish uchun yana nima kerak?",
+      "v": [
+        "Hech narsa, umumiy tomonning o'zi yetarli",
+        "∠CAB = ∠DAB",
+        "∠ACB = ∠ADB",
+        "BC va BD yig'indisi"
+      ],
+      "t": 1,
+      "izoh": "AB tomoni ikkala uchburchakka umumiy, ya'ni AB = AB, bunga AC = AD sharti qo'shiladi. Shunday qilib ikkita tomon juftligi bor, uchinchi shart sifatida shu tomonlar orasidagi burchaklar tengligi kerak, ya'ni ∠CAB = ∠DAB. ∠ACB va ∠ADB burchaklari esa teng tomonlar orasida yotmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='260' viewBox='0 0 320 260'%3E%3Crect width='320' height='260' fill='%23ffffff'/%3E%3Cline x1='160' y1='59.1' x2='160' y2='200.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='160' y1='59.1' x2='34' y2='133.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='59.1' x2='286' y2='133.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='200.9' x2='34' y2='133.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='160' y1='200.9' x2='286' y2='133.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='100.1' y1='101.7' x2='93.9' y2='91.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='226.1' y1='91.3' x2='219.9' y2='101.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='20' y='138.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='300' y='138.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='160' y='48.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='160' y='220.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yetishmayotgan-shart",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#0708addb"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning gipotenuzasi 10 sm, katetlaridan biri 6 sm. Unga teng bo'lgan ikkinchi uchburchakning yuzasi qanchaga teng?",
+      "v": [
+        "60 sm²",
+        "24 sm²",
+        "30 sm²",
+        "48 sm²"
+      ],
+      "t": 1,
+      "izoh": "Gipotenuza va katet mos ravishda teng bo'lgani uchun uchburchaklar teng, demak yuzalari ham teng. Ikkinchi katetni Pifagor teoremasidan topamiz: 10² − 6² = 100 − 36 = 64, ya'ni katet 8 sm. Yuza esa katetlar ko'paytmasining yarmiga teng: S = (6 · 8) : 2 = 24 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='275' viewBox='0 0 300 275'%3E%3Crect width='300' height='275' fill='%23ffffff'/%3E%3Cpolygon points='34,50.5 34,224.5 266,224.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='25.7' y='42.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22' y='238' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280' y='234.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpolyline points='34,212.5 46,212.5 46,224.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='19' y='136.4' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='162.8' y='132.4' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tbu-gipotenuza-katet",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#4e46b047"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakda 12 sm li katet va unga qarshi yotgan 30° li burchak berilgan. Ikkinchi uchburchakda ham xuddi shu ma'lumot bor. Ular tengmi va nega?",
+      "v": [
+        "Teng emas, chunki qarshi burchak alomat bo'la olmaydi",
+        "Teng, chunki gipotenuzalar 6 sm dan bo'lib qoladi",
+        "Berilgan ma'lumot yetarli emas",
+        "Teng, chunki qarshi burchakdan yopishgan o'tkir burchak ham topiladi"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri burchakli uchburchakda o'tkir burchaklar yig'indisi 90° ga teng. 12 sm li katetga qarshi burchak 30° bo'lsa, unga yopishgan o'tkir burchak 90° − 30° = 60° ga teng bo'ladi. Endi katet va unga yopishgan o'tkir burchak mos ravishda teng, demak alomat bajariladi. Aytgancha gipotenuza 24 sm chiqadi, 6 sm emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='275' viewBox='0 0 300 275'%3E%3Crect width='300' height='275' fill='%23ffffff'/%3E%3Cpolygon points='34,70.5 34,204.5 266,204.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='24.2' y='63.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21' y='216.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.4' y='213.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 251.3 196 A 17 17 0 0 0 249 204.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='34,192.5 46,192.5 46,204.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='18.6' y='137.6' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='236.1' y='201' font-size='13' fill='%23334155' text-anchor='middle'%3E30°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tbu-katet-otkir-burchak",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#0b17993e"
+    },
+    {
+      "q": "ΔABC = ΔA₁B₁C₁ bo'lib, AB = 3x − 4 sm va A₁B₁ = x + 8 sm ekani ma'lum. AB tomonining uzunligini toping.",
+      "v": [
+        "14 sm",
+        "6 sm",
+        "18 sm",
+        "10 sm"
+      ],
+      "t": 0,
+      "izoh": "Teng uchburchaklarda mos tomonlar teng, shuning uchun 3x − 4 = x + 8. Bundan 3x − x = 8 + 4, ya'ni 2x = 12 va x = 6. Endi AB = 3 · 6 − 4 = 14 sm, tekshiruv uchun x + 8 = 14 sm. x ning o'zini javob deb yozish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mos-tomonni-topish",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#c5a83d78"
+    },
+    {
+      "q": "Teng yonli ΔABC da AB = AC bo'lib, asosga AD mediana o'tkazilgan. ΔABD = ΔACD tengligidan ∠ADB burchagi haqida qanday xulosa chiqadi?",
+      "v": [
+        "U ∠BAC burchakka teng",
+        "Uni umuman aniqlab bo'lmaydi",
+        "U 90° ga teng",
+        "U 60° ga teng"
+      ],
+      "t": 2,
+      "izoh": "Uchburchaklar tengligidan ∠ADB = ∠ADC kelib chiqadi. Bu ikki burchak BC to'g'ri chizig'ida yonma-yon joylashgani uchun ularning yig'indisi 180°. Demak har biri 180° : 2 = 90°, ya'ni teng yonli uchburchakda asosga tushirilgan mediana ayni paytda balandlik ham bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='285' viewBox='0 0 320 285'%3E%3Crect width='320' height='285' fill='%23ffffff'/%3E%3Cpolygon points='130,68.1 50.1,247.7 284.9,189.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='130' y1='68.1' x2='167.5' y2='218.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='84.57' y1='155.46' x2='95.53' y2='160.34' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='203.76' y1='133.36' x2='211.16' y2='123.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='104.92' y1='227.88' x2='107.82' y2='239.52' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='109.78' y1='226.68' x2='112.68' y2='238.32' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='222.33' y1='198.61' x2='225.23' y2='210.25' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='227.19' y1='197.41' x2='230.09' y2='209.05' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='126.6' y='54.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='37.3' y='257.4' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='300.7' y='191.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='171.4' y='234' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mos-burchakni-topish",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#d6462bf5"
+    },
+    {
+      "q": "ΔABC = ΔA₁B₁C₁ bo'lib, ikkala uchburchak perimetrlarining yig'indisi 84 sm. AB = 11 sm va BC = 13 sm bo'lsa, A₁C₁ tomoni qancha?",
+      "v": [
+        "18 sm",
+        "24 sm",
+        "42 sm",
+        "60 sm"
+      ],
+      "t": 0,
+      "izoh": "Uchburchaklar teng bo'lgani uchun perimetrlari ham teng, demak har biri 84 : 2 = 42 sm. ΔABC dan AC = 42 − 11 − 13 = 18 sm. Moslik bo'yicha A₁C₁ = AC = 18 sm, 60 sm esa 84 dan ayirish natijasida chiqadigan xato javob.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-uchburchak-perimetri",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#8dd7f92c"
+    },
+    {
+      "q": "ΔABC va ΔDEF teng, lekin tenglik ΔABC = ΔFED ko'rinishida yozilgan. Bunda AB tomoni qaysi tomonga teng bo'ladi?",
+      "v": [
+        "DF",
+        "Buni aniqlab bo'lmaydi",
+        "FE",
+        "DE"
+      ],
+      "t": 2,
+      "izoh": "Yozuvdagi uchlar tartibi moslikni belgilaydi: A ↔ F, B ↔ E, C ↔ D. Shunga ko'ra AB tomoni FE tomoniga mos keladi, ya'ni AB = FE. Harflar tartibini e'tiborsiz qoldirib AB = DE deb yozish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tenglik-yozuvidagi-moslik",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#2cd935f2"
+    },
+    {
+      "q": "Hovuz kengligini o'lchayotgan o'quvchi vertikal burchaklar o'rniga tasodifiy burchak oldi, lekin ikki tomonni teng qilib qoldirdi. Uning natijasi nima uchun noto'g'ri chiqadi?",
+      "v": [
+        "Aslida natija baribir to'g'ri chiqadi",
+        "Burchaklar teng bo'lmasa birinchi alomat bajarilmaydi",
+        "Ikki tomon teng bo'lmagani uchun",
+        "Uchburchak tengsizligi buzilgani uchun"
+      ],
+      "t": 1,
+      "izoh": "Birinchi alomat uchta shartni talab qiladi: ikki tomon tengligi va aynan ular orasidagi burchak tengligi. Bu yerda tomonlar teng qilingan, ammo burchaklar teng emas, demak uchburchaklar teng emas. Burchak kattaroq bo'lsa unga qarshi tomon uzunroq, kichikroq bo'lsa qisqaroq chiqadi, shu sababli o'lchov xato bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yetib-bolmas-masofa",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#12ad88ab"
+    },
+    {
+      "q": "Tomning ikki qiyaligi teng uzunlikda bo'lib, cho'qqidan pastga tik ustun tushirilgan. Ustun tomning pastki chetini teng ikkiga bo'lishini qanday isbotlash mumkin?",
+      "v": [
+        "Pifagor teoremasini ikki marta qo'llab",
+        "Uchburchak tengsizligi orqali",
+        "Isbotlab bo'lmaydi, faqat o'lchash kerak",
+        "Hosil bo'lgan to'g'ri burchakli uchburchaklar gipotenuza va katet bo'yicha teng"
+      ],
+      "t": 3,
+      "izoh": "Ustun tik bo'lgani uchun ikkita to'g'ri burchakli uchburchak hosil bo'ladi. Ularning gipotenuzalari — tomning teng qiyaliklari, kateti esa umumiy ustunning o'zi. Gipotenuza va katet alomatiga ko'ra uchburchaklar teng, demak ikkinchi katetlar ham teng, ya'ni ustun pastki chetni teng ikkiga bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='310' height='285' viewBox='0 0 310 285'%3E%3Crect width='310' height='285' fill='%23ffffff'/%3E%3Cpolygon points='155,83.2 34,201.8 276,201.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='155' y1='83.2' x2='155' y2='201.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='98.7' y1='146.8' x2='90.3' y2='138.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='219.7' y1='138.2' x2='211.3' y2='146.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='143,201.8 143,189.8 155,189.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='155' y='72.7' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='19.7' y='211' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='290.3' y='211' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='155' y='223.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-isbot",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#1d8cd72b"
+    },
+    {
+      "q": "Rassom uchburchakli ramkaning medianasini ikki barobar uzaytirib parallelogramm hosil qildi. Bu qurilishda paydo bo'lgan ikkita uchburchak nima uchun teng bo'ladi?",
+      "v": [
+        "Uchala tomoni teng bo'lgani uchun",
+        "Uchala burchagi teng bo'lgani uchun",
+        "Perimetrlari teng bo'lgani uchun",
+        "Vertikal burchak va ikki juft teng tomon tufayli"
+      ],
+      "t": 3,
+      "izoh": "Medianani ikki barobar uzaytirganda uning o'rtasidagi nuqta ikkala kesmani ham teng ikkiga bo'ladi. Shu nuqtada vertikal burchaklar teng, unga yopishgan tomonlar esa juft-juft teng. Birinchi alomat bo'yicha uchburchaklar teng, natijada qarama-qarshi tomonlari teng parallelogramm hosil bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='280' viewBox='0 0 320 280'%3E%3Crect width='320' height='280' fill='%23ffffff'/%3E%3Cpolygon points='128.5,34 68.8,140 191.5,246 251.2,140' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68.8' y1='140' x2='251.2' y2='140' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='128.5' y1='34' x2='191.5' y2='246' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='85.3' x2='138.5' y2='88.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='181.5' y1='191.3' x2='170' y2='194.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='111.9' y1='134' x2='111.9' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='116.9' y1='134' x2='116.9' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='203.1' y1='134' x2='203.1' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='208.1' y1='134' x2='208.1' y2='146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='124.2' y='24.1' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='53.8' y='144.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='266.2' y='144.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='195.8' y='264.9' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='164.3' y='158.9' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mediana-uzaytirish",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#9fd46483"
+    },
+    {
+      "q": "Parallelogrammning diagonallari O nuqtada kesishadi. ΔAOB = ΔCOD tengligidan diagonallar haqida qanday xossa isbotlanadi?",
+      "v": [
+        "Diagonallar burchaklarni teng ikkiga bo'ladi",
+        "Diagonallar kesishish nuqtasida teng ikkiga bo'linadi",
+        "Diagonallar o'zaro perpendikulyar bo'ladi",
+        "Diagonallar teng uzunlikda bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Uchburchaklar tengligidan mos tomonlar AO = OC va BO = OD kelib chiqadi. Bu esa har bir diagonal kesishish nuqtasida teng ikkiga bo'linishini bildiradi. Diagonallarning perpendikulyarligi rombda, tengligi esa to'g'ri to'rtburchakda bo'ladi, umumiy parallelogrammda emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='250' viewBox='0 0 340 250'%3E%3Crect width='340' height='250' fill='%23ffffff'/%3E%3Cpolygon points='94.9,63.3 32,186.7 245.1,186.7 308,63.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='32' y1='186.7' x2='308' y2='63.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='94.9' y1='63.3' x2='245.1' y2='186.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='182.8' y='123.8' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='83.3' y='58.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='18.3' y='197.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='256.7' y='200.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='321.7' y='61.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallelogramm-diagonal",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#7f2f2880"
+    },
+    {
+      "q": "∠AOB ichida olingan K nuqtadan burchak tomonlarigacha masofalar teng ekani ma'lum. Bundan qanday xulosa chiqadi?",
+      "v": [
+        "K nuqta tomonlardan biriga tegishli bo'ladi",
+        "Hech qanday xulosa chiqarib bo'lmaydi",
+        "K nuqta ∠AOB bissektrisasida yotadi",
+        "K nuqta burchak uchi bilan ustma-ust tushadi"
+      ],
+      "t": 2,
+      "izoh": "Bu bissektrisa xossasining teskarisi. K dan tomonlarga tushirilgan perpendikulyarlar teng bo'lsa, hosil bo'lgan to'g'ri burchakli uchburchaklar umumiy OK gipotenuzasi va teng katet bo'yicha teng bo'ladi. Demak ∠AOK = ∠BOK, ya'ni OK nur burchakni teng ikkiga bo'ladi va bissektrisa hisoblanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='250' viewBox='0 0 330 250'%3E%3Crect width='330' height='250' fill='%23ffffff'/%3E%3Cline x1='66' y1='218' x2='264' y2='218' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='66' y1='218' x2='133.7' y2='32' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='171.4' y1='144.2' x2='171.4' y2='218' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='171.4' y1='144.2' x2='102.1' y2='119' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='159.4,218 159.4,206 171.4,206' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='106.2,107.7 117.5,111.8 113.4,123.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='177.4' y1='181.1' x2='165.4' y2='181.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='134.7' y1='137.2' x2='138.8' y2='126' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='52.3' y='228.6' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Ctext x='177.4' y='136.1' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='171.4' y='236.5' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='88.9' y='118.7' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Ctext x='275.3' y='226.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='132' y='24.6' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-teng-uzoqlik",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#123b1124"
+    },
+    {
+      "q": "Uchburchak tomonlarining o'rta perpendikulyarlari bitta nuqtada kesishishini isbotlashda qaysi xossadan foydalaniladi?",
+      "v": [
+        "O'rta perpendikulyardagi nuqta kesma uchlaridan teng uzoqlikda bo'lishidan",
+        "Uchburchak burchaklari yig'indisi 180° ekanidan",
+        "Uchburchak tengsizligidan",
+        "Pifagor teoremasidan"
+      ],
+      "t": 0,
+      "izoh": "Ikki tomonning o'rta perpendikulyarlari kesishgan nuqta birinchi kesmaning uchlaridan ham, ikkinchisining uchlaridan ham teng uzoqlikda bo'ladi. Demak u uchburchakning uchala uchidan teng uzoqda, shuning uchun uchinchi tomonning o'rta perpendikulyarida ham yotadi. Bu xossaning o'zi teng to'g'ri burchakli uchburchaklar orqali isbotlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-perpendikulyar",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#5f8830ac"
+    },
+    {
+      "q": "ΔPQR = ΔSTU bo'lib, PQ = 2m + 5 sm, ST = m + 12 sm, QR = 3n − 4 sm va TU = n + 10 sm. PQ va QR tomonlar yig'indisini toping.",
+      "v": [
+        "38 sm",
+        "34 sm",
+        "36 sm",
+        "14 sm"
+      ],
+      "t": 2,
+      "izoh": "Mos tomonlar teng, shuning uchun 2m + 5 = m + 12 dan m = 7 va PQ = 2 · 7 + 5 = 19 sm. Xuddi shunday 3n − 4 = n + 10 dan 2n = 14, ya'ni n = 7 va QR = 3 · 7 − 4 = 17 sm. Yig'indi 19 + 17 = 36 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglamali-nomalum",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#e2e753d1"
+    },
+    {
+      "q": "Teng uchburchaklarning birida ikkita burchak 3z va 2z + 20° ko'rinishida, uchinchisi esa 40° ga teng. z ning qiymatini toping.",
+      "v": [
+        "24",
+        "28",
+        "36",
+        "20"
+      ],
+      "t": 0,
+      "izoh": "Uchburchak burchaklari yig'indisi 180° bo'lgani uchun 3z + 2z + 20° + 40° = 180°. Bundan 5z + 60° = 180°, ya'ni 5z = 120° va z = 24. Tekshiruv: burchaklar 72°, 68° va 40° bo'lib, yig'indisi aynan 180° chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchinchi-burchak",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#57ee799a"
+    },
+    {
+      "q": "Ko'prik tayanchi X shaklida qurilgan: ikkita tirgak markazda kesishib, har biri kesishish nuqtasida teng ikkiga bo'lingan. Tirgak uchlarini tutashtiruvchi ikki tortqi teng ekanini nima isbotlaydi?",
+      "v": [
+        "Pifagor teoremasi",
+        "Uchburchak tengsizligi",
+        "Tortqilar aslida teng bo'lmaydi",
+        "Vertikal burchakli teng uchburchaklarning mos tomonlari tengligi"
+      ],
+      "t": 3,
+      "izoh": "Kesishish nuqtasida har bir tirgakning yarimlari teng, demak tomonlar juft-juft teng bo'ladi. Vertikal burchaklar ham teng bo'lgani uchun birinchi alomat bo'yicha ikkita uchburchak teng. Ularning mos tomonlari aynan tortqilar, shuning uchun tortqilar uzunligi bir xil chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='255' viewBox='0 0 340 255'%3E%3Crect width='340' height='255' fill='%23ffffff'/%3E%3Cline x1='40.1' y1='51.1' x2='299.9' y2='203.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='55.4' y1='223' x2='284.6' y2='32' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='40.1' y1='51.1' x2='55.4' y2='223' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='299.9' y1='203.9' x2='284.6' y2='32' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='108.1' y1='84.1' x2='102' y2='94.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='238' y1='160.5' x2='231.9' y2='170.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='106.9' y1='172.2' x2='114.6' y2='181.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='110.8' y1='169' x2='118.5' y2='178.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221.5' y1='76.7' x2='229.2' y2='86' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='225.4' y1='73.5' x2='233.1' y2='82.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 155.3 118.9 A 17 17 0 0 0 156.9 138.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 184.7 136.1 A 17 17 0 0 0 183.1 116.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='27.2' y='48' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='43.9' y='237.1' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Ctext x='312.8' y='216' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='296.1' y='26.9' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Ctext x='181.2' y='138.6' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-va-umumiy-tomon",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#d261e8fb"
+    },
+    {
+      "q": "Ikki ustaxonada uchburchak detal yasaldi: ikkalasida ham 20 sm va 15 sm li tomonlar hamda 15 sm li tomonga qarshi 40° li burchak o'lchandi. Detallar bir xil chiqmasligi mumkinmi?",
+      "v": [
+        "Ha, chunki burchak juda kichik",
+        "Ha, chunki bunday ma'lumot uchburchakni bir qiymatli aniqlamaydi",
+        "Yo'q, ular albatta teng bo'ladi",
+        "Ha, chunki tomonlar nisbati noto'g'ri olingan"
+      ],
+      "t": 1,
+      "izoh": "Berilgan burchak teng tomonlar orasida emas, kichikroq tomonga qarshi yotibdi. Bunday shartda 15 sm li tomonning uchi ikkita har xil nuqtaga tushishi mumkin: bir holatda uchburchak o'tkir, ikkinchisida o'tmas burchakli chiqadi. Shuning uchun ikki tomon va biriga qarshi burchak alomat emas va detallar mos kelmasligi mumkin.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='275' viewBox='0 0 300 275'%3E%3Crect width='300' height='275' fill='%23ffffff'/%3E%3Cpolygon points='188.2,72.8 34,202.2 266,202.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='192.5' y='62.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='19.8' y='211.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279.8' y='212.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 47 191.3 A 17 17 0 0 1 51 202.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='96.3' y='135.8' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='242.3' y='136.9' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='63.1' y='196.1' font-size='13' fill='%23334155' text-anchor='middle'%3E40°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bir-xil-detal",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#1b8bf7ee"
+    },
+    {
+      "q": "O'quvchi ΔABC = ΔDEF tengligidan AB = EF degan xulosa chiqardi. Bu xulosa faqat qaysi holatda to'g'ri bo'ladi?",
+      "v": [
+        "Bu xulosa hech qachon to'g'ri emas",
+        "ΔDEF da DE = EF bo'lganda",
+        "Bu xulosa har doim to'g'ri",
+        "ΔABC to'g'ri burchakli bo'lganda"
+      ],
+      "t": 1,
+      "izoh": "Yozuvdagi moslik A ↔ D, B ↔ E, C ↔ F, demak AB tomoniga DE tomoni mos keladi va AB = DE. AB = EF tenglik esa faqat DE = EF bo'lgandagina bajariladi, ya'ni ΔDEF teng yonli bo'lsa. Umumiy holda uchlarning tartibini e'tiborsiz qoldirish xato xulosaga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "isbotdagi-xato",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#68ad6462"
+    },
+    {
+      "q": "Quyidagi ma'lumotlardan qaysi biri uchburchakni bir qiymatli aniqlaydi, ya'ni undan faqat bitta shakl quriladi?",
+      "v": [
+        "Uch burchak: 50°, 60° va 70°",
+        "Ikki tomon: 6 sm va 8 sm",
+        "Bitta tomon 6 sm va bitta burchak 40°",
+        "Uch tomon uzunligi: 6 sm, 8 sm va 13 sm"
+      ],
+      "t": 3,
+      "izoh": "Uchburchak bir qiymatli tiklanishi uchun uchta tomon yetarli — buni uchinchi alomat kafolatlaydi. 6, 8 va 13 sonlari uchburchak tengsizligini qanoatlantiradi, chunki 6 + 8 = 14 va bu 13 dan katta. Uchta burchak berilganda o'lchami har xil cheksiz ko'p o'xshash uchburchak chiqadi, ikki tomon yoki bitta tomon esa umuman yetarli emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='275' viewBox='0 0 300 275'%3E%3Crect width='300' height='275' fill='%23ffffff'/%3E%3Cpolygon points='130.8,114.6 34,160.4 266,160.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='125' y='105.3' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='19.1' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280.9' y='166.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='66.5' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='156.2' y='179.7' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3Ctext x='214.2' y='139.8' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-tomon-alomati",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#5c009c81"
+    },
+    {
+      "q": "ΔABC va ΔA₁B₁C₁ uchburchaklarda AB = A₁B₁, AC = A₁C₁ va ∠B = ∠B₁ berilgan. Nima uchun bu shartlardan uchburchaklar tengligi kelib chiqmaydi?",
+      "v": [
+        "Teng burchak teng tomonlar orasida yotmaydi",
+        "Uchinchi tomonlar berilmagan",
+        "Burchaklar yig'indisi tekshirilmagan",
+        "Aslida kelib chiqadi, birinchi alomat ishlaydi"
+      ],
+      "t": 0,
+      "izoh": "Birinchi alomatda burchak aynan teng tomonlar orasida bo'lishi shart. Bu yerda ∠B tomonlar AB va BC orasida yotadi, ammo BC emas, AC juftligi berilgan. Ya'ni burchak teng tomonlardan biriga qarshi joylashgan, bunday holat esa umumiy holda tenglikni kafolatlamaydi: agar ∠B kichikroq tomonga qarshi yotsa, shartni qanoatlantiruvchi ikkita har xil uchburchak qurish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-tomon-burchak-alomati",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#d199178c"
+    },
+    {
+      "q": "ΔABC va ΔMNP uchburchaklarda AB = MN, ∠A = ∠M va ∠C = ∠P berilgan. Tenglikni asoslash uchun qanday qo'shimcha mulohaza yuritiladi?",
+      "v": [
+        "AC = MP ekanini alohida o'lchash kerak",
+        "Bu shartlardan tenglik umuman kelib chiqmaydi",
+        "∠B = ∠N ekani burchaklar yig'indisidan topiladi va ikkinchi alomat qo'llanadi",
+        "Hech narsa kerak emas, uchta burchak tengligi yetarli"
+      ],
+      "t": 2,
+      "izoh": "Ikkinchi alomatda burchaklar berilgan tomonga yopishgan bo'lishi kerak, ammo ∠C tomon AB ga yopishmagan. Uchburchak burchaklari yig'indisi 180° ekanidan ∠B = 180° − ∠A − ∠C va ∠N = 180° − ∠M − ∠P, demak ∠B = ∠N. Endi AB tomoniga yopishgan ∠A va ∠B burchaklar teng bo'lib qoladi, ikkinchi alomat ishlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tomon-ikki-burchak-alomati",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#329442d8"
+    },
+    {
+      "q": "To'g'ri burchakli ikki uchburchakda katetlardan biri teng. Quyidagilardan qaysi biri tenglikni isbotlash uchun yetarli emas?",
+      "v": [
+        "Ikkala uchburchakda o'tkir burchaklar yig'indisi 90° ekani",
+        "Ikkinchi katetlari teng bo'lishi",
+        "Gipotenuzalari teng bo'lishi",
+        "Berilgan katetga yopishgan o'tkir burchaklar teng bo'lishi"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri burchakli uchburchakda o'tkir burchaklar yig'indisi doim 90° ga teng, shuning uchun bu shart hech qanday yangi ma'lumot bermaydi va ikki uchburchakni farqlamaydi. Qolgan uchtasi esa mos alomatlarni to'ldiradi: ikki katet, katet va gipotenuza, katet va unga yopishgan o'tkir burchak. Demak yetarli bo'lmagani — o'tkir burchaklar yig'indisi haqidagi shart.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yetishmayotgan-shart",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#fa08aebe"
+    },
+    {
+      "q": "Ikki uyning tomi bir xil qurilgan: har birida yerga tik ustun 3 m, qiya tom cheti esa 5 m va ustun bilan tom orasidagi burchak to'g'ri. Tomning yer bo'ylab uzunligi teng ekani qaysi alomat bilan asoslanadi?",
+      "v": [
+        "Uch tomon alomati bilan",
+        "Katet va o'tkir burchak alomati bilan",
+        "Gipotenuza va katet alomati bilan",
+        "Ikki katet alomati bilan"
+      ],
+      "t": 2,
+      "izoh": "Har bir tomda tik ustun va yer bo'ylab uzunlik katetlar, qiya tom cheti esa gipotenuza bo'ladi. Berilganda gipotenuza 5 m va bitta katet 3 m teng, demak uchburchaklar gipotenuza va katet bo'yicha teng. Shundan ikkinchi katet ham teng chiqadi: 5² − 3² = 25 − 9 = 16, ya'ni 4 m.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='275' viewBox='0 0 300 275'%3E%3Crect width='300' height='275' fill='%23ffffff'/%3E%3Cpolygon points='34,50.5 34,224.5 266,224.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='25.7' y='42.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='22' y='238' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='280' y='234.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpolyline points='34,212.5 46,212.5 46,224.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='19' y='136.4' font-size='13' fill='%23334155' text-anchor='middle'%3E3 m%3C/text%3E%3Ctext x='162.8' y='132.4' font-size='13' fill='%23334155' text-anchor='middle'%3E5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tbu-gipotenuza-katet",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#70b2b4d4"
+    },
+    {
+      "q": "Chizmakash ikki teng panelni belgiladi: ΔMNP = ΔQRT. MN = 2a + 5 sm, QR = 3a − 7 sm va NP = 18 sm. Panel perimetri 60 sm bo'lsa, MP tomoni qancha?",
+      "v": [
+        "31 sm",
+        "13 sm",
+        "12 sm",
+        "29 sm"
+      ],
+      "t": 1,
+      "izoh": "Mos tomonlar teng: 2a + 5 = 3a − 7, bundan a = 12 va MN = 2 · 12 + 5 = 29 sm. Perimetr MN + NP + MP = 60 sm bo'lgani uchun MP = 60 − 29 − 18 = 13 sm. a ning qiymatini yoki MN ni javob deb olish tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mos-tomonni-topish",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#bdfb4035"
+    },
+    {
+      "q": "ΔABC = ΔKLM bo'lib, ∠A va ∠B burchaklar nisbati 4 : 5 va ∠M = 45°. ∠L burchagi necha gradusga teng?",
+      "v": [
+        "60°",
+        "45°",
+        "135°",
+        "75°"
+      ],
+      "t": 3,
+      "izoh": "Moslikka ko'ra ∠C = ∠M = 45°, demak ∠A + ∠B = 180° − 45° = 135°. Nisbat 4 : 5 bo'lgani uchun bo'laklar yig'indisi 9 ta, bitta bo'lak esa 135° : 9 = 15°. Bundan ∠A = 60° va ∠B = 75°, ∠L burchagi ∠B ga mos bo'lgani uchun ∠L = 75°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='62.3,57.2 30,177.8 182.9,177.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='57.1' y='47.6' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='17.4' y='190.5' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='196.6' y='188.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpolygon points='367.7,57.2 400,177.8 247.1,177.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='372.9' y='47.6' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='412.6' y='190.5' font-size='13' fill='%23334155' text-anchor='middle'%3EL%3C/text%3E%3Ctext x='233.4' y='188.4' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Cpath d='M 259.1 165.8 A 17 17 0 0 1 264.1 177.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='275.7' y='170.4' font-size='13' fill='%23334155' text-anchor='middle'%3E45°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mos-burchakni-topish",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#09e1460c"
+    },
+    {
+      "q": "Maktab hovlisidagi ikki ustun orasini o'lchash uchun o'qituvchi 25 m li yordamchi baza chizib, uning uchlaridan 48° va 71° li burchaklarni o'lchadi, so'ng shu bazani boshqa qulay joyda takrorladi. Ikkinchi uchburchakdagi o'lchash qiyin tomon nimaga teng bo'ladi?",
+      "v": [
+        "25 m ga",
+        "Ikki burchak yig'indisiga",
+        "Bazaning yarmiga",
+        "Birinchi uchburchakning mos tomoniga"
+      ],
+      "t": 3,
+      "izoh": "Baza 25 m va unga yopishgan 48° hamda 71° li burchaklar ikkala uchburchakda teng, demak ikkinchi alomat bo'yicha uchburchaklar teng. Teng uchburchaklarda mos tomonlar teng bo'lgani uchun o'lchash qiyin tomon birinchi uchburchakning mos tomoniga aynan teng. Shu sababli qulay joyda o'lchab natijani ko'chirish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yetib-bolmas-masofa",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#cd63b768"
+    },
+    {
+      "q": "ΔABC da AB = AC. B va C uchlaridan yon tomonlarga BE va CF balandliklar tushirildi. BE = CF ekanini isbotlashda quyidagilardan qaysi biri to'g'ri asos bo'ladi?",
+      "v": [
+        "ΔBEA va ΔCFA gipotenuza va katet bo'yicha teng",
+        "ΔBEC va ΔCFB gipotenuza va o'tkir burchak bo'yicha teng",
+        "ΔABE va ΔACF uch tomon bo'yicha teng",
+        "ΔAEF va ΔABC ikki burchak bo'yicha teng"
+      ],
+      "t": 1,
+      "izoh": "ΔBEC va ΔCFB uchburchaklarda ∠BEC = ∠CFB = 90°, BC tomoni esa ikkalasiga umumiy gipotenuza. Teng yonli uchburchakning asos burchaklari teng bo'lgani uchun ∠ECB = ∠FBC. Gipotenuza va o'tkir burchak alomatiga ko'ra uchburchaklar teng, demak mos katetlar BE = CF.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='310' height='285' viewBox='0 0 310 285'%3E%3Crect width='310' height='285' fill='%23ffffff'/%3E%3Cpolygon points='155,34 63.4,251 246.6,251' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='63.4' y1='251' x2='218.9' y2='185.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='246.6' y1='251' x2='91.1' y2='185.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='207.8,190.1 203.2,179 214.2,174.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='102.2,190.1 97.5,201.1 86.4,196.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='114.7' y1='144.8' x2='103.7' y2='140.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='206.3' y1='140.2' x2='195.3' y2='144.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='155' y='23.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='51.6' y='264.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='258.4' y='264.8' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='234.8' y='191.6' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='75.2' y='191.6' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-yonli-isbot",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#f264fe99"
+    },
+    {
+      "q": "Usta romb shaklidagi panjara yasab, ikkala diagonalni ham o'rnatdi. Hosil bo'lgan to'rtta uchburchak teng ekanini qaysi alomat bilan isbotlash mumkin?",
+      "v": [
+        "Gipotenuza va o'tkir burchak alomati bilan",
+        "Bu uchburchaklar aslida teng emas",
+        "Uch tomon alomati bilan, chunki tomonlar va yarim diagonallar teng",
+        "Faqat uch burchak alomati bilan"
+      ],
+      "t": 2,
+      "izoh": "Rombda barcha tomonlar teng, diagonallar esa kesishish nuqtasida teng ikkiga bo'linadi. Demak har bir kichik uchburchakning tomonlari rombning tomoni, birinchi diagonalning yarmi va ikkinchi diagonalning yarmidan iborat va bular to'rtala uchburchakda bir xil. Uchinchi alomatga ko'ra to'rtala uchburchak teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='250' viewBox='0 0 340 250'%3E%3Crect width='340' height='250' fill='%23ffffff'/%3E%3Cpolygon points='127.6,48.5 32,201.5 212.4,201.5 308,48.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='32' y1='201.5' x2='308' y2='48.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='127.6' y1='48.5' x2='212.4' y2='201.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='182.2' y='122.7' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='84.9' y1='128.2' x2='74.7' y2='121.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='255.1' y1='121.8' x2='265.3' y2='128.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='122.2' y1='195.5' x2='122.2' y2='207.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='217.8' y1='42.5' x2='217.8' y2='54.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='120.3' y='39.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='18.9' y='213.3' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='219.7' y='219.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='321.1' y='45.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelogramm-diagonal",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#ea62f774"
+    },
+    {
+      "q": "Duradgor ikkita teng uchburchak taxta kesdi. Birinchisining perimetri 7k + 6 sm, ikkinchisiniki esa 4k + 27 sm. Bitta taxtaning perimetri necha santimetr?",
+      "v": [
+        "55 sm",
+        "7 sm",
+        "49 sm",
+        "110 sm"
+      ],
+      "t": 0,
+      "izoh": "Teng uchburchaklarning perimetrlari ham teng, shuning uchun 7k + 6 = 4k + 27. Bundan 3k = 21, ya'ni k = 7. Bitta taxtaning perimetri 7 · 7 + 6 = 55 sm, ikkinchi ifoda ham 4 · 7 + 27 = 55 sm beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglamali-nomalum",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#f8ba631f"
+    },
+    {
+      "q": "Bir turdagi yo'l belgilari teng tomonli uchburchak shaklida ishlab chiqariladi va har bir tomoni 70 sm. Belgilarni bir xil deb hisoblash uchun yana nimani tekshirish kerak?",
+      "v": [
+        "Perimetrini hisoblash kerak",
+        "Yuzasini solishtirish kerak",
+        "Hech narsani, uchta tomonning tengligi yetarli",
+        "Burchaklarini ham o'lchash kerak"
+      ],
+      "t": 2,
+      "izoh": "Belgilar teng tomonli uchburchak bo'lib, uchala tomoni 70 sm dan. Uchinchi alomatga ko'ra uchta tomoni mos ravishda teng uchburchaklar teng, demak qo'shimcha o'lchov kerak emas. Burchaklar avtomatik 60° dan chiqadi, perimetr va yuza esa tenglikning natijasi, sharti emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='275' viewBox='0 0 300 275'%3E%3Crect width='300' height='275' fill='%23ffffff'/%3E%3Cpolygon points='150,37 34,238 266,238' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='26.5' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='21' y='250' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='279' y='250' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cline x1='97.2' y1='140.5' x2='86.8' y2='134.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='232' x2='150' y2='244' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='202.8' y1='140.5' x2='213.2' y2='134.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='78.1' y='134' font-size='13' fill='%23334155' text-anchor='middle'%3E70 sm%3C/text%3E%3Ctext x='150' y='258.5' font-size='13' fill='%23334155' text-anchor='middle'%3E70 sm%3C/text%3E%3Ctext x='221.9' y='134' font-size='13' fill='%23334155' text-anchor='middle'%3E70 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bir-xil-detal",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#edd01bb4"
+    },
+    {
+      "q": "Isbotda uchburchaklarning yuzalari teng, demak ular o'zaro teng deb yozilgan. Bu mulohaza nega noto'g'ri?",
+      "v": [
+        "Yuzasi teng, lekin shakli har xil uchburchaklar mavjud",
+        "Yuza formulasi noto'g'ri qo'llangan",
+        "Yuzalar aslida teng bo'la olmaydi",
+        "Mulohaza to'g'ri, xato yo'q"
+      ],
+      "t": 0,
+      "izoh": "Yuza asos va balandlik ko'paytmasining yarmiga teng, shuning uchun bir xil yuzani turli asos va balandlik juftliklari beradi. Asosi 12 sm, balandligi 5 sm bo'lgan uchburchak va asosi 10 sm, balandligi 6 sm bo'lgan uchburchakning yuzasi 30 sm² dan, ammo ular teng emas. Tenglik faqat alomatlar orqali isbotlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "isbotdagi-xato",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#00f84cc7"
+    },
+    {
+      "q": "Fermer ikkita uchburchak shaklidagi ekin maydonini belgiladi. Har ikkalasida 120 m va 150 m li tomonlar hamda ular orasidagi burchak 60° ga teng. Maydonlarning uchinchi chegarasi haqida nima deyish mumkin?",
+      "v": [
+        "Birinchisiniki uzunroq bo'ladi",
+        "Uzunliklari 120 : 150 nisbatda bo'ladi",
+        "Faqat burchak 90° bo'lgandagina teng bo'ladi",
+        "Ular teng uzunlikda bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Ikki tomon va ular orasidagi burchak mos ravishda teng, demak birinchi alomat bo'yicha maydonlar teng uchburchak hosil qiladi. Teng uchburchaklarda mos tomonlar ham teng bo'ladi, shuning uchun uchinchi chegara ikkala maydonda bir xil uzunlikda. Uning aniq qiymatini hisoblash shart emas, tenglik alomatning o'zidan chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='235' viewBox='0 0 430 235'%3E%3Crect width='430' height='235' fill='%23ffffff'/%3E%3Cpolygon points='91.4,70.2 30,176.6 183.5,176.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='89.3' y='59.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='16.6' y='187.8' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='197.3' y='187.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 38.5 161.9 A 17 17 0 0 1 47 176.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='46' y='121.5' font-size='13' fill='%23334155' text-anchor='middle'%3E120 m%3C/text%3E%3Ctext x='109' y='196.9' font-size='13' fill='%23334155' text-anchor='middle'%3E150 m%3C/text%3E%3Ctext x='56.8' y='165.6' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Cpolygon points='324.4,58.4 400,155.2 248,176.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='324.5' y='47.9' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Ctext x='414.2' y='164.4' font-size='13' fill='%23334155' text-anchor='middle'%3EL%3C/text%3E%3Ctext x='235.2' y='188.9' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Cpath d='M 389.5 141.8 A 17 17 0 0 0 383.2 157.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='375.8' y='103' font-size='13' fill='%23334155' text-anchor='middle'%3E120 m%3C/text%3E%3Ctext x='324' y='186.4' font-size='13' fill='%23334155' text-anchor='middle'%3E150 m%3C/text%3E%3Ctext x='371.3' y='148.1' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tomon-burchak-alomati",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#b0c86cdd"
+    },
+    {
+      "q": "Xaritada masshtab bilan chizilgan uchburchak hovli va uning haqiqiy chegarasi burchaklari bir xil, ammo tomonlari 1000 marta farq qiladi. Bu misol qaysi noto'g'ri fikrni rad etadi?",
+      "v": [
+        "Uchburchak burchaklari yig'indisi 180° degan fikrni",
+        "Burchaklari teng uchburchaklar teng bo'ladi degan fikrni",
+        "Uchta tomoni teng uchburchaklar teng degan fikrni",
+        "Teng uchburchaklarning yuzalari teng degan fikrni"
+      ],
+      "t": 1,
+      "izoh": "Xaritadagi shakl bilan haqiqiy hovli burchaklari bir xil, demak ular o'xshash. Lekin tomonlari 1000 marta farq qilgani uchun ular teng emas. Bu misol burchaklar tengligidan uchburchaklar tengligi kelib chiqadi degan noto'g'ri fikrni rad etadi: burchaklar faqat shaklni, tomonlar esa o'lchamni belgilaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "alomat-emas-shart",
+      "id": "matematika_plan_m05-uchburchaklar-tengligi-alomatlari#54739b61"
+    }
+  ]
+}

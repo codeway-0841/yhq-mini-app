@@ -1,0 +1,1306 @@
+{
+  "nom": "Adverbs of frequency",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "I ___ drink coffee in the morning. Every day at 7 o'clock.",
+      "v": [
+        "never",
+        "always",
+        "sometimes",
+        "rarely"
+      ],
+      "t": 1,
+      "izoh": "Har kuni → always.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#7b9b2baa"
+    },
+    {
+      "q": "She ___ eats meat because she is a vegetarian.",
+      "v": [
+        "always",
+        "usually",
+        "never",
+        "often"
+      ],
+      "t": 2,
+      "izoh": "Hech qachon → never.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#4dde8602"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "He goes usually to school by bus.",
+        "He usually goes to school by bus.",
+        "He goes to school usually by bus.",
+        "Usually he go to school by bus."
+      ],
+      "t": 1,
+      "izoh": "Ravish oddiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#9a16dc9c"
+    },
+    {
+      "q": "My friends and I ___ play football at the weekend.",
+      "v": [
+        "often",
+        "am often",
+        "often are",
+        "is often"
+      ],
+      "t": 0,
+      "izoh": "Oddiy fe'l bilan faqat ravishning o'zi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#74f286a1"
+    },
+    {
+      "q": "Tom is ___ late for class.",
+      "v": [
+        "late never",
+        "sometimes",
+        "never is",
+        "late always"
+      ],
+      "t": 1,
+      "izoh": "'be' fe'lidan keyin: is + sometimes.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#f9730454"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I am always happy.",
+        "I always am happy.",
+        "Always I am happy.",
+        "I am happy always."
+      ],
+      "t": 0,
+      "izoh": "'am' (be) fe'lidan keyin ravish keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#9a16dc9c~2"
+    },
+    {
+      "q": "We ___ go to the cinema, maybe once a month.",
+      "v": [
+        "always",
+        "usually",
+        "sometimes",
+        "never"
+      ],
+      "t": 2,
+      "izoh": "Ba'zan → sometimes.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#aa31e20d"
+    },
+    {
+      "q": "How ___ do you visit your grandparents?",
+      "v": [
+        "much",
+        "many",
+        "often",
+        "long"
+      ],
+      "t": 2,
+      "izoh": "Chastota so'raganda → how often.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#a47b5999"
+    },
+    {
+      "q": "They ___ watch TV in the evening. It's their habit every night.",
+      "v": [
+        "never",
+        "usually",
+        "rarely",
+        "seldom"
+      ],
+      "t": 1,
+      "izoh": "Odatda/deyarli har doim → usually.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#7981819a"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She never is tired.",
+        "She is never tired.",
+        "Never she is tired.",
+        "She is tired never."
+      ],
+      "t": 1,
+      "izoh": "'is' dan keyin: is + never.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#9a16dc9c~3"
+    },
+    {
+      "q": "Which adverb means 100% (all the time)?",
+      "v": [
+        "always",
+        "never",
+        "sometimes",
+        "rarely"
+      ],
+      "t": 0,
+      "izoh": "'always' = 100%, doim.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#e27ce6f1"
+    },
+    {
+      "q": "Which adverb means 0% (not at any time)?",
+      "v": [
+        "never",
+        "always",
+        "usually",
+        "often"
+      ],
+      "t": 0,
+      "izoh": "'never' = 0%, hech qachon.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#58ffc0c3"
+    },
+    {
+      "q": "Which adverb means about 50% of the time?",
+      "v": [
+        "sometimes",
+        "always",
+        "never",
+        "usually"
+      ],
+      "t": 0,
+      "izoh": "'sometimes' = ~50%, ba'zan.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#17511f3c"
+    },
+    {
+      "q": "Which adverb means about 90% (almost always)?",
+      "v": [
+        "usually",
+        "sometimes",
+        "rarely",
+        "never"
+      ],
+      "t": 0,
+      "izoh": "'usually' = ~90%, odatda.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#64de2e2f"
+    },
+    {
+      "q": "Which adverb means about 70% (many times)?",
+      "v": [
+        "often",
+        "rarely",
+        "never",
+        "always"
+      ],
+      "t": 0,
+      "izoh": "'often' = ~70%, tez-tez.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#5780fd59"
+    },
+    {
+      "q": "Which adverb means about 10% (almost never)?",
+      "v": [
+        "rarely",
+        "often",
+        "always",
+        "usually"
+      ],
+      "t": 0,
+      "izoh": "'rarely' = ~10%, kamdan-kam.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#7ae2a3aa"
+    },
+    {
+      "q": "Which word is the most frequent?",
+      "v": [
+        "always",
+        "usually",
+        "sometimes",
+        "never"
+      ],
+      "t": 0,
+      "izoh": "'always' = 100%, doim.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#96bfc208"
+    },
+    {
+      "q": "Which word is the least frequent?",
+      "v": [
+        "never",
+        "rarely",
+        "sometimes",
+        "often"
+      ],
+      "t": 0,
+      "izoh": "'never' = 0%, hech qachon.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#dd9d03c3"
+    },
+    {
+      "q": "'She never eats meat.' This means she eats meat...",
+      "v": [
+        "0% of the time",
+        "100% of the time",
+        "50% of the time",
+        "90% of the time"
+      ],
+      "t": 0,
+      "izoh": "'never' = 0%, hech qachon.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#ee481e4c"
+    },
+    {
+      "q": "'I always brush my teeth.' This means...",
+      "v": [
+        "every time, 100%",
+        "never, 0%",
+        "about half the time",
+        "almost never"
+      ],
+      "t": 0,
+      "izoh": "'always' = 100%, doim.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#5a398fa0"
+    },
+    {
+      "q": "'We sometimes go to the cinema.' This means about...",
+      "v": [
+        "50% of the time",
+        "100% of the time",
+        "0% of the time",
+        "90% of the time"
+      ],
+      "t": 0,
+      "izoh": "'sometimes' = ~50%, ba'zan.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#1fb91f9c"
+    },
+    {
+      "q": "'He usually walks to work.' This means...",
+      "v": [
+        "almost always",
+        "never",
+        "about 10%",
+        "exactly 50%"
+      ],
+      "t": 0,
+      "izoh": "'usually' = ~90%, odatda.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#06b08478"
+    },
+    {
+      "q": "Order from most to least: always, ___, sometimes, never. What fits the gap?",
+      "v": [
+        "often",
+        "never",
+        "always",
+        "seldom-only"
+      ],
+      "t": 0,
+      "izoh": "'often' = ~70%, tez-tez.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#10e8b178"
+    },
+    {
+      "q": "Which adverb is between 'sometimes' and 'never'?",
+      "v": [
+        "rarely",
+        "always",
+        "usually",
+        "often"
+      ],
+      "t": 0,
+      "izoh": "'rarely' = ~10%, kamdan-kam.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#643011a7"
+    },
+    {
+      "q": "Which adverb is close to 100% but not always?",
+      "v": [
+        "usually",
+        "never",
+        "rarely",
+        "sometimes"
+      ],
+      "t": 0,
+      "izoh": "'usually' = ~90%, odatda.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#1f8a837f"
+    },
+    {
+      "q": "'How often do you play football?' asks about...",
+      "v": [
+        "frequency",
+        "place",
+        "price",
+        "time of day"
+      ],
+      "t": 0,
+      "izoh": "'how often' chastota (necha marta) haqida so'raydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#5e67a16b"
+    },
+    {
+      "q": "Choose the best answer to 'How often do you study English?'",
+      "v": [
+        "Every day.",
+        "At school.",
+        "With my friend.",
+        "Because I like it."
+      ],
+      "t": 0,
+      "izoh": "'how often' chastota (necha marta) haqida so'raydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#1d2f5aae"
+    },
+    {
+      "q": "Which question asks about frequency?",
+      "v": [
+        "How often do you swim?",
+        "Where do you swim?",
+        "When do you swim?",
+        "Why do you swim?"
+      ],
+      "t": 0,
+      "izoh": "'how often' chastota (necha marta) haqida so'raydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#d6dee498"
+    },
+    {
+      "q": "'How often' is used to ask...",
+      "v": [
+        "how many times",
+        "how much money",
+        "how big",
+        "how far"
+      ],
+      "t": 0,
+      "izoh": "'how often' chastota (necha marta) haqida so'raydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#ff6fd75b"
+    },
+    {
+      "q": "Answer 'How often do you see your grandparents?' with...",
+      "v": [
+        "Twice a month.",
+        "In the village.",
+        "They are kind.",
+        "Yes, I do."
+      ],
+      "t": 0,
+      "izoh": "'how often' chastota (necha marta) haqida so'raydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#744e9152"
+    },
+    {
+      "q": "Sunday is my only free day, so I ___ work on Sunday.",
+      "v": [
+        "never",
+        "always",
+        "usually",
+        "often"
+      ],
+      "t": 0,
+      "izoh": "'never' = 0%, hech qachon.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#7a893a80"
+    },
+    {
+      "q": "I ___ eat breakfast; I never skip it.",
+      "v": [
+        "always",
+        "never",
+        "rarely",
+        "seldom-not"
+      ],
+      "t": 0,
+      "izoh": "'always' = 100%, doim.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#990e5085"
+    },
+    {
+      "q": "I ___ drink coffee, only two or three times a year.",
+      "v": [
+        "rarely",
+        "always",
+        "usually",
+        "often"
+      ],
+      "t": 0,
+      "izoh": "'rarely' = ~10%, kamdan-kam.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#17f372f3"
+    },
+    {
+      "q": "It's a habit: she ___ gets up at 7 o'clock every day.",
+      "v": [
+        "always",
+        "never",
+        "rarely",
+        "sometimes-not"
+      ],
+      "t": 0,
+      "izoh": "'always' = 100%, doim.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#88408613"
+    },
+    {
+      "q": "He works six days a week, so he ___ works.",
+      "v": [
+        "usually",
+        "never",
+        "rarely",
+        "seldom"
+      ],
+      "t": 0,
+      "izoh": "'usually' = ~90%, odatda.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#8a391b53"
+    },
+    {
+      "q": "Put the words in the correct order: (I / always / walk / to school)",
+      "v": [
+        "I always walk to school.",
+        "I walk always to school.",
+        "Always I walk to school.",
+        "I walk to school always."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#86bbe433"
+    },
+    {
+      "q": "Put the words in the correct order: (We / usually / play / football)",
+      "v": [
+        "We usually play football.",
+        "We play usually football.",
+        "Usually we play football.",
+        "We play football usually."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#59b7b201"
+    },
+    {
+      "q": "Put the words in the correct order: (They / often / watch / TV in the evening)",
+      "v": [
+        "They often watch TV in the evening.",
+        "They watch often TV in the evening.",
+        "Often they watch TV in the evening.",
+        "They watch TV in the evening often."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#3a8aa1bb"
+    },
+    {
+      "q": "Put the words in the correct order: (You / sometimes / drink / tea)",
+      "v": [
+        "You sometimes drink tea.",
+        "You drink sometimes tea.",
+        "Sometimes you drink tea.",
+        "You drink tea sometimes."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#a6b6184f"
+    },
+    {
+      "q": "Put the words in the correct order: (I / rarely / get / up early)",
+      "v": [
+        "I rarely get up early.",
+        "I get rarely up early.",
+        "Rarely I get up early.",
+        "I get up early rarely."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#84b2367c"
+    },
+    {
+      "q": "Put the words in the correct order: (We / never / visit / our grandparents)",
+      "v": [
+        "We never visit our grandparents.",
+        "We visit never our grandparents.",
+        "Never we visit our grandparents.",
+        "We visit our grandparents never."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#e8935075"
+    },
+    {
+      "q": "Put the words in the correct order: (They / always / read / books)",
+      "v": [
+        "They always read books.",
+        "They read always books.",
+        "Always they read books.",
+        "They read books always."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#e60e6f4b"
+    },
+    {
+      "q": "Put the words in the correct order: (You / usually / do / your homework)",
+      "v": [
+        "You usually do your homework.",
+        "You do usually your homework.",
+        "Usually you do your homework.",
+        "You do your homework usually."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#5e32af19"
+    },
+    {
+      "q": "Put the words in the correct order: (I / often / help / my mother)",
+      "v": [
+        "I often help my mother.",
+        "I help often my mother.",
+        "Often I help my mother.",
+        "I help my mother often."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#7fcf2a82"
+    },
+    {
+      "q": "Put the words in the correct order: (We / sometimes / clean / the house)",
+      "v": [
+        "We sometimes clean the house.",
+        "We clean sometimes the house.",
+        "Sometimes we clean the house.",
+        "We clean the house sometimes."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#6556edfb"
+    },
+    {
+      "q": "Put the words in the correct order: (They / rarely / go / to the park)",
+      "v": [
+        "They rarely go to the park.",
+        "They go rarely to the park.",
+        "Rarely they go to the park.",
+        "They go to the park rarely."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#ee523fc0"
+    },
+    {
+      "q": "Put the words in the correct order: (You / never / listen / to music)",
+      "v": [
+        "You never listen to music.",
+        "You listen never to music.",
+        "Never you listen to music.",
+        "You listen to music never."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#f4669df2"
+    },
+    {
+      "q": "Put the words in the correct order: (I / always / ride / my bike)",
+      "v": [
+        "I always ride my bike.",
+        "I ride always my bike.",
+        "Always I ride my bike.",
+        "I ride my bike always."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#3b8f0d06"
+    },
+    {
+      "q": "Put the words in the correct order: (We / usually / have / lunch at one)",
+      "v": [
+        "We usually have lunch at one.",
+        "We have usually lunch at one.",
+        "Usually we have lunch at one.",
+        "We have lunch at one usually."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#f7db221a"
+    },
+    {
+      "q": "Put the words in the correct order: (They / often / eat / rice)",
+      "v": [
+        "They often eat rice.",
+        "They eat often rice.",
+        "Often they eat rice.",
+        "They eat rice often."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#2197777a"
+    },
+    {
+      "q": "Put the words in the correct order: (She / always / drinks / tea)",
+      "v": [
+        "She always drinks tea.",
+        "She drinks always tea.",
+        "Always she drinks tea.",
+        "She drinks tea always."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#be1a6103"
+    },
+    {
+      "q": "Put the words in the correct order: (He / usually / plays / the guitar)",
+      "v": [
+        "He usually plays the guitar.",
+        "He plays usually the guitar.",
+        "Usually he plays the guitar.",
+        "He plays the guitar usually."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#29be09b4"
+    },
+    {
+      "q": "Put the words in the correct order: (She / often / watches / cartoons)",
+      "v": [
+        "She often watches cartoons.",
+        "She watches often cartoons.",
+        "Often she watches cartoons.",
+        "She watches cartoons often."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#f916f68d"
+    },
+    {
+      "q": "Put the words in the correct order: (He / sometimes / reads / the news)",
+      "v": [
+        "He sometimes reads the news.",
+        "He reads sometimes the news.",
+        "Sometimes he reads the news.",
+        "He reads the news sometimes."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#592b9d26"
+    },
+    {
+      "q": "Put the words in the correct order: (She / rarely / goes / to the gym)",
+      "v": [
+        "She rarely goes to the gym.",
+        "She goes rarely to the gym.",
+        "Rarely she goes to the gym.",
+        "She goes to the gym rarely."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#5100fe8a"
+    },
+    {
+      "q": "Put the words in the correct order: (He / never / eats / fast food)",
+      "v": [
+        "He never eats fast food.",
+        "He eats never fast food.",
+        "Never he eats fast food.",
+        "He eats fast food never."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#90eef139"
+    },
+    {
+      "q": "Put the words in the correct order: (She / always / cleans / her room)",
+      "v": [
+        "She always cleans her room.",
+        "She cleans always her room.",
+        "Always she cleans her room.",
+        "She cleans her room always."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#6e7b4ad9"
+    },
+    {
+      "q": "Put the words in the correct order: (He / usually / helps / his father)",
+      "v": [
+        "He usually helps his father.",
+        "He helps usually his father.",
+        "Usually he helps his father.",
+        "He helps his father usually."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#1f28492b"
+    },
+    {
+      "q": "Put the words in the correct order: (She / often / studies / in the library)",
+      "v": [
+        "She often studies in the library.",
+        "She studies often in the library.",
+        "Often she studies in the library.",
+        "She studies in the library often."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#05a02e7e"
+    },
+    {
+      "q": "Put the words in the correct order: (He / sometimes / cooks / dinner)",
+      "v": [
+        "He sometimes cooks dinner.",
+        "He cooks sometimes dinner.",
+        "Sometimes he cooks dinner.",
+        "He cooks dinner sometimes."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#ae51d05d"
+    },
+    {
+      "q": "Choose the correct sentence (1).",
+      "v": [
+        "He is always late.",
+        "He always is late.",
+        "He is late always.",
+        "Always he is late."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#4894ebb5"
+    },
+    {
+      "q": "Choose the correct sentence (2).",
+      "v": [
+        "She is usually happy.",
+        "She usually is happy.",
+        "She is happy usually.",
+        "Usually she is happy."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#1e301d8a"
+    },
+    {
+      "q": "Choose the correct sentence (3).",
+      "v": [
+        "They are often tired.",
+        "They often are tired.",
+        "They are tired often.",
+        "Often they are tired."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#1fde71e5"
+    },
+    {
+      "q": "Choose the correct sentence (4).",
+      "v": [
+        "We are sometimes busy.",
+        "We sometimes are busy.",
+        "We are busy sometimes.",
+        "Sometimes we are busy."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#fbaa9297"
+    },
+    {
+      "q": "Choose the correct sentence (5).",
+      "v": [
+        "I am rarely hungry.",
+        "I rarely am hungry.",
+        "I am hungry rarely.",
+        "Rarely I am hungry."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#a7b9db9d"
+    },
+    {
+      "q": "Choose the correct sentence (6).",
+      "v": [
+        "He is never at home.",
+        "He never is at home.",
+        "He is at home never.",
+        "Never he is at home."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#f49bd70f"
+    },
+    {
+      "q": "Choose the correct sentence (7).",
+      "v": [
+        "She is always friendly.",
+        "She always is friendly.",
+        "She is friendly always.",
+        "Always she is friendly."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#85ae1c80"
+    },
+    {
+      "q": "Choose the correct sentence (8).",
+      "v": [
+        "They are usually ready.",
+        "They usually are ready.",
+        "They are ready usually.",
+        "Usually they are ready."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#d2516f38"
+    },
+    {
+      "q": "Choose the correct sentence (9).",
+      "v": [
+        "You are often early.",
+        "You often are early.",
+        "You are early often.",
+        "Often you are early."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#9158a473"
+    },
+    {
+      "q": "Choose the correct sentence (10).",
+      "v": [
+        "He is sometimes angry.",
+        "He sometimes is angry.",
+        "He is angry sometimes.",
+        "Sometimes he is angry."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#4ce91bd8"
+    },
+    {
+      "q": "Choose the correct sentence (11).",
+      "v": [
+        "She is rarely quiet.",
+        "She rarely is quiet.",
+        "She is quiet rarely.",
+        "Rarely she is quiet."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#77fdeaeb"
+    },
+    {
+      "q": "Choose the correct sentence (12).",
+      "v": [
+        "We are never sad.",
+        "We never are sad.",
+        "We are sad never.",
+        "Never we are sad."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#bb05a5bd"
+    },
+    {
+      "q": "Choose the correct sentence (13).",
+      "v": [
+        "They are always noisy.",
+        "They always are noisy.",
+        "They are noisy always.",
+        "Always they are noisy."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#5f9089da"
+    },
+    {
+      "q": "Choose the correct sentence (14).",
+      "v": [
+        "She is usually polite.",
+        "She usually is polite.",
+        "She is polite usually.",
+        "Usually she is polite."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#a75749ee"
+    },
+    {
+      "q": "Choose the correct sentence (15).",
+      "v": [
+        "He is often careful.",
+        "He often is careful.",
+        "He is careful often.",
+        "Often he is careful."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#00eb04e9"
+    },
+    {
+      "q": "Choose the correct sentence (16).",
+      "v": [
+        "They always play football.",
+        "They play always football.",
+        "Always they play football.",
+        "They play football always."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#fcd98e8e"
+    },
+    {
+      "q": "Choose the correct sentence (17).",
+      "v": [
+        "We usually go to bed early.",
+        "We go usually to bed early.",
+        "Usually we go to bed early.",
+        "We go to bed early usually."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#5ca6881e"
+    },
+    {
+      "q": "Choose the correct sentence (18).",
+      "v": [
+        "I often drink water.",
+        "I drink often water.",
+        "Often I drink water.",
+        "I drink water often."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#3b2069ee"
+    },
+    {
+      "q": "Choose the correct sentence (19).",
+      "v": [
+        "You sometimes eat vegetables.",
+        "You eat sometimes vegetables.",
+        "Sometimes you eat vegetables.",
+        "You eat vegetables sometimes."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#32821f42"
+    },
+    {
+      "q": "Choose the correct sentence (20).",
+      "v": [
+        "They rarely study hard.",
+        "They study rarely hard.",
+        "Rarely they study hard.",
+        "They study hard rarely."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#4cf115ca"
+    },
+    {
+      "q": "Choose the correct sentence (21).",
+      "v": [
+        "We never take the bus.",
+        "We take never the bus.",
+        "Never we take the bus.",
+        "We take the bus never."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#ca7f4d58"
+    },
+    {
+      "q": "Choose the correct sentence (22).",
+      "v": [
+        "I always wake up at six.",
+        "I wake always up at six.",
+        "Always I wake up at six.",
+        "I wake up at six always."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#fe0a7c1c"
+    },
+    {
+      "q": "Choose the correct sentence (23).",
+      "v": [
+        "You usually call your friends.",
+        "You call usually your friends.",
+        "Usually you call your friends.",
+        "You call your friends usually."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#9c620cac"
+    },
+    {
+      "q": "Choose the correct sentence (24).",
+      "v": [
+        "They often cook at home.",
+        "They cook often at home.",
+        "Often they cook at home.",
+        "They cook at home often."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#7b25b68b"
+    },
+    {
+      "q": "Choose the correct sentence (25).",
+      "v": [
+        "We sometimes travel by train.",
+        "We travel sometimes by train.",
+        "Sometimes we travel by train.",
+        "We travel by train sometimes."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#e4d8dd31"
+    },
+    {
+      "q": "Find the correct sentence. (Wrong: 'She goes never to the gym.')",
+      "v": [
+        "She never goes to the gym.",
+        "She goes never to the gym.",
+        "She goes to the gym never.",
+        "Never she goes to the gym."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#4d76b7da"
+    },
+    {
+      "q": "Find the correct sentence. (Wrong: 'He always is late for class.')",
+      "v": [
+        "He is always late for class.",
+        "He always is late for class.",
+        "He is late always for class.",
+        "Always he is late for class."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#4effa6c6"
+    },
+    {
+      "q": "Find the correct sentence. (Wrong: 'They watch usually TV at night.')",
+      "v": [
+        "They usually watch TV at night.",
+        "They watch usually TV at night.",
+        "They watch TV usually at night.",
+        "Usually watch they TV at night."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#3dbaecd3"
+    },
+    {
+      "q": "Find the correct sentence. (Wrong: 'I often am not at home.')",
+      "v": [
+        "I am often not at home.",
+        "I often am not at home.",
+        "I not often am at home.",
+        "Often I am not at home."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#aa64c58e"
+    },
+    {
+      "q": "Find the correct sentence. (Wrong: 'We sometimes are busy on Monday.')",
+      "v": [
+        "We are sometimes busy on Monday.",
+        "We sometimes are busy on Monday.",
+        "We are busy sometimes on Monday.",
+        "Sometimes are we busy on Monday."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#3936002c"
+    },
+    {
+      "q": "Find the correct sentence. (Wrong: 'My father rarely drink coffee.')",
+      "v": [
+        "My father rarely drinks coffee.",
+        "My father rarely drink coffee.",
+        "My father drinks rarely coffee.",
+        "Rarely my father drink coffee."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#1a6b6cce"
+    },
+    {
+      "q": "Find the correct sentence. (Wrong: 'She is happy always.')",
+      "v": [
+        "She is always happy.",
+        "She is happy always.",
+        "She always is happy.",
+        "Always she is happy."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#018f6131"
+    },
+    {
+      "q": "Find the correct sentence. (Wrong: 'We go always to school by bus.')",
+      "v": [
+        "We always go to school by bus.",
+        "We go always to school by bus.",
+        "We go to school always by bus.",
+        "Always we go to school by bus."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi asosiy fe'ldan oldin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#c45805bf"
+    },
+    {
+      "q": "Find the correct sentence. (Wrong: 'He never is tired.')",
+      "v": [
+        "He is never tired.",
+        "He never is tired.",
+        "He is tired never.",
+        "Never is he tired."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#5917a295"
+    },
+    {
+      "q": "Find the correct sentence. (Wrong: 'They often are late.')",
+      "v": [
+        "They are often late.",
+        "They often are late.",
+        "They are late often.",
+        "Often are they late."
+      ],
+      "t": 0,
+      "izoh": "Chastota ravishi 'be' (am/is/are) fe'lidan keyin keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#8183362a"
+    },
+    {
+      "q": "'Rarely' is closest in meaning to...",
+      "v": [
+        "almost never",
+        "almost always",
+        "every day",
+        "about half"
+      ],
+      "t": 0,
+      "izoh": "'rarely' = ~10%, kamdan-kam.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#61aa104e"
+    },
+    {
+      "q": "'Usually' is closest in meaning to...",
+      "v": [
+        "most of the time",
+        "never",
+        "once a year",
+        "exactly 50%"
+      ],
+      "t": 0,
+      "izoh": "'usually' = ~90%, odatda.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#47c1149c"
+    },
+    {
+      "q": "'Often' is closest in meaning to...",
+      "v": [
+        "many times",
+        "never",
+        "only once",
+        "about 10%"
+      ],
+      "t": 0,
+      "izoh": "'often' = ~70%, tez-tez.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#3b7425c4"
+    },
+    {
+      "q": "'Sometimes' is closest in meaning to...",
+      "v": [
+        "now and then",
+        "every single day",
+        "never at all",
+        "100% of days"
+      ],
+      "t": 0,
+      "izoh": "'sometimes' = ~50%, ba'zan.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#ee1c8332"
+    },
+    {
+      "q": "Which sentence is TRUE if you eat fruit 100% of days?",
+      "v": [
+        "I always eat fruit.",
+        "I never eat fruit.",
+        "I rarely eat fruit.",
+        "I sometimes eat fruit."
+      ],
+      "t": 0,
+      "izoh": "'always' = 100%, doim.",
+      "qiy": "orta",
+      "id": "ing_a2_m6#fbe7c66c"
+    }
+  ]
+}

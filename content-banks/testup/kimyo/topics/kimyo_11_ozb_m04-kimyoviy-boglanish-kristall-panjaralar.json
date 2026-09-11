@@ -1,0 +1,606 @@
+{
+  "nom": "04-mavzu. Kimyoviy bog'lanish turlari. Kristall panjaralar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kimyoviy bog' deganda nima tushuniladi?",
+      "v": [
+        "Atomlarning o'zaro ta'sirlashishi natijasida molekulalar, ionlar, radikallar va kristallarning o'zaro bog'lanishi",
+        "Atomlarning tasodifiy to'qnashuvi",
+        "Molekulalarning erkin harakati",
+        "Elektronlarning yadro atrofida aylanishi"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy bog' — atomlarning o'zaro ta'sirlashishi natijasida molekulalar, ionlar, radikallar va kristallarning o'zaro bog'lanishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#e1edfc4c"
+    },
+    {
+      "q": "Kimyoviy bog' hosil bo'lishida nimalar ishtirok etishi mumkin?",
+      "v": [
+        "Atomlarning juftlashmagan elektronlari; bitta orbitalda joylashgan juft elektronlar; bo'sh (vakant) orbitallar",
+        "Faqat ichki qavat elektronlari",
+        "Faqat yadro zaryadlari",
+        "Faqat protonlar"
+      ],
+      "t": 0,
+      "izoh": "Bog' hosil bo'lishida atomlarning juftlashmagan elektronlari, bitta orbitaldagi juft elektronlar va bo'sh (vakant) orbitallar ishtirok etishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#270bc73f"
+    },
+    {
+      "q": "Bog'lanish energiyasi deganda nima tushuniladi?",
+      "v": [
+        "Kimyoviy bog'ni uzish uchun zarur bo'lgan eng kam energiya miqdori",
+        "Bog' hosil bo'lishda yutilgan issiqlik",
+        "Atomning ionlanish energiyasi",
+        "Elektronning tashqi qavatga ko'chish energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy bog'ni uzish uchun zarur bo'lgan eng kam energiya miqdori bog'lanish energiyasi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#8673cf4e"
+    },
+    {
+      "q": "Bog'lanish energiyasi qanday belgilanadi va qanday o'lchanadi?",
+      "v": [
+        "E bilan belgilanib, kJ/mol va kkal/mol da o'lchanadi",
+        "r bilan belgilanib, nm da o'lchanadi",
+        "A bilan belgilanib, m.a.b. da o'lchanadi",
+        "Z bilan belgilanib, birliksiz o'lchanadi"
+      ],
+      "t": 0,
+      "izoh": "Bog'lanish energiyasi E bilan belgilanib, kJ/mol va kkal/mol da o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#b9fce72d"
+    },
+    {
+      "q": "Bog'lanish energiyasi qanchalik katta bo'lsa, bog'lanish qanday bo'ladi?",
+      "v": [
+        "Shunchalik barqaror bo'ladi",
+        "Shunchalik nochor bo'ladi",
+        "Shunchalik uzun bo'ladi",
+        "O'zgarishi mumkin emas"
+      ],
+      "t": 0,
+      "izoh": "Bog'lanish energiyasi qanchalik katta bo'lsa, bog'lanish shunchalik barqaror bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#e7991548"
+    },
+    {
+      "q": "Kimyoviy bog'ning uzunligi qanday belgilanadi va nimani anglatadi?",
+      "v": [
+        "r harfi bilan belgilanib, bog'lanishda ishtirok etgan atomlar yadrolari o'rtasidagi masofani anglatadi",
+        "E harfi bilan belgilanib, bog'ni uzish energiyasini anglatadi",
+        "l harfi bilan belgilanib, orbital shaklini anglatadi",
+        "A harfi bilan belgilanib, massa sonini anglatadi"
+      ],
+      "t": 0,
+      "izoh": "Bog'ning uzunligi r harfi bilan belgilanib, A (nm)da ifodalanadi — bu bog'lanish hosil bo'lishida ishtirok etgan atomlar yadrolari o'rtasidagi masofa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#a514c50e"
+    },
+    {
+      "q": "N2, O2, F2 gaz molekulalarini chapdan o'ngga ko'radigan bo'lsak, kimyoviy bog'lanish energiyasi va uzunligi qanday o'zgaradi?",
+      "v": [
+        "Energiyasi kamayadi, uzunligi ortadi",
+        "Energiyasi ortadi, uzunligi kamayadi",
+        "Ikkalasi ham ortadi",
+        "Ikkalasi ham kamayadi"
+      ],
+      "t": 0,
+      "izoh": "N2, O2, F2 qatorida chapdan o'ngga tomon kimyoviy bog'lanish energiyasi kamayadi, uzunligi esa ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#681da6c4"
+    },
+    {
+      "q": "Kimyoviy bog'lanishlar orasidagi burchak nima deyiladi?",
+      "v": [
+        "Valent burchagi",
+        "Orbital burchak",
+        "Difraksiya burchagi",
+        "Spin burchagi"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy bog'lanishlar orasidagi burchak valent burchagi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#dbbcc322"
+    },
+    {
+      "q": "H2O molekulasida H–O bog'i orasidagi valent burchak necha gradusga teng?",
+      "v": [
+        "104,5°",
+        "109,5°",
+        "120°",
+        "180°"
+      ],
+      "t": 0,
+      "izoh": "H2O molekulasida H–O bog'i orasidagi valent burchak 104,5°, CH4 molekulasida 109,5° ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#8974be3e"
+    },
+    {
+      "q": "CH4 molekulasida bog'lar orasidagi burchak necha gradusga teng?",
+      "v": [
+        "109,5°",
+        "104,5°",
+        "90°",
+        "120°"
+      ],
+      "t": 0,
+      "izoh": "CH4 molekulasida bog'lar orasidagi burchak 109,5° ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#b8ac5857"
+    },
+    {
+      "q": "Bog'lanish tartibi deganda nima tushuniladi?",
+      "v": [
+        "O'zaro kimyoviy bog' hosil qilgan atomlar orasida hosil bo'lgan bog'lanishlar soni",
+        "Atomlarning gruppaga joylashish tartibi",
+        "Elektronlarning orbitalga joylashish tartibi",
+        "Molekulalarning kristallda joylashish tartibi"
+      ],
+      "t": 0,
+      "izoh": "O'zaro kimyoviy bog' hosil qilgan atomlar orasida hosil bo'lgan bog'lanishlar bog'lanish tartibi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#024d1b4a"
+    },
+    {
+      "q": "Bog'lanishlar tartibi ortishi bilan bog'ning barqarorligi va uzunligi qanday o'zgaradi?",
+      "v": [
+        "Barqarorligi ortadi, uzunligi qisqaradi",
+        "Barqarorligi kamayadi, uzunligi ortadi",
+        "Ikkalasi ham ortadi",
+        "Ikkalasi ham kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Bog'lanishlar tartibi ortishi bilan bog'ning barqarorligi ortadi, uzunligi qisqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#19e98d98"
+    },
+    {
+      "q": "Kimyoviy bog'lanishlarning asosiy turlari qaysilar?",
+      "v": [
+        "Kovalent, ionli, metall va vodorod",
+        "Faqat kovalent va ionli",
+        "Sigma va pi",
+        "Qutbli va qutbsiz"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy bog'lanishlarning kovalent, ionli, metall va vodorod kabi turlari bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#f53f234d"
+    },
+    {
+      "q": "Kovalent bog'lanish deganda nima tushuniladi?",
+      "v": [
+        "Elektron juftlar tufayli vujudga keladigan kimyoviy bog'lanish",
+        "Ionlarning elektrostatik tortishishi tufayli hosil bo'ladigan bog'lanish",
+        "Erkin elektronlar va metall ionlari ta'siridan hosil bo'ladigan bog'lanish",
+        "Vodorod atomi orqali hosil bo'ladigan bog'lanish"
+      ],
+      "t": 0,
+      "izoh": "Elektron juftlar tufayli vujudga keladigan kimyoviy bog'lanish kovalent bog'lanish deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#cfde7b21"
+    },
+    {
+      "q": "Kovalent bog'lanish hosil bo'lishida atomning qaysi elektronlari ishtirok etadi?",
+      "v": [
+        "Tashqi elektron qavatidagi barcha toq elektronlar va ba'zan juft elektronlar ham",
+        "Faqat ichki qavat elektronlari",
+        "Faqat valentlik qavatdan tashqaridagi elektronlar",
+        "Faqat yadrodagi protonlar"
+      ],
+      "t": 0,
+      "izoh": "Kovalent bog'lanish hosil bo'lishida atomning tashqi elektron qavatidagi barcha toq elektronlar va ba'zan juft elektronlar ham ishtirok etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#e1f5aeb1"
+    },
+    {
+      "q": "Sigma (σ) bog'lanish qanday bog'lanishdir?",
+      "v": [
+        "Ikkala birikuvchi atomlarning yadrolarini tutashtiruvchi to'g'ri chiziq bo'ylab joylashgan bog'lanish",
+        "σ-bog'lanishga perpendikulyar tekislik bo'yicha qoplanishidan hosil bo'ladigan bog'lanish",
+        "Ionlar orasidagi elektrostatik bog'lanish",
+        "Vodorod atomi orqali hosil bo'ladigan bog'lanish"
+      ],
+      "t": 0,
+      "izoh": "Sigma bog'lanish — ikkala birikuvchi atomlarning yadrolarini tutashtiruvchi to'g'ri chiziq bo'ylab joylashgan bog'lanishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#bf471a9f"
+    },
+    {
+      "q": "π-bog'lanish qanday hosil bo'ladi?",
+      "v": [
+        "Fazoda σ-bog'lanishga nisbatan perpendikulyar joylashgan tekislik bo'yicha elektron qoplanishidan hosil bo'ladi",
+        "Yadrolarni tutashtiruvchi to'g'ri chiziq bo'ylab hosil bo'ladi",
+        "Elektronlar almashinuvi yo'li bilan hosil bo'ladi",
+        "Ionlar tortishishi bilan hosil bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "π-bog'lanish fazoda σ-bog'lanishga nisbatan perpendikulyar joylashgan tekislik bo'yicha qoplanishidan hosil bo'ladigan bog'lanishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#a8d917bb"
+    },
+    {
+      "q": "Qo'shbog'da σ va π bog'lar qanday joylashadi?",
+      "v": [
+        "Bittasi σ-bog', qolgani π-bog' bo'lib, π-bog' σ-bog'ga nisbatan kuchsizdir",
+        "Ikkalasi ham σ-bog'",
+        "Ikkalasi ham π-bog'",
+        "Bittasi π-bog', bittasi ion bog'"
+      ],
+      "t": 0,
+      "izoh": "Barcha birlamchi bog'lar, qo'sh va uchbog'lardan bittasi σ-bog'lardir, qolganlari π-bog'lar bo'lib, ular σ-bog'larga nisbatan kuchsizdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#7f387a08"
+    },
+    {
+      "q": "Qutbsiz kovalent bog'lanish qanday hosil bo'ladi?",
+      "v": [
+        "Elektrmanfiyliklari bir xil bo'lgan atomlar o'zaro ta'sirlashganida",
+        "Elektrmanfiyliklari keskin farq qiluvchi atomlar ta'sirlashganida",
+        "Ionlar elektrostatik tortishganda",
+        "Metall ionlari va erkin elektronlar ta'sirida"
+      ],
+      "t": 0,
+      "izoh": "Elektrmanfiyliklari bir xil bo'lgan atomlar o'zaro ta'sirlashganida kovalent qutbsiz bog'lanishli molekulalar hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#53947f14"
+    },
+    {
+      "q": "Qutbsiz kovalent bog'lanishli moddalarga misol qaysi?",
+      "v": [
+        "H2, F2, Cl2, O2, N2 kabi oddiy moddalar",
+        "H2O, NH3, HCl",
+        "NaCl, KBr, CaO",
+        "NaOH, Na2SO4"
+      ],
+      "t": 0,
+      "izoh": "Qutbsiz bog'lanish H2, F2, Cl2, O2, N2 kabi oddiy moddalarning molekulalarida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#a339bd01"
+    },
+    {
+      "q": "Qutbli kovalent bog'lanish qanday hosil bo'ladi?",
+      "v": [
+        "Elektrmanfiyliklari jihatidan bir-biridan keskin farq qilmaydigan elementlarning atomlari ta'sirlashganida, elektron juft elektr manfiyligi kattaroq bo'lgan atom tomon siljiydi",
+        "Elektrmanfiyliklari bir xil atomlar ta'sirlashganida",
+        "Ionlar almashinuvida",
+        "Erkin elektronlar hisobiga"
+      ],
+      "t": 0,
+      "izoh": "Qutbli kovalent bog'lanishda elektron juft elektr manfiyligi kattaroq bo'lgan atom tomon siljiydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#1c0e2a00"
+    },
+    {
+      "q": "Qutbli bog'lanishli molekulalar qatoriga qaysi moddalar kiradi?",
+      "v": [
+        "H2O, NH3, HCl, HF, HBr, HJ, H2S, H2Se, H2SO4",
+        "H2, O2, N2, F2, Cl2",
+        "NaCl, KCl, CaO",
+        "Na, Mg, Al, Fe"
+      ],
+      "t": 0,
+      "izoh": "Qutbli bog'lanishli molekulalar qatoriga H2O, NH3, HCl, HF, HBr, HJ, H2S, H2Se, H2SO4 larni kiritish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#f2063673"
+    },
+    {
+      "q": "Donor-akseptorli mexanizm bo'yicha bog' qanday hosil bo'ladi?",
+      "v": [
+        "Kimyoviy bog'lanish bitta atomning ikki elektronli buluti bilan boshqa atomning erkin orbitali hisobiga vujudga keladi",
+        "Ikki atomning toq elektronlari juftlashishi hisobiga",
+        "Ionlarning elektrostatik tortishishi hisobiga",
+        "Erkin elektronlar oqimi hisobiga"
+      ],
+      "t": 0,
+      "izoh": "Donor-akseptorli mexanizmda bog'lanish bitta atomning ikki elektronli buluti bilan boshqa atomning erkin orbitali hisobiga vujudga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#3a63eb91"
+    },
+    {
+      "q": "Ammoniy ioni NH4+ hosil bo'lishida donor va akseptor qaysilar?",
+      "v": [
+        "N — donor, H+ — akseptor",
+        "H+ — donor, N — akseptor",
+        "N — akseptor, H2 — donor",
+        "Ikkalasi ham donor"
+      ],
+      "t": 0,
+      "izoh": "NH3 + H+ → NH4+ reaksiyada N — donor, H+ — akseptor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#49e7e992"
+    },
+    {
+      "q": "Ion bog'lanish qanday atomlar o'zaro ta'sirlashganda hosil bo'ladi?",
+      "v": [
+        "Elektrmanfiyligi jihatidan bir-biridan keskin farq qiluvchi atomlar ta'sirlashganda",
+        "Elektrmanfiyligi bir xil atomlar ta'sirlashganda",
+        "Elektrmanfiyligi kam farq qiluvchi atomlar ta'sirlashganda",
+        "Faqat metallmaslar o'zaro ta'sirlashganda"
+      ],
+      "t": 0,
+      "izoh": "Elektrmanfiyligi jihatidan bir-biridan keskin farq qiluvchi atomlar o'zaro ta'sirlashganda ion bog'lanish hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#6166ef12"
+    },
+    {
+      "q": "Ion bog'lanish hosil bo'lishida atomlar tashqi qavatida nechta elektronga ega barqaror sistema hosil qiladi?",
+      "v": [
+        "8 ta (oktet) yoki 2 (dublet) elektron",
+        "18 ta elektron",
+        "6 ta elektron",
+        "10 ta elektron"
+      ],
+      "t": 0,
+      "izoh": "Ion bog'lanishda tashqi qavatda 8 ta (oktet) yoki 2 (dublet) elektroni bo'lgan barqaror sistema hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#b9c04139"
+    },
+    {
+      "q": "Tipik metallar (Li, Na, K) tipik metallmaslarning qaysi elementlari bilan ion bog'lanish hosil qiladi?",
+      "v": [
+        "Asosan, galogenlar bilan",
+        "Kislorod bilan",
+        "Azot bilan",
+        "Vodorod bilan"
+      ],
+      "t": 0,
+      "izoh": "Tipik metallar (litiy Li, natriy Na, kaliy K), tipik metallmaslar, asosan, galogenlar bilan ion bog'lanish hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#6fca8d40"
+    },
+    {
+      "q": "Natriy gidroksid NaOH va natriy sulfat Na2SO4 da ion bog'lanishlar qayerda mavjud?",
+      "v": [
+        "Faqat natriy va kislorod atomlari orasida",
+        "Faqat kislorod va vodorod atomlari orasida",
+        "Faqat natriy va oltingugurt atomlari orasida",
+        "Barcha atomlar orasida"
+      ],
+      "t": 0,
+      "izoh": "NaOH va Na2SO4 da ion bog'lanishlar faqat natriy va kislorod atomlari orasida mavjud (boshqa bog'lanishlar kovalent qutbli).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#fae59ce7"
+    },
+    {
+      "q": "Metall bog'lanish deganda nima tushuniladi?",
+      "v": [
+        "Nisbatan erkin elektronlarning metall ionlari bilan o'zaro ta'sirlashuvi natijasida hosil bo'ladigan bog'lanish",
+        "Ionlarning elektrostatik tortishuvi",
+        "Elektron juftlar tufayli hosil bo'ladigan bog'lanish",
+        "Vodorod atomi orqali hosil bo'ladigan bog'lanish"
+      ],
+      "t": 0,
+      "izoh": "Nisbatan erkin elektronlarning metall ionlari bilan o'zaro ta'sirlashuvi natijasida hosil bo'ladigan bog'lanish metall bog'lanish deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#bc29bb95"
+    },
+    {
+      "q": "Metall bog'lanish qaysi moddalarga xos?",
+      "v": [
+        "Suyuq Hg dan tashqari barcha metallarga",
+        "Faqat suyuq metallarga",
+        "Faqat metallmaslarga",
+        "Barcha moddalarga"
+      ],
+      "t": 0,
+      "izoh": "Metall bog'lanish suyuq Hg dan tashqari barcha metallarga xos.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#b719dce9"
+    },
+    {
+      "q": "Vodorod bog'lanish deganda nima tushuniladi?",
+      "v": [
+        "Biror molekulaning vodorod atomi bilan boshqa molekulaning kuchli elektrmanfiy element (O, F, N) atomi orasida yuzaga keladigan bog'lanish",
+        "Ikki vodorod atomi orasidagi bog'lanish",
+        "Vodorod bilan metall orasidagi bog'lanish",
+        "Ionlar orasidagi bog'lanish"
+      ],
+      "t": 0,
+      "izoh": "Vodorod bog'lanish — molekulaning vodorod atomi bilan boshqa molekulaning kuchli elektrmanfiy element (O, F, N) atomi orasida yuzaga keladigan bog'lanish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#34082828"
+    },
+    {
+      "q": "Vodorod atomi alohida kimyoviy bog'lanish hosil qilishining sababi nimada?",
+      "v": [
+        "Vodorod atomining radiusi nihoyatda kichik ekanligida",
+        "Vodorodning engil gaz ekanligida",
+        "Vodorodning faolligida",
+        "Vodorod molekulasining barqarorligida"
+      ],
+      "t": 0,
+      "izoh": "Buning sababi vodorod atomining radiusi nihoyatda kichik ekanligidadir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#3fae86a9"
+    },
+    {
+      "q": "Vodorod bog'lanish ion va kovalent bog'lanishlarga nisbatan qanday?",
+      "v": [
+        "Anchagina bo'sh, lekin oddiy molekulalararo o'zaro ta'sirga qaraganda ancha mustahkam",
+        "Ion bog'lanishdan ham mustahkam",
+        "Kovalent bog'lanish bilan bir xil kuchda",
+        "Eng mustahkam bog'lanish"
+      ],
+      "t": 0,
+      "izoh": "Vodorod bog'lanish ioni va kovalent bog'lanishlarga qaraganda anchagina bo'sh, lekin oddiy molekulalararo o'zaro ta'sirga qaraganda ancha mustahkam bog'lanish hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#dffcf89b"
+    },
+    {
+      "q": "Qattiq moddalar ichki tuzilishiga qarab qanday moddalarga bo'linadi?",
+      "v": [
+        "Kristall va amorf moddalarga",
+        "Molekulyar va atom moddalarga",
+        "Ionli va kovalent moddalarga",
+        "Gazsimon va suyuq moddalarga"
+      ],
+      "t": 0,
+      "izoh": "Qattiq moddalar ichki tuzilishiga, ya'ni zarrachalarining qanday tartibda joylashganligiga qarab kristall va amorf moddalarga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#788c5cef"
+    },
+    {
+      "q": "Fazoviy kristall panjaraning ko'p marta takrorlanib, jismning butun hajmini hosil qiladigan qismi qanday deyiladi?",
+      "v": [
+        "Elementar yacheyka",
+        "Kristall tuguni",
+        "Panjara uzuni",
+        "Kristall ioni"
+      ],
+      "t": 0,
+      "izoh": "Fazoviy kristall panjaraning ko'p marta takrorlanib, jismning butun hajmini hosil qiladigan qismi elementar yacheyka deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#e1b3da96"
+    },
+    {
+      "q": "Kristall panjaralar qanday turlarga bo'linadi?",
+      "v": [
+        "Molekulyar, atomli, ionli va metall panjaralarga",
+        "Qutbli va qutbsiz panjaralarga",
+        "Kristall va amorf panjaralarga",
+        "Sigma va pi panjaralarga"
+      ],
+      "t": 0,
+      "izoh": "Kristall panjaralar zarrachalarning fazoda joylashish xususiyati va o'zaro ta'sir turiga qarab molekulyar, atomli, ionli va metall panjaralarga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#626ebe94"
+    },
+    {
+      "q": "Molekulyar kristall panjarali moddalarda panjara tugunlarida nima bo'ladi?",
+      "v": [
+        "Elektroneytral molekulalar bo'ladi",
+        "Ionlar joylashgan bo'ladi",
+        "Elektrneytral atomlar bo'ladi",
+        "Musbat ionlar va erkin elektronlar bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Molekulyar kristall panjarali moddalarda kristall panjara tugunlarida elektroneytral molekulalar bo'ladi, shu sababli panjara ancha bo'sh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#ee80ab0e"
+    },
+    {
+      "q": "Natriy xlorid (osh tuzi) kristall panjarasida har qaysi natriy ioni nechta xlor ioni bilan qurshab olingan?",
+      "v": [
+        "Oltita xlor ioni bilan",
+        "To'rtta xlor ioni bilan",
+        "Ikkita xlor ioni bilan",
+        "Sakkizta xlor ioni bilan"
+      ],
+      "t": 0,
+      "izoh": "NaCl kristall panjarasida har qaysi natriy ioni oltita xlor ioni bilan, har bir xlor ioni esa oltita natriy ioni bilan qurshab olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#7afcd394"
+    },
+    {
+      "q": "Atom kristall panjara hosil qilgan moddalarda panjara nimadan tarkib topgan?",
+      "v": [
+        "O'zaro puxta kovalent bog'lanish bilan bog'langan elektrneytral atomlardan",
+        "Ionlardan",
+        "Molekulalardan",
+        "Musbat ionlar va erkin elektronlardan"
+      ],
+      "t": 0,
+      "izoh": "Atom kristall panjara hosil qilgan moddalarda panjara o'zaro puxta kovalent bog'lanish bilan bog'langan elektrneytral atomlardan tarkib topgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#615fb463"
+    },
+    {
+      "q": "Metallarning elektr va issiqlik o'tkazuvchanligi, magnit xossalari nimaga bog'liq?",
+      "v": [
+        "Metall kristall panjarada musbat ionlar orasida barcha yo'nalishlarda tartibsiz harakatda bo'lgan erkin elektronlarga",
+        "Panjaradagi molekulalarga",
+        "Ionlarning tebranma harakatiga",
+        "Panjaradagi neytronlarga"
+      ],
+      "t": 0,
+      "izoh": "Metallarning elektr, issiqlik o'tkazuvchanligi, magnit xossalari va boshqa xususiyatlar ana shu erkin elektronlar bilan bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m04-kimyoviy-boglanish-kristall-panjaralar#9dc69040"
+    }
+  ]
+}

@@ -1,0 +1,1280 @@
+{
+  "nom": "Question words (what/where...)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "___ is your name?",
+      "v": [
+        "Where",
+        "What",
+        "Who",
+        "When"
+      ],
+      "t": 1,
+      "izoh": "Narsa/ism haqida -> What (Nima).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#c7c37adb"
+    },
+    {
+      "q": "___ do you live?",
+      "v": [
+        "What",
+        "Who",
+        "Where",
+        "Why"
+      ],
+      "t": 2,
+      "izoh": "Joy haqida -> Where (Qayerda).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#078865db"
+    },
+    {
+      "q": "___ is that tall man?",
+      "v": [
+        "Who",
+        "What",
+        "Where",
+        "When"
+      ],
+      "t": 0,
+      "izoh": "Odam haqida -> Who (Kim).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#7f2fa5f3"
+    },
+    {
+      "q": "___ is your birthday?",
+      "v": [
+        "Where",
+        "Who",
+        "What",
+        "When"
+      ],
+      "t": 3,
+      "izoh": "Vaqt haqida -> When (Qachon).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#7a963bef"
+    },
+    {
+      "q": "___ are you sad today?",
+      "v": [
+        "Why",
+        "How",
+        "What",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "Sabab -> Why (Nega).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#62eb9501"
+    },
+    {
+      "q": "'___ are you?' 'I am fine.'",
+      "v": [
+        "What",
+        "How",
+        "Who",
+        "Where"
+      ],
+      "t": 1,
+      "izoh": "Ahvol -> How (Qanday).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#a2743907"
+    },
+    {
+      "q": "___ books have you got?",
+      "v": [
+        "How old",
+        "How many",
+        "What",
+        "Where"
+      ],
+      "t": 1,
+      "izoh": "Sonini -> How many (Nechta).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#593a102b"
+    },
+    {
+      "q": "'___ are you?' 'I am ten.'",
+      "v": [
+        "How many",
+        "How old",
+        "When",
+        "Why"
+      ],
+      "t": 1,
+      "izoh": "Yosh -> How old (Necha yosh).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#178e4a0f"
+    },
+    {
+      "q": "___ is your favourite colour?",
+      "v": [
+        "Who",
+        "Where",
+        "What",
+        "When"
+      ],
+      "t": 2,
+      "izoh": "Narsa haqida -> What (Nima).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#e110e935"
+    },
+    {
+      "q": "___ is your school?",
+      "v": [
+        "Where",
+        "Who",
+        "Why",
+        "What"
+      ],
+      "t": 0,
+      "izoh": "Joy haqida -> Where (Qayerda).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#d1e2d2fc"
+    },
+    {
+      "q": "___ is your English teacher?",
+      "v": [
+        "What",
+        "Where",
+        "Who",
+        "When"
+      ],
+      "t": 2,
+      "izoh": "Odam haqida -> Who (Kim).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#30ca248f"
+    },
+    {
+      "q": "'___ do you go to bed?' 'At nine.'",
+      "v": [
+        "Where",
+        "When",
+        "Who",
+        "Why"
+      ],
+      "t": 1,
+      "izoh": "Vaqt -> When (Qachon).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#e6baa599"
+    },
+    {
+      "q": "'___ do you learn English?' 'For my job.'",
+      "v": [
+        "Why",
+        "Who",
+        "What",
+        "Where"
+      ],
+      "t": 0,
+      "izoh": "Sabab -> Why (Nega).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#6c95e46b"
+    },
+    {
+      "q": "___ students are in your class?",
+      "v": [
+        "How old",
+        "What",
+        "How many",
+        "Who"
+      ],
+      "t": 2,
+      "izoh": "Sonini -> How many (Nechta).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#67b96be2"
+    },
+    {
+      "q": "___ old is your brother?",
+      "v": [
+        "What",
+        "How",
+        "Who",
+        "Why"
+      ],
+      "t": 1,
+      "izoh": "Yosh -> How old (Necha yosh).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#83e8d329"
+    },
+    {
+      "q": "___ is that man?",
+      "v": [
+        "Who",
+        "What",
+        "Where",
+        "How"
+      ],
+      "t": 0,
+      "izoh": "Odam uchun 'Who'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#7aa364e4"
+    },
+    {
+      "q": "___ are you sad?",
+      "v": [
+        "Why",
+        "What",
+        "Who",
+        "How"
+      ],
+      "t": 0,
+      "izoh": "Sabab uchun 'Why'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#e69049bb"
+    },
+    {
+      "q": "___ are you today?",
+      "v": [
+        "How",
+        "What",
+        "Who",
+        "Where"
+      ],
+      "t": 0,
+      "izoh": "Ahvol uchun 'How'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#e2387fed"
+    },
+    {
+      "q": "___ old are you?",
+      "v": [
+        "How",
+        "What",
+        "When",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "Yosh uchun 'How old'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#e9a3ce0e"
+    },
+    {
+      "q": "___ is my bag?",
+      "v": [
+        "Where",
+        "Who",
+        "Why",
+        "When"
+      ],
+      "t": 0,
+      "izoh": "Joy uchun 'Where'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#9e3347a3"
+    },
+    {
+      "q": "___ is she crying?",
+      "v": [
+        "Why",
+        "What",
+        "Who",
+        "Where"
+      ],
+      "t": 0,
+      "izoh": "Sabab uchun 'Why'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#3685c2b5"
+    },
+    {
+      "q": "___ students are in the class?",
+      "v": [
+        "How many",
+        "How old",
+        "What",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "Son uchun 'How many'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#7f23d0ce"
+    },
+    {
+      "q": "___ do the lessons start?",
+      "v": [
+        "When",
+        "Where",
+        "Who",
+        "What"
+      ],
+      "t": 0,
+      "izoh": "Vaqt uchun 'When'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#309dd5ea"
+    },
+    {
+      "q": "___ is your teacher?",
+      "v": [
+        "Who",
+        "What",
+        "Why",
+        "When"
+      ],
+      "t": 0,
+      "izoh": "Odam uchun 'Who'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#5bcdb2b0"
+    },
+    {
+      "q": "___ is the weather today?",
+      "v": [
+        "How",
+        "Who",
+        "Why",
+        "Where"
+      ],
+      "t": 0,
+      "izoh": "Holat uchun 'How'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#0d8574f2"
+    },
+    {
+      "q": "___ do you go to school? By bus.",
+      "v": [
+        "How",
+        "What",
+        "Who",
+        "When"
+      ],
+      "t": 0,
+      "izoh": "Usul uchun 'How'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#013bf0ae"
+    },
+    {
+      "q": "___ is this? It is a pen.",
+      "v": [
+        "What",
+        "Who",
+        "Where",
+        "When"
+      ],
+      "t": 0,
+      "izoh": "Narsa uchun 'What'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#b1ae53b1"
+    },
+    {
+      "q": "___ apples are there?",
+      "v": [
+        "How many",
+        "How old",
+        "What",
+        "Where"
+      ],
+      "t": 0,
+      "izoh": "Son uchun 'How many'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#11f01d90"
+    },
+    {
+      "q": "___ are they late?",
+      "v": [
+        "Why",
+        "What",
+        "Who",
+        "How"
+      ],
+      "t": 0,
+      "izoh": "Sabab uchun 'Why'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#315431a5"
+    },
+    {
+      "q": "___ is the party? On Friday.",
+      "v": [
+        "When",
+        "Where",
+        "Who",
+        "What"
+      ],
+      "t": 0,
+      "izoh": "Vaqt uchun 'When'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#88bdb29e"
+    },
+    {
+      "q": "___ lives in that house?",
+      "v": [
+        "Who",
+        "What",
+        "Where",
+        "When"
+      ],
+      "t": 0,
+      "izoh": "Odam uchun 'Who'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#484feb5a"
+    },
+    {
+      "q": "___ do you spell your name?",
+      "v": [
+        "How",
+        "What",
+        "Who",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Usul uchun 'How'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#f1e33852"
+    },
+    {
+      "q": "___ is the school? Near the park.",
+      "v": [
+        "Where",
+        "Who",
+        "Why",
+        "When"
+      ],
+      "t": 0,
+      "izoh": "Joy uchun 'Where'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#4be5ebf1"
+    },
+    {
+      "q": "___ colour is your car?",
+      "v": [
+        "What",
+        "Who",
+        "Where",
+        "When"
+      ],
+      "t": 0,
+      "izoh": "'What colour' — rang uchun.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#1667a6ad"
+    },
+    {
+      "q": "___ pencils have you got?",
+      "v": [
+        "How many",
+        "How old",
+        "Why",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "Son uchun 'How many'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#56daf749"
+    },
+    {
+      "q": "___ is your best friend?",
+      "v": [
+        "Who",
+        "What",
+        "Where",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Odam uchun 'Who'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#993dca76"
+    },
+    {
+      "q": "___ do you get up? At seven.",
+      "v": [
+        "When",
+        "Where",
+        "Who",
+        "What"
+      ],
+      "t": 0,
+      "izoh": "Vaqt uchun 'When'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#40b7a48f"
+    },
+    {
+      "q": "___ old is this city?",
+      "v": [
+        "How",
+        "What",
+        "Who",
+        "Where"
+      ],
+      "t": 0,
+      "izoh": "Yosh uchun 'How old'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#2df1e548"
+    },
+    {
+      "q": "___ do you like this book?",
+      "v": [
+        "Why",
+        "Who",
+        "Where",
+        "When"
+      ],
+      "t": 0,
+      "izoh": "Sabab uchun 'Why'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#2557b502"
+    },
+    {
+      "q": "___ is that boy?",
+      "v": [
+        "Who",
+        "What",
+        "Where",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Kishi (kim) so'ralganda 'Who'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#391c3937"
+    },
+    {
+      "q": "___ water do you want?",
+      "v": [
+        "How much",
+        "How many",
+        "What",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "Sanalmaydigan narsa uchun 'How much'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#fb26470b"
+    },
+    {
+      "q": "___ colour do you like, red or blue?",
+      "v": [
+        "Which",
+        "Who",
+        "When",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Tanlash bo'lsa 'Which'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#d7ff9cdd"
+    },
+    {
+      "q": "___ bag is this?",
+      "v": [
+        "Whose",
+        "Who",
+        "Where",
+        "Which"
+      ],
+      "t": 0,
+      "izoh": "Egalik so'ralganda 'Whose'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#1ea64773"
+    },
+    {
+      "q": "___ time is it?",
+      "v": [
+        "What",
+        "Where",
+        "Who",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Soat so'ralganda 'What time'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#26ec2e2e"
+    },
+    {
+      "q": "___ is your favourite food?",
+      "v": [
+        "What",
+        "Where",
+        "When",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "Narsa so'ralganda 'What'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#cdcb3e6b"
+    },
+    {
+      "q": "___ do you go to school?",
+      "v": [
+        "When",
+        "Who",
+        "Why",
+        "Which"
+      ],
+      "t": 0,
+      "izoh": "Vaqt so'ralganda 'When'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#50ef9d45"
+    },
+    {
+      "q": "___ are my keys?",
+      "v": [
+        "Where",
+        "What",
+        "When",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Joy so'ralganda 'Where'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#d514c08f"
+    },
+    {
+      "q": "___ money have you got?",
+      "v": [
+        "How much",
+        "How many",
+        "What",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "'Money' sanalmaydi, 'How much'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#e09f6f7f"
+    },
+    {
+      "q": "___ pen is red, this or that?",
+      "v": [
+        "Which",
+        "Whose",
+        "Who",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Ikkitadan tanlash uchun 'Which'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#a1a43e06"
+    },
+    {
+      "q": "___ car is that? — It's my father's.",
+      "v": [
+        "Whose",
+        "Who",
+        "Which",
+        "Where"
+      ],
+      "t": 0,
+      "izoh": "Egasi so'ralganda 'Whose'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#d05d29c7"
+    },
+    {
+      "q": "___ do birds fly? — In the sky.",
+      "v": [
+        "Where",
+        "When",
+        "Why",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "Joy so'ralganda 'Where'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#3548498a"
+    },
+    {
+      "q": "___ do you study English? — To travel.",
+      "v": [
+        "Why",
+        "What",
+        "When",
+        "How"
+      ],
+      "t": 0,
+      "izoh": "Sabab uchun 'Why'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#fa9f9473"
+    },
+    {
+      "q": "___ is this? — It's a book.",
+      "v": [
+        "What",
+        "Who",
+        "Where",
+        "When"
+      ],
+      "t": 0,
+      "izoh": "Narsa uchun 'What'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#7c71cfe8"
+    },
+    {
+      "q": "___ lives next door? — Mr. Karimov.",
+      "v": [
+        "Who",
+        "What",
+        "Where",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Kishi uchun 'Who'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#a3433ea1"
+    },
+    {
+      "q": "___ does the film start? — At seven.",
+      "v": [
+        "When",
+        "Where",
+        "Who",
+        "Which"
+      ],
+      "t": 0,
+      "izoh": "Vaqt uchun 'When'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#e735474a"
+    },
+    {
+      "q": "___ apples are on the table?",
+      "v": [
+        "How many",
+        "How much",
+        "What",
+        "Whose"
+      ],
+      "t": 0,
+      "izoh": "'Apples' sanaladi, 'How many'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#0777446f"
+    },
+    {
+      "q": "___ sugar is in the tea?",
+      "v": [
+        "How much",
+        "How many",
+        "What",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "'Sugar' sanalmaydi, 'How much'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#3f50458a"
+    },
+    {
+      "q": "___ dress do you want, the red or the green?",
+      "v": [
+        "Which",
+        "Who",
+        "When",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Tanlov uchun 'Which'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#4c087e73"
+    },
+    {
+      "q": "___ phone is on the desk?",
+      "v": [
+        "Whose",
+        "Who",
+        "Where",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Egasi uchun 'Whose'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#eecb88f2"
+    },
+    {
+      "q": "Choose the correct question for 'In Tashkent'.",
+      "v": [
+        "Where do you live?",
+        "When do you live?",
+        "Who do you live?",
+        "What do you live?"
+      ],
+      "t": 0,
+      "izoh": "Joy javobi 'Where' savoliga.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#edf330df"
+    },
+    {
+      "q": "Choose the correct question for 'At 8 o'clock'.",
+      "v": [
+        "When do you get up?",
+        "Where do you get up?",
+        "Who do you get up?",
+        "Why do you get up?"
+      ],
+      "t": 0,
+      "izoh": "Vaqt javobi 'When' savoliga.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#a5879632"
+    },
+    {
+      "q": "Choose the correct question for 'My brother'.",
+      "v": [
+        "Who is he?",
+        "What is he?",
+        "Where is he?",
+        "When is he?"
+      ],
+      "t": 0,
+      "izoh": "Kishi javobi 'Who' savoliga.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#a0374cb8"
+    },
+    {
+      "q": "Choose the correct question for 'Because I'm tired'.",
+      "v": [
+        "Why are you sad?",
+        "When are you sad?",
+        "Where are you sad?",
+        "Who are you sad?"
+      ],
+      "t": 0,
+      "izoh": "'Because' javobi 'Why' savoliga.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#9c822d76"
+    },
+    {
+      "q": "Choose the correct question for 'Three cats'.",
+      "v": [
+        "How many cats have you got?",
+        "How much cats have you got?",
+        "What cats have you got?",
+        "Whose cats have you got?"
+      ],
+      "t": 0,
+      "izoh": "Sanaladigan son uchun 'How many'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#4ee7e07b"
+    },
+    {
+      "q": "Find the mistake: 'How many water do you drink?'",
+      "v": [
+        "many",
+        "How",
+        "water",
+        "drink"
+      ],
+      "t": 0,
+      "izoh": "'Water' sanalmaydi, 'How much' kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#09427aa2"
+    },
+    {
+      "q": "Find the mistake: 'How much books have you got?'",
+      "v": [
+        "much",
+        "How",
+        "books",
+        "got"
+      ],
+      "t": 0,
+      "izoh": "'Books' sanaladi, 'How many' kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#a6053f09"
+    },
+    {
+      "q": "Find the mistake: 'Who is your pen?'",
+      "v": [
+        "Who",
+        "is",
+        "your",
+        "pen"
+      ],
+      "t": 0,
+      "izoh": "Egalik uchun 'Whose' kerak, 'Who' emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#b5b4e3af"
+    },
+    {
+      "q": "Find the mistake: 'What is your teacher?' (asking name of person)",
+      "v": [
+        "What",
+        "is",
+        "your",
+        "teacher"
+      ],
+      "t": 0,
+      "izoh": "Kishini so'rasa 'Who' kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#aa5d79c4"
+    },
+    {
+      "q": "Find the mistake: 'When do you go? — In Samarkand.'",
+      "v": [
+        "When",
+        "do",
+        "go",
+        "you"
+      ],
+      "t": 0,
+      "izoh": "Joy javobiga 'Where' kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#93c73dd6"
+    },
+    {
+      "q": "___ is the weather like today?",
+      "v": [
+        "What",
+        "Which",
+        "Who",
+        "Whose"
+      ],
+      "t": 0,
+      "izoh": "Ob-havo uchun 'What ... like'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#c3621763"
+    },
+    {
+      "q": "___ many chairs are there?",
+      "v": [
+        "How",
+        "What",
+        "Which",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "'many' bilan 'How many'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#41dac3b2"
+    },
+    {
+      "q": "___ do you get to school? — By bus.",
+      "v": [
+        "How",
+        "What",
+        "Where",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "Usul (transport) uchun 'How'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#dbae6c19"
+    },
+    {
+      "q": "___ is your house? — It's big.",
+      "v": [
+        "How",
+        "Who",
+        "When",
+        "Whose"
+      ],
+      "t": 0,
+      "izoh": "Ta'rif so'rasa 'How ... ?' (masalan How big).",
+      "qiy": "oson",
+      "id": "ing_a1_m13#6d1e18df"
+    },
+    {
+      "q": "___ jacket is this? — It's mine.",
+      "v": [
+        "Whose",
+        "Who",
+        "Which",
+        "Where"
+      ],
+      "t": 0,
+      "izoh": "'Mine' javobi 'Whose' savoliga.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#5182e264"
+    },
+    {
+      "q": "___ do the shops open? — At nine.",
+      "v": [
+        "When",
+        "Where",
+        "Who",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Vaqt uchun 'When'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#0c38ae50"
+    },
+    {
+      "q": "___ are your friends now?",
+      "v": [
+        "Where",
+        "What",
+        "When",
+        "Whose"
+      ],
+      "t": 0,
+      "izoh": "Joy uchun 'Where'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#8388c0ca"
+    },
+    {
+      "q": "___ is your favourite singer?",
+      "v": [
+        "Who",
+        "What",
+        "Where",
+        "When"
+      ],
+      "t": 0,
+      "izoh": "Kishi uchun 'Who'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#fdd432b3"
+    },
+    {
+      "q": "___ eggs do we need?",
+      "v": [
+        "How many",
+        "How much",
+        "What",
+        "Which"
+      ],
+      "t": 0,
+      "izoh": "'Eggs' sanaladi, 'How many'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#1e11ccfc"
+    },
+    {
+      "q": "___ bread do we need?",
+      "v": [
+        "How much",
+        "How many",
+        "What",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "'Bread' sanalmaydi, 'How much'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#dae1a36a"
+    },
+    {
+      "q": "___ season do you like more, summer or winter?",
+      "v": [
+        "Which",
+        "Who",
+        "When",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Tanlov uchun 'Which'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#d19dcbd2"
+    },
+    {
+      "q": "___ do you play football? — On Sundays.",
+      "v": [
+        "When",
+        "Where",
+        "Who",
+        "Which"
+      ],
+      "t": 0,
+      "izoh": "Vaqt uchun 'When'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#fc6c9e55"
+    },
+    {
+      "q": "___ do you play football? — In the park.",
+      "v": [
+        "Where",
+        "When",
+        "Who",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Joy uchun 'Where'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#ff06e5c7"
+    },
+    {
+      "q": "Match the question word: place → ___.",
+      "v": [
+        "Where",
+        "When",
+        "Who",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Joy = 'Where'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#ef5507e9"
+    },
+    {
+      "q": "Match the question word: time → ___.",
+      "v": [
+        "When",
+        "Where",
+        "Who",
+        "What"
+      ],
+      "t": 0,
+      "izoh": "Vaqt = 'When'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#48981fd3"
+    },
+    {
+      "q": "Match the question word: person → ___.",
+      "v": [
+        "Who",
+        "Where",
+        "When",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Kishi = 'Who'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#3a329fc3"
+    },
+    {
+      "q": "Match the question word: reason → ___.",
+      "v": [
+        "Why",
+        "Where",
+        "When",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "Sabab = 'Why'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#8923df35"
+    },
+    {
+      "q": "Match the question word: owner → ___.",
+      "v": [
+        "Whose",
+        "Who",
+        "Which",
+        "Where"
+      ],
+      "t": 0,
+      "izoh": "Egasi = 'Whose'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#aa76547f"
+    },
+    {
+      "q": "___ is your English lesson? — On Monday.",
+      "v": [
+        "When",
+        "Where",
+        "Who",
+        "What"
+      ],
+      "t": 0,
+      "izoh": "Kun/vaqt uchun 'When'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#ec32e705"
+    },
+    {
+      "q": "___ do you want, tea or coffee?",
+      "v": [
+        "Which",
+        "Who",
+        "When",
+        "Whose"
+      ],
+      "t": 0,
+      "izoh": "Ikkitadan tanlov uchun 'Which'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#ab2412af"
+    },
+    {
+      "q": "___ is on the phone? — My uncle.",
+      "v": [
+        "Who",
+        "What",
+        "Where",
+        "Why"
+      ],
+      "t": 0,
+      "izoh": "Kishi uchun 'Who'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#9f6dc7d2"
+    },
+    {
+      "q": "___ are you late? — Because of the bus.",
+      "v": [
+        "Why",
+        "What",
+        "When",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "'Because' javobi 'Why' savoliga.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#98faa5bf"
+    },
+    {
+      "q": "___ tall is your brother?",
+      "v": [
+        "How",
+        "What",
+        "Which",
+        "Who"
+      ],
+      "t": 0,
+      "izoh": "Bo'y uchun 'How tall'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#cbfe622c"
+    },
+    {
+      "q": "___ people are at the party?",
+      "v": [
+        "How many",
+        "How much",
+        "What",
+        "Whose"
+      ],
+      "t": 0,
+      "izoh": "'People' sanaladi, 'How many'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#0fbe327d"
+    },
+    {
+      "q": "___ milk is in the glass?",
+      "v": [
+        "How much",
+        "How many",
+        "What",
+        "Which"
+      ],
+      "t": 0,
+      "izoh": "'Milk' sanalmaydi, 'How much'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#60e2f94e"
+    },
+    {
+      "q": "Choose the correct question for 'It's mine'.",
+      "v": [
+        "Whose book is this?",
+        "Who book is this?",
+        "Which book is mine?",
+        "Where is this book?"
+      ],
+      "t": 0,
+      "izoh": "'Mine' javobi 'Whose' savoliga.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#e3986a26"
+    },
+    {
+      "q": "Choose the correct question for 'Some sugar'.",
+      "v": [
+        "How much sugar do you want?",
+        "How many sugar do you want?",
+        "What sugar do you want?",
+        "Whose sugar do you want?"
+      ],
+      "t": 0,
+      "izoh": "'Sugar' sanalmaydi, 'How much'.",
+      "qiy": "oson",
+      "id": "ing_a1_m13#274bf476"
+    },
+    {
+      "q": "Put in order: name / is / what / your / ?",
+      "v": [
+        "What is your name?",
+        "Your name what is?",
+        "Is your name what?",
+        "What your name is?"
+      ],
+      "t": 0,
+      "izoh": "Savol tartibi: 'What is your name?'",
+      "qiy": "oson",
+      "id": "ing_a1_m13#6a3b0a2b"
+    },
+    {
+      "q": "Put in order: you / where / do / live / ?",
+      "v": [
+        "Where do you live?",
+        "You where live do?",
+        "Do where you live?",
+        "Live where you do?"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri savol: 'Where do you live?'",
+      "qiy": "oson",
+      "id": "ing_a1_m13#7e5c0665"
+    }
+  ]
+}

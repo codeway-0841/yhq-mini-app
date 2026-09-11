@@ -1,0 +1,1609 @@
+{
+  "nom": "Burchaklar va parallel to'g'ri chiziqlar",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Guliston shahridagi tekis yo'lga bayroq ustuni tikildi. Ustun bilan yo'lning bir tomoni orasidagi burchak 62° bo'lsa, ustunning ikkinchi tomonidagi qo'shni burchak necha gradus?",
+      "v": [
+        "28°",
+        "118°",
+        "62°",
+        "128°"
+      ],
+      "t": 1,
+      "izoh": "Ustun yo'l chizig'i bilan ikkita qo'shni burchak hosil qiladi, ular birgalikda yoyiq burchakni to'ldiradi. Demak ularning yig'indisi 180°, ikkinchi burchak esa 180° − 62° = 118°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='227' y2='73.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='233.5' y='65.1' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 181 160' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='208.7' y='167.7' font-size='13' fill='%23334155' text-anchor='middle'%3E62°%3C/text%3E%3Cpath d='M 189.4 144.1 A 52 52 0 0 0 113 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='129.5' y='134.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshni-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#17db14a6"
+    },
+    {
+      "q": "AB to'g'ri chizig'ining O nuqtasidan OC nuri o'tkazildi va ∠AOC = 145° ekanligi ma'lum. Unga qo'shni bo'lgan ∠COB burchakning kattaligini toping.",
+      "v": [
+        "55°",
+        "35°",
+        "145°",
+        "215°"
+      ],
+      "t": 1,
+      "izoh": "∠AOC va ∠COB qo'shni burchaklar, chunki ularning bir tomoni umumiy, qolgan tomonlari esa AB yoyiq burchakni hosil qiladi. Shuning uchun ∠COB = 180° − 145° = 35°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='56.9' y2='114.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='45.4' y='110.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 137.1 170.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='180.3' y='145.4' font-size='13' fill='%23334155' text-anchor='middle'%3E145°%3C/text%3E%3Cpath d='M 122.4 160.2 A 52 52 0 0 0 113 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='99.2' y='173.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshni-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#0ec9d5bf"
+    },
+    {
+      "q": "Dala chetiga qoqilgan qoziq yer sathi bilan ikkita qo'shni burchak hosil qildi. Bu burchaklardan biri ikkinchisidan 24° ga katta bo'lsa, kattaroq burchakni toping.",
+      "v": [
+        "78°",
+        "102°",
+        "114°",
+        "90°"
+      ],
+      "t": 1,
+      "izoh": "Kichik burchakni x deb olamiz, kattasi x + 24° bo'ladi. Qo'shni burchaklar yig'indisi 180° bo'lgani uchun x + x + 24° = 180°, bundan 2x = 156° va x = 78°. Kattaroq burchak 78° + 24° = 102°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='192.4' y2='60.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='195.4' y='51.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 172.1 156.7 A 34 34 0 0 0 131 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='132.9' y='154.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 217 190 A 52 52 0 0 0 175.8 139.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='218.6' y='150.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshni-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#5586675e"
+    },
+    {
+      "q": "Ikkita qo'shni burchakdan kichigi kattasining yarmidan 15° ga ortiq ekanligi aniqlandi. Shu ikki burchakdan kichigini toping.",
+      "v": [
+        "60°",
+        "110°",
+        "75°",
+        "70°"
+      ],
+      "t": 3,
+      "izoh": "Katta burchakni x deb belgilaymiz, kichigi x/2 + 15° bo'ladi. Qo'shni burchaklar uchun x + x/2 + 15° = 180°, ya'ni 1,5x = 165° va x = 110°. Kichik burchak esa 110°/2 + 15° = 70°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshni-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#b92aac68"
+    },
+    {
+      "q": "Ikkita tekis ko'cha kesishmasida to'rtta burchak hosil bo'ldi va ulardan biri 74° ga teng. Shu burchakka vertikal bo'lgan burchak necha gradus?",
+      "v": [
+        "106°",
+        "16°",
+        "148°",
+        "74°"
+      ],
+      "t": 3,
+      "izoh": "Vertikal burchaklar — bir burchakning tomonlari ikkinchisining tomonlarining davomi bo'lgan burchaklar. Vertikal burchaklar teng bo'lgani uchun izlanayotgan burchak ham 74° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='272' viewBox='0 0 330 272'%3E%3Crect width='330' height='272' fill='%23ffffff'/%3E%3Cline x1='59' y1='136' x2='271' y2='136' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='135.8' y1='237.9' x2='194.2' y2='34.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='286' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='198.4' y='23.7' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='131.6' y='256.3' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='152' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 193 136 A 28 28 0 0 0 172.7 109.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='200.9' y='112.9' font-size='13' fill='%23334155' text-anchor='middle'%3E74°%3C/text%3E%3Cpath d='M 127 136 A 38 38 0 0 0 154.5 172.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='121.1' y='173.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#c04a1ca7"
+    },
+    {
+      "q": "Ikki to'g'ri chiziq kesishdi va hosil bo'lgan to'rt burchakdan vertikal juftlikning yig'indisi 128° ga teng bo'ldi. Shu juftlikka qo'shni bo'lgan burchak necha gradus?",
+      "v": [
+        "64°",
+        "116°",
+        "52°",
+        "128°"
+      ],
+      "t": 1,
+      "izoh": "Vertikal burchaklar teng, shuning uchun ularning har biri 128° : 2 = 64° ga teng. Qo'shni burchak esa 180° − 64° = 116° bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='272' viewBox='0 0 330 272'%3E%3Crect width='330' height='272' fill='%23ffffff'/%3E%3Cline x1='59' y1='136' x2='271' y2='136' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='118.5' y1='231.3' x2='211.5' y2='40.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='286' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='218' y='31.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='112' y='248.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='152' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 193 136 A 28 28 0 0 0 177.3 110.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='203.2' y='116.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 127 136 A 38 38 0 0 0 148.3 170.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.4' y='169.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 187.8 89.3 A 52 52 0 0 0 113 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='128.4' y='81.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#e0a6d77f"
+    },
+    {
+      "q": "Anvar ikkita to'g'ri yo'lakning kesishgan joyida turibdi. Bir burchak o'ziga qo'shni burchakdan 46° ga kichik bo'lsa, shu kichik burchakka vertikal burchak necha gradus?",
+      "v": [
+        "113°",
+        "67°",
+        "46°",
+        "92°"
+      ],
+      "t": 1,
+      "izoh": "Kichik burchakni x desak, qo'shnisi x + 46° bo'ladi va x + x + 46° = 180°. Bundan 2x = 134°, x = 67°. Vertikal burchak kichik burchakka teng, demak u ham 67°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='272' viewBox='0 0 330 272'%3E%3Crect width='330' height='272' fill='%23ffffff'/%3E%3Cline x1='59' y1='136' x2='271' y2='136' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123.6' y1='233.6' x2='206.4' y2='38.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='286' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='212.3' y='28.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='117.7' y='251.4' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='152' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 193 136 A 28 28 0 0 0 175.9 110.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='202.5' y='115.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 180.6 99.2 A 40 40 0 0 0 125 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='133.5' y='92.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#a8953fdc"
+    },
+    {
+      "q": "Ikki to'g'ri chiziq kesishganda hosil bo'lgan to'rtta burchakdan uchtasining yig'indisi 252° ga teng bo'ldi. Shu to'rt burchakning eng kichigi necha gradus?",
+      "v": [
+        "108°",
+        "84°",
+        "36°",
+        "72°"
+      ],
+      "t": 3,
+      "izoh": "To'rt burchakning yig'indisi 360°, demak to'rtinchi burchak 360° − 252° = 108°. Unga qo'shni burchak 180° − 108° = 72°. Burchaklar 108°, 72°, 108°, 72° bo'lib, eng kichigi 72°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='272' viewBox='0 0 330 272'%3E%3Crect width='330' height='272' fill='%23ffffff'/%3E%3Cline x1='59' y1='136' x2='271' y2='136' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='132.2' y1='236.8' x2='197.8' y2='35.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='286' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='202.4' y='24.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='127.6' y='255.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='152' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 193 136 A 28 28 0 0 0 173.7 109.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='201.4' y='113.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 177.4 98 A 40 40 0 0 0 125 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='131.5' y='93.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 137 136 A 28 28 0 0 0 156.3 162.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='128.6' y='166.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 152.6 174 A 40 40 0 0 0 205 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='198.5' y='186.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "vertikal-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#4e0ee19a"
+    },
+    {
+      "q": "Nodira transportir yordamida 124° li burchak chizdi va so'ngra uning bissektrisasini o'tkazdi. Bissektrisa ajratgan burchaklarning har biri necha gradus?",
+      "v": [
+        "56°",
+        "248°",
+        "28°",
+        "62°"
+      ],
+      "t": 3,
+      "izoh": "Bissektrisa burchakni ikkita teng burchakka ajratadi. Shuning uchun har bir qism 124° : 2 = 62° ga teng bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='310' height='235' viewBox='0 0 310 235'%3E%3Crect width='310' height='235' fill='%23ffffff'/%3E%3Cline x1='155' y1='208' x2='285.7' y2='138.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='155' y1='208' x2='24.3' y2='138.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='155' y1='208' x2='155' y2='60' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='298' y='135.9' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='12' y='135.9' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='155' y='50' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='155' y='228' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 185 192 A 34 34 0 0 0 155 174' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='181.3' y='168.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 155 174 A 34 34 0 0 0 125 192' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='128.7' y='168.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-bissektrisasi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#e60dd762"
+    },
+    {
+      "q": "∠AOB = 150° va OC uning bissektrisasi. BO nurini O nuqtadan narigi tomonga davom ettirib OD nuri hosil qilindi. ∠COD burchak necha gradus?",
+      "v": [
+        "75°",
+        "30°",
+        "15°",
+        "105°"
+      ],
+      "t": 3,
+      "izoh": "Bissektrisa ta'rifiga ko'ra ∠COB = 150° : 2 = 75°. OD nuri OB ning davomi bo'lgani uchun ∠COD va ∠COB qo'shni burchaklardir. Demak ∠COD = 180° − 75° = 105°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-bissektrisasi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#08ca4e9f"
+    },
+    {
+      "q": "Duradgor Karim taxta burchagini bissektrisa bilan ikkiga bo'ldi, so'ng hosil bo'lgan burchakni yana bissektrisa bilan ikkiga bo'ldi. Dastlabki burchak 68° bo'lsa, oxirgi burchak necha gradus?",
+      "v": [
+        "34°",
+        "17°",
+        "8,5°",
+        "51°"
+      ],
+      "t": 1,
+      "izoh": "Birinchi bissektrisa 68° ni ikkiga bo'ladi: 68° : 2 = 34°. Ikkinchi bissektrisa shu 34° ni yana ikkiga bo'ladi: 34° : 2 = 17°. Demak oxirgi burchak 17°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='310' height='235' viewBox='0 0 310 235'%3E%3Crect width='310' height='235' fill='%23ffffff'/%3E%3Cline x1='155' y1='208' x2='237.8' y2='85.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='155' y1='208' x2='72.2' y2='85.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='155' y1='208' x2='155' y2='60' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='155' y1='208' x2='198.3' y2='66.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='243.4' y='81' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='66.6' y='81' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='155' y='54' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='202.4' y='57.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='155' y='228' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 198.6 143.3 A 78 78 0 0 0 111.4 143.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='138.7' y='119.4' font-size='13' fill='%23334155' text-anchor='middle'%3E68°%3C/text%3E%3Cpath d='M 155 168 A 40 40 0 0 0 132.6 174.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='138.6' y='158.4' font-size='13' fill='%23334155' text-anchor='middle'%3E34°%3C/text%3E%3Cpath d='M 166.7 169.7 A 40 40 0 0 0 155 168' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 177.4 174.8 A 40 40 0 0 0 166.7 169.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='180' y='159.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-bissektrisasi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#eba5302e"
+    },
+    {
+      "q": "∠AOB burchakning bissektrisasi OM nur bo'lsin. Agar ∠AOM burchak ∠AOB burchakdan 27° ga kichik bo'lsa, ∠AOB necha gradusga teng?",
+      "v": [
+        "27°",
+        "81°",
+        "54°",
+        "108°"
+      ],
+      "t": 2,
+      "izoh": "Bissektrisa xossasiga ko'ra ∠AOM = ∠AOB : 2. Shart bo'yicha ∠AOB − ∠AOB : 2 = 27°, ya'ni ∠AOB ning yarmi 27° ga teng. Demak ∠AOB = 27° · 2 = 54°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-bissektrisasi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#b115851f"
+    },
+    {
+      "q": "Usta eshik romiga qiya tirgak o'rnatdi. Tirgak bilan pol orasidagi ikkita qo'shni burchak 4 : 5 nisbatda bo'lsa, kichik burchak necha gradus?",
+      "v": [
+        "100°",
+        "80°",
+        "160°",
+        "20°"
+      ],
+      "t": 1,
+      "izoh": "Burchaklarni 4x va 5x deb olamiz. Qo'shni burchaklar yig'indisi 180° bo'lgani uchun 4x + 5x = 180°, ya'ni 9x = 180° va x = 20°. Kichik burchak 4 · 20° = 80°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='142.1' y2='60' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='139.6' y='50.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 159.1 156.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='197.8' y='154.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 156 138.8 A 52 52 0 0 0 113 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='112.1' y='149.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshni-nisbat",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#01bff5a4"
+    },
+    {
+      "q": "Ikki qo'shni burchakning kattaliklari 2 : 7 nisbatda berilgan. Ulardan kattasi kichigidan necha gradusga ortiq ekanligini toping.",
+      "v": [
+        "40°",
+        "100°",
+        "140°",
+        "5°"
+      ],
+      "t": 1,
+      "izoh": "Burchaklar 2x va 7x bo'lsin. Yig'indisi 180° ga teng: 9x = 180°, x = 20°. Demak burchaklar 40° va 140°, ularning ayirmasi 140° − 40° = 100°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='63.9' y2='105.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='53.2' y='100.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 139 168.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='182.4' y='146.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 125.2 156.6 A 52 52 0 0 0 113 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='100.2' y='170.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshni-nisbat",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#5fc975b1"
+    },
+    {
+      "q": "Sartarosh oynani devorga shunday o'rnatdiki, oyna bilan devor orasidagi qo'shni burchaklar 5 : 13 nisbatda bo'ldi. Kattaroq burchakni toping.",
+      "v": [
+        "50°",
+        "130°",
+        "65°",
+        "117°"
+      ],
+      "t": 1,
+      "izoh": "Burchaklar 5x va 13x ko'rinishda. Ular qo'shni bo'lgani uchun 5x + 13x = 180°, ya'ni 18x = 180° va x = 10°. Kattaroq burchak 13 · 10° = 130° ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshni-nisbat",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#bb07d8af"
+    },
+    {
+      "q": "Bir to'g'ri chiziqning bir tomonida uchta burchak ketma-ket joylashgan va ularning kattaliklari 3 : 4 : 5 nisbatda. Eng katta burchak necha gradus?",
+      "v": [
+        "45°",
+        "75°",
+        "60°",
+        "15°"
+      ],
+      "t": 1,
+      "izoh": "Burchaklar 3x, 4x va 5x bo'lsin. Ular yoyiq burchakni to'ldiradi: 3x + 4x + 5x = 180°, ya'ni 12x = 180° va x = 15°. Eng katta burchak 5 · 15° = 75°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='130.8' y2='62.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='127.2' y='53' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Cline x1='165' y1='190' x2='258.3' y2='96.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='268.2' y='90.8' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Cpath d='M 156.2 157.2 A 34 34 0 0 0 131 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='124.5' y='163' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 201.8 153.2 A 52 52 0 0 0 151.5 139.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='182.9' y='127.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 189 166' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='212.1' y='174.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshni-nisbat",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#a8fcffe5"
+    },
+    {
+      "q": "Ikki parallel to'g'ri chiziq kesuvchi bilan kesilgan. Hosil bo'lgan mos burchaklardan biri 63° ga teng bo'lsa, ikkinchi mos burchak necha gradus?",
+      "v": [
+        "117°",
+        "27°",
+        "126°",
+        "63°"
+      ],
+      "t": 3,
+      "izoh": "Parallel to'g'ri chiziqlar kesuvchi bilan kesilganda mos burchaklar o'zaro teng bo'ladi. Shuning uchun ikkinchi mos burchak ham 63° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='141.8' y1='243.5' x2='252.2' y2='26.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='264.2' y='32.5' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 254 80 A 29 29 0 0 0 238.2 54.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='264.2' y='60' font-size='13' fill='%23334155' text-anchor='middle'%3E63°%3C/text%3E%3Cpath d='M 198 190 A 29 29 0 0 0 182.2 164.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='208.2' y='170' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mos-burchaklar",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#d479bca6"
+    },
+    {
+      "q": "Temiryo'lning ikki parallel relsi orasiga qiya tayanch o'rnatilgan. Tayanchning yuqori rels bilan hosil qilgan burchagi 68° bo'lsa, pastki relsdagi mos burchakka qo'shni burchak necha gradus?",
+      "v": [
+        "68°",
+        "22°",
+        "112°",
+        "124°"
+      ],
+      "t": 2,
+      "izoh": "Parallel relslar uchun mos burchaklar teng, demak pastki relsdagi mos burchak ham 68°. Unga qo'shni burchak esa 180° − 68° = 112° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158.1' y1='245.6' x2='247.5' y2='24.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='259.5' y='30.4' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 254 80 A 29 29 0 0 0 235.9 53.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='263.1' y='58.3' font-size='13' fill='%23334155' text-anchor='middle'%3E68°%3C/text%3E%3Cpath d='M 191.5 163.1 A 29 29 0 0 0 151.6 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='154.9' y='155.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mos-burchaklar",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#a67d1c25"
+    },
+    {
+      "q": "a ∥ b bo'lib, c kesuvchi ularni kesib o'tadi. Kesuvchining a bilan hosil qilgan burchagi 47°, b bilan hosil qilgan mos burchagi esa (2x − 3)° ko'rinishida. x ni toping.",
+      "v": [
+        "22",
+        "47",
+        "50",
+        "25"
+      ],
+      "t": 3,
+      "izoh": "Mos burchaklar teng bo'lgani uchun 2x − 3 = 47 tenglamani yechamiz. Bundan 2x = 50 va x = 25 kelib chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='81.5' y1='233.9' x2='265.9' y2='36.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='277.9' y='42.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 254 80 A 29 29 0 0 0 244.8 58.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='267.2' y='65.7' font-size='13' fill='%23334155' text-anchor='middle'%3E47°%3C/text%3E%3Cpath d='M 151.4 190 A 29 29 0 0 0 142.2 168.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='180' y='175.7' font-size='13' fill='%23334155' text-anchor='middle'%3E(2x − 3)°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mos-burchaklar",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#dce8acc8"
+    },
+    {
+      "q": "Ikki parallel to'g'ri chiziqni kesuvchi kesib o'tdi. Birinchi kesishuvdagi burchak ikkinchi kesishuvdagi mos burchakning qo'shnisidan 44° ga kichik bo'lsa, kichik burchakni toping.",
+      "v": [
+        "68°",
+        "112°",
+        "44°",
+        "136°"
+      ],
+      "t": 0,
+      "izoh": "Mos burchaklar teng, ularning har birini a deb olamiz. Ikkinchi kesishuvdagi qo'shni burchak 180° − a. Shart bo'yicha a = (180° − a) − 44°, ya'ni 2a = 136° va a = 68°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='158.1' y1='245.6' x2='247.5' y2='24.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='259.5' y='30.4' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 254 80 A 29 29 0 0 0 235.9 53.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='263.1' y='58.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 191.5 163.1 A 29 29 0 0 0 151.6 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='154.9' y='155.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mos-burchaklar",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#522de635"
+    },
+    {
+      "q": "Parallel ikki to'g'ri chiziq kesuvchi bilan kesilganda ichki almashinuvchi burchaklardan biri 118° ga teng bo'ldi. Ikkinchi ichki almashinuvchi burchak necha gradus?",
+      "v": [
+        "62°",
+        "118°",
+        "32°",
+        "236°"
+      ],
+      "t": 1,
+      "izoh": "Parallel chiziqlar kesuvchi bilan kesilganda ichki almashinuvchi burchaklar teng bo'ladi. Demak ikkinchi burchak ham 118° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='138.3' y1='243' x2='253.2' y2='27' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='265.2' y='33' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 211.4 105.6 A 29 29 0 0 0 254 80' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='248.7' y='123.4' font-size='13' fill='%23334155' text-anchor='middle'%3E118°%3C/text%3E%3Cpath d='M 180.1 164.4 A 29 29 0 0 0 137.5 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142.8' y='154.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-almashinuvchi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#c358f061"
+    },
+    {
+      "q": "Bog'dagi ikki parallel so'qmoqni qiya ariq kesib o'tgan. Ariqning birinchi so'qmoq bilan ichki burchagi 54° bo'lsa, ikkinchi so'qmoqdagi ichki almashinuvchi burchakning bissektrisasi uni ikkita teng burchakka ajratadi. Shu burchaklarning har biri necha gradus?",
+      "v": [
+        "27°",
+        "54°",
+        "63°",
+        "126°"
+      ],
+      "t": 0,
+      "izoh": "Ichki almashinuvchi burchaklar teng bo'lgani uchun ikkinchi burchak ham 54°. Bissektrisa uni ikkiga bo'ladi: 54° : 2 = 27°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='109.8' y1='238.5' x2='260.3' y2='31.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='272.3' y='37.5' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 196 80 A 29 29 0 0 0 208 103.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='184' y='104.9' font-size='13' fill='%23334155' text-anchor='middle'%3E54°%3C/text%3E%3Cline x1='145.1' y1='190' x2='238.7' y2='142.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='250.2' y='140.4' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Cpath d='M 175.1 190 A 30 30 0 0 0 171.8 176.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 171.8 176.4 A 30 30 0 0 0 162.7 165.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='180.1' y='164.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 199.1 190 A 54 54 0 0 0 176.8 146.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='213.6' y='179.4' font-size='13' fill='%23334155' text-anchor='middle'%3E54°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-almashinuvchi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#c61fa2ed"
+    },
+    {
+      "q": "AB ∥ CD to'g'ri chiziqlarni EF kesuvchi kesadi. ∠AEF = (3x + 12)° va unga ichki almashinuvchi ∠EFD = (5x − 28)° bo'lsa, bu burchak necha gradus?",
+      "v": [
+        "20°",
+        "108°",
+        "72°",
+        "132°"
+      ],
+      "t": 2,
+      "izoh": "Ichki almashinuvchi burchaklar teng: 3x + 12 = 5x − 28. Bundan 2x = 40 va x = 20. Burchak qiymati esa 3 · 20 + 12 = 72°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='170.8' y1='247.1' x2='243.5' y2='22.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='326' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='326' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='236' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3EE%3C/text%3E%3Ctext x='177' y='206' font-size='13' fill='%23334155' text-anchor='middle'%3EF%3C/text%3E%3Cpath d='M 196 80 A 29 29 0 0 0 216 107.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='172' y='110' font-size='13' fill='%23334155' text-anchor='middle'%3E(3x + 12)°%3C/text%3E%3Cpath d='M 218.3 190 A 29 29 0 0 0 198.3 162.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='234' y='168' font-size='13' fill='%23334155' text-anchor='middle'%3E(5x − 28)°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-almashinuvchi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#e371a387"
+    },
+    {
+      "q": "Ikki parallel to'g'ri chiziq kesuvchi bilan kesilgan. Ichki almashinuvchi ikki burchakning yig'indisi 146° bo'lsa, ulardan birining qo'shni burchagi necha gradusga teng?",
+      "v": [
+        "107°",
+        "73°",
+        "34°",
+        "146°"
+      ],
+      "t": 0,
+      "izoh": "Ichki almashinuvchi burchaklar teng, shuning uchun har biri 146° : 2 = 73° ga teng. Qo'shni burchak esa 180° − 73° = 107° bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='173.9' y1='247.4' x2='242.5' y2='22.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='254.5' y='28.6' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 196 80 A 29 29 0 0 0 216.5 107.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='188' y='111.4' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpath d='M 220.4 190 A 29 29 0 0 0 199.9 162.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='228.4' y='166.6' font-size='13' fill='%23334155' text-anchor='middle'%3Eα%3C/text%3E%3Cpath d='M 204.3 147.9 A 44 44 0 0 0 147.4 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='155.7' y='145.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-almashinuvchi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#f6ff615b"
+    },
+    {
+      "q": "Parallel to'g'ri chiziqlarni kesuvchi kesib o'tganda ichki bir tomonli burchaklardan biri 108° ga teng bo'ldi. Ikkinchisi necha gradusga teng?",
+      "v": [
+        "108°",
+        "82°",
+        "252°",
+        "72°"
+      ],
+      "t": 3,
+      "izoh": "Parallel chiziqlar uchun ichki bir tomonli burchaklarning yig'indisi 180° ga teng. Demak ikkinchi burchak 180° − 108° = 72° bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='170.8' y1='247.1' x2='243.5' y2='22.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='255.5' y='28.9' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 216 107.6 A 29 29 0 0 0 254 80' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='252' y='121.2' font-size='13' fill='%23334155' text-anchor='middle'%3E108°%3C/text%3E%3Cpath d='M 218.3 190 A 29 29 0 0 0 198.3 162.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='226.5' y='167' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-bir-tomonli",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#88a834c5"
+    },
+    {
+      "q": "Zilola ikki parallel taxta orasiga qiya reyka o'rnatdi. Reykaning yuqorigi taxta bilan ichki burchagi 115° bo'lsa, pastki taxta bilan hosil qilgan ichki bir tomonli burchak nechaga teng?",
+      "v": [
+        "115°",
+        "25°",
+        "65°",
+        "75°"
+      ],
+      "t": 2,
+      "izoh": "Ichki bir tomonli burchaklar parallel chiziqlarda 180° ga to'ldiradi. Shuning uchun ikkinchi burchak 180° − 115° = 65° ga teng bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='148.3' y1='244.4' x2='250.4' y2='25.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='262.4' y='31.6' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 212.7 106.3 A 29 29 0 0 0 254 80' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='249.7' y='122.8' font-size='13' fill='%23334155' text-anchor='middle'%3E115°%3C/text%3E%3Cpath d='M 202.7 190 A 29 29 0 0 0 186 163.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='212.5' y='169.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-bir-tomonli",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#f6ddebc5"
+    },
+    {
+      "q": "a ∥ b to'g'ri chiziqlarni kesuvchi kesadi. Ichki bir tomonli burchaklardan biri ikkinchisidan 36° ga katta bo'lsa, ulardan kattasi necha gradus?",
+      "v": [
+        "72°",
+        "98°",
+        "144°",
+        "108°"
+      ],
+      "t": 3,
+      "izoh": "Kichik burchakni x desak, kattasi x + 36° bo'ladi. Ichki bir tomonli burchaklar yig'indisi 180°: x + x + 36° = 180°, bundan x = 72°. Kattasi 72° + 36° = 108°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='170.8' y1='247.1' x2='243.5' y2='22.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='255.5' y='28.9' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 196 80 A 29 29 0 0 0 216 107.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='187.8' y='111' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 198.3 162.4 A 29 29 0 0 0 160.3 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162.3' y='156.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ichki-bir-tomonli",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#af8ebcb0"
+    },
+    {
+      "q": "Ikki parallel chiziqni kesuvchi kesib o'tdi. Ichki bir tomonli burchaklarning har birining bissektrisasi o'tkazilsa, shu ikki bissektrisa orasidagi burchak necha gradus bo'ladi?",
+      "v": [
+        "90°",
+        "45°",
+        "60°",
+        "120°"
+      ],
+      "t": 0,
+      "izoh": "Ichki bir tomonli burchaklar yig'indisi 180°. Bissektrisalar ularni yarimlaydi, demak yarimlarning yig'indisi 90°. Bissektrisalar va kesuvchi hosil qilgan uchburchakda uchinchi burchak 180° − 90° = 90° ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-bir-tomonli",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#7ee62db9"
+    },
+    {
+      "q": "Parallel to'g'ri chiziqlar kesuvchi bilan kesilganda tashqi almashinuvchi burchaklardan biri 137° ga teng bo'ldi. Ikkinchi tashqi almashinuvchi burchak necha gradus?",
+      "v": [
+        "43°",
+        "53°",
+        "223°",
+        "137°"
+      ],
+      "t": 3,
+      "izoh": "Tashqi almashinuvchi burchaklar parallel chiziqlarda o'zaro teng bo'ladi, chunki ularning har biri bir xil ichki burchakka vertikaldir. Demak ikkinchisi ham 137°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='63.1' y1='230.9' x2='268.9' y2='39.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='280.9' y='45.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 246.2 60.2 A 29 29 0 0 0 196 80' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='208.1' y='41.2' font-size='13' fill='%23334155' text-anchor='middle'%3E137°%3C/text%3E%3Cpath d='M 85.8 209.8 A 29 29 0 0 0 136 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='123.9' y='236.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-burchaklar",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#7d2fa1e4"
+    },
+    {
+      "q": "Tashqi bir tomonli ikki burchakdan biri 84° ga teng ekanligi ma'lum. Parallel chiziqlar uchun ikkinchi tashqi bir tomonli burchak necha gradus?",
+      "v": [
+        "96°",
+        "84°",
+        "6°",
+        "276°"
+      ],
+      "t": 0,
+      "izoh": "Tashqi bir tomonli burchaklar ham ichki bir tomonlilar kabi 180° ga to'ldiradi, chunki ularning har biri mos ichki burchakka vertikal. Demak ikkinchisi 180° − 84° = 96°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='207.1' y1='249.7' x2='231.3' y2='20.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='243.3' y='26.3' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 254 80 A 29 29 0 0 0 228 51.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='259.2' y='53.2' font-size='13' fill='%23334155' text-anchor='middle'%3E84°%3C/text%3E%3Cpath d='M 210.4 218.8 A 29 29 0 0 0 242.4 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='244.2' y='228.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-burchaklar",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#5185287e"
+    },
+    {
+      "q": "Ikki parallel ko'chani qiya xiyobon kesib o'tadi. Xiyobonning birinchi ko'cha bilan tashqi burchagi 128° bo'lsa, ikkinchi ko'chadagi tashqi almashinuvchi burchakka qo'shni burchak necha gradus?",
+      "v": [
+        "128°",
+        "38°",
+        "52°",
+        "62°"
+      ],
+      "t": 2,
+      "izoh": "Tashqi almashinuvchi burchaklar teng, demak ikkinchi ko'chadagi tashqi burchak ham 128°. Unga qo'shni burchak 180° − 128° = 52° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='102.2' y1='237.3' x2='261.9' y2='32.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='273.9' y='38.7' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 242.9 57.1 A 29 29 0 0 0 196 80' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='204.8' y='42.7' font-size='13' fill='%23334155' text-anchor='middle'%3E128°%3C/text%3E%3Cpath d='M 110.1 190 A 29 29 0 0 0 121.2 212.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='97.8' y='214.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-burchaklar",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#150d1be3"
+    },
+    {
+      "q": "Kesuvchi ikki parallel to'g'ri chiziq bilan sakkizta burchak hosil qildi. Tashqi bir tomonli ikkita burchakning yig'indisi ichki almashinuvchi burchaklardan birining uch barobariga teng bo'lsa, kichik burchakni toping.",
+      "v": [
+        "120°",
+        "45°",
+        "30°",
+        "60°"
+      ],
+      "t": 3,
+      "izoh": "Tashqi bir tomonli burchaklar yig'indisi har doim 180° ga teng. Shart bo'yicha 3a = 180°, ya'ni ichki almashinuvchi burchak a = 60°. Ikkinchi burchak 180° − 60° = 120°, kichigi esa 60°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tashqi-burchaklar",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#4a4c0935"
+    },
+    {
+      "q": "Kesuvchi ikki to'g'ri chiziqni kesib o'tdi va ichki bir tomonli burchaklar 105° hamda 75° ga teng bo'ldi. Bu to'g'ri chiziqlar haqida nima deyish mumkin?",
+      "v": [
+        "Ular kesishadi",
+        "Ular parallel",
+        "Ular perpendikulyar",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Parallellik alomatiga ko'ra ichki bir tomonli burchaklar yig'indisi 180° bo'lsa, chiziqlar parallel bo'ladi. Bu yerda 105° + 75° = 180°, demak chiziqlar parallel.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='180' y1='248' x2='240.5' y2='22' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='252.5' y='28' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 217.5 108 A 29 29 0 0 0 254 80' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='253' y='120.5' font-size='13' fill='%23334155' text-anchor='middle'%3E105°%3C/text%3E%3Cpath d='M 224.5 190 A 29 29 0 0 0 203 162' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='232' y='166' font-size='13' fill='%23334155' text-anchor='middle'%3E75°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallellik-alomati",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#be0caa43"
+    },
+    {
+      "q": "Ikki to'g'ri chiziqni bitta kesuvchi kesdi. Ichki almashinuvchi burchaklar 68° va 72° ga teng bo'lsa, bu chiziqlar qanday joylashgan bo'ladi?",
+      "v": [
+        "Parallel",
+        "Ustma-ust tushadi",
+        "Kesishadi",
+        "Perpendikulyar"
+      ],
+      "t": 2,
+      "izoh": "Chiziqlar parallel bo'lishi uchun ichki almashinuvchi burchaklar teng bo'lishi shart. Bu yerda 68° ≠ 72°, demak parallellik sharti bajarilmaydi va chiziqlar kesishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallellik-alomati",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#28a4bc0c"
+    },
+    {
+      "q": "Duradgor ikkita taxtani parallel qilib qo'ymoqchi. Qiya lineyka bilan hosil bo'lgan ichki bir tomonli burchaklardan biri 118° bo'lsa, ikkinchi burchak necha gradus bo'lishi kerak?",
+      "v": [
+        "118°",
+        "62°",
+        "72°",
+        "28°"
+      ],
+      "t": 1,
+      "izoh": "Taxtalar parallel bo'lishi uchun ichki bir tomonli burchaklar yig'indisi 180° bo'lishi kerak. Demak ikkinchi burchak 180° − 118° = 62° bo'lishi shart.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='138.3' y1='243' x2='253.2' y2='27' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='265.2' y='33' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 211.4 105.6 A 29 29 0 0 0 254 80' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='248.7' y='123.4' font-size='13' fill='%23334155' text-anchor='middle'%3E118°%3C/text%3E%3Cpath d='M 195.5 190 A 29 29 0 0 0 180.1 164.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='205.9' y='170.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallellik-alomati",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#c811da2b"
+    },
+    {
+      "q": "Kesuvchi ikki to'g'ri chiziqni kesdi va ichki bir tomonli burchaklar (2x + 10)° hamda (3x + 20)° ko'rinishida bo'ldi. Chiziqlar parallel bo'lishi uchun x nechaga teng bo'lishi kerak?",
+      "v": [
+        "36",
+        "12",
+        "30",
+        "15"
+      ],
+      "t": 2,
+      "izoh": "Parallellik sharti: ichki bir tomonli burchaklar yig'indisi 180°. Demak 2x + 10 + 3x + 20 = 180, ya'ni 5x + 30 = 180. Bundan 5x = 150 va x = 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallellik-alomati",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#927a5c90"
+    },
+    {
+      "q": "a ∥ b to'g'ri chiziqlar orasida M nuqta olindi. M dan a ga o'tkazilgan nur a bilan 35°, b ga o'tkazilgan nur esa b bilan 48° burchak hosil qiladi. Bu ikki nur orasidagi burchak necha gradus?",
+      "v": [
+        "97°",
+        "13°",
+        "166°",
+        "83°"
+      ],
+      "t": 3,
+      "izoh": "M nuqtadan a ga parallel yordamchi chiziq o'tkazamiz. Ichki almashinuvchi burchaklar bo'yicha u yuqori nur bilan 35°, pastki nur bilan 48° burchak hosil qiladi. Demak ∠PMQ = 35° + 48° = 83°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='260' viewBox='0 0 340 260'%3E%3Crect width='340' height='260' fill='%23ffffff'/%3E%3Cline x1='30' y1='68' x2='318' y2='68' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='198' x2='318' y2='198' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='120' y1='132' x2='211.4' y2='68' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='120' y1='132' x2='179.4' y2='198' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='202' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='106' y='136' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='211.4' y='59' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='179.4' y='217' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Cpath d='M 185.4 68 A 26 26 0 0 0 190.1 82.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='170.4' y='84.9' font-size='13' fill='%23334155' text-anchor='middle'%3E35°%3C/text%3E%3Cpath d='M 162 178.7 A 26 26 0 0 0 153.4 198' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='140.1' y='184.5' font-size='13' fill='%23334155' text-anchor='middle'%3E48°%3C/text%3E%3Cpath d='M 140.1 154.3 A 30 30 0 0 0 144.6 114.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='166.7' y='141.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zigzag-zanjir",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#68f691d2"
+    },
+    {
+      "q": "Ikki parallel devor orasidagi koridorda simyog'och o'rnatilgan. Sim yuqori devor bilan 28°, pastki devor bilan 37° burchak hosil qilsa, simning yog'ochdagi burilish burchagi necha gradus?",
+      "v": [
+        "115°",
+        "9°",
+        "65°",
+        "130°"
+      ],
+      "t": 2,
+      "izoh": "Yog'och turgan nuqtadan devorlarga parallel yordamchi chiziq o'tkazamiz. Ichki almashinuvchi burchaklar bo'yicha u sim bo'laklari bilan 28° va 37° hosil qiladi. Burilish burchagi 28° + 37° = 65°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='260' viewBox='0 0 340 260'%3E%3Crect width='340' height='260' fill='%23ffffff'/%3E%3Cline x1='30' y1='68' x2='318' y2='68' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='198' x2='318' y2='198' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='120' y1='132' x2='240.4' y2='68' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='120' y1='132' x2='207.6' y2='198' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='202' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='106' y='136' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='240.4' y='59' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='207.6' y='217' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Cpath d='M 214.4 68 A 26 26 0 0 0 217.4 80.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='198.7' y='82.4' font-size='13' fill='%23334155' text-anchor='middle'%3E28°%3C/text%3E%3Cpath d='M 186.8 182.4 A 26 26 0 0 0 181.6 198' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='166.8' y='188.4' font-size='13' fill='%23334155' text-anchor='middle'%3E37°%3C/text%3E%3Cpath d='M 144 150.1 A 30 30 0 0 0 146.5 117.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='166.9' y='139.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zigzag-zanjir",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#0c315a3d"
+    },
+    {
+      "q": "a ∥ b bo'lib, ular orasidagi K nuqtadan ikkita nur o'tkazilgan. Nurlar orasidagi burchak 124°, nurlardan biri a bilan 51° burchak hosil qiladi. Ikkinchi nur b bilan qanday burchak hosil qiladi?",
+      "v": [
+        "56°",
+        "175°",
+        "73°",
+        "29°"
+      ],
+      "t": 2,
+      "izoh": "K nuqtadan parallel yordamchi chiziq o'tkazamiz: u burchakni ikki qismga ajratadi. Birinchi qism a dagi burchakka teng, ya'ni 51°. Ikkinchi qism 124° − 51° = 73° va u b dagi burchakka teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='260' viewBox='0 0 340 260'%3E%3Crect width='340' height='260' fill='%23ffffff'/%3E%3Cline x1='30' y1='68' x2='318' y2='68' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='198' x2='318' y2='198' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='120' y1='132' x2='171.8' y2='68' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='120' y1='132' x2='140.2' y2='198' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='202' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='106' y='136' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='171.8' y='59' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='140.2' y='217' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Cpath d='M 145.8 68 A 26 26 0 0 0 155.4 88.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='133' y='90.5' font-size='13' fill='%23334155' text-anchor='middle'%3E51°%3C/text%3E%3Cpath d='M 132.6 173.1 A 26 26 0 0 0 114.2 198' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='105.6' y='176.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 128.8 160.7 A 30 30 0 0 0 138.9 108.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='166.1' y='145' font-size='13' fill='%23334155' text-anchor='middle'%3E124°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zigzag-zanjir",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#d9e24af5"
+    },
+    {
+      "q": "a ∥ b to'g'ri chiziqlar orasidagi P nuqtadan o'tkazilgan ikki nur a va b bilan o'zaro teng burchak hosil qiladi. Nurlar orasidagi burchak 96° bo'lsa, ularning har biri necha gradus?",
+      "v": [
+        "96°",
+        "42°",
+        "84°",
+        "48°"
+      ],
+      "t": 3,
+      "izoh": "P dan parallel yordamchi chiziq o'tkazsak, u 96° li burchakni ikki qismga ajratadi va bu qismlar mos ravishda izlanayotgan burchaklarga teng. Ular teng bo'lgani uchun har biri 96° : 2 = 48°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='260' viewBox='0 0 340 260'%3E%3Crect width='340' height='260' fill='%23ffffff'/%3E%3Cline x1='30' y1='68' x2='318' y2='68' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='198' x2='318' y2='198' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='120' y1='132' x2='177.6' y2='68' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='120' y1='132' x2='179.4' y2='198' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='202' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='106' y='136' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='177.6' y='59' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='179.4' y='217' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Cpath d='M 151.6 68 A 26 26 0 0 0 160.2 87.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='138.3' y='89.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 162 178.7 A 26 26 0 0 0 153.4 198' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='140.1' y='184.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 140.1 154.3 A 30 30 0 0 0 140.1 109.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='167' y='136' font-size='13' fill='%23334155' text-anchor='middle'%3E96°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zigzag-zanjir",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#9a57f74e"
+    },
+    {
+      "q": "Ikkita qo'shni burchakning har biriga bissektrisa o'tkazildi. Burchaklardan biri 124° ga teng bo'lsa, bissektrisalar orasidagi burchak necha gradus?",
+      "v": [
+        "90°",
+        "62°",
+        "118°",
+        "28°"
+      ],
+      "t": 0,
+      "izoh": "Qo'shni burchaklar 124° va 56°. Bissektrisalar ularni yarimlaydi: 62° va 28°. Bissektrisalar orasidagi burchak 62° + 28° = 90°, ya'ni u har doim to'g'ri burchak bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='91.2' y2='80.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='83.4' y='73' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cline x1='165' y1='190' x2='48.5' y2='128' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='36.1' y='125.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Cline x1='165' y1='190' x2='227' y2='73.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='233.5' y='65.1' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Cpath d='M 193 190 A 28 28 0 0 0 149.3 166.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='186.1' y='154.3' font-size='13' fill='%23334155' text-anchor='middle'%3E124°%3C/text%3E%3Cpath d='M 194.1 135.3 A 62 62 0 0 0 110.3 160.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='141.9' y='118.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisalar-orasidagi-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#76a03357"
+    },
+    {
+      "q": "Ikki to'g'ri chiziq kesishdi. Vertikal burchaklardan birining bissektrisasi va unga vertikal bo'lgan burchakning bissektrisasi qanday burchak hosil qiladi?",
+      "v": [
+        "90°",
+        "0°",
+        "180°",
+        "45°"
+      ],
+      "t": 2,
+      "izoh": "Vertikal burchaklar teng, ularning bissektrisalari ham simmetrik joylashadi. Har bir bissektrisa ikkinchisining davomi bo'lib qoladi, ya'ni ular bitta to'g'ri chiziq hosil qiladi va burchak 180° ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisalar-orasidagi-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#7edb1023"
+    },
+    {
+      "q": "∠AOB = 72° va ∠BOC unga qo'shni burchak. ∠BOC burchakning ON bissektrisasi o'tkazilgan bo'lsa, ∠AON burchak necha gradusga teng?",
+      "v": [
+        "54°",
+        "144°",
+        "108°",
+        "126°"
+      ],
+      "t": 3,
+      "izoh": "Qo'shni burchak ∠BOC = 180° − 72° = 108°. Uning bissektrisasi ∠BON = 108° : 2 = 54° ni beradi. Demak ∠AON = ∠AOB + ∠BON = 72° + 54° = 126°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='205.8' y2='64.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='210.1' y='55.1' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Cline x1='165' y1='190' x2='87.4' y2='83.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='79.2' y='75.9' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 175.5 157.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='206.3' y='164' font-size='13' fill='%23334155' text-anchor='middle'%3E72°%3C/text%3E%3Cpath d='M 175.5 157.7 A 34 34 0 0 0 145 162.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='160.5' y1='161.4' x2='158.9' y2='151.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 145 162.5 A 34 34 0 0 0 131 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='139.2' y1='176.8' x2='130.3' y2='172.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 237 190 A 72 72 0 0 0 122.7 131.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='217.8' y='118.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisalar-orasidagi-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#ebdb24ba"
+    },
+    {
+      "q": "To'g'ri chiziqning bir tomonida ketma-ket uchta burchak yotadi: birinchisi 40°, ikkinchisi 70°. Birinchi va uchinchi burchak bissektrisalari orasidagi burchak necha gradus?",
+      "v": [
+        "160°",
+        "125°",
+        "55°",
+        "145°"
+      ],
+      "t": 1,
+      "izoh": "Uchinchi burchak 180° − 40° − 70° = 70°. Birinchi burchak bissektrisasi to'g'ri chiziq bilan 20°, uchinchisiniki esa qarama-qarshi tomondan 35° hosil qiladi. Bissektrisalar orasidagi burchak 180° − 20° − 35° = 125°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='266.1' y2='105.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='274.5' y='102.1' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Cline x1='165' y1='190' x2='119.9' y2='66' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='116.1' y='59.6' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Cline x1='165' y1='190' x2='287.2' y2='145.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='298.4' y='145.4' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Cline x1='165' y1='190' x2='58.5' y2='115.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='48.7' y='112.6' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Cpath d='M 195 190 A 30 30 0 0 0 188 170.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='212.3' y='185.7' font-size='13' fill='%23334155' text-anchor='middle'%3E40°%3C/text%3E%3Cpath d='M 188 170.7 A 30 30 0 0 0 154.7 161.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='176.9' y='149.6' font-size='13' fill='%23334155' text-anchor='middle'%3E70°%3C/text%3E%3Cpath d='M 154.7 161.8 A 30 30 0 0 0 135 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 223.3 168.8 A 62 62 0 0 0 114.2 154.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='175.4' y='114.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisalar-orasidagi-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#d1f1d8a7"
+    },
+    {
+      "q": "Ikki to'g'ri chiziq kesishganda hosil bo'lgan to'rtta burchakning yig'indisi necha gradusga teng bo'ladi?",
+      "v": [
+        "360°",
+        "180°",
+        "270°",
+        "540°"
+      ],
+      "t": 0,
+      "izoh": "Kesishgan ikki chiziq atrofidagi to'rt burchak butun tekislikni to'ldiradi. Ular ikkita yoyiq burchakni tashkil qiladi, demak yig'indisi 2 · 180° = 360°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='272' viewBox='0 0 330 272'%3E%3Crect width='330' height='272' fill='%23ffffff'/%3E%3Cline x1='59' y1='136' x2='271' y2='136' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='108.8' y1='225.9' x2='221.2' y2='46.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='286' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='229.1' y='37.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='100.9' y='242.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='152' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 193 136 A 28 28 0 0 0 179.8 112.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='204.4' y='118.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 186.2 102.1 A 40 40 0 0 0 125 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='137.4' y='90.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 137 136 A 28 28 0 0 0 150.2 159.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='125.6' y='161.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 143.8 169.9 A 40 40 0 0 0 205 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='192.6' y='189.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesishuvdagi-tort-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#6733123a"
+    },
+    {
+      "q": "Ikkita to'g'ri chiziq kesishdi va hosil bo'lgan burchaklar teng emas. Eng kichik burchak 38° bo'lsa, eng katta va eng kichik burchakning ayirmasi necha gradus?",
+      "v": [
+        "142°",
+        "76°",
+        "104°",
+        "52°"
+      ],
+      "t": 2,
+      "izoh": "Kichik burchakka qo'shni burchak 180° − 38° = 142° va u eng kattasi bo'ladi. Ayirma esa 142° − 38° = 104° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='272' viewBox='0 0 330 272'%3E%3Crect width='330' height='272' fill='%23ffffff'/%3E%3Cline x1='59' y1='136' x2='271' y2='136' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='81.5' y1='201.3' x2='248.5' y2='70.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='286' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.3' y='65.5' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='69.7' y='214.5' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='152' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 193 136 A 28 28 0 0 0 187.1 118.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='207.5' y='125.3' font-size='13' fill='%23334155' text-anchor='middle'%3E38°%3C/text%3E%3Cpath d='M 196.5 111.4 A 40 40 0 0 0 125 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='146.4' y='86.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesishuvdagi-tort-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#42d91740"
+    },
+    {
+      "q": "Ikki to'g'ri ko'chaning kesishmasida to'rtta burchak hosil bo'ldi. Ulardan biri 90° ga teng bo'lsa, qolgan uchtasi haqida nima deyish mumkin?",
+      "v": [
+        "Ikkitasi 90°, biri 180°",
+        "Uchalasi har xil",
+        "Ikkitasi 45°, biri 90°",
+        "Uchalasi ham 90°"
+      ],
+      "t": 3,
+      "izoh": "Qo'shni burchak 180° − 90° = 90° ga teng bo'ladi, vertikal burchak ham 90°. Shu tariqa to'rt burchakning hammasi to'g'ri burchak bo'lib chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='272' viewBox='0 0 330 272'%3E%3Crect width='330' height='272' fill='%23ffffff'/%3E%3Cline x1='59' y1='136' x2='271' y2='136' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='165' y1='242' x2='165' y2='30' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='286' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='165' y='19' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='165' y='261' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='152' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 193 136 A 28 28 0 0 0 165 108' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='196.8' y='108.2' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Cpath d='M 165 96 A 40 40 0 0 0 125 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='124.7' y='99.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 137 136 A 28 28 0 0 0 165 164' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='133.2' y='171.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesishuvdagi-tort-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#387dc45f"
+    },
+    {
+      "q": "Ikki to'g'ri chiziq kesishganda hosil bo'lgan burchaklardan biri qolgan uchtasining yig'indisidan 100° ga kichik bo'lsa, shu burchak necha gradus?",
+      "v": [
+        "130°",
+        "65°",
+        "50°",
+        "180°"
+      ],
+      "t": 0,
+      "izoh": "Barcha burchaklar yig'indisi 360°. Izlanayotgan burchakni x desak, qolgan uchtasi 360° − x. Shart bo'yicha x = 360° − x − 100°, bundan 2x = 260° va x = 130°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='272' viewBox='0 0 330 272'%3E%3Crect width='330' height='272' fill='%23ffffff'/%3E%3Cline x1='59' y1='136' x2='271' y2='136' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='96.9' y1='217.2' x2='233.1' y2='54.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='286' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='242.8' y='47.3' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='87.2' y='232.7' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='152' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 193 136 A 28 28 0 0 0 183 114.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='205.8' y='121' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 190.7 105.4 A 40 40 0 0 0 125 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='140.9' y='88.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 137 136 A 28 28 0 0 0 147 157.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='124.2' y='159' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 139.3 166.6 A 40 40 0 0 0 205 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='189.1' y='191.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesishuvdagi-tort-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#b808171a"
+    },
+    {
+      "q": "Ikkita qo'shni burchak (4x + 15)° va (6x − 35)° ko'rinishida berilgan. Noma'lum x ning qiymatini toping.",
+      "v": [
+        "18",
+        "25",
+        "38",
+        "20"
+      ],
+      "t": 3,
+      "izoh": "Qo'shni burchaklar yig'indisi 180°: 4x + 15 + 6x − 35 = 180. Chap tomonni soddalashtiramiz: 10x − 20 = 180, ya'ni 10x = 200 va x = 20.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='153.5' y2='58.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='152.3' y='48.6' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 162 156.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='214' y='156.4' font-size='13' fill='%23334155' text-anchor='middle'%3E(4x + 15)°%3C/text%3E%3Cpath d='M 160.5 138.2 A 52 52 0 0 0 113 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='110' y='147.4' font-size='13' fill='%23334155' text-anchor='middle'%3E(6x − 35)°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-tenglama",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#bd7aa07a"
+    },
+    {
+      "q": "Kesishgan to'g'ri chiziqlar hosil qilgan vertikal burchaklar (5x − 8)° va (3x + 24)° ko'rinishida yozilgan. Bu burchaklarning har biri necha gradus?",
+      "v": [
+        "72°",
+        "16°",
+        "108°",
+        "80°"
+      ],
+      "t": 0,
+      "izoh": "Vertikal burchaklar teng: 5x − 8 = 3x + 24. Bundan 2x = 32 va x = 16. Burchak qiymati 5 · 16 − 8 = 72°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='272' viewBox='0 0 330 272'%3E%3Crect width='330' height='272' fill='%23ffffff'/%3E%3Cline x1='59' y1='136' x2='271' y2='136' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='132.2' y1='236.8' x2='197.8' y2='35.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='286' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='202.4' y='24.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='127.6' y='255.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='152' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 193 136 A 28 28 0 0 0 173.7 109.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='213' y='113.5' font-size='13' fill='%23334155' text-anchor='middle'%3E(5x − 8)°%3C/text%3E%3Cpath d='M 125 136 A 40 40 0 0 0 152.6 174' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='113' y='173.5' font-size='13' fill='%23334155' text-anchor='middle'%3E(3x + 24)°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-tenglama",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#be8d81c1"
+    },
+    {
+      "q": "a ∥ b to'g'ri chiziqlarni c kesuvchi kesadi va ichki bir tomonli burchaklar (7x + 5)° hamda (3x + 15)° ko'rinishida. Kattaroq burchak necha gradus?",
+      "v": [
+        "63°",
+        "117°",
+        "112°",
+        "160°"
+      ],
+      "t": 1,
+      "izoh": "Ichki bir tomonli burchaklar yig'indisi 180°: 7x + 5 + 3x + 15 = 180, ya'ni 10x + 20 = 180 va x = 16. Burchaklar 7 · 16 + 5 = 117° va 3 · 16 + 15 = 63°, kattasi 117°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='141.8' y1='243.5' x2='252.2' y2='26.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='264.2' y='32.5' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 196 80 A 29 29 0 0 0 211.8 105.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='173' y='108' font-size='13' fill='%23334155' text-anchor='middle'%3E(3x + 15)°%3C/text%3E%3Cpath d='M 182.2 164.2 A 29 29 0 0 0 140 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='145' y='154.8' font-size='13' fill='%23334155' text-anchor='middle'%3E(7x + 5)°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-tenglama",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#462ec89c"
+    },
+    {
+      "q": "To'g'ri chiziqning bir tomonida ketma-ket uchta burchak yotadi: (x + 20)°, (2x)° va (3x − 20)°. O'rtadagi burchak necha gradus?",
+      "v": [
+        "60°",
+        "30°",
+        "50°",
+        "70°"
+      ],
+      "t": 0,
+      "izoh": "Uch burchak yoyiq burchakni to'ldiradi: x + 20 + 2x + 3x − 20 = 180. Bundan 6x = 180 va x = 30. O'rtadagi burchak 2 · 30 = 60°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='249.8' y2='88.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='258.8' y='82.2' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Cline x1='165' y1='190' x2='119.9' y2='66' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.1' y='56.8' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 186.9 164' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='218' y='172.4' font-size='13' fill='%23334155' text-anchor='middle'%3E(x + 20)°%3C/text%3E%3Cpath d='M 198.4 150.2 A 52 52 0 0 0 147.2 141.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='177' y='126' font-size='13' fill='%23334155' text-anchor='middle'%3E(2x)°%3C/text%3E%3Cpath d='M 153.4 158.1 A 34 34 0 0 0 131 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118' y='164.7' font-size='13' fill='%23334155' text-anchor='middle'%3E(3x − 20)°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-tenglama",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#014f2821"
+    },
+    {
+      "q": "ABCD trapetsiyada BC ∥ AD tomonlar parallel. Agar ∠A = 64° bo'lsa, AB yon tomonida yotgan ∠B burchak necha gradusga teng?",
+      "v": [
+        "64°",
+        "26°",
+        "116°",
+        "124°"
+      ],
+      "t": 2,
+      "izoh": "BC ∥ AD bo'lgani uchun AB yon tomoni kesuvchi bo'ladi. ∠A va ∠B ichki bir tomonli burchaklardir, demak ∠B = 180° − 64° = 116°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='48,205 103.1,92 254,92 278,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='35' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='91.1' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='266' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='291' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cpath d='M 78 205 A 30 30 0 0 0 61.2 178' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='87.9' y='184.1' font-size='13' fill='%23334155' text-anchor='middle'%3E64°%3C/text%3E%3Cpath d='M 89.9 119 A 30 30 0 0 0 133.1 92' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='128' y='135.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trapetsiya-burchaklari",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#f5ffbeca"
+    },
+    {
+      "q": "Tomorqadagi trapetsiya shaklidagi yer uchastkasining ikki tomoni o'zaro parallel. Parallel bo'lmagan tomonda yotgan burchaklardan biri 105° bo'lsa, ikkinchisi necha gradus?",
+      "v": [
+        "75°",
+        "105°",
+        "15°",
+        "85°"
+      ],
+      "t": 0,
+      "izoh": "Yon tomon parallel tomonlar uchun kesuvchi vazifasini bajaradi. Unda yotgan burchaklar ichki bir tomonli, ya'ni yig'indisi 180°. Demak ikkinchisi 180° − 105° = 75°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='48,205 78.3,92 232.3,92 278,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='35' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='66.3' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='244.3' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='291' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cpath d='M 78 205 A 30 30 0 0 0 55.8 176' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='85.3' y='180.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 70.5 121 A 30 30 0 0 0 108.3 92' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='106.9' y='133.3' font-size='13' fill='%23334155' text-anchor='middle'%3E105°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trapetsiya-burchaklari",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#4091d8e3"
+    },
+    {
+      "q": "Trapetsiyaning to'rtta burchagidan uchtasi 72°, 108° va 65° ga teng ekanligi ma'lum. To'rtinchi burchak necha gradusga teng?",
+      "v": [
+        "115°",
+        "245°",
+        "65°",
+        "75°"
+      ],
+      "t": 0,
+      "izoh": "Har qanday to'rtburchakning burchaklari yig'indisi 360°. Demak to'rtinchi burchak 360° − 72° − 108° − 65° = 115°. Tekshirish: 65° va 115° bir yon tomonda yotib 180° beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='48,205 84.7,92 225.3,92 278,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='35' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='72.7' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='237.3' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='291' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cpath d='M 78 205 A 30 30 0 0 0 57.3 176.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='86' y='181.4' font-size='13' fill='%23334155' text-anchor='middle'%3E72°%3C/text%3E%3Cpath d='M 75.4 120.5 A 30 30 0 0 0 114.7 92' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='112.3' y='134' font-size='13' fill='%23334155' text-anchor='middle'%3E108°%3C/text%3E%3Cpath d='M 195.3 92 A 30 30 0 0 0 238 119.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='200' y='135.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 265.3 177.8 A 30 30 0 0 0 248 205' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='238.4' y='183.7' font-size='13' fill='%23334155' text-anchor='middle'%3E65°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trapetsiya-burchaklari",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#c6343c80"
+    },
+    {
+      "q": "Ustaxonada yasalgan to'g'ri burchakli trapetsiya shaklidagi metall plastinkaning o'tkir burchagi 52° ga teng. Plastinkaning eng katta burchagi necha gradus?",
+      "v": [
+        "90°",
+        "128°",
+        "38°",
+        "118°"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri burchakli trapetsiyada ikkita burchak 90° ga teng. O'tkir burchak bilan bir yon tomonda yotgan burchak 180° − 52° = 128°. Bu qiymat 90° dan katta, demak eng katta burchak 128°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='48,205 136.3,92 278,92 278,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='35' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='124.3' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='290' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='291' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cpath d='M 78 205 A 30 30 0 0 0 66.5 181.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='90.2' y='188.4' font-size='13' fill='%23334155' text-anchor='middle'%3E52°%3C/text%3E%3Cpath d='M 117.8 115.6 A 30 30 0 0 0 166.3 92' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='156.9' y='138.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 248 92 A 30 30 0 0 0 278 122' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='244.8' y='129.2' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Cpath d='M 278 175 A 30 30 0 0 0 248 205' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='244.8' y='175.8' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trapetsiya-burchaklari",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#246667f0"
+    },
+    {
+      "q": "Parallelogramm shaklidagi kafel plitkasining bir burchagi 58° ga teng. Shu burchakka qo'shni bo'lgan burchak necha gradusga teng?",
+      "v": [
+        "58°",
+        "32°",
+        "142°",
+        "122°"
+      ],
+      "t": 3,
+      "izoh": "Parallelogrammning qarama-qarshi tomonlari parallel, shuning uchun qo'shni burchaklar ichki bir tomonli bo'ladi. Ularning yig'indisi 180°, demak qo'shni burchak 180° − 58° = 122°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='245' viewBox='0 0 320 245'%3E%3Crect width='320' height='245' fill='%23ffffff'/%3E%3Cpolygon points='52,200 119.5,92 264.5,92 197,200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='39' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='107.5' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='276.5' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='210' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cpath d='M 82 200 A 30 30 0 0 0 67.9 174.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='93.1' y='181.2' font-size='13' fill='%23334155' text-anchor='middle'%3E58°%3C/text%3E%3Cpath d='M 103.6 117.4 A 30 30 0 0 0 149.5 92' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='142.3' y='137.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelogramm-burchaklari",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#f2e1ec28"
+    },
+    {
+      "q": "Parallelogramm shaklidagi ramkaning qarama-qarshi ikki burchagining yig'indisi 140° ga teng. Ramkaning eng katta burchagi necha gradus?",
+      "v": [
+        "70°",
+        "140°",
+        "110°",
+        "40°"
+      ],
+      "t": 2,
+      "izoh": "Parallelogrammda qarama-qarshi burchaklar teng, demak har biri 140° : 2 = 70°. Qo'shni burchak 180° − 70° = 110° bo'lib, u eng kattasidir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='245' viewBox='0 0 320 245'%3E%3Crect width='320' height='245' fill='%23ffffff'/%3E%3Cpolygon points='52,200 91.3,92 236.3,92 197,200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='39' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='79.3' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='248.3' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='210' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cpath d='M 82 200 A 30 30 0 0 0 62.3 171.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='90.5' y='177' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 81 120.2 A 30 30 0 0 0 121.3 92' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.3' y='134.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelogramm-burchaklari",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#cf1840c6"
+    },
+    {
+      "q": "Ilhom yasagan parallelogramm shaklidagi darcha ramkasining bir burchagi qo'shnisidan 40° ga katta. Ramkaning kichik burchagi necha gradus?",
+      "v": [
+        "110°",
+        "90°",
+        "20°",
+        "70°"
+      ],
+      "t": 3,
+      "izoh": "Qo'shni burchaklar yig'indisi 180°. Kichigini x desak, x + x + 40° = 180°, ya'ni 2x = 140° va x = 70°. Demak kichik burchak 70°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='245' viewBox='0 0 320 245'%3E%3Crect width='320' height='245' fill='%23ffffff'/%3E%3Cpolygon points='52,200 91.3,92 236.3,92 197,200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='39' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='79.3' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='248.3' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='210' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cpath d='M 82 200 A 30 30 0 0 0 62.3 171.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='90.5' y='177' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelogramm-burchaklari",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#8c776dfe"
+    },
+    {
+      "q": "Parallelogrammning o'tkir burchagi 70° ga teng. O'tmas burchak uchidan o'tkazilgan diagonal shu burchakni 2 : 3 nisbatda bo'lsa, diagonal ajratgan kichik burchak necha gradus?",
+      "v": [
+        "66°",
+        "28°",
+        "44°",
+        "42°"
+      ],
+      "t": 2,
+      "izoh": "O'tmas burchak 180° − 70° = 110°. Diagonal uni 2 : 3 nisbatda bo'ladi: 2x + 3x = 110°, bundan x = 22°. Kichik qism 2 · 22° = 44° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='245' viewBox='0 0 320 245'%3E%3Crect width='320' height='245' fill='%23ffffff'/%3E%3Cpolygon points='52,200 91.3,92 242.3,92 203,200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91.3' y1='92' x2='203' y2='200' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='39' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='79.3' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='254.3' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='216' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cpath d='M 82 200 A 30 30 0 0 0 62.3 171.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='90.5' y='177' font-size='13' fill='%23334155' text-anchor='middle'%3E70°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallelogramm-burchaklari",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#6ff98f58"
+    },
+    {
+      "q": "Uchta parallel to'g'ri chiziqni bitta kesuvchi kesib o'tdi. Yuqorigi chiziq bilan hosil bo'lgan burchak 54° bo'lsa, eng pastki chiziqdagi mos burchak necha gradus?",
+      "v": [
+        "126°",
+        "108°",
+        "54°",
+        "36°"
+      ],
+      "t": 2,
+      "izoh": "Uchala chiziq o'zaro parallel bo'lgani uchun kesuvchi ular bilan bir xil burchaklar hosil qiladi. Mos burchaklar teng, demak pastki chiziqdagi burchak ham 54°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='270' viewBox='0 0 345 270'%3E%3Crect width='345' height='270' fill='%23ffffff'/%3E%3Cline x1='28' y1='55' x2='318' y2='55' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='135' x2='318' y2='135' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='215' x2='318' y2='215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107.3' y1='251.4' x2='276.5' y2='18.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='18' y='59' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='18' y='139' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='18' y='219' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 277 55 A 27 27 0 0 0 265.9 33.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='289.2' y='39' font-size='13' fill='%23334155' text-anchor='middle'%3E54°%3C/text%3E%3Cpath d='M 160.8 215 A 27 27 0 0 0 149.7 193.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='173' y='199' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchta-parallel",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#040d4e28"
+    },
+    {
+      "q": "a ∥ b ∥ c to'g'ri chiziqlarni bitta kesuvchi kesadi. Kesuvchining a bilan hosil qilgan burchagi 67° bo'lsa, c chizig'idagi ichki bir tomonli burchak necha gradus?",
+      "v": [
+        "67°",
+        "23°",
+        "113°",
+        "134°"
+      ],
+      "t": 2,
+      "izoh": "Uch chiziq parallel bo'lgani uchun kesuvchi ular bilan bir xil burchak hosil qiladi. Ichki bir tomonli burchak esa 180° gacha to'ldiradi: 180° − 67° = 113°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='270' viewBox='0 0 345 270'%3E%3Crect width='345' height='270' fill='%23ffffff'/%3E%3Cline x1='28' y1='55' x2='318' y2='55' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='135' x2='318' y2='135' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='215' x2='318' y2='215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='164.5' y1='256.4' x2='267.6' y2='13.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='18' y='59' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='18' y='139' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='18' y='219' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 277 55 A 27 27 0 0 0 260.5 30.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='286.7' y='34.7' font-size='13' fill='%23334155' text-anchor='middle'%3E67°%3C/text%3E%3Cpath d='M 192.6 190.1 A 27 27 0 0 0 155.1 215' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='157.8' y='182.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchta-parallel",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#cbaeae2b"
+    },
+    {
+      "q": "Daftardagi uchta parallel chiziqni qiya chizilgan chiziq kesib o'tdi. Ustki kesishuvdagi o'tmas burchak 124° bo'lsa, eng pastki kesishuvdagi o'tkir burchak necha gradus?",
+      "v": [
+        "124°",
+        "56°",
+        "34°",
+        "62°"
+      ],
+      "t": 1,
+      "izoh": "O'tmas burchak 124° bo'lsa, unga qo'shni o'tkir burchak 180° − 124° = 56°. Chiziqlar parallel bo'lgani uchun pastki kesishuvda ham xuddi shu 56° li burchak hosil bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='270' viewBox='0 0 345 270'%3E%3Crect width='345' height='270' fill='%23ffffff'/%3E%3Cline x1='28' y1='55' x2='318' y2='55' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='135' x2='318' y2='135' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='215' x2='318' y2='215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='116.9' y1='252.3' x2='275.2' y2='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='18' y='59' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='18' y='139' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='18' y='219' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 265.1 32.6 A 27 27 0 0 0 223 55' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='229.3' y='20.2' font-size='13' fill='%23334155' text-anchor='middle'%3E124°%3C/text%3E%3Cpath d='M 169.1 215 A 27 27 0 0 0 157.2 192.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='180.9' y='198.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchta-parallel",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#e631b8f2"
+    },
+    {
+      "q": "Uchta parallel to'g'ri chiziq bitta kesuvchi bilan kesildi va hosil bo'lgan burchaklardan biri 54° ga teng. Jami o'n ikki burchakdan nechtasi 54° ga teng?",
+      "v": [
+        "6 ta",
+        "3 ta",
+        "4 ta",
+        "12 ta"
+      ],
+      "t": 0,
+      "izoh": "Har bir kesishuvda to'rt burchak bor: ikkitasi 54°, ikkitasi 126°. Uchta kesishuv borligi uchun 54° li burchaklar soni 2 · 3 = 6 ta bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='270' viewBox='0 0 345 270'%3E%3Crect width='345' height='270' fill='%23ffffff'/%3E%3Cline x1='28' y1='55' x2='318' y2='55' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='135' x2='318' y2='135' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='28' y1='215' x2='318' y2='215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107.3' y1='251.4' x2='276.5' y2='18.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='18' y='59' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='18' y='139' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='18' y='219' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 277 55 A 27 27 0 0 0 265.9 33.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='269.6' y1='45' x2='278.5' y2='40.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='299' y='34' font-size='13' fill='%23334155' text-anchor='middle'%3E54°%3C/text%3E%3Cpath d='M 218.9 135 A 27 27 0 0 0 207.8 113.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='211.5' y1='125' x2='220.4' y2='120.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 160.8 215 A 27 27 0 0 0 149.7 193.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='153.4' y1='205' x2='162.3' y2='200.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uchta-parallel",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#d4bc8052"
+    },
+    {
+      "q": "a ∥ b to'g'ri chiziqlar berilgan va c to'g'ri chiziq a ga perpendikulyar. Bunda c bilan b orasidagi burchak necha gradusga teng?",
+      "v": [
+        "45°",
+        "180°",
+        "90°",
+        "0°"
+      ],
+      "t": 2,
+      "izoh": "Agar to'g'ri chiziq ikkita parallel chiziqdan biriga perpendikulyar bo'lsa, ikkinchisiga ham perpendikulyar bo'ladi. Buni mos burchaklar tengligi tasdiqlaydi, demak burchak 90°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='250' viewBox='0 0 330 250'%3E%3Crect width='330' height='250' fill='%23ffffff'/%3E%3Cline x1='30' y1='78' x2='300' y2='78' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='175' y1='40' x2='175' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='186,78 186,67 175,67' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='186,190 186,179 175,179' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='20' y='82' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='187' y='50' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 205 78 A 30 30 0 0 0 175 48' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='208.2' y='48.8' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Cpath d='M 205 190 A 30 30 0 0 0 175 160' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='208.2' y='160.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perpendikulyar-va-parallel",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#0b858c1c"
+    },
+    {
+      "q": "Xonaning ikkita devori o'zaro parallel. Pol ustiga yotqizilgan truba birinchi devorga perpendikulyar bo'lsa, truba ikkinchi devor bilan hosil qilgan burchakning yarmi necha gradus?",
+      "v": [
+        "90°",
+        "30°",
+        "45°",
+        "60°"
+      ],
+      "t": 2,
+      "izoh": "Parallel devorlardan biriga perpendikulyar bo'lgan truba ikkinchisiga ham perpendikulyar bo'ladi, ya'ni burchak 90°. Uning yarmi esa 90° : 2 = 45°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='250' viewBox='0 0 330 250'%3E%3Crect width='330' height='250' fill='%23ffffff'/%3E%3Cline x1='30' y1='78' x2='300' y2='78' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='175' y1='40' x2='175' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='186,78 186,67 175,67' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='164,190 164,179 175,179' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='20' y='82' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='187' y='50' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 205 78 A 30 30 0 0 0 175 48' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='208.2' y='48.8' font-size='13' fill='%23334155' text-anchor='middle'%3E90°%3C/text%3E%3Cline x1='175' y1='190' x2='231.6' y2='133.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='240.1' y='128.9' font-size='13' fill='%23334155' text-anchor='middle'%3Ed%3C/text%3E%3Cpath d='M 205 190 A 30 30 0 0 0 196.2 168.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='219.3' y='175.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 196.2 168.8 A 30 30 0 0 0 175 160' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perpendikulyar-va-parallel",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#ddf87d66"
+    },
+    {
+      "q": "a ∥ b to'g'ri chiziqlar berilgan. c chizig'i a ni 90° burchak ostida, d chizig'i esa b ni 90° burchak ostida kesadi. c va d o'zaro qanday joylashgan?",
+      "v": [
+        "Perpendikulyar",
+        "Parallel",
+        "Kesishadi, lekin perpendikulyar emas",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "c chizig'i a ga perpendikulyar bo'lgani uchun b ga ham perpendikulyar. Xuddi shunday d ham b ga perpendikulyar. Bitta chiziqqa perpendikulyar ikki chiziq esa o'zaro parallel bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perpendikulyar-va-parallel",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#56bc36d7"
+    },
+    {
+      "q": "Xonadagi ikki parallel devorga perpendikulyar tokcha o'rnatilgan. Tokcha bilan 34° burchak hosil qiluvchi sim birinchi devor bilan qanday burchak hosil qiladi?",
+      "v": [
+        "56°",
+        "34°",
+        "124°",
+        "146°"
+      ],
+      "t": 0,
+      "izoh": "Tokcha devorga perpendikulyar, ya'ni ular 90° hosil qiladi. Sim tokcha bilan 34° hosil qilsa, devor bilan burchagi 90° − 34° = 56° bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='250' viewBox='0 0 330 250'%3E%3Crect width='330' height='250' fill='%23ffffff'/%3E%3Cline x1='30' y1='78' x2='300' y2='78' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='175' y1='40' x2='175' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='186,78 186,67 175,67' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpolyline points='186,190 186,179 175,179' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='20' y='82' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='187' y='50' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cline x1='135.9' y1='248' x2='242.1' y2='90.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 199.6 153.5 A 44 44 0 0 0 175 146' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='192.8' y='135.7' font-size='13' fill='%23334155' text-anchor='middle'%3E34°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "perpendikulyar-va-parallel",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#88673d30"
+    },
+    {
+      "q": "a ∥ b to'g'ri chiziqlarni ikkita kesuvchi kesib o'tdi va ular a chizig'idagi P nuqtada uchrashdi. Kesuvchilarning b bilan hosil qilgan ichki burchaklari 63° va 47° bo'lsa, P dagi burchak necha gradus?",
+      "v": [
+        "110°",
+        "70°",
+        "117°",
+        "133°"
+      ],
+      "t": 1,
+      "izoh": "a ∥ b bo'lgani uchun P dagi burchakning ikki yonidagi burchaklar ichki almashinuvchi bo'lib, 63° va 47° ga teng. Yoyiq burchakdan foydalanamiz: 180° − 63° − 47° = 70°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='250' viewBox='0 0 345 250'%3E%3Crect width='345' height='250' fill='%23ffffff'/%3E%3Cline x1='30' y1='70' x2='318' y2='70' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='200' x2='318' y2='200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='172' y1='70' x2='105.8' y2='200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='172' y1='70' x2='293.2' y2='200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='74' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='204' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='172' y='62' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='93.8' y='218' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Ctext x='305.2' y='218' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Cpath d='M 133.8 200 A 28 28 0 0 0 118.5 175.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='144.2' y='180.5' font-size='13' fill='%23334155' text-anchor='middle'%3E63°%3C/text%3E%3Cpath d='M 274.1 179.5 A 28 28 0 0 0 265.2 200' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='251.9' y='186.1' font-size='13' fill='%23334155' text-anchor='middle'%3E47°%3C/text%3E%3Cpath d='M 158.4 96.7 A 30 30 0 0 0 192.5 91.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='178.5' y='120.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-kesuvchi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#074bf6e1"
+    },
+    {
+      "q": "Ikki parallel ko'chani ikkita qiya yo'l kesib o'tadi va ular bitta chorrahada uchrashadi. Yo'llarning bir ko'cha bilan burchaklari 52° va 61° bo'lsa, chorrahadagi burchak necha gradus?",
+      "v": [
+        "113°",
+        "128°",
+        "67°",
+        "119°"
+      ],
+      "t": 2,
+      "izoh": "Chorraha nuqtasidan ko'chalarga parallel yordamchi chiziq o'tkazamiz. Ichki almashinuvchi burchaklar 52° va 61° ni beradi, chorrahadagi burchak esa 180° − 52° − 61° = 67°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='250' viewBox='0 0 345 250'%3E%3Crect width='345' height='250' fill='%23ffffff'/%3E%3Cline x1='30' y1='70' x2='318' y2='70' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='200' x2='318' y2='200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='172' y1='70' x2='70.4' y2='200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='172' y1='70' x2='244.1' y2='200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='74' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='204' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='172' y='62' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='58.4' y='218' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Ctext x='256.1' y='218' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Cpath d='M 98.4 200 A 28 28 0 0 0 87.6 177.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='110.8' y='184.3' font-size='13' fill='%23334155' text-anchor='middle'%3E52°%3C/text%3E%3Cpath d='M 230.5 175.5 A 28 28 0 0 0 216.1 200' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='205.3' y='181.2' font-size='13' fill='%23334155' text-anchor='middle'%3E61°%3C/text%3E%3Cpath d='M 153.5 93.6 A 30 30 0 0 0 186.5 96.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='168.3' y='120.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-kesuvchi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#ad847778"
+    },
+    {
+      "q": "a ∥ b to'g'ri chiziqlar va ikkita kesuvchi PQR uchburchagini hosil qildi. Uchburchakning Q va R uchlaridagi tashqi burchaklar 130° va 145° ga teng bo'lsa, P uchidagi ichki burchak necha gradus?",
+      "v": [
+        "95°",
+        "85°",
+        "275°",
+        "50°"
+      ],
+      "t": 0,
+      "izoh": "Har qanday uchburchakning tashqi burchaklari yig'indisi 360°. Uchinchi tashqi burchak 360° − 130° − 145° = 85°. Unga qo'shni ichki burchak esa 180° − 85° = 95°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='250' viewBox='0 0 345 250'%3E%3Crect width='345' height='250' fill='%23ffffff'/%3E%3Cline x1='30' y1='121.5' x2='332' y2='121.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='200' x2='332' y2='200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='175.9' y1='121.5' x2='110' y2='200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='175.9' y1='121.5' x2='288' y2='200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='125.5' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='204' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='168' y='114' font-size='13' fill='%23334155' text-anchor='middle'%3EP%3C/text%3E%3Ctext x='100' y='218' font-size='13' fill='%23334155' text-anchor='middle'%3EQ%3C/text%3E%3Ctext x='298' y='218' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Cpath d='M 130.6 175.5 A 32 32 0 0 0 78 200' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='88.9' y='158.7' font-size='13' fill='%23334155' text-anchor='middle'%3E130°%3C/text%3E%3Cpath d='M 320 200 A 32 32 0 0 0 261.8 181.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='303' y='156.3' font-size='13' fill='%23334155' text-anchor='middle'%3E145°%3C/text%3E%3Cpath d='M 154 147.5 A 34 34 0 0 0 203.8 141' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='182.7' y='177.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-kesuvchi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#0c674d5a"
+    },
+    {
+      "q": "Ikki parallel to'g'ri chiziqni bir tomonga qiya ikkita kesuvchi kesdi. Birinchi kesuvchi parallel chiziq bilan 70°, ikkinchisi 55° burchak hosil qilsa, kesuvchilar orasidagi o'tkir burchak necha gradus?",
+      "v": [
+        "125°",
+        "15°",
+        "55°",
+        "165°"
+      ],
+      "t": 1,
+      "izoh": "Kesuvchilar kesishgan nuqtadan parallel chiziqlarga parallel yordamchi chiziq o'tkazamiz. Mos burchaklar bo'yicha kesuvchilar u bilan 70° va 55° hosil qiladi. Ular bir tomonda yotgani uchun burchak 70° − 55° = 15°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-kesuvchi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#3536f49c"
+    },
+    {
+      "q": "∠ABC burchakning bissektrisasi BD nur bo'lsin. D nuqtadan BC ga parallel to'g'ri chiziq o'tkazilgan. ∠ABD = 34° bo'lsa, bissektrisa bilan yangi chiziq orasidagi burchak necha gradus?",
+      "v": [
+        "68°",
+        "56°",
+        "146°",
+        "34°"
+      ],
+      "t": 3,
+      "izoh": "Bissektrisa BD ∠ABC ni ikkiga bo'lgani uchun ∠DBC = ∠ABD = 34°. Yangi chiziq BC ga parallel, BD esa kesuvchi. Ichki almashinuvchi burchaklar teng, demak izlanayotgan burchak 34°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bissektrisa-va-parallel",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#4ee903df"
+    },
+    {
+      "q": "Trapetsiyaning o'tkir burchagidan o'tkazilgan bissektrisa qarama-qarshi parallel tomonni kesib o'tdi. Bissektrisa ajratgan uchburchak qanday uchburchak bo'ladi?",
+      "v": [
+        "Teng tomonli",
+        "To'g'ri burchakli",
+        "Teng yonli",
+        "O'tmas burchakli"
+      ],
+      "t": 2,
+      "izoh": "Bissektrisa asos bilan ikki teng burchak hosil qiladi. Parallel tomon bilan kesishganda ichki almashinuvchi burchak bissektrisa burchagiga teng bo'ladi. Uchburchakda ikki burchak teng, demak u teng yonli.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='50,205 91.1,92 231.1,92 280,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='50,205 91.1,92 211.4,92' stroke='%235b4bc4' stroke-width='2.5' fill='none'/%3E%3Ctext x='37' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='79' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='243' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='293' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='215' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Cpath d='M 82 205 A 32 32 0 0 0 76.2 186.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='75.8' y1='196.9' x2='85.3' y2='193.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 76.2 186.6 A 32 32 0 0 0 60.9 174.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='66.4' y1='183.6' x2='72.5' y2='175.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 179.4 92 A 32 32 0 0 0 185.2 110.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='185.6' y1='100.1' x2='176.1' y2='103.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-va-parallel",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#f9df769a"
+    },
+    {
+      "q": "Parallelogramm shaklidagi bog' uchastkasining 76° li burchagidan bissektrisa o'tkazilib, u qarama-qarshi tomonni kesdi. Bissektrisa bilan kesilgan tomon orasidagi burchak necha gradus?",
+      "v": [
+        "76°",
+        "38°",
+        "52°",
+        "104°"
+      ],
+      "t": 1,
+      "izoh": "Bissektrisa 76° ni ikkiga bo'ladi: 76° : 2 = 38°. Kesilgan tomon bissektrisa chiqqan tomonga parallel, shuning uchun ichki almashinuvchi burchak ham 38° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='245' viewBox='0 0 320 245'%3E%3Crect width='320' height='245' fill='%23ffffff'/%3E%3Cpolygon points='52,200 78.9,92 223.9,92 197,200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='39' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='194' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Cline x1='52' y1='200' x2='190.2' y2='92' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='66.9' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='235.9' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='210' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cpath d='M 102 200 A 50 50 0 0 0 64.1 151.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='117.8' y='180.1' font-size='13' fill='%23334155' text-anchor='middle'%3E76°%3C/text%3E%3Cpath d='M 160.2 92 A 30 30 0 0 0 166.6 110.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='144.8' y='111.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bissektrisa-va-parallel",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#2975f98f"
+    },
+    {
+      "q": "ABCD trapetsiyada BC ∥ AD va ∠A = 58°. ∠A ning bissektrisasi BC tomonni K nuqtada kesadi. ABK uchburchakning B uchidagi burchagi necha gradusga teng?",
+      "v": [
+        "122°",
+        "29°",
+        "58°",
+        "61°"
+      ],
+      "t": 0,
+      "izoh": "AB yon tomoni kesuvchi, shuning uchun ∠B = 180° − 58° = 122°. ABK uchburchakda B uchidagi burchak aynan shu burchak bo'lib, u 122° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='48,205 118.6,92 258.1,92 278,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='35' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='106.6' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='270.1' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='291' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cpath d='M 78 205 A 30 30 0 0 0 63.9 179.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='89.1' y='186.2' font-size='13' fill='%23334155' text-anchor='middle'%3E58°%3C/text%3E%3Cpath d='M 102.7 117.4 A 30 30 0 0 0 148.6 92' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='141.4' y='137.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bissektrisa-va-parallel",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#715f5066"
+    },
+    {
+      "q": "Kesishgan ikki to'g'ri chiziq hosil qilgan qo'shni burchaklarning ayirmasi 52° ga teng bo'lsa, kattaroq burchak necha gradusga teng?",
+      "v": [
+        "64°",
+        "26°",
+        "128°",
+        "116°"
+      ],
+      "t": 3,
+      "izoh": "Burchaklar yig'indisi 180°, ayirmasi 52°. Kattasini topish uchun (180° + 52°) : 2 = 116° formulasidan foydalanamiz. Tekshirish: 116° − 64° = 52°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='272' viewBox='0 0 330 272'%3E%3Crect width='330' height='272' fill='%23ffffff'/%3E%3Cline x1='59' y1='136' x2='271' y2='136' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='118.5' y1='231.3' x2='211.5' y2='40.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='286' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='218' y='31.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='112' y='248.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='152' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 193 136 A 28 28 0 0 0 177.3 110.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='203.2' y='116.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 182.5 100 A 40 40 0 0 0 125 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='134.8' y='91.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-ayirma",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#692610e2"
+    },
+    {
+      "q": "Bekzod chizmasida ikki parallel chiziqni kesuvchi kesgan. Ichki bir tomonli burchaklarning ayirmasi 24° bo'lsa, ulardan kichigi necha gradus?",
+      "v": [
+        "102°",
+        "12°",
+        "78°",
+        "156°"
+      ],
+      "t": 2,
+      "izoh": "Ichki bir tomonli burchaklar yig'indisi 180°, ayirmasi esa 24°. Kichigi (180° − 24°) : 2 = 78° ga teng. Kattasi 102° bo'lib, ayirma 24° chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='189.1' y1='248.7' x2='237.5' y2='21.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='249.5' y='27.3' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 196 80 A 29 29 0 0 0 219 108.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='189.3' y='112.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 207.6 161.6 A 29 29 0 0 0 172.6 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='172.7' y='158.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-ayirma",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#fd3f2e6e"
+    },
+    {
+      "q": "Ikki to'g'ri chiziq kesishdi. Bir burchak bilan unga vertikal burchakning yig'indisi shu burchakning qo'shnisidan 36° ga ortiq bo'lsa, shu burchak necha gradus?",
+      "v": [
+        "108°",
+        "54°",
+        "36°",
+        "72°"
+      ],
+      "t": 3,
+      "izoh": "Burchakni a deb olamiz. Vertikal burchak ham a, ularning yig'indisi 2a. Qo'shni burchak 180° − a. Shart bo'yicha 2a = 180° − a + 36°, bundan 3a = 216° va a = 72°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='272' viewBox='0 0 330 272'%3E%3Crect width='330' height='272' fill='%23ffffff'/%3E%3Cline x1='59' y1='136' x2='271' y2='136' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='132.2' y1='236.8' x2='197.8' y2='35.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='286' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='202.4' y='24.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='127.6' y='255.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='152' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 193 136 A 28 28 0 0 0 173.7 109.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='201.4' y='113.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 125 136 A 40 40 0 0 0 152.6 174' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.9' y='173.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 181.7 84.6 A 54 54 0 0 0 111 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='123.3' y='82.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-ayirma",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#78e45120"
+    },
+    {
+      "q": "Trapetsiya shaklidagi tom yopmasining yon tomonida yotgan ikki burchakning ayirmasi 36° ga teng. Shu burchaklardan kattarog'i necha gradus?",
+      "v": [
+        "72°",
+        "108°",
+        "144°",
+        "18°"
+      ],
+      "t": 1,
+      "izoh": "Yon tomondagi burchaklar ichki bir tomonli, ya'ni yig'indisi 180°. Kattasi (180° + 36°) : 2 = 108°, kichigi esa 72°. Ayirmani tekshiramiz: 108° − 72° = 36°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='250' viewBox='0 0 320 250'%3E%3Crect width='320' height='250' fill='%23ffffff'/%3E%3Cpolygon points='48,205 84.7,92 266.1,92 278,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='35' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='72.7' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='278.1' y='88' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='291' y='215' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Cpath d='M 78 205 A 30 30 0 0 0 57.3 176.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='86' y='181.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 75.4 120.5 A 30 30 0 0 0 114.7 92' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='112.3' y='134' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-ayirma",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#de6dac8c"
+    },
+    {
+      "q": "Uchburchakning bir uchidan qarama-qarshi tomonga parallel to'g'ri chiziq o'tkazildi. Uchburchakning ikkita burchagi 47° va 68° bo'lsa, uchinchi burchak necha gradus?",
+      "v": [
+        "115°",
+        "65°",
+        "113°",
+        "67°"
+      ],
+      "t": 1,
+      "izoh": "Uchdan o'tkazilgan parallel chiziq bilan ichki almashinuvchi burchaklar 47° va 68° ni beradi. Ular uchinchi burchak bilan birga yoyiq burchakni to'ldiradi: 180° − 47° − 68° = 65°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='335' height='245' viewBox='0 0 335 245'%3E%3Crect width='335' height='245' fill='%23ffffff'/%3E%3Cpolygon points='80.5,200 197.1,75 247.6,200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='67.5' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Cline x1='110' y1='75' x2='285' y2='75' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='6 4'/%3E%3Ctext x='294' y='79' font-size='13' fill='%23334155' text-anchor='middle'%3Em%3C/text%3E%3Ctext x='197.1' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='251.6' y='220' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 110.5 200 A 30 30 0 0 0 101 178.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='123.6' y='185.3' font-size='13' fill='%23334155' text-anchor='middle'%3E47°%3C/text%3E%3Cpath d='M 236.4 172.2 A 30 30 0 0 0 217.6 200' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='208.6' y='177.7' font-size='13' fill='%23334155' text-anchor='middle'%3E68°%3C/text%3E%3Cpath d='M 167.1 75 A 30 30 0 0 0 176.6 96.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='153.1' y='98.1' font-size='13' fill='%23334155' text-anchor='middle'%3E47°%3C/text%3E%3Cpath d='M 208.3 102.8 A 30 30 0 0 0 227.1 75' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='236.9' y='105.8' font-size='13' fill='%23334155' text-anchor='middle'%3E68°%3C/text%3E%3Cpath d='M 176.6 96.9 A 30 30 0 0 0 208.3 102.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='188.5' y='125.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#cc11366a"
+    },
+    {
+      "q": "Uchburchakning bir uchidagi tashqi burchak 127° ga teng, unga qo'shni bo'lmagan ichki burchaklardan biri esa 54°. Ikkinchi ichki burchak necha gradus?",
+      "v": [
+        "53°",
+        "126°",
+        "73°",
+        "107°"
+      ],
+      "t": 2,
+      "izoh": "Tashqi burchak unga qo'shni bo'lmagan ikkita ichki burchak yig'indisiga teng. Demak 127° = 54° + x, bundan x = 127° − 54° = 73°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='335' height='245' viewBox='0 0 335 245'%3E%3Crect width='335' height='245' fill='%23ffffff'/%3E%3Cpolygon points='71.5,200 162.3,75 256.5,200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='256.5' y1='200' x2='302.5' y2='200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 286.5 200 A 30 30 0 0 0 238.4 176' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='277.5' y='161.9' font-size='13' fill='%23334155' text-anchor='middle'%3E127°%3C/text%3E%3Ctext x='58.5' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='162.3' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='260.5' y='220' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 101.5 200 A 30 30 0 0 0 89.1 175.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='113.4' y='182.7' font-size='13' fill='%23334155' text-anchor='middle'%3E54°%3C/text%3E%3Cpath d='M 144.7 99.3 A 30 30 0 0 0 180.4 99' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162.7' y='126' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#da5e35c2"
+    },
+    {
+      "q": "Uchburchak shaklidagi yer uchastkasining ikki uchidagi tashqi burchaklar 118° va 141° ga teng. Uchinchi uchdagi tashqi burchak necha gradus?",
+      "v": [
+        "101°",
+        "79°",
+        "121°",
+        "259°"
+      ],
+      "t": 0,
+      "izoh": "Har qanday uchburchakning tashqi burchaklari yig'indisi 360° ga teng. Demak uchinchi tashqi burchak 360° − 118° − 141° = 101°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='335' height='245' viewBox='0 0 335 245'%3E%3Crect width='335' height='245' fill='%23ffffff'/%3E%3Cpolygon points='58,200 121.8,80 270,200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='20' y1='200' x2='58' y2='200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='270' y1='200' x2='312' y2='200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='121.8' y1='80' x2='147.6' y2='31.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='45' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='112' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='274' y='220' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 72.1 173.5 A 30 30 0 0 0 28 200' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='36.4' y='163.4' font-size='13' fill='%23334155' text-anchor='middle'%3E118°%3C/text%3E%3Cpath d='M 300 200 A 30 30 0 0 0 246.7 181.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='286.7' y='156.9' font-size='13' fill='%23334155' text-anchor='middle'%3E141°%3C/text%3E%3Cpath d='M 145.1 98.9 A 30 30 0 0 0 135.9 53.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='168.8' y='74.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tashqi-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#a79ef242"
+    },
+    {
+      "q": "Teng yonli uchburchak shaklidagi yo'l belgisining asosidagi tashqi burchak 115° ga teng. Belgining uchidagi burchak necha gradusga teng?",
+      "v": [
+        "65°",
+        "80°",
+        "50°",
+        "130°"
+      ],
+      "t": 2,
+      "izoh": "Asosdagi ichki burchak 180° − 115° = 65°. Teng yonli uchburchakda asosdagi ikki burchak teng, demak ular 65° dan. Uchidagi burchak 180° − 65° − 65° = 50°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='335' height='245' viewBox='0 0 335 245'%3E%3Crect width='335' height='245' fill='%23ffffff'/%3E%3Cpolygon points='105.7,200 164,75 222.3,200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='222.3' y1='200' x2='268.3' y2='200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 252.3 200 A 30 30 0 0 0 209.6 172.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='247.6' y='164.4' font-size='13' fill='%23334155' text-anchor='middle'%3E115°%3C/text%3E%3Ctext x='92.7' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='164' y='67' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='226.3' y='220' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 150.5 104 A 32 32 0 0 0 177.5 104' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='164' y='129' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#82d30d18"
+    },
+    {
+      "q": "Bilyard stolining chetiga urilgan shar tushish burchagi qaytish burchagiga teng bo'lgan holda qaytadi. Shar chet bilan 34° burchak hosil qilsa, tushuvchi va qaytuvchi yo'nalishlar orasidagi burchak necha gradus?",
+      "v": [
+        "68°",
+        "112°",
+        "146°",
+        "56°"
+      ],
+      "t": 1,
+      "izoh": "Tushuvchi va qaytuvchi yo'nalishlar chet bilan 34° dan burchak hosil qiladi. Bu ikki burchak va izlanayotgan burchak yoyiq burchakni to'ldiradi: 180° − 34° − 34° = 112°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='55.6' y2='116.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44' y='112.4' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Cline x1='165' y1='190' x2='274.4' y2='116.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='286' y='112.4' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 193.2 171' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='213.8' y='179.1' font-size='13' fill='%23334155' text-anchor='middle'%3E34°%3C/text%3E%3Cpath d='M 136.8 171 A 34 34 0 0 0 131 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='116.2' y='179.1' font-size='13' fill='%23334155' text-anchor='middle'%3E34°%3C/text%3E%3Cpath d='M 209.8 159.8 A 54 54 0 0 0 120.2 159.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='165' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aks-etish-burchagi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#b5ade40c"
+    },
+    {
+      "q": "Yassi oynaga tushgan nur oyna sirti bilan 27° burchak hosil qiladi. Qaytgan nur bilan tushgan nur orasidagi burchak necha gradusga teng?",
+      "v": [
+        "126°",
+        "54°",
+        "153°",
+        "63°"
+      ],
+      "t": 0,
+      "izoh": "Qaytish qonuniga ko'ra qaytgan nur ham oyna sirti bilan 27° hosil qiladi. Nurlar orasidagi burchak 180° − 27° − 27° = 126° bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='47.4' y2='130.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='34.9' y='127.7' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Cline x1='165' y1='190' x2='282.6' y2='130.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='295.1' y='127.7' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 195.3 174.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='214.6' y='182.1' font-size='13' fill='%23334155' text-anchor='middle'%3E27°%3C/text%3E%3Cpath d='M 134.7 174.6 A 34 34 0 0 0 131 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.4' y='182.1' font-size='13' fill='%23334155' text-anchor='middle'%3E27°%3C/text%3E%3Cpath d='M 213.1 165.5 A 54 54 0 0 0 116.9 165.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='165' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aks-etish-burchagi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#a647c81d"
+    },
+    {
+      "q": "Ikkita parallel oyna orasida tarqalayotgan nur birinchi oynaga 40° burchak ostida tushdi. Qaytgandan keyin u ikkinchi oynaga qanday burchak ostida tushadi?",
+      "v": [
+        "50°",
+        "80°",
+        "140°",
+        "40°"
+      ],
+      "t": 3,
+      "izoh": "Qaytgan nur birinchi oyna bilan yana 40° hosil qiladi. Oynalar parallel bo'lgani uchun bu nur ikkinchi oyna bilan ichki almashinuvchi burchak hosil qiladi va u ham 40° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='47.9' y1='228.6' x2='271' y2='41.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='283' y='47.4' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 196 80 A 29 29 0 0 0 202.8 98.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='181.8' y='99.7' font-size='13' fill='%23334155' text-anchor='middle'%3E40°%3C/text%3E%3Cpath d='M 122.9 190 A 29 29 0 0 0 116.1 171.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='137.1' y='178.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aks-etish-burchagi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#0dd42071"
+    },
+    {
+      "q": "O'zaro perpendikulyar joylashgan ikkita oynadan ketma-ket qaytgan nur o'zining dastlabki yo'nalishiga nisbatan qanday burchakka buriladi?",
+      "v": [
+        "90°",
+        "45°",
+        "270°",
+        "180°"
+      ],
+      "t": 3,
+      "izoh": "Birinchi oynadan qaytishda nur yo'nalishi bir o'q bo'yicha, ikkinchisidan qaytishda esa unga perpendikulyar o'q bo'yicha almashadi. Natijada nur dastlabki yo'nalishga qarama-qarshi, ya'ni 180° ga buriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aks-etish-burchagi",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#5cae1cea"
+    },
+    {
+      "q": "Kesishgan ikki to'g'ri chiziq hosil qilgan qo'shni burchaklardan biri ikkinchisidan 4 marta katta. Kichik burchak necha gradusga teng?",
+      "v": [
+        "144°",
+        "45°",
+        "72°",
+        "36°"
+      ],
+      "t": 3,
+      "izoh": "Kichik burchakni x desak, kattasi 4x bo'ladi. Qo'shni burchaklar yig'indisi 180°: x + 4x = 180°, ya'ni 5x = 180° va x = 36°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='272' viewBox='0 0 330 272'%3E%3Crect width='330' height='272' fill='%23ffffff'/%3E%3Cline x1='59' y1='136' x2='271' y2='136' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='79.2' y1='198.3' x2='250.8' y2='73.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='286' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='262.9' y='68.9' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='67.1' y='211.1' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='152' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 193 136 A 28 28 0 0 0 187.7 119.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='207.8' y='126.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 197.4 112.5 A 40 40 0 0 0 125 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='147.4' y='85.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "burchak-karrali",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#20fb7626"
+    },
+    {
+      "q": "Deraza tavaqasi devor bilan shunday ochilganki, hosil bo'lgan qo'shni burchaklardan kattasi kichigidan 5 marta katta bo'ldi. Kattaroq burchak necha gradus?",
+      "v": [
+        "150°",
+        "30°",
+        "36°",
+        "144°"
+      ],
+      "t": 0,
+      "izoh": "Kichik burchakni x deb olamiz, kattasi 5x. Ularning yig'indisi 180°: x + 5x = 180°, bundan 6x = 180° va x = 30°. Kattaroq burchak 5 · 30° = 150°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='279.3' y2='124' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='291.4' y='121' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 194.4 173' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='214.3' y='180.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 210 164 A 52 52 0 0 0 113 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='147.1' y='127.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-karrali",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#e09cf80d"
+    },
+    {
+      "q": "Parallel chiziqlarni kesuvchi kesganda hosil bo'lgan ichki bir tomonli burchaklardan biri ikkinchisining 2/3 qismiga teng. Kattaroq burchak necha gradus?",
+      "v": [
+        "72°",
+        "120°",
+        "60°",
+        "108°"
+      ],
+      "t": 3,
+      "izoh": "Katta burchakni x desak, kichigi 2x/3 bo'ladi. Ichki bir tomonli burchaklar yig'indisi 180°: x + 2x/3 = 180°, ya'ni 5x/3 = 180° va x = 108°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='170.8' y1='247.1' x2='243.5' y2='22.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='255.5' y='28.9' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 196 80 A 29 29 0 0 0 216 107.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='187.8' y='111' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 198.3 162.4 A 29 29 0 0 0 160.3 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='162.3' y='156.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-karrali",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#6add0022"
+    },
+    {
+      "q": "Ikki to'g'ri chiziq kesishdi va burchaklardan biri o'ziga qo'shni burchakning uchdan bir qismiga teng bo'ldi. Shu burchakka vertikal burchak necha gradus?",
+      "v": [
+        "45°",
+        "135°",
+        "60°",
+        "90°"
+      ],
+      "t": 0,
+      "izoh": "Burchakni x desak, qo'shnisi 180° − x va shart bo'yicha x = (180° − x) : 3. Bundan 3x = 180° − x, ya'ni 4x = 180° va x = 45°. Vertikal burchak unga teng, demak 45°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='272' viewBox='0 0 330 272'%3E%3Crect width='330' height='272' fill='%23ffffff'/%3E%3Cline x1='59' y1='136' x2='271' y2='136' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='90' y1='211' x2='240' y2='61' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='286' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='250.6' y='54.4' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='79.4' y='225.6' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='152' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 193 136 A 28 28 0 0 0 184.8 116.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='206.6' y='122.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 193.3 107.7 A 40 40 0 0 0 125 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='143.2' y='87.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 111 136 A 54 54 0 0 0 126.8 174.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='99.4' y='167.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-karrali",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#94a8c4df"
+    },
+    {
+      "q": "Bekzod bitta to'g'ri chiziqning bir tomoniga O nuqtadan ikkita nur o'tkazdi. Hosil bo'lgan uchta burchakdan ikkitasi 48° va 71° bo'lsa, uchinchisi necha gradus?",
+      "v": [
+        "119°",
+        "61°",
+        "132°",
+        "109°"
+      ],
+      "t": 1,
+      "izoh": "Uchala burchak birgalikda yoyiq burchakni to'ldiradi, ya'ni yig'indisi 180°. Demak uchinchi burchak 180° − 48° − 71° = 61° ga teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='253.3' y2='91.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='262.7' y='85.5' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Cline x1='165' y1='190' x2='101' y2='74.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='94.2' y='66.3' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 187.8 164.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='211.6' y='173.3' font-size='13' fill='%23334155' text-anchor='middle'%3E48°%3C/text%3E%3Cpath d='M 199.8 151.4 A 52 52 0 0 0 139.8 144.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='172.8' y='125.4' font-size='13' fill='%23334155' text-anchor='middle'%3E71°%3C/text%3E%3Cpath d='M 148.5 160.3 A 34 34 0 0 0 131 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='121.1' y='168.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "togri-chiziqdagi-uch-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#b420edde"
+    },
+    {
+      "q": "AB to'g'ri chizig'idagi O nuqtadan uchta nur o'tkazilgan va hosil bo'lgan to'rt burchakdan uchtasi 32°, 47° va 58° ga teng. To'rtinchi burchak necha gradus?",
+      "v": [
+        "43°",
+        "137°",
+        "45°",
+        "53°"
+      ],
+      "t": 0,
+      "izoh": "To'rt burchak yoyiq burchakni to'ldiradi, ularning yig'indisi 180°. To'rtinchi burchak 180° − 32° − 47° − 58° = 43° ga teng bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='276.9' y2='120.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='288.8' y='116.6' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Cline x1='165' y1='190' x2='190.2' y2='60.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='192.9' y='50.7' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Cline x1='165' y1='190' x2='68.5' y2='100' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='58.2' y='94.4' font-size='13' fill='%23334155' text-anchor='middle'%3EK%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 193.8 172' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='214' y='179.9' font-size='13' fill='%23334155' text-anchor='middle'%3E32°%3C/text%3E%3Cpath d='M 209.1 162.4 A 52 52 0 0 0 174.9 139' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='204.1' y='137.1' font-size='13' fill='%23334155' text-anchor='middle'%3E47°%3C/text%3E%3Cpath d='M 171.5 156.6 A 34 34 0 0 0 140.1 166.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='149.2' y='145.5' font-size='13' fill='%23334155' text-anchor='middle'%3E58°%3C/text%3E%3Cpath d='M 118.2 146.4 A 64 64 0 0 0 101 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='89.6' y='164.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "togri-chiziqdagi-uch-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#ca06b837"
+    },
+    {
+      "q": "Yelpig'ich to'liq ochilganda uning yuzasi yoyiq burchak hosil qiladi. Yelpig'ich uchta bo'lakka bo'lingan bo'lib, birinchisi 55°, ikkinchisi 62° bo'lsa, uchinchi bo'lak necha gradus?",
+      "v": [
+        "63°",
+        "117°",
+        "125°",
+        "55°"
+      ],
+      "t": 0,
+      "izoh": "To'liq ochilgan yelpig'ich 180° ni tashkil qiladi. Uchinchi bo'lakning burchagi 180° − 55° − 62° = 63° ga teng bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='224.9' y2='72.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='231.3' y='63.9' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Cline x1='165' y1='190' x2='89.3' y2='81.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='81.3' y='74.4' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 180.4 159.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='208.5' y='167.4' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 188.6 143.7 A 52 52 0 0 0 135.2 147.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='160.2' y='125.2' font-size='13' fill='%23334155' text-anchor='middle'%3E62°%3C/text%3E%3Cpath d='M 145.5 162.1 A 34 34 0 0 0 131 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='119.8' y='170.5' font-size='13' fill='%23334155' text-anchor='middle'%3E55°%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "togri-chiziqdagi-uch-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#f0d90f44"
+    },
+    {
+      "q": "To'g'ri chiziqning bir tomonida ketma-ket uchta burchak yotadi. Birinchisi uchinchisidan 2 marta katta, ikkinchisi esa 60° ga teng bo'lsa, uchinchi burchak necha gradus?",
+      "v": [
+        "40°",
+        "80°",
+        "60°",
+        "120°"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi burchakni x desak, birinchisi 2x bo'ladi. Yig'indisi 180°: 2x + 60° + x = 180°, bundan 3x = 120° va x = 40°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='235' viewBox='0 0 330 235'%3E%3Crect width='330' height='235' fill='%23ffffff'/%3E%3Cline x1='32' y1='190' x2='300' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='312' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='159' y='209' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cline x1='165' y1='190' x2='142.1' y2='60' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='139.6' y='50.2' font-size='13' fill='%23334155' text-anchor='middle'%3EM%3C/text%3E%3Cline x1='165' y1='190' x2='266.1' y2='105.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='276.8' y='100.2' font-size='13' fill='%23334155' text-anchor='middle'%3EN%3C/text%3E%3Cpath d='M 159.1 156.5 A 34 34 0 0 0 131 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='125.9' y='161.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 204.8 156.6 A 52 52 0 0 0 156 138.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='188.6' y='129.2' font-size='13' fill='%23334155' text-anchor='middle'%3E60°%3C/text%3E%3Cpath d='M 199 190 A 34 34 0 0 0 191 168.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='212.9' y='176.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-chiziqdagi-uch-burchak",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#72d6e381"
+    },
+    {
+      "q": "a ∥ b to'g'ri chiziqlarni c kesuvchi A va B nuqtalarda kesadi. A nuqtadagi burchaklardan biri 118° bo'lsa, B dagi mos burchak bissektrisasi bilan b chizig'i orasidagi o'tkir burchak necha gradus?",
+      "v": [
+        "62°",
+        "31°",
+        "59°",
+        "121°"
+      ],
+      "t": 2,
+      "izoh": "Mos burchaklar teng, demak B dagi burchak ham 118°. Bissektrisa uni ikkiga bo'ladi: 118° : 2 = 59°. Bu burchak b chizig'i bilan hosil bo'ladi va u o'tkir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='300' viewBox='0 0 345 300'%3E%3Crect width='345' height='300' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='311.7' y1='243' x2='196.8' y2='27' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='208.8' y='33' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Ctext x='234' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='293' y='182' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Cpath d='M 196 80 A 29 29 0 0 0 238.6 105.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='201.8' y='122.6' font-size='13' fill='%23334155' text-anchor='middle'%3E118°%3C/text%3E%3Cpath d='M 225.5 190 A 58 58 0 0 0 310.7 241.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='267.7' y='268.3' font-size='13' fill='%23334155' text-anchor='middle'%3E118°%3C/text%3E%3Cline x1='283.5' y1='190' x2='237.1' y2='267.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='231' y='281.4' font-size='13' fill='%23334155' text-anchor='middle'%3Ed%3C/text%3E%3Cpath d='M 251.5 190 A 32 32 0 0 0 267 217.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='245.2' y='215.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kop-qadamli-zanjir",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#c7fdca92"
+    },
+    {
+      "q": "Ikki parallel chiziq kesuvchi bilan kesilgan. Ichki bir tomonli burchaklardan biri ikkinchisidan 20° ga kichik. Kichik burchakning vertikal burchagi bilan katta burchakning qo'shni burchagi yig'indisi necha gradus?",
+      "v": [
+        "180°",
+        "200°",
+        "160°",
+        "100°"
+      ],
+      "t": 2,
+      "izoh": "Ichki bir tomonli burchaklar: x + x + 20° = 180°, bundan x = 80° va kattasi 100°. Kichik burchakning vertikali 80°, katta burchakning qo'shnisi 180° − 100° = 80°. Yig'indisi 80° + 80° = 160°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='195.2' y1='249.1' x2='235.4' y2='20.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='247.4' y='26.9' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 196 80 A 29 29 0 0 0 220 108.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='189.8' y='113.6' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 210.6 161.4 A 29 29 0 0 0 176.6 190' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='176' y='158.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kop-qadamli-zanjir",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#f4e2aedc"
+    },
+    {
+      "q": "a ∥ b bo'lib, kesuvchi a bilan 64° burchak hosil qiladi. b bilan kesishgan nuqtadan a ga perpendikulyar tushirildi. Perpendikulyar bilan kesuvchi orasidagi o'tkir burchak necha gradus?",
+      "v": [
+        "26°",
+        "64°",
+        "116°",
+        "154°"
+      ],
+      "t": 0,
+      "izoh": "Kesuvchi b bilan ham 64° hosil qiladi, chunki mos burchaklar teng. Perpendikulyar b bilan 90° hosil qiladi. Demak ular orasidagi burchak 90° − 64° = 26°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='345' height='268' viewBox='0 0 345 268'%3E%3Crect width='345' height='268' fill='%23ffffff'/%3E%3Cline x1='30' y1='80' x2='315' y2='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='190' x2='315' y2='190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='145' y1='243.9' x2='251.3' y2='26.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='20' y='84' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='20' y='194' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='263.3' y='32.1' font-size='13' fill='%23334155' text-anchor='middle'%3Ec%3C/text%3E%3Cpath d='M 254 80 A 29 29 0 0 0 237.7 53.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='264' y='59.6' font-size='13' fill='%23334155' text-anchor='middle'%3E64°%3C/text%3E%3Cline x1='171.3' y1='190' x2='171.3' y2='80' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpolyline points='182.3,80 182.3,91 171.3,91' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 189.7 152.3 A 42 42 0 0 0 171.3 148' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='184.6' y='136.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kop-qadamli-zanjir",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#c20bf93a"
+    },
+    {
+      "q": "Uchta burchak berilgan: birinchisi ikkinchisiga qo'shni, ikkinchisi esa uchinchisiga vertikal. Birinchi burchak 143° bo'lsa, uchinchi burchak necha gradus?",
+      "v": [
+        "37°",
+        "143°",
+        "217°",
+        "53°"
+      ],
+      "t": 0,
+      "izoh": "Birinchi va ikkinchi burchak qo'shni, demak ikkinchisi 180° − 143° = 37°. Uchinchi burchak ikkinchisiga vertikal, vertikal burchaklar esa teng. Shuning uchun uchinchi burchak 37°.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='330' height='272' viewBox='0 0 330 272'%3E%3Crect width='330' height='272' fill='%23ffffff'/%3E%3Cline x1='59' y1='136' x2='271' y2='136' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80.3' y1='199.8' x2='249.7' y2='72.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='286' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EA%3C/text%3E%3Ctext x='44' y='140' font-size='13' fill='%23334155' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='261.6' y='67.2' font-size='13' fill='%23334155' text-anchor='middle'%3EC%3C/text%3E%3Ctext x='68.4' y='212.8' font-size='13' fill='%23334155' text-anchor='middle'%3ED%3C/text%3E%3Ctext x='152' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3EO%3C/text%3E%3Cpath d='M 187.4 119.1 A 28 28 0 0 0 137 136' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150.7' y='97.3' font-size='13' fill='%23334155' text-anchor='middle'%3E143°%3C/text%3E%3Cpath d='M 125 136 A 40 40 0 0 0 133.1 160.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='110.9' y='158.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kop-qadamli-zanjir",
+      "id": "matematika_plan_m01-burchaklar-va-parallel-togri-chiziqlar#943b3650"
+    }
+  ]
+}

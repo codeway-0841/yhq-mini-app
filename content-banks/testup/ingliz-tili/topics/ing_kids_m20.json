@@ -1,0 +1,513 @@
+{
+  "nom": "Classroom objects (Sinf jihozlari)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "What is this? ✏️",
+      "v": [
+        "pencil",
+        "book",
+        "bag",
+        "chair"
+      ],
+      "t": 0,
+      "izoh": "✏️ = pencil (qalam).",
+      "qiy": "oson",
+      "id": "ing_kids_m20#cf2596eb"
+    },
+    {
+      "q": "What is this? 📖",
+      "v": [
+        "book",
+        "pen",
+        "desk",
+        "ruler"
+      ],
+      "t": 0,
+      "izoh": "📖 = book (kitob).",
+      "qiy": "oson",
+      "id": "ing_kids_m20#ff81cb7c"
+    },
+    {
+      "q": "What is this? 🖊️",
+      "v": [
+        "pen",
+        "book",
+        "bag",
+        "chair"
+      ],
+      "t": 0,
+      "izoh": "🖊️ = pen (ruchka).",
+      "qiy": "oson",
+      "id": "ing_kids_m20#2ef875c1"
+    },
+    {
+      "q": "What is this? 🎒",
+      "v": [
+        "bag",
+        "desk",
+        "pen",
+        "book"
+      ],
+      "t": 0,
+      "izoh": "🎒 = bag (sumka).",
+      "qiy": "oson",
+      "id": "ing_kids_m20#fefecb30"
+    },
+    {
+      "q": "What is this? 📏",
+      "v": [
+        "ruler",
+        "pencil",
+        "book",
+        "chair"
+      ],
+      "t": 0,
+      "izoh": "📏 = ruler (chizg'ich).",
+      "qiy": "oson",
+      "id": "ing_kids_m20#bc83da50"
+    },
+    {
+      "q": "What is this? ✂️",
+      "v": [
+        "scissors",
+        "book",
+        "desk",
+        "pen"
+      ],
+      "t": 0,
+      "izoh": "✂️ = scissors (qaychi).",
+      "qiy": "oson",
+      "id": "ing_kids_m20#e26aeea6"
+    },
+    {
+      "q": "What is this? 🖍️",
+      "v": [
+        "crayon",
+        "chair",
+        "bag",
+        "ruler"
+      ],
+      "t": 0,
+      "izoh": "🖍️ = crayon (mumqalam).",
+      "qiy": "oson",
+      "id": "ing_kids_m20#f5103159"
+    },
+    {
+      "q": "What is this? 📓",
+      "v": [
+        "notebook",
+        "chair",
+        "bag",
+        "pen"
+      ],
+      "t": 0,
+      "izoh": "📓 = notebook (daftar).",
+      "qiy": "oson",
+      "id": "ing_kids_m20#3030f303"
+    },
+    {
+      "q": "What do you use to write on paper? ✏️",
+      "v": [
+        "pencil",
+        "chair",
+        "bag",
+        "desk"
+      ],
+      "t": 0,
+      "izoh": "Qog'ozga yozish uchun pencil (qalam) ishlatamiz.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#54763b88"
+    },
+    {
+      "q": "What do you write with? ✏️",
+      "v": [
+        "pencil",
+        "book",
+        "bag",
+        "chair"
+      ],
+      "t": 0,
+      "izoh": "✏️ — qalam.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#eedbbac6"
+    },
+    {
+      "q": "What do you read? 📖",
+      "v": [
+        "book",
+        "ruler",
+        "glue",
+        "chair"
+      ],
+      "t": 0,
+      "izoh": "📖 — kitob.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#0e5c6130"
+    },
+    {
+      "q": "What do you use to cut paper? ✂️",
+      "v": [
+        "scissors",
+        "ruler",
+        "pen",
+        "book"
+      ],
+      "t": 0,
+      "izoh": "✂️ — qaychi.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#9d98fc82"
+    },
+    {
+      "q": "What do you use to draw straight lines? 📏",
+      "v": [
+        "ruler",
+        "glue",
+        "book",
+        "bag"
+      ],
+      "t": 0,
+      "izoh": "📏 — chizg'ich.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#848cc297"
+    },
+    {
+      "q": "What do you use to erase pencil? 🧽",
+      "v": [
+        "rubber",
+        "pen",
+        "book",
+        "chair"
+      ],
+      "t": 0,
+      "izoh": "Rubber — o'chirg'ich.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#22fccd2d"
+    },
+    {
+      "q": "What do you carry your books in? 🎒",
+      "v": [
+        "bag",
+        "clock",
+        "map",
+        "glue"
+      ],
+      "t": 0,
+      "izoh": "🎒 — sumka.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#4d9a43d3"
+    },
+    {
+      "q": "What do you sit on? 🪑",
+      "v": [
+        "chair",
+        "desk",
+        "board",
+        "book"
+      ],
+      "t": 0,
+      "izoh": "🪑 — stul.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#b410cad6"
+    },
+    {
+      "q": "What do you sit at and write on?",
+      "v": [
+        "desk",
+        "chair",
+        "bag",
+        "pen"
+      ],
+      "t": 0,
+      "izoh": "Desk — parta.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#2505222f"
+    },
+    {
+      "q": "What is 🖊️? You write with ink.",
+      "v": [
+        "pen",
+        "pencil",
+        "ruler",
+        "glue"
+      ],
+      "t": 0,
+      "izoh": "🖊️ — ruchka.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#bc85940e"
+    },
+    {
+      "q": "What do you colour with? 🖍️",
+      "v": [
+        "crayon",
+        "ruler",
+        "book",
+        "bag"
+      ],
+      "t": 0,
+      "izoh": "🖍️ — mum bo'yoq (crayon).",
+      "qiy": "oson",
+      "id": "ing_kids_m20#1e83949d"
+    },
+    {
+      "q": "What do you write your notes in? 📓",
+      "v": [
+        "notebook",
+        "chair",
+        "clock",
+        "map"
+      ],
+      "t": 0,
+      "izoh": "📓 — daftar.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#551a5462"
+    },
+    {
+      "q": "What does the teacher write on in class?",
+      "v": [
+        "board",
+        "bag",
+        "ruler",
+        "glue"
+      ],
+      "t": 0,
+      "izoh": "Board — doska.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#7192b764"
+    },
+    {
+      "q": "What do you use to stick paper together?",
+      "v": [
+        "glue",
+        "scissors",
+        "ruler",
+        "pen"
+      ],
+      "t": 0,
+      "izoh": "Glue — yelim.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#5be99179"
+    },
+    {
+      "q": "What do you use to sharpen a pencil?",
+      "v": [
+        "sharpener",
+        "rubber",
+        "glue",
+        "book"
+      ],
+      "t": 0,
+      "izoh": "Sharpener — qalamtarosh.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#ed0e5674"
+    },
+    {
+      "q": "What do you write on? (a thin white sheet)",
+      "v": [
+        "paper",
+        "chair",
+        "bag",
+        "clock"
+      ],
+      "t": 0,
+      "izoh": "Paper — qog'oz.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#67bb87ee"
+    },
+    {
+      "q": "What tells the time on the wall? 🕐",
+      "v": [
+        "clock",
+        "map",
+        "book",
+        "glue"
+      ],
+      "t": 0,
+      "izoh": "🕐 — soat.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#bade817b"
+    },
+    {
+      "q": "What shows countries and cities? 🗺️",
+      "v": [
+        "map",
+        "clock",
+        "ruler",
+        "pen"
+      ],
+      "t": 0,
+      "izoh": "🗺️ — xarita.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#92297724"
+    },
+    {
+      "q": "What do you type on with a screen? 🖥️",
+      "v": [
+        "computer",
+        "book",
+        "chair",
+        "bag"
+      ],
+      "t": 0,
+      "izoh": "🖥️ — kompyuter.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#7c9e403d"
+    },
+    {
+      "q": "What is a thick colour pen for drawing?",
+      "v": [
+        "marker",
+        "ruler",
+        "glue",
+        "book"
+      ],
+      "t": 0,
+      "izoh": "Marker — flomaster.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#5d9a457f"
+    },
+    {
+      "q": "Which one do you use to draw a straight line?",
+      "v": [
+        "scissors",
+        "ruler",
+        "glue",
+        "rubber"
+      ],
+      "t": 1,
+      "izoh": "Ruler — chizg'ich.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#42c604b6"
+    },
+    {
+      "q": "Which one cuts?",
+      "v": [
+        "pen",
+        "scissors",
+        "book",
+        "bag"
+      ],
+      "t": 1,
+      "izoh": "Scissors — qaychi.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#815a95ea"
+    },
+    {
+      "q": "Which one erases pencil?",
+      "v": [
+        "rubber",
+        "marker",
+        "chair",
+        "map"
+      ],
+      "t": 0,
+      "izoh": "Rubber — o'chirg'ich.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#934c1374"
+    },
+    {
+      "q": "Which one do you read?",
+      "v": [
+        "chair",
+        "desk",
+        "book",
+        "ruler"
+      ],
+      "t": 2,
+      "izoh": "Book — kitob.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#baa1f8f3"
+    },
+    {
+      "q": "Which one do you sit on?",
+      "v": [
+        "board",
+        "clock",
+        "chair",
+        "glue"
+      ],
+      "t": 2,
+      "izoh": "Chair — stul.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#90a2061e"
+    },
+    {
+      "q": "Which one holds your pencils and books to carry?",
+      "v": [
+        "bag",
+        "ruler",
+        "pen",
+        "map"
+      ],
+      "t": 0,
+      "izoh": "Bag — sumka.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#5b668b39"
+    },
+    {
+      "q": "What do you write with in blue or black ink?",
+      "v": [
+        "pen",
+        "rubber",
+        "ruler",
+        "bag"
+      ],
+      "t": 0,
+      "izoh": "Pen — ruchka.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#6cecdbd0"
+    },
+    {
+      "q": "What is 🎒?",
+      "v": [
+        "chair",
+        "bag",
+        "book",
+        "pen"
+      ],
+      "t": 1,
+      "izoh": "🎒 — sumka.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#39aaeeea"
+    },
+    {
+      "q": "What do you use to draw in wax colours?",
+      "v": [
+        "crayon",
+        "clock",
+        "ruler",
+        "bag"
+      ],
+      "t": 0,
+      "izoh": "Crayon — mum bo'yoq.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#2e0d64da"
+    },
+    {
+      "q": "Which one shows the time?",
+      "v": [
+        "map",
+        "clock",
+        "book",
+        "pen"
+      ],
+      "t": 1,
+      "izoh": "Clock — soat.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#bc325b38"
+    },
+    {
+      "q": "What is ✏️?",
+      "v": [
+        "pencil",
+        "chair",
+        "map",
+        "glue"
+      ],
+      "t": 0,
+      "izoh": "✏️ — qalam.",
+      "qiy": "oson",
+      "id": "ing_kids_m20#de58ef48"
+    }
+  ]
+}

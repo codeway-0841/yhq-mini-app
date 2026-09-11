@@ -1,0 +1,1609 @@
+{
+  "nom": "Modul qatnashgan tengsizliklar",
+  "bolim": "Tengsizliklar",
+  "blok": "tngs",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "|x − 4| < 7 tengsizlikning yechimlar to'plamini quyidagi variantlardan tanlang.",
+      "v": [
+        "−3 < x < 11",
+        "3 < x < 11",
+        "−11 < x < 11",
+        "x < 11"
+      ],
+      "t": 0,
+      "izoh": "Modul ta'rifiga ko'ra |x − 4| < 7 ikki tomonlama tengsizlikka teng kuchli: −7 < x − 4 < 7. Har uch qismga 4 ni qo'shamiz: −7 + 4 < x < 7 + 4, ya'ni −3 < x < 11. Chap chegarada 4 − 7 = −3 chiqadi, 7 − 4 = 3 emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kichik-oraliq-yechim",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#3483bd6e"
+    },
+    {
+      "q": "|x + 5| ≤ 2 tengsizlikni qanoatlantiruvchi barcha x sonlari qaysi kesmani tashkil qiladi?",
+      "v": [
+        "−3 ≤ x ≤ 7",
+        "−7 ≤ x ≤ −3",
+        "−7 ≤ x ≤ 3",
+        "3 ≤ x ≤ 7"
+      ],
+      "t": 1,
+      "izoh": "Tengsizlik −2 ≤ x + 5 ≤ 2 ko'rinishga keladi. Barcha qismlardan 5 ni ayiramiz: −2 − 5 ≤ x ≤ 2 − 5, ya'ni −7 ≤ x ≤ −3. Ikkala chegara ham manfiy, chunki x + 5 ifoda nolga yaqin bo'lishi uchun x manfiy bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kichik-kesma-yechim",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#3cbd30ba"
+    },
+    {
+      "q": "|2x − 6| < 8 tengsizlikning yechimini toping va uni oraliq ko'rinishida ko'rsating.",
+      "v": [
+        "−2 < x < 14",
+        "1 < x < 7",
+        "−1 < x < 7",
+        "−4 < x < 4"
+      ],
+      "t": 2,
+      "izoh": "Avval modulni ochamiz: −8 < 2x − 6 < 8. Har qismga 6 ni qo'shsak −2 < 2x < 14 bo'ladi. Endi ikkiga bo'lamiz va −1 < x < 7 hosil bo'ladi. Ikkiga bo'lishni unutish −2 < x < 14 degan xato javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-koeffitsientli-oraliq",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#a8ad89df"
+    },
+    {
+      "q": "|3x + 9| ≤ 12 tengsizlik yechimi qaysi kesmadan iborat ekanligini aniqlang.",
+      "v": [
+        "−21 ≤ x ≤ 3",
+        "−1 ≤ x ≤ 7",
+        "−4 ≤ x ≤ 4",
+        "−7 ≤ x ≤ 1"
+      ],
+      "t": 3,
+      "izoh": "Modulni ochsak −12 ≤ 3x + 9 ≤ 12 hosil bo'ladi. Hamma qismdan 9 ni ayiramiz: −21 ≤ 3x ≤ 3. Uchga bo'lgandan keyin −7 ≤ x ≤ 1 chiqadi. Uchga bo'lish tashlab ketilsa −21 ≤ x ≤ 3 degan noto'g'ri javob olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-koeffitsientli-oraliq",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#7369de31"
+    },
+    {
+      "q": "|x − 5| > 3 tengsizlikning yechimlar to'plami qanday ko'rinishga ega bo'ladi?",
+      "v": [
+        "2 < x < 8",
+        "x < 2 yoki x > 8",
+        "x > 8",
+        "x < −8 yoki x > 2"
+      ],
+      "t": 1,
+      "izoh": "Moduli kattalik tengsizligi ikkita alohida holga ajraladi: x − 5 > 3 yoki x − 5 < −3. Birinchisidan x > 8, ikkinchisidan x < 2 kelib chiqadi. Javob ikki nurning birlashmasi: x < 2 yoki x > 8. Oraliqning ichini olish kichiklik belgisiga xos xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-katta-birlashma",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#4273a81f"
+    },
+    {
+      "q": "Nodira |4x − 8| ≥ 16 tengsizlikni yechdi. To'g'ri yechim to'plami qaysi variantda ko'rsatilgan?",
+      "v": [
+        "−2 ≤ x ≤ 6",
+        "x ≤ 2 yoki x ≥ 6",
+        "x ≤ −2 yoki x ≥ 6",
+        "x ≤ −6 yoki x ≥ 2"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlik 4x − 8 ≥ 16 yoki 4x − 8 ≤ −16 holiga ajraladi. Birinchisidan 4x ≥ 24, ya'ni x ≥ 6 kelib chiqadi. Ikkinchisidan 4x ≤ −8, ya'ni x ≤ −2. Demak yechim x ≤ −2 yoki x ≥ 6 bo'ladi, oraliq ichi bu yerda yechim emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-katta-birlashma",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#42aa7d45"
+    },
+    {
+      "q": "|x − 3| < 4 tengsizlikni qanoatlantiruvchi nechta butun son mavjudligini hisoblang.",
+      "v": [
+        "9",
+        "8",
+        "6",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Modulni ochsak −4 < x − 3 < 4, ya'ni −1 < x < 7 bo'ladi. Bu oraliqqa 0, 1, 2, 3, 4, 5, 6 butun sonlari kiradi va ularning soni yetti ta. Chegaralarni ham qo'shib yuborish to'qqiz ta degan xatoga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-butun-yechim-soni",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#3d94fb0c"
+    },
+    {
+      "q": "Maktab kutubxonasiga kelgan yangi kitoblar soni n uchun |n − 25| ≤ 4 shart bajariladi. Kitoblar sonining nechta mumkin bo'lgan butun qiymati bor?",
+      "v": [
+        "8",
+        "9",
+        "10",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Shartdan −4 ≤ n − 25 ≤ 4, ya'ni 21 ≤ n ≤ 29 kelib chiqadi. Bu kesmadagi butun sonlar 21 dan 29 gacha bo'ladi. Ularning soni 29 − 21 + 1 = 9 ta. Ayirmani hisoblab bittani qo'shishni unutish sakkiz degan xato javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-butun-yechim-soni",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#70fd8417"
+    },
+    {
+      "q": "Zavodda quyilayotgan un qopining massasi m kg bo'lib, sifat talabi |m − 50| ≤ 0,4 ko'rinishida berilgan. Qop massasi qaysi oraliqda bo'lishi kerak?",
+      "v": [
+        "49,6 ≤ m ≤ 50,4",
+        "49,4 ≤ m ≤ 50,6",
+        "50 ≤ m ≤ 50,4",
+        "48 ≤ m ≤ 52"
+      ],
+      "t": 0,
+      "izoh": "Modul ta'rifiga ko'ra −0,4 ≤ m − 50 ≤ 0,4 bo'ladi. Har uch qismga 50 ni qo'shamiz va 49,6 ≤ m ≤ 50,4 hosil bo'ladi. Ya'ni qop massasi nominal 50 kg dan ko'pi bilan 400 g farq qilishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olchov-dopusk",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#1cbadf3f"
+    },
+    {
+      "q": "Sut idishiga quyilgan hajm V litr bo'lib, nominal hajm 3 litr, o'lchov xatosi esa 0,15 litrdan oshmasligi kerak. Bu shartni qaysi tengsizlik to'g'ri ifodalaydi?",
+      "v": [
+        "|V + 3| ≤ 0,15",
+        "|V − 0,15| ≤ 3",
+        "|V − 3| ≤ 0,15",
+        "|3 − 0,15| ≤ V"
+      ],
+      "t": 2,
+      "izoh": "Haqiqiy hajm bilan nominal hajm orasidagi farq V − 3 ga teng bo'ladi. Bu farqning kattaligi, ya'ni moduli 0,15 dan oshmasligi talab qilingan. Demak shart |V − 3| ≤ 0,15 ko'rinishida yoziladi, chunki chetlanish har ikki tomonga bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-tengsizlik-tuzish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#fa31f325"
+    },
+    {
+      "q": "Issiqxonada harorat t °C bo'lib, u 22 °C dan 3 °C dan ortiq farq qilsa signal beriladi. Signal berilmaydigan haroratlar oralig'ini toping.",
+      "v": [
+        "t < 19 yoki t > 25",
+        "19 ≤ t ≤ 25",
+        "19 < t < 22",
+        "22 ≤ t ≤ 25"
+      ],
+      "t": 1,
+      "izoh": "Signal berilmasligi uchun chetlanish uchdan oshmasligi kerak: |t − 22| ≤ 3. Modulni ochamiz: −3 ≤ t − 22 ≤ 3. Hamma qismga 22 ni qo'shsak 19 ≤ t ≤ 25 chiqadi. Signal esa aksincha, shu kesmadan tashqarida beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harorat-chetlanish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#f4853c60"
+    },
+    {
+      "q": "Yo'lning 180-kilometrida joylashgan bekatga avtobus 15 km dan yaqin kelsa, yo'lovchilarga xabar beriladi. Avtobusning s kilometrdagi holati uchun xabar shartini yozing.",
+      "v": [
+        "|s + 180| < 15",
+        "|s − 15| < 180",
+        "|s − 180| > 15",
+        "|s − 180| < 15"
+      ],
+      "t": 3,
+      "izoh": "Avtobus bilan bekat orasidagi masofa |s − 180| ifodasi bilan o'lchanadi, chunki masofa har doim ayirmaning moduli. Bu masofa 15 dan kichik bo'lishi talab qilingan. Demak xabar sharti |s − 180| < 15 ko'rinishida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-tengsizlik-tuzish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#4d81800f"
+    },
+    {
+      "q": "Anvarning oylik ish haqi x so'm. U ish haqi o'rtacha 4 500 000 so'mdan kamida 300 000 so'm farq qilgan oylarni ajratmoqchi. Shu oylar sharti qaysi variantda?",
+      "v": [
+        "|x − 4 500 000| ≥ 300 000",
+        "|x − 300 000| ≥ 4 500 000",
+        "|x − 4 500 000| ≤ 300 000",
+        "|x + 4 500 000| ≥ 300 000"
+      ],
+      "t": 0,
+      "izoh": "Ish haqining o'rtachadan chetlanishi |x − 4 500 000| ifodasi bilan o'lchanadi. «Kamida 300 000 so'm farq qilgan» degani bu chetlanish 300 000 dan kichik emas. Shuning uchun shart |x − 4 500 000| ≥ 300 000 ko'rinishida yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-tengsizlik-tuzish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#f3ef5c13"
+    },
+    {
+      "q": "|x − 6| < −2 tengsizlikning yechimlar to'plami qanday bo'lishini aniqlang.",
+      "v": [
+        "Barcha haqiqiy sonlar",
+        "x = 6",
+        "Bo'sh to'plam",
+        "4 < x < 8"
+      ],
+      "t": 2,
+      "izoh": "Modul hech qachon manfiy bo'lmaydi, ya'ni |x − 6| ≥ 0 har doim o'rinli. Manfiy sondan kichik bo'lish esa imkonsiz. Shuning uchun tengsizlikni qanoatlantiruvchi birorta x yo'q va yechim bo'sh to'plam bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-manfiy-ong-tomon",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#42b78a95"
+    },
+    {
+      "q": "|2x + 7| > −5 tengsizlik qaysi x qiymatlarida bajarilishini aniqlang.",
+      "v": [
+        "Yechimi yo'q",
+        "x ≠ −3,5 bo'lgan barcha sonlarda",
+        "x > −3,5 bo'lganda",
+        "Barcha haqiqiy sonlarda"
+      ],
+      "t": 3,
+      "izoh": "Modulning qiymati hech qachon manfiy emas, eng kichigi nolga teng bo'ladi. Nol ham −5 dan katta, shuning uchun tengsizlik har qanday x da o'rinli. Modul nolga aylanadigan nuqtani chiqarib tashlash shart emas, chunki qat'iy tengsizlik u yerda ham bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-manfiy-ong-tomon",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#d4a0afcf"
+    },
+    {
+      "q": "|x + 4| > 0 tengsizlikning yechimlar to'plamini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "Barcha haqiqiy sonlar",
+        "x ≠ −4 bo'lgan barcha sonlar",
+        "x > −4",
+        "Bo'sh to'plam"
+      ],
+      "t": 1,
+      "izoh": "Modul faqat ichidagi ifoda nolga teng bo'lganda nol bo'ladi. Bu yerda x + 4 = 0, ya'ni x = −4 nuqtada modul nolga aylanadi va qat'iy tengsizlik buziladi. Qolgan barcha x larda modul musbat. Demak yechim x ≠ −4 bo'lgan barcha haqiqiy sonlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-nol-bilan-solishtirish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#e0c3793d"
+    },
+    {
+      "q": "|x − 1| < |x + 5| tengsizlikni yeching va yechimni to'g'ri ifodalagan variantni belgilang.",
+      "v": [
+        "x > −2",
+        "x < −2",
+        "x > 2",
+        "−5 < x < 1"
+      ],
+      "t": 0,
+      "izoh": "Ikkala tomon ham manfiy emas, shuning uchun kvadratga ko'tarish mumkin: (x − 1)² < (x + 5)². Qavslarni ochsak x² − 2x + 1 < x² + 10x + 25 bo'ladi. x² qisqaradi va 1 − 25 < 12x, ya'ni x > −2 kelib chiqadi. Chegara nuqta ikki nuqtaning o'rtasi bo'lgan −2 dir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ikki-tomon-modul",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#edf65d71"
+    },
+    {
+      "q": "|2x + 3| ≥ |x − 6| tengsizlikning yechimini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "−9 ≤ x ≤ 1",
+        "x ≤ −1 yoki x ≥ 9",
+        "x ≥ 1",
+        "x ≤ −9 yoki x ≥ 1"
+      ],
+      "t": 3,
+      "izoh": "Ikki modulni solishtirish uchun tomonlarni kvadratga ko'taramiz: (2x + 3)² ≥ (x − 6)². Bu 4x² + 12x + 9 ≥ x² − 12x + 36 ga, so'ng 3x² + 24x − 27 ≥ 0 ga keladi. Uchga bo'lib x² + 8x − 9 ≥ 0, ya'ni (x + 9)(x − 1) ≥ 0 hosil bo'ladi. Parabola shoxlari yuqoriga qaragani uchun yechim x ≤ −9 yoki x ≥ 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ikki-tomon-modul",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#1ca9715f"
+    },
+    {
+      "q": "Ikki shahar yo'lning 8 va 20-kilometrlarida joylashgan. Yo'ldagi nuqta birinchi shaharga ikkinchisiga qaraganda yaqinroq bo'lishi uchun uning x koordinatasi qanday shartni qanoatlantiradi?",
+      "v": [
+        "x < 14",
+        "x > 14",
+        "8 < x < 20",
+        "x < 12"
+      ],
+      "t": 0,
+      "izoh": "Birinchi shaharga masofa |x − 8|, ikkinchisiga masofa |x − 20| bo'ladi. Shart |x − 8| < |x − 20| ko'rinishida yoziladi. Tomonlarni kvadratga ko'tarsak x² − 16x + 64 < x² − 40x + 400, ya'ni 24x < 336 va x < 14 chiqadi. 14-kilometr ikki shahar orasidagi o'rta nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ikki-tomon-modul",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#750d71a0"
+    },
+    {
+      "q": "5, 9, 13, 17 sonlaridan qaysi biri |x − 12| < 2 tengsizlikni qanoatlantiradi?",
+      "v": [
+        "5",
+        "9",
+        "13",
+        "17"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlikni ochsak −2 < x − 12 < 2, ya'ni 10 < x < 14 bo'ladi. Berilgan sonlardan faqat 13 shu oraliqda yotadi. To'qqiz soni 10 dan kichik, 17 esa 14 dan katta bo'lgani uchun yaramaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-yechim-tekshirish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#cb995b04"
+    },
+    {
+      "q": "|x − 1| + |x − 5| ≤ 6 tengsizlikni oraliqlarga bo'lib yeching va yechimni ko'rsating.",
+      "v": [
+        "0 ≤ x ≤ 6",
+        "1 ≤ x ≤ 5",
+        "−1 ≤ x ≤ 7",
+        "0 ≤ x ≤ 5"
+      ],
+      "t": 0,
+      "izoh": "Kritik nuqtalar x = 1 va x = 5. Agar x < 1 bo'lsa (1 − x) + (5 − x) ≤ 6, ya'ni 6 − 2x ≤ 6 va x ≥ 0. Agar 1 ≤ x ≤ 5 bo'lsa yig'indi doim 4 ga teng, demak butun kesma yechimga kiradi. Agar x > 5 bo'lsa 2x − 6 ≤ 6 va x ≤ 6. Uch holni birlashtirsak 0 ≤ x ≤ 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-modul-yigindi-kichik",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#f80dcd9f"
+    },
+    {
+      "q": "|x + 2| + |x − 4| < 10 tengsizlikning yechimlar oralig'i uzunligi nechaga teng?",
+      "v": [
+        "6",
+        "10",
+        "8",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "Kritik nuqtalar x = −2 va x = 4. Agar x > 4 bo'lsa (x + 2) + (x − 4) < 10, ya'ni 2x − 2 < 10 va x < 6. Agar x < −2 bo'lsa 2 − 2x < 10 va x > −4. Oraliq ichida yig'indi 6 ga teng, u 10 dan kichik. Demak yechim −4 < x < 6 va uzunligi 6 − (−4) = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-modul-yigindi-kichik",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#869931ee"
+    },
+    {
+      "q": "|x − 2| + |x − 8| > 12 tengsizlikni qanoatlantiruvchi x qiymatlari to'plamini aniqlang.",
+      "v": [
+        "−1 < x < 11",
+        "x < 2 yoki x > 8",
+        "x < −1 yoki x > 11",
+        "x < −2 yoki x > 12"
+      ],
+      "t": 2,
+      "izoh": "Kritik nuqtalar 2 va 8. Agar x > 8 bo'lsa (x − 2) + (x − 8) > 12, ya'ni 2x − 10 > 12 va x > 11. Agar x < 2 bo'lsa 10 − 2x > 12 va x < −1. Oraliqning ichida yig'indi doim 6 ga teng, u 12 dan katta emas. Demak yechim x < −1 yoki x > 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-modul-yigindi-katta",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#7cb87f79"
+    },
+    {
+      "q": "Yo'lning 3 va 11-kilometrlarida ikkita nazorat punkti bor. Avtomobil ikkala punktgacha masofalar yig'indisi 16 km dan ortiq bo'lgan joyda turibdi. Uning x koordinatasi qaysi shartni qanoatlantiradi?",
+      "v": [
+        "3 < x < 11",
+        "−1 < x < 15",
+        "x < 3 yoki x > 11",
+        "x < −1 yoki x > 15"
+      ],
+      "t": 3,
+      "izoh": "Masofalar yig'indisi |x − 3| + |x − 11| ifodasi bilan beriladi. Punktlar orasida bu yig'indi doim 8 km bo'ladi, u 16 dan katta emas. Agar x > 11 bo'lsa 2x − 14 > 16, ya'ni x > 15. Agar x < 3 bo'lsa 14 − 2x > 16, ya'ni x < −1. Demak avtomobil x < −1 yoki x > 15 qismda turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-modul-yigindi-katta",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#828a6c73"
+    },
+    {
+      "q": "|x − 6| − |x + 2| ≥ 4 tengsizlikni oraliqlarga bo'lib yeching va javobni belgilang.",
+      "v": [
+        "x ≥ 0",
+        "x ≤ 0",
+        "−2 ≤ x ≤ 0",
+        "x ≤ −2"
+      ],
+      "t": 1,
+      "izoh": "Kritik nuqtalar x = −2 va x = 6. Agar x < −2 bo'lsa ifoda (6 − x) − (−x − 2) = 8 bo'lib, shart doim bajariladi. Agar −2 ≤ x < 6 bo'lsa (6 − x) − (x + 2) = 4 − 2x ≥ 4, bundan x ≤ 0. Agar x ≥ 6 bo'lsa ifoda −8 ga teng va shart bajarilmaydi. Uch holni birlashtirsak yechim x ≤ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-modul-ayirma",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#5d97f962"
+    },
+    {
+      "q": "Sonlar o'qida −5 dan 9 gacha bo'lgan ochiq oraliq bo'yalgan. Shu to'plamni modul yordamida qaysi tengsizlik ifodalaydi?",
+      "v": [
+        "|x + 2| < 7",
+        "|x − 7| < 2",
+        "|x − 2| < 7",
+        "|x − 2| > 7"
+      ],
+      "t": 2,
+      "izoh": "Ochiq oraliqning markazi (−5 + 9) : 2 = 2 nuqtada joylashgan. Markazdan chetgacha bo'lgan masofa 9 − 2 = 7 ga teng. Modul markazdan uzoqlikni bildirgani uchun shart |x − 2| < 7 ko'rinishida yoziladi. Oraliq ochiq bo'lgani sababli qat'iy belgi qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonlar-oqida-tasvir",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#9790e8b6"
+    },
+    {
+      "q": "Sonlar o'qida x ≤ −4 va x ≥ 10 nurlar bo'yalgan. Shu to'plamni modulli tengsizlik ko'rinishida yozing.",
+      "v": [
+        "|x + 3| ≥ 7",
+        "|x − 3| ≤ 7",
+        "|x − 7| ≥ 3",
+        "|x − 3| ≥ 7"
+      ],
+      "t": 3,
+      "izoh": "Ikki nur o'zaro markazga nisbatan simmetrik joylashgan. Markaz (−4 + 10) : 2 = 3 nuqtada, markazdan har bir chetgacha masofa 10 − 3 = 7. Nurlar chetda bo'lgani uchun shart |x − 3| ≥ 7 ko'rinishida yoziladi. Chegaralar bo'yalganidan qat'iy bo'lmagan belgi olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonlar-oqida-tasvir",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#2879da58"
+    },
+    {
+      "q": "|x + 1| ≤ 6 tengsizlikning yechimi sonlar o'qida qanday tasvirlanishini aniqlang.",
+      "v": [
+        "−7 va 5 nuqtalar orasidagi kesma, chegaralar qo'shilgan",
+        "−7 va 5 nuqtalar orasidagi oraliq, chegaralar qo'shilmagan",
+        "−6 va 6 nuqtalar orasidagi kesma",
+        "−7 dan chapdagi va 5 dan o'ngdagi nurlar"
+      ],
+      "t": 0,
+      "izoh": "Modulni ochsak −6 ≤ x + 1 ≤ 6, bundan −7 ≤ x ≤ 5 kelib chiqadi. Bu chegaralari qo'shilgan kesma bo'lib, sonlar o'qida bo'yalgan doirachalar bilan belgilanadi. Kichiklik belgisi bo'lgani uchun nurlar emas, aynan kesma hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sonlar-oqida-tasvir",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#be1b138d"
+    },
+    {
+      "q": "Detalning uzunligi L mm, chizmada 84 mm ko'rsatilgan va ruxsat etilgan chetlanish 0,6 mm dan oshmaydi. Yaroqli detal uzunligi qaysi kesmada yotadi?",
+      "v": [
+        "84 ≤ L ≤ 84,6",
+        "83,4 ≤ L ≤ 84,6",
+        "83,6 ≤ L ≤ 84,4",
+        "78 ≤ L ≤ 90"
+      ],
+      "t": 1,
+      "izoh": "Yaroqlilik sharti |L − 84| ≤ 0,6 ko'rinishida yoziladi. Modulni ochamiz: −0,6 ≤ L − 84 ≤ 0,6. Har qismga 84 ni qo'shsak 83,4 ≤ L ≤ 84,6 hosil bo'ladi. Chetlanish ikki tomonga bir xil bo'lgani uchun kesma 84 ga nisbatan simmetrik joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olchov-dopusk",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#92217ddc"
+    },
+    {
+      "q": "Dorixona tarozisi 250 g yorliqli qutini o'lchaganda 247 g dan 253 g gacha qiymat ko'rsatadi. O'lchangan m massa uchun shartni modul bilan yozing.",
+      "v": [
+        "|m − 250| ≤ 6",
+        "|m − 3| ≤ 250",
+        "|m − 250| ≤ 3",
+        "|m + 250| ≤ 3"
+      ],
+      "t": 2,
+      "izoh": "Chegaralar 247 va 253 bo'lib, ularning o'rtasi 250 ga teng. Markazdan chetgacha masofa 253 − 250 = 3 grammni tashkil qiladi. Demak o'lchangan massa uchun |m − 250| ≤ 3 shart bajariladi. Oraliqning to'liq kengligi 6 g, lekin modul yarim kenglik bilan o'lchaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-olchov-dopusk",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#897c1953"
+    },
+    {
+      "q": "|x − 7|/3 < 2 tengsizlikni yeching va yechim oralig'ini to'g'ri ko'rsating.",
+      "v": [
+        "5 < x < 9",
+        "−6 < x < 6",
+        "4 < x < 10",
+        "1 < x < 13"
+      ],
+      "t": 3,
+      "izoh": "Avval ikkala tomonni 3 ga ko'paytiramiz: |x − 7| < 6. So'ng modulni ochamiz: −6 < x − 7 < 6. Har qismga 7 ni qo'shsak 1 < x < 13 hosil bo'ladi. Maxrajni e'tiborsiz qoldirib, to'g'ridan-to'g'ri |x − 7| < 2 ni yechish 5 < x < 9 degan xato javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kasrli-koeffitsient",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#f0bcc6ef"
+    },
+    {
+      "q": "|3 − x|/2 ≥ 4 tengsizlikning yechimini toping va to'g'ri variantni tanlang.",
+      "v": [
+        "x ≤ −5 yoki x ≥ 11",
+        "−5 ≤ x ≤ 11",
+        "x ≤ −1 yoki x ≥ 7",
+        "x ≤ 5 yoki x ≥ 11"
+      ],
+      "t": 0,
+      "izoh": "Ikkala tomonni 2 ga ko'paytiramiz: |3 − x| ≥ 8. Modul ichidagi ifodaning ishorasi ahamiyatsiz, chunki |3 − x| va |x − 3| teng. Demak x − 3 ≥ 8 yoki x − 3 ≤ −8, ya'ni x ≥ 11 yoki x ≤ −5. Ikkiga ko'paytirmaslik x ≤ −1 yoki x ≥ 7 degan xatoga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kasrli-koeffitsient",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#3a8ce516"
+    },
+    {
+      "q": "|2x − 9| ≤ 5 tengsizlikni qanoatlantiruvchi eng katta butun sonni aniqlang.",
+      "v": [
+        "6",
+        "7",
+        "14",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Modulni ochsak −5 ≤ 2x − 9 ≤ 5 bo'ladi. To'qqizni qo'shamiz va 4 ≤ 2x ≤ 14 hosil bo'ladi. Ikkiga bo'lsak 2 ≤ x ≤ 7 chiqadi. O'ng chegara 7 butun son va shartni qanoatlantiradi, demak eng katta butun yechim shu.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-eng-katta-butun",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#b3b091f8"
+    },
+    {
+      "q": "|5 − 3x| < 11 tengsizlikni qanoatlantiruvchi eng kichik butun son qaysi ekanligini toping.",
+      "v": [
+        "−2",
+        "0",
+        "−1",
+        "−5"
+      ],
+      "t": 2,
+      "izoh": "Modulni ochamiz: −11 < 5 − 3x < 11. Beshni ayiramiz: −16 < −3x < 6. Manfiy songa bo'lganda belgilar teskari aylanadi va −2 < x < 16/3 hosil bo'ladi. Bu oraliqdagi eng kichik butun son −1, chunki −2 ning o'zi kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-eng-kichik-butun",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#2623c8ac"
+    },
+    {
+      "q": "Ustaxonada bir kunda tayyorlanadigan stullar soni s ta bo'lib, u rejadagi 48 tadan 5 tadan ortiq farq qilmaydi. Bir kunda tayyorlanishi mumkin bo'lgan eng kam stul soni nechta?",
+      "v": [
+        "44",
+        "42",
+        "53",
+        "43"
+      ],
+      "t": 3,
+      "izoh": "Shart |s − 48| ≤ 5 ko'rinishida yoziladi. Modulni ochsak −5 ≤ s − 48 ≤ 5, ya'ni 43 ≤ s ≤ 53 bo'ladi. Kesmaning quyi chegarasi 43 va u ham mumkin bo'lgan qiymat, chunki belgi qat'iy emas. Demak eng kam son 43 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-ish-unumi",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#be796e2d"
+    },
+    {
+      "q": "Kitob narxi p so'm bo'lib, do'konlarda o'rtacha 62 000 so'mdan ko'pi bilan 8 000 so'm farq qiladi. Eng qimmat kitob narxi qancha bo'lishi mumkin?",
+      "v": [
+        "70 000 so'm",
+        "54 000 so'm",
+        "62 000 so'm",
+        "78 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Shart |p − 62 000| ≤ 8 000 ko'rinishida bo'ladi. Modulni ochsak −8 000 ≤ p − 62 000 ≤ 8 000, ya'ni 54 000 ≤ p ≤ 70 000 kelib chiqadi. Yuqori chegara 70 000 so'm, demak eng qimmat kitob shu narxda sotiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-narx-byudjet",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#1c8b8d30"
+    },
+    {
+      "q": "|x − 4| < 6 va |x + 1| > 3 tengsizliklar sistemasining yechimini toping.",
+      "v": [
+        "−2 < x < 2",
+        "2 < x < 10",
+        "−4 < x < 10",
+        "−2 < x < 10"
+      ],
+      "t": 1,
+      "izoh": "Birinchi tengsizlikdan −6 < x − 4 < 6, ya'ni −2 < x < 10 kelib chiqadi. Ikkinchisi x + 1 > 3 yoki x + 1 < −3 ga ajraladi, ya'ni x > 2 yoki x < −4. Endi kesishmani olamiz: −4 dan kichik qism birinchi oraliqqa tushmaydi. Demak yechim 2 < x < 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-sistema-kesishma",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#da233ae9"
+    },
+    {
+      "q": "|x + 3| ≤ 8 va |x − 2| ≥ 4 shartlarni bir vaqtda qanoatlantiruvchi butun sonlar nechta?",
+      "v": [
+        "9",
+        "11",
+        "10",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Birinchi shartdan −8 ≤ x + 3 ≤ 8, ya'ni −11 ≤ x ≤ 5 kelib chiqadi. Ikkinchi shartdan x − 2 ≥ 4 yoki x − 2 ≤ −4, ya'ni x ≥ 6 yoki x ≤ −2. Kesishma −11 ≤ x ≤ −2 bo'ladi. Bu kesmadagi butun sonlar soni −2 − (−11) + 1 = 10 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-sistema-kesishma",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#cffc874c"
+    },
+    {
+      "q": "|4x − 14| ≤ 10 tengsizlik yechimi bo'lgan kesmaning uzunligini hisoblang.",
+      "v": [
+        "20",
+        "2,5",
+        "10",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Modulni ochsak −10 ≤ 4x − 14 ≤ 10 bo'ladi. O'n to'rtni qo'shamiz: 4 ≤ 4x ≤ 24. To'rtga bo'lsak 1 ≤ x ≤ 6 hosil bo'ladi. Kesma uzunligi 6 − 1 = 5 ga teng. To'rtga bo'lishni unutish 20 degan xato javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-oraliq-uzunligi",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#3f507ccc"
+    },
+    {
+      "q": "x = −3 soni quyida keltirilgan tengsizliklardan qaysi birini qanoatlantiradi?",
+      "v": [
+        "|2x + 1| ≥ 5",
+        "|x − 1| < 3",
+        "|x + 5| > 4",
+        "|x + 3| > 0"
+      ],
+      "t": 0,
+      "izoh": "Har bir variantga x = −3 ni qo'yib ko'ramiz. Ikkinchisida |−4| = 4 bo'lib, 4 < 3 noto'g'ri. Uchinchisida |2| = 2 va 2 > 4 ham noto'g'ri. Oxirgisida |0| = 0 bo'lib, qat'iy tengsizlik bajarilmaydi. Birinchisida esa |2·(−3) + 1| = 5 va 5 ≥ 5 to'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-yechim-tekshirish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#53fee8f5"
+    },
+    {
+      "q": "Sinf o'quvchisining matematikadan olgan bali b bo'lib, o'rtacha ball 68 dan 12 balldan ortiq farq qilgan o'quvchining natijasi qayta ko'rib chiqiladi. Qayta ko'rib chiqiladigan ballar to'plamini toping.",
+      "v": [
+        "56 < b < 80",
+        "b < 56 yoki b > 80",
+        "b < 68 yoki b > 80",
+        "b ≤ 56 yoki b ≥ 80"
+      ],
+      "t": 1,
+      "izoh": "Chetlanish |b − 68| ifodasi bilan o'lchanadi va u 12 dan katta bo'lishi kerak. Demak b − 68 > 12 yoki b − 68 < −12. Birinchisidan b > 80, ikkinchisidan b < 56 kelib chiqadi. «Ortiq» so'zi qat'iy tengsizlikni bildirgani uchun chegaralarning o'zi kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-statistika-chetlanish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#eb7e4598"
+    },
+    {
+      "q": "Idishdagi eritmada tuz ulushi c foiz bo'lib, texnologiya 9 foizdan 1,5 foizdan ko'p chetlashishga yo'l qo'ymaydi. Tuz ulushining eng kichik va eng katta qiymatlari yig'indisi nechaga teng?",
+      "v": [
+        "18",
+        "9",
+        "21",
+        "16,5"
+      ],
+      "t": 0,
+      "izoh": "Shart |c − 9| ≤ 1,5 ko'rinishida yoziladi. Modulni ochsak −1,5 ≤ c − 9 ≤ 1,5, ya'ni 7,5 ≤ c ≤ 10,5 hosil bo'ladi. Eng kichik qiymat 7,5, eng kattasi 10,5 va ularning yig'indisi 18. Bu yig'indi markazning ikki barobariga teng bo'lishi tekshiruv bo'la oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-aralashma",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#cc839ac7"
+    },
+    {
+      "q": "|x² − 9| < 7 tengsizlikni qanoatlantiruvchi musbat butun sonlarni aniqlang.",
+      "v": [
+        "1, 2 va 3",
+        "2 va 3",
+        "2, 3 va 4",
+        "3 va 4"
+      ],
+      "t": 1,
+      "izoh": "Modulni ochamiz: −7 < x² − 9 < 7. To'qqizni qo'shsak 2 < x² < 16 hosil bo'ladi. Musbat x uchun bu √2 < x < 4 degani. Shu oraliqdagi butun sonlar 2 va 3, chunki 1 juda kichik, 4 esa chegarada qolib yechimga kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-kvadrat-ichida",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#9f7b8f99"
+    },
+    {
+      "q": "|x² − 4| ≤ 5 tengsizlikning yechimi qaysi kesmadan iborat ekanligini toping.",
+      "v": [
+        "−1 ≤ x ≤ 9",
+        "−2 ≤ x ≤ 2",
+        "−3 ≤ x ≤ 3",
+        "1 ≤ x ≤ 3"
+      ],
+      "t": 2,
+      "izoh": "Modulni ochsak −5 ≤ x² − 4 ≤ 5 bo'ladi. To'rtni qo'shamiz: −1 ≤ x² ≤ 9. Chap tengsizlik har doim o'rinli, chunki kvadrat manfiy bo'lmaydi. Demak faqat x² ≤ 9 sharti qoladi va yechim −3 ≤ x ≤ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-kvadrat-ichida",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#4cda735c"
+    },
+    {
+      "q": "|x − a| < b tengsizlikning yechimi −6 < x < 14 oralig'idan iborat. a va b sonlarining yig'indisini toping.",
+      "v": [
+        "8",
+        "20",
+        "4",
+        "14"
+      ],
+      "t": 3,
+      "izoh": "Yechim oralig'ining markazi a ga, yarim kengligi esa b ga teng bo'ladi. Markaz (−6 + 14) : 2 = 4, demak a = 4. Yarim kenglik 14 − 4 = 10, demak b = 10. Ularning yig'indisi 4 + 10 = 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-teskari-parametr",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#e84c853a"
+    },
+    {
+      "q": "Yechimi x ≤ 1 va x ≥ 13 nurlardan iborat bo'lgan |x − a| ≥ b tengsizlikda b nechaga teng?",
+      "v": [
+        "6",
+        "7",
+        "12",
+        "13"
+      ],
+      "t": 0,
+      "izoh": "Ikki nurning chegaralari 1 va 13 bo'lgani uchun markaz (1 + 13) : 2 = 7 nuqtada, ya'ni a = 7. Markazdan chegaragacha masofa 13 − 7 = 6 ga teng va bu aynan b bo'ladi. Demak b = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-teskari-parametr",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#e017a18b"
+    },
+    {
+      "q": "|3x − 12| < m tengsizlikning yechimi bo'lmasligi uchun m parametri qanday qiymatlar qabul qilishi kerak?",
+      "v": [
+        "m < 0",
+        "m ≤ 0",
+        "m > 0",
+        "m ≥ 0"
+      ],
+      "t": 1,
+      "izoh": "Modul har doim noldan kichik emas, eng kichik qiymati nolga teng va unga x = 4 da erishiladi. Agar m ≤ 0 bo'lsa hech bir x uchun modul m dan kichik bo'la olmaydi. m = 0 hol ham yaramaydi, chunki 0 < 0 noto'g'ri. Demak yechim bo'lmasligi uchun m ≤ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-parametr-yechim-yoq",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#9f5d7ef5"
+    },
+    {
+      "q": "|x − 5| ≤ k tengsizlikni qanoatlantiruvchi butun sonlar soni aynan yettita bo'lishi uchun k butun soni nechaga teng?",
+      "v": [
+        "4",
+        "7",
+        "3",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Yechim kesmasi 5 − k ≤ x ≤ 5 + k ko'rinishida bo'ladi. Undagi butun sonlar soni 2k + 1 ga teng. Shartga ko'ra 2k + 1 = 7, bundan k = 3 kelib chiqadi. Tekshirsak 2 dan 8 gacha bo'lgan yettita butun son chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-parametr-yechim-soni",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#0689129e"
+    },
+    {
+      "q": "|x| ≥ x tengsizlik qaysi x qiymatlarida to'g'ri bo'lishini aniqlang.",
+      "v": [
+        "Faqat manfiy sonlarda",
+        "Faqat x ≥ 0 bo'lganda",
+        "Faqat x = 0 bo'lganda",
+        "Barcha haqiqiy sonlarda"
+      ],
+      "t": 3,
+      "izoh": "Agar x ≥ 0 bo'lsa |x| = x va tenglik o'rinli bo'ladi. Agar x < 0 bo'lsa |x| musbat, x esa manfiy, demak |x| > x. Ikkala holda ham tengsizlik bajariladi. Shuning uchun u barcha haqiqiy sonlar uchun to'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-tengsizlik-xossasi",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#6cd1e9bf"
+    },
+    {
+      "q": "|x − 2| ≤ x − 2 tengsizlikni qanoatlantiruvchi x sonlari to'plamini toping.",
+      "v": [
+        "x ≥ 2",
+        "x ≤ 2",
+        "x = 2",
+        "Barcha haqiqiy sonlar"
+      ],
+      "t": 0,
+      "izoh": "Modul har doim ifodaning o'zidan kichik emas, ya'ni har qanday A uchun |A| ≥ A. Demak |A| ≤ A faqat |A| = A bo'lganda, ya'ni A ≥ 0 bo'lganda mumkin. Bu yerda A o'rnida x − 2 turibdi, shuning uchun x − 2 ≥ 0 va x ≥ 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-tengsizlik-xossasi",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#9f67d243"
+    },
+    {
+      "q": "Avtobus bekatga rejadagi 14:30 dan ko'pi bilan 8 daqiqa farq bilan keladi. Avtobusning kelish vaqti qaysi oraliqda bo'lishi mumkin?",
+      "v": [
+        "14:30 dan 14:38 gacha",
+        "14:22 dan 14:38 gacha",
+        "14:26 dan 14:34 gacha",
+        "14:22 dan 14:30 gacha"
+      ],
+      "t": 1,
+      "izoh": "Soat 14 dan keyingi daqiqalarni t deb olsak, shart |t − 30| ≤ 8 ko'rinishida bo'ladi. Modulni ochsak −8 ≤ t − 30 ≤ 8, ya'ni 22 ≤ t ≤ 38 chiqadi. Demak avtobus 14:22 dan 14:38 gacha oraliqda keladi, chunki kechikish ham, erta kelish ham bir xil chegaralangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-vaqt-jadval",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#0f28a0a4"
+    },
+    {
+      "q": "Uzunlikka sakrash mashg'ulotida Jasurning natijasi 5,80 m dan 0,25 m dan ko'p chetlashmaydi. Uning eng yaxshi va eng yomon natijalari orasidagi farq qancha?",
+      "v": [
+        "0,25 m",
+        "1 m",
+        "0,5 m",
+        "0,75 m"
+      ],
+      "t": 2,
+      "izoh": "Shart |d − 5,80| ≤ 0,25 ko'rinishida yoziladi. Modulni ochsak 5,55 ≤ d ≤ 6,05 hosil bo'ladi. Eng yaxshi va eng yomon natijalar farqi 6,05 − 5,55 = 0,5 m ga teng. Bu farq chetlanishning ikki barobariga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-sport-natija",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#a39f1492"
+    },
+    {
+      "q": "|x + 4| ≤ |2x − 1| tengsizlikning yechimini toping va to'g'ri variantni tanlang.",
+      "v": [
+        "−1 ≤ x ≤ 5",
+        "x ≤ −5 yoki x ≥ 1",
+        "x ≥ 5",
+        "x ≤ −1 yoki x ≥ 5"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomon manfiy emas, shuning uchun kvadratga ko'taramiz: (x + 4)² ≤ (2x − 1)². Qavslarni ochsak x² + 8x + 16 ≤ 4x² − 4x + 1 bo'ladi. Hamma hadni o'ngga o'tkazsak 3x² − 12x − 15 ≥ 0, uchga bo'lsak x² − 4x − 5 ≥ 0. Ko'paytuvchilarga ajratsak (x − 5)(x + 1) ≥ 0 va yechim x ≤ −1 yoki x ≥ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ikki-tomon-modul",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#006ff1cf"
+    },
+    {
+      "q": "|x − 3| + |x + 7| ≥ c tengsizlik barcha haqiqiy x lar uchun bajarilishi kerak. c ning eng katta qiymatini toping.",
+      "v": [
+        "10",
+        "4",
+        "7",
+        "20"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi ikki nuqtagacha bo'lgan masofalar yig'indisini bildiradi. U eng kichik qiymatga −7 va 3 orasidagi kesmada erishadi va bu qiymat nuqtalar orasidagi masofaga teng. Masofa 3 − (−7) = 10. Tengsizlik hamma x uchun bajarilishi uchun c ≤ 10 bo'lishi kerak, demak eng katta qiymat 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-modul-eng-kichik-qiymat",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#786c6c99"
+    },
+    {
+      "q": "Mahsulot ikki omborda, yo'lning 2 va 18-kilometrlarida saqlanadi. Yuk mashinasi ikkala omborgacha masofalar yig'indisi eng kichik bo'lishi uchun qayerda turishi kerak?",
+      "v": [
+        "Faqat 10-kilometrda",
+        "2 va 18-kilometrlar orasida istalgan joyda",
+        "Faqat 2-kilometrda",
+        "18-kilometrdan keyin istalgan joyda"
+      ],
+      "t": 1,
+      "izoh": "Ikki omborgacha masofalar yig'indisi |x − 2| + |x − 18| ifodasi bilan beriladi. Omborlar orasidagi har qanday nuqtada bu yig'indi 16 km ga teng bo'lib, eng kichik qiymatni beradi. Kesmadan chetga chiqilsa yig'indi ortib boradi. Demak mashina 2 va 18-kilometrlar orasida istalgan joyda turishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-modul-eng-kichik-qiymat",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#555bac3e"
+    },
+    {
+      "q": "Suv omborining sathi h metr bo'lib, xavfsiz sath 12 m dan 2,5 m dan ortiq farq qilmasligi kerak. Xavfli holat shartini modul yordamida yozing.",
+      "v": [
+        "|h − 12| ≤ 2,5",
+        "|h − 2,5| > 12",
+        "|h − 12| > 2,5",
+        "|h + 12| > 2,5"
+      ],
+      "t": 2,
+      "izoh": "Xavfsiz holat |h − 12| ≤ 2,5 tengsizligi bilan tavsiflanadi. Xavfli holat esa uning inkori, ya'ni chetlanish 2,5 dan katta bo'lgan hol. Demak shart |h − 12| > 2,5 ko'rinishida yoziladi. Modul ichida sath bilan me'yor ayirmasi turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-tengsizlik-tuzish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#9c4d59bf"
+    },
+    {
+      "q": "|x − 15| < 6 tengsizlik yechimi bo'lgan oraliqning chegaralarini ko'rsating.",
+      "v": [
+        "−6 < x < 6",
+        "15 < x < 21",
+        "6 < x < 24",
+        "9 < x < 21"
+      ],
+      "t": 3,
+      "izoh": "Modulni ochamiz: −6 < x − 15 < 6. Har qismga 15 ni qo'shsak 9 < x < 21 hosil bo'ladi. Chegaralar markazdan olti birlik chapda va o'ngda joylashadi. Faqat o'ng tomonni olish 15 < x < 21 degan chala javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kichik-oraliq-yechim",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#fe666929"
+    },
+    {
+      "q": "|x + 11| ≤ 4 tengsizlikni qanoatlantiruvchi eng katta va eng kichik sonlar qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "Eng kattasi −7, eng kichigi −15",
+        "Eng kattasi −15, eng kichigi −7",
+        "Eng kattasi 15, eng kichigi 7",
+        "Eng kattasi −4, eng kichigi −11"
+      ],
+      "t": 0,
+      "izoh": "Modulni ochsak −4 ≤ x + 11 ≤ 4 bo'ladi. O'n birni ayiramiz va −15 ≤ x ≤ −7 hosil bo'ladi. Manfiy sonlar orasida kattarog'i nolga yaqinrog'i, ya'ni −7. Eng kichigi esa kesmaning chap chegarasi −15 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kichik-kesma-yechim",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#35e709ac"
+    },
+    {
+      "q": "|7 − x| > 2 tengsizlikning yechimini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "5 < x < 9",
+        "x < 5 yoki x > 9",
+        "x < −5 yoki x > 9",
+        "x > 9"
+      ],
+      "t": 1,
+      "izoh": "Modul ichidagi ifodani |x − 7| ko'rinishida yozish mumkin, chunki qarama-qarshi sonlarning modullari teng. Demak x − 7 > 2 yoki x − 7 < −2 bo'ladi. Birinchisidan x > 9, ikkinchisidan x < 5 kelib chiqadi. Yechim ikki nurning birlashmasidan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-katta-birlashma",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#914bbf5a"
+    },
+    {
+      "q": "|3x + 4| < 13 tengsizlikni qanoatlantiruvchi barcha butun sonlar yig'indisini hisoblang.",
+      "v": [
+        "−9",
+        "−3",
+        "−12",
+        "0"
+      ],
+      "t": 2,
+      "izoh": "Modulni ochsak −13 < 3x + 4 < 13, ya'ni −17 < 3x < 9 bo'ladi. Uchga bo'lsak −17/3 < x < 3 hosil bo'ladi. Bu oraliqdagi butun sonlar −5 dan 2 gacha. Ularning yig'indisi −5 − 4 − 3 − 2 − 1 + 0 + 1 + 2 = −12 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-butun-yechim-soni",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#854635ac"
+    },
+    {
+      "q": "x < 4 shart bajarilganda |x − 4| ifodasi qanday ko'rinishga keladi?",
+      "v": [
+        "4 − x",
+        "x − 4",
+        "x + 4",
+        "−x − 4"
+      ],
+      "t": 0,
+      "izoh": "Modul ichidagi ifodaning ishorasini aniqlaymiz: x < 4 bo'lganda x − 4 manfiy bo'ladi. Manfiy ifodaning moduli uni qarama-qarshisiga aylantiradi, ya'ni |x − 4| = −(x − 4). Qavsni ochsak 4 − x hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ochish-holat",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#988d3b34"
+    },
+    {
+      "q": "2 ≤ x ≤ 5 oraliqda |x − 2| + |x − 5| ifodasi nimaga teng bo'lishini aniqlang.",
+      "v": [
+        "2x − 7",
+        "3",
+        "7 − 2x",
+        "x + 3"
+      ],
+      "t": 1,
+      "izoh": "Berilgan oraliqda x − 2 manfiy emas, shuning uchun |x − 2| = x − 2 bo'ladi. Ayni paytda x − 5 musbat emas, shuning uchun |x − 5| = 5 − x. Ularni qo'shsak (x − 2) + (5 − x) = 3 hosil bo'ladi. Ya'ni ifoda butun kesmada o'zgarmas qiymatga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ochish-holat",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#31c77324"
+    },
+    {
+      "q": "|x + 6| = x + 6 tenglik qaysi x qiymatlarida bajarilishini aniqlang.",
+      "v": [
+        "x ≤ −6",
+        "x ≥ 6",
+        "x ≥ −6",
+        "Barcha haqiqiy sonlarda"
+      ],
+      "t": 2,
+      "izoh": "Modul ifodaning o'ziga teng bo'lishi uchun ifoda manfiy bo'lmasligi kerak. Demak x + 6 ≥ 0 sharti bajarilishi zarur. Bundan x ≥ −6 kelib chiqadi. Manfiy qiymatlarda modul qarama-qarshi songa aylanadi va tenglik buziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ochish-holat",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#eb3431fc"
+    },
+    {
+      "q": "Uy tarmog'idagi kuchlanish U volt bo'lib, u me'yordagi 220 V dan 22 V dan ortiq chetlashmasligi kerak. Ruxsat etilgan kuchlanish oralig'ini toping.",
+      "v": [
+        "220 ≤ U ≤ 242",
+        "208 ≤ U ≤ 232",
+        "176 ≤ U ≤ 264",
+        "198 ≤ U ≤ 242"
+      ],
+      "t": 3,
+      "izoh": "Shart |U − 220| ≤ 22 ko'rinishida yoziladi. Modulni ochsak −22 ≤ U − 220 ≤ 22 bo'ladi. Har qismga 220 ni qo'shamiz va 198 ≤ U ≤ 242 hosil bo'ladi. Chetlanish ikki tomonga bir xil bo'lgani uchun oraliq 220 ga nisbatan simmetrik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-elektr-kuchlanish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#67901dc6"
+    },
+    {
+      "q": "Avtomobilning 100 km ga yoqilg'i sarfi q litr bo'lib, u pasport qiymati 7,2 litrdan 0,8 litrdan ko'p farq qilsa nosozlik deb qaraladi. Nosozlikka mos sarf qiymatlarini toping.",
+      "v": [
+        "q < 6,4 yoki q > 8",
+        "6,4 < q < 8",
+        "q < 7,2 yoki q > 8",
+        "q < 6,4 yoki q > 7,2"
+      ],
+      "t": 0,
+      "izoh": "Nosozlik sharti |q − 7,2| > 0,8 ko'rinishida yoziladi. Modulni ochsak q − 7,2 > 0,8 yoki q − 7,2 < −0,8 bo'ladi. Birinchisidan q > 8, ikkinchisidan q < 6,4 kelib chiqadi. Demak sarf 6,4 dan kichik yoki 8 dan katta bo'lsa nosozlik qayd etiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-yoqilgi-sarf",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#c635f1cd"
+    },
+    {
+      "q": "Sport maktabiga yoshi 12 dan 2 yildan ortiq farq qilmaydigan bolalar qabul qilinadi. Qabul qilinadigan bolalarning yoshi qaysi oraliqda bo'ladi?",
+      "v": [
+        "12 ≤ y ≤ 14",
+        "10 ≤ y ≤ 14",
+        "10 ≤ y ≤ 12",
+        "8 ≤ y ≤ 16"
+      ],
+      "t": 1,
+      "izoh": "Shart |y − 12| ≤ 2 ko'rinishida yoziladi, chunki yosh bilan me'yor orasidagi farq modul bilan o'lchanadi. Modulni ochsak −2 ≤ y − 12 ≤ 2 bo'ladi. O'n ikkini qo'shsak 10 ≤ y ≤ 14 hosil bo'ladi. Demak eng kichigi 10, eng kattasi 14 yosh.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-yosh-chegara",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#d62b94ee"
+    },
+    {
+      "q": "Fermer xo'jaligida bir gektardan olingan bug'doy hosili h sentner bo'lib, u o'rtacha 45 sentnerdan 6 sentnerdan ko'p farq qilgan dalalar qayta tekshiriladi. Tekshiriladigan dalalar hosili qaysi shartni qanoatlantiradi?",
+      "v": [
+        "39 < h < 51",
+        "h < 39 yoki h > 45",
+        "h < 39 yoki h > 51",
+        "h ≤ 39 yoki h ≥ 51"
+      ],
+      "t": 2,
+      "izoh": "Chetlanish |h − 45| ifodasi bilan beriladi va u 6 dan katta bo'lishi kerak. Bundan h − 45 > 6 yoki h − 45 < −6 kelib chiqadi. Birinchisidan h > 51, ikkinchisidan h < 39. «Ko'p» so'zi qat'iy tengsizlikni bildirgani uchun chegaralar kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-hosil-donchilik",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#a389daac"
+    },
+    {
+      "q": "|x − 2| ≤ 3 va |x − 12| ≤ 4 tengsizliklar sistemasining yechimi qanday bo'lishini aniqlang.",
+      "v": [
+        "−1 ≤ x ≤ 16",
+        "5 ≤ x ≤ 8",
+        "−1 ≤ x ≤ 5",
+        "Bo'sh to'plam"
+      ],
+      "t": 3,
+      "izoh": "Birinchi tengsizlikdan −1 ≤ x ≤ 5, ikkinchisidan esa 8 ≤ x ≤ 16 kelib chiqadi. Bu ikki kesma umumiy nuqtaga ega emas, chunki 5 soni 8 dan kichik. Sistemaning yechimi kesishma bo'lgani uchun u bo'sh to'plam bo'ladi. Kesmalarni birlashtirish bu yerda qo'pol xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-sistema-bosh-toplam",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#b5cfca26"
+    },
+    {
+      "q": "|x − 1| < 4 yoki |x − 9| < 3 shartlardan kamida bittasi bajariladigan x sonlari to'plamini toping.",
+      "v": [
+        "−3 < x < 5 yoki 6 < x < 12",
+        "−3 < x < 12",
+        "−3 < x < 5",
+        "6 < x < 12"
+      ],
+      "t": 0,
+      "izoh": "Birinchi shartdan −4 < x − 1 < 4, ya'ni −3 < x < 5 kelib chiqadi. Ikkinchi shartdan −3 < x − 9 < 3, ya'ni 6 < x < 12 hosil bo'ladi. «Kamida bittasi» degani ikki to'plamning birlashmasi olinishini bildiradi. Oraliqlar orasida 5 dan 6 gacha bo'shliq borligi uchun ularni bitta oraliqqa qo'shib bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-birlashma-toplam",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#d7470376"
+    },
+    {
+      "q": "|5x + 20| < 35 tengsizlikning yechimini oraliq ko'rinishida ko'rsating.",
+      "v": [
+        "−55 < x < 15",
+        "−11 < x < 3",
+        "−7 < x < 7",
+        "−3 < x < 11"
+      ],
+      "t": 1,
+      "izoh": "Modulni ochsak −35 < 5x + 20 < 35 bo'ladi. Yigirmani ayiramiz: −55 < 5x < 15. Beshga bo'lsak −11 < x < 3 hosil bo'ladi. Beshga bo'lishni unutish −55 < x < 15 degan xato javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-koeffitsientli-oraliq",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#e4c32133"
+    },
+    {
+      "q": "−4, 0, 6, 11 sonlaridan qaysi biri |x + 2| > 10 tengsizlikni qanoatlantiradi?",
+      "v": [
+        "−4",
+        "0",
+        "6",
+        "11"
+      ],
+      "t": 3,
+      "izoh": "Har bir sonni tengsizlikka qo'yib ko'ramiz. x = −4 da |−2| = 2, x = 0 da |2| = 2, x = 6 da |8| = 8 chiqadi va ularning hech biri 10 dan katta emas. x = 11 da esa |13| = 13 bo'lib, shart bajariladi. Demak faqat 11 yaraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-yechim-tekshirish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#e8156141"
+    },
+    {
+      "q": "Do'kondagi olma narxi n ming so'm bo'lib, u o'rtacha 14 ming so'mdan 3 ming so'mdan ortiq farq qilmaydi. Narxning nechta butun ming so'mlik qiymati mumkin?",
+      "v": [
+        "6",
+        "8",
+        "7",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Shart |n − 14| ≤ 3 ko'rinishida yoziladi. Modulni ochsak 11 ≤ n ≤ 17 hosil bo'ladi. Bu kesmadagi butun sonlar 11 dan 17 gacha va ularning soni 17 − 11 + 1 = 7 ta. Bittani qo'shishni unutish oltita degan xato javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-butun-yechim-soni",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#35f2f84b"
+    },
+    {
+      "q": "|2x + 5| ≤ 9 tengsizlik yechimi bo'lgan kesmaning o'rta nuqtasini toping.",
+      "v": [
+        "−5",
+        "−2",
+        "2,5",
+        "−2,5"
+      ],
+      "t": 3,
+      "izoh": "Modulni ochsak −9 ≤ 2x + 5 ≤ 9 bo'ladi. Beshni ayiramiz: −14 ≤ 2x ≤ 4. Ikkiga bo'lsak −7 ≤ x ≤ 2 hosil bo'ladi. Kesmaning o'rta nuqtasi (−7 + 2) : 2 = −2,5 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-oraliq-markazi",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#21be9ba3"
+    },
+    {
+      "q": "Radar kemani port markazidan 25 km dan 35 km gacha bo'lgan masofada ko'rmoqda. Kemagacha bo'lgan d masofa uchun shu shartni modul yordamida yozing.",
+      "v": [
+        "|d − 30| ≤ 5",
+        "|d − 25| ≤ 35",
+        "|d − 30| ≤ 10",
+        "|d − 5| ≤ 30"
+      ],
+      "t": 0,
+      "izoh": "Oraliqning markazi (25 + 35) : 2 = 30 km ga teng. Markazdan chetgacha masofa 35 − 30 = 5 km ni tashkil qiladi. Modul markazdan chetlanishni bildirgani uchun shart |d − 30| ≤ 5 ko'rinishida yoziladi. Oraliqning to'liq kengligi 10 km bo'lsa ham, modulda yarim kenglik turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-navigatsiya-masofa",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#52e3f0e9"
+    },
+    {
+      "q": "|6x − 18| ≥ 24 tengsizlikning yechimini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "−1 ≤ x ≤ 7",
+        "x ≤ −1 yoki x ≥ 7",
+        "x ≤ 1 yoki x ≥ 7",
+        "x ≤ −7 yoki x ≥ 1"
+      ],
+      "t": 1,
+      "izoh": "Tengsizlik 6x − 18 ≥ 24 yoki 6x − 18 ≤ −24 holiga ajraladi. Birinchisidan 6x ≥ 42, ya'ni x ≥ 7 kelib chiqadi. Ikkinchisidan 6x ≤ −6, ya'ni x ≤ −1. Demak yechim x ≤ −1 yoki x ≥ 7 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-katta-birlashma",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#d1ac718b"
+    },
+    {
+      "q": "|x − 4| = |x + 10| tenglikni qanoatlantiradigan nuqtadan chapda bu ikki ifodadan qaysi biri kattaroq bo'ladi?",
+      "v": [
+        "|x + 10|",
+        "Ikkalasi teng bo'ladi",
+        "|x − 4|",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Tenglik ikki nuqtadan teng uzoqlikdagi o'rta nuqtada bajariladi: (4 + (−10)) : 2 = −3. Bu nuqtadan chapda x soni 4 dan uzoqroq, −10 ga esa yaqinroq joylashadi. Demak u yerda |x − 4| > |x + 10| bo'ladi. Ya'ni chapda birinchi ifoda kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-masofa-talqini",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#a7bcf656"
+    },
+    {
+      "q": "Sonlar o'qida |x − 8| < 3 tengsizlik qanday geometrik ma'noga ega ekanligini ko'rsating.",
+      "v": [
+        "x nuqta 8 dan 3 birlikdan kam uzoqlikda joylashgan",
+        "x nuqta 3 dan 8 birlikdan kam uzoqlikda joylashgan",
+        "x nuqta 8 dan 3 birlikdan ko'p uzoqlikda joylashgan",
+        "x nuqta noldan 8 birlikdan kam uzoqlikda joylashgan"
+      ],
+      "t": 0,
+      "izoh": "Ikki son ayirmasining moduli ular orasidagi masofani bildiradi. Bu yerda |x − 8| ifodasi x nuqta bilan 8 nuqta orasidagi masofani anglatadi. Tengsizlik shu masofa 3 birlikdan kichik ekanini ko'rsatadi. Shuning uchun yechim 5 < x < 11 oralig'i bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-masofa-talqini",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#7eca6784"
+    },
+    {
+      "q": "|a + b| ≤ |a| + |b| tengsizlikda tenglik qanday hollarda bajarilishini aniqlang.",
+      "v": [
+        "a va b qarama-qarshi ishorali bo'lganda",
+        "a va b bir xil ishorali bo'lganda yoki biri nol bo'lganda",
+        "faqat a = b bo'lganda",
+        "har qanday a va b uchun tenglik bajariladi"
+      ],
+      "t": 1,
+      "izoh": "Uchburchak tengsizligida tenglik yig'indi moduli modullar yig'indisiga teng bo'lgan holda yuz beradi. Bu esa a va b bir tomonga qarab qo'shilganda, ya'ni ular bir xil ishorali bo'lganda sodir bo'ladi. Sonlardan biri nol bo'lsa ham tenglik saqlanadi. Qarama-qarshi ishoralarda qisman qisqarish bo'lib, chap tomon kichrayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-tengsizlik-xossasi",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#1b380ad7"
+    },
+    {
+      "q": "|2x − 6| > p tengsizlik barcha haqiqiy x lar uchun bajarilishi uchun p qanday bo'lishi kerak?",
+      "v": [
+        "p ≤ 0",
+        "p > 0",
+        "p < 0",
+        "p ≥ 0"
+      ],
+      "t": 2,
+      "izoh": "Modulning eng kichik qiymati nolga teng va u x = 3 nuqtada erishiladi. Tengsizlik hamma x uchun bajarilishi uchun eng kichik qiymat ham p dan katta bo'lishi shart. Demak 0 > p, ya'ni p < 0. Agar p = 0 bo'lsa x = 3 da tengsizlik buziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-parametr-yechim-yoq",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#4270b113"
+    },
+    {
+      "q": "Gantel massasi 8 kg deb belgilangan, haqiqiy massa esa undan 0,2 kg gacha farq qilishi mumkin. Gantelning eng katta mumkin bo'lgan massasini toping.",
+      "v": [
+        "8 kg",
+        "7,8 kg",
+        "8,4 kg",
+        "8,2 kg"
+      ],
+      "t": 3,
+      "izoh": "Shart |m − 8| ≤ 0,2 ko'rinishida yoziladi. Modulni ochsak −0,2 ≤ m − 8 ≤ 0,2, ya'ni 7,8 ≤ m ≤ 8,2 hosil bo'ladi. Kesmaning yuqori chegarasi 8,2 kg bo'lib, bu eng katta mumkin bo'lgan massa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olchov-dopusk",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#1f24d324"
+    },
+    {
+      "q": "|x − 9| ≤ 5 tengsizlikning yechimi bo'lgan kesmani to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "4 ≤ x ≤ 14",
+        "−5 ≤ x ≤ 5",
+        "9 ≤ x ≤ 14",
+        "5 ≤ x ≤ 9"
+      ],
+      "t": 0,
+      "izoh": "Modulni ochamiz: −5 ≤ x − 9 ≤ 5. Har uch qismga 9 ni qo'shsak 4 ≤ x ≤ 14 hosil bo'ladi. Chegaralar markaz 9 dan besh birlik chapda va o'ngda joylashadi. Faqat o'ng tomonni yozish chala javob bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-kichik-oraliq-yechim",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#2dcae7b5"
+    },
+    {
+      "q": "|4x − 4| < 12 tengsizlik yechimini oraliq ko'rinishida yozing.",
+      "v": [
+        "−8 < x < 16",
+        "−2 < x < 4",
+        "−3 < x < 3",
+        "2 < x < 4"
+      ],
+      "t": 1,
+      "izoh": "Modulni ochsak −12 < 4x − 4 < 12 bo'ladi. To'rtni qo'shamiz: −8 < 4x < 16. To'rtga bo'lsak −2 < x < 4 hosil bo'ladi. To'rtga bo'lishni unutish −8 < x < 16 degan xatoga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-koeffitsientli-oraliq",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#48a19972"
+    },
+    {
+      "q": "|x + 2| ≥ 9 tengsizlikning yechimini qaysi variant to'g'ri ifodalaydi?",
+      "v": [
+        "−11 ≤ x ≤ 7",
+        "x ≤ −7 yoki x ≥ 11",
+        "x ≤ −11 yoki x ≥ 7",
+        "x ≥ 7"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlik x + 2 ≥ 9 yoki x + 2 ≤ −9 holiga ajraladi. Birinchisidan x ≥ 7, ikkinchisidan x ≤ −11 kelib chiqadi. Demak yechim ikki nurning birlashmasi bo'lib, x ≤ −11 yoki x ≥ 7 ko'rinishida yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-katta-birlashma",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#0d54acc8"
+    },
+    {
+      "q": "Nonvoyxonada non massasi 600 g deb belgilangan va undan chetlanish 25 g dan oshmasligi kerak. Yaroqli non massasining eng kichik qiymatini toping.",
+      "v": [
+        "600 g",
+        "625 g",
+        "550 g",
+        "575 g"
+      ],
+      "t": 3,
+      "izoh": "Shart |m − 600| ≤ 25 ko'rinishida yoziladi. Modulni ochsak −25 ≤ m − 600 ≤ 25, ya'ni 575 ≤ m ≤ 625 hosil bo'ladi. Kesmaning quyi chegarasi 575 g bo'lib, bu eng kichik yaroqli massa hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-olchov-dopusk",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#c3a3e856"
+    },
+    {
+      "q": "Sinovdagi dvigatelning aylanishlar soni n bo'lib, u me'yordagi 3000 aylanishdan kamida 150 aylanish farq qilsa qayd etiladi. Qayd etish shartini modul bilan yozing.",
+      "v": [
+        "|n − 3000| ≥ 150",
+        "|n − 150| ≥ 3000",
+        "|n − 3000| ≤ 150",
+        "|n + 3000| ≥ 150"
+      ],
+      "t": 0,
+      "izoh": "Aylanishlar sonining me'yordan chetlanishi |n − 3000| ifodasi bilan o'lchanadi. «Kamida 150 aylanish farq qilsa» degani bu chetlanish 150 dan kichik emasligini bildiradi. Demak shart |n − 3000| ≥ 150 ko'rinishida yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-tengsizlik-tuzish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#ef4e27e7"
+    },
+    {
+      "q": "1, 4, 8, 15 sonlaridan qaysi biri |2x − 7| ≤ 3 tengsizlikni qanoatlantiradi?",
+      "v": [
+        "1",
+        "4",
+        "8",
+        "15"
+      ],
+      "t": 1,
+      "izoh": "Modulni ochsak −3 ≤ 2x − 7 ≤ 3, ya'ni 4 ≤ 2x ≤ 10 bo'ladi. Ikkiga bo'lsak 2 ≤ x ≤ 5 hosil bo'ladi. Berilgan sonlardan faqat 4 shu kesmada yotadi, chunki 1 kichik, 8 va 15 esa katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-yechim-tekshirish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#614c0e3a"
+    },
+    {
+      "q": "Sonlar o'qida 3 dan 17 gacha bo'lgan kesma chegaralari bilan birga bo'yalgan. Shu to'plamni modulli tengsizlik ko'rinishida yozing.",
+      "v": [
+        "|x − 7| ≤ 10",
+        "|x − 10| ≥ 7",
+        "|x − 10| ≤ 7",
+        "|x + 10| ≤ 7"
+      ],
+      "t": 2,
+      "izoh": "Kesmaning markazi (3 + 17) : 2 = 10 nuqtada joylashadi. Markazdan chetgacha masofa 17 − 10 = 7 ga teng. Chegaralar bo'yalgani uchun qat'iy bo'lmagan belgi olinadi. Demak shart |x − 10| ≤ 7 ko'rinishida yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sonlar-oqida-tasvir",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#514e82d2"
+    },
+    {
+      "q": "|x + 8|/4 < 3 tengsizlikni qanoatlantiruvchi eng katta butun son qaysi?",
+      "v": [
+        "4",
+        "12",
+        "−20",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomonni 4 ga ko'paytiramiz: |x + 8| < 12. Modulni ochsak −12 < x + 8 < 12, ya'ni −20 < x < 4 hosil bo'ladi. O'ng chegara 4 oraliqqa kirmaydi, chunki tengsizlik qat'iy. Demak eng katta butun yechim 3 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-eng-katta-butun",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#f1ba7448"
+    },
+    {
+      "q": "|4 − 2x| ≤ 10 tengsizlikni qanoatlantiruvchi eng kichik butun son nechaga teng?",
+      "v": [
+        "−3",
+        "−7",
+        "−5",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Modulni ochamiz: −10 ≤ 4 − 2x ≤ 10. To'rtni ayiramiz: −14 ≤ −2x ≤ 6. Manfiy songa bo'lganda belgilar teskari aylanadi va −3 ≤ x ≤ 7 hosil bo'ladi. Demak eng kichik butun yechim −3 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-eng-kichik-butun",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#b859fa60"
+    },
+    {
+      "q": "|3x − 6| < 9 tengsizlik yechimi bo'lgan oraliqning uzunligini hisoblang.",
+      "v": [
+        "18",
+        "6",
+        "3",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Modulni ochsak −9 < 3x − 6 < 9 bo'ladi. Oltini qo'shamiz: −3 < 3x < 15. Uchga bo'lsak −1 < x < 5 hosil bo'ladi. Oraliq uzunligi 5 − (−1) = 6 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-oraliq-uzunligi",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#572f45b4"
+    },
+    {
+      "q": "|5x + 15| ≤ 20 tengsizlik yechimi bo'lgan kesmaning markazini toping.",
+      "v": [
+        "−4",
+        "−15",
+        "−3",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Modulni ochsak −20 ≤ 5x + 15 ≤ 20 bo'ladi. O'n beshni ayiramiz: −35 ≤ 5x ≤ 5. Beshga bo'lsak −7 ≤ x ≤ 1 hosil bo'ladi. Kesma markazi (−7 + 1) : 2 = −3 nuqtada joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-oraliq-markazi",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#23db3c32"
+    },
+    {
+      "q": "Muzlatgichdagi harorat rejadagi −18 °C dan 2 °C dan ortiq chetlashmasligi kerak. Ruxsat etilgan haroratlar oralig'ini ko'rsating.",
+      "v": [
+        "−16 ≤ t ≤ −20",
+        "−18 ≤ t ≤ −16",
+        "−36 ≤ t ≤ 2",
+        "−20 ≤ t ≤ −16"
+      ],
+      "t": 3,
+      "izoh": "Shart |t + 18| ≤ 2 ko'rinishida yoziladi, chunki chetlanish t bilan −18 orasidagi farqdir. Modulni ochsak −2 ≤ t + 18 ≤ 2 bo'ladi. O'n sakkizni ayiramiz va −20 ≤ t ≤ −16 hosil bo'ladi. Manfiy sonlar orasida ham chap chegara kichikroq bo'lib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-harorat-chetlanish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#4b73100a"
+    },
+    {
+      "q": "|2x − 10| ≤ 0 tengsizlikning yechimini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "x = 5",
+        "x ≤ 5",
+        "Bo'sh to'plam",
+        "Barcha haqiqiy sonlar"
+      ],
+      "t": 0,
+      "izoh": "Modul manfiy bo'lmagani uchun u noldan kichik bo'la olmaydi. Demak faqat tenglik holi mumkin, ya'ni 2x − 10 = 0 bo'lishi kerak. Bundan x = 5 kelib chiqadi. Yechim yagona nuqtadan iborat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-nol-bilan-solishtirish",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#04ea2e3a"
+    },
+    {
+      "q": "|3x + 1| ≥ −4 tengsizlikning yechimlar to'plami qanday bo'lishini aniqlang.",
+      "v": [
+        "Bo'sh to'plam",
+        "Barcha haqiqiy sonlar",
+        "x ≥ −4 bo'lgan sonlar",
+        "Faqat x = −1/3"
+      ],
+      "t": 1,
+      "izoh": "Modulning qiymati har doim noldan kichik emas, manfiy son esa noldan kichik bo'ladi. Shuning uchun modul −4 dan doim katta chiqadi. Tengsizlik har qanday x uchun bajariladi. Demak yechim barcha haqiqiy sonlardan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-manfiy-ong-tomon",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#77b7b24c"
+    },
+    {
+      "q": "Oilaning oylik kommunal to'lovi o'rtacha 340 000 so'mdan 45 000 so'mdan ko'p farq qilgan oylar tekshiriladi. Tekshiriladigan to'lov qiymatlarini toping.",
+      "v": [
+        "295 000 dan ko'p va 385 000 dan kam",
+        "340 000 dan kam yoki 385 000 dan ko'p",
+        "295 000 dan kam yoki 385 000 dan ko'p",
+        "45 000 dan kam yoki 340 000 dan ko'p"
+      ],
+      "t": 2,
+      "izoh": "Chetlanish |s − 340 000| ifodasi bilan o'lchanadi va u 45 000 dan katta bo'lishi kerak. Bundan s > 385 000 yoki s < 295 000 kelib chiqadi. Demak to'lov 295 000 so'mdan kam yoki 385 000 so'mdan ko'p bo'lgan oylar tekshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-narx-byudjet",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#61f958a9"
+    },
+    {
+      "q": "|x| + |x − 6| ≤ 8 tengsizlikning yechimini toping va to'g'ri kesmani belgilang.",
+      "v": [
+        "0 ≤ x ≤ 6",
+        "−8 ≤ x ≤ 8",
+        "−2 ≤ x ≤ 8",
+        "−1 ≤ x ≤ 7"
+      ],
+      "t": 3,
+      "izoh": "Kritik nuqtalar x = 0 va x = 6. Agar x > 6 bo'lsa x + (x − 6) ≤ 8, ya'ni 2x ≤ 14 va x ≤ 7. Agar x < 0 bo'lsa (−x) + (6 − x) ≤ 8, ya'ni 6 − 2x ≤ 8 va x ≥ −1. Oraliq ichida yig'indi 6 ga teng va shart bajariladi. Demak yechim −1 ≤ x ≤ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-modul-yigindi-kichik",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#2d5de182"
+    },
+    {
+      "q": "|x + 1| − |x − 3| ≥ 2 tengsizlikni oraliqlarga bo'lib yeching.",
+      "v": [
+        "x ≥ 2",
+        "x ≤ 2",
+        "2 ≤ x ≤ 3",
+        "x ≥ 3"
+      ],
+      "t": 0,
+      "izoh": "Kritik nuqtalar x = −1 va x = 3. Agar x < −1 bo'lsa ifoda −4 ga teng va shart bajarilmaydi. Agar −1 ≤ x < 3 bo'lsa (x + 1) − (3 − x) = 2x − 2 ≥ 2, bundan x ≥ 2. Agar x ≥ 3 bo'lsa ifoda 4 ga teng va shart doim bajariladi. Uch holni birlashtirsak yechim x ≥ 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-modul-ayirma",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#8e017bea"
+    },
+    {
+      "q": "|x − 6| ≤ 5 va |x − 1| > 3 shartlarni bir vaqtda qanoatlantiruvchi eng kichik butun sonni toping.",
+      "v": [
+        "4",
+        "5",
+        "1",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "Birinchi shartdan 1 ≤ x ≤ 11 kelib chiqadi. Ikkinchi shartdan x − 1 > 3 yoki x − 1 < −3, ya'ni x > 4 yoki x < −2. Ikki to'plamning kesishmasi 4 < x ≤ 11 bo'ladi. Bu to'plamdagi eng kichik butun son 5, chunki 4 ning o'zi kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-sistema-kesishma",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#c382f448"
+    },
+    {
+      "q": "Sonlar o'qida x nuqta −2 dan 6 birlikdan ko'p uzoqlikda joylashgan. Bu holatni ifodalovchi tengsizlikni tanlang.",
+      "v": [
+        "|x − 2| > 6",
+        "|x + 2| < 6",
+        "|x + 2| > 6",
+        "|x + 6| > 2"
+      ],
+      "t": 2,
+      "izoh": "Ikki nuqta orasidagi masofa ularning ayirmasi moduliga teng bo'ladi. Bu yerda x bilan −2 orasidagi masofa |x + 2| ifodasi bilan beriladi. Masofa 6 dan ko'p bo'lgani uchun shart |x + 2| > 6 ko'rinishida yoziladi. Yechim esa x < −8 yoki x > 4 bo'lib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-masofa-talqini",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#cc0ef811"
+    },
+    {
+      "q": "Brigada bir kunda g'isht teradi va uning natijasi 850 tadan 60 tadan ortiq farq qilmaydi. Mumkin bo'lgan eng katta va eng kichik natijalar ayirmasi nechaga teng?",
+      "v": [
+        "60",
+        "850",
+        "180",
+        "120"
+      ],
+      "t": 3,
+      "izoh": "Shart |g − 850| ≤ 60 ko'rinishida yoziladi. Modulni ochsak 790 ≤ g ≤ 910 hosil bo'ladi. Yuqori va quyi chegaralar ayirmasi 910 − 790 = 120 ta g'ishtni tashkil qiladi. Bu son chetlanishning ikki barobariga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-ish-unumi",
+      "id": "matematika_tngs_m07-modul-qatnashgan-tengsizliklar#3ffeb313"
+    }
+  ]
+}

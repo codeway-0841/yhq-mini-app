@@ -1,0 +1,501 @@
+{
+  "nom": "16-mavzu. Ionli bog'lanish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Ionlar qanday zarrachalardir?",
+      "v": [
+        "Zaryadlangan zarrachalar",
+        "Neytral zarrachalar",
+        "Faqat musbat zaryadli yadrolar",
+        "Zaryadga ega bo'lmagan molekulalar"
+      ],
+      "t": 0,
+      "izoh": "Ionlar zaryadlangan zarrachalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#a5bf8367"
+    },
+    {
+      "q": "Atom qachon ionga aylanadi?",
+      "v": [
+        "Elektron berganda yoki elektron biriktirib olganda",
+        "Neytron olganda",
+        "Proton yo'qotganda",
+        "Yadrosi parchalanganda"
+      ],
+      "t": 0,
+      "izoh": "Atomlar elektron berganda yoki elektron biriktirib olganda zaryadlangan zarrachalar, ya'ni ionlarga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#1ced2197"
+    },
+    {
+      "q": "Ionning zaryad miqdorini nima belgilaydi?",
+      "v": [
+        "Atomning yo'qotgan va qabul qilib olgan elektronlar soni",
+        "Atomning neytronlar soni",
+        "Atomning protonlar soni",
+        "Atom massasi"
+      ],
+      "t": 0,
+      "izoh": "Atomning yo'qotgan va qabul qilib olgan elektronlar soni ionning zaryad miqdorini belgilaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#d1f7ea8c"
+    },
+    {
+      "q": "Ionli bog'lanish deb qanday bog'lanishga aytiladi?",
+      "v": [
+        "Ionlar orasida hosil bo'lgan kimyoviy bog'lanishga",
+        "Umumiy elektron juftlari hisobiga hosil bo'lgan bog'lanishga",
+        "Metall atomlari orasidagi bog'lanishga",
+        "Molekulalar orasidagi tortishuvga"
+      ],
+      "t": 0,
+      "izoh": "Ionlar orasida hosil bo'lgan kimyoviy bog'lanish ion bog'lanish deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#b53de754"
+    },
+    {
+      "q": "Ionli birikmalar deb qanday moddalarga aytiladi?",
+      "v": [
+        "Ionlarning o'zaro birikishidan hosil bo'lgan moddalarga",
+        "Umumiy elektron juftlari hosil qiladigan moddalarga",
+        "Faqat metall atomlaridan tashkil topgan moddalarga",
+        "Gaz holatidagi moddalarga"
+      ],
+      "t": 0,
+      "izoh": "Ionlarning o'zaro birikishidan hosil bo'lgan moddalar ionli birikmalar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#c4dfb4a6"
+    },
+    {
+      "q": "Qarama-qarshi zaryadlangan ionlar bir-biriga qanday ta'sir qiladi?",
+      "v": [
+        "Tortiladi",
+        "Itaradi",
+        "Ta'sir qilmaydi",
+        "Neytrallashib atomga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Qarama-qarshi zaryadlangan ionlar bir-biriga tortiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#d1603a73"
+    },
+    {
+      "q": "Metallar tashqi energetik qavatlaridagi elektronlarini berib qanday ionlarga aylanadi?",
+      "v": [
+        "Musbat zaryadlangan ionlarga",
+        "Manfiy zaryadlangan ionlarga",
+        "Neytral atomlarga",
+        "Molekulalarga"
+      ],
+      "t": 0,
+      "izoh": "Metallar elektron berib, musbat zaryadlangan ionlarga oson aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#7cdbd2dc"
+    },
+    {
+      "q": "Metallmaslar tashqi energetik qavatiga elektronni qabul qilib qanday ionlarga aylanadi?",
+      "v": [
+        "Manfiy zaryadlangan ionlarga",
+        "Musbat zaryadlangan ionlarga",
+        "Neytral zarrachalarga",
+        "Inert gaz atomlariga"
+      ],
+      "t": 0,
+      "izoh": "Metallmaslar elektronni oson qabul qilib, manfiy zaryadlangan ionlarga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#0485c2e9"
+    },
+    {
+      "q": "Xlor atomining tashqi energetik qavatida nechta elektron bor?",
+      "v": [
+        "7 ta",
+        "8 ta",
+        "1 ta",
+        "2 ta"
+      ],
+      "t": 0,
+      "izoh": "14-jadval: xlor — 2, 8, 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#e1c0aeca"
+    },
+    {
+      "q": "Argon atomining tashqi energetik qavatida nechta elektron bor?",
+      "v": [
+        "8 ta",
+        "7 ta",
+        "2 ta",
+        "1 ta"
+      ],
+      "t": 0,
+      "izoh": "14-jadval: argon — 2, 8, 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#f5ae3daa"
+    },
+    {
+      "q": "Kaliy atomining tashqi energetik qavatida nechta elektron bor?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "7 ta",
+        "8 ta"
+      ],
+      "t": 0,
+      "izoh": "14-jadval: kaliy — 2, 8, 8, 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#95915031"
+    },
+    {
+      "q": "Xlor atomi tashqi energetik qavatini tugallashi uchun nechta elektron yetishmaydi?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "7 ta",
+        "8 ta"
+      ],
+      "t": 0,
+      "izoh": "Xlor atomi tashqi qavatini tugallashi uchun 1 ta elektron yetishmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#33c3c7ac"
+    },
+    {
+      "q": "Xlor atomi bilan kaliy atomi to'qnashganda nima sodir bo'ladi?",
+      "v": [
+        "Kaliydagi 1 ta elektronni xlor qabul qilib oladi",
+        "Xlordagi 1 ta elektronni kaliy qabul qilib oladi",
+        "Ikkala atom 1 tadan elektron beradi",
+        "Elektronlar umumiy juft hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "To'qnashganda kaliydagi 1 ta elektronni xlor qabul qilib oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#228e3a0b"
+    },
+    {
+      "q": "Xlor ionining (Cl-) elektron taqsimoti energetik qavatlar bo'yicha qanday?",
+      "v": [
+        "2, 8, 8",
+        "2, 8, 7",
+        "2, 8, 8, 1",
+        "2, 8, 6"
+      ],
+      "t": 0,
+      "izoh": "15-jadval: Cl- — 2, 8, 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#4e929bac"
+    },
+    {
+      "q": "Kaliy ionining (K+) elektron taqsimoti energetik qavatlar bo'yicha qanday?",
+      "v": [
+        "2, 8, 8",
+        "2, 8, 8, 1",
+        "2, 8, 7",
+        "2, 8"
+      ],
+      "t": 0,
+      "izoh": "15-jadval: K+ — 2, 8, 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#c9c8894f"
+    },
+    {
+      "q": "Xlor ionining yadro zaryadi qancha?",
+      "v": [
+        "+17",
+        "+18",
+        "+19",
+        "+16"
+      ],
+      "t": 0,
+      "izoh": "15-jadval: Cl- ionining yadro zaryadi +17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#d814cc35"
+    },
+    {
+      "q": "Kaliy ionining yadro zaryadi qancha?",
+      "v": [
+        "+19",
+        "+17",
+        "+18",
+        "+20"
+      ],
+      "t": 0,
+      "izoh": "15-jadval: K+ ionining yadro zaryadi +19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#ad5c2894"
+    },
+    {
+      "q": "Cl-, Ar va K+ zarrachalarining umumiy jihati nima?",
+      "v": [
+        "Elektron taqsimoti bir xil — 2, 8, 8",
+        "Yadro zaryadi bir xil",
+        "Elektronlar soni har xil",
+        "Barchasi neytral atomlar"
+      ],
+      "t": 0,
+      "izoh": "15-jadval bo'yicha barchasining elektron taqsimoti 2, 8, 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#f6a0c1a1"
+    },
+    {
+      "q": "Xlor atomining yadro zaryadi qancha?",
+      "v": [
+        "+17",
+        "+18",
+        "+19",
+        "+35"
+      ],
+      "t": 0,
+      "izoh": "14-jadval: xlor yadro zaryadi +17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#7089421c"
+    },
+    {
+      "q": "Argon atomining yadro zaryadi qancha?",
+      "v": [
+        "+18",
+        "+17",
+        "+19",
+        "+16"
+      ],
+      "t": 0,
+      "izoh": "14-jadval: argon yadro zaryadi +18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#905a8262"
+    },
+    {
+      "q": "Kaliy atomining yadro zaryadi qancha?",
+      "v": [
+        "+19",
+        "+18",
+        "+17",
+        "+20"
+      ],
+      "t": 0,
+      "izoh": "14-jadval: kaliy yadro zaryadi +19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#acd4b121"
+    },
+    {
+      "q": "Ionli birikmalarga qaysi moddalar kiradi?",
+      "v": [
+        "Metallarning galogenlar, kislorod, oltingugurt bilan hosil qilgan birikmalari",
+        "Metallmaslarning o'zaro birikmalari",
+        "Oddiy moddalarning molekulalari",
+        "Inert gazlarning birikmalari"
+      ],
+      "t": 0,
+      "izoh": "Ionli birikmalarga metallarning galogenlar, kislorod, oltingugurt bilan hosil qilgan birikmalari kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#1c4806b7"
+    },
+    {
+      "q": "Quyidagi qatorning qaysi birida faqat ionli birikmalar keltirilgan?",
+      "v": [
+        "NaCl, KBr, Li2O, Na2S",
+        "HCl, H2O, NH3, CH4",
+        "H2, O2, N2, Cl2",
+        "HBr, HI, PCl3, H2S"
+      ],
+      "t": 0,
+      "izoh": "NaCl, KBr, CaI2, Li2O, Na2S — ionli birikmalarga misol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#c2827c34"
+    },
+    {
+      "q": "Tuzlardagi metall ioni bilan kislota qoldig'i orasidagi bog'lanish qanday xarakterga ega?",
+      "v": [
+        "Ion bog'lanishli",
+        "Qutbsiz kovalent",
+        "Metall bog'lanishli",
+        "Donor-akseptor"
+      ],
+      "t": 0,
+      "izoh": "Tuzlardagi metall ioni bilan kislota qoldig'i orasidagi bog'lanish ion bog'lanishli xarakterga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#fc3d115f"
+    },
+    {
+      "q": "Ishqorlardagi metall ioni bilan gidroksid guruh orasidagi bog'lanish qanday xarakterga ega?",
+      "v": [
+        "Ion bog'lanishli",
+        "Qutbsiz kovalent",
+        "Metall bog'lanishli",
+        "Molekular tortishuv"
+      ],
+      "t": 0,
+      "izoh": "Ishqorlardagi metall ioni bilan gidroksid guruh orasidagi bog'lanish ham ion bog'lanishli xarakterga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#64b36bcd"
+    },
+    {
+      "q": "Kimyoviy bog'lanishda elementlarning qaysi elektronlari muhim ahamiyatga ega?",
+      "v": [
+        "Valent elektronlari",
+        "Ichki qavat elektronlari",
+        "Yadrodagi protonlar",
+        "Barcha elektronlar bir xil ahamiyatga ega"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy bog'lanishda elementlarning valent elektronlari muhim ahamiyatga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#f7fb3e51"
+    },
+    {
+      "q": "Kimyoviy bog'lanishda ishtirok etayotgan elektronlarning atomlar orasidagi holatiga qarab moddalar qanday birikmalarga ajratiladi?",
+      "v": [
+        "Kovalent qutbsiz, kovalent qutbli, donor-akseptor hamda ion bog'lanishli",
+        "Faqat ionli va kovalent bog'lanishli",
+        "Faqat qutbli va qutbsiz bog'lanishli",
+        "Metall va ion bog'lanishli"
+      ],
+      "t": 0,
+      "izoh": "Moddalar kovalent qutbsiz, kovalent qutbli, donor-akseptor hamda ion bog'lanishli birikmalarga ajratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#d18f9713"
+    },
+    {
+      "q": "Ionli bog'lanish qanday element atomlari orasida hosil bo'ladi?",
+      "v": [
+        "Elektromanfiyligi bir-biridan keskin farq qiladigan atomlar orasida",
+        "Elektromanfiyligi bir xil atomlar orasida",
+        "Elektromanfiyligi biroz farq qiladigan atomlar orasida",
+        "Inert gaz atomlari orasida"
+      ],
+      "t": 0,
+      "izoh": "Elektromanfiyligi keskin farq qiladigan atomlardan hosil bo'lgan birikmalarda ionli bog'lanish uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#2a5a6c1c"
+    },
+    {
+      "q": "Xlor atomi 1 ta elektron qabul qilib qanday ionga aylanadi?",
+      "v": [
+        "Cl-",
+        "Cl+",
+        "Cl2-",
+        "Cl2+"
+      ],
+      "t": 0,
+      "izoh": "Xlor atomi 1 ta elektron qo'shib olib, manfiy zaryadlangan Cl- ioniga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#351ff1a6"
+    },
+    {
+      "q": "Kaliy atomi 1 ta elektron berib qanday ionga aylanadi?",
+      "v": [
+        "K+",
+        "K-",
+        "K2+",
+        "K2-"
+      ],
+      "t": 0,
+      "izoh": "Kaliy atomi 1 ta elektron berib, musbat zaryadlangan K+ ioniga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#7a4a41d2"
+    },
+    {
+      "q": "Quyidagi moddalardan qaysi biri ionli birikma?",
+      "v": [
+        "CaF2",
+        "HCl",
+        "N2",
+        "NH3"
+      ],
+      "t": 0,
+      "izoh": "CaF2 — elektromanfiyligi keskin farq qiladigan elementlardan hosil bo'lgan ionli birikma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#816ecd56"
+    },
+    {
+      "q": "Xlor atomining elektron taqsimoti energetik qavatlar bo'yicha qanday?",
+      "v": [
+        "2, 8, 7",
+        "2, 8, 8",
+        "2, 8, 8, 1",
+        "2, 8, 6"
+      ],
+      "t": 0,
+      "izoh": "14-jadval: Cl — 2, 8, 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#3bf30fee"
+    },
+    {
+      "q": "Kaliy atomining elektron taqsimoti energetik qavatlar bo'yicha qanday?",
+      "v": [
+        "2, 8, 8, 1",
+        "2, 8, 8",
+        "2, 8, 7",
+        "2, 8, 1"
+      ],
+      "t": 0,
+      "izoh": "14-jadval: K — 2, 8, 8, 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m16-ionli-boglanish#9eefeb49"
+    }
+  ]
+}

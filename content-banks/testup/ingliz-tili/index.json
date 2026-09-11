@@ -1,0 +1,1684 @@
+{
+  "fan": "ingliz-tili",
+  "nom": "Ingliz tili",
+  "emoji": "🇬🇧",
+  "tur": "daraja",
+  "jamiSavol": 12952,
+  "jamiMavzu": 143,
+  "qiy": {
+    "oson": 4209,
+    "orta": 5537,
+    "qiyin": 3206
+  },
+  "sinflar": [
+    {
+      "sinf": "kids",
+      "badge": "Kids",
+      "daraja": "Bolalar bosqichi",
+      "savol": 743,
+      "mavzu": 20,
+      "kitoblar": [
+        {
+          "nom": "CEFR Kids",
+          "savol": 743,
+          "mavzu": 20,
+          "mavzular": [
+            {
+              "id": "ing_kids_m1",
+              "nom": "Greetings (Salomlashish)",
+              "bolim": "Tuzilma",
+              "savol": 35,
+              "qiy": {
+                "oson": 35,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m2",
+              "nom": "This is / These are",
+              "bolim": "Tuzilma",
+              "savol": 30,
+              "qiy": {
+                "oson": 30,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m3",
+              "nom": "I like / I don't like",
+              "bolim": "Tuzilma",
+              "savol": 29,
+              "qiy": {
+                "oson": 29,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m4",
+              "nom": "Yes / No answers",
+              "bolim": "Tuzilma",
+              "savol": 30,
+              "qiy": {
+                "oson": 30,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m5",
+              "nom": "Ilk so'zlar",
+              "bolim": "So'z boyligi",
+              "savol": 50,
+              "qiy": {
+                "oson": 50,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m6",
+              "nom": "Colours (Ranglar)",
+              "bolim": "So'z boyligi",
+              "savol": 30,
+              "qiy": {
+                "oson": 30,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m7",
+              "nom": "Numbers 1-20 (Sonlar)",
+              "bolim": "So'z boyligi",
+              "savol": 40,
+              "qiy": {
+                "oson": 40,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m8",
+              "nom": "Animals (Hayvonlar)",
+              "bolim": "So'z boyligi",
+              "savol": 47,
+              "qiy": {
+                "oson": 47,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m9",
+              "nom": "Family (Oila)",
+              "bolim": "So'z boyligi",
+              "savol": 35,
+              "qiy": {
+                "oson": 35,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m10",
+              "nom": "Body parts (Tana a'zolari)",
+              "bolim": "So'z boyligi",
+              "savol": 36,
+              "qiy": {
+                "oson": 36,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m11",
+              "nom": "Food & drink (Ovqat)",
+              "bolim": "So'z boyligi",
+              "savol": 45,
+              "qiy": {
+                "oson": 45,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m12",
+              "nom": "Fruits & vegetables (Meva-sabzavot)",
+              "bolim": "So'z boyligi",
+              "savol": 40,
+              "qiy": {
+                "oson": 40,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m13",
+              "nom": "Toys (O'yinchoqlar)",
+              "bolim": "So'z boyligi",
+              "savol": 40,
+              "qiy": {
+                "oson": 40,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m14",
+              "nom": "Clothes (Kiyimlar)",
+              "bolim": "So'z boyligi",
+              "savol": 40,
+              "qiy": {
+                "oson": 40,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m15",
+              "nom": "House & rooms (Uy)",
+              "bolim": "So'z boyligi",
+              "savol": 40,
+              "qiy": {
+                "oson": 40,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m16",
+              "nom": "Weather (Ob-havo)",
+              "bolim": "So'z boyligi",
+              "savol": 32,
+              "qiy": {
+                "oson": 32,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m17",
+              "nom": "Days of the week (Hafta kunlari)",
+              "bolim": "So'z boyligi",
+              "savol": 23,
+              "qiy": {
+                "oson": 23,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m18",
+              "nom": "Action verbs (Harakatlar)",
+              "bolim": "So'z boyligi",
+              "savol": 45,
+              "qiy": {
+                "oson": 45,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m19",
+              "nom": "Transport (Transport)",
+              "bolim": "So'z boyligi",
+              "savol": 37,
+              "qiy": {
+                "oson": 37,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_kids_m20",
+              "nom": "Classroom objects (Sinf jihozlari)",
+              "bolim": "So'z boyligi",
+              "savol": 39,
+              "qiy": {
+                "oson": 39,
+                "orta": 0,
+                "qiyin": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "a1",
+      "badge": "A1",
+      "daraja": "Boshlang'ich",
+      "savol": 3461,
+      "mavzu": 35,
+      "kitoblar": [
+        {
+          "nom": "CEFR A1",
+          "savol": 3461,
+          "mavzu": 35,
+          "mavzular": [
+            {
+              "id": "ing_a1_m1",
+              "nom": "To be (am / is / are)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m2",
+              "nom": "Present Simple",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m3",
+              "nom": "Articles (a / an / the)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m4",
+              "nom": "Plurals (regular & irregular)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m5",
+              "nom": "Prepositions of place",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m6",
+              "nom": "Can / Can't (ability)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m7",
+              "nom": "There is / There are",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m8",
+              "nom": "Subject pronouns (I, you, he...)",
+              "bolim": "Grammatika",
+              "savol": 99,
+              "qiy": {
+                "oson": 99,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m9",
+              "nom": "This / That / These / Those",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m10",
+              "nom": "Possessive adjectives (my, your...)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m11",
+              "nom": "Possessive 's",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m12",
+              "nom": "Have got / has got",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m13",
+              "nom": "Question words (what/where...)",
+              "bolim": "Grammatika",
+              "savol": 98,
+              "qiy": {
+                "oson": 98,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m14",
+              "nom": "Object pronouns (me, him...)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m15",
+              "nom": "Imperatives (Buyruq gaplar)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m16",
+              "nom": "Adjectives (word order)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m17",
+              "nom": "Adverbs of frequency (basic)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m18",
+              "nom": "some / any (intro)",
+              "bolim": "Grammatika",
+              "savol": 98,
+              "qiy": {
+                "oson": 98,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m19",
+              "nom": "like / love / hate + -ing",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m20",
+              "nom": "Prepositions of time (in/on/at)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m21",
+              "nom": "Daily routines (Kundalik ishlar)",
+              "bolim": "Grammatika",
+              "savol": 99,
+              "qiy": {
+                "oson": 99,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m22",
+              "nom": "Kundalik so'zlar",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m23",
+              "nom": "Days & months (Kun va oylar)",
+              "bolim": "So'z boyligi",
+              "savol": 88,
+              "qiy": {
+                "oson": 88,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m24",
+              "nom": "Time / o'clock (Vaqt)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m25",
+              "nom": "Jobs (Kasblar)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m26",
+              "nom": "Numbers 11-100 (Sonlar)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m27",
+              "nom": "Family (Oila a'zolari)",
+              "bolim": "So'z boyligi",
+              "savol": 98,
+              "qiy": {
+                "oson": 98,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m28",
+              "nom": "Food & drink (Ovqat-ichimlik)",
+              "bolim": "So'z boyligi",
+              "savol": 95,
+              "qiy": {
+                "oson": 95,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m29",
+              "nom": "Clothes (Kiyimlar)",
+              "bolim": "So'z boyligi",
+              "savol": 99,
+              "qiy": {
+                "oson": 99,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m30",
+              "nom": "Rooms & furniture (Xona va mebel)",
+              "bolim": "So'z boyligi",
+              "savol": 95,
+              "qiy": {
+                "oson": 95,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m31",
+              "nom": "Hobbies (Sevimli mashg'ulotlar)",
+              "bolim": "So'z boyligi",
+              "savol": 99,
+              "qiy": {
+                "oson": 99,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m32",
+              "nom": "Places in town (Shahardagi joylar)",
+              "bolim": "So'z boyligi",
+              "savol": 99,
+              "qiy": {
+                "oson": 99,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m33",
+              "nom": "Body (Tana a'zolari)",
+              "bolim": "So'z boyligi",
+              "savol": 95,
+              "qiy": {
+                "oson": 95,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m34",
+              "nom": "Weather (Ob-havo)",
+              "bolim": "So'z boyligi",
+              "savol": 99,
+              "qiy": {
+                "oson": 99,
+                "orta": 0,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a1_m35",
+              "nom": "Countries & nationalities (Davlat-millat)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 100,
+                "orta": 0,
+                "qiyin": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "a2",
+      "badge": "A2",
+      "daraja": "Elementar",
+      "savol": 2763,
+      "mavzu": 28,
+      "kitoblar": [
+        {
+          "nom": "CEFR A2",
+          "savol": 2763,
+          "mavzu": 28,
+          "mavzular": [
+            {
+              "id": "ing_a2_m1",
+              "nom": "Past Simple",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m2",
+              "nom": "Comparatives & Superlatives",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m3",
+              "nom": "Present Continuous (am/is/are + -ing)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m4",
+              "nom": "Future: going to / will",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m5",
+              "nom": "Quantifiers: some / any / much / many",
+              "bolim": "Grammatika",
+              "savol": 112,
+              "qiy": {
+                "oson": 0,
+                "orta": 112,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m6",
+              "nom": "Adverbs of frequency",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m7",
+              "nom": "Past Continuous (was/were + -ing)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m8",
+              "nom": "Present Simple vs Continuous",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m9",
+              "nom": "Adverbs of manner (quickly...)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 97,
+                "qiyin": 3
+              }
+            },
+            {
+              "id": "ing_a2_m10",
+              "nom": "Countable & uncountable",
+              "bolim": "Grammatika",
+              "savol": 99,
+              "qiy": {
+                "oson": 0,
+                "orta": 99,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m11",
+              "nom": "Prepositions of movement",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m12",
+              "nom": "should / shouldn't (maslahat)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m13",
+              "nom": "have to / must (majburiyat)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m14",
+              "nom": "Present Perfect (intro)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 2,
+                "orta": 93,
+                "qiyin": 5
+              }
+            },
+            {
+              "id": "ing_a2_m15",
+              "nom": "Verb + -ing / infinitive",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m16",
+              "nom": "Possessive pronouns (mine...)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m17",
+              "nom": "Travel & transport (Sayohat)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m18",
+              "nom": "Food & restaurants (Ovqat)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m19",
+              "nom": "Health & body (Sog'liq)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m20",
+              "nom": "Shopping & money (Xarid)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m21",
+              "nom": "Work & jobs (Ish)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m22",
+              "nom": "Free time (Bo'sh vaqt)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m23",
+              "nom": "Housing (Uy-joy)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m24",
+              "nom": "Technology (Texnologiya)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m25",
+              "nom": "Feelings & adjectives (His-tuyg'u)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m26",
+              "nom": "Directions (Yo'l ko'rsatish)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m27",
+              "nom": "Nature & environment (Tabiat)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_a2_m28",
+              "nom": "Phrasal verbs & do/make",
+              "bolim": "Phrasal verbs va do/make",
+              "savol": 52,
+              "qiy": {
+                "oson": 3,
+                "orta": 40,
+                "qiyin": 9
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "b1",
+      "badge": "B1",
+      "daraja": "O'rta",
+      "savol": 2796,
+      "mavzu": 28,
+      "kitoblar": [
+        {
+          "nom": "CEFR B1",
+          "savol": 2796,
+          "mavzu": 28,
+          "mavzular": [
+            {
+              "id": "ing_b1_m1",
+              "nom": "Present Perfect",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m2",
+              "nom": "Present Perfect vs Past Simple",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m3",
+              "nom": "First Conditional (if + present, will)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m4",
+              "nom": "Passive voice (present & past simple)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m5",
+              "nom": "Present Perfect Continuous",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m6",
+              "nom": "Past Perfect (had + V3)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m7",
+              "nom": "used to / would (o'tmish odat)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m8",
+              "nom": "Future forms review",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m9",
+              "nom": "Zero Conditional",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m10",
+              "nom": "Second Conditional",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m11",
+              "nom": "Relative clauses (who/which/that)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m12",
+              "nom": "Reported speech (statements)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m13",
+              "nom": "Modals (deduction/obligation)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m14",
+              "nom": "Gerunds & infinitives",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m15",
+              "nom": "as...as / too / enough",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m16",
+              "nom": "Question tags (isn't it?)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m17",
+              "nom": "Phrasal verbs (intro)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m18",
+              "nom": "Collocations (birikmalar)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m19",
+              "nom": "Phrasal verbs sets",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m20",
+              "nom": "Word formation (intro)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m21",
+              "nom": "Education (Ta'lim)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m22",
+              "nom": "Environment (Atrof-muhit)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m23",
+              "nom": "Media & news (OAV)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m24",
+              "nom": "Relationships (Munosabatlar)",
+              "bolim": "So'z boyligi",
+              "savol": 96,
+              "qiy": {
+                "oson": 0,
+                "orta": 96,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m25",
+              "nom": "Personality adjectives",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m26",
+              "nom": "Work & careers (Kasb)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m27",
+              "nom": "Crime & law (Jinoyat-qonun)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            },
+            {
+              "id": "ing_b1_m28",
+              "nom": "Health (Sog'liq)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 100,
+                "qiyin": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "b2",
+      "badge": "B2",
+      "daraja": "Yuqori o'rta",
+      "savol": 1895,
+      "mavzu": 19,
+      "kitoblar": [
+        {
+          "nom": "CEFR B2",
+          "savol": 1895,
+          "mavzu": 19,
+          "mavzular": [
+            {
+              "id": "ing_b2_m1",
+              "nom": "Third Conditional",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m2",
+              "nom": "Mixed conditionals",
+              "bolim": "Grammatika",
+              "savol": 98,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 98
+              }
+            },
+            {
+              "id": "ing_b2_m3",
+              "nom": "wish / if only",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m4",
+              "nom": "Passive (all tenses)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m5",
+              "nom": "Reported speech (full)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m6",
+              "nom": "Relative clauses (non-defining)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m7",
+              "nom": "Modals of deduction (past)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m8",
+              "nom": "Perfect modals (should have)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m9",
+              "nom": "Future Perfect & Continuous",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m10",
+              "nom": "Gerund vs infinitive (meaning)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m11",
+              "nom": "Causative (have sth done)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m12",
+              "nom": "Linking words / connectors",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m13",
+              "nom": "Articles (advanced)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m14",
+              "nom": "Advanced collocations",
+              "bolim": "So'z boyligi",
+              "savol": 97,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 97
+              }
+            },
+            {
+              "id": "ing_b2_m15",
+              "nom": "Idioms (iboralar)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m16",
+              "nom": "Phrasal verbs (advanced)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m17",
+              "nom": "Word formation (full)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m18",
+              "nom": "Formal vs informal",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_b2_m19",
+              "nom": "Academic vocabulary (intro)",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sinf": "c1",
+      "badge": "C1",
+      "daraja": "Ilg'or",
+      "savol": 1294,
+      "mavzu": 13,
+      "kitoblar": [
+        {
+          "nom": "CEFR C1",
+          "savol": 1294,
+          "mavzu": 13,
+          "mavzular": [
+            {
+              "id": "ing_c1_m1",
+              "nom": "Inversion (Never have I...)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_c1_m2",
+              "nom": "Cleft sentences (It was.../What...)",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_c1_m3",
+              "nom": "Unreal past & hypothetical",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_c1_m4",
+              "nom": "Ellipsis & substitution",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_c1_m5",
+              "nom": "Participle clauses",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_c1_m6",
+              "nom": "Nominalisation",
+              "bolim": "Grammatika",
+              "savol": 99,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 99
+              }
+            },
+            {
+              "id": "ing_c1_m7",
+              "nom": "Advanced discourse markers",
+              "bolim": "Grammatika",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_c1_m8",
+              "nom": "Emphasis structures",
+              "bolim": "Grammatika",
+              "savol": 97,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 97
+              }
+            },
+            {
+              "id": "ing_c1_m9",
+              "nom": "Nuanced synonyms",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_c1_m10",
+              "nom": "Idiomatic language",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_c1_m11",
+              "nom": "Advanced word formation",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            },
+            {
+              "id": "ing_c1_m12",
+              "nom": "Academic collocations",
+              "bolim": "So'z boyligi",
+              "savol": 98,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 98
+              }
+            },
+            {
+              "id": "ing_c1_m13",
+              "nom": "Register & style",
+              "bolim": "So'z boyligi",
+              "savol": 100,
+              "qiy": {
+                "oson": 0,
+                "orta": 0,
+                "qiyin": 100
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

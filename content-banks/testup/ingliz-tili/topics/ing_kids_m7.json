@@ -1,0 +1,526 @@
+{
+  "nom": "Numbers 1-20 (Sonlar)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "How many apples? 🍎",
+      "v": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "t": 0,
+      "izoh": "1 = one (bir).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#36988033"
+    },
+    {
+      "q": "How many stars? ⭐⭐⭐",
+      "v": [
+        "Two",
+        "Five",
+        "Three",
+        "Six"
+      ],
+      "t": 2,
+      "izoh": "3 = three (uch).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#c02642c0"
+    },
+    {
+      "q": "How many cats? 🐱🐱🐱🐱🐱",
+      "v": [
+        "Five",
+        "Four",
+        "Six",
+        "Seven"
+      ],
+      "t": 0,
+      "izoh": "5 = five (besh).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#9cc74ab6"
+    },
+    {
+      "q": "What number is this? 7",
+      "v": [
+        "Six",
+        "Eight",
+        "Seven",
+        "Nine"
+      ],
+      "t": 2,
+      "izoh": "7 = seven (yetti).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#6df2bd26"
+    },
+    {
+      "q": "How many balls? ⚽⚽⚽⚽⚽⚽⚽⚽",
+      "v": [
+        "Nine",
+        "Eight",
+        "Seven",
+        "Ten"
+      ],
+      "t": 1,
+      "izoh": "8 = eight (sakkiz).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#e41d30a5"
+    },
+    {
+      "q": "What number is this? 10",
+      "v": [
+        "Twelve",
+        "Eleven",
+        "Ten",
+        "Twenty"
+      ],
+      "t": 2,
+      "izoh": "10 = ten (o'n).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#ba6ffb99"
+    },
+    {
+      "q": "What comes after 11?",
+      "v": [
+        "Twelve",
+        "Thirteen",
+        "Ten",
+        "Twenty"
+      ],
+      "t": 0,
+      "izoh": "11 dan keyin = twelve (o'n ikki).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#98578a3f"
+    },
+    {
+      "q": "What number is this? 15",
+      "v": [
+        "Fifty",
+        "Fourteen",
+        "Fifteen",
+        "Sixteen"
+      ],
+      "t": 2,
+      "izoh": "15 = fifteen (o'n besh).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#504859ee"
+    },
+    {
+      "q": "What number is this? 18",
+      "v": [
+        "Eighteen",
+        "Eighty",
+        "Nineteen",
+        "Seventeen"
+      ],
+      "t": 0,
+      "izoh": "18 = eighteen (o'n sakkiz).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#7368f014"
+    },
+    {
+      "q": "What number is this? 20",
+      "v": [
+        "Twelve",
+        "Ten",
+        "Twenty",
+        "Two"
+      ],
+      "t": 2,
+      "izoh": "20 = twenty (yigirma).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#211d6335"
+    },
+    {
+      "q": "How many? 🍎🍎🍎",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "3 ta olma (three).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#d59f1578"
+    },
+    {
+      "q": "What comes after 5?",
+      "v": [
+        "4",
+        "6",
+        "7",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "5 dan keyin 6.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#f887d5c4"
+    },
+    {
+      "q": "What comes after 9?",
+      "v": [
+        "8",
+        "10",
+        "11",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "9 dan keyin 10.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#f3fef437"
+    },
+    {
+      "q": "What comes before 8?",
+      "v": [
+        "7",
+        "9",
+        "6",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "8 dan oldin 7.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#78ce1fbf"
+    },
+    {
+      "q": "What comes before 3?",
+      "v": [
+        "1",
+        "2",
+        "4",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "3 dan oldin 2.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#6f443824"
+    },
+    {
+      "q": "What comes after 19?",
+      "v": [
+        "18",
+        "20",
+        "21",
+        "19"
+      ],
+      "t": 1,
+      "izoh": "19 dan keyin 20.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#944a1e24"
+    },
+    {
+      "q": "2 + 1 = ?",
+      "v": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "2 + 1 = 3.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#f3dd1d69"
+    },
+    {
+      "q": "6 + 1 = ?",
+      "v": [
+        "6",
+        "7",
+        "8",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "6 + 1 = 7.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#fe7bd822"
+    },
+    {
+      "q": "9 + 1 = ?",
+      "v": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "t": 2,
+      "izoh": "9 + 1 = 10.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#36ae86a0"
+    },
+    {
+      "q": "4 + 1 = ?",
+      "v": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "4 + 1 = 5.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#fffad1ac"
+    },
+    {
+      "q": "How do you spell 3?",
+      "v": [
+        "tree",
+        "three",
+        "free",
+        "there"
+      ],
+      "t": 1,
+      "izoh": "3 = three.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#2133d1d9"
+    },
+    {
+      "q": "How do you spell 5?",
+      "v": [
+        "five",
+        "fife",
+        "faiv",
+        "vive"
+      ],
+      "t": 0,
+      "izoh": "5 = five.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#4059565b"
+    },
+    {
+      "q": "How do you spell 8?",
+      "v": [
+        "ate",
+        "eght",
+        "eight",
+        "eyt"
+      ],
+      "t": 2,
+      "izoh": "8 = eight.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#22943567"
+    },
+    {
+      "q": "How do you spell 10?",
+      "v": [
+        "ten",
+        "tenn",
+        "tan",
+        "tenne"
+      ],
+      "t": 0,
+      "izoh": "10 = ten.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#edfc31fb"
+    },
+    {
+      "q": "How do you spell 12?",
+      "v": [
+        "twelv",
+        "twelve",
+        "twelfe",
+        "dozen"
+      ],
+      "t": 1,
+      "izoh": "12 = twelve.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#091af996"
+    },
+    {
+      "q": "How many days are there in a week?",
+      "v": [
+        "five",
+        "six",
+        "seven",
+        "eight"
+      ],
+      "t": 2,
+      "izoh": "Bir haftada 7 kun (seven).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#c032879f"
+    },
+    {
+      "q": "10 + 1 = ?",
+      "v": [
+        "10",
+        "11",
+        "12",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "10 + 1 = 11.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#47638ff8"
+    },
+    {
+      "q": "What comes after 14?",
+      "v": [
+        "13",
+        "15",
+        "16",
+        "14"
+      ],
+      "t": 1,
+      "izoh": "14 dan keyin 15.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#790e7f5a"
+    },
+    {
+      "q": "What comes before 20?",
+      "v": [
+        "18",
+        "21",
+        "19",
+        "20"
+      ],
+      "t": 2,
+      "izoh": "20 dan oldin 19.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#807335f9"
+    },
+    {
+      "q": "How many fingers are there on one hand?",
+      "v": [
+        "4",
+        "5",
+        "6",
+        "10"
+      ],
+      "t": 1,
+      "izoh": "Bir qo'lda 5 barmoq (five).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#942666b6"
+    },
+    {
+      "q": "7 + 1 = ?",
+      "v": [
+        "7",
+        "8",
+        "9",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "7 + 1 = 8.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#eb6afbba"
+    },
+    {
+      "q": "Which number is between 6 and 8?",
+      "v": [
+        "5",
+        "7",
+        "9",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "6 va 8 orasida 7.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#71e9175f"
+    },
+    {
+      "q": "How many fingers are there on two hands?",
+      "v": [
+        "8",
+        "9",
+        "10",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Ikki qo'lda 10 barmoq (ten).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#609b5b36"
+    },
+    {
+      "q": "How many? ⭐⭐⭐⭐⭐",
+      "v": [
+        "4",
+        "5",
+        "6",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "5 ta (five).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#f9a6fc93"
+    },
+    {
+      "q": "How many? 🐟🐟",
+      "v": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "2 ta (two).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#0df1ff4b"
+    },
+    {
+      "q": "How many? 🌸🌸🌸🌸",
+      "v": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "t": 1,
+      "izoh": "4 ta (four).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#fd0367cb"
+    },
+    {
+      "q": "How many? 🍌🍌🍌🍌🍌🍌",
+      "v": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "6 ta (six).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#09e7c6aa"
+    },
+    {
+      "q": "How many? 🐝🐝🐝🐝🐝🐝🐝",
+      "v": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "7 ta (seven).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#4d4746e6"
+    },
+    {
+      "q": "How many? 🍓🍓🍓🍓🍓🍓🍓🍓",
+      "v": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "t": 1,
+      "izoh": "8 ta (eight).",
+      "qiy": "oson",
+      "id": "ing_kids_m7#e47a91d2"
+    },
+    {
+      "q": "What comes after 11?",
+      "v": [
+        "10",
+        "12",
+        "13",
+        "11"
+      ],
+      "t": 1,
+      "izoh": "11 dan keyin 12.",
+      "qiy": "oson",
+      "id": "ing_kids_m7#98578a3f~2"
+    }
+  ]
+}
